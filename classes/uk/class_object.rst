@@ -277,7 +277,7 @@ enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_APPEND_SOURCE_OBJECT** = ``16``
 
-On signal emission, the source object is automatically appended after the original arguments of the signal, regardless of the connected :ref:`Callable<class_Callable>`'s unbinds which affect only the original arguments of the signal (see :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
+Під час випромінювання сигналу, вихідний об'єкт автоматично додається після оригінальних аргументів сигналу, незалежно від відв'язок підключеного методу :ref:`Callable<class_Callable>`, які впливають лише на оригінальні аргументи сигналу (див. ``метод Callable.unbind``, ``метод Callable.get_unbound_arguments_count``).
 
 ::
 
@@ -286,7 +286,7 @@ On signal emission, the source object is automatically appended after the origin
     signal test_signal
 
     func test():
-        print(self) # Prints e.g. <Object#35332818393>
+        print(self) # Друкує, наприклад. <Object#35332818393>
         test_signal.connect(prints.unbind(1), CONNECT_APPEND_SOURCE_OBJECT)
         test_signal.emit("emit_arg_1", "emit_arg_2") # Prints emit_arg_1 <Object#35332818393>
 

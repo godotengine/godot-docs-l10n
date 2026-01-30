@@ -5,29 +5,29 @@
 Performance
 ===========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Exposes performance-related data.
+公开与性能相关的数据。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class provides access to a number of different monitors related to performance, such as memory usage, draw calls, and FPS. These are the same as the values displayed in the **Monitor** tab in the editor's **Debugger** panel. By using the :ref:`get_monitor()<class_Performance_method_get_monitor>` method of this class, you can access this data from your code.
+该类提供对许多与性能相关的不同监视器的访问，例如内存使用情况、绘制调用和 FPS。这些值与编辑器的\ **调试器**\ 面板中的\ **监视**\ 选项卡中显示的值相同。通过使用该类的 :ref:`get_monitor()<class_Performance_method_get_monitor>` 方法，你可以从代码中访问该数据。
 
-You can add custom monitors using the :ref:`add_custom_monitor()<class_Performance_method_add_custom_monitor>` method. Custom monitors are available in **Monitor** tab in the editor's **Debugger** panel together with built-in monitors.
+可以使用 :ref:`add_custom_monitor()<class_Performance_method_add_custom_monitor>` 方法添加自定义监视器。在编辑器的\ **调试器**\ 面板的\ **监视**\ 选项卡中，自定义监视器可以与内置监视器一起使用。
 
-\ **Note:** Some of the built-in monitors are only available in debug mode and will always return ``0`` when used in a project exported in release mode.
+\ **注意：**\ 某些内置监视器仅在调试模式下可用，并且在以发布模式导出的项目中使用时，将始终返回 ``0``\ 。
 
-\ **Note:** Some of the built-in monitors are not updated in real-time for performance reasons, so there may be a delay of up to 1 second between changes.
+\ **注意：**\ 出于性能原因，某些内置监视器不会实时更新，所以在更改之间可能会有长达 1 秒的延迟。
 
-\ **Note:** Custom monitors do not support negative values. Negative values are clamped to 0.
+\ **注意：**\ 自定义监视器不支持负值。负值被钳制为 0。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Performance_Monitor:
 
@@ -71,7 +71,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_FPS** = ``0``
 
-The number of frames rendered in the last second. This metric is only updated once per second, even if queried more often. *Higher is better.*
+上一秒渲染的帧数。该指标每秒仅更新一次，与查询频率无关。\ *越高越好。*
 
 .. _class_Performance_constant_TIME_PROCESS:
 
@@ -79,7 +79,7 @@ The number of frames rendered in the last second. This metric is only updated on
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_PROCESS** = ``1``
 
-Time it took to complete one frame, in seconds. *Lower is better.*
+完成一帧所需的时间，单位为秒。\ *越短越好。*
 
 .. _class_Performance_constant_TIME_PHYSICS_PROCESS:
 
@@ -87,7 +87,7 @@ Time it took to complete one frame, in seconds. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_PHYSICS_PROCESS** = ``2``
 
-Time it took to complete one physics frame, in seconds. *Lower is better.*
+完成一个物理帧所需的时间，单位为秒。\ *越短越好。*
 
 .. _class_Performance_constant_TIME_NAVIGATION_PROCESS:
 
@@ -95,7 +95,7 @@ Time it took to complete one physics frame, in seconds. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_NAVIGATION_PROCESS** = ``3``
 
-Time it took to complete one navigation step, in seconds. This includes navigation map updates as well as agent avoidance calculations. *Lower is better.*
+完成一个导航步骤的时间，单位为秒。包括导航地图的更新以及代理避障的计算。\ *越短越好。*
 
 .. _class_Performance_constant_MEMORY_STATIC:
 
@@ -103,7 +103,7 @@ Time it took to complete one navigation step, in seconds. This includes navigati
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC** = ``4``
 
-Static memory currently used, in bytes. Not available in release builds. *Lower is better.*
+当前使用的静态内存，单位为字节。在发布版本中不可用。\ *越少越好。*
 
 .. _class_Performance_constant_MEMORY_STATIC_MAX:
 
@@ -111,7 +111,7 @@ Static memory currently used, in bytes. Not available in release builds. *Lower 
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC_MAX** = ``5``
 
-Available static memory. Not available in release builds. *Lower is better.*
+可用的静态内存。在发布版本中不可用。\ *越少越好。*
 
 .. _class_Performance_constant_MEMORY_MESSAGE_BUFFER_MAX:
 
@@ -119,7 +119,7 @@ Available static memory. Not available in release builds. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_MESSAGE_BUFFER_MAX** = ``6``
 
-Largest amount of memory the message queue buffer has used, in bytes. The message queue is used for deferred functions calls and notifications. *Lower is better.*
+消息队列缓冲区曾使用的最大内存量，单位为字节。消息队列用于延迟函数调用和通知。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_COUNT:
 
@@ -127,7 +127,7 @@ Largest amount of memory the message queue buffer has used, in bytes. The messag
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_COUNT** = ``7``
 
-Number of objects currently instantiated (including nodes). *Lower is better.*
+当前已经实例化的对象数（包括节点）。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_RESOURCE_COUNT:
 
@@ -135,7 +135,7 @@ Number of objects currently instantiated (including nodes). *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_RESOURCE_COUNT** = ``8``
 
-Number of resources currently used. *Lower is better.*
+当前使用的资源数。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_NODE_COUNT:
 
@@ -143,7 +143,7 @@ Number of resources currently used. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_NODE_COUNT** = ``9``
 
-Number of nodes currently instantiated in the scene tree. This also includes the root node. *Lower is better.*
+当前已经实例化的在场景树中的节点数。也包括根节点。\ *越少越好。*
 
 .. _class_Performance_constant_OBJECT_ORPHAN_NODE_COUNT:
 
@@ -151,9 +151,9 @@ Number of nodes currently instantiated in the scene tree. This also includes the
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_ORPHAN_NODE_COUNT** = ``10``
 
-Number of orphan nodes, i.e. nodes which are not parented to a node of the scene tree. *Lower is better.*\ 
+孤立节点的数量，即父节点不是场景树节点的节点。\ *越少越好。*\ 
 
-\ **Note:** This is only available in debug mode and will always return ``0`` when used in a project exported in release mode.
+\ **注意：**\ 只在调试模式中可用，以发布模式导出的项目中总会返回 ``0``\ 。
 
 .. _class_Performance_constant_RENDER_TOTAL_OBJECTS_IN_FRAME:
 
@@ -161,7 +161,7 @@ Number of orphan nodes, i.e. nodes which are not parented to a node of the scene
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_OBJECTS_IN_FRAME** = ``11``
 
-The total number of objects in the last rendered frame. This metric doesn't include culled objects (either via hiding nodes, frustum culling or occlusion culling). *Lower is better.*
+在上一个渲染帧中的对象总数。该指标不包括剔除的对象（通过隐藏节点、视锥剔除或遮挡剔除）。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_TOTAL_PRIMITIVES_IN_FRAME:
 
@@ -169,7 +169,7 @@ The total number of objects in the last rendered frame. This metric doesn't incl
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_PRIMITIVES_IN_FRAME** = ``12``
 
-The total number of vertices or indices rendered in the last rendered frame. This metric doesn't include primitives from culled objects (either via hiding nodes, frustum culling or occlusion culling). Due to the depth prepass and shadow passes, the number of primitives is always higher than the actual number of vertices in the scene (typically double or triple the original vertex count). *Lower is better.*
+在上一个渲染帧中渲染的顶点或索引的总数。该指标不包括来自被剔除对象的图元（通过隐藏节点、视锥剔除或遮挡剔除）。由于预深度阶段和阴影阶段的影响，图元的数量总是高于场景中的实际顶点数量（典型情况下是原有顶点数量的两倍或三倍）。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_TOTAL_DRAW_CALLS_IN_FRAME:
 
@@ -177,7 +177,7 @@ The total number of vertices or indices rendered in the last rendered frame. Thi
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TOTAL_DRAW_CALLS_IN_FRAME** = ``13``
 
-The total number of draw calls performed in the last rendered frame. This metric doesn't include culled objects (either via hiding nodes, frustum culling or occlusion culling), since they do not result in draw calls. *Lower is better.*
+在上一个渲染帧中执行的绘制调用的总数。该指标不包括剔除对象（通过隐藏节点、视锥剔除或遮挡剔除），因为它们不会导致绘制调用。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_VIDEO_MEM_USED:
 
@@ -185,7 +185,7 @@ The total number of draw calls performed in the last rendered frame. This metric
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_VIDEO_MEM_USED** = ``14``
 
-The amount of video memory used (texture and vertex memory combined, in bytes). Since this metric also includes miscellaneous allocations, this value is always greater than the sum of :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` and :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>`. *Lower is better.*
+显存的使用量（纹理和顶点内存之和，单位为字节）。由于该指标还包括其他杂项分配，该值始终大于 :ref:`RENDER_TEXTURE_MEM_USED<class_Performance_constant_RENDER_TEXTURE_MEM_USED>` 和 :ref:`RENDER_BUFFER_MEM_USED<class_Performance_constant_RENDER_BUFFER_MEM_USED>` 之和。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_TEXTURE_MEM_USED:
 
@@ -193,7 +193,7 @@ The amount of video memory used (texture and vertex memory combined, in bytes). 
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_TEXTURE_MEM_USED** = ``15``
 
-The amount of texture memory used (in bytes). *Lower is better.*
+纹理内存的使用量（单位为字节）。\ *越少越好。*
 
 .. _class_Performance_constant_RENDER_BUFFER_MEM_USED:
 
@@ -201,7 +201,7 @@ The amount of texture memory used (in bytes). *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **RENDER_BUFFER_MEM_USED** = ``16``
 
-The amount of render buffer memory used (in bytes). *Lower is better.*
+渲染缓冲区内存的使用量（单位为字节）。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_2D_ACTIVE_OBJECTS:
 
@@ -209,7 +209,7 @@ The amount of render buffer memory used (in bytes). *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_ACTIVE_OBJECTS** = ``17``
 
-Number of active :ref:`RigidBody2D<class_RigidBody2D>` nodes in the game. *Lower is better.*
+游戏中活跃的 :ref:`RigidBody2D<class_RigidBody2D>` 节点数。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_2D_COLLISION_PAIRS:
 
@@ -217,7 +217,7 @@ Number of active :ref:`RigidBody2D<class_RigidBody2D>` nodes in the game. *Lower
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_COLLISION_PAIRS** = ``18``
 
-Number of collision pairs in the 2D physics engine. *Lower is better.*
+2D 物理引擎中碰撞对的数量。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_2D_ISLAND_COUNT:
 
@@ -225,7 +225,7 @@ Number of collision pairs in the 2D physics engine. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_2D_ISLAND_COUNT** = ``19``
 
-Number of islands in the 2D physics engine. *Lower is better.*
+2D 物理引擎中孤岛的数量。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_3D_ACTIVE_OBJECTS:
 
@@ -233,7 +233,7 @@ Number of islands in the 2D physics engine. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_ACTIVE_OBJECTS** = ``20``
 
-Number of active :ref:`RigidBody3D<class_RigidBody3D>` and :ref:`VehicleBody3D<class_VehicleBody3D>` nodes in the game. *Lower is better.*
+游戏中活跃的 :ref:`RigidBody3D<class_RigidBody3D>` 和 :ref:`VehicleBody3D<class_VehicleBody3D>` 节点数。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_3D_COLLISION_PAIRS:
 
@@ -241,7 +241,7 @@ Number of active :ref:`RigidBody3D<class_RigidBody3D>` and :ref:`VehicleBody3D<c
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_COLLISION_PAIRS** = ``21``
 
-Number of collision pairs in the 3D physics engine. *Lower is better.*
+3D 物理引擎中碰撞对的数量。\ *越少越好。*
 
 .. _class_Performance_constant_PHYSICS_3D_ISLAND_COUNT:
 
@@ -249,7 +249,7 @@ Number of collision pairs in the 3D physics engine. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **PHYSICS_3D_ISLAND_COUNT** = ``22``
 
-Number of islands in the 3D physics engine. *Lower is better.*
+3D 物理引擎中孤岛的数量。\ *越少越好。*
 
 .. _class_Performance_constant_AUDIO_OUTPUT_LATENCY:
 
@@ -257,7 +257,7 @@ Number of islands in the 3D physics engine. *Lower is better.*
 
 :ref:`Monitor<enum_Performance_Monitor>` **AUDIO_OUTPUT_LATENCY** = ``23``
 
-Output latency of the :ref:`AudioServer<class_AudioServer>`. Equivalent to calling :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`, it is not recommended to call this every frame.
+:ref:`AudioServer<class_AudioServer>` 的输出延迟。等同于调用 :ref:`AudioServer.get_output_latency()<class_AudioServer_method_get_output_latency>`\ ，不建议每帧都调用该方法。
 
 .. _class_Performance_constant_NAVIGATION_ACTIVE_MAPS:
 
@@ -273,7 +273,7 @@ Number of active navigation maps in :ref:`NavigationServer2D<class_NavigationSer
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_REGION_COUNT** = ``25``
 
-Number of active navigation regions in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航区块的数量。
 
 .. _class_Performance_constant_NAVIGATION_AGENT_COUNT:
 
@@ -281,7 +281,7 @@ Number of active navigation regions in :ref:`NavigationServer2D<class_Navigation
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_AGENT_COUNT** = ``26``
 
-Number of active navigation agents processing avoidance in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中活动的处理避障的导航代理的数量。
 
 .. _class_Performance_constant_NAVIGATION_LINK_COUNT:
 
@@ -289,7 +289,7 @@ Number of active navigation agents processing avoidance in :ref:`NavigationServe
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_LINK_COUNT** = ``27``
 
-Number of active navigation links in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航链接的数量。
 
 .. _class_Performance_constant_NAVIGATION_POLYGON_COUNT:
 
@@ -297,7 +297,7 @@ Number of active navigation links in :ref:`NavigationServer2D<class_NavigationSe
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_POLYGON_COUNT** = ``28``
 
-Number of navigation mesh polygons in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中导航网格多边形的数量。
 
 .. _class_Performance_constant_NAVIGATION_EDGE_COUNT:
 
@@ -305,7 +305,7 @@ Number of navigation mesh polygons in :ref:`NavigationServer2D<class_NavigationS
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_EDGE_COUNT** = ``29``
 
-Number of navigation mesh polygon edges in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中导航网格多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_EDGE_MERGE_COUNT:
 
@@ -313,7 +313,7 @@ Number of navigation mesh polygon edges in :ref:`NavigationServer2D<class_Naviga
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_EDGE_MERGE_COUNT** = ``30``
 
-Number of navigation mesh polygon edges that were merged due to edge key overlap in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中由于边界重叠而被合并的导航网格多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_EDGE_CONNECTION_COUNT:
 
@@ -321,7 +321,7 @@ Number of navigation mesh polygon edges that were merged due to edge key overlap
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_EDGE_CONNECTION_COUNT** = ``31``
 
-Number of polygon edges that are considered connected by edge proximity :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中由于边缘接近而被认为存在连接的多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_EDGE_FREE_COUNT:
 
@@ -329,7 +329,7 @@ Number of polygon edges that are considered connected by edge proximity :ref:`Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_EDGE_FREE_COUNT** = ``32``
 
-Number of navigation mesh polygon edges that could not be merged in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`. The edges still may be connected by edge proximity or with links.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中无法合并的导航网格多边形边缘的数量。这些边仍然可以通过边缘接近或使用链接而被连接。
 
 .. _class_Performance_constant_NAVIGATION_OBSTACLE_COUNT:
 
@@ -337,7 +337,7 @@ Number of navigation mesh polygon edges that could not be merged in :ref:`Naviga
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_OBSTACLE_COUNT** = ``33``
 
-Number of active navigation obstacles in the :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航障碍物的数量。
 
 .. _class_Performance_constant_PIPELINE_COMPILATIONS_CANVAS:
 
@@ -345,7 +345,7 @@ Number of active navigation obstacles in the :ref:`NavigationServer2D<class_Navi
 
 :ref:`Monitor<enum_Performance_Monitor>` **PIPELINE_COMPILATIONS_CANVAS** = ``34``
 
-Number of pipeline compilations that were triggered by the 2D canvas renderer.
+由 2D 画布渲染器触发的管线编译次数。
 
 .. _class_Performance_constant_PIPELINE_COMPILATIONS_MESH:
 
@@ -353,7 +353,7 @@ Number of pipeline compilations that were triggered by the 2D canvas renderer.
 
 :ref:`Monitor<enum_Performance_Monitor>` **PIPELINE_COMPILATIONS_MESH** = ``35``
 
-Number of pipeline compilations that were triggered by loading meshes. These compilations will show up as longer loading times the first time a user runs the game and the pipeline is required.
+因加载网格而触发的管线编译次数。用户首次运行游戏且需要该管线时，这些编译会导致加载时间变长。
 
 .. _class_Performance_constant_PIPELINE_COMPILATIONS_SURFACE:
 
@@ -361,7 +361,7 @@ Number of pipeline compilations that were triggered by loading meshes. These com
 
 :ref:`Monitor<enum_Performance_Monitor>` **PIPELINE_COMPILATIONS_SURFACE** = ``36``
 
-Number of pipeline compilations that were triggered by building the surface cache before rendering the scene. These compilations will show up as a stutter when loading a scene the first time a user runs the game and the pipeline is required.
+因渲染场景前构建表面缓存而触发的管线编译次数。用户首次运行游戏且需要该管线时，这些编译会导致加载场景时的卡顿。
 
 .. _class_Performance_constant_PIPELINE_COMPILATIONS_DRAW:
 
@@ -369,7 +369,7 @@ Number of pipeline compilations that were triggered by building the surface cach
 
 :ref:`Monitor<enum_Performance_Monitor>` **PIPELINE_COMPILATIONS_DRAW** = ``37``
 
-Number of pipeline compilations that were triggered while drawing the scene. These compilations will show up as stutters during gameplay the first time a user runs the game and the pipeline is required.
+因绘制场景而触发的管线编译次数。用户首次运行游戏且需要该管线时，这些编译会导致游戏过程中的卡顿。
 
 .. _class_Performance_constant_PIPELINE_COMPILATIONS_SPECIALIZATION:
 
@@ -377,7 +377,7 @@ Number of pipeline compilations that were triggered while drawing the scene. The
 
 :ref:`Monitor<enum_Performance_Monitor>` **PIPELINE_COMPILATIONS_SPECIALIZATION** = ``38``
 
-Number of pipeline compilations that were triggered to optimize the current scene. These compilations are done in the background and should not cause any stutters whatsoever.
+因优化当前场景而触发的管线编译次数。这些编译是在后台进行的，不会导致任何卡顿。
 
 .. _class_Performance_constant_NAVIGATION_2D_ACTIVE_MAPS:
 
@@ -393,7 +393,7 @@ Number of active navigation maps in the :ref:`NavigationServer2D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_REGION_COUNT** = ``40``
 
-Number of active navigation regions in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中活动导航区块的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_AGENT_COUNT:
 
@@ -401,7 +401,7 @@ Number of active navigation regions in the :ref:`NavigationServer2D<class_Naviga
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_AGENT_COUNT** = ``41``
 
-Number of active navigation agents processing avoidance in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中活动的处理避障的导航代理的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_LINK_COUNT:
 
@@ -409,7 +409,7 @@ Number of active navigation agents processing avoidance in the :ref:`NavigationS
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_LINK_COUNT** = ``42``
 
-Number of active navigation links in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中活动导航链接的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_POLYGON_COUNT:
 
@@ -417,7 +417,7 @@ Number of active navigation links in the :ref:`NavigationServer2D<class_Navigati
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_POLYGON_COUNT** = ``43``
 
-Number of navigation mesh polygons in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中导航网格多边形的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_EDGE_COUNT:
 
@@ -425,7 +425,7 @@ Number of navigation mesh polygons in the :ref:`NavigationServer2D<class_Navigat
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_EDGE_COUNT** = ``44``
 
-Number of navigation mesh polygon edges in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中导航网格多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_EDGE_MERGE_COUNT:
 
@@ -433,7 +433,7 @@ Number of navigation mesh polygon edges in the :ref:`NavigationServer2D<class_Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_EDGE_MERGE_COUNT** = ``45``
 
-Number of navigation mesh polygon edges that were merged due to edge key overlap in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中由于边界重叠而被合并的导航网格多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_EDGE_CONNECTION_COUNT:
 
@@ -441,7 +441,7 @@ Number of navigation mesh polygon edges that were merged due to edge key overlap
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_EDGE_CONNECTION_COUNT** = ``46``
 
-Number of polygon edges that are considered connected by edge proximity :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中由于边缘接近而被认为存在连接的多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_2D_EDGE_FREE_COUNT:
 
@@ -449,7 +449,7 @@ Number of polygon edges that are considered connected by edge proximity :ref:`Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_EDGE_FREE_COUNT** = ``47``
 
-Number of navigation mesh polygon edges that could not be merged in the :ref:`NavigationServer2D<class_NavigationServer2D>`. The edges still may be connected by edge proximity or with links.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中无法合并的导航网格多边形边缘的数量。这些边仍然可以通过边缘接近或使用链接而被连接。
 
 .. _class_Performance_constant_NAVIGATION_2D_OBSTACLE_COUNT:
 
@@ -457,7 +457,7 @@ Number of navigation mesh polygon edges that could not be merged in the :ref:`Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_OBSTACLE_COUNT** = ``48``
 
-Number of active navigation obstacles in the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中活动导航障碍物的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_ACTIVE_MAPS:
 
@@ -473,7 +473,7 @@ Number of active navigation maps in the :ref:`NavigationServer3D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_REGION_COUNT** = ``50``
 
-Number of active navigation regions in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航地区的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_AGENT_COUNT:
 
@@ -481,7 +481,7 @@ Number of active navigation regions in the :ref:`NavigationServer3D<class_Naviga
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_AGENT_COUNT** = ``51``
 
-Number of active navigation agents processing avoidance in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中正在处理避障的活动导航代理的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_LINK_COUNT:
 
@@ -489,7 +489,7 @@ Number of active navigation agents processing avoidance in the :ref:`NavigationS
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_LINK_COUNT** = ``52``
 
-Number of active navigation links in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航链接的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_POLYGON_COUNT:
 
@@ -497,7 +497,7 @@ Number of active navigation links in the :ref:`NavigationServer3D<class_Navigati
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_POLYGON_COUNT** = ``53``
 
-Number of navigation mesh polygons in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中导航网格多边形的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_COUNT:
 
@@ -505,7 +505,7 @@ Number of navigation mesh polygons in the :ref:`NavigationServer3D<class_Navigat
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_COUNT** = ``54``
 
-Number of navigation mesh polygon edges in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中导航网格多边形边缘的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_MERGE_COUNT:
 
@@ -513,7 +513,7 @@ Number of navigation mesh polygon edges in the :ref:`NavigationServer3D<class_Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_MERGE_COUNT** = ``55``
 
-Number of navigation mesh polygon edges that were merged due to edge key overlap in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中由于边键重叠而被合并的导航网格多边形的边的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_CONNECTION_COUNT:
 
@@ -521,7 +521,7 @@ Number of navigation mesh polygon edges that were merged due to edge key overlap
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_CONNECTION_COUNT** = ``56``
 
-Number of polygon edges that are considered connected by edge proximity :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中由边缘接近而被认为已连接的多边形的边的数量。
 
 .. _class_Performance_constant_NAVIGATION_3D_EDGE_FREE_COUNT:
 
@@ -529,7 +529,7 @@ Number of polygon edges that are considered connected by edge proximity :ref:`Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_EDGE_FREE_COUNT** = ``57``
 
-Number of navigation mesh polygon edges that could not be merged in the :ref:`NavigationServer3D<class_NavigationServer3D>`. The edges still may be connected by edge proximity or with links.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中无法合并的导航网格多边形的边的数量。这些边仍然可以通过边缘接近或使用链接而被连接。
 
 .. _class_Performance_constant_NAVIGATION_3D_OBSTACLE_COUNT:
 
@@ -537,7 +537,7 @@ Number of navigation mesh polygon edges that could not be merged in the :ref:`Na
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_OBSTACLE_COUNT** = ``58``
 
-Number of active navigation obstacles in the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航障碍物的数量。
 
 .. _class_Performance_constant_MONITOR_MAX:
 
@@ -545,7 +545,7 @@ Number of active navigation obstacles in the :ref:`NavigationServer3D<class_Navi
 
 :ref:`Monitor<enum_Performance_Monitor>` **MONITOR_MAX** = ``59``
 
-Represents the size of the :ref:`Monitor<enum_Performance_Monitor>` enum.
+代表 :ref:`Monitor<enum_Performance_Monitor>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -595,8 +595,8 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Performance_method_add_custom_monitor:
 
@@ -604,7 +604,7 @@ Method Descriptions
 
 |void| **add_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, arguments\: :ref:`Array<class_Array>` = [], type\: :ref:`MonitorType<enum_Performance_MonitorType>` = 0\ ) :ref:`🔗<class_Performance_method_add_custom_monitor>`
 
-Adds a custom monitor with the name ``id``. You can specify the category of the monitor using slash delimiters in ``id`` (for example: ``"Game/NumberOfNPCs"``). If there is more than one slash delimiter, then the default category is used. The default category is ``"Custom"``. Prints an error if given ``id`` is already present.
+添加一个名为 ``id`` 的自定义监视器。可以在 ``id`` 中使用斜线分隔符指定监视器的类别（例如：\ ``"Game/NumberOfNPCs"``\ ）。如果有多个斜线分隔符，则使用默认的类别。默认类别是 ``"Custom"``\ 。如果给定的 ``id`` 已经存在，则打印一个错误。
 
 
 .. tabs::
@@ -614,18 +614,18 @@ Adds a custom monitor with the name ``id``. You can specify the category of the 
     func _ready():
         var monitor_value = Callable(self, "get_monitor_value")
 
-        # Adds monitor with name "MyName" to category "MyCategory".
+        # 将名称为“MyName”的监视器添加到类别“MyCategory”。
         Performance.add_custom_monitor("MyCategory/MyMonitor", monitor_value)
 
-        # Adds monitor with name "MyName" to category "Custom".
-        # Note: "MyCategory/MyMonitor" and "MyMonitor" have same name but different IDs, so the code is valid.
+        # 将名称为“MyName”的监视器添加到类别“Custom”。
+        # 注意：“MyCategory/MyMonitor”和“MyMonitor”同名但不同 ID，所以代码有效。
         Performance.add_custom_monitor("MyMonitor", monitor_value)
 
-        # Adds monitor with name "MyName" to category "Custom".
-        # Note: "MyMonitor" and "Custom/MyMonitor" have same name and same category but different IDs, so the code is valid.
+        # 将名称为“MyName”的监视器添加到类别“Custom”。
+        # 注意：“MyMonitor”和“Custom/MyMonitor”名称相同，类别相同，但 ID 不同，所以代码有效。
         Performance.add_custom_monitor("Custom/MyMonitor", monitor_value)
 
-        # Adds monitor with name "MyCategoryOne/MyCategoryTwo/MyMonitor" to category "Custom".
+        # 将名称为“MyCategoryOne/MyCategoryTwo/MyMonitor”的监视器添加到类别“Custom”。
         Performance.add_custom_monitor("MyCategoryOne/MyCategoryTwo/MyMonitor", monitor_value)
 
     func get_monitor_value():
@@ -637,17 +637,17 @@ Adds a custom monitor with the name ``id``. You can specify the category of the 
     {
         var monitorValue = new Callable(this, MethodName.GetMonitorValue);
 
-        // Adds monitor with name "MyName" to category "MyCategory".
+        // 将名称为“MyName”的监视器添加到类别“MyCategory”。
         Performance.AddCustomMonitor("MyCategory/MyMonitor", monitorValue);
-        // Adds monitor with name "MyName" to category "Custom".
-        // Note: "MyCategory/MyMonitor" and "MyMonitor" have same name but different ids so the code is valid.
+        // 将名称为“MyName”的监视器添加到类别“Custom”。
+        // 注意：“MyCategory/MyMonitor”和“MyMonitor”同名但不同 ID，所以代码有效。
         Performance.AddCustomMonitor("MyMonitor", monitorValue);
 
-        // Adds monitor with name "MyName" to category "Custom".
-        // Note: "MyMonitor" and "Custom/MyMonitor" have same name and same category but different ids so the code is valid.
+        // 将名称为“MyName”的监视器添加到类别“Custom”。
+        // 注意：“MyMonitor”和“Custom/MyMonitor”名称相同，类别相同，但 ID 不同，所以代码有效。
         Performance.AddCustomMonitor("Custom/MyMonitor", monitorValue);
 
-        // Adds monitor with name "MyCategoryOne/MyCategoryTwo/MyMonitor" to category "Custom".
+        // 将名称为“MyCategoryOne/MyCategoryTwo/MyMonitor”的监视器添加到类别“Custom”。
         Performance.AddCustomMonitor("MyCategoryOne/MyCategoryTwo/MyMonitor", monitorValue);
     }
 
@@ -658,9 +658,9 @@ Adds a custom monitor with the name ``id``. You can specify the category of the 
 
 
 
-The debugger calls the callable to get the value of custom monitor. The callable must return a zero or positive integer or floating-point number.
+调试器调用可调用对象来获取自定义监视器的值。可调用对象必须返回一个零或正整数或浮点数。
 
-Callables are called with arguments supplied in argument array.
+使用参数数组中提供的参数来调用可调用对象。
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ Callables are called with arguments supplied in argument array.
 
 :ref:`Variant<class_Variant>` **get_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_get_custom_monitor>`
 
-Returns the value of custom monitor with given ``id``. The callable is called to get the value of custom monitor. See also :ref:`has_custom_monitor()<class_Performance_method_has_custom_monitor>`. Prints an error if the given ``id`` is absent.
+返回具有给定 ``id`` 的自定义监视器的值。调用这个可调用对象以获取自定义监视器的值。另见 :ref:`has_custom_monitor()<class_Performance_method_has_custom_monitor>`\ 。如果给定的 ``id`` 不存在，则打印一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Returns the value of custom monitor with given ``id``. The callable is called to
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_custom_monitor_names**\ (\ ) :ref:`🔗<class_Performance_method_get_custom_monitor_names>`
 
-Returns the names of active custom monitors in an :ref:`Array<class_Array>`.
+以一个 :ref:`Array<class_Array>`\ ，返回活动自定义监视器的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -708,22 +708,22 @@ Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active cu
 
 :ref:`float<class_float>` **get_monitor**\ (\ monitor\: :ref:`Monitor<enum_Performance_Monitor>`\ ) |const| :ref:`🔗<class_Performance_method_get_monitor>`
 
-Returns the value of one of the available built-in monitors. You should provide one of the :ref:`Monitor<enum_Performance_Monitor>` constants as the argument, like this:
+返回任一可用的内置监视器的值。应该提供任一 :ref:`Monitor<enum_Performance_Monitor>` 常量作为参数，如下所示：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(Performance.get_monitor(Performance.TIME_FPS)) # Prints the FPS to the console.
+    print(Performance.get_monitor(Performance.TIME_FPS)) # 将 FPS 打印到控制台。
 
  .. code-tab:: csharp
 
-    GD.Print(Performance.GetMonitor(Performance.Monitor.TimeFps)); // Prints the FPS to the console.
+    GD.Print(Performance.GetMonitor(Performance.Monitor.TimeFps)); // 将 FPS 打印到控制台。
 
 
 
-See :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>` to query custom performance monitors' values.
+请参阅 :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>`\ ，以查询自定义性能监视器的值。
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ See :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>` to 
 
 :ref:`int<class_int>` **get_monitor_modification_time**\ (\ ) :ref:`🔗<class_Performance_method_get_monitor_modification_time>`
 
-Returns the last tick in which custom monitor was added/removed (in microseconds since the engine started). This is set to :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>` when the monitor is updated.
+返回自定义监视器被添加/删除时的最后一个刻度（自引擎启动以来的微秒数）。当该监视器更新时，它被设置为 :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -747,7 +747,7 @@ Returns the last tick in which custom monitor was added/removed (in microseconds
 
 :ref:`bool<class_bool>` **has_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_has_custom_monitor>`
 
-Returns ``true`` if custom monitor with the given ``id`` is present, ``false`` otherwise.
+如果存在具有给定 ``id`` 的自定义监视器，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -759,14 +759,14 @@ Returns ``true`` if custom monitor with the given ``id`` is present, ``false`` o
 
 |void| **remove_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_remove_custom_monitor>`
 
-Removes the custom monitor with given ``id``. Prints an error if the given ``id`` is already absent.
+移除具有给定 ``id`` 的自定义监视器。如果给定的 ``id`` 已经不存在，则打印一个错误。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

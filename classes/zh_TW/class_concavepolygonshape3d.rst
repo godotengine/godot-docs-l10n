@@ -5,14 +5,14 @@
 ConcavePolygonShape3D
 =====================
 
-**Inherits:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 3D trimesh shape used for physics collision.
+用於物理碰撞的 3D 三角網格形狀。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A 3D trimesh shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
 
@@ -26,15 +26,15 @@ Being just a collection of interconnected triangles, **ConcavePolygonShape3D** i
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `3D Physics Tests Demo <https://godotengine.org/asset-library/asset/2747>`__
+- `3D 物理測試示範 <https://godotengine.org/asset-library/asset/2747>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ConcavePolygonShape3D_property_backface_collision:
 
@@ -77,7 +77,7 @@ Property Descriptions
 - |void| **set_backface_collision_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_backface_collision_enabled**\ (\ )
 
-If set to ``true``, collisions occur on both sides of the concave shape faces. Otherwise they occur only along the face normals.
+如果設定為 ``true``\ ，則碰撞會發生在凹形面的兩側。否則，它們只會沿著面法線發生。
 
 .. rst-class:: classref-section-separator
 
@@ -85,8 +85,8 @@ If set to ``true``, collisions occur on both sides of the concave shape faces. O
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ConcavePolygonShape3D_method_get_faces:
 
@@ -94,7 +94,7 @@ Method Descriptions
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_faces**\ (\ ) |const| :ref:`🔗<class_ConcavePolygonShape3D_method_get_faces>`
 
-Returns the faces of the trimesh shape as an array of vertices. The array (of length divisible by three) is naturally divided into triples; each triple of vertices defines a triangle.
+以頂點陣列的形式返回三角網格形狀中的面。該（長度能被三整除的）陣列自然三三分組；每組中的三個頂點定義一個三角形。
 
 .. rst-class:: classref-item-separator
 
@@ -106,14 +106,14 @@ Returns the faces of the trimesh shape as an array of vertices. The array (of le
 
 |void| **set_faces**\ (\ faces\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_ConcavePolygonShape3D_method_set_faces>`
 
-Sets the faces of the trimesh shape from an array of vertices. The ``faces`` array should be composed of triples such that each triple of vertices defines a triangle.
+根據頂點陣列設定三角網格形狀的面。\ ``faces`` 陣列應更多由若干三元組構成，每三個頂點定義一個三角形。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

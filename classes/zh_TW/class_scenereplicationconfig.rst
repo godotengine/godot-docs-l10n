@@ -5,14 +5,14 @@
 SceneReplicationConfig
 ======================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration for properties to synchronize with a :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`.
+配置，能夠讓 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 對屬性進行同步。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_SceneReplicationConfig_ReplicationMode:
 
@@ -66,7 +66,7 @@ enum **ReplicationMode**: :ref:`🔗<enum_SceneReplicationConfig_ReplicationMode
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **REPLICATION_MODE_NEVER** = ``0``
 
-Do not keep the given property synchronized.
+不保持給定屬性同步。
 
 .. _class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS:
 
@@ -74,7 +74,7 @@ Do not keep the given property synchronized.
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **REPLICATION_MODE_ALWAYS** = ``1``
 
-Replicate the given property on process by constantly sending updates using unreliable transfer mode.
+透過使用不可靠的傳輸模式不斷發送更新來複製程序上的給定屬性。
 
 .. _class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE:
 
@@ -82,7 +82,7 @@ Replicate the given property on process by constantly sending updates using unre
 
 :ref:`ReplicationMode<enum_SceneReplicationConfig_ReplicationMode>` **REPLICATION_MODE_ON_CHANGE** = ``2``
 
-Replicate the given property on process by sending updates using reliable transfer mode when its value changes.
+當其值變更時，透過使用可靠傳輸模式發送更新來複製程序上的給定屬性。
 
 .. rst-class:: classref-section-separator
 
@@ -90,8 +90,8 @@ Replicate the given property on process by sending updates using reliable transf
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SceneReplicationConfig_method_add_property:
 
@@ -99,9 +99,9 @@ Method Descriptions
 
 |void| **add_property**\ (\ path\: :ref:`NodePath<class_NodePath>`, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_SceneReplicationConfig_method_add_property>`
 
-Adds the property identified by the given ``path`` to the list of the properties being synchronized, optionally passing an ``index``.
+將屬性新增至同步屬性列表，該屬性由 ``path`` 指定，還可以傳入索引 ``index``\ 。
 
-\ **Note:** For details on restrictions and limitations on property synchronization, see :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`.
+\ **注意：**\ 屬性同步的限制詳見 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Adds the property identified by the given ``path`` to the list of the properties
 
 :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_properties**\ (\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_get_properties>`
 
-Returns a list of synchronized property :ref:`NodePath<class_NodePath>`\ s.
+返回同步屬性的 :ref:`NodePath<class_NodePath>` 列表。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Returns ``true`` if the given ``path`` is configured for synchronization.
 
 :ref:`int<class_int>` **property_get_index**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_SceneReplicationConfig_method_property_get_index>`
 
-Finds the index of the given ``path``.
+搜尋給定 ``path`` 的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Returns ``true`` if the property identified by the given ``path`` is configured 
 
 :ref:`bool<class_bool>` **property_get_sync**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_sync>`
 
-**Deprecated:** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
+**已棄用：** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
 
 Returns ``true`` if the property identified by the given ``path`` is configured to be synchronized on process.
 
@@ -187,7 +187,7 @@ Returns ``true`` if the property identified by the given ``path`` is configured 
 
 :ref:`bool<class_bool>` **property_get_watch**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_get_watch>`
 
-**Deprecated:** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
+**已棄用：** Use :ref:`property_get_replication_mode()<class_SceneReplicationConfig_method_property_get_replication_mode>` instead.
 
 Returns ``true`` if the property identified by the given ``path`` is configured to be reliably synchronized when changes are detected on process.
 
@@ -213,7 +213,7 @@ Sets the synchronization mode for the property identified by the given ``path``.
 
 |void| **property_set_spawn**\ (\ path\: :ref:`NodePath<class_NodePath>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_spawn>`
 
-Sets whether the property identified by the given ``path`` is configured to be synchronized on spawn.
+設定屬性是否配置為在出生時同步，該屬性由 ``path`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Sets whether the property identified by the given ``path`` is configured to be s
 
 |void| **property_set_sync**\ (\ path\: :ref:`NodePath<class_NodePath>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_sync>`
 
-**Deprecated:** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>` instead.
+**已棄用：** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ALWAYS<class_SceneReplicationConfig_constant_REPLICATION_MODE_ALWAYS>` instead.
 
 Sets whether the property identified by the given ``path`` is configured to be synchronized on process.
 
@@ -239,7 +239,7 @@ Sets whether the property identified by the given ``path`` is configured to be s
 
 |void| **property_set_watch**\ (\ path\: :ref:`NodePath<class_NodePath>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_property_set_watch>`
 
-**Deprecated:** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>` instead.
+**已棄用：** Use :ref:`property_set_replication_mode()<class_SceneReplicationConfig_method_property_set_replication_mode>` with :ref:`REPLICATION_MODE_ON_CHANGE<class_SceneReplicationConfig_constant_REPLICATION_MODE_ON_CHANGE>` instead.
 
 Sets whether the property identified by the given ``path`` is configured to be reliably synchronized when changes are detected on process.
 
@@ -253,14 +253,14 @@ Sets whether the property identified by the given ``path`` is configured to be r
 
 |void| **remove_property**\ (\ path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SceneReplicationConfig_method_remove_property>`
 
-Removes the property identified by the given ``path`` from the configuration.
+從配置中移除屬性，該屬性由 ``path`` 指定。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

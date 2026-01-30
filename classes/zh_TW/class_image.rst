@@ -5,14 +5,14 @@
 Image
 =====
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Image datatype.
+圖像資料型別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Native image datatype. Contains image data which can be converted to an :ref:`ImageTexture<class_ImageTexture>` and provides commonly used *image processing* methods. The maximum width and height for an **Image** are :ref:`MAX_WIDTH<class_Image_constant_MAX_WIDTH>` and :ref:`MAX_HEIGHT<class_Image_constant_MAX_HEIGHT>`.
 
@@ -24,17 +24,17 @@ An **Image** cannot be assigned to a texture property of an object directly (suc
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Importing images <../tutorials/assets_pipeline/importing_images>`
+- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -211,8 +211,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Image_Format:
 
@@ -226,7 +226,7 @@ enum **Format**: :ref:`🔗<enum_Image_Format>`
 
 :ref:`Format<enum_Image_Format>` **FORMAT_L8** = ``0``
 
-Texture format with a single 8-bit depth representing luminance.
+紋理格式，具有代表亮度的單一 8 位深度。
 
 .. _class_Image_constant_FORMAT_LA8:
 
@@ -234,7 +234,7 @@ Texture format with a single 8-bit depth representing luminance.
 
 :ref:`Format<enum_Image_Format>` **FORMAT_LA8** = ``1``
 
-OpenGL texture format with two values, luminance and alpha each stored with 8 bits.
+OpenGL 紋理格式，具有兩個值，亮度和 Alpha，都以 8 位元儲存。
 
 .. _class_Image_constant_FORMAT_R8:
 
@@ -242,7 +242,7 @@ OpenGL texture format with two values, luminance and alpha each stored with 8 bi
 
 :ref:`Format<enum_Image_Format>` **FORMAT_R8** = ``2``
 
-OpenGL texture format ``RED`` with a single component and a bitdepth of 8.
+OpenGL 紋理格式 ``RED``\ ，具有單個分量和 8 位深度。
 
 .. _class_Image_constant_FORMAT_RG8:
 
@@ -250,7 +250,7 @@ OpenGL texture format ``RED`` with a single component and a bitdepth of 8.
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RG8** = ``3``
 
-OpenGL texture format ``RG`` with two components and a bitdepth of 8 for each.
+OpenGL 紋理格式 ``RG``\ ，具有兩個部分，每個部分的位元深度為 8。
 
 .. _class_Image_constant_FORMAT_RGB8:
 
@@ -278,7 +278,7 @@ OpenGL texture format ``RGBA`` with four components, each with a bitdepth of 8.
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBA4444** = ``6``
 
-OpenGL texture format ``RGBA`` with four components, each with a bitdepth of 4.
+OpenGL 紋理格式 ``RGBA`` 有四個部分，每個分量部分的位元深度為 4。
 
 .. _class_Image_constant_FORMAT_RGB565:
 
@@ -294,7 +294,7 @@ OpenGL texture format ``RGB`` with three components. Red and blue have a bitdept
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RF** = ``8``
 
-OpenGL texture format ``GL_R32F`` where there's one component, a 32-bit floating-point value.
+OpenGL 紋理格式 ``GL_R32F``\ ，其中有一個分量，是32 位浮點值。
 
 .. _class_Image_constant_FORMAT_RGF:
 
@@ -302,7 +302,7 @@ OpenGL texture format ``GL_R32F`` where there's one component, a 32-bit floating
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGF** = ``9``
 
-OpenGL texture format ``GL_RG32F`` where there are two components, each a 32-bit floating-point values.
+OpenGL 紋理格式 ``GL_RG32F`` 這裡有兩個部分，每個部分是一個 32 位浮點值。
 
 .. _class_Image_constant_FORMAT_RGBF:
 
@@ -310,7 +310,7 @@ OpenGL texture format ``GL_RG32F`` where there are two components, each a 32-bit
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBF** = ``10``
 
-OpenGL texture format ``GL_RGB32F`` where there are three components, each a 32-bit floating-point values.
+OpenGL 紋理格式 ``GL_RGB32F``\ ，其中有三個部分，每個部分都是 32 位元浮點值。
 
 .. _class_Image_constant_FORMAT_RGBAF:
 
@@ -318,7 +318,7 @@ OpenGL texture format ``GL_RGB32F`` where there are three components, each a 32-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBAF** = ``11``
 
-OpenGL texture format ``GL_RGBA32F`` where there are four components, each a 32-bit floating-point values.
+OpenGL 紋理格式 ``GL_RGBA32F``\ ，其中有四個部分，每個部分都是 32 位元浮點值。
 
 .. _class_Image_constant_FORMAT_RH:
 
@@ -326,7 +326,7 @@ OpenGL texture format ``GL_RGBA32F`` where there are four components, each a 32-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RH** = ``12``
 
-OpenGL texture format ``GL_R16F`` where there's one component, a 16-bit "half-precision" floating-point value.
+OpenGL 紋理格式 ``GL_R32F``\ ，其中有一個分量，即 16 位“半精度”浮點值。
 
 .. _class_Image_constant_FORMAT_RGH:
 
@@ -334,7 +334,7 @@ OpenGL texture format ``GL_R16F`` where there's one component, a 16-bit "half-pr
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGH** = ``13``
 
-OpenGL texture format ``GL_RG16F`` where there are two components, each a 16-bit "half-precision" floating-point value.
+OpenGL 紋理格式 ``GL_RG32F``\ ，其中有兩個部分，每個部分都是 16 位元“半精度”浮點值。
 
 .. _class_Image_constant_FORMAT_RGBH:
 
@@ -342,7 +342,7 @@ OpenGL texture format ``GL_RG16F`` where there are two components, each a 16-bit
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBH** = ``14``
 
-OpenGL texture format ``GL_RGB16F`` where there are three components, each a 16-bit "half-precision" floating-point value.
+OpenGL 紋理格式 ``GL_RGB32F``\ ，其中有三個部分，每個部分都是 16 位元“半精度”浮點值。
 
 .. _class_Image_constant_FORMAT_RGBAH:
 
@@ -350,7 +350,7 @@ OpenGL texture format ``GL_RGB16F`` where there are three components, each a 16-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBAH** = ``15``
 
-OpenGL texture format ``GL_RGBA16F`` where there are four components, each a 16-bit "half-precision" floating-point value.
+OpenGL 紋理格式 ``GL_RGBA32F``\ ，其中有四個部分，每個都是 16 位“半精度”浮點值。
 
 .. _class_Image_constant_FORMAT_RGBE9995:
 
@@ -358,7 +358,7 @@ OpenGL texture format ``GL_RGBA16F`` where there are four components, each a 16-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBE9995** = ``16``
 
-A special OpenGL texture format where the three color components have 9 bits of precision and all three share a single 5-bit exponent.
+一種特殊的 OpenGL 紋理格式，其中三個顏色成分的精度為 9 位，所有三個成分共用一個 5 比特位的指數。
 
 .. _class_Image_constant_FORMAT_DXT1:
 
@@ -396,7 +396,7 @@ The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture form
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGTC_R** = ``20``
 
-Texture format that uses `Red Green Texture Compression <https://www.khronos.org/opengl/wiki/Red_Green_Texture_Compression>`__, normalizing the red channel data using the same compression algorithm that DXT5 uses for the alpha channel.
+使用\ `紅綠貼圖壓縮 <https://www.khronos.org/opengl/wiki/Red_Green_Texture_Compression>`__\ 的貼圖格式，使用與 DXT5 用於 Alpha 通道相同的壓縮演算法對紅色通道資料進行正規化。
 
 .. _class_Image_constant_FORMAT_RGTC_RG:
 
@@ -404,7 +404,7 @@ Texture format that uses `Red Green Texture Compression <https://www.khronos.org
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGTC_RG** = ``21``
 
-Texture format that uses `Red Green Texture Compression <https://www.khronos.org/opengl/wiki/Red_Green_Texture_Compression>`__, normalizing the red and green channel data using the same compression algorithm that DXT5 uses for the alpha channel.
+使用\ `紅綠貼圖壓縮 <https://www.khronos.org/opengl/wiki/Red_Green_Texture_Compression>`__\ 的貼圖格式，使用與 DXT5 用於 Alpha 的壓縮演算法相同的紅綠資料通道。
 
 .. _class_Image_constant_FORMAT_BPTC_RGBA:
 
@@ -422,7 +422,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_BPTC_RGBF** = ``23``
 
-Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression>`__ compression with signed floating-point RGB components.
+使用 `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression>`__ 壓縮和有符號浮點RGB分量的貼圖格式.
 
 .. _class_Image_constant_FORMAT_BPTC_RGBFU:
 
@@ -430,7 +430,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_BPTC_RGBFU** = ``24``
 
-Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression>`__ compression with unsigned floating-point RGB components.
+使用\ `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression>`__ 壓縮和無符號浮點RGB分量的貼圖格式.
 
 .. _class_Image_constant_FORMAT_ETC:
 
@@ -438,7 +438,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC** = ``25``
 
-`Ericsson Texture Compression format 1 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC1>`__, also referred to as "ETC1", and is part of the OpenGL ES graphics standard. This format cannot store an alpha channel.
+`愛立信紋理壓縮格式 1 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#ETC1>`__\ ，又稱“ETC1”，是 OpenGL ES 圖形標準的一部分。這種格式無法存儲 Alpha 通道。
 
 .. _class_Image_constant_FORMAT_ETC2_R11:
 
@@ -446,7 +446,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_R11** = ``26``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``R11_EAC`` variant), which provides one channel of unsigned data.
+`ETC2%E5%92%8CEAC]愛立信紋理壓縮格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``R11_EAC`` 變體），它提供一個無符號資料通道。
 
 .. _class_Image_constant_FORMAT_ETC2_R11S:
 
@@ -454,7 +454,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_R11S** = ``27``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``SIGNED_R11_EAC`` variant), which provides one channel of signed data.
+`ETC2%E5%92%8CEAC]愛立信紋理壓縮格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``SIGNED_R11_EAC`` 變體），它提供一個有符號資料通道。
 
 .. _class_Image_constant_FORMAT_ETC2_RG11:
 
@@ -462,7 +462,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RG11** = ``28``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``RG11_EAC`` variant), which provides two channels of unsigned data.
+`ETC2%E5%92%8CEAC]愛立信紋理壓縮格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RG11_EAC`` 變體），它提供一個無符號數據通道。
 
 .. _class_Image_constant_FORMAT_ETC2_RG11S:
 
@@ -470,7 +470,7 @@ Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RG11S** = ``29``
 
-`Ericsson Texture Compression format 2 <https://en.wikipedia.org/wiki/Ericsson_Texture_Compression#ETC2_and_EAC>`__ (``SIGNED_RG11_EAC`` variant), which provides two channels of signed data.
+`ETC2%E5%92%8CEAC]愛立信紋理壓縮格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``SIGNED_RG11_EAC`` 變體），它提供兩個有符號資料通道。
 
 .. _class_Image_constant_FORMAT_ETC2_RGB8:
 
@@ -532,7 +532,7 @@ The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture form
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ASTC_4x4_HDR** = ``36``
 
-Same format as :ref:`FORMAT_ASTC_4x4<class_Image_constant_FORMAT_ASTC_4x4>`, but with the hint to let the GPU know it is used for HDR.
+與 :ref:`FORMAT_ASTC_4x4<class_Image_constant_FORMAT_ASTC_4x4>` 相同的格式，但有提示以讓 GPU 知道它用於 HDR。
 
 .. _class_Image_constant_FORMAT_ASTC_8x8:
 
@@ -548,7 +548,7 @@ Same format as :ref:`FORMAT_ASTC_4x4<class_Image_constant_FORMAT_ASTC_4x4>`, but
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ASTC_8x8_HDR** = ``38``
 
-Same format as :ref:`FORMAT_ASTC_8x8<class_Image_constant_FORMAT_ASTC_8x8>`, but with the hint to let the GPU know it is used for HDR.
+與 :ref:`FORMAT_ASTC_8x8<class_Image_constant_FORMAT_ASTC_8x8>` 相同的格式，但有提示以讓 GPU 知道它用於 HDR。
 
 .. _class_Image_constant_FORMAT_R16:
 
@@ -644,7 +644,7 @@ OpenGL texture format ``GL_RGBA16UI`` where there are four components, each a 16
 
 :ref:`Format<enum_Image_Format>` **FORMAT_MAX** = ``47``
 
-Represents the size of the :ref:`Format<enum_Image_Format>` enum.
+代表 :ref:`Format<enum_Image_Format>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ enum **Interpolation**: :ref:`🔗<enum_Image_Interpolation>`
 
 :ref:`Interpolation<enum_Image_Interpolation>` **INTERPOLATE_NEAREST** = ``0``
 
-Performs nearest-neighbor interpolation. If the image is resized, it will be pixelated.
+執行最近鄰插值。如果調整圖像大小，它將被圖元化。
 
 .. _class_Image_constant_INTERPOLATE_BILINEAR:
 
@@ -670,7 +670,7 @@ Performs nearest-neighbor interpolation. If the image is resized, it will be pix
 
 :ref:`Interpolation<enum_Image_Interpolation>` **INTERPOLATE_BILINEAR** = ``1``
 
-Performs bilinear interpolation. If the image is resized, it will be blurry. This mode is faster than :ref:`INTERPOLATE_CUBIC<class_Image_constant_INTERPOLATE_CUBIC>`, but it results in lower quality.
+執行雙線性插值。如果調整圖像大小，則圖像將模糊。此模式比 :ref:`INTERPOLATE_CUBIC<class_Image_constant_INTERPOLATE_CUBIC>` 更快，但品質較低。
 
 .. _class_Image_constant_INTERPOLATE_CUBIC:
 
@@ -678,7 +678,7 @@ Performs bilinear interpolation. If the image is resized, it will be blurry. Thi
 
 :ref:`Interpolation<enum_Image_Interpolation>` **INTERPOLATE_CUBIC** = ``2``
 
-Performs cubic interpolation. If the image is resized, it will be blurry. This mode often gives better results compared to :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BILINEAR>`, at the cost of being slower.
+執行三次插值。如果調整圖像大小，則圖像將模糊。與 :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BILINEAR>` 相比，此模式通常會產生更好的結果，但代價是速度較慢。
 
 .. _class_Image_constant_INTERPOLATE_TRILINEAR:
 
@@ -686,15 +686,15 @@ Performs cubic interpolation. If the image is resized, it will be blurry. This m
 
 :ref:`Interpolation<enum_Image_Interpolation>` **INTERPOLATE_TRILINEAR** = ``3``
 
-Performs bilinear separately on the two most-suited mipmap levels, then linearly interpolates between them.
+在兩個最適合的多級漸遠紋理級別上分別執行雙線性取樣，然後在取樣結果之間進行線性插值。
 
-It's slower than :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BILINEAR>`, but produces higher-quality results with far fewer aliasing artifacts.
+它比 :ref:`INTERPOLATE_BILINEAR<class_Image_constant_INTERPOLATE_BILINEAR>` 慢，但能產生更高品質的效果，減少鋸齒偽影。
 
-If the image does not have mipmaps, they will be generated and used internally, but no mipmaps will be generated on the resulting image.
+如果圖像沒有多級漸遠紋理，它們將被生成並在內部使用，但不會在生成的圖像之上生成多級漸遠紋理。
 
-\ **Note:** If you intend to scale multiple copies of the original image, it's better to call :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`] on it in advance, to avoid wasting processing power in generating them again and again.
+\ **注意：**\ 如果你打算縮放原始圖像的多個副本，最好事先對其呼叫 :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`\ ，以避免在生成它們時反復浪費處理能力。
 
-On the other hand, if the image already has mipmaps, they will be used, and a new set will be generated for the resulting image.
+另一方面，如果圖像已經有了多級漸遠紋理，其將被使用，並為生成的圖像生成新的一組。
 
 .. _class_Image_constant_INTERPOLATE_LANCZOS:
 
@@ -754,7 +754,7 @@ enum **CompressMode**: :ref:`🔗<enum_Image_CompressMode>`
 
 :ref:`CompressMode<enum_Image_CompressMode>` **COMPRESS_S3TC** = ``0``
 
-Use S3TC compression.
+使用 S3TC 壓縮。
 
 .. _class_Image_constant_COMPRESS_ETC:
 
@@ -762,7 +762,7 @@ Use S3TC compression.
 
 :ref:`CompressMode<enum_Image_CompressMode>` **COMPRESS_ETC** = ``1``
 
-Use ETC compression.
+使用 ETC 壓縮。
 
 .. _class_Image_constant_COMPRESS_ETC2:
 
@@ -770,7 +770,7 @@ Use ETC compression.
 
 :ref:`CompressMode<enum_Image_CompressMode>` **COMPRESS_ETC2** = ``2``
 
-Use ETC2 compression.
+使用 ETC2 壓縮。
 
 .. _class_Image_constant_COMPRESS_BPTC:
 
@@ -778,7 +778,7 @@ Use ETC2 compression.
 
 :ref:`CompressMode<enum_Image_CompressMode>` **COMPRESS_BPTC** = ``3``
 
-Use BPTC compression.
+使用 BPTC 壓縮。
 
 .. _class_Image_constant_COMPRESS_ASTC:
 
@@ -786,7 +786,7 @@ Use BPTC compression.
 
 :ref:`CompressMode<enum_Image_CompressMode>` **COMPRESS_ASTC** = ``4``
 
-Use ASTC compression.
+使用 ASTC 壓縮。
 
 .. _class_Image_constant_COMPRESS_MAX:
 
@@ -794,7 +794,7 @@ Use ASTC compression.
 
 :ref:`CompressMode<enum_Image_CompressMode>` **COMPRESS_MAX** = ``5``
 
-Represents the size of the :ref:`CompressMode<enum_Image_CompressMode>` enum.
+代表 :ref:`CompressMode<enum_Image_CompressMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -870,7 +870,7 @@ enum **CompressSource**: :ref:`🔗<enum_Image_CompressSource>`
 
 :ref:`CompressSource<enum_Image_CompressSource>` **COMPRESS_SOURCE_GENERIC** = ``0``
 
-Source texture (before compression) is a regular texture. Default for all textures.
+原始紋理（在壓縮前）是常規紋理。所有紋理的預設值。
 
 .. _class_Image_constant_COMPRESS_SOURCE_SRGB:
 
@@ -886,7 +886,7 @@ Source texture (before compression) uses nonlinear sRGB encoding.
 
 :ref:`CompressSource<enum_Image_CompressSource>` **COMPRESS_SOURCE_NORMAL** = ``2``
 
-Source texture (before compression) is a normal texture (e.g. it can be compressed into two channels).
+原始紋理（在壓縮前）是法線紋理（例如可以壓縮為兩個通道）。
 
 .. rst-class:: classref-item-separator
 
@@ -920,8 +920,8 @@ Hint to indicate that the low quality 8×8 ASTC compression format should be use
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_Image_constant_MAX_WIDTH:
 
@@ -929,7 +929,7 @@ Constants
 
 **MAX_WIDTH** = ``16777216`` :ref:`🔗<class_Image_constant_MAX_WIDTH>`
 
-The maximal width allowed for **Image** resources.
+**Image** 資源允許的最大寬度。
 
 .. _class_Image_constant_MAX_HEIGHT:
 
@@ -937,7 +937,7 @@ The maximal width allowed for **Image** resources.
 
 **MAX_HEIGHT** = ``16777216`` :ref:`🔗<class_Image_constant_MAX_HEIGHT>`
 
-The maximal height allowed for **Image** resources.
+**Image** 資源允許的最大高度。
 
 .. rst-class:: classref-section-separator
 
@@ -945,8 +945,8 @@ The maximal height allowed for **Image** resources.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Image_property_data:
 
@@ -954,7 +954,7 @@ Property Descriptions
 
 :ref:`Dictionary<class_Dictionary>` **data** = ``{ "data": PackedByteArray(), "format": "Lum8", "height": 0, "mipmaps": false, "width": 0 }`` :ref:`🔗<class_Image_property_data>`
 
-Holds all the image's color data in a given format. See :ref:`Format<enum_Image_Format>` constants.
+以給定的格式保存圖像的所有顏色資料。參閱 :ref:`Format<enum_Image_Format>` 常數。
 
 .. rst-class:: classref-section-separator
 
@@ -962,8 +962,8 @@ Holds all the image's color data in a given format. See :ref:`Format<enum_Image_
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Image_method_adjust_bcs:
 
@@ -983,7 +983,7 @@ Adjusts this image's ``brightness``, ``contrast``, and ``saturation`` by the giv
 
 |void| **blend_rect**\ (\ src\: :ref:`Image<class_Image>`, src_rect\: :ref:`Rect2i<class_Rect2i>`, dst\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Image_method_blend_rect>`
 
-Alpha-blends ``src_rect`` from ``src`` image to this image at coordinates ``dst``, clipped accordingly to both image bounds. This image and ``src`` image **must** have the same format. ``src_rect`` with non-positive size is treated as empty.
+將 ``src`` 圖像上的 ``src_rect`` 與該圖像的座標 ``dst`` 處進行 Alpha 混合，將根據兩個圖像的邊界進行裁剪。該圖像和 ``src`` 圖像\ **必須**\ 具有相同的格式。具有非正大小的 ``src_rect`` 將被視為空。
 
 .. rst-class:: classref-item-separator
 
@@ -995,7 +995,7 @@ Alpha-blends ``src_rect`` from ``src`` image to this image at coordinates ``dst`
 
 |void| **blend_rect_mask**\ (\ src\: :ref:`Image<class_Image>`, mask\: :ref:`Image<class_Image>`, src_rect\: :ref:`Rect2i<class_Rect2i>`, dst\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Image_method_blend_rect_mask>`
 
-Alpha-blends ``src_rect`` from ``src`` image to this image using ``mask`` image at coordinates ``dst``, clipped accordingly to both image bounds. Alpha channels are required for both ``src`` and ``mask``. ``dst`` pixels and ``src`` pixels will blend if the corresponding mask pixel's alpha value is not 0. This image and ``src`` image **must** have the same format. ``src`` image and ``mask`` image **must** have the same size (width and height) but they can have different formats. ``src_rect`` with non-positive size is treated as empty.
+使用遮罩圖 ``mask``\ ，將源圖像 ``src`` 中的 ``src_rect`` 區域的圖像，Alpha 混合到本圖像從座標 ``dst`` 起的區域，會根據兩者的圖像區域進行裁剪。\ ``src`` 和 ``mask`` 都需要有 Alpha 通道。如果遮罩圖 mask 上某個像素的 Alpha 值非 0，則相應的 ``dst`` 的圖元和 ``src`` 的圖元將混合。這張圖像和 ``src`` 圖像的格式\ **必須**\ 一致。\ ``src`` 圖像和 ``mask`` 圖像的大小（寬度和高度）\ **必須**\ 相同，格式可以不同。\ ``src_rect`` 的大小如果非正，則會作為空矩形處理。
 
 .. rst-class:: classref-item-separator
 
@@ -1021,7 +1021,7 @@ Copies ``src_rect`` from ``src`` image to this image at coordinates ``dst``, cli
 
 |void| **blit_rect_mask**\ (\ src\: :ref:`Image<class_Image>`, mask\: :ref:`Image<class_Image>`, src_rect\: :ref:`Rect2i<class_Rect2i>`, dst\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Image_method_blit_rect_mask>`
 
-Blits ``src_rect`` area from ``src`` image to this image at the coordinates given by ``dst``, clipped accordingly to both image bounds. ``src`` pixel is copied onto ``dst`` if the corresponding ``mask`` pixel's alpha value is not 0. This image and ``src`` image **must** have the same format. ``src`` image and ``mask`` image **must** have the same size (width and height) but they can have different formats. ``src_rect`` with non-positive size is treated as empty.
+將源圖像 ``src`` 上的矩形區域 ``src_rect`` 複製到本圖像從座標 ``dst`` 起的區域，會根據兩者的圖像區域進行裁剪。如果遮罩圖 ``mask`` 上某個像素的 Alpha 值非 0，就會把 ``src`` 上對應的圖元複製到 ``dst`` 上。這張圖像和 ``src`` 圖像的格式\ **必須**\ 一致。\ ``src`` 圖像和 ``mask`` 圖像的大小（寬度和高度）\ **必須**\ 相同，格式可以不同。\ ``src_rect`` 的大小如果非正，則會作為空矩形處理。
 
 .. rst-class:: classref-item-separator
 
@@ -1033,7 +1033,7 @@ Blits ``src_rect`` area from ``src`` image to this image at the coordinates give
 
 |void| **bump_map_to_normal_map**\ (\ bump_scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Image_method_bump_map_to_normal_map>`
 
-Converts a bump map to a normal map. A bump map provides a height offset per-pixel, while a normal map provides a normal direction per pixel.
+將凹凸貼圖轉換為法線貼圖。凹凸貼圖提供每個圖元的高度偏移，而法線貼圖提供每個圖元的法線方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1045,7 +1045,7 @@ Converts a bump map to a normal map. A bump map provides a height offset per-pix
 
 |void| **clear_mipmaps**\ (\ ) :ref:`🔗<class_Image_method_clear_mipmaps>`
 
-Removes the image's mipmaps.
+刪除圖像的多級漸遠紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -1119,7 +1119,7 @@ Converts this image's format to the given ``format``.
 
 |void| **copy_from**\ (\ src\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_Image_method_copy_from>`
 
-Copies ``src`` image to this image.
+將源圖像 ``src`` 複製到本圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1131,7 +1131,7 @@ Copies ``src`` image to this image.
 
 :ref:`Image<class_Image>` **create**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, use_mipmaps\: :ref:`bool<class_bool>`, format\: :ref:`Format<enum_Image_Format>`\ ) |static| :ref:`🔗<class_Image_method_create>`
 
-**Deprecated:** Use :ref:`create_empty()<class_Image_method_create_empty>`.
+**已棄用：** Use :ref:`create_empty()<class_Image_method_create_empty>`.
 
 Creates an empty image of the given size and format. If ``use_mipmaps`` is ``true``, generates mipmaps for this image (see :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`).
 
@@ -1169,7 +1169,7 @@ Creates a new image of the given size and format. Fills the image with the given
 
 |void| **crop**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Image_method_crop>`
 
-Crops the image to the given ``width`` and ``height``. If the specified size is larger than the current size, the extra area is filled with black pixels.
+將該圖像裁剪成給定的 ``width`` 和 ``height``\ 。如果指定的大小大於目前大小，則額外的區域用黑色圖元填充。
 
 .. rst-class:: classref-item-separator
 
@@ -1193,7 +1193,7 @@ Decompresses the image if it is VRAM-compressed in a supported format. This incr
 
 :ref:`AlphaMode<enum_Image_AlphaMode>` **detect_alpha**\ (\ ) |const| :ref:`🔗<class_Image_method_detect_alpha>`
 
-Returns :ref:`ALPHA_BLEND<class_Image_constant_ALPHA_BLEND>` if the image has data for alpha values. Returns :ref:`ALPHA_BIT<class_Image_constant_ALPHA_BIT>` if all the alpha values are stored in a single bit. Returns :ref:`ALPHA_NONE<class_Image_constant_ALPHA_NONE>` if no data for alpha values is found.
+如果圖像有 Alpha 值的資料，則返回 :ref:`ALPHA_BLEND<class_Image_constant_ALPHA_BLEND>`\ 。如果所有的 Alpha 值都儲存在一個位上，則返回 :ref:`ALPHA_BIT<class_Image_constant_ALPHA_BIT>`\ 。如果沒有找到 Alpha 值的資料，則返回 :ref:`ALPHA_NONE<class_Image_constant_ALPHA_NONE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1217,7 +1217,7 @@ Returns the color channels used by this image. If the image is compressed, the o
 
 |void| **fill**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Image_method_fill>`
 
-Fills the image with ``color``.
+使用顏色 ``color`` 填充圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1229,7 +1229,7 @@ Fills the image with ``color``.
 
 |void| **fill_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Image_method_fill_rect>`
 
-Fills ``rect`` with ``color``.
+使用顏色 ``color`` 填充矩形 ``rect``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1241,7 +1241,7 @@ Fills ``rect`` with ``color``.
 
 |void| **fix_alpha_edges**\ (\ ) :ref:`🔗<class_Image_method_fix_alpha_edges>`
 
-Blends low-alpha pixels with nearby pixels.
+將 Alpha 較低的圖元與附近圖元混合。
 
 .. rst-class:: classref-item-separator
 
@@ -1253,7 +1253,7 @@ Blends low-alpha pixels with nearby pixels.
 
 |void| **flip_x**\ (\ ) :ref:`🔗<class_Image_method_flip_x>`
 
-Flips the image horizontally.
+水平翻轉圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1265,7 +1265,7 @@ Flips the image horizontally.
 
 |void| **flip_y**\ (\ ) :ref:`🔗<class_Image_method_flip_y>`
 
-Flips the image vertically.
+垂直翻轉圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1291,7 +1291,7 @@ It is possible to check if the image has mipmaps by calling :ref:`has_mipmaps()<
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_data**\ (\ ) |const| :ref:`🔗<class_Image_method_get_data>`
 
-Returns a copy of the image's raw data.
+返回圖像原始資料的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Returns this image's format.
 
 :ref:`int<class_int>` **get_height**\ (\ ) |const| :ref:`🔗<class_Image_method_get_height>`
 
-Returns the image's height.
+返回圖像的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -1339,7 +1339,7 @@ Returns the image's height.
 
 :ref:`int<class_int>` **get_mipmap_count**\ (\ ) |const| :ref:`🔗<class_Image_method_get_mipmap_count>`
 
-Returns the number of mipmap levels or 0 if the image has no mipmaps. The largest main level image is not counted as a mipmap level by this method, so if you want to include it you can add 1 to this count.
+傳回mipmap 級別數，如果影像沒有mipmap，則傳回0。透過此方法，最大的主級別影像不會被計為mipmap 級別，因此如果您想要包含它，您此計數可加 1。
 
 .. rst-class:: classref-item-separator
 
@@ -1363,9 +1363,9 @@ Returns the offset where the image's mipmap with index ``mipmap`` is stored in t
 
 :ref:`Color<class_Color>` **get_pixel**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Image_method_get_pixel>`
 
-Returns the color of the pixel at ``(x, y)``.
+返回 ``(x, y)`` 處的圖元的顏色。
 
-This is the same as :ref:`get_pixelv()<class_Image_method_get_pixelv>`, but with two integer arguments instead of a :ref:`Vector2i<class_Vector2i>` argument.
+這與 :ref:`get_pixelv()<class_Image_method_get_pixelv>` 相同，但使用兩個整數參數而不是一個 :ref:`Vector2i<class_Vector2i>` 參數。
 
 .. rst-class:: classref-item-separator
 
@@ -1377,9 +1377,9 @@ This is the same as :ref:`get_pixelv()<class_Image_method_get_pixelv>`, but with
 
 :ref:`Color<class_Color>` **get_pixelv**\ (\ point\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_Image_method_get_pixelv>`
 
-Returns the color of the pixel at ``point``.
+返回 ``point`` 處圖元的顏色。
 
-This is the same as :ref:`get_pixel()<class_Image_method_get_pixel>`, but with a :ref:`Vector2i<class_Vector2i>` argument instead of two integer arguments.
+這與 :ref:`get_pixel()<class_Image_method_get_pixel>` 相同，只是用一個 :ref:`Vector2i<class_Vector2i>` 參數代替了兩個整數參數。
 
 .. rst-class:: classref-item-separator
 
@@ -1391,7 +1391,7 @@ This is the same as :ref:`get_pixel()<class_Image_method_get_pixel>`, but with a
 
 :ref:`Image<class_Image>` **get_region**\ (\ region\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_Image_method_get_region>`
 
-Returns a new **Image** that is a copy of this **Image**'s area specified with ``region``.
+返回一個新的 **Image**\ ，它是使用 ``region`` 指定的該 **Image** 區域的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1403,7 +1403,7 @@ Returns a new **Image** that is a copy of this **Image**'s area specified with `
 
 :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ ) |const| :ref:`🔗<class_Image_method_get_size>`
 
-Returns the image's size (width and height).
+返回圖像的大小（寬度和高度）。
 
 .. rst-class:: classref-item-separator
 
@@ -1415,7 +1415,7 @@ Returns the image's size (width and height).
 
 :ref:`Rect2i<class_Rect2i>` **get_used_rect**\ (\ ) |const| :ref:`🔗<class_Image_method_get_used_rect>`
 
-Returns a :ref:`Rect2i<class_Rect2i>` enclosing the visible portion of the image, considering each pixel with a non-zero alpha channel as visible.
+返回一個包含該圖像可見部分的 :ref:`Rect2i<class_Rect2i>`\ ，將具有非零 alpha 通道的每個圖元視為可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1427,7 +1427,7 @@ Returns a :ref:`Rect2i<class_Rect2i>` enclosing the visible portion of the image
 
 :ref:`int<class_int>` **get_width**\ (\ ) |const| :ref:`🔗<class_Image_method_get_width>`
 
-Returns the image's width.
+返回圖像的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -1439,7 +1439,7 @@ Returns the image's width.
 
 :ref:`bool<class_bool>` **has_mipmaps**\ (\ ) |const| :ref:`🔗<class_Image_method_has_mipmaps>`
 
-Returns ``true`` if the image has generated mipmaps.
+如果圖像已經生成多級漸遠紋理，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1451,7 +1451,7 @@ Returns ``true`` if the image has generated mipmaps.
 
 :ref:`bool<class_bool>` **is_compressed**\ (\ ) |const| :ref:`🔗<class_Image_method_is_compressed>`
 
-Returns ``true`` if the image is compressed.
+如果圖像被壓縮，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1463,7 +1463,7 @@ Returns ``true`` if the image is compressed.
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_Image_method_is_empty>`
 
-Returns ``true`` if the image has no data.
+如果圖像沒有資料，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1475,7 +1475,7 @@ Returns ``true`` if the image has no data.
 
 :ref:`bool<class_bool>` **is_invisible**\ (\ ) |const| :ref:`🔗<class_Image_method_is_invisible>`
 
-Returns ``true`` if all the image's pixels have an alpha value of 0. Returns ``false`` if any pixel has an alpha value higher than 0.
+如果圖像中所有圖元的 Alpha 都是 0，則返回 ``true``\ 。如果有任何圖元的 Alpha 高於 0，則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1499,11 +1499,11 @@ Converts the entire image from linear encoding to nonlinear sRGB encoding by usi
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Image_method_load>`
 
-Loads an image from file ``path``. See `Supported image formats <../tutorials/assets_pipeline/importing_images.html#supported-image-formats>`__ for a list of supported image formats and limitations.
+從檔 ``path`` 載入圖像。有關支援的圖像格式的列表和限制，請參閱\ `支援的圖像格式 <../tutorials/assets_pipeline/importing_images.html#supported-image-formats>`__\ 。
 
-\ **Warning:** This method should only be used in the editor or in cases when you need to load external images at run-time, such as images located at the ``user://`` directory, and may not work in exported projects.
+\ **警告：**\ 該方法只能用於編輯器，或需要在運作時載入外部圖像的情況，例如位元於 ``user://`` 目錄的圖像，並且可能不適用於匯出的專案。
 
-See also :ref:`ImageTexture<class_ImageTexture>` description for usage examples.
+另請參閱 :ref:`ImageTexture<class_ImageTexture>` 說明，以獲取使用範例。
 
 .. rst-class:: classref-item-separator
 
@@ -1557,7 +1557,7 @@ Loads an image from the binary contents of an OpenEXR file.
 
 :ref:`Image<class_Image>` **load_from_file**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Image_method_load_from_file>`
 
-Creates a new **Image** and loads data from the specified file.
+建立一個新的 **Image** 並從指定檔載入資料。
 
 .. rst-class:: classref-item-separator
 
@@ -1569,7 +1569,7 @@ Creates a new **Image** and loads data from the specified file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_jpg_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_load_jpg_from_buffer>`
 
-Loads an image from the binary contents of a JPEG file.
+從 JPEG 檔的二進位內容載入圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1597,7 +1597,7 @@ Loads an image from the binary contents of a `KTX <https://github.com/KhronosGro
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_png_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_load_png_from_buffer>`
 
-Loads an image from the binary contents of a PNG file.
+從 PNG 檔的二進位內容載入圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1609,11 +1609,11 @@ Loads an image from the binary contents of a PNG file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_svg_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Image_method_load_svg_from_buffer>`
 
-Loads an image from the UTF-8 binary contents of an **uncompressed** SVG file (**.svg**).
+從\ **未壓縮** SVG 檔案 (**.svg**) 的 UTF-8 二進位內容載入映像。
 
-\ **Note:** Beware when using compressed SVG files (like **.svgz**), they need to be ``decompressed`` before loading.
+\ **注意：** 使用壓縮的 SVG 檔案（例如 **.svgz**\ ）時請注意，在載入之前需要對其進行\ ``解壓縮``\ 。
 
-\ **Note:** This method is only available in engine builds with the SVG module enabled. By default, the SVG module is enabled, but it can be disabled at build-time using the ``module_svg_enabled=no`` SCons option.
+\ **注意：**\ 此方法僅在啟用了 SVG 模組的引擎版本中可用。預設情況下，SVG 模組處於啟用狀態，但可以使用 ``module_svg_enabled=no`` SCons 選項在建置時停用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1653,7 +1653,7 @@ Loads an image from the binary contents of a TGA file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_webp_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_load_webp_from_buffer>`
 
-Loads an image from the binary contents of a WebP file.
+從 WebP 檔的二進位內容載入圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -1665,7 +1665,7 @@ Loads an image from the binary contents of a WebP file.
 
 |void| **normal_map_to_xy**\ (\ ) :ref:`🔗<class_Image_method_normal_map_to_xy>`
 
-Converts the image's data to represent coordinates on a 3D plane. This is used when the image represents a normal map. A normal map can add lots of detail to a 3D surface without increasing the polygon count.
+轉換圖像的資料以表示 3D 平面上的座標。可以在該圖像標記法線貼圖時使用。法線貼圖可以在不增加多邊形數量的情況下向 3D 表面新增大量細節。
 
 .. rst-class:: classref-item-separator
 
@@ -1689,7 +1689,7 @@ Multiplies color values with alpha values. Resulting color values for a pixel ar
 
 |void| **resize**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, interpolation\: :ref:`Interpolation<enum_Image_Interpolation>` = 1\ ) :ref:`🔗<class_Image_method_resize>`
 
-Resizes the image to the given ``width`` and ``height``. New pixels are calculated using the ``interpolation`` mode defined via :ref:`Interpolation<enum_Image_Interpolation>` constants.
+將該圖像的寬度調整為 ``width``\ 、高度調整為 ``height``\ 。新的圖元使用 ``interpolation`` 插值模式計算，插值模式由 :ref:`Interpolation<enum_Image_Interpolation>` 常數定義。
 
 .. rst-class:: classref-item-separator
 
@@ -1725,7 +1725,7 @@ Converts a standard linear RGBE (Red Green Blue Exponent) image to an image that
 
 |void| **rotate_90**\ (\ direction\: :ref:`ClockDirection<enum_@GlobalScope_ClockDirection>`\ ) :ref:`🔗<class_Image_method_rotate_90>`
 
-Rotates the image in the specified ``direction`` by ``90`` degrees. The width and height of the image must be greater than ``1``. If the width and height are not equal, the image will be resized.
+將該圖像按照 ``direction`` 指定的方向旋轉 ``90`` 度。該圖像的寬度和高度必須大於 ``1``\ 。如果寬和高不相等，則會調整圖像的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1737,7 +1737,7 @@ Rotates the image in the specified ``direction`` by ``90`` degrees. The width an
 
 |void| **rotate_180**\ (\ ) :ref:`🔗<class_Image_method_rotate_180>`
 
-Rotates the image by ``180`` degrees. The width and height of the image must be greater than ``1``.
+將該圖像旋轉 ``180`` 度。該圖像的寬度和高度必須大於 ``1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1801,9 +1801,9 @@ Saves the image as an EXR file to a byte array. If ``grayscale`` is ``true`` and
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_jpg**\ (\ path\: :ref:`String<class_String>`, quality\: :ref:`float<class_float>` = 0.75\ ) |const| :ref:`🔗<class_Image_method_save_jpg>`
 
-Saves the image as a JPEG file to ``path`` with the specified ``quality`` between ``0.01`` and ``1.0`` (inclusive). Higher ``quality`` values result in better-looking output at the cost of larger file sizes. Recommended ``quality`` values are between ``0.75`` and ``0.90``. Even at quality ``1.00``, JPEG compression remains lossy.
+將該圖像作為 JPEG 檔保存到 ``path``\ ，指定的 ``quality`` 介於 ``0.01`` 和 ``1.0``\ （包括）之間。更高的 ``quality`` 值會以更大的檔大小為代價產生更好看的輸出。推薦的 ``quality`` 值介於 ``0.75`` 和 ``0.90`` 之間。即使品質為 ``1.00``\ ，JPEG 壓縮仍然是有損的。
 
-\ **Note:** JPEG does not save an alpha channel. If the **Image** contains an alpha channel, the image will still be saved, but the resulting JPEG file won't contain the alpha channel.
+\ **注意：**\ JPEG 不保存 alpha 通道。如果該 **Image** 包含 alpha 通道，該圖像仍將被保存，但產生的 JPEG 檔將不包含 alpha 通道。
 
 .. rst-class:: classref-item-separator
 
@@ -1815,9 +1815,9 @@ Saves the image as a JPEG file to ``path`` with the specified ``quality`` betwee
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_jpg_to_buffer**\ (\ quality\: :ref:`float<class_float>` = 0.75\ ) |const| :ref:`🔗<class_Image_method_save_jpg_to_buffer>`
 
-Saves the image as a JPEG file to a byte array with the specified ``quality`` between ``0.01`` and ``1.0`` (inclusive). Higher ``quality`` values result in better-looking output at the cost of larger byte array sizes (and therefore memory usage). Recommended ``quality`` values are between ``0.75`` and ``0.90``. Even at quality ``1.00``, JPEG compression remains lossy.
+將該圖像作為 JPEG 檔保存到位元組陣列中，指定的 ``quality`` 介於 ``0.01`` 和 ``1.0``\ （包括）之間。更高的 ``quality`` 值會以更大的位元組陣列大小（以及因此的記憶體使用）為代價產生更好看的輸出。推薦的 ``quality`` 值介於 ``0.75`` 和 ``0.90`` 之間。即使品質為 ``1.00``\ ，JPEG 壓縮仍然是有損的。
 
-\ **Note:** JPEG does not save an alpha channel. If the **Image** contains an alpha channel, the image will still be saved, but the resulting byte array won't contain the alpha channel.
+\ **注意：**\ JPEG 不保存 alpha 通道。如果該 **Image** 包含 alpha 通道，該圖像仍將被保存，但產生的位元組陣列將不包含 alpha 通道。
 
 .. rst-class:: classref-item-separator
 
@@ -1829,7 +1829,7 @@ Saves the image as a JPEG file to a byte array with the specified ``quality`` be
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_png**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Image_method_save_png>`
 
-Saves the image as a PNG file to the file at ``path``.
+將該圖像作為 PNG 檔保存到位於 ``path`` 的檔中。
 
 .. rst-class:: classref-item-separator
 
@@ -1841,7 +1841,7 @@ Saves the image as a PNG file to the file at ``path``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_png_to_buffer**\ (\ ) |const| :ref:`🔗<class_Image_method_save_png_to_buffer>`
 
-Saves the image as a PNG file to a byte array.
+將該圖像作為 PNG 檔保存到位元組陣列中。
 
 .. rst-class:: classref-item-separator
 
@@ -1881,7 +1881,7 @@ Saves the image as a WebP (Web Picture) file to a byte array. By default it will
 
 |void| **set_data**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, use_mipmaps\: :ref:`bool<class_bool>`, format\: :ref:`Format<enum_Image_Format>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_set_data>`
 
-Overwrites data of an existing **Image**. Non-static equivalent of :ref:`create_from_data()<class_Image_method_create_from_data>`.
+覆蓋現有 **Image** 的資料。\ :ref:`create_from_data()<class_Image_method_create_from_data>` 的非靜態等價物。
 
 .. rst-class:: classref-item-separator
 
@@ -1987,12 +1987,12 @@ Converts the raw data from nonlinear sRGB encoding to linear encoding using a lo
 
 \ **Note:** The 8-bit formats required by this method are not suitable for storing linearly encoded values; a significant amount of color information will be lost in darker values. To maintain image quality, this method should not be used.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

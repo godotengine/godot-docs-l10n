@@ -5,28 +5,28 @@
 AudioEffectStereoEnhance
 ========================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An audio effect that can be used to adjust the intensity of stereo panning.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-An audio effect that can be used to adjust the intensity of stereo panning.
+一种可用于调整立体声声像强度的音频效果。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+一种可用于调整立体声声像强度的音频效果。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AudioEffectStereoEnhance_property_pan_pullout:
 
@@ -59,7 +59,7 @@ Property Descriptions
 - |void| **set_pan_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pan_pullout**\ (\ )
 
-Amplifies the difference between stereo channels, increasing or decreasing existing panning. A value of 0.0 will downmix stereo to mono. Does not affect a mono signal.
+放大立体声道之间的差异，提升或降低存在的声像定位。取值为0.0将把立体声混缩为单声道。对单声道信号没有影响。
 
 .. rst-class:: classref-item-separator
 
@@ -76,7 +76,7 @@ Amplifies the difference between stereo channels, increasing or decreasing exist
 - |void| **set_surround**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_surround**\ (\ )
 
-Widens sound stage through phase shifting in conjunction with :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`. Just pans sound to the left channel if :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>` is 0.
+通过在偏移相位时结合\ :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`\ 来拓宽声场。若\ :ref:`time_pullout_ms<class_AudioEffectStereoEnhance_property_time_pullout_ms>`\ 为0，则仅将声像定位到左声道。
 
 .. rst-class:: classref-item-separator
 
@@ -93,14 +93,14 @@ Widens sound stage through phase shifting in conjunction with :ref:`time_pullout
 - |void| **set_time_pullout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_pullout**\ (\ )
 
-Widens sound stage through phase shifting in conjunction with :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`. Just delays the right channel if :ref:`surround<class_AudioEffectStereoEnhance_property_surround>` is 0.
+通过在偏移相位时结合\ :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`\ 来拓宽声场。若\ :ref:`surround<class_AudioEffectStereoEnhance_property_surround>`\ 为0，则仅延迟右声道。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

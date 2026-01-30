@@ -5,16 +5,16 @@
 ScriptCreateDialog
 ==================
 
-**Inherits:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot editor's popup dialog for creating new :ref:`Script<class_Script>` files.
+Godot 編輯器用於建立新 :ref:`Script<class_Script>` 檔的彈出對話方塊。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-The **ScriptCreateDialog** creates script files according to a given template for a given scripting language. The standard use is to configure its fields prior to calling one of the :ref:`Window.popup()<class_Window_method_popup>` methods.
+**ScriptCreateDialog** 會根據給定的範本為給定的指令碼語言建立指令檔。標準用法是在呼叫任何 :ref:`Window.popup()<class_Window_method_popup>` 方法之前，先配置其欄位。
 
 
 .. tabs::
@@ -23,8 +23,8 @@ The **ScriptCreateDialog** creates script files according to a given template fo
 
     func _ready():
         var dialog = ScriptCreateDialog.new();
-        dialog.config("Node", "res://new_node.gd") # For in-engine types.
-        dialog.config("\"res://base_node.gd\"", "res://derived_node.gd") # For script types.
+        dialog.config("Node", "res://new_node.gd") # 對於引擎內建型別。
+        dialog.config("\"res://base_node.gd\"", "res://derived_node.gd") # 對於腳本型別。
         dialog.popup_centered()
 
  .. code-tab:: csharp
@@ -32,8 +32,8 @@ The **ScriptCreateDialog** creates script files according to a given template fo
     public override void _Ready()
     {
         var dialog = new ScriptCreateDialog();
-        dialog.Config("Node", "res://NewNode.cs"); // For in-engine types.
-        dialog.Config("\"res://BaseNode.cs\"", "res://DerivedNode.cs"); // For script types.
+        dialog.Config("Node", "res://NewNode.cs"); // 對於引擎內建型別。
+        dialog.Config("\"res://BaseNode.cs\"", "res://DerivedNode.cs"); // 對於腳本型別。
         dialog.PopupCentered();
     }
 
@@ -41,8 +41,8 @@ The **ScriptCreateDialog** creates script files according to a given template fo
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_ScriptCreateDialog_signal_script_created:
 
@@ -82,7 +82,7 @@ Signals
 
 **script_created**\ (\ script\: :ref:`Script<class_Script>`\ ) :ref:`🔗<class_ScriptCreateDialog_signal_script_created>`
 
-Emitted when the user clicks the OK button.
+當使用者點擊確定按鈕時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -90,8 +90,8 @@ Emitted when the user clicks the OK button.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ScriptCreateDialog_method_config:
 
@@ -99,14 +99,14 @@ Method Descriptions
 
 |void| **config**\ (\ inherits\: :ref:`String<class_String>`, path\: :ref:`String<class_String>`, built_in_enabled\: :ref:`bool<class_bool>` = true, load_enabled\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ScriptCreateDialog_method_config>`
 
-Prefills required fields to configure the ScriptCreateDialog for use.
+預填必填欄位以配置 ScriptCreateDialog 以供使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

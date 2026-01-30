@@ -5,12 +5,12 @@
 Array
 =====
 
-A built-in data structure that holds a sequence of elements.
+內建的資料結構，可儲存一連串元素。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
 
@@ -57,12 +57,12 @@ An array data structure that can contain a sequence of elements of any :ref:`Var
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -97,8 +97,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -209,8 +209,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -239,8 +239,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_Array_constructor_Array:
 
@@ -248,7 +248,7 @@ Constructor Descriptions
 
 :ref:`Array<class_Array>` **Array**\ (\ ) :ref:`🔗<class_Array_constructor_Array>`
 
-Constructs an empty **Array**.
+建構空的 **Array**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -258,15 +258,15 @@ Constructs an empty **Array**.
 
 :ref:`Array<class_Array>` **Array**\ (\ base\: :ref:`Array<class_Array>`, type\: :ref:`int<class_int>`, class_name\: :ref:`StringName<class_StringName>`, script\: :ref:`Variant<class_Variant>`\ )
 
-Creates a typed array from the ``base`` array. A typed array can only contain elements of the given type, or that inherit from the given class, as described by this constructor's parameters:
+從 ``base`` 陣列建立一個「型別化陣列」。型別化陣列只能包含指定型別的元素，或繼承自指定類別的元素，具體由建構子的參數決定：
 
-- ``type`` is the built-in :ref:`Variant<class_Variant>` type, as one the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` constants.
+- ``type``\ ：內建 :ref:`Variant<class_Variant>` 型別，使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 常數之一。
 
-- ``class_name`` is the built-in class name (see :ref:`Object.get_class()<class_Object_method_get_class>`).
+- ``class_name``\ ：內建類別名稱（參見 :ref:`Object.get_class()<class_Object_method_get_class>`\ ）。
 
-- ``script`` is the associated script. It must be a :ref:`Script<class_Script>` instance or ``null``.
+- ``script``\ ：關聯的腳本，必須是 :ref:`Script<class_Script>` 實例或 ``null``\ 。
 
-If ``type`` is not :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`, ``class_name`` must be an empty :ref:`StringName<class_StringName>` and ``script`` must be ``null``.
+若 ``type`` 不是 :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`\ ，則 ``class_name`` 必須為空的 :ref:`StringName<class_StringName>`\ ，且 ``script`` 必須為 ``null``\ 。
 
 ::
 
@@ -282,9 +282,9 @@ If ``type`` is not :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TY
         var c = Array([], TYPE_OBJECT, "Node", Sword)       # Array[Sword]
         var d = Array([], TYPE_OBJECT, "RefCounted", Stats) # Array[Stats]
 
-The ``base`` array's elements are converted when necessary. If this is not possible or ``base`` is already typed, this constructor fails and returns an empty **Array**.
+必要時會轉換 ``base`` 陣列中的元素；若無法轉換，或 ``base`` 已是型別化陣列，則建構子會失敗並回傳空的 **Array**\ 。
 
-In GDScript, this constructor is usually not necessary, as it is possible to create a typed array through static typing:
+在 GDScript 中通常不需要呼叫此建構子，因為可透過靜態型別直接建立型別化陣列：
 
 ::
 
@@ -292,7 +292,7 @@ In GDScript, this constructor is usually not necessary, as it is possible to cre
     var children: Array[Node] = [$Node, $Sprite2D, $RigidBody3D]
 
     var integers: Array[int] = [0.2, 4.5, -2.0]
-    print(integers) # Prints [0, 4, -2]
+    print(integers) # 輸出 [0, 4, -2]
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ In GDScript, this constructor is usually not necessary, as it is possible to cre
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Returns the same array as ``from``. If you need a copy of the array, use :ref:`duplicate()<class_Array_method_duplicate>`.
+回傳與 ``from`` 相同的陣列。若需副本，請使用 :ref:`duplicate()<class_Array_method_duplicate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns the same array as ``from``. If you need a copy of the array, use :ref:`d
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 
-Constructs an array from a :ref:`PackedByteArray<class_PackedByteArray>`.
+從 :ref:`PackedByteArray<class_PackedByteArray>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Constructs an array from a :ref:`PackedByteArray<class_PackedByteArray>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 
-Constructs an array from a :ref:`PackedColorArray<class_PackedColorArray>`.
+從 :ref:`PackedColorArray<class_PackedColorArray>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Constructs an array from a :ref:`PackedColorArray<class_PackedColorArray>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 
-Constructs an array from a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
+從 :ref:`PackedFloat32Array<class_PackedFloat32Array>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ Constructs an array from a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ )
 
-Constructs an array from a :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
+從 :ref:`PackedFloat64Array<class_PackedFloat64Array>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Constructs an array from a :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 
-Constructs an array from a :ref:`PackedInt32Array<class_PackedInt32Array>`.
+從 :ref:`PackedInt32Array<class_PackedInt32Array>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Constructs an array from a :ref:`PackedInt32Array<class_PackedInt32Array>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ )
 
-Constructs an array from a :ref:`PackedInt64Array<class_PackedInt64Array>`.
+從 :ref:`PackedInt64Array<class_PackedInt64Array>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ Constructs an array from a :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 
-Constructs an array from a :ref:`PackedStringArray<class_PackedStringArray>`.
+從 :ref:`PackedStringArray<class_PackedStringArray>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ Constructs an array from a :ref:`PackedStringArray<class_PackedStringArray>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 
-Constructs an array from a :ref:`PackedVector2Array<class_PackedVector2Array>`.
+從 :ref:`PackedVector2Array<class_PackedVector2Array>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Constructs an array from a :ref:`PackedVector2Array<class_PackedVector2Array>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 
-Constructs an array from a :ref:`PackedVector3Array<class_PackedVector3Array>`.
+從 :ref:`PackedVector3Array<class_PackedVector3Array>` 建構陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ Constructs an array from a :ref:`PackedVector3Array<class_PackedVector3Array>`.
 
 :ref:`Array<class_Array>` **Array**\ (\ from\: :ref:`PackedVector4Array<class_PackedVector4Array>`\ )
 
-Constructs an array from a :ref:`PackedVector4Array<class_PackedVector4Array>`.
+從 :ref:`PackedVector4Array<class_PackedVector4Array>` 建構陣列。
 
 .. rst-class:: classref-section-separator
 
@@ -410,8 +410,8 @@ Constructs an array from a :ref:`PackedVector4Array<class_PackedVector4Array>`.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Array_method_all:
 
@@ -419,9 +419,9 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **all**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_all>`
 
-Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *all* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for one array element or more, this method returns ``false``.
+對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ 。若該 :ref:`Callable<class_Callable>` 對陣列中 *所有* 元素皆回傳 ``true``\ ，本方法便回傳 ``true``\ ；只要有任一元素回傳 ``false``\ ，就會回傳 ``false``\ 。
 
-The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
+\ ``method`` 必須接受一個 :ref:`Variant<class_Variant>` 參數（目前的陣列元素）並回傳 :ref:`bool<class_bool>`\ 。
 
 
 .. tabs::
@@ -432,13 +432,13 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
         return number > 5
 
     func _ready():
-        print([6, 10, 6].all(greater_than_5)) # Prints true (3/3 elements evaluate to true).
-        print([4, 10, 4].all(greater_than_5)) # Prints false (1/3 elements evaluate to true).
-        print([4, 4, 4].all(greater_than_5))  # Prints false (0/3 elements evaluate to true).
-        print([].all(greater_than_5))         # Prints true (0/0 elements evaluate to true).
+        print([6, 10, 6].all(greater_than_5)) # 印出 true（3/3 個元素為 true）
+        print([4, 10, 4].all(greater_than_5)) # 印出 false（1/3 個元素為 true）
+        print([4, 4, 4].all(greater_than_5))  # 印出 false（0/3 個元素為 true）
+        print([].all(greater_than_5))         # 印出 true（0/0 個元素為 true）
 
-        # Same as the first line above, but using a lambda function.
-        print([6, 10, 6].all(func(element): return element > 5)) # Prints true
+        # 與上方第一行相同，但以 Lambda 撰寫。
+        print([6, 10, 6].all(func(element): return element > 5)) # 印出 true
 
  .. code-tab:: csharp
 
@@ -449,26 +449,26 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
 
     public override void _Ready()
     {
-        // Prints True (3/3 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(GreaterThan5));
-        // Prints False (1/3 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(GreaterThan5));
-        // Prints False (0/3 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(GreaterThan5));
-        // Prints True (0/0 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { }.All(GreaterThan5));
+        // 印出 True（3/3 個元素為 true）。
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
+        // 印出 False（1/3 個元素為 true）。
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
+        // 印出 False（0/3 個元素為 true）。
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
+        // 印出 True（0/0 個元素為 true）。
+        GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
-        // Same as the first line above, but using a lambda function.
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // Prints True
+        // 與上方第一行相同，但以 Lambda 撰寫。
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // 印出 True
     }
 
 
 
-See also :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
+另請參閱 :ref:`any()<class_Array_method_any>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`map()<class_Array_method_map>` 與 :ref:`reduce()<class_Array_method_reduce>`\ 。
 
-\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
+\ **注意：**\ 與依賴 :ref:`filter()<class_Array_method_filter>` 回傳陣列大小的作法不同，此方法會在第一時間就結束，以提升效能（大量陣列尤然）。
 
-\ **Note:** For an empty array, this method `always <https://en.wikipedia.org/wiki/Vacuous_truth>`__ returns ``true``.
+\ **注意：**\ 對空陣列來說，此方法\ `永遠 <https://en.wikipedia.org/wiki/Vacuous_truth>`__\ 回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -480,9 +480,9 @@ See also :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method
 
 :ref:`bool<class_bool>` **any**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_any>`
 
-Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *one or more* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for all elements in the array, this method returns ``false``.
+對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ 。若該 :ref:`Callable<class_Callable>` 對陣列中 *至少一個* 元素回傳 ``true``\ ，本方法便回傳 ``true``\ ；若所有元素皆回傳 ``false``\ ，則回傳 ``false``\ 。
 
-The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
+\ ``method`` 必須接受一個 :ref:`Variant<class_Variant>` 參數（目前的陣列元素）並回傳 :ref:`bool<class_bool>`\ 。
 
 ::
 
@@ -490,19 +490,19 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
         return number > 5
 
     func _ready():
-        print([6, 10, 6].any(greater_than_5)) # Prints true (3 elements evaluate to true).
-        print([4, 10, 4].any(greater_than_5)) # Prints true (1 elements evaluate to true).
-        print([4, 4, 4].any(greater_than_5))  # Prints false (0 elements evaluate to true).
-        print([].any(greater_than_5))         # Prints false (0 elements evaluate to true).
+        print([6, 10, 6].any(greater_than_5)) # 印出 true（3 個元素為 true）
+        print([4, 10, 4].any(greater_than_5)) # 印出 true（1 個元素為 true）
+        print([4, 4, 4].any(greater_than_5))  # 印出 false（0 個元素為 true）
+        print([].any(greater_than_5))         # 印出 false（0 個元素為 true）
 
-        # Same as the first line above, but using a lambda function.
-        print([6, 10, 6].any(func(number): return number > 5)) # Prints true
+        # 與上方第一行相同，但以 Lambda 撰寫。
+        print([6, 10, 6].any(func(number): return number > 5)) # 印出 true
 
-See also :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
+另請參閱 :ref:`all()<class_Array_method_all>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`map()<class_Array_method_map>` 與 :ref:`reduce()<class_Array_method_reduce>`\ 。
 
-\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
+\ **注意：**\ 與依賴 :ref:`filter()<class_Array_method_filter>` 回傳陣列大小的作法不同，此方法會在第一時間就結束，以提升效能（大量陣列尤然）。
 
-\ **Note:** For an empty array, this method always returns ``false``.
+\ **注意：**\ 對空陣列來說，本方法一律回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ See also :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method
 
 |void| **append**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_append>`
 
-Appends ``value`` at the end of the array (alias of :ref:`push_back()<class_Array_method_push_back>`).
+於陣列尾端附加 ``value``\ （\ :ref:`push_back()<class_Array_method_push_back>` 的別名）。
 
 .. rst-class:: classref-item-separator
 
@@ -526,14 +526,14 @@ Appends ``value`` at the end of the array (alias of :ref:`push_back()<class_Arra
 
 |void| **append_array**\ (\ array\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_method_append_array>`
 
-Appends another ``array`` at the end of this array.
+將另一個 ``array`` 追加到本陣列尾端。
 
 ::
 
     var numbers = [1, 2, 3]
     var extra = [4, 5, 6]
     numbers.append_array(extra)
-    print(numbers) # Prints [1, 2, 3, 4, 5, 6]
+    print(numbers) # 印出 [1, 2, 3, 4, 5, 6]
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ Appends another ``array`` at the end of this array.
 
 |void| **assign**\ (\ array\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_method_assign>`
 
-Assigns elements of another ``array`` into the array. Resizes the array to match ``array``. Performs type conversions if the array is typed.
+將另一個 ``array`` 的元素指派至此陣列，並自動調整大小以符合 ``array``\ 。若此陣列已有型別限制，則會自動執行型別轉換。
 
 .. rst-class:: classref-item-separator
 
@@ -557,9 +557,9 @@ Assigns elements of another ``array`` into the array. Resizes the array to match
 
 :ref:`Variant<class_Variant>` **back**\ (\ ) |const| :ref:`🔗<class_Array_method_back>`
 
-Returns the last element of the array. If the array is empty, fails and returns ``null``. See also :ref:`front()<class_Array_method_front>`.
+回傳陣列最後一個元素。若陣列為空，則失敗並回傳 ``null``\ 。另見 :ref:`front()<class_Array_method_front>`\ 。
 
-\ **Note:** Unlike with the ``[]`` operator (``array[-1]``), an error is generated without stopping project execution.
+\ **注意：**\ 與直接使用 ``array[-1]`` 取值不同，若陣列為空，這個方法只會產生錯誤訊息，不會中斷專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -571,23 +571,22 @@ Returns the last element of the array. If the array is empty, fails and returns 
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Variant<class_Variant>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch>`
 
-Returns the index of ``value`` in the sorted array. If it cannot be found, returns where ``value`` should be inserted to keep the array sorted. The algorithm used is `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__.
+回傳已排序陣列中 ``value`` 的索引；若找不到，則回傳 ``value`` 應插入的位置以維持排序。內部演算法使用\ `二分搜尋 <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__\ 。
 
-If ``before`` is ``true`` (as by default), the returned index comes before all existing elements equal to ``value`` in the array.
+若 ``before`` 為 ``true``\ （預設），則傳回的索引會位於陣列中所有與 ``value`` 相等元素之前。
 
 ::
 
     var numbers = [2, 4, 8, 10]
     var idx = numbers.bsearch(7)
-
     numbers.insert(idx, 7)
-    print(numbers) # Prints [2, 4, 7, 8, 10]
+    print(numbers) # 印出 [2, 4, 7, 8, 10]
 
     var fruits = ["Apple", "Lemon", "Lemon", "Orange"]
-    print(fruits.bsearch("Lemon", true))  # Prints 1, points at the first "Lemon".
-    print(fruits.bsearch("Lemon", false)) # Prints 3, points at "Orange".
+    print(fruits.bsearch("Lemon", true))  # 印出 1，指向第一個 "Lemon"
+    print(fruits.bsearch("Lemon", false)) # 印出 3，指向 "Orange"
 
-\ **Note:** Calling :ref:`bsearch()<class_Array_method_bsearch>` on an *unsorted* array will result in unexpected behavior. Use :ref:`sort()<class_Array_method_sort>` before calling this method.
+\ **注意：**\ 在\ *未排序*\ 的陣列上呼叫 :ref:`bsearch()<class_Array_method_bsearch>` 會得到不可預期的結果，請先使用 :ref:`sort()<class_Array_method_sort>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -599,34 +598,26 @@ If ``before`` is ``true`` (as by default), the returned index comes before all e
 
 :ref:`int<class_int>` **bsearch_custom**\ (\ value\: :ref:`Variant<class_Variant>`, func\: :ref:`Callable<class_Callable>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch_custom>`
 
-Returns the index of ``value`` in the sorted array. If it cannot be found, returns where ``value`` should be inserted to keep the array sorted (using ``func`` for the comparisons). The algorithm used is `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__.
+回傳已排序陣列中 ``value`` 的索引；若找不到，則使用自訂比較函式 ``func`` 計算 ``value`` 應插入的位置以維持排序。內部演算法同樣為\ `二分搜尋 <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__\ 。
 
-Similar to :ref:`sort_custom()<class_Array_method_sort_custom>`, ``func`` is called as many times as necessary, receiving one array element and ``value`` as arguments. The function should return ``true`` if the array element should be *behind* ``value``, otherwise it should return ``false``.
+\ ``func`` 的呼叫方式與 :ref:`sort_custom()<class_Array_method_sort_custom>` 相同，每次會傳入一個陣列元素與 ``value`` 供比較；若該陣列元素應位於 ``value``\ *之後*\ 則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
-If ``before`` is ``true`` (as by default), the returned index comes before all existing elements equal to ``value`` in the array.
+若 ``before`` 為 ``true``\ （預設），傳回索引會位於所有與 ``value`` 相等之元素之前。
 
 ::
 
     func sort_by_amount(a, b):
-        if a[1] < b[1]:
-            return true
-        return false
+        return a[1] < b[1]
 
     func _ready():
         var my_items = [["Tomato", 2], ["Kiwi", 5], ["Rice", 9]]
-
-        var apple = ["Apple", 5]
-        # "Apple" is inserted before "Kiwi".
-        my_items.insert(my_items.bsearch_custom(apple, sort_by_amount, true), apple)
-
+        var apple  = ["Apple", 5]
         var banana = ["Banana", 5]
-        # "Banana" is inserted after "Kiwi".
-        my_items.insert(my_items.bsearch_custom(banana, sort_by_amount, false), banana)
+        my_items.insert(my_items.bsearch_custom(apple,  sort_by_amount, true),  apple)  # 插入 Apple 於 Kiwi 之前
+        my_items.insert(my_items.bsearch_custom(banana, sort_by_amount, false), banana) # 插入 Banana 於 Kiwi 之後
+        print(my_items) # 印出 [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
 
-        # Prints [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
-        print(my_items)
-
-\ **Note:** Calling :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` on an *unsorted* array will result in unexpected behavior. Use :ref:`sort_custom()<class_Array_method_sort_custom>` with ``func`` before calling this method.
+\ **注意：**\ 在\ *未排序*\ 的陣列上呼叫 :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` 會得到不可預期的結果，請先搭配 :ref:`sort_custom()<class_Array_method_sort_custom>` 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -638,7 +629,7 @@ If ``before`` is ``true`` (as by default), the returned index comes before all e
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Array_method_clear>`
 
-Removes all elements from the array. This is equivalent to using :ref:`resize()<class_Array_method_resize>` with a size of ``0``.
+清除陣列的所有元素；等同於呼叫 :ref:`resize()<class_Array_method_resize>` 並將大小設為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -650,9 +641,9 @@ Removes all elements from the array. This is equivalent to using :ref:`resize()<
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_Array_method_count>`
 
-Returns the number of times an element is in the array.
+回傳指定元素在陣列中出現的次數。
 
-To count how many elements in an array satisfy a condition, see :ref:`reduce()<class_Array_method_reduce>`.
+若需要統計符合條件的元素數量，可使用 :ref:`reduce()<class_Array_method_reduce>` 來實作。
 
 .. rst-class:: classref-item-separator
 
@@ -664,11 +655,11 @@ To count how many elements in an array satisfy a condition, see :ref:`reduce()<c
 
 :ref:`Array<class_Array>` **duplicate**\ (\ deep\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Array_method_duplicate>`
 
-Returns a new copy of the array.
+回傳此陣列的複製品。
 
-By default, a **shallow** copy is returned: all nested **Array**, :ref:`Dictionary<class_Dictionary>`, and :ref:`Resource<class_Resource>` elements are shared with the original array. Modifying any of those in one array will also affect them in the other.
+預設為\ **淺層**\ 複製：巢狀的 **Array**\ 、\ :ref:`Dictionary<class_Dictionary>` 與 :ref:`Resource<class_Resource>` 皆與原陣列共用；因此在其中一份內修改這些巢狀物件會同時影響另一份。
 
-If ``deep`` is ``true``, a **deep** copy is returned: all nested arrays and dictionaries are also duplicated (recursively). Any :ref:`Resource<class_Resource>` is still shared with the original array, though.
+若將 ``deep`` 設為 ``true``\ ，則會進行\ **深層**\ 複製：巢狀陣列與字典都會被遞迴複製。但 :ref:`Resource<class_Resource>` 依然是共用的。
 
 .. rst-class:: classref-item-separator
 
@@ -694,11 +685,11 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 |void| **erase**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_erase>`
 
-Finds and removes the first occurrence of ``value`` from the array. If ``value`` does not exist in the array, nothing happens. To remove an element by index, use :ref:`remove_at()<class_Array_method_remove_at>` instead.
+尋找並移除陣列中第一個與 ``value`` 相符的元素；若不存在則不做任何事。若要依索引移除元素，請改用 :ref:`remove_at()<class_Array_method_remove_at>`\ 。
 
-\ **Note:** This method shifts every element's index after the removed ``value`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 此方法會將被移除位置之後的所有元素索引往前平移，在大型陣列上可能造成明顯開銷。
 
-\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
+\ **注意：**\ 在迴圈遍歷陣列時同時移除元素並不被支援，可能導致不可預期的行為。
 
 .. rst-class:: classref-item-separator
 
@@ -710,9 +701,9 @@ Finds and removes the first occurrence of ``value`` from the array. If ``value``
 
 |void| **fill**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_fill>`
 
-Assigns the given ``value`` to all elements in the array.
+將陣列中的所有元素皆設成指定的 ``value``\ 。
 
-This method can often be combined with :ref:`resize()<class_Array_method_resize>` to create an array with a given size and initialized elements:
+常與 :ref:`resize()<class_Array_method_resize>` 搭配，用於建立指定大小並已初始化的陣列：
 
 
 .. tabs::
@@ -722,18 +713,18 @@ This method can often be combined with :ref:`resize()<class_Array_method_resize>
     var array = []
     array.resize(5)
     array.fill(2)
-    print(array) # Prints [2, 2, 2, 2, 2]
+    print(array) # 印出 [2, 2, 2, 2, 2]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array array = [];
     array.Resize(5);
     array.Fill(2);
-    GD.Print(array); // Prints [2, 2, 2, 2, 2]
+    GD.Print(array); // 印出 [2, 2, 2, 2, 2]
 
 
 
-\ **Note:** If ``value`` is a :ref:`Variant<class_Variant>` passed by reference (:ref:`Object<class_Object>`-derived, **Array**, :ref:`Dictionary<class_Dictionary>`, etc.), the array will be filled with references to the same ``value``, which are not duplicates.
+\ **注意：**\ 若 ``value`` 為參照型別（衍生自 :ref:`Object<class_Object>`\ 、\ **Array**\ 、\ :ref:`Dictionary<class_Dictionary>`\ …），整個陣列將會持有同一個物件的參照，而非複本。
 
 .. rst-class:: classref-item-separator
 
@@ -745,9 +736,9 @@ This method can often be combined with :ref:`resize()<class_Array_method_resize>
 
 :ref:`Array<class_Array>` **filter**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_filter>`
 
-Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns a new, filtered **Array**.
+對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ ，並依其回傳值產生新的過濾後陣列。
 
-The ``method`` receives one of the array elements as an argument, and should return ``true`` to add the element to the filtered array, or ``false`` to exclude it.
+\ ``method`` 會收到一個陣列元素，當其回傳 ``true`` 時該元素會被保留；回傳 ``false`` 時則被排除。
 
 ::
 
@@ -755,12 +746,12 @@ The ``method`` receives one of the array elements as an argument, and should ret
         return number % 2 == 0
 
     func _ready():
-        print([1, 4, 5, 8].filter(is_even)) # Prints [4, 8]
+        print([1, 4, 5, 8].filter(is_even)) # 印出 [4, 8]
 
-        # Same as above, but using a lambda function.
+        # 與上例相同，但以 Lambda 撰寫。
         print([1, 4, 5, 8].filter(func(number): return number % 2 == 0))
 
-See also :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_all>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
+另請參閱 :ref:`any()<class_Array_method_any>`\ 、\ :ref:`all()<class_Array_method_all>`\ 、\ :ref:`map()<class_Array_method_map>` 與 :ref:`reduce()<class_Array_method_reduce>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -772,11 +763,11 @@ See also :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_al
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this array, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+回傳 ``what`` 在陣列中\ **第一次**\ 出現的索引；若不存在則回傳 ``-1``\ 。可以用 ``from`` 指定起始索引，搜尋將持續到陣列結尾。
 
-\ **Note:** If you just want to know whether the array contains ``what``, use :ref:`has()<class_Array_method_has>` (``Contains`` in C#). In GDScript, you may also use the ``in`` operator.
+\ **注意：**\ 若只想知道陣列是否包含 ``what``\ ，可使用 :ref:`has()<class_Array_method_has>`\ （C# 中為 `Contains`），或在 GDScript 使用 ``in`` 運算子。
 
-\ **Note:** For performance reasons, the search is affected by ``what``'s :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`. For example, ``7`` (:ref:`int<class_int>`) and ``7.0`` (:ref:`float<class_float>`) are not considered equal for this method.
+\ **注意：**\ 基於效能考量，搜尋行為會受 ``what`` 的 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 影響，例如 ``7``\ （int）與 ``7.0``\ （float）在此方法裡並不相等。
 
 .. rst-class:: classref-item-separator
 
@@ -788,11 +779,11 @@ Returns the index of the **first** occurrence of ``what`` in this array, or ``-1
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+回傳陣列中第一個令 ``method`` 回傳 ``true`` 的元素索引；若無則回傳 ``-1``\ 。可以用 ``from`` 指定起始索引，搜尋將持續到陣列結尾。
 
-\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
+\ ``method`` 為可呼叫物件，接收一個陣列元素並回傳 :ref:`bool<class_bool>`\ 。
 
-\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
+\ **注意：**\ 若只想知道陣列中是否存在任何符合條件的元素，可改用 :ref:`any()<class_Array_method_any>`\ 。
 
 
 .. tabs::
@@ -803,7 +794,7 @@ Returns the index of the **first** element in the array that causes ``method`` t
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # 印出 2
 
 
 
@@ -817,9 +808,9 @@ Returns the index of the **first** element in the array that causes ``method`` t
 
 :ref:`Variant<class_Variant>` **front**\ (\ ) |const| :ref:`🔗<class_Array_method_front>`
 
-Returns the first element of the array. If the array is empty, fails and returns ``null``. See also :ref:`back()<class_Array_method_back>`.
+回傳陣列第一個元素。若陣列為空則失敗並回傳 ``null``\ 。另見 :ref:`back()<class_Array_method_back>`\ 。
 
-\ **Note:** Unlike with the ``[]`` operator (``array[0]``), an error is generated without stopping project execution.
+\ **注意：**\ 與直接使用 ``array[0]`` 取值不同，若陣列為空，此方法僅會產生錯誤訊息而不會中斷專案執行。
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +836,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`int<class_int>` **get_typed_builtin**\ (\ ) |const| :ref:`🔗<class_Array_method_get_typed_builtin>`
 
-Returns the built-in :ref:`Variant<class_Variant>` type of the typed array as a :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` constant. If the array is not typed, returns :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`. See also :ref:`is_typed()<class_Array_method_is_typed>`.
+回傳此型別化陣列的內建 :ref:`Variant<class_Variant>` 型別，為 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 常數。若陣列未設定型別，則回傳 :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`\ 。另見 :ref:`is_typed()<class_Array_method_is_typed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -857,7 +848,7 @@ Returns the built-in :ref:`Variant<class_Variant>` type of the typed array as a 
 
 :ref:`StringName<class_StringName>` **get_typed_class_name**\ (\ ) |const| :ref:`🔗<class_Array_method_get_typed_class_name>`
 
-Returns the **built-in** class name of the typed array, if the built-in :ref:`Variant<class_Variant>` type :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`. Otherwise, returns an empty :ref:`StringName<class_StringName>`. See also :ref:`is_typed()<class_Array_method_is_typed>` and :ref:`Object.get_class()<class_Object_method_get_class>`.
+若此型別化陣列的內建 :ref:`Variant<class_Variant>` 型別為 :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`\ ，則回傳其\ **內建**\ 類別名稱，否則回傳空的 :ref:`StringName<class_StringName>`\ 。另見 :ref:`is_typed()<class_Array_method_is_typed>` 與 :ref:`Object.get_class()<class_Object_method_get_class>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -869,7 +860,7 @@ Returns the **built-in** class name of the typed array, if the built-in :ref:`Va
 
 :ref:`Variant<class_Variant>` **get_typed_script**\ (\ ) |const| :ref:`🔗<class_Array_method_get_typed_script>`
 
-Returns the :ref:`Script<class_Script>` instance associated with this typed array, or ``null`` if it does not exist. See also :ref:`is_typed()<class_Array_method_is_typed>`.
+回傳與此型別化陣列關聯的 :ref:`Script<class_Script>` 實例；若不存在則為 ``null``\ 。另見 :ref:`is_typed()<class_Array_method_is_typed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -881,37 +872,36 @@ Returns the :ref:`Script<class_Script>` instance associated with this typed arra
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_Array_method_has>`
 
-Returns ``true`` if the array contains the given ``value``.
+若陣列中包含指定的 ``value`` 則回傳 ``true``\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(["inside", 7].has("inside"))  # Prints true
-    print(["inside", 7].has("outside")) # Prints false
-    print(["inside", 7].has(7))         # Prints true
-    print(["inside", 7].has("7"))       # Prints false
+    print(["inside", 7].has("inside"))  # 印出 true
+    print(["inside", 7].has("outside")) # 印出 false
+    print(["inside", 7].has(7))          # 印出 true
+    print(["inside", 7].has("7"))        # 印出 false
 
  .. code-tab:: csharp
 
     Godot.Collections.Array arr = ["inside", 7];
-    // By C# convention, this method is renamed to `Contains`.
-    GD.Print(arr.Contains("inside"));  // Prints True
-    GD.Print(arr.Contains("outside")); // Prints False
-    GD.Print(arr.Contains(7));         // Prints True
-    GD.Print(arr.Contains("7"));       // Prints False
+    GD.Print(arr.Contains("inside"));  // 印出 True
+    GD.Print(arr.Contains("outside")); // 印出 False
+    GD.Print(arr.Contains(7));           // 印出 True
+    GD.Print(arr.Contains("7"));         // 印出 False
 
 
 
-In GDScript, this is equivalent to the ``in`` operator:
+在 GDScript 中，也可使用 ``in`` 運算子：
 
 ::
 
     if 4 in [2, 4, 6, 8]:
-        print("4 is here!") # Will be printed.
+        print("4 is here!")
 
-\ **Note:** For performance reasons, the search is affected by the ``value``'s :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`. For example, ``7`` (:ref:`int<class_int>`) and ``7.0`` (:ref:`float<class_float>`) are not considered equal for this method.
+\ **注意：**\ 基於效能考量，搜尋行為會受 ``value`` 的 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 影響，例如 ``7``\ （int）與 ``7.0``\ （float）在此方法裡並不相等。
 
 .. rst-class:: classref-item-separator
 
@@ -937,11 +927,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 :ref:`int<class_int>` **insert**\ (\ position\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_insert>`
 
-Inserts a new element (``value``) at a given index (``position``) in the array. ``position`` should be between ``0`` and the array's :ref:`size()<class_Array_method_size>`. If negative, ``position`` is considered relative to the end of the array.
+在索引 ``position`` 處插入新元素 (``value``)。合法範圍為 0 到陣列 :ref:`size()<class_Array_method_size>` 之間；若為負值則代表自陣列尾端反向計數。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；失敗時則回傳其他 :ref:`Error<enum_@GlobalScope_Error>` 常數。
 
-\ **Note:** Every element's index after ``position`` needs to be shifted forward, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 插入後，\ ``position`` 之後的所有元素索引都需往後平移，對大型陣列可能造成明顯效能成本。
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +943,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_Array_method_is_empty>`
 
-Returns ``true`` if the array is empty (``[]``). See also :ref:`size()<class_Array_method_size>`.
+若陣列為空（\ ``[]``\ ）則回傳 ``true``\ 。另見 :ref:`size()<class_Array_method_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -965,9 +955,9 @@ Returns ``true`` if the array is empty (``[]``). See also :ref:`size()<class_Arr
 
 :ref:`bool<class_bool>` **is_read_only**\ (\ ) |const| :ref:`🔗<class_Array_method_is_read_only>`
 
-Returns ``true`` if the array is read-only. See :ref:`make_read_only()<class_Array_method_make_read_only>`.
+若陣列為唯讀狀態則回傳 ``true``\ 。請參考 :ref:`make_read_only()<class_Array_method_make_read_only>`\ 。
 
-In GDScript, arrays are automatically read-only if declared with the ``const`` keyword.
+在 GDScript 中，使用 ``const`` 宣告的陣列會自動成為唯讀。
 
 .. rst-class:: classref-item-separator
 
@@ -979,7 +969,7 @@ In GDScript, arrays are automatically read-only if declared with the ``const`` k
 
 :ref:`bool<class_bool>` **is_same_typed**\ (\ array\: :ref:`Array<class_Array>`\ ) |const| :ref:`🔗<class_Array_method_is_same_typed>`
 
-Returns ``true`` if this array is typed the same as the given ``array``. See also :ref:`is_typed()<class_Array_method_is_typed>`.
+若此陣列與指定的 ``array`` 具備相同型別限制則回傳 ``true``\ 。另見 :ref:`is_typed()<class_Array_method_is_typed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -991,14 +981,14 @@ Returns ``true`` if this array is typed the same as the given ``array``. See als
 
 :ref:`bool<class_bool>` **is_typed**\ (\ ) |const| :ref:`🔗<class_Array_method_is_typed>`
 
-Returns ``true`` if the array is typed. Typed arrays can only contain elements of a specific type, as defined by the typed array constructor. The methods of a typed array are still expected to return a generic :ref:`Variant<class_Variant>`.
+若陣列已設定型別限制則回傳 ``true``\ 。型別化陣列僅能包含指定型別的元素，但其方法仍預期回傳通用的 :ref:`Variant<class_Variant>`\ 。
 
-In GDScript, it is possible to define a typed array with static typing:
+在 GDScript 中，可透過靜態型別語法建立型別化陣列：
 
 ::
 
     var numbers: Array[float] = [0.2, 4.2, -2.0]
-    print(numbers.is_typed()) # Prints true
+    print(numbers.is_typed()) # 印出 true
 
 .. rst-class:: classref-item-separator
 
@@ -1010,9 +1000,9 @@ In GDScript, it is possible to define a typed array with static typing:
 
 |void| **make_read_only**\ (\ ) :ref:`🔗<class_Array_method_make_read_only>`
 
-Makes the array read-only. The array's elements cannot be overridden with different values, and their order cannot change. Does not apply to nested elements, such as dictionaries.
+將此陣列設為唯讀，之後無法改變元素值或調整順序。此設定不會遞迴套用至巢狀物件（例如字典）。
 
-In GDScript, arrays are automatically read-only if declared with the ``const`` keyword.
+在 GDScript 中，使用 ``const`` 宣告的陣列預設即為唯讀。
 
 .. rst-class:: classref-item-separator
 
@@ -1024,9 +1014,9 @@ In GDScript, arrays are automatically read-only if declared with the ``const`` k
 
 :ref:`Array<class_Array>` **map**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
 
-Calls the given :ref:`Callable<class_Callable>` for each element in the array and returns a new array filled with values returned by the ``method``.
+對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ ，並以其回傳值產生新陣列。
 
-The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and can return any :ref:`Variant<class_Variant>`.
+\ ``method`` 必須接受一個 :ref:`Variant<class_Variant>` 參數（目前的陣列元素），並可回傳任何型別的 :ref:`Variant<class_Variant>`\ 。
 
 ::
 
@@ -1034,12 +1024,12 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
         return number * 2
 
     func _ready():
-        print([1, 2, 3].map(double)) # Prints [2, 4, 6]
+        print([1, 2, 3].map(double)) # 印出 [2, 4, 6]
 
-        # Same as above, but using a lambda function.
+        # 與上例相同，但以 Lambda 撰寫。
         print([1, 2, 3].map(func(element): return element * 2))
 
-See also :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_method_reduce>`, :ref:`any()<class_Array_method_any>` and :ref:`all()<class_Array_method_all>`.
+另請參閱 :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`reduce()<class_Array_method_reduce>`\ 、\ :ref:`any()<class_Array_method_any>` 與 :ref:`all()<class_Array_method_all>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1051,9 +1041,9 @@ See also :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_
 
 :ref:`Variant<class_Variant>` **max**\ (\ ) |const| :ref:`🔗<class_Array_method_max>`
 
-Returns the maximum value contained in the array, if all elements can be compared. Otherwise, returns ``null``. See also :ref:`min()<class_Array_method_min>`.
+若陣列中的所有元素皆可比較，則回傳其中的最大值；否則回傳 ``null``\ 。另見 :ref:`min()<class_Array_method_min>`\ 。
 
-To find the maximum value using a custom comparator, you can use :ref:`reduce()<class_Array_method_reduce>`.
+若需透過自訂比較器尋找最大值，可使用 :ref:`reduce()<class_Array_method_reduce>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1065,7 +1055,7 @@ To find the maximum value using a custom comparator, you can use :ref:`reduce()<
 
 :ref:`Variant<class_Variant>` **min**\ (\ ) |const| :ref:`🔗<class_Array_method_min>`
 
-Returns the minimum value contained in the array, if all elements can be compared. Otherwise, returns ``null``. See also :ref:`max()<class_Array_method_max>`.
+若陣列中的所有元素皆可比較，則回傳其中的最小值；否則回傳 ``null``\ 。另見 :ref:`max()<class_Array_method_max>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1077,24 +1067,24 @@ Returns the minimum value contained in the array, if all elements can be compare
 
 :ref:`Variant<class_Variant>` **pick_random**\ (\ ) |const| :ref:`🔗<class_Array_method_pick_random>`
 
-Returns a random element from the array. Generates an error and returns ``null`` if the array is empty.
+自陣列中隨機回傳一個元素。若陣列為空，將產生錯誤並回傳 ``null``\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # May print 1, 2, 3.25, or "Hi".
+    # 可能印出 1、2、3.25 或 "Hi"。
     print([1, 2, 3.25, "Hi"].pick_random())
 
  .. code-tab:: csharp
 
     Godot.Collections.Array array = [1, 2, 3.25f, "Hi"];
-    GD.Print(array.PickRandom()); // May print 1, 2, 3.25, or "Hi".
+    GD.Print(array.PickRandom()); // 可能印出 1、2、3.25 或 "Hi"。
 
 
 
-\ **Note:** Like many similar functions in the engine (such as :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` or :ref:`shuffle()<class_Array_method_shuffle>`), this method uses a common, global random seed. To get a predictable outcome from this method, see :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
+\ **注意：**\ 與引擎中其他隨機函式（如 :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` 或 :ref:`shuffle()<class_Array_method_shuffle>`\ ）相同，本方法使用全域亂數種子。若需可預期的結果，請參考 :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1106,9 +1096,9 @@ Returns a random element from the array. Generates an error and returns ``null``
 
 :ref:`Variant<class_Variant>` **pop_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_pop_at>`
 
-Removes and returns the element of the array at index ``position``. If negative, ``position`` is considered relative to the end of the array. Returns ``null`` if the array is empty. If ``position`` is out of bounds, an error message is also generated.
+移除並回傳索引為 ``position`` 的元素。若 ``position`` 為負值，則自陣列尾端反向計算。若陣列為空則回傳 ``null``\ ；若索引越界，則同時輸出錯誤訊息。
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 移除後，\ ``position`` 之後的所有元素索引都需往前平移，在大型陣列上可能造成明顯效能成本。
 
 .. rst-class:: classref-item-separator
 
@@ -1120,7 +1110,7 @@ Removes and returns the element of the array at index ``position``. If negative,
 
 :ref:`Variant<class_Variant>` **pop_back**\ (\ ) :ref:`🔗<class_Array_method_pop_back>`
 
-Removes and returns the last element of the array. Returns ``null`` if the array is empty, without generating an error. See also :ref:`pop_front()<class_Array_method_pop_front>`.
+移除並回傳陣列最後一個元素。若陣列為空則回傳 ``null`` 而不產生錯誤。另見 :ref:`pop_front()<class_Array_method_pop_front>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1132,9 +1122,9 @@ Removes and returns the last element of the array. Returns ``null`` if the array
 
 :ref:`Variant<class_Variant>` **pop_front**\ (\ ) :ref:`🔗<class_Array_method_pop_front>`
 
-Removes and returns the first element of the array. Returns ``null`` if the array is empty, without generating an error. See also :ref:`pop_back()<class_Array_method_pop_back>`.
+移除並回傳陣列第一個元素。若陣列為空則回傳 ``null`` 而不產生錯誤。另見 :ref:`pop_back()<class_Array_method_pop_back>`\ 。
 
-\ **Note:** This method shifts every other element's index back, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 此方法會將其餘元素索引往前平移，對大型陣列可能產生明顯效能成本。
 
 .. rst-class:: classref-item-separator
 
@@ -1146,7 +1136,7 @@ Removes and returns the first element of the array. Returns ``null`` if the arra
 
 |void| **push_back**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_push_back>`
 
-Appends an element at the end of the array. See also :ref:`push_front()<class_Array_method_push_front>`.
+將元素追加於陣列尾端。另見 :ref:`push_front()<class_Array_method_push_front>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1158,9 +1148,9 @@ Appends an element at the end of the array. See also :ref:`push_front()<class_Ar
 
 |void| **push_front**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_push_front>`
 
-Adds an element at the beginning of the array. See also :ref:`push_back()<class_Array_method_push_back>`.
+於陣列開頭插入一個元素。另見 :ref:`push_back()<class_Array_method_push_back>`\ 。
 
-\ **Note:** This method shifts every other element's index forward, which may have a noticeable performance cost, especially on larger arrays.
+\ **注意：**\ 插入後其餘元素索引將往後平移，對大型陣列可能產生明顯效能成本。
 
 .. rst-class:: classref-item-separator
 
@@ -1172,9 +1162,9 @@ Adds an element at the beginning of the array. See also :ref:`push_back()<class_
 
 :ref:`Variant<class_Variant>` **reduce**\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
 
-Calls the given :ref:`Callable<class_Callable>` for each element in array, accumulates the result in ``accum``, then returns it.
+對陣列中的每個元素呼叫指定的 :ref:`Callable<class_Callable>`\ ，以 ``accum`` 累計並於結束後回傳。
 
-The ``method`` takes two arguments: the current value of ``accum`` and the current array element. If ``accum`` is ``null`` (as by default), the iteration will start from the second element, with the first one used as initial value of ``accum``.
+\ ``method`` 會接收兩個參數：目前的累計值 ``accum`` 與目前元素。若 ``accum`` 為 ``null``\ （預設），則從第二個元素開始迴圈，並以第一個元素做為初始值。
 
 ::
 
@@ -1182,26 +1172,13 @@ The ``method`` takes two arguments: the current value of ``accum`` and the curre
         return accum + number
 
     func _ready():
-        print([1, 2, 3].reduce(sum, 0))  # Prints 6
-        print([1, 2, 3].reduce(sum, 10)) # Prints 16
+        print([1, 2, 3].reduce(sum, 0))  # 印出 6
+        print([1, 2, 3].reduce(sum, 10)) # 印出 16
 
-        # Same as above, but using a lambda function.
+        # 與上例相同，但以 Lambda 撰寫。
         print([1, 2, 3].reduce(func(accum, number): return accum + number, 10))
 
-If :ref:`max()<class_Array_method_max>` is not desirable, this method may also be used to implement a custom comparator:
-
-::
-
-    func _ready():
-        var arr = [Vector2i(5, 0), Vector2i(3, 4), Vector2i(1, 2)]
-
-        var longest_vec = arr.reduce(func(max, vec): return vec if is_length_greater(vec, max) else max)
-        print(longest_vec) # Prints (3, 4)
-
-    func is_length_greater(a, b):
-        return a.length() > b.length()
-
-This method can also be used to count how many elements in an array satisfy a certain condition, similar to :ref:`count()<class_Array_method_count>`:
+除了可取代 :ref:`max()<class_Array_method_max>` 自訂比較器外，也能用來計算符合條件的元素數量（類似 :ref:`count()<class_Array_method_count>`\ ）：
 
 ::
 
@@ -1210,11 +1187,10 @@ This method can also be used to count how many elements in an array satisfy a ce
 
     func _ready():
         var arr = [1, 2, 3, 4, 5]
-        # If the current element is even, increment count, otherwise leave count the same.
         var even_count = arr.reduce(func(count, next): return count + 1 if is_even(next) else count, 0)
-        print(even_count) # Prints 2
+        print(even_count) # 印出 2
 
-See also :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method_filter>`, :ref:`any()<class_Array_method_any>`, and :ref:`all()<class_Array_method_all>`.
+另請參閱 :ref:`map()<class_Array_method_map>`\ 、\ :ref:`filter()<class_Array_method_filter>`\ 、\ :ref:`any()<class_Array_method_any>` 與 :ref:`all()<class_Array_method_all>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1242,11 +1218,11 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
 :ref:`int<class_int>` **resize**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_resize>`
 
-Sets the array's number of elements to ``size``. If ``size`` is smaller than the array's current size, the elements at the end are removed. If ``size`` is greater, new default elements (usually ``null``) are added, depending on the array's type.
+將陣列長度設為 ``size``\ 。若新大小小於目前大小，尾端元素會被移除；若大於目前大小，則依陣列型別新增預設值（通常為 ``null``\ ）。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_LOCKED<class_@GlobalScope_constant_ERR_LOCKED>` if the array is read-only, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_Array_method_size>` to find the actual size of the array after resize.
+成功時回傳 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。若失敗則可能回傳：陣列唯讀時為 :ref:`@GlobalScope.ERR_LOCKED<class_@GlobalScope_constant_ERR_LOCKED>`\ ；\ ``size`` 為負值時為 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；記憶體配置失敗時為 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。可使用 :ref:`size()<class_Array_method_size>` 取得實際大小。
 
-\ **Note:** Calling this method once and assigning the new values is faster than calling :ref:`append()<class_Array_method_append>` for every new element.
+\ **注意：**\ 一次呼叫本方法並批次指定新值，效能優於逐一 :ref:`append()<class_Array_method_append>` 新元素。
 
 .. rst-class:: classref-item-separator
 
@@ -1258,7 +1234,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_Array_method_reverse>`
 
-Reverses the order of all elements in the array.
+將陣列元素順序反轉。
 
 .. rst-class:: classref-item-separator
 
@@ -1270,7 +1246,7 @@ Reverses the order of all elements in the array.
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this array, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the array. This method is the reverse of :ref:`find()<class_Array_method_find>`.
+回傳 ``what`` 在陣列中\ **最後一次**\ 出現的索引；若不存在則回傳 ``-1``\ 。可使用 ``from`` 指定搜尋起點，搜尋方向會往陣列開頭進行。本方法與 :ref:`find()<class_Array_method_find>` 相反。
 
 .. rst-class:: classref-item-separator
 
@@ -1282,7 +1258,7 @@ Returns the index of the **last** occurrence of ``what`` in this array, or ``-1`
 
 :ref:`int<class_int>` **rfind_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind_custom>`
 
-Returns the index of the **last** element of the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the array. This method is the reverse of :ref:`find_custom()<class_Array_method_find_custom>`.
+回傳陣列中最後一個令 ``method`` 回傳 ``true`` 的元素索引；若無則回傳 ``-1``\ 。可用 ``from`` 指定搜尋起點，搜尋方向會往陣列開頭進行。本方法與 :ref:`find_custom()<class_Array_method_find_custom>` 相反。
 
 .. rst-class:: classref-item-separator
 
@@ -1294,7 +1270,7 @@ Returns the index of the **last** element of the array that causes ``method`` to
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_set>`
 
-Sets the value of the element at the given ``index`` to the given ``value``. This will not change the size of the array, it only changes the value at an index already in the array. This is the same as using the ``[]`` operator (``array[index] = value``).
+將索引為 ``index`` 的元素設為 ``value``\ 。此操作不會改變陣列大小，只會覆寫既有索引的值；效果與使用 ``array[index] = value`` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -1306,9 +1282,9 @@ Sets the value of the element at the given ``index`` to the given ``value``. Thi
 
 |void| **shuffle**\ (\ ) :ref:`🔗<class_Array_method_shuffle>`
 
-Shuffles all elements of the array in a random order.
+將陣列元素隨機重新排列。
 
-\ **Note:** Like many similar functions in the engine (such as :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` or :ref:`pick_random()<class_Array_method_pick_random>`), this method uses a common, global random seed. To get a predictable outcome from this method, see :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
+\ **注意：**\ 與引擎中其他隨機函式（如 :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` 或 :ref:`pick_random()<class_Array_method_pick_random>`\ ）相同，本方法使用全域亂數種子。若需可預期的結果，請參考 :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1296,7 @@ Shuffles all elements of the array in a random order.
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Array_method_size>`
 
-Returns the number of elements in the array. Empty arrays (``[]``) always return ``0``. See also :ref:`is_empty()<class_Array_method_is_empty>`.
+回傳陣列元素數量。空陣列（\ ``[]``\ ）一律回傳 ``0``\ 。另見 :ref:`is_empty()<class_Array_method_is_empty>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1332,24 +1308,22 @@ Returns the number of elements in the array. Empty arrays (``[]``) always return
 
 :ref:`Array<class_Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647, step\: :ref:`int<class_int>` = 1, deep\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Array_method_slice>`
 
-Returns a new **Array** containing this array's elements, from index ``begin`` (inclusive) to ``end`` (exclusive), every ``step`` elements.
+回傳此陣列的切片新陣列，範圍從索引 ``begin``\ （含）到 ``end``\ （不含），並以 ``step`` 為間隔選取元素。
 
-If either ``begin`` or ``end`` are negative, their value is relative to the end of the array.
+若 ``begin`` 或 ``end`` 為負值，則視為自陣列尾端反向計數。
 
-If ``step`` is negative, this method iterates through the array in reverse, returning a slice ordered backwards. For this to work, ``begin`` must be greater than ``end``.
+若 ``step`` 為負值，切片方向將反轉，且 ``begin`` 必須大於 ``end`` 才能正常運作。
 
-If ``deep`` is ``true``, all nested **Array** and :ref:`Dictionary<class_Dictionary>` elements in the slice are duplicated from the original, recursively. See also :ref:`duplicate()<class_Array_method_duplicate>`.
+若將 ``deep`` 設為 ``true``\ ，切片中的巢狀 **Array** 與 :ref:`Dictionary<class_Dictionary>` 會被遞迴複製；詳見 :ref:`duplicate()<class_Array_method_duplicate>`\ 。
 
 ::
 
     var letters = ["A", "B", "C", "D", "E", "F"]
-
-    print(letters.slice(0, 2))  # Prints ["A", "B"]
-    print(letters.slice(2, -2)) # Prints ["C", "D"]
-    print(letters.slice(-2, 6)) # Prints ["E", "F"]
-
-    print(letters.slice(0, 6, 2))  # Prints ["A", "C", "E"]
-    print(letters.slice(4, 1, -1)) # Prints ["E", "D", "C"]
+    print(letters.slice(0, 2))   # 印出 ["A", "B"]
+    print(letters.slice(2, -2))  # 印出 ["C", "D"]
+    print(letters.slice(-2, 6))  # 印出 ["E", "F"]
+    print(letters.slice(0, 6, 2))  # 印出 ["A", "C", "E"]
+    print(letters.slice(4, 1, -1)) # 印出 ["E", "D", "C"]
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1335,7 @@ If ``deep`` is ``true``, all nested **Array** and :ref:`Dictionary<class_Diction
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Array_method_sort>`
 
-Sorts the array in ascending order. The final order is dependent on the "less than" (``<``) comparison between elements.
+將陣列依遞增順序排序，排序結果取決於元素之間的「小於」(``<``) 比較。
 
 
 .. tabs::
@@ -1370,17 +1344,17 @@ Sorts the array in ascending order. The final order is dependent on the "less th
 
     var numbers = [10, 5, 2.5, 8]
     numbers.sort()
-    print(numbers) # Prints [2.5, 5, 8, 10]
+    print(numbers) # 印出 [2.5, 5, 8, 10]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array numbers = [10, 5, 2.5, 8];
     numbers.Sort();
-    GD.Print(numbers); // Prints [2.5, 5, 8, 10]
+    GD.Print(numbers); // 印出 [2.5, 5, 8, 10]
 
 
 
-\ **Note:** The sorting algorithm used is not `stable <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__. This means that equivalent elements (such as ``2`` and ``2.0``) may have their order changed when calling :ref:`sort()<class_Array_method_sort>`.
+\ **注意：**\ 此排序演算法並非\ `穩定排序 <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__\ ，等值元素（如 ``2`` 與 ``2.0``\ ）的相對順序可能改變。
 
 .. rst-class:: classref-item-separator
 
@@ -1392,39 +1366,37 @@ Sorts the array in ascending order. The final order is dependent on the "less th
 
 |void| **sort_custom**\ (\ func\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Array_method_sort_custom>`
 
-Sorts the array using a custom :ref:`Callable<class_Callable>`.
+使用自訂 :ref:`Callable<class_Callable>` 進行排序。
 
-\ ``func`` is called as many times as necessary, receiving two array elements as arguments. The function should return ``true`` if the first element should be moved *before* the second one, otherwise it should return ``false``.
+\ ``func`` 會在需要時多次被呼叫，並傳入兩個陣列元素作比較；若第一個元素應位於第二個元素\ *之前*\ 則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 ::
 
     func sort_ascending(a, b):
-        if a[1] < b[1]:
-            return true
-        return false
+        return a[1] < b[1]
 
     func _ready():
         var my_items = [["Tomato", 5], ["Apple", 9], ["Rice", 4]]
         my_items.sort_custom(sort_ascending)
-        print(my_items) # Prints [["Rice", 4], ["Tomato", 5], ["Apple", 9]]
+        print(my_items) # 印出 [["Rice", 4], ["Tomato", 5], ["Apple", 9]]
 
-        # Sort descending, using a lambda function.
+        # 使用 Lambda 以遞減排序。
         my_items.sort_custom(func(a, b): return a[1] > b[1])
-        print(my_items) # Prints [["Apple", 9], ["Tomato", 5], ["Rice", 4]]
+        print(my_items) # 印出 [["Apple", 9], ["Tomato", 5], ["Rice", 4]]
 
-It may also be necessary to use this method to sort strings by natural order, with :ref:`String.naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`, as in the following example:
+若需照人類自然排序比較字串，可搭配 :ref:`String.naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`\ ：
 
 ::
 
     var files = ["newfile1", "newfile2", "newfile10", "newfile11"]
     files.sort_custom(func(a, b): return a.naturalnocasecmp_to(b) < 0)
-    print(files) # Prints ["newfile1", "newfile2", "newfile10", "newfile11"]
+    print(files) # 印出 ["newfile1", "newfile2", "newfile10", "newfile11"]
 
-\ **Note:** In C#, this method is not supported.
+\ **注意：**\ C# 不支援此方法。
 
-\ **Note:** The sorting algorithm used is not `stable <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__. This means that values considered equal may have their order changed when calling this method.
+\ **注意：**\ 此排序演算法並非穩定排序，等值元素的相對順序可能改變。
 
-\ **Note:** You should not randomize the return value of ``func``, as the heapsort algorithm expects a consistent result. Randomizing the return value will result in unexpected behavior.
+\ **注意：**\ 請勿讓 ``func`` 的回傳值隨機變動，否則 heapsort 需要的一致性將被破壞並導致不可預期結果。
 
 .. rst-class:: classref-section-separator
 
@@ -1432,8 +1404,8 @@ It may also be necessary to use this method to sort strings by natural order, wi
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_Array_operator_neq_Array:
 
@@ -1441,7 +1413,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_neq_Array>`
 
-Returns ``true`` if the array's size or its elements are different than ``right``'s.
+若本陣列的大小或元素與 ``right`` 不同則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1425,7 @@ Returns ``true`` if the array's size or its elements are different than ``right`
 
 :ref:`Array<class_Array>` **operator +**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_sum_Array>`
 
-Appends the ``right`` array to the left operand, creating a new **Array**. This is also known as an array concatenation.
+將右運算元 ``right`` 追加至左運算元，產生新的 **Array**\ （亦即陣列串接）。
 
 
 .. tabs::
@@ -1462,18 +1434,17 @@ Appends the ``right`` array to the left operand, creating a new **Array**. This 
 
     var array1 = ["One", 2]
     var array2 = [3, "Four"]
-    print(array1 + array2) # Prints ["One", 2, 3, "Four"]
+    print(array1 + array2) # 印出 ["One", 2, 3, "Four"]
 
  .. code-tab:: csharp
 
-    // Note that concatenation is not possible with C#'s native Array type.
     Godot.Collections.Array array1 = ["One", 2];
     Godot.Collections.Array array2 = [3, "Four"];
-    GD.Print(array1 + array2); // Prints ["One", 2, 3, "Four"]
+    GD.Print(array1 + array2); // 印出 ["One", 2, 3, "Four"]
 
 
 
-\ **Note:** For existing arrays, :ref:`append_array()<class_Array_method_append_array>` is much more efficient than concatenation and assignment with the ``+=`` operator.
+\ **注意：**\ 對既有陣列，就地呼叫 :ref:`append_array()<class_Array_method_append_array>` 的效率遠高於使用 ``+=`` 串接並重新指派。
 
 .. rst-class:: classref-item-separator
 
@@ -1485,9 +1456,9 @@ Appends the ``right`` array to the left operand, creating a new **Array**. This 
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_lt_Array>`
 
-Compares the elements of both arrays in order, starting from index ``0`` and ending on the last index in common between both arrays. For each pair of elements, returns ``true`` if this array's element is less than ``right``'s, ``false`` if this element is greater. Otherwise, continues to the next pair.
+依序比較兩個陣列的元素（由索引 0 開始，直到兩陣列共同的最後一個索引）。若某對元素首次出現差異，當本陣列元素小於 ``right`` 的元素時回傳 ``true``\ ，反之回傳 ``false``\ ；若元素相等則繼續比較下一對。
 
-If all searched elements are equal, returns ``true`` if this array's size is less than ``right``'s, otherwise returns ``false``.
+若所有比較過的元素皆相等，則比較陣列長度：若本陣列長度小於 ``right``\ ，回傳 ``true``\ ；否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1499,9 +1470,9 @@ If all searched elements are equal, returns ``true`` if this array's size is les
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_lte_Array>`
 
-Compares the elements of both arrays in order, starting from index ``0`` and ending on the last index in common between both arrays. For each pair of elements, returns ``true`` if this array's element is less than ``right``'s, ``false`` if this element is greater. Otherwise, continues to the next pair.
+依序比較兩陣列元素。若本陣列元素第一次出現小於 ``right`` 的情況，立即回傳 ``true``\ ；若大於則回傳 ``false``\ ；相等則繼續比較。
 
-If all searched elements are equal, returns ``true`` if this array's size is less or equal to ``right``'s, otherwise returns ``false``.
+若全部比較結果皆相等，則比較陣列長度：若本陣列長度小於或等於 ``right``\ ，回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1513,7 +1484,7 @@ If all searched elements are equal, returns ``true`` if this array's size is les
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_eq_Array>`
 
-Compares the left operand **Array** against the ``right`` **Array**. Returns ``true`` if the sizes and contents of the arrays are equal, ``false`` otherwise.
+比較左右兩個陣列。若大小與內容皆相同則回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1525,9 +1496,9 @@ Compares the left operand **Array** against the ``right`` **Array**. Returns ``t
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_gt_Array>`
 
-Compares the elements of both arrays in order, starting from index ``0`` and ending on the last index in common between both arrays. For each pair of elements, returns ``true`` if this array's element is greater than ``right``'s, ``false`` if this element is less. Otherwise, continues to the next pair.
+依序比較兩陣列元素。若本陣列元素第一次出現大於 ``right`` 的情況，立即回傳 ``true``\ ；若小於則回傳 ``false``\ ；相等則繼續比較。
 
-If all searched elements are equal, returns ``true`` if this array's size is greater than ``right``'s, otherwise returns ``false``.
+若全部比較結果皆相等，則比較陣列長度：若本陣列長度大於 ``right``\ ，回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1539,9 +1510,9 @@ If all searched elements are equal, returns ``true`` if this array's size is gre
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_gte_Array>`
 
-Compares the elements of both arrays in order, starting from index ``0`` and ending on the last index in common between both arrays. For each pair of elements, returns ``true`` if this array's element is greater than ``right``'s, ``false`` if this element is less. Otherwise, continues to the next pair.
+依序比較兩陣列元素。若本陣列元素第一次出現大於 ``right`` 的情況，立即回傳 ``true``\ ；若小於則回傳 ``false``\ ；相等則繼續比較。
 
-If all searched elements are equal, returns ``true`` if this array's size is greater or equal to ``right``'s, otherwise returns ``false``.
+若全部比較結果皆相等，則比較陣列長度：若本陣列長度大於或等於 ``right``\ ，回傳 ``true``\ ，否則回傳 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1553,14 +1524,14 @@ If all searched elements are equal, returns ``true`` if this array's size is gre
 
 :ref:`Variant<class_Variant>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_operator_idx_int>`
 
-Returns the :ref:`Variant<class_Variant>` element at the specified ``index``. Arrays start at index 0. If ``index`` is greater or equal to ``0``, the element is fetched starting from the beginning of the array. If ``index`` is a negative value, the element is fetched starting from the end. Accessing an array out-of-bounds will cause a run-time error, pausing the project execution if run from the editor.
+回傳位於 ``index`` 的 :ref:`Variant<class_Variant>` 元素，索引自 0 起算。若 ``index`` 大於等於 0，則自陣列開頭計算；若為負值，則自陣列尾端反向計算。若索引越界，將於執行階段產生錯誤，並在編輯器中中斷專案執行。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

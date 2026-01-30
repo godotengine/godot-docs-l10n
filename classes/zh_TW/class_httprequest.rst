@@ -5,14 +5,14 @@
 HTTPRequest
 ===========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node with the ability to send HTTP(S) requests.
+具有發送 HTTP(S) 請求能力的節點。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A node with the ability to send HTTP requests. Uses :ref:`HTTPClient<class_HTTPClient>` internally.
 
@@ -180,17 +180,17 @@ Can be used to make HTTP requests, i.e. download or upload files or web content 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Making HTTP requests <../tutorials/networking/http_request_class>`
+- :doc:`發出 HTTP 請求 <../tutorials/networking/http_request_class>`
 
-- :doc:`TLS certificates <../tutorials/networking/ssl_certificates>`
+- :doc:`TLS 憑證 <../tutorials/networking/ssl_certificates>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -213,8 +213,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -245,8 +245,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_HTTPRequest_signal_request_completed:
 
@@ -254,7 +254,7 @@ Signals
 
 **request_completed**\ (\ result\: :ref:`int<class_int>`, response_code\: :ref:`int<class_int>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HTTPRequest_signal_request_completed>`
 
-Emitted when a request is completed.
+請求完成時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -262,8 +262,8 @@ Emitted when a request is completed.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_HTTPRequest_Result:
 
@@ -277,7 +277,7 @@ enum **Result**: :ref:`🔗<enum_HTTPRequest_Result>`
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_SUCCESS** = ``0``
 
-Request successful.
+請求成功。
 
 .. _class_HTTPRequest_constant_RESULT_CHUNKED_BODY_SIZE_MISMATCH:
 
@@ -293,7 +293,7 @@ Request failed due to a mismatch between the expected and actual chunked body si
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CANT_CONNECT** = ``2``
 
-Request failed while connecting.
+連接時請求失敗。
 
 .. _class_HTTPRequest_constant_RESULT_CANT_RESOLVE:
 
@@ -301,7 +301,7 @@ Request failed while connecting.
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CANT_RESOLVE** = ``3``
 
-Request failed while resolving.
+解析時請求失敗。
 
 .. _class_HTTPRequest_constant_RESULT_CONNECTION_ERROR:
 
@@ -309,7 +309,7 @@ Request failed while resolving.
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_CONNECTION_ERROR** = ``4``
 
-Request failed due to connection (read/write) error.
+因連接（讀寫）錯誤而失敗。
 
 .. _class_HTTPRequest_constant_RESULT_TLS_HANDSHAKE_ERROR:
 
@@ -317,7 +317,7 @@ Request failed due to connection (read/write) error.
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_TLS_HANDSHAKE_ERROR** = ``5``
 
-Request failed on TLS handshake.
+TLS 握手時請求失敗。
 
 .. _class_HTTPRequest_constant_RESULT_NO_RESPONSE:
 
@@ -325,7 +325,7 @@ Request failed on TLS handshake.
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_NO_RESPONSE** = ``6``
 
-Request does not have a response (yet).
+請求（目前還）沒有獲得相應。
 
 .. _class_HTTPRequest_constant_RESULT_BODY_SIZE_LIMIT_EXCEEDED:
 
@@ -333,7 +333,7 @@ Request does not have a response (yet).
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_BODY_SIZE_LIMIT_EXCEEDED** = ``7``
 
-Request exceeded its maximum size limit, see :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`.
+請求超出了大小上限，見 :ref:`body_size_limit<class_HTTPRequest_property_body_size_limit>`\ 。
 
 .. _class_HTTPRequest_constant_RESULT_BODY_DECOMPRESS_FAILED:
 
@@ -349,7 +349,7 @@ Request failed due to an error while decompressing the response body. Possible c
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_REQUEST_FAILED** = ``9``
 
-Request failed (currently unused).
+請求失敗（目前未使用）。
 
 .. _class_HTTPRequest_constant_RESULT_DOWNLOAD_FILE_CANT_OPEN:
 
@@ -357,7 +357,7 @@ Request failed (currently unused).
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_DOWNLOAD_FILE_CANT_OPEN** = ``10``
 
-HTTPRequest couldn't open the download file.
+HTTPRequest 無法打開下載檔案。
 
 .. _class_HTTPRequest_constant_RESULT_DOWNLOAD_FILE_WRITE_ERROR:
 
@@ -365,7 +365,7 @@ HTTPRequest couldn't open the download file.
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_DOWNLOAD_FILE_WRITE_ERROR** = ``11``
 
-HTTPRequest couldn't write to the download file.
+HTTPRequest 無法寫入下載檔案。
 
 .. _class_HTTPRequest_constant_RESULT_REDIRECT_LIMIT_REACHED:
 
@@ -373,7 +373,7 @@ HTTPRequest couldn't write to the download file.
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_REDIRECT_LIMIT_REACHED** = ``12``
 
-Request reached its maximum redirect limit, see :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`.
+請求超出了重定向次數上限，見 :ref:`max_redirects<class_HTTPRequest_property_max_redirects>`\ 。
 
 .. _class_HTTPRequest_constant_RESULT_TIMEOUT:
 
@@ -381,7 +381,7 @@ Request reached its maximum redirect limit, see :ref:`max_redirects<class_HTTPRe
 
 :ref:`Result<enum_HTTPRequest_Result>` **RESULT_TIMEOUT** = ``13``
 
-Request failed due to a timeout. If you expect requests to take a long time, try increasing the value of :ref:`timeout<class_HTTPRequest_property_timeout>` or setting it to ``0.0`` to remove the timeout completely.
+請求由於超時而失敗。如果本就希望請求花費較長的時間，請嘗試增大 :ref:`timeout<class_HTTPRequest_property_timeout>`\ ，或將其設為 ``0.0`` 從而完全移除超時。
 
 .. rst-class:: classref-section-separator
 
@@ -389,8 +389,8 @@ Request failed due to a timeout. If you expect requests to take a long time, try
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_HTTPRequest_property_accept_gzip:
 
@@ -426,7 +426,7 @@ If ``false`` no header will be added, and no decompression will be performed on 
 - |void| **set_body_size_limit**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_body_size_limit**\ (\ )
 
-Maximum allowed size for response bodies. If the response body is compressed, this will be used as the maximum allowed size for the decompressed body.
+回應正文的最大允許大小。如果回應正文被壓縮，這將用作解壓縮的正文的最大允許大小。
 
 .. rst-class:: classref-item-separator
 
@@ -443,9 +443,9 @@ Maximum allowed size for response bodies. If the response body is compressed, th
 - |void| **set_download_chunk_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_download_chunk_size**\ (\ )
 
-The size of the buffer used and maximum bytes to read per iteration. See :ref:`HTTPClient.read_chunk_size<class_HTTPClient_property_read_chunk_size>`.
+使用的緩衝區大小和每次反覆運算讀取的最大位元組數。參閱 :ref:`HTTPClient.read_chunk_size<class_HTTPClient_property_read_chunk_size>`\ 。
 
-Set this to a lower value (e.g. 4096 for 4 KiB) when downloading small files to decrease memory usage at the cost of download speeds.
+下載小檔時將其設定為較低的值，以降低記憶體使用量，但會降低下載速度，例如 4096 表示 4 KiB。
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Set this to a lower value (e.g. 4096 for 4 KiB) when downloading small files to 
 - |void| **set_download_file**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_download_file**\ (\ )
 
-The file to download into. Will output any received file into it.
+要下載到的檔案。將任何接收到的檔輸出到其中。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ The file to download into. Will output any received file into it.
 - |void| **set_max_redirects**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_redirects**\ (\ )
 
-Maximum number of allowed redirects.
+允許的最大重定向數。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ For simple requests, such as communication with a REST API, it is recommended to
 - |void| **set_use_threads**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_threads**\ (\ )
 
-If ``true``, multithreading is used to improve performance.
+為 ``true`` 時，將啟用多執行緒提高性能。
 
 .. rst-class:: classref-section-separator
 
@@ -523,8 +523,8 @@ If ``true``, multithreading is used to improve performance.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_HTTPRequest_method_cancel_request:
 
@@ -532,7 +532,7 @@ Method Descriptions
 
 |void| **cancel_request**\ (\ ) :ref:`🔗<class_HTTPRequest_method_cancel_request>`
 
-Cancels the current request.
+取消目前請求。
 
 .. rst-class:: classref-item-separator
 
@@ -544,9 +544,9 @@ Cancels the current request.
 
 :ref:`int<class_int>` **get_body_size**\ (\ ) |const| :ref:`🔗<class_HTTPRequest_method_get_body_size>`
 
-Returns the response body length.
+返回回應體長度。
 
-\ **Note:** Some Web servers may not send a body length. In this case, the value returned will be ``-1``. If using chunked transfer encoding, the body length will also be ``-1``.
+\ **注意：**\ 部分 Web 伺服器可能不發送回應體長度，此時返回值將為 ``-1``\ 。如果使用分塊傳輸編碼，回應體的長度也將為 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Returns the response body length.
 
 :ref:`int<class_int>` **get_downloaded_bytes**\ (\ ) |const| :ref:`🔗<class_HTTPRequest_method_get_downloaded_bytes>`
 
-Returns the number of bytes this HTTPRequest downloaded.
+返回該 HTTPRequest 已下載的位元組數。
 
 .. rst-class:: classref-item-separator
 
@@ -582,13 +582,13 @@ Returns the current status of the underlying :ref:`HTTPClient<class_HTTPClient>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **request**\ (\ url\: :ref:`String<class_String>`, custom_headers\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray(), method\: :ref:`Method<enum_HTTPClient_Method>` = 0, request_data\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_HTTPRequest_method_request>`
 
-Creates request on the underlying :ref:`HTTPClient<class_HTTPClient>`. If there is no configuration errors, it tries to connect using :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` and passes parameters onto :ref:`HTTPClient.request()<class_HTTPClient_method_request>`.
+在底層的 :ref:`HTTPClient<class_HTTPClient>` 上建立請求。如果沒有配置錯誤，它會嘗試使用 :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` 連接並將參數傳遞給 :ref:`HTTPClient.request()<class_HTTPClient_method_request>`\ 。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is successfully created. (Does not imply that the server has responded), :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if not in the tree, :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if still processing previous request, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if given string is not a valid URL format, or :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>` if not using thread and the :ref:`HTTPClient<class_HTTPClient>` cannot connect to host.
+如果成功建立請求，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。（並不意味著伺服器已回應），如果不在樹中，則返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果仍在處理先前的請求，則返回 :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>`\ ；如果給定的字串不是有效的 URL 格式，則返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；或者如果不使用執行緒並且 :ref:`HTTPClient<class_HTTPClient>` 無法連接到主機，則返回 :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>`\ 。
 
-\ **Note:** When ``method`` is :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>`, the payload sent via ``request_data`` might be ignored by the server or even cause the server to reject the request (check `RFC 7231 section 4.3.1 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__ for more details). As a workaround, you can send data as a query string in the URL (see :ref:`String.uri_encode()<class_String_method_uri_encode>` for an example).
+\ **注意：**\ 當 ``method`` 為 :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>` 時，通過 ``request_data`` 發送的有效載荷可能會被伺服器忽略，甚至導致伺服器拒絕請求（見 `RFC 7231 第 4.3.1 節 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__\ 瞭解更多詳情）。作為一種變通方法，可以在 URL 中將資料作為查詢字串發送（有關範例，請參見 :ref:`String.uri_encode()<class_String_method_uri_encode>`\ ）。
 
-\ **Note:** It's recommended to use transport encryption (TLS) and to avoid sending sensitive information (such as login credentials) in HTTP GET URL parameters. Consider using HTTP POST requests or HTTP headers for such information instead.
+\ **注意：**\ 建議使用傳輸加密（TLS）並避免在 HTTP GET URL 參數中發送敏感資訊（例如登錄憑據）。考慮改用 HTTP POST 請求或 HTTP 報頭來獲取此類資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -600,9 +600,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is suc
 
 :ref:`Error<enum_@GlobalScope_Error>` **request_raw**\ (\ url\: :ref:`String<class_String>`, custom_headers\: :ref:`PackedStringArray<class_PackedStringArray>` = PackedStringArray(), method\: :ref:`Method<enum_HTTPClient_Method>` = 0, request_data_raw\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray()\ ) :ref:`🔗<class_HTTPRequest_method_request_raw>`
 
-Creates request on the underlying :ref:`HTTPClient<class_HTTPClient>` using a raw array of bytes for the request body. If there is no configuration errors, it tries to connect using :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` and passes parameters onto :ref:`HTTPClient.request()<class_HTTPClient_method_request>`.
+在底層的\ :ref:`HTTPClient<class_HTTPClient>`\ 上建立請求，使用一個原始位元組陣列作為請求主體。如果沒有配置錯誤，它會嘗試使用 :ref:`HTTPClient.connect_to_host()<class_HTTPClient_method_connect_to_host>` 連接並將參數傳遞給 :ref:`HTTPClient.request()<class_HTTPClient_method_request>`\ 。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is successfully created. (Does not imply that the server has responded), :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if not in the tree, :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if still processing previous request, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if given string is not a valid URL format, or :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>` if not using thread and the :ref:`HTTPClient<class_HTTPClient>` cannot connect to host.
+如果請求建立成功，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。（並不意味著伺服器已回應），\ :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` 如果不在樹中，\ :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` 如果仍在處理先前的請求，\ :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 如果給定的字串不是有效的 URL 格式，或 :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>`\ 如果不使用執行緒並且 :ref:`HTTPClient<class_HTTPClient>` 無法連接到主機。
 
 .. rst-class:: classref-item-separator
 
@@ -614,9 +614,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is suc
 
 |void| **set_http_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPRequest_method_set_http_proxy>`
 
-Sets the proxy server for HTTP requests.
+設定 HTTP 請求使用的代理伺服器。
 
-The proxy server is unset if ``host`` is empty or ``port`` is -1.
+如果 ``host`` 為空或者 ``port`` 為 -1，則會取消設定代理伺服器。
 
 .. rst-class:: classref-item-separator
 
@@ -628,9 +628,9 @@ The proxy server is unset if ``host`` is empty or ``port`` is -1.
 
 |void| **set_https_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPRequest_method_set_https_proxy>`
 
-Sets the proxy server for HTTPS requests.
+設定 HTTPS 請求使用的代理伺服器。
 
-The proxy server is unset if ``host`` is empty or ``port`` is -1.
+如果 ``host`` 為空或者 ``port`` 為 -1，則會取消設定代理伺服器。
 
 .. rst-class:: classref-item-separator
 
@@ -642,14 +642,14 @@ The proxy server is unset if ``host`` is empty or ``port`` is -1.
 
 |void| **set_tls_options**\ (\ client_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_HTTPRequest_method_set_tls_options>`
 
-Sets the :ref:`TLSOptions<class_TLSOptions>` to be used when connecting to an HTTPS server. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>`.
+設定連接到 HTTPS 伺服器時使用的 :ref:`TLSOptions<class_TLSOptions>`\ 。見 :ref:`TLSOptions.client()<class_TLSOptions_method_client>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

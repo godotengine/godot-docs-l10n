@@ -367,9 +367,9 @@ Copia el texto seleccionado.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_PASTE** = ``2``
 
-Pastes the clipboard text over the selected text (or at the caret's position).
+Pega el texto del portapapeles sobre el texto seleccionado (o en la posición del cursor).
 
-Non-printable escape characters are automatically stripped from the OS clipboard via :ref:`String.strip_escapes()<class_String_method_strip_escapes>`.
+Los caracteres de escape no imprimibles se eliminan automáticamente del portapapeles del sistema operativo a través del :ref:`String.strip_escapes()<class_String_method_strip_escapes>`.
 
 .. _class_LineEdit_constant_MENU_CLEAR:
 
@@ -695,7 +695,7 @@ enum **ExpandMode**: :ref:`🔗<enum_LineEdit_ExpandMode>`
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_ORIGINAL_SIZE** = ``0``
 
-Use the original size for the right icon.
+Usa el tamaño original para el icono derecho.
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_TEXT:
 
@@ -703,7 +703,7 @@ Use the original size for the right icon.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_TEXT** = ``1``
 
-Scale the right icon's size to match the size of the text.
+Escala el tamaño del icono derecho para que coincida con el tamaño del texto.
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT:
 
@@ -711,7 +711,7 @@ Scale the right icon's size to match the size of the text.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_LINE_EDIT** = ``2``
 
-Scale the right icon to fit the LineEdit.
+Escala el icono derecho para que se ajuste al LineEdit.
 
 .. rst-class:: classref-section-separator
 
@@ -733,7 +733,7 @@ Descripciones de Propiedades
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-The text's horizontal alignment.
+Alineación horizontal del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -1007,7 +1007,7 @@ Si es ``true``, **LineEdit** no muestra la decoración.
 - |void| **set_icon_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_LineEdit_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **get_icon_expand_mode**\ (\ )
 
-Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_right_icon>`.
+Define el comportamiento de escalado del :ref:`right_icon<class_LineEdit_property_right_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Establece el icono que aparecerá en el extremo derecho de la **LineEdit** si no
 - |void| **set_right_icon_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_right_icon_scale**\ (\ )
 
-Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` is set to :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
+Relación de escala del icono cuando :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` está configurado a :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1525,9 +1525,9 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 :ref:`int<class_int>` **get_next_composite_character_column**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LineEdit_method_get_next_composite_character_column>`
 
-Returns the correct column at the end of a composite character like ❤️‍🩹 (mending heart; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) which is comprised of more than one Unicode code point, if the caret is at the start of the composite character. Also returns the correct column with the caret at mid grapheme and for non-composite characters.
+Devuelve la columna correcta al final de un carácter compuesto como ❤️‍🩹 (corazón reparador; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) que está compuesto por más de un punto de código Unicode, si el cursor está al principio del carácter compuesto. También devuelve la columna correcta con el cursor a mitad de grafema y para caracteres no compuestos.
 
-\ **Note:** To check at caret location use ``get_next_composite_character_column(get_caret_column())``
+\ **Nota:** Para comprobar la ubicación del cursor, usa ``get_next_composite_character_column(get_caret_column())``
 
 .. rst-class:: classref-item-separator
 
@@ -1539,9 +1539,9 @@ Returns the correct column at the end of a composite character like ❤️‍�
 
 :ref:`int<class_int>` **get_previous_composite_character_column**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LineEdit_method_get_previous_composite_character_column>`
 
-Returns the correct column at the start of a composite character like ❤️‍🩹 (mending heart; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) which is comprised of more than one Unicode code point, if the caret is at the end of the composite character. Also returns the correct column with the caret at mid grapheme and for non-composite characters.
+Devuelve la columna correcta al principio de un carácter compuesto como ❤️‍🩹 (corazón reparador; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) que está compuesto por más de un punto de código Unicode, si el cursor está al final del carácter compuesto. También devuelve la columna correcta con el cursor a mitad de grafema y para caracteres no compuestos.
 
-\ **Note:** To check at caret location use ``get_previous_composite_character_column(get_caret_column())``
+\ **Nota:** Para comprobar la ubicación del cursor, usa ``get_previous_composite_character_column(get_caret_column())``
 
 .. rst-class:: classref-item-separator
 
@@ -1697,24 +1697,24 @@ Ejecuta una acción determinada según se define en el enum :ref:`MenuItems<enum
 
 |void| **select**\ (\ from\: :ref:`int<class_int>` = 0, to\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_LineEdit_method_select>`
 
-Selects characters inside **LineEdit** between ``from`` and ``to``. By default, ``from`` is at the beginning and ``to`` at the end.
+Selecciona los caracteres dentro de **LineEdit** entre ``from`` y ``to``. Por defecto, ``from`` está al principio y ``to`` al final.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    text = "Welcome"
-    select() # Will select "Welcome".
-    select(4) # Will select "ome".
-    select(2, 5) # Will select "lco".
+    text = "Bienvenido"
+    select() # Seleccionará "Bienvenido".
+    select(4) # Seleccionará "venido".
+    select(2, 5) # Seleccionará "env".
 
  .. code-tab:: csharp
 
-    Text = "Welcome";
-    Select(); // Will select "Welcome".
-    Select(4); // Will select "ome".
-    Select(2, 5); // Will select "lco".
+    Text = "Bienvenido";
+    Select(); // Seleccionará "Bienvenido".
+    Select(4); // Seleccionará "venido".
+    Select(2, 5); // Seleccionará "env".
 
 
 
@@ -1877,7 +1877,7 @@ El ancho del cursor en píxeles. Se pueden usar valores mayores para mejorar la 
 
 :ref:`int<class_int>` **minimum_character_width** = ``4`` :ref:`🔗<class_LineEdit_theme_constant_minimum_character_width>`
 
-Minimum horizontal space for the text (not counting the clear button and content margins). This value is measured in count of 'M' characters (i.e. this number of 'M' characters can be displayed without scrolling).
+Espacio horizontal mínimo para el texto (sin contar el botón de borrar y los márgenes de contenido). Este valor se mide en el conteo de caracteres 'M' (es decir, esta cantidad de caracteres 'M' puede mostrarse sin desplazamiento).
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ La textura para el botón de despejar. Véase :ref:`clear_button_enabled<class_L
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_LineEdit_theme_style_focus>`
 
-Background used when **LineEdit** has GUI focus. The :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+Fondo utilizado cuando **LineEdit** tiene el foco de la GUI. El :ref:`StyleBox<class_StyleBox>` de :ref:`focus<class_LineEdit_theme_style_focus>` se muestra *sobre* el :ref:`StyleBox<class_StyleBox>` base, por lo que se debe usar un :ref:`StyleBox<class_StyleBox>` parcialmente transparente para asegurar que el :ref:`StyleBox<class_StyleBox>` base permanezca visible. Un :ref:`StyleBox<class_StyleBox>` que representa un contorno o un subrayado funciona bien para este propósito. Para desactivar el efecto visual de foco, asigna un recurso :ref:`StyleBoxEmpty<class_StyleBoxEmpty>`. Ten en cuenta que desactivar el efecto visual de foco perjudicará la usabilidad de la navegación con teclado/controlador, por lo que no se recomienda por razones de accesibilidad.
 
 .. rst-class:: classref-item-separator
 

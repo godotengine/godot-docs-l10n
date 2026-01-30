@@ -5,30 +5,30 @@
 BaseMaterial3D
 ==============
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`ORMMaterial3D<class_ORMMaterial3D>`, :ref:`StandardMaterial3D<class_StandardMaterial3D>`
+**被繼承：** :ref:`ORMMaterial3D<class_ORMMaterial3D>`, :ref:`StandardMaterial3D<class_StandardMaterial3D>`
 
-Abstract base class for defining the 3D rendering properties of meshes.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This class serves as a default material with a wide variety of rendering features and properties without the need to write shader code. See the tutorial below for details.
+用於定義網格 3D 算繪屬性的抽象基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Standard Material 3D and ORM Material 3D <../tutorials/3d/standard_material_3d>`
+此類別提供一個預設材質，具備多種算繪功能與屬性，無須撰寫著色器程式。詳情請見下方教學。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`標準 3D 材質與 ORM 3D 材質 <../tutorials/3d/standard_material_3d>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -299,8 +299,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -325,8 +325,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_BaseMaterial3D_TextureParam:
 
@@ -340,7 +340,7 @@ enum **TextureParam**: :ref:`🔗<enum_BaseMaterial3D_TextureParam>`
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_ALBEDO** = ``0``
 
-Texture specifying per-pixel color.
+指定每圖元顏色的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_METALLIC:
 
@@ -348,7 +348,7 @@ Texture specifying per-pixel color.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_METALLIC** = ``1``
 
-Texture specifying per-pixel metallic value.
+指定每圖元金屬度的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_ROUGHNESS:
 
@@ -356,7 +356,7 @@ Texture specifying per-pixel metallic value.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_ROUGHNESS** = ``2``
 
-Texture specifying per-pixel roughness value.
+指定每圖元粗糙度的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_EMISSION:
 
@@ -364,7 +364,7 @@ Texture specifying per-pixel roughness value.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_EMISSION** = ``3``
 
-Texture specifying per-pixel emission color.
+指定每圖元自發光顏色的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_NORMAL:
 
@@ -372,7 +372,7 @@ Texture specifying per-pixel emission color.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_NORMAL** = ``4``
 
-Texture specifying per-pixel normal vector.
+指定每圖元法向量的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_BENT_NORMAL:
 
@@ -380,7 +380,7 @@ Texture specifying per-pixel normal vector.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_BENT_NORMAL** = ``18``
 
-Texture specifying per-pixel bent normal vector.
+指定每圖元彎曲法向量的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_RIM:
 
@@ -388,7 +388,7 @@ Texture specifying per-pixel bent normal vector.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_RIM** = ``5``
 
-Texture specifying per-pixel rim value.
+指定每圖元邊緣光值的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_CLEARCOAT:
 
@@ -396,7 +396,7 @@ Texture specifying per-pixel rim value.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_CLEARCOAT** = ``6``
 
-Texture specifying per-pixel clearcoat value.
+指定每圖元透明漆（Clearcoat）值的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FLOWMAP:
 
@@ -404,7 +404,7 @@ Texture specifying per-pixel clearcoat value.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_FLOWMAP** = ``7``
 
-Texture specifying per-pixel flowmap direction for use with :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>`.
+指定每圖元流向，用於 :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>` 的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_AMBIENT_OCCLUSION:
 
@@ -412,7 +412,7 @@ Texture specifying per-pixel flowmap direction for use with :ref:`anisotropy<cla
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_AMBIENT_OCCLUSION** = ``8``
 
-Texture specifying per-pixel ambient occlusion value.
+指定每圖元環境遮蔽值的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_HEIGHTMAP:
 
@@ -420,7 +420,7 @@ Texture specifying per-pixel ambient occlusion value.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_HEIGHTMAP** = ``9``
 
-Texture specifying per-pixel height.
+指定每圖元高度的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_SUBSURFACE_SCATTERING:
 
@@ -428,7 +428,7 @@ Texture specifying per-pixel height.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_SUBSURFACE_SCATTERING** = ``10``
 
-Texture specifying per-pixel subsurface scattering.
+指定每圖元次表面散射的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_SUBSURFACE_TRANSMITTANCE:
 
@@ -436,7 +436,7 @@ Texture specifying per-pixel subsurface scattering.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_SUBSURFACE_TRANSMITTANCE** = ``11``
 
-Texture specifying per-pixel transmittance for subsurface scattering.
+指定每圖元次表面散射透射率的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_BACKLIGHT:
 
@@ -444,7 +444,7 @@ Texture specifying per-pixel transmittance for subsurface scattering.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_BACKLIGHT** = ``12``
 
-Texture specifying per-pixel backlight color.
+指定每圖元背光顏色的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_REFRACTION:
 
@@ -452,7 +452,7 @@ Texture specifying per-pixel backlight color.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_REFRACTION** = ``13``
 
-Texture specifying per-pixel refraction strength.
+指定每圖元折射強度的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_DETAIL_MASK:
 
@@ -460,7 +460,7 @@ Texture specifying per-pixel refraction strength.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_DETAIL_MASK** = ``14``
 
-Texture specifying per-pixel detail mask blending value.
+指定每圖元細節遮罩混合值的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_DETAIL_ALBEDO:
 
@@ -468,7 +468,7 @@ Texture specifying per-pixel detail mask blending value.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_DETAIL_ALBEDO** = ``15``
 
-Texture specifying per-pixel detail color.
+指定每圖元細節顏色的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_DETAIL_NORMAL:
 
@@ -476,7 +476,7 @@ Texture specifying per-pixel detail color.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_DETAIL_NORMAL** = ``16``
 
-Texture specifying per-pixel detail normal.
+指定每圖元細節法線的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_ORM:
 
@@ -484,7 +484,7 @@ Texture specifying per-pixel detail normal.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_ORM** = ``17``
 
-Texture holding ambient occlusion, roughness, and metallic.
+同時存有環境遮蔽、粗糙度與金屬度的紋理。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_MAX:
 
@@ -492,7 +492,7 @@ Texture holding ambient occlusion, roughness, and metallic.
 
 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` **TEXTURE_MAX** = ``19``
 
-Represents the size of the :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` enum.
+代表 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ enum **TextureFilter**: :ref:`🔗<enum_BaseMaterial3D_TextureFilter>`
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_NEAREST** = ``0``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理僅取最鄰近像素，近看呈現馬賽克，遠處因未取樣 mipmap 而顯得顆粒。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR:
 
@@ -518,7 +518,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR** = ``1``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理在最鄰近 4 像素間插值，近看平滑，遠處因未取樣 mipmap 仍顆粒。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -526,7 +526,7 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``2``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+紋理取最鄰近像素，並在兩層最鄰近的 mipmap 間插值（或僅取最近 mipmap，取決於 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>`\ ）。近看仍帶像素感，遠處則較平滑。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS:
 
@@ -534,7 +534,7 @@ The texture filter reads from the nearest pixel and blends between the nearest 2
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``3``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+紋理在最近 4 像素與最近 2 層 mipmap 間皆進行插值（或僅取最近 mipmap，依設定而定），近看與遠看皆平滑；一般建議使用此模式。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -542,7 +542,7 @@ The texture filter blends between the nearest 4 pixels and between the nearest 2
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC** = ``4``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+依表面與鏡頭角度選取最鄰近像素並於兩層 mipmap 間插值（或僅取最近 mipmap），近看帶像素感，遠看平滑。各向異性篩選可提升與鏡頭幾乎平行表面的貼圖品質，效能稍降；程度可在 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 調整。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -550,7 +550,7 @@ The texture filter reads from the nearest pixel and blends between 2 mipmaps (or
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC** = ``5``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+在最鄰近 4 像素與 2 層 mipmap 間插值，並依表面與鏡頭角度最佳化；近遠皆平滑。各向異性篩選能改善斜視角貼圖品質但稍慢，可於 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 設定等級。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_FILTER_MAX:
 
@@ -558,7 +558,7 @@ The texture filter blends between the nearest 4 pixels and blends between 2 mipm
 
 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **TEXTURE_FILTER_MAX** = ``6``
 
-Represents the size of the :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` enum.
+代表 :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ enum **DetailUV**: :ref:`🔗<enum_BaseMaterial3D_DetailUV>`
 
 :ref:`DetailUV<enum_BaseMaterial3D_DetailUV>` **DETAIL_UV_1** = ``0``
 
-Use ``UV`` with the detail texture.
+使用 ``UV`` 與細節紋理。
 
 .. _class_BaseMaterial3D_constant_DETAIL_UV_2:
 
@@ -584,7 +584,7 @@ Use ``UV`` with the detail texture.
 
 :ref:`DetailUV<enum_BaseMaterial3D_DetailUV>` **DETAIL_UV_2** = ``1``
 
-Use ``UV2`` with the detail texture.
+使用 ``UV2`` 與細節紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ enum **Transparency**: :ref:`🔗<enum_BaseMaterial3D_Transparency>`
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_DISABLED** = ``0``
 
-The material will not use transparency. This is the fastest to render.
+該材質將不使用透明度。算繪最快。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA:
 
@@ -610,7 +610,7 @@ The material will not use transparency. This is the fastest to render.
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA** = ``1``
 
-The material will use the texture's alpha values for transparency. This is the slowest to render, and disables shadow casting.
+該材質將使用紋理的 Alpha 值作為透明度。算繪最慢，並會停用陰影投射。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_SCISSOR:
 
@@ -618,7 +618,7 @@ The material will use the texture's alpha values for transparency. This is the s
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_SCISSOR** = ``2``
 
-The material will cut off all values below a threshold, the rest will remain opaque. The opaque portions will be rendered in the depth prepass. This is faster to render than alpha blending, but slower than opaque rendering. This also supports casting shadows.
+該材質會將所有低於閾值的值截斷，其餘部分保持不透明。不透明部分會在深度預通道中算繪。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_HASH:
 
@@ -626,7 +626,7 @@ The material will cut off all values below a threshold, the rest will remain opa
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_HASH** = ``3``
 
-The material will cut off all values below a spatially-deterministic threshold, the rest will remain opaque. This is faster to render than alpha blending, but slower than opaque rendering. This also supports casting shadows. Alpha hashing is suited for hair rendering.
+該材質會將所有低於空間確定性閾值的值截斷，其餘部分保持不透明。這比 Alpha 混合快，但比完全不透明稍慢，並支援投射陰影。Alpha 雜湊適合於頭髮算繪。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_ALPHA_DEPTH_PRE_PASS:
 
@@ -634,7 +634,7 @@ The material will cut off all values below a spatially-deterministic threshold, 
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_ALPHA_DEPTH_PRE_PASS** = ``4``
 
-The material will use the texture's alpha value for transparency, but will discard fragments with an alpha of less than 0.99 during the depth prepass and fragments with an alpha less than 0.1 during the shadow pass. This also supports casting shadows.
+該材質將使用紋理的 Alpha 值作為透明度，但在深度預通道階段會丟棄 Alpha 小於 0.99 的片段，在陰影通道期間丟棄 Alpha 小於 0.1 的片段。支援投射陰影。
 
 .. _class_BaseMaterial3D_constant_TRANSPARENCY_MAX:
 
@@ -642,7 +642,7 @@ The material will use the texture's alpha value for transparency, but will disca
 
 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **TRANSPARENCY_MAX** = ``5``
 
-Represents the size of the :ref:`Transparency<enum_BaseMaterial3D_Transparency>` enum.
+代表 :ref:`Transparency<enum_BaseMaterial3D_Transparency>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ enum **ShadingMode**: :ref:`🔗<enum_BaseMaterial3D_ShadingMode>`
 
 :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **SHADING_MODE_UNSHADED** = ``0``
 
-The object will not receive shadows. This is the fastest to render, but it disables all interactions with lights.
+該物件不會接收陰影。算繪速度最快，但會停用與光源的所有互動。
 
 .. _class_BaseMaterial3D_constant_SHADING_MODE_PER_PIXEL:
 
@@ -668,7 +668,7 @@ The object will not receive shadows. This is the fastest to render, but it disab
 
 :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **SHADING_MODE_PER_PIXEL** = ``1``
 
-The object will be shaded per pixel. Useful for realistic shading effects.
+物件將逐圖元著色，適用於需要寫實光照效果的情況。
 
 .. _class_BaseMaterial3D_constant_SHADING_MODE_PER_VERTEX:
 
@@ -676,7 +676,7 @@ The object will be shaded per pixel. Useful for realistic shading effects.
 
 :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **SHADING_MODE_PER_VERTEX** = ``2``
 
-The object will be shaded per vertex. Useful when you want cheaper shaders and do not care about visual quality.
+物件將逐頂點著色。當你需要較省效能的著色器且不在意畫質時很實用。
 
 .. _class_BaseMaterial3D_constant_SHADING_MODE_MAX:
 
@@ -684,7 +684,7 @@ The object will be shaded per vertex. Useful when you want cheaper shaders and d
 
 :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **SHADING_MODE_MAX** = ``3``
 
-Represents the size of the :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` enum.
+代表 :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -702,7 +702,7 @@ enum **Feature**: :ref:`🔗<enum_BaseMaterial3D_Feature>`
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_EMISSION** = ``0``
 
-Constant for setting :ref:`emission_enabled<class_BaseMaterial3D_property_emission_enabled>`.
+用於設定 :ref:`emission_enabled<class_BaseMaterial3D_property_emission_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_NORMAL_MAPPING:
 
@@ -710,7 +710,7 @@ Constant for setting :ref:`emission_enabled<class_BaseMaterial3D_property_emissi
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_NORMAL_MAPPING** = ``1``
 
-Constant for setting :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`.
+用於設定 :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_RIM:
 
@@ -718,7 +718,7 @@ Constant for setting :ref:`normal_enabled<class_BaseMaterial3D_property_normal_e
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_RIM** = ``2``
 
-Constant for setting :ref:`rim_enabled<class_BaseMaterial3D_property_rim_enabled>`.
+用於設定 :ref:`rim_enabled<class_BaseMaterial3D_property_rim_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_CLEARCOAT:
 
@@ -726,7 +726,7 @@ Constant for setting :ref:`rim_enabled<class_BaseMaterial3D_property_rim_enabled
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_CLEARCOAT** = ``3``
 
-Constant for setting :ref:`clearcoat_enabled<class_BaseMaterial3D_property_clearcoat_enabled>`.
+用於設定 :ref:`clearcoat_enabled<class_BaseMaterial3D_property_clearcoat_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_ANISOTROPY:
 
@@ -734,7 +734,7 @@ Constant for setting :ref:`clearcoat_enabled<class_BaseMaterial3D_property_clear
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_ANISOTROPY** = ``4``
 
-Constant for setting :ref:`anisotropy_enabled<class_BaseMaterial3D_property_anisotropy_enabled>`.
+用於設定 :ref:`anisotropy_enabled<class_BaseMaterial3D_property_anisotropy_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_AMBIENT_OCCLUSION:
 
@@ -742,7 +742,7 @@ Constant for setting :ref:`anisotropy_enabled<class_BaseMaterial3D_property_anis
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_AMBIENT_OCCLUSION** = ``5``
 
-Constant for setting :ref:`ao_enabled<class_BaseMaterial3D_property_ao_enabled>`.
+用於設定 :ref:`ao_enabled<class_BaseMaterial3D_property_ao_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_HEIGHT_MAPPING:
 
@@ -750,7 +750,7 @@ Constant for setting :ref:`ao_enabled<class_BaseMaterial3D_property_ao_enabled>`
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_HEIGHT_MAPPING** = ``6``
 
-Constant for setting :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`.
+用於設定 :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_SUBSURFACE_SCATTERING:
 
@@ -758,7 +758,7 @@ Constant for setting :ref:`heightmap_enabled<class_BaseMaterial3D_property_heigh
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_SUBSURFACE_SCATTERING** = ``7``
 
-Constant for setting :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>`.
+用於設定 :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_SUBSURFACE_TRANSMITTANCE:
 
@@ -766,7 +766,7 @@ Constant for setting :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_SUBSURFACE_TRANSMITTANCE** = ``8``
 
-Constant for setting :ref:`subsurf_scatter_transmittance_enabled<class_BaseMaterial3D_property_subsurf_scatter_transmittance_enabled>`.
+用於設定 :ref:`subsurf_scatter_transmittance_enabled<class_BaseMaterial3D_property_subsurf_scatter_transmittance_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_BACKLIGHT:
 
@@ -774,7 +774,7 @@ Constant for setting :ref:`subsurf_scatter_transmittance_enabled<class_BaseMater
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_BACKLIGHT** = ``9``
 
-Constant for setting :ref:`backlight_enabled<class_BaseMaterial3D_property_backlight_enabled>`.
+用於設定 :ref:`backlight_enabled<class_BaseMaterial3D_property_backlight_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_REFRACTION:
 
@@ -782,7 +782,7 @@ Constant for setting :ref:`backlight_enabled<class_BaseMaterial3D_property_backl
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_REFRACTION** = ``10``
 
-Constant for setting :ref:`refraction_enabled<class_BaseMaterial3D_property_refraction_enabled>`.
+用於設定 :ref:`refraction_enabled<class_BaseMaterial3D_property_refraction_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_DETAIL:
 
@@ -790,7 +790,7 @@ Constant for setting :ref:`refraction_enabled<class_BaseMaterial3D_property_refr
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_DETAIL** = ``11``
 
-Constant for setting :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>`.
+用於設定 :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_BENT_NORMAL_MAPPING:
 
@@ -798,7 +798,7 @@ Constant for setting :ref:`detail_enabled<class_BaseMaterial3D_property_detail_e
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_BENT_NORMAL_MAPPING** = ``12``
 
-Constant for setting :ref:`bent_normal_enabled<class_BaseMaterial3D_property_bent_normal_enabled>`.
+用於設定 :ref:`bent_normal_enabled<class_BaseMaterial3D_property_bent_normal_enabled>` 的常數。
 
 .. _class_BaseMaterial3D_constant_FEATURE_MAX:
 
@@ -806,7 +806,7 @@ Constant for setting :ref:`bent_normal_enabled<class_BaseMaterial3D_property_ben
 
 :ref:`Feature<enum_BaseMaterial3D_Feature>` **FEATURE_MAX** = ``13``
 
-Represents the size of the :ref:`Feature<enum_BaseMaterial3D_Feature>` enum.
+代表 :ref:`Feature<enum_BaseMaterial3D_Feature>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -824,7 +824,7 @@ enum **BlendMode**: :ref:`🔗<enum_BaseMaterial3D_BlendMode>`
 
 :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **BLEND_MODE_MIX** = ``0``
 
-Default blend mode. The color of the object is blended over the background based on the object's alpha value.
+預設混合模式。依物件的 Alpha 值，將其顏色混到背景上。
 
 .. _class_BaseMaterial3D_constant_BLEND_MODE_ADD:
 
@@ -832,7 +832,7 @@ Default blend mode. The color of the object is blended over the background based
 
 :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **BLEND_MODE_ADD** = ``1``
 
-The color of the object is added to the background.
+物件的顏色加算到背景中。
 
 .. _class_BaseMaterial3D_constant_BLEND_MODE_SUB:
 
@@ -840,7 +840,7 @@ The color of the object is added to the background.
 
 :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **BLEND_MODE_SUB** = ``2``
 
-The color of the object is subtracted from the background.
+從背景中減去物件的顏色。
 
 .. _class_BaseMaterial3D_constant_BLEND_MODE_MUL:
 
@@ -848,7 +848,7 @@ The color of the object is subtracted from the background.
 
 :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **BLEND_MODE_MUL** = ``3``
 
-The color of the object is multiplied by the background.
+物件的顏色與背景相乘。
 
 .. _class_BaseMaterial3D_constant_BLEND_MODE_PREMULT_ALPHA:
 
@@ -856,7 +856,7 @@ The color of the object is multiplied by the background.
 
 :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **BLEND_MODE_PREMULT_ALPHA** = ``4``
 
-The color of the object is added to the background and the alpha channel is used to mask out the background. This is effectively a hybrid of the blend mix and add modes, useful for effects like fire where you want the flame to add but the smoke to mix. By default, this works with unshaded materials using premultiplied textures. For shaded materials, use the ``PREMUL_ALPHA_FACTOR`` built-in so that lighting can be modulated as well.
+物件的顏色會加算到背景，並以 Alpha 通道遮罩背景。此模式結合了混合與加算，適合如火焰般希望火苗加亮、煙霧則正常混合的效果。預設可搭配未著色材質和預乘 (Premultiplied) 紋理使用；若材質有光照，請在著色器中使用 ``PREMUL_ALPHA_FACTOR`` 以同時調整光照。
 
 .. rst-class:: classref-item-separator
 
@@ -874,7 +874,7 @@ enum **AlphaAntiAliasing**: :ref:`🔗<enum_BaseMaterial3D_AlphaAntiAliasing>`
 
 :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **ALPHA_ANTIALIASING_OFF** = ``0``
 
-Disables Alpha AntiAliasing for the material.
+停用此材質的 Alpha 抗鋸齒。
 
 .. _class_BaseMaterial3D_constant_ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE:
 
@@ -882,7 +882,7 @@ Disables Alpha AntiAliasing for the material.
 
 :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE** = ``1``
 
-Enables AlphaToCoverage. Alpha values in the material are passed to the AntiAliasing sample mask.
+啟用 AlphaToCoverage。材質中的 Alpha 值會傳遞到抗鋸齒取樣遮罩中。
 
 .. _class_BaseMaterial3D_constant_ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE_AND_TO_ONE:
 
@@ -890,7 +890,7 @@ Enables AlphaToCoverage. Alpha values in the material are passed to the AntiAlia
 
 :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **ALPHA_ANTIALIASING_ALPHA_TO_COVERAGE_AND_TO_ONE** = ``2``
 
-Enables AlphaToCoverage and forces all non-zero alpha values to ``1``. Alpha values in the material are passed to the AntiAliasing sample mask.
+啟用 AlphaToCoverage，並將所有非零 Alpha 值強制為 ``1``\ 。材質中的 Alpha 值會傳遞到抗鋸齒取樣遮罩中。
 
 .. rst-class:: classref-item-separator
 
@@ -908,7 +908,7 @@ enum **DepthDrawMode**: :ref:`🔗<enum_BaseMaterial3D_DepthDrawMode>`
 
 :ref:`DepthDrawMode<enum_BaseMaterial3D_DepthDrawMode>` **DEPTH_DRAW_OPAQUE_ONLY** = ``0``
 
-Default depth draw mode. Depth is drawn only for opaque objects during the opaque prepass (if any) and during the opaque pass.
+預設深度繪製模式：僅在不透明預通道（若啟用）與不透明主通道期間，為不透明物件寫入深度。
 
 .. _class_BaseMaterial3D_constant_DEPTH_DRAW_ALWAYS:
 
@@ -916,9 +916,9 @@ Default depth draw mode. Depth is drawn only for opaque objects during the opaqu
 
 :ref:`DepthDrawMode<enum_BaseMaterial3D_DepthDrawMode>` **DEPTH_DRAW_ALWAYS** = ``1``
 
-Objects will write to depth during the opaque and the transparent passes. Transparent objects that are close to the camera may obscure other transparent objects behind them.
+物件會在不透明與透明通道皆寫入深度。靠近相機的透明物件可能遮蔽後方的其他透明物件。
 
-\ **Note:** This does not influence whether transparent objects are included in the depth prepass or not. For that, see :ref:`Transparency<enum_BaseMaterial3D_Transparency>`.
+\ **注意：**\ 此設定不影響透明物件是否參與深度預通道，相關設定請見 :ref:`Transparency<enum_BaseMaterial3D_Transparency>`\ 。
 
 .. _class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED:
 
@@ -926,7 +926,7 @@ Objects will write to depth during the opaque and the transparent passes. Transp
 
 :ref:`DepthDrawMode<enum_BaseMaterial3D_DepthDrawMode>` **DEPTH_DRAW_DISABLED** = ``2``
 
-Objects will not write their depth to the depth buffer, even during the depth prepass (if enabled).
+物件不會將深度寫入深度緩衝，包含已啟用的深度預通道階段。
 
 .. rst-class:: classref-item-separator
 
@@ -970,7 +970,7 @@ enum **CullMode**: :ref:`🔗<enum_BaseMaterial3D_CullMode>`
 
 :ref:`CullMode<enum_BaseMaterial3D_CullMode>` **CULL_BACK** = ``0``
 
-Default cull mode. The back of the object is culled when not visible. Back face triangles will be culled when facing the camera. This results in only the front side of triangles being drawn. For closed-surface meshes, this means that only the exterior of the mesh will be visible.
+預設剔除模式：背面在不可見時被剔除。面向相機時會剔除背面三角形，因此僅繪製正面。對封閉網格而言，只有外表面可見。
 
 .. _class_BaseMaterial3D_constant_CULL_FRONT:
 
@@ -978,7 +978,7 @@ Default cull mode. The back of the object is culled when not visible. Back face 
 
 :ref:`CullMode<enum_BaseMaterial3D_CullMode>` **CULL_FRONT** = ``1``
 
-Front face triangles will be culled when facing the camera. This results in only the back side of triangles being drawn. For closed-surface meshes, this means that the interior of the mesh will be drawn instead of the exterior.
+面向相機時會剔除正面三角形，因此僅繪製背面。對封閉網格而言，將看到其內部而非外部。
 
 .. _class_BaseMaterial3D_constant_CULL_DISABLED:
 
@@ -986,7 +986,7 @@ Front face triangles will be culled when facing the camera. This results in only
 
 :ref:`CullMode<enum_BaseMaterial3D_CullMode>` **CULL_DISABLED** = ``2``
 
-No face culling is performed; both the front face and back face will be visible.
+不進行面剔除；正反面皆可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1004,7 +1004,7 @@ enum **Flags**: :ref:`🔗<enum_BaseMaterial3D_Flags>`
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DISABLE_DEPTH_TEST** = ``0``
 
-Disables the depth test, so this object is drawn on top of all others drawn before it. This puts the object in the transparent draw pass where it is sorted based on distance to camera. Objects drawn after it in the draw order may cover it. This also disables writing to depth.
+停用深度測試，該物件會被繪製在之前所有內容之上，並進入透明通道以與其他物件依距離排序。之後繪製的物件仍可能蓋過它，同時也不會寫入深度。
 
 .. _class_BaseMaterial3D_constant_FLAG_ALBEDO_FROM_VERTEX_COLOR:
 
@@ -1012,7 +1012,7 @@ Disables the depth test, so this object is drawn on top of all others drawn befo
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_FROM_VERTEX_COLOR** = ``1``
 
-Set ``ALBEDO`` to the per-vertex color specified in the mesh.
+將 ``ALBEDO`` 設為網格內的每頂點顏色。
 
 .. _class_BaseMaterial3D_constant_FLAG_SRGB_VERTEX_COLOR:
 
@@ -1030,7 +1030,7 @@ Vertex colors are considered to be stored in nonlinear sRGB encoding and are con
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_USE_POINT_SIZE** = ``3``
 
-Uses point size to alter the size of primitive points. Also changes the albedo texture lookup to use ``POINT_COORD`` instead of ``UV``.
+使用點大小調整圖元點尺寸，並將反照率紋理取樣由 ``UV`` 改為 ``POINT_COORD``\ 。
 
 .. _class_BaseMaterial3D_constant_FLAG_FIXED_SIZE:
 
@@ -1038,7 +1038,7 @@ Uses point size to alter the size of primitive points. Also changes the albedo t
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_FIXED_SIZE** = ``4``
 
-Object is scaled by depth so that it always appears the same size on screen.
+依深度縮放，使物件在畫面上大小恆定。
 
 .. _class_BaseMaterial3D_constant_FLAG_BILLBOARD_KEEP_SCALE:
 
@@ -1046,7 +1046,7 @@ Object is scaled by depth so that it always appears the same size on screen.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_BILLBOARD_KEEP_SCALE** = ``5``
 
-Shader will keep the scale set for the mesh. Otherwise the scale is lost when billboarding. Only applies when :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is :ref:`BILLBOARD_ENABLED<class_BaseMaterial3D_constant_BILLBOARD_ENABLED>`.
+著色器會保留網格原有縮放，否則做公告板時縮放會遺失。僅於 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` 設為 :ref:`BILLBOARD_ENABLED<class_BaseMaterial3D_constant_BILLBOARD_ENABLED>` 時適用。
 
 .. _class_BaseMaterial3D_constant_FLAG_UV1_USE_TRIPLANAR:
 
@@ -1054,7 +1054,7 @@ Shader will keep the scale set for the mesh. Otherwise the scale is lost when bi
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_UV1_USE_TRIPLANAR** = ``6``
 
-Use triplanar texture lookup for all texture lookups that would normally use ``UV``.
+將所有原本以 ``UV`` 取樣的紋理改為三平面取樣。
 
 .. _class_BaseMaterial3D_constant_FLAG_UV2_USE_TRIPLANAR:
 
@@ -1062,7 +1062,7 @@ Use triplanar texture lookup for all texture lookups that would normally use ``U
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_UV2_USE_TRIPLANAR** = ``7``
 
-Use triplanar texture lookup for all texture lookups that would normally use ``UV2``.
+將所有原本以 ``UV2`` 取樣的紋理改為三平面取樣。
 
 .. _class_BaseMaterial3D_constant_FLAG_UV1_USE_WORLD_TRIPLANAR:
 
@@ -1070,7 +1070,7 @@ Use triplanar texture lookup for all texture lookups that would normally use ``U
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_UV1_USE_WORLD_TRIPLANAR** = ``8``
 
-Use triplanar texture lookup for all texture lookups that would normally use ``UV``.
+將所有原本以 ``UV`` 取樣的紋理改為三平面取樣。
 
 .. _class_BaseMaterial3D_constant_FLAG_UV2_USE_WORLD_TRIPLANAR:
 
@@ -1078,7 +1078,7 @@ Use triplanar texture lookup for all texture lookups that would normally use ``U
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_UV2_USE_WORLD_TRIPLANAR** = ``9``
 
-Use triplanar texture lookup for all texture lookups that would normally use ``UV2``.
+將所有原本以 ``UV2`` 取樣的紋理改為三平面取樣。
 
 .. _class_BaseMaterial3D_constant_FLAG_AO_ON_UV2:
 
@@ -1086,7 +1086,7 @@ Use triplanar texture lookup for all texture lookups that would normally use ``U
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_AO_ON_UV2** = ``10``
 
-Use ``UV2`` coordinates to look up from the :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`.
+使用 ``UV2`` 座標取樣 :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`\ 。
 
 .. _class_BaseMaterial3D_constant_FLAG_EMISSION_ON_UV2:
 
@@ -1094,7 +1094,7 @@ Use ``UV2`` coordinates to look up from the :ref:`ao_texture<class_BaseMaterial3
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_EMISSION_ON_UV2** = ``11``
 
-Use ``UV2`` coordinates to look up from the :ref:`emission_texture<class_BaseMaterial3D_property_emission_texture>`.
+使用 ``UV2`` 座標取樣 :ref:`emission_texture<class_BaseMaterial3D_property_emission_texture>`\ 。
 
 .. _class_BaseMaterial3D_constant_FLAG_ALBEDO_TEXTURE_FORCE_SRGB:
 
@@ -1110,7 +1110,7 @@ Forces the shader to convert albedo from nonlinear sRGB encoding to linear encod
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DONT_RECEIVE_SHADOWS** = ``13``
 
-Disables receiving shadows from other objects.
+停用接收其他物件的陰影。
 
 .. _class_BaseMaterial3D_constant_FLAG_DISABLE_AMBIENT_LIGHT:
 
@@ -1118,7 +1118,7 @@ Disables receiving shadows from other objects.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DISABLE_AMBIENT_LIGHT** = ``14``
 
-Disables receiving ambient light.
+停用接收環境光。
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_SHADOW_TO_OPACITY:
 
@@ -1126,7 +1126,7 @@ Disables receiving ambient light.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_USE_SHADOW_TO_OPACITY** = ``15``
 
-Enables the shadow to opacity feature.
+啟用「陰影轉不透明度」功能。
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_TEXTURE_REPEAT:
 
@@ -1134,7 +1134,7 @@ Enables the shadow to opacity feature.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_USE_TEXTURE_REPEAT** = ``16``
 
-Enables the texture to repeat when UV coordinates are outside the 0-1 range. If using one of the linear filtering modes, this can result in artifacts at the edges of a texture when the sampler filters across the edges of the texture.
+當 UV 超出 0–1 時允許紋理重複。如果使用線性過濾模式，取樣器跨越紋理邊界時可能在邊緣產生偽影。
 
 .. _class_BaseMaterial3D_constant_FLAG_INVERT_HEIGHTMAP:
 
@@ -1142,7 +1142,7 @@ Enables the texture to repeat when UV coordinates are outside the 0-1 range. If 
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_INVERT_HEIGHTMAP** = ``17``
 
-Invert values read from a depth texture to convert them to height values (heightmap).
+反轉從深度紋理讀取的值，將其轉為高度值（高度圖）。
 
 .. _class_BaseMaterial3D_constant_FLAG_SUBSURFACE_MODE_SKIN:
 
@@ -1150,7 +1150,7 @@ Invert values read from a depth texture to convert them to height values (height
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_SUBSURFACE_MODE_SKIN** = ``18``
 
-Enables the skin mode for subsurface scattering which is used to improve the look of subsurface scattering when used for human skin.
+啟用「皮膚模式」以改進用於人體皮膚時的次表面散射效果。
 
 .. _class_BaseMaterial3D_constant_FLAG_PARTICLE_TRAILS_MODE:
 
@@ -1158,7 +1158,7 @@ Enables the skin mode for subsurface scattering which is used to improve the loo
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_PARTICLE_TRAILS_MODE** = ``19``
 
-Enables parts of the shader required for :ref:`GPUParticles3D<class_GPUParticles3D>` trails to function. This also requires using a mesh with appropriate skinning, such as :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` or :ref:`TubeTrailMesh<class_TubeTrailMesh>`. Enabling this feature outside of materials used in :ref:`GPUParticles3D<class_GPUParticles3D>` meshes will break material rendering.
+啟用 :ref:`GPUParticles3D<class_GPUParticles3D>` 尾跡所需的著色器部分。需配合具蒙皮的網格（如 :ref:`RibbonTrailMesh<class_RibbonTrailMesh>`\ 、\ :ref:`TubeTrailMesh<class_TubeTrailMesh>`\ ）。若在非 :ref:`GPUParticles3D<class_GPUParticles3D>` 材質上啟用，將導致算繪錯誤。
 
 .. _class_BaseMaterial3D_constant_FLAG_ALBEDO_TEXTURE_MSDF:
 
@@ -1166,7 +1166,7 @@ Enables parts of the shader required for :ref:`GPUParticles3D<class_GPUParticles
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_ALBEDO_TEXTURE_MSDF** = ``20``
 
-Enables multichannel signed distance field rendering shader.
+啟用多通道 SDF（Signed Distance Field）算繪著色器。
 
 .. _class_BaseMaterial3D_constant_FLAG_DISABLE_FOG:
 
@@ -1174,7 +1174,7 @@ Enables multichannel signed distance field rendering shader.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DISABLE_FOG** = ``21``
 
-Disables receiving depth-based or volumetric fog.
+停用接收深度式或體積式霧效。
 
 .. _class_BaseMaterial3D_constant_FLAG_DISABLE_SPECULAR_OCCLUSION:
 
@@ -1182,7 +1182,7 @@ Disables receiving depth-based or volumetric fog.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DISABLE_SPECULAR_OCCLUSION** = ``22``
 
-Disables specular occlusion.
+停用鏡面遮蔽。
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_Z_CLIP_SCALE:
 
@@ -1190,7 +1190,7 @@ Disables specular occlusion.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_USE_Z_CLIP_SCALE** = ``23``
 
-Enables using :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale>`.
+啟用 :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale>`\ 。
 
 .. _class_BaseMaterial3D_constant_FLAG_USE_FOV_OVERRIDE:
 
@@ -1198,7 +1198,7 @@ Enables using :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale>`.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_USE_FOV_OVERRIDE** = ``24``
 
-Enables using :ref:`fov_override<class_BaseMaterial3D_property_fov_override>`.
+啟用 :ref:`fov_override<class_BaseMaterial3D_property_fov_override>`\ 。
 
 .. _class_BaseMaterial3D_constant_FLAG_MAX:
 
@@ -1206,7 +1206,7 @@ Enables using :ref:`fov_override<class_BaseMaterial3D_property_fov_override>`.
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_MAX** = ``25``
 
-Represents the size of the :ref:`Flags<enum_BaseMaterial3D_Flags>` enum.
+代表 :ref:`Flags<enum_BaseMaterial3D_Flags>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1224,7 +1224,7 @@ enum **DiffuseMode**: :ref:`🔗<enum_BaseMaterial3D_DiffuseMode>`
 
 :ref:`DiffuseMode<enum_BaseMaterial3D_DiffuseMode>` **DIFFUSE_BURLEY** = ``0``
 
-Default diffuse scattering algorithm.
+預設漫反射散射演算法。
 
 .. _class_BaseMaterial3D_constant_DIFFUSE_LAMBERT:
 
@@ -1232,7 +1232,7 @@ Default diffuse scattering algorithm.
 
 :ref:`DiffuseMode<enum_BaseMaterial3D_DiffuseMode>` **DIFFUSE_LAMBERT** = ``1``
 
-Diffuse scattering ignores roughness.
+漫散射忽略粗糙度。
 
 .. _class_BaseMaterial3D_constant_DIFFUSE_LAMBERT_WRAP:
 
@@ -1240,7 +1240,7 @@ Diffuse scattering ignores roughness.
 
 :ref:`DiffuseMode<enum_BaseMaterial3D_DiffuseMode>` **DIFFUSE_LAMBERT_WRAP** = ``2``
 
-Extends Lambert to cover more than 90 degrees when roughness increases.
+在粗糙度增大時，將 Lambert 延伸至超過 90°。
 
 .. _class_BaseMaterial3D_constant_DIFFUSE_TOON:
 
@@ -1248,7 +1248,7 @@ Extends Lambert to cover more than 90 degrees when roughness increases.
 
 :ref:`DiffuseMode<enum_BaseMaterial3D_DiffuseMode>` **DIFFUSE_TOON** = ``3``
 
-Uses a hard cut for lighting, with smoothing affected by roughness.
+使用硬斷差的光照，平滑度受粗糙度影響。
 
 .. rst-class:: classref-item-separator
 
@@ -1266,11 +1266,11 @@ enum **SpecularMode**: :ref:`🔗<enum_BaseMaterial3D_SpecularMode>`
 
 :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` **SPECULAR_SCHLICK_GGX** = ``0``
 
-Default specular blob.
+預設鏡面斑點。
 
-\ **Note:** Forward+ uses multiscattering for more accurate reflections, although the impact of multiscattering is more noticeable on rough metallic surfaces than on smooth, non-metallic surfaces.
+\ **注意：**\ Forward+ 會使用多重散射以獲得更精確的反射，其影響在粗糙金屬表面尤為明顯。
 
-\ **Note:** Mobile and Compatibility don't perform multiscattering for performance reasons. Instead, they perform single scattering, which means rough metallic surfaces may look slightly darker than intended.
+\ **注意：**\ Mobile 與 Compatibility 管線為了效能僅做單次散射，因此粗糙金屬表面可能會略暗。
 
 .. _class_BaseMaterial3D_constant_SPECULAR_TOON:
 
@@ -1278,7 +1278,7 @@ Default specular blob.
 
 :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` **SPECULAR_TOON** = ``1``
 
-Toon blob which changes size based on roughness.
+依粗糙度改變大小的 Toon 鏡面斑點。
 
 .. _class_BaseMaterial3D_constant_SPECULAR_DISABLED:
 
@@ -1286,7 +1286,7 @@ Toon blob which changes size based on roughness.
 
 :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` **SPECULAR_DISABLED** = ``2``
 
-No specular blob. This is slightly faster to render than other specular modes.
+無鏡面斑點，比其他鏡面模式稍快。
 
 .. rst-class:: classref-item-separator
 
@@ -1304,7 +1304,7 @@ enum **BillboardMode**: :ref:`🔗<enum_BaseMaterial3D_BillboardMode>`
 
 :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **BILLBOARD_DISABLED** = ``0``
 
-Billboard mode is disabled.
+已停用公告板模式。
 
 .. _class_BaseMaterial3D_constant_BILLBOARD_ENABLED:
 
@@ -1312,7 +1312,7 @@ Billboard mode is disabled.
 
 :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **BILLBOARD_ENABLED** = ``1``
 
-The object's Z axis will always face the camera.
+物件的 Z 軸永遠朝向相機。
 
 .. _class_BaseMaterial3D_constant_BILLBOARD_FIXED_Y:
 
@@ -1320,7 +1320,7 @@ The object's Z axis will always face the camera.
 
 :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **BILLBOARD_FIXED_Y** = ``2``
 
-The object's X axis will always face the camera.
+物件的 X 軸永遠朝向相機。
 
 .. _class_BaseMaterial3D_constant_BILLBOARD_PARTICLES:
 
@@ -1328,9 +1328,9 @@ The object's X axis will always face the camera.
 
 :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **BILLBOARD_PARTICLES** = ``3``
 
-Used for particle systems when assigned to :ref:`GPUParticles3D<class_GPUParticles3D>` and :ref:`CPUParticles3D<class_CPUParticles3D>` nodes (flipbook animation). Enables ``particles_anim_*`` properties.
+當此材質被指派給 :ref:`GPUParticles3D<class_GPUParticles3D>` 或 :ref:`CPUParticles3D<class_CPUParticles3D>` 節點時，將用於粒子系統的翻頁動畫，並啟用 ``particles_anim_*`` 屬性。
 
-The :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` or :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` should also be set to a value bigger than zero for the animation to play.
+為了讓動畫播放，\ :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` 或 :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` 必須設為大於 0 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1348,7 +1348,7 @@ enum **TextureChannel**: :ref:`🔗<enum_BaseMaterial3D_TextureChannel>`
 
 :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **TEXTURE_CHANNEL_RED** = ``0``
 
-Used to read from the red channel of a texture.
+讀取紋理的紅色通道。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_CHANNEL_GREEN:
 
@@ -1356,7 +1356,7 @@ Used to read from the red channel of a texture.
 
 :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **TEXTURE_CHANNEL_GREEN** = ``1``
 
-Used to read from the green channel of a texture.
+讀取紋理的綠色通道。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_CHANNEL_BLUE:
 
@@ -1364,7 +1364,7 @@ Used to read from the green channel of a texture.
 
 :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **TEXTURE_CHANNEL_BLUE** = ``2``
 
-Used to read from the blue channel of a texture.
+讀取紋理的藍色通道。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_CHANNEL_ALPHA:
 
@@ -1372,7 +1372,7 @@ Used to read from the blue channel of a texture.
 
 :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **TEXTURE_CHANNEL_ALPHA** = ``3``
 
-Used to read from the alpha channel of a texture.
+讀取紋理的 Alpha 通道。
 
 .. _class_BaseMaterial3D_constant_TEXTURE_CHANNEL_GRAYSCALE:
 
@@ -1380,7 +1380,7 @@ Used to read from the alpha channel of a texture.
 
 :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **TEXTURE_CHANNEL_GRAYSCALE** = ``4``
 
-Used to read from the linear (non-perceptual) average of the red, green and blue channels of a texture.
+讀取紋理 R、G、B 通道的線性（非感知）平均值。
 
 .. rst-class:: classref-item-separator
 
@@ -1398,7 +1398,7 @@ enum **EmissionOperator**: :ref:`🔗<enum_BaseMaterial3D_EmissionOperator>`
 
 :ref:`EmissionOperator<enum_BaseMaterial3D_EmissionOperator>` **EMISSION_OP_ADD** = ``0``
 
-Adds the emission color to the color from the emission texture.
+將自發光顏色加到自發光紋理顏色上。
 
 .. _class_BaseMaterial3D_constant_EMISSION_OP_MULTIPLY:
 
@@ -1406,7 +1406,7 @@ Adds the emission color to the color from the emission texture.
 
 :ref:`EmissionOperator<enum_BaseMaterial3D_EmissionOperator>` **EMISSION_OP_MULTIPLY** = ``1``
 
-Multiplies the emission color by the color from the emission texture.
+將自發光顏色乘以自發光紋理顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1424,7 +1424,7 @@ enum **DistanceFadeMode**: :ref:`🔗<enum_BaseMaterial3D_DistanceFadeMode>`
 
 :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>` **DISTANCE_FADE_DISABLED** = ``0``
 
-Do not use distance fade.
+不使用距離淡化。
 
 .. _class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_ALPHA:
 
@@ -1432,7 +1432,7 @@ Do not use distance fade.
 
 :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>` **DISTANCE_FADE_PIXEL_ALPHA** = ``1``
 
-Smoothly fades the object out based on each pixel's distance from the camera using the alpha channel.
+依各像素與相機的距離，用 Alpha 通道平滑淡出物件。
 
 .. _class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_DITHER:
 
@@ -1440,7 +1440,7 @@ Smoothly fades the object out based on each pixel's distance from the camera usi
 
 :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>` **DISTANCE_FADE_PIXEL_DITHER** = ``2``
 
-Smoothly fades the object out based on each pixel's distance from the camera using a dithering approach. Dithering discards pixels based on a set pattern to smoothly fade without enabling transparency. On certain hardware, this can be faster than :ref:`DISTANCE_FADE_PIXEL_ALPHA<class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_ALPHA>`.
+依各像素與相機的距離，透過抖動方式平滑淡出。抖動依固定圖樣丟棄像素，達到無需透明即可淡出的效果，在部分硬體上比 :ref:`DISTANCE_FADE_PIXEL_ALPHA<class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_ALPHA>` 更快。
 
 .. _class_BaseMaterial3D_constant_DISTANCE_FADE_OBJECT_DITHER:
 
@@ -1448,7 +1448,7 @@ Smoothly fades the object out based on each pixel's distance from the camera usi
 
 :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>` **DISTANCE_FADE_OBJECT_DITHER** = ``3``
 
-Smoothly fades the object out based on the object's distance from the camera using a dithering approach. Dithering discards pixels based on a set pattern to smoothly fade without enabling transparency. On certain hardware, this can be faster than :ref:`DISTANCE_FADE_PIXEL_ALPHA<class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_ALPHA>` and :ref:`DISTANCE_FADE_PIXEL_DITHER<class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_DITHER>`.
+依物件與相機的距離，以抖動方式平滑淡出。抖動依固定圖樣丟棄像素，可在不啟用透明的情況下淡出；在某些硬體上比 :ref:`DISTANCE_FADE_PIXEL_ALPHA<class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_ALPHA>` 與 :ref:`DISTANCE_FADE_PIXEL_DITHER<class_BaseMaterial3D_constant_DISTANCE_FADE_PIXEL_DITHER>` 更快。
 
 .. rst-class:: classref-item-separator
 
@@ -1602,8 +1602,8 @@ Passes the stencil test when the reference value is greater than or equal to the
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_BaseMaterial3D_property_albedo_color:
 
@@ -1616,9 +1616,9 @@ Property Descriptions
 - |void| **set_albedo**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_albedo**\ (\ )
 
-The material's base color.
+材質的基礎顏色。
 
-\ **Note:** If :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` is ``true`` and a :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` texture is specified, :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>` will *not* modulate the detail texture. This can be used to color partial areas of a material by not specifying an albedo texture and using a transparent :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` texture instead.
+\ **注意：** 若 :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` 為 ``true`` 且已設定 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 紋理，則 :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>` 將 *不會* 調變該細節紋理。此技巧可透過不設定反照率紋理、改用帶透明度的 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 來僅為材質部分區域上色。
 
 .. rst-class:: classref-item-separator
 
@@ -1635,9 +1635,9 @@ The material's base color.
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture to multiply by :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>`. Used for basic texturing of objects.
+會與 :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>` 相乘的紋理，用於物件的基本貼圖。
 
-If the texture appears unexpectedly too dark or too bright, check :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+若紋理顯得異常過暗或過亮，請檢查 :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>` 設定。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ This should only be enabled when needed (typically when using a :ref:`ViewportTe
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-Enables multichannel signed distance field rendering shader. Use :ref:`msdf_pixel_range<class_BaseMaterial3D_property_msdf_pixel_range>` and :ref:`msdf_outline_size<class_BaseMaterial3D_property_msdf_outline_size>` to configure MSDF parameters.
+啟用多通道 Signed Distance Field 算繪著色器。可透過 :ref:`msdf_pixel_range<class_BaseMaterial3D_property_msdf_pixel_range>` 與 :ref:`msdf_outline_size<class_BaseMaterial3D_property_msdf_outline_size>` 調整 MSDF 參數。
 
 .. rst-class:: classref-item-separator
 
@@ -1690,7 +1690,7 @@ Enables multichannel signed distance field rendering shader. Use :ref:`msdf_pixe
 - |void| **set_alpha_antialiasing_edge**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_antialiasing_edge**\ (\ )
 
-Threshold at which antialiasing will be applied on the alpha channel.
+在 Alpha 通道上套用抗鋸齒的臨界值。
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ Threshold at which antialiasing will be applied on the alpha channel.
 - |void| **set_alpha_antialiasing**\ (\ value\: :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>`\ )
 - :ref:`AlphaAntiAliasing<enum_BaseMaterial3D_AlphaAntiAliasing>` **get_alpha_antialiasing**\ (\ )
 
-The type of alpha antialiasing to apply.
+要套用的 Alpha 抗鋸齒類型。
 
 .. rst-class:: classref-item-separator
 
@@ -1724,7 +1724,7 @@ The type of alpha antialiasing to apply.
 - |void| **set_alpha_hash_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_hash_scale**\ (\ )
 
-The hashing scale for Alpha Hash. Recommended values between ``0`` and ``2``.
+Alpha Hash 的雜湊比例，建議值介於 ``0`` 與 ``2`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -1741,7 +1741,7 @@ The hashing scale for Alpha Hash. Recommended values between ``0`` and ``2``.
 - |void| **set_alpha_scissor_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_alpha_scissor_threshold**\ (\ )
 
-Threshold at which the alpha scissor will discard values. Higher values will result in more pixels being discarded. If the material becomes too opaque at a distance, try increasing :ref:`alpha_scissor_threshold<class_BaseMaterial3D_property_alpha_scissor_threshold>`. If the material disappears at a distance, try decreasing :ref:`alpha_scissor_threshold<class_BaseMaterial3D_property_alpha_scissor_threshold>`.
+Alpha Scissor 剪裁丟棄像素的臨界值；值越高會丟棄越多像素。若遠處材質顯得過於不透明，嘗試調高 :ref:`alpha_scissor_threshold<class_BaseMaterial3D_property_alpha_scissor_threshold>`\ ；若遠處材質消失，嘗試調低此值。
 
 .. rst-class:: classref-item-separator
 
@@ -1758,7 +1758,7 @@ Threshold at which the alpha scissor will discard values. Higher values will res
 - |void| **set_anisotropy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_anisotropy**\ (\ )
 
-The strength of the anisotropy effect. This is multiplied by :ref:`anisotropy_flowmap<class_BaseMaterial3D_property_anisotropy_flowmap>`'s alpha channel if a texture is defined there and the texture contains an alpha channel.
+各向異性效果的強度。若 :ref:`anisotropy_flowmap<class_BaseMaterial3D_property_anisotropy_flowmap>` 為含 Alpha 的紋理，則會與其 Alpha 通道相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -1775,11 +1775,11 @@ The strength of the anisotropy effect. This is multiplied by :ref:`anisotropy_fl
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, anisotropy is enabled. Anisotropy changes the shape of the specular blob and aligns it to tangent space. This is useful for brushed aluminum and hair reflections.
+若為 ``true``\ ，啟用各向異性。各向異性會改變鏡面高光形狀並依切線空間對齊，適合用於拉絲金屬或頭髮反射。
 
-\ **Note:** Mesh tangents are needed for anisotropy to work. If the mesh does not contain tangents, the anisotropy effect will appear broken.
+\ **注意：** 網格必須包含切線資料，否則效果會破碎。
 
-\ **Note:** Material anisotropy should not to be confused with anisotropic texture filtering, which can be enabled by setting :ref:`texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>`.
+\ **注意：** 此處的各向異性與「各向異性紋理過濾」不同，後者可將 :ref:`texture_filter<class_BaseMaterial3D_property_texture_filter>` 設為 :ref:`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 來啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -1796,9 +1796,9 @@ If ``true``, anisotropy is enabled. Anisotropy changes the shape of the specular
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that offsets the tangent map for anisotropy calculations and optionally controls the anisotropy effect (if an alpha channel is present). The flowmap texture is expected to be a derivative map, with the red channel representing distortion on the X axis and green channel representing distortion on the Y axis. Values below 0.5 will result in negative distortion, whereas values above 0.5 will result in positive distortion.
+用於在各向異性計算中偏移切線，並可（透過 Alpha 通道）控制效果強度的方向圖。此紋理應為導數圖：紅通道代表 X 軸扭曲，綠通道代表 Y 軸扭曲；值低於 0.5 為負向扭曲，高於 0.5 為正向扭曲。
 
-If present, the texture's alpha channel will be used to multiply the strength of the :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>` effect. Fully opaque pixels will keep the anisotropy effect's original strength while fully transparent pixels will disable the anisotropy effect entirely. The flowmap texture's blue channel is ignored.
+若存在 Alpha 通道，會與 :ref:`anisotropy<class_BaseMaterial3D_property_anisotropy>` 強度相乘：完全不透明保留原始強度，完全透明則完全關閉各向異性。藍通道會被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -1815,7 +1815,7 @@ If present, the texture's alpha channel will be used to multiply the strength of
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, ambient occlusion is enabled. Ambient occlusion darkens areas based on the :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`.
+若為 ``true``\ ，啟用環境遮蔽，會依 :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>` 使區域變暗。
 
 .. rst-class:: classref-item-separator
 
@@ -1832,7 +1832,7 @@ If ``true``, ambient occlusion is enabled. Ambient occlusion darkens areas based
 - |void| **set_ao_light_affect**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ao_light_affect**\ (\ )
 
-Amount that ambient occlusion affects lighting from lights. If ``0``, ambient occlusion only affects ambient light. If ``1``, ambient occlusion affects lights just as much as it affects ambient light. This can be used to impact the strength of the ambient occlusion effect, but typically looks unrealistic.
+環境遮蔽對動態光源亮度的影響比例。為 ``0`` 時僅影響環境光；為 ``1`` 時對動態光源與環境光影響相同。雖可藉此加強 AO 效果，但通常會降低真實感。
 
 .. rst-class:: classref-item-separator
 
@@ -1849,7 +1849,7 @@ Amount that ambient occlusion affects lighting from lights. If ``0``, ambient oc
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, use ``UV2`` coordinates to look up from the :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`.
+若為 ``true``\ ，使用 ``UV2`` 座標讀取 :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1866,7 +1866,7 @@ If ``true``, use ``UV2`` coordinates to look up from the :ref:`ao_texture<class_
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that defines the amount of ambient occlusion for a given point on the object.
+定義物體各處環境遮蔽量的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -1883,7 +1883,7 @@ Texture that defines the amount of ambient occlusion for a given point on the ob
 - |void| **set_ao_texture_channel**\ (\ value\: :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>`\ )
 - :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **get_ao_texture_channel**\ (\ )
 
-Specifies the channel of the :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>` in which the ambient occlusion information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+指定 :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>` 中存放環境遮蔽資訊的色彩通道。當多種效果資訊共用同一張紋理時相當實用；例如將金屬度放紅通道、粗糙度放藍通道、把 AO 放綠通道，藉此減少紋理數量。
 
 .. rst-class:: classref-item-separator
 
@@ -1900,7 +1900,7 @@ Specifies the channel of the :ref:`ao_texture<class_BaseMaterial3D_property_ao_t
 - |void| **set_backlight**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_backlight**\ (\ )
 
-The color used by the backlight effect. Represents the light passing through an object.
+背光效果使用的顏色，代表穿透物體的光線色彩。
 
 .. rst-class:: classref-item-separator
 
@@ -1917,7 +1917,7 @@ The color used by the backlight effect. Represents the light passing through an 
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, the backlight effect is enabled. See also :ref:`subsurf_scatter_transmittance_enabled<class_BaseMaterial3D_property_subsurf_scatter_transmittance_enabled>`.
+若為 ``true``\ ，啟用背光效果。另見 :ref:`subsurf_scatter_transmittance_enabled<class_BaseMaterial3D_property_subsurf_scatter_transmittance_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1934,7 +1934,7 @@ If ``true``, the backlight effect is enabled. See also :ref:`subsurf_scatter_tra
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to control the backlight effect per-pixel. Added to :ref:`backlight<class_BaseMaterial3D_property_backlight>`.
+逐像素控制背光量的紋理，最終會與 :ref:`backlight<class_BaseMaterial3D_property_backlight>` 值相加。
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +1951,7 @@ Texture used to control the backlight effect per-pixel. Added to :ref:`backlight
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, the bent normal map is enabled. This allows for more accurate indirect lighting and specular occlusion.
+若為 ``true``\ ，啟用彎曲法線貼圖，可獲得更精確的間接光與鏡面遮蔽。
 
 .. rst-class:: classref-item-separator
 
@@ -1968,13 +1968,13 @@ If ``true``, the bent normal map is enabled. This allows for more accurate indir
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that specifies the average direction of incoming ambient light at a given pixel. The :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` only uses the red and green channels; the blue and alpha channels are ignored. The normal read from :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` is oriented around the surface normal provided by the :ref:`Mesh<class_Mesh>`.
+指定各像素環境光平均入射方向的紋理。\ :ref:`bent_normal_texture<class_BaseMaterial3D_property_bent_normal_texture>` 僅使用紅、綠通道；藍與 Alpha 通道會被忽略。讀取到的法線方向會以網格的表面法線為基準旋轉。
 
-\ **Note:** A bent normal map is different from a regular normal map. When baking a bent normal map make sure to use **a cosine distribution** for the bent normal map to work correctly.
+\ **注意：** 彎曲法線貼圖與一般法線貼圖不同，烘焙時需使用 **餘弦分布** 才能正確運作。
 
-\ **Note:** The mesh must have both normals and tangents defined in its vertex data. Otherwise, the shading produced by the bent normal map will not look correct. If creating geometry with :ref:`SurfaceTool<class_SurfaceTool>`, you can use :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` and :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` to automatically generate normals and tangents respectively.
+\ **注意：** 網格需同時具備法線與切線資料，否則算繪結果將異常。若使用 :ref:`SurfaceTool<class_SurfaceTool>` 建立幾何，可透過 :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` 與 :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` 自動產生。
 
-\ **Note:** Godot expects the bent normal map to use X+, Y+, and Z+ coordinates. See `this page <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ for a comparison of normal map coordinates expected by popular engines.
+\ **注意：** Godot 期望貼圖採用 X+、Y+、Z+ 座標系，詳見 `此頁 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ 了解各引擎差異。
 
 .. rst-class:: classref-item-separator
 
@@ -1991,7 +1991,7 @@ Texture that specifies the average direction of incoming ambient light at a give
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the shader will keep the scale set for the mesh. Otherwise, the scale is lost when billboarding. Only applies when :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` is not :ref:`BILLBOARD_DISABLED<class_BaseMaterial3D_constant_BILLBOARD_DISABLED>`.
+若為 ``true``\ ，公告板算繪時仍保留網格原有縮放；否則縮放會被忽略。僅於 :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>` 非 :ref:`BILLBOARD_DISABLED<class_BaseMaterial3D_constant_BILLBOARD_DISABLED>` 時適用。
 
 .. rst-class:: classref-item-separator
 
@@ -2008,9 +2008,9 @@ If ``true``, the shader will keep the scale set for the mesh. Otherwise, the sca
 - |void| **set_billboard_mode**\ (\ value\: :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>`\ )
 - :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **get_billboard_mode**\ (\ )
 
-Controls how the object faces the camera.
+控制物件面向相機的方式。
 
-\ **Note:** Billboard mode is not suitable for VR because the left-right vector of the camera is not horizontal when the screen is attached to your head instead of on the table. See `GitHub issue #41567 <https://github.com/godotengine/godot/issues/41567>`__ for details.
+\ **注意：** 公告板模式不適用於 VR，因為頭戴裝置時相機的左右向量並非水平。詳情見 `GitHub Issue #41567 <https://github.com/godotengine/godot/issues/41567>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2027,9 +2027,9 @@ Controls how the object faces the camera.
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>`\ )
 - :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **get_blend_mode**\ (\ )
 
-The material's blend mode.
+材質的混合模式。
 
-\ **Note:** Values other than ``Mix`` force the object into the transparent pipeline.
+\ **注意：** 除 ``Mix`` 以外的模式都會將物件強制進入透明算繪流程。
 
 .. rst-class:: classref-item-separator
 
@@ -2046,7 +2046,7 @@ The material's blend mode.
 - |void| **set_clearcoat**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clearcoat**\ (\ )
 
-Sets the strength of the clearcoat effect. Setting to ``0`` looks the same as disabling the clearcoat effect.
+設定清漆層的強度；設為 ``0`` 等同停用清漆效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2063,9 +2063,9 @@ Sets the strength of the clearcoat effect. Setting to ``0`` looks the same as di
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, clearcoat rendering is enabled. Adds a secondary transparent pass to the lighting calculation resulting in an added specular blob. This makes materials appear as if they have a clear layer on them that can be either glossy or rough.
+若為 ``true``\ ，啟用清漆算繪，於照明中加入透明次通道產生額外高光，使材質看起來像有一層光滑或霧面的透明塗層。
 
-\ **Note:** Clearcoat rendering is not visible if the material's :ref:`shading_mode<class_BaseMaterial3D_property_shading_mode>` is :ref:`SHADING_MODE_UNSHADED<class_BaseMaterial3D_constant_SHADING_MODE_UNSHADED>`.
+\ **注意：** 若材質的 :ref:`shading_mode<class_BaseMaterial3D_property_shading_mode>` 為 :ref:`SHADING_MODE_UNSHADED<class_BaseMaterial3D_constant_SHADING_MODE_UNSHADED>`\ ，則不會顯示清漆效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2082,7 +2082,7 @@ If ``true``, clearcoat rendering is enabled. Adds a secondary transparent pass t
 - |void| **set_clearcoat_roughness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clearcoat_roughness**\ (\ )
 
-Sets the roughness of the clearcoat pass. A higher value results in a rougher clearcoat while a lower value results in a smoother clearcoat.
+設定清漆層的粗糙度；值越高越霧面，越低越光滑。
 
 .. rst-class:: classref-item-separator
 
@@ -2099,7 +2099,7 @@ Sets the roughness of the clearcoat pass. A higher value results in a rougher cl
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that defines the strength of the clearcoat effect and the glossiness of the clearcoat. Strength is specified in the red channel while glossiness is specified in the green channel.
+定義清漆強度與光澤度的紋理；紅通道為強度，綠通道為光澤度。
 
 .. rst-class:: classref-item-separator
 
@@ -2116,7 +2116,7 @@ Texture that defines the strength of the clearcoat effect and the glossiness of 
 - |void| **set_cull_mode**\ (\ value\: :ref:`CullMode<enum_BaseMaterial3D_CullMode>`\ )
 - :ref:`CullMode<enum_BaseMaterial3D_CullMode>` **get_cull_mode**\ (\ )
 
-Determines which side of the triangle to cull depending on whether the triangle faces towards or away from the camera.
+決定要依三角形面向相機與否來剔除哪一側。
 
 .. rst-class:: classref-item-separator
 
@@ -2133,7 +2133,7 @@ Determines which side of the triangle to cull depending on whether the triangle 
 - |void| **set_depth_draw_mode**\ (\ value\: :ref:`DepthDrawMode<enum_BaseMaterial3D_DepthDrawMode>`\ )
 - :ref:`DepthDrawMode<enum_BaseMaterial3D_DepthDrawMode>` **get_depth_draw_mode**\ (\ )
 
-Determines when depth rendering takes place. See also :ref:`transparency<class_BaseMaterial3D_property_transparency>`.
+決定何時進行深度寫入，另見 :ref:`transparency<class_BaseMaterial3D_property_transparency>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2150,7 +2150,7 @@ Determines when depth rendering takes place. See also :ref:`transparency<class_B
 - |void| **set_depth_test**\ (\ value\: :ref:`DepthTest<enum_BaseMaterial3D_DepthTest>`\ )
 - :ref:`DepthTest<enum_BaseMaterial3D_DepthTest>` **get_depth_test**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 Determines which comparison operator is used when testing depth.
 
@@ -2171,9 +2171,9 @@ Determines which comparison operator is used when testing depth.
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that specifies the color of the detail overlay. :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>`'s alpha channel is used as a mask, even when the material is opaque. To use a dedicated texture as a mask, see :ref:`detail_mask<class_BaseMaterial3D_property_detail_mask>`.
+指定細節覆蓋層顏色的紋理。即使材質為不透明，\ :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 的 Alpha 通道仍作為遮罩；若需使用獨立紋理當遮罩，請參考 :ref:`detail_mask<class_BaseMaterial3D_property_detail_mask>`\ 。
 
-\ **Note:** :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` is *not* modulated by :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>`.
+\ **注意：** :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` *不會* 受到 :ref:`albedo_color<class_BaseMaterial3D_property_albedo_color>` 影響。
 
 .. rst-class:: classref-item-separator
 
@@ -2190,7 +2190,7 @@ Texture that specifies the color of the detail overlay. :ref:`detail_albedo<clas
 - |void| **set_detail_blend_mode**\ (\ value\: :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>`\ )
 - :ref:`BlendMode<enum_BaseMaterial3D_BlendMode>` **get_detail_blend_mode**\ (\ )
 
-Specifies how the :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` should blend with the current ``ALBEDO``.
+指定 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 與現有 ``ALBEDO`` 的混合方式。
 
 .. rst-class:: classref-item-separator
 
@@ -2207,7 +2207,7 @@ Specifies how the :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albed
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, enables the detail overlay. Detail is a second texture that gets mixed over the surface of the object based on :ref:`detail_mask<class_BaseMaterial3D_property_detail_mask>` and :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>`'s alpha channel. This can be used to add variation to objects, or to blend between two different albedo/normal textures.
+若為 ``true``\ ，啟用細節覆蓋。系統會依 :ref:`detail_mask<class_BaseMaterial3D_property_detail_mask>` 與 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` Alpha 通道，在物件表面混合第二張紋理，可用於增加變化或在兩組反照率／法線間平滑過渡。
 
 .. rst-class:: classref-item-separator
 
@@ -2224,7 +2224,7 @@ If ``true``, enables the detail overlay. Detail is a second texture that gets mi
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to specify how the detail textures get blended with the base textures. :ref:`detail_mask<class_BaseMaterial3D_property_detail_mask>` can be used together with :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>`'s alpha channel (if any).
+指定細節紋理與基礎紋理混合方式的紋理。\ :ref:`detail_mask<class_BaseMaterial3D_property_detail_mask>` 可與 :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 的 Alpha 通道一併使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2241,9 +2241,9 @@ Texture used to specify how the detail textures get blended with the base textur
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that specifies the per-pixel normal of the detail overlay. The :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` texture only uses the red and green channels; the blue and alpha channels are ignored. The normal read from :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` is oriented around the surface normal provided by the :ref:`Mesh<class_Mesh>`.
+指定細節覆蓋逐像素法線的紋理。\ :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` 僅使用紅、綠通道；藍與 Alpha 通道會被忽略。讀取到的法線方向會以網格表面法線為基準旋轉。
 
-\ **Note:** Godot expects the normal map to use X+, Y+, and Z+ coordinates. See `this page <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ for a comparison of normal map coordinates expected by popular engines.
+\ **注意：** Godot 期望使用 X+、Y+、Z+ 座標系，可參考 `此頁 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ 了解各引擎差異。
 
 .. rst-class:: classref-item-separator
 
@@ -2260,7 +2260,7 @@ Texture that specifies the per-pixel normal of the detail overlay. The :ref:`det
 - |void| **set_detail_uv**\ (\ value\: :ref:`DetailUV<enum_BaseMaterial3D_DetailUV>`\ )
 - :ref:`DetailUV<enum_BaseMaterial3D_DetailUV>` **get_detail_uv**\ (\ )
 
-Specifies whether to use ``UV`` or ``UV2`` for the detail layer.
+指定細節層使用 ``UV`` 或 ``UV2``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2277,7 +2277,7 @@ Specifies whether to use ``UV`` or ``UV2`` for the detail layer.
 - |void| **set_diffuse_mode**\ (\ value\: :ref:`DiffuseMode<enum_BaseMaterial3D_DiffuseMode>`\ )
 - :ref:`DiffuseMode<enum_BaseMaterial3D_DiffuseMode>` **get_diffuse_mode**\ (\ )
 
-The algorithm used for diffuse light scattering.
+用於漫反射光散射的演算法。
 
 .. rst-class:: classref-item-separator
 
@@ -2294,7 +2294,7 @@ The algorithm used for diffuse light scattering.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the object receives no ambient light.
+若為 ``true``\ ，物件將不受環境光影響。
 
 .. rst-class:: classref-item-separator
 
@@ -2311,7 +2311,7 @@ If ``true``, the object receives no ambient light.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the object will not be affected by fog (neither volumetric nor depth fog). This is useful for unshaded or transparent materials (e.g. particles), which without this setting will be affected even if fully transparent.
+若為 ``true``\ ，物件不受任何霧效（體積霧或深度霧）影響。對於無陰影或全透明材質（例如粒子）特別實用，否則即便完全透明仍會被霧影響。
 
 .. rst-class:: classref-item-separator
 
@@ -2328,7 +2328,7 @@ If ``true``, the object will not be affected by fog (neither volumetric nor dept
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the object receives no shadow that would otherwise be cast onto it.
+若為 ``true``\ ，物件不會接收落在其上的陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -2345,7 +2345,7 @@ If ``true``, the object receives no shadow that would otherwise be cast onto it.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, disables specular occlusion even if :ref:`ProjectSettings.rendering/reflections/specular_occlusion/enabled<class_ProjectSettings_property_rendering/reflections/specular_occlusion/enabled>` is ``false``.
+若為 ``true``\ ，即使全域設定已停用，也依然關閉此材質的鏡面遮蔽。
 
 .. rst-class:: classref-item-separator
 
@@ -2362,9 +2362,9 @@ If ``true``, disables specular occlusion even if :ref:`ProjectSettings.rendering
 - |void| **set_distance_fade_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_max_distance**\ (\ )
 
-Distance at which the object appears fully opaque.
+物件呈現完全不透明時的距離。
 
-\ **Note:** If :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` is less than :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`, the behavior will be reversed. The object will start to fade away at :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` and will fully disappear once it reaches :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`.
+\ **注意：** 若 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 小於 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`\ ，行為將反轉：物件會在 max_distance 開始淡出，並於到達 min_distance 時完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -2381,9 +2381,9 @@ Distance at which the object appears fully opaque.
 - |void| **set_distance_fade_min_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_min_distance**\ (\ )
 
-Distance at which the object starts to become visible. If the object is less than this distance away, it will be invisible.
+物件開始變得可見的距離；若距離小於此值，物件將不可見。
 
-\ **Note:** If :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` is greater than :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>`, the behavior will be reversed. The object will start to fade away at :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` and will fully disappear once it reaches :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`.
+\ **注意：** 若 min_distance 大於 max_distance，行為將反轉：物件會在 max_distance 開始淡出，並於到達 min_distance 時完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -2400,7 +2400,7 @@ Distance at which the object starts to become visible. If the object is less tha
 - |void| **set_distance_fade**\ (\ value\: :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>`\ )
 - :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>` **get_distance_fade**\ (\ )
 
-Specifies which type of fade to use. Can be any of the :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>`\ s.
+指定淡入淡出的類型，可為任何 :ref:`DistanceFadeMode<enum_BaseMaterial3D_DistanceFadeMode>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -2417,7 +2417,7 @@ Specifies which type of fade to use. Can be any of the :ref:`DistanceFadeMode<en
 - |void| **set_emission**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_emission**\ (\ )
 
-The emitted light's color. See :ref:`emission_enabled<class_BaseMaterial3D_property_emission_enabled>`.
+發光色彩，詳見 :ref:`emission_enabled<class_BaseMaterial3D_property_emission_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2434,7 +2434,7 @@ The emitted light's color. See :ref:`emission_enabled<class_BaseMaterial3D_prope
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, the body emits light. Emitting light makes the object appear brighter. The object can also cast light on other objects if a :ref:`VoxelGI<class_VoxelGI>`, SDFGI, or :ref:`LightmapGI<class_LightmapGI>` is used and this object is used in baked lighting.
+若為 ``true``\ ，物件會自體發光，使其看起來更明亮。若場景使用 :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI 或 :ref:`LightmapGI<class_LightmapGI>` 且此物件參與光照烘焙，發出的光也會影響其他物件。
 
 .. rst-class:: classref-item-separator
 
@@ -2451,7 +2451,7 @@ If ``true``, the body emits light. Emitting light makes the object appear bright
 - |void| **set_emission_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_energy_multiplier**\ (\ )
 
-Multiplier for emitted light. See :ref:`emission_enabled<class_BaseMaterial3D_property_emission_enabled>`.
+發光亮度倍率，詳見 :ref:`emission_enabled<class_BaseMaterial3D_property_emission_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2468,7 +2468,7 @@ Multiplier for emitted light. See :ref:`emission_enabled<class_BaseMaterial3D_pr
 - |void| **set_emission_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_intensity**\ (\ )
 
-Luminance of emitted light, measured in nits (candela per square meter). Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled. The default is roughly equivalent to an indoor lightbulb.
+發光亮度（nits，cd/m²）。僅在 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 啟用時可用；預設值約等同室內燈泡。
 
 .. rst-class:: classref-item-separator
 
@@ -2485,7 +2485,7 @@ Luminance of emitted light, measured in nits (candela per square meter). Only av
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-Use ``UV2`` to read from the :ref:`emission_texture<class_BaseMaterial3D_property_emission_texture>`.
+使用 ``UV2`` 座標讀取 :ref:`emission_texture<class_BaseMaterial3D_property_emission_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2502,7 +2502,7 @@ Use ``UV2`` to read from the :ref:`emission_texture<class_BaseMaterial3D_propert
 - |void| **set_emission_operator**\ (\ value\: :ref:`EmissionOperator<enum_BaseMaterial3D_EmissionOperator>`\ )
 - :ref:`EmissionOperator<enum_BaseMaterial3D_EmissionOperator>` **get_emission_operator**\ (\ )
 
-Sets how :ref:`emission<class_BaseMaterial3D_property_emission>` interacts with :ref:`emission_texture<class_BaseMaterial3D_property_emission_texture>`. Can either add or multiply.
+設定 :ref:`emission<class_BaseMaterial3D_property_emission>` 與 :ref:`emission_texture<class_BaseMaterial3D_property_emission_texture>` 的組合方式，為加法或乘法。
 
 .. rst-class:: classref-item-separator
 
@@ -2519,7 +2519,7 @@ Sets how :ref:`emission<class_BaseMaterial3D_property_emission>` interacts with 
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that specifies how much surface emits light at a given point.
+指定各像素發光強度的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -2536,7 +2536,7 @@ Texture that specifies how much surface emits light at a given point.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the object is rendered at the same size regardless of distance. The object's size on screen is the same as if the camera was ``1.0`` units away from the object's origin, regardless of the actual distance from the camera. The :ref:`Camera3D<class_Camera3D>`'s field of view (or :ref:`Camera3D.size<class_Camera3D_property_size>` when in orthogonal/frustum mode) still affects the size the object is drawn at.
+若為 ``true``\ ，無論與相機距離多遠，物件都以固定大小呈現；效果相當於相機永遠距離物件 1.0 單位。但 :ref:`Camera3D<class_Camera3D>` 的視野角（或正交／斜投模式下的 :ref:`Camera3D.size<class_Camera3D_property_size>`\ ）仍會影響螢幕大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2553,9 +2553,9 @@ If ``true``, the object is rendered at the same size regardless of distance. The
 - |void| **set_fov_override**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov_override**\ (\ )
 
-Overrides the :ref:`Camera3D<class_Camera3D>`'s field of view angle (in degrees).
+覆寫 :ref:`Camera3D<class_Camera3D>` 的視野角度（度）。
 
-\ **Note:** This behaves as if the field of view is set on a :ref:`Camera3D<class_Camera3D>` with :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` set to :ref:`Camera3D.KEEP_HEIGHT<class_Camera3D_constant_KEEP_HEIGHT>`. Additionally, it may not look correct on a non-perspective camera where the field of view setting is ignored.
+\ **注意：** 行為類似於於一台 :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` 設為 :ref:`Camera3D.KEEP_HEIGHT<class_Camera3D_constant_KEEP_HEIGHT>` 的相機上設定 FOV。若使用非透視相機（FOV 無效）可能無法正確顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -2572,9 +2572,9 @@ Overrides the :ref:`Camera3D<class_Camera3D>`'s field of view angle (in degrees)
 - |void| **set_grow_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_grow_enabled**\ (\ )
 
-If ``true``, enables the vertex grow setting. This can be used to create mesh-based outlines using a second material pass and its :ref:`cull_mode<class_BaseMaterial3D_property_cull_mode>` set to :ref:`CULL_FRONT<class_BaseMaterial3D_constant_CULL_FRONT>`. See also :ref:`grow_amount<class_BaseMaterial3D_property_grow_amount>`.
+若為 ``true``\ ，啟用頂點擴張，可配合第二個材質分段並將 :ref:`cull_mode<class_BaseMaterial3D_property_cull_mode>` 設為 :ref:`CULL_FRONT<class_BaseMaterial3D_constant_CULL_FRONT>` 來產生網格外框。另見 :ref:`grow_amount<class_BaseMaterial3D_property_grow_amount>`\ 。
 
-\ **Note:** Vertex growth cannot create new vertices, which means that visible gaps may occur in sharp corners. This can be alleviated by designing the mesh to use smooth normals exclusively using `face weighted normals <http://wiki.polycount.com/wiki/Face_weighted_normals>`__ in the 3D authoring software. In this case, grow will be able to join every outline together, just like in the original mesh.
+\ **注意：** 擴張不會新增頂點，銳角處可能出現縫隙。可於 DCC 軟體使用 `面權重法線 <http://wiki.polycount.com/wiki/Face_weighted_normals>`__ 並保持光滑法線以減少破口，讓擴張後的外框能完整閉合。
 
 .. rst-class:: classref-item-separator
 
@@ -2591,7 +2591,7 @@ If ``true``, enables the vertex grow setting. This can be used to create mesh-ba
 - |void| **set_grow**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_grow**\ (\ )
 
-Grows object vertices in the direction of their normals. Only effective if :ref:`grow<class_BaseMaterial3D_property_grow>` is ``true``.
+沿頂點法線方向擴張網格；僅當 :ref:`grow<class_BaseMaterial3D_property_grow>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -2608,7 +2608,7 @@ Grows object vertices in the direction of their normals. Only effective if :ref:
 - |void| **set_heightmap_deep_parallax**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_heightmap_deep_parallax_enabled**\ (\ )
 
-If ``true``, uses parallax occlusion mapping to represent depth in the material instead of simple offset mapping (see :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`). This results in a more convincing depth effect, but is much more expensive on the GPU. Only enable this on materials where it makes a significant visual difference.
+若為 ``true``\ ，使用視差遮蔽貼圖取代單純的偏移貼圖（見 :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`\ ），以呈現更真實的深度效果，但 GPU 負擔也更高。僅在確實需要時啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -2625,9 +2625,9 @@ If ``true``, uses parallax occlusion mapping to represent depth in the material 
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, height mapping is enabled (also called "parallax mapping" or "depth mapping"). See also :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`. Height mapping is a demanding feature on the GPU, so it should only be used on materials where it makes a significant visual difference.
+若為 ``true``\ ，啟用高度貼圖（亦稱視差貼圖或深度貼圖），另見 :ref:`normal_enabled<class_BaseMaterial3D_property_normal_enabled>`\ 。此功能對 GPU 耗費較高，僅應用於視覺差異顯著的材質。
 
-\ **Note:** Height mapping is not supported if triplanar mapping is used on the same material. The value of :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>` will be ignored if :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` is enabled.
+\ **注意：** 若同一材質啟用了三平面貼圖（\ :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>`\ ），則不支援高度貼圖，\ :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>` 會被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2644,7 +2644,7 @@ If ``true``, height mapping is enabled (also called "parallax mapping" or "depth
 - |void| **set_heightmap_deep_parallax_flip_binormal**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_heightmap_deep_parallax_flip_binormal**\ (\ )
 
-If ``true``, flips the mesh's binormal vectors when interpreting the height map. If the heightmap effect looks strange when the camera moves (even with a reasonable :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`), try setting this to ``true``.
+若為 ``true``\ ，解析高度貼圖時會翻轉網格的副法線。若相機移動時高度效果異常（即便已調整 :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`\ ），可嘗試啟用此選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2661,7 +2661,7 @@ If ``true``, flips the mesh's binormal vectors when interpreting the height map.
 - |void| **set_heightmap_deep_parallax_flip_tangent**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_heightmap_deep_parallax_flip_tangent**\ (\ )
 
-If ``true``, flips the mesh's tangent vectors when interpreting the height map. If the heightmap effect looks strange when the camera moves (even with a reasonable :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`), try setting this to ``true``.
+若為 ``true``\ ，解析高度貼圖時會翻轉網格切線。若相機移動時高度效果異常（即便已調整 :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`\ ），可嘗試啟用此選項。
 
 .. rst-class:: classref-item-separator
 
@@ -2678,9 +2678,9 @@ If ``true``, flips the mesh's tangent vectors when interpreting the height map. 
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, interprets the height map texture as a depth map, with brighter values appearing to be "lower" in altitude compared to darker values.
+若設為 ``true``\ ，則把高度圖紋理視為深度圖，亮部會顯得「較低」，暗部則顯得較高。
 
-This can be enabled for compatibility with some materials authored for Godot 3.x. This is not necessary if the Invert import option was used to invert the depth map in Godot 3.x, in which case :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` should remain ``false``.
+此選項用於相容某些為 Godot 3.x 製作的材質；若在 Godot 3.x 導入時已使用「Invert」反轉深度圖，則無需啟用，並應讓 :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` 維持 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2697,9 +2697,9 @@ This can be enabled for compatibility with some materials authored for Godot 3.x
 - |void| **set_heightmap_deep_parallax_max_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_heightmap_deep_parallax_max_layers**\ (\ )
 
-The number of layers to use for parallax occlusion mapping when the camera is up close to the material. Higher values result in a more convincing depth effect, especially in materials that have steep height changes. Higher values have a significant cost on the GPU, so it should only be increased on materials where it makes a significant visual difference.
+當相機靠近材質時，視差遮蔽貼圖所使用的層數。數值越高，深度效果越真實，特別是高度差劇烈的材質；但也會顯著提高 GPU 成本，因此僅在確實有需要時再行提高。
 
-\ **Note:** Only effective if :ref:`heightmap_deep_parallax<class_BaseMaterial3D_property_heightmap_deep_parallax>` is ``true``.
+\ **注意：**\ 僅於 :ref:`heightmap_deep_parallax<class_BaseMaterial3D_property_heightmap_deep_parallax>` 為 ``true`` 時生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2716,9 +2716,9 @@ The number of layers to use for parallax occlusion mapping when the camera is up
 - |void| **set_heightmap_deep_parallax_min_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_heightmap_deep_parallax_min_layers**\ (\ )
 
-The number of layers to use for parallax occlusion mapping when the camera is far away from the material. Higher values result in a more convincing depth effect, especially in materials that have steep height changes. Higher values have a significant cost on the GPU, so it should only be increased on materials where it makes a significant visual difference.
+當相機遠離材質時，視差遮蔽貼圖所使用的層數。數值越高，深度效果越真實，特別是高度差劇烈的材質；但也會顯著提高 GPU 成本，因此僅在確實有需要時再行提高。
 
-\ **Note:** Only effective if :ref:`heightmap_deep_parallax<class_BaseMaterial3D_property_heightmap_deep_parallax>` is ``true``.
+\ **注意：**\ 僅於 :ref:`heightmap_deep_parallax<class_BaseMaterial3D_property_heightmap_deep_parallax>` 為 ``true`` 時生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2735,9 +2735,9 @@ The number of layers to use for parallax occlusion mapping when the camera is fa
 - |void| **set_heightmap_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_heightmap_scale**\ (\ )
 
-The heightmap scale to use for the parallax effect (see :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`). The default value is tuned so that the highest point (value = 255) appears to be 5 cm higher than the lowest point (value = 0). Higher values result in a deeper appearance, but may result in artifacts appearing when looking at the material from oblique angles, especially when the camera moves. Negative values can be used to invert the parallax effect, but this is different from inverting the texture using :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` as the material will also appear to be "closer" to the camera. In most cases, :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` should be kept to a positive value.
+控制視差效果強度的高度圖縮放（參見 :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`\ ）。預設值使最高點（255）看起來比最低點（0）高 5 cm。提高此值可加深立體感，但在斜視或移動鏡頭時可能產生偽影。設定為負值可反轉視差方向，這與 :ref:`heightmap_flip_texture<class_BaseMaterial3D_property_heightmap_flip_texture>` 的紋理反轉不同──材質同時會顯得「更靠近」鏡頭。一般建議保持為正值。
 
-\ **Note:** If the height map effect looks strange regardless of this value, try adjusting :ref:`heightmap_flip_binormal<class_BaseMaterial3D_property_heightmap_flip_binormal>` and :ref:`heightmap_flip_tangent<class_BaseMaterial3D_property_heightmap_flip_tangent>`. See also :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` for recommendations on authoring heightmap textures, as the way the heightmap texture is authored affects how :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` behaves.
+\ **注意：**\ 如高度圖效果異常，可嘗試調整 :ref:`heightmap_flip_binormal<class_BaseMaterial3D_property_heightmap_flip_binormal>` 與 :ref:`heightmap_flip_tangent<class_BaseMaterial3D_property_heightmap_flip_tangent>`\ 。另見 :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` 以了解製作高度圖的建議，因為製圖方式亦會影響 :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2754,11 +2754,11 @@ The heightmap scale to use for the parallax effect (see :ref:`heightmap_enabled<
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-The texture to use as a height map. See also :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`.
+指定高度圖紋理；亦參見 :ref:`heightmap_enabled<class_BaseMaterial3D_property_heightmap_enabled>`\ 。
 
-For best results, the texture should be normalized (with :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>` reduced to compensate). In `GIMP <https://gimp.org>`__, this can be done using **Colors > Auto > Equalize**. If the texture only uses a small part of its available range, the parallax effect may look strange, especially when the camera moves.
+為獲得最佳結果，應先將紋理正規化（並相應降低 :ref:`heightmap_scale<class_BaseMaterial3D_property_heightmap_scale>`\ ）。在 `GIMP <https://gimp.org>`__ 中可透過 **Colors > Auto > Equalize** 完成。若紋理只使用到亮度範圍的一小部分，鏡頭移動時視差效果可能異常。
 
-\ **Note:** To reduce memory usage and improve loading times, you may be able to use a lower-resolution heightmap texture as most heightmaps are only comprised of low-frequency data.
+\ **注意：**\ 高度圖多為低頻資訊，可使用較低解析度以減少記憶體占用並加速載入。
 
 .. rst-class:: classref-item-separator
 
@@ -2775,7 +2775,7 @@ For best results, the texture should be normalized (with :ref:`heightmap_scale<c
 - |void| **set_metallic**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_metallic**\ (\ )
 
-A high value makes the material appear more like a metal. Non-metals use their albedo as the diffuse color and add diffuse to the specular reflection. With non-metals, the reflection appears on top of the albedo color. Metals use their albedo as a multiplier to the specular reflection and set the diffuse color to black resulting in a tinted reflection. Materials work better when fully metal or fully non-metal, values between ``0`` and ``1`` should only be used for blending between metal and non-metal sections. To alter the amount of reflection use :ref:`roughness<class_BaseMaterial3D_property_roughness>`.
+數值越高，材質越像金屬。非金屬將反照率做為漫反射顏色，並在鏡面反射中加入漫反射，因此反射會覆蓋於反照率之上；金屬則以反照率乘上鏡面反射，並把漫反射設為黑色，形成帶色反射。建議材質設定為純金屬或純非金屬；介於 ``0`` 與 ``1`` 的值僅用於漸層過渡。要調整反射強度請改變 :ref:`roughness<class_BaseMaterial3D_property_roughness>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2792,9 +2792,9 @@ A high value makes the material appear more like a metal. Non-metals use their a
 - |void| **set_specular**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_specular**\ (\ )
 
-Adjusts the strength of specular reflections. Specular reflections are composed of scene reflections and the specular lobe which is the bright spot that is reflected from light sources. When set to ``0.0``, no specular reflections will be visible. This differs from the :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` as :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` only applies to the specular lobe from the light source.
+調整鏡面反射強度。鏡面反射由場景反射與來自光源的鏡面亮斑組成；若設為 ``0.0`` 則完全不顯示鏡面反射。這與 :ref:`SPECULAR_DISABLED<class_BaseMaterial3D_constant_SPECULAR_DISABLED>` 模式不同，後者僅停用光源亮斑。
 
-\ **Note:** Unlike :ref:`metallic<class_BaseMaterial3D_property_metallic>`, this is not energy-conserving, so it should be left at ``0.5`` in most cases. See also :ref:`roughness<class_BaseMaterial3D_property_roughness>`.
+\ **注意：**\ 與 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 不同，此值不遵守能量守恆，通常建議保持 ``0.5``\ 。另見 :ref:`roughness<class_BaseMaterial3D_property_roughness>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2811,7 +2811,7 @@ Adjusts the strength of specular reflections. Specular reflections are composed 
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to specify metallic for an object. This is multiplied by :ref:`metallic<class_BaseMaterial3D_property_metallic>`.
+指定物件金屬度的紋理，會與 :ref:`metallic<class_BaseMaterial3D_property_metallic>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -2828,7 +2828,7 @@ Texture used to specify metallic for an object. This is multiplied by :ref:`meta
 - |void| **set_metallic_texture_channel**\ (\ value\: :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>`\ )
 - :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **get_metallic_texture_channel**\ (\ )
 
-Specifies the channel of the :ref:`metallic_texture<class_BaseMaterial3D_property_metallic_texture>` in which the metallic information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+設定金屬度資訊位於 :ref:`metallic_texture<class_BaseMaterial3D_property_metallic_texture>` 的哪個通道。當多種貼圖資訊合併於單張紋理時非常有用，例如：紅色通道放金屬度、藍色放粗糙度、綠色放環境遮蔽，即可減少貼圖數量。
 
 .. rst-class:: classref-item-separator
 
@@ -2845,7 +2845,7 @@ Specifies the channel of the :ref:`metallic_texture<class_BaseMaterial3D_propert
 - |void| **set_msdf_outline_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_msdf_outline_size**\ (\ )
 
-The width of the shape outline.
+形狀輪廓寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -2862,7 +2862,7 @@ The width of the shape outline.
 - |void| **set_msdf_pixel_range**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_msdf_pixel_range**\ (\ )
 
-The width of the range around the shape between the minimum and maximum representable signed distance.
+形狀周圍最小至最大可表距離範圍的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -2879,7 +2879,7 @@ The width of the range around the shape between the minimum and maximum represen
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, depth testing is disabled and the object will be drawn in render order.
+若設為 ``true``\ ，將停用深度測試，物件依繪製順序顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -2896,7 +2896,7 @@ If ``true``, depth testing is disabled and the object will be drawn in render or
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, normal mapping is enabled. This has a slight performance cost, especially on mobile GPUs.
+若設為 ``true``\ ，啟用法線貼圖；在行動 GPU 上會稍降效能。
 
 .. rst-class:: classref-item-separator
 
@@ -2913,7 +2913,7 @@ If ``true``, normal mapping is enabled. This has a slight performance cost, espe
 - |void| **set_normal_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_normal_scale**\ (\ )
 
-The strength of the normal map's effect.
+法線貼圖強度。
 
 .. rst-class:: classref-item-separator
 
@@ -2930,13 +2930,13 @@ The strength of the normal map's effect.
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to specify the normal at a given pixel. The :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` only uses the red and green channels; the blue and alpha channels are ignored. The normal read from :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` is oriented around the surface normal provided by the :ref:`Mesh<class_Mesh>`.
+指定每個圖元法線的紋理。\ :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>` 僅使用紅、綠通道；藍色與 Alpha 會被忽略。讀取到的法線以 :ref:`Mesh<class_Mesh>` 提供的表面法線為基準旋轉。
 
-\ **Note:** The mesh must have both normals and tangents defined in its vertex data. Otherwise, the normal map won't render correctly and will only appear to darken the whole surface. If creating geometry with :ref:`SurfaceTool<class_SurfaceTool>`, you can use :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` and :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` to automatically generate normals and tangents respectively.
+\ **注意：**\ 網格頂點必須同時具有法線與切線，否則法線貼圖只會使表面變暗而無法正常顯示。若使用 :ref:`SurfaceTool<class_SurfaceTool>` 產生幾何，可呼叫 :ref:`SurfaceTool.generate_normals()<class_SurfaceTool_method_generate_normals>` 與 :ref:`SurfaceTool.generate_tangents()<class_SurfaceTool_method_generate_tangents>` 自動生成。
 
-\ **Note:** Godot expects the normal map to use X+, Y+, and Z+ coordinates. See `this page <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ for a comparison of normal map coordinates expected by popular engines.
+\ **注意：** Godot 期望使用 X+、Y+、Z+ 座標系，可參考 `此頁 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ 了解各引擎差異。
 
-\ **Note:** If :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` is ``true``, the :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` texture is drawn *below* the :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>`. To display a normal map *above* the :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` texture, use :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>` instead.
+\ **注意：**\ 若 :ref:`detail_enabled<class_BaseMaterial3D_property_detail_enabled>` 為 ``true``\ ，\ :ref:`detail_albedo<class_BaseMaterial3D_property_detail_albedo>` 會繪製在 :ref:`normal_texture<class_BaseMaterial3D_property_normal_texture>`\ *之下*\ ；如需相反效果，請改用 :ref:`detail_normal<class_BaseMaterial3D_property_detail_normal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2953,7 +2953,7 @@ Texture used to specify the normal at a given pixel. The :ref:`normal_texture<cl
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-The Occlusion/Roughness/Metallic texture to use. This is a more efficient replacement of :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`, :ref:`roughness_texture<class_BaseMaterial3D_property_roughness_texture>` and :ref:`metallic_texture<class_BaseMaterial3D_property_metallic_texture>` in :ref:`ORMMaterial3D<class_ORMMaterial3D>`. Ambient occlusion is stored in the red channel. Roughness map is stored in the green channel. Metallic map is stored in the blue channel. The alpha channel is ignored.
+指定遮蔽/粗糙度/金屬度（ORM）紋理，為 :ref:`ORMMaterial3D<class_ORMMaterial3D>` 中 :ref:`ao_texture<class_BaseMaterial3D_property_ao_texture>`\ 、\ :ref:`roughness_texture<class_BaseMaterial3D_property_roughness_texture>` 與 :ref:`metallic_texture<class_BaseMaterial3D_property_metallic_texture>` 的更有效率替代方案：紅通道存環境遮蔽、綠通道存粗糙度、藍通道存金屬度，Alpha 通道忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2970,7 +2970,7 @@ The Occlusion/Roughness/Metallic texture to use. This is a more efficient replac
 - |void| **set_particles_anim_h_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_h_frames**\ (\ )
 
-The number of horizontal frames in the particle sprite sheet. Only enabled when using :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`. See :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`.
+粒子圖集的水平影格數；僅於 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 模式下可用。
 
 .. rst-class:: classref-item-separator
 
@@ -2987,7 +2987,7 @@ The number of horizontal frames in the particle sprite sheet. Only enabled when 
 - |void| **set_particles_anim_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particles_anim_loop**\ (\ )
 
-If ``true``, particle animations are looped. Only enabled when using :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`. See :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`.
+若設為 ``true``\ ，粒子動畫將循環播放；僅於 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 模式下可用。
 
 .. rst-class:: classref-item-separator
 
@@ -3004,7 +3004,7 @@ If ``true``, particle animations are looped. Only enabled when using :ref:`BILLB
 - |void| **set_particles_anim_v_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_v_frames**\ (\ )
 
-The number of vertical frames in the particle sprite sheet. Only enabled when using :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>`. See :ref:`billboard_mode<class_BaseMaterial3D_property_billboard_mode>`.
+粒子圖集的垂直影格數；僅於 :ref:`BILLBOARD_PARTICLES<class_BaseMaterial3D_constant_BILLBOARD_PARTICLES>` 模式下可用。
 
 .. rst-class:: classref-item-separator
 
@@ -3021,7 +3021,7 @@ The number of vertical frames in the particle sprite sheet. Only enabled when us
 - |void| **set_point_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_point_size**\ (\ )
 
-The point size in pixels. See :ref:`use_point_size<class_BaseMaterial3D_property_use_point_size>`.
+點大小（像素）；參見 :ref:`use_point_size<class_BaseMaterial3D_property_use_point_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3038,7 +3038,7 @@ The point size in pixels. See :ref:`use_point_size<class_BaseMaterial3D_property
 - |void| **set_proximity_fade_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_proximity_fade_distance**\ (\ )
 
-Distance over which the fade effect takes place. The larger the distance the longer it takes for an object to fade.
+淡出距離；數值越大，物件完全淡出所需距離越長。
 
 .. rst-class:: classref-item-separator
 
@@ -3055,7 +3055,7 @@ Distance over which the fade effect takes place. The larger the distance the lon
 - |void| **set_proximity_fade_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_proximity_fade_enabled**\ (\ )
 
-If ``true``, the proximity fade effect is enabled. The proximity fade effect fades out each pixel based on its distance to another object.
+若設為 ``true``\ ，啟用近距離淡出效果；圖元會依與指定物件的距離逐漸隱形。
 
 .. rst-class:: classref-item-separator
 
@@ -3072,9 +3072,9 @@ If ``true``, the proximity fade effect is enabled. The proximity fade effect fad
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, the refraction effect is enabled. Distorts transparency based on light from behind the object.
+若設為 ``true``\ ，啟用折射效果，依據物件後方的影像扭曲透明區域。
 
-\ **Note:** Refraction is implemented using the screen texture. Only opaque materials will appear in the refraction, since transparent materials do not appear in the screen texture.
+\ **注意：**\ 折射透過螢幕貼圖實作，僅不透明材質會出現在該貼圖中，因此透明材質不會被折射顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -3091,7 +3091,7 @@ If ``true``, the refraction effect is enabled. Distorts transparency based on li
 - |void| **set_refraction**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_refraction**\ (\ )
 
-The strength of the refraction effect.
+折射強度。
 
 .. rst-class:: classref-item-separator
 
@@ -3108,7 +3108,7 @@ The strength of the refraction effect.
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture that controls the strength of the refraction per-pixel. Multiplied by :ref:`refraction_scale<class_BaseMaterial3D_property_refraction_scale>`.
+控制每圖元折射強度的紋理，會與 :ref:`refraction_scale<class_BaseMaterial3D_property_refraction_scale>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -3125,7 +3125,7 @@ Texture that controls the strength of the refraction per-pixel. Multiplied by :r
 - |void| **set_refraction_texture_channel**\ (\ value\: :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>`\ )
 - :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **get_refraction_texture_channel**\ (\ )
 
-Specifies the channel of the :ref:`refraction_texture<class_BaseMaterial3D_property_refraction_texture>` in which the refraction information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored refraction in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+設定折射資訊位於 :ref:`refraction_texture<class_BaseMaterial3D_property_refraction_texture>` 的哪個通道。可將多種資料整合於單張紋理，例如：紅通道折射、藍通道粗糙度、綠通道環境遮蔽，以降低貼圖數量。
 
 .. rst-class:: classref-item-separator
 
@@ -3142,7 +3142,7 @@ Specifies the channel of the :ref:`refraction_texture<class_BaseMaterial3D_prope
 - |void| **set_rim**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rim**\ (\ )
 
-Sets the strength of the rim lighting effect.
+邊緣光強度。
 
 .. rst-class:: classref-item-separator
 
@@ -3159,9 +3159,9 @@ Sets the strength of the rim lighting effect.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, rim effect is enabled. Rim lighting increases the brightness at glancing angles on an object.
+若設為 ``true``\ ，啟用邊緣光效果，使斜視角度下的表面更亮。
 
-\ **Note:** Rim lighting is not visible if the material's :ref:`shading_mode<class_BaseMaterial3D_property_shading_mode>` is :ref:`SHADING_MODE_UNSHADED<class_BaseMaterial3D_constant_SHADING_MODE_UNSHADED>`.
+\ **注意：**\ 當 :ref:`shading_mode<class_BaseMaterial3D_property_shading_mode>` 設為 :ref:`SHADING_MODE_UNSHADED<class_BaseMaterial3D_constant_SHADING_MODE_UNSHADED>` 時邊緣光不會顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -3178,7 +3178,7 @@ If ``true``, rim effect is enabled. Rim lighting increases the brightness at gla
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to set the strength of the rim lighting effect per-pixel. Multiplied by :ref:`rim<class_BaseMaterial3D_property_rim>`.
+控制每圖元邊緣光強度的紋理，會與 :ref:`rim<class_BaseMaterial3D_property_rim>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3195,7 @@ Texture used to set the strength of the rim lighting effect per-pixel. Multiplie
 - |void| **set_rim_tint**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rim_tint**\ (\ )
 
-The amount of to blend light and albedo color when rendering rim effect. If ``0`` the light color is used, while ``1`` means albedo color is used. An intermediate value generally works best.
+邊緣光中光源色與反照率混合比率；\ ``0`` 表示完全使用光源色，\ ``1`` 則完全使用反照率，一般取中間值效果最佳。
 
 .. rst-class:: classref-item-separator
 
@@ -3212,7 +3212,7 @@ The amount of to blend light and albedo color when rendering rim effect. If ``0`
 - |void| **set_roughness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_roughness**\ (\ )
 
-Surface reflection. A value of ``0`` represents a perfect mirror while a value of ``1`` completely blurs the reflection. See also :ref:`metallic<class_BaseMaterial3D_property_metallic>`.
+表面粗糙度；\ ``0`` 為完全鏡面， ``1`` 則完全模糊。另見 :ref:`metallic<class_BaseMaterial3D_property_metallic>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3229,7 +3229,7 @@ Surface reflection. A value of ``0`` represents a perfect mirror while a value o
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to control the roughness per-pixel. Multiplied by :ref:`roughness<class_BaseMaterial3D_property_roughness>`.
+控制每圖元粗糙度的紋理，會與 :ref:`roughness<class_BaseMaterial3D_property_roughness>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -3246,7 +3246,7 @@ Texture used to control the roughness per-pixel. Multiplied by :ref:`roughness<c
 - |void| **set_roughness_texture_channel**\ (\ value\: :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>`\ )
 - :ref:`TextureChannel<enum_BaseMaterial3D_TextureChannel>` **get_roughness_texture_channel**\ (\ )
 
-Specifies the channel of the :ref:`roughness_texture<class_BaseMaterial3D_property_roughness_texture>` in which the roughness information is stored. This is useful when you store the information for multiple effects in a single texture. For example if you stored metallic in the red channel, roughness in the blue, and ambient occlusion in the green you could reduce the number of textures you use.
+設定粗糙度資訊位於 :ref:`roughness_texture<class_BaseMaterial3D_property_roughness_texture>` 的哪個通道。可將多種資料整合於單張紋理，例如：紅通道金屬度、藍通道粗糙度、綠通道環境遮蔽，以降低貼圖數量。
 
 .. rst-class:: classref-item-separator
 
@@ -3263,7 +3263,7 @@ Specifies the channel of the :ref:`roughness_texture<class_BaseMaterial3D_proper
 - |void| **set_shading_mode**\ (\ value\: :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>`\ )
 - :ref:`ShadingMode<enum_BaseMaterial3D_ShadingMode>` **get_shading_mode**\ (\ )
 
-Sets whether the shading takes place, per-pixel, per-vertex or unshaded. Per-vertex lighting is faster, making it the best choice for mobile applications, however it looks considerably worse than per-pixel. Unshaded rendering is the fastest, but disables all interactions with lights.
+設定著色方式：逐圖元、逐頂點或無光照。逐頂點光照較快，適合行動裝置，但品質明顯不如逐圖元；無光照最快，但完全不受光源影響。
 
 .. rst-class:: classref-item-separator
 
@@ -3280,7 +3280,7 @@ Sets whether the shading takes place, per-pixel, per-vertex or unshaded. Per-ver
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, enables the "shadow to opacity" render mode where lighting modifies the alpha so shadowed areas are opaque and non-shadowed areas are transparent. Useful for overlaying shadows onto a camera feed in AR.
+若設為 ``true``\ ，啟用「Shadow to Opacity」模式：光照會改寫 Alpha，使陰影區域不透明、其它區域透明。可用於在 AR 畫面上覆蓋陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -3297,9 +3297,9 @@ If ``true``, enables the "shadow to opacity" render mode where lighting modifies
 - |void| **set_specular_mode**\ (\ value\: :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>`\ )
 - :ref:`SpecularMode<enum_BaseMaterial3D_SpecularMode>` **get_specular_mode**\ (\ )
 
-The method for rendering the specular blob.
+鏡面亮斑的繪製方式。
 
-\ **Note:** :ref:`specular_mode<class_BaseMaterial3D_property_specular_mode>` only applies to the specular blob. It does not affect specular reflections from the sky, screen-space reflections, :ref:`VoxelGI<class_VoxelGI>`, SDFGI or :ref:`ReflectionProbe<class_ReflectionProbe>`\ s. To disable reflections from these sources as well, set :ref:`metallic_specular<class_BaseMaterial3D_property_metallic_specular>` to ``0.0`` instead.
+\ **注意：**\ :ref:`specular_mode<class_BaseMaterial3D_property_specular_mode>` 僅影響鏡面亮斑，不會影響天空、螢幕空間反射、\ :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI 或 :ref:`ReflectionProbe<class_ReflectionProbe>` 的反射；若也需停用那些反射，請將 :ref:`metallic_specular<class_BaseMaterial3D_property_metallic_specular>` 設為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3316,7 +3316,7 @@ The method for rendering the specular blob.
 - |void| **set_stencil_effect_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_stencil_effect_color**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 The primary color of the stencil effect.
 
@@ -3335,7 +3335,7 @@ The primary color of the stencil effect.
 - |void| **set_stencil_compare**\ (\ value\: :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>`\ )
 - :ref:`StencilCompare<enum_BaseMaterial3D_StencilCompare>` **get_stencil_compare**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 The comparison operator to use for stencil masking operations.
 
@@ -3354,7 +3354,7 @@ The comparison operator to use for stencil masking operations.
 - |void| **set_stencil_flags**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stencil_flags**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 The flags dictating how the stencil operation behaves.
 
@@ -3373,7 +3373,7 @@ The flags dictating how the stencil operation behaves.
 - |void| **set_stencil_mode**\ (\ value\: :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>`\ )
 - :ref:`StencilMode<enum_BaseMaterial3D_StencilMode>` **get_stencil_mode**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 The stencil effect mode.
 
@@ -3392,7 +3392,7 @@ The stencil effect mode.
 - |void| **set_stencil_effect_outline_thickness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_stencil_effect_outline_thickness**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 The outline thickness for :ref:`STENCIL_MODE_OUTLINE<class_BaseMaterial3D_constant_STENCIL_MODE_OUTLINE>`.
 
@@ -3411,7 +3411,7 @@ The outline thickness for :ref:`STENCIL_MODE_OUTLINE<class_BaseMaterial3D_consta
 - |void| **set_stencil_reference**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stencil_reference**\ (\ )
 
-**Experimental:** May be affected by future rendering pipeline changes.
+**實驗性：** May be affected by future rendering pipeline changes.
 
 The stencil reference value (0-255). Typically a power of 2.
 
@@ -3430,9 +3430,9 @@ The stencil reference value (0-255). Typically a power of 2.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, subsurface scattering is enabled. Emulates light that penetrates an object's surface, is scattered, and then emerges. Subsurface scattering quality is controlled by :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`.
+如果 ``true``\ ，則啟用次表面散射。模擬光線將穿透物體表面、發生散射並最終逸出的效果。次表面散射品質由 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>` 控制。
 
-\ **Note:** Subsurface scattering is not supported on viewports that have a transparent background (where :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is ``true``).
+\ **注意：** 在具有透明背景的視口（\ :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``true``\ ）上不支援次表面散射。
 
 .. rst-class:: classref-item-separator
 
@@ -3449,7 +3449,7 @@ If ``true``, subsurface scattering is enabled. Emulates light that penetrates an
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, subsurface scattering will use a special mode optimized for the color and density of human skin, such as boosting the intensity of the red channel in subsurface scattering.
+若設為 ``true``\ ，次表面散射會啟用專為人類皮膚優化的模式，例如增強紅色通道。
 
 .. rst-class:: classref-item-separator
 
@@ -3466,7 +3466,7 @@ If ``true``, subsurface scattering will use a special mode optimized for the col
 - |void| **set_subsurface_scattering_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_subsurface_scattering_strength**\ (\ )
 
-The strength of the subsurface scattering effect. The depth of the effect is also controlled by :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>`, which is set globally.
+次表面散射強度；其深度由全域設定 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>` 決定。
 
 .. rst-class:: classref-item-separator
 
@@ -3483,7 +3483,7 @@ The strength of the subsurface scattering effect. The depth of the effect is als
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-Texture used to control the subsurface scattering strength. Stored in the red texture channel. Multiplied by :ref:`subsurf_scatter_strength<class_BaseMaterial3D_property_subsurf_scatter_strength>`.
+控制次表面散射強度的紋理（紅通道），會與 :ref:`subsurf_scatter_strength<class_BaseMaterial3D_property_subsurf_scatter_strength>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -3500,7 +3500,7 @@ Texture used to control the subsurface scattering strength. Stored in the red te
 - |void| **set_transmittance_boost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_transmittance_boost**\ (\ )
 
-The intensity of the subsurface scattering transmittance effect.
+次表面散射透射強度。
 
 .. rst-class:: classref-item-separator
 
@@ -3517,7 +3517,7 @@ The intensity of the subsurface scattering transmittance effect.
 - |void| **set_transmittance_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_transmittance_color**\ (\ )
 
-The color to multiply the subsurface scattering transmittance effect with. Ignored if :ref:`subsurf_scatter_skin_mode<class_BaseMaterial3D_property_subsurf_scatter_skin_mode>` is ``true``.
+與次表面散射透射效果相乘的顏色；\ :ref:`subsurf_scatter_skin_mode<class_BaseMaterial3D_property_subsurf_scatter_skin_mode>` 為 ``true`` 時忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -3534,7 +3534,7 @@ The color to multiply the subsurface scattering transmittance effect with. Ignor
 - |void| **set_transmittance_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_transmittance_depth**\ (\ )
 
-The depth of the subsurface scattering transmittance effect.
+次表面散射透射深度。
 
 .. rst-class:: classref-item-separator
 
@@ -3551,7 +3551,7 @@ The depth of the subsurface scattering transmittance effect.
 - |void| **set_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_feature**\ (\ feature\: :ref:`Feature<enum_BaseMaterial3D_Feature>`\ ) |const|
 
-If ``true``, enables subsurface scattering transmittance. Only effective if :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` is ``true``. See also :ref:`backlight_enabled<class_BaseMaterial3D_property_backlight_enabled>`.
+若設為 ``true``\ ，啟用次表面散射透射；僅在 :ref:`subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` 為 ``true`` 時有效。另見 :ref:`backlight_enabled<class_BaseMaterial3D_property_backlight_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3568,7 +3568,7 @@ If ``true``, enables subsurface scattering transmittance. Only effective if :ref
 - |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ ) |const|
 
-The texture to use for multiplying the intensity of the subsurface scattering transmittance intensity. See also :ref:`subsurf_scatter_texture<class_BaseMaterial3D_property_subsurf_scatter_texture>`. Ignored if :ref:`subsurf_scatter_skin_mode<class_BaseMaterial3D_property_subsurf_scatter_skin_mode>` is ``true``.
+用來乘上次表面散射透射強度的紋理；亦參見 :ref:`subsurf_scatter_texture<class_BaseMaterial3D_property_subsurf_scatter_texture>`\ 。若 :ref:`subsurf_scatter_skin_mode<class_BaseMaterial3D_property_subsurf_scatter_skin_mode>` 為 ``true`` 則忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -3585,9 +3585,9 @@ The texture to use for multiplying the intensity of the subsurface scattering tr
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_BaseMaterial3D_TextureFilter>` **get_texture_filter**\ (\ )
 
-Filter flags for the texture.
+紋理篩選方式。
 
-\ **Note:** :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` is always sampled with linear filtering, even if nearest-neighbor filtering is selected here. This is to ensure the heightmap effect looks as intended. If you need sharper height transitions between pixels, resize the heightmap texture in an image editor with nearest-neighbor filtering.
+\ **注意：**\ :ref:`heightmap_texture<class_BaseMaterial3D_property_heightmap_texture>` 一律使用線性取樣，即使此處選擇最近鄰。若需更銳利的高度階梯，請在影像編輯器中以最近鄰縮放高度圖。
 
 .. rst-class:: classref-item-separator
 
@@ -3604,7 +3604,7 @@ Filter flags for the texture.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the texture repeats when exceeding the texture's size. See :ref:`FLAG_USE_TEXTURE_REPEAT<class_BaseMaterial3D_constant_FLAG_USE_TEXTURE_REPEAT>`.
+若設為 ``true``\ ，紋理座標超出範圍時會重複；參見 :ref:`FLAG_USE_TEXTURE_REPEAT<class_BaseMaterial3D_constant_FLAG_USE_TEXTURE_REPEAT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3621,7 +3621,7 @@ If ``true``, the texture repeats when exceeding the texture's size. See :ref:`FL
 - |void| **set_transparency**\ (\ value\: :ref:`Transparency<enum_BaseMaterial3D_Transparency>`\ )
 - :ref:`Transparency<enum_BaseMaterial3D_Transparency>` **get_transparency**\ (\ )
 
-The material's transparency mode. Some transparency modes will disable shadow casting. Any transparency mode other than :ref:`TRANSPARENCY_DISABLED<class_BaseMaterial3D_constant_TRANSPARENCY_DISABLED>` has a greater performance impact compared to opaque rendering. See also :ref:`blend_mode<class_BaseMaterial3D_property_blend_mode>`.
+材質透明度模式。部分模式會停用投射陰影；除 :ref:`TRANSPARENCY_DISABLED<class_BaseMaterial3D_constant_TRANSPARENCY_DISABLED>` 外的任何模式都比不透明渲染更耗效能。另見 :ref:`blend_mode<class_BaseMaterial3D_property_blend_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3638,7 +3638,7 @@ The material's transparency mode. Some transparency modes will disable shadow ca
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true`` use :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` to override the :ref:`Camera3D<class_Camera3D>`'s field of view angle.
+若設為 ``true``\ ，使用 :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` 覆寫 :ref:`Camera3D<class_Camera3D>` 的視野角度。
 
 .. rst-class:: classref-item-separator
 
@@ -3655,7 +3655,7 @@ If ``true`` use :ref:`fov_override<class_BaseMaterial3D_property_fov_override>` 
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, enables parts of the shader required for :ref:`GPUParticles3D<class_GPUParticles3D>` trails to function. This also requires using a mesh with appropriate skinning, such as :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` or :ref:`TubeTrailMesh<class_TubeTrailMesh>`. Enabling this feature outside of materials used in :ref:`GPUParticles3D<class_GPUParticles3D>` meshes will break material rendering.
+若設為 ``true``\ ，啟用 :ref:`GPUParticles3D<class_GPUParticles3D>` 尾跡所需的著色器代碼；需配合 :ref:`RibbonTrailMesh<class_RibbonTrailMesh>` 或 :ref:`TubeTrailMesh<class_TubeTrailMesh>` 等具蒙皮的網格。若在非 :ref:`GPUParticles3D<class_GPUParticles3D>` 網格材質上啟用將導致材質繪製錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3672,9 +3672,9 @@ If ``true``, enables parts of the shader required for :ref:`GPUParticles3D<class
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, render point size can be changed.
+若設為 ``true``\ ，允許修改繪製點大小。
 
-\ **Note:** This is only effective for objects whose geometry is point-based rather than triangle-based. See also :ref:`point_size<class_BaseMaterial3D_property_point_size>`.
+\ **注意：**\ 僅對以點為單位的幾何（非三角形）有效；另見 :ref:`point_size<class_BaseMaterial3D_property_point_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3691,7 +3691,7 @@ If ``true``, render point size can be changed.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true`` use :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale>` to scale the object being rendered towards the camera to avoid clipping into things like walls.
+若設為 ``true``\ ，透過 :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale>` 朝鏡頭縮放物體以避免穿牆。
 
 .. rst-class:: classref-item-separator
 
@@ -3708,7 +3708,7 @@ If ``true`` use :ref:`z_clip_scale<class_BaseMaterial3D_property_z_clip_scale>` 
 - |void| **set_uv1_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_uv1_offset**\ (\ )
 
-How much to offset the ``UV`` coordinates. This amount will be added to ``UV`` in the vertex function. This can be used to offset a texture. The Z component is used when :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` is enabled, but it is not used anywhere else.
+``UV`` 偏移量，於頂點函式加至 ``UV``\ ；可用來移動紋理。Z 分量僅在啟用 :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` 時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -3725,7 +3725,7 @@ How much to offset the ``UV`` coordinates. This amount will be added to ``UV`` i
 - |void| **set_uv1_scale**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_uv1_scale**\ (\ )
 
-How much to scale the ``UV`` coordinates. This is multiplied by ``UV`` in the vertex function. The Z component is used when :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` is enabled, but it is not used anywhere else.
+``UV`` 縮放比例，於頂點函式乘上 ``UV``\ ；Z 分量僅在啟用 :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>` 時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -3742,7 +3742,7 @@ How much to scale the ``UV`` coordinates. This is multiplied by ``UV`` in the ve
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, instead of using ``UV`` textures will use a triplanar texture lookup to determine how to apply textures. Triplanar uses the orientation of the object's surface to blend between texture coordinates. It reads from the source texture 3 times, once for each axis and then blends between the results based on how closely the pixel aligns with each axis. This is often used for natural features to get a realistic blend of materials. Because triplanar texturing requires many more texture reads per-pixel it is much slower than normal UV texturing. Additionally, because it is blending the texture between the three axes, it is unsuitable when you are trying to achieve crisp texturing.
+若設為 ``true``\ ，不使用 ``UV``\ ，改以三平面取樣決定貼圖方式。三平面會根據表面法向對三個軸各取紋理一次，並依像素對軸的對齊度混合結果，常用於自然地形以獲得平滑過渡。但因每像素需多次取樣，效能遠低於一般 UV；亦因混合導致邊緣變軟，不適合需要銳利貼圖的場合。
 
 .. rst-class:: classref-item-separator
 
@@ -3759,9 +3759,9 @@ If ``true``, instead of using ``UV`` textures will use a triplanar texture looku
 - |void| **set_uv1_triplanar_blend_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_uv1_triplanar_blend_sharpness**\ (\ )
 
-A lower number blends the texture more softly while a higher number blends the texture more sharply.
+數值越低混合越柔和，數值越高混合越銳利。
 
-\ **Note:** :ref:`uv1_triplanar_sharpness<class_BaseMaterial3D_property_uv1_triplanar_sharpness>` is clamped between ``0.0`` and ``150.0`` (inclusive) as values outside that range can look broken depending on the mesh.
+\ **注意：**\ :ref:`uv1_triplanar_sharpness<class_BaseMaterial3D_property_uv1_triplanar_sharpness>` 會被限制於 ``0.0`` 至 ``150.0`` 之間，超出範圍可能導致畫面破損。
 
 .. rst-class:: classref-item-separator
 
@@ -3778,7 +3778,7 @@ A lower number blends the texture more softly while a higher number blends the t
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, triplanar mapping for ``UV`` is calculated in world space rather than object local space. See also :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>`.
+若設為 ``true``\ ，\ ``UV`` 的三平面在世界座標計算；另見 :ref:`uv1_triplanar<class_BaseMaterial3D_property_uv1_triplanar>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3795,7 +3795,7 @@ If ``true``, triplanar mapping for ``UV`` is calculated in world space rather th
 - |void| **set_uv2_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_uv2_offset**\ (\ )
 
-How much to offset the ``UV2`` coordinates. This amount will be added to ``UV2`` in the vertex function. This can be used to offset a texture. The Z component is used when :ref:`uv2_triplanar<class_BaseMaterial3D_property_uv2_triplanar>` is enabled, but it is not used anywhere else.
+``UV2`` 偏移量，於頂點函式加至 ``UV2``\ ；可用來移動第二組紋理座標。Z 分量僅在啟用 :ref:`uv2_triplanar<class_BaseMaterial3D_property_uv2_triplanar>` 時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -3812,7 +3812,7 @@ How much to offset the ``UV2`` coordinates. This amount will be added to ``UV2``
 - |void| **set_uv2_scale**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_uv2_scale**\ (\ )
 
-How much to scale the ``UV2`` coordinates. This is multiplied by ``UV2`` in the vertex function. The Z component is used when :ref:`uv2_triplanar<class_BaseMaterial3D_property_uv2_triplanar>` is enabled, but it is not used anywhere else.
+``UV2`` 縮放比例，於頂點函式乘上 ``UV2``\ ；Z 分量僅在啟用 :ref:`uv2_triplanar<class_BaseMaterial3D_property_uv2_triplanar>` 時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -3829,7 +3829,7 @@ How much to scale the ``UV2`` coordinates. This is multiplied by ``UV2`` in the 
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, instead of using ``UV2`` textures will use a triplanar texture lookup to determine how to apply textures. Triplanar uses the orientation of the object's surface to blend between texture coordinates. It reads from the source texture 3 times, once for each axis and then blends between the results based on how closely the pixel aligns with each axis. This is often used for natural features to get a realistic blend of materials. Because triplanar texturing requires many more texture reads per-pixel it is much slower than normal UV texturing. Additionally, because it is blending the texture between the three axes, it is unsuitable when you are trying to achieve crisp texturing.
+若設為 ``true``\ ，不使用 ``UV2``\ ，改用三平面取樣。原理與 ``UV`` 版本相同，效能成本亦相同，不再贅述。
 
 .. rst-class:: classref-item-separator
 
@@ -3846,9 +3846,9 @@ If ``true``, instead of using ``UV2`` textures will use a triplanar texture look
 - |void| **set_uv2_triplanar_blend_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_uv2_triplanar_blend_sharpness**\ (\ )
 
-A lower number blends the texture more softly while a higher number blends the texture more sharply.
+數值越低混合越柔和，數值越高混合越銳利。
 
-\ **Note:** :ref:`uv2_triplanar_sharpness<class_BaseMaterial3D_property_uv2_triplanar_sharpness>` is clamped between ``0.0`` and ``150.0`` (inclusive) as values outside that range can look broken depending on the mesh.
+\ **注意：**\ :ref:`uv2_triplanar_sharpness<class_BaseMaterial3D_property_uv2_triplanar_sharpness>` 會被限制於 ``0.0`` 至 ``150.0`` 之間，超出範圍可能導致畫面破損。
 
 .. rst-class:: classref-item-separator
 
@@ -3865,7 +3865,7 @@ A lower number blends the texture more softly while a higher number blends the t
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, triplanar mapping for ``UV2`` is calculated in world space rather than object local space. See also :ref:`uv2_triplanar<class_BaseMaterial3D_property_uv2_triplanar>`.
+若設為 ``true``\ ，\ ``UV2`` 的三平面在世界座標計算；另見 :ref:`uv2_triplanar<class_BaseMaterial3D_property_uv2_triplanar>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3901,7 +3901,7 @@ If ``true``, vertex colors are considered to be stored in nonlinear sRGB encodin
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, the vertex color is used as albedo color.
+若設為 ``true``\ ，將頂點色用作反照率。
 
 .. rst-class:: classref-item-separator
 
@@ -3918,7 +3918,7 @@ If ``true``, the vertex color is used as albedo color.
 - |void| **set_z_clip_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_z_clip_scale**\ (\ )
 
-Scales the object being rendered towards the camera to avoid clipping into things like walls. This is intended to be used for objects that are fixed with respect to the camera like player arms, tools, etc. Lighting and shadows will continue to work correctly when this setting is adjusted, but screen-space effects like SSAO and SSR may break with lower scales. Therefore, try to keep this setting as close to ``1.0`` as possible.
+將物件朝鏡頭縮放，以避免近距離穿牆；適用於固定在視角上的物件（例如玩家手臂、工具）。光照與陰影仍能正常運作，但像 SSAO、SSR 等螢幕空間效果在縮放過小時可能失真，因此請盡量接近 ``1.0``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -3926,8 +3926,8 @@ Scales the object being rendered towards the camera to avoid clipping into thing
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_BaseMaterial3D_method_get_feature:
 
@@ -3995,14 +3995,14 @@ If ``enable`` is ``true``, enables the specified ``flag``. Flags are optional be
 
 |void| **set_texture**\ (\ param\: :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_BaseMaterial3D_method_set_texture>`
 
-Sets the texture for the slot specified by ``param``.
+為由 ``param`` 指定的槽位設定紋理。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

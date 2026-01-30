@@ -5,23 +5,23 @@
 ClassDB
 =======
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-A class information repository.
+类信息的存储库。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Provides access to metadata stored for every available engine class.
+提供对引擎中所有可用类的元数据的访问。
 
-\ **Note:** Script-defined classes with ``class_name`` are not part of **ClassDB**, so they will not return reflection data such as a method or property list. However, :ref:`GDExtension<class_GDExtension>`-defined classes *are* part of **ClassDB**, so they will return reflection data.
+\ **注意：**\ 脚本使用 ``class_name`` 定义的类并不属于 **ClassDB**\ ，因此不会返回方法列表、属性列表等反射数据。不过 :ref:`GDExtension<class_GDExtension>` 定义的类\ *属于* **ClassDB**\ ，因此会返回反射数据。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -94,8 +94,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ClassDB_APIType:
 
@@ -109,7 +109,7 @@ enum **APIType**: :ref:`🔗<enum_ClassDB_APIType>`
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_CORE** = ``0``
 
-Native Core class type.
+原生核心类型。
 
 .. _class_ClassDB_constant_API_EDITOR:
 
@@ -117,7 +117,7 @@ Native Core class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_EDITOR** = ``1``
 
-Native Editor class type.
+原生编辑器类型。
 
 .. _class_ClassDB_constant_API_EXTENSION:
 
@@ -125,7 +125,7 @@ Native Editor class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_EXTENSION** = ``2``
 
-GDExtension class type.
+GDExtension 类型。
 
 .. _class_ClassDB_constant_API_EDITOR_EXTENSION:
 
@@ -133,7 +133,7 @@ GDExtension class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_EDITOR_EXTENSION** = ``3``
 
-GDExtension Editor class type.
+GDExtension 编辑器类型。
 
 .. _class_ClassDB_constant_API_NONE:
 
@@ -141,7 +141,7 @@ GDExtension Editor class type.
 
 :ref:`APIType<enum_ClassDB_APIType>` **API_NONE** = ``4``
 
-Unknown class type.
+未知类型。
 
 .. rst-class:: classref-section-separator
 
@@ -149,8 +149,8 @@ Unknown class type.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ClassDB_method_can_instantiate:
 
@@ -158,7 +158,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **can_instantiate**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_can_instantiate>`
 
-Returns ``true`` if objects can be instantiated from the specified ``class``, otherwise returns ``false``.
+如果可以从指定的 ``class`` 实例化对象，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Returns ``true`` if objects can be instantiated from the specified ``class``, ot
 
 :ref:`Variant<class_Variant>` **class_call_static**\ (\ class\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_ClassDB_method_class_call_static>`
 
-Calls a static method on a class.
+调用类的静态方法。
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ Calls a static method on a class.
 
 :ref:`bool<class_bool>` **class_exists**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_exists>`
 
-Returns whether the specified ``class`` is available or not.
+返回 ``class`` 类是否可用。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Returns whether the specified ``class`` is available or not.
 
 :ref:`APIType<enum_ClassDB_APIType>` **class_get_api_type**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_api_type>`
 
-Returns the API type of the specified ``class``.
+返回 ``class`` 类的 API 类型。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Returns the API type of the specified ``class``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **class_get_enum_constants**\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_enum_constants>`
 
-Returns an array with all the keys in ``enum`` of ``class`` or its ancestry.
+返回一个数组，其中包含 ``class`` 或其祖先的 ``enum`` 中的所有键。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ Returns an array with all the keys in ``enum`` of ``class`` or its ancestry.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **class_get_enum_list**\ (\ class\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_enum_list>`
 
-Returns an array with all the enums of ``class`` or its ancestry.
+返回一个数组，其中包含 ``class`` 或其祖先的所有枚举。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ Returns an array with all the enums of ``class`` or its ancestry.
 
 :ref:`int<class_int>` **class_get_integer_constant**\ (\ class\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_integer_constant>`
 
-Returns the value of the integer constant ``name`` of ``class`` or its ancestry. Always returns 0 when the constant could not be found.
+返回 ``class`` 或其父级的整数常量值 ``name``\ 。如果找不到该常量，则总是返回0。
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ Returns the value of the integer constant ``name`` of ``class`` or its ancestry.
 
 :ref:`StringName<class_StringName>` **class_get_integer_constant_enum**\ (\ class\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_integer_constant_enum>`
 
-Returns which enum the integer constant ``name`` of ``class`` or its ancestry belongs to.
+返回 ``class`` 或其祖先的整数常量 ``name`` 所属的枚举。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Returns which enum the integer constant ``name`` of ``class`` or its ancestry be
 
 :ref:`PackedStringArray<class_PackedStringArray>` **class_get_integer_constant_list**\ (\ class\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_integer_constant_list>`
 
-Returns an array with the names all the integer constants of ``class`` or its ancestry.
+返回包含 ``class`` 或其父级全部整数常量的名称数组。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Returns an array with the names all the integer constants of ``class`` or its an
 
 :ref:`int<class_int>` **class_get_method_argument_count**\ (\ class\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_method_argument_count>`
 
-Returns the number of arguments of the method ``method`` of ``class`` or its ancestry if ``no_inheritance`` is ``false``.
+如果 ``no_inheritance`` 为 ``false``\ ，则返回 ``class`` 或其祖先的方法 ``method`` 的参数数量。
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ Returns the number of arguments of the method ``method`` of ``class`` or its anc
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **class_get_method_list**\ (\ class\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_method_list>`
 
-Returns an array with all the methods of ``class`` or its ancestry if ``no_inheritance`` is ``false``. Every element of the array is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``args``, ``default_args``, ``flags``, ``id``, ``name``, ``return: (class_name, hint, hint_string, name, type, usage)``.
+如果 ``no_inheritance`` 为 ``false``\ ，则返回包含 ``class`` 或其祖先的所有方法的数组。数组的每个元素都是一个 :ref:`Dictionary<class_Dictionary>`\ ，包含以下键：\ ``args``\ 、\ ``default_args``\ 、\ ``flags``\ 、\ ``id``\ 、\ ``name``\ 、\ ``return: (class_name, hint, hint_string, name, type, usage)``\ 。
 
-\ **Note:** In exported release builds the debug info is not available, so the returned dictionaries will contain only method names.
+\ **注意：**\ 在导出的发布版本中，调试信息不可用，因此返回的字典将仅包含方法名称。
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Returns an array with all the methods of ``class`` or its ancestry if ``no_inher
 
 :ref:`Variant<class_Variant>` **class_get_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_property>`
 
-Returns the value of ``property`` of ``object`` or its ancestry.
+返回 ``object`` 或其父级 ``property`` 的属性值。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ Returns the value of ``property`` of ``object`` or its ancestry.
 
 :ref:`Variant<class_Variant>` **class_get_property_default_value**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_property_default_value>`
 
-Returns the default value of ``property`` of ``class`` or its ancestor classes.
+返回 ``class`` 或其祖先类的 ``property`` 的默认值。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Returns the default value of ``property`` of ``class`` or its ancestor classes.
 
 :ref:`StringName<class_StringName>` **class_get_property_getter**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ClassDB_method_class_get_property_getter>`
 
-Returns the getter method name of ``property`` of ``class``.
+返回 ``class`` 类中 ``property`` 属性的 getter 方法名。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Returns the getter method name of ``property`` of ``class``.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **class_get_property_list**\ (\ class\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_property_list>`
 
-Returns an array with all the properties of ``class`` or its ancestry if ``no_inheritance`` is ``false``.
+如果 ``no_inheritance`` 为 ``false``\ ，则返回包含 ``class`` 或其祖先的所有属性的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ Returns an array with all the properties of ``class`` or its ancestry if ``no_in
 
 :ref:`StringName<class_StringName>` **class_get_property_setter**\ (\ class\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ClassDB_method_class_get_property_setter>`
 
-Returns the setter method name of ``property`` of ``class``.
+返回 ``class`` 类中 ``property`` 属性的 setter 方法名。
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Returns the setter method name of ``property`` of ``class``.
 
 :ref:`Dictionary<class_Dictionary>` **class_get_signal**\ (\ class\: :ref:`StringName<class_StringName>`, signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_signal>`
 
-Returns the ``signal`` data of ``class`` or its ancestry. The returned value is a :ref:`Dictionary<class_Dictionary>` with the following keys: ``args``, ``default_args``, ``flags``, ``id``, ``name``, ``return: (class_name, hint, hint_string, name, type, usage)``.
+返回 ``class`` 或其祖先的 ``signal`` 数据。返回值是具有以下键的 :ref:`Dictionary<class_Dictionary>`\ ：\ ``args``\ 、\ ``default_args``\ 、\ ``flags``\ 、\ ``id``\ 、\ ``name``\ 、\ ``return: (class_name, hint, hint_string, name, type, usage)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Returns the ``signal`` data of ``class`` or its ancestry. The returned value is 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **class_get_signal_list**\ (\ class\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_get_signal_list>`
 
-Returns an array with all the signals of ``class`` or its ancestry if ``no_inheritance`` is ``false``. Every element of the array is a :ref:`Dictionary<class_Dictionary>` as described in :ref:`class_get_signal()<class_ClassDB_method_class_get_signal>`.
+如果 ``no_inheritance`` 为 ``false``\ ，则返回包含 ``class`` 或其祖先的所有信号的数组。数组的每个元素都是一个如 :ref:`class_get_signal()<class_ClassDB_method_class_get_signal>` 中所述的 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Returns an array with all the signals of ``class`` or its ancestry if ``no_inher
 
 :ref:`bool<class_bool>` **class_has_enum**\ (\ class\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_has_enum>`
 
-Returns whether ``class`` or its ancestry has an enum called ``name`` or not.
+返回类 ``class`` 或其祖类是否有名为 ``name`` 的枚举。
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Returns whether ``class`` or its ancestry has an enum called ``name`` or not.
 
 :ref:`bool<class_bool>` **class_has_integer_constant**\ (\ class\: :ref:`StringName<class_StringName>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_has_integer_constant>`
 
-Returns whether ``class`` or its ancestry has an integer constant called ``name`` or not.
+返回类 ``class`` 或其祖类是否有名为 ``name`` 的整数常量。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Returns whether ``class`` or its ancestry has an integer constant called ``name`
 
 :ref:`bool<class_bool>` **class_has_method**\ (\ class\: :ref:`StringName<class_StringName>`, method\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_class_has_method>`
 
-Returns whether ``class`` (or its ancestry if ``no_inheritance`` is ``false``) has a method called ``method`` or not.
+返回类 ``class`` 是否有名为 ``method`` 的方法（如果 ``no_inheritance`` 为 ``false`` 则还会检查其祖类）。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Returns whether ``class`` (or its ancestry if ``no_inheritance`` is ``false``) h
 
 :ref:`bool<class_bool>` **class_has_signal**\ (\ class\: :ref:`StringName<class_StringName>`, signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_has_signal>`
 
-Returns whether ``class`` or its ancestry has a signal called ``signal`` or not.
+返回类 ``class`` 或其祖类是否有名为 ``signal`` 的信号。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Returns whether ``class`` or its ancestry has a signal called ``signal`` or not.
 
 :ref:`Error<enum_@GlobalScope_Error>` **class_set_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_ClassDB_method_class_set_property>`
 
-Sets ``property`` value of ``object`` to ``value``.
+将对象 ``object`` 的 ``property`` 属性值设置为 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -436,9 +436,9 @@ Sets ``property`` value of ``object`` to ``value``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_class_list**\ (\ ) |const| :ref:`🔗<class_ClassDB_method_get_class_list>`
 
-Returns the names of all engine classes available.
+返回引擎中所有可用类的名称。
 
-\ **Note:** Script-defined classes with ``class_name`` are not included in this list. Use :ref:`ProjectSettings.get_global_class_list()<class_ProjectSettings_method_get_global_class_list>` to get a list of script-defined classes instead.
+\ **注意：**\ 列表中不包含脚本使用 ``class_name`` 定义的类。请使用 :ref:`ProjectSettings.get_global_class_list()<class_ProjectSettings_method_get_global_class_list>` 获取脚本定义的类的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ Returns the names of all engine classes available.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_inheriters_from_class**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_get_inheriters_from_class>`
 
-Returns the names of all engine classes that directly or indirectly inherit from ``class``.
+返回引擎中所有直接或间接继承自 ``class`` 的类的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Returns the names of all engine classes that directly or indirectly inherit from
 
 :ref:`StringName<class_StringName>` **get_parent_class**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_get_parent_class>`
 
-Returns the parent class of ``class``.
+返回 ``class`` 的父类。
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ Returns the parent class of ``class``.
 
 :ref:`Variant<class_Variant>` **instantiate**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_instantiate>`
 
-Creates an instance of ``class``.
+创建 ``class`` 的实例。
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ Creates an instance of ``class``.
 
 :ref:`bool<class_bool>` **is_class_enabled**\ (\ class\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_enabled>`
 
-Returns whether this ``class`` is enabled or not.
+返回这个 ``class`` 是否已启用。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Returns whether this ``class`` is enabled or not.
 
 :ref:`bool<class_bool>` **is_class_enum_bitfield**\ (\ class\: :ref:`StringName<class_StringName>`, enum\: :ref:`StringName<class_StringName>`, no_inheritance\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ClassDB_method_is_class_enum_bitfield>`
 
-Returns whether ``class`` (or its ancestor classes if ``no_inheritance`` is ``false``) has an enum called ``enum`` that is a bitfield.
+返回类 ``class`` 是否有名为 ``enum`` 的位域枚举（如果 ``no_inheritance`` 为 ``false`` 则还会检查其祖类）。
 
 .. rst-class:: classref-item-separator
 
@@ -510,14 +510,14 @@ Returns whether ``class`` (or its ancestor classes if ``no_inheritance`` is ``fa
 
 :ref:`bool<class_bool>` **is_parent_class**\ (\ class\: :ref:`StringName<class_StringName>`, inherits\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_is_parent_class>`
 
-Returns whether ``inherits`` is an ancestor of ``class`` or not.
+返回 ``inherits`` 是否为 ``class`` 的祖先。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

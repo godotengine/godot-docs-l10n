@@ -5,14 +5,14 @@
 GradientTexture2D
 =================
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D texture that creates a pattern with colors obtained from a :ref:`Gradient<class_Gradient>`.
+將從 :ref:`Gradient<class_Gradient>` 中獲得的顏色樣本的數量。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A 2D texture that obtains colors from a :ref:`Gradient<class_Gradient>` to fill the texture data. This texture is able to transform a color transition into different patterns such as a linear or a radial gradient. The texture is filled by interpolating colors starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets by default, but the gradient fill can be repeated to cover the entire texture.
 
@@ -20,8 +20,8 @@ The gradient is sampled individually for each pixel so it does not necessarily r
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_GradientTexture2D_Fill:
 
@@ -67,7 +67,7 @@ enum **Fill**: :ref:`🔗<enum_GradientTexture2D_Fill>`
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_LINEAR** = ``0``
 
-The colors are linearly interpolated in a straight line.
+顏色按照直線進行線性插值。
 
 .. _class_GradientTexture2D_constant_FILL_RADIAL:
 
@@ -75,7 +75,7 @@ The colors are linearly interpolated in a straight line.
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_RADIAL** = ``1``
 
-The colors are linearly interpolated in a circular pattern.
+顏色按照圓形模式進行線性插值。
 
 .. _class_GradientTexture2D_constant_FILL_SQUARE:
 
@@ -83,7 +83,7 @@ The colors are linearly interpolated in a circular pattern.
 
 :ref:`Fill<enum_GradientTexture2D_Fill>` **FILL_SQUARE** = ``2``
 
-The colors are linearly interpolated in a square pattern.
+顏色按照方形模式進行線性插值。
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ enum **Repeat**: :ref:`🔗<enum_GradientTexture2D_Repeat>`
 
 :ref:`Repeat<enum_GradientTexture2D_Repeat>` **REPEAT_NONE** = ``0``
 
-The gradient fill is restricted to the range defined by :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets.
+漸變填充限制在由 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 到 :ref:`fill_to<class_GradientTexture2D_property_fill_to>` 的偏移量範圍內。
 
 .. _class_GradientTexture2D_constant_REPEAT:
 
@@ -109,7 +109,7 @@ The gradient fill is restricted to the range defined by :ref:`fill_from<class_Gr
 
 :ref:`Repeat<enum_GradientTexture2D_Repeat>` **REPEAT** = ``1``
 
-The texture is filled starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets, repeating the same pattern in both directions.
+紋理的填充從偏移量 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 開始到 :ref:`fill_to<class_GradientTexture2D_property_fill_to>`\ ，兩個方向都按照相同的模式重複。
 
 .. _class_GradientTexture2D_constant_REPEAT_MIRROR:
 
@@ -117,7 +117,7 @@ The texture is filled starting from :ref:`fill_from<class_GradientTexture2D_prop
 
 :ref:`Repeat<enum_GradientTexture2D_Repeat>` **REPEAT_MIRROR** = ``2``
 
-The texture is filled starting from :ref:`fill_from<class_GradientTexture2D_property_fill_from>` to :ref:`fill_to<class_GradientTexture2D_property_fill_to>` offsets, mirroring the pattern in both directions.
+紋理的填充從偏移量 :ref:`fill_from<class_GradientTexture2D_property_fill_from>` 開始到 :ref:`fill_to<class_GradientTexture2D_property_fill_to>`\ ，兩個方向都按照相同的模式鏡像重複。
 
 .. rst-class:: classref-section-separator
 
@@ -125,8 +125,8 @@ The texture is filled starting from :ref:`fill_from<class_GradientTexture2D_prop
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_GradientTexture2D_property_fill:
 
@@ -156,7 +156,7 @@ The gradient's fill type.
 - |void| **set_fill_from**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_fill_from**\ (\ )
 
-The initial offset used to fill the texture specified in UV coordinates.
+用於填充紋理的初始偏移量，使用 UV 座標。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ The initial offset used to fill the texture specified in UV coordinates.
 - |void| **set_fill_to**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_fill_to**\ (\ )
 
-The final offset used to fill the texture specified in UV coordinates.
+用於填充紋理的結束偏移量，使用 UV 座標。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ The final offset used to fill the texture specified in UV coordinates.
 - |void| **set_gradient**\ (\ value\: :ref:`Gradient<class_Gradient>`\ )
 - :ref:`Gradient<class_Gradient>` **get_gradient**\ (\ )
 
-The :ref:`Gradient<class_Gradient>` used to fill the texture.
+用於填充紋理的 :ref:`Gradient<class_Gradient>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ The :ref:`Gradient<class_Gradient>` used to fill the texture.
 - |void| **set_height**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_height**\ (\ )
 
-The number of vertical color samples that will be obtained from the :ref:`Gradient<class_Gradient>`, which also represents the texture's height.
+從 :ref:`Gradient<class_Gradient>` 上獲取的垂直顏色取樣數，也表示紋理的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ The gradient's repeat type.
 - |void| **set_use_hdr**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_hdr**\ (\ )
 
-If ``true``, the generated texture will support high dynamic range (:ref:`Image.FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>` format). This allows for glow effects to work if :ref:`Environment.glow_enabled<class_Environment_property_glow_enabled>` is ``true``. If ``false``, the generated texture will use low dynamic range; overbright colors will be clamped (:ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` format).
+如果為 ``true``\ ，則生成的紋理會支援高動態範圍（\ :ref:`Image.FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>` 格式）。可以在 :ref:`Environment.glow_enabled<class_Environment_property_glow_enabled>` 為 ``true`` 時實作輝光效果。如果為 ``false``\ ，則生成的紋理會使用低動態範圍；過亮的顏色會被鉗制（\ :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式）。
 
 .. rst-class:: classref-item-separator
 
@@ -258,14 +258,14 @@ If ``true``, the generated texture will support high dynamic range (:ref:`Image.
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-The number of horizontal color samples that will be obtained from the :ref:`Gradient<class_Gradient>`, which also represents the texture's width.
+從 :ref:`Gradient<class_Gradient>` 上獲取的水平顏色取樣數，也表示紋理的寬度。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

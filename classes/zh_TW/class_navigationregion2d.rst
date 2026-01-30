@@ -5,42 +5,42 @@
 NavigationRegion2D
 ==================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A traversable 2D region that :ref:`NavigationAgent2D<class_NavigationAgent2D>`\ s can use for pathfinding.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A traversable 2D region based on a :ref:`NavigationPolygon<class_NavigationPolygon>` that :ref:`NavigationAgent2D<class_NavigationAgent2D>`\ s can use for pathfinding.
-
-Two regions can be connected to each other if they share a similar edge. You can set the minimum distance between two vertices required to connect two edges by using :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>`.
-
-\ **Note:** Overlapping two regions' navigation polygons is not enough for connecting two regions. They must share a similar edge.
-
-The pathfinding cost of entering a region from another region can be controlled with the :ref:`enter_cost<class_NavigationRegion2D_property_enter_cost>` value.
-
-\ **Note:** This value is not added to the path cost when the start position is already inside this region.
-
-The pathfinding cost of traveling distances inside this region can be controlled with the :ref:`travel_cost<class_NavigationRegion2D_property_travel_cost>` multiplier.
-
-\ **Note:** This node caches changes to its properties, so if you make changes to the underlying region :ref:`RID<class_RID>` in :ref:`NavigationServer2D<class_NavigationServer2D>`, they will not be reflected in this node's properties.
+可達的 2D 地區，\ :ref:`NavigationAgent2D<class_NavigationAgent2D>` 能夠將其用於尋路。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using NavigationRegions <../tutorials/navigation/navigation_using_navigationregions>`
+可達的 2D 地區，基於 :ref:`NavigationPolygon<class_NavigationPolygon>`\ ，\ :ref:`NavigationAgent2D<class_NavigationAgent2D>` 能夠將其用於尋路。
+
+兩個地區如果存在相近的邊就可以互相連接。連接兩條邊所需的頂點最小間距可以通過 :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>` 設定。
+
+\ **注意：**\ 兩個地區存在重疊部分並不足以讓它們相連。必須有相近的邊。
+
+從一個地區進入另一個地區的尋路成本可以使用 :ref:`enter_cost<class_NavigationRegion2D_property_enter_cost>` 控制。
+
+\ **注意：**\ 起點位於該地區時，這個值不計入路徑成本。
+
+在該地區中行進的尋路成本可以使用乘數 :ref:`travel_cost<class_NavigationRegion2D_property_travel_cost>` 控制。
+
+\ **注意：**\ 該節點會對這些屬性進行快取，因此，你在 :ref:`NavigationServer2D<class_NavigationServer2D>` 中對底層的地區 :ref:`RID<class_RID>` 進行的修改不會在該節點的屬性中。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用 NavigationRegion <../tutorials/navigation/navigation_using_navigationregions>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -93,8 +93,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_NavigationRegion2D_signal_bake_finished:
 
@@ -102,7 +102,7 @@ Signals
 
 **bake_finished**\ (\ ) :ref:`🔗<class_NavigationRegion2D_signal_bake_finished>`
 
-Emitted when a navigation polygon bake operation is completed.
+導覽網格烘焙操作完成時發出通知。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Emitted when a navigation polygon bake operation is completed.
 
 **navigation_polygon_changed**\ (\ ) :ref:`🔗<class_NavigationRegion2D_signal_navigation_polygon_changed>`
 
-Emitted when the used navigation polygon is replaced or changes to the internals of the current navigation polygon are committed.
+當替換使用的導覽多邊形或提交目前導覽多邊形內部的變更時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -122,8 +122,8 @@ Emitted when the used navigation polygon is replaced or changes to the internals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_NavigationRegion2D_property_enabled:
 
@@ -136,7 +136,7 @@ Property Descriptions
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Determines if the **NavigationRegion2D** is enabled or disabled.
+決定該 **NavigationRegion2D** 是啟用還是禁用。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ When pathfinding enters this region's navigation mesh from another regions navig
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-A bitfield determining all navigation layers the region belongs to. These navigation layers can be checked upon when requesting a path with :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>`.
+確定該區塊所屬的所有導覽層的位欄位。當使用 :ref:`NavigationServer2D.map_get_path()<class_NavigationServer2D_method_map_get_path>` 請求一個路徑時，可以檢查這些導覽層。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ A bitfield determining all navigation layers the region belongs to. These naviga
 - |void| **set_navigation_polygon**\ (\ value\: :ref:`NavigationPolygon<class_NavigationPolygon>`\ )
 - :ref:`NavigationPolygon<class_NavigationPolygon>` **get_navigation_polygon**\ (\ )
 
-The :ref:`NavigationPolygon<class_NavigationPolygon>` resource to use.
+使用的 :ref:`NavigationPolygon<class_NavigationPolygon>` 資源。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ When pathfinding moves inside this region's navigation mesh the traveled distanc
 - |void| **set_use_edge_connections**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_edge_connections**\ (\ )
 
-If enabled the navigation region will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
+如果啟用，導覽區塊將使用邊緣連接來與位於導覽地圖連接邊距範圍內的其他導覽區塊相連接。
 
 .. rst-class:: classref-section-separator
 
@@ -229,8 +229,8 @@ If enabled the navigation region will use edge connections to connect with other
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_NavigationRegion2D_method_bake_navigation_polygon:
 
@@ -238,7 +238,7 @@ Method Descriptions
 
 |void| **bake_navigation_polygon**\ (\ on_thread\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_NavigationRegion2D_method_bake_navigation_polygon>`
 
-Bakes the :ref:`NavigationPolygon<class_NavigationPolygon>`. If ``on_thread`` is set to ``true`` (default), the baking is done on a separate thread.
+烘焙 :ref:`NavigationPolygon<class_NavigationPolygon>`\ 。如果 ``on_thread`` 設定為 ``true``\ （預設），則烘焙將在單獨的線程上完成。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Returns the axis-aligned rectangle for the region's transformed navigation mesh.
 
 :ref:`bool<class_bool>` **get_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationRegion2D_method_get_navigation_layer_value>`
 
-Returns whether or not the specified layer of the :ref:`navigation_layers<class_NavigationRegion2D_property_navigation_layers>` bitmask is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`navigation_layers<class_NavigationRegion2D_property_navigation_layers>` 位元遮罩中指定的層是否啟用，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Returns whether or not the specified layer of the :ref:`navigation_layers<class_
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_NavigationRegion2D_method_get_navigation_map>`
 
-Returns the current navigation map :ref:`RID<class_RID>` used by this region.
+設定該連結的導覽地圖 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ Returns the current navigation map :ref:`RID<class_RID>` used by this region.
 
 :ref:`RID<class_RID>` **get_region_rid**\ (\ ) |const| :ref:`🔗<class_NavigationRegion2D_method_get_region_rid>`
 
-**Deprecated:** Use :ref:`get_rid()<class_NavigationRegion2D_method_get_rid>` instead.
+**已棄用：** Use :ref:`get_rid()<class_NavigationRegion2D_method_get_rid>` instead.
 
 Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
@@ -300,7 +300,7 @@ Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer2D
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_NavigationRegion2D_method_get_rid>`
 
-Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer2D<class_NavigationServer2D>`. Combined with :ref:`NavigationServer2D.map_get_closest_point_owner()<class_NavigationServer2D_method_map_get_closest_point_owner>` can be used to identify the **NavigationRegion2D** closest to a point on the merged navigation map.
+返回 :ref:`NavigationServer2D<class_NavigationServer2D>` 上該區塊的 :ref:`RID<class_RID>`\ 。結合 :ref:`NavigationServer2D.map_get_closest_point_owner()<class_NavigationServer2D_method_map_get_closest_point_owner>` 可用於識別合併導覽地圖上離某點最近的 **NavigationRegion2D**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` when the :ref:`NavigationPolygon<class_NavigationPolygon>` is b
 
 |void| **set_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationRegion2D_method_set_navigation_layer_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`navigation_layers<class_NavigationRegion2D_property_navigation_layers>` bitmask, given a ``layer_number`` between 1 and 32.
+根據 ``value``\ ，啟用或禁用 :ref:`navigation_layers<class_NavigationRegion2D_property_navigation_layers>` 位元遮罩中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -336,14 +336,16 @@ Based on ``value``, enables or disables the specified layer in the :ref:`navigat
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NavigationRegion2D_method_set_navigation_map>`
 
-Sets the :ref:`RID<class_RID>` of the navigation map this region should use. By default the region will automatically join the :ref:`World2D<class_World2D>` default navigation map so this function is only required to override the default map.
+設定該區域應使用的導覽地圖的\ :ref:`RID<class_RID>`\ 。預設情況下，該區域將自動加入\ :ref:`World2D<class_World2D>`\ 預設導覽地圖，因此僅需要此函式來覆寫預設地圖。 “，““，“，“錯誤的”，””，”，”
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+doc/classes/NavigationRegion2D.xml"
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

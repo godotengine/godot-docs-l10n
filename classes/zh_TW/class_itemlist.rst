@@ -5,29 +5,29 @@
 ItemList
 ========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A vertical list of selectable items with one or multiple columns.
+可選專案的垂直列表，可以有一列或多列。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This control provides a vertical list of selectable items that may be in a single or in multiple columns, with each item having options for text and an icon. Tooltips are supported and may be different for every item in the list.
+該控制項提供了可選專案的垂直列表，這些專案可能位於單列或多列中，每個專案都有文本和圖示選項。支援工具提示，並且列表中的每個專案可能會有所不同。
 
-Selectable items in the list may be selected or deselected and multiple selection may be enabled. Selection with right mouse button may also be enabled to allow use of popup context menus. Items may also be "activated" by double-clicking them or by pressing :kbd:`Enter`.
+可以選擇或取消選擇列表中的可選專案，並且可以啟用多項選擇。也可以啟用用滑鼠右鍵進行選擇，以允許使用彈出本文功能表。專案也可以通過按兩下它們，或按 :kbd:`Enter` 來“啟動”。
 
-Item text only supports single-line strings. Newline characters (e.g. ``\n``) in the string won't produce a newline. Text wrapping is enabled in :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>` mode, but the column's width is adjusted to fully fit its content by default. You need to set :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` greater than zero to wrap the text.
+專案文字只支援單行字串。字串中的分行符號（例如 ``\n``\ ）不會產生換行。在 :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>` 模式下會啟用文字換行，但預設情況下會調整列的寬度以完全適合其內容。需要將 :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` 設定得大於零，才能換行文字。
 
-All ``set_*`` methods allow negative item indices, i.e. ``-1`` to access the last item, ``-2`` to select the second-to-last item, and so on.
+所有 ``set_*`` 方法都允許負的專案索引，例如 ``-1`` 存取的是最後一個專案，\ ``-2`` 選擇的是倒數第二個專案，以此類推。
 
-\ **Incremental search:** Like :ref:`PopupMenu<class_PopupMenu>` and :ref:`Tree<class_Tree>`, **ItemList** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **差異量搜索：**\ 與 :ref:`PopupMenu<class_PopupMenu>` 和 :ref:`Tree<class_Tree>` 一樣，\ **ItemList** 支援在控制項獲得焦點時在列表內進行搜索。按下與專案名稱的第一個字母配對的鍵，以選擇以給定字母開頭的第一個專案。在該點之後，有兩種方法可以執行差異量搜索： 1) 在超時持續時間之前再次按下相同的鍵，以選擇下一個以相同字母開頭的專案。 2) 在超時時間前，按配對單詞剩餘部分的字母鍵，將直接選擇問題項。如果自上次擊鍵被註冊後，超時持續時間已過，則這兩個動作都將被重設為列表的開頭。可以通過更改 :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>` 來調整超時持續時間。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -76,8 +76,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -182,8 +182,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -244,8 +244,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_ItemList_signal_empty_clicked:
 
@@ -315,8 +315,8 @@ Emitted when a multiple selection is altered on a list allowing multiple selecti
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_ItemList_IconMode:
 
@@ -330,7 +330,7 @@ enum **IconMode**: :ref:`🔗<enum_ItemList_IconMode>`
 
 :ref:`IconMode<enum_ItemList_IconMode>` **ICON_MODE_TOP** = ``0``
 
-Icon is drawn above the text.
+圖示繪製在文字上方。
 
 .. _class_ItemList_constant_ICON_MODE_LEFT:
 
@@ -338,7 +338,7 @@ Icon is drawn above the text.
 
 :ref:`IconMode<enum_ItemList_IconMode>` **ICON_MODE_LEFT** = ``1``
 
-Icon is drawn to the left of the text.
+圖示繪製在文字的左側。
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ enum **SelectMode**: :ref:`🔗<enum_ItemList_SelectMode>`
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_SINGLE** = ``0``
 
-Only allow selecting a single item.
+僅允許選擇單個專案。
 
 .. _class_ItemList_constant_SELECT_MULTI:
 
@@ -364,7 +364,7 @@ Only allow selecting a single item.
 
 :ref:`SelectMode<enum_ItemList_SelectMode>` **SELECT_MULTI** = ``1``
 
-Allows selecting multiple items by holding :kbd:`Ctrl` or :kbd:`Shift`.
+允許通過按住 :kbd:`Ctrl` 或 :kbd:`Shift` 來選擇多個專案。
 
 .. _class_ItemList_constant_SELECT_TOGGLE:
 
@@ -422,8 +422,8 @@ Only the bottom scroll hint will be shown.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ItemList_property_allow_reselect:
 
@@ -436,7 +436,7 @@ Property Descriptions
 - |void| **set_allow_reselect**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_reselect**\ (\ )
 
-If ``true``, the currently selected item can be selected again.
+如果為 ``true``\ ，則可以再次選擇目前選中的專案。
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ If ``true``, the currently selected item can be selected again.
 - |void| **set_allow_rmb_select**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_rmb_select**\ (\ )
 
-If ``true``, right mouse button click can select items.
+如果為 ``true``\ ，點擊滑鼠右鍵可以選中專案。
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ If ``true``, right mouse button click can select items.
 - |void| **set_allow_search**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_search**\ (\ )
 
-If ``true``, allows navigating the **ItemList** with letter keys through incremental search.
+如果為 ``true``\ ，則允許用字母鍵通過差異量搜索導覽 **ItemList**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +487,7 @@ If ``true``, allows navigating the **ItemList** with letter keys through increme
 - |void| **set_auto_height**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_auto_height**\ (\ )
 
-If ``true``, the control will automatically resize the height to fit its content.
+如果為 ``true``\ ，控制項將自動調整高度以適合其內容。
 
 .. rst-class:: classref-item-separator
 
@@ -521,9 +521,9 @@ If ``true``, the control will automatically resize the width to fit its content.
 - |void| **set_fixed_column_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fixed_column_width**\ (\ )
 
-The width all columns will be adjusted to.
+所有列的寬度將調整為。
 
-A value of zero disables the adjustment, each item will have a width equal to the width of its content and the columns will have an uneven width.
+零值禁用調整，每個專案的寬度將等於其內容的寬度，列的寬度將不均勻。
 
 .. rst-class:: classref-item-separator
 
@@ -540,9 +540,9 @@ A value of zero disables the adjustment, each item will have a width equal to th
 - |void| **set_fixed_icon_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_fixed_icon_size**\ (\ )
 
-The size all icons will be adjusted to.
+所有圖示將被調整到的尺寸。
 
-If either X or Y component is not greater than zero, icon size won't be affected.
+如果 X 或 Y 分量不大於 0，圖示的大小將不會受到影響。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ If either X or Y component is not greater than zero, icon size won't be affected
 - |void| **set_icon_mode**\ (\ value\: :ref:`IconMode<enum_ItemList_IconMode>`\ )
 - :ref:`IconMode<enum_ItemList_IconMode>` **get_icon_mode**\ (\ )
 
-The icon position, whether above or to the left of the text. See the :ref:`IconMode<enum_ItemList_IconMode>` constants.
+圖示的位置，是在文字的上方還是在文字的左邊。參閱 :ref:`IconMode<enum_ItemList_IconMode>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The icon position, whether above or to the left of the text. See the :ref:`IconM
 - |void| **set_icon_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_icon_scale**\ (\ )
 
-The scale of icon applied after :ref:`fixed_icon_size<class_ItemList_property_fixed_icon_size>` and transposing takes effect.
+在 :ref:`fixed_icon_size<class_ItemList_property_fixed_icon_size>` 和轉置生效後套用的圖示比例。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ The scale of icon applied after :ref:`fixed_icon_size<class_ItemList_property_fi
 - |void| **set_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_count**\ (\ )
 
-The number of items currently in the list.
+目前列表中的專案數。
 
 .. rst-class:: classref-item-separator
 
@@ -610,11 +610,11 @@ The number of items currently in the list.
 - |void| **set_max_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_columns**\ (\ )
 
-Maximum columns the list will have.
+列表將具有的最大列。
 
-If greater than zero, the content will be split among the specified columns.
+如果大於零，內容將被拆分為指定列。
 
-A value of zero means unlimited columns, i.e. all items will be put in the same row.
+零值意味著無限列，即所有專案將放在同一行中。
 
 .. rst-class:: classref-item-separator
 
@@ -631,9 +631,9 @@ A value of zero means unlimited columns, i.e. all items will be put in the same 
 - |void| **set_max_text_lines**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_text_lines**\ (\ )
 
-Maximum lines of text allowed in each item. Space will be reserved even when there is not enough lines of text to display.
+每個子項中允許的最大文字行數。即使沒有足夠的文字行數來顯示，也會保留空間。
 
-\ **Note:** This property takes effect only when :ref:`icon_mode<class_ItemList_property_icon_mode>` is :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>`. To make the text wrap, :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>` should be greater than zero.
+\ **注意：**\ 這個屬性只有在 :ref:`icon_mode<class_ItemList_property_icon_mode>` 是 :ref:`ICON_MODE_TOP<class_ItemList_constant_ICON_MODE_TOP>` 時才會生效。要使文字自動換行，\ :ref:`fixed_column_width<class_ItemList_property_fixed_column_width>`\ 應大於零。
 
 .. rst-class:: classref-item-separator
 
@@ -650,9 +650,9 @@ Maximum lines of text allowed in each item. Space will be reserved even when the
 - |void| **set_same_column_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_same_column_width**\ (\ )
 
-Whether all columns will have the same width.
+是否所有列的寬度相同。
 
-If ``true``, the width is equal to the largest column width of all columns.
+如果為 ``true``\ ，則寬度等於所有列的最大列寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_select_mode**\ (\ value\: :ref:`SelectMode<enum_ItemList_SelectMode>`\ )
 - :ref:`SelectMode<enum_ItemList_SelectMode>` **get_select_mode**\ (\ )
 
-Allows single or multiple item selection. See the :ref:`SelectMode<enum_ItemList_SelectMode>` constants.
+允許單選或多選。參閱\ :ref:`SelectMode<enum_ItemList_SelectMode>`\ 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -747,8 +747,8 @@ If ``false``, the control will add a horizontal scrollbar to make all items visi
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ItemList_method_add_icon_item:
 
@@ -756,7 +756,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **add_icon_item**\ (\ icon\: :ref:`Texture2D<class_Texture2D>`, selectable\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_add_icon_item>`
 
-Adds an item to the item list with no text, only an icon. Returns the index of an added item.
+將一個專案新增到專案列表中，沒有文字，只有一個圖示。返回新增的項的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ If ``selectable`` is ``true``, the list item will be selectable.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_ItemList_method_clear>`
 
-Removes all items from the list.
+移除列表中的所有專案。
 
 .. rst-class:: classref-item-separator
 
@@ -796,7 +796,7 @@ Removes all items from the list.
 
 |void| **deselect**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_method_deselect>`
 
-Ensures the item associated with the specified index is not selected.
+確保與指定索引相關的專案不被選中。
 
 .. rst-class:: classref-item-separator
 
@@ -808,7 +808,7 @@ Ensures the item associated with the specified index is not selected.
 
 |void| **deselect_all**\ (\ ) :ref:`🔗<class_ItemList_method_deselect_all>`
 
-Ensures there are no items selected.
+確保沒有選擇任何專案。
 
 .. rst-class:: classref-item-separator
 
@@ -820,7 +820,7 @@ Ensures there are no items selected.
 
 |void| **ensure_current_is_visible**\ (\ ) :ref:`🔗<class_ItemList_method_ensure_current_is_visible>`
 
-Ensure current selection is visible, adjusting the scroll position as necessary.
+確保目前選擇可見，根據需要調整滾動位置。
 
 .. rst-class:: classref-item-separator
 
@@ -832,7 +832,7 @@ Ensure current selection is visible, adjusting the scroll position as necessary.
 
 |void| **force_update_list_size**\ (\ ) :ref:`🔗<class_ItemList_method_force_update_list_size>`
 
-Forces an update to the list size based on its items. This happens automatically whenever size of the items, or other relevant settings like :ref:`auto_height<class_ItemList_property_auto_height>`, change. The method can be used to trigger the update ahead of next drawing pass.
+根據其專案強制更新列表大小。只要專案的大小或其他相關設定（例如 :ref:`auto_height<class_ItemList_property_auto_height>`\ ）發生更改，這種情況就會自動發生。該方法可用於在下方一次繪圖前觸發更新。
 
 .. rst-class:: classref-item-separator
 
@@ -858,11 +858,11 @@ Returns the horizontal scrollbar.
 
 :ref:`int<class_int>` **get_item_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`, exact\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_ItemList_method_get_item_at_position>`
 
-Returns the item index at the given ``position``.
+返回位於給定位置 ``position`` 的專案的索引。
 
-When there is no item at that point, -1 will be returned if ``exact`` is ``true``, and the closest item index will be returned otherwise.
+這個位置沒有專案時，如果 ``exact`` 為 ``true`` 則會返回 -1，否則會返回距離最近的專案的索引。
 
-\ **Note:** The returned value is unreliable if called right after modifying the **ItemList**, before it redraws in the next frame.
+\ **注意：**\ 如果修改 **ItemList** 後立即呼叫，尚未在下一影格中重繪，則返回值不可靠。
 
 .. rst-class:: classref-item-separator
 
@@ -886,7 +886,7 @@ Returns item's auto translate mode.
 
 :ref:`Color<class_Color>` **get_item_custom_bg_color**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_custom_bg_color>`
 
-Returns the custom background color of the item specified by ``idx`` index.
+返回專案的自訂背景色，專案由索引 ``idx`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -898,7 +898,7 @@ Returns the custom background color of the item specified by ``idx`` index.
 
 :ref:`Color<class_Color>` **get_item_custom_fg_color**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_custom_fg_color>`
 
-Returns the custom foreground color of the item specified by ``idx`` index.
+返回專案的自訂前景色，專案由索引 ``idx`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -910,7 +910,7 @@ Returns the custom foreground color of the item specified by ``idx`` index.
 
 :ref:`Texture2D<class_Texture2D>` **get_item_icon**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_icon>`
 
-Returns the icon associated with the specified index.
+返回與指定索引相關的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -922,7 +922,7 @@ Returns the icon associated with the specified index.
 
 :ref:`Color<class_Color>` **get_item_icon_modulate**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_icon_modulate>`
 
-Returns a :ref:`Color<class_Color>` modulating item's icon at the specified index.
+返回指定索引處的 :ref:`Color<class_Color>` 顏色調變項的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -934,7 +934,7 @@ Returns a :ref:`Color<class_Color>` modulating item's icon at the specified inde
 
 :ref:`Rect2<class_Rect2>` **get_item_icon_region**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_icon_region>`
 
-Returns the region of item's icon used. The whole icon will be used if the region has no area.
+返回專案圖示的使用區域。如果該區域大小為 0，整個圖示將被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -946,7 +946,7 @@ Returns the region of item's icon used. The whole icon will be used if the regio
 
 :ref:`String<class_String>` **get_item_language**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_language>`
 
-Returns item's text language code.
+返回專案文字的語言程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -958,7 +958,7 @@ Returns item's text language code.
 
 :ref:`Variant<class_Variant>` **get_item_metadata**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_metadata>`
 
-Returns the metadata value of the specified index.
+返回指定索引的中繼資料值。
 
 .. rst-class:: classref-item-separator
 
@@ -970,9 +970,9 @@ Returns the metadata value of the specified index.
 
 :ref:`Rect2<class_Rect2>` **get_item_rect**\ (\ idx\: :ref:`int<class_int>`, expand\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_ItemList_method_get_item_rect>`
 
-Returns the position and size of the item with the specified index, in the coordinate system of the **ItemList** node. If ``expand`` is ``true`` the last column expands to fill the rest of the row.
+返回具有給定索引的專案的位置和大小，使用 **ItemList** 節點的坐標系。如果 ``expand`` 為 ``true``\ ，則會將最後一列進行擴充，充滿該行剩餘的大小。
 
-\ **Note:** The returned value is unreliable if called right after modifying the **ItemList**, before it redraws in the next frame.
+\ **注意：**\ 如果修改 **ItemList** 後立即呼叫，尚未在下一影格中重繪，則返回值不可靠。
 
 .. rst-class:: classref-item-separator
 
@@ -984,7 +984,7 @@ Returns the position and size of the item with the specified index, in the coord
 
 :ref:`String<class_String>` **get_item_text**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_text>`
 
-Returns the text associated with the specified index.
+返回與指定索引關聯的文字。
 
 .. rst-class:: classref-item-separator
 
@@ -996,7 +996,7 @@ Returns the text associated with the specified index.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **get_item_text_direction**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_text_direction>`
 
-Returns item's text base writing direction.
+返回專案文字的基礎書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1008,7 +1008,7 @@ Returns item's text base writing direction.
 
 :ref:`String<class_String>` **get_item_tooltip**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_get_item_tooltip>`
 
-Returns the tooltip hint associated with the specified index.
+返回與指定索引關聯的工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -1020,7 +1020,7 @@ Returns the tooltip hint associated with the specified index.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_selected_items**\ (\ ) :ref:`🔗<class_ItemList_method_get_selected_items>`
 
-Returns an array with the indexes of the selected items.
+返回一個包含所選專案索引的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -1032,9 +1032,9 @@ Returns an array with the indexes of the selected items.
 
 :ref:`VScrollBar<class_VScrollBar>` **get_v_scroll_bar**\ (\ ) :ref:`🔗<class_ItemList_method_get_v_scroll_bar>`
 
-Returns the vertical scrollbar.
+返回垂直捲動條。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，刪除和釋放它可能會導致當機。如果你希望隱藏它或其任何子項，請使用它們的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -1046,7 +1046,7 @@ Returns the vertical scrollbar.
 
 :ref:`bool<class_bool>` **is_anything_selected**\ (\ ) :ref:`🔗<class_ItemList_method_is_anything_selected>`
 
-Returns ``true`` if one or more items are selected.
+選中了一個或多個專案時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1058,7 +1058,7 @@ Returns ``true`` if one or more items are selected.
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_disabled>`
 
-Returns ``true`` if the item at the specified index is disabled.
+索引所對應的專案被禁用時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1070,7 +1070,7 @@ Returns ``true`` if the item at the specified index is disabled.
 
 :ref:`bool<class_bool>` **is_item_icon_transposed**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_icon_transposed>`
 
-Returns ``true`` if the item icon will be drawn transposed, i.e. the X and Y axes are swapped.
+專案圖示被轉置繪製，即 X 和 Y 軸互換時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1082,7 +1082,7 @@ Returns ``true`` if the item icon will be drawn transposed, i.e. the X and Y axe
 
 :ref:`bool<class_bool>` **is_item_selectable**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_selectable>`
 
-Returns ``true`` if the item at the specified index is selectable.
+索引所對應的專案可以被選中時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1094,7 @@ Returns ``true`` if the item at the specified index is selectable.
 
 :ref:`bool<class_bool>` **is_item_tooltip_enabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_item_tooltip_enabled>`
 
-Returns ``true`` if the tooltip is enabled for specified item index.
+索引所對應的專案已啟用工具提示時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1106,7 +1106,7 @@ Returns ``true`` if the tooltip is enabled for specified item index.
 
 :ref:`bool<class_bool>` **is_selected**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ItemList_method_is_selected>`
 
-Returns ``true`` if the item at the specified index is currently selected.
+索引所對應的專案被選中時，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1118,7 +1118,7 @@ Returns ``true`` if the item at the specified index is currently selected.
 
 |void| **move_item**\ (\ from_idx\: :ref:`int<class_int>`, to_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_method_move_item>`
 
-Moves item from index ``from_idx`` to ``to_idx``.
+將專案從索引 ``from_idx`` 移到 ``to_idx``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1130,7 +1130,7 @@ Moves item from index ``from_idx`` to ``to_idx``.
 
 |void| **remove_item**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ItemList_method_remove_item>`
 
-Removes the item specified by ``idx`` index from the list.
+從列表中刪除索引 ``idx`` 指定的專案。
 
 .. rst-class:: classref-item-separator
 
@@ -1142,9 +1142,9 @@ Removes the item specified by ``idx`` index from the list.
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`, single\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_ItemList_method_select>`
 
-Select the item at the specified index.
+選擇指定索引處的專案。
 
-\ **Note:** This method does not trigger the item selection signal.
+\ **注意：**\ 此方法不觸發專案選擇訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -1170,7 +1170,7 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_custom_bg_color**\ (\ idx\: :ref:`int<class_int>`, custom_bg_color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ItemList_method_set_item_custom_bg_color>`
 
-Sets the background color of the item specified by ``idx`` index to the specified :ref:`Color<class_Color>`.
+將索引 ``idx`` 指定的專案的背景色設定為指定的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1182,7 +1182,7 @@ Sets the background color of the item specified by ``idx`` index to the specifie
 
 |void| **set_item_custom_fg_color**\ (\ idx\: :ref:`int<class_int>`, custom_fg_color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ItemList_method_set_item_custom_fg_color>`
 
-Sets the foreground color of the item specified by ``idx`` index to the specified :ref:`Color<class_Color>`.
+將索引 ``idx`` 指定的專案的前景色設定為指定的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1194,9 +1194,9 @@ Sets the foreground color of the item specified by ``idx`` index to the specifie
 
 |void| **set_item_disabled**\ (\ idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_disabled>`
 
-Disables (or enables) the item at the specified index.
+禁用（或啟用）指定索引處的專案。
 
-Disabled items cannot be selected and do not trigger activation signals (when double-clicking or pressing :kbd:`Enter`).
+禁用的專案不能被選中，也不會觸發（按兩下或按 :kbd:`Enter` 時的）啟動訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -1208,7 +1208,7 @@ Disabled items cannot be selected and do not trigger activation signals (when do
 
 |void| **set_item_icon**\ (\ idx\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon>`
 
-Sets (or replaces) the icon's :ref:`Texture2D<class_Texture2D>` associated with the specified index.
+設定（或替換）與指定索引關聯的圖示 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1220,7 +1220,7 @@ Sets (or replaces) the icon's :ref:`Texture2D<class_Texture2D>` associated with 
 
 |void| **set_item_icon_modulate**\ (\ idx\: :ref:`int<class_int>`, modulate\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon_modulate>`
 
-Sets a modulating :ref:`Color<class_Color>` of the item associated with the specified index.
+設定與指定索引相關的專案的調變顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1232,7 +1232,7 @@ Sets a modulating :ref:`Color<class_Color>` of the item associated with the spec
 
 |void| **set_item_icon_region**\ (\ idx\: :ref:`int<class_int>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon_region>`
 
-Sets the region of item's icon used. The whole icon will be used if the region has no area.
+設定專案圖示的使用區域。如果該區域大小為 0，將使用整個圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1244,7 +1244,7 @@ Sets the region of item's icon used. The whole icon will be used if the region h
 
 |void| **set_item_icon_transposed**\ (\ idx\: :ref:`int<class_int>`, transposed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_icon_transposed>`
 
-Sets whether the item icon will be drawn transposed.
+設定專案圖示是否將被轉置繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -1268,7 +1268,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 |void| **set_item_metadata**\ (\ idx\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ItemList_method_set_item_metadata>`
 
-Sets a value (of any type) to be stored with the item associated with the specified index.
+設定與指定索引相關的專案儲存的值（任何型別的值）。
 
 .. rst-class:: classref-item-separator
 
@@ -1280,7 +1280,7 @@ Sets a value (of any type) to be stored with the item associated with the specif
 
 |void| **set_item_selectable**\ (\ idx\: :ref:`int<class_int>`, selectable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_selectable>`
 
-Allows or disallows selection of the item associated with the specified index.
+允許或禁止選擇與指定索引關聯的專案。
 
 .. rst-class:: classref-item-separator
 
@@ -1292,7 +1292,7 @@ Allows or disallows selection of the item associated with the specified index.
 
 |void| **set_item_text**\ (\ idx\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_text>`
 
-Sets text of the item associated with the specified index.
+設定與指定索引相關的專案的文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1304,7 +1304,7 @@ Sets text of the item associated with the specified index.
 
 |void| **set_item_text_direction**\ (\ idx\: :ref:`int<class_int>`, direction\: :ref:`TextDirection<enum_Control_TextDirection>`\ ) :ref:`🔗<class_ItemList_method_set_item_text_direction>`
 
-Sets item's text base writing direction.
+設定專案文字的基礎書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1316,7 +1316,7 @@ Sets item's text base writing direction.
 
 |void| **set_item_tooltip**\ (\ idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_tooltip>`
 
-Sets the tooltip hint for the item associated with the specified index.
+設定與指定索引相關的專案的工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -1328,7 +1328,7 @@ Sets the tooltip hint for the item associated with the specified index.
 
 |void| **set_item_tooltip_enabled**\ (\ idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ItemList_method_set_item_tooltip_enabled>`
 
-Sets whether the tooltip hint is enabled for specified item index.
+設定是否為指定的專案索引啟用工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -1340,7 +1340,7 @@ Sets whether the tooltip hint is enabled for specified item index.
 
 |void| **sort_items_by_text**\ (\ ) :ref:`🔗<class_ItemList_method_sort_items_by_text>`
 
-Sorts items in the list by their text.
+按文字對列表中的專案進行排序。
 
 .. rst-class:: classref-section-separator
 
@@ -1348,8 +1348,8 @@ Sorts items in the list by their text.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_ItemList_theme_color_font_color:
 
@@ -1357,7 +1357,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.65, 0.65, 0.65, 1)`` :ref:`🔗<class_ItemList_theme_color_font_color>`
 
-Default text :ref:`Color<class_Color>` of the item.
+專案的預設文字顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1369,7 +1369,7 @@ Default text :ref:`Color<class_Color>` of the item.
 
 :ref:`Color<class_Color>` **font_hovered_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_ItemList_theme_color_font_hovered_color>`
 
-Text :ref:`Color<class_Color>` used when the item is hovered and not selected yet.
+專案處於懸停但未選中狀態時使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1393,7 +1393,7 @@ Text :ref:`Color<class_Color>` used when the item is hovered and selected.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_font_outline_color>`
 
-The tint of text outline of the item.
+專案文字輪廓的色調。
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ Text :ref:`Color<class_Color>` used when the item is selected, but not hovered.
 
 :ref:`Color<class_Color>` **guide_color** = ``Color(0.7, 0.7, 0.7, 0.25)`` :ref:`🔗<class_ItemList_theme_color_guide_color>`
 
-:ref:`Color<class_Color>` of the guideline. The guideline is a line drawn between each row of items.
+輔助線的顏色 :ref:`Color<class_Color>`\ 。輔助線是在每行專案之間畫的一條線。
 
 .. rst-class:: classref-item-separator
 
@@ -1441,7 +1441,7 @@ Text :ref:`Color<class_Color>` used when the item is selected, but not hovered.
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_ItemList_theme_constant_h_separation>`
 
-The horizontal spacing between items.
+專案之間的水平間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1453,7 @@ The horizontal spacing between items.
 
 :ref:`int<class_int>` **icon_margin** = ``4`` :ref:`🔗<class_ItemList_theme_constant_icon_margin>`
 
-The spacing between item's icon and text.
+專案的圖示和文字之間的間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1465,7 @@ The spacing between item's icon and text.
 
 :ref:`int<class_int>` **line_separation** = ``2`` :ref:`🔗<class_ItemList_theme_constant_line_separation>`
 
-The vertical spacing between each line of text.
+每行文字之間的行距。
 
 .. rst-class:: classref-item-separator
 
@@ -1477,9 +1477,9 @@ The vertical spacing between each line of text.
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_ItemList_theme_constant_outline_size>`
 
-The size of the item text outline.
+專案文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_ItemList_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_ItemList_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1491,7 +1491,7 @@ The size of the item text outline.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_ItemList_theme_constant_v_separation>`
 
-The vertical spacing between items.
+專案選單之間的垂直間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1503,7 +1503,7 @@ The vertical spacing between items.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_ItemList_theme_font_font>`
 
-:ref:`Font<class_Font>` of the item's text.
+專案文字的字形 :ref:`Font<class_Font>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -1515,7 +1515,7 @@ The vertical spacing between items.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_ItemList_theme_font_size_font_size>`
 
-Font size of the item's text.
+專案文字的字形大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1539,7 +1539,7 @@ The indicator that will be shown when the content can still be scrolled. See :re
 
 :ref:`StyleBox<class_StyleBox>` **cursor** :ref:`🔗<class_ItemList_theme_style_cursor>`
 
-:ref:`StyleBox<class_StyleBox>` used for the cursor, when the **ItemList** is being focused.
+當該 **ItemList** 獲得焦點時，用作游標的樣式盒 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1551,7 +1551,7 @@ The indicator that will be shown when the content can still be scrolled. See :re
 
 :ref:`StyleBox<class_StyleBox>` **cursor_unfocused** :ref:`🔗<class_ItemList_theme_style_cursor_unfocused>`
 
-:ref:`StyleBox<class_StyleBox>` used for the cursor, when the **ItemList** is not being focused.
+當該 **ItemList** 未獲得焦點時，用作游標的樣式盒 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1575,7 +1575,7 @@ The focused style for the **ItemList**, drawn on top of everything.
 
 :ref:`StyleBox<class_StyleBox>` **hovered** :ref:`🔗<class_ItemList_theme_style_hovered>`
 
-:ref:`StyleBox<class_StyleBox>` for the hovered, but not selected items.
+懸停但未被選中的專案的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1611,7 +1611,7 @@ The focused style for the **ItemList**, drawn on top of everything.
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_ItemList_theme_style_panel>`
 
-The background style for the **ItemList**.
+該 **ItemList** 的預設背景。
 
 .. rst-class:: classref-item-separator
 
@@ -1623,7 +1623,7 @@ The background style for the **ItemList**.
 
 :ref:`StyleBox<class_StyleBox>` **selected** :ref:`🔗<class_ItemList_theme_style_selected>`
 
-:ref:`StyleBox<class_StyleBox>` for the selected items, used when the **ItemList** is not being focused.
+所選項的樣式盒 :ref:`StyleBox<class_StyleBox>`\ ，當該 **ItemList** 未獲得焦點時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1635,14 +1635,14 @@ The background style for the **ItemList**.
 
 :ref:`StyleBox<class_StyleBox>` **selected_focus** :ref:`🔗<class_ItemList_theme_style_selected_focus>`
 
-:ref:`StyleBox<class_StyleBox>` for the selected items, used when the **ItemList** is being focused.
+所選項的樣式盒 :ref:`StyleBox<class_StyleBox>`\ ，當該 **ItemList** 獲得焦點時使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

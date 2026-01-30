@@ -5,21 +5,21 @@
 VisualShaderNodeParticleEmit
 ============================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A visual shader node that forces to emit a particle from a sub-emitter.
+一種視覺化著色器節點，強制從子發射器中發射一個粒子。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This node internally calls ``emit_subparticle`` shader method. It will emit a particle from the configured sub-emitter and also allows to customize how its emitted. Requires a sub-emitter assigned to the particles node with this shader.
+該節點在內部呼叫 ``emit_subparticle`` 著色器方法。它將從配置的子發射器發射一個粒子，還允許自訂其發射方式。需要使用該著色器將子發射器分配給粒子節點。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeParticleEmit_EmitFlags:
 
@@ -49,7 +49,7 @@ enum **EmitFlags**: :ref:`🔗<enum_VisualShaderNodeParticleEmit_EmitFlags>`
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_POSITION** = ``1``
 
-If enabled, the particle starts with the position defined by this node.
+如果啟用，則粒子從該節點所定義的位置開始。
 
 .. _class_VisualShaderNodeParticleEmit_constant_EMIT_FLAG_ROT_SCALE:
 
@@ -57,7 +57,7 @@ If enabled, the particle starts with the position defined by this node.
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_ROT_SCALE** = ``2``
 
-If enabled, the particle starts with the rotation and scale defined by this node.
+如果啟用，則粒子從該節點所定義的旋轉和縮放開始。
 
 .. _class_VisualShaderNodeParticleEmit_constant_EMIT_FLAG_VELOCITY:
 
@@ -65,7 +65,7 @@ If enabled, the particle starts with the rotation and scale defined by this node
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_VELOCITY** = ``4``
 
-If enabled,the particle starts with the velocity defined by this node.
+如果啟用，則粒子從該節點所定義的速度開始。
 
 .. _class_VisualShaderNodeParticleEmit_constant_EMIT_FLAG_COLOR:
 
@@ -73,7 +73,7 @@ If enabled,the particle starts with the velocity defined by this node.
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_COLOR** = ``8``
 
-If enabled, the particle starts with the color defined by this node.
+如果啟用，則粒子從該節點所定義的顏色開始。
 
 .. _class_VisualShaderNodeParticleEmit_constant_EMIT_FLAG_CUSTOM:
 
@@ -81,7 +81,7 @@ If enabled, the particle starts with the color defined by this node.
 
 :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **EMIT_FLAG_CUSTOM** = ``16``
 
-If enabled, the particle starts with the ``CUSTOM`` data defined by this node.
+如果啟用，則粒子從該節點所定義的 ``CUSTOM`` 自訂資料開始。
 
 .. rst-class:: classref-section-separator
 
@@ -89,8 +89,8 @@ If enabled, the particle starts with the ``CUSTOM`` data defined by this node.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeParticleEmit_property_flags:
 
@@ -103,14 +103,14 @@ Property Descriptions
 - |void| **set_flags**\ (\ value\: :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>`\ )
 - :ref:`EmitFlags<enum_VisualShaderNodeParticleEmit_EmitFlags>` **get_flags**\ (\ )
 
-Flags used to override the properties defined in the sub-emitter's process material.
+用於覆蓋子發射器處理材質中定義的屬性的旗標。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

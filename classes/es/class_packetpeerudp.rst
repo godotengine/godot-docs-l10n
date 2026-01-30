@@ -116,7 +116,7 @@ If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::
 
 |void| **close**\ (\ ) :ref:`🔗<class_PacketPeerUDP_method_close>`
 
-Closes the **PacketPeerUDP**'s underlying UDP socket.
+Cierra el socket UDP subyacente del **PacketPeerUDP**.
 
 .. rst-class:: classref-item-separator
 
@@ -128,9 +128,9 @@ Closes the **PacketPeerUDP**'s underlying UDP socket.
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PacketPeerUDP_method_connect_to_host>`
 
-Calling this method connects this UDP peer to the given ``host``/``port`` pair. UDP is in reality connectionless, so this option only means that incoming packets from different addresses are automatically discarded, and that outgoing packets are always sent to the connected address (future calls to :ref:`set_dest_address()<class_PacketPeerUDP_method_set_dest_address>` are not allowed). This method does not send any data to the remote peer, to do that, use :ref:`PacketPeer.put_var()<class_PacketPeer_method_put_var>` or :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>` as usual. See also :ref:`UDPServer<class_UDPServer>`.
+Llamar a este método conecta este peer UDP al par ``host``/``port`` dado. UDP es en realidad sin conexión, por lo que esta opción solo significa que los paquetes entrantes de diferentes direcciones son automáticamente descartados, y que los paquetes salientes son siempre enviados a la dirección conectada (no se permiten futuras llamadas a :ref:`set_dest_address()<class_PacketPeerUDP_method_set_dest_address>`). Este método no envía ningún dato al peer remoto; para ello, utiliza :ref:`PacketPeer.put_var()<class_PacketPeer_method_put_var>` o :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>` como es habitual. Véase también :ref:`UDPServer<class_UDPServer>`.
 
-\ **Note:** Connecting to the remote peer does not help to protect from malicious attacks like IP spoofing, etc. Think about using an encryption technique like TLS or DTLS if you feel like your application is transferring sensitive information.
+\ **Nota:** Conectarse al peer remoto no ayuda a protegerte de ataques maliciosos como el spoofing de IP, etc. Piensa en utilizar una técnica de encriptación como TLS o DTLS si crees que tu aplicación está transfiriendo información sensible.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Devuelve el puerto del par remoto que envió el último paquete (que fue recibid
 
 :ref:`bool<class_bool>` **is_bound**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_is_bound>`
 
-Returns whether this **PacketPeerUDP** is bound to an address and can receive packets.
+Devuelve si este **PacketPeerUDP** está enlazado a una dirección y puede recibir paquetes.
 
 .. rst-class:: classref-item-separator
 
@@ -230,9 +230,9 @@ Removes the interface identified by ``interface_name`` from the multicast group 
 
 |void| **set_broadcast_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PacketPeerUDP_method_set_broadcast_enabled>`
 
-Enable or disable sending of broadcast packets (e.g. ``set_dest_address("255.255.255.255", 4343)``. This option is disabled by default.
+Habilita o deshabilita el envío de paquetes de emisión (por ejemplo, ``set_dest_address("255.255.255.255", 4343)``). Esta opción está deshabilitada por defecto.
 
-\ **Note:** Some Android devices might require the ``CHANGE_WIFI_MULTICAST_STATE`` permission and this option to be enabled to receive broadcast packets too.
+\ **Nota:** Algunos dispositivos Android pueden requerir el permiso ``CHANGE_WIFI_MULTICAST_STATE`` y que esta opción esté habilitada para recibir también paquetes de emisión.
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Enable or disable sending of broadcast packets (e.g. ``set_dest_address("255.255
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_dest_address**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PacketPeerUDP_method_set_dest_address>`
 
-Sets the destination address and port for sending packets and variables. A hostname will be resolved using DNS if needed.
+Establece la dirección y el puerto de destino para el envío de paquetes y variables. Un nombre de host será resuelto usando DNS si es necesario.
 
-\ **Note:** :ref:`set_broadcast_enabled()<class_PacketPeerUDP_method_set_broadcast_enabled>` must be enabled before sending packets to a broadcast address (e.g. ``255.255.255.255``).
+\ **Nota:** :ref:`set_broadcast_enabled()<class_PacketPeerUDP_method_set_broadcast_enabled>` debe estar habilitado antes de enviar paquetes a una dirección de difusión (por ejemplo, ``255.255.255.255``).
 
 .. rst-class:: classref-item-separator
 

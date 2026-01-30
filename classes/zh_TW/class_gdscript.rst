@@ -5,32 +5,32 @@
 GDScript
 ========
 
-**Inherits:** :ref:`Script<class_Script>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Script<class_Script>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A script implemented in the GDScript programming language.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A script implemented in the GDScript programming language, saved with the ``.gd`` extension. The script extends the functionality of all objects that instantiate it.
-
-Calling :ref:`new()<class_GDScript_method_new>` creates a new instance of the script. :ref:`Object.set_script()<class_Object_method_set_script>` extends an existing object, if that object's class matches one of the script's base classes.
-
-If you are looking for GDScript's built-in functions, see :ref:`@GDScript<class_@GDScript>` instead.
+用 GDScript 程式設計語言實作的腳本。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`GDScript documentation index <../tutorials/scripting/gdscript/index>`
+用 GDScript 程式設計語言實作的腳本，使用 ``.gd`` 副檔名保存。該腳本擴充了將其產生實體的所有物件的功能。
+
+呼叫 :ref:`new()<class_GDScript_method_new>` 會建立該腳本的全新實例。如果現有物件的類與該腳本的基底類別相匹配，那麼 :ref:`Object.set_script()<class_Object_method_set_script>` 就能夠擴充該物件。
+
+如果你想要查看 GDScript 的內建函式，請移步 :ref:`@GDScript<class_@GDScript>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`GDScript 文件索引 <../tutorials/scripting/gdscript/index>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_GDScript_method_new:
 
@@ -54,20 +54,20 @@ Method Descriptions
 
 :ref:`Variant<class_Variant>` **new**\ (\ ...\ ) |vararg| :ref:`🔗<class_GDScript_method_new>`
 
-Returns a new instance of the script.
+回傳此腳本的一個新實例。
 
 ::
 
     var MyClass = load("myclass.gd")
     var instance = MyClass.new()
-    print(instance.get_script() == MyClass) # Prints true
+    print(instance.get_script() == MyClass) # 輸出 true
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

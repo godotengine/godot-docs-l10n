@@ -5,25 +5,25 @@
 CameraServer
 ============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Server keeping track of different cameras accessible in Godot.
+跟踪 Godot 中可访问的不同摄像头的服务器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-The **CameraServer** keeps track of different cameras accessible in Godot. These are external cameras such as webcams or the cameras on your phone.
+**CameraServer** 记录了 Godot 中可访问的不同相机。此处的相机指外部相机，例如网络摄像头或手机上的摄像头。
 
-It is notably used to provide AR modules with a video feed from the camera.
+主要用于为 AR 模块提供来自相机的视频源。
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no :ref:`CameraFeed<class_CameraFeed>`\ s will be available. To get a :ref:`CameraFeed<class_CameraFeed>` on iOS, the camera plugin from `godot-ios-plugins <https://github.com/godotengine/godot-ios-plugins>`__ is required.
+\ **注意：**\ 这个类目前只在 Linux、Android、macOS 和 iOS 上实现。在其他平台上没有可用的 :ref:`CameraFeed<class_CameraFeed>`\ 。在 iOS 上获取 :ref:`CameraFeed<class_CameraFeed>` 需要 `godot-ios-plugins <https://github.com/godotengine/godot-ios-plugins>`__ 中的相机插件。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CameraServer_signal_camera_feed_added:
 
@@ -67,7 +67,7 @@ Signals
 
 **camera_feed_added**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraServer_signal_camera_feed_added>`
 
-Emitted when a :ref:`CameraFeed<class_CameraFeed>` is added (e.g. a webcam is plugged in).
+当添加 :ref:`CameraFeed<class_CameraFeed>` 时发出（例如插入网络摄像头时）。
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Emitted when a :ref:`CameraFeed<class_CameraFeed>` is added (e.g. a webcam is pl
 
 **camera_feed_removed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraServer_signal_camera_feed_removed>`
 
-Emitted when a :ref:`CameraFeed<class_CameraFeed>` is removed (e.g. a webcam is unplugged).
+当移除 :ref:`CameraFeed<class_CameraFeed>` 时发出（例如拔掉网络摄像头时）。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Emitted when a :ref:`CameraFeed<class_CameraFeed>` is removed (e.g. a webcam is 
 
 **camera_feeds_updated**\ (\ ) :ref:`🔗<class_CameraServer_signal_camera_feeds_updated>`
 
-Emitted when camera feeds are updated.
+更新相机源时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -99,8 +99,8 @@ Emitted when camera feeds are updated.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CameraServer_FeedImage:
 
@@ -114,7 +114,7 @@ enum **FeedImage**: :ref:`🔗<enum_CameraServer_FeedImage>`
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_RGBA_IMAGE** = ``0``
 
-The RGBA camera image.
+RGBA 相机图像。
 
 .. _class_CameraServer_constant_FEED_YCBCR_IMAGE:
 
@@ -122,7 +122,7 @@ The RGBA camera image.
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_YCBCR_IMAGE** = ``0``
 
-The `YCbCr <https://en.wikipedia.org/wiki/YCbCr>`__ camera image.
+`YCbCr <https://zh.wikipedia.org/zh-cn/YCbCr>`__ 相机图像。
 
 .. _class_CameraServer_constant_FEED_Y_IMAGE:
 
@@ -130,7 +130,7 @@ The `YCbCr <https://en.wikipedia.org/wiki/YCbCr>`__ camera image.
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_Y_IMAGE** = ``0``
 
-The Y component camera image.
+Y 分量相机图像。
 
 .. _class_CameraServer_constant_FEED_CBCR_IMAGE:
 
@@ -138,7 +138,7 @@ The Y component camera image.
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_CBCR_IMAGE** = ``1``
 
-The CbCr component camera image.
+CbCr 分量相机图像。
 
 .. rst-class:: classref-section-separator
 
@@ -146,8 +146,8 @@ The CbCr component camera image.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CameraServer_property_monitoring_feeds:
 
@@ -160,11 +160,11 @@ Property Descriptions
 - |void| **set_monitoring_feeds**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_monitoring_feeds**\ (\ )
 
-If ``true``, the server is actively monitoring available camera feeds.
+如果为 ``true``\ ，则服务器会主动监听可用的相机源。
 
-This has a performance cost, so only set it to ``true`` when you're actively accessing the camera.
+这样做存在性能开销，因此请只在主动访问相机时将其设为 ``true``\ 。
 
-\ **Note:** After setting it to ``true``, you can receive updated camera feeds through the :ref:`camera_feeds_updated<class_CameraServer_signal_camera_feeds_updated>` signal.
+\ **注意：**\ 设为 ``true`` 后，你可以通过 :ref:`camera_feeds_updated<class_CameraServer_signal_camera_feeds_updated>` 信号获取更新后的相机源。
 
 
 .. tabs::
@@ -199,8 +199,8 @@ This has a performance cost, so only set it to ``true`` when you're actively acc
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CameraServer_method_add_feed:
 
@@ -208,7 +208,7 @@ Method Descriptions
 
 |void| **add_feed**\ (\ feed\: :ref:`CameraFeed<class_CameraFeed>`\ ) :ref:`🔗<class_CameraServer_method_add_feed>`
 
-Adds the camera ``feed`` to the camera server.
+将相机源 ``feed`` 添加到相机服务器中。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Adds the camera ``feed`` to the camera server.
 
 :ref:`Array<class_Array>`\[:ref:`CameraFeed<class_CameraFeed>`\] **feeds**\ (\ ) :ref:`🔗<class_CameraServer_method_feeds>`
 
-Returns an array of :ref:`CameraFeed<class_CameraFeed>`\ s.
+返回一个 :ref:`CameraFeed<class_CameraFeed>` 数组。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Returns an array of :ref:`CameraFeed<class_CameraFeed>`\ s.
 
 :ref:`CameraFeed<class_CameraFeed>` **get_feed**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraServer_method_get_feed>`
 
-Returns the :ref:`CameraFeed<class_CameraFeed>` corresponding to the camera with the given ``index``.
+返回与给定索引 ``index`` 的相机对应的 :ref:`CameraFeed<class_CameraFeed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Returns the :ref:`CameraFeed<class_CameraFeed>` corresponding to the camera with
 
 :ref:`int<class_int>` **get_feed_count**\ (\ ) :ref:`🔗<class_CameraServer_method_get_feed_count>`
 
-Returns the number of :ref:`CameraFeed<class_CameraFeed>`\ s registered.
+返回注册的 :ref:`CameraFeed<class_CameraFeed>` 的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -256,14 +256,14 @@ Returns the number of :ref:`CameraFeed<class_CameraFeed>`\ s registered.
 
 |void| **remove_feed**\ (\ feed\: :ref:`CameraFeed<class_CameraFeed>`\ ) :ref:`🔗<class_CameraServer_method_remove_feed>`
 
-Removes the specified camera ``feed``.
+移除指定的相机源 ``feed``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

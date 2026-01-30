@@ -5,14 +5,14 @@
 Crypto
 ======
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides access to advanced cryptographic functionalities.
+提供對高階加密功能的存取。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The Crypto class provides access to advanced cryptographic functionalities.
 
@@ -90,8 +90,8 @@ Currently, this includes asymmetric key encryption/decryption, signing/verificat
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Crypto_method_constant_time_compare:
 
@@ -131,9 +131,9 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **constant_time_compare**\ (\ trusted\: :ref:`PackedByteArray<class_PackedByteArray>`, received\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_constant_time_compare>`
 
-Compares two :ref:`PackedByteArray<class_PackedByteArray>`\ s for equality without leaking timing information in order to prevent timing attacks.
+比較兩個 :ref:`PackedByteArray<class_PackedByteArray>` 是否相等，不會洩漏時序資訊，能夠防止時序攻擊。
 
-See `this blog post <https://paragonie.com/blog/2015/11/preventing-timing-attacks-on-string-comparison-with-double-hmac-strategy>`__ for more information.
+詳情見\ `這篇博文 <https://paragonie.com/blog/2015/11/preventing-timing-attacks-on-string-comparison-with-double-hmac-strategy>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -145,9 +145,9 @@ See `this blog post <https://paragonie.com/blog/2015/11/preventing-timing-attack
 
 :ref:`PackedByteArray<class_PackedByteArray>` **decrypt**\ (\ key\: :ref:`CryptoKey<class_CryptoKey>`, ciphertext\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_decrypt>`
 
-Decrypt the given ``ciphertext`` with the provided private ``key``.
+用提供的私密金鑰 ``key`` 解密給定的密文 ``ciphertext``\ 。
 
-\ **Note:** The maximum size of accepted ciphertext is limited by the key size.
+\ **注意：**\ 所接受的密文的最大尺寸受到金鑰大小的限制。
 
 .. rst-class:: classref-item-separator
 
@@ -159,9 +159,9 @@ Decrypt the given ``ciphertext`` with the provided private ``key``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **encrypt**\ (\ key\: :ref:`CryptoKey<class_CryptoKey>`, plaintext\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_encrypt>`
 
-Encrypt the given ``plaintext`` with the provided public ``key``.
+用提供的公開金鑰 ``key`` 加密給定的明文 ``plaintext``\ 。
 
-\ **Note:** The maximum size of accepted plaintext is limited by the key size.
+\ **注意：**\ 所接受的明文的最大尺寸受到金鑰大小的限制。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Encrypt the given ``plaintext`` with the provided public ``key``.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **generate_random_bytes**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Crypto_method_generate_random_bytes>`
 
-Generates a :ref:`PackedByteArray<class_PackedByteArray>` of cryptographically secure random bytes with given ``size``.
+生成具有給定大小 ``size`` 的加密安全隨機位元組的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Generates a :ref:`PackedByteArray<class_PackedByteArray>` of cryptographically s
 
 :ref:`CryptoKey<class_CryptoKey>` **generate_rsa**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Crypto_method_generate_rsa>`
 
-Generates an RSA :ref:`CryptoKey<class_CryptoKey>` that can be used for creating self-signed certificates and passed to :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>`.
+生成可用於建立自簽章憑證並傳遞給 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 的 RSA :ref:`CryptoKey<class_CryptoKey>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -232,9 +232,9 @@ A small example to generate an RSA key and an X509 self-signed certificate.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **hmac_digest**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`, msg\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Crypto_method_hmac_digest>`
 
-Generates an `HMAC <https://en.wikipedia.org/wiki/HMAC>`__ digest of ``msg`` using ``key``. The ``hash_type`` parameter is the hashing algorithm that is used for the inner and outer hashes.
+使用金鑰 ``key`` 生成 ``msg`` 的 `HMAC <https://zh.wikipedia.org/wiki/HMAC>`__ 摘要。\ ``hash_type`` 參數是用於內部和外部雜湊的雜湊算法。
 
-Currently, only :ref:`HashingContext.HASH_SHA256<class_HashingContext_constant_HASH_SHA256>` and :ref:`HashingContext.HASH_SHA1<class_HashingContext_constant_HASH_SHA1>` are supported.
+目前僅支援 :ref:`HashingContext.HASH_SHA256<class_HashingContext_constant_HASH_SHA256>` 和 :ref:`HashingContext.HASH_SHA1<class_HashingContext_constant_HASH_SHA1>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Currently, only :ref:`HashingContext.HASH_SHA256<class_HashingContext_constant_H
 
 :ref:`PackedByteArray<class_PackedByteArray>` **sign**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, hash\: :ref:`PackedByteArray<class_PackedByteArray>`, key\: :ref:`CryptoKey<class_CryptoKey>`\ ) :ref:`🔗<class_Crypto_method_sign>`
 
-Sign a given ``hash`` of type ``hash_type`` with the provided private ``key``.
+使用提供的私密金鑰 ``key`` 對型別為 ``hash_type`` 的給定 ``hash`` 進行簽章。
 
 .. rst-class:: classref-item-separator
 
@@ -258,14 +258,14 @@ Sign a given ``hash`` of type ``hash_type`` with the provided private ``key``.
 
 :ref:`bool<class_bool>` **verify**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, hash\: :ref:`PackedByteArray<class_PackedByteArray>`, signature\: :ref:`PackedByteArray<class_PackedByteArray>`, key\: :ref:`CryptoKey<class_CryptoKey>`\ ) :ref:`🔗<class_Crypto_method_verify>`
 
-Verify that a given ``signature`` for ``hash`` of type ``hash_type`` against the provided public ``key``.
+使用提供的公開金鑰 ``key`` 驗證型別為 ``hash_type`` 的給定簽章 ``signature``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

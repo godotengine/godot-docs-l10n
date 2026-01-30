@@ -5,21 +5,21 @@
 VisualShaderNodeMix
 ===================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Linearly interpolates between two values within the visual shader graph.
+在視覺化著色器圖中，在兩個值之間進行線性插值。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Translates to ``mix(a, b, weight)`` in the shader language.
+翻譯為著色器語言中的 ``mix(a, b, weight)``\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeMix_OpType:
 
@@ -49,7 +49,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeMix_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_SCALAR** = ``0``
 
-A floating-point scalar.
+浮點標量。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_2D:
 
@@ -57,7 +57,7 @@ A floating-point scalar.
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_2D** = ``1``
 
-A 2D vector type.
+2D 向量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_2D_SCALAR:
 
@@ -65,7 +65,7 @@ A 2D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_2D_SCALAR** = ``2``
 
-The ``a`` and ``b`` ports use a 2D vector type. The ``weight`` port uses a scalar type.
+``a`` 和 ``b`` 埠使用 2D 向量型別。\ ``weight`` 端口使用標量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_3D:
 
@@ -73,7 +73,7 @@ The ``a`` and ``b`` ports use a 2D vector type. The ``weight`` port uses a scala
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_3D** = ``3``
 
-A 3D vector type.
+3D向量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_3D_SCALAR:
 
@@ -81,7 +81,7 @@ A 3D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_3D_SCALAR** = ``4``
 
-The ``a`` and ``b`` ports use a 3D vector type. The ``weight`` port uses a scalar type.
+``a`` 和 ``b`` 埠使用 3D 向量型別。\ ``weight`` 端口使用標量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_4D:
 
@@ -89,7 +89,7 @@ The ``a`` and ``b`` ports use a 3D vector type. The ``weight`` port uses a scala
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_4D** = ``5``
 
-A 4D vector type.
+4D 向量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_VECTOR_4D_SCALAR:
 
@@ -97,7 +97,7 @@ A 4D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scalar type.
+``a`` 和 ``b`` 埠使用 4D 向量型別。\ ``weight`` 端口使用標量型別。
 
 .. _class_VisualShaderNodeMix_constant_OP_TYPE_MAX:
 
@@ -105,7 +105,7 @@ The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scala
 
 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **OP_TYPE_MAX** = ``7``
 
-Represents the size of the :ref:`OpType<enum_VisualShaderNodeMix_OpType>` enum.
+代表 :ref:`OpType<enum_VisualShaderNodeMix_OpType>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -113,8 +113,8 @@ Represents the size of the :ref:`OpType<enum_VisualShaderNodeMix_OpType>` enum.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeMix_property_op_type:
 
@@ -127,14 +127,14 @@ Property Descriptions
 - |void| **set_op_type**\ (\ value\: :ref:`OpType<enum_VisualShaderNodeMix_OpType>`\ )
 - :ref:`OpType<enum_VisualShaderNodeMix_OpType>` **get_op_type**\ (\ )
 
-A type of operands and returned value.
+運算元和返回值的型別。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

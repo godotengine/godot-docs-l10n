@@ -14,9 +14,9 @@ Envoltura para usar un PacketPeer sobre un StreamPeer.
 Descripción
 ----------------------
 
-PacketStreamPeer provides a wrapper for working using packets over a stream. This allows for using packet based code with StreamPeers. PacketPeerStream implements a custom protocol over the StreamPeer, so the user should not read or write to the wrapped StreamPeer directly.
+PacketStreamPeer proporciona un envoltorio para trabajar usando paquetes sobre un flujo. Esto permite usar código basado en paquetes con StreamPeers. PacketPeerStream implementa un protocolo personalizado sobre el StreamPeer, por lo que no debes leer o escribir directamente en el StreamPeer envuelto.
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **Nota:** Al exportar a Android, asegúrate de habilitar el permiso ``INTERNET`` en el ajuste preestablecido de exportación de Android antes de exportar el proyecto o usar el despliegue con un solo clic. De lo contrario, Android bloqueará cualquier tipo de comunicación de red.
 
 .. rst-class:: classref-reftable-group
 

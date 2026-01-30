@@ -5,23 +5,23 @@
 Gradient
 ========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A color transition.
+颜色过渡。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This resource describes a color transition by defining a set of colored points and how to interpolate between them.
+该资源通过定义一组彩色点以及如何在它们之间进行插值来描述颜色过渡。
 
-See also :ref:`Curve<class_Curve>` which supports more complex easing methods, but does not support colors.
+另见 :ref:`Curve<class_Curve>`\ ，它支持更复杂的缓动方法，但不支持颜色。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Gradient_InterpolationMode:
 
@@ -85,7 +85,7 @@ enum **InterpolationMode**: :ref:`🔗<enum_Gradient_InterpolationMode>`
 
 :ref:`InterpolationMode<enum_Gradient_InterpolationMode>` **GRADIENT_INTERPOLATE_LINEAR** = ``0``
 
-Linear interpolation.
+线性插值。
 
 .. _class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT:
 
@@ -93,7 +93,7 @@ Linear interpolation.
 
 :ref:`InterpolationMode<enum_Gradient_InterpolationMode>` **GRADIENT_INTERPOLATE_CONSTANT** = ``1``
 
-Constant interpolation, color changes abruptly at each point and stays uniform between. This might cause visible aliasing when used for a gradient texture in some cases.
+常量插值，颜色会在每个点上突变，在点和点之间保持一致。在某些情况下用于渐变纹理时，可能会造成明显的锯齿。
 
 .. _class_Gradient_constant_GRADIENT_INTERPOLATE_CUBIC:
 
@@ -101,7 +101,7 @@ Constant interpolation, color changes abruptly at each point and stays uniform b
 
 :ref:`InterpolationMode<enum_Gradient_InterpolationMode>` **GRADIENT_INTERPOLATE_CUBIC** = ``2``
 
-Cubic interpolation.
+三次插值。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ enum **ColorSpace**: :ref:`🔗<enum_Gradient_ColorSpace>`
 
 :ref:`ColorSpace<enum_Gradient_ColorSpace>` **GRADIENT_COLOR_SPACE_SRGB** = ``0``
 
-sRGB color space.
+sRGB 色彩空间。
 
 .. _class_Gradient_constant_GRADIENT_COLOR_SPACE_LINEAR_SRGB:
 
@@ -127,7 +127,7 @@ sRGB color space.
 
 :ref:`ColorSpace<enum_Gradient_ColorSpace>` **GRADIENT_COLOR_SPACE_LINEAR_SRGB** = ``1``
 
-Linear sRGB color space.
+线性 sRGB 色彩空间。
 
 .. _class_Gradient_constant_GRADIENT_COLOR_SPACE_OKLAB:
 
@@ -135,7 +135,7 @@ Linear sRGB color space.
 
 :ref:`ColorSpace<enum_Gradient_ColorSpace>` **GRADIENT_COLOR_SPACE_OKLAB** = ``2``
 
-`Oklab <https://bottosson.github.io/posts/oklab/>`__ color space. This color space provides a smooth and uniform-looking transition between colors.
+`Oklab <https://bottosson.github.io/posts/oklab/>`__ 色彩空间。该色彩空间能够在不同颜色之间进行平滑、外观统一的过渡。
 
 .. rst-class:: classref-section-separator
 
@@ -143,8 +143,8 @@ Linear sRGB color space.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Gradient_property_colors:
 
@@ -157,9 +157,9 @@ Property Descriptions
 - |void| **set_colors**\ (\ value\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_colors**\ (\ )
 
-Gradient's colors as a :ref:`PackedColorArray<class_PackedColorArray>`.
+渐变的颜色，类型为 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
-\ **Note:** Setting this property updates all colors at once. To update any color individually use :ref:`set_color()<class_Gradient_method_set_color>`.
+\ **注意：**\ 设置该属性会一次性更新所有颜色。单独更改某个颜色请使用 :ref:`set_color()<class_Gradient_method_set_color>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedColorArray<class_PackedColorArray>` for more details.
 
@@ -197,7 +197,7 @@ The color space used to interpolate between points of the gradient. It does not 
 - |void| **set_interpolation_mode**\ (\ value\: :ref:`InterpolationMode<enum_Gradient_InterpolationMode>`\ )
 - :ref:`InterpolationMode<enum_Gradient_InterpolationMode>` **get_interpolation_mode**\ (\ )
 
-The algorithm used to interpolate between points of the gradient.
+用于在渐变点之间进行插值的算法。
 
 .. rst-class:: classref-item-separator
 
@@ -214,9 +214,9 @@ The algorithm used to interpolate between points of the gradient.
 - |void| **set_offsets**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_offsets**\ (\ )
 
-Gradient's offsets as a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
+渐变的偏移量，类型为 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
-\ **Note:** Setting this property updates all offsets at once. To update any offset individually use :ref:`set_offset()<class_Gradient_method_set_offset>`.
+\ **注意：**\ 设置该属性会一次性更新所有偏移量。单独更改某个偏移量请使用 :ref:`set_offset()<class_Gradient_method_set_offset>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -226,8 +226,8 @@ Gradient's offsets as a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Gradient_method_add_point:
 
@@ -235,7 +235,7 @@ Method Descriptions
 
 |void| **add_point**\ (\ offset\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Gradient_method_add_point>`
 
-Adds the specified color to the gradient, with the specified offset.
+使用指定的偏移，将指定的颜色添加到该渐变中。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Adds the specified color to the gradient, with the specified offset.
 
 :ref:`Color<class_Color>` **get_color**\ (\ point\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Gradient_method_get_color>`
 
-Returns the color of the gradient color at index ``point``.
+返回渐变色在索引 ``point`` 处的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Returns the color of the gradient color at index ``point``.
 
 :ref:`float<class_float>` **get_offset**\ (\ point\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Gradient_method_get_offset>`
 
-Returns the offset of the gradient color at index ``point``.
+返回渐变色在索引 ``point`` 处的偏移。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Returns the offset of the gradient color at index ``point``.
 
 :ref:`int<class_int>` **get_point_count**\ (\ ) |const| :ref:`🔗<class_Gradient_method_get_point_count>`
 
-Returns the number of colors in the gradient.
+返回渐变中的颜色数。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Returns the number of colors in the gradient.
 
 |void| **remove_point**\ (\ point\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Gradient_method_remove_point>`
 
-Removes the color at index ``point``.
+移除索引 ``point`` 处的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -295,9 +295,9 @@ Removes the color at index ``point``.
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_Gradient_method_reverse>`
 
-Reverses/mirrors the gradient.
+将渐变进行翻转/镜像。
 
-\ **Note:** This method mirrors all points around the middle of the gradient, which may produce unexpected results when :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` is set to :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>`.
+\ **注意：**\ 这个方法会将所有点以渐变的中点进行镜像，\ :ref:`interpolation_mode<class_Gradient_property_interpolation_mode>` 为 :ref:`GRADIENT_INTERPOLATE_CONSTANT<class_Gradient_constant_GRADIENT_INTERPOLATE_CONSTANT>` 时可能产生意外的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Reverses/mirrors the gradient.
 
 :ref:`Color<class_Color>` **sample**\ (\ offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Gradient_method_sample>`
 
-Returns the interpolated color specified by ``offset``. ``offset`` should be between ``0.0`` and ``1.0`` (inclusive). Using a value lower than ``0.0`` will return the same color as ``0.0``, and using a value higher than ``1.0`` will return the same color as ``1.0``. If your input value is not within this range, consider using :ref:`@GlobalScope.remap()<class_@GlobalScope_method_remap>` on the input value with output values set to ``0.0`` and ``1.0``.
+返回偏移量 ``offset`` 插值后的颜色。\ ``offset`` 应当在 ``0.0`` 和 ``1.0`` 之间（含两端）。取值小于 ``0.0`` 返回的颜色与 ``0.0`` 相同，取值大于 ``1.0`` 返回的颜色与 ``1.0`` 相同。输入值不在该范围内时，请考虑对输入值使用 :ref:`@GlobalScope.remap()<class_@GlobalScope_method_remap>`\ ，将输出值设为 ``0.0`` 和 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Returns the interpolated color specified by ``offset``. ``offset`` should be bet
 
 |void| **set_color**\ (\ point\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Gradient_method_set_color>`
 
-Sets the color of the gradient color at index ``point``.
+设置渐变色在索引 ``point`` 处的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -333,14 +333,14 @@ Sets the color of the gradient color at index ``point``.
 
 |void| **set_offset**\ (\ point\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Gradient_method_set_offset>`
 
-Sets the offset for the gradient color at index ``point``.
+设置渐变色在索引 ``point`` 处的偏移。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

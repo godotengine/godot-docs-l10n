@@ -14,9 +14,9 @@ Un botón que representa un enlace.
 Descripción
 ----------------------
 
-A button that represents a link. This type of button is primarily used for interactions that cause a context change (like linking to a web page).
+Un botón que representa un enlace. Este tipo de botón se utiliza principalmente para interacciones que causan un cambio de contexto (como enlazar a una página web).
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+Véase también :ref:`BaseButton<class_BaseButton>`, que contiene propiedades y métodos comunes asociados con este nodo.
 
 .. rst-class:: classref-reftable-group
 
@@ -279,22 +279,22 @@ El modo de subrayado a utilizar para el texto.
 - |void| **set_uri**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_uri**\ (\ )
 
-The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this **LinkButton**. If set to a valid URI, pressing the button opens the URI using the operating system's default program for the protocol (via :ref:`OS.shell_open()<class_OS_method_shell_open>`). HTTP and HTTPS URLs open the default web browser.
+El `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ para este **LinkButton**. Si se establece en un URI válido, al presionar el botón se abre el URI utilizando el programa predeterminado del sistema operativo para el protocolo (a través de :ref:`OS.shell_open()<class_OS_method_shell_open>`). Las URL HTTP y HTTPS abren el navegador web predeterminado.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    uri = "https://godotengine.org"  # Opens the URL in the default web browser.
-    uri = "C:\SomeFolder"  # Opens the file explorer at the given path.
-    uri = "C:\SomeImage.png"  # Opens the given image in the default viewing app.
+    uri = "https://godotengine.org"  # Abre la URL en el navegador web predeterminado.
+    uri = "C:\SomeFolder"  # Abre el explorador de archivos en la ruta dada.
+    uri = "C:\SomeImage.png"  # Abre la imagen dada en la aplicación de visualización predeterminada.
 
  .. code-tab:: csharp
 
-    Uri = "https://godotengine.org"; // Opens the URL in the default web browser.
-    Uri = "C:\SomeFolder"; // Opens the file explorer at the given path.
-    Uri = "C:\SomeImage.png"; // Opens the given image in the default viewing app.
+    Uri = "https://godotengine.org"; // Abre la URL en el navegador web predeterminado.
+    Uri = "C:\SomeFolder"; // Abre el explorador de archivos en la ruta dada.
+    Uri = "C:\SomeImage.png"; // Abre la imagen dada en la aplicación de visualización predeterminada.
 
 
 
@@ -325,7 +325,7 @@ Descripciones de las propiedades del tema
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_disabled_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is disabled.
+:ref:`Color<class_Color>` del texto utilizado cuando el **LinkButton** está desactivado.
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is disabled.
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_focus_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is focused. Only replaces the normal text color of the button. Disabled, hovered, and pressed states take precedence over this color.
+Color de texto usado cuando el **LinkButton** está enfocado. Solo reemplaza el color de texto normal del botón. Los estados deshabilitado, al pasar el cursor y presionado tienen precedencia sobre este color.
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is focused. Only rep
 
 :ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_hover_pressed_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is being hovered and pressed.
+:ref:`Color<class_Color>` del texto usado cuando el **LinkButton** es pasado con el cursor y presionado.
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is being hovered and
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_outline_color>`
 
-The tint of text outline of the **LinkButton**.
+El tinte del contorno del texto del **LinkButton**.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ El espacio vertical entre la línea de base del texto y el subrayado.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_LinkButton_theme_font_size_font_size>`
 
-Font size of the **LinkButton**'s text.
+Tamaño de fuente del texto del **LinkButton**.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Font size of the **LinkButton**'s text.
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_LinkButton_theme_style_focus>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **LinkButton** is focused. The :ref:`focus<class_LinkButton_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+:ref:`StyleBox<class_StyleBox>` usado cuando el **LinkButton** está enfocado. El :ref:`StyleBox<class_StyleBox>` de :ref:`focus<class_LinkButton_theme_style_focus>` se muestra *sobre* el :ref:`StyleBox<class_StyleBox>` base, por lo que se debe usar un :ref:`StyleBox<class_StyleBox>` parcialmente transparente para asegurar que el :ref:`StyleBox<class_StyleBox>` base permanezca visible. Un :ref:`StyleBox<class_StyleBox>` que representa un contorno o un subrayado funciona bien para este propósito. Para deshabilitar el efecto visual de enfoque, asigna un recurso :ref:`StyleBoxEmpty<class_StyleBoxEmpty>`. Ten en cuenta que deshabilitar el efecto visual de enfoque perjudicará la usabilidad de la navegación con teclado/controlador, por lo que esto no se recomienda por razones de accesibilidad.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

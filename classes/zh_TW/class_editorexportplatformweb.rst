@@ -5,14 +5,14 @@
 EditorExportPlatformWeb
 =======================
 
-**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exporter for the Web.
+Web 匯出器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The Web exporter customizes how a web build is handled. In the editor's "Export" window, it is created when adding a new "Web" preset.
 
@@ -20,17 +20,17 @@ The Web exporter customizes how a web build is handled. In the editor's "Export"
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Exporting for the Web <../tutorials/export/exporting_for_web>`
+- :doc:`為 Web 匯出 <../tutorials/export/exporting_for_web>`
 
-- :doc:`Web documentation index <../tutorials/platform/web/index>`
+- :doc:`網頁文件索引 <../tutorials/platform/web/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_EditorExportPlatformWeb_property_custom_template/debug:
 
@@ -154,7 +154,7 @@ For more information, see the :doc:`Customizing HTML5 Shell <../tutorials/platfo
 
 :ref:`bool<class_bool>` **html/experimental_virtual_keyboard** :ref:`🔗<class_EditorExportPlatformWeb_property_html/experimental_virtual_keyboard>`
 
-**Experimental:** This property may be changed or removed in future versions.
+**實驗性：** 此屬性可能在未來版本中變更或移除。
 
 If ``true``, embeds support for a virtual keyboard into the web page, which is shown when necessary on touchscreen devices.
 
@@ -404,12 +404,12 @@ If ``true``, allows textures to be optimized for desktop through the S3TC/BPTC a
 
 If ``true`` allows textures to be optimized for mobile through the ETC2/ASTC algorithm.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

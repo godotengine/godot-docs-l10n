@@ -5,44 +5,44 @@
 RenderingServer
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-Server for anything visible.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-The rendering server is the API backend for everything visible. The whole scene system mounts on it to display. The rendering server is completely opaque: the internals are entirely implementation-specific and cannot be accessed.
-
-The rendering server can be used to bypass the scene/:ref:`Node<class_Node>` system entirely. This can improve performance in cases where the scene system is the bottleneck, but won't improve performance otherwise (for instance, if the GPU is already fully utilized).
-
-Resources are created using the ``*_create`` functions. These functions return :ref:`RID<class_RID>`\ s which are not references to the objects themselves, but opaque *pointers* towards these objects.
-
-All objects are drawn to a viewport. You can use the :ref:`Viewport<class_Viewport>` attached to the :ref:`SceneTree<class_SceneTree>` or you can create one yourself with :ref:`viewport_create()<class_RenderingServer_method_viewport_create>`. When using a custom scenario or canvas, the scenario or canvas needs to be attached to the viewport using :ref:`viewport_set_scenario()<class_RenderingServer_method_viewport_set_scenario>` or :ref:`viewport_attach_canvas()<class_RenderingServer_method_viewport_attach_canvas>`.
-
-\ **Scenarios:** In 3D, all visual objects must be associated with a scenario. The scenario is a visual representation of the world. If accessing the rendering server from a running game, the scenario can be accessed from the scene tree from any :ref:`Node3D<class_Node3D>` node with :ref:`Node3D.get_world_3d()<class_Node3D_method_get_world_3d>`. Otherwise, a scenario can be created with :ref:`scenario_create()<class_RenderingServer_method_scenario_create>`.
-
-Similarly, in 2D, a canvas is needed to draw all canvas items.
-
-\ **3D:** In 3D, all visible objects are comprised of a resource and an instance. A resource can be a mesh, a particle system, a light, or any other 3D object. In order to be visible resources must be attached to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`. The instance must also be attached to the scenario using :ref:`instance_set_scenario()<class_RenderingServer_method_instance_set_scenario>` in order to be visible. RenderingServer methods that don't have a prefix are usually 3D-specific (but not always).
-
-\ **2D:** In 2D, all visible objects are some form of canvas item. In order to be visible, a canvas item needs to be the child of a canvas attached to a viewport, or it needs to be the child of another canvas item that is eventually attached to the canvas. 2D-specific RenderingServer methods generally start with ``canvas_*``.
-
-\ **Headless mode:** Starting the engine with the ``--headless`` :doc:`command line argument <../tutorials/editor/command_line_tutorial>` disables all rendering and window management functions. Most functions from **RenderingServer** will return dummy values in this case.
+任何可見的東西的伺服器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Optimization using Servers <../tutorials/performance/using_servers>`
+算繪伺服器是所有可見內容的 API 後端。整個場景系統都掛載在它上面來顯示。算繪服務器是完全不透明的：內部實作完全取決於具體的實作，無法進行存取。
+
+使用算繪伺服器可以完全繞過場景和 :ref:`Node<class_Node>` 系統。如果場景系統是瓶頸所在，那麼這樣做就可以提升性能，否則無法提升性能（例如已經完全利用 GPU 的情況）。
+
+資源是使用 ``*_create`` 函式建立的。這些函式返回的 :ref:`RID<class_RID>` 並不是對對象本身的引用，而是指向這些物件的不透明\ *指標*\ 。
+
+所有物件都會被繪製到視口中。你可以使用附加到 :ref:`SceneTree<class_SceneTree>` 的 :ref:`Viewport<class_Viewport>`\ ，或者也可以使用 :ref:`viewport_create()<class_RenderingServer_method_viewport_create>` 自行建立。使用自訂場景或畫布時，需要使用 :ref:`viewport_set_scenario()<class_RenderingServer_method_viewport_set_scenario>` 或 :ref:`viewport_attach_canvas()<class_RenderingServer_method_viewport_attach_canvas>` 將場景或畫布附加到視口。
+
+\ **場景：**\ 在 3D 中，所有可視物件都必須與一個場景（Scenario）相關聯。場景是世界的視覺化表示。如果要從正在運作的遊戲中存取算繪伺服器，那麼就可以使用 :ref:`Node3D.get_world_3d()<class_Node3D_method_get_world_3d>` 從任何 :ref:`Node3D<class_Node3D>` 節點的場景樹存取該場景。此外，也可以使用 :ref:`scenario_create()<class_RenderingServer_method_scenario_create>` 建立場景。
+
+在 2D 中也是類似的，需要一個畫布（Canvas）來繪製所有的畫布項。
+
+\ **3D：**\ 在 3D 中，所有可視物件都由資源（Resource）和實例（Instance）組成。資源可以是網格、粒子系統、燈光或任何其他 3D 物件。為了使資源可見，必須使用 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` 將其附加到一個實例。該實例還必須使用 :ref:`instance_set_scenario()<class_RenderingServer_method_instance_set_scenario>` 附加到場景中才可見。不帶前綴的 RenderingServer 方法通常都是針對 3D 的（但也有例外）。
+
+\ **2D：**\ 在 2D 中，所有可見物件都是某種形式的畫布項（Canvas Item）。為了使畫布項可見，就需要讓它成為附加到視口的畫布的子項，或者需要讓它成為其他畫布項的子項，但這些畫布項最終也需要是畫布的子項。針對 2D 的 RenderingServer 方法一般都以 ``canvas_*`` 開頭。
+
+\ **無頭模式：**\ 使用 ``--headless`` :doc:`命令列參數 <../tutorials/editor/command_line_tutorial>`\ 啟動引擎將禁用所有算繪和窗口管理功能。在這種情況下，\ **RenderingServer** 中的大多數函式將返回虛值。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用伺服器進行優化 <../tutorials/performance/using_servers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -1115,8 +1115,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_RenderingServer_signal_frame_post_draw:
 
@@ -1124,7 +1124,7 @@ Signals
 
 **frame_post_draw**\ (\ ) :ref:`🔗<class_RenderingServer_signal_frame_post_draw>`
 
-Emitted at the end of the frame, after the RenderingServer has finished updating all the Viewports.
+在該影格的結尾發出，此時 RenderingServer 剛剛完成對所有 Viewport 的更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1136,7 +1136,7 @@ Emitted at the end of the frame, after the RenderingServer has finished updating
 
 **frame_pre_draw**\ (\ ) :ref:`🔗<class_RenderingServer_signal_frame_pre_draw>`
 
-Emitted at the beginning of the frame, before the RenderingServer updates all the Viewports.
+在該影格的開頭發出，此後 RenderingServer 會更新所有 Viewport。
 
 .. rst-class:: classref-section-separator
 
@@ -1144,8 +1144,8 @@ Emitted at the beginning of the frame, before the RenderingServer updates all th
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_RenderingServer_TextureType:
 
@@ -1193,7 +1193,7 @@ enum **TextureLayeredType**: :ref:`🔗<enum_RenderingServer_TextureLayeredType>
 
 :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` **TEXTURE_LAYERED_2D_ARRAY** = ``0``
 
-Array of 2-dimensional textures (see :ref:`Texture2DArray<class_Texture2DArray>`).
+二維紋理陣列（見 :ref:`Texture2DArray<class_Texture2DArray>`\ ）。
 
 .. _class_RenderingServer_constant_TEXTURE_LAYERED_CUBEMAP:
 
@@ -1201,7 +1201,7 @@ Array of 2-dimensional textures (see :ref:`Texture2DArray<class_Texture2DArray>`
 
 :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` **TEXTURE_LAYERED_CUBEMAP** = ``1``
 
-Cubemap texture (see :ref:`Cubemap<class_Cubemap>`).
+立方體貼圖紋理（見 :ref:`Cubemap<class_Cubemap>`\ ）。
 
 .. _class_RenderingServer_constant_TEXTURE_LAYERED_CUBEMAP_ARRAY:
 
@@ -1209,7 +1209,7 @@ Cubemap texture (see :ref:`Cubemap<class_Cubemap>`).
 
 :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` **TEXTURE_LAYERED_CUBEMAP_ARRAY** = ``2``
 
-Array of cubemap textures (see :ref:`CubemapArray<class_CubemapArray>`).
+立方體貼圖紋理陣列（見 :ref:`CubemapArray<class_CubemapArray>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1227,7 +1227,7 @@ enum **CubeMapLayer**: :ref:`🔗<enum_RenderingServer_CubeMapLayer>`
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_LEFT** = ``0``
 
-Left face of a :ref:`Cubemap<class_Cubemap>`.
+:ref:`Cubemap<class_Cubemap>` 的左面。
 
 .. _class_RenderingServer_constant_CUBEMAP_LAYER_RIGHT:
 
@@ -1235,7 +1235,7 @@ Left face of a :ref:`Cubemap<class_Cubemap>`.
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_RIGHT** = ``1``
 
-Right face of a :ref:`Cubemap<class_Cubemap>`.
+:ref:`Cubemap<class_Cubemap>` 的右面。
 
 .. _class_RenderingServer_constant_CUBEMAP_LAYER_BOTTOM:
 
@@ -1243,7 +1243,7 @@ Right face of a :ref:`Cubemap<class_Cubemap>`.
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_BOTTOM** = ``2``
 
-Bottom face of a :ref:`Cubemap<class_Cubemap>`.
+:ref:`Cubemap<class_Cubemap>` 的底面。
 
 .. _class_RenderingServer_constant_CUBEMAP_LAYER_TOP:
 
@@ -1251,7 +1251,7 @@ Bottom face of a :ref:`Cubemap<class_Cubemap>`.
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_TOP** = ``3``
 
-Top face of a :ref:`Cubemap<class_Cubemap>`.
+:ref:`Cubemap<class_Cubemap>` 的頂面。
 
 .. _class_RenderingServer_constant_CUBEMAP_LAYER_FRONT:
 
@@ -1259,7 +1259,7 @@ Top face of a :ref:`Cubemap<class_Cubemap>`.
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_FRONT** = ``4``
 
-Front face of a :ref:`Cubemap<class_Cubemap>`.
+:ref:`Cubemap<class_Cubemap>` 的正面。
 
 .. _class_RenderingServer_constant_CUBEMAP_LAYER_BACK:
 
@@ -1267,7 +1267,7 @@ Front face of a :ref:`Cubemap<class_Cubemap>`.
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_BACK** = ``5``
 
-Back face of a :ref:`Cubemap<class_Cubemap>`.
+:ref:`Cubemap<class_Cubemap>` 的背面。
 
 .. rst-class:: classref-item-separator
 
@@ -1285,7 +1285,7 @@ enum **ShaderMode**: :ref:`🔗<enum_RenderingServer_ShaderMode>`
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_SPATIAL** = ``0``
 
-Shader is a 3D shader.
+著色器是 3D 著色器。
 
 .. _class_RenderingServer_constant_SHADER_CANVAS_ITEM:
 
@@ -1293,7 +1293,7 @@ Shader is a 3D shader.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_CANVAS_ITEM** = ``1``
 
-Shader is a 2D shader.
+著色器是 2D 著色器。
 
 .. _class_RenderingServer_constant_SHADER_PARTICLES:
 
@@ -1301,7 +1301,7 @@ Shader is a 2D shader.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_PARTICLES** = ``2``
 
-Shader is a particle shader (can be used in both 2D and 3D).
+著色器是粒子著色器（2D 和 3D 均可使用）。
 
 .. _class_RenderingServer_constant_SHADER_SKY:
 
@@ -1309,7 +1309,7 @@ Shader is a particle shader (can be used in both 2D and 3D).
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_SKY** = ``3``
 
-Shader is a 3D sky shader.
+著色器是 3D 天空著色器。
 
 .. _class_RenderingServer_constant_SHADER_FOG:
 
@@ -1317,7 +1317,7 @@ Shader is a 3D sky shader.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_FOG** = ``4``
 
-Shader is a 3D fog shader.
+著色器是 3D 霧著色器。
 
 .. _class_RenderingServer_constant_SHADER_MAX:
 
@@ -1325,7 +1325,7 @@ Shader is a 3D fog shader.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_MAX** = ``5``
 
-Represents the size of the :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` enum.
+代表 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1343,7 +1343,7 @@ enum **ArrayType**: :ref:`🔗<enum_RenderingServer_ArrayType>`
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_VERTEX** = ``0``
 
-Array is a vertex position array.
+陣列是頂點位置陣列。
 
 .. _class_RenderingServer_constant_ARRAY_NORMAL:
 
@@ -1351,7 +1351,7 @@ Array is a vertex position array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_NORMAL** = ``1``
 
-Array is a normal array.
+陣列是法線陣列。
 
 .. _class_RenderingServer_constant_ARRAY_TANGENT:
 
@@ -1359,7 +1359,7 @@ Array is a normal array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_TANGENT** = ``2``
 
-Array is a tangent array.
+陣列是切線陣列。
 
 .. _class_RenderingServer_constant_ARRAY_COLOR:
 
@@ -1367,7 +1367,7 @@ Array is a tangent array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_COLOR** = ``3``
 
-Array is a vertex color array.
+陣列是頂點顏色陣列。
 
 .. _class_RenderingServer_constant_ARRAY_TEX_UV:
 
@@ -1375,7 +1375,7 @@ Array is a vertex color array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_TEX_UV** = ``4``
 
-Array is a UV coordinates array.
+陣列是 UV 座標陣列。
 
 .. _class_RenderingServer_constant_ARRAY_TEX_UV2:
 
@@ -1383,7 +1383,7 @@ Array is a UV coordinates array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_TEX_UV2** = ``5``
 
-Array is a UV coordinates array for the second set of UV coordinates.
+陣列是第二組 UV 座標的 UV 座標陣列。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM0:
 
@@ -1391,7 +1391,7 @@ Array is a UV coordinates array for the second set of UV coordinates.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM0** = ``6``
 
-Array is a custom data array for the first set of custom data.
+陣列是第一組自訂資料的自訂資料陣列。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM1:
 
@@ -1399,7 +1399,7 @@ Array is a custom data array for the first set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM1** = ``7``
 
-Array is a custom data array for the second set of custom data.
+陣列是第二組自訂資料的自訂資料陣列。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM2:
 
@@ -1407,7 +1407,7 @@ Array is a custom data array for the second set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM2** = ``8``
 
-Array is a custom data array for the third set of custom data.
+陣列是第三組自訂資料的自訂資料陣列。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM3:
 
@@ -1415,7 +1415,7 @@ Array is a custom data array for the third set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM3** = ``9``
 
-Array is a custom data array for the fourth set of custom data.
+陣列是第四組自訂資料的自訂資料陣列。
 
 .. _class_RenderingServer_constant_ARRAY_BONES:
 
@@ -1423,7 +1423,7 @@ Array is a custom data array for the fourth set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_BONES** = ``10``
 
-Array contains bone information.
+陣列包含骨骼資訊。
 
 .. _class_RenderingServer_constant_ARRAY_WEIGHTS:
 
@@ -1431,7 +1431,7 @@ Array contains bone information.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_WEIGHTS** = ``11``
 
-Array is weight information.
+陣列是重量資訊。
 
 .. _class_RenderingServer_constant_ARRAY_INDEX:
 
@@ -1439,7 +1439,7 @@ Array is weight information.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_INDEX** = ``12``
 
-Array is an index array.
+陣列是索引陣列。
 
 .. _class_RenderingServer_constant_ARRAY_MAX:
 
@@ -1447,7 +1447,7 @@ Array is an index array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_MAX** = ``13``
 
-Represents the size of the :ref:`ArrayType<enum_RenderingServer_ArrayType>` enum.
+代表 :ref:`ArrayType<enum_RenderingServer_ArrayType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1465,7 +1465,7 @@ enum **ArrayCustomFormat**: :ref:`🔗<enum_RenderingServer_ArrayCustomFormat>`
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA8_UNORM** = ``0``
 
-Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Values are normalized, unsigned floating-point in the ``[0.0, 1.0]`` range.
+自訂資料陣列包含的是每通道 8 位的紅、綠、藍、Alpha 顏色資料。元素經過歸一化，是 ``[0.0, 1.0]`` 範圍內的無符號浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RGBA8_SNORM:
 
@@ -1473,7 +1473,7 @@ Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Va
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA8_SNORM** = ``1``
 
-Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Values are normalized, signed floating-point in the ``[-1.0, 1.0]`` range.
+自訂資料陣列包含的是每通道 8 位的紅、綠、藍、Alpha 顏色資料。元素經過歸一化，是 ``[0.0, 1.0]`` 範圍內的帶符號浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RG_HALF:
 
@@ -1481,7 +1481,7 @@ Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Va
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RG_HALF** = ``2``
 
-Custom data array contains 16-bit-per-channel red/green color data. Values are floating-point in half precision.
+自訂資料陣列包含的是每通道 16 位的紅、綠、藍顏色資料。元素為半精度浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RGBA_HALF:
 
@@ -1489,7 +1489,7 @@ Custom data array contains 16-bit-per-channel red/green color data. Values are f
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA_HALF** = ``3``
 
-Custom data array contains 16-bit-per-channel red/green/blue/alpha color data. Values are floating-point in half precision.
+自訂資料陣列包含的是每通道 16 位的紅、綠、藍、Alpha 顏色資料。元素為半精度浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_R_FLOAT:
 
@@ -1497,7 +1497,7 @@ Custom data array contains 16-bit-per-channel red/green/blue/alpha color data. V
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_R_FLOAT** = ``4``
 
-Custom data array contains 32-bit-per-channel red color data. Values are floating-point in single precision.
+自訂資料陣列包含的是每通道 32 位元的紅色資料。元素為單精確度浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RG_FLOAT:
 
@@ -1505,7 +1505,7 @@ Custom data array contains 32-bit-per-channel red color data. Values are floatin
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RG_FLOAT** = ``5``
 
-Custom data array contains 32-bit-per-channel red/green color data. Values are floating-point in single precision.
+自訂資料陣列包含的是每通道 32 位的紅、綠顏色資料。元素為單精確度浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RGB_FLOAT:
 
@@ -1513,7 +1513,7 @@ Custom data array contains 32-bit-per-channel red/green color data. Values are f
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGB_FLOAT** = ``6``
 
-Custom data array contains 32-bit-per-channel red/green/blue color data. Values are floating-point in single precision.
+自訂資料陣列包含的是每通道 32 位的紅、綠、藍顏色資料。元素為單精確度浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RGBA_FLOAT:
 
@@ -1521,7 +1521,7 @@ Custom data array contains 32-bit-per-channel red/green/blue color data. Values 
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA_FLOAT** = ``7``
 
-Custom data array contains 32-bit-per-channel red/green/blue/alpha color data. Values are floating-point in single precision.
+自訂資料陣列包含的是每通道 32 位的紅、綠、藍、Alpha 顏色資料。元素為單精確度浮點數。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_MAX:
 
@@ -1529,7 +1529,7 @@ Custom data array contains 32-bit-per-channel red/green/blue/alpha color data. V
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_MAX** = ``8``
 
-Represents the size of the :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` enum.
+代表 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1547,7 +1547,7 @@ flags **ArrayFormat**: :ref:`🔗<enum_RenderingServer_ArrayFormat>`
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_VERTEX** = ``1``
 
-Flag used to mark a vertex position array.
+用於標記頂點位置陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_NORMAL:
 
@@ -1555,7 +1555,7 @@ Flag used to mark a vertex position array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_NORMAL** = ``2``
 
-Flag used to mark a normal array.
+用於標記法線陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_TANGENT:
 
@@ -1563,7 +1563,7 @@ Flag used to mark a normal array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_TANGENT** = ``4``
 
-Flag used to mark a tangent array.
+用於標記切線陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_COLOR:
 
@@ -1571,7 +1571,7 @@ Flag used to mark a tangent array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_COLOR** = ``8``
 
-Flag used to mark a vertex color array.
+用於標記頂點顏色陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_TEX_UV:
 
@@ -1579,7 +1579,7 @@ Flag used to mark a vertex color array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_TEX_UV** = ``16``
 
-Flag used to mark a UV coordinates array.
+用於標記 UV 座標陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_TEX_UV2:
 
@@ -1587,7 +1587,7 @@ Flag used to mark a UV coordinates array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_TEX_UV2** = ``32``
 
-Flag used to mark a UV coordinates array for the second UV coordinates.
+用於標記第二個 UV 座標的 UV 座標陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM0:
 
@@ -1595,7 +1595,7 @@ Flag used to mark a UV coordinates array for the second UV coordinates.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM0** = ``64``
 
-Flag used to mark an array of custom per-vertex data for the first set of custom data.
+用於標記第一組自訂資料的自訂頂點資料陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM1:
 
@@ -1603,7 +1603,7 @@ Flag used to mark an array of custom per-vertex data for the first set of custom
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM1** = ``128``
 
-Flag used to mark an array of custom per-vertex data for the second set of custom data.
+用於標記第二組自訂資料的自訂頂點資料陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM2:
 
@@ -1611,7 +1611,7 @@ Flag used to mark an array of custom per-vertex data for the second set of custo
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM2** = ``256``
 
-Flag used to mark an array of custom per-vertex data for the third set of custom data.
+用於標記第三組自訂資料的自訂頂點資料陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM3:
 
@@ -1619,7 +1619,7 @@ Flag used to mark an array of custom per-vertex data for the third set of custom
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM3** = ``512``
 
-Flag used to mark an array of custom per-vertex data for the fourth set of custom data.
+用於標記第四組自訂資料的自訂頂點資料陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_BONES:
 
@@ -1627,7 +1627,7 @@ Flag used to mark an array of custom per-vertex data for the fourth set of custo
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_BONES** = ``1024``
 
-Flag used to mark a bone information array.
+用來標記骨骼資訊陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_WEIGHTS:
 
@@ -1635,7 +1635,7 @@ Flag used to mark a bone information array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_WEIGHTS** = ``2048``
 
-Flag used to mark a weights array.
+用於標記重量陣列的標記。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_INDEX:
 
@@ -1643,7 +1643,7 @@ Flag used to mark a weights array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_INDEX** = ``4096``
 
-Flag used to mark an index array.
+用於標記索引陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_BLEND_SHAPE_MASK:
 
@@ -1651,7 +1651,7 @@ Flag used to mark an index array.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_BLEND_SHAPE_MASK** = ``7``
 
-Mask of mesh channels permitted in blend shapes.
+混合形狀中允許使用的網格通道的遮罩。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM_BASE:
 
@@ -1659,7 +1659,7 @@ Mask of mesh channels permitted in blend shapes.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM_BASE** = ``13``
 
-Shift of first custom channel.
+第一個自訂通道的移位量。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM_BITS:
 
@@ -1667,7 +1667,7 @@ Shift of first custom channel.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM_BITS** = ``3``
 
-Number of format bits per custom channel. See :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`.
+每個自訂通道的格式位數。請參閱 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`\ 。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM0_SHIFT:
 
@@ -1675,7 +1675,7 @@ Number of format bits per custom channel. See :ref:`ArrayCustomFormat<enum_Rende
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM0_SHIFT** = ``13``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` for custom channel index 0.
+自訂通道索引 0 需要對 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM1_SHIFT:
 
@@ -1683,7 +1683,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM1_SHIFT** = ``16``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` for custom channel index 1.
+自訂通道索引 1 需要對 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM2_SHIFT:
 
@@ -1691,7 +1691,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM2_SHIFT** = ``19``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` for custom channel index 2.
+自訂通道索引 2 需要對 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM3_SHIFT:
 
@@ -1699,7 +1699,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM3_SHIFT** = ``22``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` for custom channel index 3.
+自訂通道索引 3 需要對 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_RenderingServer_constant_ARRAY_FORMAT_CUSTOM_MASK:
 
@@ -1707,7 +1707,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FORMAT_CUSTOM_MASK** = ``7``
 
-Mask of custom format bits per custom channel. Must be shifted by one of the SHIFT constants. See :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`.
+每個自訂通道的自訂格式位元遮罩。必須按 SHIFT 常數之一進行移位。請參閱 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>`\ 。
 
 .. _class_RenderingServer_constant_ARRAY_COMPRESS_FLAGS_BASE:
 
@@ -1715,7 +1715,7 @@ Mask of custom format bits per custom channel. Must be shifted by one of the SHI
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_COMPRESS_FLAGS_BASE** = ``25``
 
-Shift of first compress flag. Compress flags should be passed to :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` and :ref:`SurfaceTool.commit()<class_SurfaceTool_method_commit>`.
+第一個壓縮旗標的移位元。壓縮旗標應該被傳遞給 :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` 和 :ref:`SurfaceTool.commit()<class_SurfaceTool_method_commit>`\ 。
 
 .. _class_RenderingServer_constant_ARRAY_FLAG_USE_2D_VERTICES:
 
@@ -1723,7 +1723,7 @@ Shift of first compress flag. Compress flags should be passed to :ref:`ArrayMesh
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_USE_2D_VERTICES** = ``33554432``
 
-Flag used to mark that the array contains 2D vertices.
+用於標記包含 2D 頂點的陣列的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE:
 
@@ -1739,7 +1739,7 @@ Flag used to mark that the mesh data will use ``GL_DYNAMIC_DRAW`` on GLES. Unuse
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_USE_8_BONE_WEIGHTS** = ``134217728``
 
-Flag used to mark that the array uses 8 bone weights instead of 4.
+用於標記陣列使用 8 個骨骼權重而不是 4 個的旗標。
 
 .. _class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY:
 
@@ -1821,7 +1821,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_RenderingServer_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_POINTS** = ``0``
 
-Primitive to draw consists of points.
+繪製的圖元由點組成。
 
 .. _class_RenderingServer_constant_PRIMITIVE_LINES:
 
@@ -1829,7 +1829,7 @@ Primitive to draw consists of points.
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_LINES** = ``1``
 
-Primitive to draw consists of lines.
+繪製的圖元由線組成。
 
 .. _class_RenderingServer_constant_PRIMITIVE_LINE_STRIP:
 
@@ -1837,7 +1837,7 @@ Primitive to draw consists of lines.
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_LINE_STRIP** = ``2``
 
-Primitive to draw consists of a line strip from start to end.
+繪製的圖元由單條線帶組成。
 
 .. _class_RenderingServer_constant_PRIMITIVE_TRIANGLES:
 
@@ -1845,7 +1845,7 @@ Primitive to draw consists of a line strip from start to end.
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_TRIANGLES** = ``3``
 
-Primitive to draw consists of triangles.
+繪製的圖元由三角形組成。
 
 .. _class_RenderingServer_constant_PRIMITIVE_TRIANGLE_STRIP:
 
@@ -1853,7 +1853,7 @@ Primitive to draw consists of triangles.
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_TRIANGLE_STRIP** = ``4``
 
-Primitive to draw consists of a triangle strip (the last 3 vertices are always combined to make a triangle).
+繪製的圖元由單條三角形帶組成（最後 3 個頂點總是會構成三角形）。
 
 .. _class_RenderingServer_constant_PRIMITIVE_MAX:
 
@@ -1861,7 +1861,7 @@ Primitive to draw consists of a triangle strip (the last 3 vertices are always c
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_MAX** = ``5``
 
-Represents the size of the :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` enum.
+代表 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1879,7 +1879,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_RenderingServer_BlendShapeMode>`
 
 :ref:`BlendShapeMode<enum_RenderingServer_BlendShapeMode>` **BLEND_SHAPE_MODE_NORMALIZED** = ``0``
 
-Blend shapes are normalized.
+混合形狀是被正規化了的。
 
 .. _class_RenderingServer_constant_BLEND_SHAPE_MODE_RELATIVE:
 
@@ -1887,7 +1887,7 @@ Blend shapes are normalized.
 
 :ref:`BlendShapeMode<enum_RenderingServer_BlendShapeMode>` **BLEND_SHAPE_MODE_RELATIVE** = ``1``
 
-Blend shapes are relative to base weight.
+混合形狀是相對於基礎的權重。
 
 .. rst-class:: classref-item-separator
 
@@ -1905,7 +1905,7 @@ enum **MultimeshTransformFormat**: :ref:`🔗<enum_RenderingServer_MultimeshTran
 
 :ref:`MultimeshTransformFormat<enum_RenderingServer_MultimeshTransformFormat>` **MULTIMESH_TRANSFORM_2D** = ``0``
 
-Use :ref:`Transform2D<class_Transform2D>` to store MultiMesh transform.
+使用 :ref:`Transform2D<class_Transform2D>` 儲存 MultiMesh 變換。
 
 .. _class_RenderingServer_constant_MULTIMESH_TRANSFORM_3D:
 
@@ -1913,7 +1913,7 @@ Use :ref:`Transform2D<class_Transform2D>` to store MultiMesh transform.
 
 :ref:`MultimeshTransformFormat<enum_RenderingServer_MultimeshTransformFormat>` **MULTIMESH_TRANSFORM_3D** = ``1``
 
-Use :ref:`Transform3D<class_Transform3D>` to store MultiMesh transform.
+使用 :ref:`Transform3D<class_Transform3D>` 儲存 MultiMesh 變換。
 
 .. rst-class:: classref-item-separator
 
@@ -1957,7 +1957,7 @@ enum **LightProjectorFilter**: :ref:`🔗<enum_RenderingServer_LightProjectorFil
 
 :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>` **LIGHT_PROJECTOR_FILTER_NEAREST** = ``0``
 
-Nearest-neighbor filter for light projectors (use for pixel art light projectors). No mipmaps are used for rendering, which means light projectors at a distance will look sharp but grainy. This has roughly the same performance cost as using mipmaps.
+光線投射器的最近鄰篩選（用於圖元風光線投射器）。算繪時不使用 mipmap，這意味著較遠處的光線投射器看上去會很銳利，但會有顆粒狀的圖案。與使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_LIGHT_PROJECTOR_FILTER_LINEAR:
 
@@ -1965,7 +1965,7 @@ Nearest-neighbor filter for light projectors (use for pixel art light projectors
 
 :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>` **LIGHT_PROJECTOR_FILTER_LINEAR** = ``1``
 
-Linear filter for light projectors (use for non-pixel art light projectors). No mipmaps are used for rendering, which means light projectors at a distance will look smooth but blurry. This has roughly the same performance cost as using mipmaps.
+光線投射器的線性篩選（用於非圖元風光線投射器）。算繪時不使用 mipmap，這意味著較遠處的光線投射器看上去會很平滑，但會有模糊的效果。與使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_LIGHT_PROJECTOR_FILTER_NEAREST_MIPMAPS:
 
@@ -1973,7 +1973,7 @@ Linear filter for light projectors (use for non-pixel art light projectors). No 
 
 :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>` **LIGHT_PROJECTOR_FILTER_NEAREST_MIPMAPS** = ``2``
 
-Nearest-neighbor filter for light projectors (use for pixel art light projectors). Isotropic mipmaps are used for rendering, which means light projectors at a distance will look smooth but blurry. This has roughly the same performance cost as not using mipmaps.
+光線投射器的最近鄰篩選（用於圖元風光線投射器）。算繪時使用各向同性的 mipmap，這意味著較遠處的光線投射器看上去會很平滑，但會有模糊的效果。與不使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_LIGHT_PROJECTOR_FILTER_LINEAR_MIPMAPS:
 
@@ -1981,7 +1981,7 @@ Nearest-neighbor filter for light projectors (use for pixel art light projectors
 
 :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>` **LIGHT_PROJECTOR_FILTER_LINEAR_MIPMAPS** = ``3``
 
-Linear filter for light projectors (use for non-pixel art light projectors). Isotropic mipmaps are used for rendering, which means light projectors at a distance will look smooth but blurry. This has roughly the same performance cost as not using mipmaps.
+光線投射器的線性篩選（用於非圖元風光線投射器）。算繪時使用各向同性的 mipmap，這意味著較遠處的光線投射器看上去會很平滑，但會有模糊的效果。與不使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_LIGHT_PROJECTOR_FILTER_NEAREST_MIPMAPS_ANISOTROPIC:
 
@@ -1989,7 +1989,7 @@ Linear filter for light projectors (use for non-pixel art light projectors). Iso
 
 :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>` **LIGHT_PROJECTOR_FILTER_NEAREST_MIPMAPS_ANISOTROPIC** = ``4``
 
-Nearest-neighbor filter for light projectors (use for pixel art light projectors). Anisotropic mipmaps are used for rendering, which means light projectors at a distance will look smooth and sharp when viewed from oblique angles. This looks better compared to isotropic mipmaps, but is slower. The level of anisotropic filtering is defined by :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+光線投射器的最近鄰篩選（用於圖元風光線投射器）。算繪時使用各向異性的 mipmap，這意味著光線投射器從斜角度觀察會既平滑又銳利。比各向同性的 mipmap 更好看，但也更慢。各向異性的級別由 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 定義。
 
 .. _class_RenderingServer_constant_LIGHT_PROJECTOR_FILTER_LINEAR_MIPMAPS_ANISOTROPIC:
 
@@ -1997,7 +1997,7 @@ Nearest-neighbor filter for light projectors (use for pixel art light projectors
 
 :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>` **LIGHT_PROJECTOR_FILTER_LINEAR_MIPMAPS_ANISOTROPIC** = ``5``
 
-Linear filter for light projectors (use for non-pixel art light projectors). Anisotropic mipmaps are used for rendering, which means light projectors at a distance will look smooth and sharp when viewed from oblique angles. This looks better compared to isotropic mipmaps, but is slower. The level of anisotropic filtering is defined by :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+光線投射器的線性篩選（用於非圖元風光線投射器）。算繪時使用各向異性的 mipmap，這意味著光線投射器從斜角度觀察會既平滑又銳利。比各向同性的 mipmap 更好看，但也更慢。各向異性的級別由 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 定義。
 
 .. rst-class:: classref-item-separator
 
@@ -2015,7 +2015,7 @@ enum **LightType**: :ref:`🔗<enum_RenderingServer_LightType>`
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_DIRECTIONAL** = ``0``
 
-Directional (sun/moon) light (see :ref:`DirectionalLight3D<class_DirectionalLight3D>`).
+方向（太陽/月亮）燈（見 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ ）。
 
 .. _class_RenderingServer_constant_LIGHT_OMNI:
 
@@ -2023,7 +2023,7 @@ Directional (sun/moon) light (see :ref:`DirectionalLight3D<class_DirectionalLigh
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_OMNI** = ``1``
 
-Omni light (see :ref:`OmniLight3D<class_OmniLight3D>`).
+全向燈（見 :ref:`OmniLight3D<class_OmniLight3D>`\ ）。
 
 .. _class_RenderingServer_constant_LIGHT_SPOT:
 
@@ -2031,7 +2031,7 @@ Omni light (see :ref:`OmniLight3D<class_OmniLight3D>`).
 
 :ref:`LightType<enum_RenderingServer_LightType>` **LIGHT_SPOT** = ``2``
 
-Spot light (see :ref:`SpotLight3D<class_SpotLight3D>`).
+聚光燈（見 :ref:`SpotLight3D<class_SpotLight3D>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2049,7 +2049,7 @@ enum **LightParam**: :ref:`🔗<enum_RenderingServer_LightParam>`
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_ENERGY** = ``0``
 
-The light's energy multiplier.
+該燈光的能量倍數。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_INDIRECT_ENERGY:
 
@@ -2057,7 +2057,7 @@ The light's energy multiplier.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_INDIRECT_ENERGY** = ``1``
 
-The light's indirect energy multiplier (final indirect energy is :ref:`LIGHT_PARAM_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_ENERGY>` \* :ref:`LIGHT_PARAM_INDIRECT_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_INDIRECT_ENERGY>`).
+該燈光的間接能量倍數（最終的間接能量為 :ref:`LIGHT_PARAM_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_ENERGY>` \* :ref:`LIGHT_PARAM_INDIRECT_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_INDIRECT_ENERGY>`\ ）。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_VOLUMETRIC_FOG_ENERGY:
 
@@ -2065,7 +2065,7 @@ The light's indirect energy multiplier (final indirect energy is :ref:`LIGHT_PAR
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_VOLUMETRIC_FOG_ENERGY** = ``2``
 
-The light's volumetric fog energy multiplier (final volumetric fog energy is :ref:`LIGHT_PARAM_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_ENERGY>` \* :ref:`LIGHT_PARAM_VOLUMETRIC_FOG_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_VOLUMETRIC_FOG_ENERGY>`).
+該燈光的體積霧能量倍數（最終的體積霧能量為 :ref:`LIGHT_PARAM_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_ENERGY>` \* :ref:`LIGHT_PARAM_VOLUMETRIC_FOG_ENERGY<class_RenderingServer_constant_LIGHT_PARAM_VOLUMETRIC_FOG_ENERGY>`\ ）。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SPECULAR:
 
@@ -2073,7 +2073,7 @@ The light's volumetric fog energy multiplier (final volumetric fog energy is :re
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SPECULAR** = ``3``
 
-The light's influence on specularity.
+燈光對鏡面反射的影響。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_RANGE:
 
@@ -2081,7 +2081,7 @@ The light's influence on specularity.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_RANGE** = ``4``
 
-The light's range.
+燈光的範圍。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SIZE:
 
@@ -2089,7 +2089,7 @@ The light's range.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SIZE** = ``5``
 
-The size of the light when using spot light or omni light. The angular size of the light when using directional light.
+使用聚光燈或全向燈時的燈光大小。使用定向光時是光的角度大小。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_ATTENUATION:
 
@@ -2097,7 +2097,7 @@ The size of the light when using spot light or omni light. The angular size of t
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_ATTENUATION** = ``6``
 
-The light's attenuation.
+光線的衰減。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SPOT_ANGLE:
 
@@ -2105,7 +2105,7 @@ The light's attenuation.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SPOT_ANGLE** = ``7``
 
-The spotlight's angle.
+聚光燈的角度。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SPOT_ATTENUATION:
 
@@ -2113,7 +2113,7 @@ The spotlight's angle.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SPOT_ATTENUATION** = ``8``
 
-The spotlight's attenuation.
+聚光燈的衰減。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_MAX_DISTANCE:
 
@@ -2121,7 +2121,7 @@ The spotlight's attenuation.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_MAX_DISTANCE** = ``9``
 
-The maximum distance for shadow splits. Increasing this value will make directional shadows visible from further away, at the cost of lower overall shadow detail and performance (since more objects need to be included in the directional shadow rendering).
+陰影分割的最大距離。將這個值增大會讓定向陰影在更遠處可見，代價是整體的陰影細節降低和性能（因為算繪定向陰影時需要包含更多的物體）。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_SPLIT_1_OFFSET:
 
@@ -2129,7 +2129,7 @@ The maximum distance for shadow splits. Increasing this value will make directio
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_SPLIT_1_OFFSET** = ``10``
 
-Proportion of shadow atlas occupied by the first split.
+第一次拆分所佔據的陰影合集的比例。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_SPLIT_2_OFFSET:
 
@@ -2137,7 +2137,7 @@ Proportion of shadow atlas occupied by the first split.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_SPLIT_2_OFFSET** = ``11``
 
-Proportion of shadow atlas occupied by the second split.
+第二次拆分所佔用的陰影合集的比例。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_SPLIT_3_OFFSET:
 
@@ -2145,7 +2145,7 @@ Proportion of shadow atlas occupied by the second split.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_SPLIT_3_OFFSET** = ``12``
 
-Proportion of shadow atlas occupied by the third split. The fourth split occupies the rest.
+第三次拆分所佔用的陰影合集的比例。第四個拆分佔據了其餘部分。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_FADE_START:
 
@@ -2153,7 +2153,7 @@ Proportion of shadow atlas occupied by the third split. The fourth split occupie
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_FADE_START** = ``13``
 
-Proportion of shadow max distance where the shadow will start to fade out.
+陰影將開始淡出的陰影最大距離的比例。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_NORMAL_BIAS:
 
@@ -2161,7 +2161,7 @@ Proportion of shadow max distance where the shadow will start to fade out.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_NORMAL_BIAS** = ``14``
 
-Normal bias used to offset shadow lookup by object normal. Can be used to fix self-shadowing artifacts.
+法線偏置，用於抵消物體法線的陰影搜尋。可以用來修復自陰影的偽影。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_BIAS:
 
@@ -2177,7 +2177,7 @@ Bias for the shadow lookup to fix self-shadowing artifacts.
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_PANCAKE_SIZE** = ``16``
 
-Sets the size of the directional shadow pancake. The pancake offsets the start of the shadow's camera frustum to provide a higher effective depth resolution for the shadow. However, a high pancake size can cause artifacts in the shadows of large objects that are close to the edge of the frustum. Reducing the pancake size can help. Setting the size to ``0`` turns off the pancaking effect.
+設定定向陰影斑點的大小。 斑點偏移了陰影的相機視錐體的起點，為陰影提供更高的有效深度解析度。但是，較大的斑點尺寸會導致靠近視錐體邊緣的大型物體的陰影出現偽影。減少斑點的大小會有所幫助。將大小設定為 ``0`` 會關閉斑點效果。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_OPACITY:
 
@@ -2185,7 +2185,7 @@ Sets the size of the directional shadow pancake. The pancake offsets the start o
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_OPACITY** = ``17``
 
-The light's shadow opacity. Values lower than ``1.0`` make the light appear through shadows. This can be used to fake global illumination at a low performance cost.
+燈光的陰影不透明度。低於 ``1.0`` 的值會使光線透過陰影出現。這可以用於以較低的性能成本偽造全域照明。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_BLUR:
 
@@ -2193,7 +2193,7 @@ The light's shadow opacity. Values lower than ``1.0`` make the light appear thro
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_BLUR** = ``18``
 
-Blurs the edges of the shadow. Can be used to hide pixel artifacts in low resolution shadow maps. A high value can make shadows appear grainy and can cause other unwanted artifacts. Try to keep as near default as possible.
+模糊陰影的邊緣。可用於隱藏低解析度陰影貼圖中的圖元偽影。較高的值會使陰影顯得粗糙，並可能導致其他不需要的偽影。儘量保持接近預設值。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_TRANSMITTANCE_BIAS:
 
@@ -2213,7 +2213,7 @@ Blurs the edges of the shadow. Can be used to hide pixel artifacts in low resolu
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_INTENSITY** = ``20``
 
-Constant representing the intensity of the light, measured in Lumens when dealing with a :ref:`SpotLight3D<class_SpotLight3D>` or :ref:`OmniLight3D<class_OmniLight3D>`, or measured in Lux with a :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Only used when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is ``true``.
+代表燈光強度的常數，\ :ref:`SpotLight3D<class_SpotLight3D>` 和 :ref:`OmniLight3D<class_OmniLight3D>` 的單位為流明，\ :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的單位為勒克斯。僅在 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 為 ``true`` 時使用。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_MAX:
 
@@ -2221,7 +2221,7 @@ Constant representing the intensity of the light, measured in Lumens when dealin
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_MAX** = ``21``
 
-Represents the size of the :ref:`LightParam<enum_RenderingServer_LightParam>` enum.
+代表 :ref:`LightParam<enum_RenderingServer_LightParam>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2239,7 +2239,7 @@ enum **LightBakeMode**: :ref:`🔗<enum_RenderingServer_LightBakeMode>`
 
 :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>` **LIGHT_BAKE_DISABLED** = ``0``
 
-Light is ignored when baking. This is the fastest mode, but the light will be taken into account when baking global illumination. This mode should generally be used for dynamic lights that change quickly, as the effect of global illumination is less noticeable on those lights.
+烘焙時燈光將被忽略。這是最快的模式，但是在烘焙全域照明時仍會考慮該燈光。該模式通常套用於快速變化的動態燈光，因為全域照明的效果在這些燈光上不太明顯。
 
 .. _class_RenderingServer_constant_LIGHT_BAKE_STATIC:
 
@@ -2247,7 +2247,7 @@ Light is ignored when baking. This is the fastest mode, but the light will be ta
 
 :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>` **LIGHT_BAKE_STATIC** = ``1``
 
-Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). The light can be moved around or modified, but its global illumination will not update in real-time. This is suitable for subtle changes (such as flickering torches), but generally not large changes such as toggling a light on and off.
+在靜態烘焙（\ :ref:`VoxelGI<class_VoxelGI>`\ 、\ :ref:`LightmapGI<class_LightmapGI>`\ 、SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ））時，考慮了燈光。燈光可以四處移動或修改，但其全域照明不會實時更新。這適用於細微的變化（例如閃爍的手電筒），但通常不適用於大的變化，例如打開和關閉燈光。
 
 .. _class_RenderingServer_constant_LIGHT_BAKE_DYNAMIC:
 
@@ -2255,7 +2255,7 @@ Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :re
 
 :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>` **LIGHT_BAKE_DYNAMIC** = ``2``
 
-Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) only). The light can be moved around or modified with global illumination updating in real-time. The light's global illumination appearance will be slightly different compared to :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>`. This has a greater performance cost compared to :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>`. When using SDFGI, the update speed of dynamic lights is affected by :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+動態烘焙時考慮燈光（僅 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ））。燈光可以四處移動或修改，全域照明會即時更新。燈光的全域照明效果與 :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>` 略有不同。性能開銷比 :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>` 更大。使用 SDFGI 時，動態燈光的更新速度受 :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` 的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2273,7 @@ enum **LightOmniShadowMode**: :ref:`🔗<enum_RenderingServer_LightOmniShadowMod
 
 :ref:`LightOmniShadowMode<enum_RenderingServer_LightOmniShadowMode>` **LIGHT_OMNI_SHADOW_DUAL_PARABOLOID** = ``0``
 
-Use a dual paraboloid shadow map for omni lights.
+對全向光使用雙抛物面陰影貼圖。
 
 .. _class_RenderingServer_constant_LIGHT_OMNI_SHADOW_CUBE:
 
@@ -2281,7 +2281,7 @@ Use a dual paraboloid shadow map for omni lights.
 
 :ref:`LightOmniShadowMode<enum_RenderingServer_LightOmniShadowMode>` **LIGHT_OMNI_SHADOW_CUBE** = ``1``
 
-Use a cubemap shadow map for omni lights. Slower but better quality than dual paraboloid.
+對全向光使用立方體貼圖陰影貼圖。比雙抛物面更慢但品質更好。
 
 .. rst-class:: classref-item-separator
 
@@ -2299,7 +2299,7 @@ enum **LightDirectionalShadowMode**: :ref:`🔗<enum_RenderingServer_LightDirect
 
 :ref:`LightDirectionalShadowMode<enum_RenderingServer_LightDirectionalShadowMode>` **LIGHT_DIRECTIONAL_SHADOW_ORTHOGONAL** = ``0``
 
-Use orthogonal shadow projection for directional light.
+對平行光使用正交陰影投影。
 
 .. _class_RenderingServer_constant_LIGHT_DIRECTIONAL_SHADOW_PARALLEL_2_SPLITS:
 
@@ -2307,7 +2307,7 @@ Use orthogonal shadow projection for directional light.
 
 :ref:`LightDirectionalShadowMode<enum_RenderingServer_LightDirectionalShadowMode>` **LIGHT_DIRECTIONAL_SHADOW_PARALLEL_2_SPLITS** = ``1``
 
-Use 2 splits for shadow projection when using directional light.
+使用平行光時，使用 2 個分割進行陰影投影。
 
 .. _class_RenderingServer_constant_LIGHT_DIRECTIONAL_SHADOW_PARALLEL_4_SPLITS:
 
@@ -2315,7 +2315,7 @@ Use 2 splits for shadow projection when using directional light.
 
 :ref:`LightDirectionalShadowMode<enum_RenderingServer_LightDirectionalShadowMode>` **LIGHT_DIRECTIONAL_SHADOW_PARALLEL_4_SPLITS** = ``2``
 
-Use 4 splits for shadow projection when using directional light.
+使用平行光時，使用 4 個分割進行陰影投影。
 
 .. rst-class:: classref-item-separator
 
@@ -2333,7 +2333,7 @@ enum **LightDirectionalSkyMode**: :ref:`🔗<enum_RenderingServer_LightDirection
 
 :ref:`LightDirectionalSkyMode<enum_RenderingServer_LightDirectionalSkyMode>` **LIGHT_DIRECTIONAL_SKY_MODE_LIGHT_AND_SKY** = ``0``
 
-Use DirectionalLight3D in both sky rendering and scene lighting.
+在天空算繪和場景照明中都使用 DirectionalLight3D。
 
 .. _class_RenderingServer_constant_LIGHT_DIRECTIONAL_SKY_MODE_LIGHT_ONLY:
 
@@ -2341,7 +2341,7 @@ Use DirectionalLight3D in both sky rendering and scene lighting.
 
 :ref:`LightDirectionalSkyMode<enum_RenderingServer_LightDirectionalSkyMode>` **LIGHT_DIRECTIONAL_SKY_MODE_LIGHT_ONLY** = ``1``
 
-Only use DirectionalLight3D in scene lighting.
+僅在場景照明中使用 DirectionalLight3D。
 
 .. _class_RenderingServer_constant_LIGHT_DIRECTIONAL_SKY_MODE_SKY_ONLY:
 
@@ -2349,7 +2349,7 @@ Only use DirectionalLight3D in scene lighting.
 
 :ref:`LightDirectionalSkyMode<enum_RenderingServer_LightDirectionalSkyMode>` **LIGHT_DIRECTIONAL_SKY_MODE_SKY_ONLY** = ``2``
 
-Only use DirectionalLight3D in sky rendering.
+僅在天空算繪中使用 DirectionalLight3D。
 
 .. rst-class:: classref-item-separator
 
@@ -2367,9 +2367,9 @@ enum **ShadowQuality**: :ref:`🔗<enum_RenderingServer_ShadowQuality>`
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_HARD** = ``0``
 
-Lowest shadow filtering quality (fastest). Soft shadows are not available with this quality setting, which means the :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` property is ignored if :ref:`Light3D.light_size<class_Light3D_property_light_size>` and :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` is ``0.0``.
+最低的陰影篩選品質（最快）。使用這種品質設定時，軟陰影不可用，這意味著如果 :ref:`Light3D.light_size<class_Light3D_property_light_size>` 和 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 為 ``0.0``\ ，則會忽略 :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` 屬性。
 
-\ **Note:** The variable shadow blur performed by :ref:`Light3D.light_size<class_Light3D_property_light_size>` and :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` is still effective when using hard shadow filtering. In this case, :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` *is* taken into account. However, the results will not be blurred, instead the blur amount is treated as a maximum radius for the penumbra.
+\ **注意：**\ 使用硬陰影篩選時，由 :ref:`Light3D.light_size<class_Light3D_property_light_size>` 和 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 執行的可變陰影模糊仍然有效。在這種情況下\ *會*\ 考慮 :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>`\ 。但是不會對結果進行模糊處理，而是將模糊量視為半影的最大半徑。
 
 .. _class_RenderingServer_constant_SHADOW_QUALITY_SOFT_VERY_LOW:
 
@@ -2377,7 +2377,7 @@ Lowest shadow filtering quality (fastest). Soft shadows are not available with t
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_SOFT_VERY_LOW** = ``1``
 
-Very low shadow filtering quality (faster). When using this quality setting, :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` is automatically multiplied by 0.75× to avoid introducing too much noise. This division only applies to lights whose :ref:`Light3D.light_size<class_Light3D_property_light_size>` or :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` is ``0.0``).
+非常低的陰影篩選品質（更快）。使用該品質設定時，\ :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` 會自動乘以 0.75 倍以避免引入過多的噪點。該劃分僅適用於 :ref:`Light3D.light_size<class_Light3D_property_light_size>` 或 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 為 ``0.0`` 的燈光。
 
 .. _class_RenderingServer_constant_SHADOW_QUALITY_SOFT_LOW:
 
@@ -2385,7 +2385,7 @@ Very low shadow filtering quality (faster). When using this quality setting, :re
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_SOFT_LOW** = ``2``
 
-Low shadow filtering quality (fast).
+低陰影篩選品質（快速）。
 
 .. _class_RenderingServer_constant_SHADOW_QUALITY_SOFT_MEDIUM:
 
@@ -2393,7 +2393,7 @@ Low shadow filtering quality (fast).
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_SOFT_MEDIUM** = ``3``
 
-Medium low shadow filtering quality (average).
+中低陰影篩選品質（平均）。
 
 .. _class_RenderingServer_constant_SHADOW_QUALITY_SOFT_HIGH:
 
@@ -2401,7 +2401,7 @@ Medium low shadow filtering quality (average).
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_SOFT_HIGH** = ``4``
 
-High low shadow filtering quality (slow). When using this quality setting, :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` is automatically multiplied by 1.5× to better make use of the high sample count. This increased blur also improves the stability of dynamic object shadows. This multiplier only applies to lights whose :ref:`Light3D.light_size<class_Light3D_property_light_size>` or :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` is ``0.0``).
+高低陰影篩選品質（慢）。使用該品質設定時，\ :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` 會自動乘以 1.5 倍以更好地利用高樣本數。這種增加的模糊還提高了動態物件陰影的穩定性。該乘數僅適用於 :ref:`Light3D.light_size<class_Light3D_property_light_size>` 或 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 為 ``0.0`` 的燈光。
 
 .. _class_RenderingServer_constant_SHADOW_QUALITY_SOFT_ULTRA:
 
@@ -2409,7 +2409,7 @@ High low shadow filtering quality (slow). When using this quality setting, :ref:
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_SOFT_ULTRA** = ``5``
 
-Highest low shadow filtering quality (slowest). When using this quality setting, :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` is automatically multiplied by 2× to better make use of the high sample count. This increased blur also improves the stability of dynamic object shadows. This multiplier only applies to lights whose :ref:`Light3D.light_size<class_Light3D_property_light_size>` or :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` is ``0.0``).
+最高的低陰影篩選品質（最慢）。使用該品質設定時，\ :ref:`Light3D.shadow_blur<class_Light3D_property_shadow_blur>` 會自動乘以 2 倍以更好地利用高樣本數。這種增加的模糊還提高了動態物件陰影的穩定性。該乘數僅適用於 :ref:`Light3D.light_size<class_Light3D_property_light_size>` 或 :ref:`Light3D.light_angular_distance<class_Light3D_property_light_angular_distance>` 為 ``0.0`` 的燈光。
 
 .. _class_RenderingServer_constant_SHADOW_QUALITY_MAX:
 
@@ -2417,7 +2417,7 @@ Highest low shadow filtering quality (slowest). When using this quality setting,
 
 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` **SHADOW_QUALITY_MAX** = ``6``
 
-Represents the size of the :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` enum.
+代表 :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2435,7 +2435,7 @@ enum **ReflectionProbeUpdateMode**: :ref:`🔗<enum_RenderingServer_ReflectionPr
 
 :ref:`ReflectionProbeUpdateMode<enum_RenderingServer_ReflectionProbeUpdateMode>` **REFLECTION_PROBE_UPDATE_ONCE** = ``0``
 
-Reflection probe will update reflections once and then stop.
+反射探查將更新一次反射，然後停止。
 
 .. _class_RenderingServer_constant_REFLECTION_PROBE_UPDATE_ALWAYS:
 
@@ -2443,7 +2443,7 @@ Reflection probe will update reflections once and then stop.
 
 :ref:`ReflectionProbeUpdateMode<enum_RenderingServer_ReflectionProbeUpdateMode>` **REFLECTION_PROBE_UPDATE_ALWAYS** = ``1``
 
-Reflection probe will update each frame. This mode is necessary to capture moving objects.
+反射探查將每影格更新。這種模式對於捕捉移動物體是必要的。
 
 .. rst-class:: classref-item-separator
 
@@ -2461,7 +2461,7 @@ enum **ReflectionProbeAmbientMode**: :ref:`🔗<enum_RenderingServer_ReflectionP
 
 :ref:`ReflectionProbeAmbientMode<enum_RenderingServer_ReflectionProbeAmbientMode>` **REFLECTION_PROBE_AMBIENT_DISABLED** = ``0``
 
-Do not apply any ambient lighting inside the reflection probe's box defined by its size.
+不要在反射探查的區域內套用任何環境光，區域由探查的大小決定。
 
 .. _class_RenderingServer_constant_REFLECTION_PROBE_AMBIENT_ENVIRONMENT:
 
@@ -2469,7 +2469,7 @@ Do not apply any ambient lighting inside the reflection probe's box defined by i
 
 :ref:`ReflectionProbeAmbientMode<enum_RenderingServer_ReflectionProbeAmbientMode>` **REFLECTION_PROBE_AMBIENT_ENVIRONMENT** = ``1``
 
-Apply automatically-sourced environment lighting inside the reflection probe's box defined by its size.
+在反射探查的區域內套用自動來源的環境光照，區域由探查的大小決定。
 
 .. _class_RenderingServer_constant_REFLECTION_PROBE_AMBIENT_COLOR:
 
@@ -2477,7 +2477,7 @@ Apply automatically-sourced environment lighting inside the reflection probe's b
 
 :ref:`ReflectionProbeAmbientMode<enum_RenderingServer_ReflectionProbeAmbientMode>` **REFLECTION_PROBE_AMBIENT_COLOR** = ``2``
 
-Apply custom ambient lighting inside the reflection probe's box defined by its size. See :ref:`reflection_probe_set_ambient_color()<class_RenderingServer_method_reflection_probe_set_ambient_color>` and :ref:`reflection_probe_set_ambient_energy()<class_RenderingServer_method_reflection_probe_set_ambient_energy>`.
+在反射探查的區域內套用自訂環境光，區域由探查的大小決定。見 :ref:`reflection_probe_set_ambient_color()<class_RenderingServer_method_reflection_probe_set_ambient_color>` 和 :ref:`reflection_probe_set_ambient_energy()<class_RenderingServer_method_reflection_probe_set_ambient_energy>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2495,7 +2495,7 @@ enum **DecalTexture**: :ref:`🔗<enum_RenderingServer_DecalTexture>`
 
 :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` **DECAL_TEXTURE_ALBEDO** = ``0``
 
-Albedo texture slot in a decal (:ref:`Decal.texture_albedo<class_Decal_property_texture_albedo>`).
+裝飾中的反照率紋理（\ :ref:`Decal.texture_albedo<class_Decal_property_texture_albedo>`\ ）。
 
 .. _class_RenderingServer_constant_DECAL_TEXTURE_NORMAL:
 
@@ -2503,7 +2503,7 @@ Albedo texture slot in a decal (:ref:`Decal.texture_albedo<class_Decal_property_
 
 :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` **DECAL_TEXTURE_NORMAL** = ``1``
 
-Normal map texture slot in a decal (:ref:`Decal.texture_normal<class_Decal_property_texture_normal>`).
+裝飾中的法線貼圖紋理（\ :ref:`Decal.texture_normal<class_Decal_property_texture_normal>`\ ）。
 
 .. _class_RenderingServer_constant_DECAL_TEXTURE_ORM:
 
@@ -2511,7 +2511,7 @@ Normal map texture slot in a decal (:ref:`Decal.texture_normal<class_Decal_prope
 
 :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` **DECAL_TEXTURE_ORM** = ``2``
 
-Occlusion/Roughness/Metallic texture slot in a decal (:ref:`Decal.texture_orm<class_Decal_property_texture_orm>`).
+裝飾中的遮蔽/粗糙度/金屬性紋理（\ :ref:`Decal.texture_orm<class_Decal_property_texture_orm>`\ ）。
 
 .. _class_RenderingServer_constant_DECAL_TEXTURE_EMISSION:
 
@@ -2519,7 +2519,7 @@ Occlusion/Roughness/Metallic texture slot in a decal (:ref:`Decal.texture_orm<cl
 
 :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` **DECAL_TEXTURE_EMISSION** = ``3``
 
-Emission texture slot in a decal (:ref:`Decal.texture_emission<class_Decal_property_texture_emission>`).
+裝飾中的自發光紋理（\ :ref:`Decal.texture_orm<class_Decal_property_texture_orm>`\ ）。
 
 .. _class_RenderingServer_constant_DECAL_TEXTURE_MAX:
 
@@ -2527,7 +2527,7 @@ Emission texture slot in a decal (:ref:`Decal.texture_emission<class_Decal_prope
 
 :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` **DECAL_TEXTURE_MAX** = ``4``
 
-Represents the size of the :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` enum.
+代表 :ref:`DecalTexture<enum_RenderingServer_DecalTexture>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2545,7 +2545,7 @@ enum **DecalFilter**: :ref:`🔗<enum_RenderingServer_DecalFilter>`
 
 :ref:`DecalFilter<enum_RenderingServer_DecalFilter>` **DECAL_FILTER_NEAREST** = ``0``
 
-Nearest-neighbor filter for decals (use for pixel art decals). No mipmaps are used for rendering, which means decals at a distance will look sharp but grainy. This has roughly the same performance cost as using mipmaps.
+裝飾的最近鄰篩選（用於圖元風裝飾）。算繪時不使用 mipmap，這意味著較遠處的裝飾看上去會很銳利，但會有顆粒狀的圖案。與使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_DECAL_FILTER_LINEAR:
 
@@ -2553,7 +2553,7 @@ Nearest-neighbor filter for decals (use for pixel art decals). No mipmaps are us
 
 :ref:`DecalFilter<enum_RenderingServer_DecalFilter>` **DECAL_FILTER_LINEAR** = ``1``
 
-Linear filter for decals (use for non-pixel art decals). No mipmaps are used for rendering, which means decals at a distance will look smooth but blurry. This has roughly the same performance cost as using mipmaps.
+裝飾的線性篩選（用於非圖元風裝飾）。算繪時不使用 mipmap，這意味著較遠處的裝飾看上去會很平滑，但會有模糊的效果。與使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_DECAL_FILTER_NEAREST_MIPMAPS:
 
@@ -2561,7 +2561,7 @@ Linear filter for decals (use for non-pixel art decals). No mipmaps are used for
 
 :ref:`DecalFilter<enum_RenderingServer_DecalFilter>` **DECAL_FILTER_NEAREST_MIPMAPS** = ``2``
 
-Nearest-neighbor filter for decals (use for pixel art decals). Isotropic mipmaps are used for rendering, which means decals at a distance will look smooth but blurry. This has roughly the same performance cost as not using mipmaps.
+裝飾的最近鄰篩選（用於圖元風裝飾）。算繪時使用各向同性的 mipmap，這意味著較遠處的裝飾看上去會很平滑，但會有模糊的效果。與不使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_DECAL_FILTER_LINEAR_MIPMAPS:
 
@@ -2569,7 +2569,7 @@ Nearest-neighbor filter for decals (use for pixel art decals). Isotropic mipmaps
 
 :ref:`DecalFilter<enum_RenderingServer_DecalFilter>` **DECAL_FILTER_LINEAR_MIPMAPS** = ``3``
 
-Linear filter for decals (use for non-pixel art decals). Isotropic mipmaps are used for rendering, which means decals at a distance will look smooth but blurry. This has roughly the same performance cost as not using mipmaps.
+裝飾的線性篩選（用於非圖元風裝飾）。算繪時使用各向同性的 mipmap，這意味著較遠處的裝飾看上去會很平滑，但會有模糊的效果。與不使用 mipmap 的性能開銷大致相同。
 
 .. _class_RenderingServer_constant_DECAL_FILTER_NEAREST_MIPMAPS_ANISOTROPIC:
 
@@ -2577,7 +2577,7 @@ Linear filter for decals (use for non-pixel art decals). Isotropic mipmaps are u
 
 :ref:`DecalFilter<enum_RenderingServer_DecalFilter>` **DECAL_FILTER_NEAREST_MIPMAPS_ANISOTROPIC** = ``4``
 
-Nearest-neighbor filter for decals (use for pixel art decals). Anisotropic mipmaps are used for rendering, which means decals at a distance will look smooth and sharp when viewed from oblique angles. This looks better compared to isotropic mipmaps, but is slower. The level of anisotropic filtering is defined by :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+裝飾的最近鄰篩選（用於圖元風裝飾）。算繪時使用各向異性的 mipmap，這意味著裝飾從斜角度觀察會既平滑又銳利。比各向同性的 mipmap 更好看，但也更慢。各向異性的級別由 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 定義。
 
 .. _class_RenderingServer_constant_DECAL_FILTER_LINEAR_MIPMAPS_ANISOTROPIC:
 
@@ -2585,7 +2585,7 @@ Nearest-neighbor filter for decals (use for pixel art decals). Anisotropic mipma
 
 :ref:`DecalFilter<enum_RenderingServer_DecalFilter>` **DECAL_FILTER_LINEAR_MIPMAPS_ANISOTROPIC** = ``5``
 
-Linear filter for decals (use for non-pixel art decals). Anisotropic mipmaps are used for rendering, which means decals at a distance will look smooth and sharp when viewed from oblique angles. This looks better compared to isotropic mipmaps, but is slower. The level of anisotropic filtering is defined by :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+裝飾的線性篩選（用於非圖元風裝飾）。算繪時使用各向異性的 mipmap，這意味著裝飾從斜角度觀察會既平滑又銳利。比各向同性的 mipmap 更好看，但也更慢。各向異性的級別由 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 定義。
 
 .. rst-class:: classref-item-separator
 
@@ -2603,7 +2603,7 @@ enum **VoxelGIQuality**: :ref:`🔗<enum_RenderingServer_VoxelGIQuality>`
 
 :ref:`VoxelGIQuality<enum_RenderingServer_VoxelGIQuality>` **VOXEL_GI_QUALITY_LOW** = ``0``
 
-Low :ref:`VoxelGI<class_VoxelGI>` rendering quality using 4 cones.
+:ref:`VoxelGI<class_VoxelGI>` 較低算繪品質，使用 4 個錐體。
 
 .. _class_RenderingServer_constant_VOXEL_GI_QUALITY_HIGH:
 
@@ -2611,7 +2611,7 @@ Low :ref:`VoxelGI<class_VoxelGI>` rendering quality using 4 cones.
 
 :ref:`VoxelGIQuality<enum_RenderingServer_VoxelGIQuality>` **VOXEL_GI_QUALITY_HIGH** = ``1``
 
-High :ref:`VoxelGI<class_VoxelGI>` rendering quality using 6 cones.
+:ref:`VoxelGI<class_VoxelGI>` 較高算繪品質，使用 6 個錐體。
 
 .. rst-class:: classref-item-separator
 
@@ -2629,7 +2629,7 @@ enum **ParticlesMode**: :ref:`🔗<enum_RenderingServer_ParticlesMode>`
 
 :ref:`ParticlesMode<enum_RenderingServer_ParticlesMode>` **PARTICLES_MODE_2D** = ``0``
 
-2D particles.
+2D 粒子。
 
 .. _class_RenderingServer_constant_PARTICLES_MODE_3D:
 
@@ -2637,7 +2637,7 @@ enum **ParticlesMode**: :ref:`🔗<enum_RenderingServer_ParticlesMode>`
 
 :ref:`ParticlesMode<enum_RenderingServer_ParticlesMode>` **PARTICLES_MODE_3D** = ``1``
 
-3D particles.
+3D 粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -2713,7 +2713,7 @@ enum **ParticlesDrawOrder**: :ref:`🔗<enum_RenderingServer_ParticlesDrawOrder>
 
 :ref:`ParticlesDrawOrder<enum_RenderingServer_ParticlesDrawOrder>` **PARTICLES_DRAW_ORDER_INDEX** = ``0``
 
-Draw particles in the order that they appear in the particles array.
+按照粒子陣列中出現的順序繪製粒子。
 
 .. _class_RenderingServer_constant_PARTICLES_DRAW_ORDER_LIFETIME:
 
@@ -2737,7 +2737,7 @@ Sort particles based on the inverse of their lifetime. In other words, the parti
 
 :ref:`ParticlesDrawOrder<enum_RenderingServer_ParticlesDrawOrder>` **PARTICLES_DRAW_ORDER_VIEW_DEPTH** = ``3``
 
-Sort particles based on their distance to the camera.
+根據粒子與相機的距離對其進行排序。
 
 .. rst-class:: classref-item-separator
 
@@ -2921,7 +2921,7 @@ enum **ParticlesCollisionHeightfieldResolution**: :ref:`🔗<enum_RenderingServe
 
 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` **PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_MAX** = ``6``
 
-Represents the size of the :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` enum.
+代表 :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2939,7 +2939,7 @@ enum **FogVolumeShape**: :ref:`🔗<enum_RenderingServer_FogVolumeShape>`
 
 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **FOG_VOLUME_SHAPE_ELLIPSOID** = ``0``
 
-:ref:`FogVolume<class_FogVolume>` will be shaped like an ellipsoid (stretched sphere).
+:ref:`FogVolume<class_FogVolume>` 的形狀類似於一個橢球體（拉伸的球體）。
 
 .. _class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE:
 
@@ -2947,7 +2947,7 @@ enum **FogVolumeShape**: :ref:`🔗<enum_RenderingServer_FogVolumeShape>`
 
 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **FOG_VOLUME_SHAPE_CONE** = ``1``
 
-:ref:`FogVolume<class_FogVolume>` will be shaped like a cone pointing upwards (in local coordinates). The cone's angle is set automatically to fill the size. The cone will be adjusted to fit within the size. Rotate the :ref:`FogVolume<class_FogVolume>` node to reorient the cone. Non-uniform scaling via size is not supported (scale the :ref:`FogVolume<class_FogVolume>` node instead).
+:ref:`FogVolume<class_FogVolume>` 的形狀像一個向上的圓錐體（在局部座標中）。圓錐體的角度會自動被設置以填充大小。錐體將被調整以適合大小。旋轉 :ref:`FogVolume<class_FogVolume>` 節點以重新定向圓錐體。不支援通過大小進行非均勻縮放（改為縮放 :ref:`FogVolume<class_FogVolume>` 節點）。
 
 .. _class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER:
 
@@ -2955,7 +2955,7 @@ enum **FogVolumeShape**: :ref:`🔗<enum_RenderingServer_FogVolumeShape>`
 
 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **FOG_VOLUME_SHAPE_CYLINDER** = ``2``
 
-:ref:`FogVolume<class_FogVolume>` will be shaped like an upright cylinder (in local coordinates). Rotate the :ref:`FogVolume<class_FogVolume>` node to reorient the cylinder. The cylinder will be adjusted to fit within the size. Non-uniform scaling via size is not supported (scale the :ref:`FogVolume<class_FogVolume>` node instead).
+:ref:`FogVolume<class_FogVolume>` 的形狀將像一個直立的圓柱體（在局部座標中）。旋轉 :ref:`FogVolume<class_FogVolume>` 節點以重新定向圓柱體。圓柱體將被調整以適合大小。不支援通過大小進行非均勻縮放（改為縮放 :ref:`FogVolume<class_FogVolume>` 節點）。
 
 .. _class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX:
 
@@ -2963,7 +2963,7 @@ enum **FogVolumeShape**: :ref:`🔗<enum_RenderingServer_FogVolumeShape>`
 
 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **FOG_VOLUME_SHAPE_BOX** = ``3``
 
-:ref:`FogVolume<class_FogVolume>` will be shaped like a box.
+:ref:`FogVolume<class_FogVolume>` 的形狀會像一個盒子。
 
 .. _class_RenderingServer_constant_FOG_VOLUME_SHAPE_WORLD:
 
@@ -2971,7 +2971,7 @@ enum **FogVolumeShape**: :ref:`🔗<enum_RenderingServer_FogVolumeShape>`
 
 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **FOG_VOLUME_SHAPE_WORLD** = ``4``
 
-:ref:`FogVolume<class_FogVolume>` will have no shape, will cover the whole world and will not be culled.
+:ref:`FogVolume<class_FogVolume>` 將沒有形狀，將覆蓋整個世界並且不會被剔除。
 
 .. _class_RenderingServer_constant_FOG_VOLUME_SHAPE_MAX:
 
@@ -2979,7 +2979,7 @@ enum **FogVolumeShape**: :ref:`🔗<enum_RenderingServer_FogVolumeShape>`
 
 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` **FOG_VOLUME_SHAPE_MAX** = ``5``
 
-Represents the size of the :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` enum.
+代表 :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2997,7 +2997,7 @@ enum **ViewportScaling3DMode**: :ref:`🔗<enum_RenderingServer_ViewportScaling3
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_BILINEAR** = ``0``
 
-Use bilinear scaling for the viewport's 3D buffer. The amount of scaling can be set using :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values less than ``1.0`` will result in undersampling while values greater than ``1.0`` will result in supersampling. A value of ``1.0`` disables scaling.
+對視口的 3D 緩衝區使用雙線性縮放。可以使用 :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 設定縮放量。小於 ``1.0`` 的值將導致欠取樣，而大於 ``1.0`` 的值將導致超取樣。\ ``1.0`` 的值將禁用縮放。
 
 .. _class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_FSR:
 
@@ -3041,7 +3041,7 @@ Use MetalFX temporal upscaling for the viewport's 3D buffer. The amount of scali
 
 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_MAX** = ``5``
 
-Represents the size of the :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` enum.
+代表 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3059,7 +3059,7 @@ enum **ViewportUpdateMode**: :ref:`🔗<enum_RenderingServer_ViewportUpdateMode>
 
 :ref:`ViewportUpdateMode<enum_RenderingServer_ViewportUpdateMode>` **VIEWPORT_UPDATE_DISABLED** = ``0``
 
-Do not update the viewport's render target.
+不要更新視口的算繪目標。
 
 .. _class_RenderingServer_constant_VIEWPORT_UPDATE_ONCE:
 
@@ -3067,7 +3067,7 @@ Do not update the viewport's render target.
 
 :ref:`ViewportUpdateMode<enum_RenderingServer_ViewportUpdateMode>` **VIEWPORT_UPDATE_ONCE** = ``1``
 
-Update the viewport's render target once, then switch to :ref:`VIEWPORT_UPDATE_DISABLED<class_RenderingServer_constant_VIEWPORT_UPDATE_DISABLED>`.
+更新一次視口的算繪目標，然後切換到 :ref:`VIEWPORT_UPDATE_DISABLED<class_RenderingServer_constant_VIEWPORT_UPDATE_DISABLED>`\ 。
 
 .. _class_RenderingServer_constant_VIEWPORT_UPDATE_WHEN_VISIBLE:
 
@@ -3075,7 +3075,7 @@ Update the viewport's render target once, then switch to :ref:`VIEWPORT_UPDATE_D
 
 :ref:`ViewportUpdateMode<enum_RenderingServer_ViewportUpdateMode>` **VIEWPORT_UPDATE_WHEN_VISIBLE** = ``2``
 
-Update the viewport's render target only when it is visible. This is the default value.
+僅在算繪目標可見時更新視口的算繪目標。這是預設值。
 
 .. _class_RenderingServer_constant_VIEWPORT_UPDATE_WHEN_PARENT_VISIBLE:
 
@@ -3083,7 +3083,7 @@ Update the viewport's render target only when it is visible. This is the default
 
 :ref:`ViewportUpdateMode<enum_RenderingServer_ViewportUpdateMode>` **VIEWPORT_UPDATE_WHEN_PARENT_VISIBLE** = ``3``
 
-Update the viewport's render target only when its parent is visible.
+僅在其父級可見時更新視口的算繪目標。
 
 .. _class_RenderingServer_constant_VIEWPORT_UPDATE_ALWAYS:
 
@@ -3091,7 +3091,7 @@ Update the viewport's render target only when its parent is visible.
 
 :ref:`ViewportUpdateMode<enum_RenderingServer_ViewportUpdateMode>` **VIEWPORT_UPDATE_ALWAYS** = ``4``
 
-Always update the viewport's render target.
+始終更新視口的算繪目標。
 
 .. rst-class:: classref-item-separator
 
@@ -3109,7 +3109,7 @@ enum **ViewportClearMode**: :ref:`🔗<enum_RenderingServer_ViewportClearMode>`
 
 :ref:`ViewportClearMode<enum_RenderingServer_ViewportClearMode>` **VIEWPORT_CLEAR_ALWAYS** = ``0``
 
-Always clear the viewport's render target before drawing.
+繪製前始終清除視口的算繪目標。
 
 .. _class_RenderingServer_constant_VIEWPORT_CLEAR_NEVER:
 
@@ -3117,7 +3117,7 @@ Always clear the viewport's render target before drawing.
 
 :ref:`ViewportClearMode<enum_RenderingServer_ViewportClearMode>` **VIEWPORT_CLEAR_NEVER** = ``1``
 
-Never clear the viewport's render target.
+永不清除視口的算繪目標。
 
 .. _class_RenderingServer_constant_VIEWPORT_CLEAR_ONLY_NEXT_FRAME:
 
@@ -3125,7 +3125,7 @@ Never clear the viewport's render target.
 
 :ref:`ViewportClearMode<enum_RenderingServer_ViewportClearMode>` **VIEWPORT_CLEAR_ONLY_NEXT_FRAME** = ``2``
 
-Clear the viewport's render target on the next frame, then switch to :ref:`VIEWPORT_CLEAR_NEVER<class_RenderingServer_constant_VIEWPORT_CLEAR_NEVER>`.
+在下一影格清除視口的算繪目標，然後切換到 :ref:`VIEWPORT_CLEAR_NEVER<class_RenderingServer_constant_VIEWPORT_CLEAR_NEVER>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3143,7 +3143,7 @@ enum **ViewportEnvironmentMode**: :ref:`🔗<enum_RenderingServer_ViewportEnviro
 
 :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>` **VIEWPORT_ENVIRONMENT_DISABLED** = ``0``
 
-Disable rendering of 3D environment over 2D canvas.
+禁用在 2D 畫布上算繪 3D 環境。
 
 .. _class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_ENABLED:
 
@@ -3151,7 +3151,7 @@ Disable rendering of 3D environment over 2D canvas.
 
 :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>` **VIEWPORT_ENVIRONMENT_ENABLED** = ``1``
 
-Enable rendering of 3D environment over 2D canvas.
+啟用在 2D 畫布上算繪 3D 環境。
 
 .. _class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_INHERIT:
 
@@ -3159,7 +3159,7 @@ Enable rendering of 3D environment over 2D canvas.
 
 :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>` **VIEWPORT_ENVIRONMENT_INHERIT** = ``2``
 
-Inherit enable/disable value from parent. If the topmost parent is also set to :ref:`VIEWPORT_ENVIRONMENT_INHERIT<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_INHERIT>`, then this has the same behavior as :ref:`VIEWPORT_ENVIRONMENT_ENABLED<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_ENABLED>`.
+從父級繼承啟用/禁用值。如果最頂層的父級也被設定為 :ref:`VIEWPORT_ENVIRONMENT_INHERIT<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_INHERIT>`\ ，那麼與 :ref:`VIEWPORT_ENVIRONMENT_ENABLED<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_ENABLED>` 的行為相同。
 
 .. _class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_MAX:
 
@@ -3167,7 +3167,7 @@ Inherit enable/disable value from parent. If the topmost parent is also set to :
 
 :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>` **VIEWPORT_ENVIRONMENT_MAX** = ``3``
 
-Represents the size of the :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>` enum.
+代表 :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3185,7 +3185,7 @@ enum **ViewportSDFOversize**: :ref:`🔗<enum_RenderingServer_ViewportSDFOversiz
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_100_PERCENT** = ``0``
 
-Do not oversize the 2D signed distance field. Occluders may disappear when touching the viewport's edges, and :ref:`GPUParticles3D<class_GPUParticles3D>` collision may stop working earlier than intended. This has the lowest GPU requirements.
+不使用過大的 2D 帶符號距離場。遮擋器可能在接觸視口邊緣時消失，\ :ref:`GPUParticles3D<class_GPUParticles3D>` 碰撞也可能比預期更早地停止工作。對 GPU 的要求最低。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_120_PERCENT:
 
@@ -3193,7 +3193,7 @@ Do not oversize the 2D signed distance field. Occluders may disappear when touch
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_120_PERCENT** = ``1``
 
-2D signed distance field covers 20% of the viewport's size outside the viewport on each side (top, right, bottom, left).
+2D 帶符號距離場在每個方向（上、右、下、左）都覆蓋超出視口大小 20% 的範圍。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_150_PERCENT:
 
@@ -3201,7 +3201,7 @@ Do not oversize the 2D signed distance field. Occluders may disappear when touch
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_150_PERCENT** = ``2``
 
-2D signed distance field covers 50% of the viewport's size outside the viewport on each side (top, right, bottom, left).
+2D 帶符號距離場在每個方向（上、右、下、左）都覆蓋超出視口大小 50% 的範圍。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_200_PERCENT:
 
@@ -3209,7 +3209,7 @@ Do not oversize the 2D signed distance field. Occluders may disappear when touch
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_200_PERCENT** = ``3``
 
-2D signed distance field covers 100% of the viewport's size outside the viewport on each side (top, right, bottom, left). This has the highest GPU requirements.
+2D 帶符號距離場在每個方向（上、右、下、左）都覆蓋超出視口大小 100% 的範圍。對 GPU 的要求最高。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_OVERSIZE_MAX:
 
@@ -3217,7 +3217,7 @@ Do not oversize the 2D signed distance field. Occluders may disappear when touch
 
 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` **VIEWPORT_SDF_OVERSIZE_MAX** = ``4``
 
-Represents the size of the :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` enum.
+代表 :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3235,7 +3235,7 @@ enum **ViewportSDFScale**: :ref:`🔗<enum_RenderingServer_ViewportSDFScale>`
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_100_PERCENT** = ``0``
 
-Full resolution 2D signed distance field scale. This has the highest GPU requirements.
+全解析度 2D 帶符號距離場縮放。對 GPU 的要求最高。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_SCALE_50_PERCENT:
 
@@ -3243,7 +3243,7 @@ Full resolution 2D signed distance field scale. This has the highest GPU require
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_50_PERCENT** = ``1``
 
-Half resolution 2D signed distance field scale on each axis (25% of the viewport pixel count).
+各軸半解析度 2D 帶符號距離場縮放（視口圖元數的 25%）。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_SCALE_25_PERCENT:
 
@@ -3251,7 +3251,7 @@ Half resolution 2D signed distance field scale on each axis (25% of the viewport
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_25_PERCENT** = ``2``
 
-Quarter resolution 2D signed distance field scale on each axis (6.25% of the viewport pixel count). This has the lowest GPU requirements.
+各軸四分之一解析度 2D 帶符號距離場縮放（視口圖元數的 6.25%）。對 GPU 的要求最低。
 
 .. _class_RenderingServer_constant_VIEWPORT_SDF_SCALE_MAX:
 
@@ -3259,7 +3259,7 @@ Quarter resolution 2D signed distance field scale on each axis (6.25% of the vie
 
 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` **VIEWPORT_SDF_SCALE_MAX** = ``3``
 
-Represents the size of the :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` enum.
+代表 :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3277,7 +3277,7 @@ enum **ViewportMSAA**: :ref:`🔗<enum_RenderingServer_ViewportMSAA>`
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **VIEWPORT_MSAA_DISABLED** = ``0``
 
-Multisample antialiasing for 3D is disabled. This is the default value, and also the fastest setting.
+用於 3D 的多重取樣抗鋸齒被禁用。這是預設值，也是最快的設定。
 
 .. _class_RenderingServer_constant_VIEWPORT_MSAA_2X:
 
@@ -3285,7 +3285,7 @@ Multisample antialiasing for 3D is disabled. This is the default value, and also
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **VIEWPORT_MSAA_2X** = ``1``
 
-Multisample antialiasing uses 2 samples per pixel for 3D. This has a moderate impact on performance.
+用於 3D 的多重取樣抗鋸齒，使用每個圖元 2 個樣本。這對性能有中等影響。
 
 .. _class_RenderingServer_constant_VIEWPORT_MSAA_4X:
 
@@ -3293,7 +3293,7 @@ Multisample antialiasing uses 2 samples per pixel for 3D. This has a moderate im
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **VIEWPORT_MSAA_4X** = ``2``
 
-Multisample antialiasing uses 4 samples per pixel for 3D. This has a high impact on performance.
+用於 3D 的多重取樣抗鋸齒，使用每個圖元 4 個樣本。這對性能有較大影響。
 
 .. _class_RenderingServer_constant_VIEWPORT_MSAA_8X:
 
@@ -3301,7 +3301,7 @@ Multisample antialiasing uses 4 samples per pixel for 3D. This has a high impact
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **VIEWPORT_MSAA_8X** = ``3``
 
-Multisample antialiasing uses 8 samples per pixel for 3D. This has a very high impact on performance. Likely unsupported on low-end and older hardware.
+用於 3D 的多重取樣抗鋸齒，使用每個圖元 8 個樣本。這對性能有非常大的影響。可能在低端和較舊的硬體上不受支援。
 
 .. _class_RenderingServer_constant_VIEWPORT_MSAA_MAX:
 
@@ -3309,7 +3309,7 @@ Multisample antialiasing uses 8 samples per pixel for 3D. This has a very high i
 
 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **VIEWPORT_MSAA_MAX** = ``4``
 
-Represents the size of the :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` enum.
+代表 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3385,7 +3385,7 @@ enum **ViewportScreenSpaceAA**: :ref:`🔗<enum_RenderingServer_ViewportScreenSp
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **VIEWPORT_SCREEN_SPACE_AA_DISABLED** = ``0``
 
-Do not perform any antialiasing in the full screen post-process.
+不要在全屏後處理中執行抗鋸齒。
 
 .. _class_RenderingServer_constant_VIEWPORT_SCREEN_SPACE_AA_FXAA:
 
@@ -3393,7 +3393,7 @@ Do not perform any antialiasing in the full screen post-process.
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **VIEWPORT_SCREEN_SPACE_AA_FXAA** = ``1``
 
-Use fast approximate antialiasing. FXAA is a popular screen-space antialiasing method, which is fast but will make the image look blurry, especially at lower resolutions. It can still work relatively well at large resolutions such as 1440p and 4K.
+使用快速近似抗鋸齒（Fast Approximate Anti-Aliasing）。FXAA 是一種流行的螢幕空間抗鋸齒方法，速度很快，但會讓圖像變模糊，使用較低解析度時尤為顯著。1440p 和 4K 等較高解析度下效果仍然不錯。
 
 .. _class_RenderingServer_constant_VIEWPORT_SCREEN_SPACE_AA_SMAA:
 
@@ -3409,7 +3409,7 @@ Use subpixel morphological antialiasing. SMAA may produce clearer results than F
 
 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **VIEWPORT_SCREEN_SPACE_AA_MAX** = ``3``
 
-Represents the size of the :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` enum.
+代表 :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3427,7 +3427,7 @@ enum **ViewportOcclusionCullingBuildQuality**: :ref:`🔗<enum_RenderingServer_V
 
 :ref:`ViewportOcclusionCullingBuildQuality<enum_RenderingServer_ViewportOcclusionCullingBuildQuality>` **VIEWPORT_OCCLUSION_BUILD_QUALITY_LOW** = ``0``
 
-Low occlusion culling BVH build quality (as defined by Embree). Results in the lowest CPU usage, but least effective culling.
+較低的遮擋剔除 BVH 建構品質（由 Embree 定義）。CPU 佔用最低，但剔除效率最低。
 
 .. _class_RenderingServer_constant_VIEWPORT_OCCLUSION_BUILD_QUALITY_MEDIUM:
 
@@ -3435,7 +3435,7 @@ Low occlusion culling BVH build quality (as defined by Embree). Results in the l
 
 :ref:`ViewportOcclusionCullingBuildQuality<enum_RenderingServer_ViewportOcclusionCullingBuildQuality>` **VIEWPORT_OCCLUSION_BUILD_QUALITY_MEDIUM** = ``1``
 
-Medium occlusion culling BVH build quality (as defined by Embree).
+中等的遮擋剔除 BVH 建構品質（由 Embree 定義）。
 
 .. _class_RenderingServer_constant_VIEWPORT_OCCLUSION_BUILD_QUALITY_HIGH:
 
@@ -3443,7 +3443,7 @@ Medium occlusion culling BVH build quality (as defined by Embree).
 
 :ref:`ViewportOcclusionCullingBuildQuality<enum_RenderingServer_ViewportOcclusionCullingBuildQuality>` **VIEWPORT_OCCLUSION_BUILD_QUALITY_HIGH** = ``2``
 
-High occlusion culling BVH build quality (as defined by Embree). Results in the highest CPU usage, but most effective culling.
+較高的遮擋剔除 BVH 建構品質（由 Embree 定義）。CPU 佔用最高，但剔除效率最高。
 
 .. rst-class:: classref-item-separator
 
@@ -3461,7 +3461,7 @@ enum **ViewportRenderInfo**: :ref:`🔗<enum_RenderingServer_ViewportRenderInfo>
 
 :ref:`ViewportRenderInfo<enum_RenderingServer_ViewportRenderInfo>` **VIEWPORT_RENDER_INFO_OBJECTS_IN_FRAME** = ``0``
 
-Number of objects drawn in a single frame.
+在單影格中繪製的物件的數量。
 
 .. _class_RenderingServer_constant_VIEWPORT_RENDER_INFO_PRIMITIVES_IN_FRAME:
 
@@ -3469,7 +3469,7 @@ Number of objects drawn in a single frame.
 
 :ref:`ViewportRenderInfo<enum_RenderingServer_ViewportRenderInfo>` **VIEWPORT_RENDER_INFO_PRIMITIVES_IN_FRAME** = ``1``
 
-Number of points, lines, or triangles drawn in a single frame.
+在單影格中繪製的點、線、三角形的數量。
 
 .. _class_RenderingServer_constant_VIEWPORT_RENDER_INFO_DRAW_CALLS_IN_FRAME:
 
@@ -3477,7 +3477,7 @@ Number of points, lines, or triangles drawn in a single frame.
 
 :ref:`ViewportRenderInfo<enum_RenderingServer_ViewportRenderInfo>` **VIEWPORT_RENDER_INFO_DRAW_CALLS_IN_FRAME** = ``2``
 
-Number of draw calls during this frame.
+此影格期間的繪製呼叫數。
 
 .. _class_RenderingServer_constant_VIEWPORT_RENDER_INFO_MAX:
 
@@ -3485,7 +3485,7 @@ Number of draw calls during this frame.
 
 :ref:`ViewportRenderInfo<enum_RenderingServer_ViewportRenderInfo>` **VIEWPORT_RENDER_INFO_MAX** = ``3``
 
-Represents the size of the :ref:`ViewportRenderInfo<enum_RenderingServer_ViewportRenderInfo>` enum.
+代表 :ref:`ViewportRenderInfo<enum_RenderingServer_ViewportRenderInfo>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3503,7 +3503,7 @@ enum **ViewportRenderInfoType**: :ref:`🔗<enum_RenderingServer_ViewportRenderI
 
 :ref:`ViewportRenderInfoType<enum_RenderingServer_ViewportRenderInfoType>` **VIEWPORT_RENDER_INFO_TYPE_VISIBLE** = ``0``
 
-Visible render pass (excluding shadows).
+可見算繪階段（不含陰影）。
 
 .. _class_RenderingServer_constant_VIEWPORT_RENDER_INFO_TYPE_SHADOW:
 
@@ -3511,7 +3511,7 @@ Visible render pass (excluding shadows).
 
 :ref:`ViewportRenderInfoType<enum_RenderingServer_ViewportRenderInfoType>` **VIEWPORT_RENDER_INFO_TYPE_SHADOW** = ``1``
 
-Shadow render pass. Objects will be rendered several times depending on the number of amounts of lights with shadows and the number of directional shadow splits.
+陰影算繪階段。根據開啟了陰影的燈光數以及方向陰影的拆分數，同一個物件可能會算繪多次。
 
 .. _class_RenderingServer_constant_VIEWPORT_RENDER_INFO_TYPE_CANVAS:
 
@@ -3527,7 +3527,7 @@ Canvas item rendering. This includes all 2D rendering.
 
 :ref:`ViewportRenderInfoType<enum_RenderingServer_ViewportRenderInfoType>` **VIEWPORT_RENDER_INFO_TYPE_MAX** = ``3``
 
-Represents the size of the :ref:`ViewportRenderInfoType<enum_RenderingServer_ViewportRenderInfoType>` enum.
+代表 :ref:`ViewportRenderInfoType<enum_RenderingServer_ViewportRenderInfoType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3545,7 +3545,7 @@ enum **ViewportDebugDraw**: :ref:`🔗<enum_RenderingServer_ViewportDebugDraw>`
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_DISABLED** = ``0``
 
-Debug draw is disabled. Default setting.
+除錯繪製被禁用。預設設定。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_UNSHADED:
 
@@ -3553,7 +3553,7 @@ Debug draw is disabled. Default setting.
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_UNSHADED** = ``1``
 
-Objects are displayed without light information.
+顯示的物件沒有光照資訊。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_LIGHTING:
 
@@ -3591,7 +3591,7 @@ Debug draw draws objects in wireframe.
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_NORMAL_BUFFER** = ``5``
 
-Normal buffer is drawn instead of regular scene so you can see the per-pixel normals that will be used by post-processing effects.
+繪製法線緩衝區而不是常規場景，因此可以看到將由後處理效果使用的每圖元法線。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_VOXEL_GI_ALBEDO:
 
@@ -3629,7 +3629,7 @@ Objects are displayed with only the emission color from :ref:`VoxelGI<class_Voxe
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_SHADOW_ATLAS** = ``9``
 
-Draws the shadow atlas that stores shadows from :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s in the upper left quadrant of the :ref:`Viewport<class_Viewport>`.
+在 :ref:`Viewport<class_Viewport>` 的左上象限中繪製儲存來自 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 的陰影的陰影合集。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_DIRECTIONAL_SHADOW_ATLAS:
 
@@ -3637,11 +3637,11 @@ Draws the shadow atlas that stores shadows from :ref:`OmniLight3D<class_OmniLigh
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_DIRECTIONAL_SHADOW_ATLAS** = ``10``
 
-Draws the shadow atlas that stores shadows from :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s in the upper left quadrant of the :ref:`Viewport<class_Viewport>`.
+繪製儲存 :ref:`Viewport<class_Viewport>` 左上象限中 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 陰影的陰影合集。
 
-The slice of the camera frustum related to the shadow map cascade is superimposed to visualize coverage. The color of each slice matches the colors used for :ref:`VIEWPORT_DEBUG_DRAW_PSSM_SPLITS<class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_PSSM_SPLITS>`. When shadow cascades are blended the overlap is taken into account when drawing the frustum slices.
+與陰影貼圖級聯相關的相機視錐體切片被疊加以可視化覆蓋範圍。每個切片的顏色與 :ref:`VIEWPORT_DEBUG_DRAW_PSSM_SPLITS<class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_PSSM_SPLITS>` 使用的顏色相符。當混合陰影級聯時，繪製平截頭體切片時會考慮重疊。
 
-The last cascade shows all frustum slices to illustrate the coverage of all slices.
+最後一個級聯顯示所有平截頭體切片，以說明所有切片的覆蓋範圍。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_SCENE_LUMINANCE:
 
@@ -3733,7 +3733,7 @@ Draws the global illumination buffer from :ref:`VoxelGI<class_VoxelGI>` or SDFGI
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_DISABLE_LOD** = ``19``
 
-Disable mesh LOD. All meshes are drawn with full detail, which can be used to compare performance.
+禁用網格 LOD。所有網格都會使用完整細節繪製，可以用來比較性能。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_CLUSTER_OMNI_LIGHTS:
 
@@ -3821,7 +3821,7 @@ enum **ViewportVRSMode**: :ref:`🔗<enum_RenderingServer_ViewportVRSMode>`
 
 :ref:`ViewportVRSMode<enum_RenderingServer_ViewportVRSMode>` **VIEWPORT_VRS_DISABLED** = ``0``
 
-Variable rate shading is disabled.
+可變速率著色已禁用。
 
 .. _class_RenderingServer_constant_VIEWPORT_VRS_TEXTURE:
 
@@ -3829,7 +3829,7 @@ Variable rate shading is disabled.
 
 :ref:`ViewportVRSMode<enum_RenderingServer_ViewportVRSMode>` **VIEWPORT_VRS_TEXTURE** = ``1``
 
-Variable rate shading uses a texture. Note, for stereoscopic use a texture atlas with a texture for each view.
+可變速率著色使用紋理。請注意，對於立體視覺，請使用為每個視圖提供紋理的紋理圖集。
 
 .. _class_RenderingServer_constant_VIEWPORT_VRS_XR:
 
@@ -3845,7 +3845,7 @@ Variable rate shading texture is supplied by the primary :ref:`XRInterface<class
 
 :ref:`ViewportVRSMode<enum_RenderingServer_ViewportVRSMode>` **VIEWPORT_VRS_MAX** = ``3``
 
-Represents the size of the :ref:`ViewportVRSMode<enum_RenderingServer_ViewportVRSMode>` enum.
+代表 :ref:`ViewportVRSMode<enum_RenderingServer_ViewportVRSMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3905,7 +3905,7 @@ enum **SkyMode**: :ref:`🔗<enum_RenderingServer_SkyMode>`
 
 :ref:`SkyMode<enum_RenderingServer_SkyMode>` **SKY_MODE_AUTOMATIC** = ``0``
 
-Automatically selects the appropriate process mode based on your sky shader. If your shader uses ``TIME`` or ``POSITION``, this will use :ref:`SKY_MODE_REALTIME<class_RenderingServer_constant_SKY_MODE_REALTIME>`. If your shader uses any of the ``LIGHT_*`` variables or any custom uniforms, this uses :ref:`SKY_MODE_INCREMENTAL<class_RenderingServer_constant_SKY_MODE_INCREMENTAL>`. Otherwise, this defaults to :ref:`SKY_MODE_QUALITY<class_RenderingServer_constant_SKY_MODE_QUALITY>`.
+根據天空著色器自動選擇合適的處理模式。如果著色器使用 ``TIME`` 或 ``POSITION``\ ，則會使用 :ref:`SKY_MODE_REALTIME<class_RenderingServer_constant_SKY_MODE_REALTIME>`\ 。如果著色器使用任何 ``LIGHT_*`` 變數或任何自訂 uniform，則會使用 :ref:`SKY_MODE_INCREMENTAL<class_RenderingServer_constant_SKY_MODE_INCREMENTAL>`\ 。否則預設為 :ref:`SKY_MODE_QUALITY<class_RenderingServer_constant_SKY_MODE_QUALITY>`\ 。
 
 .. _class_RenderingServer_constant_SKY_MODE_QUALITY:
 
@@ -3913,7 +3913,7 @@ Automatically selects the appropriate process mode based on your sky shader. If 
 
 :ref:`SkyMode<enum_RenderingServer_SkyMode>` **SKY_MODE_QUALITY** = ``1``
 
-Uses high quality importance sampling to process the radiance map. In general, this results in much higher quality than :ref:`SKY_MODE_REALTIME<class_RenderingServer_constant_SKY_MODE_REALTIME>` but takes much longer to generate. This should not be used if you plan on changing the sky at runtime. If you are finding that the reflection is not blurry enough and is showing sparkles or fireflies, try increasing :ref:`ProjectSettings.rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>`.
+使用高品質重要性取樣處理輻射度貼圖。得到的結果通常比 :ref:`SKY_MODE_REALTIME<class_RenderingServer_constant_SKY_MODE_REALTIME>` 的品質更高，但需要花費更多的時間來生成。如果你計畫在運作時修改天空，則不應使用。如果你發現反射不夠模糊，出現了火花或者螢火蟲，請嘗試增大 :ref:`ProjectSettings.rendering/reflections/sky_reflections/ggx_samples<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples>`\ 。
 
 .. _class_RenderingServer_constant_SKY_MODE_INCREMENTAL:
 
@@ -3921,7 +3921,7 @@ Uses high quality importance sampling to process the radiance map. In general, t
 
 :ref:`SkyMode<enum_RenderingServer_SkyMode>` **SKY_MODE_INCREMENTAL** = ``2``
 
-Uses the same high quality importance sampling to process the radiance map as :ref:`SKY_MODE_QUALITY<class_RenderingServer_constant_SKY_MODE_QUALITY>`, but updates over several frames. The number of frames is determined by :ref:`ProjectSettings.rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`. Use this when you need highest quality radiance maps, but have a sky that updates slowly.
+使用與 :ref:`SKY_MODE_QUALITY<class_RenderingServer_constant_SKY_MODE_QUALITY>` 相同的高品質重要性取樣來處理輻射度貼圖，但更新會佔用若干影格。影格數由 :ref:`ProjectSettings.rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>` 決定。當需要最高品質的輻射度貼圖，但天空更新緩慢時，請使用該選項。
 
 .. _class_RenderingServer_constant_SKY_MODE_REALTIME:
 
@@ -3929,9 +3929,9 @@ Uses the same high quality importance sampling to process the radiance map as :r
 
 :ref:`SkyMode<enum_RenderingServer_SkyMode>` **SKY_MODE_REALTIME** = ``3``
 
-Uses the fast filtering algorithm to process the radiance map. In general this results in lower quality, but substantially faster run times. If you need better quality, but still need to update the sky every frame, consider turning on :ref:`ProjectSettings.rendering/reflections/sky_reflections/fast_filter_high_quality<class_ProjectSettings_property_rendering/reflections/sky_reflections/fast_filter_high_quality>`.
+使用快速篩選演算法處理輻照度貼圖。一般來說，這會導致品質降低，但執行時間會大大加快。如果需要更好的品質，但仍需要每影格更新天空，請考慮開啟 :ref:`ProjectSettings.rendering/reflections/sky_reflections/fast_filter_high_quality<class_ProjectSettings_property_rendering/reflections/sky_reflections/fast_filter_high_quality>`\ 。
 
-\ **Note:** The fast filtering algorithm is limited to 256×256 cubemaps, so :ref:`sky_set_radiance_size()<class_RenderingServer_method_sky_set_radiance_size>` must be set to ``256``. Otherwise, a warning is printed and the overridden radiance size is ignored.
+\ **注意：**\ 快速篩選演算法被限制為 256x256 立方體貼圖，因此 :ref:`sky_set_radiance_size()<class_RenderingServer_method_sky_set_radiance_size>` 必須被設定為 ``256``\ 。否則會列印警告並忽略對輻照度大小的覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -4061,7 +4061,7 @@ enum **EnvironmentBG**: :ref:`🔗<enum_RenderingServer_EnvironmentBG>`
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_CLEAR_COLOR** = ``0``
 
-Use the clear color as background.
+用透明的顏色作為背景。
 
 .. _class_RenderingServer_constant_ENV_BG_COLOR:
 
@@ -4069,7 +4069,7 @@ Use the clear color as background.
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_COLOR** = ``1``
 
-Use a specified color as the background.
+使用指定的顏色作為背景。
 
 .. _class_RenderingServer_constant_ENV_BG_SKY:
 
@@ -4077,7 +4077,7 @@ Use a specified color as the background.
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_SKY** = ``2``
 
-Use a sky resource for the background.
+使用天空資源作為背景。
 
 .. _class_RenderingServer_constant_ENV_BG_CANVAS:
 
@@ -4085,7 +4085,7 @@ Use a sky resource for the background.
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_CANVAS** = ``3``
 
-Use a specified canvas layer as the background. This can be useful for instantiating a 2D scene in a 3D world.
+使用一個指定的畫布層作為背景。這對在 3D 世界中產生實體一個 2D 場景很有用。
 
 .. _class_RenderingServer_constant_ENV_BG_KEEP:
 
@@ -4093,7 +4093,7 @@ Use a specified canvas layer as the background. This can be useful for instantia
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_KEEP** = ``4``
 
-Do not clear the background, use whatever was rendered last frame as the background.
+不要清除背景，使用上一影格算繪的東西作為背景。
 
 .. _class_RenderingServer_constant_ENV_BG_CAMERA_FEED:
 
@@ -4101,7 +4101,7 @@ Do not clear the background, use whatever was rendered last frame as the backgro
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_CAMERA_FEED** = ``5``
 
-Displays a camera feed in the background.
+在背景中顯示相機源。
 
 .. _class_RenderingServer_constant_ENV_BG_MAX:
 
@@ -4109,7 +4109,7 @@ Displays a camera feed in the background.
 
 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` **ENV_BG_MAX** = ``6``
 
-Represents the size of the :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` enum.
+代表 :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4127,7 +4127,7 @@ enum **EnvironmentAmbientSource**: :ref:`🔗<enum_RenderingServer_EnvironmentAm
 
 :ref:`EnvironmentAmbientSource<enum_RenderingServer_EnvironmentAmbientSource>` **ENV_AMBIENT_SOURCE_BG** = ``0``
 
-Gather ambient light from whichever source is specified as the background.
+從指定為背景的任何來源收集環境光。
 
 .. _class_RenderingServer_constant_ENV_AMBIENT_SOURCE_DISABLED:
 
@@ -4135,7 +4135,7 @@ Gather ambient light from whichever source is specified as the background.
 
 :ref:`EnvironmentAmbientSource<enum_RenderingServer_EnvironmentAmbientSource>` **ENV_AMBIENT_SOURCE_DISABLED** = ``1``
 
-Disable ambient light.
+禁用環境光。
 
 .. _class_RenderingServer_constant_ENV_AMBIENT_SOURCE_COLOR:
 
@@ -4143,7 +4143,7 @@ Disable ambient light.
 
 :ref:`EnvironmentAmbientSource<enum_RenderingServer_EnvironmentAmbientSource>` **ENV_AMBIENT_SOURCE_COLOR** = ``2``
 
-Specify a specific :ref:`Color<class_Color>` for ambient light.
+為環境光指定特定的 :ref:`Color<class_Color>`\ 。
 
 .. _class_RenderingServer_constant_ENV_AMBIENT_SOURCE_SKY:
 
@@ -4151,7 +4151,7 @@ Specify a specific :ref:`Color<class_Color>` for ambient light.
 
 :ref:`EnvironmentAmbientSource<enum_RenderingServer_EnvironmentAmbientSource>` **ENV_AMBIENT_SOURCE_SKY** = ``3``
 
-Gather ambient light from the :ref:`Sky<class_Sky>` regardless of what the background is.
+無論背景如何，都從 :ref:`Sky<class_Sky>` 收集環境光。
 
 .. rst-class:: classref-item-separator
 
@@ -4169,7 +4169,7 @@ enum **EnvironmentReflectionSource**: :ref:`🔗<enum_RenderingServer_Environmen
 
 :ref:`EnvironmentReflectionSource<enum_RenderingServer_EnvironmentReflectionSource>` **ENV_REFLECTION_SOURCE_BG** = ``0``
 
-Use the background for reflections.
+使用背景進行反射。
 
 .. _class_RenderingServer_constant_ENV_REFLECTION_SOURCE_DISABLED:
 
@@ -4177,7 +4177,7 @@ Use the background for reflections.
 
 :ref:`EnvironmentReflectionSource<enum_RenderingServer_EnvironmentReflectionSource>` **ENV_REFLECTION_SOURCE_DISABLED** = ``1``
 
-Disable reflections.
+禁用反射。
 
 .. _class_RenderingServer_constant_ENV_REFLECTION_SOURCE_SKY:
 
@@ -4185,7 +4185,7 @@ Disable reflections.
 
 :ref:`EnvironmentReflectionSource<enum_RenderingServer_EnvironmentReflectionSource>` **ENV_REFLECTION_SOURCE_SKY** = ``2``
 
-Use the :ref:`Sky<class_Sky>` for reflections regardless of what the background is.
+無論背景如何，都使用 :ref:`Sky<class_Sky>` 進行反射。
 
 .. rst-class:: classref-item-separator
 
@@ -4203,7 +4203,7 @@ enum **EnvironmentGlowBlendMode**: :ref:`🔗<enum_RenderingServer_EnvironmentGl
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_ADDITIVE** = ``0``
 
-Additive glow blending mode. Mostly used for particles, glows (bloom), lens flare, bright sources.
+新增輝光混合模式。主要用於粒子、輝光（泛光）、鏡頭眩光、亮源。
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_SCREEN:
 
@@ -4211,7 +4211,7 @@ Additive glow blending mode. Mostly used for particles, glows (bloom), lens flar
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SCREEN** = ``1``
 
-Screen glow blending mode. Increases brightness, used frequently with bloom.
+濾色輝光混合模式。增加亮度，經常與泛光一起使用。
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_SOFTLIGHT:
 
@@ -4219,7 +4219,7 @@ Screen glow blending mode. Increases brightness, used frequently with bloom.
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_SOFTLIGHT** = ``2``
 
-Soft light glow blending mode. Modifies contrast, exposes shadows and highlights (vivid bloom).
+柔光輝光混合模式。修改對比度，曝光陰影和高光（高品質泛光）。
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_REPLACE:
 
@@ -4227,7 +4227,7 @@ Soft light glow blending mode. Modifies contrast, exposes shadows and highlights
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_REPLACE** = ``3``
 
-Replace glow blending mode. Replaces all pixels' color by the glow value. This can be used to simulate a full-screen blur effect by tweaking the glow parameters to match the original image's brightness.
+替換輝光混合模式。用輝光值替換所有圖元的顏色。這可以通過調整輝光參數來模擬全屏模糊效果，使其與原始圖像的亮度相配對。
 
 .. _class_RenderingServer_constant_ENV_GLOW_BLEND_MODE_MIX:
 
@@ -4235,7 +4235,7 @@ Replace glow blending mode. Replaces all pixels' color by the glow value. This c
 
 :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>` **ENV_GLOW_BLEND_MODE_MIX** = ``4``
 
-Mixes the glow with the underlying color to avoid increasing brightness as much while still maintaining a glow effect.
+將輝光與底層顏色混合，以避免在保持輝光效果的同時，盡可能多地增加亮度。
 
 .. rst-class:: classref-item-separator
 
@@ -4333,7 +4333,7 @@ enum **EnvironmentSSRRoughnessQuality**: :ref:`🔗<enum_RenderingServer_Environ
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_DISABLED** = ``0``
 
-Lowest quality of roughness filter for screen-space reflections. Rough materials will not have blurrier screen-space reflections compared to smooth (non-rough) materials. This is the fastest option.
+用於螢幕空間反射的最低品質粗糙度篩選。與光滑（非粗糙）材質相比，粗糙材質不會有更模糊的螢幕空間反射。這是最快的選項。
 
 .. _class_RenderingServer_constant_ENV_SSR_ROUGHNESS_QUALITY_LOW:
 
@@ -4341,7 +4341,7 @@ Lowest quality of roughness filter for screen-space reflections. Rough materials
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_LOW** = ``1``
 
-Low quality of roughness filter for screen-space reflections.
+螢幕空間反射的較低品質粗糙度篩檢程式。
 
 .. _class_RenderingServer_constant_ENV_SSR_ROUGHNESS_QUALITY_MEDIUM:
 
@@ -4349,7 +4349,7 @@ Low quality of roughness filter for screen-space reflections.
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_MEDIUM** = ``2``
 
-Medium quality of roughness filter for screen-space reflections.
+螢幕空間反射的中等品質粗糙度篩檢程式。
 
 .. _class_RenderingServer_constant_ENV_SSR_ROUGHNESS_QUALITY_HIGH:
 
@@ -4357,7 +4357,7 @@ Medium quality of roughness filter for screen-space reflections.
 
 :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>` **ENV_SSR_ROUGHNESS_QUALITY_HIGH** = ``3``
 
-High quality of roughness filter for screen-space reflections. This is the slowest option.
+螢幕空間反射的較高品質粗糙度篩檢程式。這是最慢的選項。
 
 .. rst-class:: classref-item-separator
 
@@ -4375,7 +4375,7 @@ enum **EnvironmentSSAOQuality**: :ref:`🔗<enum_RenderingServer_EnvironmentSSAO
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_VERY_LOW** = ``0``
 
-Lowest quality of screen-space ambient occlusion.
+最低品質的螢幕空間環境光遮蔽。
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_LOW:
 
@@ -4383,7 +4383,7 @@ Lowest quality of screen-space ambient occlusion.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_LOW** = ``1``
 
-Low quality screen-space ambient occlusion.
+低品質的螢幕空間環境光遮蔽。
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_MEDIUM:
 
@@ -4391,7 +4391,7 @@ Low quality screen-space ambient occlusion.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_MEDIUM** = ``2``
 
-Medium quality screen-space ambient occlusion.
+中等品質的螢幕空間環境光遮蔽。
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_HIGH:
 
@@ -4399,7 +4399,7 @@ Medium quality screen-space ambient occlusion.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_HIGH** = ``3``
 
-High quality screen-space ambient occlusion.
+高品質的螢幕空間環境光遮蔽。
 
 .. _class_RenderingServer_constant_ENV_SSAO_QUALITY_ULTRA:
 
@@ -4407,7 +4407,7 @@ High quality screen-space ambient occlusion.
 
 :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>` **ENV_SSAO_QUALITY_ULTRA** = ``4``
 
-Highest quality screen-space ambient occlusion. Uses the adaptive target setting which can be dynamically adjusted to smoothly balance performance and visual quality.
+最高品質的螢幕空間環境光遮蔽。使用可動態調整的自我調整目標設定，以平滑地平衡性能和視覺品質。
 
 .. rst-class:: classref-item-separator
 
@@ -4425,7 +4425,7 @@ enum **EnvironmentSSILQuality**: :ref:`🔗<enum_RenderingServer_EnvironmentSSIL
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_VERY_LOW** = ``0``
 
-Lowest quality of screen-space indirect lighting.
+最低品質的螢幕空間間接光照。
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_LOW:
 
@@ -4433,7 +4433,7 @@ Lowest quality of screen-space indirect lighting.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_LOW** = ``1``
 
-Low quality screen-space indirect lighting.
+較低品質的螢幕空間間接光照。
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_MEDIUM:
 
@@ -4441,7 +4441,7 @@ Low quality screen-space indirect lighting.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_MEDIUM** = ``2``
 
-High quality screen-space indirect lighting.
+較高品質的螢幕空間間接光照。
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_HIGH:
 
@@ -4449,7 +4449,7 @@ High quality screen-space indirect lighting.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_HIGH** = ``3``
 
-High quality screen-space indirect lighting.
+較高品質的螢幕空間間接光照。
 
 .. _class_RenderingServer_constant_ENV_SSIL_QUALITY_ULTRA:
 
@@ -4457,7 +4457,7 @@ High quality screen-space indirect lighting.
 
 :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>` **ENV_SSIL_QUALITY_ULTRA** = ``4``
 
-Highest quality screen-space indirect lighting. Uses the adaptive target setting which can be dynamically adjusted to smoothly balance performance and visual quality.
+最高品質的螢幕空間間接光照。使用可動態調整的自我調整目標設定，以平滑地平衡性能和視覺品質。
 
 .. rst-class:: classref-item-separator
 
@@ -4475,7 +4475,7 @@ enum **EnvironmentSDFGIYScale**: :ref:`🔗<enum_RenderingServer_EnvironmentSDFG
 
 :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>` **ENV_SDFGI_Y_SCALE_50_PERCENT** = ``0``
 
-Use 50% scale for SDFGI on the Y (vertical) axis. SDFGI cells will be twice as short as they are wide. This allows providing increased GI detail and reduced light leaking with thin floors and ceilings. This is usually the best choice for scenes that don't feature much verticality.
+在 Y（垂直）軸上對 SDFGI 使用 50% 的縮放。SDFGI 儲存格將比它們的寬度短兩倍。這允許提供更多的 GI 細節，並減少薄地板和天花板的漏光。這通常是垂直度不高的場景的最佳選擇。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_Y_SCALE_75_PERCENT:
 
@@ -4483,7 +4483,7 @@ Use 50% scale for SDFGI on the Y (vertical) axis. SDFGI cells will be twice as s
 
 :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>` **ENV_SDFGI_Y_SCALE_75_PERCENT** = ``1``
 
-Use 75% scale for SDFGI on the Y (vertical) axis. This is a balance between the 50% and 100% SDFGI Y scales.
+在 Y（垂直）軸上為 SDFGI 使用 75% 的縮放。這是 50% 和 100% SDFGI Y 縮放之間的平衡。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_Y_SCALE_100_PERCENT:
 
@@ -4491,7 +4491,7 @@ Use 75% scale for SDFGI on the Y (vertical) axis. This is a balance between the 
 
 :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>` **ENV_SDFGI_Y_SCALE_100_PERCENT** = ``2``
 
-Use 100% scale for SDFGI on the Y (vertical) axis. SDFGI cells will be as tall as they are wide. This is usually the best choice for highly vertical scenes. The downside is that light leaking may become more noticeable with thin floors and ceilings.
+在 Y（垂直）軸上為 SDFGI 使用 100% 的縮放。SDFGI 儲存格將與寬度一樣高。這通常是高度垂直場景的最佳選擇。不利之處在於，薄地板和天花板可能會導致漏光更加明顯。
 
 .. rst-class:: classref-item-separator
 
@@ -4509,7 +4509,7 @@ enum **EnvironmentSDFGIRayCount**: :ref:`🔗<enum_RenderingServer_EnvironmentSD
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_4** = ``0``
 
-Throw 4 rays per frame when converging SDFGI. This has the lowest GPU requirements, but creates the most noisy result.
+聚合 SDFGI 時每影格發出 4 條光線。對 GPU 的要求最低，但結果中噪點最多。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_8:
 
@@ -4517,7 +4517,7 @@ Throw 4 rays per frame when converging SDFGI. This has the lowest GPU requiremen
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_8** = ``1``
 
-Throw 8 rays per frame when converging SDFGI.
+聚合 SDFGI 時每影格發出 8 條光線。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_16:
 
@@ -4525,7 +4525,7 @@ Throw 8 rays per frame when converging SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_16** = ``2``
 
-Throw 16 rays per frame when converging SDFGI.
+聚合 SDFGI 時每影格發出 16 條光線。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_32:
 
@@ -4533,7 +4533,7 @@ Throw 16 rays per frame when converging SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_32** = ``3``
 
-Throw 32 rays per frame when converging SDFGI.
+聚合 SDFGI 時每影格發出 32 條光線。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_64:
 
@@ -4541,7 +4541,7 @@ Throw 32 rays per frame when converging SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_64** = ``4``
 
-Throw 64 rays per frame when converging SDFGI.
+聚合 SDFGI 時每影格發出 64 條光線。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_96:
 
@@ -4549,7 +4549,7 @@ Throw 64 rays per frame when converging SDFGI.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_96** = ``5``
 
-Throw 96 rays per frame when converging SDFGI. This has high GPU requirements.
+聚合 SDFGI 時每影格發出 96 條光線。對 GPU 的要求較高。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_128:
 
@@ -4557,7 +4557,7 @@ Throw 96 rays per frame when converging SDFGI. This has high GPU requirements.
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_128** = ``6``
 
-Throw 128 rays per frame when converging SDFGI. This has very high GPU requirements, but creates the least noisy result.
+聚合 SDFGI 時每影格發出 128 條光線。對 GPU 的要求非常高，但結果中噪點最少。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_RAY_COUNT_MAX:
 
@@ -4565,7 +4565,7 @@ Throw 128 rays per frame when converging SDFGI. This has very high GPU requireme
 
 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` **ENV_SDFGI_RAY_COUNT_MAX** = ``7``
 
-Represents the size of the :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` enum.
+代表 :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4583,7 +4583,7 @@ enum **EnvironmentSDFGIFramesToConverge**: :ref:`🔗<enum_RenderingServer_Envir
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_5_FRAMES** = ``0``
 
-Converge SDFGI over 5 frames. This is the most responsive, but creates the most noisy result with a given ray count.
+通過 5 影格聚合 SDFGI。回應最快，但光線數量一定時，結果中噪點最多。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_10_FRAMES:
 
@@ -4591,7 +4591,7 @@ Converge SDFGI over 5 frames. This is the most responsive, but creates the most 
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_10_FRAMES** = ``1``
 
-Configure SDFGI to fully converge over 10 frames.
+讓 SDFGI 通過 10 影格完成聚合。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_15_FRAMES:
 
@@ -4599,7 +4599,7 @@ Configure SDFGI to fully converge over 10 frames.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_15_FRAMES** = ``2``
 
-Configure SDFGI to fully converge over 15 frames.
+讓 SDFGI 通過 15 影格完成聚合。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_20_FRAMES:
 
@@ -4607,7 +4607,7 @@ Configure SDFGI to fully converge over 15 frames.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_20_FRAMES** = ``3``
 
-Configure SDFGI to fully converge over 20 frames.
+讓 SDFGI 通過 20 影格完成聚合。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_25_FRAMES:
 
@@ -4615,7 +4615,7 @@ Configure SDFGI to fully converge over 20 frames.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_25_FRAMES** = ``4``
 
-Configure SDFGI to fully converge over 25 frames.
+讓 SDFGI 通過 25 影格完成聚合。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_IN_30_FRAMES:
 
@@ -4623,7 +4623,7 @@ Configure SDFGI to fully converge over 25 frames.
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_IN_30_FRAMES** = ``5``
 
-Configure SDFGI to fully converge over 30 frames. This is the least responsive, but creates the least noisy result with a given ray count.
+讓 SDFGI 通過 30 影格完成聚合。回應最慢，但光線數量一定時，結果中噪點最少。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_CONVERGE_MAX:
 
@@ -4631,7 +4631,7 @@ Configure SDFGI to fully converge over 30 frames. This is the least responsive, 
 
 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` **ENV_SDFGI_CONVERGE_MAX** = ``6``
 
-Represents the size of the :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` enum.
+代表 :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4649,7 +4649,7 @@ enum **EnvironmentSDFGIFramesToUpdateLight**: :ref:`🔗<enum_RenderingServer_En
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_1_FRAME** = ``0``
 
-Update indirect light from dynamic lights in SDFGI over 1 frame. This is the most responsive, but has the highest GPU requirements.
+通過 1 影格更新 SDFGI 中動態燈光的間接光照。回應最快，但對 GPU 的要求最高。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_2_FRAMES:
 
@@ -4657,7 +4657,7 @@ Update indirect light from dynamic lights in SDFGI over 1 frame. This is the mos
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_2_FRAMES** = ``1``
 
-Update indirect light from dynamic lights in SDFGI over 2 frames.
+通過 2 影格更新 SDFGI 中動態燈光的間接光照。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_4_FRAMES:
 
@@ -4665,7 +4665,7 @@ Update indirect light from dynamic lights in SDFGI over 2 frames.
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_4_FRAMES** = ``2``
 
-Update indirect light from dynamic lights in SDFGI over 4 frames.
+通過 4 影格更新 SDFGI 中動態燈光的間接光照。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_8_FRAMES:
 
@@ -4673,7 +4673,7 @@ Update indirect light from dynamic lights in SDFGI over 4 frames.
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_8_FRAMES** = ``3``
 
-Update indirect light from dynamic lights in SDFGI over 8 frames.
+通過 8 影格更新 SDFGI 中動態燈光的間接光照。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_IN_16_FRAMES:
 
@@ -4681,7 +4681,7 @@ Update indirect light from dynamic lights in SDFGI over 8 frames.
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_IN_16_FRAMES** = ``4``
 
-Update indirect light from dynamic lights in SDFGI over 16 frames. This is the least responsive, but has the lowest GPU requirements.
+通過 16 影格更新 SDFGI 中動態燈光的間接光照。回應最慢，但對 GPU 的要求最低。
 
 .. _class_RenderingServer_constant_ENV_SDFGI_UPDATE_LIGHT_MAX:
 
@@ -4689,7 +4689,7 @@ Update indirect light from dynamic lights in SDFGI over 16 frames. This is the l
 
 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` **ENV_SDFGI_UPDATE_LIGHT_MAX** = ``5``
 
-Represents the size of the :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` enum.
+代表 :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4707,7 +4707,7 @@ enum **SubSurfaceScatteringQuality**: :ref:`🔗<enum_RenderingServer_SubSurface
 
 :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>` **SUB_SURFACE_SCATTERING_QUALITY_DISABLED** = ``0``
 
-Disables subsurface scattering entirely, even on materials that have :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` set to ``true``. This has the lowest GPU requirements.
+完全禁用次表面散射，即便材質的 :ref:`BaseMaterial3D.subsurf_scatter_enabled<class_BaseMaterial3D_property_subsurf_scatter_enabled>` 為 ``true``\ 。對 GPU 的要求最低。
 
 .. _class_RenderingServer_constant_SUB_SURFACE_SCATTERING_QUALITY_LOW:
 
@@ -4715,7 +4715,7 @@ Disables subsurface scattering entirely, even on materials that have :ref:`BaseM
 
 :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>` **SUB_SURFACE_SCATTERING_QUALITY_LOW** = ``1``
 
-Low subsurface scattering quality.
+較低品質的次表面散射。
 
 .. _class_RenderingServer_constant_SUB_SURFACE_SCATTERING_QUALITY_MEDIUM:
 
@@ -4723,7 +4723,7 @@ Low subsurface scattering quality.
 
 :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>` **SUB_SURFACE_SCATTERING_QUALITY_MEDIUM** = ``2``
 
-Medium subsurface scattering quality.
+中等品質的次表面散射。
 
 .. _class_RenderingServer_constant_SUB_SURFACE_SCATTERING_QUALITY_HIGH:
 
@@ -4731,7 +4731,7 @@ Medium subsurface scattering quality.
 
 :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>` **SUB_SURFACE_SCATTERING_QUALITY_HIGH** = ``3``
 
-High subsurface scattering quality. This has the highest GPU requirements.
+較高品質的次表面散射。對 GPU 的要求最高。
 
 .. rst-class:: classref-item-separator
 
@@ -4749,7 +4749,7 @@ enum **DOFBokehShape**: :ref:`🔗<enum_RenderingServer_DOFBokehShape>`
 
 :ref:`DOFBokehShape<enum_RenderingServer_DOFBokehShape>` **DOF_BOKEH_BOX** = ``0``
 
-Calculate the DOF blur using a box filter. The fastest option, but results in obvious lines in blur pattern.
+使用一個盒式篩選計算 DOF 模糊。最快的選項，但會在模糊圖案中產生明顯的線條。
 
 .. _class_RenderingServer_constant_DOF_BOKEH_HEXAGON:
 
@@ -4757,7 +4757,7 @@ Calculate the DOF blur using a box filter. The fastest option, but results in ob
 
 :ref:`DOFBokehShape<enum_RenderingServer_DOFBokehShape>` **DOF_BOKEH_HEXAGON** = ``1``
 
-Calculates DOF blur using a hexagon shaped filter.
+使用一個六邊形篩選計算 DOF 模糊。
 
 .. _class_RenderingServer_constant_DOF_BOKEH_CIRCLE:
 
@@ -4765,7 +4765,7 @@ Calculates DOF blur using a hexagon shaped filter.
 
 :ref:`DOFBokehShape<enum_RenderingServer_DOFBokehShape>` **DOF_BOKEH_CIRCLE** = ``2``
 
-Calculates DOF blur using a circle shaped filter. Best quality and most realistic, but slowest. Use only for areas where a lot of performance can be dedicated to post-processing (e.g. cutscenes).
+使用一個圓形篩選計算 DOF 模糊。最好的品質和最真實的，但最慢的。僅用於可以將大量性能專用於後期處理的區域（例如過場動畫）。
 
 .. rst-class:: classref-item-separator
 
@@ -4783,7 +4783,7 @@ enum **DOFBlurQuality**: :ref:`🔗<enum_RenderingServer_DOFBlurQuality>`
 
 :ref:`DOFBlurQuality<enum_RenderingServer_DOFBlurQuality>` **DOF_BLUR_QUALITY_VERY_LOW** = ``0``
 
-Lowest quality DOF blur. This is the fastest setting, but you may be able to see filtering artifacts.
+最低品質的 DOF 模糊。這是最快的設定，但你可能會看到不自然的篩選。
 
 .. _class_RenderingServer_constant_DOF_BLUR_QUALITY_LOW:
 
@@ -4791,7 +4791,7 @@ Lowest quality DOF blur. This is the fastest setting, but you may be able to see
 
 :ref:`DOFBlurQuality<enum_RenderingServer_DOFBlurQuality>` **DOF_BLUR_QUALITY_LOW** = ``1``
 
-Low quality DOF blur.
+較低品質的 DOF 模糊。
 
 .. _class_RenderingServer_constant_DOF_BLUR_QUALITY_MEDIUM:
 
@@ -4799,7 +4799,7 @@ Low quality DOF blur.
 
 :ref:`DOFBlurQuality<enum_RenderingServer_DOFBlurQuality>` **DOF_BLUR_QUALITY_MEDIUM** = ``2``
 
-Medium quality DOF blur.
+中等品質的 DOF 模糊。
 
 .. _class_RenderingServer_constant_DOF_BLUR_QUALITY_HIGH:
 
@@ -4807,7 +4807,7 @@ Medium quality DOF blur.
 
 :ref:`DOFBlurQuality<enum_RenderingServer_DOFBlurQuality>` **DOF_BLUR_QUALITY_HIGH** = ``3``
 
-Highest quality DOF blur. Results in the smoothest looking blur by taking the most samples, but is also significantly slower.
+最高品質的 DOF 模糊。通過採集最多的樣本，產生最平滑的模糊效果，但速度也明顯變慢。
 
 .. rst-class:: classref-item-separator
 
@@ -4825,7 +4825,7 @@ enum **InstanceType**: :ref:`🔗<enum_RenderingServer_InstanceType>`
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_NONE** = ``0``
 
-The instance does not have a type.
+實例沒有型別。
 
 .. _class_RenderingServer_constant_INSTANCE_MESH:
 
@@ -4833,7 +4833,7 @@ The instance does not have a type.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_MESH** = ``1``
 
-The instance is a mesh.
+該實例是網格。
 
 .. _class_RenderingServer_constant_INSTANCE_MULTIMESH:
 
@@ -4841,7 +4841,7 @@ The instance is a mesh.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_MULTIMESH** = ``2``
 
-The instance is a multimesh.
+該實例是一個 multimesh。
 
 .. _class_RenderingServer_constant_INSTANCE_PARTICLES:
 
@@ -4849,7 +4849,7 @@ The instance is a multimesh.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_PARTICLES** = ``3``
 
-The instance is a particle emitter.
+該實例是粒子發射器。
 
 .. _class_RenderingServer_constant_INSTANCE_PARTICLES_COLLISION:
 
@@ -4857,7 +4857,7 @@ The instance is a particle emitter.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_PARTICLES_COLLISION** = ``4``
 
-The instance is a GPUParticles collision shape.
+該實例是 GPUParticles 碰撞形狀。
 
 .. _class_RenderingServer_constant_INSTANCE_LIGHT:
 
@@ -4865,7 +4865,7 @@ The instance is a GPUParticles collision shape.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_LIGHT** = ``5``
 
-The instance is a light.
+該實例是燈。
 
 .. _class_RenderingServer_constant_INSTANCE_REFLECTION_PROBE:
 
@@ -4873,7 +4873,7 @@ The instance is a light.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_REFLECTION_PROBE** = ``6``
 
-The instance is a reflection probe.
+該實例是反射探查。
 
 .. _class_RenderingServer_constant_INSTANCE_DECAL:
 
@@ -4881,7 +4881,7 @@ The instance is a reflection probe.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_DECAL** = ``7``
 
-The instance is a decal.
+該實例是裝飾。
 
 .. _class_RenderingServer_constant_INSTANCE_VOXEL_GI:
 
@@ -4889,7 +4889,7 @@ The instance is a decal.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_VOXEL_GI** = ``8``
 
-The instance is a VoxelGI.
+該實例是 VoxelGI。
 
 .. _class_RenderingServer_constant_INSTANCE_LIGHTMAP:
 
@@ -4897,7 +4897,7 @@ The instance is a VoxelGI.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_LIGHTMAP** = ``9``
 
-The instance is a lightmap.
+該實例是光照貼圖。
 
 .. _class_RenderingServer_constant_INSTANCE_OCCLUDER:
 
@@ -4905,7 +4905,7 @@ The instance is a lightmap.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_OCCLUDER** = ``10``
 
-The instance is an occlusion culling occluder.
+該實例是遮擋剔除遮擋器。
 
 .. _class_RenderingServer_constant_INSTANCE_VISIBLITY_NOTIFIER:
 
@@ -4913,7 +4913,7 @@ The instance is an occlusion culling occluder.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_VISIBLITY_NOTIFIER** = ``11``
 
-The instance is a visible on-screen notifier.
+該實例是螢幕可見通知器。
 
 .. _class_RenderingServer_constant_INSTANCE_FOG_VOLUME:
 
@@ -4921,7 +4921,7 @@ The instance is a visible on-screen notifier.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_FOG_VOLUME** = ``12``
 
-The instance is a fog volume.
+該實例是霧體積。
 
 .. _class_RenderingServer_constant_INSTANCE_MAX:
 
@@ -4929,7 +4929,7 @@ The instance is a fog volume.
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_MAX** = ``13``
 
-Represents the size of the :ref:`InstanceType<enum_RenderingServer_InstanceType>` enum.
+代表 :ref:`InstanceType<enum_RenderingServer_InstanceType>` 列舉的大小。
 
 .. _class_RenderingServer_constant_INSTANCE_GEOMETRY_MASK:
 
@@ -4937,7 +4937,7 @@ Represents the size of the :ref:`InstanceType<enum_RenderingServer_InstanceType>
 
 :ref:`InstanceType<enum_RenderingServer_InstanceType>` **INSTANCE_GEOMETRY_MASK** = ``14``
 
-A combination of the flags of geometry instances (mesh, multimesh, immediate and particles).
+幾何體實例（網格、多網格、即時和粒子）的旗標的組合。
 
 .. rst-class:: classref-item-separator
 
@@ -4955,7 +4955,7 @@ enum **InstanceFlags**: :ref:`🔗<enum_RenderingServer_InstanceFlags>`
 
 :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` **INSTANCE_FLAG_USE_BAKED_LIGHT** = ``0``
 
-Allows the instance to be used in baked lighting.
+允許在烘焙照明中使用實例。
 
 .. _class_RenderingServer_constant_INSTANCE_FLAG_USE_DYNAMIC_GI:
 
@@ -4963,7 +4963,7 @@ Allows the instance to be used in baked lighting.
 
 :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` **INSTANCE_FLAG_USE_DYNAMIC_GI** = ``1``
 
-Allows the instance to be used with dynamic global illumination.
+允許在動態全域光照中使用該實例。
 
 .. _class_RenderingServer_constant_INSTANCE_FLAG_DRAW_NEXT_FRAME_IF_VISIBLE:
 
@@ -4971,7 +4971,7 @@ Allows the instance to be used with dynamic global illumination.
 
 :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` **INSTANCE_FLAG_DRAW_NEXT_FRAME_IF_VISIBLE** = ``2``
 
-When set, manually requests to draw geometry on next frame.
+當設定時，手動請求在下一影格繪製幾何圖形。
 
 .. _class_RenderingServer_constant_INSTANCE_FLAG_IGNORE_OCCLUSION_CULLING:
 
@@ -4979,7 +4979,7 @@ When set, manually requests to draw geometry on next frame.
 
 :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` **INSTANCE_FLAG_IGNORE_OCCLUSION_CULLING** = ``3``
 
-Always draw, even if the instance would be culled by occlusion culling. Does not affect view frustum culling.
+始終繪製，即便實例能夠被遮擋剔除剔除。不影響視錐剔除。
 
 .. _class_RenderingServer_constant_INSTANCE_FLAG_MAX:
 
@@ -4987,7 +4987,7 @@ Always draw, even if the instance would be culled by occlusion culling. Does not
 
 :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` **INSTANCE_FLAG_MAX** = ``4``
 
-Represents the size of the :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` enum.
+代表 :ref:`InstanceFlags<enum_RenderingServer_InstanceFlags>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -5005,7 +5005,7 @@ enum **ShadowCastingSetting**: :ref:`🔗<enum_RenderingServer_ShadowCastingSett
 
 :ref:`ShadowCastingSetting<enum_RenderingServer_ShadowCastingSetting>` **SHADOW_CASTING_SETTING_OFF** = ``0``
 
-Disable shadows from this instance.
+禁用這個實例的陰影。
 
 .. _class_RenderingServer_constant_SHADOW_CASTING_SETTING_ON:
 
@@ -5013,7 +5013,7 @@ Disable shadows from this instance.
 
 :ref:`ShadowCastingSetting<enum_RenderingServer_ShadowCastingSetting>` **SHADOW_CASTING_SETTING_ON** = ``1``
 
-Cast shadows from this instance.
+從此實例投下陰影。
 
 .. _class_RenderingServer_constant_SHADOW_CASTING_SETTING_DOUBLE_SIDED:
 
@@ -5021,7 +5021,7 @@ Cast shadows from this instance.
 
 :ref:`ShadowCastingSetting<enum_RenderingServer_ShadowCastingSetting>` **SHADOW_CASTING_SETTING_DOUBLE_SIDED** = ``2``
 
-Disable backface culling when rendering the shadow of the object. This is slightly slower but may result in more correct shadows.
+在算繪物件的陰影時禁用背面剔除。這會稍微慢一些，但可能會產生更正確的陰影。
 
 .. _class_RenderingServer_constant_SHADOW_CASTING_SETTING_SHADOWS_ONLY:
 
@@ -5029,7 +5029,7 @@ Disable backface culling when rendering the shadow of the object. This is slight
 
 :ref:`ShadowCastingSetting<enum_RenderingServer_ShadowCastingSetting>` **SHADOW_CASTING_SETTING_SHADOWS_ONLY** = ``3``
 
-Only render the shadows from the object. The object itself will not be drawn.
+僅算繪物件的陰影。物件本身不會被繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -5047,7 +5047,7 @@ enum **VisibilityRangeFadeMode**: :ref:`🔗<enum_RenderingServer_VisibilityRang
 
 :ref:`VisibilityRangeFadeMode<enum_RenderingServer_VisibilityRangeFadeMode>` **VISIBILITY_RANGE_FADE_DISABLED** = ``0``
 
-Disable visibility range fading for the given instance.
+禁用給定實例的可見性範圍淡出。
 
 .. _class_RenderingServer_constant_VISIBILITY_RANGE_FADE_SELF:
 
@@ -5055,7 +5055,7 @@ Disable visibility range fading for the given instance.
 
 :ref:`VisibilityRangeFadeMode<enum_RenderingServer_VisibilityRangeFadeMode>` **VISIBILITY_RANGE_FADE_SELF** = ``1``
 
-Fade-out the given instance when it approaches its visibility range limits.
+當給定實例接近其可見範圍限制時淡出該給定實例。
 
 .. _class_RenderingServer_constant_VISIBILITY_RANGE_FADE_DEPENDENCIES:
 
@@ -5063,7 +5063,7 @@ Fade-out the given instance when it approaches its visibility range limits.
 
 :ref:`VisibilityRangeFadeMode<enum_RenderingServer_VisibilityRangeFadeMode>` **VISIBILITY_RANGE_FADE_DEPENDENCIES** = ``2``
 
-Fade-in the given instance's dependencies when reaching its visibility range limits.
+當達到其可見性範圍限制時淡入給定實例的依賴項。
 
 .. rst-class:: classref-item-separator
 
@@ -5081,7 +5081,7 @@ enum **BakeChannels**: :ref:`🔗<enum_RenderingServer_BakeChannels>`
 
 :ref:`BakeChannels<enum_RenderingServer_BakeChannels>` **BAKE_CHANNEL_ALBEDO_ALPHA** = ``0``
 
-Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s returned by :ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>`. Image uses :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` and contains albedo color in the ``.rgb`` channels and alpha in the ``.a`` channel.
+:ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>` 返回的 :ref:`Image<class_Image>` 陣列中 :ref:`Image<class_Image>` 的索引。圖像使用 :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式，並在 ``.rgb`` 通道中包含反照率顏色，在 ``.a`` 通道中包含 Alpha。
 
 .. _class_RenderingServer_constant_BAKE_CHANNEL_NORMAL:
 
@@ -5089,7 +5089,7 @@ Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s retu
 
 :ref:`BakeChannels<enum_RenderingServer_BakeChannels>` **BAKE_CHANNEL_NORMAL** = ``1``
 
-Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s returned by :ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>`. Image uses :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` and contains the per-pixel normal of the object in the ``.rgb`` channels and nothing in the ``.a`` channel. The per-pixel normal is encoded as ``normal * 0.5 + 0.5``.
+:ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>` 返回的 :ref:`Image<class_Image>` 陣列中 :ref:`Image<class_Image>` 的索引。圖像使用 :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式，並在 ``.rgb`` 通道中包含該物件的每圖元法線，在 ``.a`` 通道中不包含任何內容。每圖元法線被編碼為 ``normal * 0.5 + 0.5``\ 。
 
 .. _class_RenderingServer_constant_BAKE_CHANNEL_ORM:
 
@@ -5097,7 +5097,7 @@ Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s retu
 
 :ref:`BakeChannels<enum_RenderingServer_BakeChannels>` **BAKE_CHANNEL_ORM** = ``2``
 
-Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s returned by :ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>`. Image uses :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` and contains ambient occlusion (from material and decals only) in the ``.r`` channel, roughness in the ``.g`` channel, metallic in the ``.b`` channel and sub surface scattering amount in the ``.a`` channel.
+:ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>` 返回的 :ref:`Image<class_Image>` 陣列中 :ref:`Image<class_Image>` 的索引。圖像使用 :ref:`Image.FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` 格式，並在 ``.r`` 通道中包含環境光遮擋（僅來自材質和裝飾），在 ``.g`` 通道中包含粗糙度，在 ``.b`` 通道中包含金屬度，並且中 ``.a`` 通道中包含次表面散射量。
 
 .. _class_RenderingServer_constant_BAKE_CHANNEL_EMISSION:
 
@@ -5105,7 +5105,7 @@ Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s retu
 
 :ref:`BakeChannels<enum_RenderingServer_BakeChannels>` **BAKE_CHANNEL_EMISSION** = ``3``
 
-Index of :ref:`Image<class_Image>` in array of :ref:`Image<class_Image>`\ s returned by :ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>`. Image uses :ref:`Image.FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>` and contains emission color in the ``.rgb`` channels and nothing in the ``.a`` channel.
+:ref:`bake_render_uv2()<class_RenderingServer_method_bake_render_uv2>` 返回的 :ref:`Image<class_Image>` 陣列中 :ref:`Image<class_Image>` 的索引。圖像使用 :ref:`Image.FORMAT_RGBAH<class_Image_constant_FORMAT_RGBAH>` 格式，並在 ``.rgb`` 通道中包含自發光顏色，在 ``.a`` 通道中不包含任何內容。
 
 .. rst-class:: classref-item-separator
 
@@ -5123,7 +5123,7 @@ enum **CanvasTextureChannel**: :ref:`🔗<enum_RenderingServer_CanvasTextureChan
 
 :ref:`CanvasTextureChannel<enum_RenderingServer_CanvasTextureChannel>` **CANVAS_TEXTURE_CHANNEL_DIFFUSE** = ``0``
 
-Diffuse canvas texture (:ref:`CanvasTexture.diffuse_texture<class_CanvasTexture_property_diffuse_texture>`).
+漫反射畫布紋理（\ :ref:`CanvasTexture.diffuse_texture<class_CanvasTexture_property_diffuse_texture>`\ ）。
 
 .. _class_RenderingServer_constant_CANVAS_TEXTURE_CHANNEL_NORMAL:
 
@@ -5131,7 +5131,7 @@ Diffuse canvas texture (:ref:`CanvasTexture.diffuse_texture<class_CanvasTexture_
 
 :ref:`CanvasTextureChannel<enum_RenderingServer_CanvasTextureChannel>` **CANVAS_TEXTURE_CHANNEL_NORMAL** = ``1``
 
-Normal map canvas texture (:ref:`CanvasTexture.normal_texture<class_CanvasTexture_property_normal_texture>`).
+法線貼圖畫布紋理（\ :ref:`CanvasTexture.normal_texture<class_CanvasTexture_property_normal_texture>`\ ）。
 
 .. _class_RenderingServer_constant_CANVAS_TEXTURE_CHANNEL_SPECULAR:
 
@@ -5139,7 +5139,7 @@ Normal map canvas texture (:ref:`CanvasTexture.normal_texture<class_CanvasTextur
 
 :ref:`CanvasTextureChannel<enum_RenderingServer_CanvasTextureChannel>` **CANVAS_TEXTURE_CHANNEL_SPECULAR** = ``2``
 
-Specular map canvas texture (:ref:`CanvasTexture.specular_texture<class_CanvasTexture_property_specular_texture>`).
+高光貼圖畫布紋理（\ :ref:`CanvasTexture.specular_texture<class_CanvasTexture_property_specular_texture>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -5157,7 +5157,7 @@ enum **NinePatchAxisMode**: :ref:`🔗<enum_RenderingServer_NinePatchAxisMode>`
 
 :ref:`NinePatchAxisMode<enum_RenderingServer_NinePatchAxisMode>` **NINE_PATCH_STRETCH** = ``0``
 
-The nine patch gets stretched where needed.
+九宮格在需要的地方被拉伸。
 
 .. _class_RenderingServer_constant_NINE_PATCH_TILE:
 
@@ -5165,7 +5165,7 @@ The nine patch gets stretched where needed.
 
 :ref:`NinePatchAxisMode<enum_RenderingServer_NinePatchAxisMode>` **NINE_PATCH_TILE** = ``1``
 
-The nine patch gets filled with tiles where needed.
+九宮格在需要的地方填充圖塊。
 
 .. _class_RenderingServer_constant_NINE_PATCH_TILE_FIT:
 
@@ -5173,7 +5173,7 @@ The nine patch gets filled with tiles where needed.
 
 :ref:`NinePatchAxisMode<enum_RenderingServer_NinePatchAxisMode>` **NINE_PATCH_TILE_FIT** = ``2``
 
-The nine patch gets filled with tiles where needed and stretches them a bit if needed.
+九宮格在需要的地方填充圖塊，並在需要時將它們拉伸一點。
 
 .. rst-class:: classref-item-separator
 
@@ -5191,7 +5191,7 @@ enum **CanvasItemTextureFilter**: :ref:`🔗<enum_RenderingServer_CanvasItemText
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_DEFAULT** = ``0``
 
-Uses the default filter mode for this :ref:`Viewport<class_Viewport>`.
+為 :ref:`Viewport<class_Viewport>` 使用預設篩選模式。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_NEAREST:
 
@@ -5199,7 +5199,7 @@ Uses the default filter mode for this :ref:`Viewport<class_Viewport>`.
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理僅取最鄰近像素，近看呈現馬賽克，遠處因未取樣 mipmap 而顯得顆粒。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_LINEAR:
 
@@ -5207,7 +5207,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理在最鄰近 4 像素間插值，近看平滑，遠處因未取樣 mipmap 仍顆粒。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -5255,7 +5255,7 @@ The texture filter blends between the nearest 4 pixels and blends between 2 mipm
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_MAX** = ``7``
 
-Max value for :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` enum.
+:ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` 列舉的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -5273,7 +5273,7 @@ enum **CanvasItemTextureRepeat**: :ref:`🔗<enum_RenderingServer_CanvasItemText
 
 :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` **CANVAS_ITEM_TEXTURE_REPEAT_DEFAULT** = ``0``
 
-Uses the default repeat mode for this :ref:`Viewport<class_Viewport>`.
+為 :ref:`Viewport<class_Viewport>` 使用預設重複模式。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_REPEAT_DISABLED:
 
@@ -5281,7 +5281,7 @@ Uses the default repeat mode for this :ref:`Viewport<class_Viewport>`.
 
 :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` **CANVAS_ITEM_TEXTURE_REPEAT_DISABLED** = ``1``
 
-Disables textures repeating. Instead, when reading UVs outside the 0-1 range, the value will be clamped to the edge of the texture, resulting in a stretched out look at the borders of the texture.
+禁用紋理重複。相反，當讀取 0-1 範圍之外的 UV 時，該值將被鉗制在紋理的邊緣，從而導致紋理的邊界看起來被拉長。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_REPEAT_ENABLED:
 
@@ -5289,7 +5289,7 @@ Disables textures repeating. Instead, when reading UVs outside the 0-1 range, th
 
 :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` **CANVAS_ITEM_TEXTURE_REPEAT_ENABLED** = ``2``
 
-Enables the texture to repeat when UV coordinates are outside the 0-1 range. If using one of the linear filtering modes, this can result in artifacts at the edges of a texture when the sampler filters across the edges of the texture.
+當 UV 超出 0–1 時允許紋理重複。如果使用線性過濾模式，取樣器跨越紋理邊界時可能在邊緣產生偽影。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR:
 
@@ -5297,7 +5297,7 @@ Enables the texture to repeat when UV coordinates are outside the 0-1 range. If 
 
 :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` **CANVAS_ITEM_TEXTURE_REPEAT_MIRROR** = ``3``
 
-Flip the texture when repeating so that the edge lines up instead of abruptly changing.
+重複時翻轉該紋理，使邊緣對齊而不是突然改變。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_REPEAT_MAX:
 
@@ -5305,7 +5305,7 @@ Flip the texture when repeating so that the edge lines up instead of abruptly ch
 
 :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` **CANVAS_ITEM_TEXTURE_REPEAT_MAX** = ``4``
 
-Max value for :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` enum.
+:ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` 列舉的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -5323,7 +5323,7 @@ enum **CanvasGroupMode**: :ref:`🔗<enum_RenderingServer_CanvasGroupMode>`
 
 :ref:`CanvasGroupMode<enum_RenderingServer_CanvasGroupMode>` **CANVAS_GROUP_MODE_DISABLED** = ``0``
 
-Child draws over parent and is not clipped.
+子級繪製在父級之上，不會被裁剪。
 
 .. _class_RenderingServer_constant_CANVAS_GROUP_MODE_CLIP_ONLY:
 
@@ -5331,7 +5331,7 @@ Child draws over parent and is not clipped.
 
 :ref:`CanvasGroupMode<enum_RenderingServer_CanvasGroupMode>` **CANVAS_GROUP_MODE_CLIP_ONLY** = ``1``
 
-Parent is used for the purposes of clipping only. Child is clipped to the parent's visible area, parent is not drawn.
+父級僅用於裁剪目的。子級被裁剪到父級的可見區域，不繪製父級。
 
 .. _class_RenderingServer_constant_CANVAS_GROUP_MODE_CLIP_AND_DRAW:
 
@@ -5339,7 +5339,7 @@ Parent is used for the purposes of clipping only. Child is clipped to the parent
 
 :ref:`CanvasGroupMode<enum_RenderingServer_CanvasGroupMode>` **CANVAS_GROUP_MODE_CLIP_AND_DRAW** = ``2``
 
-Parent is used for clipping child, but parent is also drawn underneath child as normal before clipping child to its visible area.
+父級用於裁剪子級，但在將子級剪裁到其可見區域之前，父級也像往常一樣繪製在子級下方。
 
 .. _class_RenderingServer_constant_CANVAS_GROUP_MODE_TRANSPARENT:
 
@@ -5369,7 +5369,7 @@ enum **CanvasLightMode**: :ref:`🔗<enum_RenderingServer_CanvasLightMode>`
 
 :ref:`CanvasLightMode<enum_RenderingServer_CanvasLightMode>` **CANVAS_LIGHT_MODE_POINT** = ``0``
 
-2D point light (see :ref:`PointLight2D<class_PointLight2D>`).
+2D 點光（見 :ref:`PointLight2D<class_PointLight2D>`\ ）。
 
 .. _class_RenderingServer_constant_CANVAS_LIGHT_MODE_DIRECTIONAL:
 
@@ -5377,7 +5377,7 @@ enum **CanvasLightMode**: :ref:`🔗<enum_RenderingServer_CanvasLightMode>`
 
 :ref:`CanvasLightMode<enum_RenderingServer_CanvasLightMode>` **CANVAS_LIGHT_MODE_DIRECTIONAL** = ``1``
 
-2D directional (sun/moon) light (see :ref:`DirectionalLight2D<class_DirectionalLight2D>`).
+2D 方向（日月）光（見 :ref:`DirectionalLight2D<class_DirectionalLight2D>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -5395,7 +5395,7 @@ enum **CanvasLightBlendMode**: :ref:`🔗<enum_RenderingServer_CanvasLightBlendM
 
 :ref:`CanvasLightBlendMode<enum_RenderingServer_CanvasLightBlendMode>` **CANVAS_LIGHT_BLEND_MODE_ADD** = ``0``
 
-Adds light color additive to the canvas.
+向畫布新增淺色。
 
 .. _class_RenderingServer_constant_CANVAS_LIGHT_BLEND_MODE_SUB:
 
@@ -5403,7 +5403,7 @@ Adds light color additive to the canvas.
 
 :ref:`CanvasLightBlendMode<enum_RenderingServer_CanvasLightBlendMode>` **CANVAS_LIGHT_BLEND_MODE_SUB** = ``1``
 
-Adds light color subtractive to the canvas.
+從畫布中減去淺色。
 
 .. _class_RenderingServer_constant_CANVAS_LIGHT_BLEND_MODE_MIX:
 
@@ -5411,7 +5411,7 @@ Adds light color subtractive to the canvas.
 
 :ref:`CanvasLightBlendMode<enum_RenderingServer_CanvasLightBlendMode>` **CANVAS_LIGHT_BLEND_MODE_MIX** = ``2``
 
-The light adds color depending on transparency.
+燈光根據透明度增加顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -5429,7 +5429,7 @@ enum **CanvasLightShadowFilter**: :ref:`🔗<enum_RenderingServer_CanvasLightSha
 
 :ref:`CanvasLightShadowFilter<enum_RenderingServer_CanvasLightShadowFilter>` **CANVAS_LIGHT_FILTER_NONE** = ``0``
 
-Do not apply a filter to canvas light shadows.
+不要對畫布上的光影套用濾鏡。
 
 .. _class_RenderingServer_constant_CANVAS_LIGHT_FILTER_PCF5:
 
@@ -5437,7 +5437,7 @@ Do not apply a filter to canvas light shadows.
 
 :ref:`CanvasLightShadowFilter<enum_RenderingServer_CanvasLightShadowFilter>` **CANVAS_LIGHT_FILTER_PCF5** = ``1``
 
-Use PCF5 filtering to filter canvas light shadows.
+使用 PCF5 篩選法來篩選畫布的光影。
 
 .. _class_RenderingServer_constant_CANVAS_LIGHT_FILTER_PCF13:
 
@@ -5445,7 +5445,7 @@ Use PCF5 filtering to filter canvas light shadows.
 
 :ref:`CanvasLightShadowFilter<enum_RenderingServer_CanvasLightShadowFilter>` **CANVAS_LIGHT_FILTER_PCF13** = ``2``
 
-Use PCF13 filtering to filter canvas light shadows.
+使用 PCF13 篩選法來篩選畫布的光影。
 
 .. _class_RenderingServer_constant_CANVAS_LIGHT_FILTER_MAX:
 
@@ -5453,7 +5453,7 @@ Use PCF13 filtering to filter canvas light shadows.
 
 :ref:`CanvasLightShadowFilter<enum_RenderingServer_CanvasLightShadowFilter>` **CANVAS_LIGHT_FILTER_MAX** = ``3``
 
-Max value of the :ref:`CanvasLightShadowFilter<enum_RenderingServer_CanvasLightShadowFilter>` enum.
+:ref:`CanvasLightShadowFilter<enum_RenderingServer_CanvasLightShadowFilter>` 列舉的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -5471,7 +5471,7 @@ enum **CanvasOccluderPolygonCullMode**: :ref:`🔗<enum_RenderingServer_CanvasOc
 
 :ref:`CanvasOccluderPolygonCullMode<enum_RenderingServer_CanvasOccluderPolygonCullMode>` **CANVAS_OCCLUDER_POLYGON_CULL_DISABLED** = ``0``
 
-Culling of the canvas occluder is disabled.
+禁用畫布遮擋物的剔除。
 
 .. _class_RenderingServer_constant_CANVAS_OCCLUDER_POLYGON_CULL_CLOCKWISE:
 
@@ -5479,7 +5479,7 @@ Culling of the canvas occluder is disabled.
 
 :ref:`CanvasOccluderPolygonCullMode<enum_RenderingServer_CanvasOccluderPolygonCullMode>` **CANVAS_OCCLUDER_POLYGON_CULL_CLOCKWISE** = ``1``
 
-Culling of the canvas occluder is clockwise.
+畫布遮擋器的剔除是順時針的。
 
 .. _class_RenderingServer_constant_CANVAS_OCCLUDER_POLYGON_CULL_COUNTER_CLOCKWISE:
 
@@ -5487,7 +5487,7 @@ Culling of the canvas occluder is clockwise.
 
 :ref:`CanvasOccluderPolygonCullMode<enum_RenderingServer_CanvasOccluderPolygonCullMode>` **CANVAS_OCCLUDER_POLYGON_CULL_COUNTER_CLOCKWISE** = ``2``
 
-Culling of the canvas occluder is counterclockwise.
+畫布遮擋物的剔除是逆時針的。
 
 .. rst-class:: classref-item-separator
 
@@ -5505,7 +5505,7 @@ enum **GlobalShaderParameterType**: :ref:`🔗<enum_RenderingServer_GlobalShader
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_BOOL** = ``0``
 
-Boolean global shader parameter (``global uniform bool ...``).
+布林型全域著色器參數（\ ``global uniform bool ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_BVEC2:
 
@@ -5513,7 +5513,7 @@ Boolean global shader parameter (``global uniform bool ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_BVEC2** = ``1``
 
-2-dimensional boolean vector global shader parameter (``global uniform bvec2 ...``).
+二維布林向量全域著色器參數（\ ``global uniform bvec2 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_BVEC3:
 
@@ -5521,7 +5521,7 @@ Boolean global shader parameter (``global uniform bool ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_BVEC3** = ``2``
 
-3-dimensional boolean vector global shader parameter (``global uniform bvec3 ...``).
+三維布林向量全域著色器參數（\ ``global uniform bvec3 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_BVEC4:
 
@@ -5529,7 +5529,7 @@ Boolean global shader parameter (``global uniform bool ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_BVEC4** = ``3``
 
-4-dimensional boolean vector global shader parameter (``global uniform bvec4 ...``).
+四維布林向量全域著色器參數（\ ``global uniform bvec4 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_INT:
 
@@ -5537,7 +5537,7 @@ Boolean global shader parameter (``global uniform bool ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_INT** = ``4``
 
-Integer global shader parameter (``global uniform int ...``).
+整數全域著色器參數（\ ``global uniform int ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_IVEC2:
 
@@ -5545,7 +5545,7 @@ Integer global shader parameter (``global uniform int ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_IVEC2** = ``5``
 
-2-dimensional integer vector global shader parameter (``global uniform ivec2 ...``).
+二維整數向量全域著色器參數（\ ``global uniform ivec2 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_IVEC3:
 
@@ -5553,7 +5553,7 @@ Integer global shader parameter (``global uniform int ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_IVEC3** = ``6``
 
-3-dimensional integer vector global shader parameter (``global uniform ivec3 ...``).
+三維整數向量全域著色器參數（\ ``global uniform ivec3 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_IVEC4:
 
@@ -5561,7 +5561,7 @@ Integer global shader parameter (``global uniform int ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_IVEC4** = ``7``
 
-4-dimensional integer vector global shader parameter (``global uniform ivec4 ...``).
+四維整數向量全域著色器參數（\ ``global uniform ivec4 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_RECT2I:
 
@@ -5569,7 +5569,7 @@ Integer global shader parameter (``global uniform int ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_RECT2I** = ``8``
 
-2-dimensional integer rectangle global shader parameter (``global uniform ivec4 ...``). Equivalent to :ref:`GLOBAL_VAR_TYPE_IVEC4<class_RenderingServer_constant_GLOBAL_VAR_TYPE_IVEC4>` in shader code, but exposed as a :ref:`Rect2i<class_Rect2i>` in the editor UI.
+二維整數矩形全域著色器參數（\ ``global uniform ivec4 ...``\ ）。等價於著色器程式碼中的 :ref:`GLOBAL_VAR_TYPE_IVEC4<class_RenderingServer_constant_GLOBAL_VAR_TYPE_IVEC4>`\ ，但在編輯器 UI 中以 :ref:`Rect2i<class_Rect2i>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_UINT:
 
@@ -5577,7 +5577,7 @@ Integer global shader parameter (``global uniform int ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_UINT** = ``9``
 
-Unsigned integer global shader parameter (``global uniform uint ...``).
+不帶正負號的整數全域著色器參數（\ ``global uniform uint ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_UVEC2:
 
@@ -5585,7 +5585,7 @@ Unsigned integer global shader parameter (``global uniform uint ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_UVEC2** = ``10``
 
-2-dimensional unsigned integer vector global shader parameter (``global uniform uvec2 ...``).
+二維不帶正負號的整數向量全域著色器參數（\ ``global uniform uvec2 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_UVEC3:
 
@@ -5593,7 +5593,7 @@ Unsigned integer global shader parameter (``global uniform uint ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_UVEC3** = ``11``
 
-3-dimensional unsigned integer vector global shader parameter (``global uniform uvec3 ...``).
+三維不帶正負號的整數向量全域著色器參數（\ ``global uniform uvec3 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_UVEC4:
 
@@ -5601,7 +5601,7 @@ Unsigned integer global shader parameter (``global uniform uint ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_UVEC4** = ``12``
 
-4-dimensional unsigned integer vector global shader parameter (``global uniform uvec4 ...``).
+四維不帶正負號的整數向量全域著色器參數（\ ``global uniform uvec4 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_FLOAT:
 
@@ -5609,7 +5609,7 @@ Unsigned integer global shader parameter (``global uniform uint ...``).
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_FLOAT** = ``13``
 
-Single-precision floating-point global shader parameter (``global uniform float ...``).
+單精確度浮點數全域著色器參數（\ ``global uniform float ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC2:
 
@@ -5617,7 +5617,7 @@ Single-precision floating-point global shader parameter (``global uniform float 
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_VEC2** = ``14``
 
-2-dimensional floating-point vector global shader parameter (``global uniform vec2 ...``).
+二維單精確度浮點數向量全域著色器參數（\ ``global uniform vec2 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC3:
 
@@ -5625,7 +5625,7 @@ Single-precision floating-point global shader parameter (``global uniform float 
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_VEC3** = ``15``
 
-3-dimensional floating-point vector global shader parameter (``global uniform vec3 ...``).
+三維單精確度浮點數向量全域著色器參數（\ ``global uniform vec3 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC4:
 
@@ -5633,7 +5633,7 @@ Single-precision floating-point global shader parameter (``global uniform float 
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_VEC4** = ``16``
 
-4-dimensional floating-point vector global shader parameter (``global uniform vec4 ...``).
+四維單精確度浮點數向量全域著色器參數（\ ``global uniform vec4 ...``\ ）。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_COLOR:
 
@@ -5641,7 +5641,7 @@ Single-precision floating-point global shader parameter (``global uniform float 
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_COLOR** = ``17``
 
-Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:`GLOBAL_VAR_TYPE_VEC4<class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC4>` in shader code, but exposed as a :ref:`Color<class_Color>` in the editor UI.
+顏色全域著色器參數（\ ``global uniform vec4 ...``\ ）。等價於著色器程式碼中的 :ref:`GLOBAL_VAR_TYPE_VEC4<class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC4>`\ ，但在編輯器 UI 中以 :ref:`Color<class_Color>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_RECT2:
 
@@ -5649,7 +5649,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_RECT2** = ``18``
 
-2-dimensional floating-point rectangle global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:`GLOBAL_VAR_TYPE_VEC4<class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC4>` in shader code, but exposed as a :ref:`Rect2<class_Rect2>` in the editor UI.
+二維浮點數矩形全域著色器參數（\ ``global uniform vec4 ...``\ ）。等價於著色器程式碼中的 :ref:`GLOBAL_VAR_TYPE_VEC4<class_RenderingServer_constant_GLOBAL_VAR_TYPE_VEC4>`\ ，但在編輯器 UI 中以 :ref:`Rect2<class_Rect2>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_MAT2:
 
@@ -5657,7 +5657,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_MAT2** = ``19``
 
-2×2 matrix global shader parameter (``global uniform mat2 ...``). Exposed as a :ref:`PackedInt32Array<class_PackedInt32Array>` in the editor UI.
+2×2 矩陣全域著色器參數（\ ``global uniform mat2 ...``\ ）。編輯器 UI 中以 :ref:`PackedInt32Array<class_PackedInt32Array>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_MAT3:
 
@@ -5665,7 +5665,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_MAT3** = ``20``
 
-3×3 matrix global shader parameter (``global uniform mat3 ...``). Exposed as a :ref:`Basis<class_Basis>` in the editor UI.
+3×3 矩陣全域著色器參數（\ ``global uniform mat3 ...``\ ）。編輯器 UI 中以 :ref:`Basis<class_Basis>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_MAT4:
 
@@ -5673,7 +5673,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_MAT4** = ``21``
 
-4×4 matrix global shader parameter (``global uniform mat4 ...``). Exposed as a :ref:`Projection<class_Projection>` in the editor UI.
+4×4 矩陣全域著色器參數（\ ``global uniform mat4 ...``\ ）。編輯器 UI 中以 :ref:`Projection<class_Projection>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_TRANSFORM_2D:
 
@@ -5681,7 +5681,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_TRANSFORM_2D** = ``22``
 
-2-dimensional transform global shader parameter (``global uniform mat2x3 ...``). Exposed as a :ref:`Transform2D<class_Transform2D>` in the editor UI.
+二維變換全域著色器參數（\ ``global uniform mat2x3 ...``\ ）。編輯器 UI 中以 :ref:`Transform2D<class_Transform2D>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_TRANSFORM:
 
@@ -5689,7 +5689,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_TRANSFORM** = ``23``
 
-3-dimensional transform global shader parameter (``global uniform mat3x4 ...``). Exposed as a :ref:`Transform3D<class_Transform3D>` in the editor UI.
+三維變換全域著色器參數（\ ``global uniform mat3x4 ...``\ ）。編輯器 UI 中以 :ref:`Transform3D<class_Transform3D>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_SAMPLER2D:
 
@@ -5697,7 +5697,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_SAMPLER2D** = ``24``
 
-2D sampler global shader parameter (``global uniform sampler2D ...``). Exposed as a :ref:`Texture2D<class_Texture2D>` in the editor UI.
+2D 取樣器全域著色器參數（\ ``global uniform sampler2D ...``\ ）。編輯器 UI 中以 :ref:`Texture2D<class_Texture2D>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_SAMPLER2DARRAY:
 
@@ -5705,7 +5705,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_SAMPLER2DARRAY** = ``25``
 
-2D sampler array global shader parameter (``global uniform sampler2DArray ...``). Exposed as a :ref:`Texture2DArray<class_Texture2DArray>` in the editor UI.
+2D 取樣器陣列全域著色器參數（\ ``global uniform sampler2DArray ...``\ ）。編輯器 UI 中以 :ref:`Texture2DArray<class_Texture2DArray>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_SAMPLER3D:
 
@@ -5713,7 +5713,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_SAMPLER3D** = ``26``
 
-3D sampler global shader parameter (``global uniform sampler3D ...``). Exposed as a :ref:`Texture3D<class_Texture3D>` in the editor UI.
+3D 取樣器全域著色器參數（\ ``global uniform sampler3D ...``\ ）。編輯器 UI 中以 :ref:`Texture3D<class_Texture3D>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_SAMPLERCUBE:
 
@@ -5721,7 +5721,7 @@ Color global shader parameter (``global uniform vec4 ...``). Equivalent to :ref:
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_SAMPLERCUBE** = ``27``
 
-Cubemap sampler global shader parameter (``global uniform samplerCube ...``). Exposed as a :ref:`Cubemap<class_Cubemap>` in the editor UI.
+立方體貼圖全域著色器參數（\ ``global uniform samplerCube ...``\ ）。編輯器 UI 中以 :ref:`Cubemap<class_Cubemap>` 的形式暴露。
 
 .. _class_RenderingServer_constant_GLOBAL_VAR_TYPE_SAMPLEREXT:
 
@@ -5737,7 +5737,7 @@ External sampler global shader parameter (``global uniform samplerExternalOES ..
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **GLOBAL_VAR_TYPE_MAX** = ``29``
 
-Represents the size of the :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` enum.
+代表 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -5755,7 +5755,7 @@ enum **RenderingInfo**: :ref:`🔗<enum_RenderingServer_RenderingInfo>`
 
 :ref:`RenderingInfo<enum_RenderingServer_RenderingInfo>` **RENDERING_INFO_TOTAL_OBJECTS_IN_FRAME** = ``0``
 
-Number of objects rendered in the current 3D scene. This varies depending on camera position and rotation.
+在目前 3D 場景中算繪的物件數。會根據相機的位置和旋轉的不同而不同。
 
 .. _class_RenderingServer_constant_RENDERING_INFO_TOTAL_PRIMITIVES_IN_FRAME:
 
@@ -5763,7 +5763,7 @@ Number of objects rendered in the current 3D scene. This varies depending on cam
 
 :ref:`RenderingInfo<enum_RenderingServer_RenderingInfo>` **RENDERING_INFO_TOTAL_PRIMITIVES_IN_FRAME** = ``1``
 
-Number of points, lines, or triangles rendered in the current 3D scene. This varies depending on camera position and rotation.
+在目前 3D 場景中算繪的點、線、三角的數量。會根據相機的位置和旋轉的不同而不同。
 
 .. _class_RenderingServer_constant_RENDERING_INFO_TOTAL_DRAW_CALLS_IN_FRAME:
 
@@ -5771,7 +5771,7 @@ Number of points, lines, or triangles rendered in the current 3D scene. This var
 
 :ref:`RenderingInfo<enum_RenderingServer_RenderingInfo>` **RENDERING_INFO_TOTAL_DRAW_CALLS_IN_FRAME** = ``2``
 
-Number of draw calls performed to render in the current 3D scene. This varies depending on camera position and rotation.
+在目前 3D 場景中算繪執行的繪製呼叫的數量。會根據相機的位置和旋轉的不同而不同。
 
 .. _class_RenderingServer_constant_RENDERING_INFO_TEXTURE_MEM_USED:
 
@@ -5779,7 +5779,7 @@ Number of draw calls performed to render in the current 3D scene. This varies de
 
 :ref:`RenderingInfo<enum_RenderingServer_RenderingInfo>` **RENDERING_INFO_TEXTURE_MEM_USED** = ``3``
 
-Texture memory used (in bytes).
+紋理記憶體的使用量（單位為位元組）。
 
 .. _class_RenderingServer_constant_RENDERING_INFO_BUFFER_MEM_USED:
 
@@ -5787,7 +5787,7 @@ Texture memory used (in bytes).
 
 :ref:`RenderingInfo<enum_RenderingServer_RenderingInfo>` **RENDERING_INFO_BUFFER_MEM_USED** = ``4``
 
-Buffer memory used (in bytes). This includes vertex data, uniform buffers, and many miscellaneous buffer types used internally.
+緩衝記憶體的使用量（單位為位元組）。包括頂點資料、uniform 緩衝以及內部使用的各種不同緩衝型別。
 
 .. _class_RenderingServer_constant_RENDERING_INFO_VIDEO_MEM_USED:
 
@@ -5969,7 +5969,7 @@ enum **Features**: :ref:`🔗<enum_RenderingServer_Features>`
 
 :ref:`Features<enum_RenderingServer_Features>` **FEATURE_SHADERS** = ``0``
 
-**Deprecated:** This constant has not been used since Godot 3.0.
+**已棄用：** This constant has not been used since Godot 3.0.
 
 
 
@@ -5979,7 +5979,7 @@ enum **Features**: :ref:`🔗<enum_RenderingServer_Features>`
 
 :ref:`Features<enum_RenderingServer_Features>` **FEATURE_MULTITHREADED** = ``1``
 
-**Deprecated:** This constant has not been used since Godot 3.0.
+**已棄用：** This constant has not been used since Godot 3.0.
 
 
 
@@ -5989,8 +5989,8 @@ enum **Features**: :ref:`🔗<enum_RenderingServer_Features>`
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_RenderingServer_constant_NO_INDEX_ARRAY:
 
@@ -5998,7 +5998,7 @@ Constants
 
 **NO_INDEX_ARRAY** = ``-1`` :ref:`🔗<class_RenderingServer_constant_NO_INDEX_ARRAY>`
 
-Marks an error that shows that the index array is empty.
+標記一個錯誤，表明索引陣列為空。
 
 .. _class_RenderingServer_constant_ARRAY_WEIGHTS_SIZE:
 
@@ -6006,7 +6006,7 @@ Marks an error that shows that the index array is empty.
 
 **ARRAY_WEIGHTS_SIZE** = ``4`` :ref:`🔗<class_RenderingServer_constant_ARRAY_WEIGHTS_SIZE>`
 
-Number of weights/bones per vertex.
+每個頂點的權重/骨骼數。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_Z_MIN:
 
@@ -6014,7 +6014,7 @@ Number of weights/bones per vertex.
 
 **CANVAS_ITEM_Z_MIN** = ``-4096`` :ref:`🔗<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>`
 
-The minimum Z-layer for canvas items.
+畫布專案的最小 Z 層。
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_Z_MAX:
 
@@ -6022,7 +6022,7 @@ The minimum Z-layer for canvas items.
 
 **CANVAS_ITEM_Z_MAX** = ``4096`` :ref:`🔗<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>`
 
-The maximum Z-layer for canvas items.
+帆布專案的最大 Z 層。
 
 .. _class_RenderingServer_constant_CANVAS_LAYER_MIN:
 
@@ -6046,7 +6046,7 @@ The maximum canvas layer.
 
 **MAX_GLOW_LEVELS** = ``7`` :ref:`🔗<class_RenderingServer_constant_MAX_GLOW_LEVELS>`
 
-The maximum number of glow levels that can be used with the glow post-processing effect.
+輝光後期處理效果使用的最大輝光級別數。
 
 .. _class_RenderingServer_constant_MAX_CURSORS:
 
@@ -6054,7 +6054,7 @@ The maximum number of glow levels that can be used with the glow post-processing
 
 **MAX_CURSORS** = ``8`` :ref:`🔗<class_RenderingServer_constant_MAX_CURSORS>`
 
-**Deprecated:** This constant is not used by the engine.
+**已棄用：** This constant is not used by the engine.
 
 
 
@@ -6064,7 +6064,7 @@ The maximum number of glow levels that can be used with the glow post-processing
 
 **MAX_2D_DIRECTIONAL_LIGHTS** = ``8`` :ref:`🔗<class_RenderingServer_constant_MAX_2D_DIRECTIONAL_LIGHTS>`
 
-The maximum number of directional lights that can be rendered at a given time in 2D.
+2D 中同一時間能夠算繪的最大方向光的數量。
 
 .. _class_RenderingServer_constant_MAX_MESH_SURFACES:
 
@@ -6080,7 +6080,7 @@ The maximum number of surfaces a mesh can have.
 
 **MATERIAL_RENDER_PRIORITY_MIN** = ``-128`` :ref:`🔗<class_RenderingServer_constant_MATERIAL_RENDER_PRIORITY_MIN>`
 
-The minimum renderpriority of all materials.
+所有材質的最小算繪優先順序。
 
 .. _class_RenderingServer_constant_MATERIAL_RENDER_PRIORITY_MAX:
 
@@ -6088,7 +6088,7 @@ The minimum renderpriority of all materials.
 
 **MATERIAL_RENDER_PRIORITY_MAX** = ``127`` :ref:`🔗<class_RenderingServer_constant_MATERIAL_RENDER_PRIORITY_MAX>`
 
-The maximum renderpriority of all materials.
+所有材質的最大算繪優先順序。
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_COUNT:
 
@@ -6096,7 +6096,7 @@ The maximum renderpriority of all materials.
 
 **ARRAY_CUSTOM_COUNT** = ``4`` :ref:`🔗<class_RenderingServer_constant_ARRAY_CUSTOM_COUNT>`
 
-The number of custom data arrays available (:ref:`ARRAY_CUSTOM0<class_RenderingServer_constant_ARRAY_CUSTOM0>`, :ref:`ARRAY_CUSTOM1<class_RenderingServer_constant_ARRAY_CUSTOM1>`, :ref:`ARRAY_CUSTOM2<class_RenderingServer_constant_ARRAY_CUSTOM2>`, :ref:`ARRAY_CUSTOM3<class_RenderingServer_constant_ARRAY_CUSTOM3>`).
+可用自訂資料陣列的數量（\ :ref:`ARRAY_CUSTOM0<class_RenderingServer_constant_ARRAY_CUSTOM0>`\ 、\ :ref:`ARRAY_CUSTOM1<class_RenderingServer_constant_ARRAY_CUSTOM1>`\ 、\ :ref:`ARRAY_CUSTOM2<class_RenderingServer_constant_ARRAY_CUSTOM2>`\ 、\ :ref:`ARRAY_CUSTOM3<class_RenderingServer_constant_ARRAY_CUSTOM3>`\ ）。
 
 .. _class_RenderingServer_constant_PARTICLES_EMIT_FLAG_POSITION:
 
@@ -6164,8 +6164,8 @@ The number of custom data arrays available (:ref:`ARRAY_CUSTOM0<class_RenderingS
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RenderingServer_property_render_loop_enabled:
 
@@ -6178,7 +6178,7 @@ Property Descriptions
 - |void| **set_render_loop_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_render_loop_enabled**\ (\ )
 
-If ``false``, disables rendering completely, but the engine logic is still being processed. You can call :ref:`force_draw()<class_RenderingServer_method_force_draw>` to draw a frame even with rendering disabled.
+如果為 ``false``\ ，則完全禁用算繪，但引擎邏輯仍在處理中。即使禁用算繪，你也可以呼叫 :ref:`force_draw()<class_RenderingServer_method_force_draw>` 來繪製影格。
 
 .. rst-class:: classref-section-separator
 
@@ -6186,8 +6186,8 @@ If ``false``, disables rendering completely, but the engine logic is still being
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_RenderingServer_method_bake_render_uv2:
 
@@ -6195,7 +6195,7 @@ Method Descriptions
 
 :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\] **bake_render_uv2**\ (\ base\: :ref:`RID<class_RID>`, material_overrides\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], image_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_bake_render_uv2>`
 
-Bakes the material data of the Mesh passed in the ``base`` parameter with optional ``material_overrides`` to a set of :ref:`Image<class_Image>`\ s of size ``image_size``. Returns an array of :ref:`Image<class_Image>`\ s containing material properties as specified in :ref:`BakeChannels<enum_RenderingServer_BakeChannels>`.
+使用可選的 ``material_overrides``\ ，將 ``base`` 參數中傳遞的 Mesh 的材質資料，烘焙為一組大小為 ``image_size`` 的 :ref:`Image<class_Image>`\ 。返回包含 :ref:`BakeChannels<enum_RenderingServer_BakeChannels>` 中指定的材質屬性的 :ref:`Image<class_Image>` 陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -6219,11 +6219,11 @@ As the RenderingServer actual logic may run on a separate thread, accessing its 
 
 :ref:`RID<class_RID>` **camera_attributes_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_camera_attributes_create>`
 
-Creates a camera attributes object and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``camera_attributes_`` RenderingServer functions.
+建立相機屬性物件並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``camera_attributes_`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`CameraAttributes<class_CameraAttributes>`.
+\ **注意：**\ 等價資源為 :ref:`CameraAttributes<class_CameraAttributes>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6235,7 +6235,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **camera_attributes_set_auto_exposure**\ (\ camera_attributes\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, min_sensitivity\: :ref:`float<class_float>`, max_sensitivity\: :ref:`float<class_float>`, speed\: :ref:`float<class_float>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_camera_attributes_set_auto_exposure>`
 
-Sets the parameters to use with the auto-exposure effect. These parameters take on the same meaning as their counterparts in :ref:`CameraAttributes<class_CameraAttributes>` and :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`.
+設定用於自動曝光效果的參數。這些參數與 :ref:`CameraAttributes<class_CameraAttributes>` 和 :ref:`CameraAttributesPractical<class_CameraAttributesPractical>` 中的對應參數具有相同的含義。
 
 .. rst-class:: classref-item-separator
 
@@ -6247,7 +6247,7 @@ Sets the parameters to use with the auto-exposure effect. These parameters take 
 
 |void| **camera_attributes_set_dof_blur**\ (\ camera_attributes\: :ref:`RID<class_RID>`, far_enable\: :ref:`bool<class_bool>`, far_distance\: :ref:`float<class_float>`, far_transition\: :ref:`float<class_float>`, near_enable\: :ref:`bool<class_bool>`, near_distance\: :ref:`float<class_float>`, near_transition\: :ref:`float<class_float>`, amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_camera_attributes_set_dof_blur>`
 
-Sets the parameters to use with the DOF blur effect. These parameters take on the same meaning as their counterparts in :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`.
+設定用於 DOF 模糊效果的參數。這些參數與 :ref:`CameraAttributesPractical<class_CameraAttributesPractical>` 中的對應參數具有相同的含義。
 
 .. rst-class:: classref-item-separator
 
@@ -6309,11 +6309,11 @@ The exposure value can be calculated from aperture (in f-stops), shutter speed (
 
 :ref:`RID<class_RID>` **camera_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_camera_create>`
 
-Creates a 3D camera and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``camera_*`` RenderingServer functions.
+建立 3D 相機並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``camera_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`Camera3D<class_Camera3D>`.
+\ **注意：**\ 等價節點為 :ref:`Camera3D<class_Camera3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6325,7 +6325,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **camera_set_camera_attributes**\ (\ camera\: :ref:`RID<class_RID>`, effects\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_camera_attributes>`
 
-Sets the camera_attributes created with :ref:`camera_attributes_create()<class_RenderingServer_method_camera_attributes_create>` to the given camera.
+將使用 :ref:`camera_attributes_create()<class_RenderingServer_method_camera_attributes_create>` 建立的 camera_attributes 設定給給定的相機。
 
 .. rst-class:: classref-item-separator
 
@@ -6349,7 +6349,7 @@ Sets the compositor used by this camera. Equivalent to :ref:`Camera3D.compositor
 
 |void| **camera_set_cull_mask**\ (\ camera\: :ref:`RID<class_RID>`, layers\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_cull_mask>`
 
-Sets the cull mask associated with this camera. The cull mask describes which 3D layers are rendered by this camera. Equivalent to :ref:`Camera3D.cull_mask<class_Camera3D_property_cull_mask>`.
+設定與該相機關聯的剔除遮罩。剔除遮罩描述了該相機算繪了哪些 3D 圖層。相當於 :ref:`Camera3D.cull_mask<class_Camera3D_property_cull_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6361,7 +6361,7 @@ Sets the cull mask associated with this camera. The cull mask describes which 3D
 
 |void| **camera_set_environment**\ (\ camera\: :ref:`RID<class_RID>`, env\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_environment>`
 
-Sets the environment used by this camera. Equivalent to :ref:`Camera3D.environment<class_Camera3D_property_environment>`.
+設定該相機使用的環境。相當於 :ref:`Camera3D.environment<class_Camera3D_property_environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6373,7 +6373,7 @@ Sets the environment used by this camera. Equivalent to :ref:`Camera3D.environme
 
 |void| **camera_set_frustum**\ (\ camera\: :ref:`RID<class_RID>`, size\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_frustum>`
 
-Sets camera to use frustum projection. This mode allows adjusting the ``offset`` argument to create "tilted frustum" effects.
+將相機設定為使用視錐投影。該模式允許調整 ``offset`` 參數以建立“傾斜視錐”效果。
 
 .. rst-class:: classref-item-separator
 
@@ -6385,7 +6385,7 @@ Sets camera to use frustum projection. This mode allows adjusting the ``offset``
 
 |void| **camera_set_orthogonal**\ (\ camera\: :ref:`RID<class_RID>`, size\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_orthogonal>`
 
-Sets camera to use orthogonal projection, also known as orthographic projection. Objects remain the same size on the screen no matter how far away they are.
+將相機設定為使用正交投影，也稱為正射投影。物體在螢幕上保持相同的尺寸，無論它們有多遠。
 
 .. rst-class:: classref-item-separator
 
@@ -6397,7 +6397,7 @@ Sets camera to use orthogonal projection, also known as orthographic projection.
 
 |void| **camera_set_perspective**\ (\ camera\: :ref:`RID<class_RID>`, fovy_degrees\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_perspective>`
 
-Sets camera to use perspective projection. Objects on the screen becomes smaller when they are far away.
+將相機設定為使用透視投影。螢幕上的物體在遠處時變得更小。
 
 .. rst-class:: classref-item-separator
 
@@ -6409,7 +6409,7 @@ Sets camera to use perspective projection. Objects on the screen becomes smaller
 
 |void| **camera_set_transform**\ (\ camera\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_transform>`
 
-Sets :ref:`Transform3D<class_Transform3D>` of camera.
+設定相機的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6421,7 +6421,7 @@ Sets :ref:`Transform3D<class_Transform3D>` of camera.
 
 |void| **camera_set_use_vertical_aspect**\ (\ camera\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_camera_set_use_vertical_aspect>`
 
-If ``true``, preserves the horizontal aspect ratio which is equivalent to :ref:`Camera3D.KEEP_WIDTH<class_Camera3D_constant_KEEP_WIDTH>`. If ``false``, preserves the vertical aspect ratio which is equivalent to :ref:`Camera3D.KEEP_HEIGHT<class_Camera3D_constant_KEEP_HEIGHT>`.
+如果為 ``true``\ ，則保留水平長寬比，相當於 :ref:`Camera3D.KEEP_WIDTH<class_Camera3D_constant_KEEP_WIDTH>`\ 。如果為 ``false``\ ，則保留垂直長寬比，相當於 :ref:`Camera3D.KEEP_HEIGHT<class_Camera3D_constant_KEEP_HEIGHT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6433,11 +6433,11 @@ If ``true``, preserves the horizontal aspect ratio which is equivalent to :ref:`
 
 :ref:`RID<class_RID>` **canvas_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_canvas_create>`
 
-Creates a canvas and returns the assigned :ref:`RID<class_RID>`. It can be accessed with the RID that is returned. This RID will be used in all ``canvas_*`` RenderingServer functions.
+建立畫布並返回分配的 :ref:`RID<class_RID>`\ 。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``canvas_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-Canvas has no :ref:`Resource<class_Resource>` or :ref:`Node<class_Node>` equivalent.
+沒有與畫布等價的 :ref:`Resource<class_Resource>` 或 :ref:`Node<class_Node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6449,7 +6449,7 @@ Canvas has no :ref:`Resource<class_Resource>` or :ref:`Node<class_Node>` equival
 
 |void| **canvas_item_add_animation_slice**\ (\ item\: :ref:`RID<class_RID>`, animation_length\: :ref:`float<class_float>`, slice_begin\: :ref:`float<class_float>`, slice_end\: :ref:`float<class_float>`, offset\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_animation_slice>`
 
-Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
+後續的繪製命令將被忽略，除非它們位於指定的動畫切片內。這是實作在背景上迴圈而不是不斷重繪的動畫的更快方法。
 
 .. rst-class:: classref-item-separator
 
@@ -6461,7 +6461,7 @@ Subsequent drawing commands will be ignored unless they fall within the specifie
 
 |void| **canvas_item_add_circle**\ (\ item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_circle>`
 
-Draws a circle on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_circle()<class_CanvasItem_method_draw_circle>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上繪製一個圓圈。另見 :ref:`CanvasItem.draw_circle()<class_CanvasItem_method_draw_circle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6497,7 +6497,7 @@ Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor`` on
 
 |void| **canvas_item_add_lcd_texture_rect_region**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_lcd_texture_rect_region>`
 
-See also :ref:`CanvasItem.draw_lcd_texture_rect_region()<class_CanvasItem_method_draw_lcd_texture_rect_region>`.
+另見 :ref:`CanvasItem.draw_lcd_texture_rect_region()<class_CanvasItem_method_draw_lcd_texture_rect_region>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6509,7 +6509,7 @@ See also :ref:`CanvasItem.draw_lcd_texture_rect_region()<class_CanvasItem_method
 
 |void| **canvas_item_add_line**\ (\ item\: :ref:`RID<class_RID>`, from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_line>`
 
-Draws a line on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_line()<class_CanvasItem_method_draw_line>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上畫一條線。另見 :ref:`CanvasItem.draw_line()<class_CanvasItem_method_draw_line>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6521,7 +6521,7 @@ Draws a line on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item
 
 |void| **canvas_item_add_mesh**\ (\ item\: :ref:`RID<class_RID>`, mesh\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), texture\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_mesh>`
 
-Draws a mesh created with :ref:`mesh_create()<class_RenderingServer_method_mesh_create>` with given ``transform``, ``modulate`` color, and ``texture``. This is used internally by :ref:`MeshInstance2D<class_MeshInstance2D>`.
+使用給定的 ``transform``\ 、\ ``modulate`` 顏色、和 ``texture`` 繪製使用 :ref:`mesh_create()<class_RenderingServer_method_mesh_create>` 建立的網格。這由 :ref:`MeshInstance2D<class_MeshInstance2D>` 內部使用。
 
 .. rst-class:: classref-item-separator
 
@@ -6533,7 +6533,7 @@ Draws a mesh created with :ref:`mesh_create()<class_RenderingServer_method_mesh_
 
 |void| **canvas_item_add_msdf_texture_rect_region**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline_size\: :ref:`int<class_int>` = 0, px_range\: :ref:`float<class_float>` = 1.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_msdf_texture_rect_region>`
 
-See also :ref:`CanvasItem.draw_msdf_texture_rect_region()<class_CanvasItem_method_draw_msdf_texture_rect_region>`.
+另見 :ref:`CanvasItem.draw_msdf_texture_rect_region()<class_CanvasItem_method_draw_msdf_texture_rect_region>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6545,7 +6545,7 @@ See also :ref:`CanvasItem.draw_msdf_texture_rect_region()<class_CanvasItem_metho
 
 |void| **canvas_item_add_multiline**\ (\ item\: :ref:`RID<class_RID>`, points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_multiline>`
 
-Draws a 2D multiline on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_multiline()<class_CanvasItem_method_draw_multiline>` and :ref:`CanvasItem.draw_multiline_colors()<class_CanvasItem_method_draw_multiline_colors>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上，繪製一個 2D 多線。另見 :ref:`CanvasItem.draw_multiline()<class_CanvasItem_method_draw_multiline>` 和 :ref:`CanvasItem.draw_multiline_colors()<class_CanvasItem_method_draw_multiline_colors>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6557,7 +6557,7 @@ Draws a 2D multiline on the :ref:`CanvasItem<class_CanvasItem>` pointed to by th
 
 |void| **canvas_item_add_multimesh**\ (\ item\: :ref:`RID<class_RID>`, mesh\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_multimesh>`
 
-Draws a 2D :ref:`MultiMesh<class_MultiMesh>` on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_multimesh()<class_CanvasItem_method_draw_multimesh>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上，繪製一個 2D :ref:`MultiMesh<class_MultiMesh>`\ 。另見 :ref:`CanvasItem.draw_multimesh()<class_CanvasItem_method_draw_multimesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6569,7 +6569,7 @@ Draws a 2D :ref:`MultiMesh<class_MultiMesh>` on the :ref:`CanvasItem<class_Canva
 
 |void| **canvas_item_add_nine_patch**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, source\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, topleft\: :ref:`Vector2<class_Vector2>`, bottomright\: :ref:`Vector2<class_Vector2>`, x_axis_mode\: :ref:`NinePatchAxisMode<enum_RenderingServer_NinePatchAxisMode>` = 0, y_axis_mode\: :ref:`NinePatchAxisMode<enum_RenderingServer_NinePatchAxisMode>` = 0, draw_center\: :ref:`bool<class_bool>` = true, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_nine_patch>`
 
-Draws a nine-patch rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上，繪製一個九宮格矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -6581,7 +6581,7 @@ Draws a nine-patch rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed 
 
 |void| **canvas_item_add_particles**\ (\ item\: :ref:`RID<class_RID>`, particles\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_particles>`
 
-Draws particles on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上繪製粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -6607,7 +6607,7 @@ Draws a 2D polygon on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the 
 
 |void| **canvas_item_add_polyline**\ (\ item\: :ref:`RID<class_RID>`, points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_polyline>`
 
-Draws a 2D polyline on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_polyline()<class_CanvasItem_method_draw_polyline>` and :ref:`CanvasItem.draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上，繪製一個 2D 折線。另見 :ref:`CanvasItem.draw_polyline()<class_CanvasItem_method_draw_polyline>` 和 :ref:`CanvasItem.draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6619,7 +6619,7 @@ Draws a 2D polyline on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the
 
 |void| **canvas_item_add_primitive**\ (\ item\: :ref:`RID<class_RID>`, points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_primitive>`
 
-Draws a 2D primitive on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_primitive()<class_CanvasItem_method_draw_primitive>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上繪製一個 2D 圖元。另見 :ref:`CanvasItem.draw_primitive()<class_CanvasItem_method_draw_primitive>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6631,7 +6631,7 @@ Draws a 2D primitive on the :ref:`CanvasItem<class_CanvasItem>` pointed to by th
 
 |void| **canvas_item_add_rect**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, color\: :ref:`Color<class_Color>`, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_rect>`
 
-Draws a rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上繪製一個矩形。另見 :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6643,7 +6643,7 @@ Draws a rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the `
 
 |void| **canvas_item_add_set_transform**\ (\ item\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_set_transform>`
 
-Sets a :ref:`Transform2D<class_Transform2D>` that will be used to transform subsequent canvas item commands.
+設定將被用於變換後續畫布項命令的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6655,7 +6655,7 @@ Sets a :ref:`Transform2D<class_Transform2D>` that will be used to transform subs
 
 |void| **canvas_item_add_texture_rect**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, tile\: :ref:`bool<class_bool>` = false, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_texture_rect>`
 
-Draws a 2D textured rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>` and :ref:`Texture2D.draw_rect()<class_Texture2D_method_draw_rect>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上繪製一個有紋理的 2D 矩形。另見 :ref:`CanvasItem.draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>` 和 :ref:`Texture2D.draw_rect()<class_Texture2D_method_draw_rect>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6667,7 +6667,7 @@ Draws a 2D textured rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed
 
 |void| **canvas_item_add_texture_rect_region**\ (\ item\: :ref:`RID<class_RID>`, rect\: :ref:`Rect2<class_Rect2>`, texture\: :ref:`RID<class_RID>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_texture_rect_region>`
 
-Draws the specified region of a 2D textured rectangle on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>` and :ref:`Texture2D.draw_rect_region()<class_Texture2D_method_draw_rect_region>`.
+在 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上繪製一個有紋理 2D 矩形的特定區域。另見 :ref:`CanvasItem.draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>` 和 :ref:`Texture2D.draw_rect_region()<class_Texture2D_method_draw_rect_region>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6705,7 +6705,7 @@ Attaches a skeleton to the :ref:`CanvasItem<class_CanvasItem>`. Removes the prev
 
 |void| **canvas_item_clear**\ (\ item\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_clear>`
 
-Clears the :ref:`CanvasItem<class_CanvasItem>` and removes all commands in it.
+清空 :ref:`CanvasItem<class_CanvasItem>` 並刪除其中的所有命令。
 
 .. rst-class:: classref-item-separator
 
@@ -6717,11 +6717,11 @@ Clears the :ref:`CanvasItem<class_CanvasItem>` and removes all commands in it.
 
 :ref:`RID<class_RID>` **canvas_item_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_create>`
 
-Creates a new CanvasItem instance and returns its :ref:`RID<class_RID>`. It can be accessed with the RID that is returned. This RID will be used in all ``canvas_item_*`` RenderingServer functions.
+新建 CanvasItem 實例並返回其 :ref:`RID<class_RID>`\ 。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``canvas_item_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`CanvasItem<class_CanvasItem>`.
+\ **注意：**\ 等價節點為 :ref:`CanvasItem<class_CanvasItem>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6785,9 +6785,9 @@ This is useful when moving a canvas item to a new location, to give an instantan
 
 |void| **canvas_item_set_canvas_group_mode**\ (\ item\: :ref:`RID<class_RID>`, mode\: :ref:`CanvasGroupMode<enum_RenderingServer_CanvasGroupMode>`, clear_margin\: :ref:`float<class_float>` = 5.0, fit_empty\: :ref:`bool<class_bool>` = false, fit_margin\: :ref:`float<class_float>` = 0.0, blur_mipmaps\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_canvas_group_mode>`
 
-Sets the canvas group mode used during 2D rendering for the canvas item specified by the ``item`` RID. For faster but more limited clipping, use :ref:`canvas_item_set_clip()<class_RenderingServer_method_canvas_item_set_clip>` instead.
+設定對畫布項進行 2D 算繪時使用的畫布群組模式，畫布項由 ``item`` RID 指定。要使用更快速但局限性更大的裁剪，請改用 :ref:`canvas_item_set_clip()<class_RenderingServer_method_canvas_item_set_clip>`\ 。
 
-\ **Note:** The equivalent node functionality is found in :ref:`CanvasGroup<class_CanvasGroup>` and :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>`.
+\ **注意：**\ 等價的節點功能可以在 :ref:`CanvasGroup<class_CanvasGroup>` 和 :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` 中找到。
 
 .. rst-class:: classref-item-separator
 
@@ -6799,9 +6799,9 @@ Sets the canvas group mode used during 2D rendering for the canvas item specifie
 
 |void| **canvas_item_set_clip**\ (\ item\: :ref:`RID<class_RID>`, clip\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_clip>`
 
-If ``clip`` is ``true``, makes the canvas item specified by the ``item`` RID not draw anything outside of its rect's coordinates. This clipping is fast, but works only with axis-aligned rectangles. This means that rotation is ignored by the clipping rectangle. For more advanced clipping shapes, use :ref:`canvas_item_set_canvas_group_mode()<class_RenderingServer_method_canvas_item_set_canvas_group_mode>` instead.
+如果 ``clip`` 為 ``true``\ ，則畫布項不會在其矩形座標之外繪製內容，畫布項由 ``item`` RID 指定。這種裁剪很快，但只能用於軸對齊的矩形。也就是說裁剪矩形會忽略旋轉。更高階的裁剪形狀請改用 :ref:`canvas_item_set_canvas_group_mode()<class_RenderingServer_method_canvas_item_set_canvas_group_mode>`\ 。
 
-\ **Note:** The equivalent node functionality is found in :ref:`Label.clip_text<class_Label_property_clip_text>`, :ref:`RichTextLabel<class_RichTextLabel>` (always enabled) and more.
+\ **注意：**\ 等價的節點功能可以在 :ref:`Label.clip_text<class_Label_property_clip_text>`\ 、\ :ref:`RichTextLabel<class_RichTextLabel>`\ （始終啟用）等處找到。
 
 .. rst-class:: classref-item-separator
 
@@ -6813,7 +6813,7 @@ If ``clip`` is ``true``, makes the canvas item specified by the ``item`` RID not
 
 |void| **canvas_item_set_copy_to_backbuffer**\ (\ item\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_copy_to_backbuffer>`
 
-Sets the :ref:`CanvasItem<class_CanvasItem>` to copy a rect to the backbuffer.
+設定 :ref:`CanvasItem<class_CanvasItem>` 以將矩形複製到背景緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -6825,7 +6825,7 @@ Sets the :ref:`CanvasItem<class_CanvasItem>` to copy a rect to the backbuffer.
 
 |void| **canvas_item_set_custom_rect**\ (\ item\: :ref:`RID<class_RID>`, use_custom_rect\: :ref:`bool<class_bool>`, rect\: :ref:`Rect2<class_Rect2>` = Rect2(0, 0, 0, 0)\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_custom_rect>`
 
-If ``use_custom_rect`` is ``true``, sets the custom visibility rectangle (used for culling) to ``rect`` for the canvas item specified by ``item``. Setting a custom visibility rect can reduce CPU load when drawing lots of 2D instances. If ``use_custom_rect`` is ``false``, automatically computes a visibility rectangle based on the canvas item's draw commands.
+如果 ``use_custom_rect`` 為 ``true``\ ，則將畫布項 ``item`` 的自訂可見性框設定為 ``rect``\ （用於剔除）。設定自訂可見性框能夠在繪製大量 2D 實例時降低 CPU 負載。如果 ``use_custom_rect`` 為 ``false``\ ，則會根據畫布項的繪製命令自動計算可見性框。
 
 .. rst-class:: classref-item-separator
 
@@ -6837,7 +6837,7 @@ If ``use_custom_rect`` is ``true``, sets the custom visibility rectangle (used f
 
 |void| **canvas_item_set_default_texture_filter**\ (\ item\: :ref:`RID<class_RID>`, filter\: :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_default_texture_filter>`
 
-Sets the default texture filter mode for the canvas item specified by the ``item`` RID. Equivalent to :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>`.
+設定 RID 為 ``item`` 的畫布項的預設紋理篩選模式。等價於 :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6849,7 +6849,7 @@ Sets the default texture filter mode for the canvas item specified by the ``item
 
 |void| **canvas_item_set_default_texture_repeat**\ (\ item\: :ref:`RID<class_RID>`, repeat\: :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_default_texture_repeat>`
 
-Sets the default texture repeat mode for the canvas item specified by the ``item`` RID. Equivalent to :ref:`CanvasItem.texture_repeat<class_CanvasItem_property_texture_repeat>`.
+設定 RID 為 ``item`` 的畫布項的預設紋理重複模式。等價於 :ref:`CanvasItem.texture_repeat<class_CanvasItem_property_texture_repeat>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6861,7 +6861,7 @@ Sets the default texture repeat mode for the canvas item specified by the ``item
 
 |void| **canvas_item_set_distance_field_mode**\ (\ item\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_distance_field_mode>`
 
-If ``enabled`` is ``true``, enables multichannel signed distance field rendering mode for the canvas item specified by the ``item`` RID. This is meant to be used for font rendering, or with specially generated images using `msdfgen <https://github.com/Chlumsky/msdfgen>`__.
+如果 ``enabled`` 為 ``true``\ ，則為 RID 為 ``item`` 的畫布項啟用多通道帶符號距離場算繪模式。旨在用於字形算繪，或針對使用 `msdfgen <https://github.com/Chlumsky/msdfgen>`__ 生成的圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -6873,7 +6873,7 @@ If ``enabled`` is ``true``, enables multichannel signed distance field rendering
 
 |void| **canvas_item_set_draw_behind_parent**\ (\ item\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_draw_behind_parent>`
 
-If ``enabled`` is ``true``, draws the canvas item specified by the ``item`` RID behind its parent. Equivalent to :ref:`CanvasItem.show_behind_parent<class_CanvasItem_property_show_behind_parent>`.
+如果 ``enabled`` 為 ``true``\ ，則為 RID 為 ``item`` 的畫布項繪製在父級之後。等價於 :ref:`CanvasItem.show_behind_parent<class_CanvasItem_property_show_behind_parent>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6885,7 +6885,7 @@ If ``enabled`` is ``true``, draws the canvas item specified by the ``item`` RID 
 
 |void| **canvas_item_set_draw_index**\ (\ item\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_draw_index>`
 
-Sets the index for the :ref:`CanvasItem<class_CanvasItem>`.
+設定 :ref:`CanvasItem<class_CanvasItem>` 的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -6921,7 +6921,7 @@ If ``interpolated`` is ``true``, turns on physics interpolation for the canvas i
 
 |void| **canvas_item_set_light_mask**\ (\ item\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_light_mask>`
 
-Sets the light ``mask`` for the canvas item specified by the ``item`` RID. Equivalent to :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>`.
+設定 RID 為 ``item`` 的畫布項的燈光遮罩 ``mask``\ 。等價於 :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6933,7 +6933,7 @@ Sets the light ``mask`` for the canvas item specified by the ``item`` RID. Equiv
 
 |void| **canvas_item_set_material**\ (\ item\: :ref:`RID<class_RID>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_material>`
 
-Sets a new ``material`` to the canvas item specified by the ``item`` RID. Equivalent to :ref:`CanvasItem.material<class_CanvasItem_property_material>`.
+設定 RID 為 ``item`` 的畫布項的新材質 ``material``\ 。等價於 :ref:`CanvasItem.material<class_CanvasItem_property_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6945,7 +6945,7 @@ Sets a new ``material`` to the canvas item specified by the ``item`` RID. Equiva
 
 |void| **canvas_item_set_modulate**\ (\ item\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_modulate>`
 
-Multiplies the color of the canvas item specified by the ``item`` RID, while affecting its children. See also :ref:`canvas_item_set_self_modulate()<class_RenderingServer_method_canvas_item_set_self_modulate>`. Equivalent to :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`.
+將 RID 為 ``item`` 的畫布項的顏色與其相乘，子項也受影響。另見 :ref:`canvas_item_set_self_modulate()<class_RenderingServer_method_canvas_item_set_self_modulate>`\ 。等價於 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6957,7 +6957,7 @@ Multiplies the color of the canvas item specified by the ``item`` RID, while aff
 
 |void| **canvas_item_set_parent**\ (\ item\: :ref:`RID<class_RID>`, parent\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_parent>`
 
-Sets a parent :ref:`CanvasItem<class_CanvasItem>` to the :ref:`CanvasItem<class_CanvasItem>`. The item will inherit transform, modulation and visibility from its parent, like :ref:`CanvasItem<class_CanvasItem>` nodes in the scene tree.
+為 :ref:`CanvasItem<class_CanvasItem>` 設定父級 :ref:`CanvasItem<class_CanvasItem>`\ 。該專案會從父級繼承變換、調變、可見性，和場景樹中的 :ref:`CanvasItem<class_CanvasItem>` 節點一樣。
 
 .. rst-class:: classref-item-separator
 
@@ -6969,7 +6969,7 @@ Sets a parent :ref:`CanvasItem<class_CanvasItem>` to the :ref:`CanvasItem<class_
 
 |void| **canvas_item_set_self_modulate**\ (\ item\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_self_modulate>`
 
-Multiplies the color of the canvas item specified by the ``item`` RID, without affecting its children. See also :ref:`canvas_item_set_modulate()<class_RenderingServer_method_canvas_item_set_modulate>`. Equivalent to :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>`.
+將 RID 為 ``item`` 的畫布項的顏色與其相乘，子項不受影響。另見 :ref:`canvas_item_set_modulate()<class_RenderingServer_method_canvas_item_set_modulate>`\ 。等價於 :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6981,7 +6981,7 @@ Multiplies the color of the canvas item specified by the ``item`` RID, without a
 
 |void| **canvas_item_set_sort_children_by_y**\ (\ item\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_sort_children_by_y>`
 
-If ``enabled`` is ``true``, child nodes with the lowest Y position are drawn before those with a higher Y position. Y-sorting only affects children that inherit from the canvas item specified by the ``item`` RID, not the canvas item itself. Equivalent to :ref:`CanvasItem.y_sort_enabled<class_CanvasItem_property_y_sort_enabled>`.
+如果 ``enabled`` 為 ``true``\ ，則會在繪製 Y 位置最低的子節點之後再繪製 Y 位置較高的子節點。Y 排序僅影響繼承自該畫布項的子級，不影響畫布項自身，該畫布項由 ``item`` RID 指定。等價於 :ref:`CanvasItem.y_sort_enabled<class_CanvasItem_property_y_sort_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6993,7 +6993,7 @@ If ``enabled`` is ``true``, child nodes with the lowest Y position are drawn bef
 
 |void| **canvas_item_set_transform**\ (\ item\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_transform>`
 
-Sets the ``transform`` of the canvas item specified by the ``item`` RID. This affects where and how the item will be drawn. Child canvas items' transforms are multiplied by their parent's transform. Equivalent to :ref:`Node2D.transform<class_Node2D_property_transform>`.
+將 RID 為 ``item`` 的畫布項的變換設定為 ``transform``\ 。會影響該畫布項繪製的位置和方法。子級畫布項的變換會與父級變換相乘。等價於 :ref:`Node2D.transform<class_Node2D_property_transform>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7005,7 +7005,7 @@ Sets the ``transform`` of the canvas item specified by the ``item`` RID. This af
 
 |void| **canvas_item_set_use_parent_material**\ (\ item\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_use_parent_material>`
 
-Sets if the :ref:`CanvasItem<class_CanvasItem>` uses its parent's material.
+設定 :ref:`CanvasItem<class_CanvasItem>` 是否使用其父級的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -7017,7 +7017,7 @@ Sets if the :ref:`CanvasItem<class_CanvasItem>` uses its parent's material.
 
 |void| **canvas_item_set_visibility_layer**\ (\ item\: :ref:`RID<class_RID>`, visibility_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_visibility_layer>`
 
-Sets the rendering visibility layer associated with this :ref:`CanvasItem<class_CanvasItem>`. Only :ref:`Viewport<class_Viewport>` nodes with a matching rendering mask will render this :ref:`CanvasItem<class_CanvasItem>`.
+設定與這個 :ref:`CanvasItem<class_CanvasItem>` 關聯的算繪可見性層。只有算繪遮罩與此配對的 :ref:`Viewport<class_Viewport>` 節點才會算繪這個 :ref:`CanvasItem<class_CanvasItem>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7029,9 +7029,9 @@ Sets the rendering visibility layer associated with this :ref:`CanvasItem<class_
 
 |void| **canvas_item_set_visibility_notifier**\ (\ item\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, area\: :ref:`Rect2<class_Rect2>`, enter_callable\: :ref:`Callable<class_Callable>`, exit_callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_visibility_notifier>`
 
-Sets the given :ref:`CanvasItem<class_CanvasItem>` as visibility notifier. ``area`` defines the area of detecting visibility. ``enter_callable`` is called when the :ref:`CanvasItem<class_CanvasItem>` enters the screen, ``exit_callable`` is called when the :ref:`CanvasItem<class_CanvasItem>` exits the screen. If ``enable`` is ``false``, the item will no longer function as notifier.
+將給定的 :ref:`CanvasItem<class_CanvasItem>` 設定為可見性通知器。\ ``area`` 定義可見性檢查的區域。\ :ref:`CanvasItem<class_CanvasItem>` 進入螢幕時會呼叫 ``enter_callable``\ ，\ :ref:`CanvasItem<class_CanvasItem>` 退出螢幕時會呼叫 ``exit_callable``\ 。如果 ``enable`` 為 ``false``\ ，則該專案將不再作為通知器。
 
-This method can be used to manually mimic :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`.
+這個方法可用於手動模仿 :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7043,7 +7043,7 @@ This method can be used to manually mimic :ref:`VisibleOnScreenNotifier2D<class_
 
 |void| **canvas_item_set_visible**\ (\ item\: :ref:`RID<class_RID>`, visible\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_visible>`
 
-Sets the visibility of the :ref:`CanvasItem<class_CanvasItem>`.
+設定 :ref:`CanvasItem<class_CanvasItem>` 的可見性。
 
 .. rst-class:: classref-item-separator
 
@@ -7055,7 +7055,7 @@ Sets the visibility of the :ref:`CanvasItem<class_CanvasItem>`.
 
 |void| **canvas_item_set_z_as_relative_to_parent**\ (\ item\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_z_as_relative_to_parent>`
 
-If this is enabled, the Z index of the parent will be added to the children's Z index.
+如果啟用此選項，則父項的 Z 索引將新增到子項的 Z 索引中。
 
 .. rst-class:: classref-item-separator
 
@@ -7067,7 +7067,7 @@ If this is enabled, the Z index of the parent will be added to the children's Z 
 
 |void| **canvas_item_set_z_index**\ (\ item\: :ref:`RID<class_RID>`, z_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_set_z_index>`
 
-Sets the :ref:`CanvasItem<class_CanvasItem>`'s Z index, i.e. its draw order (lower indexes are drawn first).
+設定 :ref:`CanvasItem<class_CanvasItem>` 的 Z 索引，即它的繪製順序（首先繪製數值較低的索引）。
 
 .. rst-class:: classref-item-separator
 
@@ -7093,7 +7093,7 @@ This allows transforming a canvas item without creating a "glitch" in the interp
 
 |void| **canvas_light_attach_to_canvas**\ (\ light\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_attach_to_canvas>`
 
-Attaches the canvas light to the canvas. Removes it from its previous canvas.
+將畫布燈連接到畫布上，並將其從以前的畫布中取出。
 
 .. rst-class:: classref-item-separator
 
@@ -7105,11 +7105,11 @@ Attaches the canvas light to the canvas. Removes it from its previous canvas.
 
 :ref:`RID<class_RID>` **canvas_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_create>`
 
-Creates a canvas light and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``canvas_light_*`` RenderingServer functions.
+建立畫布燈光並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``canvas_light_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`Light2D<class_Light2D>`.
+\ **注意：**\ 等價節點為 :ref:`Light2D<class_Light2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7121,7 +7121,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **canvas_light_occluder_attach_to_canvas**\ (\ occluder\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_attach_to_canvas>`
 
-Attaches a light occluder to the canvas. Removes it from its previous canvas.
+將光遮擋物新增到畫布上,並將其從之前的畫布中移除。
 
 .. rst-class:: classref-item-separator
 
@@ -7133,11 +7133,11 @@ Attaches a light occluder to the canvas. Removes it from its previous canvas.
 
 :ref:`RID<class_RID>` **canvas_light_occluder_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_create>`
 
-Creates a light occluder and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``canvas_light_occluder_*`` RenderingServer functions.
+建立光線遮擋器並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``canvas_light_occluder_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`LightOccluder2D<class_LightOccluder2D>`.
+\ **注意：**\ 等價節點為 :ref:`LightOccluder2D<class_LightOccluder2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7177,7 +7177,7 @@ This is useful when moving an occluder to a new location, to give an instantaneo
 
 |void| **canvas_light_occluder_set_enabled**\ (\ occluder\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_enabled>`
 
-Enables or disables light occluder.
+啟用或禁用遮光器。
 
 .. rst-class:: classref-item-separator
 
@@ -7201,7 +7201,7 @@ If ``interpolated`` is ``true``, turns on physics interpolation for the light oc
 
 |void| **canvas_light_occluder_set_light_mask**\ (\ occluder\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_light_mask>`
 
-The light mask. See :ref:`LightOccluder2D<class_LightOccluder2D>` for more information on light masks.
+光線遮罩。詳情請參閱 :ref:`LightOccluder2D<class_LightOccluder2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7213,7 +7213,7 @@ The light mask. See :ref:`LightOccluder2D<class_LightOccluder2D>` for more infor
 
 |void| **canvas_light_occluder_set_polygon**\ (\ occluder\: :ref:`RID<class_RID>`, polygon\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_polygon>`
 
-Sets a light occluder's polygon.
+設定光遮擋物的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -7225,7 +7225,7 @@ Sets a light occluder's polygon.
 
 |void| **canvas_light_occluder_set_transform**\ (\ occluder\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_occluder_set_transform>`
 
-Sets a light occluder's :ref:`Transform2D<class_Transform2D>`.
+設定光遮擋物的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7277,7 +7277,7 @@ Sets the blend mode for the given canvas light to ``mode``. Equivalent to :ref:`
 
 |void| **canvas_light_set_color**\ (\ light\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_color>`
 
-Sets the color for a light.
+設定燈光的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -7289,7 +7289,7 @@ Sets the color for a light.
 
 |void| **canvas_light_set_enabled**\ (\ light\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_enabled>`
 
-Enables or disables a canvas light.
+啟用或禁用畫布燈。
 
 .. rst-class:: classref-item-separator
 
@@ -7301,7 +7301,7 @@ Enables or disables a canvas light.
 
 |void| **canvas_light_set_energy**\ (\ light\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_energy>`
 
-Sets a canvas light's energy.
+設定畫布燈的能量。
 
 .. rst-class:: classref-item-separator
 
@@ -7313,7 +7313,7 @@ Sets a canvas light's energy.
 
 |void| **canvas_light_set_height**\ (\ light\: :ref:`RID<class_RID>`, height\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_height>`
 
-Sets a canvas light's height.
+設定畫布燈的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -7337,7 +7337,7 @@ If ``interpolated`` is ``true``, turns on physics interpolation for the canvas l
 
 |void| **canvas_light_set_item_cull_mask**\ (\ light\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_item_cull_mask>`
 
-The light mask. See :ref:`LightOccluder2D<class_LightOccluder2D>` for more information on light masks.
+光線遮罩。詳情請參閱 :ref:`LightOccluder2D<class_LightOccluder2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7349,7 +7349,7 @@ The light mask. See :ref:`LightOccluder2D<class_LightOccluder2D>` for more infor
 
 |void| **canvas_light_set_item_shadow_cull_mask**\ (\ light\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_item_shadow_cull_mask>`
 
-The binary mask used to determine which layers this canvas light's shadows affects. See :ref:`LightOccluder2D<class_LightOccluder2D>` for more information on light masks.
+用於確定此畫布燈光陰影影響哪些圖層的二進位蒙版。有關光遮罩的更多資訊，請參閱 :ref:`LightOccluder2D<class_LightOccluder2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7361,7 +7361,7 @@ The binary mask used to determine which layers this canvas light's shadows affec
 
 |void| **canvas_light_set_layer_range**\ (\ light\: :ref:`RID<class_RID>`, min_layer\: :ref:`int<class_int>`, max_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_layer_range>`
 
-The layer range that gets rendered with this light.
+使用此燈光算繪的圖層範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -7385,7 +7385,7 @@ Sets the mode of the canvas light.
 
 |void| **canvas_light_set_shadow_color**\ (\ light\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_shadow_color>`
 
-Sets the color of the canvas light's shadow.
+設定畫布燈的陰影顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -7397,7 +7397,7 @@ Sets the color of the canvas light's shadow.
 
 |void| **canvas_light_set_shadow_enabled**\ (\ light\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_shadow_enabled>`
 
-Enables or disables the canvas light's shadow.
+啟用或禁用畫布燈的陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -7421,7 +7421,7 @@ Sets the canvas light's shadow's filter.
 
 |void| **canvas_light_set_shadow_smooth**\ (\ light\: :ref:`RID<class_RID>`, smooth\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_shadow_smooth>`
 
-Smoothens the shadow. The lower, the smoother.
+使陰影變得平滑。數值越低越光滑。
 
 .. rst-class:: classref-item-separator
 
@@ -7433,7 +7433,7 @@ Smoothens the shadow. The lower, the smoother.
 
 |void| **canvas_light_set_texture**\ (\ light\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_texture>`
 
-Sets the texture to be used by a :ref:`PointLight2D<class_PointLight2D>`. Equivalent to :ref:`PointLight2D.texture<class_PointLight2D_property_texture>`.
+設定 :ref:`PointLight2D<class_PointLight2D>` 所使用的紋理。相當於 :ref:`PointLight2D.texture<class_PointLight2D_property_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7445,7 +7445,7 @@ Sets the texture to be used by a :ref:`PointLight2D<class_PointLight2D>`. Equiva
 
 |void| **canvas_light_set_texture_offset**\ (\ light\: :ref:`RID<class_RID>`, offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_texture_offset>`
 
-Sets the offset of a :ref:`PointLight2D<class_PointLight2D>`'s texture. Equivalent to :ref:`PointLight2D.offset<class_PointLight2D_property_offset>`.
+設定 :ref:`PointLight2D<class_PointLight2D>` 紋理的偏移量。相當於 :ref:`PointLight2D.offset<class_PointLight2D_property_offset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7457,7 +7457,7 @@ Sets the offset of a :ref:`PointLight2D<class_PointLight2D>`'s texture. Equivale
 
 |void| **canvas_light_set_texture_scale**\ (\ light\: :ref:`RID<class_RID>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_texture_scale>`
 
-Sets the scale factor of a :ref:`PointLight2D<class_PointLight2D>`'s texture. Equivalent to :ref:`PointLight2D.texture_scale<class_PointLight2D_property_texture_scale>`.
+設定 :ref:`PointLight2D<class_PointLight2D>` 紋理的縮放係數。相當於 :ref:`PointLight2D.texture_scale<class_PointLight2D_property_texture_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7469,7 +7469,7 @@ Sets the scale factor of a :ref:`PointLight2D<class_PointLight2D>`'s texture. Eq
 
 |void| **canvas_light_set_transform**\ (\ light\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_transform>`
 
-Sets the canvas light's :ref:`Transform2D<class_Transform2D>`.
+設定畫布燈的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7481,7 +7481,7 @@ Sets the canvas light's :ref:`Transform2D<class_Transform2D>`.
 
 |void| **canvas_light_set_z_range**\ (\ light\: :ref:`RID<class_RID>`, min_z\: :ref:`int<class_int>`, max_z\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_light_set_z_range>`
 
-Sets the Z range of objects that will be affected by this light. Equivalent to :ref:`Light2D.range_z_min<class_Light2D_property_range_z_min>` and :ref:`Light2D.range_z_max<class_Light2D_property_range_z_max>`.
+設定將受此光影響的對象的 Z 範圍。相當於 :ref:`Light2D.range_z_min<class_Light2D_property_range_z_min>` 和 :ref:`Light2D.range_z_max<class_Light2D_property_range_z_max>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7507,11 +7507,11 @@ This allows transforming a light without creating a "glitch" in the interpolatio
 
 :ref:`RID<class_RID>` **canvas_occluder_polygon_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_canvas_occluder_polygon_create>`
 
-Creates a new light occluder polygon and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``canvas_occluder_polygon_*`` RenderingServer functions.
+新建光線遮擋多邊形並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``canvas_occluder_polygon_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`.
+\ **注意：**\ 等價節點為 :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7535,7 +7535,7 @@ Sets an occluder polygon's cull mode.
 
 |void| **canvas_occluder_polygon_set_shape**\ (\ occluder_polygon\: :ref:`RID<class_RID>`, shape\: :ref:`PackedVector2Array<class_PackedVector2Array>`, closed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_occluder_polygon_set_shape>`
 
-Sets the shape of the occluder polygon.
+設定遮擋多邊形的形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -7587,7 +7587,7 @@ A copy of the canvas item will be drawn with a local offset of the ``repeat_size
 
 |void| **canvas_set_modulate**\ (\ canvas\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_set_modulate>`
 
-Modulates all colors in the given canvas.
+調變給定畫布中的所有顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -7599,7 +7599,7 @@ Modulates all colors in the given canvas.
 
 |void| **canvas_set_shadow_texture_size**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_set_shadow_texture_size>`
 
-Sets the :ref:`ProjectSettings.rendering/2d/shadow_atlas/size<class_ProjectSettings_property_rendering/2d/shadow_atlas/size>` to use for :ref:`Light2D<class_Light2D>` shadow rendering (in pixels). The value is rounded up to the nearest power of 2.
+設定 :ref:`Light2D<class_Light2D>` 陰影算繪時使用的 :ref:`ProjectSettings.rendering/2d/shadow_atlas/size<class_ProjectSettings_property_rendering/2d/shadow_atlas/size>`\ （單位為圖元）。該值會向上取整到最接近的 2 的冪。
 
 .. rst-class:: classref-item-separator
 
@@ -7611,11 +7611,11 @@ Sets the :ref:`ProjectSettings.rendering/2d/shadow_atlas/size<class_ProjectSetti
 
 :ref:`RID<class_RID>` **canvas_texture_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_canvas_texture_create>`
 
-Creates a canvas texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``canvas_texture_*`` RenderingServer functions.
+建立畫布紋理並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``canvas_texture_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method. See also :ref:`texture_2d_create()<class_RenderingServer_method_texture_2d_create>`.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。另見 :ref:`texture_2d_create()<class_RenderingServer_method_texture_2d_create>`\ 。
 
-\ **Note:** The equivalent resource is :ref:`CanvasTexture<class_CanvasTexture>` and is only meant to be used in 2D rendering, not 3D.
+\ **注意：**\ 等價資源為 :ref:`CanvasTexture<class_CanvasTexture>`\ ，應該僅用於 2D 算繪，不用於 3D。
 
 .. rst-class:: classref-item-separator
 
@@ -7627,7 +7627,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **canvas_texture_set_channel**\ (\ canvas_texture\: :ref:`RID<class_RID>`, channel\: :ref:`CanvasTextureChannel<enum_RenderingServer_CanvasTextureChannel>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_texture_set_channel>`
 
-Sets the ``channel``'s ``texture`` for the canvas texture specified by the ``canvas_texture`` RID. Equivalent to :ref:`CanvasTexture.diffuse_texture<class_CanvasTexture_property_diffuse_texture>`, :ref:`CanvasTexture.normal_texture<class_CanvasTexture_property_normal_texture>` and :ref:`CanvasTexture.specular_texture<class_CanvasTexture_property_specular_texture>`.
+為畫布紋理設定 ``channel`` 通道的紋理 ``texture``\ ，該畫布紋理由 RID ``canvas_texture`` 指定。等價於 :ref:`CanvasTexture.diffuse_texture<class_CanvasTexture_property_diffuse_texture>`\ 、\ :ref:`CanvasTexture.normal_texture<class_CanvasTexture_property_normal_texture>` 和 :ref:`CanvasTexture.specular_texture<class_CanvasTexture_property_specular_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7639,7 +7639,7 @@ Sets the ``channel``'s ``texture`` for the canvas texture specified by the ``can
 
 |void| **canvas_texture_set_shading_parameters**\ (\ canvas_texture\: :ref:`RID<class_RID>`, base_color\: :ref:`Color<class_Color>`, shininess\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_texture_set_shading_parameters>`
 
-Sets the ``base_color`` and ``shininess`` to use for the canvas texture specified by the ``canvas_texture`` RID. Equivalent to :ref:`CanvasTexture.specular_color<class_CanvasTexture_property_specular_color>` and :ref:`CanvasTexture.specular_shininess<class_CanvasTexture_property_specular_shininess>`.
+為畫布紋理設定 ``base_color`` 和 ``shininess``\ ，該畫布紋理由 RID ``canvas_texture`` 指定。等價於 :ref:`CanvasTexture.specular_color<class_CanvasTexture_property_specular_color>` 和 :ref:`CanvasTexture.specular_shininess<class_CanvasTexture_property_specular_shininess>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7651,7 +7651,7 @@ Sets the ``base_color`` and ``shininess`` to use for the canvas texture specifie
 
 |void| **canvas_texture_set_texture_filter**\ (\ canvas_texture\: :ref:`RID<class_RID>`, filter\: :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_texture_set_texture_filter>`
 
-Sets the texture ``filter`` mode to use for the canvas texture specified by the ``canvas_texture`` RID.
+為畫布紋理設定紋理篩選模式 ``filter``\ ，該畫布紋理由 RID ``canvas_texture`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -7663,7 +7663,7 @@ Sets the texture ``filter`` mode to use for the canvas texture specified by the 
 
 |void| **canvas_texture_set_texture_repeat**\ (\ canvas_texture\: :ref:`RID<class_RID>`, repeat\: :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>`\ ) :ref:`🔗<class_RenderingServer_method_canvas_texture_set_texture_repeat>`
 
-Sets the texture ``repeat`` mode to use for the canvas texture specified by the ``canvas_texture`` RID.
+為畫布紋理設定紋理重複模式 ``repeat``\ ，該畫布紋理由 RID ``canvas_texture`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -7779,13 +7779,13 @@ Returns the bounding rectangle for a canvas item in local space, as calculated b
 
 :ref:`RID<class_RID>` **decal_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_decal_create>`
 
-Creates a decal and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``decal_*`` RenderingServer functions.
+建立裝飾並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``decal_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach this decal to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個裝飾放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
-\ **Note:** The equivalent node is :ref:`Decal<class_Decal>`.
+\ **注意：**\ 等價節點為 :ref:`Decal<class_Decal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7797,7 +7797,7 @@ To place in a scene, attach this decal to an instance using :ref:`instance_set_b
 
 |void| **decal_set_albedo_mix**\ (\ decal\: :ref:`RID<class_RID>`, albedo_mix\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_albedo_mix>`
 
-Sets the ``albedo_mix`` in the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.albedo_mix<class_Decal_property_albedo_mix>`.
+為裝飾設定 ``albedo_mix``\ ，該裝飾由 RID ``decal`` 指定。等價於 :ref:`Decal.albedo_mix<class_Decal_property_albedo_mix>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7809,7 +7809,7 @@ Sets the ``albedo_mix`` in the decal specified by the ``decal`` RID. Equivalent 
 
 |void| **decal_set_cull_mask**\ (\ decal\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_cull_mask>`
 
-Sets the cull ``mask`` in the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.cull_mask<class_Decal_property_cull_mask>`.
+為裝飾設定剔除遮罩 ``mask``\ ，該裝飾由 RID ``decal`` 指定。等價於 :ref:`Decal.cull_mask<class_Decal_property_cull_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7821,7 +7821,7 @@ Sets the cull ``mask`` in the decal specified by the ``decal`` RID. Equivalent t
 
 |void| **decal_set_distance_fade**\ (\ decal\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`, begin\: :ref:`float<class_float>`, length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_distance_fade>`
 
-Sets the distance fade parameters in the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`, :ref:`Decal.distance_fade_begin<class_Decal_property_distance_fade_begin>` and :ref:`Decal.distance_fade_length<class_Decal_property_distance_fade_length>`.
+為裝飾設定距離淡出參數，該裝飾由 RID ``decal`` 指定。等價於 :ref:`Decal.distance_fade_enabled<class_Decal_property_distance_fade_enabled>`\ 、\ :ref:`Decal.distance_fade_begin<class_Decal_property_distance_fade_begin>` 和 :ref:`Decal.distance_fade_length<class_Decal_property_distance_fade_length>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7833,7 +7833,7 @@ Sets the distance fade parameters in the decal specified by the ``decal`` RID. E
 
 |void| **decal_set_emission_energy**\ (\ decal\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_emission_energy>`
 
-Sets the emission ``energy`` in the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.emission_energy<class_Decal_property_emission_energy>`.
+為裝飾設定自發光能量 ``energy``\ ，該裝飾由 RID ``decal`` 指定。等價於 :ref:`Decal.emission_energy<class_Decal_property_emission_energy>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7845,7 +7845,7 @@ Sets the emission ``energy`` in the decal specified by the ``decal`` RID. Equiva
 
 |void| **decal_set_fade**\ (\ decal\: :ref:`RID<class_RID>`, above\: :ref:`float<class_float>`, below\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_fade>`
 
-Sets the upper fade (``above``) and lower fade (``below``) in the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.upper_fade<class_Decal_property_upper_fade>` and :ref:`Decal.lower_fade<class_Decal_property_lower_fade>`.
+為裝飾設定上側淡出（\ ``above``\ ）和下側淡出（\ ``below``\ ），該裝飾由 RID ``decal`` 指定。等價於 :ref:`Decal.upper_fade<class_Decal_property_upper_fade>` 和 :ref:`Decal.lower_fade<class_Decal_property_lower_fade>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7857,7 +7857,7 @@ Sets the upper fade (``above``) and lower fade (``below``) in the decal specifie
 
 |void| **decal_set_modulate**\ (\ decal\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_modulate>`
 
-Sets the color multiplier in the decal specified by the ``decal`` RID to ``color``. Equivalent to :ref:`Decal.modulate<class_Decal_property_modulate>`.
+將裝飾的顏色乘數設定為 ``color``\ ，該裝飾由 RID ``decal`` 指定。等價於 :ref:`Decal.modulate<class_Decal_property_modulate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7869,7 +7869,7 @@ Sets the color multiplier in the decal specified by the ``decal`` RID to ``color
 
 |void| **decal_set_normal_fade**\ (\ decal\: :ref:`RID<class_RID>`, fade\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_normal_fade>`
 
-Sets the normal ``fade`` in the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.normal_fade<class_Decal_property_normal_fade>`.
+設定 RID 為 ``decal`` 的裝飾的法線淡出 ``fade``\ 。等價於 :ref:`Decal.normal_fade<class_Decal_property_normal_fade>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7881,7 +7881,7 @@ Sets the normal ``fade`` in the decal specified by the ``decal`` RID. Equivalent
 
 |void| **decal_set_size**\ (\ decal\: :ref:`RID<class_RID>`, size\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_size>`
 
-Sets the ``size`` of the decal specified by the ``decal`` RID. Equivalent to :ref:`Decal.size<class_Decal_property_size>`.
+設定 RID 為 ``decal`` 的裝飾的大小 ``size``\ 。等價於 :ref:`Decal.size<class_Decal_property_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7893,7 +7893,7 @@ Sets the ``size`` of the decal specified by the ``decal`` RID. Equivalent to :re
 
 |void| **decal_set_texture**\ (\ decal\: :ref:`RID<class_RID>`, type\: :ref:`DecalTexture<enum_RenderingServer_DecalTexture>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_decal_set_texture>`
 
-Sets the ``texture`` in the given texture ``type`` slot for the specified decal. Equivalent to :ref:`Decal.set_texture()<class_Decal_method_set_texture>`.
+設定指定裝飾中給定紋理型別插槽 ``type`` 的紋理 ``texture``\ 。等價於 :ref:`Decal.set_texture()<class_Decal_method_set_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7905,7 +7905,7 @@ Sets the ``texture`` in the given texture ``type`` slot for the specified decal.
 
 |void| **decals_set_filter**\ (\ filter\: :ref:`DecalFilter<enum_RenderingServer_DecalFilter>`\ ) :ref:`🔗<class_RenderingServer_method_decals_set_filter>`
 
-Sets the texture ``filter`` mode to use when rendering decals. This parameter is global and cannot be set on a per-decal basis.
+設定算繪裝飾時所使用的紋理篩選模式 ``filter``\ 。這個參數是全域的，無法針對某個裝飾單獨設定。
 
 .. rst-class:: classref-item-separator
 
@@ -7917,13 +7917,13 @@ Sets the texture ``filter`` mode to use when rendering decals. This parameter is
 
 :ref:`RID<class_RID>` **directional_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_directional_light_create>`
 
-Creates a directional light and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID can be used in most ``light_*`` RenderingServer functions.
+建立平行光並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在大多數 ``light_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach this directional light to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個平行光放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
-\ **Note:** The equivalent node is :ref:`DirectionalLight3D<class_DirectionalLight3D>`.
+\ **注意：**\ 等價節點為 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7935,7 +7935,7 @@ To place in a scene, attach this directional light to an instance using :ref:`in
 
 |void| **directional_shadow_atlas_set_size**\ (\ size\: :ref:`int<class_int>`, is_16bits\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_directional_shadow_atlas_set_size>`
 
-Sets the ``size`` of the directional light shadows in 3D. See also :ref:`ProjectSettings.rendering/lights_and_shadows/directional_shadow/size<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>`. This parameter is global and cannot be set on a per-viewport basis.
+設定 3D 方向燈光的陰影大小 ``size``\ 。另見 :ref:`ProjectSettings.rendering/lights_and_shadows/directional_shadow/size<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/size>`\ 。這個參數是全域的，無法針對某個視口單獨設定。
 
 .. rst-class:: classref-item-separator
 
@@ -7947,7 +7947,7 @@ Sets the ``size`` of the directional light shadows in 3D. See also :ref:`Project
 
 |void| **directional_soft_shadow_filter_set_quality**\ (\ quality\: :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>`\ ) :ref:`🔗<class_RenderingServer_method_directional_soft_shadow_filter_set_quality>`
 
-Sets the filter ``quality`` for directional light shadows in 3D. See also :ref:`ProjectSettings.rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>`. This parameter is global and cannot be set on a per-viewport basis.
+設定 3D 方向燈光的陰影篩選品質 ``quality``\ 。另見 :ref:`ProjectSettings.rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/directional_shadow/soft_shadow_filter_quality>`\ 。這個參數是全域的，無法針對某個視口單獨設定。
 
 .. rst-class:: classref-item-separator
 
@@ -7975,11 +7975,11 @@ Generates and returns an :ref:`Image<class_Image>` containing the radiance map f
 
 :ref:`RID<class_RID>` **environment_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_environment_create>`
 
-Creates an environment and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``environment_*`` RenderingServer functions.
+建立環境並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``environment_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`Environment<class_Environment>`.
+\ **注意：**\ 等價資源為 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8005,7 +8005,7 @@ If ``enable`` is ``true``, enables bicubic upscaling for glow which improves qua
 
 |void| **environment_set_adjustment**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, brightness\: :ref:`float<class_float>`, contrast\: :ref:`float<class_float>`, saturation\: :ref:`float<class_float>`, use_1d_color_correction\: :ref:`bool<class_bool>`, color_correction\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_adjustment>`
 
-Sets the values to be used with the "adjustments" post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定用於“調整”後期處理效果的數值。詳見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8017,7 +8017,7 @@ Sets the values to be used with the "adjustments" post-process effect. See :ref:
 
 |void| **environment_set_ambient_light**\ (\ env\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`, ambient\: :ref:`EnvironmentAmbientSource<enum_RenderingServer_EnvironmentAmbientSource>` = 0, energy\: :ref:`float<class_float>` = 1.0, sky_contribution\: :ref:`float<class_float>` = 0.0, reflection_source\: :ref:`EnvironmentReflectionSource<enum_RenderingServer_EnvironmentReflectionSource>` = 0\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ambient_light>`
 
-Sets the values to be used for ambient light rendering. See :ref:`Environment<class_Environment>` for more details.
+設定用於環境光算繪的數值。詳見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8029,7 +8029,7 @@ Sets the values to be used for ambient light rendering. See :ref:`Environment<cl
 
 |void| **environment_set_background**\ (\ env\: :ref:`RID<class_RID>`, bg\: :ref:`EnvironmentBG<enum_RenderingServer_EnvironmentBG>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_background>`
 
-Sets the environment's background mode. Equivalent to :ref:`Environment.background_mode<class_Environment_property_background_mode>`.
+設定環境的背景模式。等價於 :ref:`Environment.background_mode<class_Environment_property_background_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8041,7 +8041,7 @@ Sets the environment's background mode. Equivalent to :ref:`Environment.backgrou
 
 |void| **environment_set_bg_color**\ (\ env\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_bg_color>`
 
-Color displayed for clear areas of the scene. Only effective if using the :ref:`ENV_BG_COLOR<class_RenderingServer_constant_ENV_BG_COLOR>` background mode.
+場景中清屏區域的顏色。僅在使用 :ref:`ENV_BG_COLOR<class_RenderingServer_constant_ENV_BG_COLOR>` 背景模式時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -8053,7 +8053,7 @@ Color displayed for clear areas of the scene. Only effective if using the :ref:`
 
 |void| **environment_set_bg_energy**\ (\ env\: :ref:`RID<class_RID>`, multiplier\: :ref:`float<class_float>`, exposure_value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_bg_energy>`
 
-Sets the intensity of the background color.
+設定背景顏色的強度。
 
 .. rst-class:: classref-item-separator
 
@@ -8077,7 +8077,7 @@ Sets the camera ID to be used as environment background.
 
 |void| **environment_set_canvas_max_layer**\ (\ env\: :ref:`RID<class_RID>`, max_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_canvas_max_layer>`
 
-Sets the maximum layer to use if using Canvas background mode.
+如果使用畫布背景模式，設定要使用的最大層數。
 
 .. rst-class:: classref-item-separator
 
@@ -8089,7 +8089,7 @@ Sets the maximum layer to use if using Canvas background mode.
 
 |void| **environment_set_fog**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, light_color\: :ref:`Color<class_Color>`, light_energy\: :ref:`float<class_float>`, sun_scatter\: :ref:`float<class_float>`, density\: :ref:`float<class_float>`, height\: :ref:`float<class_float>`, height_density\: :ref:`float<class_float>`, aerial_perspective\: :ref:`float<class_float>`, sky_affect\: :ref:`float<class_float>`, fog_mode\: :ref:`EnvironmentFogMode<enum_RenderingServer_EnvironmentFogMode>` = 0\ ) :ref:`🔗<class_RenderingServer_method_environment_set_fog>`
 
-Configures fog for the specified environment RID. See ``fog_*`` properties in :ref:`Environment<class_Environment>` for more information.
+為指定的環境 RID 配置霧。詳見 :ref:`Environment<class_Environment>` 中的 ``fog_*`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -8113,7 +8113,7 @@ Configures fog depth for the specified environment RID. Only has an effect when 
 
 |void| **environment_set_glow**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, levels\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`, intensity\: :ref:`float<class_float>`, strength\: :ref:`float<class_float>`, mix\: :ref:`float<class_float>`, bloom_threshold\: :ref:`float<class_float>`, blend_mode\: :ref:`EnvironmentGlowBlendMode<enum_RenderingServer_EnvironmentGlowBlendMode>`, hdr_bleed_threshold\: :ref:`float<class_float>`, hdr_bleed_scale\: :ref:`float<class_float>`, hdr_luminance_cap\: :ref:`float<class_float>`, glow_map_strength\: :ref:`float<class_float>`, glow_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_glow>`
 
-Configures glow for the specified environment RID. See ``glow_*`` properties in :ref:`Environment<class_Environment>` for more information.
+為指定的環境 RID 配置輝光。詳見 :ref:`Environment<class_Environment>` 中的 ``glow_*`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -8125,7 +8125,7 @@ Configures glow for the specified environment RID. See ``glow_*`` properties in 
 
 |void| **environment_set_sdfgi**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, cascades\: :ref:`int<class_int>`, min_cell_size\: :ref:`float<class_float>`, y_scale\: :ref:`EnvironmentSDFGIYScale<enum_RenderingServer_EnvironmentSDFGIYScale>`, use_occlusion\: :ref:`bool<class_bool>`, bounce_feedback\: :ref:`float<class_float>`, read_sky\: :ref:`bool<class_bool>`, energy\: :ref:`float<class_float>`, normal_bias\: :ref:`float<class_float>`, probe_bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi>`
 
-Configures signed distance field global illumination for the specified environment RID. See ``sdfgi_*`` properties in :ref:`Environment<class_Environment>` for more information.
+為指定的環境 RID 配置帶符號距離場全域光照。詳見 :ref:`Environment<class_Environment>` 中的 ``sdfgi_*`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -8137,7 +8137,7 @@ Configures signed distance field global illumination for the specified environme
 
 |void| **environment_set_sdfgi_frames_to_converge**\ (\ frames\: :ref:`EnvironmentSDFGIFramesToConverge<enum_RenderingServer_EnvironmentSDFGIFramesToConverge>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi_frames_to_converge>`
 
-Sets the number of frames to use for converging signed distance field global illumination. Equivalent to :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`.
+設定用於聚合帶符號距離場全域光照的影格數。等價於 :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_converge<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_converge>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8149,7 +8149,7 @@ Sets the number of frames to use for converging signed distance field global ill
 
 |void| **environment_set_sdfgi_frames_to_update_light**\ (\ frames\: :ref:`EnvironmentSDFGIFramesToUpdateLight<enum_RenderingServer_EnvironmentSDFGIFramesToUpdateLight>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi_frames_to_update_light>`
 
-Sets the update speed for dynamic lights' indirect lighting when computing signed distance field global illumination. Equivalent to :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+設定計算帶符號距離場全域光照時動態燈光間接光照的更新速度。等價於 :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8161,7 +8161,7 @@ Sets the update speed for dynamic lights' indirect lighting when computing signe
 
 |void| **environment_set_sdfgi_ray_count**\ (\ ray_count\: :ref:`EnvironmentSDFGIRayCount<enum_RenderingServer_EnvironmentSDFGIRayCount>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sdfgi_ray_count>`
 
-Sets the number of rays to throw per frame when computing signed distance field global illumination. Equivalent to :ref:`ProjectSettings.rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`.
+設定計算帶符號距離場全域光照時每影格射出的光線數。等價於 :ref:`ProjectSettings.rendering/global_illumination/sdfgi/probe_ray_count<class_ProjectSettings_property_rendering/global_illumination/sdfgi/probe_ray_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8173,7 +8173,7 @@ Sets the number of rays to throw per frame when computing signed distance field 
 
 |void| **environment_set_sky**\ (\ env\: :ref:`RID<class_RID>`, sky\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sky>`
 
-Sets the :ref:`Sky<class_Sky>` to be used as the environment's background when using *BGMode* sky. Equivalent to :ref:`Environment.sky<class_Environment_property_sky>`.
+設定當使用 *BGMode* 天空時被用作環境背景的 :ref:`Sky<class_Sky>`\ 。相當於 :ref:`Environment.sky<class_Environment_property_sky>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8185,7 +8185,7 @@ Sets the :ref:`Sky<class_Sky>` to be used as the environment's background when u
 
 |void| **environment_set_sky_custom_fov**\ (\ env\: :ref:`RID<class_RID>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sky_custom_fov>`
 
-Sets a custom field of view for the background :ref:`Sky<class_Sky>`. Equivalent to :ref:`Environment.sky_custom_fov<class_Environment_property_sky_custom_fov>`.
+為背景 :ref:`Sky<class_Sky>` 設定自訂視野。相當於 :ref:`Environment.sky_custom_fov<class_Environment_property_sky_custom_fov>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8197,7 +8197,7 @@ Sets a custom field of view for the background :ref:`Sky<class_Sky>`. Equivalent
 
 |void| **environment_set_sky_orientation**\ (\ env\: :ref:`RID<class_RID>`, orientation\: :ref:`Basis<class_Basis>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_sky_orientation>`
 
-Sets the rotation of the background :ref:`Sky<class_Sky>` expressed as a :ref:`Basis<class_Basis>`. Equivalent to :ref:`Environment.sky_rotation<class_Environment_property_sky_rotation>`, where the rotation vector is used to construct the :ref:`Basis<class_Basis>`.
+設定被表示為 :ref:`Basis<class_Basis>` 的背景 :ref:`Sky<class_Sky>` 的旋轉。相當於 :ref:`Environment.sky_rotation<class_Environment_property_sky_rotation>`\ ，其中旋轉向量用於建構該 :ref:`Basis<class_Basis>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8209,7 +8209,7 @@ Sets the rotation of the background :ref:`Sky<class_Sky>` expressed as a :ref:`B
 
 |void| **environment_set_ssao**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, radius\: :ref:`float<class_float>`, intensity\: :ref:`float<class_float>`, power\: :ref:`float<class_float>`, detail\: :ref:`float<class_float>`, horizon\: :ref:`float<class_float>`, sharpness\: :ref:`float<class_float>`, light_affect\: :ref:`float<class_float>`, ao_channel_affect\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssao>`
 
-Sets the variables to be used with the screen-space ambient occlusion (SSAO) post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定螢幕空間環境光遮蔽（SSAO）後期處理效果所使用的變數。詳情見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8221,7 +8221,7 @@ Sets the variables to be used with the screen-space ambient occlusion (SSAO) pos
 
 |void| **environment_set_ssao_quality**\ (\ quality\: :ref:`EnvironmentSSAOQuality<enum_RenderingServer_EnvironmentSSAOQuality>`, half_size\: :ref:`bool<class_bool>`, adaptive_target\: :ref:`float<class_float>`, blur_passes\: :ref:`int<class_int>`, fadeout_from\: :ref:`float<class_float>`, fadeout_to\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssao_quality>`
 
-Sets the quality level of the screen-space ambient occlusion (SSAO) post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定螢幕空間環境光遮蔽（SSAO）後期處理效果的品質級別。詳情見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8233,7 +8233,7 @@ Sets the quality level of the screen-space ambient occlusion (SSAO) post-process
 
 |void| **environment_set_ssil_quality**\ (\ quality\: :ref:`EnvironmentSSILQuality<enum_RenderingServer_EnvironmentSSILQuality>`, half_size\: :ref:`bool<class_bool>`, adaptive_target\: :ref:`float<class_float>`, blur_passes\: :ref:`int<class_int>`, fadeout_from\: :ref:`float<class_float>`, fadeout_to\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssil_quality>`
 
-Sets the quality level of the screen-space indirect lighting (SSIL) post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定螢幕空間間接照明（SSIL）後期處理效果的品質級別。詳情見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8245,7 +8245,7 @@ Sets the quality level of the screen-space indirect lighting (SSIL) post-process
 
 |void| **environment_set_ssr**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, max_steps\: :ref:`int<class_int>`, fade_in\: :ref:`float<class_float>`, fade_out\: :ref:`float<class_float>`, depth_tolerance\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssr>`
 
-Sets the variables to be used with the screen-space reflections (SSR) post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定螢幕空間反射（SSR）後期處理效果所使用的變數。詳情見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8269,7 +8269,7 @@ Sets whether screen-space reflections will be rendered at full or half size. Hal
 
 |void| **environment_set_ssr_roughness_quality**\ (\ quality\: :ref:`EnvironmentSSRRoughnessQuality<enum_RenderingServer_EnvironmentSSRRoughnessQuality>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssr_roughness_quality>`
 
-**Deprecated:** This option no longer does anything.
+**已棄用：** This option no longer does anything.
 
 .. rst-class:: classref-item-separator
 
@@ -8281,7 +8281,7 @@ Sets whether screen-space reflections will be rendered at full or half size. Hal
 
 |void| **environment_set_tonemap**\ (\ env\: :ref:`RID<class_RID>`, tone_mapper\: :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>`, exposure\: :ref:`float<class_float>`, white\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_tonemap>`
 
-Sets the variables to be used with the "tonemap" post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定“色調對應”後期處理效果所使用的變數。詳情見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8305,7 +8305,7 @@ See :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_ag
 
 |void| **environment_set_volumetric_fog**\ (\ env\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, density\: :ref:`float<class_float>`, albedo\: :ref:`Color<class_Color>`, emission\: :ref:`Color<class_Color>`, emission_energy\: :ref:`float<class_float>`, anisotropy\: :ref:`float<class_float>`, length\: :ref:`float<class_float>`, p_detail_spread\: :ref:`float<class_float>`, gi_inject\: :ref:`float<class_float>`, temporal_reprojection\: :ref:`bool<class_bool>`, temporal_reprojection_amount\: :ref:`float<class_float>`, ambient_inject\: :ref:`float<class_float>`, sky_affect\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_volumetric_fog>`
 
-Sets the variables to be used with the volumetric fog post-process effect. See :ref:`Environment<class_Environment>` for more details.
+設定體積霧後期處理效果所使用的變數。詳情見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8317,7 +8317,7 @@ Sets the variables to be used with the volumetric fog post-process effect. See :
 
 |void| **environment_set_volumetric_fog_filter_active**\ (\ active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_volumetric_fog_filter_active>`
 
-Enables filtering of the volumetric fog scattering buffer. This results in much smoother volumes with very few under-sampling artifacts.
+啟用體積霧散射緩衝區的篩選。這會產生更平滑的體積，並且幾乎沒有欠取樣偽影。
 
 .. rst-class:: classref-item-separator
 
@@ -8329,7 +8329,7 @@ Enables filtering of the volumetric fog scattering buffer. This results in much 
 
 |void| **environment_set_volumetric_fog_volume_size**\ (\ size\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_volumetric_fog_volume_size>`
 
-Sets the resolution of the volumetric fog's froxel buffer. ``size`` is modified by the screen's aspect ratio and then used to set the width and height of the buffer. While ``depth`` is directly used to set the depth of the buffer.
+設定體積霧的片段體素緩衝區解析度。\ ``size`` 會被螢幕的縱橫比修改，用於設定緩衝區的寬度和高度。\ ``depth`` 則用於設定緩衝區的深度。
 
 .. rst-class:: classref-item-separator
 
@@ -8341,11 +8341,11 @@ Sets the resolution of the volumetric fog's froxel buffer. ``size`` is modified 
 
 :ref:`RID<class_RID>` **fog_volume_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_fog_volume_create>`
 
-Creates a new fog volume and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``fog_volume_*`` RenderingServer functions.
+新建霧體積並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``fog_volume_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`FogVolume<class_FogVolume>`.
+\ **注意：**\ 等價節點為 :ref:`FogVolume<class_FogVolume>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8357,7 +8357,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **fog_volume_set_material**\ (\ fog_volume\: :ref:`RID<class_RID>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_fog_volume_set_material>`
 
-Sets the :ref:`Material<class_Material>` of the fog volume. Can be either a :ref:`FogMaterial<class_FogMaterial>` or a custom :ref:`ShaderMaterial<class_ShaderMaterial>`.
+設定該霧體積的 :ref:`Material<class_Material>`\ 。可以是 :ref:`FogMaterial<class_FogMaterial>`\ ，也可以是自訂的 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8369,7 +8369,7 @@ Sets the :ref:`Material<class_Material>` of the fog volume. Can be either a :ref
 
 |void| **fog_volume_set_shape**\ (\ fog_volume\: :ref:`RID<class_RID>`, shape\: :ref:`FogVolumeShape<enum_RenderingServer_FogVolumeShape>`\ ) :ref:`🔗<class_RenderingServer_method_fog_volume_set_shape>`
 
-Sets the shape of the fog volume to either :ref:`FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`, :ref:`FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`, :ref:`FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`, :ref:`FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>` or :ref:`FOG_VOLUME_SHAPE_WORLD<class_RenderingServer_constant_FOG_VOLUME_SHAPE_WORLD>`.
+將霧體積的形狀設定為 :ref:`FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`\ 、\ :ref:`FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`\ 、\ :ref:`FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>`\ 、\ :ref:`FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>` 或 :ref:`FOG_VOLUME_SHAPE_WORLD<class_RenderingServer_constant_FOG_VOLUME_SHAPE_WORLD>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8381,7 +8381,7 @@ Sets the shape of the fog volume to either :ref:`FOG_VOLUME_SHAPE_ELLIPSOID<clas
 
 |void| **fog_volume_set_size**\ (\ fog_volume\: :ref:`RID<class_RID>`, size\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_RenderingServer_method_fog_volume_set_size>`
 
-Sets the size of the fog volume when shape is :ref:`FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`, :ref:`FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`, :ref:`FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>` or :ref:`FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>`.
+設定形狀為 :ref:`FOG_VOLUME_SHAPE_ELLIPSOID<class_RenderingServer_constant_FOG_VOLUME_SHAPE_ELLIPSOID>`\ 、\ :ref:`FOG_VOLUME_SHAPE_CONE<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CONE>`\ 、\ :ref:`FOG_VOLUME_SHAPE_CYLINDER<class_RenderingServer_constant_FOG_VOLUME_SHAPE_CYLINDER>` 或 :ref:`FOG_VOLUME_SHAPE_BOX<class_RenderingServer_constant_FOG_VOLUME_SHAPE_BOX>` 時，霧體積的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -8405,7 +8405,7 @@ Forces redrawing of all viewports at once. Must be called from the main thread.
 
 |void| **force_sync**\ (\ ) :ref:`🔗<class_RenderingServer_method_force_sync>`
 
-Forces a synchronization between the CPU and GPU, which may be required in certain cases. Only call this when needed, as CPU-GPU synchronization has a performance cost.
+強制在 CPU 和 GPU 之間進行同步，某些情況下是必須的。請只在需要時呼叫，因為 CPU-GPU 同步對性能有影響。
 
 .. rst-class:: classref-item-separator
 
@@ -8417,7 +8417,7 @@ Forces a synchronization between the CPU and GPU, which may be required in certa
 
 |void| **free_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_free_rid>`
 
-Tries to free an object in the RenderingServer. To avoid memory leaks, this should be called after using an object as memory management does not occur automatically when using RenderingServer directly.
+嘗試釋放 RenderingServer 中的某個物件。為了避免記憶體洩漏，應該在使用完物件後調用，因為直接使用 RenderingServer 時不會自動進行記憶體管理。
 
 .. rst-class:: classref-item-separator
 
@@ -8461,7 +8461,7 @@ The rendering method is determined by :ref:`ProjectSettings.rendering/renderer/r
 
 :ref:`Color<class_Color>` **get_default_clear_color**\ (\ ) :ref:`🔗<class_RenderingServer_method_get_default_clear_color>`
 
-Returns the default clear color which is used when a specific clear color has not been selected. See also :ref:`set_default_clear_color()<class_RenderingServer_method_set_default_clear_color>`.
+返回預設清屏顏色，會在沒有選擇特定的清屏顏色時使用。另見 :ref:`set_default_clear_color()<class_RenderingServer_method_set_default_clear_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8473,7 +8473,7 @@ Returns the default clear color which is used when a specific clear color has no
 
 :ref:`float<class_float>` **get_frame_setup_time_cpu**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_get_frame_setup_time_cpu>`
 
-Returns the time taken to setup rendering on the CPU in milliseconds. This value is shared across all viewports and does *not* require :ref:`viewport_set_measure_render_time()<class_RenderingServer_method_viewport_set_measure_render_time>` to be enabled on a viewport to be queried. See also :ref:`viewport_get_measured_render_time_cpu()<class_RenderingServer_method_viewport_get_measured_render_time_cpu>`.
+返回在 CPU 上設定算繪所消耗的時間，單位為毫秒。這個值是所有視口共用的，\ *不需要*\ 在查詢的視口上啟用 :ref:`viewport_set_measure_render_time()<class_RenderingServer_method_viewport_set_measure_render_time>`\ 。另見 :ref:`viewport_get_measured_render_time_cpu()<class_RenderingServer_method_viewport_get_measured_render_time_cpu>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8523,7 +8523,7 @@ Returns a statistic about the rendering engine which can be used for performance
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_shader_parameter_list**\ (\ shader\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_get_shader_parameter_list>`
 
-Returns the parameters of a shader.
+返回著色器的參數。
 
 .. rst-class:: classref-item-separator
 
@@ -8535,7 +8535,7 @@ Returns the parameters of a shader.
 
 :ref:`RID<class_RID>` **get_test_cube**\ (\ ) :ref:`🔗<class_RenderingServer_method_get_test_cube>`
 
-Returns the RID of the test cube. This mesh will be created and returned on the first call to :ref:`get_test_cube()<class_RenderingServer_method_get_test_cube>`, then it will be cached for subsequent calls. See also :ref:`make_sphere_mesh()<class_RenderingServer_method_make_sphere_mesh>`.
+返回測試立方體的 RID。首次呼叫 :ref:`get_test_cube()<class_RenderingServer_method_get_test_cube>` 時會建立並返回該網格，然後為後續呼叫快取。另見 :ref:`make_sphere_mesh()<class_RenderingServer_method_make_sphere_mesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8567,9 +8567,9 @@ Returns the RID of a 256×256 texture with a testing pattern on it (in :ref:`Ima
 
 :ref:`String<class_String>` **get_video_adapter_api_version**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_get_video_adapter_api_version>`
 
-Returns the version of the graphics video adapter *currently in use* (e.g. "1.2.189" for Vulkan, "3.3.0 NVIDIA 510.60.02" for OpenGL). This version may be different from the actual latest version supported by the hardware, as Godot may not always request the latest version. See also :ref:`OS.get_video_adapter_driver_info()<class_OS_method_get_video_adapter_driver_info>`.
+返回\ *目前使用的*\ 圖形視訊卡的版本（例如，Vulkan 為“1.2.189”，OpenGL 為“3.3.0 NVIDIA 510.60.02”）。該版本可能與硬體支援的實際最新版本不同，因為 Godot 可能並不總是要求最新版本。另見 :ref:`OS.get_video_adapter_driver_info()<class_OS_method_get_video_adapter_driver_info>`\ 。
 
-\ **Note:** When running a headless or server binary, this function returns an empty string.
+\ **注意：**\ 當運作無頭或伺服器可執行檔時，該函式返回一個空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -8581,11 +8581,11 @@ Returns the version of the graphics video adapter *currently in use* (e.g. "1.2.
 
 :ref:`String<class_String>` **get_video_adapter_name**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_get_video_adapter_name>`
 
-Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2").
+傳回視訊適配器的名稱（例如「GeForce GTX 1080/PCIe/SSE2」）。
 
-\ **Note:** When running a headless or server binary, this function returns an empty string.
+\ **注意：** 執行無頭或伺服器二進位檔案時，此函式傳回空字串。
 
-\ **Note:** On the web platform, some browsers such as Firefox may report a different, fixed GPU name such as "GeForce GTX 980" (regardless of the user's actual GPU model). This is done to make fingerprinting more difficult.
+\ **注意：** 在網路平台上，某些瀏覽器（例如 Firefox）可能會報告不同的固定 GPU 名稱，例如「GeForce GTX 980」（無論使用者的實際 GPU 型號為何）。這樣做是為了使指紋辨識更加困難。
 
 .. rst-class:: classref-item-separator
 
@@ -8611,9 +8611,9 @@ Returns the type of the video adapter. Since dedicated graphics cards from a giv
 
 :ref:`String<class_String>` **get_video_adapter_vendor**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_get_video_adapter_vendor>`
 
-Returns the vendor of the video adapter (e.g. "NVIDIA Corporation").
+返回視訊卡的供應商（例如 "NVIDIA Corporation"）。
 
-\ **Note:** When running a headless or server binary, this function returns an empty string.
+\ **注意：**\ 當運作精簡或伺服器可執行檔時，該函式返回一個空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -8645,7 +8645,7 @@ Returns the ID of a 4×4 white texture (in :ref:`Image.FORMAT_RGB8<class_Image_c
 
 |void| **gi_set_use_half_resolution**\ (\ half_resolution\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_gi_set_use_half_resolution>`
 
-If ``half_resolution`` is ``true``, renders :ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) buffers at halved resolution on each axis (e.g. 960×540 when the viewport size is 1920×1080). This improves performance significantly when VoxelGI or SDFGI is enabled, at the cost of artifacts that may be visible on polygon edges. The loss in quality becomes less noticeable as the viewport resolution increases. :ref:`LightmapGI<class_LightmapGI>` rendering is not affected by this setting. Equivalent to :ref:`ProjectSettings.rendering/global_illumination/gi/use_half_resolution<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>`.
+如果 ``half_resolution`` 為 ``true``\ ，則每個軸上都會使用一半的分辨率算繪 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）緩衝區（例如視口大小為 1920×1080 時使用 960×540）。啟用 VoxelGI 或 SDFGI 時，這樣做能夠顯著提升性能，但代價是多邊形邊緣可能產生顯示問題。視口解析度越高，越不容易注意到品質的損失。\ :ref:`LightmapGI<class_LightmapGI>` 的算繪不受這個設定的影響。等價於 :ref:`ProjectSettings.rendering/global_illumination/gi/use_half_resolution<class_ProjectSettings_property_rendering/global_illumination/gi/use_half_resolution>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8657,9 +8657,9 @@ If ``half_resolution`` is ``true``, renders :ref:`VoxelGI<class_VoxelGI>` and SD
 
 |void| **global_shader_parameter_add**\ (\ name\: :ref:`StringName<class_StringName>`, type\: :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>`, default_value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_RenderingServer_method_global_shader_parameter_add>`
 
-Creates a new global shader uniform.
+新建全域著色器 uniform。
 
-\ **Note:** Global shader parameter names are case-sensitive.
+\ **注意：**\ 全域著色器參數名稱是大小寫敏感的。
 
 .. rst-class:: classref-item-separator
 
@@ -8671,9 +8671,9 @@ Creates a new global shader uniform.
 
 :ref:`Variant<class_Variant>` **global_shader_parameter_get**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_global_shader_parameter_get>`
 
-Returns the value of the global shader uniform specified by ``name``.
+返回名稱為 ``name`` 的全域著色器 uniform 的值。
 
-\ **Note:** :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` has a large performance penalty as the rendering thread needs to synchronize with the calling thread, which is slow. Do not use this method during gameplay to avoid stuttering. If you need to read values in a script after setting them, consider creating an autoload where you store the values you need to query at the same time you're setting them as global parameters.
+\ **注意：**\ :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` 存在較大的性能損耗，因為算繪執行緒需要與呼叫執行緒同步，這個過程比較慢。為了避免卡頓，請勿在遊戲過程中使用這個方法。如果你需要在設定後在腳本中讀取，請考慮建立一個自動載入，在設定全域參數的同時保存一份你需要查詢的值。
 
 .. rst-class:: classref-item-separator
 
@@ -8685,9 +8685,9 @@ Returns the value of the global shader uniform specified by ``name``.
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **global_shader_parameter_get_list**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_global_shader_parameter_get_list>`
 
-Returns the list of global shader uniform names.
+返回全域著色器 uniform 名稱的列表。
 
-\ **Note:** :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` has a large performance penalty as the rendering thread needs to synchronize with the calling thread, which is slow. Do not use this method during gameplay to avoid stuttering. If you need to read values in a script after setting them, consider creating an autoload where you store the values you need to query at the same time you're setting them as global parameters.
+\ **注意：**\ :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` 存在較大的性能損耗，因為算繪執行緒需要與呼叫執行緒同步，這個過程比較慢。為了避免卡頓，請勿在遊戲過程中使用這個方法。如果你需要在設定後在腳本中讀取，請考慮建立一個自動載入，在設定全域參數的同時保存一份你需要查詢的值。
 
 .. rst-class:: classref-item-separator
 
@@ -8699,9 +8699,9 @@ Returns the list of global shader uniform names.
 
 :ref:`GlobalShaderParameterType<enum_RenderingServer_GlobalShaderParameterType>` **global_shader_parameter_get_type**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_global_shader_parameter_get_type>`
 
-Returns the type associated to the global shader uniform specified by ``name``.
+返回與名稱為 ``name`` 的全域著色器 uniform 相關聯的型別。
 
-\ **Note:** :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` has a large performance penalty as the rendering thread needs to synchronize with the calling thread, which is slow. Do not use this method during gameplay to avoid stuttering. If you need to read values in a script after setting them, consider creating an autoload where you store the values you need to query at the same time you're setting them as global parameters.
+\ **注意：**\ :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` 存在較大的性能損耗，因為算繪執行緒需要與呼叫執行緒同步，這個過程比較慢。為了避免卡頓，請勿在遊戲過程中使用這個方法。如果你需要在設定後在腳本中讀取，請考慮建立一個自動載入，在設定全域參數的同時保存一份你需要查詢的值。
 
 .. rst-class:: classref-item-separator
 
@@ -8713,7 +8713,7 @@ Returns the type associated to the global shader uniform specified by ``name``.
 
 |void| **global_shader_parameter_remove**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_RenderingServer_method_global_shader_parameter_remove>`
 
-Removes the global shader uniform specified by ``name``.
+移除名稱為 ``name`` 的全域著色器 Uniform。
 
 .. rst-class:: classref-item-separator
 
@@ -8725,7 +8725,7 @@ Removes the global shader uniform specified by ``name``.
 
 |void| **global_shader_parameter_set**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_RenderingServer_method_global_shader_parameter_set>`
 
-Sets the global shader uniform ``name`` to ``value``.
+將名稱為 ``name`` 的全域著色器 Uniform 設定為 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8737,7 +8737,7 @@ Sets the global shader uniform ``name`` to ``value``.
 
 |void| **global_shader_parameter_set_override**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_RenderingServer_method_global_shader_parameter_set_override>`
 
-Overrides the global shader uniform ``name`` with ``value``. Equivalent to the :ref:`ShaderGlobalsOverride<class_ShaderGlobalsOverride>` node.
+使用 ``value`` 覆蓋名稱為 ``name`` 的全域著色器 Uniform。等價於 :ref:`ShaderGlobalsOverride<class_ShaderGlobalsOverride>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -8749,7 +8749,7 @@ Overrides the global shader uniform ``name`` with ``value``. Equivalent to the :
 
 :ref:`bool<class_bool>` **has_changed**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_has_changed>`
 
-Returns ``true`` if changes have been made to the RenderingServer's data. :ref:`force_draw()<class_RenderingServer_method_force_draw>` is usually called if this happens.
+如果對 RenderingServer 的資料進行了更改，則返回 ``true``\ 。如果發生這種情況，通常會呼叫 :ref:`force_draw()<class_RenderingServer_method_force_draw>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8761,7 +8761,7 @@ Returns ``true`` if changes have been made to the RenderingServer's data. :ref:`
 
 :ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Features<enum_RenderingServer_Features>`\ ) |const| :ref:`🔗<class_RenderingServer_method_has_feature>`
 
-**Deprecated:** This method has not been used since Godot 3.0.
+**已棄用：** This method has not been used since Godot 3.0.
 
 This method does nothing and always returns ``false``.
 
@@ -8775,7 +8775,7 @@ This method does nothing and always returns ``false``.
 
 :ref:`bool<class_bool>` **has_os_feature**\ (\ feature\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_RenderingServer_method_has_os_feature>`
 
-Returns ``true`` if the OS supports a certain ``feature``. Features might be ``s3tc``, ``etc``, and ``etc2``.
+如果作業系統支援某個功能 ``feature``\ ，則返回 ``true``\ 。功能可以是 ``s3tc``\ 、\ ``etc``\ 、\ ``etc2``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8787,7 +8787,7 @@ Returns ``true`` if the OS supports a certain ``feature``. Features might be ``s
 
 |void| **instance_attach_object_instance_id**\ (\ instance\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_instance_attach_object_instance_id>`
 
-Attaches a unique Object ID to instance. Object ID must be attached to instance for proper culling with :ref:`instances_cull_aabb()<class_RenderingServer_method_instances_cull_aabb>`, :ref:`instances_cull_convex()<class_RenderingServer_method_instances_cull_convex>`, and :ref:`instances_cull_ray()<class_RenderingServer_method_instances_cull_ray>`.
+將唯一的物件 ID 附加到實例上。必須將物件 ID 附加到實例上，以便通過 :ref:`instances_cull_aabb()<class_RenderingServer_method_instances_cull_aabb>`\ 、\ :ref:`instances_cull_convex()<class_RenderingServer_method_instances_cull_convex>` 和 :ref:`instances_cull_ray()<class_RenderingServer_method_instances_cull_ray>` 進行正確的篩除。
 
 .. rst-class:: classref-item-separator
 
@@ -8799,7 +8799,7 @@ Attaches a unique Object ID to instance. Object ID must be attached to instance 
 
 |void| **instance_attach_skeleton**\ (\ instance\: :ref:`RID<class_RID>`, skeleton\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_attach_skeleton>`
 
-Attaches a skeleton to an instance. Removes the previous skeleton from the instance.
+將骨架附加到實例。並從實例中移除之前骨架。
 
 .. rst-class:: classref-item-separator
 
@@ -8811,13 +8811,13 @@ Attaches a skeleton to an instance. Removes the previous skeleton from the insta
 
 :ref:`RID<class_RID>` **instance_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_instance_create>`
 
-Creates a visual instance and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``instance_*`` RenderingServer functions.
+建立可視實例並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``instance_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-An instance is a way of placing a 3D object in the scenario. Objects like particles, meshes, reflection probes and decals need to be associated with an instance to be visible in the scenario using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`.
+實例可以將 3D 物件放置到場景中。粒子、網格、反射探查、裝飾等物件都需要使用 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` 與實例關聯，才能顯示在場景中。
 
-\ **Note:** The equivalent node is :ref:`VisualInstance3D<class_VisualInstance3D>`.
+\ **注意：**\ 等價節點為 :ref:`VisualInstance3D<class_VisualInstance3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8829,9 +8829,9 @@ An instance is a way of placing a 3D object in the scenario. Objects like partic
 
 :ref:`RID<class_RID>` **instance_create2**\ (\ base\: :ref:`RID<class_RID>`, scenario\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_create2>`
 
-Creates a visual instance, adds it to the RenderingServer, and sets both base and scenario. It can be accessed with the RID that is returned. This RID will be used in all ``instance_*`` RenderingServer functions.
+建立可視實例並將其新增到 RenderingServer、設定基礎和場景。可以通過返回的 RID 進行存取。這個 RID 會在大多數 ``instance_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method. This is a shorthand for using :ref:`instance_create()<class_RenderingServer_method_instance_create>` and setting the base and scenario manually.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。這是使用 :ref:`instance_create()<class_RenderingServer_method_instance_create>` 並手動設定基礎和場景的快捷方式。
 
 .. rst-class:: classref-item-separator
 
@@ -8843,9 +8843,9 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 :ref:`Variant<class_Variant>` **instance_geometry_get_shader_parameter**\ (\ instance\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_instance_geometry_get_shader_parameter>`
 
-Returns the value of the per-instance shader uniform from the specified 3D geometry instance. Equivalent to :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`.
+返回指定 3D 幾何體實例的單實例著色器 uniform 的值。等價於 :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`\ 。
 
-\ **Note:** Per-instance shader parameter names are case-sensitive.
+\ **注意：**\ 單實例著色器參數的名稱是大小寫敏感的。
 
 .. rst-class:: classref-item-separator
 
@@ -8857,7 +8857,7 @@ Returns the value of the per-instance shader uniform from the specified 3D geome
 
 :ref:`Variant<class_Variant>` **instance_geometry_get_shader_parameter_default_value**\ (\ instance\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_instance_geometry_get_shader_parameter_default_value>`
 
-Returns the default value of the per-instance shader uniform from the specified 3D geometry instance. Equivalent to :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`.
+返回指定 3D 幾何體實例的單實例著色器 uniform 的預設值。等價於 :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8869,7 +8869,7 @@ Returns the default value of the per-instance shader uniform from the specified 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **instance_geometry_get_shader_parameter_list**\ (\ instance\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_instance_geometry_get_shader_parameter_list>`
 
-Returns a dictionary of per-instance shader uniform names of the per-instance shader uniform from the specified 3D geometry instance. The returned dictionary is in PropertyInfo format, with the keys ``name``, ``class_name``, ``type``, ``hint``, ``hint_string`` and ``usage``. Equivalent to :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`.
+返回指定 3D 幾何體實例的單實例著色器名稱字典。返回的字典使用 PropertyInfo 格式，包含 ``name``\ 、\ ``class_name``\ 、\ ``type``\ 、\ ``hint``\ 、\ ``hint_string`` 以及 ``usage`` 等鍵。等價於 :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8905,7 +8905,7 @@ Sets the ``flag`` for a given ``instance`` to ``enabled``.
 
 |void| **instance_geometry_set_lightmap**\ (\ instance\: :ref:`RID<class_RID>`, lightmap\: :ref:`RID<class_RID>`, lightmap_uv_scale\: :ref:`Rect2<class_Rect2>`, lightmap_slice\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_lightmap>`
 
-Sets the lightmap GI instance to use for the specified 3D geometry instance. The lightmap UV scale for the specified instance (equivalent to :ref:`GeometryInstance3D.gi_lightmap_scale<class_GeometryInstance3D_property_gi_lightmap_scale>`) and lightmap atlas slice must also be specified.
+為指定的 3D 幾何體實例設定要使用的光照貼圖 GI 實例。必須同時指定該實例的光照貼圖 UV 縮放（等價於 :ref:`GeometryInstance3D.gi_lightmap_scale<class_GeometryInstance3D_property_gi_lightmap_scale>`\ ）和光照貼圖合集切片。
 
 .. rst-class:: classref-item-separator
 
@@ -8917,7 +8917,7 @@ Sets the lightmap GI instance to use for the specified 3D geometry instance. The
 
 |void| **instance_geometry_set_lod_bias**\ (\ instance\: :ref:`RID<class_RID>`, lod_bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_lod_bias>`
 
-Sets the level of detail bias to use when rendering the specified 3D geometry instance. Higher values result in higher detail from further away. Equivalent to :ref:`GeometryInstance3D.lod_bias<class_GeometryInstance3D_property_lod_bias>`.
+為指定的 3D 幾何體實例設定要使用的細節級別偏置。值越高，距離較遠時的細節也會越高。等價於 :ref:`GeometryInstance3D.lod_bias<class_GeometryInstance3D_property_lod_bias>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8929,7 +8929,7 @@ Sets the level of detail bias to use when rendering the specified 3D geometry in
 
 |void| **instance_geometry_set_material_overlay**\ (\ instance\: :ref:`RID<class_RID>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_material_overlay>`
 
-Sets a material that will be rendered for all surfaces on top of active materials for the mesh associated with this instance. Equivalent to :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>`.
+設定一個材質，該材質將在與該實例關聯的網格的活動材質之上，為所有表面算繪。相當於\ :ref:`GeometryInstance3D.material_overlay<class_GeometryInstance3D_property_material_overlay>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8941,7 +8941,7 @@ Sets a material that will be rendered for all surfaces on top of active material
 
 |void| **instance_geometry_set_material_override**\ (\ instance\: :ref:`RID<class_RID>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_material_override>`
 
-Sets a material that will override the material for all surfaces on the mesh associated with this instance. Equivalent to :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`.
+設定一種材質，該材質將覆蓋與此實例關聯的網格上的所有表面的材質。相當於 :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8953,7 +8953,7 @@ Sets a material that will override the material for all surfaces on the mesh ass
 
 |void| **instance_geometry_set_shader_parameter**\ (\ instance\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_shader_parameter>`
 
-Sets the per-instance shader uniform on the specified 3D geometry instance. Equivalent to :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>`.
+設定指定的 3D 幾何體實例的單實例著色器 uniform。等價於 :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -8965,13 +8965,13 @@ Sets the per-instance shader uniform on the specified 3D geometry instance. Equi
 
 |void| **instance_geometry_set_transparency**\ (\ instance\: :ref:`RID<class_RID>`, transparency\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_transparency>`
 
-Sets the transparency for the given geometry instance. Equivalent to :ref:`GeometryInstance3D.transparency<class_GeometryInstance3D_property_transparency>`.
+設定給定幾何體實例的透明度。相當於 :ref:`GeometryInstance3D.transparency<class_GeometryInstance3D_property_transparency>`\ 。
 
-A transparency of ``0.0`` is fully opaque, while ``1.0`` is fully transparent. Values greater than ``0.0`` (exclusive) will force the geometry's materials to go through the transparent pipeline, which is slower to render and can exhibit rendering issues due to incorrect transparency sorting. However, unlike using a transparent material, setting ``transparency`` to a value greater than ``0.0`` (exclusive) will *not* disable shadow rendering.
+透明度為 ``0.0`` 時完全不透明，為 ``1.0`` 時則完全透明。如果值比 ``0.0`` 大，則會強制讓幾何體的材質經過透明管線，算繪起來相對較慢，可能由於錯誤的透明排序而產生算繪問題。不過，與使用透明材質不同，將 ``transparency`` 設定為比 ``0.0`` 大的值\ *不會*\ 禁用陰影的算繪。
 
-In spatial shaders, ``1.0 - transparency`` is set as the default value of the ``ALPHA`` built-in.
+在空間著色器中，內建 ``ALPHA`` 的預設值為 ``1.0 - transparency``\ 。
 
-\ **Note:** ``transparency`` is clamped between ``0.0`` and ``1.0``, so this property cannot be used to make transparent materials more opaque than they originally are.
+\ **注意：**\ ``transparency`` 會被鉗制在 ``0.0`` 和 ``1.0`` 的範圍內，所以這個屬性無法讓透明材質比原來更不透明。
 
 .. rst-class:: classref-item-separator
 
@@ -8983,7 +8983,7 @@ In spatial shaders, ``1.0 - transparency`` is set as the default value of the ``
 
 |void| **instance_geometry_set_visibility_range**\ (\ instance\: :ref:`RID<class_RID>`, min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`, min_margin\: :ref:`float<class_float>`, max_margin\: :ref:`float<class_float>`, fade_mode\: :ref:`VisibilityRangeFadeMode<enum_RenderingServer_VisibilityRangeFadeMode>`\ ) :ref:`🔗<class_RenderingServer_method_instance_geometry_set_visibility_range>`
 
-Sets the visibility range values for the given geometry instance. Equivalent to :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` and related properties.
+設定給定幾何實例的可見性範圍值。相當於 :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和相關屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -8995,7 +8995,7 @@ Sets the visibility range values for the given geometry instance. Equivalent to 
 
 |void| **instance_set_base**\ (\ instance\: :ref:`RID<class_RID>`, base\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_base>`
 
-Sets the base of the instance. A base can be any of the 3D objects that are created in the RenderingServer that can be displayed. For example, any of the light types, mesh, multimesh, particle system, reflection probe, decal, lightmap, voxel GI and visibility notifiers are all types that can be set as the base of an instance in order to be displayed in the scenario.
+設定實例的基礎。基礎可以是在 RenderingServer 中建立的任何可以顯示的 3D 物件。例如，任何光源型別、網格、多重網格、粒子系統、反射探查、裝飾、光照貼圖、體素 GI 和可見性通知器都可以設定為實例的基礎，以便在場景中顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -9007,7 +9007,7 @@ Sets the base of the instance. A base can be any of the 3D objects that are crea
 
 |void| **instance_set_blend_shape_weight**\ (\ instance\: :ref:`RID<class_RID>`, shape\: :ref:`int<class_int>`, weight\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_blend_shape_weight>`
 
-Sets the weight for a given blend shape associated with this instance.
+設定與該實例相關的特定混合形狀的權重。
 
 .. rst-class:: classref-item-separator
 
@@ -9019,7 +9019,7 @@ Sets the weight for a given blend shape associated with this instance.
 
 |void| **instance_set_custom_aabb**\ (\ instance\: :ref:`RID<class_RID>`, aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_custom_aabb>`
 
-Sets a custom AABB to use when culling objects from the view frustum. Equivalent to setting :ref:`GeometryInstance3D.custom_aabb<class_GeometryInstance3D_property_custom_aabb>`.
+設定將物件從視錐中剔除時使用的自訂 AABB。相當於設定 :ref:`GeometryInstance3D.custom_aabb<class_GeometryInstance3D_property_custom_aabb>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9031,7 +9031,7 @@ Sets a custom AABB to use when culling objects from the view frustum. Equivalent
 
 |void| **instance_set_extra_visibility_margin**\ (\ instance\: :ref:`RID<class_RID>`, margin\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_extra_visibility_margin>`
 
-Sets a margin to increase the size of the AABB when culling objects from the view frustum. This allows you to avoid culling objects that fall outside the view frustum. Equivalent to :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`.
+設定將對象從視錐中剔除時為 AABB 增加的邊距大小。這樣就可以避免剔除落在視錐外的對象。相當於 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9043,7 +9043,7 @@ Sets a margin to increase the size of the AABB when culling objects from the vie
 
 |void| **instance_set_ignore_culling**\ (\ instance\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_ignore_culling>`
 
-If ``true``, ignores both frustum and occlusion culling on the specified 3D geometry instance. This is not the same as :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, which only ignores occlusion culling and leaves frustum culling intact.
+如果為 ``true``\ ，則會忽略指定 3D 幾何體實例的視錐剔除和遮擋剔除。和 :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>` 不同，後者只會忽略遮擋剔除，仍會保留視錐剔除。
 
 .. rst-class:: classref-item-separator
 
@@ -9055,7 +9055,7 @@ If ``true``, ignores both frustum and occlusion culling on the specified 3D geom
 
 |void| **instance_set_layer_mask**\ (\ instance\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_layer_mask>`
 
-Sets the render layers that this instance will be drawn to. Equivalent to :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`.
+設定這個實例要繪製到的算繪層。相當於 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9067,7 +9067,7 @@ Sets the render layers that this instance will be drawn to. Equivalent to :ref:`
 
 |void| **instance_set_pivot_data**\ (\ instance\: :ref:`RID<class_RID>`, sorting_offset\: :ref:`float<class_float>`, use_aabb_center\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_pivot_data>`
 
-Sets the sorting offset and switches between using the bounding box or instance origin for depth sorting.
+設定排序偏移量，並在使用包圍框還是實例原點進行深度排序之間進行切換。
 
 .. rst-class:: classref-item-separator
 
@@ -9079,7 +9079,7 @@ Sets the sorting offset and switches between using the bounding box or instance 
 
 |void| **instance_set_scenario**\ (\ instance\: :ref:`RID<class_RID>`, scenario\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_scenario>`
 
-Sets the scenario that the instance is in. The scenario is the 3D world that the objects will be displayed in.
+設定實例所在的場景。場景是物件將在其中顯示的 3D 世界。
 
 .. rst-class:: classref-item-separator
 
@@ -9091,7 +9091,7 @@ Sets the scenario that the instance is in. The scenario is the 3D world that the
 
 |void| **instance_set_surface_override_material**\ (\ instance\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_surface_override_material>`
 
-Sets the override material of a specific surface. Equivalent to :ref:`MeshInstance3D.set_surface_override_material()<class_MeshInstance3D_method_set_surface_override_material>`.
+設定指定表面的覆蓋材質。相當於 :ref:`MeshInstance3D.set_surface_override_material()<class_MeshInstance3D_method_set_surface_override_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9115,7 +9115,7 @@ Sets the world space transform of the instance. Equivalent to :ref:`Node3D.globa
 
 |void| **instance_set_visibility_parent**\ (\ instance\: :ref:`RID<class_RID>`, parent\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_visibility_parent>`
 
-Sets the visibility parent for the given instance. Equivalent to :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`.
+設定給定實例的可見性父級。相當於 :ref:`Node3D.visibility_parent<class_Node3D_property_visibility_parent>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9127,7 +9127,7 @@ Sets the visibility parent for the given instance. Equivalent to :ref:`Node3D.vi
 
 |void| **instance_set_visible**\ (\ instance\: :ref:`RID<class_RID>`, visible\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_visible>`
 
-Sets whether an instance is drawn or not. Equivalent to :ref:`Node3D.visible<class_Node3D_property_visible>`.
+設定是否繪製實例。相當於 :ref:`Node3D.visible<class_Node3D_property_visible>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9151,9 +9151,9 @@ Resets motion vectors and other interpolated values. Use this *after* teleportin
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **instances_cull_aabb**\ (\ aabb\: :ref:`AABB<class_AABB>`, scenario\: :ref:`RID<class_RID>` = RID()\ ) |const| :ref:`🔗<class_RenderingServer_method_instances_cull_aabb>`
 
-Returns an array of object IDs intersecting with the provided AABB. Only 3D nodes that inherit from :ref:`VisualInstance3D<class_VisualInstance3D>` are considered, such as :ref:`MeshInstance3D<class_MeshInstance3D>` or :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to obtain the actual nodes. A scenario RID must be provided, which is available in the :ref:`World3D<class_World3D>` you want to query. This forces an update for all resources queued to update.
+返回與提供的 AABB 相交的物件 ID 的陣列。僅考慮繼承自 :ref:`VisualInstance3D<class_VisualInstance3D>` 的 3D 節點，例如 :ref:`MeshInstance3D<class_MeshInstance3D>` 或 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。可使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 來獲取實際節點。必須提供一個場景 RID，且它在要查詢的 :ref:`World3D<class_World3D>` 中可用。這會強制更新所有已被佇列以等待更新的資源。
 
-\ **Warning:** This function is primarily intended for editor usage. For in-game use cases, prefer physics collision.
+\ **警告：**\ 該函式主要供編輯器使用。對於遊戲中的用例，最好是物理碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -9165,9 +9165,9 @@ Returns an array of object IDs intersecting with the provided AABB. Only 3D node
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **instances_cull_convex**\ (\ convex\: :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\], scenario\: :ref:`RID<class_RID>` = RID()\ ) |const| :ref:`🔗<class_RenderingServer_method_instances_cull_convex>`
 
-Returns an array of object IDs intersecting with the provided convex shape. Only 3D nodes that inherit from :ref:`VisualInstance3D<class_VisualInstance3D>` are considered, such as :ref:`MeshInstance3D<class_MeshInstance3D>` or :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to obtain the actual nodes. A scenario RID must be provided, which is available in the :ref:`World3D<class_World3D>` you want to query. This forces an update for all resources queued to update.
+返回與提供的凸形相交的物件 ID 的陣列。僅考慮繼承自 :ref:`VisualInstance3D<class_VisualInstance3D>` 的 3D 節點，例如 :ref:`MeshInstance3D<class_MeshInstance3D>` 或 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。可使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 以獲取實際節點。必須提供場景 RID，且它在要查詢的 :ref:`World3D<class_World3D>` 中可用。這會強制更新所有已被佇列以等待更新的資源。
 
-\ **Warning:** This function is primarily intended for editor usage. For in-game use cases, prefer physics collision.
+\ **警告：**\ 該函式主要供編輯器使用。對於遊戲中的用例，最好是物理碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -9179,9 +9179,9 @@ Returns an array of object IDs intersecting with the provided convex shape. Only
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **instances_cull_ray**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`, scenario\: :ref:`RID<class_RID>` = RID()\ ) |const| :ref:`🔗<class_RenderingServer_method_instances_cull_ray>`
 
-Returns an array of object IDs intersecting with the provided 3D ray. Only 3D nodes that inherit from :ref:`VisualInstance3D<class_VisualInstance3D>` are considered, such as :ref:`MeshInstance3D<class_MeshInstance3D>` or :ref:`DirectionalLight3D<class_DirectionalLight3D>`. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to obtain the actual nodes. A scenario RID must be provided, which is available in the :ref:`World3D<class_World3D>` you want to query. This forces an update for all resources queued to update.
+返回與提供的 3D 射線相交的物件 ID 的陣列。僅考慮繼承自 :ref:`VisualInstance3D<class_VisualInstance3D>` 的 3D 節點，例如 :ref:`MeshInstance3D<class_MeshInstance3D>` 或 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。可使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 以獲取實際節點。必須提供場景 RID，且它在你要查詢的 :ref:`World3D<class_World3D>` 中可用。這會強制更新所有已被佇列以等待更新的資源。
 
-\ **Warning:** This function is primarily intended for editor usage. For in-game use cases, prefer physics collision.
+\ **警告：**\ 該函式主要供編輯器使用。對於遊戲中的用例，最好是物理碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -9205,7 +9205,7 @@ Returns ``true`` if our code is currently executing on the rendering thread.
 
 |void| **light_directional_set_blend_splits**\ (\ light\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_directional_set_blend_splits>`
 
-If ``true``, this directional light will blend between shadow map splits resulting in a smoother transition between them. Equivalent to :ref:`DirectionalLight3D.directional_shadow_blend_splits<class_DirectionalLight3D_property_directional_shadow_blend_splits>`.
+如果為 ``true``\ ，則該平行光將在陰影貼圖分割之間混合，從而在它們之間產生更平滑的過渡。相當於 :ref:`DirectionalLight3D.directional_shadow_blend_splits<class_DirectionalLight3D_property_directional_shadow_blend_splits>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9229,7 +9229,7 @@ Sets the shadow mode for this directional light. Equivalent to :ref:`Directional
 
 |void| **light_directional_set_sky_mode**\ (\ light\: :ref:`RID<class_RID>`, mode\: :ref:`LightDirectionalSkyMode<enum_RenderingServer_LightDirectionalSkyMode>`\ ) :ref:`🔗<class_RenderingServer_method_light_directional_set_sky_mode>`
 
-If ``true``, this light will not be used for anything except sky shaders. Use this for lights that impact your sky shader that you may want to hide from affecting the rest of the scene. For example, you may want to enable this when the sun in your sky shader falls below the horizon.
+如果為 ``true``\ ，則該燈光將不會被用於除天空著色器之外的任何內容。將其用於影響天空著色器的燈光，可能希望隱藏這些燈光以免影響場景的其餘部分。例如，當天空著色器中的太陽落在地平線以下時，可能希望啟用該功能。
 
 .. rst-class:: classref-item-separator
 
@@ -9241,7 +9241,7 @@ If ``true``, this light will not be used for anything except sky shaders. Use th
 
 |void| **light_omni_set_shadow_mode**\ (\ light\: :ref:`RID<class_RID>`, mode\: :ref:`LightOmniShadowMode<enum_RenderingServer_LightOmniShadowMode>`\ ) :ref:`🔗<class_RenderingServer_method_light_omni_set_shadow_mode>`
 
-Sets whether to use a dual paraboloid or a cubemap for the shadow map. Dual paraboloid is faster but may suffer from artifacts. Equivalent to :ref:`OmniLight3D.omni_shadow_mode<class_OmniLight3D_property_omni_shadow_mode>`.
+設定是使用雙抛物面還是立方體貼圖作為陰影貼圖。雙抛物面速度更快，但可能會出現偽影。相當於 :ref:`OmniLight3D.omni_shadow_mode<class_OmniLight3D_property_omni_shadow_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9253,7 +9253,7 @@ Sets whether to use a dual paraboloid or a cubemap for the shadow map. Dual para
 
 |void| **light_projectors_set_filter**\ (\ filter\: :ref:`LightProjectorFilter<enum_RenderingServer_LightProjectorFilter>`\ ) :ref:`🔗<class_RenderingServer_method_light_projectors_set_filter>`
 
-Sets the texture filter mode to use when rendering light projectors. This parameter is global and cannot be set on a per-light basis.
+設定算繪光線投射器時使用的紋理篩選模式。這個參數是全域的，不能單獨針對某個燈光進行設定。
 
 .. rst-class:: classref-item-separator
 
@@ -9265,7 +9265,7 @@ Sets the texture filter mode to use when rendering light projectors. This parame
 
 |void| **light_set_bake_mode**\ (\ light\: :ref:`RID<class_RID>`, bake_mode\: :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_bake_mode>`
 
-Sets the bake mode to use for the specified 3D light. Equivalent to :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>`.
+設定指定 3D 燈光所使用的烘焙模式。相當於 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9277,7 +9277,7 @@ Sets the bake mode to use for the specified 3D light. Equivalent to :ref:`Light3
 
 |void| **light_set_color**\ (\ light\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_color>`
 
-Sets the color of the light. Equivalent to :ref:`Light3D.light_color<class_Light3D_property_light_color>`.
+設定燈光的顏色。相當於 :ref:`Light3D.light_color<class_Light3D_property_light_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9289,7 +9289,7 @@ Sets the color of the light. Equivalent to :ref:`Light3D.light_color<class_Light
 
 |void| **light_set_cull_mask**\ (\ light\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_cull_mask>`
 
-Sets the cull mask for this 3D light. Lights only affect objects in the selected layers. Equivalent to :ref:`Light3D.light_cull_mask<class_Light3D_property_light_cull_mask>`.
+設定該 3D 燈光的剔除遮罩。燈光僅影響選定層中的物件。相當於 :ref:`Light3D.light_cull_mask<class_Light3D_property_light_cull_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9301,7 +9301,7 @@ Sets the cull mask for this 3D light. Lights only affect objects in the selected
 
 |void| **light_set_distance_fade**\ (\ decal\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`, begin\: :ref:`float<class_float>`, shadow\: :ref:`float<class_float>`, length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_distance_fade>`
 
-Sets the distance fade for this 3D light. This acts as a form of level of detail (LOD) and can be used to improve performance. Equivalent to :ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`, :ref:`Light3D.distance_fade_begin<class_Light3D_property_distance_fade_begin>`, :ref:`Light3D.distance_fade_shadow<class_Light3D_property_distance_fade_shadow>`, and :ref:`Light3D.distance_fade_length<class_Light3D_property_distance_fade_length>`.
+設定該 3D 燈光的淡入淡出距離。這充當了一種多細節層次（LOD）的形式，可用於提高性能。相當於 :ref:`Light3D.distance_fade_enabled<class_Light3D_property_distance_fade_enabled>`\ 、\ :ref:`Light3D.distance_fade_begin<class_Light3D_property_distance_fade_begin>`\ 、\ :ref:`Light3D.distance_fade_shadow<class_Light3D_property_distance_fade_shadow>` 和 :ref:`Light3D.distance_fade_length<class_Light3D_property_distance_fade_length>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9313,7 +9313,7 @@ Sets the distance fade for this 3D light. This acts as a form of level of detail
 
 |void| **light_set_max_sdfgi_cascade**\ (\ light\: :ref:`RID<class_RID>`, cascade\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_max_sdfgi_cascade>`
 
-Sets the maximum SDFGI cascade in which the 3D light's indirect lighting is rendered. Higher values allow the light to be rendered in SDFGI further away from the camera.
+設定算繪 3D 燈光間接光照時的 SDFGI 最大級聯數。較高的值能夠讓遠離相機的燈光在 SDFGI 中算繪。
 
 .. rst-class:: classref-item-separator
 
@@ -9325,7 +9325,7 @@ Sets the maximum SDFGI cascade in which the 3D light's indirect lighting is rend
 
 |void| **light_set_negative**\ (\ light\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_negative>`
 
-If ``true``, the 3D light will subtract light instead of adding light. Equivalent to :ref:`Light3D.light_negative<class_Light3D_property_light_negative>`.
+如果為 ``true``\ ，則該 3D 燈光會扣除光照而不是增加。等價於 :ref:`Light3D.light_negative<class_Light3D_property_light_negative>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9349,7 +9349,7 @@ Sets the specified 3D light parameter. Equivalent to :ref:`Light3D.set_param()<c
 
 |void| **light_set_projector**\ (\ light\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_projector>`
 
-Sets the projector texture to use for the specified 3D light. Equivalent to :ref:`Light3D.light_projector<class_Light3D_property_light_projector>`.
+設定指定 3D 燈光使用的投射器紋理。等價於 :ref:`Light3D.light_projector<class_Light3D_property_light_projector>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9361,7 +9361,7 @@ Sets the projector texture to use for the specified 3D light. Equivalent to :ref
 
 |void| **light_set_reverse_cull_face_mode**\ (\ light\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_reverse_cull_face_mode>`
 
-If ``true``, reverses the backface culling of the mesh. This can be useful when you have a flat mesh that has a light behind it. If you need to cast a shadow on both sides of the mesh, set the mesh to use double-sided shadows with :ref:`instance_geometry_set_cast_shadows_setting()<class_RenderingServer_method_instance_geometry_set_cast_shadows_setting>`. Equivalent to :ref:`Light3D.shadow_reverse_cull_face<class_Light3D_property_shadow_reverse_cull_face>`.
+如果為 ``true``\ ，則反轉網格的背面剔除。當有一個背後有燈光的平面網格時，這會很有用。如果需要在網格的兩側投射陰影，請使用 :ref:`instance_geometry_set_cast_shadows_setting()<class_RenderingServer_method_instance_geometry_set_cast_shadows_setting>`\ ，將網格設定為使用雙面陰影。相當於 :ref:`Light3D.shadow_reverse_cull_face<class_Light3D_property_shadow_reverse_cull_face>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9373,7 +9373,7 @@ If ``true``, reverses the backface culling of the mesh. This can be useful when 
 
 |void| **light_set_shadow**\ (\ light\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_shadow>`
 
-If ``true``, light will cast shadows. Equivalent to :ref:`Light3D.shadow_enabled<class_Light3D_property_shadow_enabled>`.
+如果為 ``true``\ ，則燈光會投射陰影。相當於 :ref:`Light3D.shadow_enabled<class_Light3D_property_shadow_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9397,11 +9397,11 @@ Sets the shadow caster mask for this 3D light. Shadows will only be cast using o
 
 :ref:`RID<class_RID>` **lightmap_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_lightmap_create>`
 
-Creates a new lightmap global illumination instance and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``lightmap_*`` RenderingServer functions.
+新建全域光照的光照貼圖並將其新增到 RenderingServer。可以通過返回的 RID 進行訪問。這個 RID 會在所有 ``lightmap_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`LightmapGI<class_LightmapGI>`.
+\ **注意：**\ 與其等價的資源為 :ref:`LightmapGI<class_LightmapGI>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9469,7 +9469,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **lightmap_set_baked_exposure_normalization**\ (\ lightmap\: :ref:`RID<class_RID>`, baked_exposure\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_baked_exposure_normalization>`
 
-Used to inform the renderer what exposure normalization value was used while baking the lightmap. This value will be used and modulated at run time to ensure that the lightmap maintains a consistent level of exposure even if the scene-wide exposure normalization is changed at run time. For more information see :ref:`camera_attributes_set_exposure()<class_RenderingServer_method_camera_attributes_set_exposure>`.
+用於通知算繪器在烘焙光照貼圖時使用的曝光正規化值。該值將在運作時被使用和被調制，以確保即使場景範圍的曝光正規化值在運作時發生變化，光照貼圖也能保持一致的曝光水平。有關詳細資訊，請參閱 :ref:`camera_attributes_set_exposure()<class_RenderingServer_method_camera_attributes_set_exposure>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9537,7 +9537,7 @@ Used to inform the renderer what exposure normalization value was used while bak
 
 |void| **lightmap_set_textures**\ (\ lightmap\: :ref:`RID<class_RID>`, light\: :ref:`RID<class_RID>`, uses_sh\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_lightmap_set_textures>`
 
-Set the textures on the given ``lightmap`` GI instance to the texture array pointed to by the ``light`` RID. If the lightmap texture was baked with :ref:`LightmapGI.directional<class_LightmapGI_property_directional>` set to ``true``, then ``uses_sh`` must also be ``true``.
+將給定光照貼圖 ``lightmap`` GI 實例的紋理設定為 ``light`` RID 所指向的紋理陣列。如果烘焙光照貼圖紋理時的 :ref:`LightmapGI.directional<class_LightmapGI_property_directional>` 為 ``true``\ ，則 ``uses_sh`` 也必須為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9561,7 +9561,7 @@ Toggles whether a bicubic filter should be used when lightmaps are sampled. This
 
 :ref:`RID<class_RID>` **make_sphere_mesh**\ (\ latitudes\: :ref:`int<class_int>`, longitudes\: :ref:`int<class_int>`, radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_make_sphere_mesh>`
 
-Returns a mesh of a sphere with the given number of horizontal subdivisions, vertical subdivisions and radius. See also :ref:`get_test_cube()<class_RenderingServer_method_get_test_cube>`.
+返回球體網格，具有給定數量的水平細分、垂直細分、半徑。另見 :ref:`get_test_cube()<class_RenderingServer_method_get_test_cube>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9573,11 +9573,11 @@ Returns a mesh of a sphere with the given number of horizontal subdivisions, ver
 
 :ref:`RID<class_RID>` **material_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_material_create>`
 
-Creates an empty material and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``material_*`` RenderingServer functions.
+建立空材質並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``material_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`Material<class_Material>`.
+\ **注意：**\ 與其等價的資源為 :ref:`Material<class_Material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9589,7 +9589,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 :ref:`Variant<class_Variant>` **material_get_param**\ (\ material\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_material_get_param>`
 
-Returns the value of a certain material's parameter.
+返回特定材質的參數值。
 
 .. rst-class:: classref-item-separator
 
@@ -9601,7 +9601,7 @@ Returns the value of a certain material's parameter.
 
 |void| **material_set_next_pass**\ (\ material\: :ref:`RID<class_RID>`, next_material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_next_pass>`
 
-Sets an object's next material.
+設定物件的下一個材質。
 
 .. rst-class:: classref-item-separator
 
@@ -9613,7 +9613,7 @@ Sets an object's next material.
 
 |void| **material_set_param**\ (\ material\: :ref:`RID<class_RID>`, parameter\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_param>`
 
-Sets a material's parameter.
+設定材質的參數。
 
 .. rst-class:: classref-item-separator
 
@@ -9625,7 +9625,7 @@ Sets a material's parameter.
 
 |void| **material_set_render_priority**\ (\ material\: :ref:`RID<class_RID>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_render_priority>`
 
-Sets a material's render priority.
+設定材質的算繪優先順序。
 
 .. rst-class:: classref-item-separator
 
@@ -9637,7 +9637,7 @@ Sets a material's render priority.
 
 |void| **material_set_shader**\ (\ shader_material\: :ref:`RID<class_RID>`, shader\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_shader>`
 
-Sets a shader material's shader.
+設定著色器材質的著色器。
 
 .. rst-class:: classref-item-separator
 
@@ -9693,7 +9693,7 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<cla
 
 |void| **mesh_clear**\ (\ mesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_clear>`
 
-Removes all surfaces from a mesh.
+移除網格中的所有表面。
 
 .. rst-class:: classref-item-separator
 
@@ -9705,13 +9705,13 @@ Removes all surfaces from a mesh.
 
 :ref:`RID<class_RID>` **mesh_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_mesh_create>`
 
-Creates a new mesh and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``mesh_*`` RenderingServer functions.
+新建網格並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``mesh_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach this mesh to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個網格放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
-\ **Note:** The equivalent resource is :ref:`Mesh<class_Mesh>`.
+\ **注意：**\ 與其等價的資源為 :ref:`Mesh<class_Mesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9737,7 +9737,7 @@ To place in a scene, attach this mesh to an instance using :ref:`instance_set_ba
 
 :ref:`int<class_int>` **mesh_get_blend_shape_count**\ (\ mesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_get_blend_shape_count>`
 
-Returns a mesh's blend shape count.
+返回一個網格的混合形狀數量。
 
 .. rst-class:: classref-item-separator
 
@@ -9749,7 +9749,7 @@ Returns a mesh's blend shape count.
 
 :ref:`BlendShapeMode<enum_RenderingServer_BlendShapeMode>` **mesh_get_blend_shape_mode**\ (\ mesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_get_blend_shape_mode>`
 
-Returns a mesh's blend shape mode.
+返回網格的混合形狀模式。
 
 .. rst-class:: classref-item-separator
 
@@ -9761,7 +9761,7 @@ Returns a mesh's blend shape mode.
 
 :ref:`AABB<class_AABB>` **mesh_get_custom_aabb**\ (\ mesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_get_custom_aabb>`
 
-Returns a mesh's custom aabb.
+返回網格的自訂 AABB。
 
 .. rst-class:: classref-item-separator
 
@@ -9787,7 +9787,7 @@ Returns a mesh's custom aabb.
 
 :ref:`int<class_int>` **mesh_get_surface_count**\ (\ mesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_get_surface_count>`
 
-Returns a mesh's number of surfaces.
+返回網格的面數。
 
 .. rst-class:: classref-item-separator
 
@@ -9799,7 +9799,7 @@ Returns a mesh's number of surfaces.
 
 |void| **mesh_set_blend_shape_mode**\ (\ mesh\: :ref:`RID<class_RID>`, mode\: :ref:`BlendShapeMode<enum_RenderingServer_BlendShapeMode>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_set_blend_shape_mode>`
 
-Sets a mesh's blend shape mode.
+設定網格的混合形狀模式。
 
 .. rst-class:: classref-item-separator
 
@@ -9811,7 +9811,7 @@ Sets a mesh's blend shape mode.
 
 |void| **mesh_set_custom_aabb**\ (\ mesh\: :ref:`RID<class_RID>`, aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_set_custom_aabb>`
 
-Sets a mesh's custom aabb.
+設定網格的自訂 AABB。
 
 .. rst-class:: classref-item-separator
 
@@ -9837,7 +9837,7 @@ Sets a mesh's custom aabb.
 
 :ref:`Array<class_Array>` **mesh_surface_get_arrays**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_surface_get_arrays>`
 
-Returns a mesh's surface's buffer arrays.
+返回網格表面的緩衝區陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -9849,7 +9849,7 @@ Returns a mesh's surface's buffer arrays.
 
 :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] **mesh_surface_get_blend_shape_arrays**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_surface_get_blend_shape_arrays>`
 
-Returns a mesh's surface's arrays for blend shapes.
+返回網格表面的混合形狀陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -9933,7 +9933,7 @@ Returns the stride of the vertex positions for a mesh with given ``format``. Not
 
 :ref:`RID<class_RID>` **mesh_surface_get_material**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_surface_get_material>`
 
-Returns a mesh's surface's material.
+返回網格表面的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -9945,7 +9945,7 @@ Returns a mesh's surface's material.
 
 |void| **mesh_surface_remove**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_remove>`
 
-Removes the surface at the given index from the Mesh, shifting surfaces with higher index down by one.
+從 Mesh 中移除指定索引的曲面，並將較高索引的曲面依序下移一位。
 
 .. rst-class:: classref-item-separator
 
@@ -9957,7 +9957,7 @@ Removes the surface at the given index from the Mesh, shifting surfaces with hig
 
 |void| **mesh_surface_set_material**\ (\ mesh\: :ref:`RID<class_RID>`, surface\: :ref:`int<class_int>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_surface_set_material>`
 
-Sets a mesh's surface's material.
+設定網格表面的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -10037,13 +10037,13 @@ Updates the index buffer of the mesh surface with the given ``data``. The expect
 
 :ref:`RID<class_RID>` **multimesh_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_multimesh_create>`
 
-Creates a new multimesh on the RenderingServer and returns an :ref:`RID<class_RID>` handle. This RID will be used in all ``multimesh_*`` RenderingServer functions.
+新建多網格並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``multimesh_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach this multimesh to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個多網格放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
-\ **Note:** The equivalent resource is :ref:`MultiMesh<class_MultiMesh>`.
+\ **注意：**\ 與其等價的資源為 :ref:`MultiMesh<class_MultiMesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10055,7 +10055,7 @@ To place in a scene, attach this multimesh to an instance using :ref:`instance_s
 
 :ref:`AABB<class_AABB>` **multimesh_get_aabb**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_get_aabb>`
 
-Calculates and returns the axis-aligned bounding box that encloses all instances within the multimesh.
+計算並返回軸對齊的邊界框，該邊界框將所有的實例都包含在 multimesh 中。
 
 .. rst-class:: classref-item-separator
 
@@ -10136,7 +10136,7 @@ Returns the custom AABB defined for this MultiMesh resource.
 
 :ref:`int<class_int>` **multimesh_get_instance_count**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_get_instance_count>`
 
-Returns the number of instances allocated for this multimesh.
+返回分配給這個 multimesh 的實例的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -10148,7 +10148,7 @@ Returns the number of instances allocated for this multimesh.
 
 :ref:`RID<class_RID>` **multimesh_get_mesh**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_get_mesh>`
 
-Returns the RID of the mesh that will be used in drawing this multimesh.
+返回用於繪製此 multimesh 的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -10160,7 +10160,7 @@ Returns the RID of the mesh that will be used in drawing this multimesh.
 
 :ref:`int<class_int>` **multimesh_get_visible_instances**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_get_visible_instances>`
 
-Returns the number of visible instances for this multimesh.
+返回此 multimesh 的可見實例數。
 
 .. rst-class:: classref-item-separator
 
@@ -10172,7 +10172,7 @@ Returns the number of visible instances for this multimesh.
 
 :ref:`Color<class_Color>` **multimesh_instance_get_color**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_instance_get_color>`
 
-Returns the color by which the specified instance will be modulated.
+返回指定實例將被調變的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -10184,7 +10184,7 @@ Returns the color by which the specified instance will be modulated.
 
 :ref:`Color<class_Color>` **multimesh_instance_get_custom_data**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_instance_get_custom_data>`
 
-Returns the custom data associated with the specified instance.
+返回與指定實例相關的自訂資料。
 
 .. rst-class:: classref-item-separator
 
@@ -10196,7 +10196,7 @@ Returns the custom data associated with the specified instance.
 
 :ref:`Transform3D<class_Transform3D>` **multimesh_instance_get_transform**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_instance_get_transform>`
 
-Returns the :ref:`Transform3D<class_Transform3D>` of the specified instance.
+返回指定實例的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10208,7 +10208,7 @@ Returns the :ref:`Transform3D<class_Transform3D>` of the specified instance.
 
 :ref:`Transform2D<class_Transform2D>` **multimesh_instance_get_transform_2d**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_multimesh_instance_get_transform_2d>`
 
-Returns the :ref:`Transform2D<class_Transform2D>` of the specified instance. For use when the multimesh is set to use 2D transforms.
+返回指定實例的 :ref:`Transform2D<class_Transform2D>`\ 。只在 multimesh 設定為使用 2D 變換時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -10234,7 +10234,7 @@ This is useful when moving an instance to a new location, to give an instantaneo
 
 |void| **multimesh_instance_set_color**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instance_set_color>`
 
-Sets the color by which this instance will be modulated. Equivalent to :ref:`MultiMesh.set_instance_color()<class_MultiMesh_method_set_instance_color>`.
+設定這個實例的調變顏色。相當於 :ref:`MultiMesh.set_instance_color()<class_MultiMesh_method_set_instance_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10246,7 +10246,7 @@ Sets the color by which this instance will be modulated. Equivalent to :ref:`Mul
 
 |void| **multimesh_instance_set_custom_data**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`, custom_data\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instance_set_custom_data>`
 
-Sets the custom data for this instance. Custom data is passed as a :ref:`Color<class_Color>`, but is interpreted as a ``vec4`` in the shader. Equivalent to :ref:`MultiMesh.set_instance_custom_data()<class_MultiMesh_method_set_instance_custom_data>`.
+為這個實例設定自訂資料。自訂資料以 :ref:`Color<class_Color>` 的形式傳遞，但在著色器中會被解釋為 ``vec4``\ 。相當於 :ref:`MultiMesh.set_instance_custom_data()<class_MultiMesh_method_set_instance_custom_data>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10258,7 +10258,7 @@ Sets the custom data for this instance. Custom data is passed as a :ref:`Color<c
 
 |void| **multimesh_instance_set_transform**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instance_set_transform>`
 
-Sets the :ref:`Transform3D<class_Transform3D>` for this instance. Equivalent to :ref:`MultiMesh.set_instance_transform()<class_MultiMesh_method_set_instance_transform>`.
+為此實例設定 :ref:`Transform3D<class_Transform3D>`\ 。相當於 :ref:`MultiMesh.set_instance_transform()<class_MultiMesh_method_set_instance_transform>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10270,7 +10270,7 @@ Sets the :ref:`Transform3D<class_Transform3D>` for this instance. Equivalent to 
 
 |void| **multimesh_instance_set_transform_2d**\ (\ multimesh\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instance_set_transform_2d>`
 
-Sets the :ref:`Transform2D<class_Transform2D>` for this instance. For use when multimesh is used in 2D. Equivalent to :ref:`MultiMesh.set_instance_transform_2d()<class_MultiMesh_method_set_instance_transform_2d>`.
+為此實例設定 :ref:`Transform2D<class_Transform2D>`\ 。用於在 2D 中使用 multimesh 時。相當於 :ref:`MultiMesh.set_instance_transform_2d()<class_MultiMesh_method_set_instance_transform_2d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10355,7 +10355,7 @@ Sets the custom AABB for this MultiMesh resource.
 
 |void| **multimesh_set_mesh**\ (\ multimesh\: :ref:`RID<class_RID>`, mesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_set_mesh>`
 
-Sets the mesh to be drawn by the multimesh. Equivalent to :ref:`MultiMesh.mesh<class_MultiMesh_property_mesh>`.
+設定 Multimesh 所要繪製的網格。相當於 :ref:`MultiMesh.mesh<class_MultiMesh_property_mesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10393,7 +10393,7 @@ A value of :ref:`MULTIMESH_INTERP_QUALITY_FAST<class_RenderingServer_constant_MU
 
 |void| **multimesh_set_visible_instances**\ (\ multimesh\: :ref:`RID<class_RID>`, visible\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_set_visible_instances>`
 
-Sets the number of instances visible at a given time. If -1, all instances that have been allocated are drawn. Equivalent to :ref:`MultiMesh.visible_instance_count<class_MultiMesh_property_visible_instance_count>`.
+設定在給定時間內可見的實例的數量。如果是 -1，所有被分配的實例都會被畫出來。相當於 :ref:`MultiMesh.visible_instance_count<class_MultiMesh_property_visible_instance_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10405,11 +10405,11 @@ Sets the number of instances visible at a given time. If -1, all instances that 
 
 :ref:`RID<class_RID>` **occluder_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_occluder_create>`
 
-Creates an occluder instance and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``occluder_*`` RenderingServer functions.
+建立遮擋器實例並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``occluder_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`Occluder3D<class_Occluder3D>` (not to be confused with the :ref:`OccluderInstance3D<class_OccluderInstance3D>` node).
+\ **注意：**\ 與其等價的資源為 :ref:`Occluder3D<class_Occluder3D>`\ （請勿與 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 節點混淆）。
 
 .. rst-class:: classref-item-separator
 
@@ -10421,7 +10421,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **occluder_set_mesh**\ (\ occluder\: :ref:`RID<class_RID>`, vertices\: :ref:`PackedVector3Array<class_PackedVector3Array>`, indices\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_RenderingServer_method_occluder_set_mesh>`
 
-Sets the mesh data for the given occluder RID, which controls the shape of the occlusion culling that will be performed.
+設定給定遮擋器 RID 的網格資料，控制執行遮擋剔除時的形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -10433,13 +10433,13 @@ Sets the mesh data for the given occluder RID, which controls the shape of the o
 
 :ref:`RID<class_RID>` **omni_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_omni_light_create>`
 
-Creates a new omni light and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID can be used in most ``light_*`` RenderingServer functions.
+建立一個新的全向燈並將其新增到 RenderingServer。可以使用返回的 RID 存取它。該 RID 可用於大多數 ``light_*`` RenderingServer 函式。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+一旦使用 RID 完成操作後，需要使用 RenderingServer 的方法 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 來釋放該 RID。
 
-To place in a scene, attach this omni light to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+要放置在場景中，請使用 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` 使用該返回的 RID 將該全向燈附加到一個實例。
 
-\ **Note:** The equivalent node is :ref:`OmniLight3D<class_OmniLight3D>`.
+\ **注意：**\ 等價節點為 :ref:`OmniLight3D<class_OmniLight3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10451,9 +10451,9 @@ To place in a scene, attach this omni light to an instance using :ref:`instance_
 
 :ref:`RID<class_RID>` **particles_collision_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_create>`
 
-Creates a new 3D GPU particle collision or attractor and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID can be used in most ``particles_collision_*`` RenderingServer functions.
+新建 3D GPU 粒子碰撞或吸引器並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``particles_collision_*`` RenderingServer 函式中使用。
 
-\ **Note:** The equivalent nodes are :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` and :ref:`GPUParticlesAttractor3D<class_GPUParticlesAttractor3D>`.
+\ **注意：**\ 等價節點為 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 和 :ref:`GPUParticlesAttractor3D<class_GPUParticlesAttractor3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10465,7 +10465,7 @@ Creates a new 3D GPU particle collision or attractor and adds it to the Renderin
 
 |void| **particles_collision_height_field_update**\ (\ particles_collision\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_height_field_update>`
 
-Requests an update for the 3D GPU particle collision heightfield. This may be automatically called by the 3D GPU particle collision heightfield depending on its :ref:`GPUParticlesCollisionHeightField3D.update_mode<class_GPUParticlesCollisionHeightField3D_property_update_mode>`.
+請求對 3D GPU 粒子碰撞高度圖進行更新。3D GPU 粒子碰撞高度圖可能會自動呼叫這個函式，取決於 :ref:`GPUParticlesCollisionHeightField3D.update_mode<class_GPUParticlesCollisionHeightField3D_property_update_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10477,7 +10477,7 @@ Requests an update for the 3D GPU particle collision heightfield. This may be au
 
 |void| **particles_collision_set_attractor_attenuation**\ (\ particles_collision\: :ref:`RID<class_RID>`, curve\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_attractor_attenuation>`
 
-Sets the attenuation ``curve`` for the 3D GPU particles attractor specified by the ``particles_collision`` RID. Only used for attractors, not colliders. Equivalent to :ref:`GPUParticlesAttractor3D.attenuation<class_GPUParticlesAttractor3D_property_attenuation>`.
+為 RID 為 ``particles_collision`` 的 3D GPU 粒子吸引器設定衰減曲線 ``curve``\ 。僅用於吸引器，對碰撞體不適用。等價於 :ref:`GPUParticlesAttractor3D.attenuation<class_GPUParticlesAttractor3D_property_attenuation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10489,7 +10489,7 @@ Sets the attenuation ``curve`` for the 3D GPU particles attractor specified by t
 
 |void| **particles_collision_set_attractor_directionality**\ (\ particles_collision\: :ref:`RID<class_RID>`, amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_attractor_directionality>`
 
-Sets the directionality ``amount`` for the 3D GPU particles attractor specified by the ``particles_collision`` RID. Only used for attractors, not colliders. Equivalent to :ref:`GPUParticlesAttractor3D.directionality<class_GPUParticlesAttractor3D_property_directionality>`.
+設定 3D GPU 粒子吸引器的方向量 ``amount``\ ，吸引器由 RID ``particles_collision`` 指定。僅用於吸引器，不適用於碰撞體。等價於 :ref:`GPUParticlesAttractor3D.directionality<class_GPUParticlesAttractor3D_property_directionality>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10501,7 +10501,7 @@ Sets the directionality ``amount`` for the 3D GPU particles attractor specified 
 
 |void| **particles_collision_set_attractor_strength**\ (\ particles_collision\: :ref:`RID<class_RID>`, strength\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_attractor_strength>`
 
-Sets the ``strength`` for the 3D GPU particles attractor specified by the ``particles_collision`` RID. Only used for attractors, not colliders. Equivalent to :ref:`GPUParticlesAttractor3D.strength<class_GPUParticlesAttractor3D_property_strength>`.
+設定 3D GPU 粒子吸引器的強度 ``strength``\ ，吸引器由 RID ``particles_collision`` 指定。僅用於吸引器，不適用於碰撞體。等價於 :ref:`GPUParticlesAttractor3D.strength<class_GPUParticlesAttractor3D_property_strength>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10513,7 +10513,7 @@ Sets the ``strength`` for the 3D GPU particles attractor specified by the ``part
 
 |void| **particles_collision_set_box_extents**\ (\ particles_collision\: :ref:`RID<class_RID>`, extents\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_box_extents>`
 
-Sets the ``extents`` for the 3D GPU particles collision by the ``particles_collision`` RID. Equivalent to :ref:`GPUParticlesCollisionBox3D.size<class_GPUParticlesCollisionBox3D_property_size>`, :ref:`GPUParticlesCollisionSDF3D.size<class_GPUParticlesCollisionSDF3D_property_size>`, :ref:`GPUParticlesCollisionHeightField3D.size<class_GPUParticlesCollisionHeightField3D_property_size>`, :ref:`GPUParticlesAttractorBox3D.size<class_GPUParticlesAttractorBox3D_property_size>` or :ref:`GPUParticlesAttractorVectorField3D.size<class_GPUParticlesAttractorVectorField3D_property_size>` depending on the ``particles_collision`` type.
+設定 3D GPU 粒子吸引器的範圍 ``extents``\ ，吸引器由 RID ``particles_collision`` 指定。根據 ``particles_collision`` 型別的不同，等價於 :ref:`GPUParticlesCollisionBox3D.size<class_GPUParticlesCollisionBox3D_property_size>`\ 、\ :ref:`GPUParticlesCollisionSDF3D.size<class_GPUParticlesCollisionSDF3D_property_size>`\ 、\ :ref:`GPUParticlesCollisionHeightField3D.size<class_GPUParticlesCollisionHeightField3D_property_size>`\ 、\ :ref:`GPUParticlesAttractorBox3D.size<class_GPUParticlesAttractorBox3D_property_size>`\ 、\ :ref:`GPUParticlesAttractorVectorField3D.size<class_GPUParticlesAttractorVectorField3D_property_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10525,7 +10525,7 @@ Sets the ``extents`` for the 3D GPU particles collision by the ``particles_colli
 
 |void| **particles_collision_set_collision_type**\ (\ particles_collision\: :ref:`RID<class_RID>`, type\: :ref:`ParticlesCollisionType<enum_RenderingServer_ParticlesCollisionType>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_collision_type>`
 
-Sets the collision or attractor shape ``type`` for the 3D GPU particles collision or attractor specified by the ``particles_collision`` RID.
+設定 3D GPU 粒子碰撞或吸引器的形狀型別 ``type``\ ，碰撞或吸引器由 RID ``particles_collision`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -10537,7 +10537,7 @@ Sets the collision or attractor shape ``type`` for the 3D GPU particles collisio
 
 |void| **particles_collision_set_cull_mask**\ (\ particles_collision\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_cull_mask>`
 
-Sets the cull ``mask`` for the 3D GPU particles collision or attractor specified by the ``particles_collision`` RID. Equivalent to :ref:`GPUParticlesCollision3D.cull_mask<class_GPUParticlesCollision3D_property_cull_mask>` or :ref:`GPUParticlesAttractor3D.cull_mask<class_GPUParticlesAttractor3D_property_cull_mask>` depending on the ``particles_collision`` type.
+設定 3D GPU 粒子碰撞或吸引器的剔除遮罩 ``mask``\ ，碰撞或吸引器由 RID ``particles_collision`` 指定。根據 ``particles_collision`` 型別的不同，等價於 :ref:`GPUParticlesCollision3D.cull_mask<class_GPUParticlesCollision3D_property_cull_mask>` 或 :ref:`GPUParticlesAttractor3D.cull_mask<class_GPUParticlesAttractor3D_property_cull_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10549,7 +10549,7 @@ Sets the cull ``mask`` for the 3D GPU particles collision or attractor specified
 
 |void| **particles_collision_set_field_texture**\ (\ particles_collision\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_field_texture>`
 
-Sets the signed distance field ``texture`` for the 3D GPU particles collision specified by the ``particles_collision`` RID. Equivalent to :ref:`GPUParticlesCollisionSDF3D.texture<class_GPUParticlesCollisionSDF3D_property_texture>` or :ref:`GPUParticlesAttractorVectorField3D.texture<class_GPUParticlesAttractorVectorField3D_property_texture>` depending on the ``particles_collision`` type.
+設定 3D GPU 粒子碰撞的帶符號距離場紋理 ``texture``\ ，碰撞由 RID ``particles_collision`` 指定。根據 ``particles_collision`` 型別的不同，等價於 :ref:`GPUParticlesCollisionSDF3D.texture<class_GPUParticlesCollisionSDF3D_property_texture>` 或 :ref:`GPUParticlesAttractorVectorField3D.texture<class_GPUParticlesAttractorVectorField3D_property_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10573,7 +10573,7 @@ Sets the heightfield ``mask`` for the 3D GPU particles heightfield collision spe
 
 |void| **particles_collision_set_height_field_resolution**\ (\ particles_collision\: :ref:`RID<class_RID>`, resolution\: :ref:`ParticlesCollisionHeightfieldResolution<enum_RenderingServer_ParticlesCollisionHeightfieldResolution>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_height_field_resolution>`
 
-Sets the heightmap ``resolution`` for the 3D GPU particles heightfield collision specified by the ``particles_collision`` RID. Equivalent to :ref:`GPUParticlesCollisionHeightField3D.resolution<class_GPUParticlesCollisionHeightField3D_property_resolution>`.
+設定 3D GPU 粒子高度圖碰撞的高度圖解析度 ``resolution``\ ，碰撞由 RID ``particles_collision`` 指定。等價於 :ref:`GPUParticlesCollisionHeightField3D.resolution<class_GPUParticlesCollisionHeightField3D_property_resolution>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10585,7 +10585,7 @@ Sets the heightmap ``resolution`` for the 3D GPU particles heightfield collision
 
 |void| **particles_collision_set_sphere_radius**\ (\ particles_collision\: :ref:`RID<class_RID>`, radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_collision_set_sphere_radius>`
 
-Sets the ``radius`` for the 3D GPU particles sphere collision or attractor specified by the ``particles_collision`` RID. Equivalent to :ref:`GPUParticlesCollisionSphere3D.radius<class_GPUParticlesCollisionSphere3D_property_radius>` or :ref:`GPUParticlesAttractorSphere3D.radius<class_GPUParticlesAttractorSphere3D_property_radius>` depending on the ``particles_collision`` type.
+設定 3D GPU 粒子球體碰撞或吸引器的半徑 ``radius``\ ，碰撞或吸引器由 RID ``particles_collision`` 指定。根據 ``particles_collision`` 型別的不同，等價於 :ref:`GPUParticlesCollisionSphere3D.radius<class_GPUParticlesCollisionSphere3D_property_radius>` 或 :ref:`GPUParticlesAttractorSphere3D.radius<class_GPUParticlesAttractorSphere3D_property_radius>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10597,15 +10597,15 @@ Sets the ``radius`` for the 3D GPU particles sphere collision or attractor speci
 
 :ref:`RID<class_RID>` **particles_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_particles_create>`
 
-Creates a GPU-based particle system and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``particles_*`` RenderingServer functions.
+建立基於 GPU 的粒子系統並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``particles_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach these particles to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個粒子系統放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
-\ **Note:** The equivalent nodes are :ref:`GPUParticles2D<class_GPUParticles2D>` and :ref:`GPUParticles3D<class_GPUParticles3D>`.
+\ **注意：**\ 等價節點為 :ref:`GPUParticles2D<class_GPUParticles2D>` 和 :ref:`GPUParticles3D<class_GPUParticles3D>`\ 。
 
-\ **Note:** All ``particles_*`` methods only apply to GPU-based particles, not CPU-based particles. :ref:`CPUParticles2D<class_CPUParticles2D>` and :ref:`CPUParticles3D<class_CPUParticles3D>` do not have equivalent RenderingServer functions available, as these use :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` and :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>` under the hood (see ``multimesh_*`` methods).
+\ **注意：**\ 所有 ``particles_*`` 方法都僅適用於基於 GPU 的粒子，不適用於基於 CPU 的粒子。RenderingServer 中沒有 :ref:`CPUParticles2D<class_CPUParticles2D>` 和 :ref:`CPUParticles3D<class_CPUParticles3D>` 的等價函式，因為這兩個節點底層使用的是 :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` 和 :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>`\ （見 ``multimesh_*`` 方法）。
 
 .. rst-class:: classref-item-separator
 
@@ -10617,7 +10617,7 @@ To place in a scene, attach these particles to an instance using :ref:`instance_
 
 |void| **particles_emit**\ (\ particles\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>`, velocity\: :ref:`Vector3<class_Vector3>`, color\: :ref:`Color<class_Color>`, custom\: :ref:`Color<class_Color>`, emit_flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_particles_emit>`
 
-Manually emits particles from the ``particles`` instance.
+從 ``particles`` 實例中手動發射粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -10629,7 +10629,7 @@ Manually emits particles from the ``particles`` instance.
 
 :ref:`AABB<class_AABB>` **particles_get_current_aabb**\ (\ particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_get_current_aabb>`
 
-Calculates and returns the axis-aligned bounding box that contains all the particles. Equivalent to :ref:`GPUParticles3D.capture_aabb()<class_GPUParticles3D_method_capture_aabb>`.
+計算並返回包含所有粒子的軸對齊邊界框。相當於 :ref:`GPUParticles3D.capture_aabb()<class_GPUParticles3D_method_capture_aabb>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10641,7 +10641,7 @@ Calculates and returns the axis-aligned bounding box that contains all the parti
 
 :ref:`bool<class_bool>` **particles_get_emitting**\ (\ particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_get_emitting>`
 
-Returns ``true`` if particles are currently set to emitting.
+如果目前粒子被設定發射，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10653,7 +10653,7 @@ Returns ``true`` if particles are currently set to emitting.
 
 :ref:`bool<class_bool>` **particles_is_inactive**\ (\ particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_is_inactive>`
 
-Returns ``true`` if particles are not emitting and particles are set to inactive.
+如果粒子沒有發射並且粒子設定為非活動狀態，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10665,7 +10665,7 @@ Returns ``true`` if particles are not emitting and particles are set to inactive
 
 |void| **particles_request_process**\ (\ particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_request_process>`
 
-Add particle system to list of particle systems that need to be updated. Update will take place on the next frame, or on the next call to :ref:`instances_cull_aabb()<class_RenderingServer_method_instances_cull_aabb>`, :ref:`instances_cull_convex()<class_RenderingServer_method_instances_cull_convex>`, or :ref:`instances_cull_ray()<class_RenderingServer_method_instances_cull_ray>`.
+將粒子系統新增到需要更新的粒子系統列表中。更新將在下一影格或下一次呼叫 :ref:`instances_cull_aabb()<class_RenderingServer_method_instances_cull_aabb>`\ 、\ :ref:`instances_cull_convex()<class_RenderingServer_method_instances_cull_convex>` 或 :ref:`instances_cull_ray()<class_RenderingServer_method_instances_cull_ray>` 時進行。
 
 .. rst-class:: classref-item-separator
 
@@ -10689,7 +10689,7 @@ Requests particles to process for extra process time during a single frame.
 
 |void| **particles_restart**\ (\ particles\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_restart>`
 
-Reset the particles on the next update. Equivalent to :ref:`GPUParticles3D.restart()<class_GPUParticles3D_method_restart>`.
+下次更新時重設粒子。相當於 :ref:`GPUParticles3D.restart()<class_GPUParticles3D_method_restart>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10701,7 +10701,7 @@ Reset the particles on the next update. Equivalent to :ref:`GPUParticles3D.resta
 
 |void| **particles_set_amount**\ (\ particles\: :ref:`RID<class_RID>`, amount\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_amount>`
 
-Sets the number of particles to be drawn and allocates the memory for them. Equivalent to :ref:`GPUParticles3D.amount<class_GPUParticles3D_property_amount>`.
+設定要繪製的粒子的數量，並為其分配記憶體。相當於 :ref:`GPUParticles3D.amount<class_GPUParticles3D_property_amount>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10739,7 +10739,7 @@ Sets the amount ratio for particles to be emitted. Equivalent to :ref:`GPUPartic
 
 |void| **particles_set_custom_aabb**\ (\ particles\: :ref:`RID<class_RID>`, aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_custom_aabb>`
 
-Sets a custom axis-aligned bounding box for the particle system. Equivalent to :ref:`GPUParticles3D.visibility_aabb<class_GPUParticles3D_property_visibility_aabb>`.
+設定粒子系統的自訂軸對齊邊界框。相當於 :ref:`GPUParticles3D.visibility_aabb<class_GPUParticles3D_property_visibility_aabb>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10763,7 +10763,7 @@ Sets the draw order of the particles. Equivalent to :ref:`GPUParticles3D.draw_or
 
 |void| **particles_set_draw_pass_mesh**\ (\ particles\: :ref:`RID<class_RID>`, pass\: :ref:`int<class_int>`, mesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_draw_pass_mesh>`
 
-Sets the mesh to be used for the specified draw pass. Equivalent to :ref:`GPUParticles3D.draw_pass_1<class_GPUParticles3D_property_draw_pass_1>`, :ref:`GPUParticles3D.draw_pass_2<class_GPUParticles3D_property_draw_pass_2>`, :ref:`GPUParticles3D.draw_pass_3<class_GPUParticles3D_property_draw_pass_3>`, and :ref:`GPUParticles3D.draw_pass_4<class_GPUParticles3D_property_draw_pass_4>`.
+設定用於指定繪製階段的網格。相當於 :ref:`GPUParticles3D.draw_pass_1<class_GPUParticles3D_property_draw_pass_1>`\ 、\ :ref:`GPUParticles3D.draw_pass_2<class_GPUParticles3D_property_draw_pass_2>`\ 、\ :ref:`GPUParticles3D.draw_pass_3<class_GPUParticles3D_property_draw_pass_3>`\ 、和 :ref:`GPUParticles3D.draw_pass_4<class_GPUParticles3D_property_draw_pass_4>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10775,7 +10775,7 @@ Sets the mesh to be used for the specified draw pass. Equivalent to :ref:`GPUPar
 
 |void| **particles_set_draw_passes**\ (\ particles\: :ref:`RID<class_RID>`, count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_draw_passes>`
 
-Sets the number of draw passes to use. Equivalent to :ref:`GPUParticles3D.draw_passes<class_GPUParticles3D_property_draw_passes>`.
+設定要使用的繪製階段的數量。相當於 :ref:`GPUParticles3D.draw_passes<class_GPUParticles3D_property_draw_passes>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10787,7 +10787,7 @@ Sets the number of draw passes to use. Equivalent to :ref:`GPUParticles3D.draw_p
 
 |void| **particles_set_emission_transform**\ (\ particles\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_emission_transform>`
 
-Sets the :ref:`Transform3D<class_Transform3D>` that will be used by the particles when they first emit.
+設定粒子首次發射時使用的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10823,7 +10823,7 @@ If ``true``, particles will emit over time. Setting to ``false`` does not reset 
 
 |void| **particles_set_explosiveness_ratio**\ (\ particles\: :ref:`RID<class_RID>`, ratio\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_explosiveness_ratio>`
 
-Sets the explosiveness ratio. Equivalent to :ref:`GPUParticles3D.explosiveness<class_GPUParticles3D_property_explosiveness>`.
+設定爆發比例。相當於 :ref:`GPUParticles3D.explosiveness<class_GPUParticles3D_property_explosiveness>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10835,7 +10835,7 @@ Sets the explosiveness ratio. Equivalent to :ref:`GPUParticles3D.explosiveness<c
 
 |void| **particles_set_fixed_fps**\ (\ particles\: :ref:`RID<class_RID>`, fps\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_fixed_fps>`
 
-Sets the frame rate that the particle system rendering will be fixed to. Equivalent to :ref:`GPUParticles3D.fixed_fps<class_GPUParticles3D_property_fixed_fps>`.
+設定粒子系統算繪的固定影格率。相當於 :ref:`GPUParticles3D.fixed_fps<class_GPUParticles3D_property_fixed_fps>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10847,7 +10847,7 @@ Sets the frame rate that the particle system rendering will be fixed to. Equival
 
 |void| **particles_set_fractional_delta**\ (\ particles\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_fractional_delta>`
 
-If ``true``, uses fractional delta which smooths the movement of the particles. Equivalent to :ref:`GPUParticles3D.fract_delta<class_GPUParticles3D_property_fract_delta>`.
+如果為 ``true``\ ，則使用分數差異量來平滑粒子的運動。相當於 :ref:`GPUParticles3D.fract_delta<class_GPUParticles3D_property_fract_delta>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10885,7 +10885,7 @@ Sets the value that informs a :ref:`ParticleProcessMaterial<class_ParticleProces
 
 |void| **particles_set_lifetime**\ (\ particles\: :ref:`RID<class_RID>`, lifetime\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_lifetime>`
 
-Sets the lifetime of each particle in the system. Equivalent to :ref:`GPUParticles3D.lifetime<class_GPUParticles3D_property_lifetime>`.
+設定系統中每個粒子的生命週期。相當於 :ref:`GPUParticles3D.lifetime<class_GPUParticles3D_property_lifetime>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10897,7 +10897,7 @@ Sets the lifetime of each particle in the system. Equivalent to :ref:`GPUParticl
 
 |void| **particles_set_mode**\ (\ particles\: :ref:`RID<class_RID>`, mode\: :ref:`ParticlesMode<enum_RenderingServer_ParticlesMode>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_mode>`
 
-Sets whether the GPU particles specified by the ``particles`` RID should be rendered in 2D or 3D according to ``mode``.
+設定由 RID ``particles`` 指定的 GPU 粒子是否應該根據 ``mode`` 在 2D 或 3D 中算繪。
 
 .. rst-class:: classref-item-separator
 
@@ -10909,7 +10909,7 @@ Sets whether the GPU particles specified by the ``particles`` RID should be rend
 
 |void| **particles_set_one_shot**\ (\ particles\: :ref:`RID<class_RID>`, one_shot\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_one_shot>`
 
-If ``true``, particles will emit once and then stop. Equivalent to :ref:`GPUParticles3D.one_shot<class_GPUParticles3D_property_one_shot>`.
+如果為 ``true``\ ，則粒子將發射一次然後停止。相當於 :ref:`GPUParticles3D.one_shot<class_GPUParticles3D_property_one_shot>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10921,7 +10921,7 @@ If ``true``, particles will emit once and then stop. Equivalent to :ref:`GPUPart
 
 |void| **particles_set_pre_process_time**\ (\ particles\: :ref:`RID<class_RID>`, time\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_pre_process_time>`
 
-Sets the preprocess time for the particles' animation. This lets you delay starting an animation until after the particles have begun emitting. Equivalent to :ref:`GPUParticles3D.preprocess<class_GPUParticles3D_property_preprocess>`.
+設定粒子動畫的預處理時間。這樣可以讓動畫延遲到粒子開始發射之後再開始。相當於 :ref:`GPUParticles3D.preprocess<class_GPUParticles3D_property_preprocess>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10933,9 +10933,9 @@ Sets the preprocess time for the particles' animation. This lets you delay start
 
 |void| **particles_set_process_material**\ (\ particles\: :ref:`RID<class_RID>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_process_material>`
 
-Sets the material for processing the particles.
+設定用於處理粒子的材質。
 
-\ **Note:** This is not the material used to draw the materials. Equivalent to :ref:`GPUParticles3D.process_material<class_GPUParticles3D_property_process_material>`.
+\ **注意：**\ 這不是用來繪製材質的材質。相當於 :ref:`GPUParticles3D.process_material<class_GPUParticles3D_property_process_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10947,7 +10947,7 @@ Sets the material for processing the particles.
 
 |void| **particles_set_randomness_ratio**\ (\ particles\: :ref:`RID<class_RID>`, ratio\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_randomness_ratio>`
 
-Sets the emission randomness ratio. This randomizes the emission of particles within their phase. Equivalent to :ref:`GPUParticles3D.randomness<class_GPUParticles3D_property_randomness>`.
+設定發射隨機性比例。會隨機化該粒子在其相位內的發射。相當於 :ref:`GPUParticles3D.randomness<class_GPUParticles3D_property_randomness>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10959,7 +10959,7 @@ Sets the emission randomness ratio. This randomizes the emission of particles wi
 
 |void| **particles_set_speed_scale**\ (\ particles\: :ref:`RID<class_RID>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_speed_scale>`
 
-Sets the speed scale of the particle system. Equivalent to :ref:`GPUParticles3D.speed_scale<class_GPUParticles3D_property_speed_scale>`.
+設定粒子系統的速度縮放。相當於 :ref:`GPUParticles3D.speed_scale<class_GPUParticles3D_property_speed_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10999,7 +10999,7 @@ Sets the speed scale of the particle system. Equivalent to :ref:`GPUParticles3D.
 
 |void| **particles_set_trails**\ (\ particles\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`, length_sec\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_trails>`
 
-If ``enable`` is ``true``, enables trails for the ``particles`` with the specified ``length_sec`` in seconds. Equivalent to :ref:`GPUParticles3D.trail_enabled<class_GPUParticles3D_property_trail_enabled>` and :ref:`GPUParticles3D.trail_lifetime<class_GPUParticles3D_property_trail_lifetime>`.
+如果 ``enable`` 為 ``true``\ ，則會為 ``particles`` 啟用尾跡，長度為 ``length_sec`` 秒。等價於 :ref:`GPUParticles3D.trail_enabled<class_GPUParticles3D_property_trail_enabled>` 和 :ref:`GPUParticles3D.trail_lifetime<class_GPUParticles3D_property_trail_lifetime>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11025,7 +11025,7 @@ If ``enable`` is ``true``, enables trails for the ``particles`` with the specifi
 
 |void| **particles_set_use_local_coordinates**\ (\ particles\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_particles_set_use_local_coordinates>`
 
-If ``true``, particles use local coordinates. If ``false`` they use global coordinates. Equivalent to :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>`.
+如果為 ``true``\ ，則粒子使用局部座標。如果為 ``false`` 則使用全域座標。相當於 :ref:`GPUParticles3D.local_coords<class_GPUParticles3D_property_local_coords>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11037,7 +11037,7 @@ If ``true``, particles use local coordinates. If ``false`` they use global coord
 
 |void| **positional_soft_shadow_filter_set_quality**\ (\ quality\: :ref:`ShadowQuality<enum_RenderingServer_ShadowQuality>`\ ) :ref:`🔗<class_RenderingServer_method_positional_soft_shadow_filter_set_quality>`
 
-Sets the filter quality for omni and spot light shadows in 3D. See also :ref:`ProjectSettings.rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>`. This parameter is global and cannot be set on a per-viewport basis.
+設定 3D 全向燈和聚光燈陰影的篩選品質。另見 :ref:`ProjectSettings.rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/soft_shadow_filter_quality>`\ 。這個參數是全域的，無法針對單個視口設定。
 
 .. rst-class:: classref-item-separator
 
@@ -11049,13 +11049,13 @@ Sets the filter quality for omni and spot light shadows in 3D. See also :ref:`Pr
 
 :ref:`RID<class_RID>` **reflection_probe_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_create>`
 
-Creates a reflection probe and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``reflection_probe_*`` RenderingServer functions.
+建立反射探查並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``reflection_probe_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach this reflection probe to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個反射探查放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
-\ **Note:** The equivalent node is :ref:`ReflectionProbe<class_ReflectionProbe>`.
+\ **注意：**\ 等價節點為 :ref:`ReflectionProbe<class_ReflectionProbe>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11067,7 +11067,7 @@ To place in a scene, attach this reflection probe to an instance using :ref:`ins
 
 |void| **reflection_probe_set_ambient_color**\ (\ probe\: :ref:`RID<class_RID>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_ambient_color>`
 
-Sets the reflection probe's custom ambient light color. Equivalent to :ref:`ReflectionProbe.ambient_color<class_ReflectionProbe_property_ambient_color>`.
+設定反射探查的自訂環境光顏色。等價於 :ref:`ReflectionProbe.ambient_color<class_ReflectionProbe_property_ambient_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11079,7 +11079,7 @@ Sets the reflection probe's custom ambient light color. Equivalent to :ref:`Refl
 
 |void| **reflection_probe_set_ambient_energy**\ (\ probe\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_ambient_energy>`
 
-Sets the reflection probe's custom ambient light energy. Equivalent to :ref:`ReflectionProbe.ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`.
+設定反射探查的自訂環境光能量。等價於 :ref:`ReflectionProbe.ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11091,7 +11091,7 @@ Sets the reflection probe's custom ambient light energy. Equivalent to :ref:`Ref
 
 |void| **reflection_probe_set_ambient_mode**\ (\ probe\: :ref:`RID<class_RID>`, mode\: :ref:`ReflectionProbeAmbientMode<enum_RenderingServer_ReflectionProbeAmbientMode>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_ambient_mode>`
 
-Sets the reflection probe's ambient light mode. Equivalent to :ref:`ReflectionProbe.ambient_mode<class_ReflectionProbe_property_ambient_mode>`.
+設定反射探查的環境光模式。等價於 :ref:`ReflectionProbe.ambient_mode<class_ReflectionProbe_property_ambient_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11103,7 +11103,7 @@ Sets the reflection probe's ambient light mode. Equivalent to :ref:`ReflectionPr
 
 |void| **reflection_probe_set_as_interior**\ (\ probe\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_as_interior>`
 
-If ``true``, reflections will ignore sky contribution. Equivalent to :ref:`ReflectionProbe.interior<class_ReflectionProbe_property_interior>`.
+如果為 ``true``\ ，則反射將忽略天空的貢獻。相當於 :ref:`ReflectionProbe.interior<class_ReflectionProbe_property_interior>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11139,7 +11139,7 @@ Sets the render cull mask for this reflection probe. Only instances with a match
 
 |void| **reflection_probe_set_enable_box_projection**\ (\ probe\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_enable_box_projection>`
 
-If ``true``, uses box projection. This can make reflections look more correct in certain situations. Equivalent to :ref:`ReflectionProbe.box_projection<class_ReflectionProbe_property_box_projection>`.
+如果為 ``true``\ ，則使用箱體投影。這可以使反射在某些情況下看起來更正確。相當於 :ref:`ReflectionProbe.box_projection<class_ReflectionProbe_property_box_projection>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11151,7 +11151,7 @@ If ``true``, uses box projection. This can make reflections look more correct in
 
 |void| **reflection_probe_set_enable_shadows**\ (\ probe\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_enable_shadows>`
 
-If ``true``, computes shadows in the reflection probe. This makes the reflection much slower to compute. Equivalent to :ref:`ReflectionProbe.enable_shadows<class_ReflectionProbe_property_enable_shadows>`.
+如果為 ``true``\ ，計算反射探查中的陰影。這會使得反射的計算速度慢得多。相當於 :ref:`ReflectionProbe.enable_shadows<class_ReflectionProbe_property_enable_shadows>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11163,7 +11163,7 @@ If ``true``, computes shadows in the reflection probe. This makes the reflection
 
 |void| **reflection_probe_set_intensity**\ (\ probe\: :ref:`RID<class_RID>`, intensity\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_intensity>`
 
-Sets the intensity of the reflection probe. Intensity modulates the strength of the reflection. Equivalent to :ref:`ReflectionProbe.intensity<class_ReflectionProbe_property_intensity>`.
+設定反射探查的強度。強度調節反射的強度。相當於 :ref:`ReflectionProbe.intensity<class_ReflectionProbe_property_intensity>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11175,7 +11175,7 @@ Sets the intensity of the reflection probe. Intensity modulates the strength of 
 
 |void| **reflection_probe_set_max_distance**\ (\ probe\: :ref:`RID<class_RID>`, distance\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_max_distance>`
 
-Sets the max distance away from the probe an object can be before it is culled. Equivalent to :ref:`ReflectionProbe.max_distance<class_ReflectionProbe_property_max_distance>`.
+設定物體在被刪除前與探查的最大距離。相當於 :ref:`ReflectionProbe.max_distance<class_ReflectionProbe_property_max_distance>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11187,7 +11187,7 @@ Sets the max distance away from the probe an object can be before it is culled. 
 
 |void| **reflection_probe_set_mesh_lod_threshold**\ (\ probe\: :ref:`RID<class_RID>`, pixels\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_mesh_lod_threshold>`
 
-Sets the mesh level of detail to use in the reflection probe rendering. Higher values will use less detailed versions of meshes that have LOD variations generated, which can improve performance. Equivalent to :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`.
+設定算繪反射探查時所使用的網格細節級別。值越高，生成了 LOD 變體的網格所使用的版本細節就越低，能夠提升性能。等價於 :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11199,7 +11199,7 @@ Sets the mesh level of detail to use in the reflection probe rendering. Higher v
 
 |void| **reflection_probe_set_origin_offset**\ (\ probe\: :ref:`RID<class_RID>`, offset\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_origin_offset>`
 
-Sets the origin offset to be used when this reflection probe is in box project mode. Equivalent to :ref:`ReflectionProbe.origin_offset<class_ReflectionProbe_property_origin_offset>`.
+設定當此反射探查處於框專案模式時要使用的源偏移。相當於 :ref:`ReflectionProbe.origin_offset<class_ReflectionProbe_property_origin_offset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11223,7 +11223,7 @@ Sets the render reflection mask for this reflection probe. Only instances with a
 
 |void| **reflection_probe_set_resolution**\ (\ probe\: :ref:`RID<class_RID>`, resolution\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_resolution>`
 
-**Deprecated:** This method has not done anything since Godot 3.
+**已棄用：** This method has not done anything since Godot 3.
 
 Deprecated. This method does nothing.
 
@@ -11237,7 +11237,7 @@ Deprecated. This method does nothing.
 
 |void| **reflection_probe_set_size**\ (\ probe\: :ref:`RID<class_RID>`, size\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_RenderingServer_method_reflection_probe_set_size>`
 
-Sets the size of the area that the reflection probe will capture. Equivalent to :ref:`ReflectionProbe.size<class_ReflectionProbe_property_size>`.
+設定反射探查將捕獲的區域的大小。相當於 :ref:`ReflectionProbe.size<class_ReflectionProbe_property_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11261,7 +11261,7 @@ Sets how often the reflection probe updates. Can either be once or every frame.
 
 |void| **request_frame_drawn_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_RenderingServer_method_request_frame_drawn_callback>`
 
-Schedules a callback to the given callable after a frame has been drawn.
+安排對給定可呼叫體的回呼函式，會在一影格繪製完成後回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -11273,11 +11273,11 @@ Schedules a callback to the given callable after a frame has been drawn.
 
 :ref:`RID<class_RID>` **scenario_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_scenario_create>`
 
-Creates a scenario and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``scenario_*`` RenderingServer functions.
+建立場景並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``scenario_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-The scenario is the 3D world that all the visual instances exist in.
+場景是所有可視實例存在的 3D 世界。
 
 .. rst-class:: classref-item-separator
 
@@ -11289,7 +11289,7 @@ The scenario is the 3D world that all the visual instances exist in.
 
 |void| **scenario_set_camera_attributes**\ (\ scenario\: :ref:`RID<class_RID>`, effects\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_scenario_set_camera_attributes>`
 
-Sets the camera attributes (``effects``) that will be used with this scenario. See also :ref:`CameraAttributes<class_CameraAttributes>`.
+設定該場景會使用的相機屬性（\ ``effects``\ ）。另見 :ref:`CameraAttributes<class_CameraAttributes>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11313,7 +11313,7 @@ Sets the compositor (``compositor``) that will be used with this scenario. See a
 
 |void| **scenario_set_environment**\ (\ scenario\: :ref:`RID<class_RID>`, environment\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_scenario_set_environment>`
 
-Sets the environment that will be used with this scenario. See also :ref:`Environment<class_Environment>`.
+設定該場景會使用的環境。另見 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11325,7 +11325,7 @@ Sets the environment that will be used with this scenario. See also :ref:`Enviro
 
 |void| **scenario_set_fallback_environment**\ (\ scenario\: :ref:`RID<class_RID>`, environment\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_scenario_set_fallback_environment>`
 
-Sets the fallback environment to be used by this scenario. The fallback environment is used if no environment is set. Internally, this is used by the editor to provide a default environment.
+設定此方案所使用的後備環境。如果沒有設定環境，則使用後備環境。這被編輯器用來提供一個預設環境。
 
 .. rst-class:: classref-item-separator
 
@@ -11337,7 +11337,7 @@ Sets the fallback environment to be used by this scenario. The fallback environm
 
 |void| **screen_space_roughness_limiter_set_active**\ (\ enable\: :ref:`bool<class_bool>`, amount\: :ref:`float<class_float>`, limit\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_screen_space_roughness_limiter_set_active>`
 
-Sets the screen-space roughness limiter parameters, such as whether it should be enabled and its thresholds. Equivalent to :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`, :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/amount<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/amount>` and :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/limit<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/limit>`.
+設定螢幕空間粗糙度限制參數，例如是否應該啟用以及閾值等。等價於 :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`\ 、\ :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/amount<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/amount>` 和 :ref:`ProjectSettings.rendering/anti_aliasing/screen_space_roughness_limiter/limit<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/limit>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11349,7 +11349,7 @@ Sets the screen-space roughness limiter parameters, such as whether it should be
 
 |void| **set_boot_image**\ (\ image\: :ref:`Image<class_Image>`, color\: :ref:`Color<class_Color>`, scale\: :ref:`bool<class_bool>`, use_filter\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingServer_method_set_boot_image>`
 
-**Deprecated:** Use :ref:`set_boot_image_with_stretch()<class_RenderingServer_method_set_boot_image_with_stretch>` instead.
+**已棄用：** Use :ref:`set_boot_image_with_stretch()<class_RenderingServer_method_set_boot_image_with_stretch>` instead.
 
 Sets a boot image. The ``color`` defines the background color. The value of ``scale`` indicates if the image will be scaled to fit the screen size. If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
 
@@ -11389,7 +11389,7 @@ If ``generate`` is ``true``, generates debug wireframes for all meshes that are 
 
 |void| **set_default_clear_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingServer_method_set_default_clear_color>`
 
-Sets the default clear color which is used when a specific clear color has not been selected. See also :ref:`get_default_clear_color()<class_RenderingServer_method_get_default_clear_color>`.
+設定預設清屏顏色，會在尚未選擇特定的清屏顏色時使用。另見 :ref:`get_default_clear_color()<class_RenderingServer_method_get_default_clear_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11401,11 +11401,11 @@ Sets the default clear color which is used when a specific clear color has not b
 
 :ref:`RID<class_RID>` **shader_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_shader_create>`
 
-Creates an empty shader and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``shader_*`` RenderingServer functions.
+建立空的著色器並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``shader_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`Shader<class_Shader>`.
+\ **注意：**\ 等價資源為 :ref:`Shader<class_Shader>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11417,7 +11417,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 :ref:`String<class_String>` **shader_get_code**\ (\ shader\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_shader_get_code>`
 
-Returns a shader's source code as a string.
+以字串形式返回著色器的原始程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -11429,9 +11429,9 @@ Returns a shader's source code as a string.
 
 :ref:`RID<class_RID>` **shader_get_default_texture_parameter**\ (\ shader\: :ref:`RID<class_RID>`, name\: :ref:`StringName<class_StringName>`, index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_RenderingServer_method_shader_get_default_texture_parameter>`
 
-Returns a default texture from a shader searched by name.
+返回著色器中的預設紋理，根據名稱搜索。
 
-\ **Note:** If the sampler array is used use ``index`` to access the specified texture.
+\ **注意：**\ 如果使用了取樣器陣列，請使用 ``index`` 存取指定的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -11443,7 +11443,7 @@ Returns a default texture from a shader searched by name.
 
 :ref:`Variant<class_Variant>` **shader_get_parameter_default**\ (\ shader\: :ref:`RID<class_RID>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_shader_get_parameter_default>`
 
-Returns the default value for the specified shader uniform. This is usually the value written in the shader source code.
+返回指定著色器 Uniform 的預設值。通常是著色器原始程式碼中編寫的值。
 
 .. rst-class:: classref-item-separator
 
@@ -11455,7 +11455,7 @@ Returns the default value for the specified shader uniform. This is usually the 
 
 |void| **shader_set_code**\ (\ shader\: :ref:`RID<class_RID>`, code\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingServer_method_shader_set_code>`
 
-Sets the shader's source code (which triggers recompilation after being changed).
+設定著色器的原始程式碼（更改後會出發重新編譯）。
 
 .. rst-class:: classref-item-separator
 
@@ -11467,9 +11467,9 @@ Sets the shader's source code (which triggers recompilation after being changed)
 
 |void| **shader_set_default_texture_parameter**\ (\ shader\: :ref:`RID<class_RID>`, name\: :ref:`StringName<class_StringName>`, texture\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingServer_method_shader_set_default_texture_parameter>`
 
-Sets a shader's default texture. Overwrites the texture given by name.
+設定著色器的預設紋理。覆蓋給定名稱的紋理。
 
-\ **Note:** If the sampler array is used use ``index`` to access the specified texture.
+\ **注意：**\ 使用取樣器陣列時，使用 ``index`` 存取指定的紋理。
 
 .. rst-class:: classref-item-separator
 
@@ -11481,7 +11481,7 @@ Sets a shader's default texture. Overwrites the texture given by name.
 
 |void| **shader_set_path_hint**\ (\ shader\: :ref:`RID<class_RID>`, path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingServer_method_shader_set_path_hint>`
 
-Sets the path hint for the specified shader. This should generally match the :ref:`Shader<class_Shader>` resource's :ref:`Resource.resource_path<class_Resource_property_resource_path>`.
+設定指定著色器路徑提示。一般應該與 :ref:`Shader<class_Shader>` 資源的 :ref:`Resource.resource_path<class_Resource_property_resource_path>` 相配對。
 
 .. rst-class:: classref-item-separator
 
@@ -11507,7 +11507,7 @@ Sets the path hint for the specified shader. This should generally match the :re
 
 :ref:`Transform3D<class_Transform3D>` **skeleton_bone_get_transform**\ (\ skeleton\: :ref:`RID<class_RID>`, bone\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_skeleton_bone_get_transform>`
 
-Returns the :ref:`Transform3D<class_Transform3D>` set for a specific bone of this skeleton.
+返回該骨架中指定骨骼的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11519,7 +11519,7 @@ Returns the :ref:`Transform3D<class_Transform3D>` set for a specific bone of thi
 
 :ref:`Transform2D<class_Transform2D>` **skeleton_bone_get_transform_2d**\ (\ skeleton\: :ref:`RID<class_RID>`, bone\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_skeleton_bone_get_transform_2d>`
 
-Returns the :ref:`Transform2D<class_Transform2D>` set for a specific bone of this skeleton.
+返回該骨架中指定骨骼的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11531,7 +11531,7 @@ Returns the :ref:`Transform2D<class_Transform2D>` set for a specific bone of thi
 
 |void| **skeleton_bone_set_transform**\ (\ skeleton\: :ref:`RID<class_RID>`, bone\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_RenderingServer_method_skeleton_bone_set_transform>`
 
-Sets the :ref:`Transform3D<class_Transform3D>` for a specific bone of this skeleton.
+設定該骨架中指定骨骼的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11543,7 +11543,7 @@ Sets the :ref:`Transform3D<class_Transform3D>` for a specific bone of this skele
 
 |void| **skeleton_bone_set_transform_2d**\ (\ skeleton\: :ref:`RID<class_RID>`, bone\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_skeleton_bone_set_transform_2d>`
 
-Sets the :ref:`Transform2D<class_Transform2D>` for a specific bone of this skeleton.
+設定該骨架中指定骨骼的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11555,9 +11555,9 @@ Sets the :ref:`Transform2D<class_Transform2D>` for a specific bone of this skele
 
 :ref:`RID<class_RID>` **skeleton_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_skeleton_create>`
 
-Creates a skeleton and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``skeleton_*`` RenderingServer functions.
+建立骨架並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``skeleton_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -11569,7 +11569,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 :ref:`int<class_int>` **skeleton_get_bone_count**\ (\ skeleton\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_skeleton_get_bone_count>`
 
-Returns the number of bones allocated for this skeleton.
+返回分配給這個骨架的骨骼數量。
 
 .. rst-class:: classref-item-separator
 
@@ -11611,9 +11611,9 @@ Generates and returns an :ref:`Image<class_Image>` containing the radiance map f
 
 :ref:`RID<class_RID>` **sky_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_sky_create>`
 
-Creates an empty sky and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``sky_*`` RenderingServer functions.
+建立空的天空並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``sky_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -11625,7 +11625,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **sky_set_material**\ (\ sky\: :ref:`RID<class_RID>`, material\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_sky_set_material>`
 
-Sets the material that the sky uses to render the background, ambient and reflection maps.
+設定天空用於算繪背景和反射貼圖的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -11637,7 +11637,7 @@ Sets the material that the sky uses to render the background, ambient and reflec
 
 |void| **sky_set_mode**\ (\ sky\: :ref:`RID<class_RID>`, mode\: :ref:`SkyMode<enum_RenderingServer_SkyMode>`\ ) :ref:`🔗<class_RenderingServer_method_sky_set_mode>`
 
-Sets the process ``mode`` of the sky specified by the ``sky`` RID. Equivalent to :ref:`Sky.process_mode<class_Sky_property_process_mode>`.
+設定 RID 為 ``sky`` 的天空的處理模式 ``mode``\ 。等價於 :ref:`Sky.process_mode<class_Sky_property_process_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11649,7 +11649,7 @@ Sets the process ``mode`` of the sky specified by the ``sky`` RID. Equivalent to
 
 |void| **sky_set_radiance_size**\ (\ sky\: :ref:`RID<class_RID>`, radiance_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_sky_set_radiance_size>`
 
-Sets the ``radiance_size`` of the sky specified by the ``sky`` RID (in pixels). Equivalent to :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`.
+設定 RID 為 ``sky`` 的天空的輻照大小 ``radiance_size``\ （單位為像素）。等價於 :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11661,11 +11661,11 @@ Sets the ``radiance_size`` of the sky specified by the ``sky`` RID (in pixels). 
 
 :ref:`RID<class_RID>` **spot_light_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_spot_light_create>`
 
-Creates a spot light and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID can be used in most ``light_*`` RenderingServer functions.
+建立聚光燈並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在大多數 ``light_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-To place in a scene, attach this spot light to an instance using :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>` using the returned RID.
+如果要將這個聚光燈放置到場景中，請使用返回的 RID 呼叫 :ref:`instance_set_base()<class_RenderingServer_method_instance_set_base>`\ ，將其附加至某個實例上。
 
 .. rst-class:: classref-item-separator
 
@@ -11677,7 +11677,7 @@ To place in a scene, attach this spot light to an instance using :ref:`instance_
 
 |void| **sub_surface_scattering_set_quality**\ (\ quality\: :ref:`SubSurfaceScatteringQuality<enum_RenderingServer_SubSurfaceScatteringQuality>`\ ) :ref:`🔗<class_RenderingServer_method_sub_surface_scattering_set_quality>`
 
-Sets :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>` to use when rendering materials that have subsurface scattering enabled.
+設定算繪啟用了次表面散射的材質時使用的 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_quality<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_quality>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11689,7 +11689,7 @@ Sets :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurfac
 
 |void| **sub_surface_scattering_set_scale**\ (\ scale\: :ref:`float<class_float>`, depth_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_sub_surface_scattering_set_scale>`
 
-Sets the :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>` and :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>` to use when rendering materials that have subsurface scattering enabled.
+設定算繪啟用了次表面散射的材質時使用的 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_scale>` 和 :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale<class_ProjectSettings_property_rendering/environment/subsurface_scattering/subsurface_scattering_depth_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11701,13 +11701,13 @@ Sets the :ref:`ProjectSettings.rendering/environment/subsurface_scattering/subsu
 
 :ref:`RID<class_RID>` **texture_2d_create**\ (\ image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_RenderingServer_method_texture_2d_create>`
 
-Creates a 2-dimensional texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``texture_2d_*`` RenderingServer functions.
+建立二維紋理並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``texture_2d_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`Texture2D<class_Texture2D>`.
+\ **注意：**\ 等價資源為 :ref:`Texture2D<class_Texture2D>`\ 。
 
-\ **Note:** Not to be confused with :ref:`RenderingDevice.texture_create()<class_RenderingDevice_method_texture_create>`, which creates the graphics API's own texture type as opposed to the Godot-specific :ref:`Texture2D<class_Texture2D>` resource.
+\ **注意：**\ 請勿與 :ref:`RenderingDevice.texture_create()<class_RenderingDevice_method_texture_create>` 混淆，後者建立的是圖形 API 自己的紋理型別，並非 Godot 專屬的 :ref:`Texture2D<class_Texture2D>` 資源。
 
 .. rst-class:: classref-item-separator
 
@@ -11739,7 +11739,7 @@ Returns an :ref:`Image<class_Image>` instance from the given ``texture`` :ref:`R
 
 :ref:`Image<class_Image>` **texture_2d_layer_get**\ (\ texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_2d_layer_get>`
 
-Returns an :ref:`Image<class_Image>` instance from the given ``texture`` :ref:`RID<class_RID>` and ``layer``.
+返回給定 ``texture`` :ref:`RID<class_RID>` 和 ``layer`` 中的 :ref:`Image<class_Image>` 實例。
 
 .. rst-class:: classref-item-separator
 
@@ -11751,11 +11751,11 @@ Returns an :ref:`Image<class_Image>` instance from the given ``texture`` :ref:`R
 
 :ref:`RID<class_RID>` **texture_2d_layered_create**\ (\ layers\: :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\], layered_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>`\ ) :ref:`🔗<class_RenderingServer_method_texture_2d_layered_create>`
 
-Creates a 2-dimensional layered texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``texture_2d_layered_*`` RenderingServer functions.
+建立二維多層紋理並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``texture_2d_layered_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`TextureLayered<class_TextureLayered>`.
+\ **注意：**\ 等價資源為 :ref:`TextureLayered<class_TextureLayered>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11767,9 +11767,9 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 :ref:`RID<class_RID>` **texture_2d_layered_placeholder_create**\ (\ layered_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>`\ ) :ref:`🔗<class_RenderingServer_method_texture_2d_layered_placeholder_create>`
 
-Creates a placeholder for a 2-dimensional layered texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``texture_2d_layered_*`` RenderingServer functions, although it does nothing when used. See also :ref:`texture_2d_placeholder_create()<class_RenderingServer_method_texture_2d_placeholder_create>`.
+建立二維多層紋理的預留位置並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``texture_2d_layered_*`` RenderingServer 函數中使用，但使用時什麼都不會發生。另見 :ref:`texture_2d_placeholder_create()<class_RenderingServer_method_texture_2d_placeholder_create>`\ 。
 
-\ **Note:** The equivalent resource is :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>`.
+\ **注意：**\ 等價資源為 :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11797,9 +11797,9 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **texture_2d_update**\ (\ texture\: :ref:`RID<class_RID>`, image\: :ref:`Image<class_Image>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_texture_2d_update>`
 
-Updates the texture specified by the ``texture`` :ref:`RID<class_RID>` with the data in ``image``. A ``layer`` must also be specified, which should be ``0`` when updating a single-layer texture (:ref:`Texture2D<class_Texture2D>`).
+使用 ``image`` 中的資料更新由紋理 :ref:`RID<class_RID>` ``texture`` 指定的紋理。\ ``layer`` 也必須指定，更新單層紋理（\ :ref:`Texture2D<class_Texture2D>`\ ）時應為 ``0``\ 。
 
-\ **Note:** The ``image`` must have the same width, height and format as the current ``texture`` data. Otherwise, an error will be printed and the original texture won't be modified. If you need to use different width, height or format, use :ref:`texture_replace()<class_RenderingServer_method_texture_replace>` instead.
+\ **注意：**\ ``image`` 的寬度、高度、格式都必須和目前 ``texture`` 的資料相同。否則會輸出錯誤，不會修改原始紋理。如果你需要使用不同的寬度、高度或格式，請改用 :ref:`texture_replace()<class_RenderingServer_method_texture_replace>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11811,7 +11811,7 @@ Updates the texture specified by the ``texture`` :ref:`RID<class_RID>` with the 
 
 :ref:`RID<class_RID>` **texture_3d_create**\ (\ format\: :ref:`Format<enum_Image_Format>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, mipmaps\: :ref:`bool<class_bool>`, data\: :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\]\ ) :ref:`🔗<class_RenderingServer_method_texture_3d_create>`
 
-**Note:** The equivalent resource is :ref:`Texture3D<class_Texture3D>`.
+**注意：**\ 等價的資源是 :ref:`Texture3D<class_Texture3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11823,7 +11823,7 @@ Updates the texture specified by the ``texture`` :ref:`RID<class_RID>` with the 
 
 :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\] **texture_3d_get**\ (\ texture\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_3d_get>`
 
-Returns 3D texture data as an array of :ref:`Image<class_Image>`\ s for the specified texture :ref:`RID<class_RID>`.
+以 :ref:`Image<class_Image>` 陣列的形式返回指定紋理 :ref:`RID<class_RID>` 的 3D 紋理資料。
 
 .. rst-class:: classref-item-separator
 
@@ -11835,11 +11835,11 @@ Returns 3D texture data as an array of :ref:`Image<class_Image>`\ s for the spec
 
 :ref:`RID<class_RID>` **texture_3d_placeholder_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_texture_3d_placeholder_create>`
 
-Creates a placeholder for a 3-dimensional texture and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``texture_3d_*`` RenderingServer functions, although it does nothing when used.
+建立三維紋理的預留位置並將其新增到 RenderingServer。可以通過返回的 RID 進行訪問。這個 RID 會在所有 ``texture_3d_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent resource is :ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`.
+\ **注意：**\ 等價資源為 :ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11851,9 +11851,9 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **texture_3d_update**\ (\ texture\: :ref:`RID<class_RID>`, data\: :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\]\ ) :ref:`🔗<class_RenderingServer_method_texture_3d_update>`
 
-Updates the texture specified by the ``texture`` :ref:`RID<class_RID>`'s data with the data in ``data``. All the texture's layers must be replaced at once.
+使用 ``data`` 中的資料更新由紋理 :ref:`RID<class_RID>` ``texture`` 指定的紋理。必須同時更新所有紋理層。
 
-\ **Note:** The ``texture`` must have the same width, height, depth and format as the current texture data. Otherwise, an error will be printed and the original texture won't be modified. If you need to use different width, height, depth or format, use :ref:`texture_replace()<class_RenderingServer_method_texture_replace>` instead.
+\ **注意：**\ ``texture`` 的寬度、高度、格式都必須和目前紋理資料相同。否則會輸出錯誤，不會修改原始紋理。如果你需要使用不同的寬度、高度或格式，請改用 :ref:`texture_replace()<class_RenderingServer_method_texture_replace>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11935,7 +11935,7 @@ Returns a texture :ref:`RID<class_RID>` that can be used with :ref:`RenderingDev
 
 :ref:`RID<class_RID>` **texture_proxy_create**\ (\ base\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_texture_proxy_create>`
 
-**Deprecated:** ProxyTexture was removed in Godot 4.
+**已棄用：** ProxyTexture was removed in Godot 4.
 
 This method does nothing and always returns an invalid :ref:`RID<class_RID>`.
 
@@ -11949,7 +11949,7 @@ This method does nothing and always returns an invalid :ref:`RID<class_RID>`.
 
 |void| **texture_proxy_update**\ (\ texture\: :ref:`RID<class_RID>`, proxy_to\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_texture_proxy_update>`
 
-**Deprecated:** ProxyTexture was removed in Godot 4.
+**已棄用：** ProxyTexture was removed in Godot 4.
 
 This method does nothing.
 
@@ -11979,7 +11979,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **texture_replace**\ (\ texture\: :ref:`RID<class_RID>`, by_texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_texture_replace>`
 
-Replaces ``texture``'s texture data by the texture specified by the ``by_texture`` RID, without changing ``texture``'s RID.
+將 ``texture`` 的紋理資料替換為由紋理 RID ``by_texture`` 指定的紋理，不會改變 ``texture`` 的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -12033,7 +12033,7 @@ Replaces ``texture``'s texture data by the texture specified by the ``by_texture
 
 |void| **viewport_attach_camera**\ (\ viewport\: :ref:`RID<class_RID>`, camera\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_attach_camera>`
 
-Sets a viewport's camera.
+設定視圖的相機。
 
 .. rst-class:: classref-item-separator
 
@@ -12045,7 +12045,7 @@ Sets a viewport's camera.
 
 |void| **viewport_attach_canvas**\ (\ viewport\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_attach_canvas>`
 
-Sets a viewport's canvas.
+設定視口的畫布。
 
 .. rst-class:: classref-item-separator
 
@@ -12084,11 +12084,11 @@ Using this can result in significant optimization, especially on lower-end devic
 
 :ref:`RID<class_RID>` **viewport_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_viewport_create>`
 
-Creates an empty viewport and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``viewport_*`` RenderingServer functions.
+建立空的視口並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``viewport_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`Viewport<class_Viewport>`.
+\ **注意：**\ 等價節點為 :ref:`Viewport<class_Viewport>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12100,9 +12100,9 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 :ref:`float<class_float>` **viewport_get_measured_render_time_cpu**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_viewport_get_measured_render_time_cpu>`
 
-Returns the CPU time taken to render the last frame in milliseconds. This *only* includes time spent in rendering-related operations; scripts' ``_process`` functions and other engine subsystems are not included in this readout. To get a complete readout of CPU time spent to render the scene, sum the render times of all viewports that are drawn every frame plus :ref:`get_frame_setup_time_cpu()<class_RenderingServer_method_get_frame_setup_time_cpu>`. Unlike :ref:`Engine.get_frames_per_second()<class_Engine_method_get_frames_per_second>`, this method will accurately reflect CPU utilization even if framerate is capped via V-Sync or :ref:`Engine.max_fps<class_Engine_property_max_fps>`. See also :ref:`viewport_get_measured_render_time_gpu()<class_RenderingServer_method_viewport_get_measured_render_time_gpu>`.
+返回算繪上一影格所消耗的 CPU 時間，單位為毫秒。\ *只包含*\ 算繪相關操作所消耗的時間；讀數中不含腳本的 ``_process`` 函式及其他引擎子系統。要獲取算繪場景所消耗 CPU 時間的完整讀數，請將每影格繪製的所有視口的算繪時間以及 :ref:`get_frame_setup_time_cpu()<class_RenderingServer_method_get_frame_setup_time_cpu>` 相加。與 :ref:`Engine.get_frames_per_second()<class_Engine_method_get_frames_per_second>` 不同，即便影格率受到垂直同步或 :ref:`Engine.max_fps<class_Engine_property_max_fps>` 的限制，這個方法也會精確反映 CPU 利用率。另見 :ref:`viewport_get_measured_render_time_gpu()<class_RenderingServer_method_viewport_get_measured_render_time_gpu>`\ 。
 
-\ **Note:** Requires measurements to be enabled on the specified ``viewport`` using :ref:`viewport_set_measure_render_time()<class_RenderingServer_method_viewport_set_measure_render_time>`. Otherwise, this method returns ``0.0``.
+\ **注意：**\ 需要使用 :ref:`viewport_set_measure_render_time()<class_RenderingServer_method_viewport_set_measure_render_time>` 啟用 ``viewport`` 的測量。否則這個方法會返回 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12158,7 +12158,7 @@ See also :ref:`get_rendering_info()<class_RenderingServer_method_get_rendering_i
 
 :ref:`RID<class_RID>` **viewport_get_render_target**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_viewport_get_render_target>`
 
-Returns the render target for the viewport.
+返回該視口的算繪目標。
 
 .. rst-class:: classref-item-separator
 
@@ -12170,7 +12170,7 @@ Returns the render target for the viewport.
 
 :ref:`RID<class_RID>` **viewport_get_texture**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_viewport_get_texture>`
 
-Returns the viewport's last rendered frame.
+返回視口的最後算繪影格。
 
 .. rst-class:: classref-item-separator
 
@@ -12208,7 +12208,7 @@ Detaches a viewport from a canvas.
 
 |void| **viewport_set_active**\ (\ viewport\: :ref:`RID<class_RID>`, active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_active>`
 
-If ``true``, sets the viewport active, else sets it inactive.
+如果為 ``true``\ ，則將視口設定為活動狀態，否則將其設定為非活動狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -12238,7 +12238,7 @@ The anisotropic filtering level also affects decals and light projectors if they
 
 |void| **viewport_set_canvas_cull_mask**\ (\ viewport\: :ref:`RID<class_RID>`, canvas_cull_mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_canvas_cull_mask>`
 
-Sets the rendering mask associated with this :ref:`Viewport<class_Viewport>`. Only :ref:`CanvasItem<class_CanvasItem>` nodes with a matching rendering visibility layer will be rendered by this :ref:`Viewport<class_Viewport>`.
+設定與此 :ref:`Viewport<class_Viewport>` 關聯的算繪遮罩。算繪可見層與之配對的 :ref:`CanvasItem<class_CanvasItem>` 節點才會被此 :ref:`Viewport<class_Viewport>` 算繪。
 
 .. rst-class:: classref-item-separator
 
@@ -12266,7 +12266,7 @@ Sets the stacking order for a viewport's canvas.
 
 |void| **viewport_set_canvas_transform**\ (\ viewport\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`, offset\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_canvas_transform>`
 
-Sets the transformation of a viewport's canvas.
+設定視口畫布的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -12326,7 +12326,7 @@ Sets the default texture repeat mode for the specified ``viewport`` RID.
 
 |void| **viewport_set_disable_2d**\ (\ viewport\: :ref:`RID<class_RID>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_disable_2d>`
 
-If ``true``, the viewport's canvas (i.e. 2D and GUI elements) is not rendered.
+如果為 ``true``\ ，則不算繪視口的畫布（即 2D 和 GUI 元素）。
 
 .. rst-class:: classref-item-separator
 
@@ -12338,7 +12338,7 @@ If ``true``, the viewport's canvas (i.e. 2D and GUI elements) is not rendered.
 
 |void| **viewport_set_disable_3d**\ (\ viewport\: :ref:`RID<class_RID>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_disable_3d>`
 
-If ``true``, the viewport's 3D elements are not rendered.
+如果為 ``true``\ ，則不算繪視口的 3D 元素。
 
 .. rst-class:: classref-item-separator
 
@@ -12350,7 +12350,7 @@ If ``true``, the viewport's 3D elements are not rendered.
 
 |void| **viewport_set_environment_mode**\ (\ viewport\: :ref:`RID<class_RID>`, mode\: :ref:`ViewportEnvironmentMode<enum_RenderingServer_ViewportEnvironmentMode>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_environment_mode>`
 
-Sets the viewport's environment mode which allows enabling or disabling rendering of 3D environment over 2D canvas. When disabled, 2D will not be affected by the environment. When enabled, 2D will be affected by the environment if the environment background mode is :ref:`ENV_BG_CANVAS<class_RenderingServer_constant_ENV_BG_CANVAS>`. The default behavior is to inherit the setting from the viewport's parent. If the topmost parent is also set to :ref:`VIEWPORT_ENVIRONMENT_INHERIT<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_INHERIT>`, then the behavior will be the same as if it was set to :ref:`VIEWPORT_ENVIRONMENT_ENABLED<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_ENABLED>`.
+設定視口的環境模式，該模式允許啟用或禁用 2D 畫布上的 3D 環境算繪。禁用時，2D 將不受環境影響。啟用時，如果環境背景模式為 :ref:`ENV_BG_CANVAS<class_RenderingServer_constant_ENV_BG_CANVAS>`\ ，則 2D 會受到環境的影響。預設行為是從視口的父級繼承設定。如果最頂層的父級也被設定為 :ref:`VIEWPORT_ENVIRONMENT_INHERIT<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_INHERIT>`\ ，則該行為將與設定為 :ref:`VIEWPORT_ENVIRONMENT_ENABLED<class_RenderingServer_constant_VIEWPORT_ENVIRONMENT_ENABLED>` 時相同。
 
 .. rst-class:: classref-item-separator
 
@@ -12362,7 +12362,7 @@ Sets the viewport's environment mode which allows enabling or disabling renderin
 
 |void| **viewport_set_fsr_sharpness**\ (\ viewport\: :ref:`RID<class_RID>`, sharpness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_fsr_sharpness>`
 
-Determines how sharp the upscaled image will be when using the FSR upscaling mode. Sharpness halves with every whole number. Values go from 0.0 (sharpest) to 2.0. Values above 2.0 won't make a visible difference.
+決定使用 FSR 放大模式時放大圖像的清晰度。每個整數的銳度減半。值從 0.0（最銳利）到 2.0。高於 2.0 的值不會產生明顯的差異。
 
 .. rst-class:: classref-item-separator
 
@@ -12374,7 +12374,7 @@ Determines how sharp the upscaled image will be when using the FSR upscaling mod
 
 |void| **viewport_set_global_canvas_transform**\ (\ viewport\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_global_canvas_transform>`
 
-Sets the viewport's global transformation matrix.
+設定視口的全域變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -12386,7 +12386,7 @@ Sets the viewport's global transformation matrix.
 
 |void| **viewport_set_measure_render_time**\ (\ viewport\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_measure_render_time>`
 
-Sets the measurement for the given ``viewport`` RID (obtained using :ref:`Viewport.get_viewport_rid()<class_Viewport_method_get_viewport_rid>`). Once enabled, :ref:`viewport_get_measured_render_time_cpu()<class_RenderingServer_method_viewport_get_measured_render_time_cpu>` and :ref:`viewport_get_measured_render_time_gpu()<class_RenderingServer_method_viewport_get_measured_render_time_gpu>` will return values greater than ``0.0`` when queried with the given ``viewport``.
+為給定的 ``viewport`` RID（使用 :ref:`Viewport.get_viewport_rid()<class_Viewport_method_get_viewport_rid>` 獲取）設定是否測量。啟用後，使用給定的 ``viewport`` 對 :ref:`viewport_get_measured_render_time_cpu()<class_RenderingServer_method_viewport_get_measured_render_time_cpu>` 和 :ref:`viewport_get_measured_render_time_gpu()<class_RenderingServer_method_viewport_get_measured_render_time_gpu>` 進行查詢返回的就是大於 ``0.0`` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -12422,7 +12422,7 @@ Sets the multisample antialiasing mode for 3D on the specified ``viewport`` RID.
 
 |void| **viewport_set_occlusion_culling_build_quality**\ (\ quality\: :ref:`ViewportOcclusionCullingBuildQuality<enum_RenderingServer_ViewportOcclusionCullingBuildQuality>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_occlusion_culling_build_quality>`
 
-Sets the :ref:`ProjectSettings.rendering/occlusion_culling/bvh_build_quality<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>` to use for occlusion culling. This parameter is global and cannot be set on a per-viewport basis.
+設定遮擋剔除的 :ref:`ProjectSettings.rendering/occlusion_culling/bvh_build_quality<class_ProjectSettings_property_rendering/occlusion_culling/bvh_build_quality>`\ 。這個參數是全域的，無法針對特定視口設定。
 
 .. rst-class:: classref-item-separator
 
@@ -12434,7 +12434,7 @@ Sets the :ref:`ProjectSettings.rendering/occlusion_culling/bvh_build_quality<cla
 
 |void| **viewport_set_occlusion_rays_per_thread**\ (\ rays_per_thread\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_occlusion_rays_per_thread>`
 
-Sets the :ref:`ProjectSettings.rendering/occlusion_culling/occlusion_rays_per_thread<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>` to use for occlusion culling. This parameter is global and cannot be set on a per-viewport basis.
+設定遮擋剔除的 :ref:`ProjectSettings.rendering/occlusion_culling/occlusion_rays_per_thread<class_ProjectSettings_property_rendering/occlusion_culling/occlusion_rays_per_thread>`\ 。這個參數是全域的，無法針對特定視口設定。
 
 .. rst-class:: classref-item-separator
 
@@ -12446,7 +12446,7 @@ Sets the :ref:`ProjectSettings.rendering/occlusion_culling/occlusion_rays_per_th
 
 |void| **viewport_set_parent_viewport**\ (\ viewport\: :ref:`RID<class_RID>`, parent_viewport\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_parent_viewport>`
 
-Sets the viewport's parent to the viewport specified by the ``parent_viewport`` RID.
+將該視口的父項設定為 ``parent_viewport`` RID 指定的視口。
 
 .. rst-class:: classref-item-separator
 
@@ -12458,7 +12458,7 @@ Sets the viewport's parent to the viewport specified by the ``parent_viewport`` 
 
 |void| **viewport_set_positional_shadow_atlas_quadrant_subdivision**\ (\ viewport\: :ref:`RID<class_RID>`, quadrant\: :ref:`int<class_int>`, subdivision\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_positional_shadow_atlas_quadrant_subdivision>`
 
-Sets the number of subdivisions to use in the specified shadow atlas ``quadrant`` for omni and spot shadows. See also :ref:`Viewport.set_positional_shadow_atlas_quadrant_subdiv()<class_Viewport_method_set_positional_shadow_atlas_quadrant_subdiv>`.
+設定全向燈和聚光燈陰影的指定陰影合集象限 ``quadrant`` 的細分次數。另見 :ref:`Viewport.set_positional_shadow_atlas_quadrant_subdiv()<class_Viewport_method_set_positional_shadow_atlas_quadrant_subdiv>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12470,9 +12470,9 @@ Sets the number of subdivisions to use in the specified shadow atlas ``quadrant`
 
 |void| **viewport_set_positional_shadow_atlas_size**\ (\ viewport\: :ref:`RID<class_RID>`, size\: :ref:`int<class_int>`, use_16_bits\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_positional_shadow_atlas_size>`
 
-Sets the ``size`` of the shadow atlas's images (used for omni and spot lights) on the viewport specified by the ``viewport`` RID. The value is rounded up to the nearest power of 2. If ``use_16_bits`` is ``true``, use 16 bits for the omni/spot shadow depth map. Enabling this results in shadows having less precision and may result in shadow acne, but can lead to performance improvements on some devices.
+設定陰影合集圖像的大小（用於全向燈和聚光燈），大小由 ``size`` 指定，生效的視口由 ``viewport`` RID 指定。該值將向上四捨五入到最接近的 2 次冪。如果 ``use_16_bits`` 為 ``true``\ ，則會使用 16 位的全向燈/聚光燈陰影深度貼圖。啟用後，陰影的精度會降低，可能造成陰影失真，但能夠在部分裝置上提升性能。
 
-\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
+\ **注意：**\ 如果設定為 ``0``\ ，將根本看不到任何陰影。可以通過降低 CPU 和 GPU 負載來顯著提升在低端系統上的性能（因為繪製不帶陰影的場景需要的繪製呼叫更少）。
 
 .. rst-class:: classref-item-separator
 
@@ -12484,7 +12484,7 @@ Sets the ``size`` of the shadow atlas's images (used for omni and spot lights) o
 
 |void| **viewport_set_render_direct_to_screen**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_render_direct_to_screen>`
 
-If ``true``, render the contents of the viewport directly to screen. This allows a low-level optimization where you can skip drawing a viewport to the root viewport. While this optimization can result in a significant increase in speed (especially on older devices), it comes at a cost of usability. When this is enabled, you cannot read from the viewport or from the screen_texture. You also lose the benefit of certain window settings, such as the various stretch modes. Another consequence to be aware of is that in 2D the rendering happens in window coordinates, so if you have a viewport that is double the size of the window, and you set this, then only the portion that fits within the window will be drawn, no automatic scaling is possible, even if your game scene is significantly larger than the window size.
+如果為 ``true``\ ，則將視口的內容直接算繪到螢幕。這允許一個低級別的優化，可以跳過將視口繪製到根視口。雖然這種優化可以顯著提高速度（尤其是在舊裝置上），但它是以可用性為代價的。啟用後，無法從視口或 screen_texture 讀取。而且還會失去某些視窗設定的好處，例如各種拉伸模式。另一個需要注意的後果是，在 2D 中，算繪是以視窗座標進行的，所以如果有一個兩倍於視窗大小的視口，並且設定了這個屬性，那麼只會繪製適合視窗的部分， 無法自動縮放，即使遊戲場景明顯大於視窗大小。
 
 .. rst-class:: classref-item-separator
 
@@ -12496,7 +12496,7 @@ If ``true``, render the contents of the viewport directly to screen. This allows
 
 |void| **viewport_set_scaling_3d_mode**\ (\ viewport\: :ref:`RID<class_RID>`, scaling_3d_mode\: :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_scaling_3d_mode>`
 
-Sets the 3D resolution scaling mode. Bilinear scaling renders at different resolution to either undersample or supersample the viewport. FidelityFX Super Resolution 1.0, abbreviated to FSR, is an upscaling technology that produces high quality images at fast framerates by using a spatially aware upscaling algorithm. FSR is slightly more expensive than bilinear, but it produces significantly higher image quality. FSR should be used where possible.
+設定 3D 解析度縮放模式。雙線性縮放使用不同的解析度算繪，能夠對視口進行欠取樣或超取樣。FidelityFX 超解析度 1.0，縮寫為 FSR，是一種放大技術，通過使用空間感知放大演算法以快速畫面播放速率生成高品質圖像。FSR 比雙線性的開銷略大，但產生的圖像質量明顯更高。應盡可能使用 FSR。
 
 .. rst-class:: classref-item-separator
 
@@ -12508,9 +12508,9 @@ Sets the 3D resolution scaling mode. Bilinear scaling renders at different resol
 
 |void| **viewport_set_scaling_3d_scale**\ (\ viewport\: :ref:`RID<class_RID>`, scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_scaling_3d_scale>`
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` for multi-sample antialiasing, which is significantly cheaper but only smoothens the edges of polygons.
+根據視圖大小，縮放 3D 算繪緩衝區，使用 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` 中指定的圖像篩檢程式，將輸出圖像縮放到完整視圖大小。低於 ``1.0`` 的值，可用於加速 3D 算繪，但會以品質為代價（欠取樣）。大於 ``1.0`` 的值，僅對雙線性模式有效，可用於以較高的性能成本（超級取樣），提高 3D 算繪品質。另請參閱 :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` 以瞭解多重取樣抗鋸齒，這要便宜得多，但只會平滑多邊形的邊緣。
 
-When using FSR upscaling, AMD recommends exposing the following values as preset options to users "Ultra Quality: 0.77", "Quality: 0.67", "Balanced: 0.59", "Performance: 0.5" instead of exposing the entire scale.
+在使用 FSR 放大時，AMD 建議將以下值，作為預設選項公開給使用者：“超品質：0.77”、“品質：0.67”、“平衡：0.59”、“性能：0.5”，而不是公開整個比例。
 
 .. rst-class:: classref-item-separator
 
@@ -12522,7 +12522,7 @@ When using FSR upscaling, AMD recommends exposing the following values as preset
 
 |void| **viewport_set_scenario**\ (\ viewport\: :ref:`RID<class_RID>`, scenario\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_scenario>`
 
-Sets a viewport's scenario. The scenario contains information about environment information, reflection atlas, etc.
+設定視口的場景。該場景包含環境、反射合集等資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -12546,7 +12546,7 @@ Sets the viewport's screen-space antialiasing mode. Equivalent to :ref:`ProjectS
 
 |void| **viewport_set_sdf_oversize_and_scale**\ (\ viewport\: :ref:`RID<class_RID>`, oversize\: :ref:`ViewportSDFOversize<enum_RenderingServer_ViewportSDFOversize>`, scale\: :ref:`ViewportSDFScale<enum_RenderingServer_ViewportSDFScale>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>`
 
-Sets the viewport's 2D signed distance field :ref:`ProjectSettings.rendering/2d/sdf/oversize<class_ProjectSettings_property_rendering/2d/sdf/oversize>` and :ref:`ProjectSettings.rendering/2d/sdf/scale<class_ProjectSettings_property_rendering/2d/sdf/scale>`. This is used when sampling the signed distance field in :ref:`CanvasItem<class_CanvasItem>` shaders as well as :ref:`GPUParticles2D<class_GPUParticles2D>` collision. This is *not* used by SDFGI in 3D rendering.
+設定視口的 2D 帶符號距離場的 :ref:`ProjectSettings.rendering/2d/sdf/oversize<class_ProjectSettings_property_rendering/2d/sdf/oversize>` 和 :ref:`ProjectSettings.rendering/2d/sdf/scale<class_ProjectSettings_property_rendering/2d/sdf/scale>`\ 。在 :ref:`CanvasItem<class_CanvasItem>` 著色器中對帶符號距離場進行取樣時會用到，\ :ref:`GPUParticles2D<class_GPUParticles2D>` 碰撞時也會用到。3D 算繪時的 SDFGI *不會*\ 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -12558,7 +12558,7 @@ Sets the viewport's 2D signed distance field :ref:`ProjectSettings.rendering/2d/
 
 |void| **viewport_set_size**\ (\ viewport\: :ref:`RID<class_RID>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_size>`
 
-Sets the viewport's width and height in pixels.
+設定視口的寬度和高度，單位為圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -12570,7 +12570,7 @@ Sets the viewport's width and height in pixels.
 
 |void| **viewport_set_snap_2d_transforms_to_pixel**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>`
 
-If ``true``, canvas item transforms (i.e. origin position) are snapped to the nearest pixel when rendering. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled. Equivalent to :ref:`ProjectSettings.rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`.
+如果為 ``true``\ ，則畫布項的變換（即原點的位置）會在算繪時吸附到整像素。這樣外觀看上去就會更銳利，但會影響移動的平滑程度，尤其是在啟用了 :ref:`Camera2D<class_Camera2D>` 平滑的情況下。等價於 :ref:`ProjectSettings.rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12582,7 +12582,7 @@ If ``true``, canvas item transforms (i.e. origin position) are snapped to the ne
 
 |void| **viewport_set_snap_2d_vertices_to_pixel**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>`
 
-If ``true``, canvas item vertices (i.e. polygon points) are snapped to the nearest pixel when rendering. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled. Equivalent to :ref:`ProjectSettings.rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`.
+如果為 ``true``\ ，則畫布項的頂點（即多邊形的點）會在算繪時吸附到整像素。這樣外觀看上去就會更銳利，但會影響移動的平滑程度，尤其是在啟用了 :ref:`Camera2D<class_Camera2D>` 平滑的情況下。等價於 :ref:`ProjectSettings.rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12594,9 +12594,9 @@ If ``true``, canvas item vertices (i.e. polygon points) are snapped to the neare
 
 |void| **viewport_set_texture_mipmap_bias**\ (\ viewport\: :ref:`RID<class_RID>`, mipmap_bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_texture_mipmap_bias>`
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close). To get sharper textures at a distance without introducing too much graininess, set this between ``-0.75`` and ``0.0``. Enabling temporal antialiasing (:ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`) can help reduce the graininess visible when using negative mipmap bias.
+讀取較低或較高的 mipmap，影響最終紋理的清晰度（也稱為“紋理 LOD 偏置”）。負值會讓 mipmap 紋理更銳利，但從較遠處觀察時顆粒更明顯，而正值會讓 mipmap 紋理更模糊（即便湊近看也一樣）。要在不引入太多顆粒感的情況下，在遠處獲得更銳利的紋理，請將其設定在 ``-0.75`` 和 ``0.0`` 之間。啟用時間抗鋸齒（\ :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`\ ）有助於減少使用負 mipmap 偏置時可見的顆粒度。
 
-\ **Note:** When the 3D scaling mode is set to FSR 1.0, this value is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``-log2(1.0 / scale) + mipmap_bias``.
+\ **注意：**\ 當 3D 縮放模式設定為 FSR 1.0 時，會使用該值調整自動 mipmap 偏置，偏置的計算基於縮放係數。其公式為 ``-log2(1.0 / scale) + mipmap_bias``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12608,7 +12608,7 @@ Affects the final texture sharpness by reading from a lower or higher mipmap (al
 
 |void| **viewport_set_transparent_background**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_transparent_background>`
 
-If ``true``, the viewport renders its background as transparent.
+如果為 ``true``\ ，視口將其背景算繪為透明。
 
 .. rst-class:: classref-item-separator
 
@@ -12658,7 +12658,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 |void| **viewport_set_use_occlusion_culling**\ (\ viewport\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_use_occlusion_culling>`
 
-If ``true``, enables occlusion culling on the specified viewport. Equivalent to :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>`.
+如果為 ``true``\ ，則在指定的視口上啟用遮擋剔除。等價於 :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12682,7 +12682,7 @@ If ``true``, use temporal antialiasing. Equivalent to :ref:`ProjectSettings.rend
 
 |void| **viewport_set_use_xr**\ (\ viewport\: :ref:`RID<class_RID>`, use_xr\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_use_xr>`
 
-If ``true``, the viewport uses augmented or virtual reality technologies. See :ref:`XRInterface<class_XRInterface>`.
+如果為 ``true``\ ，則視口使用增強或虛擬實境技術。參閱 :ref:`XRInterface<class_XRInterface>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12694,7 +12694,7 @@ If ``true``, the viewport uses augmented or virtual reality technologies. See :r
 
 |void| **viewport_set_vrs_mode**\ (\ viewport\: :ref:`RID<class_RID>`, mode\: :ref:`ViewportVRSMode<enum_RenderingServer_ViewportVRSMode>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_vrs_mode>`
 
-Sets the Variable Rate Shading (VRS) mode for the viewport. If the GPU does not support VRS, this property is ignored. Equivalent to :ref:`ProjectSettings.rendering/vrs/mode<class_ProjectSettings_property_rendering/vrs/mode>`.
+設定視口的可變速率著色（VRS）模式。如果 GPU 不支援 VRS 則會忽略該屬性。等價於 :ref:`ProjectSettings.rendering/vrs/mode<class_ProjectSettings_property_rendering/vrs/mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12706,7 +12706,7 @@ Sets the Variable Rate Shading (VRS) mode for the viewport. If the GPU does not 
 
 |void| **viewport_set_vrs_texture**\ (\ viewport\: :ref:`RID<class_RID>`, texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_vrs_texture>`
 
-The texture to use when the VRS mode is set to :ref:`VIEWPORT_VRS_TEXTURE<class_RenderingServer_constant_VIEWPORT_VRS_TEXTURE>`. Equivalent to :ref:`ProjectSettings.rendering/vrs/texture<class_ProjectSettings_property_rendering/vrs/texture>`.
+當 VRS 模式設定為 :ref:`VIEWPORT_VRS_TEXTURE<class_RenderingServer_constant_VIEWPORT_VRS_TEXTURE>` 時，要使用的紋理。等價於 :ref:`ProjectSettings.rendering/vrs/texture<class_ProjectSettings_property_rendering/vrs/texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12792,11 +12792,11 @@ To place in a scene, attach this notifier to an instance using :ref:`instance_se
 
 :ref:`RID<class_RID>` **voxel_gi_create**\ (\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_create>`
 
-Creates a new voxel-based global illumination object and adds it to the RenderingServer. It can be accessed with the RID that is returned. This RID will be used in all ``voxel_gi_*`` RenderingServer functions.
+新建基於體素的全域光照物件並將其新增到 RenderingServer。可以通過返回的 RID 進行存取。這個 RID 會在所有 ``voxel_gi_*`` RenderingServer 函式中使用。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法進行釋放。
 
-\ **Note:** The equivalent node is :ref:`VoxelGI<class_VoxelGI>`.
+\ **注意：**\ 等價節點為 :ref:`VoxelGI<class_VoxelGI>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12892,7 +12892,7 @@ Once finished with your RID, you will want to free the RID using the RenderingSe
 
 |void| **voxel_gi_set_baked_exposure_normalization**\ (\ voxel_gi\: :ref:`RID<class_RID>`, baked_exposure\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_baked_exposure_normalization>`
 
-Used to inform the renderer what exposure normalization value was used while baking the voxel gi. This value will be used and modulated at run time to ensure that the voxel gi maintains a consistent level of exposure even if the scene-wide exposure normalization is changed at run time. For more information see :ref:`camera_attributes_set_exposure()<class_RenderingServer_method_camera_attributes_set_exposure>`.
+用於通知算繪器烘焙體素 GI 時使用的曝光正規化值。運作時會使用這個值進行調變，確保體素 GI 能夠維持恒定的曝光等級，即便場景範圍的曝光正規化值在運作時發生改變。更多資訊見 :ref:`camera_attributes_set_exposure()<class_RenderingServer_method_camera_attributes_set_exposure>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12904,7 +12904,7 @@ Used to inform the renderer what exposure normalization value was used while bak
 
 |void| **voxel_gi_set_bias**\ (\ voxel_gi\: :ref:`RID<class_RID>`, bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_bias>`
 
-Sets the :ref:`VoxelGIData.bias<class_VoxelGIData_property_bias>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.bias<class_VoxelGIData_property_bias>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -12916,7 +12916,7 @@ Sets the :ref:`VoxelGIData.bias<class_VoxelGIData_property_bias>` value to use o
 
 |void| **voxel_gi_set_dynamic_range**\ (\ voxel_gi\: :ref:`RID<class_RID>`, range\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_dynamic_range>`
 
-Sets the :ref:`VoxelGIData.dynamic_range<class_VoxelGIData_property_dynamic_range>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.dynamic_range<class_VoxelGIData_property_dynamic_range>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -12928,7 +12928,7 @@ Sets the :ref:`VoxelGIData.dynamic_range<class_VoxelGIData_property_dynamic_rang
 
 |void| **voxel_gi_set_energy**\ (\ voxel_gi\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_energy>`
 
-Sets the :ref:`VoxelGIData.energy<class_VoxelGIData_property_energy>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.energy<class_VoxelGIData_property_energy>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -12940,7 +12940,7 @@ Sets the :ref:`VoxelGIData.energy<class_VoxelGIData_property_energy>` value to u
 
 |void| **voxel_gi_set_interior**\ (\ voxel_gi\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_interior>`
 
-Sets the :ref:`VoxelGIData.interior<class_VoxelGIData_property_interior>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.interior<class_VoxelGIData_property_interior>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -12952,7 +12952,7 @@ Sets the :ref:`VoxelGIData.interior<class_VoxelGIData_property_interior>` value 
 
 |void| **voxel_gi_set_normal_bias**\ (\ voxel_gi\: :ref:`RID<class_RID>`, bias\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_normal_bias>`
 
-Sets the :ref:`VoxelGIData.normal_bias<class_VoxelGIData_property_normal_bias>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.normal_bias<class_VoxelGIData_property_normal_bias>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -12964,7 +12964,7 @@ Sets the :ref:`VoxelGIData.normal_bias<class_VoxelGIData_property_normal_bias>` 
 
 |void| **voxel_gi_set_propagation**\ (\ voxel_gi\: :ref:`RID<class_RID>`, amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_propagation>`
 
-Sets the :ref:`VoxelGIData.propagation<class_VoxelGIData_property_propagation>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.propagation<class_VoxelGIData_property_propagation>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -12976,7 +12976,7 @@ Sets the :ref:`VoxelGIData.propagation<class_VoxelGIData_property_propagation>` 
 
 |void| **voxel_gi_set_quality**\ (\ quality\: :ref:`VoxelGIQuality<enum_RenderingServer_VoxelGIQuality>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_quality>`
 
-Sets the :ref:`ProjectSettings.rendering/global_illumination/voxel_gi/quality<class_ProjectSettings_property_rendering/global_illumination/voxel_gi/quality>` value to use when rendering. This parameter is global and cannot be set on a per-VoxelGI basis.
+設定算繪時使用的 :ref:`ProjectSettings.rendering/global_illumination/voxel_gi/quality<class_ProjectSettings_property_rendering/global_illumination/voxel_gi/quality>` 值。這個參數是全域的，無法為單獨的 VoxelGI 進行設定。
 
 .. rst-class:: classref-item-separator
 
@@ -12988,14 +12988,14 @@ Sets the :ref:`ProjectSettings.rendering/global_illumination/voxel_gi/quality<cl
 
 |void| **voxel_gi_set_use_two_bounces**\ (\ voxel_gi\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_use_two_bounces>`
 
-Sets the :ref:`VoxelGIData.use_two_bounces<class_VoxelGIData_property_use_two_bounces>` value to use on the specified ``voxel_gi``'s :ref:`RID<class_RID>`.
+為 :ref:`RID<class_RID>` 為 ``voxel_gi`` 的對象設定 :ref:`VoxelGIData.use_two_bounces<class_VoxelGIData_property_use_two_bounces>` 值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -8,14 +8,14 @@
 FoldableContainer
 =================
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 A container that can be expanded/collapsed.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A container that can be expanded/collapsed, with a title that can be filled with controls, such as buttons. This is also called an accordion.
 
@@ -25,8 +25,8 @@ A FoldableContainer can be grouped with other FoldableContainers so that only on
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -123,8 +123,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_FoldableContainer_signal_folding_changed:
 
@@ -140,8 +140,8 @@ Emitted when the container is folded/expanded.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_FoldableContainer_TitlePosition:
 
@@ -171,8 +171,8 @@ Makes the title appear at the bottom of the container. Also makes all StyleBoxes
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_FoldableContainer_property_foldable_group:
 
@@ -312,8 +312,8 @@ Defines the behavior of the title when the text is longer than the available spa
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_FoldableContainer_method_add_title_bar_control:
 
@@ -367,8 +367,8 @@ Removes a :ref:`Control<class_Control>` added with :ref:`add_title_bar_control()
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_FoldableContainer_theme_color_collapsed_font_color:
 
@@ -582,12 +582,12 @@ Background used when the mouse cursor enters the title's area when expanded.
 
 Default background for the **FoldableContainer**'s title when expanded.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

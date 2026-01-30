@@ -5,27 +5,27 @@
 Texture3D
 =========
 
-**Inherits:** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CompressedTexture3D<class_CompressedTexture3D>`, :ref:`ImageTexture3D<class_ImageTexture3D>`, :ref:`NoiseTexture3D<class_NoiseTexture3D>`, :ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`, :ref:`Texture3DRD<class_Texture3DRD>`
+**派生：** :ref:`CompressedTexture3D<class_CompressedTexture3D>`, :ref:`ImageTexture3D<class_ImageTexture3D>`, :ref:`NoiseTexture3D<class_NoiseTexture3D>`, :ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`, :ref:`Texture3DRD<class_Texture3DRD>`
 
-Base class for 3-dimensional textures.
+三维纹理的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Base class for :ref:`ImageTexture3D<class_ImageTexture3D>` and :ref:`CompressedTexture3D<class_CompressedTexture3D>`. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types. **Texture3D** is the base class for all 3-dimensional texture types. See also :ref:`TextureLayered<class_TextureLayered>`.
+:ref:`ImageTexture3D<class_ImageTexture3D>` 和 :ref:`CompressedTexture3D<class_CompressedTexture3D>` 的基类。无法直接使用，但包含所有访问派生资源类型所需的函数。\ **Texture3D** 是所有三维纹理类型的基类。另见 :ref:`TextureLayered<class_TextureLayered>`\ 。
 
-All images need to have the same width, height and number of mipmap levels.
+所有图像都需要有相同的宽度、高度和 mipmap 层数。
 
-To create such a texture file yourself, reimport your image files using the Godot Editor import presets.
+要自己创建这样的纹理文件，请使用 Godot 编辑器的导入预设重新导入你的图像文件。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Texture3D_private_method__get_data:
 
@@ -73,7 +73,7 @@ Method Descriptions
 
 :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\] **_get_data**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Texture3D_private_method__get_data>`
 
-Called when the **Texture3D**'s data is queried.
+查询该 **Texture3D** 的数据时被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Called when the **Texture3D**'s data is queried.
 
 :ref:`int<class_int>` **_get_depth**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Texture3D_private_method__get_depth>`
 
-Called when the **Texture3D**'s depth is queried.
+查询该 **Texture3D** 的深度时被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Called when the **Texture3D**'s depth is queried.
 
 :ref:`Format<enum_Image_Format>` **_get_format**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Texture3D_private_method__get_format>`
 
-Called when the **Texture3D**'s format is queried.
+查询该 **Texture3D** 的格式时被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Called when the **Texture3D**'s format is queried.
 
 :ref:`int<class_int>` **_get_height**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Texture3D_private_method__get_height>`
 
-Called when the **Texture3D**'s height is queried.
+查询该 **Texture3D** 的高度时被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Called when the **Texture3D**'s height is queried.
 
 :ref:`int<class_int>` **_get_width**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Texture3D_private_method__get_width>`
 
-Called when the **Texture3D**'s width is queried.
+查询该 **Texture3D** 的宽度时被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ Called when the **Texture3D**'s width is queried.
 
 :ref:`bool<class_bool>` **_has_mipmaps**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Texture3D_private_method__has_mipmaps>`
 
-Called when the presence of mipmaps in the **Texture3D** is queried.
+查询该 **Texture3D** 的 Mipmap 是否存在时被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Called when the presence of mipmaps in the **Texture3D** is queried.
 
 :ref:`Resource<class_Resource>` **create_placeholder**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_create_placeholder>`
 
-Creates a placeholder version of this resource (:ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`).
+创建该资源的占位符版本（\ :ref:`PlaceholderTexture3D<class_PlaceholderTexture3D>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Creates a placeholder version of this resource (:ref:`PlaceholderTexture3D<class
 
 :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\] **get_data**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_get_data>`
 
-Returns the **Texture3D**'s data as an array of :ref:`Image<class_Image>`\ s. Each :ref:`Image<class_Image>` represents a *slice* of the **Texture3D**, with different slices mapping to different depth (Z axis) levels.
+将该 **Texture3D** 的数据作为 :ref:`Image<class_Image>` 数组返回。每个 :ref:`Image<class_Image>` 代表该 **Texture3D** 的一个\ *切片*\ ，不同的切片映射到不同的深度（Z 轴）级别。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Returns the **Texture3D**'s data as an array of :ref:`Image<class_Image>`\ s. Ea
 
 :ref:`int<class_int>` **get_depth**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_get_depth>`
 
-Returns the **Texture3D**'s depth in pixels. Depth is typically represented by the Z axis (a dimension not present in :ref:`Texture2D<class_Texture2D>`).
+返回该 **Texture3D** 的深度，单位为像素。深度通常由 Z 轴表示（\ :ref:`Texture2D<class_Texture2D>` 中没有这个维度）。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Returns the **Texture3D**'s depth in pixels. Depth is typically represented by t
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_get_format>`
 
-Returns the current format being used by this texture.
+返回该纹理当前所使用的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Returns the current format being used by this texture.
 
 :ref:`int<class_int>` **get_height**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_get_height>`
 
-Returns the **Texture3D**'s height in pixels. Width is typically represented by the Y axis.
+返回该 **Texture3D** 的高度，单位为像素。宽度通常由 Y 轴表示。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Returns the **Texture3D**'s height in pixels. Width is typically represented by 
 
 :ref:`int<class_int>` **get_width**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_get_width>`
 
-Returns the **Texture3D**'s width in pixels. Width is typically represented by the X axis.
+返回该 **Texture3D** 的宽度，单位为像素。宽度通常由 X 轴表示。
 
 .. rst-class:: classref-item-separator
 
@@ -217,14 +217,14 @@ Returns the **Texture3D**'s width in pixels. Width is typically represented by t
 
 :ref:`bool<class_bool>` **has_mipmaps**\ (\ ) |const| :ref:`🔗<class_Texture3D_method_has_mipmaps>`
 
-Returns ``true`` if the **Texture3D** has generated mipmaps.
+如果该 **Texture3D** 已生成 mipmap，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

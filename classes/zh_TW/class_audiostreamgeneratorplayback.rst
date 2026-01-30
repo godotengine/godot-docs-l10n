@@ -5,30 +5,30 @@
 AudioStreamGeneratorPlayback
 ============================
 
-**Inherits:** :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>` **<** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>` **<** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Plays back audio generated using :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This class is meant to be used with :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` to play back the generated audio in real-time.
+播放使用 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` 生成的音訊。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `Audio Generator Demo <https://godotengine.org/asset-library/asset/2759>`__
+此類旨在與 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` 一起使用以即時播放生成的音訊。
 
-- `Godot 3.2 will get new audio features <https://godotengine.org/article/godot-32-will-get-new-audio-features>`__
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `音訊產生器範例 <https://godotengine.org/asset-library/asset/2759>`__
+
+- `Godot 3.2 將獲得新的音訊功能 <https://godotengine.org/article/godot-32-will-get-new-audio-features>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamGeneratorPlayback_method_can_push_buffer:
 
@@ -62,7 +62,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **can_push_buffer**\ (\ amount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamGeneratorPlayback_method_can_push_buffer>`
 
-Returns ``true`` if a buffer of the size ``amount`` can be pushed to the audio sample data buffer without overflowing it, ``false`` otherwise.
+如果可以將大小為 ``amount`` 的緩衝區推送到音訊取樣資料緩衝區而不會使其溢出，則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -74,7 +74,7 @@ Returns ``true`` if a buffer of the size ``amount`` can be pushed to the audio s
 
 |void| **clear_buffer**\ (\ ) :ref:`🔗<class_AudioStreamGeneratorPlayback_method_clear_buffer>`
 
-Clears the audio sample data buffer.
+清除音訊樣本資料緩衝區。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ Clears the audio sample data buffer.
 
 :ref:`int<class_int>` **get_frames_available**\ (\ ) |const| :ref:`🔗<class_AudioStreamGeneratorPlayback_method_get_frames_available>`
 
-Returns the number of frames that can be pushed to the audio sample data buffer without overflowing it. If the result is ``0``, the buffer is full.
+返回能夠推送到音訊取樣資料緩衝區而不使其溢出的影格數。如果結果為 ``0``\ ，則緩衝區已滿。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Returns the number of frames that can be pushed to the audio sample data buffer 
 
 :ref:`int<class_int>` **get_skips**\ (\ ) |const| :ref:`🔗<class_AudioStreamGeneratorPlayback_method_get_skips>`
 
-Returns the number of times the playback skipped due to a buffer underrun in the audio sample data. This value is reset at the start of the playback.
+傳回因音訊樣本資料緩衝不足而導致播放跳幀的次數。此值會在播放開始時重設。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Returns the number of times the playback skipped due to a buffer underrun in the
 
 :ref:`bool<class_bool>` **push_buffer**\ (\ frames\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_AudioStreamGeneratorPlayback_method_push_buffer>`
 
-Pushes several audio data frames to the buffer. This is usually more efficient than :ref:`push_frame()<class_AudioStreamGeneratorPlayback_method_push_frame>` in C# and compiled languages via GDExtension, but :ref:`push_buffer()<class_AudioStreamGeneratorPlayback_method_push_buffer>` may be *less* efficient in GDScript.
+將多個音訊資料影格推送到緩衝區。這通常比 C# 中的以及通過 GDExtension 編譯的語言中的 :ref:`push_frame()<class_AudioStreamGeneratorPlayback_method_push_frame>` 效率更高，但在 GDScript 中的 :ref:`push_buffer()<class_AudioStreamGeneratorPlayback_method_push_buffer>` 的效率可能\ *更低*\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -122,14 +122,14 @@ Pushes several audio data frames to the buffer. This is usually more efficient t
 
 :ref:`bool<class_bool>` **push_frame**\ (\ frame\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AudioStreamGeneratorPlayback_method_push_frame>`
 
-Pushes a single audio data frame to the buffer. This is usually less efficient than :ref:`push_buffer()<class_AudioStreamGeneratorPlayback_method_push_buffer>` in C# and compiled languages via GDExtension, but :ref:`push_frame()<class_AudioStreamGeneratorPlayback_method_push_frame>` may be *more* efficient in GDScript.
+將單個音訊資料影格推送到緩衝區。這通常比 C# 中的以及通過 GDExtension 編譯的語言中的 :ref:`push_buffer()<class_AudioStreamGeneratorPlayback_method_push_buffer>` 效率更低，但在 GDScript 中的 :ref:`push_frame()<class_AudioStreamGeneratorPlayback_method_push_frame>` 的效率可能\ *更高*\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

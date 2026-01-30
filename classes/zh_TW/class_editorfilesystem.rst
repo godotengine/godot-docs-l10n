@@ -5,23 +5,23 @@
 EditorFileSystem
 ================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Resource filesystem, as the editor sees it.
+編輯器可以流覽的資源檔系統。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This object holds information of all resources in the filesystem, their types, etc.
+這個物件儲存著檔案系統裡所有的資源的資訊，型別和其他。
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_resource_filesystem()<class_EditorInterface_method_get_resource_filesystem>`.
+\ **注意：**\ 這個類不應該被直接產生實體。應該使用下列方法 :ref:`EditorInterface.get_resource_filesystem()<class_EditorInterface_method_get_resource_filesystem>` 來讀取單例。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_EditorFileSystem_signal_filesystem_changed:
 
@@ -61,7 +61,7 @@ Signals
 
 **filesystem_changed**\ (\ ) :ref:`🔗<class_EditorFileSystem_signal_filesystem_changed>`
 
-Emitted if the filesystem changed.
+在檔案系統更改的時候觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Emitted if the filesystem changed.
 
 **resources_reimported**\ (\ resources\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_EditorFileSystem_signal_resources_reimported>`
 
-Emitted if a resource is reimported.
+重新匯入資源時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Emitted before a resource is reimported.
 
 **resources_reload**\ (\ resources\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_EditorFileSystem_signal_resources_reload>`
 
-Emitted if at least one resource is reloaded when the filesystem is scanned.
+如果在掃描檔案系統的時候，至少有一個資源被重新載入，則觸發該訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Emitted if at least one resource is reloaded when the filesystem is scanned.
 
 **script_classes_updated**\ (\ ) :ref:`🔗<class_EditorFileSystem_signal_script_classes_updated>`
 
-Emitted when the list of global script classes gets updated.
+更新全域腳本類列表時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Emitted when the list of global script classes gets updated.
 
 **sources_changed**\ (\ exist\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFileSystem_signal_sources_changed>`
 
-Emitted if the source of any imported file changed.
+如果匯入檔的來源發生變化，則觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -129,8 +129,8 @@ Emitted if the source of any imported file changed.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_EditorFileSystem_method_get_file_type:
 
@@ -138,7 +138,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **get_file_type**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorFileSystem_method_get_file_type>`
 
-Returns the resource type of the file, given the full path. This returns a string such as ``"Resource"`` or ``"GDScript"``, *not* a file extension such as ``".gd"``.
+返回呼函式的資源型別，給定完整路徑。這將返回字串，如 ``"Resource"`` 或 ``"GDScript"``\ ，\ *不是*\ 檔副檔名，如 ``".gd"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Returns the resource type of the file, given the full path. This returns a strin
 
 :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>` **get_filesystem**\ (\ ) :ref:`🔗<class_EditorFileSystem_method_get_filesystem>`
 
-Gets the root directory object.
+獲取根目錄物件。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Gets the root directory object.
 
 :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>` **get_filesystem_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFileSystem_method_get_filesystem_path>`
 
-Returns a view into the filesystem at ``path``.
+返回在 ``path`` 下檔案系統的視圖。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Returns a view into the filesystem at ``path``.
 
 :ref:`float<class_float>` **get_scanning_progress**\ (\ ) |const| :ref:`🔗<class_EditorFileSystem_method_get_scanning_progress>`
 
-Returns the scan progress for 0 to 1 if the FS is being scanned.
+如果檔案系統正在被掃描，返回掃描的進度，值為 0-1。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Returns the scan progress for 0 to 1 if the FS is being scanned.
 
 :ref:`bool<class_bool>` **is_scanning**\ (\ ) |const| :ref:`🔗<class_EditorFileSystem_method_is_scanning>`
 
-Returns ``true`` if the filesystem is being scanned.
+如果檔案系統正在進行掃描，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -198,11 +198,11 @@ Returns ``true`` if the filesystem is being scanned.
 
 |void| **reimport_files**\ (\ files\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_EditorFileSystem_method_reimport_files>`
 
-Reimports a set of files. Call this if these files or their ``.import`` files were directly edited by script or an external program.
+重新匯入一組檔。如果這些檔或其 ``.import`` 檔案是由腳本或外部程序直接編輯的，請呼叫此函式。
 
-If the file type changed or the file was newly created, use :ref:`update_file()<class_EditorFileSystem_method_update_file>` or :ref:`scan()<class_EditorFileSystem_method_scan>`.
+如果檔案型別已更改或檔是新建立的，請使用 :ref:`update_file()<class_EditorFileSystem_method_update_file>` 或 :ref:`scan()<class_EditorFileSystem_method_scan>`\ 。
 
-\ **Note:** This function blocks until the import is finished. However, the main loop iteration, including timers and :ref:`Node._process()<class_Node_private_method__process>`, will occur during the import process due to progress bar updates. Avoid calls to :ref:`reimport_files()<class_EditorFileSystem_method_reimport_files>` or :ref:`scan()<class_EditorFileSystem_method_scan>` while an import is in progress.
+\ **注意：**\ 此函式會阻塞，直到匯入完成。但由於進度條更新，主迴圈反覆運算，包括計時器和 :ref:`Node._process()<class_Node_private_method__process>`\ ，將在匯入過程中發生。避免在匯入正在進行時呼叫 :ref:`reimport_files()<class_EditorFileSystem_method_reimport_files>` 或 :ref:`scan()<class_EditorFileSystem_method_scan>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ If the file type changed or the file was newly created, use :ref:`update_file()<
 
 |void| **scan**\ (\ ) :ref:`🔗<class_EditorFileSystem_method_scan>`
 
-Scan the filesystem for changes.
+掃描檔案系統的改動。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Scan the filesystem for changes.
 
 |void| **scan_sources**\ (\ ) :ref:`🔗<class_EditorFileSystem_method_scan_sources>`
 
-Check if the source of any imported resource changed.
+檢查是否更改了已匯入資源的來源。
 
 .. rst-class:: classref-item-separator
 
@@ -238,16 +238,16 @@ Check if the source of any imported resource changed.
 
 |void| **update_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFileSystem_method_update_file>`
 
-Add a file in an existing directory, or schedule file information to be updated on editor restart. Can be used to update text files saved by an external program.
+在現有目錄中新增檔，或計畫在編輯器重新開機時更新檔資訊。可用於更新由外部程式保存的文字檔。
 
-This will not import the file. To reimport, call :ref:`reimport_files()<class_EditorFileSystem_method_reimport_files>` or :ref:`scan()<class_EditorFileSystem_method_scan>` methods.
+這不會匯入檔。要重新匯入，請呼叫 :ref:`reimport_files()<class_EditorFileSystem_method_reimport_files>` 或 :ref:`scan()<class_EditorFileSystem_method_scan>` 方法。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

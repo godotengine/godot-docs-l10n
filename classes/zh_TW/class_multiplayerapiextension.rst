@@ -8,14 +8,14 @@
 MultiplayerAPIExtension
 =======================
 
-**Inherits:** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Base class used for extending the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+用於擴充 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This class can be used to extend or replace the default :ref:`MultiplayerAPI<class_MultiplayerAPI>` implementation via script or extensions.
 
@@ -105,8 +105,8 @@ Native extensions can alternatively use the :ref:`MultiplayerAPI.set_default_int
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -137,8 +137,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_MultiplayerAPIExtension_private_method__get_multiplayer_peer:
 
@@ -146,7 +146,7 @@ Method Descriptions
 
 :ref:`MultiplayerPeer<class_MultiplayerPeer>` **_get_multiplayer_peer**\ (\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_multiplayer_peer>`
 
-Called when the :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` is retrieved.
+在檢索到 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ Called when the :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_prope
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_peer_ids**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_peer_ids>`
 
-Callback for :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>`.
+:ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Callback for :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_pe
 
 :ref:`int<class_int>` **_get_remote_sender_id**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_remote_sender_id>`
 
-Callback for :ref:`MultiplayerAPI.get_remote_sender_id()<class_MultiplayerAPI_method_get_remote_sender_id>`.
+:ref:`MultiplayerAPI.get_remote_sender_id()<class_MultiplayerAPI_method_get_remote_sender_id>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ Callback for :ref:`MultiplayerAPI.get_remote_sender_id()<class_MultiplayerAPI_me
 
 :ref:`int<class_int>` **_get_unique_id**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerAPIExtension_private_method__get_unique_id>`
 
-Callback for :ref:`MultiplayerAPI.get_unique_id()<class_MultiplayerAPI_method_get_unique_id>`.
+:ref:`MultiplayerAPI.get_unique_id()<class_MultiplayerAPI_method_get_unique_id>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Callback for :ref:`MultiplayerAPI.get_unique_id()<class_MultiplayerAPI_method_ge
 
 :ref:`Error<enum_@GlobalScope_Error>` **_object_configuration_add**\ (\ object\: :ref:`Object<class_Object>`, configuration\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__object_configuration_add>`
 
-Callback for :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>`.
+:ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Callback for :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAP
 
 :ref:`Error<enum_@GlobalScope_Error>` **_object_configuration_remove**\ (\ object\: :ref:`Object<class_Object>`, configuration\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__object_configuration_remove>`
 
-Callback for :ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>`.
+:ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ Callback for :ref:`MultiplayerAPI.object_configuration_remove()<class_Multiplaye
 
 :ref:`Error<enum_@GlobalScope_Error>` **_poll**\ (\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__poll>`
 
-Callback for :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>`.
+:ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ Callback for :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>`.
 
 :ref:`Error<enum_@GlobalScope_Error>` **_rpc**\ (\ peer\: :ref:`int<class_int>`, object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, args\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__rpc>`
 
-Callback for :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>`.
+:ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>` 的回呼函式。
 
 .. rst-class:: classref-item-separator
 
@@ -242,14 +242,14 @@ Callback for :ref:`MultiplayerAPI.rpc()<class_MultiplayerAPI_method_rpc>`.
 
 |void| **_set_multiplayer_peer**\ (\ multiplayer_peer\: :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ ) |virtual| :ref:`🔗<class_MultiplayerAPIExtension_private_method__set_multiplayer_peer>`
 
-Called when the :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` is set.
+在設定 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 時呼叫。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

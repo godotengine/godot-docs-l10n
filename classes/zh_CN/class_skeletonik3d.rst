@@ -5,43 +5,43 @@
 SkeletonIK3D
 ============
 
-**Deprecated:** This class may be changed or removed in future versions.
+**已弃用：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node used to rotate all bones of a :ref:`Skeleton3D<class_Skeleton3D>` bone chain a way that places the end bone at a desired 3D position.
+可以将 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼链中的所有骨骼进行旋转，从而将末端骨骼放置在正确的 3D 位置的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-SkeletonIK3D is used to rotate all bones of a :ref:`Skeleton3D<class_Skeleton3D>` bone chain a way that places the end bone at a desired 3D position. A typical scenario for IK in games is to place a character's feet on the ground or a character's hands on a currently held object. SkeletonIK uses FabrikInverseKinematic internally to solve the bone chain and applies the results to the :ref:`Skeleton3D<class_Skeleton3D>` ``bones_global_pose_override`` property for all affected bones in the chain. If fully applied, this overwrites any bone transform from :ref:`Animation<class_Animation>`\ s or bone custom poses set by users. The applied amount can be controlled with the :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` property.
+SkeletonIK3D 可以将 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼链中的所有骨骼进行旋转，从而将末端骨骼放置在正确的 3D 位置。游戏中 IK 的典型场景是将角色的脚放在地面上，或者将角色的手放在当前持有的物体上。SkeletonIK 在内部使用 FabrikInverseKinematic 来解决骨骼链，并将结果应用于 :ref:`Skeleton3D<class_Skeleton3D>` ``bones_global_pose_override`` 属性中所有受影响的骨骼链。如果完全应用，这将覆盖任何来自 :ref:`Animation<class_Animation>` 的骨骼变换或用户设置的骨骼自定义姿势。应用量可以用 :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` 属性来控制。
 
 ::
 
-    # Apply IK effect automatically on every new frame (not the current)
+    # 在每一个新的帧上自动应用 IK 效果（不是当前的）。
     skeleton_ik_node.start()
 
-    # Apply IK effect only on the current frame
+    # 只在当前帧上应用 IK 效果
     skeleton_ik_node.start(true)
 
-    # Stop IK effect and reset bones_global_pose_override on Skeleton
+    # 停止 IK 效果并重置骨骼上的 bones_global_pose_override
     skeleton_ik_node.stop()
 
-    # Apply full IK effect
+    # 应用完整的 IK 效果
     skeleton_ik_node.set_influence(1.0)
 
-    # Apply half IK effect
+    # 应用一半的 IK 效果
     skeleton_ik_node.set_influence(0.5)
 
-    # Apply zero IK effect (a value at or below 0.01 also removes bones_global_pose_override on Skeleton)
+    # 应用零 IK 效果（数值为 0.01 或低于 0.01 也会移除 Skeleton 上的 bones_global_pose_override）
     skeleton_ik_node.set_influence(0.0)
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_SkeletonIK3D_property_interpolation:
 
@@ -106,9 +106,9 @@ Property Descriptions
 - |void| **set_interpolation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_interpolation**\ (\ )
 
-**Deprecated:** Use :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` instead.
+**已弃用：** Use :ref:`SkeletonModifier3D.influence<class_SkeletonModifier3D_property_influence>` instead.
 
-Interpolation value for how much the IK results are applied to the current skeleton bone chain. A value of ``1.0`` will overwrite all skeleton bone transforms completely while a value of ``0.0`` will visually disable the SkeletonIK.
+IK 效果被应用于当前骨架骨骼链的程度的插值。\ ``1.0`` 的值将完全覆盖所有骨架骨骼变换，而 ``0.0`` 的值将在视觉上禁用 SkeletonIK。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Interpolation value for how much the IK results are applied to the current skele
 - |void| **set_magnet_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_magnet_position**\ (\ )
 
-Secondary target position (first is :ref:`target<class_SkeletonIK3D_property_target>` property or :ref:`target_node<class_SkeletonIK3D_property_target_node>`) for the IK chain. Use magnet position (pole target) to control the bending of the IK chain. Only works if the bone chain has more than 2 bones. The middle chain bone position will be linearly interpolated with the magnet position.
+IK 链的次要目标位置（首先是 :ref:`target<class_SkeletonIK3D_property_target>` 属性或 :ref:`target_node<class_SkeletonIK3D_property_target_node>`\ ）。使用磁铁位置（极点目标）来控制 IK 链的弯曲。仅当骨骼链具有 2 个以上的骨骼时才有效。中间链骨位置将与磁铁位置进行线性插值。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Secondary target position (first is :ref:`target<class_SkeletonIK3D_property_tar
 - |void| **set_max_iterations**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_iterations**\ (\ )
 
-Number of iteration loops used by the IK solver to produce more accurate (and elegant) bone chain results.
+IK解算器使用的迭代循环的数量，以产生更准确（和优雅）的骨链效果。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Number of iteration loops used by the IK solver to produce more accurate (and el
 - |void| **set_min_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_distance**\ (\ )
 
-The minimum distance between bone and goal target. If the distance is below this value, the IK solver stops further iterations.
+骨骼与目标对象之间的最小距离。如果距离低于这个值，IK解算器将停止进一步的迭代。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ The minimum distance between bone and goal target. If the distance is below this
 - |void| **set_override_tip_basis**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_override_tip_basis**\ (\ )
 
-If ``true`` overwrites the rotation of the tip bone with the rotation of the :ref:`target<class_SkeletonIK3D_property_target>` (or :ref:`target_node<class_SkeletonIK3D_property_target_node>` if defined).
+如果为 ``true``\ ，则用 :ref:`target<class_SkeletonIK3D_property_target>`\ （或者如果定义了 :ref:`target_node<class_SkeletonIK3D_property_target_node>`]）的旋转覆盖尖端骨骼的旋转。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ If ``true`` overwrites the rotation of the tip bone with the rotation of the :re
 - |void| **set_root_bone**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_root_bone**\ (\ )
 
-The name of the current root bone, the first bone in the IK chain.
+当前的根骨骼的名称，即 IK 链中的第一条骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ The name of the current root bone, the first bone in the IK chain.
 - |void| **set_target_transform**\ (\ value\: :ref:`Transform3D<class_Transform3D>`\ )
 - :ref:`Transform3D<class_Transform3D>` **get_target_transform**\ (\ )
 
-First target of the IK chain where the tip bone is placed and, if :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` is ``true``, how the tip bone is rotated. If a :ref:`target_node<class_SkeletonIK3D_property_target_node>` path is available the nodes transform is used instead and this property is ignored.
+放置尖端骨骼的 IK 链的第一个目标，如果 :ref:`override_tip_basis<class_SkeletonIK3D_property_override_tip_basis>` 是 ``true``\ ，尖端骨骼的旋转方式。如果 :ref:`target_node<class_SkeletonIK3D_property_target_node>` 路径可用，则使用节点变换，并忽略此属性。
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ First target of the IK chain where the tip bone is placed and, if :ref:`override
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-Target node :ref:`NodePath<class_NodePath>` for the IK chain. If available, the node's current :ref:`Transform3D<class_Transform3D>` is used instead of the :ref:`target<class_SkeletonIK3D_property_target>` property.
+IK 链的目标节点 :ref:`NodePath<class_NodePath>`\ 。如果有的话，将使用节点当前的 :ref:`Transform3D<class_Transform3D>`\ ，而不是 :ref:`target<class_SkeletonIK3D_property_target>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Target node :ref:`NodePath<class_NodePath>` for the IK chain. If available, the 
 - |void| **set_tip_bone**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_tip_bone**\ (\ )
 
-The name of the current tip bone, the last bone in the IK chain placed at the :ref:`target<class_SkeletonIK3D_property_target>` transform (or :ref:`target_node<class_SkeletonIK3D_property_target_node>` if defined).
+当前尖端骨骼的名称，IK 链中放置在 :ref:`target<class_SkeletonIK3D_property_target>` 变换处的最后一个骨骼（或者已定义 :ref:`target_node<class_SkeletonIK3D_property_target_node>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ The name of the current tip bone, the last bone in the IK chain placed at the :r
 - |void| **set_use_magnet**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_magnet**\ (\ )
 
-If ``true``, instructs the IK solver to consider the secondary magnet target (pole target) when calculating the bone chain. Use the magnet position (pole target) to control the bending of the IK chain.
+如果为 ``true``\ ，指示 IK 求解器在解算器链时考虑次要磁铁目标（极点目标）。使用磁铁位置（磁极目标）来控制 IK 链的弯曲。
 
 .. rst-class:: classref-section-separator
 
@@ -269,8 +269,8 @@ If ``true``, instructs the IK solver to consider the secondary magnet target (po
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_SkeletonIK3D_method_get_parent_skeleton:
 
@@ -278,7 +278,7 @@ Method Descriptions
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_parent_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonIK3D_method_get_parent_skeleton>`
 
-Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node that was present when SkeletonIK entered the scene tree. Returns ``null`` if the parent node was not a :ref:`Skeleton3D<class_Skeleton3D>` node when SkeletonIK3D entered the scene tree.
+返回 SkeletonIK 进入场景树时存在的父级 :ref:`Skeleton3D<class_Skeleton3D>` 节点。如果 SkeletonIK3D 进入场景树时父节点不是 :ref:`Skeleton3D<class_Skeleton3D>` 节点，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node that was present whe
 
 :ref:`bool<class_bool>` **is_running**\ (\ ) :ref:`🔗<class_SkeletonIK3D_method_is_running>`
 
-Returns ``true`` if SkeletonIK is applying IK effects on continues frames to the :ref:`Skeleton3D<class_Skeleton3D>` bones. Returns ``false`` if SkeletonIK is stopped or :ref:`start()<class_SkeletonIK3D_method_start>` was used with the ``one_time`` parameter set to ``true``.
+如果 SkeletonIK 正将 IK 效果应用到 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼的连续帧上，则返回 ``true``\ 。如果 SkeletonIK 被停止或 :ref:`start()<class_SkeletonIK3D_method_start>` 被使用时 ``one_time`` 参数被设置为 ``true``\ ，则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Returns ``true`` if SkeletonIK is applying IK effects on continues frames to the
 
 |void| **start**\ (\ one_time\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_SkeletonIK3D_method_start>`
 
-Starts applying IK effects on each frame to the :ref:`Skeleton3D<class_Skeleton3D>` bones but will only take effect starting on the next frame. If ``one_time`` is ``true``, this will take effect immediately but also reset on the next frame.
+开始将 IK 效果应用到每一帧的 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼，但只会在下一帧开始生效。如果 ``one_time`` 为 ``true`` 则将立即生效，但仍会在下一帧重置。
 
 .. rst-class:: classref-item-separator
 
@@ -314,14 +314,14 @@ Starts applying IK effects on each frame to the :ref:`Skeleton3D<class_Skeleton3
 
 |void| **stop**\ (\ ) :ref:`🔗<class_SkeletonIK3D_method_stop>`
 
-Stops applying IK effects on each frame to the :ref:`Skeleton3D<class_Skeleton3D>` bones and also calls :ref:`Skeleton3D.clear_bones_global_pose_override()<class_Skeleton3D_method_clear_bones_global_pose_override>` to remove existing overrides on all bones.
+停止将 IK 效果应用到每帧的 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼，并调用 :ref:`Skeleton3D.clear_bones_global_pose_override()<class_Skeleton3D_method_clear_bones_global_pose_override>` 来移除所有骨骼上的现有覆盖。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,32 +5,32 @@
 AudioEffectDistortion
 =====================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a distortion audio effect to an Audio bus.
+為音訊匯流排新增失真效果。
 
-Modifies the sound to make it distorted.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Different types are available: clip, tan, lo-fi (bit crushing), overdrive, or waveshape.
-
-By distorting the waveform the frequency content changes, which will often make the sound "crunchy" or "abrasive". For games, it can simulate sound coming from some saturated device or speaker very efficiently.
+改變聲波形以產生失真。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+可選類型：削頂、正切、Lo-Fi（比特破碎）、Overdrive、Waveshape。
+
+失真會改變波形與頻譜，常帶來「破裂」或「粗糙」質感；在遊戲中能高效模擬設備或喇叭飽和的聲音。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AudioEffectDistortion_Mode:
 
@@ -68,7 +68,7 @@ enum **Mode**: :ref:`🔗<enum_AudioEffectDistortion_Mode>`
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_CLIP** = ``0``
 
-Digital distortion effect which cuts off peaks at the top and bottom of the waveform.
+削頂式數位失真，截去波形上下峰值。
 
 .. _class_AudioEffectDistortion_constant_MODE_ATAN:
 
@@ -88,7 +88,7 @@ Digital distortion effect which cuts off peaks at the top and bottom of the wave
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_LOFI** = ``2``
 
-Low-resolution digital distortion effect (bit depth reduction). You can use it to emulate the sound of early digital audio devices.
+低解析度數位失真（位元深度降低），常用於模擬早期數位設備的聲音。
 
 .. _class_AudioEffectDistortion_constant_MODE_OVERDRIVE:
 
@@ -96,7 +96,7 @@ Low-resolution digital distortion effect (bit depth reduction). You can use it t
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_OVERDRIVE** = ``3``
 
-Emulates the warm distortion produced by a field effect transistor, which is commonly used in solid-state musical instrument amplifiers. The :ref:`drive<class_AudioEffectDistortion_property_drive>` property has no effect in this mode.
+模擬場效電晶體產生的溫暖失真（固態器材常見）。此模式下 :ref:`drive<class_AudioEffectDistortion_property_drive>` 無效。
 
 .. _class_AudioEffectDistortion_constant_MODE_WAVESHAPE:
 
@@ -104,7 +104,7 @@ Emulates the warm distortion produced by a field effect transistor, which is com
 
 :ref:`Mode<enum_AudioEffectDistortion_Mode>` **MODE_WAVESHAPE** = ``4``
 
-Waveshaper distortions are used mainly by electronic musicians to achieve an extra-abrasive sound.
+波形塑形失真常被電子音樂人用來打造更粗糙的聲音。
 
 .. rst-class:: classref-section-separator
 
@@ -112,8 +112,8 @@ Waveshaper distortions are used mainly by electronic musicians to achieve an ext
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioEffectDistortion_property_drive:
 
@@ -126,7 +126,7 @@ Property Descriptions
 - |void| **set_drive**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drive**\ (\ )
 
-Distortion power. Value can range from 0 to 1.
+失真強度，可設 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Distortion power. Value can range from 0 to 1.
 - |void| **set_keep_hf_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_keep_hf_hz**\ (\ )
 
-High-pass filter, in Hz. Frequencies higher than this value will not be affected by the distortion. Value can range from 1 to 20000.
+高通濾波器（Hz），高於此頻率者不受失真影響；可設 1–20000。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ High-pass filter, in Hz. Frequencies higher than this value will not be affected
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_AudioEffectDistortion_Mode>`\ )
 - :ref:`Mode<enum_AudioEffectDistortion_Mode>` **get_mode**\ (\ )
 
-Distortion type.
+失真類型。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Distortion type.
 - |void| **set_post_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_post_gain**\ (\ )
 
-Increases or decreases the volume after the effect, in decibels. Value can range from -80 to 24.
+效果後增減的音量（dB），可設 -80 至 24。
 
 .. rst-class:: classref-item-separator
 
@@ -194,14 +194,14 @@ Increases or decreases the volume after the effect, in decibels. Value can range
 - |void| **set_pre_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pre_gain**\ (\ )
 
-Increases or decreases the volume before the effect, in decibels. Value can range from -60 to 60.
+效果前增減的音量（dB），可設 -60 至 60。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

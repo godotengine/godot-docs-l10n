@@ -5,23 +5,23 @@
 Path3D
 ======
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Contains a :ref:`Curve3D<class_Curve3D>` path for :ref:`PathFollow3D<class_PathFollow3D>` nodes to follow.
+包含 :ref:`PathFollow3D<class_PathFollow3D>` 节点要跟随的的一条 :ref:`Curve3D<class_Curve3D>` 路径。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Can have :ref:`PathFollow3D<class_PathFollow3D>` child nodes moving along the :ref:`Curve3D<class_Curve3D>`. See :ref:`PathFollow3D<class_PathFollow3D>` for more information on the usage.
+可以让 :ref:`PathFollow3D<class_PathFollow3D>` 子节点沿着 :ref:`Curve3D<class_Curve3D>` 移动。有关用法的更多信息见 :ref:`PathFollow3D<class_PathFollow3D>`\ 。
 
-Note that the path is considered as relative to the moved nodes (children of :ref:`PathFollow3D<class_PathFollow3D>`). As such, the curve should usually start with a zero vector ``(0, 0, 0)``.
+注意，该路径被认为是相对于移动的节点（\ :ref:`PathFollow3D<class_PathFollow3D>` 的子节点）。因此，该曲线通常应以零向量 ``(0, 0, 0)`` 开始。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Path3D_signal_curve_changed:
 
@@ -47,7 +47,7 @@ Signals
 
 **curve_changed**\ (\ ) :ref:`🔗<class_Path3D_signal_curve_changed>`
 
-Emitted when the :ref:`curve<class_Path3D_property_curve>` changes.
+当 :ref:`curve<class_Path3D_property_curve>` 改变时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Emitted when the :ref:`curve<class_Path3D_property_curve>` changes.
 
 **debug_color_changed**\ (\ ) :ref:`🔗<class_Path3D_signal_debug_color_changed>`
 
-Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_color>` changes.
+当 :ref:`debug_custom_color<class_Path3D_property_debug_custom_color>` 改变时触发。
 
 .. rst-class:: classref-section-separator
 
@@ -67,8 +67,8 @@ Emitted when the :ref:`debug_custom_color<class_Path3D_property_debug_custom_col
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Path3D_property_curve:
 
@@ -81,7 +81,7 @@ Property Descriptions
 - |void| **set_curve**\ (\ value\: :ref:`Curve3D<class_Curve3D>`\ )
 - :ref:`Curve3D<class_Curve3D>` **get_curve**\ (\ )
 
-A :ref:`Curve3D<class_Curve3D>` describing the path.
+描述路径的 :ref:`Curve3D<class_Curve3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -100,12 +100,12 @@ A :ref:`Curve3D<class_Curve3D>` describing the path.
 
 The custom color used to draw the path in the editor. If set to :ref:`Color.BLACK<class_Color_constant_BLACK>` (as by default), the color set in :ref:`ProjectSettings.debug/shapes/paths/geometry_color<class_ProjectSettings_property_debug/shapes/paths/geometry_color>` is used.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

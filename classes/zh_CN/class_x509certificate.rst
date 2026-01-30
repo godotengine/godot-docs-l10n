@@ -5,30 +5,30 @@
 X509Certificate
 ===============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An X509 certificate (e.g. for TLS).
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-The X509Certificate class represents an X509 certificate. Certificates can be loaded and saved like any other :ref:`Resource<class_Resource>`.
-
-They can be used as the server certificate in :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` (along with the proper :ref:`CryptoKey<class_CryptoKey>`), and to specify the only certificate that should be accepted when connecting to a TLS server via :ref:`StreamPeerTLS.connect_to_stream()<class_StreamPeerTLS_method_connect_to_stream>`.
+X509 证书（例如用于 TLS）。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`SSL certificates <../tutorials/networking/ssl_certificates>`
+X509Certificate 类代表 X509 证书。证书可以像其他的 :ref:`Resource<class_Resource>` 资源一样加载和保存。
+
+可以用作 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 中的服务器证书（搭配正确的 :ref:`CryptoKey<class_CryptoKey>`\ ），也可以用于指定通过 :ref:`StreamPeerTLS.connect_to_stream()<class_StreamPeerTLS_method_connect_to_stream>` 连接到 TLS 服务器时应该接受的唯一证书。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`SSL 证书 <../tutorials/networking/ssl_certificates>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_X509Certificate_method_load:
 
@@ -58,7 +58,7 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_X509Certificate_method_load>`
 
-Loads a certificate from ``path`` ("\*.crt" file).
+从路径 ``path`` 加载证书（“\*.crt”文件）。
 
 .. rst-class:: classref-item-separator
 
@@ -70,7 +70,7 @@ Loads a certificate from ``path`` ("\*.crt" file).
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_from_string**\ (\ string\: :ref:`String<class_String>`\ ) :ref:`🔗<class_X509Certificate_method_load_from_string>`
 
-Loads a certificate from the given ``string``.
+从给定的字符串 ``string`` 加载证书。
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +82,7 @@ Loads a certificate from the given ``string``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_X509Certificate_method_save>`
 
-Saves a certificate to the given ``path`` (should be a "\*.crt" file).
+将证书保存到给定的路径 ``path``\ （应该是“\*.crt”文件）。
 
 .. rst-class:: classref-item-separator
 
@@ -94,14 +94,14 @@ Saves a certificate to the given ``path`` (should be a "\*.crt" file).
 
 :ref:`String<class_String>` **save_to_string**\ (\ ) :ref:`🔗<class_X509Certificate_method_save_to_string>`
 
-Returns a string representation of the certificate, or an empty string if the certificate is invalid.
+返回证书的字符串表示，如果证书无效则返回空字符串。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

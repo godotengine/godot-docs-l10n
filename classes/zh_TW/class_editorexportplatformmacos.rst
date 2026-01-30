@@ -5,23 +5,23 @@
 EditorExportPlatformMacOS
 =========================
 
-**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exporter for macOS.
+macOS 匯出器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Exporting for macOS <../tutorials/export/exporting_for_macos>`
+- :doc:`為 macOS 匯出 <../tutorials/export/exporting_for_macos>`
 
-- :doc:`Running Godot apps on macOS <../tutorials//export/running_on_macos>`
+- :doc:`在 macOS 上運作 Godot 套用 <../tutorials//export/running_on_macos>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -508,8 +508,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_EditorExportPlatformMacOS_property_application/additional_plist_content:
 
@@ -534,7 +534,7 @@ Additional data added to the root ``<dict>`` section of the `Info.plist <https:/
 
 :ref:`String<class_String>` **application/app_category** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/app_category>`
 
-Application category for the App Store.
+App Store 的套用程式分類。
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ Application category for the App Store.
 
 :ref:`String<class_String>` **application/bundle_identifier** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/bundle_identifier>`
 
-Unique application identifier in a reverse-DNS format, can only contain alphanumeric characters (``A-Z``, ``a-z``, and ``0-9``), hyphens (``-``), and periods (``.``).
+反向 DNS 格式的唯一套用程式識別字，只能包含字母數位字元（\ ``A-Z``\ 、\ ``a-z`` 和 ``0-9``\ ）、連字號（\ ``-``\ ）和句點（\ ``.``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Unique application identifier in a reverse-DNS format, can only contain alphanum
 
 :ref:`String<class_String>` **application/copyright** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/copyright>`
 
-Copyright notice for the bundle visible to the user (in English).
+組合包的（英文）版權宣告，使用者可見。
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ Copyright notice for the bundle visible to the user (in English).
 
 :ref:`Dictionary<class_Dictionary>` **application/copyright_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/copyright_localized>`
 
-Copyright notice for the bundle visible to the user (localized).
+組合包的（當地語系化）版權宣告，使用者可見。
 
 .. rst-class:: classref-item-separator
 
@@ -582,7 +582,7 @@ Copyright notice for the bundle visible to the user (localized).
 
 :ref:`int<class_int>` **application/export_angle** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/export_angle>`
 
-If set to ``1``, ANGLE libraries are exported with the exported application. If set to ``0``, ANGLE libraries are exported only if :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` is set to ``"opengl3_angle"``.
+如果設定為\ ``1``\ ，則ANGLE 函式庫將隨匯出的應用程式一起匯出。如果設定為\ ``0``\ ，則匯出ANGLE 函式庫僅當 :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 設定為 ``"opengl3_angle"``.
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ If set to ``1``, ANGLE libraries are exported with the exported application. If 
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon>`
 
-Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+套用程式圖示檔。如果留空，則會退回至 :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`\ ，繼而退回至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.
 
 :ref:`int<class_int>` **application/icon_interpolation** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon_interpolation>`
 
-Interpolation method used to resize application icon.
+用於調整套用程式圖示大小的插值方法。
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ Application version visible to the user. Can only contain numeric characters (``
 
 :ref:`String<class_String>` **application/signature** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/signature>`
 
-A four-character creator code that is specific to the bundle. Optional.
+特定於該組合包的四字元建立者碼。可選的。
 
 .. rst-class:: classref-item-separator
 
@@ -698,11 +698,11 @@ Machine-readable application version in the ``major.minor.patch`` format. Can on
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformMacOS_property_binary_format/architecture>`
 
-Application executable architecture.
+套用程式可執行檔的架構。
 
-Supported architectures: ``x86_64``, ``arm64``, and ``universal`` (``x86_64 + arm64``).
+支援的架構有：\ ``x86_64``\ 、\ ``arm64``\ 、\ ``universal``\ （\ ``x86_64 + arm64``\ ）。
 
-Official export templates include ``universal`` binaries only.
+官方匯出範本中只包含 ``universal`` 的二進位檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -714,7 +714,7 @@ Official export templates include ``universal`` binaries only.
 
 :ref:`String<class_String>` **codesign/apple_team_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/apple_team_id>`
 
-Apple Team ID, unique 10-character string. To locate your Team ID check "Membership details" section in your Apple developer account dashboard, or "Organizational Unit" of your code signing certificate. See `Locate your Team ID <https://developer.apple.com/help/account/manage-your-team/locate-your-team-id>`__.
+Apple 團隊 ID，唯一的 10 字元的字串。要找到你的團隊 ID，請檢查 Apple 開發者帳戶儀錶板中的“會員詳細資訊”部分，或程式碼簽章憑證的“組織單位”。見 `搜尋你的團隊 ID <https://developer.apple.com/cn/help/account/manage-your-team/locate-your-team-id>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -726,9 +726,9 @@ Apple Team ID, unique 10-character string. To locate your Team ID check "Members
 
 :ref:`String<class_String>` **codesign/certificate_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/certificate_file>`
 
-PKCS #12 certificate file used to sign ``.app`` bundle.
+用於對 ``.app`` 組合包進行簽章的 PKCS #12 憑證檔。
 
-Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``.
+可以使用環境變數 ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -740,9 +740,9 @@ Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICA
 
 :ref:`String<class_String>` **codesign/certificate_password** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/certificate_password>`
 
-Password for the certificate file used to sign ``.app`` bundle.
+用於對 ``.app`` 組合包進行簽章的憑證檔的密碼。
 
-Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``.
+可以使用環境變數 ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -754,7 +754,7 @@ Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICA
 
 :ref:`int<class_int>` **codesign/codesign** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/codesign>`
 
-Tool to use for code signing.
+用於程式碼簽章的工具。
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +766,7 @@ Tool to use for code signing.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **codesign/custom_options** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/custom_options>`
 
-Array of the additional command line arguments passed to the code signing tool.
+要額外傳給程式碼簽章工具的命令列參數的陣列。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -809,7 +809,7 @@ Enable to allow access to contacts in the user's address book, if it's enabled y
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_dyld_environment_variables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_dyld_environment_variables>`
 
-Allows app to use dynamic linker environment variables to inject code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__.
+允許套用使用動態連結器環境變數注入程式碼。如果你使用的外掛程式使用了動態或自我修改的原生程式碼，請根據該外掛程式文件中的說明啟用。見 `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Allows app to use dynamic linker environment variables to inject code. If you ar
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_jit_code_execution** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_jit_code_execution>`
 
-Allows creating writable and executable memory for JIT code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__.
+允許建立可寫可執行記憶體，用於 JIT 程式碼。如果你使用的外掛程式使用了動態或自我修改的原生程式碼，請根據該外掛程式文件中的說明啟用。見 `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ Allows creating writable and executable memory for JIT code. If you are using ad
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_unsigned_executable_memory** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_unsigned_executable_memory>`
 
-Allows creating writable and executable memory without JIT restrictions. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__.
+允許建立可寫可執行記憶體，不受 JIT 限制。如果你使用的外掛程式使用了動態或自我修改的原生程式碼，請根據該外掛程式文件中的說明啟用。見 `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +845,7 @@ Allows creating writable and executable memory without JIT restrictions. If you 
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/device_bluetooth** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/device_bluetooth>`
 
-Enable to allow app to interact with Bluetooth devices. This entitlement is required to use wireless controllers. See `com.apple.security.device.bluetooth <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth>`__.
+啟用後能夠允許套用與藍牙裝置互動。使用無線控制器時，必須擁有這項權利。見 `com.apple.security.device.bluetooth <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -857,7 +857,7 @@ Enable to allow app to interact with Bluetooth devices. This entitlement is requ
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/device_usb** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/device_usb>`
 
-Enable to allow app to interact with USB devices. This entitlement is required to use wired controllers. See `com.apple.security.device.usb <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb>`__.
+啟用後能夠允許套用與 USB 裝置互動。使用有線控制器時，必須擁有這項權利。見 `com.apple.security.device.usb <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -869,9 +869,9 @@ Enable to allow app to interact with USB devices. This entitlement is required t
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/enabled>`
 
-Enables App Sandbox. The App Sandbox restricts access to user data, networking, and devices. Sandboxed apps can't access most of the file system, can't use custom file dialogs and execute binaries outside the .app bundle. See `App Sandbox <https://developer.apple.com/documentation/security/app_sandbox>`__.
+啟用 App Sandbox 套用沙盒。App Sandbox 能夠限制對使用者資料、網路以及裝置的訪問。沙盒套用無法存取檔案系統中的大部分區域，無法使用自訂檔對話方塊，也無法執行 .app 組合包之外的二進位檔案。見 `App Sandbox <https://developer.apple.com/documentation/security/app_sandbox>`__\ 。
 
-\ **Note:** To distribute an app through the App Store, you must enable the App Sandbox.
+\ **注意：**\ 通過 App Store 分發套用時必須啟用 App Sandbox。
 
 .. rst-class:: classref-item-separator
 
@@ -883,7 +883,7 @@ Enables App Sandbox. The App Sandbox restricts access to user data, networking, 
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_downloads** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_downloads>`
 
-Allows read or write access to the user's "Downloads" folder. See `com.apple.security.files.downloads.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_downloads_read-write>`__.
+允許對使用者“下載”資料夾的讀寫存取。見 `com.apple.security.files.downloads.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_downloads_read-write>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -895,7 +895,7 @@ Allows read or write access to the user's "Downloads" folder. See `com.apple.sec
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_movies** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_movies>`
 
-Allows read or write access to the user's "Movies" folder. See `com.apple.security.files.movies.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_movies_read-write>`__.
+允許對使用者“影片”資料夾的讀寫存取。見 `com.apple.security.files.movies.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_movies_read-write>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -907,7 +907,7 @@ Allows read or write access to the user's "Movies" folder. See `com.apple.securi
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_music** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_music>`
 
-Allows read or write access to the user's "Music" folder. See `com.apple.security.files.music.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_music_read-write>`__.
+允許對使用者“音樂”資料夾的讀寫存取。見 `com.apple.security.files.music.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_music_read-write>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -919,7 +919,7 @@ Allows read or write access to the user's "Music" folder. See `com.apple.securit
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_pictures** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_pictures>`
 
-Allows read or write access to the user's "Pictures" folder. See `com.apple.security.files.pictures.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_pictures_read-write>`__.
+允許對使用者“圖片”資料夾的讀寫存取。見 `com.apple.security.files.pictures.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_pictures_read-write>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -931,7 +931,7 @@ Allows read or write access to the user's "Pictures" folder. See `com.apple.secu
 
 :ref:`int<class_int>` **codesign/entitlements/app_sandbox/files_user_selected** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/files_user_selected>`
 
-Allows read or write access to the locations the user has selected using a native file dialog. See `com.apple.security.files.user-selected.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_files_user-selected_read-write>`__.
+允許對使用者“音樂”資料夾的讀寫存取。見 `com.apple.security.files.music.read-write <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_assets_music_read-write>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -943,7 +943,7 @@ Allows read or write access to the locations the user has selected using a nativ
 
 :ref:`Array<class_Array>` **codesign/entitlements/app_sandbox/helper_executables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/helper_executables>`
 
-List of helper executables to embedded to the app bundle. Sandboxed app are limited to execute only these executable. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
+要嵌入套用組合包的輔助可執行檔列表。沙盒套用僅限於執行這些可執行檔。見 `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ List of helper executables to embedded to the app bundle. Sandboxed app are limi
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/network_client** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/network_client>`
 
-Enable to allow app to establish outgoing network connections. See `com.apple.security.network.client <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_client>`__.
+啟用後允許套用建立出站的網路連接。見 `com.apple.security.network.client <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_client>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -967,7 +967,7 @@ Enable to allow app to establish outgoing network connections. See `com.apple.se
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/network_server** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/network_server>`
 
-Enable to allow app to listen for incoming network connections. See `com.apple.security.network.server <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_server>`__.
+啟用後允許套用監聽入站的網路連接。見 `com.apple.security.network.server <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_network_server>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -979,7 +979,7 @@ Enable to allow app to listen for incoming network connections. See `com.apple.s
 
 :ref:`bool<class_bool>` **codesign/entitlements/apple_events** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/apple_events>`
 
-Enable to allow app to send Apple events to other apps. See `com.apple.security.automation.apple-events <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events>`__.
+啟用後允許套用向其他套用發送 Apple 事件。見 `com.apple.security.automation.apple-events <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_automation_apple-events>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1027,7 @@ Enable if you need to use the camera, if it's enabled you should also provide us
 
 :ref:`String<class_String>` **codesign/entitlements/custom_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/custom_file>`
 
-Custom entitlements ``.plist`` file, if specified the rest of entitlements in the export config are ignored.
+自訂權利 ``.plist`` 檔，如果指定，則會忽略匯出配置中的其他權利。
 
 .. rst-class:: classref-item-separator
 
@@ -1039,7 +1039,7 @@ Custom entitlements ``.plist`` file, if specified the rest of entitlements in th
 
 :ref:`bool<class_bool>` **codesign/entitlements/debugging** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/debugging>`
 
-You can temporarily enable this entitlement to use native debugger (GDB, LLDB) with the exported app. This entitlement should be disabled for production export. See `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__.
+臨時啟用這個權利就可以對匯出的套用使用原生除錯器（GDB、LLDB）。生產匯出應該禁用這項權利。見 `Embedding a command-line tool in a sandboxed app <https://developer.apple.com/documentation/xcode/embedding-a-helper-tool-in-a-sandboxed-app>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ You can temporarily enable this entitlement to use native debugger (GDB, LLDB) w
 
 :ref:`bool<class_bool>` **codesign/entitlements/disable_library_validation** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/disable_library_validation>`
 
-Allows app to load arbitrary libraries and frameworks (not signed with the same Team ID as the main executable or by Apple). Enable it if you are using GDExtension add-ons or ad-hoc signing, or want to support user-provided external add-ons. See `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
+允許套用載入任意庫和框架（沒有使用與主可執行檔相同的團隊 ID 進行簽章，也沒有經過 Apple 的簽章）。如果你使用了 GDExtension 外掛程式或 ad-hoc 簽章，或者想要支援使用者提供的外部外掛程式，請啟用該選項。見 `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1087,7 @@ Enable to allow access to the user's Photos library, if it's enabled you should 
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/identity>`
 
-The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign ``.app`` bundle.
+用於對 ``.app`` 組合包進行簽章的簽章身份的“全名”“通用名”或 SHA-1 哈希。
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1099,7 @@ The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sig
 
 :ref:`String<class_String>` **codesign/installer_identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/installer_identity>`
 
-The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign ``.pkg`` installer package for App Store distribution, use ``3rd Party Mac Developer Installer: Name.`` identity.
+用於對通過 App Store 分發的 ``.pkg`` 安裝器進行簽章的簽章身份的“全名”“通用名”或 SHA-1 雜湊，使用 ``3rd Party Mac Developer Installer: Name.`` 身份。
 
 .. rst-class:: classref-item-separator
 
@@ -1111,9 +1111,9 @@ The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sig
 
 :ref:`String<class_String>` **codesign/provisioning_profile** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/provisioning_profile>`
 
-Provisioning profile file downloaded from Apple developer account dashboard. See `Edit, download, or delete provisioning profiles <https://developer.apple.com/help/account/manage-profiles/edit-download-or-delete-profiles>`__.
+從 Apple 開發者帳戶控制台下載到的預置描述檔。見 `編輯、下載或刪除預置描述檔 <https://developer.apple.com/cn/help/account/manage-profiles/edit-download-or-delete-profiles/>`__\ 。
 
-Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``.
+可以使用環境變數 ``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1125,7 +1125,7 @@ Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_PROVISION
 
 :ref:`String<class_String>` **custom_template/debug** :ref:`🔗<class_EditorExportPlatformMacOS_property_custom_template/debug>`
 
-Path to the custom export template. If left empty, default template is used.
+到自訂匯出範本的路徑。如果留空，則預設範本將被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1137,7 @@ Path to the custom export template. If left empty, default template is used.
 
 :ref:`String<class_String>` **custom_template/release** :ref:`🔗<class_EditorExportPlatformMacOS_property_custom_template/release>`
 
-Path to the custom export template. If left empty, default template is used.
+到自訂匯出範本的路徑。如果留空，則預設範本將被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1149,7 +1149,7 @@ Path to the custom export template. If left empty, default template is used.
 
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformMacOS_property_debug/export_console_wrapper>`
 
-If enabled, a wrapper that can be used to run the application with console output is created alongside the exported application.
+啟用後，會在匯出後的套用程式旁建立一個封裝程式，可以用來以帶命令行輸出的形式運作該套用程式。
 
 .. rst-class:: classref-item-separator
 
@@ -1161,7 +1161,7 @@ If enabled, a wrapper that can be used to run the application with console outpu
 
 :ref:`bool<class_bool>` **display/high_res** :ref:`🔗<class_EditorExportPlatformMacOS_property_display/high_res>`
 
-If ``true``, the application is rendered at native display resolution, otherwise it is always rendered at loDPI resolution and upscaled by OS when required.
+如果為 ``true``\ ，則套用程式使用原生顯示器解析度算繪，否則始終使用 loHPI 解析度算繪，必要時由作業系統放大。
 
 .. rst-class:: classref-item-separator
 
@@ -1173,7 +1173,7 @@ If ``true``, the application is rendered at native display resolution, otherwise
 
 :ref:`int<class_int>` **export/distribution_type** :ref:`🔗<class_EditorExportPlatformMacOS_property_export/distribution_type>`
 
-Application distribution target.
+套用程式分發目標。
 
 .. rst-class:: classref-item-separator
 
@@ -1185,9 +1185,9 @@ Application distribution target.
 
 :ref:`String<class_String>` **notarization/api_key** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/api_key>`
 
-Apple App Store Connect API issuer key file.
+Apple App Store Connect API 發行者金鑰檔案。
 
-Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_KEY``.
+可以使用環境變數 ``GODOT_MACOS_NOTARIZATION_API_KEY`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1199,9 +1199,9 @@ Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_K
 
 :ref:`String<class_String>` **notarization/api_key_id** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/api_key_id>`
 
-Apple App Store Connect API issuer key ID.
+Apple App Store Connect API 發行者金鑰 ID。
 
-Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_KEY_ID``.
+可以使用環境變數 ``GODOT_MACOS_NOTARIZATION_API_KEY_ID`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1213,9 +1213,9 @@ Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_K
 
 :ref:`String<class_String>` **notarization/api_uuid** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/api_uuid>`
 
-Apple App Store Connect API issuer UUID.
+Apple App Store Connect API 發行者 UUID。
 
-Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_UUID``.
+可以使用環境變數 ``GODOT_MACOS_NOTARIZATION_API_UUID`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1227,9 +1227,9 @@ Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_API_U
 
 :ref:`String<class_String>` **notarization/apple_id_name** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/apple_id_name>`
 
-Apple ID account name (email address).
+Apple ID 帳戶名（郵箱地址）。
 
-Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``.
+可以使用環境變數 ``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1241,9 +1241,9 @@ Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE
 
 :ref:`String<class_String>` **notarization/apple_id_password** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/apple_id_password>`
 
-Apple ID app-specific password.
+Apple ID 針對套用的密碼。
 
-Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``.
+可以使用環境變數 ``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD`` 覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1255,7 +1255,7 @@ Can be overridden with the environment variable ``GODOT_MACOS_NOTARIZATION_APPLE
 
 :ref:`int<class_int>` **notarization/notarization** :ref:`🔗<class_EditorExportPlatformMacOS_property_notarization/notarization>`
 
-Tool to use for notarization.
+用於公證的工具。
 
 .. rst-class:: classref-item-separator
 
@@ -1267,7 +1267,7 @@ Tool to use for notarization.
 
 :ref:`String<class_String>` **privacy/address_book_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>`
 
-A message displayed when requesting access to the user's contacts (in English).
+請求存取使用者的連路人時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -1279,7 +1279,7 @@ A message displayed when requesting access to the user's contacts (in English).
 
 :ref:`Dictionary<class_Dictionary>` **privacy/address_book_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description_localized>`
 
-A message displayed when requesting access to the user's contacts (localized).
+請求存取使用者的連路人時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -1291,7 +1291,7 @@ A message displayed when requesting access to the user's contacts (localized).
 
 :ref:`String<class_String>` **privacy/calendar_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>`
 
-A message displayed when requesting access to the user's calendar data (in English).
+請求存取使用者的日曆資料時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -1303,7 +1303,7 @@ A message displayed when requesting access to the user's calendar data (in Engli
 
 :ref:`Dictionary<class_Dictionary>` **privacy/calendar_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description_localized>`
 
-A message displayed when requesting access to the user's calendar data (localized).
+請求存取使用者的日曆資料時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -1315,7 +1315,7 @@ A message displayed when requesting access to the user's calendar data (localize
 
 :ref:`String<class_String>` **privacy/camera_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description>`
 
-A message displayed when requesting access to the device's camera (in English).
+請求存取裝置相機時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ A message displayed when requesting access to the device's camera (in English).
 
 :ref:`Dictionary<class_Dictionary>` **privacy/camera_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/camera_usage_description_localized>`
 
-A message displayed when requesting access to the device's camera (localized).
+請求存取裝置相機時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3019,7 +3019,7 @@ Indicates whether your app uses user IDs for tracking.
 
 :ref:`String<class_String>` **privacy/desktop_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/desktop_folder_usage_description>`
 
-A message displayed when requesting access to the user's "Desktop" folder (in English).
+請求存取使用者的“桌面”資料夾時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3031,7 +3031,7 @@ A message displayed when requesting access to the user's "Desktop" folder (in En
 
 :ref:`Dictionary<class_Dictionary>` **privacy/desktop_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/desktop_folder_usage_description_localized>`
 
-A message displayed when requesting access to the user's "Desktop" folder (localized).
+請求存取使用者的“桌面”資料夾時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3043,7 +3043,7 @@ A message displayed when requesting access to the user's "Desktop" folder (local
 
 :ref:`String<class_String>` **privacy/documents_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/documents_folder_usage_description>`
 
-A message displayed when requesting access to the user's "Documents" folder (in English).
+請求存取使用者的“文件”資料夾時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3055,7 +3055,7 @@ A message displayed when requesting access to the user's "Documents" folder (in 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/documents_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/documents_folder_usage_description_localized>`
 
-A message displayed when requesting access to the user's "Documents" folder (localized).
+請求存取使用者的“文件”資料夾時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3067,7 +3067,7 @@ A message displayed when requesting access to the user's "Documents" folder (loc
 
 :ref:`String<class_String>` **privacy/downloads_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/downloads_folder_usage_description>`
 
-A message displayed when requesting access to the user's "Downloads" folder (in English).
+請求存取使用者的“下載”資料夾時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3079,7 +3079,7 @@ A message displayed when requesting access to the user's "Downloads" folder (in 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/downloads_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/downloads_folder_usage_description_localized>`
 
-A message displayed when requesting access to the user's "Downloads" folder (localized).
+請求存取使用者的“下載”資料夾時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3091,7 +3091,7 @@ A message displayed when requesting access to the user's "Downloads" folder (loc
 
 :ref:`String<class_String>` **privacy/location_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>`
 
-A message displayed when requesting access to the user's location information (in English).
+請求存取使用者的位置資訊時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3103,7 +3103,7 @@ A message displayed when requesting access to the user's location information (i
 
 :ref:`Dictionary<class_Dictionary>` **privacy/location_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/location_usage_description_localized>`
 
-A message displayed when requesting access to the user's location information (localized).
+請求存取使用者的位置資訊時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3115,7 +3115,7 @@ A message displayed when requesting access to the user's location information (l
 
 :ref:`String<class_String>` **privacy/microphone_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description>`
 
-A message displayed when requesting access to the device's microphone (in English).
+請求存取裝置麥克風時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3127,7 +3127,7 @@ A message displayed when requesting access to the device's microphone (in Englis
 
 :ref:`Dictionary<class_Dictionary>` **privacy/microphone_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/microphone_usage_description_localized>`
 
-A message displayed when requesting access to the device's microphone (localized).
+請求存取裝置麥克風時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3139,7 +3139,7 @@ A message displayed when requesting access to the device's microphone (localized
 
 :ref:`String<class_String>` **privacy/network_volumes_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/network_volumes_usage_description>`
 
-A message displayed when requesting access to the user's network drives (in English).
+請求存取使用者的網路磁碟時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3151,7 +3151,7 @@ A message displayed when requesting access to the user's network drives (in Engl
 
 :ref:`Dictionary<class_Dictionary>` **privacy/network_volumes_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/network_volumes_usage_description_localized>`
 
-A message displayed when requesting access to the user's network drives (localized).
+請求存取使用者的網路磁碟時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3163,7 +3163,7 @@ A message displayed when requesting access to the user's network drives (localiz
 
 :ref:`String<class_String>` **privacy/photos_library_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>`
 
-A message displayed when requesting access to the user's photo library (in English).
+請求存取使用者照片圖庫時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3175,7 +3175,7 @@ A message displayed when requesting access to the user's photo library (in Engli
 
 :ref:`Dictionary<class_Dictionary>` **privacy/photos_library_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description_localized>`
 
-A message displayed when requesting access to the user's photo library (localized).
+請求存取使用者照片圖庫時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3187,7 +3187,7 @@ A message displayed when requesting access to the user's photo library (localize
 
 :ref:`String<class_String>` **privacy/removable_volumes_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/removable_volumes_usage_description>`
 
-A message displayed when requesting access to the user's removable drives (in English).
+請求存取使用者的可移除驅動器時顯示的（英文）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3199,7 +3199,7 @@ A message displayed when requesting access to the user's removable drives (in En
 
 :ref:`Dictionary<class_Dictionary>` **privacy/removable_volumes_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/removable_volumes_usage_description_localized>`
 
-A message displayed when requesting access to the user's removable drives (localized).
+請求存取使用者的可移除驅動器時顯示的（當地語系化）消息。
 
 .. rst-class:: classref-item-separator
 
@@ -3251,17 +3251,17 @@ If ``true``, shaders will be compiled and embedded in the application. This opti
 
 :ref:`String<class_String>` **ssh_remote_deploy/cleanup_script** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/cleanup_script>`
 
-Script code to execute on the remote host when app is finished.
+套用結束時，要在遠端主機上執行的腳本程式碼。
 
-The following variables can be used in the script:
+可以在腳本中使用以下變數：
 
-- ``{temp_dir}`` - Path of temporary folder on the remote, used to upload app and scripts to.
+- ``{temp_dir}`` - 遠端的暫存檔案夾路徑，用於上傳套用和腳本。
 
-- ``{archive_name}`` - Name of the ZIP containing uploaded application.
+- ``{archive_name}`` - 包含上傳的套用程式的 ZIP 檔的名稱。
 
-- ``{exe_name}`` - Name of application executable.
+- ``{exe_name}`` - 套用程式可執行檔的名稱。
 
-- ``{cmd_args}`` - Array of the command line argument for the application.
+- ``{cmd_args}`` - 套用程式命令列參數的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -3273,7 +3273,7 @@ The following variables can be used in the script:
 
 :ref:`bool<class_bool>` **ssh_remote_deploy/enabled** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/enabled>`
 
-Enables remote deploy using SSH/SCP.
+啟用通過 SSH/SCP 進行遠端部署。
 
 .. rst-class:: classref-item-separator
 
@@ -3285,7 +3285,7 @@ Enables remote deploy using SSH/SCP.
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_scp** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/extra_args_scp>`
 
-Array of the additional command line arguments passed to the SCP.
+要傳給 SCP 的額外命令列參數的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -3297,7 +3297,7 @@ Array of the additional command line arguments passed to the SCP.
 
 :ref:`String<class_String>` **ssh_remote_deploy/extra_args_ssh** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/extra_args_ssh>`
 
-Array of the additional command line arguments passed to the SSH.
+要傳給 SSH 的額外命令列參數的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -3309,7 +3309,7 @@ Array of the additional command line arguments passed to the SSH.
 
 :ref:`String<class_String>` **ssh_remote_deploy/host** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/host>`
 
-Remote host SSH user name and address, in ``user@address`` format.
+遠端主機 SSH 使用者名及位址，格式為 ``使用者名@地址``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3321,7 +3321,7 @@ Remote host SSH user name and address, in ``user@address`` format.
 
 :ref:`String<class_String>` **ssh_remote_deploy/port** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/port>`
 
-Remote host SSH port number.
+遠端主機 SSH 埠號。
 
 .. rst-class:: classref-item-separator
 
@@ -3333,17 +3333,17 @@ Remote host SSH port number.
 
 :ref:`String<class_String>` **ssh_remote_deploy/run_script** :ref:`🔗<class_EditorExportPlatformMacOS_property_ssh_remote_deploy/run_script>`
 
-Script code to execute on the remote host when running the app.
+運作套用時，要在遠端主機上執行的腳本程式碼。
 
-The following variables can be used in the script:
+可以在腳本中使用以下變數：
 
-- ``{temp_dir}`` - Path of temporary folder on the remote, used to upload app and scripts to.
+- ``{temp_dir}`` - 遠端的暫存檔案夾路徑，用於上傳套用和腳本。
 
-- ``{archive_name}`` - Name of the ZIP containing uploaded application.
+- ``{archive_name}`` - 包含上傳的套用程式的 ZIP 檔的名稱。
 
-- ``{exe_name}`` - Name of application executable.
+- ``{exe_name}`` - 套用程式可執行檔的名稱。
 
-- ``{cmd_args}`` - Array of the command line argument for the application.
+- ``{cmd_args}`` - 套用程式命令列參數的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -3355,7 +3355,7 @@ The following variables can be used in the script:
 
 :ref:`String<class_String>` **xcode/platform_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/platform_build>`
 
-macOS build number used to build application executable.
+建構套用程式可執行檔所使用的 macOS 建構號。
 
 .. rst-class:: classref-item-separator
 
@@ -3367,7 +3367,7 @@ macOS build number used to build application executable.
 
 :ref:`String<class_String>` **xcode/sdk_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_build>`
 
-macOS SDK build number used to build application executable.
+建構套用程式可執行檔所使用的 macOS SDK 建構號。
 
 .. rst-class:: classref-item-separator
 
@@ -3379,7 +3379,7 @@ macOS SDK build number used to build application executable.
 
 :ref:`String<class_String>` **xcode/sdk_name** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_name>`
 
-macOS SDK name used to build application executable.
+建構套用程式可執行檔所使用的 macOS SDK 名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -3391,7 +3391,7 @@ macOS SDK name used to build application executable.
 
 :ref:`String<class_String>` **xcode/sdk_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_version>`
 
-macOS SDK version used to build application executable in the ``major.minor`` format.
+建構套用程式可執行檔所使用的 macOS SDK 版本，格式為 ``主版本號.次版本號``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3403,7 @@ macOS SDK version used to build application executable in the ``major.minor`` fo
 
 :ref:`String<class_String>` **xcode/xcode_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/xcode_build>`
 
-Xcode build number used to build application executable.
+建構套用程式可執行檔所使用的 Xcode 建構號。
 
 .. rst-class:: classref-item-separator
 
@@ -3415,14 +3415,14 @@ Xcode build number used to build application executable.
 
 :ref:`String<class_String>` **xcode/xcode_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/xcode_version>`
 
-Xcode version used to build application executable.
+建構套用程式可執行檔所使用的 Xcode 版本。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

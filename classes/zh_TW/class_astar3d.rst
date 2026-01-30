@@ -5,22 +5,22 @@
 AStar3D
 =======
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An implementation of A\* for finding the shortest path between two vertices on a connected graph in 3D space.
+A\* 的一種實作，用於尋找 3D 空間中連接圖中的兩個頂點之間的最短路徑。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A\* (A star) is a computer algorithm used in pathfinding and graph traversal, the process of plotting short paths among vertices (points), passing through a given set of edges (segments). It enjoys widespread use due to its performance and accuracy. Godot's A\* implementation uses points in 3D space and Euclidean distances by default.
+A\*（A Star）是一種用於路徑尋找（pathfinding）與圖遍歷（graph traversal）的電腦演算法，可在頂點（點）之間，沿著一組指定邊（線段）規劃最短路徑。因其效能與準確度而被廣泛使用。Godot 的 A\* 實作預設在 3D 空間中使用點並以歐氏距離計算。
 
-You must add points manually with :ref:`add_point()<class_AStar3D_method_add_point>` and create segments manually with :ref:`connect_points()<class_AStar3D_method_connect_points>`. Once done, you can test if there is a path between two points with the :ref:`are_points_connected()<class_AStar3D_method_are_points_connected>` function, get a path containing indices by :ref:`get_id_path()<class_AStar3D_method_get_id_path>`, or one containing actual coordinates with :ref:`get_point_path()<class_AStar3D_method_get_point_path>`.
+你必須先使用 :ref:`add_point()<class_AStar3D_method_add_point>` 手動加入點，再用 :ref:`connect_points()<class_AStar3D_method_connect_points>` 手動建立線段。完成後，可透過 :ref:`are_points_connected()<class_AStar3D_method_are_points_connected>` 檢查兩點之間是否存在路徑，利用 :ref:`get_id_path()<class_AStar3D_method_get_id_path>` 取得由索引組成的路徑，或使用 :ref:`get_point_path()<class_AStar3D_method_get_point_path>` 取得包含實際座標的路徑。
 
-It is also possible to use non-Euclidean distances. To do so, create a script that extends **AStar3D** and override the methods :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` and :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>`. Both should take two point IDs and return the distance between the corresponding points.
+亦可改用非歐氏距離。若要這麼做，請撰寫一個繼承自 **AStar3D** 的腳本，並覆寫 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` 與 :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` 兩個方法。這兩個方法皆應接收兩個點的 ID，並回傳這兩點之間的距離。
 
-\ **Example:** Use Manhattan distance instead of Euclidean distance:
+\ **範例：** 使用曼哈頓距離取代歐氏距離：
 
 
 .. tabs::
@@ -51,7 +51,6 @@ It is also possible to use non-Euclidean distances. To do so, create a script th
         {
             Vector3 fromPoint = GetPointPosition(fromId);
             Vector3 toPoint = GetPointPosition(toId);
-
             return Mathf.Abs(fromPoint.X - toPoint.X) + Mathf.Abs(fromPoint.Y - toPoint.Y) + Mathf.Abs(fromPoint.Z - toPoint.Z);
         }
 
@@ -65,14 +64,14 @@ It is also possible to use non-Euclidean distances. To do so, create a script th
 
 
 
-\ :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` should return a lower bound of the distance, i.e. ``_estimate_cost(u, v) <= _compute_cost(u, v)``. This serves as a hint to the algorithm because the custom :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` might be computation-heavy. If this is not the case, make :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` return the same value as :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` to provide the algorithm with the most accurate information.
+\ :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` 應傳回距離的下界，即 ``_estimate_cost(u, v) <= _compute_cost(u, v)``\ 。這能為演算法提供提示，因為自訂的 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` 可能計算量較大。若非如此，請讓 :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` 回傳與 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` 相同的值，以提供演算法最準確的資訊。
 
-If the default :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` and :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` methods are used, or if the supplied :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` method returns a lower bound of the cost, then the paths returned by A\* will be the lowest-cost paths. Here, the cost of a path equals the sum of the :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` results of all segments in the path multiplied by the ``weight_scale``\ s of the endpoints of the respective segments. If the default methods are used and the ``weight_scale``\ s of all points are set to ``1.0``, then this equals the sum of Euclidean distances of all segments in the path.
+若使用預設的 :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` 與 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>`\ ，或自訂 :ref:`_estimate_cost()<class_AStar3D_private_method__estimate_cost>` 的回傳值確實為成本下界，則 A\* 回傳的路徑即為最低成本路徑。此處，路徑成本等於路徑中所有線段的 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` 結果乘以各線段端點的 ``weight_scale`` 後的總和。若使用預設方法且所有點的 ``weight_scale`` 均為 ``1.0``\ ，則成本即為路徑中各線段之歐氏距離總和。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -83,8 +82,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -149,8 +148,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AStar3D_property_neighbor_filter_enabled:
 
@@ -171,8 +170,8 @@ If ``true`` enables the filtering of neighbors via :ref:`_filter_neighbor()<clas
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AStar3D_private_method__compute_cost:
 
@@ -180,9 +179,9 @@ Method Descriptions
 
 :ref:`float<class_float>` **_compute_cost**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AStar3D_private_method__compute_cost>`
 
-Called when computing the cost between two connected points.
+計算兩個連接點之間成本時呼叫。
 
-Note that this function is hidden in the default **AStar3D** class.
+注意：此函式在預設的 **AStar3D** 類別中為隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +193,9 @@ Note that this function is hidden in the default **AStar3D** class.
 
 :ref:`float<class_float>` **_estimate_cost**\ (\ from_id\: :ref:`int<class_int>`, end_id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AStar3D_private_method__estimate_cost>`
 
-Called when estimating the cost between a point and the path's ending point.
+估算某點與路徑終點之間成本時呼叫。
 
-Note that this function is hidden in the default **AStar3D** class.
+注意：此函式在預設的 **AStar3D** 類別中為隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -222,9 +221,9 @@ Note that this function is hidden in the default **AStar3D** class.
 
 |void| **add_point**\ (\ id\: :ref:`int<class_int>`, position\: :ref:`Vector3<class_Vector3>`, weight_scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_AStar3D_method_add_point>`
 
-Adds a new point at the given position with the given identifier. The ``id`` must be 0 or larger, and the ``weight_scale`` must be 0.0 or greater.
+在給定的位置新增一個點並指定其識別碼。 ``id`` 必須大於等於 0，\ ``weight_scale`` 必須大於等於 0.0。
 
-The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` when determining the overall cost of traveling across a segment from a neighboring point to this point. Thus, all else being equal, the algorithm prefers points with lower ``weight_scale``\ s to form a path.
+在計算從鄰近點移動至此點的段落總成本時，會將 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` 的結果乘以 ``weight_scale``\ 。因此在其他條件相同時，演算法傾向選擇擁有較低 ``weight_scale`` 的點來組成路徑。
 
 
 .. tabs::
@@ -232,16 +231,16 @@ The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_
  .. code-tab:: gdscript
 
     var astar = AStar3D.new()
-    astar.add_point(1, Vector3(1, 0, 0), 4) # Adds the point (1, 0, 0) with weight_scale 4 and id 1
+    astar.add_point(1, Vector3(1, 0, 0), 4) # 新增點 (1, 0, 0)，weight_scale 為 4，id 為 1
 
  .. code-tab:: csharp
 
     var astar = new AStar3D();
-    astar.AddPoint(1, new Vector3(1, 0, 0), 4); // Adds the point (1, 0, 0) with weight_scale 4 and id 1
+    astar.AddPoint(1, new Vector3(1, 0, 0), 4); // 新增點 (1, 0, 0)，weight_scale 為 4，id 為 1
 
 
 
-If there already exists a point for the given ``id``, its position and weight scale are updated to the given values.
+若同一 ``id`` 已存在點，則其位置與權重比例會被更新為新的值。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +252,7 @@ If there already exists a point for the given ``id``, its position and weight sc
 
 :ref:`bool<class_bool>` **are_points_connected**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_AStar3D_method_are_points_connected>`
 
-Returns whether the two given points are directly connected by a segment. If ``bidirectional`` is ``false``, returns whether movement from ``id`` to ``to_id`` is possible through this segment.
+返回兩個給定點是否透過線段直接連接。如果 ``bidirectional`` 為 ``false``\ ，則僅檢查是否能從 ``id`` 移動至 ``to_id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +264,7 @@ Returns whether the two given points are directly connected by a segment. If ``b
 
 |void| **clear**\ (\ ) :ref:`🔗<class_AStar3D_method_clear>`
 
-Clears all the points and segments.
+清除所有點與線段。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +276,7 @@ Clears all the points and segments.
 
 |void| **connect_points**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar3D_method_connect_points>`
 
-Creates a segment between the given points. If ``bidirectional`` is ``false``, only movement from ``id`` to ``to_id`` is allowed, not the reverse direction.
+在兩個指定點之間建立線段。若 ``bidirectional`` 為 ``false``\ ，則僅允許從 ``id`` 移動至 ``to_id``\ ，反向則不允許。
 
 
 .. tabs::
@@ -308,7 +307,7 @@ Creates a segment between the given points. If ``bidirectional`` is ``false``, o
 
 |void| **disconnect_points**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar3D_method_disconnect_points>`
 
-Deletes the segment between the given points. If ``bidirectional`` is ``false``, only movement from ``id`` to ``to_id`` is prevented, and a unidirectional segment possibly remains.
+刪除兩點之間的線段。若 ``bidirectional`` 為 ``false``\ ，僅會阻止自 ``id`` 到 ``to_id`` 的移動，原有的單向線段可能仍保留。
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +319,7 @@ Deletes the segment between the given points. If ``bidirectional`` is ``false``,
 
 :ref:`int<class_int>` **get_available_point_id**\ (\ ) |const| :ref:`🔗<class_AStar3D_method_get_available_point_id>`
 
-Returns the next available point ID with no point associated to it.
+取得下一個尚未使用的點 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -332,9 +331,9 @@ Returns the next available point ID with no point associated to it.
 
 :ref:`int<class_int>` **get_closest_point**\ (\ to_position\: :ref:`Vector3<class_Vector3>`, include_disabled\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_AStar3D_method_get_closest_point>`
 
-Returns the ID of the closest point to ``to_position``, optionally taking disabled points into account. Returns ``-1`` if there are no points in the points pool.
+回傳最接近 ``to_position`` 的點之 ID，可選擇是否納入已停用的點。若點池為空則回傳 ``-1``\ 。
 
-\ **Note:** If several points are the closest to ``to_position``, the one with the smallest ID will be returned, ensuring a deterministic result.
+\ **注意：** 若有多個點同樣最接近，將回傳最小 ID 的點，以確保結果一致。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +345,7 @@ Returns the ID of the closest point to ``to_position``, optionally taking disabl
 
 :ref:`Vector3<class_Vector3>` **get_closest_position_in_segment**\ (\ to_position\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_AStar3D_method_get_closest_position_in_segment>`
 
-Returns the closest position to ``to_position`` that resides inside a segment between two connected points.
+返回位於兩個連接點之間線段中、最靠近 ``to_position`` 的位置。
 
 
 .. tabs::
@@ -357,7 +356,7 @@ Returns the closest position to ``to_position`` that resides inside a segment be
     astar.add_point(1, Vector3(0, 0, 0))
     astar.add_point(2, Vector3(0, 5, 0))
     astar.connect_points(1, 2)
-    var res = astar.get_closest_position_in_segment(Vector3(3, 3, 0)) # Returns (0, 3, 0)
+    var res = astar.get_closest_position_in_segment(Vector3(3, 3, 0)) # 回傳 (0, 3, 0)
 
  .. code-tab:: csharp
 
@@ -365,11 +364,11 @@ Returns the closest position to ``to_position`` that resides inside a segment be
     astar.AddPoint(1, new Vector3(0, 0, 0));
     astar.AddPoint(2, new Vector3(0, 5, 0));
     astar.ConnectPoints(1, 2);
-    Vector3 res = astar.GetClosestPositionInSegment(new Vector3(3, 3, 0)); // Returns (0, 3, 0)
+    Vector3 res = astar.GetClosestPositionInSegment(new Vector3(3, 3, 0)); // 回傳 (0, 3, 0)
 
 
 
-The result is in the segment that goes from ``y = 0`` to ``y = 5``. It's the closest position in the segment to the given point.
+此結果位於 ``y = 0`` 至 ``y = 5`` 的線段上，為該線段中最接近給定點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +433,7 @@ If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]``
 
 :ref:`int<class_int>` **get_point_capacity**\ (\ ) |const| :ref:`🔗<class_AStar3D_method_get_point_capacity>`
 
-Returns the capacity of the structure backing the points, useful in conjunction with :ref:`reserve_space()<class_AStar3D_method_reserve_space>`.
+回傳儲存點資料結構的容量，可配合 :ref:`reserve_space()<class_AStar3D_method_reserve_space>` 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +445,7 @@ Returns the capacity of the structure backing the points, useful in conjunction 
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_point_connections**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar3D_method_get_point_connections>`
 
-Returns an array with the IDs of the points that form the connection with the given point.
+返回一個陣列，包含與指定點直接相連之點的 ID。
 
 
 .. tabs::
@@ -462,7 +461,7 @@ Returns an array with the IDs of the points that form the connection with the gi
     astar.connect_points(1, 2, true)
     astar.connect_points(1, 3, true)
 
-    var neighbors = astar.get_point_connections(1) # Returns [2, 3]
+    var neighbors = astar.get_point_connections(1) # 回傳 [2, 3]
 
  .. code-tab:: csharp
 
@@ -474,7 +473,7 @@ Returns an array with the IDs of the points that form the connection with the gi
     astar.ConnectPoints(1, 2, true);
     astar.ConnectPoints(1, 3, true);
 
-    long[] neighbors = astar.GetPointConnections(1); // Returns [2, 3]
+    long[] neighbors = astar.GetPointConnections(1); // 回傳 [2, 3]
 
 
 
@@ -488,7 +487,7 @@ Returns an array with the IDs of the points that form the connection with the gi
 
 :ref:`int<class_int>` **get_point_count**\ (\ ) |const| :ref:`🔗<class_AStar3D_method_get_point_count>`
 
-Returns the number of points currently in the points pool.
+回傳目前點池中的點數。
 
 .. rst-class:: classref-item-separator
 
@@ -500,7 +499,7 @@ Returns the number of points currently in the points pool.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_point_ids**\ (\ ) :ref:`🔗<class_AStar3D_method_get_point_ids>`
 
-Returns an array of all point IDs.
+回傳所有點 ID 的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +531,7 @@ Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled 
 
 :ref:`Vector3<class_Vector3>` **get_point_position**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar3D_method_get_point_position>`
 
-Returns the position of the point associated with the given ``id``.
+回傳與指定 ``id`` 相關聯之點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +543,7 @@ Returns the position of the point associated with the given ``id``.
 
 :ref:`float<class_float>` **get_point_weight_scale**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar3D_method_get_point_weight_scale>`
 
-Returns the weight scale of the point associated with the given ``id``.
+回傳與指定 ``id`` 相關聯之點的權重係數。
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +555,7 @@ Returns the weight scale of the point associated with the given ``id``.
 
 :ref:`bool<class_bool>` **has_point**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar3D_method_has_point>`
 
-Returns whether a point associated with the given ``id`` exists.
+檢查是否存在與指定 ``id`` 相關聯的點。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +567,7 @@ Returns whether a point associated with the given ``id`` exists.
 
 :ref:`bool<class_bool>` **is_point_disabled**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar3D_method_is_point_disabled>`
 
-Returns whether a point is disabled or not for pathfinding. By default, all points are enabled.
+檢查指定點在尋路時是否被停用；預設所有點均啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +579,7 @@ Returns whether a point is disabled or not for pathfinding. By default, all poin
 
 |void| **remove_point**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar3D_method_remove_point>`
 
-Removes the point associated with the given ``id`` from the points pool.
+自點池中移除與指定 ``id`` 相關聯的點。
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +591,7 @@ Removes the point associated with the given ``id`` from the points pool.
 
 |void| **reserve_space**\ (\ num_nodes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar3D_method_reserve_space>`
 
-Reserves space internally for ``num_nodes`` points. Useful if you're adding a known large number of points at once, such as points on a grid.
+在內部為 ``num_nodes`` 個點預先保留空間；當一次加入大量已知點數（如網格上的所有點）時特別有用。
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +603,7 @@ Reserves space internally for ``num_nodes`` points. Useful if you're adding a kn
 
 |void| **set_point_disabled**\ (\ id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar3D_method_set_point_disabled>`
 
-Disables or enables the specified point for pathfinding. Useful for making a temporary obstacle.
+啟用或停用指定點的尋路功能，可用來製作臨時障礙物。
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +615,7 @@ Disables or enables the specified point for pathfinding. Useful for making a tem
 
 |void| **set_point_position**\ (\ id\: :ref:`int<class_int>`, position\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_AStar3D_method_set_point_position>`
 
-Sets the ``position`` for the point with the given ``id``.
+為具有指定 ``id`` 的點設定新位置 ``position``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -628,14 +627,14 @@ Sets the ``position`` for the point with the given ``id``.
 
 |void| **set_point_weight_scale**\ (\ id\: :ref:`int<class_int>`, weight_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AStar3D_method_set_point_weight_scale>`
 
-Sets the ``weight_scale`` for the point with the given ``id``. The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` when determining the overall cost of traveling across a segment from a neighboring point to this point.
+為具有指定 ``id`` 的點設定 ``weight_scale``\ 。在計算從鄰近點移動至此點之線段的總代價時，會把 ``weight_scale`` 乘上 :ref:`_compute_cost()<class_AStar3D_private_method__compute_cost>` 的結果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,27 +5,27 @@
 Projection
 ==========
 
-A 4×4 matrix for 3D projective transformations.
+用于 3D 投影变换的 4×4 矩阵。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A 4×4 matrix used for 3D projective transformations. It can represent transformations such as translation, rotation, scaling, shearing, and perspective division. It consists of four :ref:`Vector4<class_Vector4>` columns.
+用于 3D 投影变换的 4×4 矩阵，可以表示平移、旋转、缩放、倾斜和透视分割等变换，由四个 :ref:`Vector4<class_Vector4>` 列组成。
 
-For purely linear transformations (translation, rotation, and scale), it is recommended to use :ref:`Transform3D<class_Transform3D>`, as it is more performant and requires less memory.
+对于纯粹的线性变换（平移、旋转和缩放），建议使用 :ref:`Transform3D<class_Transform3D>`\ ，因为它的性能更强，内存占用更少。
 
-Used internally as :ref:`Camera3D<class_Camera3D>`'s projection matrix.
+在内部作为 :ref:`Camera3D<class_Camera3D>` 的投影矩阵使用。
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+运算符
+------
 
 .. table::
    :widths: auto
@@ -146,8 +146,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Projection_Planes:
 
@@ -161,7 +161,7 @@ enum **Planes**: :ref:`🔗<enum_Projection_Planes>`
 
 :ref:`Planes<enum_Projection_Planes>` **PLANE_NEAR** = ``0``
 
-The index value of the projection's near clipping plane.
+该投影的近裁剪平面的索引值。
 
 .. _class_Projection_constant_PLANE_FAR:
 
@@ -169,7 +169,7 @@ The index value of the projection's near clipping plane.
 
 :ref:`Planes<enum_Projection_Planes>` **PLANE_FAR** = ``1``
 
-The index value of the projection's far clipping plane.
+该投影的远裁剪平面的索引值。
 
 .. _class_Projection_constant_PLANE_LEFT:
 
@@ -177,7 +177,7 @@ The index value of the projection's far clipping plane.
 
 :ref:`Planes<enum_Projection_Planes>` **PLANE_LEFT** = ``2``
 
-The index value of the projection's left clipping plane.
+该投影的左裁剪平面的索引值。
 
 .. _class_Projection_constant_PLANE_TOP:
 
@@ -185,7 +185,7 @@ The index value of the projection's left clipping plane.
 
 :ref:`Planes<enum_Projection_Planes>` **PLANE_TOP** = ``3``
 
-The index value of the projection's top clipping plane.
+该投影的上裁剪平面的索引值。
 
 .. _class_Projection_constant_PLANE_RIGHT:
 
@@ -193,7 +193,7 @@ The index value of the projection's top clipping plane.
 
 :ref:`Planes<enum_Projection_Planes>` **PLANE_RIGHT** = ``4``
 
-The index value of the projection's right clipping plane.
+该投影的右裁剪平面的索引值。
 
 .. _class_Projection_constant_PLANE_BOTTOM:
 
@@ -201,7 +201,7 @@ The index value of the projection's right clipping plane.
 
 :ref:`Planes<enum_Projection_Planes>` **PLANE_BOTTOM** = ``5``
 
-The index value of the projection bottom clipping plane.
+该投影的下裁剪平面的索引值。
 
 .. rst-class:: classref-section-separator
 
@@ -209,8 +209,8 @@ The index value of the projection bottom clipping plane.
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Projection_constant_IDENTITY:
 
@@ -218,7 +218,7 @@ Constants
 
 **IDENTITY** = ``Projection(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)`` :ref:`🔗<class_Projection_constant_IDENTITY>`
 
-A **Projection** with no transformation defined. When applied to other data structures, no transformation is performed.
+未定义变换的 **Projection**\ 。对其他数据结构使用时，不会进行任何变换。
 
 .. _class_Projection_constant_ZERO:
 
@@ -226,7 +226,7 @@ A **Projection** with no transformation defined. When applied to other data stru
 
 **ZERO** = ``Projection(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)`` :ref:`🔗<class_Projection_constant_ZERO>`
 
-A **Projection** with all values initialized to 0. When applied to other data structures, they will be zeroed.
+所有值都初始化为 0 的 **Projection**\ 。对其他数据结构使用时，会进行清零操作。
 
 .. rst-class:: classref-section-separator
 
@@ -234,8 +234,8 @@ A **Projection** with all values initialized to 0. When applied to other data st
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Projection_property_w:
 
@@ -243,7 +243,7 @@ Property Descriptions
 
 :ref:`Vector4<class_Vector4>` **w** = ``Vector4(0, 0, 0, 1)`` :ref:`🔗<class_Projection_property_w>`
 
-The projection matrix's W vector (column 3). Equivalent to array index ``3``.
+投影矩阵的 W 向量（第 3 列）。相当于数组索引 ``3``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ The projection matrix's W vector (column 3). Equivalent to array index ``3``.
 
 :ref:`Vector4<class_Vector4>` **x** = ``Vector4(1, 0, 0, 0)`` :ref:`🔗<class_Projection_property_x>`
 
-The projection matrix's X vector (column 0). Equivalent to array index ``0``.
+投影矩阵的 X 向量（第 0 列）。相当于数组索引 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ The projection matrix's X vector (column 0). Equivalent to array index ``0``.
 
 :ref:`Vector4<class_Vector4>` **y** = ``Vector4(0, 1, 0, 0)`` :ref:`🔗<class_Projection_property_y>`
 
-The projection matrix's Y vector (column 1). Equivalent to array index ``1``.
+投影矩阵的 Y 向量（第 1 列）。相当于数组索引 ``1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ The projection matrix's Y vector (column 1). Equivalent to array index ``1``.
 
 :ref:`Vector4<class_Vector4>` **z** = ``Vector4(0, 0, 1, 0)`` :ref:`🔗<class_Projection_property_z>`
 
-The projection matrix's Z vector (column 2). Equivalent to array index ``2``.
+投影矩阵的 Z 向量（第 2 列）。相当于数组索引 ``2``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -287,8 +287,8 @@ The projection matrix's Z vector (column 2). Equivalent to array index ``2``.
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Projection_constructor_Projection:
 
@@ -296,9 +296,9 @@ Constructor Descriptions
 
 :ref:`Projection<class_Projection>` **Projection**\ (\ ) :ref:`🔗<class_Projection_constructor_Projection>`
 
-Constructs a default-initialized **Projection** identical to :ref:`IDENTITY<class_Projection_constant_IDENTITY>`.
+构造默认初始化的 **Projection**\ ，与 :ref:`IDENTITY<class_Projection_constant_IDENTITY>` 相同。
 
-\ **Note:** In C#, this constructs a **Projection** identical to :ref:`ZERO<class_Projection_constant_ZERO>`.
+\ **注意：**\ 在 C# 中构造的 **Projection** 与 :ref:`ZERO<class_Projection_constant_ZERO>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Constructs a default-initialized **Projection** identical to :ref:`IDENTITY<clas
 
 :ref:`Projection<class_Projection>` **Projection**\ (\ from\: :ref:`Projection<class_Projection>`\ )
 
-Constructs a **Projection** as a copy of the given **Projection**.
+构造给定 **Projection** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Constructs a **Projection** as a copy of the given **Projection**.
 
 :ref:`Projection<class_Projection>` **Projection**\ (\ from\: :ref:`Transform3D<class_Transform3D>`\ )
 
-Constructs a Projection as a copy of the given :ref:`Transform3D<class_Transform3D>`.
+将 Projection 作为给定 :ref:`Transform3D<class_Transform3D>` 的副本进行构造。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Constructs a Projection as a copy of the given :ref:`Transform3D<class_Transform
 
 :ref:`Projection<class_Projection>` **Projection**\ (\ x_axis\: :ref:`Vector4<class_Vector4>`, y_axis\: :ref:`Vector4<class_Vector4>`, z_axis\: :ref:`Vector4<class_Vector4>`, w_axis\: :ref:`Vector4<class_Vector4>`\ )
 
-Constructs a Projection from four :ref:`Vector4<class_Vector4>` values (matrix columns).
+从四个 :ref:`Vector4<class_Vector4>` 值（矩阵列）构造 Projection。
 
 .. rst-class:: classref-section-separator
 
@@ -336,8 +336,8 @@ Constructs a Projection from four :ref:`Vector4<class_Vector4>` values (matrix c
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Projection_method_create_depth_correction:
 
@@ -345,7 +345,7 @@ Method Descriptions
 
 :ref:`Projection<class_Projection>` **create_depth_correction**\ (\ flip_y\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_Projection_method_create_depth_correction>`
 
-Creates a new **Projection** that projects positions from a depth range of ``-1`` to ``1`` to one that ranges from ``0`` to ``1``, and flips the projected positions vertically, according to ``flip_y``.
+创建新的 **Projection**\ ，将位置从深度 ``-1`` 到 ``1`` 的范围投影到 ``0`` 到 ``1`` 的范围，并将投影后的位置根据 ``flip_y`` 垂直翻转。
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Creates a new **Projection** that projects positions from a depth range of ``-1`
 
 :ref:`Projection<class_Projection>` **create_fit_aabb**\ (\ aabb\: :ref:`AABB<class_AABB>`\ ) |static| :ref:`🔗<class_Projection_method_create_fit_aabb>`
 
-Creates a new **Projection** that scales a given projection to fit around a given :ref:`AABB<class_AABB>` in projection space.
+创建新的 **Projection**\ ，将给定的投影进行缩放，从而适应投影空间中的给定 :ref:`AABB<class_AABB>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -369,9 +369,9 @@ Creates a new **Projection** that scales a given projection to fit around a give
 
 :ref:`Projection<class_Projection>` **create_for_hmd**\ (\ eye\: :ref:`int<class_int>`, aspect\: :ref:`float<class_float>`, intraocular_dist\: :ref:`float<class_float>`, display_width\: :ref:`float<class_float>`, display_to_lens\: :ref:`float<class_float>`, oversample\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Projection_method_create_for_hmd>`
 
-Creates a new **Projection** for projecting positions onto a head-mounted display with the given X:Y aspect ratio, distance between eyes, display width, distance to lens, oversampling factor, and depth clipping planes.
+创建新的 **Projection**\ ，将位置投影至头戴显示器中，使用给定的 X:Y 纵横比、双眼间距、显示器宽度、到镜头的距离、过采样系数以及深度裁剪平面。
 
-\ ``eye`` creates the projection for the left eye when set to 1, or the right eye when set to 2.
+\ ``eye`` 设为 1 时创建的是左眼投影，设为 2 时则为右眼。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Creates a new **Projection** for projecting positions onto a head-mounted displa
 
 :ref:`Projection<class_Projection>` **create_frustum**\ (\ left\: :ref:`float<class_float>`, right\: :ref:`float<class_float>`, bottom\: :ref:`float<class_float>`, top\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Projection_method_create_frustum>`
 
-Creates a new **Projection** that projects positions in a frustum with the given clipping planes.
+创建新的 **Projection**\ ，将位置投影至平截头台中，平截头台由给定的裁剪平面指定。
 
 .. rst-class:: classref-item-separator
 
@@ -395,9 +395,9 @@ Creates a new **Projection** that projects positions in a frustum with the given
 
 :ref:`Projection<class_Projection>` **create_frustum_aspect**\ (\ size\: :ref:`float<class_float>`, aspect\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`, flip_fov\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_Projection_method_create_frustum_aspect>`
 
-Creates a new **Projection** that projects positions in a frustum with the given size, X:Y aspect ratio, offset, and clipping planes.
+创建新的 **Projection**\ ，将位置投影至平截头台中，平截头台由给定的大小、X:Y 纵横比、偏移量以及裁剪平面指定。
 
-\ ``flip_fov`` determines whether the projection's field of view is flipped over its diagonal.
+\ ``flip_fov`` 决定投影视野是否按对角线翻转。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Creates a new **Projection** that projects positions in a frustum with the given
 
 :ref:`Projection<class_Projection>` **create_light_atlas_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`\ ) |static| :ref:`🔗<class_Projection_method_create_light_atlas_rect>`
 
-Creates a new **Projection** that projects positions into the given :ref:`Rect2<class_Rect2>`.
+创建新的 **Projection**\ ，将位置投影至给定的 :ref:`Rect2<class_Rect2>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Creates a new **Projection** that projects positions into the given :ref:`Rect2<
 
 :ref:`Projection<class_Projection>` **create_orthogonal**\ (\ left\: :ref:`float<class_float>`, right\: :ref:`float<class_float>`, bottom\: :ref:`float<class_float>`, top\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Projection_method_create_orthogonal>`
 
-Creates a new **Projection** that projects positions using an orthogonal projection with the given clipping planes.
+创建新的 **Projection**\ ，使用给定裁剪平面的正交投影对位置进行投影。
 
 .. rst-class:: classref-item-separator
 
@@ -433,9 +433,9 @@ Creates a new **Projection** that projects positions using an orthogonal project
 
 :ref:`Projection<class_Projection>` **create_orthogonal_aspect**\ (\ size\: :ref:`float<class_float>`, aspect\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`, flip_fov\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_Projection_method_create_orthogonal_aspect>`
 
-Creates a new **Projection** that projects positions using an orthogonal projection with the given size, X:Y aspect ratio, and clipping planes.
+创建新的 **Projection**\ ，使用正交投影对位置进行投影，正交投影由给定的大小、X:Y 纵横比以及裁剪平面指定。
 
-\ ``flip_fov`` determines whether the projection's field of view is flipped over its diagonal.
+\ ``flip_fov`` 决定投影视野是否按对角线翻转。
 
 .. rst-class:: classref-item-separator
 
@@ -447,9 +447,9 @@ Creates a new **Projection** that projects positions using an orthogonal project
 
 :ref:`Projection<class_Projection>` **create_perspective**\ (\ fovy\: :ref:`float<class_float>`, aspect\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`, flip_fov\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_Projection_method_create_perspective>`
 
-Creates a new **Projection** that projects positions using a perspective projection with the given Y-axis field of view (in degrees), X:Y aspect ratio, and clipping planes.
+创建新的 **Projection**\ ，使用透视投影对位置进行投影，透视投影由给定的 Y 轴视野（单位为度）、X:Y 纵横比以及裁剪平面指定。
 
-\ ``flip_fov`` determines whether the projection's field of view is flipped over its diagonal.
+\ ``flip_fov`` 决定投影视野是否按对角线翻转。
 
 .. rst-class:: classref-item-separator
 
@@ -461,11 +461,11 @@ Creates a new **Projection** that projects positions using a perspective project
 
 :ref:`Projection<class_Projection>` **create_perspective_hmd**\ (\ fovy\: :ref:`float<class_float>`, aspect\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`, flip_fov\: :ref:`bool<class_bool>`, eye\: :ref:`int<class_int>`, intraocular_dist\: :ref:`float<class_float>`, convergence_dist\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Projection_method_create_perspective_hmd>`
 
-Creates a new **Projection** that projects positions using a perspective projection with the given Y-axis field of view (in degrees), X:Y aspect ratio, and clipping distances. The projection is adjusted for a head-mounted display with the given distance between eyes and distance to a point that can be focused on.
+创建新的 **Projection**\ ，使用透视投影对位置进行投影，透视投影由给定的 Y 轴视野（单位为度）、X:Y 纵横比以及裁剪平面指定。投影会针对头戴显示器进行调整，使用给定的双眼间距以及与能够聚焦的点的距离。
 
-\ ``eye`` creates the projection for the left eye when set to 1, or the right eye when set to 2.
+\ ``eye`` 设为 1 时创建的是左眼投影，设为 2 时则为右眼。
 
-\ ``flip_fov`` determines whether the projection's field of view is flipped over its diagonal.
+\ ``flip_fov`` 决定投影视野是否按对角线翻转。
 
 .. rst-class:: classref-item-separator
 
@@ -477,9 +477,9 @@ Creates a new **Projection** that projects positions using a perspective project
 
 :ref:`float<class_float>` **determinant**\ (\ ) |const| :ref:`🔗<class_Projection_method_determinant>`
 
-Returns a scalar value that is the signed factor by which areas are scaled by this matrix. If the sign is negative, the matrix flips the orientation of the area.
+返回一个标量值，该标量值是区域被该矩阵缩放的有符号系数。如果符号是负的，则矩阵翻转该区域的方向。
 
-The determinant can be used to calculate the invertibility of a matrix or solve linear systems of equations involving the matrix, among other applications.
+行列式可用于计算矩阵的可逆性或求解涉及矩阵的线性方程组，以及其他应用。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ The determinant can be used to calculate the invertibility of a matrix or solve 
 
 :ref:`Projection<class_Projection>` **flipped_y**\ (\ ) |const| :ref:`🔗<class_Projection_method_flipped_y>`
 
-Returns a copy of this **Projection** with the signs of the values of the Y column flipped.
+返回这个 **Projection** 的副本，Y 列中数值的符号都进行了翻转。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Returns a copy of this **Projection** with the signs of the values of the Y colu
 
 :ref:`float<class_float>` **get_aspect**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_aspect>`
 
-Returns the X:Y aspect ratio of this **Projection**'s viewport.
+返回该 **Projection** 视口的 X:Y 纵横比。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ Returns the X:Y aspect ratio of this **Projection**'s viewport.
 
 :ref:`Vector2<class_Vector2>` **get_far_plane_half_extents**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_far_plane_half_extents>`
 
-Returns the dimensions of the far clipping plane of the projection, divided by two.
+返回投影远裁剪平面的尺寸除以二。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Returns the dimensions of the far clipping plane of the projection, divided by t
 
 :ref:`float<class_float>` **get_fov**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_fov>`
 
-Returns the horizontal field of view of the projection (in degrees).
+返回该投影的水平视场角（单位为度）。
 
 .. rst-class:: classref-item-separator
 
@@ -539,9 +539,9 @@ Returns the horizontal field of view of the projection (in degrees).
 
 :ref:`float<class_float>` **get_fovy**\ (\ fovx\: :ref:`float<class_float>`, aspect\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_Projection_method_get_fovy>`
 
-Returns the vertical field of view of the projection (in degrees) associated with the given horizontal field of view (in degrees) and aspect ratio.
+返回与给定水平视场角（以度为单位）和长宽比相关联的投影的垂直视场角（以度为单位）。
 
-\ **Note:** Unlike most methods of **Projection**, ``aspect`` is expected to be 1 divided by the X:Y aspect ratio.
+\ **注意：**\ 与 **Projection** 中的大多数方法不同，\ ``aspect`` 需要是 1 除以 X:Y 纵横比。
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ Returns the vertical field of view of the projection (in degrees) associated wit
 
 :ref:`float<class_float>` **get_lod_multiplier**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_lod_multiplier>`
 
-Returns the factor by which the visible level of detail is scaled by this **Projection**.
+返回这个 **Projection** 对可见细节级别的缩放系数。
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ Returns the factor by which the visible level of detail is scaled by this **Proj
 
 :ref:`int<class_int>` **get_pixels_per_meter**\ (\ for_pixel_width\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Projection_method_get_pixels_per_meter>`
 
-Returns ``for_pixel_width`` divided by the viewport's width measured in meters on the near plane, after this **Projection** is applied.
+返回 ``for_pixel_width`` 除以近平面上视口的宽度，单位为米，该宽度已应用 **Projection**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -577,9 +577,9 @@ Returns ``for_pixel_width`` divided by the viewport's width measured in meters o
 
 :ref:`Plane<class_Plane>` **get_projection_plane**\ (\ plane\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Projection_method_get_projection_plane>`
 
-Returns the clipping plane of this **Projection** whose index is given by ``plane``.
+返回这个 **Projection** 的裁剪平面，索引由 ``plane`` 给定。
 
-\ ``plane`` should be equal to one of :ref:`PLANE_NEAR<class_Projection_constant_PLANE_NEAR>`, :ref:`PLANE_FAR<class_Projection_constant_PLANE_FAR>`, :ref:`PLANE_LEFT<class_Projection_constant_PLANE_LEFT>`, :ref:`PLANE_TOP<class_Projection_constant_PLANE_TOP>`, :ref:`PLANE_RIGHT<class_Projection_constant_PLANE_RIGHT>`, or :ref:`PLANE_BOTTOM<class_Projection_constant_PLANE_BOTTOM>`.
+\ ``plane`` 应该等于 :ref:`PLANE_NEAR<class_Projection_constant_PLANE_NEAR>`\ 、\ :ref:`PLANE_FAR<class_Projection_constant_PLANE_FAR>`\ 、\ :ref:`PLANE_LEFT<class_Projection_constant_PLANE_LEFT>`\ 、\ :ref:`PLANE_TOP<class_Projection_constant_PLANE_TOP>`\ 、\ :ref:`PLANE_RIGHT<class_Projection_constant_PLANE_RIGHT>` 或 :ref:`PLANE_BOTTOM<class_Projection_constant_PLANE_BOTTOM>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -591,7 +591,7 @@ Returns the clipping plane of this **Projection** whose index is given by ``plan
 
 :ref:`Vector2<class_Vector2>` **get_viewport_half_extents**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_viewport_half_extents>`
 
-Returns the dimensions of the viewport plane that this **Projection** projects positions onto, divided by two.
+返回视口平面的尺寸除以二，这个 **Projection** 会把位置投影至该平面。
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ Returns the dimensions of the viewport plane that this **Projection** projects p
 
 :ref:`float<class_float>` **get_z_far**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_z_far>`
 
-Returns the distance for this **Projection** beyond which positions are clipped.
+返回该 **Projection** 中的距离，超过这个距离的位置会被裁剪。
 
 .. rst-class:: classref-item-separator
 
@@ -615,7 +615,7 @@ Returns the distance for this **Projection** beyond which positions are clipped.
 
 :ref:`float<class_float>` **get_z_near**\ (\ ) |const| :ref:`🔗<class_Projection_method_get_z_near>`
 
-Returns the distance for this **Projection** before which positions are clipped.
+返回该 **Projection** 中的距离，未达到这个距离的位置会被裁剪。
 
 .. rst-class:: classref-item-separator
 
@@ -627,7 +627,7 @@ Returns the distance for this **Projection** before which positions are clipped.
 
 :ref:`Projection<class_Projection>` **inverse**\ (\ ) |const| :ref:`🔗<class_Projection_method_inverse>`
 
-Returns a **Projection** that performs the inverse of this **Projection**'s projective transformation.
+返回执行这个 **Projection** 的逆投影变换的 **Projection**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -639,7 +639,7 @@ Returns a **Projection** that performs the inverse of this **Projection**'s proj
 
 :ref:`bool<class_bool>` **is_orthogonal**\ (\ ) |const| :ref:`🔗<class_Projection_method_is_orthogonal>`
 
-Returns ``true`` if this **Projection** performs an orthogonal projection.
+如果该 **Projection** 进行的是正交投影，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -651,7 +651,7 @@ Returns ``true`` if this **Projection** performs an orthogonal projection.
 
 :ref:`Projection<class_Projection>` **jitter_offseted**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Projection_method_jitter_offseted>`
 
-Returns a **Projection** with the X and Y values from the given :ref:`Vector2<class_Vector2>` added to the first and second values of the final column respectively.
+返回一个 **Projection**\ ，X 和 Y 的取值由给定的 :ref:`Vector2<class_Vector2>` 和最后一列中对应的第一个和第二个值相加而来。
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ Returns a **Projection** with the X and Y values from the given :ref:`Vector2<cl
 
 :ref:`Projection<class_Projection>` **perspective_znear_adjusted**\ (\ new_znear\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Projection_method_perspective_znear_adjusted>`
 
-Returns a **Projection** with the near clipping distance adjusted to be ``new_znear``.
+返回一个 **Projection**\ ，将其近裁剪距离调整为 ``new_znear``\ 。
 
-\ **Note:** The original **Projection** must be a perspective projection.
+\ **注意：**\ 原始的 **Projection** 必须为透视投影。
 
 .. rst-class:: classref-section-separator
 
@@ -673,8 +673,8 @@ Returns a **Projection** with the near clipping distance adjusted to be ``new_zn
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+运算符说明
+----------
 
 .. _class_Projection_operator_neq_Projection:
 
@@ -682,9 +682,9 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Projection<class_Projection>`\ ) :ref:`🔗<class_Projection_operator_neq_Projection>`
 
-Returns ``true`` if the projections are not equal.
+如果投影不相等，则返回 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, this may return ``true``, even if the projections are virtually equal. An ``is_equal_approx`` method may be added in a future version of Godot.
+\ **注意：**\ 由于浮点精度误差，即使投影实际上相等，也可能会返回 ``true`` 。可能会在 Godot 的未来版本中添加 ``is_equal_approx`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Returns ``true`` if the projections are not equal.
 
 :ref:`Projection<class_Projection>` **operator ***\ (\ right\: :ref:`Projection<class_Projection>`\ ) :ref:`🔗<class_Projection_operator_mul_Projection>`
 
-Returns a **Projection** that applies the combined transformations of this **Projection** and ``right``.
+返回一个 **Projection**\ ，应用了这个 **Projection** 和 ``right`` 的组合变换。
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ Returns a **Projection** that applies the combined transformations of this **Pro
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Projection_operator_mul_Vector4>`
 
-Projects (multiplies) the given :ref:`Vector4<class_Vector4>` by this **Projection** matrix.
+使用这个 **Projection** 矩阵将给定的 :ref:`Vector4<class_Vector4>` 进行投影（相乘）。
 
 .. rst-class:: classref-item-separator
 
@@ -720,9 +720,9 @@ Projects (multiplies) the given :ref:`Vector4<class_Vector4>` by this **Projecti
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Projection<class_Projection>`\ ) :ref:`🔗<class_Projection_operator_eq_Projection>`
 
-Returns ``true`` if the projections are equal.
+如果投影相等，则返回 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, this may return ``false``, even if the projections are virtually equal. An ``is_equal_approx`` method may be added in a future version of Godot.
+\ **注意：**\ 由于浮点精度错误，即使投影实际上相等，也可能会返回 ``false``\ 。可能会在 Godot 的未来版本中添加 ``is_equal_approx`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -734,16 +734,16 @@ Returns ``true`` if the projections are equal.
 
 :ref:`Vector4<class_Vector4>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Projection_operator_idx_int>`
 
-Returns the column of the **Projection** with the given index.
+返回具有给定索引的 **Projection** 的列。
 
-Indices are in the following order: x, y, z, w.
+索引按以下顺序排列：x、y、z、w。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

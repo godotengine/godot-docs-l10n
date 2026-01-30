@@ -5,21 +5,21 @@
 ShaderIncludeDB
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Internal database of built in shader include files.
+内置着色器头文件的内部数据库。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This object contains shader fragments from Godot's internal shaders. These can be used when access to internal uniform buffers and/or internal functions is required for instance when composing compositor effects or compute shaders. Only fragments for the current rendering device are loaded.
+该对象包含 Godot 内部着色器中的着色器片段。需要访问内部 Uniform 缓冲区和/或内部函数时，例如在组合合成器效果或计算着色器时，可以使用这些片段。仅加载当前渲染设备的片段。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ShaderIncludeDB_method_get_built_in_include_file:
 
@@ -47,7 +47,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **get_built_in_include_file**\ (\ filename\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_get_built_in_include_file>`
 
-Returns the code for the built-in shader fragment. You can also access this in your shader code through ``#include "filename"``.
+返回内置着色器片段的代码。在着色器代码中也可以通过 ``#include "文件名"`` 访问。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the code for the built-in shader fragment. You can also access this in y
 
 :ref:`bool<class_bool>` **has_built_in_include_file**\ (\ filename\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_has_built_in_include_file>`
 
-Returns ``true`` if an include file with this name exists.
+如果存在该名称对应的头文件，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -71,14 +71,14 @@ Returns ``true`` if an include file with this name exists.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **list_built_in_include_files**\ (\ ) |static| :ref:`🔗<class_ShaderIncludeDB_method_list_built_in_include_files>`
 
-Returns a list of built-in include files that are currently registered.
+返回目前已注册的内置头文件列表。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

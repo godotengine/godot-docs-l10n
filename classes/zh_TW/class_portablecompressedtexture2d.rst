@@ -5,29 +5,29 @@
 PortableCompressedTexture2D
 ===========================
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides a compressed texture for disk and/or VRAM in a way that is portable.
+為磁片和/或顯存提供可移植的壓縮紋理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This class allows storing compressed textures as self contained (not imported) resources.
+這個類能夠將壓縮紋理儲存為自包含的資源（與匯入資源相對）。
 
-For 2D usage (compressed on disk, uncompressed on VRAM), the lossy and lossless modes are recommended. For 3D usage (compressed on VRAM) it depends on the target platform.
+用於 2D 時（在磁片上壓縮、在顯存中不壓縮）推薦使用有損和無損模式。用於 3D 時（在顯存中壓縮）則取決於目標平臺。
 
-If you intend to only use desktop, S3TC or BPTC are recommended. For only mobile, ETC2 is recommended.
+如果你只想用於桌面平臺，則推薦使用 S3TC 或 BPTC。如果只用於移動平臺，則推薦使用 ETC2。
 
-For portable, self contained 3D textures that work on both desktop and mobile, Basis Universal is recommended (although it has a small quality cost and longer compression time as a tradeoff).
+如果要實作可移植、自包含的 3D 紋理，讓這種紋理能同時在桌面和移動平臺使用，則推薦 Basis Universal（儘管代價是有較小的品質損耗和更長的壓縮時間）。
 
-This resource is intended to be created from code.
+這個資源應使用程式碼建立。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_PortableCompressedTexture2D_CompressionMode:
 
@@ -167,8 +167,8 @@ enum **CompressionMode**: :ref:`🔗<enum_PortableCompressedTexture2D_Compressio
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_PortableCompressedTexture2D_property_keep_compressed_buffer:
 
@@ -208,8 +208,8 @@ Allows overriding the texture's size (for 2D only).
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_PortableCompressedTexture2D_method_create_from_image:
 
@@ -217,11 +217,11 @@ Method Descriptions
 
 |void| **create_from_image**\ (\ image\: :ref:`Image<class_Image>`, compression_mode\: :ref:`CompressionMode<enum_PortableCompressedTexture2D_CompressionMode>`, normal_map\: :ref:`bool<class_bool>` = false, lossy_quality\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_PortableCompressedTexture2D_method_create_from_image>`
 
-Initializes the compressed texture from a base image. The compression mode must be provided.
+使用基礎圖像初始化壓縮紋理。必須提供壓縮模式。
 
-\ ``normal_map`` is recommended to ensure optimum quality if this image will be used as a normal map.
+如果該圖像會用作法線貼圖，則推薦使用 ``normal_map``\ ，確保達到最佳品質。
 
-If lossy compression is requested, the quality setting can optionally be provided. This maps to Lossy WebP compression quality.
+如果請求了失真壓縮，還可以提供品質設定。會對應至有損 WebP 壓縮品質。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ If lossy compression is requested, the quality setting can optionally be provide
 
 :ref:`CompressionMode<enum_PortableCompressedTexture2D_CompressionMode>` **get_compression_mode**\ (\ ) |const| :ref:`🔗<class_PortableCompressedTexture2D_method_get_compression_mode>`
 
-Return the compression mode used (valid after initialized).
+返回使用的壓縮模式（初始化後有效）。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ Return the compression mode used (valid after initialized).
 
 :ref:`Format<enum_Image_Format>` **get_format**\ (\ ) |const| :ref:`🔗<class_PortableCompressedTexture2D_method_get_format>`
 
-Return the image format used (valid after initialized).
+返回使用的圖像格式（初始化後有效）。
 
 .. rst-class:: classref-item-separator
 
@@ -285,12 +285,12 @@ Sets the compressor parameters for Basis Universal compression. See also the set
 
 If ``keep`` is ``true``, overrides the flag globally for all textures of this type. This is used primarily by the editor.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

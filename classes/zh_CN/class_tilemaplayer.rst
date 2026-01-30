@@ -5,48 +5,48 @@
 TileMapLayer
 ============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Node for 2D tile-based maps.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Node for 2D tile-based maps. A **TileMapLayer** uses a :ref:`TileSet<class_TileSet>` which contain a list of tiles which are used to create grid-based maps. Unlike the :ref:`TileMap<class_TileMap>` node, which is deprecated, **TileMapLayer** has only one layer of tiles. You can use several **TileMapLayer** to achieve the same result as a :ref:`TileMap<class_TileMap>` node.
-
-For performance reasons, all TileMap updates are batched at the end of a frame. Notably, this means that scene tiles from a :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>` are initialized after their parent. This is only queued when inside the scene tree.
-
-To force an update earlier on, call :ref:`update_internals()<class_TileMapLayer_method_update_internals>`.
-
-\ **Note:** For performance and compatibility reasons, the coordinates serialized by **TileMapLayer** are limited to 16-bit signed integers, i.e. the range for X and Y coordinates is from ``-32768`` to ``32767``. When saving tile data, tiles outside this range are wrapped.
+基于 2D 图块的地图节点。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using Tilemaps <../tutorials/2d/using_tilemaps>`
+基于 2D 图块的地图节点。\ **TileMapLayer** 即图块地图层，需要使用包含了图块列表的 :ref:`TileSet<class_TileSet>`\ ，用于创建基于栅格的地图。与已经废弃的 :ref:`TileMap<class_TileMap>` 节点不同，\ **TileMapLayer** 只包含一个图块层。可以使用多个 **TileMapLayer** 实现和 :ref:`TileMap<class_TileMap>` 节点相同的效果。
 
-- `2D Platformer Demo <https://godotengine.org/asset-library/asset/2727>`__
+出于性能原因，所有 TileMap 更新都会在一帧结束时进行批处理。值得注意的是，这意味着 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>` 中的场景图块可能会在其父级之后初始化。仅当在场景树内时才会排队。
 
-- `2D Isometric Demo <https://godotengine.org/asset-library/asset/2718>`__
+要提前强制更新，请调用 :ref:`update_internals()<class_TileMapLayer_method_update_internals>`\ 。
 
-- `2D Hexagonal Demo <https://godotengine.org/asset-library/asset/2717>`__
+\ **注意：**\ 考虑到性能和兼容性，\ **TileMapLayer** 所序列化的坐标限制为 16 位带符号整数，即 X、Y 坐标的范围在 ``-32768`` 到 ``32767`` 之间。保存图块数据时，该范围之外的图块会发生环绕。
 
-- `2D Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
+.. rst-class:: classref-introduction-group
 
-- `2D Role Playing Game (RPG) Demo <https://godotengine.org/asset-library/asset/2729>`__
+教程
+----
 
-- `2D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2719>`__
+- :doc:`使用 Tilemap <../tutorials/2d/using_tilemaps>`
 
-- `2D Dynamic TileMap Layers Demo <https://godotengine.org/asset-library/asset/2713>`__
+- `2D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2727>`__
+
+- `2D 等轴演示 <https://godotengine.org/asset-library/asset/2718>`__
+
+- `2D 六边形演示 <https://godotengine.org/asset-library/asset/2717>`__
+
+- `AStarGrid2D 的 2D 网格导航演示 <https://godotengine.org/asset-library/asset/2723>`__
+
+- `2D 角色扮演游戏（RPG）演示 <https://godotengine.org/asset-library/asset/2729>`__
+
+- `2D 运动学角色演示 <https://godotengine.org/asset-library/asset/2719>`__
+
+- `2D 动态 TileMap 层演示 <https://godotengine.org/asset-library/asset/2713>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -81,8 +81,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -159,8 +159,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_TileMapLayer_signal_changed:
 
@@ -168,9 +168,9 @@ Signals
 
 **changed**\ (\ ) :ref:`🔗<class_TileMapLayer_signal_changed>`
 
-Emitted when this **TileMapLayer**'s properties changes. This includes modified cells, properties, or changes made to its assigned :ref:`TileSet<class_TileSet>`.
+**TileMapLayer** 的属性发生改变时发出。包括对单元格和属性的修改以及对所分配的 :ref:`TileSet<class_TileSet>` 的修改。
 
-\ **Note:** This signal may be emitted very often when batch-modifying a **TileMapLayer**. Avoid executing complex processing in a connected function, and consider delaying it to the end of the frame instead (i.e. calling :ref:`Object.call_deferred()<class_Object_method_call_deferred>`).
+\ **注意：**\ 批量修改 **TileMapLayer** 时可能频繁发出该信号。请勿在连接的函数中执行复杂的处理，建议延迟到帧末尾再进行这些操作（即调用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -178,8 +178,8 @@ Emitted when this **TileMapLayer**'s properties changes. This includes modified 
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TileMapLayer_DebugVisibilityMode:
 
@@ -193,7 +193,7 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_TileMapLayer_DebugVisibilityMode>`
 
 :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_DEFAULT** = ``0``
 
-Hide the collisions or navigation debug shapes in the editor, and use the debug settings to determine their visibility in game (i.e. :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` or :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`).
+在编辑器中隐藏碰撞和导航调试形状，使用调试设置决定游戏中的可见性（即 :ref:`SceneTree.debug_collisions_hint<class_SceneTree_property_debug_collisions_hint>` 和 :ref:`SceneTree.debug_navigation_hint<class_SceneTree_property_debug_navigation_hint>`\ ）。
 
 .. _class_TileMapLayer_constant_DEBUG_VISIBILITY_MODE_FORCE_HIDE:
 
@@ -201,7 +201,7 @@ Hide the collisions or navigation debug shapes in the editor, and use the debug 
 
 :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_HIDE** = ``2``
 
-Always hide the collisions or navigation debug shapes.
+始终隐藏碰撞和导航调试形状。
 
 .. _class_TileMapLayer_constant_DEBUG_VISIBILITY_MODE_FORCE_SHOW:
 
@@ -209,7 +209,7 @@ Always hide the collisions or navigation debug shapes.
 
 :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>` **DEBUG_VISIBILITY_MODE_FORCE_SHOW** = ``1``
 
-Always show the collisions or navigation debug shapes.
+始终显示碰撞和导航调试形状。
 
 .. rst-class:: classref-section-separator
 
@@ -217,8 +217,8 @@ Always show the collisions or navigation debug shapes.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TileMapLayer_property_collision_enabled:
 
@@ -231,7 +231,7 @@ Property Descriptions
 - |void| **set_collision_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collision_enabled**\ (\ )
 
-Enable or disable collisions.
+启用或禁用碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Enable or disable collisions.
 - |void| **set_collision_visibility_mode**\ (\ value\: :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>`\ )
 - :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>` **get_collision_visibility_mode**\ (\ )
 
-Show or hide the **TileMapLayer**'s collision shapes. If set to :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_TileMapLayer_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, this depends on the show collision debug settings.
+显示或隐藏 **TileMapLayer** 的碰撞形状。如果设置为 :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_TileMapLayer_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`\ ，则取决于调试设置“显示碰撞”。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Show or hide the **TileMapLayer**'s collision shapes. If set to :ref:`DEBUG_VISI
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-If ``false``, disables this **TileMapLayer** completely (rendering, collision, navigation, scene tiles, etc.)
+如果为 ``false``\ ，则会完全禁用该 **TileMapLayer**\ （渲染、碰撞、导航、场景图块等）。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ If ``false``, disables this **TileMapLayer** completely (rendering, collision, n
 - |void| **set_navigation_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_navigation_enabled**\ (\ )
 
-If ``true``, navigation regions are enabled.
+如果为 ``true``\ ，则启用导航区块。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ If ``true``, navigation regions are enabled.
 - |void| **set_navigation_visibility_mode**\ (\ value\: :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>`\ )
 - :ref:`DebugVisibilityMode<enum_TileMapLayer_DebugVisibilityMode>` **get_navigation_visibility_mode**\ (\ )
 
-Show or hide the **TileMapLayer**'s navigation meshes. If set to :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_TileMapLayer_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`, this depends on the show navigation debug settings.
+显示或隐藏 **TileMapLayer** 的导航网格。如果设置为 :ref:`DEBUG_VISIBILITY_MODE_DEFAULT<class_TileMapLayer_constant_DEBUG_VISIBILITY_MODE_DEFAULT>`\ ，则取决于调试设置“显示导航”。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Show or hide the **TileMapLayer**'s navigation meshes. If set to :ref:`DEBUG_VIS
 - |void| **set_occlusion_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_occlusion_enabled**\ (\ )
 
-Enable or disable light occlusion.
+启用或禁用光线遮蔽。
 
 .. rst-class:: classref-item-separator
 
@@ -354,11 +354,11 @@ The **TileMapLayer**'s physics quadrant size. Within a physics quadrant, cells w
 - |void| **set_rendering_quadrant_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_rendering_quadrant_size**\ (\ )
 
-The **TileMapLayer**'s rendering quadrant size. A quadrant is a group of tiles to be drawn together on a single canvas item, for optimization purposes. :ref:`rendering_quadrant_size<class_TileMapLayer_property_rendering_quadrant_size>` defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together ``16 * 16 = 256`` tiles.
+**TileMapLayer** 的渲染象限大小。象限是在单个画布项上一起绘制的一组图块，用于优化。\ :ref:`rendering_quadrant_size<class_TileMapLayer_property_rendering_quadrant_size>` 定义的是形成象限的正方形的边长，使用地图坐标系。因此，默认象限大小将 ``16 * 16 = 256`` 个图块组合到了一起。
 
-The quadrant size does not apply on a Y-sorted **TileMapLayer**, as tiles are grouped by Y position instead in that case.
+象限大小不适用于 Y 排序的 **TileMapLayer**\ ，因为在这种情况下图块按 Y 位置分组。
 
-\ **Note:** As quadrants are created according to the map's coordinate system, the quadrant's "square shape" might not look like square in the **TileMapLayer**'s local coordinate system.
+\ **注意：**\ 象限是根据地图坐标系创建的，“正方形”的象限在 **TileMapLayer** 的局部坐标系中可能并不是正方形。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ The quadrant size does not apply on a Y-sorted **TileMapLayer**, as tiles are gr
 - |void| **set_tile_map_data_from_array**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_tile_map_data_as_array**\ (\ )
 
-The raw tile map data as a byte array.
+字节数组形式的图块地图原始数据。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -394,7 +394,7 @@ The raw tile map data as a byte array.
 - |void| **set_tile_set**\ (\ value\: :ref:`TileSet<class_TileSet>`\ )
 - :ref:`TileSet<class_TileSet>` **get_tile_set**\ (\ )
 
-The :ref:`TileSet<class_TileSet>` used by this layer. The textures, collisions, and additional behavior of all available tiles are stored here.
+该图层使用的 :ref:`TileSet<class_TileSet>`\ 。存储的是所有可用图块的纹理、碰撞以及额外的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ The :ref:`TileSet<class_TileSet>` used by this layer. The textures, collisions, 
 - |void| **set_use_kinematic_bodies**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_kinematic_bodies**\ (\ )
 
-If ``true``, this **TileMapLayer** collision shapes will be instantiated as kinematic bodies. This can be needed for moving **TileMapLayer** nodes (i.e. moving platforms).
+如果为 ``true``\ ，则该 **TileMapLayer** 碰撞形状将被实例化为运动体。这对于移动 **TileMapLayer** 节点（即移动平台）可能是必要的。
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ If ``true``, this **TileMapLayer** collision shapes will be instantiated as kine
 - |void| **set_x_draw_order_reversed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_x_draw_order_reversed**\ (\ )
 
-If :ref:`CanvasItem.y_sort_enabled<class_CanvasItem_property_y_sort_enabled>` is enabled, setting this to ``true`` will reverse the order the tiles are drawn on the X-axis.
+如果启用了 :ref:`CanvasItem.y_sort_enabled<class_CanvasItem_property_y_sort_enabled>`\ ，则将其设置为 ``true`` 将反转在 X 轴上绘制图块的顺序。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ If :ref:`CanvasItem.y_sort_enabled<class_CanvasItem_property_y_sort_enabled>` is
 - |void| **set_y_sort_origin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_y_sort_origin**\ (\ )
 
-This Y-sort origin value is added to each tile's Y-sort origin value. This allows, for example, to fake a different height level. This can be useful for top-down view games.
+各个图块的 Y 排序原点值都会加上这个 Y 排序原点值。用例是为图层冒充其他高度级别。在俯视角游戏中比较有用。
 
 .. rst-class:: classref-section-separator
 
@@ -453,8 +453,8 @@ This Y-sort origin value is added to each tile's Y-sort origin value. This allow
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TileMapLayer_private_method__tile_data_runtime_update:
 
@@ -462,13 +462,13 @@ Method Descriptions
 
 |void| **_tile_data_runtime_update**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`, tile_data\: :ref:`TileData<class_TileData>`\ ) |virtual| :ref:`🔗<class_TileMapLayer_private_method__tile_data_runtime_update>`
 
-Called with a :ref:`TileData<class_TileData>` object about to be used internally by the **TileMapLayer**, allowing its modification at runtime.
+使用即将由 **TileMapLayer** 内部使用的 :ref:`TileData<class_TileData>` 对象来调用，从而允许在运行时对其进行修改。
 
-This method is only called if :ref:`_use_tile_data_runtime_update()<class_TileMapLayer_private_method__use_tile_data_runtime_update>` is implemented and returns ``true`` for the given tile ``coords``.
+仅当 :ref:`_use_tile_data_runtime_update()<class_TileMapLayer_private_method__use_tile_data_runtime_update>` 已实现，且它为给定的图块 ``coords`` 返回 ``true`` 时，才会调用该方法。
 
-\ **Warning:** The ``tile_data`` object's sub-resources are the same as the one in the TileSet. Modifying them might impact the whole TileSet. Instead, make sure to duplicate those resources.
+\ **警告：**\ ``tile_data`` 对象的子资源与 TileSet 中的子资源相同。修改它们可能会影响整个 TileSet。请确保复制这些资源再进行修改。
 
-\ **Note:** If the properties of ``tile_data`` object should change over time, use :ref:`notify_runtime_tile_data_update()<class_TileMapLayer_method_notify_runtime_tile_data_update>` to notify the **TileMapLayer** it needs an update.
+\ **注意：**\ 如果 ``tile_data`` 对象的属性应随时间发生变化，请使用 :ref:`notify_runtime_tile_data_update()<class_TileMapLayer_method_notify_runtime_tile_data_update>` 来通知 **TileMapLayer** 它需要更新。
 
 .. rst-class:: classref-item-separator
 
@@ -480,21 +480,21 @@ This method is only called if :ref:`_use_tile_data_runtime_update()<class_TileMa
 
 |void| **_update_cells**\ (\ coords\: :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\], forced_cleanup\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_TileMapLayer_private_method__update_cells>`
 
-Called when this **TileMapLayer**'s cells need an internal update. This update may be caused from individual cells being modified or by a change in the :ref:`tile_set<class_TileMapLayer_property_tile_set>` (causing all cells to be queued for an update). The first call to this function is always for initializing all the **TileMapLayer**'s cells. ``coords`` contains the coordinates of all modified cells, roughly in the order they were modified. ``forced_cleanup`` is ``true`` when the **TileMapLayer**'s internals should be fully cleaned up. This is the case when:
+**TileMapLayer** 的单元格需要内部更新时调用。更新可能由某个单元格的修改触发，也可能由 :ref:`tile_set<class_TileMapLayer_property_tile_set>` 的更改触发（所有单元格都会排队更新）。首次调用该函数始终为对 **TileMapLayer** 单元格的初始化。\ ``coords`` 包含所有已修改单元格的坐标，大致按照修改顺序排列。应当完全清理 **TileMapLayer** 的内部数据时 ``forced_cleanup`` 为 ``true``\ 。触发条件为：
 
-- The layer is disabled;
+- 层禁用；
 
-- The layer is not visible;
+- 层不可见；
 
-- :ref:`tile_set<class_TileMapLayer_property_tile_set>` is set to ``null``;
+- :ref:`tile_set<class_TileMapLayer_property_tile_set>` 设为 ``null``\ ；
 
-- The node is removed from the tree;
+- 节点从场景树移除；
 
-- The node is freed.
+- 释放节点；
 
-Note that any internal update happening while one of these conditions is verified is considered to be a "cleanup". See also :ref:`update_internals()<class_TileMapLayer_method_update_internals>`.
+请注意，满足以上任一条件时进行的内部更新都视为“清理”。另见 :ref:`update_internals()<class_TileMapLayer_method_update_internals>`\ 。
 
-\ **Warning:** Implementing this method may degrade the **TileMapLayer**'s performance.
+\ **警告：**\ 实现该方法可能降低 **TileMapLayer** 的性能。
 
 .. rst-class:: classref-item-separator
 
@@ -506,11 +506,11 @@ Note that any internal update happening while one of these conditions is verifie
 
 :ref:`bool<class_bool>` **_use_tile_data_runtime_update**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |virtual| :ref:`🔗<class_TileMapLayer_private_method__use_tile_data_runtime_update>`
 
-Should return ``true`` if the tile at coordinates ``coords`` requires a runtime update.
+如果位于坐标 ``coords`` 的图块需要运行时更新，则应返回 ``true``\ 。
 
-\ **Warning:** Make sure this function only returns ``true`` when needed. Any tile processed at runtime without a need for it will imply a significant performance penalty.
+\ **警告：**\ 请确保这个函数只在需要时返回 ``true``\ 。任何在没有需要的情况下在运行时处理的图块都将导致显著的性能损失。
 
-\ **Note:** If the result of this function should change, use :ref:`notify_runtime_tile_data_update()<class_TileMapLayer_method_notify_runtime_tile_data_update>` to notify the **TileMapLayer** it needs an update.
+\ **注意：**\ 如果该函数的结果发生变化，请使用 :ref:`notify_runtime_tile_data_update()<class_TileMapLayer_method_notify_runtime_tile_data_update>` 通知 **TileMapLayer** 它需要更新。
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +522,7 @@ Should return ``true`` if the tile at coordinates ``coords`` requires a runtime 
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TileMapLayer_method_clear>`
 
-Clears all cells.
+清除所有单元格。
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +534,7 @@ Clears all cells.
 
 |void| **erase_cell**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileMapLayer_method_erase_cell>`
 
-Erases the cell at coordinates ``coords``.
+擦除位于坐标 ``coords`` 的单元格。
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ Erases the cell at coordinates ``coords``.
 
 |void| **fix_invalid_tiles**\ (\ ) :ref:`🔗<class_TileMapLayer_method_fix_invalid_tiles>`
 
-Clears cells containing tiles that do not exist in the :ref:`tile_set<class_TileMapLayer_property_tile_set>`.
+清空包含不存在于 :ref:`tile_set<class_TileMapLayer_property_tile_set>` 中的图块的单元格。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Clears cells containing tiles that do not exist in the :ref:`tile_set<class_Tile
 
 :ref:`int<class_int>` **get_cell_alternative_tile**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_cell_alternative_tile>`
 
-Returns the tile alternative ID of the cell at coordinates ``coords``.
+返回位于坐标 ``coords`` 的单元格的图块备选 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ Returns the tile alternative ID of the cell at coordinates ``coords``.
 
 :ref:`Vector2i<class_Vector2i>` **get_cell_atlas_coords**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_cell_atlas_coords>`
 
-Returns the tile atlas coordinates ID of the cell at coordinates ``coords``. Returns ``Vector2i(-1, -1)`` if the cell does not exist.
+返回位于坐标 ``coords`` 的单元格的图块图集坐标 ID。如果单元格不存在则返回 ``Vector2i(-1, -1)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -582,7 +582,7 @@ Returns the tile atlas coordinates ID of the cell at coordinates ``coords``. Ret
 
 :ref:`int<class_int>` **get_cell_source_id**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_cell_source_id>`
 
-Returns the tile source ID of the cell at coordinates ``coords``. Returns ``-1`` if the cell does not exist.
+返回位于坐标 ``coords`` 的单元格的图块源 ID。如果单元格不存在则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ Returns the tile source ID of the cell at coordinates ``coords``. Returns ``-1``
 
 :ref:`TileData<class_TileData>` **get_cell_tile_data**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_cell_tile_data>`
 
-Returns the :ref:`TileData<class_TileData>` object associated with the given cell, or ``null`` if the cell does not exist or is not a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`.
+返回与给定单元格关联的 :ref:`TileData<class_TileData>` 对象，如果单元格不存在或者不是 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 则返回 ``null``\ 。
 
 ::
 
@@ -630,9 +630,9 @@ Returns the coordinates of the physics quadrant (see :ref:`physics_quadrant_size
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_navigation_map>`
 
-Returns the :ref:`RID<class_RID>` of the :ref:`NavigationServer2D<class_NavigationServer2D>` navigation used by this **TileMapLayer**.
+返回该 **TileMapLayer** 所使用的 :ref:`NavigationServer2D<class_NavigationServer2D>` 导航 :ref:`RID<class_RID>`\ 。
 
-By default this returns the default :ref:`World2D<class_World2D>` navigation map, unless a custom map was provided using :ref:`set_navigation_map()<class_TileMapLayer_method_set_navigation_map>`.
+默认情况下返回的是默认 :ref:`World2D<class_World2D>` 导航地图，除非通过 :ref:`set_navigation_map()<class_TileMapLayer_method_set_navigation_map>` 提供了自定义地图。
 
 .. rst-class:: classref-item-separator
 
@@ -644,7 +644,7 @@ By default this returns the default :ref:`World2D<class_World2D>` navigation map
 
 :ref:`Vector2i<class_Vector2i>` **get_neighbor_cell**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`, neighbor\: :ref:`CellNeighbor<enum_TileSet_CellNeighbor>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_neighbor_cell>`
 
-Returns the neighboring cell to the one at coordinates ``coords``, identified by the ``neighbor`` direction. This method takes into account the different layouts a TileMap can take.
+返回与位于坐标 ``coords`` 的单元格相邻的单元格，方向由 ``neighbor`` 表示。这个方法会考虑 TileMap 的不同布局。
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +656,7 @@ Returns the neighboring cell to the one at coordinates ``coords``, identified by
 
 :ref:`TileMapPattern<class_TileMapPattern>` **get_pattern**\ (\ coords_array\: :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\]\ ) :ref:`🔗<class_TileMapLayer_method_get_pattern>`
 
-Creates and returns a new :ref:`TileMapPattern<class_TileMapPattern>` from the given array of cells. See also :ref:`set_pattern()<class_TileMapLayer_method_set_pattern>`.
+根据给定的单元格数组新建 :ref:`TileMapPattern<class_TileMapPattern>` 并将其返回。另见 :ref:`set_pattern()<class_TileMapLayer_method_set_pattern>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +668,7 @@ Creates and returns a new :ref:`TileMapPattern<class_TileMapPattern>` from the g
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_surrounding_cells**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileMapLayer_method_get_surrounding_cells>`
 
-Returns the list of all neighboring cells to the one at ``coords``. Any neighboring cell is one that is touching edges, so for a square cell 4 cells would be returned, for a hexagon 6 cells are returned.
+返回与位于 ``coords`` 的单元格相邻的所有单元格的列表。相邻单元格指存在相接边的单元格，因此正方形单元格会返回 4 个单元格，六边形单元格会返回 6 个单元格。
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Returns the list of all neighboring cells to the one at ``coords``. Any neighbor
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_used_cells**\ (\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_used_cells>`
 
-Returns a :ref:`Vector2i<class_Vector2i>` array with the positions of all cells containing a tile. A cell is considered empty if its source identifier equals ``-1``, its atlas coordinate identifier is ``Vector2(-1, -1)`` and its alternative identifier is ``-1``.
+返回 :ref:`Vector2i<class_Vector2i>` 数组，其中存放的是所有包含图块的单元格的位置。空单元格的源标识符等于 ``-1``\ 、图集坐标标识符为 ``Vector2(-1, -1)``\ 、备选标识符为 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -692,11 +692,11 @@ Returns a :ref:`Vector2i<class_Vector2i>` array with the positions of all cells 
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_used_cells_by_id**\ (\ source_id\: :ref:`int<class_int>` = -1, atlas_coords\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1), alternative_tile\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_used_cells_by_id>`
 
-Returns a :ref:`Vector2i<class_Vector2i>` array with the positions of all cells containing a tile. Tiles may be filtered according to their source (``source_id``), their atlas coordinates (``atlas_coords``), or alternative id (``alternative_tile``).
+返回 :ref:`Vector2i<class_Vector2i>` 数组，其中存放的是给定图层中所有包含图块的单元格的位置。可以根据源（\ ``source_id``\ ）、图集坐标（\ ``atlas_coords``\ ）、备选 ID（\ ``alternative_tile``\ ）进行过滤。
 
-If a parameter has its value set to the default one, this parameter is not used to filter a cell. Thus, if all parameters have their respective default values, this method returns the same result as :ref:`get_used_cells()<class_TileMapLayer_method_get_used_cells>`.
+如果某个参数为默认值，则该参数不会用于单元格的过滤。因此，如果所有参数都使用默认值，则返回的结果与 :ref:`get_used_cells()<class_TileMapLayer_method_get_used_cells>` 相同。
 
-A cell is considered empty if its source identifier equals ``-1``, its atlas coordinate identifier is ``Vector2(-1, -1)`` and its alternative identifier is ``-1``.
+空单元格的源标识符等于 ``-1``\ 、图集坐标标识符为 ``Vector2(-1, -1)``\ 、备选标识符为 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -708,7 +708,7 @@ A cell is considered empty if its source identifier equals ``-1``, its atlas coo
 
 :ref:`Rect2i<class_Rect2i>` **get_used_rect**\ (\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_used_rect>`
 
-Returns a rectangle enclosing the used (non-empty) tiles of the map.
+返回地图的包围矩形，包围已使用（非空）的图块。
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ Returns a rectangle enclosing the used (non-empty) tiles of the map.
 
 :ref:`bool<class_bool>` **has_body_rid**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_has_body_rid>`
 
-Returns whether the provided ``body`` :ref:`RID<class_RID>` belongs to one of this **TileMapLayer**'s cells.
+返回给定的 ``body`` :ref:`RID<class_RID>` 属于该 **TileMapLayer** 中的某个单元格。
 
 .. rst-class:: classref-item-separator
 
@@ -732,7 +732,7 @@ Returns whether the provided ``body`` :ref:`RID<class_RID>` belongs to one of th
 
 :ref:`bool<class_bool>` **is_cell_flipped_h**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_is_cell_flipped_h>`
 
-Returns ``true`` if the cell at coordinates ``coords`` is flipped horizontally. The result is valid only for atlas sources.
+如果位于坐标 ``coords`` 的单元格发生了水平翻转，则返回 ``true``\ 。结果仅对图集源有效。
 
 .. rst-class:: classref-item-separator
 
@@ -744,7 +744,7 @@ Returns ``true`` if the cell at coordinates ``coords`` is flipped horizontally. 
 
 :ref:`bool<class_bool>` **is_cell_flipped_v**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_is_cell_flipped_v>`
 
-Returns ``true`` if the cell at coordinates ``coords`` is flipped vertically. The result is valid only for atlas sources.
+如果位于坐标 ``coords`` 的单元格发生了垂直翻转，则返回 ``true``\ 。结果仅对图集源有效。
 
 .. rst-class:: classref-item-separator
 
@@ -756,7 +756,7 @@ Returns ``true`` if the cell at coordinates ``coords`` is flipped vertically. Th
 
 :ref:`bool<class_bool>` **is_cell_transposed**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_is_cell_transposed>`
 
-Returns ``true`` if the cell at coordinates ``coords`` is transposed. The result is valid only for atlas sources.
+如果位于坐标 ``coords`` 的单元格发生了转置，则返回 ``true``\ 。结果仅对图集源有效。
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +768,7 @@ Returns ``true`` if the cell at coordinates ``coords`` is transposed. The result
 
 :ref:`Vector2i<class_Vector2i>` **local_to_map**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_local_to_map>`
 
-Returns the map coordinates of the cell containing the given ``local_position``. If ``local_position`` is in global coordinates, consider using :ref:`Node2D.to_local()<class_Node2D_method_to_local>` before passing it to this method. See also :ref:`map_to_local()<class_TileMapLayer_method_map_to_local>`.
+返回包含给定 ``local_position`` 的单元格地图坐标。如果 ``local_position`` 使用全局坐标，请考虑在传入这个方法前使用 :ref:`Node2D.to_local()<class_Node2D_method_to_local>`\ 。另见 :ref:`map_to_local()<class_TileMapLayer_method_map_to_local>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -780,7 +780,7 @@ Returns the map coordinates of the cell containing the given ``local_position``.
 
 :ref:`Vector2i<class_Vector2i>` **map_pattern**\ (\ position_in_tilemap\: :ref:`Vector2i<class_Vector2i>`, coords_in_pattern\: :ref:`Vector2i<class_Vector2i>`, pattern\: :ref:`TileMapPattern<class_TileMapPattern>`\ ) :ref:`🔗<class_TileMapLayer_method_map_pattern>`
 
-Returns for the given coordinates ``coords_in_pattern`` in a :ref:`TileMapPattern<class_TileMapPattern>` the corresponding cell coordinates if the pattern was pasted at the ``position_in_tilemap`` coordinates (see :ref:`set_pattern()<class_TileMapLayer_method_set_pattern>`). This mapping is required as in half-offset tile shapes, the mapping might not work by calculating ``position_in_tile_map + coords_in_pattern``.
+如果图案粘贴在 ``position_in_tilemap`` 坐标处（请参阅 :ref:`set_pattern()<class_TileMapLayer_method_set_pattern>`\ ），则返回 :ref:`TileMapPattern<class_TileMapPattern>` 中给定坐标 ``coords_in_pattern`` 对应的单元格坐标。该映射是必需的，因为在半偏移图块形状中，映射可能无法通过计算 ``position_in_tile_map + coords_in_pattern`` 工作。
 
 .. rst-class:: classref-item-separator
 
@@ -792,9 +792,9 @@ Returns for the given coordinates ``coords_in_pattern`` in a :ref:`TileMapPatter
 
 :ref:`Vector2<class_Vector2>` **map_to_local**\ (\ map_position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_map_to_local>`
 
-Returns the centered position of a cell in the **TileMapLayer**'s local coordinate space. To convert the returned value into global coordinates, use :ref:`Node2D.to_global()<class_Node2D_method_to_global>`. See also :ref:`local_to_map()<class_TileMapLayer_method_local_to_map>`.
+返回单元格的中心位置，使用 **TileMapLayer** 的局部坐标。要将返回值转换为全局坐标，请使用 :ref:`Node2D.to_global()<class_Node2D_method_to_global>`\ 。另见 :ref:`local_to_map()<class_TileMapLayer_method_local_to_map>`\ 。
 
-\ **Note:** This may not correspond to the visual position of the tile, i.e. it ignores the :ref:`TileData.texture_origin<class_TileData_property_texture_origin>` property of individual tiles.
+\ **注意：**\ 可能与图块的可视位置没有对应关系，即忽略各个图块的 :ref:`TileData.texture_origin<class_TileData_property_texture_origin>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -806,11 +806,11 @@ Returns the centered position of a cell in the **TileMapLayer**'s local coordina
 
 |void| **notify_runtime_tile_data_update**\ (\ ) :ref:`🔗<class_TileMapLayer_method_notify_runtime_tile_data_update>`
 
-Notifies the **TileMapLayer** node that calls to :ref:`_use_tile_data_runtime_update()<class_TileMapLayer_private_method__use_tile_data_runtime_update>` or :ref:`_tile_data_runtime_update()<class_TileMapLayer_private_method__tile_data_runtime_update>` will lead to different results. This will thus trigger a **TileMapLayer** update.
+通知 **TileMapLayer** 节点调用 :ref:`_use_tile_data_runtime_update()<class_TileMapLayer_private_method__use_tile_data_runtime_update>` 或 :ref:`_tile_data_runtime_update()<class_TileMapLayer_private_method__tile_data_runtime_update>` 会得到不同的结果，继而触发 **TileMapLayer** 的更新。
 
-\ **Warning:** Updating the **TileMapLayer** is computationally expensive and may impact performance. Try to limit the number of calls to this function to avoid unnecessary update.
+\ **警告：**\ 更新 **TileMapLayer** 的计算成本很高，并且可能会影响性能。尝试限制该函数的调用次数，以避免不必要的更新。
 
-\ **Note:** This does not trigger a direct update of the **TileMapLayer**, the update will be done at the end of the frame as usual (unless you call :ref:`update_internals()<class_TileMapLayer_method_update_internals>`).
+\ **注意：**\ 这不会触发 **TileMapLayer** 的直接更新，该更新将照常在帧结束时完成（除非你调用 :ref:`update_internals()<class_TileMapLayer_method_update_internals>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -822,15 +822,15 @@ Notifies the **TileMapLayer** node that calls to :ref:`_use_tile_data_runtime_up
 
 |void| **set_cell**\ (\ coords\: :ref:`Vector2i<class_Vector2i>`, source_id\: :ref:`int<class_int>` = -1, atlas_coords\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1), alternative_tile\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TileMapLayer_method_set_cell>`
 
-Sets the tile identifiers for the cell at coordinates ``coords``. Each tile of the :ref:`TileSet<class_TileSet>` is identified using three parts:
+设置坐标为 ``coords`` 的单元格的图块标识符。\ :ref:`TileSet<class_TileSet>` 中的每个图块都由三部分进行标识：
 
-- The source identifier ``source_id`` identifies a :ref:`TileSetSource<class_TileSetSource>` identifier. See :ref:`TileSet.set_source_id()<class_TileSet_method_set_source_id>`,
+- 源标识符 ``source_id`` 标识的是 :ref:`TileSetSource<class_TileSetSource>` 标识符。见 :ref:`TileSet.set_source_id()<class_TileSet_method_set_source_id>`\ ，
 
-- The atlas coordinate identifier ``atlas_coords`` identifies a tile coordinates in the atlas (if the source is a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`). For :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>` it should always be ``Vector2i(0, 0)``,
+- 图集坐标标识符 ``atlas_coords`` 标识的是图集中的图块坐标（如果使用的是 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 源）。如果使用的是 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`\ ，应该始终为 ``Vector2i(0, 0)``\ ，
 
-- The alternative tile identifier ``alternative_tile`` identifies a tile alternative in the atlas (if the source is a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`), and the scene for a :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`.
+- 备选图块标识符 ``alternative_tile`` 标识的是图集中的图块备选项（如果使用的是 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>` 源），如果使用的是 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>` 则标识的是场景。
 
-If ``source_id`` is set to ``-1``, ``atlas_coords`` to ``Vector2i(-1, -1)``, or ``alternative_tile`` to ``-1``, the cell will be erased. An erased cell gets **all** its identifiers automatically set to their respective invalid values, namely ``-1``, ``Vector2i(-1, -1)`` and ``-1``.
+如果 ``source_id`` 为 ``-1``\ 、\ ``atlas_coords`` 为 ``Vector2i(-1, -1)`` 或 ``alternative_tile`` 为 ``-1``\ ，则会擦除该单元格。擦除后的单元格中，\ **所有**\ 标识符都会自动设为对应的无效值，即 ``-1``\ 、\ ``Vector2i(-1, -1)`` 和 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -842,11 +842,11 @@ If ``source_id`` is set to ``-1``, ``atlas_coords`` to ``Vector2i(-1, -1)``, or 
 
 |void| **set_cells_terrain_connect**\ (\ cells\: :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\], terrain_set\: :ref:`int<class_int>`, terrain\: :ref:`int<class_int>`, ignore_empty_terrains\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TileMapLayer_method_set_cells_terrain_connect>`
 
-Update all the cells in the ``cells`` coordinates array so that they use the given ``terrain`` for the given ``terrain_set``. If an updated cell has the same terrain as one of its neighboring cells, this function tries to join the two. This function might update neighboring tiles if needed to create correct terrain transitions.
+更新 ``cells`` 坐标数组中的所有单元格，以便它们将给定的 ``terrain`` 用于给定的 ``terrain_set``\ 。如果一个更新的单元格与其相邻单元格之一具有相同的地形，则该函数会尝试将两者连接起来。如果需要创建正确的地形过渡，该函数可能会更新相邻的图块。
 
-If ``ignore_empty_terrains`` is ``true``, empty terrains will be ignored when trying to find the best fitting tile for the given terrain constraints.
+如果 ``ignore_empty_terrains`` 为 ``true``\ ，则在尝试为给定地形约束找到最合适的图块时，空地形将被忽略。
 
-\ **Note:** To work correctly, this method requires the **TileMapLayer**'s TileSet to have terrains set up with all required terrain combinations. Otherwise, it may produce unexpected results.
+\ **注意：**\ 要正常工作，这个方法需要 TileMap 的 TileSet 设置了具有所有必需地形组合的地形。否则，可能会产生意想不到的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -858,11 +858,11 @@ If ``ignore_empty_terrains`` is ``true``, empty terrains will be ignored when tr
 
 |void| **set_cells_terrain_path**\ (\ path\: :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\], terrain_set\: :ref:`int<class_int>`, terrain\: :ref:`int<class_int>`, ignore_empty_terrains\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TileMapLayer_method_set_cells_terrain_path>`
 
-Update all the cells in the ``path`` coordinates array so that they use the given ``terrain`` for the given ``terrain_set``. The function will also connect two successive cell in the path with the same terrain. This function might update neighboring tiles if needed to create correct terrain transitions.
+更新 ``path`` 坐标数组中的所有单元格，以便它们将给定的 ``terrain`` 用于给定的 ``terrain_set``\ 。该函数还将连接路径中具有相同地形的两个连续单元格。如果需要创建正确的地形过渡，该函数可能会更新相邻的图块。
 
-If ``ignore_empty_terrains`` is ``true``, empty terrains will be ignored when trying to find the best fitting tile for the given terrain constraints.
+如果 ``ignore_empty_terrains`` 为 ``true``\ ，则在尝试为给定地形约束找到最合适的图块时将忽略空地形。
 
-\ **Note:** To work correctly, this method requires the **TileMapLayer**'s TileSet to have terrains set up with all required terrain combinations. Otherwise, it may produce unexpected results.
+\ **注意：**\ 要正常工作，这个方法需要 TileMap 的 TileSet 设置了具有所有必需地形组合的地形。否则，可能会产生意想不到的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -874,7 +874,7 @@ If ``ignore_empty_terrains`` is ``true``, empty terrains will be ignored when tr
 
 |void| **set_navigation_map**\ (\ map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TileMapLayer_method_set_navigation_map>`
 
-Sets a custom ``map`` as a :ref:`NavigationServer2D<class_NavigationServer2D>` navigation map. If not set, uses the default :ref:`World2D<class_World2D>` navigation map instead.
+将自定义 ``map`` 设置为 :ref:`NavigationServer2D<class_NavigationServer2D>` 导航地图。如果未设置，则改用默认的 :ref:`World2D<class_World2D>` 导航地图。
 
 .. rst-class:: classref-item-separator
 
@@ -886,7 +886,7 @@ Sets a custom ``map`` as a :ref:`NavigationServer2D<class_NavigationServer2D>` n
 
 |void| **set_pattern**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, pattern\: :ref:`TileMapPattern<class_TileMapPattern>`\ ) :ref:`🔗<class_TileMapLayer_method_set_pattern>`
 
-Pastes the :ref:`TileMapPattern<class_TileMapPattern>` at the given ``position`` in the tile map. See also :ref:`get_pattern()<class_TileMapLayer_method_get_pattern>`.
+将给定的 :ref:`TileMapPattern<class_TileMapPattern>` 粘贴到图块地图中的 ``position`` 位置。另见 :ref:`get_pattern()<class_TileMapLayer_method_get_pattern>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -898,18 +898,18 @@ Pastes the :ref:`TileMapPattern<class_TileMapPattern>` at the given ``position``
 
 |void| **update_internals**\ (\ ) :ref:`🔗<class_TileMapLayer_method_update_internals>`
 
-Triggers a direct update of the **TileMapLayer**. Usually, calling this function is not needed, as **TileMapLayer** node updates automatically when one of its properties or cells is modified.
+触发 **TileMapLayer** 的更新。通常不需要调用这个函数，因为 **TileMapLayer** 节点的属性发生修改后会自动更新。
 
-However, for performance reasons, those updates are batched and delayed to the end of the frame. Calling this function will force the **TileMapLayer** to update right away instead.
+但是出于性能原因，会对这些更新进行分批，延迟到该帧的末尾执行。调用这个函数会强制 **TileMapLayer** 立即进行更新。
 
-\ **Warning:** Updating the **TileMapLayer** is computationally expensive and may impact performance. Try to limit the number of updates and how many tiles they impact.
+\ **警告：**\ 更新 **TileMapLayer** 的计算量很大，可能会影响性能。请尽量限制更新的次数和受影响的图块。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

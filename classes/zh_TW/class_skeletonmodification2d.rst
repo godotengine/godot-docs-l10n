@@ -5,27 +5,27 @@
 SkeletonModification2D
 ======================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SkeletonModification2DCCDIK<class_SkeletonModification2DCCDIK>`, :ref:`SkeletonModification2DFABRIK<class_SkeletonModification2DFABRIK>`, :ref:`SkeletonModification2DJiggle<class_SkeletonModification2DJiggle>`, :ref:`SkeletonModification2DLookAt<class_SkeletonModification2DLookAt>`, :ref:`SkeletonModification2DPhysicalBones<class_SkeletonModification2DPhysicalBones>`, :ref:`SkeletonModification2DStackHolder<class_SkeletonModification2DStackHolder>`, :ref:`SkeletonModification2DTwoBoneIK<class_SkeletonModification2DTwoBoneIK>`
+**被繼承：** :ref:`SkeletonModification2DCCDIK<class_SkeletonModification2DCCDIK>`, :ref:`SkeletonModification2DFABRIK<class_SkeletonModification2DFABRIK>`, :ref:`SkeletonModification2DJiggle<class_SkeletonModification2DJiggle>`, :ref:`SkeletonModification2DLookAt<class_SkeletonModification2DLookAt>`, :ref:`SkeletonModification2DPhysicalBones<class_SkeletonModification2DPhysicalBones>`, :ref:`SkeletonModification2DStackHolder<class_SkeletonModification2DStackHolder>`, :ref:`SkeletonModification2DTwoBoneIK<class_SkeletonModification2DTwoBoneIK>`
 
-Base class for resources that operate on :ref:`Bone2D<class_Bone2D>`\ s in a :ref:`Skeleton2D<class_Skeleton2D>`.
+對 :ref:`Skeleton2D<class_Skeleton2D>` 中的 :ref:`Bone2D<class_Bone2D>` 進行操作的資源的基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This resource provides an interface that can be expanded so code that operates on :ref:`Bone2D<class_Bone2D>` nodes in a :ref:`Skeleton2D<class_Skeleton2D>` can be mixed and matched together to create complex interactions.
+該資源提供了一個可以擴充的介面，因此在 :ref:`Skeleton2D<class_Skeleton2D>` 中的 :ref:`Bone2D<class_Bone2D>` 節點上運作的程式碼可以被混合並配對在一起，以建立複雜的互動。
 
-This is used to provide Godot with a flexible and powerful Inverse Kinematics solution that can be adapted for many different uses.
+這用於為 Godot 提供一套靈活而強大的反向運動學解決方案，該解決方案可以適用許多不同的用途。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SkeletonModification2D_property_enabled:
 
@@ -84,7 +84,7 @@ Property Descriptions
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-If ``true``, the modification's :ref:`_execute()<class_SkeletonModification2D_private_method__execute>` function will be called by the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`.
+如果為 ``true``\ ，則該修改器的 :ref:`_execute()<class_SkeletonModification2D_private_method__execute>` 函式將被該 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` 呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ If ``true``, the modification's :ref:`_execute()<class_SkeletonModification2D_pr
 - |void| **set_execution_mode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_execution_mode**\ (\ )
 
-The execution mode for the modification. This tells the modification stack when to execute the modification. Some modifications have settings that are only available in certain execution modes.
+修改器的執行模式。會告訴修改器堆疊何時執行該修改器。某修修改器存在只能在特定執行模式下可用的設定。
 
 .. rst-class:: classref-section-separator
 
@@ -109,8 +109,8 @@ The execution mode for the modification. This tells the modification stack when 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SkeletonModification2D_private_method__draw_editor_gizmo:
 
@@ -118,9 +118,9 @@ Method Descriptions
 
 |void| **_draw_editor_gizmo**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModification2D_private_method__draw_editor_gizmo>`
 
-Used for drawing **editor-only** modification gizmos. This function will only be called in the Godot editor and can be overridden to draw custom gizmos.
+用於繪製\ **編輯器專用**\ 的修改器小工具。此函式只會在 Godot 編輯器中呼叫，並且可以被覆蓋，來繪製自訂小工具。
 
-\ **Note:** You will need to use the Skeleton2D from :ref:`SkeletonModificationStack2D.get_skeleton()<class_SkeletonModificationStack2D_method_get_skeleton>` and it's draw functions, as the **SkeletonModification2D** resource cannot draw on its own.
+\ **注意：**\ 你需要使用來自 :ref:`SkeletonModificationStack2D.get_skeleton()<class_SkeletonModificationStack2D_method_get_skeleton>` 的 Skeleton2D 及其繪製函式，因為 **SkeletonModification2D** 資源本身無法進行繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Used for drawing **editor-only** modification gizmos. This function will only be
 
 |void| **_execute**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_SkeletonModification2D_private_method__execute>`
 
-Executes the given modification. This is where the modification performs whatever function it is designed to do.
+執行給定的修改器。修改器在此時執行應執行的函式。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Executes the given modification. This is where the modification performs whateve
 
 |void| **_setup_modification**\ (\ modification_stack\: :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ ) |virtual| :ref:`🔗<class_SkeletonModification2D_private_method__setup_modification>`
 
-Called when the modification is setup. This is where the modification performs initialization.
+安裝修改器時呼叫。修改器在此時執行初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Called when the modification is setup. This is where the modification performs i
 
 :ref:`float<class_float>` **clamp_angle**\ (\ angle\: :ref:`float<class_float>`, min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`, invert\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2D_method_clamp_angle>`
 
-Takes an angle and clamps it so it is within the passed-in ``min`` and ``max`` range. ``invert`` will inversely clamp the angle, clamping it to the range outside of the given bounds.
+接受角度並將其鉗制在傳入的 ``min`` 和 ``max`` 範圍內。\ ``invert`` 會逆向鉗制該角度，將其鉗制在給定範圍之外。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Takes an angle and clamps it so it is within the passed-in ``min`` and ``max`` r
 
 :ref:`bool<class_bool>` **get_editor_draw_gizmo**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2D_method_get_editor_draw_gizmo>`
 
-Returns whether this modification will call :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` in the Godot editor to draw modification-specific gizmos.
+返回這個修改器是否會在 Godot 編輯器中呼叫 :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` 繪製針對修改器的小工具。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Returns whether this modification will call :ref:`_draw_editor_gizmo()<class_Ske
 
 :ref:`bool<class_bool>` **get_is_setup**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2D_method_get_is_setup>`
 
-Returns whether this modification has been successfully setup or not.
+返回此修改器是否已被成功安裝。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Returns whether this modification has been successfully setup or not.
 
 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` **get_modification_stack**\ (\ ) :ref:`🔗<class_SkeletonModification2D_method_get_modification_stack>`
 
-Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` that this modification is bound to. Through the modification stack, you can access the Skeleton2D the modification is operating on.
+返回該修改器綁定的 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。你可以通過這個修改器堆疊來訪問修改器所操作的 Skeleton2D。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>
 
 |void| **set_editor_draw_gizmo**\ (\ draw_gizmo\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2D_method_set_editor_draw_gizmo>`
 
-Sets whether this modification will call :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` in the Godot editor to draw modification-specific gizmos.
+設定這個修改器是否會在 Godot 編輯器中呼叫 :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` 繪製針對修改器的小工具。
 
 .. rst-class:: classref-item-separator
 
@@ -216,14 +216,14 @@ Sets whether this modification will call :ref:`_draw_editor_gizmo()<class_Skelet
 
 |void| **set_is_setup**\ (\ is_setup\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2D_method_set_is_setup>`
 
-Manually allows you to set the setup state of the modification. This function should only rarely be used, as the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` the modification is bound to should handle setting the modification up.
+允許你手動設定該修改器的安裝狀態。這個函式應很少使用，因為該修改器所綁定的 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` 應該對該修改器進行安裝。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

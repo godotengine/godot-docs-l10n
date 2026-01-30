@@ -5,32 +5,32 @@
 GridContainer
 =============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A container that arranges its child controls in a grid layout.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**GridContainer** arranges its child controls in a grid layout. The number of columns is specified by the :ref:`columns<class_GridContainer_property_columns>` property, whereas the number of rows depends on how many are needed for the child controls. The number of rows and columns is preserved for every size of the container.
-
-\ **Note:** **GridContainer** only works with child nodes inheriting from :ref:`Control<class_Control>`. It won't rearrange child nodes inheriting from :ref:`Node2D<class_Node2D>`.
+将子控件按照网格布局排列的容器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using Containers <../tutorials/ui/gui_containers>`
+**GridContainer** 会将其子控件按照网格布局排列。网格的列数由 :ref:`columns<class_GridContainer_property_columns>` 属性指定，行数取决于容器中子控件的数量。将保留每个大小的容器的列和行。
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+\ **注意：**\ **GridContainer** 只对继承自 :ref:`Control<class_Control>` 的子节点生效。它不会重新排列继承自 :ref:`Node2D<class_Node2D>` 的子节点。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用容器 <../tutorials/ui/gui_containers>`
+
+- `操作系统测试演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GridContainer_property_columns:
 
@@ -73,7 +73,7 @@ Property Descriptions
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-The number of columns in the **GridContainer**. If modified, **GridContainer** reorders its Control-derived children to accommodate the new layout.
+**GridContainer** 中的列数。修改后，\ **GridContainer** 会重新排列其派生自 Control 的子节点，以适应新的布局。
 
 .. rst-class:: classref-section-separator
 
@@ -81,8 +81,8 @@ The number of columns in the **GridContainer**. If modified, **GridContainer** r
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_GridContainer_theme_constant_h_separation:
 
@@ -90,7 +90,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_GridContainer_theme_constant_h_separation>`
 
-The horizontal separation of child nodes.
+子节点的水平分隔量。
 
 .. rst-class:: classref-item-separator
 
@@ -102,14 +102,14 @@ The horizontal separation of child nodes.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_GridContainer_theme_constant_v_separation>`
 
-The vertical separation of child nodes.
+子节点的垂直分隔量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

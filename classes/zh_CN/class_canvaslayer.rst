@@ -5,40 +5,40 @@
 CanvasLayer
 ===========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`ParallaxBackground<class_ParallaxBackground>`
+**派生：** :ref:`ParallaxBackground<class_ParallaxBackground>`
 
-A node used for independent rendering of objects within a 2D scene.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-:ref:`CanvasItem<class_CanvasItem>`-derived nodes that are direct or indirect children of a **CanvasLayer** will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index ``0``, so a **CanvasLayer** with index ``-1`` will be drawn below, and a **CanvasLayer** with index ``1`` will be drawn above. This order will hold regardless of the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` of the nodes within each layer.
-
-\ **CanvasLayer**\ s can be hidden and they can also optionally follow the viewport. This makes them useful for HUDs like health bar overlays (on layers ``1`` and higher) or backgrounds (on layers ``-1`` and lower).
-
-\ **Note:** Embedded :ref:`Window<class_Window>`\ s are placed on layer ``1024``. :ref:`CanvasItem<class_CanvasItem>`\ s on layers ``1025`` and higher appear in front of embedded windows.
-
-\ **Note:** Each **CanvasLayer** is drawn on one specific :ref:`Viewport<class_Viewport>` and cannot be shared between multiple :ref:`Viewport<class_Viewport>`\ s, see :ref:`custom_viewport<class_CanvasLayer_property_custom_viewport>`. When using multiple :ref:`Viewport<class_Viewport>`\ s, for example in a split-screen game, you need to create an individual **CanvasLayer** for each :ref:`Viewport<class_Viewport>` you want it to be drawn on.
+用于 2D 场景中的对象的独立渲染的节点。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+**CanvasLayer** 的直接或间接子节点中，派生自 :ref:`CanvasItem<class_CanvasItem>` 的节点会在该图层中进行绘制。图层是定义绘制顺序的数字索引。默认 2D 场景使用的索引为 ``0``\ ，因此索引为 ``-1`` 的 **CanvasLayer** 会在下方绘制，而索引为 ``1`` 的 **CanvasLayer** 会在上方绘制。无论节点在图层中的 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 是多少，这一顺序都成立。
 
-- :doc:`Canvas layers <../tutorials/2d/canvas_layers>`
+\ **CanvasLayer** 可以隐藏，也可以跟随视口。因此常用于血条等 HUD（位于 ``1`` 或更高的图层上）和背景（位于 ``-1`` 或更低的图层上）。
 
-- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
+\ **注意：**\ 嵌入式 :ref:`Window<class_Window>` 位于 ``1024`` 图层。位于 ``1025`` 或更高图层的 :ref:`CanvasItem<class_CanvasItem>` 会显示在嵌入式窗口之上。
+
+\ **注意：**\ 每个 **CanvasLayer** 都是在一个特定的 :ref:`Viewport<class_Viewport>` 中绘制的，不能在多个 :ref:`Viewport<class_Viewport>` 之间共享，见 :ref:`custom_viewport<class_CanvasLayer_property_custom_viewport>`\ 。使用多个 :ref:`Viewport<class_Viewport>` 时，例如分屏游戏中，你需要为每个想要绘制的 :ref:`Viewport<class_Viewport>` 创建一个单独的 **CanvasLayer**\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`Viewport 和画布变换 <../tutorials/2d/2d_transforms>`
+
+- :doc:`画布层 <../tutorials/2d/canvas_layers>`
+
+- `2D Dodge The Creeps 演示 <https://godotengine.org/asset-library/asset/2712>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -87,8 +87,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CanvasLayer_signal_visibility_changed:
 
@@ -96,7 +96,7 @@ Signals
 
 **visibility_changed**\ (\ ) :ref:`🔗<class_CanvasLayer_signal_visibility_changed>`
 
-Emitted when visibility of the layer is changed. See :ref:`visible<class_CanvasLayer_property_visible>`.
+当该层的可见性发生变化时触发。请参阅 :ref:`visible<class_CanvasLayer_property_visible>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -104,8 +104,8 @@ Emitted when visibility of the layer is changed. See :ref:`visible<class_CanvasL
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CanvasLayer_property_custom_viewport:
 
@@ -118,7 +118,7 @@ Property Descriptions
 - |void| **set_custom_viewport**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_custom_viewport**\ (\ )
 
-The custom :ref:`Viewport<class_Viewport>` node assigned to the **CanvasLayer**. If ``null``, uses the default viewport instead.
+分配给该 **CanvasLayer** 的自定义 :ref:`Viewport<class_Viewport>` 节点。如果为 ``null``\ ，则使用默认的视口。
 
 .. rst-class:: classref-item-separator
 
@@ -135,9 +135,9 @@ The custom :ref:`Viewport<class_Viewport>` node assigned to the **CanvasLayer**.
 - |void| **set_follow_viewport**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_following_viewport**\ (\ )
 
-If enabled, the **CanvasLayer** maintains its position in world space. If disabled, the **CanvasLayer** stays in a fixed position on the screen.
+启用时，\ **CanvasLayer** 会保持在世界空间中的位置。禁用时，\ **CanvasLayer** 会保持在屏幕上的某个固定位置。
 
-Together with :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>`, this can be used for a pseudo-3D effect.
+与 :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>` 配合可以实现伪 3D 效果。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Together with :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_view
 - |void| **set_follow_viewport_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_follow_viewport_scale**\ (\ )
 
-Scales the layer when using :ref:`follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>`. Layers moving into the foreground should have increasing scales, while layers moving into the background should have decreasing scales.
+使用 :ref:`follow_viewport_enabled<class_CanvasLayer_property_follow_viewport_enabled>` 时缩放图层。移入到前景的图层应具有增加的缩放，而移入到背景的图层应具有减小的缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -171,11 +171,11 @@ Scales the layer when using :ref:`follow_viewport_enabled<class_CanvasLayer_prop
 - |void| **set_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer**\ (\ )
 
-Layer index for draw order. Lower values are drawn behind higher values.
+画布层的索引，用于确定绘制顺序。索引值小的画布层绘制在索引值大的画布层后面。
 
-\ **Note:** If multiple CanvasLayers have the same layer index, :ref:`CanvasItem<class_CanvasItem>` children of one CanvasLayer are drawn behind the :ref:`CanvasItem<class_CanvasItem>` children of the other CanvasLayer. Which CanvasLayer is drawn in front is non-deterministic.
+\ **注意：**\ 如果多个 CanvasLayer 的画布层索引相同，一个 CanvasLayer 的 :ref:`CanvasItem<class_CanvasItem>` 子节点都会绘制在另一个 CanvasLayer 的 :ref:`CanvasItem<class_CanvasItem>` 子节点之后。哪个 CanvasLayer 画在前面并不一定。
 
-\ **Note:** The layer index should be between :ref:`RenderingServer.CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` and :ref:`RenderingServer.CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` (inclusive). Any other value will wrap around.
+\ **注意：**\ 画布层索引应当在 :ref:`RenderingServer.CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` 和 :ref:`RenderingServer.CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` 之间（含两端）。其他值都会发生环绕。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Layer index for draw order. Lower values are drawn behind higher values.
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The layer's base offset.
+图层的基本偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The layer's base offset.
 - |void| **set_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation**\ (\ )
 
-The layer's rotation in radians.
+图层的旋转弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ The layer's rotation in radians.
 - |void| **set_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scale**\ (\ )
 
-The layer's scale.
+图层的缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ The layer's scale.
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-The layer's transform.
+图层的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -260,9 +260,9 @@ The layer's transform.
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-If ``false``, any :ref:`CanvasItem<class_CanvasItem>` under this **CanvasLayer** will be hidden.
+为 ``false`` 时，该 **CanvasLayer** 下的所有 :ref:`CanvasItem<class_CanvasItem>` 都会被隐藏。
 
-Unlike :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`, visibility of a **CanvasLayer** isn't propagated to underlying layers.
+与 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 不同，\ **CanvasLayer** 的显示与否不会传播到其内部的层。
 
 .. rst-class:: classref-section-separator
 
@@ -270,8 +270,8 @@ Unlike :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`, visibility 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CanvasLayer_method_get_canvas:
 
@@ -279,7 +279,7 @@ Method Descriptions
 
 :ref:`RID<class_RID>` **get_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_canvas>`
 
-Returns the RID of the canvas used by this layer.
+返回此层使用的画布的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Returns the RID of the canvas used by this layer.
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_CanvasLayer_method_get_final_transform>`
 
-Returns the transform from the **CanvasLayer**\ s coordinate system to the :ref:`Viewport<class_Viewport>`\ s coordinate system.
+返回从 **CanvasLayer** 坐标系到 :ref:`Viewport<class_Viewport>` 坐标系的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Returns the transform from the **CanvasLayer**\ s coordinate system to the :ref:
 
 |void| **hide**\ (\ ) :ref:`🔗<class_CanvasLayer_method_hide>`
 
-Hides any :ref:`CanvasItem<class_CanvasItem>` under this **CanvasLayer**. This is equivalent to setting :ref:`visible<class_CanvasLayer_property_visible>` to ``false``.
+隐藏该 **CanvasLayer** 下的所有 :ref:`CanvasItem<class_CanvasItem>`\ 。相当于将 :ref:`visible<class_CanvasLayer_property_visible>` 设为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -315,14 +315,14 @@ Hides any :ref:`CanvasItem<class_CanvasItem>` under this **CanvasLayer**. This i
 
 |void| **show**\ (\ ) :ref:`🔗<class_CanvasLayer_method_show>`
 
-Shows any :ref:`CanvasItem<class_CanvasItem>` under this **CanvasLayer**. This is equivalent to setting :ref:`visible<class_CanvasLayer_property_visible>` to ``true``.
+显示该 **CanvasLayer** 下的所有 :ref:`CanvasItem<class_CanvasItem>`\ 。相当于将 :ref:`visible<class_CanvasLayer_property_visible>` 设为 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

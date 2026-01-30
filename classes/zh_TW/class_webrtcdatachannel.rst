@@ -5,9 +5,9 @@
 WebRTCDataChannel
 =================
 
-**Inherits:** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`WebRTCDataChannelExtension<class_WebRTCDataChannelExtension>`
+**被繼承：** :ref:`WebRTCDataChannelExtension<class_WebRTCDataChannelExtension>`
 
 .. container:: contribute
 
@@ -15,8 +15,8 @@ WebRTCDataChannel
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -27,8 +27,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_WebRTCDataChannel_WriteMode:
 
@@ -80,7 +80,7 @@ enum **WriteMode**: :ref:`🔗<enum_WebRTCDataChannel_WriteMode>`
 
 :ref:`WriteMode<enum_WebRTCDataChannel_WriteMode>` **WRITE_MODE_TEXT** = ``0``
 
-Tells the channel to send data over this channel as text. An external peer (non-Godot) would receive this as a string.
+告訴通道以文字形式在這個通道上發送資料。外部對等體（非 Godot）會以字串的形式接收。
 
 .. _class_WebRTCDataChannel_constant_WRITE_MODE_BINARY:
 
@@ -88,7 +88,7 @@ Tells the channel to send data over this channel as text. An external peer (non-
 
 :ref:`WriteMode<enum_WebRTCDataChannel_WriteMode>` **WRITE_MODE_BINARY** = ``1``
 
-Tells the channel to send data over this channel as binary. An external peer (non-Godot) would receive this as array buffer or blob.
+告訴通道以二進位形式在此通道上發送資料。外部對等體（非 Godot）將以陣列緩衝區或 blob 的形式接收。
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +106,7 @@ enum **ChannelState**: :ref:`🔗<enum_WebRTCDataChannel_ChannelState>`
 
 :ref:`ChannelState<enum_WebRTCDataChannel_ChannelState>` **STATE_CONNECTING** = ``0``
 
-The channel was created, but it's still trying to connect.
+通道已經建立，但它仍在嘗試連接。
 
 .. _class_WebRTCDataChannel_constant_STATE_OPEN:
 
@@ -114,7 +114,7 @@ The channel was created, but it's still trying to connect.
 
 :ref:`ChannelState<enum_WebRTCDataChannel_ChannelState>` **STATE_OPEN** = ``1``
 
-The channel is currently open, and data can flow over it.
+該通道目前是打開的，資料可以在其上流動。
 
 .. _class_WebRTCDataChannel_constant_STATE_CLOSING:
 
@@ -122,7 +122,7 @@ The channel is currently open, and data can flow over it.
 
 :ref:`ChannelState<enum_WebRTCDataChannel_ChannelState>` **STATE_CLOSING** = ``2``
 
-The channel is being closed, no new messages will be accepted, but those already in queue will be flushed.
+通道正在關閉，將不接受新的消息，但已經在佇列中的消息將被更新。
 
 .. _class_WebRTCDataChannel_constant_STATE_CLOSED:
 
@@ -130,7 +130,7 @@ The channel is being closed, no new messages will be accepted, but those already
 
 :ref:`ChannelState<enum_WebRTCDataChannel_ChannelState>` **STATE_CLOSED** = ``3``
 
-The channel was closed, or connection failed.
+通道已關閉，或連接失敗。
 
 .. rst-class:: classref-section-separator
 
@@ -138,8 +138,8 @@ The channel was closed, or connection failed.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_WebRTCDataChannel_property_write_mode:
 
@@ -152,7 +152,7 @@ Property Descriptions
 - |void| **set_write_mode**\ (\ value\: :ref:`WriteMode<enum_WebRTCDataChannel_WriteMode>`\ )
 - :ref:`WriteMode<enum_WebRTCDataChannel_WriteMode>` **get_write_mode**\ (\ )
 
-The transfer mode to use when sending outgoing packet. Either text or binary.
+發送出去封包時要使用的傳輸模式。可以是文字或二進位。
 
 .. rst-class:: classref-section-separator
 
@@ -160,8 +160,8 @@ The transfer mode to use when sending outgoing packet. Either text or binary.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_WebRTCDataChannel_method_close:
 
@@ -169,7 +169,7 @@ Method Descriptions
 
 |void| **close**\ (\ ) :ref:`🔗<class_WebRTCDataChannel_method_close>`
 
-Closes this data channel, notifying the other peer.
+關閉此資料通道，通知另一個對等體。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Closes this data channel, notifying the other peer.
 
 :ref:`int<class_int>` **get_buffered_amount**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_buffered_amount>`
 
-Returns the number of bytes currently queued to be sent over this channel.
+返回目前排隊在此通道上發送的位元組數。
 
 .. rst-class:: classref-item-separator
 
@@ -193,9 +193,9 @@ Returns the number of bytes currently queued to be sent over this channel.
 
 :ref:`int<class_int>` **get_id**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_id>`
 
-Returns the ID assigned to this channel during creation (or auto-assigned during negotiation).
+返回建立時分配給該通道的 ID（或是在協商時自動分配的）。
 
-If the channel is not negotiated out-of-band the ID will only be available after the connection is established (will return ``65535`` until then).
+如果該通道沒有進行帶外協商，那麼該 ID 將只在連接建立後可用（在此之前將返回 ``65535``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ If the channel is not negotiated out-of-band the ID will only be available after
 
 :ref:`String<class_String>` **get_label**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_label>`
 
-Returns the label assigned to this channel during creation.
+返回建立時分配給該通道的標籤。
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ Returns the label assigned to this channel during creation.
 
 :ref:`int<class_int>` **get_max_packet_life_time**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_max_packet_life_time>`
 
-Returns the ``maxPacketLifeTime`` value assigned to this channel during creation.
+返回建立時分配給這個通道的 ``maxPacketLifeTime`` 值。
 
-Will be ``65535`` if not specified.
+如果沒有指定，將是 ``65535``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -233,9 +233,9 @@ Will be ``65535`` if not specified.
 
 :ref:`int<class_int>` **get_max_retransmits**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_max_retransmits>`
 
-Returns the ``maxRetransmits`` value assigned to this channel during creation.
+返回建立時分配給這個通道的 ``maxRetransmits`` 值。
 
-Will be ``65535`` if not specified.
+如果沒有指定，將是 ``65535``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Will be ``65535`` if not specified.
 
 :ref:`String<class_String>` **get_protocol**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_get_protocol>`
 
-Returns the sub-protocol assigned to this channel during creation. An empty string if not specified.
+返回建立時分配給這個通道的子協議。如果沒有指定，則為空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Returns the current state of this channel.
 
 :ref:`bool<class_bool>` **is_negotiated**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_is_negotiated>`
 
-Returns ``true`` if this channel was created with out-of-band configuration.
+如果這個通道是用帶外配置建立的，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Returns ``true`` if this channel was created with out-of-band configuration.
 
 :ref:`bool<class_bool>` **is_ordered**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_is_ordered>`
 
-Returns ``true`` if this channel was created with ordering enabled (default).
+如果這個通道在建立時啟用了排序功能，則預設返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ Returns ``true`` if this channel was created with ordering enabled (default).
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_WebRTCDataChannel_method_poll>`
 
-Reserved, but not used for now.
+保留，目前未使用。
 
 .. rst-class:: classref-item-separator
 
@@ -307,14 +307,14 @@ Reserved, but not used for now.
 
 :ref:`bool<class_bool>` **was_string_packet**\ (\ ) |const| :ref:`🔗<class_WebRTCDataChannel_method_was_string_packet>`
 
-Returns ``true`` if the last received packet was transferred as text. See :ref:`write_mode<class_WebRTCDataChannel_property_write_mode>`.
+如果最後收到的封包是以文字形式傳輸，則返回 ``true``\ 。見 :ref:`write_mode<class_WebRTCDataChannel_property_write_mode>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

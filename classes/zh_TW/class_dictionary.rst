@@ -5,12 +5,12 @@
 Dictionary
 ==========
 
-A built-in data structure that holds key-value pairs.
+包含鍵值對的內建資料結構。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Dictionaries are associative containers that contain values referenced by unique keys. Dictionaries will preserve the insertion order when adding new entries. In other programming languages, this data structure is often referred to as a hash map or an associative array.
 
@@ -225,23 +225,23 @@ To enforce a certain type for keys and values, you can create a *typed dictionar
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `GDScript basics: Dictionary <../tutorials/scripting/gdscript/gdscript_basics.html#dictionary>`__
+- `GDScript 基礎：字典 <../tutorials/scripting/gdscript/gdscript_basics.html#dictionary>`__
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
 - `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -256,8 +256,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -334,8 +334,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -354,8 +354,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_Dictionary_constructor_Dictionary:
 
@@ -363,7 +363,7 @@ Constructor Descriptions
 
 :ref:`Dictionary<class_Dictionary>` **Dictionary**\ (\ ) :ref:`🔗<class_Dictionary_constructor_Dictionary>`
 
-Constructs an empty **Dictionary**.
+建構空的 **Dictionary**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Creates a typed dictionary from the ``base`` dictionary. A typed dictionary can 
 
 :ref:`Dictionary<class_Dictionary>` **Dictionary**\ (\ from\: :ref:`Dictionary<class_Dictionary>`\ )
 
-Returns the same dictionary as ``from``. If you need a copy of the dictionary, use :ref:`duplicate()<class_Dictionary_method_duplicate>`.
+返回與 ``from`` 相同的字典。如果你需要該字典的副本，請使用 :ref:`duplicate()<class_Dictionary_method_duplicate>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -391,8 +391,8 @@ Returns the same dictionary as ``from``. If you need a copy of the dictionary, u
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Dictionary_method_assign:
 
@@ -412,7 +412,7 @@ Assigns elements of another ``dictionary`` into the dictionary. Resizes the dict
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Dictionary_method_clear>`
 
-Clears the dictionary, removing all entries from it.
+清空該字典，移除其中的所有條目。
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_meth
 
 :ref:`bool<class_bool>` **erase**\ (\ key\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_method_erase>`
 
-Removes the dictionary entry by key, if it exists. Returns ``true`` if the given ``key`` existed in the dictionary, otherwise ``false``.
+如果字典中存在與鍵對應的條目，則將其移除。如果給定的鍵 ``key`` 在字典中存在，則返回 ``true`` ，否則返回 ``false`` 。
 
-\ **Note:** Do not erase entries while iterating over the dictionary. You can iterate over the :ref:`keys()<class_Dictionary_method_keys>` array instead.
+\ **注意：**\ 請勿在走訪字典時擦除條目。你可以改為走訪 :ref:`keys()<class_Dictionary_method_keys>` 陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -468,9 +468,9 @@ Removes the dictionary entry by key, if it exists. Returns ``true`` if the given
 
 :ref:`Variant<class_Variant>` **find_key**\ (\ value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_Dictionary_method_find_key>`
 
-Finds and returns the first key whose associated value is equal to ``value``, or ``null`` if it is not found.
+找到並返回關聯值等於 ``value`` 的第一個鍵，如果沒有找到，則返回 ``null``\ 。
 
-\ **Note:** ``null`` is also a valid key. If inside the dictionary, :ref:`find_key()<class_Dictionary_method_find_key>` may give misleading results.
+\ **注意：**\ ``null`` 也是有效的鍵。如果字典中包含這個鍵，則 :ref:`find_key()<class_Dictionary_method_find_key>` 可能會給出誤導性的結果。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Finds and returns the first key whose associated value is equal to ``value``, or
 
 :ref:`Variant<class_Variant>` **get**\ (\ key\: :ref:`Variant<class_Variant>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Dictionary_method_get>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the ``key`` does not exist, returns ``default``, or ``null`` if the parameter is omitted.
+返回該字典中與給定的鍵 ``key`` 對應的值。如果 ``key`` 不存在，則返回 ``default``\ ，如果省略了該參數則返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Returns a hashed 32-bit integer value representing the dictionary contents.
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_is_empty>`
 
-Returns ``true`` if the dictionary is empty (its size is ``0``). See also :ref:`size()<class_Dictionary_method_size>`.
+如果該字典為空（大小為 ``0``\ ），則返回 ``true``\ 。另見 :ref:`size()<class_Dictionary_method_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -692,7 +692,7 @@ Returns ``true`` if the dictionary is empty (its size is ``0``). See also :ref:`
 
 :ref:`bool<class_bool>` **is_read_only**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_is_read_only>`
 
-Returns ``true`` if the dictionary is read-only. See :ref:`make_read_only()<class_Dictionary_method_make_read_only>`. Dictionaries are automatically read-only if declared with ``const`` keyword.
+如果該字典是唯讀的，則返回 ``true`` 。見 :ref:`make_read_only()<class_Dictionary_method_make_read_only>`\ 。用 ``const`` 關鍵字宣告的字典自動唯讀。
 
 .. rst-class:: classref-item-separator
 
@@ -776,7 +776,7 @@ Returns ``true`` if the dictionary's values are typed.
 
 :ref:`Array<class_Array>` **keys**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_keys>`
 
-Returns the list of keys in the dictionary.
+返回該字典中的鍵列表。
 
 .. rst-class:: classref-item-separator
 
@@ -788,7 +788,7 @@ Returns the list of keys in the dictionary.
 
 |void| **make_read_only**\ (\ ) :ref:`🔗<class_Dictionary_method_make_read_only>`
 
-Makes the dictionary read-only, i.e. disables modification of the dictionary's contents. Does not apply to nested content, e.g. content of nested dictionaries.
+使該字典唯讀，即禁用字典內容的修改。不適用於巢狀內容，例如內嵌字典的內容。
 
 .. rst-class:: classref-item-separator
 
@@ -901,7 +901,7 @@ Sets the value of the element at the given ``key`` to the given ``value``. Retur
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_size>`
 
-Returns the number of entries in the dictionary. Empty dictionaries (``{ }``) always return ``0``. See also :ref:`is_empty()<class_Dictionary_method_is_empty>`.
+返回該字典中條目的數量。空字典（\ ``{ }``\ ）始終返回 ``0``\ 。另見 :ref:`is_empty()<class_Dictionary_method_is_empty>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -938,7 +938,7 @@ This method ensures that the dictionary's entries are ordered consistently when 
 
 :ref:`Array<class_Array>` **values**\ (\ ) |const| :ref:`🔗<class_Dictionary_method_values>`
 
-Returns the list of values in this dictionary.
+返回該字典中的值列表。
 
 .. rst-class:: classref-section-separator
 
@@ -946,8 +946,8 @@ Returns the list of values in this dictionary.
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_Dictionary_operator_neq_Dictionary:
 
@@ -955,7 +955,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_Dictionary_operator_neq_Dictionary>`
 
-Returns ``true`` if the two dictionaries do not contain the same keys and values.
+如果兩個字典包含的鍵、值不同，則返回 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -967,9 +967,9 @@ Returns ``true`` if the two dictionaries do not contain the same keys and values
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_Dictionary_operator_eq_Dictionary>`
 
-Returns ``true`` if the two dictionaries contain the same keys and values. The order of the entries does not matter.
+如果兩個字典包含的鍵、值心相同，則返回 ``true`` 。條目順序並不重要。
 
-\ **Note:** In C#, by convention, this operator compares by **reference**. If you need to compare by value, iterate over both dictionaries.
+\ **注意：**\ 在 C# 中，按照慣例，這個運算子進行的是按\ **引用**\ 比較。如果你需要按值比較，請走訪這兩個字典。
 
 .. rst-class:: classref-item-separator
 
@@ -981,14 +981,14 @@ Returns ``true`` if the two dictionaries contain the same keys and values. The o
 
 :ref:`Variant<class_Variant>` **operator []**\ (\ key\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Dictionary_operator_idx_Variant>`
 
-Returns the corresponding value for the given ``key`` in the dictionary. If the entry does not exist, fails and returns ``null``. For safe access, use :ref:`get()<class_Dictionary_method_get>` or :ref:`has()<class_Dictionary_method_has>`.
+返回該字典中與給定的鍵 ``key`` 對應的值。如果條目不存在或者失敗，則返回 ``null``\ 。為了更安全的存取，請使用 :ref:`get()<class_Dictionary_method_get>` 或 :ref:`has()<class_Dictionary_method_has>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,21 +5,21 @@
 ProgressBar
 ===========
 
-**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A control used for visual representation of a percentage.
+將百分比視覺化表示的控制項。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A control used for visual representation of a percentage. Shows the fill percentage in the center. Can also be used to show indeterminate progress. For more fill modes, use :ref:`TextureProgressBar<class_TextureProgressBar>` instead.
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_ProgressBar_FillMode:
 
@@ -79,7 +79,7 @@ enum **FillMode**: :ref:`🔗<enum_ProgressBar_FillMode>`
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_BEGIN_TO_END** = ``0``
 
-The progress bar fills from begin to end horizontally, according to the language direction. If :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` returns ``false``, it fills from left to right, and if it returns ``true``, it fills from right to left.
+進度條從開頭到結尾水平填充，開頭和結尾的位置取決於語言的方向。如果 :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` 返回 ``false`` 則為從左至右填充，如果返回 ``true`` 則為從右至左填充。
 
 .. _class_ProgressBar_constant_FILL_END_TO_BEGIN:
 
@@ -87,7 +87,7 @@ The progress bar fills from begin to end horizontally, according to the language
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_END_TO_BEGIN** = ``1``
 
-The progress bar fills from end to begin horizontally, according to the language direction. If :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` returns ``false``, it fills from right to left, and if it returns ``true``, it fills from left to right.
+進度條從結尾到開頭水平填充，開頭和結尾的位置取決於語言的方向。如果 :ref:`Control.is_layout_rtl()<class_Control_method_is_layout_rtl>` 返回 ``false`` 則為從左至右填充，如果返回 ``true`` 則為從右至左填充。
 
 .. _class_ProgressBar_constant_FILL_TOP_TO_BOTTOM:
 
@@ -95,7 +95,7 @@ The progress bar fills from end to begin horizontally, according to the language
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_TOP_TO_BOTTOM** = ``2``
 
-The progress fills from top to bottom.
+進度從上到下填充。
 
 .. _class_ProgressBar_constant_FILL_BOTTOM_TO_TOP:
 
@@ -103,7 +103,7 @@ The progress fills from top to bottom.
 
 :ref:`FillMode<enum_ProgressBar_FillMode>` **FILL_BOTTOM_TO_TOP** = ``3``
 
-The progress fills from bottom to top.
+進度從下到上填充。
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ The progress fills from bottom to top.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ProgressBar_property_editor_preview_indeterminate:
 
@@ -142,7 +142,7 @@ If ``false``, the :ref:`indeterminate<class_ProgressBar_property_indeterminate>`
 - |void| **set_fill_mode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fill_mode**\ (\ )
 
-The fill direction. See :ref:`FillMode<enum_ProgressBar_FillMode>` for possible values.
+填充方向。可能的取值見 :ref:`FillMode<enum_ProgressBar_FillMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ When set to ``true``, the progress bar indicates that something is happening wit
 - |void| **set_show_percentage**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_percentage_shown**\ (\ )
 
-If ``true``, the fill percentage is displayed on the bar.
+為 ``true`` 時，將在進度條上顯示百分比。
 
 .. rst-class:: classref-section-separator
 
@@ -184,8 +184,8 @@ If ``true``, the fill percentage is displayed on the bar.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_ProgressBar_theme_color_font_color:
 
@@ -193,7 +193,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_ProgressBar_theme_color_font_color>`
 
-The color of the text.
+文字的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ The color of the text.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ProgressBar_theme_color_font_outline_color>`
 
-The tint of text outline of the **ProgressBar**.
+**ProgressBar** 的文字輪廓的色調。
 
 .. rst-class:: classref-item-separator
 
@@ -217,9 +217,9 @@ The tint of text outline of the **ProgressBar**.
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_ProgressBar_theme_constant_outline_size>`
 
-The size of the text outline.
+文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_ProgressBar_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ The size of the text outline.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_ProgressBar_theme_font_font>`
 
-Font used to draw the fill percentage if :ref:`show_percentage<class_ProgressBar_property_show_percentage>` is ``true``.
+:ref:`show_percentage<class_ProgressBar_property_show_percentage>` 為 ``true`` 時，用於繪製填充百分比的字形。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Font used to draw the fill percentage if :ref:`show_percentage<class_ProgressBar
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_ProgressBar_theme_font_size_font_size>`
 
-Font size used to draw the fill percentage if :ref:`show_percentage<class_ProgressBar_property_show_percentage>` is ``true``.
+:ref:`show_percentage<class_ProgressBar_property_show_percentage>` 為 ``true`` 時，用於繪製填充百分比的字形。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Font size used to draw the fill percentage if :ref:`show_percentage<class_Progre
 
 :ref:`StyleBox<class_StyleBox>` **background** :ref:`🔗<class_ProgressBar_theme_style_background>`
 
-The style of the background.
+背景的樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -267,14 +267,14 @@ The style of the background.
 
 :ref:`StyleBox<class_StyleBox>` **fill** :ref:`🔗<class_ProgressBar_theme_style_fill>`
 
-The style of the progress (i.e. the part that fills the bar).
+進度的樣式（即填充進度條的部分）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

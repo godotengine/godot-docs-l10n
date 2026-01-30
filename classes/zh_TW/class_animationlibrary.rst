@@ -5,28 +5,28 @@
 AnimationLibrary
 ================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Container for :ref:`Animation<class_Animation>` resources.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-An animation library stores a set of animations accessible through :ref:`StringName<class_StringName>` keys, for use with :ref:`AnimationPlayer<class_AnimationPlayer>` nodes.
+:ref:`Animation<class_Animation>` 資源容器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Animation tutorial index <../tutorials/animation/index>`
+動畫庫會透過 :ref:`StringName<class_StringName>` 作為鍵儲存一組動畫，供 :ref:`AnimationPlayer<class_AnimationPlayer>` 節點使用。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`動畫教學索引 <../tutorials/animation/index>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_AnimationLibrary_signal_animation_added:
 
@@ -62,7 +62,7 @@ Signals
 
 **animation_added**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_added>`
 
-Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``name``.
+當新增鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -74,9 +74,9 @@ Emitted when an :ref:`Animation<class_Animation>` is added, under the key ``name
 
 **animation_changed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``name`` is the key of the animation that was changed.
+當某個動畫發生變化（如新增、移動軌道或變更路徑）時發出。\ ``name`` 為變更之動畫的鍵。
 
-See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
+亦可參閱作為轉接之 :ref:`Resource.changed<class_Resource_signal_changed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts
 
 **animation_removed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_removed>`
 
-Emitted when an :ref:`Animation<class_Animation>` stored with the key ``name`` is removed.
+當移除鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Emitted when an :ref:`Animation<class_Animation>` stored with the key ``name`` i
 
 **animation_renamed**\ (\ name\: :ref:`StringName<class_StringName>`, to_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_renamed>`
 
-Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from ``name`` to ``to_name``.
+當某 :ref:`Animation<class_Animation>` 的鍵由 ``name`` 改為 ``to_name`` 時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -108,8 +108,8 @@ Emitted when the key for an :ref:`Animation<class_Animation>` is changed, from `
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AnimationLibrary_method_add_animation:
 
@@ -117,7 +117,7 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_animation**\ (\ name\: :ref:`StringName<class_StringName>`, animation\: :ref:`Animation<class_Animation>`\ ) :ref:`🔗<class_AnimationLibrary_method_add_animation>`
 
-Adds the ``animation`` to the library, accessible by the key ``name``.
+將 ``animation`` 新增至動畫庫並以鍵 ``name`` 存取。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ Adds the ``animation`` to the library, accessible by the key ``name``.
 
 :ref:`Animation<class_Animation>` **get_animation**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationLibrary_method_get_animation>`
 
-Returns the :ref:`Animation<class_Animation>` with the key ``name``. If the animation does not exist, ``null`` is returned and an error is logged.
+返回鍵為 ``name`` 的 :ref:`Animation<class_Animation>`\ 。若不存在則返回 ``null`` 並記錄錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ Returns the :ref:`Animation<class_Animation>` with the key ``name``. If the anim
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_animation_list**\ (\ ) |const| :ref:`🔗<class_AnimationLibrary_method_get_animation_list>`
 
-Returns the keys for the :ref:`Animation<class_Animation>`\ s stored in the library.
+返回動畫庫中所儲存之 :ref:`Animation<class_Animation>` 的鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Returns the keys for the :ref:`Animation<class_Animation>`\ s stored in the libr
 
 :ref:`int<class_int>` **get_animation_list_size**\ (\ ) |const| :ref:`🔗<class_AnimationLibrary_method_get_animation_list_size>`
 
-Returns the key count for the :ref:`Animation<class_Animation>`\ s stored in the library.
+返回動畫庫中所儲存之 :ref:`Animation<class_Animation>` 的鍵數量。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Returns the key count for the :ref:`Animation<class_Animation>`\ s stored in the
 
 :ref:`bool<class_bool>` **has_animation**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationLibrary_method_has_animation>`
 
-Returns ``true`` if the library stores an :ref:`Animation<class_Animation>` with ``name`` as the key.
+若動畫庫內存在鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Returns ``true`` if the library stores an :ref:`Animation<class_Animation>` with
 
 |void| **remove_animation**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_method_remove_animation>`
 
-Removes the :ref:`Animation<class_Animation>` with the key ``name``.
+移除鍵為 ``name`` 的 :ref:`Animation<class_Animation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,14 +189,14 @@ Removes the :ref:`Animation<class_Animation>` with the key ``name``.
 
 |void| **rename_animation**\ (\ name\: :ref:`StringName<class_StringName>`, newname\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_method_rename_animation>`
 
-Changes the key of the :ref:`Animation<class_Animation>` associated with the key ``name`` to ``newname``.
+將鍵為 ``name`` 的 :ref:`Animation<class_Animation>` 之鍵更改為 ``newname``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

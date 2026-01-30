@@ -5,28 +5,28 @@
 ResourceImporterTexture
 =======================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports an image for use in 2D or 3D rendering.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This importer imports :ref:`CompressedTexture2D<class_CompressedTexture2D>` resources. If you need to process the image in scripts in a more convenient way, use :ref:`ResourceImporterImage<class_ResourceImporterImage>` instead. See also :ref:`ResourceImporterLayeredTexture<class_ResourceImporterLayeredTexture>`.
+匯入影像以用於 2D 或 3D 算繪。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Importing images <../tutorials/assets_pipeline/importing_images>`
+此匯入器匯入\ :ref:`CompressedTexture2D<class_CompressedTexture2D>` 資源。如果您需要以更方便的方式在腳本中處理映像，請改用\ :ref:`ResourceImporterImage<class_ResourceImporterImage>`\ 。另請參閱\ :ref:`ResourceImporterLayeredTexture<class_ResourceImporterLayeredTexture>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`匯入圖像 <../tutorials/assets_pipeline/importing_images>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -91,8 +91,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ResourceImporterTexture_property_compress/channel_pack:
 
@@ -116,15 +116,15 @@ Controls how color channels should be used in the imported texture.
 
 :ref:`int<class_int>` **compress/hdr_compression** = ``1`` :ref:`🔗<class_ResourceImporterTexture_property_compress/hdr_compression>`
 
-Controls how VRAM compression should be performed for HDR images.
+控制如何對 HDR 影像執行 VRAM 壓縮。
 
-\ **Disabled:** Never use VRAM compression for HDR textures, regardless of whether they're opaque or transparent. Instead, the texture is converted to RGBE9995 (9-bits per channel + 5-bit exponent = 32 bits per pixel) to reduce memory usage compared to a half-float or single-precision float image format.
+\ **停用：**\ 切勿對 HDR 紋理使用 VRAM 壓縮，無論它們是不透明還是透明。相反，紋理會轉換為 RGBE9995（每通道 9 位元 + 5 位元指數 = 每像素 32 位元），以減少與半浮點或單精確度浮點影像格式相比的記憶體使用量。
 
-\ **Opaque Only:** Only uses VRAM compression for opaque HDR textures. This is due to a limitation of HDR formats, as there is no VRAM-compressed HDR format that supports transparency at the same time.
+\ **僅不透明：** 僅對不透明 HDR 紋理使用 VRAM 壓縮。這是由於 HDR 格式的限制，因為沒有同時支援透明度的 VRAM 壓縮 HDR 格式。
 
-\ **Always:** Force VRAM compression even for HDR textures with an alpha channel. To perform this, the alpha channel is discarded on import.
+\ **總是：** 強制 VRAM 壓縮，即使對於具有 Alpha 通道的 HDR 紋理也是如此。為此，在匯入時將丟棄 Alpha 通道。
 
-\ **Note:** Only effective on Radiance HDR (``.hdr``) and OpenEXR (``.exr``) images.
+\ **注意：** 僅對 Radiance HDR (``.hdr``) 和 OpenEXR (``.exr``) 影像有效。
 
 .. rst-class:: classref-item-separator
 
@@ -136,11 +136,11 @@ Controls how VRAM compression should be performed for HDR images.
 
 :ref:`bool<class_bool>` **compress/high_quality** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_compress/high_quality>`
 
-If ``true``, uses BPTC compression on desktop platforms and ASTC compression on mobile platforms. When using BPTC, BC7 is used for SDR textures and BC6H is used for HDR textures.
+如果\ ``true``\ ，在桌面平台上使用BPTC 壓縮，在行動平台上使用ASTC 壓縮。使用BPTC 時，BC7 用於SDR 紋理，BC6H 用於HDR紋理。
 
-If ``false``, uses the faster but lower-quality S3TC compression on desktop platforms and ETC2 on mobile/web platforms. When using S3TC, DXT1 (BC1) is used for opaque textures and DXT5 (BC3) is used for transparent or normal map (RGTC) textures.
+如果 ``false``\ ，則在桌面平台上使用速度更快但品質較低的 S3TC 壓縮，在行動裝置/Web 平台上使用 ETC2。使用 S3TC 時，DXT1 (BC1) 用於不透明紋理，DXT5 (BC3) 用於透明或法線貼圖 (RGTC) 紋理。
 
-BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do not (see :ref:`compress/hdr_compression<class_ResourceImporterTexture_property_compress/hdr_compression>`).
+BPTC 和 ASTC 支援 HDR 紋理的 VRAM 壓縮，但 S3TC 和 ETC2 不支援（請參閱\ :ref:`compress/hdr_compression<class_ResourceImporterTexture_property_compress/hdr_compression>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ BPTC and ASTC support VRAM compression for HDR textures, but S3TC and ETC2 do no
 
 :ref:`float<class_float>` **compress/lossy_quality** = ``0.7`` :ref:`🔗<class_ResourceImporterTexture_property_compress/lossy_quality>`
 
-The quality to use when using the **Lossy** compression mode. Higher values result in better quality, at the cost of larger file sizes. Lossy quality does not affect memory usage of the imported texture, only its file size on disk.
+使用有損壓縮模式時使用的品質。值越高，品質越好，但檔案大小越大。有損品質不會影響記憶體匯入紋理的使用，僅其在磁碟上的檔案大小。
 
 .. rst-class:: classref-item-separator
 
@@ -164,19 +164,19 @@ The quality to use when using the **Lossy** compression mode. Higher values resu
 
 :ref:`int<class_int>` **compress/mode** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/mode>`
 
-The compression mode to use. Each compression mode provides a different tradeoff:
+要使用的壓縮模式。每個壓縮模式都提供不同的權衡：
 
-\ **Lossless**: Original quality, high memory usage, high size on disk, fast import.
+\ **無損**\ ：原始品質、高記憶體佔用、高磁碟空間、快速匯入。
 
-\ **Lossy:** Reduced quality, high memory usage, low size on disk, fast import.
+\ **有損：** 品質降低、記憶體使用率高、磁碟空間小、匯入速度快。
 
-\ **VRAM Compressed:** Reduced quality, low memory usage, low size on disk, slowest import. Only use for textures in 3D scenes, not for 2D elements.
+\ **VRAM 壓縮：** 品質下降、記憶體使用率低、磁碟空間小、匯入速度最慢。僅用於 3D 場景中的紋理，不適用於 2D 元素。
 
-\ **VRAM Uncompressed:** Original quality, high memory usage, highest size on disk, fastest import.
+\ **VRAM 未壓縮：** 原始品質、高記憶體使用率、磁碟大小最大、匯入速度最快。
 
-\ **Basis Universal:** Reduced quality, low memory usage, lowest size on disk, slow import. Only use for textures in 3D scenes, not for 2D elements.
+\ **Basis Universal：** 品質降低、記憶體使用率低、磁碟大小最小、匯入速度慢。僅用於 3D 場景中的紋理，不適用於 2D 元素。
 
-See `Compress mode <../tutorials/assets_pipeline/importing_images.html#compress-mode>`__ in the manual for more details.
+有關詳細信息，請參閱手冊中的\ `壓縮模式 <../tutorials/assets_pipeline/importing_images.html#compress-mode>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +188,9 @@ See `Compress mode <../tutorials/assets_pipeline/importing_images.html#compress-
 
 :ref:`int<class_int>` **compress/normal_map** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/normal_map>`
 
-When using a texture as normal map, only the red and green channels are required. Given regular texture compression algorithms produce artifacts that don't look that nice in normal maps, the RGTC compression format is the best fit for this data. Forcing this option to Enable will make Godot import the image as RGTC compressed. By default, it's set to Detect. This means that if the texture is ever detected to be used as a normal map, it will be changed to Enable and reimported automatically.
+當使用紋理作為法線貼圖時，只需要紅色和綠色通道。鑑於常規紋理壓縮演算法會產生在法線貼圖中看起來不太好的偽像，因此RGTC壓縮格式是最適合此資料的。強制此選項啟用將使 Godot 將影像匯入為 RGTC 壓縮。預設情況下，它設定為「偵測」。這表示如果偵測到紋理被用作法線貼圖，它將變更為啟用並自動重新匯入。
 
-Note that RGTC compression affects the resulting normal map image. You will have to adjust custom shaders that use the normal map's blue channel to take this into account. Built-in material shaders already ignore the blue channel in a normal map (regardless of the actual normal map's contents).
+請注意，RGTC 壓縮會影響產生的法線貼圖影像。您必須調整使用法線貼圖的藍色通道的自訂著色器才能考慮到這一點。內建材質著色器已經忽略法線貼圖中的藍色通道（無論實際法線貼圖的內容如何）。
 
 .. rst-class:: classref-item-separator
 
@@ -230,9 +230,9 @@ The UASTC encoding level. Higher values result in better quality but make encodi
 
 :ref:`int<class_int>` **detect_3d/compress_to** = ``1`` :ref:`🔗<class_ResourceImporterTexture_property_detect_3d/compress_to>`
 
-This changes the :ref:`compress/mode<class_ResourceImporterTexture_property_compress/mode>` option that is used when a texture is detected as being used in 3D.
+這會變更偵測到紋理在 3D 中使用時所使用的 :ref:`compress/mode<class_ResourceImporterTexture_property_compress/mode>` 選項。
 
-Changing this import option only has an effect if a texture is detected as being used in 3D. Changing this to **Disabled** then reimporting will not change the existing compress mode on a texture (if it's detected to be used in 3D), but choosing **VRAM Compressed** or **Basis Universal** will.
+只有當偵測到紋理正在 3D 中使用時，變更此匯入選項才會生效。將其變更為\ **停用**\ ，然後重新匯入不會變更紋理上的現有壓縮模式（如果偵測到在3D 中使用），但選擇\ **VRAM 壓縮** 或\ **Basis Universal**\ 將。
 
 .. rst-class:: classref-item-separator
 
@@ -258,9 +258,9 @@ If ``true``, converts the imported image's colors to match :ref:`EditorSettings.
 
 :ref:`bool<class_bool>` **editor/scale_with_editor_scale** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`
 
-If ``true``, scales the imported image to match :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>`. This should be enabled for editor plugin icons and custom class icons, but should be left disabled otherwise.
+如果\ ``true``\ ，則縮放匯入的影像以符合\ :ref:`EditorSettings.interface/editor/custom_display_scale<class_EditorSettings_property_interface/editor/custom_display_scale>`\ 。應該為編輯器外掛程式圖示和自訂類別圖示啟用此功能，但否則應停用。
 
-\ **Note:** Only available for SVG images.
+\ **注意：** 僅適用於 SVG 影像。
 
 .. rst-class:: classref-item-separator
 
@@ -272,15 +272,15 @@ If ``true``, scales the imported image to match :ref:`EditorSettings.interface/e
 
 :ref:`bool<class_bool>` **mipmaps/generate** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/generate>`
 
-If ``true``, smaller versions of the texture are generated on import. For example, a 64×64 texture will generate 6 mipmaps (32×32, 16×16, 8×8, 4×4, 2×2, 1×1). This has several benefits:
+如果\ ``true``\ ，匯入時會產生較小版本的紋理。例如，64×64 紋理將產生 6 個 mipmap（32×32、16× 16 、8×8、4×4、2×2、1×1）。這有幾個優點：
 
-- Textures will not become grainy in the distance (in 3D), or if scaled down due to :ref:`Camera2D<class_Camera2D>` zoom or :ref:`CanvasItem<class_CanvasItem>` scale (in 2D).
+- 紋理在遠處（3D 中）或由於 :ref:`Camera2D<class_Camera2D>` 縮放或 :ref:`CanvasItem<class_CanvasItem>` 縮放（2D）而縮小時不會變得顆粒狀。
 
-- Performance will improve if the texture is displayed in the distance, since sampling smaller versions of the original texture is faster and requires less memory bandwidth.
+- 如果紋理顯示在遠處，效能將會提高，因為對原始紋理的較小版本進行取樣速度更快並且需要更少的記憶體頻寬。
 
-The downside of mipmaps is that they increase memory usage by roughly 33%.
+mipmap 的缺點是它們會增加約 33% 的記憶體使用量。
 
-It's recommended to enable mipmaps in 3D. However, in 2D, this should only be enabled if your project visibly benefits from having mipmaps enabled. If the camera never zooms out significantly, there won't be a benefit to enabling mipmaps but memory usage will increase.
+建議在 3D 中啟用 mipmap。但是，在 2D 中，僅當您的專案明顯受益於啟用 mipmap 時才應啟用此功能。如果相機永遠不會顯著縮小，啟用 mipmap 不會有任何好處，但記憶體使用量會增加。"
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ It's recommended to enable mipmaps in 3D. However, in 2D, this should only be en
 
 :ref:`int<class_int>` **mipmaps/limit** = ``-1`` :ref:`🔗<class_ResourceImporterTexture_property_mipmaps/limit>`
 
-Unimplemented. This currently has no effect when changed.
+未實作。目前變更後無效。
 
 .. rst-class:: classref-item-separator
 
@@ -468,11 +468,11 @@ Some HDR images you can find online may be broken and contain data that is encod
 
 :ref:`bool<class_bool>` **process/hdr_clamp_exposure** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/hdr_clamp_exposure>`
 
-If ``true``, clamps exposure in the imported high dynamic range images using a smart clamping formula (without introducing *visible* clipping).
+如果\ ``true``\ ，則使用智慧型夾緊公式夾緊匯入的高動態範圍影像中的曝光（不引入\ *visible* 剪切）。
 
-Some HDR panorama images you can find online may contain extremely bright pixels, due to being taken from real life sources without any clipping.
+您可以在網路上找到的一些 HDR 全景影像可能包含極其明亮的像素，因為這些影像取自現實生活來源，沒有任何剪輯。
 
-While these HDR panorama images are accurate to real life, this can cause the radiance map generated by Godot to contain sparkles when used as a background sky. This can be seen in material reflections (even on rough materials in extreme cases). Enabling :ref:`process/hdr_clamp_exposure<class_ResourceImporterTexture_property_process/hdr_clamp_exposure>` can resolve this.
+雖然這些 HDR 全景影像準確反映現實生活，但這可能會導致 Godot 產生的輻射圖在用作背景天空時包含閃光。這可以在材料反射中看到（即使在極端情況下在粗糙材料上）。啟用\ :ref:`process/hdr_clamp_exposure<class_ResourceImporterTexture_property_process/hdr_clamp_exposure>`\ 可以解決此問題。
 
 .. rst-class:: classref-item-separator
 
@@ -484,11 +484,11 @@ While these HDR panorama images are accurate to real life, this can cause the ra
 
 :ref:`bool<class_bool>` **process/normal_map_invert_y** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/normal_map_invert_y>`
 
-**Deprecated:** The same result can be achieved by setting :ref:`process/channel_remap/green<class_ResourceImporterTexture_property_process/channel_remap/green>` to ``Green Inverted``.
+**已棄用：** The same result can be achieved by setting :ref:`process/channel_remap/green<class_ResourceImporterTexture_property_process/channel_remap/green>` to ``Green Inverted``.
 
-If ``true``, convert the normal map from Y- (DirectX-style) to Y+ (OpenGL-style) by inverting its green color channel. This is the normal map convention expected by Godot.
+如果 ``true``\ ，則透過反轉其綠色通道將法線貼圖從 Y-（DirectX 樣式）轉換為 Y+（OpenGL 樣式）。這是Godot所期望的法線貼圖約定。
 
-More information about normal maps (including a coordinate order table for popular engines) can be found `here <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__.
+在\ `此處 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__\ 找到。
 
 .. rst-class:: classref-item-separator
 
@@ -550,9 +550,9 @@ The color channel to consider as a roughness map in this texture. Only effective
 
 :ref:`String<class_String>` **roughness/src_normal** = ``""`` :ref:`🔗<class_ResourceImporterTexture_property_roughness/src_normal>`
 
-The path to the texture to consider as a normal map for roughness filtering on import. Specifying this can help decrease specular aliasing slightly in 3D.
+匯入時考慮作為粗糙度篩選法線貼圖的紋理路徑。指定此專案可以幫助稍微減少 3D 中的鏡面鋸齒。
 
-Roughness filtering on import is only used in 3D rendering, not 2D.
+匯入時的粗糙度篩選僅用於 3D 算繪，不適用於 2D。
 
 .. rst-class:: classref-item-separator
 
@@ -564,16 +564,16 @@ Roughness filtering on import is only used in 3D rendering, not 2D.
 
 :ref:`float<class_float>` **svg/scale** = ``1.0`` :ref:`🔗<class_ResourceImporterTexture_property_svg/scale>`
 
-The scale the SVG should be rendered at, with ``1.0`` being the original design size. Higher values result in a larger image. Note that unlike font oversampling, this affects the size the SVG is rendered at in 2D. See also :ref:`editor/scale_with_editor_scale<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`.
+SVG 應該算繪的比例，\ ``1.0`` 是原始設計尺寸。較高的值會導致較大的圖像。請注意，與字形過取樣不同，此影響 SVG 在 2D 中算繪的大小。另請參閱 :ref:`editor/scale_with_editor_scale<class_ResourceImporterTexture_property_editor/scale_with_editor_scale>`\ 。
 
-\ **Note:** Only available for SVG images.
+\ **注意：** 僅適用於 SVG 影像。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

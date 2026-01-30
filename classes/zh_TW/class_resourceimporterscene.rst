@@ -5,14 +5,14 @@
 ResourceImporterScene
 =====================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Imports a glTF, FBX, COLLADA, or Blender 3D scene.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 See also :ref:`ResourceImporterOBJ<class_ResourceImporterOBJ>`, which is used for OBJ models that can be imported as an independent :ref:`Mesh<class_Mesh>` or a scene.
 
@@ -22,15 +22,15 @@ Additional options (such as extracting individual meshes or materials to files) 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Importing 3D scenes <../tutorials/assets_pipeline/importing_3d_scenes/index>`
+- :doc:`匯入 3D 場景 <../tutorials/assets_pipeline/importing_3d_scenes/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -93,8 +93,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ResourceImporterScene_property__subresources:
 
@@ -102,7 +102,7 @@ Property Descriptions
 
 :ref:`Dictionary<class_Dictionary>` **_subresources** = ``{}`` :ref:`🔗<class_ResourceImporterScene_property__subresources>`
 
-Contains properties for the scene's subresources. This is an internal option which is not visible in the Import dock.
+包含場景子資源的屬性。這是一個內部選項，在匯入塢中不可見。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Contains properties for the scene's subresources. This is an internal option whi
 
 :ref:`float<class_float>` **animation/fps** = ``30`` :ref:`🔗<class_ResourceImporterScene_property_animation/fps>`
 
-The number of frames per second to use for baking animation curves to a series of points with linear interpolation. It's recommended to configure this value to match the value you're using as a baseline in your 3D modeling software. Higher values result in more precise animation with fast movement changes, at the cost of higher file sizes and memory usage. Thanks to interpolation, there is usually not much benefit in going above 30 FPS (as the animation will still appear smooth at higher rendering framerates).
+用於透過線性內插將動畫曲線烘焙為一系列點的每秒影格數。建議配置此值以配對您用作基線的值您的3D 建模軟體。較高的值會導致更精確的動畫和快速的運動變化，但代價是檔案大小和記憶體使用量更大。由於插值，超過30 FPS 通常沒有太大好處（因為動畫仍然會出現）在較高算繪影格速率下平滑）。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ The number of frames per second to use for baking animation curves to a series o
 
 :ref:`bool<class_bool>` **animation/import** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_animation/import>`
 
-If ``true``, import animations from the 3D scene.
+如果為 ``true``\ ，則馬達將轉動鉸鏈。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ If ``true``, adds an :ref:`Animation<class_Animation>` named ``RESET``, containi
 
 :ref:`bool<class_bool>` **animation/remove_immutable_tracks** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_animation/remove_immutable_tracks>`
 
-If ``true``, remove animation tracks that only contain default values. This can reduce output file size and memory usage with certain 3D scenes, depending on the contents of their animation tracks.
+如果\ ``true``\ ，則刪除僅包含預設值的動畫軌跡。這可以減少某些3D 場景的輸出檔案大小和記憶體使用量，具體取決於其內容動畫軌道。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ If ``true``, remove animation tracks that only contain default values. This can 
 
 :ref:`bool<class_bool>` **animation/trimming** = ``false`` :ref:`🔗<class_ResourceImporterScene_property_animation/trimming>`
 
-If ``true``, trim the beginning and end of animations if there are no keyframe changes. This can reduce output file size and memory usage with certain 3D scenes, depending on the contents of their animation tracks.
+如果\ ``true``\ ，如果沒有關鍵影格更改，則修剪動畫的開頭和結尾。這可以減少某些3D 場景的輸出檔案大小和記憶體使用量，取決於關於他們的動畫軌道的內容。
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +234,7 @@ Path extracted materials are saved to. If empty, source scene path is used.
 
 :ref:`bool<class_bool>` **meshes/create_shadow_meshes** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_meshes/create_shadow_meshes>`
 
-If ``true``, enables the generation of shadow meshes on import. This optimizes shadow rendering without reducing quality by welding vertices together when possible. This in turn reduces the memory bandwidth required to render shadows. Shadow mesh generation currently doesn't support using a lower detail level than the source mesh (but shadow rendering will make use of LODs when relevant).
+如果\ ``true``\ ，則在匯入時啟用陰影網格的產生。這可以最佳化陰影算繪，而不會在可能的情況下透過將頂點焊接在一起來降低品質。這反過來又減少了記憶體算繪陰影所需的頻寬。陰影網格產生目前不支援使用比來源網格更低的細節等級（但陰影算繪將在相關時使用LOD）。
 
 .. rst-class:: classref-item-separator
 
@@ -246,9 +246,9 @@ If ``true``, enables the generation of shadow meshes on import. This optimizes s
 
 :ref:`bool<class_bool>` **meshes/ensure_tangents** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_meshes/ensure_tangents>`
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the input meshes don't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead on relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果\ ``true``\ ，則使用\ `Mikktspace <http://www.mikktspace.com/>`__ 產生頂點切線（如果輸入網格不存在）沒有切線資料。如果可能，建議讓 3D 建模軟體在匯出時產生切線，而不是依賴此選項。需要切線才能正確顯示法線和高度貼圖，以及需要切線的任何材質/著色器功能。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果您不需要需要切線的材質特徵，則停用此功能可以減少輸出檔案大小並加快匯入速度（如果來源 3D 檔案不包含切線）。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ If ``true``, mesh compression will not be used. Consider enabling if you notice 
 
 :ref:`bool<class_bool>` **meshes/generate_lods** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_meshes/generate_lods>`
 
-If ``true``, generates lower detail variants of the mesh which will be displayed in the distance to improve rendering performance. Not all meshes benefit from LOD, especially if they are never rendered from far away. Disabling this can reduce output file size and speed up importing. See `Mesh level of detail (LOD) <../tutorials/3d/mesh_lod.html#doc-mesh-lod>`__ for more information.
+如果\ ``true``\ ，則產生網格的較低細節變體，這些變體將顯示在遠處以提高算繪效能。並非所有網格都受益於LOD，特別是如果它們永遠不會從遠處算繪。停用此功能可以減少輸出檔案大小並加快匯入速度。請參閱\ `網格細節等級(LOD) <../tutorials/3d/mesh_lod.html#doc-mesh-lod>`__ 了解更多。
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ If ``true``, generates lower detail variants of the mesh which will be displayed
 
 :ref:`int<class_int>` **meshes/light_baking** = ``1`` :ref:`🔗<class_ResourceImporterScene_property_meshes/light_baking>`
 
-Configures the meshes' :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` in the 3D scene. If set to **Static Lightmaps**, sets the meshes' GI mode to Static and generates UV2 on import for :ref:`LightmapGI<class_LightmapGI>` baking.
+在3D場景中設定網格體的\ :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`\ 。如果設定為\ **靜態光照貼圖**\ ，則將網格體的GI模式設定為靜態並產生UV2匯入 :ref:`LightmapGI<class_LightmapGI>` 烘焙時。
 
 .. rst-class:: classref-item-separator
 
@@ -296,9 +296,9 @@ Configures the meshes' :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D
 
 :ref:`float<class_float>` **meshes/lightmap_texel_size** = ``0.2`` :ref:`🔗<class_ResourceImporterScene_property_meshes/lightmap_texel_size>`
 
-Controls the size of each texel on the baked lightmap. A smaller value results in more precise lightmaps, at the cost of larger lightmap sizes and longer bake times.
+控制烘焙光照貼圖上每個紋素的大小。較小的值會導致更精確的光照貼圖，但代價是更大的光照貼圖大小和更長的烘焙時間。
 
-\ **Note:** Only effective if :ref:`meshes/light_baking<class_ResourceImporterScene_property_meshes/light_baking>` is set to **Static Lightmaps**.
+\ **注意：**\ 僅當\ :ref:`meshes/light_baking<class_ResourceImporterScene_property_meshes/light_baking>`\ 設定為\ **靜態光照貼圖**\ 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ Controls the size of each texel on the baked lightmap. A smaller value results i
 
 :ref:`bool<class_bool>` **nodes/apply_root_scale** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_nodes/apply_root_scale>`
 
-If ``true``, :ref:`nodes/root_scale<class_ResourceImporterScene_property_nodes/root_scale>` will be applied to the descendant nodes, meshes, animations, bones, etc. This means that if you add a child node later on within the imported scene, it won't be scaled. If ``false``, :ref:`nodes/root_scale<class_ResourceImporterScene_property_nodes/root_scale>` will multiply the scale of the root node instead.
+如果\ ``true``\ ，\ :ref:`nodes/root_scale<class_ResourceImporterScene_property_nodes/root_scale>`\ 將套用於後代節點、網格、動畫、骨骼等。這表示如果您新增稍後在匯入的場景中新增子節點時，它將不會縮放。如果\ ``false``\ ，\ :ref:`nodes/root_scale<class_ResourceImporterScene_property_nodes/root_scale>` 將乘以根節點的縮放比例。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Treat all nodes in the imported scene as if they are bones within a single :ref:
 
 :ref:`String<class_String>` **nodes/root_name** = ``""`` :ref:`🔗<class_ResourceImporterScene_property_nodes/root_name>`
 
-Override for the root node name. If empty, the root node will use what the scene specifies, or the file name if the scene does not specify a root name.
+覆寫根節點名稱。如果為空，則根節點將使用場景指定的名稱，如果場景未指定根名稱，則使用檔案名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ Override for the root node name. If empty, the root node will use what the scene
 
 :ref:`float<class_float>` **nodes/root_scale** = ``1.0`` :ref:`🔗<class_ResourceImporterScene_property_nodes/root_scale>`
 
-The uniform scale to use for the scene root. The default value of ``1.0`` will not perform any rescaling. See :ref:`nodes/apply_root_scale<class_ResourceImporterScene_property_nodes/apply_root_scale>` for details of how this scale is applied.
+用於場景根的均勻比例。\ ``1.0``\ 的預設值將不會執行任何重新縮放。有關如何執行的詳細信息，請參閱\ :ref:`nodes/apply_root_scale<class_ResourceImporterScene_property_nodes/apply_root_scale>`\ 套用此比例。
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ If set to a valid script, attaches the script to the root node of the imported s
 
 :ref:`String<class_String>` **nodes/root_type** = ``""`` :ref:`🔗<class_ResourceImporterScene_property_nodes/root_type>`
 
-Override for the root node type. If empty, the root node will use what the scene specifies, or :ref:`Node3D<class_Node3D>` if the scene does not specify a root type. Using a node type that inherits from :ref:`Node3D<class_Node3D>` is recommended. Otherwise, you'll lose the ability to position the node directly in the 3D editor.
+覆寫根節點型別。如果為空，則根節點將使用場景指定的內容，如果場景未指定根型別，則根節點將使用 :ref:`Node3D<class_Node3D>`\ 。使用下列節點型別建議繼承自\ :ref:`Node3D<class_Node3D>`\ 。否則，您將無法在3D 編輯器中直接定位節點。
 
 .. rst-class:: classref-item-separator
 
@@ -406,22 +406,22 @@ If ``true``, will use suffixes in the node names to determine the node type, suc
 
 :ref:`bool<class_bool>` **skins/use_named_skins** = ``true`` :ref:`🔗<class_ResourceImporterScene_property_skins/use_named_skins>`
 
-If checked, use named :ref:`Skin<class_Skin>`\ s for animation. The :ref:`MeshInstance3D<class_MeshInstance3D>` node contains 3 properties of relevance here: a skeleton :ref:`NodePath<class_NodePath>` pointing to the :ref:`Skeleton3D<class_Skeleton3D>` node (usually ``..``), a mesh, and a skin:
+如果選中，則使用命名的 :ref:`Skin<class_Skin>` 進行動畫。\ :ref:`MeshInstance3D<class_MeshInstance3D>` 節點包含 3 個相關屬性：指向 :ref:`Skeleton3D<class_Skeleton3D>` 節點的骨架 :ref:`NodePath<class_NodePath>`\ （通常是 ``..``)、網格和皮膚：
 
-- The :ref:`Skeleton3D<class_Skeleton3D>` node contains a list of bones with names, their pose and rest, a name and a parent bone.
+- :ref:`Skeleton3D<class_Skeleton3D>` 節點包含骨骼列表，其中包含名稱、姿勢和休息、名稱和父骨骼。
 
-- The mesh is all of the raw vertex data needed to display a mesh. In terms of the mesh, it knows how vertices are weight-painted and uses some internal numbering often imported from 3D modeling software.
+- 網格是顯示網格所需的所有原始頂點資料。就網格而言，它知道如何對頂點進行權重繪製，並使用通常從 3D 建模軟體匯入的一些內部編號。
 
-- The skin contains the information necessary to bind this mesh onto this Skeleton3D. For every one of the internal bone IDs chosen by the 3D modeling software, it contains two things. Firstly, a matrix known as the Bind Pose Matrix, Inverse Bind Matrix, or IBM for short. Secondly, the :ref:`Skin<class_Skin>` contains each bone's name (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``true``), or the bone's index within the :ref:`Skeleton3D<class_Skeleton3D>` list (if :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` is ``false``).
+- 皮膚包含將此網格物件綁定到此 Skeleton3D 上所需的資訊。對於 3D 建模軟體選擇的每一個內部骨骼 ID，它都包含兩件事。首先是一個稱為綁定姿勢矩陣、逆綁定矩陣或簡稱 IBM 的矩陣。其次，\ :ref:`Skin<class_Skin>` 包含每個骨骼的名稱（如果\ :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 為\ ``true``\ ），或骨骼在\ :ref:`Skeleton3D<class_Skeleton3D>` 列表中的索引（如果\ :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 為\ ``false``\ ）。
 
-Together, this information is enough to tell Godot how to use the bone poses in the :ref:`Skeleton3D<class_Skeleton3D>` node to render the mesh from each :ref:`MeshInstance3D<class_MeshInstance3D>`. Note that each :ref:`MeshInstance3D<class_MeshInstance3D>` may share binds, as is common in models exported from Blender, or each :ref:`MeshInstance3D<class_MeshInstance3D>` may use a separate :ref:`Skin<class_Skin>` object, as is common in models exported from other tools such as Maya.
+總而言之，這些資訊足以告訴 Godot 如何使用 :ref:`Skeleton3D<class_Skeleton3D>` 節點中的骨骼姿勢來算繪每個 :ref:`MeshInstance3D<class_MeshInstance3D>` 的網格。請注意，每個\ :ref:`MeshInstance3D<class_MeshInstance3D>` 可以共享綁定，這在從Blender 匯出的模型中很常見，或者每個\ :ref:`MeshInstance3D<class_MeshInstance3D>` 可以使用單獨的\ :ref:`Skin<class_Skin>` 對象，這在從其他工具（例如Maya）匯出的模型中很常見。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

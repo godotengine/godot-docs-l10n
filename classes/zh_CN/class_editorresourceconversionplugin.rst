@@ -5,18 +5,18 @@
 EditorResourceConversionPlugin
 ==============================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Plugin for adding custom converters from one resource format to another in the editor resource picker context menu; for example, converting a :ref:`StandardMaterial3D<class_StandardMaterial3D>` to a :ref:`ShaderMaterial<class_ShaderMaterial>`.
+用于在编辑器资源选择器的上下文菜单中添加从一种资源格式到另一种资源格式的自定义转换器的插件；例如，将 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 转换为 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**EditorResourceConversionPlugin** is invoked when the context menu is brought up for a resource in the editor inspector. Relevant conversion plugins will appear as menu options to convert the given resource to a target type.
+当编辑器检查器中的资源被调出上下文菜单时，\ **EditorResourceConversionPlugin** 被调用。相关的转换插件将作为菜单选项出现，以将给定的资源转换为目标类型。
 
-Below shows an example of a basic plugin that will convert an :ref:`ImageTexture<class_ImageTexture>` to a :ref:`PortableCompressedTexture2D<class_PortableCompressedTexture2D>`.
+下面展示了一个将 :ref:`ImageTexture<class_ImageTexture>` 转换为 :ref:`PortableCompressedTexture2D<class_PortableCompressedTexture2D>` 的基本插件示例。
 
 
 .. tabs::
@@ -38,12 +38,12 @@ Below shows an example of a basic plugin that will convert an :ref:`ImageTexture
 
 
 
-To use an **EditorResourceConversionPlugin**, register it using the :ref:`EditorPlugin.add_resource_conversion_plugin()<class_EditorPlugin_method_add_resource_conversion_plugin>` method first.
+要使用 **EditorResourceConversionPlugin**\ ，请先使用 :ref:`EditorPlugin.add_resource_conversion_plugin()<class_EditorPlugin_method_add_resource_conversion_plugin>` 方法注册它。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorResourceConversionPlugin_private_method__convert:
 
@@ -71,7 +71,7 @@ Method Descriptions
 
 :ref:`Resource<class_Resource>` **_convert**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__convert>`
 
-Takes an input :ref:`Resource<class_Resource>` and converts it to the type given in :ref:`_converts_to()<class_EditorResourceConversionPlugin_private_method__converts_to>`. The returned :ref:`Resource<class_Resource>` is the result of the conversion, and the input :ref:`Resource<class_Resource>` remains unchanged.
+获取输入 :ref:`Resource<class_Resource>` 并将其转换为 :ref:`_converts_to()<class_EditorResourceConversionPlugin_private_method__converts_to>` 中给定的类型。返回的 :ref:`Resource<class_Resource>` 是转换后的结果，输入的 :ref:`Resource<class_Resource>` 保持不变。
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ Takes an input :ref:`Resource<class_Resource>` and converts it to the type given
 
 :ref:`String<class_String>` **_converts_to**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__converts_to>`
 
-Returns the class name of the target type of :ref:`Resource<class_Resource>` that this plugin converts source resources to.
+返回该插件将源资源转换为的 :ref:`Resource<class_Resource>` 的目标类型的类名。
 
 .. rst-class:: classref-item-separator
 
@@ -95,14 +95,14 @@ Returns the class name of the target type of :ref:`Resource<class_Resource>` tha
 
 :ref:`bool<class_bool>` **_handles**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourceConversionPlugin_private_method__handles>`
 
-Called to determine whether a particular :ref:`Resource<class_Resource>` can be converted to the target resource type by this plugin.
+调用以确定特定 :ref:`Resource<class_Resource>` 是否可以通过该插件转换为目标资源类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

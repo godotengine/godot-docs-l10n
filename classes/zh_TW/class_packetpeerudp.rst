@@ -5,14 +5,14 @@
 PacketPeerUDP
 =============
 
-**Inherits:** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-UDP packet peer.
+UDP 資料包使用者端。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref:`Variant<class_Variant>`\ s.
 
@@ -49,8 +49,8 @@ UDP packet peer. Can be used to send and receive raw UDP packets as well as :ref
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_PacketPeerUDP_method_bind:
 
@@ -116,7 +116,7 @@ If ``bind_address`` is set to any valid address (e.g. ``"192.168.1.101"``, ``"::
 
 |void| **close**\ (\ ) :ref:`🔗<class_PacketPeerUDP_method_close>`
 
-Closes the **PacketPeerUDP**'s underlying UDP socket.
+關閉該 **PacketPeerUDP** 底層 UDP 通訊端。
 
 .. rst-class:: classref-item-separator
 
@@ -128,9 +128,9 @@ Closes the **PacketPeerUDP**'s underlying UDP socket.
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PacketPeerUDP_method_connect_to_host>`
 
-Calling this method connects this UDP peer to the given ``host``/``port`` pair. UDP is in reality connectionless, so this option only means that incoming packets from different addresses are automatically discarded, and that outgoing packets are always sent to the connected address (future calls to :ref:`set_dest_address()<class_PacketPeerUDP_method_set_dest_address>` are not allowed). This method does not send any data to the remote peer, to do that, use :ref:`PacketPeer.put_var()<class_PacketPeer_method_put_var>` or :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>` as usual. See also :ref:`UDPServer<class_UDPServer>`.
+呼叫該方法將該 UDP 對等體連接到給定的 ``host``/``port`` 對。UDP 實際上是不需連線的，因此該選項僅意味著自動丟棄來自不同位址的傳入封包，並且傳出的封包始終發送到連接的位址（不允許將來呼叫 :ref:`set_dest_address()<class_PacketPeerUDP_method_set_dest_address>`\ ）。該方法不會向遠端對等體發送任何資料，要發送資料，請像往常一樣使用 :ref:`PacketPeer.put_var()<class_PacketPeer_method_put_var>` 或 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ 。另請參閱 :ref:`UDPServer<class_UDPServer>`\ 。
 
-\ **Note:** Connecting to the remote peer does not help to protect from malicious attacks like IP spoofing, etc. Think about using an encryption technique like TLS or DTLS if you feel like your application is transferring sensitive information.
+\ **注意：**\ 連接到遠端對等體並不能防止 IP 欺騙等惡意攻擊。如果你覺得你的套用程式正在傳輸敏感資訊，可以考慮使用 TLS 或 DTLS 等加密技術。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Calling this method connects this UDP peer to the given ``host``/``port`` pair. 
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_get_local_port>`
 
-Returns the local port to which this peer is bound.
+返回該對等體綁定到的本地埠。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Returns the local port to which this peer is bound.
 
 :ref:`String<class_String>` **get_packet_ip**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_get_packet_ip>`
 
-Returns the IP of the remote peer that sent the last packet(that was received with :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` or :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>`).
+返回發送最後一個封包（通過 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` 或 :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>` 接收）的遠程對等體的 IP。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Returns the IP of the remote peer that sent the last packet(that was received wi
 
 :ref:`int<class_int>` **get_packet_port**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_get_packet_port>`
 
-Returns the port of the remote peer that sent the last packet(that was received with :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` or :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>`).
+返回發送最後一個封包（通過 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` 或 :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>` 接收）的遠端對等方的埠。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Returns the port of the remote peer that sent the last packet(that was received 
 
 :ref:`bool<class_bool>` **is_bound**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_is_bound>`
 
-Returns whether this **PacketPeerUDP** is bound to an address and can receive packets.
+返回該 **PacketPeerUDP** 是否被綁定到某個位址上，並且可以接收封包。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Returns whether this **PacketPeerUDP** is bound to an address and can receive pa
 
 :ref:`bool<class_bool>` **is_socket_connected**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_is_socket_connected>`
 
-Returns ``true`` if the UDP socket is open and has been connected to a remote address. See :ref:`connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`.
+如果 UDP 通訊端已打開並已連接到遠端位址，則返回 ``true``\ 。見 :ref:`connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -202,11 +202,11 @@ Returns ``true`` if the UDP socket is open and has been connected to a remote ad
 
 :ref:`Error<enum_@GlobalScope_Error>` **join_multicast_group**\ (\ multicast_address\: :ref:`String<class_String>`, interface_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PacketPeerUDP_method_join_multicast_group>`
 
-Joins the multicast group specified by ``multicast_address`` using the interface identified by ``interface_name``.
+使用由 ``interface_name`` 標識的介面加入由 ``multicast_address`` 指定的多播組。
 
-You can join the same multicast group with multiple interfaces. Use :ref:`IP.get_local_interfaces()<class_IP_method_get_local_interfaces>` to know which are available.
+可以使用多個介面加入同一個多播組。使用 :ref:`IP.get_local_interfaces()<class_IP_method_get_local_interfaces>` 瞭解哪些介面可用。
 
-\ **Note:** Some Android devices might require the ``CHANGE_WIFI_MULTICAST_STATE`` permission for multicast to work.
+\ **注意：**\ 某些 Android 裝置可能需要 ``CHANGE_WIFI_MULTICAST_STATE`` 許可權才能進行多播。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ You can join the same multicast group with multiple interfaces. Use :ref:`IP.get
 
 :ref:`Error<enum_@GlobalScope_Error>` **leave_multicast_group**\ (\ multicast_address\: :ref:`String<class_String>`, interface_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PacketPeerUDP_method_leave_multicast_group>`
 
-Removes the interface identified by ``interface_name`` from the multicast group specified by ``multicast_address``.
+從 ``multicast_address`` 指定的組播組中移除 ``interface_name`` 標識的介面。
 
 .. rst-class:: classref-item-separator
 
@@ -230,9 +230,9 @@ Removes the interface identified by ``interface_name`` from the multicast group 
 
 |void| **set_broadcast_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PacketPeerUDP_method_set_broadcast_enabled>`
 
-Enable or disable sending of broadcast packets (e.g. ``set_dest_address("255.255.255.255", 4343)``. This option is disabled by default.
+啟用或禁用廣播封包的發送（例如：\ ``set_dest_address("255.255.255.255", 4343)``\ 。這個選項在預設情況下是禁用的。
 
-\ **Note:** Some Android devices might require the ``CHANGE_WIFI_MULTICAST_STATE`` permission and this option to be enabled to receive broadcast packets too.
+\ **注意：**\ 一些 Android 裝置可能需要 ``CHANGE_WIFI_MULTICAST_STATE`` 許可權和本選項被啟用來接收廣播包。
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Enable or disable sending of broadcast packets (e.g. ``set_dest_address("255.255
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_dest_address**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PacketPeerUDP_method_set_dest_address>`
 
-Sets the destination address and port for sending packets and variables. A hostname will be resolved using DNS if needed.
+設定發送封包和變數的目標位址和埠。如果需要，將使用 DNS 解析主機名稱。
 
-\ **Note:** :ref:`set_broadcast_enabled()<class_PacketPeerUDP_method_set_broadcast_enabled>` must be enabled before sending packets to a broadcast address (e.g. ``255.255.255.255``).
+\ **注意：**\ 在向廣播地址（例如：\ ``255.255.255.255``\ ）發送封包之前，必須啟用 :ref:`set_broadcast_enabled()<class_PacketPeerUDP_method_set_broadcast_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -297,12 +297,12 @@ Waits for a packet to arrive on the bound address. See :ref:`bind()<class_Packet
 
 
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

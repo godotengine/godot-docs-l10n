@@ -5,23 +5,23 @@
 EncodedObjectAsID
 =================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Holds a reference to an :ref:`Object<class_Object>`'s instance ID.
+保存对 :ref:`Object<class_Object>` 实例 ID 的引用。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Utility class which holds a reference to the internal identifier of an :ref:`Object<class_Object>` instance, as given by :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`. This ID can then be used to retrieve the object instance with :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>`.
+实用程序类，其中包含对 :ref:`Object<class_Object>` 实例的内部标识符的引用，由 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` 给出。然后可以使用该 ID 通过 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 检索对象实例。
 
-This class is used internally by the editor inspector and script debugger, but can also be used in plugins to pass and display objects as their IDs.
+该类由编辑器检查器和脚本调试器在内部使用，但也可用于插件中，以使用其 ID 传递和显示对象。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EncodedObjectAsID_property_object_id:
 
@@ -50,14 +50,14 @@ Property Descriptions
 - |void| **set_object_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_object_id**\ (\ )
 
-The :ref:`Object<class_Object>` identifier stored in this **EncodedObjectAsID** instance. The object instance can be retrieved with :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>`.
+存储在该 **EncodedObjectAsID** 实例中的 :ref:`Object<class_Object>` 标识符。可以使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 检索对象实例。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

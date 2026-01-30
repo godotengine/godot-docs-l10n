@@ -5,28 +5,28 @@
 Sprite2D
 ========
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-General-purpose sprite node.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A node that displays a 2D texture. The texture displayed can be a region from a larger atlas texture, or a frame from a sprite sheet animation.
+通用精靈節點。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `Instancing Demo <https://godotengine.org/asset-library/asset/2716>`__
+顯示 2D 紋理的節點。顯示的紋理可以是較大合集紋理中的某個區域，也可以是精靈表動畫中的某一影格。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `產生實體演示 <https://godotengine.org/asset-library/asset/2716>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_Sprite2D_signal_frame_changed:
 
@@ -86,7 +86,7 @@ Signals
 
 **frame_changed**\ (\ ) :ref:`🔗<class_Sprite2D_signal_frame_changed>`
 
-Emitted when the :ref:`frame<class_Sprite2D_property_frame>` changes.
+當 :ref:`frame<class_Sprite2D_property_frame>` 更改時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Emitted when the :ref:`frame<class_Sprite2D_property_frame>` changes.
 
 **texture_changed**\ (\ ) :ref:`🔗<class_Sprite2D_signal_texture_changed>`
 
-Emitted when the :ref:`texture<class_Sprite2D_property_texture>` changes.
+當 :ref:`texture<class_Sprite2D_property_texture>` 更改時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -106,8 +106,8 @@ Emitted when the :ref:`texture<class_Sprite2D_property_texture>` changes.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Sprite2D_property_centered:
 
@@ -139,7 +139,7 @@ If ``true``, texture is centered.
 - |void| **set_flip_h**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_h**\ (\ )
 
-If ``true``, texture is flipped horizontally.
+若為 ``true``\ ，紋理將水平翻轉。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ If ``true``, texture is flipped horizontally.
 - |void| **set_flip_v**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_v**\ (\ )
 
-If ``true``, texture is flipped vertically.
+若為 ``true``\ ，紋理將垂直翻轉。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Current frame to display from sprite sheet. :ref:`hframes<class_Sprite2D_propert
 - |void| **set_frame_coords**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_frame_coords**\ (\ )
 
-Coordinates of the frame to display from sprite sheet. This is as an alias for the :ref:`frame<class_Sprite2D_property_frame>` property. :ref:`hframes<class_Sprite2D_property_hframes>` or :ref:`vframes<class_Sprite2D_property_vframes>` must be greater than 1.
+顯示的影格在精靈表中的座標。這是 :ref:`frame<class_Sprite2D_property_frame>` 屬性的別名。\ :ref:`vframes<class_Sprite2D_property_vframes>` 或 :ref:`hframes<class_Sprite2D_property_hframes>` 必須大於 1。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ If ``true``, the area outside of the :ref:`region_rect<class_Sprite2D_property_r
 - |void| **set_region_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_region_rect**\ (\ )
 
-The region of the atlas texture to display. :ref:`region_enabled<class_Sprite2D_property_region_enabled>` must be ``true``.
+要顯示的合集紋理區域。\ :ref:`region_enabled<class_Sprite2D_property_region_enabled>` 必須是 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ The region of the atlas texture to display. :ref:`region_enabled<class_Sprite2D_
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-:ref:`Texture2D<class_Texture2D>` object to draw.
+要繪製的 :ref:`Texture2D<class_Texture2D>` 對象。
 
 .. rst-class:: classref-item-separator
 
@@ -321,8 +321,8 @@ The number of rows in the sprite sheet. When this property is changed, :ref:`fra
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Sprite2D_method_get_rect:
 
@@ -374,12 +374,12 @@ Returns a :ref:`Rect2<class_Rect2>` representing the Sprite2D's boundary in loca
 
 Returns ``true`` if the pixel at the given position is opaque, ``false`` otherwise. Also returns ``false`` if the given position is out of bounds or this sprite's :ref:`texture<class_Sprite2D_property_texture>` is ``null``. ``pos`` is in local coordinates.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

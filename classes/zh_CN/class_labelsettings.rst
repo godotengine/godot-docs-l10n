@@ -5,21 +5,21 @@
 LabelSettings
 =============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides common settings to customize the text in a :ref:`Label<class_Label>`.
+提供能够在 :ref:`Label<class_Label>` 中自定义文本的常见设置。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**LabelSettings** is a resource that provides common settings to customize the text in a :ref:`Label<class_Label>`. It will take priority over the properties defined in :ref:`Control.theme<class_Control_property_theme>`. The resource can be shared between multiple labels and changed on the fly, so it's convenient and flexible way to setup text style.
+**LabelSettings** 是一种提供在 :ref:`Label<class_Label>` 中自定义文本的常见设置的资源。优先于 :ref:`Control.theme<class_Control_property_theme>` 中定义的属性。该资源可以在多个标签之间共享，可以随时替换，因此可以方便、灵活地设置文本样式。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_LabelSettings_property_font:
 
@@ -112,7 +112,7 @@ Property Descriptions
 - |void| **set_font**\ (\ value\: :ref:`Font<class_Font>`\ )
 - :ref:`Font<class_Font>` **get_font**\ (\ )
 
-:ref:`Font<class_Font>` used for the text.
+文本使用的 :ref:`Font<class_Font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ Property Descriptions
 - |void| **set_font_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_font_color**\ (\ )
 
-Color of the text.
+文本的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ Color of the text.
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-Size of the text.
+文本的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Size of the text.
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行与行之间的额外纵向留白（单位为像素），留白会被添加到行的降部。该值可以为负数。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_outline_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_outline_color**\ (\ )
 
-The color of the outline.
+轮廓的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ The color of the outline.
 - |void| **set_outline_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_outline_size**\ (\ )
 
-Text outline size.
+文本轮廓大小。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Text outline size.
 - |void| **set_paragraph_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_paragraph_spacing**\ (\ )
 
-Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_LabelSettings_property_line_spacing>`.
+段落之间的垂直空间。在 :ref:`line_spacing<class_LabelSettings_property_line_spacing>` 上添加。
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ Vertical space between paragraphs. Added on top of :ref:`line_spacing<class_Labe
 - |void| **set_shadow_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_shadow_color**\ (\ )
 
-Color of the shadow effect. If alpha is ``0``, no shadow will be drawn.
+阴影效果的颜色。如果 Alpha 为 ``0`` ，则不会绘制阴影。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Color of the shadow effect. If alpha is ``0``, no shadow will be drawn.
 - |void| **set_shadow_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_shadow_offset**\ (\ )
 
-Offset of the shadow effect, in pixels.
+阴影效果的偏移，单位为像素。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Offset of the shadow effect, in pixels.
 - |void| **set_shadow_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_shadow_size**\ (\ )
 
-Size of the shadow effect.
+阴影效果的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ Size of the shadow effect.
 - |void| **set_stacked_outline_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stacked_outline_count**\ (\ )
 
-The number of stacked outlines.
+堆叠轮廓的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ The number of stacked outlines.
 - |void| **set_stacked_shadow_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stacked_shadow_count**\ (\ )
 
-The number of stacked shadows.
+堆叠阴影的数量。
 
 .. rst-class:: classref-section-separator
 
@@ -307,8 +307,8 @@ The number of stacked shadows.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_LabelSettings_method_add_stacked_outline:
 
@@ -316,7 +316,7 @@ Method Descriptions
 
 |void| **add_stacked_outline**\ (\ index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_LabelSettings_method_add_stacked_outline>`
 
-Adds a new stacked outline to the label at the given ``index``. If ``index`` is ``-1``, the new stacked outline will be added at the end of the list.
+为标签在索引为 ``index`` 处添加新的堆叠轮廓。如果 ``index`` 为 ``-1``\ ，则新的堆叠轮廓会添加到列表的末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Adds a new stacked outline to the label at the given ``index``. If ``index`` is 
 
 |void| **add_stacked_shadow**\ (\ index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_LabelSettings_method_add_stacked_shadow>`
 
-Adds a new stacked shadow to the label at the given ``index``. If ``index`` is ``-1``, the new stacked shadow will be added at the end of the list.
+为标签在索引为 ``index`` 处添加新的堆叠阴影。如果 ``index`` 为 ``-1``\ ，则新的堆叠阴影会添加到列表的末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ Adds a new stacked shadow to the label at the given ``index``. If ``index`` is `
 
 :ref:`Color<class_Color>` **get_stacked_outline_color**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LabelSettings_method_get_stacked_outline_color>`
 
-Returns the color of the stacked outline at ``index``.
+返回索引为 ``index`` 的堆叠轮廓的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ Returns the color of the stacked outline at ``index``.
 
 :ref:`int<class_int>` **get_stacked_outline_size**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LabelSettings_method_get_stacked_outline_size>`
 
-Returns the size of the stacked outline at ``index``.
+返回索引为 ``index`` 的堆叠轮廓的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Returns the size of the stacked outline at ``index``.
 
 :ref:`Color<class_Color>` **get_stacked_shadow_color**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LabelSettings_method_get_stacked_shadow_color>`
 
-Returns the color of the stacked shadow at ``index``.
+返回索引为 ``index`` 的堆叠阴影的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Returns the color of the stacked shadow at ``index``.
 
 :ref:`Vector2<class_Vector2>` **get_stacked_shadow_offset**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LabelSettings_method_get_stacked_shadow_offset>`
 
-Returns the offset of the stacked shadow at ``index``.
+返回索引为 ``index`` 的堆叠阴影的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Returns the offset of the stacked shadow at ``index``.
 
 :ref:`int<class_int>` **get_stacked_shadow_outline_size**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_LabelSettings_method_get_stacked_shadow_outline_size>`
 
-Returns the outline size of the stacked shadow at ``index``.
+返回索引为 ``index`` 的堆叠阴影的轮廓大小。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Returns the outline size of the stacked shadow at ``index``.
 
 |void| **move_stacked_outline**\ (\ from_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LabelSettings_method_move_stacked_outline>`
 
-Moves the stacked outline at index ``from_index`` to the given position ``to_position`` in the array.
+将索引为 ``from_index`` 的堆叠轮廓移动至数组中的 ``to_position`` 位置。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Moves the stacked outline at index ``from_index`` to the given position ``to_pos
 
 |void| **move_stacked_shadow**\ (\ from_index\: :ref:`int<class_int>`, to_position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LabelSettings_method_move_stacked_shadow>`
 
-Moves the stacked shadow at index ``from_index`` to the given position ``to_position`` in the array.
+将索引为 ``from_index`` 的堆叠阴影移动至数组中的 ``to_position`` 位置。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Moves the stacked shadow at index ``from_index`` to the given position ``to_posi
 
 |void| **remove_stacked_outline**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LabelSettings_method_remove_stacked_outline>`
 
-Removes the stacked outline at index ``index``.
+移除索引为 ``index`` 的堆叠轮廓。
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ Removes the stacked outline at index ``index``.
 
 |void| **remove_stacked_shadow**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LabelSettings_method_remove_stacked_shadow>`
 
-Removes the stacked shadow at index ``index``.
+移除索引为 ``index`` 的堆叠阴影。
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ Removes the stacked shadow at index ``index``.
 
 |void| **set_stacked_outline_color**\ (\ index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_LabelSettings_method_set_stacked_outline_color>`
 
-Sets the color of the stacked outline identified by the given ``index`` to ``color``.
+将索引为 ``index`` 的堆叠轮廓的颜色设为 ``color``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ Sets the color of the stacked outline identified by the given ``index`` to ``col
 
 |void| **set_stacked_outline_size**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LabelSettings_method_set_stacked_outline_size>`
 
-Sets the size of the stacked outline identified by the given ``index`` to ``size``.
+将索引为 ``index`` 的堆叠轮廓的大小设为 ``size``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Sets the size of the stacked outline identified by the given ``index`` to ``size
 
 |void| **set_stacked_shadow_color**\ (\ index\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_LabelSettings_method_set_stacked_shadow_color>`
 
-Sets the color of the stacked shadow identified by the given ``index`` to ``color``.
+将索引为 ``index`` 的堆叠阴影的颜色设为 ``color``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Sets the color of the stacked shadow identified by the given ``index`` to ``colo
 
 |void| **set_stacked_shadow_offset**\ (\ index\: :ref:`int<class_int>`, offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_LabelSettings_method_set_stacked_shadow_offset>`
 
-Sets the offset of the stacked shadow identified by the given ``index`` to ``offset``.
+将索引为 ``index`` 的堆叠阴影的偏移量设为 ``offset``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -496,14 +496,14 @@ Sets the offset of the stacked shadow identified by the given ``index`` to ``off
 
 |void| **set_stacked_shadow_outline_size**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LabelSettings_method_set_stacked_shadow_outline_size>`
 
-Sets the outline size of the stacked shadow identified by the given ``index`` to ``size``.
+将索引为 ``index`` 的堆叠阴影的轮廓大小设为 ``size``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

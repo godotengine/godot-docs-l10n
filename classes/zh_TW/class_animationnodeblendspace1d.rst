@@ -5,32 +5,32 @@
 AnimationNodeBlendSpace1D
 =========================
 
-**Inherits:** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A set of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s placed on a virtual axis, crossfading between the two adjacent ones. Used by :ref:`AnimationTree<class_AnimationTree>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
-
-\ **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s can be added using :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Outputs the linear blend of the two :ref:`AnimationRootNode<class_AnimationRootNode>`\ s adjacent to the current value.
-
-You can set the extents of the axis with :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` and :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+一組放置於虛擬軸上的 :ref:`AnimationRootNode<class_AnimationRootNode>`\ ，在相鄰的兩節點間進行交叉淡化。供 :ref:`AnimationTree<class_AnimationTree>` 使用。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+:ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 使用的資源。
+
+\ **AnimationNodeBlendSpace1D** 代表一條虛擬軸，可透過 :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>` 新增任意 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。其輸出為最接近目前值之兩節點的線性混合。
+
+可使用 :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` 與 :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>` 設定軸向範圍。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AnimationNodeBlendSpace1D_BlendMode:
 
@@ -94,7 +94,7 @@ enum **BlendMode**: :ref:`🔗<enum_AnimationNodeBlendSpace1D_BlendMode>`
 
 :ref:`BlendMode<enum_AnimationNodeBlendSpace1D_BlendMode>` **BLEND_MODE_INTERPOLATED** = ``0``
 
-The interpolation between animations is linear.
+動畫間插值為線性模式。
 
 .. _class_AnimationNodeBlendSpace1D_constant_BLEND_MODE_DISCRETE:
 
@@ -102,7 +102,7 @@ The interpolation between animations is linear.
 
 :ref:`BlendMode<enum_AnimationNodeBlendSpace1D_BlendMode>` **BLEND_MODE_DISCRETE** = ``1``
 
-The blend space plays the animation of the animation node which blending position is closest to. Useful for frame-by-frame 2D animations.
+混合空間播放與目前位置最近的動畫節點，可用於逐幀 2D 動畫。
 
 .. _class_AnimationNodeBlendSpace1D_constant_BLEND_MODE_DISCRETE_CARRY:
 
@@ -110,7 +110,7 @@ The blend space plays the animation of the animation node which blending positio
 
 :ref:`BlendMode<enum_AnimationNodeBlendSpace1D_BlendMode>` **BLEND_MODE_DISCRETE_CARRY** = ``2``
 
-Similar to :ref:`BLEND_MODE_DISCRETE<class_AnimationNodeBlendSpace1D_constant_BLEND_MODE_DISCRETE>`, but starts the new animation at the last animation's playback position.
+類似 :ref:`BLEND_MODE_DISCRETE<class_AnimationNodeBlendSpace1D_constant_BLEND_MODE_DISCRETE>`\ ，但新動畫會自上一段動畫的播放位置開始。
 
 .. rst-class:: classref-section-separator
 
@@ -118,8 +118,8 @@ Similar to :ref:`BLEND_MODE_DISCRETE<class_AnimationNodeBlendSpace1D_constant_BL
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AnimationNodeBlendSpace1D_property_blend_mode:
 
@@ -132,7 +132,7 @@ Property Descriptions
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_AnimationNodeBlendSpace1D_BlendMode>`\ )
 - :ref:`BlendMode<enum_AnimationNodeBlendSpace1D_BlendMode>` **get_blend_mode**\ (\ )
 
-Controls the interpolation between animations.
+控制動畫之間的插值方式。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Controls the interpolation between animations.
 - |void| **set_max_space**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_space**\ (\ )
 
-The blend space's axis's upper limit for the points' position. See :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`.
+混合空間軸向的點位置上限。參見 :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ The blend space's axis's upper limit for the points' position. See :ref:`add_ble
 - |void| **set_min_space**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_space**\ (\ )
 
-The blend space's axis's lower limit for the points' position. See :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`.
+混合空間軸向的點位置下限。參見 :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ The blend space's axis's lower limit for the points' position. See :ref:`add_ble
 - |void| **set_snap**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_snap**\ (\ )
 
-Position increment to snap to when moving a point on the axis.
+在軸上移動點時的捕捉間距。
 
 .. rst-class:: classref-item-separator
 
@@ -200,9 +200,9 @@ Position increment to snap to when moving a point on the axis.
 - |void| **set_use_sync**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_sync**\ (\ )
 
-If ``false``, the blended animations' frame are stopped when the blend value is ``0``.
+若為 ``false``\ ，當混合值為 ``0`` 時會停止混合動畫的影格。
 
-If ``true``, forcing the blended animations to advance frame.
+若為 ``true``\ ，仍會強制推進混合動畫影格。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ If ``true``, forcing the blended animations to advance frame.
 - |void| **set_value_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_value_label**\ (\ )
 
-Label of the virtual axis of the blend space.
+混合空間虛擬軸的標籤。
 
 .. rst-class:: classref-section-separator
 
@@ -227,8 +227,8 @@ Label of the virtual axis of the blend space.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AnimationNodeBlendSpace1D_method_add_blend_point:
 
@@ -236,7 +236,7 @@ Method Descriptions
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`float<class_float>`, at_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_add_blend_point>`
 
-Adds a new point that represents a ``node`` on the virtual axis at a given position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+在虛擬軸上 ``pos`` 位置新增代表 ``node`` 的點。可透過 ``at_index`` 指定插入索引；預設則插入至陣列末端。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Adds a new point that represents a ``node`` on the virtual axis at a given posit
 
 :ref:`int<class_int>` **get_blend_point_count**\ (\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_get_blend_point_count>`
 
-Returns the number of points on the blend axis.
+回傳混合軸上的點數量。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Returns the number of points on the blend axis.
 
 :ref:`AnimationRootNode<class_AnimationRootNode>` **get_blend_point_node**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_get_blend_point_node>`
 
-Returns the :ref:`AnimationNode<class_AnimationNode>` referenced by the point at index ``point``.
+回傳索引 ``point`` 之點所參照的 :ref:`AnimationNode<class_AnimationNode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns the :ref:`AnimationNode<class_AnimationNode>` referenced by the point at
 
 :ref:`float<class_float>` **get_blend_point_position**\ (\ point\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeBlendSpace1D_method_get_blend_point_position>`
 
-Returns the position of the point at index ``point``.
+回傳索引 ``point`` 之點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Returns the position of the point at index ``point``.
 
 |void| **remove_blend_point**\ (\ point\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_remove_blend_point>`
 
-Removes the point at index ``point`` from the blend axis.
+自混合軸移除索引 ``point`` 之點。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ Removes the point at index ``point`` from the blend axis.
 
 |void| **set_blend_point_node**\ (\ point\: :ref:`int<class_int>`, node\: :ref:`AnimationRootNode<class_AnimationRootNode>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_set_blend_point_node>`
 
-Changes the :ref:`AnimationNode<class_AnimationNode>` referenced by the point at index ``point``.
+更換索引 ``point`` 之點所參照的 :ref:`AnimationNode<class_AnimationNode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -308,14 +308,14 @@ Changes the :ref:`AnimationNode<class_AnimationNode>` referenced by the point at
 
 |void| **set_blend_point_position**\ (\ point\: :ref:`int<class_int>`, pos\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_set_blend_point_position>`
 
-Updates the position of the point at index ``point`` on the blend axis.
+更新混合軸上索引 ``point`` 之點的位置。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

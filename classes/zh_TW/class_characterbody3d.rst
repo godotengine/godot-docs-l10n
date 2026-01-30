@@ -5,42 +5,42 @@
 CharacterBody3D
 ===============
 
-**Inherits:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 3D physics body specialized for characters moved by script.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**CharacterBody3D** is a specialized class for physics bodies that are meant to be user-controlled. They are not affected by physics at all, but they affect other physics bodies in their path. They are mainly used to provide high-level API to move objects with wall and slope detection (:ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` method) in addition to the general collision detection provided by :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`. This makes it useful for highly configurable physics bodies that must move in specific ways and collide with the world, as is often the case with user-controlled characters.
-
-For game objects that don't require complex movement or collision detection, such as moving platforms, :ref:`AnimatableBody3D<class_AnimatableBody3D>` is simpler to configure.
+專門用於通過腳本移動的角色的 3D 物理物體。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
+**CharacterBody3D** 是針對使用者控制的物理體的特化類。它們不會受到物理的影響，但會影響路徑上的其他物理體。除了由 :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>` 提供的常見的碰撞偵測之外，它們主要用於提供移動對象的高階 API，能夠偵測牆壁和斜坡（\ :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 方法）。因此適用於需要高度可配置的物理體，因為通常是使用者控制的角色，所以必須按照特定的方式移動、與世界發生碰撞。
+
+如果是移動平臺等不需要複雜移動和碰撞偵測的遊戲物件，\ :ref:`AnimatableBody3D<class_AnimatableBody3D>` 更方便配置。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`物理介紹 <../tutorials/physics/physics_introduction>`
 
 - :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
 
-- :doc:`Kinematic character (2D) <../tutorials/physics/kinematic_character_2d>`
+- :doc:`運動學角色（2D） <../tutorials/physics/kinematic_character_2d>`
 
-- `3D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2739>`__
+- `3D 動力學角色演示 <https://godotengine.org/asset-library/asset/2739>`__
 
-- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+- `3D 平台跳躍示範 <https://godotengine.org/asset-library/asset/2748>`__
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -131,8 +131,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_CharacterBody3D_MotionMode:
 
@@ -146,7 +146,7 @@ enum **MotionMode**: :ref:`🔗<enum_CharacterBody3D_MotionMode>`
 
 :ref:`MotionMode<enum_CharacterBody3D_MotionMode>` **MOTION_MODE_GROUNDED** = ``0``
 
-Apply when notions of walls, ceiling and floor are relevant. In this mode the body motion will react to slopes (acceleration/slowdown). This mode is suitable for grounded games like platformers.
+請在牆壁、天花板、地板等概念有意義時套用。在該模式下，物體運動會對斜坡作出反應（加減速）。該模式適合平臺跳躍等地面遊戲。
 
 .. _class_CharacterBody3D_constant_MOTION_MODE_FLOATING:
 
@@ -154,7 +154,7 @@ Apply when notions of walls, ceiling and floor are relevant. In this mode the bo
 
 :ref:`MotionMode<enum_CharacterBody3D_MotionMode>` **MOTION_MODE_FLOATING** = ``1``
 
-Apply when there is no notion of floor or ceiling. All collisions will be reported as ``on_wall``. In this mode, when you slide, the speed will always be constant. This mode is suitable for games without ground like space games.
+請在沒有地板和天花板等概念時套用。所有碰撞都會作為 ``on_wall``\ （撞牆）彙報。在該模式下，滑動時的速度恒定。該模式適合太空遊戲等沒有地面的遊戲。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody3D_PlatformOnLeave>`
 
 :ref:`PlatformOnLeave<enum_CharacterBody3D_PlatformOnLeave>` **PLATFORM_ON_LEAVE_ADD_VELOCITY** = ``0``
 
-Add the last platform velocity to the :ref:`velocity<class_CharacterBody3D_property_velocity>` when you leave a moving platform.
+離開移動平臺時，將最後的平臺速度新增到 :ref:`velocity<class_CharacterBody3D_property_velocity>` 中。
 
 .. _class_CharacterBody3D_constant_PLATFORM_ON_LEAVE_ADD_UPWARD_VELOCITY:
 
@@ -180,7 +180,7 @@ Add the last platform velocity to the :ref:`velocity<class_CharacterBody3D_prope
 
 :ref:`PlatformOnLeave<enum_CharacterBody3D_PlatformOnLeave>` **PLATFORM_ON_LEAVE_ADD_UPWARD_VELOCITY** = ``1``
 
-Add the last platform velocity to the :ref:`velocity<class_CharacterBody3D_property_velocity>` when you leave a moving platform, but any downward motion is ignored. It's useful to keep full jump height even when the platform is moving down.
+離開移動平臺時，將最後的平臺速度新增到 :ref:`velocity<class_CharacterBody3D_property_velocity>` 中，但是忽略向下的運動。如果想要在平臺向下移動時保持完整的跳躍高度，就非常有用。
 
 .. _class_CharacterBody3D_constant_PLATFORM_ON_LEAVE_DO_NOTHING:
 
@@ -188,7 +188,7 @@ Add the last platform velocity to the :ref:`velocity<class_CharacterBody3D_prope
 
 :ref:`PlatformOnLeave<enum_CharacterBody3D_PlatformOnLeave>` **PLATFORM_ON_LEAVE_DO_NOTHING** = ``2``
 
-Do nothing when leaving a platform.
+離開平臺時什麼也不做。
 
 .. rst-class:: classref-section-separator
 
@@ -196,8 +196,8 @@ Do nothing when leaving a platform.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CharacterBody3D_property_floor_block_on_wall:
 
@@ -210,7 +210,7 @@ Property Descriptions
 - |void| **set_floor_block_on_wall_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_floor_block_on_wall_enabled**\ (\ )
 
-If ``true``, the body will be able to move on the floor only. This option avoids to be able to walk on walls, it will however allow to slide down along them.
+如果為 ``true``\ ，則該物體將只能在地板上移動。此選項能夠避免在牆壁上行走，但允許沿牆壁向下滑動。
 
 .. rst-class:: classref-item-separator
 
@@ -227,9 +227,9 @@ If ``true``, the body will be able to move on the floor only. This option avoids
 - |void| **set_floor_constant_speed_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_floor_constant_speed_enabled**\ (\ )
 
-If ``false`` (by default), the body will move faster on downward slopes and slower on upward slopes.
+如果為 ``false``\ （預設），則該物體在下坡時會移動得更快，在上坡時會移動得更慢。
 
-If ``true``, the body will always move at the same speed on the ground no matter the slope. Note that you need to use :ref:`floor_snap_length<class_CharacterBody3D_property_floor_snap_length>` to stick along a downward slope at constant speed.
+如果為 ``true``\ ，則無論坡度如何，該物體在地面上都會以相同的速度移動。請注意，你需要使用 :ref:`floor_snap_length<class_CharacterBody3D_property_floor_snap_length>` 以恒定速度粘著至向下的斜坡。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ If ``true``, the body will always move at the same speed on the ground no matter
 - |void| **set_floor_max_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_floor_max_angle**\ (\ )
 
-Maximum angle (in radians) where a slope is still considered a floor (or a ceiling), rather than a wall, when calling :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. The default value equals 45 degrees.
+呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，斜坡仍被視為地板（或天花板）而不是牆壁的最大角度（單位為弧度）。預設值等於 45 度。
 
 .. rst-class:: classref-item-separator
 
@@ -263,9 +263,9 @@ Maximum angle (in radians) where a slope is still considered a floor (or a ceili
 - |void| **set_floor_snap_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_floor_snap_length**\ (\ )
 
-Sets a snapping distance. When set to a value different from ``0.0``, the body is kept attached to slopes when calling :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. The snapping vector is determined by the given distance along the opposite direction of the :ref:`up_direction<class_CharacterBody3D_property_up_direction>`.
+設定吸附距離。設為非 ``0.0`` 值時，該物體在呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時會保持附著到斜坡上。吸附向量會根據給定的距離和 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 反方向決定。
 
-As long as the snapping vector is in contact with the ground and the body moves against :ref:`up_direction<class_CharacterBody3D_property_up_direction>`, the body will remain attached to the surface. Snapping is not applied if the body moves along :ref:`up_direction<class_CharacterBody3D_property_up_direction>`, meaning it contains vertical rising velocity, so it will be able to detach from the ground when jumping or when the body is pushed up by something. If you want to apply a snap without taking into account the velocity, use :ref:`apply_floor_snap()<class_CharacterBody3D_method_apply_floor_snap>`.
+只要吸附向量與地面有接觸，該物體就會逆 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 移動，保持附著到表面。如果該物體是沿著 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 移動的，則不會套用吸附，這樣跳躍時或者被其他物體推動時就能夠不再附著地面。如果想要在套用吸附時無視速度，請使用 :ref:`apply_floor_snap()<class_CharacterBody3D_method_apply_floor_snap>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -282,9 +282,9 @@ As long as the snapping vector is in contact with the ground and the body moves 
 - |void| **set_floor_stop_on_slope_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_floor_stop_on_slope_enabled**\ (\ )
 
-If ``true``, the body will not slide on slopes when calling :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` when the body is standing still.
+如果為 ``true``\ ，則該物體靜止時，呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 不會讓它在斜坡上發生滑動。
 
-If ``false``, the body will slide on floor's slopes when :ref:`velocity<class_CharacterBody3D_property_velocity>` applies a downward force.
+如果為 ``false``\ ，則 :ref:`velocity<class_CharacterBody3D_property_velocity>` 施加向下的力時，該物體會在地板的斜坡上發生滑動。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ Sets the motion mode which defines the behavior of :ref:`move_and_slide()<class_
 - |void| **set_platform_floor_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_platform_floor_layers**\ (\ )
 
-Collision layers that will be included for detecting floor bodies that will act as moving platforms to be followed by the **CharacterBody3D**. By default, all floor bodies are detected and propagate their velocity.
+用於偵測地板物體的碰撞層，該地板物體會被用作 **CharacterBody3D** 所要跟隨的移動平臺。預設情況下會偵測所有地板物體並傳播其速度。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Sets the behavior to apply when you leave a moving platform. By default, to be p
 - |void| **set_platform_wall_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_platform_wall_layers**\ (\ )
 
-Collision layers that will be included for detecting wall bodies that will act as moving platforms to be followed by the **CharacterBody3D**. By default, all wall bodies are ignored.
+用於偵測牆壁物體的碰撞層，該牆壁物體會被用作 **CharacterBody3D** 所要跟隨的移動平臺。預設情況下會忽略所有牆壁物體。
 
 .. rst-class:: classref-item-separator
 
@@ -386,13 +386,13 @@ Collision layers that will be included for detecting wall bodies that will act a
 - |void| **set_safe_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_safe_margin**\ (\ )
 
-Extra margin used for collision recovery when calling :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+額外邊距，用於在呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時進行碰撞恢復。
 
-If the body is at least this close to another body, it will consider them to be colliding and will be pushed away before performing the actual motion.
+如果該物體與另一個物體至少有這麼近，就會認為它們正在碰撞，並在執行實際運動前推開。
 
-A higher value means it's more flexible for detecting collision, which helps with consistently detecting walls and floors.
+值較高時，對碰撞的偵測會更加靈活，有助於持續偵測牆壁和地板。
 
-A lower value forces the collision algorithm to use more exact detection, so it can be used in cases that specifically require precision, e.g at very low scale to avoid visible jittering, or for stability with a stack of character bodies.
+值較低時，會強制碰撞演算法進行更精確的偵測，因此可以在特別需要精度的情況下使用，例如在非常低的縮放下避免可見的抖動，或者為了讓一堆角色物體的達到穩定。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ A lower value forces the collision algorithm to use more exact detection, so it 
 - |void| **set_slide_on_ceiling_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_slide_on_ceiling_enabled**\ (\ )
 
-If ``true``, during a jump against the ceiling, the body will slide, if ``false`` it will be stopped and will fall vertically.
+如果為 ``true``\ ，則該物體在跳到天花板時會滑動；如果為 ``false``\ ，則會停止並垂直下落。
 
 .. rst-class:: classref-item-separator
 
@@ -470,8 +470,8 @@ Minimum angle (in radians) where the body is allowed to slide when it encounters
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_CharacterBody3D_method_apply_floor_snap:
 
@@ -479,7 +479,7 @@ Method Descriptions
 
 |void| **apply_floor_snap**\ (\ ) :ref:`🔗<class_CharacterBody3D_method_apply_floor_snap>`
 
-Allows to manually apply a snap to the floor regardless of the body's velocity. This function does nothing when :ref:`is_on_floor()<class_CharacterBody3D_method_is_on_floor>` returns ``true``.
+允許手動套用向地板的吸附，無論該物體的速度多大。\ :ref:`is_on_floor()<class_CharacterBody3D_method_is_on_floor>` 返回 ``true`` 時這個函式什麼都不做。
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +517,7 @@ Returns the collision normal of the floor at the last collision point. Only vali
 
 :ref:`Vector3<class_Vector3>` **get_last_motion**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_get_last_motion>`
 
-Returns the last motion applied to the **CharacterBody3D** during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. The movement can be split into multiple motions when sliding occurs, and this method return the last one, which is useful to retrieve the current direction of the movement.
+返回最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時施加給該 **CharacterBody3D** 的最後一次運動。如果發生了滑動，則該移動可以拆分為多次運動，此方法返回的是最後一次，可用於獲取目前的移動方向。
 
 .. rst-class:: classref-item-separator
 
@@ -541,7 +541,7 @@ Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>` if a collision
 
 :ref:`Vector3<class_Vector3>` **get_platform_angular_velocity**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_get_platform_angular_velocity>`
 
-Returns the angular velocity of the platform at the last collision point. Only valid after calling :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+返回位於最近一次碰撞點的平臺角速度。僅在呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 後有效。
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ Returns the angular velocity of the platform at the last collision point. Only v
 
 :ref:`Vector3<class_Vector3>` **get_platform_velocity**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_get_platform_velocity>`
 
-Returns the linear velocity of the platform at the last collision point. Only valid after calling :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+返回位於最近一次碰撞點的平臺線速度。僅在呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 後有效。
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ Returns the linear velocity of the platform at the last collision point. Only va
 
 :ref:`Vector3<class_Vector3>` **get_position_delta**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_get_position_delta>`
 
-Returns the travel (position delta) that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+返回最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 所產生的運動（位置差異量）。
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Returns the travel (position delta) that occurred during the last call to :ref:`
 
 :ref:`Vector3<class_Vector3>` **get_real_velocity**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_get_real_velocity>`
 
-Returns the current real velocity since the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. For example, when you climb a slope, you will move diagonally even though the velocity is horizontal. This method returns the diagonal movement, as opposed to :ref:`velocity<class_CharacterBody3D_property_velocity>` which returns the requested velocity.
+返回最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 之後的目前真實速度。例如，即便速度為水平方向，爬坡時你也會斜向移動。此方法返回的就是那個斜向移動，與返回請求速度的 :ref:`velocity<class_CharacterBody3D_property_velocity>` 相對。
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contain
 
 :ref:`int<class_int>` **get_slide_collision_count**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_get_slide_collision_count>`
 
-Returns the number of times the body collided and changed direction during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`.
+返回最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體發生碰撞並改變方向的次數。
 
 .. rst-class:: classref-item-separator
 
@@ -627,7 +627,7 @@ Returns the collision normal of the wall at the last collision point. Only valid
 
 :ref:`bool<class_bool>` **is_on_ceiling**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_ceiling>`
 
-Returns ``true`` if the body collided with the ceiling on the last call of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody3D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` are used to determine whether a surface is "ceiling" or not.
+如果最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體和天花板發生了碰撞，則返回 ``true``\ 。否則返回 ``false``\ 。決定表面是否為“天花板”的是 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 和 :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -639,7 +639,7 @@ Returns ``true`` if the body collided with the ceiling on the last call of :ref:
 
 :ref:`bool<class_bool>` **is_on_ceiling_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_ceiling_only>`
 
-Returns ``true`` if the body collided only with the ceiling on the last call of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody3D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` are used to determine whether a surface is "ceiling" or not.
+如果最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體僅和天花板發生了碰撞，則返回 ``true``\ 。否則返回 ``false``\ 。決定表面是否為“天花板”的是 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 和 :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -651,7 +651,7 @@ Returns ``true`` if the body collided only with the ceiling on the last call of 
 
 :ref:`bool<class_bool>` **is_on_floor**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_floor>`
 
-Returns ``true`` if the body collided with the floor on the last call of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody3D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` are used to determine whether a surface is "floor" or not.
+如果最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體和地板發生了碰撞，則返回 ``true``\ 。否則返回 ``false``\ 。決定表面是否為“地板”的是 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 和 :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Returns ``true`` if the body collided with the floor on the last call of :ref:`m
 
 :ref:`bool<class_bool>` **is_on_floor_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_floor_only>`
 
-Returns ``true`` if the body collided only with the floor on the last call of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody3D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` are used to determine whether a surface is "floor" or not.
+如果最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體僅和地板發生了碰撞，則返回 ``true``\ 。否則返回 ``false``\ 。決定表面是否為“地板”的是 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 和 :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Returns ``true`` if the body collided only with the floor on the last call of :r
 
 :ref:`bool<class_bool>` **is_on_wall**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_wall>`
 
-Returns ``true`` if the body collided with a wall on the last call of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody3D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` are used to determine whether a surface is "wall" or not.
+如果最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體和牆壁發生了碰撞，則返回 ``true``\ 。否則返回 ``false``\ 。決定表面是否為“牆壁”的是 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 和 :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ Returns ``true`` if the body collided with a wall on the last call of :ref:`move
 
 :ref:`bool<class_bool>` **is_on_wall_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody3D_method_is_on_wall_only>`
 
-Returns ``true`` if the body collided only with a wall on the last call of :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody3D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>` are used to determine whether a surface is "wall" or not.
+如果最近一次呼叫 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 時，該物體僅和牆壁發生了碰撞，則返回 ``true``\ 。否則返回 ``false``\ 。決定表面是否為“牆壁”的是 :ref:`up_direction<class_CharacterBody3D_property_up_direction>` 和 :ref:`floor_max_angle<class_CharacterBody3D_property_floor_max_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -709,12 +709,12 @@ When the body touches a moving platform, the platform's velocity is automaticall
 
 Returns ``true`` if the body collided, otherwise, returns ``false``.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

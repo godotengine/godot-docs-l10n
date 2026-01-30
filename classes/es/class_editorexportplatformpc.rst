@@ -9,14 +9,14 @@ EditorExportPlatformPC
 
 **Heredado por:** :ref:`EditorExportPlatformLinuxBSD<class_EditorExportPlatformLinuxBSD>`, :ref:`EditorExportPlatformWindows<class_EditorExportPlatformWindows>`
 
-Base class for the desktop platform exporter (Windows and Linux/BSD).
+Clase base para el exportador de plataformas de escritorio (Windows y Linux/BSD).
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-The base class for the desktop platform exporters. These include Windows and Linux/BSD, but not macOS. See the classes inheriting from this one for more details.
+La clase base para los exportadores de plataformas de escritorio. Estos incluyen Windows y Linux/BSD, pero no macOS. Véase las clases que heredan de esta para más detalles.
 
 .. rst-class:: classref-introduction-group
 

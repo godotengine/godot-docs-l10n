@@ -5,25 +5,25 @@
 EditorResourcePicker
 ====================
 
-**Inherits:** :ref:`HBoxContainer<class_HBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`HBoxContainer<class_HBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorScriptPicker<class_EditorScriptPicker>`
+**派生：** :ref:`EditorScriptPicker<class_EditorScriptPicker>`
 
-Godot editor's control for selecting :ref:`Resource<class_Resource>` type properties.
+Godot 编辑器用于选择 :ref:`Resource<class_Resource>` 类型属性的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This :ref:`Control<class_Control>` node is used in the editor's Inspector dock to allow editing of :ref:`Resource<class_Resource>` type properties. It provides options for creating, loading, saving and converting resources. Can be used with :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` to recreate the same behavior.
+此 :ref:`Control<class_Control>` 节点用于编辑器的属性检查器以允许编辑 :ref:`Resource<class_Resource>` 类型属性。它提供了创建、加载、保存和转换资源的选项。可以与 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` 检查器插件一起使用以重新创建相同的行为。
 
-\ **Note:** This :ref:`Control<class_Control>` does not include any editor for the resource, as editing is controlled by the Inspector dock itself or sub-Inspectors.
+\ **注意：**\ 这个 :ref:`Control<class_Control>` 不包括资源的任何编辑器，因为编辑是由属性检查器本身或子检查器控制的。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_EditorResourcePicker_signal_resource_changed:
 
@@ -71,7 +71,7 @@ Signals
 
 **resource_changed**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_EditorResourcePicker_signal_resource_changed>`
 
-Emitted when the value of the edited resource was changed.
+当正在编辑的资源改变值时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ Emitted when the value of the edited resource was changed.
 
 **resource_selected**\ (\ resource\: :ref:`Resource<class_Resource>`, inspect\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_signal_resource_selected>`
 
-Emitted when the resource value was set and user clicked to edit it. When ``inspect`` is ``true``, the signal was caused by the context menu "Edit" or "Inspect" option.
+当资源值被设置，并且用户点击它编辑时触发。当 ``inspect`` 为 ``true`` 时，该信号是由上下文菜单“编辑”或“检查”选项引起的。
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ Emitted when the resource value was set and user clicked to edit it. When ``insp
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorResourcePicker_property_base_type:
 
@@ -105,7 +105,7 @@ Property Descriptions
 - |void| **set_base_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_base_type**\ (\ )
 
-The base type of allowed resource types. Can be a comma-separated list of several options.
+允许资源类型的基本类型。可以是几个选项的逗号分离列表。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ The base type of allowed resource types. Can be a comma-separated list of severa
 - |void| **set_editable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editable**\ (\ )
 
-If ``true``, the value can be selected and edited.
+如果为 ``true``\ ，则可以选择和编辑该值。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ If ``true``, the value can be selected and edited.
 - |void| **set_edited_resource**\ (\ value\: :ref:`Resource<class_Resource>`\ )
 - :ref:`Resource<class_Resource>` **get_edited_resource**\ (\ )
 
-The edited resource value.
+已编辑的资源值。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ The edited resource value.
 - |void| **set_toggle_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_toggle_mode**\ (\ )
 
-If ``true``, the main button with the resource preview works in the toggle mode. Use :ref:`set_toggle_pressed()<class_EditorResourcePicker_method_set_toggle_pressed>` to manually set the state.
+如果为 ``true``\ ，带有资源预览的主按钮在切换模式下工作。使用 :ref:`set_toggle_pressed()<class_EditorResourcePicker_method_set_toggle_pressed>` 来手动设置状态。
 
 .. rst-class:: classref-section-separator
 
@@ -164,8 +164,8 @@ If ``true``, the main button with the resource preview works in the toggle mode.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorResourcePicker_private_method__handle_menu_selected:
 
@@ -173,7 +173,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **_handle_menu_selected**\ (\ id\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__handle_menu_selected>`
 
-This virtual method can be implemented to handle context menu items not handled by default. See :ref:`_set_create_options()<class_EditorResourcePicker_private_method__set_create_options>`.
+该虚方法可以被实现，以处理默认未处理的上下文菜单项目。请参阅 :ref:`_set_create_options()<class_EditorResourcePicker_private_method__set_create_options>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ This virtual method can be implemented to handle context menu items not handled 
 
 |void| **_set_create_options**\ (\ menu_node\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorResourcePicker_private_method__set_create_options>`
 
-This virtual method is called when updating the context menu of **EditorResourcePicker**. Implement this method to override the "New ..." items with your own options. ``menu_node`` is a reference to the :ref:`PopupMenu<class_PopupMenu>` node.
+在更新 **EditorResourcePicker** 的上下文菜单时调用该虚方法。实现该方法以使用你自己的选项覆盖“新建 ...”项目。\ ``menu_node`` 是对 :ref:`PopupMenu<class_PopupMenu>` 节点的引用。
 
-\ **Note:** Implement :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` to handle these custom items.
+\ **注意：**\ 实现 :ref:`_handle_menu_selected()<class_EditorResourcePicker_private_method__handle_menu_selected>` 来处理这些自定义项。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ This virtual method is called when updating the context menu of **EditorResource
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_allowed_types**\ (\ ) |const| :ref:`🔗<class_EditorResourcePicker_method_get_allowed_types>`
 
-Returns a list of all allowed types and subtypes corresponding to the :ref:`base_type<class_EditorResourcePicker_property_base_type>`. If the :ref:`base_type<class_EditorResourcePicker_property_base_type>` is empty, an empty list is returned.
+返回一个与 :ref:`base_type<class_EditorResourcePicker_property_base_type>` 对应的所有允许的类型和子类型的列表。如果 :ref:`base_type<class_EditorResourcePicker_property_base_type>` 是空，将返回一个空的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -211,14 +211,14 @@ Returns a list of all allowed types and subtypes corresponding to the :ref:`base
 
 |void| **set_toggle_pressed**\ (\ pressed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorResourcePicker_method_set_toggle_pressed>`
 
-Sets the toggle mode state for the main button. Works only if :ref:`toggle_mode<class_EditorResourcePicker_property_toggle_mode>` is set to ``true``.
+设置主按钮的切换模式状态。只有当 :ref:`toggle_mode<class_EditorResourcePicker_property_toggle_mode>` 被设置为 ``true`` 时才起作用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

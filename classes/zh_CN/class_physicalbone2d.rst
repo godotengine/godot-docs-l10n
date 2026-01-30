@@ -8,25 +8,25 @@
 PhysicalBone2D
 ==============
 
-**Inherits:** :ref:`RigidBody2D<class_RigidBody2D>` **<** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RigidBody2D<class_RigidBody2D>` **<** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A :ref:`RigidBody2D<class_RigidBody2D>`-derived node used to make :ref:`Bone2D<class_Bone2D>`\ s in a :ref:`Skeleton2D<class_Skeleton2D>` react to physics.
+派生自 :ref:`RigidBody2D<class_RigidBody2D>` 的节点，用于让 :ref:`Skeleton2D<class_Skeleton2D>` 中的 :ref:`Bone2D<class_Bone2D>` 对物理作出反应。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-The **PhysicalBone2D** node is a :ref:`RigidBody2D<class_RigidBody2D>`-based node that can be used to make :ref:`Bone2D<class_Bone2D>`\ s in a :ref:`Skeleton2D<class_Skeleton2D>` react to physics.
+**PhysicalBone2D** 节点基于 :ref:`RigidBody2D<class_RigidBody2D>`\ ，可以用来使 :ref:`Skeleton2D<class_Skeleton2D>` 中的 :ref:`Bone2D<class_Bone2D>` 节点对物理作出反应。
 
-\ **Note:** To make the :ref:`Bone2D<class_Bone2D>`\ s visually follow the **PhysicalBone2D** node, use a :ref:`SkeletonModification2DPhysicalBones<class_SkeletonModification2DPhysicalBones>` modification on the :ref:`Skeleton2D<class_Skeleton2D>` parent.
+\ **注意：**\ 为了让 :ref:`Bone2D<class_Bone2D>` 节点在视觉上跟随 **PhysicalBone2D** 节点，请在父级 :ref:`Skeleton2D<class_Skeleton2D>` 节点上使用 :ref:`SkeletonModification2DPhysicalBones<class_SkeletonModification2DPhysicalBones>` 修改。
 
-\ **Note:** The **PhysicalBone2D** node does not automatically create a :ref:`Joint2D<class_Joint2D>` node to keep **PhysicalBone2D** nodes together. They must be created manually. For most cases, you want to use a :ref:`PinJoint2D<class_PinJoint2D>` node. The **PhysicalBone2D** node will automatically configure the :ref:`Joint2D<class_Joint2D>` node once it's been added as a child node.
+\ **注意：**\ **PhysicalBone2D** 节点不会自动创建 :ref:`Joint2D<class_Joint2D>` 节点来让 **PhysicalBone2D** 节点保持在一起。你需要手动创建这些节点。大多数情况下，你想要使用的都是 :ref:`PinJoint2D<class_PinJoint2D>` 节点。创建 **PhysicalBone2D** 子节点后会自动配置 :ref:`Joint2D<class_Joint2D>` 节点。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PhysicalBone2D_property_auto_configure_joint:
 
@@ -77,7 +77,7 @@ Property Descriptions
 - |void| **set_auto_configure_joint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_auto_configure_joint**\ (\ )
 
-If ``true``, the **PhysicalBone2D** will automatically configure the first :ref:`Joint2D<class_Joint2D>` child node. The automatic configuration is limited to setting up the node properties and positioning the :ref:`Joint2D<class_Joint2D>`.
+如果为 ``true``\ ，\ **PhysicalBone2D** 节点会自动配置第一个 :ref:`Joint2D<class_Joint2D>` 子节点。自动配置仅限于设置节点属性和定位该 :ref:`Joint2D<class_Joint2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +94,7 @@ If ``true``, the **PhysicalBone2D** will automatically configure the first :ref:
 - |void| **set_bone2d_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone2d_index**\ (\ )
 
-The index of the :ref:`Bone2D<class_Bone2D>` that this **PhysicalBone2D** should simulate.
+该 **PhysicalBone2D** 节点所模拟的 :ref:`Bone2D<class_Bone2D>` 节点的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ The index of the :ref:`Bone2D<class_Bone2D>` that this **PhysicalBone2D** should
 - |void| **set_bone2d_nodepath**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_bone2d_nodepath**\ (\ )
 
-The :ref:`NodePath<class_NodePath>` to the :ref:`Bone2D<class_Bone2D>` that this **PhysicalBone2D** should simulate.
+该 **PhysicalBone2D** 所模拟的 :ref:`Bone2D<class_Bone2D>` 的 :ref:`NodePath<class_NodePath>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ The :ref:`NodePath<class_NodePath>` to the :ref:`Bone2D<class_Bone2D>` that this
 - |void| **set_follow_bone_when_simulating**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_follow_bone_when_simulating**\ (\ )
 
-If ``true``, the **PhysicalBone2D** will keep the transform of the bone it is bound to when simulating physics.
+如果为 ``true``\ ，则该 **PhysicalBone2D** 在模拟物理时会保持其绑定的骨骼的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -145,9 +145,9 @@ If ``true``, the **PhysicalBone2D** will keep the transform of the bone it is bo
 - |void| **set_simulate_physics**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_simulate_physics**\ (\ )
 
-If ``true``, the **PhysicalBone2D** will start simulating using physics. If ``false``, the **PhysicalBone2D** will follow the transform of the :ref:`Bone2D<class_Bone2D>` node.
+如果为 ``true``\ ，\ **PhysicalBone2D** 将开始使用物理进行模拟。如果为 ``false``\ ，\ **PhysicalBone2D** 将跟随 :ref:`Bone2D<class_Bone2D>` 节点的变换。
 
-\ **Note:** To have the :ref:`Bone2D<class_Bone2D>`\ s visually follow the **PhysicalBone2D**, use a :ref:`SkeletonModification2DPhysicalBones<class_SkeletonModification2DPhysicalBones>` modification on the :ref:`Skeleton2D<class_Skeleton2D>` node with the :ref:`Bone2D<class_Bone2D>` nodes.
+\ **注意：**\ 要使 :ref:`Bone2D<class_Bone2D>` 节点在视觉上跟随 **PhysicalBone2D** 节点，请在具有 :ref:`Bone2D<class_Bone2D>` 节点的 :ref:`Skeleton2D<class_Skeleton2D>` 节点上使用一个 :ref:`SkeletonModification2DPhysicalBones<class_SkeletonModification2DPhysicalBones>` 修改。
 
 .. rst-class:: classref-section-separator
 
@@ -155,8 +155,8 @@ If ``true``, the **PhysicalBone2D** will start simulating using physics. If ``fa
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicalBone2D_method_get_joint:
 
@@ -164,7 +164,7 @@ Method Descriptions
 
 :ref:`Joint2D<class_Joint2D>` **get_joint**\ (\ ) |const| :ref:`🔗<class_PhysicalBone2D_method_get_joint>`
 
-Returns the first :ref:`Joint2D<class_Joint2D>` child node, if one exists. This is mainly a helper function to make it easier to get the :ref:`Joint2D<class_Joint2D>` that the **PhysicalBone2D** is autoconfiguring.
+如果存在，则返回第一个 :ref:`Joint2D<class_Joint2D>` 子节点。主要是辅助函数，用于简化对 **PhysicalBone2D** 所自动配置的 :ref:`Joint2D<class_Joint2D>` 的获取。
 
 .. rst-class:: classref-item-separator
 
@@ -176,14 +176,14 @@ Returns the first :ref:`Joint2D<class_Joint2D>` child node, if one exists. This 
 
 :ref:`bool<class_bool>` **is_simulating_physics**\ (\ ) |const| :ref:`🔗<class_PhysicalBone2D_method_is_simulating_physics>`
 
-Returns a boolean that indicates whether the **PhysicalBone2D** is running and simulating using the Godot 2D physics engine. When ``true``, the PhysicalBone2D node is using physics.
+返回一个布尔值，表示 **PhysicalBone2D** 节点是否处于运行状态，正在使用 Godot 2D 物理引擎进行仿真。为 ``true`` 时，该 PhysicalBone2D 节点正在使用物理。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

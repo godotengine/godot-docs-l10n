@@ -5,30 +5,30 @@
 VoxelGIData
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Contains baked voxel global illumination data for use in a :ref:`VoxelGI<class_VoxelGI>` node.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**VoxelGIData** contains baked voxel global illumination for use in a :ref:`VoxelGI<class_VoxelGI>` node. **VoxelGIData** also offers several properties to adjust the final appearance of the global illumination. These properties can be adjusted at run-time without having to bake the :ref:`VoxelGI<class_VoxelGI>` node again.
-
-\ **Note:** To prevent text-based scene files (``.tscn``) from growing too much and becoming slow to load and save, always save **VoxelGIData** to an external binary resource file (``.res``) instead of embedding it within the scene. This can be done by clicking the dropdown arrow next to the **VoxelGIData** resource, choosing **Edit**, clicking the floppy disk icon at the top of the Inspector then choosing **Save As...**.
+包含用於 :ref:`VoxelGI<class_VoxelGI>` 節點的烘焙體素全域光照資料。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+**VoxelGIData** 包含烘焙的體素全域照明，用於 :ref:`VoxelGI<class_VoxelGI>` 節點。\ **VoxelGIData** 還提供了若干用來調整全域照明最終外觀的屬性。這些屬性可以在運作時調整，無須再次烘焙 :ref:`VoxelGI<class_VoxelGI>` 節點。
+
+\ **注意：**\ 為了防止基於文字的場景檔（\ ``.tscn``\ ）過度增長，導致加載和保存速度變慢，請始終將 **VoxelGIData** 保存為外部二進位資源檔（\ ``.res``\ ），不要將其嵌入到場景中。做法是點擊 **VoxelGIData** 資源旁邊的下拉箭頭，選擇\ **編輯**\ ，點擊屬性檢視器頂部的軟碟圖示，然後選擇\ **另存為...**\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VoxelGIData_property_bias:
 
@@ -93,7 +93,7 @@ Property Descriptions
 - |void| **set_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bias**\ (\ )
 
-The normal bias to use for indirect lighting and reflections. Higher values reduce self-reflections visible in non-rough materials, at the cost of more visible light leaking and flatter-looking indirect lighting. To prioritize hiding self-reflections over lighting quality, set :ref:`bias<class_VoxelGIData_property_bias>` to ``0.0`` and :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` to a value between ``1.0`` and ``2.0``.
+間接光照和反射所使用的法線偏移。較高的值可以減少非粗糙材質中可見的自反射，但會增加光線洩漏並讓間接光照看上去更扁平。如果要優先隱藏自反射而不是追求光照質量，請將 :ref:`bias<class_VoxelGIData_property_bias>` 設為 ``0.0``\ ，並將 :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` 設為 ``1.0`` 和 ``2.0`` 之間的值。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ The normal bias to use for indirect lighting and reflections. Higher values redu
 - |void| **set_dynamic_range**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dynamic_range**\ (\ )
 
-The dynamic range to use (``1.0`` represents a low dynamic range scene brightness). Higher values can be used to provide brighter indirect lighting, at the cost of more visible color banding in dark areas (both in indirect lighting and reflections). To avoid color banding, it's recommended to use the lowest value that does not result in visible light clipping.
+要使用的動態範圍（\ ``1.0`` 代表低動態範圍場景亮度）。較高的值可用於提供更明亮的間接光照，但會在較暗的區域產生更多可見的色帶效果（包括間接光照和反射）。為了避免色帶效果，建議將其設定得盡可能低，避免出現明顯的亮度截斷。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ The dynamic range to use (``1.0`` represents a low dynamic range scene brightnes
 - |void| **set_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy**\ (\ )
 
-The energy of the indirect lighting and reflections produced by the :ref:`VoxelGI<class_VoxelGI>` node. Higher values result in brighter indirect lighting. If indirect lighting looks too flat, try decreasing :ref:`propagation<class_VoxelGIData_property_propagation>` while increasing :ref:`energy<class_VoxelGIData_property_energy>` at the same time. See also :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>` which influences the indirect lighting's effective brightness.
+:ref:`VoxelGI<class_VoxelGI>` 節點產生的間接照明和反射的能量。值越高，間接照明越亮。如果間接照明看起來過於平坦，請嘗試減少 :ref:`propagation<class_VoxelGIData_property_propagation>`\ ，同時增加 :ref:`energy<class_VoxelGIData_property_energy>`\ 。另請參閱影響間接照明有效亮度的 :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ The energy of the indirect lighting and reflections produced by the :ref:`VoxelG
 - |void| **set_interior**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_interior**\ (\ )
 
-If ``true``, :ref:`Environment<class_Environment>` lighting is ignored by the :ref:`VoxelGI<class_VoxelGI>` node. If ``false``, :ref:`Environment<class_Environment>` lighting is taken into account by the :ref:`VoxelGI<class_VoxelGI>` node. :ref:`Environment<class_Environment>` lighting updates in real-time, which means it can be changed without having to bake the :ref:`VoxelGI<class_VoxelGI>` node again.
+如果為 ``true``\ ，則 :ref:`VoxelGI<class_VoxelGI>` 節點會忽略 :ref:`Environment<class_Environment>` 光照。如果為 ``false``\ ，則 :ref:`VoxelGI<class_VoxelGI>` 節點會考慮 :ref:`Environment<class_Environment>` 光照。\ :ref:`Environment<class_Environment>` 光照會即時更新，這意味著無需再次烘焙 :ref:`VoxelGI<class_VoxelGI>` 節點即可對其進行更改。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ If ``true``, :ref:`Environment<class_Environment>` lighting is ignored by the :r
 - |void| **set_normal_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_normal_bias**\ (\ )
 
-The normal bias to use for indirect lighting and reflections. Higher values reduce self-reflections visible in non-rough materials, at the cost of more visible light leaking and flatter-looking indirect lighting. See also :ref:`bias<class_VoxelGIData_property_bias>`. To prioritize hiding self-reflections over lighting quality, set :ref:`bias<class_VoxelGIData_property_bias>` to ``0.0`` and :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` to a value between ``1.0`` and ``2.0``.
+用於間接照明和反射的法線偏置。較高的值能夠減少在非粗糙材質中可見的自反射，但會導致更多可見的漏光問題，間接照明看起來也會更平坦。另見 :ref:`bias<class_VoxelGIData_property_bias>`\ 。要優先隱藏自反射，而不是提高照明品質，請將 :ref:`bias<class_VoxelGIData_property_bias>` 設定為 ``0.0``\ ，並將 :ref:`normal_bias<class_VoxelGIData_property_normal_bias>` 設定為介於 ``1.0`` 和 ``2.0`` 之間的值。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ The normal bias to use for indirect lighting and reflections. Higher values redu
 - |void| **set_propagation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_propagation**\ (\ )
 
-The multiplier to use when light bounces off a surface. Higher values result in brighter indirect lighting. If indirect lighting looks too flat, try decreasing :ref:`propagation<class_VoxelGIData_property_propagation>` while increasing :ref:`energy<class_VoxelGIData_property_energy>` at the same time. See also :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>` which influences the indirect lighting's effective brightness.
+當光線從表面反彈時使用的乘數。較高的值會導致更亮的間接照明。如果間接照明看起來過於平坦，請嘗試減少 :ref:`propagation<class_VoxelGIData_property_propagation>` 同時增加 :ref:`energy<class_VoxelGIData_property_energy>`\ 。另請參閱影響間接照明的有效亮度的 :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ The multiplier to use when light bounces off a surface. Higher values result in 
 - |void| **set_use_two_bounces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_two_bounces**\ (\ )
 
-If ``true``, performs two bounces of indirect lighting instead of one. This makes indirect lighting look more natural and brighter at a small performance cost. The second bounce is also visible in reflections. If the scene appears too bright after enabling :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>`, adjust :ref:`propagation<class_VoxelGIData_property_propagation>` and :ref:`energy<class_VoxelGIData_property_energy>`.
+如果為 ``true``\ ，則執行兩次間接照明反彈而不是一次。這使得以一個較低的性能成本，使間接照明看起來更自然、更明亮。第二次反彈在反射中也是可見的。如果啟用 :ref:`use_two_bounces<class_VoxelGIData_property_use_two_bounces>` 後場景顯得太亮，請調整 :ref:`propagation<class_VoxelGIData_property_propagation>` 和 :ref:`energy<class_VoxelGIData_property_energy>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -203,8 +203,8 @@ If ``true``, performs two bounces of indirect lighting instead of one. This make
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_VoxelGIData_method_allocate:
 
@@ -226,9 +226,9 @@ Method Descriptions
 
 :ref:`AABB<class_AABB>` **get_bounds**\ (\ ) |const| :ref:`🔗<class_VoxelGIData_method_get_bounds>`
 
-Returns the bounds of the baked voxel data as an :ref:`AABB<class_AABB>`, which should match :ref:`VoxelGI.size<class_VoxelGI_property_size>` after being baked (which only contains the size as a :ref:`Vector3<class_Vector3>`).
+返回一個 :ref:`AABB<class_AABB>`\ ，表示已烘焙體素資料的邊界，烘焙後應該與 :ref:`VoxelGI.size<class_VoxelGI_property_size>` 相配對（僅包含表示大小的 :ref:`Vector3<class_Vector3>`\ ）。
 
-\ **Note:** If the size was modified without baking the VoxelGI data, then the value of :ref:`get_bounds()<class_VoxelGIData_method_get_bounds>` and :ref:`VoxelGI.size<class_VoxelGI_property_size>` will not match.
+\ **注意：**\ 如果修改了大小但沒有對 VoxelGI 資料進行烘焙，則 :ref:`get_bounds()<class_VoxelGIData_method_get_bounds>` 和 :ref:`VoxelGI.size<class_VoxelGI_property_size>` 的值將不配對。
 
 .. rst-class:: classref-item-separator
 
@@ -300,12 +300,12 @@ Returns the bounds of the baked voxel data as an :ref:`AABB<class_AABB>`, which 
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

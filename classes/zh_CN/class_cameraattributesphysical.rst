@@ -5,34 +5,34 @@
 CameraAttributesPhysical
 ========================
 
-**Inherits:** :ref:`CameraAttributes<class_CameraAttributes>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`CameraAttributes<class_CameraAttributes>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Physically-based camera settings.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**CameraAttributesPhysical** is used to set rendering settings based on a physically-based camera's settings. It is responsible for exposure, auto-exposure, and depth of field.
-
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own :ref:`CameraAttributes<class_CameraAttributes>`, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any :ref:`CameraAttributes<class_CameraAttributes>` set in the :ref:`WorldEnvironment<class_WorldEnvironment>` and will override the :ref:`Camera3D<class_Camera3D>`\ s :ref:`Camera3D.far<class_Camera3D_property_far>`, :ref:`Camera3D.near<class_Camera3D_property_near>`, :ref:`Camera3D.fov<class_Camera3D_property_fov>`, and :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` properties. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
-
-The default settings are intended for use in an outdoor environment, tips for settings for use in an indoor environment can be found in each setting's documentation.
-
-\ **Note:** Depth of field blur is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+基于物理的相机设置。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Physical light and camera units <../tutorials/3d/physical_light_and_camera_units>`
+**CameraAttributesPhysical** 用于根据基于物理的相机的设置来设置渲染设置。它负责曝光、自动曝光、以及景深。
+
+当在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中使用时，它提供了曝光、自动曝光、以及景深的默认设置，这些设置将由所有没有自己的 :ref:`CameraAttributes<class_CameraAttributes>` 的相机使用，包括编辑器相机。当在 :ref:`Camera3D<class_Camera3D>` 中使用时，它将覆盖 :ref:`WorldEnvironment<class_WorldEnvironment>` 中设置的任何 :ref:`CameraAttributes<class_CameraAttributes>`\ ，并将覆盖 :ref:`Camera3D<class_Camera3D>` 的 :ref:`Camera3D.far<class_Camera3D_property_far>`\ 、\ :ref:`Camera3D.near<class_Camera3D_property_near>`\ 、\ :ref:`Camera3D.fov<class_Camera3D_property_fov>`\ 、以及 :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` 属性。当在 :ref:`VoxelGI<class_VoxelGI>` 或 :ref:`LightmapGI<class_LightmapGI>` 中使用时，将只会使用曝光设置。
+
+默认设置适用于室外环境，可在每个设置的文档中找到有关在室内环境中使用的设置的提示。
+
+\ **注意：**\ 景深模糊只支持 Forward+ 和移动渲染方式，不支持兼容模式。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`物理灯光与相机单位 <../tutorials/3d/physical_light_and_camera_units>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CameraAttributesPhysical_property_auto_exposure_max_exposure_value:
 
@@ -87,7 +87,7 @@ Property Descriptions
 - |void| **set_auto_exposure_max_exposure_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_auto_exposure_max_exposure_value**\ (\ )
 
-The maximum luminance (in EV100) used when calculating auto exposure. When calculating scene average luminance, color values will be clamped to at least this value. This limits the auto-exposure from exposing below a certain brightness, resulting in a cut off point where the scene will remain bright.
+计算自动曝光时使用的最大亮度（单位：EV100）。在计算场景平均亮度时，颜色值将至少被钳制在这个值上。这限制了自动曝光在低于一定的亮度进行曝光时，导致场景将保持明亮的一个截止点。
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ The maximum luminance (in EV100) used when calculating auto exposure. When calcu
 - |void| **set_auto_exposure_min_exposure_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_auto_exposure_min_exposure_value**\ (\ )
 
-The minimum luminance (in EV100) used when calculating auto exposure. When calculating scene average luminance, color values will be clamped to at least this value. This limits the auto-exposure from exposing above a certain brightness, resulting in a cut off point where the scene will remain dark.
+计算自动曝光时使用的最小亮度（单位为 EV100）。在计算场景平均亮度时，颜色值将至少被钳制在这个值上。这限制了自动曝光在超过一定的亮度进行曝光时，导致场景将保持黑暗的一个截止点。
 
 .. rst-class:: classref-item-separator
 
@@ -121,9 +121,9 @@ The minimum luminance (in EV100) used when calculating auto exposure. When calcu
 - |void| **set_aperture**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_aperture**\ (\ )
 
-Size of the aperture of the camera, measured in f-stops. An f-stop is a unitless ratio between the focal length of the camera and the diameter of the aperture. A high aperture setting will result in a smaller aperture which leads to a dimmer image and sharper focus. A low aperture results in a wide aperture which lets in more light resulting in a brighter, less-focused image. Default is appropriate for outdoors at daytime (i.e. for use with a default :ref:`DirectionalLight3D<class_DirectionalLight3D>`), for indoor lighting, a value between 2 and 4 is more appropriate.
+相机光圈的大小，以 f 档为单位进行测量。f 档是相机焦距与光圈直径之间的一个无单位比率。高光圈设置将产生一个更小的光圈，从而导致更暗的图像和更清晰的焦点。低光圈会产生一个大光圈，让更多的光线进入，从而产生一个更亮、更不聚焦的图像。默认值适用于白天的室外（即与默认 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 一起使用），对于室内照明，2 到 4 之间的值更合适。
 
-Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled.
+仅在启用 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 时可用。
 
 .. rst-class:: classref-item-separator
 
@@ -140,9 +140,9 @@ Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physi
 - |void| **set_shutter_speed**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shutter_speed**\ (\ )
 
-Time for shutter to open and close, evaluated as ``1 / shutter_speed`` seconds. A higher value will allow less light (leading to a darker image), while a lower value will allow more light (leading to a brighter image).
+快门打开和关闭的时间，计算方式为 ``1 / shutter_speed`` 秒。较高的值将允许较少的光线（导致图像较暗），而较低的值将允许更多的光线（导致图像较亮）。
 
-Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled.
+仅当启用 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 时可用。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physi
 - |void| **set_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_far**\ (\ )
 
-Override value for :ref:`Camera3D.far<class_Camera3D_property_far>`. Used internally when calculating depth of field. When attached to a :ref:`Camera3D<class_Camera3D>` as its :ref:`Camera3D.attributes<class_Camera3D_property_attributes>`, it will override the :ref:`Camera3D.far<class_Camera3D_property_far>` property.
+覆盖 :ref:`Camera3D.far<class_Camera3D_property_far>` 的值。在内部计算景深时使用。当被附加到 :ref:`Camera3D<class_Camera3D>` 作为其 :ref:`Camera3D.attributes<class_Camera3D_property_attributes>` 时，它将覆盖 :ref:`Camera3D.fov<class_Camera3D_property_fov>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Override value for :ref:`Camera3D.far<class_Camera3D_property_far>`. Used intern
 - |void| **set_focal_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_focal_length**\ (\ )
 
-Distance between camera lens and camera aperture, measured in millimeters. Controls field of view and depth of field. A larger focal length will result in a smaller field of view and a narrower depth of field meaning fewer objects will be in focus. A smaller focal length will result in a wider field of view and a larger depth of field meaning more objects will be in focus. When attached to a :ref:`Camera3D<class_Camera3D>` as its :ref:`Camera3D.attributes<class_Camera3D_property_attributes>`, it will override the :ref:`Camera3D.fov<class_Camera3D_property_fov>` property and the :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` property.
+相机镜头和相机光圈之间的距离，单位：毫米。控制视野和景深。较大的焦距会导致较小的视野和较窄的景深，这意味着更少的对象将在焦点中。较小的焦距会导致更宽的视野和更大的景深，这意味着更多的物体将在焦点中。当被附加到 :ref:`Camera3D<class_Camera3D>` 作为其 :ref:`Camera3D.attributes<class_Camera3D_property_attributes>` 时，它将覆盖 :ref:`Camera3D.fov<class_Camera3D_property_fov>` 属性和 :ref:`Camera3D.keep_aspect<class_Camera3D_property_keep_aspect>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Distance between camera lens and camera aperture, measured in millimeters. Contr
 - |void| **set_focus_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_focus_distance**\ (\ )
 
-Distance from camera of object that will be in focus, measured in meters. Internally this will be clamped to be at least 1 millimeter larger than :ref:`frustum_focal_length<class_CameraAttributesPhysical_property_frustum_focal_length>`.
+将在焦点中的物体与相机的距离，以米为单位进行测量。在内部，这将被钳制为至少比 :ref:`frustum_focal_length<class_CameraAttributesPhysical_property_frustum_focal_length>` 大 1 毫米。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Distance from camera of object that will be in focus, measured in meters. Intern
 - |void| **set_near**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_near**\ (\ )
 
-Override value for :ref:`Camera3D.near<class_Camera3D_property_near>`. Used internally when calculating depth of field. When attached to a :ref:`Camera3D<class_Camera3D>` as its :ref:`Camera3D.attributes<class_Camera3D_property_attributes>`, it will override the :ref:`Camera3D.near<class_Camera3D_property_near>` property.
+覆盖 :ref:`Camera3D.near<class_Camera3D_property_near>` 的值。在内部计算景深时使用。当被附加到 :ref:`Camera3D<class_Camera3D>` 作为其 :ref:`Camera3D.attributes<class_Camera3D_property_attributes>` 时，它将覆盖 :ref:`Camera3D.near<class_Camera3D_property_near>` 属性。
 
 .. rst-class:: classref-section-separator
 
@@ -218,8 +218,8 @@ Override value for :ref:`Camera3D.near<class_Camera3D_property_near>`. Used inte
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CameraAttributesPhysical_method_get_fov:
 
@@ -227,14 +227,14 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_fov**\ (\ ) |const| :ref:`🔗<class_CameraAttributesPhysical_method_get_fov>`
 
-Returns the vertical field of view that corresponds to the :ref:`frustum_focal_length<class_CameraAttributesPhysical_property_frustum_focal_length>`. This value is calculated internally whenever :ref:`frustum_focal_length<class_CameraAttributesPhysical_property_frustum_focal_length>` is changed.
+返回对应于 :ref:`frustum_focal_length<class_CameraAttributesPhysical_property_frustum_focal_length>` 的垂直视野。每当 :ref:`frustum_focal_length<class_CameraAttributesPhysical_property_frustum_focal_length>` 发生变化时，该值都会在内部计算。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

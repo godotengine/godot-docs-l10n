@@ -5,42 +5,42 @@
 CanvasItem
 ==========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
+**派生：** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
 
-Abstract base class for everything in 2D space.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Abstract base class for everything in 2D space. Canvas items are laid out in a tree; children inherit and extend their parent's transform. **CanvasItem** is extended by :ref:`Control<class_Control>` for GUI-related nodes, and by :ref:`Node2D<class_Node2D>` for 2D game objects.
-
-Any **CanvasItem** can draw. For this, :ref:`queue_redraw()<class_CanvasItem_method_queue_redraw>` is called by the engine, then :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` will be received on idle time to request a redraw. Because of this, canvas items don't need to be redrawn on every frame, improving the performance significantly. Several functions for drawing on the **CanvasItem** are provided (see ``draw_*`` functions). However, they can only be used inside :ref:`_draw()<class_CanvasItem_private_method__draw>`, its corresponding :ref:`Object._notification()<class_Object_private_method__notification>` or methods connected to the :ref:`draw<class_CanvasItem_signal_draw>` signal.
-
-Canvas items are drawn in tree order on their canvas layer. By default, children are on top of their parents, so a root **CanvasItem** will be drawn behind everything. This behavior can be changed on a per-item basis.
-
-A **CanvasItem** can be hidden, which will also hide its children. By adjusting various other properties of a **CanvasItem**, you can also modulate its color (via :ref:`modulate<class_CanvasItem_property_modulate>` or :ref:`self_modulate<class_CanvasItem_property_self_modulate>`), change its Z-index, blend mode, and more.
-
-Note that properties like transform, modulation, and visibility are only propagated to *direct* **CanvasItem** child nodes. If there is a non-**CanvasItem** node in between, like :ref:`Node<class_Node>` or :ref:`AnimationPlayer<class_AnimationPlayer>`, the **CanvasItem** nodes below will have an independent position and :ref:`modulate<class_CanvasItem_property_modulate>` chain. See also :ref:`top_level<class_CanvasItem_property_top_level>`.
+2D 空间中所有对象的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+2D 空间中所有对象的抽象基类。画布项目以树状排列；子节点继承并扩展其父节点的变换。\ **CanvasItem** 由 :ref:`Control<class_Control>` 扩展为 GUI 相关的节点，由 :ref:`Node2D<class_Node2D>` 扩展为 2D 游戏对象。
 
-- :doc:`Custom drawing in 2D <../tutorials/2d/custom_drawing_in_2d>`
+任何 **CanvasItem** 都可以进行绘图。绘图时，引擎会调用 :ref:`queue_redraw()<class_CanvasItem_method_queue_redraw>`\ ，然后 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 就会在空闲时被接收到以请求重绘。因此，画布项目不需要每一帧都重绘，这显著提升了性能。这个类还提供了几个用于在 **CanvasItem** 上绘图的函数（见 ``draw_*`` 函数）。不过这些函数都只能在 :ref:`_draw()<class_CanvasItem_private_method__draw>` 及其对应的 :ref:`Object._notification()<class_Object_private_method__notification>` 或连接到 :ref:`draw<class_CanvasItem_signal_draw>` 的方法内使用。
 
-- `Audio Spectrum Visualizer Demo <https://godotengine.org/asset-library/asset/2762>`__
+画布项目在其画布层上是按树状顺序绘制的。默认情况下，子项目位于其父项目的上方，因此根 **CanvasItem** 将被画在所有项目的后面。这种行为可以针对每个画布项目进行更改。
+
+\ **CanvasItem** 可以隐藏，隐藏时也会隐藏其子项目。通过调整 **CanvasItem** 的各种其它属性，你还可以调制它的颜色（通过 :ref:`modulate<class_CanvasItem_property_modulate>` 或 :ref:`self_modulate<class_CanvasItem_property_self_modulate>`\ ）、更改 Z 索引、混合模式等。
+
+请注意，变换、调制、可见性等属性只会传播至\ *直属*\ 的 **CanvasItem** 子节点。如果中间有 :ref:`Node<class_Node>`\ 、\ :ref:`AnimationPlayer<class_AnimationPlayer>` 等非 **CanvasItem** 节点，那么更深层 **CanvasItem** 的位置和 :ref:`modulate<class_CanvasItem_property_modulate>` 链就是独立的了。另见 :ref:`top_level<class_CanvasItem_property_top_level>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`Viewport 和画布变换 <../tutorials/2d/2d_transforms>`
+
+- :doc:`2D 中的自定义绘图 <../tutorials/2d/custom_drawing_in_2d>`
+
+- `音频频谱可视化演示 <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -217,8 +217,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CanvasItem_signal_draw:
 
@@ -226,9 +226,9 @@ Signals
 
 **draw**\ (\ ) :ref:`🔗<class_CanvasItem_signal_draw>`
 
-Emitted when the **CanvasItem** must redraw, *after* the related :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` notification, and *before* :ref:`_draw()<class_CanvasItem_private_method__draw>` is called.
+当该 **CanvasItem** 必须重绘时发出，发生在相关的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知\ *之后*\ ，调用 :ref:`_draw()<class_CanvasItem_private_method__draw>` *之前*\ 。
 
-\ **Note:** Deferred connections do not allow drawing through the ``draw_*`` methods.
+\ **注意：**\ 延迟连接无法使用 ``draw_*`` 方法进行绘制。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Emitted when the **CanvasItem** must redraw, *after* the related :ref:`NOTIFICAT
 
 **hidden**\ (\ ) :ref:`🔗<class_CanvasItem_signal_hidden>`
 
-Emitted when this node becomes hidden, i.e. it's no longer visible in the tree (see :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
+当该节点隐藏时发出，即不再在树中可见（见 :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ Emitted when this node becomes hidden, i.e. it's no longer visible in the tree (
 
 **item_rect_changed**\ (\ ) :ref:`🔗<class_CanvasItem_signal_item_rect_changed>`
 
-Emitted when the **CanvasItem**'s boundaries (position or size) change, or when an action took place that may have affected these boundaries (e.g. changing :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`).
+当 **CanvasItem** 的边界（位置或大小）发生变化，或者发生可能影响这些边界的操作（例如更改 :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`\ ）时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ Emitted when the **CanvasItem**'s boundaries (position or size) change, or when 
 
 **visibility_changed**\ (\ ) :ref:`🔗<class_CanvasItem_signal_visibility_changed>`
 
-Emitted when the **CanvasItem**'s visibility changes, either because its own :ref:`visible<class_CanvasItem_property_visible>` property changed or because its visibility in the tree changed (see :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
+在 **CanvasItem** 的可见性改变时发射，这种改变或是因为其自身的 :ref:`visible<class_CanvasItem_property_visible>` 属性发生了变化，或是因为其在树中的可见性发生了变化（见 :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`\ ）。
 
-This signal is emitted *after* the related :ref:`NOTIFICATION_VISIBILITY_CHANGED<class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED>` notification.
+该信号在相关的 :ref:`NOTIFICATION_VISIBILITY_CHANGED<class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED>` 通知\ *之后*\ 发出。
 
 .. rst-class:: classref-section-separator
 
@@ -274,8 +274,8 @@ This signal is emitted *after* the related :ref:`NOTIFICATION_VISIBILITY_CHANGED
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CanvasItem_TextureFilter:
 
@@ -289,7 +289,7 @@ enum **TextureFilter**: :ref:`🔗<enum_CanvasItem_TextureFilter>`
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the filter from its parent.
+该 **CanvasItem** 将从其父级继承过滤器。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST:
 
@@ -297,7 +297,7 @@ The **CanvasItem** will inherit the filter from its parent.
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+纹理过滤仅从最近的像素读取。这使得纹理从近距离看是像素化的，从远处看是颗粒状的（由于多级渐远纹理没有被采样）。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR:
 
@@ -305,7 +305,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+纹理过滤在最近的 4 个像素之间进行混合。这使得纹理从近处看起来很平滑，从远处看起来却有颗粒感（由于多级渐远纹理没有被采样）。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -313,9 +313,9 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+纹理过滤从最近的像素读取并在最近的 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来像素化，从远处看起来平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+将此用于可能以低缩放查看的非像素艺术纹理（例如，由于 :ref:`Camera2D<class_Camera2D>` 缩放或精灵缩放），因为多级渐远纹理对于平滑小于屏幕像素的像素很重要。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS:
 
@@ -323,9 +323,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``4``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+纹理过滤在最近的 4 个像素和最近的 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来平滑，从远处看起来也平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+将此用于可能以低缩放查看的非像素艺术纹理（例如，由于 :ref:`Camera2D<class_Camera2D>` 缩放或精灵缩放），因为多级渐远纹理对于平滑小于屏幕像素的像素很重要。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -333,9 +333,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC** = ``5``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+纹理过滤从最近的像素读取并根据表面和相机视图之间的角度在 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来像素化，从远处看起来平滑。各向异性过滤提高了几乎与相机位于一条线的表面上的纹理质量，但速度稍慢。各向异性过滤级别可以通过调整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 来改变。
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`TEXTURE_FILTER_NEAREST_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS>` is usually more appropriate in this case.
+\ **注意：**\ 该纹理过滤在 2D 项目中很少有用。\ :ref:`TEXTURE_FILTER_NEAREST_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS>` 在这种情况下通常更合适。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC:
 
@@ -343,9 +343,9 @@ The texture filter reads from the nearest pixel and blends between 2 mipmaps (or
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC** = ``6``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+纹理过滤在最近的 4 个像素之间进行混合，并基于表面与相机视图之间的角度在 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来平滑，从远处看起来也平滑。各向异性过滤提高了几乎与相机位于一条线的表面上的纹理质量，但速度稍慢。各向异性过滤级别可以通过调整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 来改变。
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS>` is usually more appropriate in this case.
+\ **注意：**\ 该纹理过滤在 2D 项目中很少有用。\ :ref:`TEXTURE_FILTER_LINEAR_WITH_MIPMAPS<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS>` 在这种情况下通常更合适。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_MAX:
 
@@ -353,7 +353,7 @@ The texture filter blends between the nearest 4 pixels and blends between 2 mipm
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_MAX** = ``7``
 
-Represents the size of the :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` enum.
+代表 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ enum **TextureRepeat**: :ref:`🔗<enum_CanvasItem_TextureRepeat>`
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the filter from its parent.
+该 **CanvasItem** 将从其父级继承过滤器。
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_DISABLED:
 
@@ -379,7 +379,7 @@ The **CanvasItem** will inherit the filter from its parent.
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_DISABLED** = ``1``
 
-The texture does not repeat. Sampling the texture outside its extents will result in "stretching" of the edge pixels. You can avoid this by ensuring a 1-pixel fully transparent border on each side of the texture.
+纹理不会重复。在纹理范围之外采样会导致边缘像素“拉伸”。你可以通过确保在纹理两侧各有一个 1 像素的完全透明边框来避免这种情况。
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_ENABLED:
 
@@ -387,7 +387,7 @@ The texture does not repeat. Sampling the texture outside its extents will resul
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_ENABLED** = ``2``
 
-The texture repeats when exceeding the texture's size.
+纹理会在超出纹理大小后重复。
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_MIRROR:
 
@@ -395,7 +395,7 @@ The texture repeats when exceeding the texture's size.
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_MIRROR** = ``3``
 
-The texture repeats when the exceeding the texture's size in a "2×2 tiled mode". Repeated textures at even positions are mirrored.
+纹理会在超出纹理大小后以“2×2 平铺模式”重复。偶数位置的重复纹理会被镜像。
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_MAX:
 
@@ -403,7 +403,7 @@ The texture repeats when the exceeding the texture's size in a "2×2 tiled mode"
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_MAX** = ``4``
 
-Represents the size of the :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` enum.
+代表 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ enum **ClipChildrenMode**: :ref:`🔗<enum_CanvasItem_ClipChildrenMode>`
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_DISABLED** = ``0``
 
-Children are drawn over this node and are not clipped.
+子节点绘制在该节点之上，不会被裁剪。
 
 .. _class_CanvasItem_constant_CLIP_CHILDREN_ONLY:
 
@@ -429,7 +429,7 @@ Children are drawn over this node and are not clipped.
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_ONLY** = ``1``
 
-This node is used as a mask and is **not** drawn. The mask is based on this node's alpha channel: Opaque pixels are kept, transparent pixels are discarded, and semi-transparent pixels are blended in according to their opacity. Children are clipped to this node's drawn area.
+该节点用作遮罩，\ **不进行**\ 绘制。遮罩基于该节点的 Alpha 通道：保留不透明像素，丢弃透明像素，半透明像素根据不透明度混合。子节点受到该节点绘制区域的裁剪。
 
 .. _class_CanvasItem_constant_CLIP_CHILDREN_AND_DRAW:
 
@@ -437,7 +437,7 @@ This node is used as a mask and is **not** drawn. The mask is based on this node
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_AND_DRAW** = ``2``
 
-This node is used as a mask and is also drawn. The mask is based on this node's alpha channel: Opaque pixels are kept, transparent pixels are discarded, and semi-transparent pixels are blended in according to their opacity. Children are clipped to the parent's drawn area.
+该节点用作遮罩，也会进行绘制。遮罩基于该节点的 Alpha 通道：保留不透明像素，丢弃透明像素，半透明像素根据不透明度混合。子节点受到该节点绘制区域的裁剪。
 
 .. _class_CanvasItem_constant_CLIP_CHILDREN_MAX:
 
@@ -445,7 +445,7 @@ This node is used as a mask and is also drawn. The mask is based on this node's 
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_MAX** = ``3``
 
-Represents the size of the :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` enum.
+代表 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -453,8 +453,8 @@ Represents the size of the :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMo
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED:
 
@@ -462,9 +462,9 @@ Constants
 
 **NOTIFICATION_TRANSFORM_CHANGED** = ``2000`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>`
 
-Notification received when this node's global transform changes, if :ref:`is_transform_notification_enabled()<class_CanvasItem_method_is_transform_notification_enabled>` is ``true``. See also :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>` and :ref:`get_transform()<class_CanvasItem_method_get_transform>`.
+:ref:`is_transform_notification_enabled()<class_CanvasItem_method_is_transform_notification_enabled>` 为 ``true`` 时，节点的全局变换发生改变时收到的通知。另见 :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>` 和 :ref:`get_transform()<class_CanvasItem_method_get_transform>`\ 。
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`CollisionObject2D<class_CollisionObject2D>` automatically enable this in order to function correctly.
+\ **注意：**\ :ref:`Camera2D<class_Camera2D>`\ 、\ :ref:`CollisionObject2D<class_CollisionObject2D>` 等许多画布项会自动启用此功能以确保正常运行。
 
 .. _class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED:
 
@@ -472,9 +472,9 @@ Notification received when this node's global transform changes, if :ref:`is_tra
 
 **NOTIFICATION_LOCAL_TRANSFORM_CHANGED** = ``35`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>`
 
-Notification received when this node's transform changes, if :ref:`is_local_transform_notification_enabled()<class_CanvasItem_method_is_local_transform_notification_enabled>` is ``true``. This is not received when a parent :ref:`Node2D<class_Node2D>`'s transform changes. See also :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`.
+:ref:`is_local_transform_notification_enabled()<class_CanvasItem_method_is_local_transform_notification_enabled>` 为 ``true`` 时，节点的变换发生改变时收到的通知。父级 :ref:`Node2D<class_Node2D>` 的变换发生改变时不会收到该通知。另见 :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`\ 。
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`CollisionShape2D<class_CollisionShape2D>` automatically enable this in order to function correctly.
+\ **注意：**\ :ref:`Camera2D<class_Camera2D>`\ 、\ :ref:`CollisionShape2D<class_CollisionShape2D>` 等许多画布项会自动启用此功能以确保正常运行。
 
 .. _class_CanvasItem_constant_NOTIFICATION_DRAW:
 
@@ -482,7 +482,7 @@ Notification received when this node's transform changes, if :ref:`is_local_tran
 
 **NOTIFICATION_DRAW** = ``30`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_DRAW>`
 
-The **CanvasItem** is requested to draw (see :ref:`_draw()<class_CanvasItem_private_method__draw>`).
+要求绘制该 **CanvasItem**\ （见 :ref:`_draw()<class_CanvasItem_private_method__draw>`\ ）。
 
 .. _class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -490,9 +490,9 @@ The **CanvasItem** is requested to draw (see :ref:`_draw()<class_CanvasItem_priv
 
 **NOTIFICATION_VISIBILITY_CHANGED** = ``31`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED>`
 
-Notification received when this node's visibility changes (see :ref:`visible<class_CanvasItem_property_visible>` and :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
+节点的可见性发生改变时收到的通知（见 :ref:`visible<class_CanvasItem_property_visible>` 和 :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`\ ）。
 
-This notification is received *before* the related :ref:`visibility_changed<class_CanvasItem_signal_visibility_changed>` signal.
+该通知会在相关 :ref:`visibility_changed<class_CanvasItem_signal_visibility_changed>` 信号\ *之前*\ 收到。
 
 .. _class_CanvasItem_constant_NOTIFICATION_ENTER_CANVAS:
 
@@ -500,7 +500,7 @@ This notification is received *before* the related :ref:`visibility_changed<clas
 
 **NOTIFICATION_ENTER_CANVAS** = ``32`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_ENTER_CANVAS>`
 
-The **CanvasItem** has entered the canvas.
+该 **CanvasItem** 已进入画布。
 
 .. _class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS:
 
@@ -508,9 +508,9 @@ The **CanvasItem** has entered the canvas.
 
 **NOTIFICATION_EXIT_CANVAS** = ``33`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS>`
 
-The **CanvasItem** has exited the canvas.
+该 **CanvasItem** 已退出画布。
 
-This notification is sent in reversed order.
+该通知会以反向顺序发送。
 
 .. _class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED:
 
@@ -518,7 +518,7 @@ This notification is sent in reversed order.
 
 **NOTIFICATION_WORLD_2D_CHANGED** = ``36`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED>`
 
-Notification received when this **CanvasItem** is registered to a new :ref:`World2D<class_World2D>` (see :ref:`get_world_2d()<class_CanvasItem_method_get_world_2d>`).
+该 **CanvasItem** 注册至新的 :ref:`World2D<class_World2D>` 时收到的通知（见 :ref:`get_world_2d()<class_CanvasItem_method_get_world_2d>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -526,8 +526,8 @@ Notification received when this **CanvasItem** is registered to a new :ref:`Worl
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CanvasItem_property_clip_children:
 
@@ -540,9 +540,9 @@ Property Descriptions
 - |void| **set_clip_children_mode**\ (\ value\: :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>`\ )
 - :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **get_clip_children_mode**\ (\ )
 
-The mode in which this node clips its children, acting as a mask.
+该节点作为遮罩对子节点进行裁剪的模式。
 
-\ **Note:** Clipping nodes cannot be nested or placed within a :ref:`CanvasGroup<class_CanvasGroup>`. If an ancestor of this node clips its children or is a :ref:`CanvasGroup<class_CanvasGroup>`, then this node's clip mode should be set to :ref:`CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` to avoid unexpected behavior.
+\ **注意：**\ 裁剪的节点无法嵌套，也不能位于 :ref:`CanvasGroup<class_CanvasGroup>` 中。如果该节点的祖先节点裁剪了它的子级，或者祖先节点是 :ref:`CanvasGroup<class_CanvasGroup>`\ ，那么这个节点的裁剪模式应当设为 :ref:`CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>`\ ，从而避免意外行为。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ The mode in which this node clips its children, acting as a mask.
 - |void| **set_light_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_light_mask**\ (\ )
 
-The rendering layers in which this **CanvasItem** responds to :ref:`Light2D<class_Light2D>` nodes.
+该 **CanvasItem** 的渲染层，用于响应 :ref:`Light2D<class_Light2D>` 节点。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The rendering layers in which this **CanvasItem** responds to :ref:`Light2D<clas
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-The material applied to this **CanvasItem**.
+应用于这个 **CanvasItem** 的材质。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ The material applied to this **CanvasItem**.
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-The color applied to this **CanvasItem**. This property does affect child **CanvasItem**\ s, unlike :ref:`self_modulate<class_CanvasItem_property_self_modulate>` which only affects the node itself.
+应用于这个 **CanvasItem** 的颜色。这个属性会影响子级 **CanvasItem**\ ，与只会影响节点自身的 :ref:`self_modulate<class_CanvasItem_property_self_modulate>` 不同。
 
 .. rst-class:: classref-item-separator
 
@@ -610,9 +610,9 @@ The color applied to this **CanvasItem**. This property does affect child **Canv
 - |void| **set_self_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_self_modulate**\ (\ )
 
-The color applied to this **CanvasItem**. This property does **not** affect child **CanvasItem**\ s, unlike :ref:`modulate<class_CanvasItem_property_modulate>` which affects both the node itself and its children.
+应用于这个 **CanvasItem** 的颜色。这个属性\ **不会**\ 影响子级 **CanvasItem**\ ，与会同时影响节点自身和子级的 :ref:`modulate<class_CanvasItem_property_modulate>` 不同。
 
-\ **Note:** Internal children are also not affected by this property (see the ``include_internal`` parameter in :ref:`Node.add_child()<class_Node_method_add_child>`). For built-in nodes this includes sliders in :ref:`ColorPicker<class_ColorPicker>`, and the tab bar in :ref:`TabContainer<class_TabContainer>`.
+\ **注意：**\ 内部子节点也不受这个属性的影响（见 :ref:`Node.add_child()<class_Node_method_add_child>` 方法的 ``include_internal`` 参数）。内置节点的内部子节点包括 :ref:`ColorPicker<class_ColorPicker>` 中的滑块、\ :ref:`TabContainer<class_TabContainer>` 中的选项卡栏等。
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ The color applied to this **CanvasItem**. This property does **not** affect chil
 - |void| **set_draw_behind_parent**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_behind_parent_enabled**\ (\ )
 
-If ``true``, this node draws behind its parent.
+如果为 ``true``\ ，则该节点绘制在其父节点后面。
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +646,7 @@ If ``true``, this node draws behind its parent.
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_CanvasItem_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **get_texture_filter**\ (\ )
 
-The filtering mode used to render this **CanvasItem**'s texture(s).
+渲染该 **CanvasItem** 的纹理时使用的过滤模式。
 
 .. rst-class:: classref-item-separator
 
@@ -663,9 +663,9 @@ The filtering mode used to render this **CanvasItem**'s texture(s).
 - |void| **set_texture_repeat**\ (\ value\: :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>`\ )
 - :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **get_texture_repeat**\ (\ )
 
-The repeating mode used to render this **CanvasItem**'s texture(s). It affects what happens when the texture is sampled outside its extents, for example by setting a :ref:`Sprite2D.region_rect<class_Sprite2D_property_region_rect>` that is larger than the texture or assigning :ref:`Polygon2D<class_Polygon2D>` UV points outside the texture.
+用于渲染该 **CanvasItem** 纹理的重复模式。它会影响在纹理范围之外采样时发生的情况，例如，设置比纹理大的 :ref:`Sprite2D.region_rect<class_Sprite2D_property_region_rect>` 或在纹理外部分配 :ref:`Polygon2D<class_Polygon2D>` UV 点。
 
-\ **Note:** :ref:`TextureRect<class_TextureRect>` is not affected by :ref:`texture_repeat<class_CanvasItem_property_texture_repeat>`, as it uses its own texture repeating implementation.
+\ **注意：**\ :ref:`TextureRect<class_TextureRect>` 不受 :ref:`texture_repeat<class_CanvasItem_property_texture_repeat>` 的影响，因为它使用自己的纹理重复实现。
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ The repeating mode used to render this **CanvasItem**'s texture(s). It affects w
 - |void| **set_as_top_level**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_top_level**\ (\ )
 
-If ``true``, this **CanvasItem** will *not* inherit its transform from parent **CanvasItem**\ s. Its draw order will also be changed to make it draw on top of other **CanvasItem**\ s that do not have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``. The **CanvasItem** will effectively act as if it was placed as a child of a bare :ref:`Node<class_Node>`.
+如果为 ``true``\ ，则该 **CanvasItem** *不会*\ 继承父级 **CanvasItem** 的变换。它的绘制顺序也会发生改变，会在其他没有将 :ref:`top_level<class_CanvasItem_property_top_level>` 设置为 ``true`` 的 **CanvasItem** 之上绘制。效果和把该 **CanvasItem** 作为裸 :ref:`Node<class_Node>` 的子级一样。
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ If ``true``, this **CanvasItem** will *not* inherit its transform from parent **
 - |void| **set_use_parent_material**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_parent_material**\ (\ )
 
-If ``true``, the parent **CanvasItem**'s :ref:`material<class_CanvasItem_property_material>` is used as this node's material.
+如果为 ``true``\ ，则将父级 **CanvasItem** 的 :ref:`material<class_CanvasItem_property_material>` 属性用作该节点的材质。
 
 .. rst-class:: classref-item-separator
 
@@ -735,9 +735,9 @@ The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<c
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-If ``true``, this **CanvasItem** may be drawn. Whether this **CanvasItem** is actually drawn depends on the visibility of all of its **CanvasItem** ancestors. In other words: this **CanvasItem** will be drawn when :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>` returns ``true`` and all **CanvasItem** ancestors share at least one :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` with this **CanvasItem**.
+如果为 ``true``\ ，则允许绘制该 **CanvasItem**\ 。实际是否对该 **CanvasItem** 进行绘制取决于该节点的所有 **CanvasItem** 祖级节点的可见性。换句话说：该 **CanvasItem** 只有在 :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>` 返回 ``true``\ ，并且所有 **CanvasItem** 祖级节点都至少与这个 **CanvasItem** 共享一个 :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`\ 。
 
-\ **Note:** For controls that inherit :ref:`Popup<class_Popup>`, the correct way to make them visible is to call one of the multiple ``popup*()`` functions instead.
+\ **注意：**\ 对于继承了 :ref:`Popup<class_Popup>` 的控件，使其可见的正确方法是调用多个 ``popup*()`` 函数之一。
 
 .. rst-class:: classref-item-separator
 
@@ -754,11 +754,11 @@ If ``true``, this **CanvasItem** may be drawn. Whether this **CanvasItem** is ac
 - |void| **set_y_sort_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_y_sort_enabled**\ (\ )
 
-If ``true``, this and child **CanvasItem** nodes with a higher Y position are rendered in front of nodes with a lower Y position. If ``false``, this and child **CanvasItem** nodes are rendered normally in scene tree order.
+如果为 ``true``\ ，则该节点及其子 **CanvasItem** 节点中 Y 位置较高的节点会渲染在 Y 位置较低的节点的前面。如果为 ``false``\ ，则该节点及其子 **CanvasItem** 节点会按照场景树的顺序正常渲染。
 
-With Y-sorting enabled on a parent node ('A') but disabled on a child node ('B'), the child node ('B') is sorted but its children ('C1', 'C2', etc.) render together on the same Y position as the child node ('B'). This allows you to organize the render order of a scene without changing the scene tree.
+如果父节点（“A”）启用了 Y 排序，而子节点（“B”）没有启用，那么子节点（“B”）会进行排序，但它自己的子节点（“C1”“C2”等）会渲染在与子节点（“B”）相同的 Y 位置。这样你就可以在不修改场景树的前提下组织场景的渲染顺序了。
 
-Nodes sort relative to each other only if they are on the same :ref:`z_index<class_CanvasItem_property_z_index>`.
+只有 :ref:`z_index<class_CanvasItem_property_z_index>` 相同的节点才会互相进行排序。
 
 .. rst-class:: classref-item-separator
 
@@ -775,9 +775,9 @@ Nodes sort relative to each other only if they are on the same :ref:`z_index<cla
 - |void| **set_z_as_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_z_relative**\ (\ )
 
-If ``true``, this node's final Z index is relative to its parent's Z index.
+如果为 ``true``\ ，则该节点的最终 Z 索引是相对于父节点的 Z 索引而言的。
 
-For example, if :ref:`z_index<class_CanvasItem_property_z_index>` is ``2`` and its parent's final Z index is ``3``, then this node's final Z index will be ``5`` (``2 + 3``).
+例如 :ref:`z_index<class_CanvasItem_property_z_index>` 为 ``2``\ 、父节点的最终 Z 索引为 ``3``\ ，那么该节点的最终 Z 索引就是 ``5``\ （\ ``2 + 3``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -794,9 +794,9 @@ For example, if :ref:`z_index<class_CanvasItem_property_z_index>` is ``2`` and i
 - |void| **set_z_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_index**\ (\ )
 
-The order in which this node is drawn. A node with a higher Z index will display in front of others. Must be between :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` and :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
+节点的绘制顺序。Z 索引较高的节点会显示在其他节点的前面。必须在 :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` 和 :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` 之间（含两端）。
 
-\ **Note:** The Z index does **not** affect the order in which **CanvasItem** nodes are processed or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
+\ **注意：**\ Z 索引\ **不会**\ 影响 **CanvasItem** 节点的处理顺序和输入事件的处理顺序。\ :ref:`Control<class_Control>` 节点尤其需要注意这一点。
 
 .. rst-class:: classref-section-separator
 
@@ -804,8 +804,8 @@ The order in which this node is drawn. A node with a higher Z index will display
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CanvasItem_private_method__draw:
 
@@ -813,9 +813,9 @@ Method Descriptions
 
 |void| **_draw**\ (\ ) |virtual| :ref:`🔗<class_CanvasItem_private_method__draw>`
 
-Called when **CanvasItem** has been requested to redraw (after :ref:`queue_redraw()<class_CanvasItem_method_queue_redraw>` is called, either manually or by the engine).
+当 **CanvasItem** 被请求重绘时调用（手动调用或者引擎调用 :ref:`queue_redraw()<class_CanvasItem_method_queue_redraw>` 之后）。
 
-Corresponds to the :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` notification in :ref:`Object._notification()<class_Object_private_method__notification>`.
+对应于 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知。
 
 .. rst-class:: classref-item-separator
 
@@ -827,7 +827,7 @@ Corresponds to the :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATIO
 
 |void| **draw_animation_slice**\ (\ animation_length\: :ref:`float<class_float>`, slice_begin\: :ref:`float<class_float>`, slice_end\: :ref:`float<class_float>`, offset\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_CanvasItem_method_draw_animation_slice>`
 
-Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
+后续的绘制命令将被忽略，除非它们位于指定的动画切片内。这是实现在背景上循环而不是不断重绘的动画的更快方法。
 
 .. rst-class:: classref-item-separator
 
@@ -855,7 +855,7 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_char**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, char\: :ref:`String<class_String>`, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_char>`
 
-Draws a string first character using a custom font. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used. ``pos`` is defined in local space.
+使用自定义字体绘制字符串中的第一个字符。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。\ ``pos`` 定义在局部空间。
 
 .. rst-class:: classref-item-separator
 
@@ -867,7 +867,7 @@ Draws a string first character using a custom font. If ``oversampling`` is great
 
 |void| **draw_char_outline**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, char\: :ref:`String<class_String>`, font_size\: :ref:`int<class_int>` = 16, size\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_char_outline>`
 
-Draws a string first character outline using a custom font. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used. ``pos`` is defined in local space.
+使用自定义字体绘制字符串中第一个字符的轮廓。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。\ ``pos`` 定义在局部空间。
 
 .. rst-class:: classref-item-separator
 
@@ -915,15 +915,15 @@ Draws a colored polygon of any number of points, convex or concave. The points i
 
 |void| **draw_dashed_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, dash\: :ref:`float<class_float>` = 2.0, aligned\: :ref:`bool<class_bool>` = true, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_dashed_line>`
 
-Draws a dashed line from a 2D point to another, with a given color and width. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+使用给定的颜色和宽度，从一个 2D 点到另一个点绘制一条虚线。\ ``from`` 位置和 ``to`` 位置定义在局部空间。另见 :ref:`draw_line()<class_CanvasItem_method_draw_line>`\ 、\ :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` 和 :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 。
 
-If ``width`` is negative, then a two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则将绘制一个两点图元而不是一个四点图元。这意味着当缩放 CanvasItem 时，线条部分将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
-\ ``dash`` is the length of each dash in pixels, with the gap between each dash being the same length. If ``aligned`` is ``true``, the length of the first and last dashes may be shortened or lengthened to allow the line to begin and end at the precise points defined by ``from`` and ``to``. Both ends are always symmetrical when ``aligned`` is ``true``. If ``aligned`` is ``false``, all dashes will have the same length, but the line may appear incomplete at the end due to the dash length not dividing evenly into the line length. Only full dashes are drawn when ``aligned`` is ``false``.
+\ ``dash`` 是每一段的长度，单位为像素，段与段之间的留空使用相同的长度。如果 ``aligned`` 为 ``true``\ ，则可能会缩短第一段和最后一段的长度，使得虚线的两端精确地落在 ``from`` 和 ``to`` 所定义的位置。\ ``aligned`` 为 ``true`` 时虚线两端始终是对称的。如果 ``aligned`` 为 ``false``\ ，则每一段的长度都相同，但是虚线长度无法被段长度整除时，末尾可能看上去不完整。\ ``aligned`` 为 ``false`` 时只会绘制完整的段。
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
 
-\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
+\ **注意：**\ 仅当 ``width`` 大于 ``0.0`` 时，\ ``antialiased`` 才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -971,7 +971,7 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_end_animation**\ (\ ) :ref:`🔗<class_CanvasItem_method_draw_end_animation>`
 
-After submitting all animations slices via :ref:`draw_animation_slice()<class_CanvasItem_method_draw_animation_slice>`, this function can be used to revert drawing to its default state (all subsequent drawing commands will be visible). If you don't care about this particular use case, usage of this function after submitting the slices is not required.
+通过 :ref:`draw_animation_slice()<class_CanvasItem_method_draw_animation_slice>` 提交所有动画切片后，该函数可以被用来将绘制恢复到其默认状态（所有后续绘制命令都将可见）。如果不关心这个特定用例，则不需要在提交切片后使用该函数。
 
 .. rst-class:: classref-item-separator
 
@@ -1006,9 +1006,9 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
 
 |void| **draw_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_line>`
 
-Draws a line from a 2D point to another, with a given color and width. It can be optionally antialiased. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_dashed_line()<class_CanvasItem_method_draw_dashed_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+使用给定的颜色和宽度，从一个 2D 点到另一个点绘制一条直线。它可以选择抗锯齿。\ ``from`` 位置和 ``to`` 位置定义在局部空间。另见 :ref:`draw_dashed_line()<class_CanvasItem_method_draw_dashed_line>`\ 、\ :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` 和 :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 。
 
-If ``width`` is negative, then a two-point primitive will be drawn instead of a four-point one. This means that when the CanvasItem is scaled, the line will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则将绘制一个两点图元而不是一个四点图元。这意味着当缩放 CanvasItem 时，线条将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1052,11 +1052,11 @@ Value of the ``pixel_range`` should the same that was used during distance field
 
 |void| **draw_multiline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline>`
 
-Draws multiple disconnected lines with a uniform ``width`` and ``color``. Each line is defined by two consecutive points from ``points`` array in local space, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` instead.
+使用一致的宽度 ``width`` 和颜色 ``color`` 绘制多条断开的线段。\ ``points`` 数组中相邻的两个点定义一条线段，即第 i 条线段由端点 ``points[2 * i]`` 和 ``points[2 * i + 1]`` 组成，这些点定义在局部空间。绘制大量线段时，这种方法比使用 :ref:`draw_line()<class_CanvasItem_method_draw_line>` 一条条画要快。要绘制相连的线段，请改用 :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 。
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负数，则会绘制由两个点组成的图元，不使用四个点组成的图元。此时如果 CanvasItem 发生缩放，则线段仍然会很细。如果不想要这样的行为，请传入 ``1.0`` 等正数 ``width``\ 。
 
-\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
+\ **注意：**\ 仅当 ``width`` 大于 ``0.0`` 时，\ ``antialiased`` 才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1068,11 +1068,11 @@ If ``width`` is negative, then two-point primitives will be drawn instead of a f
 
 |void| **draw_multiline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline_colors>`
 
-Draws multiple disconnected lines with a uniform ``width`` and segment-by-segment coloring. Each segment is defined by two consecutive points from ``points`` array in local space and a corresponding color from ``colors`` array, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints and has ``colors[i]`` color. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` instead.
+使用一致的宽度 ``width`` 分段颜色绘制多条断开的线段。\ ``points`` 数组中相邻的两个点定义一条线段，即第 i 条线段由端点 ``points[2 * i]`` 和 ``points[2 * i + 1]`` 组成，这些点定义在局部空间，使用的颜色为 ``colors[i]``\ 。绘制大量线段时，这种方法比使用 :ref:`draw_line()<class_CanvasItem_method_draw_line>` 一条条画要快。要绘制相连的线段，请改用 :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`\ 。
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负数，则会绘制由两个点组成的图元，不使用四个点组成的图元。此时如果 CanvasItem 发生缩放，则线段仍然会很细。如果不想要这样的行为，请传入 ``1.0`` 等正数 ``width``\ 。
 
-\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
+\ **注意：**\ 仅当 ``width`` 大于 ``0.0`` 时，\ ``antialiased`` 才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1084,7 +1084,7 @@ If ``width`` is negative, then two-point primitives will be drawn instead of a f
 
 |void| **draw_multiline_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_multiline_string>`
 
-Breaks ``text`` into lines and draws it using the specified ``font`` at the ``pos`` in local space (top-left corner). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用 ``font`` 字体分若干行绘制 ``text`` 文本，以局部空间中的 ``pos`` 作为左上角。文本颜色会与 ``modulate`` 相乘。如果 ``width`` 大于等于 0，则文本超出该宽度的部分会被裁剪。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1096,7 +1096,7 @@ Breaks ``text`` into lines and draws it using the specified ``font`` at the ``po
 
 |void| **draw_multiline_string_outline**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, max_lines\: :ref:`int<class_int>` = -1, size\: :ref:`int<class_int>` = 1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), brk_flags\: |bitfield|\[:ref:`LineBreakFlag<enum_TextServer_LineBreakFlag>`\] = 3, justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_multiline_string_outline>`
 
-Breaks ``text`` to the lines and draws text outline using the specified ``font`` at the ``pos`` in local space (top-left corner). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用 ``font`` 字体分若干行绘制 ``text`` 文本的轮廓，以局部空间中的 ``pos`` 作为左上角。文本颜色会与 ``modulate`` 相乘。如果 ``width`` 大于等于 0，则文本超出该宽度的部分会被裁剪。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1138,9 +1138,9 @@ Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`d
 
 |void| **draw_polyline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_polyline>`
 
-Draws interconnected line segments with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The ``points`` array is defined in local space. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw disconnected lines, use :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` instead. See also :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+使用一致的 ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），绘制相互连接的线段。\ ``points`` 数组定义在局部空间。绘制大量线条时，这比使用单独的 :ref:`draw_line()<class_CanvasItem_method_draw_line>` 调用更快。要绘制不相连的的线段，请改用 :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`\ 。另见 :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`\ 。
 
-If ``width`` is negative, it will be ignored and the polyline will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该折线。这意味着当 CanvasItem 被缩放时，折线将保持为细线。如果不需要该行为，请传入一个正的 ``width``\ ，如 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1152,9 +1152,9 @@ If ``width`` is negative, it will be ignored and the polyline will be drawn usin
 
 |void| **draw_polyline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_polyline_colors>`
 
-Draws interconnected line segments with a uniform ``width``, point-by-point coloring, and optional antialiasing (supported only for positive ``width``). Colors assigned to line points match by index between ``points`` and ``colors``, i.e. each line segment is filled with a gradient between the colors of the endpoints. The ``points`` array is defined in local space. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw disconnected lines, use :ref:`draw_multiline_colors()<class_CanvasItem_method_draw_multiline_colors>` instead. See also :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+绘制相连的线段，使用一致的宽度 ``width``\ ，按点指定颜色，还可以开启抗锯齿（仅支持正的 ``width``\ ）。将颜色与线段上的点匹配时，使用的是 ``points`` 和 ``colors`` 的索引，即每条线段填充的都是在两个端点之间颜色的渐变色。\ ``points`` 数组定义在局部空间。绘制大量线段时，这种方法比使用 :ref:`draw_line()<class_CanvasItem_method_draw_line>` 一条条画要快。要绘制不相连的线段，请改用 :ref:`draw_multiline_colors()<class_CanvasItem_method_draw_multiline_colors>`\ 。另见 :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`\ 。
 
-If ``width`` is negative, it will be ignored and the polyline will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该折线。这意味着当 CanvasItem 被缩放时，折线将保持为细线。如果不需要该行为，请传入一个正的 ``width``\ ，如 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1180,15 +1180,15 @@ Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for
 
 |void| **draw_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_rect>`
 
-Draws a rectangle. If ``filled`` is ``true``, the rectangle will be filled with the ``color`` specified. If ``filled`` is ``false``, the rectangle will be drawn as a stroke with the ``color`` and ``width`` specified. The ``rect`` is specified in local space. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+绘制一个矩形。如果 ``filled`` 为 ``true``\ ，则矩形将使用指定的 ``color`` 填充。如果 ``filled`` 为 ``false``\ ，则矩形将被绘制为具有指定的 ``color`` 和 ``width`` 的笔划。\ ``rect`` 使用局部空间指定。另见 :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`\ 。
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则将绘制一个两点图元而不是一个四点图元。这意味着当缩放 CanvasItem 时，线条将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **注意：**\ ``width`` 只有在 ``filled`` 为 ``false`` 时才有效。
 
-\ **Note:** Unfilled rectangles drawn with a negative ``width`` may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent ``color``).
+\ **注意：**\ 使用负 ``width`` 绘制的未填充矩形可能不会完美显示。例如，由于线条的重叠，角可能会缺失或变亮（对于半透明的 ``color``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1200,9 +1200,9 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_set_transform**\ (\ position\: :ref:`Vector2<class_Vector2>`, rotation\: :ref:`float<class_float>` = 0.0, scale\: :ref:`Vector2<class_Vector2>` = Vector2(1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_set_transform>`
 
-Sets a custom local transform for drawing via components. Anything drawn afterwards will be transformed by this.
+使用分量设置用于绘图的自定义局部变换。后续的绘制都会使用这个变换。
 
-\ **Note:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` does *not* take ``scale`` into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (applies to the default project font only), or enabling **Multichannel Signed Distance Field** in the import options of a DynamicFont for custom fonts. On system fonts, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` can be enabled in the inspector.
+\ **注意：**\ :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` *不会*\ 考虑 ``scale``\ 。这意味着将位图字体及栅格化（非 MSDF）动态字体放大/缩小会产生模糊或像素化的结果。要让文本无论如何缩放都保持清晰，可以启用 MSDF 字体渲染，方法是启用 :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>`\ （仅应用于默认项目字体），或者启用自定义 DynamicFont 的\ **多通道带符号距离场**\ 导入选项。对于系统字体，可以在检查器中启用 :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1214,7 +1214,7 @@ Sets a custom local transform for drawing via components. Anything drawn afterwa
 
 |void| **draw_set_transform_matrix**\ (\ xform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_set_transform_matrix>`
 
-Sets a custom local transform for drawing via matrix. Anything drawn afterwards will be transformed by this.
+设置通过矩阵绘制时的自定义局部变换。此后绘制的任何东西都将被它变换。
 
 .. rst-class:: classref-item-separator
 
@@ -1255,7 +1255,7 @@ See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
 
 |void| **draw_string_outline**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, size\: :ref:`int<class_int>` = 1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string_outline>`
 
-Draws ``text`` outline using the specified ``font`` at the ``pos`` in local space (bottom-left corner using the baseline of the font). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用 ``font`` 字体绘制 ``text`` 文本的轮廓，以局部空间中的 ``pos`` 作为左下角，对齐字体基线。文本颜色会与 ``modulate`` 相乘。如果 ``width`` 大于等于 0，则文本超出该宽度的部分会被裁剪。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1323,9 +1323,9 @@ Draws a textured rectangle from a texture's region (specified by ``src_rect``) a
 
 |void| **force_update_transform**\ (\ ) :ref:`🔗<class_CanvasItem_method_force_update_transform>`
 
-Forces the node's transform to update. Fails if the node is not inside the tree. See also :ref:`get_transform()<class_CanvasItem_method_get_transform>`.
+强制更新节点的变换。如果节点不在树中则失败。另见 :ref:`get_transform()<class_CanvasItem_method_get_transform>`\ 。
 
-\ **Note:** For performance reasons, transform changes are usually accumulated and applied *once* at the end of the frame. The update propagates through **CanvasItem** children, as well. Therefore, use this method only when you need an up-to-date transform (such as during physics operations).
+\ **注意：**\ 出于性能考虑，通常会对变换的更新进行累积，在帧结束时应用\ *一次*\ 。更新也会沿着 **CanvasItem** 子节点传播。因此只应在确实需要最新的变换时使用该方法（例如进行物理运算）。
 
 .. rst-class:: classref-item-separator
 
@@ -1337,7 +1337,7 @@ Forces the node's transform to update. Fails if the node is not inside the tree.
 
 :ref:`RID<class_RID>` **get_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas>`
 
-Returns the :ref:`RID<class_RID>` of the :ref:`World2D<class_World2D>` canvas where this node is registered to, used by the :ref:`RenderingServer<class_RenderingServer>`.
+返回该节点注册到的 :ref:`World2D<class_World2D>` 画布的 :ref:`RID<class_RID>`\ ，适用于 :ref:`RenderingServer<class_RenderingServer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1349,7 @@ Returns the :ref:`RID<class_RID>` of the :ref:`World2D<class_World2D>` canvas wh
 
 :ref:`RID<class_RID>` **get_canvas_item**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas_item>`
 
-Returns the internal canvas item :ref:`RID<class_RID>` used by the :ref:`RenderingServer<class_RenderingServer>` for this node.
+返回 :ref:`RenderingServer<class_RenderingServer>` 对该项目使用的画布项目 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Returns the internal canvas item :ref:`RID<class_RID>` used by the :ref:`Renderi
 
 :ref:`CanvasLayer<class_CanvasLayer>` **get_canvas_layer_node**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas_layer_node>`
 
-Returns the :ref:`CanvasLayer<class_CanvasLayer>` that contains this node, or ``null`` if the node is not in any :ref:`CanvasLayer<class_CanvasLayer>`.
+返回包含该节点的 :ref:`CanvasLayer<class_CanvasLayer>`\ ，如果该节点不在任何 :ref:`CanvasLayer<class_CanvasLayer>` 中，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1373,7 @@ Returns the :ref:`CanvasLayer<class_CanvasLayer>` that contains this node, or ``
 
 :ref:`Transform2D<class_Transform2D>` **get_canvas_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas_transform>`
 
-Returns the transform of this node, converted from its registered canvas's coordinate system to its viewport's coordinate system. See also :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
+返回节点的变换，从所在画布的坐标系转换至所在视口的坐标系。另见 :ref:`Node.get_viewport()<class_Node_method_get_viewport>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1385,9 +1385,9 @@ Returns the transform of this node, converted from its registered canvas's coord
 
 :ref:`Vector2<class_Vector2>` **get_global_mouse_position**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_mouse_position>`
 
-Returns mouse cursor's global position relative to the :ref:`CanvasLayer<class_CanvasLayer>` that contains this node.
+返回鼠标光标的全局位置，相对于包含该节点的 :ref:`CanvasLayer<class_CanvasLayer>`\ 。
 
-\ **Note:** For screen-space coordinates (e.g. when using a non-embedded :ref:`Popup<class_Popup>`), you can use :ref:`DisplayServer.mouse_get_position()<class_DisplayServer_method_mouse_get_position>`.
+\ **注意：**\ 要得到屏幕空间的坐标（例如使用非嵌入式 :ref:`Popup<class_Popup>` 时）可以使用 :ref:`DisplayServer.mouse_get_position()<class_DisplayServer_method_mouse_get_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1399,7 +1399,7 @@ Returns mouse cursor's global position relative to the :ref:`CanvasLayer<class_C
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform>`
 
-Returns the global transform matrix of this item, i.e. the combined transform up to the topmost **CanvasItem** node. The topmost item is a **CanvasItem** that either has no parent, has non-**CanvasItem** parent or it has :ref:`top_level<class_CanvasItem_property_top_level>` enabled.
+返回该项目的全局变换矩阵，即到最顶层的 **CanvasItem** 节点的综合变换。最顶层的项目是一个 **CanvasItem**\ ，它要么没有父级，要么有非 **CanvasItem** 父级，或者要么它启用了 :ref:`top_level<class_CanvasItem_property_top_level>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1411,7 +1411,7 @@ Returns the global transform matrix of this item, i.e. the combined transform up
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform_with_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform_with_canvas>`
 
-Returns the transform from the local coordinate system of this **CanvasItem** to the :ref:`Viewport<class_Viewport>`\ s coordinate system.
+返回从该 **CanvasItem** 的局部坐标系到 :ref:`Viewport<class_Viewport>` 坐标系的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -1423,7 +1423,7 @@ Returns the transform from the local coordinate system of this **CanvasItem** to
 
 :ref:`Variant<class_Variant>` **get_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_CanvasItem_method_get_instance_shader_parameter>`
 
-Get the value of a shader parameter as set on this instance.
+获取在该实例上设置的着色器参数值。
 
 .. rst-class:: classref-item-separator
 
@@ -1435,7 +1435,7 @@ Get the value of a shader parameter as set on this instance.
 
 :ref:`Vector2<class_Vector2>` **get_local_mouse_position**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_local_mouse_position>`
 
-Returns the mouse's position in this **CanvasItem** using the local coordinate system of this **CanvasItem**.
+返回该 **CanvasItem** 中鼠标的位置，使用该 **CanvasItem** 的局部坐标系。
 
 .. rst-class:: classref-item-separator
 
@@ -1447,9 +1447,9 @@ Returns the mouse's position in this **CanvasItem** using the local coordinate s
 
 :ref:`Transform2D<class_Transform2D>` **get_screen_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_screen_transform>`
 
-Returns the transform of this **CanvasItem** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+返回该 **CanvasItem** 在全局屏幕坐标中的变换（即考虑窗口位置）。主要用于编辑器插件。
 
-Equivalent to :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>` if the window is embedded (see :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
+对于嵌入窗口（见 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`\ ），则等同于 :ref:`get_global_transform()<class_CanvasItem_method_get_global_transform>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1461,7 +1461,7 @@ Equivalent to :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_g
 
 :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_transform>`
 
-Returns the transform matrix of this **CanvasItem**.
+返回该 **CanvasItem** 的变换矩阵。
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Returns the transform matrix of this **CanvasItem**.
 
 :ref:`Rect2<class_Rect2>` **get_viewport_rect**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_viewport_rect>`
 
-Returns this node's viewport boundaries as a :ref:`Rect2<class_Rect2>`. See also :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
+以 :ref:`Rect2<class_Rect2>` 的形式返回该节点的视口边界。另见 :ref:`Node.get_viewport()<class_Node_method_get_viewport>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ Returns this node's viewport boundaries as a :ref:`Rect2<class_Rect2>`. See also
 
 :ref:`Transform2D<class_Transform2D>` **get_viewport_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_viewport_transform>`
 
-Returns the transform of this node, converted from its registered canvas's coordinate system to its viewport embedder's coordinate system. See also :ref:`Viewport.get_final_transform()<class_Viewport_method_get_final_transform>` and :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
+返回该节点的变换，从所注册画布的坐标系转换至视口嵌入器的坐标系。另见 :ref:`Viewport.get_final_transform()<class_Viewport_method_get_final_transform>` 和 :ref:`Node.get_viewport()<class_Node_method_get_viewport>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Returns the transform of this node, converted from its registered canvas's coord
 
 :ref:`bool<class_bool>` **get_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CanvasItem_method_get_visibility_layer_bit>`
 
-Returns ``true`` if the layer at the given index is set in :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`.
+如果 :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` 中设置了给定索引对应的层，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1509,9 +1509,9 @@ Returns ``true`` if the layer at the given index is set in :ref:`visibility_laye
 
 :ref:`World2D<class_World2D>` **get_world_2d**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_world_2d>`
 
-Returns the :ref:`World2D<class_World2D>` this node is registered to.
+返回该节点注册到的 :ref:`World2D<class_World2D>`\ 。
 
-Usually, this is the same as this node's viewport (see :ref:`Node.get_viewport()<class_Node_method_get_viewport>` and :ref:`Viewport.find_world_2d()<class_Viewport_method_find_world_2d>`).
+通常与该节点的视口相同（见 :ref:`Node.get_viewport()<class_Node_method_get_viewport>` 和 :ref:`Viewport.find_world_2d()<class_Viewport_method_find_world_2d>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1523,7 +1523,7 @@ Usually, this is the same as this node's viewport (see :ref:`Node.get_viewport()
 
 |void| **hide**\ (\ ) :ref:`🔗<class_CanvasItem_method_hide>`
 
-Hide the **CanvasItem** if it's currently visible. This is equivalent to setting :ref:`visible<class_CanvasItem_property_visible>` to ``false``.
+如果该 **CanvasItem** 目前是可见的，则将其隐藏。相当于将 :ref:`visible<class_CanvasItem_property_visible>` 设为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1535,7 +1535,7 @@ Hide the **CanvasItem** if it's currently visible. This is equivalent to setting
 
 :ref:`bool<class_bool>` **is_local_transform_notification_enabled**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_is_local_transform_notification_enabled>`
 
-Returns ``true`` if the node receives :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` whenever its local transform changes. This is enabled with :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`.
+如果节点会在局部变换发生改变时收到 :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` 则返回 ``true``\ 。使用 :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>` 启用。
 
 .. rst-class:: classref-item-separator
 
@@ -1547,7 +1547,7 @@ Returns ``true`` if the node receives :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED
 
 :ref:`bool<class_bool>` **is_transform_notification_enabled**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_is_transform_notification_enabled>`
 
-Returns ``true`` if the node receives :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` whenever its global transform changes. This is enabled with :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>`.
+如果节点会在全局变换发生改变时收到 :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` 则返回 ``true``\ 。使用 :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>` 启用。
 
 .. rst-class:: classref-item-separator
 
@@ -1559,11 +1559,11 @@ Returns ``true`` if the node receives :ref:`NOTIFICATION_TRANSFORM_CHANGED<class
 
 :ref:`bool<class_bool>` **is_visible_in_tree**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_is_visible_in_tree>`
 
-Returns ``true`` if the node is present in the :ref:`SceneTree<class_SceneTree>`, its :ref:`visible<class_CanvasItem_property_visible>` property is ``true`` and all its ancestors are also visible. If any ancestor is hidden, this node will not be visible in the scene tree, and is therefore not drawn (see :ref:`_draw()<class_CanvasItem_private_method__draw>`).
+如果节点存在于 :ref:`SceneTree<class_SceneTree>` 中，并且 :ref:`visible<class_CanvasItem_property_visible>` 属性为 ``true``\ 、所有祖级节点也都可见，则返回 ``true``\ 。如果存在隐藏的祖级节点，则该节点在场景树中不可见，因此不会进行绘制（见 :ref:`_draw()<class_CanvasItem_private_method__draw>`\ ）。
 
-Visibility is checked only in parent nodes that inherit from **CanvasItem**, :ref:`CanvasLayer<class_CanvasLayer>`, and :ref:`Window<class_Window>`. If the parent is of any other type (such as :ref:`Node<class_Node>`, :ref:`AnimationPlayer<class_AnimationPlayer>`, or :ref:`Node3D<class_Node3D>`), it is assumed to be visible.
+父节点派生自 **CanvasItem**\ 、\ :ref:`CanvasLayer<class_CanvasLayer>` 或 :ref:`Window<class_Window>` 时才会进行可见性检查。如果父节点为其他类型（例如 :ref:`Node<class_Node>`\ 、\ :ref:`AnimationPlayer<class_AnimationPlayer>`\ 、\ :ref:`Node3D<class_Node3D>`\ ），则会当作可见。
 
-\ **Note:** This method does not take :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` into account, so even if this method returns ``true``, the node might end up not being rendered.
+\ **注意：**\ 该方法不会考虑 :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`\ ，因此即便返回 ``true``\ ，最后也可能不渲染该节点。
 
 .. rst-class:: classref-item-separator
 
@@ -1575,9 +1575,9 @@ Visibility is checked only in parent nodes that inherit from **CanvasItem**, :re
 
 :ref:`Vector2<class_Vector2>` **make_canvas_position_local**\ (\ viewport_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_CanvasItem_method_make_canvas_position_local>`
 
-Transforms ``viewport_point`` from the viewport's coordinates to this node's local coordinates.
+将 ``viewport_point`` 从视口坐标系变换到该节点的本地坐标系。
 
-For the opposite operation, use :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>`.
+要进行相反的操作，请使用 :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>`\ 。
 
 ::
 
@@ -1593,7 +1593,7 @@ For the opposite operation, use :ref:`get_global_transform_with_canvas()<class_C
 
 :ref:`InputEvent<class_InputEvent>` **make_input_local**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_CanvasItem_method_make_input_local>`
 
-Returns a copy of the given ``event`` with its coordinates converted from global space to this **CanvasItem**'s local space. If not possible, returns the same :ref:`InputEvent<class_InputEvent>` unchanged.
+返回 ``event`` 事件的副本，将其坐标从全局空间转换至该 **CanvasItem** 的局部空间。无法转换则原样返回 :ref:`InputEvent<class_InputEvent>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1605,7 @@ Returns a copy of the given ``event`` with its coordinates converted from global
 
 |void| **move_to_front**\ (\ ) :ref:`🔗<class_CanvasItem_method_move_to_front>`
 
-Moves this node below its siblings, usually causing the node to draw on top of its siblings. Does nothing if this node does not have a parent. See also :ref:`Node.move_child()<class_Node_method_move_child>`.
+将该节点移至同级节点的下方，通常会导致该节点绘制在同级节点的上方。如果该节点没有父节点则不会发生任何事情。另见 :ref:`Node.move_child()<class_Node_method_move_child>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1617,7 +1617,7 @@ Moves this node below its siblings, usually causing the node to draw on top of i
 
 |void| **queue_redraw**\ (\ ) :ref:`🔗<class_CanvasItem_method_queue_redraw>`
 
-Queues the **CanvasItem** to redraw. During idle time, if **CanvasItem** is visible, :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` is sent and :ref:`_draw()<class_CanvasItem_private_method__draw>` is called. This only occurs **once** per frame, even if this method has been called multiple times.
+将该 **CanvasItem** 加入重绘队列。空闲时，如果 **CanvasItem** 可见，则会发送 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 并调用 :ref:`_draw()<class_CanvasItem_private_method__draw>`\ 。即便多次调用这个方法，每帧也都只会发生\ **一次**\ 绘制。
 
 .. rst-class:: classref-item-separator
 
@@ -1629,11 +1629,11 @@ Queues the **CanvasItem** to redraw. During idle time, if **CanvasItem** is visi
 
 |void| **set_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_CanvasItem_method_set_instance_shader_parameter>`
 
-Set the value of a shader uniform for this instance only (`per-instance uniform <../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms>`__). See also :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` to assign a uniform on all instances using the same :ref:`ShaderMaterial<class_ShaderMaterial>`.
+仅为该实例设置一个着色器 uniform 值（\ `每实例 uniform <../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms>`__\ ） 。另见 :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` 以使用相同的 :ref:`ShaderMaterial<class_ShaderMaterial>` 在所有实例上分配一个 uniform。
 
-\ **Note:** For a shader uniform to be assignable on a per-instance basis, it *must* be defined with ``instance uniform ...`` rather than ``uniform ...`` in the shader code.
+\ **注意：**\ 要在每个实例的基础上分配一个着色器 uniform，则\ *必须*\ 在着色器代码中，使用 ``instance uniform ...``\ ，而不是 ``uniform ...`` 来定义。
 
-\ **Note:** ``name`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
+\ **注意：**\ ``name`` 是区分大小写的，并且必须与代码中的 uniform 名称完全匹配（而不是检查器中大写的名称）。
 
 .. rst-class:: classref-item-separator
 
@@ -1645,9 +1645,9 @@ Set the value of a shader uniform for this instance only (`per-instance uniform 
 
 |void| **set_notify_local_transform**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_notify_local_transform>`
 
-If ``true``, the node will receive :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` whenever its local transform changes.
+如果为 ``true``\ ，则该节点将在其局部变换发生改变时收到 :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>`\ 。
 
-\ **Note:** Many canvas items such as :ref:`Bone2D<class_Bone2D>` or :ref:`CollisionShape2D<class_CollisionShape2D>` automatically enable this in order to function correctly.
+\ **注意：**\ :ref:`Bone2D<class_Bone2D>`\ 、\ :ref:`CollisionShape2D<class_CollisionShape2D>` 等许多画布项都会自动启用，从而正常工作。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Ca
 
 |void| **set_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_visibility_layer_bit>`
 
-Set/clear individual bits on the rendering visibility layer. This simplifies editing this **CanvasItem**'s visibility layer.
+设置或清除渲染可见层上的单个位。这简化了对该 **CanvasItem** 的可见层的编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1685,16 +1685,16 @@ Set/clear individual bits on the rendering visibility layer. This simplifies edi
 
 |void| **show**\ (\ ) :ref:`🔗<class_CanvasItem_method_show>`
 
-Show the **CanvasItem** if it's currently hidden. This is equivalent to setting :ref:`visible<class_CanvasItem_property_visible>` to ``true``.
+如果该 **CanvasItem** 目前是隐藏的，则将其显示。相当于将 :ref:`visible<class_CanvasItem_property_visible>` 设为 ``true``\ 。
 
-\ **Note:** For controls that inherit :ref:`Popup<class_Popup>`, the correct way to make them visible is to call one of the multiple ``popup*()`` functions instead.
+\ **注意：**\ 对于继承自 :ref:`Popup<class_Popup>` 的控件，让它们可见的正确做法是换成调用各种 ``popup*()`` 函数。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

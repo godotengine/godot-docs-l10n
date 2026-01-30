@@ -5,30 +5,30 @@
 GLTFPhysicsBody
 ===============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Represents a glTF physics body.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Represents a physics body as an intermediary between the ``OMI_physics_body`` glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `OMI_physics_body glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_GLTFPhysicsBody_property_angular_velocity:
 
@@ -89,7 +89,7 @@ Property Descriptions
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-The angular velocity of the physics body, in radians per second. This is only used when the body type is "rigid" or "vehicle".
+該物理體的角速度，單位為弧度每秒。僅在物體型別為“rigid”或“vehicle”時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ When exporting, this will be squashed down to one of ``"static"``, ``"kinematic"
 - |void| **set_center_of_mass**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_center_of_mass**\ (\ )
 
-The center of mass of the body, in meters. This is in local space relative to the body. By default, the center of the mass is the body's origin.
+主體的質心，以米為單位。這是在相對於主體的局部空間中。預設情況下，質心是主體的原點。
 
 .. rst-class:: classref-item-separator
 
@@ -180,11 +180,11 @@ The inertia orientation of the physics body. This defines the rotation of the in
 - |void| **set_inertia_tensor**\ (\ value\: :ref:`Basis<class_Basis>`\ )
 - :ref:`Basis<class_Basis>` **get_inertia_tensor**\ (\ )
 
-**Deprecated:** This property may be changed or removed in future versions.
+**已棄用：** 此屬性可能在未來版本中變更或移除。
 
-The inertia tensor of the physics body, in kilogram meter squared (kg⋅m²). This is only used when the body type is "rigid" or "vehicle".
+該物理體的慣性張量，單位為千克平方米（kg⋅m²）。僅在物體型別為“rigid”或“vehicle”時使用。
 
-When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this value is zero, then the inertia will be calculated automatically.
+轉換為 Godot :ref:`RigidBody3D<class_RigidBody3D>` 節點時，如果該值為零，則會自動計算慣性。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this va
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-The linear velocity of the physics body, in meters per second. This is only used when the body type is "rigid" or "vehicle".
+該物理體的線速度，單位為米每秒。僅在物體型別為“rigid”或“vehicle”時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ The linear velocity of the physics body, in meters per second. This is only used
 - |void| **set_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mass**\ (\ )
 
-The mass of the physics body, in kilograms. This is only used when the body type is "rigid" or "vehicle".
+該物理體的質量，單位為千克。僅在物體型別為“rigid”或“vehicle”時使用。
 
 .. rst-class:: classref-section-separator
 
@@ -226,8 +226,8 @@ The mass of the physics body, in kilograms. This is only used when the body type
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_GLTFPhysicsBody_method_from_dictionary:
 
@@ -271,14 +271,14 @@ Serializes this GLTFPhysicsBody instance into a :ref:`Dictionary<class_Dictionar
 
 :ref:`CollisionObject3D<class_CollisionObject3D>` **to_node**\ (\ ) |const| :ref:`🔗<class_GLTFPhysicsBody_method_to_node>`
 
-Converts this GLTFPhysicsBody instance into a Godot :ref:`CollisionObject3D<class_CollisionObject3D>` node.
+將這個 GLTFPhysicsBody 實例轉換為 Godot :ref:`CollisionObject3D<class_CollisionObject3D>` 節點。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

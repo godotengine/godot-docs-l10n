@@ -5,30 +5,30 @@
 Camera3D
 ========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`XRCamera3D<class_XRCamera3D>`
+**被繼承：** :ref:`XRCamera3D<class_XRCamera3D>`
 
-Camera node, displays from a point of view.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**Camera3D** is a special node that displays what is visible from its current location. Cameras register themselves in the nearest :ref:`Viewport<class_Viewport>` node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the camera will register in the global viewport. In other words, a camera just provides 3D display capabilities to a :ref:`Viewport<class_Viewport>`, and, without one, a scene registered in that :ref:`Viewport<class_Viewport>` (or higher viewports) can't be displayed.
+相機節點，會從某個角度進行顯示。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+**Camera3D** 是一個特殊節點，用於顯示從其目前位置可見的內容。相機在最近的 :ref:`Viewport<class_Viewport>` 節點中註冊自己（當樹上行）。每個視口中只能有一個啟動的相機。如果在樹上沒有可用的視口，相機將在全域視口中註冊。換句話說，相機只是用來為 :ref:`Viewport<class_Viewport>` 提供 3D 顯示能力的，如果沒有，則在該 :ref:`Viewport<class_Viewport>`\ （或更高層視口）中註冊的場景無法顯示。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -119,8 +119,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Camera3D_ProjectionType:
 
@@ -134,7 +134,7 @@ enum **ProjectionType**: :ref:`🔗<enum_Camera3D_ProjectionType>`
 
 :ref:`ProjectionType<enum_Camera3D_ProjectionType>` **PROJECTION_PERSPECTIVE** = ``0``
 
-Perspective projection. Objects on the screen becomes smaller when they are far away.
+透視投影。物體距離相機螢幕越遠顯示就越小。
 
 .. _class_Camera3D_constant_PROJECTION_ORTHOGONAL:
 
@@ -142,7 +142,7 @@ Perspective projection. Objects on the screen becomes smaller when they are far 
 
 :ref:`ProjectionType<enum_Camera3D_ProjectionType>` **PROJECTION_ORTHOGONAL** = ``1``
 
-Orthogonal projection, also known as orthographic projection. Objects remain the same size on the screen no matter how far away they are.
+正交投影，又稱正交投影。物體無論距離多遠，在螢幕上都保持相同的大小。
 
 .. _class_Camera3D_constant_PROJECTION_FRUSTUM:
 
@@ -150,7 +150,7 @@ Orthogonal projection, also known as orthographic projection. Objects remain the
 
 :ref:`ProjectionType<enum_Camera3D_ProjectionType>` **PROJECTION_FRUSTUM** = ``2``
 
-Frustum projection. This mode allows adjusting :ref:`frustum_offset<class_Camera3D_property_frustum_offset>` to create "tilted frustum" effects.
+視錐投影。通過該模式可以調整 :ref:`frustum_offset<class_Camera3D_property_frustum_offset>` 來建立“傾斜的視錐”效果。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ enum **KeepAspect**: :ref:`🔗<enum_Camera3D_KeepAspect>`
 
 :ref:`KeepAspect<enum_Camera3D_KeepAspect>` **KEEP_WIDTH** = ``0``
 
-Preserves the horizontal aspect ratio; also known as Vert- scaling. This is usually the best option for projects running in portrait mode, as taller aspect ratios will benefit from a wider vertical FOV.
+保留水平長寬比，也稱為 Vert- 縮放。這通常是在縱向模式下運作的專案的最佳選擇，因為較高的縱橫比將從更寬的垂直視場中受益。
 
 .. _class_Camera3D_constant_KEEP_HEIGHT:
 
@@ -176,7 +176,7 @@ Preserves the horizontal aspect ratio; also known as Vert- scaling. This is usua
 
 :ref:`KeepAspect<enum_Camera3D_KeepAspect>` **KEEP_HEIGHT** = ``1``
 
-Preserves the vertical aspect ratio; also known as Hor+ scaling. This is usually the best option for projects running in landscape mode, as wider aspect ratios will automatically benefit from a wider horizontal FOV.
+保留垂直長寬比，也稱為 Hor+ 縮放。這通常是在橫向模式下運作的專案的最佳選擇，因為較寬的縱橫比會自動從較寬的水平視場中受益。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_DISABLED** = ``0``
 
-Disables `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ simulation (default).
+禁用\ `多普勒效應 <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 模擬（預設）。
 
 .. _class_Camera3D_constant_DOPPLER_TRACKING_IDLE_STEP:
 
@@ -202,7 +202,7 @@ Disables `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ simul
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_process``. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+通過追蹤在 ``_process`` 中改變的物體位置來類比\ `多普勒效應 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。與這些物體相比，該相機的相對速度的變化會影響音訊的感知方式（改變音訊的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
 
 .. _class_Camera3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -210,7 +210,7 @@ Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tr
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_physics_process``. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+通過追蹤在 ``_process`` 中改變的物體位置來類比\ `多普勒效應 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。與這些物體相比，該相機的相對速度的變化會影響音訊的感知方式（改變音訊的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -218,8 +218,8 @@ Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tr
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Camera3D_property_attributes:
 
@@ -232,7 +232,7 @@ Property Descriptions
 - |void| **set_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_attributes**\ (\ )
 
-The :ref:`CameraAttributes<class_CameraAttributes>` to use for this camera.
+該相機所使用的 :ref:`CameraAttributes<class_CameraAttributes>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -266,13 +266,13 @@ The :ref:`Compositor<class_Compositor>` to use for this camera.
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-The culling mask that describes which :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` are rendered by this camera. By default, all 20 user-visible layers are rendered.
+剔除遮罩，描述該相機算繪了哪些 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`\ 。預設情況下，20 個使用者可見層全都被算繪。
 
-\ **Note:** Since the :ref:`cull_mask<class_Camera3D_property_cull_mask>` allows for 32 layers to be stored in total, there are an additional 12 layers that are only used internally by the engine and aren't exposed in the editor. Setting :ref:`cull_mask<class_Camera3D_property_cull_mask>` using a script allows you to toggle those reserved layers, which can be useful for editor plugins.
+\ **注意：**\ 由於 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 允許總共儲存 32 個層，因此另外 12 個層僅供引擎內部使用，不會在編輯器中公開。使用腳本設定 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 允許你切換那些保留層，這對編輯器外掛程式很有用。
 
-To adjust :ref:`cull_mask<class_Camera3D_property_cull_mask>` more easily using a script, use :ref:`get_cull_mask_value()<class_Camera3D_method_get_cull_mask_value>` and :ref:`set_cull_mask_value()<class_Camera3D_method_set_cull_mask_value>`.
+要使用腳本更輕鬆地調整 :ref:`cull_mask<class_Camera3D_property_cull_mask>`\ ，請使用 :ref:`get_cull_mask_value()<class_Camera3D_method_get_cull_mask_value>` 和 :ref:`set_cull_mask_value()<class_Camera3D_method_set_cull_mask_value>`\ 。
 
-\ **Note:** :ref:`VoxelGI<class_VoxelGI>`, SDFGI and :ref:`LightmapGI<class_LightmapGI>` will always take all layers into account to determine what contributes to global illumination. If this is an issue, set :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` to :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>` for meshes and :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` to :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>` for lights to exclude them from global illumination.
+\ **注意：**\ :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI 和 :ref:`LightmapGI<class_LightmapGI>` 將始終考慮所有層以確定對全域光照有貢獻的內容。如果這是一個問題，請將網格的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 設定為 :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>`\ ，並將燈光的 :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 設定為 :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>`\ ，以將它們從全域光照中排除。
 
 .. rst-class:: classref-item-separator
 
@@ -289,9 +289,9 @@ To adjust :ref:`cull_mask<class_Camera3D_property_cull_mask>` more easily using 
 - |void| **set_current**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_current**\ (\ )
 
-If ``true``, the ancestor :ref:`Viewport<class_Viewport>` is currently using this camera.
+如果為 ``true``\ ，則祖級 :ref:`Viewport<class_Viewport>` 正在使用這個相機。
 
-If multiple cameras are in the scene, one will always be made current. For example, if two **Camera3D** nodes are present in the scene and only one is current, setting one camera's :ref:`current<class_Camera3D_property_current>` to ``false`` will cause the other camera to be made current.
+如果場景中有多個相機，總會有一個被設為目前相機。例如，假設場景中存在兩個 **Camera3D** 節點並且只有一個為目前相機，那麼如果把某一個相機的 :ref:`current<class_Camera3D_property_current>` 設為 ``false`` 就會導致另一個相機被設為目前相機。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ If not :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_
 - |void| **set_environment**\ (\ value\: :ref:`Environment<class_Environment>`\ )
 - :ref:`Environment<class_Environment>` **get_environment**\ (\ )
 
-The :ref:`Environment<class_Environment>` to use for this camera.
+此相機要使用的 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ The :ref:`Environment<class_Environment>` to use for this camera.
 - |void| **set_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_far**\ (\ )
 
-The distance to the far culling boundary for this camera relative to its local Z axis. Higher values allow the camera to see further away, while decreasing :ref:`far<class_Camera3D_property_far>` can improve performance if it results in objects being partially or fully culled.
+該相機相對於其局部 Z 軸到遠剔除邊界的距離。較高的值允許相機看得更遠，而減少 :ref:`far<class_Camera3D_property_far>` 如果會導致物件被部分或完全剔除，則可以提高性能。
 
 .. rst-class:: classref-item-separator
 
@@ -388,9 +388,9 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 - |void| **set_frustum_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_frustum_offset**\ (\ )
 
-The camera's frustum offset. This can be changed from the default to create "tilted frustum" effects such as `Y-shearing <https://zdoom.org/wiki/Y-shearing>`__.
+相機的視錐偏移。可以更改預設值，以建立如 `Y-shearing <https://zdoom.org/wiki/Y-shearing>`__ 一樣的“傾斜的視錐”效果。
 
-\ **Note:** Only effective if :ref:`projection<class_Camera3D_property_projection>` is :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`.
+\ **注意：**\ 僅在 :ref:`projection<class_Camera3D_property_projection>` 為 :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ The camera's frustum offset. This can be changed from the default to create "til
 - |void| **set_h_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_h_offset**\ (\ )
 
-The horizontal (X) offset of the camera viewport.
+相機視口的水平（X）偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ The horizontal (X) offset of the camera viewport.
 - |void| **set_keep_aspect_mode**\ (\ value\: :ref:`KeepAspect<enum_Camera3D_KeepAspect>`\ )
 - :ref:`KeepAspect<enum_Camera3D_KeepAspect>` **get_keep_aspect_mode**\ (\ )
 
-The axis to lock during :ref:`fov<class_Camera3D_property_fov>`/:ref:`size<class_Camera3D_property_size>` adjustments. Can be either :ref:`KEEP_WIDTH<class_Camera3D_constant_KEEP_WIDTH>` or :ref:`KEEP_HEIGHT<class_Camera3D_constant_KEEP_HEIGHT>`.
+在 :ref:`fov<class_Camera3D_property_fov>`/:ref:`size<class_Camera3D_property_size>` 調整時要鎖定的軸。可以是 :ref:`KEEP_WIDTH<class_Camera3D_constant_KEEP_WIDTH>` 或 :ref:`KEEP_HEIGHT<class_Camera3D_constant_KEEP_HEIGHT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ The axis to lock during :ref:`fov<class_Camera3D_property_fov>`/:ref:`size<class
 - |void| **set_near**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_near**\ (\ )
 
-The distance to the near culling boundary for this camera relative to its local Z axis. Lower values allow the camera to see objects more up close to its origin, at the cost of lower precision across the *entire* range. Values lower than the default can lead to increased Z-fighting.
+該相機相對於其局部 Z 軸到近剔除邊界的距離。較低的值允許相機看到更靠近其原點的物件，但代價是\ *整個*\ 範圍內的精度較低。低於預設值的值會導致 Z 衝突增加。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ The distance to the near culling boundary for this camera relative to its local 
 - |void| **set_projection**\ (\ value\: :ref:`ProjectionType<enum_Camera3D_ProjectionType>`\ )
 - :ref:`ProjectionType<enum_Camera3D_ProjectionType>` **get_projection**\ (\ )
 
-The camera's projection mode. In :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_constant_PROJECTION_PERSPECTIVE>` mode, objects' Z distance from the camera's local space scales their perceived size.
+相機的投影模式。在 :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_constant_PROJECTION_PERSPECTIVE>` 模式下，物體與相機局部空間的Z距離會影響其感知的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ The camera's projection mode. In :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_con
 - |void| **set_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_size**\ (\ )
 
-The camera's size in meters measured as the diameter of the width or height, depending on :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. Only applicable in orthogonal and frustum modes.
+該相機的大小，單位為米，描述的是完整的寬度或者高度，取決於 :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`\ 。僅適用於正交和視錐模式。
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ The camera's size in meters measured as the diameter of the width or height, dep
 - |void| **set_v_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_v_offset**\ (\ )
 
-The vertical (Y) offset of the camera viewport.
+相機視口的垂直（Y）偏移量。
 
 .. rst-class:: classref-section-separator
 
@@ -500,8 +500,8 @@ The vertical (Y) offset of the camera viewport.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Camera3D_method_clear_current:
 
@@ -509,7 +509,7 @@ Method Descriptions
 
 |void| **clear_current**\ (\ enable_next\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Camera3D_method_clear_current>`
 
-If this is the current camera, remove it from being current. If ``enable_next`` is ``true``, request to make the next camera current, if any.
+如果這是目前相機，則將其從目前相機中移除。如果 ``enable_next`` 為 ``true``\ ，則請求使下一個相機（如果有）成為目前相機。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ If this is the current camera, remove it from being current. If ``enable_next`` 
 
 :ref:`Projection<class_Projection>` **get_camera_projection**\ (\ ) |const| :ref:`🔗<class_Camera3D_method_get_camera_projection>`
 
-Returns the projection matrix that this camera uses to render to its associated viewport. The camera must be part of the scene tree to function.
+返回該相機用於算繪至關聯視口的投影矩陣。相機必須是場景樹的一部分才能正常工作。
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ Returns the projection matrix that this camera uses to render to its associated 
 
 :ref:`RID<class_RID>` **get_camera_rid**\ (\ ) |const| :ref:`🔗<class_Camera3D_method_get_camera_rid>`
 
-Returns the camera's RID from the :ref:`RenderingServer<class_RenderingServer>`.
+從 :ref:`RenderingServer<class_RenderingServer>` 返回該相機的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ Returns the camera's RID from the :ref:`RenderingServer<class_RenderingServer>`.
 
 :ref:`Transform3D<class_Transform3D>` **get_camera_transform**\ (\ ) |const| :ref:`🔗<class_Camera3D_method_get_camera_transform>`
 
-Returns the transform of the camera plus the vertical (:ref:`v_offset<class_Camera3D_property_v_offset>`) and horizontal (:ref:`h_offset<class_Camera3D_property_h_offset>`) offsets; and any other adjustments made to the position and orientation of the camera by subclassed cameras such as :ref:`XRCamera3D<class_XRCamera3D>`.
+返回該相機的變換，該變換會加上垂直（\ :ref:`v_offset<class_Camera3D_property_v_offset>`\ ）和水平（\ :ref:`h_offset<class_Camera3D_property_h_offset>`\ ）偏移；以及 :ref:`XRCamera3D<class_XRCamera3D>` 等子類別相機對相機位置和方向所做的任何其他調整。
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ Returns the transform of the camera plus the vertical (:ref:`v_offset<class_Came
 
 :ref:`bool<class_bool>` **get_cull_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Camera3D_method_get_cull_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`cull_mask<class_Camera3D_property_cull_mask>` is enabled, given a ``layer_number`` between 1 and 20.
+返回是否啟用了 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -569,7 +569,7 @@ Returns whether or not the specified layer of the :ref:`cull_mask<class_Camera3D
 
 :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\] **get_frustum**\ (\ ) |const| :ref:`🔗<class_Camera3D_method_get_frustum>`
 
-Returns the camera's frustum planes in world space units as an array of :ref:`Plane<class_Plane>`\ s in the following order: near, far, left, top, right, bottom. Not to be confused with :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
+以世界空間單位將相機的視錐平面作為 :ref:`Plane<class_Plane>` 陣列按以下順序返回：near、far、left、top、right、bottom。不要與 :ref:`frustum_offset<class_Camera3D_property_frustum_offset>` 混淆。
 
 .. rst-class:: classref-item-separator
 
@@ -581,7 +581,7 @@ Returns the camera's frustum planes in world space units as an array of :ref:`Pl
 
 :ref:`RID<class_RID>` **get_pyramid_shape_rid**\ (\ ) :ref:`🔗<class_Camera3D_method_get_pyramid_shape_rid>`
 
-Returns the RID of a pyramid shape encompassing the camera's view frustum, ignoring the camera's near plane. The tip of the pyramid represents the position of the camera.
+返回包含該相機視錐的錐體形狀的 RID，忽略相機的近處平面。錐體的尖端代表該相機的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -593,9 +593,9 @@ Returns the RID of a pyramid shape encompassing the camera's view frustum, ignor
 
 :ref:`bool<class_bool>` **is_position_behind**\ (\ world_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Camera3D_method_is_position_behind>`
 
-Returns ``true`` if the given position is behind the camera (the blue part of the linked diagram). `See this diagram <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ for an overview of position query methods.
+如果給定位置在相機後面（連結圖的藍色部分），則返回 ``true``\ 。\ `查看此圖 <https://raw.githubusercontent.com/godotengine/godot-docs/4.1/img/camera3d_position_frustum.png>`__\ 以瞭解位置查詢方法的概述。
 
-\ **Note:** A position which returns ``false`` may still be outside the camera's field of view.
+\ **注意：**\ 返回 ``false`` 的位置可能仍然在相機的視野之外。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Returns ``true`` if the given position is behind the camera (the blue part of th
 
 :ref:`bool<class_bool>` **is_position_in_frustum**\ (\ world_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Camera3D_method_is_position_in_frustum>`
 
-Returns ``true`` if the given position is inside the camera's frustum (the green part of the linked diagram). `See this diagram <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ for an overview of position query methods.
+如果給定位置在相機的視錐內（位於連結圖中的綠色部分），則返回 ``true``\ 。\ `查看此圖 <https://raw.githubusercontent.com/godotengine/godot-docs/4.1/img/camera3d_position_frustum.png>`__\ 以瞭解位置查詢方法的概述。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Returns ``true`` if the given position is inside the camera's frustum (the green
 
 |void| **make_current**\ (\ ) :ref:`🔗<class_Camera3D_method_make_current>`
 
-Makes this camera the current camera for the :ref:`Viewport<class_Viewport>` (see class description). If the camera node is outside the scene tree, it will attempt to become current once it's added.
+使此相機成為 :ref:`Viewport<class_Viewport>` 的目前相機（見類的說明）。如果相機節點在場景樹之外，一旦新增，它將嘗試成為目前相機。
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Makes this camera the current camera for the :ref:`Viewport<class_Viewport>` (se
 
 :ref:`Vector3<class_Vector3>` **project_local_ray_normal**\ (\ screen_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Camera3D_method_project_local_ray_normal>`
 
-Returns a normal vector from the screen point location directed along the camera. Orthogonal cameras are normalized. Perspective cameras account for perspective, screen width/height, etc.
+返回從螢幕點位置沿相機方向的法向量。正交相機會被正規化。透視相機考慮到透視、螢幕寬度/高度等因素。
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ Returns a normal vector from the screen point location directed along the camera
 
 :ref:`Vector3<class_Vector3>` **project_position**\ (\ screen_point\: :ref:`Vector2<class_Vector2>`, z_depth\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Camera3D_method_project_position>`
 
-Returns the 3D point in world space that maps to the given 2D coordinate in the :ref:`Viewport<class_Viewport>` rectangle on a plane that is the given ``z_depth`` distance into the scene away from the camera.
+返回世界空間中的 3D 點，該點對應到平面上 :ref:`Viewport<class_Viewport>` 矩形中的給定 2D 座標，該平面是距相機到場景的給定 ``z_depth`` 距離。
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +655,7 @@ Returns the 3D point in world space that maps to the given 2D coordinate in the 
 
 :ref:`Vector3<class_Vector3>` **project_ray_normal**\ (\ screen_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Camera3D_method_project_ray_normal>`
 
-Returns a normal vector in world space, that is the result of projecting a point on the :ref:`Viewport<class_Viewport>` rectangle by the inverse camera projection. This is useful for casting rays in the form of (origin, normal) for object intersection or picking.
+返回世界空間中的法線向量，即通過逆相機投影將點投影到 :ref:`Viewport<class_Viewport>` 矩形上的結果。這對於以（原點，法線）的形式投射光線，以進行物件相交或拾取很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -667,7 +667,7 @@ Returns a normal vector in world space, that is the result of projecting a point
 
 :ref:`Vector3<class_Vector3>` **project_ray_origin**\ (\ screen_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Camera3D_method_project_ray_origin>`
 
-Returns a 3D position in world space, that is the result of projecting a point on the :ref:`Viewport<class_Viewport>` rectangle by the inverse camera projection. This is useful for casting rays in the form of (origin, normal) for object intersection or picking.
+返回世界空間中的 3D 位置，即通過逆相機投影將點投影到 :ref:`Viewport<class_Viewport>` 矩形上的結果。這對於以（原點，法線）的形式投射光線，以進行物件相交或拾取很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Returns a 3D position in world space, that is the result of projecting a point o
 
 |void| **set_cull_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Camera3D_method_set_cull_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`cull_mask<class_Camera3D_property_cull_mask>`, given a ``layer_number`` between 1 and 20.
+基於 ``value``\ ，啟用或禁用 :ref:`cull_mask<class_Camera3D_property_cull_mask>` 中的指定層，該層由一個介於 1 和 20 之間的給定 ``layer_number`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +691,7 @@ Based on ``value``, enables or disables the specified layer in the :ref:`cull_ma
 
 |void| **set_frustum**\ (\ size\: :ref:`float<class_float>`, offset\: :ref:`Vector2<class_Vector2>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_frustum>`
 
-Sets the camera projection to frustum mode (see :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`), by specifying a ``size``, an ``offset``, and the ``z_near`` and ``z_far`` clip planes in world space units. See also :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`.
+通過指定的以世界空間單位為單位的 ``size``\ 、\ ``offset``\ 、以及 ``z_near`` 和 ``z_far`` 裁剪平面，將相機投影設定為視錐模式（見 :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`\ ）。另見 :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -717,7 +717,7 @@ As a hint, 3D games that look 2D often use this projection, with ``size`` specif
 
 |void| **set_perspective**\ (\ fov\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera3D_method_set_perspective>`
 
-Sets the camera projection to perspective mode (see :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_constant_PROJECTION_PERSPECTIVE>`), by specifying a ``fov`` (field of view) angle in degrees, and the ``z_near`` and ``z_far`` clip planes in world space units.
+通過指定的以度為單位的 ``fov``\ （視野）角度，以及以世界空間單位為單位的 ``z_near`` 和 ``z_far`` 裁剪平面，將相機投影設定為透視模式（參見 :ref:`PROJECTION_PERSPECTIVE<class_Camera3D_constant_PROJECTION_PERSPECTIVE>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -729,23 +729,23 @@ Sets the camera projection to perspective mode (see :ref:`PROJECTION_PERSPECTIVE
 
 :ref:`Vector2<class_Vector2>` **unproject_position**\ (\ world_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Camera3D_method_unproject_position>`
 
-Returns the 2D coordinate in the :ref:`Viewport<class_Viewport>` rectangle that maps to the given 3D point in world space.
+返回對應到世界空間中給定 3D 點的 :ref:`Viewport<class_Viewport>` 矩形中的 2D 座標。
 
-\ **Note:** When using this to position GUI elements over a 3D viewport, use :ref:`is_position_behind()<class_Camera3D_method_is_position_behind>` to prevent them from appearing if the 3D point is behind the camera:
+\ **注意：**\ 當使用它在 3D 視口上定位 GUI 元素時，如果 3D 點在相機後面，請使用 :ref:`is_position_behind()<class_Camera3D_method_is_position_behind>` 來防止它們出現：
 
 ::
 
-    # This code block is part of a script that inherits from Node3D.
-    # `control` is a reference to a node inheriting from Control.
+    # 該程式碼塊是從 Node3D 繼承的腳本的一部分。
+    # `control` 是對從 Control 繼承的節點的引用。
     control.visible = not get_viewport().get_camera_3d().is_position_behind(global_transform.origin)
     control.position = get_viewport().get_camera_3d().unproject_position(global_transform.origin)
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

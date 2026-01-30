@@ -5,14 +5,14 @@
 CameraFeed
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A camera feed gives you access to a single physical camera attached to your device.
+通過相機源，你可以存取連接到裝置的單個物理相機。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
 
@@ -22,8 +22,8 @@ A camera feed gives you access to a single physical camera attached to your devi
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_CameraFeed_signal_format_changed:
 
@@ -109,8 +109,8 @@ Emitted when a new frame is available.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_CameraFeed_FeedDataType:
 
@@ -124,7 +124,7 @@ enum **FeedDataType**: :ref:`🔗<enum_CameraFeed_FeedDataType>`
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_NOIMAGE** = ``0``
 
-No image set for the feed.
+沒有為該源設定圖像。
 
 .. _class_CameraFeed_constant_FEED_RGB:
 
@@ -132,7 +132,7 @@ No image set for the feed.
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_RGB** = ``1``
 
-Feed supplies RGB images.
+源提供 RGB 圖像。
 
 .. _class_CameraFeed_constant_FEED_YCBCR:
 
@@ -140,7 +140,7 @@ Feed supplies RGB images.
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_YCBCR** = ``2``
 
-Feed supplies YCbCr images that need to be converted to RGB.
+源提供的 YCbCr 圖像需要轉換成 RGB 圖像。
 
 .. _class_CameraFeed_constant_FEED_YCBCR_SEP:
 
@@ -148,7 +148,7 @@ Feed supplies YCbCr images that need to be converted to RGB.
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_YCBCR_SEP** = ``3``
 
-Feed supplies separate Y and CbCr images that need to be combined and converted to RGB.
+源提供單獨的 Y 和 CbCr 圖像，需要合併並轉換為 RGB。
 
 .. _class_CameraFeed_constant_FEED_EXTERNAL:
 
@@ -174,7 +174,7 @@ enum **FeedPosition**: :ref:`🔗<enum_CameraFeed_FeedPosition>`
 
 :ref:`FeedPosition<enum_CameraFeed_FeedPosition>` **FEED_UNSPECIFIED** = ``0``
 
-Unspecified position.
+未指定座標。
 
 .. _class_CameraFeed_constant_FEED_FRONT:
 
@@ -182,7 +182,7 @@ Unspecified position.
 
 :ref:`FeedPosition<enum_CameraFeed_FeedPosition>` **FEED_FRONT** = ``1``
 
-Camera is mounted at the front of the device.
+相機安裝在了裝置前部。
 
 .. _class_CameraFeed_constant_FEED_BACK:
 
@@ -190,7 +190,7 @@ Camera is mounted at the front of the device.
 
 :ref:`FeedPosition<enum_CameraFeed_FeedPosition>` **FEED_BACK** = ``2``
 
-Camera is mounted at the back of the device.
+相機安裝在了裝置後部。
 
 .. rst-class:: classref-section-separator
 
@@ -198,8 +198,8 @@ Camera is mounted at the back of the device.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CameraFeed_property_feed_is_active:
 
@@ -212,7 +212,7 @@ Property Descriptions
 - |void| **set_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_active**\ (\ )
 
-If ``true``, the feed is active.
+如果為 ``true``\ ，則源是啟動的。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ If ``true``, the feed is active.
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-The transform applied to the camera's image.
+套用於相機圖像的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -253,8 +253,8 @@ Formats supported by the feed. Each entry is a :ref:`Dictionary<class_Dictionary
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_CameraFeed_private_method__activate_feed:
 
@@ -286,7 +286,7 @@ Called when the camera feed is deactivated.
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **get_datatype**\ (\ ) |const| :ref:`🔗<class_CameraFeed_method_get_datatype>`
 
-Returns feed image data type.
+返回源圖像的資料型別。
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ Returns feed image data type.
 
 :ref:`int<class_int>` **get_id**\ (\ ) |const| :ref:`🔗<class_CameraFeed_method_get_id>`
 
-Returns the unique ID for this feed.
+返回該源的唯一ID。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ Returns the unique ID for this feed.
 
 :ref:`String<class_String>` **get_name**\ (\ ) |const| :ref:`🔗<class_CameraFeed_method_get_name>`
 
-Returns the camera's name.
+返回相機的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Returns the camera's name.
 
 :ref:`FeedPosition<enum_CameraFeed_FeedPosition>` **get_position**\ (\ ) |const| :ref:`🔗<class_CameraFeed_method_get_position>`
 
-Returns the position of camera on the device.
+返回裝置上的相機位置。
 
 .. rst-class:: classref-item-separator
 
@@ -426,12 +426,12 @@ Sets YCbCr image for this feed.
 
 Sets Y and CbCr images for this feed.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

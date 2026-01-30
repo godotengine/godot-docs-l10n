@@ -5,23 +5,23 @@
 ScrollBar
 =========
 
-**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`HScrollBar<class_HScrollBar>`, :ref:`VScrollBar<class_VScrollBar>`
+**被繼承：** :ref:`HScrollBar<class_HScrollBar>`, :ref:`VScrollBar<class_VScrollBar>`
 
-Abstract base class for scrollbars.
+捲軸的抽象基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Abstract base class for scrollbars, typically used to navigate through content that extends beyond the visible area of a control. Scrollbars are :ref:`Range<class_Range>`-based controls.
+捲軸的抽象基底類別，通常用於對超出控制項可視區域的內容進行導覽。捲軸是基於 :ref:`Range<class_Range>` 的控制項。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_ScrollBar_signal_scrolling:
 
@@ -81,7 +81,7 @@ Signals
 
 **scrolling**\ (\ ) :ref:`🔗<class_ScrollBar_signal_scrolling>`
 
-Emitted when the scrollbar is being scrolled.
+當捲軸滾動時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -89,8 +89,8 @@ Emitted when the scrollbar is being scrolled.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ScrollBar_property_custom_step:
 
@@ -103,7 +103,7 @@ Property Descriptions
 - |void| **set_custom_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_custom_step**\ (\ )
 
-Overrides the step used when clicking increment and decrement buttons or when using arrow keys when the **ScrollBar** is focused.
+覆蓋 在按下增和減按鈕時或在 **ScrollBar** 已獲得焦點且使用方向鍵時 的步長。
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ Overrides the step used when clicking increment and decrement buttons or when us
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_ScrollBar_theme_icon_decrement:
 
@@ -120,7 +120,7 @@ Theme Property Descriptions
 
 :ref:`Texture2D<class_Texture2D>` **decrement** :ref:`🔗<class_ScrollBar_theme_icon_decrement>`
 
-Icon used as a button to scroll the **ScrollBar** left/up. Supports custom step using the :ref:`custom_step<class_ScrollBar_property_custom_step>` property.
+作為按鈕使用的圖示，它用於使 **ScrollBar** 向左滾動。滾動步長由 :ref:`custom_step<class_ScrollBar_property_custom_step>` 屬性值自訂。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Icon used as a button to scroll the **ScrollBar** left/up. Supports custom step 
 
 :ref:`Texture2D<class_Texture2D>` **decrement_highlight** :ref:`🔗<class_ScrollBar_theme_icon_decrement_highlight>`
 
-Displayed when the mouse cursor hovers over the decrement button.
+當滑鼠指標懸停在遞減按鈕上時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Displayed when the mouse cursor hovers over the decrement button.
 
 :ref:`Texture2D<class_Texture2D>` **decrement_pressed** :ref:`🔗<class_ScrollBar_theme_icon_decrement_pressed>`
 
-Displayed when the decrement button is being pressed.
+在按下遞減按鈕時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Displayed when the decrement button is being pressed.
 
 :ref:`Texture2D<class_Texture2D>` **increment** :ref:`🔗<class_ScrollBar_theme_icon_increment>`
 
-Icon used as a button to scroll the **ScrollBar** right/down. Supports custom step using the :ref:`custom_step<class_ScrollBar_property_custom_step>` property.
+作為按鈕使用的圖示，它用於使 **ScrollBar** 向右滾動。滾動步長由 :ref:`custom_step<class_ScrollBar_property_custom_step>` 屬性值自訂。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Icon used as a button to scroll the **ScrollBar** right/down. Supports custom st
 
 :ref:`Texture2D<class_Texture2D>` **increment_highlight** :ref:`🔗<class_ScrollBar_theme_icon_increment_highlight>`
 
-Displayed when the mouse cursor hovers over the increment button.
+當滑鼠指標懸停在差異量按鈕上時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Displayed when the mouse cursor hovers over the increment button.
 
 :ref:`Texture2D<class_Texture2D>` **increment_pressed** :ref:`🔗<class_ScrollBar_theme_icon_increment_pressed>`
 
-Displayed when the increment button is being pressed.
+在按下差異量按鈕時顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Displayed when the increment button is being pressed.
 
 :ref:`StyleBox<class_StyleBox>` **grabber** :ref:`🔗<class_ScrollBar_theme_style_grabber>`
 
-Used as texture for the grabber, the draggable element representing current scroll.
+用作拖動條的紋理，表示目前的可拖動元素。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Used as texture for the grabber, the draggable element representing current scro
 
 :ref:`StyleBox<class_StyleBox>` **grabber_highlight** :ref:`🔗<class_ScrollBar_theme_style_grabber_highlight>`
 
-Used when the mouse hovers over the grabber.
+當滑鼠懸停在拖動條上時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Used when the mouse hovers over the grabber.
 
 :ref:`StyleBox<class_StyleBox>` **grabber_pressed** :ref:`🔗<class_ScrollBar_theme_style_grabber_pressed>`
 
-Used when the grabber is being dragged.
+在拖動條被拖動時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Used when the grabber is being dragged.
 
 :ref:`StyleBox<class_StyleBox>` **scroll** :ref:`🔗<class_ScrollBar_theme_style_scroll>`
 
-Used as background of this **ScrollBar**.
+用作此 **ScrollBar** 的背景。
 
 .. rst-class:: classref-item-separator
 
@@ -240,14 +240,14 @@ Used as background of this **ScrollBar**.
 
 :ref:`StyleBox<class_StyleBox>` **scroll_focus** :ref:`🔗<class_ScrollBar_theme_style_scroll_focus>`
 
-Used as background when the **ScrollBar** has the GUI focus.
+當 **ScrollBar** 具有 GUI 焦點時用作背景。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

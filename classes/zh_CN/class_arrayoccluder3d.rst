@@ -5,30 +5,30 @@
 ArrayOccluder3D
 ===============
 
-**Inherits:** :ref:`Occluder3D<class_Occluder3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Occluder3D<class_Occluder3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-3D polygon shape for use with occlusion culling in :ref:`OccluderInstance3D<class_OccluderInstance3D>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**ArrayOccluder3D** stores an arbitrary 3D polygon shape that can be used by the engine's occlusion culling system. This is analogous to :ref:`ArrayMesh<class_ArrayMesh>`, but for occluders.
-
-See :ref:`OccluderInstance3D<class_OccluderInstance3D>`'s documentation for instructions on setting up occlusion culling.
+用于与 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 中的遮挡剔除一起使用的 3D 多边形形状。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Occlusion culling <../tutorials/3d/occlusion_culling>`
+**ArrayOccluder3D** 存储一个任意的 3D 多边形形状，可供引擎的遮挡剔除系统使用。这类似于 :ref:`ArrayMesh<class_ArrayMesh>`\ ，但适用于遮挡物。
+
+有关设置遮挡剔除的说明，请参阅 :ref:`OccluderInstance3D<class_OccluderInstance3D>` 的文档。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`遮挡剔除 <../tutorials/3d/occlusion_culling>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ArrayOccluder3D_property_indices:
 
@@ -71,9 +71,9 @@ Property Descriptions
 - |void| **set_indices**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_indices**\ (\ )
 
-The occluder's index position. Indices determine which points from the :ref:`vertices<class_ArrayOccluder3D_property_vertices>` array should be drawn, and in which order.
+该遮挡物的索引位置。索引确定 :ref:`vertices<class_ArrayOccluder3D_property_vertices>` 数组中的哪些点应被绘制，以及以哪种顺序绘制。
 
-\ **Note:** The occluder is always updated after setting this value. If creating occluders procedurally, consider using :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` instead to avoid updating the occluder twice when it's created.
+\ **注意：**\ 该遮挡物总是在设置这个值后更新。如果程序化创建遮挡物，请考虑改用 :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` 来避免在创建时更新遮挡物两次。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -92,9 +92,9 @@ The occluder's index position. Indices determine which points from the :ref:`ver
 - |void| **set_vertices**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vertices**\ (\ )
 
-The occluder's vertex positions in local 3D coordinates.
+该遮挡物在局部 3D 坐标中的顶点位置。
 
-\ **Note:** The occluder is always updated after setting this value. If creating occluders procedurally, consider using :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` instead to avoid updating the occluder twice when it's created.
+\ **注意：**\ 该遮挡物总是在设置这个值后更新。如果程序化创建遮挡物，请考虑改用 :ref:`set_arrays()<class_ArrayOccluder3D_method_set_arrays>` 来避免在创建时更新遮挡物两次。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
@@ -104,8 +104,8 @@ The occluder's vertex positions in local 3D coordinates.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ArrayOccluder3D_method_set_arrays:
 
@@ -113,14 +113,14 @@ Method Descriptions
 
 |void| **set_arrays**\ (\ vertices\: :ref:`PackedVector3Array<class_PackedVector3Array>`, indices\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_ArrayOccluder3D_method_set_arrays>`
 
-Sets :ref:`indices<class_ArrayOccluder3D_property_indices>` and :ref:`vertices<class_ArrayOccluder3D_property_vertices>`, while updating the final occluder only once after both values are set.
+设置 :ref:`indices<class_ArrayOccluder3D_property_indices>` 和 :ref:`vertices<class_ArrayOccluder3D_property_vertices>`\ ，同时会在两个值都被设置后仅更新一次最终遮挡物。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -9,8 +9,8 @@ A built-in type for floating-point numbers.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The **float** built-in type is a 64-bit double-precision floating-point number, equivalent to ``double`` in C++. This type has 14 reliable decimal digits of precision. The maximum value of **float** is approximately ``1.79769e308``, and the minimum is approximately ``-1.79769e308``.
 
@@ -20,17 +20,17 @@ Math done using the **float** type is not guaranteed to be exact and will often 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `Wikipedia: Double-precision floating-point format <https://en.wikipedia.org/wiki/Double-precision_floating-point_format>`__
+- `維琪百科：雙精度浮點數格式 <https://en.wikipedia.org/wiki/Double-precision_floating-point_format>`__
 
-- `Wikipedia: Single-precision floating-point format <https://en.wikipedia.org/wiki/Single-precision_floating-point_format>`__
+- `維琪百科：單精確度浮點數格式 <https://en.wikipedia.org/wiki/Single-precision_floating-point_format>`__
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -127,8 +127,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_float_constructor_float:
 
@@ -136,7 +136,7 @@ Constructor Descriptions
 
 :ref:`float<class_float>` **float**\ (\ ) :ref:`🔗<class_float_constructor_float>`
 
-Constructs a default-initialized **float** set to ``0.0``.
+建構預設初始化的 **float**\ ，會被設為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ Constructs a default-initialized **float** set to ``0.0``.
 
 :ref:`float<class_float>` **float**\ (\ from\: :ref:`float<class_float>`\ )
 
-Constructs a **float** as a copy of the given **float**.
+建構給定 **float** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Constructs a **float** as a copy of the given **float**.
 
 :ref:`float<class_float>` **float**\ (\ from\: :ref:`String<class_String>`\ )
 
-Converts a :ref:`String<class_String>` to a **float**, following the same rules as :ref:`String.to_float()<class_String_method_to_float>`.
+將 :ref:`String<class_String>` 轉換為 **float**\ ，遵循與 :ref:`String.to_float()<class_String_method_to_float>` 相同的規則。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Converts a :ref:`String<class_String>` to a **float**, following the same rules 
 
 :ref:`float<class_float>` **float**\ (\ from\: :ref:`bool<class_bool>`\ )
 
-Cast a :ref:`bool<class_bool>` value to a floating-point value, ``float(true)`` will be equal to 1.0 and ``float(false)`` will be equal to 0.0.
+將 :ref:`bool<class_bool>` 值轉換為浮點值，\ ``float(true)`` 將等於 1.0，\ ``float(false)`` 將等於 0.0。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Cast a :ref:`bool<class_bool>` value to a floating-point value, ``float(true)`` 
 
 :ref:`float<class_float>` **float**\ (\ from\: :ref:`int<class_int>`\ )
 
-Cast an :ref:`int<class_int>` value to a floating-point value, ``float(1)`` will be equal to ``1.0``.
+將 :ref:`int<class_int>` 值轉換為浮點值，\ ``float(1)`` 將等於 ``1.0``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -184,8 +184,8 @@ Cast an :ref:`int<class_int>` value to a floating-point value, ``float(1)`` will
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_float_operator_neq_float:
 
@@ -193,9 +193,9 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_neq_float>`
 
-Returns ``true`` if two floats are different from each other.
+如果兩個浮點數彼此不同，則返回 ``true``\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Returns ``true`` if two floats are different from each other.
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_neq_int>`
 
-Returns ``true`` if the integer has different value than the float.
+如果整數的值與浮點數不同，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Multiplies each component of the :ref:`Color<class_Color>`, including the alpha,
 
 :ref:`Quaternion<class_Quaternion>` **operator ***\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_float_operator_mul_Quaternion>`
 
-Multiplies each component of the :ref:`Quaternion<class_Quaternion>` by the given **float**. This operation is not meaningful on its own, but it can be used as a part of a larger expression.
+將該 :ref:`Quaternion<class_Quaternion>` 的每個分量乘以給定的 **float**\ 。此操作本身沒有意義，但可以用作更大運算式的一部分。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Multiplies each component of the :ref:`Vector2i<class_Vector2i>` by the given **
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_float_operator_mul_Vector3>`
 
-Multiplies each component of the :ref:`Vector3<class_Vector3>` by the given **float**.
+將該 :ref:`Vector3<class_Vector3>` 的每個分量乘以給定的 **float**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ Multiplies each component of the :ref:`Vector3i<class_Vector3i>` by the given **
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_float_operator_mul_Vector4>`
 
-Multiplies each component of the :ref:`Vector4<class_Vector4>` by the given **float**.
+將該 :ref:`Vector4<class_Vector4>` 的每個分量乘以給定的 **float**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ Multiplies each component of the :ref:`Vector4i<class_Vector4i>` by the given **
 
 :ref:`float<class_float>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_mul_float>`
 
-Multiplies two **float**\ s.
+將兩個 **float** 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Multiplies two **float**\ s.
 
 :ref:`float<class_float>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_mul_int>`
 
-Multiplies a **float** and an :ref:`int<class_int>`. The result is a **float**.
+將 **float** 和 :ref:`int<class_int>` 相乘。結果是 **float**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ Multiplies a **float** and an :ref:`int<class_int>`. The result is a **float**.
 
 :ref:`float<class_float>` **operator ****\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_pow_float>`
 
-Raises a **float** to a power of a **float**.
+將 **float** 提升到 **float** 次冪。
 
 ::
 
@@ -375,7 +375,7 @@ Raises a **float** to a power of a **float**.
 
 :ref:`float<class_float>` **operator ****\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_pow_int>`
 
-Raises a **float** to a power of an :ref:`int<class_int>`. The result is a **float**.
+將 **float** 提升到 :ref:`int<class_int>` 次冪。結果為 **float**\ 。
 
 ::
 
@@ -391,7 +391,7 @@ Raises a **float** to a power of an :ref:`int<class_int>`. The result is a **flo
 
 :ref:`float<class_float>` **operator +**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_sum_float>`
 
-Adds two floats.
+將兩個浮點數相加。
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Adds two floats.
 
 :ref:`float<class_float>` **operator +**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_sum_int>`
 
-Adds a **float** and an :ref:`int<class_int>`. The result is a **float**.
+將 **float** 加上 :ref:`int<class_int>`\ 。結果為 **float**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Adds a **float** and an :ref:`int<class_int>`. The result is a **float**.
 
 :ref:`float<class_float>` **operator -**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_dif_float>`
 
-Subtracts a float from a float.
+將一個浮點數減去另一個浮點數。
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Subtracts a float from a float.
 
 :ref:`float<class_float>` **operator -**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_dif_int>`
 
-Subtracts an :ref:`int<class_int>` from a **float**. The result is a **float**.
+將 **float** 減去 :ref:`int<class_int>`\ 。結果為 **float**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Subtracts an :ref:`int<class_int>` from a **float**. The result is a **float**.
 
 :ref:`float<class_float>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_div_float>`
 
-Divides two floats.
+將兩個浮點數相除。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Divides two floats.
 
 :ref:`float<class_float>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_div_int>`
 
-Divides a **float** by an :ref:`int<class_int>`. The result is a **float**.
+將 **float** 除以 :ref:`int<class_int>`\ 。結果是 **float**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -463,9 +463,9 @@ Divides a **float** by an :ref:`int<class_int>`. The result is a **float**.
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_lt_float>`
 
-Returns ``true`` if the left float is less than the right one.
+如果左側的浮點數小於右側的，則返回 ``true``\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Returns ``true`` if the left float is less than the right one.
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_lt_int>`
 
-Returns ``true`` if this **float** is less than the given :ref:`int<class_int>`.
+如果該 **float** 小於給定的 :ref:`int<class_int>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -489,9 +489,9 @@ Returns ``true`` if this **float** is less than the given :ref:`int<class_int>`.
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_lte_float>`
 
-Returns ``true`` if the left float is less than or equal to the right one.
+如果左側的浮點數小於等於右側的，則返回 ``true``\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Returns ``true`` if the left float is less than or equal to the right one.
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_lte_int>`
 
-Returns ``true`` if this **float** is less than or equal to the given :ref:`int<class_int>`.
+如果該 **float** 小於等於給定的 :ref:`int<class_int>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -515,11 +515,11 @@ Returns ``true`` if this **float** is less than or equal to the given :ref:`int<
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_eq_float>`
 
-Returns ``true`` if both floats are exactly equal.
+如果兩個浮點數完全相等，則返回 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` or :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` instead, which are more reliable.
+\ **注意：**\ 由於浮點精度誤差，考慮改用更可靠的 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` 或 :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>`\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ Returns ``true`` if both floats are exactly equal.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_eq_int>`
 
-Returns ``true`` if the **float** and the given :ref:`int<class_int>` are equal.
+如果該 **float** 等於給定的 :ref:`int<class_int>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -543,9 +543,9 @@ Returns ``true`` if the **float** and the given :ref:`int<class_int>` are equal.
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_gt_float>`
 
-Returns ``true`` if the left float is greater than the right one.
+如果左側的浮點數大於右側的，則返回 ``true``\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ Returns ``true`` if the left float is greater than the right one.
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_gt_int>`
 
-Returns ``true`` if this **float** is greater than the given :ref:`int<class_int>`.
+如果該 **float** 大於給定的 :ref:`int<class_int>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -569,9 +569,9 @@ Returns ``true`` if this **float** is greater than the given :ref:`int<class_int
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_float_operator_gte_float>`
 
-Returns ``true`` if the left float is greater than or equal to the right one.
+如果左側的浮點數大於等於右側的，則返回 ``true``\ 。
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 的行為與其他數位不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +583,7 @@ Returns ``true`` if the left float is greater than or equal to the right one.
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_float_operator_gte_int>`
 
-Returns ``true`` if this **float** is greater than or equal to the given :ref:`int<class_int>`.
+如果該 **float** 大於等於給定的 :ref:`int<class_int>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ Returns ``true`` if this **float** is greater than or equal to the given :ref:`i
 
 :ref:`float<class_float>` **operator unary+**\ (\ ) :ref:`🔗<class_float_operator_unplus>`
 
-Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
+返回與 ``+`` 不存在時相同的值。單目 ``+`` 沒有作用，但有時可以使你的程式碼更具可讀性。
 
 .. rst-class:: classref-item-separator
 
@@ -607,14 +607,14 @@ Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, 
 
 :ref:`float<class_float>` **operator unary-**\ (\ ) :ref:`🔗<class_float_operator_unminus>`
 
-Returns the negative value of the **float**. If positive, turns the number negative. If negative, turns the number positive. With floats, the number zero can be either positive or negative.
+返回該 **float** 的相反數。如果為正數，則將該數變為負數。如果為負數，則將該數變為正數。對於浮點數，數位零既可以是正數，也可以是負數。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,16 +5,16 @@
 Control
 =======
 
-**Inherits:** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`
+**被繼承：** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`
 
-Base class for all GUI controls. Adapts its position and size based on its parent control.
+所有 GUI 控制項的基底類別。根據其父控制項調整其位置和大小。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Base class for all UI-related nodes. **Control** features a bounding rectangle that defines its extents, an anchor position relative to its parent control or the current viewport, and offsets relative to the anchor. The offsets update automatically when the node, any of its parents, or the screen size change.
 
@@ -40,23 +40,23 @@ Set :ref:`mouse_filter<class_Control_property_mouse_filter>` to :ref:`MOUSE_FILT
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`GUI documentation index <../tutorials/ui/index>`
+- :doc:`GUI 文件索引 <../tutorials/ui/index>`
 
-- :doc:`Custom drawing in 2D <../tutorials/2d/custom_drawing_in_2d>`
+- :doc:`2D 的自訂繪製 <../tutorials/2d/custom_drawing_in_2d>`
 
-- :doc:`Control node gallery <../tutorials/ui/control_node_gallery>`
+- :doc:`控制項節點一覽 <../tutorials/ui/control_node_gallery>`
 
-- :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>`
+- :doc:`多解析度 <../tutorials/rendering/multiple_resolutions>`
 
-- `All GUI Demos <https://github.com/godotengine/godot-demo-projects/tree/master/gui>`__
+- `所有 GUI 演示 <https://github.com/godotengine/godot-demo-projects/tree/master/gui>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -167,8 +167,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -367,8 +367,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_Control_signal_focus_entered:
 
@@ -376,7 +376,7 @@ Signals
 
 **focus_entered**\ (\ ) :ref:`🔗<class_Control_signal_focus_entered>`
 
-Emitted when the node gains focus.
+當該節點獲得焦點時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Emitted when the node gains focus.
 
 **focus_exited**\ (\ ) :ref:`🔗<class_Control_signal_focus_exited>`
 
-Emitted when the node loses focus.
+當該節點失去焦點時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Emitted when the node loses focus.
 
 **gui_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Control_signal_gui_input>`
 
-Emitted when the node receives an :ref:`InputEvent<class_InputEvent>`.
+當節點收到 :ref:`InputEvent<class_InputEvent>` 時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Emitted when the node receives an :ref:`InputEvent<class_InputEvent>`.
 
 **minimum_size_changed**\ (\ ) :ref:`🔗<class_Control_signal_minimum_size_changed>`
 
-Emitted when the node's minimum size changes.
+當節點的最小大小更改時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ Emitted when the mouse cursor leaves the control's (and all child control's) vis
 
 **resized**\ (\ ) :ref:`🔗<class_Control_signal_resized>`
 
-Emitted when the control changes size.
+當控制項更改大小時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Emitted when the control changes size.
 
 **size_flags_changed**\ (\ ) :ref:`🔗<class_Control_signal_size_flags_changed>`
 
-Emitted when one of the size flags changes. See :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+當大小旗標之一更改時發出。見 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Emitted when one of the size flags changes. See :ref:`size_flags_horizontal<clas
 
 **theme_changed**\ (\ ) :ref:`🔗<class_Control_signal_theme_changed>`
 
-Emitted when the :ref:`NOTIFICATION_THEME_CHANGED<class_Control_constant_NOTIFICATION_THEME_CHANGED>` notification is sent.
+發送 :ref:`NOTIFICATION_THEME_CHANGED<class_Control_constant_NOTIFICATION_THEME_CHANGED>` 通知時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -492,8 +492,8 @@ Emitted when the :ref:`NOTIFICATION_THEME_CHANGED<class_Control_constant_NOTIFIC
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Control_FocusMode:
 
@@ -507,7 +507,7 @@ enum **FocusMode**: :ref:`🔗<enum_Control_FocusMode>`
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_NONE** = ``0``
 
-The node cannot grab focus. Use with :ref:`focus_mode<class_Control_property_focus_mode>`.
+該節點無法獲取焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
 
 .. _class_Control_constant_FOCUS_CLICK:
 
@@ -515,7 +515,7 @@ The node cannot grab focus. Use with :ref:`focus_mode<class_Control_property_foc
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_CLICK** = ``1``
 
-The node can only grab focus on mouse clicks. Use with :ref:`focus_mode<class_Control_property_focus_mode>`.
+該節點只能通過滑鼠點擊獲取焦點。在 :ref:`focus_mode<class_Control_property_focus_mode>` 中使用。
 
 .. _class_Control_constant_FOCUS_ALL:
 
@@ -523,7 +523,7 @@ The node can only grab focus on mouse clicks. Use with :ref:`focus_mode<class_Co
 
 :ref:`FocusMode<enum_Control_FocusMode>` **FOCUS_ALL** = ``2``
 
-The node can grab focus on mouse click, using the arrows and the Tab keys on the keyboard, or using the D-pad buttons on a gamepad. Use with :ref:`focus_mode<class_Control_property_focus_mode>`.
+該節點可以通過滑鼠按一下、使用鍵盤上的箭頭和 Tab 鍵、或使用遊戲手柄上的方向鍵來獲取焦點。用於 :ref:`focus_mode<class_Control_property_focus_mode>`\ 。
 
 .. _class_Control_constant_FOCUS_ACCESSIBILITY:
 
@@ -617,7 +617,7 @@ enum **CursorShape**: :ref:`🔗<enum_Control_CursorShape>`
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_ARROW** = ``0``
 
-Show the system's arrow mouse cursor when the user hovers the node. Use with :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>`.
+當使用者將節點懸停時，顯示系統的箭頭滑鼠游標。與 :ref:`mouse_default_cursor_shape<class_Control_property_mouse_default_cursor_shape>` 成員一起使用。
 
 .. _class_Control_constant_CURSOR_IBEAM:
 
@@ -625,7 +625,7 @@ Show the system's arrow mouse cursor when the user hovers the node. Use with :re
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_IBEAM** = ``1``
 
-Show the system's I-beam mouse cursor when the user hovers the node. The I-beam pointer has a shape similar to "I". It tells the user they can highlight or insert text.
+當使用者將節點懸停時，顯示系統的 I 型光束滑鼠游標。工字梁指針的形狀類似於“I”。它告訴使用者他們可以突出顯示或插入文字。
 
 .. _class_Control_constant_CURSOR_POINTING_HAND:
 
@@ -633,7 +633,7 @@ Show the system's I-beam mouse cursor when the user hovers the node. The I-beam 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_POINTING_HAND** = ``2``
 
-Show the system's pointing hand mouse cursor when the user hovers the node.
+當使用者將節點懸停時，顯示系統的手形滑鼠游標。
 
 .. _class_Control_constant_CURSOR_CROSS:
 
@@ -641,7 +641,7 @@ Show the system's pointing hand mouse cursor when the user hovers the node.
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_CROSS** = ``3``
 
-Show the system's cross mouse cursor when the user hovers the node.
+當使用者將滑鼠懸停在節點上時，顯示系統的交叉滑鼠游標。
 
 .. _class_Control_constant_CURSOR_WAIT:
 
@@ -649,7 +649,7 @@ Show the system's cross mouse cursor when the user hovers the node.
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_WAIT** = ``4``
 
-Show the system's wait mouse cursor when the user hovers the node. Often an hourglass.
+當使用者懸停節點時，顯示系統等待的滑鼠游標。通常是一個沙漏。
 
 .. _class_Control_constant_CURSOR_BUSY:
 
@@ -657,7 +657,7 @@ Show the system's wait mouse cursor when the user hovers the node. Often an hour
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_BUSY** = ``5``
 
-Show the system's busy mouse cursor when the user hovers the node. Often an arrow with a small hourglass.
+當使用者懸停節點時，顯示系統繁忙的滑鼠游標。通常是箭頭加一個小沙漏。
 
 .. _class_Control_constant_CURSOR_DRAG:
 
@@ -665,7 +665,7 @@ Show the system's busy mouse cursor when the user hovers the node. Often an arro
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_DRAG** = ``6``
 
-Show the system's drag mouse cursor, often a closed fist or a cross symbol, when the user hovers the node. It tells the user they're currently dragging an item, like a node in the Scene dock.
+當使用者懸停在節點上時，顯示系統的拖動滑鼠游標，通常是一個閉合的拳頭或十字元號。它告訴使用者他們目前正在拖動一個專案，例如場景面板中的節點。
 
 .. _class_Control_constant_CURSOR_CAN_DROP:
 
@@ -673,7 +673,7 @@ Show the system's drag mouse cursor, often a closed fist or a cross symbol, when
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_CAN_DROP** = ``7``
 
-Show the system's drop mouse cursor when the user hovers the node. It can be an open hand. It tells the user they can drop an item they're currently grabbing, like a node in the Scene dock.
+當使用者懸停節點時，顯示系統的落地滑鼠游標。它可以是一個張開的手。它告訴使用者可以放下一個他們目前正在抓取的物品，比如場景面板中的一個節點。
 
 .. _class_Control_constant_CURSOR_FORBIDDEN:
 
@@ -681,7 +681,7 @@ Show the system's drop mouse cursor when the user hovers the node. It can be an 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_FORBIDDEN** = ``8``
 
-Show the system's forbidden mouse cursor when the user hovers the node. Often a crossed circle.
+當使用者懸停節點時，顯示系統禁止的滑鼠游標。通常是一個交叉的圓圈。
 
 .. _class_Control_constant_CURSOR_VSIZE:
 
@@ -689,7 +689,7 @@ Show the system's forbidden mouse cursor when the user hovers the node. Often a 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_VSIZE** = ``9``
 
-Show the system's vertical resize mouse cursor when the user hovers the node. A double-headed vertical arrow. It tells the user they can resize the window or the panel vertically.
+當使用者懸停節點時，顯示系統的垂直調整滑鼠游標。一個雙頭的垂直箭頭。它告訴使用者可以垂直調整視窗或面板的大小。
 
 .. _class_Control_constant_CURSOR_HSIZE:
 
@@ -697,7 +697,7 @@ Show the system's vertical resize mouse cursor when the user hovers the node. A 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_HSIZE** = ``10``
 
-Show the system's horizontal resize mouse cursor when the user hovers the node. A double-headed horizontal arrow. It tells the user they can resize the window or the panel horizontally.
+當使用者懸停節點時，顯示系統的水平調整滑鼠游標。一個雙頭的水平箭頭。它告訴使用者可以水平調整視窗或面板的大小。
 
 .. _class_Control_constant_CURSOR_BDIAGSIZE:
 
@@ -705,7 +705,7 @@ Show the system's horizontal resize mouse cursor when the user hovers the node. 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_BDIAGSIZE** = ``11``
 
-Show the system's window resize mouse cursor when the user hovers the node. The cursor is a double-headed arrow that goes from the bottom left to the top right. It tells the user they can resize the window or the panel both horizontally and vertically.
+當使用者將節點懸停時，顯示系統視窗調整大小的滑鼠游標。游標是從左下角到右上角的雙向箭頭。它告訴使用者可以水平和垂直調整視窗或面板的大小。
 
 .. _class_Control_constant_CURSOR_FDIAGSIZE:
 
@@ -713,7 +713,7 @@ Show the system's window resize mouse cursor when the user hovers the node. The 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_FDIAGSIZE** = ``12``
 
-Show the system's window resize mouse cursor when the user hovers the node. The cursor is a double-headed arrow that goes from the top left to the bottom right, the opposite of :ref:`CURSOR_BDIAGSIZE<class_Control_constant_CURSOR_BDIAGSIZE>`. It tells the user they can resize the window or the panel both horizontally and vertically.
+當使用者將節點懸停時，顯示系統視窗調整大小的滑鼠游標。游標是一個雙向箭頭，從左上角到右下角，與 :ref:`CURSOR_BDIAGSIZE<class_Control_constant_CURSOR_BDIAGSIZE>` 相反。它告訴使用者可以水平和垂直調整視窗或面板的大小。
 
 .. _class_Control_constant_CURSOR_MOVE:
 
@@ -721,7 +721,7 @@ Show the system's window resize mouse cursor when the user hovers the node. The 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_MOVE** = ``13``
 
-Show the system's move mouse cursor when the user hovers the node. It shows 2 double-headed arrows at a 90 degree angle. It tells the user they can move a UI element freely.
+當使用者將節點懸停時，顯示系統的移動滑鼠游標。它以 90 度角顯示 2 個雙向箭頭。它告訴使用者他們可以自由移動 UI 元素。
 
 .. _class_Control_constant_CURSOR_VSPLIT:
 
@@ -729,7 +729,7 @@ Show the system's move mouse cursor when the user hovers the node. It shows 2 do
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_VSPLIT** = ``14``
 
-Show the system's vertical split mouse cursor when the user hovers the node. On Windows, it's the same as :ref:`CURSOR_VSIZE<class_Control_constant_CURSOR_VSIZE>`.
+當使用者將節點懸停時，顯示系統的垂直拆分滑鼠游標。在 Windows 上與 :ref:`CURSOR_VSIZE<class_Control_constant_CURSOR_VSIZE>` 相同。
 
 .. _class_Control_constant_CURSOR_HSPLIT:
 
@@ -737,7 +737,7 @@ Show the system's vertical split mouse cursor when the user hovers the node. On 
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_HSPLIT** = ``15``
 
-Show the system's horizontal split mouse cursor when the user hovers the node. On Windows, it's the same as :ref:`CURSOR_HSIZE<class_Control_constant_CURSOR_HSIZE>`.
+當使用者將節點懸停時，顯示系統的水平拆分滑鼠游標。在 Windows 上與 :ref:`CURSOR_HSIZE<class_Control_constant_CURSOR_HSIZE>` 相同。
 
 .. _class_Control_constant_CURSOR_HELP:
 
@@ -745,7 +745,7 @@ Show the system's horizontal split mouse cursor when the user hovers the node. O
 
 :ref:`CursorShape<enum_Control_CursorShape>` **CURSOR_HELP** = ``16``
 
-Show the system's help mouse cursor when the user hovers the node, a question mark.
+當使用者將節點懸停在一個節點上時，顯示系統的説明滑鼠游標，一個問號。
 
 .. rst-class:: classref-item-separator
 
@@ -763,7 +763,7 @@ enum **LayoutPreset**: :ref:`🔗<enum_Control_LayoutPreset>`
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_TOP_LEFT** = ``0``
 
-Snap all 4 anchors to the top-left of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的左上角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_TOP_RIGHT:
 
@@ -771,7 +771,7 @@ Snap all 4 anchors to the top-left of the parent control's bounds. Use with :ref
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_TOP_RIGHT** = ``1``
 
-Snap all 4 anchors to the top-right of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的右上角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_BOTTOM_LEFT:
 
@@ -779,7 +779,7 @@ Snap all 4 anchors to the top-right of the parent control's bounds. Use with :re
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_BOTTOM_LEFT** = ``2``
 
-Snap all 4 anchors to the bottom-left of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的左下角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_BOTTOM_RIGHT:
 
@@ -787,7 +787,7 @@ Snap all 4 anchors to the bottom-left of the parent control's bounds. Use with :
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_BOTTOM_RIGHT** = ``3``
 
-Snap all 4 anchors to the bottom-right of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的右下角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_CENTER_LEFT:
 
@@ -795,7 +795,7 @@ Snap all 4 anchors to the bottom-right of the parent control's bounds. Use with 
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_CENTER_LEFT** = ``4``
 
-Snap all 4 anchors to the center of the left edge of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的左邊緣的中點。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_CENTER_TOP:
 
@@ -803,7 +803,7 @@ Snap all 4 anchors to the center of the left edge of the parent control's bounds
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_CENTER_TOP** = ``5``
 
-Snap all 4 anchors to the center of the top edge of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的頂邊緣的中點。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_CENTER_RIGHT:
 
@@ -811,7 +811,7 @@ Snap all 4 anchors to the center of the top edge of the parent control's bounds.
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_CENTER_RIGHT** = ``6``
 
-Snap all 4 anchors to the center of the right edge of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的右邊緣的中點。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_CENTER_BOTTOM:
 
@@ -819,7 +819,7 @@ Snap all 4 anchors to the center of the right edge of the parent control's bound
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_CENTER_BOTTOM** = ``7``
 
-Snap all 4 anchors to the center of the bottom edge of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的底邊緣的中點。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_CENTER:
 
@@ -827,7 +827,7 @@ Snap all 4 anchors to the center of the bottom edge of the parent control's boun
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_CENTER** = ``8``
 
-Snap all 4 anchors to the center of the parent control's bounds. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項邊界的中心。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_LEFT_WIDE:
 
@@ -835,7 +835,7 @@ Snap all 4 anchors to the center of the parent control's bounds. Use with :ref:`
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_LEFT_WIDE** = ``9``
 
-Snap all 4 anchors to the left edge of the parent control. The left offset becomes relative to the left edge and the top offset relative to the top left corner of the node's parent. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項的左邊緣。左偏移量相對於父節點的左邊緣，上偏移量相對於父節點的左上角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_TOP_WIDE:
 
@@ -843,7 +843,7 @@ Snap all 4 anchors to the left edge of the parent control. The left offset becom
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_TOP_WIDE** = ``10``
 
-Snap all 4 anchors to the top edge of the parent control. The left offset becomes relative to the top left corner, the top offset relative to the top edge, and the right offset relative to the top right corner of the node's parent. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項的上邊緣。左偏移量相對於父節點的左上角，上偏移量相對於父節點的上邊緣，右偏移相對於父節點的右上角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_RIGHT_WIDE:
 
@@ -851,7 +851,7 @@ Snap all 4 anchors to the top edge of the parent control. The left offset become
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_RIGHT_WIDE** = ``11``
 
-Snap all 4 anchors to the right edge of the parent control. The right offset becomes relative to the right edge and the top offset relative to the top right corner of the node's parent. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項的右邊緣。右偏移量相對於父節點的右邊緣，上偏移量相對於父節點的右上角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_BOTTOM_WIDE:
 
@@ -859,7 +859,7 @@ Snap all 4 anchors to the right edge of the parent control. The right offset bec
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_BOTTOM_WIDE** = ``12``
 
-Snap all 4 anchors to the bottom edge of the parent control. The left offset becomes relative to the bottom left corner, the bottom offset relative to the bottom edge, and the right offset relative to the bottom right corner of the node's parent. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項的下邊緣。左偏移量相對於父節點的左下角，下偏移量相對於父節點的下邊緣，右偏移相對於父節點的右下角。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_VCENTER_WIDE:
 
@@ -867,7 +867,7 @@ Snap all 4 anchors to the bottom edge of the parent control. The left offset bec
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_VCENTER_WIDE** = ``13``
 
-Snap all 4 anchors to a vertical line that cuts the parent control in half. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到一條垂直線，該垂直線將父控制項切成兩半。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_HCENTER_WIDE:
 
@@ -875,7 +875,7 @@ Snap all 4 anchors to a vertical line that cuts the parent control in half. Use 
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_HCENTER_WIDE** = ``14``
 
-Snap all 4 anchors to a horizontal line that cuts the parent control in half. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到一條水平線，該水平線將父控制項切成兩半。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. _class_Control_constant_PRESET_FULL_RECT:
 
@@ -883,7 +883,7 @@ Snap all 4 anchors to a horizontal line that cuts the parent control in half. Us
 
 :ref:`LayoutPreset<enum_Control_LayoutPreset>` **PRESET_FULL_RECT** = ``15``
 
-Snap all 4 anchors to the respective corners of the parent control. Set all 4 offsets to 0 after you applied this preset and the **Control** will fit its parent control. Use with :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將所有 4 個錨點對齊到父控制項對應的角。套用此預設後，會將所有 4 個偏移都設定為 0，該 **Control** 將適合其父控制項。與 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 一起使用。
 
 .. rst-class:: classref-item-separator
 
@@ -901,7 +901,7 @@ enum **LayoutPresetMode**: :ref:`🔗<enum_Control_LayoutPresetMode>`
 
 :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` **PRESET_MODE_MINSIZE** = ``0``
 
-The control will be resized to its minimum size.
+控制項將被調整為最小尺寸。
 
 .. _class_Control_constant_PRESET_MODE_KEEP_WIDTH:
 
@@ -909,7 +909,7 @@ The control will be resized to its minimum size.
 
 :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` **PRESET_MODE_KEEP_WIDTH** = ``1``
 
-The control's width will not change.
+控制項的寬度不會改變。
 
 .. _class_Control_constant_PRESET_MODE_KEEP_HEIGHT:
 
@@ -917,7 +917,7 @@ The control's width will not change.
 
 :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` **PRESET_MODE_KEEP_HEIGHT** = ``2``
 
-The control's height will not change.
+控制項的高度不會改變。
 
 .. _class_Control_constant_PRESET_MODE_KEEP_SIZE:
 
@@ -925,7 +925,7 @@ The control's height will not change.
 
 :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` **PRESET_MODE_KEEP_SIZE** = ``3``
 
-The control's size will not change.
+控制項的大小不會改變。
 
 .. rst-class:: classref-item-separator
 
@@ -943,9 +943,9 @@ flags **SizeFlags**: :ref:`🔗<enum_Control_SizeFlags>`
 
 :ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_SHRINK_BEGIN** = ``0``
 
-Tells the parent :ref:`Container<class_Container>` to align the node with its start, either the top or the left edge. It is mutually exclusive with :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` and other shrink size flags, but can be used with :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` in some containers. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+告訴父級 :ref:`Container<class_Container>` 將該節點與其起點對齊，即頂部或左側。它與 :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` 以及其他收縮大小旗標互斥，但可以在某些容器中與 :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` 一起使用。與 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>` 一起使用。
 
-\ **Note:** Setting this flag is equal to not having any size flags.
+\ **注意：**\ 設定這個旗標相當於沒有任何大小旗標。
 
 .. _class_Control_constant_SIZE_FILL:
 
@@ -953,7 +953,7 @@ Tells the parent :ref:`Container<class_Container>` to align the node with its st
 
 :ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_FILL** = ``1``
 
-Tells the parent :ref:`Container<class_Container>` to expand the bounds of this node to fill all the available space without pushing any other node. It is mutually exclusive with shrink size flags. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+告訴父級 :ref:`Container<class_Container>` 擴充該節點的邊界以填充所有可用空間，而無需推動任何其他節點。它與收縮大小旗標互斥。與 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>` 一起使用。
 
 .. _class_Control_constant_SIZE_EXPAND:
 
@@ -961,7 +961,7 @@ Tells the parent :ref:`Container<class_Container>` to expand the bounds of this 
 
 :ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_EXPAND** = ``2``
 
-Tells the parent :ref:`Container<class_Container>` to let this node take all the available space on the axis you flag. If multiple neighboring nodes are set to expand, they'll share the space based on their stretch ratio. See :ref:`size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+告訴父級 :ref:`Container<class_Container>` 讓該節點佔用你標記的軸上的所有可用空間。如果將多個相鄰節點設定為擴充，它們將根據其拉伸比共用空間。見 :ref:`size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`\ 。用於 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`\ 。
 
 .. _class_Control_constant_SIZE_EXPAND_FILL:
 
@@ -969,7 +969,7 @@ Tells the parent :ref:`Container<class_Container>` to let this node take all the
 
 :ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_EXPAND_FILL** = ``3``
 
-Sets the node's size flags to both fill and expand. See :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` and :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` for more information.
+將該節點的大小旗標設定為填充和擴充。有關詳細資訊，請參閱 :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` 和 :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>`\ 。
 
 .. _class_Control_constant_SIZE_SHRINK_CENTER:
 
@@ -977,7 +977,7 @@ Sets the node's size flags to both fill and expand. See :ref:`SIZE_FILL<class_Co
 
 :ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_SHRINK_CENTER** = ``4``
 
-Tells the parent :ref:`Container<class_Container>` to center the node in the available space. It is mutually exclusive with :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` and other shrink size flags, but can be used with :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` in some containers. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+告訴父級 :ref:`Container<class_Container>` 將節點置於可用空間的中心。它與 :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` 以及其他收縮大小旗標互斥，但可以在某些容器中與 :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` 一起使用。與 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>` 一起使用。
 
 .. _class_Control_constant_SIZE_SHRINK_END:
 
@@ -985,7 +985,7 @@ Tells the parent :ref:`Container<class_Container>` to center the node in the ava
 
 :ref:`SizeFlags<enum_Control_SizeFlags>` **SIZE_SHRINK_END** = ``8``
 
-Tells the parent :ref:`Container<class_Container>` to align the node with its end, either the bottom or the right edge. It is mutually exclusive with :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` and other shrink size flags, but can be used with :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` in some containers. Use with :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` and :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>`.
+告訴父級 :ref:`Container<class_Container>` 將節點與其末端對齊，即底部或右側。它與 :ref:`SIZE_FILL<class_Control_constant_SIZE_FILL>` 以及其他收縮大小旗標互斥，但可以在某些容器中與 :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` 一起使用。與 :ref:`size_flags_horizontal<class_Control_property_size_flags_horizontal>` 和 :ref:`size_flags_vertical<class_Control_property_size_flags_vertical>` 一起使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1041,7 +1041,7 @@ enum **GrowDirection**: :ref:`🔗<enum_Control_GrowDirection>`
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BEGIN** = ``0``
 
-The control will grow to the left or top to make up if its minimum size is changed to be greater than its current size on the respective axis.
+如果控制項的最小尺寸更改為大於其相應軸上的目前尺寸，則控制項將向左或頂部增大以進行組合。
 
 .. _class_Control_constant_GROW_DIRECTION_END:
 
@@ -1049,7 +1049,7 @@ The control will grow to the left or top to make up if its minimum size is chang
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_END** = ``1``
 
-The control will grow to the right or bottom to make up if its minimum size is changed to be greater than its current size on the respective axis.
+如果控制項的最小尺寸更改為大於其相應軸上的目前尺寸，則控制項將向右或向下增大以進行補償。
 
 .. _class_Control_constant_GROW_DIRECTION_BOTH:
 
@@ -1057,7 +1057,7 @@ The control will grow to the right or bottom to make up if its minimum size is c
 
 :ref:`GrowDirection<enum_Control_GrowDirection>` **GROW_DIRECTION_BOTH** = ``2``
 
-The control will grow in both directions equally to make up if its minimum size is changed to be greater than its current size.
+如果控制項的最小大小更改為大於其目前大小，則控制項將在兩個方向上均等地增長以組成該控制項。
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ enum **Anchor**: :ref:`🔗<enum_Control_Anchor>`
 
 :ref:`Anchor<enum_Control_Anchor>` **ANCHOR_BEGIN** = ``0``
 
-Snaps one of the 4 anchor's sides to the origin of the node's ``Rect``, in the top left. Use it with one of the ``anchor_*`` member variables, like :ref:`anchor_left<class_Control_property_anchor_left>`. To change all 4 anchors at once, use :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將 4 個錨點的某一側吸附到節點的 ``Rect`` 的左上角。在 ``anchor_*`` 成員變數中使用，例如 :ref:`anchor_left<class_Control_property_anchor_left>`\ 。要一次更改全部 4 個錨點，請使用 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`\ 。
 
 .. _class_Control_constant_ANCHOR_END:
 
@@ -1083,7 +1083,7 @@ Snaps one of the 4 anchor's sides to the origin of the node's ``Rect``, in the t
 
 :ref:`Anchor<enum_Control_Anchor>` **ANCHOR_END** = ``1``
 
-Snaps one of the 4 anchor's sides to the end of the node's ``Rect``, in the bottom right. Use it with one of the ``anchor_*`` member variables, like :ref:`anchor_left<class_Control_property_anchor_left>`. To change all 4 anchors at once, use :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`.
+將 4 個錨點的某一側吸附到節點的 ``Rect`` 的右下角。在 ``anchor_*`` 成員變數中使用，例如 :ref:`anchor_left<class_Control_property_anchor_left>`\ 。要一次更改全部 4 個錨點，請使用 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1101,7 +1101,7 @@ enum **LayoutDirection**: :ref:`🔗<enum_Control_LayoutDirection>`
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_INHERITED** = ``0``
 
-Automatic layout direction, determined from the parent control layout direction.
+自動佈局方向，由父控制項佈局方向決定。
 
 .. _class_Control_constant_LAYOUT_DIRECTION_APPLICATION_LOCALE:
 
@@ -1117,7 +1117,7 @@ Automatic layout direction, determined from the current locale. Right-to-left la
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_LTR** = ``2``
 
-Left-to-right layout direction.
+從左至右的佈局方向。
 
 .. _class_Control_constant_LAYOUT_DIRECTION_RTL:
 
@@ -1125,7 +1125,7 @@ Left-to-right layout direction.
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_RTL** = ``3``
 
-Right-to-left layout direction.
+從右至左的佈局方向。
 
 .. _class_Control_constant_LAYOUT_DIRECTION_SYSTEM_LOCALE:
 
@@ -1149,7 +1149,7 @@ Represents the size of the :ref:`LayoutDirection<enum_Control_LayoutDirection>` 
 
 :ref:`LayoutDirection<enum_Control_LayoutDirection>` **LAYOUT_DIRECTION_LOCALE** = ``1``
 
-**Deprecated:** Use :ref:`LAYOUT_DIRECTION_APPLICATION_LOCALE<class_Control_constant_LAYOUT_DIRECTION_APPLICATION_LOCALE>` instead.
+**已棄用：** Use :ref:`LAYOUT_DIRECTION_APPLICATION_LOCALE<class_Control_constant_LAYOUT_DIRECTION_APPLICATION_LOCALE>` instead.
 
 
 
@@ -1169,7 +1169,7 @@ enum **TextDirection**: :ref:`🔗<enum_Control_TextDirection>`
 
 :ref:`TextDirection<enum_Control_TextDirection>` **TEXT_DIRECTION_INHERITED** = ``3``
 
-Text writing direction is the same as layout direction.
+文字書寫方向與佈局方向相同。
 
 .. _class_Control_constant_TEXT_DIRECTION_AUTO:
 
@@ -1177,7 +1177,7 @@ Text writing direction is the same as layout direction.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **TEXT_DIRECTION_AUTO** = ``0``
 
-Automatic text writing direction, determined from the current locale and text content.
+自動文字書寫方向，根據目前區域設定和文字內容確定。
 
 .. _class_Control_constant_TEXT_DIRECTION_LTR:
 
@@ -1185,7 +1185,7 @@ Automatic text writing direction, determined from the current locale and text co
 
 :ref:`TextDirection<enum_Control_TextDirection>` **TEXT_DIRECTION_LTR** = ``1``
 
-Left-to-right text writing direction.
+從左至右的文字書寫方向。
 
 .. _class_Control_constant_TEXT_DIRECTION_RTL:
 
@@ -1193,7 +1193,7 @@ Left-to-right text writing direction.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **TEXT_DIRECTION_RTL** = ``2``
 
-Right-to-left text writing direction.
+從右至左的文字書寫方向。
 
 .. rst-class:: classref-section-separator
 
@@ -1201,8 +1201,8 @@ Right-to-left text writing direction.
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_Control_constant_NOTIFICATION_RESIZED:
 
@@ -1210,7 +1210,7 @@ Constants
 
 **NOTIFICATION_RESIZED** = ``40`` :ref:`🔗<class_Control_constant_NOTIFICATION_RESIZED>`
 
-Sent when the node changes size. Use :ref:`size<class_Control_property_size>` to get the new size.
+當節點改變大小時發送。請使用 :ref:`size<class_Control_property_size>` 獲取新大小。
 
 .. _class_Control_constant_NOTIFICATION_MOUSE_ENTER:
 
@@ -1242,7 +1242,7 @@ See also :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_
 
 **NOTIFICATION_MOUSE_ENTER_SELF** = ``60`` :ref:`🔗<class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF>`
 
-**Experimental:** The reason this notification is sent may change in the future.
+**實驗性：** The reason this notification is sent may change in the future.
 
 Sent when the mouse cursor enters the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
 
@@ -1256,7 +1256,7 @@ See also :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUS
 
 **NOTIFICATION_MOUSE_EXIT_SELF** = ``61`` :ref:`🔗<class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF>`
 
-**Experimental:** The reason this notification is sent may change in the future.
+**實驗性：** The reason this notification is sent may change in the future.
 
 Sent when the mouse cursor leaves the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
 
@@ -1270,7 +1270,7 @@ See also :ref:`NOTIFICATION_MOUSE_EXIT<class_Control_constant_NOTIFICATION_MOUSE
 
 **NOTIFICATION_FOCUS_ENTER** = ``43`` :ref:`🔗<class_Control_constant_NOTIFICATION_FOCUS_ENTER>`
 
-Sent when the node grabs focus.
+當節點獲得焦點時發送。
 
 .. _class_Control_constant_NOTIFICATION_FOCUS_EXIT:
 
@@ -1344,8 +1344,8 @@ Sent when the control layout direction is changed from LTR or RTL or vice versa.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Control_property_accessibility_controls_nodes:
 
@@ -1476,7 +1476,7 @@ The human-readable node name that is reported to assistive apps.
 
 - :ref:`float<class_float>` **get_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Anchors the bottom edge of the node to the origin, the center, or the end of its parent control. It changes how the bottom offset updates when the node moves or changes size. You can use one of the :ref:`Anchor<enum_Control_Anchor>` constants for convenience.
+將節點的底部邊緣錨定到父控制項的原點、中心或末端。會改變該節點發生移動或改變大小時底部偏移量的更新方式。方便起見，你可以使用 :ref:`Anchor<enum_Control_Anchor>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -1492,7 +1492,7 @@ Anchors the bottom edge of the node to the origin, the center, or the end of its
 
 - :ref:`float<class_float>` **get_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Anchors the left edge of the node to the origin, the center or the end of its parent control. It changes how the left offset updates when the node moves or changes size. You can use one of the :ref:`Anchor<enum_Control_Anchor>` constants for convenience.
+將節點的左側邊緣錨定到父控制項的原點、中心或末端。會改變該節點發生移動或改變大小時左側偏移量的更新方式。方便起見，你可以使用 :ref:`Anchor<enum_Control_Anchor>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ Anchors the left edge of the node to the origin, the center or the end of its pa
 
 - :ref:`float<class_float>` **get_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Anchors the right edge of the node to the origin, the center or the end of its parent control. It changes how the right offset updates when the node moves or changes size. You can use one of the :ref:`Anchor<enum_Control_Anchor>` constants for convenience.
+將節點的右側邊緣錨定到父控制項的原點、中心或末端。會改變該節點發生移動或改變大小時右側偏移量的更新方式。方便起見，你可以使用 :ref:`Anchor<enum_Control_Anchor>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -1524,7 +1524,7 @@ Anchors the right edge of the node to the origin, the center or the end of its p
 
 - :ref:`float<class_float>` **get_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Anchors the top edge of the node to the origin, the center or the end of its parent control. It changes how the top offset updates when the node moves or changes size. You can use one of the :ref:`Anchor<enum_Control_Anchor>` constants for convenience.
+將節點的頂部邊緣錨定到父控制項的原點、中心或末端。會改變該節點發生移動或改變大小時頂部偏移量的更新方式。方便起見，你可以使用 :ref:`Anchor<enum_Control_Anchor>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -1541,9 +1541,9 @@ Anchors the top edge of the node to the origin, the center or the end of its par
 - |void| **set_auto_translate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_translating**\ (\ )
 
-**Deprecated:** Use :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` and :ref:`Node.can_auto_translate()<class_Node_method_can_auto_translate>` instead.
+**已棄用：** Use :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` and :ref:`Node.can_auto_translate()<class_Node_method_can_auto_translate>` instead.
 
-Toggles if any text should automatically change to its translated version depending on the current locale.
+切換是否所有文字都應該根據目前區域設定自動變為翻譯後的版本。
 
 .. rst-class:: classref-item-separator
 
@@ -1560,7 +1560,7 @@ Toggles if any text should automatically change to its translated version depend
 - |void| **set_clip_contents**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_clipping_contents**\ (\ )
 
-Enables whether rendering of :ref:`CanvasItem<class_CanvasItem>` based children should be clipped to this control's rectangle. If ``true``, parts of a child which would be visibly outside of this control's rectangle will not be rendered and won't receive input.
+算繪基於 :ref:`CanvasItem<class_CanvasItem>` 的子節點時，是否應剪裁到該控制項的矩形中。如果為 ``true``\ ，則子節點顯示在該控制項的矩形範圍之外的部分，不會算繪，也不會接收輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -1628,7 +1628,7 @@ Determines which controls can be focused. Only one control can be focused at a t
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Tells Godot which node it should give focus to if the user presses the down arrow on the keyboard or down on a gamepad by default. You can change the key by editing the :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` input action. The node must be a **Control**. If this property is not set, Godot will give focus to the closest **Control** to the bottom of this one.
+告訴 Godot 當使用者按下鍵盤上的下方向鍵或遊戲手柄上的下方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點下方距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1645,7 +1645,7 @@ Tells Godot which node it should give focus to if the user presses the down arro
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Tells Godot which node it should give focus to if the user presses the left arrow on the keyboard or left on a gamepad by default. You can change the key by editing the :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` input action. The node must be a **Control**. If this property is not set, Godot will give focus to the closest **Control** to the left of this one.
+告訴 Godot 當使用者按下鍵盤上的左方向鍵或遊戲手柄上的左方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_left<class_ProjectSettings_property_input/ui_left>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點左側距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1662,7 +1662,7 @@ Tells Godot which node it should give focus to if the user presses the left arro
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Tells Godot which node it should give focus to if the user presses the right arrow on the keyboard or right on a gamepad by default. You can change the key by editing the :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` input action. The node must be a **Control**. If this property is not set, Godot will give focus to the closest **Control** to the right of this one.
+告訴 Godot 當使用者按下鍵盤上的右方向鍵或遊戲手柄上的右方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_right<class_ProjectSettings_property_input/ui_right>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點右側距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1679,7 @@ Tells Godot which node it should give focus to if the user presses the right arr
 - |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Tells Godot which node it should give focus to if the user presses the top arrow on the keyboard or top on a gamepad by default. You can change the key by editing the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` input action. The node must be a **Control**. If this property is not set, Godot will give focus to the closest **Control** to the top of this one.
+告訴 Godot 當使用者按下鍵盤上的下方向鍵或遊戲手柄上的下方向鍵時，預設應該將焦點移交給哪個節點。你可以通過編輯輸入動作 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 來修改具體的按鍵。該節點必須為 **Control**\ 。如果未設定這個屬性，Godot 會將焦點移交給該節點上方距離最近的 **Control**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1696,9 +1696,9 @@ Tells Godot which node it should give focus to if the user presses the top arrow
 - |void| **set_focus_next**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_next**\ (\ )
 
-Tells Godot which node it should give focus to if the user presses :kbd:`Tab` on a keyboard by default. You can change the key by editing the :ref:`ProjectSettings.input/ui_focus_next<class_ProjectSettings_property_input/ui_focus_next>` input action.
+告訴 Godot 在預設情況下，當使用者按下鍵盤上的 :kbd:`Tab` 時，應將焦點交給哪個節點。你可以通過編輯 :ref:`ProjectSettings.input/ui_focus_next<class_ProjectSettings_property_input/ui_focus_next>` 的輸入動作來更改按鍵。
 
-If this property is not set, Godot will select a "best guess" based on surrounding nodes in the scene tree.
+如果未設定此屬性，則 Godot 會將根據場景樹中的附近節點選擇一個“最佳猜測”。
 
 .. rst-class:: classref-item-separator
 
@@ -1715,9 +1715,9 @@ If this property is not set, Godot will select a "best guess" based on surroundi
 - |void| **set_focus_previous**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_focus_previous**\ (\ )
 
-Tells Godot which node it should give focus to if the user presses :kbd:`Shift + Tab` on a keyboard by default. You can change the key by editing the :ref:`ProjectSettings.input/ui_focus_prev<class_ProjectSettings_property_input/ui_focus_prev>` input action.
+告訴 Godot 在預設情況下，當使用者按下鍵盤上的 :kbd:`Shift + Tab` 時，應將焦點交給哪個節點。你可以通過編輯 :ref:`ProjectSettings.input/ui_focus_prev<class_ProjectSettings_property_input/ui_focus_prev>` 的輸入動作來更改按鍵。
 
-If this property is not set, Godot will select a "best guess" based on surrounding nodes in the scene tree.
+如果未設定此屬性，則 Godot 會將根據場景樹中的附近節點選擇一個“最佳猜測”。
 
 .. rst-class:: classref-item-separator
 
@@ -1733,7 +1733,7 @@ If this property is not set, Godot will select a "best guess" based on surroundi
 
 - :ref:`Vector2<class_Vector2>` **get_global_position**\ (\ )
 
-The node's global position, relative to the world (usually to the :ref:`CanvasLayer<class_CanvasLayer>`).
+該節點的全域位置，相對於世界（通常為 :ref:`CanvasLayer<class_CanvasLayer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1750,7 +1750,7 @@ The node's global position, relative to the world (usually to the :ref:`CanvasLa
 - |void| **set_h_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_h_grow_direction**\ (\ )
 
-Controls the direction on the horizontal axis in which the control should grow if its horizontal minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+控制水平軸的方向，如果控制項的水平最小尺寸更改為大於其目前尺寸，則控制項應沿水平軸增長，因為控制項始終必須至少為最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1767,7 +1767,7 @@ Controls the direction on the horizontal axis in which the control should grow i
 - |void| **set_v_grow_direction**\ (\ value\: :ref:`GrowDirection<enum_Control_GrowDirection>`\ )
 - :ref:`GrowDirection<enum_Control_GrowDirection>` **get_v_grow_direction**\ (\ )
 
-Controls the direction on the vertical axis in which the control should grow if its vertical minimum size is changed to be greater than its current size, as the control always has to be at least the minimum size.
+控制控制項在垂直軸上的方向，如果控制項的垂直最小尺寸更改為大於目前尺寸，則控制項應沿該方向增大，因為控制項始終必須至少為最小尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -1801,9 +1801,9 @@ Controls layout direction and text writing direction. Right-to-left layouts are 
 - |void| **set_localize_numeral_system**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_localizing_numeral_system**\ (\ )
 
-If ``true``, automatically converts code line numbers, list indices, :ref:`SpinBox<class_SpinBox>` and :ref:`ProgressBar<class_ProgressBar>` values from the Western Arabic (0..9) to the numeral systems used in current locale.
+如果為 ``true``\ ，則會自動將程式碼行號、列表索引號、\ :ref:`SpinBox<class_SpinBox>` 和 :ref:`ProgressBar<class_ProgressBar>` 的值，從阿拉伯數字（0..9）轉換為目前區域設定所使用的記數系統。
 
-\ **Note:** Numbers within the text are not automatically converted, it can be done manually, using :ref:`TextServer.format_number()<class_TextServer_method_format_number>`.
+\ **注意：**\ 不會自動轉換文字中的數位，可以使用 :ref:`TextServer.format_number()<class_TextServer_method_format_number>` 手動轉換。
 
 .. rst-class:: classref-item-separator
 
@@ -1837,9 +1837,9 @@ Determines which controls can receive mouse input together with :ref:`mouse_filt
 - |void| **set_default_cursor_shape**\ (\ value\: :ref:`CursorShape<enum_Control_CursorShape>`\ )
 - :ref:`CursorShape<enum_Control_CursorShape>` **get_default_cursor_shape**\ (\ )
 
-The default cursor shape for this control. Useful for Godot plugins and applications or games that use the system's mouse cursors.
+此控制項的預設游標形狀。對於 Godot 外掛程式和使用系統滑鼠游標的套用程式或遊戲很有用。
 
-\ **Note:** On Linux, shapes may vary depending on the cursor theme of the system.
+\ **注意：**\ 在 Linux 上，形狀可能會有所不同，具體取決於系統的游標主題。
 
 .. rst-class:: classref-item-separator
 
@@ -1894,9 +1894,9 @@ You should disable it on the root of your UI if you do not want scroll events to
 - |void| **set_offset**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, offset\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset**\ (\ offset\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Distance between the node's bottom edge and its parent control, based on :ref:`anchor_bottom<class_Control_property_anchor_bottom>`.
+該節點底部邊緣與其父控制項之間的距離，基於 :ref:`anchor_bottom<class_Control_property_anchor_bottom>`\ 。
 
-Offsets are often controlled by one or multiple parent :ref:`Container<class_Container>` nodes, so you should not modify them manually if your node is a direct child of a :ref:`Container<class_Container>`. Offsets update automatically when you move or resize the node.
+偏移量通常由一個或多個父 :ref:`Container<class_Container>` 節點控制，因此如果你的節點是 :ref:`Container<class_Container>` 的直接子節點，則不應進行手動修改。移動節點或調整節點大小時，偏移量會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1913,9 +1913,9 @@ Offsets are often controlled by one or multiple parent :ref:`Container<class_Con
 - |void| **set_offset**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, offset\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset**\ (\ offset\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Distance between the node's left edge and its parent control, based on :ref:`anchor_left<class_Control_property_anchor_left>`.
+該節點左側邊緣與其父控制項之間的距離，基於 :ref:`anchor_left<class_Control_property_anchor_left>`\ 。
 
-Offsets are often controlled by one or multiple parent :ref:`Container<class_Container>` nodes, so you should not modify them manually if your node is a direct child of a :ref:`Container<class_Container>`. Offsets update automatically when you move or resize the node.
+偏移量通常由一個或多個父 :ref:`Container<class_Container>` 節點控制，因此如果你的節點是 :ref:`Container<class_Container>` 的直接子節點，則不應進行手動修改。移動節點或調整節點大小時，偏移量會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1932,9 +1932,9 @@ Offsets are often controlled by one or multiple parent :ref:`Container<class_Con
 - |void| **set_offset**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, offset\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset**\ (\ offset\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Distance between the node's right edge and its parent control, based on :ref:`anchor_right<class_Control_property_anchor_right>`.
+該節點右側邊緣與其父控制項之間的距離，基於 :ref:`anchor_right<class_Control_property_anchor_right>`\ 。
 
-Offsets are often controlled by one or multiple parent :ref:`Container<class_Container>` nodes, so you should not modify them manually if your node is a direct child of a :ref:`Container<class_Container>`. Offsets update automatically when you move or resize the node.
+偏移量通常由一個或多個父 :ref:`Container<class_Container>` 節點控制，因此如果你的節點是 :ref:`Container<class_Container>` 的直接子節點，則不應進行手動修改。移動節點或調整節點大小時，偏移量會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1951,9 +1951,9 @@ Offsets are often controlled by one or multiple parent :ref:`Container<class_Con
 - |void| **set_offset**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, offset\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_offset**\ (\ offset\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Distance between the node's top edge and its parent control, based on :ref:`anchor_top<class_Control_property_anchor_top>`.
+該節點頂部邊緣與其父控制項之間的距離，基於 :ref:`anchor_top<class_Control_property_anchor_top>`\ 。
 
-Offsets are often controlled by one or multiple parent :ref:`Container<class_Container>` nodes, so you should not modify them manually if your node is a direct child of a :ref:`Container<class_Container>`. Offsets update automatically when you move or resize the node.
+偏移量通常由一個或多個父 :ref:`Container<class_Container>` 節點控制，因此如果你的節點是 :ref:`Container<class_Container>` 的直接子節點，則不應進行手動修改。移動節點或調整節點大小時，偏移量會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -2007,7 +2007,7 @@ The actual offset is the combined value of this property and :ref:`pivot_offset<
 
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-The node's position, relative to its containing node. It corresponds to the rectangle's top-left corner. The property is not affected by :ref:`pivot_offset<class_Control_property_pivot_offset>`.
+該節點的位置，相對於父節點。對應的是矩形的左上角。該屬性不受 :ref:`pivot_offset<class_Control_property_pivot_offset>` 的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -2024,9 +2024,9 @@ The node's position, relative to its containing node. It corresponds to the rect
 - |void| **set_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation**\ (\ )
 
-The node's rotation around its pivot, in radians. See :ref:`pivot_offset<class_Control_property_pivot_offset>` to change the pivot's position.
+節點圍繞其樞紐點的旋轉角度，以弧度為單位。請參閱 :ref:`pivot_offset<class_Control_property_pivot_offset>` 來變更樞紐點的位置。
 
-\ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Control_property_rotation_degrees>`.
+\ **注意：** 這個屬性在屬性檢視器中是以角度編輯的。如果您想在腳本中使用角度，請使用 :ref:`rotation_degrees<class_Control_property_rotation_degrees>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2043,7 +2043,7 @@ The node's rotation around its pivot, in radians. See :ref:`pivot_offset<class_C
 - |void| **set_rotation_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation_degrees**\ (\ )
 
-Helper property to access :ref:`rotation<class_Control_property_rotation>` in degrees instead of radians.
+協助以度數（而非弧度）存取 :ref:`rotation<class_Control_property_rotation>` 的屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -2083,7 +2083,7 @@ The node's scale, relative to its :ref:`size<class_Control_property_size>`. Chan
 - |void| **set_shortcut_context**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_shortcut_context**\ (\ )
 
-The :ref:`Node<class_Node>` which must be a parent of the focused **Control** for the shortcut to be activated. If ``null``, the shortcut can be activated when any control is focused (a global shortcut). This allows shortcuts to be accepted only when the user has a certain area of the GUI focused.
+該 :ref:`Node<class_Node>` 必須是被聚焦 **Control** 的父節點，才能啟動快捷方式。如果為 ``null``\ ，則可以在任何控制項獲得焦點時啟動該快捷方式（全域快捷方式）。這允許快捷方式只在使用者聚焦 GUI 的特定區域時才被接受。
 
 .. rst-class:: classref-item-separator
 
@@ -2099,7 +2099,7 @@ The :ref:`Node<class_Node>` which must be a parent of the focused **Control** fo
 
 - :ref:`Vector2<class_Vector2>` **get_size**\ (\ )
 
-The size of the node's bounding rectangle, in the node's coordinate system. :ref:`Container<class_Container>` nodes update this property automatically.
+該節點的邊界矩形的大小，使用該節點的坐標系。\ :ref:`Container<class_Container>` 節點會自動更新此屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -2116,7 +2116,7 @@ The size of the node's bounding rectangle, in the node's coordinate system. :ref
 - |void| **set_h_size_flags**\ (\ value\: |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\]\ )
 - |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\] **get_h_size_flags**\ (\ )
 
-Tells the parent :ref:`Container<class_Container>` nodes how they should resize and place the node on the X axis. Use a combination of the :ref:`SizeFlags<enum_Control_SizeFlags>` constants to change the flags. See the constants to learn what each does.
+告訴父 :ref:`Container<class_Container>` 節點應如何調整尺寸並將其放置在 X 軸上。請使用 :ref:`SizeFlags<enum_Control_SizeFlags>` 常數的組合來更改旗標。查看常數以瞭解每個常數的作用。
 
 .. rst-class:: classref-item-separator
 
@@ -2133,7 +2133,7 @@ Tells the parent :ref:`Container<class_Container>` nodes how they should resize 
 - |void| **set_stretch_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_stretch_ratio**\ (\ )
 
-If the node and at least one of its neighbors uses the :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` size flag, the parent :ref:`Container<class_Container>` will let it take more or less space depending on this property. If this node has a stretch ratio of 2 and its neighbor a ratio of 1, this node will take two thirds of the available space.
+如果該節點及其至少一個鄰居節點使用 :ref:`SIZE_EXPAND<class_Control_constant_SIZE_EXPAND>` 大小旗標，則父 :ref:`Container<class_Container>` 將根據該屬性讓它佔用更多或更少的空間。如果該節點的拉伸比為 2，其鄰居節點的拉伸比為 1，則該節點將佔用三分之二的可用空間。
 
 .. rst-class:: classref-item-separator
 
@@ -2150,7 +2150,7 @@ If the node and at least one of its neighbors uses the :ref:`SIZE_EXPAND<class_C
 - |void| **set_v_size_flags**\ (\ value\: |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\]\ )
 - |bitfield|\[:ref:`SizeFlags<enum_Control_SizeFlags>`\] **get_v_size_flags**\ (\ )
 
-Tells the parent :ref:`Container<class_Container>` nodes how they should resize and place the node on the Y axis. Use a combination of the :ref:`SizeFlags<enum_Control_SizeFlags>` constants to change the flags. See the constants to learn what each does.
+告訴父 :ref:`Container<class_Container>` 節點應如何調整尺寸並將其放置在 Y 軸上。請使用 :ref:`SizeFlags<enum_Control_SizeFlags>` 常數的組合來更改旗標。查看常數以瞭解每個常數的作用。
 
 .. rst-class:: classref-item-separator
 
@@ -2167,9 +2167,9 @@ Tells the parent :ref:`Container<class_Container>` nodes how they should resize 
 - |void| **set_theme**\ (\ value\: :ref:`Theme<class_Theme>`\ )
 - :ref:`Theme<class_Theme>` **get_theme**\ (\ )
 
-The :ref:`Theme<class_Theme>` resource this node and all its **Control** and :ref:`Window<class_Window>` children use. If a child node has its own :ref:`Theme<class_Theme>` resource set, theme items are merged with child's definitions having higher priority.
+該節點及其子 **Control** 和 :ref:`Window<class_Window>` 所使用的 :ref:`Theme<class_Theme>` 資源。如果子節點也設定了 :ref:`Theme<class_Theme>` 資源，則會合並主題項，子節點的定義優先順序更高。
 
-\ **Note:** :ref:`Window<class_Window>` styles will have no effect unless the window is embedded.
+\ **注意：**\ 除非 :ref:`Window<class_Window>` 為嵌入式，否則視窗樣式無效。
 
 .. rst-class:: classref-item-separator
 
@@ -2263,8 +2263,8 @@ The tooltip popup will use either a default implementation, or a custom one that
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Control_private_method__accessibility_get_contextual_info:
 
@@ -2409,11 +2409,11 @@ A preview that will follow the mouse that should represent the data can be set w
 
 :ref:`Vector2<class_Vector2>` **_get_minimum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__get_minimum_size>`
 
-Virtual method to be implemented by the user. Returns the minimum size for this control. Alternative to :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` for controlling minimum size via code. The actual minimum size will be the max value of these two (in each axis separately).
+由使用者實作的虛方法。返回此控制項的最小大小。替代 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`\ ，以用於通過程式碼控制最小尺寸。實際的最小尺寸將是這兩者的最大值（分別在每個軸上）。
 
-If not overridden, defaults to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`.
+如果未覆蓋，則預設為 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ 。
 
-\ **Note:** This method will not be called when the script is attached to a **Control** node that already overrides its minimum size (e.g. :ref:`Label<class_Label>`, :ref:`Button<class_Button>`, :ref:`PanelContainer<class_PanelContainer>` etc.). It can only be used with most basic GUI nodes, like **Control**, :ref:`Container<class_Container>`, :ref:`Panel<class_Panel>` etc.
+\ **注意：**\ 當腳本被附加到已經覆蓋其最小大小的 **Control** 節點（例如 :ref:`Label<class_Label>`\ 、\ :ref:`Button<class_Button>`\ 、\ :ref:`PanelContainer<class_PanelContainer>` 等）時，該方法將不會被呼叫。它只能用於最基本的 GUI 節點，如 **Control**\ 、\ :ref:`Container<class_Container>`\ 、\ :ref:`Panel<class_Panel>` 等。
 
 .. rst-class:: classref-item-separator
 
@@ -2492,11 +2492,11 @@ If the ``event`` inherits :ref:`InputEventMouse<class_InputEventMouse>`, this me
 
 :ref:`bool<class_bool>` **_has_point**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__has_point>`
 
-Virtual method to be implemented by the user. Returns whether the given ``point`` is inside this control.
+由使用者實作的虛方法。返回給定的 ``point`` 是否在該控制項內。
 
-If not overridden, default behavior is checking if the point is within control's Rect.
+如果沒有被覆蓋，則預設行為是檢查該點是否在控制項的 Rect 內。
 
-\ **Note:** If you want to check if a point is inside the control, you can use ``Rect2(Vector2.ZERO, size).has_point(point)``.
+\ **注意：**\ 如果要檢查一個點是否在該控制項內部，可以使用 ``Rect2(Vector2.ZERO, size).has_point(point)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2576,9 +2576,9 @@ The returned node will be added as child to a :ref:`PopupPanel<class_PopupPanel>
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **_structured_text_parser**\ (\ args\: :ref:`Array<class_Array>`, text\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_Control_private_method__structured_text_parser>`
 
-User defined BiDi algorithm override function.
+使用者定義的 BiDi 演算法覆蓋函式。
 
-Returns an :ref:`Array<class_Array>` of :ref:`Vector3i<class_Vector3i>` text ranges and text base directions, in the left-to-right order. Ranges should cover full source ``text`` without overlaps. BiDi algorithm will be used on each range separately.
+返回 :ref:`Vector3i<class_Vector3i>` 文字範圍和文字基礎方向的 :ref:`Array<class_Array>`\ ，順序為從左至右。這些範圍應該覆蓋完整的來源文字 ``text``\ ，不應該存在重疊。BiDi 演算法會對每個範圍單獨套用。
 
 .. rst-class:: classref-item-separator
 
@@ -2590,9 +2590,9 @@ Returns an :ref:`Array<class_Array>` of :ref:`Vector3i<class_Vector3i>` text ran
 
 |void| **accept_event**\ (\ ) :ref:`🔗<class_Control_method_accept_event>`
 
-Marks an input event as handled. Once you accept an input event, it stops propagating, even to nodes listening to :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` or :ref:`Node._unhandled_key_input()<class_Node_private_method__unhandled_key_input>`.
+將輸入事件標記為已處理。一旦接受輸入事件，傳播就會停止，不會再傳播到正在偵聽 :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>` 和 :ref:`Node._unhandled_key_input()<class_Node_private_method__unhandled_key_input>` 的節點。
 
-\ **Note:** This does not affect the methods in :ref:`Input<class_Input>`, only the way events are propagated.
+\ **注意：**\ 不會影響 :ref:`Input<class_Input>` 中的方法，只會影響事件的傳播。
 
 .. rst-class:: classref-item-separator
 
@@ -2667,9 +2667,9 @@ See also :ref:`get_theme_color()<class_Control_method_get_theme_color>`.
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Control_method_add_theme_constant_override>`
 
-Creates a local override for a theme constant with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_constant_override()<class_Control_method_remove_theme_constant_override>`.
+為名稱為 ``name`` 的主題常數建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_constant_override()<class_Control_method_remove_theme_constant_override>` 移除。
 
-See also :ref:`get_theme_constant()<class_Control_method_get_theme_constant>`.
+另見 :ref:`get_theme_constant()<class_Control_method_get_theme_constant>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2681,9 +2681,9 @@ See also :ref:`get_theme_constant()<class_Control_method_get_theme_constant>`.
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Control_method_add_theme_font_override>`
 
-Creates a local override for a theme :ref:`Font<class_Font>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_font_override()<class_Control_method_remove_theme_font_override>`.
+為名稱為 ``name`` 的主題 :ref:`Font<class_Font>` 建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_override()<class_Control_method_remove_theme_font_override>` 移除。
 
-See also :ref:`get_theme_font()<class_Control_method_get_theme_font>`.
+另見 :ref:`get_theme_font()<class_Control_method_get_theme_font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2695,9 +2695,9 @@ See also :ref:`get_theme_font()<class_Control_method_get_theme_font>`.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Control_method_add_theme_font_size_override>`
 
-Creates a local override for a theme font size with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_font_size_override()<class_Control_method_remove_theme_font_size_override>`.
+為名稱為 ``name`` 的主題字形大小建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_size_override()<class_Control_method_remove_theme_font_size_override>` 移除。
 
-See also :ref:`get_theme_font_size()<class_Control_method_get_theme_font_size>`.
+另見 :ref:`get_theme_font_size()<class_Control_method_get_theme_font_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2709,9 +2709,9 @@ See also :ref:`get_theme_font_size()<class_Control_method_get_theme_font_size>`.
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Control_method_add_theme_icon_override>`
 
-Creates a local override for a theme icon with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>`.
+為名稱為 ``name`` 的主題圖示建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_icon_override()<class_Control_method_remove_theme_icon_override>` 移除。
 
-See also :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`.
+另見 :ref:`get_theme_icon()<class_Control_method_get_theme_icon>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2768,7 +2768,7 @@ See also :ref:`get_theme_stylebox()<class_Control_method_get_theme_stylebox>`.
 
 |void| **begin_bulk_theme_override**\ (\ ) :ref:`🔗<class_Control_method_begin_bulk_theme_override>`
 
-Prevents ``*_theme_*_override`` methods from emitting :ref:`NOTIFICATION_THEME_CHANGED<class_Control_constant_NOTIFICATION_THEME_CHANGED>` until :ref:`end_bulk_theme_override()<class_Control_method_end_bulk_theme_override>` is called.
+防止 ``*_theme_*_override`` 方法發出 :ref:`NOTIFICATION_THEME_CHANGED<class_Control_constant_NOTIFICATION_THEME_CHANGED>`\ ，直到 :ref:`end_bulk_theme_override()<class_Control_method_end_bulk_theme_override>` 被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -2780,7 +2780,7 @@ Prevents ``*_theme_*_override`` methods from emitting :ref:`NOTIFICATION_THEME_C
 
 |void| **end_bulk_theme_override**\ (\ ) :ref:`🔗<class_Control_method_end_bulk_theme_override>`
 
-Ends a bulk theme override update. See :ref:`begin_bulk_theme_override()<class_Control_method_begin_bulk_theme_override>`.
+結束批量主題覆蓋更新。見 :ref:`begin_bulk_theme_override()<class_Control_method_begin_bulk_theme_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2792,7 +2792,7 @@ Ends a bulk theme override update. See :ref:`begin_bulk_theme_override()<class_C
 
 :ref:`Control<class_Control>` **find_next_valid_focus**\ (\ ) |const| :ref:`🔗<class_Control_method_find_next_valid_focus>`
 
-Finds the next (below in the tree) **Control** that can receive the focus.
+找到下一個可以接受焦點的 **Control**\ ，在樹的下方。
 
 .. rst-class:: classref-item-separator
 
@@ -2804,7 +2804,7 @@ Finds the next (below in the tree) **Control** that can receive the focus.
 
 :ref:`Control<class_Control>` **find_prev_valid_focus**\ (\ ) |const| :ref:`🔗<class_Control_method_find_prev_valid_focus>`
 
-Finds the previous (above in the tree) **Control** that can receive the focus.
+找到上一個可以接受焦點的 **Control**\ ，在樹的上方。
 
 .. rst-class:: classref-item-separator
 
@@ -2816,9 +2816,9 @@ Finds the previous (above in the tree) **Control** that can receive the focus.
 
 :ref:`Control<class_Control>` **find_valid_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Control_method_find_valid_focus_neighbor>`
 
-Finds the next **Control** that can receive the focus on the specified :ref:`Side<enum_@GlobalScope_Side>`.
+找出下一個可以在指定的 :ref:`Side<enum_@GlobalScope_Side>` 上接收焦點的 **Control**\ 。
 
-\ **Note:** This is different from :ref:`get_focus_neighbor()<class_Control_method_get_focus_neighbor>`, which returns the path of a specified focus neighbor.
+\ **注意：**\ 這與\ :ref:`get_focus_neighbor()<class_Control_method_get_focus_neighbor>` 不同，後者返回指定焦點鄰居的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -2830,9 +2830,9 @@ Finds the next **Control** that can receive the focus on the specified :ref:`Sid
 
 |void| **force_drag**\ (\ data\: :ref:`Variant<class_Variant>`, preview\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_Control_method_force_drag>`
 
-Forces drag and bypasses :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` and :ref:`set_drag_preview()<class_Control_method_set_drag_preview>` by passing ``data`` and ``preview``. Drag will start even if the mouse is neither over nor pressed on this control.
+通過傳遞 ``data`` 和 ``preview`` 強制拖動並繞過 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` 和 :ref:`set_drag_preview()<class_Control_method_set_drag_preview>`\ 。即使滑鼠既沒有在該控制項懸停也沒有在該控制項上按下，拖動都將開始。
 
-The methods :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` and :ref:`_drop_data()<class_Control_private_method__drop_data>` must be implemented on controls that want to receive drop data.
+方法 :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>` 和 :ref:`_drop_data()<class_Control_private_method__drop_data>` 必須在想要接收拖放資料的控制項上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -2844,7 +2844,7 @@ The methods :ref:`_can_drop_data()<class_Control_private_method__can_drop_data>`
 
 :ref:`float<class_float>` **get_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Control_method_get_anchor>`
 
-Returns the anchor for the specified :ref:`Side<enum_@GlobalScope_Side>`. A getter method for :ref:`anchor_bottom<class_Control_property_anchor_bottom>`, :ref:`anchor_left<class_Control_property_anchor_left>`, :ref:`anchor_right<class_Control_property_anchor_right>` and :ref:`anchor_top<class_Control_property_anchor_top>`.
+返回指定 :ref:`Side<enum_@GlobalScope_Side>` 的錨點。用於 :ref:`anchor_bottom<class_Control_property_anchor_bottom>`\ 、\ :ref:`anchor_left<class_Control_property_anchor_left>`\ 、\ :ref:`anchor_right<class_Control_property_anchor_right>`\ 、和 :ref:`anchor_top<class_Control_property_anchor_top>` 的取值方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2856,7 +2856,7 @@ Returns the anchor for the specified :ref:`Side<enum_@GlobalScope_Side>`. A gett
 
 :ref:`Vector2<class_Vector2>` **get_begin**\ (\ ) |const| :ref:`🔗<class_Control_method_get_begin>`
 
-Returns :ref:`offset_left<class_Control_property_offset_left>` and :ref:`offset_top<class_Control_property_offset_top>`. See also :ref:`position<class_Control_property_position>`.
+返回 :ref:`offset_left<class_Control_property_offset_left>` 和 :ref:`offset_top<class_Control_property_offset_top>`\ 。另請參閱 :ref:`position<class_Control_property_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2868,7 +2868,7 @@ Returns :ref:`offset_left<class_Control_property_offset_left>` and :ref:`offset_
 
 :ref:`Vector2<class_Vector2>` **get_combined_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_combined_minimum_size>`
 
-Returns combined minimum size from :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` and :ref:`get_minimum_size()<class_Control_method_get_minimum_size>`.
+返回 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 和 :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` 的組合最小大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2904,7 +2904,7 @@ Returns the mouse cursor shape for this control when hovered over ``position`` i
 
 :ref:`Vector2<class_Vector2>` **get_end**\ (\ ) |const| :ref:`🔗<class_Control_method_get_end>`
 
-Returns :ref:`offset_right<class_Control_property_offset_right>` and :ref:`offset_bottom<class_Control_property_offset_bottom>`.
+返回 :ref:`offset_right<class_Control_property_offset_right>` 和 :ref:`offset_bottom<class_Control_property_offset_bottom>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2928,9 +2928,7 @@ Returns the :ref:`focus_mode<class_Control_property_focus_mode>`, but takes the 
 
 :ref:`NodePath<class_NodePath>` **get_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Control_method_get_focus_neighbor>`
 
-Returns the focus neighbor for the specified :ref:`Side<enum_@GlobalScope_Side>`. A getter method for :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`, :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`, :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>` and :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>`.
-
-\ **Note:** To find the next **Control** on the specific :ref:`Side<enum_@GlobalScope_Side>`, even if a neighbor is not assigned, use :ref:`find_valid_focus_neighbor()<class_Control_method_find_valid_focus_neighbor>`.
+返回指定 :ref:`Side<enum_@GlobalScope_Side>` 的焦點鄰居。用於 :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`\ 、\ :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`\ 、\ :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>`\ 、和 :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>` 的取值方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2942,11 +2940,11 @@ Returns the focus neighbor for the specified :ref:`Side<enum_@GlobalScope_Side>`
 
 :ref:`Rect2<class_Rect2>` **get_global_rect**\ (\ ) |const| :ref:`🔗<class_Control_method_get_global_rect>`
 
-Returns the position and size of the control relative to the containing canvas. See :ref:`global_position<class_Control_property_global_position>` and :ref:`size<class_Control_property_size>`.
+返回控制項相對於所屬畫布的位置和大小。參見 :ref:`global_position<class_Control_property_global_position>` 和 :ref:`size<class_Control_property_size>`\ 。
 
-\ **Note:** If the node itself or any parent :ref:`CanvasItem<class_CanvasItem>` between the node and the canvas have a non default rotation or skew, the resulting size is likely not meaningful.
+\ **注意：**\ 如果節點本身或節點與畫布之間的任何父級 :ref:`CanvasItem<class_CanvasItem>` 具有非預設旋轉或傾斜，則生成的大小可能沒有意義。
 
-\ **Note:** Setting :ref:`Viewport.gui_snap_controls_to_pixels<class_Viewport_property_gui_snap_controls_to_pixels>` to ``true`` can lead to rounding inaccuracies between the displayed control and the returned :ref:`Rect2<class_Rect2>`.
+\ **注意：**\ 將 :ref:`Viewport.gui_snap_controls_to_pixels<class_Viewport_property_gui_snap_controls_to_pixels>` 設定為 ``true`` 會導致顯示的控制項和返回的 :ref:`Rect2<class_Rect2>` 之間的四捨五入不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -2958,7 +2956,7 @@ Returns the position and size of the control relative to the containing canvas. 
 
 :ref:`Vector2<class_Vector2>` **get_minimum_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_minimum_size>`
 
-Returns the minimum size for this control. See :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`.
+返回該控制項的最小尺寸。見 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2982,7 +2980,7 @@ Returns the :ref:`mouse_filter<class_Control_property_mouse_filter>`, but takes 
 
 :ref:`float<class_float>` **get_offset**\ (\ offset\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Control_method_get_offset>`
 
-Returns the offset for the specified :ref:`Side<enum_@GlobalScope_Side>`. A getter method for :ref:`offset_bottom<class_Control_property_offset_bottom>`, :ref:`offset_left<class_Control_property_offset_left>`, :ref:`offset_right<class_Control_property_offset_right>` and :ref:`offset_top<class_Control_property_offset_top>`.
+返回指定 :ref:`Side<enum_@GlobalScope_Side>` 的偏移。這是 :ref:`offset_bottom<class_Control_property_offset_bottom>`\ 、\ :ref:`offset_left<class_Control_property_offset_left>`\ 、\ :ref:`offset_right<class_Control_property_offset_right>` 和 :ref:`offset_top<class_Control_property_offset_top>` 的 getter 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2994,7 +2992,7 @@ Returns the offset for the specified :ref:`Side<enum_@GlobalScope_Side>`. A gett
 
 :ref:`Vector2<class_Vector2>` **get_parent_area_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_parent_area_size>`
 
-Returns the width/height occupied in the parent control.
+返回父控制項中佔用的寬度/高度。
 
 .. rst-class:: classref-item-separator
 
@@ -3006,7 +3004,7 @@ Returns the width/height occupied in the parent control.
 
 :ref:`Control<class_Control>` **get_parent_control**\ (\ ) |const| :ref:`🔗<class_Control_method_get_parent_control>`
 
-Returns the parent control node.
+返回父控制節點。
 
 .. rst-class:: classref-item-separator
 
@@ -3018,11 +3016,11 @@ Returns the parent control node.
 
 :ref:`Rect2<class_Rect2>` **get_rect**\ (\ ) |const| :ref:`🔗<class_Control_method_get_rect>`
 
-Returns the position and size of the control in the coordinate system of the containing node. See :ref:`position<class_Control_property_position>`, :ref:`scale<class_Control_property_scale>` and :ref:`size<class_Control_property_size>`.
+返回控制項在包含節點的坐標系中的位置和大小。參見 :ref:`position<class_Control_property_position>`\ 、\ :ref:`scale<class_Control_property_scale>` 和 :ref:`size<class_Control_property_size>`\ 。
 
-\ **Note:** If :ref:`rotation<class_Control_property_rotation>` is not the default rotation, the resulting size is not meaningful.
+\ **注意：**\ 如果 :ref:`rotation<class_Control_property_rotation>` 不是預設的旋轉，那麼得到的大小是沒有意義的。
 
-\ **Note:** Setting :ref:`Viewport.gui_snap_controls_to_pixels<class_Viewport_property_gui_snap_controls_to_pixels>` to ``true`` can lead to rounding inaccuracies between the displayed control and the returned :ref:`Rect2<class_Rect2>`.
+\ **注意：**\ 將 :ref:`Viewport.gui_snap_controls_to_pixels<class_Viewport_property_gui_snap_controls_to_pixels>` 設定為 ``true``\ ，會導致顯示的控制項和返回的 :ref:`Rect2<class_Rect2>` 之間的四捨五入不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -3060,9 +3058,9 @@ Equivalent to ``get_screen_transform().origin`` (see :ref:`CanvasItem.get_screen
 
 :ref:`Color<class_Color>` **get_theme_color**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_color>`
 
-Returns a :ref:`Color<class_Color>` from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a color item with the specified ``name`` and ``theme_type``. If ``theme_type`` is omitted the class name of the current control is used as the type, or :ref:`theme_type_variation<class_Control_property_theme_type_variation>` if it is defined. If the type is a class name its parent classes are also checked, in order of inheritance. If the type is a variation its base types are checked, in order of dependency, then the control's class name and its parent classes are checked.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回 :ref:`Color<class_Color>`\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的顏色項。如果省略 ``theme_type`` 則會使用目前控制項的類別名稱，如果定義了 :ref:`theme_type_variation<class_Control_property_theme_type_variation>` 則會優先使用。如果該型別為類別名稱，則還會按照繼承順序檢查父類。如果該型別為變種，則還會按照依賴順序檢查基礎型別，然後再檢查該控制項的類別名稱及其父類。
 
-For the current control its local overrides are considered first (see :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>`), then its assigned :ref:`theme<class_Control_property_theme>`. After the current control, each parent control and its assigned :ref:`theme<class_Control_property_theme>` are considered; controls without a :ref:`theme<class_Control_property_theme>` assigned are skipped. If no matching :ref:`Theme<class_Theme>` is found in the tree, the custom project :ref:`Theme<class_Theme>` (see :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`) and the default :ref:`Theme<class_Theme>` are used (see :ref:`ThemeDB<class_ThemeDB>`).
+會首先考慮目前控制項的本地覆蓋項（見 :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>`\ ），然後才是其 :ref:`theme<class_Control_property_theme>`\ 。各個父控制項及其 :ref:`theme<class_Control_property_theme>` 在目前控制項之後考慮；會跳過沒有 :ref:`theme<class_Control_property_theme>` 的控制項。如果樹中沒有配對的 :ref:`Theme<class_Theme>`\ ，則會使用自訂專案 :ref:`Theme<class_Theme>`\ （見 :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`\ ）和預設 :ref:`Theme<class_Theme>`\ （見 :ref:`ThemeDB<class_ThemeDB>`\ ）。
 
 
 .. tabs::
@@ -3070,18 +3068,18 @@ For the current control its local overrides are considered first (see :ref:`add_
  .. code-tab:: gdscript
 
     func _ready():
-        # Get the font color defined for the current Control's class, if it exists.
+        # 獲取目前 Control 類中定義的字形顏色，前提是存在。
         modulate = get_theme_color("font_color")
-        # Get the font color defined for the Button class.
+        # 獲取 Button 類中定義的字形顏色。
         modulate = get_theme_color("font_color", "Button")
 
  .. code-tab:: csharp
 
     public override void _Ready()
     {
-        // Get the font color defined for the current Control's class, if it exists.
+        // 獲取目前 Control 類中定義的字形顏色，前提是存在。
         Modulate = GetThemeColor("font_color");
-        // Get the font color defined for the Button class.
+        // 獲取 Button 類中定義的字形顏色。
         Modulate = GetThemeColor("font_color", "Button");
     }
 
@@ -3097,9 +3095,9 @@ For the current control its local overrides are considered first (see :ref:`add_
 
 :ref:`int<class_int>` **get_theme_constant**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_constant>`
 
-Returns a constant from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a constant item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回常數，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的常數項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3111,9 +3109,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`float<class_float>` **get_theme_default_base_scale**\ (\ ) |const| :ref:`🔗<class_Control_method_get_theme_default_base_scale>`
 
-Returns the default base scale value from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a valid :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>` value.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回預設基礎縮放值，該 :ref:`Theme<class_Theme>` 中應存在有效的 :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>` 值。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3125,9 +3123,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`Font<class_Font>` **get_theme_default_font**\ (\ ) |const| :ref:`🔗<class_Control_method_get_theme_default_font>`
 
-Returns the default font from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a valid :ref:`Theme.default_font<class_Theme_property_default_font>` value.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回預設字形，該 :ref:`Theme<class_Theme>` 中應存在有效的 :ref:`Theme.default_font<class_Theme_property_default_font>` 值。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3139,9 +3137,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`int<class_int>` **get_theme_default_font_size**\ (\ ) |const| :ref:`🔗<class_Control_method_get_theme_default_font_size>`
 
-Returns the default font size value from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a valid :ref:`Theme.default_font_size<class_Theme_property_default_font_size>` value.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回預設字形大小，該 :ref:`Theme<class_Theme>` 中應存在有效的 :ref:`Theme.default_font_size<class_Theme_property_default_font_size>` 值。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3153,9 +3151,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`Font<class_Font>` **get_theme_font**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_font>`
 
-Returns a :ref:`Font<class_Font>` from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a font item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回 :ref:`Font<class_Font>`\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的字形項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3167,9 +3165,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`int<class_int>` **get_theme_font_size**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_font_size>`
 
-Returns a font size from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a font size item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回字形大小，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的字形大小項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3181,9 +3179,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`Texture2D<class_Texture2D>` **get_theme_icon**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_icon>`
 
-Returns an icon from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has an icon item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回圖示，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的圖示項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3195,9 +3193,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`StyleBox<class_StyleBox>` **get_theme_stylebox**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_get_theme_stylebox>`
 
-Returns a :ref:`StyleBox<class_StyleBox>` from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a stylebox item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 返回 :ref:`StyleBox<class_StyleBox>`\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的樣式盒項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3284,9 +3282,9 @@ If ``ignore_hidden_focus`` is ``true``, controls that have their focus hidden wi
 
 :ref:`bool<class_bool>` **has_theme_color**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_color>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a color item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>` 則返回 ``true``\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的顏色項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3298,9 +3296,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`bool<class_bool>` **has_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_color_override>`
 
-Returns ``true`` if there is a local override for a theme :ref:`Color<class_Color>` with the specified ``name`` in this **Control** node.
+如果該 **Control** 節點中存在名為指定 ``name`` 的主題 :ref:`Color<class_Color>` 本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>`.
+詳情請參閱 :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3312,9 +3310,9 @@ See :ref:`add_theme_color_override()<class_Control_method_add_theme_color_overri
 
 :ref:`bool<class_bool>` **has_theme_constant**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_constant>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a constant item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>` 則返回 ``true``\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的常數項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3326,9 +3324,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`bool<class_bool>` **has_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_constant_override>`
 
-Returns ``true`` if there is a local override for a theme constant with the specified ``name`` in this **Control** node.
+如果該 **Control** 節點中存在名為指定 ``name`` 的主題常數本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_override>`.
+詳情請參閱 :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3340,9 +3338,9 @@ See :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_
 
 :ref:`bool<class_bool>` **has_theme_font**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_font>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a font item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>` 則返回 ``true``\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的字形項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3354,9 +3352,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`bool<class_bool>` **has_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_font_override>`
 
-Returns ``true`` if there is a local override for a theme :ref:`Font<class_Font>` with the specified ``name`` in this **Control** node.
+如果該 **Control** 節點中存在名為指定 ``name`` 的主題 :ref:`Font<class_Font>` 本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`.
+詳情請參閱 :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3368,9 +3366,9 @@ See :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override
 
 :ref:`bool<class_bool>` **has_theme_font_size**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_font_size>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a font size item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>` 則返回 ``true``\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的字形大小項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3382,9 +3380,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`bool<class_bool>` **has_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_font_size_override>`
 
-Returns ``true`` if there is a local override for a theme font size with the specified ``name`` in this **Control** node.
+如果該 **Control** 節點中存在名為指定 ``name`` 的主題字形大小本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_size_override>`.
+詳情請參閱 :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_size_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3396,9 +3394,9 @@ See :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_siz
 
 :ref:`bool<class_bool>` **has_theme_icon**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_icon>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has an icon item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>` 則返回 ``true``\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的圖示項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3410,9 +3408,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`bool<class_bool>` **has_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_icon_override>`
 
-Returns ``true`` if there is a local override for a theme icon with the specified ``name`` in this **Control** node.
+如果該 **Control** 節點中存在名為指定 ``name`` 的主題圖示本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>`.
+詳情請參閱 :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3424,9 +3422,9 @@ See :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override
 
 :ref:`bool<class_bool>` **has_theme_stylebox**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Control_method_has_theme_stylebox>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a stylebox item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>` 則返回 ``true``\ ，該 :ref:`Theme<class_Theme>` 中應存在指定名稱 ``name`` 和主題型別 ``theme_type`` 的樣式盒項。
 
-See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情請參閱 :ref:`get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3438,9 +3436,9 @@ See :ref:`get_theme_color()<class_Control_method_get_theme_color>` for details.
 
 :ref:`bool<class_bool>` **has_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Control_method_has_theme_stylebox_override>`
 
-Returns ``true`` if there is a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name`` in this **Control** node.
+如果該 **Control** 節點中存在名為指定 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>`.
+詳情請參閱 :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3452,9 +3450,9 @@ See :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_
 
 :ref:`bool<class_bool>` **is_drag_successful**\ (\ ) |const| :ref:`🔗<class_Control_method_is_drag_successful>`
 
-Returns ``true`` if a drag operation is successful. Alternative to :ref:`Viewport.gui_is_drag_successful()<class_Viewport_method_gui_is_drag_successful>`.
+如果拖放操作成功則返回 ``true``\ ，是 :ref:`Viewport.gui_is_drag_successful()<class_Viewport_method_gui_is_drag_successful>` 的替代方案。
 
-Best used with :ref:`Node.NOTIFICATION_DRAG_END<class_Node_constant_NOTIFICATION_DRAG_END>`.
+建議與 :ref:`Node.NOTIFICATION_DRAG_END<class_Node_constant_NOTIFICATION_DRAG_END>` 配合使用。
 
 .. rst-class:: classref-item-separator
 
@@ -3478,7 +3476,7 @@ Returns ``true`` if the layout is right-to-left. See also :ref:`layout_direction
 
 |void| **release_focus**\ (\ ) :ref:`🔗<class_Control_method_release_focus>`
 
-Give up the focus. No other control will be able to receive input.
+放棄焦點。不會讓其他控制項能夠接收鍵盤輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -3490,7 +3488,7 @@ Give up the focus. No other control will be able to receive input.
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_color_override>`
 
-Removes a local override for a theme :ref:`Color<class_Color>` with the specified ``name`` previously added by :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>` or via the Inspector dock.
+移除先前由 :ref:`add_theme_color_override()<class_Control_method_add_theme_color_override>` 或透過屬性檢視器面板所加入，給定主題 :ref:`Color<class_Color>` 的本地覆寫，該覆寫使用指定的 ``name``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3502,7 +3500,7 @@ Removes a local override for a theme :ref:`Color<class_Color>` with the specifie
 
 |void| **remove_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_constant_override>`
 
-Removes a local override for a theme constant with the specified ``name`` previously added by :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_override>` or via the Inspector dock.
+移除針對使用指定 ``name`` 的主題常數所設定的本機覆寫，該覆寫先前透過 :ref:`add_theme_constant_override()<class_Control_method_add_theme_constant_override>` 或屬性檢視器面板新增。
 
 .. rst-class:: classref-item-separator
 
@@ -3514,7 +3512,7 @@ Removes a local override for a theme constant with the specified ``name`` previo
 
 |void| **remove_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_font_override>`
 
-Removes a local override for a theme :ref:`Font<class_Font>` with the specified ``name`` previously added by :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>` or via the Inspector dock.
+移除先前透過 :ref:`add_theme_font_override()<class_Control_method_add_theme_font_override>` 或透過屬性檢視器面板新增的、名稱為指定 ``name`` 的主題 :ref:`Font<class_Font>` 本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -3526,7 +3524,7 @@ Removes a local override for a theme :ref:`Font<class_Font>` with the specified 
 
 |void| **remove_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_font_size_override>`
 
-Removes a local override for a theme font size with the specified ``name`` previously added by :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_size_override>` or via the Inspector dock.
+移除使用指定的 ``name``\ ，先前由 :ref:`add_theme_font_size_override()<class_Control_method_add_theme_font_size_override>` 或透過屬性檢視器面板新增的主題字型大小的本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -3538,7 +3536,7 @@ Removes a local override for a theme font size with the specified ``name`` previ
 
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_icon_override>`
 
-Removes a local override for a theme icon with the specified ``name`` previously added by :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` or via the Inspector dock.
+移除先前透過 :ref:`add_theme_icon_override()<class_Control_method_add_theme_icon_override>` 或屬性檢視器面板新增的、具有指定 ``name`` 的主題圖示本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -3550,7 +3548,7 @@ Removes a local override for a theme icon with the specified ``name`` previously
 
 |void| **remove_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Control_method_remove_theme_stylebox_override>`
 
-Removes a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name`` previously added by :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>` or via the Inspector dock.
+移除先前由 :ref:`add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>` 或透過屬性檢視器面板新增的、具有指定 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -3562,7 +3560,7 @@ Removes a local override for a theme :ref:`StyleBox<class_StyleBox>` with the sp
 
 |void| **reset_size**\ (\ ) :ref:`🔗<class_Control_method_reset_size>`
 
-Resets the size to :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`. This is equivalent to calling ``set_size(Vector2())`` (or any size below the minimum).
+將大小重設為 :ref:`get_combined_minimum_size()<class_Control_method_get_combined_minimum_size>`\ 。等價於呼叫 ``set_size(Vector2())``\ （或任何小於最小值的大小）。
 
 .. rst-class:: classref-item-separator
 
@@ -3574,11 +3572,11 @@ Resets the size to :ref:`get_combined_minimum_size()<class_Control_method_get_co
 
 |void| **set_anchor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, anchor\: :ref:`float<class_float>`, keep_offset\: :ref:`bool<class_bool>` = false, push_opposite_anchor\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Control_method_set_anchor>`
 
-Sets the anchor for the specified :ref:`Side<enum_@GlobalScope_Side>` to ``anchor``. A setter method for :ref:`anchor_bottom<class_Control_property_anchor_bottom>`, :ref:`anchor_left<class_Control_property_anchor_left>`, :ref:`anchor_right<class_Control_property_anchor_right>` and :ref:`anchor_top<class_Control_property_anchor_top>`.
+將指定 :ref:`Side<enum_@GlobalScope_Side>` 的錨點設定為 ``anchor``\ 。用於 :ref:`anchor_bottom<class_Control_property_anchor_bottom>`\ 、\ :ref:`anchor_left<class_Control_property_anchor_left>`\ 、\ :ref:`anchor_right<class_Control_property_anchor_right>`\ 、和 :ref:`anchor_top<class_Control_property_anchor_top>` 的設值函數。
 
-If ``keep_offset`` is ``true``, offsets aren't updated after this operation.
+如果 ``keep_offset`` 為 ``true``\ ，則偏移量不會在該操作後更新。
 
-If ``push_opposite_anchor`` is ``true`` and the opposite anchor overlaps this anchor, the opposite one will have its value overridden. For example, when setting left anchor to 1 and the right anchor has value of 0.5, the right anchor will also get value of 1. If ``push_opposite_anchor`` was ``false``, the left anchor would get value 0.5.
+如果 ``push_opposite_anchor`` 為 ``true``\ ，並且相對的錨點與該錨點重疊，則相對的錨點的值將被覆蓋。例如，當將左錨點設定為 1 且右錨點的值為 0.5 時，右錨點的值也將為 1。如果 ``push_opposite_anchor`` 為 ``false``\ ，則左錨點的值將為 0.5。
 
 .. rst-class:: classref-item-separator
 
@@ -3590,7 +3588,7 @@ If ``push_opposite_anchor`` is ``true`` and the opposite anchor overlaps this an
 
 |void| **set_anchor_and_offset**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, anchor\: :ref:`float<class_float>`, offset\: :ref:`float<class_float>`, push_opposite_anchor\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_set_anchor_and_offset>`
 
-Works the same as :ref:`set_anchor()<class_Control_method_set_anchor>`, but instead of ``keep_offset`` argument and automatic update of offset, it allows to set the offset yourself (see :ref:`set_offset()<class_Control_method_set_offset>`).
+工作原理與 :ref:`set_anchor()<class_Control_method_set_anchor>` 相同，但取代 ``keep_offset`` 參數和自動更新的偏移，它允許你自己設定偏移量（參見 :ref:`set_offset()<class_Control_method_set_offset>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -3602,7 +3600,7 @@ Works the same as :ref:`set_anchor()<class_Control_method_set_anchor>`, but inst
 
 |void| **set_anchors_and_offsets_preset**\ (\ preset\: :ref:`LayoutPreset<enum_Control_LayoutPreset>`, resize_mode\: :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` = 0, margin\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Control_method_set_anchors_and_offsets_preset>`
 
-Sets both anchor preset and offset preset. See :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` and :ref:`set_offsets_preset()<class_Control_method_set_offsets_preset>`.
+設定錨點預設和偏移預設。參見 :ref:`set_anchors_preset()<class_Control_method_set_anchors_preset>` 和 :ref:`set_offsets_preset()<class_Control_method_set_offsets_preset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3614,9 +3612,9 @@ Sets both anchor preset and offset preset. See :ref:`set_anchors_preset()<class_
 
 |void| **set_anchors_preset**\ (\ preset\: :ref:`LayoutPreset<enum_Control_LayoutPreset>`, keep_offsets\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_set_anchors_preset>`
 
-Sets the anchors to a ``preset`` from :ref:`LayoutPreset<enum_Control_LayoutPreset>` enum. This is the code equivalent to using the Layout menu in the 2D editor.
+將錨點設定為 :ref:`LayoutPreset<enum_Control_LayoutPreset>` 列舉中的 ``preset``\ 。這是相當於在 2D 編輯器中使用佈局功能表的程式碼。
 
-If ``keep_offsets`` is ``true``, control's position will also be updated.
+如果 ``keep_offsets`` 為 ``true``\ ，則控制項的位置也將被更新。
 
 .. rst-class:: classref-item-separator
 
@@ -3628,7 +3626,7 @@ If ``keep_offsets`` is ``true``, control's position will also be updated.
 
 |void| **set_begin**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Control_method_set_begin>`
 
-Sets :ref:`offset_left<class_Control_property_offset_left>` and :ref:`offset_top<class_Control_property_offset_top>` at the same time. Equivalent of changing :ref:`position<class_Control_property_position>`.
+同時設定 :ref:`offset_left<class_Control_property_offset_left>` 和 :ref:`offset_top<class_Control_property_offset_top>`\ 。相當於改變 :ref:`position<class_Control_property_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3660,7 +3658,7 @@ The arguments for each callable should be exactly the same as their respective v
 
 |void| **set_drag_preview**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_Control_method_set_drag_preview>`
 
-Shows the given control at the mouse pointer. A good time to call this method is in :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>`. The control must not be in the scene tree. You should not free the control, and you should not keep a reference to the control beyond the duration of the drag. It will be deleted automatically after the drag has ended.
+在滑鼠指標處顯示給定的控制項。呼叫此方法的好時機是在 :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>` 中。控制項不得位於場景樹中。你不應釋放控制項，也不應在拖動持續時間之外保留對控制項的引用。拖拽結束後它會自動刪除。
 
 
 .. tabs::
@@ -3670,7 +3668,7 @@ Shows the given control at the mouse pointer. A good time to call this method is
     @export var color = Color(1, 0, 0, 1)
 
     func _get_drag_data(position):
-        # Use a control that is not in the tree
+        #使用不在樹中的控制項
         var cpb = ColorPickerButton.new()
         cpb.color = color
         cpb.size = Vector2(50, 50)
@@ -3684,7 +3682,7 @@ Shows the given control at the mouse pointer. A good time to call this method is
 
     public override Variant _GetDragData(Vector2 atPosition)
     {
-        // Use a control that is not in the tree
+        // 使用不在樹中的控制項
         var cpb = new ColorPickerButton();
         cpb.Color = _color;
         cpb.Size = new Vector2(50, 50);
@@ -3704,7 +3702,7 @@ Shows the given control at the mouse pointer. A good time to call this method is
 
 |void| **set_end**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Control_method_set_end>`
 
-Sets :ref:`offset_right<class_Control_property_offset_right>` and :ref:`offset_bottom<class_Control_property_offset_bottom>` at the same time.
+同時設定 :ref:`offset_right<class_Control_property_offset_right>` 和 :ref:`offset_bottom<class_Control_property_offset_bottom>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3716,7 +3714,7 @@ Sets :ref:`offset_right<class_Control_property_offset_right>` and :ref:`offset_b
 
 |void| **set_focus_neighbor**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, neighbor\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_Control_method_set_focus_neighbor>`
 
-Sets the focus neighbor for the specified :ref:`Side<enum_@GlobalScope_Side>` to the **Control** at ``neighbor`` node path. A setter method for :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`, :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`, :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>` and :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>`.
+將指定 :ref:`Side<enum_@GlobalScope_Side>` 的焦點鄰居設定為節點路徑 ``neighbor`` 處的 **Control**\ 。這是 :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`\ 、\ :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`\ 、\ :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>` 和 :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>` 的 setter 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -3728,9 +3726,9 @@ Sets the focus neighbor for the specified :ref:`Side<enum_@GlobalScope_Side>` to
 
 |void| **set_global_position**\ (\ position\: :ref:`Vector2<class_Vector2>`, keep_offsets\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_set_global_position>`
 
-Sets the :ref:`global_position<class_Control_property_global_position>` to given ``position``.
+將 :ref:`global_position<class_Control_property_global_position>` 設定為給定的 ``position``\ 。
 
-If ``keep_offsets`` is ``true``, control's anchors will be updated instead of offsets.
+如果 ``keep_offsets`` 為 ``true``\ ，則將更新控制項的錨點而不是偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -3742,7 +3740,7 @@ If ``keep_offsets`` is ``true``, control's anchors will be updated instead of of
 
 |void| **set_offset**\ (\ side\: :ref:`Side<enum_@GlobalScope_Side>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Control_method_set_offset>`
 
-Sets the offset for the specified :ref:`Side<enum_@GlobalScope_Side>` to ``offset``. A setter method for :ref:`offset_bottom<class_Control_property_offset_bottom>`, :ref:`offset_left<class_Control_property_offset_left>`, :ref:`offset_right<class_Control_property_offset_right>` and :ref:`offset_top<class_Control_property_offset_top>`.
+將指定 :ref:`Side<enum_@GlobalScope_Side>` 的偏移設定為 ``offset``\ 。用於 :ref:`offset_bottom<class_Control_property_offset_bottom>`\ 、\ :ref:`offset_left<class_Control_property_offset_left>`\ 、\ :ref:`offset_right<class_Control_property_offset_right>`\ 、和 :ref:`offset_top<class_Control_property_offset_top>` 的設值方法。
 
 .. rst-class:: classref-item-separator
 
@@ -3754,11 +3752,11 @@ Sets the offset for the specified :ref:`Side<enum_@GlobalScope_Side>` to ``offse
 
 |void| **set_offsets_preset**\ (\ preset\: :ref:`LayoutPreset<enum_Control_LayoutPreset>`, resize_mode\: :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` = 0, margin\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Control_method_set_offsets_preset>`
 
-Sets the offsets to a ``preset`` from :ref:`LayoutPreset<enum_Control_LayoutPreset>` enum. This is the code equivalent to using the Layout menu in the 2D editor.
+將偏移設定為 :ref:`LayoutPreset<enum_Control_LayoutPreset>` 列舉中的 ``preset``\ 。這是相當於在 2D 編輯器中使用佈局功能表的程式碼。
 
-Use parameter ``resize_mode`` with constants from :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` to better determine the resulting size of the **Control**. Constant size will be ignored if used with presets that change size, e.g. :ref:`PRESET_LEFT_WIDE<class_Control_constant_PRESET_LEFT_WIDE>`.
+將參數 ``resize_mode`` 與 :ref:`LayoutPresetMode<enum_Control_LayoutPresetMode>` 中的常數一起使用，以更好地確定 **Control** 的最終大小。如果與更改尺寸大小的預設一起使用，則將忽略常數尺寸大小，例如 :ref:`PRESET_LEFT_WIDE<class_Control_constant_PRESET_LEFT_WIDE>`\ 。
 
-Use parameter ``margin`` to determine the gap between the **Control** and the edges.
+使用參數 ``margin`` 來確定 **Control** 和邊緣之間的間隙。
 
 .. rst-class:: classref-item-separator
 
@@ -3770,9 +3768,9 @@ Use parameter ``margin`` to determine the gap between the **Control** and the ed
 
 |void| **set_position**\ (\ position\: :ref:`Vector2<class_Vector2>`, keep_offsets\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_set_position>`
 
-Sets the :ref:`position<class_Control_property_position>` to given ``position``.
+將 :ref:`position<class_Control_property_position>` 設定為給定的 ``position``\ 。
 
-If ``keep_offsets`` is ``true``, control's anchors will be updated instead of offsets.
+如果 ``keep_offsets`` 為 ``true``\ ，則將更新控制項的錨點而不是偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -3784,9 +3782,9 @@ If ``keep_offsets`` is ``true``, control's anchors will be updated instead of of
 
 |void| **set_size**\ (\ size\: :ref:`Vector2<class_Vector2>`, keep_offsets\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Control_method_set_size>`
 
-Sets the size (see :ref:`size<class_Control_property_size>`).
+設定大小（參見 :ref:`size<class_Control_property_size>`\ ）。
 
-If ``keep_offsets`` is ``true``, control's anchors will be updated instead of offsets.
+如果 ``keep_offsets`` 為 ``true``\ ，則將更新控制項的錨點而不是偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -3798,7 +3796,7 @@ If ``keep_offsets`` is ``true``, control's anchors will be updated instead of of
 
 |void| **update_minimum_size**\ (\ ) :ref:`🔗<class_Control_method_update_minimum_size>`
 
-Invalidates the size cache in this node and in parent nodes up to top level. Intended to be used with :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` when the return value is changed. Setting :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` directly calls this method automatically.
+使該節點和直至頂級的父節點中的大小快取無效。旨在當返回值更改時與 :ref:`get_minimum_size()<class_Control_method_get_minimum_size>` 一起使用。直接設定 :ref:`custom_minimum_size<class_Control_property_custom_minimum_size>` 將自動呼叫該方法。
 
 .. rst-class:: classref-item-separator
 
@@ -3810,16 +3808,16 @@ Invalidates the size cache in this node and in parent nodes up to top level. Int
 
 |void| **warp_mouse**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Control_method_warp_mouse>`
 
-Moves the mouse cursor to ``position``, relative to :ref:`position<class_Control_property_position>` of this **Control**.
+將滑鼠游標移動到 ``position``\ ，相對於該 **Control** 的 :ref:`position<class_Control_property_position>`\ 。
 
-\ **Note:** :ref:`warp_mouse()<class_Control_method_warp_mouse>` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
+\ **注意：**\ :ref:`warp_mouse()<class_Control_method_warp_mouse>` 僅在 Windows、macOS 和 Linux 上受支援。它在 Android、iOS 和 Web 上沒有效果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

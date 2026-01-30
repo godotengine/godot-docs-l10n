@@ -5,18 +5,18 @@
 VisualShaderNodeCustom
 ======================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Virtual class to define custom :ref:`VisualShaderNode<class_VisualShaderNode>`\ s for use in the Visual Shader Editor.
+用於定義自訂 :ref:`VisualShaderNode<class_VisualShaderNode>` 的虛類，以便在視覺化著色器編輯器中使用。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-By inheriting this class you can create a custom :ref:`VisualShader<class_VisualShader>` script addon which will be automatically added to the Visual Shader Editor. The :ref:`VisualShaderNode<class_VisualShaderNode>`'s behavior is defined by overriding the provided virtual methods.
+繼承這個類可以建立自訂的 :ref:`VisualShader<class_VisualShader>` 腳本擴充，會自動加入到 Visual Shader 編輯器中。\ :ref:`VisualShaderNode<class_VisualShaderNode>` 的行為可以通過覆蓋虛方法定義。
 
-In order for the node to be registered as an editor addon, you must use the ``@tool`` annotation and provide a ``class_name`` for your custom script. For example:
+要讓節點註冊為編輯器擴充，你必須為你的自訂腳本使用 ``@tool`` 注解並提供 ``class_name``\ 。例如：
 
 ::
 
@@ -26,15 +26,15 @@ In order for the node to be registered as an editor addon, you must use the ``@t
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Visual Shader plugins <../tutorials/plugins/editor/visual_shader_plugins>`
+- :doc:`視覺化著色器外掛程式 <../tutorials/plugins/editor/visual_shader_plugins>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -91,8 +91,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_VisualShaderNodeCustom_private_method__get_category:
 
@@ -100,9 +100,9 @@ Method Descriptions
 
 :ref:`String<class_String>` **_get_category**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_category>`
 
-Override this method to define the path to the associated custom node in the Visual Shader Editor's members dialog. The path may look like ``"MyGame/MyFunctions/Noise"``.
+覆蓋這個方法可以定義 Visual Shader 編輯器的成員對話方塊中關聯的自訂節點的路徑。路徑類似於 ``"MyGame/MyFunctions/Noise"``\ 。
 
-Defining this method is **optional**. If not overridden, the node will be filed under the "Addons" category.
+定義這個方法是\ **可選**\ 的。不覆蓋時，該節點會被歸在“Addons”分類下。
 
 .. rst-class:: classref-item-separator
 
@@ -134,9 +134,9 @@ Defining this method is **required**.
 
 :ref:`int<class_int>` **_get_default_input_port**\ (\ type\: :ref:`PortType<enum_VisualShaderNode_PortType>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_default_input_port>`
 
-Override this method to define the input port which should be connected by default when this node is created as a result of dragging a connection from an existing node to the empty space on the graph.
+覆蓋此方法來定義視覺化著色器編輯器的成員對話方塊和圖中的相關自訂節點的名稱。
 
-Defining this method is **optional**. If not overridden, the connection will be created to the first valid port.
+定義這個方法是\ **可選的**\ ，但推薦使用。如果不覆蓋，節點將被命名為 "Unnamed"。
 
 .. rst-class:: classref-item-separator
 
@@ -148,9 +148,9 @@ Defining this method is **optional**. If not overridden, the connection will be 
 
 :ref:`String<class_String>` **_get_description**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_description>`
 
-Override this method to define the description of the associated custom node in the Visual Shader Editor's members dialog.
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -198,9 +198,9 @@ Defining this method is **optional**.
 
 :ref:`int<class_int>` **_get_input_port_count**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_input_port_count>`
 
-Override this method to define the number of input ports of the associated custom node.
+覆蓋該方法以定義關聯的自訂節點的輸入埠數。
 
-Defining this method is **required**. If not overridden, the node has no input ports.
+定義該方法是\ **必需的**\ 。如果沒有被覆蓋，則該節點沒有輸入埠。
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ Defining this method is **required**. If not overridden, the node has no input p
 
 :ref:`Variant<class_Variant>` **_get_input_port_default_value**\ (\ port\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_input_port_default_value>`
 
-Override this method to define the default value for the specified input port. Prefer use this over :ref:`VisualShaderNode.set_input_port_default_value()<class_VisualShaderNode_method_set_input_port_default_value>`.
+覆蓋該方法以定義關聯的自訂節點的輸入埠數。
 
-Defining this method is **required**. If not overridden, the node has no default values for their input ports.
+定義該方法是\ **必需的**\ 。如果沒有被覆蓋，則該節點沒有輸入埠。
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ Defining this method is **required**. If not overridden, the node has no default
 
 :ref:`String<class_String>` **_get_input_port_name**\ (\ port\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_input_port_name>`
 
-Override this method to define the names of input ports of the associated custom node. The names are used both for the input slots in the editor and as identifiers in the shader code, and are passed in the ``input_vars`` array in :ref:`_get_code()<class_VisualShaderNodeCustom_private_method__get_code>`.
+覆蓋此方法來定義相關自訂節點的輸入埠的名稱。這些名稱既用於編輯器中的輸入槽，也作為著色器程式碼中的識別字，並在\ :ref:`_get_code()<class_VisualShaderNodeCustom_private_method__get_code>`\ 中的\ ``input_vars``\ 陣列中傳遞。
 
-Defining this method is **optional**, but recommended. If not overridden, input ports are named as ``"in" + str(port)``.
+定義這個方法是\ **可選的**\ ，但推薦使用。如果沒有被覆蓋，輸入埠被命名為\ ``"in"+str(port)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -254,9 +254,9 @@ Defining this method is **optional**, but recommended. If not overridden, input 
 
 :ref:`String<class_String>` **_get_name**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_name>`
 
-Override this method to define the name of the associated custom node in the Visual Shader Editor's members dialog and graph.
+覆蓋此方法來定義視覺化著色器編輯器的成員對話方塊和圖中的相關自訂節點的名稱。
 
-Defining this method is **optional**, but recommended. If not overridden, the node will be named as "Unnamed".
+定義這個方法是\ **可選的**\ ，但推薦使用。如果不覆蓋，節點將被命名為 "Unnamed"。
 
 .. rst-class:: classref-item-separator
 
@@ -268,9 +268,9 @@ Defining this method is **optional**, but recommended. If not overridden, the no
 
 :ref:`int<class_int>` **_get_output_port_count**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_output_port_count>`
 
-Override this method to define the number of output ports of the associated custom node.
+覆蓋該方法以定義關聯的自訂節點的輸出埠數。
 
-Defining this method is **required**. If not overridden, the node has no output ports.
+定義該方法是\ **必需的**\ 。如果沒有被覆蓋，則該節點沒有輸出埠。
 
 .. rst-class:: classref-item-separator
 
@@ -282,9 +282,9 @@ Defining this method is **required**. If not overridden, the node has no output 
 
 :ref:`String<class_String>` **_get_output_port_name**\ (\ port\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_output_port_name>`
 
-Override this method to define the names of output ports of the associated custom node. The names are used both for the output slots in the editor and as identifiers in the shader code, and are passed in the ``output_vars`` array in :ref:`_get_code()<class_VisualShaderNodeCustom_private_method__get_code>`.
+覆蓋此方法來定義相關自訂節點的輸出埠的名稱。這些名字既用於編輯器中的輸出槽，也作為著色器程式碼中的識別字，並在\ :ref:`_get_code()<class_VisualShaderNodeCustom_private_method__get_code>`\ 中的\ ``output_vars``\ 陣列中傳遞。
 
-Defining this method is **optional**, but recommended. If not overridden, output ports are named as ``"out" + str(port)``.
+定義這個方法是\ **可選的**\ ，但推薦使用。如果沒有被覆蓋，輸出埠被命名為\ ``"out" + str(port)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -310,9 +310,9 @@ Defining this method is **optional**, but recommended. If not overridden, output
 
 :ref:`int<class_int>` **_get_property_count**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_count>`
 
-Override this method to define the number of the properties.
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -324,9 +324,9 @@ Defining this method is **optional**.
 
 :ref:`int<class_int>` **_get_property_default_index**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_default_index>`
 
-Override this method to define the default index of the property of the associated custom node.
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +338,9 @@ Defining this method is **optional**.
 
 :ref:`String<class_String>` **_get_property_name**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_name>`
 
-Override this method to define the names of the property of the associated custom node.
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -352,9 +352,9 @@ Defining this method is **optional**.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_property_options**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_property_options>`
 
-Override this method to define the options inside the drop-down list property of the associated custom node.
+覆蓋這個方法可以定義視覺化著色器編輯器的成員對話方塊中的相關自訂節點的描述。
 
-Defining this method is **optional**.
+定義這個方法是\ **可選**\ 的。
 
 .. rst-class:: classref-item-separator
 
@@ -366,9 +366,9 @@ Defining this method is **optional**.
 
 :ref:`PortType<enum_VisualShaderNode_PortType>` **_get_return_icon_type**\ (\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_return_icon_type>`
 
-Override this method to define the return icon of the associated custom node in the Visual Shader Editor's members dialog.
+覆蓋此方法來定義視覺化著色器編輯器的成員對話方塊中相關自訂節點的返回圖示。
 
-Defining this method is **optional**. If not overridden, no return icon is shown.
+定義這個方法是\ **可選的**\ 。如果不覆蓋，就不會顯示返回圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -408,14 +408,14 @@ Defining this method is **optional**. If not overridden, it's ``false``, which i
 
 :ref:`int<class_int>` **get_option_index**\ (\ option\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_VisualShaderNodeCustom_method_get_option_index>`
 
-Returns the selected index of the drop-down list option within a graph. You may use this function to define the specific behavior in the :ref:`_get_code()<class_VisualShaderNodeCustom_private_method__get_code>` or :ref:`_get_global_code()<class_VisualShaderNodeCustom_private_method__get_global_code>`.
+傳回圖形中下拉列表選項的選定索引。您可以使用此函式在 :ref:`_get_code()<class_VisualShaderNodeCustom_private_method__get_code>` 或 :ref:`_get_global_code()<class_VisualShaderNodeCustom_private_method__get_global_code>` 中定義特定行為。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

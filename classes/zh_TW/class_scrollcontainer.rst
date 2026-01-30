@@ -5,30 +5,30 @@
 ScrollContainer
 ===============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorInspector<class_EditorInspector>`
+**被繼承：** :ref:`EditorInspector<class_EditorInspector>`
 
-A container used to provide scrollbars to a child control when needed.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A container used to provide a child control with scrollbars when needed. Scrollbars will automatically be drawn at the right (for vertical) or bottom (for horizontal) and will enable dragging to move the viewable Control (and its children) within the ScrollContainer. Scrollbars will also automatically resize the grabber based on the :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` of the Control relative to the ScrollContainer.
+需要時能夠為子控制項提供捲軸的容器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using Containers <../tutorials/ui/gui_containers>`
+用於在需要時為子控制項提供捲軸的容器。捲軸會自動繪製在右側（垂直捲動條）或底部（水平捲軸），拖動捲軸能夠移動 ScrollContainer 中的可見 Control（及其子項）。捲軸會根據該 Control 的 :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` 相對於 ScrollContainer 的大小自動調整抓取器的大小。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -107,8 +107,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_ScrollContainer_signal_scroll_ended:
 
@@ -116,9 +116,9 @@ Signals
 
 **scroll_ended**\ (\ ) :ref:`🔗<class_ScrollContainer_signal_scroll_ended>`
 
-Emitted when scrolling stops when dragging the scrollable area *with a touch event*. This signal is *not* emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
+使用觸控事件\ *拖曳可滾動區域*\ 時滾動停止時發出。拖曳滾動條時\ *不會*\ 發出此訊號，使用滑鼠滾輪滾動或使用鍵盤/遊戲手把事件滾動。
 
-\ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is enabled.
+\ **注意：**\ 此訊號僅在啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 時在 Android 或 iOS 或桌面/Web 平台上發出。
 
 .. rst-class:: classref-item-separator
 
@@ -130,9 +130,9 @@ Emitted when scrolling stops when dragging the scrollable area *with a touch eve
 
 **scroll_started**\ (\ ) :ref:`🔗<class_ScrollContainer_signal_scroll_started>`
 
-Emitted when scrolling starts when dragging the scrollable area w\ *ith a touch event*. This signal is *not* emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
+透過觸控事件拖曳可捲動區域*\ 時開始捲動時發出。透過拖曳捲動區域*\ 進行捲動時不會發出此訊號捲軸，使用滑鼠滾輪滾動或使用鍵盤/遊戲手把事件滾動。
 
-\ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is enabled.
+\ **注意：**\ 此訊號僅在啟用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 時在 Android 或 iOS 或桌面/Web 平台上發出。
 
 .. rst-class:: classref-section-separator
 
@@ -140,8 +140,8 @@ Emitted when scrolling starts when dragging the scrollable area w\ *ith a touch 
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_ScrollContainer_ScrollMode:
 
@@ -155,7 +155,7 @@ enum **ScrollMode**: :ref:`🔗<enum_ScrollContainer_ScrollMode>`
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_DISABLED** = ``0``
 
-Scrolling disabled, scrollbar will be invisible.
+禁用滾動，捲軸不可見。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_AUTO:
 
@@ -163,7 +163,7 @@ Scrolling disabled, scrollbar will be invisible.
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_AUTO** = ``1``
 
-Scrolling enabled, scrollbar will be visible only if necessary, i.e. container's content is bigger than the container.
+啟用滾動，捲軸僅在需要時可見，即容器的內容比容器大時。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_SHOW_ALWAYS:
 
@@ -171,7 +171,7 @@ Scrolling enabled, scrollbar will be visible only if necessary, i.e. container's
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_SHOW_ALWAYS** = ``2``
 
-Scrolling enabled, scrollbar will be always visible.
+啟用滾動，捲軸始終可見。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_SHOW_NEVER:
 
@@ -179,7 +179,7 @@ Scrolling enabled, scrollbar will be always visible.
 
 :ref:`ScrollMode<enum_ScrollContainer_ScrollMode>` **SCROLL_MODE_SHOW_NEVER** = ``3``
 
-Scrolling enabled, scrollbar will be hidden.
+啟用滾動，捲軸隱藏。
 
 .. _class_ScrollContainer_constant_SCROLL_MODE_RESERVE:
 
@@ -237,8 +237,8 @@ Scroll hints will be shown at the bottom (if horizontal), or the right (if horiz
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ScrollContainer_property_draw_focus_border:
 
@@ -268,7 +268,7 @@ If ``true``, :ref:`focus<class_ScrollContainer_theme_style_focus>` is drawn when
 - |void| **set_follow_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_following_focus**\ (\ )
 
-If ``true``, the ScrollContainer will automatically scroll to focused children (including indirect children) to make sure they are fully visible.
+如果為 ``true``\ ，則 ScrollContainer 將自動滾動到獲得焦點的子項（包括間接子項）以確保它們完全可見。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Controls whether horizontal scrollbar can be used and when it should be visible.
 - |void| **set_deadzone**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_deadzone**\ (\ )
 
-Deadzone for touch scrolling. Lower deadzone makes the scrolling more sensitive.
+觸摸滾動的死區。較低的死區使滾動更加敏感。
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +338,9 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_h_scroll**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_h_scroll**\ (\ )
 
-The current horizontal scroll value.
+目前的水平滾動值。
 
-\ **Note:** If you are setting this value in the :ref:`Node._ready()<class_Node_private_method__ready>` function or earlier, it needs to be wrapped with :ref:`Object.set_deferred()<class_Object_method_set_deferred>`, since scroll bar's :ref:`Range.max_value<class_Range_property_max_value>` is not initialized yet.
+\ **注意：**\ 如果在 :ref:`Node._ready()<class_Node_private_method__ready>` 函式或之前設定該值，則需要用 :ref:`Object.set_deferred()<class_Object_method_set_deferred>` 包裹，因為捲軸的 :ref:`Range.max_value<class_Range_property_max_value>` 此時尚未初始化。
 
 ::
 
@@ -362,7 +362,7 @@ The current horizontal scroll value.
 - |void| **set_horizontal_custom_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_horizontal_custom_step**\ (\ )
 
-Overrides the :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>` used when clicking the internal scroll bar's horizontal increment and decrement buttons or when using arrow keys when the :ref:`ScrollBar<class_ScrollBar>` is focused.
+覆蓋點擊內部捲軸的水平增減按鈕或 :ref:`ScrollBar<class_ScrollBar>` 處於聚焦狀態下使用方向鍵時使用的 :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -379,9 +379,9 @@ Overrides the :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`
 - |void| **set_v_scroll**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_v_scroll**\ (\ )
 
-The current vertical scroll value.
+目前的垂直捲動值。
 
-\ **Note:** Setting it early needs to be deferred, just like in :ref:`scroll_horizontal<class_ScrollContainer_property_scroll_horizontal>`.
+\ **注意：**\ 與 :ref:`scroll_horizontal<class_ScrollContainer_property_scroll_horizontal>` 一樣，最初設定時需要進行延遲。
 
 ::
 
@@ -403,7 +403,7 @@ The current vertical scroll value.
 - |void| **set_vertical_custom_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vertical_custom_step**\ (\ )
 
-Overrides the :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>` used when clicking the internal scroll bar's vertical increment and decrement buttons or when using arrow keys when the :ref:`ScrollBar<class_ScrollBar>` is focused.
+覆蓋點擊內部捲軸的垂直增減按鈕或 :ref:`ScrollBar<class_ScrollBar>` 處於聚焦狀態下使用方向鍵時使用的 :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -445,8 +445,8 @@ Controls whether vertical scrollbar can be used and when it should be visible.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ScrollContainer_method_ensure_control_visible:
 
@@ -454,9 +454,9 @@ Method Descriptions
 
 |void| **ensure_control_visible**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_ScrollContainer_method_ensure_control_visible>`
 
-Ensures the given ``control`` is visible (must be a direct or indirect child of the ScrollContainer). Used by :ref:`follow_focus<class_ScrollContainer_property_follow_focus>`.
+確保給定的 ``control`` 控制項可見（必須是 ScrollContainer 的直接或間接子節點）。會被 :ref:`follow_focus<class_ScrollContainer_property_follow_focus>` 使用。
 
-\ **Note:** This will not work on a node that was just added during the same frame. If you want to scroll to a newly added child, you must wait until the next frame using :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>`:
+\ **注意：**\ 這不適用於在同一影格內剛剛新增的節點。如果想滾動到一個新新增的子節點，就必須使用 :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` 等待至下一影格：
 
 ::
 
@@ -474,9 +474,9 @@ Ensures the given ``control`` is visible (must be a direct or indirect child of 
 
 :ref:`HScrollBar<class_HScrollBar>` **get_h_scroll_bar**\ (\ ) :ref:`🔗<class_ScrollContainer_method_get_h_scroll_bar>`
 
-Returns the horizontal scrollbar :ref:`HScrollBar<class_HScrollBar>` of this **ScrollContainer**.
+返回該 **ScrollContainer** 的水平捲軸 :ref:`HScrollBar<class_HScrollBar>`\ 。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use :ref:`horizontal_scroll_mode<class_ScrollContainer_property_horizontal_scroll_mode>`.
+\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想禁用或隱藏捲軸，可以使用 :ref:`horizontal_scroll_mode<class_ScrollContainer_property_horizontal_scroll_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -488,9 +488,9 @@ Returns the horizontal scrollbar :ref:`HScrollBar<class_HScrollBar>` of this **S
 
 :ref:`VScrollBar<class_VScrollBar>` **get_v_scroll_bar**\ (\ ) :ref:`🔗<class_ScrollContainer_method_get_v_scroll_bar>`
 
-Returns the vertical scrollbar :ref:`VScrollBar<class_VScrollBar>` of this **ScrollContainer**.
+返回該 **ScrollContainer** 的垂直捲動條 :ref:`VScrollBar<class_VScrollBar>`\ 。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to disable or hide a scrollbar, you can use :ref:`vertical_scroll_mode<class_ScrollContainer_property_vertical_scroll_mode>`.
+\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想禁用或隱藏捲軸，可以使用 :ref:`vertical_scroll_mode<class_ScrollContainer_property_vertical_scroll_mode>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -498,8 +498,8 @@ Returns the vertical scrollbar :ref:`VScrollBar<class_VScrollBar>` of this **Scr
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_ScrollContainer_theme_color_scroll_hint_horizontal_color:
 
@@ -591,14 +591,14 @@ The focus border :ref:`StyleBox<class_StyleBox>` of the **ScrollContainer**. Onl
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_ScrollContainer_theme_style_panel>`
 
-The background :ref:`StyleBox<class_StyleBox>` of the **ScrollContainer**.
+**ScrollContainer** 的背景 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

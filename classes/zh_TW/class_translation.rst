@@ -5,16 +5,16 @@
 Translation
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`OptimizedTranslation<class_OptimizedTranslation>`
+**被繼承：** :ref:`OptimizedTranslation<class_OptimizedTranslation>`
 
-A language translation that maps a collection of strings to their individual translations.
+語言翻譯，能夠將一組字串對應到對應的翻譯。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
 
@@ -22,19 +22,19 @@ A **Translation** consists of messages. A message is identified by its context a
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Internationalizing games <../tutorials/i18n/internationalizing_games>`
+- :doc:`將遊戲國際化 <../tutorials/i18n/internationalizing_games>`
 
 - :doc:`Localization using gettext <../tutorials/i18n/localization_using_gettext>`
 
-- :doc:`Locales <../tutorials/i18n/locales>`
+- :doc:`區域設定 <../tutorials/i18n/locales>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -81,8 +81,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Translation_property_locale:
 
@@ -95,7 +95,7 @@ Property Descriptions
 - |void| **set_locale**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_locale**\ (\ )
 
-The locale of the translation.
+翻譯的區域設定。
 
 .. rst-class:: classref-item-separator
 
@@ -122,8 +122,8 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Translation_private_method__get_message:
 
@@ -131,7 +131,7 @@ Method Descriptions
 
 :ref:`StringName<class_StringName>` **_get_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_Translation_private_method__get_message>`
 
-Virtual method to override :ref:`get_message()<class_Translation_method_get_message>`.
+覆蓋 :ref:`get_message()<class_Translation_method_get_message>` 的虛方法。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Virtual method to override :ref:`get_message()<class_Translation_method_get_mess
 
 :ref:`StringName<class_StringName>` **_get_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, src_plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_Translation_private_method__get_plural_message>`
 
-Virtual method to override :ref:`get_plural_message()<class_Translation_method_get_plural_message>`.
+覆蓋 :ref:`get_plural_message()<class_Translation_method_get_plural_message>` 的虛方法。
 
 .. rst-class:: classref-item-separator
 
@@ -155,9 +155,9 @@ Virtual method to override :ref:`get_plural_message()<class_Translation_method_g
 
 |void| **add_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_message>`
 
-Adds a message if nonexistent, followed by its translation.
+如果不存在，則新增一條消息，後跟其翻譯。
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+可以使用一個額外的本文，來指定翻譯本文或區分多義詞。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ An additional context could be used to specify the translation context or differ
 
 |void| **erase_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_erase_message>`
 
-Erases a message.
+刪除資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ Erases a message.
 
 :ref:`StringName<class_StringName>` **get_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Translation_method_get_message>`
 
-Returns a message's translation.
+返回資訊的翻譯。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Returns a message's translation.
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_count>`
 
-Returns the number of existing messages.
+返回現有資訊的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -263,12 +263,12 @@ The number ``n`` is the number or quantity of the plural object. It will be used
 
 Returns all the translated strings.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

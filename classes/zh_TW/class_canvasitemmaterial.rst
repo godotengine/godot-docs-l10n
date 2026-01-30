@@ -5,21 +5,21 @@
 CanvasItemMaterial
 ==================
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material for :ref:`CanvasItem<class_CanvasItem>`\ s.
+:ref:`CanvasItem<class_CanvasItem>`\ 的材質。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-**CanvasItemMaterial**\ s provide a means of modifying the textures associated with a CanvasItem. They specialize in describing blend and lighting behaviors for textures. Use a :ref:`ShaderMaterial<class_ShaderMaterial>` to more fully customize a material's interactions with a :ref:`CanvasItem<class_CanvasItem>`.
+**CanvasItemMaterial**\ 提供了一種修改與CanvasItem相關聯的紋理的方法。他們專注於描述紋理的混合和照明行為。使用\ :ref:`ShaderMaterial<class_ShaderMaterial>`\ 可以更全面地自訂材質與\ :ref:`CanvasItem<class_CanvasItem>`\ 的互動。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_CanvasItemMaterial_BlendMode:
 
@@ -59,7 +59,7 @@ enum **BlendMode**: :ref:`🔗<enum_CanvasItemMaterial_BlendMode>`
 
 :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **BLEND_MODE_MIX** = ``0``
 
-Mix blending mode. Colors are assumed to be independent of the alpha (opacity) value.
+混合混合模式。假設顏色與 Alpha 值（不透明度）無關。
 
 .. _class_CanvasItemMaterial_constant_BLEND_MODE_ADD:
 
@@ -67,7 +67,7 @@ Mix blending mode. Colors are assumed to be independent of the alpha (opacity) v
 
 :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **BLEND_MODE_ADD** = ``1``
 
-Additive blending mode.
+新增混合模式。
 
 .. _class_CanvasItemMaterial_constant_BLEND_MODE_SUB:
 
@@ -75,7 +75,7 @@ Additive blending mode.
 
 :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **BLEND_MODE_SUB** = ``2``
 
-Subtractive blending mode.
+減去混合模式。
 
 .. _class_CanvasItemMaterial_constant_BLEND_MODE_MUL:
 
@@ -83,7 +83,7 @@ Subtractive blending mode.
 
 :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **BLEND_MODE_MUL** = ``3``
 
-Multiplicative blending mode.
+正片疊底混合模式。
 
 .. _class_CanvasItemMaterial_constant_BLEND_MODE_PREMULT_ALPHA:
 
@@ -91,7 +91,7 @@ Multiplicative blending mode.
 
 :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **BLEND_MODE_PREMULT_ALPHA** = ``4``
 
-Mix blending mode. Colors are assumed to be premultiplied by the alpha (opacity) value.
+混合混合模式。假定顏色已預先乘以 Alpha 值（不透明度）。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ enum **LightMode**: :ref:`🔗<enum_CanvasItemMaterial_LightMode>`
 
 :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **LIGHT_MODE_NORMAL** = ``0``
 
-Render the material using both light and non-light sensitive material properties.
+使用光敏和非光敏材料屬性算繪材質。
 
 .. _class_CanvasItemMaterial_constant_LIGHT_MODE_UNSHADED:
 
@@ -117,7 +117,7 @@ Render the material using both light and non-light sensitive material properties
 
 :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **LIGHT_MODE_UNSHADED** = ``1``
 
-Render the material as if there were no light.
+將材質算繪成沒有光的樣子。
 
 .. _class_CanvasItemMaterial_constant_LIGHT_MODE_LIGHT_ONLY:
 
@@ -125,7 +125,7 @@ Render the material as if there were no light.
 
 :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **LIGHT_MODE_LIGHT_ONLY** = ``2``
 
-Render the material as if there were only light.
+將材質算繪成只有光的樣子。
 
 .. rst-class:: classref-section-separator
 
@@ -133,8 +133,8 @@ Render the material as if there were only light.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CanvasItemMaterial_property_blend_mode:
 
@@ -147,7 +147,7 @@ Property Descriptions
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>`\ )
 - :ref:`BlendMode<enum_CanvasItemMaterial_BlendMode>` **get_blend_mode**\ (\ )
 
-The manner in which a material's rendering is applied to underlying textures.
+將材質的算繪套用於基礎紋理的方式。
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ The manner in which a material's rendering is applied to underlying textures.
 - |void| **set_light_mode**\ (\ value\: :ref:`LightMode<enum_CanvasItemMaterial_LightMode>`\ )
 - :ref:`LightMode<enum_CanvasItemMaterial_LightMode>` **get_light_mode**\ (\ )
 
-The manner in which material reacts to lighting.
+材質對照明的反應方式。
 
 .. rst-class:: classref-item-separator
 
@@ -181,9 +181,9 @@ The manner in which material reacts to lighting.
 - |void| **set_particles_anim_h_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_h_frames**\ (\ )
 
-The number of columns in the spritesheet assigned as :ref:`Texture2D<class_Texture2D>` for a :ref:`GPUParticles2D<class_GPUParticles2D>` or :ref:`CPUParticles2D<class_CPUParticles2D>`.
+:ref:`GPUParticles2D<class_GPUParticles2D>` 或 :ref:`CPUParticles2D<class_CPUParticles2D>` 指定給 :ref:`Texture2D<class_Texture2D>` 的精靈表中擁有的列數。
 
-\ **Note:** This property is only used and visible in the editor if :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` is ``true``.
+\ **注意：**\ 該屬性只有在 :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` 為 ``true`` 時，才會在編輯器中被使用和可見。
 
 .. rst-class:: classref-item-separator
 
@@ -200,9 +200,9 @@ The number of columns in the spritesheet assigned as :ref:`Texture2D<class_Textu
 - |void| **set_particles_anim_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particles_anim_loop**\ (\ )
 
-If ``true``, the particles animation will loop.
+如果為 ``true``\ ，粒子動畫將迴圈播放。
 
-\ **Note:** This property is only used and visible in the editor if :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` is ``true``.
+\ **注意：**\ 該屬性只有在 :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>`\ 為 ``true`` 時，才會在編輯器中被使用和可見。
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ If ``true``, the particles animation will loop.
 - |void| **set_particles_anim_v_frames**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_particles_anim_v_frames**\ (\ )
 
-The number of rows in the spritesheet assigned as :ref:`Texture2D<class_Texture2D>` for a :ref:`GPUParticles2D<class_GPUParticles2D>` or :ref:`CPUParticles2D<class_CPUParticles2D>`.
+:ref:`GPUParticles2D<class_GPUParticles2D>` 或 :ref:`CPUParticles2D<class_CPUParticles2D>` 指定給 :ref:`Texture2D<class_Texture2D>` 的精靈表中擁有的行數。
 
-\ **Note:** This property is only used and visible in the editor if :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` is ``true``.
+\ **注意：**\ 該屬性只有在 :ref:`particles_animation<class_CanvasItemMaterial_property_particles_animation>` 為 ``true`` 時，才會在編輯器中被使用和可見。
 
 .. rst-class:: classref-item-separator
 
@@ -238,16 +238,16 @@ The number of rows in the spritesheet assigned as :ref:`Texture2D<class_Texture2
 - |void| **set_particles_animation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_particles_animation**\ (\ )
 
-If ``true``, enable spritesheet-based animation features when assigned to :ref:`GPUParticles2D<class_GPUParticles2D>` and :ref:`CPUParticles2D<class_CPUParticles2D>` nodes. The :ref:`ParticleProcessMaterial.anim_speed_max<class_ParticleProcessMaterial_property_anim_speed_max>` or :ref:`CPUParticles2D.anim_speed_max<class_CPUParticles2D_property_anim_speed_max>` should also be set to a positive value for the animation to play.
+如果 ``true`` ，在分配給 :ref:`GPUParticles2D<class_GPUParticles2D>` 和 :ref:`CPUParticles2D<class_CPUParticles2D>` 節點時，啟用基於精靈表的動畫功能。\ :ref:`ParticleProcessMaterial.anim_speed_max<class_ParticleProcessMaterial_property_anim_speed_max>` 或 :ref:`CPUParticles2D.anim_speed_max<class_CPUParticles2D_property_anim_speed_max>` 也應該設定為正值，才能播放動畫。
 
-This property (and other ``particles_anim_*`` properties that depend on it) has no effect on other types of nodes.
+這個屬性（以及其他依賴它的 ``particles_anim_*`` 屬性）對其他型別的節點沒有影響。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

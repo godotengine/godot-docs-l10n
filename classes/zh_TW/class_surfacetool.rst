@@ -5,16 +5,16 @@
 SurfaceTool
 ===========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Helper tool to create geometry.
+建立幾何圖形的輔助工具。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-The **SurfaceTool** is used to construct a :ref:`Mesh<class_Mesh>` by specifying vertex attributes individually. It can be used to construct a :ref:`Mesh<class_Mesh>` from a script. All properties except indices need to be added before calling :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>`. For example, to add vertex colors and UVs:
+**SurfaceTool** 可用於通過指定單獨的頂點屬性來建構 :ref:`Mesh<class_Mesh>`\ 。可以用來從腳本中構建 :ref:`Mesh<class_Mesh>`\ 。除索引外的所有屬性都需要在呼叫 :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>` 之前新增。例如，要新增頂點顏色和 UV：
 
 
 .. tabs::
@@ -37,29 +37,29 @@ The **SurfaceTool** is used to construct a :ref:`Mesh<class_Mesh>` by specifying
 
 
 
-The above **SurfaceTool** now contains one vertex of a triangle which has a UV coordinate and a specified :ref:`Color<class_Color>`. If another vertex were added without calling :ref:`set_uv()<class_SurfaceTool_method_set_uv>` or :ref:`set_color()<class_SurfaceTool_method_set_color>`, then the last values would be used.
+上面的 **SurfaceTool** 現在就包含了三角形中的一個頂點，具有 UV 座標和指定的 :ref:`Color<class_Color>`\ 。如果又新增了一個頂點，而沒有呼叫 :ref:`set_uv()<class_SurfaceTool_method_set_uv>` 或 :ref:`set_color()<class_SurfaceTool_method_set_color>`\ ，則會使用之前的值。
 
-Vertex attributes must be passed **before** calling :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>`. Failure to do so will result in an error when committing the vertex information to a mesh.
+頂點屬性必須在呼叫 :ref:`add_vertex()<class_SurfaceTool_method_add_vertex>` **之前**\ 傳遞。不傳的話，就會在向網格提交頂點資訊時出錯。
 
-Additionally, the attributes used before the first vertex is added determine the format of the mesh. For example, if you only add UVs to the first vertex, you cannot add color to any of the subsequent vertices.
+另外，新增第一個頂點前所使用的屬性會用來確定網格的格式。例如，如果你只為第一個頂點新增了 UV，那麼你就無法為後續的頂點新增顏色。
 
-See also :ref:`ArrayMesh<class_ArrayMesh>`, :ref:`ImmediateMesh<class_ImmediateMesh>` and :ref:`MeshDataTool<class_MeshDataTool>` for procedural geometry generation.
+程式式幾何體生成另見 :ref:`ArrayMesh<class_ArrayMesh>`\ 、\ :ref:`ImmediateMesh<class_ImmediateMesh>` 以及 :ref:`MeshDataTool<class_MeshDataTool>`\ 。
 
-\ **Note:** Godot uses clockwise `winding order <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__ for front faces of triangle primitive modes.
+\ **注意：**\ Godot 中三角形圖元模式的正面使用順時針 `纏繞順序 <https://learnopengl-cn.github.io/04%20Advanced%20OpenGL/04%20Face%20culling/>`__\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Using the SurfaceTool <../tutorials/3d/procedural_geometry/surfacetool>`
+- :doc:`使用 SurfaceTool <../tutorials/3d/procedural_geometry/surfacetool>`
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -138,8 +138,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_SurfaceTool_CustomFormat:
 
@@ -153,7 +153,7 @@ enum **CustomFormat**: :ref:`🔗<enum_SurfaceTool_CustomFormat>`
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA8_UNORM** = ``0``
 
-Limits range of data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` to unsigned normalized 0 to 1 stored in 8 bits per channel. See :ref:`Mesh.ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料限制到無符號正規化的 0 到 1 範圍內，每個通道儲存 8 個比特位。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA8_UNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_UNORM>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RGBA8_SNORM:
 
@@ -161,7 +161,7 @@ Limits range of data passed to :ref:`set_custom()<class_SurfaceTool_method_set_c
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA8_SNORM** = ``1``
 
-Limits range of data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` to signed normalized -1 to 1 stored in 8 bits per channel. See :ref:`Mesh.ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料限制到帶符號正規化的 -1 到 1 範圍內，每個通道儲存 8 個比特位。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA8_SNORM<class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RG_HALF:
 
@@ -169,7 +169,7 @@ Limits range of data passed to :ref:`set_custom()<class_SurfaceTool_method_set_c
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RG_HALF** = ``2``
 
-Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` as half precision floats, and uses only red and green color channels. See :ref:`Mesh.ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料儲存為半精度浮點數，只使用紅色和綠色通道。見 :ref:`Mesh.ARRAY_CUSTOM_RG_HALF<class_Mesh_constant_ARRAY_CUSTOM_RG_HALF>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RGBA_HALF:
 
@@ -177,7 +177,7 @@ Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` a
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA_HALF** = ``3``
 
-Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` as half precision floats and uses all color channels. See :ref:`Mesh.ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料儲存為半精度浮點數，使用所有顏色通道。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA_HALF<class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_R_FLOAT:
 
@@ -185,7 +185,7 @@ Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` a
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_R_FLOAT** = ``4``
 
-Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` as full precision floats, and uses only red color channel. See :ref:`Mesh.ARRAY_CUSTOM_R_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_R_FLOAT>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料儲存為全精度浮點數，只使用紅色通道。見 :ref:`Mesh.ARRAY_CUSTOM_R_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_R_FLOAT>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RG_FLOAT:
 
@@ -193,7 +193,7 @@ Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` a
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RG_FLOAT** = ``5``
 
-Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` as full precision floats, and uses only red and green color channels. See :ref:`Mesh.ARRAY_CUSTOM_RG_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RG_FLOAT>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料儲存為全精度浮點數，只使用紅色和綠色通道。見 :ref:`Mesh.ARRAY_CUSTOM_RG_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RG_FLOAT>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RGB_FLOAT:
 
@@ -201,7 +201,7 @@ Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` a
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGB_FLOAT** = ``6``
 
-Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` as full precision floats, and uses only red, green and blue color channels. See :ref:`Mesh.ARRAY_CUSTOM_RGB_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RGB_FLOAT>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料儲存為全精度浮點數，只使用紅色、綠色和藍色通道。見 :ref:`Mesh.ARRAY_CUSTOM_RGB_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RGB_FLOAT>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_RGBA_FLOAT:
 
@@ -209,7 +209,7 @@ Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` a
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_RGBA_FLOAT** = ``7``
 
-Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` as full precision floats, and uses all color channels. See :ref:`Mesh.ARRAY_CUSTOM_RGBA_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RGBA_FLOAT>`.
+將傳遞給 :ref:`set_custom()<class_SurfaceTool_method_set_custom>` 的資料儲存為全精度浮點數，使用所有顏色通道。見 :ref:`Mesh.ARRAY_CUSTOM_RGBA_FLOAT<class_Mesh_constant_ARRAY_CUSTOM_RGBA_FLOAT>`\ 。
 
 .. _class_SurfaceTool_constant_CUSTOM_MAX:
 
@@ -217,7 +217,7 @@ Stores data passed to :ref:`set_custom()<class_SurfaceTool_method_set_custom>` a
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **CUSTOM_MAX** = ``8``
 
-Used to indicate a disabled custom channel.
+用於表示已禁用的自訂通道。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ enum **SkinWeightCount**: :ref:`🔗<enum_SurfaceTool_SkinWeightCount>`
 
 :ref:`SkinWeightCount<enum_SurfaceTool_SkinWeightCount>` **SKIN_4_WEIGHTS** = ``0``
 
-Each individual vertex can be influenced by only 4 bone weights.
+每個單獨的頂點只能受到 4 個骨骼權重的影響。
 
 .. _class_SurfaceTool_constant_SKIN_8_WEIGHTS:
 
@@ -243,7 +243,7 @@ Each individual vertex can be influenced by only 4 bone weights.
 
 :ref:`SkinWeightCount<enum_SurfaceTool_SkinWeightCount>` **SKIN_8_WEIGHTS** = ``1``
 
-Each individual vertex can be influenced by up to 8 bone weights.
+每個單獨的頂點最多能夠受到 8 個骨骼權重的影響。
 
 .. rst-class:: classref-section-separator
 
@@ -251,8 +251,8 @@ Each individual vertex can be influenced by up to 8 bone weights.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SurfaceTool_method_add_index:
 
@@ -260,7 +260,7 @@ Method Descriptions
 
 |void| **add_index**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SurfaceTool_method_add_index>`
 
-Adds a vertex to index array if you are using indexed vertices. Does not need to be called before adding vertices.
+如果你在使用頂點索引，則向索引陣列中新增一個頂點。不需要在新增頂點前呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -272,9 +272,9 @@ Adds a vertex to index array if you are using indexed vertices. Does not need to
 
 |void| **add_triangle_fan**\ (\ vertices\: :ref:`PackedVector3Array<class_PackedVector3Array>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), colors\: :ref:`PackedColorArray<class_PackedColorArray>` = PackedColorArray(), uv2s\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), normals\: :ref:`PackedVector3Array<class_PackedVector3Array>` = PackedVector3Array(), tangents\: :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\] = []\ ) :ref:`🔗<class_SurfaceTool_method_add_triangle_fan>`
 
-Inserts a triangle fan made of array data into :ref:`Mesh<class_Mesh>` being constructed.
+將一個由陣列資料組成的三角扇插入正在建構的 :ref:`Mesh<class_Mesh>` 中。
 
-Requires the primitive type be set to :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
+需要將圖元型別設定為 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ Requires the primitive type be set to :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_
 
 |void| **add_vertex**\ (\ vertex\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SurfaceTool_method_add_vertex>`
 
-Specifies the position of current vertex. Should be called after specifying other vertex properties (e.g. Color, UV).
+指定目前頂點的位置。應在指定其他頂點屬性（例如顏色、UV）後呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ Specifies the position of current vertex. Should be called after specifying othe
 
 |void| **append_from**\ (\ existing\: :ref:`Mesh<class_Mesh>`, surface\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_SurfaceTool_method_append_from>`
 
-Append vertices from a given :ref:`Mesh<class_Mesh>` surface onto the current vertex array with specified :ref:`Transform3D<class_Transform3D>`.
+使用指定的 :ref:`Transform3D<class_Transform3D>` 將來自給定 :ref:`Mesh<class_Mesh>` 表面的頂點追加到目前的頂點陣列中。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ Append vertices from a given :ref:`Mesh<class_Mesh>` surface onto the current ve
 
 |void| **begin**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`\ ) :ref:`🔗<class_SurfaceTool_method_begin>`
 
-Called before adding any vertices. Takes the primitive type as an argument (e.g. :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`).
+在新增任何頂點之前被呼叫。接收圖元型別作為參數（例如：\ :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Called before adding any vertices. Takes the primitive type as an argument (e.g.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_SurfaceTool_method_clear>`
 
-Clear all information passed into the surface tool so far.
+清除到目前為止傳入表面工具(surface tool)的所有資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ Commits the data to the same format used by :ref:`ArrayMesh.add_surface_from_arr
 
 |void| **create_from**\ (\ existing\: :ref:`Mesh<class_Mesh>`, surface\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SurfaceTool_method_create_from>`
 
-Creates a vertex array from an existing :ref:`Mesh<class_Mesh>`.
+從現有的網格 :ref:`Mesh<class_Mesh>` 建立一個頂點陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ Creates this SurfaceTool from existing vertex arrays such as returned by :ref:`c
 
 |void| **create_from_blend_shape**\ (\ existing\: :ref:`Mesh<class_Mesh>`, surface\: :ref:`int<class_int>`, blend_shape\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SurfaceTool_method_create_from_blend_shape>`
 
-Creates a vertex array from the specified blend shape of an existing :ref:`Mesh<class_Mesh>`. This can be used to extract a specific pose from a blend shape.
+從現有 :ref:`Mesh<class_Mesh>` 的指定混合形狀建立一個頂點陣列。這可用於從混合形狀中提取特定姿勢。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Creates a vertex array from the specified blend shape of an existing :ref:`Mesh<
 
 |void| **deindex**\ (\ ) :ref:`🔗<class_SurfaceTool_method_deindex>`
 
-Removes the index array by expanding the vertex array.
+通過擴充頂點陣列移除索引陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Removes the index array by expanding the vertex array.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **generate_lod**\ (\ nd_threshold\: :ref:`float<class_float>`, target_index_count\: :ref:`int<class_int>` = 3\ ) :ref:`🔗<class_SurfaceTool_method_generate_lod>`
 
-**Deprecated:** This method is unused internally, as it does not preserve normals or UVs. Consider using :ref:`ImporterMesh.generate_lods()<class_ImporterMesh_method_generate_lods>` instead.
+**已棄用：** This method is unused internally, as it does not preserve normals or UVs. Consider using :ref:`ImporterMesh.generate_lods()<class_ImporterMesh_method_generate_lods>` instead.
 
 Generates an LOD for a given ``nd_threshold`` in linear units (square root of quadric error metric), using at most ``target_index_count`` indices.
 
@@ -450,7 +450,7 @@ Generates a tangent vector for each vertex. Requires that each vertex already ha
 
 :ref:`AABB<class_AABB>` **get_aabb**\ (\ ) |const| :ref:`🔗<class_SurfaceTool_method_get_aabb>`
 
-Returns the axis-aligned bounding box of the vertex positions.
+返回頂點位置的軸對齊邊界框。
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Returns the axis-aligned bounding box of the vertex positions.
 
 :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>` **get_custom_format**\ (\ channel_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SurfaceTool_method_get_custom_format>`
 
-Returns the format for custom ``channel_index`` (currently up to 4). Returns :ref:`CUSTOM_MAX<class_SurfaceTool_constant_CUSTOM_MAX>` if this custom channel is unused.
+返回索引為 ``channel_index`` 的自訂通道的格式（索引最多為 4）。如果這個自訂通道尚未使用，則返回 :ref:`CUSTOM_MAX<class_SurfaceTool_constant_CUSTOM_MAX>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ Returns the format for custom ``channel_index`` (currently up to 4). Returns :re
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **get_primitive_type**\ (\ ) |const| :ref:`🔗<class_SurfaceTool_method_get_primitive_type>`
 
-Returns the type of mesh geometry, such as :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
+返回網格幾何體的型別，例如 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -486,11 +486,11 @@ Returns the type of mesh geometry, such as :ref:`Mesh.PRIMITIVE_TRIANGLES<class_
 
 :ref:`SkinWeightCount<enum_SurfaceTool_SkinWeightCount>` **get_skin_weight_count**\ (\ ) |const| :ref:`🔗<class_SurfaceTool_method_get_skin_weight_count>`
 
-By default, returns :ref:`SKIN_4_WEIGHTS<class_SurfaceTool_constant_SKIN_4_WEIGHTS>` to indicate only 4 bone influences per vertex are used.
+預設情況下，返回 :ref:`SKIN_4_WEIGHTS<class_SurfaceTool_constant_SKIN_4_WEIGHTS>` 以指示每個頂點僅使用 4 個骨骼影響。
 
-Returns :ref:`SKIN_8_WEIGHTS<class_SurfaceTool_constant_SKIN_8_WEIGHTS>` if up to 8 influences are used.
+如果使用最多 8 個影響，則返回 :ref:`SKIN_8_WEIGHTS<class_SurfaceTool_constant_SKIN_8_WEIGHTS>`\ 。
 
-\ **Note:** This function returns an enum, not the exact number of weights.
+\ **注意：**\ 該函式返回一個列舉，而不是確切的權重數量。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Returns :ref:`SKIN_8_WEIGHTS<class_SurfaceTool_constant_SKIN_8_WEIGHTS>` if up t
 
 |void| **index**\ (\ ) :ref:`🔗<class_SurfaceTool_method_index>`
 
-Shrinks the vertex array by creating an index array. This can improve performance by avoiding vertex reuse.
+通過建立索引陣列來縮小頂點陣列。這可以避免頂點重複而提高性能。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Shrinks the vertex array by creating an index array. This can improve performanc
 
 |void| **optimize_indices_for_cache**\ (\ ) :ref:`🔗<class_SurfaceTool_method_optimize_indices_for_cache>`
 
-Optimizes triangle sorting for performance. Requires that :ref:`get_primitive_type()<class_SurfaceTool_method_get_primitive_type>` is :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
+優化三角形排序以提高性能。要求 :ref:`get_primitive_type()<class_SurfaceTool_method_get_primitive_type>` 為 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Optimizes triangle sorting for performance. Requires that :ref:`get_primitive_ty
 
 |void| **set_bones**\ (\ bones\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_SurfaceTool_method_set_bones>`
 
-Specifies an array of bones to use for the *next* vertex. ``bones`` must contain 4 integers.
+指定用於\ *下一個*\ 頂點的骨骼陣列。\ ``bones`` 必須包含 4 個整數。
 
 .. rst-class:: classref-item-separator
 
@@ -538,9 +538,9 @@ Specifies an array of bones to use for the *next* vertex. ``bones`` must contain
 
 |void| **set_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_SurfaceTool_method_set_color>`
 
-Specifies a :ref:`Color<class_Color>` to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+指定\ *下一個*\ 頂點使用的 :ref:`Color<class_Color>`\ 。如果每個頂點都需要設定此資訊，而你沒有成功為第一個頂點提交，則可能根本不會使用此資訊。
 
-\ **Note:** The material must have :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` enabled for the vertex color to be visible.
+\ **注意：**\ 材質必須啟用 :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` 才能使頂點顏色可見。
 
 .. rst-class:: classref-item-separator
 
@@ -552,9 +552,9 @@ Specifies a :ref:`Color<class_Color>` to use for the *next* vertex. If every ver
 
 |void| **set_custom**\ (\ channel_index\: :ref:`int<class_int>`, custom_color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_SurfaceTool_method_set_custom>`
 
-Sets the custom value on this vertex for ``channel_index``.
+設定這個頂點的 ``channel_index`` 通道的自訂值。
 
-\ :ref:`set_custom_format()<class_SurfaceTool_method_set_custom_format>` must be called first for this ``channel_index``. Formats which are not RGBA will ignore other color channels.
+必須先為 ``channel_index`` 通道呼叫 :ref:`set_custom_format()<class_SurfaceTool_method_set_custom_format>`\ 。非 RGBA 格式會忽略其他顏色通道。
 
 .. rst-class:: classref-item-separator
 
@@ -566,9 +566,9 @@ Sets the custom value on this vertex for ``channel_index``.
 
 |void| **set_custom_format**\ (\ channel_index\: :ref:`int<class_int>`, format\: :ref:`CustomFormat<enum_SurfaceTool_CustomFormat>`\ ) :ref:`🔗<class_SurfaceTool_method_set_custom_format>`
 
-Sets the color format for this custom ``channel_index``. Use :ref:`CUSTOM_MAX<class_SurfaceTool_constant_CUSTOM_MAX>` to disable.
+設定索引為 ``channel_index`` 的自訂通道的顏色格式。禁用請使用 :ref:`CUSTOM_MAX<class_SurfaceTool_constant_CUSTOM_MAX>`\ 。
 
-Must be invoked after :ref:`begin()<class_SurfaceTool_method_begin>` and should be set before :ref:`commit()<class_SurfaceTool_method_commit>` or :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>`.
+必須在 :ref:`begin()<class_SurfaceTool_method_begin>` 之後呼叫，應當在 :ref:`commit()<class_SurfaceTool_method_commit>` 或 :ref:`commit_to_arrays()<class_SurfaceTool_method_commit_to_arrays>` 之前設定。
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +580,7 @@ Must be invoked after :ref:`begin()<class_SurfaceTool_method_begin>` and should 
 
 |void| **set_material**\ (\ material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_SurfaceTool_method_set_material>`
 
-Sets :ref:`Material<class_Material>` to be used by the :ref:`Mesh<class_Mesh>` you are constructing.
+設定要由你正在建構的 :ref:`Mesh<class_Mesh>` 使用的 :ref:`Material<class_Material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ Sets :ref:`Material<class_Material>` to be used by the :ref:`Mesh<class_Mesh>` y
 
 |void| **set_normal**\ (\ normal\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SurfaceTool_method_set_normal>`
 
-Specifies a normal to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+指定\ *下一個*\ 頂點所使用的法線。如果每個頂點都需要設定此資訊，而你沒有為第一個頂點提交，則可能根本無法使用此資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -620,9 +620,9 @@ By default, only 4 bone influences are used (:ref:`SKIN_4_WEIGHTS<class_SurfaceT
 
 |void| **set_smooth_group**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SurfaceTool_method_set_smooth_group>`
 
-Specifies the smooth group to use for the *next* vertex. If this is never called, all vertices will have the default smooth group of ``0`` and will be smoothed with adjacent vertices of the same group. To produce a mesh with flat normals, set the smooth group to ``-1``.
+指定用於\ *下一個*\ 頂點的平滑組。如果從未呼叫過，則所有頂點都將具有預設的 ``0`` 平滑組，並將與同一組的相鄰頂點一起平滑。要生成具有平坦法線的網格，請將平滑組設定為 ``-1``\ 。
 
-\ **Note:** This function actually takes a ``uint32_t``, so C# users should use ``uint32.MaxValue`` instead of ``-1`` to produce a mesh with flat normals.
+\ **注意：**\ 這個函式實際接受的是 ``uint32_t``\ ，所以 C# 使用者如果要生成法線平坦的網格，那麼就應該使用 ``uint32.MaxValue`` 而不是 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -648,7 +648,7 @@ Specifies a tangent to use for the *next* vertex. If every vertex needs to have 
 
 |void| **set_uv**\ (\ uv\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_SurfaceTool_method_set_uv>`
 
-Specifies a set of UV coordinates to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+指定\ *下一個*\ 頂點所使用的 UV 座標。如果每個頂點都需要設定此資訊，而你未能為第一個頂點提交此資訊，此資訊可能根本就不會被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Specifies a set of UV coordinates to use for the *next* vertex. If every vertex 
 
 |void| **set_uv2**\ (\ uv2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_SurfaceTool_method_set_uv2>`
 
-Specifies an optional second set of UV coordinates to use for the *next* vertex. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+指定可選的第二組UV座標，用於\ *next*\ 頂點。如果每個頂點都需要設定這個資訊，而你沒有為第一個頂點提交這個資訊，此資訊可能根本就不會被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -672,14 +672,14 @@ Specifies an optional second set of UV coordinates to use for the *next* vertex.
 
 |void| **set_weights**\ (\ weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_SurfaceTool_method_set_weights>`
 
-Specifies weight values to use for the *next* vertex. ``weights`` must contain 4 values. If every vertex needs to have this information set and you fail to submit it for the first vertex, this information may not be used at all.
+指定用於\ *下一個*\ 頂點的權重值。\ ``weights`` 必須包含 4 個值。如果每個頂點都需要設定該資訊，且為第一個頂點提交失敗，則可能根本不會使用該資訊。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

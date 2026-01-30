@@ -5,21 +5,21 @@
 WorldBoundaryShape2D
 ====================
 
-**Inherits:** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D world boundary (half-plane) shape used for physics collision.
+用於物理碰撞的 2D 空間邊界（半平面）形狀。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A 2D world boundary shape, intended for use in physics. **WorldBoundaryShape2D** works like an infinite straight line that forces all physics bodies to stay above it. The line's normal determines which direction is considered as "above" and in the editor, the smaller line over it represents this direction. It can for example be used for endless flat floors.
+2D 世界邊界形狀，應當用於物理用途。\ **WorldBoundaryShape2D** 本質上和無限直線類似，能夠強制所有物理體都保持在它的上方。哪個方向是“上方”由該直線的法線確定，這個方向在編輯器中由直線上方的一條段線表示。用例是無限的平坦地面。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_WorldBoundaryShape2D_property_distance:
 
@@ -50,9 +50,9 @@ Property Descriptions
 - |void| **set_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance**\ (\ )
 
-The distance from the origin to the line, expressed in terms of :ref:`normal<class_WorldBoundaryShape2D_property_normal>` (according to its direction and magnitude). Actual absolute distance from the origin to the line can be calculated as ``abs(distance) / normal.length()``.
+從原點到直線的距離，沿 :ref:`normal<class_WorldBoundaryShape2D_property_normal>` 方向（根據其方向和大小）。原點到直線實際距離的絕對值可以用 ``abs(distance) / normal.length()`` 計算。
 
-In the scalar equation of the line ``ax + by = d``, this is ``d``, while the ``(a, b)`` coordinates are represented by the :ref:`normal<class_WorldBoundaryShape2D_property_normal>` property.
+在直線 ``ax + by = d`` 的標量方程中，這是 ``d``\ ，而 ``(a, b)`` 座標由 :ref:`normal<class_WorldBoundaryShape2D_property_normal>` 屬性工作表示。
 
 .. rst-class:: classref-item-separator
 
@@ -71,12 +71,12 @@ In the scalar equation of the line ``ax + by = d``, this is ``d``, while the ``(
 
 The line's normal, typically a unit vector. Its direction indicates the non-colliding half-plane. Can be of any length but zero. Defaults to :ref:`Vector2.UP<class_Vector2_constant_UP>`.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

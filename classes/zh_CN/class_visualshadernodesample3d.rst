@@ -5,23 +5,23 @@
 VisualShaderNodeSample3D
 ========================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisualShaderNodeTexture2DArray<class_VisualShaderNodeTexture2DArray>`, :ref:`VisualShaderNodeTexture3D<class_VisualShaderNodeTexture3D>`
+**派生：** :ref:`VisualShaderNodeTexture2DArray<class_VisualShaderNodeTexture2DArray>`, :ref:`VisualShaderNodeTexture3D<class_VisualShaderNodeTexture3D>`
 
-A base node for nodes which samples 3D textures in the visual shader graph.
+可视化着色器图中，对 3D 纹理进行采样的节点的基础节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A virtual class, use the descendants instead.
+虚类，请改用其派生类。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisualShaderNodeSample3D_Source:
 
@@ -51,7 +51,7 @@ enum **Source**: :ref:`🔗<enum_VisualShaderNodeSample3D_Source>`
 
 :ref:`Source<enum_VisualShaderNodeSample3D_Source>` **SOURCE_TEXTURE** = ``0``
 
-Creates internal uniform and provides a way to assign it within node.
+创建内部 uniform，提供一种在节点内赋值的方式。
 
 .. _class_VisualShaderNodeSample3D_constant_SOURCE_PORT:
 
@@ -59,7 +59,7 @@ Creates internal uniform and provides a way to assign it within node.
 
 :ref:`Source<enum_VisualShaderNodeSample3D_Source>` **SOURCE_PORT** = ``1``
 
-Use the uniform texture from sampler port.
+使用采样器端口的 uniform 纹理。
 
 .. _class_VisualShaderNodeSample3D_constant_SOURCE_MAX:
 
@@ -67,7 +67,7 @@ Use the uniform texture from sampler port.
 
 :ref:`Source<enum_VisualShaderNodeSample3D_Source>` **SOURCE_MAX** = ``2``
 
-Represents the size of the :ref:`Source<enum_VisualShaderNodeSample3D_Source>` enum.
+代表 :ref:`Source<enum_VisualShaderNodeSample3D_Source>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -75,8 +75,8 @@ Represents the size of the :ref:`Source<enum_VisualShaderNodeSample3D_Source>` e
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeSample3D_property_source:
 
@@ -89,14 +89,14 @@ Property Descriptions
 - |void| **set_source**\ (\ value\: :ref:`Source<enum_VisualShaderNodeSample3D_Source>`\ )
 - :ref:`Source<enum_VisualShaderNodeSample3D_Source>` **get_source**\ (\ )
 
-An input source type.
+输入源的类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

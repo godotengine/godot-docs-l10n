@@ -5,30 +5,30 @@
 FlowContainer
 =============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`HFlowContainer<class_HFlowContainer>`, :ref:`VFlowContainer<class_VFlowContainer>`
+**被繼承：** :ref:`HFlowContainer<class_HFlowContainer>`, :ref:`VFlowContainer<class_VFlowContainer>`
 
-A container that arranges its child controls horizontally or vertically and wraps them around at the borders.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A container that arranges its child controls horizontally or vertically and wraps them around at the borders. This is similar to how text in a book wraps around when no more words can fit on a line.
+將子控制項橫向或縱向排列並在邊界處換行的容器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using Containers <../tutorials/ui/gui_containers>`
+將子控制項橫向或縱向排列並在邊界處換行的容器。類似於書本中文字在一行中寫不下以後的換行方式。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_FlowContainer_AlignmentMode:
 
@@ -90,7 +90,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_FlowContainer_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **ALIGNMENT_BEGIN** = ``0``
 
-The child controls will be arranged at the beginning of the container, i.e. top if orientation is vertical, left if orientation is horizontal (right for RTL layout).
+子控制項會被排列在該容器的開頭，如果是垂直朝向則為頂部，如果是水平朝向則為左側（RTL 佈局時為右側）。
 
 .. _class_FlowContainer_constant_ALIGNMENT_CENTER:
 
@@ -98,7 +98,7 @@ The child controls will be arranged at the beginning of the container, i.e. top 
 
 :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-The child controls will be centered in the container.
+子控制項會在該容器裡居中。
 
 .. _class_FlowContainer_constant_ALIGNMENT_END:
 
@@ -106,7 +106,7 @@ The child controls will be centered in the container.
 
 :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **ALIGNMENT_END** = ``2``
 
-The child controls will be arranged at the end of the container, i.e. bottom if orientation is vertical, right if orientation is horizontal (left for RTL layout).
+子控制項會被排列在該容器的末尾，如果是垂直朝向則為底部，如果是水平朝向則為右側（RTL 佈局時為左側）。
 
 .. rst-class:: classref-item-separator
 
@@ -156,8 +156,8 @@ The last partially filled row or column will wrap aligned to the end of the prev
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_FlowContainer_property_alignment:
 
@@ -170,7 +170,7 @@ Property Descriptions
 - |void| **set_alignment**\ (\ value\: :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_FlowContainer_AlignmentMode>` **get_alignment**\ (\ )
 
-The alignment of the container's children (must be one of :ref:`ALIGNMENT_BEGIN<class_FlowContainer_constant_ALIGNMENT_BEGIN>`, :ref:`ALIGNMENT_CENTER<class_FlowContainer_constant_ALIGNMENT_CENTER>`, or :ref:`ALIGNMENT_END<class_FlowContainer_constant_ALIGNMENT_END>`).
+該容器子節點的對齊方式（必須是 :ref:`ALIGNMENT_BEGIN<class_FlowContainer_constant_ALIGNMENT_BEGIN>`\ 、\ :ref:`ALIGNMENT_CENTER<class_FlowContainer_constant_ALIGNMENT_CENTER>`\ 、\ :ref:`ALIGNMENT_END<class_FlowContainer_constant_ALIGNMENT_END>` 之一）。
 
 .. rst-class:: classref-item-separator
 
@@ -223,9 +223,9 @@ When using a vertical **FlowContainer** with a right to left :ref:`Control.layou
 - |void| **set_vertical**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_vertical**\ (\ )
 
-If ``true``, the **FlowContainer** will arrange its children vertically, rather than horizontally.
+如果為 ``true``\ ，則 **FlowContainer** 將垂直排列子節點，而不是水平排列。
 
-Can't be changed when using :ref:`HFlowContainer<class_HFlowContainer>` and :ref:`VFlowContainer<class_VFlowContainer>`.
+使用 :ref:`HFlowContainer<class_HFlowContainer>` 和 :ref:`VFlowContainer<class_VFlowContainer>` 時不能改變。
 
 .. rst-class:: classref-section-separator
 
@@ -233,8 +233,8 @@ Can't be changed when using :ref:`HFlowContainer<class_HFlowContainer>` and :ref
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_FlowContainer_method_get_line_count:
 
@@ -242,7 +242,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **get_line_count**\ (\ ) |const| :ref:`🔗<class_FlowContainer_method_get_line_count>`
 
-Returns the current line count.
+返回目前的行數。
 
 .. rst-class:: classref-section-separator
 
@@ -250,8 +250,8 @@ Returns the current line count.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_FlowContainer_theme_constant_h_separation:
 
@@ -273,12 +273,12 @@ The horizontal separation of child nodes.
 
 The vertical separation of child nodes.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

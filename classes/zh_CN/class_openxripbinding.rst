@@ -5,21 +5,21 @@
 OpenXRIPBinding
 ===============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Defines a binding between an :ref:`OpenXRAction<class_OpenXRAction>` and an XR input or output.
+定义 :ref:`OpenXRAction<class_OpenXRAction>` 和 XR 输入或输出之间的绑定。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This binding resource binds an :ref:`OpenXRAction<class_OpenXRAction>` to an input or output. As most controllers have left hand and right versions that are handled by the same interaction profile we can specify multiple bindings. For instance an action "Fire" could be bound to both "/user/hand/left/input/trigger" and "/user/hand/right/input/trigger". This would require two binding entries.
+该绑定资源将一个 :ref:`OpenXRAction<class_OpenXRAction>` 绑定到输入或输出。由于大多数控制器都有由相同交互配置处理的左手和右手版本，我们可以指定多个绑定。例如，“开火”动作可以同时绑定到“/user/hand/left/input/trigger”和“/user/hand/right/input/trigger”，需要两个绑定条目。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OpenXRIPBinding_property_action:
 
@@ -76,7 +76,7 @@ Property Descriptions
 - |void| **set_action**\ (\ value\: :ref:`OpenXRAction<class_OpenXRAction>`\ )
 - :ref:`OpenXRAction<class_OpenXRAction>` **get_action**\ (\ )
 
-:ref:`OpenXRAction<class_OpenXRAction>` that is bound to :ref:`binding_path<class_OpenXRIPBinding_property_binding_path>`.
+与绑定路径 :ref:`binding_path<class_OpenXRIPBinding_property_binding_path>` 绑定的 :ref:`OpenXRAction<class_OpenXRAction>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ Property Descriptions
 - |void| **set_binding_modifiers**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_binding_modifiers**\ (\ )
 
-Binding modifiers for this binding.
+该绑定的绑定修改器。
 
 .. rst-class:: classref-item-separator
 
@@ -110,9 +110,9 @@ Binding modifiers for this binding.
 - |void| **set_binding_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_binding_path**\ (\ )
 
-Binding path that defines the input or output bound to :ref:`action<class_OpenXRIPBinding_property_action>`.
+绑定路径，定义与 :ref:`action<class_OpenXRIPBinding_property_action>` 绑定的输入或输出。
 
-\ **Note:** Binding paths are suggestions, an XR runtime may choose to bind the action to a different input or output emulating this input or output.
+\ **注意：**\ 绑定路径只是建议，XR 运行时可能会选择将该动作绑定到模拟该输入或输出的不同输入或输出。
 
 .. rst-class:: classref-item-separator
 
@@ -129,9 +129,9 @@ Binding path that defines the input or output bound to :ref:`action<class_OpenXR
 - |void| **set_paths**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_paths**\ (\ )
 
-**Deprecated:** Use :ref:`binding_path<class_OpenXRIPBinding_property_binding_path>` instead.
+**已弃用：** Use :ref:`binding_path<class_OpenXRIPBinding_property_binding_path>` instead.
 
-Paths that define the inputs or outputs bound on the device.
+定义该设备上绑定的输入或输出的路径。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -141,8 +141,8 @@ Paths that define the inputs or outputs bound on the device.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OpenXRIPBinding_method_add_path:
 
@@ -150,9 +150,9 @@ Method Descriptions
 
 |void| **add_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRIPBinding_method_add_path>`
 
-**Deprecated:** Binding is for a single path.
+**已弃用：** Binding is for a single path.
 
-Add an input/output path to this binding.
+为该绑定添加输入/输出路径。
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ Add an input/output path to this binding.
 
 :ref:`OpenXRActionBindingModifier<class_OpenXRActionBindingModifier>` **get_binding_modifier**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRIPBinding_method_get_binding_modifier>`
 
-Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
+获取位于该索引的 :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
 
 :ref:`int<class_int>` **get_binding_modifier_count**\ (\ ) |const| :ref:`🔗<class_OpenXRIPBinding_method_get_binding_modifier_count>`
 
-Get the number of binding modifiers for this binding.
+获取该绑定中绑定修改器的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +188,9 @@ Get the number of binding modifiers for this binding.
 
 :ref:`int<class_int>` **get_path_count**\ (\ ) |const| :ref:`🔗<class_OpenXRIPBinding_method_get_path_count>`
 
-**Deprecated:** Binding is for a single path.
+**已弃用：** Binding is for a single path.
 
-Get the number of input/output paths in this binding.
+获取该绑定中输入/输出路径的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -202,9 +202,9 @@ Get the number of input/output paths in this binding.
 
 :ref:`bool<class_bool>` **has_path**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_OpenXRIPBinding_method_has_path>`
 
-**Deprecated:** Binding is for a single path.
+**已弃用：** Binding is for a single path.
 
-Returns ``true`` if this input/output path is part of this binding.
+如果该输入/输出路径是该绑定的一部分，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -216,16 +216,16 @@ Returns ``true`` if this input/output path is part of this binding.
 
 |void| **remove_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRIPBinding_method_remove_path>`
 
-**Deprecated:** Binding is for a single path.
+**已弃用：** Binding is for a single path.
 
-Removes this input/output path from this binding.
+从该绑定中移除该输入/输出路径。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

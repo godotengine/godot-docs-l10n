@@ -5,23 +5,23 @@
 Range
 =====
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorSpinSlider<class_EditorSpinSlider>`, :ref:`ProgressBar<class_ProgressBar>`, :ref:`ScrollBar<class_ScrollBar>`, :ref:`Slider<class_Slider>`, :ref:`SpinBox<class_SpinBox>`, :ref:`TextureProgressBar<class_TextureProgressBar>`
+**派生：** :ref:`EditorSpinSlider<class_EditorSpinSlider>`, :ref:`ProgressBar<class_ProgressBar>`, :ref:`ScrollBar<class_ScrollBar>`, :ref:`Slider<class_Slider>`, :ref:`SpinBox<class_SpinBox>`, :ref:`TextureProgressBar<class_TextureProgressBar>`
 
-Abstract base class for controls that represent a number within a range.
+代表特定范围内数字的控件的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Range is an abstract base class for controls that represent a number within a range, using a configured :ref:`step<class_Range_property_step>` and :ref:`page<class_Range_property_page>` size. See e.g. :ref:`ScrollBar<class_ScrollBar>` and :ref:`Slider<class_Slider>` for examples of higher-level nodes using Range.
+Range 是代表特定范围内数字的控件的抽象基类，能够对步长 :ref:`step<class_Range_property_step>` 和分页大小 :ref:`page<class_Range_property_page>` 进行配置。使用 Range 的高阶节点示例请参考 :ref:`ScrollBar<class_ScrollBar>` 和 :ref:`Slider<class_Slider>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Range_signal_changed:
 
@@ -83,7 +83,7 @@ Signals
 
 **changed**\ (\ ) :ref:`🔗<class_Range_signal_changed>`
 
-Emitted when :ref:`min_value<class_Range_property_min_value>`, :ref:`max_value<class_Range_property_max_value>`, :ref:`page<class_Range_property_page>`, or :ref:`step<class_Range_property_step>` change.
+在 :ref:`min_value<class_Range_property_min_value>`\ 、\ :ref:`max_value<class_Range_property_max_value>`\ 、\ :ref:`page<class_Range_property_page>`\ 、\ :ref:`step<class_Range_property_step>` 改变时释放信号。
 
 .. rst-class:: classref-item-separator
 
@@ -95,9 +95,9 @@ Emitted when :ref:`min_value<class_Range_property_min_value>`, :ref:`max_value<c
 
 **value_changed**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Range_signal_value_changed>`
 
-Emitted when :ref:`value<class_Range_property_value>` changes. When used on a :ref:`Slider<class_Slider>`, this is called continuously while dragging (potentially every frame). If you are performing an expensive operation in a function connected to :ref:`value_changed<class_Range_signal_value_changed>`, consider using a *debouncing* :ref:`Timer<class_Timer>` to call the function less often.
+:ref:`value<class_Range_property_value>` 更改时发出。在 :ref:`Slider<class_Slider>` 上使用时，会在拖动时连续调用（可能是每一帧）。如果在连接到 :ref:`value_changed<class_Range_signal_value_changed>` 的函数中执行昂贵的操作，请考虑使用\ *去除抖动* :ref:`Timer<class_Timer>` 来减少调用该函数的频率。
 
-\ **Note:** Unlike signals such as :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>`, :ref:`value_changed<class_Range_signal_value_changed>` is also emitted when ``value`` is set directly via code.
+\ **注意：**\ 与 :ref:`LineEdit.text_changed<class_LineEdit_signal_text_changed>` 等信号不同，当直接通过代码设置 ``value`` 时，\ :ref:`value_changed<class_Range_signal_value_changed>` 仍会发出。
 
 .. rst-class:: classref-section-separator
 
@@ -105,8 +105,8 @@ Emitted when :ref:`value<class_Range_property_value>` changes. When used on a :r
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Range_property_allow_greater:
 
@@ -119,7 +119,7 @@ Property Descriptions
 - |void| **set_allow_greater**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_greater_allowed**\ (\ )
 
-If ``true``, :ref:`value<class_Range_property_value>` may be greater than :ref:`max_value<class_Range_property_max_value>`.
+如果为 ``true``\ ，\ :ref:`value<class_Range_property_value>` 可能大于 :ref:`max_value<class_Range_property_max_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ If ``true``, :ref:`value<class_Range_property_value>` may be greater than :ref:`
 - |void| **set_allow_lesser**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_lesser_allowed**\ (\ )
 
-If ``true``, :ref:`value<class_Range_property_value>` may be less than :ref:`min_value<class_Range_property_min_value>`.
+如果为 ``true``\ ，\ :ref:`value<class_Range_property_value>` 可能小于 :ref:`min_value<class_Range_property_min_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ If ``true``, :ref:`value<class_Range_property_value>` may be less than :ref:`min
 - |void| **set_exp_ratio**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ratio_exp**\ (\ )
 
-If ``true``, and :ref:`min_value<class_Range_property_min_value>` is greater or equal to ``0``, :ref:`value<class_Range_property_value>` will be represented exponentially rather than linearly.
+如果为 ``true``\ ，并且 :ref:`min_value<class_Range_property_min_value>` 大于等于 ``0``\ ，则 :ref:`value<class_Range_property_value>` 将以指数方式而不是线性方式表示。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ If ``true``, and :ref:`min_value<class_Range_property_min_value>` is greater or 
 - |void| **set_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max**\ (\ )
 
-Maximum value. Range is clamped if :ref:`value<class_Range_property_value>` is greater than :ref:`max_value<class_Range_property_max_value>`.
+最大值。如果 :ref:`value<class_Range_property_value>` 大于 :ref:`max_value<class_Range_property_max_value>`\ ，则会被范围限制。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Maximum value. Range is clamped if :ref:`value<class_Range_property_value>` is g
 - |void| **set_min**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min**\ (\ )
 
-Minimum value. Range is clamped if :ref:`value<class_Range_property_value>` is less than :ref:`min_value<class_Range_property_min_value>`.
+最小值。如果 :ref:`value<class_Range_property_value>` 小于 :ref:`min_value<class_Range_property_min_value>`\ ，则会被范围限制。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Minimum value. Range is clamped if :ref:`value<class_Range_property_value>` is l
 - |void| **set_page**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_page**\ (\ )
 
-Page size. Used mainly for :ref:`ScrollBar<class_ScrollBar>`. A :ref:`ScrollBar<class_ScrollBar>`'s grabber length is the :ref:`ScrollBar<class_ScrollBar>`'s size multiplied by :ref:`page<class_Range_property_page>` over the difference between :ref:`min_value<class_Range_property_min_value>` and :ref:`max_value<class_Range_property_max_value>`.
+页面大小。主要用于 :ref:`ScrollBar<class_ScrollBar>`\ 。\ :ref:`ScrollBar<class_ScrollBar>` 滑块的长度是 :ref:`ScrollBar<class_ScrollBar>` 的尺寸乘以 :ref:`page<class_Range_property_page>` 再除以 :ref:`min_value<class_Range_property_min_value>` 和 :ref:`max_value<class_Range_property_max_value>` 的差。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ Page size. Used mainly for :ref:`ScrollBar<class_ScrollBar>`. A :ref:`ScrollBar<
 - |void| **set_as_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_as_ratio**\ (\ )
 
-The value mapped between 0 and 1.
+该值在 0 和 1 之间进行映射。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ The value mapped between 0 and 1.
 - |void| **set_use_rounded_values**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rounded_values**\ (\ )
 
-If ``true``, :ref:`value<class_Range_property_value>` will always be rounded to the nearest integer.
+如果为 ``true``\ ，\ :ref:`value<class_Range_property_value>` 将始终四舍五入到最接近的整数。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ If greater than ``0.0``, :ref:`value<class_Range_property_value>` will always be
 - |void| **set_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_value**\ (\ )
 
-Range's current value. Changing this property (even via code) will trigger :ref:`value_changed<class_Range_signal_value_changed>` signal. Use :ref:`set_value_no_signal()<class_Range_method_set_value_no_signal>` if you want to avoid it.
+Range 的当前值。更改这个属性（即便是通过代码修改的）会触发 :ref:`value_changed<class_Range_signal_value_changed>` 信号。如果你想避免触发信号，请使用 :ref:`set_value_no_signal()<class_Range_method_set_value_no_signal>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -280,8 +280,8 @@ Range's current value. Changing this property (even via code) will trigger :ref:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Range_private_method__value_changed:
 
@@ -289,7 +289,7 @@ Method Descriptions
 
 |void| **_value_changed**\ (\ new_value\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_Range_private_method__value_changed>`
 
-Called when the **Range**'s value is changed (following the same conditions as :ref:`value_changed<class_Range_signal_value_changed>`).
+**Range** 的值发生更改时调用（条件与 :ref:`value_changed<class_Range_signal_value_changed>` 相同）。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Called when the **Range**'s value is changed (following the same conditions as :
 
 |void| **set_value_no_signal**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Range_method_set_value_no_signal>`
 
-Sets the **Range**'s current value to the specified ``value``, without emitting the :ref:`value_changed<class_Range_signal_value_changed>` signal.
+将 **Range** 的当前值设置为指定的 ``value`` 而不发出 :ref:`value_changed<class_Range_signal_value_changed>` 信号。
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Sets the **Range**'s current value to the specified ``value``, without emitting 
 
 |void| **share**\ (\ with\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Range_method_share>`
 
-Binds two **Range**\ s together along with any ranges previously grouped with either of them. When any of range's member variables change, it will share the new value with all other ranges in its group.
+将两个 **Range** 绑定，之前已与两者之中的任何一个组合的 Range 也会被绑定在一起。其中任何一个 Range 的成员变量改变时，它将与它的组中的所有其他 Range 共享新值。
 
 .. rst-class:: classref-item-separator
 
@@ -325,14 +325,14 @@ Binds two **Range**\ s together along with any ranges previously grouped with ei
 
 |void| **unshare**\ (\ ) :ref:`🔗<class_Range_method_unshare>`
 
-Stops the **Range** from sharing its member variables with any other.
+使该 **Range** 停止与任何其他 Range 共享其成员变量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

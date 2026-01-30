@@ -5,30 +5,30 @@
 XRNode3D
 ========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`XRAnchor3D<class_XRAnchor3D>`, :ref:`XRController3D<class_XRController3D>`
+**被繼承：** :ref:`XRAnchor3D<class_XRAnchor3D>`, :ref:`XRController3D<class_XRController3D>`
 
 A 3D node that has its position automatically updated by the :ref:`XRServer<class_XRServer>`.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This node can be bound to a specific pose of an :ref:`XRPositionalTracker<class_XRPositionalTracker>` and will automatically have its :ref:`Node3D.transform<class_Node3D_property_transform>` updated by the :ref:`XRServer<class_XRServer>`. Nodes of this type must be added as children of the :ref:`XROrigin3D<class_XROrigin3D>` node.
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`XR documentation index <../tutorials/xr/index>`
+- :doc:`XR 文件索引 <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_XRNode3D_signal_tracking_changed:
 
@@ -76,7 +76,7 @@ Signals
 
 **tracking_changed**\ (\ tracking\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_XRNode3D_signal_tracking_changed>`
 
-Emitted when the :ref:`tracker<class_XRNode3D_property_tracker>` starts or stops receiving updated tracking data for the :ref:`pose<class_XRNode3D_property_pose>` being tracked. The ``tracking`` argument indicates whether the tracker is getting updated tracking data.
+當\ :ref:`tracker<class_XRNode3D_property_tracker>`\ 開始或停止接收正在追蹤的\ :ref:`pose<class_XRNode3D_property_pose>`\ 的更新追蹤資料時發出。\ ``tracking``\ 參數指示追蹤器是否正在取得更新的追蹤資料。
 
 .. rst-class:: classref-section-separator
 
@@ -84,8 +84,8 @@ Emitted when the :ref:`tracker<class_XRNode3D_property_tracker>` starts or stops
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_XRNode3D_property_pose:
 
@@ -98,9 +98,9 @@ Property Descriptions
 - |void| **set_pose_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_pose_name**\ (\ )
 
-The name of the pose we're bound to. Which poses a tracker supports is not known during design time.
+我們綁定到的姿勢的名稱。設計時並不知道追蹤器支援哪些姿勢。
 
-Godot defines number of standard pose names such as ``aim`` and ``grip`` but other may be configured within a given :ref:`XRInterface<class_XRInterface>`.
+Godot 定義了許多標準姿勢名稱，例如 ``aim`` 和 ``grip``\ ，但也可以在給定的 :ref:`XRInterface<class_XRInterface>` 中配置其他名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -134,9 +134,9 @@ Enables showing the node when tracking starts, and hiding the node when tracking
 - |void| **set_tracker**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_tracker**\ (\ )
 
-The name of the tracker we're bound to. Which trackers are available is not known during design time.
+我們綁定到的追蹤器的名稱。設計時並不知道有哪些追蹤器可用。
 
-Godot defines a number of standard trackers such as ``left_hand`` and ``right_hand`` but others may be configured within a given :ref:`XRInterface<class_XRInterface>`.
+Godot 定義了許多標準追蹤器，例如 ``left_hand`` 和 ``right_hand``\ ，但也可以在給定的 :ref:`XRInterface<class_XRInterface>` 中配置其他追蹤器。
 
 .. rst-class:: classref-section-separator
 
@@ -144,8 +144,8 @@ Godot defines a number of standard trackers such as ``left_hand`` and ``right_ha
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_XRNode3D_method_get_has_tracking_data:
 
@@ -153,7 +153,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **get_has_tracking_data**\ (\ ) |const| :ref:`🔗<class_XRNode3D_method_get_has_tracking_data>`
 
-Returns ``true`` if the :ref:`tracker<class_XRNode3D_property_tracker>` has current tracking data for the :ref:`pose<class_XRNode3D_property_pose>` being tracked.
+如果 :ref:`tracker<class_XRNode3D_property_tracker>` 中有被追蹤 :ref:`pose<class_XRNode3D_property_pose>` 的目前追蹤資料，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Returns ``true`` if the :ref:`tracker<class_XRNode3D_property_tracker>` has curr
 
 :ref:`bool<class_bool>` **get_is_active**\ (\ ) |const| :ref:`🔗<class_XRNode3D_method_get_is_active>`
 
-Returns ``true`` if the :ref:`tracker<class_XRNode3D_property_tracker>` has been registered and the :ref:`pose<class_XRNode3D_property_pose>` is being tracked.
+如果 :ref:`tracker<class_XRNode3D_property_tracker>` 已註冊，並且 :ref:`pose<class_XRNode3D_property_pose>` 正在被追蹤，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ Returns ``true`` if the :ref:`tracker<class_XRNode3D_property_tracker>` has been
 
 :ref:`XRPose<class_XRPose>` **get_pose**\ (\ ) :ref:`🔗<class_XRNode3D_method_get_pose>`
 
-Returns the :ref:`XRPose<class_XRPose>` containing the current state of the pose being tracked. This gives access to additional properties of this pose.
+返回包含被追蹤姿勢的目前狀態的 :ref:`XRPose<class_XRPose>`\ 。這可以存取此姿勢的其他屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -201,12 +201,12 @@ Triggers a haptic pulse on a device associated with this interface.
 
 \ ``delay_sec`` is a delay in seconds before the pulse is given.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

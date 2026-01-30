@@ -5,32 +5,32 @@
 Shader
 ======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisualShader<class_VisualShader>`
+**派生：** :ref:`VisualShader<class_VisualShader>`
 
-A shader implemented in the Godot shading language.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A custom shader program implemented in the Godot shading language, saved with the ``.gdshader`` extension.
-
-This class is used by a :ref:`ShaderMaterial<class_ShaderMaterial>` and allows you to write your own custom behavior for rendering visual items or updating particle information. For a detailed explanation and usage, please see the tutorials linked below.
+用 Godot 着色语言实现的着色器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Shaders documentation index <../tutorials/shaders/index>`
+用 Godot 着色语言实现的自定义着色器程序，使用 ``.gdshader`` 扩展名保存。
+
+这个类由 :ref:`ShaderMaterial<class_ShaderMaterial>` 使用，能够让你编写渲染可视项目或更新粒子信息时的自定义行为。详细解释和用法请参考下列教程链接。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`着色器文档索引 <../tutorials/shaders/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Shader_Mode:
 
@@ -80,7 +80,7 @@ enum **Mode**: :ref:`🔗<enum_Shader_Mode>`
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_SPATIAL** = ``0``
 
-Mode used to draw all 3D objects.
+用于绘制所有 3D 对象的模式。
 
 .. _class_Shader_constant_MODE_CANVAS_ITEM:
 
@@ -88,7 +88,7 @@ Mode used to draw all 3D objects.
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_CANVAS_ITEM** = ``1``
 
-Mode used to draw all 2D objects.
+用于绘制所有 2D 对象的模式。
 
 .. _class_Shader_constant_MODE_PARTICLES:
 
@@ -96,7 +96,7 @@ Mode used to draw all 2D objects.
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_PARTICLES** = ``2``
 
-Mode used to calculate particle information on a per-particle basis. Not used for drawing.
+用于基于每个粒子计算粒子信息的模式。不用于绘图。
 
 .. _class_Shader_constant_MODE_SKY:
 
@@ -104,7 +104,7 @@ Mode used to calculate particle information on a per-particle basis. Not used fo
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_SKY** = ``3``
 
-Mode used for drawing skies. Only works with shaders attached to :ref:`Sky<class_Sky>` objects.
+用于绘制天空的模式。仅适用于附加到 :ref:`Sky<class_Sky>` 对象的着色器。
 
 .. _class_Shader_constant_MODE_FOG:
 
@@ -112,7 +112,7 @@ Mode used for drawing skies. Only works with shaders attached to :ref:`Sky<class
 
 :ref:`Mode<enum_Shader_Mode>` **MODE_FOG** = ``4``
 
-Mode used for setting the color and density of volumetric fog effect.
+用于设置体积雾效果的颜色和密度的模式。
 
 .. rst-class:: classref-section-separator
 
@@ -120,8 +120,8 @@ Mode used for setting the color and density of volumetric fog effect.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Shader_property_code:
 
@@ -134,7 +134,7 @@ Property Descriptions
 - |void| **set_code**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_code**\ (\ )
 
-Returns the shader's code as the user has written it, not the full generated code used internally.
+返回用户编写的着色器代码，而不是内部使用的完整生成代码。
 
 .. rst-class:: classref-section-separator
 
@@ -142,8 +142,8 @@ Returns the shader's code as the user has written it, not the full generated cod
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Shader_method_get_default_texture_parameter:
 
@@ -151,11 +151,11 @@ Method Descriptions
 
 :ref:`Texture<class_Texture>` **get_default_texture_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Shader_method_get_default_texture_parameter>`
 
-Returns the texture that is set as default for the specified parameter.
+返回被设置为指定参数的默认值的纹理。
 
-\ **Note:** ``name`` must match the name of the uniform in the code exactly.
+\ **注意：**\ ``name`` 必须与代码中的 uniform 名称完全匹配。
 
-\ **Note:** If the sampler array is used use ``index`` to access the specified texture.
+\ **注意：**\ 如果使用采样器数组，则使用 ``index`` 访问指定的纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Returns the texture that is set as default for the specified parameter.
 
 :ref:`Mode<enum_Shader_Mode>` **get_mode**\ (\ ) |const| :ref:`🔗<class_Shader_method_get_mode>`
 
-Returns the shader mode for the shader.
+返回着色器的着色器模式。
 
 .. rst-class:: classref-item-separator
 
@@ -179,9 +179,9 @@ Returns the shader mode for the shader.
 
 :ref:`Array<class_Array>` **get_shader_uniform_list**\ (\ get_groups\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Shader_method_get_shader_uniform_list>`
 
-Returns the list of shader uniforms that can be assigned to a :ref:`ShaderMaterial<class_ShaderMaterial>`, for use with :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` and :ref:`ShaderMaterial.get_shader_parameter()<class_ShaderMaterial_method_get_shader_parameter>`. The parameters returned are contained in dictionaries in a similar format to the ones returned by :ref:`Object.get_property_list()<class_Object_method_get_property_list>`.
+返回可以赋值给 :ref:`ShaderMaterial<class_ShaderMaterial>` 的着色器 uniform 列表，可用于 :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` 和 :ref:`ShaderMaterial.get_shader_parameter()<class_ShaderMaterial_method_get_shader_parameter>`\ 。返回的参数包含在字典内，与 :ref:`Object.get_property_list()<class_Object_method_get_property_list>` 返回的格式类似。
 
-If argument ``get_groups`` is ``true``, parameter grouping hints are also included in the list.
+如果参数 ``get_groups`` 为 ``true``\ ，则列表中还会包含参数分组提示。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ If argument ``get_groups`` is ``true``, parameter grouping hints are also includ
 
 |void| **inspect_native_shader_code**\ (\ ) :ref:`🔗<class_Shader_method_inspect_native_shader_code>`
 
-Only available when running in the editor. Opens a popup that visualizes the generated shader code, including all variants and internal shader code. See also :ref:`Material.inspect_native_shader_code()<class_Material_method_inspect_native_shader_code>`.
+仅在编辑器中运行时可用。打开一个弹出窗口，其中可视化生成的着色器代码，包括所有变体和内部着色器代码。另见 :ref:`Material.inspect_native_shader_code()<class_Material_method_inspect_native_shader_code>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -205,18 +205,18 @@ Only available when running in the editor. Opens a popup that visualizes the gen
 
 |void| **set_default_texture_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture<class_Texture>`, index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Shader_method_set_default_texture_parameter>`
 
-Sets the default texture to be used with a texture uniform. The default is used if a texture is not set in the :ref:`ShaderMaterial<class_ShaderMaterial>`.
+设置要与纹理 uniform 一起使用的默认纹理。如果未在 :ref:`ShaderMaterial<class_ShaderMaterial>` 中设置纹理，则使用该默认值。
 
-\ **Note:** ``name`` must match the name of the uniform in the code exactly.
+\ **注意：**\ ``name`` 必须与代码中的 uniform 名称完全匹配。
 
-\ **Note:** If the sampler array is used use ``index`` to access the specified texture.
+\ **注意：**\ 如果使用采样器数组，则使用 ``index`` 访问指定的纹理。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

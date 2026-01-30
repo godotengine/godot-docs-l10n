@@ -12,19 +12,19 @@ Un array empaquetado de :ref:`String<class_String>`\ s.
 Descripción
 ----------------------
 
-An array specifically designed to hold :ref:`String<class_String>`\ s. Packs data tightly, so it saves memory for large array sizes.
+Un array diseñado específicamente para contener :ref:`String<class_String>`\ s. Empaqueta los datos de forma compacta, lo que ahorra memoria para arrays de gran tamaño.
 
-If you want to join the strings in the array, use :ref:`String.join()<class_String_method_join>`.
+Si quieres unir las strings en el array, usa :ref:`String.join()<class_String_method_join>`.
 
 ::
 
-    var string_array = PackedStringArray(["hello", "world"])
+    var string_array = PackedStringArray(["hola", "mundo"])
     var string = " ".join(string_array)
-    print(string) # "hello world"
+    print(string) # "hola mundo"
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedStringArray** versus ``Array[String]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Diferencias entre arrays empaquetados, arrays tipados y arrays sin tipo:** Los arrays empaquetados son generalmente más rápidos de iterar y modificar en comparación con un array tipado del mismo tipo (por ejemplo, **PackedStringArray** versus ``Array[String]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados, a su vez, son más rápidos de iterar y modificar que los arrays sin tipo.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda ser modificado independientemente del array original, usa :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. Este *no* es el caso para propiedades y métodos integrados. En estos casos, el array empaquetado devuelto es una copia, y modificarlo *no* afectará al valor original. Para actualizar una propiedad integrada de este tipo, modifica el array devuelto y luego asígnalo a la propiedad de nuevo.
 
 .. note::
 
@@ -152,7 +152,7 @@ Construye un **PackedStringArray** vacío.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **PackedStringArray**\ (\ from\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 
-Constructs a **PackedStringArray** as a copy of the given **PackedStringArray**.
+Construye un **PackedStringArray** como una copia del **PackedStringArray** dado.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Constructs a **PackedStringArray** as a copy of the given **PackedStringArray**.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **PackedStringArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedStringArray**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+Construye un nuevo **PackedStringArray**. Opcionalmente, puedes pasar un :ref:`Array<class_Array>` genérico que será convertido.
 
 .. rst-class:: classref-section-separator
 
@@ -289,9 +289,9 @@ Busca un valor en el array y devuelve su índice o ``-1`` si no lo encuentra. Op
 
 :ref:`String<class_String>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_get>`
 
-Returns the :ref:`String<class_String>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns an empty string.
+Devuelve la :ref:`String<class_String>` en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve una cadena vacía.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. Lo más notable es que, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -425,11 +425,11 @@ Devuelve el numer de elementos en el array.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedStringArray_method_slice>`
 
-Returns the slice of the **PackedStringArray**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedStringArray**.
+Devuelve una porción del **PackedStringArray**, desde ``begin`` (inclusive) hasta ``end`` (exclusive), como un nuevo **PackedStringArray**.
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+El valor absoluto de ``begin`` y ``end`` se ajustará al tamaño del array, de modo que el valor predeterminado para ``end`` hace que se corte al tamaño del array por defecto (es decir, ``arr.slice(1)`` es una abreviatura de ``arr.slice(1, arr.size())``).
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es decir, ``arr.slice(0, -2)`` es una abreviatura de ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedStringArray_method_to_byte_array>`
 
-Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each string encoded as UTF-8. Strings are ``null`` terminated.
+Devuelve un :ref:`PackedByteArray<class_PackedByteArray>` con cada strings codificada como UTF-8. Las cadenas están terminadas en ``null``.
 
 .. rst-class:: classref-section-separator
 
@@ -482,7 +482,7 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **operator +**\ (\ right\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_operator_sum_PackedStringArray>`
 
-Returns a new **PackedStringArray** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedStringArray_method_append_array>` instead.
+Devuelve un nuevo **PackedStringArray** con el contenido de ``right`` añadido al final de este array. Para un mejor rendimiento, considera usar :ref:`append_array()<class_PackedStringArray_method_append_array>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Returns a new **PackedStringArray** with contents of ``right`` added at the end 
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_operator_eq_PackedStringArray>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal :ref:`String<class_String>`\ s at the corresponding indices.
+Devuelve ``true`` si el contenido de ambos arrays es el mismo, es decir, tienen todas las :ref:`String<class_String>`\ s iguales en los índices correspondientes.
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`String<class_String>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedStringArray_operator_idx_int>`
 
-Returns the :ref:`String<class_String>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+Devuelve la :ref:`String<class_String>` en el índice ``index``. Se pueden usar índices negativos para acceder a los elementos desde el final. Usar un índice fuera de los límites del array resultará en un error.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

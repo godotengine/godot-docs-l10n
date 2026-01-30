@@ -5,28 +5,28 @@
 EditorVCSInterface
 ==================
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-Version Control System (VCS) interface, which reads and writes to the local VCS in use.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Defines the API that the editor uses to extract information from the underlying VCS. The implementation of this API is included in VCS plugins, which are GDExtension plugins that inherit **EditorVCSInterface** and are attached (on demand) to the singleton instance of **EditorVCSInterface**. Instead of performing the task themselves, all the virtual functions listed below are calling the internally overridden functions in the VCS plugins to provide a plug-n-play experience. A custom VCS plugin is supposed to inherit from **EditorVCSInterface** and override each of these virtual functions.
+版本控制系統（VCS）介面，用於讀取和寫入正在使用的本地 VCS。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Version control systems <../tutorials/best_practices/version_control_systems>`
+定義編輯器使用的 API，負責從底層 VCS 提取資訊。該 API 的實作包含在 VCS 外掛程式中，這些外掛程式是繼承 **EditorVCSInterface** 並被附加（按需）到 **EditorVCSInterface** 的單例實例的 GDExtension 外掛程式。以下列出的所有虛函式都不會親自執行操作，而是會去呼叫 VCS 外掛程式中內部覆蓋的函式，以提供隨插即用的體驗。自訂 VCS 外掛程式應當繼承 **EditorVCSInterface** 並覆蓋這些虛函式。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`版本控制系統 <../tutorials/best_practices/version_control_systems>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -101,8 +101,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_EditorVCSInterface_ChangeType:
 
@@ -116,7 +116,7 @@ enum **ChangeType**: :ref:`🔗<enum_EditorVCSInterface_ChangeType>`
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_NEW** = ``0``
 
-A new file has been added.
+新增了新檔案。
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_MODIFIED:
 
@@ -124,7 +124,7 @@ A new file has been added.
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_MODIFIED** = ``1``
 
-An earlier added file has been modified.
+先前新增的檔已被修改。
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_RENAMED:
 
@@ -132,7 +132,7 @@ An earlier added file has been modified.
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_RENAMED** = ``2``
 
-An earlier added file has been renamed.
+先前新增的檔已被重命名。
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_DELETED:
 
@@ -140,7 +140,7 @@ An earlier added file has been renamed.
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_DELETED** = ``3``
 
-An earlier added file has been deleted.
+先前新增的檔已被刪除。
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_TYPECHANGE:
 
@@ -148,7 +148,7 @@ An earlier added file has been deleted.
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_TYPECHANGE** = ``4``
 
-An earlier added file has been typechanged.
+先前新增的檔案已更改型別。
 
 .. _class_EditorVCSInterface_constant_CHANGE_TYPE_UNMERGED:
 
@@ -156,7 +156,7 @@ An earlier added file has been typechanged.
 
 :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>` **CHANGE_TYPE_UNMERGED** = ``5``
 
-A file is left unmerged.
+檔未合併。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ enum **TreeArea**: :ref:`🔗<enum_EditorVCSInterface_TreeArea>`
 
 :ref:`TreeArea<enum_EditorVCSInterface_TreeArea>` **TREE_AREA_COMMIT** = ``0``
 
-A commit is encountered from the commit area.
+在提交區域遇到了提交。
 
 .. _class_EditorVCSInterface_constant_TREE_AREA_STAGED:
 
@@ -182,7 +182,7 @@ A commit is encountered from the commit area.
 
 :ref:`TreeArea<enum_EditorVCSInterface_TreeArea>` **TREE_AREA_STAGED** = ``1``
 
-A file is encountered from the staged area.
+在暫存區域遇到了檔。
 
 .. _class_EditorVCSInterface_constant_TREE_AREA_UNSTAGED:
 
@@ -190,7 +190,7 @@ A file is encountered from the staged area.
 
 :ref:`TreeArea<enum_EditorVCSInterface_TreeArea>` **TREE_AREA_UNSTAGED** = ``2``
 
-A file is encountered from the unstaged area.
+在未暫存區域遇到了檔。
 
 .. rst-class:: classref-section-separator
 
@@ -198,8 +198,8 @@ A file is encountered from the unstaged area.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_EditorVCSInterface_private_method__checkout_branch:
 
@@ -207,7 +207,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **_checkout_branch**\ (\ branch_name\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__checkout_branch>`
 
-Checks out a ``branch_name`` in the VCS.
+檢出 VCS 中的 ``branch_name`` 分支。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ Checks out a ``branch_name`` in the VCS.
 
 |void| **_commit**\ (\ msg\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__commit>`
 
-Commits the currently staged changes and applies the commit ``msg`` to the resulting commit.
+提交目前暫存的修改，並對提交套用提交資訊 ``msg``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ Commits the currently staged changes and applies the commit ``msg`` to the resul
 
 |void| **_create_branch**\ (\ branch_name\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__create_branch>`
 
-Creates a new branch named ``branch_name`` in the VCS.
+在 VCS 中新建名為 ``branch_name`` 的分支。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Creates a new branch named ``branch_name`` in the VCS.
 
 |void| **_create_remote**\ (\ remote_name\: :ref:`String<class_String>`, remote_url\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__create_remote>`
 
-Creates a new remote destination with name ``remote_name`` and points it to ``remote_url``. This can be an HTTPS remote or an SSH remote.
+建立一個名為 ``remote_name`` 的新遠端倉庫目標，並將其指向 ``remote_url``\ 。這既可以是 HTTPS 遠端倉庫，也可以是 SSH 遠端倉庫。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Creates a new remote destination with name ``remote_name`` and points it to ``re
 
 |void| **_discard_file**\ (\ file_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__discard_file>`
 
-Discards the changes made in a file present at ``file_path``.
+丟棄對位於 ``file_path`` 的檔進行的修改。
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ Discards the changes made in a file present at ``file_path``.
 
 |void| **_fetch**\ (\ remote\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__fetch>`
 
-Fetches new changes from the ``remote``, but doesn't write changes to the current working directory. Equivalent to ``git fetch``.
+從遠程倉庫 ``remote`` 中抓取新修改，但不將修改寫入目前工作目錄。相當於 ``git fetch``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Fetches new changes from the ``remote``, but doesn't write changes to the curren
 
 :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **_get_branch_list**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_branch_list>`
 
-Gets an instance of an :ref:`Array<class_Array>` of :ref:`String<class_String>`\ s containing available branch names in the VCS.
+獲取 :ref:`String<class_String>` 字串的 :ref:`Array<class_Array>` 陣列實例，包含在 VCS 中可用的分支名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Gets an instance of an :ref:`Array<class_Array>` of :ref:`String<class_String>`\
 
 :ref:`String<class_String>` **_get_current_branch_name**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_current_branch_name>`
 
-Gets the current branch name defined in the VCS.
+獲取 VCS 中定義的目前分支名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Gets the current branch name defined in the VCS.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_diff**\ (\ identifier\: :ref:`String<class_String>`, area\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_diff>`
 
-Returns an array of :ref:`Dictionary<class_Dictionary>` items (see :ref:`create_diff_file()<class_EditorVCSInterface_method_create_diff_file>`, :ref:`create_diff_hunk()<class_EditorVCSInterface_method_create_diff_hunk>`, :ref:`create_diff_line()<class_EditorVCSInterface_method_create_diff_line>`, :ref:`add_line_diffs_into_diff_hunk()<class_EditorVCSInterface_method_add_line_diffs_into_diff_hunk>` and :ref:`add_diff_hunks_into_diff_file()<class_EditorVCSInterface_method_add_diff_hunks_into_diff_file>`), each containing information about a diff. If ``identifier`` is a file path, returns a file diff, and if it is a commit identifier, then returns a commit diff.
+返回 :ref:`Dictionary<class_Dictionary>` 項的陣列（參見 :ref:`create_diff_file()<class_EditorVCSInterface_method_create_diff_file>`\ 、\ :ref:`create_diff_hunk()<class_EditorVCSInterface_method_create_diff_hunk>`\ 、\ :ref:`create_diff_line()<class_EditorVCSInterface_method_create_diff_line>`\ 、\ :ref:`add_line_diffs_into_diff_hunk()<class_EditorVCSInterface_method_add_line_diffs_into_diff_hunk>`\ 、和 :ref:`add_diff_hunks_into_diff_file()<class_EditorVCSInterface_method_add_diff_hunks_into_diff_file>`\ ），每項都包含一個差異的資訊。如果 ``identifier`` 是檔路徑，則返回呼函式差異；如果它是提交識別字，則返回提交差異。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ Returns an array of :ref:`Dictionary<class_Dictionary>` items (see :ref:`create_
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_line_diff**\ (\ file_path\: :ref:`String<class_String>`, text\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_line_diff>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>` items (see :ref:`create_diff_hunk()<class_EditorVCSInterface_method_create_diff_hunk>`), each containing a line diff between a file at ``file_path`` and the ``text`` which is passed in.
+返回 :ref:`Dictionary<class_Dictionary>` 字典項的 :ref:`Array<class_Array>` 陣列（見 :ref:`create_diff_hunk()<class_EditorVCSInterface_method_create_diff_hunk>`\ ），每一項都包含位於 ``file_path`` 的檔與傳入的 ``text`` 之間的單行差異。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Returns an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>` item
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_modified_files_data**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_modified_files_data>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>` items (see :ref:`create_status_file()<class_EditorVCSInterface_method_create_status_file>`), each containing the status data of every modified file in the project folder.
+返回 :ref:`Dictionary<class_Dictionary>` 字典項的 :ref:`Array<class_Array>` 陣列（見 :ref:`create_status_file()<class_EditorVCSInterface_method_create_status_file>`\ ），每一項都包含專案檔案夾中每個已修改的檔的狀態資料。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Returns an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>` item
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_previous_commits**\ (\ max_commits\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_previous_commits>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>` items (see :ref:`create_commit()<class_EditorVCSInterface_method_create_commit>`), each containing the data for a past commit.
+返回 :ref:`Dictionary<class_Dictionary>` 字典項的 :ref:`Array<class_Array>` 陣列（見 :ref:`create_commit()<class_EditorVCSInterface_method_create_commit>`\ ），每一項都包含一個過去提交的資料。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ Returns an :ref:`Array<class_Array>` of :ref:`Dictionary<class_Dictionary>` item
 
 :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **_get_remotes**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_remotes>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`String<class_String>`\ s, each containing the name of a remote configured in the VCS.
+返回 :ref:`String<class_String>` 字串的 :ref:`Array<class_Array>` 陣列，每一個都包含 VCS 中配置的一個遠端倉庫的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Returns an :ref:`Array<class_Array>` of :ref:`String<class_String>`\ s, each con
 
 :ref:`String<class_String>` **_get_vcs_name**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__get_vcs_name>`
 
-Returns the name of the underlying VCS provider.
+返回底層 VCS 提供方的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ Returns the name of the underlying VCS provider.
 
 :ref:`bool<class_bool>` **_initialize**\ (\ project_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__initialize>`
 
-Initializes the VCS plugin when called from the editor. Returns whether or not the plugin was successfully initialized. A VCS project is initialized at ``project_path``.
+從編輯器中呼叫時初始化該 VCS 外掛程式。返回該外掛程式是否成功初始化。會在 ``project_path`` 初始化 VCS 專案。
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ Initializes the VCS plugin when called from the editor. Returns whether or not t
 
 |void| **_pull**\ (\ remote\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__pull>`
 
-Pulls changes from the remote. This can give rise to merge conflicts.
+從遠程倉庫拉取修改。這可能會導致合併衝突。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ Pulls changes from the remote. This can give rise to merge conflicts.
 
 |void| **_push**\ (\ remote\: :ref:`String<class_String>`, force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__push>`
 
-Pushes changes to the ``remote``. If ``force`` is ``true``, a force push will override the change history already present on the remote.
+將修改推送至遠程倉庫 ``remote``\ 。如果 ``force`` 為 ``true``\ ，則會進行強制推送，覆蓋遠端倉庫中現有的修改歷史。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Pushes changes to the ``remote``. If ``force`` is ``true``, a force push will ov
 
 |void| **_remove_branch**\ (\ branch_name\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__remove_branch>`
 
-Remove a branch from the local VCS.
+從本地 VCS 中移除一個分支。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Remove a branch from the local VCS.
 
 |void| **_remove_remote**\ (\ remote_name\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__remove_remote>`
 
-Remove a remote from the local VCS.
+從本地 VCS 中移除一個遠端倉庫。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Remove a remote from the local VCS.
 
 |void| **_set_credentials**\ (\ username\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`, ssh_public_key_path\: :ref:`String<class_String>`, ssh_private_key_path\: :ref:`String<class_String>`, ssh_passphrase\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__set_credentials>`
 
-Set user credentials in the underlying VCS. ``username`` and ``password`` are used only during HTTPS authentication unless not already mentioned in the remote URL. ``ssh_public_key_path``, ``ssh_private_key_path``, and ``ssh_passphrase`` are only used during SSH authentication.
+在底層 VCS 中設定使用者認證資訊。使用者名 ``username`` 和密碼 ``password`` 只會在進行 HTTPS 認證且沒有在遠端倉庫 URL 中給出時使用。SSH 公開金鑰路徑 ``ssh_public_key_path``\ 、SSH 私密金鑰路徑 ``ssh_private_key_path``\ 、SSH 密碼 ``ssh_passphrase`` 只會在進行 SSH 認證時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Set user credentials in the underlying VCS. ``username`` and ``password`` are us
 
 :ref:`bool<class_bool>` **_shut_down**\ (\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__shut_down>`
 
-Shuts down VCS plugin instance. Called when the user either closes the editor or shuts down the VCS plugin through the editor UI.
+關閉 VCS 外掛程式實例。會在使用者關閉編輯器或通過編輯器 UI 關閉該 VCS 外掛程式時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ Shuts down VCS plugin instance. Called when the user either closes the editor or
 
 |void| **_stage_file**\ (\ file_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__stage_file>`
 
-Stages the file present at ``file_path`` to the staged area.
+將位於 ``file_path`` 的檔案暫存到暫存區。
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Stages the file present at ``file_path`` to the staged area.
 
 |void| **_unstage_file**\ (\ file_path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorVCSInterface_private_method__unstage_file>`
 
-Unstages the file present at ``file_path`` from the staged area to the unstaged area.
+將位於 ``file_path`` 的檔從暫存區撤銷到未暫存區。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Unstages the file present at ``file_path`` from the staged area to the unstaged 
 
 :ref:`Dictionary<class_Dictionary>` **add_diff_hunks_into_diff_file**\ (\ diff_file\: :ref:`Dictionary<class_Dictionary>`, diff_hunks\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ ) :ref:`🔗<class_EditorVCSInterface_method_add_diff_hunks_into_diff_file>`
 
-Helper function to add an array of ``diff_hunks`` into a ``diff_file``.
+輔助函式，用於將一組 ``diff_hunks`` 新增到 ``diff_file``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Helper function to add an array of ``diff_hunks`` into a ``diff_file``.
 
 :ref:`Dictionary<class_Dictionary>` **add_line_diffs_into_diff_hunk**\ (\ diff_hunk\: :ref:`Dictionary<class_Dictionary>`, line_diffs\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ ) :ref:`🔗<class_EditorVCSInterface_method_add_line_diffs_into_diff_hunk>`
 
-Helper function to add an array of ``line_diffs`` into a ``diff_hunk``.
+輔助函式，用於將一組 ``line_diffs`` 新增到 ``diff_hunk`` 中。
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ Helper function to add an array of ``line_diffs`` into a ``diff_hunk``.
 
 :ref:`Dictionary<class_Dictionary>` **create_commit**\ (\ msg\: :ref:`String<class_String>`, author\: :ref:`String<class_String>`, id\: :ref:`String<class_String>`, unix_timestamp\: :ref:`int<class_int>`, offset_minutes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_commit>`
 
-Helper function to create a commit :ref:`Dictionary<class_Dictionary>` item. ``msg`` is the commit message of the commit. ``author`` is a single human-readable string containing all the author's details, e.g. the email and name configured in the VCS. ``id`` is the identifier of the commit, in whichever format your VCS may provide an identifier to commits. ``unix_timestamp`` is the UTC Unix timestamp of when the commit was created. ``offset_minutes`` is the timezone offset in minutes, recorded from the system timezone where the commit was created.
+輔助函式， 用於建立一個提交 :ref:`Dictionary<class_Dictionary>` 項。\ ``msg`` 是該提交的提交消息。\ ``author`` 是單個人類可讀的字串，包含所有作者的詳細資訊，例如 VCS 中配置的電子郵件和名稱。無論 VCS 可能以哪種格式為提交提供識別字，\ ``id`` 是該提交的識別字。\ ``unix_timestamp`` 是該提交被建立時的 UTC Unix 時間戳記。\ ``offset_minutes`` 是該提交建立時目前系統時區的偏移量，單位為分鐘。
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Helper function to create a commit :ref:`Dictionary<class_Dictionary>` item. ``m
 
 :ref:`Dictionary<class_Dictionary>` **create_diff_file**\ (\ new_file\: :ref:`String<class_String>`, old_file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_diff_file>`
 
-Helper function to create a :ref:`Dictionary<class_Dictionary>` for storing old and new diff file paths.
+輔助函式，用於建立用來保存新舊檔路徑差異的 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ Helper function to create a :ref:`Dictionary<class_Dictionary>` for storing old 
 
 :ref:`Dictionary<class_Dictionary>` **create_diff_hunk**\ (\ old_start\: :ref:`int<class_int>`, new_start\: :ref:`int<class_int>`, old_lines\: :ref:`int<class_int>`, new_lines\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_diff_hunk>`
 
-Helper function to create a :ref:`Dictionary<class_Dictionary>` for storing diff hunk data. ``old_start`` is the starting line number in old file. ``new_start`` is the starting line number in new file. ``old_lines`` is the number of lines in the old file. ``new_lines`` is the number of lines in the new file.
+輔助函式，用於建立用於保存差異塊資料的 :ref:`Dictionary<class_Dictionary>`\ 。\ ``old_start`` 是舊文件中的起始行號。\ ``new_start`` 是新檔案中的起始行號。\ ``old_lines`` 是舊檔案中的行數。\ ``new_lines`` 是新檔案中的行數。
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ Helper function to create a :ref:`Dictionary<class_Dictionary>` for storing diff
 
 :ref:`Dictionary<class_Dictionary>` **create_diff_line**\ (\ new_line_no\: :ref:`int<class_int>`, old_line_no\: :ref:`int<class_int>`, content\: :ref:`String<class_String>`, status\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_diff_line>`
 
-Helper function to create a :ref:`Dictionary<class_Dictionary>` for storing a line diff. ``new_line_no`` is the line number in the new file (can be ``-1`` if the line is deleted). ``old_line_no`` is the line number in the old file (can be ``-1`` if the line is added). ``content`` is the diff text. ``status`` is a single character string which stores the line origin.
+輔助函式，建立用於保存行差異的 :ref:`Dictionary<class_Dictionary>`\ 。\ ``new_line_no`` 是新檔案中的行號（該行被刪除時可為 ``-1``\ ）。\ ``old_line_no`` 是舊檔案中的行號（該行為新增時可為 ``-1``\ ）。\ ``content`` 為差異文字。\ ``status`` 為保存該行原點的單字元字串。
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ Helper function to create a :ref:`Dictionary<class_Dictionary>` for storing a li
 
 :ref:`Dictionary<class_Dictionary>` **create_status_file**\ (\ file_path\: :ref:`String<class_String>`, change_type\: :ref:`ChangeType<enum_EditorVCSInterface_ChangeType>`, area\: :ref:`TreeArea<enum_EditorVCSInterface_TreeArea>`\ ) :ref:`🔗<class_EditorVCSInterface_method_create_status_file>`
 
-Helper function to create a :ref:`Dictionary<class_Dictionary>` used by editor to read the status of a file.
+輔助函式，用於建立被編輯器用來讀取檔狀態的 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -567,14 +567,14 @@ Helper function to create a :ref:`Dictionary<class_Dictionary>` used by editor t
 
 |void| **popup_error**\ (\ msg\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorVCSInterface_method_popup_error>`
 
-Pops up an error message in the editor which is shown as coming from the underlying VCS. Use this to show VCS specific error messages.
+在編輯器中彈出一條錯誤消息，顯示為來自底層 VCS。使用它來顯示 VCS 特定的錯誤消息。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

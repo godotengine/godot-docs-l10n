@@ -5,32 +5,32 @@
 ENetMultiplayerPeer
 ===================
 
-**Inherits:** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A MultiplayerPeer implementation using the `ENet <http://enet.bespin.org/index.html>`__ library.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A MultiplayerPeer implementation that should be passed to :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` after being initialized as either a client, server, or mesh. Events can then be handled by connecting to :ref:`MultiplayerAPI<class_MultiplayerAPI>` signals. See :ref:`ENetConnection<class_ENetConnection>` for more information on the ENet library wrapper.
-
-\ **Note:** ENet only uses UDP, not TCP. When forwarding the server port to make your server accessible on the public Internet, you only need to forward the server port in UDP. You can use the :ref:`UPNP<class_UPNP>` class to try to forward the server port automatically when starting the server.
+使用 `ENet <http://enet.bespin.org/index.html>`__ 庫實作的 MultiplayerPeer。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`
+MultiplayerPeer 的一種實作，應該在初始化為使用者端、伺服器或網格之後傳遞給 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ 。然後就可以通過連接到 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的訊號來處理事件。有關 ENet 庫包裝的更多資訊，請參見 :ref:`ENetConnection<class_ENetConnection>`\ 。
 
-- `API documentation on the ENet website <http://enet.bespin.org/usergroup0.html>`__
+\ **注意：**\ ENet 僅使用 UDP，不使用 TCP。當你想要將伺服器埠轉發到公共互聯網上以便讓伺服器可以被存取時，只需要轉發 UDP 伺服器埠即可。可以使用 :ref:`UPNP<class_UPNP>` 類嘗試在啟動伺服器時自動轉發伺服器埠。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`高級多人遊戲 <../tutorials/networking/high_level_multiplayer>`
+
+- `ENet 網站上的 API 文件 <http://enet.bespin.org/usergroup0.html>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ENetMultiplayerPeer_property_host:
 
@@ -80,7 +80,7 @@ Property Descriptions
 
 - :ref:`ENetConnection<class_ENetConnection>` **get_host**\ (\ )
 
-The underlying :ref:`ENetConnection<class_ENetConnection>` created after :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>` and :ref:`create_server()<class_ENetMultiplayerPeer_method_create_server>`.
+在 :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>` 和 :ref:`create_server()<class_ENetMultiplayerPeer_method_create_server>` 之後，建立的底層 :ref:`ENetConnection<class_ENetConnection>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -88,8 +88,8 @@ The underlying :ref:`ENetConnection<class_ENetConnection>` created after :ref:`c
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ENetMultiplayerPeer_method_add_mesh_peer:
 
@@ -97,9 +97,9 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_mesh_peer**\ (\ peer_id\: :ref:`int<class_int>`, host\: :ref:`ENetConnection<class_ENetConnection>`\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_add_mesh_peer>`
 
-Add a new remote peer with the given ``peer_id`` connected to the given ``host``.
+使用給定的 ``peer_id`` 新增一個新的遠端對等體，並將其連接到給定的 ``host``\ 。
 
-\ **Note:** The ``host`` must have exactly one peer in the :ref:`ENetPacketPeer.STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>` state.
+\ **注意：**\ ``host`` 必須只有一個處於 :ref:`ENetPacketPeer.STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>` 狀態的對等體。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Add a new remote peer with the given ``peer_id`` connected to the given ``host``
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_client**\ (\ address\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`, channel_count\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0, local_port\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_client>`
 
-Create client that connects to a server at ``address`` using specified ``port``. The given address needs to be either a fully qualified domain name (e.g. ``"www.example.com"``) or an IP address in IPv4 or IPv6 format (e.g. ``"192.168.1.1"``). The ``port`` is the port the server is listening on. The ``channel_count`` parameter can be used to specify the number of ENet channels allocated for the connection. The ``in_bandwidth`` and ``out_bandwidth`` parameters can be used to limit the incoming and outgoing bandwidth to the given number of bytes per second. The default of 0 means unlimited bandwidth. Note that ENet will strategically drop packets on specific sides of a connection between peers to ensure the peer's bandwidth is not overwhelmed. The bandwidth parameters also determine the window size of a connection which limits the amount of reliable packets that may be in transit at any given time. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if a client was created, :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>` if this ENetMultiplayerPeer instance already has an open connection (in which case you need to call :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>` first) or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the client could not be created. If ``local_port`` is specified, the client will also listen to the given port; this is useful for some NAT traversal techniques.
+建立使用者端，該使用者端使用指定的 ``port`` 連接到位於 ``address`` 的服務器。給定的位址必須是完全限定的功能變數名稱（例如 ``"www.example.com"``\ ），或 IPv4 或 IPv6 格式的 IP 地址（例如 ``"192.168.1.1"``\ ）。\ ``port`` 是伺服器監聽的埠。\ ``channel_count`` 參數可用於指定為連接分配的 ENet 通道數。\ ``in_bandwidth`` 和 ``out_bandwidth`` 參數可用於將傳入和傳出頻寬限制為給定的每秒位元組數。預設值 0 表示無限制的頻寬。請注意，ENet 將對在對等體之間的連接的特定端，策略性地丟棄封包，以確保對等體的頻寬不會被淹沒。頻寬參數還決定了連接的視窗大小，它限制了在任何給定時間可能正在傳輸的可靠封包的數量。如果建立了一個使用者端，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該 ENetMultiplayerPeer 實例已經有一個打開的連接（在這種情況下，需要先呼叫 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），則返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果不能被建立使用者端，則返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。如果指定了 ``local_port``\ ，使用者端也會監聽給定的埠；這對一些 NAT 穿越技術很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Create client that connects to a server at ``address`` using specified ``port``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_mesh**\ (\ unique_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_mesh>`
 
-Initialize this :ref:`MultiplayerPeer<class_MultiplayerPeer>` in mesh mode. The provided ``unique_id`` will be used as the local peer network unique ID once assigned as the :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`. In the mesh configuration you will need to set up each new peer manually using :ref:`ENetConnection<class_ENetConnection>` before calling :ref:`add_mesh_peer()<class_ENetMultiplayerPeer_method_add_mesh_peer>`. While this technique is more advanced, it allows for better control over the connection process (e.g. when dealing with NAT punch-through) and for better distribution of the network load (which would otherwise be more taxing on the server).
+在網格網路模式下初始化該 :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ 。提供的 ``unique_id`` 一旦被分配為 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ ，就將被用作本地對等體的網路唯一 ID。在網格網路配置中，需要在呼叫 :ref:`add_mesh_peer()<class_ENetMultiplayerPeer_method_add_mesh_peer>` 之前，使用 :ref:`ENetConnection<class_ENetConnection>` 手動設定每個新的對等體。這種技術更先進，它可以更好地控制連接過程（例如，在處理 NAT 穿透時），並更好地分配網路負載（否則會給伺服器帶來更大的負擔）。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ Initialize this :ref:`MultiplayerPeer<class_MultiplayerPeer>` in mesh mode. The 
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_server**\ (\ port\: :ref:`int<class_int>`, max_clients\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_server>`
 
-Create server that listens to connections via ``port``. The port needs to be an available, unused port between 0 and 65535. Note that ports below 1024 are privileged and may require elevated permissions depending on the platform. To change the interface the server listens on, use :ref:`set_bind_ip()<class_ENetMultiplayerPeer_method_set_bind_ip>`. The default IP is the wildcard ``"*"``, which listens on all available interfaces. ``max_clients`` is the maximum number of clients that are allowed at once, any number up to 4095 may be used, although the achievable number of simultaneous clients may be far lower and depends on the application. For additional details on the bandwidth parameters, see :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>`. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if a server was created, :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>` if this ENetMultiplayerPeer instance already has an open connection (in which case you need to call :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>` first) or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the server could not be created.
+建立通過 ``port`` 監聽連接的伺服器。該埠需要是一個介於 0 到 65535 之間的可用且未被使用的埠。請注意，低於 1024 的埠是特權埠，可能需要提升權限，具體取決於平臺。要更改伺服器監聽的介面，請使用 :ref:`set_bind_ip()<class_ENetMultiplayerPeer_method_set_bind_ip>`\ 。默認 IP 是萬用字元 ``"*"``\ ，它會監聽所有可用的介面。\ ``max_clients`` 是同時允許的最大使用者端數，可以使用最大可達 4095 的任何數位，儘管可實作的同時使用者端數可能要低得多，並且取決於套用程式。有關頻寬參數的其他詳細信息，請參閱 :ref:`create_client()<class_ENetMultiplayerPeer_method_create_client>`\ 。如果伺服器被建立，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果該 ENetMultiplayerPeer 實例已經有一個打開的連接（在這種情況下，需要先調用 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），則返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果伺服器不能被建立，則返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Create server that listens to connections via ``port``. The port needs to be an 
 
 :ref:`ENetPacketPeer<class_ENetPacketPeer>` **get_peer**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ENetMultiplayerPeer_method_get_peer>`
 
-Returns the :ref:`ENetPacketPeer<class_ENetPacketPeer>` associated to the given ``id``.
+返回與給定 ``id`` 關聯的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -159,14 +159,14 @@ Returns the :ref:`ENetPacketPeer<class_ENetPacketPeer>` associated to the given 
 
 |void| **set_bind_ip**\ (\ ip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_set_bind_ip>`
 
-The IP used when creating a server. This is set to the wildcard ``"*"`` by default, which binds to all available interfaces. The given IP needs to be in IPv4 or IPv6 address format, for example: ``"192.168.1.1"``.
+建立伺服器時使用的 IP。預設情況下，這被設定為萬用字元 ``"*"``\ ，它綁定到所有可用的介面。給定的 IP 位址格式需要是 IPv4 或 IPv6，例如：\ ``"192.168.1.1"``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

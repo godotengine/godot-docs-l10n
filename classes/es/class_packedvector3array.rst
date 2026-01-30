@@ -196,11 +196,11 @@ Añade un **PackedVector3Array** al final de este array.
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Vector3<class_Vector3>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedVector3Array_method_bsearch>`
 
-Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
+Encuentra el índice de un valor existente (o el índice de inserción que mantiene el orden, si el valor aún no está presente en el array) usando búsqueda binaria. Opcionalmente, se puede pasar un especificador ``before``. Si es ``false``, el índice devuelto vendrá después de todas las entradas existentes del valor en el array.
 
-\ **Note:** Calling :ref:`bsearch()<class_PackedVector3Array_method_bsearch>` on an unsorted array results in unexpected behavior.
+\ **Nota:** Llamar a :ref:`bsearch()<class_PackedVector3Array_method_bsearch>` en un array sin ordenar resultará en un comportamiento inesperado.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -224,9 +224,9 @@ Limpia el array. Esto es equivalente a usar :ref:`resize()<class_PackedVector3Ar
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_PackedVector3Array_method_count>`
 
-Returns the number of times an element is in the array.
+Devuelve el número de veces que un elemento se encuentra en el array.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Creates a copy of the array, and returns it.
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PackedVector3Array_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedVector3Array_method_remove_at>` instead.
+Elimina la primera ocurrencia de un valor del array y devuelve ``true``. Si el valor no existe en el array, no ocurre nada y se devuelve ``false``. Para eliminar un elemento por índice, usa :ref:`remove_at()<class_PackedVector3Array_method_remove_at>` en su lugar.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ Asigna el valor dado a todos los elementos del array. Esto normalmente se puede 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`Vector3<class_Vector3>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedVector3Array_method_find>`
 
-Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
+Busca el array por un valor y devuelve su índice o ``-1`` si no se encuentra. Opcionalmente, se puede pasar el índice de búsqueda inicial.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método podrían no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -290,9 +290,9 @@ Searches the array for a value and returns its index or ``-1`` if not found. Opt
 
 :ref:`Vector3<class_Vector3>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedVector3Array_method_get>`
 
-Returns the :ref:`Vector3<class_Vector3>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Vector3(0, 0, 0)``.
+Devuelve el :ref:`Vector3<class_Vector3>` en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``Vector3(0, 0, 0)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. En particular, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -304,9 +304,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_PackedVector3Array_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+Devuelve ``true`` si el array contiene ``value``.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -392,9 +392,9 @@ Invierte el orden de los elementos en el array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`Vector3<class_Vector3>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedVector3Array_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+Busca el array en orden inverso. Opcionalmente, se puede pasar un índice de búsqueda inicial. Si es negativo, el índice inicial se considera relativo al final del array.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -446,9 +446,9 @@ Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es de
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedVector3Array_method_sort>`
 
-Sorts the elements of the array in ascending order.
+Ordena los elementos del array en orden ascendente.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedVector3Array_method_to_byte_array>`
 
-Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each vector encoded as bytes.
+Devuelve un :ref:`PackedByteArray<class_PackedByteArray>` con cada vector codificado como bytes.
 
 .. rst-class:: classref-section-separator
 

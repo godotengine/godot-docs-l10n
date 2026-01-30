@@ -5,12 +5,12 @@
 RID
 ===
 
-A handle for a :ref:`Resource<class_Resource>`'s unique identifier.
+:ref:`Resource<class_Resource>` 的唯一識別碼的控制碼。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The RID :ref:`Variant<class_Variant>` type is used to access a low-level resource by its unique ID. RIDs are opaque, which means they do not grant access to the resource by themselves. They are used by the low-level server classes, such as :ref:`DisplayServer<class_DisplayServer>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`TextServer<class_TextServer>`, etc.
 
@@ -20,12 +20,12 @@ A low-level resource may correspond to a high-level :ref:`Resource<class_Resourc
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_RID_constructor_RID:
 
@@ -87,7 +87,7 @@ Constructor Descriptions
 
 :ref:`RID<class_RID>` **RID**\ (\ ) :ref:`🔗<class_RID_constructor_RID>`
 
-Constructs an empty **RID** with the invalid ID ``0``.
+建構空的 **RID**\ ，內容為無效的 ID ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -105,8 +105,8 @@ Constructs an **RID** as a copy of the given **RID**.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_RID_method_get_id:
 
@@ -114,7 +114,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **get_id**\ (\ ) |const| :ref:`🔗<class_RID_method_get_id>`
 
-Returns the ID of the referenced low-level resource.
+返回引用的底層資源的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ Returns the ID of the referenced low-level resource.
 
 :ref:`bool<class_bool>` **is_valid**\ (\ ) |const| :ref:`🔗<class_RID_method_is_valid>`
 
-Returns ``true`` if the **RID** is not ``0``.
+如果該 **RID** 非 ``0``\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -134,8 +134,8 @@ Returns ``true`` if the **RID** is not ``0``.
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_RID_operator_neq_RID:
 
@@ -143,7 +143,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RID_operator_neq_RID>`
 
-Returns ``true`` if the **RID**\ s are not equal.
+如果 **RID** 不相等，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Returns ``true`` if the **RID**\ s are not equal.
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RID_operator_lt_RID>`
 
-Returns ``true`` if the **RID**'s ID is less than ``right``'s ID.
+如果該 **RID** 的 ID 小於右側 ``right`` 的 ID，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Returns ``true`` if the **RID**'s ID is less than ``right``'s ID.
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RID_operator_lte_RID>`
 
-Returns ``true`` if the **RID**'s ID is less than or equal to ``right``'s ID.
+如果該 **RID** 的 ID 小於等於右側 ``right`` 的 ID，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Returns ``true`` if the **RID**'s ID is less than or equal to ``right``'s ID.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RID_operator_eq_RID>`
 
-Returns ``true`` if both **RID**\ s are equal, which means they both refer to the same low-level resource.
+如果 **RID** 相等，則返回 ``true``\ ，表示它們引用的是同一個底層資源。
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ Returns ``true`` if both **RID**\ s are equal, which means they both refer to th
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RID_operator_gt_RID>`
 
-Returns ``true`` if the **RID**'s ID is greater than ``right``'s ID.
+如果該 **RID** 的 ID 大於右側 ``right`` 的 ID，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -203,14 +203,14 @@ Returns ``true`` if the **RID**'s ID is greater than ``right``'s ID.
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RID_operator_gte_RID>`
 
-Returns ``true`` if the **RID**'s ID is greater than or equal to ``right``'s ID.
+如果該 **RID** 的 ID 大於等於右側 ``right`` 的 ID，則返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

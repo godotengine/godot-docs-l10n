@@ -495,7 +495,7 @@ Assistant de fonction pour ajouter un tableau de ``diff_hunks`` dans un ``diff_f
 
 :ref:`Dictionary<class_Dictionary>` **add_line_diffs_into_diff_hunk**\ (\ diff_hunk\: :ref:`Dictionary<class_Dictionary>`, line_diffs\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\]\ ) :ref:`🔗<class_EditorVCSInterface_method_add_line_diffs_into_diff_hunk>`
 
-Assistant de fonction pour ajouter un tableau de ``line_diffs`` dans un ``diff_hunk``.
+Fonction d'aide pour ajouter un tableau de ``line_diffs`` dans un ``diff_hunk``.
 
 .. rst-class:: classref-item-separator
 

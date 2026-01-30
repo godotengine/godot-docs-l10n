@@ -5,23 +5,23 @@
 AudioStreamInteractive
 ======================
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Audio stream that can playback music interactively, combining clips and a transition table.
+可互動播放音樂的音訊串流，結合片段與轉場表。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This is an audio stream that can playback music interactively, combining clips and a transition table. Clips must be added first, and then the transition rules via the :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`. Additionally, this stream exports a property parameter to control the playback via :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, or :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`.
+這是一種可互動播放音樂的音訊串流，能結合片段與轉場表。必須先加入片段，再透過 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>` 設定轉場規則。此外，此串流會匯出一個屬性，讓你可透過 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`\ 、\ :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` 或 :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` 來控制播放。
 
-The way this is used is by filling a number of clips, then configuring the transition table. From there, clips are selected for playback and the music will smoothly go from the current to the new one while using the corresponding transition rule defined in the transition table.
+使用方式為先填入多個片段，再設定轉場表。之後會依轉場表中定義的規則選擇片段播放，音樂將會從目前片段順暢地銜接到下一個片段。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AudioStreamInteractive_TransitionFromTime:
 
@@ -101,7 +101,7 @@ enum **TransitionFromTime**: :ref:`🔗<enum_AudioStreamInteractive_TransitionFr
 
 :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>` **TRANSITION_FROM_TIME_IMMEDIATE** = ``0``
 
-Start transition as soon as possible, don't wait for any specific time position.
+儘快開始轉場，不等待特定時間位置。
 
 .. _class_AudioStreamInteractive_constant_TRANSITION_FROM_TIME_NEXT_BEAT:
 
@@ -109,7 +109,7 @@ Start transition as soon as possible, don't wait for any specific time position.
 
 :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>` **TRANSITION_FROM_TIME_NEXT_BEAT** = ``1``
 
-Transition when the clip playback position reaches the next beat.
+當播放位置到達下一拍時進行轉場。
 
 .. _class_AudioStreamInteractive_constant_TRANSITION_FROM_TIME_NEXT_BAR:
 
@@ -117,7 +117,7 @@ Transition when the clip playback position reaches the next beat.
 
 :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>` **TRANSITION_FROM_TIME_NEXT_BAR** = ``2``
 
-Transition when the clip playback position reaches the next bar.
+當播放位置到達下一小節時進行轉場。
 
 .. _class_AudioStreamInteractive_constant_TRANSITION_FROM_TIME_END:
 
@@ -125,7 +125,7 @@ Transition when the clip playback position reaches the next bar.
 
 :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>` **TRANSITION_FROM_TIME_END** = ``3``
 
-Transition when the current clip finished playing.
+當目前片段播放結束時進行轉場。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ enum **TransitionToTime**: :ref:`🔗<enum_AudioStreamInteractive_TransitionToTi
 
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_SAME_POSITION** = ``0``
 
-Transition to the same position in the destination clip. This is useful when both clips have exactly the same length and the music should fade between them.
+轉場到目的片段的相同位置。當兩片段長度完全相同且需要在它們之間淡化時很有用。
 
 .. _class_AudioStreamInteractive_constant_TRANSITION_TO_TIME_START:
 
@@ -151,7 +151,7 @@ Transition to the same position in the destination clip. This is useful when bot
 
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **TRANSITION_TO_TIME_START** = ``1``
 
-Transition to the start of the destination clip.
+轉場到目的片段的開始。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ enum **FadeMode**: :ref:`🔗<enum_AudioStreamInteractive_FadeMode>`
 
 :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>` **FADE_DISABLED** = ``0``
 
-Do not use fade for the transition. This is useful when transitioning from a clip-end to clip-beginning, and each clip has their begin/end.
+轉場時不使用淡入淡出。適用於片段結尾接片段開頭，且各片段本身已有開場／結尾的情況。
 
 .. _class_AudioStreamInteractive_constant_FADE_IN:
 
@@ -177,7 +177,7 @@ Do not use fade for the transition. This is useful when transitioning from a cli
 
 :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>` **FADE_IN** = ``1``
 
-Use a fade-in in the next clip, let the current clip finish.
+讓目前片段播畢，並在下一個片段使用淡入。
 
 .. _class_AudioStreamInteractive_constant_FADE_OUT:
 
@@ -185,7 +185,7 @@ Use a fade-in in the next clip, let the current clip finish.
 
 :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>` **FADE_OUT** = ``2``
 
-Use a fade-out in the current clip, the next clip will start by itself.
+在目前片段使用淡出，下一個片段將自行開始。
 
 .. _class_AudioStreamInteractive_constant_FADE_CROSS:
 
@@ -193,7 +193,7 @@ Use a fade-out in the current clip, the next clip will start by itself.
 
 :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>` **FADE_CROSS** = ``3``
 
-Use a cross-fade between clips.
+在片段之間使用交叉淡化。
 
 .. _class_AudioStreamInteractive_constant_FADE_AUTOMATIC:
 
@@ -201,7 +201,7 @@ Use a cross-fade between clips.
 
 :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>` **FADE_AUTOMATIC** = ``4``
 
-Use automatic fade logic depending on the transition from/to. It is recommended to use this by default.
+依來源／目的自動選擇淡化邏輯。建議預設使用此模式。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ enum **AutoAdvanceMode**: :ref:`🔗<enum_AudioStreamInteractive_AutoAdvanceMode
 
 :ref:`AutoAdvanceMode<enum_AudioStreamInteractive_AutoAdvanceMode>` **AUTO_ADVANCE_DISABLED** = ``0``
 
-Disable auto-advance (default).
+停用自動前進（預設）。
 
 .. _class_AudioStreamInteractive_constant_AUTO_ADVANCE_ENABLED:
 
@@ -227,7 +227,7 @@ Disable auto-advance (default).
 
 :ref:`AutoAdvanceMode<enum_AudioStreamInteractive_AutoAdvanceMode>` **AUTO_ADVANCE_ENABLED** = ``1``
 
-Enable auto-advance, a clip must be specified.
+啟用自動前進，必須指定片段。
 
 .. _class_AudioStreamInteractive_constant_AUTO_ADVANCE_RETURN_TO_HOLD:
 
@@ -235,7 +235,7 @@ Enable auto-advance, a clip must be specified.
 
 :ref:`AutoAdvanceMode<enum_AudioStreamInteractive_AutoAdvanceMode>` **AUTO_ADVANCE_RETURN_TO_HOLD** = ``2``
 
-Enable auto-advance, but instead of specifying a clip, the playback will return to hold (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+啟用自動前進，但不指定片段，而是回到保持的片段（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -243,8 +243,8 @@ Enable auto-advance, but instead of specifying a clip, the playback will return 
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_AudioStreamInteractive_constant_CLIP_ANY:
 
@@ -252,7 +252,7 @@ Constants
 
 **CLIP_ANY** = ``-1`` :ref:`🔗<class_AudioStreamInteractive_constant_CLIP_ANY>`
 
-This constant describes that any clip is valid for a specific transition as either source or destination.
+此常數表示在特定轉場中，任何片段都可作為來源或目的。
 
 .. rst-class:: classref-section-separator
 
@@ -260,8 +260,8 @@ This constant describes that any clip is valid for a specific transition as eith
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioStreamInteractive_property_clip_count:
 
@@ -274,7 +274,7 @@ Property Descriptions
 - |void| **set_clip_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_clip_count**\ (\ )
 
-Amount of clips contained in this interactive player.
+此互動播放器包含的片段數量。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Amount of clips contained in this interactive player.
 - |void| **set_initial_clip**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_initial_clip**\ (\ )
 
-Index of the initial clip, which will be played first when this stream is played.
+初始片段的索引，串流開始播放時會先播放此片段。
 
 .. rst-class:: classref-section-separator
 
@@ -299,8 +299,8 @@ Index of the initial clip, which will be played first when this stream is played
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamInteractive_method_add_transition:
 
@@ -308,21 +308,21 @@ Method Descriptions
 
 |void| **add_transition**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`, from_time\: :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>`, to_time\: :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>`, fade_mode\: :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>`, fade_beats\: :ref:`float<class_float>`, use_filler_clip\: :ref:`bool<class_bool>` = false, filler_clip\: :ref:`int<class_int>` = -1, hold_previous\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AudioStreamInteractive_method_add_transition>`
 
-Add a transition between two clips. Provide the indices of the source and destination clips, or use the :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` constant to indicate that transition happens to/from any clip to this one.
+在兩個片段之間加入轉場。請傳入來源與目的片段的索引，或使用常數 :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` 表示自/向任何片段的轉場。
 
-\* ``from_time`` indicates the moment in the current clip the transition will begin after triggered.
+\* ``from_time``\ ：觸發後，轉場在目前片段的何時開始。
 
-\* ``to_time`` indicates the time in the next clip that the playback will start from.
+\* ``to_time``\ ：下一個片段從何處開始播放。
 
-\* ``fade_mode`` indicates how the fade will happen between clips. If unsure, just use :ref:`FADE_AUTOMATIC<class_AudioStreamInteractive_constant_FADE_AUTOMATIC>` which uses the most common type of fade for each situation.
+\* ``fade_mode``\ ：片段間的淡入淡出方式。如無特別需求，使用 :ref:`FADE_AUTOMATIC<class_AudioStreamInteractive_constant_FADE_AUTOMATIC>` 即可，這會依情況選擇最常用的淡化模式。
 
-\* ``fade_beats`` indicates how many beats the fade will take. Using decimals is allowed.
+\* ``fade_beats``\ ：淡入淡出將持續多少拍，可使用小數。
 
-\* ``use_filler_clip`` indicates that there will be a filler clip used between the source and destination clips.
+\* ``use_filler_clip``\ ：是否在來源與目的片段之間插入填充片段。
 
-\* ``filler_clip`` the index of the filler clip.
+\* ``filler_clip``\ ：填充片段的索引。
 
-\* If ``hold_previous`` is used, then this clip will be remembered. This can be used together with :ref:`AUTO_ADVANCE_RETURN_TO_HOLD<class_AudioStreamInteractive_constant_AUTO_ADVANCE_RETURN_TO_HOLD>` to return to this clip after another is done playing.
+\* 若指定 ``hold_previous``\ ，則此片段會被記住，可與 :ref:`AUTO_ADVANCE_RETURN_TO_HOLD<class_AudioStreamInteractive_constant_AUTO_ADVANCE_RETURN_TO_HOLD>` 搭配，在其他片段播放完後回到此片段。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Add a transition between two clips. Provide the indices of the source and destin
 
 |void| **erase_transition**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamInteractive_method_erase_transition>`
 
-Erase a transition by providing ``from_clip`` and ``to_clip`` clip indices. :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` can be used for either argument or both.
+提供 ``from_clip`` 與 ``to_clip`` 的片段索引即可刪除轉場。兩者皆可使用 :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ Erase a transition by providing ``from_clip`` and ``to_clip`` clip indices. :ref
 
 :ref:`AutoAdvanceMode<enum_AudioStreamInteractive_AutoAdvanceMode>` **get_clip_auto_advance**\ (\ clip_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_clip_auto_advance>`
 
-Return whether a clip has auto-advance enabled. See :ref:`set_clip_auto_advance()<class_AudioStreamInteractive_method_set_clip_auto_advance>`.
+返回指定片段是否啟用自動前進。參見 :ref:`set_clip_auto_advance()<class_AudioStreamInteractive_method_set_clip_auto_advance>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -358,7 +358,7 @@ Return whether a clip has auto-advance enabled. See :ref:`set_clip_auto_advance(
 
 :ref:`int<class_int>` **get_clip_auto_advance_next_clip**\ (\ clip_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_clip_auto_advance_next_clip>`
 
-Return the clip towards which the clip referenced by ``clip_index`` will auto-advance to.
+返回索引為 ``clip_index`` 的片段將自動前進到的目標片段索引。
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ Return the clip towards which the clip referenced by ``clip_index`` will auto-ad
 
 :ref:`StringName<class_StringName>` **get_clip_name**\ (\ clip_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_clip_name>`
 
-Return the name of a clip.
+返回片段的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ Return the name of a clip.
 
 :ref:`AudioStream<class_AudioStream>` **get_clip_stream**\ (\ clip_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_clip_stream>`
 
-Return the :ref:`AudioStream<class_AudioStream>` associated with a clip.
+返回與片段關聯的 :ref:`AudioStream<class_AudioStream>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ Return the :ref:`AudioStream<class_AudioStream>` associated with a clip.
 
 :ref:`float<class_float>` **get_transition_fade_beats**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_fade_beats>`
 
-Return the time (in beats) for a transition (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場所需的時間（拍數）（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ Return the time (in beats) for a transition (see :ref:`add_transition()<class_Au
 
 :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>` **get_transition_fade_mode**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_fade_mode>`
 
-Return the mode for a transition (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場的模式（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -418,7 +418,7 @@ Return the mode for a transition (see :ref:`add_transition()<class_AudioStreamIn
 
 :ref:`int<class_int>` **get_transition_filler_clip**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_filler_clip>`
 
-Return the filler clip for a transition (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場所使用的填充片段（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ Return the filler clip for a transition (see :ref:`add_transition()<class_AudioS
 
 :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>` **get_transition_from_time**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_from_time>`
 
-Return the source time position for a transition (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場的來源時間位置（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ Return the source time position for a transition (see :ref:`add_transition()<cla
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_transition_list**\ (\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_list>`
 
-Return the list of transitions (from, to interleaved).
+返回轉場清單（來源與目的交錯排列）。
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +454,7 @@ Return the list of transitions (from, to interleaved).
 
 :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>` **get_transition_to_time**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_get_transition_to_time>`
 
-Return the destination time position for a transition (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場的目的時間位置（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ Return the destination time position for a transition (see :ref:`add_transition(
 
 :ref:`bool<class_bool>` **has_transition**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_has_transition>`
 
-Returns ``true`` if a given transition exists (was added via :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+若指定的轉場已存在（由 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>` 新增），則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ Returns ``true`` if a given transition exists (was added via :ref:`add_transitio
 
 :ref:`bool<class_bool>` **is_transition_holding_previous**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_is_transition_holding_previous>`
 
-Return whether a transition uses the *hold previous* functionality (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場是否使用 *保持前一片段* 功能（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ Return whether a transition uses the *hold previous* functionality (see :ref:`ad
 
 :ref:`bool<class_bool>` **is_transition_using_filler_clip**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamInteractive_method_is_transition_using_filler_clip>`
 
-Return whether a transition uses the *filler clip* functionality (see :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`).
+返回轉場是否使用 *填充片段* 功能（參見 :ref:`add_transition()<class_AudioStreamInteractive_method_add_transition>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Return whether a transition uses the *filler clip* functionality (see :ref:`add_
 
 |void| **set_clip_auto_advance**\ (\ clip_index\: :ref:`int<class_int>`, mode\: :ref:`AutoAdvanceMode<enum_AudioStreamInteractive_AutoAdvanceMode>`\ ) :ref:`🔗<class_AudioStreamInteractive_method_set_clip_auto_advance>`
 
-Set whether a clip will auto-advance by changing the auto-advance mode.
+設定片段的自動前進模式。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Set whether a clip will auto-advance by changing the auto-advance mode.
 
 |void| **set_clip_auto_advance_next_clip**\ (\ clip_index\: :ref:`int<class_int>`, auto_advance_next_clip\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamInteractive_method_set_clip_auto_advance_next_clip>`
 
-Set the index of the next clip towards which this clip will auto advance to when finished. If the clip being played loops, then auto-advance will be ignored.
+設定此片段播畢後將自動前進到的下一個片段索引。若該片段會循環播放，則自動前進將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Set the index of the next clip towards which this clip will auto advance to when
 
 |void| **set_clip_name**\ (\ clip_index\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AudioStreamInteractive_method_set_clip_name>`
 
-Set the name of the current clip (for easier identification).
+設定目前片段的名稱（便於辨識）。
 
 .. rst-class:: classref-item-separator
 
@@ -538,14 +538,14 @@ Set the name of the current clip (for easier identification).
 
 |void| **set_clip_stream**\ (\ clip_index\: :ref:`int<class_int>`, stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioStreamInteractive_method_set_clip_stream>`
 
-Set the :ref:`AudioStream<class_AudioStream>` associated with the current clip.
+設定目前片段關聯的 :ref:`AudioStream<class_AudioStream>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,29 +5,29 @@
 TLSOptions
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-TLS configuration for clients and servers.
+客户端与服务器的 TLS 配置。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-TLSOptions abstracts the configuration options for the :ref:`StreamPeerTLS<class_StreamPeerTLS>` and :ref:`PacketPeerDTLS<class_PacketPeerDTLS>` classes.
+TLSOptions 是对 :ref:`StreamPeerTLS<class_StreamPeerTLS>` 和 :ref:`PacketPeerDTLS<class_PacketPeerDTLS>` 类中配置选项的抽象。
 
-Objects of this class cannot be instantiated directly, and one of the static methods :ref:`client()<class_TLSOptions_method_client>`, :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>`, or :ref:`server()<class_TLSOptions_method_server>` should be used instead.
+无法直接实例化这个类的对象，应改用静态方法 :ref:`client()<class_TLSOptions_method_client>`\ 、\ :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` 或 :ref:`server()<class_TLSOptions_method_server>`\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Create a TLS client configuration which uses our custom trusted CA chain.
+    # 创建 TLS 客户端配置，使用自定义 CA 信任链。
     var client_trusted_cas = load("res://my_trusted_cas.crt")
     var client_tls_options = TLSOptions.client(client_trusted_cas)
 
-    # Create a TLS server configuration.
+    # 创建 TLS 服务器配置。
     var server_certs = load("res://my_server_cas.crt")
     var server_key = load("res://my_server_key.key")
     var server_tls_options = TLSOptions.server(server_key, server_certs)
@@ -36,8 +36,8 @@ Objects of this class cannot be instantiated directly, and one of the static met
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TLSOptions_method_client:
 
@@ -77,11 +77,11 @@ Method Descriptions
 
 :ref:`TLSOptions<class_TLSOptions>` **client**\ (\ trusted_chain\: :ref:`X509Certificate<class_X509Certificate>` = null, common_name_override\: :ref:`String<class_String>` = ""\ ) |static| :ref:`🔗<class_TLSOptions_method_client>`
 
-Creates a TLS client configuration which validates certificates and their common names (fully qualified domain names).
+创建 TLS 客户端配置，验证证书及其通用名称（完整域名）。
 
-You can specify a custom ``trusted_chain`` of certification authorities (the default CA list will be used if ``null``), and optionally provide a ``common_name_override`` if you expect the certificate to have a common name other than the server FQDN.
+你可以指定自定义的证书颁发机构信任链 ``trusted_chain``\ （如果为 ``null`` 则使用默认 CA 列表）。如果你希望证书拥有服务器 FQDN 之外的通用名称，还可以提供通用名称覆盖 ``common_name_override``\ 。
 
-\ **Note:** On the Web platform, TLS verification is always enforced against the CA list of the web browser. This is considered a security feature.
+\ **注意：**\ 在 Web 平台上，TLS 验证始终强制使用 Web 浏览器的 CA 列表。这是一种安全特性。
 
 .. rst-class:: classref-item-separator
 
@@ -93,9 +93,9 @@ You can specify a custom ``trusted_chain`` of certification authorities (the def
 
 :ref:`TLSOptions<class_TLSOptions>` **client_unsafe**\ (\ trusted_chain\: :ref:`X509Certificate<class_X509Certificate>` = null\ ) |static| :ref:`🔗<class_TLSOptions_method_client_unsafe>`
 
-Creates an **unsafe** TLS client configuration where certificate validation is optional. You can optionally provide a valid ``trusted_chain``, but the common name of the certificates will never be checked. Using this configuration for purposes other than testing **is not recommended**.
+创建\ **不安全**\ 的 TLS 客户端配置，证书验证为可选项。你可以选择提供有效的信任链 ``trusted_chain``\ ，但永远不会对证书的通用名称进行检查。这种配置\ **不推荐**\ 用于测试之外的用途。
 
-\ **Note:** On the Web platform, TLS verification is always enforced against the CA list of the web browser. This is considered a security feature.
+\ **注意：**\ 在 Web 平台上，TLS 验证始终强制使用 Web 浏览器的 CA 列表。这是一种安全特性。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Creates an **unsafe** TLS client configuration where certificate validation is o
 
 :ref:`String<class_String>` **get_common_name_override**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_common_name_override>`
 
-Returns the common name (domain name) override specified when creating with :ref:`client()<class_TLSOptions_method_client>`.
+返回使用 :ref:`client()<class_TLSOptions_method_client>` 创建时指定的通用名（域名）覆盖项。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Returns the common name (domain name) override specified when creating with :ref
 
 :ref:`X509Certificate<class_X509Certificate>` **get_own_certificate**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_own_certificate>`
 
-Returns the :ref:`X509Certificate<class_X509Certificate>` specified when creating with :ref:`server()<class_TLSOptions_method_server>`.
+返回使用 :ref:`server()<class_TLSOptions_method_server>` 创建时指定的 :ref:`X509Certificate<class_X509Certificate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Returns the :ref:`X509Certificate<class_X509Certificate>` specified when creatin
 
 :ref:`CryptoKey<class_CryptoKey>` **get_private_key**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_private_key>`
 
-Returns the :ref:`CryptoKey<class_CryptoKey>` specified when creating with :ref:`server()<class_TLSOptions_method_server>`.
+返回使用 :ref:`server()<class_TLSOptions_method_server>` 创建时指定的 :ref:`CryptoKey<class_CryptoKey>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Returns the :ref:`CryptoKey<class_CryptoKey>` specified when creating with :ref:
 
 :ref:`X509Certificate<class_X509Certificate>` **get_trusted_ca_chain**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_get_trusted_ca_chain>`
 
-Returns the CA :ref:`X509Certificate<class_X509Certificate>` chain specified when creating with :ref:`client()<class_TLSOptions_method_client>` or :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>`.
+返回使用 :ref:`client()<class_TLSOptions_method_client>` 或 :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` 创建时使用的 CA :ref:`X509Certificate<class_X509Certificate>` 链。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Returns the CA :ref:`X509Certificate<class_X509Certificate>` chain specified whe
 
 :ref:`bool<class_bool>` **is_server**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_is_server>`
 
-Returns ``true`` if created with :ref:`server()<class_TLSOptions_method_server>`, ``false`` otherwise.
+如果是通过 :ref:`server()<class_TLSOptions_method_server>` 创建的则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Returns ``true`` if created with :ref:`server()<class_TLSOptions_method_server>`
 
 :ref:`bool<class_bool>` **is_unsafe_client**\ (\ ) |const| :ref:`🔗<class_TLSOptions_method_is_unsafe_client>`
 
-Returns ``true`` if created with :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>`, ``false`` otherwise.
+如果是通过 :ref:`client_unsafe()<class_TLSOptions_method_client_unsafe>` 创建的则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -179,16 +179,16 @@ Returns ``true`` if created with :ref:`client_unsafe()<class_TLSOptions_method_c
 
 :ref:`TLSOptions<class_TLSOptions>` **server**\ (\ key\: :ref:`CryptoKey<class_CryptoKey>`, certificate\: :ref:`X509Certificate<class_X509Certificate>`\ ) |static| :ref:`🔗<class_TLSOptions_method_server>`
 
-Creates a TLS server configuration using the provided ``key`` and ``certificate``.
+使用提供的密钥 ``key`` 和证书 ``certificate`` 创建 TLS 服务器配置。
 
-\ **Note:** The ``certificate`` should include the full certificate chain up to the signing CA (certificates file can be concatenated using a general purpose text editor).
+\ **注意：**\ ``certificate`` 中应当包含签名 CA 的完整证书链（可以使用通用文本编辑器连接证书文件）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

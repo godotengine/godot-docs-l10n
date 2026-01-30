@@ -5,28 +5,28 @@
 AudioEffectAmplify
 ==================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds an amplifying audio effect to an audio bus.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Increases or decreases the volume being routed through the audio bus.
+為音訊匯流排新增一個放大效果。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+提高或降低通過音訊匯流排的音量。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioEffectAmplify_property_volume_db:
 
@@ -57,7 +57,7 @@ Property Descriptions
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Amount of amplification in decibels. Positive values make the sound louder, negative values make it quieter. Value can range from -80 to 24.
+放大量（dB）。正值使聲音更大，負值則更小，可設定 -80 至 24。
 
 .. rst-class:: classref-item-separator
 
@@ -74,16 +74,16 @@ Amount of amplification in decibels. Positive values make the sound louder, nega
 - |void| **set_volume_linear**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_linear**\ (\ )
 
-Amount of amplification as a linear value.
+以線性值表示的放大量。
 
-\ **Note:** This member modifies :ref:`volume_db<class_AudioEffectAmplify_property_volume_db>` for convenience. The returned value is equivalent to the result of :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` on :ref:`volume_db<class_AudioEffectAmplify_property_volume_db>`. Setting this member is equivalent to setting :ref:`volume_db<class_AudioEffectAmplify_property_volume_db>` to the result of :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` on a value.
+\ **注意：** 此屬性為操作便利而同步更新 :ref:`volume_db<class_AudioEffectAmplify_property_volume_db>`\ 。讀取時相當於對 :ref:`volume_db<class_AudioEffectAmplify_property_volume_db>` 執行 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>`\ ；寫入時則以 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` 轉換後指定至 :ref:`volume_db<class_AudioEffectAmplify_property_volume_db>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

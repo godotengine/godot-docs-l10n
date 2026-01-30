@@ -5,25 +5,25 @@
 SkeletonModification2DStackHolder
 =================================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A modification that holds and executes a :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`.
+存放並執行 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` 的修改器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This :ref:`SkeletonModification2D<class_SkeletonModification2D>` holds a reference to a :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`, allowing you to use multiple modification stacks on a single :ref:`Skeleton2D<class_Skeleton2D>`.
+這種 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 可以存放對 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` 的引用，讓你能夠對單個 :ref:`Skeleton2D<class_Skeleton2D>` 使用多個修改器堆疊。
 
-\ **Note:** The modifications in the held :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` will only be executed if their execution mode matches the execution mode of the SkeletonModification2DStackHolder.
+\ **注意：**\ :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` 中所存放的修改器只有在各自的執行模式與 SkeletonModification2DStackHolder 的執行模式配對時才會執行。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SkeletonModification2DStackHolder_method_get_held_modification_stack:
 
@@ -49,7 +49,7 @@ Method Descriptions
 
 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` **get_held_modification_stack**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2DStackHolder_method_get_held_modification_stack>`
 
-Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` that this modification is holding.
+返回該修改器中存放的 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -61,14 +61,14 @@ Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>
 
 |void| **set_held_modification_stack**\ (\ held_modification_stack\: :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ ) :ref:`🔗<class_SkeletonModification2DStackHolder_method_set_held_modification_stack>`
 
-Sets the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` that this modification is holding. This modification stack will then be executed when this modification is executed.
+設定該修改器中存放的 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。這個修改器堆疊會在該修改器執行時執行。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

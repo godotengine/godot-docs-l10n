@@ -8,14 +8,14 @@
 FoldableContainer
 =================
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A container that can be expanded/collapsed.
+能够展开、折叠的容器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 A container that can be expanded/collapsed, with a title that can be filled with controls, such as buttons. This is also called an accordion.
 
@@ -25,8 +25,8 @@ A FoldableContainer can be grouped with other FoldableContainers so that only on
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -123,8 +123,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_FoldableContainer_signal_folding_changed:
 
@@ -132,7 +132,7 @@ Signals
 
 **folding_changed**\ (\ is_folded\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FoldableContainer_signal_folding_changed>`
 
-Emitted when the container is folded/expanded.
+容器折叠/展开时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -140,8 +140,8 @@ Emitted when the container is folded/expanded.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_FoldableContainer_TitlePosition:
 
@@ -155,7 +155,7 @@ enum **TitlePosition**: :ref:`🔗<enum_FoldableContainer_TitlePosition>`
 
 :ref:`TitlePosition<enum_FoldableContainer_TitlePosition>` **POSITION_TOP** = ``0``
 
-Makes the title appear at the top of the container.
+标题出现在容器顶部。
 
 .. _class_FoldableContainer_constant_POSITION_BOTTOM:
 
@@ -163,7 +163,7 @@ Makes the title appear at the top of the container.
 
 :ref:`TitlePosition<enum_FoldableContainer_TitlePosition>` **POSITION_BOTTOM** = ``1``
 
-Makes the title appear at the bottom of the container. Also makes all StyleBoxes flipped vertically.
+标题出现在容器底部。同时会让所有 StyleBox 垂直翻转。
 
 .. rst-class:: classref-section-separator
 
@@ -171,8 +171,8 @@ Makes the title appear at the bottom of the container. Also makes all StyleBoxes
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FoldableContainer_property_foldable_group:
 
@@ -185,7 +185,7 @@ Property Descriptions
 - |void| **set_foldable_group**\ (\ value\: :ref:`FoldableGroup<class_FoldableGroup>`\ )
 - :ref:`FoldableGroup<class_FoldableGroup>` **get_foldable_group**\ (\ )
 
-The :ref:`FoldableGroup<class_FoldableGroup>` associated with the container. When multiple **FoldableContainer** nodes share the same group, only one of them is allowed to be unfolded.
+与容器关联的 :ref:`FoldableGroup<class_FoldableGroup>`\ 。多个 **FoldableContainer** 节点具有相同的分组时，只允许有一个处于展开状态。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ The :ref:`FoldableGroup<class_FoldableGroup>` associated with the container. Whe
 - |void| **set_folded**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folded**\ (\ )
 
-If ``true``, the container will becomes folded and will hide all its children.
+如果为 ``true``\ ，则会折叠容器折叠，隐藏所有子节点。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Language code used for text shaping algorithms. If left empty, the current local
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The container's title text.
+容器的标题文本。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The container's title text.
 - |void| **set_title_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_title_alignment**\ (\ )
 
-Title's horizontal text alignment.
+标题的水平文本对齐方式。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ Title's horizontal text alignment.
 - |void| **set_title_position**\ (\ value\: :ref:`TitlePosition<enum_FoldableContainer_TitlePosition>`\ )
 - :ref:`TitlePosition<enum_FoldableContainer_TitlePosition>` **get_title_position**\ (\ )
 
-Title's position.
+标题的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ Title's position.
 - |void| **set_title_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_title_text_direction**\ (\ )
 
-Title text writing direction.
+标题的文本书写方向。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ Title text writing direction.
 - |void| **set_title_text_overrun_behavior**\ (\ value\: :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>`\ )
 - :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_title_text_overrun_behavior**\ (\ )
 
-Defines the behavior of the title when the text is longer than the available space.
+定义标题在文本比可用空间更长时的行为。
 
 .. rst-class:: classref-section-separator
 
@@ -312,8 +312,8 @@ Defines the behavior of the title when the text is longer than the available spa
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FoldableContainer_method_add_title_bar_control:
 
@@ -321,9 +321,9 @@ Method Descriptions
 
 |void| **add_title_bar_control**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_FoldableContainer_method_add_title_bar_control>`
 
-Adds a :ref:`Control<class_Control>` that will be placed next to the container's title, obscuring the clickable area. Prime usage is adding :ref:`Button<class_Button>` nodes, but it can be any :ref:`Control<class_Control>`.
+添加放置在容器标题旁的 :ref:`Control<class_Control>`\ ，遮挡可点击区域。主要用途是添加 :ref:`Button<class_Button>` 节点，但可以是任何 :ref:`Control<class_Control>`\ 。
 
-The control will be added as a child of this container and removed from previous parent if necessary. The controls will be placed aligned to the right, with the first added control being the leftmost one.
+控件会被添加为该容器的子节点，必要时会从之前的父节点中移除。这些控件是右对齐的，最先添加的控件位于最左侧。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ The control will be added as a child of this container and removed from previous
 
 |void| **expand**\ (\ ) :ref:`🔗<class_FoldableContainer_method_expand>`
 
-Expands the container and emits :ref:`folding_changed<class_FoldableContainer_signal_folding_changed>`.
+展开容器，发出 :ref:`folding_changed<class_FoldableContainer_signal_folding_changed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Expands the container and emits :ref:`folding_changed<class_FoldableContainer_si
 
 |void| **fold**\ (\ ) :ref:`🔗<class_FoldableContainer_method_fold>`
 
-Folds the container and emits :ref:`folding_changed<class_FoldableContainer_signal_folding_changed>`.
+折叠容器，发出 :ref:`folding_changed<class_FoldableContainer_signal_folding_changed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ Folds the container and emits :ref:`folding_changed<class_FoldableContainer_sign
 
 |void| **remove_title_bar_control**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_FoldableContainer_method_remove_title_bar_control>`
 
-Removes a :ref:`Control<class_Control>` added with :ref:`add_title_bar_control()<class_FoldableContainer_method_add_title_bar_control>`. The node is not freed automatically, you need to use :ref:`Node.queue_free()<class_Node_method_queue_free>`.
+移除使用 :ref:`add_title_bar_control()<class_FoldableContainer_method_add_title_bar_control>` 添加的 :ref:`Control<class_Control>`\ 。该节点不会自动释放，你需要使用 :ref:`Node.queue_free()<class_Node_method_queue_free>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -367,8 +367,8 @@ Removes a :ref:`Control<class_Control>` added with :ref:`add_title_bar_control()
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_FoldableContainer_theme_color_collapsed_font_color:
 
@@ -376,7 +376,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **collapsed_font_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_FoldableContainer_theme_color_collapsed_font_color>`
 
-The title's font color when collapsed.
+折叠时的标题字体颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ The title's font color when collapsed.
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_FoldableContainer_theme_color_font_color>`
 
-The title's font color when expanded.
+展开时的标题字体颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ The title's font color when expanded.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_FoldableContainer_theme_color_font_outline_color>`
 
-The title's font outline color.
+标题字体轮廓颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ The title's font outline color.
 
 :ref:`Color<class_Color>` **hover_font_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_FoldableContainer_theme_color_hover_font_color>`
 
-The title's font hover color.
+标题字体悬停颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ The title's font hover color.
 
 :ref:`int<class_int>` **h_separation** = ``2`` :ref:`🔗<class_FoldableContainer_theme_constant_h_separation>`
 
-The horizontal separation between the title's icon and text, and between title bar controls.
+标题的图标和文本之间以及标题栏控件之间的水平间距。
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ The horizontal separation between the title's icon and text, and between title b
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_FoldableContainer_theme_constant_outline_size>`
 
-The title's font outline size.
+标题字体轮廓大小。
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ The title's font outline size.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_FoldableContainer_theme_font_font>`
 
-The title's font.
+标题字体。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ The title's font.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_FoldableContainer_theme_font_size_font_size>`
 
-The title's font size.
+标题字体大小。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ The title's font size.
 
 :ref:`Texture2D<class_Texture2D>` **expanded_arrow** :ref:`🔗<class_FoldableContainer_theme_icon_expanded_arrow>`
 
-The title's icon used when expanded.
+展开时使用的标题图标。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ The title's icon used when expanded.
 
 :ref:`Texture2D<class_Texture2D>` **expanded_arrow_mirrored** :ref:`🔗<class_FoldableContainer_theme_icon_expanded_arrow_mirrored>`
 
-The title's icon used when expanded (for bottom title).
+展开时使用的标题图标（用于底部标题）。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ The title's icon used when expanded (for bottom title).
 
 :ref:`Texture2D<class_Texture2D>` **folded_arrow** :ref:`🔗<class_FoldableContainer_theme_icon_folded_arrow>`
 
-The title's icon used when folded (for left-to-right layouts).
+折叠时使用的标题图标（用于从左至右布局）。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ The title's icon used when folded (for left-to-right layouts).
 
 :ref:`Texture2D<class_Texture2D>` **folded_arrow_mirrored** :ref:`🔗<class_FoldableContainer_theme_icon_folded_arrow_mirrored>`
 
-The title's icon used when collapsed (for right-to-left layouts).
+展开时使用的标题图标（用于从右至左布局）。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ The title's icon used when collapsed (for right-to-left layouts).
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_FoldableContainer_theme_style_focus>`
 
-Background used when **FoldableContainer** has GUI focus. The :ref:`focus<class_FoldableContainer_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+**FoldableContainer** 拥有 GUI 焦点时使用的背景。\ :ref:`focus<class_FoldableContainer_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ Background used when **FoldableContainer** has GUI focus. The :ref:`focus<class_
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_FoldableContainer_theme_style_panel>`
 
-Default background for the **FoldableContainer**.
+**FoldableContainer** 的默认背景。
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ Default background for the **FoldableContainer**.
 
 :ref:`StyleBox<class_StyleBox>` **title_collapsed_hover_panel** :ref:`🔗<class_FoldableContainer_theme_style_title_collapsed_hover_panel>`
 
-Background used when the mouse cursor enters the title's area when collapsed.
+处于折叠状态下，鼠标光标进入标题区域时使用的背景。
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Background used when the mouse cursor enters the title's area when collapsed.
 
 :ref:`StyleBox<class_StyleBox>` **title_collapsed_panel** :ref:`🔗<class_FoldableContainer_theme_style_title_collapsed_panel>`
 
-Default background for the **FoldableContainer**'s title when collapsed.
+处于折叠状态下，\ **FoldableContainer** 标题的默认背景。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Default background for the **FoldableContainer**'s title when collapsed.
 
 :ref:`StyleBox<class_StyleBox>` **title_hover_panel** :ref:`🔗<class_FoldableContainer_theme_style_title_hover_panel>`
 
-Background used when the mouse cursor enters the title's area when expanded.
+处于展开状态下，鼠标光标进入标题区域时使用的背景。
 
 .. rst-class:: classref-item-separator
 
@@ -580,14 +580,14 @@ Background used when the mouse cursor enters the title's area when expanded.
 
 :ref:`StyleBox<class_StyleBox>` **title_panel** :ref:`🔗<class_FoldableContainer_theme_style_title_panel>`
 
-Default background for the **FoldableContainer**'s title when expanded.
+处于展开状态下，\ **FoldableContainer** 标题的默认背景。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

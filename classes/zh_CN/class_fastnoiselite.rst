@@ -5,23 +5,23 @@
 FastNoiseLite
 =============
 
-**Inherits:** :ref:`Noise<class_Noise>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Noise<class_Noise>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Generates noise using the FastNoiseLite library.
+使用 FastNoiseLite 库生成噪声。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class generates noise using the FastNoiseLite library, which is a collection of several noise algorithms including Cellular, Perlin, Value, and more.
+该类使用 FastNoiseLite 库生成噪声，该库是多种噪声算法的集合，包括 Cellular、Perlin、Value 等。
 
-Most generated noise values are in the range of ``[-1, 1]``, but not always. Some of the cellular noise algorithms return results above ``1``.
+大多数生成的噪声值都在 ``[-1, 1]`` 范围内，但并非总是如此。一些蜂窝噪声算法返回高于 ``1`` 的结果。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -76,8 +76,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_FastNoiseLite_NoiseType:
 
@@ -91,7 +91,7 @@ enum **NoiseType**: :ref:`🔗<enum_FastNoiseLite_NoiseType>`
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_VALUE** = ``5``
 
-A lattice of points are assigned random values then interpolated based on neighboring values.
+点阵被分配随机值，然后根据相邻值进行插值。
 
 .. _class_FastNoiseLite_constant_TYPE_VALUE_CUBIC:
 
@@ -99,9 +99,9 @@ A lattice of points are assigned random values then interpolated based on neighb
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_VALUE_CUBIC** = ``4``
 
-Similar to value noise (:ref:`TYPE_VALUE<class_FastNoiseLite_constant_TYPE_VALUE>`), but slower. Has more variance in peaks and valleys.
+类似于 Value 噪声（\ :ref:`TYPE_VALUE<class_FastNoiseLite_constant_TYPE_VALUE>`\ ），但速度较慢。波峰和波谷的变化更大。
 
-Cubic noise can be used to avoid certain artifacts when using value noise to create a bumpmap. In general, you should always use this mode if the value noise is being used for a heightmap or bumpmap.
+在使用 Value 噪声创建凹凸贴图时，可以使用三次噪声来避免某些伪影。一般来说，如果 Value 噪声用于高度图或凹凸贴图，则应始终使用此模式。
 
 .. _class_FastNoiseLite_constant_TYPE_PERLIN:
 
@@ -109,7 +109,7 @@ Cubic noise can be used to avoid certain artifacts when using value noise to cre
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_PERLIN** = ``3``
 
-A lattice of random gradients. Their dot products are interpolated to obtain values in between the lattices.
+随机渐变的一种格子。对它们的点积进行插值，以获得格子之间的值。
 
 .. _class_FastNoiseLite_constant_TYPE_CELLULAR:
 
@@ -117,7 +117,7 @@ A lattice of random gradients. Their dot products are interpolated to obtain val
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_CELLULAR** = ``2``
 
-Cellular includes both Worley noise and Voronoi diagrams which creates various regions of the same value.
+蜂窝包括 Worley 噪声图和 Voronoi 图，它们创建了相同值的不同区域。
 
 .. _class_FastNoiseLite_constant_TYPE_SIMPLEX:
 
@@ -125,7 +125,7 @@ Cellular includes both Worley noise and Voronoi diagrams which creates various r
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_SIMPLEX** = ``0``
 
-As opposed to :ref:`TYPE_PERLIN<class_FastNoiseLite_constant_TYPE_PERLIN>`, gradients exist in a simplex lattice rather than a grid lattice, avoiding directional artifacts. Internally uses FastNoiseLite's OpenSimplex2 noise type.
+与 :ref:`TYPE_PERLIN<class_FastNoiseLite_constant_TYPE_PERLIN>` 不同，渐变存在于单纯形点阵中，而不是网格点阵中，从而避免了定向伪影。内部使用 FastNoiseLite 的 OpenSimplex2 噪声类型。
 
 .. _class_FastNoiseLite_constant_TYPE_SIMPLEX_SMOOTH:
 
@@ -133,7 +133,7 @@ As opposed to :ref:`TYPE_PERLIN<class_FastNoiseLite_constant_TYPE_PERLIN>`, grad
 
 :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **TYPE_SIMPLEX_SMOOTH** = ``1``
 
-Modified, higher quality version of :ref:`TYPE_SIMPLEX<class_FastNoiseLite_constant_TYPE_SIMPLEX>`, but slower. Internally uses FastNoiseLite's OpenSimplex2S noise type.
+对 :ref:`TYPE_SIMPLEX<class_FastNoiseLite_constant_TYPE_SIMPLEX>` 修改后得到的更高质量版本，但速度较慢。内部使用 FastNoiseLite 的 OpenSimplex2S 噪声类型。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ enum **FractalType**: :ref:`🔗<enum_FastNoiseLite_FractalType>`
 
 :ref:`FractalType<enum_FastNoiseLite_FractalType>` **FRACTAL_NONE** = ``0``
 
-No fractal noise.
+无分形噪声。
 
 .. _class_FastNoiseLite_constant_FRACTAL_FBM:
 
@@ -159,7 +159,7 @@ No fractal noise.
 
 :ref:`FractalType<enum_FastNoiseLite_FractalType>` **FRACTAL_FBM** = ``1``
 
-Method using Fractional Brownian Motion to combine octaves into a fractal.
+使用分形布朗运动将八度音阶组合成分形的方法。
 
 .. _class_FastNoiseLite_constant_FRACTAL_RIDGED:
 
@@ -167,7 +167,7 @@ Method using Fractional Brownian Motion to combine octaves into a fractal.
 
 :ref:`FractalType<enum_FastNoiseLite_FractalType>` **FRACTAL_RIDGED** = ``2``
 
-Method of combining octaves into a fractal resulting in a "ridged" look.
+将八度音阶组合成分形的方法，从而产生一种“脊状”外观。
 
 .. _class_FastNoiseLite_constant_FRACTAL_PING_PONG:
 
@@ -175,7 +175,7 @@ Method of combining octaves into a fractal resulting in a "ridged" look.
 
 :ref:`FractalType<enum_FastNoiseLite_FractalType>` **FRACTAL_PING_PONG** = ``3``
 
-Method of combining octaves into a fractal with a ping pong effect.
+将八度音阶组合成具有乒乓效果的分形的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ enum **CellularDistanceFunction**: :ref:`🔗<enum_FastNoiseLite_CellularDistanc
 
 :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **DISTANCE_EUCLIDEAN** = ``0``
 
-Euclidean distance to the nearest point.
+到最近点的欧几里得距离。
 
 .. _class_FastNoiseLite_constant_DISTANCE_EUCLIDEAN_SQUARED:
 
@@ -201,7 +201,7 @@ Euclidean distance to the nearest point.
 
 :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **DISTANCE_EUCLIDEAN_SQUARED** = ``1``
 
-Squared Euclidean distance to the nearest point.
+到最近点的欧几里得距离的平方。
 
 .. _class_FastNoiseLite_constant_DISTANCE_MANHATTAN:
 
@@ -209,7 +209,7 @@ Squared Euclidean distance to the nearest point.
 
 :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **DISTANCE_MANHATTAN** = ``2``
 
-Manhattan distance (taxicab metric) to the nearest point.
+到最近点的曼哈顿距离（出租车度量法）。
 
 .. _class_FastNoiseLite_constant_DISTANCE_HYBRID:
 
@@ -217,7 +217,7 @@ Manhattan distance (taxicab metric) to the nearest point.
 
 :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **DISTANCE_HYBRID** = ``3``
 
-Blend of :ref:`DISTANCE_EUCLIDEAN<class_FastNoiseLite_constant_DISTANCE_EUCLIDEAN>` and :ref:`DISTANCE_MANHATTAN<class_FastNoiseLite_constant_DISTANCE_MANHATTAN>` to give curved cell boundaries.
+:ref:`DISTANCE_EUCLIDEAN<class_FastNoiseLite_constant_DISTANCE_EUCLIDEAN>` 和 :ref:`DISTANCE_MANHATTAN<class_FastNoiseLite_constant_DISTANCE_MANHATTAN>` 的混合，以给出弯曲的单元格边界。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ enum **CellularReturnType**: :ref:`🔗<enum_FastNoiseLite_CellularReturnType>`
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_CELL_VALUE** = ``0``
 
-The cellular distance function will return the same value for all points within a cell.
+蜂窝单元格距离函数，将为单元格内的所有点返回相同的值。
 
 .. _class_FastNoiseLite_constant_RETURN_DISTANCE:
 
@@ -243,7 +243,7 @@ The cellular distance function will return the same value for all points within 
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_DISTANCE** = ``1``
 
-The cellular distance function will return a value determined by the distance to the nearest point.
+蜂窝单元格距离函数，将返回一个由到最近点的距离确定的值。
 
 .. _class_FastNoiseLite_constant_RETURN_DISTANCE2:
 
@@ -251,7 +251,7 @@ The cellular distance function will return a value determined by the distance to
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_DISTANCE2** = ``2``
 
-The cellular distance function returns the distance to the second-nearest point.
+蜂窝单元格距离函数，将返回到第二最近点的距离。
 
 .. _class_FastNoiseLite_constant_RETURN_DISTANCE2_ADD:
 
@@ -259,7 +259,7 @@ The cellular distance function returns the distance to the second-nearest point.
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_DISTANCE2_ADD** = ``3``
 
-The distance to the nearest point is added to the distance to the second-nearest point.
+将最近点的距离与次近点的距离相加。
 
 .. _class_FastNoiseLite_constant_RETURN_DISTANCE2_SUB:
 
@@ -267,7 +267,7 @@ The distance to the nearest point is added to the distance to the second-nearest
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_DISTANCE2_SUB** = ``4``
 
-The distance to the nearest point is subtracted from the distance to the second-nearest point.
+将最近点的距离与次近点的距离相减。
 
 .. _class_FastNoiseLite_constant_RETURN_DISTANCE2_MUL:
 
@@ -275,7 +275,7 @@ The distance to the nearest point is subtracted from the distance to the second-
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_DISTANCE2_MUL** = ``5``
 
-The distance to the nearest point is multiplied with the distance to the second-nearest point.
+将最近点的距离与次近点的距离相乘。
 
 .. _class_FastNoiseLite_constant_RETURN_DISTANCE2_DIV:
 
@@ -283,7 +283,7 @@ The distance to the nearest point is multiplied with the distance to the second-
 
 :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **RETURN_DISTANCE2_DIV** = ``6``
 
-The distance to the nearest point is divided by the distance to the second-nearest point.
+将最近点的距离与次近点的距离相除。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ enum **DomainWarpType**: :ref:`🔗<enum_FastNoiseLite_DomainWarpType>`
 
 :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>` **DOMAIN_WARP_SIMPLEX** = ``0``
 
-The domain is warped using the simplex noise algorithm.
+使用单纯形噪声算法，对域进行扭曲。
 
 .. _class_FastNoiseLite_constant_DOMAIN_WARP_SIMPLEX_REDUCED:
 
@@ -309,7 +309,7 @@ The domain is warped using the simplex noise algorithm.
 
 :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>` **DOMAIN_WARP_SIMPLEX_REDUCED** = ``1``
 
-The domain is warped using a simplified version of the simplex noise algorithm.
+使用简化版的单纯形噪声算法，对域进行扭曲。
 
 .. _class_FastNoiseLite_constant_DOMAIN_WARP_BASIC_GRID:
 
@@ -317,7 +317,7 @@ The domain is warped using a simplified version of the simplex noise algorithm.
 
 :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>` **DOMAIN_WARP_BASIC_GRID** = ``2``
 
-The domain is warped using a simple noise grid (not as smooth as the other methods, but more performant).
+使用简单的噪声栅格（不像其他方法那样平滑，但性能更高），对域进行扭曲。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ enum **DomainWarpFractalType**: :ref:`🔗<enum_FastNoiseLite_DomainWarpFractalT
 
 :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>` **DOMAIN_WARP_FRACTAL_NONE** = ``0``
 
-No fractal noise for warping the space.
+没有用于扭曲空间的分形噪声。
 
 .. _class_FastNoiseLite_constant_DOMAIN_WARP_FRACTAL_PROGRESSIVE:
 
@@ -343,7 +343,7 @@ No fractal noise for warping the space.
 
 :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>` **DOMAIN_WARP_FRACTAL_PROGRESSIVE** = ``1``
 
-Warping the space progressively, octave for octave, resulting in a more "liquified" distortion.
+逐渐扭曲空间，一个八度一个八度，导致更“液化”的失真。
 
 .. _class_FastNoiseLite_constant_DOMAIN_WARP_FRACTAL_INDEPENDENT:
 
@@ -351,7 +351,7 @@ Warping the space progressively, octave for octave, resulting in a more "liquifi
 
 :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>` **DOMAIN_WARP_FRACTAL_INDEPENDENT** = ``2``
 
-Warping the space independently for each octave, resulting in a more chaotic distortion.
+为每个八度音阶独立地扭曲空间，从而导致更混乱的失真。
 
 .. rst-class:: classref-section-separator
 
@@ -359,8 +359,8 @@ Warping the space independently for each octave, resulting in a more chaotic dis
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FastNoiseLite_property_cellular_distance_function:
 
@@ -373,7 +373,7 @@ Property Descriptions
 - |void| **set_cellular_distance_function**\ (\ value\: :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>`\ )
 - :ref:`CellularDistanceFunction<enum_FastNoiseLite_CellularDistanceFunction>` **get_cellular_distance_function**\ (\ )
 
-Determines how the distance to the nearest/second-nearest point is computed.
+确定如何计算到最近/第二最近点的距离。
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ Determines how the distance to the nearest/second-nearest point is computed.
 - |void| **set_cellular_jitter**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cellular_jitter**\ (\ )
 
-Maximum distance a point can move off of its grid position. Set to ``0`` for an even grid.
+一个点可以离开其栅格位置的最大距离。对于偶数栅格，设置为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Maximum distance a point can move off of its grid position. Set to ``0`` for an 
 - |void| **set_cellular_return_type**\ (\ value\: :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>`\ )
 - :ref:`CellularReturnType<enum_FastNoiseLite_CellularReturnType>` **get_cellular_return_type**\ (\ )
 
-Return type from cellular noise calculations.
+蜂窝噪声计算的返回类型。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Return type from cellular noise calculations.
 - |void| **set_domain_warp_amplitude**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_domain_warp_amplitude**\ (\ )
 
-Sets the maximum warp distance from the origin.
+设置距原点的最大扭曲距离。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Sets the maximum warp distance from the origin.
 - |void| **set_domain_warp_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_domain_warp_enabled**\ (\ )
 
-If enabled, another FastNoiseLite instance is used to warp the space, resulting in a distortion of the noise.
+如果启用，则另一个 FastNoiseLite 实例将被用于扭曲空间，从而导致噪声失真。
 
 .. rst-class:: classref-item-separator
 
@@ -458,9 +458,9 @@ If enabled, another FastNoiseLite instance is used to warp the space, resulting 
 - |void| **set_domain_warp_fractal_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_domain_warp_fractal_gain**\ (\ )
 
-Determines the strength of each subsequent layer of the noise which is used to warp the space.
+确定用于扭曲空间的噪声的每个后续层的强度。
 
-A low value places more emphasis on the lower frequency base layers, while a high value puts more emphasis on the higher frequency layers.
+较低的值更强调较低频率的基础层，而较高的值则更强调较高频率的层。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ A low value places more emphasis on the lower frequency base layers, while a hig
 - |void| **set_domain_warp_fractal_lacunarity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_domain_warp_fractal_lacunarity**\ (\ )
 
-The change in frequency between octaves, also known as "lacunarity", of the fractal noise which warps the space. Increasing this value results in higher octaves, producing noise with finer details and a rougher appearance.
+扭曲空间的分形噪声的八度音节之间的频率变化，也称为“间隙度”。增加此值，会导致更高的八度音阶，从而产生细节更精细、外观更粗糙的噪声。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ The change in frequency between octaves, also known as "lacunarity", of the frac
 - |void| **set_domain_warp_fractal_octaves**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_domain_warp_fractal_octaves**\ (\ )
 
-The number of noise layers that are sampled to get the final value for the fractal noise which warps the space.
+为获得扭曲空间的分形噪声的最终值而采样的噪声层数。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ The number of noise layers that are sampled to get the final value for the fract
 - |void| **set_domain_warp_fractal_type**\ (\ value\: :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>`\ )
 - :ref:`DomainWarpFractalType<enum_FastNoiseLite_DomainWarpFractalType>` **get_domain_warp_fractal_type**\ (\ )
 
-The method for combining octaves into a fractal which is used to warp the space.
+将八度音阶组合成用于扭曲空间的分形的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -528,7 +528,7 @@ The method for combining octaves into a fractal which is used to warp the space.
 - |void| **set_domain_warp_frequency**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_domain_warp_frequency**\ (\ )
 
-Frequency of the noise which warps the space. Low frequency results in smooth noise while high frequency results in rougher, more granular noise.
+扭曲空间的噪音频率。低频产生平滑的噪声，而高频产生更粗糙、颗粒状更明显的噪声。
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ Frequency of the noise which warps the space. Low frequency results in smooth no
 - |void| **set_domain_warp_type**\ (\ value\: :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>`\ )
 - :ref:`DomainWarpType<enum_FastNoiseLite_DomainWarpType>` **get_domain_warp_type**\ (\ )
 
-The warp algorithm.
+扭曲算法。
 
 .. rst-class:: classref-item-separator
 
@@ -562,9 +562,9 @@ The warp algorithm.
 - |void| **set_fractal_gain**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fractal_gain**\ (\ )
 
-Determines the strength of each subsequent layer of noise in fractal noise.
+确定分形噪声中噪声的每个后续层的强度。
 
-A low value places more emphasis on the lower frequency base layers, while a high value puts more emphasis on the higher frequency layers.
+较低的值更强调较低频率的基础层，而较高的值则更强调较高频率的层。
 
 .. rst-class:: classref-item-separator
 
@@ -581,7 +581,7 @@ A low value places more emphasis on the lower frequency base layers, while a hig
 - |void| **set_fractal_lacunarity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fractal_lacunarity**\ (\ )
 
-Frequency multiplier between subsequent octaves. Increasing this value results in higher octaves producing noise with finer details and a rougher appearance.
+后续八度音阶之间的倍频器。增加该值，会产生更高的八度音阶，从而产生细节更精细、外观更粗糙的噪声。
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ Frequency multiplier between subsequent octaves. Increasing this value results i
 - |void| **set_fractal_octaves**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fractal_octaves**\ (\ )
 
-The number of noise layers that are sampled to get the final value for fractal noise types.
+为获得分形噪声类型的最终值而采样的噪声层数。
 
 .. rst-class:: classref-item-separator
 
@@ -615,7 +615,7 @@ The number of noise layers that are sampled to get the final value for fractal n
 - |void| **set_fractal_ping_pong_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fractal_ping_pong_strength**\ (\ )
 
-Sets the strength of the fractal ping pong type.
+设置分形乒乓类型的强度。
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ Sets the strength of the fractal ping pong type.
 - |void| **set_fractal_type**\ (\ value\: :ref:`FractalType<enum_FastNoiseLite_FractalType>`\ )
 - :ref:`FractalType<enum_FastNoiseLite_FractalType>` **get_fractal_type**\ (\ )
 
-The method for combining octaves into a fractal.
+将八度音阶组合成分形的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ The method for combining octaves into a fractal.
 - |void| **set_fractal_weighted_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fractal_weighted_strength**\ (\ )
 
-Higher weighting means higher octaves have less impact if lower octaves have a large impact.
+较高的权重意味着如果较低的八度具有较大的影响，则较高的八度具有较小的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ Higher weighting means higher octaves have less impact if lower octaves have a l
 - |void| **set_frequency**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_frequency**\ (\ )
 
-The frequency for all noise types. Low frequency results in smooth noise while high frequency results in rougher, more granular noise.
+所有噪声类型的频率。低频产生平滑的噪声，而高频产生更粗糙、颗粒状更明显的噪声。
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ The frequency for all noise types. Low frequency results in smooth noise while h
 - |void| **set_noise_type**\ (\ value\: :ref:`NoiseType<enum_FastNoiseLite_NoiseType>`\ )
 - :ref:`NoiseType<enum_FastNoiseLite_NoiseType>` **get_noise_type**\ (\ )
 
-The noise algorithm used.
+所使用的噪声算法。
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +700,7 @@ The noise algorithm used.
 - |void| **set_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_offset**\ (\ )
 
-Translate the noise input coordinates by the given :ref:`Vector3<class_Vector3>`.
+使用给定的 :ref:`Vector3<class_Vector3>` 对噪声输入坐标进行平移。
 
 .. rst-class:: classref-item-separator
 
@@ -717,14 +717,14 @@ Translate the noise input coordinates by the given :ref:`Vector3<class_Vector3>`
 - |void| **set_seed**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_seed**\ (\ )
 
-The random number seed for all noise types.
+所有噪声类型的随机数种子。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

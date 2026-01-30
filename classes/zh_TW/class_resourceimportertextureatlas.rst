@@ -5,23 +5,23 @@
 ResourceImporterTextureAtlas
 ============================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports a collection of textures from a PNG image into an optimized :ref:`AtlasTexture<class_AtlasTexture>` for 2D rendering.
+將PNG 影像中的紋理集合匯入至最佳化的\ :ref:`AtlasTexture<class_AtlasTexture>` 以進行2D 算繪。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This imports a collection of textures from a PNG image into an :ref:`AtlasTexture<class_AtlasTexture>` or 2D :ref:`ArrayMesh<class_ArrayMesh>`. This can be used to save memory when importing 2D animations from spritesheets. Texture atlases are only supported in 2D rendering, not 3D. See also :ref:`ResourceImporterTexture<class_ResourceImporterTexture>` and :ref:`ResourceImporterLayeredTexture<class_ResourceImporterLayeredTexture>`.
+這會將 PNG 圖像中的紋理集合匯入到 :ref:`AtlasTexture<class_AtlasTexture>` 或 2D :ref:`ArrayMesh<class_ArrayMesh>` 中。從 spritesheet 匯入 2D 動畫時，這可用於節省記憶體。紋理合集只是支援紋理合集。 2D 算繪，而不是3D。另請參閱\ :ref:`ResourceImporterTexture<class_ResourceImporterTexture>` 和\ :ref:`ResourceImporterLayeredTexture<class_ResourceImporterLayeredTexture>`\ 。
 
-\ **Note:** **ResourceImporterTextureAtlas** does not handle importing :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, which is created using the :ref:`TileSet<class_TileSet>` editor instead.
+\ **注意：** **ResourceImporterTextureAtlas** 不處理匯入 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`\ ，它是使用 :ref:`TileSet<class_TileSet>` 編輯器建立的。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ResourceImporterTextureAtlas_property_atlas_file:
 
@@ -51,7 +51,7 @@ Property Descriptions
 
 :ref:`String<class_String>` **atlas_file** = ``""`` :ref:`🔗<class_ResourceImporterTextureAtlas_property_atlas_file>`
 
-Path to the atlas spritesheet. This *must* be set to valid path to a PNG image. Otherwise, the atlas will fail to import.
+atlas spritesheet 的路徑。此\ *必須*\ 設定為 PNG 映像的有效路徑。否則，atlas 將無法匯入。
 
 .. rst-class:: classref-item-separator
 
@@ -63,9 +63,9 @@ Path to the atlas spritesheet. This *must* be set to valid path to a PNG image. 
 
 :ref:`bool<class_bool>` **crop_to_region** = ``false`` :ref:`🔗<class_ResourceImporterTextureAtlas_property_crop_to_region>`
 
-If ``true``, discards empty areas from the atlas. This only affects final sprite positioning, not storage. See also :ref:`trim_alpha_border_from_region<class_ResourceImporterTextureAtlas_property_trim_alpha_border_from_region>`.
+如果\ ``true``\ ，則丟棄合集中的空白區域。這只會影響最終的精靈定位，而不影響儲存。另請參閱\ :ref:`trim_alpha_border_from_region<class_ResourceImporterTextureAtlas_property_trim_alpha_border_from_region>`\ 。
 
-\ **Note:** Only effective if :ref:`import_mode<class_ResourceImporterTextureAtlas_property_import_mode>` is **Region**.
+\ **注意：** 僅在 :ref:`import_mode<class_ResourceImporterTextureAtlas_property_import_mode>` 為 **Region** 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ If ``true``, discards empty areas from the atlas. This only affects final sprite
 
 :ref:`int<class_int>` **import_mode** = ``0`` :ref:`🔗<class_ResourceImporterTextureAtlas_property_import_mode>`
 
-**Region:** Imports the atlas in an :ref:`AtlasTexture<class_AtlasTexture>` resource, which is rendered as a rectangle. This is fast to render, but transparent areas still have to be rendered if they can't be trimmed effectively by :ref:`trim_alpha_border_from_region<class_ResourceImporterTextureAtlas_property_trim_alpha_border_from_region>`. This can reduce performance when rendering large sprites on screen.
+**Region:** 在 :ref:`AtlasTexture<class_AtlasTexture>` 資源中匯入合集，該合集呈現為矩形。這算繪速度很快，但仍需要透明區域如果\ :ref:`trim_alpha_border_from_region<class_ResourceImporterTextureAtlas_property_trim_alpha_border_from_region>`\ 無法有效修剪它們，則算繪它們。在螢幕上算繪大型精靈時，這會降低效能。
 
-\ **Mesh:** Imports the atlas as an :ref:`ArrayMesh<class_ArrayMesh>` resource, keeping the original bitmap visible (but rendered as a polygon). This can be used to reduce fill rate when rendering large transparent sprites, at the cost of slower rendering if there are little to no transparent areas in the sprite.
+\ **Mesh：** 將合集匯入為 :ref:`ArrayMesh<class_ArrayMesh>` 資源，保持原始位圖可見（但算繪為多邊形）。這可用於在算繪大型透明精靈時降低填充率，但如果精靈中幾乎沒有透明區域，則算繪速度會變慢。
 
 .. rst-class:: classref-item-separator
 
@@ -95,12 +95,12 @@ If ``true``, trims the region to exclude fully transparent pixels using a clippi
 
 \ **Note:** Only effective if :ref:`import_mode<class_ResourceImporterTextureAtlas_property_import_mode>` is **Region**.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

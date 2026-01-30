@@ -5,14 +5,14 @@
 RegEx
 =====
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Class for searching text for patterns using regular expressions.
+使用規則運算式搜索文字的類。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A regular expression (or regex) is a compact language that can be used to recognize strings that follow a specific pattern, such as URLs, email addresses, complete sentences, etc. For example, a regex of ``ab[0-9]`` would find any string that is ``ab`` followed by any number from ``0`` to ``9``. For a more in-depth look, you can easily find various tutorials and detailed explanations on the Internet.
 
@@ -71,8 +71,8 @@ If you need to process multiple results, :ref:`search_all()<class_RegEx_method_s
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -105,8 +105,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_RegEx_method_clear:
 
@@ -114,7 +114,7 @@ Method Descriptions
 
 |void| **clear**\ (\ ) :ref:`🔗<class_RegEx_method_clear>`
 
-This method resets the state of the object, as if it was freshly created. Namely, it unassigns the regular expression of this object.
+這個方法重設了物件的狀態，就像它是新建立的一樣。也就是說，它取消了這個物件的規則運算式的賦值。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Creates and compiles a new **RegEx** object. See also :ref:`compile()<class_RegE
 
 :ref:`int<class_int>` **get_group_count**\ (\ ) |const| :ref:`🔗<class_RegEx_method_get_group_count>`
 
-Returns the number of capturing groups in compiled pattern.
+返回編譯模式中捕獲組的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Returns the number of capturing groups in compiled pattern.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_names**\ (\ ) |const| :ref:`🔗<class_RegEx_method_get_names>`
 
-Returns an array of names of named capturing groups in the compiled pattern. They are ordered by appearance.
+返回一個陣列，該陣列是編譯模式中命名的捕獲組的名稱。它們是按外觀排序的。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Returns an array of names of named capturing groups in the compiled pattern. The
 
 :ref:`String<class_String>` **get_pattern**\ (\ ) |const| :ref:`🔗<class_RegEx_method_get_pattern>`
 
-Returns the original search pattern that was compiled.
+返回被編譯的原始搜索模式。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Returns the original search pattern that was compiled.
 
 :ref:`bool<class_bool>` **is_valid**\ (\ ) |const| :ref:`🔗<class_RegEx_method_is_valid>`
 
-Returns whether this object has a valid search pattern assigned.
+返回此物件是否分配了有效的搜索模式。
 
 .. rst-class:: classref-item-separator
 
@@ -198,9 +198,9 @@ Returns whether this object has a valid search pattern assigned.
 
 :ref:`RegExMatch<class_RegExMatch>` **search**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search>`
 
-Searches the text for the compiled pattern. Returns a :ref:`RegExMatch<class_RegExMatch>` container of the first matching result if found, otherwise ``null``.
+在文字中搜索編譯後的模式。如果找到，則將首個配對結果放在 :ref:`RegExMatch<class_RegExMatch>` 容器中返回，否則返回 ``null``\ 。
 
-The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
+可以使用 ``offset`` 和 ``end`` 指定要搜索的區域。這對在上一次成功後再次呼叫該方法，以相同的 ``subject`` 搜索另一個配對項時很有用。請注意，設定這些參數不同於傳遞縮短後的字串。例如，起始錨點 ``^`` 不受 ``offset`` 的影響，會為單詞邊界 ``\b`` 檢查 ``offset`` 之前的字符。
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +212,9 @@ The region to search within can be specified with ``offset`` and ``end``. This i
 
 :ref:`Array<class_Array>`\[:ref:`RegExMatch<class_RegExMatch>`\] **search_all**\ (\ subject\: :ref:`String<class_String>`, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_search_all>`
 
-Searches the text for the compiled pattern. Returns an array of :ref:`RegExMatch<class_RegExMatch>` containers for each non-overlapping result. If no results were found, an empty array is returned instead.
+在文字中搜索編譯後的模式。返回 :ref:`RegExMatch<class_RegExMatch>` 容器的陣列，其中每個容器包含的是互不重疊的配對結果。如果沒有找到結果，則返回一個空陣列。
 
-The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
+可以使用 ``offset`` 和 ``end`` 指定要搜索的區域。這對在上一次成功後再次呼叫該方法，以相同的 ``subject`` 搜索另一個配對項時很有用。請注意，設定這些參數不同於傳遞縮短後的字串。例如，起始錨點 ``^`` 不受 ``offset`` 的影響，會為單詞邊界 ``\b`` 檢查 ``offset`` 之前的字符。
 
 .. rst-class:: classref-item-separator
 
@@ -226,16 +226,16 @@ The region to search within can be specified with ``offset`` and ``end``. This i
 
 :ref:`String<class_String>` **sub**\ (\ subject\: :ref:`String<class_String>`, replacement\: :ref:`String<class_String>`, all\: :ref:`bool<class_bool>` = false, offset\: :ref:`int<class_int>` = 0, end\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_RegEx_method_sub>`
 
-Searches the text for the compiled pattern and replaces it with the specified string. Escapes and backreferences such as ``$1`` and ``$name`` are expanded and resolved. By default, only the first instance is replaced, but it can be changed for all instances (global replacement).
+在文字中搜索編譯後的模式，並將其替換為指定的字串。諸如 ``$1`` 和 ``$name`` 等轉義和反向引用會被擴充和解析。預設情況下，只有第一個實例被替換，但可以修改為針對所有實例（全域替換）。
 
-The region to search within can be specified with ``offset`` and ``end``. This is useful when searching for another match in the same ``subject`` by calling this method again after a previous success. Note that setting these parameters differs from passing over a shortened string. For example, the start anchor ``^`` is not affected by ``offset``, and the character before ``offset`` will be checked for the word boundary ``\b``.
+可以使用 ``offset`` 和 ``end`` 指定要搜索的區域。這對在上一次成功後再次呼叫該方法，以相同的 ``subject`` 搜索另一個配對項時很有用。請注意，設定這些參數不同於傳遞縮短後的字串。例如，起始錨點 ``^`` 不受 ``offset`` 的影響，會為單詞邊界 ``\b`` 檢查 ``offset`` 之前的字符。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

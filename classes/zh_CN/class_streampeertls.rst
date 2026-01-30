@@ -5,30 +5,30 @@
 StreamPeerTLS
 =============
 
-**Inherits:** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A stream peer that handles TLS connections.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A stream peer that handles TLS connections. This object can be used to connect to a TLS server or accept a single TLS client connection.
-
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+处理 TLS 连接的流对等体。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`TLS certificates <../tutorials/networking/ssl_certificates>`
+处理 TLS 连接的流对等体。此对象可用于连接到 TLS 服务器或接受单个 TLS 客户端连接。
+
+\ **注意：**\ 当导出到 Android 时，确保在导出项目或使用一键部署之前，在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何形式的网络通信都会被 Android 阻止。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`TLS 证书 <../tutorials/networking/ssl_certificates>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_StreamPeerTLS_Status:
 
@@ -68,7 +68,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_DISCONNECTED** = ``0``
 
-A status representing a **StreamPeerTLS** that is disconnected.
+状态，表示 **StreamPeerTLS** 已断开连接。
 
 .. _class_StreamPeerTLS_constant_STATUS_HANDSHAKING:
 
@@ -76,7 +76,7 @@ A status representing a **StreamPeerTLS** that is disconnected.
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_HANDSHAKING** = ``1``
 
-A status representing a **StreamPeerTLS** during handshaking.
+状态，表示 **StreamPeerTLS** 处于握手阶段。
 
 .. _class_StreamPeerTLS_constant_STATUS_CONNECTED:
 
@@ -84,7 +84,7 @@ A status representing a **StreamPeerTLS** during handshaking.
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_CONNECTED** = ``2``
 
-A status representing a **StreamPeerTLS** that is connected to a host.
+状态，表示 **StreamPeerTLS** 已连接至主机。
 
 .. _class_StreamPeerTLS_constant_STATUS_ERROR:
 
@@ -92,7 +92,7 @@ A status representing a **StreamPeerTLS** that is connected to a host.
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_ERROR** = ``3``
 
-A status representing a **StreamPeerTLS** in error state.
+状态，表示 **StreamPeerTLS** 处于出错状态。
 
 .. _class_StreamPeerTLS_constant_STATUS_ERROR_HOSTNAME_MISMATCH:
 
@@ -100,7 +100,7 @@ A status representing a **StreamPeerTLS** in error state.
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **STATUS_ERROR_HOSTNAME_MISMATCH** = ``4``
 
-An error status that shows a mismatch in the TLS certificate domain presented by the host and the domain requested for validation.
+错误状态，表示主机的 TLS 证书域名与请求验证的域名不匹配。
 
 .. rst-class:: classref-section-separator
 
@@ -108,8 +108,8 @@ An error status that shows a mismatch in the TLS certificate domain presented by
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_StreamPeerTLS_method_accept_stream:
 
@@ -117,7 +117,7 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, server_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_StreamPeerTLS_method_accept_stream>`
 
-Accepts a peer connection as a server using the given ``server_options``. See :ref:`TLSOptions.server()<class_TLSOptions_method_server>`.
+以服务器的身份接受对等体连接，使用给定的服务器选项 ``server_options``\ 。见 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ Accepts a peer connection as a server using the given ``server_options``. See :r
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, common_name\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_StreamPeerTLS_method_connect_to_stream>`
 
-Connects to a peer using an underlying :ref:`StreamPeer<class_StreamPeer>` ``stream`` and verifying the remote certificate is correctly signed for the given ``common_name``. You can pass the optional ``client_options`` parameter to customize the trusted certification authorities, or disable the common name verification. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>` and :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
+使用底层 :ref:`StreamPeer<class_StreamPeer>` ``stream`` 连接到对等体，并对远程证书是否由给定的 ``common_name`` 签名进行验证。传入 ``client_options`` 可以自定义信任的证书颁发机构，也可以禁用通用名称验证。见 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ Connects to a peer using an underlying :ref:`StreamPeer<class_StreamPeer>` ``str
 
 |void| **disconnect_from_stream**\ (\ ) :ref:`🔗<class_StreamPeerTLS_method_disconnect_from_stream>`
 
-Disconnects from host.
+与主机断开连接。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Disconnects from host.
 
 :ref:`Status<enum_StreamPeerTLS_Status>` **get_status**\ (\ ) |const| :ref:`🔗<class_StreamPeerTLS_method_get_status>`
 
-Returns the status of the connection.
+返回连接的状态。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ Returns the status of the connection.
 
 :ref:`StreamPeer<class_StreamPeer>` **get_stream**\ (\ ) |const| :ref:`🔗<class_StreamPeerTLS_method_get_stream>`
 
-Returns the underlying :ref:`StreamPeer<class_StreamPeer>` connection, used in :ref:`accept_stream()<class_StreamPeerTLS_method_accept_stream>` or :ref:`connect_to_stream()<class_StreamPeerTLS_method_connect_to_stream>`.
+返回底层 :ref:`StreamPeer<class_StreamPeer>` 连接，在 :ref:`accept_stream()<class_StreamPeerTLS_method_accept_stream>` 或 :ref:`connect_to_stream()<class_StreamPeerTLS_method_connect_to_stream>` 中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -177,14 +177,14 @@ Returns the underlying :ref:`StreamPeer<class_StreamPeer>` connection, used in :
 
 |void| **poll**\ (\ ) :ref:`🔗<class_StreamPeerTLS_method_poll>`
 
-Poll the connection to check for incoming bytes. Call this right before :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` for it to work properly.
+轮询连接以检查传入的字节。在 :ref:`StreamPeer.get_available_bytes()<class_StreamPeer_method_get_available_bytes>` 之前调用它以使其正常工作。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

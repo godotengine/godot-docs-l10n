@@ -8,38 +8,38 @@
 Area3D
 ======
 
-**Inherits:** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A region of 3D space that detects other :ref:`CollisionObject3D<class_CollisionObject3D>`\ s entering or exiting it.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**Area3D** is a region of 3D space defined by one or multiple :ref:`CollisionShape3D<class_CollisionShape3D>` or :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` child nodes. It detects when other :ref:`CollisionObject3D<class_CollisionObject3D>`\ s enter or exit it, and it also keeps track of which collision objects haven't exited it yet (i.e. which one are overlapping it).
-
-This node can also locally alter or override physics parameters (gravity, damping) and route audio to custom audio buses.
-
-\ **Note:** Areas and bodies created with :ref:`PhysicsServer3D<class_PhysicsServer3D>` might not interact as expected with **Area3D**\ s, and might not emit signals or track objects correctly.
-
-\ **Warning:** Using a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` inside a :ref:`CollisionShape3D<class_CollisionShape3D>` child of this node (created e.g. by using the **Create Trimesh Collision Sibling** option in the **Mesh** menu that appears when selecting a :ref:`MeshInstance3D<class_MeshInstance3D>` node) may give unexpected results, since this collision shape is hollow. If this is not desired, it has to be split into multiple :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`\ s or primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`, or in some cases it may be replaceable by a :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`.
+3D 空間中的一個區域，能夠偵測到其他 :ref:`CollisionObject3D<class_CollisionObject3D>` 的進入或退出。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using Area2D <../tutorials/physics/using_area_2d>`
+**Area3D** 是 3D 空間中的一個區域，可由一個或多個 :ref:`CollisionShape3D<class_CollisionShape3D>` 或 :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` 子節點定義。它能偵測其他 :ref:`CollisionObject3D<class_CollisionObject3D>` 進入或離開此區域，並追蹤仍在區域內（即與其重疊）的碰撞物件。
 
-- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+此節點也可以局部調整或覆寫物理參數（重力、阻尼），並將音訊導向自訂音訊匯流排。
 
-- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
+\ **注意：** 以 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 建立的 Area 與剛體可能與 **Area3D** 的互動不如預期，亦可能無法正確發送訊號或追蹤物件。
+
+\ **警告：** 若在本節點的 :ref:`CollisionShape3D<class_CollisionShape3D>` 子節點中使用 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ （例如在選取 :ref:`MeshInstance3D<class_MeshInstance3D>` 後於 **Mesh** 功能表選擇 **Create Trimesh Collision Sibling** 建立），因為該碰撞形狀為中空，可能產生非預期結果。如不希望如此，請將其拆分為多個 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 或 :ref:`BoxShape3D<class_BoxShape3D>` 等基礎形狀；某些情況下亦可改用 :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用 Area2D <../tutorials/physics/using_area_2d>`
+
+- `3D 平台跳躍示範 <https://godotengine.org/asset-library/asset/2748>`__
+
+- `3D 檢視埠 GUI 範例 <https://godotengine.org/asset-library/asset/2807>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -118,8 +118,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_Area3D_signal_area_entered:
 
@@ -127,7 +127,7 @@ Signals
 
 **area_entered**\ (\ area\: :ref:`Area3D<class_Area3D>`\ ) :ref:`🔗<class_Area3D_signal_area_entered>`
 
-Emitted when the received ``area`` enters this area. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``area`` 進入此區域時發出。需將 :ref:`monitoring<class_Area3D_property_monitoring>` 設為 ``true`` 才能觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Emitted when the received ``area`` enters this area. Requires :ref:`monitoring<c
 
 **area_exited**\ (\ area\: :ref:`Area3D<class_Area3D>`\ ) :ref:`🔗<class_Area3D_signal_area_exited>`
 
-Emitted when the received ``area`` exits this area. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``area`` 離開此區域時發出。需將 :ref:`monitoring<class_Area3D_property_monitoring>` 設為 ``true`` 才能觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -151,11 +151,11 @@ Emitted when the received ``area`` exits this area. Requires :ref:`monitoring<cl
 
 **area_shape_entered**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area3D<class_Area3D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_area_shape_entered>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``area`` enters a shape of this area. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``area`` 中的某個 :ref:`Shape3D<class_Shape3D>` 進入此區域的某個形狀時觸發。必須將 :ref:`monitoring<class_Area3D_property_monitoring>` 設為 ``true``\ 。
 
-\ ``local_shape_index`` and ``area_shape_index`` contain indices of the interacting shapes from this area and the other area, respectively. ``area_rid`` contains the :ref:`RID<class_RID>` of the other area. These values can be used with the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+\ ``local_shape_index`` 與 ``area_shape_index`` 分別為此區域與對方區域中互動形狀的索引；\ ``area_rid`` 為對方區域的 :ref:`RID<class_RID>`\ 。這些值可與 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 配合使用。
 
-\ **Example:** Get the :ref:`CollisionShape3D<class_CollisionShape3D>` node from the shape index:
+\ **範例：** 依形狀索引取得 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點：
 
 
 .. tabs::
@@ -180,9 +180,9 @@ Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``area`` enters a s
 
 **area_shape_exited**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area3D<class_Area3D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_area_shape_exited>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``area`` exits a shape of this area. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收的 ``area`` 的 :ref:`Shape3D<class_Shape3D>` 退出此區域的形狀時發出。需要 :ref:`monitoring<class_Area3D_property_monitoring>` 被設定為 ``true``\ 。
 
-See also :ref:`area_shape_entered<class_Area3D_signal_area_shape_entered>`.
+另見 :ref:`area_shape_entered<class_Area3D_signal_area_shape_entered>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ See also :ref:`area_shape_entered<class_Area3D_signal_area_shape_entered>`.
 
 **body_entered**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_entered>`
 
-Emitted when the received ``body`` enters this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body`` 進入這個區域時發出。\ ``body`` 可以是一個 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或一個 :ref:`GridMap<class_GridMap>`\ 。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置了碰撞形狀就會被偵測到。需要將 :ref:`monitoring<class_Area3D_property_monitoring>` 設定為 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Emitted when the received ``body`` enters this area. ``body`` can be a :ref:`Phy
 
 **body_exited**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_exited>`
 
-Emitted when the received ``body`` exits this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body`` 離開這個區域時發出的。\ ``body`` 可以是一個 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或一個 :ref:`GridMap<class_GridMap>`\ 。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置了碰撞形狀，就會被偵測到。要求 :ref:`monitoring<class_Area3D_property_monitoring>` 被設定為 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -218,11 +218,11 @@ Emitted when the received ``body`` exits this area. ``body`` can be a :ref:`Phys
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_entered>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` enters a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的 ``body``\ （可為 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>`\ ，其中 :ref:`GridMap<class_GridMap>` 必須在其 :ref:`MeshLibrary<class_MeshLibrary>` 中設定碰撞形狀）之 :ref:`Shape3D<class_Shape3D>` 進入此區域的某個形狀時觸發。必須將 :ref:`monitoring<class_Area3D_property_monitoring>` 設為 ``true``\ 。
 
-\ ``local_shape_index`` and ``body_shape_index`` contain indices of the interacting shapes from this area and the interacting body, respectively. ``body_rid`` contains the :ref:`RID<class_RID>` of the body. These values can be used with the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+\ ``local_shape_index`` 與 ``body_shape_index`` 分別為此區域與該物體中互動形狀的索引；\ ``body_rid`` 為該物體的 :ref:`RID<class_RID>`\ 。這些值可與 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 配合使用。
 
-\ **Example:** Get the :ref:`CollisionShape3D<class_CollisionShape3D>` node from the shape index:
+\ **範例：** 依形狀索引取得 :ref:`CollisionShape3D<class_CollisionShape3D>` 節點：
 
 
 .. tabs::
@@ -247,9 +247,9 @@ Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` enters a s
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_exited>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` exits a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+當接收到的物體 ``body`` 中的某個 :ref:`Shape3D<class_Shape3D>` 離開此區域中的某個形狀時發出。\ ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>`\ 。\ :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置有碰撞形狀時才能夠被偵測到。要求將 :ref:`monitoring<class_Area3D_property_monitoring>` 設定為 ``true``\ 。
 
-See also :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`.
+另見 :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -257,8 +257,8 @@ See also :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Area3D_SpaceOverride:
 
@@ -272,7 +272,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **SPACE_OVERRIDE_DISABLED** = ``0``
 
-This area does not affect gravity/damping.
+此區域不影響重力／阻尼。
 
 .. _class_Area3D_constant_SPACE_OVERRIDE_COMBINE:
 
@@ -280,7 +280,7 @@ This area does not affect gravity/damping.
 
 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **SPACE_OVERRIDE_COMBINE** = ``1``
 
-This area adds its gravity/damping values to whatever has been calculated so far (in :ref:`priority<class_Area3D_property_priority>` order).
+此區域會將自己的重力／阻尼值累加至目前已計算的值（依 :ref:`priority<class_Area3D_property_priority>` 順序）。
 
 .. _class_Area3D_constant_SPACE_OVERRIDE_COMBINE_REPLACE:
 
@@ -288,7 +288,7 @@ This area adds its gravity/damping values to whatever has been calculated so far
 
 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **SPACE_OVERRIDE_COMBINE_REPLACE** = ``2``
 
-This area adds its gravity/damping values to whatever has been calculated so far (in :ref:`priority<class_Area3D_property_priority>` order), ignoring any lower priority areas.
+此區域會將自己的重力／阻尼值累加至目前已計算的值（依 :ref:`priority<class_Area3D_property_priority>` 順序），並忽略較低優先權的區域。
 
 .. _class_Area3D_constant_SPACE_OVERRIDE_REPLACE:
 
@@ -296,7 +296,7 @@ This area adds its gravity/damping values to whatever has been calculated so far
 
 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **SPACE_OVERRIDE_REPLACE** = ``3``
 
-This area replaces any gravity/damping, even the defaults, ignoring any lower priority areas.
+此區域會取代目前的重力／阻尼（包含預設值），並忽略所有較低優先權的區域。
 
 .. _class_Area3D_constant_SPACE_OVERRIDE_REPLACE_COMBINE:
 
@@ -304,7 +304,7 @@ This area replaces any gravity/damping, even the defaults, ignoring any lower pr
 
 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **SPACE_OVERRIDE_REPLACE_COMBINE** = ``4``
 
-This area replaces any gravity/damping calculated so far (in :ref:`priority<class_Area3D_property_priority>` order), but keeps calculating the rest of the areas.
+此區域會取代至今為止所計算的重力／阻尼（依 :ref:`priority<class_Area3D_property_priority>` 順序），但仍會繼續計算其他區域。
 
 .. rst-class:: classref-section-separator
 
@@ -312,8 +312,8 @@ This area replaces any gravity/damping calculated so far (in :ref:`priority<clas
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Area3D_property_angular_damp:
 
@@ -326,9 +326,9 @@ Property Descriptions
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-The rate at which objects stop spinning in this area. Represents the angular velocity lost per second.
+物體在此區域停止旋轉的速度。代表每秒損失的角速度.
 
-See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
+關於阻尼的更多細節，見 :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-Override mode for angular damping calculations within this area.
+此區域內角阻尼計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Override mode for angular damping calculations within this area.
 - |void| **set_audio_bus_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_audio_bus_name**\ (\ )
 
-The name of the area's audio bus.
+此區域使用的音訊匯流排名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ The name of the area's audio bus.
 - |void| **set_audio_bus_override**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_overriding_audio_bus**\ (\ )
 
-If ``true``, the area's audio bus overrides the default audio bus.
+若為 ``true``\ ，此區域的音訊匯流排將覆寫預設匯流排。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ If ``true``, the area's audio bus overrides the default audio bus.
 - |void| **set_gravity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity**\ (\ )
 
-The area's gravity intensity (in meters per second squared). This value multiplies the gravity direction. This is useful to alter the force of gravity without altering its direction.
+該區域的重力強度（以米每平方秒為單位）。這個值是重力向量的倍數。這對於改變重力大小而不改變其方向很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ The area's gravity intensity (in meters per second squared). This value multipli
 - |void| **set_gravity_direction**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_gravity_direction**\ (\ )
 
-The area's gravity vector (not normalized).
+此區域的重力向量（未正規化）。
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ The area's gravity vector (not normalized).
 - |void| **set_gravity_is_point**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_gravity_a_point**\ (\ )
 
-If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_center<class_Area3D_property_gravity_point_center>`). See also :ref:`gravity_space_override<class_Area3D_property_gravity_space_override>`.
+若為 ``true``\ ，重力將以 :ref:`gravity_point_center<class_Area3D_property_gravity_point_center>` 指定的點為中心進行計算。另見 :ref:`gravity_space_override<class_Area3D_property_gravity_space_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_cen
 - |void| **set_gravity_point_center**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_gravity_point_center**\ (\ )
 
-If gravity is a point (see :ref:`gravity_point<class_Area3D_property_gravity_point>`), this will be the point of attraction.
+若重力為點狀（參見 :ref:`gravity_point<class_Area3D_property_gravity_point>`\ ），則此為吸引點。
 
 .. rst-class:: classref-item-separator
 
@@ -464,9 +464,9 @@ If gravity is a point (see :ref:`gravity_point<class_Area3D_property_gravity_poi
 - |void| **set_gravity_point_unit_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_point_unit_distance**\ (\ )
 
-The distance at which the gravity strength is equal to :ref:`gravity<class_Area3D_property_gravity>`. For example, on a planet 100 meters in radius with a surface gravity of 4.0 m/s², set the :ref:`gravity<class_Area3D_property_gravity>` to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 meters from the center the gravity will be 1.0 m/s² (twice the distance, 1/4th the gravity), at 50 meters it will be 16.0 m/s² (half the distance, 4x the gravity), and so on.
+重力強度等於 :ref:`gravity<class_Area3D_property_gravity>` 的距離。例如，在一個半徑為 100 米、表面重力為 4.0 m/s² 的行星上，將 :ref:`gravity<class_Area3D_property_gravity>` 設定為 4.0，將單位距離設定為 100.0。重力會根據平方反比定律衰減，因此在該範例中，距中心 200 米處的重力將為 1.0 m/s²（距離的兩倍，重力的 1/4），在 50 米處為 16.0 m/s²（距離的一半，重力的 4 倍），依此類推。
 
-The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
+僅當單位距離為正數時，上述情況才成立。當該屬性被設定為 0.0 時，無論距離如何，重力都將保持不變。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ The above is true only when the unit distance is a positive number. When this is
 - |void| **set_gravity_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_gravity_space_override_mode**\ (\ )
 
-Override mode for gravity calculations within this area.
+此區域內重力計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -500,9 +500,9 @@ Override mode for gravity calculations within this area.
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-The rate at which objects stop moving in this area. Represents the linear velocity lost per second.
+實體在此區域減速的速率。代表每秒損失的線速度。
 
-See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` for more details about damping.
+關於阻尼的更多細節，見\ :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-Override mode for linear damping calculations within this area.
+此區域內線性阻尼計算的覆寫模式。可用值請參閱 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ Override mode for linear damping calculations within this area.
 - |void| **set_monitorable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_monitorable**\ (\ )
 
-If ``true``, other monitoring areas can detect this area.
+若為 ``true``\ ，其他處於監測狀態的區域可偵測到此區域。
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ If ``true``, other monitoring areas can detect this area.
 - |void| **set_monitoring**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_monitoring**\ (\ )
 
-If ``true``, the area detects bodies or areas entering and exiting it.
+若為 ``true``\ ，此區域會偵測物體或其他區域的進入與離開。
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +570,7 @@ If ``true``, the area detects bodies or areas entering and exiting it.
 - |void| **set_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_priority**\ (\ )
 
-The area's priority. Higher priority areas are processed first. The :ref:`World3D<class_World3D>`'s physics is always processed last, after all areas.
+該區域的優先順序。將優先處理優先順序較高的區域。\ :ref:`World3D<class_World3D>` 的物理始終在所有區域之後處理。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ The area's priority. Higher priority areas are processed first. The :ref:`World3
 - |void| **set_reverb_amount**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_reverb_amount**\ (\ )
 
-The degree to which this area applies reverb to its associated audio. Ranges from ``0`` to ``1`` with ``0.1`` precision.
+該區域對其相關音訊套用混響的程度。範圍從 ``0`` 到 ``1``\ ，精度為 ``0.1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +604,7 @@ The degree to which this area applies reverb to its associated audio. Ranges fro
 - |void| **set_use_reverb_bus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_reverb_bus**\ (\ )
 
-If ``true``, the area applies reverb to its associated audio.
+如果為 ``true``\ ，該區域會將混響套用於其關聯音訊。
 
 .. rst-class:: classref-item-separator
 
@@ -621,7 +621,7 @@ If ``true``, the area applies reverb to its associated audio.
 - |void| **set_reverb_bus_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_reverb_bus_name**\ (\ )
 
-The name of the reverb bus to use for this area's associated audio.
+用於該區域關聯音訊的混響匯流排的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -638,7 +638,7 @@ The name of the reverb bus to use for this area's associated audio.
 - |void| **set_reverb_uniformity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_reverb_uniformity**\ (\ )
 
-The degree to which this area's reverb is a uniform effect. Ranges from ``0`` to ``1`` with ``0.1`` precision.
+該區域的混響效果均勻的程度。範圍從 ``0`` 到 ``1``\ ，精度為 ``0.1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -655,9 +655,9 @@ The degree to which this area's reverb is a uniform effect. Ranges from ``0`` to
 - |void| **set_wind_attenuation_factor**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wind_attenuation_factor**\ (\ )
 
-The exponential rate at which wind force decreases with distance from its origin.
+風力隨與源點距離增加而呈指數遞減的速率。
 
-\ **Note:** This wind force only applies to :ref:`SoftBody3D<class_SoftBody3D>` nodes. Other physics bodies are currently not affected by wind.
+\ **注意：** 風力僅作用於 :ref:`SoftBody3D<class_SoftBody3D>` 節點，其他物理物體目前不受影響。
 
 .. rst-class:: classref-item-separator
 
@@ -674,9 +674,9 @@ The exponential rate at which wind force decreases with distance from its origin
 - |void| **set_wind_force_magnitude**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wind_force_magnitude**\ (\ )
 
-The magnitude of area-specific wind force.
+此區域專屬風力的強度大小。
 
-\ **Note:** This wind force only applies to :ref:`SoftBody3D<class_SoftBody3D>` nodes. Other physics bodies are currently not affected by wind.
+\ **注意：** 風力僅作用於 :ref:`SoftBody3D<class_SoftBody3D>` 節點，其他物理物體目前不受影響。
 
 .. rst-class:: classref-item-separator
 
@@ -693,9 +693,9 @@ The magnitude of area-specific wind force.
 - |void| **set_wind_source_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_wind_source_path**\ (\ )
 
-The :ref:`Node3D<class_Node3D>` which is used to specify the direction and origin of an area-specific wind force. The direction is opposite to the z-axis of the :ref:`Node3D<class_Node3D>`'s local transform, and its origin is the origin of the :ref:`Node3D<class_Node3D>`'s local transform.
+用以指定此區域風力方向與來源的 :ref:`Node3D<class_Node3D>`\ 。風向與該節點局部轉換的 z 軸相反，風源則位於其局部原點。
 
-\ **Note:** This wind force only applies to :ref:`SoftBody3D<class_SoftBody3D>` nodes. Other physics bodies are currently not affected by wind.
+\ **注意：** 風力僅作用於 :ref:`SoftBody3D<class_SoftBody3D>` 節點，其他物理物體目前不受影響。
 
 .. rst-class:: classref-section-separator
 
@@ -703,8 +703,8 @@ The :ref:`Node3D<class_Node3D>` which is used to specify the direction and origi
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Area3D_method_get_overlapping_areas:
 
@@ -712,9 +712,9 @@ Method Descriptions
 
 :ref:`Array<class_Array>`\[:ref:`Area3D<class_Area3D>`\] **get_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_areas>`
 
-Returns a list of intersecting **Area3D**\ s. The overlapping area's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+返回相交的 **Area3D** 的列表。重疊區域的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` 必須是該區域的 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` 的一部分才能被偵測到。
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+出於性能原因（同時處理所有碰撞），此列表在物理步驟期間修改一次，而不是在實體被移動後立即修改。可考慮改用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -726,9 +726,9 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 :ref:`Array<class_Array>`\[:ref:`Node3D<class_Node3D>`\] **get_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_bodies>`
 
-Returns a list of intersecting :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s and :ref:`GridMap<class_GridMap>`\ s. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+返回相交的 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 和 :ref:`GridMap<class_GridMap>`\ 。重疊物體的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` 必須是該區域 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` 的一部分，才能被偵測到。
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+出於性能原因（所有碰撞都是一起處理的），這個列表只會在每次物理反覆運算時發生一次更改，不會在物件移動後立即更改。請考慮使用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -740,9 +740,9 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 :ref:`bool<class_bool>` **has_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_areas>`
 
-Returns ``true`` if intersecting any **Area3D**\ s, otherwise returns ``false``. The overlapping area's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+如果與其他 **Area3D** 相交，則返回 ``true``\ ，否則返回 ``false``\ 。重疊區域的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` 必須是該區域 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` 的一部分，才能被偵測到。
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping areas is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+出於性能原因（所有碰撞都是一起處理的），重疊區域的列表只會在每次物理反覆運算時發生一次更改，不會在對象移動後立即更改。請考慮使用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -754,9 +754,9 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_bodies>`
 
-Returns ``true`` if intersecting any :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s or :ref:`GridMap<class_GridMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+如果與其他 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>` 相交，則返回 ``true``\ ，否則返回 ``false``\ 。重疊物體的 :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` 必須是該區域 :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` 的一部分，才能被偵測到。
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+出於性能原因（所有碰撞都是一起處理的），重疊物體的列表只會在每次物理反覆運算時發生一次更改，不會在對象移動後立即更改。請考慮使用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -768,9 +768,9 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **overlaps_area**\ (\ area\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_area>`
 
-Returns ``true`` if the given **Area3D** intersects or overlaps this **Area3D**, ``false`` otherwise.
+如果給定的 **Area3D** 與此 **Area3D** 相交或重疊，則返回 ``true``\ ，否則返回 ``false``\ 。
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **注意：**\ 測試結果不反映物件移動後的即時狀態。出於性能原因，重疊列表每影格只會在物理反覆運算前更新一次。請考慮使用訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -782,18 +782,18 @@ Returns ``true`` if the given **Area3D** intersects or overlaps this **Area3D**,
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_body>`
 
-Returns ``true`` if the given physics body intersects or overlaps this **Area3D**, ``false`` otherwise.
+如果給定的物理物體與此 **Area3D** 相交或重疊，則返回 ``true``\ ，否則返回 ``false``\ 。
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **注意：**\ 測試結果不反映物件移動後的即時狀態。出於性能原因，重疊列表每影格只會在物理反覆運算前更新一次。請考慮使用訊號。
 
-The ``body`` argument can either be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>` instance. While GridMaps are not physics body themselves, they register their tiles with collision shapes as a virtual physics body.
+參數 ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 實例，也可以是 :ref:`GridMap<class_GridMap>` 實例。GridMap 雖然不是物理物體，但會把圖塊的碰撞形狀註冊為虛擬物理物體。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

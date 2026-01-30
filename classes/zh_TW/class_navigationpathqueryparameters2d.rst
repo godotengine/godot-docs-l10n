@@ -5,30 +5,30 @@
 NavigationPathQueryParameters2D
 ===============================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides parameters for 2D navigation path queries.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-By changing various properties of this object, such as the start and target position, you can configure path queries to the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+為 2D 導覽路徑查詢提供參數。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using NavigationPathQueryObjects <../tutorials/navigation/navigation_using_navigationpathqueryobjects>`
+更改該物件的起始和結束位置等屬性可以配置對 :ref:`NavigationServer2D<class_NavigationServer2D>` 的路徑查詢。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用 NavigationPathQueryObject <../tutorials/navigation/navigation_using_navigationpathqueryobjects>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_NavigationPathQueryParameters2D_PathfindingAlgorithm:
 
@@ -86,7 +86,7 @@ enum **PathfindingAlgorithm**: :ref:`🔗<enum_NavigationPathQueryParameters2D_P
 
 :ref:`PathfindingAlgorithm<enum_NavigationPathQueryParameters2D_PathfindingAlgorithm>` **PATHFINDING_ALGORITHM_ASTAR** = ``0``
 
-The path query uses the default A\* pathfinding algorithm.
+路徑查詢使用預設的 A\* 尋路演算法。
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ enum **PathPostProcessing**: :ref:`🔗<enum_NavigationPathQueryParameters2D_Pat
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters2D_PathPostProcessing>` **PATH_POSTPROCESSING_CORRIDORFUNNEL** = ``0``
 
-Applies a funnel algorithm to the raw path corridor found by the pathfinding algorithm. This will result in the shortest path possible inside the path corridor. This postprocessing very much depends on the navigation mesh polygon layout and the created corridor. Especially tile- or gridbased layouts can face artificial corners with diagonal movement due to a jagged path corridor imposed by the cell shapes.
+將漏斗演算法套用於尋路演算法找到的原始路徑走廊。這將導致最短路徑可能在路徑走廊內。該後處理在很大程度上取決於導覽網格多邊形佈局和建立的走廊。特別是基於圖塊和網格的佈局，可能會由於儲存格形狀強加的鋸齒狀的路徑走廊，而面臨對角線移動的人工角落。
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_POSTPROCESSING_EDGECENTERED:
 
@@ -112,7 +112,7 @@ Applies a funnel algorithm to the raw path corridor found by the pathfinding alg
 
 :ref:`PathPostProcessing<enum_NavigationPathQueryParameters2D_PathPostProcessing>` **PATH_POSTPROCESSING_EDGECENTERED** = ``1``
 
-Centers every path position in the middle of the traveled navigation mesh polygon edge. This creates better paths for tile- or gridbased layouts that restrict the movement to the cells center.
+將路徑上的所有位置在經過的導覽網格多邊形邊緣上居中。這樣就把移動限制在了單元格的中心，能夠為基於圖塊或柵格的佈局建立更好的路徑。
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_POSTPROCESSING_NONE:
 
@@ -138,7 +138,7 @@ flags **PathMetadataFlags**: :ref:`🔗<enum_NavigationPathQueryParameters2D_Pat
 
 :ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>` **PATH_METADATA_INCLUDE_NONE** = ``0``
 
-Don't include any additional metadata about the returned path.
+不要包含任何關於返回路徑的額外中繼資料。
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_METADATA_INCLUDE_TYPES:
 
@@ -146,7 +146,7 @@ Don't include any additional metadata about the returned path.
 
 :ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>` **PATH_METADATA_INCLUDE_TYPES** = ``1``
 
-Include the type of navigation primitive (region or link) that each point of the path goes through.
+包含路徑上的各個點所經過的導覽圖元型別（地區或連結）。
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_METADATA_INCLUDE_RIDS:
 
@@ -154,7 +154,7 @@ Include the type of navigation primitive (region or link) that each point of the
 
 :ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>` **PATH_METADATA_INCLUDE_RIDS** = ``2``
 
-Include the :ref:`RID<class_RID>`\ s of the regions and links that each point of the path goes through.
+包含路徑上的各個點所經過的地區和連結的 :ref:`RID<class_RID>`\ 。
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_METADATA_INCLUDE_OWNERS:
 
@@ -162,7 +162,7 @@ Include the :ref:`RID<class_RID>`\ s of the regions and links that each point of
 
 :ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>` **PATH_METADATA_INCLUDE_OWNERS** = ``4``
 
-Include the ``ObjectID``\ s of the :ref:`Object<class_Object>`\ s which manage the regions and links each point of the path goes through.
+包含管理路徑上的各個點所經過的地區和連結的 :ref:`Object<class_Object>` 的 ``ObjectID``\ 。
 
 .. _class_NavigationPathQueryParameters2D_constant_PATH_METADATA_INCLUDE_ALL:
 
@@ -170,7 +170,7 @@ Include the ``ObjectID``\ s of the :ref:`Object<class_Object>`\ s which manage t
 
 :ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>` **PATH_METADATA_INCLUDE_ALL** = ``7``
 
-Include all available metadata about the returned path.
+包含關於返回路徑的所有可用中繼資料。
 
 .. rst-class:: classref-section-separator
 
@@ -178,8 +178,8 @@ Include all available metadata about the returned path.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_NavigationPathQueryParameters2D_property_excluded_regions:
 
@@ -247,7 +247,7 @@ The navigation map :ref:`RID<class_RID>` used in the path query.
 - |void| **set_metadata_flags**\ (\ value\: |bitfield|\[:ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>`\]\ )
 - |bitfield|\[:ref:`PathMetadataFlags<enum_NavigationPathQueryParameters2D_PathMetadataFlags>`\] **get_metadata_flags**\ (\ )
 
-Additional information to include with the navigation path.
+包含在導覽路徑中的額外資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Additional information to include with the navigation path.
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-The navigation layers the query will use (as a bitmask).
+查詢所使用的導覽層（形式為位元遮罩）。
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ The navigation layers the query will use (as a bitmask).
 - |void| **set_path_postprocessing**\ (\ value\: :ref:`PathPostProcessing<enum_NavigationPathQueryParameters2D_PathPostProcessing>`\ )
 - :ref:`PathPostProcessing<enum_NavigationPathQueryParameters2D_PathPostProcessing>` **get_path_postprocessing**\ (\ )
 
-The path postprocessing applied to the raw path corridor found by the :ref:`pathfinding_algorithm<class_NavigationPathQueryParameters2D_property_pathfinding_algorithm>`.
+對 :ref:`pathfinding_algorithm<class_NavigationPathQueryParameters2D_property_pathfinding_algorithm>` 找到的原始路徑走廊套用的路徑後期處理。
 
 .. rst-class:: classref-item-separator
 
@@ -368,7 +368,7 @@ The maximum number of polygons that are searched before the pathfinding cancels 
 - |void| **set_pathfinding_algorithm**\ (\ value\: :ref:`PathfindingAlgorithm<enum_NavigationPathQueryParameters2D_PathfindingAlgorithm>`\ )
 - :ref:`PathfindingAlgorithm<enum_NavigationPathQueryParameters2D_PathfindingAlgorithm>` **get_pathfinding_algorithm**\ (\ )
 
-The pathfinding algorithm used in the path query.
+路徑查詢中使用的尋路演算法。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Path simplification can be helpful to mitigate various path following issues tha
 - |void| **set_start_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_start_position**\ (\ )
 
-The pathfinding start position in global coordinates.
+尋路起始點，使用全域座標。
 
 .. rst-class:: classref-item-separator
 
@@ -438,14 +438,14 @@ The pathfinding start position in global coordinates.
 - |void| **set_target_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_target_position**\ (\ )
 
-The pathfinding target position in global coordinates.
+尋路目標點，使用全域座標。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

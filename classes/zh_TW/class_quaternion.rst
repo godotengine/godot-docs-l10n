@@ -5,12 +5,12 @@
 Quaternion
 ==========
 
-A unit quaternion used for representing 3D rotations.
+代表 3D 旋轉的單位四元數。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The **Quaternion** built-in :ref:`Variant<class_Variant>` type is a 4D data structure that represents rotation in the form of a `Hamilton convention quaternion <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__. Compared to the :ref:`Basis<class_Basis>` type which can store both rotation and scale, quaternions can *only* store rotation.
 
@@ -24,27 +24,27 @@ For a great introduction to quaternions, see `this video by 3Blue1Brown <https:/
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	使用 C# 操作此 API 時有顯著差異，詳見 :ref:`doc_c_sharp_differences`。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
 - `3Blue1Brown's video on Quaternions <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__
 
 - `Online Quaternion Visualization <https://quaternions.online/>`__
 
-- `Using 3D transforms <../tutorials/3d/using_transforms.html#interpolating-with-quaternions>`__
+- `使用 3D 變換 <../tutorials/3d/using_transforms.html#interpolating-with-quaternions>`__
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 - `Advanced Quaternion Visualization <https://iwatake2222.github.io/rotation_master/rotation_master.html>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -131,8 +131,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -171,8 +171,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_Quaternion_constant_IDENTITY:
 
@@ -192,8 +192,8 @@ If a :ref:`Vector3<class_Vector3>` is rotated (multiplied) by this quaternion, i
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Quaternion_property_w:
 
@@ -253,8 +253,8 @@ Z component of the quaternion. This is the value along the "imaginary" ``k`` axi
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_Quaternion_constructor_Quaternion:
 
@@ -274,7 +274,7 @@ Constructs a **Quaternion** identical to :ref:`IDENTITY<class_Quaternion_constan
 
 :ref:`Quaternion<class_Quaternion>` **Quaternion**\ (\ from\: :ref:`Quaternion<class_Quaternion>`\ )
 
-Constructs a **Quaternion** as a copy of the given **Quaternion**.
+建構給定 **Quaternion** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -326,8 +326,8 @@ Constructs a **Quaternion** defined by the given values.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Quaternion_method_angle_to:
 
@@ -335,9 +335,9 @@ Method Descriptions
 
 :ref:`float<class_float>` **angle_to**\ (\ to\: :ref:`Quaternion<class_Quaternion>`\ ) |const| :ref:`🔗<class_Quaternion_method_angle_to>`
 
-Returns the angle between this quaternion and ``to``. This is the magnitude of the angle you would need to rotate by to get from one to the other.
+返回這個四元數與 ``to`` 之間的角度。這是從一個旋轉到另一個旋轉所需的角度大小。
 
-\ **Note:** The magnitude of the floating-point error for this method is abnormally high, so methods such as ``is_zero_approx`` will not work reliably.
+\ **注意：**\ 該方法的浮點數誤差異常地高，因此 ``is_zero_approx`` 等方法的結果不可靠。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Returns ``true`` if this quaternion and ``to`` are approximately equal, by calli
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Quaternion_method_is_finite>`
 
-Returns ``true`` if this quaternion is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
+如果該四元數是有限的，則返回 ``true``\ ，判斷方法是在每個分量上呼叫 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Performs a spherical-linear interpolation with the ``to`` quaternion, given a ``
 
 :ref:`Quaternion<class_Quaternion>` **spherical_cubic_interpolate**\ (\ b\: :ref:`Quaternion<class_Quaternion>`, pre_a\: :ref:`Quaternion<class_Quaternion>`, post_b\: :ref:`Quaternion<class_Quaternion>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Quaternion_method_spherical_cubic_interpolate>`
 
-Performs a spherical cubic interpolation between quaternions ``pre_a``, this vector, ``b``, and ``post_b``, by the given amount ``weight``.
+在四元數 ``pre_a``\ 、這個向量、\ ``b`` 以及 ``post_b`` 之間按照給定的 ``weight`` 進行球面三次插值。
 
 .. rst-class:: classref-item-separator
 
@@ -571,8 +571,8 @@ It can perform smoother interpolation than :ref:`spherical_cubic_interpolate()<c
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_Quaternion_operator_neq_Quaternion:
 
@@ -730,7 +730,7 @@ Index ``0`` is the same as :ref:`x<class_Quaternion_property_x>`, index ``1`` is
 
 :ref:`Quaternion<class_Quaternion>` **operator unary+**\ (\ ) :ref:`🔗<class_Quaternion_operator_unplus>`
 
-Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
+返回與 ``+`` 不存在時相同的值。單目 ``+`` 沒有作用，但有時可以使你的程式碼更具可讀性。
 
 .. rst-class:: classref-item-separator
 
@@ -744,12 +744,12 @@ Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, 
 
 Returns the negative value of the **Quaternion**. This is the same as multiplying all components by ``-1``. This operation results in a quaternion that represents the same rotation.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

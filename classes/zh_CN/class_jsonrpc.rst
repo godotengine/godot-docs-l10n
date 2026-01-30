@@ -5,21 +5,21 @@
 JSONRPC
 =======
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-A helper to handle dictionaries which look like JSONRPC documents.
+用于处理看起来像 JSONRPC 文档的字典的辅助类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-`JSON-RPC <https://www.jsonrpc.org/>`__ is a standard which wraps a method call in a :ref:`JSON<class_JSON>` object. The object has a particular structure and identifies which method is called, the parameters to that function, and carries an ID to keep track of responses. This class implements that standard on top of :ref:`Dictionary<class_Dictionary>`; you will have to convert between a :ref:`Dictionary<class_Dictionary>` and :ref:`JSON<class_JSON>` with other functions.
+`JSON-RPC <https://www.jsonrpc.org/>`__ 是一项标准，它将方法调用包装在一个 :ref:`JSON<class_JSON>` 对象中。该对象有一个特定的结构，并标识出哪个方法被调用，该函数的参数，并携带一个 ID 来跟踪响应。这个类在 :ref:`Dictionary<class_Dictionary>` 之上实现了该标准；你必须用其他函数在 :ref:`Dictionary<class_Dictionary>` 和 :ref:`JSON<class_JSON>` 之间进行转换。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_JSONRPC_ErrorCode:
 
@@ -61,7 +61,7 @@ enum **ErrorCode**: :ref:`🔗<enum_JSONRPC_ErrorCode>`
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **PARSE_ERROR** = ``-32700``
 
-The request could not be parsed as it was not valid by JSON standard (:ref:`JSON.parse()<class_JSON_method_parse>` failed).
+无法解析请求，因为不符合 JSON 标准（\ :ref:`JSON.parse()<class_JSON_method_parse>` 失败）。
 
 .. _class_JSONRPC_constant_INVALID_REQUEST:
 
@@ -69,7 +69,7 @@ The request could not be parsed as it was not valid by JSON standard (:ref:`JSON
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **INVALID_REQUEST** = ``-32600``
 
-A method call was requested but the request's format is not valid.
+请求进行方法调用，但是请求格式无效。
 
 .. _class_JSONRPC_constant_METHOD_NOT_FOUND:
 
@@ -77,7 +77,7 @@ A method call was requested but the request's format is not valid.
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **METHOD_NOT_FOUND** = ``-32601``
 
-A method call was requested but no function of that name existed in the JSONRPC subclass.
+请求进行方法调用，但是 JSONRPC 子类中不存在该名称的函数。
 
 .. _class_JSONRPC_constant_INVALID_PARAMS:
 
@@ -85,7 +85,7 @@ A method call was requested but no function of that name existed in the JSONRPC 
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **INVALID_PARAMS** = ``-32602``
 
-A method call was requested but the given method parameters are not valid. Not used by the built-in JSONRPC.
+请求进行方法调用，但是给定的方法参数无效。内置 JSONRPC 未使用。
 
 .. _class_JSONRPC_constant_INTERNAL_ERROR:
 
@@ -93,7 +93,7 @@ A method call was requested but the given method parameters are not valid. Not u
 
 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` **INTERNAL_ERROR** = ``-32603``
 
-An internal error occurred while processing the request. Not used by the built-in JSONRPC.
+处理请求时发生内部错误。内置 JSONRPC 未使用。
 
 .. rst-class:: classref-section-separator
 
@@ -101,8 +101,8 @@ An internal error occurred while processing the request. Not used by the built-i
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_JSONRPC_method_make_notification:
 
@@ -110,11 +110,11 @@ Method Descriptions
 
 :ref:`Dictionary<class_Dictionary>` **make_notification**\ (\ method\: :ref:`String<class_String>`, params\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_JSONRPC_method_make_notification>`
 
-Returns a dictionary in the form of a JSON-RPC notification. Notifications are one-shot messages which do not expect a response.
+返回 JSON-RPC 通知形式的字典。通知是一次性的信息，不需要有响应。
 
-- ``method``: Name of the method being called.
+- ``method``\ ：被调用的方法的名称。
 
-- ``params``: An array or dictionary of parameters being passed to the method.
+- ``params``\ ：传递给该被调用的方法的参数的数组或字典。
 
 .. rst-class:: classref-item-separator
 
@@ -126,13 +126,13 @@ Returns a dictionary in the form of a JSON-RPC notification. Notifications are o
 
 :ref:`Dictionary<class_Dictionary>` **make_request**\ (\ method\: :ref:`String<class_String>`, params\: :ref:`Variant<class_Variant>`, id\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_JSONRPC_method_make_request>`
 
-Returns a dictionary in the form of a JSON-RPC request. Requests are sent to a server with the expectation of a response. The ID field is used for the server to specify which exact request it is responding to.
+以 JSON-RPC 请求的形式返回字典。请求被发送到服务器并期望得到响应。ID 字段用于服务器指定它正在响应的确切请求。
 
-- ``method``: Name of the method being called.
+- ``method``\ ：被调用的方法的名称。
 
-- ``params``: An array or dictionary of parameters being passed to the method.
+- ``params``\ ：传递给该被调用的方法的参数的数组或字典。
 
-- ``id``: Uniquely identifies this request. The server is expected to send a response with the same ID.
+- ``id``\ ：唯一标识该请求。服务器应发送具有相同 ID 的响应。
 
 .. rst-class:: classref-item-separator
 
@@ -144,11 +144,11 @@ Returns a dictionary in the form of a JSON-RPC request. Requests are sent to a s
 
 :ref:`Dictionary<class_Dictionary>` **make_response**\ (\ result\: :ref:`Variant<class_Variant>`, id\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_JSONRPC_method_make_response>`
 
-When a server has received and processed a request, it is expected to send a response. If you did not want a response then you need to have sent a Notification instead.
+当服务器接收并处理了请求时，它应该发送响应。如果不想要响应，则需要发送通知。
 
-- ``result``: The return value of the function which was called.
+- ``result``\ ：被调用的函数的返回值。
 
-- ``id``: The ID of the request this response is targeted to.
+- ``id``\ ：该响应针对的请求的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -160,13 +160,13 @@ When a server has received and processed a request, it is expected to send a res
 
 :ref:`Dictionary<class_Dictionary>` **make_response_error**\ (\ code\: :ref:`int<class_int>`, message\: :ref:`String<class_String>`, id\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_JSONRPC_method_make_response_error>`
 
-Creates a response which indicates a previous reply has failed in some way.
+创建响应，指示先前的回复以某种方式失败。
 
-- ``code``: The error code corresponding to what kind of error this is. See the :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` constants.
+- ``code``\ ：这是哪种错误对应的错误代码。请参阅 :ref:`ErrorCode<enum_JSONRPC_ErrorCode>` 常量。
 
-- ``message``: A custom message about this error.
+- ``message``\ ：关于该错误的自定义消息。
 
-- ``id``: The request this error is a response to.
+- ``id``\ ：该错误作为响应对应的请求。
 
 .. rst-class:: classref-item-separator
 
@@ -178,11 +178,11 @@ Creates a response which indicates a previous reply has failed in some way.
 
 :ref:`Variant<class_Variant>` **process_action**\ (\ action\: :ref:`Variant<class_Variant>`, recurse\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JSONRPC_method_process_action>`
 
-Given a Dictionary which takes the form of a JSON-RPC request: unpack the request and run it. Methods are resolved by looking at the field called "method" and looking for an equivalently named function in the JSONRPC object. If one is found that method is called.
+给定采用 JSON-RPC 请求形式的字典：解压请求并运行它。通过查看名为“method”的字段，并在 JSONRPC 对象中查找等效命名的函数来解析方法。如果找到，则调用该方法。
 
-To add new supported methods extend the JSONRPC class and call :ref:`process_action()<class_JSONRPC_method_process_action>` on your subclass.
+要添加新的受支持方法，请扩展 JSONRPC 类并在你的子类上调用 :ref:`process_action()<class_JSONRPC_method_process_action>`\ 。
 
-\ ``action``: The action to be run, as a Dictionary in the form of a JSON-RPC request or notification.
+\ ``action``\ ：要运行的动作，作为 JSON-RPC 请求或通知形式的字典。
 
 .. rst-class:: classref-item-separator
 
@@ -214,12 +214,12 @@ Registers a callback for the given method name.
 
 - ``callback``: The callback which will handle the specified method.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

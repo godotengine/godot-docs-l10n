@@ -5,27 +5,27 @@
 Bone2D
 ======
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A joint used with :ref:`Skeleton2D<class_Skeleton2D>` to control and animate other nodes.
+与 :ref:`Skeleton2D<class_Skeleton2D>` 一起使用的关节，能够控制并动画其他节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A hierarchy of **Bone2D**\ s can be bound to a :ref:`Skeleton2D<class_Skeleton2D>` to control and animate other :ref:`Node2D<class_Node2D>` nodes.
+**Bone2D** 层级结构可以绑定到 :ref:`Skeleton2D<class_Skeleton2D>` 上，控制并动画其他 :ref:`Node2D<class_Node2D>` 节点。
 
-You can use **Bone2D** and :ref:`Skeleton2D<class_Skeleton2D>` nodes to animate 2D meshes created with the :ref:`Polygon2D<class_Polygon2D>` UV editor.
+你可以使用 **Bone2D** 和 :ref:`Skeleton2D<class_Skeleton2D>` 节点对使用 :ref:`Polygon2D<class_Polygon2D>` UV 编辑器创建的 2D 网格进行动画。
 
-Each bone has a :ref:`rest<class_Bone2D_property_rest>` transform that you can reset to with :ref:`apply_rest()<class_Bone2D_method_apply_rest>`. These rest poses are relative to the bone's parent.
+每个骨骼都有一个 :ref:`rest<class_Bone2D_property_rest>` 变换，你可以用 :ref:`apply_rest()<class_Bone2D_method_apply_rest>` 来重置到这个变换。这些放松姿势是相对于骨骼的父节点而言的。
 
-If in the editor, you can set the rest pose of an entire skeleton using a menu option, from the code, you need to iterate over the bones to set their individual rest poses.
+如果在编辑器中，你可以使用菜单选项设置整个骨架的放松姿势，从代码中，你需要遍历骨骼来设置它们各自的放松姿势。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Bone2D_property_rest:
 
@@ -82,7 +82,7 @@ Property Descriptions
 - |void| **set_rest**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_rest**\ (\ )
 
-Rest transform of the bone. You can reset the node's transforms to this value using :ref:`apply_rest()<class_Bone2D_method_apply_rest>`.
+骨骼的放松变换。你可以使用 :ref:`apply_rest()<class_Bone2D_method_apply_rest>` 将节点的变换重置为这个值。
 
 .. rst-class:: classref-section-separator
 
@@ -90,8 +90,8 @@ Rest transform of the bone. You can reset the node's transforms to this value us
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Bone2D_method_apply_rest:
 
@@ -99,7 +99,7 @@ Method Descriptions
 
 |void| **apply_rest**\ (\ ) :ref:`🔗<class_Bone2D_method_apply_rest>`
 
-Resets the bone to the rest pose. This is equivalent to setting :ref:`Node2D.transform<class_Node2D_property_transform>` to :ref:`rest<class_Bone2D_property_rest>`.
+将骨骼重置为放松姿势。相当于将 :ref:`Node2D.transform<class_Node2D_property_transform>` 设置为 :ref:`rest<class_Bone2D_property_rest>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Resets the bone to the rest pose. This is equivalent to setting :ref:`Node2D.tra
 
 :ref:`bool<class_bool>` **get_autocalculate_length_and_angle**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_autocalculate_length_and_angle>`
 
-Returns whether this **Bone2D** is going to autocalculate its length and bone angle using its first **Bone2D** child node, if one exists. If there are no **Bone2D** children, then it cannot autocalculate these values and will print a warning.
+如果该 **Bone2D** 存在骨骼子节点，则返回是否要使用第一个 **Bone2D** 子节点自动计算其长度和骨骼角度。如果没有 **Bone2D** 子节点，则无法自动计算这些值，会打印一条警告。
 
 .. rst-class:: classref-item-separator
 
@@ -123,9 +123,9 @@ Returns whether this **Bone2D** is going to autocalculate its length and bone an
 
 :ref:`float<class_float>` **get_bone_angle**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_bone_angle>`
 
-Returns the angle of the bone in the **Bone2D**.
+返回 **Bone2D** 中骨骼的角度。
 
-\ **Note:** This is different from the **Bone2D**'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the **Bone2D**'s :ref:`Node2D.transform<class_Node2D_property_transform>`.
+\ **注意：**\ 这与 **Bone2D** 的旋转不同。骨骼角度是小工具显示的骨骼旋转，不受 **Bone2D** 的 :ref:`Node2D.transform<class_Node2D_property_transform>` 的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Returns the angle of the bone in the **Bone2D**.
 
 :ref:`int<class_int>` **get_index_in_skeleton**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_index_in_skeleton>`
 
-Returns the node's index as part of the entire skeleton. See :ref:`Skeleton2D<class_Skeleton2D>`.
+返回节点在整个骨架中的索引号。见 :ref:`Skeleton2D<class_Skeleton2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Returns the node's index as part of the entire skeleton. See :ref:`Skeleton2D<cl
 
 :ref:`float<class_float>` **get_length**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_length>`
 
-Returns the length of the bone in the **Bone2D** node.
+返回 **Bone2D** 节点中骨骼的长度。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ Returns the length of the bone in the **Bone2D** node.
 
 :ref:`Transform2D<class_Transform2D>` **get_skeleton_rest**\ (\ ) |const| :ref:`🔗<class_Bone2D_method_get_skeleton_rest>`
 
-Returns the node's :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<class_Transform2D>` if it doesn't have a parent, or its rest pose relative to its parent.
+如果节点没有父节点，返回节点的 :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<class_Transform2D>`\ ，或者返回它相对于父节点的放松姿势。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Returns the node's :ref:`rest<class_Bone2D_property_rest>` :ref:`Transform2D<cla
 
 |void| **set_autocalculate_length_and_angle**\ (\ auto_calculate\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Bone2D_method_set_autocalculate_length_and_angle>`
 
-When set to ``true``, the **Bone2D** node will attempt to automatically calculate the bone angle and length using the first child **Bone2D** node, if one exists. If none exist, the **Bone2D** cannot automatically calculate these values and will print a warning.
+当设置为 ``true`` 时，该 **Bone2D** 节点将尝试使用第一个子 **Bone2D** 节点（如果存在）自动计算骨骼角度和长度。如果不存在子节点，\ **Bone2D** 将无法自动计算这些值，并将输出一条警告。
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ When set to ``true``, the **Bone2D** node will attempt to automatically calculat
 
 |void| **set_bone_angle**\ (\ angle\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Bone2D_method_set_bone_angle>`
 
-Sets the bone angle for the **Bone2D**. This is typically set to the rotation from the **Bone2D** to a child **Bone2D** node.
+设置 **Bone2D** 节点的骨骼角度。这通常设置为从 **Bone2D** 节点到子 **Bone2D** 节点的旋转。
 
-\ **Note:** This is different from the **Bone2D**'s rotation. The bone's angle is the rotation of the bone shown by the gizmo, which is unaffected by the **Bone2D**'s :ref:`Node2D.transform<class_Node2D_property_transform>`.
+\ **注意：**\ 这与 **Bone2D** 的旋转不同。骨骼角度是 **Bone2D** 小工具显示的骨骼旋转，不受 **Bone2D** 的 :ref:`Node2D.transform<class_Node2D_property_transform>` 的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -199,14 +199,14 @@ Sets the bone angle for the **Bone2D**. This is typically set to the rotation fr
 
 |void| **set_length**\ (\ length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Bone2D_method_set_length>`
 
-Sets the length of the bone in the **Bone2D**.
+设置该 **Bone2D** 中骨骼的长度。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

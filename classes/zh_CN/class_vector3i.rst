@@ -5,34 +5,34 @@
 Vector3i
 ========
 
-A 3D vector using integer coordinates.
+使用整数坐标的 3D 向量。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A 3-element structure that can be used to represent 3D grid coordinates or any other triplet of integers.
+包含三个元素的结构体，可用于代表 3D 坐标或任何整数的三元组。
 
-It uses integer coordinates and is therefore preferable to :ref:`Vector3<class_Vector3>` when exact precision is required. Note that the values are limited to 32 bits, and unlike :ref:`Vector3<class_Vector3>` this cannot be configured with an engine build option. Use :ref:`int<class_int>` or :ref:`PackedInt64Array<class_PackedInt64Array>` if 64-bit values are needed.
+使用整数坐标，因此需要绝对精确时应比 :ref:`Vector3<class_Vector3>` 优先使用。请注意，取值范围有 32 位的限制，与 :ref:`Vector3<class_Vector3>` 不同，这个类型的精度无法使用引擎的构建参数进行配置。如果需要 64 位的值，请使用 :ref:`int<class_int>` 或 :ref:`PackedInt64Array<class_PackedInt64Array>`\ 。
 
-\ **Note:** In a boolean context, a Vector3i will evaluate to ``false`` if it's equal to ``Vector3i(0, 0, 0)``. Otherwise, a Vector3i will always evaluate to ``true``.
+\ **注意：**\ 在布尔语境中，如果 Vector3i 等于 ``Vector3i(0, 0, 0)`` 则求值结果为 ``false``\ 。否则 Vector3i 的求值结果始终为 ``true``\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Math documentation index <../tutorials/math/index>`
+- :doc:`数学文档索引 <../tutorials/math/index>`
 
-- :doc:`Vector math <../tutorials/math/vector_math>`
+- :doc:`向量数学 <../tutorials/math/vector_math>`
 
-- `3Blue1Brown Essence of Linear Algebra <https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>`__
+- `3Blue1Brown《线性代数的本质》 <https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -107,8 +107,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+运算符
+------
 
 .. table::
    :widths: auto
@@ -159,8 +159,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Vector3i_Axis:
 
@@ -174,7 +174,7 @@ enum **Axis**: :ref:`🔗<enum_Vector3i_Axis>`
 
 :ref:`Axis<enum_Vector3i_Axis>` **AXIS_X** = ``0``
 
-Enumerated value for the X axis. Returned by :ref:`max_axis_index()<class_Vector3i_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector3i_method_min_axis_index>`.
+X 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector3i_method_min_axis_index>` 返回。
 
 .. _class_Vector3i_constant_AXIS_Y:
 
@@ -182,7 +182,7 @@ Enumerated value for the X axis. Returned by :ref:`max_axis_index()<class_Vector
 
 :ref:`Axis<enum_Vector3i_Axis>` **AXIS_Y** = ``1``
 
-Enumerated value for the Y axis. Returned by :ref:`max_axis_index()<class_Vector3i_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector3i_method_min_axis_index>`.
+Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector3i_method_min_axis_index>` 返回。
 
 .. _class_Vector3i_constant_AXIS_Z:
 
@@ -190,7 +190,7 @@ Enumerated value for the Y axis. Returned by :ref:`max_axis_index()<class_Vector
 
 :ref:`Axis<enum_Vector3i_Axis>` **AXIS_Z** = ``2``
 
-Enumerated value for the Z axis. Returned by :ref:`max_axis_index()<class_Vector3i_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector3i_method_min_axis_index>`.
+Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector3i_method_min_axis_index>` 返回。
 
 .. rst-class:: classref-section-separator
 
@@ -198,8 +198,8 @@ Enumerated value for the Z axis. Returned by :ref:`max_axis_index()<class_Vector
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Vector3i_constant_ZERO:
 
@@ -207,7 +207,7 @@ Constants
 
 **ZERO** = ``Vector3i(0, 0, 0)`` :ref:`🔗<class_Vector3i_constant_ZERO>`
 
-Zero vector, a vector with all components set to ``0``.
+零向量，所有分量都设置为 ``0`` 的向量。
 
 .. _class_Vector3i_constant_ONE:
 
@@ -215,7 +215,7 @@ Zero vector, a vector with all components set to ``0``.
 
 **ONE** = ``Vector3i(1, 1, 1)`` :ref:`🔗<class_Vector3i_constant_ONE>`
 
-One vector, a vector with all components set to ``1``.
+一向量，所有分量都设置为 ``1`` 的向量。
 
 .. _class_Vector3i_constant_MIN:
 
@@ -223,7 +223,7 @@ One vector, a vector with all components set to ``1``.
 
 **MIN** = ``Vector3i(-2147483648, -2147483648, -2147483648)`` :ref:`🔗<class_Vector3i_constant_MIN>`
 
-Min vector, a vector with all components equal to ``INT32_MIN``. Can be used as a negative integer equivalent of :ref:`Vector3.INF<class_Vector3_constant_INF>`.
+最小向量，所有分量等于 ``INT32_MIN`` 的向量。可用作 :ref:`Vector3.INF<class_Vector3_constant_INF>` 的负整数等价物。
 
 .. _class_Vector3i_constant_MAX:
 
@@ -231,7 +231,7 @@ Min vector, a vector with all components equal to ``INT32_MIN``. Can be used as 
 
 **MAX** = ``Vector3i(2147483647, 2147483647, 2147483647)`` :ref:`🔗<class_Vector3i_constant_MAX>`
 
-Max vector, a vector with all components equal to ``INT32_MAX``. Can be used as an integer equivalent of :ref:`Vector3.INF<class_Vector3_constant_INF>`.
+最大向量，所有分量等于 ``INT32_MAX`` 的向量。可用作 :ref:`Vector3.INF<class_Vector3_constant_INF>` 的整数等价物。
 
 .. _class_Vector3i_constant_LEFT:
 
@@ -239,7 +239,7 @@ Max vector, a vector with all components equal to ``INT32_MAX``. Can be used as 
 
 **LEFT** = ``Vector3i(-1, 0, 0)`` :ref:`🔗<class_Vector3i_constant_LEFT>`
 
-Left unit vector. Represents the local direction of left, and the global direction of west.
+左单位向量。代表局部的左方向，全局的西方向。
 
 .. _class_Vector3i_constant_RIGHT:
 
@@ -247,7 +247,7 @@ Left unit vector. Represents the local direction of left, and the global directi
 
 **RIGHT** = ``Vector3i(1, 0, 0)`` :ref:`🔗<class_Vector3i_constant_RIGHT>`
 
-Right unit vector. Represents the local direction of right, and the global direction of east.
+右单位向量。代表局部的右方向，全局的东方向。
 
 .. _class_Vector3i_constant_UP:
 
@@ -255,7 +255,7 @@ Right unit vector. Represents the local direction of right, and the global direc
 
 **UP** = ``Vector3i(0, 1, 0)`` :ref:`🔗<class_Vector3i_constant_UP>`
 
-Up unit vector.
+上单位向量。
 
 .. _class_Vector3i_constant_DOWN:
 
@@ -263,7 +263,7 @@ Up unit vector.
 
 **DOWN** = ``Vector3i(0, -1, 0)`` :ref:`🔗<class_Vector3i_constant_DOWN>`
 
-Down unit vector.
+下单位向量。
 
 .. _class_Vector3i_constant_FORWARD:
 
@@ -271,7 +271,7 @@ Down unit vector.
 
 **FORWARD** = ``Vector3i(0, 0, -1)`` :ref:`🔗<class_Vector3i_constant_FORWARD>`
 
-Forward unit vector. Represents the local direction of forward, and the global direction of north.
+前单位向量。代表局部的前方向，全局的北方向。
 
 .. _class_Vector3i_constant_BACK:
 
@@ -279,7 +279,7 @@ Forward unit vector. Represents the local direction of forward, and the global d
 
 **BACK** = ``Vector3i(0, 0, 1)`` :ref:`🔗<class_Vector3i_constant_BACK>`
 
-Back unit vector. Represents the local direction of back, and the global direction of south.
+向后的单位向量。代表局部的后方，全局的南方。
 
 .. rst-class:: classref-section-separator
 
@@ -287,8 +287,8 @@ Back unit vector. Represents the local direction of back, and the global directi
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Vector3i_property_x:
 
@@ -296,7 +296,7 @@ Property Descriptions
 
 :ref:`int<class_int>` **x** = ``0`` :ref:`🔗<class_Vector3i_property_x>`
 
-The vector's X component. Also accessible by using the index position ``[0]``.
+向量的 X 分量。也可以通过使用索引位置 ``[0]`` 访问。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ The vector's X component. Also accessible by using the index position ``[0]``.
 
 :ref:`int<class_int>` **y** = ``0`` :ref:`🔗<class_Vector3i_property_y>`
 
-The vector's Y component. Also accessible by using the index position ``[1]``.
+向量的 Y 分量。也可以通过使用索引位置 ``[1]`` 访问。
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ The vector's Y component. Also accessible by using the index position ``[1]``.
 
 :ref:`int<class_int>` **z** = ``0`` :ref:`🔗<class_Vector3i_property_z>`
 
-The vector's Z component. Also accessible by using the index position ``[2]``.
+向量的 Z 分量。也可以通过使用索引位置 ``[2]`` 访问。
 
 .. rst-class:: classref-section-separator
 
@@ -328,8 +328,8 @@ The vector's Z component. Also accessible by using the index position ``[2]``.
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Vector3i_constructor_Vector3i:
 
@@ -337,7 +337,7 @@ Constructor Descriptions
 
 :ref:`Vector3i<class_Vector3i>` **Vector3i**\ (\ ) :ref:`🔗<class_Vector3i_constructor_Vector3i>`
 
-Constructs a default-initialized **Vector3i** with all components set to ``0``.
+构造默认初始化的 **Vector3i**\ ，所有分量都为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Constructs a default-initialized **Vector3i** with all components set to ``0``.
 
 :ref:`Vector3i<class_Vector3i>` **Vector3i**\ (\ from\: :ref:`Vector3i<class_Vector3i>`\ )
 
-Constructs a **Vector3i** as a copy of the given **Vector3i**.
+构造给定 **Vector3i** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Constructs a **Vector3i** as a copy of the given **Vector3i**.
 
 :ref:`Vector3i<class_Vector3i>` **Vector3i**\ (\ from\: :ref:`Vector3<class_Vector3>`\ )
 
-Constructs a new **Vector3i** from the given :ref:`Vector3<class_Vector3>` by truncating components' fractional parts (rounding towards zero). For a different behavior consider passing the result of :ref:`Vector3.ceil()<class_Vector3_method_ceil>`, :ref:`Vector3.floor()<class_Vector3_method_floor>` or :ref:`Vector3.round()<class_Vector3_method_round>` to this constructor instead.
+根据给定的 :ref:`Vector3<class_Vector3>` 构造 **Vector3i**\ ，会将各个分量的小数部分截断（向 0 取整）。要使用不同的行为，请考虑改为传入 :ref:`Vector3.ceil()<class_Vector3_method_ceil>`\ 、\ :ref:`Vector3.floor()<class_Vector3_method_floor>` 或 :ref:`Vector3.round()<class_Vector3_method_round>` 的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ Constructs a new **Vector3i** from the given :ref:`Vector3<class_Vector3>` by tr
 
 :ref:`Vector3i<class_Vector3i>` **Vector3i**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, z\: :ref:`int<class_int>`\ )
 
-Returns a **Vector3i** with the given components.
+返回具有给定分量的 **Vector3i**\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -375,8 +375,8 @@ Returns a **Vector3i** with the given components.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Vector3i_method_abs:
 
@@ -384,7 +384,7 @@ Method Descriptions
 
 :ref:`Vector3i<class_Vector3i>` **abs**\ (\ ) |const| :ref:`🔗<class_Vector3i_method_abs>`
 
-Returns a new vector with all components in absolute values (i.e. positive).
+返回一个新向量，其所有分量都是绝对值，即正值。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Returns a new vector with all components in absolute values (i.e. positive).
 
 :ref:`Vector3i<class_Vector3i>` **clamp**\ (\ min\: :ref:`Vector3i<class_Vector3i>`, max\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_clamp>`
 
-Returns a new vector with all components clamped between the components of ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+返回一个新向量，每个分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Returns a new vector with all components clamped between the components of ``min
 
 :ref:`Vector3i<class_Vector3i>` **clampi**\ (\ min\: :ref:`int<class_int>`, max\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_clampi>`
 
-Returns a new vector with all components clamped between ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+返回一个新向量，每个分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -420,9 +420,9 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`int<class_int>` **distance_squared_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_squared_to>`
 
-Returns the squared distance between this vector and ``to``.
+返回该向量与 ``to`` 之间的距离的平方。
 
-This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+该方法比 :ref:`distance_to()<class_Vector3i_method_distance_to>` 运行得更快，因此请在需要比较向量或者用于某些公式的平方距离时，优先使用这个方法。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ This method runs faster than :ref:`distance_to()<class_Vector3i_method_distance_
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_distance_to>`
 
-Returns the distance between this vector and ``to``.
+返回该向量与 ``to`` 之间的距离。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Returns the distance between this vector and ``to``.
 
 :ref:`float<class_float>` **length**\ (\ ) |const| :ref:`🔗<class_Vector3i_method_length>`
 
-Returns the length (magnitude) of this vector.
+返回这个向量的长度，即大小。
 
 .. rst-class:: classref-item-separator
 
@@ -458,9 +458,9 @@ Returns the length (magnitude) of this vector.
 
 :ref:`int<class_int>` **length_squared**\ (\ ) |const| :ref:`🔗<class_Vector3i_method_length_squared>`
 
-Returns the squared length (squared magnitude) of this vector.
+返回这个向量的平方长度，即平方大小。
 
-This method runs faster than :ref:`length()<class_Vector3i_method_length>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+这个方法比 :ref:`length()<class_Vector3i_method_length>` 运行得更快，所以如果你需要比较向量或需要一些公式的平方距离时，更喜欢用它。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ This method runs faster than :ref:`length()<class_Vector3i_method_length>`, so p
 
 :ref:`Vector3i<class_Vector3i>` **max**\ (\ with\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_max>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3i(maxi(x, with.x), maxi(y, with.y), maxi(z, with.z))``.
+返回自身与 ``with`` 各分量的最大值，等价于 ``Vector3i(maxi(x, with.x), maxi(y, with.y), maxi(z, with.z))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector3i_method_max_axis_index>`
 
-Returns the axis of the vector's highest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_X<class_Vector3i_constant_AXIS_X>`.
+返回该向量中最大值的轴。见 ``AXIS_*`` 常量。如果所有分量相等，则该方法返回 :ref:`AXIS_X<class_Vector3i_constant_AXIS_X>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Returns the axis of the vector's highest value. See ``AXIS_*`` constants. If all
 
 :ref:`Vector3i<class_Vector3i>` **maxi**\ (\ with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_maxi>`
 
-Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3i(maxi(x, with), maxi(y, with), maxi(z, with))``.
+返回自身与 ``with`` 各分量的最大值，等价于 ``Vector3i(maxi(x, with), maxi(y, with), maxi(z, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3i<class_Vector3i>` **min**\ (\ with\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_min>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3i(mini(x, with.x), mini(y, with.y), mini(z, with.z))``.
+返回自身与 ``with`` 各分量的最小值，等价于 ``Vector3i(mini(x, with.x), mini(y, with.y), mini(z, with.z))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3
 
 :ref:`int<class_int>` **min_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector3i_method_min_axis_index>`
 
-Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_Z<class_Vector3i_constant_AXIS_Z>`.
+返回该向量中最小值的轴。见 ``AXIS_*`` 常量。如果所有分量相等，则该方法返回 :ref:`AXIS_Z<class_Vector3i_constant_AXIS_Z>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all 
 
 :ref:`Vector3i<class_Vector3i>` **mini**\ (\ with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_mini>`
 
-Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3i(mini(x, with), mini(y, with), mini(z, with))``.
+返回自身与 ``with`` 各分量的最小值，等价于 ``Vector3i(mini(x, with), mini(y, with), mini(z, with))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +544,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector3
 
 :ref:`Vector3i<class_Vector3i>` **sign**\ (\ ) |const| :ref:`🔗<class_Vector3i_method_sign>`
 
-Returns a new vector with each component set to ``1`` if it's positive, ``-1`` if it's negative, and ``0`` if it's zero. The result is identical to calling :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` on each component.
+返回一个新的向量，如果是正数，每个分量被设置为\ ``1`` ，如果是负数，\ ``-1`` ，如果是零，\ ``0`` 。其结果与对每个分量调用\ :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>`\ 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Returns a new vector with each component set to ``1`` if it's positive, ``-1`` i
 
 :ref:`Vector3i<class_Vector3i>` **snapped**\ (\ step\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_Vector3i_method_snapped>`
 
-Returns a new vector with each component snapped to the closest multiple of the corresponding component in ``step``.
+返回新的向量，每个分量都吸附到了与 ``step`` 中对应分量最接近的倍数。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Returns a new vector with each component snapped to the closest multiple of the 
 
 :ref:`Vector3i<class_Vector3i>` **snappedi**\ (\ step\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Vector3i_method_snappedi>`
 
-Returns a new vector with each component snapped to the closest multiple of ``step``.
+返回一个新向量，其中每个分量都吸附到了 ``step`` 的最接近倍数。
 
 .. rst-class:: classref-section-separator
 
@@ -576,8 +576,8 @@ Returns a new vector with each component snapped to the closest multiple of ``st
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+运算符说明
+----------
 
 .. _class_Vector3i_operator_neq_Vector3i:
 
@@ -585,7 +585,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_neq_Vector3i>`
 
-Returns ``true`` if the vectors are not equal.
+如果向量不相等，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -597,11 +597,11 @@ Returns ``true`` if the vectors are not equal.
 
 :ref:`Vector3i<class_Vector3i>` **operator %**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_mod_Vector3i>`
 
-Gets the remainder of each component of the **Vector3i** with the components of the given **Vector3i**. This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>` instead if you want to handle negative numbers.
+获取该 **Vector3i** 的每个分量与给定 **Vector3i** 中分量的余数。这个运算使用的是截断式除法，因为对负数不友好，所以通常不会想要使用。如果你想要处理负数，请考虑改用 :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>`\ 。
 
 ::
 
-    print(Vector3i(10, -20, 30) % Vector3i(7, 8, 9)) # Prints (3, -4, 3)
+    print(Vector3i(10, -20, 30) % Vector3i(7, 8, 9)) # 输出 (3, -4, 3)
 
 .. rst-class:: classref-item-separator
 
@@ -613,11 +613,11 @@ Gets the remainder of each component of the **Vector3i** with the components of 
 
 :ref:`Vector3i<class_Vector3i>` **operator %**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3i_operator_mod_int>`
 
-Gets the remainder of each component of the **Vector3i** with the given :ref:`int<class_int>`. This operation uses truncated division, which is often not desired as it does not work well with negative numbers. Consider using :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>` instead if you want to handle negative numbers.
+获取该 **Vector3i** 的每个分量与给定的 :ref:`int<class_int>` 的余数。这个运算使用的是截断式除法，因为对负数不友好，所以通常不会想要使用。如果你想要处理负数，请考虑改用 :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>`\ 。
 
 ::
 
-    print(Vector3i(10, -20, 30) % 7) # Prints (3, -6, 2)
+    print(Vector3i(10, -20, 30) % 7) # 输出 (3, -6, 2)
 
 .. rst-class:: classref-item-separator
 
@@ -629,11 +629,11 @@ Gets the remainder of each component of the **Vector3i** with the given :ref:`in
 
 :ref:`Vector3i<class_Vector3i>` **operator ***\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_mul_Vector3i>`
 
-Multiplies each component of the **Vector3i** by the components of the given **Vector3i**.
+将该 **Vector3i** 的每个分量乘以给定 **Vector3i** 的对应分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) * Vector3i(3, 4, 5)) # Prints (30, 80, 150)
+    print(Vector3i(10, 20, 30) * Vector3i(3, 4, 5)) # 输出 (30, 80, 150)
 
 .. rst-class:: classref-item-separator
 
@@ -645,11 +645,11 @@ Multiplies each component of the **Vector3i** by the components of the given **V
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3i_operator_mul_float>`
 
-Multiplies each component of the **Vector3i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector3<class_Vector3>`.
+将该 **Vector3i** 的每个分量乘以给定的 :ref:`float<class_float>`\ 。返回的是 :ref:`Vector3<class_Vector3>`\ 。
 
 ::
 
-    print(Vector3i(10, 15, 20) * 0.9) # Prints (9.0, 13.5, 18.0)
+    print(Vector3i(10, 15, 20) * 0.9) # 输出 (9.0, 13.5, 18.0)
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ Multiplies each component of the **Vector3i** by the given :ref:`float<class_flo
 
 :ref:`Vector3i<class_Vector3i>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3i_operator_mul_int>`
 
-Multiplies each component of the **Vector3i** by the given :ref:`int<class_int>`.
+将该 **Vector3i** 的每个分量乘以给定的 :ref:`int<class_int>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -673,11 +673,11 @@ Multiplies each component of the **Vector3i** by the given :ref:`int<class_int>`
 
 :ref:`Vector3i<class_Vector3i>` **operator +**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_sum_Vector3i>`
 
-Adds each component of the **Vector3i** by the components of the given **Vector3i**.
+将该 **Vector3i** 的每个分量加上给定 **Vector3i** 的对应分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) + Vector3i(3, 4, 5)) # Prints (13, 24, 35)
+    print(Vector3i(10, 20, 30) + Vector3i(3, 4, 5)) # 输出 (13, 24, 35)
 
 .. rst-class:: classref-item-separator
 
@@ -689,11 +689,11 @@ Adds each component of the **Vector3i** by the components of the given **Vector3
 
 :ref:`Vector3i<class_Vector3i>` **operator -**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_dif_Vector3i>`
 
-Subtracts each component of the **Vector3i** by the components of the given **Vector3i**.
+将该 **Vector3i** 的每个分量减去给定 **Vector3i** 的对应分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) - Vector3i(3, 4, 5)) # Prints (7, 16, 25)
+    print(Vector3i(10, 20, 30) - Vector3i(3, 4, 5)) # 输出 (7, 16, 25)
 
 .. rst-class:: classref-item-separator
 
@@ -705,11 +705,11 @@ Subtracts each component of the **Vector3i** by the components of the given **Ve
 
 :ref:`Vector3i<class_Vector3i>` **operator /**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_div_Vector3i>`
 
-Divides each component of the **Vector3i** by the components of the given **Vector3i**.
+将该 **Vector3i** 的每个分量除以给定 **Vector3i** 的对应分量。
 
 ::
 
-    print(Vector3i(10, 20, 30) / Vector3i(2, 5, 3)) # Prints (5, 4, 10)
+    print(Vector3i(10, 20, 30) / Vector3i(2, 5, 3)) # 输出 (5, 4, 10)
 
 .. rst-class:: classref-item-separator
 
@@ -737,7 +737,7 @@ Divides each component of the **Vector3i** by the given :ref:`float<class_float>
 
 :ref:`Vector3i<class_Vector3i>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3i_operator_div_int>`
 
-Divides each component of the **Vector3i** by the given :ref:`int<class_int>`.
+将该 **Vector3i** 的每个分量除以给定的 :ref:`int<class_int>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -749,7 +749,7 @@ Divides each component of the **Vector3i** by the given :ref:`int<class_int>`.
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_lt_Vector3i>`
 
-Compares two **Vector3i** vectors by first checking if the X value of the left vector is less than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
+比较两个 **Vector3i** 向量，首先检查左向量的 X 值是否小于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
 
 .. rst-class:: classref-item-separator
 
@@ -761,7 +761,7 @@ Compares two **Vector3i** vectors by first checking if the X value of the left v
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_lte_Vector3i>`
 
-Compares two **Vector3i** vectors by first checking if the X value of the left vector is less than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
+比较两个 **Vector3i** 向量，首先检查左向量的 X 值是否小于等于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
 
 .. rst-class:: classref-item-separator
 
@@ -773,7 +773,7 @@ Compares two **Vector3i** vectors by first checking if the X value of the left v
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_eq_Vector3i>`
 
-Returns ``true`` if the vectors are equal.
+如果向量相等，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -785,7 +785,7 @@ Returns ``true`` if the vectors are equal.
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_gt_Vector3i>`
 
-Compares two **Vector3i** vectors by first checking if the X value of the left vector is greater than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
+比较两个 **Vector3i** 向量，首先检查左向量的 X 值是否大于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +797,7 @@ Compares two **Vector3i** vectors by first checking if the X value of the left v
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_Vector3i_operator_gte_Vector3i>`
 
-Compares two **Vector3i** vectors by first checking if the X value of the left vector is greater than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, and then with the Z values. This operator is useful for sorting vectors.
+比较两个 **Vector3i** 向量，首先检查左向量的 X 值是否大于等于 ``right`` 向量的 X 值。如果 X 值完全相等，则用相同的方法检查两个向量的 Y 值、Z 值。该运算符可用于向量排序。
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ Compares two **Vector3i** vectors by first checking if the X value of the left v
 
 :ref:`int<class_int>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector3i_operator_idx_int>`
 
-Access vector components using their ``index``. ``v[0]`` is equivalent to ``v.x``, ``v[1]`` is equivalent to ``v.y``, and ``v[2]`` is equivalent to ``v.z``.
+使用向量分量的 ``index`` 来访问向量分量。\ ``v[0]`` 等价于 ``v.x``\ ，\ ``v[1]`` 等价于 ``v.y``\ ，\ ``v[2]`` 等价于 ``v.z``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Access vector components using their ``index``. ``v[0]`` is equivalent to ``v.x`
 
 :ref:`Vector3i<class_Vector3i>` **operator unary+**\ (\ ) :ref:`🔗<class_Vector3i_operator_unplus>`
 
-Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
+返回与 ``+`` 不存在时相同的值。单目 ``+`` 没有作用，但有时可以使你的代码更具可读性。
 
 .. rst-class:: classref-item-separator
 
@@ -833,14 +833,14 @@ Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, 
 
 :ref:`Vector3i<class_Vector3i>` **operator unary-**\ (\ ) :ref:`🔗<class_Vector3i_operator_unminus>`
 
-Returns the negative value of the **Vector3i**. This is the same as writing ``Vector3i(-v.x, -v.y, -v.z)``. This operation flips the direction of the vector while keeping the same magnitude.
+返回该 **Vector3i** 的负值。和写 ``Vector3i(-v.x, -v.y, -v.z)`` 是一样的。该操作在保持相同幅度的同时，翻转向量的方向。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

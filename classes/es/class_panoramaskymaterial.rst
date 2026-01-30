@@ -7,7 +7,7 @@ PanoramaSkyMaterial
 
 **Hereda:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that provides a special texture to a :ref:`Sky<class_Sky>`, usually an HDR panorama.
+Un material que proporciona una textura especial a un :ref:`Sky<class_Sky>`, normalmente un panorama HDR.
 
 .. rst-class:: classref-introduction-group
 
@@ -56,7 +56,7 @@ Descripciones de Propiedades
 - |void| **set_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy_multiplier**\ (\ )
 
-The sky's overall brightness multiplier. Higher values result in a brighter sky.
+El multiplicador de brillo general del cielo. Valores más altos resultan en un cielo más brillante.
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ The sky's overall brightness multiplier. Higher values result in a brighter sky.
 - |void| **set_filtering_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_filtering_enabled**\ (\ )
 
-A boolean value to determine if the background texture should be filtered or not.
+Un valor booleano para determinar si la textura de fondo debe ser filtrada o no.
 
 .. rst-class:: classref-item-separator
 

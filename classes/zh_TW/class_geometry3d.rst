@@ -5,21 +5,21 @@
 Geometry3D
 ==========
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-Provides methods for some common 3D geometric operations.
+提供常見 3D 幾何運算的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Provides a set of helper functions to create geometric shapes, compute intersections between shapes, and process various other geometric operations in 3D.
+為建立幾何形狀，計算形狀之間的交集，以及處理 3D 中的各種其他幾何操作提供了一組輔助函式。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Geometry3D_method_build_box_planes:
 
@@ -71,7 +71,7 @@ Method Descriptions
 
 :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\] **build_box_planes**\ (\ extents\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_build_box_planes>`
 
-Returns an array with 6 :ref:`Plane<class_Plane>`\ s that describe the sides of a box centered at the origin. The box size is defined by ``extents``, which represents one (positive) corner of the box (i.e. half its actual size).
+返回一個包含 6 個 :ref:`Plane<class_Plane>` 的陣列，這些 :ref:`Plane<class_Plane>` 描述以原點為中心的盒子的邊。盒子大小由 ``extents`` 定義，它代表盒子的一個（正）角（即實際大小的一半）。
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ Returns an array with 6 :ref:`Plane<class_Plane>`\ s that describe the sides of 
 
 :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\] **build_capsule_planes**\ (\ radius\: :ref:`float<class_float>`, height\: :ref:`float<class_float>`, sides\: :ref:`int<class_int>`, lats\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>` = 2\ ) :ref:`🔗<class_Geometry3D_method_build_capsule_planes>`
 
-Returns an array of :ref:`Plane<class_Plane>`\ s closely bounding a faceted capsule centered at the origin with radius ``radius`` and height ``height``. The parameter ``sides`` defines how many planes will be generated for the side part of the capsule, whereas ``lats`` gives the number of latitudinal steps at the bottom and top of the capsule. The parameter ``axis`` describes the axis along which the capsule is oriented (0 for X, 1 for Y, 2 for Z).
+返回一個 :ref:`Plane<class_Plane>` 的陣列，這些 :ref:`Plane<class_Plane>` 緊密圍繞著以原點為中心的多面膠囊，該膠囊半徑為 ``radius``\ 、高度為 ``height``\ 。參數 ``sides`` 定義了將為膠囊的側面部分生成多少個平面，而 ``lats`` 給出了膠囊底部和頂部的緯向步數。參數 ``axis`` 描述了膠囊的方向軸（0 代表 X，1 代表 Y，2 代表 Z）。
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Returns an array of :ref:`Plane<class_Plane>`\ s closely bounding a faceted caps
 
 :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\] **build_cylinder_planes**\ (\ radius\: :ref:`float<class_float>`, height\: :ref:`float<class_float>`, sides\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>` = 2\ ) :ref:`🔗<class_Geometry3D_method_build_cylinder_planes>`
 
-Returns an array of :ref:`Plane<class_Plane>`\ s closely bounding a faceted cylinder centered at the origin with radius ``radius`` and height ``height``. The parameter ``sides`` defines how many planes will be generated for the round part of the cylinder. The parameter ``axis`` describes the axis along which the cylinder is oriented (0 for X, 1 for Y, 2 for Z).
+返回一組 :ref:`Plane<class_Plane>`\ ，這些 :ref:`Plane<class_Plane>` 緊密圍繞著以原點為中心的多面圓柱體，該圓柱體半徑為 ``radius``\ 、高度為 ``height`` 。參數 ``sides`` 定義了將為圓柱體的圓形部分生成多少個平面。參數 ``axis`` 描述了圓柱體的方向軸（0 代表 X，1 代表 Y，2 代表 Z）。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Returns an array of :ref:`Plane<class_Plane>`\ s closely bounding a faceted cyli
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **clip_polygon**\ (\ points\: :ref:`PackedVector3Array<class_PackedVector3Array>`, plane\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_Geometry3D_method_clip_polygon>`
 
-Clips the polygon defined by the points in ``points`` against the ``plane`` and returns the points of the clipped polygon.
+將 ``points`` 中的點所定義的多邊形，裁剪該 ``plane`` 並返回該裁剪後的多邊形的點。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Clips the polygon defined by the points in ``points`` against the ``plane`` and 
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **compute_convex_mesh_points**\ (\ planes\: :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\]\ ) :ref:`🔗<class_Geometry3D_method_compute_convex_mesh_points>`
 
-Calculates and returns all the vertex points of a convex shape defined by an array of ``planes``.
+計算並傳回所有由 ``planes`` 陣列定義的凸形狀的頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Calculates and returns all the vertex points of a convex shape defined by an arr
 
 :ref:`Vector3<class_Vector3>` **get_closest_point_to_segment**\ (\ point\: :ref:`Vector3<class_Vector3>`, s1\: :ref:`Vector3<class_Vector3>`, s2\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_get_closest_point_to_segment>`
 
-Returns the 3D point on the 3D segment (``s1``, ``s2``) that is closest to ``point``. The returned point will always be inside the specified segment.
+返回 3D 線段 (``s1``, ``s2``) 上與 ``point`` 最近的 3D 點。返回的點始終在指定的線段內部。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Returns the 3D point on the 3D segment (``s1``, ``s2``) that is closest to ``poi
 
 :ref:`Vector3<class_Vector3>` **get_closest_point_to_segment_uncapped**\ (\ point\: :ref:`Vector3<class_Vector3>`, s1\: :ref:`Vector3<class_Vector3>`, s2\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_get_closest_point_to_segment_uncapped>`
 
-Returns the 3D point on the 3D line defined by (``s1``, ``s2``) that is closest to ``point``. The returned point can be inside the segment (``s1``, ``s2``) or outside of it, i.e. somewhere on the line extending from the segment.
+返回直線上與 ``point`` 最近的 3D 點，該直線由 (``s1``, ``s2``) 定義。返回的點可能在線段 (``s1``, ``s2``) 上，也可能不在，即位於線段的延長線上。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Returns the 3D point on the 3D line defined by (``s1``, ``s2``) that is closest 
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_closest_points_between_segments**\ (\ p1\: :ref:`Vector3<class_Vector3>`, p2\: :ref:`Vector3<class_Vector3>`, q1\: :ref:`Vector3<class_Vector3>`, q2\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_get_closest_points_between_segments>`
 
-Given the two 3D segments (``p1``, ``p2``) and (``q1``, ``q2``), finds those two points on the two segments that are closest to each other. Returns a :ref:`PackedVector3Array<class_PackedVector3Array>` that contains this point on (``p1``, ``p2``) as well the accompanying point on (``q1``, ``q2``).
+給定兩個 3D 線段 (``p1``, ``p2``) 和 (``q1``, ``q2``)，找出這兩個線段見距離最近的兩個點。返回 :ref:`PackedVector3Array<class_PackedVector3Array>`\ ，包含 (``p1``, ``q1``) 和 (``p2``, ``q2``) 上的點。
 
 .. rst-class:: classref-item-separator
 
@@ -167,9 +167,9 @@ Given the two 3D segments (``p1``, ``p2``) and (``q1``, ``q2``), finds those two
 
 :ref:`Vector3<class_Vector3>` **get_triangle_barycentric_coords**\ (\ point\: :ref:`Vector3<class_Vector3>`, a\: :ref:`Vector3<class_Vector3>`, b\: :ref:`Vector3<class_Vector3>`, c\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_get_triangle_barycentric_coords>`
 
-Returns a :ref:`Vector3<class_Vector3>` containing weights based on how close a 3D position (``point``) is to a triangle's different vertices (``a``, ``b`` and ``c``). This is useful for interpolating between the data of different vertices in a triangle. One example use case is using this to smoothly rotate over a mesh instead of relying solely on face normals.
+傳回一個 :ref:`Vector3<class_Vector3>`\ ，其中包含基於 3D 位置（\ ``point``\ ）與三角形不同頂點（\ ``a``\ 、\ ``b`` 和 ``c``).這對於在三角形中不同頂點的資料之間進行插值非常有用。一個範例用例是使用它在網格上平滑旋轉，而不是僅依賴面法線。
 
-\ `Here is a more detailed explanation of barycentric coordinates. <https://en.wikipedia.org/wiki/Barycentric_coordinate_system>`__
+\ `這裡是重心座標的更詳細解釋。 <https://en.wikipedia.org/wiki/Barycentric_coordinate_system>`__
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Returns a :ref:`Vector3<class_Vector3>` containing weights based on how close a 
 
 :ref:`Variant<class_Variant>` **ray_intersects_triangle**\ (\ from\: :ref:`Vector3<class_Vector3>`, dir\: :ref:`Vector3<class_Vector3>`, a\: :ref:`Vector3<class_Vector3>`, b\: :ref:`Vector3<class_Vector3>`, c\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_ray_intersects_triangle>`
 
-Tests if the 3D ray starting at ``from`` with the direction of ``dir`` intersects the triangle specified by ``a``, ``b`` and ``c``. If yes, returns the point of intersection as :ref:`Vector3<class_Vector3>`. If no intersection takes place, returns ``null``.
+測試起始於 ``from``\ 、方向為 ``dir`` 的 3D 射線是否與 ``a``\ 、\ ``b``\ 、\ ``c`` 構成的三角形相交。如果相交則返回交點 :ref:`Vector3<class_Vector3>`\ 。如果不相交則返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Tests if the 3D ray starting at ``from`` with the direction of ``dir`` intersect
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **segment_intersects_convex**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`, planes\: :ref:`Array<class_Array>`\[:ref:`Plane<class_Plane>`\]\ ) :ref:`🔗<class_Geometry3D_method_segment_intersects_convex>`
 
-Given a convex hull defined though the :ref:`Plane<class_Plane>`\ s in the array ``planes``, tests if the segment (``from``, ``to``) intersects with that hull. If an intersection is found, returns a :ref:`PackedVector3Array<class_PackedVector3Array>` containing the point the intersection and the hull's normal. Otherwise, returns an empty array.
+給定一個通過陣列 ``planes`` 中的 :ref:`Plane<class_Plane>` 定義的凸面體，測試線段（\ ``from``\ ，\ ``to``\ ）是否與該面體相交。如果找到交點，則返回一個 :ref:`PackedVector3Array<class_PackedVector3Array>`\ ，其中包含交點和凸面體的法線。否則，返回一個空陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Given a convex hull defined though the :ref:`Plane<class_Plane>`\ s in the array
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **segment_intersects_cylinder**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`, height\: :ref:`float<class_float>`, radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Geometry3D_method_segment_intersects_cylinder>`
 
-Checks if the segment (``from``, ``to``) intersects the cylinder with height ``height`` that is centered at the origin and has radius ``radius``. If no, returns an empty :ref:`PackedVector3Array<class_PackedVector3Array>`. If an intersection takes place, the returned array contains the point of intersection and the cylinder's normal at the point of intersection.
+檢查線段（\ ``from``\ ，\ ``to``\ ）是否與以原點為中心且高度為 ``height``\ 、半徑為 ``radius`` 的圓柱相交。如果不相交，則返回一個空的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 。如果相交，則返回的陣列包含交點和圓柱體在交點處的法線。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Checks if the segment (``from``, ``to``) intersects the cylinder with height ``h
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **segment_intersects_sphere**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`, sphere_position\: :ref:`Vector3<class_Vector3>`, sphere_radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Geometry3D_method_segment_intersects_sphere>`
 
-Checks if the segment (``from``, ``to``) intersects the sphere that is located at ``sphere_position`` and has radius ``sphere_radius``. If no, returns an empty :ref:`PackedVector3Array<class_PackedVector3Array>`. If yes, returns a :ref:`PackedVector3Array<class_PackedVector3Array>` containing the point of intersection and the sphere's normal at the point of intersection.
+檢查線段（\ ``from``\ ，\ ``to``\ ）是否與球心位於 ``sphere_position`` 且半徑為 ``sphere_radius`` 的球體相交。如果不相交，則返回一個空的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 。如果相交，則返回一個 :ref:`PackedVector3Array<class_PackedVector3Array>`\ ，其中包含交點和球體在交點處的法線。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Checks if the segment (``from``, ``to``) intersects the sphere that is located a
 
 :ref:`Variant<class_Variant>` **segment_intersects_triangle**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`, a\: :ref:`Vector3<class_Vector3>`, b\: :ref:`Vector3<class_Vector3>`, c\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Geometry3D_method_segment_intersects_triangle>`
 
-Tests if the segment (``from``, ``to``) intersects the triangle ``a``, ``b``, ``c``. If yes, returns the point of intersection as :ref:`Vector3<class_Vector3>`. If no intersection takes place, returns ``null``.
+測試線段（\ ``from``\ ，\ ``to``\ ）是否與三角形 ``a``\ 、\ ``b``\ 、\ ``c`` 相交。如果相交，則將交點作為 :ref:`Vector3<class_Vector3>` 返回。如果不相交，則返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -243,12 +243,12 @@ Tests if the segment (``from``, ``to``) intersects the triangle ``a``, ``b``, ``
 
 Tetrahedralizes the volume specified by a discrete set of ``points`` in 3D space, ensuring that no point lies within the circumsphere of any resulting tetrahedron. The method returns a :ref:`PackedInt32Array<class_PackedInt32Array>` where each tetrahedron consists of four consecutive point indices into the ``points`` array (resulting in an array with ``n * 4`` elements, where ``n`` is the number of tetrahedra found). If the tetrahedralization is unsuccessful, an empty :ref:`PackedInt32Array<class_PackedInt32Array>` is returned.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

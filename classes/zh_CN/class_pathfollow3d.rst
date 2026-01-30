@@ -5,23 +5,23 @@
 PathFollow3D
 ============
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Point sampler for a :ref:`Path3D<class_Path3D>`.
+:ref:`Path3D<class_Path3D>` 的点采样器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This node takes its parent :ref:`Path3D<class_Path3D>`, and returns the coordinates of a point within it, given a distance from the first vertex.
+这个节点接受它的父节点 :ref:`Path3D<class_Path3D>` 并返回其中一个点的坐标，需要给定到第一个顶点的距离。
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the :ref:`progress<class_PathFollow3D_property_progress>` in this node.
+在不编码移动图案的情况下，它可以使其他节点遵循一条路径。为此，节点必须是该节点的子节点。在该节点中设置 :ref:`progress<class_PathFollow3D_property_progress>` 后，后代节点会随之移动。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_PathFollow3D_RotationMode:
 
@@ -79,7 +79,7 @@ enum **RotationMode**: :ref:`🔗<enum_PathFollow3D_RotationMode>`
 
 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **ROTATION_NONE** = ``0``
 
-Forbids the PathFollow3D to rotate.
+禁止该 PathFollow3D 旋转。
 
 .. _class_PathFollow3D_constant_ROTATION_Y:
 
@@ -87,7 +87,7 @@ Forbids the PathFollow3D to rotate.
 
 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **ROTATION_Y** = ``1``
 
-Allows the PathFollow3D to rotate in the Y axis only.
+允许该 PathFollow3D 仅在 Y 轴上旋转。
 
 .. _class_PathFollow3D_constant_ROTATION_XY:
 
@@ -95,7 +95,7 @@ Allows the PathFollow3D to rotate in the Y axis only.
 
 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **ROTATION_XY** = ``2``
 
-Allows the PathFollow3D to rotate in both the X, and Y axes.
+允许该 PathFollow3D 同时在 X 和 Y 轴上旋转。
 
 .. _class_PathFollow3D_constant_ROTATION_XYZ:
 
@@ -103,7 +103,7 @@ Allows the PathFollow3D to rotate in both the X, and Y axes.
 
 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **ROTATION_XYZ** = ``3``
 
-Allows the PathFollow3D to rotate in any axis.
+允许该 PathFollow3D 在任意轴上旋转。
 
 .. _class_PathFollow3D_constant_ROTATION_ORIENTED:
 
@@ -111,7 +111,7 @@ Allows the PathFollow3D to rotate in any axis.
 
 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **ROTATION_ORIENTED** = ``4``
 
-Uses the up vector information in a :ref:`Curve3D<class_Curve3D>` to enforce orientation. This rotation mode requires the :ref:`Path3D<class_Path3D>`'s :ref:`Curve3D.up_vector_enabled<class_Curve3D_property_up_vector_enabled>` property to be set to ``true``.
+使用 :ref:`Curve3D<class_Curve3D>` 中的向上向量信息来强制定向。该旋转模式需要将 :ref:`Path3D<class_Path3D>` 的 :ref:`Curve3D.up_vector_enabled<class_Curve3D_property_up_vector_enabled>` 属性设置为 ``true``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -119,8 +119,8 @@ Uses the up vector information in a :ref:`Curve3D<class_Curve3D>` to enforce ori
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PathFollow3D_property_cubic_interp:
 
@@ -133,11 +133,11 @@ Property Descriptions
 - |void| **set_cubic_interpolation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_cubic_interpolation**\ (\ )
 
-If ``true``, the position between two cached points is interpolated cubically, and linearly otherwise.
+如果为 ``true``\ ，则两个缓存点之间的位置将被三次插值，否则将被线性插值。
 
-The points along the :ref:`Curve3D<class_Curve3D>` of the :ref:`Path3D<class_Path3D>` are precomputed before use, for faster calculations. The point at the requested offset is then calculated interpolating between two adjacent cached points. This may present a problem if the curve makes sharp turns, as the cached points may not follow the curve closely enough.
+沿着 :ref:`Path3D<class_Path3D>` 的 :ref:`Curve3D<class_Curve3D>` 的点在使用前已被预先计算，以便更快地计算。然后在两个相邻缓存点之间，插值计算请求的偏移处的点。如果曲线急转弯，这可能会出现问题，因为缓存的点可能没有足够紧密地跟随曲线。
 
-There are two answers to this problem: either increase the number of cached points and increase memory consumption, or make a cubic interpolation between two points at the cost of (slightly) slower calculations.
+这个问题有两个答案：要么增加缓存点的数量，并增加内存消耗；要么在两个点之间进行三次插值，代价是（稍微）降低计算速度。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ There are two answers to this problem: either increase the number of cached poin
 - |void| **set_h_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_h_offset**\ (\ )
 
-The node's offset along the curve.
+节点沿曲线的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ The node's offset along the curve.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, any offset outside the path's length will wrap around, instead of stopping at the ends. Use it for cyclic paths.
+如果为 ``true``\ ，路径长度以外的任何偏移都将环绕，而不是在结束时停止。对于循环路径使用它。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ If ``true``, any offset outside the path's length will wrap around, instead of s
 - |void| **set_progress**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress**\ (\ )
 
-The distance from the first vertex, measured in 3D units along the path. Changing this value sets this node's position to a point within the path.
+到第一个顶点的距离，单位为沿路径经过的 3D 单位数。改变这个值会将这个节点的位置设置为路径上的某个点。
 
 .. rst-class:: classref-item-separator
 
@@ -205,9 +205,9 @@ The distance from the first vertex, measured in 3D units along the path. Changin
 - |void| **set_progress_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress_ratio**\ (\ )
 
-The distance from the first vertex, considering 0.0 as the first vertex and 1.0 as the last. This is just another way of expressing the progress within the path, as the progress supplied is multiplied internally by the path's length.
+到第一个顶点的距离，将 0.0 作为第一个顶点，1.0 作为最后一个顶点。这只是表示路径内偏移量的另一种方式，提供的偏移量在内部会与路径的长度相乘。
 
-It can be set or get only if the **PathFollow3D** is the child of a :ref:`Path3D<class_Path3D>` which is part of the scene tree, and that this :ref:`Path3D<class_Path3D>` has a :ref:`Curve3D<class_Curve3D>` with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return ``0.0``.
+\ **PathFollow3D** 为场景树中 :ref:`Path3D<class_Path3D>` 的子节点时才能够设置和获取，该 :ref:`Path3D<class_Path3D>` 中还需要存在长度非零的 :ref:`Curve3D<class_Curve3D>`\ 。否则设置该字段会输出错误，获取该字段则会返回 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ It can be set or get only if the **PathFollow3D** is the child of a :ref:`Path3D
 - |void| **set_rotation_mode**\ (\ value\: :ref:`RotationMode<enum_PathFollow3D_RotationMode>`\ )
 - :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **get_rotation_mode**\ (\ )
 
-Allows or forbids rotation on one or more axes, depending on the :ref:`RotationMode<enum_PathFollow3D_RotationMode>` constants being used.
+允许或禁止在一个或多个轴上旋转，这取决于使用的 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` 常量。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Allows or forbids rotation on one or more axes, depending on the :ref:`RotationM
 - |void| **set_tilt_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tilt_enabled**\ (\ )
 
-If ``true``, the tilt property of :ref:`Curve3D<class_Curve3D>` takes effect.
+如果为 ``true``\ ，则 :ref:`Curve3D<class_Curve3D>` 的倾斜属性生效。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ If ``true``, the tilt property of :ref:`Curve3D<class_Curve3D>` takes effect.
 - |void| **set_use_model_front**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_model_front**\ (\ )
 
-If ``true``, the node moves on the travel path with orienting the +Z axis as forward. See also :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`.
+如果为 ``true``\ ，则沿路径移动的节点会将 +Z 轴作为前方向进行朝向。另见 :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` 和 :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ If ``true``, the node moves on the travel path with orienting the +Z axis as for
 - |void| **set_v_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_v_offset**\ (\ )
 
-The node's offset perpendicular to the curve.
+节点垂直于曲线的偏移量。
 
 .. rst-class:: classref-section-separator
 
@@ -283,8 +283,8 @@ The node's offset perpendicular to the curve.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PathFollow3D_method_correct_posture:
 
@@ -292,14 +292,14 @@ Method Descriptions
 
 :ref:`Transform3D<class_Transform3D>` **correct_posture**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, rotation_mode\: :ref:`RotationMode<enum_PathFollow3D_RotationMode>`\ ) |static| :ref:`🔗<class_PathFollow3D_method_correct_posture>`
 
-Correct the ``transform``. ``rotation_mode`` implicitly specifies how posture (forward, up and sideway direction) is calculated.
+校正 ``transform``\ 。\ ``rotation_mode`` 隐式指定如何计算姿势（向前、向上和侧向）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

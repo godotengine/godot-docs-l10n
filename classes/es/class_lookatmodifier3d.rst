@@ -381,7 +381,7 @@ Si es ``1.0``, no se realiza ninguna amortiguación. Si es ``0.0``, la amortigua
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-The limit angle of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+El ángulo límite de la rotación primaria cuando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` es ``true``, en radianes.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ El umbral para empezar a amortiguar para :ref:`primary_negative_limit_angle<clas
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+El ángulo límite del lado negativo de la rotación primaria cuando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` es ``false``, en radianes.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ El umbral para empezar a amortiguar para :ref:`primary_positive_limit_angle<clas
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+El ángulo límite del lado positivo de la rotación primaria cuando :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` es ``false``, en radianes.
 
 .. rst-class:: classref-item-separator
 

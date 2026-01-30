@@ -5,14 +5,14 @@
 NativeMenu
 ==========
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
 A server interface for OS native menus.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **NativeMenu** handles low-level access to the OS native global menu bar and popup menus.
 
@@ -50,8 +50,8 @@ To create a menu, use :ref:`create_menu()<class_NativeMenu_method_create_menu>`,
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -200,8 +200,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_NativeMenu_Feature:
 
@@ -313,8 +313,8 @@ Dock icon right-click menu ID (on macOS this menu include standard application c
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_NativeMenu_method_add_check_item:
 
@@ -600,9 +600,9 @@ Frees a global menu object created by this **NativeMenu**.
 
 :ref:`Key<enum_@GlobalScope_Key>` **get_item_accelerator**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_accelerator>`
 
-Returns the accelerator of the item at index ``idx``. Accelerators are special combinations of keys that activate the item, no matter which control is focused.
+返回索引為 ``idx`` 的功能表專案的快捷鍵。快捷鍵是能夠啟動該功能表專案的特殊按鍵組合，無論該控制項是否有焦點。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -656,9 +656,9 @@ Returns the icon of the item at index ``idx``.
 
 :ref:`int<class_int>` **get_item_indentation_level**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_indentation_level>`
 
-Returns the horizontal offset of the item at the given ``idx``.
+返回索引為 ``idx`` 的功能表專案的水平偏移量。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -670,9 +670,9 @@ Returns the horizontal offset of the item at the given ``idx``.
 
 :ref:`Callable<class_Callable>` **get_item_key_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_key_callback>`
 
-Returns the callback of the item accelerator at index ``idx``.
+返回索引為 ``idx`` 的功能表專案的快捷鍵回呼函式。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -754,9 +754,9 @@ Returns the text of the item at index ``idx``.
 
 :ref:`String<class_String>` **get_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_item_tooltip>`
 
-Returns the tooltip associated with the specified index ``idx``.
+返回索引為 ``idx`` 的功能表專案所關聯的工具提示。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1056,9 +1056,9 @@ Sets the menu text layout direction from right-to-left if ``is_rtl`` is ``true``
 
 |void| **set_item_accelerator**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_accelerator>`
 
-Sets the accelerator of the item at index ``idx``. ``keycode`` can be a single :ref:`Key<enum_@GlobalScope_Key>`, or a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+設定索引為 ``idx`` 的功能表專案的快捷鍵。\ ``keycode`` 可以是單一 :ref:`Key<enum_@GlobalScope_Key>`\ ，也可以是 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` 和 :ref:`Key<enum_@GlobalScope_Key>` 用按位元或操作進行的組合，例如 ``KEY_MASK_CTRL | KEY_A``\ （\ :kbd:`Ctrl + A`\ ）。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1174,9 +1174,9 @@ Replaces the :ref:`Texture2D<class_Texture2D>` icon of the specified ``idx``.
 
 |void| **set_item_indentation_level**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, level\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_indentation_level>`
 
-Sets the horizontal offset of the item at the given ``idx``.
+設定索引為 ``idx`` 的功能表專案的水平偏移量。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1188,11 +1188,11 @@ Sets the horizontal offset of the item at the given ``idx``.
 
 |void| **set_item_key_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, key_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_key_callback>`
 
-Sets the callback of the item at index ``idx``. Callback is emitted when its accelerator is activated.
+設定索引為 ``idx`` 的功能表專案的回呼函式。回呼函式會在啟動快捷鍵時發出。
 
-\ **Note:** The ``key_callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **注意：**\ ``key_callback`` Callable 只接受一個 Variant 參數，傳入 Callable 的參數是建立功能表專案時傳給 ``tag`` 參數的值。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1290,9 +1290,9 @@ Sets the text of the item at index ``idx``.
 
 |void| **set_item_tooltip**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_tooltip>`
 
-Sets the :ref:`String<class_String>` tooltip of the item at the specified index ``idx``.
+設定索引為 ``idx`` 的功能表專案的工具提示 :ref:`String<class_String>`\ 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 該方法僅在 macOS 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1352,12 +1352,12 @@ Sets the text of the system menu item.
 
 \ **Note:** This method is implemented on macOS.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

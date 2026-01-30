@@ -5,40 +5,40 @@
 EditorInspectorPlugin
 =====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Plugin for adding custom property editors on the inspector.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**EditorInspectorPlugin** allows adding custom property editors to :ref:`EditorInspector<class_EditorInspector>`.
-
-When an object is edited, the :ref:`_can_handle()<class_EditorInspectorPlugin_private_method__can_handle>` function is called and must return ``true`` if the object type is supported.
-
-If supported, the function :ref:`_parse_begin()<class_EditorInspectorPlugin_private_method__parse_begin>` will be called, allowing to place custom controls at the beginning of the class.
-
-Subsequently, the :ref:`_parse_category()<class_EditorInspectorPlugin_private_method__parse_category>` and :ref:`_parse_property()<class_EditorInspectorPlugin_private_method__parse_property>` are called for every category and property. They offer the ability to add custom controls to the inspector too.
-
-Finally, :ref:`_parse_end()<class_EditorInspectorPlugin_private_method__parse_end>` will be called.
-
-On each of these calls, the "add" functions can be called.
-
-To use **EditorInspectorPlugin**, register it using the :ref:`EditorPlugin.add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` method first.
+在屬性檢視器中新增自訂屬性編輯器的外掛程式。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Inspector plugins <../tutorials/plugins/editor/inspector_plugins>`
+**EditorInspectorPlugin** 允許為 :ref:`EditorInspector<class_EditorInspector>` 新增自訂屬性編輯器。
+
+當物件被編輯時，\ :ref:`_can_handle()<class_EditorInspectorPlugin_private_method__can_handle>` 方法會被呼叫，如果物件類型被支援，則必須傳回 ``true``\ 。
+
+如果被支援，\ :ref:`_parse_begin()<class_EditorInspectorPlugin_private_method__parse_begin>` 方法將會被呼叫，允許在類別的開頭放置自訂 Control。
+
+隨後，對於每個類別和屬性，都會呼叫 :ref:`_parse_category()<class_EditorInspectorPlugin_private_method__parse_category>` 和 :ref:`_parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`\ 。它們也提供新增自訂 Control 到屬性檢視器的能力。
+
+最後，將會呼叫 :ref:`_parse_end()<class_EditorInspectorPlugin_private_method__parse_end>`\ 。
+
+在每次呼叫這些方法時，「add」方法可以被呼叫。
+
+若要使用 **EditorInspectorPlugin**\ ，請首先使用 :ref:`EditorPlugin.add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` 方法註冊它。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`屬性檢視器外掛 <../tutorials/plugins/editor/inspector_plugins>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -69,8 +69,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_EditorInspectorPlugin_private_method__can_handle:
 
@@ -78,7 +78,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **_can_handle**\ (\ object\: :ref:`Object<class_Object>`\ ) |virtual| |const| :ref:`🔗<class_EditorInspectorPlugin_private_method__can_handle>`
 
-Returns ``true`` if this object can be handled by this plugin.
+如果此外掛程式可以處理此物件返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ Returns ``true`` if this object can be handled by this plugin.
 
 |void| **_parse_begin**\ (\ object\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorInspectorPlugin_private_method__parse_begin>`
 
-Called to allow adding controls at the beginning of the property list for ``object``.
+可以將控制項新增在 ``object`` 的屬性列表開頭時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ Called to allow adding controls at the beginning of the property list for ``obje
 
 |void| **_parse_category**\ (\ object\: :ref:`Object<class_Object>`, category\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorInspectorPlugin_private_method__parse_category>`
 
-Called to allow adding controls at the beginning of a category in the property list for ``object``.
+可以將控制項新增在 ``object`` 屬性列表中的某個分類開頭時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Called to allow adding controls at the beginning of a category in the property l
 
 |void| **_parse_end**\ (\ object\: :ref:`Object<class_Object>`\ ) |virtual| :ref:`🔗<class_EditorInspectorPlugin_private_method__parse_end>`
 
-Called to allow adding controls at the end of the property list for ``object``.
+可以將控制項新增在 ``object`` 的屬性列表末尾時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ Called to allow adding controls at the end of the property list for ``object``.
 
 |void| **_parse_group**\ (\ object\: :ref:`Object<class_Object>`, group\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorInspectorPlugin_private_method__parse_group>`
 
-Called to allow adding controls at the beginning of a group or a sub-group in the property list for ``object``.
+可以將控制項新增在 ``object`` 屬性列表的某個群組或子群組的開頭時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Called to allow adding controls at the beginning of a group or a sub-group in th
 
 :ref:`bool<class_bool>` **_parse_property**\ (\ object\: :ref:`Object<class_Object>`, type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, name\: :ref:`String<class_String>`, hint_type\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`, hint_string\: :ref:`String<class_String>`, usage_flags\: |bitfield|\[:ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`\], wide\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorInspectorPlugin_private_method__parse_property>`
 
-Called to allow adding property-specific editors to the property list for ``object``. The added editor control must extend :ref:`EditorProperty<class_EditorProperty>`. Returning ``true`` removes the built-in editor for this property, otherwise allows to insert a custom editor before the built-in one.
+可以為 ``object`` 的屬性列表新增針對屬性的編輯器時呼叫。這些編輯器必須繼承 :ref:`EditorProperty<class_EditorProperty>`\ 。返回 ``true`` 會移除該屬性的內建編輯器，否則會在內建編輯器之前插入自訂編輯器。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Called to allow adding property-specific editors to the property list for ``obje
 
 |void| **add_custom_control**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorInspectorPlugin_method_add_custom_control>`
 
-Adds a custom control, which is not necessarily a property editor.
+新增自訂控制項，它不一定是屬性編輯器。
 
 .. rst-class:: classref-item-separator
 
@@ -178,14 +178,14 @@ There can be multiple property editors for a property. If ``add_to_end`` is ``tr
 
 |void| **add_property_editor_for_multiple_properties**\ (\ label\: :ref:`String<class_String>`, properties\: :ref:`PackedStringArray<class_PackedStringArray>`, editor\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorInspectorPlugin_method_add_property_editor_for_multiple_properties>`
 
-Adds an editor that allows modifying multiple properties. The ``editor`` control must extend :ref:`EditorProperty<class_EditorProperty>`.
+新增能夠修改多個屬性的編輯器。\ ``editor`` 控制項必須擴充 :ref:`EditorProperty<class_EditorProperty>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

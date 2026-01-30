@@ -8,14 +8,14 @@
 MultiMeshInstance2D
 ===================
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Node that instances a :ref:`MultiMesh<class_MultiMesh>` in 2D.
+在 2D 中实例化 :ref:`MultiMesh<class_MultiMesh>` 的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **MultiMeshInstance2D** is a specialized node to instance a :ref:`MultiMesh<class_MultiMesh>` resource in 2D. This can be faster to render compared to displaying many :ref:`Sprite2D<class_Sprite2D>` nodes with large transparent areas, especially if the nodes take up a lot of space on screen at high viewport resolutions. This is because using a mesh designed to fit the sprites' opaque areas will reduce GPU fill rate utilization (at the cost of increased vertex processing utilization).
 
@@ -23,8 +23,8 @@ Usage is the same as :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>`.
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_MultiMeshInstance2D_signal_texture_changed:
 
@@ -50,7 +50,7 @@ Signals
 
 **texture_changed**\ (\ ) :ref:`🔗<class_MultiMeshInstance2D_signal_texture_changed>`
 
-Emitted when the :ref:`texture<class_MultiMeshInstance2D_property_texture>` is changed.
+当 :ref:`texture<class_MultiMeshInstance2D_property_texture>` 被改变时触发。
 
 .. rst-class:: classref-section-separator
 
@@ -58,8 +58,8 @@ Emitted when the :ref:`texture<class_MultiMeshInstance2D_property_texture>` is c
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_MultiMeshInstance2D_property_multimesh:
 
@@ -72,7 +72,7 @@ Property Descriptions
 - |void| **set_multimesh**\ (\ value\: :ref:`MultiMesh<class_MultiMesh>`\ )
 - :ref:`MultiMesh<class_MultiMesh>` **get_multimesh**\ (\ )
 
-The :ref:`MultiMesh<class_MultiMesh>` that will be drawn by the **MultiMeshInstance2D**.
+将由 **MultiMeshInstance2D** 绘制的 :ref:`MultiMesh<class_MultiMesh>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -89,14 +89,14 @@ The :ref:`MultiMesh<class_MultiMesh>` that will be drawn by the **MultiMeshInsta
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-The :ref:`Texture2D<class_Texture2D>` that will be used if using the default :ref:`CanvasItemMaterial<class_CanvasItemMaterial>`. Can be accessed as ``TEXTURE`` in CanvasItem shader.
+使用默认 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` 时，将使用的 :ref:`Texture2D<class_Texture2D>`\ 。可以在 CanvasItem 着色器中作为 ``TEXTURE`` 访问。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

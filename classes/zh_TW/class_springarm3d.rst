@@ -5,28 +5,28 @@
 SpringArm3D
 ===========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 3D raycast that dynamically moves its children near the collision point.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**SpringArm3D** casts a ray or a shape along its Z axis and moves all its direct children to the collision point, with an optional margin. This is useful for 3rd person cameras that move closer to the player when inside a tight space (you may need to exclude the player's collider from the **SpringArm3D**'s collision check).
+能夠動態地將子節點朝碰撞點移動的 3D 射線投射。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
+
+**SpringArm3D** 會朝它的 Z 軸投射射線或形狀，並將所有直接子節點朝碰撞點移動，可以保留一定的邊距。可用於第三人稱相機，讓其在狹窄空間中朝玩家移動（你可能需要在 **SpringArm3D** 的碰撞檢查中排除玩家的碰撞體）。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
 
 - :doc:`Third-person camera with spring arm <../tutorials/3d/spring_arm>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SpringArm3D_property_collision_mask:
 
@@ -96,11 +96,11 @@ The layers against which the collision check will be done. See `Collision layers
 - |void| **set_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_margin**\ (\ )
 
-When the collision check is made, a candidate length for the SpringArm3D is given.
+進行碰撞偵測時，會給出 SpringArm3D 的一個候選長度。
 
-The margin is then subtracted to this length and the translation is applied to the child objects of the SpringArm3D.
+然後將邊距減去該長度，並將該平移套用於該 SpringArm3D 的子物件。
 
-This margin is useful for when the SpringArm3D has a :ref:`Camera3D<class_Camera3D>` as a child node: without the margin, the :ref:`Camera3D<class_Camera3D>` would be placed on the exact point of collision, while with the margin the :ref:`Camera3D<class_Camera3D>` would be placed close to the point of collision.
+當 SpringArm3D 有一個 :ref:`Camera3D<class_Camera3D>` 作為子節點時，該邊距很有用：如果沒有邊距，該 :ref:`Camera3D<class_Camera3D>` 將被放置在準確的碰撞點上；而有邊距時，該 :ref:`Camera3D<class_Camera3D>` 將被放置在靠近碰撞點的地方。
 
 .. rst-class:: classref-item-separator
 
@@ -117,9 +117,9 @@ This margin is useful for when the SpringArm3D has a :ref:`Camera3D<class_Camera
 - |void| **set_shape**\ (\ value\: :ref:`Shape3D<class_Shape3D>`\ )
 - :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ )
 
-The :ref:`Shape3D<class_Shape3D>` to use for the SpringArm3D.
+用於該 SpringArm3D 的 :ref:`Shape3D<class_Shape3D>`\ 。
 
-When the shape is set, the SpringArm3D will cast the :ref:`Shape3D<class_Shape3D>` on its z axis instead of performing a ray cast.
+當該形狀被設定後，SpringArm3D 將在其 z 軸上投射該 :ref:`Shape3D<class_Shape3D>`\ ，而不是執行一個射線投射。
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ When the shape is set, the SpringArm3D will cast the :ref:`Shape3D<class_Shape3D
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-The maximum extent of the SpringArm3D. This is used as a length for both the ray and the shape cast used internally to calculate the desired position of the SpringArm3D's child nodes.
+SpringArm3D 的最大範圍。這用作內部使用的射線和形狀投射的長度，以計算 SpringArm3D 子節點的所需位置。
 
-To know more about how to perform a shape cast or a ray cast, please consult the :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` documentation.
+要瞭解有關如何執行形狀投射或射線投射的更多資訊，請參閱 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` 文件。
 
 .. rst-class:: classref-section-separator
 
@@ -146,8 +146,8 @@ To know more about how to perform a shape cast or a ray cast, please consult the
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SpringArm3D_method_add_excluded_object:
 
@@ -155,7 +155,7 @@ Method Descriptions
 
 |void| **add_excluded_object**\ (\ RID\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_SpringArm3D_method_add_excluded_object>`
 
-Adds the :ref:`PhysicsBody3D<class_PhysicsBody3D>` object with the given :ref:`RID<class_RID>` to the list of :ref:`PhysicsBody3D<class_PhysicsBody3D>` objects excluded from the collision check.
+將具有給定 :ref:`RID<class_RID>` 的 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 物件，新增到從碰撞檢查中排除的 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 對象列表中。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Adds the :ref:`PhysicsBody3D<class_PhysicsBody3D>` object with the given :ref:`R
 
 |void| **clear_excluded_objects**\ (\ ) :ref:`🔗<class_SpringArm3D_method_clear_excluded_objects>`
 
-Clears the list of :ref:`PhysicsBody3D<class_PhysicsBody3D>` objects excluded from the collision check.
+清空碰撞偵測排除 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 對象的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -179,7 +179,7 @@ Clears the list of :ref:`PhysicsBody3D<class_PhysicsBody3D>` objects excluded fr
 
 :ref:`float<class_float>` **get_hit_length**\ (\ ) :ref:`🔗<class_SpringArm3D_method_get_hit_length>`
 
-Returns the spring arm's current length.
+返回彈簧臂的目前長度。
 
 .. rst-class:: classref-item-separator
 
@@ -191,14 +191,14 @@ Returns the spring arm's current length.
 
 :ref:`bool<class_bool>` **remove_excluded_object**\ (\ RID\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_SpringArm3D_method_remove_excluded_object>`
 
-Removes the given :ref:`RID<class_RID>` from the list of :ref:`PhysicsBody3D<class_PhysicsBody3D>` objects excluded from the collision check.
+從碰撞偵測排除 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 對象的列表中移除給定的 :ref:`RID<class_RID>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

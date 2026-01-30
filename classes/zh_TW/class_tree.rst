@@ -5,18 +5,18 @@
 Tree
 ====
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A control used to show a set of internal :ref:`TreeItem<class_TreeItem>`\ s in a hierarchical structure.
+用於以層級結構顯示一組內部 :ref:`TreeItem<class_TreeItem>` 的控制項。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A control used to show a set of internal :ref:`TreeItem<class_TreeItem>`\ s in a hierarchical structure. The tree items can be selected, expanded and collapsed. The tree can have multiple columns with custom controls like :ref:`LineEdit<class_LineEdit>`\ s, buttons and popups. It can be useful for structured displays and interactions.
+用於以層級結構顯示一組內部 :ref:`TreeItem<class_TreeItem>` 的控制項。樹專案可以選擇、展開、折疊。該樹可以有多列的自訂控制項，如 :ref:`LineEdit<class_LineEdit>`\ 、按鈕和快顯視窗。對於結構化顯示和互動很有用。
 
-Trees are built via code, using :ref:`TreeItem<class_TreeItem>` objects to create the structure. They have a single root, but multiple roots can be simulated with :ref:`hide_root<class_Tree_property_hide_root>`:
+樹通過程式碼建立，使用 :ref:`TreeItem<class_TreeItem>` 物件來建構結構。根專案只有一個，但可以使用 :ref:`hide_root<class_Tree_property_hide_root>` 來模擬多個根專案。
 
 
 .. tabs::
@@ -47,14 +47,14 @@ Trees are built via code, using :ref:`TreeItem<class_TreeItem>` objects to creat
 
 
 
-To iterate over all the :ref:`TreeItem<class_TreeItem>` objects in a **Tree** object, use :ref:`TreeItem.get_next()<class_TreeItem_method_get_next>` and :ref:`TreeItem.get_first_child()<class_TreeItem_method_get_first_child>` after getting the root through :ref:`get_root()<class_Tree_method_get_root>`. You can use :ref:`Object.free()<class_Object_method_free>` on a :ref:`TreeItem<class_TreeItem>` to remove it from the **Tree**.
+要走訪 **Tree** 物件中的所有 :ref:`TreeItem<class_TreeItem>` 物件，請在通過 :ref:`get_root()<class_Tree_method_get_root>` 獲得根專案之後，使用 :ref:`TreeItem.get_next()<class_TreeItem_method_get_next>` 和 :ref:`TreeItem.get_children()<class_TreeItem_method_get_children>` 方法。你可以對 :ref:`TreeItem<class_TreeItem>` 使用 :ref:`Object.free()<class_Object_method_free>` 來把它從 **Tree** 中移除。
 
-\ **Incremental search:** Like :ref:`ItemList<class_ItemList>` and :ref:`PopupMenu<class_PopupMenu>`, **Tree** supports searching within the list while the control is focused. Press a key that matches the first letter of an item's name to select the first item starting with the given letter. After that point, there are two ways to perform incremental search: 1) Press the same key again before the timeout duration to select the next item starting with the same letter. 2) Press letter keys that match the rest of the word before the timeout duration to match to select the item in question directly. Both of these actions will be reset to the beginning of the list if the timeout duration has passed since the last keystroke was registered. You can adjust the timeout duration by changing :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>`.
+\ **差異量搜索：**\ 與 :ref:`ItemList<class_ItemList>` 和 :ref:`PopupMenu<class_PopupMenu>` 類似，\ **Tree** 也支援在聚焦控制項時在列表中進行搜索。按下與某個條目名稱首字母一致的按鍵，就會選中以該字母開頭的第一個條目。在此之後，進行差異量搜索的辦法有兩種：1）在超時前再次按下同一個按鍵，選中以該字母開頭的下一個條目。2）在超時前按下剩餘字母對應的按鍵，直接配對並選中所需的條目。這兩個動作都會在最後一次按鍵超時後重設回列表頂端。你可以通過 :ref:`ProjectSettings.gui/timers/incremental_search_max_interval_msec<class_ProjectSettings_property_gui/timers/incremental_search_max_interval_msec>` 修改超時時長。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -99,8 +99,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -187,8 +187,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -353,8 +353,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_Tree_signal_button_clicked:
 
@@ -362,7 +362,7 @@ Signals
 
 **button_clicked**\ (\ item\: :ref:`TreeItem<class_TreeItem>`, column\: :ref:`int<class_int>`, id\: :ref:`int<class_int>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_button_clicked>`
 
-Emitted when a button on the tree was pressed (see :ref:`TreeItem.add_button()<class_TreeItem_method_add_button>`).
+按下樹中的某個按鈕時發出（見 :ref:`TreeItem.add_button()<class_TreeItem_method_add_button>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Emitted when a button on the tree was pressed (see :ref:`TreeItem.add_button()<c
 
 **cell_selected**\ (\ ) :ref:`🔗<class_Tree_signal_cell_selected>`
 
-Emitted when a cell is selected.
+選中某個儲存格時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Emitted when a cell is selected.
 
 **check_propagated_to_item**\ (\ item\: :ref:`TreeItem<class_TreeItem>`, column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_check_propagated_to_item>`
 
-Emitted when :ref:`TreeItem.propagate_check()<class_TreeItem_method_propagate_check>` is called. Connect to this signal to process the items that are affected when :ref:`TreeItem.propagate_check()<class_TreeItem_method_propagate_check>` is invoked. The order that the items affected will be processed is as follows: the item that invoked the method, children of that item, and finally parents of that item.
+呼叫 :ref:`TreeItem.propagate_check()<class_TreeItem_method_propagate_check>` 時發出。連接到該訊號可以處理在 :ref:`TreeItem.propagate_check()<class_TreeItem_method_propagate_check>` 被呼叫時受影響的項。受影響項的處理順序如下：呼叫該方法的項，該項的子項，最後是該項的父項。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Emitted when :ref:`TreeItem.propagate_check()<class_TreeItem_method_propagate_ch
 
 **column_title_clicked**\ (\ column\: :ref:`int<class_int>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_column_title_clicked>`
 
-Emitted when a column's title is clicked with either :ref:`@GlobalScope.MOUSE_BUTTON_LEFT<class_@GlobalScope_constant_MOUSE_BUTTON_LEFT>` or :ref:`@GlobalScope.MOUSE_BUTTON_RIGHT<class_@GlobalScope_constant_MOUSE_BUTTON_RIGHT>`.
+使用 :ref:`@GlobalScope.MOUSE_BUTTON_LEFT<class_@GlobalScope_constant_MOUSE_BUTTON_LEFT>` 使用 :ref:`@GlobalScope.MOUSE_BUTTON_RIGHT<class_@GlobalScope_constant_MOUSE_BUTTON_RIGHT>` 點擊某一列的標題時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Emitted when a column's title is clicked with either :ref:`@GlobalScope.MOUSE_BU
 
 **custom_item_clicked**\ (\ mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_custom_item_clicked>`
 
-Emitted when an item with :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` is clicked with a mouse button.
+使用滑鼠按鈕點擊某一 :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` 項時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Emitted when an item with :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constan
 
 **custom_popup_edited**\ (\ arrow_clicked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Tree_signal_custom_popup_edited>`
 
-Emitted when a cell with the :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` is clicked to be edited.
+點擊某一 :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` 項進行編輯時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Emitted when a cell with the :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_cons
 
 **empty_clicked**\ (\ click_position\: :ref:`Vector2<class_Vector2>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_empty_clicked>`
 
-Emitted when a mouse button is clicked in the empty space of the tree.
+使用滑鼠按鈕點擊該樹中的空白區域時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Emitted when a mouse button is clicked in the empty space of the tree.
 
 **item_activated**\ (\ ) :ref:`🔗<class_Tree_signal_item_activated>`
 
-Emitted when an item is double-clicked, or selected with a ``ui_accept`` input event (e.g. using :kbd:`Enter` or :kbd:`Space` on the keyboard).
+按兩下某一項，或使用 ``ui_accept`` 輸入事件（例如鍵盤的\ :kbd:`確認`\ 或\ :kbd:`空格`\ 鍵）選中某一項時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Emitted when an item is expanded or collapsed by clicking on the folding arrow o
 
 **item_edited**\ (\ ) :ref:`🔗<class_Tree_signal_item_edited>`
 
-Emitted when an item is edited.
+編輯某一項時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Emitted when an item is edited.
 
 **item_icon_double_clicked**\ (\ ) :ref:`🔗<class_Tree_signal_item_icon_double_clicked>`
 
-Emitted when an item's icon is double-clicked. For a signal that emits when any part of the item is double-clicked, see :ref:`item_activated<class_Tree_signal_item_activated>`.
+按兩下某一項的圖示時發出。按兩下該項的任意區域所發出的訊號見 :ref:`item_activated<class_Tree_signal_item_activated>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Emitted when an item's icon is double-clicked. For a signal that emits when any 
 
 **item_mouse_selected**\ (\ mouse_position\: :ref:`Vector2<class_Vector2>`, mouse_button_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_signal_item_mouse_selected>`
 
-Emitted when an item is selected with a mouse button.
+使用滑鼠按鈕選中某一項時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Emitted when an item is selected with a mouse button.
 
 **item_selected**\ (\ ) :ref:`🔗<class_Tree_signal_item_selected>`
 
-Emitted when an item is selected.
+選中某一項時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ Emitted instead of :ref:`item_selected<class_Tree_signal_item_selected>` if :ref
 
 **nothing_selected**\ (\ ) :ref:`🔗<class_Tree_signal_nothing_selected>`
 
-Emitted when a left mouse button click does not select any item.
+滑鼠左鍵未選中任一項時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -540,8 +540,8 @@ Emitted when a left mouse button click does not select any item.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Tree_SelectMode:
 
@@ -555,9 +555,9 @@ enum **SelectMode**: :ref:`🔗<enum_Tree_SelectMode>`
 
 :ref:`SelectMode<enum_Tree_SelectMode>` **SELECT_SINGLE** = ``0``
 
-Allows selection of a single cell at a time. From the perspective of items, only a single item is allowed to be selected. And there is only one column selected in the selected item.
+允許一次選擇一個儲存格。從項的角度看，只允許選擇一個項。而且在所選項中只有一列被選中。
 
-The focus cursor is always hidden in this mode, but it is positioned at the current selection, making the currently selected item the currently focused item.
+在這種模式下，焦點游標總被隱藏，被定位在目前的選擇處，使目前的選擇項成為目前的焦點項。
 
 .. _class_Tree_constant_SELECT_ROW:
 
@@ -565,9 +565,9 @@ The focus cursor is always hidden in this mode, but it is positioned at the curr
 
 :ref:`SelectMode<enum_Tree_SelectMode>` **SELECT_ROW** = ``1``
 
-Allows selection of a single row at a time. From the perspective of items, only a single items is allowed to be selected. And all the columns are selected in the selected item.
+允許一次選擇單行。從項的角度看，只允許選擇單個項。而所有的列都被選擇在所選項中。
 
-The focus cursor is always hidden in this mode, but it is positioned at the first column of the current selection, making the currently selected item the currently focused item.
+在這種模式下，焦點游標總被隱藏，被定位在目前選擇的第一列，使目前選擇項成為當前焦點項。
 
 .. _class_Tree_constant_SELECT_MULTI:
 
@@ -575,9 +575,9 @@ The focus cursor is always hidden in this mode, but it is positioned at the firs
 
 :ref:`SelectMode<enum_Tree_SelectMode>` **SELECT_MULTI** = ``2``
 
-Allows selection of multiple cells at the same time. From the perspective of items, multiple items are allowed to be selected. And there can be multiple columns selected in each selected item.
+允許同時選擇多個儲存格。從項的角度看，允許選擇多個項。而且每個被選中的項中可以有多個列被選中。
 
-The focus cursor is visible in this mode, the item or column under the cursor is not necessarily selected.
+在這種模式下，焦點游標可見，游標下的項或列不一定被選中。
 
 .. rst-class:: classref-item-separator
 
@@ -595,9 +595,9 @@ enum **DropModeFlags**: :ref:`🔗<enum_Tree_DropModeFlags>`
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_DISABLED** = ``0``
 
-Disables all drop sections, but still allows to detect the "on item" drop section by :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>`.
+禁用所有放置部分，但仍然允許通過 :ref:`get_drop_section_at_position()<class_Tree_method_get_drop_section_at_position>` 檢測“專案上”的放置部分。
 
-\ **Note:** This is the default flag, it has no effect when combined with other flags.
+\ **注意：**\ 這是預設的旗標，當與其他旗標結合時，它沒有效果。
 
 .. _class_Tree_constant_DROP_MODE_ON_ITEM:
 
@@ -605,9 +605,9 @@ Disables all drop sections, but still allows to detect the "on item" drop sectio
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_ON_ITEM** = ``1``
 
-Enables the "on item" drop section. This drop section covers the entire item.
+啟用“專案上”的放置部分。這個放置部分覆蓋整個項。
 
-When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>`, this drop section halves the height and stays centered vertically.
+當與 :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBETWEEN>` 結合使用時，這個放置部分的高度減半，並保持垂直居中。
 
 .. _class_Tree_constant_DROP_MODE_INBETWEEN:
 
@@ -615,9 +615,9 @@ When combined with :ref:`DROP_MODE_INBETWEEN<class_Tree_constant_DROP_MODE_INBET
 
 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` **DROP_MODE_INBETWEEN** = ``2``
 
-Enables "above item" and "below item" drop sections. The "above item" drop section covers the top half of the item, and the "below item" drop section covers the bottom half.
+啟用“專案上方”和“專案下方”的放置部分。“專案上方”的放置部分覆蓋專案的上半部分，“專案下方”的放置部分覆蓋下半部分。
 
-When combined with :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>`, these drop sections halves the height and stays on top / bottom accordingly.
+當與 :ref:`DROP_MODE_ON_ITEM<class_Tree_constant_DROP_MODE_ON_ITEM>` 結合時，這些放置部分的高度減半，並相應地停留在頂部或底部。
 
 .. rst-class:: classref-item-separator
 
@@ -667,8 +667,8 @@ Only the bottom scroll hint will be shown.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Tree_property_allow_reselect:
 
@@ -681,7 +681,7 @@ Property Descriptions
 - |void| **set_allow_reselect**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_reselect**\ (\ )
 
-If ``true``, the currently selected cell may be selected again.
+如果為 ``true``\ ，可以再次選擇目前選定的單元。
 
 .. rst-class:: classref-item-separator
 
@@ -698,7 +698,7 @@ If ``true``, the currently selected cell may be selected again.
 - |void| **set_allow_rmb_select**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_rmb_select**\ (\ )
 
-If ``true``, a right mouse button click can select items.
+如果為 ``true``\ ，滑鼠右鍵點擊可以選擇專案。
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +715,7 @@ If ``true``, a right mouse button click can select items.
 - |void| **set_allow_search**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_search**\ (\ )
 
-If ``true``, allows navigating the **Tree** with letter keys through incremental search.
+如果為 ``true``\ ，允許在 **Tree** 中以差異量搜索的形式使用字母鍵導覽。
 
 .. rst-class:: classref-item-separator
 
@@ -749,7 +749,7 @@ If ``true``, tree items with no tooltip assigned display their text as their too
 - |void| **set_column_titles_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_column_titles_visible**\ (\ )
 
-If ``true``, column titles are visible.
+如果為 ``true``\ ，列標題可見。
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +766,7 @@ If ``true``, column titles are visible.
 - |void| **set_columns**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_columns**\ (\ )
 
-The number of columns.
+列數。
 
 .. rst-class:: classref-item-separator
 
@@ -783,9 +783,9 @@ The number of columns.
 - |void| **set_drop_mode_flags**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drop_mode_flags**\ (\ )
 
-The drop mode as an OR combination of flags. See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` constants. Once dropping is done, reverts to :ref:`DROP_MODE_DISABLED<class_Tree_constant_DROP_MODE_DISABLED>`. Setting this during :ref:`Control._can_drop_data()<class_Control_private_method__can_drop_data>` is recommended.
+放置模式是旗標的按位元或（OR）組合。見 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 常數。放置完成後會恢復為 :ref:`DROP_MODE_DISABLED<class_Tree_constant_DROP_MODE_DISABLED>`\ 。建議在 :ref:`Control._can_drop_data()<class_Control_private_method__can_drop_data>` 期間設定。
 
-This controls the drop sections, i.e. the decision and drawing of possible drop locations based on the mouse position.
+控制的是放置區，即根據滑鼠的位置決定並繪製可能的放置位置。
 
 .. rst-class:: classref-item-separator
 
@@ -836,7 +836,7 @@ If ``true``, recursive folding is enabled for this **Tree**. Holding down :kbd:`
 - |void| **set_hide_folding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_folding_hidden**\ (\ )
 
-If ``true``, the folding arrow is hidden.
+如果為 ``true``\ ，隱藏折疊箭頭。
 
 .. rst-class:: classref-item-separator
 
@@ -853,7 +853,7 @@ If ``true``, the folding arrow is hidden.
 - |void| **set_hide_root**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_root_hidden**\ (\ )
 
-If ``true``, the tree's root is hidden.
+如果為 ``true``\ ，則隱藏樹的根節點。
 
 .. rst-class:: classref-item-separator
 
@@ -887,7 +887,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_h_scroll_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_h_scroll_enabled**\ (\ )
 
-If ``true``, enables horizontal scrolling.
+如果為 ``true``\ ，啟用水平滾動。
 
 .. rst-class:: classref-item-separator
 
@@ -904,7 +904,7 @@ If ``true``, enables horizontal scrolling.
 - |void| **set_v_scroll_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_v_scroll_enabled**\ (\ )
 
-If ``true``, enables vertical scrolling.
+如果為 ``true``\ ，則啟用垂直捲動。
 
 .. rst-class:: classref-item-separator
 
@@ -921,7 +921,7 @@ If ``true``, enables vertical scrolling.
 - |void| **set_select_mode**\ (\ value\: :ref:`SelectMode<enum_Tree_SelectMode>`\ )
 - :ref:`SelectMode<enum_Tree_SelectMode>` **get_select_mode**\ (\ )
 
-Allows single or multiple selection. See the :ref:`SelectMode<enum_Tree_SelectMode>` constants.
+允許單選或多選。見 :ref:`SelectMode<enum_Tree_SelectMode>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -946,8 +946,8 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Tree_method_clear:
 
@@ -955,7 +955,7 @@ Method Descriptions
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Tree_method_clear>`
 
-Clears the tree. This removes all items.
+清除樹。這將刪除所有專案。
 
 .. rst-class:: classref-item-separator
 
@@ -967,11 +967,11 @@ Clears the tree. This removes all items.
 
 :ref:`TreeItem<class_TreeItem>` **create_item**\ (\ parent\: :ref:`TreeItem<class_TreeItem>` = null, index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Tree_method_create_item>`
 
-Creates an item in the tree and adds it as a child of ``parent``, which can be either a valid :ref:`TreeItem<class_TreeItem>` or ``null``.
+在樹中建立一個項，並將其新增為父項 ``parent`` 的子項，該父項可以是一個有效的 :ref:`TreeItem<class_TreeItem>` 或 ``null``\ 。
 
-If ``parent`` is ``null``, the root item will be the parent, or the new item will be the root itself if the tree is empty.
+如果 ``parent`` 為 ``null``\ ，則根項將是父項；或者如果該樹為空，則該新項將是根本身。
 
-The new item will be the ``index``-th child of parent, or it will be the last child if there are not enough siblings.
+新項將是父項的第 ``index`` 個子項，如果沒有足夠的同級項，它將是最後一個子項。
 
 .. rst-class:: classref-item-separator
 
@@ -983,7 +983,7 @@ The new item will be the ``index``-th child of parent, or it will be the last ch
 
 |void| **deselect_all**\ (\ ) :ref:`🔗<class_Tree_method_deselect_all>`
 
-Deselects all tree items (rows and columns). In :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` mode also removes selection cursor.
+取消選中樹中的所有專案（行和列）。在 :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 模式中還會移除選擇游標。
 
 .. rst-class:: classref-item-separator
 
@@ -995,11 +995,11 @@ Deselects all tree items (rows and columns). In :ref:`SELECT_MULTI<class_Tree_co
 
 :ref:`bool<class_bool>` **edit_selected**\ (\ force_edit\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Tree_method_edit_selected>`
 
-Edits the selected tree item as if it was clicked.
+編輯選中的樹項，就像它被點擊一樣。
 
-Either the item must be set editable with :ref:`TreeItem.set_editable()<class_TreeItem_method_set_editable>` or ``force_edit`` must be ``true``.
+該項必須通過 :ref:`TreeItem.set_editable()<class_TreeItem_method_set_editable>` 設定為可編輯，否則 ``force_edit`` 必須為 ``true``\ 。
 
-Returns ``true`` if the item could be edited. Fails if no item is selected.
+如果該項可被編輯，則返回 ``true``\ 。如果沒有選中任何項則失敗。
 
 .. rst-class:: classref-item-separator
 
@@ -1011,11 +1011,11 @@ Returns ``true`` if the item could be edited. Fails if no item is selected.
 
 |void| **ensure_cursor_is_visible**\ (\ ) :ref:`🔗<class_Tree_method_ensure_cursor_is_visible>`
 
-Makes the currently focused cell visible.
+使目前獲得焦點的單元可見。
 
-This will scroll the tree if necessary. In :ref:`SELECT_ROW<class_Tree_constant_SELECT_ROW>` mode, this will not do horizontal scrolling, as all the cells in the selected row is focused logically.
+如果有必要，將滾動樹。在 :ref:`SELECT_ROW<class_Tree_constant_SELECT_ROW>` 模式下，不會做水平滾動，因為所選行中的所有單元都按邏輯獲得焦點。
 
-\ **Note:** Despite the name of this method, the focus cursor itself is only visible in :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` mode.
+\ **注意：**\ 儘管這個方法的名稱是這樣的，但焦點游標本身只在 :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 模式下可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1027,7 @@ This will scroll the tree if necessary. In :ref:`SELECT_ROW<class_Tree_constant_
 
 :ref:`int<class_int>` **get_button_id_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_button_id_at_position>`
 
-Returns the button ID at ``position``, or -1 if no button is there.
+返回位於 ``position`` 的按鈕 ID，如果沒有按鈕則返回 -1。
 
 .. rst-class:: classref-item-separator
 
@@ -1039,7 +1039,7 @@ Returns the button ID at ``position``, or -1 if no button is there.
 
 :ref:`int<class_int>` **get_column_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_at_position>`
 
-Returns the column index at ``position``, or -1 if no item is there.
+返回位於 ``position`` 的列索引，如果沒有專案則返回 -1。
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ Returns the column index at ``position``, or -1 if no item is there.
 
 :ref:`int<class_int>` **get_column_expand_ratio**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_expand_ratio>`
 
-Returns the expand ratio assigned to the column.
+返回分配給該列的擴充比例。
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1063,7 @@ Returns the expand ratio assigned to the column.
 
 :ref:`String<class_String>` **get_column_title**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_title>`
 
-Returns the column's title.
+返回該列的標題。
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ Returns the column's title.
 
 :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_column_title_alignment**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_title_alignment>`
 
-Returns the column title alignment.
+返回該列的標題對齊方式。
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1087,7 @@ Returns the column title alignment.
 
 :ref:`TextDirection<enum_Control_TextDirection>` **get_column_title_direction**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_title_direction>`
 
-Returns column title base writing direction.
+返回列標題的基礎書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1099,7 +1099,7 @@ Returns column title base writing direction.
 
 :ref:`String<class_String>` **get_column_title_language**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_title_language>`
 
-Returns column title language code.
+返回列標題的語言程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -1123,7 +1123,7 @@ Returns the column title's tooltip text.
 
 :ref:`int<class_int>` **get_column_width**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_get_column_width>`
 
-Returns the column's width in pixels.
+返回列的寬度，單位是圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -1135,7 +1135,7 @@ Returns the column's width in pixels.
 
 :ref:`Rect2<class_Rect2>` **get_custom_popup_rect**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_custom_popup_rect>`
 
-Returns the rectangle for custom popups. Helper to create custom cell controls that display a popup. See :ref:`TreeItem.set_cell_mode()<class_TreeItem_method_set_cell_mode>`.
+返回自訂快顯視窗的矩形。説明建立顯示彈出式的自訂儲存格控制項。見 :ref:`TreeItem.set_cell_mode()<class_TreeItem_method_set_cell_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1147,11 +1147,11 @@ Returns the rectangle for custom popups. Helper to create custom cell controls t
 
 :ref:`int<class_int>` **get_drop_section_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_drop_section_at_position>`
 
-Returns the drop section at ``position``, or -100 if no item is there.
+返回位於 ``position`` 的放置部分，如果沒有專案，則返回 -100。
 
-Values -1, 0, or 1 will be returned for the "above item", "on item", and "below item" drop sections, respectively. See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` for a description of each drop section.
+在“專案上方”“專案之上”和“專案下方”的放置部分將分別返回 -1、0 或 1 的值。請參閱 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 以瞭解每個放置部分的描述。
 
-To get the item which the returned drop section is relative to, use :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`.
+要獲得返回的放置部分相對項，請使用 :ref:`get_item_at_position()<class_Tree_method_get_item_at_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1163,7 +1163,7 @@ To get the item which the returned drop section is relative to, use :ref:`get_it
 
 :ref:`TreeItem<class_TreeItem>` **get_edited**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_edited>`
 
-Returns the currently edited item. Can be used with :ref:`item_edited<class_Tree_signal_item_edited>` to get the item that was modified.
+返回目前編輯的項。可以與 :ref:`item_edited<class_Tree_signal_item_edited>` 一起使用以獲取被修改的項。
 
 
 .. tabs::
@@ -1174,7 +1174,7 @@ Returns the currently edited item. Can be used with :ref:`item_edited<class_Tree
         $Tree.item_edited.connect(on_Tree_item_edited)
 
     func on_Tree_item_edited():
-        print($Tree.get_edited()) # This item just got edited (e.g. checked).
+        print($Tree.get_edited()) # 該項剛剛被編輯（例如被勾選）。
 
  .. code-tab:: csharp
 
@@ -1185,7 +1185,7 @@ Returns the currently edited item. Can be used with :ref:`item_edited<class_Tree
 
     public void OnTreeItemEdited()
     {
-        GD.Print(GetNode<Tree>("Tree").GetEdited()); // This item just got edited (e.g. checked).
+        GD.Print(GetNode<Tree>("Tree").GetEdited()); // 該項剛剛被編輯（例如被勾選）。
     }
 
 
@@ -1200,7 +1200,7 @@ Returns the currently edited item. Can be used with :ref:`item_edited<class_Tree
 
 :ref:`int<class_int>` **get_edited_column**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_edited_column>`
 
-Returns the column for the currently edited item.
+返回目前編輯項的列。
 
 .. rst-class:: classref-item-separator
 
@@ -1212,7 +1212,7 @@ Returns the column for the currently edited item.
 
 :ref:`Rect2<class_Rect2>` **get_item_area_rect**\ (\ item\: :ref:`TreeItem<class_TreeItem>`, column\: :ref:`int<class_int>` = -1, button_index\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Tree_method_get_item_area_rect>`
 
-Returns the rectangle area for the specified :ref:`TreeItem<class_TreeItem>`. If ``column`` is specified, only get the position and size of that column, otherwise get the rectangle containing all columns. If a button index is specified, the rectangle of that button will be returned.
+返回指定 :ref:`TreeItem<class_TreeItem>` 的矩形區域。如果指定了\ ``column``\ ，則只獲取該列的位置和大小，否則獲取包含所有列的矩形。如果指定了按鈕索引，則將返回該按鈕的矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -1224,7 +1224,7 @@ Returns the rectangle area for the specified :ref:`TreeItem<class_TreeItem>`. If
 
 :ref:`TreeItem<class_TreeItem>` **get_item_at_position**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Tree_method_get_item_at_position>`
 
-Returns the tree item at the specified position (relative to the tree origin position).
+返回指定位置，即相對於樹的原點位置的樹中項。
 
 .. rst-class:: classref-item-separator
 
@@ -1236,9 +1236,9 @@ Returns the tree item at the specified position (relative to the tree origin pos
 
 :ref:`TreeItem<class_TreeItem>` **get_next_selected**\ (\ from\: :ref:`TreeItem<class_TreeItem>`\ ) :ref:`🔗<class_Tree_method_get_next_selected>`
 
-Returns the next selected :ref:`TreeItem<class_TreeItem>` after the given one, or ``null`` if the end is reached.
+返回給定的 :ref:`TreeItem<class_TreeItem>` 之後的下一個選中項，如果到達末尾，則返回 ``null``\ 。
 
-If ``from`` is ``null``, this returns the first selected item.
+如果 ``from`` 為 ``null``\ ，則將返回第一個被選中的項。
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ If ``from`` is ``null``, this returns the first selected item.
 
 :ref:`int<class_int>` **get_pressed_button**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_pressed_button>`
 
-Returns the last pressed button's index.
+返回最後按下的按鈕的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1262,7 +1262,7 @@ Returns the last pressed button's index.
 
 :ref:`TreeItem<class_TreeItem>` **get_root**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_root>`
 
-Returns the tree's root item, or ``null`` if the tree is empty.
+返回樹的根項，如果樹是空的，則返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1274,7 +1274,7 @@ Returns the tree's root item, or ``null`` if the tree is empty.
 
 :ref:`Vector2<class_Vector2>` **get_scroll**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_scroll>`
 
-Returns the current scrolling position.
+返回目前的滾動位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1286,11 +1286,11 @@ Returns the current scrolling position.
 
 :ref:`TreeItem<class_TreeItem>` **get_selected**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_selected>`
 
-Returns the currently focused item, or ``null`` if no item is focused.
+返回目前的焦點項，如果沒有焦點項，則返回 ``null``\ 。
 
-In :ref:`SELECT_ROW<class_Tree_constant_SELECT_ROW>` and :ref:`SELECT_SINGLE<class_Tree_constant_SELECT_SINGLE>` modes, the focused item is same as the selected item. In :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` mode, the focused item is the item under the focus cursor, not necessarily selected.
+在 :ref:`SELECT_ROW<class_Tree_constant_SELECT_ROW>` 和 :ref:`SELECT_SINGLE<class_Tree_constant_SELECT_SINGLE>` 模式下，焦點項與選擇項相同。在 :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 模式下，焦點項是焦點游標下的專案，不一定被選中。
 
-To get the currently selected item(s), use :ref:`get_next_selected()<class_Tree_method_get_next_selected>`.
+要獲得目前選中項，請使用 :ref:`get_next_selected()<class_Tree_method_get_next_selected>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1302,11 +1302,11 @@ To get the currently selected item(s), use :ref:`get_next_selected()<class_Tree_
 
 :ref:`int<class_int>` **get_selected_column**\ (\ ) |const| :ref:`🔗<class_Tree_method_get_selected_column>`
 
-Returns the currently focused column, or -1 if no column is focused.
+返回目前獲得焦點的列，如果沒有焦點列，則返回 -1。
 
-In :ref:`SELECT_SINGLE<class_Tree_constant_SELECT_SINGLE>` mode, the focused column is the selected column. In :ref:`SELECT_ROW<class_Tree_constant_SELECT_ROW>` mode, the focused column is always 0 if any item is selected. In :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` mode, the focused column is the column under the focus cursor, and there are not necessarily any column selected.
+在 :ref:`SELECT_SINGLE<class_Tree_constant_SELECT_SINGLE>` 模式下，焦點列是被選中的列。在 :ref:`SELECT_ROW<class_Tree_constant_SELECT_ROW>` 模式下，如果有任意項被選中，焦點列總是 0。在 :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 模式下，焦點列是焦點游標下的列，但不一定有列被選中。
 
-To tell whether a column of an item is selected, use :ref:`TreeItem.is_selected()<class_TreeItem_method_is_selected>`.
+要判斷一個項的某一列是否被選中，請使用 :ref:`TreeItem.is_selected()<class_TreeItem_method_is_selected>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1318,7 +1318,7 @@ To tell whether a column of an item is selected, use :ref:`TreeItem.is_selected(
 
 :ref:`bool<class_bool>` **is_column_clipping_content**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_is_column_clipping_content>`
 
-Returns ``true`` if the column has enabled clipping (see :ref:`set_column_clip_content()<class_Tree_method_set_column_clip_content>`).
+如果該列啟用了裁剪，則返回 ``true``\ （見 :ref:`set_column_clip_content()<class_Tree_method_set_column_clip_content>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1330,7 +1330,7 @@ Returns ``true`` if the column has enabled clipping (see :ref:`set_column_clip_c
 
 :ref:`bool<class_bool>` **is_column_expanding**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Tree_method_is_column_expanding>`
 
-Returns ``true`` if the column has enabled expanding (see :ref:`set_column_expand()<class_Tree_method_set_column_expand>`).
+如果該列啟用了擴充，則返回 ``true``\ （見 :ref:`set_column_expand()<class_Tree_method_set_column_expand>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1342,7 +1342,7 @@ Returns ``true`` if the column has enabled expanding (see :ref:`set_column_expan
 
 |void| **scroll_to_item**\ (\ item\: :ref:`TreeItem<class_TreeItem>`, center_on_item\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Tree_method_scroll_to_item>`
 
-Causes the **Tree** to jump to the specified :ref:`TreeItem<class_TreeItem>`.
+使 **Tree** 跳轉到指定的 :ref:`TreeItem<class_TreeItem>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1354,7 +1354,7 @@ Causes the **Tree** to jump to the specified :ref:`TreeItem<class_TreeItem>`.
 
 |void| **set_column_clip_content**\ (\ column\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Tree_method_set_column_clip_content>`
 
-Allows to enable clipping for column's content, making the content size ignored.
+允許對列的內容進行裁剪，會忽略內容大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1366,7 +1366,7 @@ Allows to enable clipping for column's content, making the content size ignored.
 
 |void| **set_column_custom_minimum_width**\ (\ column\: :ref:`int<class_int>`, min_width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_method_set_column_custom_minimum_width>`
 
-Overrides the calculated minimum width of a column. It can be set to ``0`` to restore the default behavior. Columns that have the "Expand" flag will use their "min_width" in a similar fashion to :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`.
+覆蓋某一列的計算的最小寬度。它可以被設定為 ``0`` 以恢復預設行為。具有“擴充”旗標的列將以與 :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` 類似的方式使用它們的最小寬度“min_width”。
 
 .. rst-class:: classref-item-separator
 
@@ -1378,7 +1378,7 @@ Overrides the calculated minimum width of a column. It can be set to ``0`` to re
 
 |void| **set_column_expand**\ (\ column\: :ref:`int<class_int>`, expand\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Tree_method_set_column_expand>`
 
-If ``true``, the column will have the "Expand" flag of :ref:`Control<class_Control>`. Columns that have the "Expand" flag will use their expand ratio in a similar fashion to :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` (see :ref:`set_column_expand_ratio()<class_Tree_method_set_column_expand_ratio>`).
+如果為 ``true``\ ，該列將具有 :ref:`Control<class_Control>` 的“Expand”旗標。具有“Expand”標志的列將以與 :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` 類似的方式，使用它們的擴充比率（參見 :ref:`set_column_expand_ratio()<class_Tree_method_set_column_expand_ratio>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1390,7 +1390,7 @@ If ``true``, the column will have the "Expand" flag of :ref:`Control<class_Contr
 
 |void| **set_column_expand_ratio**\ (\ column\: :ref:`int<class_int>`, ratio\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_method_set_column_expand_ratio>`
 
-Sets the relative expand ratio for a column. See :ref:`set_column_expand()<class_Tree_method_set_column_expand>`.
+設定列的相對擴充比。見 :ref:`set_column_expand()<class_Tree_method_set_column_expand>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1402,7 +1402,7 @@ Sets the relative expand ratio for a column. See :ref:`set_column_expand()<class
 
 |void| **set_column_title**\ (\ column\: :ref:`int<class_int>`, title\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Tree_method_set_column_title>`
 
-Sets the title of a column.
+設定某一列的標題。
 
 .. rst-class:: classref-item-separator
 
@@ -1414,7 +1414,7 @@ Sets the title of a column.
 
 |void| **set_column_title_alignment**\ (\ column\: :ref:`int<class_int>`, title_alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ ) :ref:`🔗<class_Tree_method_set_column_title_alignment>`
 
-Sets the column title alignment. Note that :ref:`@GlobalScope.HORIZONTAL_ALIGNMENT_FILL<class_@GlobalScope_constant_HORIZONTAL_ALIGNMENT_FILL>` is not supported for column titles.
+設定列標題的對齊方式。注意，列標題不支援 :ref:`@GlobalScope.HORIZONTAL_ALIGNMENT_FILL<class_@GlobalScope_constant_HORIZONTAL_ALIGNMENT_FILL>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1426,7 +1426,7 @@ Sets the column title alignment. Note that :ref:`@GlobalScope.HORIZONTAL_ALIGNME
 
 |void| **set_column_title_direction**\ (\ column\: :ref:`int<class_int>`, direction\: :ref:`TextDirection<enum_Control_TextDirection>`\ ) :ref:`🔗<class_Tree_method_set_column_title_direction>`
 
-Sets column title base writing direction.
+設定列標題的基礎書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1462,7 +1462,7 @@ Sets the column title's tooltip text.
 
 |void| **set_selected**\ (\ item\: :ref:`TreeItem<class_TreeItem>`, column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Tree_method_set_selected>`
 
-Selects the specified :ref:`TreeItem<class_TreeItem>` and column.
+選中指定的 :ref:`TreeItem<class_TreeItem>` 和列。
 
 .. rst-class:: classref-section-separator
 
@@ -1470,8 +1470,8 @@ Selects the specified :ref:`TreeItem<class_TreeItem>` and column.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_Tree_theme_color_children_hl_line_color:
 
@@ -1479,7 +1479,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **children_hl_line_color** = ``Color(0.27, 0.27, 0.27, 1)`` :ref:`🔗<class_Tree_theme_color_children_hl_line_color>`
 
-The :ref:`Color<class_Color>` of the relationship lines between the selected :ref:`TreeItem<class_TreeItem>` and its children.
+被選中的 :ref:`TreeItem<class_TreeItem>` 與其子項之間的關係線的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1491,7 +1491,7 @@ The :ref:`Color<class_Color>` of the relationship lines between the selected :re
 
 :ref:`Color<class_Color>` **custom_button_font_highlight** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Tree_theme_color_custom_button_font_highlight>`
 
-Text :ref:`Color<class_Color>` for a :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` mode cell when it's hovered.
+當 :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeItem_constant_CELL_MODE_CUSTOM>` 模式的儲存格被懸停時的文字 :ref:`Color<class_Color>` 顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1503,7 +1503,7 @@ Text :ref:`Color<class_Color>` for a :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeI
 
 :ref:`Color<class_Color>` **drop_position_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_drop_position_color>`
 
-:ref:`Color<class_Color>` used to draw possible drop locations. See :ref:`DropModeFlags<enum_Tree_DropModeFlags>` constants for further description of drop locations.
+用於繪製可能的放置位置的 :ref:`Color<class_Color>` 顏色。有關放置位置的描述，參閱 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -1515,7 +1515,7 @@ Text :ref:`Color<class_Color>` for a :ref:`TreeItem.CELL_MODE_CUSTOM<class_TreeI
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.7, 0.7, 0.7, 1)`` :ref:`🔗<class_Tree_theme_color_font_color>`
 
-Default text :ref:`Color<class_Color>` of the item.
+專案的預設文字顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1539,7 +1539,7 @@ Text :ref:`Color<class_Color>` for a :ref:`TreeItem.CELL_MODE_CHECK<class_TreeIt
 
 :ref:`Color<class_Color>` **font_hovered_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Tree_theme_color_font_hovered_color>`
 
-Text :ref:`Color<class_Color>` used when the item is hovered and not selected yet.
+專案處於懸停但未選中狀態時使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1575,7 +1575,7 @@ Text :ref:`Color<class_Color>` used when the item is hovered and selected.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Tree_theme_color_font_outline_color>`
 
-The tint of text outline of the item.
+專案文字輪廓的色調。
 
 .. rst-class:: classref-item-separator
 
@@ -1587,7 +1587,7 @@ The tint of text outline of the item.
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Tree_theme_color_font_selected_color>`
 
-Text :ref:`Color<class_Color>` used when the item is selected.
+選擇專案時使用的文字顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1599,7 +1599,7 @@ Text :ref:`Color<class_Color>` used when the item is selected.
 
 :ref:`Color<class_Color>` **guide_color** = ``Color(0.7, 0.7, 0.7, 0.25)`` :ref:`🔗<class_Tree_theme_color_guide_color>`
 
-:ref:`Color<class_Color>` of the guideline.
+輔助線的 :ref:`Color<class_Color>` 顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1611,7 +1611,7 @@ Text :ref:`Color<class_Color>` used when the item is selected.
 
 :ref:`Color<class_Color>` **parent_hl_line_color** = ``Color(0.27, 0.27, 0.27, 1)`` :ref:`🔗<class_Tree_theme_color_parent_hl_line_color>`
 
-The :ref:`Color<class_Color>` of the relationship lines between the selected :ref:`TreeItem<class_TreeItem>` and its parents.
+被選中的 :ref:`TreeItem<class_TreeItem>` 與其父項之間的關係線的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1623,7 +1623,7 @@ The :ref:`Color<class_Color>` of the relationship lines between the selected :re
 
 :ref:`Color<class_Color>` **relationship_line_color** = ``Color(0.27, 0.27, 0.27, 1)`` :ref:`🔗<class_Tree_theme_color_relationship_line_color>`
 
-The default :ref:`Color<class_Color>` of the relationship lines.
+關係線的預設 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1647,7 +1647,7 @@ The default :ref:`Color<class_Color>` of the relationship lines.
 
 :ref:`Color<class_Color>` **title_button_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_Tree_theme_color_title_button_color>`
 
-Default text :ref:`Color<class_Color>` of the title button.
+標題按鈕的預設文字 :ref:`Color<class_Color>` 顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1659,7 +1659,7 @@ Default text :ref:`Color<class_Color>` of the title button.
 
 :ref:`int<class_int>` **button_margin** = ``4`` :ref:`🔗<class_Tree_theme_constant_button_margin>`
 
-The horizontal space between each button in a cell.
+儲存格中按鈕之間的水平間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1683,7 +1683,7 @@ The horizontal space between the checkbox and the text in a :ref:`TreeItem.CELL_
 
 :ref:`int<class_int>` **children_hl_line_width** = ``1`` :ref:`🔗<class_Tree_theme_constant_children_hl_line_width>`
 
-The width of the relationship lines between the selected :ref:`TreeItem<class_TreeItem>` and its children.
+被選中的 :ref:`TreeItem<class_TreeItem>` 與其子項之間的關係線的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ During a drag-and-drop, this is how many milliseconds to wait over a section bef
 
 :ref:`int<class_int>` **draw_guides** = ``1`` :ref:`🔗<class_Tree_theme_constant_draw_guides>`
 
-Draws the guidelines if not zero, this acts as a boolean. The guideline is a horizontal line drawn at the bottom of each item.
+如果不為零就繪製輔助線，行為類似於布林值。輔助線是在每個項的底部畫的一條水平線。
 
 .. rst-class:: classref-item-separator
 
@@ -1719,7 +1719,7 @@ Draws the guidelines if not zero, this acts as a boolean. The guideline is a hor
 
 :ref:`int<class_int>` **draw_relationship_lines** = ``0`` :ref:`🔗<class_Tree_theme_constant_draw_relationship_lines>`
 
-Draws the relationship lines if not zero, this acts as a boolean. Relationship lines are drawn at the start of child items to show hierarchy.
+如果不為零就繪製關係線，行為類似於布林值。關係線在子項的開始處繪製，以顯示層次結構。
 
 .. rst-class:: classref-item-separator
 
@@ -1731,7 +1731,7 @@ Draws the relationship lines if not zero, this acts as a boolean. Relationship l
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_h_separation>`
 
-The horizontal space between item cells. This is also used as the margin at the start of an item when folding is disabled.
+專案單元之間的水平空間。這也用作禁用折疊時專案開頭的邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -1755,7 +1755,7 @@ The horizontal space between the icon and the text in item's cells.
 
 :ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_Tree_theme_constant_icon_max_width>`
 
-The maximum allowed width of the icon in item's cells. This limit is applied on top of the default size of the icon, but before the value set with :ref:`TreeItem.set_icon_max_width()<class_TreeItem_method_set_icon_max_width>`. The height is adjusted according to the icon's ratio.
+專案儲存格所允許的最大圖示寬度。這是在圖示預設大小的基礎上的限制，在 :ref:`TreeItem.set_icon_max_width()<class_TreeItem_method_set_icon_max_width>` 所設定的值之前生效。高度會根據圖示的長寬比調整。
 
 .. rst-class:: classref-item-separator
 
@@ -1815,7 +1815,7 @@ The inner top margin of a cell.
 
 :ref:`int<class_int>` **item_margin** = ``16`` :ref:`🔗<class_Tree_theme_constant_item_margin>`
 
-The horizontal margin at the start of an item. This is used when folding is enabled for the item.
+專案開頭的水平邊距。在專案啟用折疊功能時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1827,9 +1827,9 @@ The horizontal margin at the start of an item. This is used when folding is enab
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_Tree_theme_constant_outline_size>`
 
-The size of the text outline.
+文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_Tree_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_Tree_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1841,7 +1841,7 @@ The size of the text outline.
 
 :ref:`int<class_int>` **parent_hl_line_margin** = ``0`` :ref:`🔗<class_Tree_theme_constant_parent_hl_line_margin>`
 
-The space between the parent relationship lines for the selected :ref:`TreeItem<class_TreeItem>` and the relationship lines to its siblings that are not selected.
+被選中的 :ref:`TreeItem<class_TreeItem>` 的父關係線，與其未選中的同級的關係線，兩者之間的空間。
 
 .. rst-class:: classref-item-separator
 
@@ -1853,7 +1853,7 @@ The space between the parent relationship lines for the selected :ref:`TreeItem<
 
 :ref:`int<class_int>` **parent_hl_line_width** = ``1`` :ref:`🔗<class_Tree_theme_constant_parent_hl_line_width>`
 
-The width of the relationship lines between the selected :ref:`TreeItem<class_TreeItem>` and its parents.
+被選中的 :ref:`TreeItem<class_TreeItem>` 與其父項之間的關係線的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -1865,7 +1865,7 @@ The width of the relationship lines between the selected :ref:`TreeItem<class_Tr
 
 :ref:`int<class_int>` **relationship_line_width** = ``1`` :ref:`🔗<class_Tree_theme_constant_relationship_line_width>`
 
-The default width of the relationship lines.
+關係線的預設寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -1877,7 +1877,7 @@ The default width of the relationship lines.
 
 :ref:`int<class_int>` **scroll_border** = ``4`` :ref:`🔗<class_Tree_theme_constant_scroll_border>`
 
-The maximum distance between the mouse cursor and the control's border to trigger border scrolling when dragging.
+拖動時，滑鼠指標與控制項邊框之間觸發邊框滾動的最大距離。
 
 .. rst-class:: classref-item-separator
 
@@ -1889,7 +1889,7 @@ The maximum distance between the mouse cursor and the control's border to trigge
 
 :ref:`int<class_int>` **scroll_speed** = ``12`` :ref:`🔗<class_Tree_theme_constant_scroll_speed>`
 
-The speed of border scrolling.
+邊框滾動的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1901,7 +1901,7 @@ The speed of border scrolling.
 
 :ref:`int<class_int>` **scrollbar_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_scrollbar_h_separation>`
 
-The horizontal separation of tree content and scrollbar.
+樹中內容與捲軸的水平間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1913,7 +1913,7 @@ The horizontal separation of tree content and scrollbar.
 
 :ref:`int<class_int>` **scrollbar_margin_bottom** = ``-1`` :ref:`🔗<class_Tree_theme_constant_scrollbar_margin_bottom>`
 
-The bottom margin of the scrollbars. When negative, uses :ref:`panel<class_Tree_theme_style_panel>` bottom margin.
+捲軸的底部邊距。為負數時會使用 :ref:`panel<class_Tree_theme_style_panel>` 的底部邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -1925,7 +1925,7 @@ The bottom margin of the scrollbars. When negative, uses :ref:`panel<class_Tree_
 
 :ref:`int<class_int>` **scrollbar_margin_left** = ``-1`` :ref:`🔗<class_Tree_theme_constant_scrollbar_margin_left>`
 
-The left margin of the horizontal scrollbar. When negative, uses :ref:`panel<class_Tree_theme_style_panel>` left margin.
+水平捲軸的左側邊距。為負數時會使用 :ref:`panel<class_Tree_theme_style_panel>` 的左側邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1937,7 @@ The left margin of the horizontal scrollbar. When negative, uses :ref:`panel<cla
 
 :ref:`int<class_int>` **scrollbar_margin_right** = ``-1`` :ref:`🔗<class_Tree_theme_constant_scrollbar_margin_right>`
 
-The right margin of the scrollbars. When negative, uses :ref:`panel<class_Tree_theme_style_panel>` right margin.
+捲軸的右側邊距。為負數時會使用 :ref:`panel<class_Tree_theme_style_panel>` 的右側邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -1949,7 +1949,7 @@ The right margin of the scrollbars. When negative, uses :ref:`panel<class_Tree_t
 
 :ref:`int<class_int>` **scrollbar_margin_top** = ``-1`` :ref:`🔗<class_Tree_theme_constant_scrollbar_margin_top>`
 
-The top margin of the vertical scrollbar. When negative, uses :ref:`panel<class_Tree_theme_style_panel>` top margin.
+垂直捲動條的右側邊距。為負數時會使用 :ref:`panel<class_Tree_theme_style_panel>` 的頂部邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -1961,7 +1961,7 @@ The top margin of the vertical scrollbar. When negative, uses :ref:`panel<class_
 
 :ref:`int<class_int>` **scrollbar_v_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_scrollbar_v_separation>`
 
-The vertical separation of tree content and scrollbar.
+樹中內容與捲軸的垂直間距。
 
 .. rst-class:: classref-item-separator
 
@@ -1973,7 +1973,7 @@ The vertical separation of tree content and scrollbar.
 
 :ref:`int<class_int>` **v_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_v_separation>`
 
-The vertical padding inside each item, i.e. the distance between the item's content and top/bottom border.
+每個項內的垂直填充，即項內容與上或下邊框之間的距離。
 
 .. rst-class:: classref-item-separator
 
@@ -1985,7 +1985,7 @@ The vertical padding inside each item, i.e. the distance between the item's cont
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_Tree_theme_font_font>`
 
-:ref:`Font<class_Font>` of the item's text.
+專案文字的字形 :ref:`Font<class_Font>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -1997,7 +1997,7 @@ The vertical padding inside each item, i.e. the distance between the item's cont
 
 :ref:`Font<class_Font>` **title_button_font** :ref:`🔗<class_Tree_theme_font_title_button_font>`
 
-:ref:`Font<class_Font>` of the title button's text.
+標題按鈕文字的 :ref:`Font<class_Font>` 字形。
 
 .. rst-class:: classref-item-separator
 
@@ -2009,7 +2009,7 @@ The vertical padding inside each item, i.e. the distance between the item's cont
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_Tree_theme_font_size_font_size>`
 
-Font size of the item's text.
+專案文字的字形大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2021,7 +2021,7 @@ Font size of the item's text.
 
 :ref:`int<class_int>` **title_button_font_size** :ref:`🔗<class_Tree_theme_font_size_title_button_font_size>`
 
-Font size of the title button's text.
+標題按鈕文字的 :ref:`Font<class_Font>` 字形。
 
 .. rst-class:: classref-item-separator
 
@@ -2033,7 +2033,7 @@ Font size of the title button's text.
 
 :ref:`Texture2D<class_Texture2D>` **arrow** :ref:`🔗<class_Tree_theme_icon_arrow>`
 
-The arrow icon used when a foldable item is not collapsed.
+箭頭圖示，可折疊項未折疊時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2045,7 @@ The arrow icon used when a foldable item is not collapsed.
 
 :ref:`Texture2D<class_Texture2D>` **arrow_collapsed** :ref:`🔗<class_Tree_theme_icon_arrow_collapsed>`
 
-The arrow icon used when a foldable item is collapsed (for left-to-right layouts).
+箭頭圖示，可折疊項已折疊時使用（用於從左至右佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -2057,7 +2057,7 @@ The arrow icon used when a foldable item is collapsed (for left-to-right layouts
 
 :ref:`Texture2D<class_Texture2D>` **arrow_collapsed_mirrored** :ref:`🔗<class_Tree_theme_icon_arrow_collapsed_mirrored>`
 
-The arrow icon used when a foldable item is collapsed (for right-to-left layouts).
+箭頭圖示，可折疊項已折疊時使用（用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -2129,7 +2129,7 @@ The indicator that will be shown when the content can still be scrolled. See :re
 
 :ref:`Texture2D<class_Texture2D>` **select_arrow** :ref:`🔗<class_Tree_theme_icon_select_arrow>`
 
-The arrow icon to display for the :ref:`TreeItem.CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>` mode cell.
+箭頭圖示，模式為 :ref:`TreeItem.CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>` 的儲存格顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -2165,7 +2165,7 @@ The check icon to display when the :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem
 
 :ref:`Texture2D<class_Texture2D>` **updown** :ref:`🔗<class_Tree_theme_icon_updown>`
 
-The updown arrow icon to display for the :ref:`TreeItem.CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>` mode cell.
+上下箭頭圖示，模式為 :ref:`TreeItem.CELL_MODE_RANGE<class_TreeItem_constant_CELL_MODE_RANGE>` 的儲存格顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -2189,7 +2189,7 @@ The updown arrow icon to display for the :ref:`TreeItem.CELL_MODE_RANGE<class_Tr
 
 :ref:`StyleBox<class_StyleBox>` **button_pressed** :ref:`🔗<class_Tree_theme_style_button_pressed>`
 
-:ref:`StyleBox<class_StyleBox>` used when a button in the tree is pressed.
+樹中的按鈕處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2201,7 +2201,7 @@ The updown arrow icon to display for the :ref:`TreeItem.CELL_MODE_RANGE<class_Tr
 
 :ref:`StyleBox<class_StyleBox>` **cursor** :ref:`🔗<class_Tree_theme_style_cursor>`
 
-:ref:`StyleBox<class_StyleBox>` used for the cursor, when the **Tree** is being focused.
+用作游標的 :ref:`StyleBox<class_StyleBox>`\ ，該 **Tree** 處於聚焦狀態時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2213,7 +2213,7 @@ The updown arrow icon to display for the :ref:`TreeItem.CELL_MODE_RANGE<class_Tr
 
 :ref:`StyleBox<class_StyleBox>` **cursor_unfocused** :ref:`🔗<class_Tree_theme_style_cursor_unfocused>`
 
-:ref:`StyleBox<class_StyleBox>` used for the cursor, when the **Tree** is not being focused.
+用作游標的 :ref:`StyleBox<class_StyleBox>`\ ，該 **Tree** 處於失焦狀態時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2261,7 +2261,7 @@ Default :ref:`StyleBox<class_StyleBox>` for a :ref:`TreeItem.CELL_MODE_CUSTOM<cl
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_Tree_theme_style_focus>`
 
-The focused style for the **Tree**, drawn on top of everything.
+該 **Tree** 的聚焦樣式，繪製在所有東西之上。
 
 .. rst-class:: classref-item-separator
 
@@ -2321,7 +2321,7 @@ The focused style for the **Tree**, drawn on top of everything.
 
 :ref:`StyleBox<class_StyleBox>` **panel** :ref:`🔗<class_Tree_theme_style_panel>`
 
-The background style for the **Tree**.
+該 **Tree** 的背景樣式。
 
 .. rst-class:: classref-item-separator
 
@@ -2333,7 +2333,7 @@ The background style for the **Tree**.
 
 :ref:`StyleBox<class_StyleBox>` **selected** :ref:`🔗<class_Tree_theme_style_selected>`
 
-:ref:`StyleBox<class_StyleBox>` for the selected items, used when the **Tree** is not being focused.
+所選專案的 :ref:`StyleBox<class_StyleBox>`\ ，在 **Tree** 沒有獲得焦點時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2345,7 +2345,7 @@ The background style for the **Tree**.
 
 :ref:`StyleBox<class_StyleBox>` **selected_focus** :ref:`🔗<class_Tree_theme_style_selected_focus>`
 
-:ref:`StyleBox<class_StyleBox>` for the selected items, used when the **Tree** is being focused.
+所選專案的 :ref:`StyleBox<class_StyleBox>`\ ，在 **Tree** 獲得焦點時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2357,7 +2357,7 @@ The background style for the **Tree**.
 
 :ref:`StyleBox<class_StyleBox>` **title_button_hover** :ref:`🔗<class_Tree_theme_style_title_button_hover>`
 
-:ref:`StyleBox<class_StyleBox>` used when the title button is being hovered.
+當標題按鈕被懸停時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2369,7 +2369,7 @@ The background style for the **Tree**.
 
 :ref:`StyleBox<class_StyleBox>` **title_button_normal** :ref:`🔗<class_Tree_theme_style_title_button_normal>`
 
-Default :ref:`StyleBox<class_StyleBox>` for the title button.
+標題按鈕的預設 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2381,14 +2381,14 @@ Default :ref:`StyleBox<class_StyleBox>` for the title button.
 
 :ref:`StyleBox<class_StyleBox>` **title_button_pressed** :ref:`🔗<class_Tree_theme_style_title_button_pressed>`
 
-:ref:`StyleBox<class_StyleBox>` used when the title button is being pressed.
+當標題按鈕被按下時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -14,7 +14,7 @@ Exportador para Windows.
 Descripción
 ----------------------
 
-The Windows exporter customizes how a Windows build is handled. In the editor's "Export" window, it is created when adding a new "Windows" preset.
+El exportador de Windows personaliza cómo se maneja una compilación de Windows. En la ventana "Exportar" del editor, se crea al añadir un nuevo preajuste de "Windows".
 
 .. rst-class:: classref-introduction-group
 
@@ -124,7 +124,7 @@ Descripciones de Propiedades
 
 :ref:`String<class_String>` **application/company_name** :ref:`🔗<class_EditorExportPlatformWindows_property_application/company_name>`
 
-Company that produced the application. Required. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Compañía que produjo la aplicación. Requerido. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Company that produced the application. Required. See `StringFileInfo <https://le
 
 :ref:`String<class_String>` **application/console_wrapper_icon** :ref:`🔗<class_EditorExportPlatformWindows_property_application/console_wrapper_icon>`
 
-Console wrapper icon file. If left empty, it will fallback to :ref:`application/icon<class_EditorExportPlatformWindows_property_application/icon>`, then to :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, and lastly, :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+Archivo de icono del envoltorio de la consola. Si se deja vacío, se recurrirá a :ref:`application/icon<class_EditorExportPlatformWindows_property_application/icon>`, luego a :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, y finalmente, a :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Console wrapper icon file. If left empty, it will fallback to :ref:`application/
 
 :ref:`String<class_String>` **application/copyright** :ref:`🔗<class_EditorExportPlatformWindows_property_application/copyright>`
 
-Copyright notice for the bundle visible to the user. Optional. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Aviso de copyright para el paquete visible para el usuario. Opcional. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Copyright notice for the bundle visible to the user. Optional. See `StringFileIn
 
 :ref:`bool<class_bool>` **application/d3d12_agility_sdk_multiarch** :ref:`🔗<class_EditorExportPlatformWindows_property_application/d3d12_agility_sdk_multiarch>`
 
-If ``true``, and :ref:`application/export_d3d12<class_EditorExportPlatformWindows_property_application/export_d3d12>` is set, the Agility SDK DLLs will be stored in arch-specific subdirectories.
+Si es ``true``, y se establece :ref:`application/export_d3d12<class_EditorExportPlatformWindows_property_application/export_d3d12>`, las DLL de Agility SDK se almacenarán en subdirectorios específicos de la arquitectura.
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ If set to ``1``, ANGLE libraries are exported with the exported application. If 
 
 :ref:`int<class_int>` **application/export_d3d12** :ref:`🔗<class_EditorExportPlatformWindows_property_application/export_d3d12>`
 
-If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are exported with the exported application. If set to ``0``, Direct3D 12 libraries are exported only if :ref:`ProjectSettings.rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` is set to ``"d3d12"``.
+Si se establece en ``1``, las bibliotecas de tiempo de ejecución de Direct3D 12 (Agility SDK, PIX) se exportan con la aplicación exportada. Si se establece en ``0``, las bibliotecas de Direct3D 12 se exportan solo si :ref:`ProjectSettings.rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` se establece en ``"d3d12"``.
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ If set to ``1``, the Direct3D 12 runtime libraries (Agility SDK, PIX) are export
 
 :ref:`String<class_String>` **application/file_description** :ref:`🔗<class_EditorExportPlatformWindows_property_application/file_description>`
 
-File description to be presented to users. Required. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Descripción del archivo a presentar a los usuarios. Requerido. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ File description to be presented to users. Required. See `StringFileInfo <https:
 
 :ref:`String<class_String>` **application/file_version** :ref:`🔗<class_EditorExportPlatformWindows_property_application/file_version>`
 
-Version number of the file. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Número de versión del archivo. Vuelve a :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` si se deja vacío. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Version number of the file. Falls back to :ref:`ProjectSettings.application/conf
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformWindows_property_application/icon>`
 
-Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+Archivo de icono de la aplicación. Si se deja vacío, volverá a :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, y luego a :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Método de interpolación utilizado para redimensionar el icono de la aplicació
 
 :ref:`bool<class_bool>` **application/modify_resources** :ref:`🔗<class_EditorExportPlatformWindows_property_application/modify_resources>`
 
-If enabled, icon and metadata of the exported executable is set according to the other ``application/*`` values.
+Si está habilitado, el icono y los metadatos del ejecutable exportado se establecen según los demás valores de ``application/*``.
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ If enabled, icon and metadata of the exported executable is set according to the
 
 :ref:`String<class_String>` **application/product_name** :ref:`🔗<class_EditorExportPlatformWindows_property_application/product_name>`
 
-Name of the application. Required. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Nombre de la aplicación. Requerido. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ Name of the application. Required. See `StringFileInfo <https://learn.microsoft.
 
 :ref:`String<class_String>` **application/product_version** :ref:`🔗<class_EditorExportPlatformWindows_property_application/product_version>`
 
-Application version visible to the user. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Versión de la aplicación visible para el usuario. Vuelve a :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` si se deja vacío. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -280,7 +280,7 @@ Application version visible to the user. Falls back to :ref:`ProjectSettings.app
 
 :ref:`String<class_String>` **application/trademarks** :ref:`🔗<class_EditorExportPlatformWindows_property_application/trademarks>`
 
-Trademarks and registered trademarks that apply to the file. Optional. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+Marcas comerciales y marcas registradas que se aplican al archivo. Opcional. Véase `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -292,9 +292,9 @@ Trademarks and registered trademarks that apply to the file. Optional. See `Stri
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformWindows_property_binary_format/architecture>`
 
-Application executable architecture.
+Arquitectura del ejecutable de la aplicación.
 
-Supported architectures: ``x86_32``, ``x86_64``, and ``arm64``.
+Arquitecturas soportadas: ``x86_32``, ``x86_64`` y ``arm64``.
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Si es ``true``, los recursos del proyecto se incrustan en el ejecutable.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **codesign/custom_options** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/custom_options>`
 
-Array of the additional command line arguments passed to the code signing tool. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Array de los argumentos adicionales de línea de comandos pasados a la herramienta de firma de código. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -332,7 +332,7 @@ Array of the additional command line arguments passed to the code signing tool. 
 
 :ref:`String<class_String>` **codesign/description** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/description>`
 
-Description of the signed content. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Descripción del contenido firmado. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Description of the signed content. See `Sign Tool <https://learn.microsoft.com/e
 
 :ref:`int<class_int>` **codesign/digest_algorithm** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/digest_algorithm>`
 
-Digest algorithm to use for creating signature. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Algoritmo de resumen a utilizar para crear la firma. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Si es ``true``, la firma ejecutable está habilitada.
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/identity>`
 
-PKCS #12 certificate file used to sign executable or certificate SHA-1 hash (if :ref:`codesign/identity_type<class_EditorExportPlatformWindows_property_codesign/identity_type>` is set to "Use certificate store"). See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Archivo de certificado PKCS #12 utilizado para firmar el ejecutable o hash SHA-1 del certificado (si :ref:`codesign/identity_type<class_EditorExportPlatformWindows_property_codesign/identity_type>` está configurado como "Usar almacén de certificados"). Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTITY``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_WINDOWS_CODESIGN_IDENTITY``.
 
 .. rst-class:: classref-item-separator
 
@@ -382,9 +382,9 @@ Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTIT
 
 :ref:`int<class_int>` **codesign/identity_type** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/identity_type>`
 
-Type of identity to use. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Tipo de identidad a utilizar. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``.
 
 .. rst-class:: classref-item-separator
 
@@ -396,9 +396,9 @@ Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_IDENTIT
 
 :ref:`String<class_String>` **codesign/password** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/password>`
 
-Password for the certificate file used to sign executable. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Contraseña para el archivo de certificado utilizado para firmar el ejecutable. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
-Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_PASSWORD``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_WINDOWS_CODESIGN_PASSWORD``.
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Can be overridden with the environment variable ``GODOT_WINDOWS_CODESIGN_PASSWOR
 
 :ref:`bool<class_bool>` **codesign/timestamp** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/timestamp>`
 
-If ``true``, time-stamp is added to the signature. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Si ``true``, se añade una marca de tiempo a la firma. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ If ``true``, time-stamp is added to the signature. See `Sign Tool <https://learn
 
 :ref:`String<class_String>` **codesign/timestamp_server_url** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/timestamp_server_url>`
 
-URL of the time stamp server. If left empty, the default server is used. See `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+URL del servidor de marcas de tiempo. Si se deja vacío, se utiliza el servidor predeterminado. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Ruta a la plantilla de exportación personalizada. Si se deja vacío, se utiliza
 
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`
 
-If ``true``, a console wrapper executable is exported alongside the main executable, which allows running the project with enabled console output.
+Si ``true``, se exporta un ejecutable contenedor de consola junto con el ejecutable principal, lo que permite ejecutar el proyecto con la salida de consola habilitada.
 
 .. rst-class:: classref-item-separator
 
@@ -470,9 +470,9 @@ If ``true``, a console wrapper executable is exported alongside the main executa
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformWindows_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
+Si es ``true``, los shaders se compilarán e incrustarán en la aplicación. Esta opción sólo es compatible cuando se utilizan los renderizadores Forward+ y Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Nota:** Al exportar como servidor dedicado, el compilador de shaders siempre está deshabilitado, ya que no se realiza ninguna renderización.
 
 .. rst-class:: classref-item-separator
 

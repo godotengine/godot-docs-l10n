@@ -5,42 +5,42 @@
 StaticBody3D
 ============
 
-**Inherits:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AnimatableBody3D<class_AnimatableBody3D>`
+**派生：** :ref:`AnimatableBody3D<class_AnimatableBody3D>`
 
-A 3D physics body that can't be moved by external forces. When moved manually, it doesn't affect other bodies in its path.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A static 3D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, :ref:`AnimationMixer<class_AnimationMixer>`\ s (with :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` set to :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`), and :ref:`RemoteTransform3D<class_RemoteTransform3D>`.
-
-When **StaticBody3D** is moved, it is teleported to its new position without affecting other physics bodies in its path. If this is not desired, use :ref:`AnimatableBody3D<class_AnimatableBody3D>` instead.
-
-\ **StaticBody3D** is useful for completely static objects like floors and walls, as well as moving surfaces like conveyor belts and circular revolving platforms (by using :ref:`constant_linear_velocity<class_StaticBody3D_property_constant_linear_velocity>` and :ref:`constant_angular_velocity<class_StaticBody3D_property_constant_angular_velocity>`).
+无法被外力移动的 3D 物理物体。手动移动时不会影响路径上的其他物体。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Physics introduction <../tutorials/physics/physics_introduction>`
+静态 3D 物理体。无法因外力或接触而移动，但可以通过代码、\ :ref:`AnimationMixer<class_AnimationMixer>`\ （\ :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` 设为 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`\ ）、\ :ref:`RemoteTransform3D<class_RemoteTransform3D>` 等方法手动移动。
 
-- :doc:`Troubleshooting physics issues <../tutorials/physics/troubleshooting_physics_issues>`
+\ **StaticBody3D** 发生移动时，是传送到新位置上的，不会影响路径上的其他物理体。如果不想要这样的行为，请改用 :ref:`AnimatableBody3D<class_AnimatableBody3D>`\ 。
 
-- `3D Physics Tests Demo <https://godotengine.org/asset-library/asset/2747>`__
+\ **StaticBody3D** 常用于完全静态的地板、墙壁等对象，也可以用于传送带、圆形回转平台等移动的表面（使用 :ref:`constant_linear_velocity<class_StaticBody3D_property_constant_linear_velocity>` 和 :ref:`constant_angular_velocity<class_StaticBody3D_property_constant_angular_velocity>`\ ）。
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+.. rst-class:: classref-introduction-group
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+教程
+----
+
+- :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
+
+- :doc:`排查物理问题 <../tutorials/physics/troubleshooting_physics_issues>`
+
+- `3D 物理测试演示 <https://godotengine.org/asset-library/asset/2747>`__
+
+- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
+
+- `3D 体素演示 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_StaticBody3D_property_constant_angular_velocity:
 
@@ -73,7 +73,7 @@ Property Descriptions
 - |void| **set_constant_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_constant_angular_velocity**\ (\ )
 
-The body's constant angular velocity. This does not rotate the body, but affects touching bodies, as if it were rotating.
+该物体的恒定角速度。不会旋转该物体，但会影响接触的物体，就好像这个物体正在旋转一样。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ The body's constant angular velocity. This does not rotate the body, but affects
 - |void| **set_constant_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_constant_linear_velocity**\ (\ )
 
-The body's constant linear velocity. This does not move the body, but affects touching bodies, as if it were moving.
+该物体的恒定线速度。不会移动该物体，但会影响接触的物体，就好像这个物体正在移动一样。
 
 .. rst-class:: classref-item-separator
 
@@ -107,16 +107,16 @@ The body's constant linear velocity. This does not move the body, but affects to
 - |void| **set_physics_material_override**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material_override**\ (\ )
 
-The physics material override for the body.
+物体的物理材质。
 
-If a material is assigned to this property, it will be used instead of any other physics material, such as an inherited one.
+如果为该属性指定了一种材质，则将使用该材质代替任何其他物理材质，例如继承的材质。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

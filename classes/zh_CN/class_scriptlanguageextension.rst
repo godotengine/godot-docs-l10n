@@ -5,7 +5,7 @@
 ScriptLanguageExtension
 =======================
 
-**Inherits:** :ref:`ScriptLanguage<class_ScriptLanguage>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ScriptLanguage<class_ScriptLanguage>` **<** :ref:`Object<class_Object>`
 
 .. container:: contribute
 
@@ -13,8 +13,8 @@ ScriptLanguageExtension
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -147,8 +147,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ScriptLanguageExtension_LookupResultType:
 
@@ -246,7 +246,7 @@ enum **LookupResultType**: :ref:`🔗<enum_ScriptLanguageExtension_LookupResultT
 
 :ref:`LookupResultType<enum_ScriptLanguageExtension_LookupResultType>` **LOOKUP_RESULT_CLASS_TBD_GLOBALSCOPE** = ``7``
 
-**Deprecated:** This constant may be changed or removed in future versions.
+**已弃用：** 未来版本中可能会修改或移除该常量。
 
 
 
@@ -314,7 +314,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_ScriptLanguageExtension_CodeCom
 
 :ref:`CodeCompletionLocation<enum_ScriptLanguageExtension_CodeCompletionLocation>` **LOCATION_LOCAL** = ``0``
 
-The option is local to the location of the code completion query - e.g. a local variable. Subsequent value of location represent options from the outer class, the exact value represent how far they are (in terms of inner classes).
+该选项是相对于代码补全查询位置的 - 例如局部变量。位置的后续值表示选项来自外部类，确切的值表示它们的距离（就内部类而言）。
 
 .. _class_ScriptLanguageExtension_constant_LOCATION_PARENT_MASK:
 
@@ -322,7 +322,7 @@ The option is local to the location of the code completion query - e.g. a local 
 
 :ref:`CodeCompletionLocation<enum_ScriptLanguageExtension_CodeCompletionLocation>` **LOCATION_PARENT_MASK** = ``256``
 
-The option is from the containing class or a parent class, relative to the location of the code completion query. Perform a bitwise OR with the class depth (e.g. ``0`` for the local class, ``1`` for the parent, ``2`` for the grandparent, etc.) to store the depth of an option in the class or a parent class.
+该选项来自于所在的类或父类，相对于代码补全查询的位置。请使用类的深度进行按位 OR（或）运算（例如 ``0`` 表示当前类，\ ``1`` 表示父类，\ ``2`` 表示父类的父类等），从而在当前类或父类中存储选项的深度。
 
 .. _class_ScriptLanguageExtension_constant_LOCATION_OTHER_USER_CODE:
 
@@ -330,7 +330,7 @@ The option is from the containing class or a parent class, relative to the locat
 
 :ref:`CodeCompletionLocation<enum_ScriptLanguageExtension_CodeCompletionLocation>` **LOCATION_OTHER_USER_CODE** = ``512``
 
-The option is from user code which is not local and not in a derived class (e.g. Autoload Singletons).
+该选项来自用户代码，不是局部，也不是派生类（例如自动加载单例）。
 
 .. _class_ScriptLanguageExtension_constant_LOCATION_OTHER:
 
@@ -338,7 +338,7 @@ The option is from user code which is not local and not in a derived class (e.g.
 
 :ref:`CodeCompletionLocation<enum_ScriptLanguageExtension_CodeCompletionLocation>` **LOCATION_OTHER** = ``1024``
 
-The option is from other engine code, not covered by the other enum constants - e.g. built-in classes.
+该选项来自其他引擎代码，未被其他枚举常量覆盖 - 例如内置类。
 
 .. rst-class:: classref-item-separator
 
@@ -488,8 +488,8 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_ScriptLanguageExtension_CodeComplet
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ScriptLanguageExtension_private_method__add_global_constant:
 
@@ -721,7 +721,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **_debug_get_stack_level_source**\ (\ level\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__debug_get_stack_level_source>`
 
-Returns the source associated with a given debug stack position.
+返回与给定调试堆栈位置相关的源。
 
 .. rst-class:: classref-item-separator
 
@@ -747,7 +747,7 @@ Returns the source associated with a given debug stack position.
 
 :ref:`int<class_int>` **_find_function**\ (\ function\: :ref:`String<class_String>`, code\: :ref:`String<class_String>`\ ) |virtual| |required| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__find_function>`
 
-Returns the line where the function is defined in the code, or ``-1`` if the function is not present.
+返回代码中定义该函数的行，如果该函数不存在，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -983,7 +983,7 @@ Returns the line where the function is defined in the code, or ``-1`` if the fun
 
 :ref:`bool<class_bool>` **_has_named_classes**\ (\ ) |virtual| |const| :ref:`🔗<class_ScriptLanguageExtension_private_method__has_named_classes>`
 
-**Deprecated:** This method is not called by the engine.
+**已弃用：** This method is not called by the engine.
 
 .. rst-class:: classref-item-separator
 
@@ -1321,12 +1321,12 @@ Returns the line where the function is defined in the code, or ``-1`` if the fun
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

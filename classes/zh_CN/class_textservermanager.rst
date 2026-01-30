@@ -5,23 +5,23 @@
 TextServerManager
 =================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-A singleton for managing :ref:`TextServer<class_TextServer>` implementations.
+用于管理 :ref:`TextServer<class_TextServer>` 实现的单例。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**TextServerManager** is the API backend for loading, enumerating, and switching :ref:`TextServer<class_TextServer>`\ s.
+**TextServerManager** 是加载、枚举和切换 :ref:`TextServer<class_TextServer>` 的 API 后端。
 
-\ **Note:** Switching text server at runtime is possible, but will invalidate all fonts and text buffers. Make sure to unload all controls, fonts, and themes before doing so.
+\ **注意：**\ 文本服务器可以在运行时切换，但会导致所有字体和文本缓冲区失效。请确保在切换之前卸载所有控件、字体和主题。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_TextServerManager_signal_interface_added:
 
@@ -59,7 +59,7 @@ Signals
 
 **interface_added**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_TextServerManager_signal_interface_added>`
 
-Emitted when a new interface has been added.
+添加新接口时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ Emitted when a new interface has been added.
 
 **interface_removed**\ (\ interface_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_TextServerManager_signal_interface_removed>`
 
-Emitted when an interface is removed.
+当接口被移除时触发。
 
 .. rst-class:: classref-section-separator
 
@@ -79,8 +79,8 @@ Emitted when an interface is removed.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TextServerManager_method_add_interface:
 
@@ -88,7 +88,7 @@ Method Descriptions
 
 |void| **add_interface**\ (\ interface\: :ref:`TextServer<class_TextServer>`\ ) :ref:`🔗<class_TextServerManager_method_add_interface>`
 
-Registers a :ref:`TextServer<class_TextServer>` interface.
+注册 :ref:`TextServer<class_TextServer>` 接口。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Registers a :ref:`TextServer<class_TextServer>` interface.
 
 :ref:`TextServer<class_TextServer>` **find_interface**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServerManager_method_find_interface>`
 
-Finds an interface by its ``name``.
+根据名称 ``name`` 查找接口。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Finds an interface by its ``name``.
 
 :ref:`TextServer<class_TextServer>` **get_interface**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServerManager_method_get_interface>`
 
-Returns the interface registered at a given index.
+返回在给定索引处注册的接口。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Returns the interface registered at a given index.
 
 :ref:`int<class_int>` **get_interface_count**\ (\ ) |const| :ref:`🔗<class_TextServerManager_method_get_interface_count>`
 
-Returns the number of interfaces currently registered.
+返回当前注册的接口数。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Returns the number of interfaces currently registered.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_interfaces**\ (\ ) |const| :ref:`🔗<class_TextServerManager_method_get_interfaces>`
 
-Returns a list of available interfaces, with the index and name of each interface.
+返回可用接口的列表，包含每个接口的索引号和名称。
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ Returns a list of available interfaces, with the index and name of each interfac
 
 :ref:`TextServer<class_TextServer>` **get_primary_interface**\ (\ ) |const| :ref:`🔗<class_TextServerManager_method_get_primary_interface>`
 
-Returns the primary :ref:`TextServer<class_TextServer>` interface currently in use.
+返回当前使用的主 :ref:`TextServer<class_TextServer>` 接口。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Returns the primary :ref:`TextServer<class_TextServer>` interface currently in u
 
 |void| **remove_interface**\ (\ interface\: :ref:`TextServer<class_TextServer>`\ ) :ref:`🔗<class_TextServerManager_method_remove_interface>`
 
-Removes an interface. All fonts and shaped text caches should be freed before removing an interface.
+移除接口。在移除接口之前，应释放所有字体和塑形文本的缓存。
 
 .. rst-class:: classref-item-separator
 
@@ -172,14 +172,14 @@ Removes an interface. All fonts and shaped text caches should be freed before re
 
 |void| **set_primary_interface**\ (\ index\: :ref:`TextServer<class_TextServer>`\ ) :ref:`🔗<class_TextServerManager_method_set_primary_interface>`
 
-Sets the primary :ref:`TextServer<class_TextServer>` interface.
+设置主 :ref:`TextServer<class_TextServer>` 接口。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

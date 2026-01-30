@@ -5,30 +5,30 @@
 CanvasTexture
 =============
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Texture with optional normal and specular maps for use in 2D rendering.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**CanvasTexture** is an alternative to :ref:`ImageTexture<class_ImageTexture>` for 2D rendering. It allows using normal maps and specular maps in any node that inherits from :ref:`CanvasItem<class_CanvasItem>`. **CanvasTexture** also allows overriding the texture's filter and repeat mode independently of the node's properties (or the project settings).
-
-\ **Note:** **CanvasTexture** cannot be used in 3D. It will not display correctly when applied to any :ref:`VisualInstance3D<class_VisualInstance3D>`, such as :ref:`Sprite3D<class_Sprite3D>` or :ref:`Decal<class_Decal>`. For physically-based materials in 3D, use :ref:`BaseMaterial3D<class_BaseMaterial3D>` instead.
+用于 2D 渲染的纹理，带有可选的法线和镜面贴图。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`2D Lights and Shadows <../tutorials/2d/2d_lights_and_shadows>`
+**CanvasTexture** 是用于 2D 渲染的 :ref:`ImageTexture<class_ImageTexture>` 的替代品。它允许在任何继承自 :ref:`CanvasItem<class_CanvasItem>` 的节点中使用法线贴图和镜面贴图。\ **CanvasTexture** 还允许独立于节点的属性（或项目设置）覆盖纹理的过滤模式和重复模式。
+
+\ **注意：**\ **CanvasTexture** 不能在 3D 中使用。当应用于任何 :ref:`VisualInstance3D<class_VisualInstance3D>`\ ，例如 :ref:`Sprite3D<class_Sprite3D>` 或 :ref:`Decal<class_Decal>` 时，它将无法正确显示。对于 3D 中基于物理的材质，请改用 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`2D 灯光和阴影 <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CanvasTexture_property_diffuse_texture:
 
@@ -71,7 +71,7 @@ Property Descriptions
 - |void| **set_diffuse_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_diffuse_texture**\ (\ )
 
-The diffuse (color) texture to use. This is the main texture you want to set in most cases.
+要使用的漫反射（颜色）纹理。这是你在大多数情况下要设置的主要纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -88,9 +88,9 @@ The diffuse (color) texture to use. This is the main texture you want to set in 
 - |void| **set_normal_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_normal_texture**\ (\ )
 
-The normal map texture to use. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+要使用的法线贴图纹理。仅在有 :ref:`Light2D<class_Light2D>` 影响该 **CanvasTexture** 时才有可见的效果。
 
-\ **Note:** Godot expects the normal map to use X+, Y+, and Z+ coordinates. See `this page <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__ for a comparison of normal map coordinates expected by popular engines.
+\ **注意：**\ Godot 期望法线贴图使用 X+、Y+、Z+ 坐标系。比较流行的引擎所期望的法线贴图坐标系见\ `这个页面 <http://wiki.polycount.com/wiki/Normal_Map_Technical_Details#Common_Swizzle_Coordinates>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ The normal map texture to use. Only has a visible effect if :ref:`Light2D<class_
 - |void| **set_specular_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_specular_color**\ (\ )
 
-The multiplier for specular reflection colors. The :ref:`Light2D<class_Light2D>`'s color is also taken into account when determining the reflection color. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+镜面反射颜色的乘数。在确定反射颜色时，\ :ref:`Light2D<class_Light2D>` 的颜色也会被考虑在内。只有在 :ref:`Light2D<class_Light2D>` 影响到这个 **CanvasTexture** 时才有可见的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ The multiplier for specular reflection colors. The :ref:`Light2D<class_Light2D>`
 - |void| **set_specular_shininess**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_specular_shininess**\ (\ )
 
-The specular exponent for :ref:`Light2D<class_Light2D>` specular reflections. Higher values result in a more glossy/"wet" look, with reflections becoming more localized and less visible overall. The default value of ``1.0`` disables specular reflections entirely. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+用于 :ref:`Light2D<class_Light2D>` 镜面反射的镜面指数。更高的值会产生更有光泽或更加“湿润”的外观，反射变得更局部，且整体上不太明显。默认值为 ``1.0`` ，将完全禁用镜面反射。只有在 :ref:`Light2D<class_Light2D>` 影响到这个 **CanvasTexture** 时才会有可见的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ The specular exponent for :ref:`Light2D<class_Light2D>` specular reflections. Hi
 - |void| **set_specular_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_specular_texture**\ (\ )
 
-The specular map to use for :ref:`Light2D<class_Light2D>` specular reflections. This should be a grayscale or colored texture, with brighter areas resulting in a higher :ref:`specular_shininess<class_CanvasTexture_property_specular_shininess>` value. Using a colored :ref:`specular_texture<class_CanvasTexture_property_specular_texture>` allows controlling specular shininess on a per-channel basis. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+用于 :ref:`Light2D<class_Light2D>` 镜面反射的镜面贴图。这应该是一个灰度或彩色纹理，更亮的区域会产生更高的 :ref:`specular_shininess<class_CanvasTexture_property_specular_shininess>` 值。使用彩色 :ref:`specular_texture<class_CanvasTexture_property_specular_texture>` 允许在每个通道的基础上控制镜面反射光泽度。仅当 :ref:`Light2D<class_Light2D>` 影响该 **CanvasTexture** 时才有可见的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ The specular map to use for :ref:`Light2D<class_Light2D>` specular reflections. 
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_CanvasItem_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **get_texture_filter**\ (\ )
 
-The texture filtering mode to use when drawing this **CanvasTexture**.
+绘制该 **CanvasTexture** 时所使用的纹理过滤模式。
 
 .. rst-class:: classref-item-separator
 
@@ -175,14 +175,14 @@ The texture filtering mode to use when drawing this **CanvasTexture**.
 - |void| **set_texture_repeat**\ (\ value\: :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>`\ )
 - :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **get_texture_repeat**\ (\ )
 
-The texture repeat mode to use when drawing this **CanvasTexture**.
+绘制该 **CanvasTexture** 时所使用的纹理重复模式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

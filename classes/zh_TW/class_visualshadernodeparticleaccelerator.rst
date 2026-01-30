@@ -5,21 +5,21 @@
 VisualShaderNodeParticleAccelerator
 ===================================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A visual shader node that accelerates particles.
+對粒子進行加速的可視著色器節點。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Particle accelerator can be used in "process" step of particle shader. It will accelerate the particles. Connect it to the Velocity output port.
+可以在粒子著色器“process”步驟中使用的粒子加速器。會對粒子進行加速。請將其連接至 Velocity 輸出埠。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeParticleAccelerator_Mode:
 
@@ -49,7 +49,7 @@ enum **Mode**: :ref:`🔗<enum_VisualShaderNodeParticleAccelerator_Mode>`
 
 :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` **MODE_LINEAR** = ``0``
 
-The particles will be accelerated based on their velocity.
+粒子會根據速度進行加速。
 
 .. _class_VisualShaderNodeParticleAccelerator_constant_MODE_RADIAL:
 
@@ -57,7 +57,7 @@ The particles will be accelerated based on their velocity.
 
 :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` **MODE_RADIAL** = ``1``
 
-The particles will be accelerated towards or away from the center.
+粒子會根據朝向中心或遠離中心的方向進行加速。
 
 .. _class_VisualShaderNodeParticleAccelerator_constant_MODE_TANGENTIAL:
 
@@ -65,7 +65,7 @@ The particles will be accelerated towards or away from the center.
 
 :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` **MODE_TANGENTIAL** = ``2``
 
-The particles will be accelerated tangentially to the radius vector from center to their position.
+粒子從中心到它們位置，將被切向加速到的半徑向量。
 
 .. _class_VisualShaderNodeParticleAccelerator_constant_MODE_MAX:
 
@@ -73,7 +73,7 @@ The particles will be accelerated tangentially to the radius vector from center 
 
 :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` **MODE_MAX** = ``3``
 
-Represents the size of the :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` enum.
+代表 :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -81,8 +81,8 @@ Represents the size of the :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_M
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeParticleAccelerator_property_mode:
 
@@ -95,14 +95,14 @@ Property Descriptions
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>`\ )
 - :ref:`Mode<enum_VisualShaderNodeParticleAccelerator_Mode>` **get_mode**\ (\ )
 
-Defines in what manner the particles will be accelerated.
+定義粒子將以何種方式被加速。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

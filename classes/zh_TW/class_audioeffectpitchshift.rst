@@ -5,30 +5,30 @@
 AudioEffectPitchShift
 =====================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a pitch-shifting audio effect to an audio bus.
+為音訊匯流排新增音高位移效果。
 
-Raises or lowers the pitch of original sound.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Allows modulation of pitch independently of tempo. All frequencies can be increased/decreased with minimal effect on transients.
+可提升或降低原始聲音的音高。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+可在不改變速度的情況下調變音高；所有頻率皆可升降，且對瞬態的影響極小。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AudioEffectPitchShift_FFTSize:
 
@@ -62,7 +62,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectPitchShift_FFTSize>`
 
 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **FFT_SIZE_256** = ``0``
 
-Use a buffer of 256 samples for the Fast Fourier transform. Lowest latency, but least stable over time.
+使用 256 個取樣點進行快速傅立葉轉換。延遲最低，但長時間穩定性最差。
 
 .. _class_AudioEffectPitchShift_constant_FFT_SIZE_512:
 
@@ -70,7 +70,7 @@ Use a buffer of 256 samples for the Fast Fourier transform. Lowest latency, but 
 
 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **FFT_SIZE_512** = ``1``
 
-Use a buffer of 512 samples for the Fast Fourier transform. Low latency, but less stable over time.
+使用 512 個取樣點進行快速傅立葉轉換。延遲低，但長時間穩定性較差。
 
 .. _class_AudioEffectPitchShift_constant_FFT_SIZE_1024:
 
@@ -78,7 +78,7 @@ Use a buffer of 512 samples for the Fast Fourier transform. Low latency, but les
 
 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **FFT_SIZE_1024** = ``2``
 
-Use a buffer of 1024 samples for the Fast Fourier transform. This is a compromise between latency and stability over time.
+使用 1024 個取樣點進行快速傅立葉轉換。延遲與穩定性折衷。
 
 .. _class_AudioEffectPitchShift_constant_FFT_SIZE_2048:
 
@@ -86,7 +86,7 @@ Use a buffer of 1024 samples for the Fast Fourier transform. This is a compromis
 
 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **FFT_SIZE_2048** = ``3``
 
-Use a buffer of 2048 samples for the Fast Fourier transform. High latency, but stable over time.
+使用 2048 個取樣點進行快速傅立葉轉換。延遲高，但穩定。
 
 .. _class_AudioEffectPitchShift_constant_FFT_SIZE_4096:
 
@@ -94,7 +94,7 @@ Use a buffer of 2048 samples for the Fast Fourier transform. High latency, but s
 
 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **FFT_SIZE_4096** = ``4``
 
-Use a buffer of 4096 samples for the Fast Fourier transform. Highest latency, but most stable over time.
+使用 4096 個取樣點進行快速傅立葉轉換。延遲最高，但穩定性最佳。
 
 .. _class_AudioEffectPitchShift_constant_FFT_SIZE_MAX:
 
@@ -102,7 +102,7 @@ Use a buffer of 4096 samples for the Fast Fourier transform. Highest latency, bu
 
 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **FFT_SIZE_MAX** = ``5``
 
-Represents the size of the :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` enum.
+代表 :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -110,8 +110,8 @@ Represents the size of the :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` en
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioEffectPitchShift_property_fft_size:
 
@@ -124,7 +124,7 @@ Property Descriptions
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectPitchShift_FFTSize>` **get_fft_size**\ (\ )
 
-The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the effect over time, but have greater latency. The effects of this higher latency are especially noticeable on sounds that have sudden amplitude changes.
+`快速傅立葉轉換 <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__\ 緩衝區大小。數值越高效果隨時間越平滑，但延遲也越大；此延遲對瞬間振幅變化的聲音尤為明顯。
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Four
 - |void| **set_oversampling**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_oversampling**\ (\ )
 
-The oversampling factor to use. Higher values result in better quality, but are more demanding on the CPU and may cause audio cracking if the CPU can't keep up.
+過取樣係數。值越高音質越好，但 CPU 負擔也越重，若處理不及可能導致爆音。
 
 .. rst-class:: classref-item-separator
 
@@ -158,14 +158,14 @@ The oversampling factor to use. Higher values result in better quality, but are 
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from ``0.0`` (infinitely low pitch, inaudible) to ``16`` (16 times higher than the initial pitch).
+音高縮放倍率。\ ``1.0`` 為預設音高且不改變播放。\ :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` 取值範圍為 ``0.0``\ （無限低，聽不見）到 ``16``\ （高出原音高 16 倍）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

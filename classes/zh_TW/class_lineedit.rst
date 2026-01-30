@@ -8,14 +8,14 @@
 LineEdit
 ========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An input field for single-line text.
+單行文字的輸入欄位。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **LineEdit** provides an input field for editing a single line of text.
 
@@ -87,8 +87,8 @@ On macOS, some extra keyboard shortcuts are available:
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -173,8 +173,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -233,8 +233,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -283,8 +283,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_LineEdit_signal_editing_toggled:
 
@@ -304,7 +304,7 @@ Emitted when the **LineEdit** switches in or out of edit mode.
 
 **text_change_rejected**\ (\ rejected_substring\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LineEdit_signal_text_change_rejected>`
 
-Emitted when appending text that overflows the :ref:`max_length<class_LineEdit_property_max_length>`. The appended text is truncated to fit :ref:`max_length<class_LineEdit_property_max_length>`, and the part that couldn't fit is passed as the ``rejected_substring`` argument.
+當追加的文字超過了 :ref:`max_length<class_LineEdit_property_max_length>` 時觸發。追加後的文字會被截斷以適應 :ref:`max_length<class_LineEdit_property_max_length>`\ ，超出的部分會被作為 ``rejected_substring`` 參數傳遞。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Emitted when appending text that overflows the :ref:`max_length<class_LineEdit_p
 
 **text_changed**\ (\ new_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LineEdit_signal_text_changed>`
 
-Emitted when the text changes.
+當文字更改時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -336,8 +336,8 @@ Emitted when the user presses the ``ui_text_submit`` action (by default: :kbd:`E
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_LineEdit_MenuItems:
 
@@ -351,7 +351,7 @@ enum **MenuItems**: :ref:`🔗<enum_LineEdit_MenuItems>`
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_CUT** = ``0``
 
-Cuts (copies and clears) the selected text.
+剪切（複製並刪除）選中的文字。
 
 .. _class_LineEdit_constant_MENU_COPY:
 
@@ -359,7 +359,7 @@ Cuts (copies and clears) the selected text.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_COPY** = ``1``
 
-Copies the selected text.
+複製選中的文字。
 
 .. _class_LineEdit_constant_MENU_PASTE:
 
@@ -367,9 +367,9 @@ Copies the selected text.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_PASTE** = ``2``
 
-Pastes the clipboard text over the selected text (or at the caret's position).
+將剪貼板中的文字貼上到選中文字之上（或者文字游標位置）。
 
-Non-printable escape characters are automatically stripped from the OS clipboard via :ref:`String.strip_escapes()<class_String_method_strip_escapes>`.
+會使用 :ref:`String.strip_escapes()<class_String_method_strip_escapes>` 自動剝離作業系統剪貼板中不可列印的轉義字符。
 
 .. _class_LineEdit_constant_MENU_CLEAR:
 
@@ -377,7 +377,7 @@ Non-printable escape characters are automatically stripped from the OS clipboard
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_CLEAR** = ``3``
 
-Erases the whole **LineEdit** text.
+刪除 **LineEdit** 中的全部文字。
 
 .. _class_LineEdit_constant_MENU_SELECT_ALL:
 
@@ -385,7 +385,7 @@ Erases the whole **LineEdit** text.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_SELECT_ALL** = ``4``
 
-Selects the whole **LineEdit** text.
+選中 **LineEdit** 中的全部文字。
 
 .. _class_LineEdit_constant_MENU_UNDO:
 
@@ -393,7 +393,7 @@ Selects the whole **LineEdit** text.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_UNDO** = ``5``
 
-Undoes the previous action.
+撤銷之前的操作。
 
 .. _class_LineEdit_constant_MENU_REDO:
 
@@ -401,7 +401,7 @@ Undoes the previous action.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_REDO** = ``6``
 
-Reverse the last undo action.
+反轉最後一個撤銷動作。
 
 .. _class_LineEdit_constant_MENU_SUBMENU_TEXT_DIR:
 
@@ -409,7 +409,7 @@ Reverse the last undo action.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_SUBMENU_TEXT_DIR** = ``7``
 
-ID of "Text Writing Direction" submenu.
+“文字書寫方向”子功能表的 ID。
 
 .. _class_LineEdit_constant_MENU_DIR_INHERITED:
 
@@ -417,7 +417,7 @@ ID of "Text Writing Direction" submenu.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_DIR_INHERITED** = ``8``
 
-Sets text direction to inherited.
+將文字方向設定為繼承。
 
 .. _class_LineEdit_constant_MENU_DIR_AUTO:
 
@@ -425,7 +425,7 @@ Sets text direction to inherited.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_DIR_AUTO** = ``9``
 
-Sets text direction to automatic.
+將文字方向設定為自動。
 
 .. _class_LineEdit_constant_MENU_DIR_LTR:
 
@@ -433,7 +433,7 @@ Sets text direction to automatic.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_DIR_LTR** = ``10``
 
-Sets text direction to left-to-right.
+將文字方向設定為從左至右。
 
 .. _class_LineEdit_constant_MENU_DIR_RTL:
 
@@ -441,7 +441,7 @@ Sets text direction to left-to-right.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_DIR_RTL** = ``11``
 
-Sets text direction to right-to-left.
+將文字方向設定為從右至左。
 
 .. _class_LineEdit_constant_MENU_DISPLAY_UCC:
 
@@ -449,7 +449,7 @@ Sets text direction to right-to-left.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_DISPLAY_UCC** = ``12``
 
-Toggles control character display.
+切換控制字元的顯示。
 
 .. _class_LineEdit_constant_MENU_SUBMENU_INSERT_UCC:
 
@@ -457,7 +457,7 @@ Toggles control character display.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_SUBMENU_INSERT_UCC** = ``13``
 
-ID of "Insert Control Character" submenu.
+“插入控制字元”子功能表的 ID。
 
 .. _class_LineEdit_constant_MENU_INSERT_LRM:
 
@@ -465,7 +465,7 @@ ID of "Insert Control Character" submenu.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_LRM** = ``14``
 
-Inserts left-to-right mark (LRM) character.
+插入從左至右旗標（LRM）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_RLM:
 
@@ -473,7 +473,7 @@ Inserts left-to-right mark (LRM) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_RLM** = ``15``
 
-Inserts right-to-left mark (RLM) character.
+插入從右至左旗標（LRM）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_LRE:
 
@@ -481,7 +481,7 @@ Inserts right-to-left mark (RLM) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_LRE** = ``16``
 
-Inserts start of left-to-right embedding (LRE) character.
+插入開始從左至右嵌入（LRE）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_RLE:
 
@@ -489,7 +489,7 @@ Inserts start of left-to-right embedding (LRE) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_RLE** = ``17``
 
-Inserts start of right-to-left embedding (RLE) character.
+插入開始從右至左嵌入（RLE）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_LRO:
 
@@ -497,7 +497,7 @@ Inserts start of right-to-left embedding (RLE) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_LRO** = ``18``
 
-Inserts start of left-to-right override (LRO) character.
+插入開始從左至右強制（LRO）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_RLO:
 
@@ -505,7 +505,7 @@ Inserts start of left-to-right override (LRO) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_RLO** = ``19``
 
-Inserts start of right-to-left override (RLO) character.
+插入開始從右至左嵌入（RLE）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_PDF:
 
@@ -513,7 +513,7 @@ Inserts start of right-to-left override (RLO) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_PDF** = ``20``
 
-Inserts pop direction formatting (PDF) character.
+插入退出方向格式化（PDF）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_ALM:
 
@@ -521,7 +521,7 @@ Inserts pop direction formatting (PDF) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_ALM** = ``21``
 
-Inserts Arabic letter mark (ALM) character.
+插入阿拉伯字母標記（ALM）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_LRI:
 
@@ -529,7 +529,7 @@ Inserts Arabic letter mark (ALM) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_LRI** = ``22``
 
-Inserts left-to-right isolate (LRI) character.
+插入從左至右隔離（LRI）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_RLI:
 
@@ -537,7 +537,7 @@ Inserts left-to-right isolate (LRI) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_RLI** = ``23``
 
-Inserts right-to-left isolate (RLI) character.
+插入從右至左隔離（RLI）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_FSI:
 
@@ -545,7 +545,7 @@ Inserts right-to-left isolate (RLI) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_FSI** = ``24``
 
-Inserts first strong isolate (FSI) character.
+插入第一個強隔離（FSI）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_PDI:
 
@@ -553,7 +553,7 @@ Inserts first strong isolate (FSI) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_PDI** = ``25``
 
-Inserts pop direction isolate (PDI) character.
+插入退出方向隔離（PDI）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_ZWJ:
 
@@ -561,7 +561,7 @@ Inserts pop direction isolate (PDI) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_ZWJ** = ``26``
 
-Inserts zero width joiner (ZWJ) character.
+插入零寬連接子（ZWJ）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_ZWNJ:
 
@@ -569,7 +569,7 @@ Inserts zero width joiner (ZWJ) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_ZWNJ** = ``27``
 
-Inserts zero width non-joiner (ZWNJ) character.
+插入零寬非連接子（ZWNJ）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_WJ:
 
@@ -577,7 +577,7 @@ Inserts zero width non-joiner (ZWNJ) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_WJ** = ``28``
 
-Inserts word joiner (WJ) character.
+插入文字連接子（WJ）字元。
 
 .. _class_LineEdit_constant_MENU_INSERT_SHY:
 
@@ -585,7 +585,7 @@ Inserts word joiner (WJ) character.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_INSERT_SHY** = ``29``
 
-Inserts soft hyphen (SHY) character.
+插入軟連字號（SHY）字元。
 
 .. _class_LineEdit_constant_MENU_EMOJI_AND_SYMBOL:
 
@@ -601,7 +601,7 @@ Opens system emoji and symbol picker.
 
 :ref:`MenuItems<enum_LineEdit_MenuItems>` **MENU_MAX** = ``31``
 
-Represents the size of the :ref:`MenuItems<enum_LineEdit_MenuItems>` enum.
+代表 :ref:`MenuItems<enum_LineEdit_MenuItems>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ enum **VirtualKeyboardType**: :ref:`🔗<enum_LineEdit_VirtualKeyboardType>`
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_DEFAULT** = ``0``
 
-Default text virtual keyboard.
+預設文字虛擬鍵盤。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_MULTILINE:
 
@@ -627,7 +627,7 @@ Default text virtual keyboard.
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_MULTILINE** = ``1``
 
-Multiline virtual keyboard.
+多行虛擬鍵盤。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_NUMBER:
 
@@ -635,7 +635,7 @@ Multiline virtual keyboard.
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_NUMBER** = ``2``
 
-Virtual number keypad, useful for PIN entry.
+虛擬數位鍵盤，可用於 PIN 輸入。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_NUMBER_DECIMAL:
 
@@ -643,7 +643,7 @@ Virtual number keypad, useful for PIN entry.
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_NUMBER_DECIMAL** = ``3``
 
-Virtual number keypad, useful for entering fractional numbers.
+虛擬數位鍵盤，可用於輸入小數。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_PHONE:
 
@@ -651,7 +651,7 @@ Virtual number keypad, useful for entering fractional numbers.
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_PHONE** = ``4``
 
-Virtual phone number keypad.
+虛擬手機號碼鍵盤。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_EMAIL_ADDRESS:
 
@@ -659,7 +659,7 @@ Virtual phone number keypad.
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_EMAIL_ADDRESS** = ``5``
 
-Virtual keyboard with additional keys to assist with typing email addresses.
+帶有附加鍵的虛擬鍵盤，可説明輸入電子郵寄地址。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_PASSWORD:
 
@@ -667,9 +667,9 @@ Virtual keyboard with additional keys to assist with typing email addresses.
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_PASSWORD** = ``6``
 
-Virtual keyboard for entering a password. On most platforms, this should disable autocomplete and autocapitalization.
+用於輸入密碼的虛擬鍵盤。在大多數平臺上，這應該會禁用自動完成和自動首字母大寫功能。
 
-\ **Note:** This is not supported on Web. Instead, this behaves identically to :ref:`KEYBOARD_TYPE_DEFAULT<class_LineEdit_constant_KEYBOARD_TYPE_DEFAULT>`.
+\ **注意：**\ Web 平臺不支援。與 :ref:`KEYBOARD_TYPE_DEFAULT<class_LineEdit_constant_KEYBOARD_TYPE_DEFAULT>` 的行為相同。
 
 .. _class_LineEdit_constant_KEYBOARD_TYPE_URL:
 
@@ -677,7 +677,7 @@ Virtual keyboard for entering a password. On most platforms, this should disable
 
 :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **KEYBOARD_TYPE_URL** = ``7``
 
-Virtual keyboard with additional keys to assist with typing URLs.
+帶有附加鍵的虛擬鍵盤，可説明輸入 URL。
 
 .. rst-class:: classref-item-separator
 
@@ -719,8 +719,8 @@ Scale the right icon to fit the LineEdit.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_LineEdit_property_alignment:
 
@@ -767,7 +767,7 @@ If ``true`` and :ref:`caret_mid_grapheme<class_LineEdit_property_caret_mid_graph
 - |void| **set_caret_blink_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_caret_blink_enabled**\ (\ )
 
-If ``true``, makes the caret blink.
+如果為 ``true``\ ，則文字游標會閃爍。
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ If ``true``, makes the caret blink.
 - |void| **set_caret_blink_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_caret_blink_interval**\ (\ )
 
-The interval at which the caret blinks (in seconds).
+文字游標的閃爍間隔（單位為秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -801,7 +801,7 @@ The interval at which the caret blinks (in seconds).
 - |void| **set_caret_column**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_caret_column**\ (\ )
 
-The caret's column position inside the **LineEdit**. When set, the text may scroll to accommodate it.
+**LineEdit** 中游標的列位置。設定後文字可能會滾動以適應它。
 
 .. rst-class:: classref-item-separator
 
@@ -835,9 +835,9 @@ If ``true``, the **LineEdit** will always show the caret, even if not editing or
 - |void| **set_caret_mid_grapheme_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_caret_mid_grapheme_enabled**\ (\ )
 
-Allow moving caret, selecting and removing the individual composite character components.
+允許在單個複合字元的元件中進行移動游標、選中、刪除的操作。
 
-\ **Note:** :kbd:`Backspace` is always removing individual composite character components.
+\ **注意：**\ 倒退鍵 :kbd:`Backspace` 始終按複合字元的元件刪除。
 
 .. rst-class:: classref-item-separator
 
@@ -854,7 +854,7 @@ Allow moving caret, selecting and removing the individual composite character co
 - |void| **set_clear_button_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_clear_button_enabled**\ (\ )
 
-If ``true``, the **LineEdit** will show a clear button if :ref:`text<class_LineEdit_property_text>` is not empty, which can be used to clear the text quickly.
+如果為 ``true``\ ，\ **LineEdit** 將在 :ref:`text<class_LineEdit_property_text>` 非空時顯示清空按鈕，可以用來快速清除文字。
 
 .. rst-class:: classref-item-separator
 
@@ -871,7 +871,7 @@ If ``true``, the **LineEdit** will show a clear button if :ref:`text<class_LineE
 - |void| **set_context_menu_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_context_menu_enabled**\ (\ )
 
-If ``true``, the context menu will appear when right-clicked.
+如果為 ``true``\ ，按右鍵將出現本文選單。
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +888,7 @@ If ``true``, the context menu will appear when right-clicked.
 - |void| **set_deselect_on_focus_loss_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deselect_on_focus_loss_enabled**\ (\ )
 
-If ``true``, the selected text will be deselected when focus is lost.
+如果為 ``true``\ ，則在丟失焦點時會取消選中文字。
 
 .. rst-class:: classref-item-separator
 
@@ -905,7 +905,7 @@ If ``true``, the selected text will be deselected when focus is lost.
 - |void| **set_drag_and_drop_selection_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_and_drop_selection_enabled**\ (\ )
 
-If ``true``, allow drag and drop of selected text.
+如果為 ``true``\ ，則允許拖放選中的文字。
 
 .. rst-class:: classref-item-separator
 
@@ -922,7 +922,7 @@ If ``true``, allow drag and drop of selected text.
 - |void| **set_draw_control_chars**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_control_chars**\ (\ )
 
-If ``true``, control characters are displayed.
+如果為 ``true``\ ，則會顯示控制字元。
 
 .. rst-class:: classref-item-separator
 
@@ -939,7 +939,7 @@ If ``true``, control characters are displayed.
 - |void| **set_editable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editable**\ (\ )
 
-If ``false``, existing text cannot be modified and new text cannot be added.
+如果為 ``false``\ ，則不能修改現在的文字，也不能新增新文字。
 
 .. rst-class:: classref-item-separator
 
@@ -973,7 +973,7 @@ If ``true``, "Emoji and Symbols" menu is enabled.
 - |void| **set_expand_to_text_length_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_expand_to_text_length_enabled**\ (\ )
 
-If ``true``, the **LineEdit** width will increase to stay longer than the :ref:`text<class_LineEdit_property_text>`. It will **not** compress if the :ref:`text<class_LineEdit_property_text>` is shortened.
+如果為 ``true``\ ，則 **LineEdit** 寬度將增加到比 :ref:`text<class_LineEdit_property_text>` 長。如果 :ref:`text<class_LineEdit_property_text>` 被縮短，它將\ **不**\ 壓縮。
 
 .. rst-class:: classref-item-separator
 
@@ -990,7 +990,7 @@ If ``true``, the **LineEdit** width will increase to stay longer than the :ref:`
 - |void| **set_flat**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flat**\ (\ )
 
-If ``true``, the **LineEdit** doesn't display decoration.
+如果為 ``true``\ ，則 **LineEdit** 不顯示裝飾。
 
 .. rst-class:: classref-item-separator
 
@@ -1104,9 +1104,9 @@ If any input text is truncated, the :ref:`text_change_rejected<class_LineEdit_si
 - |void| **set_middle_mouse_paste_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_middle_mouse_paste_enabled**\ (\ )
 
-If ``false``, using middle mouse button to paste clipboard will be disabled.
+如果為 ``false``\ ，將禁用滑鼠中鍵貼上剪貼板。
 
-\ **Note:** This method is only implemented on Linux.
+\ **注意：**\ 這個方法只在 Linux 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1123,7 +1123,7 @@ If ``false``, using middle mouse button to paste clipboard will be disabled.
 - |void| **set_placeholder**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_placeholder**\ (\ )
 
-Text shown when the **LineEdit** is empty. It is **not** the **LineEdit**'s default value (see :ref:`text<class_LineEdit_property_text>`).
+當 **LineEdit** 為空時顯示的文字。它\ **不是** **LineEdit** 的預設值（見 :ref:`text<class_LineEdit_property_text>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Text shown when the **LineEdit** is empty. It is **not** the **LineEdit**'s defa
 - |void| **set_right_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_right_icon**\ (\ )
 
-Sets the icon that will appear in the right end of the **LineEdit** if there's no :ref:`text<class_LineEdit_property_text>`, or always, if :ref:`clear_button_enabled<class_LineEdit_property_clear_button_enabled>` is set to ``false``.
+設定 **LineEdit** 右端的圖示，這個圖示會在沒有 :ref:`text<class_LineEdit_property_text>` 時出現，如果 :ref:`clear_button_enabled<class_LineEdit_property_clear_button_enabled>` 為 ``false`` 則始終可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1174,7 +1174,7 @@ Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon
 - |void| **set_secret**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_secret**\ (\ )
 
-If ``true``, every character is replaced with the secret character (see :ref:`secret_character<class_LineEdit_property_secret_character>`).
+如果為 ``true``\ ，則每個字元都會被替換成密碼字元（見 :ref:`secret_character<class_LineEdit_property_secret_character>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1208,7 +1208,7 @@ The character to use to mask secret input. Only a single character can be used a
 - |void| **set_select_all_on_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_select_all_on_focus**\ (\ )
 
-If ``true``, the **LineEdit** will select the whole text when it gains focus.
+如果為 ``true``\ ，則在獲得焦點時會全選文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1225,7 +1225,7 @@ If ``true``, the **LineEdit** will select the whole text when it gains focus.
 - |void| **set_selecting_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_selecting_enabled**\ (\ )
 
-If ``false``, it's impossible to select the text using mouse nor keyboard.
+如果為 ``false``\ ，則無法用滑鼠或鍵盤選擇文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1242,7 +1242,7 @@ If ``false``, it's impossible to select the text using mouse nor keyboard.
 - |void| **set_shortcut_keys_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_keys_enabled**\ (\ )
 
-If ``true``, shortcut keys for context menu items are enabled, even if the context menu is disabled.
+為 ``true`` 時，即使本文選單已被禁用，也會啟用該本文選單的快捷鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1259,7 +1259,7 @@ If ``true``, shortcut keys for context menu items are enabled, even if the conte
 - |void| **set_structured_text_bidi_override**\ (\ value\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`\ )
 - :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **get_structured_text_bidi_override**\ (\ )
 
-Set BiDi algorithm override for the structured text.
+為結構化文字設定 BiDi 演算法覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -1276,7 +1276,7 @@ Set BiDi algorithm override for the structured text.
 - |void| **set_structured_text_bidi_override_options**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_structured_text_bidi_override_options**\ (\ )
 
-Set additional options for BiDi override.
+設定 BiDi 覆蓋的附加選項。
 
 .. rst-class:: classref-item-separator
 
@@ -1293,9 +1293,9 @@ Set additional options for BiDi override.
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-String value of the **LineEdit**.
+**LineEdit** 的字串值。
 
-\ **Note:** Changing text using this property won't emit the :ref:`text_changed<class_LineEdit_signal_text_changed>` signal.
+\ **注意：**\ 使用這個屬性更改文字不會觸發 :ref:`text_changed<class_LineEdit_signal_text_changed>` 訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -1312,7 +1312,7 @@ String value of the **LineEdit**.
 - |void| **set_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ )
 
-Base text writing direction.
+基礎文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1363,7 +1363,7 @@ If ``true``, the native virtual keyboard is shown on focus events on platforms t
 - |void| **set_virtual_keyboard_type**\ (\ value\: :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>`\ )
 - :ref:`VirtualKeyboardType<enum_LineEdit_VirtualKeyboardType>` **get_virtual_keyboard_type**\ (\ )
 
-Specifies the type of virtual keyboard to show.
+指定要顯示的虛擬鍵盤的型別。
 
 .. rst-class:: classref-section-separator
 
@@ -1371,8 +1371,8 @@ Specifies the type of virtual keyboard to show.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_LineEdit_method_apply_ime:
 
@@ -1404,7 +1404,7 @@ Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ 
 
 |void| **clear**\ (\ ) :ref:`🔗<class_LineEdit_method_clear>`
 
-Erases the **LineEdit**'s :ref:`text<class_LineEdit_property_text>`.
+擦除 **LineEdit** 的 :ref:`text<class_LineEdit_property_text>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1416,7 +1416,7 @@ Erases the **LineEdit**'s :ref:`text<class_LineEdit_property_text>`.
 
 |void| **delete_char_at_caret**\ (\ ) :ref:`🔗<class_LineEdit_method_delete_char_at_caret>`
 
-Deletes one character at the caret's current position (equivalent to pressing :kbd:`Delete`).
+刪除游標目前位置處的一個字元（相當於按 :kbd:`Delete`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ Deletes one character at the caret's current position (equivalent to pressing :k
 
 |void| **delete_text**\ (\ from_column\: :ref:`int<class_int>`, to_column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LineEdit_method_delete_text>`
 
-Deletes a section of the :ref:`text<class_LineEdit_property_text>` going from position ``from_column`` to ``to_column``. Both parameters should be within the text's length.
+刪除 :ref:`text<class_LineEdit_property_text>` 中從起始列 ``from_column`` 到結束列 ``to_column`` 的部分。兩個參數都應該在文字的長度之內。
 
 .. rst-class:: classref-item-separator
 
@@ -1440,7 +1440,7 @@ Deletes a section of the :ref:`text<class_LineEdit_property_text>` going from po
 
 |void| **deselect**\ (\ ) :ref:`🔗<class_LineEdit_method_deselect>`
 
-Clears the current selection.
+清除目前選擇。
 
 .. rst-class:: classref-item-separator
 
@@ -1466,9 +1466,9 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`PopupMenu<class_PopupMenu>` **get_menu**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_get_menu>`
 
-Returns the :ref:`PopupMenu<class_PopupMenu>` of this **LineEdit**. By default, this menu is displayed when right-clicking on the **LineEdit**.
+返回該 **LineEdit** 的 :ref:`PopupMenu<class_PopupMenu>`\ 。預設情況下，右鍵點擊 **LineEdit** 會顯示該菜單。
 
-You can add custom menu items or remove standard ones. Make sure your IDs don't conflict with the standard ones (see :ref:`MenuItems<enum_LineEdit_MenuItems>`). For example:
+可以新增自訂功能表專案或移除標準功能表專案。確保你的 ID 不與標準 ID 衝突（請參閱 :ref:`MenuItems<enum_LineEdit_MenuItems>`\ ）。例如：
 
 
 .. tabs::
@@ -1477,12 +1477,12 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
     func _ready():
         var menu = get_menu()
-        # Remove all items after "Redo".
+        # 在“重做”之後移除所有專案。
         menu.item_count = menu.get_item_index(MENU_REDO) + 1
-        # Add custom items.
+        # 新增自訂專案。
         menu.add_separator()
         menu.add_item("Insert Date", MENU_MAX + 1)
-        # Connect callback.
+        # 連接回呼函式。
         menu.id_pressed.connect(_on_item_pressed)
 
     func _on_item_pressed(id):
@@ -1494,12 +1494,12 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
     public override void _Ready()
     {
         var menu = GetMenu();
-        // Remove all items after "Redo".
+        // 在“重做”之後移除所有專案。
         menu.ItemCount = menu.GetItemIndex(LineEdit.MenuItems.Redo) + 1;
-        // Add custom items.
+        // 新增自訂專案。
         menu.AddSeparator();
         menu.AddItem("Insert Date", LineEdit.MenuItems.Max + 1);
-        // Add event handler.
+        // 新增事件處理器。
         menu.IdPressed += OnItemPressed;
     }
 
@@ -1513,7 +1513,7 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`Window.visible<class_Window_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，移除和釋放它可能會導致當機。如果希望隱藏它或它的任何子節點，請使用它們的 :ref:`Window.visible<class_Window_property_visible>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -1553,7 +1553,7 @@ Returns the correct column at the start of a composite character like ❤️‍�
 
 :ref:`float<class_float>` **get_scroll_offset**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_get_scroll_offset>`
 
-Returns the scroll offset due to :ref:`caret_column<class_LineEdit_property_caret_column>`, as a number of characters.
+返回 :ref:`caret_column<class_LineEdit_property_caret_column>` 引起的滾動偏移量，單位為字元數。
 
 .. rst-class:: classref-item-separator
 
@@ -1565,7 +1565,7 @@ Returns the scroll offset due to :ref:`caret_column<class_LineEdit_property_care
 
 :ref:`String<class_String>` **get_selected_text**\ (\ ) :ref:`🔗<class_LineEdit_method_get_selected_text>`
 
-Returns the text inside the selection.
+返回選擇內的文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1577,7 +1577,7 @@ Returns the text inside the selection.
 
 :ref:`int<class_int>` **get_selection_from_column**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_get_selection_from_column>`
 
-Returns the selection begin column.
+返回選擇的開始列。
 
 .. rst-class:: classref-item-separator
 
@@ -1589,7 +1589,7 @@ Returns the selection begin column.
 
 :ref:`int<class_int>` **get_selection_to_column**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_get_selection_to_column>`
 
-Returns the selection end column.
+返回選擇結束列。
 
 .. rst-class:: classref-item-separator
 
@@ -1613,7 +1613,7 @@ Returns ``true`` if the user has text in the `Input Method Editor <https://en.wi
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_redo>`
 
-Returns ``true`` if a "redo" action is available.
+有“重做”動作可用時返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1625,7 +1625,7 @@ Returns ``true`` if a "redo" action is available.
 
 :ref:`bool<class_bool>` **has_selection**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_selection>`
 
-Returns ``true`` if the user has selected text.
+如果使用者選中了文字，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1637,7 +1637,7 @@ Returns ``true`` if the user has selected text.
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_undo>`
 
-Returns ``true`` if an "undo" action is available.
+有“撤銷”動作可用時返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1649,7 +1649,7 @@ Returns ``true`` if an "undo" action is available.
 
 |void| **insert_text_at_caret**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LineEdit_method_insert_text_at_caret>`
 
-Inserts ``text`` at the caret. If the resulting value is longer than :ref:`max_length<class_LineEdit_property_max_length>`, nothing happens.
+在游標處插入文字 ``text``\ 。如果最終值比 :ref:`max_length<class_LineEdit_property_max_length>` 長，則不會發生任何事情。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ Returns whether the **LineEdit** is being edited.
 
 :ref:`bool<class_bool>` **is_menu_visible**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_is_menu_visible>`
 
-Returns whether the menu is visible. Use this instead of ``get_menu().visible`` to improve performance (so the creation of the menu is avoided).
+返回選單是否可見。請使用這個方法來代替 ``get_menu().visible``\ ，可以提高性能（因為避免了選單的建立）。
 
 .. rst-class:: classref-item-separator
 
@@ -1685,7 +1685,7 @@ Returns whether the menu is visible. Use this instead of ``get_menu().visible`` 
 
 |void| **menu_option**\ (\ option\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LineEdit_method_menu_option>`
 
-Executes a given action as defined in the :ref:`MenuItems<enum_LineEdit_MenuItems>` enum.
+執行 :ref:`MenuItems<enum_LineEdit_MenuItems>` 列舉中定義的給定操作。
 
 .. rst-class:: classref-item-separator
 
@@ -1697,7 +1697,7 @@ Executes a given action as defined in the :ref:`MenuItems<enum_LineEdit_MenuItem
 
 |void| **select**\ (\ from\: :ref:`int<class_int>` = 0, to\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_LineEdit_method_select>`
 
-Selects characters inside **LineEdit** between ``from`` and ``to``. By default, ``from`` is at the beginning and ``to`` at the end.
+選擇 **LineEdit** 內介於 ``from`` 和 ``to`` 之間的字元。預設情況下，\ ``from`` 位於開頭，\ ``to`` 位於結尾。
 
 
 .. tabs::
@@ -1705,16 +1705,16 @@ Selects characters inside **LineEdit** between ``from`` and ``to``. By default, 
  .. code-tab:: gdscript
 
     text = "Welcome"
-    select() # Will select "Welcome".
-    select(4) # Will select "ome".
-    select(2, 5) # Will select "lco".
+    select() # 將選擇“Welcome”。
+    select(4) # 將選擇“ome”。
+    select(2, 5) # 將選擇“lco”。
 
  .. code-tab:: csharp
 
     Text = "Welcome";
-    Select(); // Will select "Welcome".
-    Select(4); // Will select "ome".
-    Select(2, 5); // Will select "lco".
+    Select(); // 將選擇“Welcome”。
+    Select(4); // 將選擇“ome”。
+    Select(2, 5); // 將選擇“lco”。
 
 
 
@@ -1728,7 +1728,7 @@ Selects characters inside **LineEdit** between ``from`` and ``to``. By default, 
 
 |void| **select_all**\ (\ ) :ref:`🔗<class_LineEdit_method_select_all>`
 
-Selects the whole :ref:`String<class_String>`.
+選中整個 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1748,8 +1748,8 @@ Allows exiting edit mode while preserving focus.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_LineEdit_theme_color_caret_color:
 
@@ -1757,7 +1757,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **caret_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_LineEdit_theme_color_caret_color>`
 
-Color of the **LineEdit**'s caret (text cursor). This can be set to a fully transparent color to hide the caret entirely.
+**LineEdit** 的插入符號（文字游標）的顏色。可以設定為完全透明的顏色，從而完全隱藏游標。
 
 .. rst-class:: classref-item-separator
 
@@ -1769,7 +1769,7 @@ Color of the **LineEdit**'s caret (text cursor). This can be set to a fully tran
 
 :ref:`Color<class_Color>` **clear_button_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_LineEdit_theme_color_clear_button_color>`
 
-Color used as default tint for the clear button.
+用作清除按鈕預設色調的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1781,7 +1781,7 @@ Color used as default tint for the clear button.
 
 :ref:`Color<class_Color>` **clear_button_color_pressed** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_LineEdit_theme_color_clear_button_color_pressed>`
 
-Color used for the clear button when it's pressed.
+按下清除按鈕時使用的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1793,7 +1793,7 @@ Color used for the clear button when it's pressed.
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_LineEdit_theme_color_font_color>`
 
-Default font color.
+預設字形顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1805,7 +1805,7 @@ Default font color.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LineEdit_theme_color_font_outline_color>`
 
-The tint of text outline of the **LineEdit**.
+**LineEdit** 文字輪廓的色調。
 
 .. rst-class:: classref-item-separator
 
@@ -1817,7 +1817,7 @@ The tint of text outline of the **LineEdit**.
 
 :ref:`Color<class_Color>` **font_placeholder_color** = ``Color(0.875, 0.875, 0.875, 0.6)`` :ref:`🔗<class_LineEdit_theme_color_font_placeholder_color>`
 
-Font color for :ref:`placeholder_text<class_LineEdit_property_placeholder_text>`.
+:ref:`placeholder_text<class_LineEdit_property_placeholder_text>` 的字形顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1829,7 +1829,7 @@ Font color for :ref:`placeholder_text<class_LineEdit_property_placeholder_text>`
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_LineEdit_theme_color_font_selected_color>`
 
-Font color for selected text (inside the selection rectangle).
+選定文字的字形顏色（在選擇矩形內）。
 
 .. rst-class:: classref-item-separator
 
@@ -1841,7 +1841,7 @@ Font color for selected text (inside the selection rectangle).
 
 :ref:`Color<class_Color>` **font_uneditable_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_LineEdit_theme_color_font_uneditable_color>`
 
-Font color when editing is disabled.
+禁用編輯時的字形顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1853,7 +1853,7 @@ Font color when editing is disabled.
 
 :ref:`Color<class_Color>` **selection_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_LineEdit_theme_color_selection_color>`
 
-Color of the selection rectangle.
+選擇矩形的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1865,7 +1865,7 @@ Color of the selection rectangle.
 
 :ref:`int<class_int>` **caret_width** = ``1`` :ref:`🔗<class_LineEdit_theme_constant_caret_width>`
 
-The caret's width in pixels. Greater values can be used to improve accessibility by ensuring the caret is easily visible, or to ensure consistency with a large font size.
+文字游標的圖元寬度。使用較大的數值可以提高可存取性，使文字游標更加顯眼，或者確保文字與較大字形尺寸的一致性。
 
 .. rst-class:: classref-item-separator
 
@@ -1877,7 +1877,7 @@ The caret's width in pixels. Greater values can be used to improve accessibility
 
 :ref:`int<class_int>` **minimum_character_width** = ``4`` :ref:`🔗<class_LineEdit_theme_constant_minimum_character_width>`
 
-Minimum horizontal space for the text (not counting the clear button and content margins). This value is measured in count of 'M' characters (i.e. this number of 'M' characters can be displayed without scrolling).
+文字的最小水平空間（不包括清除按鈕和內容邊距）。這個值以“M”字元的數量來衡量（即能夠在不滾動的情況下顯示這麼多個“M”字元）。
 
 .. rst-class:: classref-item-separator
 
@@ -1889,9 +1889,9 @@ Minimum horizontal space for the text (not counting the clear button and content
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_LineEdit_theme_constant_outline_size>`
 
-The size of the text outline.
+文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -1903,7 +1903,7 @@ The size of the text outline.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_LineEdit_theme_font_font>`
 
-Font used for the text.
+文字使用的字形。
 
 .. rst-class:: classref-item-separator
 
@@ -1915,7 +1915,7 @@ Font used for the text.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_LineEdit_theme_font_size_font_size>`
 
-Font size of the **LineEdit**'s text.
+該 **LineEdit** 文字的字形大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1927,7 +1927,7 @@ Font size of the **LineEdit**'s text.
 
 :ref:`Texture2D<class_Texture2D>` **clear** :ref:`🔗<class_LineEdit_theme_icon_clear>`
 
-Texture for the clear button. See :ref:`clear_button_enabled<class_LineEdit_property_clear_button_enabled>`.
+“清除”按鈕的紋理。見 :ref:`clear_button_enabled<class_LineEdit_property_clear_button_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ Texture for the clear button. See :ref:`clear_button_enabled<class_LineEdit_prop
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_LineEdit_theme_style_focus>`
 
-Background used when **LineEdit** has GUI focus. The :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+**LineEdit** 擁有 GUI 焦點時使用的背景。\ :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 顯示在基礎 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以應該使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，確保基礎 :ref:`StyleBox<class_StyleBox>` 仍然可見。代表輪廓或底線的 :ref:`StyleBox<class_StyleBox>` 可以很好地實作這個目的。要禁用聚焦的視覺效果，請指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 資源。請注意，禁用聚焦的視覺效果會影響使用鍵盤/手柄進行導覽的可用性，所以出於可存取性的原因，不建議這樣做。
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +1951,7 @@ Background used when **LineEdit** has GUI focus. The :ref:`focus<class_LineEdit_
 
 :ref:`StyleBox<class_StyleBox>` **normal** :ref:`🔗<class_LineEdit_theme_style_normal>`
 
-Default background for the **LineEdit**.
+該 **LineEdit** 的預設背景。
 
 .. rst-class:: classref-item-separator
 
@@ -1963,14 +1963,14 @@ Default background for the **LineEdit**.
 
 :ref:`StyleBox<class_StyleBox>` **read_only** :ref:`🔗<class_LineEdit_theme_style_read_only>`
 
-Background used when **LineEdit** is in read-only mode (:ref:`editable<class_LineEdit_property_editable>` is set to ``false``).
+該 **LineEdit** 處於唯讀模式時使用的背景（\ :ref:`editable<class_LineEdit_property_editable>` 為 ``false``\ ）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

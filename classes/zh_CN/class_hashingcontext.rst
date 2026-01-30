@@ -5,18 +5,18 @@
 HashingContext
 ==============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides functionality for computing cryptographic hashes chunk by chunk.
+提供分段计算加密哈希的功能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-The HashingContext class provides an interface for computing cryptographic hashes over multiple iterations. Useful for computing hashes of big files (so you don't have to load them all in memory), network streams, and data streams in general (so you don't have to hold buffers).
+HashingContext 类提供了一个接口，用于在多次迭代中计算加密哈希值。常用于计算大文件（不必全部加载到内存中）、网络流和一般数据流（不必持有缓冲区）的哈希值。
 
-The :ref:`HashType<enum_HashingContext_HashType>` enum shows the supported hashing algorithms.
+\ :ref:`HashType<enum_HashingContext_HashType>` 枚举显示了支持的哈希算法。
 
 
 .. tabs::
@@ -26,21 +26,21 @@ The :ref:`HashType<enum_HashingContext_HashType>` enum shows the supported hashi
     const CHUNK_SIZE = 1024
 
     func hash_file(path):
-        # Check that file exists.
+        # 检查文件是否存在。
         if not FileAccess.file_exists(path):
             return
-        # Start an SHA-256 context.
+        # 启动一个 SHA-256 上下文。
         var ctx = HashingContext.new()
         ctx.start(HashingContext.HASH_SHA256)
-        # Open the file to hash.
+        # 打开文件进行哈希处理。
         var file = FileAccess.open(path, FileAccess.READ)
-        # Update the context after reading each chunk.
+        # 读取每个块后更新上下文。
         while file.get_position() < file.get_length():
             var remaining = file.get_length() - file.get_position()
             ctx.update(file.get_buffer(min(remaining, CHUNK_SIZE)))
-        # Get the computed hash.
+        # 获取计算的哈希值。
         var res = ctx.finish()
-        # Print the result as hex string and array.
+        # 将结果打印为十六进制字符串和数组。
         printt(res.hex_encode(), Array(res))
 
  .. code-tab:: csharp
@@ -49,25 +49,25 @@ The :ref:`HashType<enum_HashingContext_HashType>` enum shows the supported hashi
 
     public void HashFile(string path)
     {
-        // Check that file exists.
+        // 检查文件是否存在。
         if (!FileAccess.FileExists(path))
         {
             return;
         }
-        // Start an SHA-256 context.
+        // 启动一个 SHA-256 上下文。
         var ctx = new HashingContext();
         ctx.Start(HashingContext.HashType.Sha256);
-        // Open the file to hash.
+        // 打开文件进行哈希处理。
         using var file = FileAccess.Open(path, FileAccess.ModeFlags.Read);
-        // Update the context after reading each chunk.
+        // 读取每个块后更新上下文。
         while (file.GetPosition() < file.GetLength())
         {
             int remaining = (int)(file.GetLength() - file.GetPosition());
             ctx.Update(file.GetBuffer(Mathf.Min(remaining, ChunkSize)));
         }
-        // Get the computed hash.
+        // 获取计算的哈希值。
         byte[] res = ctx.Finish();
-        // Print the result as hex string and array.
+        // 将结果打印为十六进制字符串和数组。
         GD.PrintT(res.HexEncode(), (Variant)res);
     }
 
@@ -75,8 +75,8 @@ The :ref:`HashType<enum_HashingContext_HashType>` enum shows the supported hashi
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -95,8 +95,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_HashingContext_HashType:
 
@@ -110,7 +110,7 @@ enum **HashType**: :ref:`🔗<enum_HashingContext_HashType>`
 
 :ref:`HashType<enum_HashingContext_HashType>` **HASH_MD5** = ``0``
 
-Hashing algorithm: MD5.
+哈希算法：MD5。
 
 .. _class_HashingContext_constant_HASH_SHA1:
 
@@ -118,7 +118,7 @@ Hashing algorithm: MD5.
 
 :ref:`HashType<enum_HashingContext_HashType>` **HASH_SHA1** = ``1``
 
-Hashing algorithm: SHA-1.
+哈希算法：SHA-1。
 
 .. _class_HashingContext_constant_HASH_SHA256:
 
@@ -126,7 +126,7 @@ Hashing algorithm: SHA-1.
 
 :ref:`HashType<enum_HashingContext_HashType>` **HASH_SHA256** = ``2``
 
-Hashing algorithm: SHA-256.
+哈希算法：SHA-256。
 
 .. rst-class:: classref-section-separator
 
@@ -134,8 +134,8 @@ Hashing algorithm: SHA-256.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_HashingContext_method_finish:
 
@@ -143,7 +143,7 @@ Method Descriptions
 
 :ref:`PackedByteArray<class_PackedByteArray>` **finish**\ (\ ) :ref:`🔗<class_HashingContext_method_finish>`
 
-Closes the current context, and return the computed hash.
+关闭当前上下文，并返回计算出的哈希值。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Closes the current context, and return the computed hash.
 
 :ref:`Error<enum_@GlobalScope_Error>` **start**\ (\ type\: :ref:`HashType<enum_HashingContext_HashType>`\ ) :ref:`🔗<class_HashingContext_method_start>`
 
-Starts a new hash computation of the given ``type`` (e.g. :ref:`HASH_SHA256<class_HashingContext_constant_HASH_SHA256>` to start computation of an SHA-256).
+开始对给定类型 ``type`` 的哈希计算（例如 :ref:`HASH_SHA256<class_HashingContext_constant_HASH_SHA256>` 会开始计算 SHA-256）。
 
 .. rst-class:: classref-item-separator
 
@@ -167,14 +167,14 @@ Starts a new hash computation of the given ``type`` (e.g. :ref:`HASH_SHA256<clas
 
 :ref:`Error<enum_@GlobalScope_Error>` **update**\ (\ chunk\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HashingContext_method_update>`
 
-Updates the computation with the given ``chunk`` of data.
+使用给定的数据块 ``chunk`` 更新计算。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

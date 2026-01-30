@@ -5,37 +5,37 @@
 PhysicsServer3D
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`PhysicsServer3DExtension<class_PhysicsServer3DExtension>`
+**被繼承：** :ref:`PhysicsServer3DExtension<class_PhysicsServer3DExtension>`
 
-A server interface for low-level 3D physics access.
+用於存取低階 3D 物理的伺服器介面。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-PhysicsServer3D is the server responsible for all 3D physics. It can directly create and manipulate all physics objects:
+PhysicsServer3D 是負責所有 3D 物理的伺服器。它可以直接建立和操作所有物理對象：
 
-- A *space* is a self-contained world for a physics simulation. It contains bodies, areas, and joints. Its state can be queried for collision and intersection information, and several parameters of the simulation can be modified.
+- *Space（空間）*\ 是用於物理模擬的自包含世界。它包含實體、區域和關節。可以對其狀態進行查詢，獲取碰撞和相交資訊，並且可以修改部分模擬參數。
 
-- A *shape* is a geometric shape such as a sphere, a box, a cylinder, or a polygon. It can be used for collision detection by adding it to a body/area, possibly with an extra transformation relative to the body/area's origin. Bodies/areas can have multiple (transformed) shapes added to them, and a single shape can be added to bodies/areas multiple times with different local transformations.
+- *Shape（形狀）*\ 是球形、盒形、圓柱形、多邊形等幾何形狀。加入到實體/區域中就可以用來進行碰撞偵測，還可以帶有相對於實體/區域原點的額外變換。實體/區域中可以新增多個（變換後的）形狀，同一個形狀可以使用不同的局部變換新增到實體/區域中。
 
-- A *body* is a physical object which can be in static, kinematic, or rigid mode. Its state (such as position and velocity) can be queried and updated. A force integration callback can be set to customize the body's physics.
+- *Body（實體）*\ 是物理物件，可以處於靜態、運動學或剛性模式。可以對其狀態進行查詢和更新（例如位置、速度等）。可以設定力的集成回呼函式，自訂實體的物理特性。
 
-- An *area* is a region in space which can be used to detect bodies and areas entering and exiting it. A body monitoring callback can be set to report entering/exiting body shapes, and similarly an area monitoring callback can be set. Gravity and damping can be overridden within the area by setting area parameters.
+- *Area（區域）*\ 是空間中的區塊，可用於偵測進入和離開它的實體和區域。可以設定實體的監視回呼函式，報告進入/離開的實體形狀，同樣可以設定區域的監視回呼函式。通過設定區域參數，可以在區域內覆蓋重力和阻尼。
 
-- A *joint* is a constraint, either between two bodies or on one body relative to a point. Parameters such as the joint bias and the rest length of a spring joint can be adjusted.
+- *Joint（關節）*\ 是兩個實體之間或一個實體相對於某個點的約束。可以調整關節偏置和彈簧關節的放鬆長度等參數。
 
-Physics objects in **PhysicsServer3D** may be created and manipulated independently; they do not have to be tied to nodes in the scene tree.
+\ **PhysicsServer3D** 中的物理物件可以獨立建立和操作；不必將它們綁定到場景樹中的節點。
 
-\ **Note:** All the 3D physics nodes use the physics server internally. Adding a physics node to the scene tree will cause a corresponding physics object to be created in the physics server. A rigid body node registers a callback that updates the node's transform with the transform of the respective body object in the physics server (every physics update). An area node registers a callback to inform the area node about overlaps with the respective area object in the physics server. The raycast node queries the direct state of the relevant space in the physics server.
+\ **注意：**\ 所有 3D 物理節點都在內部使用這個物理伺服器。將物理節點新增到場景樹，就會導致在物理伺服器中建立相應的物理物件。剛體節點會註冊回呼函式，該回呼函式會（在每次物理更新時）使用物理伺服器中相應實體物件的變換更新該節點的變換。區域節點會註冊回呼函式，用來通知區域節點與物理伺服器中相應區域物件的重疊。射線投射節點會查詢物理伺服器中相關空間的直接狀態。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -398,8 +398,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_PhysicsServer3D_JointType:
 
@@ -413,7 +413,7 @@ enum **JointType**: :ref:`🔗<enum_PhysicsServer3D_JointType>`
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **JOINT_TYPE_PIN** = ``0``
 
-The :ref:`Joint3D<class_Joint3D>` is a :ref:`PinJoint3D<class_PinJoint3D>`.
+該 :ref:`Joint3D<class_Joint3D>` 為 :ref:`PinJoint3D<class_PinJoint3D>`\ 。
 
 .. _class_PhysicsServer3D_constant_JOINT_TYPE_HINGE:
 
@@ -421,7 +421,7 @@ The :ref:`Joint3D<class_Joint3D>` is a :ref:`PinJoint3D<class_PinJoint3D>`.
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **JOINT_TYPE_HINGE** = ``1``
 
-The :ref:`Joint3D<class_Joint3D>` is a :ref:`HingeJoint3D<class_HingeJoint3D>`.
+該 :ref:`Joint3D<class_Joint3D>` 為 :ref:`HingeJoint3D<class_HingeJoint3D>`\ 。
 
 .. _class_PhysicsServer3D_constant_JOINT_TYPE_SLIDER:
 
@@ -429,7 +429,7 @@ The :ref:`Joint3D<class_Joint3D>` is a :ref:`HingeJoint3D<class_HingeJoint3D>`.
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **JOINT_TYPE_SLIDER** = ``2``
 
-The :ref:`Joint3D<class_Joint3D>` is a :ref:`SliderJoint3D<class_SliderJoint3D>`.
+該 :ref:`Joint3D<class_Joint3D>` 為 :ref:`SliderJoint3D<class_SliderJoint3D>`\ 。
 
 .. _class_PhysicsServer3D_constant_JOINT_TYPE_CONE_TWIST:
 
@@ -437,7 +437,7 @@ The :ref:`Joint3D<class_Joint3D>` is a :ref:`SliderJoint3D<class_SliderJoint3D>`
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **JOINT_TYPE_CONE_TWIST** = ``3``
 
-The :ref:`Joint3D<class_Joint3D>` is a :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`.
+該 :ref:`Joint3D<class_Joint3D>` 為 :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`\ 。
 
 .. _class_PhysicsServer3D_constant_JOINT_TYPE_6DOF:
 
@@ -445,7 +445,7 @@ The :ref:`Joint3D<class_Joint3D>` is a :ref:`ConeTwistJoint3D<class_ConeTwistJoi
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **JOINT_TYPE_6DOF** = ``4``
 
-The :ref:`Joint3D<class_Joint3D>` is a :ref:`Generic6DOFJoint3D<class_Generic6DOFJoint3D>`.
+該 :ref:`Joint3D<class_Joint3D>` 為 :ref:`Generic6DOFJoint3D<class_Generic6DOFJoint3D>`\ 。
 
 .. _class_PhysicsServer3D_constant_JOINT_TYPE_MAX:
 
@@ -453,7 +453,7 @@ The :ref:`Joint3D<class_Joint3D>` is a :ref:`Generic6DOFJoint3D<class_Generic6DO
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **JOINT_TYPE_MAX** = ``5``
 
-Represents the size of the :ref:`JointType<enum_PhysicsServer3D_JointType>` enum.
+代表 :ref:`JointType<enum_PhysicsServer3D_JointType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -471,9 +471,9 @@ enum **PinJointParam**: :ref:`🔗<enum_PhysicsServer3D_PinJointParam>`
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_BIAS** = ``0``
 
-The strength with which the pinned objects try to stay in positional relation to each other.
+固定物件試圖保持彼此位置關係的力度。
 
-The higher, the stronger.
+越高越強。
 
 .. _class_PhysicsServer3D_constant_PIN_JOINT_DAMPING:
 
@@ -481,9 +481,9 @@ The higher, the stronger.
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_DAMPING** = ``1``
 
-The strength with which the pinned objects try to stay in velocity relation to each other.
+被固定的物體試圖保持彼此速度關係的力度。
 
-The higher, the stronger.
+越高越強。
 
 .. _class_PhysicsServer3D_constant_PIN_JOINT_IMPULSE_CLAMP:
 
@@ -491,7 +491,7 @@ The higher, the stronger.
 
 :ref:`PinJointParam<enum_PhysicsServer3D_PinJointParam>` **PIN_JOINT_IMPULSE_CLAMP** = ``2``
 
-If above 0, this value is the maximum value for an impulse that this Joint3D puts on its ends.
+如果高於 0，則此值是此 Joint3D 施加在其末端的脈衝的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +509,7 @@ enum **HingeJointParam**: :ref:`🔗<enum_PhysicsServer3D_HingeJointParam>`
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_BIAS** = ``0``
 
-The speed with which the two bodies get pulled together when they move in different directions.
+兩個物體向不同方向移動時被拉回到一起的速度。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_UPPER:
 
@@ -517,7 +517,7 @@ The speed with which the two bodies get pulled together when they move in differ
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_UPPER** = ``1``
 
-The maximum rotation across the Hinge.
+鉸鏈上的最大旋轉。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_LOWER:
 
@@ -525,7 +525,7 @@ The maximum rotation across the Hinge.
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_LOWER** = ``2``
 
-The minimum rotation across the Hinge.
+鉸鏈上的最小旋轉。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_BIAS:
 
@@ -533,7 +533,7 @@ The minimum rotation across the Hinge.
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_BIAS** = ``3``
 
-The speed with which the rotation across the axis perpendicular to the hinge gets corrected.
+垂直於鉸鏈的軸線上的旋轉得到糾正的速度。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_LIMIT_SOFTNESS:
 
@@ -553,7 +553,7 @@ The speed with which the rotation across the axis perpendicular to the hinge get
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_LIMIT_RELAXATION** = ``5``
 
-The lower this value, the more the rotation gets slowed down.
+該值越低，旋轉速度越慢。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_MOTOR_TARGET_VELOCITY:
 
@@ -561,7 +561,7 @@ The lower this value, the more the rotation gets slowed down.
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_MOTOR_TARGET_VELOCITY** = ``6``
 
-Target speed for the motor.
+目標馬達的目標速度。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_MOTOR_MAX_IMPULSE:
 
@@ -569,7 +569,7 @@ Target speed for the motor.
 
 :ref:`HingeJointParam<enum_PhysicsServer3D_HingeJointParam>` **HINGE_JOINT_MOTOR_MAX_IMPULSE** = ``7``
 
-Maximum acceleration for the motor.
+馬達的最大加速度。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ enum **HingeJointFlag**: :ref:`🔗<enum_PhysicsServer3D_HingeJointFlag>`
 
 :ref:`HingeJointFlag<enum_PhysicsServer3D_HingeJointFlag>` **HINGE_JOINT_FLAG_USE_LIMIT** = ``0``
 
-If ``true``, the Hinge has a maximum and a minimum rotation.
+如果為 ``true``\ ，鉸鏈具有最大和最小旋轉。
 
 .. _class_PhysicsServer3D_constant_HINGE_JOINT_FLAG_ENABLE_MOTOR:
 
@@ -595,7 +595,7 @@ If ``true``, the Hinge has a maximum and a minimum rotation.
 
 :ref:`HingeJointFlag<enum_PhysicsServer3D_HingeJointFlag>` **HINGE_JOINT_FLAG_ENABLE_MOTOR** = ``1``
 
-If ``true``, a motor turns the Hinge.
+如果為 ``true``\ ，則馬達將轉動鉸鏈。
 
 .. rst-class:: classref-item-separator
 
@@ -613,7 +613,7 @@ enum **SliderJointParam**: :ref:`🔗<enum_PhysicsServer3D_SliderJointParam>`
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_UPPER** = ``0``
 
-The maximum difference between the pivot points on their X axis before damping happens.
+阻尼發生前軸心點之間在 X 軸上的最大差異。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_LOWER:
 
@@ -621,7 +621,7 @@ The maximum difference between the pivot points on their X axis before damping h
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_LOWER** = ``1``
 
-The minimum difference between the pivot points on their X axis before damping happens.
+阻尼發生前軸心點之間在 X 軸上的最小差異。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_SOFTNESS:
 
@@ -629,7 +629,7 @@ The minimum difference between the pivot points on their X axis before damping h
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-A factor applied to the movement across the slider axis once the limits get surpassed. The lower, the slower the movement.
+一旦超過極限，套用於滑桿軸上移動的係數。越低，運動越慢。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_RESTITUTION:
 
@@ -637,7 +637,7 @@ A factor applied to the movement across the slider axis once the limits get surp
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_RESTITUTION** = ``3``
 
-The amount of restitution once the limits are surpassed. The lower, the more velocity-energy gets lost.
+超出限制後的補償。數值越低，損失的速度能量越多。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_LIMIT_DAMPING:
 
@@ -645,7 +645,7 @@ The amount of restitution once the limits are surpassed. The lower, the more vel
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_LIMIT_DAMPING** = ``4``
 
-The amount of damping once the slider limits are surpassed.
+一旦超過滑桿的極限，阻尼的數量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_SOFTNESS:
 
@@ -653,7 +653,7 @@ The amount of damping once the slider limits are surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_SOFTNESS** = ``5``
 
-A factor applied to the movement across the slider axis as long as the slider is in the limits. The lower, the slower the movement.
+只要滑桿在限制範圍內，就套用於滑桿軸上移動的係數。越低，運動越慢。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_RESTITUTION:
 
@@ -661,7 +661,7 @@ A factor applied to the movement across the slider axis as long as the slider is
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_RESTITUTION** = ``6``
 
-The amount of restitution inside the slider limits.
+滑桿限制內的恢復量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_MOTION_DAMPING:
 
@@ -669,7 +669,7 @@ The amount of restitution inside the slider limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_MOTION_DAMPING** = ``7``
 
-The amount of damping inside the slider limits.
+滑桿內部的阻尼量受到限制。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_SOFTNESS:
 
@@ -677,7 +677,7 @@ The amount of damping inside the slider limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_SOFTNESS** = ``8``
 
-A factor applied to the movement across axes orthogonal to the slider.
+套用於在垂直於滑桿的軸上移動的係數。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_RESTITUTION:
 
@@ -685,7 +685,7 @@ A factor applied to the movement across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_RESTITUTION** = ``9``
 
-The amount of restitution when movement is across axes orthogonal to the slider.
+當移動穿過垂直於滑桿的軸時的恢復量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_LINEAR_ORTHOGONAL_DAMPING:
 
@@ -693,7 +693,7 @@ The amount of restitution when movement is across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_LINEAR_ORTHOGONAL_DAMPING** = ``10``
 
-The amount of damping when movement is across axes orthogonal to the slider.
+當移動穿過垂直於滑桿的軸時的阻尼量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_UPPER:
 
@@ -701,7 +701,7 @@ The amount of damping when movement is across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_UPPER** = ``11``
 
-The upper limit of rotation in the slider.
+滑桿旋轉的上限。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_LOWER:
 
@@ -709,7 +709,7 @@ The upper limit of rotation in the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_LOWER** = ``12``
 
-The lower limit of rotation in the slider.
+滑桿旋轉的下限。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_SOFTNESS:
 
@@ -717,7 +717,7 @@ The lower limit of rotation in the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_SOFTNESS** = ``13``
 
-A factor applied to the all rotation once the limit is surpassed.
+一旦超過極限，套用於所有旋轉的係數。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_RESTITUTION:
 
@@ -725,7 +725,7 @@ A factor applied to the all rotation once the limit is surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_RESTITUTION** = ``14``
 
-The amount of restitution of the rotation when the limit is surpassed.
+超過限制時旋轉的恢復量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_LIMIT_DAMPING:
 
@@ -733,7 +733,7 @@ The amount of restitution of the rotation when the limit is surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_LIMIT_DAMPING** = ``15``
 
-The amount of damping of the rotation when the limit is surpassed.
+超過極限時旋轉的阻尼量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_SOFTNESS:
 
@@ -741,7 +741,7 @@ The amount of damping of the rotation when the limit is surpassed.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_SOFTNESS** = ``16``
 
-A factor that gets applied to the all rotation in the limits.
+套用於所有極限旋轉的因數。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_RESTITUTION:
 
@@ -749,7 +749,7 @@ A factor that gets applied to the all rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_RESTITUTION** = ``17``
 
-The amount of restitution of the rotation in the limits.
+極限內旋轉的恢復量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_MOTION_DAMPING:
 
@@ -757,7 +757,7 @@ The amount of restitution of the rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_MOTION_DAMPING** = ``18``
 
-The amount of damping of the rotation in the limits.
+極限內旋轉的阻尼量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS:
 
@@ -765,7 +765,7 @@ The amount of damping of the rotation in the limits.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_SOFTNESS** = ``19``
 
-A factor that gets applied to the all rotation across axes orthogonal to the slider.
+套用於垂直於滑桿的軸上的所有旋轉的因數。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_RESTITUTION:
 
@@ -773,7 +773,7 @@ A factor that gets applied to the all rotation across axes orthogonal to the sli
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_RESTITUTION** = ``20``
 
-The amount of restitution of the rotation across axes orthogonal to the slider.
+垂直於滑桿的軸上的旋轉恢復量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_ANGULAR_ORTHOGONAL_DAMPING:
 
@@ -781,7 +781,7 @@ The amount of restitution of the rotation across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_ANGULAR_ORTHOGONAL_DAMPING** = ``21``
 
-The amount of damping of the rotation across axes orthogonal to the slider.
+垂直於滑桿的軸上的旋轉阻尼量。
 
 .. _class_PhysicsServer3D_constant_SLIDER_JOINT_MAX:
 
@@ -789,7 +789,7 @@ The amount of damping of the rotation across axes orthogonal to the slider.
 
 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` **SLIDER_JOINT_MAX** = ``22``
 
-Represents the size of the :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` enum.
+代表 :ref:`SliderJointParam<enum_PhysicsServer3D_SliderJointParam>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -807,13 +807,13 @@ enum **ConeTwistJointParam**: :ref:`🔗<enum_PhysicsServer3D_ConeTwistJointPara
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_SWING_SPAN** = ``0``
 
-Swing is rotation from side to side, around the axis perpendicular to the twist axis.
+擺動是圍繞垂直於扭轉軸的軸線，從一邊到另一邊的旋轉。
 
-The swing span defines, how much rotation will not get corrected along the swing axis.
+擺動跨度定義了沿擺動軸旋轉多少不會得到校正。
 
-Could be defined as looseness in the :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>`.
+可以被定義為 :ref:`ConeTwistJoint3D<class_ConeTwistJoint3D>` 中的鬆動。
 
-If below 0.05, this behavior is locked.
+如果低於 0.05，該行為將被鎖定。
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_TWIST_SPAN:
 
@@ -821,9 +821,9 @@ If below 0.05, this behavior is locked.
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_TWIST_SPAN** = ``1``
 
-Twist is the rotation around the twist axis, this value defined how far the joint can twist.
+扭轉是繞扭轉軸的旋轉，此值定義了關節可以扭轉多遠。
 
-Twist is locked if below 0.05.
+如果低於 0.05，則扭轉被鎖定。
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_BIAS:
 
@@ -831,9 +831,9 @@ Twist is locked if below 0.05.
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_BIAS** = ``2``
 
-The speed with which the swing or twist will take place.
+擺動或扭轉的速度。
 
-The higher, the faster.
+越高，速度越快。
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_SOFTNESS:
 
@@ -841,7 +841,7 @@ The higher, the faster.
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_SOFTNESS** = ``3``
 
-The ease with which the Joint3D twists, if it's too low, it takes more force to twist the joint.
+Joint3D 的扭曲彈性，如果太低，就需要更大的力才能扭曲關節。
 
 .. _class_PhysicsServer3D_constant_CONE_TWIST_JOINT_RELAXATION:
 
@@ -849,7 +849,7 @@ The ease with which the Joint3D twists, if it's too low, it takes more force to 
 
 :ref:`ConeTwistJointParam<enum_PhysicsServer3D_ConeTwistJointParam>` **CONE_TWIST_JOINT_RELAXATION** = ``4``
 
-Defines, how fast the swing- and twist-speed-difference on both sides gets synced.
+定義兩側的擺動速度和扭轉速度差異同步的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -867,7 +867,7 @@ enum **G6DOFJointAxisParam**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisPara
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_LOWER_LIMIT** = ``0``
 
-The minimum difference between the pivot points' axes.
+軸心點的軸之間的最小差異。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_UPPER_LIMIT:
 
@@ -875,7 +875,7 @@ The minimum difference between the pivot points' axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_UPPER_LIMIT** = ``1``
 
-The maximum difference between the pivot points' axes.
+軸心點的軸之間的最大差異。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_LIMIT_SOFTNESS:
 
@@ -883,7 +883,7 @@ The maximum difference between the pivot points' axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_LIMIT_SOFTNESS** = ``2``
 
-A factor that gets applied to the movement across the axes. The lower, the slower the movement.
+套用於跨軸移動的因數。越低，運動越慢。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_RESTITUTION:
 
@@ -891,7 +891,7 @@ A factor that gets applied to the movement across the axes. The lower, the slowe
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_RESTITUTION** = ``3``
 
-The amount of restitution on the axes movement. The lower, the more velocity-energy gets lost.
+軸運動的恢復量。速度越低，能量損失越多。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_DAMPING:
 
@@ -899,7 +899,7 @@ The amount of restitution on the axes movement. The lower, the more velocity-ene
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_DAMPING** = ``4``
 
-The amount of damping that happens at the linear motion across the axes.
+發生在跨軸線性運動的阻尼量。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_MOTOR_TARGET_VELOCITY:
 
@@ -907,7 +907,7 @@ The amount of damping that happens at the linear motion across the axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_MOTOR_TARGET_VELOCITY** = ``5``
 
-The velocity that the joint's linear motor will attempt to reach.
+關節的線性馬達試圖達到的速度。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_MOTOR_FORCE_LIMIT:
 
@@ -915,7 +915,7 @@ The velocity that the joint's linear motor will attempt to reach.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_LINEAR_MOTOR_FORCE_LIMIT** = ``6``
 
-The maximum force that the linear motor can apply while trying to reach the target velocity.
+線性馬達在試圖達到目標速度時可以施加的最大力。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_LINEAR_SPRING_STIFFNESS:
 
@@ -959,7 +959,7 @@ The maximum force that the linear motor can apply while trying to reach the targ
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_LOWER_LIMIT** = ``10``
 
-The minimum rotation in negative direction to break loose and rotate around the axes.
+負方向的最小旋轉，以脫離和繞軸旋轉。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_UPPER_LIMIT:
 
@@ -967,7 +967,7 @@ The minimum rotation in negative direction to break loose and rotate around the 
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_UPPER_LIMIT** = ``11``
 
-The minimum rotation in positive direction to break loose and rotate around the axes.
+正方向的最小旋轉，以掙脫和繞軸旋轉。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_LIMIT_SOFTNESS:
 
@@ -975,7 +975,7 @@ The minimum rotation in positive direction to break loose and rotate around the 
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_LIMIT_SOFTNESS** = ``12``
 
-A factor that gets multiplied onto all rotations across the axes.
+乘以所有軸旋轉的因數。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_DAMPING:
 
@@ -983,7 +983,7 @@ A factor that gets multiplied onto all rotations across the axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_DAMPING** = ``13``
 
-The amount of rotational damping across the axes. The lower, the more damping occurs.
+跨該軸的旋轉阻尼量。值越低，發生的阻尼就越多。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_RESTITUTION:
 
@@ -991,7 +991,7 @@ The amount of rotational damping across the axes. The lower, the more damping oc
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_RESTITUTION** = ``14``
 
-The amount of rotational restitution across the axes. The lower, the more restitution occurs.
+在各軸上的旋轉恢復量。值越低，發生的恢復量越大。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_FORCE_LIMIT:
 
@@ -999,7 +999,7 @@ The amount of rotational restitution across the axes. The lower, the more restit
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_FORCE_LIMIT** = ``15``
 
-The maximum amount of force that can occur, when rotating around the axes.
+圍繞 Z 軸旋轉時，可能發生的最大力。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_ERP:
 
@@ -1007,7 +1007,7 @@ The maximum amount of force that can occur, when rotating around the axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_ERP** = ``16``
 
-When correcting the crossing of limits in rotation across the axes, this error tolerance factor defines how much the correction gets slowed down. The lower, the slower.
+當校正軸旋轉中的極限交叉時，該誤差容限因數定義了校正的減慢程度。越低越慢。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_MOTOR_TARGET_VELOCITY:
 
@@ -1015,7 +1015,7 @@ When correcting the crossing of limits in rotation across the axes, this error t
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_MOTOR_TARGET_VELOCITY** = ``17``
 
-Target speed for the motor at the axes.
+軸上馬達的目標速度。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_MOTOR_FORCE_LIMIT:
 
@@ -1023,7 +1023,7 @@ Target speed for the motor at the axes.
 
 :ref:`G6DOFJointAxisParam<enum_PhysicsServer3D_G6DOFJointAxisParam>` **G6DOF_JOINT_ANGULAR_MOTOR_FORCE_LIMIT** = ``18``
 
-Maximum acceleration for the motor at the axes.
+馬達在軸上的最大加速度。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_ANGULAR_SPRING_STIFFNESS:
 
@@ -1085,7 +1085,7 @@ enum **G6DOFJointAxisFlag**: :ref:`🔗<enum_PhysicsServer3D_G6DOFJointAxisFlag>
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_LINEAR_LIMIT** = ``0``
 
-If set, linear motion is possible within the given limits.
+設定時，可以在給定的範圍內做線性運動。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_ANGULAR_LIMIT:
 
@@ -1093,7 +1093,7 @@ If set, linear motion is possible within the given limits.
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_ANGULAR_LIMIT** = ``1``
 
-If set, rotational motion is possible.
+設定時，可以做旋轉運動。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_ANGULAR_SPRING:
 
@@ -1125,7 +1125,7 @@ If set, rotational motion is possible.
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_MOTOR** = ``4``
 
-If set, there is a rotational motor across these axes.
+設定時，存在跨這些軸的旋轉馬達。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_ENABLE_LINEAR_MOTOR:
 
@@ -1133,7 +1133,7 @@ If set, there is a rotational motor across these axes.
 
 :ref:`G6DOFJointAxisFlag<enum_PhysicsServer3D_G6DOFJointAxisFlag>` **G6DOF_JOINT_FLAG_ENABLE_LINEAR_MOTOR** = ``5``
 
-If set, there is a linear motor on this axis that targets a specific velocity.
+設定時，存在跨這些軸的線性馬達，以指定的速度為目標。
 
 .. _class_PhysicsServer3D_constant_G6DOF_JOINT_FLAG_MAX:
 
@@ -1257,7 +1257,7 @@ enum **AreaParameter**: :ref:`🔗<enum_PhysicsServer3D_AreaParameter>`
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_GRAVITY_OVERRIDE_MODE** = ``0``
 
-Constant to set/get gravity override mode in an area. See :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` for possible values.
+常數，用於在一個區域中設定/獲取重力覆蓋模式。有關可能的值，請參閱 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>`\ 。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY:
 
@@ -1265,7 +1265,7 @@ Constant to set/get gravity override mode in an area. See :ref:`AreaSpaceOverrid
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_GRAVITY** = ``1``
 
-Constant to set/get gravity strength in an area.
+常數，用於設定/獲取區域中的重力強度。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY_VECTOR:
 
@@ -1273,7 +1273,7 @@ Constant to set/get gravity strength in an area.
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_GRAVITY_VECTOR** = ``2``
 
-Constant to set/get gravity vector/center in an area.
+常數，用於設定/獲取區域中的重力向量/中心。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY_IS_POINT:
 
@@ -1281,7 +1281,7 @@ Constant to set/get gravity vector/center in an area.
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_GRAVITY_IS_POINT** = ``3``
 
-Constant to set/get whether the gravity vector of an area is a direction, or a center point.
+常數，用於設定/獲取區域中的重力向量是方向，還是中心點。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE:
 
@@ -1289,9 +1289,9 @@ Constant to set/get whether the gravity vector of an area is a direction, or a c
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 meters in radius with a surface gravity of 4.0 m/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 meters from the center the gravity will be 1.0 m/s² (twice the distance, 1/4th the gravity), at 50 meters it will be 16.0 m/s² (half the distance, 4x the gravity), and so on.
+常數，用於設定/獲取重力強度等於 :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer3D_constant_AREA_PARAM_GRAVITY>` 控制的重力的距離。例如，在半徑為 100 米且表面重力為 4.0 m/s² 的行星上，將重力設定為 4.0，並將單位距離設定為 100.0。重力會根據平方反比定律衰減，因此在該範例中，重力在距中心 200 米處將為 1.0 m/s²（距離的兩倍，重力的 1/4），在距中心 50 米處為 16.0 m/s²（距離的一半，重力的 4 倍），依此類推。
 
-The above is true only when the unit distance is a positive number. When this is set to 0.0, the gravity will be constant regardless of distance.
+僅當單位距離為正數時，上述情況才成立。當該屬性被設定為 0.0 時，無論距離如何，重力都將保持不變。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE:
 
@@ -1299,7 +1299,7 @@ The above is true only when the unit distance is a positive number. When this is
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE** = ``5``
 
-Constant to set/get linear damping override mode in an area. See :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` for possible values.
+常數，用於在一個區域中設定/獲取線性阻尼覆蓋模式。有關可能的值，請參閱 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>`\ 。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_LINEAR_DAMP:
 
@@ -1307,7 +1307,7 @@ Constant to set/get linear damping override mode in an area. See :ref:`AreaSpace
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_LINEAR_DAMP** = ``6``
 
-Constant to set/get the linear damping factor of an area.
+常數，用於設定/獲取區域的線性阻尼係數。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_ANGULAR_DAMP_OVERRIDE_MODE:
 
@@ -1315,7 +1315,7 @@ Constant to set/get the linear damping factor of an area.
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_ANGULAR_DAMP_OVERRIDE_MODE** = ``7``
 
-Constant to set/get angular damping override mode in an area. See :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` for possible values.
+常數，用於在一個區域中設定/獲取角度阻尼覆蓋模式。有關可能的值，請參閱 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>`\ 。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_ANGULAR_DAMP:
 
@@ -1323,7 +1323,7 @@ Constant to set/get angular damping override mode in an area. See :ref:`AreaSpac
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_ANGULAR_DAMP** = ``8``
 
-Constant to set/get the angular damping factor of an area.
+常數，用於設定/獲取區域的角度阻尼係數。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_PRIORITY:
 
@@ -1331,7 +1331,7 @@ Constant to set/get the angular damping factor of an area.
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_PRIORITY** = ``9``
 
-Constant to set/get the priority (order of processing) of an area.
+常數，用於設定/獲取區域的優先順序（處理順序）。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_WIND_FORCE_MAGNITUDE:
 
@@ -1347,7 +1347,7 @@ Constant to set/get the magnitude of area-specific wind force. This wind force o
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_WIND_SOURCE** = ``11``
 
-Constant to set/get the 3D vector that specifies the origin from which an area-specific wind blows.
+常數，用於設定/獲取 3D 向量，該向量指定區域特定的風吹來的原點。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_WIND_DIRECTION:
 
@@ -1355,7 +1355,7 @@ Constant to set/get the 3D vector that specifies the origin from which an area-s
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_WIND_DIRECTION** = ``12``
 
-Constant to set/get the 3D vector that specifies the direction in which an area-specific wind blows.
+常數，用於設定/獲取 3D 向量，該向量指定區域特定的風吹的方向。
 
 .. _class_PhysicsServer3D_constant_AREA_PARAM_WIND_ATTENUATION_FACTOR:
 
@@ -1363,7 +1363,7 @@ Constant to set/get the 3D vector that specifies the direction in which an area-
 
 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` **AREA_PARAM_WIND_ATTENUATION_FACTOR** = ``13``
 
-Constant to set/get the exponential rate at which wind force decreases with distance from its origin.
+常數，用於設定/獲取風力隨距其原點的距離而減小的指數速率。
 
 .. rst-class:: classref-item-separator
 
@@ -1381,7 +1381,7 @@ enum **AreaSpaceOverrideMode**: :ref:`🔗<enum_PhysicsServer3D_AreaSpaceOverrid
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_DISABLED** = ``0``
 
-This area does not affect gravity/damp. These are generally areas that exist only to detect collisions, and objects entering or exiting them.
+這個區域不影響重力/阻尼。這些一般都是只存在於偵測碰撞的區域，以及進入或離開它們的物體。
 
 .. _class_PhysicsServer3D_constant_AREA_SPACE_OVERRIDE_COMBINE:
 
@@ -1389,7 +1389,7 @@ This area does not affect gravity/damp. These are generally areas that exist onl
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_COMBINE** = ``1``
 
-This area adds its gravity/damp values to whatever has been calculated so far. This way, many overlapping areas can combine their physics to make interesting effects.
+此區域把它的重力/阻尼加到目前已經計算過的對象上。這樣一來，許多重疊的區域可以結合它們的物理運算來產生有趣的效果。
 
 .. _class_PhysicsServer3D_constant_AREA_SPACE_OVERRIDE_COMBINE_REPLACE:
 
@@ -1397,7 +1397,7 @@ This area adds its gravity/damp values to whatever has been calculated so far. T
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_COMBINE_REPLACE** = ``2``
 
-This area adds its gravity/damp values to whatever has been calculated so far. Then stops taking into account the rest of the areas, even the default one.
+這個區域把它的重力/阻尼加到迄今為止已經計算出來的任何東西上。然後停止考慮其餘的區域，甚至預設的區域。
 
 .. _class_PhysicsServer3D_constant_AREA_SPACE_OVERRIDE_REPLACE:
 
@@ -1405,7 +1405,7 @@ This area adds its gravity/damp values to whatever has been calculated so far. T
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_REPLACE** = ``3``
 
-This area replaces any gravity/damp, even the default one, and stops taking into account the rest of the areas.
+這個區域取代了任何重力/阻尼，甚至是預設的，並停止考慮其餘的區域。
 
 .. _class_PhysicsServer3D_constant_AREA_SPACE_OVERRIDE_REPLACE_COMBINE:
 
@@ -1413,7 +1413,7 @@ This area replaces any gravity/damp, even the default one, and stops taking into
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_REPLACE_COMBINE** = ``4``
 
-This area replaces any gravity/damp calculated so far, but keeps calculating the rest of the areas, down to the default one.
+這個區域取代了到目前為止計算的任何重力/阻尼，但繼續計算其餘的區域，直到預設的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -1431,7 +1431,7 @@ enum **BodyMode**: :ref:`🔗<enum_PhysicsServer3D_BodyMode>`
 
 :ref:`BodyMode<enum_PhysicsServer3D_BodyMode>` **BODY_MODE_STATIC** = ``0``
 
-Constant for static bodies. In this mode, a body can be only moved by user code and doesn't collide with other bodies along its path when moved.
+常數，用於靜態物體。在這種模式下，物體只能由使用者程式碼移動，移動時不會與路徑上的其他物體發生碰撞。
 
 .. _class_PhysicsServer3D_constant_BODY_MODE_KINEMATIC:
 
@@ -1439,7 +1439,7 @@ Constant for static bodies. In this mode, a body can be only moved by user code 
 
 :ref:`BodyMode<enum_PhysicsServer3D_BodyMode>` **BODY_MODE_KINEMATIC** = ``1``
 
-Constant for kinematic bodies. In this mode, a body can be only moved by user code and collides with other bodies along its path.
+常數，用於運動學物體。在這種模式下，物體只能由使用者程式碼移動，會與路徑上的其他物體發生碰撞。
 
 .. _class_PhysicsServer3D_constant_BODY_MODE_RIGID:
 
@@ -1447,7 +1447,7 @@ Constant for kinematic bodies. In this mode, a body can be only moved by user co
 
 :ref:`BodyMode<enum_PhysicsServer3D_BodyMode>` **BODY_MODE_RIGID** = ``2``
 
-Constant for rigid bodies. In this mode, a body can be pushed by other bodies and has forces applied.
+常數，用於剛體。在這種模式下，物體可以被其他物體推動，能夠對其施加力。
 
 .. _class_PhysicsServer3D_constant_BODY_MODE_RIGID_LINEAR:
 
@@ -1455,7 +1455,7 @@ Constant for rigid bodies. In this mode, a body can be pushed by other bodies an
 
 :ref:`BodyMode<enum_PhysicsServer3D_BodyMode>` **BODY_MODE_RIGID_LINEAR** = ``3``
 
-Constant for linear rigid bodies. In this mode, a body can not rotate, and only its linear velocity is affected by external forces.
+常數，用於線性剛體。在這種模式下，物體不能旋轉，只有線速度受外力影響。
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ enum **BodyParameter**: :ref:`🔗<enum_PhysicsServer3D_BodyParameter>`
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_BOUNCE** = ``0``
 
-Constant to set/get a body's bounce factor.
+常數，用於設定/獲取物體的反彈係數。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_FRICTION:
 
@@ -1481,7 +1481,7 @@ Constant to set/get a body's bounce factor.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_FRICTION** = ``1``
 
-Constant to set/get a body's friction.
+常數，用於設定/獲取物體的摩擦力。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_MASS:
 
@@ -1489,7 +1489,7 @@ Constant to set/get a body's friction.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_MASS** = ``2``
 
-Constant to set/get a body's mass.
+常數，用於設定/獲取物體的品質。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_INERTIA:
 
@@ -1497,7 +1497,7 @@ Constant to set/get a body's mass.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_INERTIA** = ``3``
 
-Constant to set/get a body's inertia.
+常數，用於設定/獲取物體的慣性。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_CENTER_OF_MASS:
 
@@ -1505,7 +1505,7 @@ Constant to set/get a body's inertia.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_CENTER_OF_MASS** = ``4``
 
-Constant to set/get a body's center of mass position in the body's local coordinate system.
+常數，用於設定/獲取物體的質心位置，使用該物體的局部坐標系。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_GRAVITY_SCALE:
 
@@ -1513,7 +1513,7 @@ Constant to set/get a body's center of mass position in the body's local coordin
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_GRAVITY_SCALE** = ``5``
 
-Constant to set/get a body's gravity multiplier.
+常數，用於設定/獲取物體的重力倍數。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_LINEAR_DAMP_MODE:
 
@@ -1521,7 +1521,7 @@ Constant to set/get a body's gravity multiplier.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_LINEAR_DAMP_MODE** = ``6``
 
-Constant to set/get a body's linear damping mode. See :ref:`BodyDampMode<enum_PhysicsServer3D_BodyDampMode>` for possible values.
+常數，用於設定/獲取物體的線性阻尼模式。可能的值見 :ref:`BodyDampMode<enum_PhysicsServer3D_BodyDampMode>`\ 。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_ANGULAR_DAMP_MODE:
 
@@ -1529,7 +1529,7 @@ Constant to set/get a body's linear damping mode. See :ref:`BodyDampMode<enum_Ph
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_ANGULAR_DAMP_MODE** = ``7``
 
-Constant to set/get a body's angular damping mode. See :ref:`BodyDampMode<enum_PhysicsServer3D_BodyDampMode>` for possible values.
+常數，用於設定/獲取物體的角度阻尼模式。可能的值見 :ref:`BodyDampMode<enum_PhysicsServer3D_BodyDampMode>`\ 。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_LINEAR_DAMP:
 
@@ -1537,7 +1537,7 @@ Constant to set/get a body's angular damping mode. See :ref:`BodyDampMode<enum_P
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_LINEAR_DAMP** = ``8``
 
-Constant to set/get a body's linear damping factor.
+常數，用於設定/獲取物體的線性阻尼係數。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_ANGULAR_DAMP:
 
@@ -1545,7 +1545,7 @@ Constant to set/get a body's linear damping factor.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_ANGULAR_DAMP** = ``9``
 
-Constant to set/get a body's angular damping factor.
+常數，用於設定/獲取物體的角度阻尼係數。
 
 .. _class_PhysicsServer3D_constant_BODY_PARAM_MAX:
 
@@ -1553,7 +1553,7 @@ Constant to set/get a body's angular damping factor.
 
 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` **BODY_PARAM_MAX** = ``10``
 
-Represents the size of the :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` enum.
+代表 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1571,7 @@ enum **BodyDampMode**: :ref:`🔗<enum_PhysicsServer3D_BodyDampMode>`
 
 :ref:`BodyDampMode<enum_PhysicsServer3D_BodyDampMode>` **BODY_DAMP_MODE_COMBINE** = ``0``
 
-The body's damping value is added to any value set in areas or the default value.
+物體的阻尼值會疊加到替換區域中所設定的值或預設值。
 
 .. _class_PhysicsServer3D_constant_BODY_DAMP_MODE_REPLACE:
 
@@ -1579,7 +1579,7 @@ The body's damping value is added to any value set in areas or the default value
 
 :ref:`BodyDampMode<enum_PhysicsServer3D_BodyDampMode>` **BODY_DAMP_MODE_REPLACE** = ``1``
 
-The body's damping value replaces any value set in areas or the default value.
+物體的阻尼值會替換區域中所設定的值或預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -1597,7 +1597,7 @@ enum **BodyState**: :ref:`🔗<enum_PhysicsServer3D_BodyState>`
 
 :ref:`BodyState<enum_PhysicsServer3D_BodyState>` **BODY_STATE_TRANSFORM** = ``0``
 
-Constant to set/get the current transform matrix of the body.
+常數，用於設定/獲取物體的目前變換矩陣。
 
 .. _class_PhysicsServer3D_constant_BODY_STATE_LINEAR_VELOCITY:
 
@@ -1605,7 +1605,7 @@ Constant to set/get the current transform matrix of the body.
 
 :ref:`BodyState<enum_PhysicsServer3D_BodyState>` **BODY_STATE_LINEAR_VELOCITY** = ``1``
 
-Constant to set/get the current linear velocity of the body.
+常數，用於設定/獲取物體的目前線速度。
 
 .. _class_PhysicsServer3D_constant_BODY_STATE_ANGULAR_VELOCITY:
 
@@ -1613,7 +1613,7 @@ Constant to set/get the current linear velocity of the body.
 
 :ref:`BodyState<enum_PhysicsServer3D_BodyState>` **BODY_STATE_ANGULAR_VELOCITY** = ``2``
 
-Constant to set/get the current angular velocity of the body.
+常數，用於設定/獲取物體的目前角速度。
 
 .. _class_PhysicsServer3D_constant_BODY_STATE_SLEEPING:
 
@@ -1621,7 +1621,7 @@ Constant to set/get the current angular velocity of the body.
 
 :ref:`BodyState<enum_PhysicsServer3D_BodyState>` **BODY_STATE_SLEEPING** = ``3``
 
-Constant to sleep/wake up a body, or to get whether it is sleeping.
+常數，用於使物體沉睡/喚醒，或得到它是否在沉睡。
 
 .. _class_PhysicsServer3D_constant_BODY_STATE_CAN_SLEEP:
 
@@ -1629,7 +1629,7 @@ Constant to sleep/wake up a body, or to get whether it is sleeping.
 
 :ref:`BodyState<enum_PhysicsServer3D_BodyState>` **BODY_STATE_CAN_SLEEP** = ``4``
 
-Constant to set/get whether the body can sleep.
+常數，用於設定/獲取物體是否可以休眠。
 
 .. rst-class:: classref-item-separator
 
@@ -1647,7 +1647,7 @@ enum **AreaBodyStatus**: :ref:`🔗<enum_PhysicsServer3D_AreaBodyStatus>`
 
 :ref:`AreaBodyStatus<enum_PhysicsServer3D_AreaBodyStatus>` **AREA_BODY_ADDED** = ``0``
 
-The value of the first parameter and area callback function receives, when an object enters one of its shapes.
+當對象進入其形狀之一時，第一個參數和區域回呼函式接收的值。
 
 .. _class_PhysicsServer3D_constant_AREA_BODY_REMOVED:
 
@@ -1655,7 +1655,7 @@ The value of the first parameter and area callback function receives, when an ob
 
 :ref:`AreaBodyStatus<enum_PhysicsServer3D_AreaBodyStatus>` **AREA_BODY_REMOVED** = ``1``
 
-The value of the first parameter and area callback function receives, when an object exits one of its shapes.
+當對象退出其形狀之一時，第一個參數和區域回呼函式接收的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer3D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_PhysicsServer3D_ProcessInfo>` **INFO_ACTIVE_OBJECTS** = ``0``
 
-Constant to get the number of objects that are not sleeping.
+常數，用以獲取未處於睡眠狀態的物件的數量。
 
 .. _class_PhysicsServer3D_constant_INFO_COLLISION_PAIRS:
 
@@ -1681,7 +1681,7 @@ Constant to get the number of objects that are not sleeping.
 
 :ref:`ProcessInfo<enum_PhysicsServer3D_ProcessInfo>` **INFO_COLLISION_PAIRS** = ``1``
 
-Constant to get the number of possible collisions.
+常數，用以獲取可能的碰撞數。
 
 .. _class_PhysicsServer3D_constant_INFO_ISLAND_COUNT:
 
@@ -1689,7 +1689,7 @@ Constant to get the number of possible collisions.
 
 :ref:`ProcessInfo<enum_PhysicsServer3D_ProcessInfo>` **INFO_ISLAND_COUNT** = ``2``
 
-Constant to get the number of space regions where a collision could occur.
+常數，用以獲取可能發生碰撞的空間區域數。
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ enum **SpaceParameter**: :ref:`🔗<enum_PhysicsServer3D_SpaceParameter>`
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_CONTACT_RECYCLE_RADIUS** = ``0``
 
-Constant to set/get the maximum distance a pair of bodies has to move before their collision status has to be recalculated.
+常數，用於設定/獲取一對物體在其碰撞狀態被重新計算之前的最大移動距離。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION:
 
@@ -1715,7 +1715,7 @@ Constant to set/get the maximum distance a pair of bodies has to move before the
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_CONTACT_MAX_SEPARATION** = ``1``
 
-Constant to set/get the maximum distance a shape can be from another before they are considered separated and the contact is discarded.
+常數，用於設定/獲取兩個形狀間的最大距離，超過該距離後它們將被視為分離，接觸將被棄置。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION:
 
@@ -1723,7 +1723,7 @@ Constant to set/get the maximum distance a shape can be from another before they
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION** = ``2``
 
-Constant to set/get the maximum distance a shape can penetrate another shape before it is considered a collision.
+常數，用於設定/獲取兩個形狀互相穿透的最大距離，超過該距離後將視為碰撞。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS:
 
@@ -1731,7 +1731,7 @@ Constant to set/get the maximum distance a shape can penetrate another shape bef
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_CONTACT_DEFAULT_BIAS** = ``3``
 
-Constant to set/get the default solver bias for all physics contacts. A solver bias is a factor controlling how much two objects "rebound", after overlapping, to avoid leaving them in that state because of numerical imprecision.
+常數，用於設定/獲取所有物理接觸的預設求解器偏差。求解器偏差是控制兩個物件在重疊後“反彈”的程度的一個係數，以避免由於數值不精確而使它們處於該狀態。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD:
 
@@ -1739,7 +1739,7 @@ Constant to set/get the default solver bias for all physics contacts. A solver b
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD** = ``4``
 
-Constant to set/get the threshold linear velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given.
+常數，用於設定/獲取活躍的閾值線速度。一個被標記為線性速度和角速度都可能不活躍的物體將在給定的時間後進入睡眠狀態。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD:
 
@@ -1747,7 +1747,7 @@ Constant to set/get the threshold linear velocity of activity. A body marked as 
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD** = ``5``
 
-Constant to set/get the threshold angular velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given.
+常數，用於設定/獲取活動的閾值角速度。一個被標記為線性和角速度都可能不活躍的物體，在給定的時間後將會進入睡眠狀態。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP:
 
@@ -1755,7 +1755,7 @@ Constant to set/get the threshold angular velocity of activity. A body marked as
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_BODY_TIME_TO_SLEEP** = ``6``
 
-Constant to set/get the maximum time of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after this time.
+常數，用於設定/獲得最大的活動時間。一個被標記為線速度和角速度都可能不活動的物體，在這個時間之後將被置入睡眠狀態。
 
 .. _class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS:
 
@@ -1763,7 +1763,7 @@ Constant to set/get the maximum time of activity. A body marked as potentially i
 
 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` **SPACE_PARAM_SOLVER_ITERATIONS** = ``7``
 
-Constant to set/get the number of solver iterations for contacts and constraints. The greater the number of iterations, the more accurate the collisions and constraints will be. However, a greater number of iterations requires more CPU power, which can decrease performance.
+常數，用於設定/獲取接觸和約束的求解器反覆運算次數。反覆運算次數越多，碰撞和約束就越准確。然而，更多的反覆運算需要更多的 CPU 能力，這會降低性能。
 
 .. rst-class:: classref-item-separator
 
@@ -1853,8 +1853,8 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_PhysicsServer3D_method_area_add_shape:
 
@@ -1862,7 +1862,7 @@ Method Descriptions
 
 |void| **area_add_shape**\ (\ area\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>` = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), disabled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PhysicsServer3D_method_area_add_shape>`
 
-Adds a shape to the area, along with a transform matrix. Shapes are usually referenced by their index, so you should track which shape has a given index.
+向區域新增一個形狀，以及一個變換矩陣。形狀通常通過它們的索引來引用，因此你應該追蹤哪個形狀具有給定的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1874,7 +1874,7 @@ Adds a shape to the area, along with a transform matrix. Shapes are usually refe
 
 |void| **area_attach_object_instance_id**\ (\ area\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_attach_object_instance_id>`
 
-Assigns the area to a descendant of :ref:`Object<class_Object>`, so it can exist in the node tree.
+將區域分配給\ :ref:`Object<class_Object>`\ 的子類別，因此它可以存在於節點樹中。
 
 .. rst-class:: classref-item-separator
 
@@ -1886,7 +1886,7 @@ Assigns the area to a descendant of :ref:`Object<class_Object>`, so it can exist
 
 |void| **area_clear_shapes**\ (\ area\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_clear_shapes>`
 
-Removes all shapes from an area. It does not delete the shapes, so they can be reassigned later.
+從一個區域移除所有形狀。它不會刪除形狀，因此它們可以稍後重新分配。
 
 .. rst-class:: classref-item-separator
 
@@ -1912,7 +1912,7 @@ Use :ref:`area_add_shape()<class_PhysicsServer3D_method_area_add_shape>` to add 
 
 :ref:`int<class_int>` **area_get_collision_layer**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_collision_layer>`
 
-Returns the physics layer or layers an area belongs to.
+返回該區域所屬的實體層。
 
 .. rst-class:: classref-item-separator
 
@@ -1924,7 +1924,7 @@ Returns the physics layer or layers an area belongs to.
 
 :ref:`int<class_int>` **area_get_collision_mask**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_collision_mask>`
 
-Returns the physics layer or layers an area can contact with.
+返回該區域能夠接觸的實體層。
 
 .. rst-class:: classref-item-separator
 
@@ -1936,7 +1936,7 @@ Returns the physics layer or layers an area can contact with.
 
 :ref:`int<class_int>` **area_get_object_instance_id**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_object_instance_id>`
 
-Gets the instance ID of the object the area is assigned to.
+獲取區域分配給的物件的實例 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -1948,7 +1948,7 @@ Gets the instance ID of the object the area is assigned to.
 
 :ref:`Variant<class_Variant>` **area_get_param**\ (\ area\: :ref:`RID<class_RID>`, param\: :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_param>`
 
-Returns an area parameter value. A list of available parameters is on the :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` constants.
+返回區域參數值。可用參數列表位於 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` 常數上。
 
 .. rst-class:: classref-item-separator
 
@@ -1960,7 +1960,7 @@ Returns an area parameter value. A list of available parameters is on the :ref:`
 
 :ref:`RID<class_RID>` **area_get_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_shape>`
 
-Returns the :ref:`RID<class_RID>` of the nth shape of an area.
+返回區域的第 n 個形狀的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1972,7 +1972,7 @@ Returns the :ref:`RID<class_RID>` of the nth shape of an area.
 
 :ref:`int<class_int>` **area_get_shape_count**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_shape_count>`
 
-Returns the number of shapes assigned to an area.
+返回分配給區域的形狀數量。
 
 .. rst-class:: classref-item-separator
 
@@ -1984,7 +1984,7 @@ Returns the number of shapes assigned to an area.
 
 :ref:`Transform3D<class_Transform3D>` **area_get_shape_transform**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_shape_transform>`
 
-Returns the transform matrix of a shape within an area.
+返回區域內形狀的變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -1996,7 +1996,7 @@ Returns the transform matrix of a shape within an area.
 
 :ref:`RID<class_RID>` **area_get_space**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_space>`
 
-Returns the space assigned to the area.
+返回分配給該區域的空間。
 
 .. rst-class:: classref-item-separator
 
@@ -2008,7 +2008,7 @@ Returns the space assigned to the area.
 
 :ref:`Transform3D<class_Transform3D>` **area_get_transform**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_transform>`
 
-Returns the transform matrix for an area.
+返回區域的變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -2020,7 +2020,7 @@ Returns the transform matrix for an area.
 
 |void| **area_remove_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_remove_shape>`
 
-Removes a shape from an area. It does not delete the shape, so it can be reassigned later.
+從區域中移除一個形狀。它不會刪除形狀，因此可以稍後重新分配。
 
 .. rst-class:: classref-item-separator
 
@@ -2032,19 +2032,19 @@ Removes a shape from an area. It does not delete the shape, so it can be reassig
 
 |void| **area_set_area_monitor_callback**\ (\ area\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_area_monitor_callback>`
 
-Sets the area's area monitor callback. This callback will be called when any other (shape of an) area enters or exits (a shape of) the given area, and must take the following five parameters:
+設定該區域的區域監視回呼函式。當任何其他（形狀）區域進入或退出（形狀）給定區域時，將呼叫此回呼函式，並且必須採用以下五個參數：
 
-1. an integer ``status``: either :ref:`AREA_BODY_ADDED<class_PhysicsServer3D_constant_AREA_BODY_ADDED>` or :ref:`AREA_BODY_REMOVED<class_PhysicsServer3D_constant_AREA_BODY_REMOVED>` depending on whether the other area's shape entered or exited the area,
+1. 一個整數 ``status``\ ：\ :ref:`AREA_BODY_ADDED<class_PhysicsServer3D_constant_AREA_BODY_ADDED>` 或 :ref:`AREA_BODY_REMOVED<class_PhysicsServer3D_constant_AREA_BODY_REMOVED>` 取決於其他區域的形狀是進入還是退出該區域，
 
-2. an :ref:`RID<class_RID>` ``area_rid``: the :ref:`RID<class_RID>` of the other area that entered or exited the area,
+2. 一個 :ref:`RID<class_RID>` ``area_rid``\ ：進入或退出該區域的其他區域的 :ref:`RID<class_RID>`\ ，
 
-3. an integer ``instance_id``: the ``ObjectID`` attached to the other area,
+3. 一個整數 ``instance_id``\ ：附加到其他區域的 ``ObjectID``\ ，
 
-4. an integer ``area_shape_idx``: the index of the shape of the other area that entered or exited the area,
+4. 一個整數 ``area_shape_idx``\ ：進入或退出該區域的其他區域的形狀索引，
 
-5. an integer ``self_shape_idx``: the index of the shape of the area where the other area entered or exited.
+5. 一個整數 ``self_shape_idx``\ ：其他區域進入或退出的區域的形狀索引。
 
-By counting (or keeping track of) the shapes that enter and exit, it can be determined if an area (with all its shapes) is entering for the first time or exiting for the last time.
+通過計算（或追蹤）進入和退出的形狀，可以確定一個區域（及其所有形狀）是第一次進入還是最後一次退出。
 
 .. rst-class:: classref-item-separator
 
@@ -2056,7 +2056,7 @@ By counting (or keeping track of) the shapes that enter and exit, it can be dete
 
 |void| **area_set_collision_layer**\ (\ area\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_collision_layer>`
 
-Assigns the area to one or many physics layers.
+將區域分配給一個或多個實體層。
 
 .. rst-class:: classref-item-separator
 
@@ -2068,7 +2068,7 @@ Assigns the area to one or many physics layers.
 
 |void| **area_set_collision_mask**\ (\ area\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_collision_mask>`
 
-Sets which physics layers the area will monitor.
+設定區域將監控的實體層。
 
 .. rst-class:: classref-item-separator
 
@@ -2080,19 +2080,19 @@ Sets which physics layers the area will monitor.
 
 |void| **area_set_monitor_callback**\ (\ area\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_monitor_callback>`
 
-Sets the area's body monitor callback. This callback will be called when any other (shape of a) body enters or exits (a shape of) the given area, and must take the following five parameters:
+設定區域的實體監視器回呼函式。當任何其他（形狀的）實體進入或退出（形狀的）給定區域時，將呼叫此回呼函式，並且必須採用以下五個參數：
 
-1. an integer ``status``: either :ref:`AREA_BODY_ADDED<class_PhysicsServer3D_constant_AREA_BODY_ADDED>` or :ref:`AREA_BODY_REMOVED<class_PhysicsServer3D_constant_AREA_BODY_REMOVED>` depending on whether the other body shape entered or exited the area,
+1. 一個整數 ``status``\ ：\ :ref:`AREA_BODY_ADDED<class_PhysicsServer3D_constant_AREA_BODY_ADDED>` 或 :ref:`AREA_BODY_REMOVED<class_PhysicsServer3D_constant_AREA_BODY_REMOVED>` 取決於其他實體形狀是否進入或退出該區域，
 
-2. an :ref:`RID<class_RID>` ``body_rid``: the :ref:`RID<class_RID>` of the body that entered or exited the area,
+2. 一個 :ref:`RID<class_RID>` ``body_rid``\ ：進入或離開該區域的實體的 :ref:`RID<class_RID>`\ ，
 
-3. an integer ``instance_id``: the ``ObjectID`` attached to the body,
+3. 一個整數 ``instance_id``\ ：附加到該實體上的 ``ObjectID``\ ，
 
-4. an integer ``body_shape_idx``: the index of the shape of the body that entered or exited the area,
+4. 一個整數 ``body_shape_idx``\ ：進入或離開該區域的實體形狀索引，
 
-5. an integer ``self_shape_idx``: the index of the shape of the area where the body entered or exited.
+5. 一個整數 ``self_shape_idx``\ ：實體進入或離開的區域的形狀索引。
 
-By counting (or keeping track of) the shapes that enter and exit, it can be determined if a body (with all its shapes) is entering for the first time or exiting for the last time.
+通過計算（或追蹤）進入和退出的形狀，可以確定一個實體（及其所有形狀）是第一次進入還是最後一次退出。
 
 .. rst-class:: classref-item-separator
 
@@ -2118,7 +2118,7 @@ By counting (or keeping track of) the shapes that enter and exit, it can be dete
 
 |void| **area_set_param**\ (\ area\: :ref:`RID<class_RID>`, param\: :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_param>`
 
-Sets the value for an area parameter. A list of available parameters is on the :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` constants.
+設定面積參數的值。可用參數列表位於 :ref:`AreaParameter<enum_PhysicsServer3D_AreaParameter>` 常數上。
 
 .. rst-class:: classref-item-separator
 
@@ -2130,7 +2130,7 @@ Sets the value for an area parameter. A list of available parameters is on the :
 
 |void| **area_set_ray_pickable**\ (\ area\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_ray_pickable>`
 
-Sets object pickable with rays.
+設定可使用光線拾取的物件。
 
 .. rst-class:: classref-item-separator
 
@@ -2142,7 +2142,7 @@ Sets object pickable with rays.
 
 |void| **area_set_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_shape>`
 
-Substitutes a given area shape by another. The old shape is selected by its index, the new one by its :ref:`RID<class_RID>`.
+用另一種形狀代替一種形狀。舊的形狀由它的索引選擇，新的形狀由它的\ :ref:`RID<class_RID>`\ 選擇。
 
 .. rst-class:: classref-item-separator
 
@@ -2168,7 +2168,7 @@ Substitutes a given area shape by another. The old shape is selected by its inde
 
 |void| **area_set_shape_transform**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_shape_transform>`
 
-Sets the transform matrix for an area shape.
+設定區域形狀的變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -2180,7 +2180,7 @@ Sets the transform matrix for an area shape.
 
 |void| **area_set_space**\ (\ area\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_space>`
 
-Assigns a space to the area.
+為該區域指定一個空間。
 
 .. rst-class:: classref-item-separator
 
@@ -2192,7 +2192,7 @@ Assigns a space to the area.
 
 |void| **area_set_transform**\ (\ area\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_transform>`
 
-Sets the transform matrix for an area.
+設定區域的變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -2204,7 +2204,7 @@ Sets the transform matrix for an area.
 
 |void| **body_add_collision_exception**\ (\ body\: :ref:`RID<class_RID>`, excepted_body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_add_collision_exception>`
 
-Adds a body to the list of bodies exempt from collisions.
+將一個物體新增到免於碰撞的物體列表中。
 
 .. rst-class:: classref-item-separator
 
@@ -2216,9 +2216,9 @@ Adds a body to the list of bodies exempt from collisions.
 
 |void| **body_add_constant_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_add_constant_central_force>`
 
-Adds a constant directional force without affecting rotation that keeps being applied over time until cleared with ``body_set_constant_force(body, Vector3(0, 0, 0))``.
+在不影響旋轉的情況下，新增一個恒定的方向力，該力會隨著時間的推移而持續施加，直到使用 ``body_set_constant_force(body, Vector3(0, 0, 0))`` 清除。
 
-This is equivalent to using :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_constant_force>` at the body's center of mass.
+這相當於在實體的質心處使用 :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_constant_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2230,9 +2230,9 @@ This is equivalent to using :ref:`body_add_constant_force()<class_PhysicsServer3
 
 |void| **body_add_constant_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsServer3D_method_body_add_constant_force>`
 
-Adds a constant positioned force to the body that keeps being applied over time until cleared with ``body_set_constant_force(body, Vector3(0, 0, 0))``.
+向實體新增一個恒定的定位力，持續施加，直到用 ``body_set_constant_force(body, Vector3(0, 0, 0))`` 清除。
 
-\ ``position`` is the offset from the body origin in global coordinates.
+\ ``position`` 是在全域座標中距實體原點的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -2244,7 +2244,7 @@ Adds a constant positioned force to the body that keeps being applied over time 
 
 |void| **body_add_constant_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_add_constant_torque>`
 
-Adds a constant rotational force without affecting position that keeps being applied over time until cleared with ``body_set_constant_torque(body, Vector3(0, 0, 0))``.
+在不影響位置的情況下，新增一個恒定的旋轉力，隨著時間的推移而持續施加，直到使用 ``body_set_constant_torque(body, Vector3(0, 0, 0))`` 清除。
 
 .. rst-class:: classref-item-separator
 
@@ -2256,7 +2256,7 @@ Adds a constant rotational force without affecting position that keeps being app
 
 |void| **body_add_shape**\ (\ body\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>` = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), disabled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PhysicsServer3D_method_body_add_shape>`
 
-Adds a shape to the body, along with a transform matrix. Shapes are usually referenced by their index, so you should track which shape has a given index.
+新增一個形狀到物體，以及一個變換矩陣。形狀通常通過它們的索引來引用，因此你應該追蹤哪個形狀具有給定的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -2268,9 +2268,9 @@ Adds a shape to the body, along with a transform matrix. Shapes are usually refe
 
 |void| **body_apply_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_central_force>`
 
-Applies a directional force without affecting rotation. A force is time dependent and meant to be applied every physics update.
+在不影響旋轉的情況下，施加一個方向力。力是時間相關的，意味著每次物理更新都會施加。
 
-This is equivalent to using :ref:`body_apply_force()<class_PhysicsServer3D_method_body_apply_force>` at the body's center of mass.
+這相當於在實體的質心處使用 :ref:`body_apply_force()<class_PhysicsServer3D_method_body_apply_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2282,11 +2282,11 @@ This is equivalent to using :ref:`body_apply_force()<class_PhysicsServer3D_metho
 
 |void| **body_apply_central_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_central_impulse>`
 
-Applies a directional impulse without affecting rotation.
+在不影響旋轉的情況下，施加一個定向脈衝。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+衝動是時間無關的！每影格施加一個脈衝將產生依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
 
-This is equivalent to using :ref:`body_apply_impulse()<class_PhysicsServer3D_method_body_apply_impulse>` at the body's center of mass.
+這相當於在實體的質心處使用 :ref:`body_apply_impulse()<class_PhysicsServer3D_method_body_apply_impulse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2298,9 +2298,9 @@ This is equivalent to using :ref:`body_apply_impulse()<class_PhysicsServer3D_met
 
 |void| **body_apply_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_force>`
 
-Applies a positioned force to the body. A force is time dependent and meant to be applied every physics update.
+對實體施加一個定位力。力是時間相關的，意味著每次物理更新都會被施加。
 
-\ ``position`` is the offset from the body origin in global coordinates.
+\ ``position`` 是在全域座標中距實體原點的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -2312,11 +2312,11 @@ Applies a positioned force to the body. A force is time dependent and meant to b
 
 |void| **body_apply_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_impulse>`
 
-Applies a positioned impulse to the body.
+向實體施加一個定位脈衝。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+脈衝是時間無關的！每影格施加一個脈衝將產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
 
-\ ``position`` is the offset from the body origin in global coordinates.
+\ ``position`` 是在全域座標中距實體原點的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -2328,7 +2328,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 |void| **body_apply_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_torque>`
 
-Applies a rotational force without affecting position. A force is time dependent and meant to be applied every physics update.
+在不影響位置的情況下，施加一個旋轉力。力是時間相關的，這意味著每次物理更新都會施加。
 
 .. rst-class:: classref-item-separator
 
@@ -2340,9 +2340,9 @@ Applies a rotational force without affecting position. A force is time dependent
 
 |void| **body_apply_torque_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_apply_torque_impulse>`
 
-Applies a rotational impulse to the body without affecting the position.
+在不影響位置的情況下，向實體施加一個旋轉脈衝。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+脈衝是時間無關的！每影格施加一個脈衝將產生一個依賴於畫面播放速率的力。出於這個原因，它應該只在模擬一次性影響時使用（否則使用“_force”函式）。
 
 .. rst-class:: classref-item-separator
 
@@ -2354,7 +2354,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 |void| **body_attach_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_attach_object_instance_id>`
 
-Assigns the area to a descendant of :ref:`Object<class_Object>`, so it can exist in the node tree.
+將區域分配給\ :ref:`Object<class_Object>`\ 的子類別，因此它可以存在於節點樹中。
 
 .. rst-class:: classref-item-separator
 
@@ -2366,7 +2366,7 @@ Assigns the area to a descendant of :ref:`Object<class_Object>`, so it can exist
 
 |void| **body_clear_shapes**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_clear_shapes>`
 
-Removes all shapes from a body.
+從物體上移除所有碰撞形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -2392,7 +2392,7 @@ Use :ref:`body_add_shape()<class_PhysicsServer3D_method_body_add_shape>` to add 
 
 :ref:`int<class_int>` **body_get_collision_layer**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_collision_layer>`
 
-Returns the physics layer or layers a body belongs to.
+返回物體所屬的實體層或層。
 
 .. rst-class:: classref-item-separator
 
@@ -2404,7 +2404,7 @@ Returns the physics layer or layers a body belongs to.
 
 :ref:`int<class_int>` **body_get_collision_mask**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_collision_mask>`
 
-Returns the physics layer or layers a body can collide with.
+返回物體可以碰撞的實體層或層。
 
 .. rst-class:: classref-item-separator
 
@@ -2416,7 +2416,7 @@ Returns the physics layer or layers a body can collide with.
 
 :ref:`float<class_float>` **body_get_collision_priority**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_collision_priority>`
 
-Returns the body's collision priority.
+返回該物體的碰撞優先順序。
 
 .. rst-class:: classref-item-separator
 
@@ -2428,9 +2428,9 @@ Returns the body's collision priority.
 
 :ref:`Vector3<class_Vector3>` **body_get_constant_force**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_constant_force>`
 
-Returns the body's total constant positional forces applied during each physics update.
+返回在每次物理更新期間，該物體被施加的總的恒定位置的力。
 
-See :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_constant_force>` and :ref:`body_add_constant_central_force()<class_PhysicsServer3D_method_body_add_constant_central_force>`.
+參閱 :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_constant_force>` 和 :ref:`body_add_constant_central_force()<class_PhysicsServer3D_method_body_add_constant_central_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2442,9 +2442,9 @@ See :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_consta
 
 :ref:`Vector3<class_Vector3>` **body_get_constant_torque**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_constant_torque>`
 
-Returns the body's total constant rotational forces applied during each physics update.
+返回在每次物理更新期間，該物體被施加的總的恒定旋轉的力。
 
-See :ref:`body_add_constant_torque()<class_PhysicsServer3D_method_body_add_constant_torque>`.
+參閱 :ref:`body_add_constant_torque()<class_PhysicsServer3D_method_body_add_constant_torque>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2456,7 +2456,7 @@ See :ref:`body_add_constant_torque()<class_PhysicsServer3D_method_body_add_const
 
 :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` **body_get_direct_state**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_get_direct_state>`
 
-Returns the :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` of the body. Returns ``null`` if the body is destroyed or removed from the physics space.
+返回該物體的 :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`\ 。如果該物體已被銷毀或從物理空間中移除，則返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2468,7 +2468,7 @@ Returns the :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` of t
 
 :ref:`int<class_int>` **body_get_max_contacts_reported**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_max_contacts_reported>`
 
-Returns the maximum contacts that can be reported. See :ref:`body_set_max_contacts_reported()<class_PhysicsServer3D_method_body_set_max_contacts_reported>`.
+返回可報告的最大接觸數。見 :ref:`body_set_max_contacts_reported()<class_PhysicsServer3D_method_body_set_max_contacts_reported>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2480,7 +2480,7 @@ Returns the maximum contacts that can be reported. See :ref:`body_set_max_contac
 
 :ref:`BodyMode<enum_PhysicsServer3D_BodyMode>` **body_get_mode**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_mode>`
 
-Returns the body mode.
+返回物體模式。
 
 .. rst-class:: classref-item-separator
 
@@ -2492,7 +2492,7 @@ Returns the body mode.
 
 :ref:`int<class_int>` **body_get_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_object_instance_id>`
 
-Gets the instance ID of the object the area is assigned to.
+獲取區域分配給的物件的實例 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -2504,7 +2504,7 @@ Gets the instance ID of the object the area is assigned to.
 
 :ref:`Variant<class_Variant>` **body_get_param**\ (\ body\: :ref:`RID<class_RID>`, param\: :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_param>`
 
-Returns the value of a body parameter. A list of available parameters is on the :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` constants.
+返回物體參數的值。可用參數列表位於 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` 常數上。
 
 .. rst-class:: classref-item-separator
 
@@ -2516,7 +2516,7 @@ Returns the value of a body parameter. A list of available parameters is on the 
 
 :ref:`RID<class_RID>` **body_get_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_shape>`
 
-Returns the :ref:`RID<class_RID>` of the nth shape of a body.
+返回物體的第 n 個碰撞形狀的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2528,7 +2528,7 @@ Returns the :ref:`RID<class_RID>` of the nth shape of a body.
 
 :ref:`int<class_int>` **body_get_shape_count**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_shape_count>`
 
-Returns the number of shapes assigned to a body.
+返回分配給物體的碰撞形狀數量。
 
 .. rst-class:: classref-item-separator
 
@@ -2540,7 +2540,7 @@ Returns the number of shapes assigned to a body.
 
 :ref:`Transform3D<class_Transform3D>` **body_get_shape_transform**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_shape_transform>`
 
-Returns the transform matrix of a body shape.
+返回物體碰撞形狀的變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -2552,7 +2552,7 @@ Returns the transform matrix of a body shape.
 
 :ref:`RID<class_RID>` **body_get_space**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_space>`
 
-Returns the :ref:`RID<class_RID>` of the space assigned to a body.
+返回分配給物體的空間的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2564,7 +2564,7 @@ Returns the :ref:`RID<class_RID>` of the space assigned to a body.
 
 :ref:`Variant<class_Variant>` **body_get_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer3D_BodyState>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_get_state>`
 
-Returns a body state.
+返回物體的狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -2590,7 +2590,7 @@ Returns a body state.
 
 :ref:`bool<class_bool>` **body_is_continuous_collision_detection_enabled**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_body_is_continuous_collision_detection_enabled>`
 
-If ``true``, the continuous collision detection mode is enabled.
+如果為 ``true``\ ，則啟用連續碰撞偵測模式。
 
 .. rst-class:: classref-item-separator
 
@@ -2614,9 +2614,9 @@ Returns ``true`` if the body is omitting the standard force integration. See :re
 
 |void| **body_remove_collision_exception**\ (\ body\: :ref:`RID<class_RID>`, excepted_body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_remove_collision_exception>`
 
-Removes a body from the list of bodies exempt from collisions.
+從免於碰撞的實體列表中刪除實體。
 
-Continuous collision detection tries to predict where a moving body will collide, instead of moving it and correcting its movement if it collided.
+連續碰撞偵測嘗試預測運動物體碰撞的位置，而不是在碰撞時移動物體並糾正其運動。
 
 .. rst-class:: classref-item-separator
 
@@ -2628,7 +2628,7 @@ Continuous collision detection tries to predict where a moving body will collide
 
 |void| **body_remove_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_remove_shape>`
 
-Removes a shape from a body. The shape is not deleted, so it can be reused afterwards.
+從物體上移除一個碰撞形狀。碰撞形狀不會被從記憶體中刪除，所以它可以在之後被重複使用。
 
 .. rst-class:: classref-item-separator
 
@@ -2640,7 +2640,7 @@ Removes a shape from a body. The shape is not deleted, so it can be reused after
 
 |void| **body_reset_mass_properties**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_reset_mass_properties>`
 
-Restores the default inertia and center of mass based on shapes to cancel any custom values previously set using :ref:`body_set_param()<class_PhysicsServer3D_method_body_set_param>`.
+根據形狀恢復預設慣性和質心，以取消之前使用 :ref:`body_set_param()<class_PhysicsServer3D_method_body_set_param>` 設定的任何自訂值。
 
 .. rst-class:: classref-item-separator
 
@@ -2666,7 +2666,7 @@ Restores the default inertia and center of mass based on shapes to cancel any cu
 
 |void| **body_set_axis_velocity**\ (\ body\: :ref:`RID<class_RID>`, axis_velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_axis_velocity>`
 
-Sets an axis velocity. The velocity in the given vector axis will be set as the given vector length. This is useful for jumping behavior.
+設定軸速度。給定向量軸上的速度將被設定為給定向量長度。這對跳躍行為很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -2678,7 +2678,7 @@ Sets an axis velocity. The velocity in the given vector axis will be set as the 
 
 |void| **body_set_collision_layer**\ (\ body\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_collision_layer>`
 
-Sets the physics layer or layers a body belongs to.
+設定物體所屬的實體層或層。
 
 .. rst-class:: classref-item-separator
 
@@ -2690,7 +2690,7 @@ Sets the physics layer or layers a body belongs to.
 
 |void| **body_set_collision_mask**\ (\ body\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_collision_mask>`
 
-Sets the physics layer or layers a body can collide with.
+設定實體層或身體可以碰撞的層。
 
 .. rst-class:: classref-item-separator
 
@@ -2702,7 +2702,7 @@ Sets the physics layer or layers a body can collide with.
 
 |void| **body_set_collision_priority**\ (\ body\: :ref:`RID<class_RID>`, priority\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_collision_priority>`
 
-Sets the body's collision priority.
+設定該物體的碰撞優先順序。
 
 .. rst-class:: classref-item-separator
 
@@ -2714,9 +2714,9 @@ Sets the body's collision priority.
 
 |void| **body_set_constant_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_constant_force>`
 
-Sets the body's total constant positional forces applied during each physics update.
+設定該物體在每次物理更新時套用的總恒定位置力。
 
-See :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_constant_force>` and :ref:`body_add_constant_central_force()<class_PhysicsServer3D_method_body_add_constant_central_force>`.
+見 :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_constant_force>` 和 :ref:`body_add_constant_central_force()<class_PhysicsServer3D_method_body_add_constant_central_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2728,9 +2728,9 @@ See :ref:`body_add_constant_force()<class_PhysicsServer3D_method_body_add_consta
 
 |void| **body_set_constant_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_constant_torque>`
 
-Sets the body's total constant rotational forces applied during each physics update.
+設定該物體在每次物理更新時套用的總恒定旋轉力。
 
-See :ref:`body_add_constant_torque()<class_PhysicsServer3D_method_body_add_constant_torque>`.
+見 :ref:`body_add_constant_torque()<class_PhysicsServer3D_method_body_add_constant_torque>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2742,9 +2742,9 @@ See :ref:`body_add_constant_torque()<class_PhysicsServer3D_method_body_add_const
 
 |void| **body_set_enable_continuous_collision_detection**\ (\ body\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_enable_continuous_collision_detection>`
 
-If ``true``, the continuous collision detection mode is enabled.
+如果為 ``true``\ ，則啟用連續碰撞偵測模式。
 
-Continuous collision detection tries to predict where a moving body will collide, instead of moving it and correcting its movement if it collided.
+連續碰撞偵測嘗試預測運動物體碰撞的位置，而不是在碰撞時移動物體並糾正其運動。
 
 .. rst-class:: classref-item-separator
 
@@ -2778,7 +2778,7 @@ If ``userdata`` is ``null``, then ``callable`` must take only the ``state`` para
 
 |void| **body_set_max_contacts_reported**\ (\ body\: :ref:`RID<class_RID>`, amount\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_max_contacts_reported>`
 
-Sets the maximum contacts to report. Bodies can keep a log of the contacts with other bodies. This is enabled by setting the maximum number of contacts reported to a number greater than 0.
+設定要報告的最大接觸數。物體可以記錄與其他物體的接觸。將最大接觸數設定為大於 0 的數位可以啟用此功能。
 
 .. rst-class:: classref-item-separator
 
@@ -2816,7 +2816,7 @@ This method is called when the property :ref:`RigidBody3D.custom_integrator<clas
 
 |void| **body_set_param**\ (\ body\: :ref:`RID<class_RID>`, param\: :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_param>`
 
-Sets a body parameter. A list of available parameters is on the :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` constants.
+設定物體參數。可用參數列表位於 :ref:`BodyParameter<enum_PhysicsServer3D_BodyParameter>` 常數上。
 
 .. rst-class:: classref-item-separator
 
@@ -2828,7 +2828,7 @@ Sets a body parameter. A list of available parameters is on the :ref:`BodyParame
 
 |void| **body_set_ray_pickable**\ (\ body\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_ray_pickable>`
 
-Sets the body pickable with rays if ``enable`` is set.
+如果設定了 ``enable``\ ，則將該物體設定為可通過射線拾取。
 
 .. rst-class:: classref-item-separator
 
@@ -2840,7 +2840,7 @@ Sets the body pickable with rays if ``enable`` is set.
 
 |void| **body_set_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_shape>`
 
-Substitutes a given body shape by another. The old shape is selected by its index, the new one by its :ref:`RID<class_RID>`.
+用一個給定的物體形狀代替另一個。舊的形狀是通過其索引選擇的，新的是通過其 :ref:`RID<class_RID>` 選擇的。
 
 .. rst-class:: classref-item-separator
 
@@ -2866,7 +2866,7 @@ Substitutes a given body shape by another. The old shape is selected by its inde
 
 |void| **body_set_shape_transform**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_shape_transform>`
 
-Sets the transform matrix for a body shape.
+設定物體形狀的變換矩陣。
 
 .. rst-class:: classref-item-separator
 
@@ -2878,7 +2878,7 @@ Sets the transform matrix for a body shape.
 
 |void| **body_set_space**\ (\ body\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_body_set_space>`
 
-Assigns a space to the body (see :ref:`space_create()<class_PhysicsServer3D_method_space_create>`).
+給物體分配一個空間（見 :ref:`space_create()<class_PhysicsServer3D_method_space_create>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2920,7 +2920,7 @@ The function ``callable`` must take the following parameters:
 
 :ref:`bool<class_bool>` **body_test_motion**\ (\ body\: :ref:`RID<class_RID>`, parameters\: :ref:`PhysicsTestMotionParameters3D<class_PhysicsTestMotionParameters3D>`, result\: :ref:`PhysicsTestMotionResult3D<class_PhysicsTestMotionResult3D>` = null\ ) :ref:`🔗<class_PhysicsServer3D_method_body_test_motion>`
 
-Returns ``true`` if a collision would result from moving along a motion vector from a given point in space. :ref:`PhysicsTestMotionParameters3D<class_PhysicsTestMotionParameters3D>` is passed to set motion parameters. :ref:`PhysicsTestMotionResult3D<class_PhysicsTestMotionResult3D>` can be passed to return additional information.
+如果從空間中的給定點沿著運動向量移動會導致碰撞，則返回 ``true``\ 。傳遞 :ref:`PhysicsTestMotionParameters3D<class_PhysicsTestMotionParameters3D>` 可以設定運動參數。還可以傳遞 :ref:`PhysicsTestMotionResult3D<class_PhysicsTestMotionResult3D>`\ ，從而返回其他資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -3030,7 +3030,7 @@ Creates a 3D cylinder shape in the physics server, and returns the :ref:`RID<cla
 
 |void| **free_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_free_rid>`
 
-Destroys any of the objects created by PhysicsServer3D. If the :ref:`RID<class_RID>` passed is not one of the objects that can be created by PhysicsServer3D, an error will be sent to the console.
+銷毀由 PhysicsServer3D 建立的任何物件。如果傳入的 :ref:`RID<class_RID>` 不是由 PhysicsServer3D 建立的對象，則會向控制台發送錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -3190,7 +3190,7 @@ Sets a hinge joint parameter.
 
 |void| **joint_disable_collisions_between_bodies**\ (\ joint\: :ref:`RID<class_RID>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_joint_disable_collisions_between_bodies>`
 
-Sets whether the bodies attached to the :ref:`Joint3D<class_Joint3D>` will collide with each other.
+設定附加至該 :ref:`Joint3D<class_Joint3D>` 的物體能否互相碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -3202,7 +3202,7 @@ Sets whether the bodies attached to the :ref:`Joint3D<class_Joint3D>` will colli
 
 :ref:`int<class_int>` **joint_get_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_joint_get_solver_priority>`
 
-Gets the priority value of the Joint3D.
+獲取該 Joint3D 的優先順序。
 
 .. rst-class:: classref-item-separator
 
@@ -3214,7 +3214,7 @@ Gets the priority value of the Joint3D.
 
 :ref:`JointType<enum_PhysicsServer3D_JointType>` **joint_get_type**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_joint_get_type>`
 
-Returns the type of the Joint3D.
+返回該 Joint3D 的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -3226,7 +3226,7 @@ Returns the type of the Joint3D.
 
 :ref:`bool<class_bool>` **joint_is_disabled_collisions_between_bodies**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_joint_is_disabled_collisions_between_bodies>`
 
-Returns whether the bodies attached to the :ref:`Joint3D<class_Joint3D>` will collide with each other.
+返回附加至該 :ref:`Joint3D<class_Joint3D>` 的物體能否互相碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -3306,7 +3306,7 @@ Make the joint a generic six degrees of freedom (6DOF) joint. Use :ref:`generic_
 
 |void| **joint_set_solver_priority**\ (\ joint\: :ref:`RID<class_RID>`, priority\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_joint_set_solver_priority>`
 
-Sets the priority value of the Joint3D.
+設定該 Joint3D 的優先順序。
 
 .. rst-class:: classref-item-separator
 
@@ -3318,7 +3318,7 @@ Sets the priority value of the Joint3D.
 
 :ref:`Vector3<class_Vector3>` **pin_joint_get_local_a**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_pin_joint_get_local_a>`
 
-Returns position of the joint in the local space of body a of the joint.
+返回關節在關節物體 A 的局部空間中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3330,7 +3330,7 @@ Returns position of the joint in the local space of body a of the joint.
 
 :ref:`Vector3<class_Vector3>` **pin_joint_get_local_b**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_pin_joint_get_local_b>`
 
-Returns position of the joint in the local space of body b of the joint.
+返回關節在關節物體 B 的局部空間中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3354,7 +3354,7 @@ Gets a pin joint parameter.
 
 |void| **pin_joint_set_local_a**\ (\ joint\: :ref:`RID<class_RID>`, local_A\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_pin_joint_set_local_a>`
 
-Sets position of the joint in the local space of body a of the joint.
+設定關節在關節物體 A 的局部空間中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3366,7 +3366,7 @@ Sets position of the joint in the local space of body a of the joint.
 
 |void| **pin_joint_set_local_b**\ (\ joint\: :ref:`RID<class_RID>`, local_B\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_pin_joint_set_local_b>`
 
-Sets position of the joint in the local space of body b of the joint.
+設定關節在關節物體 B 的局部空間中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3402,7 +3402,7 @@ Creates a 3D separation ray shape in the physics server, and returns the :ref:`R
 
 |void| **set_active**\ (\ active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_set_active>`
 
-Activates or deactivates the 3D physics engine.
+啟動或停用 3D 物理引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -4004,7 +4004,7 @@ Requests that the physics server updates the rendering server with the latest po
 
 :ref:`RID<class_RID>` **space_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_space_create>`
 
-Creates a space. A space is a collection of parameters for the physics engine that can be assigned to an area or a body. It can be assigned to an area with :ref:`area_set_space()<class_PhysicsServer3D_method_area_set_space>`, or to a body with :ref:`body_set_space()<class_PhysicsServer3D_method_body_set_space>`.
+建立一個空間。空間是物理引擎的參數集合，可以分配給區域或主體。它可以通過 :ref:`area_set_space()<class_PhysicsServer3D_method_area_set_space>` 分配給一個區域，或者通過 :ref:`body_set_space()<class_PhysicsServer3D_method_body_set_space>` 分配給一個主體。
 
 .. rst-class:: classref-item-separator
 
@@ -4016,7 +4016,7 @@ Creates a space. A space is a collection of parameters for the physics engine th
 
 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` **space_get_direct_state**\ (\ space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_space_get_direct_state>`
 
-Returns the state of a space, a :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`. This object can be used to make collision/intersection queries.
+返回空間的狀態，即 :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`\ 。該對象可用於進行碰撞/相交的查詢。
 
 .. rst-class:: classref-item-separator
 
@@ -4028,7 +4028,7 @@ Returns the state of a space, a :ref:`PhysicsDirectSpaceState3D<class_PhysicsDir
 
 :ref:`float<class_float>` **space_get_param**\ (\ space\: :ref:`RID<class_RID>`, param\: :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_space_get_param>`
 
-Returns the value of a space parameter.
+返回空間參數的值。
 
 .. rst-class:: classref-item-separator
 
@@ -4040,7 +4040,7 @@ Returns the value of a space parameter.
 
 :ref:`bool<class_bool>` **space_is_active**\ (\ space\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_space_is_active>`
 
-Returns whether the space is active.
+返回該空間是否是活動的。
 
 .. rst-class:: classref-item-separator
 
@@ -4052,7 +4052,7 @@ Returns whether the space is active.
 
 |void| **space_set_active**\ (\ space\: :ref:`RID<class_RID>`, active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_space_set_active>`
 
-Marks a space as active. It will not have an effect, unless it is assigned to an area or body.
+將空間標記為活動空間。它不會有效果，除非它被分配到一個區域或物體。
 
 .. rst-class:: classref-item-separator
 
@@ -4064,7 +4064,7 @@ Marks a space as active. It will not have an effect, unless it is assigned to an
 
 |void| **space_set_param**\ (\ space\: :ref:`RID<class_RID>`, param\: :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_space_set_param>`
 
-Sets the value for a space parameter. A list of available parameters is on the :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` constants.
+設定空間參數的值。可用參數列表位於 :ref:`SpaceParameter<enum_PhysicsServer3D_SpaceParameter>` 常數上。
 
 .. rst-class:: classref-item-separator
 
@@ -4090,12 +4090,12 @@ Creates a 3D sphere shape in the physics server, and returns the :ref:`RID<class
 
 Creates a 3D world boundary shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer3D_method_shape_set_data>` to set the shape's normal direction and distance properties.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

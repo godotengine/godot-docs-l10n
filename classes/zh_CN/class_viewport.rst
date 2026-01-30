@@ -5,52 +5,52 @@
 Viewport
 ========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SubViewport<class_SubViewport>`, :ref:`Window<class_Window>`
+**派生：** :ref:`SubViewport<class_SubViewport>`, :ref:`Window<class_Window>`
 
-Abstract base class for viewports. Encapsulates drawing and interaction with a game world.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A **Viewport** creates a different view into the screen, or a sub-view inside another viewport. Child 2D nodes will display on it, and child Camera3D 3D nodes will render on it too.
-
-Optionally, a viewport can have its own 2D or 3D world, so it doesn't share what it draws with other viewports.
-
-Viewports can also choose to be audio listeners, so they generate positional audio depending on a 2D or 3D camera child of it.
-
-Also, viewports can be assigned to different screens in case the devices have multiple screens.
-
-Finally, viewports can also behave as render targets, in which case they will not be visible unless the associated texture is used to draw.
+视口的抽象基类。对绘图以及与游戏世界的交互进行了封装。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using Viewports <../tutorials/rendering/viewports>`
+**Viewport** 在屏幕中创建不同的视图，或在另一个视口内创建子视图。子 2D 节点将显示在其上，子 Camera3D 3D 节点也将在其上渲染。
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+视口也可以拥有自己的 2D 或 3D 世界，这样就不会与其他视口共享绘制的内容。
 
-- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
+视口也可以选择作为音频监听器，这样就可以根据 2D 或 3D 相机子节点生成位置音频。
 
-- `3D in 2D Viewport Demo <https://godotengine.org/asset-library/asset/2804>`__
+另外，在设备有多个屏幕的情况下，可以将视口分配给不同的屏幕。
 
-- `2D in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2803>`__
+最后，视口也可以充当渲染目标，在这种情况下，除非使用与其相关联的纹理进行绘制，否则它们将不可见。
 
-- `Screen Capture Demo <https://godotengine.org/asset-library/asset/2808>`__
+.. rst-class:: classref-introduction-group
 
-- `Dynamic Split Screen Demo <https://godotengine.org/asset-library/asset/2806>`__
+教程
+----
 
-- `3D Resolution Scaling Demo <https://godotengine.org/asset-library/asset/2805>`__
+- :doc:`使用视口 <../tutorials/rendering/viewports>`
+
+- :doc:`Viewport 和画布变换 <../tutorials/2d/2d_transforms>`
+
+- `3D 视口中的 GUI 演示 <https://godotengine.org/asset-library/asset/2807>`__
+
+- `2D 视口中的 3D 演示 <https://godotengine.org/asset-library/asset/2804>`__
+
+- `3D 视口中的 2D 演示 <https://godotengine.org/asset-library/asset/2803>`__
+
+- `屏幕捕捉演示 <https://godotengine.org/asset-library/asset/2808>`__
+
+- `动态分屏演示 <https://godotengine.org/asset-library/asset/2806>`__
+
+- `3D 分辨率缩放演示 <https://godotengine.org/asset-library/asset/2805>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -161,8 +161,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -251,8 +251,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Viewport_signal_gui_focus_changed:
 
@@ -260,9 +260,9 @@ Signals
 
 **gui_focus_changed**\ (\ node\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_Viewport_signal_gui_focus_changed>`
 
-Emitted when a Control node grabs keyboard focus.
+当控件节点获取键盘焦点时触发。
 
-\ **Note:** A Control node losing focus doesn't cause this signal to be emitted.
+\ **注意：**\ 控件节点失去焦点不会导致触发该信号。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Emitted when a Control node grabs keyboard focus.
 
 **size_changed**\ (\ ) :ref:`🔗<class_Viewport_signal_size_changed>`
 
-Emitted when the size of the viewport is changed, whether by resizing of window, or some other means.
+当视口的大小被改变时发出，无论是通过调整窗口大小，还是通过其他方式改变的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -282,8 +282,8 @@ Emitted when the size of the viewport is changed, whether by resizing of window,
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Viewport_PositionalShadowAtlasQuadrantSubdiv:
 
@@ -297,7 +297,7 @@ enum **PositionalShadowAtlasQuadrantSubdiv**: :ref:`🔗<enum_Viewport_Positiona
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_DISABLED** = ``0``
 
-This quadrant will not be used.
+不使用该象限。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_1:
 
@@ -305,7 +305,7 @@ This quadrant will not be used.
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_1** = ``1``
 
-This quadrant will only be used by one shadow map.
+该象限仅由一张阴影贴图使用。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_4:
 
@@ -313,7 +313,7 @@ This quadrant will only be used by one shadow map.
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_4** = ``2``
 
-This quadrant will be split in 4 and used by up to 4 shadow maps.
+该象限将被分为 4 份，最多被 4 张阴影贴图使用。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_16:
 
@@ -321,7 +321,7 @@ This quadrant will be split in 4 and used by up to 4 shadow maps.
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_16** = ``3``
 
-This quadrant will be split 16 ways and used by up to 16 shadow maps.
+该象限将被分为 16 份，最多被 16 张阴影贴图使用。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_64:
 
@@ -329,7 +329,7 @@ This quadrant will be split 16 ways and used by up to 16 shadow maps.
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_64** = ``4``
 
-This quadrant will be split 64 ways and used by up to 64 shadow maps.
+该象限将被分为 64 份，最多被 64 张阴影贴图使用。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_256:
 
@@ -337,7 +337,7 @@ This quadrant will be split 64 ways and used by up to 64 shadow maps.
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_256** = ``5``
 
-This quadrant will be split 256 ways and used by up to 256 shadow maps. Unless the :ref:`positional_shadow_atlas_size<class_Viewport_property_positional_shadow_atlas_size>` is very high, the shadows in this quadrant will be very low resolution.
+该象限将被分为 256 份，最多被 256 张阴影贴图使用。除非 :ref:`positional_shadow_atlas_size<class_Viewport_property_positional_shadow_atlas_size>` 非常高，否则该象限中的阴影分辨率将非常低。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_1024:
 
@@ -345,7 +345,7 @@ This quadrant will be split 256 ways and used by up to 256 shadow maps. Unless t
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_1024** = ``6``
 
-This quadrant will be split 1024 ways and used by up to 1024 shadow maps. Unless the :ref:`positional_shadow_atlas_size<class_Viewport_property_positional_shadow_atlas_size>` is very high, the shadows in this quadrant will be very low resolution.
+该象限将被分为 1024 份，最多被 1024 张阴影贴图使用。除非 :ref:`positional_shadow_atlas_size<class_Viewport_property_positional_shadow_atlas_size>` 非常高，否则该象限中的阴影分辨率将非常低。
 
 .. _class_Viewport_constant_SHADOW_ATLAS_QUADRANT_SUBDIV_MAX:
 
@@ -353,7 +353,7 @@ This quadrant will be split 1024 ways and used by up to 1024 shadow maps. Unless
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **SHADOW_ATLAS_QUADRANT_SUBDIV_MAX** = ``7``
 
-Represents the size of the :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` enum.
+代表 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ enum **Scaling3DMode**: :ref:`🔗<enum_Viewport_Scaling3DMode>`
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_BILINEAR** = ``0``
 
-Use bilinear scaling for the viewport's 3D buffer. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values less than ``1.0`` will result in undersampling while values greater than ``1.0`` will result in supersampling. A value of ``1.0`` disables scaling.
+对该视口的 3D 缓冲区使用双线性缩放。缩放的程度可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置。小于 ``1.0`` 的值会产生欠采样的效果，大于 ``1.0`` 会产生超采样的效果。值为 ``1.0`` 时禁用缩放。
 
 .. _class_Viewport_constant_SCALING_3D_MODE_FSR:
 
@@ -379,7 +379,7 @@ Use bilinear scaling for the viewport's 3D buffer. The amount of scaling can be 
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_FSR** = ``1``
 
-Use AMD FidelityFX Super Resolution 1.0 upscaling for the viewport's 3D buffer. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values less than ``1.0`` will result in the viewport being upscaled using FSR. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+对该视口的 3D 缓冲区使用 AMD FidelityFX 超分辨率 1.0 升采样技术。缩放的程度可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置。小于 ``1.0`` 的值会使用 FSR 进行放大。不支持大于 ``1.0`` 的值，会改用双线性降采样。值为 ``1.0`` 时禁用缩放。
 
 .. _class_Viewport_constant_SCALING_3D_MODE_FSR2:
 
@@ -387,7 +387,7 @@ Use AMD FidelityFX Super Resolution 1.0 upscaling for the viewport's 3D buffer. 
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_FSR2** = ``2``
 
-Use AMD FidelityFX Super Resolution 2.2 upscaling for the viewport's 3D buffer. The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. Values less than ``1.0`` will result in the viewport being upscaled using FSR2. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` will use FSR2 at native resolution as a TAA solution.
+对视口的 3D 缓冲区使用 AMD FidelityFX 超分辨率 2.2 放大。可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置缩放量。小于 ``1.0`` 的值将导致使用 FSR2 放大视口。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将使用原生分辨率下的 FSR2 作为 TAA 解决方案。
 
 .. _class_Viewport_constant_SCALING_3D_MODE_METALFX_SPATIAL:
 
@@ -395,15 +395,15 @@ Use AMD FidelityFX Super Resolution 2.2 upscaling for the viewport's 3D buffer. 
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_METALFX_SPATIAL** = ``3``
 
-Use the `MetalFX spatial upscaler <https://developer.apple.com/documentation/metalfx/mtlfxspatialscaler#overview>`__ for the viewport's 3D buffer.
+对视口的 3D 缓冲区使用 `MetalFX 空间图像放大器 <https://developer.apple.com/documentation/metalfx/mtlfxspatialscaler#overview>`__\ 。
 
-The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`.
+可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置缩放量。
 
-Values less than ``1.0`` will result in the viewport being upscaled using MetalFX. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` disables scaling.
+小于 ``1.0`` 的值将导致使用 MetalFX 放大视口。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将禁用缩放。
 
-More information: `MetalFX <https://developer.apple.com/documentation/metalfx>`__.
+更多信息：\ `MetalFX <https://developer.apple.com/documentation/metalfx>`__\ 。
 
-\ **Note:** Only supported when the Metal rendering driver is in use, which limits this scaling mode to macOS and iOS.
+\ **注意：**\ 仅在使用 Metal 渲染驱动时支持，因此该缩放模式仅限 macOS 和 iOS 使用。
 
 .. _class_Viewport_constant_SCALING_3D_MODE_METALFX_TEMPORAL:
 
@@ -411,15 +411,15 @@ More information: `MetalFX <https://developer.apple.com/documentation/metalfx>`_
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_METALFX_TEMPORAL** = ``4``
 
-Use the `MetalFX temporal upscaler <https://developer.apple.com/documentation/metalfx/mtlfxtemporalscaler#overview>`__ for the viewport's 3D buffer.
+对视口的 3D 缓冲区使用 `MetalFX 时间图像放大器 <https://developer.apple.com/documentation/metalfx/mtlfxtemporalscaler#overview>`__\ 。
 
-The amount of scaling can be set using :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>`. To determine the minimum input scale, use the :ref:`RenderingDevice.limit_get()<class_RenderingDevice_method_limit_get>` method with :ref:`RenderingDevice.LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE<class_RenderingDevice_constant_LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE>`.
+可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置缩放量。确定最小的输入缩放请在调用 :ref:`RenderingDevice.limit_get()<class_RenderingDevice_method_limit_get>` 时使用 :ref:`RenderingDevice.LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE<class_RenderingDevice_constant_LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE>`\ 。
 
-Values less than ``1.0`` will result in the viewport being upscaled using MetalFX. Values greater than ``1.0`` are not supported and bilinear downsampling will be used instead. A value of ``1.0`` will use MetalFX at native resolution as a TAA solution.
+小于 ``1.0`` 的值将导致使用 MetalFX 放大视口。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将在原生分辨率使用 MetalFX 作为 TAA 的解决方案。
 
-More information: `MetalFX <https://developer.apple.com/documentation/metalfx>`__.
+更多信息：\ `MetalFX <https://developer.apple.com/documentation/metalfx>`__\ 。
 
-\ **Note:** Only supported when the Metal rendering driver is in use, which limits this scaling mode to macOS and iOS.
+\ **注意：**\ 仅在使用 Metal 渲染驱动时支持，因此该缩放模式仅限 macOS 和 iOS 使用。
 
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
@@ -427,7 +427,7 @@ More information: `MetalFX <https://developer.apple.com/documentation/metalfx>`_
 
 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_MAX** = ``5``
 
-Represents the size of the :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` enum.
+代表 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ enum **MSAA**: :ref:`🔗<enum_Viewport_MSAA>`
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_DISABLED** = ``0``
 
-Multisample antialiasing mode disabled. This is the default value, and is also the fastest setting.
+禁用多重采样抗锯齿模式。这是默认值，也是最快的设置。
 
 .. _class_Viewport_constant_MSAA_2X:
 
@@ -453,7 +453,7 @@ Multisample antialiasing mode disabled. This is the default value, and is also t
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_2X** = ``1``
 
-Use 2× Multisample Antialiasing. This has a moderate performance cost. It helps reduce aliasing noticeably, but 4× MSAA still looks substantially better.
+使用 2 倍多重采样抗锯齿。性能成本中等。有助于显着减少锯齿，但 4× MSAA 看起来仍然要好得多。
 
 .. _class_Viewport_constant_MSAA_4X:
 
@@ -461,7 +461,7 @@ Use 2× Multisample Antialiasing. This has a moderate performance cost. It helps
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_4X** = ``2``
 
-Use 4× Multisample Antialiasing. This has a significant performance cost, and is generally a good compromise between performance and quality.
+使用 4 倍多重采样抗锯齿。性能成本显著，通常是性能和质量之间的良好折衷。
 
 .. _class_Viewport_constant_MSAA_8X:
 
@@ -469,7 +469,7 @@ Use 4× Multisample Antialiasing. This has a significant performance cost, and i
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_8X** = ``3``
 
-Use 8× Multisample Antialiasing. This has a very high performance cost. The difference between 4× and 8× MSAA may not always be visible in real gameplay conditions. Likely unsupported on low-end and older hardware.
+使用 8 倍多重采样抗锯齿。性能成本极高。在实际游戏条件下，4× 和 8× MSAA 之间的差异可能并不总是可见的。可能在低端和较旧的硬件上不受支持。
 
 .. _class_Viewport_constant_MSAA_MAX:
 
@@ -477,7 +477,7 @@ Use 8× Multisample Antialiasing. This has a very high performance cost. The dif
 
 :ref:`MSAA<enum_Viewport_MSAA>` **MSAA_MAX** = ``4``
 
-Represents the size of the :ref:`MSAA<enum_Viewport_MSAA>` enum.
+代表 :ref:`MSAA<enum_Viewport_MSAA>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ enum **AnisotropicFiltering**: :ref:`🔗<enum_Viewport_AnisotropicFiltering>`
 
 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **ANISOTROPY_DISABLED** = ``0``
 
-Anisotropic filtering is disabled.
+各向异性过滤已禁用。
 
 .. _class_Viewport_constant_ANISOTROPY_2X:
 
@@ -503,7 +503,7 @@ Anisotropic filtering is disabled.
 
 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **ANISOTROPY_2X** = ``1``
 
-Use 2× anisotropic filtering.
+使用 2× 各向异性过滤。
 
 .. _class_Viewport_constant_ANISOTROPY_4X:
 
@@ -511,7 +511,7 @@ Use 2× anisotropic filtering.
 
 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **ANISOTROPY_4X** = ``2``
 
-Use 4× anisotropic filtering. This is the default value.
+使用 4× 各向异性过滤。这是默认值。
 
 .. _class_Viewport_constant_ANISOTROPY_8X:
 
@@ -519,7 +519,7 @@ Use 4× anisotropic filtering. This is the default value.
 
 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **ANISOTROPY_8X** = ``3``
 
-Use 8× anisotropic filtering.
+使用 8× 各向异性过滤。
 
 .. _class_Viewport_constant_ANISOTROPY_16X:
 
@@ -527,7 +527,7 @@ Use 8× anisotropic filtering.
 
 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **ANISOTROPY_16X** = ``4``
 
-Use 16× anisotropic filtering.
+使用 16× 各向异性过滤。
 
 .. _class_Viewport_constant_ANISOTROPY_MAX:
 
@@ -535,7 +535,7 @@ Use 16× anisotropic filtering.
 
 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **ANISOTROPY_MAX** = ``5``
 
-Represents the size of the :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` enum.
+代表 :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -553,7 +553,7 @@ enum **ScreenSpaceAA**: :ref:`🔗<enum_Viewport_ScreenSpaceAA>`
 
 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **SCREEN_SPACE_AA_DISABLED** = ``0``
 
-Do not perform any antialiasing in the full screen post-process.
+不要在全屏后处理中执行抗锯齿。
 
 .. _class_Viewport_constant_SCREEN_SPACE_AA_FXAA:
 
@@ -561,7 +561,7 @@ Do not perform any antialiasing in the full screen post-process.
 
 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **SCREEN_SPACE_AA_FXAA** = ``1``
 
-Use fast approximate antialiasing. FXAA is a popular screen-space antialiasing method, which is fast but will make the image look blurry, especially at lower resolutions. It can still work relatively well at large resolutions such as 1440p and 4K.
+使用快速近似抗锯齿（Fast Approximate Anti-Aliasing）。FXAA 是一种流行的屏幕空间抗锯齿方法，速度很快，但会让图像变模糊，使用较低分辨率时尤为显著。1440p 和 4K 等较高分辨率下效果仍然不错。
 
 .. _class_Viewport_constant_SCREEN_SPACE_AA_SMAA:
 
@@ -569,7 +569,7 @@ Use fast approximate antialiasing. FXAA is a popular screen-space antialiasing m
 
 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **SCREEN_SPACE_AA_SMAA** = ``2``
 
-Use subpixel morphological antialiasing. SMAA may produce clearer results than FXAA, but at a slightly higher performance cost.
+使用次像素形态抗锯齿。SMAA 得到的结果可能比 FXAA 更清晰，但是性能开销会稍微高一些。
 
 .. _class_Viewport_constant_SCREEN_SPACE_AA_MAX:
 
@@ -577,7 +577,7 @@ Use subpixel morphological antialiasing. SMAA may produce clearer results than F
 
 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **SCREEN_SPACE_AA_MAX** = ``3``
 
-Represents the size of the :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` enum.
+代表 :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ enum **RenderInfo**: :ref:`🔗<enum_Viewport_RenderInfo>`
 
 :ref:`RenderInfo<enum_Viewport_RenderInfo>` **RENDER_INFO_OBJECTS_IN_FRAME** = ``0``
 
-Amount of objects in frame.
+帧中对象的数量。
 
 .. _class_Viewport_constant_RENDER_INFO_PRIMITIVES_IN_FRAME:
 
@@ -603,7 +603,7 @@ Amount of objects in frame.
 
 :ref:`RenderInfo<enum_Viewport_RenderInfo>` **RENDER_INFO_PRIMITIVES_IN_FRAME** = ``1``
 
-Amount of vertices in frame.
+帧中的顶点数量。
 
 .. _class_Viewport_constant_RENDER_INFO_DRAW_CALLS_IN_FRAME:
 
@@ -611,7 +611,7 @@ Amount of vertices in frame.
 
 :ref:`RenderInfo<enum_Viewport_RenderInfo>` **RENDER_INFO_DRAW_CALLS_IN_FRAME** = ``2``
 
-Amount of draw calls in frame.
+帧中的绘制调用量。
 
 .. _class_Viewport_constant_RENDER_INFO_MAX:
 
@@ -619,7 +619,7 @@ Amount of draw calls in frame.
 
 :ref:`RenderInfo<enum_Viewport_RenderInfo>` **RENDER_INFO_MAX** = ``3``
 
-Represents the size of the :ref:`RenderInfo<enum_Viewport_RenderInfo>` enum.
+代表 :ref:`RenderInfo<enum_Viewport_RenderInfo>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ enum **RenderInfoType**: :ref:`🔗<enum_Viewport_RenderInfoType>`
 
 :ref:`RenderInfoType<enum_Viewport_RenderInfoType>` **RENDER_INFO_TYPE_VISIBLE** = ``0``
 
-Visible render pass (excluding shadows).
+可见渲染阶段（不含阴影）。
 
 .. _class_Viewport_constant_RENDER_INFO_TYPE_SHADOW:
 
@@ -645,7 +645,7 @@ Visible render pass (excluding shadows).
 
 :ref:`RenderInfoType<enum_Viewport_RenderInfoType>` **RENDER_INFO_TYPE_SHADOW** = ``1``
 
-Shadow render pass. Objects will be rendered several times depending on the number of amounts of lights with shadows and the number of directional shadow splits.
+阴影渲染阶段。根据开启了阴影的灯光数以及方向阴影的拆分数，同一个对象可能会渲染多次。
 
 .. _class_Viewport_constant_RENDER_INFO_TYPE_CANVAS:
 
@@ -653,7 +653,7 @@ Shadow render pass. Objects will be rendered several times depending on the numb
 
 :ref:`RenderInfoType<enum_Viewport_RenderInfoType>` **RENDER_INFO_TYPE_CANVAS** = ``2``
 
-Canvas item rendering. This includes all 2D rendering.
+画布项渲染。包括所有 2D 渲染。
 
 .. _class_Viewport_constant_RENDER_INFO_TYPE_MAX:
 
@@ -661,7 +661,7 @@ Canvas item rendering. This includes all 2D rendering.
 
 :ref:`RenderInfoType<enum_Viewport_RenderInfoType>` **RENDER_INFO_TYPE_MAX** = ``3``
 
-Represents the size of the :ref:`RenderInfoType<enum_Viewport_RenderInfoType>` enum.
+代表 :ref:`RenderInfoType<enum_Viewport_RenderInfoType>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ enum **DebugDraw**: :ref:`🔗<enum_Viewport_DebugDraw>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_DISABLED** = ``0``
 
-Objects are displayed normally.
+对象正常显示。
 
 .. _class_Viewport_constant_DEBUG_DRAW_UNSHADED:
 
@@ -687,7 +687,7 @@ Objects are displayed normally.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_UNSHADED** = ``1``
 
-Objects are displayed without light information.
+显示的对象没有光照信息。
 
 .. _class_Viewport_constant_DEBUG_DRAW_LIGHTING:
 
@@ -695,9 +695,9 @@ Objects are displayed without light information.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_LIGHTING** = ``2``
 
-Objects are displayed without textures and only with lighting information.
+对象不使用纹理，只使用光照信息显示。
 
-\ **Note:** When using this debug draw mode, custom shaders are ignored since all materials in the scene temporarily use a debug material. This means the result from custom shader functions (such as vertex displacement) won't be visible anymore when using this debug draw mode.
+\ **注意：**\ 使用该调试绘图模式时，场景中的所有材质都会暂时使用调试材质，因此会忽略自定义着色器。这意味着使用该调试绘图模式时，自定义着色器函数的结果（例如顶点位移）不再可见。
 
 .. _class_Viewport_constant_DEBUG_DRAW_OVERDRAW:
 
@@ -705,9 +705,9 @@ Objects are displayed without textures and only with lighting information.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_OVERDRAW** = ``3``
 
-Objects are displayed semi-transparent with additive blending so you can see where they are drawing over top of one another. A higher overdraw means you are wasting performance on drawing pixels that are being hidden behind others.
+对象通过加法混合显示为半透明，因此可以看到它们在彼此之上绘制的位置。更高的过度绘制（由更亮的颜色表示）意味着在绘制隐藏在其他像素后面的像素时浪费了性能。
 
-\ **Note:** When using this debug draw mode, custom shaders are ignored since all materials in the scene temporarily use a debug material. This means the result from custom shader functions (such as vertex displacement) won't be visible anymore when using this debug draw mode.
+\ **注意：**\ 使用该调试绘图模式时，场景中的所有材质都会暂时使用调试材质，因此会忽略自定义着色器。这意味着使用该调试绘图模式时，自定义着色器函数的结果（例如顶点位移）不再可见。
 
 .. _class_Viewport_constant_DEBUG_DRAW_WIREFRAME:
 
@@ -715,9 +715,9 @@ Objects are displayed semi-transparent with additive blending so you can see whe
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_WIREFRAME** = ``4``
 
-Objects are displayed as wireframe models.
+对象以线框模型的形式显示。
 
-\ **Note:** :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>` must be called before loading any meshes for wireframes to be visible when using the Compatibility renderer.
+\ **注意：**\ 使用 Compatibility 渲染器时，必须先调用 :ref:`RenderingServer.set_debug_generate_wireframes()<class_RenderingServer_method_set_debug_generate_wireframes>`\ ，然后再加载网格，才能显示线框。
 
 .. _class_Viewport_constant_DEBUG_DRAW_NORMAL_BUFFER:
 
@@ -725,9 +725,9 @@ Objects are displayed as wireframe models.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_NORMAL_BUFFER** = ``5``
 
-Objects are displayed without lighting information and their textures replaced by normal mapping.
+显示对象时不使用光照信息，将纹理替换为法线贴图。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_VOXEL_GI_ALBEDO:
 
@@ -735,9 +735,9 @@ Objects are displayed without lighting information and their textures replaced b
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_VOXEL_GI_ALBEDO** = ``6``
 
-Objects are displayed with only the albedo value from :ref:`VoxelGI<class_VoxelGI>`\ s. Requires at least one visible :ref:`VoxelGI<class_VoxelGI>` node that has been baked to have a visible effect.
+对象只使用 :ref:`VoxelGI<class_VoxelGI>` 中的反照率值显示。要求至少存在一个可见且已烘焙的 :ref:`VoxelGI<class_VoxelGI>` 节点，才能有可见的效果。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_VOXEL_GI_LIGHTING:
 
@@ -745,9 +745,9 @@ Objects are displayed with only the albedo value from :ref:`VoxelGI<class_VoxelG
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_VOXEL_GI_LIGHTING** = ``7``
 
-Objects are displayed with only the lighting value from :ref:`VoxelGI<class_VoxelGI>`\ s. Requires at least one visible :ref:`VoxelGI<class_VoxelGI>` node that has been baked to have a visible effect.
+对象只使用 :ref:`VoxelGI<class_VoxelGI>` 中的光照值显示。要求至少存在一个可见且已烘焙的 :ref:`VoxelGI<class_VoxelGI>` 节点，才能有可见的效果。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_VOXEL_GI_EMISSION:
 
@@ -755,9 +755,9 @@ Objects are displayed with only the lighting value from :ref:`VoxelGI<class_Voxe
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_VOXEL_GI_EMISSION** = ``8``
 
-Objects are displayed with only the emission color from :ref:`VoxelGI<class_VoxelGI>`\ s. Requires at least one visible :ref:`VoxelGI<class_VoxelGI>` node that has been baked to have a visible effect.
+对象只使用 :ref:`VoxelGI<class_VoxelGI>` 中的发光颜色显示。要求至少存在一个可见且已烘焙的 :ref:`VoxelGI<class_VoxelGI>` 节点，才能有可见的效果。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_SHADOW_ATLAS:
 
@@ -765,7 +765,7 @@ Objects are displayed with only the emission color from :ref:`VoxelGI<class_Voxe
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SHADOW_ATLAS** = ``9``
 
-Draws the shadow atlas that stores shadows from :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s in the upper left quadrant of the **Viewport**.
+在 **Viewport** 的左上象限中绘制存储来自 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 的阴影的阴影图集。
 
 .. _class_Viewport_constant_DEBUG_DRAW_DIRECTIONAL_SHADOW_ATLAS:
 
@@ -773,7 +773,7 @@ Draws the shadow atlas that stores shadows from :ref:`OmniLight3D<class_OmniLigh
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_DIRECTIONAL_SHADOW_ATLAS** = ``10``
 
-Draws the shadow atlas that stores shadows from :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s in the upper left quadrant of the **Viewport**.
+在 **Viewport** 的左上象限中绘制存储来自 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的阴影的阴影图集。
 
 .. _class_Viewport_constant_DEBUG_DRAW_SCENE_LUMINANCE:
 
@@ -781,9 +781,9 @@ Draws the shadow atlas that stores shadows from :ref:`DirectionalLight3D<class_D
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SCENE_LUMINANCE** = ``11``
 
-Draws the scene luminance buffer (if available) in the upper left quadrant of the **Viewport**.
+在 **Viewport** 的左上象限中绘制场景亮度缓冲（如果可用）。
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering methods.
+\ **注意：**\ 仅在使用 Forward+ 或 Mobile 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_SSAO:
 
@@ -791,9 +791,9 @@ Draws the scene luminance buffer (if available) in the upper left quadrant of th
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SSAO** = ``12``
 
-Draws the screen-space ambient occlusion texture instead of the scene so that you can clearly see how it is affecting objects. In order for this display mode to work, you must have :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>` set in your :ref:`WorldEnvironment<class_WorldEnvironment>`.
+绘制屏幕空间环境光遮蔽纹理而不是场景，以便可以清楚地看到它是如何影响对象的。为了使该显示模式起作用，必须在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中设置 :ref:`Environment.ssao_enabled<class_Environment_property_ssao_enabled>`\ 。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_SSIL:
 
@@ -801,9 +801,9 @@ Draws the screen-space ambient occlusion texture instead of the scene so that yo
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SSIL** = ``13``
 
-Draws the screen-space indirect lighting texture instead of the scene so that you can clearly see how it is affecting objects. In order for this display mode to work, you must have :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>` set in your :ref:`WorldEnvironment<class_WorldEnvironment>`.
+绘制屏幕空间间接照明纹理而不是场景，以便可以清楚地看到它是如何影响对象的。为了使该显示模式起作用，必须在 :ref:`WorldEnvironment<class_WorldEnvironment>` 中设置 :ref:`Environment.ssil_enabled<class_Environment_property_ssil_enabled>`\ 。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_PSSM_SPLITS:
 
@@ -811,11 +811,11 @@ Draws the screen-space indirect lighting texture instead of the scene so that yo
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_PSSM_SPLITS** = ``14``
 
-Colors each PSSM split for the :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s in the scene a different color so you can see where the splits are. In order (from closest to furthest from the camera), they are colored red, green, blue, and yellow.
+将场景中 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的各个 PSSM 拆分用不同的颜色着色，便于查看拆分的位置。着色（按照距离相机由近到远）的顺序为红、绿、蓝、黄。
 
-\ **Note:** When using this debug draw mode, custom shaders are ignored since all materials in the scene temporarily use a debug material. This means the result from custom shader functions (such as vertex displacement) won't be visible anymore when using this debug draw mode.
+\ **注意：**\ 使用该调试绘图模式时，场景中的所有材质都会暂时使用调试材质，因此会忽略自定义着色器。这意味着使用该调试绘图模式时，自定义着色器函数的结果（例如顶点位移）不再可见。
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering methods.
+\ **注意：**\ 仅在使用 Forward+ 或 Mobile 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_DECAL_ATLAS:
 
@@ -823,9 +823,9 @@ Colors each PSSM split for the :ref:`DirectionalLight3D<class_DirectionalLight3D
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_DECAL_ATLAS** = ``15``
 
-Draws the decal atlas used by :ref:`Decal<class_Decal>`\ s and light projector textures in the upper left quadrant of the **Viewport**.
+在 **Viewport** 的左上象限中绘制 :ref:`Decal<class_Decal>` 使用的贴花和光投影仪的纹理。
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering methods.
+\ **注意：**\ 仅在使用 Forward+ 或 Mobile 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_SDFGI:
 
@@ -833,11 +833,11 @@ Draws the decal atlas used by :ref:`Decal<class_Decal>`\ s and light projector t
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SDFGI** = ``16``
 
-Draws the cascades used to render signed distance field global illumination (SDFGI).
+绘制用于渲染带符号距离场全局光照（SDFGI）的级联。
 
-Does nothing if the current environment's :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` is ``false``.
+如果当前环境的 :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` 为 ``false`` 或平台不支持 SDFGI，则不执行任何操作。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_SDFGI_PROBES:
 
@@ -859,9 +859,9 @@ Does nothing if the current environment's :ref:`Environment.sdfgi_enabled<class_
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_GI_BUFFER** = ``18``
 
-Draws the buffer used for global illumination from :ref:`VoxelGI<class_VoxelGI>` or SDFGI. Requires :ref:`VoxelGI<class_VoxelGI>` (at least one visible baked VoxelGI node) or SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) to be enabled to have a visible effect.
+绘制用于 :ref:`VoxelGI<class_VoxelGI>` 或 SDFGI 全局光照的缓冲。需要启用 :ref:`VoxelGI<class_VoxelGI>`\ （至少有一个可见的已烘焙 VoxelGI 节点）或 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）才能有可见的效果。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_DISABLE_LOD:
 
@@ -869,7 +869,7 @@ Draws the buffer used for global illumination from :ref:`VoxelGI<class_VoxelGI>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_DISABLE_LOD** = ``19``
 
-Draws all of the objects at their highest polycount regardless of their distance from the camera. No low level of detail (LOD) is applied.
+使用最高多边形数绘制对象，忽略与相机的距离。不应用低细节层次（LOD）。
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_OMNI_LIGHTS:
 
@@ -877,9 +877,9 @@ Draws all of the objects at their highest polycount regardless of their distance
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_OMNI_LIGHTS** = ``20``
 
-Draws the cluster used by :ref:`OmniLight3D<class_OmniLight3D>` nodes to optimize light rendering.
+绘制 :ref:`OmniLight3D<class_OmniLight3D>` 节点所使用的集群，用于优化光照渲染。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_SPOT_LIGHTS:
 
@@ -887,9 +887,9 @@ Draws the cluster used by :ref:`OmniLight3D<class_OmniLight3D>` nodes to optimiz
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_SPOT_LIGHTS** = ``21``
 
-Draws the cluster used by :ref:`SpotLight3D<class_SpotLight3D>` nodes to optimize light rendering.
+绘制 :ref:`SpotLight3D<class_SpotLight3D>` 节点所使用的集群，用于优化光照渲染。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_DECALS:
 
@@ -897,9 +897,9 @@ Draws the cluster used by :ref:`SpotLight3D<class_SpotLight3D>` nodes to optimiz
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_DECALS** = ``22``
 
-Draws the cluster used by :ref:`Decal<class_Decal>` nodes to optimize decal rendering.
+绘制 :ref:`Decal<class_Decal>` 节点所使用的集群，用于优化贴花渲染。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_CLUSTER_REFLECTION_PROBES:
 
@@ -907,9 +907,9 @@ Draws the cluster used by :ref:`Decal<class_Decal>` nodes to optimize decal rend
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_CLUSTER_REFLECTION_PROBES** = ``23``
 
-Draws the cluster used by :ref:`ReflectionProbe<class_ReflectionProbe>` nodes to optimize reflection probes.
+绘制 :ref:`ReflectionProbe<class_ReflectionProbe>` 节点所使用的集群，用于优化反射探针。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_OCCLUDERS:
 
@@ -917,9 +917,9 @@ Draws the cluster used by :ref:`ReflectionProbe<class_ReflectionProbe>` nodes to
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_OCCLUDERS** = ``24``
 
-Draws the buffer used for occlusion culling.
+绘制遮挡剔除所使用的缓冲。
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering methods.
+\ **注意：**\ 仅在使用 Forward+ 或 Mobile 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_MOTION_VECTORS:
 
@@ -927,9 +927,9 @@ Draws the buffer used for occlusion culling.
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_MOTION_VECTORS** = ``25``
 
-Draws vector lines over the viewport to indicate the movement of pixels between frames.
+在视口中绘制向量线条，表示相邻两帧之间像素的移动。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_INTERNAL_BUFFER:
 
@@ -937,9 +937,9 @@ Draws vector lines over the viewport to indicate the movement of pixels between 
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_INTERNAL_BUFFER** = ``26``
 
-Draws the internal resolution buffer of the scene in linear colorspace before tonemapping or post-processing is applied.
+在应用色调映射或后期处理之前，以线性色彩空间绘制场景的内部分辨率缓冲区。
 
-\ **Note:** Only supported when using the Forward+ or Mobile rendering methods.
+\ **注意：**\ 仅在使用 Forward+ 或 Mobile 渲染方式时有效。
 
 .. rst-class:: classref-item-separator
 
@@ -957,7 +957,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST** = ``0``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+纹理过滤仅从最近的像素读取。这使得纹理从近距离看是像素化的，从远处看是颗粒状的（由于多级渐远纹理没有被采样）。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR:
 
@@ -965,7 +965,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR** = ``1``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+纹理过滤在最近的 4 个像素之间进行混合。这使得纹理从近处看起来很平滑，从远处看起来却有颗粒感（由于多级渐远纹理没有被采样）。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS:
 
@@ -973,9 +973,9 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS** = ``2``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+纹理过滤在最近的 4 个像素和最近的 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来平滑，从远处看起来也平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+将此用于可能以低缩放查看的非像素艺术纹理（例如，由于 :ref:`Camera2D<class_Camera2D>` 缩放或精灵缩放），因为多级渐远纹理对于平滑小于屏幕像素的像素很重要。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -983,9 +983,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+纹理过滤从最近的像素读取并在最近的 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来像素化，从远处看起来平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+将此用于可能以低缩放查看的非像素艺术纹理（例如，由于 :ref:`Camera2D<class_Camera2D>` 缩放或精灵缩放），因为多级渐远纹理对于平滑小于屏幕像素的像素很重要。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX:
 
@@ -993,7 +993,7 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX** = ``4``
 
-Represents the size of the :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` enum.
+代表 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1011,7 +1011,7 @@ enum **DefaultCanvasItemTextureRepeat**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_DISABLED** = ``0``
 
-Disables textures repeating. Instead, when reading UVs outside the 0-1 range, the value will be clamped to the edge of the texture, resulting in a stretched out look at the borders of the texture.
+禁用纹理重复。相反，当读取 0-1 范围之外的 UV 时，该值将被钳制在纹理的边缘，从而导致纹理的边界看起来被拉长。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_ENABLED:
 
@@ -1019,7 +1019,7 @@ Disables textures repeating. Instead, when reading UVs outside the 0-1 range, th
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_ENABLED** = ``1``
 
-Enables the texture to repeat when UV coordinates are outside the 0-1 range. If using one of the linear filtering modes, this can result in artifacts at the edges of a texture when the sampler filters across the edges of the texture.
+当 UV 坐标超出 0-1 范围时，使纹理能够重复。如果使用其中一种线性过滤模式，则当采样器过滤纹理边缘时，这可能会导致纹理边缘出现伪影。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR:
 
@@ -1027,7 +1027,7 @@ Enables the texture to repeat when UV coordinates are outside the 0-1 range. If 
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR** = ``2``
 
-Flip the texture when repeating so that the edge lines up instead of abruptly changing.
+重复时翻转该纹理，使边缘对齐而不是突然改变。
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX:
 
@@ -1035,7 +1035,7 @@ Flip the texture when repeating so that the edge lines up instead of abruptly ch
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX** = ``3``
 
-Represents the size of the :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` enum.
+代表 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1053,7 +1053,7 @@ enum **SDFOversize**: :ref:`🔗<enum_Viewport_SDFOversize>`
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_100_PERCENT** = ``0``
 
-The signed distance field only covers the viewport's own rectangle.
+带符号距离场仅覆盖视口矩形本身。
 
 .. _class_Viewport_constant_SDF_OVERSIZE_120_PERCENT:
 
@@ -1061,7 +1061,7 @@ The signed distance field only covers the viewport's own rectangle.
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_120_PERCENT** = ``1``
 
-The signed distance field is expanded to cover 20% of the viewport's size around the borders.
+带符号距离场的每个边界都覆盖超出视口大小 20% 的范围。
 
 .. _class_Viewport_constant_SDF_OVERSIZE_150_PERCENT:
 
@@ -1069,7 +1069,7 @@ The signed distance field is expanded to cover 20% of the viewport's size around
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_150_PERCENT** = ``2``
 
-The signed distance field is expanded to cover 50% of the viewport's size around the borders.
+带符号距离场的每个边界都覆盖超出视口大小 50% 的范围。
 
 .. _class_Viewport_constant_SDF_OVERSIZE_200_PERCENT:
 
@@ -1077,7 +1077,7 @@ The signed distance field is expanded to cover 50% of the viewport's size around
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_200_PERCENT** = ``3``
 
-The signed distance field is expanded to cover 100% (double) of the viewport's size around the borders.
+带符号距离场的每个边界都覆盖超出视口大小 100% 的范围（翻倍）。
 
 .. _class_Viewport_constant_SDF_OVERSIZE_MAX:
 
@@ -1085,7 +1085,7 @@ The signed distance field is expanded to cover 100% (double) of the viewport's s
 
 :ref:`SDFOversize<enum_Viewport_SDFOversize>` **SDF_OVERSIZE_MAX** = ``4``
 
-Represents the size of the :ref:`SDFOversize<enum_Viewport_SDFOversize>` enum.
+代表 :ref:`SDFOversize<enum_Viewport_SDFOversize>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1103,7 +1103,7 @@ enum **SDFScale**: :ref:`🔗<enum_Viewport_SDFScale>`
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_100_PERCENT** = ``0``
 
-The signed distance field is rendered at full resolution.
+使用完整分辨率渲染带符号距离场。
 
 .. _class_Viewport_constant_SDF_SCALE_50_PERCENT:
 
@@ -1111,7 +1111,7 @@ The signed distance field is rendered at full resolution.
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_50_PERCENT** = ``1``
 
-The signed distance field is rendered at half the resolution of this viewport.
+使用视口一半的分辨率渲染带符号距离场。
 
 .. _class_Viewport_constant_SDF_SCALE_25_PERCENT:
 
@@ -1119,7 +1119,7 @@ The signed distance field is rendered at half the resolution of this viewport.
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_25_PERCENT** = ``2``
 
-The signed distance field is rendered at a quarter the resolution of this viewport.
+使用视口四分之一的分辨率渲染带符号距离场。
 
 .. _class_Viewport_constant_SDF_SCALE_MAX:
 
@@ -1127,7 +1127,7 @@ The signed distance field is rendered at a quarter the resolution of this viewpo
 
 :ref:`SDFScale<enum_Viewport_SDFScale>` **SDF_SCALE_MAX** = ``3``
 
-Represents the size of the :ref:`SDFScale<enum_Viewport_SDFScale>` enum.
+代表 :ref:`SDFScale<enum_Viewport_SDFScale>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1145,7 @@ enum **VRSMode**: :ref:`🔗<enum_Viewport_VRSMode>`
 
 :ref:`VRSMode<enum_Viewport_VRSMode>` **VRS_DISABLED** = ``0``
 
-Variable Rate Shading is disabled.
+禁用可变速率着色。
 
 .. _class_Viewport_constant_VRS_TEXTURE:
 
@@ -1153,7 +1153,7 @@ Variable Rate Shading is disabled.
 
 :ref:`VRSMode<enum_Viewport_VRSMode>` **VRS_TEXTURE** = ``1``
 
-Variable Rate Shading uses a texture. Note, for stereoscopic use a texture atlas with a texture for each view.
+可变速率着色使用纹理。请注意，使用立体视觉时请使用为每个视图提供纹理的纹理图集。
 
 .. _class_Viewport_constant_VRS_XR:
 
@@ -1161,7 +1161,7 @@ Variable Rate Shading uses a texture. Note, for stereoscopic use a texture atlas
 
 :ref:`VRSMode<enum_Viewport_VRSMode>` **VRS_XR** = ``2``
 
-Variable Rate Shading's texture is supplied by the primary :ref:`XRInterface<class_XRInterface>`.
+可变速率着色纹理由主 :ref:`XRInterface<class_XRInterface>` 提供。
 
 .. _class_Viewport_constant_VRS_MAX:
 
@@ -1169,7 +1169,7 @@ Variable Rate Shading's texture is supplied by the primary :ref:`XRInterface<cla
 
 :ref:`VRSMode<enum_Viewport_VRSMode>` **VRS_MAX** = ``3``
 
-Represents the size of the :ref:`VRSMode<enum_Viewport_VRSMode>` enum.
+代表 :ref:`VRSMode<enum_Viewport_VRSMode>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1187,7 +1187,7 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 
 :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` **VRS_UPDATE_DISABLED** = ``0``
 
-The input texture for variable rate shading will not be processed.
+可变速率着色的输入纹理将不会被处理。
 
 .. _class_Viewport_constant_VRS_UPDATE_ONCE:
 
@@ -1195,7 +1195,7 @@ The input texture for variable rate shading will not be processed.
 
 :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` **VRS_UPDATE_ONCE** = ``1``
 
-The input texture for variable rate shading will be processed once.
+可变速率着色的输入纹理将被处理一次。
 
 .. _class_Viewport_constant_VRS_UPDATE_ALWAYS:
 
@@ -1203,7 +1203,7 @@ The input texture for variable rate shading will be processed once.
 
 :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` **VRS_UPDATE_ALWAYS** = ``2``
 
-The input texture for variable rate shading will be processed each frame.
+可变速率着色的输入纹理将每帧进行处理。
 
 .. _class_Viewport_constant_VRS_UPDATE_MAX:
 
@@ -1211,7 +1211,7 @@ The input texture for variable rate shading will be processed each frame.
 
 :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` **VRS_UPDATE_MAX** = ``3``
 
-Represents the size of the :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` enum.
+代表 :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -1219,8 +1219,8 @@ Represents the size of the :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` enu
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Viewport_property_anisotropic_filtering_level:
 
@@ -1233,13 +1233,13 @@ Property Descriptions
 - |void| **set_anisotropic_filtering_level**\ (\ value\: :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>`\ )
 - :ref:`AnisotropicFiltering<enum_Viewport_AnisotropicFiltering>` **get_anisotropic_filtering_level**\ (\ )
 
-Sets the maximum number of samples to take when using anisotropic filtering on textures (as a power of two). A higher sample count will result in sharper textures at oblique angles, but is more expensive to compute. A value of ``0`` forcibly disables anisotropic filtering, even on materials where it is enabled.
+设置在纹理上使用各向异性过滤时要采用的最大样本数（作为 2 的幂）。更高的采样数将导致倾斜角度的纹理更清晰，但计算成本更高。\ ``0`` 的值会强制禁用各向异性过滤，即使在启用它的材质上也是如此。
 
-The anisotropic filtering level also affects decals and light projectors if they are configured to use anisotropic filtering. See :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
+如果贴花和投影器被配置为使用各向异性过滤，则各向异性过滤级别也会影响它们。见 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` and :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`\ 。
 
-\ **Note:** In 3D, for this setting to have an effect, set :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` to :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on materials.
+\ **注意：**\ 要使该设置在 3D 中生效，请在材质上将 :ref:`BaseMaterial3D.texture_filter<class_BaseMaterial3D_property_texture_filter>` 设置为 :ref:`BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 或 :ref:`BaseMaterial3D.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_BaseMaterial3D_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>`\ 。
 
-\ **Note:** In 2D, for this setting to have an effect, set :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` to :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` or :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>` on the :ref:`CanvasItem<class_CanvasItem>` node displaying the texture (or in :ref:`CanvasTexture<class_CanvasTexture>`). However, anisotropic filtering is rarely useful in 2D, so only enable it for textures in 2D if it makes a meaningful visual difference.
+\ **注意：**\ 要使该设置在 2D 中生效，请在显示纹理的 :ref:`CanvasItem<class_CanvasItem>` 节点上（或 :ref:`CanvasTexture<class_CanvasTexture>` 中）将 :ref:`CanvasItem.texture_filter<class_CanvasItem_property_texture_filter>` 设置为 :ref:`CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC>` 或 :ref:`CanvasItem.TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC<class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS_ANISOTROPIC>`\ 。然而各向异性过滤在 2D 中并不实用，因此在 2D 中只有在它产生有意义的视觉差异时才对纹理启用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1256,7 @@ The anisotropic filtering level also affects decals and light projectors if they
 - |void| **set_as_audio_listener_2d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_audio_listener_2d**\ (\ )
 
-If ``true``, the viewport will process 2D audio streams.
+如果为 ``true``\ ，该视口将处理 2D 音频流。
 
 .. rst-class:: classref-item-separator
 
@@ -1273,7 +1273,7 @@ If ``true``, the viewport will process 2D audio streams.
 - |void| **set_as_audio_listener_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_audio_listener_3d**\ (\ )
 
-If ``true``, the viewport will process 3D audio streams.
+如果为 ``true``\ ，该视口将处理 3D 音频流。
 
 .. rst-class:: classref-item-separator
 
@@ -1343,7 +1343,7 @@ The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_canvas_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_canvas_transform**\ (\ )
 
-The canvas transform of the viewport, useful for changing the on-screen positions of all child :ref:`CanvasItem<class_CanvasItem>`\ s. This is relative to the global canvas transform of the viewport.
+该视口的画布变换，对改变所有子 :ref:`CanvasItem<class_CanvasItem>` 的屏幕位置很有用。相对于该视口的全局画布变换。
 
 .. rst-class:: classref-item-separator
 
@@ -1360,7 +1360,7 @@ The canvas transform of the viewport, useful for changing the on-screen position
 - |void| **set_debug_draw**\ (\ value\: :ref:`DebugDraw<enum_Viewport_DebugDraw>`\ )
 - :ref:`DebugDraw<enum_Viewport_DebugDraw>` **get_debug_draw**\ (\ )
 
-The overlay mode for test rendered geometry in debug purposes.
+在调试时，用于测试渲染的几何图形的叠加模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1377,7 +1377,7 @@ The overlay mode for test rendered geometry in debug purposes.
 - |void| **set_disable_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_3d_disabled**\ (\ )
 
-Disable 3D rendering (but keep 2D rendering).
+禁用 3D 渲染（但保留 2D 渲染）。
 
 .. rst-class:: classref-item-separator
 
@@ -1394,9 +1394,9 @@ Disable 3D rendering (but keep 2D rendering).
 - |void| **set_fsr_sharpness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fsr_sharpness**\ (\ )
 
-Determines how sharp the upscaled image will be when using the FSR upscaling mode. Sharpness halves with every whole number. Values go from 0.0 (sharpest) to 2.0. Values above 2.0 won't make a visible difference.
+确定使用 FSR 放大模式时，放大后的图像的锐度。每个整数的锐度减半。值从 0.0（最锐利）到 2.0。高于 2.0 的值不会产生明显的差异。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/scaling_3d/fsr_sharpness<class_ProjectSettings_property_rendering/scaling_3d/fsr_sharpness>` project setting.
+要在根视口上控制此属性，请设置 :ref:`ProjectSettings.rendering/scaling_3d/fsr_sharpness<class_ProjectSettings_property_rendering/scaling_3d/fsr_sharpness>` 项目设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1413,7 +1413,7 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_global_canvas_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_global_canvas_transform**\ (\ )
 
-The global canvas transform of the viewport. The canvas transform is relative to this.
+该视口的全局画布变换。画布变换是相对于这个的。
 
 .. rst-class:: classref-item-separator
 
@@ -1430,7 +1430,7 @@ The global canvas transform of the viewport. The canvas transform is relative to
 - |void| **set_disable_input**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_input_disabled**\ (\ )
 
-If ``true``, the viewport will not receive input events.
+如果为 ``true``\ ，该视口将不接收输入事件。
 
 .. rst-class:: classref-item-separator
 
@@ -1464,7 +1464,7 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 - |void| **set_embedding_subwindows**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_embedding_subwindows**\ (\ )
 
-If ``true``, sub-windows (popups and dialogs) will be embedded inside application window as control-like nodes. If ``false``, they will appear as separate windows handled by the operating system.
+如果为 ``true``\ ，子窗口（弹出窗口和对话框）将和控件等节点一样嵌入到应用程序窗口中。如果为 ``false``\ ，它们将显示为操作系统处理的独立窗口。
 
 .. rst-class:: classref-item-separator
 
@@ -1481,7 +1481,7 @@ If ``true``, sub-windows (popups and dialogs) will be embedded inside applicatio
 - |void| **set_snap_controls_to_pixels**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_snap_controls_to_pixels_enabled**\ (\ )
 
-If ``true``, the GUI controls on the viewport will lay pixel perfectly.
+如果为 ``true``\ ，该视口上的 GUI 控件将完美地放置像素。
 
 .. rst-class:: classref-item-separator
 
@@ -1498,11 +1498,11 @@ If ``true``, the GUI controls on the viewport will lay pixel perfectly.
 - |void| **set_handle_input_locally**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_handling_input_locally**\ (\ )
 
-If ``true``, this viewport will mark incoming input events as handled by itself. If ``false``, this is instead done by the first parent viewport that is set to handle input locally.
+如果为 ``true``\ ，则这个视口会把收到的输入事件标记为已被自身处理。如果为 ``false``\ ，则由第一个设置本地处理输入的父级视口进行这样的操作。
 
-A :ref:`SubViewportContainer<class_SubViewportContainer>` will automatically set this property to ``false`` for the **Viewport** contained inside of it.
+\ :ref:`SubViewportContainer<class_SubViewportContainer>` 会自动将其包含的 **Viewport** 的这个属性设置为 ``false``\ 。
 
-See also :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>` and :ref:`is_input_handled()<class_Viewport_method_is_input_handled>`.
+另见 :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>` 和 :ref:`is_input_handled()<class_Viewport_method_is_input_handled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1519,11 +1519,11 @@ See also :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-The automatic LOD bias to use for meshes rendered within the **Viewport** (this is analogous to :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` to improve performance at the cost of geometry detail.
+用于在 **Viewport** 中渲染的网格的自动 LOD 偏置（类似于 :ref:`ReflectionProbe.mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>`\ ）。较高的值将使用生成了 LOD 变化的网格的较不详细版本。如果被设置为 ``0.0``\ ，则自动 LOD 将被禁用。增加 :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ ，以牺牲几何细节为代价提高性能。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` project setting.
+要在根视口上控制该属性，请设置 :ref:`ProjectSettings.rendering/mesh_lod/lod_change/threshold_pixels<class_ProjectSettings_property_rendering/mesh_lod/lod_change/threshold_pixels>` 项目设置。
 
-\ **Note:** :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **注意：**\ :ref:`mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>` 不影响 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 可见性范围（也称为“手动”LOD 或分层 LOD）。
 
 .. rst-class:: classref-item-separator
 
@@ -1540,9 +1540,9 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_msaa_2d**\ (\ value\: :ref:`MSAA<enum_Viewport_MSAA>`\ )
 - :ref:`MSAA<enum_Viewport_MSAA>` **get_msaa_2d**\ (\ )
 
-The multisample antialiasing mode for 2D/Canvas rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of :ref:`MSAA_2X<class_Viewport_constant_MSAA_2X>` or :ref:`MSAA_4X<class_Viewport_constant_MSAA_4X>` is best unless targeting very high-end systems. This has no effect on shader-induced aliasing or texture aliasing.
+2D/画布渲染的多重采样抗锯齿模式。数字越高，得到的边缘越平滑，代价是性能也会显著降低。设为 :ref:`MSAA_2X<class_Viewport_constant_MSAA_2X>` 或 :ref:`MSAA_4X<class_Viewport_constant_MSAA_4X>` 为佳，除非目标是非常高端的系统。对由着色器或纹理导致的锯齿无效。
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_2d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d>` and :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`.
+另见 :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_2d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_2d>` 和 :ref:`RenderingServer.viewport_set_msaa_2d()<class_RenderingServer_method_viewport_set_msaa_2d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1559,9 +1559,9 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_2d<class_Pro
 - |void| **set_msaa_3d**\ (\ value\: :ref:`MSAA<enum_Viewport_MSAA>`\ )
 - :ref:`MSAA<enum_Viewport_MSAA>` **get_msaa_3d**\ (\ )
 
-The multisample antialiasing mode for 3D rendering. A higher number results in smoother edges at the cost of significantly worse performance. A value of :ref:`MSAA_2X<class_Viewport_constant_MSAA_2X>` or :ref:`MSAA_4X<class_Viewport_constant_MSAA_4X>` is best unless targeting very high-end systems. See also bilinear scaling 3D :ref:`scaling_3d_mode<class_Viewport_property_scaling_3d_mode>` for supersampling, which provides higher quality but is much more expensive. This has no effect on shader-induced aliasing or texture aliasing.
+3D 渲染的多重采样抗锯齿模式。数字越高，得到的边缘越平滑，代价是性能也会显著降低。设为 2 或 4 为佳，除非目标是非常高端的系统。另见 3D 的双线性缩放 :ref:`scaling_3d_mode<class_Viewport_property_scaling_3d_mode>` 实现超采样，能够提供更高的质量，但消耗也更高。对由着色器或纹理导致的锯齿无效。
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` and :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`.
+另见 :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` 和 :ref:`RenderingServer.viewport_set_msaa_3d()<class_RenderingServer_method_viewport_set_msaa_3d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1578,7 +1578,7 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_Pro
 - |void| **set_use_oversampling**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_oversampling**\ (\ )
 
-If ``true`` and one of the following conditions are true: :ref:`SubViewport.size_2d_override_stretch<class_SubViewport_property_size_2d_override_stretch>` and :ref:`SubViewport.size_2d_override<class_SubViewport_property_size_2d_override>` are set, :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` is set and scaling is enabled, :ref:`oversampling_override<class_Viewport_property_oversampling_override>` is set, font and :ref:`DPITexture<class_DPITexture>` oversampling are enabled.
+如果为 ``true`` 且以下条件之一为真：设置了 :ref:`SubViewport.size_2d_override_stretch<class_SubViewport_property_size_2d_override_stretch>` 和 :ref:`SubViewport.size_2d_override<class_SubViewport_property_size_2d_override>`\ ，设置了 :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` 且启用了缩放，设置了 :ref:`oversampling_override<class_Viewport_property_oversampling_override>`\ ，则会启用字体和 :ref:`DPITexture<class_DPITexture>` 的过采样。
 
 .. rst-class:: classref-item-separator
 
@@ -1595,7 +1595,7 @@ If ``true`` and one of the following conditions are true: :ref:`SubViewport.size
 - |void| **set_oversampling_override**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversampling_override**\ (\ )
 
-If greater than zero, this value is used as the font oversampling factor, otherwise oversampling is equal to viewport scale.
+如果大于等于零，则会使用该值作为字体过采样的系数，否则过采样等于视口缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -1612,7 +1612,7 @@ If greater than zero, this value is used as the font oversampling factor, otherw
 - |void| **set_use_own_world_3d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_own_world_3d**\ (\ )
 
-If ``true``, the viewport will use a unique copy of the :ref:`World3D<class_World3D>` defined in :ref:`world_3d<class_Viewport_property_world_3d>`.
+如果为 ``true``\ ，则该视口会使用 :ref:`world_3d<class_Viewport_property_world_3d>` 中定义的 :ref:`World3D<class_World3D>` 的唯一副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1629,9 +1629,9 @@ If ``true``, the viewport will use a unique copy of the :ref:`World3D<class_Worl
 - |void| **set_physics_object_picking**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking**\ (\ )
 
-If ``true``, the objects rendered by viewport become subjects of mouse picking process.
+如果为 ``true``\ ，则视口中渲染的对象会成为鼠标拾取过程中的候选。
 
-\ **Note:** The number of simultaneously pickable objects is limited to 64 and they are selected in a non-deterministic order, which can be different in each picking process.
+\ **注意：**\ 同时能够被拾取的对象最多只有 64 个，选择的顺序是不确定的，每次拾取可能都不相同。
 
 .. rst-class:: classref-item-separator
 
@@ -1648,11 +1648,11 @@ If ``true``, the objects rendered by viewport become subjects of mouse picking p
 - |void| **set_physics_object_picking_first_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_first_only**\ (\ )
 
-If ``true``, the input_event signal will only be sent to one physics object in the mouse picking process. If you want to get the top object only, you must also enable :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`.
+如果为 ``true``\ ，则鼠标拾取的过程中只会将 input_event 信号发送给一个物理对象。如果你只希望获取最顶层的对象，就必须同时启用 :ref:`physics_object_picking_sort<class_Viewport_property_physics_object_picking_sort>`\ 。
 
-If ``false``, an input_event signal will be sent to all physics objects in the mouse picking process.
+如果为 ``false``\ ，则鼠标拾取的过程中会将 input_event 信号发送给所有物理对象。
 
-This applies to 2D CanvasItem object picking only.
+仅适用于 2D CanvasItem 对象的拾取。
 
 .. rst-class:: classref-item-separator
 
@@ -1669,11 +1669,11 @@ This applies to 2D CanvasItem object picking only.
 - |void| **set_physics_object_picking_sort**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort**\ (\ )
 
-If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is undetermined.
+如果为 ``true``\ ，则对象会按照固定的顺序接收鼠标拾取事件，首先会按各自的 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 排序，然后按它们在场景树中的位置排序。如果为 ``false``\ ，则顺序不确定。
 
-\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
+\ **注意：**\ 默认情况下禁用此设置，因为它可能会产生昂贵的计算成本。
 
-\ **Note:** Sorting happens after selecting the pickable objects. Because of the limitation of 64 simultaneously pickable objects, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
+\ **注意：**\ 排序发生在选择可拾取对象之后。因为同时能够被拾取的对象最多只有 64 个，所以无法保证 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 最大的对象能够接收到拾取事件。
 
 .. rst-class:: classref-item-separator
 
@@ -1690,7 +1690,7 @@ If ``true``, objects receive mouse picking events sorted primarily by their :ref
 - |void| **set_positional_shadow_atlas_16_bits**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_positional_shadow_atlas_16_bits**\ (\ )
 
-Use 16 bits for the omni/spot shadow depth map. Enabling this results in shadows having less precision and may result in shadow acne, but can lead to performance improvements on some devices.
+使用 16 位的全向灯/聚光灯阴影深度贴图。启用后，阴影的精度会降低，可能造成阴影失真，但能够在部分设备上提升性能。
 
 .. rst-class:: classref-item-separator
 
@@ -1707,7 +1707,7 @@ Use 16 bits for the omni/spot shadow depth map. Enabling this results in shadows
 - |void| **set_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`, subdiv\: :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>`\ )
 - :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **get_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`\ ) |const|
 
-The subdivision amount of the first quadrant on the shadow atlas.
+阴影图集上第一象限的细分量。
 
 .. rst-class:: classref-item-separator
 
@@ -1724,7 +1724,7 @@ The subdivision amount of the first quadrant on the shadow atlas.
 - |void| **set_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`, subdiv\: :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>`\ )
 - :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **get_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`\ ) |const|
 
-The subdivision amount of the second quadrant on the shadow atlas.
+阴影图集上第二象限的细分量。
 
 .. rst-class:: classref-item-separator
 
@@ -1741,7 +1741,7 @@ The subdivision amount of the second quadrant on the shadow atlas.
 - |void| **set_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`, subdiv\: :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>`\ )
 - :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **get_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`\ ) |const|
 
-The subdivision amount of the third quadrant on the shadow atlas.
+阴影图集上第三象限的细分量。
 
 .. rst-class:: classref-item-separator
 
@@ -1758,7 +1758,7 @@ The subdivision amount of the third quadrant on the shadow atlas.
 - |void| **set_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`, subdiv\: :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>`\ )
 - :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **get_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`\ ) |const|
 
-The subdivision amount of the fourth quadrant on the shadow atlas.
+阴影图集上第四象限的细分量。
 
 .. rst-class:: classref-item-separator
 
@@ -1775,9 +1775,9 @@ The subdivision amount of the fourth quadrant on the shadow atlas.
 - |void| **set_positional_shadow_atlas_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_positional_shadow_atlas_size**\ (\ )
 
-The shadow atlas' resolution (used for omni and spot lights). The value is rounded up to the nearest power of 2.
+阴影图集的分辨率（用于全向灯和聚光灯）。该值将向上舍入到最接近的 2 次幂。
 
-\ **Note:** If this is set to ``0``, no positional shadows will be visible at all. This can improve performance significantly on low-end systems by reducing both the CPU and GPU load (as fewer draw calls are needed to draw the scene without shadows).
+\ **注意：**\ 如果设置为 ``0``\ ，将根本看不到任何阴影（包括定向阴影）。可以通过降低 CPU 和 GPU 负载来显著提升在低端系统上的性能（因为绘制不带阴影的场景需要的绘制调用更少）。
 
 .. rst-class:: classref-item-separator
 
@@ -1794,9 +1794,9 @@ The shadow atlas' resolution (used for omni and spot lights). The value is round
 - |void| **set_scaling_3d_mode**\ (\ value\: :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>`\ )
 - :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **get_scaling_3d_mode**\ (\ )
 
-Sets scaling 3D mode. Bilinear scaling renders at different resolution to either undersample or supersample the viewport. FidelityFX Super Resolution 1.0, abbreviated to FSR, is an upscaling technology that produces high quality images at fast framerates by using a spatially aware upscaling algorithm. FSR is slightly more expensive than bilinear, but it produces significantly higher image quality. FSR should be used where possible.
+设置缩放 3D 模式。双线性缩放会以不同的分辨率进行渲染，对视口进行欠采样或超采样。FidelityFX Super Resolution 1.0，缩写为 FSR，是一种放大技术，通过使用一种空间感知放大算法，以快速帧速率生成高质量图像。FSR 比双线性的性能消耗略高一些，但产生的图像质量却高得多。应尽可能使用 FSR。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` project setting.
+要在根视口上控制这个属性，请使用项目设置 :ref:`ProjectSettings.rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1813,11 +1813,11 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_scaling_3d_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_scaling_3d_scale**\ (\ )
 
-Scales the 3D render buffer based on the viewport size uses an image filter specified in :ref:`ProjectSettings.rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` to scale the output image to the full viewport size. Values lower than ``1.0`` can be used to speed up 3D rendering at the cost of quality (undersampling). Values greater than ``1.0`` are only valid for bilinear mode and can be used to improve 3D rendering quality at a high performance cost (supersampling). See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` for multi-sample antialiasing, which is significantly cheaper but only smooths the edges of polygons.
+根据视口大小缩放 3D 渲染缓冲区，使用 :ref:`ProjectSettings.rendering/scaling_3d/mode<class_ProjectSettings_property_rendering/scaling_3d/mode>` 中指定的图像过滤器将输出图像缩放到完整的视口大小。比 ``1.0`` 小的值可以牺牲质量加速 3D 渲染（欠采样）。比 ``1.0`` 大的值仅在双线性模式下可用，可以提升 3D 渲染质量，但性能消耗较高（超采样）。另见多重采样抗锯齿 :ref:`ProjectSettings.rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`\ ，性能消耗明显更低，但只会对多边形的边缘进行平滑。
 
-When using FSR upscaling, AMD recommends exposing the following values as preset options to users "Ultra Quality: 0.77", "Quality: 0.67", "Balanced: 0.59", "Performance: 0.5" instead of exposing the entire scale.
+使用 FSR 放大时，AMD 推荐将以下值作为预设选项暴露给用户“极致质量：0.77”“质量：0.67”“平衡：0.59”“性能：0.5”，不暴露特定的缩放值。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>` project setting.
+要在根视口上控制这个属性，请使用项目设置 :ref:`ProjectSettings.rendering/scaling_3d/scale<class_ProjectSettings_property_rendering/scaling_3d/scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1834,9 +1834,9 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_screen_space_aa**\ (\ value\: :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>`\ )
 - :ref:`ScreenSpaceAA<enum_Viewport_ScreenSpaceAA>` **get_screen_space_aa**\ (\ )
 
-Sets the screen-space antialiasing method used. Screen-space antialiasing works by selectively blurring edges in a post-process shader. It differs from MSAA which takes multiple coverage samples while rendering objects. Screen-space AA methods are typically faster than MSAA and will smooth out specular aliasing, but tend to make scenes appear blurry.
+设置使用的屏幕空间抗锯齿方法。屏幕空间抗锯齿的原理是在后期处理着色器中选择性地模糊边缘。它与 MSAA 不同，后者在渲染对象时采用多个覆盖样本。屏幕空间抗锯齿方法通常比 MSAA 更快，并且会平滑高光锯齿，但往往会使场景显得模糊。
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>` and :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`.
+另见 :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>` 和 :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1853,9 +1853,9 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<c
 - |void| **set_sdf_oversize**\ (\ value\: :ref:`SDFOversize<enum_Viewport_SDFOversize>`\ )
 - :ref:`SDFOversize<enum_Viewport_SDFOversize>` **get_sdf_oversize**\ (\ )
 
-Controls how much of the original viewport's size should be covered by the 2D signed distance field. This SDF can be sampled in :ref:`CanvasItem<class_CanvasItem>` shaders and is also used for :ref:`GPUParticles2D<class_GPUParticles2D>` collision. Higher values allow portions of occluders located outside the viewport to still be taken into account in the generated signed distance field, at the cost of performance. If you notice particles falling through :ref:`LightOccluder2D<class_LightOccluder2D>`\ s as the occluders leave the viewport, increase this setting.
+控制 2D 带符号距离场应该覆盖原始视口中多大的区域。该 SDF 可以在 :ref:`CanvasItem<class_CanvasItem>` 着色器中采样，用于 :ref:`GPUParticles2D<class_GPUParticles2D>` 碰撞。生成带符号距离场时，较高的值能够让部分处于视口外的遮挡器也纳入考虑范围，但会以牺牲性能为代价。如果你注意到 :ref:`LightOccluder2D<class_LightOccluder2D>` 离开视口时粒子会穿过遮挡器，就可以增大这个设置。
 
-The percentage is added on each axis and on both sides. For example, with the default :ref:`SDF_OVERSIZE_120_PERCENT<class_Viewport_constant_SDF_OVERSIZE_120_PERCENT>`, the signed distance field will cover 20% of the viewport's size outside the viewport on each side (top, right, bottom, left).
+每一侧每个轴上都会添加指定的百分比。例如，使用默认的 :ref:`SDF_OVERSIZE_120_PERCENT<class_Viewport_constant_SDF_OVERSIZE_120_PERCENT>`\ ，带符号距离场将覆盖视口外每侧（顶部、右侧、底部、左侧）20% 的视口大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1872,7 +1872,7 @@ The percentage is added on each axis and on both sides. For example, with the de
 - |void| **set_sdf_scale**\ (\ value\: :ref:`SDFScale<enum_Viewport_SDFScale>`\ )
 - :ref:`SDFScale<enum_Viewport_SDFScale>` **get_sdf_scale**\ (\ )
 
-The resolution scale to use for the 2D signed distance field. Higher values lead to a more precise and more stable signed distance field as the camera moves, at the cost of performance.
+用于 2D 带符号距离场的分辨率比例。值越高，相机移动时带符号距离场越精确、越稳定，但性能会受到影响。
 
 .. rst-class:: classref-item-separator
 
@@ -1889,7 +1889,7 @@ The resolution scale to use for the 2D signed distance field. Higher values lead
 - |void| **set_snap_2d_transforms_to_pixel**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_snap_2d_transforms_to_pixel_enabled**\ (\ )
 
-If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to full pixels. Their position can still be sub-pixel, but the decimals will not have effect. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
+如果为 ``true``\ ，则 :ref:`CanvasItem<class_CanvasItem>` 节点将在内部捕捉到全像素。它们的位置仍然可以是亚像素，但小数不会产生影响。这会导致更清晰的外观，但代价是移动不太流畅，尤其是在启用 :ref:`Camera2D<class_Camera2D>` 平滑时。
 
 .. rst-class:: classref-item-separator
 
@@ -1906,7 +1906,7 @@ If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to f
 - |void| **set_snap_2d_vertices_to_pixel**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_snap_2d_vertices_to_pixel_enabled**\ (\ )
 
-If ``true``, vertices of :ref:`CanvasItem<class_CanvasItem>` nodes will snap to full pixels. Only affects the final vertex positions, not the transforms. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
+如果为 ``true``\ ，则 :ref:`CanvasItem<class_CanvasItem>` 节点的顶点将捕捉到完整像素。仅影响最终顶点位置，而不影响变换。这会导致更清晰的外观，但代价是移动不太流畅，尤其是在启用 :ref:`Camera2D<class_Camera2D>` 平滑时。
 
 .. rst-class:: classref-item-separator
 
@@ -1923,13 +1923,13 @@ If ``true``, vertices of :ref:`CanvasItem<class_CanvasItem>` nodes will snap to 
 - |void| **set_texture_mipmap_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_mipmap_bias**\ (\ )
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+通过从更低或更高的 mipmap 中读取数据影响最终纹理的锐度（也叫“纹理 LOD 偏置”）。负值会让 mipmap 纹理更锐利，但从较远处观察时颗粒更明显，而正值会让 mipmap 纹理更模糊（即便凑近看也一样）。
 
-Enabling temporal antialiasing (:ref:`use_taa<class_Viewport_property_use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+启用时间抗锯齿（\ :ref:`use_taa<class_Viewport_property_use_taa>`\ ）会对这个值应用 ``-0.5`` 的偏移量，而启用 FXAA（\ :ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`\ ）则会对这个值应用 ``-0.25`` 的偏移量。如果同时启用 TAA 和 FXAA，则会对这个值应用 ``-0.75`` 的偏移量。
 
-\ **Note:** If :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` is lower than ``1.0`` (exclusive), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **注意：**\ 如果 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 比 ``1.0`` 小（包含），则会使用 :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` 自动调整 mipmap 偏置，内部会根据缩放系数进行计算。公式为 ``log2(scaling_3d_scale) + mipmap_bias``\ 。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` project setting.
+要在根视口上控制这个属性，请使用项目设置 :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1946,9 +1946,9 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - |void| **set_transparent_background**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_transparent_background**\ (\ )
 
-If ``true``, the viewport should render its background as transparent.
+如果 ``true``\ ，视口的背景应呈现为透明。
 
-\ **Note:** Due to technical limitations, certain rendering features are disabled when a viewport has a transparent background. This currently applies to screen-space reflections, subsurface scattering, and depth of field.
+\ **注意：** 由于技术限制，当视口背景为透明时，某些渲染功能会被禁用。目前，这适用于屏幕空间反射、次表面散射和景深字段。
 
 .. rst-class:: classref-item-separator
 
@@ -2005,11 +2005,11 @@ Practically speaking, this means that the end result of the Viewport will not be
 - |void| **set_use_occlusion_culling**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_occlusion_culling**\ (\ )
 
-If ``true``, :ref:`OccluderInstance3D<class_OccluderInstance3D>` nodes will be usable for occlusion culling in 3D for this viewport. For the root viewport, :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` must be set to ``true`` instead.
+如果为 ``true``\ ，\ :ref:`OccluderInstance3D<class_OccluderInstance3D>` 节点将被用于该视口中的 3D 遮挡剔除。对于根视口，\ :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` 必须改为被设置为 ``true``\ 。
 
-\ **Note:** Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it, and think whether your scene can actually benefit from occlusion culling. Large, open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` and :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) compared to occlusion culling.
+\ **注意：**\ 启用遮挡剔除会消耗一定的 CPU。仅当确实打算使用遮挡剔除时才启用它，并考虑场景是否真的可以从遮挡剔除中受益。具有很少或没有对象阻挡视图的大型开放场景，通常不会从遮挡剔除中受益更多。与遮挡剔除相比，大型开放场景通常从网格 LOD 和可见性范围（\ :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`\ ）中受益更多。
 
-\ **Note:** Due to memory constraints, occlusion culling is not supported by default in Web export templates. It can be enabled by compiling custom Web export templates with ``module_raycast_enabled=yes``.
+\ **注意：**\ 由于内存限制，Web 导出模板中默认不支持遮挡剔除。编译自定义 Web 导出模板时使用 ``module_raycast_enabled=yes`` 可以启用。
 
 .. rst-class:: classref-item-separator
 
@@ -2026,11 +2026,11 @@ If ``true``, :ref:`OccluderInstance3D<class_OccluderInstance3D>` nodes will be u
 - |void| **set_use_taa**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_taa**\ (\ )
 
-Enables temporal antialiasing for this viewport. TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion.
+为该视口启用时间抗锯齿。TAA 通过抖动相机并累积最后渲染帧的图像来工作，运动向量渲染被用于解释相机和对象的运动。
 
-\ **Note:** The implementation is not complete yet, some visual instances such as particles and skinned meshes may show artifacts.
+\ **注意：**\ 实现尚未完成，一些可视实例，如粒子和蒙皮网格可能会出现伪影。
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>` and :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`.
+另见 :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>` 和 :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2047,7 +2047,7 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_taa<class_Pro
 - |void| **set_use_xr**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_xr**\ (\ )
 
-If ``true``, the viewport will use the primary XR interface to render XR output. When applicable this can result in a stereoscopic image and the resulting render being output to a headset.
+如果为 ``true``\ ，则视口将使用主 XR 接口来渲染 XR 输出。如果适用，这可以得到立体图像，渲染结果会输出到头戴设备。
 
 .. rst-class:: classref-item-separator
 
@@ -2064,7 +2064,7 @@ If ``true``, the viewport will use the primary XR interface to render XR output.
 - |void| **set_vrs_mode**\ (\ value\: :ref:`VRSMode<enum_Viewport_VRSMode>`\ )
 - :ref:`VRSMode<enum_Viewport_VRSMode>` **get_vrs_mode**\ (\ )
 
-The Variable Rate Shading (VRS) mode that is used for this viewport. Note, if hardware does not support VRS this property is ignored.
+用于这个视口的可变速率着色（Variable Rate Shading，VRS）模式。请注意，如果硬件不支持 VRS，则会忽略此属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2081,22 +2081,22 @@ The Variable Rate Shading (VRS) mode that is used for this viewport. Note, if ha
 - |void| **set_vrs_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_vrs_texture**\ (\ )
 
-Texture to use when :ref:`vrs_mode<class_Viewport_property_vrs_mode>` is set to :ref:`VRS_TEXTURE<class_Viewport_constant_VRS_TEXTURE>`.
+:ref:`vrs_mode<class_Viewport_property_vrs_mode>` 为 :ref:`VRS_TEXTURE<class_Viewport_constant_VRS_TEXTURE>` 时使用的纹理。
 
-The texture *must* use a lossless compression format so that colors can be matched precisely. The following VRS densities are mapped to various colors, with brighter colors representing a lower level of shading precision:
+该纹理\ *必须*\ 使用无损压缩格式，以便可以精确匹配颜色。以下 VRS 密度会映射为各种颜色，较亮的颜色代表较低的着色精度。
 
 .. code:: text
 
-    - 1×1 = rgb(0, 0, 0)     - #000000
-    - 1×2 = rgb(0, 85, 0)    - #005500
-    - 2×1 = rgb(85, 0, 0)    - #550000
-    - 2×2 = rgb(85, 85, 0)   - #555500
-    - 2×4 = rgb(85, 170, 0)  - #55aa00
-    - 4×2 = rgb(170, 85, 0)  - #aa5500
+    - 1×1 = rgb(0, 0, 0) - #000000
+    - 1×2 = rgb(0, 85, 0) - #005500
+    - 2×1 = rgb(85, 0, 0) - #550000
+    - 2×2 = rgb(85, 85, 0) - #555500
+    - 2×4 = rgb(85, 170, 0) - #55aa00
+    - 4×2 = rgb(170, 85, 0) - #aa5500
     - 4×4 = rgb(170, 170, 0) - #aaaa00
-    - 4×8 = rgb(170, 255, 0) - #aaff00 - Not supported on most hardware
-    - 8×4 = rgb(255, 170, 0) - #ffaa00 - Not supported on most hardware
-    - 8×8 = rgb(255, 255, 0) - #ffff00 - Not supported on most hardware
+    - 4×8 = rgb(170, 255, 0) - #aaff00 - 大多数硬件不支持
+    - 8×4 = rgb(255, 170, 0) - #ffaa00 - 大多数硬件不支持
+    - 8×8 = rgb(255, 255, 0) - #ffff00 - 大多数硬件不支持
 
 .. rst-class:: classref-item-separator
 
@@ -2113,7 +2113,7 @@ The texture *must* use a lossless compression format so that colors can be match
 - |void| **set_vrs_update_mode**\ (\ value\: :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>`\ )
 - :ref:`VRSUpdateMode<enum_Viewport_VRSUpdateMode>` **get_vrs_update_mode**\ (\ )
 
-Sets the update mode for Variable Rate Shading (VRS) for the viewport. VRS requires the input texture to be converted to the format usable by the VRS method supported by the hardware. The update mode defines how often this happens. If the GPU does not support VRS, or VRS is not enabled, this property is ignored.
+设置视口的可变速率着色（VRS）的更新模式。VRS 要求将输入纹理转换为硬件支持的 VRS 方法可用的格式。更新模式定义该操作发生的频率。如果 GPU 不支持 VRS，或者未启用 VRS，则该属性将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2130,7 +2130,7 @@ Sets the update mode for Variable Rate Shading (VRS) for the viewport. VRS requi
 - |void| **set_world_2d**\ (\ value\: :ref:`World2D<class_World2D>`\ )
 - :ref:`World2D<class_World2D>` **get_world_2d**\ (\ )
 
-The custom :ref:`World2D<class_World2D>` which can be used as 2D environment source.
+自定义的 :ref:`World2D<class_World2D>`\ ，可以作为 2D 环境源。
 
 .. rst-class:: classref-item-separator
 
@@ -2147,7 +2147,7 @@ The custom :ref:`World2D<class_World2D>` which can be used as 2D environment sou
 - |void| **set_world_3d**\ (\ value\: :ref:`World3D<class_World3D>`\ )
 - :ref:`World3D<class_World3D>` **get_world_3d**\ (\ )
 
-The custom :ref:`World3D<class_World3D>` which can be used as 3D environment source.
+自定义的 :ref:`World3D<class_World3D>`\ ，可以作为 3D 环境源。
 
 .. rst-class:: classref-section-separator
 
@@ -2155,8 +2155,8 @@ The custom :ref:`World3D<class_World3D>` which can be used as 3D environment sou
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Viewport_method_find_world_2d:
 
@@ -2164,7 +2164,7 @@ Method Descriptions
 
 :ref:`World2D<class_World2D>` **find_world_2d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_find_world_2d>`
 
-Returns the first valid :ref:`World2D<class_World2D>` for this viewport, searching the :ref:`world_2d<class_Viewport_property_world_2d>` property of itself and any Viewport ancestor.
+返回该视口的首个有效 :ref:`World2D<class_World2D>`\ ，在它自身及任何 Viewport 祖先节点的 :ref:`world_2d<class_Viewport_property_world_2d>` 属性中查找。
 
 .. rst-class:: classref-item-separator
 
@@ -2176,7 +2176,7 @@ Returns the first valid :ref:`World2D<class_World2D>` for this viewport, searchi
 
 :ref:`World3D<class_World3D>` **find_world_3d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_find_world_3d>`
 
-Returns the first valid :ref:`World3D<class_World3D>` for this viewport, searching the :ref:`world_3d<class_Viewport_property_world_3d>` property of itself and any Viewport ancestor.
+返回这个视口的第一个有效 :ref:`World3D<class_World3D>`\ ，会在自身和 Viewport 祖先的 :ref:`world_3d<class_Viewport_property_world_3d>` 属性中搜索。
 
 .. rst-class:: classref-item-separator
 
@@ -2188,7 +2188,7 @@ Returns the first valid :ref:`World3D<class_World3D>` for this viewport, searchi
 
 :ref:`AudioListener2D<class_AudioListener2D>` **get_audio_listener_2d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_audio_listener_2d>`
 
-Returns the currently active 2D audio listener. Returns ``null`` if there are no active 2D audio listeners, in which case the active 2D camera will be treated as listener.
+返回当前活动的 2D 音频侦听器。如果没有活动的 2D 音频侦听器，则返回 ``null``\ ，此时会将活动的 2D 相机作为侦听器。
 
 .. rst-class:: classref-item-separator
 
@@ -2200,7 +2200,7 @@ Returns the currently active 2D audio listener. Returns ``null`` if there are no
 
 :ref:`AudioListener3D<class_AudioListener3D>` **get_audio_listener_3d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_audio_listener_3d>`
 
-Returns the currently active 3D audio listener. Returns ``null`` if there are no active 3D audio listeners, in which case the active 3D camera will be treated as listener.
+返回当前活动的 3D 音频侦听器。如果没有活动的 3D 音频侦听器，则返回 ``null``\ ，此时会将活动的 3D 相机作为侦听器。
 
 .. rst-class:: classref-item-separator
 
@@ -2240,7 +2240,7 @@ Returns the currently active 3D camera. Returns ``null`` if there are no active 
 
 :ref:`bool<class_bool>` **get_canvas_cull_mask_bit**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Viewport_method_get_canvas_cull_mask_bit>`
 
-Returns an individual bit on the rendering layer mask.
+返回渲染层遮罩上的某个比特位。
 
 .. rst-class:: classref-item-separator
 
@@ -2252,9 +2252,9 @@ Returns an individual bit on the rendering layer mask.
 
 :ref:`Array<class_Array>`\[:ref:`Window<class_Window>`\] **get_embedded_subwindows**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_embedded_subwindows>`
 
-Returns a list of the visible embedded :ref:`Window<class_Window>`\ s inside the viewport.
+返回该视口内可见的嵌入 :ref:`Window<class_Window>` 的列表。
 
-\ **Note:** :ref:`Window<class_Window>`\ s inside other viewports will not be listed.
+\ **注意：**\ 其他视口内的 :ref:`Window<class_Window>` 不会被列出。
 
 .. rst-class:: classref-item-separator
 
@@ -2266,7 +2266,7 @@ Returns a list of the visible embedded :ref:`Window<class_Window>`\ s inside the
 
 :ref:`Transform2D<class_Transform2D>` **get_final_transform**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_final_transform>`
 
-Returns the transform from the viewport's coordinate system to the embedder's coordinate system.
+返回从该视口的坐标系到嵌入器坐标系统的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -2278,7 +2278,7 @@ Returns the transform from the viewport's coordinate system to the embedder's co
 
 :ref:`Vector2<class_Vector2>` **get_mouse_position**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_mouse_position>`
 
-Returns the mouse's position in this **Viewport** using the coordinate system of this **Viewport**.
+返回该 **Viewport** 中鼠标的位置，使用该 **Viewport** 的坐标系。
 
 .. rst-class:: classref-item-separator
 
@@ -2290,7 +2290,7 @@ Returns the mouse's position in this **Viewport** using the coordinate system of
 
 :ref:`float<class_float>` **get_oversampling**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_oversampling>`
 
-Returns viewport oversampling factor.
+返回视口过采样系数。
 
 .. rst-class:: classref-item-separator
 
@@ -2302,7 +2302,7 @@ Returns viewport oversampling factor.
 
 :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>` **get_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Viewport_method_get_positional_shadow_atlas_quadrant_subdiv>`
 
-Returns the positional shadow atlas quadrant subdivision of the specified quadrant.
+返回指定象限的位置阴影图集象限细分。
 
 .. rst-class:: classref-item-separator
 
@@ -2314,7 +2314,7 @@ Returns the positional shadow atlas quadrant subdivision of the specified quadra
 
 :ref:`int<class_int>` **get_render_info**\ (\ type\: :ref:`RenderInfoType<enum_Viewport_RenderInfoType>`, info\: :ref:`RenderInfo<enum_Viewport_RenderInfo>`\ ) :ref:`🔗<class_Viewport_method_get_render_info>`
 
-Returns rendering statistics of the given type.
+返回给定类型的渲染统计数据。
 
 .. rst-class:: classref-item-separator
 
@@ -2326,7 +2326,7 @@ Returns rendering statistics of the given type.
 
 :ref:`Transform2D<class_Transform2D>` **get_screen_transform**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_screen_transform>`
 
-Returns the transform from the Viewport's coordinates to the screen coordinates of the containing window manager window.
+返回从视口的坐标到包含窗口管理器窗口的屏幕坐标的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -2338,9 +2338,9 @@ Returns the transform from the Viewport's coordinates to the screen coordinates 
 
 :ref:`Transform2D<class_Transform2D>` **get_stretch_transform**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_stretch_transform>`
 
-Returns the automatically computed 2D stretch transform, taking the **Viewport**'s stretch settings into account. The final value is multiplied by :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>`, but only for the root viewport. If this method is called on a :ref:`SubViewport<class_SubViewport>` (e.g., in a scene tree with :ref:`SubViewportContainer<class_SubViewportContainer>` and :ref:`SubViewport<class_SubViewport>`), the scale factor of the root window will not be applied. Using :ref:`Transform2D.get_scale()<class_Transform2D_method_get_scale>` on the returned value, this can be used to compensate for scaling when zooming a :ref:`Camera2D<class_Camera2D>` node, or to scale down a :ref:`TextureRect<class_TextureRect>` to be pixel-perfect regardless of the automatically computed scale factor.
+返回自动计算的 2D 拉伸变换，会考虑 **Viewport** 的拉伸设置。最终值已和 :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` 相乘，但仅适用于根视口。如果在 :ref:`SubViewport<class_SubViewport>` 上调用该方法（例如在包含 :ref:`SubViewportContainer<class_SubViewportContainer>` 和 :ref:`SubViewport<class_SubViewport>` 的场景树中），则不会应用根窗口的缩放系数。使用返回值上的 :ref:`Transform2D.get_scale()<class_Transform2D_method_get_scale>` 可以在缩放 :ref:`Camera2D<class_Camera2D>` 节点时补偿缩放或将 :ref:`TextureRect<class_TextureRect>` 缩小到像素级精确，无论自动计算的缩放系数如何。
 
-\ **Note:** Due to how pixel scaling works, the returned transform's X and Y scale may differ slightly, even when :ref:`Window.content_scale_aspect<class_Window_property_content_scale_aspect>` is set to a mode that preserves the pixels' aspect ratio. If :ref:`Window.content_scale_aspect<class_Window_property_content_scale_aspect>` is :ref:`Window.CONTENT_SCALE_ASPECT_IGNORE<class_Window_constant_CONTENT_SCALE_ASPECT_IGNORE>`, the X and Y scale may differ *significantly*.
+\ **注意：**\ 由于像素缩放的工作方式，即使 :ref:`Window.content_scale_aspect<class_Window_property_content_scale_aspect>` 设置为保持像素宽高比的模式，返回的变换的 X 和 Y 缩放也可能会略有不同。如果 :ref:`Window.content_scale_aspect<class_Window_property_content_scale_aspect>` 为 :ref:`Window.CONTENT_SCALE_ASPECT_IGNORE<class_Window_constant_CONTENT_SCALE_ASPECT_IGNORE>`\ ，则 X 和 Y 缩放可能会有\ *显著*\ 差异。
 
 .. rst-class:: classref-item-separator
 
@@ -2388,7 +2388,7 @@ Returns the viewport's texture.
 
 :ref:`RID<class_RID>` **get_viewport_rid**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_viewport_rid>`
 
-Returns the viewport's RID from the :ref:`RenderingServer<class_RenderingServer>`.
+返回该视口在 :ref:`RenderingServer<class_RenderingServer>` 的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -2400,7 +2400,7 @@ Returns the viewport's RID from the :ref:`RenderingServer<class_RenderingServer>
 
 :ref:`Rect2<class_Rect2>` **get_visible_rect**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_visible_rect>`
 
-Returns the visible rectangle in global screen coordinates.
+返回全局屏幕坐标中的可见矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -2412,7 +2412,7 @@ Returns the visible rectangle in global screen coordinates.
 
 |void| **gui_cancel_drag**\ (\ ) :ref:`🔗<class_Viewport_method_gui_cancel_drag>`
 
-Cancels the drag operation that was previously started through :ref:`Control._get_drag_data()<class_Control_private_method__get_drag_data>` or forced with :ref:`Control.force_drag()<class_Control_method_force_drag>`.
+取消之前的拖动操作，既可以是通过 :ref:`Control._get_drag_data()<class_Control_private_method__get_drag_data>` 开始的拖动，也可以是通过 :ref:`Control.force_drag()<class_Control_method_force_drag>` 强制开始的拖动。
 
 .. rst-class:: classref-item-separator
 
@@ -2424,7 +2424,7 @@ Cancels the drag operation that was previously started through :ref:`Control._ge
 
 :ref:`Variant<class_Variant>` **gui_get_drag_data**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_drag_data>`
 
-Returns the drag data from the GUI, that was previously returned by :ref:`Control._get_drag_data()<class_Control_private_method__get_drag_data>`.
+返回 GUI 的拖动数据，该数据先前由 :ref:`Control._get_drag_data()<class_Control_private_method__get_drag_data>` 返回。
 
 .. rst-class:: classref-item-separator
 
@@ -2448,7 +2448,7 @@ Returns the human-readable description of the drag data, used for assistive apps
 
 :ref:`Control<class_Control>` **gui_get_focus_owner**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_focus_owner>`
 
-Returns the currently focused :ref:`Control<class_Control>` within this viewport. If no :ref:`Control<class_Control>` is focused, returns ``null``.
+返回这个视口中当前聚焦的 :ref:`Control<class_Control>`\ 。如果没有聚焦任何 :ref:`Control<class_Control>`\ ，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2460,9 +2460,9 @@ Returns the currently focused :ref:`Control<class_Control>` within this viewport
 
 :ref:`Control<class_Control>` **gui_get_hovered_control**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_hovered_control>`
 
-Returns the :ref:`Control<class_Control>` that the mouse is currently hovering over in this viewport. If no :ref:`Control<class_Control>` has the cursor, returns ``null``.
+返回当前鼠标在该视口中悬停的 :ref:`Control<class_Control>`\ 。如果鼠标没有对应的 :ref:`Control<class_Control>` 则返回 ``null``\ 。
 
-Typically the leaf :ref:`Control<class_Control>` node or deepest level of the subtree which claims hover. This is very useful when used together with :ref:`Node.is_ancestor_of()<class_Node_method_is_ancestor_of>` to find if the mouse is within a control tree.
+获取到悬停的通常是末端的 :ref:`Control<class_Control>` 节点或子树中最深的一级。与 :ref:`Node.is_ancestor_of()<class_Node_method_is_ancestor_of>` 配合的时候非常有用，可以查到鼠标是否位于某个控件树中。
 
 .. rst-class:: classref-item-separator
 
@@ -2474,7 +2474,7 @@ Typically the leaf :ref:`Control<class_Control>` node or deepest level of the su
 
 :ref:`bool<class_bool>` **gui_is_drag_successful**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_is_drag_successful>`
 
-Returns ``true`` if the drag operation is successful.
+如果拖拽操作成功，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2486,9 +2486,9 @@ Returns ``true`` if the drag operation is successful.
 
 :ref:`bool<class_bool>` **gui_is_dragging**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_is_dragging>`
 
-Returns ``true`` if a drag operation is currently ongoing and where the drop action could happen in this viewport.
+如果该视口目前正在执行拖拽操作，可以进行放置动作，则返回 ``true``\ 。
 
-Alternative to :ref:`Node.NOTIFICATION_DRAG_BEGIN<class_Node_constant_NOTIFICATION_DRAG_BEGIN>` and :ref:`Node.NOTIFICATION_DRAG_END<class_Node_constant_NOTIFICATION_DRAG_END>` when you prefer polling the value.
+如果你更倾向于轮询，可以作为 :ref:`Node.NOTIFICATION_DRAG_BEGIN<class_Node_constant_NOTIFICATION_DRAG_BEGIN>` 和 :ref:`Node.NOTIFICATION_DRAG_END<class_Node_constant_NOTIFICATION_DRAG_END>` 的替代品。
 
 .. rst-class:: classref-item-separator
 
@@ -2500,7 +2500,7 @@ Alternative to :ref:`Node.NOTIFICATION_DRAG_BEGIN<class_Node_constant_NOTIFICATI
 
 |void| **gui_release_focus**\ (\ ) :ref:`🔗<class_Viewport_method_gui_release_focus>`
 
-Removes the focus from the currently focused :ref:`Control<class_Control>` within this viewport. If no :ref:`Control<class_Control>` has the focus, does nothing.
+移除这个视口中当前聚焦 :ref:`Control<class_Control>` 的焦点。如果没有聚焦任何 :ref:`Control<class_Control>`\ ，则什么都不做。
 
 .. rst-class:: classref-item-separator
 
@@ -2524,11 +2524,11 @@ Sets the human-readable description of the drag data to ``description``, used fo
 
 :ref:`bool<class_bool>` **is_input_handled**\ (\ ) |const| :ref:`🔗<class_Viewport_method_is_input_handled>`
 
-Returns whether the current :ref:`InputEvent<class_InputEvent>` has been handled. Input events are not handled until :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>` has been called during the lifetime of an :ref:`InputEvent<class_InputEvent>`.
+返回当前的 :ref:`InputEvent<class_InputEvent>` 是否已被处理。在 :ref:`InputEvent<class_InputEvent>` 生命周期中调用 :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>` 前，输入事件都处于未处理状态。
 
-This is usually done as part of input handling methods like :ref:`Node._input()<class_Node_private_method__input>`, :ref:`Control._gui_input()<class_Control_private_method__gui_input>` or others, as well as in corresponding signal handlers.
+通常作为 :ref:`Node._input()<class_Node_private_method__input>`\ 、\ :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 等输入处理方法以及对应的信号处理函数的一部分来实现。
 
-If :ref:`handle_input_locally<class_Viewport_property_handle_input_locally>` is set to ``false``, this method will try finding the first parent viewport that is set to handle input locally, and return its value for :ref:`is_input_handled()<class_Viewport_method_is_input_handled>` instead.
+如果 :ref:`handle_input_locally<class_Viewport_property_handle_input_locally>` 为 ``false``\ ，则这个方法会尝试查找第一个本地处理输入的父级视口，并返回该视口的 :ref:`is_input_handled()<class_Viewport_method_is_input_handled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2540,9 +2540,9 @@ If :ref:`handle_input_locally<class_Viewport_property_handle_input_locally>` is 
 
 |void| **notify_mouse_entered**\ (\ ) :ref:`🔗<class_Viewport_method_notify_mouse_entered>`
 
-Inform the Viewport that the mouse has entered its area. Use this function before sending an :ref:`InputEventMouseButton<class_InputEventMouseButton>` or :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` to the **Viewport** with :ref:`push_input()<class_Viewport_method_push_input>`. See also :ref:`notify_mouse_exited()<class_Viewport_method_notify_mouse_exited>`.
+通知 Viewport 鼠标已进入其区域。请在通过 :ref:`push_input()<class_Viewport_method_push_input>` 向 **Viewport** 发送 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 和 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 前调用该方法。另见 :ref:`notify_mouse_exited()<class_Viewport_method_notify_mouse_exited>`\ 。
 
-\ **Note:** In most cases, it is not necessary to call this function because :ref:`SubViewport<class_SubViewport>` nodes that are children of :ref:`SubViewportContainer<class_SubViewportContainer>` are notified automatically. This is only necessary when interacting with viewports in non-default ways, for example as textures in :ref:`TextureRect<class_TextureRect>` or with an :ref:`Area3D<class_Area3D>` that forwards input events.
+\ **注意：**\ 大多数情况下不需要调用该函数，因为会自动通知 :ref:`SubViewportContainer<class_SubViewportContainer>` 的子级 :ref:`SubViewport<class_SubViewport>` 节点。只有在以非默认方式与视口交互时才有必要，例如以 :ref:`TextureRect<class_TextureRect>` 中的纹理或通过 :ref:`Area3D<class_Area3D>` 转发输入事件。
 
 .. rst-class:: classref-item-separator
 
@@ -2554,9 +2554,9 @@ Inform the Viewport that the mouse has entered its area. Use this function befor
 
 |void| **notify_mouse_exited**\ (\ ) :ref:`🔗<class_Viewport_method_notify_mouse_exited>`
 
-Inform the Viewport that the mouse has left its area. Use this function when the node that displays the viewport notices the mouse has left the area of the displayed viewport. See also :ref:`notify_mouse_entered()<class_Viewport_method_notify_mouse_entered>`.
+通知 Viewport 鼠标已离开其区域。请在显示视口的节点注意到鼠标已离开视口显示区域时调用该方法。另见 :ref:`notify_mouse_entered()<class_Viewport_method_notify_mouse_entered>`\ 。
 
-\ **Note:** In most cases, it is not necessary to call this function because :ref:`SubViewport<class_SubViewport>` nodes that are children of :ref:`SubViewportContainer<class_SubViewportContainer>` are notified automatically. This is only necessary when interacting with viewports in non-default ways, for example as textures in :ref:`TextureRect<class_TextureRect>` or with an :ref:`Area3D<class_Area3D>` that forwards input events.
+\ **注意：**\ 大多数情况下不需要调用该函数，因为会自动通知 :ref:`SubViewportContainer<class_SubViewportContainer>` 的子级 :ref:`SubViewport<class_SubViewport>` 节点。只有在以非默认方式与视口交互时才有必要，例如以 :ref:`TextureRect<class_TextureRect>` 中的纹理或通过 :ref:`Area3D<class_Area3D>` 转发输入事件。
 
 .. rst-class:: classref-item-separator
 
@@ -2568,17 +2568,17 @@ Inform the Viewport that the mouse has left its area. Use this function when the
 
 |void| **push_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, in_local_coords\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Viewport_method_push_input>`
 
-Triggers the given ``event`` in this **Viewport**. This can be used to pass an :ref:`InputEvent<class_InputEvent>` between viewports, or to locally apply inputs that were sent over the network or saved to a file.
+在该 **Viewport** 中触发给定的 ``event`` 事件。可用于在不同视口之间传递 :ref:`InputEvent<class_InputEvent>`\ ，或者在本地应用通过网络传输或保存在文件中的事件。
 
-If ``in_local_coords`` is ``false``, the event's position is in the embedder's coordinates and will be converted to viewport coordinates. If ``in_local_coords`` is ``true``, the event's position is in viewport coordinates.
+如果 ``in_local_coords`` 为 ``false``\ ，则该事件中的位置使用的是嵌入器坐标系，会被转换至视口坐标系。如果 ``in_local_coords`` 为 ``true``\ ，则该事件的位置使用的是视口坐标系。
 
-While this method serves a similar purpose as :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>`, it does not remap the specified ``event`` based on project settings like :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
+虽然这个方法的用途和 :ref:`Input.parse_input_event()<class_Input_method_parse_input_event>` 类似，但不会根据 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 等项目设置对指定的 ``event`` 进行重映射。
 
-Calling this method will propagate calls to child nodes for following methods in the given order:
+调用这个方法会将调用传播至子节点，按照以下顺序调用：
 
 - :ref:`Node._input()<class_Node_private_method__input>`\ 
 
-- :ref:`Control._gui_input()<class_Control_private_method__gui_input>` for :ref:`Control<class_Control>` nodes
+- :ref:`Control._gui_input()<class_Control_private_method__gui_input>` 仅用于 :ref:`Control<class_Control>` 节点
 
 - :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>`\ 
 
@@ -2586,9 +2586,9 @@ Calling this method will propagate calls to child nodes for following methods in
 
 - :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`\ 
 
-If an earlier method marks the input as handled via :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, any later method in this list will not be called.
+如果某个方法使用 :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>` 将输入标记为已处理，则列表中的后续方法均不会被调用。
 
-If none of the methods handle the event and :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` is ``true``, the event is used for physics object picking.
+如果没有任何方法处理该事件，并且 :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` 为 ``true``\ ，则该事件将用于物理对象的拾取。
 
 .. rst-class:: classref-item-separator
 
@@ -2600,7 +2600,7 @@ If none of the methods handle the event and :ref:`physics_object_picking<class_V
 
 |void| **push_text_input**\ (\ text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Viewport_method_push_text_input>`
 
-Helper method which calls the ``set_text()`` method on the currently focused :ref:`Control<class_Control>`, provided that it is defined (e.g. if the focused Control is :ref:`Button<class_Button>` or :ref:`LineEdit<class_LineEdit>`).
+辅助方法，会调用当前聚焦 :ref:`Control<class_Control>` 的 ``set_text()`` 方法，前提是该控件上定义了这个方法（例如聚焦 Control 为 :ref:`Button<class_Button>` 或 :ref:`LineEdit<class_LineEdit>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2612,13 +2612,13 @@ Helper method which calls the ``set_text()`` method on the currently focused :re
 
 |void| **push_unhandled_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, in_local_coords\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Viewport_method_push_unhandled_input>`
 
-**Deprecated:** Use :ref:`push_input()<class_Viewport_method_push_input>` instead.
+**已弃用：** Use :ref:`push_input()<class_Viewport_method_push_input>` instead.
 
-Triggers the given ``event`` in this **Viewport**. This can be used to pass an :ref:`InputEvent<class_InputEvent>` between viewports, or to locally apply inputs that were sent over the network or saved to a file.
+在该 **Viewport** 中触发给定的 ``event`` 事件。可用于在不同视口之间传递 :ref:`InputEvent<class_InputEvent>`\ ，或者在本地应用通过网络传输或保存在文件中的事件。
 
-If ``in_local_coords`` is ``false``, the event's position is in the embedder's coordinates and will be converted to viewport coordinates. If ``in_local_coords`` is ``true``, the event's position is in viewport coordinates.
+如果 ``in_local_coords`` 为 ``false``\ ，则该事件中的位置使用的是嵌入器坐标系，会被转换至视口坐标系。如果 ``in_local_coords`` 为 ``true``\ ，则该事件的位置使用的是视口坐标系。
 
-Calling this method will propagate calls to child nodes for following methods in the given order:
+调用这个方法会将调用传播至子节点，按照以下顺序调用：
 
 - :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>`\ 
 
@@ -2626,11 +2626,11 @@ Calling this method will propagate calls to child nodes for following methods in
 
 - :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`\ 
 
-If an earlier method marks the input as handled via :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, any later method in this list will not be called.
+如果某个方法使用 :ref:`set_input_as_handled()<class_Viewport_method_set_input_as_handled>` 将输入标记为已处理，则列表中的后续方法均不会被调用。
 
-If none of the methods handle the event and :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` is ``true``, the event is used for physics object picking.
+如果上述方法均未处理事件，并且 :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` 为 ``true``\ ，则该事件将用于物理对象的拾取。
 
-\ **Note:** This method doesn't propagate input events to embedded :ref:`Window<class_Window>`\ s or :ref:`SubViewport<class_SubViewport>`\ s.
+\ **注意：**\ 这个方法不会将输入事件传播至嵌入的 :ref:`Window<class_Window>` 和 :ref:`SubViewport<class_SubViewport>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2642,7 +2642,7 @@ If none of the methods handle the event and :ref:`physics_object_picking<class_V
 
 |void| **set_canvas_cull_mask_bit**\ (\ layer\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Viewport_method_set_canvas_cull_mask_bit>`
 
-Set/clear individual bits on the rendering layer mask. This simplifies editing this **Viewport**'s layers.
+设置或清除碰撞掩码上的比特位。可以简化 **Viewport** 层的编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -2668,7 +2668,7 @@ Stops the input from propagating further up the :ref:`SceneTree<class_SceneTree>
 
 |void| **set_positional_shadow_atlas_quadrant_subdiv**\ (\ quadrant\: :ref:`int<class_int>`, subdiv\: :ref:`PositionalShadowAtlasQuadrantSubdiv<enum_Viewport_PositionalShadowAtlasQuadrantSubdiv>`\ ) :ref:`🔗<class_Viewport_method_set_positional_shadow_atlas_quadrant_subdiv>`
 
-Sets the number of subdivisions to use in the specified quadrant. A higher number of subdivisions allows you to have more shadows in the scene at once, but reduces the quality of the shadows. A good practice is to have quadrants with a varying number of subdivisions and to have as few subdivisions as possible.
+设置在指定象限内使用的细分数。较多的细分数可以让你在场景中一次拥有更多的阴影，但是会降低阴影的质量。一个好的做法是让象限具有不同数量的细分，并尽可能地减少细分。
 
 .. rst-class:: classref-item-separator
 
@@ -2680,7 +2680,7 @@ Sets the number of subdivisions to use in the specified quadrant. A higher numbe
 
 |void| **update_mouse_cursor_state**\ (\ ) :ref:`🔗<class_Viewport_method_update_mouse_cursor_state>`
 
-Force instantly updating the display based on the current mouse cursor position. This includes updating the mouse cursor shape and sending necessary :ref:`Control.mouse_entered<class_Control_signal_mouse_entered>`, :ref:`CollisionObject2D.mouse_entered<class_CollisionObject2D_signal_mouse_entered>`, :ref:`CollisionObject3D.mouse_entered<class_CollisionObject3D_signal_mouse_entered>` and :ref:`Window.mouse_entered<class_Window_signal_mouse_entered>` signals and their respective ``mouse_exited`` counterparts.
+根据当前鼠标光标的位置强制立即更新显示。包括更新鼠标光标的形状以及发送必要的 :ref:`Control.mouse_entered<class_Control_signal_mouse_entered>`\ 、\ :ref:`CollisionObject2D.mouse_entered<class_CollisionObject2D_signal_mouse_entered>`\ 、\ :ref:`CollisionObject3D.mouse_entered<class_CollisionObject3D_signal_mouse_entered>`\ 、\ :ref:`Window.mouse_entered<class_Window_signal_mouse_entered>` 等信号，以及这些信号对应的 ``mouse_exited`` 版本。
 
 .. rst-class:: classref-item-separator
 
@@ -2692,16 +2692,16 @@ Force instantly updating the display based on the current mouse cursor position.
 
 |void| **warp_mouse**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Viewport_method_warp_mouse>`
 
-Moves the mouse pointer to the specified position in this **Viewport** using the coordinate system of this **Viewport**.
+使用该 **Viewport** 的坐标系，将鼠标指针移动到该 **Viewport** 中的指定位置。
 
-\ **Note:** :ref:`warp_mouse()<class_Viewport_method_warp_mouse>` is only supported on Windows, macOS and Linux. It has no effect on Android, iOS and Web.
+\ **注意：**\ :ref:`warp_mouse()<class_Viewport_method_warp_mouse>` 仅支持 Windows、macOS 和 Linux。它对 Android、iOS 和 Web 没有影响。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

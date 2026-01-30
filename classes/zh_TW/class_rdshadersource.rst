@@ -5,23 +5,23 @@
 RDShaderSource
 ==============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Shader source code (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+著色器原始程式碼（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Shader source code in text form.
+文字形式的著色器原始程式碼。
 
-See also :ref:`RDShaderFile<class_RDShaderFile>`. **RDShaderSource** is only meant to be used with the :ref:`RenderingDevice<class_RenderingDevice>` API. It should not be confused with Godot's own :ref:`Shader<class_Shader>` resource, which is what Godot's various nodes use for high-level shader programming.
+另見 :ref:`RDShaderFile<class_RDShaderFile>`\ 。\ **RDShaderSource** 應該僅用於 :ref:`RenderingDevice<class_RenderingDevice>` API。不應將其與 Godot 自己的 :ref:`Shader<class_Shader>` 資源，Godot 的各種節點會使用後者來進行高階著色器程式設計。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RDShaderSource_property_language:
 
@@ -74,7 +74,7 @@ Property Descriptions
 - |void| **set_language**\ (\ value\: :ref:`ShaderLanguage<enum_RenderingDevice_ShaderLanguage>`\ )
 - :ref:`ShaderLanguage<enum_RenderingDevice_ShaderLanguage>` **get_language**\ (\ )
 
-The language the shader is written in.
+著色器的編寫語言。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ The language the shader is written in.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's compute stage.
+著色器計算階段的原始程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ Source code for the shader's compute stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's fragment stage.
+著色器片段階段的原始程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Source code for the shader's fragment stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's tessellation control stage.
+著色器曲面細分控制階段的原始程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Source code for the shader's tessellation control stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's tessellation evaluation stage.
+著色器曲面細分求值階段的原始程式碼。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Source code for the shader's tessellation evaluation stage.
 - |void| **set_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`, source\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const|
 
-Source code for the shader's vertex stage.
+著色器頂點階段的原始程式碼。
 
 .. rst-class:: classref-section-separator
 
@@ -167,8 +167,8 @@ Source code for the shader's vertex stage.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_RDShaderSource_method_get_stage_source:
 
@@ -176,7 +176,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **get_stage_source**\ (\ stage\: :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>`\ ) |const| :ref:`🔗<class_RDShaderSource_method_get_stage_source>`
 
-Returns source code for the specified shader ``stage``. Equivalent to getting one of :ref:`source_compute<class_RDShaderSource_property_source_compute>`, :ref:`source_fragment<class_RDShaderSource_property_source_fragment>`, :ref:`source_tesselation_control<class_RDShaderSource_property_source_tesselation_control>`, :ref:`source_tesselation_evaluation<class_RDShaderSource_property_source_tesselation_evaluation>` or :ref:`source_vertex<class_RDShaderSource_property_source_vertex>`.
+返回指定著色器階段 ``stage`` 的原始程式碼。等價於獲取 :ref:`source_compute<class_RDShaderSource_property_source_compute>`\ 、\ :ref:`source_fragment<class_RDShaderSource_property_source_fragment>`\ 、\ :ref:`source_tesselation_control<class_RDShaderSource_property_source_tesselation_control>`\ 、\ :ref:`source_tesselation_evaluation<class_RDShaderSource_property_source_tesselation_evaluation>` 或 :ref:`source_vertex<class_RDShaderSource_property_source_vertex>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -192,12 +192,12 @@ Sets ``source`` code for the specified shader ``stage``. Equivalent to setting o
 
 \ **Note:** If you set the compute shader source code using this method directly, remember to remove the Godot-specific hint ``#[compute]``.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

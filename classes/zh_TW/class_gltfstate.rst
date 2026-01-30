@@ -5,16 +5,16 @@
 GLTFState
 =========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`FBXState<class_FBXState>`
+**被繼承：** :ref:`FBXState<class_FBXState>`
 
 Represents all data of a glTF file.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Contains all nodes and resources of a glTF file. This is used by :ref:`GLTFDocument<class_GLTFDocument>` as data storage, which allows :ref:`GLTFDocument<class_GLTFDocument>` and all :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes to remain stateless.
 
@@ -22,17 +22,17 @@ GLTFState can be populated by :ref:`GLTFDocument<class_GLTFDocument>` reading a 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `glTF asset header schema <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/schema/asset.schema.json>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -167,8 +167,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_GLTFState_HandleBinaryImageMode:
 
@@ -218,8 +218,8 @@ When importing a glTF file with embedded binary images, embeds textures compress
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_GLTFState_constant_HANDLE_BINARY_DISCARD_TEXTURES:
 
@@ -227,9 +227,9 @@ Constants
 
 **HANDLE_BINARY_DISCARD_TEXTURES** = ``0`` :ref:`🔗<class_GLTFState_constant_HANDLE_BINARY_DISCARD_TEXTURES>`
 
-**Deprecated:** Use :ref:`HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES>` instead.
+**已棄用：** Use :ref:`HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES>` instead.
 
-Discards all embedded textures and uses untextured materials.
+丟棄所有內嵌的紋理，並使用無紋理的材質。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_EXTRACT_TEXTURES:
 
@@ -237,9 +237,9 @@ Discards all embedded textures and uses untextured materials.
 
 **HANDLE_BINARY_EXTRACT_TEXTURES** = ``1`` :ref:`🔗<class_GLTFState_constant_HANDLE_BINARY_EXTRACT_TEXTURES>`
 
-**Deprecated:** Use :ref:`HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES>` instead.
+**已棄用：** Use :ref:`HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES>` instead.
 
-Extracts embedded textures to be reimported and compressed. Editor only. Acts as uncompressed at runtime.
+提取內嵌的紋理以重新匯入和壓縮。僅限編輯器。在運作時充當未壓縮的。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_EMBED_AS_BASISU:
 
@@ -247,9 +247,9 @@ Extracts embedded textures to be reimported and compressed. Editor only. Acts as
 
 **HANDLE_BINARY_EMBED_AS_BASISU** = ``2`` :ref:`🔗<class_GLTFState_constant_HANDLE_BINARY_EMBED_AS_BASISU>`
 
-**Deprecated:** Use :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU>` instead.
+**已棄用：** Use :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU>` instead.
 
-Embeds textures VRAM compressed with Basis Universal into the generated scene.
+將使用 Basis Universal 壓縮的紋理 VRAM 嵌入到生成的場景中。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_EMBED_AS_UNCOMPRESSED:
 
@@ -257,9 +257,9 @@ Embeds textures VRAM compressed with Basis Universal into the generated scene.
 
 **HANDLE_BINARY_EMBED_AS_UNCOMPRESSED** = ``3`` :ref:`🔗<class_GLTFState_constant_HANDLE_BINARY_EMBED_AS_UNCOMPRESSED>`
 
-**Deprecated:** Use :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>` instead.
+**已棄用：** Use :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>` instead.
 
-Embeds textures compressed losslessly into the generated scene, matching old behavior.
+將無失真壓縮的紋理嵌入到生成的場景中，配對舊行為。
 
 .. rst-class:: classref-section-separator
 
@@ -267,8 +267,8 @@ Embeds textures compressed losslessly into the generated scene, matching old beh
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_GLTFState_property_bake_fps:
 
@@ -543,8 +543,8 @@ The name of the scene. When importing, if not specified, this will be the file n
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_GLTFState_method_add_used_extension:
 
@@ -682,7 +682,7 @@ Returns an array of all :ref:`GLTFCamera<class_GLTFCamera>`\ s in the glTF file.
 
 :ref:`int<class_int>` **get_handle_binary_image**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_handle_binary_image>`
 
-**Deprecated:** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
+**已棄用：** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
 Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
 
@@ -746,9 +746,9 @@ Returns an array of all :ref:`GLTFMesh<class_GLTFMesh>`\ es in the glTF file. Th
 
 :ref:`int<class_int>` **get_node_index**\ (\ scene_node\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_GLTFState_method_get_node_index>`
 
-Returns the index of the :ref:`GLTFNode<class_GLTFNode>` corresponding to this Godot scene node. This is the inverse of :ref:`get_scene_node()<class_GLTFState_method_get_scene_node>`. Useful during the export process.
+返回與該 Godot 場景節點對應的 :ref:`GLTFNode<class_GLTFNode>` 的索引。這個方法與 :ref:`get_scene_node()<class_GLTFState_method_get_scene_node>` 互逆。可以在匯出過程中使用。
 
-\ **Note:** Not every Godot scene node will have a corresponding :ref:`GLTFNode<class_GLTFNode>`, and not every :ref:`GLTFNode<class_GLTFNode>` will have a scene node generated. If there is no :ref:`GLTFNode<class_GLTFNode>` index for this scene node, ``-1`` is returned.
+\ **注意：**\ 並不是所有 Godot 場景節點都有對應的 :ref:`GLTFNode<class_GLTFNode>`\ ，也並不是所有 :ref:`GLTFNode<class_GLTFNode>` 都會生成場景節點。如果該場景節點沒有 :ref:`GLTFNode<class_GLTFNode>` 索引，則會返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -772,9 +772,9 @@ Returns an array of all :ref:`GLTFNode<class_GLTFNode>`\ s in the glTF file. The
 
 :ref:`Node<class_Node>` **get_scene_node**\ (\ gltf_node_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GLTFState_method_get_scene_node>`
 
-Returns the Godot scene node that corresponds to the same index as the :ref:`GLTFNode<class_GLTFNode>` it was generated from. This is the inverse of :ref:`get_node_index()<class_GLTFState_method_get_node_index>`. Useful during the import process.
+返回指定索引的 :ref:`GLTFNode<class_GLTFNode>` 對應生成的 Godot 場景節點。這個方法與 :ref:`get_node_index()<class_GLTFState_method_get_node_index>` 互逆。可以在匯入過程中使用。
 
-\ **Note:** Not every :ref:`GLTFNode<class_GLTFNode>` will have a scene node generated, and not every generated scene node will have a corresponding :ref:`GLTFNode<class_GLTFNode>`. If there is no scene node for this :ref:`GLTFNode<class_GLTFNode>` index, ``null`` is returned.
+\ **注意：**\ 並不是所有 :ref:`GLTFNode<class_GLTFNode>` 都會生成場景節點，也並不是所有 Godot 場景節點都有對應的 :ref:`GLTFNode<class_GLTFNode>`\ 。如果該 :ref:`GLTFNode<class_GLTFNode>` 索引沒有場景節點，則會返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -836,7 +836,7 @@ Retrieves the array of texture samplers that are used by the textures contained 
 
 :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_unique_animation_names**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_unique_animation_names>`
 
-Returns an array of unique animation names. This is only used during the import process.
+返回一組唯一的動畫名稱。這僅在匯入過程中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -848,7 +848,7 @@ Returns an array of unique animation names. This is only used during the import 
 
 :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_unique_names**\ (\ ) |const| :ref:`🔗<class_GLTFState_method_get_unique_names>`
 
-Returns an array of unique node names. This is used in both the import process and export process.
+返回唯一節點名稱的陣列。這用於匯入過程和匯出過程。
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +888,7 @@ The first argument should be the :ref:`GLTFDocumentExtension<class_GLTFDocumentE
 
 |void| **set_animations**\ (\ animations\: :ref:`Array<class_Array>`\[:ref:`GLTFAnimation<class_GLTFAnimation>`\]\ ) :ref:`🔗<class_GLTFState_method_set_animations>`
 
-Sets the :ref:`GLTFAnimation<class_GLTFAnimation>`\ s in the state. When importing, these will be generated as animations in an :ref:`AnimationPlayer<class_AnimationPlayer>` node. When exporting, these will be generated from Godot :ref:`AnimationPlayer<class_AnimationPlayer>` nodes.
+設定該狀態中的 :ref:`GLTFAnimation<class_GLTFAnimation>`\ 。匯入時，這些將在 :ref:`AnimationPlayer<class_AnimationPlayer>` 節點中生成為動畫。匯出時，這些將由 Godot :ref:`AnimationPlayer<class_AnimationPlayer>` 節點生成。
 
 .. rst-class:: classref-item-separator
 
@@ -914,7 +914,7 @@ Sets the :ref:`GLTFAnimation<class_GLTFAnimation>`\ s in the state. When importi
 
 |void| **set_cameras**\ (\ cameras\: :ref:`Array<class_Array>`\[:ref:`GLTFCamera<class_GLTFCamera>`\]\ ) :ref:`🔗<class_GLTFState_method_set_cameras>`
 
-Sets the :ref:`GLTFCamera<class_GLTFCamera>`\ s in the state. These are the cameras that the :ref:`GLTFNode.camera<class_GLTFNode_property_camera>` index refers to.
+設定該狀態中的 :ref:`GLTFCamera<class_GLTFCamera>`\ 。這些是 :ref:`GLTFNode.camera<class_GLTFNode_property_camera>` 索引引用的相機。
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +926,7 @@ Sets the :ref:`GLTFCamera<class_GLTFCamera>`\ s in the state. These are the came
 
 |void| **set_handle_binary_image**\ (\ method\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GLTFState_method_set_handle_binary_image>`
 
-**Deprecated:** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
+**已棄用：** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
 Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
 
@@ -940,7 +940,7 @@ Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_prop
 
 |void| **set_images**\ (\ images\: :ref:`Array<class_Array>`\[:ref:`Texture2D<class_Texture2D>`\]\ ) :ref:`🔗<class_GLTFState_method_set_images>`
 
-Sets the images in the state stored as an array of :ref:`Texture2D<class_Texture2D>`\ s. This can be used during export. These are the images that the :ref:`GLTFTexture.src_image<class_GLTFTexture_property_src_image>` index refers to.
+設定狀態中以 :ref:`Texture2D<class_Texture2D>` 陣列形式儲存的圖像。可以在匯出時使用。這些是 :ref:`GLTFTexture.src_image<class_GLTFTexture_property_src_image>` 索引所引用的圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -952,7 +952,7 @@ Sets the images in the state stored as an array of :ref:`Texture2D<class_Texture
 
 |void| **set_lights**\ (\ lights\: :ref:`Array<class_Array>`\[:ref:`GLTFLight<class_GLTFLight>`\]\ ) :ref:`🔗<class_GLTFState_method_set_lights>`
 
-Sets the :ref:`GLTFLight<class_GLTFLight>`\ s in the state. These are the lights that the :ref:`GLTFNode.light<class_GLTFNode_property_light>` index refers to.
+設定該狀態中的 :ref:`GLTFLight<class_GLTFLight>`\ 。這些是 :ref:`GLTFNode.light<class_GLTFNode_property_light>` 索引引用的燈。
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +978,7 @@ Sets the :ref:`GLTFLight<class_GLTFLight>`\ s in the state. These are the lights
 
 |void| **set_meshes**\ (\ meshes\: :ref:`Array<class_Array>`\[:ref:`GLTFMesh<class_GLTFMesh>`\]\ ) :ref:`🔗<class_GLTFState_method_set_meshes>`
 
-Sets the :ref:`GLTFMesh<class_GLTFMesh>`\ es in the state. These are the meshes that the :ref:`GLTFNode.mesh<class_GLTFNode_property_mesh>` index refers to.
+設定該狀態中的 :ref:`GLTFMesh<class_GLTFMesh>`\ 。這些是 :ref:`GLTFNode.mesh<class_GLTFNode_property_mesh>` 索引引用的網格。
 
 .. rst-class:: classref-item-separator
 
@@ -990,7 +990,7 @@ Sets the :ref:`GLTFMesh<class_GLTFMesh>`\ es in the state. These are the meshes 
 
 |void| **set_nodes**\ (\ nodes\: :ref:`Array<class_Array>`\[:ref:`GLTFNode<class_GLTFNode>`\]\ ) :ref:`🔗<class_GLTFState_method_set_nodes>`
 
-Sets the :ref:`GLTFNode<class_GLTFNode>`\ s in the state. These are the nodes that :ref:`GLTFNode.children<class_GLTFNode_property_children>` and :ref:`root_nodes<class_GLTFState_property_root_nodes>` refer to. Some of the nodes set here may not be generated in the Godot scene, or may generate multiple Godot scene nodes.
+設定該狀態中的 :ref:`GLTFNode<class_GLTFNode>`\ 。這些是 :ref:`GLTFNode.children<class_GLTFNode_property_children>` 和 :ref:`root_nodes<class_GLTFState_property_root_nodes>` 引用的節點。這裡設定的一些節點在 Godot 場景中可能不會生成，也可能會生成多個 Godot 場景節點。
 
 .. rst-class:: classref-item-separator
 
@@ -1002,7 +1002,7 @@ Sets the :ref:`GLTFNode<class_GLTFNode>`\ s in the state. These are the nodes th
 
 |void| **set_skeletons**\ (\ skeletons\: :ref:`Array<class_Array>`\[:ref:`GLTFSkeleton<class_GLTFSkeleton>`\]\ ) :ref:`🔗<class_GLTFState_method_set_skeletons>`
 
-Sets the :ref:`GLTFSkeleton<class_GLTFSkeleton>`\ s in the state. These are the skeletons that the :ref:`GLTFNode.skeleton<class_GLTFNode_property_skeleton>` index refers to.
+設定該狀態中的 :ref:`GLTFSkeleton<class_GLTFSkeleton>`\ 。這些是 :ref:`GLTFNode.skeleton<class_GLTFNode_property_skeleton>` 索引引用的骨架。
 
 .. rst-class:: classref-item-separator
 
@@ -1014,7 +1014,7 @@ Sets the :ref:`GLTFSkeleton<class_GLTFSkeleton>`\ s in the state. These are the 
 
 |void| **set_skins**\ (\ skins\: :ref:`Array<class_Array>`\[:ref:`GLTFSkin<class_GLTFSkin>`\]\ ) :ref:`🔗<class_GLTFState_method_set_skins>`
 
-Sets the :ref:`GLTFSkin<class_GLTFSkin>`\ s in the state. These are the skins that the :ref:`GLTFNode.skin<class_GLTFNode_property_skin>` index refers to.
+設定該狀態中的 :ref:`GLTFSkin<class_GLTFSkin>`\ 。這些是 :ref:`GLTFNode.skin<class_GLTFNode_property_skin>` 索引引用的皮膚。
 
 .. rst-class:: classref-item-separator
 
@@ -1052,7 +1052,7 @@ Sets the array of texture samplers that are used by the textures contained in th
 
 |void| **set_unique_animation_names**\ (\ unique_animation_names\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) :ref:`🔗<class_GLTFState_method_set_unique_animation_names>`
 
-Sets the unique animation names in the state. This is only used during the import process.
+設定該狀態中的唯一動畫名稱。這僅在匯入過程中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1064,14 +1064,14 @@ Sets the unique animation names in the state. This is only used during the impor
 
 |void| **set_unique_names**\ (\ unique_names\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ ) :ref:`🔗<class_GLTFState_method_set_unique_names>`
 
-Sets the unique node names in the state. This is used in both the import process and export process.
+設定該狀態中的唯一節點名稱。這用於匯入過程和匯出過程。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

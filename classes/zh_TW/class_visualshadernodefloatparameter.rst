@@ -5,21 +5,21 @@
 VisualShaderNodeFloatParameter
 ==============================
 
-**Inherits:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A scalar float parameter to be used within the visual shader graph.
+標量浮點數參數，在視覺化著色器圖中使用。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Translated to ``uniform float`` in the shader language.
+翻譯為著色器語言中的 ``uniform float``\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeFloatParameter_Hint:
 
@@ -59,7 +59,7 @@ enum **Hint**: :ref:`🔗<enum_VisualShaderNodeFloatParameter_Hint>`
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_NONE** = ``0``
 
-No hint used.
+不使用提示。
 
 .. _class_VisualShaderNodeFloatParameter_constant_HINT_RANGE:
 
@@ -67,7 +67,7 @@ No hint used.
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_RANGE** = ``1``
 
-A range hint for scalar value, which limits possible input values between :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` and :ref:`max<class_VisualShaderNodeFloatParameter_property_max>`. Translated to ``hint_range(min, max)`` in shader code.
+標量值的範圍提示，會將可能的輸入限制在 :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` 和 :ref:`max<class_VisualShaderNodeFloatParameter_property_max>` 之間。會被翻譯為著色器程式碼中的 ``hint_range(min, max)``\ 。
 
 .. _class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP:
 
@@ -75,7 +75,7 @@ A range hint for scalar value, which limits possible input values between :ref:`
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_RANGE_STEP** = ``2``
 
-A range hint for scalar value with step, which limits possible input values between :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` and :ref:`max<class_VisualShaderNodeFloatParameter_property_max>`, with a step (increment) of :ref:`step<class_VisualShaderNodeFloatParameter_property_step>`). Translated to ``hint_range(min, max, step)`` in shader code.
+標量值的範圍提示，帶步長，會將可能的輸入限制在 :ref:`min<class_VisualShaderNodeFloatParameter_property_min>` 和 :ref:`max<class_VisualShaderNodeFloatParameter_property_max>` 之間，步長（差異量）為 :ref:`step<class_VisualShaderNodeFloatParameter_property_step>`\ 。會被翻譯為著色器程式碼中的 ``hint_range(min, max, step)``\ 。
 
 .. _class_VisualShaderNodeFloatParameter_constant_HINT_MAX:
 
@@ -83,7 +83,7 @@ A range hint for scalar value with step, which limits possible input values betw
 
 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **HINT_MAX** = ``3``
 
-Represents the size of the :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` enum.
+代表 :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ Represents the size of the :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>`
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeFloatParameter_property_default_value:
 
@@ -105,7 +105,7 @@ Property Descriptions
 - |void| **set_default_value**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_default_value**\ (\ )
 
-A default value to be assigned within the shader.
+該著色器內部分配的預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ A default value to be assigned within the shader.
 - |void| **set_default_value_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_value_enabled**\ (\ )
 
-Enables usage of the :ref:`default_value<class_VisualShaderNodeFloatParameter_property_default_value>`.
+啟用 :ref:`default_value<class_VisualShaderNodeFloatParameter_property_default_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Enables usage of the :ref:`default_value<class_VisualShaderNodeFloatParameter_pr
 - |void| **set_hint**\ (\ value\: :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>`\ )
 - :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **get_hint**\ (\ )
 
-A hint applied to the uniform, which controls the values it can take when set through the Inspector.
+對 uniform 套用的提示，控制通過屬性檢視器所能設定的值。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ A hint applied to the uniform, which controls the values it can take when set th
 - |void| **set_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max**\ (\ )
 
-Minimum value for range hints. Used if :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` is set to :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` or :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>`.
+範圍提示的最小值。會在 :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` 為 :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` 或 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>` 時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Minimum value for range hints. Used if :ref:`hint<class_VisualShaderNodeFloatPar
 - |void| **set_min**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min**\ (\ )
 
-Maximum value for range hints. Used if :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` is set to :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` or :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>`.
+範圍提示的最大值。會在 :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` 為 :ref:`HINT_RANGE<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE>` 或 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>` 時使用。
 
 .. rst-class:: classref-item-separator
 
@@ -190,14 +190,14 @@ Maximum value for range hints. Used if :ref:`hint<class_VisualShaderNodeFloatPar
 - |void| **set_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-Step (increment) value for the range hint with step. Used if :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` is set to :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>`.
+帶步長（差異量）的範圍提示的步長值。會在 :ref:`hint<class_VisualShaderNodeFloatParameter_property_hint>` 為 :ref:`HINT_RANGE_STEP<class_VisualShaderNodeFloatParameter_constant_HINT_RANGE_STEP>` 時使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,30 +5,30 @@
 AudioEffectReverb
 =================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a reverberation audio effect to an Audio bus.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Simulates the sound of acoustic environments such as rooms, concert halls, caverns, or an open spaces.
+向音訊匯流排新增混響效果。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+模擬房間、音樂廳、洞穴或開放空間等聲學環境。
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
+
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioEffectReverb_property_damping:
 
@@ -71,7 +71,7 @@ Property Descriptions
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-Defines how reflective the imaginary room's walls are. Value can range from 0 to 1.
+定義虛擬房間牆面的反射度，取值 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ Defines how reflective the imaginary room's walls are. Value can range from 0 to
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-Output percent of original sound. At 0, only modified sound is outputted. Value can range from 0 to 1.
+原始聲音的輸出百分比；0 時僅輸出處理後的聲音。取值 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ Output percent of original sound. At 0, only modified sound is outputted. Value 
 - |void| **set_hpf**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_hpf**\ (\ )
 
-High-pass filter passes signals with a frequency higher than a certain cutoff frequency and attenuates signals with frequencies lower than the cutoff frequency. Value can range from 0 to 1.
+高通濾波器會通過高於截止頻率的訊號並衰減低於該頻率的訊號。取值 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ High-pass filter passes signals with a frequency higher than a certain cutoff fr
 - |void| **set_predelay_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_feedback**\ (\ )
 
-Output percent of predelay. Value can range from 0 to 1.
+預延遲輸出百分比，取值 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Output percent of predelay. Value can range from 0 to 1.
 - |void| **set_predelay_msec**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_predelay_msec**\ (\ )
 
-Time between the original signal and the early reflections of the reverb signal, in milliseconds.
+原始訊號與混響早期反射間的時間（毫秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Time between the original signal and the early reflections of the reverb signal,
 - |void| **set_room_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_room_size**\ (\ )
 
-Dimensions of simulated room. Bigger means more echoes. Value can range from 0 to 1.
+模擬房間尺寸，越大回聲越多。取值 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ Dimensions of simulated room. Bigger means more echoes. Value can range from 0 t
 - |void| **set_spread**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_spread**\ (\ )
 
-Widens or narrows the stereo image of the reverb tail. 1 means fully widens. Value can range from 0 to 1.
+調整混響尾音的立體聲寬度；1 為最寬。取值 0–1。
 
 .. rst-class:: classref-item-separator
 
@@ -190,14 +190,14 @@ Widens or narrows the stereo image of the reverb tail. 1 means fully widens. Val
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-Output percent of modified sound. At 0, only original sound is outputted. Value can range from 0 to 1.
+處理後聲音的輸出百分比；0 時僅輸出原始聲音。取值 0–1。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,21 +5,21 @@
 PhysicsRayQueryParameters3D
 ===========================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides parameters for :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>`.
+為 :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>` 提供參數。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-By changing various properties of this object, such as the ray position, you can configure the parameters for :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>`.
+通過修改這個物件的射線位置等屬性，你可以為 :ref:`PhysicsDirectSpaceState3D.intersect_ray()<class_PhysicsDirectSpaceState3D_method_intersect_ray>` 配置參數。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_PhysicsRayQueryParameters3D_property_collide_with_areas:
 
@@ -74,7 +74,7 @@ Property Descriptions
 - |void| **set_collide_with_areas**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled**\ (\ )
 
-If ``true``, the query will take :ref:`Area3D<class_Area3D>`\ s into account.
+如果為 ``true``\ ，則查詢將考慮 :ref:`Area3D<class_Area3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ If ``true``, the query will take :ref:`Area3D<class_Area3D>`\ s into account.
 - |void| **set_collide_with_bodies**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled**\ (\ )
 
-If ``true``, the query will take :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s into account.
+如果為 ``true``\ ，則查詢將考慮 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -108,7 +108,7 @@ If ``true``, the query will take :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s in
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers the query will detect (as a bitmask). By default, all collision layers are detected. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+查詢將偵測的實體層（作為位元遮罩）。預設情況下，會偵測所有碰撞層。有關詳細信息，請參閱文件中的 `《碰撞層和遮罩》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ The list of object :ref:`RID<class_RID>`\ s that will be excluded from collision
 - |void| **set_from**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_from**\ (\ )
 
-The starting point of the ray being queried for, in global coordinates.
+要查詢的射線起點，使用全域座標。
 
 .. rst-class:: classref-item-separator
 
@@ -161,7 +161,7 @@ The starting point of the ray being queried for, in global coordinates.
 - |void| **set_hit_back_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hit_back_faces_enabled**\ (\ )
 
-If ``true``, the query will hit back faces with concave polygon shapes with back face enabled or heightmap shapes.
+如果為 ``true``\ ，查詢將命中背部面，這些背部面是啟用了背面的凹多邊形形狀，或高度圖形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ If ``true``, the query will hit back faces with concave polygon shapes with back
 - |void| **set_hit_from_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hit_from_inside_enabled**\ (\ )
 
-If ``true``, the query will detect a hit when starting inside shapes. In this case the collision normal will be ``Vector3(0, 0, 0)``. Does not affect concave polygon shapes or heightmap shapes.
+如果為 ``true``\ ，查詢會在從形狀內部開始時偵測到命中。在此情況下，碰撞法線將為 ``Vector3(0, 0, 0)``\ 。不會影響凹多邊形形狀和高度圖形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ If ``true``, the query will detect a hit when starting inside shapes. In this ca
 - |void| **set_to**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_to**\ (\ )
 
-The ending point of the ray being queried for, in global coordinates.
+要查詢的射線終點，使用全域座標。
 
 .. rst-class:: classref-section-separator
 
@@ -203,8 +203,8 @@ The ending point of the ray being queried for, in global coordinates.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_PhysicsRayQueryParameters3D_method_create:
 
@@ -212,19 +212,19 @@ Method Descriptions
 
 :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>` **create**\ (\ from\: :ref:`Vector3<class_Vector3>`, to\: :ref:`Vector3<class_Vector3>`, collision_mask\: :ref:`int<class_int>` = 4294967295, exclude\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] = []\ ) |static| :ref:`🔗<class_PhysicsRayQueryParameters3D_method_create>`
 
-Returns a new, pre-configured **PhysicsRayQueryParameters3D** object. Use it to quickly create query parameters using the most common options.
+返回一個新的、預配置的 **PhysicsRayQueryParameters3D** 對象。使用它可以使用最常見的選項快速建立查詢參數。
 
 ::
 
     var query = PhysicsRayQueryParameters3D.create(position, position + Vector3(0, -10, 0))
     var collision = get_world_3d().direct_space_state.intersect_ray(query)
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

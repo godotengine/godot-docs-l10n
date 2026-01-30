@@ -5,21 +5,21 @@
 UPNPDevice
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Universal Plug and Play (UPnP) device.
+通用隨插即用（UPnP）裝置。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Universal Plug and Play (UPnP) device. See :ref:`UPNP<class_UPNP>` for UPnP discovery and utility functions. Provides low-level access to UPNP control commands. Allows to manage port mappings (port forwarding) and to query network information of the device (like local and external IP address and status). Note that methods on this class are synchronous and block the calling thread.
+通用隨插即用（UPnP）裝置。UPnP 發現及工具函式見 :ref:`UPNP<class_UPNP>`\ 。提供對 UPNP 控制命令的低層存取。允許管理埠對應（埠轉發）和查詢裝置的網路資訊（如本地和外部 IP 位址和狀態）。請注意，這個類的方法是同步的，會阻塞呼叫執行緒。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_UPNPDevice_IGDStatus:
 
@@ -77,7 +77,7 @@ enum **IGDStatus**: :ref:`🔗<enum_UPNPDevice_IGDStatus>`
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_OK** = ``0``
 
-OK.
+OK。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_HTTP_ERROR:
 
@@ -85,7 +85,7 @@ OK.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_HTTP_ERROR** = ``1``
 
-HTTP error.
+HTTP 錯誤。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_HTTP_EMPTY:
 
@@ -93,7 +93,7 @@ HTTP error.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_HTTP_EMPTY** = ``2``
 
-Empty HTTP response.
+空的 HTTP 回應。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_NO_URLS:
 
@@ -101,9 +101,9 @@ Empty HTTP response.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_NO_URLS** = ``3``
 
-**Deprecated:** This value is no longer used.
+**已棄用：** This value is no longer used.
 
-Returned response contained no URLs.
+返回的回應不包含任何 URL。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_NO_IGD:
 
@@ -111,7 +111,7 @@ Returned response contained no URLs.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_NO_IGD** = ``4``
 
-Not a valid IGD.
+不是有效的 IGD。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_DISCONNECTED:
 
@@ -119,7 +119,7 @@ Not a valid IGD.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_DISCONNECTED** = ``5``
 
-Disconnected.
+已斷開連接。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_UNKNOWN_DEVICE:
 
@@ -127,7 +127,7 @@ Disconnected.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_UNKNOWN_DEVICE** = ``6``
 
-Unknown device.
+未知裝置。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_INVALID_CONTROL:
 
@@ -135,7 +135,7 @@ Unknown device.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_INVALID_CONTROL** = ``7``
 
-Invalid control.
+無效控制。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_MALLOC_ERROR:
 
@@ -143,9 +143,9 @@ Invalid control.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_MALLOC_ERROR** = ``8``
 
-**Deprecated:** This value is no longer used.
+**已棄用：** This value is no longer used.
 
-Memory allocation error.
+記憶體分配錯誤。
 
 .. _class_UPNPDevice_constant_IGD_STATUS_UNKNOWN_ERROR:
 
@@ -153,7 +153,7 @@ Memory allocation error.
 
 :ref:`IGDStatus<enum_UPNPDevice_IGDStatus>` **IGD_STATUS_UNKNOWN_ERROR** = ``9``
 
-Unknown error.
+未知錯誤。
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ Unknown error.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_UPNPDevice_property_description_url:
 
@@ -175,7 +175,7 @@ Property Descriptions
 - |void| **set_description_url**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_description_url**\ (\ )
 
-URL to the device description.
+裝置描述的 URL。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ URL to the device description.
 - |void| **set_igd_control_url**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_igd_control_url**\ (\ )
 
-IDG control URL.
+IDG 控制項 URL。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ IDG control URL.
 - |void| **set_igd_our_addr**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_igd_our_addr**\ (\ )
 
-Address of the local machine in the network connecting it to this **UPNPDevice**.
+將其連接到該 **UPNPDevice** 的網路中的本地機器的位址。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Address of the local machine in the network connecting it to this **UPNPDevice**
 - |void| **set_igd_service_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_igd_service_type**\ (\ )
 
-IGD service type.
+IGD 服務型別。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ IGD status.
 - |void| **set_service_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_service_type**\ (\ )
 
-Service type.
+服務型別。
 
 .. rst-class:: classref-section-separator
 
@@ -268,8 +268,8 @@ Service type.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_UPNPDevice_method_add_port_mapping:
 
@@ -277,7 +277,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **add_port_mapping**\ (\ port\: :ref:`int<class_int>`, port_internal\: :ref:`int<class_int>` = 0, desc\: :ref:`String<class_String>` = "", proto\: :ref:`String<class_String>` = "UDP", duration\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_UPNPDevice_method_add_port_mapping>`
 
-Adds a port mapping to forward the given external port on this **UPNPDevice** for the given protocol to the local machine. See :ref:`UPNP.add_port_mapping()<class_UPNP_method_add_port_mapping>`.
+新增一個埠對應，將這個 **UPNPDevice** 上給定的外部埠轉發到本地機器上，以給定的協議。見 :ref:`UPNP.add_port_mapping()<class_UPNP_method_add_port_mapping>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Adds a port mapping to forward the given external port on this **UPNPDevice** fo
 
 :ref:`int<class_int>` **delete_port_mapping**\ (\ port\: :ref:`int<class_int>`, proto\: :ref:`String<class_String>` = "UDP"\ ) |const| :ref:`🔗<class_UPNPDevice_method_delete_port_mapping>`
 
-Deletes the port mapping identified by the given port and protocol combination on this device. See :ref:`UPNP.delete_port_mapping()<class_UPNP_method_delete_port_mapping>`.
+刪除該裝置上由給定的埠和協定組合確定的埠對應。見 :ref:`UPNP.delete_port_mapping()<class_UPNP_method_delete_port_mapping>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Deletes the port mapping identified by the given port and protocol combination o
 
 :ref:`bool<class_bool>` **is_valid_gateway**\ (\ ) |const| :ref:`🔗<class_UPNPDevice_method_is_valid_gateway>`
 
-Returns ``true`` if this is a valid IGD (InternetGatewayDevice) which potentially supports port forwarding.
+如果這是一個有效的 IGD（InternetGatewayDevice），可能支援埠轉發，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -313,14 +313,14 @@ Returns ``true`` if this is a valid IGD (InternetGatewayDevice) which potentiall
 
 :ref:`String<class_String>` **query_external_address**\ (\ ) |const| :ref:`🔗<class_UPNPDevice_method_query_external_address>`
 
-Returns the external IP address of this **UPNPDevice** or an empty string.
+返回這個 **UPNPDevice** 的外部 IP 位址或空字串。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

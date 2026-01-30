@@ -5,14 +5,14 @@
 SystemFont
 ==========
 
-**Inherits:** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A font loaded from a system font. Falls back to a default theme font if not implemented on the host OS.
+從系統字形載入的字形。如果未在宿主作業系統上實作，則退回到預設主題字形。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **SystemFont** loads a font from a system font with the first matching name from :ref:`font_names<class_SystemFont_property_font_names>`.
 
@@ -26,8 +26,8 @@ You can create :ref:`FontVariation<class_FontVariation>` of the system font for 
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SystemFont_property_allow_system_fallback:
 
@@ -88,7 +88,7 @@ Property Descriptions
 - |void| **set_allow_system_fallback**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_system_fallback**\ (\ )
 
-If set to ``true``, system fonts can be automatically used as fallbacks.
+如果設定為 ``true``\ ，則可以自動將系統字形作為退回使用。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ If set to ``true``, system fonts can be automatically used as fallbacks.
 - |void| **set_antialiasing**\ (\ value\: :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>`\ )
 - :ref:`FontAntialiasing<enum_TextServer_FontAntialiasing>` **get_antialiasing**\ (\ )
 
-Font anti-aliasing mode.
+字形抗鋸齒模式。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ If set to ``true``, embedded font bitmap loading is disabled (bitmap-only and co
 - |void| **set_font_italic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_font_italic**\ (\ )
 
-If set to ``true``, italic or oblique font is preferred.
+如果設定為 ``true``\ ，則優先使用斜體（italic）或偽斜體（oblique）。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ If set to ``true``, italic or oblique font is preferred.
 - |void| **set_font_names**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_font_names**\ (\ )
 
-Array of font family names to search, first matching font found is used.
+要搜索的字形家族名稱陣列，會使用第一個與之配對的字形。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -175,7 +175,7 @@ Array of font family names to search, first matching font found is used.
 - |void| **set_font_stretch**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_stretch**\ (\ )
 
-Preferred font stretch amount, compared to a normal width. A percentage value between ``50%`` and ``200%``.
+字形優先使用的拉伸量，相對於正常寬度。介於 ``50%`` 和 ``200%`` 之間的百分比。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Preferred font stretch amount, compared to a normal width. A percentage value be
 - |void| **set_font_weight**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_weight**\ (\ )
 
-Preferred weight (boldness) of the font. A value in the ``100...999`` range, normal font weight is ``400``, bold font weight is ``700``.
+字形優先使用的字重（粗度）。在 ``100...999`` 範圍內的值，正常字重為 ``400``\ ，粗體字重為 ``700``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Preferred weight (boldness) of the font. A value in the ``100...999`` range, nor
 - |void| **set_force_autohinter**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_force_autohinter**\ (\ )
 
-If set to ``true``, auto-hinting is supported and preferred over font built-in hinting.
+如果設定為 ``true``\ ，則支援自動微調，優先於字形內建微調。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ If set to ``true``, auto-hinting is supported and preferred over font built-in h
 - |void| **set_generate_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_generate_mipmaps**\ (\ )
 
-If set to ``true``, generate mipmaps for the font textures.
+如果設定為 ``true``\ ，則為字形紋理生成 mipmap。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ If set to ``true``, generate mipmaps for the font textures.
 - |void| **set_hinting**\ (\ value\: :ref:`Hinting<enum_TextServer_Hinting>`\ )
 - :ref:`Hinting<enum_TextServer_Hinting>` **get_hinting**\ (\ )
 
-Font hinting mode.
+字形微調模式。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_msdf_pixel_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_pixel_range**\ (\ )
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` value of ``16`` allows outline sizes up to ``8`` to look correct.
+最小和最大可表示的有符號距離之間的形狀周圍的範圍寬度。如果使用字形輪廓，\ :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` 必須至少設定為最大字形輪廓大小的\ *兩倍*\ 。\ :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` 的預設值為 ``16``\ ，允許大小最大到 ``8`` 的輪廓看起來正確。
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ The width of the range around the shape between the minimum and maximum represen
 - |void| **set_msdf_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_size**\ (\ )
 
-Source font size used to generate MSDF textures. Higher values allow for more precision, but are slower to render and require more memory. Only increase this value if you notice a visible lack of precision in glyph rendering.
+用於生成 MSDF 紋理的源字形大小。較高的值允許更高的精度，但算繪速度較慢並且需要更多記憶體。只有當注意到字形算繪中明顯缺乏精度時，才增加該屬性的值。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Source font size used to generate MSDF textures. Higher values allow for more pr
 - |void| **set_multichannel_signed_distance_field**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multichannel_signed_distance_field**\ (\ )
 
-If set to ``true``, glyphs of all sizes are rendered using single multichannel signed distance field generated from the dynamic font vector data.
+如果設定為 ``true``\ ，則所有大小的字形都將使用從動態字形向量資料生成的單個多通道帶符號距離場算繪。
 
 .. rst-class:: classref-item-separator
 
@@ -362,14 +362,14 @@ If set to a positive value, overrides the oversampling factor of the viewport th
 - |void| **set_subpixel_positioning**\ (\ value\: :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>`\ )
 - :ref:`SubpixelPositioning<enum_TextServer_SubpixelPositioning>` **get_subpixel_positioning**\ (\ )
 
-Font glyph subpixel positioning mode. Subpixel positioning provides shaper text and better kerning for smaller font sizes, at the cost of memory usage and font rasterization speed. Use :ref:`TextServer.SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` to automatically enable it based on the font size.
+字形字形的次圖元定位模式。次圖元定位為較小的字形提供了更清晰的文字和更好的字偶距，但會犧牲記憶體佔用和字形柵格化速度。使用 :ref:`TextServer.SUBPIXEL_POSITIONING_AUTO<class_TextServer_constant_SUBPIXEL_POSITIONING_AUTO>` 可以根據字形大小自動啟用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

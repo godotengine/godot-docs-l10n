@@ -5,32 +5,32 @@
 AnimationMixer
 ==============
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AnimationPlayer<class_AnimationPlayer>`, :ref:`AnimationTree<class_AnimationTree>`
+**被繼承：** :ref:`AnimationPlayer<class_AnimationPlayer>`, :ref:`AnimationTree<class_AnimationTree>`
 
-Base class for :ref:`AnimationPlayer<class_AnimationPlayer>` and :ref:`AnimationTree<class_AnimationTree>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Base class for :ref:`AnimationPlayer<class_AnimationPlayer>` and :ref:`AnimationTree<class_AnimationTree>` to manage animation lists. It also has general properties and methods for playback and blending.
-
-After instantiating the playback information data within the extended class, the blending is processed by the **AnimationMixer**.
+:ref:`AnimationPlayer<class_AnimationPlayer>` 與 :ref:`AnimationTree<class_AnimationTree>` 的基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `Migrating Animations from Godot 4.0 to 4.3 <https://godotengine.org/article/migrating-animations-from-godot-4-0-to-4-3/>`__
+:ref:`AnimationPlayer<class_AnimationPlayer>` 與 :ref:`AnimationTree<class_AnimationTree>` 管理動畫列表的基底類別，並提供播放與混合的通用屬性及方法。
+
+在延伸類別中建立播放資訊後，混合將由 **AnimationMixer** 處理。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `將動畫自 Godot 4.0 移植到 4.3 <https://godotengine.org/article/migrating-animations-from-godot-4-0-to-4-3/>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_AnimationMixer_signal_animation_finished:
 
@@ -124,9 +124,9 @@ Signals
 
 **animation_finished**\ (\ anim_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationMixer_signal_animation_finished>`
 
-Notifies when an animation finished playing.
+動畫播放結束時會發出通知。
 
-\ **Note:** This signal is not emitted if an animation is looping.
+\ **注意：** 若動畫設定為循環播放，則不會發出此訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Notifies when an animation finished playing.
 
 **animation_libraries_updated**\ (\ ) :ref:`🔗<class_AnimationMixer_signal_animation_libraries_updated>`
 
-Notifies when the animation libraries have changed.
+動畫庫變更時通知。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Notifies when the animation libraries have changed.
 
 **animation_list_changed**\ (\ ) :ref:`🔗<class_AnimationMixer_signal_animation_list_changed>`
 
-Notifies when an animation list is changed.
+動畫列表變更時通知。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Notifies when an animation starts playing.
 
 **caches_cleared**\ (\ ) :ref:`🔗<class_AnimationMixer_signal_caches_cleared>`
 
-Notifies when the caches have been cleared, either automatically, or manually via :ref:`clear_caches()<class_AnimationMixer_method_clear_caches>`.
+快取被清除（無論自動或經由 :ref:`clear_caches()<class_AnimationMixer_method_clear_caches>` 手動）時通知。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Notifies when the caches have been cleared, either automatically, or manually vi
 
 **mixer_applied**\ (\ ) :ref:`🔗<class_AnimationMixer_signal_mixer_applied>`
 
-Notifies when the blending result related have been applied to the target objects.
+混合結果已套用至目標物件時通知。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Notifies when the blending result related have been applied to the target object
 
 **mixer_updated**\ (\ ) :ref:`🔗<class_AnimationMixer_signal_mixer_updated>`
 
-Notifies when the property related process have been updated.
+屬性相關程序已更新時通知。
 
 .. rst-class:: classref-section-separator
 
@@ -208,8 +208,8 @@ Notifies when the property related process have been updated.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AnimationMixer_AnimationCallbackModeProcess:
 
@@ -223,7 +223,7 @@ enum **AnimationCallbackModeProcess**: :ref:`🔗<enum_AnimationMixer_AnimationC
 
 :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>` **ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS** = ``0``
 
-Process animation during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`). This is especially useful when animating physics bodies.
+於物理影格處理動畫（見 :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ ）。特別適合為剛體等物理物件製作動畫。
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_IDLE:
 
@@ -231,7 +231,7 @@ Process animation during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PH
 
 :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>` **ANIMATION_CALLBACK_MODE_PROCESS_IDLE** = ``1``
 
-Process animation during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
+於一般處理影格時處理動畫（見 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_MANUAL:
 
@@ -239,7 +239,7 @@ Process animation during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PR
 
 :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>` **ANIMATION_CALLBACK_MODE_PROCESS_MANUAL** = ``2``
 
-Do not process animation. Use :ref:`advance()<class_AnimationMixer_method_advance>` to process the animation manually.
+不自動處理動畫。請使用 :ref:`advance()<class_AnimationMixer_method_advance>` 手動進行。
 
 .. rst-class:: classref-item-separator
 
@@ -257,7 +257,7 @@ enum **AnimationCallbackModeMethod**: :ref:`🔗<enum_AnimationMixer_AnimationCa
 
 :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>` **ANIMATION_CALLBACK_MODE_METHOD_DEFERRED** = ``0``
 
-Batch method calls during the animation process, then do the calls after events are processed. This avoids bugs involving deleting nodes or modifying the AnimationPlayer while playing.
+動畫播放期間將方法呼叫批次化，待事件處理完成後一次執行，以避免播放時刪除節點或修改 AnimationPlayer 所造成的錯誤。
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE:
 
@@ -265,7 +265,7 @@ Batch method calls during the animation process, then do the calls after events 
 
 :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>` **ANIMATION_CALLBACK_MODE_METHOD_IMMEDIATE** = ``1``
 
-Make method calls immediately when reached in the animation.
+動畫播放到該位置時立即呼叫方法。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ enum **AnimationCallbackModeDiscrete**: :ref:`🔗<enum_AnimationMixer_Animation
 
 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **ANIMATION_CALLBACK_MODE_DISCRETE_DOMINANT** = ``0``
 
-An :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` track value takes precedence when blending :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` or :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` track values and :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` track values.
+當混合 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 或 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 與 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 軌道值時，\ :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 軌道值具有優先權。
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE:
 
@@ -291,7 +291,7 @@ An :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` tr
 
 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE** = ``1``
 
-An :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` or :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` track value takes precedence when blending the :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` or :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` track values and the :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` track values. This is the default behavior for :ref:`AnimationPlayer<class_AnimationPlayer>`.
+當混合 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 或 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 與 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 時，前兩者具有優先權。這是 :ref:`AnimationPlayer<class_AnimationPlayer>` 的預設行為。
 
 .. _class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS:
 
@@ -299,11 +299,11 @@ An :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>
 
 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS** = ``2``
 
-Always treat the :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` track value as :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` with :ref:`Animation.INTERPOLATION_NEAREST<class_Animation_constant_INTERPOLATION_NEAREST>`. This is the default behavior for :ref:`AnimationTree<class_AnimationTree>`.
+總是將 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 軌道值視為 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>`\ ，並使用 :ref:`Animation.INTERPOLATION_NEAREST<class_Animation_constant_INTERPOLATION_NEAREST>`\ 。這是 :ref:`AnimationTree<class_AnimationTree>` 的預設行為。
 
-If a value track has un-interpolatable type key values, it is internally converted to use :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE>` with :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>`.
+若值軌道包含不可插值的鍵值型別，內部會改用 :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_RECESSIVE>` 與 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>`\ 。
 
-Un-interpolatable type list:
+不可插值型別清單：
 
 - :ref:`@GlobalScope.TYPE_NIL<class_@GlobalScope_constant_TYPE_NIL>`\ 
 
@@ -321,11 +321,11 @@ Un-interpolatable type list:
 
 - :ref:`@GlobalScope.TYPE_PACKED_BYTE_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_BYTE_ARRAY>`\ 
 
-\ :ref:`@GlobalScope.TYPE_BOOL<class_@GlobalScope_constant_TYPE_BOOL>` and :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>` are treated as :ref:`@GlobalScope.TYPE_FLOAT<class_@GlobalScope_constant_TYPE_FLOAT>` during blending and rounded when the result is retrieved.
+\ :ref:`@GlobalScope.TYPE_BOOL<class_@GlobalScope_constant_TYPE_BOOL>` 與 :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>` 在混合時會視為 :ref:`@GlobalScope.TYPE_FLOAT<class_@GlobalScope_constant_TYPE_FLOAT>`\ ，取結果時再四捨五入。
 
-It is same for arrays and vectors with them such as :ref:`@GlobalScope.TYPE_PACKED_INT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_INT32_ARRAY>` or :ref:`@GlobalScope.TYPE_VECTOR2I<class_@GlobalScope_constant_TYPE_VECTOR2I>`, they are treated as :ref:`@GlobalScope.TYPE_PACKED_FLOAT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_FLOAT32_ARRAY>` or :ref:`@GlobalScope.TYPE_VECTOR2<class_@GlobalScope_constant_TYPE_VECTOR2>`. Also note that for arrays, the size is also interpolated.
+對於包含這些型別的陣列或向量，如 :ref:`@GlobalScope.TYPE_PACKED_INT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_INT32_ARRAY>` 或 :ref:`@GlobalScope.TYPE_VECTOR2I<class_@GlobalScope_constant_TYPE_VECTOR2I>`\ ，亦視為 :ref:`@GlobalScope.TYPE_PACKED_FLOAT32_ARRAY<class_@GlobalScope_constant_TYPE_PACKED_FLOAT32_ARRAY>` 或 :ref:`@GlobalScope.TYPE_VECTOR2<class_@GlobalScope_constant_TYPE_VECTOR2>`\ ，且陣列長度也會插值。
 
-\ :ref:`@GlobalScope.TYPE_STRING<class_@GlobalScope_constant_TYPE_STRING>` and :ref:`@GlobalScope.TYPE_STRING_NAME<class_@GlobalScope_constant_TYPE_STRING_NAME>` are interpolated between character codes and lengths, but note that there is a difference in algorithm between interpolation between keys and interpolation by blending.
+\ :ref:`@GlobalScope.TYPE_STRING<class_@GlobalScope_constant_TYPE_STRING>` 與 :ref:`@GlobalScope.TYPE_STRING_NAME<class_@GlobalScope_constant_TYPE_STRING_NAME>` 會依字元碼及長度做插值，惟鍵間插值與混合插值的演算法略有差異。
 
 .. rst-class:: classref-section-separator
 
@@ -333,8 +333,8 @@ It is same for arrays and vectors with them such as :ref:`@GlobalScope.TYPE_PACK
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AnimationMixer_property_active:
 
@@ -347,7 +347,7 @@ Property Descriptions
 - |void| **set_active**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_active**\ (\ )
 
-If ``true``, the **AnimationMixer** will be processing.
+若為 ``true``\ ，則 **AnimationMixer** 會進行處理。
 
 .. rst-class:: classref-item-separator
 
@@ -364,9 +364,9 @@ If ``true``, the **AnimationMixer** will be processing.
 - |void| **set_audio_max_polyphony**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_audio_max_polyphony**\ (\ )
 
-The number of possible simultaneous sounds for each of the assigned AudioStreamPlayers.
+每個指派的 AudioStreamPlayer 可同時播放的聲音數量。
 
-For example, if this value is ``32`` and the animation has two audio tracks, the two :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`\ s assigned can play simultaneously up to ``32`` voices each.
+例如，若此值為 ``32`` 且動畫有兩條音訊軌，則兩個 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 各自最多可同時播放 ``32`` 個聲音。
 
 .. rst-class:: classref-item-separator
 
@@ -383,11 +383,11 @@ For example, if this value is ``32`` and the animation has two audio tracks, the
 - |void| **set_callback_mode_discrete**\ (\ value\: :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`\ )
 - :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>` **get_callback_mode_discrete**\ (\ )
 
-Ordinarily, tracks can be set to :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` to update infrequently, usually when using nearest interpolation.
+一般來說，軌道可設為 :ref:`Animation.UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>`\ ，以降低更新頻率，通常用於最近鄰插值。
 
-However, when blending with :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` several results are considered. The :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` specify it explicitly. See also :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`.
+但若與 :ref:`Animation.UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 混合，則會考慮多種結果。\ :ref:`callback_mode_discrete<class_AnimationMixer_property_callback_mode_discrete>` 可明確指定，詳見 :ref:`AnimationCallbackModeDiscrete<enum_AnimationMixer_AnimationCallbackModeDiscrete>`\ 。
 
-To make the blended results look good, it is recommended to set this to :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` to update every frame during blending. Other values exist for compatibility and they are fine if there is no blending, but not so, may produce artifacts.
+為了讓混合結果更自然，建議設為 :ref:`ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>`\ ，於混合時每幀都更新。其他設定主要為相容性，若無混合則可用，但否則可能產生異常畫面。
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ To make the blended results look good, it is recommended to set this to :ref:`AN
 - |void| **set_callback_mode_method**\ (\ value\: :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>`\ )
 - :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>` **get_callback_mode_method**\ (\ )
 
-The call mode used for "Call Method" tracks.
+「呼叫方法」軌道所使用的呼叫模式。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ The call mode used for "Call Method" tracks.
 - |void| **set_callback_mode_process**\ (\ value\: :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>`\ )
 - :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>` **get_callback_mode_process**\ (\ )
 
-The process notification in which to update animations.
+更新動畫時所用的處理通知。
 
 .. rst-class:: classref-item-separator
 
@@ -438,17 +438,17 @@ The process notification in which to update animations.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-If ``true``, the blending uses the deterministic algorithm. The total weight is not normalized and the result is accumulated with an initial value (``0`` or a ``"RESET"`` animation if present).
+若為 ``true``\ ，混合時會使用確定性演算法。總權重不會正規化，結果以初始值（\ ``0`` 或存在時的 ``"RESET"`` 動畫）累加。
 
-This means that if the total amount of blending is ``0.0``, the result is equal to the ``"RESET"`` animation.
+這代表混合總量為 ``0.0``\ ，結果即為 ``"RESET"`` 動畫。
 
-If the number of tracks between the blended animations is different, the animation with the missing track is treated as if it had the initial value.
+若混合動畫間軌道數不同，缺少軌道的動畫視為有初始值。
 
-If ``false``, The blend does not use the deterministic algorithm. The total weight is normalized and always ``1.0``. If the number of tracks between the blended animations is different, nothing is done about the animation that is missing a track.
+若為 ``false``\ ，混合不採用確定性演算法。總權重會正規化為 ``1.0``\ 。若動畫間軌道數不同，將不處理缺軌動畫。
 
-\ **Note:** In :ref:`AnimationTree<class_AnimationTree>`, the blending with :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`, :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>`, :ref:`AnimationNodeSub2<class_AnimationNodeSub2>` or the weight greater than ``1.0`` may produce unexpected results.
+\ **注意：**\ 於 :ref:`AnimationTree<class_AnimationTree>` 內，若 :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`\ 、\ :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>`\ 、\ :ref:`AnimationNodeSub2<class_AnimationNodeSub2>` 或權重大於 ``1.0``\ ，可能產生非預期結果。
 
-For example, if :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` blends two nodes with the amount ``1.0``, then total weight is ``2.0`` but it will be normalized to make the total amount ``1.0`` and the result will be equal to :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>` with the amount ``0.5``.
+例如 :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` 混合兩個權重為 ``1.0`` 的節點，總權重為 ``2.0``\ ，但會被正規化為 ``1.0``\ ，結果等同 :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>` 權重為 ``0.5``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -465,9 +465,9 @@ For example, if :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` blends two nod
 - |void| **set_reset_on_save_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_reset_on_save_enabled**\ (\ )
 
-This is used by the editor. If set to ``true``, the scene will be saved with the effects of the reset animation (the animation with the key ``"RESET"``) applied as if it had been seeked to time 0, with the editor keeping the values that the scene had before saving.
+此功能由編輯器使用。若設為 ``true``\ ，場景將以重設動畫（鍵為 ``"RESET"`` 的動畫）在時間 0 的狀態儲存，編輯器也會保留儲存前的場景值。
 
-This makes it more convenient to preview and edit animations in the editor, as changes to the scene will not be saved as long as they are set in the reset animation.
+這讓在編輯器中預覽與編輯動畫更方便，只要變更寫在重設動畫中，就不會被存入場景。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ This makes it more convenient to preview and edit animations in the editor, as c
 - |void| **set_root_motion_local**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_root_motion_local**\ (\ )
 
-If ``true``, :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>` value is extracted as a local translation value before blending. In other words, it is treated like the translation is done after the rotation.
+若為 ``true``\ ，則 :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>` 的值於混合前會先作為本地平移值提取。換言之，平移視為於旋轉之後進行。
 
 .. rst-class:: classref-item-separator
 
@@ -501,9 +501,9 @@ If ``true``, :ref:`get_root_motion_position()<class_AnimationMixer_method_get_ro
 - |void| **set_root_motion_track**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_root_motion_track**\ (\ )
 
-The path to the Animation track used for root motion. Paths must be valid scene-tree paths to a node, and must be specified starting from the parent node of the node that will reproduce the animation. The :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` uses the same format as :ref:`Animation.track_set_path()<class_Animation_method_track_set_path>`, but note that a bone must be specified.
+用於根運動的動畫軌道路徑。路徑必須是有效的場景樹節點路徑，且需自即將播放動畫之節點的父節點開始指定。\ :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 格式與 :ref:`Animation.track_set_path()<class_Animation_method_track_set_path>` 相同，但必須指定骨骼。
 
-If the track has type :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`, or :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` the transformation will be canceled visually, and the animation will appear to stay in place. See also :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`, :ref:`get_root_motion_rotation()<class_AnimationMixer_method_get_root_motion_rotation>`, :ref:`get_root_motion_scale()<class_AnimationMixer_method_get_root_motion_scale>`, and :ref:`RootMotionView<class_RootMotionView>`.
+若軌道型別為 :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`\ 、\ :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` 或 :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>`\ ，則變換效果會被視覺上抵銷，動畫看似停留原地。詳見 :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`\ 、\ :ref:`get_root_motion_rotation()<class_AnimationMixer_method_get_root_motion_rotation>`\ 、\ :ref:`get_root_motion_scale()<class_AnimationMixer_method_get_root_motion_scale>` 與 :ref:`RootMotionView<class_RootMotionView>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ If the track has type :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_
 - |void| **set_root_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_root_node**\ (\ )
 
-The node which node path references will travel from.
+節點路徑的參照會由此節點作為起點。
 
 .. rst-class:: classref-section-separator
 
@@ -528,8 +528,8 @@ The node which node path references will travel from.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AnimationMixer_private_method__post_process_key_value:
 
@@ -537,7 +537,7 @@ Method Descriptions
 
 :ref:`Variant<class_Variant>` **_post_process_key_value**\ (\ animation\: :ref:`Animation<class_Animation>`, track\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`, object_id\: :ref:`int<class_int>`, object_sub_idx\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AnimationMixer_private_method__post_process_key_value>`
 
-A virtual function for processing after getting a key during playback.
+於播放期間取得鍵後進行處理的虛擬函式。
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ A virtual function for processing after getting a key during playback.
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_animation_library**\ (\ name\: :ref:`StringName<class_StringName>`, library\: :ref:`AnimationLibrary<class_AnimationLibrary>`\ ) :ref:`🔗<class_AnimationMixer_method_add_animation_library>`
 
-Adds ``library`` to the animation player, under the key ``name``.
+將 ``library`` 以鍵 ``name`` 加入動畫播放器。
 
-AnimationMixer has a global library by default with an empty string as key. For adding an animation to the global library:
+AnimationMixer 預設具有鍵為空字串的全域動畫庫。若要將動畫加入全域動畫庫：
 
 
 .. tabs::
@@ -573,7 +573,7 @@ AnimationMixer has a global library by default with an empty string as key. For 
 
 |void| **advance**\ (\ delta\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AnimationMixer_method_advance>`
 
-Manually advance the animations by the specified time (in seconds).
+手動將動畫推進指定時間（秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -585,11 +585,11 @@ Manually advance the animations by the specified time (in seconds).
 
 |void| **capture**\ (\ name\: :ref:`StringName<class_StringName>`, duration\: :ref:`float<class_float>`, trans_type\: :ref:`TransitionType<enum_Tween_TransitionType>` = 0, ease_type\: :ref:`EaseType<enum_Tween_EaseType>` = 0\ ) :ref:`🔗<class_AnimationMixer_method_capture>`
 
-If the animation track specified by ``name`` has an option :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>`, stores current values of the objects indicated by the track path as a cache. If there is already a captured cache, the old cache is discarded.
+若 ``name`` 指定的動畫軌道具有 :ref:`Animation.UPDATE_CAPTURE<class_Animation_constant_UPDATE_CAPTURE>` 選項，會將軌道路徑所指物件的當前值快取；若已存在快取則覆蓋舊快取。
 
-After this it will interpolate with current animation blending result during the playback process for the time specified by ``duration``, working like a crossfade.
+之後在 ``duration`` 指定的時間內於播放過程中與目前的動畫混合結果插值，效果如同交叉淡入。
 
-You can specify ``trans_type`` as the curve for the interpolation. For better results, it may be appropriate to specify :ref:`Tween.TRANS_LINEAR<class_Tween_constant_TRANS_LINEAR>` for cases where the first key of the track begins with a non-zero value or where the key value does not change, and :ref:`Tween.TRANS_QUAD<class_Tween_constant_TRANS_QUAD>` for cases where the key value changes linearly.
+可透過 ``trans_type`` 指定插值曲線。若軌道第一鍵值非零或鍵值不變化，建議使用 :ref:`Tween.TRANS_LINEAR<class_Tween_constant_TRANS_LINEAR>`\ ；若鍵值線性變化，則建議 :ref:`Tween.TRANS_QUAD<class_Tween_constant_TRANS_QUAD>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ You can specify ``trans_type`` as the curve for the interpolation. For better re
 
 |void| **clear_caches**\ (\ ) :ref:`🔗<class_AnimationMixer_method_clear_caches>`
 
-**AnimationMixer** caches animated nodes. It may not notice if a node disappears; :ref:`clear_caches()<class_AnimationMixer_method_clear_caches>` forces it to update the cache again.
+**AnimationMixer** 會快取動畫節點；若節點消失可能偵測不到，可呼叫 :ref:`clear_caches()<class_AnimationMixer_method_clear_caches>` 強制重新更新快取。
 
 .. rst-class:: classref-item-separator
 
@@ -613,7 +613,7 @@ You can specify ``trans_type`` as the curve for the interpolation. For better re
 
 :ref:`StringName<class_StringName>` **find_animation**\ (\ animation\: :ref:`Animation<class_Animation>`\ ) |const| :ref:`🔗<class_AnimationMixer_method_find_animation>`
 
-Returns the key of ``animation`` or an empty :ref:`StringName<class_StringName>` if not found.
+返回 ``animation`` 的鍵，若未找到則返回空的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ Returns the key of ``animation`` or an empty :ref:`StringName<class_StringName>`
 
 :ref:`StringName<class_StringName>` **find_animation_library**\ (\ animation\: :ref:`Animation<class_Animation>`\ ) |const| :ref:`🔗<class_AnimationMixer_method_find_animation_library>`
 
-Returns the key for the :ref:`AnimationLibrary<class_AnimationLibrary>` that contains ``animation`` or an empty :ref:`StringName<class_StringName>` if not found.
+返回包含 ``animation`` 的 :ref:`AnimationLibrary<class_AnimationLibrary>` 的鍵，若未找到則返回空的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Returns the key for the :ref:`AnimationLibrary<class_AnimationLibrary>` that con
 
 :ref:`Animation<class_Animation>` **get_animation**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_animation>`
 
-Returns the :ref:`Animation<class_Animation>` with the key ``name``. If the animation does not exist, ``null`` is returned and an error is logged.
+返回鍵為 ``name`` 的 :ref:`Animation<class_Animation>`\ 。若不存在則返回 ``null`` 並記錄錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -649,9 +649,9 @@ Returns the :ref:`Animation<class_Animation>` with the key ``name``. If the anim
 
 :ref:`AnimationLibrary<class_AnimationLibrary>` **get_animation_library**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_animation_library>`
 
-Returns the first :ref:`AnimationLibrary<class_AnimationLibrary>` with key ``name`` or ``null`` if not found.
+返回鍵為 ``name`` 的第一個 :ref:`AnimationLibrary<class_AnimationLibrary>`\ ，若未找到則返回 ``null``\ 。
 
-To get the **AnimationMixer**'s global animation library, use ``get_animation_library("")``.
+要取得 **AnimationMixer** 的全域動畫庫請使用 ``get_animation_library("")``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ To get the **AnimationMixer**'s global animation library, use ``get_animation_li
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_animation_library_list**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_animation_library_list>`
 
-Returns the list of stored library keys.
+返回已儲存動畫庫的鍵列表。
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Returns the list of stored library keys.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_animation_list**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_animation_list>`
 
-Returns the list of stored animation keys.
+返回已儲存動畫的鍵列表。
 
 .. rst-class:: classref-item-separator
 
@@ -687,13 +687,13 @@ Returns the list of stored animation keys.
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_position**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_position>`
 
-Retrieve the motion delta of position with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 位置的運動增量，返回可於其他位置使用之 :ref:`Vector3<class_Vector3>`\ 。
 
-If :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` is not a path to a track of type :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, returns ``Vector3(0, 0, 0)``.
+若 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 不是 :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>` 類型之軌道路徑，則返回 ``Vector3(0, 0, 0)``\ 。
 
-See also :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` and :ref:`RootMotionView<class_RootMotionView>`.
+另見 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 與 :ref:`RootMotionView<class_RootMotionView>`\ 。
 
-The most basic example is applying position to :ref:`CharacterBody3D<class_CharacterBody3D>`:
+最基本範例：將位置套用至 :ref:`CharacterBody3D<class_CharacterBody3D>`\ ：
 
 
 .. tabs::
@@ -712,7 +712,7 @@ The most basic example is applying position to :ref:`CharacterBody3D<class_Chara
 
 
 
-By using this in combination with :ref:`get_root_motion_rotation_accumulator()<class_AnimationMixer_method_get_root_motion_rotation_accumulator>`, you can apply the root motion position more correctly to account for the rotation of the node.
+搭配 :ref:`get_root_motion_rotation_accumulator()<class_AnimationMixer_method_get_root_motion_rotation_accumulator>` 可更正確地套用根運動位置並考慮節點旋轉：
 
 
 .. tabs::
@@ -729,9 +729,9 @@ By using this in combination with :ref:`get_root_motion_rotation_accumulator()<c
 
 
 
-If :ref:`root_motion_local<class_AnimationMixer_property_root_motion_local>` is ``true``, returns the pre-multiplied translation value with the inverted rotation.
+若 :ref:`root_motion_local<class_AnimationMixer_property_root_motion_local>` 為 ``true``\ ，則返回已乘上反向旋轉的本地平移值。
 
-In this case, the code can be written as follows:
+此時可寫成：
 
 
 .. tabs::
@@ -758,11 +758,11 @@ In this case, the code can be written as follows:
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_position_accumulator**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_position_accumulator>`
 
-Retrieve the blended value of the position tracks with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 位置軌道的混合值，返回可於其他位置使用之 :ref:`Vector3<class_Vector3>`\ 。
 
-This is useful in cases where you want to respect the initial key values of the animation.
+當需要保留動畫初始鍵值時相當有用。
 
-For example, if an animation with only one key ``Vector3(0, 0, 0)`` is played in the previous frame and then an animation with only one key ``Vector3(1, 0, 1)`` is played in the next frame, the difference can be calculated as follows:
+例如，若前一幀播放僅含 ``Vector3(0, 0, 0)`` 的動畫，而下一幀播放僅含 ``Vector3(1, 0, 1)`` 的動畫，可如下計算兩者差異：
 
 
 .. tabs::
@@ -781,7 +781,7 @@ For example, if an animation with only one key ``Vector3(0, 0, 0)`` is played in
 
 
 
-However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.
+惟若動畫循環播放，可能出現非預期的不連續跳動，因此僅適用於部分簡易情境。
 
 .. rst-class:: classref-item-separator
 
@@ -793,13 +793,13 @@ However, if the animation loops, an unintended discrete change may occur, so thi
 
 :ref:`Quaternion<class_Quaternion>` **get_root_motion_rotation**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_rotation>`
 
-Retrieve the motion delta of rotation with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Quaternion<class_Quaternion>` that can be used elsewhere.
+取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 旋轉的運動增量，返回可於其他位置使用之 :ref:`Quaternion<class_Quaternion>`\ 。
 
-If :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` is not a path to a track of type :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`, returns ``Quaternion(0, 0, 0, 1)``.
+若 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 不是 :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` 類型之軌道路徑，則返回 ``Quaternion(0, 0, 0, 1)``\ 。
 
-See also :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` and :ref:`RootMotionView<class_RootMotionView>`.
+另見 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 與 :ref:`RootMotionView<class_RootMotionView>`\ 。
 
-The most basic example is applying rotation to :ref:`CharacterBody3D<class_CharacterBody3D>`:
+最基本範例：將旋轉套用至 :ref:`CharacterBody3D<class_CharacterBody3D>`\ ：
 
 
 .. tabs::
@@ -823,13 +823,13 @@ The most basic example is applying rotation to :ref:`CharacterBody3D<class_Chara
 
 :ref:`Quaternion<class_Quaternion>` **get_root_motion_rotation_accumulator**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_rotation_accumulator>`
 
-Retrieve the blended value of the rotation tracks with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Quaternion<class_Quaternion>` that can be used elsewhere.
+取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 旋轉軌道的混合值，返回可於其他位置使用之 :ref:`Quaternion<class_Quaternion>`\ 。
 
-This is necessary to apply the root motion position correctly, taking rotation into account. See also :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`.
+正確套用根運動位置時需考慮旋轉；詳見 :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`\ 。
 
-Also, this is useful in cases where you want to respect the initial key values of the animation.
+此方法亦可用於需要保留動畫初始鍵值的情況。
 
-For example, if an animation with only one key ``Quaternion(0, 0, 0, 1)`` is played in the previous frame and then an animation with only one key ``Quaternion(0, 0.707, 0, 0.707)`` is played in the next frame, the difference can be calculated as follows:
+例如，若前一幀播放僅含 ``Quaternion(0, 0, 0, 1)`` 的動畫，而下一幀播放僅含 ``Quaternion(0, 0.707, 0, 0.707)`` 的動畫，可如下計算差異：
 
 
 .. tabs::
@@ -844,11 +844,11 @@ For example, if an animation with only one key ``Quaternion(0, 0, 0, 1)`` is pla
         var current_root_motion_rotation_accumulator = animation_tree.get_root_motion_rotation_accumulator()
         var difference = prev_root_motion_rotation_accumulator.inverse() * current_root_motion_rotation_accumulator
         prev_root_motion_rotation_accumulator = current_root_motion_rotation_accumulator
-        transform.basis *=  Basis(difference)
+        transform.basis *= Basis(difference)
 
 
 
-However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.
+惟若動畫循環播放，可能出現非預期的不連續跳動，因此僅適用於部分簡易情境。
 
 .. rst-class:: classref-item-separator
 
@@ -860,13 +860,13 @@ However, if the animation loops, an unintended discrete change may occur, so thi
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_scale**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_scale>`
 
-Retrieve the motion delta of scale with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 縮放的運動增量，返回可於其他位置使用之 :ref:`Vector3<class_Vector3>`\ 。
 
-If :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` is not a path to a track of type :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>`, returns ``Vector3(0, 0, 0)``.
+若 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 不是 :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` 類型之軌道路徑，則返回 ``Vector3(0, 0, 0)``\ 。
 
-See also :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` and :ref:`RootMotionView<class_RootMotionView>`.
+另見 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 與 :ref:`RootMotionView<class_RootMotionView>`\ 。
 
-The most basic example is applying scale to :ref:`CharacterBody3D<class_CharacterBody3D>`:
+最基本範例：將縮放套用至 :ref:`CharacterBody3D<class_CharacterBody3D>`\ ：
 
 
 .. tabs::
@@ -896,9 +896,9 @@ The most basic example is applying scale to :ref:`CharacterBody3D<class_Characte
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_scale_accumulator**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_scale_accumulator>`
 
-Retrieve the blended value of the scale tracks with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+取得 :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` 縮放軌道的混合值，返回可於其他位置使用之 :ref:`Vector3<class_Vector3>`\ 。
 
-For example, if an animation with only one key ``Vector3(1, 1, 1)`` is played in the previous frame and then an animation with only one key ``Vector3(2, 2, 2)`` is played in the next frame, the difference can be calculated as follows:
+例如，若前一幀播放僅含 ``Vector3(1, 1, 1)`` 的動畫，而下一幀播放僅含 ``Vector3(2, 2, 2)`` 的動畫，可如下計算差異：
 
 
 .. tabs::
@@ -917,7 +917,7 @@ For example, if an animation with only one key ``Vector3(1, 1, 1)`` is played in
 
 
 
-However, if the animation loops, an unintended discrete change may occur, so this is only useful for some simple use cases.
+惟若動畫循環播放，可能出現非預期的不連續跳動，因此僅適用於部分簡易情境。
 
 .. rst-class:: classref-item-separator
 
@@ -929,7 +929,7 @@ However, if the animation loops, an unintended discrete change may occur, so thi
 
 :ref:`bool<class_bool>` **has_animation**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationMixer_method_has_animation>`
 
-Returns ``true`` if the **AnimationMixer** stores an :ref:`Animation<class_Animation>` with key ``name``.
+若 **AnimationMixer** 已儲存鍵為 ``name`` 的 :ref:`Animation<class_Animation>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -941,7 +941,7 @@ Returns ``true`` if the **AnimationMixer** stores an :ref:`Animation<class_Anima
 
 :ref:`bool<class_bool>` **has_animation_library**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationMixer_method_has_animation_library>`
 
-Returns ``true`` if the **AnimationMixer** stores an :ref:`AnimationLibrary<class_AnimationLibrary>` with key ``name``.
+若 **AnimationMixer** 已儲存鍵為 ``name`` 的 :ref:`AnimationLibrary<class_AnimationLibrary>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -953,7 +953,7 @@ Returns ``true`` if the **AnimationMixer** stores an :ref:`AnimationLibrary<clas
 
 |void| **remove_animation_library**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationMixer_method_remove_animation_library>`
 
-Removes the :ref:`AnimationLibrary<class_AnimationLibrary>` associated with the key ``name``.
+移除與鍵 ``name`` 關聯的 :ref:`AnimationLibrary<class_AnimationLibrary>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -965,14 +965,14 @@ Removes the :ref:`AnimationLibrary<class_AnimationLibrary>` associated with the 
 
 |void| **rename_animation_library**\ (\ name\: :ref:`StringName<class_StringName>`, newname\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationMixer_method_rename_animation_library>`
 
-Moves the :ref:`AnimationLibrary<class_AnimationLibrary>` associated with the key ``name`` to the key ``newname``.
+將鍵為 ``name`` 的 :ref:`AnimationLibrary<class_AnimationLibrary>` 移動至鍵 ``newname``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

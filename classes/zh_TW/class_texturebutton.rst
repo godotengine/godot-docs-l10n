@@ -5,14 +5,14 @@
 TextureButton
 =============
 
-**Inherits:** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Texture-based button. Supports Pressed, Hover, Disabled and Focused states.
+基於紋理的按鈕。支援按下、懸停、停用和焦點狀態。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **TextureButton** has the same functionality as :ref:`Button<class_Button>`, except it uses sprites instead of Godot's :ref:`Theme<class_Theme>` resource. It is faster to create, but it doesn't support localization like more complex :ref:`Control<class_Control>`\ s.
 
@@ -22,15 +22,15 @@ See also :ref:`BaseButton<class_BaseButton>` which contains common properties an
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_TextureButton_StretchMode:
 
@@ -78,7 +78,7 @@ enum **StretchMode**: :ref:`🔗<enum_TextureButton_StretchMode>`
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_SCALE** = ``0``
 
-Scale to fit the node's bounding rectangle.
+縮放以適應節點的邊界矩形。
 
 .. _class_TextureButton_constant_STRETCH_TILE:
 
@@ -86,7 +86,7 @@ Scale to fit the node's bounding rectangle.
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_TILE** = ``1``
 
-Tile inside the node's bounding rectangle.
+在節點的邊界矩形內平鋪。
 
 .. _class_TextureButton_constant_STRETCH_KEEP:
 
@@ -94,7 +94,7 @@ Tile inside the node's bounding rectangle.
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_KEEP** = ``2``
 
-The texture keeps its original size and stays in the bounding rectangle's top-left corner.
+紋理保持它的原始尺寸，並保持在邊界矩形的左上角。
 
 .. _class_TextureButton_constant_STRETCH_KEEP_CENTERED:
 
@@ -102,7 +102,7 @@ The texture keeps its original size and stays in the bounding rectangle's top-le
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_KEEP_CENTERED** = ``3``
 
-The texture keeps its original size and stays centered in the node's bounding rectangle.
+紋理保持其原始大小，並在節點的邊界矩形中保持居中。
 
 .. _class_TextureButton_constant_STRETCH_KEEP_ASPECT:
 
@@ -110,7 +110,7 @@ The texture keeps its original size and stays centered in the node's bounding re
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_KEEP_ASPECT** = ``4``
 
-Scale the texture to fit the node's bounding rectangle, but maintain the texture's aspect ratio.
+縮放紋理以適應節點的邊界矩形，但保持紋理的長寬比。
 
 .. _class_TextureButton_constant_STRETCH_KEEP_ASPECT_CENTERED:
 
@@ -118,7 +118,7 @@ Scale the texture to fit the node's bounding rectangle, but maintain the texture
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_KEEP_ASPECT_CENTERED** = ``5``
 
-Scale the texture to fit the node's bounding rectangle, center it, and maintain its aspect ratio.
+縮放紋理以適應節點的邊界矩形，使其居中，並保持長寬比。
 
 .. _class_TextureButton_constant_STRETCH_KEEP_ASPECT_COVERED:
 
@@ -126,7 +126,7 @@ Scale the texture to fit the node's bounding rectangle, center it, and maintain 
 
 :ref:`StretchMode<enum_TextureButton_StretchMode>` **STRETCH_KEEP_ASPECT_COVERED** = ``6``
 
-Scale the texture so that the shorter side fits the bounding rectangle. The other side clips to the node's limits.
+縮放紋理，使較短的一邊適應邊界矩形。另一邊則裁剪到節點的界限內。
 
 .. rst-class:: classref-section-separator
 
@@ -134,8 +134,8 @@ Scale the texture so that the shorter side fits the bounding rectangle. The othe
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_TextureButton_property_flip_h:
 
@@ -148,7 +148,7 @@ Property Descriptions
 - |void| **set_flip_h**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_h**\ (\ )
 
-If ``true``, texture is flipped horizontally.
+若為 ``true``\ ，紋理將水平翻轉。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ If ``true``, texture is flipped horizontally.
 - |void| **set_flip_v**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_v**\ (\ )
 
-If ``true``, texture is flipped vertically.
+若為 ``true``\ ，紋理將垂直翻轉。
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ If ``true``, texture is flipped vertically.
 - |void| **set_ignore_texture_size**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_ignore_texture_size**\ (\ )
 
-If ``true``, the size of the texture won't be considered for minimum size calculation, so the **TextureButton** can be shrunk down past the texture size.
+如果為 ``true``\ ，則計算最小尺寸時不會考慮該紋理的大小，因此 **TextureButton** 能夠調整地比該紋理大小還要小。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ If ``true``, the size of the texture won't be considered for minimum size calcul
 - |void| **set_stretch_mode**\ (\ value\: :ref:`StretchMode<enum_TextureButton_StretchMode>`\ )
 - :ref:`StretchMode<enum_TextureButton_StretchMode>` **get_stretch_mode**\ (\ )
 
-Controls the texture's behavior when you resize the node's bounding rectangle. See the :ref:`StretchMode<enum_TextureButton_StretchMode>` constants for available options.
+控制調整節點包圍矩形時紋理的行為。可用的選項見 :ref:`StretchMode<enum_TextureButton_StretchMode>` 常數。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Controls the texture's behavior when you resize the node's bounding rectangle. S
 - |void| **set_click_mask**\ (\ value\: :ref:`BitMap<class_BitMap>`\ )
 - :ref:`BitMap<class_BitMap>` **get_click_mask**\ (\ )
 
-Pure black and white :ref:`BitMap<class_BitMap>` image to use for click detection. On the mask, white pixels represent the button's clickable area. Use it to create buttons with curved shapes.
+用於點擊偵測的純黑白 :ref:`BitMap<class_BitMap>` 圖像。在遮罩上，白色圖元代表按鈕的可點擊區域。可用它來建立具有彎曲形狀的按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Texture to display when the mouse hovers over the node. If not assigned, the **T
 - |void| **set_texture_normal**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_normal**\ (\ )
 
-Texture to display by default, when the node is **not** in the disabled, hover or pressed state. This texture is still displayed in the focused state, with :ref:`texture_focused<class_TextureButton_property_texture_focused>` drawn on top.
+節點\ **不處於**\ 禁用、懸停、按下狀態時，預設顯示的紋理。該紋理仍會在聚焦狀態下顯示，上層繪製的是 :ref:`texture_focused<class_TextureButton_property_texture_focused>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -303,12 +303,12 @@ Texture to display by default, when the node is **not** in the disabled, hover o
 
 Texture to display on mouse down over the node, if the node has keyboard focus and the player presses the Enter key or if the player presses the :ref:`BaseButton.shortcut<class_BaseButton_property_shortcut>` key. If not assigned, the **TextureButton** displays :ref:`texture_hover<class_TextureButton_property_texture_hover>` instead when pressed.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

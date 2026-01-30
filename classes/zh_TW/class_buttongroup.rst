@@ -8,23 +8,23 @@
 ButtonGroup
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A group of buttons that doesn't allow more than one button to be pressed at a time.
+不允許同時按下多個按鈕的按鈕的一個群組。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A group of :ref:`BaseButton<class_BaseButton>`-derived buttons. The buttons in a **ButtonGroup** are treated like radio buttons: No more than one button can be pressed at a time. Some types of buttons (such as :ref:`CheckBox<class_CheckBox>`) may have a special appearance in this state.
+:ref:`BaseButton<class_BaseButton>` 衍生按鈕的群組。\ **ButtonGroup** 中的按鈕被視為選項按鈕：同一時間最多只能按下一個按鈕。某些型別的按鈕（例如 :ref:`CheckBox<class_CheckBox>`\ ）在該狀態下可能會有特殊的外觀。
 
-Every member of a **ButtonGroup** should have :ref:`BaseButton.toggle_mode<class_BaseButton_property_toggle_mode>` set to ``true``.
+\ **ButtonGroup** 的每個成員都應該將 :ref:`BaseButton.toggle_mode<class_BaseButton_property_toggle_mode>` 設定為 ``true``\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -37,8 +37,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_ButtonGroup_signal_pressed:
 
@@ -64,7 +64,7 @@ Signals
 
 **pressed**\ (\ button\: :ref:`BaseButton<class_BaseButton>`\ ) :ref:`🔗<class_ButtonGroup_signal_pressed>`
 
-Emitted when one of the buttons of the group is pressed.
+當該組中的某個按鈕被按下時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -72,8 +72,8 @@ Emitted when one of the buttons of the group is pressed.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ButtonGroup_property_allow_unpress:
 
@@ -86,7 +86,7 @@ Property Descriptions
 - |void| **set_allow_unpress**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_unpress**\ (\ )
 
-If ``true``, it is possible to unpress all buttons in this **ButtonGroup**.
+如果為 ``true``\ ，則可以取消按下該 **ButtonGroup** 中的所有按鈕。
 
 .. rst-class:: classref-section-separator
 
@@ -94,8 +94,8 @@ If ``true``, it is possible to unpress all buttons in this **ButtonGroup**.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ButtonGroup_method_get_buttons:
 
@@ -103,7 +103,7 @@ Method Descriptions
 
 :ref:`Array<class_Array>`\[:ref:`BaseButton<class_BaseButton>`\] **get_buttons**\ (\ ) :ref:`🔗<class_ButtonGroup_method_get_buttons>`
 
-Returns an :ref:`Array<class_Array>` of :ref:`Button<class_Button>`\ s who have this as their **ButtonGroup** (see :ref:`BaseButton.button_group<class_BaseButton_property_button_group>`).
+返回元素型別為 :ref:`Button<class_Button>` 的 :ref:`Array<class_Array>`\ ，這些 :ref:`Button<class_Button>` 將其作為 **ButtonGroup**\ （見 :ref:`BaseButton.button_group<class_BaseButton_property_button_group>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -115,14 +115,14 @@ Returns an :ref:`Array<class_Array>` of :ref:`Button<class_Button>`\ s who have 
 
 :ref:`BaseButton<class_BaseButton>` **get_pressed_button**\ (\ ) :ref:`🔗<class_ButtonGroup_method_get_pressed_button>`
 
-Returns the current pressed button.
+返回目前按下的按鈕。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

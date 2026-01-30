@@ -5,20 +5,20 @@
 XMLParser
 =========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides a low-level interface for creating parsers for XML files.
+為建立 XML 檔解析器提供低階介面。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Provides a low-level interface for creating parsers for `XML <https://en.wikipedia.org/wiki/XML>`__ files. This class can serve as base to make custom XML parsers.
+為建立 `XML <https://zh.wikipedia.org/wiki/XML>`__ 檔解析器提供低階介面。製作自訂 XML 解析器時，可以將這個類作為基礎。
 
-To parse XML, you must open a file with the :ref:`open()<class_XMLParser_method_open>` method or a buffer with the :ref:`open_buffer()<class_XMLParser_method_open_buffer>` method. Then, the :ref:`read()<class_XMLParser_method_read>` method must be called to parse the next nodes. Most of the methods take into consideration the currently parsed node.
+要解析 XML，你必須使用 :ref:`open()<class_XMLParser_method_open>` 方法打開檔，或者使用 :ref:`open_buffer()<class_XMLParser_method_open_buffer>` 方法打開緩衝區。然後必須使用 :ref:`read()<class_XMLParser_method_read>` 方法解析後續節點。大多數方法使用的是目前解析節點。
 
-Here is an example of using **XMLParser** to parse an SVG file (which is based on XML), printing each element and its attributes as a dictionary:
+以下是使用 **XMLParser** 解析 SVG 檔（基於 XML）的例子，會輸出所有的元素，以字典的形式輸出對應的屬性：
 
 
 .. tabs::
@@ -33,7 +33,7 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
             var attributes_dict = {}
             for idx in range(parser.get_attribute_count()):
                 attributes_dict[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
-            print("The ", node_name, " element has the following attributes: ", attributes_dict)
+            print("元素 ", node_name, " 包含的屬性有：", attributes_dict)
 
  .. code-tab:: csharp
 
@@ -49,7 +49,7 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
             {
                 attributesDict[parser.GetAttributeName(idx)] = parser.GetAttributeValue(idx);
             }
-            GD.Print($"The {nodeName} element has the following attributes: {attributesDict}");
+            GD.Print($"元素 {nodeName} 包含的屬性有：{attributesDict}");
         }
     }
 
@@ -57,8 +57,8 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -105,8 +105,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_XMLParser_NodeType:
 
@@ -120,7 +120,7 @@ enum **NodeType**: :ref:`🔗<enum_XMLParser_NodeType>`
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_NONE** = ``0``
 
-There's no node (no file or buffer opened).
+沒有節點，未打開檔或緩衝區。
 
 .. _class_XMLParser_constant_NODE_ELEMENT:
 
@@ -128,7 +128,7 @@ There's no node (no file or buffer opened).
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_ELEMENT** = ``1``
 
-An element node type, also known as a tag, e.g. ``<title>``.
+元素節點型別，也稱作標籤，例如 ``<title>``\ 。
 
 .. _class_XMLParser_constant_NODE_ELEMENT_END:
 
@@ -136,7 +136,7 @@ An element node type, also known as a tag, e.g. ``<title>``.
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_ELEMENT_END** = ``2``
 
-An end of element node type, e.g. ``</title>``.
+元素結束節點型別，例如 ``</title>``\ 。
 
 .. _class_XMLParser_constant_NODE_TEXT:
 
@@ -144,7 +144,7 @@ An end of element node type, e.g. ``</title>``.
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_TEXT** = ``3``
 
-A text node type, i.e. text that is not inside an element. This includes whitespace.
+文字節點型別，即不在元素中的文字。包含空白字元。
 
 .. _class_XMLParser_constant_NODE_COMMENT:
 
@@ -152,7 +152,7 @@ A text node type, i.e. text that is not inside an element. This includes whitesp
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_COMMENT** = ``4``
 
-A comment node type, e.g. ``<!--A comment-->``.
+注釋節點型別，例如 ``<!--A comment-->``\ 。
 
 .. _class_XMLParser_constant_NODE_CDATA:
 
@@ -160,7 +160,7 @@ A comment node type, e.g. ``<!--A comment-->``.
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_CDATA** = ``5``
 
-A node type for CDATA (Character Data) sections, e.g. ``<![CDATA[CDATA section]]>``.
+CDATA（字元資料）部分對應的節點型別，例如 ``<![CDATA[CDATA section]]>``\ 。
 
 .. _class_XMLParser_constant_NODE_UNKNOWN:
 
@@ -168,7 +168,7 @@ A node type for CDATA (Character Data) sections, e.g. ``<![CDATA[CDATA section]]
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_UNKNOWN** = ``6``
 
-An unknown node type.
+未知節點型別。
 
 .. rst-class:: classref-section-separator
 
@@ -176,8 +176,8 @@ An unknown node type.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_XMLParser_method_get_attribute_count:
 
@@ -185,9 +185,9 @@ Method Descriptions
 
 :ref:`int<class_int>` **get_attribute_count**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_attribute_count>`
 
-Returns the number of attributes in the currently parsed element.
+返回目前解析元素中屬性的數量。
 
-\ **Note:** If this method is used while the currently parsed node is not :ref:`NODE_ELEMENT<class_XMLParser_constant_NODE_ELEMENT>` or :ref:`NODE_ELEMENT_END<class_XMLParser_constant_NODE_ELEMENT_END>`, this count will not be updated and will still reflect the last element.
+\ **注意：**\ 如果在目前解析的節點不是 :ref:`NODE_ELEMENT<class_XMLParser_constant_NODE_ELEMENT>` 或 :ref:`NODE_ELEMENT_END<class_XMLParser_constant_NODE_ELEMENT_END>` 時呼叫這個方法，則該計數不會更新，仍然反映的是之前的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Returns the number of attributes in the currently parsed element.
 
 :ref:`String<class_String>` **get_attribute_name**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_attribute_name>`
 
-Returns the name of an attribute of the currently parsed element, specified by the ``idx`` index.
+返回目前解析元素中某個屬性的名稱，屬性由 ``idx`` 索引指定。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Returns the name of an attribute of the currently parsed element, specified by t
 
 :ref:`String<class_String>` **get_attribute_value**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_attribute_value>`
 
-Returns the value of an attribute of the currently parsed element, specified by the ``idx`` index.
+返回目前解析元素中某個屬性的取值，屬性由 ``idx`` 索引指定。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Returns the value of an attribute of the currently parsed element, specified by 
 
 :ref:`int<class_int>` **get_current_line**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_current_line>`
 
-Returns the current line in the parsed file, counting from 0.
+返回解析檔中的目前行，從 0 開始計數。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Returns the current line in the parsed file, counting from 0.
 
 :ref:`String<class_String>` **get_named_attribute_value**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_named_attribute_value>`
 
-Returns the value of an attribute of the currently parsed element, specified by its ``name``. This method will raise an error if the element has no such attribute.
+返回目前解析元素中某個屬性的取值，屬性由名稱 ``name`` 指定。如果該元素沒有符合要求的屬性，則會引發錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Returns the value of an attribute of the currently parsed element, specified by 
 
 :ref:`String<class_String>` **get_named_attribute_value_safe**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_named_attribute_value_safe>`
 
-Returns the value of an attribute of the currently parsed element, specified by its ``name``. This method will return an empty string if the element has no such attribute.
+返回目前解析元素中某個屬性的取值，屬性由名稱 ``name`` 指定。如果該元素沒有符合要求的屬性，則會返回空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Returns the value of an attribute of the currently parsed element, specified by 
 
 :ref:`String<class_String>` **get_node_data**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_data>`
 
-Returns the contents of a text node. This method will raise an error if the current parsed node is of any other type.
+返回文字節點的內容。如果目前解析節點是其他型別，則會引發錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the name of a node. This method will raise an error if the currently par
 
 :ref:`int<class_int>` **get_node_offset**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_offset>`
 
-Returns the byte offset of the currently parsed node since the beginning of the file or buffer. This is usually equivalent to the number of characters before the read position.
+返回目前解析節點相對於檔或緩衝區開始處的位元組偏移量。通常等價於讀取位置之前的字元數。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Returns the byte offset of the currently parsed node since the beginning of the 
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **get_node_type**\ (\ ) :ref:`🔗<class_XMLParser_method_get_node_type>`
 
-Returns the type of the current node. Compare with :ref:`NodeType<enum_XMLParser_NodeType>` constants.
+返回目前節點的型別。請使用 :ref:`NodeType<enum_XMLParser_NodeType>` 常數進行比較。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Returns the type of the current node. Compare with :ref:`NodeType<enum_XMLParser
 
 :ref:`bool<class_bool>` **has_attribute**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XMLParser_method_has_attribute>`
 
-Returns ``true`` if the currently parsed element has an attribute with the ``name``.
+如果目前解析元素存在名為 ``name`` 的屬性，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Returns ``true`` if the currently parsed element has an attribute with the ``nam
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_is_empty>`
 
-Returns ``true`` if the currently parsed element is empty, e.g. ``<element />``.
+如果目前解析元素為空則返回 ``true``\ ，例如 ``<element />``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ Returns ``true`` if the currently parsed element is empty, e.g. ``<element />``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XMLParser_method_open>`
 
-Opens an XML ``file`` for parsing. This method returns an error code.
+打開 XML 檔 ``file`` 進行解析。這個方法返回的是錯誤碼。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ Opens an XML ``file`` for parsing. This method returns an error code.
 
 :ref:`Error<enum_@GlobalScope_Error>` **open_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_XMLParser_method_open_buffer>`
 
-Opens an XML raw ``buffer`` for parsing. This method returns an error code.
+打開 XML 原始緩衝區 ``buffer`` 進行解析。這個方法返回的是錯誤碼。
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Opens an XML raw ``buffer`` for parsing. This method returns an error code.
 
 :ref:`Error<enum_@GlobalScope_Error>` **read**\ (\ ) :ref:`🔗<class_XMLParser_method_read>`
 
-Parses the next node in the file. This method returns an error code.
+解析檔的下一個節點。這個方法返回的是錯誤碼。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Parses the next node in the file. This method returns an error code.
 
 :ref:`Error<enum_@GlobalScope_Error>` **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XMLParser_method_seek>`
 
-Moves the buffer cursor to a certain offset (since the beginning) and reads the next node there. This method returns an error code.
+將緩衝區游標移動到某一偏移量（相對於開始位置）並在那裡讀取下一個節點。這個方法返回的是錯誤碼。
 
 .. rst-class:: classref-item-separator
 
@@ -381,14 +381,14 @@ Moves the buffer cursor to a certain offset (since the beginning) and reads the 
 
 |void| **skip_section**\ (\ ) :ref:`🔗<class_XMLParser_method_skip_section>`
 
-Skips the current section. If the currently parsed node contains more inner nodes, they will be ignored and the cursor will go to the closing of the current element.
+跳過目前部分。如果目前解析的節點包含其他內部節點，則會忽略這些節點，游標將跳轉到目前元素的結尾處。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

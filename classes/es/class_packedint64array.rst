@@ -139,7 +139,7 @@ Construye un **PackedInt64Array** vacío.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **PackedInt64Array**\ (\ from\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ )
 
-Constructs a **PackedInt64Array** as a copy of the given **PackedInt64Array**.
+Construye un **PackedInt64Array** como una copia del **PackedInt64Array** dado.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Constructs a **PackedInt64Array** as a copy of the given **PackedInt64Array**.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **PackedInt64Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedInt64Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+Construye un nuevo **PackedInt64Array**. Opcionalmente, puedes pasar un :ref:`Array<class_Array>` genérico que será convertido.
 
 .. rst-class:: classref-section-separator
 
@@ -178,7 +178,7 @@ Concatena un elemento al final del array (alias de :ref:`push_back()<class_Packe
 
 |void| **append_array**\ (\ array\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ ) :ref:`🔗<class_PackedInt64Array_method_append_array>`
 
-Appends a **PackedInt64Array** at the end of this array.
+Añade un **PackedInt64Array** al final de este array.
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ Busca un valor en el array y devuelve su índice o ``-1`` si no lo encuentra. Op
 
 :ref:`int<class_int>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt64Array_method_get>`
 
-Returns the 64-bit integer at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0``.
+Devuelve el entero de 64 bits en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``0``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. Lo más notable es que, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -412,11 +412,11 @@ Devuelve el numer de elementos en el array.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedInt64Array_method_slice>`
 
-Returns the slice of the **PackedInt64Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedInt64Array**.
+Devuelve una porción del **PackedInt64Array**, desde ``begin`` (inclusive) hasta ``end`` (exclusivo), como un nuevo **PackedInt64Array**.
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+El valor absoluto de ``begin`` y ``end`` se ajustará al tamaño del array, por lo que el valor predeterminado para ``end`` hace que se corte al tamaño del array por defecto (es decir, ``arr.slice(1)`` es una abreviatura de ``arr.slice(1, arr.size())``).
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es decir, ``arr.slice(0, -2)`` es una abreviatura de ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedInt64Array_method_to_byte_array>`
 
-Returns a copy of the data converted to a :ref:`PackedByteArray<class_PackedByteArray>`, where each element has been encoded as 8 bytes.
+Devuelve una copia de los datos convertidos a un :ref:`PackedByteArray<class_PackedByteArray>`, donde cada elemento ha sido codificado como 8 bytes.
 
-The size of the new array will be ``int64_array.size() * 8``.
+El tamaño del nuevo array será ``int64_array.size() * 8``.
 
 .. rst-class:: classref-section-separator
 
@@ -471,7 +471,7 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **operator +**\ (\ right\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ ) :ref:`🔗<class_PackedInt64Array_operator_sum_PackedInt64Array>`
 
-Returns a new **PackedInt64Array** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedInt64Array_method_append_array>` instead.
+Devuelve un nuevo **PackedInt64Array** con el contenido de ``right`` añadido al final de este array. Para un mejor rendimiento, considera usar :ref:`append_array()<class_PackedInt64Array_method_append_array>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`int<class_int>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt64Array_operator_idx_int>`
 
-Returns the :ref:`int<class_int>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+Devuelve el :ref:`int<class_int>` en el índice ``index``. Se pueden usar índices negativos para acceder a los elementos desde el final. Usar un índice fuera de los límites del array resultará en un error.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

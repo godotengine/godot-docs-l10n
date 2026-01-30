@@ -5,28 +5,28 @@
 XRInterfaceExtension
 ====================
 
-**Inherits:** :ref:`XRInterface<class_XRInterface>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`XRInterface<class_XRInterface>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Base class for XR interface extensions (plugins).
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-External XR interface plugins should inherit from this class.
+XR 接口扩展（插件）的基类。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`XR documentation index <../tutorials/xr/index>`
+外部 XR 接口插件应继承自这个类。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`XR 文档索引 <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -113,8 +113,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_XRInterfaceExtension_private_method__end_frame:
 
@@ -122,7 +122,7 @@ Method Descriptions
 
 |void| **_end_frame**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__end_frame>`
 
-Called if interface is active and queues have been submitted.
+如果该接口处于活动状态，并且已提交队列，则调用此方法。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Called if interface is active and queues have been submitted.
 
 :ref:`bool<class_bool>` **_get_anchor_detection_is_enabled**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_anchor_detection_is_enabled>`
 
-Return ``true`` if anchor detection is enabled for this interface.
+如果此接口启用了锚点检测，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ Return ``true`` if anchor detection is enabled for this interface.
 
 :ref:`int<class_int>` **_get_camera_feed_id**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_camera_feed_id>`
 
-Returns the camera feed ID for the :ref:`CameraFeed<class_CameraFeed>` registered with the :ref:`CameraServer<class_CameraServer>` that should be presented as the background on an AR capable device (if applicable).
+返回在 :ref:`CameraServer<class_CameraServer>` 上注册的 :ref:`CameraFeed<class_CameraFeed>` 的相机源 ID，该 ID 应在支持 AR 的设备（如果适用）上显示为背景。
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ Returns the camera feed ID for the :ref:`CameraFeed<class_CameraFeed>` registere
 
 :ref:`Transform3D<class_Transform3D>` **_get_camera_transform**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_camera_transform>`
 
-Returns the :ref:`Transform3D<class_Transform3D>` that positions the :ref:`XRCamera3D<class_XRCamera3D>` in the world.
+返回将 :ref:`XRCamera3D<class_XRCamera3D>` 放置在世界中的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Returns the :ref:`Transform3D<class_Transform3D>` that positions the :ref:`XRCam
 
 :ref:`int<class_int>` **_get_capabilities**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_capabilities>`
 
-Returns the capabilities of this interface.
+返回该接口的功能。
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ Returns the capabilities of this interface.
 
 :ref:`RID<class_RID>` **_get_color_texture**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_color_texture>`
 
-Return color texture into which to render (if applicable).
+返回接受渲染结果的颜色纹理（如果适用）。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Return color texture into which to render (if applicable).
 
 :ref:`RID<class_RID>` **_get_depth_texture**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_depth_texture>`
 
-Return depth texture into which to render (if applicable).
+返回接受渲染结果的深度纹理（如果适用）。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Return depth texture into which to render (if applicable).
 
 :ref:`StringName<class_StringName>` **_get_name**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_name>`
 
-Returns the name of this interface.
+返回该接口的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ Returns the name of this interface.
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **_get_play_area**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_play_area>`
 
-Returns a :ref:`PackedVector3Array<class_PackedVector3Array>` that represents the play areas boundaries (if applicable).
+返回表示游戏区域边界的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ （如果适用）。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ Returns a :ref:`PackedVector3Array<class_PackedVector3Array>` that represents th
 
 :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>` **_get_play_area_mode**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_play_area_mode>`
 
-Returns the play area mode that sets up our play area.
+返回设置游戏区域的模式。
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ Returns the play area mode that sets up our play area.
 
 :ref:`PackedFloat64Array<class_PackedFloat64Array>` **_get_projection_for_view**\ (\ view\: :ref:`int<class_int>`, aspect\: :ref:`float<class_float>`, z_near\: :ref:`float<class_float>`, z_far\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_projection_for_view>`
 
-Returns the projection matrix for the given view as a :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
+返回给定试图的投影矩阵，形式为 :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ Returns the projection matrix for the given view as a :ref:`PackedFloat64Array<c
 
 :ref:`Vector2<class_Vector2>` **_get_render_target_size**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_render_target_size>`
 
-Returns the size of our render target for this interface, this overrides the size of the :ref:`Viewport<class_Viewport>` marked as the xr viewport.
+返回我们在这个接口上的渲染目标大小，覆盖标记为 XR 视口的 :ref:`Viewport<class_Viewport>` 的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Returns the size of our render target for this interface, this overrides the siz
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_suggested_pose_names**\ (\ tracker_name\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_suggested_pose_names>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` with pose names configured by this interface. Note that user configuration can override this list.
+返回一个 :ref:`PackedStringArray<class_PackedStringArray>`\ ，其中包含由此接口配置的姿势名称。请注意，用户的配置可以覆盖此列表。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Returns a :ref:`PackedStringArray<class_PackedStringArray>` with pose names conf
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_suggested_tracker_names**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_suggested_tracker_names>`
 
-Returns a :ref:`PackedStringArray<class_PackedStringArray>` with tracker names configured by this interface. Note that user configuration can override this list.
+返回一个 :ref:`PackedStringArray<class_PackedStringArray>`\ ，其中包含由此接口配置的追踪器名称。请注意，用户的配置可以覆盖此列表。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Returns a :ref:`PackedStringArray<class_PackedStringArray>` with tracker names c
 
 :ref:`Dictionary<class_Dictionary>` **_get_system_info**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__get_system_info>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` with system information related to this interface.
+返回包含与这个接口相关的系统信息的 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ Returns the current status of our tracking.
 
 :ref:`Transform3D<class_Transform3D>` **_get_transform_for_view**\ (\ view\: :ref:`int<class_int>`, cam_transform\: :ref:`Transform3D<class_Transform3D>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_transform_for_view>`
 
-Returns a :ref:`Transform3D<class_Transform3D>` for a given view.
+返回给定视图的 :ref:`Transform3D<class_Transform3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Returns a :ref:`Transform3D<class_Transform3D>` for a given view.
 
 :ref:`RID<class_RID>` **_get_velocity_texture**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_velocity_texture>`
 
-Return velocity texture into which to render (if applicable).
+返回作为渲染目标的速度纹理（如果适用）。
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ Return velocity texture into which to render (if applicable).
 
 :ref:`int<class_int>` **_get_view_count**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_view_count>`
 
-Returns the number of views this interface requires, 1 for mono, 2 for stereoscopic.
+返回此接口所需的视图数量，1 代表单目平面视图，2 代表双目立体视图。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Returns the number of views this interface requires, 1 for mono, 2 for stereosco
 
 :ref:`VRSTextureFormat<enum_XRInterface_VRSTextureFormat>` **_get_vrs_texture_format**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__get_vrs_texture_format>`
 
-Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRInterfaceExtension_private_method__get_vrs_texture>`.
+返回 :ref:`_get_vrs_texture()<class_XRInterfaceExtension_private_method__get_vrs_texture>` 所返回纹理的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Returns the format of the texture returned by :ref:`_get_vrs_texture()<class_XRI
 
 :ref:`bool<class_bool>` **_initialize**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__initialize>`
 
-Initializes the interface, returns ``true`` on success.
+初始化该接口，成功时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Initializes the interface, returns ``true`` on success.
 
 :ref:`bool<class_bool>` **_is_initialized**\ (\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__is_initialized>`
 
-Returns ``true`` if this interface has been initialized.
+如果这个接口已初始化，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Returns ``true`` if this interface has been initialized.
 
 |void| **_post_draw_viewport**\ (\ render_target\: :ref:`RID<class_RID>`, screen_rect\: :ref:`Rect2<class_Rect2>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__post_draw_viewport>`
 
-Called after the XR :ref:`Viewport<class_Viewport>` draw logic has completed.
+在 XR :ref:`Viewport<class_Viewport>` 绘制逻辑完成后调用。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Called after the XR :ref:`Viewport<class_Viewport>` draw logic has completed.
 
 :ref:`bool<class_bool>` **_pre_draw_viewport**\ (\ render_target\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__pre_draw_viewport>`
 
-Called if this is our primary **XRInterfaceExtension** before we start processing a :ref:`Viewport<class_Viewport>` for every active XR :ref:`Viewport<class_Viewport>`, returns ``true`` if that viewport should be rendered. An XR interface may return ``false`` if the user has taken off their headset and we can pause rendering.
+如果这是我们的主要 **XRInterfaceExtension**\ ，则在我们开始为每个活动的 XR :ref:`Viewport<class_Viewport>` 处理 :ref:`Viewport<class_Viewport>` 之前调用，如果该视口应该被渲染，则返回 ``true``\ 。如果用户摘下头戴式设备，XR 接口可能会返回 ``false``\ ，我们可以暂停渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Called if this is our primary **XRInterfaceExtension** before we start processin
 
 |void| **_pre_render**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__pre_render>`
 
-Called if this **XRInterfaceExtension** is active before rendering starts. Most XR interfaces will sync tracking at this point in time.
+如果这个 **XRInterfaceExtension** 在渲染开始前处于激活状态，则会调用这个函数，大多数 XR 接口都会在此时进行追踪同步。
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ Called if this **XRInterfaceExtension** is active before rendering starts. Most 
 
 |void| **_process**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__process>`
 
-Called if this **XRInterfaceExtension** is active before our physics and game process is called. Most XR interfaces will update its :ref:`XRPositionalTracker<class_XRPositionalTracker>`\ s at this point in time.
+如果这个 **XRInterfaceExtension** 在调用我们的物理和游戏处理前处于激活状态，则会调用这个函数。大多数 XR 接口都会在此时更新其 :ref:`XRPositionalTracker<class_XRPositionalTracker>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ Called if this **XRInterfaceExtension** is active before our physics and game pr
 
 |void| **_set_anchor_detection_is_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__set_anchor_detection_is_enabled>`
 
-Enables anchor detection on this interface if supported.
+如果支持，则在此接口上启用锚点检测。
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ Enables anchor detection on this interface if supported.
 
 :ref:`bool<class_bool>` **_set_play_area_mode**\ (\ mode\: :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>`\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__set_play_area_mode>`
 
-Set the play area mode for this interface.
+设置该接口的游玩区域模式。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ Set the play area mode for this interface.
 
 :ref:`bool<class_bool>` **_supports_play_area_mode**\ (\ mode\: :ref:`PlayAreaMode<enum_XRInterface_PlayAreaMode>`\ ) |virtual| |const| :ref:`🔗<class_XRInterfaceExtension_private_method__supports_play_area_mode>`
 
-Returns ``true`` if this interface supports this play area mode.
+如果该接口支持该游玩区域模式，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Returns ``true`` if this interface supports this play area mode.
 
 |void| **_trigger_haptic_pulse**\ (\ action_name\: :ref:`String<class_String>`, tracker_name\: :ref:`StringName<class_StringName>`, frequency\: :ref:`float<class_float>`, amplitude\: :ref:`float<class_float>`, duration_sec\: :ref:`float<class_float>`, delay_sec\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__trigger_haptic_pulse>`
 
-Triggers a haptic pulse to be emitted on the specified tracker.
+在指定的追踪器上触发一次触觉脉冲。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ Triggers a haptic pulse to be emitted on the specified tracker.
 
 |void| **_uninitialize**\ (\ ) |virtual| :ref:`🔗<class_XRInterfaceExtension_private_method__uninitialize>`
 
-Uninitialize the interface.
+将该接口取消初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Uninitialize the interface.
 
 |void| **add_blit**\ (\ render_target\: :ref:`RID<class_RID>`, src_rect\: :ref:`Rect2<class_Rect2>`, dst_rect\: :ref:`Rect2i<class_Rect2i>`, use_layer\: :ref:`bool<class_bool>`, layer\: :ref:`int<class_int>`, apply_lens_distortion\: :ref:`bool<class_bool>`, eye_center\: :ref:`Vector2<class_Vector2>`, k1\: :ref:`float<class_float>`, k2\: :ref:`float<class_float>`, upscale\: :ref:`float<class_float>`, aspect_ratio\: :ref:`float<class_float>`\ ) :ref:`🔗<class_XRInterfaceExtension_method_add_blit>`
 
-Blits our render results to screen optionally applying lens distortion. This can only be called while processing ``_commit_views``.
+将我们的渲染结果传输到屏幕上，还可以在此过程中应用镜头失真。只能在处理 ``_commit_views`` 时调用。
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Blits our render results to screen optionally applying lens distortion. This can
 
 :ref:`RID<class_RID>` **get_render_target_texture**\ (\ render_target\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_XRInterfaceExtension_method_get_render_target_texture>`
 
-Returns a valid :ref:`RID<class_RID>` for a texture to which we should render the current frame if supported by the interface.
+如果接口支持，则返回一个纹理的有效 :ref:`RID<class_RID>`\ ，我们应更将当前帧渲染至该纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -564,12 +564,12 @@ Returns a valid :ref:`RID<class_RID>` for a texture to which we should render th
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

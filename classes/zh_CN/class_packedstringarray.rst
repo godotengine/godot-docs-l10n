@@ -5,16 +5,16 @@
 PackedStringArray
 =================
 
-A packed array of :ref:`String<class_String>`\ s.
+:ref:`String<class_String>` 紧缩数组。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An array specifically designed to hold :ref:`String<class_String>`\ s. Packs data tightly, so it saves memory for large array sizes.
+专门设计用于保存 :ref:`String<class_String>` 的数组。紧密打包数据，因此可为大型数组节省内存。
 
-If you want to join the strings in the array, use :ref:`String.join()<class_String_method_join>`.
+如果要连接数组中的字符串，请使用 :ref:`String.join()<class_String_method_join>`\ 。
 
 ::
 
@@ -22,25 +22,25 @@ If you want to join the strings in the array, use :ref:`String.join()<class_Stri
     var string = " ".join(string_array)
     print(string) # "hello world"
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedStringArray** versus ``Array[String]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **紧缩数组、类型化数组和非类型化数组之间的差异：**\ 与同类型的类型化数组相比，紧缩数组的迭代和修改速度通常更快（例如 **PackedStringArray** 与 ``Array[String]``\ ）。此外，紧缩数组消耗的内存更少。缺点是紧缩数组不太灵活，因为它们不提供类似 :ref:`Array.map()<class_Array_method_map>` 的许多便捷方法。不过类型化数组的迭代和修改速度比非类型化数组更快。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedStringArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：**\ 紧缩数组始终通过引用传递。要获取可以独立于原始数组进行修改的数组副本，请使用 :ref:`duplicate()<class_PackedStringArray_method_duplicate>`\ 。内置属性和方法\ *并非*\ 如此，它们返回的是紧缩数组的副本，对其进行修改\ *不会*\ 影响原值。更新此类内置属性请修改返回的数组，然后将其重新赋值给该属性。
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `操作系统测试演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -111,8 +111,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+运算符
+------
 
 .. table::
    :widths: auto
@@ -133,8 +133,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_PackedStringArray_constructor_PackedStringArray:
 
@@ -142,7 +142,7 @@ Constructor Descriptions
 
 :ref:`PackedStringArray<class_PackedStringArray>` **PackedStringArray**\ (\ ) :ref:`🔗<class_PackedStringArray_constructor_PackedStringArray>`
 
-Constructs an empty **PackedStringArray**.
+构造空的 **PackedStringArray**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Constructs an empty **PackedStringArray**.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **PackedStringArray**\ (\ from\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 
-Constructs a **PackedStringArray** as a copy of the given **PackedStringArray**.
+构造给定 **PackedStringArray** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Constructs a **PackedStringArray** as a copy of the given **PackedStringArray**.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **PackedStringArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedStringArray**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+构造新 **PackedStringArray**\ 。你还可以传入通用 :ref:`Array<class_Array>` 进行转换。
 
 .. rst-class:: classref-section-separator
 
@@ -170,8 +170,8 @@ Constructs a new **PackedStringArray**. Optionally, you can pass in a generic :r
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PackedStringArray_method_append:
 
@@ -179,7 +179,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **append**\ (\ value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_append>`
 
-Appends an element at the end of the array (alias of :ref:`push_back()<class_PackedStringArray_method_push_back>`).
+向数组末尾追加一个元素（\ :ref:`push_back()<class_PackedStringArray_method_push_back>` 的别名）。
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ Appends an element at the end of the array (alias of :ref:`push_back()<class_Pac
 
 |void| **append_array**\ (\ array\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_method_append_array>`
 
-Appends a **PackedStringArray** at the end of this array.
+在该数组的末尾追加一个 **PackedStringArray**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ Appends a **PackedStringArray** at the end of this array.
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`String<class_String>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedStringArray_method_bsearch>`
 
-Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
+使用二进法查找已有值的索引（如果该值尚未存在于数组中，则为保持排序顺序的插入索引）。传递 ``before`` 说明符是可选的。如果该参数为 ``false``\ ，则返回的索引位于数组中该值的所有已有的条目之后。
 
-\ **Note:** Calling :ref:`bsearch()<class_PackedStringArray_method_bsearch>` on an unsorted array results in unexpected behavior.
+\ **注意：**\ 在未排序的数组上调用 :ref:`bsearch()<class_PackedStringArray_method_bsearch>` 会产生预料之外的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Finds the index of an existing value (or the insertion index that maintains sort
 
 |void| **clear**\ (\ ) :ref:`🔗<class_PackedStringArray_method_clear>`
 
-Clears the array. This is equivalent to using :ref:`resize()<class_PackedStringArray_method_resize>` with a size of ``0``.
+清空数组。相当于调用 :ref:`resize()<class_PackedStringArray_method_resize>` 时指定大小为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Clears the array. This is equivalent to using :ref:`resize()<class_PackedStringA
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_count>`
 
-Returns the number of times an element is in the array.
+返回元素在数组中出现的次数。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Returns the number of times an element is in the array.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **duplicate**\ (\ ) |const| :ref:`🔗<class_PackedStringArray_method_duplicate>`
 
-Creates a copy of the array, and returns it.
+创建该数组的副本，并将该副本返回。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Creates a copy of the array, and returns it.
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedStringArray_method_remove_at>` instead.
+在数组中移除首次出现的某个值并返回 ``true``\ 。如果数组中不存在该值，则不会发生任何事情，返回 ``false``\ 。要按照索引移除元素，请改用 :ref:`remove_at()<class_PackedStringArray_method_remove_at>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 |void| **fill**\ (\ value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_fill>`
 
-Assigns the given value to all elements in the array. This can typically be used together with :ref:`resize()<class_PackedStringArray_method_resize>` to create an array with a given size and initialized elements.
+将数组中的所有元素都设为给定的值。通常与 :ref:`resize()<class_PackedStringArray_method_resize>` 一起使用，创建给定大小的数组并初始化元素。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Assigns the given value to all elements in the array. This can typically be used
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedStringArray_method_find>`
 
-Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
+在数组中搜索值并返回其索引，如果未找到则返回 ``-1`` 。可选地，可以传递起始搜索索引。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+如果该数组包含 ``value``\ ，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ Returns ``true`` if the array contains ``value``.
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_insert>`
 
-Inserts a new element at a given position in the array. The position must be valid, or at the end of the array (``idx == size()``).
+在数组中给定的位置插入一个新元素。这个位置必须是有效的，或者是在数组的末端（\ ``idx == size()``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Inserts a new element at a given position in the array. The position must be val
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedStringArray_method_is_empty>`
 
-Returns ``true`` if the array is empty.
+该数组为空时，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Returns ``true`` if the array is empty.
 
 :ref:`bool<class_bool>` **push_back**\ (\ value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_push_back>`
 
-Appends a string element at end of the array.
+在数组的末尾追加字符串元素。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ Appends a string element at end of the array.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedStringArray_method_remove_at>`
 
-Removes an element from the array by index.
+从数组中删除位于索引的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -363,9 +363,9 @@ Removes an element from the array by index.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedStringArray_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedStringArray_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+设置数组的大小。如果数组增大，则预留数组末端的元素。如果数组缩小，则将数组截断到新的大小。调用一次 :ref:`resize()<class_PackedStringArray_method_resize>` 然后赋值比逐个添加新元素要快。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedStringArray_method_size>` to find the actual size of the array after resize.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失败时返回下列 :ref:`Error<enum_@GlobalScope_Error>` 常量：大小为负数则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失败则返回 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。请使用 :ref:`size()<class_PackedStringArray_method_size>` 获取调整后的实际大小。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_PackedStringArray_method_reverse>`
 
-Reverses the order of the elements in the array.
+将数组中的元素逆序排列。
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ Reverses the order of the elements in the array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedStringArray_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+逆序搜索数组。还可以传递起始搜索位置索引。如果为负，则起始索引被视为相对于数组的结尾。
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Searches the array in reverse order. Optionally, a start search index can be pas
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PackedStringArray_method_set>`
 
-Changes the :ref:`String<class_String>` at the given index.
+更改给定索引处的 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Changes the :ref:`String<class_String>` at the given index.
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_PackedStringArray_method_size>`
 
-Returns the number of elements in the array.
+返回数组中元素的个数。
 
 .. rst-class:: classref-item-separator
 
@@ -425,11 +425,11 @@ Returns the number of elements in the array.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedStringArray_method_slice>`
 
-Returns the slice of the **PackedStringArray**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedStringArray**.
+返回该 **PackedStringArray** 的切片，是从 ``begin``\ （含）到 ``end``\ （不含）的全新 **PackedStringArray**\ 。
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+\ ``begin`` 和 ``end`` 的绝对值会按数组大小进行限制，所以 ``end`` 的默认值会切到数组大小为止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的简写）。
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+如果 ``begin`` 或 ``end`` 为负，则表示相对于数组的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的简写）。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ If either ``begin`` or ``end`` are negative, they will be relative to the end of
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedStringArray_method_sort>`
 
-Sorts the elements of the array in ascending order.
+将该数组中的元素按升序排列。
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedStringArray_method_to_byte_array>`
 
-Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each string encoded as UTF-8. Strings are ``null`` terminated.
+返回 :ref:`PackedByteArray<class_PackedByteArray>`\ ，每个字符串都按照 UTF-8 编码。字符串以 ``null`` 结尾。
 
 .. rst-class:: classref-section-separator
 
@@ -461,8 +461,8 @@ Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each string encoded
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+运算符说明
+----------
 
 .. _class_PackedStringArray_operator_neq_PackedStringArray:
 
@@ -470,7 +470,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_operator_neq_PackedStringArray>`
 
-Returns ``true`` if contents of the arrays differ.
+如果数组内容不同，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **operator +**\ (\ right\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_operator_sum_PackedStringArray>`
 
-Returns a new **PackedStringArray** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedStringArray_method_append_array>` instead.
+返回新的 **PackedStringArray**\ ，新数组的内容为此数组在末尾加上 ``right``\ 。为了提高性能，请考虑改用 :ref:`append_array()<class_PackedStringArray_method_append_array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Returns a new **PackedStringArray** with contents of ``right`` added at the end 
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_PackedStringArray_operator_eq_PackedStringArray>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal :ref:`String<class_String>`\ s at the corresponding indices.
+如果两个数组的内容相同，即对应索引号的 :ref:`String<class_String>` 相等，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -506,14 +506,14 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`String<class_String>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedStringArray_operator_idx_int>`
 
-Returns the :ref:`String<class_String>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+返回索引为 ``index`` 的 :ref:`String<class_String>`\ 。负数索引能从末尾开始访问元素。使用数组范围外的索引会导致出错。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

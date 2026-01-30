@@ -5,29 +5,29 @@
 GPUParticlesCollisionHeightField3D
 ==================================
 
-**Inherits:** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A real-time heightmap-shaped 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+影响 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的实时高度图形状 3D 粒子碰撞形状。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A real-time heightmap-shaped 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+影响 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的实时高度图形状的 3D 粒子碰撞形状。
 
-Heightmap shapes allow for efficiently representing collisions for convex and concave objects with a single "floor" (such as terrain). This is less flexible than :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`, but it doesn't require a baking step.
+高度图形状允许有效地表示凸面和凹面对象与单个“地板”（例如地形）的碰撞。它不如 :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>` 灵活，但不需要烘焙步骤。
 
-\ **GPUParticlesCollisionHeightField3D** can also be regenerated in real-time when it is moved, when the camera moves, or even continuously. This makes **GPUParticlesCollisionHeightField3D** a good choice for weather effects such as rain and snow and games with highly dynamic geometry. However, this class is limited since heightmaps cannot represent overhangs (e.g. indoors or caves).
+也可以在移动时、相机移动时、甚至连续时，实时重新生成 **GPUParticlesCollisionHeightField3D**\ 。这对雨雪等天气效果、以及具有高度动态几何体的游戏来说，\ **GPUParticlesCollisionHeightField3D** 是一个不错的选择。但是，该类有限制，因为高度图无法表示悬垂（例如室内或洞穴）。
 
-\ **Note:** :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` must be ``true`` on the :ref:`GPUParticles3D<class_GPUParticles3D>`'s process material for collision to work.
+\ **注意：**\ 在 :ref:`GPUParticles3D<class_GPUParticles3D>` 的处理材质上，\ :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 必须为 ``true``\ ，才能使碰撞生效。
 
-\ **Note:** Particle collision only affects :ref:`GPUParticles3D<class_GPUParticles3D>`, not :ref:`CPUParticles3D<class_CPUParticles3D>`.
+\ **注意：**\ 粒子碰撞只影响 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，不影响 :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GPUParticlesCollisionHeightField3D_Resolution:
 
@@ -79,7 +79,7 @@ enum **Resolution**: :ref:`🔗<enum_GPUParticlesCollisionHeightField3D_Resoluti
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_256** = ``0``
 
-Generate a 256×256 heightmap. Intended for small-scale scenes, or larger scenes with no distant particles.
+生成 256×256 的高度图。适用于小规模场景，或没有远景粒子的较大场景。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_RESOLUTION_512:
 
@@ -87,7 +87,7 @@ Generate a 256×256 heightmap. Intended for small-scale scenes, or larger scenes
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_512** = ``1``
 
-Generate a 512×512 heightmap. Intended for medium-scale scenes, or larger scenes with no distant particles.
+生成 512×512 的高度图。适用于中等规模的场景，或没有远景粒子的较大场景。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_RESOLUTION_1024:
 
@@ -95,7 +95,7 @@ Generate a 512×512 heightmap. Intended for medium-scale scenes, or larger scene
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_1024** = ``2``
 
-Generate a 1024×1024 heightmap. Intended for large scenes with distant particles.
+生成 1024×1024 的高度图。适用于具有远景粒子的大型场景。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_RESOLUTION_2048:
 
@@ -103,7 +103,7 @@ Generate a 1024×1024 heightmap. Intended for large scenes with distant particle
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_2048** = ``3``
 
-Generate a 2048×2048 heightmap. Intended for very large scenes with distant particles.
+生成 2048×2048 的高度图。适用于具有远景粒子的非常大的场景。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_RESOLUTION_4096:
 
@@ -111,7 +111,7 @@ Generate a 2048×2048 heightmap. Intended for very large scenes with distant par
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_4096** = ``4``
 
-Generate a 4096×4096 heightmap. Intended for huge scenes with distant particles.
+生成 4096×4096 的高度图。适用于具有远景粒子的巨大场景。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_RESOLUTION_8192:
 
@@ -119,7 +119,7 @@ Generate a 4096×4096 heightmap. Intended for huge scenes with distant particles
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_8192** = ``5``
 
-Generate a 8192×8192 heightmap. Intended for gigantic scenes with distant particles.
+生成 8192×8192 的高度图。适用于具有远景粒子的巨大场景。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_RESOLUTION_MAX:
 
@@ -127,7 +127,7 @@ Generate a 8192×8192 heightmap. Intended for gigantic scenes with distant parti
 
 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **RESOLUTION_MAX** = ``6``
 
-Represents the size of the :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` enum.
+代表 :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ enum **UpdateMode**: :ref:`🔗<enum_GPUParticlesCollisionHeightField3D_UpdateMo
 
 :ref:`UpdateMode<enum_GPUParticlesCollisionHeightField3D_UpdateMode>` **UPDATE_MODE_WHEN_MOVED** = ``0``
 
-Only update the heightmap when the **GPUParticlesCollisionHeightField3D** node is moved, or when the camera moves if :ref:`follow_camera_enabled<class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled>` is ``true``. An update can be forced by slightly moving the **GPUParticlesCollisionHeightField3D** in any direction, or by calling :ref:`RenderingServer.particles_collision_height_field_update()<class_RenderingServer_method_particles_collision_height_field_update>`.
+仅在 **GPUParticlesCollisionHeightField3D** 节点移动时，或者当 :ref:`follow_camera_enabled<class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled>` 为 ``true`` 且相机移动时，更新高度图。可以通过向任意方向稍微移动 **GPUParticlesCollisionHeightField3D** 或者调用 :ref:`RenderingServer.particles_collision_height_field_update()<class_RenderingServer_method_particles_collision_height_field_update>` 来强制更新。
 
 .. _class_GPUParticlesCollisionHeightField3D_constant_UPDATE_MODE_ALWAYS:
 
@@ -153,7 +153,7 @@ Only update the heightmap when the **GPUParticlesCollisionHeightField3D** node i
 
 :ref:`UpdateMode<enum_GPUParticlesCollisionHeightField3D_UpdateMode>` **UPDATE_MODE_ALWAYS** = ``1``
 
-Update the heightmap every frame. This has a significant performance cost. This update should only be used when geometry that particles can collide with changes significantly during gameplay.
+每帧更新高度图。这具有显著的性能成本。只有当粒子可以碰撞的几何体在游戏过程中发生显著变化时，才应使用该更新选项。
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ Update the heightmap every frame. This has a significant performance cost. This 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled:
 
@@ -175,9 +175,9 @@ Property Descriptions
 - |void| **set_follow_camera_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_follow_camera_enabled**\ (\ )
 
-If ``true``, the **GPUParticlesCollisionHeightField3D** will follow the current camera in global space. The **GPUParticlesCollisionHeightField3D** does not need to be a child of the :ref:`Camera3D<class_Camera3D>` node for this to work.
+如果为 ``true``\ ，则 **GPUParticlesCollisionHeightField3D** 将在全局空间中跟随当前相机。\ **GPUParticlesCollisionHeightField3D** 不需要是该 :ref:`Camera3D<class_Camera3D>` 节点的子节点也能工作。
 
-Following the camera has a performance cost, as it will force the heightmap to update whenever the camera moves. Consider lowering :ref:`resolution<class_GPUParticlesCollisionHeightField3D_property_resolution>` to improve performance if :ref:`follow_camera_enabled<class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled>` is ``true``.
+跟随相机会有性能成本，因为它会在相机移动时强制更新高度图。如果 :ref:`follow_camera_enabled<class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled>` 为 ``true``\ ，请考虑降低 :ref:`resolution<class_GPUParticlesCollisionHeightField3D_property_resolution>` 以提高性能。
 
 .. rst-class:: classref-item-separator
 
@@ -194,11 +194,11 @@ Following the camera has a performance cost, as it will force the heightmap to u
 - |void| **set_heightfield_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_heightfield_mask**\ (\ )
 
-The visual layers to account for when updating the heightmap. Only :ref:`MeshInstance3D<class_MeshInstance3D>`\ s whose :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` match with this :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` will be included in the heightmap collision update. By default, all 20 user-visible layers are taken into account for updating the heightmap collision.
+更新高度图时要考虑的可视层。高度图碰撞更新中只会包含 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 与 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 匹配的 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 。默认情况下，更新高度图碰撞时会考虑全部 20 个用户可见层。
 
-\ **Note:** Since the :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` allows for 32 layers to be stored in total, there are an additional 12 layers that are only used internally by the engine and aren't exposed in the editor. Setting :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` using a script allows you to toggle those reserved layers, which can be useful for editor plugins.
+\ **注意：**\ 由于 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 总共能够存储 32 个层，还有 12 个层是仅限引擎内部使用的，未在编辑器中暴露。通过脚本设置 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 就可以开关这些保留的层，适用于编辑器插件。
 
-To adjust :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` more easily using a script, use :ref:`get_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value>` and :ref:`set_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_set_heightfield_mask_value>`.
+脚本中可以使用 :ref:`get_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value>` 和 :ref:`set_heightfield_mask_value()<class_GPUParticlesCollisionHeightField3D_method_set_heightfield_mask_value>` 更方便地调整 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ To adjust :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_proper
 - |void| **set_resolution**\ (\ value\: :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>`\ )
 - :ref:`Resolution<enum_GPUParticlesCollisionHeightField3D_Resolution>` **get_resolution**\ (\ )
 
-Higher resolutions can represent small details more accurately in large scenes, at the cost of lower performance. If :ref:`update_mode<class_GPUParticlesCollisionHeightField3D_property_update_mode>` is :ref:`UPDATE_MODE_ALWAYS<class_GPUParticlesCollisionHeightField3D_constant_UPDATE_MODE_ALWAYS>`, consider using the lowest resolution possible.
+更高的分辨率可以更准确地表示大场景中的小细节，但会降低性能。如果 :ref:`update_mode<class_GPUParticlesCollisionHeightField3D_property_update_mode>` 为 :ref:`UPDATE_MODE_ALWAYS<class_GPUParticlesCollisionHeightField3D_constant_UPDATE_MODE_ALWAYS>`\ ，请考虑使用可能的最低分辨率。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Higher resolutions can represent small details more accurately in large scenes, 
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-The collision heightmap's size in 3D units. To improve heightmap quality, :ref:`size<class_GPUParticlesCollisionHeightField3D_property_size>` should be set as small as possible while covering the parts of the scene you need.
+碰撞高度图的 3D 单位大小。为了提高高度图质量，\ :ref:`size<class_GPUParticlesCollisionHeightField3D_property_size>` 应被设置得尽可能小，同时覆盖需要的场景部分。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ The collision heightmap's size in 3D units. To improve heightmap quality, :ref:`
 - |void| **set_update_mode**\ (\ value\: :ref:`UpdateMode<enum_GPUParticlesCollisionHeightField3D_UpdateMode>`\ )
 - :ref:`UpdateMode<enum_GPUParticlesCollisionHeightField3D_UpdateMode>` **get_update_mode**\ (\ )
 
-The update policy to use for the generated heightmap.
+生成的高度图的更新策略。
 
 .. rst-class:: classref-section-separator
 
@@ -257,8 +257,8 @@ The update policy to use for the generated heightmap.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value:
 
@@ -266,7 +266,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **get_heightfield_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GPUParticlesCollisionHeightField3D_method_get_heightfield_mask_value>`
 
-Returns ``true`` if the specified layer of the :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` is enabled, given a ``layer_number`` between ``1`` and ``20``, inclusive.
+如果启用了 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 中的指定层，则返回 ``true``\ ，给定的 ``layer_number`` 在 ``1`` 到 ``20`` 之间，包括端点。
 
 .. rst-class:: classref-item-separator
 
@@ -278,14 +278,14 @@ Returns ``true`` if the specified layer of the :ref:`heightfield_mask<class_GPUP
 
 |void| **set_heightfield_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GPUParticlesCollisionHeightField3D_method_set_heightfield_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>`, given a ``layer_number`` between ``1`` and ``20``, inclusive.
+根据 ``value`` 启用或禁用 :ref:`heightfield_mask<class_GPUParticlesCollisionHeightField3D_property_heightfield_mask>` 中的指定层，给定的 ``layer_number`` 在 ``1`` 到 ``20`` 之间，包括端点。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

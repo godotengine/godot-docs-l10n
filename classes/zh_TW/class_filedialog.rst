@@ -5,16 +5,16 @@
 FileDialog
 ==========
 
-**Inherits:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorFileDialog<class_EditorFileDialog>`
+**被繼承：** :ref:`EditorFileDialog<class_EditorFileDialog>`
 
-A dialog for selecting files or directories in the filesystem.
+用於選擇檔案系統中的檔或目錄的對話方塊。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **FileDialog** is a preset dialog used to choose files and directories in the filesystem. It supports filter masks. **FileDialog** automatically sets its window title according to the :ref:`file_mode<class_FileDialog_property_file_mode>`. If you want to use a custom title, disable this by setting :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` to ``false``.
 
@@ -22,8 +22,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -140,8 +140,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -196,8 +196,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_FileDialog_signal_dir_selected:
 
@@ -205,7 +205,7 @@ Signals
 
 **dir_selected**\ (\ dir\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileDialog_signal_dir_selected>`
 
-Emitted when the user selects a directory.
+當使用者選擇一個目錄時觸發的。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Emitted when the user selects a directory.
 
 **file_selected**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileDialog_signal_file_selected>`
 
-Emitted when the user selects a file by double-clicking it or pressing the **OK** button.
+當使用者通過按兩下檔或按\ **確定**\ 按鈕選擇一個檔時觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Emitted when the filter for file names changes.
 
 **files_selected**\ (\ paths\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_FileDialog_signal_files_selected>`
 
-Emitted when the user selects multiple files.
+當使用者選擇多個檔時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -249,8 +249,8 @@ Emitted when the user selects multiple files.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_FileDialog_FileMode:
 
@@ -264,7 +264,7 @@ enum **FileMode**: :ref:`🔗<enum_FileDialog_FileMode>`
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_FILE** = ``0``
 
-The dialog allows selecting one, and only one file.
+該對話方塊只允許選擇一個檔。
 
 .. _class_FileDialog_constant_FILE_MODE_OPEN_FILES:
 
@@ -272,7 +272,7 @@ The dialog allows selecting one, and only one file.
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_FILES** = ``1``
 
-The dialog allows selecting multiple files.
+該對話方塊允許選擇多個檔。
 
 .. _class_FileDialog_constant_FILE_MODE_OPEN_DIR:
 
@@ -280,7 +280,7 @@ The dialog allows selecting multiple files.
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_DIR** = ``2``
 
-The dialog only allows selecting a directory, disallowing the selection of any file.
+該對話方塊只允許選擇一個目錄，不允許選擇任何檔。
 
 .. _class_FileDialog_constant_FILE_MODE_OPEN_ANY:
 
@@ -288,7 +288,7 @@ The dialog only allows selecting a directory, disallowing the selection of any f
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_OPEN_ANY** = ``3``
 
-The dialog allows selecting one file or directory.
+該對話方塊允許選擇一個檔或目錄。
 
 .. _class_FileDialog_constant_FILE_MODE_SAVE_FILE:
 
@@ -296,7 +296,7 @@ The dialog allows selecting one file or directory.
 
 :ref:`FileMode<enum_FileDialog_FileMode>` **FILE_MODE_SAVE_FILE** = ``4``
 
-The dialog will warn when a file exists.
+當檔案存在時，對話方塊會發出警告。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +314,7 @@ enum **Access**: :ref:`🔗<enum_FileDialog_Access>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_RESOURCES** = ``0``
 
-The dialog only allows accessing files under the :ref:`Resource<class_Resource>` path (``res://``).
+該對話方塊只允許存取 :ref:`Resource<class_Resource>` 路徑下的檔（\ ``res://``\ ）。
 
 .. _class_FileDialog_constant_ACCESS_USERDATA:
 
@@ -322,7 +322,7 @@ The dialog only allows accessing files under the :ref:`Resource<class_Resource>`
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_USERDATA** = ``1``
 
-The dialog only allows accessing files under user data path (``user://``).
+該對話方塊只允許存取使用者資料路徑（\ ``user://``\ ）下的檔案。
 
 .. _class_FileDialog_constant_ACCESS_FILESYSTEM:
 
@@ -330,7 +330,7 @@ The dialog only allows accessing files under user data path (``user://``).
 
 :ref:`Access<enum_FileDialog_Access>` **ACCESS_FILESYSTEM** = ``2``
 
-The dialog allows accessing files on the whole file system.
+該對話方塊允許存取檔案系統上的檔。
 
 .. rst-class:: classref-item-separator
 
@@ -464,8 +464,8 @@ Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_FileDialog_property_access:
 
@@ -516,7 +516,7 @@ The current working directory of the file dialog.
 - |void| **set_current_file**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_current_file**\ (\ )
 
-The currently selected file of the file dialog.
+檔案對話方塊的目前選定的檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ The currently selected file of the file dialog.
 - |void| **set_current_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_current_path**\ (\ )
 
-The currently selected file path of the file dialog.
+目前選擇的檔對話方塊的檔路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -743,7 +743,7 @@ If ``true``, shows the layout switch buttons (list/thumbnails).
 - |void| **set_mode_overrides_title**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_mode_overriding_title**\ (\ )
 
-If ``true``, changing the :ref:`file_mode<class_FileDialog_property_file_mode>` property will set the window title accordingly (e.g. setting :ref:`file_mode<class_FileDialog_property_file_mode>` to :ref:`FILE_MODE_OPEN_FILE<class_FileDialog_constant_FILE_MODE_OPEN_FILE>` will change the window title to "Open a File").
+如果為 ``true``\ ，更改 :ref:`file_mode<class_FileDialog_property_file_mode>` 屬性將相應地設定視窗標題（例如，將 :ref:`file_mode<class_FileDialog_property_file_mode>` 設定為 :ref:`FILE_MODE_OPEN_FILE<class_FileDialog_constant_FILE_MODE_OPEN_FILE>`\ ，會將視窗標題更改為“打開檔案”）。
 
 .. rst-class:: classref-item-separator
 
@@ -867,8 +867,8 @@ If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplaySe
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_FileDialog_method_add_filter:
 
@@ -920,7 +920,7 @@ Clear the filter for file names.
 
 |void| **clear_filters**\ (\ ) :ref:`🔗<class_FileDialog_method_clear_filters>`
 
-Clear all the added filters in the dialog.
+清除對話方塊中所有新增的篩檢程式。
 
 .. rst-class:: classref-item-separator
 
@@ -932,7 +932,7 @@ Clear all the added filters in the dialog.
 
 |void| **deselect_all**\ (\ ) :ref:`🔗<class_FileDialog_method_deselect_all>`
 
-Clear all currently selected items in the dialog.
+清除對話方塊中所有目前選定的專案。
 
 .. rst-class:: classref-item-separator
 
@@ -956,9 +956,9 @@ Returns the list of favorite directories, which is shared by all **FileDialog** 
 
 :ref:`LineEdit<class_LineEdit>` **get_line_edit**\ (\ ) :ref:`🔗<class_FileDialog_method_get_line_edit>`
 
-Returns the LineEdit for the selected file.
+返回所選檔案的 LineEdit。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，刪除和釋放它可能會導致當機。如果你希望隱藏它或其任何子項，請使用它們的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -1196,8 +1196,8 @@ Sets the list of recent directories, which is shared by all **FileDialog** nodes
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_FileDialog_theme_color_file_disabled_color:
 
@@ -1205,7 +1205,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **file_disabled_color** = ``Color(1, 1, 1, 0.25)`` :ref:`🔗<class_FileDialog_theme_color_file_disabled_color>`
 
-The color tint for disabled files (when the **FileDialog** is used in open folder mode).
+禁用檔的色調（當 **FileDialog** 在打開資料夾模式下使用時）。
 
 .. rst-class:: classref-item-separator
 
@@ -1217,7 +1217,7 @@ The color tint for disabled files (when the **FileDialog** is used in open folde
 
 :ref:`Color<class_Color>` **file_icon_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_FileDialog_theme_color_file_icon_color>`
 
-The color modulation applied to the file icon.
+套用於檔圖示的顏色調變。
 
 .. rst-class:: classref-item-separator
 
@@ -1229,7 +1229,7 @@ The color modulation applied to the file icon.
 
 :ref:`Color<class_Color>` **folder_icon_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_FileDialog_theme_color_folder_icon_color>`
 
-The color modulation applied to the folder icon.
+套用於資料夾圖示的顏色調變。
 
 .. rst-class:: classref-item-separator
 
@@ -1253,7 +1253,7 @@ The size of thumbnail icons when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_const
 
 :ref:`Texture2D<class_Texture2D>` **back_folder** :ref:`🔗<class_FileDialog_theme_icon_back_folder>`
 
-Custom icon for the back arrow.
+向後箭頭的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1313,7 +1313,7 @@ Custom icon for button to move up a favorite entry.
 
 :ref:`Texture2D<class_Texture2D>` **file** :ref:`🔗<class_FileDialog_theme_icon_file>`
 
-Custom icon for files.
+檔的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1337,7 +1337,7 @@ Icon for files when in thumbnail mode.
 
 :ref:`Texture2D<class_Texture2D>` **folder** :ref:`🔗<class_FileDialog_theme_icon_folder>`
 
-Custom icon for folders.
+資料夾的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Icon for folders when in thumbnail mode.
 
 :ref:`Texture2D<class_Texture2D>` **forward_folder** :ref:`🔗<class_FileDialog_theme_icon_forward_folder>`
 
-Custom icon for the forward arrow.
+向前箭頭的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1385,7 +1385,7 @@ Icon for the button that enables list mode.
 
 :ref:`Texture2D<class_Texture2D>` **parent_folder** :ref:`🔗<class_FileDialog_theme_icon_parent_folder>`
 
-Custom icon for the parent folder arrow.
+父資料夾箭頭的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1397,7 @@ Custom icon for the parent folder arrow.
 
 :ref:`Texture2D<class_Texture2D>` **reload** :ref:`🔗<class_FileDialog_theme_icon_reload>`
 
-Custom icon for the reload button.
+重新載入按鈕的自訂圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -1445,14 +1445,14 @@ Custom icon for the toggle button for the filter for file names.
 
 :ref:`Texture2D<class_Texture2D>` **toggle_hidden** :ref:`🔗<class_FileDialog_theme_icon_toggle_hidden>`
 
-Custom icon for the toggle hidden button.
+切換隱藏按鈕的自訂圖示。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

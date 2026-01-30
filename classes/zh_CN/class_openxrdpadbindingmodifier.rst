@@ -5,25 +5,25 @@
 OpenXRDpadBindingModifier
 =========================
 
-**Inherits:** :ref:`OpenXRIPBindingModifier<class_OpenXRIPBindingModifier>` **<** :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`OpenXRIPBindingModifier<class_OpenXRIPBindingModifier>` **<** :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-The DPad binding modifier converts an axis input to a dpad output.
+十字键绑定修改器会将轴输入转换为十字键输出。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-The DPad binding modifier converts an axis input to a dpad output, emulating a DPad. New input paths for each dpad direction will be added to the interaction profile. When bound to actions the DPad emulation will be activated. You should **not** combine dpad inputs with normal inputs in the same action set for the same control, this will result in an error being returned when suggested bindings are submitted to OpenXR.
+十字键绑定修改器会将轴输入转换为十字键输出，模拟十字键。交互配置中会添加十字键每个方向对应的输入路径，与动作绑定后就会激活十字键模拟。\ **不应该**\ 在同一个控件的同一动作集中将十字键输入与普通输入结合使用，这会导致在绑定提交给 OpenXR 时返回错误。
 
-See `XR_EXT_dpad_binding <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_dpad_binding>`__ for in-depth details.
+详见 `XR_EXT_dpad_binding <https://registry.khronos.org/OpenXR/specs/1.1/html/xrspec.html#XR_EXT_dpad_binding>`__\ 。
 
-\ **Note:** If the DPad binding modifier extension is enabled, all dpad binding paths will be available in the action map. Adding the modifier to an interaction profile allows you to further customize the behavior.
+\ **注意：**\ 如果启用了十字键绑定修改器扩展，所有十字键绑定路径都将在动作映射中可用。将修改器添加到交互配置可以进一步自定义行为。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OpenXRDpadBindingModifier_property_action_set:
 
@@ -68,7 +68,7 @@ Property Descriptions
 - |void| **set_action_set**\ (\ value\: :ref:`OpenXRActionSet<class_OpenXRActionSet>`\ )
 - :ref:`OpenXRActionSet<class_OpenXRActionSet>` **get_action_set**\ (\ )
 
-Action set for which this dpad binding modifier is active.
+十字键绑定修改器激活的动作集。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Action set for which this dpad binding modifier is active.
 - |void| **set_center_region**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_center_region**\ (\ )
 
-Center region in which our center position of our dpad return ``true``.
+中心区域，十字键的中央位置在该区域中返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ Center region in which our center position of our dpad return ``true``.
 - |void| **set_input_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_path**\ (\ )
 
-Input path for this dpad binding modifier.
+十字键绑定修改器的输入路径。
 
 .. rst-class:: classref-item-separator
 
@@ -119,9 +119,9 @@ Input path for this dpad binding modifier.
 - |void| **set_is_sticky**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_is_sticky**\ (\ )
 
-If ``false``, when the joystick enters a new dpad zone this becomes ``true``.
+如果为 ``false``\ ，则摇杆进入新的十字键区域时变为 ``true``\ 。
 
-If ``true``, when the joystick remains in active dpad zone, this remains ``true`` even if we overlap with another zone.
+如果为 ``true``\ ，则摇杆保留在活动的十字键区域中时，即使与另一个区域重叠也仍然为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ If ``true``, when the joystick remains in active dpad zone, this remains ``true`
 - |void| **set_off_haptic**\ (\ value\: :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`\ )
 - :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **get_off_haptic**\ (\ )
 
-Haptic pulse to emit when the user releases the input.
+用户松开输入时发出的触觉脉冲。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Haptic pulse to emit when the user releases the input.
 - |void| **set_on_haptic**\ (\ value\: :ref:`OpenXRHapticBase<class_OpenXRHapticBase>`\ )
 - :ref:`OpenXRHapticBase<class_OpenXRHapticBase>` **get_on_haptic**\ (\ )
 
-Haptic pulse to emit when the user presses the input.
+用户按下输入时发出的触觉脉冲。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Haptic pulse to emit when the user presses the input.
 - |void| **set_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold**\ (\ )
 
-When our input value is equal or larger than this value, our dpad in that direction becomes ``true``. It stays ``true`` until it falls under the :ref:`threshold_released<class_OpenXRDpadBindingModifier_property_threshold_released>` value.
+输入值等于或大于该值时，十字键在该方向上变为 ``true``\ 。它会保持为 ``true``\ ，直到输入值低于 :ref:`threshold_released<class_OpenXRDpadBindingModifier_property_threshold_released>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ When our input value is equal or larger than this value, our dpad in that direct
 - |void| **set_threshold_released**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_threshold_released**\ (\ )
 
-When our input value falls below this, our output becomes ``false``.
+输入值低于此值时，输出变为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -206,14 +206,14 @@ When our input value falls below this, our output becomes ``false``.
 - |void| **set_wedge_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wedge_angle**\ (\ )
 
-The angle of each wedge that identifies the 4 directions of the emulated dpad.
+每个楔形的角度，用于标识模拟十字键的四个方向。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

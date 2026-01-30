@@ -5,28 +5,28 @@
 AnimatedSprite3D
 ================
 
-**Inherits:** :ref:`SpriteBase3D<class_SpriteBase3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`SpriteBase3D<class_SpriteBase3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-2D sprite node in 3D world, that can use multiple 2D textures for animation.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**AnimatedSprite3D** is similar to the :ref:`Sprite3D<class_Sprite3D>` node, except it carries multiple textures as animation :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>`. Animations are created using a :ref:`SpriteFrames<class_SpriteFrames>` resource, which allows you to import image files (or a folder containing said files) to provide the animation frames for the sprite. The :ref:`SpriteFrames<class_SpriteFrames>` resource can be configured in the editor via the SpriteFrames bottom panel.
+3D 世界中的 2D 精灵节点，可以使用多个 2D 纹理进行动画处理。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`2D Sprite animation (also applies to 3D) <../tutorials/2d/2d_sprite_animation>`
+**AnimatedSprite3D** 与 :ref:`Sprite3D<class_Sprite3D>` 节点类似，但是包含多张纹理，可用作动画 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>`\ 。动画使用 :ref:`SpriteFrames<class_SpriteFrames>` 资源创建，可以导入图像文件（或包含此类文件的文件夹）为该精灵提供动画帧。可以在编辑器的“动画帧”底部面板中配置 :ref:`SpriteFrames<class_SpriteFrames>` 资源。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`2D 精灵动画（也适用于 3D） <../tutorials/2d/2d_sprite_animation>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_AnimatedSprite3D_signal_animation_changed:
 
@@ -84,7 +84,7 @@ Signals
 
 **animation_changed**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_animation_changed>`
 
-Emitted when :ref:`animation<class_AnimatedSprite3D_property_animation>` changes.
+当 :ref:`animation<class_AnimatedSprite3D_property_animation>` 更改时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ Emitted when :ref:`animation<class_AnimatedSprite3D_property_animation>` changes
 
 **animation_finished**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_animation_finished>`
 
-Emitted when the animation reaches the end, or the start if it is played in reverse. When the animation finishes, it pauses the playback.
+当动画到达结尾时，或者如果反向播放则到达起点时发出。当动画结束时，它会暂停播放。
 
-\ **Note:** This signal is not emitted if an animation is looping.
+\ **注意：**\ 如果动画正在循环播放，则不会发出该信号。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Emitted when the animation reaches the end, or the start if it is played in reve
 
 **animation_looped**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_animation_looped>`
 
-Emitted when the animation loops.
+当动画循环播放时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Emitted when the animation loops.
 
 **frame_changed**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_frame_changed>`
 
-Emitted when :ref:`frame<class_AnimatedSprite3D_property_frame>` changes.
+:ref:`frame<class_AnimatedSprite3D_property_frame>` 更改时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Emitted when :ref:`frame<class_AnimatedSprite3D_property_frame>` changes.
 
 **sprite_frames_changed**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_signal_sprite_frames_changed>`
 
-Emitted when :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` changes.
+当 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` 更改时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -142,8 +142,8 @@ Emitted when :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>`
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimatedSprite3D_property_animation:
 
@@ -156,7 +156,7 @@ Property Descriptions
 - |void| **set_animation**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_animation**\ (\ )
 
-The current animation from the :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>` resource. If this value is changed, the :ref:`frame<class_AnimatedSprite3D_property_frame>` counter and the :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` are reset.
+当前动画，来自 :ref:`sprite_frames<class_AnimatedSprite3D_property_sprite_frames>`\ 。如果更改了这个值，会重置 :ref:`frame<class_AnimatedSprite3D_property_frame>` 计数和 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -173,7 +173,7 @@ The current animation from the :ref:`sprite_frames<class_AnimatedSprite3D_proper
 - |void| **set_autoplay**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_autoplay**\ (\ )
 
-The key of the animation to play when the scene loads.
+场景加载时要播放的动画名称。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ The key of the animation to play when the scene loads.
 - |void| **set_frame**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_frame**\ (\ )
 
-The displayed animation frame's index. Setting this property also resets :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`. If this is not desired, use :ref:`set_frame_and_progress()<class_AnimatedSprite3D_method_set_frame_and_progress>`.
+所显示动画帧的索引。设置这个属性会重置 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ 。如果不希望这样，请使用 :ref:`set_frame_and_progress()<class_AnimatedSprite3D_method_set_frame_and_progress>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ The displayed animation frame's index. Setting this property also resets :ref:`f
 - |void| **set_frame_progress**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_frame_progress**\ (\ )
 
-The progress value between ``0.0`` and ``1.0`` until the current frame transitions to the next frame. If the animation is playing backwards, the value transitions from ``1.0`` to ``0.0``.
+当前帧过渡到下一帧的进度值，在 ``0.0`` 和 ``1.0`` 之间。如果动画是倒放的，则该值是从 ``1.0`` 到 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -224,9 +224,9 @@ The progress value between ``0.0`` and ``1.0`` until the current frame transitio
 - |void| **set_speed_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_speed_scale**\ (\ )
 
-The speed scaling ratio. For example, if this value is ``1``, then the animation plays at normal speed. If it's ``0.5``, then it plays at half speed. If it's ``2``, then it plays at double speed.
+速度缩放比。例如，如果该值为 ``1``\ ，则动画以正常速度播放。如果它是 ``0.5``\ ，那么它会半速播放。如果是 ``2``\ ，则会以双倍速度播放。
 
-If set to a negative value, the animation is played in reverse. If set to ``0``, the animation will not advance.
+如果设置为负值，则动画反向播放。如果设置为\ ``0``\ ，则动画不会前进。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ If set to a negative value, the animation is played in reverse. If set to ``0``,
 - |void| **set_sprite_frames**\ (\ value\: :ref:`SpriteFrames<class_SpriteFrames>`\ )
 - :ref:`SpriteFrames<class_SpriteFrames>` **get_sprite_frames**\ (\ )
 
-The :ref:`SpriteFrames<class_SpriteFrames>` resource containing the animation(s). Allows you the option to load, edit, clear, make unique and save the states of the :ref:`SpriteFrames<class_SpriteFrames>` resource.
+包含动画的 :ref:`SpriteFrames<class_SpriteFrames>` 资源。可以对 :ref:`SpriteFrames<class_SpriteFrames>` 资源进行加载、编辑、清空、唯一化、保存状态等操作。
 
 .. rst-class:: classref-section-separator
 
@@ -251,8 +251,8 @@ The :ref:`SpriteFrames<class_SpriteFrames>` resource containing the animation(s)
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AnimatedSprite3D_method_get_playing_speed:
 
@@ -260,9 +260,9 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_playing_speed**\ (\ ) |const| :ref:`🔗<class_AnimatedSprite3D_method_get_playing_speed>`
 
-Returns the actual playing speed of current animation or ``0`` if not playing. This speed is the :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` property multiplied by ``custom_speed`` argument specified when calling the :ref:`play()<class_AnimatedSprite3D_method_play>` method.
+返回当前动画的实际播放速度，未播放时则为 ``0``\ 。这个速度是 :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` 属性乘以调用 :ref:`play()<class_AnimatedSprite3D_method_play>` 时指定的 ``custom_speed`` 参数。
 
-Returns a negative value if the current animation is playing backwards.
+如果当前动画是倒放的，则返回负值。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Returns a negative value if the current animation is playing backwards.
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_AnimatedSprite3D_method_is_playing>`
 
-Returns ``true`` if an animation is currently playing (even if :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` and/or ``custom_speed`` are ``0``).
+如果动画目前正在播放，则返回 ``true``\ （即便 :ref:`speed_scale<class_AnimatedSprite3D_property_speed_scale>` 和/或 ``custom_speed`` 为 ``0``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -286,9 +286,9 @@ Returns ``true`` if an animation is currently playing (even if :ref:`speed_scale
 
 |void| **pause**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_method_pause>`
 
-Pauses the currently playing animation. The :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` will be kept and calling :ref:`play()<class_AnimatedSprite3D_method_play>` or :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>` without arguments will resume the animation from the current playback position.
+暂停当前正在播放的动画。会保留 :ref:`frame<class_AnimatedSprite3D_property_frame>` 和 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ ，不带参数调用 :ref:`play()<class_AnimatedSprite3D_method_play>` 或 :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>` 会从当前播放位置恢复播放该动画。
 
-See also :ref:`stop()<class_AnimatedSprite3D_method_stop>`.
+另见 :ref:`stop()<class_AnimatedSprite3D_method_stop>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -300,9 +300,9 @@ See also :ref:`stop()<class_AnimatedSprite3D_method_stop>`.
 
 |void| **play**\ (\ name\: :ref:`StringName<class_StringName>` = &"", custom_speed\: :ref:`float<class_float>` = 1.0, from_end\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimatedSprite3D_method_play>`
 
-Plays the animation with key ``name``. If ``custom_speed`` is negative and ``from_end`` is ``true``, the animation will play backwards (which is equivalent to calling :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`).
+播放名称键为 ``name`` 的动画。如果 ``custom_speed`` 为负且 ``from_end`` 为 ``true``\ ，则该动画会倒放（等价于 :ref:`play_backwards()<class_AnimatedSprite3D_method_play_backwards>`\ ）。
 
-If this method is called with that same animation ``name``, or with no ``name`` parameter, the assigned animation will resume playing if it was paused.
+如果调用这个方法时使用了相同的动画名称 ``name`` 或者没有使用 ``name`` 参数，则会继续播放已暂停的分配动画。
 
 .. rst-class:: classref-item-separator
 
@@ -314,9 +314,9 @@ If this method is called with that same animation ``name``, or with no ``name`` 
 
 |void| **play_backwards**\ (\ name\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_AnimatedSprite3D_method_play_backwards>`
 
-Plays the animation with key ``name`` in reverse.
+倒放名称键为 ``name`` 的动画。
 
-This method is a shorthand for :ref:`play()<class_AnimatedSprite3D_method_play>` with ``custom_speed = -1.0`` and ``from_end = true``, so see its description for more information.
+这个方法是简写，等价于调用 :ref:`play()<class_AnimatedSprite3D_method_play>` 时使用 ``custom_speed = -1.0`` 和 ``from_end = true``\ ，所以更多信息请参阅其描述。
 
 .. rst-class:: classref-item-separator
 
@@ -328,9 +328,9 @@ This method is a shorthand for :ref:`play()<class_AnimatedSprite3D_method_play>`
 
 |void| **set_frame_and_progress**\ (\ frame\: :ref:`int<class_int>`, progress\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AnimatedSprite3D_method_set_frame_and_progress>`
 
-Sets :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` to the given values. Unlike setting :ref:`frame<class_AnimatedSprite3D_property_frame>`, this method does not reset the :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` to ``0.0`` implicitly.
+将帧设置为 :ref:`frame<class_AnimatedSprite3D_property_frame>`\ 、帧进度设置为 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`\ 。与直接设置 :ref:`frame<class_AnimatedSprite3D_property_frame>` 不同，此方法不会隐式地将 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 重置为 ``0.0``\ 。
 
-\ **Example:** Change the animation while keeping the same :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>`:
+\ **示例：**\ 在保持相同的 :ref:`frame<class_AnimatedSprite3D_property_frame>` 和 :ref:`frame_progress<class_AnimatedSprite3D_property_frame_progress>` 的情况下更改动画：
 
 
 .. tabs::
@@ -339,7 +339,7 @@ Sets :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progres
 
     var current_frame = animated_sprite.get_frame()
     var current_progress = animated_sprite.get_frame_progress()
-    animated_sprite.play("walk_another_skin")
+    animated_sprite.play("行走动画_换皮版")
     animated_sprite.set_frame_and_progress(current_frame, current_progress)
 
 
@@ -354,14 +354,14 @@ Sets :ref:`frame<class_AnimatedSprite3D_property_frame>` and :ref:`frame_progres
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AnimatedSprite3D_method_stop>`
 
-Stops the currently playing animation. The animation position is reset to ``0`` and the ``custom_speed`` is reset to ``1.0``. See also :ref:`pause()<class_AnimatedSprite3D_method_pause>`.
+停止当前正在播放的动画。会将动画的位置重置为 ``0``\ ，并将 ``custom_speed`` 重置为 ``1.0``\ 。另见 :ref:`pause()<class_AnimatedSprite3D_method_pause>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

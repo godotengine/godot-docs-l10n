@@ -5,23 +5,23 @@
 VisualShaderNodeSmoothStep
 ==========================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Calculates a SmoothStep function within the visual shader graph.
+在可视化着色器图中计算 SmoothStep 函数。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Translates to ``smoothstep(edge0, edge1, x)`` in the shader language.
+翻译为着色器语言中的 ``smoothstep(edge0, edge1, x)``\ 。
 
-Returns ``0.0`` if ``x`` is smaller than ``edge0`` and ``1.0`` if ``x`` is larger than ``edge1``. Otherwise, the return value is interpolated between ``0.0`` and ``1.0`` using Hermite polynomials.
+如果 ``x`` 小于 ``edge0`` 则返回 ``0.0``\ ；如果 ``x`` 大于 ``edge1`` 则返回 ``1.0``\ 。否则，返回值使用 Hermite 多项式在 ``0.0`` 和 ``1.0`` 之间进行插值。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisualShaderNodeSmoothStep_OpType:
 
@@ -51,7 +51,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeSmoothStep_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_SCALAR** = ``0``
 
-A floating-point scalar type.
+浮点数标量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_2D:
 
@@ -59,7 +59,7 @@ A floating-point scalar type.
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_2D** = ``1``
 
-A 2D vector type.
+2D 向量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_2D_SCALAR:
 
@@ -67,7 +67,7 @@ A 2D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_2D_SCALAR** = ``2``
 
-The ``x`` port uses a 2D vector type. The first two ports use a floating-point scalar type.
+``x`` 端口使用 2D 向量类型。前两个端口使用浮点数标量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_3D:
 
@@ -75,7 +75,7 @@ The ``x`` port uses a 2D vector type. The first two ports use a floating-point s
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_3D** = ``3``
 
-A 3D vector type.
+3D向量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_3D_SCALAR:
 
@@ -83,7 +83,7 @@ A 3D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_3D_SCALAR** = ``4``
 
-The ``x`` port uses a 3D vector type. The first two ports use a floating-point scalar type.
+``x`` 端口使用 3D 向量类型。前两个端口使用浮点数标量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_4D:
 
@@ -91,7 +91,7 @@ The ``x`` port uses a 3D vector type. The first two ports use a floating-point s
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_4D** = ``5``
 
-A 4D vector type.
+4D 向量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_VECTOR_4D_SCALAR:
 
@@ -99,7 +99,7 @@ A 4D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_VECTOR_4D_SCALAR** = ``6``
 
-The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scalar type.
+``a`` 和 ``b`` 端口使用 4D 向量类型。\ ``weight`` 端口使用标量类型。
 
 .. _class_VisualShaderNodeSmoothStep_constant_OP_TYPE_MAX:
 
@@ -107,7 +107,7 @@ The ``a`` and ``b`` ports use a 4D vector type. The ``weight`` port uses a scala
 
 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **OP_TYPE_MAX** = ``7``
 
-Represents the size of the :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` enum.
+代表 :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -115,8 +115,8 @@ Represents the size of the :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>`
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeSmoothStep_property_op_type:
 
@@ -129,14 +129,14 @@ Property Descriptions
 - |void| **set_op_type**\ (\ value\: :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>`\ )
 - :ref:`OpType<enum_VisualShaderNodeSmoothStep_OpType>` **get_op_type**\ (\ )
 
-A type of operands and returned value.
+操作数和返回值的类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

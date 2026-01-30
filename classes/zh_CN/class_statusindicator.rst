@@ -8,16 +8,16 @@
 StatusIndicator
 ===============
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Application status indicator (aka notification area icon).
+应用程序状态指示器（即通知区域图标）。
 
-\ **Note:** Status indicator is implemented on macOS and Windows.
+\ **注意：**\ 状态指示器在 macOS 和 Windows 上实现。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_StatusIndicator_signal_pressed:
 
@@ -59,7 +59,7 @@ Signals
 
 **pressed**\ (\ mouse_button\: :ref:`int<class_int>`, mouse_position\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_StatusIndicator_signal_pressed>`
 
-Emitted when the status indicator is pressed.
+按下状态指示器时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -67,8 +67,8 @@ Emitted when the status indicator is pressed.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_StatusIndicator_property_icon:
 
@@ -81,7 +81,7 @@ Property Descriptions
 - |void| **set_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_icon**\ (\ )
 
-Status indicator icon.
+状态指示器图标。
 
 .. rst-class:: classref-item-separator
 
@@ -98,9 +98,9 @@ Status indicator icon.
 - |void| **set_menu**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_menu**\ (\ )
 
-Status indicator native popup menu. If this is set, the :ref:`pressed<class_StatusIndicator_signal_pressed>` signal is not emitted.
+状态指示器原生弹出菜单。设置后不会发出 :ref:`pressed<class_StatusIndicator_signal_pressed>` 信号。
 
-\ **Note:** Native popup is only supported if :ref:`NativeMenu<class_NativeMenu>` supports :ref:`NativeMenu.FEATURE_POPUP_MENU<class_NativeMenu_constant_FEATURE_POPUP_MENU>` feature.
+\ **注意：**\ 只有在 :ref:`NativeMenu<class_NativeMenu>` 支持 :ref:`NativeMenu.FEATURE_POPUP_MENU<class_NativeMenu_constant_FEATURE_POPUP_MENU>` 特性时才支持原生弹出菜单。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ Status indicator native popup menu. If this is set, the :ref:`pressed<class_Stat
 - |void| **set_tooltip**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_tooltip**\ (\ )
 
-Status indicator tooltip.
+状态指示器工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ Status indicator tooltip.
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-If ``true``, the status indicator is visible.
+如果为 ``true``\ ，则状态指示器可见。
 
 .. rst-class:: classref-section-separator
 
@@ -142,8 +142,8 @@ If ``true``, the status indicator is visible.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_StatusIndicator_method_get_rect:
 
@@ -151,14 +151,14 @@ Method Descriptions
 
 :ref:`Rect2<class_Rect2>` **get_rect**\ (\ ) |const| :ref:`🔗<class_StatusIndicator_method_get_rect>`
 
-Returns the status indicator rectangle in screen coordinates. If this status indicator is not visible, returns an empty :ref:`Rect2<class_Rect2>`.
+返回状态指示器的矩形，使用屏幕坐标。如果状态指示器不可见，则返回空的 :ref:`Rect2<class_Rect2>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,21 +5,21 @@
 AudioStreamPlaybackInteractive
 ==============================
 
-**Inherits:** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Playback component of :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`.
+:ref:`AudioStreamInteractive<class_AudioStreamInteractive>` 的播放元件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Playback component of :ref:`AudioStreamInteractive<class_AudioStreamInteractive>`. Contains functions to change the currently played clip.
+:ref:`AudioStreamInteractive<class_AudioStreamInteractive>` 的播放元件，包含用於切換當前播放片段的函式。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamPlaybackInteractive_method_get_current_clip_index:
 
@@ -47,9 +47,9 @@ Method Descriptions
 
 :ref:`int<class_int>` **get_current_clip_index**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlaybackInteractive_method_get_current_clip_index>`
 
-Return the index of the currently playing clip. You can use this to get the name of the currently playing clip with :ref:`AudioStreamInteractive.get_clip_name()<class_AudioStreamInteractive_method_get_clip_name>`.
+返回目前正在播放的片段索引。可搭配 :ref:`AudioStreamInteractive.get_clip_name()<class_AudioStreamInteractive_method_get_clip_name>` 取得當前片段名稱。
 
-\ **Example:** Get the currently playing clip name from inside an :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` node.
+\ **範例：** 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 節點中取得目前播放片段的名稱。
 
 
 .. tabs::
@@ -70,7 +70,7 @@ Return the index of the currently playing clip. You can use this to get the name
 
 |void| **switch_to_clip**\ (\ clip_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamPlaybackInteractive_method_switch_to_clip>`
 
-Switch to a clip (by index).
+切換至指定索引的片段。
 
 .. rst-class:: classref-item-separator
 
@@ -82,14 +82,14 @@ Switch to a clip (by index).
 
 |void| **switch_to_clip_by_name**\ (\ clip_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AudioStreamPlaybackInteractive_method_switch_to_clip_by_name>`
 
-Switch to a clip (by name).
+切換至指定名稱的片段。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

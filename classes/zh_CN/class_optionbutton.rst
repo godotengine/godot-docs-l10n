@@ -8,27 +8,27 @@
 OptionButton
 ============
 
-**Inherits:** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A button that brings up a dropdown with selectable options when pressed.
+按下时弹出下拉菜单的按钮。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**OptionButton** is a type of button that brings up a dropdown with selectable items when pressed. The item selected becomes the "current" item and is displayed as the button text.
+**OptionButton** 是一种按下时弹出下拉菜单的按钮。选中的菜单项会成为“当前”菜单项，作为按钮文本显示。
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另见 :ref:`BaseButton<class_BaseButton>`\ ，其中包含与此节点相关联的通用属性和方法。
 
-\ **Note:** The IDs used for items are limited to signed 32-bit integers, not the full 64 bits of :ref:`int<class_int>`. These have a range of ``-2^31`` to ``2^31 - 1``, that is, ``-2147483648`` to ``2147483647``.
+\ **注意：**\ 菜单项的 ID 限制为带符号 32 位整数，并不是完整的 64 位 :ref:`int<class_int>`\ 。取值范围为 ``-2^31`` 到 ``2^31 - 1``\ ，即 ``-2147483648`` 到 ``2147483647``\ 。
 
-\ **Note:** The :ref:`Button.text<class_Button_property_text>` and :ref:`Button.icon<class_Button_property_icon>` properties are set automatically based on the selected item. They shouldn't be changed manually.
+\ **注意：**\ :ref:`Button.text<class_Button_property_text>` 和 :ref:`Button.icon<class_Button_property_icon>` 属性会根据当前所选菜单项自动设置。不应该手动更改。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -119,8 +119,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -139,8 +139,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_OptionButton_signal_item_focused:
 
@@ -148,7 +148,7 @@ Signals
 
 **item_focused**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_signal_item_focused>`
 
-Emitted when the user navigates to an item using the :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` or :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` input actions. The index of the item selected is passed as argument.
+当用户使用 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 或 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 输入动作导航到某个项目时发出。所选项目的索引将作为参数传递。
 
 .. rst-class:: classref-item-separator
 
@@ -160,9 +160,9 @@ Emitted when the user navigates to an item using the :ref:`ProjectSettings.input
 
 **item_selected**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_signal_item_selected>`
 
-Emitted when the current item has been changed by the user. The index of the item selected is passed as argument.
+当用户更改当前项时触发。所选项目的索引作为参数传递。
 
-\ :ref:`allow_reselect<class_OptionButton_property_allow_reselect>` must be enabled to reselect an item.
+必须启用 :ref:`allow_reselect<class_OptionButton_property_allow_reselect>` 才能重新选中项目。
 
 .. rst-class:: classref-section-separator
 
@@ -170,8 +170,8 @@ Emitted when the current item has been changed by the user. The index of the ite
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OptionButton_property_allow_reselect:
 
@@ -184,7 +184,7 @@ Property Descriptions
 - |void| **set_allow_reselect**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_allow_reselect**\ (\ )
 
-If ``true``, the currently selected item can be selected again.
+如果为 ``true``\ ，则可以再次选择当前选中的项目。
 
 .. rst-class:: classref-item-separator
 
@@ -201,9 +201,9 @@ If ``true``, the currently selected item can be selected again.
 - |void| **set_fit_to_longest_item**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_to_longest_item**\ (\ )
 
-If ``true``, minimum size will be determined by the longest item's text, instead of the currently selected one's.
+如果为 ``true``\ ，最小尺寸将由最长项目的文本确定，而不是当前选定的文本。
 
-\ **Note:** For performance reasons, the minimum size doesn't update immediately when adding, removing or modifying items.
+\ **注意：**\ 出于性能原因，在添加、移除或修改项目时，最小尺寸不会立即更新。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ If ``true``, minimum size will be determined by the longest item's text, instead
 - |void| **set_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_count**\ (\ )
 
-The number of items to select from.
+可供挑选的菜单项的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ The number of items to select from.
 
 - :ref:`int<class_int>` **get_selected**\ (\ )
 
-The index of the currently selected item, or ``-1`` if no item is selected.
+当前选定项的索引，如果没有选定项，则为\ ``-1``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -244,8 +244,8 @@ The index of the currently selected item, or ``-1`` if no item is selected.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OptionButton_method_add_icon_item:
 
@@ -253,9 +253,9 @@ Method Descriptions
 
 |void| **add_icon_item**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_OptionButton_method_add_icon_item>`
 
-Adds an item, with a ``texture`` icon, text ``label`` and (optionally) ``id``. If no ``id`` is passed, the item index will be used as the item's ID. New items are appended at the end.
+添加一个菜单项，图标为 ``texture``\ ，文本为 ``label``\ ，（可选）ID 为 ``id``\ 。如果没有传入 ``id``\ ，则会将菜单项的索引用作 ID。新菜单项会追加到末尾。
 
-\ **Note:** The item will be selected if there are no other items.
+\ **注意：**\ 没有其他菜单项时会选中该菜单项。
 
 .. rst-class:: classref-item-separator
 
@@ -267,9 +267,9 @@ Adds an item, with a ``texture`` icon, text ``label`` and (optionally) ``id``. I
 
 |void| **add_item**\ (\ label\: :ref:`String<class_String>`, id\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_OptionButton_method_add_item>`
 
-Adds an item, with text ``label`` and (optionally) ``id``. If no ``id`` is passed, the item index will be used as the item's ID. New items are appended at the end.
+添加一个菜单项，文本为 ``label``\ ，（可选）ID 为 ``id``\ 。如果没有传入 ``id``\ ，则会将菜单项的索引用作 ID。新菜单项会追加到末尾。
 
-\ **Note:** The item will be selected if there are no other items.
+\ **注意：**\ 没有其他菜单项时会选中该菜单项。
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Adds an item, with text ``label`` and (optionally) ``id``. If no ``id`` is passe
 
 |void| **add_separator**\ (\ text\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_OptionButton_method_add_separator>`
 
-Adds a separator to the list of items. Separators help to group items, and can optionally be given a ``text`` header. A separator also gets an index assigned, and is appended at the end of the item list.
+在菜单项列表中添加分隔符。分隔符可以用来对菜单项进行分组，还可以给出标题文本 ``text``\ 。分隔符也设有索引，会追加到菜单项列表的末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Adds a separator to the list of items. Separators help to group items, and can o
 
 |void| **clear**\ (\ ) :ref:`🔗<class_OptionButton_method_clear>`
 
-Clears all the items in the **OptionButton**.
+清除\ **OptionButton**\ 中的所有项目。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Clears all the items in the **OptionButton**.
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_auto_translate_mode>`
 
-Returns the auto translate mode of the item at index ``idx``.
+返回索引为 ``idx`` 的菜单项的自动翻译模式。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Returns the auto translate mode of the item at index ``idx``.
 
 :ref:`Texture2D<class_Texture2D>` **get_item_icon**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_icon>`
 
-Returns the icon of the item at index ``idx``.
+返回索引为 ``idx`` 的菜单项的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Returns the icon of the item at index ``idx``.
 
 :ref:`int<class_int>` **get_item_id**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_id>`
 
-Returns the ID of the item at index ``idx``.
+返回索引为 ``idx`` 的菜单项的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Returns the ID of the item at index ``idx``.
 
 :ref:`int<class_int>` **get_item_index**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_index>`
 
-Returns the index of the item with the given ``id``.
+返回 ID 为 ``id`` 的菜单项的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Returns the index of the item with the given ``id``.
 
 :ref:`Variant<class_Variant>` **get_item_metadata**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_metadata>`
 
-Retrieves the metadata of an item. Metadata may be any type and can be used to store extra information about an item, such as an external string ID.
+检索项的元数据。元数据可以是任何类型，并可用于存储关于项的额外信息，如外部字符串ID。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Retrieves the metadata of an item. Metadata may be any type and can be used to s
 
 :ref:`String<class_String>` **get_item_text**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_text>`
 
-Returns the text of the item at index ``idx``.
+返回索引为 ``idx`` 的菜单项的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Returns the text of the item at index ``idx``.
 
 :ref:`String<class_String>` **get_item_tooltip**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_tooltip>`
 
-Returns the tooltip of the item at index ``idx``.
+返回索引为 ``idx`` 的菜单项的工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -389,9 +389,9 @@ Returns the tooltip of the item at index ``idx``.
 
 :ref:`PopupMenu<class_PopupMenu>` **get_popup**\ (\ ) |const| :ref:`🔗<class_OptionButton_method_get_popup>`
 
-Returns the :ref:`PopupMenu<class_PopupMenu>` contained in this button.
+返回这个按钮中包含的 :ref:`PopupMenu<class_PopupMenu>`\ 。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`Window.visible<class_Window_property_visible>` property.
+\ **警告：**\ 这是一个必需的内部节点，移除和释放它可能会导致崩溃。如果你想隐藏它或它的任何子节点，请使用其 :ref:`Window.visible<class_Window_property_visible>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -403,9 +403,9 @@ Returns the :ref:`PopupMenu<class_PopupMenu>` contained in this button.
 
 :ref:`int<class_int>` **get_selectable_item**\ (\ from_last\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_OptionButton_method_get_selectable_item>`
 
-Returns the index of the first item which is not disabled, or marked as a separator. If ``from_last`` is ``true``, the items will be searched in reverse order.
+返回第一个处于非禁用状态或被标记为分隔符的菜单项的索引。如果 ``from_last`` 为 ``true``\ ，则会逆序搜索菜单项。
 
-Returns ``-1`` if no item is found.
+如果没有找到则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +417,7 @@ Returns ``-1`` if no item is found.
 
 :ref:`int<class_int>` **get_selected_id**\ (\ ) |const| :ref:`🔗<class_OptionButton_method_get_selected_id>`
 
-Returns the ID of the selected item, or ``-1`` if no item is selected.
+返回所选项目的 ID，如果没有选择项目，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Returns the ID of the selected item, or ``-1`` if no item is selected.
 
 :ref:`Variant<class_Variant>` **get_selected_metadata**\ (\ ) |const| :ref:`🔗<class_OptionButton_method_get_selected_metadata>`
 
-Gets the metadata of the selected item. Metadata for items can be set using :ref:`set_item_metadata()<class_OptionButton_method_set_item_metadata>`.
+获取选定项的元数据。可以使用 :ref:`set_item_metadata()<class_OptionButton_method_set_item_metadata>` 设置项的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Gets the metadata of the selected item. Metadata for items can be set using :ref
 
 :ref:`bool<class_bool>` **has_selectable_items**\ (\ ) |const| :ref:`🔗<class_OptionButton_method_has_selectable_items>`
 
-Returns ``true`` if this button contains at least one item which is not disabled, or marked as a separator.
+如果这个按钮至少包含一个未禁用或被标记为分隔符的菜单项，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ Returns ``true`` if this button contains at least one item which is not disabled
 
 :ref:`bool<class_bool>` **is_item_disabled**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_is_item_disabled>`
 
-Returns ``true`` if the item at index ``idx`` is disabled.
+如果索引为 ``idx`` 的菜单项被禁用，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ Returns ``true`` if the item at index ``idx`` is disabled.
 
 :ref:`bool<class_bool>` **is_item_separator**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_is_item_separator>`
 
-Returns ``true`` if the item at index ``idx`` is marked as a separator.
+如果索引为 ``idx`` 的菜单项被标记为分隔符，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Returns ``true`` if the item at index ``idx`` is marked as a separator.
 
 |void| **remove_item**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_method_remove_item>`
 
-Removes the item at index ``idx``.
+移除索引为 ``idx`` 的菜单项。
 
 .. rst-class:: classref-item-separator
 
@@ -489,9 +489,9 @@ Removes the item at index ``idx``.
 
 |void| **select**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_method_select>`
 
-Selects an item by index and makes it the current item. This will work even if the item is disabled.
+按索引选择项并使其为当前选中项。即使该项是禁用的，这也将起作用。
 
-Passing ``-1`` as the index deselects any currently selected item.
+将 ``-1`` 作为索引传入会取消选中任何当前选中的项目。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Passing ``-1`` as the index deselects any currently selected item.
 
 |void| **set_disable_shortcuts**\ (\ disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OptionButton_method_set_disable_shortcuts>`
 
-If ``true``, shortcuts are disabled and cannot be used to trigger the button.
+如果为 ``true``\ ，快捷方式将被禁用，无法用于触发按钮。
 
 .. rst-class:: classref-item-separator
 
@@ -515,9 +515,9 @@ If ``true``, shortcuts are disabled and cannot be used to trigger the button.
 
 |void| **set_item_auto_translate_mode**\ (\ idx\: :ref:`int<class_int>`, mode\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ ) :ref:`🔗<class_OptionButton_method_set_item_auto_translate_mode>`
 
-Sets the auto translate mode of the item at index ``idx``.
+设置索引为 ``idx`` 的菜单项的自动翻译模式。
 
-Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` by default, which uses the same auto translate mode as the **OptionButton** itself.
+菜单项使用 :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`\ ，表示使用与 **OptionButton** 相同的自动翻译模式。
 
 .. rst-class:: classref-item-separator
 
@@ -529,9 +529,9 @@ Items use :ref:`Node.AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSL
 
 |void| **set_item_disabled**\ (\ idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OptionButton_method_set_item_disabled>`
 
-Sets whether the item at index ``idx`` is disabled.
+设置是否禁用索引为 ``idx`` 的菜单项。
 
-Disabled items are drawn differently in the dropdown and are not selectable by the user. If the current selected item is set as disabled, it will remain selected.
+处于禁用状态的菜单项在下拉列表中绘制的方式不同，用户无法选中这个菜单项。如果将当前选中的菜单项设为了禁用，则仍然会处于选中状态。
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ Disabled items are drawn differently in the dropdown and are not selectable by t
 
 |void| **set_item_icon**\ (\ idx\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_OptionButton_method_set_item_icon>`
 
-Sets the icon of the item at index ``idx``.
+设置索引为 ``idx`` 的菜单项的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ Sets the icon of the item at index ``idx``.
 
 |void| **set_item_id**\ (\ idx\: :ref:`int<class_int>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OptionButton_method_set_item_id>`
 
-Sets the ID of the item at index ``idx``.
+设置索引为 ``idx`` 的菜单项的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -567,7 +567,7 @@ Sets the ID of the item at index ``idx``.
 
 |void| **set_item_metadata**\ (\ idx\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_OptionButton_method_set_item_metadata>`
 
-Sets the metadata of an item. Metadata may be of any type and can be used to store extra information about an item, such as an external string ID.
+设置项的元数据。元数据可以是任何类型，可以用来存储关于项目的额外信息，比如外部字符串ID。
 
 .. rst-class:: classref-item-separator
 
@@ -579,7 +579,7 @@ Sets the metadata of an item. Metadata may be of any type and can be used to sto
 
 |void| **set_item_text**\ (\ idx\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OptionButton_method_set_item_text>`
 
-Sets the text of the item at index ``idx``.
+设置索引为 ``idx`` 的菜单项的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -591,7 +591,7 @@ Sets the text of the item at index ``idx``.
 
 |void| **set_item_tooltip**\ (\ idx\: :ref:`int<class_int>`, tooltip\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OptionButton_method_set_item_tooltip>`
 
-Sets the tooltip of the item at index ``idx``.
+设置索引为 ``idx`` 的菜单项的工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ Sets the tooltip of the item at index ``idx``.
 
 |void| **show_popup**\ (\ ) :ref:`🔗<class_OptionButton_method_show_popup>`
 
-Adjusts popup position and sizing for the **OptionButton**, then shows the :ref:`PopupMenu<class_PopupMenu>`. Prefer this over using ``get_popup().popup()``.
+调整 **OptionButton** 弹出项的位置和大小，然后显示 :ref:`PopupMenu<class_PopupMenu>`\ 。请优先使用这个方法，而不是 ``get_popup().popup()``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -611,8 +611,8 @@ Adjusts popup position and sizing for the **OptionButton**, then shows the :ref:
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_OptionButton_theme_constant_arrow_margin:
 
@@ -620,7 +620,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **arrow_margin** = ``4`` :ref:`🔗<class_OptionButton_theme_constant_arrow_margin>`
 
-The horizontal space between the arrow icon and the right edge of the button.
+箭头图标和按钮的右边缘之间的水平空间。
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ The horizontal space between the arrow icon and the right edge of the button.
 
 :ref:`int<class_int>` **modulate_arrow** = ``0`` :ref:`🔗<class_OptionButton_theme_constant_modulate_arrow>`
 
-If different than ``0``, the arrow icon will be modulated to the font color.
+如果不为 ``0``\ ，箭头图标会与字体颜色进行调制。
 
 .. rst-class:: classref-item-separator
 
@@ -644,14 +644,14 @@ If different than ``0``, the arrow icon will be modulated to the font color.
 
 :ref:`Texture2D<class_Texture2D>` **arrow** :ref:`🔗<class_OptionButton_theme_icon_arrow>`
 
-The arrow icon to be drawn on the right end of the button.
+要绘制在按钮右侧的箭头图标。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,23 +5,23 @@
 PhysicsDirectBodyState2DExtension
 =================================
 
-**Inherits:** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` **<** :ref:`Object<class_Object>`
 
-Provides virtual methods that can be overridden to create custom :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` implementations.
+提供能够覆盖的虚方法，用于创建 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` 的自定义实现。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class extends :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` by providing additional virtual methods that can be overridden. When these methods are overridden, they will be called instead of the internal methods of the physics server.
+这个类扩展自 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`\ ，额外提供了可覆盖的虚方法。调用时会使用这些覆盖后的方法代替物理服务器中的内部方法。
 
-Intended for use with GDExtension to create custom implementations of :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`.
+旨在用于 GDExtension，用于创建 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` 的自定义实现。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -130,8 +130,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsDirectBodyState2DExtension_private_method__add_constant_central_force:
 
@@ -139,7 +139,7 @@ Method Descriptions
 
 |void| **_add_constant_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__add_constant_central_force>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>`.
+:ref:`PhysicsDirectBodyState2D.add_constant_central_force()<class_PhysicsDirectBodyState2D_method_add_constant_central_force>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.add_constant_central_force
 
 |void| **_add_constant_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__add_constant_force>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>`.
+:ref:`PhysicsDirectBodyState2D.add_constant_force()<class_PhysicsDirectBodyState2D_method_add_constant_force>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.add_constant_force()<class
 
 |void| **_add_constant_torque**\ (\ torque\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__add_constant_torque>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>`.
+:ref:`PhysicsDirectBodyState2D.add_constant_torque()<class_PhysicsDirectBodyState2D_method_add_constant_torque>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.add_constant_torque()<clas
 
 |void| **_apply_central_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__apply_central_force>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.apply_central_force()<class_PhysicsDirectBodyState2D_method_apply_central_force>`.
+:ref:`PhysicsDirectBodyState2D.apply_central_force()<class_PhysicsDirectBodyState2D_method_apply_central_force>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.apply_central_force()<clas
 
 |void| **_apply_central_impulse**\ (\ impulse\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__apply_central_impulse>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.apply_central_impulse()<class_PhysicsDirectBodyState2D_method_apply_central_impulse>`.
+:ref:`PhysicsDirectBodyState2D.apply_central_impulse()<class_PhysicsDirectBodyState2D_method_apply_central_impulse>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.apply_central_impulse()<cl
 
 |void| **_apply_force**\ (\ force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__apply_force>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.apply_force()<class_PhysicsDirectBodyState2D_method_apply_force>`.
+:ref:`PhysicsDirectBodyState2D.apply_force()<class_PhysicsDirectBodyState2D_method_apply_force>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.apply_force()<class_Physic
 
 |void| **_apply_impulse**\ (\ impulse\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__apply_impulse>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.apply_impulse()<class_PhysicsDirectBodyState2D_method_apply_impulse>`.
+:ref:`PhysicsDirectBodyState2D.apply_impulse()<class_PhysicsDirectBodyState2D_method_apply_impulse>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.apply_impulse()<class_Phys
 
 |void| **_apply_torque**\ (\ torque\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__apply_torque>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.apply_torque()<class_PhysicsDirectBodyState2D_method_apply_torque>`.
+:ref:`PhysicsDirectBodyState2D.apply_torque()<class_PhysicsDirectBodyState2D_method_apply_torque>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.apply_torque()<class_Physi
 
 |void| **_apply_torque_impulse**\ (\ impulse\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__apply_torque_impulse>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.apply_torque_impulse()<class_PhysicsDirectBodyState2D_method_apply_torque_impulse>`.
+:ref:`PhysicsDirectBodyState2D.apply_torque_impulse()<class_PhysicsDirectBodyState2D_method_apply_torque_impulse>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.apply_torque_impulse()<cla
 
 :ref:`float<class_float>` **_get_angular_velocity**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_angular_velocity>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.angular_velocity<class_PhysicsDirectBodyState2D_property_angular_velocity>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.angular_velocity<class_PhysicsDirectBodyState2D_property_angular_velocity>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.angular_vel
 
 :ref:`Vector2<class_Vector2>` **_get_center_of_mass**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_center_of_mass>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.center_of_mass<class_PhysicsDirectBodyState2D_property_center_of_mass>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.center_of_mass<class_PhysicsDirectBodyState2D_property_center_of_mass>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.center_of_m
 
 :ref:`Vector2<class_Vector2>` **_get_center_of_mass_local**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_center_of_mass_local>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.center_of_mass_local<class_PhysicsDirectBodyState2D_property_center_of_mass_local>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.center_of_mass_local<class_PhysicsDirectBodyState2D_property_center_of_mass_local>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.center_of_m
 
 :ref:`Vector2<class_Vector2>` **_get_constant_force**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_constant_force>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_constant_force()<class_PhysicsDirectBodyState2D_method_get_constant_force>`.
+:ref:`PhysicsDirectBodyState2D.get_constant_force()<class_PhysicsDirectBodyState2D_method_get_constant_force>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -323,7 +323,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_constant_force()<class
 
 :ref:`float<class_float>` **_get_constant_torque**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_constant_torque>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_constant_torque()<class_PhysicsDirectBodyState2D_method_get_constant_torque>`.
+:ref:`PhysicsDirectBodyState2D.get_constant_torque()<class_PhysicsDirectBodyState2D_method_get_constant_torque>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_constant_torque()<clas
 
 :ref:`RID<class_RID>` **_get_contact_collider**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_collider>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider()<class_PhysicsDirectBodyState2D_method_get_contact_collider>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_collider()<class_PhysicsDirectBodyState2D_method_get_contact_collider>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider()<cla
 
 :ref:`int<class_int>` **_get_contact_collider_id**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_collider_id>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_id()<class_PhysicsDirectBodyState2D_method_get_contact_collider_id>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_collider_id()<class_PhysicsDirectBodyState2D_method_get_contact_collider_id>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_id()<
 
 :ref:`Object<class_Object>` **_get_contact_collider_object**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_collider_object>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_object()<class_PhysicsDirectBodyState2D_method_get_contact_collider_object>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_collider_object()<class_PhysicsDirectBodyState2D_method_get_contact_collider_object>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_objec
 
 :ref:`Vector2<class_Vector2>` **_get_contact_collider_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_collider_position>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_position()<class_PhysicsDirectBodyState2D_method_get_contact_collider_position>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_collider_position()<class_PhysicsDirectBodyState2D_method_get_contact_collider_position>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_posit
 
 :ref:`int<class_int>` **_get_contact_collider_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_collider_shape>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_shape()<class_PhysicsDirectBodyState2D_method_get_contact_collider_shape>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_collider_shape()<class_PhysicsDirectBodyState2D_method_get_contact_collider_shape>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_shape
 
 :ref:`Vector2<class_Vector2>` **_get_contact_collider_velocity_at_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_collider_velocity_at_position>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_velocity_at_position()<class_PhysicsDirectBodyState2D_method_get_contact_collider_velocity_at_position>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_collider_velocity_at_position()<class_PhysicsDirectBodyState2D_method_get_contact_collider_velocity_at_position>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_collider_veloc
 
 :ref:`int<class_int>` **_get_contact_count**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_count>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_count()<class_PhysicsDirectBodyState2D_method_get_contact_count>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_count()<class_PhysicsDirectBodyState2D_method_get_contact_count>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_count()<class_
 
 :ref:`Vector2<class_Vector2>` **_get_contact_impulse**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_impulse>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_impulse()<class_PhysicsDirectBodyState2D_method_get_contact_impulse>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_impulse()<class_PhysicsDirectBodyState2D_method_get_contact_impulse>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_impulse()<clas
 
 :ref:`Vector2<class_Vector2>` **_get_contact_local_normal**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_local_normal>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_normal()<class_PhysicsDirectBodyState2D_method_get_contact_local_normal>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_local_normal()<class_PhysicsDirectBodyState2D_method_get_contact_local_normal>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_normal()
 
 :ref:`Vector2<class_Vector2>` **_get_contact_local_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_local_position>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_position()<class_PhysicsDirectBodyState2D_method_get_contact_local_position>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_local_position()<class_PhysicsDirectBodyState2D_method_get_contact_local_position>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_position
 
 :ref:`int<class_int>` **_get_contact_local_shape**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_local_shape>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_shape()<class_PhysicsDirectBodyState2D_method_get_contact_local_shape>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_local_shape()<class_PhysicsDirectBodyState2D_method_get_contact_local_shape>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_shape()<
 
 :ref:`Vector2<class_Vector2>` **_get_contact_local_velocity_at_position**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_contact_local_velocity_at_position>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_velocity_at_position()<class_PhysicsDirectBodyState2D_method_get_contact_local_velocity_at_position>`.
+:ref:`PhysicsDirectBodyState2D.get_contact_local_velocity_at_position()<class_PhysicsDirectBodyState2D_method_get_contact_local_velocity_at_position>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_contact_local_velocity
 
 :ref:`float<class_float>` **_get_inverse_inertia**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_inverse_inertia>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.inverse_inertia<class_PhysicsDirectBodyState2D_property_inverse_inertia>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.inverse_ine
 
 :ref:`float<class_float>` **_get_inverse_mass**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_inverse_mass>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.inverse_mass<class_PhysicsDirectBodyState2D_property_inverse_mass>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.inverse_mass<class_PhysicsDirectBodyState2D_property_inverse_mass>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.inverse_mas
 
 :ref:`Vector2<class_Vector2>` **_get_linear_velocity**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_linear_velocity>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.linear_velocity<class_PhysicsDirectBodyState2D_property_linear_velocity>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.linear_velocity<class_PhysicsDirectBodyState2D_property_linear_velocity>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.linear_velo
 
 :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>` **_get_space_state**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_space_state>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_space_state()<class_PhysicsDirectBodyState2D_method_get_space_state>`.
+:ref:`PhysicsDirectBodyState2D.get_space_state()<class_PhysicsDirectBodyState2D_method_get_space_state>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_space_state()<class_Ph
 
 :ref:`float<class_float>` **_get_step**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_step>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.step<class_PhysicsDirectBodyState2D_property_step>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.step<class_PhysicsDirectBodyState2D_property_step>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.step<class_
 
 :ref:`float<class_float>` **_get_total_angular_damp**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_total_angular_damp>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.total_angular_damp<class_PhysicsDirectBodyState2D_property_total_angular_damp>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.total_angular_damp<class_PhysicsDirectBodyState2D_property_total_angular_damp>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.total_angul
 
 :ref:`Vector2<class_Vector2>` **_get_total_gravity**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_total_gravity>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.total_gravity<class_PhysicsDirectBodyState2D_property_total_gravity>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.total_gravity<class_PhysicsDirectBodyState2D_property_total_gravity>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.total_gravi
 
 :ref:`float<class_float>` **_get_total_linear_damp**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_total_linear_damp>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.total_linear_damp<class_PhysicsDirectBodyState2D_property_total_linear_damp>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.total_linear_damp<class_PhysicsDirectBodyState2D_property_total_linear_damp>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.total_linea
 
 :ref:`Transform2D<class_Transform2D>` **_get_transform**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_transform>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.transform<class_PhysicsDirectBodyState2D_property_transform>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.transform<class_PhysicsDirectBodyState2D_property_transform>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.transform<c
 
 :ref:`Vector2<class_Vector2>` **_get_velocity_at_local_position**\ (\ local_position\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__get_velocity_at_local_position>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.get_velocity_at_local_position()<class_PhysicsDirectBodyState2D_method_get_velocity_at_local_position>`.
+:ref:`PhysicsDirectBodyState2D.get_velocity_at_local_position()<class_PhysicsDirectBodyState2D_method_get_velocity_at_local_position>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.get_velocity_at_local_posi
 
 |void| **_integrate_forces**\ (\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__integrate_forces>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.integrate_forces()<class_PhysicsDirectBodyState2D_method_integrate_forces>`.
+:ref:`PhysicsDirectBodyState2D.integrate_forces()<class_PhysicsDirectBodyState2D_method_integrate_forces>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -611,7 +611,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.integrate_forces()<class_P
 
 :ref:`bool<class_bool>` **_is_sleeping**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__is_sleeping>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.sleeping<class_PhysicsDirectBodyState2D_property_sleeping>` and its respective getter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.sleeping<class_PhysicsDirectBodyState2D_property_sleeping>` 及其对应 getter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +623,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.sleeping<cl
 
 |void| **_set_angular_velocity**\ (\ velocity\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__set_angular_velocity>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.angular_velocity<class_PhysicsDirectBodyState2D_property_angular_velocity>` and its respective setter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.angular_velocity<class_PhysicsDirectBodyState2D_property_angular_velocity>` 及其对应 setter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.angular_vel
 
 |void| **_set_constant_force**\ (\ force\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__set_constant_force>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.set_constant_force()<class_PhysicsDirectBodyState2D_method_set_constant_force>`.
+:ref:`PhysicsDirectBodyState2D.set_constant_force()<class_PhysicsDirectBodyState2D_method_set_constant_force>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.set_constant_force()<class
 
 |void| **_set_constant_torque**\ (\ torque\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__set_constant_torque>`
 
-Overridable version of :ref:`PhysicsDirectBodyState2D.set_constant_torque()<class_PhysicsDirectBodyState2D_method_set_constant_torque>`.
+:ref:`PhysicsDirectBodyState2D.set_constant_torque()<class_PhysicsDirectBodyState2D_method_set_constant_torque>` 的可覆盖版本。
 
 .. rst-class:: classref-item-separator
 
@@ -687,7 +687,7 @@ Overridable version of :ref:`PhysicsDirectBodyState2D.set_constant_torque()<clas
 
 |void| **_set_linear_velocity**\ (\ velocity\: :ref:`Vector2<class_Vector2>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__set_linear_velocity>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.linear_velocity<class_PhysicsDirectBodyState2D_property_linear_velocity>` and its respective setter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.linear_velocity<class_PhysicsDirectBodyState2D_property_linear_velocity>` 及其对应 setter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -699,7 +699,7 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.linear_velo
 
 |void| **_set_sleep_state**\ (\ enabled\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__set_sleep_state>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.sleeping<class_PhysicsDirectBodyState2D_property_sleeping>` and its respective setter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.sleeping<class_PhysicsDirectBodyState2D_property_sleeping>` 及其对应 setter 的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -711,14 +711,14 @@ Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.sleeping<cl
 
 |void| **_set_transform**\ (\ transform\: :ref:`Transform2D<class_Transform2D>`\ ) |virtual| |required| :ref:`🔗<class_PhysicsDirectBodyState2DExtension_private_method__set_transform>`
 
-Implement to override the behavior of :ref:`PhysicsDirectBodyState2D.transform<class_PhysicsDirectBodyState2D_property_transform>` and its respective setter.
+实现后能够覆盖 :ref:`PhysicsDirectBodyState2D.transform<class_PhysicsDirectBodyState2D_property_transform>` 及其对应 setter 的行为。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

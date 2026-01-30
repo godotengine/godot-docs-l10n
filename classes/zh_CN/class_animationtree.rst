@@ -5,32 +5,32 @@
 AnimationTree
 =============
 
-**Inherits:** :ref:`AnimationMixer<class_AnimationMixer>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AnimationMixer<class_AnimationMixer>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node used for advanced animation transitions in an :ref:`AnimationPlayer<class_AnimationPlayer>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A node used for advanced animation transitions in an :ref:`AnimationPlayer<class_AnimationPlayer>`.
-
-\ **Note:** When linked with an :ref:`AnimationPlayer<class_AnimationPlayer>`, several properties and methods of the corresponding :ref:`AnimationPlayer<class_AnimationPlayer>` will not function as expected. Playback and transitions should be handled using only the **AnimationTree** and its constituent :ref:`AnimationNode<class_AnimationNode>`\ (s). The :ref:`AnimationPlayer<class_AnimationPlayer>` node should be used solely for adding, deleting, and editing animations.
+用于 :ref:`AnimationPlayer<class_AnimationPlayer>` 中高级动画过渡的节点。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+用于 :ref:`AnimationPlayer<class_AnimationPlayer>` 中高级动画过渡的节点。
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+\ **注意：**\ 与 :ref:`AnimationPlayer<class_AnimationPlayer>` 连接时，该 :ref:`AnimationPlayer<class_AnimationPlayer>` 的部分属性和方法将不会像预期的那样发挥作用。播放和过渡应该只使用 **AnimationTree** 和组成它的 :ref:`AnimationNode<class_AnimationNode>` 来处理。\ :ref:`AnimationPlayer<class_AnimationPlayer>` 节点应仅用于添加、删除和编辑动画。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+
+- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_AnimationTree_signal_animation_player_changed:
 
@@ -76,7 +76,7 @@ Signals
 
 **animation_player_changed**\ (\ ) :ref:`🔗<class_AnimationTree_signal_animation_player_changed>`
 
-Emitted when the :ref:`anim_player<class_AnimationTree_property_anim_player>` is changed.
+当 :ref:`anim_player<class_AnimationTree_property_anim_player>` 被改变时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -84,8 +84,8 @@ Emitted when the :ref:`anim_player<class_AnimationTree_property_anim_player>` is
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_AnimationTree_AnimationProcessCallback:
 
@@ -99,7 +99,7 @@ enum **AnimationProcessCallback**: :ref:`🔗<enum_AnimationTree_AnimationProces
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **ANIMATION_PROCESS_PHYSICS** = ``0``
 
-**Deprecated:** See :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`.
+**已弃用：** See :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`.
 
 
 
@@ -109,7 +109,7 @@ enum **AnimationProcessCallback**: :ref:`🔗<enum_AnimationTree_AnimationProces
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **ANIMATION_PROCESS_IDLE** = ``1``
 
-**Deprecated:** See :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_IDLE>`.
+**已弃用：** See :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_IDLE>`.
 
 
 
@@ -119,7 +119,7 @@ enum **AnimationProcessCallback**: :ref:`🔗<enum_AnimationTree_AnimationProces
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **ANIMATION_PROCESS_MANUAL** = ``2``
 
-**Deprecated:** See :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_MANUAL>`.
+**已弃用：** See :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_MANUAL>`.
 
 
 
@@ -129,8 +129,8 @@ enum **AnimationProcessCallback**: :ref:`🔗<enum_AnimationTree_AnimationProces
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimationTree_property_advance_expression_base_node:
 
@@ -143,7 +143,7 @@ Property Descriptions
 - |void| **set_advance_expression_base_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_advance_expression_base_node**\ (\ )
 
-The path to the :ref:`Node<class_Node>` used to evaluate the :ref:`AnimationNode<class_AnimationNode>` :ref:`Expression<class_Expression>` if one is not explicitly specified internally.
+用于评估 :ref:`AnimationNode<class_AnimationNode>` :ref:`Expression<class_Expression>` 的 :ref:`Node<class_Node>` 的路径，内部未明确指定路径时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ The path to the :ref:`Node<class_Node>` used to evaluate the :ref:`AnimationNode
 - |void| **set_animation_player**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_animation_player**\ (\ )
 
-The path to the :ref:`AnimationPlayer<class_AnimationPlayer>` used for animating.
+用于动画的 :ref:`AnimationPlayer<class_AnimationPlayer>` 的路径。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ The path to the :ref:`AnimationPlayer<class_AnimationPlayer>` used for animating
 - |void| **set_tree_root**\ (\ value\: :ref:`AnimationRootNode<class_AnimationRootNode>`\ )
 - :ref:`AnimationRootNode<class_AnimationRootNode>` **get_tree_root**\ (\ )
 
-The root animation node of this **AnimationTree**. See :ref:`AnimationRootNode<class_AnimationRootNode>`.
+该 **AnimationTree** 的根动画节点。见 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -185,8 +185,8 @@ The root animation node of this **AnimationTree**. See :ref:`AnimationRootNode<c
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AnimationTree_method_get_process_callback:
 
@@ -194,9 +194,9 @@ Method Descriptions
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **get_process_callback**\ (\ ) |const| :ref:`🔗<class_AnimationTree_method_get_process_callback>`
 
-**Deprecated:** Use :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` instead.
+**已弃用：** Use :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` instead.
 
-Returns the process notification in which to update animations.
+返回要更新动画的过程通知。
 
 .. rst-class:: classref-item-separator
 
@@ -208,16 +208,16 @@ Returns the process notification in which to update animations.
 
 |void| **set_process_callback**\ (\ mode\: :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>`\ ) :ref:`🔗<class_AnimationTree_method_set_process_callback>`
 
-**Deprecated:** Use :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` instead.
+**已弃用：** Use :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` instead.
 
-Sets the process notification in which to update animations.
+设置要更新动画的过程通知。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

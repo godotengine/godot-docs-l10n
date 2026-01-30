@@ -460,7 +460,7 @@ Identificador único de la aplicación en formato DNS inverso, solo puede conten
 
 :ref:`String<class_String>` **application/code_sign_identity_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/code_sign_identity_debug>`
 
-The "Full Name", "Common Name" or SHA-1 hash of the signing identity used for debug export.
+El "nombre completo", "nombre común" o hash SHA-1 de la identidad de firma usada para la exportación de depuración.
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ The "Full Name", "Common Name" or SHA-1 hash of the signing identity used for de
 
 :ref:`String<class_String>` **application/code_sign_identity_release** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/code_sign_identity_release>`
 
-The "Full Name", "Common Name" or SHA-1 hash of the signing identity used for release export.
+El "nombre completo", "nombre común" o hash SHA-1 de la identidad de firma usada para la exportación de lanzamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -558,9 +558,9 @@ Método de interpolación utilizado para redimensionar el icono de la aplicació
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_debug** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_debug>`
 
-Name of the provisioning profile. Sets XCode PROVISIONING_PROFILE_SPECIFIER for debug. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Nombre del perfil de aprovisionamiento. Establece XCode PROVISIONING_PROFILE_SPECIFIER para depuración. `Usado para aprovisionamiento manual <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_DEBUG``.
 
 .. rst-class:: classref-item-separator
 
@@ -572,9 +572,9 @@ Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_S
 
 :ref:`String<class_String>` **application/provisioning_profile_specifier_release** :ref:`🔗<class_EditorExportPlatformVisionOS_property_application/provisioning_profile_specifier_release>`
 
-Name of the provisioning profile. Sets XCode PROVISIONING_PROFILE_SPECIFIER for release. `Used for manual provisioning <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
+Nombre del perfil de aprovisionamiento. Establece XCode PROVISIONING_PROFILE_SPECIFIER para lanzamiento. `Usado para aprovisionamiento manual <https://developer.apple.com/documentation/xcode/build-settings-reference#Provisioning-Profile>`__.
 
-Can be overridden with the environment variable ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_APPLE_PLATFORM_PROFILE_SPECIFIER_RELEASE``.
 
 .. rst-class:: classref-item-separator
 
@@ -692,9 +692,9 @@ Datos adicionales añadidos al array ``UIRequiredDeviceCapabilities`` del archiv
 
 :ref:`bool<class_bool>` **capabilities/performance_a12** :ref:`🔗<class_EditorExportPlatformVisionOS_property_capabilities/performance_a12>`
 
-Requires the graphics performance and features of the A12 Bionic and later chips (devices supporting all Vulkan renderer features).
+Requiere el rendimiento gráfico y las características de los chips A12 Bionic y posteriores (dispositivos compatibles con todas las características del renderizador Vulkan).
 
-Enabling this option limits supported devices to: iPhone XS, iPhone XR, iPad Mini (5th gen.), iPad Air (3rd gen.), iPad (8th gen) and newer.
+Habilitar esta opción limita los dispositivos compatibles a: iPhone XS, iPhone XR, iPad Mini (5ª gen.), iPad Air (3ª gen.), iPad (8ª gen) y posteriores.
 
 .. rst-class:: classref-item-separator
 
@@ -2671,9 +2671,9 @@ Las razones por las que tu aplicación usa la API de valores predeterminados del
 
 :ref:`bool<class_bool>` **shader_baker/enabled** :ref:`🔗<class_EditorExportPlatformVisionOS_property_shader_baker/enabled>`
 
-If ``true``, shaders will be compiled and embedded in the application. This option is only supported when using the Forward+ and Mobile renderers.
+Si es ``true``, los shaders se compilarán e incrustarán en la aplicación. Esta opción sólo es compatible cuando se utilizan los renderizadores Forward+ y Mobile.
 
-\ **Note:** When exporting as a dedicated server, the shader baker is always disabled since no rendering is performed.
+\ **Nota:** Al exportar como servidor dedicado, el compilador de shaders siempre está deshabilitado, ya que no se realiza ninguna renderización.
 
 .. rst-class:: classref-item-separator
 

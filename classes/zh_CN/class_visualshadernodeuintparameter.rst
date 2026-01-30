@@ -5,21 +5,21 @@
 VisualShaderNodeUIntParameter
 =============================
 
-**Inherits:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A visual shader node for shader parameter (uniform) of type unsigned :ref:`int<class_int>`.
+无符号 :ref:`int<class_int>` 类型着色器参数（uniform）的可视化着色器节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` of type unsigned :ref:`int<class_int>`. Offers additional customization for range of accepted values.
+无符号 :ref:`int<class_int>` 类型的 :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>`\ 。还可以对值的可接受范围进行自定义。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeUIntParameter_property_default_value:
 
@@ -50,7 +50,7 @@ Property Descriptions
 - |void| **set_default_value**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_default_value**\ (\ )
 
-Default value of this parameter, which will be used if not set externally. :ref:`default_value_enabled<class_VisualShaderNodeUIntParameter_property_default_value_enabled>` must be enabled; defaults to ``0`` otherwise.
+这个参数的默认值，外部没有设值时使用。必须启用 :ref:`default_value_enabled<class_VisualShaderNodeUIntParameter_property_default_value_enabled>`\ ；否则默认为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -67,14 +67,14 @@ Default value of this parameter, which will be used if not set externally. :ref:
 - |void| **set_default_value_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_value_enabled**\ (\ )
 
-If ``true``, the node will have a custom default value.
+如果为 ``true``\ ，则该节点有自定义默认值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,16 +5,16 @@
 MainLoop
 ========
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SceneTree<class_SceneTree>`
+**被繼承：** :ref:`SceneTree<class_SceneTree>`
 
-Abstract base class for the game's main loop.
+遊戲主迴圈的抽象基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **MainLoop** is the abstract base class for a Godot project's game loop. It is inherited by :ref:`SceneTree<class_SceneTree>`, which is the default game loop implementation used in Godot projects, though it is also possible to write and use one's own **MainLoop** subclass instead of the scene tree.
 
@@ -78,8 +78,8 @@ Here is an example script implementing a simple **MainLoop**:
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -100,8 +100,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_MainLoop_signal_on_request_permissions_result:
 
@@ -109,7 +109,7 @@ Signals
 
 **on_request_permissions_result**\ (\ permission\: :ref:`String<class_String>`, granted\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MainLoop_signal_on_request_permissions_result>`
 
-Emitted when a user responds to a permission request.
+當使用者對許可權請求作出反應時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -117,8 +117,8 @@ Emitted when a user responds to a permission request.
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_MainLoop_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -126,9 +126,9 @@ Constants
 
 **NOTIFICATION_OS_MEMORY_WARNING** = ``2009`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_OS_MEMORY_WARNING>`
 
-Notification received from the OS when the application is exceeding its allocated memory.
+當套用程式超過其分配的記憶體時，從作業系統收到的通知。
 
-Specific to the iOS platform.
+僅限 iOS 平臺。
 
 .. _class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED:
 
@@ -136,7 +136,7 @@ Specific to the iOS platform.
 
 **NOTIFICATION_TRANSLATION_CHANGED** = ``2010`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_TRANSLATION_CHANGED>`
 
-Notification received when translations may have changed. Can be triggered by the user changing the locale. Can be used to respond to language changes, for example to change the UI strings on the fly. Useful when working with the built-in translation support, like :ref:`Object.tr()<class_Object_method_tr>`.
+當翻譯可能發生變化時收到的通知。會在使用者改變區域設定時觸發。可以用來回應語言的變化，例如即時改變 UI 字串。可配合內建的翻譯支援使用，比如 :ref:`Object.tr()<class_Object_method_tr>`\ 。
 
 .. _class_MainLoop_constant_NOTIFICATION_WM_ABOUT:
 
@@ -144,9 +144,9 @@ Notification received when translations may have changed. Can be triggered by th
 
 **NOTIFICATION_WM_ABOUT** = ``2011`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_WM_ABOUT>`
 
-Notification received from the OS when a request for "About" information is sent.
+當發出“關於”資訊請求時，從作業系統收到的通知。
 
-Specific to the macOS platform.
+僅限 macOS 平臺。
 
 .. _class_MainLoop_constant_NOTIFICATION_CRASH:
 
@@ -154,9 +154,9 @@ Specific to the macOS platform.
 
 **NOTIFICATION_CRASH** = ``2012`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_CRASH>`
 
-Notification received from Godot's crash handler when the engine is about to crash.
+當引擎即將當機時，從Godot的當機處理常式收到的通知。
 
-Implemented on desktop platforms if the crash handler is enabled.
+如果當機處理常式被啟用，這只會在桌面平臺上實作。
 
 .. _class_MainLoop_constant_NOTIFICATION_OS_IME_UPDATE:
 
@@ -174,9 +174,9 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_APPLICATION_RESUMED** = ``2014`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_RESUMED>`
 
-Notification received from the OS when the application is resumed.
+當應用程式從暫停恢復時，從作業系統收到的通知。
 
-Specific to the Android and iOS platforms.
+僅適用於 Android 與 iOS 平台。
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_PAUSED:
 
@@ -184,11 +184,11 @@ Specific to the Android and iOS platforms.
 
 **NOTIFICATION_APPLICATION_PAUSED** = ``2015`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_PAUSED>`
 
-Notification received from the OS when the application is paused.
+當應用程式被暫停時，從作業系統收到的通知。
 
-Specific to the Android and iOS platforms.
+僅適用於 Android 與 iOS 平台。
 
-\ **Note:** On iOS, you only have approximately 5 seconds to finish a task started by this signal. If you go over this allotment, iOS will kill the app instead of pausing it.
+\ **注意：**\ 在 iOS 上，這個訊號觸發後，你大約只有 5 秒可以完成相關任務。超過這個限制，iOS 將會直接終止應用程式，而非單純暫停。
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_FOCUS_IN:
 
@@ -196,9 +196,9 @@ Specific to the Android and iOS platforms.
 
 **NOTIFICATION_APPLICATION_FOCUS_IN** = ``2016`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_FOCUS_IN>`
 
-Notification received from the OS when the application is focused, i.e. when changing the focus from the OS desktop or a thirdparty application to any open window of the Godot instance.
+當應用程式獲得焦點時，從作業系統收到的通知，即當焦點從作業系統桌面或第三方應用程式切換到 Godot 任一開啟視窗時。
 
-Implemented on desktop and mobile platforms.
+在桌面與行動平台皆有實作。
 
 .. _class_MainLoop_constant_NOTIFICATION_APPLICATION_FOCUS_OUT:
 
@@ -206,9 +206,9 @@ Implemented on desktop and mobile platforms.
 
 **NOTIFICATION_APPLICATION_FOCUS_OUT** = ``2017`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_APPLICATION_FOCUS_OUT>`
 
-Notification received from the OS when the application is defocused, i.e. when changing the focus from any open window of the Godot instance to the OS desktop or a thirdparty application.
+當應用程式失去焦點時，從作業系統收到的通知，即當焦點從 Godot 任一開啟視窗切換到作業系統桌面或第三方應用程式時。
 
-Implemented on desktop and mobile platforms.
+在桌面與行動平台皆有實作。
 
 .. _class_MainLoop_constant_NOTIFICATION_TEXT_SERVER_CHANGED:
 
@@ -216,7 +216,7 @@ Implemented on desktop and mobile platforms.
 
 **NOTIFICATION_TEXT_SERVER_CHANGED** = ``2018`` :ref:`🔗<class_MainLoop_constant_NOTIFICATION_TEXT_SERVER_CHANGED>`
 
-Notification received when text server is changed.
+文字伺服器被更改時，收到的通知。
 
 .. rst-class:: classref-section-separator
 
@@ -224,8 +224,8 @@ Notification received when text server is changed.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_MainLoop_private_method__finalize:
 
@@ -233,7 +233,7 @@ Method Descriptions
 
 |void| **_finalize**\ (\ ) |virtual| :ref:`🔗<class_MainLoop_private_method__finalize>`
 
-Called before the program exits.
+在程式退出前呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ Called before the program exits.
 
 |void| **_initialize**\ (\ ) |virtual| :ref:`🔗<class_MainLoop_private_method__initialize>`
 
-Called once during initialization.
+在初始化時呼叫一次。
 
 .. rst-class:: classref-item-separator
 
@@ -285,12 +285,12 @@ If implemented, the method must return a boolean value. ``true`` ends the main l
 
 \ **Note:** Frame delta may be post-processed by :ref:`OS.delta_smoothing<class_OS_property_delta_smoothing>` if this is enabled for the project.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

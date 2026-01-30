@@ -5,14 +5,14 @@
 ResourceImporterImageFont
 =========================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Imports a bitmap font where all glyphs have the same width and height.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This image-based workflow can be easier to use than :ref:`ResourceImporterBMFont<class_ResourceImporterBMFont>`, but it requires all glyphs to have the same width and height, glyph advances and drawing offsets can be customized. This makes **ResourceImporterImageFont** most suited to fixed-width fonts.
 
@@ -20,15 +20,15 @@ See also :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`.
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `Bitmap fonts - Using fonts <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
+- `點陣字型——使用字形 <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ResourceImporterImageFont_property_ascent:
 
@@ -84,7 +84,7 @@ Font ascent (number of pixels above the baseline). If set to ``0``, half of the 
 
 :ref:`Rect2i<class_Rect2i>` **character_margin** = ``Rect2i(0, 0, 0, 0)`` :ref:`🔗<class_ResourceImporterImageFont_property_character_margin>`
 
-Margin applied around every imported glyph. If your font image contains guides (in the form of lines between glyphs) or if spacing between characters appears incorrect, try adjusting :ref:`character_margin<class_ResourceImporterImageFont_property_character_margin>`.
+在每個匯入的字形周圍套用邊距。如果您的字型影像包含參考線（以字形之間的線的形式）或字元之間的間距看起來不正確，請嘗試調整\ :ref:`character_margin<class_ResourceImporterImageFont_property_character_margin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ For any range, the character advance and offset can be customized by appending t
 
 :ref:`int<class_int>` **columns** = ``1`` :ref:`🔗<class_ResourceImporterImageFont_property_columns>`
 
-Number of columns in the font image. See also :ref:`rows<class_ResourceImporterImageFont_property_rows>`.
+精靈表中的列數。
 
 .. rst-class:: classref-item-separator
 
@@ -128,7 +128,7 @@ Number of columns in the font image. See also :ref:`rows<class_ResourceImporterI
 
 :ref:`bool<class_bool>` **compress** = ``true`` :ref:`🔗<class_ResourceImporterImageFont_property_compress>`
 
-If ``true``, uses lossless compression for the resulting font.
+如果為 ``true``\ ，則對二進位資源使用無失真壓縮。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ Font descent (number of pixels below the baseline). If set to ``0``, half of the
 
 :ref:`Array<class_Array>` **fallbacks** = ``[]`` :ref:`🔗<class_ResourceImporterImageFont_property_fallbacks>`
 
-List of font fallbacks to use if a glyph isn't found in this bitmap font. Fonts at the beginning of the array are attempted first.
+如果在此點陣字形中找不到字形，則要使用的字形後備列表。首先嘗試陣列開頭的字形。
 
 .. rst-class:: classref-item-separator
 
@@ -164,7 +164,7 @@ List of font fallbacks to use if a glyph isn't found in this bitmap font. Fonts 
 
 :ref:`Rect2i<class_Rect2i>` **image_margin** = ``Rect2i(0, 0, 0, 0)`` :ref:`🔗<class_ResourceImporterImageFont_property_image_margin>`
 
-Margin to cut on the sides of the entire image. This can be used to cut parts of the image that contain attribution information or similar.
+在整個影像兩側進行剪切的邊距。這可用於剪切包含屬性資訊或類似資訊的影像部分。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Each string consist of three space separated values: "from" string, "to" string 
 
 :ref:`int<class_int>` **rows** = ``1`` :ref:`🔗<class_ResourceImporterImageFont_property_rows>`
 
-Number of rows in the font image. See also :ref:`columns<class_ResourceImporterImageFont_property_columns>`.
+字型映像中的行數。另請參閱 :ref:`columns<class_ResourceImporterImageFont_property_columns>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -206,12 +206,12 @@ Number of rows in the font image. See also :ref:`columns<class_ResourceImporterI
 
 Font scaling mode.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

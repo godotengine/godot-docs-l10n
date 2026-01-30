@@ -5,21 +5,21 @@
 SpringBoneCollisionCapsule3D
 ============================
 
-**Inherits:** :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A capsule shape collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+与 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 交互的胶囊形状碰撞体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A capsule shape collision that interacts with :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>`.
+与 :ref:`SpringBoneSimulator3D<class_SpringBoneSimulator3D>` 交互的胶囊形状碰撞体。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_SpringBoneCollisionCapsule3D_property_height:
 
@@ -54,9 +54,9 @@ Property Descriptions
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The capsule's full height, including the hemispheres.
+胶囊体的总高度，包括半球。
 
-\ **Note:** The :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` of a capsule must be at least twice its :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>`. Otherwise, the capsule becomes a sphere. If the :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` is less than twice the :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>`, the properties adjust to a valid value.
+\ **注意：**\ 胶囊体的 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 必须至少为其 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 的两倍。否则，胶囊体将变为球体。如果 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 小于 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 的两倍，则属性将调整为有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ The capsule's full height, including the hemispheres.
 - |void| **set_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_inside**\ (\ )
 
-If ``true``, the collision acts to trap the joint within the collision.
+如果为 ``true``\ ，则碰撞会让关节困在碰撞中。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ If ``true``, the collision acts to trap the joint within the collision.
 - |void| **set_mid_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mid_height**\ (\ )
 
-The capsule's height, excluding the hemispheres. This is the height of the central cylindrical part in the middle of the capsule, and is the distance between the centers of the two hemispheres. This is a wrapper for :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>`.
+胶囊的高度，不包括两个半球。这是胶囊中间圆柱部分的高度，即两个半球球心之间的距离。这是对 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 的封装。
 
 .. rst-class:: classref-item-separator
 
@@ -107,16 +107,16 @@ The capsule's height, excluding the hemispheres. This is the height of the centr
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The capsule's radius.
+胶囊体的半径。
 
-\ **Note:** The :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>`. Otherwise, the capsule becomes a sphere. If the :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` is greater than half of the :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>`, the properties adjust to a valid value.
+\ **注意：**\ 胶囊体的 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 不能大于其 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 的一半。否则，胶囊体将变为球体。如果 :ref:`radius<class_SpringBoneCollisionCapsule3D_property_radius>` 大于 :ref:`height<class_SpringBoneCollisionCapsule3D_property_height>` 的一半，则属性将调整为有效值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -16,9 +16,9 @@ Un nodo usado para crear un fondo de desplazamiento de paralaje.
 Descripción
 ----------------------
 
-A ParallaxBackground uses one or more :ref:`ParallaxLayer<class_ParallaxLayer>` child nodes to create a parallax effect. Each :ref:`ParallaxLayer<class_ParallaxLayer>` can move at a different speed using :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>`. This creates an illusion of depth in a 2D game. If not used with a :ref:`Camera2D<class_Camera2D>`, you must manually calculate the :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
+Un ParallaxBackground utiliza uno o más nodos hijos :ref:`ParallaxLayer<class_ParallaxLayer>` para crear un efecto de paralaje. Cada :ref:`ParallaxLayer<class_ParallaxLayer>` puede moverse a una velocidad diferente usando :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>`. Esto crea una ilusión de profundidad en un juego 2D. Si no se usa con una :ref:`Camera2D<class_Camera2D>`, debes calcular manualmente :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
 
-\ **Note:** Each **ParallaxBackground** is drawn on one specific :ref:`Viewport<class_Viewport>` and cannot be shared between multiple :ref:`Viewport<class_Viewport>`\ s, see :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. When using multiple :ref:`Viewport<class_Viewport>`\ s, for example in a split-screen game, you need create an individual **ParallaxBackground** for each :ref:`Viewport<class_Viewport>` you want it to be drawn on.
+\ **Nota:** Cada **ParallaxBackground** se dibuja en un :ref:`Viewport<class_Viewport>` específico y no se puede compartir entre múltiples :ref:`Viewport<class_Viewport>`\ s, consulta :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. Cuando se utilizan múltiples :ref:`Viewport<class_Viewport>`\ s, por ejemplo, en un juego de pantalla dividida, debes crear un **ParallaxBackground** individual para cada :ref:`Viewport<class_Viewport>` en el que quieras que se dibuje.
 
 .. rst-class:: classref-reftable-group
 

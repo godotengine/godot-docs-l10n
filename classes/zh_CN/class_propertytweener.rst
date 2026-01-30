@@ -5,25 +5,25 @@
 PropertyTweener
 ===============
 
-**Inherits:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Interpolates an :ref:`Object<class_Object>`'s property over time.
+随时间对 :ref:`Object<class_Object>` 的属性进行插值。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**PropertyTweener** is used to interpolate a property in an object. See :ref:`Tween.tween_property()<class_Tween_method_tween_property>` for more usage information.
+**PropertyTweener** 用于为对象的属性进行插值。详见 :ref:`Tween.tween_property()<class_Tween_method_tween_property>`\ 。
 
-The tweener will finish automatically if the target object is freed.
+目标对象被释放时，补间器会自动结束。
 
-\ **Note:** :ref:`Tween.tween_property()<class_Tween_method_tween_property>` is the only correct way to create **PropertyTweener**. Any **PropertyTweener** created manually will not function correctly.
+\ **注意：**\ :ref:`Tween.tween_property()<class_Tween_method_tween_property>` 是创建 **PropertyTweener** 的唯一正确方法。任何手动创建的 **PropertyTweener** 都将无法正常运行。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PropertyTweener_method_as_relative:
 
@@ -59,9 +59,9 @@ Method Descriptions
 
 :ref:`PropertyTweener<class_PropertyTweener>` **as_relative**\ (\ ) :ref:`🔗<class_PropertyTweener_method_as_relative>`
 
-When called, the final value will be used as a relative value instead.
+调用后会将最终值用作相对值。
 
-\ **Example:** Move the node by ``100`` pixels to the right.
+\ **示例：**\ 将节点向右移动 ``100`` 像素。
 
 
 .. tabs::
@@ -88,9 +88,9 @@ When called, the final value will be used as a relative value instead.
 
 :ref:`PropertyTweener<class_PropertyTweener>` **from**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PropertyTweener_method_from>`
 
-Sets a custom initial value to the **PropertyTweener**.
+为 **PropertyTweener** 设置自定义初始值。
 
-\ **Example:** Move the node from position ``(100, 100)`` to ``(200, 100)``.
+\ **示例：**\ 将节点从 ``(100, 100)`` 移动到 ``(200, 100)``\ 。
 
 
 .. tabs::
@@ -117,7 +117,7 @@ Sets a custom initial value to the **PropertyTweener**.
 
 :ref:`PropertyTweener<class_PropertyTweener>` **from_current**\ (\ ) :ref:`🔗<class_PropertyTweener_method_from_current>`
 
-Makes the **PropertyTweener** use the current property value (i.e. at the time of creating this **PropertyTweener**) as a starting point. This is equivalent of using :ref:`from()<class_PropertyTweener_method_from>` with the current value. These two calls will do the same:
+让 **PropertyTweener** 使用属性的当前值（即创建 **PropertyTweener** 时）作为起点。等价于使用当前值调用 :ref:`from()<class_PropertyTweener_method_from>`\ 。下列两种调用效果相同：
 
 
 .. tabs::
@@ -144,7 +144,7 @@ Makes the **PropertyTweener** use the current property value (i.e. at the time o
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_custom_interpolator**\ (\ interpolator_method\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PropertyTweener_method_set_custom_interpolator>`
 
-Allows interpolating the value with a custom easing function. The provided ``interpolator_method`` will be called with a value ranging from ``0.0`` to ``1.0`` and is expected to return a value within the same range (values outside the range can be used for overshoot). The return value of the method is then used for interpolation between initial and final value. Note that the parameter passed to the method is still subject to the tweener's own easing.
+使用自定义缓动函数进行插值。会使用 ``0.0`` 到 ``1.0`` 之间的值来调用 ``interpolator_method``\ ，提供的这个方法的返回值应该也在这个范围内（可以用超出范围的值表示越过目标）。后续会再使用这个方法的返回值进行起始值和目标值之间的插值。请注意，传给这个方法的参数仍然会受到补间器本身缓动功能的影响。
 
 
 .. tabs::
@@ -155,7 +155,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
 
     func _ready():
         var tween = create_tween()
-        # Interpolate the value using a custom curve.
+        # 使用自定义曲线进行插值。
         tween.tween_property(self, "position:x", 300, 1).as_relative().set_custom_interpolator(tween_curve)
 
     func tween_curve(v):
@@ -169,7 +169,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
     public override void _Ready()
     {
         Tween tween = CreateTween();
-        // Interpolate the value using a custom curve.
+        // 使用自定义曲线进行插值。
         Callable tweenCurveCallable = Callable.From<float, float>(TweenCurve);
         tween.TweenProperty(this, "position:x", 300.0f, 1.0f).AsRelative().SetCustomInterpolator(tweenCurveCallable);
     }
@@ -191,7 +191,7 @@ Allows interpolating the value with a custom easing function. The provided ``int
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_delay**\ (\ delay\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PropertyTweener_method_set_delay>`
 
-Sets the time in seconds after which the **PropertyTweener** will start interpolating. By default there's no delay.
+设置该 **PropertyTweener** 开始插值的时间，单位为秒。默认无延迟。
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Sets the time in seconds after which the **PropertyTweener** will start interpol
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_PropertyTweener_method_set_ease>`
 
-Sets the type of used easing from :ref:`EaseType<enum_Tween_EaseType>`. If not set, the default easing is used from the :ref:`Tween<class_Tween>` that contains this Tweener.
+设置所使用的缓动类型 :ref:`EaseType<enum_Tween_EaseType>`\ 。如果没有设置，则使用包含这个 Tweener 的 :ref:`Tween<class_Tween>` 的默认缓动类型。
 
 .. rst-class:: classref-item-separator
 
@@ -215,14 +215,14 @@ Sets the type of used easing from :ref:`EaseType<enum_Tween_EaseType>`. If not s
 
 :ref:`PropertyTweener<class_PropertyTweener>` **set_trans**\ (\ trans\: :ref:`TransitionType<enum_Tween_TransitionType>`\ ) :ref:`🔗<class_PropertyTweener_method_set_trans>`
 
-Sets the type of used transition from :ref:`TransitionType<enum_Tween_TransitionType>`. If not set, the default transition is used from the :ref:`Tween<class_Tween>` that contains this Tweener.
+设置所使用的过渡类型 :ref:`TransitionType<enum_Tween_TransitionType>`\ 。如果没有设置，则使用包含这个 Tweener 的 :ref:`Tween<class_Tween>` 的默认过渡类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,25 +5,25 @@
 SyntaxHighlighter
 =================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CodeHighlighter<class_CodeHighlighter>`, :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`
+**被繼承：** :ref:`CodeHighlighter<class_CodeHighlighter>`, :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`
 
-Base class for syntax highlighters. Provides syntax highlighting data to a :ref:`TextEdit<class_TextEdit>`.
+語法高亮器的基底類別。可以向 :ref:`TextEdit<class_TextEdit>` 提供語法高亮資料。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Base class for syntax highlighters. Provides syntax highlighting data to a :ref:`TextEdit<class_TextEdit>`. The associated :ref:`TextEdit<class_TextEdit>` will call into the **SyntaxHighlighter** on an as-needed basis.
+語法高亮器的基底類別。向 :ref:`TextEdit<class_TextEdit>` 提供語法高亮資料。關聯的 :ref:`TextEdit<class_TextEdit>` 節點會根據需要呼叫 **SyntaxHighlighter**\ 。
 
-\ **Note:** A **SyntaxHighlighter** instance should not be used across multiple :ref:`TextEdit<class_TextEdit>` nodes.
+\ **注意：**\ 不應在多個 :ref:`TextEdit<class_TextEdit>` 節點間共用 **SyntaxHighlighter** 實例。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SyntaxHighlighter_private_method__clear_highlighting_cache:
 
@@ -59,7 +59,7 @@ Method Descriptions
 
 |void| **_clear_highlighting_cache**\ (\ ) |virtual| :ref:`🔗<class_SyntaxHighlighter_private_method__clear_highlighting_cache>`
 
-Virtual method which can be overridden to clear any local caches.
+虛方法，覆蓋後可以清空本地快取。
 
 .. rst-class:: classref-item-separator
 
@@ -71,9 +71,9 @@ Virtual method which can be overridden to clear any local caches.
 
 :ref:`Dictionary<class_Dictionary>` **_get_line_syntax_highlighting**\ (\ line\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>`
 
-Virtual method which can be overridden to return syntax highlighting data.
+虛方法，覆蓋後可以返回語法高亮資料。
 
-See :ref:`get_line_syntax_highlighting()<class_SyntaxHighlighter_method_get_line_syntax_highlighting>` for more details.
+詳情見 :ref:`get_line_syntax_highlighting()<class_SyntaxHighlighter_method_get_line_syntax_highlighting>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ See :ref:`get_line_syntax_highlighting()<class_SyntaxHighlighter_method_get_line
 
 |void| **_update_cache**\ (\ ) |virtual| :ref:`🔗<class_SyntaxHighlighter_private_method__update_cache>`
 
-Virtual method which can be overridden to update any local caches.
+虛方法，覆蓋後可以更新本地快取。
 
 .. rst-class:: classref-item-separator
 
@@ -97,9 +97,9 @@ Virtual method which can be overridden to update any local caches.
 
 |void| **clear_highlighting_cache**\ (\ ) :ref:`🔗<class_SyntaxHighlighter_method_clear_highlighting_cache>`
 
-Clears all cached syntax highlighting data.
+清空所有快取的語法高亮資料。
 
-Then calls overridable method :ref:`_clear_highlighting_cache()<class_SyntaxHighlighter_private_method__clear_highlighting_cache>`.
+然後呼叫可覆蓋的 :ref:`_clear_highlighting_cache()<class_SyntaxHighlighter_private_method__clear_highlighting_cache>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Each entry is a column number containing a nested :ref:`Dictionary<class_Diction
 
 :ref:`TextEdit<class_TextEdit>` **get_text_edit**\ (\ ) |const| :ref:`🔗<class_SyntaxHighlighter_method_get_text_edit>`
 
-Returns the associated :ref:`TextEdit<class_TextEdit>` node.
+返回關聯的 :ref:`TextEdit<class_TextEdit>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -150,16 +150,16 @@ Returns the associated :ref:`TextEdit<class_TextEdit>` node.
 
 |void| **update_cache**\ (\ ) :ref:`🔗<class_SyntaxHighlighter_method_update_cache>`
 
-Clears then updates the **SyntaxHighlighter** caches. Override :ref:`_update_cache()<class_SyntaxHighlighter_private_method__update_cache>` for a callback.
+清除然後更新 **SyntaxHighlighter** 快取。為一個回呼函式覆蓋 :ref:`_update_cache()<class_SyntaxHighlighter_private_method__update_cache>`\ 。
 
-\ **Note:** This is called automatically when the associated :ref:`TextEdit<class_TextEdit>` node, updates its own cache.
+\ **注意：**\ 當關聯的 :ref:`TextEdit<class_TextEdit>` 節點更新它自己的快取時，該函式會被自動呼叫。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

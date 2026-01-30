@@ -5,21 +5,21 @@
 SliderJoint3D
 =============
 
-**Inherits:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A physics joint that restricts the movement of a 3D physics body along an axis relative to another physics body.
+一種物理關節，能夠將 3D 物理體的移動限制在相對於另一個物理體的某個軸上。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A physics joint that restricts the movement of a 3D physics body along an axis relative to another physics body. For example, Body A could be a :ref:`StaticBody3D<class_StaticBody3D>` representing a piston base, while Body B could be a :ref:`RigidBody3D<class_RigidBody3D>` representing the piston head, moving up and down.
+一種物理關節，能夠將 3D 物理體的移動限制在相對於另一個物理體的某個軸上。例如物體 A 是代表活塞基底的 :ref:`StaticBody3D<class_StaticBody3D>`\ ，而物體 B 是代表活塞頭的 :ref:`RigidBody3D<class_RigidBody3D>`\ ，能夠上下移動。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_SliderJoint3D_Param:
 
@@ -281,7 +281,7 @@ Constant for accessing :ref:`angular_ortho/damping<class_SliderJoint3D_property_
 
 :ref:`Param<enum_SliderJoint3D_Param>` **PARAM_MAX** = ``22``
 
-Represents the size of the :ref:`Param<enum_SliderJoint3D_Param>` enum.
+代表 :ref:`Param<enum_SliderJoint3D_Param>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -289,8 +289,8 @@ Represents the size of the :ref:`Param<enum_SliderJoint3D_Param>` enum.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SliderJoint3D_property_angular_limit/damping:
 
@@ -303,9 +303,9 @@ Property Descriptions
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of damping of the rotation when the limit is surpassed.
+超過限制時旋轉的阻尼量。
 
-A lower damping value allows a rotation initiated by body A to travel to body B slower.
+較低的阻尼值允許由主體 A 發起的旋轉以較慢的速度傳播到主體 B。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ A lower damping value allows a rotation initiated by body A to travel to body B 
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The lower limit of rotation in the slider.
+滑桿旋轉的下限。
 
 .. rst-class:: classref-item-separator
 
@@ -339,9 +339,9 @@ The lower limit of rotation in the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of restitution of the rotation when the limit is surpassed.
+當超過極限時，旋轉的恢復量。
 
-Does not affect damping.
+不影響阻尼。
 
 .. rst-class:: classref-item-separator
 
@@ -358,9 +358,9 @@ Does not affect damping.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-A factor applied to the all rotation once the limit is surpassed.
+套用於所有旋轉超過限制後的係數。
 
-Makes all rotation slower when between 0 and 1.
+在 0 和 1 之間時使所有旋轉變慢。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Makes all rotation slower when between 0 and 1.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The upper limit of rotation in the slider.
+滑桿旋轉的上限。
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ The upper limit of rotation in the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of damping of the rotation in the limits.
+極限內旋轉的阻尼量。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ The amount of damping of the rotation in the limits.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of restitution of the rotation in the limits.
+極限內旋轉的恢復量。
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ The amount of restitution of the rotation in the limits.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-A factor applied to the all rotation in the limits.
+套用於所有受限旋轉的係數。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ A factor applied to the all rotation in the limits.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of damping of the rotation across axes orthogonal to the slider.
+垂直於滑桿的軸上的旋轉阻尼量。
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ The amount of damping of the rotation across axes orthogonal to the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of restitution of the rotation across axes orthogonal to the slider.
+垂直於滑桿的軸上的旋轉恢復量。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ The amount of restitution of the rotation across axes orthogonal to the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-A factor applied to the all rotation across axes orthogonal to the slider.
+套用於與滑動條正交的軸的所有旋轉的係數。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ A factor applied to the all rotation across axes orthogonal to the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of damping that happens once the limit defined by :ref:`linear_limit/lower_distance<class_SliderJoint3D_property_linear_limit/lower_distance>` and :ref:`linear_limit/upper_distance<class_SliderJoint3D_property_linear_limit/upper_distance>` is surpassed.
+一旦超過 :ref:`linear_limit/lower_distance<class_SliderJoint3D_property_linear_limit/lower_distance>` 和 :ref:`linear_limit/upper_distance<class_SliderJoint3D_property_linear_limit/upper_distance>` 所定義的極限，就會產生的阻尼量。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ The amount of damping that happens once the limit defined by :ref:`linear_limit/
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The minimum difference between the pivot points on their X axis before damping happens.
+阻尼發生前軸心點之間在 X 軸上的最小差異。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ The minimum difference between the pivot points on their X axis before damping h
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of restitution once the limits are surpassed. The lower, the more velocity-energy gets lost.
+超出限制後的補償。數值越低，損失的速度能量越多。
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ The amount of restitution once the limits are surpassed. The lower, the more vel
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-A factor applied to the movement across the slider axis once the limits get surpassed. The lower, the slower the movement.
+一旦超過極限，套用於滑桿軸上移動的係數。越低，運動越慢。
 
 .. rst-class:: classref-item-separator
 
@@ -564,7 +564,7 @@ A factor applied to the movement across the slider axis once the limits get surp
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The maximum difference between the pivot points on their X axis before damping happens.
+阻尼發生前軸心點之間在 X 軸上的最大差異。
 
 .. rst-class:: classref-item-separator
 
@@ -581,7 +581,7 @@ The maximum difference between the pivot points on their X axis before damping h
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of damping inside the slider limits.
+滑桿內部的阻尼量受到限制。
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ The amount of damping inside the slider limits.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of restitution inside the slider limits.
+滑桿限制內的恢復量。
 
 .. rst-class:: classref-item-separator
 
@@ -615,7 +615,7 @@ The amount of restitution inside the slider limits.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-A factor applied to the movement across the slider axis as long as the slider is in the limits. The lower, the slower the movement.
+只要滑桿在限制範圍內，就套用於滑桿軸上移動的係數。越低，運動越慢。
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ A factor applied to the movement across the slider axis as long as the slider is
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of damping when movement is across axes orthogonal to the slider.
+當移動穿過垂直於滑桿的軸時的阻尼量。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ The amount of damping when movement is across axes orthogonal to the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-The amount of restitution when movement is across axes orthogonal to the slider.
+當移動穿過垂直於滑桿的軸時的恢復量。
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ The amount of restitution when movement is across axes orthogonal to the slider.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_SliderJoint3D_Param>`\ ) |const|
 
-A factor applied to the movement across axes orthogonal to the slider.
+套用於在垂直於滑桿的軸上移動的係數。
 
 .. rst-class:: classref-section-separator
 
@@ -674,8 +674,8 @@ A factor applied to the movement across axes orthogonal to the slider.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SliderJoint3D_method_get_param:
 
@@ -697,12 +697,12 @@ Returns the value of the given parameter.
 
 Assigns ``value`` to the given parameter.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,23 +5,23 @@
 DPITexture
 ==========
 
-**Experimental:** This class may be changed or removed in future versions.
+**实验性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG image.
+可自动缩放的 :ref:`Texture2D<class_Texture2D>`\ ，基于 SVG 图像。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An automatically scalable :ref:`Texture2D<class_Texture2D>` based on an SVG image. **DPITexture**\ s are used to automatically re-rasterize icons and other texture based UI theme elements to match viewport scale and font oversampling. See also :ref:`ProjectSettings.display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` ("canvas_items" mode) and :ref:`Viewport.oversampling_override<class_Viewport_property_oversampling_override>`.
+可自动缩放的 :ref:`Texture2D<class_Texture2D>`\ ，基于 SVG 图像。\ **DPITexture** 可以对图标及其他基于纹理的 UI 主题元素自动重新进行栅格化，从而匹配视口的缩放和字体过采样设置。另见 :ref:`ProjectSettings.display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`\ （“canvas_items”模式）和 :ref:`Viewport.oversampling_override<class_Viewport_property_oversampling_override>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_DPITexture_property_base_scale:
 
@@ -76,7 +76,7 @@ Property Descriptions
 - |void| **set_base_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_base_scale**\ (\ )
 
-Texture scale. ``1.0`` is the original SVG size. Higher values result in a larger image.
+纹理缩放。\ ``1.0`` 是原始 SVG 大小。值越大得到的图像越大。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ Texture scale. ``1.0`` is the original SVG size. Higher values result in a large
 - |void| **set_color_map**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_color_map**\ (\ )
 
-If set, remaps texture colors according to :ref:`Color<class_Color>`-:ref:`Color<class_Color>` map.
+设置后，会根据 :ref:`Color<class_Color>`-:ref:`Color<class_Color>` 映射对纹理中的颜色进行重映射。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ If set, remaps texture colors according to :ref:`Color<class_Color>`-:ref:`Color
 - |void| **set_saturation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_saturation**\ (\ )
 
-Overrides texture saturation.
+覆盖纹理饱和度。
 
 .. rst-class:: classref-section-separator
 
@@ -118,8 +118,8 @@ Overrides texture saturation.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_DPITexture_method_create_from_string:
 
@@ -139,7 +139,7 @@ Creates a new **DPITexture** and initializes it by allocating and setting the SV
 
 :ref:`RID<class_RID>` **get_scaled_rid**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_scaled_rid>`
 
-Returns the :ref:`RID<class_RID>` of the texture rasterized to match the oversampling of the currently drawn canvas item.
+返回栅格化后的纹理 :ref:`RID<class_RID>`\ ，与当前绘制的画布项的过采样匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Returns this SVG texture's source code.
 
 |void| **set_size_override**\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_DPITexture_method_set_size_override>`
 
-Resizes the texture to the specified dimensions.
+将纹理的大小调整为指定的尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -177,12 +177,12 @@ Resizes the texture to the specified dimensions.
 
 Sets this SVG texture's source code.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

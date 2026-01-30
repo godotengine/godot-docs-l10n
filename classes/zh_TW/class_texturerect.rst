@@ -5,28 +5,28 @@
 TextureRect
 ===========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A control that displays a texture.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A control that displays a texture, for example an icon inside a GUI. The texture's placement can be controlled with the :ref:`stretch_mode<class_TextureRect_property_stretch_mode>` property. It can scale, tile, or stay centered inside its bounding rectangle.
+顯示紋理的控制項。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+顯示紋理的控制項，例如顯示 GUI 中的圖示。可以使用 :ref:`stretch_mode<class_TextureRect_property_stretch_mode>` 屬性控制紋理的放置。可以在邊界框中進行縮放、平鋪、居中。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_TextureRect_ExpandMode:
 
@@ -66,7 +66,7 @@ enum **ExpandMode**: :ref:`🔗<enum_TextureRect_ExpandMode>`
 
 :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **EXPAND_KEEP_SIZE** = ``0``
 
-The minimum size will be equal to texture size, i.e. **TextureRect** can't be smaller than the texture.
+最小尺寸將等於紋理尺寸，即 **TextureRect** 不能小於紋理。
 
 .. _class_TextureRect_constant_EXPAND_IGNORE_SIZE:
 
@@ -74,7 +74,7 @@ The minimum size will be equal to texture size, i.e. **TextureRect** can't be sm
 
 :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **EXPAND_IGNORE_SIZE** = ``1``
 
-The size of the texture won't be considered for minimum size calculation, so the **TextureRect** can be shrunk down past the texture size.
+紋理尺寸不會用於計算最小尺寸，所以 **TextureRect** 可以縮減得比紋理尺寸小。
 
 .. _class_TextureRect_constant_EXPAND_FIT_WIDTH:
 
@@ -82,7 +82,7 @@ The size of the texture won't be considered for minimum size calculation, so the
 
 :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **EXPAND_FIT_WIDTH** = ``2``
 
-The height of the texture will be ignored. Minimum width will be equal to the current height. Useful for horizontal layouts, e.g. inside :ref:`HBoxContainer<class_HBoxContainer>`.
+會忽略紋理的高度。最小寬度與目前高度一致。可用於橫向佈局，例如在 :ref:`HBoxContainer<class_HBoxContainer>` 中。
 
 .. _class_TextureRect_constant_EXPAND_FIT_WIDTH_PROPORTIONAL:
 
@@ -90,7 +90,7 @@ The height of the texture will be ignored. Minimum width will be equal to the cu
 
 :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **EXPAND_FIT_WIDTH_PROPORTIONAL** = ``3``
 
-Same as :ref:`EXPAND_FIT_WIDTH<class_TextureRect_constant_EXPAND_FIT_WIDTH>`, but keeps texture's aspect ratio.
+與 :ref:`EXPAND_FIT_WIDTH<class_TextureRect_constant_EXPAND_FIT_WIDTH>` 相同，但保持紋理的長寬比。
 
 .. _class_TextureRect_constant_EXPAND_FIT_HEIGHT:
 
@@ -98,7 +98,7 @@ Same as :ref:`EXPAND_FIT_WIDTH<class_TextureRect_constant_EXPAND_FIT_WIDTH>`, bu
 
 :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **EXPAND_FIT_HEIGHT** = ``4``
 
-The width of the texture will be ignored. Minimum height will be equal to the current width. Useful for vertical layouts, e.g. inside :ref:`VBoxContainer<class_VBoxContainer>`.
+會忽略紋理的寬度。最小高度與目前寬度一致。可用於縱向佈局，例如在 :ref:`VBoxContainer<class_VBoxContainer>` 中。
 
 .. _class_TextureRect_constant_EXPAND_FIT_HEIGHT_PROPORTIONAL:
 
@@ -106,7 +106,7 @@ The width of the texture will be ignored. Minimum height will be equal to the cu
 
 :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **EXPAND_FIT_HEIGHT_PROPORTIONAL** = ``5``
 
-Same as :ref:`EXPAND_FIT_HEIGHT<class_TextureRect_constant_EXPAND_FIT_HEIGHT>`, but keeps texture's aspect ratio.
+與 :ref:`EXPAND_FIT_HEIGHT<class_TextureRect_constant_EXPAND_FIT_HEIGHT>` 相同，但保持紋理的長寬比。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ enum **StretchMode**: :ref:`🔗<enum_TextureRect_StretchMode>`
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_SCALE** = ``0``
 
-Scale to fit the node's bounding rectangle.
+縮放以適應節點的邊界矩形。
 
 .. _class_TextureRect_constant_STRETCH_TILE:
 
@@ -132,7 +132,7 @@ Scale to fit the node's bounding rectangle.
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_TILE** = ``1``
 
-Tile inside the node's bounding rectangle.
+在節點的邊界矩形內平鋪。
 
 .. _class_TextureRect_constant_STRETCH_KEEP:
 
@@ -140,7 +140,7 @@ Tile inside the node's bounding rectangle.
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_KEEP** = ``2``
 
-The texture keeps its original size and stays in the bounding rectangle's top-left corner.
+紋理保持它的原始尺寸，並保持在邊界矩形的左上角。
 
 .. _class_TextureRect_constant_STRETCH_KEEP_CENTERED:
 
@@ -148,7 +148,7 @@ The texture keeps its original size and stays in the bounding rectangle's top-le
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_KEEP_CENTERED** = ``3``
 
-The texture keeps its original size and stays centered in the node's bounding rectangle.
+紋理保持其原始大小，並在節點的邊界矩形中保持居中。
 
 .. _class_TextureRect_constant_STRETCH_KEEP_ASPECT:
 
@@ -156,7 +156,7 @@ The texture keeps its original size and stays centered in the node's bounding re
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_KEEP_ASPECT** = ``4``
 
-Scale the texture to fit the node's bounding rectangle, but maintain the texture's aspect ratio.
+縮放紋理以適應節點的邊界矩形，但保持紋理的長寬比。
 
 .. _class_TextureRect_constant_STRETCH_KEEP_ASPECT_CENTERED:
 
@@ -164,7 +164,7 @@ Scale the texture to fit the node's bounding rectangle, but maintain the texture
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_KEEP_ASPECT_CENTERED** = ``5``
 
-Scale the texture to fit the node's bounding rectangle, center it and maintain its aspect ratio.
+縮放紋理以適應節點的邊界矩形，使其居中並保持其長寬比。
 
 .. _class_TextureRect_constant_STRETCH_KEEP_ASPECT_COVERED:
 
@@ -172,7 +172,7 @@ Scale the texture to fit the node's bounding rectangle, center it and maintain i
 
 :ref:`StretchMode<enum_TextureRect_StretchMode>` **STRETCH_KEEP_ASPECT_COVERED** = ``6``
 
-Scale the texture so that the shorter side fits the bounding rectangle. The other side clips to the node's limits.
+縮放紋理，使較短的一邊適應邊界矩形。另一邊則裁剪到節點的界限內。
 
 .. rst-class:: classref-section-separator
 
@@ -180,8 +180,8 @@ Scale the texture so that the shorter side fits the bounding rectangle. The othe
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_TextureRect_property_expand_mode:
 
@@ -194,7 +194,7 @@ Property Descriptions
 - |void| **set_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_TextureRect_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_TextureRect_ExpandMode>` **get_expand_mode**\ (\ )
 
-**Experimental:** Using :ref:`EXPAND_FIT_WIDTH<class_TextureRect_constant_EXPAND_FIT_WIDTH>`, :ref:`EXPAND_FIT_WIDTH_PROPORTIONAL<class_TextureRect_constant_EXPAND_FIT_WIDTH_PROPORTIONAL>`, :ref:`EXPAND_FIT_HEIGHT<class_TextureRect_constant_EXPAND_FIT_HEIGHT>`, or :ref:`EXPAND_FIT_HEIGHT_PROPORTIONAL<class_TextureRect_constant_EXPAND_FIT_HEIGHT_PROPORTIONAL>` may result in unstable behavior in some :ref:`Container<class_Container>` controls. This behavior may be re-evaluated and changed in the future.
+**實驗性：** Using :ref:`EXPAND_FIT_WIDTH<class_TextureRect_constant_EXPAND_FIT_WIDTH>`, :ref:`EXPAND_FIT_WIDTH_PROPORTIONAL<class_TextureRect_constant_EXPAND_FIT_WIDTH_PROPORTIONAL>`, :ref:`EXPAND_FIT_HEIGHT<class_TextureRect_constant_EXPAND_FIT_HEIGHT>`, or :ref:`EXPAND_FIT_HEIGHT_PROPORTIONAL<class_TextureRect_constant_EXPAND_FIT_HEIGHT_PROPORTIONAL>` may result in unstable behavior in some :ref:`Container<class_Container>` controls. This behavior may be re-evaluated and changed in the future.
 
 Defines how minimum size is determined based on the texture's size.
 
@@ -213,7 +213,7 @@ Defines how minimum size is determined based on the texture's size.
 - |void| **set_flip_h**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_h**\ (\ )
 
-If ``true``, texture is flipped horizontally.
+若為 ``true``\ ，紋理將水平翻轉。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ If ``true``, texture is flipped horizontally.
 - |void| **set_flip_v**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flipped_v**\ (\ )
 
-If ``true``, texture is flipped vertically.
+若為 ``true``\ ，紋理將垂直翻轉。
 
 .. rst-class:: classref-item-separator
 
@@ -264,14 +264,14 @@ Controls the texture's behavior when resizing the node's bounding rectangle.
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-The node's :ref:`Texture2D<class_Texture2D>` resource.
+該節點的 :ref:`Texture2D<class_Texture2D>` 資源。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

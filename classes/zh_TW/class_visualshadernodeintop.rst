@@ -5,21 +5,21 @@
 VisualShaderNodeIntOp
 =====================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An integer scalar operator to be used within the visual shader graph.
+整數標量運算子，在視覺化著色器圖中使用。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Applies :ref:`operator<class_VisualShaderNodeIntOp_property_operator>` to two integer inputs: ``a`` and ``b``.
+將 :ref:`operator<class_VisualShaderNodeIntOp_property_operator>` 套用於兩個整數輸入：\ ``a`` 和 ``b``\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeIntOp_Operator:
 
@@ -49,7 +49,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeIntOp_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_ADD** = ``0``
 
-Sums two numbers using ``a + b``.
+使用 ``a + b`` 將兩個數字相加。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_SUB:
 
@@ -57,7 +57,7 @@ Sums two numbers using ``a + b``.
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_SUB** = ``1``
 
-Subtracts two numbers using ``a - b``.
+使用 ``a - b`` 將兩個數字相減。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_MUL:
 
@@ -65,7 +65,7 @@ Subtracts two numbers using ``a - b``.
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_MUL** = ``2``
 
-Multiplies two numbers using ``a * b``.
+使用 ``a * b`` 將兩個數字相乘。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_DIV:
 
@@ -73,7 +73,7 @@ Multiplies two numbers using ``a * b``.
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_DIV** = ``3``
 
-Divides two numbers using ``a / b``.
+使用 ``a / b`` 將兩個數字相除。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_MOD:
 
@@ -81,7 +81,7 @@ Divides two numbers using ``a / b``.
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_MOD** = ``4``
 
-Calculates the remainder of two numbers using ``a % b``.
+使用 ``a % b`` 計算兩個數字的餘數。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_MAX:
 
@@ -89,7 +89,7 @@ Calculates the remainder of two numbers using ``a % b``.
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_MAX** = ``5``
 
-Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.
+返回兩個數中的較大者。在 Godot 著色器語言中，會被翻譯為 ``max(a, b)``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_MIN:
 
@@ -97,7 +97,7 @@ Returns the greater of two numbers. Translates to ``max(a, b)`` in the Godot Sha
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_MIN** = ``6``
 
-Returns the lesser of two numbers. Translates to ``max(a, b)`` in the Godot Shader Language.
+返回兩個數字中的較小者。在 Godot 著色器語言中會被翻譯為 ``min(a, b)``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_BITWISE_AND:
 
@@ -105,7 +105,7 @@ Returns the lesser of two numbers. Translates to ``max(a, b)`` in the Godot Shad
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_BITWISE_AND** = ``7``
 
-Returns the result of bitwise ``AND`` operation on the integer. Translates to ``a & b`` in the Godot Shader Language.
+返回對該整數進行按位元與 ``AND`` 運算的結果。在 Godot 著色器語言中會被翻譯為 ``a & b``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_BITWISE_OR:
 
@@ -113,7 +113,7 @@ Returns the result of bitwise ``AND`` operation on the integer. Translates to ``
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_BITWISE_OR** = ``8``
 
-Returns the result of bitwise ``OR`` operation for two integers. Translates to ``a | b`` in the Godot Shader Language.
+返回對該整數進行按位元或 ``OR`` 運算的結果。在 Godot 著色器語言中會被翻譯為 ``a | b``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_BITWISE_XOR:
 
@@ -121,7 +121,7 @@ Returns the result of bitwise ``OR`` operation for two integers. Translates to `
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_BITWISE_XOR** = ``9``
 
-Returns the result of bitwise ``XOR`` operation for two integers. Translates to ``a ^ b`` in the Godot Shader Language.
+返回對該整數進行按位元異或 ``XOR`` 運算的結果。在 Godot 著色器語言中會被翻譯為 ``a ^ b``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_BITWISE_LEFT_SHIFT:
 
@@ -129,7 +129,7 @@ Returns the result of bitwise ``XOR`` operation for two integers. Translates to 
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_BITWISE_LEFT_SHIFT** = ``10``
 
-Returns the result of bitwise left shift operation on the integer. Translates to ``a << b`` in the Godot Shader Language.
+返回對該整數進行按位元左移運算的結果。在 Godot 著色器語言中會被翻譯為 ``a << b``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_BITWISE_RIGHT_SHIFT:
 
@@ -137,7 +137,7 @@ Returns the result of bitwise left shift operation on the integer. Translates to
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_BITWISE_RIGHT_SHIFT** = ``11``
 
-Returns the result of bitwise right shift operation on the integer. Translates to ``a >> b`` in the Godot Shader Language.
+返回對該整數進行按位元右移運算的結果。在 Godot 著色器語言中會被翻譯為 ``a >> b``\ 。
 
 .. _class_VisualShaderNodeIntOp_constant_OP_ENUM_SIZE:
 
@@ -145,7 +145,7 @@ Returns the result of bitwise right shift operation on the integer. Translates t
 
 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` **OP_ENUM_SIZE** = ``12``
 
-Represents the size of the :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` enum.
+代表 :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -153,8 +153,8 @@ Represents the size of the :ref:`Operator<enum_VisualShaderNodeIntOp_Operator>` 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeIntOp_property_operator:
 
@@ -169,12 +169,12 @@ Property Descriptions
 
 An operator to be applied to the inputs.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

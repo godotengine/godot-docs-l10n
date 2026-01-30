@@ -5,14 +5,14 @@
 StyleBoxFlat
 ============
 
-**Inherits:** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A customizable :ref:`StyleBox<class_StyleBox>` that doesn't use a texture.
+不使用紋理的自訂 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 By configuring various properties of this style box, you can achieve many common looks without the need of a texture. This includes optionally rounded borders, antialiasing, shadows, and skew.
 
@@ -33,8 +33,8 @@ The relative system now would take the 1:2 ratio of the two left corners to calc
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -123,8 +123,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_StyleBoxFlat_property_anti_aliasing:
 
@@ -137,9 +137,9 @@ Property Descriptions
 - |void| **set_anti_aliased**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_anti_aliased**\ (\ )
 
-Antialiasing draws a small ring around the edges, which fades to transparency. As a result, edges look much smoother. This is only noticeable when using rounded corners or :ref:`skew<class_StyleBoxFlat_property_skew>`.
+抗鋸齒會在邊緣周圍繪製一個漸變到透明的小環。因此邊緣看起來會更加平滑。這僅在使用圓角或 :ref:`skew<class_StyleBoxFlat_property_skew>` 時才明顯。
 
-\ **Note:** When using beveled corners with 45-degree angles (:ref:`corner_detail<class_StyleBoxFlat_property_corner_detail>` = 1), it is recommended to set :ref:`anti_aliasing<class_StyleBoxFlat_property_anti_aliasing>` to ``false`` to ensure crisp visuals and avoid possible visual glitches.
+\ **注意：**\ 使用 45 度倒角（\ :ref:`corner_detail<class_StyleBoxFlat_property_corner_detail>` = 1）時，建議將 :ref:`anti_aliasing<class_StyleBoxFlat_property_anti_aliasing>` 設為 ``false``\ ，這樣可以保證畫面銳利、避免一些顯示問題。
 
 .. rst-class:: classref-item-separator
 
@@ -156,9 +156,9 @@ Antialiasing draws a small ring around the edges, which fades to transparency. A
 - |void| **set_aa_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_aa_size**\ (\ )
 
-This changes the size of the antialiasing effect. ``1.0`` is recommended for an optimal result at 100% scale, identical to how rounded rectangles are rendered in web browsers and most vector drawing software.
+修改抗鋸齒效果的大小。要在 100% 縮放時達到最佳效果推薦使用 ``1.0``\ ，和網頁流覽器以及大多數向量圖繪製軟體中圓角矩陣的繪製方式是一致的。
 
-\ **Note:** Higher values may produce a blur effect but can also create undesired artifacts on small boxes with large-radius corners.
+\ **注意：**\ 較高的值可能產生模糊效果，但框本身較小、圓角半徑較大的情況下也可能產生不理想的顯示問題。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ This changes the size of the antialiasing effect. ``1.0`` is recommended for an 
 - |void| **set_bg_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_bg_color**\ (\ )
 
-The background color of the stylebox.
+StyleBox的背景顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ The background color of the stylebox.
 - |void| **set_border_blend**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_border_blend**\ (\ )
 
-If ``true``, the border will fade into the background color.
+如果為 ``true``\ ，邊框會淡入背景色。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ If ``true``, the border will fade into the background color.
 - |void| **set_border_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_border_color**\ (\ )
 
-Sets the color of the border.
+設定邊框的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Sets the color of the border.
 - |void| **set_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, width\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Border width for the bottom border.
+底邊框的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Border width for the bottom border.
 - |void| **set_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, width\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Border width for the left border.
+左邊框的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Border width for the left border.
 - |void| **set_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, width\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Border width for the right border.
+右邊框的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Border width for the right border.
 - |void| **set_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, width\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Border width for the top border.
+頂邊框的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -294,11 +294,11 @@ Border width for the top border.
 - |void| **set_corner_detail**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_corner_detail**\ (\ )
 
-This sets the number of vertices used for each corner. Higher values result in rounder corners but take more processing power to compute. When choosing a value, you should take the corner radius (:ref:`set_corner_radius_all()<class_StyleBoxFlat_method_set_corner_radius_all>`) into account.
+設定用於每個角的頂點數。更高的值生成更圓的角，但需要更多的處理計算。選擇值時，應考慮角半徑（\ :ref:`set_corner_radius_all()<class_StyleBoxFlat_method_set_corner_radius_all>`\ ）。
 
-For corner radii less than 10, ``4`` or ``5`` should be enough. For corner radii less than 30, values between ``8`` and ``12`` should be enough.
+對於小於 10 的角半徑，\ ``4`` 或 ``5`` 應該就足夠。對於小於 30 的角半徑，\ ``8`` 和 ``12`` 之間的值應該足夠。
 
-A corner detail of ``1`` will result in chamfered corners instead of rounded corners, which is useful for some artistic effects.
+\ ``1``\ 的角細節會導致倒角而不是圓角，這對於某些藝術效果很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ A corner detail of ``1`` will result in chamfered corners instead of rounded cor
 - |void| **set_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`, radius\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`\ ) |const|
 
-The bottom-left corner's radius. If ``0``, the corner is not rounded.
+左下角的半徑。如果為 ``0``\ ，則該角不圓滑。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ The bottom-left corner's radius. If ``0``, the corner is not rounded.
 - |void| **set_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`, radius\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`\ ) |const|
 
-The bottom-right corner's radius. If ``0``, the corner is not rounded.
+右下角的半徑。如果為 ``0``\ ，則該角不圓滑。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ The bottom-right corner's radius. If ``0``, the corner is not rounded.
 - |void| **set_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`, radius\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`\ ) |const|
 
-The top-left corner's radius. If ``0``, the corner is not rounded.
+左上角的半徑。如果為 ``0``\ ，則該角不圓滑。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The top-left corner's radius. If ``0``, the corner is not rounded.
 - |void| **set_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`, radius\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_corner_radius**\ (\ corner\: :ref:`Corner<enum_@GlobalScope_Corner>`\ ) |const|
 
-The top-right corner's radius. If ``0``, the corner is not rounded.
+右上角的半徑。如果為 ``0``\ ，則該角不圓滑。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ The top-right corner's radius. If ``0``, the corner is not rounded.
 - |void| **set_draw_center**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_center_enabled**\ (\ )
 
-Toggles drawing of the inner part of the stylebox.
+切換繪製 StyleBox 的內部部分。
 
 .. rst-class:: classref-item-separator
 
@@ -400,9 +400,9 @@ Toggles drawing of the inner part of the stylebox.
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Expands the stylebox outside of the control rect on the bottom edge. Useful in combination with :ref:`border_width_bottom<class_StyleBoxFlat_property_border_width_bottom>` to draw a border outside the control rect.
+將該樣式盒擴充到該控制項矩形的底邊。可以與 :ref:`border_width_bottom<class_StyleBoxFlat_property_border_width_bottom>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **Note:** Unlike :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>`, :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>` does *not* affect the size of the clickable area for :ref:`Control<class_Control>`\ s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>` 不同，\ :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -419,9 +419,9 @@ Expands the stylebox outside of the control rect on the bottom edge. Useful in c
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Expands the stylebox outside of the control rect on the left edge. Useful in combination with :ref:`border_width_left<class_StyleBoxFlat_property_border_width_left>` to draw a border outside the control rect.
+將該樣式盒擴充到該控制項矩形的左邊。可以與 :ref:`border_width_left<class_StyleBoxFlat_property_border_width_left>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **Note:** Unlike :ref:`StyleBox.content_margin_left<class_StyleBox_property_content_margin_left>`, :ref:`expand_margin_left<class_StyleBoxFlat_property_expand_margin_left>` does *not* affect the size of the clickable area for :ref:`Control<class_Control>`\ s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_left<class_StyleBox_property_content_margin_left>` 不同，\ :ref:`expand_margin_left<class_StyleBoxFlat_property_expand_margin_left>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -438,9 +438,9 @@ Expands the stylebox outside of the control rect on the left edge. Useful in com
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Expands the stylebox outside of the control rect on the right edge. Useful in combination with :ref:`border_width_right<class_StyleBoxFlat_property_border_width_right>` to draw a border outside the control rect.
+將該樣式盒擴充到該控制項矩形的右邊。可以與 :ref:`border_width_right<class_StyleBoxFlat_property_border_width_right>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **Note:** Unlike :ref:`StyleBox.content_margin_right<class_StyleBox_property_content_margin_right>`, :ref:`expand_margin_right<class_StyleBoxFlat_property_expand_margin_right>` does *not* affect the size of the clickable area for :ref:`Control<class_Control>`\ s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_right<class_StyleBox_property_content_margin_right>` 不同，\ :ref:`expand_margin_right<class_StyleBoxFlat_property_expand_margin_right>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -457,9 +457,9 @@ Expands the stylebox outside of the control rect on the right edge. Useful in co
 - |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Expands the stylebox outside of the control rect on the top edge. Useful in combination with :ref:`border_width_top<class_StyleBoxFlat_property_border_width_top>` to draw a border outside the control rect.
+將該樣式盒擴充到該控制項矩形的頂邊。可以與 :ref:`border_width_top<class_StyleBoxFlat_property_border_width_top>` 組合，在該控制項矩形之外繪製邊框。
 
-\ **Note:** Unlike :ref:`StyleBox.content_margin_top<class_StyleBox_property_content_margin_top>`, :ref:`expand_margin_top<class_StyleBoxFlat_property_expand_margin_top>` does *not* affect the size of the clickable area for :ref:`Control<class_Control>`\ s. This can negatively impact usability if used wrong, as the user may try to click an area of the StyleBox that cannot actually receive clicks.
+\ **注意：**\ 與 :ref:`StyleBox.content_margin_top<class_StyleBox_property_content_margin_top>` 不同，\ :ref:`expand_margin_top<class_StyleBoxFlat_property_expand_margin_top>` *並不會*\ 影響 :ref:`Control<class_Control>` 的可點擊區域。錯誤使用時會對可用性造成負面影響，因為使用者可能會點擊該 StyleBox 上實際無法接受點擊的區域。
 
 .. rst-class:: classref-item-separator
 
@@ -476,7 +476,7 @@ Expands the stylebox outside of the control rect on the top edge. Useful in comb
 - |void| **set_shadow_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_shadow_color**\ (\ )
 
-The color of the shadow. This has no effect if :ref:`shadow_size<class_StyleBoxFlat_property_shadow_size>` is lower than 1.
+陰影的顏色。如果 :ref:`shadow_size<class_StyleBoxFlat_property_shadow_size>` 小於 1，這將不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -493,7 +493,7 @@ The color of the shadow. This has no effect if :ref:`shadow_size<class_StyleBoxF
 - |void| **set_shadow_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_shadow_offset**\ (\ )
 
-The shadow offset in pixels. Adjusts the position of the shadow relatively to the stylebox.
+以圖元為單位的陰影偏移。相對於StyleBox調整陰影的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ The shadow offset in pixels. Adjusts the position of the shadow relatively to th
 - |void| **set_shadow_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_shadow_size**\ (\ )
 
-The shadow size in pixels.
+以圖元為單位的陰影大小。
 
 .. rst-class:: classref-item-separator
 
@@ -527,9 +527,9 @@ The shadow size in pixels.
 - |void| **set_skew**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_skew**\ (\ )
 
-If set to a non-zero value on either axis, :ref:`skew<class_StyleBoxFlat_property_skew>` distorts the StyleBox horizontally and/or vertically. This can be used for "futuristic"-style UIs. Positive values skew the StyleBox towards the right (X axis) and upwards (Y axis), while negative values skew the StyleBox towards the left (X axis) and downwards (Y axis).
+如果任何軸被設為了非零值，\ :ref:`skew<class_StyleBoxFlat_property_skew>` 就會將該 StyleBox 進行橫向和/或縱向變形。可用於實作“未來風”的 UI。正值會讓該 StyleBox 朝右（X 軸）上（Y 軸）偏斜，負值會讓該 StyleBox 朝左（X 軸）下（Y 軸）偏斜。
 
-\ **Note:** To ensure text does not touch the StyleBox's edges, consider increasing the :ref:`StyleBox<class_StyleBox>`'s content margin (see :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>`). It is preferable to increase the content margin instead of the expand margin (see :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>`), as increasing the expand margin does not increase the size of the clickable area for :ref:`Control<class_Control>`\ s.
+\ **注意：**\ 為了讓文字不觸碰到該 StyleBox 的邊緣，請考慮增大該 :ref:`StyleBox<class_StyleBox>` 的內容邊距（見 :ref:`StyleBox.content_margin_bottom<class_StyleBox_property_content_margin_bottom>`\ ）。增大內容邊距比增大擴展邊距（見 :ref:`expand_margin_bottom<class_StyleBoxFlat_property_expand_margin_bottom>`\ ）更好，因為增大擴充邊距並不會增大 :ref:`Control<class_Control>` 的可點擊區域。
 
 .. rst-class:: classref-section-separator
 
@@ -537,8 +537,8 @@ If set to a non-zero value on either axis, :ref:`skew<class_StyleBoxFlat_propert
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_StyleBoxFlat_method_get_border_width:
 
@@ -546,7 +546,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **get_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_StyleBoxFlat_method_get_border_width>`
 
-Returns the specified :ref:`Side<enum_@GlobalScope_Side>`'s border width.
+返回指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的邊框寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Returns the specified :ref:`Side<enum_@GlobalScope_Side>`'s border width.
 
 :ref:`int<class_int>` **get_border_width_min**\ (\ ) |const| :ref:`🔗<class_StyleBoxFlat_method_get_border_width_min>`
 
-Returns the smallest border width out of all four borders.
+返回所有四條邊中，最小的邊框寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -582,7 +582,7 @@ Returns the given ``corner``'s radius.
 
 :ref:`float<class_float>` **get_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_StyleBoxFlat_method_get_expand_margin>`
 
-Returns the size of the specified :ref:`Side<enum_@GlobalScope_Side>`'s expand margin.
+返回指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的擴充邊距的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +594,7 @@ Returns the size of the specified :ref:`Side<enum_@GlobalScope_Side>`'s expand m
 
 |void| **set_border_width**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StyleBoxFlat_method_set_border_width>`
 
-Sets the specified :ref:`Side<enum_@GlobalScope_Side>`'s border width to ``width`` pixels.
+將指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的邊框寬度設定為 ``width`` 圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ Sets the specified :ref:`Side<enum_@GlobalScope_Side>`'s border width to ``width
 
 |void| **set_border_width_all**\ (\ width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StyleBoxFlat_method_set_border_width_all>`
 
-Sets the border width to ``width`` pixels for all sides.
+將所有邊的邊框寬度設定為 ``width`` 圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -630,7 +630,7 @@ Sets the corner radius to ``radius`` pixels for the given ``corner``.
 
 |void| **set_corner_radius_all**\ (\ radius\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StyleBoxFlat_method_set_corner_radius_all>`
 
-Sets the corner radius to ``radius`` pixels for all corners.
+將所有角的圓角半徑設定為 ``radius`` 圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -642,7 +642,7 @@ Sets the corner radius to ``radius`` pixels for all corners.
 
 |void| **set_expand_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StyleBoxFlat_method_set_expand_margin>`
 
-Sets the expand margin to ``size`` pixels for the specified :ref:`Side<enum_@GlobalScope_Side>`.
+將指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的擴充邊距設定為 ``size`` 圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -654,14 +654,14 @@ Sets the expand margin to ``size`` pixels for the specified :ref:`Side<enum_@Glo
 
 |void| **set_expand_margin_all**\ (\ size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_StyleBoxFlat_method_set_expand_margin_all>`
 
-Sets the expand margin to ``size`` pixels for all sides.
+將所有邊的擴充邊距都設定為 ``size`` 圖元。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

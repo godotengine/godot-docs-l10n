@@ -5,30 +5,30 @@
 AudioEffectInstance
 ===================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`
+**被繼承：** :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`
 
-Manipulates the audio it receives for a given effect.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-An audio effect instance manipulates the audio it receives for a given effect. This instance is automatically created by an :ref:`AudioEffect<class_AudioEffect>` when it is added to a bus, and should usually not be created directly. If necessary, it can be fetched at run-time with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
+處理對應效果所接收的音訊。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+音訊效果實例會針對對應效果處理其接收的音訊。該實例於 :ref:`AudioEffect<class_AudioEffect>` 加入匯流排時自動建立，一般不應手動建立；如有需要，可於執行時透過 :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` 取得。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioEffectInstance_private_method__process:
 
@@ -54,9 +54,9 @@ Method Descriptions
 
 |void| **_process**\ (\ src_buffer\: ``const void*``, dst_buffer\: ``AudioFrame*``, frame_count\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_AudioEffectInstance_private_method__process>`
 
-Called by the :ref:`AudioServer<class_AudioServer>` to process this effect. When :ref:`_process_silence()<class_AudioEffectInstance_private_method__process_silence>` is not overridden or it returns ``false``, this method is called only when the bus is active.
+此方法由 :ref:`AudioServer<class_AudioServer>` 呼叫以處理此效果。若未覆寫 :ref:`_process_silence()<class_AudioEffectInstance_private_method__process_silence>` 或其回傳值為 ``false``\ ，僅當匯流排處於作用狀態時才會被呼叫。
 
-\ **Note:** It is not useful to override this method in GDScript or C#. Only GDExtension can take advantage of it.
+\ **注意：** 在 GDScript 或 C# 中覆寫本方法並無實際效益；只有以 GDExtension 實作時才能發揮效用。
 
 .. rst-class:: classref-item-separator
 
@@ -68,16 +68,16 @@ Called by the :ref:`AudioServer<class_AudioServer>` to process this effect. When
 
 :ref:`bool<class_bool>` **_process_silence**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioEffectInstance_private_method__process_silence>`
 
-Override this method to customize the processing behavior of this effect instance.
+覆寫此方法可自訂此效果實例的處理行為。
 
-Should return ``true`` to force the :ref:`AudioServer<class_AudioServer>` to always call :ref:`_process()<class_AudioEffectInstance_private_method__process>`, even if the bus has been muted or cannot otherwise be heard.
+若回傳 ``true``\ ，將強制 :ref:`AudioServer<class_AudioServer>` 無論匯流排是否靜音或不可聽見，都持續呼叫 :ref:`_process()<class_AudioEffectInstance_private_method__process>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

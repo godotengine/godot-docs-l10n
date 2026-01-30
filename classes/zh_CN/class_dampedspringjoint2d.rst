@@ -5,21 +5,21 @@
 DampedSpringJoint2D
 ===================
 
-**Inherits:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A physics joint that connects two 2D physics bodies with a spring-like force.
+通过类似弹簧的力连接两个 2D 物理物体的物理关节。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A physics joint that connects two 2D physics bodies with a spring-like force. This behaves like a spring that always wants to stretch to a given length.
+通过类似弹簧的力连接两个 2D 物理物体的物理关节。这表现得像一个总是想拉伸到给定长度的弹簧。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_DampedSpringJoint2D_property_damping:
 
@@ -54,7 +54,7 @@ Property Descriptions
 - |void| **set_damping**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_damping**\ (\ )
 
-The spring joint's damping ratio. A value between ``0`` and ``1``. When the two bodies move into different directions the system tries to align them to the spring axis again. A high :ref:`damping<class_DampedSpringJoint2D_property_damping>` value forces the attached bodies to align faster.
+弹簧关节的阻尼比。值在 ``0`` 和 ``1`` 之间。当两个实体移动到不同的方向时，系统会尝试将它们再次对准弹簧轴。高的 :ref:`damping<class_DampedSpringJoint2D_property_damping>` 值迫使连接的实体更快地对齐。
 
 .. rst-class:: classref-item-separator
 
@@ -71,7 +71,7 @@ The spring joint's damping ratio. A value between ``0`` and ``1``. When the two 
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-The spring joint's maximum length. The two attached bodies cannot stretch it past this value.
+弹簧关节的最大长度。两个连接体不能超过这个值。
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ The spring joint's maximum length. The two attached bodies cannot stretch it pas
 - |void| **set_rest_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rest_length**\ (\ )
 
-When the bodies attached to the spring joint move they stretch or squash it. The joint always tries to resize towards this length.
+当连接到弹簧关节的机构移动时，它们会拉伸或挤压它。关节总是尝试向这个长度调整。
 
 .. rst-class:: classref-item-separator
 
@@ -105,14 +105,14 @@ When the bodies attached to the spring joint move they stretch or squash it. The
 - |void| **set_stiffness**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_stiffness**\ (\ )
 
-The higher the value, the less the bodies attached to the joint will deform it. The joint applies an opposing force to the bodies, the product of the stiffness multiplied by the size difference from its resting length.
+该值越大，连接在关节上的机构变形越小。关节对各机构施加一个相反的力，即刚度乘以与其静止长度的大小差的乘积。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

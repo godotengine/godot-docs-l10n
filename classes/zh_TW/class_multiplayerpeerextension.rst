@@ -8,21 +8,21 @@
 MultiplayerPeerExtension
 ========================
 
-**Inherits:** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Class that can be inherited to implement custom multiplayer API networking layers via GDExtension.
+可以通過 GDExtension 繼承，從而實作自訂多人 API 網路層的類。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This class is designed to be inherited from a GDExtension plugin to implement custom networking layers for the multiplayer API (such as WebRTC). All the methods below **must** be implemented to have a working custom multiplayer implementation. See also :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+該類旨在被一個 GDExtension 外掛程式繼承，以實作多人遊戲 API（例如 WebRTC）的自定義網路層。下面的所有方法都\ **必須**\ 被實作，才能實作一個有效的自訂多人遊戲實作。另請參閱 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -81,8 +81,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_MultiplayerPeerExtension_private_method__close:
 
@@ -90,7 +90,7 @@ Method Descriptions
 
 |void| **_close**\ (\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__close>`
 
-Called when the multiplayer peer should be immediately closed (see :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`).
+該多人遊戲對等體應當立即關閉時呼叫（見 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ Called when the multiplayer peer should be immediately closed (see :ref:`Multipl
 
 |void| **_disconnect_peer**\ (\ p_peer\: :ref:`int<class_int>`, p_force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__disconnect_peer>`
 
-Called when the connected ``p_peer`` should be forcibly disconnected (see :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`).
+應當強制斷開與對等體 ``p_peer`` 的連接時呼叫（見 :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Called when the connected ``p_peer`` should be forcibly disconnected (see :ref:`
 
 :ref:`int<class_int>` **_get_available_packet_count**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_available_packet_count>`
 
-Called when the available packet count is internally requested by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+:ref:`MultiplayerAPI<class_MultiplayerAPI>` 對可用的封包數量發出內部請求時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ Called when the available packet count is internally requested by the :ref:`Mult
 
 :ref:`ConnectionStatus<enum_MultiplayerPeer_ConnectionStatus>` **_get_connection_status**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_connection_status>`
 
-Called when the connection status is requested on the :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.get_connection_status()<class_MultiplayerPeer_method_get_connection_status>`).
+:ref:`MultiplayerAPI<class_MultiplayerAPI>` 請求連接狀態時呼叫（見 :ref:`MultiplayerPeer.get_connection_status()<class_MultiplayerPeer_method_get_connection_status>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Called when the connection status is requested on the :ref:`MultiplayerPeer<clas
 
 :ref:`int<class_int>` **_get_max_packet_size**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_max_packet_size>`
 
-Called when the maximum allowed packet size (in bytes) is requested by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`.
+:ref:`MultiplayerAPI<class_MultiplayerAPI>` 請求最大允許的封包大小（單位為位元組）時呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Called when the maximum allowed packet size (in bytes) is requested by the :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **_get_packet**\ (\ r_buffer\: ``const uint8_t **``, r_buffer_size\: ``int32_t*``\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_packet>`
 
-Called when a packet needs to be received by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, with ``r_buffer_size`` being the size of the binary ``r_buffer`` in bytes.
+:ref:`MultiplayerAPI<class_MultiplayerAPI>` 需要接收一個封包時呼叫，\ ``r_buffer_size`` 是二進位緩衝區 ``r_buffer`` 的位元組大小。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Called when a packet needs to be received by the :ref:`MultiplayerAPI<class_Mult
 
 :ref:`int<class_int>` **_get_packet_channel**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_packet_channel>`
 
-Called to get the channel over which the next available packet was received. See :ref:`MultiplayerPeer.get_packet_channel()<class_MultiplayerPeer_method_get_packet_channel>`.
+返回接收下一個可用封包所使用的通道。請參閱 :ref:`MultiplayerPeer.get_packet_channel()<class_MultiplayerPeer_method_get_packet_channel>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Called to get the transfer mode the remote peer used to send the next available 
 
 :ref:`int<class_int>` **_get_packet_peer**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_packet_peer>`
 
-Called when the ID of the :ref:`MultiplayerPeer<class_MultiplayerPeer>` who sent the most recent packet is requested (see :ref:`MultiplayerPeer.get_packet_peer()<class_MultiplayerPeer_method_get_packet_peer>`).
+請求最近封包發送方 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的 ID 時呼叫（見 :ref:`MultiplayerPeer.get_packet_peer()<class_MultiplayerPeer_method_get_packet_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Called when the ID of the :ref:`MultiplayerPeer<class_MultiplayerPeer>` who sent
 
 :ref:`PackedByteArray<class_PackedByteArray>` **_get_packet_script**\ (\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_packet_script>`
 
-Called when a packet needs to be received by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, if :ref:`_get_packet()<class_MultiplayerPeerExtension_private_method__get_packet>` isn't implemented. Use this when extending this class via GDScript.
+如果 :ref:`_get_packet()<class_MultiplayerPeerExtension_private_method__get_packet>` 未實作，則在有封包需要被 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 接收時呼叫。使用 GDScript 擴充這個類時請使用。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Called when a packet needs to be received by the :ref:`MultiplayerAPI<class_Mult
 
 :ref:`int<class_int>` **_get_transfer_channel**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_transfer_channel>`
 
-Called when the transfer channel to use is read on this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`).
+讀取 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的傳輸通道時呼叫（見 :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Called when the transfer channel to use is read on this :ref:`MultiplayerPeer<cl
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **_get_transfer_mode**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_transfer_mode>`
 
-Called when the transfer mode to use is read on this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`).
+讀取 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的傳輸模式時呼叫（見 :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +234,7 @@ Called when the transfer mode to use is read on this :ref:`MultiplayerPeer<class
 
 :ref:`int<class_int>` **_get_unique_id**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_unique_id>`
 
-Called when the unique ID of this :ref:`MultiplayerPeer<class_MultiplayerPeer>` is requested (see :ref:`MultiplayerPeer.get_unique_id()<class_MultiplayerPeer_method_get_unique_id>`). The value must be between ``1`` and ``2147483647``.
+請求 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的唯一 ID 時呼叫（見 :ref:`MultiplayerPeer.get_unique_id()<class_MultiplayerPeer_method_get_unique_id>`\ ）。取值必須在 ``1`` 和 ``2147483647`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Called when the unique ID of this :ref:`MultiplayerPeer<class_MultiplayerPeer>` 
 
 :ref:`bool<class_bool>` **_is_refusing_new_connections**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__is_refusing_new_connections>`
 
-Called when the "refuse new connections" status is requested on this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.refuse_new_connections<class_MultiplayerPeer_property_refuse_new_connections>`).
+請求 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的“拒絕新連接”狀態時呼叫（見 :ref:`MultiplayerPeer.refuse_new_connections<class_MultiplayerPeer_property_refuse_new_connections>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Called when the "refuse new connections" status is requested on this :ref:`Multi
 
 :ref:`bool<class_bool>` **_is_server**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__is_server>`
 
-Called when the "is server" status is requested on the :ref:`MultiplayerAPI<class_MultiplayerAPI>`. See :ref:`MultiplayerAPI.is_server()<class_MultiplayerAPI_method_is_server>`.
+請求 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的“是否為伺服器”狀態時呼叫。見 :ref:`MultiplayerAPI.is_server()<class_MultiplayerAPI_method_is_server>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ Called when the "is server" status is requested on the :ref:`MultiplayerAPI<clas
 
 :ref:`bool<class_bool>` **_is_server_relay_supported**\ (\ ) |virtual| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__is_server_relay_supported>`
 
-Called to check if the server can act as a relay in the current configuration. See :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>`.
+檢查伺服器在目前配置中是否能夠作為中繼時呼叫。見 :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ Called to check if the server can act as a relay in the current configuration. S
 
 |void| **_poll**\ (\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__poll>`
 
-Called when the :ref:`MultiplayerAPI<class_MultiplayerAPI>` is polled. See :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>`.
+輪詢 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 時呼叫。見 :ref:`MultiplayerAPI.poll()<class_MultiplayerAPI_method_poll>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Called when the :ref:`MultiplayerAPI<class_MultiplayerAPI>` is polled. See :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **_put_packet**\ (\ p_buffer\: ``const uint8_t*``, p_buffer_size\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__put_packet>`
 
-Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, with ``p_buffer_size`` being the size of the binary ``p_buffer`` in bytes.
+需要讓 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 發送封包時呼叫，\ ``p_buffer_size`` 是二進位緩衝區 ``p_buffer`` 的位元組大小。
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_Multipla
 
 :ref:`Error<enum_@GlobalScope_Error>` **_put_packet_script**\ (\ p_buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__put_packet_script>`
 
-Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_MultiplayerAPI>`, if :ref:`_put_packet()<class_MultiplayerPeerExtension_private_method__put_packet>` isn't implemented. Use this when extending this class via GDScript.
+如果 :ref:`_put_packet()<class_MultiplayerPeerExtension_private_method__put_packet>` 未實作，則在需要讓 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 發送封包時調用。使用 GDScript 擴充這個類時請使用。
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Called when a packet needs to be sent by the :ref:`MultiplayerAPI<class_Multipla
 
 |void| **_set_refuse_new_connections**\ (\ p_enable\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_MultiplayerPeerExtension_private_method__set_refuse_new_connections>`
 
-Called when the "refuse new connections" status is set on this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.refuse_new_connections<class_MultiplayerPeer_property_refuse_new_connections>`).
+設定 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的“拒絕新連接”狀態時呼叫（見 :ref:`MultiplayerPeer.refuse_new_connections<class_MultiplayerPeer_property_refuse_new_connections>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ Called when the "refuse new connections" status is set on this :ref:`Multiplayer
 
 |void| **_set_target_peer**\ (\ p_peer\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__set_target_peer>`
 
-Called when the target peer to use is set for this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`).
+設定 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的目標對等體時呼叫（見 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ Called when the target peer to use is set for this :ref:`MultiplayerPeer<class_M
 
 |void| **_set_transfer_channel**\ (\ p_channel\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__set_transfer_channel>`
 
-Called when the channel to use is set for this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`).
+設定 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的通道時呼叫（見 :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -354,14 +354,14 @@ Called when the channel to use is set for this :ref:`MultiplayerPeer<class_Multi
 
 |void| **_set_transfer_mode**\ (\ p_mode\: :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__set_transfer_mode>`
 
-Called when the transfer mode is set on this :ref:`MultiplayerPeer<class_MultiplayerPeer>` (see :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`).
+設定 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的傳輸模式時呼叫（見 :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`\ ）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

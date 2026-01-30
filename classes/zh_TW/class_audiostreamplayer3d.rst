@@ -8,34 +8,34 @@
 AudioStreamPlayer3D
 ===================
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Plays positional sound in 3D space.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Plays audio with positional sound effects, based on the relative position of the audio listener. Positional effects include distance attenuation, directionality, and the Doppler effect. For greater realism, a low-pass filter is applied to distant sounds. This can be disabled by setting :ref:`attenuation_filter_cutoff_hz<class_AudioStreamPlayer3D_property_attenuation_filter_cutoff_hz>` to ``20500``.
-
-By default, audio is heard from the camera position. This can be changed by adding an :ref:`AudioListener3D<class_AudioListener3D>` node to the scene and enabling it by calling :ref:`AudioListener3D.make_current()<class_AudioListener3D_method_make_current>` on it.
-
-See also :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` to play a sound non-positionally.
-
-\ **Note:** Hiding an **AudioStreamPlayer3D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer3D**'s audio output, set :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` to a very low value like ``-100`` (which isn't audible to human hearing).
+在 3D 空間中播放與位置相關的聲音。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio streams <../tutorials/audio/audio_streams>`
+根據聆聽者的相對位置播放具備空間化效果的音訊。位置效果包含距離衰減、方向性與多普勒效應。為了更逼真，系統會對遠處聲音套用低通濾波器；若要停用，將 :ref:`attenuation_filter_cutoff_hz<class_AudioStreamPlayer3D_property_attenuation_filter_cutoff_hz>` 設為 ``20500``\ 。
+
+預設情況下，聲音從攝影機位置輸出。你可以在場景中新增 :ref:`AudioListener3D<class_AudioListener3D>` 節點，並呼叫 :ref:`AudioListener3D.make_current()<class_AudioListener3D_method_make_current>` 來啟用以改變聆聽位置。
+
+若要播放非空間化音效，請參閱 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`\ 。
+
+\ **注意：** 隱藏 **AudioStreamPlayer3D** 節點不會停止音訊輸出。若需暫時靜音，可將 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` 設為極低值，例如 ``-100``\ （人耳已無法聽見）。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊流 <../tutorials/audio/audio_streams>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -88,8 +88,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -114,8 +114,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_AudioStreamPlayer3D_signal_finished:
 
@@ -123,7 +123,7 @@ Signals
 
 **finished**\ (\ ) :ref:`🔗<class_AudioStreamPlayer3D_signal_finished>`
 
-Emitted when the audio stops playing.
+當音訊停止播放時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -131,8 +131,8 @@ Emitted when the audio stops playing.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AudioStreamPlayer3D_AttenuationModel:
 
@@ -146,7 +146,7 @@ enum **AttenuationModel**: :ref:`🔗<enum_AudioStreamPlayer3D_AttenuationModel>
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_INVERSE_DISTANCE** = ``0``
 
-Attenuation of loudness according to linear distance.
+依線性距離衰減響度。
 
 .. _class_AudioStreamPlayer3D_constant_ATTENUATION_INVERSE_SQUARE_DISTANCE:
 
@@ -154,7 +154,7 @@ Attenuation of loudness according to linear distance.
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_INVERSE_SQUARE_DISTANCE** = ``1``
 
-Attenuation of loudness according to squared distance.
+依平方距離衰減響度。
 
 .. _class_AudioStreamPlayer3D_constant_ATTENUATION_LOGARITHMIC:
 
@@ -162,7 +162,7 @@ Attenuation of loudness according to squared distance.
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_LOGARITHMIC** = ``2``
 
-Attenuation of loudness according to logarithmic distance.
+依對數距離衰減響度。
 
 .. _class_AudioStreamPlayer3D_constant_ATTENUATION_DISABLED:
 
@@ -170,7 +170,7 @@ Attenuation of loudness according to logarithmic distance.
 
 :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **ATTENUATION_DISABLED** = ``3``
 
-No attenuation of loudness according to distance. The sound will still be heard positionally, unlike an :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`. :ref:`ATTENUATION_DISABLED<class_AudioStreamPlayer3D_constant_ATTENUATION_DISABLED>` can be combined with a :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` value greater than ``0.0`` to achieve linear attenuation clamped to a sphere of a defined size.
+響度不隨距離衰減，但仍保留空間定位（不同於 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`\ ）。可將 :ref:`ATTENUATION_DISABLED<class_AudioStreamPlayer3D_constant_ATTENUATION_DISABLED>` 與大於 ``0.0`` 的 :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` 搭配，以線性方式在指定球體範圍內衰減。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioStreamPlayer3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>` **DOPPLER_TRACKING_DISABLED** = ``0``
 
-Disables doppler tracking.
+停用多普勒追蹤。
 
 .. _class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_IDLE_STEP:
 
@@ -196,7 +196,7 @@ Disables doppler tracking.
 
 :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Executes doppler tracking during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
+於邏輯處理影格期間執行多普勒追蹤（見 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
 
 .. _class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -204,7 +204,7 @@ Executes doppler tracking during process frames (see :ref:`Node.NOTIFICATION_INT
 
 :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Executes doppler tracking during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`).
+於物理影格期間執行多普勒追蹤（見 :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -212,8 +212,8 @@ Executes doppler tracking during physics frames (see :ref:`Node.NOTIFICATION_INT
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioStreamPlayer3D_property_area_mask:
 
@@ -226,7 +226,7 @@ Property Descriptions
 - |void| **set_area_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_area_mask**\ (\ )
 
-Determines which :ref:`Area3D<class_Area3D>` layers affect the sound for reverb and audio bus effects. Areas can be used to redirect :ref:`AudioStream<class_AudioStream>`\ s so that they play in a certain audio bus. An example of how you might use this is making a "water" area so that sounds played in the water are redirected through an audio bus to make them sound like they are being played underwater.
+決定哪些 :ref:`Area3D<class_Area3D>` 分層影響混響與音訊匯流排效果。你可以利用區域將 :ref:`AudioStream<class_AudioStream>` 重新導向至特定匯流排。例如建立「水域」區域，讓水中的聲音透過匯流排處理，聽起來像在水下播放。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Determines which :ref:`Area3D<class_Area3D>` layers affect the sound for reverb 
 - |void| **set_attenuation_filter_cutoff_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attenuation_filter_cutoff_hz**\ (\ )
 
-The cutoff frequency of the attenuation low-pass filter, in Hz. A sound above this frequency is attenuated more than a sound below this frequency. To disable this effect, set this to ``20500`` as this frequency is above the human hearing limit.
+衰減低通濾波器的截止頻率（Hz）。高於此頻率的聲音會比低於此頻率的聲音被更大幅度衰減。若要停用，請設為 ``20500``\ （高於人耳可聽極限）。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ The cutoff frequency of the attenuation low-pass filter, in Hz. A sound above th
 - |void| **set_attenuation_filter_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attenuation_filter_db**\ (\ )
 
-Amount how much the filter affects the loudness, in decibels.
+濾波器對響度影響的幅度，單位為分貝。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Amount how much the filter affects the loudness, in decibels.
 - |void| **set_attenuation_model**\ (\ value\: :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>`\ )
 - :ref:`AttenuationModel<enum_AudioStreamPlayer3D_AttenuationModel>` **get_attenuation_model**\ (\ )
 
-Decides if audio should get quieter with distance linearly, quadratically, logarithmically, or not be affected by distance, effectively disabling attenuation.
+決定音訊是否隨距離而線性、平方、對數衰減，或完全不受距離影響（即停用衰減）。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Decides if audio should get quieter with distance linearly, quadratically, logar
 - |void| **set_autoplay**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autoplay_enabled**\ (\ )
 
-If ``true``, audio plays when the AudioStreamPlayer3D node is added to scene tree.
+若為 ``true``\ ，當 AudioStreamPlayer3D 節點加入場景樹時即開始播放。
 
 .. rst-class:: classref-item-separator
 
@@ -311,9 +311,9 @@ If ``true``, audio plays when the AudioStreamPlayer3D node is added to scene tre
 - |void| **set_bus**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_bus**\ (\ )
 
-The bus on which this audio is playing.
+此音訊播放所在的匯流排。
 
-\ **Note:** When setting this property, keep in mind that no validation is performed to see if the given name matches an existing bus. This is because audio bus layouts might be loaded after this property is set. If this given name can't be resolved at runtime, it will fall back to ``"Master"``.
+\ **注意：** 設定時不會驗證名稱是否存在，因為匯流排配置可能稍後才載入。若執行期間找不到對應匯流排，將回退至 ``"Master"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Decides in which step the Doppler effect should be calculated.
 - |void| **set_emission_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_angle**\ (\ )
 
-The angle in which the audio reaches a listener unattenuated.
+聲音在此角度內傳至聽者時不會衰減。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The angle in which the audio reaches a listener unattenuated.
 - |void| **set_emission_angle_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emission_angle_enabled**\ (\ )
 
-If ``true``, the audio should be attenuated according to the direction of the sound.
+若為 ``true``\ ，將依聲音方向進行衰減。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ If ``true``, the audio should be attenuated according to the direction of the so
 - |void| **set_emission_angle_filter_attenuation_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_angle_filter_attenuation_db**\ (\ )
 
-Attenuation factor used if listener is outside of :ref:`emission_angle_degrees<class_AudioStreamPlayer3D_property_emission_angle_degrees>` and :ref:`emission_angle_enabled<class_AudioStreamPlayer3D_property_emission_angle_enabled>` is set, in decibels.
+當聽者位於 :ref:`emission_angle_degrees<class_AudioStreamPlayer3D_property_emission_angle_degrees>` 之外且 :ref:`emission_angle_enabled<class_AudioStreamPlayer3D_property_emission_angle_enabled>` 啟用時，採用的衰減係數（分貝）。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Attenuation factor used if listener is outside of :ref:`emission_angle_degrees<c
 - |void| **set_max_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_db**\ (\ )
 
-Sets the absolute maximum of the sound level, in decibels.
+設定聲音輸出的絕對最大值，單位為分貝。
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +417,7 @@ Sets the absolute maximum of the sound level, in decibels.
 - |void| **set_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_distance**\ (\ )
 
-The distance past which the sound can no longer be heard at all. Only has an effect if set to a value greater than ``0.0``. :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` works in tandem with :ref:`unit_size<class_AudioStreamPlayer3D_property_unit_size>`. However, unlike :ref:`unit_size<class_AudioStreamPlayer3D_property_unit_size>` whose behavior depends on the :ref:`attenuation_model<class_AudioStreamPlayer3D_property_attenuation_model>`, :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` always works in a linear fashion. This can be used to prevent the **AudioStreamPlayer3D** from requiring audio mixing when the listener is far away, which saves CPU resources.
+超過此距離後將完全聽不到聲音。僅在設為大於 ``0.0`` 時生效。\ :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` 與 :ref:`unit_size<class_AudioStreamPlayer3D_property_unit_size>` 協同運作；不同於 :ref:`unit_size<class_AudioStreamPlayer3D_property_unit_size>` 受 :ref:`attenuation_model<class_AudioStreamPlayer3D_property_attenuation_model>` 影響，\ :ref:`max_distance<class_AudioStreamPlayer3D_property_max_distance>` 一律採線性模式。這可避免聽者距離過遠時仍需混音，節省 CPU。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ The distance past which the sound can no longer be heard at all. Only has an eff
 - |void| **set_max_polyphony**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_polyphony**\ (\ )
 
-The maximum number of sounds this node can play at the same time. Playing additional sounds after this value is reached will cut off the oldest sounds.
+此節點同時可播放的最大音效數。超過後播放新音效會截斷最舊的音效。
 
 .. rst-class:: classref-item-separator
 
@@ -451,11 +451,11 @@ The maximum number of sounds this node can play at the same time. Playing additi
 - |void| **set_panning_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_panning_strength**\ (\ )
 
-Scales the panning strength for this node by multiplying the base :ref:`ProjectSettings.audio/general/3d_panning_strength<class_ProjectSettings_property_audio/general/3d_panning_strength>` by this factor. If the product is ``0.0`` then stereo panning is disabled and the volume is the same for all channels. If the product is ``1.0`` then one of the channels will be muted when the sound is located exactly to the left (or right) of the listener.
+將此節點的聲道平移強度設為 :ref:`ProjectSettings.audio/general/3d_panning_strength<class_ProjectSettings_property_audio/general/3d_panning_strength>` 乘以本係數。若乘積為 ``0.0``\ ，則停用立體聲平移，所有聲道音量相同；若為 ``1.0``\ ，當聲源位於聽者正左或正右時，將靜音其中一個聲道。
 
-Two speaker stereo arrangements implement the `WebAudio standard for StereoPannerNode Panning <https://webaudio.github.io/web-audio-api/#stereopanner-algorithm>`__ where the volume is cosine of half the azimuth angle to the ear.
+兩聲道立體聲配置遵循 `WebAudio StereoPannerNode <https://webaudio.github.io/web-audio-api/#stereopanner-algorithm>`__ 演算法，以耳朵方位角一半的餘弦值計算音量。
 
-For other speaker arrangements such as the 5.1 and 7.1 the SPCAP (Speaker-Placement Correction Amplitude) algorithm is implemented.
+至於 5.1、7.1 等其他喇叭配置，則實作 SPCAP（Speaker-Placement Correction Amplitude）演算法。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ For other speaker arrangements such as the 5.1 and 7.1 the SPCAP (Speaker-Placem
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch and the tempo of the audio, as a multiplier of the audio sample's sample rate.
+音訊的音高與節奏倍率，相對於其取樣率。
 
 .. rst-class:: classref-item-separator
 
@@ -489,9 +489,9 @@ The pitch and the tempo of the audio, as a multiplier of the audio sample's samp
 - |void| **set_playback_type**\ (\ value\: :ref:`PlaybackType<enum_AudioServer_PlaybackType>`\ )
 - :ref:`PlaybackType<enum_AudioServer_PlaybackType>` **get_playback_type**\ (\ )
 
-**Experimental:** This property may be changed or removed in future versions.
+**實驗性：** 此屬性可能在未來版本中變更或移除。
 
-The playback type of the stream player. If set other than to the default value, it will force that playback type.
+串流播放器的播放型態。若設定為非預設值，將強制使用該型態。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ The playback type of the stream player. If set other than to the default value, 
 - |void| **set_playing**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_playing**\ (\ )
 
-If ``true``, audio is playing or is queued to be played (see :ref:`play()<class_AudioStreamPlayer3D_method_play>`).
+若為 ``true``\ ，音訊正在播放或已排入播放佇列（見 :ref:`play()<class_AudioStreamPlayer3D_method_play>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ If ``true``, audio is playing or is queued to be played (see :ref:`play()<class_
 - |void| **set_stream**\ (\ value\: :ref:`AudioStream<class_AudioStream>`\ )
 - :ref:`AudioStream<class_AudioStream>` **get_stream**\ (\ )
 
-The :ref:`AudioStream<class_AudioStream>` resource to be played.
+要播放的 :ref:`AudioStream<class_AudioStream>` 資源。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ The :ref:`AudioStream<class_AudioStream>` resource to be played.
 - |void| **set_stream_paused**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_stream_paused**\ (\ )
 
-If ``true``, the playback is paused. You can resume it by setting :ref:`stream_paused<class_AudioStreamPlayer3D_property_stream_paused>` to ``false``.
+若為 ``true`` 則播放暫停，將 :ref:`stream_paused<class_AudioStreamPlayer3D_property_stream_paused>` 設為 ``false`` 可恢復。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ If ``true``, the playback is paused. You can resume it by setting :ref:`stream_p
 - |void| **set_unit_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_unit_size**\ (\ )
 
-The factor for the attenuation effect. Higher values make the sound audible over a larger distance.
+衰減係數。值越高，聲音可被聽見的距離越遠。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The factor for the attenuation effect. Higher values make the sound audible over
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-The base sound level before attenuation, in decibels.
+衰減前的基礎聲級，單位為分貝。
 
 .. rst-class:: classref-item-separator
 
@@ -593,9 +593,9 @@ The base sound level before attenuation, in decibels.
 - |void| **set_volume_linear**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_linear**\ (\ )
 
-The base sound level before attenuation, as a linear value.
+衰減前的基礎聲級，以線性值表示。
 
-\ **Note:** This member modifies :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` for convenience. The returned value is equivalent to the result of :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` on :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>`. Setting this member is equivalent to setting :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` to the result of :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` on a value.
+\ **注意：**\ 此成員會同步修改 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>`\ 。傳回值等同於對 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` 執行 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` 的結果。設定此成員則等同於將 :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` 設為對該值執行 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` 的結果。
 
 .. rst-class:: classref-section-separator
 
@@ -603,8 +603,8 @@ The base sound level before attenuation, as a linear value.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamPlayer3D_method_get_playback_position:
 
@@ -612,7 +612,7 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_playback_position**\ (\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_get_playback_position>`
 
-Returns the position in the :ref:`AudioStream<class_AudioStream>`.
+回傳在 :ref:`AudioStream<class_AudioStream>` 中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Returns the position in the :ref:`AudioStream<class_AudioStream>`.
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **get_stream_playback**\ (\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_get_stream_playback>`
 
-Returns the :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` object associated with this **AudioStreamPlayer3D**.
+返回與此 **AudioStreamPlayer3D** 關聯的 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Returns the :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` object associa
 
 :ref:`bool<class_bool>` **has_stream_playback**\ (\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_has_stream_playback>`
 
-Returns whether the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` can return the :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` object or not.
+回傳此 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 是否能取得 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` 物件。
 
 .. rst-class:: classref-item-separator
 
@@ -648,7 +648,7 @@ Returns whether the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` can return
 
 |void| **play**\ (\ from_position\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_play>`
 
-Queues the audio to play on the next physics frame, from the given position ``from_position``, in seconds.
+將音訊排入佇列，於下個物理影格自 ``from_position``\ （秒）開始播放。
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Queues the audio to play on the next physics frame, from the given position ``fr
 
 |void| **seek**\ (\ to_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_seek>`
 
-Sets the position from which audio will be played, in seconds.
+設定音訊開始播放的位置（秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -672,14 +672,14 @@ Sets the position from which audio will be played, in seconds.
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_stop>`
 
-Stops the audio.
+停止音訊。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

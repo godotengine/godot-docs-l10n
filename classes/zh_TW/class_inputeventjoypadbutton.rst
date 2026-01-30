@@ -8,28 +8,28 @@
 InputEventJoypadButton
 ======================
 
-**Inherits:** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a gamepad button being pressed or released.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Input event type for gamepad buttons. For gamepad analog sticks and joysticks, see :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
+代表按下或鬆開的遊戲手柄按鈕。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
+遊戲手柄按鈕的輸入事件型別。對於遊戲手柄模擬搖桿和操縱桿，請參閱 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_InputEventJoypadButton_property_button_index:
 
@@ -62,7 +62,7 @@ Property Descriptions
 - |void| **set_button_index**\ (\ value\: :ref:`JoyButton<enum_@GlobalScope_JoyButton>`\ )
 - :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **get_button_index**\ (\ )
 
-Button identifier. One of the :ref:`JoyButton<enum_@GlobalScope_JoyButton>` button constants.
+按鈕識別字。\ :ref:`JoyButton<enum_@GlobalScope_JoyButton>` 按鈕常數之一。
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Button identifier. One of the :ref:`JoyButton<enum_@GlobalScope_JoyButton>` butt
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-If ``true``, the button's state is pressed. If ``false``, the button's state is released.
+如果為 ``true``\ ，按鈕的狀態被按下。如果為 ``false``\ ，按鈕的狀態被釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -96,14 +96,14 @@ If ``true``, the button's state is pressed. If ``false``, the button's state is 
 - |void| **set_pressure**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pressure**\ (\ )
 
-**Deprecated:** This property is never set by the engine and is always ``0``.
+**已棄用：** This property is never set by the engine and is always ``0``.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

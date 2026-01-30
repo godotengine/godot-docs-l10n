@@ -5,23 +5,23 @@
 EditorResourcePreview
 =====================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node used to generate previews of resources or files.
+用於生成資源或檔案的預覽的節點。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This node is used to generate previews for resources or files.
+該節點用於生成檔案資源的預覽。
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_resource_previewer()<class_EditorInterface_method_get_resource_previewer>`.
+\ **注意：**\ 不應該直接產生實體這個類。請使用 :ref:`EditorInterface.get_resource_previewer()<class_EditorInterface_method_get_resource_previewer>` 存取單例。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_EditorResourcePreview_signal_preview_invalidated:
 
@@ -53,7 +53,7 @@ Signals
 
 **preview_invalidated**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorResourcePreview_signal_preview_invalidated>`
 
-Emitted if a preview was invalidated (changed). ``path`` corresponds to the path of the preview.
+預覽無效（更改）時發出。\ ``path`` 對應預覽的路徑。
 
 .. rst-class:: classref-section-separator
 
@@ -61,8 +61,8 @@ Emitted if a preview was invalidated (changed). ``path`` corresponds to the path
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_EditorResourcePreview_method_add_preview_generator:
 
@@ -70,7 +70,7 @@ Method Descriptions
 
 |void| **add_preview_generator**\ (\ generator\: :ref:`EditorResourcePreviewGenerator<class_EditorResourcePreviewGenerator>`\ ) :ref:`🔗<class_EditorResourcePreview_method_add_preview_generator>`
 
-Create an own, custom preview generator.
+建立一個自訂的預覽生成器。
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +82,7 @@ Create an own, custom preview generator.
 
 |void| **check_for_invalidation**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorResourcePreview_method_check_for_invalidation>`
 
-Check if the resource changed, if so, it will be invalidated and the corresponding signal emitted.
+檢查資源是否發生變化，如果發生變化，則無效，並行出相應的訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -122,14 +122,14 @@ Queue a resource file located at ``path`` for preview. Once the preview is ready
 
 |void| **remove_preview_generator**\ (\ generator\: :ref:`EditorResourcePreviewGenerator<class_EditorResourcePreviewGenerator>`\ ) :ref:`🔗<class_EditorResourcePreview_method_remove_preview_generator>`
 
-Removes a custom preview generator.
+移除自訂預覽生成器。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

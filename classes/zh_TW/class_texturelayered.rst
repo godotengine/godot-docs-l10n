@@ -5,31 +5,31 @@
 TextureLayered
 ==============
 
-**Inherits:** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CompressedTextureLayered<class_CompressedTextureLayered>`, :ref:`ImageTextureLayered<class_ImageTextureLayered>`, :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>`, :ref:`TextureLayeredRD<class_TextureLayeredRD>`
+**被繼承：** :ref:`CompressedTextureLayered<class_CompressedTextureLayered>`, :ref:`ImageTextureLayered<class_ImageTextureLayered>`, :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>`, :ref:`TextureLayeredRD<class_TextureLayeredRD>`
 
-Base class for texture types which contain the data of multiple :ref:`Image<class_Image>`\ s. Each image is of the same size and format.
+包含多個 :ref:`Image<class_Image>` 的紋理型別的基底類別。每個圖像的大小和格式都是一樣的。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Base class for :ref:`ImageTextureLayered<class_ImageTextureLayered>` and :ref:`CompressedTextureLayered<class_CompressedTextureLayered>`. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types. See also :ref:`Texture3D<class_Texture3D>`.
+:ref:`ImageTextureLayered<class_ImageTextureLayered>` 和 :ref:`CompressedTextureLayered<class_CompressedTextureLayered>` 的基底類別。不能直接使用，但包含了存取衍生資源型別所需的所有函式。另見 :ref:`Texture3D<class_Texture3D>`\ 。
 
-Data is set on a per-layer basis. For :ref:`Texture2DArray<class_Texture2DArray>`\ s, the layer specifies the array layer.
+資料是按層設定的。對於 :ref:`Texture2DArray<class_Texture2DArray>`\ ，層指定的是陣列層。
 
-All images need to have the same width, height and number of mipmap levels.
+所有圖像都需要具有相同的寬度、高度和 mipmap 級別數。
 
-A **TextureLayered** can be loaded with :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`.
+\ **TextureLayered** 可以用 :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>` 載入。
 
-Internally, Godot maps these files to their respective counterparts in the target rendering driver (Vulkan, OpenGL3).
+在內部，Godot 將這些檔對應到目標算繪驅動程式（Vulkan、OpenGL3）中的對應文件。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_TextureLayered_LayeredType:
 
@@ -85,7 +85,7 @@ enum **LayeredType**: :ref:`🔗<enum_TextureLayered_LayeredType>`
 
 :ref:`LayeredType<enum_TextureLayered_LayeredType>` **LAYERED_TYPE_2D_ARRAY** = ``0``
 
-Texture is a generic :ref:`Texture2DArray<class_Texture2DArray>`.
+紋理為通用的 :ref:`Texture2DArray<class_Texture2DArray>`\ 。
 
 .. _class_TextureLayered_constant_LAYERED_TYPE_CUBEMAP:
 
@@ -93,7 +93,7 @@ Texture is a generic :ref:`Texture2DArray<class_Texture2DArray>`.
 
 :ref:`LayeredType<enum_TextureLayered_LayeredType>` **LAYERED_TYPE_CUBEMAP** = ``1``
 
-Texture is a :ref:`Cubemap<class_Cubemap>`, with each side in its own layer (6 in total).
+紋理為 :ref:`Cubemap<class_Cubemap>`\ ，每一面都有自己的層（共 6 層）。
 
 .. _class_TextureLayered_constant_LAYERED_TYPE_CUBEMAP_ARRAY:
 
@@ -101,7 +101,7 @@ Texture is a :ref:`Cubemap<class_Cubemap>`, with each side in its own layer (6 i
 
 :ref:`LayeredType<enum_TextureLayered_LayeredType>` **LAYERED_TYPE_CUBEMAP_ARRAY** = ``2``
 
-Texture is a :ref:`CubemapArray<class_CubemapArray>`, with each cubemap being made of 6 layers.
+紋理為 :ref:`CubemapArray<class_CubemapArray>`\ ，每個立方體貼圖都由 6 層組成。
 
 .. rst-class:: classref-section-separator
 
@@ -109,8 +109,8 @@ Texture is a :ref:`CubemapArray<class_CubemapArray>`, with each cubemap being ma
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_TextureLayered_private_method__get_format:
 
@@ -118,7 +118,7 @@ Method Descriptions
 
 :ref:`Format<enum_Image_Format>` **_get_format**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__get_format>`
 
-Called when the **TextureLayered**'s format is queried.
+查詢該 **TextureLayered** 的格式時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Called when the **TextureLayered**'s format is queried.
 
 :ref:`int<class_int>` **_get_height**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__get_height>`
 
-Called when the **TextureLayered**'s height is queried.
+查詢該 **TextureLayered** 的高度時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Called when the **TextureLayered**'s height is queried.
 
 :ref:`Image<class_Image>` **_get_layer_data**\ (\ layer_index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__get_layer_data>`
 
-Called when the data for a layer in the **TextureLayered** is queried.
+查詢該 **TextureLayered** 中某一層的資料時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ Called when the data for a layer in the **TextureLayered** is queried.
 
 :ref:`int<class_int>` **_get_layered_type**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__get_layered_type>`
 
-Called when the layers' type in the **TextureLayered** is queried.
+查詢該 **TextureLayered** 的層型別時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Called when the layers' type in the **TextureLayered** is queried.
 
 :ref:`int<class_int>` **_get_layers**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__get_layers>`
 
-Called when the number of layers in the **TextureLayered** is queried.
+查詢該 **TextureLayered** 的層數時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Called when the number of layers in the **TextureLayered** is queried.
 
 :ref:`int<class_int>` **_get_width**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__get_width>`
 
-Called when the **TextureLayered**'s width queried.
+查詢該 **TextureLayered** 的寬度時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Called when the **TextureLayered**'s width queried.
 
 :ref:`bool<class_bool>` **_has_mipmaps**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_TextureLayered_private_method__has_mipmaps>`
 
-Called when the presence of mipmaps in the **TextureLayered** is queried.
+查詢該 **TextureLayered** 的 Mipmap 是否存在時被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Returns the current format being used by this texture.
 
 :ref:`int<class_int>` **get_height**\ (\ ) |const| :ref:`🔗<class_TextureLayered_method_get_height>`
 
-Returns the height of the texture in pixels. Height is typically represented by the Y axis.
+返回該紋理的高度，單位為圖元。高度通常由 Y 軸表示。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Returns the height of the texture in pixels. Height is typically represented by 
 
 :ref:`Image<class_Image>` **get_layer_data**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextureLayered_method_get_layer_data>`
 
-Returns an :ref:`Image<class_Image>` resource with the data from specified ``layer``.
+返回帶有指定 ``layer`` 層資料的 :ref:`Image<class_Image>` 圖像資源。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Returns an :ref:`Image<class_Image>` resource with the data from specified ``lay
 
 :ref:`LayeredType<enum_TextureLayered_LayeredType>` **get_layered_type**\ (\ ) |const| :ref:`🔗<class_TextureLayered_method_get_layered_type>`
 
-Returns the **TextureLayered**'s type. The type determines how the data is accessed, with cubemaps having special types.
+返回該 **TextureLayered** 的型別。型別決定了資料的存取方式，立方體圖有特殊的類型。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Returns the **TextureLayered**'s type. The type determines how the data is acces
 
 :ref:`int<class_int>` **get_layers**\ (\ ) |const| :ref:`🔗<class_TextureLayered_method_get_layers>`
 
-Returns the number of referenced :ref:`Image<class_Image>`\ s.
+返回引用的 :ref:`Image<class_Image>` 數。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Returns the number of referenced :ref:`Image<class_Image>`\ s.
 
 :ref:`int<class_int>` **get_width**\ (\ ) |const| :ref:`🔗<class_TextureLayered_method_get_width>`
 
-Returns the width of the texture in pixels. Width is typically represented by the X axis.
+返回該紋理的寬度，單位為圖元。寬度通常由 X 軸表示。
 
 .. rst-class:: classref-item-separator
 
@@ -274,14 +274,14 @@ Returns the width of the texture in pixels. Width is typically represented by th
 
 :ref:`bool<class_bool>` **has_mipmaps**\ (\ ) |const| :ref:`🔗<class_TextureLayered_method_has_mipmaps>`
 
-Returns ``true`` if the layers have generated mipmaps.
+如果層生成了 mipmap 則返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

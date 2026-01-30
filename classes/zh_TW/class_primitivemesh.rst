@@ -5,23 +5,23 @@
 PrimitiveMesh
 =============
 
-**Inherits:** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`BoxMesh<class_BoxMesh>`, :ref:`CapsuleMesh<class_CapsuleMesh>`, :ref:`CylinderMesh<class_CylinderMesh>`, :ref:`PlaneMesh<class_PlaneMesh>`, :ref:`PointMesh<class_PointMesh>`, :ref:`PrismMesh<class_PrismMesh>`, :ref:`RibbonTrailMesh<class_RibbonTrailMesh>`, :ref:`SphereMesh<class_SphereMesh>`, :ref:`TextMesh<class_TextMesh>`, :ref:`TorusMesh<class_TorusMesh>`, :ref:`TubeTrailMesh<class_TubeTrailMesh>`
+**被繼承：** :ref:`BoxMesh<class_BoxMesh>`, :ref:`CapsuleMesh<class_CapsuleMesh>`, :ref:`CylinderMesh<class_CylinderMesh>`, :ref:`PlaneMesh<class_PlaneMesh>`, :ref:`PointMesh<class_PointMesh>`, :ref:`PrismMesh<class_PrismMesh>`, :ref:`RibbonTrailMesh<class_RibbonTrailMesh>`, :ref:`SphereMesh<class_SphereMesh>`, :ref:`TextMesh<class_TextMesh>`, :ref:`TorusMesh<class_TorusMesh>`, :ref:`TubeTrailMesh<class_TubeTrailMesh>`
 
-Base class for all primitive meshes. Handles applying a :ref:`Material<class_Material>` to a primitive mesh.
+所有圖元網格的基底類別。處理將 :ref:`Material<class_Material>` 套用到圖元網格的問題。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Base class for all primitive meshes. Handles applying a :ref:`Material<class_Material>` to a primitive mesh. Examples include :ref:`BoxMesh<class_BoxMesh>`, :ref:`CapsuleMesh<class_CapsuleMesh>`, :ref:`CylinderMesh<class_CylinderMesh>`, :ref:`PlaneMesh<class_PlaneMesh>`, :ref:`PrismMesh<class_PrismMesh>`, and :ref:`SphereMesh<class_SphereMesh>`.
+所有基本網格的基底類別，能夠處理將 :ref:`Material<class_Material>` 套用到基本網格的操作。有 :ref:`BoxMesh<class_BoxMesh>`\ 、\ :ref:`CapsuleMesh<class_CapsuleMesh>`\ 、\ :ref:`CylinderMesh<class_CylinderMesh>`\ 、\ :ref:`PlaneMesh<class_PlaneMesh>`\ 、\ :ref:`PrismMesh<class_PrismMesh>`\ 、\ :ref:`SphereMesh<class_SphereMesh>` 等基本網格。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_PrimitiveMesh_property_add_uv2:
 
@@ -74,7 +74,7 @@ Property Descriptions
 - |void| **set_add_uv2**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_add_uv2**\ (\ )
 
-If set, generates UV2 UV coordinates applying a padding using the :ref:`uv2_padding<class_PrimitiveMesh_property_uv2_padding>` setting. UV2 is needed for lightmapping.
+打開後將生成 UV2 UV 座標，使用 :ref:`uv2_padding<class_PrimitiveMesh_property_uv2_padding>` 設定的間距。光照對應需要 UV2。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ If set, generates UV2 UV coordinates applying a padding using the :ref:`uv2_padd
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Overrides the :ref:`AABB<class_AABB>` with one defined by user for use with frustum culling. Especially useful to avoid unexpected culling when using a shader to offset vertices.
+使用使用者自訂的 :ref:`AABB<class_AABB>` 取代預設值，供視錐剔除使用。當著色器會偏移頂點時，可避免被意外剔除。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ This gives the same result as using :ref:`BaseMaterial3D.CULL_FRONT<class_BaseMa
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-The current :ref:`Material<class_Material>` of the primitive mesh.
+該圖元網格的目前 :ref:`Material<class_Material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -144,9 +144,9 @@ The current :ref:`Material<class_Material>` of the primitive mesh.
 - |void| **set_uv2_padding**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_uv2_padding**\ (\ )
 
-If :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>` is set, specifies the padding in pixels applied along seams of the mesh. Lower padding values allow making better use of the lightmap texture (resulting in higher texel density), but may introduce visible lightmap bleeding along edges.
+如果設定了 :ref:`add_uv2<class_PrimitiveMesh_property_add_uv2>`\ ，則指定沿網格接縫被套用的以圖元為單位的填充。較低的填充值允許更好地利用光照貼圖紋理（導致更高的紋素密度），但可能會沿邊緣引入可見的光照貼圖滲色。
 
-If the size of the lightmap texture can't be determined when generating the mesh, UV2 is calculated assuming a texture size of 1024x1024.
+如果在生成網格時無法確定光照貼圖紋理的大小，則計算 UV2 時假定紋理大小為 1024x1024。
 
 .. rst-class:: classref-section-separator
 
@@ -154,8 +154,8 @@ If the size of the lightmap texture can't be determined when generating the mesh
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_PrimitiveMesh_private_method__create_mesh_array:
 
@@ -208,12 +208,12 @@ Returns the mesh arrays used to make up the surface of this primitive mesh.
 
 Request an update of this primitive mesh based on its properties.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

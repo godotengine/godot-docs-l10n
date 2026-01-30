@@ -8,14 +8,14 @@
 SpinBox
 =======
 
-**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-An input field for numbers.
+數位的輸入欄位。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **SpinBox** is a numerical input text field. It allows entering integers and floating-point numbers. The **SpinBox** also has up and down buttons that can be clicked increase or decrease the value. The value can also be changed by dragging the mouse up or down over the **SpinBox**'s arrows.
 
@@ -54,8 +54,8 @@ See :ref:`Range<class_Range>` class for more options over the **SpinBox**.
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -174,8 +174,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SpinBox_property_alignment:
 
@@ -188,7 +188,7 @@ Property Descriptions
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-Changes the alignment of the underlying :ref:`LineEdit<class_LineEdit>`.
+更改底層 :ref:`LineEdit<class_LineEdit>` 的對齊方式。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ If not ``0``, sets the step when interacting with the arrow buttons of the **Spi
 - |void| **set_editable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editable**\ (\ )
 
-If ``true``, the **SpinBox** will be editable. Otherwise, it will be read only.
+如果為 ``true``\ ，則 **SpinBox** 將是可編輯的。否則，它將是唯讀的。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ Adds the specified prefix string before the numerical value of the **SpinBox**.
 - |void| **set_select_all_on_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_select_all_on_focus**\ (\ )
 
-If ``true``, the **SpinBox** will select the whole text when the :ref:`LineEdit<class_LineEdit>` gains focus. Clicking the up and down arrows won't trigger this behavior.
+如果為 ``true``\ ，則該 **SpinBox** 會在 :ref:`LineEdit<class_LineEdit>` 獲得焦點時選中整個文本。點擊上下箭頭不會觸發這種行為。
 
 .. rst-class:: classref-item-separator
 
@@ -319,8 +319,8 @@ Sets the value of the :ref:`Range<class_Range>` for this **SpinBox** when the :r
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SpinBox_method_apply:
 
@@ -340,9 +340,9 @@ Applies the current value of this **SpinBox**. This is equivalent to pressing :k
 
 :ref:`LineEdit<class_LineEdit>` **get_line_edit**\ (\ ) :ref:`🔗<class_SpinBox_method_get_line_edit>`
 
-Returns the :ref:`LineEdit<class_LineEdit>` instance from this **SpinBox**. You can use it to access properties and methods of :ref:`LineEdit<class_LineEdit>`.
+返回這個 **SpinBox** 中的 :ref:`LineEdit<class_LineEdit>` 實例。你可以用它來存取 :ref:`LineEdit<class_LineEdit>` 的屬性和方法。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **警告：**\ 這是一個必要的內部節點，移除和釋放它可能會導致當機。如果你想隱藏它或它的任何子節點，請使用其 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 屬性。
 
 .. rst-class:: classref-section-separator
 
@@ -350,8 +350,8 @@ Returns the :ref:`LineEdit<class_LineEdit>` instance from this **SpinBox**. You 
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_SpinBox_theme_color_down_disabled_icon_modulate:
 
@@ -721,12 +721,12 @@ Background style of the up button when being pressed.
 
 :ref:`StyleBox<class_StyleBox>` drawn in the space occupied by the separation between the up and down buttons.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

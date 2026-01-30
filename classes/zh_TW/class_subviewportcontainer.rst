@@ -5,25 +5,25 @@
 SubViewportContainer
 ====================
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A container used for displaying the contents of a :ref:`SubViewport<class_SubViewport>`.
+用於顯示 :ref:`SubViewport<class_SubViewport>` 內容的容器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A container that displays the contents of underlying :ref:`SubViewport<class_SubViewport>` child nodes. It uses the combined size of the :ref:`SubViewport<class_SubViewport>`\ s as minimum size, unless :ref:`stretch<class_SubViewportContainer_property_stretch>` is enabled.
+顯示其 :ref:`SubViewport<class_SubViewport>` 子節點內容的容器。除非啟用 :ref:`stretch<class_SubViewportContainer_property_stretch>`\ ，否則會使用 :ref:`SubViewport<class_SubViewport>` 的大小作為最小尺寸。
 
-\ **Note:** Changing a **SubViewportContainer**'s :ref:`Control.scale<class_Control_property_scale>` will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's margins instead (if it's not already in a container).
+\ **注意：**\ 更改 **SubViewportContainer** 的 :ref:`Control.scale<class_Control_property_scale>`\ ，將導致其內容出現扭曲。要更改其視覺大小，並且不造成失真，請改為調整節點的邊距（如果還不在容器中）。
 
-\ **Note:** The **SubViewportContainer** forwards mouse-enter and mouse-exit notifications to its sub-viewports.
+\ **注意：**\ 該 **SubViewportContainer** 會將滑鼠進入和滑鼠退出通知轉發到子視口。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SubViewportContainer_property_mouse_target:
 
@@ -91,9 +91,9 @@ If ``true``, the **SubViewportContainer** itself will be considered as a target.
 - |void| **set_stretch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_stretch_enabled**\ (\ )
 
-If ``true``, the sub-viewport will be automatically resized to the control's size.
+如果為 ``true``\ ，子視口將自動調整為該控制項的大小。
 
-\ **Note:** If ``true``, this will prohibit changing :ref:`SubViewport.size<class_SubViewport_property_size>` of its children manually.
+\ **注意：**\ 如果為 ``true``\ ，則會禁止手動改變其子節點的 :ref:`SubViewport.size<class_SubViewport_property_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -110,11 +110,11 @@ If ``true``, the sub-viewport will be automatically resized to the control's siz
 - |void| **set_stretch_shrink**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stretch_shrink**\ (\ )
 
-Divides the sub-viewport's effective resolution by this value while preserving its scale. This can be used to speed up rendering.
+將子視口的有效解析度除以該值，同時保持比例。可以用來加速算繪。
 
-For example, a 1280×720 sub-viewport with :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` set to ``2`` will be rendered at 640×360 while occupying the same size in the container.
+例如子視口的大小為 1280×720，當 :ref:`stretch_shrink<class_SubViewportContainer_property_stretch_shrink>` 被設定為 ``2`` 時，將以 640×360 算繪，同時在該容器中佔據相同大小。
 
-\ **Note:** :ref:`stretch<class_SubViewportContainer_property_stretch>` must be ``true`` for this property to work.
+\ **注意：**\ :ref:`stretch<class_SubViewportContainer_property_stretch>` 必須為 ``true``\ ，才能使此屬性生效。
 
 .. rst-class:: classref-section-separator
 
@@ -122,8 +122,8 @@ For example, a 1280×720 sub-viewport with :ref:`stretch_shrink<class_SubViewpor
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SubViewportContainer_private_method__propagate_input_event:
 
@@ -131,16 +131,16 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **_propagate_input_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |virtual| |const| :ref:`🔗<class_SubViewportContainer_private_method__propagate_input_event>`
 
-**Experimental:** This method may be changed or removed in future versions.
+**實驗性：** 此方法可能在未來版本中變更或移除。
 
 Virtual method to be implemented by the user. If it returns ``true``, the ``event`` is propagated to :ref:`SubViewport<class_SubViewport>` children. Propagation doesn't happen if it returns ``false``. If the function is not implemented, all events are propagated to SubViewports.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

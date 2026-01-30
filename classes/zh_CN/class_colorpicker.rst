@@ -5,30 +5,30 @@
 ColorPicker
 ===========
 
-**Inherits:** :ref:`VBoxContainer<class_VBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VBoxContainer<class_VBoxContainer>` **<** :ref:`BoxContainer<class_BoxContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A widget that provides an interface for selecting or modifying a color.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A widget that provides an interface for selecting or modifying a color. It can optionally provide functionalities like a color sampler (eyedropper), color modes, and presets.
-
-\ **Note:** This control is the color picker widget itself. You can use a :ref:`ColorPickerButton<class_ColorPickerButton>` instead if you need a button that brings up a **ColorPicker** in a popup.
+提供用于选择或修改颜色的界面的小工具。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `Tween Interpolation Demo <https://godotengine.org/asset-library/asset/2733>`__
+提供用于选择或修改颜色的界面的小工具。还可以提供取色器（吸管）、颜色模式、预设等功能。
+
+\ **注意：**\ 这个控件就是取色器本身。如果你需要一个能够弹出 **ColorPicker** 窗口的按钮，可以改用 :ref:`ColorPickerButton<class_ColorPickerButton>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `补间插值演示 <https://godotengine.org/asset-library/asset/2733>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -149,8 +149,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_ColorPicker_signal_color_changed:
 
@@ -158,7 +158,7 @@ Signals
 
 **color_changed**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_signal_color_changed>`
 
-Emitted when the color is changed.
+更改颜色时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Emitted when the color is changed.
 
 **preset_added**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_signal_preset_added>`
 
-Emitted when a preset is added.
+添加预设时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -182,7 +182,7 @@ Emitted when a preset is added.
 
 **preset_removed**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_signal_preset_removed>`
 
-Emitted when a preset is removed.
+移除预设时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -190,8 +190,8 @@ Emitted when a preset is removed.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ColorPicker_ColorModeType:
 
@@ -205,7 +205,7 @@ enum **ColorModeType**: :ref:`🔗<enum_ColorPicker_ColorModeType>`
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_RGB** = ``0``
 
-Allows editing the color with Red/Green/Blue sliders in sRGB color space.
+允许使用红、绿、蓝滑块在 sRGB 色彩空间中编辑颜色。
 
 .. _class_ColorPicker_constant_MODE_HSV:
 
@@ -213,7 +213,7 @@ Allows editing the color with Red/Green/Blue sliders in sRGB color space.
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_HSV** = ``1``
 
-Allows editing the color with Hue/Saturation/Value sliders.
+允许使用色相、饱和度、明度滑块编辑颜色。
 
 .. _class_ColorPicker_constant_MODE_RAW:
 
@@ -221,7 +221,7 @@ Allows editing the color with Hue/Saturation/Value sliders.
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_RAW** = ``2``
 
-**Deprecated:** This is replaced by :ref:`MODE_LINEAR<class_ColorPicker_constant_MODE_LINEAR>`.
+**已弃用：** This is replaced by :ref:`MODE_LINEAR<class_ColorPicker_constant_MODE_LINEAR>`.
 
 
 
@@ -231,7 +231,7 @@ Allows editing the color with Hue/Saturation/Value sliders.
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_LINEAR** = ``2``
 
-Allows editing the color with Red/Green/Blue sliders in linear color space.
+允许使用红、绿、蓝滑块在线性色彩空间中编辑颜色。
 
 .. _class_ColorPicker_constant_MODE_OKHSL:
 
@@ -239,11 +239,11 @@ Allows editing the color with Red/Green/Blue sliders in linear color space.
 
 :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **MODE_OKHSL** = ``3``
 
-Allows editing the color with Hue/Saturation/Lightness sliders.
+允许使用色相/饱和度/亮度滑块编辑颜色。
 
-OKHSL is a new color space similar to HSL but that better match perception by leveraging the Oklab color space which is designed to be simple to use, while doing a good job at predicting perceived lightness, chroma and hue.
+OKHSL 是一种类似于 HSL 的新色彩空间，但通过利用设计简单易用的 Oklab 色彩空间更好地匹配感知，同时在预测感知亮度、色度和色调方面做得很好。
 
-\ `Okhsv and Okhsl color spaces <https://bottosson.github.io/posts/colorpicker/>`__
+\ `Okhsv 和 Okhsl 色彩空间 <https://bottosson.github.io/posts/colorpicker/>`__
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ enum **PickerShapeType**: :ref:`🔗<enum_ColorPicker_PickerShapeType>`
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_HSV_RECTANGLE** = ``0``
 
-HSV Color Model rectangle color space.
+HSV 颜色模型矩形色彩空间。
 
 .. _class_ColorPicker_constant_SHAPE_HSV_WHEEL:
 
@@ -269,7 +269,7 @@ HSV Color Model rectangle color space.
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_HSV_WHEEL** = ``1``
 
-HSV Color Model rectangle color space with a wheel.
+HSV 颜色模型矩形色彩空间，带轮。
 
 .. _class_ColorPicker_constant_SHAPE_VHS_CIRCLE:
 
@@ -277,7 +277,7 @@ HSV Color Model rectangle color space with a wheel.
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_VHS_CIRCLE** = ``2``
 
-HSV Color Model circle color space. Use Saturation as a radius.
+HSV 颜色模型圆形色彩空间。半径为饱和度。
 
 .. _class_ColorPicker_constant_SHAPE_OKHSL_CIRCLE:
 
@@ -285,7 +285,7 @@ HSV Color Model circle color space. Use Saturation as a radius.
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_OKHSL_CIRCLE** = ``3``
 
-HSL OK Color Model circle color space.
+HSL OK 颜色模型圆形色彩空间。
 
 .. _class_ColorPicker_constant_SHAPE_NONE:
 
@@ -293,7 +293,7 @@ HSL OK Color Model circle color space.
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_NONE** = ``4``
 
-The color space shape and the shape select button are hidden. Can't be selected from the shapes popup.
+色彩空间形状和形状选择按钮被隐藏。不能从形状弹出窗口中选择。
 
 .. _class_ColorPicker_constant_SHAPE_OK_HS_RECTANGLE:
 
@@ -301,7 +301,7 @@ The color space shape and the shape select button are hidden. Can't be selected 
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_OK_HS_RECTANGLE** = ``5``
 
-OKHSL Color Model rectangle with constant lightness.
+具有恒定亮度的 OKHSL 颜色模型矩形。
 
 .. _class_ColorPicker_constant_SHAPE_OK_HL_RECTANGLE:
 
@@ -309,7 +309,7 @@ OKHSL Color Model rectangle with constant lightness.
 
 :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **SHAPE_OK_HL_RECTANGLE** = ``6``
 
-OKHSL Color Model rectangle with constant saturation.
+具有恒定饱和度的 OKHSL 颜色模型矩形。
 
 .. rst-class:: classref-section-separator
 
@@ -317,8 +317,8 @@ OKHSL Color Model rectangle with constant saturation.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ColorPicker_property_can_add_swatches:
 
@@ -331,7 +331,7 @@ Property Descriptions
 - |void| **set_can_add_swatches**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_swatches_enabled**\ (\ )
 
-If ``true``, it's possible to add presets under Swatches. If ``false``, the button to add presets is disabled.
+如果为 ``true``\ ，则可以在色板下添加预设。如果为 ``false``\ ，添加预设的按钮将被禁用。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ If ``true``, it's possible to add presets under Swatches. If ``false``, the butt
 - |void| **set_pick_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_pick_color**\ (\ )
 
-The currently selected color.
+当前选择的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ The currently selected color.
 - |void| **set_color_mode**\ (\ value\: :ref:`ColorModeType<enum_ColorPicker_ColorModeType>`\ )
 - :ref:`ColorModeType<enum_ColorPicker_ColorModeType>` **get_color_mode**\ (\ )
 
-The currently selected color mode.
+当前选择的颜色模式。
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ The currently selected color mode.
 - |void| **set_modes_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_modes_visible**\ (\ )
 
-If ``true``, the color mode buttons are visible.
+如果为 ``true``\ ，则颜色模式按钮可见。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ If ``true``, the color mode buttons are visible.
 - |void| **set_deferred_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deferred_mode**\ (\ )
 
-If ``true``, the color will apply only after the user releases the mouse button, otherwise it will apply immediately even in mouse motion event (which can cause performance issues).
+如果为 ``true``\ ，只有在用户松开鼠标按钮后才会应用颜色，否则即使在鼠标移动事件中也会立即应用（会造成性能问题）。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ If ``true``, the color will apply only after the user releases the mouse button,
 - |void| **set_edit_alpha**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_alpha**\ (\ )
 
-If ``true``, shows an alpha channel slider (opacity).
+如果为 ``true``\ ，则显示 Alpha 通道滑块（不透明度）。
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ If ``true``, shows an intensity slider. The intensity is applied as follows: con
 - |void| **set_hex_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hex_visible**\ (\ )
 
-If ``true``, the hex color code input field is visible.
+如果为 ``true``\ ，则十六进制颜色代码输入框可见。
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ If ``true``, the hex color code input field is visible.
 - |void| **set_picker_shape**\ (\ value\: :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>`\ )
 - :ref:`PickerShapeType<enum_ColorPicker_PickerShapeType>` **get_picker_shape**\ (\ )
 
-The shape of the color space view.
+色彩空间视图的形状。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ The shape of the color space view.
 - |void| **set_presets_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_presets_visible**\ (\ )
 
-If ``true``, the Swatches and Recent Colors presets are visible.
+如果为 ``true``\ ，则色板和近期颜色预设可见。
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ If ``true``, the Swatches and Recent Colors presets are visible.
 - |void| **set_sampler_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_sampler_visible**\ (\ )
 
-If ``true``, the color sampler and color preview are visible.
+如果为 ``true``\ ，则颜色采样器和颜色预览可见。
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ If ``true``, the color sampler and color preview are visible.
 - |void| **set_sliders_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_sliders_visible**\ (\ )
 
-If ``true``, the color sliders are visible.
+如果为 ``true``\ ，则颜色滑块可见。
 
 .. rst-class:: classref-section-separator
 
@@ -526,8 +526,8 @@ If ``true``, the color sliders are visible.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ColorPicker_method_add_preset:
 
@@ -535,9 +535,9 @@ Method Descriptions
 
 |void| **add_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_add_preset>`
 
-Adds the given color to a list of color presets. The presets are displayed in the color picker and the user will be able to select them.
+将给定的颜色添加到颜色预设列表中。预设会显示在取色器中，可以被用户选择。
 
-\ **Note:** The presets list is only for *this* color picker.
+\ **注意：**\ 预设列表仅适用于\ *这个*\ 取色器。
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ Adds the given color to a list of color presets. The presets are displayed in th
 
 |void| **add_recent_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_add_recent_preset>`
 
-Adds the given color to a list of color recent presets so that it can be picked later. Recent presets are the colors that were picked recently, a new preset is automatically created and added to recent presets when you pick a new color.
+将给定的颜色添加到近期颜色预设列表中，以便以后可以选择它。近期预设是最近选择的颜色，当选择新颜色时，会自动创建新的预设并将其添加到近期预设中。
 
-\ **Note:** The recent presets list is only for *this* color picker.
+\ **注意：**\ 近期预设列表仅适用于\ *这个*\ 取色器。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Adds the given color to a list of color recent presets so that it can be picked 
 
 |void| **erase_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_erase_preset>`
 
-Removes the given color from the list of color presets of this color picker.
+从这个取色器的颜色预设列表中移除给定的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Removes the given color from the list of color presets of this color picker.
 
 |void| **erase_recent_preset**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPicker_method_erase_recent_preset>`
 
-Removes the given color from the list of color recent presets of this color picker.
+从这个取色器的颜色近期预设列表中移除给定的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Removes the given color from the list of color recent presets of this color pick
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_presets**\ (\ ) |const| :ref:`🔗<class_ColorPicker_method_get_presets>`
 
-Returns the list of colors in the presets of the color picker.
+返回取色器的预设颜色列表。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Returns the list of colors in the presets of the color picker.
 
 :ref:`PackedColorArray<class_PackedColorArray>` **get_recent_presets**\ (\ ) |const| :ref:`🔗<class_ColorPicker_method_get_recent_presets>`
 
-Returns the list of colors in the recent presets of the color picker.
+返回取色器的近期预设中的颜色列表。
 
 .. rst-class:: classref-section-separator
 
@@ -607,8 +607,8 @@ Returns the list of colors in the recent presets of the color picker.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_ColorPicker_theme_color_focused_not_editing_cursor_color:
 
@@ -616,7 +616,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **focused_not_editing_cursor_color** = ``Color(1, 1, 1, 0.275)`` :ref:`🔗<class_ColorPicker_theme_color_focused_not_editing_cursor_color>`
 
-Color of rectangle or circle drawn when a picker shape part is focused but not editable via keyboard or joypad. Displayed *over* the picker shape, so a partially transparent color should be used to ensure the picker shape remains visible.
+当选择器的形状部分获得焦点但无法通过键盘或手柄编辑时，矩形或圆形的绘制颜色。该颜色显示在选择器形状\ *上方*\ ，因此应使用部分透明的颜色，确保选择器形状仍然可见。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +628,7 @@ Color of rectangle or circle drawn when a picker shape part is focused but not e
 
 :ref:`int<class_int>` **center_slider_grabbers** = ``1`` :ref:`🔗<class_ColorPicker_theme_constant_center_slider_grabbers>`
 
-Overrides the :ref:`Slider.center_grabber<class_Slider_theme_constant_center_grabber>` theme property of the sliders.
+覆盖滑块的 :ref:`Slider.center_grabber<class_Slider_theme_constant_center_grabber>` 主题属性。
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +640,7 @@ Overrides the :ref:`Slider.center_grabber<class_Slider_theme_constant_center_gra
 
 :ref:`int<class_int>` **h_width** = ``30`` :ref:`🔗<class_ColorPicker_theme_constant_h_width>`
 
-The width of the hue selection slider.
+色相选择滑块的宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -652,7 +652,7 @@ The width of the hue selection slider.
 
 :ref:`int<class_int>` **label_width** = ``10`` :ref:`🔗<class_ColorPicker_theme_constant_label_width>`
 
-The minimum width of the color labels next to sliders.
+滑块旁颜色标签的最小宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -664,7 +664,7 @@ The minimum width of the color labels next to sliders.
 
 :ref:`int<class_int>` **margin** = ``4`` :ref:`🔗<class_ColorPicker_theme_constant_margin>`
 
-The margin around the **ColorPicker**.
+**ColorPicker** 周围的边距。
 
 .. rst-class:: classref-item-separator
 
@@ -676,7 +676,7 @@ The margin around the **ColorPicker**.
 
 :ref:`int<class_int>` **sv_height** = ``256`` :ref:`🔗<class_ColorPicker_theme_constant_sv_height>`
 
-The height of the saturation-value selection box.
+饱和值选择框的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -688,7 +688,7 @@ The height of the saturation-value selection box.
 
 :ref:`int<class_int>` **sv_width** = ``256`` :ref:`🔗<class_ColorPicker_theme_constant_sv_width>`
 
-The width of the saturation-value selection box.
+饱和度选择框的宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +700,7 @@ The width of the saturation-value selection box.
 
 :ref:`Texture2D<class_Texture2D>` **add_preset** :ref:`🔗<class_ColorPicker_theme_icon_add_preset>`
 
-The icon for the "Add Preset" button.
+“添加预设”按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -712,7 +712,7 @@ The icon for the "Add Preset" button.
 
 :ref:`Texture2D<class_Texture2D>` **bar_arrow** :ref:`🔗<class_ColorPicker_theme_icon_bar_arrow>`
 
-The texture for the arrow grabber.
+箭头抓取器的纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -724,7 +724,7 @@ The texture for the arrow grabber.
 
 :ref:`Texture2D<class_Texture2D>` **color_hue** :ref:`🔗<class_ColorPicker_theme_icon_color_hue>`
 
-Custom texture for the hue selection slider on the right.
+右侧的色相选择滑块的自定义纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Custom texture for the hue selection slider on the right.
 
 :ref:`Texture2D<class_Texture2D>` **color_script** :ref:`🔗<class_ColorPicker_theme_icon_color_script>`
 
-The icon for the button that switches color text to hexadecimal.
+用于将颜色文本切换为十六进制的按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -748,7 +748,7 @@ The icon for the button that switches color text to hexadecimal.
 
 :ref:`Texture2D<class_Texture2D>` **expanded_arrow** :ref:`🔗<class_ColorPicker_theme_icon_expanded_arrow>`
 
-The icon for color preset drop down menu when expanded.
+颜色预设下拉菜单展开时使用的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -760,7 +760,7 @@ The icon for color preset drop down menu when expanded.
 
 :ref:`Texture2D<class_Texture2D>` **folded_arrow** :ref:`🔗<class_ColorPicker_theme_icon_folded_arrow>`
 
-The icon for color preset drop down menu when folded.
+颜色预设下拉菜单折叠时使用的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -772,7 +772,7 @@ The icon for color preset drop down menu when folded.
 
 :ref:`Texture2D<class_Texture2D>` **menu_option** :ref:`🔗<class_ColorPicker_theme_icon_menu_option>`
 
-The icon for color preset option menu.
+颜色预设菜单的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -784,7 +784,7 @@ The icon for color preset option menu.
 
 :ref:`Texture2D<class_Texture2D>` **overbright_indicator** :ref:`🔗<class_ColorPicker_theme_icon_overbright_indicator>`
 
-The indicator used to signalize that the color value is outside the 0-1 range.
+该指示器用于指示颜色值在 0-1 范围之外。
 
 .. rst-class:: classref-item-separator
 
@@ -796,7 +796,7 @@ The indicator used to signalize that the color value is outside the 0-1 range.
 
 :ref:`Texture2D<class_Texture2D>` **picker_cursor** :ref:`🔗<class_ColorPicker_theme_icon_picker_cursor>`
 
-The image displayed over the color box/circle (depending on the :ref:`picker_shape<class_ColorPicker_property_picker_shape>`), marking the currently selected color.
+显示在颜色框/圆（取决于 :ref:`picker_shape<class_ColorPicker_property_picker_shape>`\ ）上的图像，标记当前选择的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -808,7 +808,7 @@ The image displayed over the color box/circle (depending on the :ref:`picker_sha
 
 :ref:`Texture2D<class_Texture2D>` **picker_cursor_bg** :ref:`🔗<class_ColorPicker_theme_icon_picker_cursor_bg>`
 
-The fill image displayed behind the picker cursor.
+拾取器光标后显示的填充图像。
 
 .. rst-class:: classref-item-separator
 
@@ -820,7 +820,7 @@ The fill image displayed behind the picker cursor.
 
 :ref:`Texture2D<class_Texture2D>` **sample_bg** :ref:`🔗<class_ColorPicker_theme_icon_sample_bg>`
 
-Background panel for the color preview box (visible when the color is translucent).
+颜色预览框的背景面板（颜色为半透明时可见）。
 
 .. rst-class:: classref-item-separator
 
@@ -832,7 +832,7 @@ Background panel for the color preview box (visible when the color is translucen
 
 :ref:`Texture2D<class_Texture2D>` **sample_revert** :ref:`🔗<class_ColorPicker_theme_icon_sample_revert>`
 
-The icon for the revert button (visible on the middle of the "old" color when it differs from the currently selected color). This icon is modulated with a dark color if the "old" color is bright enough, so the icon should be bright to ensure visibility in both scenarios.
+恢复按钮的图标（“旧”颜色与当前选中颜色不同时会在其中间显示）。如果“旧”颜色足够亮，那么这个图标会和暗色进行调制，这样图标应该就能够在不同的情况下都保持可见。
 
 .. rst-class:: classref-item-separator
 
@@ -844,7 +844,7 @@ The icon for the revert button (visible on the middle of the "old" color when it
 
 :ref:`Texture2D<class_Texture2D>` **screen_picker** :ref:`🔗<class_ColorPicker_theme_icon_screen_picker>`
 
-The icon for the screen color picker button.
+屏幕取色器按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -856,7 +856,7 @@ The icon for the screen color picker button.
 
 :ref:`Texture2D<class_Texture2D>` **shape_circle** :ref:`🔗<class_ColorPicker_theme_icon_shape_circle>`
 
-The icon for circular picker shapes.
+圆形拾取器形状的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -868,7 +868,7 @@ The icon for circular picker shapes.
 
 :ref:`Texture2D<class_Texture2D>` **shape_rect** :ref:`🔗<class_ColorPicker_theme_icon_shape_rect>`
 
-The icon for rectangular picker shapes.
+矩形拾取器形状的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -880,7 +880,7 @@ The icon for rectangular picker shapes.
 
 :ref:`Texture2D<class_Texture2D>` **shape_rect_wheel** :ref:`🔗<class_ColorPicker_theme_icon_shape_rect_wheel>`
 
-The icon for rectangular wheel picker shapes.
+矩形轮拾取器形状的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -892,7 +892,7 @@ The icon for rectangular wheel picker shapes.
 
 :ref:`StyleBox<class_StyleBox>` **picker_focus_circle** :ref:`🔗<class_ColorPicker_theme_style_picker_focus_circle>`
 
-The :ref:`StyleBox<class_StyleBox>` used when the circle-shaped part of the picker is focused. Displayed *over* the picker shape, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the picker shape remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+拾取器的圆形部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在拾取器形状\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -904,7 +904,7 @@ The :ref:`StyleBox<class_StyleBox>` used when the circle-shaped part of the pick
 
 :ref:`StyleBox<class_StyleBox>` **picker_focus_rectangle** :ref:`🔗<class_ColorPicker_theme_style_picker_focus_rectangle>`
 
-The :ref:`StyleBox<class_StyleBox>` used when the rectangle-shaped part of the picker is focused. Displayed *over* the picker shape, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the picker shape remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+拾取器的矩形部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在拾取器形状\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -916,14 +916,14 @@ The :ref:`StyleBox<class_StyleBox>` used when the rectangle-shaped part of the p
 
 :ref:`StyleBox<class_StyleBox>` **sample_focus** :ref:`🔗<class_ColorPicker_theme_style_sample_focus>`
 
-The :ref:`StyleBox<class_StyleBox>` used for the old color sample part when it is focused. Displayed *over* the sample, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the picker shape remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+旧颜色样本部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在样本\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

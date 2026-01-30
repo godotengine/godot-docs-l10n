@@ -5,21 +5,21 @@
 VisualShaderNodeVectorFunc
 ==========================
 
-**Inherits:** :ref:`VisualShaderNodeVectorBase<class_VisualShaderNodeVectorBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNodeVectorBase<class_VisualShaderNodeVectorBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A vector function to be used within the visual shader graph.
+在視覺化著色器圖中使用的向量函式。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A visual shader node able to perform different functions using vectors.
+視覺化著色器節點，能夠使用向量執行不同的函式。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeVectorFunc_Function:
 
@@ -49,7 +49,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeVectorFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_NORMALIZE** = ``0``
 
-Normalizes the vector so that it has a length of ``1`` but points in the same direction.
+將向量正規化，使其長度為\ ``1``\ ，但指向相同的方向。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_SATURATE:
 
@@ -57,7 +57,7 @@ Normalizes the vector so that it has a length of ``1`` but points in the same di
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_SATURATE** = ``1``
 
-Clamps the value between ``0.0`` and ``1.0``.
+限制\ ``0.0``\ 和\ ``1.0``\ 之間的值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_NEGATE:
 
@@ -65,7 +65,7 @@ Clamps the value between ``0.0`` and ``1.0``.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_NEGATE** = ``2``
 
-Returns the opposite value of the parameter.
+返回參數的相反值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_RECIPROCAL:
 
@@ -73,7 +73,7 @@ Returns the opposite value of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_RECIPROCAL** = ``3``
 
-Returns ``1/vector``.
+返回 ``1/vector``\ 。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ABS:
 
@@ -81,7 +81,7 @@ Returns ``1/vector``.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ABS** = ``4``
 
-Returns the absolute value of the parameter.
+返回參數的絕對值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ACOS:
 
@@ -89,7 +89,7 @@ Returns the absolute value of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ACOS** = ``5``
 
-Returns the arc-cosine of the parameter.
+返回參數的反餘弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ACOSH:
 
@@ -97,7 +97,7 @@ Returns the arc-cosine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ACOSH** = ``6``
 
-Returns the inverse hyperbolic cosine of the parameter.
+返回參數的反雙曲餘弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ASIN:
 
@@ -105,7 +105,7 @@ Returns the inverse hyperbolic cosine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ASIN** = ``7``
 
-Returns the arc-sine of the parameter.
+返回參數的反正弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ASINH:
 
@@ -113,7 +113,7 @@ Returns the arc-sine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ASINH** = ``8``
 
-Returns the inverse hyperbolic sine of the parameter.
+返回參數的反雙曲正弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ATAN:
 
@@ -121,7 +121,7 @@ Returns the inverse hyperbolic sine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ATAN** = ``9``
 
-Returns the arc-tangent of the parameter.
+返回參數的反正切值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ATANH:
 
@@ -129,7 +129,7 @@ Returns the arc-tangent of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ATANH** = ``10``
 
-Returns the inverse hyperbolic tangent of the parameter.
+返回參數的反雙曲正切值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_CEIL:
 
@@ -137,7 +137,7 @@ Returns the inverse hyperbolic tangent of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_CEIL** = ``11``
 
-Finds the nearest integer that is greater than or equal to the parameter.
+搜尋最接近的大於或等於參數的整數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_COS:
 
@@ -145,7 +145,7 @@ Finds the nearest integer that is greater than or equal to the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_COS** = ``12``
 
-Returns the cosine of the parameter.
+返回參數的餘弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_COSH:
 
@@ -153,7 +153,7 @@ Returns the cosine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_COSH** = ``13``
 
-Returns the hyperbolic cosine of the parameter.
+返回參數的雙曲餘弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_DEGREES:
 
@@ -161,7 +161,7 @@ Returns the hyperbolic cosine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_DEGREES** = ``14``
 
-Converts a quantity in radians to degrees.
+將以弧度為單位的量轉換為度。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_EXP:
 
@@ -169,7 +169,7 @@ Converts a quantity in radians to degrees.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_EXP** = ``15``
 
-Base-e Exponential.
+以 e 為底的指數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_EXP2:
 
@@ -177,7 +177,7 @@ Base-e Exponential.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_EXP2** = ``16``
 
-Base-2 Exponential.
+以 2 為底的指數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_FLOOR:
 
@@ -185,7 +185,7 @@ Base-2 Exponential.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_FLOOR** = ``17``
 
-Finds the nearest integer less than or equal to the parameter.
+搜尋小於或等於參數的最近整數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_FRACT:
 
@@ -193,7 +193,7 @@ Finds the nearest integer less than or equal to the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_FRACT** = ``18``
 
-Computes the fractional part of the argument.
+計算參數的小數部分。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_INVERSE_SQRT:
 
@@ -201,7 +201,7 @@ Computes the fractional part of the argument.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_INVERSE_SQRT** = ``19``
 
-Returns the inverse of the square root of the parameter.
+返回參數的平方根的倒數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_LOG:
 
@@ -209,7 +209,7 @@ Returns the inverse of the square root of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_LOG** = ``20``
 
-Natural logarithm.
+自然對數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_LOG2:
 
@@ -217,7 +217,7 @@ Natural logarithm.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_LOG2** = ``21``
 
-Base-2 logarithm.
+以 2 為底的對數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_RADIANS:
 
@@ -225,7 +225,7 @@ Base-2 logarithm.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_RADIANS** = ``22``
 
-Converts a quantity in degrees to radians.
+將度數轉換為弧度。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ROUND:
 
@@ -233,7 +233,7 @@ Converts a quantity in degrees to radians.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ROUND** = ``23``
 
-Finds the nearest integer to the parameter.
+搜尋參數最近的整數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ROUNDEVEN:
 
@@ -241,7 +241,7 @@ Finds the nearest integer to the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ROUNDEVEN** = ``24``
 
-Finds the nearest even integer to the parameter.
+搜尋參數最近的偶數。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_SIGN:
 
@@ -249,7 +249,7 @@ Finds the nearest even integer to the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_SIGN** = ``25``
 
-Extracts the sign of the parameter, i.e. returns ``-1`` if the parameter is negative, ``1`` if it's positive and ``0`` otherwise.
+提取參數的符號，即如果參數是負的，返回 ``-1``\ ，如果是正的，返回 ``1``\ ，否則返回 ``0``\ 。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_SIN:
 
@@ -257,7 +257,7 @@ Extracts the sign of the parameter, i.e. returns ``-1`` if the parameter is nega
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_SIN** = ``26``
 
-Returns the sine of the parameter.
+返回參數的正弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_SINH:
 
@@ -265,7 +265,7 @@ Returns the sine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_SINH** = ``27``
 
-Returns the hyperbolic sine of the parameter.
+返回參數的雙曲正弦值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_SQRT:
 
@@ -273,7 +273,7 @@ Returns the hyperbolic sine of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_SQRT** = ``28``
 
-Returns the square root of the parameter.
+返回參數的平方根。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_TAN:
 
@@ -281,7 +281,7 @@ Returns the square root of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_TAN** = ``29``
 
-Returns the tangent of the parameter.
+返回參數的正切值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_TANH:
 
@@ -289,7 +289,7 @@ Returns the tangent of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_TANH** = ``30``
 
-Returns the hyperbolic tangent of the parameter.
+返回參數的雙曲正切值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_TRUNC:
 
@@ -297,7 +297,7 @@ Returns the hyperbolic tangent of the parameter.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_TRUNC** = ``31``
 
-Returns a value equal to the nearest integer to the parameter whose absolute value is not larger than the absolute value of the parameter.
+返回一個等於與參數最接近的整數的值，該值的絕對值不大於參數的絕對值。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_ONEMINUS:
 
@@ -305,7 +305,7 @@ Returns a value equal to the nearest integer to the parameter whose absolute val
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_ONEMINUS** = ``32``
 
-Returns ``1.0 - vector``.
+返回 ``1.0 - vector``\ 。
 
 .. _class_VisualShaderNodeVectorFunc_constant_FUNC_MAX:
 
@@ -313,7 +313,7 @@ Returns ``1.0 - vector``.
 
 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` **FUNC_MAX** = ``33``
 
-Represents the size of the :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` enum.
+代表 :ref:`Function<enum_VisualShaderNodeVectorFunc_Function>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -321,8 +321,8 @@ Represents the size of the :ref:`Function<enum_VisualShaderNodeVectorFunc_Functi
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeVectorFunc_property_function:
 
@@ -337,12 +337,12 @@ Property Descriptions
 
 The function to be performed.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

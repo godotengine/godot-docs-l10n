@@ -5,21 +5,21 @@
 AudioStreamSynchronized
 =======================
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Stream that can be fitted with sub-streams, which will be played in-sync.
+可裝載子串流並同步播放的串流。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This is a stream that can be fitted with sub-streams, which will be played in-sync. The streams begin at exactly the same time when play is pressed, and will end when the last of them ends. If one of the sub-streams loops, then playback will continue.
+這是一種可裝載子串流並同步播放的串流。當開始播放時，所有子串流會在同一時間點一併開始，並在最後一個子串流結束時停止。若其中任一子串流設定為循環，播放將持續進行。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -30,8 +30,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_AudioStreamSynchronized_constant_MAX_STREAMS:
 
@@ -61,7 +61,7 @@ Constants
 
 **MAX_STREAMS** = ``32`` :ref:`🔗<class_AudioStreamSynchronized_constant_MAX_STREAMS>`
 
-Maximum amount of streams that can be synchronized.
+可同步的最大串流數量。
 
 .. rst-class:: classref-section-separator
 
@@ -69,8 +69,8 @@ Maximum amount of streams that can be synchronized.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioStreamSynchronized_property_stream_count:
 
@@ -83,7 +83,7 @@ Property Descriptions
 - |void| **set_stream_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stream_count**\ (\ )
 
-Set the total amount of streams that will be played back synchronized.
+設定將被同步播放的串流總數量。
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ Set the total amount of streams that will be played back synchronized.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamSynchronized_method_get_sync_stream:
 
@@ -100,7 +100,7 @@ Method Descriptions
 
 :ref:`AudioStream<class_AudioStream>` **get_sync_stream**\ (\ stream_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamSynchronized_method_get_sync_stream>`
 
-Get one of the synchronized streams, by index.
+依索引取得其中一個同步串流。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Get one of the synchronized streams, by index.
 
 :ref:`float<class_float>` **get_sync_stream_volume**\ (\ stream_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamSynchronized_method_get_sync_stream_volume>`
 
-Get the volume of one of the synchronized streams, by index.
+依索引取得其中一個同步串流的音量。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Get the volume of one of the synchronized streams, by index.
 
 |void| **set_sync_stream**\ (\ stream_index\: :ref:`int<class_int>`, audio_stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioStreamSynchronized_method_set_sync_stream>`
 
-Set one of the synchronized streams, by index.
+依索引設定其中一個同步串流。
 
 .. rst-class:: classref-item-separator
 
@@ -136,14 +136,14 @@ Set one of the synchronized streams, by index.
 
 |void| **set_sync_stream_volume**\ (\ stream_index\: :ref:`int<class_int>`, volume_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamSynchronized_method_set_sync_stream_volume>`
 
-Set the volume of one of the synchronized streams, by index.
+依索引設定其中一個同步串流的音量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

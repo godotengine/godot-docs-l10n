@@ -78,7 +78,7 @@ Descripciones de Propiedades
 - |void| **set_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy_multiplier**\ (\ )
 
-The sky's overall brightness multiplier. Higher values result in a brighter sky.
+El multiplicador de brillo general del cielo. Valores más altos resultan en un cielo más brillante.
 
 .. rst-class:: classref-item-separator
 

@@ -8,23 +8,23 @@
 MenuButton
 ==========
 
-**Inherits:** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A button that brings up a :ref:`PopupMenu<class_PopupMenu>` when clicked.
+點擊後會彈出 :ref:`PopupMenu<class_PopupMenu>` 的按鈕。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A button that brings up a :ref:`PopupMenu<class_PopupMenu>` when clicked. To create new items inside this :ref:`PopupMenu<class_PopupMenu>`, use ``get_popup().add_item("My Item Name")``. You can also create them directly from Godot editor's inspector.
+點擊後會彈出 :ref:`PopupMenu<class_PopupMenu>` 的按鈕。可以使用 ``get_popup().add_item("功能表專案名稱")`` 在這個 :ref:`PopupMenu<class_PopupMenu>` 中建立新的功能表專案，也可以直接從 Godot 編輯器的屬性檢視器中建立。
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另見 :ref:`BaseButton<class_BaseButton>`\ ，提供了與該節點相關的常用屬性和方法。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_MenuButton_signal_about_to_popup:
 
@@ -74,7 +74,7 @@ Signals
 
 **about_to_popup**\ (\ ) :ref:`🔗<class_MenuButton_signal_about_to_popup>`
 
-Emitted when the :ref:`PopupMenu<class_PopupMenu>` of this MenuButton is about to show.
+該 MenuButton 的 :ref:`PopupMenu<class_PopupMenu>` 即將顯示時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -82,8 +82,8 @@ Emitted when the :ref:`PopupMenu<class_PopupMenu>` of this MenuButton is about t
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_MenuButton_property_item_count:
 
@@ -96,7 +96,7 @@ Property Descriptions
 - |void| **set_item_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_count**\ (\ )
 
-The number of items currently in the list.
+目前列表中的專案數。
 
 .. rst-class:: classref-item-separator
 
@@ -121,8 +121,8 @@ If ``true``, when the cursor hovers above another **MenuButton** within the same
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_MenuButton_method_get_popup:
 
@@ -130,9 +130,9 @@ Method Descriptions
 
 :ref:`PopupMenu<class_PopupMenu>` **get_popup**\ (\ ) |const| :ref:`🔗<class_MenuButton_method_get_popup>`
 
-Returns the :ref:`PopupMenu<class_PopupMenu>` contained in this button.
+返回這個按鈕中包含的 :ref:`PopupMenu<class_PopupMenu>`\ 。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`Window.visible<class_Window_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，移除和釋放它可能會導致當機。如果你想隱藏它或它的任何子節點，請使用其 :ref:`Window.visible<class_Window_property_visible>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Returns the :ref:`PopupMenu<class_PopupMenu>` contained in this button.
 
 |void| **set_disable_shortcuts**\ (\ disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_MenuButton_method_set_disable_shortcuts>`
 
-If ``true``, shortcuts are disabled and cannot be used to trigger the button.
+如果為 ``true``\ ，快捷方式將被禁用，無法用於觸發按鈕。
 
 .. rst-class:: classref-item-separator
 
@@ -156,14 +156,14 @@ If ``true``, shortcuts are disabled and cannot be used to trigger the button.
 
 |void| **show_popup**\ (\ ) :ref:`🔗<class_MenuButton_method_show_popup>`
 
-Adjusts popup position and sizing for the **MenuButton**, then shows the :ref:`PopupMenu<class_PopupMenu>`. Prefer this over using ``get_popup().popup()``.
+調整該 **MenuButton** 的彈出位置和大小，然後顯示該 :ref:`PopupMenu<class_PopupMenu>`\ 。請優先使用此方法，而不是使用 ``get_popup().popup()``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

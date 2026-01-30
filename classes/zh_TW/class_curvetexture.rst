@@ -5,14 +5,14 @@
 CurveTexture
 ============
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 1D texture where pixel brightness corresponds to points on a curve.
+一維紋理，其中像素亮度對應於曲線上的點。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A 1D texture where pixel brightness corresponds to points on a unit :ref:`Curve<class_Curve>` resource, either in grayscale or in red. This visual representation simplifies the task of saving curves as image files.
 
@@ -20,8 +20,8 @@ If you need to store up to 3 curves within a single texture, use :ref:`CurveXYZT
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_CurveTexture_TextureMode:
 
@@ -57,7 +57,7 @@ enum **TextureMode**: :ref:`🔗<enum_CurveTexture_TextureMode>`
 
 :ref:`TextureMode<enum_CurveTexture_TextureMode>` **TEXTURE_MODE_RGB** = ``0``
 
-Store the curve equally across the red, green and blue channels. This uses more video memory, but is more compatible with shaders that only read the green and blue values.
+將曲線平均儲存在紅色、綠色和藍色通道上。這會使用更多的顯存，但與唯讀取綠色和藍色值的著色器更相容。
 
 .. _class_CurveTexture_constant_TEXTURE_MODE_RED:
 
@@ -65,7 +65,7 @@ Store the curve equally across the red, green and blue channels. This uses more 
 
 :ref:`TextureMode<enum_CurveTexture_TextureMode>` **TEXTURE_MODE_RED** = ``1``
 
-Store the curve only in the red channel. This saves video memory, but some custom shaders may not be able to work with this.
+僅將曲線儲存在紅色通道中。這可以節省顯存，但某些自訂著色器可能無法使用它。
 
 .. rst-class:: classref-section-separator
 
@@ -73,8 +73,8 @@ Store the curve only in the red channel. This saves video memory, but some custo
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CurveTexture_property_curve:
 
@@ -104,7 +104,7 @@ The :ref:`Curve<class_Curve>` that is rendered onto the texture. Should be a uni
 - |void| **set_texture_mode**\ (\ value\: :ref:`TextureMode<enum_CurveTexture_TextureMode>`\ )
 - :ref:`TextureMode<enum_CurveTexture_TextureMode>` **get_texture_mode**\ (\ )
 
-The format the texture should be generated with. When passing a CurveTexture as an input to a :ref:`Shader<class_Shader>`, this may need to be adjusted.
+生成紋理時應使用的格式。當將 CurveTexture 作為輸入傳遞給 :ref:`Shader<class_Shader>` 時，可能需要調整。
 
 .. rst-class:: classref-item-separator
 
@@ -121,14 +121,14 @@ The format the texture should be generated with. When passing a CurveTexture as 
 - |void| **set_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_width**\ (\ )
 
-The width of the texture (in pixels). Higher values make it possible to represent high-frequency data better (such as sudden direction changes), at the cost of increased generation time and memory usage.
+紋理寬度（單位為圖元）。較大的值能夠更好地表示高頻資料（例如方向的突變），但會增加生成時間和記憶體佔用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

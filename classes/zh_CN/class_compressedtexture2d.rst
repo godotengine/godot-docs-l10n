@@ -5,35 +5,35 @@
 CompressedTexture2D
 ===================
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Texture with 2 dimensions, optionally compressed.
+二维纹理，可选择压缩。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A texture that is loaded from a ``.ctex`` file. This file format is internal to Godot; it is created by importing other image formats with the import system. **CompressedTexture2D** can use one of 4 compression methods (including a lack of any compression):
+一种从 ``.ctex`` 文件加载的纹理。这种文件格式是 Godot 内部使用的；它是通过导入系统导入其他图像格式创建的。\ **CompressedTexture2D** 可以使用 4 种压缩方法中的一种（包括没有任何压缩）：
 
-- Lossless (WebP or PNG, uncompressed on the GPU)
+- 无损（WebP 或 PNG，在 GPU 上不压缩）
 
-- Lossy (WebP, uncompressed on the GPU)
+- 有损（WebP，在 GPU 上不压缩）
 
-- VRAM Compressed (compressed on the GPU)
+- VRAM 压缩（在 GPU 上压缩）
 
-- VRAM Uncompressed (uncompressed on the GPU)
+- VRAM 未压缩（在 GPU 上不压缩）
 
-- Basis Universal (compressed on the GPU. Lower file sizes than VRAM Compressed, but slower to compress and lower quality than VRAM Compressed)
+- Basis Universal（在 GPU 上压缩。与 VRAM 压缩相比，文件更小，但压缩速度更慢、质量更低）
 
-Only **VRAM Compressed** actually reduces the memory usage on the GPU. The **Lossless** and **Lossy** compression methods will reduce the required storage on disk, but they will not reduce memory usage on the GPU as the texture is sent to the GPU uncompressed.
+只有 **VRAM 压缩**\ 实际上减少了 GPU 上的内存使用。\ **无损**\ 和\ **有损**\ 压缩方法将减少磁盘上所需的存储空间，但它们不会减少 GPU 上的内存使用，因为纹理未经压缩地被发送到 GPU。
 
-Using **VRAM Compressed** also improves loading times, as VRAM-compressed textures are faster to load compared to textures using lossless or lossy compression. VRAM compression can exhibit noticeable artifacts and is intended to be used for 3D rendering, not 2D.
+使用 **VRAM 压缩**\ 还可以缩短加载时间，因为与使用无损或有损压缩的纹理相比，VRAM 压缩的纹理加载速度更快。VRAM 压缩会表现出明显的伪影，并且它旨在用于 3D 渲染，而不是 2D。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CompressedTexture2D_property_load_path:
 
@@ -76,7 +76,7 @@ Property Descriptions
 - :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_load_path**\ (\ )
 
-The **CompressedTexture2D**'s file path to a ``.ctex`` file.
+该 **CompressedTexture2D** 的文件路径，指向 ``.ctex`` 文件。
 
 .. rst-class:: classref-section-separator
 
@@ -84,8 +84,8 @@ The **CompressedTexture2D**'s file path to a ``.ctex`` file.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CompressedTexture2D_method_load:
 
@@ -93,14 +93,14 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CompressedTexture2D_method_load>`
 
-Loads the texture from the specified ``path``.
+从指定的路径 ``path`` 加载纹理。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

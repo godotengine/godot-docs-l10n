@@ -8,40 +8,40 @@
 GridMap
 =======
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Node for 3D tile-based maps.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-GridMap lets you place meshes on a grid interactively. It works both from the editor and from scripts, which can help you create in-game level editors.
-
-GridMaps use a :ref:`MeshLibrary<class_MeshLibrary>` which contains a list of tiles. Each tile is a mesh with materials plus optional collision and navigation shapes.
-
-A GridMap contains a collection of cells. Each grid cell refers to a tile in the :ref:`MeshLibrary<class_MeshLibrary>`. All cells in the map have the same dimensions.
-
-Internally, a GridMap is split into a sparse collection of octants for efficient rendering and physics processing. Every octant has the same dimensions and can contain several cells.
-
-\ **Note:** GridMap doesn't extend :ref:`VisualInstance3D<class_VisualInstance3D>` and therefore can't be hidden or cull masked based on :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`. If you make a light not affect the first layer, the whole GridMap won't be lit by the light in question.
+基于 3D 图块地图的节点。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using gridmaps <../tutorials/3d/using_gridmaps>`
+GridMap，即栅格地图，允许以交互的方式将网格放置在栅格上。它在编辑器和脚本中均可使用，可以用来创建游戏内的关卡编辑器。
 
-- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+GridMap 使用了一个 :ref:`MeshLibrary<class_MeshLibrary>`\ ，包含一组图块。每个图块都是一个网格，带有材质以及可选的碰撞形状和导航形状。
 
-- `3D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2739>`__
+GridMap 中包含了若干单元格。每个栅格单元格都引用着 :ref:`MeshLibrary<class_MeshLibrary>` 中的一个图块。地图中所有单元格的大小都相同。
+
+在内部，GridMap 会根据卦限进行拆分，形成卦限的稀疏合集，能够进行高效的渲染和物理处理。每个卦限的大小是相同的，可以包含多个单元格。
+
+\ **注意：**\ GridMap 不是从 :ref:`VisualInstance3D<class_VisualInstance3D>` 扩展的，因此无法隐藏，也无法根据 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 进行掩码剔除。如果使灯光不影响第一层，则整个 GridMap 将不会被该灯光照亮。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用网格地图 <../tutorials/3d/using_gridmaps>`
+
+- `3D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2748>`__
+
+- `3D 动力学角色演示 <https://godotengine.org/asset-library/asset/2739>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -134,8 +134,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_GridMap_signal_cell_size_changed:
 
@@ -143,7 +143,7 @@ Signals
 
 **cell_size_changed**\ (\ cell_size\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_GridMap_signal_cell_size_changed>`
 
-Emitted when :ref:`cell_size<class_GridMap_property_cell_size>` changes.
+当 :ref:`cell_size<class_GridMap_property_cell_size>` 改变时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Emitted when :ref:`cell_size<class_GridMap_property_cell_size>` changes.
 
 **changed**\ (\ ) :ref:`🔗<class_GridMap_signal_changed>`
 
-Emitted when the :ref:`MeshLibrary<class_MeshLibrary>` of this GridMap changes.
+该 GridMap 的 :ref:`MeshLibrary<class_MeshLibrary>` 发生改变时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -163,8 +163,8 @@ Emitted when the :ref:`MeshLibrary<class_MeshLibrary>` of this GridMap changes.
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_GridMap_constant_INVALID_CELL_ITEM:
 
@@ -172,7 +172,7 @@ Constants
 
 **INVALID_CELL_ITEM** = ``-1`` :ref:`🔗<class_GridMap_constant_INVALID_CELL_ITEM>`
 
-Invalid cell item that can be used in :ref:`set_cell_item()<class_GridMap_method_set_cell_item>` to clear cells (or represent an empty cell in :ref:`get_cell_item()<class_GridMap_method_get_cell_item>`).
+可以在 :ref:`set_cell_item()<class_GridMap_method_set_cell_item>` 中清除单元格（或在 :ref:`get_cell_item()<class_GridMap_method_get_cell_item>` 中重新代表一个空的单元格）的无效单元格。
 
 .. rst-class:: classref-section-separator
 
@@ -180,8 +180,8 @@ Invalid cell item that can be used in :ref:`set_cell_item()<class_GridMap_method
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GridMap_property_bake_navigation:
 
@@ -194,7 +194,7 @@ Property Descriptions
 - |void| **set_bake_navigation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_baking_navigation**\ (\ )
 
-If ``true``, this GridMap creates a navigation region for each cell that uses a :ref:`mesh_library<class_GridMap_property_mesh_library>` item with a navigation mesh. The created navigation region will use the navigation layers bitmask assigned to the :ref:`MeshLibrary<class_MeshLibrary>`'s item.
+如果为 ``true``\ ，则为每个使用带有导航网格的 :ref:`mesh_library<class_GridMap_property_mesh_library>` 项目的单元格，该 GridMap 将创建一个导航区域。创建的导航区域将使用分配给该 :ref:`MeshLibrary<class_MeshLibrary>` 项目的导航层位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ If ``true``, this GridMap creates a navigation region for each cell that uses a 
 - |void| **set_center_x**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_center_x**\ (\ )
 
-If ``true``, grid items are centered on the X axis.
+如果为 ``true``\ ，则网格项以 X 轴为中心。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ If ``true``, grid items are centered on the X axis.
 - |void| **set_center_y**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_center_y**\ (\ )
 
-If ``true``, grid items are centered on the Y axis.
+如果为 ``true``\ ，则网格项以 Y 轴为中心。
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ If ``true``, grid items are centered on the Y axis.
 - |void| **set_center_z**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_center_z**\ (\ )
 
-If ``true``, grid items are centered on the Z axis.
+如果为 ``true``\ ，则网格项以 Z 轴为中心。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ If ``true``, grid items are centered on the Z axis.
 - |void| **set_octant_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_octant_size**\ (\ )
 
-The size of each octant measured in number of cells. This applies to all three axis.
+每个卦限的大小，单位为单元格的数量。适用于全部三个轴。
 
 .. rst-class:: classref-item-separator
 
@@ -279,9 +279,9 @@ The size of each octant measured in number of cells. This applies to all three a
 - |void| **set_cell_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_scale**\ (\ )
 
-The scale of the cell items.
+单元格项目的比例。
 
-This does not affect the size of the grid cells themselves, only the items in them. This can be used to make cell items overlap their neighbors.
+这不会影响网格单元本身的大小，只会影响其中的项目。这可用于使单元格项目与其邻居重叠。
 
 .. rst-class:: classref-item-separator
 
@@ -298,9 +298,9 @@ This does not affect the size of the grid cells themselves, only the items in th
 - |void| **set_cell_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_cell_size**\ (\ )
 
-The dimensions of the grid's cells.
+网格单元的尺寸。
 
-This does not affect the size of the meshes. See :ref:`cell_scale<class_GridMap_property_cell_scale>`.
+这并不影响网格的尺寸大小。见 :ref:`cell_scale<class_GridMap_property_cell_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -317,9 +317,9 @@ This does not affect the size of the meshes. See :ref:`cell_scale<class_GridMap_
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-The physics layers this GridMap is in.
+这个 GridMap 所处的物理层。
 
-GridMaps act as static bodies, meaning they aren't affected by gravity or other forces. They only affect other physics bodies that collide with them.
+GridMap 作为静态体，意味着它们不会受到重力或是其他力的影响。它们只会受到其他与它们碰撞的物理体的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ GridMaps act as static bodies, meaning they aren't affected by gravity or other 
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers this GridMap detects collisions in. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+此 GridMap 检测碰撞的物理层。更多信息请参阅文档\ `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ The physics layers this GridMap detects collisions in. See `Collision layers and
 - |void| **set_collision_priority**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_priority**\ (\ )
 
-The priority used to solve colliding when occurring penetration. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
+发生穿透时用于解决碰撞的优先级。优先级越高，对物体的穿透度就越低。例如，可以用来防止玩家突破关卡的边界。
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ The priority used to solve colliding when occurring penetration. The higher the 
 - |void| **set_mesh_library**\ (\ value\: :ref:`MeshLibrary<class_MeshLibrary>`\ )
 - :ref:`MeshLibrary<class_MeshLibrary>` **get_mesh_library**\ (\ )
 
-The assigned :ref:`MeshLibrary<class_MeshLibrary>`.
+指定的 :ref:`MeshLibrary<class_MeshLibrary>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ The assigned :ref:`MeshLibrary<class_MeshLibrary>`.
 - |void| **set_physics_material**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material**\ (\ )
 
-Overrides the default friction and bounce physics properties for the whole **GridMap**.
+覆盖整个 **GridMap** 的默认摩擦力和反弹物理属性。
 
 .. rst-class:: classref-section-separator
 
@@ -395,8 +395,8 @@ Overrides the default friction and bounce physics properties for the whole **Gri
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GridMap_method_clear:
 
@@ -404,7 +404,7 @@ Method Descriptions
 
 |void| **clear**\ (\ ) :ref:`🔗<class_GridMap_method_clear>`
 
-Clear all cells.
+清除所有单元格。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ Clear all cells.
 
 |void| **clear_baked_meshes**\ (\ ) :ref:`🔗<class_GridMap_method_clear_baked_meshes>`
 
-Clears all baked meshes. See :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>`.
+清除所有烘焙过的网格。见 :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ Clears all baked meshes. See :ref:`make_baked_meshes()<class_GridMap_method_make
 
 :ref:`RID<class_RID>` **get_bake_mesh_instance**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GridMap_method_get_bake_mesh_instance>`
 
-Returns :ref:`RID<class_RID>` of a baked mesh with the given ``idx``.
+返回索引为 ``idx`` 的烘焙网格的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Returns :ref:`RID<class_RID>` of a baked mesh with the given ``idx``.
 
 :ref:`Array<class_Array>` **get_bake_meshes**\ (\ ) :ref:`🔗<class_GridMap_method_get_bake_meshes>`
 
-Returns an array of :ref:`ArrayMesh<class_ArrayMesh>`\ es and :ref:`Transform3D<class_Transform3D>` references of all bake meshes that exist within the current GridMap. Even indices contain :ref:`ArrayMesh<class_ArrayMesh>`\ es, while odd indices contain :ref:`Transform3D<class_Transform3D>`\ s that are always equal to :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`.
+返回当前 GridMap 中存在的已烘焙网格数组，元素为 :ref:`ArrayMesh<class_ArrayMesh>` 和 :ref:`Transform3D<class_Transform3D>`\ 。奇数索引为 :ref:`ArrayMesh<class_ArrayMesh>`\ ，偶数索引为 :ref:`Transform3D<class_Transform3D>`\ ，始终等于 :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`\ 。
 
-This method relies on the output of :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>`, which will be called with ``gen_lightmap_uv`` set to ``true`` and ``lightmap_uv_texel_size`` set to ``0.1`` if it hasn't been called yet.
+这个方法依赖于 :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>` 的输出，如果尚未调用，则会使用 ``gen_lightmap_uv`` 为 ``true``\ 、\ ``lightmap_uv_texel_size`` 为 ``0.1`` 进行调用。
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +454,7 @@ This method relies on the output of :ref:`make_baked_meshes()<class_GridMap_meth
 
 :ref:`Basis<class_Basis>` **get_basis_with_orthogonal_index**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_basis_with_orthogonal_index>`
 
-Returns one of 24 possible rotations that lie along the vectors (x,y,z) with each component being either -1, 0, or 1. For further details, refer to the Godot source code.
+返回沿向量 (x,y,z) 的 24 种可能旋转中的一种，每个分量为 -1、0 或 1。详见 Godot 源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ Returns one of 24 possible rotations that lie along the vectors (x,y,z) with eac
 
 :ref:`int<class_int>` **get_cell_item**\ (\ position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_cell_item>`
 
-The :ref:`MeshLibrary<class_MeshLibrary>` item index located at the given grid coordinates. If the cell is empty, :ref:`INVALID_CELL_ITEM<class_GridMap_constant_INVALID_CELL_ITEM>` will be returned.
+位于给定栅格坐标的 :ref:`MeshLibrary<class_MeshLibrary>` 项目的索引。如果单元格为空，则将返回 :ref:`INVALID_CELL_ITEM<class_GridMap_constant_INVALID_CELL_ITEM>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ The :ref:`MeshLibrary<class_MeshLibrary>` item index located at the given grid c
 
 :ref:`Basis<class_Basis>` **get_cell_item_basis**\ (\ position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_cell_item_basis>`
 
-Returns the basis that gives the specified cell its orientation.
+返回为指定单元格提供方向的基。
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ Returns the basis that gives the specified cell its orientation.
 
 :ref:`int<class_int>` **get_cell_item_orientation**\ (\ position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_cell_item_orientation>`
 
-The orientation of the cell at the given grid coordinates. ``-1`` is returned if the cell is empty.
+给定栅格坐标处的单元格的方向。如果该单元格为空，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ The orientation of the cell at the given grid coordinates. ``-1`` is returned if
 
 :ref:`bool<class_bool>` **get_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_collision_layer_value>`
 
-Returns whether or not the specified layer of the :ref:`collision_layer<class_GridMap_property_collision_layer>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`collision_layer<class_GridMap_property_collision_layer>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Returns whether or not the specified layer of the :ref:`collision_layer<class_Gr
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_collision_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`collision_mask<class_GridMap_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`collision_mask<class_GridMap_property_collision_mask>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Returns whether or not the specified layer of the :ref:`collision_mask<class_Gri
 
 :ref:`Array<class_Array>` **get_meshes**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_meshes>`
 
-Returns an array of :ref:`Transform3D<class_Transform3D>` and :ref:`Mesh<class_Mesh>` references corresponding to the non-empty cells in the grid. The transforms are specified in local space. Even indices contain :ref:`Transform3D<class_Transform3D>`\ s, while odd indices contain :ref:`Mesh<class_Mesh>`\ es related to the :ref:`Transform3D<class_Transform3D>` in the index preceding it.
+返回与栅格中非空单元格对应的数组，元素为 :ref:`Transform3D<class_Transform3D>` 和 :ref:`Mesh<class_Mesh>` 引用。变换在局部空间中指定。奇数索引为 :ref:`Transform3D<class_Transform3D>`\ ，偶数索引为 :ref:`Mesh<class_Mesh>`\ ，与前一个索引处的 :ref:`Transform3D<class_Transform3D>` 对应。
 
 .. rst-class:: classref-item-separator
 
@@ -538,9 +538,9 @@ Returns an array of :ref:`Transform3D<class_Transform3D>` and :ref:`Mesh<class_M
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_navigation_map>`
 
-Returns the :ref:`RID<class_RID>` of the navigation map this GridMap node uses for its cell baked navigation meshes.
+返回该 GridMap 节点用于其单元格烘焙导航网格的导航地图的 :ref:`RID<class_RID>`\ 。
 
-This function returns always the map set on the GridMap node and not the map on the NavigationServer. If the map is changed directly with the NavigationServer API the GridMap node will not be aware of the map change.
+该函数始终返回在 GridMap 节点上设置的地图，而不是 NavigationServer 上的地图。如果直接使用 NavigationServer API 更改地图，则 GridMap 节点将不会感知到地图的更改。
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ This function returns always the map set on the GridMap node and not the map on 
 
 :ref:`int<class_int>` **get_orthogonal_index_from_basis**\ (\ basis\: :ref:`Basis<class_Basis>`\ ) |const| :ref:`🔗<class_GridMap_method_get_orthogonal_index_from_basis>`
 
-This function considers a discretization of rotations into 24 points on unit sphere, lying along the vectors (x,y,z) with each component being either -1, 0, or 1, and returns the index (in the range from 0 to 23) of the point best representing the orientation of the object. For further details, refer to the Godot source code.
+该函数考虑将旋转离散化为单位球体上的 24 个点，沿向量 (x,y,z) 放置，每个分量为 -1、0 或 1，并返回索引（在 0 到 23 的范围内 ) 最能代表物体方向的点。详见 Godot 源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -564,7 +564,7 @@ This function considers a discretization of rotations into 24 points on unit sph
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells>`
 
-Returns an array of :ref:`Vector3<class_Vector3>` with the non-empty cell coordinates in the grid map.
+返回一个包含网格中非空单元格坐标的 :ref:`Vector3<class_Vector3>` 数组。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ Returns an array of :ref:`Vector3<class_Vector3>` with the non-empty cell coordi
 
 :ref:`Array<class_Array>`\[:ref:`Vector3i<class_Vector3i>`\] **get_used_cells_by_item**\ (\ item\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_used_cells_by_item>`
 
-Returns an array of all cells with the given item index specified in ``item``.
+返回所有具有 ``item`` 中指定的项目索引的单元格的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ Returns an array of all cells with the given item index specified in ``item``.
 
 :ref:`Vector3i<class_Vector3i>` **local_to_map**\ (\ local_position\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_GridMap_method_local_to_map>`
 
-Returns the map coordinates of the cell containing the given ``local_position``. If ``local_position`` is in global coordinates, consider using :ref:`Node3D.to_local()<class_Node3D_method_to_local>` before passing it to this method. See also :ref:`map_to_local()<class_GridMap_method_map_to_local>`.
+返回包含给定 ``local_position`` 的单元格的地图坐标。如果 ``local_position`` 在全局坐标中，请考虑在将其传递给该方法之前使用 :ref:`Node3D.to_local()<class_Node3D_method_to_local>`\ 。另见 :ref:`map_to_local()<class_GridMap_method_map_to_local>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -600,9 +600,9 @@ Returns the map coordinates of the cell containing the given ``local_position``.
 
 |void| **make_baked_meshes**\ (\ gen_lightmap_uv\: :ref:`bool<class_bool>` = false, lightmap_uv_texel_size\: :ref:`float<class_float>` = 0.1\ ) :ref:`🔗<class_GridMap_method_make_baked_meshes>`
 
-Generates a baked mesh that represents all meshes in the assigned :ref:`MeshLibrary<class_MeshLibrary>` for use with :ref:`LightmapGI<class_LightmapGI>`. If ``gen_lightmap_uv`` is ``true``, UV2 data will be generated for each mesh currently used in the **GridMap**. Otherwise, only meshes that already have UV2 data present will be able to use baked lightmaps. When generating UV2, ``lightmap_uv_texel_size`` controls the texel density for lightmaps, with lower values resulting in more detailed lightmaps. ``lightmap_uv_texel_size`` is ignored if ``gen_lightmap_uv`` is ``false``. See also :ref:`get_bake_meshes()<class_GridMap_method_get_bake_meshes>`, which relies on the output of this method.
+生成一个烘焙网格，该网格表示分配给 :ref:`MeshLibrary<class_MeshLibrary>` 的所有网格，会与 :ref:`LightmapGI<class_LightmapGI>` 一起使用。如果 ``gen_lightmap_uv`` 为 ``true``\ ，则将为当前在 **GridMap** 中使用的每个网格生成 UV2 数据。否则，只有已经存在 UV2 数据的网格才能使用烘焙光照贴图。在生成 UV2 时，\ ``lightmap_uv_texel_size`` 控制的是光照贴图的纹素密度，值越低得到的光照贴图越详细。如果 ``gen_lightmap_uv`` 为 ``false``\ ，则会忽略 ``lightmap_uv_texel_size``\ 。另见 :ref:`get_bake_meshes()<class_GridMap_method_get_bake_meshes>`\ ，依赖本方法的输出。
 
-\ **Note:** Calling this method will not actually bake lightmaps, as lightmap baking is performed using the :ref:`LightmapGI<class_LightmapGI>` node.
+\ **注意：**\ 调用该方法并不会对光照贴图进行烘焙，因为光照贴图是使用 :ref:`LightmapGI<class_LightmapGI>` 节点烘焙的。
 
 .. rst-class:: classref-item-separator
 
@@ -614,7 +614,7 @@ Generates a baked mesh that represents all meshes in the assigned :ref:`MeshLibr
 
 :ref:`Vector3<class_Vector3>` **map_to_local**\ (\ map_position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_map_to_local>`
 
-Returns the position of a grid cell in the GridMap's local coordinate space. To convert the returned value into global coordinates, use :ref:`Node3D.to_global()<class_Node3D_method_to_global>`. See also :ref:`local_to_map()<class_GridMap_method_local_to_map>`.
+返回栅格单元格在 GridMap 的局部坐标空间中的位置。要将返回值转换为全局坐标，请使用 :ref:`Node3D.to_global()<class_Node3D_method_to_global>`\ 。另见 :ref:`local_to_map()<class_GridMap_method_local_to_map>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -626,9 +626,9 @@ Returns the position of a grid cell in the GridMap's local coordinate space. To 
 
 |void| **resource_changed**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_GridMap_method_resource_changed>`
 
-**Deprecated:** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
+**已弃用：** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
 
-This method does nothing.
+这个方法什么也不做。
 
 .. rst-class:: classref-item-separator
 
@@ -640,11 +640,11 @@ This method does nothing.
 
 |void| **set_cell_item**\ (\ position\: :ref:`Vector3i<class_Vector3i>`, item\: :ref:`int<class_int>`, orientation\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_GridMap_method_set_cell_item>`
 
-Sets the mesh index for the cell referenced by its grid coordinates.
+设置由其栅格坐标引用的单元格的网格索引。
 
-A negative item index such as :ref:`INVALID_CELL_ITEM<class_GridMap_constant_INVALID_CELL_ITEM>` will clear the cell.
+\ :ref:`INVALID_CELL_ITEM<class_GridMap_constant_INVALID_CELL_ITEM>` 等负数项目索引将清除该单元格。
 
-Optionally, the item's orientation can be passed. For valid orientation values, see :ref:`get_orthogonal_index_from_basis()<class_GridMap_method_get_orthogonal_index_from_basis>`.
+另外还可以传入项目的方向。有效的方向值见 :ref:`get_orthogonal_index_from_basis()<class_GridMap_method_get_orthogonal_index_from_basis>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +656,7 @@ Optionally, the item's orientation can be passed. For valid orientation values, 
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GridMap_method_set_collision_layer_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`collision_layer<class_GridMap_property_collision_layer>`, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`collision_layer<class_GridMap_property_collision_layer>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +668,7 @@ Based on ``value``, enables or disables the specified layer in the :ref:`collisi
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_GridMap_method_set_collision_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_GridMap_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`collision_mask<class_GridMap_property_collision_mask>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -680,14 +680,14 @@ Based on ``value``, enables or disables the specified layer in the :ref:`collisi
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_GridMap_method_set_navigation_map>`
 
-Sets the :ref:`RID<class_RID>` of the navigation map this GridMap node should use for its cell baked navigation meshes.
+设置导航地图 :ref:`RID<class_RID>`\ ，用于 GridMap 节点单元格所烘焙的导航网格。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

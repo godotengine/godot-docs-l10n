@@ -5,23 +5,23 @@
 PathFollow2D
 ============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Point sampler for a :ref:`Path2D<class_Path2D>`.
+对 :ref:`Path2D<class_Path2D>` 的点取样的取样器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This node takes its parent :ref:`Path2D<class_Path2D>`, and returns the coordinates of a point within it, given a distance from the first vertex.
+这个节点接受它的父节点 :ref:`Path2D<class_Path2D>` 并返回其中一个点的坐标，需要给定到第一个顶点的距离。
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the :ref:`progress<class_PathFollow2D_property_progress>` in this node.
+在不编码移动图案的情况下，它可以使其他节点遵循一条路径。为此，节点必须是该节点的子节点。在该节点中设置 :ref:`progress<class_PathFollow2D_property_progress>` 后，后代节点会随之移动。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PathFollow2D_property_cubic_interp:
 
@@ -62,11 +62,11 @@ Property Descriptions
 - |void| **set_cubic_interpolation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_cubic_interpolation**\ (\ )
 
-If ``true``, the position between two cached points is interpolated cubically, and linearly otherwise.
+如果为 ``true``\ ，则两个缓存点之间的位置将进行三次插值，否则将线性插值。
 
-The points along the :ref:`Curve2D<class_Curve2D>` of the :ref:`Path2D<class_Path2D>` are precomputed before use, for faster calculations. The point at the requested offset is then calculated interpolating between two adjacent cached points. This may present a problem if the curve makes sharp turns, as the cached points may not follow the curve closely enough.
+沿着 :ref:`Path2D<class_Path2D>` 的 :ref:`Curve2D<class_Curve2D>` 的点在使用前被预先计算，以更快的计算速度。然后在两个相邻的缓存点之间计算请求偏移量的点。这可能会出现一个问题，如果曲线做急转弯，因为缓存点可能不跟随曲线足够近。
 
-There are two answers to this problem: either increase the number of cached points and increase memory consumption, or make a cubic interpolation between two points at the cost of (slightly) slower calculations.
+有两种方法可以解决这个问题：要么增加缓存点的数量，增加内存消耗，要么在两个点之间进行三次插值，但代价是（稍微）降低计算速度。
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ There are two answers to this problem: either increase the number of cached poin
 - |void| **set_h_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_h_offset**\ (\ )
 
-The node's offset along the curve.
+节点沿曲线的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The node's offset along the curve.
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, any offset outside the path's length will wrap around, instead of stopping at the ends. Use it for cyclic paths.
+如果为 ``true``\ ，路径长度以外的任何偏移都将环绕，而不是在结束时停止。对于循环路径使用它。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If ``true``, any offset outside the path's length will wrap around, instead of s
 - |void| **set_progress**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress**\ (\ )
 
-The distance along the path, in pixels. Changing this value sets this node's position to a point within the path.
+沿路径走过的距离，单位为像素。改变这个值会将这个节点的位置设置为路径上的某个点。
 
 .. rst-class:: classref-item-separator
 
@@ -134,9 +134,9 @@ The distance along the path, in pixels. Changing this value sets this node's pos
 - |void| **set_progress_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress_ratio**\ (\ )
 
-The distance along the path as a number in the range 0.0 (for the first vertex) to 1.0 (for the last). This is just another way of expressing the progress within the path, as the offset supplied is multiplied internally by the path's length.
+沿路径走过的距离，用 0.0（第一个顶点）到 1.0（最后一个顶点）范围内的数字表示。这只是表示路径内偏移量的另一种方式，提供的偏移量在内部会与路径的长度相乘。
 
-It can be set or get only if the **PathFollow2D** is the child of a :ref:`Path2D<class_Path2D>` which is part of the scene tree, and that this :ref:`Path2D<class_Path2D>` has a :ref:`Curve2D<class_Curve2D>` with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return ``0.0``.
+\ **PathFollow2D** 为场景树中 :ref:`Path2D<class_Path2D>` 的子节点时才能够设置和获取，该 :ref:`Path2D<class_Path2D>` 中还需要存在长度非零的 :ref:`Curve2D<class_Curve2D>`\ 。否则设置该字段会输出错误，获取该字段则会返回 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ It can be set or get only if the **PathFollow2D** is the child of a :ref:`Path2D
 - |void| **set_rotates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_rotating**\ (\ )
 
-If ``true``, this node rotates to follow the path, with the +X direction facing forward on the path.
+如果为 ``true``\ ，则该节点会跟随路径旋转，+X 方向朝向路径前方。
 
 .. rst-class:: classref-item-separator
 
@@ -170,14 +170,14 @@ If ``true``, this node rotates to follow the path, with the +X direction facing 
 - |void| **set_v_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_v_offset**\ (\ )
 
-The node's offset perpendicular to the curve.
+节点垂直于曲线的偏移量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

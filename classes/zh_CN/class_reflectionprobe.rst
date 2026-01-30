@@ -8,36 +8,36 @@
 ReflectionProbe
 ===============
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Captures its surroundings to create fast, accurate reflections from a given point.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Captures its surroundings as a cubemap, and stores versions of it with increasing levels of blur to simulate different material roughnesses.
-
-The **ReflectionProbe** is used to create high-quality reflections at a low performance cost (when :ref:`update_mode<class_ReflectionProbe_property_update_mode>` is :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`). **ReflectionProbe**\ s can be blended together and with the rest of the scene smoothly. **ReflectionProbe**\ s can also be combined with :ref:`VoxelGI<class_VoxelGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) and screen-space reflections (:ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`) to get more accurate reflections in specific areas. **ReflectionProbe**\ s render all objects within their :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`, so updating them can be quite expensive. It is best to update them once with the important static objects and then leave them as-is.
-
-\ **Note:** Unlike :ref:`VoxelGI<class_VoxelGI>` and SDFGI, **ReflectionProbe**\ s only source their environment from a :ref:`WorldEnvironment<class_WorldEnvironment>` node. If you specify an :ref:`Environment<class_Environment>` resource within a :ref:`Camera3D<class_Camera3D>` node, it will be ignored by the **ReflectionProbe**. This can lead to incorrect lighting within the **ReflectionProbe**.
-
-\ **Note:** When using the Mobile rendering method, only ``8`` reflection probes can be displayed on each mesh resource, while the Compatibility rendering method only supports up to ``2`` reflection probes on each mesh. Attempting to display more than ``8`` reflection probes on a single mesh resource using the Mobile renderer will result in reflection probes flickering in and out as the camera moves, while the Compatibility renderer will not render any additional probes if more than ``2`` reflection probes are being used.
-
-\ **Note:** When using the Mobile rendering method, reflection probes will only correctly affect meshes whose visibility AABB intersects with the reflection probe's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` must be increased on the mesh. Otherwise, the reflection probe may not be visible on the mesh.
+捕捉某个位置周围的环境，用于快速创建准确的反射。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Reflection probes <../tutorials/3d/global_illumination/reflection_probes>`
+将其周围环境捕捉为立方体贴图，并存储不同版本，其模糊级别递增以模拟不同的材质粗糙度。
+
+\ **ReflectionProbe** 用于以低性能成本（当 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 为 :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>` 时），创建高质量反射。\ **ReflectionProbe** 可以与场景的其余部分，平滑地混合在一起。\ **ReflectionProbe** 还可以与 :ref:`VoxelGI<class_VoxelGI>`\ 、SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）和屏幕空间反射（\ :ref:`Environment.ssr_enabled<class_Environment_property_ssr_enabled>`\ ）结合使用，以在特定区域获得更准确的反射。\ **ReflectionProbe** 渲染其 :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>` 内的所有对象，因此更新它们可能会非常昂贵。最好仅用重要的静态对象更新一次，然后保持原样。
+
+\ **注意：**\ 与 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI 不同，\ **ReflectionProbe** 仅从一个 :ref:`WorldEnvironment<class_WorldEnvironment>` 节点获取环境。如果你在一个 :ref:`Camera3D<class_Camera3D>` 节点中指定了一个 :ref:`Environment<class_Environment>` 资源，它将被该 **ReflectionProbe** 忽略。这可能会导致 **ReflectionProbe** 内的照明不正确。
+
+\ **注意：**\ 使用移动渲染方法时，每个网格资源上最多只能显示 ``8`` 个反射探针，使用兼容渲染方法时每个网格仅支持 ``2`` 个反射探针。尝试在单个网格资源上显示 ``8`` 个以上的反射探针，在使用移动渲染方法时会导致反射探针随着相机移动而闪烁。使用兼容渲染方法时，如果使用超过 ``2`` 个反射探针就会忽略多余的探针不渲染。
+
+\ **注意：**\ 使用移动渲染方法时，反射探针只会正确地影响可见 AABB 与反射探针的 AABB 相交的网格。如果使用着色器以使网格超出其 AABB 的方式变形该网格，则必须在网格上增加 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`\ 。否则，反射探针可能在网格上不可见。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`反射探针 <../tutorials/3d/global_illumination/reflection_probes>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ReflectionProbe_UpdateMode:
 
@@ -95,7 +95,7 @@ enum **UpdateMode**: :ref:`🔗<enum_ReflectionProbe_UpdateMode>`
 
 :ref:`UpdateMode<enum_ReflectionProbe_UpdateMode>` **UPDATE_ONCE** = ``0``
 
-Update the probe once on the next frame (recommended for most objects). The corresponding radiance map will be generated over the following six frames. This takes more time to update than :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>`, but it has a lower performance cost and can result in higher-quality reflections. The ReflectionProbe is updated when its transform changes, but not when nearby geometry changes. You can force a **ReflectionProbe** update by moving the **ReflectionProbe** slightly in any direction.
+在下一帧更新一次探针（建议大多数对象使用）。对应的辐射率贴图会在后续六帧中陆续生成。更新所花费的时间比 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 多，但消耗的性能比它少、产生的反射质量也更高。ReflectionProbe 的变换发生变化时也会进行更新，但不会在周围几何体变化时更新。你可以通过将该 **ReflectionProbe** 在任意方向上进行小幅度移动来强制更新 **ReflectionProbe**\ 。
 
 .. _class_ReflectionProbe_constant_UPDATE_ALWAYS:
 
@@ -103,7 +103,7 @@ Update the probe once on the next frame (recommended for most objects). The corr
 
 :ref:`UpdateMode<enum_ReflectionProbe_UpdateMode>` **UPDATE_ALWAYS** = ``1``
 
-Update the probe every frame. This provides better results for fast-moving dynamic objects (such as cars). However, it has a significant performance cost. Due to the cost, it's recommended to only use one ReflectionProbe with :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` at most per scene. For all other use cases, use :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`.
+每一帧都更新该探针。可以为快速移动的对象（如汽车）提供更好的结果。然而，带来的性能消耗也是显著的。因此，建议同一个场景中最多只使用一个 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 的 ReflectionProbe。其他用途请使用 :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ enum **AmbientMode**: :ref:`🔗<enum_ReflectionProbe_AmbientMode>`
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_DISABLED** = ``0``
 
-Do not apply any ambient lighting inside the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`.
+不在 **ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框内部应用环境光照。
 
 .. _class_ReflectionProbe_constant_AMBIENT_ENVIRONMENT:
 
@@ -129,7 +129,7 @@ Do not apply any ambient lighting inside the **ReflectionProbe**'s box defined b
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_ENVIRONMENT** = ``1``
 
-Apply automatically-sourced environment lighting inside the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`.
+在 **ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框内部应用自动来源的环境光照。
 
 .. _class_ReflectionProbe_constant_AMBIENT_COLOR:
 
@@ -137,7 +137,7 @@ Apply automatically-sourced environment lighting inside the **ReflectionProbe**'
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_COLOR** = ``2``
 
-Apply custom ambient lighting inside the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`. See :ref:`ambient_color<class_ReflectionProbe_property_ambient_color>` and :ref:`ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`.
+在 **ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框内部应用自定义环境光照。见 :ref:`ambient_color<class_ReflectionProbe_property_ambient_color>` 和 :ref:`ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -145,8 +145,8 @@ Apply custom ambient lighting inside the **ReflectionProbe**'s box defined by it
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ReflectionProbe_property_ambient_color:
 
@@ -159,7 +159,7 @@ Property Descriptions
 - |void| **set_ambient_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ambient_color**\ (\ )
 
-The custom ambient color to use within the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`. Only effective if :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` is :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>`.
+**ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框中使用的自定义环境光颜色。仅在 :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` 为 :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>` 时有效。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ The custom ambient color to use within the **ReflectionProbe**'s box defined by 
 - |void| **set_ambient_color_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ambient_color_energy**\ (\ )
 
-The custom ambient color energy to use within the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`. Only effective if :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` is :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>`.
+**ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框中使用的自定义环境光颜色能量。仅在 :ref:`ambient_mode<class_ReflectionProbe_property_ambient_mode>` 为 :ref:`AMBIENT_COLOR<class_ReflectionProbe_constant_AMBIENT_COLOR>` 时有效。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ The custom ambient color energy to use within the **ReflectionProbe**'s box defi
 - |void| **set_ambient_mode**\ (\ value\: :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>`\ )
 - :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **get_ambient_mode**\ (\ )
 
-The ambient color to use within the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`. The ambient color will smoothly blend with other **ReflectionProbe**\ s and the rest of the scene (outside the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`).
+**ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框中使用的环境光颜色。环境光颜色会和其他 **ReflectionProbe** 和场景（\ **ReflectionProbe** 的大小为 :ref:`size<class_ReflectionProbe_property_size>` 的框之外）的其他部分进行平滑混合。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ The ambient color to use within the **ReflectionProbe**'s box defined by its :re
 - |void| **set_blend_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_blend_distance**\ (\ )
 
-Defines the distance in meters over which a probe blends into the scene.
+定义探针融入场景的距离，单位为米。
 
 .. rst-class:: classref-item-separator
 
@@ -227,9 +227,9 @@ Defines the distance in meters over which a probe blends into the scene.
 - |void| **set_enable_box_projection**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_box_projection_enabled**\ (\ )
 
-If ``true``, enables box projection. This makes reflections look more correct in rectangle-shaped rooms by offsetting the reflection center depending on the camera's location.
+为 ``true`` 时将启用箱体投影。通过根据相机的位置偏移反射中心，这使得在矩形房间中的反射看起来更正确。
 
-\ **Note:** To better fit rectangle-shaped rooms that are not aligned to the grid, you can rotate the **ReflectionProbe** node.
+\ **注意：**\ 为了更好地适应未与网格对齐的区域，你可以旋转 **ReflectionProbe** 节点。
 
 .. rst-class:: classref-item-separator
 
@@ -246,9 +246,9 @@ If ``true``, enables box projection. This makes reflections look more correct in
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Sets the cull mask which determines what objects are drawn by this probe. Every :ref:`VisualInstance3D<class_VisualInstance3D>` with a layer included in this cull mask will be rendered by the probe. It is best to only include large objects which are likely to take up a lot of space in the reflection in order to save on rendering cost.
+设置剔除掩码，用来确定该探针绘制的对象。如果 :ref:`VisualInstance3D<class_VisualInstance3D>` 有一个层被包含在剔除掩码中，就会被该探针渲染。为了提高性能，最好只包含可能在反射中占用大量空间的大型对象。
 
-This can also be used to prevent an object from reflecting upon itself (for instance, a **ReflectionProbe** centered on a vehicle).
+也可以用来防止物体对自己进行反射（例如位于车辆中心的 **ReflectionProbe**\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ This can also be used to prevent an object from reflecting upon itself (for inst
 - |void| **set_enable_shadows**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_shadows_enabled**\ (\ )
 
-If ``true``, computes shadows in the reflection probe. This makes the reflection probe slower to render; you may want to disable this if using the :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`.
+如果为 ``true``\ ，则在反射探测中计算阴影。这使得反射探针渲染更慢;如果想禁用它,可以使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ If ``true``, computes shadows in the reflection probe. This makes the reflection
 - |void| **set_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_intensity**\ (\ )
 
-Defines the reflection intensity. Intensity modulates the strength of the reflection.
+定义反射强度。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ Defines the reflection intensity. Intensity modulates the strength of the reflec
 - |void| **set_as_interior**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_interior**\ (\ )
 
-If ``true``, reflections will ignore sky contribution.
+如果为 ``true``\ ，则反射将忽略天空的贡献。
 
 .. rst-class:: classref-item-separator
 
@@ -316,9 +316,9 @@ If ``true``, reflections will ignore sky contribution.
 - |void| **set_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_distance**\ (\ )
 
-The maximum distance away from the **ReflectionProbe** an object can be before it is culled. Decrease this to improve performance, especially when using the :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`.
+对象在被剔除之前可以距该 **ReflectionProbe** 的最大距离。减少它可以提高性能，尤其是在使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 作为 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 时。
 
-\ **Note:** The maximum reflection distance is always at least equal to the probe's extents. This means that decreasing :ref:`max_distance<class_ReflectionProbe_property_max_distance>` will not always cull objects from reflections, especially if the reflection probe's box defined by its :ref:`size<class_ReflectionProbe_property_size>` is already large.
+\ **注意：**\ 最大反射距离始终至少等于探针的范围。这意味着减少 :ref:`max_distance<class_ReflectionProbe_property_max_distance>` 并不总是会从反射中剔除对象，尤其是在反射探针由 :ref:`size<class_ReflectionProbe_property_size>` 定义的框已经很大的情况下。
 
 .. rst-class:: classref-item-separator
 
@@ -335,9 +335,9 @@ The maximum distance away from the **ReflectionProbe** an object can be before i
 - |void| **set_mesh_lod_threshold**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mesh_lod_threshold**\ (\ )
 
-The automatic LOD bias to use for meshes rendered within the **ReflectionProbe** (this is analog to :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`). Higher values will use less detailed versions of meshes that have LOD variations generated. If set to ``0.0``, automatic LOD is disabled. Increase :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` to improve performance at the cost of geometry detail, especially when using the :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` :ref:`update_mode<class_ReflectionProbe_property_update_mode>`.
+用于在 **ReflectionProbe** 内渲染网格的自动 LOD 偏置（这类似于 :ref:`Viewport.mesh_lod_threshold<class_Viewport_property_mesh_lod_threshold>`\ ）。较高的值将使用生成了 LOD 变化的不太详细的网格版本。如果设置为 ``0.0``\ ，则自动 LOD 将被禁用。增加 :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` 以牺牲几何细节为代价提高性能，尤其是在使用 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>` 的 :ref:`update_mode<class_ReflectionProbe_property_update_mode>` 时。
 
-\ **Note:** :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` does not affect :ref:`GeometryInstance3D<class_GeometryInstance3D>` visibility ranges (also known as "manual" LOD or hierarchical LOD).
+\ **注意：**\ :ref:`mesh_lod_threshold<class_ReflectionProbe_property_mesh_lod_threshold>` 不影响 :ref:`GeometryInstance3D<class_GeometryInstance3D>` 可见性范围（也称为“手动”LOD 或分层 LOD）。
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ The automatic LOD bias to use for meshes rendered within the **ReflectionProbe**
 - |void| **set_origin_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_origin_offset**\ (\ )
 
-Sets the origin offset to be used when this **ReflectionProbe** is in :ref:`box_projection<class_ReflectionProbe_property_box_projection>` mode. This can be set to a non-zero value to ensure a reflection fits a rectangle-shaped room, while reducing the number of objects that "get in the way" of the reflection.
+设置当该 **ReflectionProbe** 处于 :ref:`box_projection<class_ReflectionProbe_property_box_projection>` 模式时要使用的原点偏移量。这可以被设置为一个非零值，以确保反射适合矩形房间，同时减少“妨碍”反射的对象数量。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ Sets the origin offset to be used when this **ReflectionProbe** is in :ref:`box_
 - |void| **set_reflection_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_reflection_mask**\ (\ )
 
-Sets the reflection mask which determines what objects have reflections applied from this probe. Every :ref:`VisualInstance3D<class_VisualInstance3D>` with a layer included in this reflection mask will have reflections applied from this probe. See also :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`, which can be used to exclude objects from appearing in the reflection while still making them affected by the **ReflectionProbe**.
+设置反射掩码，该掩码确定哪些对象应用了来自该探针的反射。每个包含在该反射掩码中的层的 :ref:`VisualInstance3D<class_VisualInstance3D>` 都将由该探针应用反射。另见 :ref:`cull_mask<class_ReflectionProbe_property_cull_mask>`\ ，它可用于排除对象出现在反射中，同时仍使它们受到 **ReflectionProbe** 的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -388,9 +388,9 @@ Sets the reflection mask which determines what objects have reflections applied 
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-The size of the reflection probe. The larger the size, the more space covered by the probe, which will lower the perceived resolution. It is best to keep the size only as large as you need it.
+反射探针的大小。大小越大，探针覆盖的空间就越大，这将降低感知的分辨率。最好将大小保持在需要的大小。
 
-\ **Note:** To better fit areas that are not aligned to the grid, you can rotate the **ReflectionProbe** node.
+\ **注意：**\ 为了更好地适应未与网格对齐的区域，可以旋转 **ReflectionProbe** 节点。
 
 .. rst-class:: classref-item-separator
 
@@ -407,14 +407,14 @@ The size of the reflection probe. The larger the size, the more space covered by
 - |void| **set_update_mode**\ (\ value\: :ref:`UpdateMode<enum_ReflectionProbe_UpdateMode>`\ )
 - :ref:`UpdateMode<enum_ReflectionProbe_UpdateMode>` **get_update_mode**\ (\ )
 
-Sets how frequently the **ReflectionProbe** is updated. Can be :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>` or :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>`.
+设置该 **ReflectionProbe** 的更新频率。可以是 :ref:`UPDATE_ONCE<class_ReflectionProbe_constant_UPDATE_ONCE>` 或 :ref:`UPDATE_ALWAYS<class_ReflectionProbe_constant_UPDATE_ALWAYS>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

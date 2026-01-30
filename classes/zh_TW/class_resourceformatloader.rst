@@ -5,25 +5,25 @@
 ResourceFormatLoader
 ====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Loads a specific resource type from a file.
+從檔案中載入特定資源型別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Godot loads resources in the editor or in exported games using ResourceFormatLoaders. They are queried automatically via the :ref:`ResourceLoader<class_ResourceLoader>` singleton, or when a resource with internal dependencies is loaded. Each file type may load as a different resource type, so multiple ResourceFormatLoaders are registered in the engine.
+Godot 在編輯器或匯出的遊戲中使用 ResourceFormatLoaders 來載入資源。它們通過 :ref:`ResourceLoader<class_ResourceLoader>` 單例自動查詢，或在載入具有內部依賴項的資源時自動查詢。每種文件型別可以作為不同的資源型別載入，因此在引擎中註冊多個 ResourceFormatLoaders。
 
-Extending this class allows you to define your own loader. Be sure to respect the documented return types and values. You should give it a global class name with ``class_name`` for it to be registered. Like built-in ResourceFormatLoaders, it will be called automatically when loading resources of its handled type(s). You may also implement a :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`.
+擴充此類可讓你定義自己的載入器。請確保遵守文件中記錄的返回型別和值。你應該使用 ``class_name`` 給它一個全域類別名稱以進行註冊。像內建的 ResourceFormatLoaders 一樣，當載入其處理的型別的資源時，它將自動被呼叫。你還可以實作 :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`\ 。
 
-\ **Note:** You can also extend :ref:`EditorImportPlugin<class_EditorImportPlugin>` if the resource type you need exists but Godot is unable to load its format. Choosing one way over another depends on if the format is suitable or not for the final exported game. For example, it's better to import ``.png`` textures as ``.ctex`` (:ref:`CompressedTexture2D<class_CompressedTexture2D>`) first, so they can be loaded with better efficiency on the graphics card.
+\ **注意：**\ 如果你需要的資源型別存在，但 Godot 無法載入其格式，則也可以擴充 :ref:`EditorImportPlugin<class_EditorImportPlugin>`\ 。選擇哪種方法取決於該格式是否適用於最終匯出的遊戲。例如，最好首先將 ``.png`` 紋理作為 ``.ctex``\ （\ :ref:`CompressedTexture2D<class_CompressedTexture2D>`\ ）匯入，以便在圖形卡上能更高效的載入它們。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_ResourceFormatLoader_CacheMode:
 
@@ -113,8 +113,8 @@ Like :ref:`CACHE_MODE_REPLACE<class_ResourceFormatLoader_constant_CACHE_MODE_REP
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ResourceFormatLoader_private_method__exists:
 
@@ -180,7 +180,7 @@ Should return the dependencies for the resource at the given ``path``. Each depe
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_recognized_extensions>`
 
-Gets the list of extensions for files this loader is able to read.
+獲取該載入器能夠讀取的檔的副檔名列表。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Gets the list of extensions for files this loader is able to read.
 
 :ref:`String<class_String>` **_get_resource_script_class**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_resource_script_class>`
 
-Returns the script class name associated with the :ref:`Resource<class_Resource>` under the given ``path``. If the resource has no script or the script isn't a named class, it should return ``""``.
+返回與給定的 ``path`` 下的 :ref:`Resource<class_Resource>` 關聯的腳本類別名稱稱。如果資源沒有腳本或腳本不是一個命名的類，則應返回 ``""``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ Returns the script class name associated with the :ref:`Resource<class_Resource>
 
 :ref:`String<class_String>` **_get_resource_type**\ (\ path\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__get_resource_type>`
 
-Gets the class name of the resource associated with the given path. If the loader cannot handle it, it should return ``""``.
+獲取與給定路徑相關的資源的類別名稱。如果載入器不能處理它，它應該返回 ``""``\ 。
 
-\ **Note:** Custom resource types defined by scripts aren't known by the :ref:`ClassDB<class_ClassDB>`, so you might just return ``"Resource"`` for them.
+\ **注意：**\ :ref:`ClassDB<class_ClassDB>` 不知道腳本定義的自訂資源型別，因此你可能只為它們返回 ``"Resource"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -230,9 +230,9 @@ Should return the unique ID for the resource associated with the given path. If 
 
 :ref:`bool<class_bool>` **_handles_type**\ (\ type\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__handles_type>`
 
-Tells which resource class this loader can load.
+說明這個載入器可以載入哪個資源類。
 
-\ **Note:** Custom resource types defined by scripts aren't known by the :ref:`ClassDB<class_ClassDB>`, so you might just handle ``"Resource"`` for them.
+\ **注意：**\ :ref:`ClassDB<class_ClassDB>` 不知道腳本定義的自訂資源型別，因此你可以只為它們處理 ``"Resource"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ Tells which resource class this loader can load.
 
 :ref:`Variant<class_Variant>` **_load**\ (\ path\: :ref:`String<class_String>`, original_path\: :ref:`String<class_String>`, use_sub_threads\: :ref:`bool<class_bool>`, cache_mode\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__load>`
 
-Loads a resource when the engine finds this loader to be compatible. If the loaded resource is the result of an import, ``original_path`` will target the source file. Returns a :ref:`Resource<class_Resource>` object on success, or an :ref:`Error<enum_@GlobalScope_Error>` constant in case of failure.
+當引擎發現該載入程式相容時載入資源。如果載入的資源是匯入的結果，\ ``original_path`` 將以原始檔案為目標。成功時返回一個 :ref:`Resource<class_Resource>` 物件，失敗時返回一個 :ref:`Error<enum_@GlobalScope_Error>` 常數。
 
-The ``cache_mode`` property defines whether and how the cache should be used or updated when loading the resource. See :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>` for details.
+\ ``cache_mode`` 屬性定義載入資源時是否以及如何使用或更新快取。有關詳細信息，請參閱 :ref:`CacheMode<enum_ResourceFormatLoader_CacheMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -258,9 +258,9 @@ The ``cache_mode`` property defines whether and how the cache should be used or 
 
 :ref:`bool<class_bool>` **_recognize_path**\ (\ path\: :ref:`String<class_String>`, type\: :ref:`StringName<class_StringName>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__recognize_path>`
 
-Tells whether or not this loader should load a resource from its resource path for a given type.
+判斷該載入器是否應對於給定型別從其資源路徑載入資源。
 
-If it is not implemented, the default behavior returns whether the path's extension is within the ones provided by :ref:`_get_recognized_extensions()<class_ResourceFormatLoader_private_method__get_recognized_extensions>`, and if the type is within the ones provided by :ref:`_get_resource_type()<class_ResourceFormatLoader_private_method__get_resource_type>`.
+如果未實作，則預設行為是檢查路徑的副檔名是否在\ :ref:`_get_recognized_extensions()<class_ResourceFormatLoader_private_method__get_recognized_extensions>`\ 提供的範圍內，以及型別是否在\ :ref:`_get_resource_type()<class_ResourceFormatLoader_private_method__get_resource_type>`\ 提供的範圍內。
 
 .. rst-class:: classref-item-separator
 
@@ -272,16 +272,16 @@ If it is not implemented, the default behavior returns whether the path's extens
 
 :ref:`Error<enum_@GlobalScope_Error>` **_rename_dependencies**\ (\ path\: :ref:`String<class_String>`, renames\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_ResourceFormatLoader_private_method__rename_dependencies>`
 
-If implemented, renames dependencies within the given resource and saves it. ``renames`` is a dictionary ``{ String => String }`` mapping old dependency paths to new paths.
+如果被實作，將重命名給定資源中的依賴項並保存它。\ ``renames`` 是一個字典 ``{ String => String }``\ ，將舊依賴路徑對應到新路徑。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or an :ref:`Error<enum_@GlobalScope_Error>` constant in case of failure.
+成功時返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失敗時返回 :ref:`Error<enum_@GlobalScope_Error>` 常數。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

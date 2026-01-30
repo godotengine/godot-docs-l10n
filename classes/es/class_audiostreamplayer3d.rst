@@ -226,7 +226,7 @@ Descripciones de Propiedades
 - |void| **set_area_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_area_mask**\ (\ )
 
-Determines which :ref:`Area3D<class_Area3D>` layers affect the sound for reverb and audio bus effects. Areas can be used to redirect :ref:`AudioStream<class_AudioStream>`\ s so that they play in a certain audio bus. An example of how you might use this is making a "water" area so that sounds played in the water are redirected through an audio bus to make them sound like they are being played underwater.
+Determina qué capas de :ref:`Area3D<class_Area3D>` afectan el sonido para la reverberación y los efectos del bus de audio. Las áreas pueden usarse para redirigir :ref:`AudioStream<class_AudioStream>`\ s para que se reproduzcan en un bus de audio determinado. Un ejemplo de cómo podrías usar esto es creando un área de "agua" para que los sonidos reproducidos en el agua sean redirigidos a través de un bus de audio para hacer que suenen como si se estuvieran reproduciendo bajo el agua.
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Determines which :ref:`Area3D<class_Area3D>` layers affect the sound for reverb 
 - |void| **set_attenuation_filter_cutoff_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attenuation_filter_cutoff_hz**\ (\ )
 
-The cutoff frequency of the attenuation low-pass filter, in Hz. A sound above this frequency is attenuated more than a sound below this frequency. To disable this effect, set this to ``20500`` as this frequency is above the human hearing limit.
+La frecuencia de corte del filtro de paso bajo de atenuación, en Hz. Un sonido por encima de esta frecuencia se atenúa más que un sonido por debajo de esta frecuencia. Para deshabilitar este efecto, establece esto en ``20500``, ya que esta frecuencia está por encima del límite de audición humana.
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ The cutoff frequency of the attenuation low-pass filter, in Hz. A sound above th
 - |void| **set_attenuation_filter_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attenuation_filter_db**\ (\ )
 
-Amount how much the filter affects the loudness, in decibels.
+Cantidad en que el filtro afecta el volumen, en decibelios.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Decide si el audio debe ser más silencioso con la distancia lineal, cuadrática
 - |void| **set_autoplay**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autoplay_enabled**\ (\ )
 
-If ``true``, audio plays when the AudioStreamPlayer3D node is added to scene tree.
+Si es ``true``, el audio se reproduce cuando el nodo AudioStreamPlayer3D se añade al árbol de escenas.
 
 .. rst-class:: classref-item-separator
 
@@ -311,9 +311,9 @@ If ``true``, audio plays when the AudioStreamPlayer3D node is added to scene tre
 - |void| **set_bus**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_bus**\ (\ )
 
-The bus on which this audio is playing.
+El bus en el que se está reproduciendo este audio.
 
-\ **Note:** When setting this property, keep in mind that no validation is performed to see if the given name matches an existing bus. This is because audio bus layouts might be loaded after this property is set. If this given name can't be resolved at runtime, it will fall back to ``"Master"``.
+\ **Nota:** Al establecer esta propiedad, ten en cuenta que no se realiza ninguna validación para comprobar si el nombre dado coincide con un bus existente. Esto se debe a que las configuraciones de los buses de audio podrían cargarse después de que se establezca esta propiedad. Si este nombre dado no puede resolverse en tiempo de ejecución, se recurrirá a ``"Master"``.
 
 .. rst-class:: classref-item-separator
 
@@ -330,9 +330,9 @@ The bus on which this audio is playing.
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_AudioStreamPlayer3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-Decides in which step the Doppler effect should be calculated.
+Decide en qué paso se debe calcular el efecto Doppler.
 
-\ **Note:** If :ref:`doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not :ref:`DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>` but the current :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>` has doppler tracking disabled, the Doppler effect will be heard but will not take the movement of the current listener into account. If accurate Doppler effect is desired, doppler tracking should be enabled on both the **AudioStreamPlayer3D** and the current :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>`.
+\ **Nota:** Si :ref:`doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` no es :ref:`DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>` pero el :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>` actual tiene el seguimiento Doppler deshabilitado, el efecto Doppler se escuchará pero no tendrá en cuenta el movimiento del oyente actual. Si se desea un efecto Doppler preciso, el seguimiento Doppler debe estar habilitado tanto en el **AudioStreamPlayer3D** como en el :ref:`Camera3D<class_Camera3D>`/:ref:`AudioListener3D<class_AudioListener3D>` actual.
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ If ``true``, audio is playing or is queued to be played (see :ref:`play()<class_
 - |void| **set_stream**\ (\ value\: :ref:`AudioStream<class_AudioStream>`\ )
 - :ref:`AudioStream<class_AudioStream>` **get_stream**\ (\ )
 
-The :ref:`AudioStream<class_AudioStream>` resource to be played.
+El recurso :ref:`AudioStream<class_AudioStream>` que se va a reproducir.
 
 .. rst-class:: classref-item-separator
 

@@ -5,21 +5,21 @@
 Polygon2D
 =========
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 2D polygon.
+2D 多邊形。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A Polygon2D is defined by a set of points. Each point is connected to the next, with the final point being connected to the first, resulting in a closed polygon. Polygon2Ds can be filled with color (solid or gradient) or filled with a given texture.
+Polygon2D 由一組點定義。每個點都連接到下一個點，最後一個點連接到第一個點，從而形成一個封閉的多邊形。Polygon2D 可以填充顏色（純色或漸變），也可以填充給定的紋理。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -88,8 +88,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Polygon2D_property_antialiased:
 
@@ -102,7 +102,7 @@ Property Descriptions
 - |void| **set_antialiased**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_antialiased**\ (\ )
 
-If ``true``, polygon edges will be anti-aliased.
+如果為 ``true``\ ，則多邊形邊緣將進行抗鋸齒。
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ The polygon's fill color. If :ref:`texture<class_Polygon2D_property_texture>` is
 - |void| **set_internal_vertex_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_internal_vertex_count**\ (\ )
 
-Number of internal vertices, used for UV mapping.
+內部頂點的數量，用於 UV 對應。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Number of internal vertices, used for UV mapping.
 - |void| **set_invert_border**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_invert_border**\ (\ )
 
-Added padding applied to the bounding box when :ref:`invert_enabled<class_Polygon2D_property_invert_enabled>` is set to ``true``. Setting this value too small may result in a "Bad Polygon" error.
+新增了當 :ref:`invert_enabled<class_Polygon2D_property_invert_enabled>` 被設定為 ``true`` 時套用於邊界框的填充。將該值設定得太小可能會產生一個“Bad Polygon”錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ Added padding applied to the bounding box when :ref:`invert_enabled<class_Polygo
 - |void| **set_invert_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_invert_enabled**\ (\ )
 
-If ``true``, the polygon will be inverted, containing the area outside the defined points and extending to the :ref:`invert_border<class_Polygon2D_property_invert_border>`.
+如果為 ``true``\ ，則多邊形將被反轉，包含定義點之外的區域並延伸到 :ref:`invert_border<class_Polygon2D_property_invert_border>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ If ``true``, the polygon will be inverted, containing the area outside the defin
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The offset applied to each vertex.
+套用於每個頂點的位置偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ The polygon's list of vertices. The final point will be connected to the first.
 - |void| **set_polygons**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_polygons**\ (\ )
 
-The list of polygons, in case more than one is being represented. Every individual polygon is stored as a :ref:`PackedInt32Array<class_PackedInt32Array>` where each :ref:`int<class_int>` is an index to a point in :ref:`polygon<class_Polygon2D_property_polygon>`. If empty, this property will be ignored, and the resulting single polygon will be composed of all points in :ref:`polygon<class_Polygon2D_property_polygon>`, using the order they are stored in.
+多邊形數量大於一時的多邊形列表。每個獨立的多邊形都作為 :ref:`PackedInt32Array<class_PackedInt32Array>` 存儲，其中的每個 :ref:`int<class_int>` 都是對 :ref:`polygon<class_Polygon2D_property_polygon>` 某個點的索引。如果為空，則會忽略這個屬性，得到由 :ref:`polygon<class_Polygon2D_property_polygon>` 中所有點構成的單個多邊形，順序與儲存順序一致。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ The list of polygons, in case more than one is being represented. Every individu
 - |void| **set_skeleton**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_skeleton**\ (\ )
 
-Path to a :ref:`Skeleton2D<class_Skeleton2D>` node used for skeleton-based deformations of this polygon. If empty or invalid, skeletal deformations will not be used.
+指向 :ref:`Skeleton2D<class_Skeleton2D>` 節點的路徑，用於對這個多邊形進行基於骨架的變形。如果為空或無效，則不會使用骨架變形。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Amount to offset the polygon's :ref:`texture<class_Polygon2D_property_texture>`.
 - |void| **set_texture_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texture_rotation**\ (\ )
 
-The texture's rotation in radians.
+紋理的旋轉弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -354,8 +354,8 @@ Color for each vertex. Colors are interpolated between vertices, resulting in sm
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Polygon2D_method_add_bone:
 
@@ -363,7 +363,7 @@ Method Descriptions
 
 |void| **add_bone**\ (\ path\: :ref:`NodePath<class_NodePath>`, weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_Polygon2D_method_add_bone>`
 
-Adds a bone with the specified ``path`` and ``weights``.
+新增指定 ``path`` 和 ``weights`` 的骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ Adds a bone with the specified ``path`` and ``weights``.
 
 |void| **clear_bones**\ (\ ) :ref:`🔗<class_Polygon2D_method_clear_bones>`
 
-Removes all bones from this **Polygon2D**.
+刪除這個 **Polygon2D** 的所有骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ Removes all bones from this **Polygon2D**.
 
 |void| **erase_bone**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Polygon2D_method_erase_bone>`
 
-Removes the specified bone from this **Polygon2D**.
+從這個 **Polygon2D** 中刪除指定的骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ Removes the specified bone from this **Polygon2D**.
 
 :ref:`int<class_int>` **get_bone_count**\ (\ ) |const| :ref:`🔗<class_Polygon2D_method_get_bone_count>`
 
-Returns the number of bones in this **Polygon2D**.
+返回這個 **Polygon2D** 中骨骼的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Returns the number of bones in this **Polygon2D**.
 
 :ref:`NodePath<class_NodePath>` **get_bone_path**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Polygon2D_method_get_bone_path>`
 
-Returns the path to the node associated with the specified bone.
+返回與指定骨骼相關聯的節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Returns the path to the node associated with the specified bone.
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_bone_weights**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Polygon2D_method_get_bone_weights>`
 
-Returns the weight values of the specified bone.
+返回指定骨骼的權重值。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Returns the weight values of the specified bone.
 
 |void| **set_bone_path**\ (\ index\: :ref:`int<class_int>`, path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_Polygon2D_method_set_bone_path>`
 
-Sets the path to the node associated with the specified bone.
+設定與指定骨骼相關聯的節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -447,14 +447,14 @@ Sets the path to the node associated with the specified bone.
 
 |void| **set_bone_weights**\ (\ index\: :ref:`int<class_int>`, weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_Polygon2D_method_set_bone_weights>`
 
-Sets the weight values for the specified bone.
+設定指定骨骼的權重值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

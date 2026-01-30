@@ -5,23 +5,23 @@
 ThemeDB
 =======
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-A singleton that provides access to static information about :ref:`Theme<class_Theme>` resources used by the engine and by your project.
+用来访问引擎及项目中所使用的 :ref:`Theme<class_Theme>` 资源静态信息的单例。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This singleton provides access to static information about :ref:`Theme<class_Theme>` resources used by the engine and by your projects. You can fetch the default engine theme, as well as your project configured theme.
+这个单例可以用来访问引擎及项目中所使用的 :ref:`Theme<class_Theme>` 资源静态信息。可以获取引擎默认的主题，也可以获取你在项目中配置的主题。
 
-\ **ThemeDB** also contains fallback values for theme properties.
+\ **ThemeDB** 也包含了主题属性的回退值。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_ThemeDB_signal_fallback_changed:
 
@@ -67,7 +67,7 @@ Signals
 
 **fallback_changed**\ (\ ) :ref:`🔗<class_ThemeDB_signal_fallback_changed>`
 
-Emitted when one of the fallback values had been changed. Use it to refresh the look of controls that may rely on the fallback theme items.
+任意回退值发生改变时发出。可用于刷新依赖于回退主题项的控件的外观。
 
 .. rst-class:: classref-section-separator
 
@@ -75,8 +75,8 @@ Emitted when one of the fallback values had been changed. Use it to refresh the 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ThemeDB_property_fallback_base_scale:
 
@@ -89,9 +89,9 @@ Property Descriptions
 - |void| **set_fallback_base_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fallback_base_scale**\ (\ )
 
-The fallback base scale factor of every :ref:`Control<class_Control>` node and :ref:`Theme<class_Theme>` resource. Used when no other value is available to the control.
+所有 :ref:`Control<class_Control>` 节点和 :ref:`Theme<class_Theme>` 资源的回退基础缩放系数。用于控件没有其他值可用的情况。
 
-See also :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>`.
+另见 :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -108,9 +108,9 @@ See also :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>
 - |void| **set_fallback_font**\ (\ value\: :ref:`Font<class_Font>`\ )
 - :ref:`Font<class_Font>` **get_fallback_font**\ (\ )
 
-The fallback font of every :ref:`Control<class_Control>` node and :ref:`Theme<class_Theme>` resource. Used when no other value is available to the control.
+所有 :ref:`Control<class_Control>` 节点和 :ref:`Theme<class_Theme>` 资源的回退字体。用于控件没有其他值可用的情况。
 
-See also :ref:`Theme.default_font<class_Theme_property_default_font>`.
+另见 :ref:`Theme.default_font<class_Theme_property_default_font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -127,9 +127,9 @@ See also :ref:`Theme.default_font<class_Theme_property_default_font>`.
 - |void| **set_fallback_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fallback_font_size**\ (\ )
 
-The fallback font size of every :ref:`Control<class_Control>` node and :ref:`Theme<class_Theme>` resource. Used when no other value is available to the control.
+所有 :ref:`Control<class_Control>` 节点和 :ref:`Theme<class_Theme>` 资源的回退字体大小。用于控件没有其他值可用的情况。
 
-See also :ref:`Theme.default_font_size<class_Theme_property_default_font_size>`.
+另见 :ref:`Theme.default_font_size<class_Theme_property_default_font_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ See also :ref:`Theme.default_font_size<class_Theme_property_default_font_size>`.
 - |void| **set_fallback_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_fallback_icon**\ (\ )
 
-The fallback icon of every :ref:`Control<class_Control>` node and :ref:`Theme<class_Theme>` resource. Used when no other value is available to the control.
+所有 :ref:`Control<class_Control>` 节点和 :ref:`Theme<class_Theme>` 资源的回退图标。用于控件没有其他值可用的情况。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ The fallback icon of every :ref:`Control<class_Control>` node and :ref:`Theme<cl
 - |void| **set_fallback_stylebox**\ (\ value\: :ref:`StyleBox<class_StyleBox>`\ )
 - :ref:`StyleBox<class_StyleBox>` **get_fallback_stylebox**\ (\ )
 
-The fallback stylebox of every :ref:`Control<class_Control>` node and :ref:`Theme<class_Theme>` resource. Used when no other value is available to the control.
+所有 :ref:`Control<class_Control>` 节点和 :ref:`Theme<class_Theme>` 资源的回退样式盒。用于控件没有其他值可用的情况。
 
 .. rst-class:: classref-section-separator
 
@@ -171,8 +171,8 @@ The fallback stylebox of every :ref:`Control<class_Control>` node and :ref:`Them
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ThemeDB_method_get_default_theme:
 
@@ -180,7 +180,7 @@ Method Descriptions
 
 :ref:`Theme<class_Theme>` **get_default_theme**\ (\ ) :ref:`🔗<class_ThemeDB_method_get_default_theme>`
 
-Returns a reference to the default engine :ref:`Theme<class_Theme>`. This theme resource is responsible for the out-of-the-box look of :ref:`Control<class_Control>` nodes and cannot be overridden.
+返回默认引擎 :ref:`Theme<class_Theme>` 的引用。该主题资源负责 :ref:`Control<class_Control>` 节点的原始外观，无法进行覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -192,16 +192,16 @@ Returns a reference to the default engine :ref:`Theme<class_Theme>`. This theme 
 
 :ref:`Theme<class_Theme>` **get_project_theme**\ (\ ) :ref:`🔗<class_ThemeDB_method_get_project_theme>`
 
-Returns a reference to the custom project :ref:`Theme<class_Theme>`. This theme resources allows to override the default engine theme for every control node in the project.
+返回自定义项目 :ref:`Theme<class_Theme>` 的引用。该主题资源能够影响项目中的所有控件节点，覆盖默认引擎主题。
 
-To set the project theme, see :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`.
+项目主题的设置请参阅 :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

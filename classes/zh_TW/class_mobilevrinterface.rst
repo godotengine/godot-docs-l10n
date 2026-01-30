@@ -5,14 +5,14 @@
 MobileVRInterface
 =================
 
-**Inherits:** :ref:`XRInterface<class_XRInterface>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`XRInterface<class_XRInterface>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Generic mobile VR implementation.
+通用移動 VR 實作。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This is a generic mobile VR implementation where you need to provide details about the phone and HMD used. It does not rely on any existing framework. This is the most basic interface we have. For the best effect, you need a mobile phone with a gyroscope and accelerometer.
 
@@ -30,8 +30,8 @@ You can initialize this interface as follows:
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_MobileVRInterface_property_display_to_lens:
 
@@ -80,7 +80,7 @@ Property Descriptions
 - |void| **set_display_to_lens**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_display_to_lens**\ (\ )
 
-The distance between the display and the lenses inside of the device in centimeters.
+顯示器與裝置內部鏡片之間的距離，單位為釐米。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ The distance between the display and the lenses inside of the device in centimet
 - |void| **set_display_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_display_width**\ (\ )
 
-The width of the display in centimeters.
+顯示器的寬度，單位為釐米。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ The width of the display in centimeters.
 - |void| **set_eye_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_eye_height**\ (\ )
 
-The height at which the camera is placed in relation to the ground (i.e. :ref:`XROrigin3D<class_XROrigin3D>` node).
+相機相對於地面所處的高度（即相對於 :ref:`XROrigin3D<class_XROrigin3D>` 節點）。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ The height at which the camera is placed in relation to the ground (i.e. :ref:`X
 - |void| **set_iod**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_iod**\ (\ )
 
-The interocular distance, also known as the interpupillary distance. The distance between the pupils of the left and right eye.
+眼間距離，也稱為瞳孔間距離。左眼和右眼瞳孔之間的距離。
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ The interocular distance, also known as the interpupillary distance. The distanc
 - |void| **set_k1**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_k1**\ (\ )
 
-The k1 lens factor is one of the two constants that define the strength of the lens used and directly influences the lens distortion effect.
+k1 鏡頭因數是定義所使用鏡頭強度的兩個常數之一，並直接影響鏡頭失真效果。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ The k1 lens factor is one of the two constants that define the strength of the l
 - |void| **set_k2**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_k2**\ (\ )
 
-The k2 lens factor, see k1.
+k2 鏡頭因數，見 k1。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Set the offset rect relative to the area being rendered. A length of 1 represent
 - |void| **set_oversample**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_oversample**\ (\ )
 
-The oversample setting. Because of the lens distortion we have to render our buffers at a higher resolution then the screen can natively handle. A value between 1.5 and 2.0 often provides good results but at the cost of performance.
+過取樣設定。由於鏡頭失真，我們必須以比螢幕自然解析度更高的品質算繪我們的緩衝區。介於 1.5 和 2.0 之間的值通常可以提供良好的結果，但會犧牲性能。
 
 .. rst-class:: classref-item-separator
 
@@ -239,12 +239,12 @@ The strength used to calculate the VRS density map. The greater this value, the 
 
 \ **Note:** Mobile and Forward+ renderers only. Requires :ref:`Viewport.vrs_mode<class_Viewport_property_vrs_mode>` to be set to :ref:`Viewport.VRS_XR<class_Viewport_constant_VRS_XR>`.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,32 +5,32 @@
 ShaderMaterial
 ==============
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material defined by a custom :ref:`Shader<class_Shader>` program and the values of its shader parameters.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A material that uses a custom :ref:`Shader<class_Shader>` program to render visual items (canvas items, meshes, skies, fog), or to process particles. Compared to other materials, **ShaderMaterial** gives deeper control over the generated shader code. For more information, see the shaders documentation index below.
-
-Multiple **ShaderMaterial**\ s can use the same shader and configure different values for the shader uniforms.
-
-\ **Note:** For performance reasons, the :ref:`Resource.changed<class_Resource_signal_changed>` signal is only emitted when the :ref:`Resource.resource_name<class_Resource_property_resource_name>` changes. Only in editor, it is also emitted for :ref:`shader<class_ShaderMaterial_property_shader>` changes.
+自訂 :ref:`Shader<class_Shader>` 程式定義的材質及其著色器參數的值。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Shaders documentation index <../tutorials/shaders/index>`
+使用自訂 :ref:`Shader<class_Shader>` 程式算繪視覺專案（畫布專案、網格、天空、霧）或處理粒子的材質。與其他材質相比，\ **ShaderMaterial** 給予對產生的著色器程式碼進行更深入的控制。有關更多信息，請參閱下面的著色器檔案索引。
+
+多個\ **ShaderMaterial**\ 可以使用相同的著色器並為著色器製服配置不同的值。
+
+\ **注意：**\ 基於效能原因，僅當\ :ref:`Resource.resource_name<class_Resource_property_resource_name>`\ 變更時才會發出\ :ref:`Resource.changed<class_Resource_signal_changed>`\ 訊號。僅在編輯器中，它也會針對 :ref:`shader<class_ShaderMaterial_property_shader>` 變更發出。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`著色器文件索引 <../tutorials/shaders/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ShaderMaterial_property_shader:
 
@@ -73,7 +73,7 @@ Property Descriptions
 - |void| **set_shader**\ (\ value\: :ref:`Shader<class_Shader>`\ )
 - :ref:`Shader<class_Shader>` **get_shader**\ (\ )
 
-The :ref:`Shader<class_Shader>` program used to render this material.
+用於算繪此材質的 :ref:`Shader<class_Shader>` 程式。
 
 .. rst-class:: classref-section-separator
 
@@ -81,8 +81,8 @@ The :ref:`Shader<class_Shader>` program used to render this material.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ShaderMaterial_method_get_shader_parameter:
 
@@ -90,7 +90,7 @@ Method Descriptions
 
 :ref:`Variant<class_Variant>` **get_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ShaderMaterial_method_get_shader_parameter>`
 
-Returns the current value set for this material of a uniform in the shader.
+返回在著色器中此 uniform 材質的目前值。
 
 .. rst-class:: classref-item-separator
 
@@ -108,12 +108,12 @@ Changes the value set for this material of a uniform in the shader.
 
 \ **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` or duplicate the **ShaderMaterial** resource using :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

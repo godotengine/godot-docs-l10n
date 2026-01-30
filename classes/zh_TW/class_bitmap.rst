@@ -5,21 +5,21 @@
 BitMap
 ======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Boolean matrix.
+布林矩陣。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A two-dimensional array of boolean values, can be used to efficiently store a binary matrix (every matrix element takes only one bit) and query the values using natural cartesian coordinates.
+布林值二維陣列，可以用來高效儲存二進位矩陣（每個矩陣元素只占一個比特位），並使用自然的笛卡爾座標查詢數值。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_BitMap_method_convert_to_image:
 
@@ -79,7 +79,7 @@ Returns an image of the same size as the bitmap and with an :ref:`Format<enum_Im
 
 |void| **create**\ (\ size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_BitMap_method_create>`
 
-Creates a bitmap with the specified size, filled with ``false``.
+建立一個指定尺寸的點陣圖，用 ``false`` 填充。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Creates a bitmap with the specified size, filled with ``false``.
 
 |void| **create_from_image_alpha**\ (\ image\: :ref:`Image<class_Image>`, threshold\: :ref:`float<class_float>` = 0.1\ ) :ref:`🔗<class_BitMap_method_create_from_image_alpha>`
 
-Creates a bitmap that matches the given image dimensions, every element of the bitmap is set to ``false`` if the alpha value of the image at that position is equal to ``threshold`` or less, and ``true`` in other case.
+建立一個配對給定圖像大小的點陣圖，如果該點陣圖的 Alpha 值等於或小於 ``threshold``\ ，則點陣圖的每個元素都被設定為 ``false``\ ；否則被設定為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Creates a bitmap that matches the given image dimensions, every element of the b
 
 :ref:`bool<class_bool>` **get_bit**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BitMap_method_get_bit>`
 
-Returns bitmap's value at the specified position.
+返回點陣圖在指定位置的值。
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Returns bitmap's value at the specified position.
 
 :ref:`bool<class_bool>` **get_bitv**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_BitMap_method_get_bitv>`
 
-Returns bitmap's value at the specified position.
+返回點陣圖在指定位置的值。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Returns bitmap's value at the specified position.
 
 :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ ) |const| :ref:`🔗<class_BitMap_method_get_size>`
 
-Returns bitmap's dimensions.
+返回點陣圖的尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Returns bitmap's dimensions.
 
 :ref:`int<class_int>` **get_true_bit_count**\ (\ ) |const| :ref:`🔗<class_BitMap_method_get_true_bit_count>`
 
-Returns the number of bitmap elements that are set to ``true``.
+返回設定為 ``true`` 的點陣圖元素的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Returns the number of bitmap elements that are set to ``true``.
 
 |void| **grow_mask**\ (\ pixels\: :ref:`int<class_int>`, rect\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_BitMap_method_grow_mask>`
 
-Applies morphological dilation or erosion to the bitmap. If ``pixels`` is positive, dilation is applied to the bitmap. If ``pixels`` is negative, erosion is applied to the bitmap. ``rect`` defines the area where the morphological operation is applied. Pixels located outside the ``rect`` are unaffected by :ref:`grow_mask()<class_BitMap_method_grow_mask>`.
+對點陣圖進行形態學膨脹或腐蝕操作。如果 ``pixels`` 為正，則對點陣圖執行膨脹。如果 ``pixels`` 為負，則對點陣圖執行腐蝕。\ ``rect`` 定義進行形態學操作的區域。位於 ``rect``] 之外的圖元不會被 :ref:`grow_mask()<class_BitMap_method_grow_mask>` 影響。
 
 .. rst-class:: classref-item-separator
 
@@ -163,15 +163,15 @@ Applies morphological dilation or erosion to the bitmap. If ``pixels`` is positi
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **opaque_to_polygons**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, epsilon\: :ref:`float<class_float>` = 2.0\ ) |const| :ref:`🔗<class_BitMap_method_opaque_to_polygons>`
 
-Creates an :ref:`Array<class_Array>` of polygons covering a rectangular portion of the bitmap. It uses a marching squares algorithm, followed by Ramer-Douglas-Peucker (RDP) reduction of the number of vertices. Each polygon is described as a :ref:`PackedVector2Array<class_PackedVector2Array>` of its vertices.
+建立一個多邊形 :ref:`Array<class_Array>`\ ，以覆蓋點陣圖的矩形部分。它使用行進方塊演算法，然後使用 Ramer-Douglas-Peucker（RDP）減少頂點數。每個多邊形都被描述為其頂點的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
-To get polygons covering the whole bitmap, pass:
+要獲取覆蓋整個點陣圖的多邊形，請傳遞：
 
 ::
 
     Rect2(Vector2(), get_size())
 
-\ ``epsilon`` is passed to RDP to control how accurately the polygons cover the bitmap: a lower ``epsilon`` corresponds to more points in the polygons.
+\ ``epsilon`` 被傳遞給 RDP，以控制多邊形覆蓋點陣圖的準確程度：\ ``epsilon`` 越低，對應的多邊形中的點越多。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ To get polygons covering the whole bitmap, pass:
 
 |void| **resize**\ (\ new_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_BitMap_method_resize>`
 
-Resizes the image to ``new_size``.
+將該圖像的大小修改為 ``new_size``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -195,7 +195,7 @@ Resizes the image to ``new_size``.
 
 |void| **set_bit**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, bit\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BitMap_method_set_bit>`
 
-Sets the bitmap's element at the specified position, to the specified value.
+將點陣圖中指定位置的元素設定為指定值。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Sets the bitmap's element at the specified position, to the specified value.
 
 |void| **set_bit_rect**\ (\ rect\: :ref:`Rect2i<class_Rect2i>`, bit\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BitMap_method_set_bit_rect>`
 
-Sets a rectangular portion of the bitmap to the specified value.
+將點陣圖的矩形部分設定為指定值。
 
 .. rst-class:: classref-item-separator
 
@@ -219,14 +219,14 @@ Sets a rectangular portion of the bitmap to the specified value.
 
 |void| **set_bitv**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, bit\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BitMap_method_set_bitv>`
 
-Sets the bitmap's element at the specified position, to the specified value.
+將點陣圖中指定位置的元素設定為指定值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

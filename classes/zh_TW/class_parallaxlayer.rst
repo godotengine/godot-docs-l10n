@@ -5,27 +5,27 @@
 ParallaxLayer
 =============
 
-**Deprecated:** Use the :ref:`Parallax2D<class_Parallax2D>` node instead.
+**已棄用：** Use the :ref:`Parallax2D<class_Parallax2D>` node instead.
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A parallax scrolling layer to be used with :ref:`ParallaxBackground<class_ParallaxBackground>`.
+使用 :ref:`ParallaxBackground<class_ParallaxBackground>` 的視差滾動層。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A ParallaxLayer must be the child of a :ref:`ParallaxBackground<class_ParallaxBackground>` node. Each ParallaxLayer can be set to move at different speeds relative to the camera movement or the :ref:`ParallaxBackground.scroll_offset<class_ParallaxBackground_property_scroll_offset>` value.
+ParallaxLayer 必須是 :ref:`ParallaxBackground<class_ParallaxBackground>` 節點的子節點。每個 ParallaxLayer 都可以設定為相對於相機移動或 :ref:`ParallaxBackground.scroll_offset<class_ParallaxBackground_property_scroll_offset>` 值。
 
-This node's children will be affected by its scroll offset.
+該節點的子節點將受其滾動偏移量的影響。
 
-\ **Note:** Any changes to this node's position and scale made after it enters the scene will be ignored.
+\ **注意：**\ 當該節點進入場景後，對其位置和比例的任何改變都將被忽略。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ParallaxLayer_property_motion_mirroring:
 
@@ -83,7 +83,7 @@ The interval, in pixels, at which the **ParallaxLayer** is drawn repeatedly. Use
 - |void| **set_motion_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_motion_offset**\ (\ )
 
-The ParallaxLayer's offset relative to the parent ParallaxBackground's :ref:`ParallaxBackground.scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
+該 ParallaxLayer 的偏移量，相對於父 ParallaxBackground 的 :ref:`ParallaxBackground.scroll_offset<class_ParallaxBackground_property_scroll_offset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -100,14 +100,14 @@ The ParallaxLayer's offset relative to the parent ParallaxBackground's :ref:`Par
 - |void| **set_motion_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_motion_scale**\ (\ )
 
-Multiplies the ParallaxLayer's motion. If an axis is set to ``0``, it will not scroll.
+複製視差圖層的運動。如果一個軸被設定為 ``0``\ ，它將不會滾動。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

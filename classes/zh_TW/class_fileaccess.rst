@@ -5,14 +5,14 @@
 FileAccess
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides methods for file reading and writing operations.
+提供用於檔讀寫操作的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This class can be used to permanently store data in the user device's file system and to read from it. This is useful for storing game save data or player configuration files.
 
@@ -59,21 +59,21 @@ A **FileAccess** instance will close its file when the instance is freed. Since 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`File system <../tutorials/scripting/filesystem>`
+- :doc:`檔案系統 <../tutorials/scripting/filesystem>`
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 - :doc:`Binary serialization API <../tutorials/io/binary_serialization_api>`
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- `3D 體素示範 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -230,8 +230,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_FileAccess_ModeFlags:
 
@@ -291,7 +291,7 @@ enum **CompressionMode**: :ref:`🔗<enum_FileAccess_CompressionMode>`
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_FASTLZ** = ``0``
 
-Uses the `FastLZ <https://fastlz.org/>`__ compression method.
+使用 `FastLZ <https://fastlz.org/>`__ 壓縮方法。
 
 .. _class_FileAccess_constant_COMPRESSION_DEFLATE:
 
@@ -299,7 +299,7 @@ Uses the `FastLZ <https://fastlz.org/>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_DEFLATE** = ``1``
 
-Uses the `DEFLATE <https://en.wikipedia.org/wiki/DEFLATE>`__ compression method.
+使用 `DEFLATE <https://en.wikipedia.org/wiki/DEFLATE>`__ 壓縮方法。
 
 .. _class_FileAccess_constant_COMPRESSION_ZSTD:
 
@@ -307,7 +307,7 @@ Uses the `DEFLATE <https://en.wikipedia.org/wiki/DEFLATE>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_ZSTD** = ``2``
 
-Uses the `Zstandard <https://facebook.github.io/zstd/>`__ compression method.
+使用 `Zstandard <https://facebook.github.io/zstd/>`__ 壓縮方法。
 
 .. _class_FileAccess_constant_COMPRESSION_GZIP:
 
@@ -315,7 +315,7 @@ Uses the `Zstandard <https://facebook.github.io/zstd/>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_GZIP** = ``3``
 
-Uses the `gzip <https://www.gzip.org/>`__ compression method.
+使用 `gzip <https://www.gzip.org/>`__ 壓縮方法。
 
 .. _class_FileAccess_constant_COMPRESSION_BROTLI:
 
@@ -323,7 +323,7 @@ Uses the `gzip <https://www.gzip.org/>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_BROTLI** = ``4``
 
-Uses the `brotli <https://github.com/google/brotli>`__ compression method (only decompression is supported).
+使用 `brotli <https://github.com/google/brotli>`__ 壓縮方法（僅支援解壓縮）。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_OWNER** = ``256``
 
-Read for owner bit.
+讀取擁有者位元。
 
 .. _class_FileAccess_constant_UNIX_WRITE_OWNER:
 
@@ -349,7 +349,7 @@ Read for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_OWNER** = ``128``
 
-Write for owner bit.
+寫入擁有者位元。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_OWNER:
 
@@ -357,7 +357,7 @@ Write for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_OWNER** = ``64``
 
-Execute for owner bit.
+適用於 Android 的匯出器。
 
 .. _class_FileAccess_constant_UNIX_READ_GROUP:
 
@@ -365,7 +365,7 @@ Execute for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_GROUP** = ``32``
 
-Read for group bit.
+讀取組位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_GROUP:
 
@@ -373,7 +373,7 @@ Read for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_GROUP** = ``16``
 
-Write for group bit.
+寫入群組位元。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_GROUP:
 
@@ -381,7 +381,7 @@ Write for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_GROUP** = ``8``
 
-Execute for group bit.
+適用於 Android 的匯出器。
 
 .. _class_FileAccess_constant_UNIX_READ_OTHER:
 
@@ -389,7 +389,7 @@ Execute for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_OTHER** = ``4``
 
-Read for other bit.
+文字使用的字形。
 
 .. _class_FileAccess_constant_UNIX_WRITE_OTHER:
 
@@ -397,7 +397,7 @@ Read for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_OTHER** = ``2``
 
-Write for other bit.
+Web 匯出器。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_OTHER:
 
@@ -405,7 +405,7 @@ Write for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_OTHER** = ``1``
 
-Execute for other bit.
+Web 匯出器。
 
 .. _class_FileAccess_constant_UNIX_SET_USER_ID:
 
@@ -413,7 +413,7 @@ Execute for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_USER_ID** = ``2048``
 
-Set user id on execution bit.
+將該行設定為正在執行。
 
 .. _class_FileAccess_constant_UNIX_SET_GROUP_ID:
 
@@ -421,7 +421,7 @@ Set user id on execution bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_GROUP_ID** = ``1024``
 
-Set group id on execution bit.
+設定群組 ID在執行位上。
 
 .. _class_FileAccess_constant_UNIX_RESTRICTED_DELETE:
 
@@ -429,7 +429,7 @@ Set group id on execution bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_RESTRICTED_DELETE** = ``512``
 
-Restricted deletion (sticky) bit.
+限制刪除（黏性）位元。
 
 .. rst-class:: classref-section-separator
 
@@ -437,8 +437,8 @@ Restricted deletion (sticky) bit.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_FileAccess_property_big_endian:
 
@@ -461,8 +461,8 @@ If ``true``, the file is read with big-endian `endianness <https://en.wikipedia.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_FileAccess_method_close:
 
@@ -470,9 +470,9 @@ Method Descriptions
 
 |void| **close**\ (\ ) :ref:`🔗<class_FileAccess_method_close>`
 
-Closes the currently opened file and prevents subsequent read/write operations. Use :ref:`flush()<class_FileAccess_method_flush>` to persist the data to disk without closing the file.
+關閉目前打開的檔案，阻止後續的讀寫操作。如果要將資料持久化到磁片而不關閉文件，請使用 :ref:`flush()<class_FileAccess_method_flush>`\ 。
 
-\ **Note:** **FileAccess** will automatically close when it's freed, which happens when it goes out of scope or when it gets assigned with ``null``. In C# the reference must be disposed after we are done using it, this can be done with the ``using`` statement or calling the ``Dispose`` method directly.
+\ **注意：**\ **FileAccess** 被釋放時會自動關閉，釋放發生在離開作用域或被賦值為 ``null`` 時。在 C# 中，使用完後必須棄置該引用，可以使用 ``using`` 敘述或直接呼叫 ``Dispose`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -504,9 +504,9 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`bool<class_bool>` **eof_reached**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_eof_reached>`
 
-Returns ``true`` if the file cursor has already read past the end of the file.
+如果檔游標已經讀到了檔末尾，則返回 ``true``\ 。
 
-\ **Note:** ``eof_reached() == false`` cannot be used to check whether there is more data available. To loop while there is more data available, use:
+\ **注意：**\ ``eof_reached() == false`` 不能用於檢查是否有更多可用數據。要在有更多可用資料時迴圈，請使用：
 
 
 .. tabs::
@@ -514,13 +514,13 @@ Returns ``true`` if the file cursor has already read past the end of the file.
  .. code-tab:: gdscript
 
     while file.get_position() < file.get_length():
-        # Read data
+        # 讀取資料
 
  .. code-tab:: csharp
 
     while (file.GetPosition() < file.GetLength())
     {
-        // Read data
+        // 讀取資料
     }
 
 
@@ -535,11 +535,11 @@ Returns ``true`` if the file cursor has already read past the end of the file.
 
 :ref:`bool<class_bool>` **file_exists**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_file_exists>`
 
-Returns ``true`` if the file exists in the given path.
+如果檔存在於給定路徑中，則返回 ``true``\ 。
 
-\ **Note:** Many resources types are imported (e.g. textures or sound files), and their source asset will not be included in the exported game, as only the imported version is used. See :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>` for an alternative approach that takes resource remapping into account.
+\ **注意：**\ 許多資源型別是匯入的（例如紋理或音效檔），它們的源素材不會包含在匯出的遊戲中，因為只使用匯入的版本。有關考慮資源重新對應的替代方法，請參閱 :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>`\ 。
 
-For a non-static, relative equivalent, use :ref:`DirAccess.file_exists()<class_DirAccess_method_file_exists>`.
+對於非靜態的相對等效項，請使用 :ref:`DirAccess.file_exists()<class_DirAccess_method_file_exists>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -551,9 +551,9 @@ For a non-static, relative equivalent, use :ref:`DirAccess.file_exists()<class_D
 
 |void| **flush**\ (\ ) :ref:`🔗<class_FileAccess_method_flush>`
 
-Writes the file's buffer to disk. Flushing is automatically performed when the file is closed. This means you don't need to call :ref:`flush()<class_FileAccess_method_flush>` manually before closing a file. Still, calling :ref:`flush()<class_FileAccess_method_flush>` can be used to ensure the data is safe even if the project crashes instead of being closed gracefully.
+將檔的緩衝區寫入磁片。當關閉檔時，會自動進行更新。這意味著你不需要在關閉檔案前手動呼叫 :ref:`flush()<class_FileAccess_method_flush>`\ 。儘管如此，即使專案當機而不是正常關閉，呼叫 :ref:`flush()<class_FileAccess_method_flush>` 仍可用於確保資料安全。
 
-\ **Note:** Only call :ref:`flush()<class_FileAccess_method_flush>` when you actually need it. Otherwise, it will decrease performance due to constant disk writes.
+\ **注意：**\ 只有在你真正需要的時候才呼叫 :ref:`flush()<class_FileAccess_method_flush>`\ 。否則，它會因不斷的磁片寫入而降低性能。
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ Returns the next 64 bits from the file as a floating-point number. This advances
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_error**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_error>`
 
-Returns the last error that happened when trying to perform operations. Compare with the ``ERR_FILE_*`` constants from :ref:`Error<enum_@GlobalScope_Error>`.
+返回試圖執行操作時發生的最後一個錯誤。請與 :ref:`Error<enum_@GlobalScope_Error>` 中的 ``ERR_FILE_*`` 常數比較。
 
 .. rst-class:: classref-item-separator
 
@@ -849,7 +849,7 @@ Text is interpreted as being UTF-8 encoded.
 
 :ref:`String<class_String>` **get_md5**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_md5>`
 
-Returns an MD5 String representing the file at the given path or an empty :ref:`String<class_String>` on failure.
+返回一個給定路徑檔的 MD5 字串，如果失敗則返回一個空的 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -861,7 +861,7 @@ Returns an MD5 String representing the file at the given path or an empty :ref:`
 
 :ref:`int<class_int>` **get_modified_time**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_modified_time>`
 
-Returns the last time the ``file`` was modified in Unix timestamp format, or ``0`` on error. This Unix timestamp can be converted to another format using the :ref:`Time<class_Time>` singleton.
+以 Unix 時間戳記格式返回 ``file``\ 的最後修改時間，或者返回一個 :ref:`String<class_String>` “在 ``file`` 中出錯”。這個Unix 時間戳記可以用 :ref:`Time<class_Time>` 單例轉換為其他格式。
 
 .. rst-class:: classref-item-separator
 
@@ -873,7 +873,7 @@ Returns the last time the ``file`` was modified in Unix timestamp format, or ``0
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_open_error**\ (\ ) |static| :ref:`🔗<class_FileAccess_method_get_open_error>`
 
-Returns the result of the last :ref:`open()<class_FileAccess_method_open>` call in the current thread.
+返回目前執行緒中最後一次 :ref:`open()<class_FileAccess_method_open>` 呼叫的結果。
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ Text is interpreted as being UTF-8 encoded.
 
 :ref:`String<class_String>` **get_path**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_path>`
 
-Returns the path as a :ref:`String<class_String>` for the current open file.
+返回目前打開的檔的路徑為\ :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -911,7 +911,7 @@ Returns the path as a :ref:`String<class_String>` for the current open file.
 
 :ref:`String<class_String>` **get_path_absolute**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_path_absolute>`
 
-Returns the absolute path as a :ref:`String<class_String>` for the current open file.
+返回目前打開的檔的絕對路徑為\ :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1017,7 +1017,7 @@ Internally, this uses the same decoding mechanism as the :ref:`@GlobalScope.byte
 
 :ref:`bool<class_bool>` **is_open**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_is_open>`
 
-Returns ``true`` if the file is currently opened.
+如果檔目前被打開，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1029,9 +1029,9 @@ Returns ``true`` if the file is currently opened.
 
 :ref:`FileAccess<class_FileAccess>` **open**\ (\ path\: :ref:`String<class_String>`, flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`\ ) |static| :ref:`🔗<class_FileAccess_method_open>`
 
-Creates a new **FileAccess** object and opens the file for writing or reading, depending on the flags.
+建立一個新的 **FileAccess** 物件，會根據旗標來確定以寫入還是讀取模式打開文件。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打開檔失敗，則返回 ``null`` 。你可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 來檢查發生的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -1043,11 +1043,11 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`FileAccess<class_FileAccess>` **open_compressed**\ (\ path\: :ref:`String<class_String>`, mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, compression_mode\: :ref:`CompressionMode<enum_FileAccess_CompressionMode>` = 0\ ) |static| :ref:`🔗<class_FileAccess_method_open_compressed>`
 
-Creates a new **FileAccess** object and opens a compressed file for reading or writing.
+建立一個新的 **FileAccess** 物件，並打開一個壓縮檔以進行讀取或寫入。
 
-\ **Note:** :ref:`open_compressed()<class_FileAccess_method_open_compressed>` can only read files that were saved by Godot, not third-party compression formats. See `GitHub issue #28999 <https://github.com/godotengine/godot/issues/28999>`__ for a workaround.
+\ **注意：**\ :ref:`open_compressed()<class_FileAccess_method_open_compressed>` 只能讀取 Godot 保存的檔，不能讀取第三方壓縮格式。有關解決方法，請參閱 `GitHub 問題 #28999 <https://github.com/godotengine/godot/issues/28999>`__\ 。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打開檔失敗，則返回 ``null``\ 。可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 來檢查發生的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -1059,11 +1059,11 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`FileAccess<class_FileAccess>` **open_encrypted**\ (\ path\: :ref:`String<class_String>`, mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`, iv\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray()\ ) |static| :ref:`🔗<class_FileAccess_method_open_encrypted>`
 
-Creates a new **FileAccess** object and opens an encrypted file in write or read mode. You need to pass a binary key to encrypt/decrypt it.
+建立一個新的 **FileAccess** 物件，並以寫入或讀取模式打開一個加密檔。需要傳入一個二進位金鑰來加密/解密它。
 
-\ **Note:** The provided key must be 32 bytes long.
+\ **注意：**\ 提供的金鑰必須是 32 位元組長。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打開檔失敗，則返回 ``null``\ 。可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 來檢查發生的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -1075,9 +1075,9 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`FileAccess<class_FileAccess>` **open_encrypted_with_pass**\ (\ path\: :ref:`String<class_String>`, mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, pass\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_open_encrypted_with_pass>`
 
-Creates a new **FileAccess** object and opens an encrypted file in write or read mode. You need to pass a password to encrypt/decrypt it.
+建立一個新的 **FileAccess** 物件，以寫或讀的模式打開一個加密檔。你需要傳遞一個密碼來加密/解密它。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打開檔失敗，則返回 ``null`` 。你可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 來檢查發生的錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -1215,9 +1215,9 @@ Sets file **read only** attribute.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_unix_permissions**\ (\ file\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\]\ ) |static| :ref:`🔗<class_FileAccess_method_set_unix_permissions>`
 
-Sets file UNIX permissions.
+返回專案的程序 ID。
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **注意：**\ 這個方法在 Android、iOS、Linux、macOS 和 Windows 上實作。
 
 .. rst-class:: classref-item-separator
 
@@ -1476,12 +1476,12 @@ Internally, this uses the same encoding mechanism as the :ref:`@GlobalScope.var_
 
 \ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

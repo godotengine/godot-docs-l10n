@@ -8,31 +8,31 @@
 Decal
 =====
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Node that projects a texture onto a :ref:`MeshInstance3D<class_MeshInstance3D>`.
+将纹理投影到 :ref:`MeshInstance3D<class_MeshInstance3D>` 上的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**Decal**\ s are used to project a texture onto a :ref:`Mesh<class_Mesh>` in the scene. Use Decals to add detail to a scene without affecting the underlying :ref:`Mesh<class_Mesh>`. They are often used to add weathering to building, add dirt or mud to the ground, or add variety to props. Decals can be moved at any time, making them suitable for things like blob shadows or laser sight dots.
+**Decal** 用于将纹理投射到场景中的 :ref:`Mesh<class_Mesh>` 上。使用贴花可在不影响底层 :ref:`Mesh<class_Mesh>` 的情况下向场景中添加细节。它们通常用于为建筑物添加风化效果，为地面添加污垢或泥土，或为道具添加多样性。贴花可以随时移动，使其适用于斑点阴影或激光瞄准点之类的东西。
 
-They are made of an :ref:`AABB<class_AABB>` and a group of :ref:`Texture2D<class_Texture2D>`\ s specifying :ref:`Color<class_Color>`, normal, ORM (ambient occlusion, roughness, metallic), and emission. Decals are projected within their :ref:`AABB<class_AABB>` so altering the orientation of the Decal affects the direction in which they are projected. By default, Decals are projected down (i.e. from positive Y to negative Y).
+贴花由一个 :ref:`AABB<class_AABB>` 和一组用于指定 :ref:`Color<class_Color>`\ 、法线、ORM（环境光遮蔽、粗糙度、金属度）和自发光的 :ref:`Texture2D<class_Texture2D>` 组成。贴花在其 :ref:`AABB<class_AABB>` 内投影，因此改变贴花的朝向会影响它们投影的方向。默认情况下，贴花向下投影（即从正 Y 到负 Y）。
 
-The :ref:`Texture2D<class_Texture2D>`\ s associated with the Decal are automatically stored in a texture atlas which is used for drawing the decals so all decals can be drawn at once. Godot uses clustered decals, meaning they are stored in cluster data and drawn when the mesh is drawn, they are not drawn as a post-processing effect after.
+与贴花关联的 :ref:`Texture2D<class_Texture2D>` 会自动存储在用于绘制贴花的纹理图集中，因此可以一次绘制所有贴花。Godot 使用集群贴花，这意味着贴花是存储在集群数据中的，会在绘制网格时绘制，而不是作为后期处理效果在此之后进行绘制。
 
-\ **Note:** Decals cannot affect an underlying material's transparency, regardless of its transparency mode (alpha blend, alpha scissor, alpha hash, opaque pre-pass). This means translucent or transparent areas of a material will remain translucent or transparent even if an opaque decal is applied on them.
+\ **注意：**\ 贴花不会影响底层材质的透明度，无论其透明度模式如何（Alpha 混合、Alpha 剪切、Alpha 哈希、不透明预通）。这意味着材质的半透明或透明区域将保持半透明或透明，即使在其上应用不透明贴花也是如此。
 
-\ **Note:** Decals are only supported in the Forward+ and Mobile rendering methods, not Compatibility. When using the Mobile rendering method, only 8 decals can be displayed on each mesh resource. Attempting to display more than 8 decals on a single mesh resource will result in decals flickering in and out as the camera moves.
+\ **注意：**\ 贴花仅在支持 Forward+ 和 Mobile 渲染方式，不支持 Compatibility。使用 Mobile 渲染方式时，每个网格资源上最多只能显示 8 个贴花。尝试在单个网格资源上显示超过 8 个贴花，将导致贴花随着相机移动而闪烁。
 
-\ **Note:** When using the Mobile rendering method, decals will only correctly affect meshes whose visibility AABB intersects with the decal's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` must be increased on the mesh. Otherwise, the decal may not be visible on the mesh.
+\ **注意：**\ 当使用 Mobile 渲染方式时，贴花只会正确影响其可视 AABB 与该贴花的 AABB 相交的网格。如果使用着色器变形网格，使其超出网格自身的 AABB，则必须增大网格上的 :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>`\ 。否则，贴花可能在该网格上不可见。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Decal_DecalTexture:
 
@@ -104,7 +104,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 
 :ref:`DecalTexture<enum_Decal_DecalTexture>` **TEXTURE_ALBEDO** = ``0``
 
-:ref:`Texture2D<class_Texture2D>` corresponding to :ref:`texture_albedo<class_Decal_property_texture_albedo>`.
+与 :ref:`texture_albedo<class_Decal_property_texture_albedo>` 对应的 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. _class_Decal_constant_TEXTURE_NORMAL:
 
@@ -112,7 +112,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 
 :ref:`DecalTexture<enum_Decal_DecalTexture>` **TEXTURE_NORMAL** = ``1``
 
-:ref:`Texture2D<class_Texture2D>` corresponding to :ref:`texture_normal<class_Decal_property_texture_normal>`.
+与 :ref:`texture_normal<class_Decal_property_texture_normal>` 对应的 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. _class_Decal_constant_TEXTURE_ORM:
 
@@ -120,7 +120,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 
 :ref:`DecalTexture<enum_Decal_DecalTexture>` **TEXTURE_ORM** = ``2``
 
-:ref:`Texture2D<class_Texture2D>` corresponding to :ref:`texture_orm<class_Decal_property_texture_orm>`.
+与 :ref:`texture_orm<class_Decal_property_texture_orm>` 对应的 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. _class_Decal_constant_TEXTURE_EMISSION:
 
@@ -128,7 +128,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 
 :ref:`DecalTexture<enum_Decal_DecalTexture>` **TEXTURE_EMISSION** = ``3``
 
-:ref:`Texture2D<class_Texture2D>` corresponding to :ref:`texture_emission<class_Decal_property_texture_emission>`.
+与 :ref:`texture_emission<class_Decal_property_texture_emission>` 对应的 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. _class_Decal_constant_TEXTURE_MAX:
 
@@ -136,7 +136,7 @@ enum **DecalTexture**: :ref:`🔗<enum_Decal_DecalTexture>`
 
 :ref:`DecalTexture<enum_Decal_DecalTexture>` **TEXTURE_MAX** = ``4``
 
-Max size of :ref:`DecalTexture<enum_Decal_DecalTexture>` enum.
+:ref:`DecalTexture<enum_Decal_DecalTexture>` 枚举的最大大小。
 
 .. rst-class:: classref-section-separator
 
@@ -144,8 +144,8 @@ Max size of :ref:`DecalTexture<enum_Decal_DecalTexture>` enum.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Decal_property_albedo_mix:
 
@@ -158,7 +158,7 @@ Property Descriptions
 - |void| **set_albedo_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_albedo_mix**\ (\ )
 
-Blends the albedo :ref:`Color<class_Color>` of the decal with albedo :ref:`Color<class_Color>` of the underlying mesh. This can be set to ``0.0`` to create a decal that only affects normal or ORM. In this case, an albedo texture is still required as its alpha channel will determine where the normal and ORM will be overridden. See also :ref:`modulate<class_Decal_property_modulate>`.
+将该贴花的反照率 :ref:`Color<class_Color>` 与底层网格的反照率 :ref:`Color<class_Color>` 混合。可以将其设置为 ``0.0``\ ，从而创建仅影响法线或 ORM 的贴花。这种情况下仍然需要反照率纹理，因为它的 Alpha 通道将决定覆盖法线和 ORM 的位置。另见 :ref:`modulate<class_Decal_property_modulate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Blends the albedo :ref:`Color<class_Color>` of the decal with albedo :ref:`Color
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Specifies which :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` this decal will project on. By default, Decals affect all layers. This is used so you can specify which types of objects receive the Decal and which do not. This is especially useful so you can ensure that dynamic objects don't accidentally receive a Decal intended for the terrain under them.
+指定此贴花将投射到哪些 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 上。默认情况下，贴花会影响所有图层。可用于指定哪些类型的对象接收该贴花、哪些不接收。这一点特别有用，你可以确保动态对象不会意外收到用于其下方地形的贴花。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Specifies which :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_la
 - |void| **set_distance_fade_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_begin**\ (\ )
 
-The distance from the camera at which the Decal begins to fade away (in 3D units).
+与相机的距离，贴花从该处开始淡出（以 3D 单位表示）。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The distance from the camera at which the Decal begins to fade away (in 3D units
 - |void| **set_enable_distance_fade**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_distance_fade_enabled**\ (\ )
 
-If ``true``, decals will smoothly fade away when far from the active :ref:`Camera3D<class_Camera3D>` starting at :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>`. The Decal will fade out over :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Decal_property_distance_fade_length>`, after which it will be culled and not sent to the shader at all. Use this to reduce the number of active Decals in a scene and thus improve performance.
+如果为 ``true``\ ，贴花会在远离活动的 :ref:`Camera3D<class_Camera3D>` 时平滑地淡出，从 :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` 开始。该贴花将在 :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Decal_property_distance_fade_length>` 处消失，之后就会被剔除，根本不会发送到着色器。请使用这个选项来减少场景中激活贴花的数量，从而提高性能。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ If ``true``, decals will smoothly fade away when far from the active :ref:`Camer
 - |void| **set_distance_fade_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_length**\ (\ )
 
-The distance over which the Decal fades (in 3D units). The Decal becomes slowly more transparent over this distance and is completely invisible at the end. Higher values result in a smoother fade-out transition, which is more suited when the camera moves fast.
+该贴花淡出的距离（以 3D 单位表示）。这段距离内，该贴花会慢慢变得透明，直至完全不可见。值越大，淡出过渡更平滑，更适合于相机快速移动的情况。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ The distance over which the Decal fades (in 3D units). The Decal becomes slowly 
 - |void| **set_emission_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_energy**\ (\ )
 
-Energy multiplier for the emission texture. This will make the decal emit light at a higher or lower intensity, independently of the albedo color. See also :ref:`modulate<class_Decal_property_modulate>`.
+自发光纹理的能量倍数。会使贴花以更高或更低的强度发光，与反照率颜色无关。另见 :ref:`modulate<class_Decal_property_modulate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Energy multiplier for the emission texture. This will make the decal emit light 
 - |void| **set_lower_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lower_fade**\ (\ )
 
-Sets the curve over which the decal will fade as the surface gets further from the center of the :ref:`AABB<class_AABB>`. Only positive values are valid (negative values will be clamped to ``0.0``). See also :ref:`upper_fade<class_Decal_property_upper_fade>`.
+设置该贴花的淡出曲线，表示随着表面远离 :ref:`AABB<class_AABB>` 中心而逐渐淡出。仅正值有效（负值将被限制到 ``0.0``\ ）。另见 :ref:`upper_fade<class_Decal_property_upper_fade>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Sets the curve over which the decal will fade as the surface gets further from t
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-Changes the :ref:`Color<class_Color>` of the Decal by multiplying the albedo and emission colors with this value. The alpha component is only taken into account when multiplying the albedo color, not the emission color. See also :ref:`emission_energy<class_Decal_property_emission_energy>` and :ref:`albedo_mix<class_Decal_property_albedo_mix>` to change the emission and albedo intensity independently of each other.
+更改贴花的 :ref:`Color<class_Color>`\ ，将其反照率和自发光颜色乘以这个值。仅在与反照率颜色相乘时才会考虑 Alpha 分量，与自发光颜色相乘时则不会。如果要独立更改自发光和反照率强度，请参阅 :ref:`emission_energy<class_Decal_property_emission_energy>` 和 :ref:`albedo_mix<class_Decal_property_albedo_mix>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -294,9 +294,9 @@ Changes the :ref:`Color<class_Color>` of the Decal by multiplying the albedo and
 - |void| **set_normal_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_normal_fade**\ (\ )
 
-Fades the Decal if the angle between the Decal's :ref:`AABB<class_AABB>` and the target surface becomes too large. A value of ``0`` projects the Decal regardless of angle, a value of ``1`` limits the Decal to surfaces that are nearly perpendicular.
+如果贴花的 :ref:`AABB<class_AABB>` 与目标表面之间的角度变得过大，则淡出贴花。值为 ``0`` 时在投影贴花会忽略角度，值为 ``1`` 时会将贴花限制到几乎垂直的表面。
 
-\ **Note:** Setting :ref:`normal_fade<class_Decal_property_normal_fade>` to a value greater than ``0.0`` has a small performance cost due to the added normal angle computations.
+\ **注意：**\ 将 :ref:`normal_fade<class_Decal_property_normal_fade>` 设置为大于 ``0.0`` 的值会有较小的性能成本，因为增加了法线角度计算。
 
 .. rst-class:: classref-item-separator
 
@@ -313,9 +313,9 @@ Fades the Decal if the angle between the Decal's :ref:`AABB<class_AABB>` and the
 - |void| **set_size**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_size**\ (\ )
 
-Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions must be set to a value greater than zero (they will be clamped to ``0.001`` if this is not the case). The AABB goes from ``-size/2`` to ``size/2``.
+设置贴花使用的 :ref:`AABB<class_AABB>` 的大小。所有大小都必须设置为大于零的值（如果不是这种情况，它们将被钳制为 ``0.001``\ ）。该 AABB 从 ``-size/2`` 到 ``size/2``\ 。
 
-\ **Note:** To improve culling efficiency of "hard surface" decals, set their :ref:`upper_fade<class_Decal_property_upper_fade>` and :ref:`lower_fade<class_Decal_property_lower_fade>` to ``0.0`` and set the Y component of the :ref:`size<class_Decal_property_size>` as low as possible. This will reduce the decals' AABB size without affecting their appearance.
+\ **注意：**\ 为了提高“硬表面”贴花的剔除效率，将它们的 :ref:`upper_fade<class_Decal_property_upper_fade>` 和 :ref:`lower_fade<class_Decal_property_lower_fade>` 设置为 ``0.0``\ ，并将 :ref:`size<class_Decal_property_size>` 的 Y 分量设置的越低越好。这将减少贴花的 AABB 大小而不影响它们的外观。
 
 .. rst-class:: classref-item-separator
 
@@ -332,9 +332,9 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` with the base :ref:`Color<class_Color>` of the Decal. Either this or the :ref:`texture_emission<class_Decal_property_texture_emission>` must be set for the Decal to be visible. Use the alpha channel like a mask to smoothly blend the edges of the decal with the underlying object.
+带有贴花的基础 :ref:`Color<class_Color>` 的 :ref:`Texture2D<class_Texture2D>`\ 。必须设置这个属性或者 :ref:`texture_emission<class_Decal_property_texture_emission>` 贴花才可见。要将贴花的边缘与底层对象平滑地混合，请像遮罩一样使用 Alpha 通道。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **注意：**\ :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的过滤模式可以对每个材质进行调整，而 **Decal** 纹理的过滤模式是通过 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 全局设置的。
 
 .. rst-class:: classref-item-separator
 
@@ -351,9 +351,9 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` with the emission :ref:`Color<class_Color>` of the Decal. Either this or the :ref:`texture_albedo<class_Decal_property_texture_albedo>` must be set for the Decal to be visible. Use the alpha channel like a mask to smoothly blend the edges of the decal with the underlying object.
+带有贴花的自发光 :ref:`Color<class_Color>` 的 :ref:`Texture2D<class_Texture2D>`\ 。必须设置这个属性或者 :ref:`texture_albedo<class_Decal_property_texture_albedo>` 贴花才可见。要将贴花的边缘与底层对象平滑地混合，请像遮罩一样使用 Alpha 通道。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **注意：**\ :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的过滤模式可以对每个材质进行调整，而 **Decal** 纹理的过滤模式是通过 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 全局设置的。
 
 .. rst-class:: classref-item-separator
 
@@ -370,11 +370,11 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` with the per-pixel normal map for the decal. Use this to add extra detail to decals.
+带有贴花的逐像素法线贴图的 :ref:`Texture2D<class_Texture2D>`\ 。可用于为贴花添加额外的细节。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **注意：**\ :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的过滤模式可以对每个材质进行调整，而 **Decal** 纹理的过滤模式是通过 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 全局设置的。
 
-\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create a normal-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's normal map should be overridden (and its intensity).
+\ **注意：**\ 单独设置此纹理时贴花不可见，因为还必须设置 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ 。要创建仅包含法线的贴花，请将反照率纹理加载到 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ ，并将 :ref:`albedo_mix<class_Decal_property_albedo_mix>` 设置为 ``0.0``\ 。反照率纹理的 Alpha 通道将用于确定应在何处覆盖底层表面的法线贴图（及其强度）。
 
 .. rst-class:: classref-item-separator
 
@@ -391,11 +391,11 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const|
 
-:ref:`Texture2D<class_Texture2D>` storing ambient occlusion, roughness, and metallic for the decal. Use this to add extra detail to decals.
+存有贴花的环境光遮蔽、粗糙度、金属性的 :ref:`Texture2D<class_Texture2D>`\ 。可用于为贴花添加额外的细节。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for **Decal** textures is set globally with :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>`.
+\ **注意：**\ :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的过滤模式可以对每个材质进行调整，而 **Decal** 纹理的过滤模式是通过 :ref:`ProjectSettings.rendering/textures/decals/filter<class_ProjectSettings_property_rendering/textures/decals/filter>` 全局设置的。
 
-\ **Note:** Setting this texture alone will not result in a visible decal, as :ref:`texture_albedo<class_Decal_property_texture_albedo>` must also be set. To create an ORM-only decal, load an albedo texture into :ref:`texture_albedo<class_Decal_property_texture_albedo>` and set :ref:`albedo_mix<class_Decal_property_albedo_mix>` to ``0.0``. The albedo texture's alpha channel will be used to determine where the underlying surface's ORM map should be overridden (and its intensity).
+\ **注意：**\ 单独设置此纹理时贴花不可见，因为还必须设置 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ 。要创建仅包含 ORM 的贴花，请将反照率纹理加载到 :ref:`texture_albedo<class_Decal_property_texture_albedo>`\ ，并将 :ref:`albedo_mix<class_Decal_property_albedo_mix>` 设置为 ``0.0``\ 。反照率纹理的 Alpha 通道将用于确定应在何处覆盖底层表面的 ORM 贴图（及其强度）。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Sets the size of the :ref:`AABB<class_AABB>` used by the decal. All dimensions m
 - |void| **set_upper_fade**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_upper_fade**\ (\ )
 
-Sets the curve over which the decal will fade as the surface gets further from the center of the :ref:`AABB<class_AABB>`. Only positive values are valid (negative values will be clamped to ``0.0``). See also :ref:`lower_fade<class_Decal_property_lower_fade>`.
+设置该贴花的淡出曲线，表示随着表面远离 :ref:`AABB<class_AABB>` 中心而逐渐淡出。仅正值有效（负值将被限制到 ``0.0``\ ）。另见 :ref:`upper_fade<class_Decal_property_upper_fade>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -420,8 +420,8 @@ Sets the curve over which the decal will fade as the surface gets further from t
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Decal_method_get_texture:
 
@@ -429,11 +429,11 @@ Method Descriptions
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`\ ) |const| :ref:`🔗<class_Decal_method_get_texture>`
 
-Returns the :ref:`Texture2D<class_Texture2D>` associated with the specified :ref:`DecalTexture<enum_Decal_DecalTexture>`. This is a convenience method, in most cases you should access the texture directly.
+返回与指定的 :ref:`DecalTexture<enum_Decal_DecalTexture>` 关联的 :ref:`Texture2D<class_Texture2D>`\ 。这是一个便捷方法，在大多数情况下，你应该直接访问纹理。
 
-For example, instead of ``albedo_tex = $Decal.get_texture(Decal.TEXTURE_ALBEDO)``, use ``albedo_tex = $Decal.texture_albedo``.
+例如，相比于 ``albedo_tex = $Decal.get_texture(Decal.TEXTURE_ALBEDO)``\ ，请使用 ``albedo_tex = $Decal.texture_albedo``\ 。
 
-One case where this is better than accessing the texture directly is when you want to copy one Decal's textures to another. For example:
+有一种情况下这种写法比直接访问纹理更好，那就是当想要将贴花的纹理复制到另一个贴花是。例如：
 
 
 .. tabs::
@@ -462,11 +462,11 @@ One case where this is better than accessing the texture directly is when you wa
 
 |void| **set_texture**\ (\ type\: :ref:`DecalTexture<enum_Decal_DecalTexture>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Decal_method_set_texture>`
 
-Sets the :ref:`Texture2D<class_Texture2D>` associated with the specified :ref:`DecalTexture<enum_Decal_DecalTexture>`. This is a convenience method, in most cases you should access the texture directly.
+设置与指定的 :ref:`DecalTexture<enum_Decal_DecalTexture>` 关联的 :ref:`Texture2D<class_Texture2D>`\ 。这是一个便捷方法，在大多数情况下，你应该直接访问纹理。
 
-For example, instead of ``$Decal.set_texture(Decal.TEXTURE_ALBEDO, albedo_tex)``, use ``$Decal.texture_albedo = albedo_tex``.
+例如，相比于 ``albedo_tex = $Decal.set_texture(Decal.TEXTURE_ALBEDO, albedo_tex)``\ ，请使用 ``$Decal.texture_albedo = albedo_tex``\ 。
 
-One case where this is better than accessing the texture directly is when you want to copy one Decal's textures to another. For example:
+有一种情况下这种写法比直接访问纹理更好，那就是当想要将贴花的纹理复制到另一个贴花是。例如：
 
 
 .. tabs::
@@ -485,12 +485,12 @@ One case where this is better than accessing the texture directly is when you wa
 
 
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

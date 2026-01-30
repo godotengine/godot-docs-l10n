@@ -5,23 +5,23 @@
 OpenXRInteractionProfile
 ========================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Suggested bindings object for OpenXR.
+用於 OpenXR 的建議綁定對象。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This object stores suggested bindings for an interaction profile. Interaction profiles define the metadata for a tracked XR device such as an XR controller.
+此物件儲存用於一個互動配置的建議綁定。互動配置定義了一個被追蹤的 XR 裝置（例如一個 XR 控制器）的中繼資料。
 
-For more information see the `interaction profiles info in the OpenXR specification <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-interaction-profiles>`__.
+有關更多資訊，請參閱\ `《OpenXR 規範中的互動配置信息》 <https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-interaction-profiles>`__\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_OpenXRInteractionProfile_property_binding_modifiers:
 
@@ -89,7 +89,7 @@ Binding modifiers for this interaction profile.
 - |void| **set_bindings**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_bindings**\ (\ )
 
-Action bindings for this interaction profile.
+用於該互動配置的動作綁定。
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +106,7 @@ Action bindings for this interaction profile.
 - |void| **set_interaction_profile_path**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_interaction_profile_path**\ (\ )
 
-The interaction profile path identifying the XR device.
+標識該 XR 裝置的互動配置路徑。
 
 .. rst-class:: classref-section-separator
 
@@ -114,8 +114,8 @@ The interaction profile path identifying the XR device.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_OpenXRInteractionProfile_method_get_binding:
 
@@ -123,7 +123,7 @@ Method Descriptions
 
 :ref:`OpenXRIPBinding<class_OpenXRIPBinding>` **get_binding**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRInteractionProfile_method_get_binding>`
 
-Retrieve the binding at this index.
+檢索在該索引處的綁定。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ Retrieve the binding at this index.
 
 :ref:`int<class_int>` **get_binding_count**\ (\ ) |const| :ref:`🔗<class_OpenXRInteractionProfile_method_get_binding_count>`
 
-Get the number of bindings in this interaction profile.
+獲取該互動配置中的綁定數量。
 
 .. rst-class:: classref-item-separator
 
@@ -161,12 +161,12 @@ Get the :ref:`OpenXRBindingModifier<class_OpenXRBindingModifier>` at this index.
 
 Get the number of binding modifiers in this interaction profile.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

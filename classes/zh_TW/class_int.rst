@@ -5,12 +5,12 @@
 int
 ===
 
-A built-in type for integers.
+整數內建型別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Signed 64-bit integer type. This means that it can take values from ``-2^63`` to ``2^63 - 1``, i.e. from ``-9223372036854775808`` to ``9223372036854775807``. When it exceeds these bounds, it will wrap around.
 
@@ -65,8 +65,8 @@ You can use the ``0b`` literal for binary representation, the ``0x`` literal for
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -85,8 +85,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -177,8 +177,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_int_constructor_int:
 
@@ -186,7 +186,7 @@ Constructor Descriptions
 
 :ref:`int<class_int>` **int**\ (\ ) :ref:`🔗<class_int_constructor_int>`
 
-Constructs an **int** set to ``0``.
+建構設為 ``0`` 的 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Constructs an **int** set to ``0``.
 
 :ref:`int<class_int>` **int**\ (\ from\: :ref:`int<class_int>`\ )
 
-Constructs an **int** as a copy of the given **int**.
+建構給定 **int** 的副本 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Constructs an **int** as a copy of the given **int**.
 
 :ref:`int<class_int>` **int**\ (\ from\: :ref:`String<class_String>`\ )
 
-Constructs a new **int** from a :ref:`String<class_String>`, following the same rules as :ref:`String.to_int()<class_String_method_to_int>`.
+從 :ref:`String<class_String>` 建構新的 **int**\ ，遵循與 :ref:`String.to_int()<class_String_method_to_int>` 相同的規則。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Constructs a new **int** from a :ref:`String<class_String>`, following the same 
 
 :ref:`int<class_int>` **int**\ (\ from\: :ref:`bool<class_bool>`\ )
 
-Constructs a new **int** from a :ref:`bool<class_bool>`. ``true`` is converted to ``1`` and ``false`` is converted to ``0``.
+從 :ref:`bool<class_bool>` 建構新的 **int**\ 。\ ``true`` 會轉換為 ``1``\ ，\ ``false`` 會轉換為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Constructs a new **int** from a :ref:`bool<class_bool>`. ``true`` is converted t
 
 :ref:`int<class_int>` **int**\ (\ from\: :ref:`float<class_float>`\ )
 
-Constructs a new **int** from a :ref:`float<class_float>`. This will truncate the :ref:`float<class_float>`, discarding anything after the floating point.
+從 :ref:`float<class_float>` 建構新的 **int**\ 。這樣會截斷該 :ref:`float<class_float>`\ ，丟棄小數點之後的部分。
 
 .. rst-class:: classref-section-separator
 
@@ -234,8 +234,8 @@ Constructs a new **int** from a :ref:`float<class_float>`. This will truncate th
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_int_operator_neq_float:
 
@@ -243,7 +243,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_neq_float>`
 
-Returns ``true`` if the **int** is not equivalent to the :ref:`float<class_float>`.
+如果該 **int** 與該 :ref:`float<class_float>` 不等價，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Returns ``true`` if the **int** is not equivalent to the :ref:`float<class_float
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_neq_int>`
 
-Returns ``true`` if the **int**\ s are not equal.
+如果 **int** 不相等，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -267,13 +267,13 @@ Returns ``true`` if the **int**\ s are not equal.
 
 :ref:`int<class_int>` **operator %**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_mod_int>`
 
-Returns the remainder after dividing two **int**\ s. Uses truncated division, which returns a negative number if the dividend is negative. If this is not desired, consider using :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>`.
+返回兩個 **int** 相除後的餘數。該操作使用截斷除法，被除數為負數時會返回負數。如果不希望如此，請考慮使用 :ref:`@GlobalScope.posmod()<class_@GlobalScope_method_posmod>`\ 。
 
 ::
 
-    print(6 % 2) # Prints 0
-    print(11 % 4) # Prints 3
-    print(-5 % 3) # Prints -2
+    print(6 % 2) # 輸出 0
+    print(11 % 4) # 輸出 3
+    print(-5 % 3) # 輸出 -2
 
 .. rst-class:: classref-item-separator
 
@@ -285,20 +285,20 @@ Returns the remainder after dividing two **int**\ s. Uses truncated division, wh
 
 :ref:`int<class_int>` **operator &**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_bwand_int>`
 
-Performs the bitwise ``AND`` operation.
+執行按位 ``AND`` 運算。
 
 ::
 
-    print(0b1100 & 0b1010) # Prints 8 (binary 1000)
+    print(0b1100 & 0b1010) # 輸出 8（二進位 1000）
 
-This is useful for retrieving binary flags from a variable.
+可用於從變數中檢索二進位旗標。
 
 ::
 
     var flags = 0b101
-    # Check if the first or second bit are enabled.
+    # 檢查是否啟用了第一或第二個比特位。
     if flags & 0b011:
-        do_stuff() # This line will run.
+        do_stuff() # 會執行這一行。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ This is useful for retrieving binary flags from a variable.
 
 :ref:`Color<class_Color>` **operator ***\ (\ right\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_int_operator_mul_Color>`
 
-Multiplies each component of the :ref:`Color<class_Color>` by the **int**.
+將 :ref:`Color<class_Color>` 的每個分量乘以該 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Multiplies each component of the :ref:`Color<class_Color>` by the **int**.
 
 :ref:`Quaternion<class_Quaternion>` **operator ***\ (\ right\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_int_operator_mul_Quaternion>`
 
-Multiplies each component of the :ref:`Quaternion<class_Quaternion>` by the **int**. This operation is not meaningful on its own, but it can be used as a part of a larger expression.
+將 :ref:`Quaternion<class_Quaternion>` 的每個分量乘以該 **int**\ 。此操作本身沒有意義，但可以用作更大表達式的一部分。
 
 .. rst-class:: classref-item-separator
 
@@ -334,11 +334,11 @@ Multiplies each component of the :ref:`Quaternion<class_Quaternion>` by the **in
 
 :ref:`Vector2<class_Vector2>` **operator ***\ (\ right\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_int_operator_mul_Vector2>`
 
-Multiplies each component of the :ref:`Vector2<class_Vector2>` by the **int**.
+將 :ref:`Vector2<class_Vector2>` 的每個分量乘以該 :ref:`float<class_float>`\ 。
 
 ::
 
-    print(2 * Vector2(1, 4)) # Prints (2, 8)
+    print(2 * Vector2(1, 4)) # 輸出 (2, 8)
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ Multiplies each component of the :ref:`Vector2<class_Vector2>` by the **int**.
 
 :ref:`Vector2i<class_Vector2i>` **operator ***\ (\ right\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_int_operator_mul_Vector2i>`
 
-Multiplies each component of the :ref:`Vector2i<class_Vector2i>` by the **int**.
+將 :ref:`Vector2i<class_Vector2i>` 的每個分量乘以該 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Multiplies each component of the :ref:`Vector2i<class_Vector2i>` by the **int**.
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_int_operator_mul_Vector3>`
 
-Multiplies each component of the :ref:`Vector3<class_Vector3>` by the **int**.
+將 :ref:`Vector3<class_Vector3>` 的每個分量乘以該 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Multiplies each component of the :ref:`Vector3<class_Vector3>` by the **int**.
 
 :ref:`Vector3i<class_Vector3i>` **operator ***\ (\ right\: :ref:`Vector3i<class_Vector3i>`\ ) :ref:`🔗<class_int_operator_mul_Vector3i>`
 
-Multiplies each component of the :ref:`Vector3i<class_Vector3i>` by the **int**.
+將 :ref:`Vector3i<class_Vector3i>` 的每個分量乘以該 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Multiplies each component of the :ref:`Vector3i<class_Vector3i>` by the **int**.
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_int_operator_mul_Vector4>`
 
-Multiplies each component of the :ref:`Vector4<class_Vector4>` by the **int**.
+將 :ref:`Vector4<class_Vector4>` 的每個分量乘以該 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Multiplies each component of the :ref:`Vector4<class_Vector4>` by the **int**.
 
 :ref:`Vector4i<class_Vector4i>` **operator ***\ (\ right\: :ref:`Vector4i<class_Vector4i>`\ ) :ref:`🔗<class_int_operator_mul_Vector4i>`
 
-Multiplies each component of the :ref:`Vector4i<class_Vector4i>` by the **int**.
+將 :ref:`Vector4i<class_Vector4i>` 的每個分量乘以該 **int**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Multiplies each component of the :ref:`Vector4i<class_Vector4i>` by the **int**.
 
 :ref:`float<class_float>` **operator ***\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_mul_float>`
 
-Multiplies the :ref:`float<class_float>` by the **int**. The result is a :ref:`float<class_float>`.
+將 :ref:`float<class_float>` 和該 **int** 相乘。結果為 :ref:`float<class_float>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Multiplies the :ref:`float<class_float>` by the **int**. The result is a :ref:`f
 
 :ref:`int<class_int>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_mul_int>`
 
-Multiplies the two **int**\ s.
+將兩個 **int** 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -434,11 +434,11 @@ Multiplies the two **int**\ s.
 
 :ref:`float<class_float>` **operator ****\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_pow_float>`
 
-Raises an **int** to a power of a :ref:`float<class_float>`. The result is a :ref:`float<class_float>`.
+將 **int** 提升到 :ref:`float<class_float>` 次冪。結果為 :ref:`float<class_float>`\ 。
 
 ::
 
-    print(2 ** 0.5) # Prints 1.4142135623731
+    print(2 ** 0.5) # 輸出 1.4142135623731
 
 .. rst-class:: classref-item-separator
 
@@ -450,11 +450,11 @@ Raises an **int** to a power of a :ref:`float<class_float>`. The result is a :re
 
 :ref:`int<class_int>` **operator ****\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_pow_int>`
 
-Raises the left **int** to a power of the right **int**.
+將左側的 **int** 提升到右側的 **int** 次冪。
 
 ::
 
-    print(3 ** 4) # Prints 81
+    print(3 ** 4) # 輸出 81
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ Raises the left **int** to a power of the right **int**.
 
 :ref:`float<class_float>` **operator +**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_sum_float>`
 
-Adds the **int** and the :ref:`float<class_float>`. The result is a :ref:`float<class_float>`.
+將該 **int** 加上該 :ref:`float<class_float>`\ 。結果為 :ref:`float<class_float>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ Adds the **int** and the :ref:`float<class_float>`. The result is a :ref:`float<
 
 :ref:`int<class_int>` **operator +**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_sum_int>`
 
-Adds the two **int**\ s.
+將兩個 **int** 相加。
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ Adds the two **int**\ s.
 
 :ref:`float<class_float>` **operator -**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_dif_float>`
 
-Subtracts the :ref:`float<class_float>` from the **int**. The result is a :ref:`float<class_float>`.
+將該 **int** 減去該 :ref:`float<class_float>`\ 。結果為 :ref:`float<class_float>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Subtracts the :ref:`float<class_float>` from the **int**. The result is a :ref:`
 
 :ref:`int<class_int>` **operator -**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_dif_int>`
 
-Subtracts the two **int**\ s.
+將兩個 **int** 相減。
 
 .. rst-class:: classref-item-separator
 
@@ -514,11 +514,11 @@ Subtracts the two **int**\ s.
 
 :ref:`float<class_float>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_div_float>`
 
-Divides the **int** by the :ref:`float<class_float>`. The result is a :ref:`float<class_float>`.
+將該 **int** 除以該 :ref:`float<class_float>`\ 。結果為 :ref:`float<class_float>`\ 。
 
 ::
 
-    print(10 / 3.0) # Prints 3.33333333333333
+    print(10 / 3.0) # 輸出 3.33333333333333
 
 .. rst-class:: classref-item-separator
 
@@ -530,12 +530,12 @@ Divides the **int** by the :ref:`float<class_float>`. The result is a :ref:`floa
 
 :ref:`int<class_int>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_div_int>`
 
-Divides the two **int**\ s. The result is an **int**. This will truncate the :ref:`float<class_float>`, discarding anything after the floating point.
+將兩個 **int** 相除。結果為 **int**\ 。這樣會截斷該 :ref:`float<class_float>`\ ，丟棄小數點後的部分。
 
 ::
 
-    print(6 / 2) # Prints 3
-    print(5 / 3) # Prints 1
+    print(6 / 2) # 輸出 3
+    print(5 / 3) # 輸出 1
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Divides the two **int**\ s. The result is an **int**. This will truncate the :re
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_lt_float>`
 
-Returns ``true`` if the **int** is less than the :ref:`float<class_float>`.
+如果該 **int** 小於該 :ref:`float<class_float>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ Returns ``true`` if the **int** is less than the :ref:`float<class_float>`.
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_lt_int>`
 
-Returns ``true`` if the left **int** is less than the right **int**.
+如果左側的 **int** 小於右側的 **int**\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -571,12 +571,12 @@ Returns ``true`` if the left **int** is less than the right **int**.
 
 :ref:`int<class_int>` **operator <<**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_bwsl_int>`
 
-Performs the bitwise shift left operation. Effectively the same as multiplying by a power of 2.
+執行按位左移操作。效果上與乘以 2 的冪相同。
 
 ::
 
-    print(0b1010 << 1) # Prints 20 (binary 10100)
-    print(0b1010 << 3) # Prints 80 (binary 1010000)
+    print(0b1010 << 1) # 輸出 20（二進位 10100）
+    print(0b1010 << 3) # 輸出 80（二進位 1010000）
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ Performs the bitwise shift left operation. Effectively the same as multiplying b
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_lte_float>`
 
-Returns ``true`` if the **int** is less than or equal to the :ref:`float<class_float>`.
+如果該 **int** 小於等於該 :ref:`float<class_float>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -600,7 +600,7 @@ Returns ``true`` if the **int** is less than or equal to the :ref:`float<class_f
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_lte_int>`
 
-Returns ``true`` if the left **int** is less than or equal to the right **int**.
+如果左側的 **int** 小於等於右側的 **int**\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -612,7 +612,7 @@ Returns ``true`` if the left **int** is less than or equal to the right **int**.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_eq_float>`
 
-Returns ``true`` if the **int** is equal to the :ref:`float<class_float>`.
+如果該 **int** 等於該 :ref:`float<class_float>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -624,7 +624,7 @@ Returns ``true`` if the **int** is equal to the :ref:`float<class_float>`.
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_eq_int>`
 
-Returns ``true`` if the two **int**\ s are equal.
+如果兩個 **int** 相等，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -636,7 +636,7 @@ Returns ``true`` if the two **int**\ s are equal.
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_gt_float>`
 
-Returns ``true`` if the **int** is greater than the :ref:`float<class_float>`.
+如果該 **int** 大於該 :ref:`float<class_float>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -648,7 +648,7 @@ Returns ``true`` if the **int** is greater than the :ref:`float<class_float>`.
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_gt_int>`
 
-Returns ``true`` if the left **int** is greater than the right **int**.
+如果左側的 **int** 大於右側的 **int**\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -660,7 +660,7 @@ Returns ``true`` if the left **int** is greater than the right **int**.
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_int_operator_gte_float>`
 
-Returns ``true`` if the **int** is greater than or equal to the :ref:`float<class_float>`.
+如果該 **int** 大於等於該 :ref:`float<class_float>`\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +672,7 @@ Returns ``true`` if the **int** is greater than or equal to the :ref:`float<clas
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_gte_int>`
 
-Returns ``true`` if the left **int** is greater than or equal to the right **int**.
+如果左側的 **int** 大於等於右側的 **int**\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -684,12 +684,12 @@ Returns ``true`` if the left **int** is greater than or equal to the right **int
 
 :ref:`int<class_int>` **operator >>**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_bwsr_int>`
 
-Performs the bitwise shift right operation. Effectively the same as dividing by a power of 2.
+執行按位右移操作。效果上與除以 2 的冪相同。
 
 ::
 
-    print(0b1010 >> 1) # Prints 5 (binary 101)
-    print(0b1010 >> 2) # Prints 2 (binary 10)
+    print(0b1010 >> 1) # 輸出 5（二進位 101）
+    print(0b1010 >> 2) # 輸出 2（二進位 10）
 
 .. rst-class:: classref-item-separator
 
@@ -701,11 +701,11 @@ Performs the bitwise shift right operation. Effectively the same as dividing by 
 
 :ref:`int<class_int>` **operator ^**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_bwxor_int>`
 
-Performs the bitwise ``XOR`` operation.
+執行按位 ``XOR``\ （異或）運算。
 
 ::
 
-    print(0b1100 ^ 0b1010) # Prints 6 (binary 110)
+    print(0b1100 ^ 0b1010) # 輸出 6（二進位 110）
 
 .. rst-class:: classref-item-separator
 
@@ -717,7 +717,7 @@ Performs the bitwise ``XOR`` operation.
 
 :ref:`int<class_int>` **operator unary+**\ (\ ) :ref:`🔗<class_int_operator_unplus>`
 
-Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
+返回與 ``+`` 不存在時相同的值。單目 ``+`` 沒有作用，但有時可以使你的程式碼更具可讀性。
 
 .. rst-class:: classref-item-separator
 
@@ -729,7 +729,7 @@ Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, 
 
 :ref:`int<class_int>` **operator unary-**\ (\ ) :ref:`🔗<class_int_operator_unminus>`
 
-Returns the negated value of the **int**. If positive, turns the number negative. If negative, turns the number positive. If zero, does nothing.
+返回該 **int** 的相反值。如果為正數，則該將數變為負數。如果為負數，則將該數變為正數。如果為零，則不執行任何操作。
 
 .. rst-class:: classref-item-separator
 
@@ -741,18 +741,18 @@ Returns the negated value of the **int**. If positive, turns the number negative
 
 :ref:`int<class_int>` **operator |**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_bwor_int>`
 
-Performs the bitwise ``OR`` operation.
+執行按位 ``OR``\ （或）運算。
 
 ::
 
-    print(0b1100 | 0b1010) # Prints 14 (binary 1110)
+    print(0b1100 | 0b1010) # 輸出 14（二進位 1110）
 
-This is useful for storing binary flags in a variable.
+可用於在變數中儲存二進位標記。
 
 ::
 
     var flags = 0
-    flags |= 0b101 # Turn the first and third bits on.
+    flags |= 0b101 # 置第一和第三位。
 
 .. rst-class:: classref-item-separator
 
@@ -764,19 +764,19 @@ This is useful for storing binary flags in a variable.
 
 :ref:`int<class_int>` **operator ~**\ (\ ) :ref:`🔗<class_int_operator_bwnot>`
 
-Performs the bitwise ``NOT`` operation on the **int**. Due to `2's complement <https://en.wikipedia.org/wiki/Two%27s_complement>`__, it's effectively equal to ``-(int + 1)``.
+執行按位 ``NOT``\ （反）運算。由於\ `補數 <https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E8%A3%9C%E6%95%B8>`__\ ，效果上與 ``-(int + 1)`` 相同。
 
 ::
 
-    print(~4) # Prints -5
-    print(~(-7)) # Prints 6
+    print(~4) # 輸出 -5
+    print(~(-7)) # 輸出 6
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

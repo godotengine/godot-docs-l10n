@@ -8,35 +8,35 @@
 TextEdit
 ========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CodeEdit<class_CodeEdit>`
+**派生：** :ref:`CodeEdit<class_CodeEdit>`
 
-A multiline text editor.
+多行文本编辑器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A multiline text editor. It also has limited facilities for editing code, such as syntax highlighting support. For more advanced facilities for editing code, see :ref:`CodeEdit<class_CodeEdit>`.
+多行文本编辑器，还提供了一部分用于编辑代码的工具，例如对语法高亮的支持。如果需要更高级的代码编辑工具，见 :ref:`CodeEdit<class_CodeEdit>`\ 。
 
-While entering text, it is possible to insert special characters using Unicode, OEM or Windows alt codes:
+输入文本时，可以使用 Unicode、OEM、Windows Alt 代码来插入特殊字符：
 
-- To enter Unicode codepoints, hold :kbd:`Alt` and type the codepoint on the numpad. For example, to enter the character ``á`` (U+00E1), hold :kbd:`Alt` and type :kbd:`+E1` on the numpad (the leading zeroes can be omitted).
+- 输入 Unicode 码位时，请按住 :kbd:`Alt` 并通过小键盘输入码位。例如要输入字符 ``á``\ （U+00E1），请按住 :kbd:`Alt` 并使用小键盘输入 :kbd:`+E1`\ （前置的零可以省略）。
 
-- To enter OEM codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (OEM 160), hold :kbd:`Alt` and type ``160`` on the numpad.
+- 输入 OEM 码位时，请按住 :kbd:`Alt` 并通过小键盘输入码位。例如要输入字符 ``á``\ （OEM 160），请按住 :kbd:`Alt` 并使用小键盘输入 ``160``\ 。
 
-- To enter Windows codepoints, hold :kbd:`Alt` and type the code on the numpad. For example, to enter the character ``á`` (Windows 0225), hold :kbd:`Alt` and type :kbd:`0`, :kbd:`2`, :kbd:`2`, :kbd:`5` on the numpad. The leading zero here must **not** be omitted, as this is how Windows codepoints are distinguished from OEM codepoints.
+- 输入 Windows 码位时，请按住 :kbd:`Alt` 并通过小键盘输入码位。例如要输入字符 ``á``\ （Windows 0225）请按住 :kbd:`Alt` 并使用小键盘输入 :kbd:`0`\ 、\ :kbd:`2`\ 、\ :kbd:`2`\ 、\ :kbd:`5` 。前置的零\ **不能**\ 省略，因为 Windows 码位需要用这些零来和 OEM 码位进行区分。
 
-\ **Note:** Most viewport, caret, and edit methods contain a ``caret_index`` argument for :ref:`caret_multiple<class_TextEdit_property_caret_multiple>` support. The argument should be one of the following: ``-1`` for all carets, ``0`` for the main caret, or greater than ``0`` for secondary carets in the order they were created.
+\ **注意：**\ 大多数与视口、文本光标、编辑相关的方法都包含一个名叫 ``caret_index`` 的光标索引参数，用于支持 :ref:`caret_multiple<class_TextEdit_property_caret_multiple>`\ 。该参数的取值应为：\ ``-1`` 表示所有光标，\ ``0`` 表示主光标，大于 ``0`` 表示次级光标，取创建顺序。
 
-\ **Note:** When holding down :kbd:`Alt`, the vertical scroll wheel will scroll 5 times as fast as it would normally do. This also works in the Godot script editor.
+\ **注意：**\ 按住 :kbd:`Alt` 时，垂直滚轮的滚动速度为原来的 5 倍。同样适用于 Godot 的脚本编辑器。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -143,8 +143,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -473,8 +473,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -535,8 +535,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_TextEdit_signal_caret_changed:
 
@@ -544,7 +544,7 @@ Signals
 
 **caret_changed**\ (\ ) :ref:`🔗<class_TextEdit_signal_caret_changed>`
 
-Emitted when any caret changes position.
+当任何光标改变位置时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Emitted when any caret changes position.
 
 **gutter_added**\ (\ ) :ref:`🔗<class_TextEdit_signal_gutter_added>`
 
-Emitted when a gutter is added.
+添加边栏时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Emitted when a gutter is added.
 
 **gutter_clicked**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_signal_gutter_clicked>`
 
-Emitted when a gutter is clicked.
+点击边栏时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +580,7 @@ Emitted when a gutter is clicked.
 
 **gutter_removed**\ (\ ) :ref:`🔗<class_TextEdit_signal_gutter_removed>`
 
-Emitted when a gutter is removed.
+移除边栏时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -592,9 +592,9 @@ Emitted when a gutter is removed.
 
 **lines_edited_from**\ (\ from_line\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_signal_lines_edited_from>`
 
-Emitted immediately when the text changes.
+文本改变时立即发出。
 
-When text is added ``from_line`` will be less than ``to_line``. On a remove ``to_line`` will be less than ``from_line``.
+添加文本时 ``from_line`` 小于 ``to_line``\ 。移除文本时 ``to_line`` 小于 ``from_line``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +606,7 @@ When text is added ``from_line`` will be less than ``to_line``. On a remove ``to
 
 **text_changed**\ (\ ) :ref:`🔗<class_TextEdit_signal_text_changed>`
 
-Emitted when the text changes.
+当文本更改时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -618,7 +618,7 @@ Emitted when the text changes.
 
 **text_set**\ (\ ) :ref:`🔗<class_TextEdit_signal_text_set>`
 
-Emitted when :ref:`clear()<class_TextEdit_method_clear>` is called or :ref:`text<class_TextEdit_property_text>` is set.
+:ref:`clear()<class_TextEdit_method_clear>` 被调用，或 :ref:`text<class_TextEdit_property_text>` 被设置时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -626,8 +626,8 @@ Emitted when :ref:`clear()<class_TextEdit_method_clear>` is called or :ref:`text
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TextEdit_MenuItems:
 
@@ -641,7 +641,7 @@ enum **MenuItems**: :ref:`🔗<enum_TextEdit_MenuItems>`
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_CUT** = ``0``
 
-Cuts (copies and clears) the selected text.
+剪切（复制并删除）选中的文本。
 
 .. _class_TextEdit_constant_MENU_COPY:
 
@@ -649,7 +649,7 @@ Cuts (copies and clears) the selected text.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_COPY** = ``1``
 
-Copies the selected text.
+复制选中的文本。
 
 .. _class_TextEdit_constant_MENU_PASTE:
 
@@ -657,7 +657,7 @@ Copies the selected text.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_PASTE** = ``2``
 
-Pastes the clipboard text over the selected text (or at the cursor's position).
+将剪贴板上的文本粘贴在选定的文本上（或光标的位置）。
 
 .. _class_TextEdit_constant_MENU_CLEAR:
 
@@ -665,7 +665,7 @@ Pastes the clipboard text over the selected text (or at the cursor's position).
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_CLEAR** = ``3``
 
-Erases the whole **TextEdit** text.
+擦除整个 **TextEdit** 文本。
 
 .. _class_TextEdit_constant_MENU_SELECT_ALL:
 
@@ -673,7 +673,7 @@ Erases the whole **TextEdit** text.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_SELECT_ALL** = ``4``
 
-Selects the whole **TextEdit** text.
+选择整个 **TextEdit** 文本。
 
 .. _class_TextEdit_constant_MENU_UNDO:
 
@@ -681,7 +681,7 @@ Selects the whole **TextEdit** text.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_UNDO** = ``5``
 
-Undoes the previous action.
+撤销之前的操作。
 
 .. _class_TextEdit_constant_MENU_REDO:
 
@@ -689,7 +689,7 @@ Undoes the previous action.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_REDO** = ``6``
 
-Redoes the previous action.
+重做前一个动作。
 
 .. _class_TextEdit_constant_MENU_SUBMENU_TEXT_DIR:
 
@@ -697,7 +697,7 @@ Redoes the previous action.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_SUBMENU_TEXT_DIR** = ``7``
 
-ID of "Text Writing Direction" submenu.
+“文本书写方向”子菜单的 ID。
 
 .. _class_TextEdit_constant_MENU_DIR_INHERITED:
 
@@ -705,7 +705,7 @@ ID of "Text Writing Direction" submenu.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_DIR_INHERITED** = ``8``
 
-Sets text direction to inherited.
+将文本方向设置为继承。
 
 .. _class_TextEdit_constant_MENU_DIR_AUTO:
 
@@ -713,7 +713,7 @@ Sets text direction to inherited.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_DIR_AUTO** = ``9``
 
-Sets text direction to automatic.
+将文本方向设置为自动。
 
 .. _class_TextEdit_constant_MENU_DIR_LTR:
 
@@ -721,7 +721,7 @@ Sets text direction to automatic.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_DIR_LTR** = ``10``
 
-Sets text direction to left-to-right.
+将文本方向设置为从左至右。
 
 .. _class_TextEdit_constant_MENU_DIR_RTL:
 
@@ -729,7 +729,7 @@ Sets text direction to left-to-right.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_DIR_RTL** = ``11``
 
-Sets text direction to right-to-left.
+将文本方向设置为从右至左。
 
 .. _class_TextEdit_constant_MENU_DISPLAY_UCC:
 
@@ -737,7 +737,7 @@ Sets text direction to right-to-left.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_DISPLAY_UCC** = ``12``
 
-Toggles control character display.
+切换控制字符的显示。
 
 .. _class_TextEdit_constant_MENU_SUBMENU_INSERT_UCC:
 
@@ -745,7 +745,7 @@ Toggles control character display.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_SUBMENU_INSERT_UCC** = ``13``
 
-ID of "Insert Control Character" submenu.
+“插入控制字符”子菜单的 ID。
 
 .. _class_TextEdit_constant_MENU_INSERT_LRM:
 
@@ -753,7 +753,7 @@ ID of "Insert Control Character" submenu.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_LRM** = ``14``
 
-Inserts left-to-right mark (LRM) character.
+插入从左至右标志（LRM）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_RLM:
 
@@ -761,7 +761,7 @@ Inserts left-to-right mark (LRM) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_RLM** = ``15``
 
-Inserts right-to-left mark (RLM) character.
+插入从右至左标志（LRM）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_LRE:
 
@@ -769,7 +769,7 @@ Inserts right-to-left mark (RLM) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_LRE** = ``16``
 
-Inserts start of left-to-right embedding (LRE) character.
+插入开始从左至右嵌入（LRE）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_RLE:
 
@@ -777,7 +777,7 @@ Inserts start of left-to-right embedding (LRE) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_RLE** = ``17``
 
-Inserts start of right-to-left embedding (RLE) character.
+插入开始从右至左嵌入（RLE）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_LRO:
 
@@ -785,7 +785,7 @@ Inserts start of right-to-left embedding (RLE) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_LRO** = ``18``
 
-Inserts start of left-to-right override (LRO) character.
+插入开始从左至右强制（LRO）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_RLO:
 
@@ -793,7 +793,7 @@ Inserts start of left-to-right override (LRO) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_RLO** = ``19``
 
-Inserts start of right-to-left override (RLO) character.
+插入开始从右至左嵌入（RLE）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_PDF:
 
@@ -801,7 +801,7 @@ Inserts start of right-to-left override (RLO) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_PDF** = ``20``
 
-Inserts pop direction formatting (PDF) character.
+插入退出方向格式化（PDF）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_ALM:
 
@@ -809,7 +809,7 @@ Inserts pop direction formatting (PDF) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_ALM** = ``21``
 
-Inserts Arabic letter mark (ALM) character.
+插入阿拉伯字母标记（ALM）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_LRI:
 
@@ -817,7 +817,7 @@ Inserts Arabic letter mark (ALM) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_LRI** = ``22``
 
-Inserts left-to-right isolate (LRI) character.
+插入从左至右隔离（LRI）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_RLI:
 
@@ -825,7 +825,7 @@ Inserts left-to-right isolate (LRI) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_RLI** = ``23``
 
-Inserts right-to-left isolate (RLI) character.
+插入从右至左隔离（RLI）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_FSI:
 
@@ -833,7 +833,7 @@ Inserts right-to-left isolate (RLI) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_FSI** = ``24``
 
-Inserts first strong isolate (FSI) character.
+插入第一个强隔离（FSI）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_PDI:
 
@@ -841,7 +841,7 @@ Inserts first strong isolate (FSI) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_PDI** = ``25``
 
-Inserts pop direction isolate (PDI) character.
+插入退出方向隔离（PDI）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_ZWJ:
 
@@ -849,7 +849,7 @@ Inserts pop direction isolate (PDI) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_ZWJ** = ``26``
 
-Inserts zero width joiner (ZWJ) character.
+插入零宽连接符（ZWJ）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_ZWNJ:
 
@@ -857,7 +857,7 @@ Inserts zero width joiner (ZWJ) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_ZWNJ** = ``27``
 
-Inserts zero width non-joiner (ZWNJ) character.
+插入零宽非连接符（ZWNJ）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_WJ:
 
@@ -865,7 +865,7 @@ Inserts zero width non-joiner (ZWNJ) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_WJ** = ``28``
 
-Inserts word joiner (WJ) character.
+插入文字连接符（WJ）字符。
 
 .. _class_TextEdit_constant_MENU_INSERT_SHY:
 
@@ -873,7 +873,7 @@ Inserts word joiner (WJ) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_INSERT_SHY** = ``29``
 
-Inserts soft hyphen (SHY) character.
+插入软连字符（SHY）字符。
 
 .. _class_TextEdit_constant_MENU_EMOJI_AND_SYMBOL:
 
@@ -881,7 +881,7 @@ Inserts soft hyphen (SHY) character.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_EMOJI_AND_SYMBOL** = ``30``
 
-Opens system emoji and symbol picker.
+打开系统 Emoji 和符号拾取器。
 
 .. _class_TextEdit_constant_MENU_MAX:
 
@@ -889,7 +889,7 @@ Opens system emoji and symbol picker.
 
 :ref:`MenuItems<enum_TextEdit_MenuItems>` **MENU_MAX** = ``31``
 
-Represents the size of the :ref:`MenuItems<enum_TextEdit_MenuItems>` enum.
+代表 :ref:`MenuItems<enum_TextEdit_MenuItems>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -907,7 +907,7 @@ enum **EditAction**: :ref:`🔗<enum_TextEdit_EditAction>`
 
 :ref:`EditAction<enum_TextEdit_EditAction>` **ACTION_NONE** = ``0``
 
-No current action.
+无当前动作。
 
 .. _class_TextEdit_constant_ACTION_TYPING:
 
@@ -915,7 +915,7 @@ No current action.
 
 :ref:`EditAction<enum_TextEdit_EditAction>` **ACTION_TYPING** = ``1``
 
-A typing action.
+打字动作。
 
 .. _class_TextEdit_constant_ACTION_BACKSPACE:
 
@@ -923,7 +923,7 @@ A typing action.
 
 :ref:`EditAction<enum_TextEdit_EditAction>` **ACTION_BACKSPACE** = ``2``
 
-A backwards delete action.
+向后删除动作。
 
 .. _class_TextEdit_constant_ACTION_DELETE:
 
@@ -931,7 +931,7 @@ A backwards delete action.
 
 :ref:`EditAction<enum_TextEdit_EditAction>` **ACTION_DELETE** = ``3``
 
-A forward delete action.
+向前删除动作。
 
 .. rst-class:: classref-item-separator
 
@@ -949,7 +949,7 @@ enum **SearchFlags**: :ref:`🔗<enum_TextEdit_SearchFlags>`
 
 :ref:`SearchFlags<enum_TextEdit_SearchFlags>` **SEARCH_MATCH_CASE** = ``1``
 
-Match case when searching.
+搜索时匹配大小写。
 
 .. _class_TextEdit_constant_SEARCH_WHOLE_WORDS:
 
@@ -957,7 +957,7 @@ Match case when searching.
 
 :ref:`SearchFlags<enum_TextEdit_SearchFlags>` **SEARCH_WHOLE_WORDS** = ``2``
 
-Match whole words when searching.
+搜索时匹配整个单词。
 
 .. _class_TextEdit_constant_SEARCH_BACKWARDS:
 
@@ -965,7 +965,7 @@ Match whole words when searching.
 
 :ref:`SearchFlags<enum_TextEdit_SearchFlags>` **SEARCH_BACKWARDS** = ``4``
 
-Search from end to beginning.
+从头到尾搜索。
 
 .. rst-class:: classref-item-separator
 
@@ -983,7 +983,7 @@ enum **CaretType**: :ref:`🔗<enum_TextEdit_CaretType>`
 
 :ref:`CaretType<enum_TextEdit_CaretType>` **CARET_TYPE_LINE** = ``0``
 
-Vertical line caret.
+垂直线光标。
 
 .. _class_TextEdit_constant_CARET_TYPE_BLOCK:
 
@@ -991,7 +991,7 @@ Vertical line caret.
 
 :ref:`CaretType<enum_TextEdit_CaretType>` **CARET_TYPE_BLOCK** = ``1``
 
-Block caret.
+方块光标。
 
 .. rst-class:: classref-item-separator
 
@@ -1009,7 +1009,7 @@ enum **SelectionMode**: :ref:`🔗<enum_TextEdit_SelectionMode>`
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_NONE** = ``0``
 
-Not selecting.
+不选择。
 
 .. _class_TextEdit_constant_SELECTION_MODE_SHIFT:
 
@@ -1017,7 +1017,7 @@ Not selecting.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_SHIFT** = ``1``
 
-Select as if ``shift`` is pressed.
+就像按下 ``shift`` 一样进行选择。
 
 .. _class_TextEdit_constant_SELECTION_MODE_POINTER:
 
@@ -1025,7 +1025,7 @@ Select as if ``shift`` is pressed.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_POINTER** = ``2``
 
-Select single characters as if the user single clicked.
+选择单个字符，就像用户单击一样。
 
 .. _class_TextEdit_constant_SELECTION_MODE_WORD:
 
@@ -1033,7 +1033,7 @@ Select single characters as if the user single clicked.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_WORD** = ``3``
 
-Select whole words as if the user double clicked.
+选择整个单词，就像用户双击一样。
 
 .. _class_TextEdit_constant_SELECTION_MODE_LINE:
 
@@ -1041,7 +1041,7 @@ Select whole words as if the user double clicked.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_LINE** = ``4``
 
-Select whole lines as if the user triple clicked.
+选择整行文本，就像用户三击一样。
 
 .. rst-class:: classref-item-separator
 
@@ -1059,7 +1059,7 @@ enum **LineWrappingMode**: :ref:`🔗<enum_TextEdit_LineWrappingMode>`
 
 :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>` **LINE_WRAPPING_NONE** = ``0``
 
-Line wrapping is disabled.
+换行被禁用。
 
 .. _class_TextEdit_constant_LINE_WRAPPING_BOUNDARY:
 
@@ -1067,7 +1067,7 @@ Line wrapping is disabled.
 
 :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>` **LINE_WRAPPING_BOUNDARY** = ``1``
 
-Line wrapping occurs at the control boundary, beyond what would normally be visible.
+换行发生在控件边界，超出通常可见的范围。
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1085,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **GUTTER_TYPE_STRING** = ``0``
 
-When a gutter is set to string using :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, it is used to contain text set via the :ref:`set_line_gutter_text()<class_TextEdit_method_set_line_gutter_text>` method.
+当使用 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>` 将边栏设置为字符串时，它被用于包含通过 :ref:`set_line_gutter_text()<class_TextEdit_method_set_line_gutter_text>` 方法设置的文本。
 
 .. _class_TextEdit_constant_GUTTER_TYPE_ICON:
 
@@ -1093,7 +1093,7 @@ When a gutter is set to string using :ref:`set_gutter_type()<class_TextEdit_meth
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **GUTTER_TYPE_ICON** = ``1``
 
-When a gutter is set to icon using :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, it is used to contain an icon set via the :ref:`set_line_gutter_icon()<class_TextEdit_method_set_line_gutter_icon>` method.
+当使用 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>` 将边栏设置为图标时，它被用于包含通过 :ref:`set_line_gutter_icon()<class_TextEdit_method_set_line_gutter_icon>` 方法设置的图标。
 
 .. _class_TextEdit_constant_GUTTER_TYPE_CUSTOM:
 
@@ -1101,7 +1101,7 @@ When a gutter is set to icon using :ref:`set_gutter_type()<class_TextEdit_method
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **GUTTER_TYPE_CUSTOM** = ``2``
 
-When a gutter is set to custom using :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, it is used to contain custom visuals controlled by a callback method set via the :ref:`set_gutter_custom_draw()<class_TextEdit_method_set_gutter_custom_draw>` method.
+当使用 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>` 将边栏设置为自定义时，它被用于包含由通过 :ref:`set_gutter_custom_draw()<class_TextEdit_method_set_gutter_custom_draw>` 方法设置的回调方法控制的自定义视觉效果。
 
 .. rst-class:: classref-section-separator
 
@@ -1109,8 +1109,8 @@ When a gutter is set to custom using :ref:`set_gutter_type()<class_TextEdit_meth
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TextEdit_property_autowrap_mode:
 
@@ -1123,7 +1123,7 @@ Property Descriptions
 - |void| **set_autowrap_mode**\ (\ value\: :ref:`AutowrapMode<enum_TextServer_AutowrapMode>`\ )
 - :ref:`AutowrapMode<enum_TextServer_AutowrapMode>` **get_autowrap_mode**\ (\ )
 
-If :ref:`wrap_mode<class_TextEdit_property_wrap_mode>` is set to :ref:`LINE_WRAPPING_BOUNDARY<class_TextEdit_constant_LINE_WRAPPING_BOUNDARY>`, sets text wrapping mode.
+如果 :ref:`wrap_mode<class_TextEdit_property_wrap_mode>` 设置为 :ref:`LINE_WRAPPING_BOUNDARY<class_TextEdit_constant_LINE_WRAPPING_BOUNDARY>`\ ，则设置文本换行模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ If :ref:`wrap_mode<class_TextEdit_property_wrap_mode>` is set to :ref:`LINE_WRAP
 - |void| **set_backspace_deletes_composite_character_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_backspace_deletes_composite_character_enabled**\ (\ )
 
-If ``true`` and :ref:`caret_mid_grapheme<class_TextEdit_property_caret_mid_grapheme>` is ``false``, backspace deletes an entire composite character such as ❤️‍🩹, instead of deleting part of the composite character.
+如果为 ``true`` 且 :ref:`caret_mid_grapheme<class_TextEdit_property_caret_mid_grapheme>` 为 ``false``\ ，则退格键会删除完整的组合字符，例如 ❤️‍🩹，而不是删除组合字符中的一部分。
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ If ``true`` and :ref:`caret_mid_grapheme<class_TextEdit_property_caret_mid_graph
 - |void| **set_caret_blink_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_caret_blink_enabled**\ (\ )
 
-If ``true``, makes the caret blink.
+如果为 ``true``\ ，则文本光标会闪烁。
 
 .. rst-class:: classref-item-separator
 
@@ -1174,7 +1174,7 @@ If ``true``, makes the caret blink.
 - |void| **set_caret_blink_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_caret_blink_interval**\ (\ )
 
-The interval at which the caret blinks (in seconds).
+文本光标的闪烁间隔（单位为秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -1191,7 +1191,7 @@ The interval at which the caret blinks (in seconds).
 - |void| **set_draw_caret_when_editable_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_caret_when_editable_disabled**\ (\ )
 
-If ``true``, caret will be visible when :ref:`editable<class_TextEdit_property_editable>` is disabled.
+如果为 ``true``\ ，则禁用 :ref:`editable<class_TextEdit_property_editable>` 时光标可见。
 
 .. rst-class:: classref-item-separator
 
@@ -1208,9 +1208,9 @@ If ``true``, caret will be visible when :ref:`editable<class_TextEdit_property_e
 - |void| **set_caret_mid_grapheme_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_caret_mid_grapheme_enabled**\ (\ )
 
-Allow moving caret, selecting and removing the individual composite character components.
+允许在单个复合字符的组件中进行移动光标、选中、删除的操作。
 
-\ **Note:** :kbd:`Backspace` is always removing individual composite character components.
+\ **注意：**\ 退格键 :kbd:`Backspace` 始终按复合字符的组件删除。
 
 .. rst-class:: classref-item-separator
 
@@ -1227,9 +1227,9 @@ Allow moving caret, selecting and removing the individual composite character co
 - |void| **set_move_caret_on_right_click_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_move_caret_on_right_click_enabled**\ (\ )
 
-If ``true``, a right-click moves the caret at the mouse position before displaying the context menu.
+如果为 ``true``\ ，则单击右键时会先将文本光标移动到鼠标位置，然后再显示上下文菜单。
 
-If ``false``, the context menu ignores mouse location.
+如果为 ``false``\ ，则上下文菜单将忽略鼠标位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1246,7 +1246,7 @@ If ``false``, the context menu ignores mouse location.
 - |void| **set_multiple_carets_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_multiple_carets_enabled**\ (\ )
 
-If ``true``, multiple carets are allowed. Left-clicking with :kbd:`Alt` adds a new caret. See :ref:`add_caret()<class_TextEdit_method_add_caret>` and :ref:`get_caret_count()<class_TextEdit_method_get_caret_count>`.
+如果为 ``true``\ ，则允许多光标。按住 :kbd:`Alt` 单击左键会添加一个新的光标。见 :ref:`add_caret()<class_TextEdit_method_add_caret>` 和 :ref:`get_caret_count()<class_TextEdit_method_get_caret_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1263,7 +1263,7 @@ If ``true``, multiple carets are allowed. Left-clicking with :kbd:`Alt` adds a n
 - |void| **set_caret_type**\ (\ value\: :ref:`CaretType<enum_TextEdit_CaretType>`\ )
 - :ref:`CaretType<enum_TextEdit_CaretType>` **get_caret_type**\ (\ )
 
-Set the type of caret to draw.
+设置要绘制的文本光标的类型。
 
 .. rst-class:: classref-item-separator
 
@@ -1280,7 +1280,7 @@ Set the type of caret to draw.
 - |void| **set_context_menu_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_context_menu_enabled**\ (\ )
 
-If ``true``, a right-click displays the context menu.
+为 ``true`` 时右键单击会显示上下文菜单。
 
 .. rst-class:: classref-item-separator
 
@@ -1297,7 +1297,7 @@ If ``true``, a right-click displays the context menu.
 - |void| **set_custom_word_separators**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_custom_word_separators**\ (\ )
 
-The characters to consider as word delimiters if :ref:`use_custom_word_separators<class_TextEdit_property_use_custom_word_separators>` is ``true``. The characters should be defined without separation, for example ``#_!``.
+:ref:`use_custom_word_separators<class_TextEdit_property_use_custom_word_separators>` 为 ``true`` 时作为分词符的字符。定义时，字符之间不应留空，例如 ``#_!``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1314,7 +1314,7 @@ The characters to consider as word delimiters if :ref:`use_custom_word_separator
 - |void| **set_deselect_on_focus_loss_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deselect_on_focus_loss_enabled**\ (\ )
 
-If ``true``, the selected text will be deselected when focus is lost.
+如果为 ``true``\ ，则在丢失焦点时会取消选中文本。
 
 .. rst-class:: classref-item-separator
 
@@ -1331,7 +1331,7 @@ If ``true``, the selected text will be deselected when focus is lost.
 - |void| **set_drag_and_drop_selection_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_and_drop_selection_enabled**\ (\ )
 
-If ``true``, allow drag and drop of selected text. Text can still be dropped from other sources.
+如果为 ``true``\ ，则允许拖放选中的文本。文本仍可从其他来源拖放。
 
 .. rst-class:: classref-item-separator
 
@@ -1348,7 +1348,7 @@ If ``true``, allow drag and drop of selected text. Text can still be dropped fro
 - |void| **set_draw_control_chars**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_draw_control_chars**\ (\ )
 
-If ``true``, control characters are displayed.
+如果为 ``true``\ ，则会显示控制字符。
 
 .. rst-class:: classref-item-separator
 
@@ -1365,7 +1365,7 @@ If ``true``, control characters are displayed.
 - |void| **set_draw_spaces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_spaces**\ (\ )
 
-If ``true``, the "space" character will have a visible representation.
+如果为 ``true``\ ，“空格”字符将具有可见表示形式。
 
 .. rst-class:: classref-item-separator
 
@@ -1382,7 +1382,7 @@ If ``true``, the "space" character will have a visible representation.
 - |void| **set_draw_tabs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_tabs**\ (\ )
 
-If ``true``, the "tab" character will have a visible representation.
+如果为 ``true``\ ，“制表符”字符将具有可见表示形式。
 
 .. rst-class:: classref-item-separator
 
@@ -1399,7 +1399,7 @@ If ``true``, the "tab" character will have a visible representation.
 - |void| **set_editable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editable**\ (\ )
 
-If ``false``, existing text cannot be modified and new text cannot be added.
+如果为 ``false``\ ，则不能修改现在的文本，也不能添加新文本。
 
 .. rst-class:: classref-item-separator
 
@@ -1416,7 +1416,7 @@ If ``false``, existing text cannot be modified and new text cannot be added.
 - |void| **set_emoji_menu_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_emoji_menu_enabled**\ (\ )
 
-If ``true``, "Emoji and Symbols" menu is enabled.
+如果为 ``true``\ ，则启用“Emoji 和符号”菜单。
 
 .. rst-class:: classref-item-separator
 
@@ -1433,7 +1433,7 @@ If ``true``, "Emoji and Symbols" menu is enabled.
 - |void| **set_empty_selection_clipboard_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_empty_selection_clipboard_enabled**\ (\ )
 
-If ``true``, copying or cutting without a selection is performed on all lines with a caret. Otherwise, copy and cut require a selection.
+如果为 ``true``\ ，未选中内容时进行复制或剪切会对光标所在行进行操作。否则需要先选中才能进行复制和剪切。
 
 .. rst-class:: classref-item-separator
 
@@ -1450,7 +1450,7 @@ If ``true``, copying or cutting without a selection is performed on all lines wi
 - |void| **set_highlight_all_occurrences**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_highlight_all_occurrences_enabled**\ (\ )
 
-If ``true``, all occurrences of the selected text will be highlighted.
+如果为 ``true``\ ，所选文本的所有匹配项都将突出显示。
 
 .. rst-class:: classref-item-separator
 
@@ -1467,7 +1467,7 @@ If ``true``, all occurrences of the selected text will be highlighted.
 - |void| **set_highlight_current_line**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_highlight_current_line_enabled**\ (\ )
 
-If ``true``, the line containing the cursor is highlighted.
+如果为 ``true``\ ，则包含光标的行会突出显示。
 
 .. rst-class:: classref-item-separator
 
@@ -1484,7 +1484,7 @@ If ``true``, the line containing the cursor is highlighted.
 - |void| **set_indent_wrapped_lines**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_indent_wrapped_lines**\ (\ )
 
-If ``true``, all wrapped lines are indented to the same amount as the unwrapped line.
+如果为 ``true``\ ，则所有换行的行都会缩进，缩进量与展开的行相同。
 
 .. rst-class:: classref-item-separator
 
@@ -1518,9 +1518,9 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_middle_mouse_paste_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_middle_mouse_paste_enabled**\ (\ )
 
-If ``false``, using middle mouse button to paste clipboard will be disabled.
+如果为 ``false``\ ，将禁用鼠标中键粘贴剪贴板。
 
-\ **Note:** This method is only implemented on Linux.
+\ **注意：**\ 这个方法只在 Linux 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1537,7 +1537,7 @@ If ``false``, using middle mouse button to paste clipboard will be disabled.
 - |void| **set_draw_minimap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drawing_minimap**\ (\ )
 
-If ``true``, a minimap is shown, providing an outline of your source code. The minimap uses a fixed-width text size.
+如果为 ``true``\ ，则显示小地图，提供源代码的概要。小地图使用固定宽度的文本大小。
 
 .. rst-class:: classref-item-separator
 
@@ -1554,7 +1554,7 @@ If ``true``, a minimap is shown, providing an outline of your source code. The m
 - |void| **set_minimap_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_minimap_width**\ (\ )
 
-The width, in pixels, of the minimap.
+小地图的宽度（以像素为单位）。
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1571,7 @@ The width, in pixels, of the minimap.
 - |void| **set_placeholder**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_placeholder**\ (\ )
 
-Text shown when the **TextEdit** is empty. It is **not** the **TextEdit**'s default value (see :ref:`text<class_TextEdit_property_text>`).
+**TextEdit** 为空时显示的文本。它\ **不是** **TextEdit** 的默认值（参见 :ref:`text<class_TextEdit_property_text>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1588,7 +1588,7 @@ Text shown when the **TextEdit** is empty. It is **not** the **TextEdit**'s defa
 - |void| **set_fit_content_height_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_height_enabled**\ (\ )
 
-If ``true``, **TextEdit** will disable vertical scroll and fit minimum height to the number of visible lines. When both this property and :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` are ``true``, no scrollbars will be displayed.
+如果为 ``true``\ ，则 **TextEdit** 将禁用垂直滚动，让最小高度与可见行数相匹配。该属性与 :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` 同时为 ``true`` 时不会显示滚动条。
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1605,7 @@ If ``true``, **TextEdit** will disable vertical scroll and fit minimum height to
 - |void| **set_fit_content_width_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_fit_content_width_enabled**\ (\ )
 
-If ``true``, **TextEdit** will disable horizontal scroll and fit minimum width to the widest line in the text. When both this property and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` are ``true``, no scrollbars will be displayed.
+如果为 ``true``\ ，则 **TextEdit** 将禁用水平滚动，让最小宽度与文本中最宽的行相匹配。该属性与 :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` 同时为 ``true`` 时不会显示滚动条。
 
 .. rst-class:: classref-item-separator
 
@@ -1622,7 +1622,7 @@ If ``true``, **TextEdit** will disable horizontal scroll and fit minimum width t
 - |void| **set_h_scroll**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_h_scroll**\ (\ )
 
-If there is a horizontal scrollbar, this determines the current horizontal scroll value in pixels.
+如果有一个水平滚动条，这决定了当前的水平滚动值，单位是像素。
 
 .. rst-class:: classref-item-separator
 
@@ -1639,7 +1639,7 @@ If there is a horizontal scrollbar, this determines the current horizontal scrol
 - |void| **set_scroll_past_end_of_file_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_past_end_of_file_enabled**\ (\ )
 
-Allow scrolling past the last line into "virtual" space.
+允许滚动过最后一行，进入“虚拟”空间。
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ Allow scrolling past the last line into "virtual" space.
 - |void| **set_smooth_scroll_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_smooth_scroll_enabled**\ (\ )
 
-Scroll smoothly over the text rather than jumping to the next location.
+在文本上平滑滚动，而不是跳到下一个位置。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ Scroll smoothly over the text rather than jumping to the next location.
 - |void| **set_v_scroll_speed**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_v_scroll_speed**\ (\ )
 
-Sets the scroll speed with the minimap or when :ref:`scroll_smooth<class_TextEdit_property_scroll_smooth>` is enabled.
+设置使用小地图或当 :ref:`scroll_smooth<class_TextEdit_property_scroll_smooth>` 被启用时的滚动速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1690,7 +1690,7 @@ Sets the scroll speed with the minimap or when :ref:`scroll_smooth<class_TextEdi
 - |void| **set_v_scroll**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_v_scroll**\ (\ )
 
-If there is a vertical scrollbar, this determines the current vertical scroll value in line numbers, starting at 0 for the top line.
+如果有一个垂直滚动条，这就决定了当前的垂直滚动值，以行数为单位，顶行从0开始。
 
 .. rst-class:: classref-item-separator
 
@@ -1707,9 +1707,9 @@ If there is a vertical scrollbar, this determines the current vertical scroll va
 - |void| **set_selecting_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_selecting_enabled**\ (\ )
 
-If ``true``, text can be selected.
+如果为 ``true``\ ，文本可以被选择。
 
-If ``false``, text can not be selected by the user or by the :ref:`select()<class_TextEdit_method_select>` or :ref:`select_all()<class_TextEdit_method_select_all>` methods.
+如果为 ``false``\ ，用户或使用\ :ref:`select()<class_TextEdit_method_select>`\ 或\ :ref:`select_all()<class_TextEdit_method_select_all>`\ 方法都不能选择文本。
 
 .. rst-class:: classref-item-separator
 
@@ -1726,7 +1726,7 @@ If ``false``, text can not be selected by the user or by the :ref:`select()<clas
 - |void| **set_shortcut_keys_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_keys_enabled**\ (\ )
 
-If ``true``, shortcut keys for context menu items are enabled, even if the context menu is disabled.
+为 ``true`` 时，即使上下文菜单已被禁用，也会启用该上下文菜单的快捷键。
 
 .. rst-class:: classref-item-separator
 
@@ -1743,7 +1743,7 @@ If ``true``, shortcut keys for context menu items are enabled, even if the conte
 - |void| **set_structured_text_bidi_override**\ (\ value\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`\ )
 - :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **get_structured_text_bidi_override**\ (\ )
 
-Set BiDi algorithm override for the structured text.
+为结构化文本设置 BiDi 算法覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -1760,7 +1760,7 @@ Set BiDi algorithm override for the structured text.
 - |void| **set_structured_text_bidi_override_options**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_structured_text_bidi_override_options**\ (\ )
 
-Set additional options for BiDi override.
+设置 BiDi 覆盖的附加选项。
 
 .. rst-class:: classref-item-separator
 
@@ -1777,9 +1777,9 @@ Set additional options for BiDi override.
 - |void| **set_syntax_highlighter**\ (\ value\: :ref:`SyntaxHighlighter<class_SyntaxHighlighter>`\ )
 - :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` **get_syntax_highlighter**\ (\ )
 
-The syntax highlighter to use.
+要使用的语法高亮器。
 
-\ **Note:** A :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` instance should not be used across multiple **TextEdit** nodes.
+\ **注意：**\ 不应在多个 **TextEdit** 节点间共享 :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -1796,7 +1796,7 @@ The syntax highlighter to use.
 - |void| **set_tab_input_mode**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_tab_input_mode**\ (\ )
 
-If ``true``, :ref:`ProjectSettings.input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` input ``Tab`` character, otherwise it moves keyboard focus to the next :ref:`Control<class_Control>` in the scene.
+如果为 ``true``\ ，则 :ref:`ProjectSettings.input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` 会输入 ``Tab`` 字符，否则会让键盘焦点移至场景中的下一个 :ref:`Control<class_Control>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1813,7 +1813,7 @@ If ``true``, :ref:`ProjectSettings.input/ui_text_indent<class_ProjectSettings_pr
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-String value of the **TextEdit**.
+**TextEdit** 的字符串值。
 
 .. rst-class:: classref-item-separator
 
@@ -1830,7 +1830,7 @@ String value of the **TextEdit**.
 - |void| **set_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ )
 
-Base text writing direction.
+基础文本书写方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1847,7 +1847,7 @@ Base text writing direction.
 - |void| **set_use_custom_word_separators**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_custom_word_separators_enabled**\ (\ )
 
-If ``false``, using :kbd:`Ctrl + Left` or :kbd:`Ctrl + Right` (:kbd:`Cmd + Left` or :kbd:`Cmd + Right` on macOS) bindings will use the behavior of :ref:`use_default_word_separators<class_TextEdit_property_use_default_word_separators>`. If ``true``, it will also stop the caret if a character within :ref:`custom_word_separators<class_TextEdit_property_custom_word_separators>` is detected. Useful for subword moving. This behavior also will be applied to the behavior of text selection.
+如果为 ``false``\ ，使用 :kbd:`Ctrl + Left` 或 :kbd:`Ctrl + Right`\ （macOS 上为 :kbd:`Cmd + Left` 或 :kbd:`Cmd + Right`\ ）绑定将使用 :ref:`use_default_word_separators<class_TextEdit_property_use_default_word_separators>` 的行为。如果为 ``true``\ ，如果检测到 :ref:`custom_word_separators<class_TextEdit_property_custom_word_separators>` 内的字符，它还将停止文本光标。对于子词移动很有用。该行为也将应用于文本选择的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -1864,7 +1864,7 @@ If ``false``, using :kbd:`Ctrl + Left` or :kbd:`Ctrl + Right` (:kbd:`Cmd + Left`
 - |void| **set_use_default_word_separators**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_word_separators_enabled**\ (\ )
 
-If ``false``, using :kbd:`Ctrl + Left` or :kbd:`Ctrl + Right` (:kbd:`Cmd + Left` or :kbd:`Cmd + Right` on macOS) bindings will stop moving caret only if a space or punctuation is detected. If ``true``, it will also stop the caret if a character is part of ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``, the Unicode General Punctuation table, or the Unicode CJK Punctuation table. Useful for subword moving. This behavior also will be applied to the behavior of text selection.
+如果为 ``false``\ ，使用 :kbd:`Ctrl + Left` 或 :kbd:`Ctrl + Right`\ （macOS 上为 :kbd:`Cmd + Left` 或 :kbd:`Cmd + Right`\ ）绑定，仅当检测到空格或标点符号时才会停止移动文本光标。如果为 ``true``\ ，当字符属于 ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``\ 、Unicode 通用标点符号表或 Unicode CJK 标点符号表时，它也会停止文本光标。对于子词移动很有用。该行为也将应用于文本选择行为。
 
 .. rst-class:: classref-item-separator
 
@@ -1881,7 +1881,7 @@ If ``false``, using :kbd:`Ctrl + Left` or :kbd:`Ctrl + Right` (:kbd:`Cmd + Left`
 - |void| **set_virtual_keyboard_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_virtual_keyboard_enabled**\ (\ )
 
-If ``true``, the native virtual keyboard is enabled on platforms that support it.
+如果为 ``true``\ ，则会在支持的平台上启用原生虚拟键盘。
 
 .. rst-class:: classref-item-separator
 
@@ -1898,7 +1898,7 @@ If ``true``, the native virtual keyboard is enabled on platforms that support it
 - |void| **set_virtual_keyboard_show_on_focus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_virtual_keyboard_show_on_focus**\ (\ )
 
-If ``true``, the native virtual keyboard is shown on focus events on platforms that support it.
+如果为 ``true``\ ，则在收到获得焦点事件时会在支持的平台上显示原生虚拟键盘。
 
 .. rst-class:: classref-item-separator
 
@@ -1915,7 +1915,7 @@ If ``true``, the native virtual keyboard is shown on focus events on platforms t
 - |void| **set_line_wrapping_mode**\ (\ value\: :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>`\ )
 - :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>` **get_line_wrapping_mode**\ (\ )
 
-Sets the line wrapping mode to use.
+设置要使用的换行模式。
 
 .. rst-class:: classref-section-separator
 
@@ -1923,8 +1923,8 @@ Sets the line wrapping mode to use.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TextEdit_private_method__backspace:
 
@@ -1932,7 +1932,7 @@ Method Descriptions
 
 |void| **_backspace**\ (\ caret_index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextEdit_private_method__backspace>`
 
-Override this method to define what happens when the user presses the backspace key.
+覆盖此方法可以定义用户按下退格键时应该发生什么。
 
 .. rst-class:: classref-item-separator
 
@@ -1944,7 +1944,7 @@ Override this method to define what happens when the user presses the backspace 
 
 |void| **_copy**\ (\ caret_index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextEdit_private_method__copy>`
 
-Override this method to define what happens when the user performs a copy operation.
+覆盖此方法可以定义用户执行复制操作时应该发生什么。
 
 .. rst-class:: classref-item-separator
 
@@ -1956,7 +1956,7 @@ Override this method to define what happens when the user performs a copy operat
 
 |void| **_cut**\ (\ caret_index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextEdit_private_method__cut>`
 
-Override this method to define what happens when the user performs a cut operation.
+覆盖此方法可以定义用户执行剪切操作时应该发生什么。
 
 .. rst-class:: classref-item-separator
 
@@ -1968,7 +1968,7 @@ Override this method to define what happens when the user performs a cut operati
 
 |void| **_handle_unicode_input**\ (\ unicode_char\: :ref:`int<class_int>`, caret_index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextEdit_private_method__handle_unicode_input>`
 
-Override this method to define what happens when the user types in the provided key ``unicode_char``.
+覆盖此方法可以定义用户打出所提供的键 ``unicode_char`` 时应该发生什么。
 
 .. rst-class:: classref-item-separator
 
@@ -1980,7 +1980,7 @@ Override this method to define what happens when the user types in the provided 
 
 |void| **_paste**\ (\ caret_index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextEdit_private_method__paste>`
 
-Override this method to define what happens when the user performs a paste operation.
+覆盖此方法可以定义用户执行粘贴操作时应该发生什么。
 
 .. rst-class:: classref-item-separator
 
@@ -1992,9 +1992,9 @@ Override this method to define what happens when the user performs a paste opera
 
 |void| **_paste_primary_clipboard**\ (\ caret_index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_TextEdit_private_method__paste_primary_clipboard>`
 
-Override this method to define what happens when the user performs a paste operation with middle mouse button.
+覆盖此方法可以定义用户使用鼠标中键执行粘贴操作时应该发生什么。
 
-\ **Note:** This method is only implemented on Linux.
+\ **注意：**\ 此方法仅在 Linux 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -2006,7 +2006,7 @@ Override this method to define what happens when the user performs a paste opera
 
 :ref:`int<class_int>` **add_caret**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_add_caret>`
 
-Adds a new caret at the given location. Returns the index of the new caret, or ``-1`` if the location is invalid.
+在给定的位置添加新的光标。返回新光标的索引，如果位置无效则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2018,7 +2018,7 @@ Adds a new caret at the given location. Returns the index of the new caret, or `
 
 |void| **add_caret_at_carets**\ (\ below\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextEdit_method_add_caret_at_carets>`
 
-Adds an additional caret above or below every caret. If ``below`` is ``true`` the new caret will be added below and above otherwise.
+在每个光标上方或下方添加一个额外的光标。如果 ``below`` 为 ``true``\ ，则会在下方添加新光标，否则为上方。
 
 .. rst-class:: classref-item-separator
 
@@ -2030,7 +2030,7 @@ Adds an additional caret above or below every caret. If ``below`` is ``true`` th
 
 |void| **add_gutter**\ (\ at\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_add_gutter>`
 
-Register a new gutter to this **TextEdit**. Use ``at`` to have a specific gutter order. A value of ``-1`` appends the gutter to the right.
+为这个 **TextEdit** 注册一个新的边栏。请使用 ``at`` 指定边栏的顺序。\ ``-1`` 会将该边栏追加到右侧。
 
 .. rst-class:: classref-item-separator
 
@@ -2042,7 +2042,7 @@ Register a new gutter to this **TextEdit**. Use ``at`` to have a specific gutter
 
 |void| **add_selection_for_next_occurrence**\ (\ ) :ref:`🔗<class_TextEdit_method_add_selection_for_next_occurrence>`
 
-Adds a selection and a caret for the next occurrence of the current selection. If there is no active selection, selects word under caret.
+选中当前所选内容下一次出现的位置并添加文本光标。如果没有活动的选中内容，则选中当前光标所处的单词。
 
 .. rst-class:: classref-item-separator
 
@@ -2054,9 +2054,9 @@ Adds a selection and a caret for the next occurrence of the current selection. I
 
 |void| **adjust_carets_after_edit**\ (\ caret\: :ref:`int<class_int>`, from_line\: :ref:`int<class_int>`, from_col\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`, to_col\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_adjust_carets_after_edit>`
 
-**Deprecated:** No longer necessary since methods now adjust carets themselves.
+**已弃用：** No longer necessary since methods now adjust carets themselves.
 
-This method does nothing.
+这个方法什么也不做。
 
 .. rst-class:: classref-item-separator
 
@@ -2068,7 +2068,7 @@ This method does nothing.
 
 |void| **adjust_viewport_to_caret**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_adjust_viewport_to_caret>`
 
-Adjust the viewport so the caret is visible.
+调整视口，让光标可见。
 
 .. rst-class:: classref-item-separator
 
@@ -2080,7 +2080,7 @@ Adjust the viewport so the caret is visible.
 
 |void| **apply_ime**\ (\ ) :ref:`🔗<class_TextEdit_method_apply_ime>`
 
-Applies text from the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) to each caret and closes the IME if it is open.
+为所有光标应用\ `输入法编辑器 <https://zh.wikipedia.org/zh-cn/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 中的文本，如果输入法编辑器处于打开状态，还会将其关闭。
 
 .. rst-class:: classref-item-separator
 
@@ -2092,7 +2092,7 @@ Applies text from the `Input Method Editor <https://en.wikipedia.org/wiki/Input_
 
 |void| **backspace**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_backspace>`
 
-Called when the user presses the backspace key. Can be overridden with :ref:`_backspace()<class_TextEdit_private_method__backspace>`.
+用户按下退格键时调用。可以用 :ref:`_backspace()<class_TextEdit_private_method__backspace>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -2104,7 +2104,7 @@ Called when the user presses the backspace key. Can be overridden with :ref:`_ba
 
 |void| **begin_complex_operation**\ (\ ) :ref:`🔗<class_TextEdit_method_begin_complex_operation>`
 
-Starts a multipart edit. All edits will be treated as one action until :ref:`end_complex_operation()<class_TextEdit_method_end_complex_operation>` is called.
+开始一个多部分编辑。在调用 :ref:`end_complex_operation()<class_TextEdit_method_end_complex_operation>` 之前，所有编辑都将被视为一个动作。
 
 .. rst-class:: classref-item-separator
 
@@ -2116,7 +2116,7 @@ Starts a multipart edit. All edits will be treated as one action until :ref:`end
 
 |void| **begin_multicaret_edit**\ (\ ) :ref:`🔗<class_TextEdit_method_begin_multicaret_edit>`
 
-Starts an edit for multiple carets. The edit must be ended with :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`. Multicaret edits can be used to edit text at multiple carets and delay merging the carets until the end, so the caret indexes aren't affected immediately. :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` and :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>` can be nested, and the merge will happen at the last :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`.
+开始对多个光标进行编辑。编辑必须以 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>` 结束。多光标编辑可用于编辑多个光标处的文本，并将光标的合并延迟到末尾，因此光标索引不会立即受到影响。\ :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` 和 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>` 可以嵌套，并且合并将发生在最后一个 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`\ 。
 
 ::
 
@@ -2125,7 +2125,7 @@ Starts an edit for multiple carets. The edit must be ended with :ref:`end_multic
     for i in range(get_caret_count()):
         if multicaret_edit_ignore_caret(i):
             continue
-        # Logic here.
+        # 逻辑在这里。
     end_multicaret_edit()
     end_complex_operation()
 
@@ -2139,7 +2139,7 @@ Starts an edit for multiple carets. The edit must be ended with :ref:`end_multic
 
 |void| **cancel_ime**\ (\ ) :ref:`🔗<class_TextEdit_method_cancel_ime>`
 
-Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) if it is open. Any text in the IME will be lost.
+如果\ `输入法编辑器 <https://zh.wikipedia.org/zh-cn/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 处于打开状态，则会将其关闭。输入法编辑器中的文本会丢失。
 
 .. rst-class:: classref-item-separator
 
@@ -2151,7 +2151,7 @@ Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ 
 
 |void| **center_viewport_to_caret**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_center_viewport_to_caret>`
 
-Centers the viewport on the line the editing caret is at. This also resets the :ref:`scroll_horizontal<class_TextEdit_property_scroll_horizontal>` value to ``0``.
+将视口居中在正在编辑的插入符号所在的行上。这也将 :ref:`scroll_horizontal<class_TextEdit_property_scroll_horizontal>` 值重置为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2163,7 +2163,7 @@ Centers the viewport on the line the editing caret is at. This also resets the :
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TextEdit_method_clear>`
 
-Performs a full reset of **TextEdit**, including undo history.
+执行对 **TextEdit** 的完全重置，包括撤消历史。
 
 .. rst-class:: classref-item-separator
 
@@ -2175,7 +2175,7 @@ Performs a full reset of **TextEdit**, including undo history.
 
 |void| **clear_undo_history**\ (\ ) :ref:`🔗<class_TextEdit_method_clear_undo_history>`
 
-Clears the undo history.
+清除撤销历史。
 
 .. rst-class:: classref-item-separator
 
@@ -2187,13 +2187,13 @@ Clears the undo history.
 
 |void| **collapse_carets**\ (\ from_line\: :ref:`int<class_int>`, from_column\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`, to_column\: :ref:`int<class_int>`, inclusive\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TextEdit_method_collapse_carets>`
 
-Collapse all carets in the given range to the ``from_line`` and ``from_column`` position.
+将给定范围内的所有光标折叠到 ``from_line`` 和 ``from_column`` 位置。
 
-\ ``inclusive`` applies to both ends.
+\ ``inclusive`` 应用于两端。
 
-If :ref:`is_in_mulitcaret_edit()<class_TextEdit_method_is_in_mulitcaret_edit>` is ``true``, carets that are collapsed will be ``true`` for :ref:`multicaret_edit_ignore_caret()<class_TextEdit_method_multicaret_edit_ignore_caret>`.
+如果 :ref:`is_in_mulitcaret_edit()<class_TextEdit_method_is_in_mulitcaret_edit>` 为 ``true``\ ，则折叠的光标对于 :ref:`multicaret_edit_ignore_caret()<class_TextEdit_method_multicaret_edit_ignore_caret>` 将为 ``true``\ 。
 
-\ :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>` will be called if any carets were collapsed.
+如果任何光标被折叠，将调用 :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2205,7 +2205,7 @@ If :ref:`is_in_mulitcaret_edit()<class_TextEdit_method_is_in_mulitcaret_edit>` i
 
 |void| **copy**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_copy>`
 
-Copies the current text selection. Can be overridden with :ref:`_copy()<class_TextEdit_private_method__copy>`.
+复制当前选区。可以使用 :ref:`_copy()<class_TextEdit_private_method__copy>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -2217,7 +2217,7 @@ Copies the current text selection. Can be overridden with :ref:`_copy()<class_Te
 
 |void| **cut**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_cut>`
 
-Cut's the current selection. Can be overridden with :ref:`_cut()<class_TextEdit_private_method__cut>`.
+剪切当前选区。可以使用 :ref:`_cut()<class_TextEdit_private_method__cut>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -2229,7 +2229,7 @@ Cut's the current selection. Can be overridden with :ref:`_cut()<class_TextEdit_
 
 |void| **delete_selection**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_delete_selection>`
 
-Deletes the selected text.
+删除选定的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -2241,7 +2241,7 @@ Deletes the selected text.
 
 |void| **deselect**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_deselect>`
 
-Deselects the current selection.
+取消当前选择。
 
 .. rst-class:: classref-item-separator
 
@@ -2253,7 +2253,7 @@ Deselects the current selection.
 
 |void| **end_action**\ (\ ) :ref:`🔗<class_TextEdit_method_end_action>`
 
-Marks the end of steps in the current action started with :ref:`start_action()<class_TextEdit_method_start_action>`.
+标记在 :ref:`start_action()<class_TextEdit_method_start_action>` 开始的当前动作中步骤的末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -2265,7 +2265,7 @@ Marks the end of steps in the current action started with :ref:`start_action()<c
 
 |void| **end_complex_operation**\ (\ ) :ref:`🔗<class_TextEdit_method_end_complex_operation>`
 
-Ends a multipart edit, started with :ref:`begin_complex_operation()<class_TextEdit_method_begin_complex_operation>`. If called outside a complex operation, the current operation is pushed onto the undo/redo stack.
+结束一个多部分编辑，该多部分编辑从 :ref:`begin_complex_operation()<class_TextEdit_method_begin_complex_operation>` 开始。如果在一个复杂动作之外调用，则将当前动作将被压入撤消/重做堆栈。
 
 .. rst-class:: classref-item-separator
 
@@ -2277,7 +2277,7 @@ Ends a multipart edit, started with :ref:`begin_complex_operation()<class_TextEd
 
 |void| **end_multicaret_edit**\ (\ ) :ref:`🔗<class_TextEdit_method_end_multicaret_edit>`
 
-Ends an edit for multiple carets, that was started with :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>`. If this was the last :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>` and :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>` was called, carets will be merged.
+结束以 :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` 开始的多个光标的编辑。如果这是最后一个 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`\ ，并且调用了 :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`\ ，则光标将被合并。
 
 .. rst-class:: classref-item-separator
 
@@ -2289,7 +2289,7 @@ Ends an edit for multiple carets, that was started with :ref:`begin_multicaret_e
 
 :ref:`int<class_int>` **get_caret_column**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_caret_column>`
 
-Returns the column the editing caret is at.
+返回编辑光标所在的列。
 
 .. rst-class:: classref-item-separator
 
@@ -2301,7 +2301,7 @@ Returns the column the editing caret is at.
 
 :ref:`int<class_int>` **get_caret_count**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_caret_count>`
 
-Returns the number of carets in this **TextEdit**.
+返回该 **TextEdit** 中的光标数。
 
 .. rst-class:: classref-item-separator
 
@@ -2313,7 +2313,7 @@ Returns the number of carets in this **TextEdit**.
 
 :ref:`Vector2<class_Vector2>` **get_caret_draw_pos**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_caret_draw_pos>`
 
-Returns the caret pixel draw position.
+返回光标的像素绘制位置。
 
 .. rst-class:: classref-item-separator
 
@@ -2325,9 +2325,9 @@ Returns the caret pixel draw position.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_caret_index_edit_order**\ (\ ) :ref:`🔗<class_TextEdit_method_get_caret_index_edit_order>`
 
-**Deprecated:** Carets no longer need to be edited in any specific order. If the carets need to be sorted, use :ref:`get_sorted_carets()<class_TextEdit_method_get_sorted_carets>` instead.
+**已弃用：** Carets no longer need to be edited in any specific order. If the carets need to be sorted, use :ref:`get_sorted_carets()<class_TextEdit_method_get_sorted_carets>` instead.
 
-Returns a list of caret indexes in their edit order, this done from bottom to top. Edit order refers to the way actions such as :ref:`insert_text_at_caret()<class_TextEdit_method_insert_text_at_caret>` are applied.
+返回文本光标索引的列表，使用编辑顺序，从下到上进行。编辑顺序是 :ref:`insert_text_at_caret()<class_TextEdit_method_insert_text_at_caret>` 等动作的应用顺序。
 
 .. rst-class:: classref-item-separator
 
@@ -2339,7 +2339,7 @@ Returns a list of caret indexes in their edit order, this done from bottom to to
 
 :ref:`int<class_int>` **get_caret_line**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_caret_line>`
 
-Returns the line the editing caret is on.
+返回编辑光标所在的行。
 
 .. rst-class:: classref-item-separator
 
@@ -2351,7 +2351,7 @@ Returns the line the editing caret is on.
 
 :ref:`int<class_int>` **get_caret_wrap_index**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_caret_wrap_index>`
 
-Returns the wrap index the editing caret is on.
+返回正编辑的文本光标所在的换行索引。
 
 .. rst-class:: classref-item-separator
 
@@ -2363,7 +2363,7 @@ Returns the wrap index the editing caret is on.
 
 :ref:`int<class_int>` **get_first_non_whitespace_column**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_first_non_whitespace_column>`
 
-Returns the first column containing a non-whitespace character on the given line. If there is only whitespace, returns the number of characters.
+返回给定的行中第一个包含非空白字符的列。如果只有空白字符，就会返回字符总数。
 
 .. rst-class:: classref-item-separator
 
@@ -2375,7 +2375,7 @@ Returns the first column containing a non-whitespace character on the given line
 
 :ref:`int<class_int>` **get_first_visible_line**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_first_visible_line>`
 
-Returns the first visible line.
+返回第一个可见行。
 
 .. rst-class:: classref-item-separator
 
@@ -2387,7 +2387,7 @@ Returns the first visible line.
 
 :ref:`int<class_int>` **get_gutter_count**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_gutter_count>`
 
-Returns the number of gutters registered.
+返回注册的边栏数量。
 
 .. rst-class:: classref-item-separator
 
@@ -2399,7 +2399,7 @@ Returns the number of gutters registered.
 
 :ref:`String<class_String>` **get_gutter_name**\ (\ gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_gutter_name>`
 
-Returns the name of the gutter at the given index.
+返回给定索引处边栏的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -2411,7 +2411,7 @@ Returns the name of the gutter at the given index.
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **get_gutter_type**\ (\ gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_gutter_type>`
 
-Returns the type of the gutter at the given index. Gutters can contain icons, text, or custom visuals.
+返回给定索引处的边栏的类型。边栏可以包含图标、文本或自定义视觉效果。
 
 .. rst-class:: classref-item-separator
 
@@ -2423,7 +2423,7 @@ Returns the type of the gutter at the given index. Gutters can contain icons, te
 
 :ref:`int<class_int>` **get_gutter_width**\ (\ gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_gutter_width>`
 
-Returns the width of the gutter at the given index.
+返回给定索引处边栏的宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -2435,7 +2435,7 @@ Returns the width of the gutter at the given index.
 
 :ref:`HScrollBar<class_HScrollBar>` **get_h_scroll_bar**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_h_scroll_bar>`
 
-Returns the :ref:`HScrollBar<class_HScrollBar>` used by **TextEdit**.
+设置该 **TextEdit** 所使用的 :ref:`HScrollBar<class_HScrollBar>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2447,7 +2447,7 @@ Returns the :ref:`HScrollBar<class_HScrollBar>` used by **TextEdit**.
 
 :ref:`int<class_int>` **get_indent_level**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_indent_level>`
 
-Returns the indent level of the given line. This is the number of spaces and tabs at the beginning of the line, with the tabs taking the tab size into account (see :ref:`get_tab_size()<class_TextEdit_method_get_tab_size>`).
+给定行的缩进级别。缩进级别为行首空格和制表符的数量，制表符会考虑制表符的大小（见 :ref:`get_tab_size()<class_TextEdit_method_get_tab_size>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2459,7 +2459,7 @@ Returns the indent level of the given line. This is the number of spaces and tab
 
 :ref:`int<class_int>` **get_last_full_visible_line**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_last_full_visible_line>`
 
-Returns the last visible line. Use :ref:`get_last_full_visible_line_wrap_index()<class_TextEdit_method_get_last_full_visible_line_wrap_index>` for the wrap index.
+返回最后一个可见的行。获得换行索引的话，使用 :ref:`get_last_full_visible_line_wrap_index()<class_TextEdit_method_get_last_full_visible_line_wrap_index>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2471,7 +2471,7 @@ Returns the last visible line. Use :ref:`get_last_full_visible_line_wrap_index()
 
 :ref:`int<class_int>` **get_last_full_visible_line_wrap_index**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_last_full_visible_line_wrap_index>`
 
-Returns the last visible wrap index of the last visible line.
+返回最后一个可见行的最后一个可见换行索引。
 
 .. rst-class:: classref-item-separator
 
@@ -2483,7 +2483,7 @@ Returns the last visible wrap index of the last visible line.
 
 :ref:`int<class_int>` **get_last_unhidden_line**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_last_unhidden_line>`
 
-Returns the last unhidden line in the entire **TextEdit**.
+返回整个 **TextEdit** 中最后一个未隐藏的行。
 
 .. rst-class:: classref-item-separator
 
@@ -2495,7 +2495,7 @@ Returns the last unhidden line in the entire **TextEdit**.
 
 :ref:`String<class_String>` **get_line**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line>`
 
-Returns the text of a specific line.
+返回特定行的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -2507,7 +2507,7 @@ Returns the text of a specific line.
 
 :ref:`Color<class_Color>` **get_line_background_color**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_background_color>`
 
-Returns the custom background color of the given line. If no color is set, returns ``Color(0, 0, 0, 0)``.
+返回给定行的自定义背景色。如果没有设置颜色则返回 ``Color(0, 0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2519,11 +2519,11 @@ Returns the custom background color of the given line. If no color is set, retur
 
 :ref:`Vector2i<class_Vector2i>` **get_line_column_at_pos**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, clamp_line\: :ref:`bool<class_bool>` = true, clamp_column\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_column_at_pos>`
 
-Returns the line and column at the given position. In the returned vector, ``x`` is the column and ``y`` is the line.
+返回给定位置处的行号和列号。返回的向量中，\ ``x`` 是列号，\ ``y`` 是行号。
 
-If ``clamp_line`` is ``false`` and ``position`` is below the last line, ``Vector2i(-1, -1)`` is returned.
+如果 ``clamp_line`` 为 ``false`` 且 ``position`` 位于最后一列的下方，则会返回 ``Vector2i(-1, -1)``\ 。
 
-If ``clamp_column`` is ``false`` and ``position`` is outside the column range of the line, ``Vector2i(-1, -1)`` is returned.
+如果 ``clamp_column`` 为 ``false`` 且 ``position`` 超出了所在行的列的范围，则会返回 ``Vector2i(-1, -1)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2535,7 +2535,7 @@ If ``clamp_column`` is ``false`` and ``position`` is outside the column range of
 
 :ref:`int<class_int>` **get_line_count**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_count>`
 
-Returns the number of lines in the text.
+返回文本中的行数。
 
 .. rst-class:: classref-item-separator
 
@@ -2547,7 +2547,7 @@ Returns the number of lines in the text.
 
 :ref:`Texture2D<class_Texture2D>` **get_line_gutter_icon**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_gutter_icon>`
 
-Returns the icon currently in ``gutter`` at ``line``. This only works when the gutter type is :ref:`GUTTER_TYPE_ICON<class_TextEdit_constant_GUTTER_TYPE_ICON>` (see :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
+返回 ``gutter`` 中当前位于 ``line`` 的图标。仅当边栏类型为 :ref:`GUTTER_TYPE_ICON<class_TextEdit_constant_GUTTER_TYPE_ICON>` 时才有效（请参阅 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2559,7 +2559,7 @@ Returns the icon currently in ``gutter`` at ``line``. This only works when the g
 
 :ref:`Color<class_Color>` **get_line_gutter_item_color**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_gutter_item_color>`
 
-Returns the color currently in ``gutter`` at ``line``.
+返回边栏 ``gutter`` 中，当前位于 ``line`` 行的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2571,7 +2571,7 @@ Returns the color currently in ``gutter`` at ``line``.
 
 :ref:`Variant<class_Variant>` **get_line_gutter_metadata**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_gutter_metadata>`
 
-Returns the metadata currently in ``gutter`` at ``line``.
+返回边栏 ``gutter`` 中，当前位于 ``line`` 行的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -2583,7 +2583,7 @@ Returns the metadata currently in ``gutter`` at ``line``.
 
 :ref:`String<class_String>` **get_line_gutter_text**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_gutter_text>`
 
-Returns the text currently in ``gutter`` at ``line``. This only works when the gutter type is :ref:`GUTTER_TYPE_STRING<class_TextEdit_constant_GUTTER_TYPE_STRING>` (see :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
+返回 ``gutter`` 中当前位于 ``line`` 的文本。仅当边栏类型为 :ref:`GUTTER_TYPE_STRING<class_TextEdit_constant_GUTTER_TYPE_STRING>` 时才有效（请参阅 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -2595,9 +2595,9 @@ Returns the text currently in ``gutter`` at ``line``. This only works when the g
 
 :ref:`int<class_int>` **get_line_height**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_height>`
 
-Returns the maximum value of the line height among all lines.
+返回所有行中行高的最大值。
 
-\ **Note:** The return value is influenced by :ref:`line_spacing<class_TextEdit_theme_constant_line_spacing>` and :ref:`font_size<class_TextEdit_theme_font_size_font_size>`. And it will not be less than ``1``.
+\ **注意：**\ 返回值受 :ref:`line_spacing<class_TextEdit_theme_constant_line_spacing>` 和 :ref:`font_size<class_TextEdit_theme_font_size_font_size>` 的影响。不会比 ``1`` 小。
 
 .. rst-class:: classref-item-separator
 
@@ -2609,9 +2609,9 @@ Returns the maximum value of the line height among all lines.
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_line_ranges_from_carets**\ (\ only_selections\: :ref:`bool<class_bool>` = false, merge_adjacent\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_ranges_from_carets>`
 
-Returns an :ref:`Array<class_Array>` of line ranges where ``x`` is the first line and ``y`` is the last line. All lines within these ranges will have a caret on them or be part of a selection. Each line will only be part of one line range, even if it has multiple carets on it.
+返回行范围的 :ref:`Array<class_Array>`\ ，其中 ``x`` 是第一行，\ ``y`` 是最后一行。这些范围内的所有行都将带有光标或是选区的一部分。每行都只能属于一个行范围，即使它上面有多个光标。
 
-If a selection's end column (:ref:`get_selection_to_column()<class_TextEdit_method_get_selection_to_column>`) is at column ``0``, that line will not be included. If a selection begins on the line after another selection ends and ``merge_adjacent`` is ``true``, or they begin and end on the same line, one line range will include both selections.
+如果选区的结束列（\ :ref:`get_selection_to_column()<class_TextEdit_method_get_selection_to_column>`\ ）位于列 ``0``\ ，则不会包含该行。如果选区在另一个选区结束后的行上开始，并且 ``merge_adjacent`` 为 ``true``\ ，或者它们在同一行上开始和结束，则一个行范围将包含两个选区。
 
 .. rst-class:: classref-item-separator
 
@@ -2623,7 +2623,7 @@ If a selection's end column (:ref:`get_selection_to_column()<class_TextEdit_meth
 
 :ref:`int<class_int>` **get_line_width**\ (\ line\: :ref:`int<class_int>`, wrap_index\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_width>`
 
-Returns the width in pixels of the ``wrap_index`` on ``line``.
+返回位于 ``line`` 的 ``wrap_index`` 的像素宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -2635,7 +2635,7 @@ Returns the width in pixels of the ``wrap_index`` on ``line``.
 
 :ref:`String<class_String>` **get_line_with_ime**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_with_ime>`
 
-Returns line text as it is currently displayed, including IME composition string.
+返回当前显示的行文本，包括 IME 合成字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -2647,7 +2647,7 @@ Returns line text as it is currently displayed, including IME composition string
 
 :ref:`int<class_int>` **get_line_wrap_count**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_wrap_count>`
 
-Returns the number of times the given line is wrapped.
+返回给定行换行的次数。
 
 .. rst-class:: classref-item-separator
 
@@ -2659,7 +2659,7 @@ Returns the number of times the given line is wrapped.
 
 :ref:`int<class_int>` **get_line_wrap_index_at_column**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_wrap_index_at_column>`
 
-Returns the wrap index of the given column on the given line. This ranges from ``0`` to :ref:`get_line_wrap_count()<class_TextEdit_method_get_line_wrap_count>`.
+返回给定行给定列的自动换行索引。范围为 ``0`` 到 :ref:`get_line_wrap_count()<class_TextEdit_method_get_line_wrap_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2671,7 +2671,7 @@ Returns the wrap index of the given column on the given line. This ranges from `
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_line_wrapped_text**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_line_wrapped_text>`
 
-Returns an array of :ref:`String<class_String>`\ s representing each wrapped index.
+返回代表各个换行索引的 :ref:`String<class_String>` 数组。
 
 .. rst-class:: classref-item-separator
 
@@ -2683,7 +2683,7 @@ Returns an array of :ref:`String<class_String>`\ s representing each wrapped ind
 
 :ref:`Vector2<class_Vector2>` **get_local_mouse_pos**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_local_mouse_pos>`
 
-Returns the local mouse position adjusted for the text direction.
+返回针对文本方向调整过的局部鼠标位置。
 
 .. rst-class:: classref-item-separator
 
@@ -2695,9 +2695,9 @@ Returns the local mouse position adjusted for the text direction.
 
 :ref:`PopupMenu<class_PopupMenu>` **get_menu**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_menu>`
 
-Returns the :ref:`PopupMenu<class_PopupMenu>` of this **TextEdit**. By default, this menu is displayed when right-clicking on the **TextEdit**.
+返回该 **TextEdit** 的 :ref:`PopupMenu<class_PopupMenu>`\ 。默认情况下，会在右键单击 **TextEdit** 时显示改菜单。
 
-You can add custom menu items or remove standard ones. Make sure your IDs don't conflict with the standard ones (see :ref:`MenuItems<enum_TextEdit_MenuItems>`). For example:
+你可以添加自定义菜单项，也可以移除标准菜单项。请确保你使用的 ID 与标准菜单项的 ID 不冲突（见 :ref:`MenuItems<enum_TextEdit_MenuItems>`\ ）。例如：
 
 
 .. tabs::
@@ -2706,12 +2706,12 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
     func _ready():
         var menu = get_menu()
-        # Remove all items after "Redo".
+        # 移除“撤销”后的所有菜单项。
         menu.item_count = menu.get_item_index(MENU_REDO) + 1
-        # Add custom items.
+        # 添加自定义菜单项。
         menu.add_separator()
-        menu.add_item("Insert Date", MENU_MAX + 1)
-        # Connect callback.
+        menu.add_item("插入日期", MENU_MAX + 1)
+        # 连接回调。
         menu.id_pressed.connect(_on_item_pressed)
 
     func _on_item_pressed(id):
@@ -2723,12 +2723,12 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
     public override void _Ready()
     {
         var menu = GetMenu();
-        // Remove all items after "Redo".
+        // 移除“撤销”后的所有菜单项。
         menu.ItemCount = menu.GetItemIndex(TextEdit.MenuItems.Redo) + 1;
-        // Add custom items.
+        // 添加自定义菜单项。
         menu.AddSeparator();
-        menu.AddItem("Insert Date", TextEdit.MenuItems.Max + 1);
-        // Add event handler.
+        menu.AddItem("插入日期", TextEdit.MenuItems.Max + 1);
+        // 添加事件处理器。
         menu.IdPressed += OnItemPressed;
     }
 
@@ -2742,7 +2742,7 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`Window.visible<class_Window_property_visible>` property.
+\ **警告：**\ 这是必要的内部节点，将其移除或释放会导致崩溃。如果你想要将其隐藏，或者将其子节点隐藏，请使用对应的 :ref:`Window.visible<class_Window_property_visible>` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2754,7 +2754,7 @@ You can add custom menu items or remove standard ones. Make sure your IDs don't 
 
 :ref:`int<class_int>` **get_minimap_line_at_pos**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_minimap_line_at_pos>`
 
-Returns the equivalent minimap line at ``position``.
+返回小地图 ``position`` 处等价的行。
 
 .. rst-class:: classref-item-separator
 
@@ -2766,7 +2766,7 @@ Returns the equivalent minimap line at ``position``.
 
 :ref:`int<class_int>` **get_minimap_visible_lines**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_minimap_visible_lines>`
 
-Returns the number of lines that may be drawn on the minimap.
+返回小地图上能够绘制的行数。
 
 .. rst-class:: classref-item-separator
 
@@ -2778,9 +2778,9 @@ Returns the number of lines that may be drawn on the minimap.
 
 :ref:`int<class_int>` **get_next_composite_character_column**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_next_composite_character_column>`
 
-Returns the correct column at the end of a composite character like ❤️‍🩹 (mending heart; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) which is comprised of more than one Unicode code point, if the caret is at the start of the composite character. Also returns the correct column with the caret at mid grapheme and for non-composite characters.
+如果光标位于合成字符的开头，则返回该字符末尾所在的正确列。合成字符由多个 Unicode 码位组合而成（例如修复爱心 ❤️‍🩹 的 Unicode 为 ``U+2764 U+FE0F U+200D U+1FA79``\ ）。如果文本光标位于非合成字符字素的内部，也会返回正确的列。
 
-\ **Note:** To check at caret location use ``get_next_composite_character_column(get_caret_line(), get_caret_column())``
+\ **注意：**\ 请使用 ``get_next_composite_character_column(get_caret_line(), get_caret_column())`` 在文本光标的位置进行检查
 
 .. rst-class:: classref-item-separator
 
@@ -2792,7 +2792,7 @@ Returns the correct column at the end of a composite character like ❤️‍�
 
 :ref:`Vector2i<class_Vector2i>` **get_next_visible_line_index_offset_from**\ (\ line\: :ref:`int<class_int>`, wrap_index\: :ref:`int<class_int>`, visible_amount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_next_visible_line_index_offset_from>`
 
-Similar to :ref:`get_next_visible_line_offset_from()<class_TextEdit_method_get_next_visible_line_offset_from>`, but takes into account the line wrap indexes. In the returned vector, ``x`` is the line, ``y`` is the wrap index.
+类似于 :ref:`get_next_visible_line_offset_from()<class_TextEdit_method_get_next_visible_line_offset_from>`\ ，但考虑了换行索引。在返回的向量中，\ ``x`` 是行，\ ``y`` 是换行索引。
 
 .. rst-class:: classref-item-separator
 
@@ -2804,7 +2804,7 @@ Similar to :ref:`get_next_visible_line_offset_from()<class_TextEdit_method_get_n
 
 :ref:`int<class_int>` **get_next_visible_line_offset_from**\ (\ line\: :ref:`int<class_int>`, visible_amount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_next_visible_line_offset_from>`
 
-Returns the count to the next visible line from ``line`` to ``line + visible_amount``. Can also count backwards. For example if a **TextEdit** has 5 lines with lines 2 and 3 hidden, calling this with ``line = 1, visible_amount = 1`` would return 3.
+返回从 ``line`` 到 ``line + visible_amount`` 的下一个可见行的计数。也可以倒数计数。例如，如果 **TextEdit** 有 5 行，其中隐藏了第 2 行和第 3 行，使用 ``line = 1, visible_amount = 1`` 调用它会返回 3。
 
 .. rst-class:: classref-item-separator
 
@@ -2816,9 +2816,9 @@ Returns the count to the next visible line from ``line`` to ``line + visible_amo
 
 :ref:`Vector2i<class_Vector2i>` **get_pos_at_line_column**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_pos_at_line_column>`
 
-Returns the local position for the given ``line`` and ``column``. If ``x`` or ``y`` of the returned vector equal ``-1``, the position is outside of the viewable area of the control.
+返回给定 ``line`` 和 ``column`` 的局部位置。如果返回的向量的 ``x`` 或 ``y`` 等于 ``-1``\ ，则该位置在该控件的可视区域之外。
 
-\ **Note:** The Y position corresponds to the bottom side of the line. Use :ref:`get_rect_at_line_column()<class_TextEdit_method_get_rect_at_line_column>` to get the top side position.
+\ **注意：**\ Y 位置对应于行的底部。请使用 :ref:`get_rect_at_line_column()<class_TextEdit_method_get_rect_at_line_column>` 来获取顶部位置。
 
 .. rst-class:: classref-item-separator
 
@@ -2830,9 +2830,9 @@ Returns the local position for the given ``line`` and ``column``. If ``x`` or ``
 
 :ref:`int<class_int>` **get_previous_composite_character_column**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_previous_composite_character_column>`
 
-Returns the correct column at the start of a composite character like ❤️‍🩹 (mending heart; Unicode: ``U+2764 U+FE0F U+200D U+1FA79``) which is comprised of more than one Unicode code point, if the caret is at the end of the composite character. Also returns the correct column with the caret at mid grapheme and for non-composite characters.
+如果光标位于合成字符的末尾，则返回该字符开头所在的正确列。合成字符由多个 Unicode 码位组合而成（例如修复爱心 ❤️‍🩹 的 Unicode 为 ``U+2764 U+FE0F U+200D U+1FA79``\ ）。如果文本光标位于非合成字符字素的内部，也会返回正确的列。
 
-\ **Note:** To check at caret location use ``get_previous_composite_character_column(get_caret_line(), get_caret_column())``
+\ **注意：**\ 请使用 ``get_previous_composite_character_column(get_caret_line(), get_caret_column())`` 在文本光标的位置进行检查
 
 .. rst-class:: classref-item-separator
 
@@ -2844,9 +2844,9 @@ Returns the correct column at the start of a composite character like ❤️‍�
 
 :ref:`Rect2i<class_Rect2i>` **get_rect_at_line_column**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_rect_at_line_column>`
 
-Returns the local position and size for the grapheme at the given ``line`` and ``column``. If ``x`` or ``y`` position of the returned rect equal ``-1``, the position is outside of the viewable area of the control.
+返回给定 ``line`` 和 ``column`` 处的字素的局部位置和大小。如果返回的矩形的 ``x`` 或 ``y`` 位置等于 ``-1``\ ，则该位置在该控件的可视区域之外。
 
-\ **Note:** The Y position of the returned rect corresponds to the top side of the line, unlike :ref:`get_pos_at_line_column()<class_TextEdit_method_get_pos_at_line_column>` which returns the bottom side.
+\ **注意：**\ 返回的矩形的 Y 位置对应于该行的顶部，不像 :ref:`get_pos_at_line_column()<class_TextEdit_method_get_pos_at_line_column>` 返回底边。
 
 .. rst-class:: classref-item-separator
 
@@ -2858,7 +2858,7 @@ Returns the local position and size for the grapheme at the given ``line`` and `
 
 :ref:`int<class_int>` **get_saved_version**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_saved_version>`
 
-Returns the last tagged saved version from :ref:`tag_saved_version()<class_TextEdit_method_tag_saved_version>`.
+从 :ref:`tag_saved_version()<class_TextEdit_method_tag_saved_version>` 返回最后一个标记的保存版本。
 
 .. rst-class:: classref-item-separator
 
@@ -2870,7 +2870,7 @@ Returns the last tagged saved version from :ref:`tag_saved_version()<class_TextE
 
 :ref:`float<class_float>` **get_scroll_pos_for_line**\ (\ line\: :ref:`int<class_int>`, wrap_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_scroll_pos_for_line>`
 
-Returns the scroll position for ``wrap_index`` of ``line``.
+返回 ``line`` 的 ``wrap_index`` 对应的滚动位置。
 
 .. rst-class:: classref-item-separator
 
@@ -2882,7 +2882,7 @@ Returns the scroll position for ``wrap_index`` of ``line``.
 
 :ref:`String<class_String>` **get_selected_text**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_get_selected_text>`
 
-Returns the text inside the selection of a caret, or all the carets if ``caret_index`` is its default value ``-1``.
+返回光标所选文本，如果 ``caret_index`` 为默认值 ``-1`` 则为所有光标所选文本。
 
 .. rst-class:: classref-item-separator
 
@@ -2894,9 +2894,9 @@ Returns the text inside the selection of a caret, or all the carets if ``caret_i
 
 :ref:`int<class_int>` **get_selection_at_line_column**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`, include_edges\: :ref:`bool<class_bool>` = true, only_selections\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_at_line_column>`
 
-Returns the caret index of the selection at the given ``line`` and ``column``, or ``-1`` if there is none.
+返回给定 ``line`` 和 ``column`` 处选区的光标索引，如果没有，则返回 ``-1``\ 。
 
-If ``include_edges`` is ``false``, the position must be inside the selection and not at either end. If ``only_selections`` is ``false``, carets without a selection will also be considered.
+如果 ``include_edges`` 为 ``false``\ ，则位置必须位于选区内，而不是两端。如果 ``only_selections`` 为 ``false``\ ，则还会考虑没有选区的光标。
 
 .. rst-class:: classref-item-separator
 
@@ -2908,9 +2908,9 @@ If ``include_edges`` is ``false``, the position must be inside the selection and
 
 :ref:`int<class_int>` **get_selection_column**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_column>`
 
-**Deprecated:** Use :ref:`get_selection_origin_column()<class_TextEdit_method_get_selection_origin_column>` instead.
+**已弃用：** Use :ref:`get_selection_origin_column()<class_TextEdit_method_get_selection_origin_column>` instead.
 
-Returns the original start column of the selection.
+返回选区的原始起始列。
 
 .. rst-class:: classref-item-separator
 
@@ -2922,7 +2922,7 @@ Returns the original start column of the selection.
 
 :ref:`int<class_int>` **get_selection_from_column**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_from_column>`
 
-Returns the selection begin column. Returns the caret column if there is no selection.
+返回选区的起始列。如果没有选区，则返回光标列。
 
 .. rst-class:: classref-item-separator
 
@@ -2934,7 +2934,7 @@ Returns the selection begin column. Returns the caret column if there is no sele
 
 :ref:`int<class_int>` **get_selection_from_line**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_from_line>`
 
-Returns the selection begin line. Returns the caret line if there is no selection.
+返回选区的起始行。如果没有选区，则返回光标行。
 
 .. rst-class:: classref-item-separator
 
@@ -2946,9 +2946,9 @@ Returns the selection begin line. Returns the caret line if there is no selectio
 
 :ref:`int<class_int>` **get_selection_line**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_line>`
 
-**Deprecated:** Use :ref:`get_selection_origin_line()<class_TextEdit_method_get_selection_origin_line>` instead.
+**已弃用：** Use :ref:`get_selection_origin_line()<class_TextEdit_method_get_selection_origin_line>` instead.
 
-Returns the original start line of the selection.
+返回选区的原始起始行。
 
 .. rst-class:: classref-item-separator
 
@@ -2960,7 +2960,7 @@ Returns the original start line of the selection.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **get_selection_mode**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_mode>`
 
-Returns the current selection mode.
+返回当前的选区模式。
 
 .. rst-class:: classref-item-separator
 
@@ -2972,7 +2972,7 @@ Returns the current selection mode.
 
 :ref:`int<class_int>` **get_selection_origin_column**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_origin_column>`
 
-Returns the origin column of the selection. This is the opposite end from the caret.
+返回选区的起始列。这是光标的另一端。
 
 .. rst-class:: classref-item-separator
 
@@ -2984,7 +2984,7 @@ Returns the origin column of the selection. This is the opposite end from the ca
 
 :ref:`int<class_int>` **get_selection_origin_line**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_origin_line>`
 
-Returns the origin line of the selection. This is the opposite end from the caret.
+返回选区的起始行。这是光标的另一端。
 
 .. rst-class:: classref-item-separator
 
@@ -2996,7 +2996,7 @@ Returns the origin line of the selection. This is the opposite end from the care
 
 :ref:`int<class_int>` **get_selection_to_column**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_to_column>`
 
-Returns the selection end column. Returns the caret column if there is no selection.
+返回选区的结束列。如果没有选区，则返回光标列。
 
 .. rst-class:: classref-item-separator
 
@@ -3008,7 +3008,7 @@ Returns the selection end column. Returns the caret column if there is no select
 
 :ref:`int<class_int>` **get_selection_to_line**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_get_selection_to_line>`
 
-Returns the selection end line. Returns the caret line if there is no selection.
+返回选区结束行。如果没有选区，则返回光标行。
 
 .. rst-class:: classref-item-separator
 
@@ -3020,9 +3020,9 @@ Returns the selection end line. Returns the caret line if there is no selection.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_sorted_carets**\ (\ include_ignored_carets\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_TextEdit_method_get_sorted_carets>`
 
-Returns the carets sorted by selection beginning from lowest line and column to highest (from top to bottom of text).
+返回按选区排序的光标，从最低行和列开始到最高（从文本的顶部到底部）。
 
-If ``include_ignored_carets`` is ``false``, carets from :ref:`multicaret_edit_ignore_caret()<class_TextEdit_method_multicaret_edit_ignore_caret>` will be ignored.
+如果 ``include_ignored_carets`` 为 ``false``\ ，则 :ref:`multicaret_edit_ignore_caret()<class_TextEdit_method_multicaret_edit_ignore_caret>` 中的光标将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -3034,7 +3034,7 @@ If ``include_ignored_carets`` is ``false``, carets from :ref:`multicaret_edit_ig
 
 :ref:`int<class_int>` **get_tab_size**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_tab_size>`
 
-Returns the **TextEdit**'s' tab size.
+返回该 **TextEdit** 的制表符大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3046,7 +3046,7 @@ Returns the **TextEdit**'s' tab size.
 
 :ref:`int<class_int>` **get_total_gutter_width**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_total_gutter_width>`
 
-Returns the total width of all gutters and internal padding.
+返回所有栏位及内部边距的总宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -3058,7 +3058,7 @@ Returns the total width of all gutters and internal padding.
 
 :ref:`int<class_int>` **get_total_visible_line_count**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_total_visible_line_count>`
 
-Returns the total number of lines in the text. This includes wrapped lines and excludes folded lines. If :ref:`wrap_mode<class_TextEdit_property_wrap_mode>` is set to :ref:`LINE_WRAPPING_NONE<class_TextEdit_constant_LINE_WRAPPING_NONE>` and no lines are folded (see :ref:`CodeEdit.is_line_folded()<class_CodeEdit_method_is_line_folded>`) then this is equivalent to :ref:`get_line_count()<class_TextEdit_method_get_line_count>`. See :ref:`get_visible_line_count_in_range()<class_TextEdit_method_get_visible_line_count_in_range>` for a limited range of lines.
+文本中的总行数，包括自动换行，排除已折叠的行。如果 :ref:`wrap_mode<class_TextEdit_property_wrap_mode>` 为 :ref:`LINE_WRAPPING_NONE<class_TextEdit_constant_LINE_WRAPPING_NONE>` 且没有折叠任何行（见 :ref:`CodeEdit.is_line_folded()<class_CodeEdit_method_is_line_folded>`\ ）则等价于 :ref:`get_line_count()<class_TextEdit_method_get_line_count>`\ 。有限范围的行见 :ref:`get_visible_line_count_in_range()<class_TextEdit_method_get_visible_line_count_in_range>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3070,7 +3070,7 @@ Returns the total number of lines in the text. This includes wrapped lines and e
 
 :ref:`VScrollBar<class_VScrollBar>` **get_v_scroll_bar**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_v_scroll_bar>`
 
-Returns the :ref:`VScrollBar<class_VScrollBar>` of the **TextEdit**.
+设置该 **TextEdit** 所使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3082,7 +3082,7 @@ Returns the :ref:`VScrollBar<class_VScrollBar>` of the **TextEdit**.
 
 :ref:`int<class_int>` **get_version**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_version>`
 
-Returns the current version of the **TextEdit**. The version is a count of recorded operations by the undo/redo history.
+返回该 **TextEdit** 的当前版本。版本是撤消/重做历史所记录操作的计数。
 
 .. rst-class:: classref-item-separator
 
@@ -3094,7 +3094,7 @@ Returns the current version of the **TextEdit**. The version is a count of recor
 
 :ref:`int<class_int>` **get_visible_line_count**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_visible_line_count>`
 
-Returns the number of lines that can visually fit, rounded down, based on this control's height.
+返回视觉上能够容纳的行数，向下取整，基于控件的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -3106,7 +3106,7 @@ Returns the number of lines that can visually fit, rounded down, based on this c
 
 :ref:`int<class_int>` **get_visible_line_count_in_range**\ (\ from_line\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_visible_line_count_in_range>`
 
-Returns the total number of lines between ``from_line`` and ``to_line`` (inclusive) in the text. This includes wrapped lines and excludes folded lines. If the range covers all lines it is equivalent to :ref:`get_total_visible_line_count()<class_TextEdit_method_get_total_visible_line_count>`.
+返回文本中 ``from_line`` 到 ``to_line`` 之间（两端包含）的总行数，包括自动换行，排除已折叠的行。如果范围包含所有行，则等价于 :ref:`get_total_visible_line_count()<class_TextEdit_method_get_total_visible_line_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3118,7 +3118,7 @@ Returns the total number of lines between ``from_line`` and ``to_line`` (inclusi
 
 :ref:`String<class_String>` **get_word_at_pos**\ (\ position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_word_at_pos>`
 
-Returns the word at ``position``.
+返回位于 ``position`` 的单词。
 
 .. rst-class:: classref-item-separator
 
@@ -3130,7 +3130,7 @@ Returns the word at ``position``.
 
 :ref:`String<class_String>` **get_word_under_caret**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_TextEdit_method_get_word_under_caret>`
 
-Returns a :ref:`String<class_String>` text with the word under the caret's location.
+返回一个 :ref:`String<class_String>` 文本，其中包含文本光标位置下的单词。
 
 .. rst-class:: classref-item-separator
 
@@ -3142,7 +3142,7 @@ Returns a :ref:`String<class_String>` text with the word under the caret's locat
 
 :ref:`bool<class_bool>` **has_ime_text**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_has_ime_text>`
 
-Returns ``true`` if the user has text in the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME).
+如果用户的\ `输入法编辑器 <https://zh.wikipedia.org/zh-cn/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 中存在文本，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3154,7 +3154,7 @@ Returns ``true`` if the user has text in the `Input Method Editor <https://en.wi
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_has_redo>`
 
-Returns ``true`` if a "redo" action is available.
+有“重做”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3166,7 +3166,7 @@ Returns ``true`` if a "redo" action is available.
 
 :ref:`bool<class_bool>` **has_selection**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_TextEdit_method_has_selection>`
 
-Returns ``true`` if the user has selected text.
+如果用户选中了文本，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3178,7 +3178,7 @@ Returns ``true`` if the user has selected text.
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_has_undo>`
 
-Returns ``true`` if an "undo" action is available.
+有“撤销”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3190,7 +3190,7 @@ Returns ``true`` if an "undo" action is available.
 
 |void| **insert_line_at**\ (\ line\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_insert_line_at>`
 
-Inserts a new line with ``text`` at ``line``.
+在第 ``line`` 行插入文本为 ``text`` 的新行。
 
 .. rst-class:: classref-item-separator
 
@@ -3202,11 +3202,11 @@ Inserts a new line with ``text`` at ``line``.
 
 |void| **insert_text**\ (\ text\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`, before_selection_begin\: :ref:`bool<class_bool>` = true, before_selection_end\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TextEdit_method_insert_text>`
 
-Inserts the ``text`` at ``line`` and ``column``.
+在 ``line`` 和 ``column`` 处插入 ``text``\ 。
 
-If ``before_selection_begin`` is ``true``, carets and selections that begin at ``line`` and ``column`` will moved to the end of the inserted text, along with all carets after it.
+如果 ``before_selection_begin`` 为 ``true``\ ，则从 ``line`` 和 ``column`` 开始的光标和选区将移动到插入文本的末尾，连同其后的所有光标。
 
-If ``before_selection_end`` is ``true``, selections that end at ``line`` and ``column`` will be extended to the end of the inserted text. These parameters can be used to insert text inside of or outside of selections.
+如果 ``before_selection_end`` 为 ``true``\ ，则从 ``line`` 和 ``column`` 结束的选区将扩展到插入文本的末尾。这些参数可用于在选区内部或外部插入文本。
 
 .. rst-class:: classref-item-separator
 
@@ -3218,7 +3218,7 @@ If ``before_selection_end`` is ``true``, selections that end at ``line`` and ``c
 
 |void| **insert_text_at_caret**\ (\ text\: :ref:`String<class_String>`, caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_insert_text_at_caret>`
 
-Insert the specified text at the caret position.
+在光标位置插入指定的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -3230,7 +3230,7 @@ Insert the specified text at the caret position.
 
 :ref:`bool<class_bool>` **is_caret_after_selection_origin**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_after_selection_origin>`
 
-Returns ``true`` if the caret of the selection is after the selection origin. This can be used to determine the direction of the selection.
+如果选区的光标位于选区原点之后，则返回 ``true``\ 。这可用于确定选区的方向。
 
 .. rst-class:: classref-item-separator
 
@@ -3242,9 +3242,9 @@ Returns ``true`` if the caret of the selection is after the selection origin. Th
 
 :ref:`bool<class_bool>` **is_caret_visible**\ (\ caret_index\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TextEdit_method_is_caret_visible>`
 
-Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be considered hidden if it is outside the scrollable area when scrolling is enabled.
+如果光标可见则返回 ``true``\ ，否则返回 ``false``\ 。启用滚动时，可以将超出可滚动区域的光标视为隐藏。
 
-\ **Note:** :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` does not account for a caret being off-screen if it is still within the scrollable area. It will return ``true`` even if the caret is off-screen as long as it meets **TextEdit**'s own conditions for being visible. This includes uses of :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` and :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` that cause the **TextEdit** to expand beyond the viewport's bounds.
+\ **注意：**\ 如果光标仍然在可滚动区域内，\ :ref:`is_caret_visible()<class_TextEdit_method_is_caret_visible>` 就不会考虑它是否在屏幕外。即便光标位于屏幕外，只要它满足 **TextEdit** 自身的可见条件，该函数就会返回 ``true``\ 。这包括使用 :ref:`scroll_fit_content_width<class_TextEdit_property_scroll_fit_content_width>` 和 :ref:`scroll_fit_content_height<class_TextEdit_property_scroll_fit_content_height>` 导致 **TextEdit** 超出视口边界的情况。
 
 .. rst-class:: classref-item-separator
 
@@ -3256,7 +3256,7 @@ Returns ``true`` if the caret is visible, ``false`` otherwise. A caret will be c
 
 :ref:`bool<class_bool>` **is_dragging_cursor**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_is_dragging_cursor>`
 
-Returns ``true`` if the user is dragging their mouse for scrolling, selecting, or text dragging.
+如果用户拖动鼠标进行滚动、选择或文本拖动，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3268,7 +3268,7 @@ Returns ``true`` if the user is dragging their mouse for scrolling, selecting, o
 
 :ref:`bool<class_bool>` **is_gutter_clickable**\ (\ gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_gutter_clickable>`
 
-Returns ``true`` if the gutter at the given index is clickable. See :ref:`set_gutter_clickable()<class_TextEdit_method_set_gutter_clickable>`.
+如果给定索引处的边栏可点击，则返回 ``true``\ 。见 :ref:`set_gutter_clickable()<class_TextEdit_method_set_gutter_clickable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3280,7 +3280,7 @@ Returns ``true`` if the gutter at the given index is clickable. See :ref:`set_gu
 
 :ref:`bool<class_bool>` **is_gutter_drawn**\ (\ gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_gutter_drawn>`
 
-Returns ``true`` if the gutter at the given index is currently drawn. See :ref:`set_gutter_draw()<class_TextEdit_method_set_gutter_draw>`.
+如果给定索引处的边栏目前被绘制，则返回 ``true``\ 。见 :ref:`set_gutter_draw()<class_TextEdit_method_set_gutter_draw>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3292,7 +3292,7 @@ Returns ``true`` if the gutter at the given index is currently drawn. See :ref:`
 
 :ref:`bool<class_bool>` **is_gutter_overwritable**\ (\ gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_gutter_overwritable>`
 
-Returns ``true`` if the gutter at the given index is overwritable. See :ref:`set_gutter_overwritable()<class_TextEdit_method_set_gutter_overwritable>`.
+如果给定索引处的边栏可覆盖，则返回 ``true``\ 。见 :ref:`set_gutter_overwritable()<class_TextEdit_method_set_gutter_overwritable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3304,7 +3304,7 @@ Returns ``true`` if the gutter at the given index is overwritable. See :ref:`set
 
 :ref:`bool<class_bool>` **is_in_mulitcaret_edit**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_is_in_mulitcaret_edit>`
 
-Returns ``true`` if a :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` has been called and :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>` has not yet been called.
+如果已调用 :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` 且尚未调用 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>` 则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3316,7 +3316,7 @@ Returns ``true`` if a :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_
 
 :ref:`bool<class_bool>` **is_line_gutter_clickable**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_gutter_clickable>`
 
-Returns ``true`` if the gutter at the given index on the given line is clickable. See :ref:`set_line_gutter_clickable()<class_TextEdit_method_set_line_gutter_clickable>`.
+如果给定索引处的边栏在给定的行处可点击，则返回 ``true``\ 。见 :ref:`set_line_gutter_clickable()<class_TextEdit_method_set_line_gutter_clickable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3328,7 +3328,7 @@ Returns ``true`` if the gutter at the given index on the given line is clickable
 
 :ref:`bool<class_bool>` **is_line_wrapped**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_is_line_wrapped>`
 
-Returns if the given line is wrapped.
+返回给定的行是否自动换行。
 
 .. rst-class:: classref-item-separator
 
@@ -3340,7 +3340,7 @@ Returns if the given line is wrapped.
 
 :ref:`bool<class_bool>` **is_menu_visible**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_is_menu_visible>`
 
-Returns ``true`` if the menu is visible. Use this instead of ``get_menu().visible`` to improve performance (so the creation of the menu is avoided). See :ref:`get_menu()<class_TextEdit_method_get_menu>`.
+如果菜单可见则返回 ``true``\ 。请使用这个方法来代替 ``get_menu().visible``\ ，可以提高性能（因为避免了菜单的创建）。见 :ref:`get_menu()<class_TextEdit_method_get_menu>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3352,7 +3352,7 @@ Returns ``true`` if the menu is visible. Use this instead of ``get_menu().visibl
 
 :ref:`bool<class_bool>` **is_mouse_over_selection**\ (\ edges\: :ref:`bool<class_bool>`, caret_index\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_TextEdit_method_is_mouse_over_selection>`
 
-Returns ``true`` if the mouse is over a selection. If ``edges`` is ``true``, the edges are considered part of the selection.
+如果鼠标位于选区之上则返回 ``true``\ 。如果 ``edges`` 为 ``true``\ ，则边界会被认为是选区的一部分。
 
 .. rst-class:: classref-item-separator
 
@@ -3364,7 +3364,7 @@ Returns ``true`` if the mouse is over a selection. If ``edges`` is ``true``, the
 
 :ref:`bool<class_bool>` **is_overtype_mode_enabled**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_is_overtype_mode_enabled>`
 
-Returns ``true`` if overtype mode is enabled. See :ref:`set_overtype_mode_enabled()<class_TextEdit_method_set_overtype_mode_enabled>`.
+如果启用了改写模式，则返回 ``true``\ 。见 :ref:`set_overtype_mode_enabled()<class_TextEdit_method_set_overtype_mode_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3376,7 +3376,7 @@ Returns ``true`` if overtype mode is enabled. See :ref:`set_overtype_mode_enable
 
 |void| **menu_option**\ (\ option\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_menu_option>`
 
-Executes a given action as defined in the :ref:`MenuItems<enum_TextEdit_MenuItems>` enum.
+执行 :ref:`MenuItems<enum_TextEdit_MenuItems>` 枚举中定义的给定操作。
 
 .. rst-class:: classref-item-separator
 
@@ -3388,7 +3388,7 @@ Executes a given action as defined in the :ref:`MenuItems<enum_TextEdit_MenuItem
 
 |void| **merge_gutters**\ (\ from_line\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_merge_gutters>`
 
-Merge the gutters from ``from_line`` into ``to_line``. Only overwritable gutters will be copied. See :ref:`set_gutter_overwritable()<class_TextEdit_method_set_gutter_overwritable>`.
+合并从 ``from_line`` 到 ``to_line`` 的边栏。只会复制可覆盖的边栏。见 :ref:`set_gutter_overwritable()<class_TextEdit_method_set_gutter_overwritable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3400,11 +3400,11 @@ Merge the gutters from ``from_line`` into ``to_line``. Only overwritable gutters
 
 |void| **merge_overlapping_carets**\ (\ ) :ref:`🔗<class_TextEdit_method_merge_overlapping_carets>`
 
-Merges any overlapping carets. Will favor the newest caret, or the caret with a selection.
+合并重叠的文本光标。会保留最新的光标，或者选区的光标。
 
-If :ref:`is_in_mulitcaret_edit()<class_TextEdit_method_is_in_mulitcaret_edit>` is ``true``, the merge will be queued to happen at the end of the multicaret edit. See :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` and :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`.
+如果 :ref:`is_in_mulitcaret_edit()<class_TextEdit_method_is_in_mulitcaret_edit>` 为 ``true``\ ，则合并将排队等待以在多光标编辑结束时发生。请参阅 :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` 和 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`\ 。
 
-\ **Note:** This is not called when a caret changes position but after certain actions, so it is possible to get into a state where carets overlap.
+\ **注意：**\ 光标改变位置后不会进行调用，而是在某些动作之后调用，所以进入光标重叠的状态是可能的。
 
 .. rst-class:: classref-item-separator
 
@@ -3416,9 +3416,9 @@ If :ref:`is_in_mulitcaret_edit()<class_TextEdit_method_is_in_mulitcaret_edit>` i
 
 :ref:`bool<class_bool>` **multicaret_edit_ignore_caret**\ (\ caret_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_multicaret_edit_ignore_caret>`
 
-Returns ``true`` if the given ``caret_index`` should be ignored as part of a multicaret edit. See :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` and :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`. Carets that should be ignored are ones that were part of removed text and will likely be merged at the end of the edit, or carets that were added during the edit.
+如果给定的 ``caret_index`` 应作为多光标编辑的一部分被忽略，则返回 ``true``\ 。请参阅 :ref:`begin_multicaret_edit()<class_TextEdit_method_begin_multicaret_edit>` 和 :ref:`end_multicaret_edit()<class_TextEdit_method_end_multicaret_edit>`\ 。应忽略的光标是已移除文本的一部分，可能会在编辑结束时合并，或在编辑期间添加的光标。
 
-It is recommended to ``continue`` within a loop iterating on multiple carets if a caret should be ignored.
+如果应忽略光标，建议在循环中 ``continue`` 迭代多个光标。
 
 .. rst-class:: classref-item-separator
 
@@ -3430,7 +3430,7 @@ It is recommended to ``continue`` within a loop iterating on multiple carets if 
 
 |void| **paste**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_paste>`
 
-Paste at the current location. Can be overridden with :ref:`_paste()<class_TextEdit_private_method__paste>`.
+粘贴到当前位置。可以用 :ref:`_paste()<class_TextEdit_private_method__paste>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -3442,7 +3442,7 @@ Paste at the current location. Can be overridden with :ref:`_paste()<class_TextE
 
 |void| **paste_primary_clipboard**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_paste_primary_clipboard>`
 
-Pastes the primary clipboard.
+粘贴主剪贴板。
 
 .. rst-class:: classref-item-separator
 
@@ -3454,7 +3454,7 @@ Pastes the primary clipboard.
 
 |void| **redo**\ (\ ) :ref:`🔗<class_TextEdit_method_redo>`
 
-Perform redo operation.
+执行重做操作。
 
 .. rst-class:: classref-item-separator
 
@@ -3466,9 +3466,9 @@ Perform redo operation.
 
 |void| **remove_caret**\ (\ caret\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_remove_caret>`
 
-Removes the given caret index.
+移除给定的文本光标索引。
 
-\ **Note:** This can result in adjustment of all other caret indices.
+\ **注意：**\ 可能导致所有其他光标索引的调整。
 
 .. rst-class:: classref-item-separator
 
@@ -3480,7 +3480,7 @@ Removes the given caret index.
 
 |void| **remove_gutter**\ (\ gutter\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_remove_gutter>`
 
-Removes the gutter at the given index.
+移除给定索引的边栏。
 
 .. rst-class:: classref-item-separator
 
@@ -3492,9 +3492,9 @@ Removes the gutter at the given index.
 
 |void| **remove_line_at**\ (\ line\: :ref:`int<class_int>`, move_carets_down\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_TextEdit_method_remove_line_at>`
 
-Removes the line of text at ``line``. Carets on this line will attempt to match their previous visual x position.
+移除 ``line`` 处的文本行。该行上的光标将尝试匹配其先前的可视 x 位置。
 
-If ``move_carets_down`` is ``true`` carets will move to the next line down, otherwise carets will move up.
+如果 ``move_carets_down`` 为 ``true``\ ，则光标将向下移动到下一行，否则光标将向上移动。
 
 .. rst-class:: classref-item-separator
 
@@ -3506,7 +3506,7 @@ If ``move_carets_down`` is ``true`` carets will move to the next line down, othe
 
 |void| **remove_secondary_carets**\ (\ ) :ref:`🔗<class_TextEdit_method_remove_secondary_carets>`
 
-Removes all additional carets.
+移除所有额外的光标。
 
 .. rst-class:: classref-item-separator
 
@@ -3518,7 +3518,7 @@ Removes all additional carets.
 
 |void| **remove_text**\ (\ from_line\: :ref:`int<class_int>`, from_column\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`, to_column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_remove_text>`
 
-Removes text between the given positions.
+移除给定位置之间的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -3530,9 +3530,9 @@ Removes text between the given positions.
 
 :ref:`Vector2i<class_Vector2i>` **search**\ (\ text\: :ref:`String<class_String>`, flags\: :ref:`int<class_int>`, from_line\: :ref:`int<class_int>`, from_column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_search>`
 
-Perform a search inside the text. Search flags can be specified in the :ref:`SearchFlags<enum_TextEdit_SearchFlags>` enum.
+在文本内部进行搜索。搜索标志可以在 :ref:`SearchFlags<enum_TextEdit_SearchFlags>` 枚举中指定。
 
-In the returned vector, ``x`` is the column, ``y`` is the line. If no results are found, both are equal to ``-1``.
+在返回的向量中，\ ``x`` 是列，\ ``y`` 是行。如果没有找到结果，则两者都等于 ``-1`` 。
 
 
 .. tabs::
@@ -3541,7 +3541,7 @@ In the returned vector, ``x`` is the column, ``y`` is the line. If no results ar
 
     var result = search("print", SEARCH_WHOLE_WORDS, 0, 0)
     if result.x != -1:
-        # Result found.
+        # 找到了结果。
         var line_number = result.y
         var column_number = result.x
 
@@ -3550,7 +3550,7 @@ In the returned vector, ``x`` is the column, ``y`` is the line. If no results ar
     Vector2I result = Search("print", (uint)TextEdit.SearchFlags.WholeWords, 0, 0);
     if (result.X != -1)
     {
-        // Result found.
+        // 找到了结果。
         int lineNumber = result.Y;
         int columnNumber = result.X;
     }
@@ -3567,11 +3567,11 @@ In the returned vector, ``x`` is the column, ``y`` is the line. If no results ar
 
 |void| **select**\ (\ origin_line\: :ref:`int<class_int>`, origin_column\: :ref:`int<class_int>`, caret_line\: :ref:`int<class_int>`, caret_column\: :ref:`int<class_int>`, caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_select>`
 
-Selects text from ``origin_line`` and ``origin_column`` to ``caret_line`` and ``caret_column`` for the given ``caret_index``. This moves the selection origin and the caret. If the positions are the same, the selection will be deselected.
+对于给定的 ``caret_index``\ ，从 ``origin_line`` 和 ``origin_column`` 到 ``caret_line`` 和 ``caret_column`` 选择文本。这会移动选区原点和光标。如果位置相同，则将取消选区。
 
-If :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>` is ``false``, no selection will occur.
+如果 :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>` 为 ``false``\ ，则不会出现选区。
 
-\ **Note:** If supporting multiple carets this will not check for any overlap. See :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`.
+\ **注意：**\ 如果支持多个光标，则不会检查是否有任何重叠。请参阅 :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3583,9 +3583,9 @@ If :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>` is ``fals
 
 |void| **select_all**\ (\ ) :ref:`🔗<class_TextEdit_method_select_all>`
 
-Select all the text.
+选择所有文本。
 
-If :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>` is ``false``, no selection will occur.
+如果 :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>` 为 ``false``\ ，则不会发生选择。
 
 .. rst-class:: classref-item-separator
 
@@ -3597,7 +3597,7 @@ If :ref:`selecting_enabled<class_TextEdit_property_selecting_enabled>` is ``fals
 
 |void| **select_word_under_caret**\ (\ caret_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TextEdit_method_select_word_under_caret>`
 
-Selects the word under the caret.
+选中光标下的单词。
 
 .. rst-class:: classref-item-separator
 
@@ -3609,11 +3609,11 @@ Selects the word under the caret.
 
 |void| **set_caret_column**\ (\ column\: :ref:`int<class_int>`, adjust_viewport\: :ref:`bool<class_bool>` = true, caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_caret_column>`
 
-Moves the caret to the specified ``column`` index.
+将光标移动到指定的 ``column`` 索引。
 
-If ``adjust_viewport`` is ``true``, the viewport will center at the caret position after the move occurs.
+如果 ``adjust_viewport`` 为 ``true``\ ，则视口将在移动发生后以光标位置为中心。
 
-\ **Note:** If supporting multiple carets this will not check for any overlap. See :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`.
+\ **注意：**\ 如果支持多个光标，则不会检查任何重叠。请参阅 :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3625,15 +3625,15 @@ If ``adjust_viewport`` is ``true``, the viewport will center at the caret positi
 
 |void| **set_caret_line**\ (\ line\: :ref:`int<class_int>`, adjust_viewport\: :ref:`bool<class_bool>` = true, can_be_hidden\: :ref:`bool<class_bool>` = true, wrap_index\: :ref:`int<class_int>` = 0, caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_caret_line>`
 
-Moves the caret to the specified ``line`` index. The caret column will be moved to the same visual position it was at the last time :ref:`set_caret_column()<class_TextEdit_method_set_caret_column>` was called, or clamped to the end of the line.
+将光标移动到指定的 ``line`` 索引。光标列将移动到上次调用 :ref:`set_caret_column()<class_TextEdit_method_set_caret_column>` 时的相同可视位置，或限制在行尾。
 
-If ``adjust_viewport`` is ``true``, the viewport will center at the caret position after the move occurs.
+如果 ``adjust_viewport`` 为 ``true``\ ，则移动后视口将以光标位置为中心。
 
-If ``can_be_hidden`` is ``true``, the specified ``line`` can be hidden.
+如果 ``can_be_hidden`` 为 ``true``\ ，则指定的 ``line`` 可以隐藏。
 
-If ``wrap_index`` is ``-1``, the caret column will be clamped to the ``line``'s length. If ``wrap_index`` is greater than ``-1``, the column will be moved to attempt to match the visual x position on the line's ``wrap_index`` to the position from the last time :ref:`set_caret_column()<class_TextEdit_method_set_caret_column>` was called.
+如果 ``wrap_index`` 为 ``-1``\ ，则光标列将限制在 ``line`` 的长度范围内。如果 ``wrap_index`` 大于 ``-1``\ ，则将移动该列以尝试将行的 ``wrap_index`` 上的可视 x 位置与上次调用 :ref:`set_caret_column()<class_TextEdit_method_set_caret_column>` 时的位置相匹配。
 
-\ **Note:** If supporting multiple carets this will not check for any overlap. See :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`.
+\ **注意：**\ 如果支持多个光标，则不会检查任何重叠。请参阅 :ref:`merge_overlapping_carets()<class_TextEdit_method_merge_overlapping_carets>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3645,7 +3645,7 @@ If ``wrap_index`` is ``-1``, the caret column will be clamped to the ``line``'s 
 
 |void| **set_gutter_clickable**\ (\ gutter\: :ref:`int<class_int>`, clickable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_clickable>`
 
-If ``true``, the mouse cursor will change to a pointing hand (:ref:`Control.CURSOR_POINTING_HAND<class_Control_constant_CURSOR_POINTING_HAND>`) when hovering over the gutter at the given index. See :ref:`is_gutter_clickable()<class_TextEdit_method_is_gutter_clickable>` and :ref:`set_line_gutter_clickable()<class_TextEdit_method_set_line_gutter_clickable>`.
+如果为 ``true``\ ，则鼠标悬停在给定索引的边栏上时，光标会变为指点手的形状（\ :ref:`Control.CURSOR_POINTING_HAND<class_Control_constant_CURSOR_POINTING_HAND>`\ ）。见 :ref:`is_gutter_clickable()<class_TextEdit_method_is_gutter_clickable>` 和 :ref:`set_line_gutter_clickable()<class_TextEdit_method_set_line_gutter_clickable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3657,7 +3657,7 @@ If ``true``, the mouse cursor will change to a pointing hand (:ref:`Control.CURS
 
 |void| **set_gutter_custom_draw**\ (\ column\: :ref:`int<class_int>`, draw_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_custom_draw>`
 
-Set a custom draw callback for the gutter at the given index. ``draw_callback`` must take the following arguments: A line index :ref:`int<class_int>`, a gutter index :ref:`int<class_int>`, and an area :ref:`Rect2<class_Rect2>`. This callback only works when the gutter type is :ref:`GUTTER_TYPE_CUSTOM<class_TextEdit_constant_GUTTER_TYPE_CUSTOM>` (see :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
+为给定索引的边栏设置自定义的绘制回调。\ ``draw_callback`` 必须接受以下参数：行索引 :ref:`int<class_int>`\ 、边栏索引 :ref:`int<class_int>`\ 、区域 :ref:`Rect2<class_Rect2>`\ 。仅当边栏类型为 :ref:`GUTTER_TYPE_CUSTOM<class_TextEdit_constant_GUTTER_TYPE_CUSTOM>` 时回调才有效（见 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -3669,7 +3669,7 @@ Set a custom draw callback for the gutter at the given index. ``draw_callback`` 
 
 |void| **set_gutter_draw**\ (\ gutter\: :ref:`int<class_int>`, draw\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_draw>`
 
-If ``true``, the gutter at the given index is drawn. The gutter type (:ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`) determines how it is drawn. See :ref:`is_gutter_drawn()<class_TextEdit_method_is_gutter_drawn>`.
+如果为 ``true``\ ，则会绘制给定索引处的边栏。绘制方法由边栏类型（\ :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`\ ）决定。见 :ref:`is_gutter_drawn()<class_TextEdit_method_is_gutter_drawn>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3681,7 +3681,7 @@ If ``true``, the gutter at the given index is drawn. The gutter type (:ref:`set_
 
 |void| **set_gutter_name**\ (\ gutter\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_name>`
 
-Sets the name of the gutter at the given index.
+设置给定索引处边栏的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -3693,7 +3693,7 @@ Sets the name of the gutter at the given index.
 
 |void| **set_gutter_overwritable**\ (\ gutter\: :ref:`int<class_int>`, overwritable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_overwritable>`
 
-If ``true``, the line data of the gutter at the given index can be overridden when using :ref:`merge_gutters()<class_TextEdit_method_merge_gutters>`. See :ref:`is_gutter_overwritable()<class_TextEdit_method_is_gutter_overwritable>`.
+如果为 ``true``\ ，则使用 :ref:`merge_gutters()<class_TextEdit_method_merge_gutters>` 时可以覆盖边栏在给定索引处的行数据。见 :ref:`is_gutter_overwritable()<class_TextEdit_method_is_gutter_overwritable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3705,7 +3705,7 @@ If ``true``, the line data of the gutter at the given index can be overridden wh
 
 |void| **set_gutter_type**\ (\ gutter\: :ref:`int<class_int>`, type\: :ref:`GutterType<enum_TextEdit_GutterType>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_type>`
 
-Sets the type of gutter at the given index. Gutters can contain icons, text, or custom visuals.
+设置给定索引处的边栏的类型。边栏可以包含图标、文本或自定义视觉效果。
 
 .. rst-class:: classref-item-separator
 
@@ -3717,7 +3717,7 @@ Sets the type of gutter at the given index. Gutters can contain icons, text, or 
 
 |void| **set_gutter_width**\ (\ gutter\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_set_gutter_width>`
 
-Set the width of the gutter at the given index.
+设置给定索引处边栏的宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -3729,9 +3729,9 @@ Set the width of the gutter at the given index.
 
 |void| **set_line**\ (\ line\: :ref:`int<class_int>`, new_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_line>`
 
-Sets the text for a specific ``line``.
+设置第 ``line`` 行的文本。
 
-Carets on the line will attempt to keep their visual x position.
+位于该行的光标会尝试保持视觉上的 X 位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3743,7 +3743,7 @@ Carets on the line will attempt to keep their visual x position.
 
 |void| **set_line_as_center_visible**\ (\ line\: :ref:`int<class_int>`, wrap_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_line_as_center_visible>`
 
-Positions the ``wrap_index`` of ``line`` at the center of the viewport.
+将 ``line`` 的 ``wrap_index`` 放置在视口的中心。
 
 .. rst-class:: classref-item-separator
 
@@ -3755,7 +3755,7 @@ Positions the ``wrap_index`` of ``line`` at the center of the viewport.
 
 |void| **set_line_as_first_visible**\ (\ line\: :ref:`int<class_int>`, wrap_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_line_as_first_visible>`
 
-Positions the ``wrap_index`` of ``line`` at the top of the viewport.
+将 ``line`` 的 ``wrap_index`` 放置在视口的顶部。
 
 .. rst-class:: classref-item-separator
 
@@ -3767,7 +3767,7 @@ Positions the ``wrap_index`` of ``line`` at the top of the viewport.
 
 |void| **set_line_as_last_visible**\ (\ line\: :ref:`int<class_int>`, wrap_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_line_as_last_visible>`
 
-Positions the ``wrap_index`` of ``line`` at the bottom of the viewport.
+将 ``line`` 的 ``wrap_index`` 放置在视口的底部。
 
 .. rst-class:: classref-item-separator
 
@@ -3779,7 +3779,7 @@ Positions the ``wrap_index`` of ``line`` at the bottom of the viewport.
 
 |void| **set_line_background_color**\ (\ line\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_TextEdit_method_set_line_background_color>`
 
-Sets the custom background color of the given line. If transparent, this color is applied on top of the default background color (See :ref:`background_color<class_TextEdit_theme_color_background_color>`). If set to ``Color(0, 0, 0, 0)``, no additional color is applied.
+设置给定行的自定义背景色。如果半透明，则该颜色会应用在默认背景色之上（见 :ref:`background_color<class_TextEdit_theme_color_background_color>`\ ）。如果设为 ``Color(0, 0, 0, 0)``\ ，则不会应用额外的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -3791,7 +3791,7 @@ Sets the custom background color of the given line. If transparent, this color i
 
 |void| **set_line_gutter_clickable**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`, clickable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextEdit_method_set_line_gutter_clickable>`
 
-If ``clickable`` is ``true``, makes the ``gutter`` on the given ``line`` clickable. This is like :ref:`set_gutter_clickable()<class_TextEdit_method_set_gutter_clickable>`, but for a single line. If :ref:`is_gutter_clickable()<class_TextEdit_method_is_gutter_clickable>` is ``true``, this will not have any effect. See :ref:`is_line_gutter_clickable()<class_TextEdit_method_is_line_gutter_clickable>` and :ref:`gutter_clicked<class_TextEdit_signal_gutter_clicked>`.
+如果 ``clickable`` 为 ``true``\ ，则 ``line`` 行的 ``gutter`` 边栏可点击。类似于 :ref:`set_gutter_clickable()<class_TextEdit_method_set_gutter_clickable>`\ ，但只作用于单行。如果 :ref:`is_gutter_clickable()<class_TextEdit_method_is_gutter_clickable>` 为 ``true`` 则无效。见 :ref:`is_line_gutter_clickable()<class_TextEdit_method_is_line_gutter_clickable>` 和 :ref:`gutter_clicked<class_TextEdit_signal_gutter_clicked>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3803,7 +3803,7 @@ If ``clickable`` is ``true``, makes the ``gutter`` on the given ``line`` clickab
 
 |void| **set_line_gutter_icon**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_TextEdit_method_set_line_gutter_icon>`
 
-Sets the icon for ``gutter`` on ``line`` to ``icon``. This only works when the gutter type is :ref:`GUTTER_TYPE_ICON<class_TextEdit_constant_GUTTER_TYPE_ICON>` (see :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
+将 ``line`` 上的 ``gutter`` 的图标设置为 ``icon``\ 。仅当边栏类型为 :ref:`GUTTER_TYPE_ICON<class_TextEdit_constant_GUTTER_TYPE_ICON>` 时才有效（请参阅 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -3815,7 +3815,7 @@ Sets the icon for ``gutter`` on ``line`` to ``icon``. This only works when the g
 
 |void| **set_line_gutter_item_color**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_TextEdit_method_set_line_gutter_item_color>`
 
-Sets the color for ``gutter`` on ``line`` to ``color``.
+将边栏 ``gutter`` 在第 ``line`` 行的颜色设置为 ``color``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3827,7 +3827,7 @@ Sets the color for ``gutter`` on ``line`` to ``color``.
 
 |void| **set_line_gutter_metadata**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`, metadata\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_TextEdit_method_set_line_gutter_metadata>`
 
-Sets the metadata for ``gutter`` on ``line`` to ``metadata``.
+将边栏 ``gutter`` 在第 ``line`` 行的元数据设置为 ``metadata``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3839,7 +3839,7 @@ Sets the metadata for ``gutter`` on ``line`` to ``metadata``.
 
 |void| **set_line_gutter_text**\ (\ line\: :ref:`int<class_int>`, gutter\: :ref:`int<class_int>`, text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_line_gutter_text>`
 
-Sets the text for ``gutter`` on ``line`` to ``text``. This only works when the gutter type is :ref:`GUTTER_TYPE_STRING<class_TextEdit_constant_GUTTER_TYPE_STRING>` (see :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`).
+将 ``line`` 上的 ``gutter`` 的文本设置为 ``text``\ 。仅当边栏类型为 :ref:`GUTTER_TYPE_STRING<class_TextEdit_constant_GUTTER_TYPE_STRING>` 时才有效（请参阅 :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -3851,7 +3851,7 @@ Sets the text for ``gutter`` on ``line`` to ``text``. This only works when the g
 
 |void| **set_overtype_mode_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TextEdit_method_set_overtype_mode_enabled>`
 
-If ``true``, enables overtype mode. In this mode, typing overrides existing text instead of inserting text. The :ref:`ProjectSettings.input/ui_text_toggle_insert_mode<class_ProjectSettings_property_input/ui_text_toggle_insert_mode>` action toggles overtype mode. See :ref:`is_overtype_mode_enabled()<class_TextEdit_method_is_overtype_mode_enabled>`.
+如果为 ``true``\ ，则启用改写模式。在改写模式下，打字会覆盖已有文本而不是插入文本。\ :ref:`ProjectSettings.input/ui_text_toggle_insert_mode<class_ProjectSettings_property_input/ui_text_toggle_insert_mode>` 动作会开关改写模式。见 :ref:`is_overtype_mode_enabled()<class_TextEdit_method_is_overtype_mode_enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3863,7 +3863,7 @@ If ``true``, enables overtype mode. In this mode, typing overrides existing text
 
 |void| **set_search_flags**\ (\ flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_set_search_flags>`
 
-Sets the search ``flags``. This is used with :ref:`set_search_text()<class_TextEdit_method_set_search_text>` to highlight occurrences of the searched text. Search flags can be specified from the :ref:`SearchFlags<enum_TextEdit_SearchFlags>` enum.
+设置搜索标志 ``flags``\ 。配合 :ref:`set_search_text()<class_TextEdit_method_set_search_text>` 使用可以高亮被搜索的文本。搜索标志可以使用 :ref:`SearchFlags<enum_TextEdit_SearchFlags>` 枚举指定。
 
 .. rst-class:: classref-item-separator
 
@@ -3875,7 +3875,7 @@ Sets the search ``flags``. This is used with :ref:`set_search_text()<class_TextE
 
 |void| **set_search_text**\ (\ search_text\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TextEdit_method_set_search_text>`
 
-Sets the search text. See :ref:`set_search_flags()<class_TextEdit_method_set_search_flags>`.
+设置搜索文本。见 :ref:`set_search_flags()<class_TextEdit_method_set_search_flags>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3887,7 +3887,7 @@ Sets the search text. See :ref:`set_search_flags()<class_TextEdit_method_set_sea
 
 |void| **set_selection_mode**\ (\ mode\: :ref:`SelectionMode<enum_TextEdit_SelectionMode>`\ ) :ref:`🔗<class_TextEdit_method_set_selection_mode>`
 
-Sets the current selection mode.
+设置当前的选区模式。
 
 .. rst-class:: classref-item-separator
 
@@ -3899,7 +3899,7 @@ Sets the current selection mode.
 
 |void| **set_selection_origin_column**\ (\ column\: :ref:`int<class_int>`, caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_selection_origin_column>`
 
-Sets the selection origin column to the ``column`` for the given ``caret_index``. If the selection origin is moved to the caret position, the selection will deselect.
+将给定 ``caret_index`` 的选区原点列设置为 ``column``\ 。如果选区原点移动到光标位置，则选区将取消。
 
 .. rst-class:: classref-item-separator
 
@@ -3911,11 +3911,11 @@ Sets the selection origin column to the ``column`` for the given ``caret_index``
 
 |void| **set_selection_origin_line**\ (\ line\: :ref:`int<class_int>`, can_be_hidden\: :ref:`bool<class_bool>` = true, wrap_index\: :ref:`int<class_int>` = -1, caret_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_TextEdit_method_set_selection_origin_line>`
 
-Sets the selection origin line to the ``line`` for the given ``caret_index``. If the selection origin is moved to the caret position, the selection will deselect.
+为给定 ``caret_index`` 将选区原点行设置为 ``line``\ 。如果选区原点移动到光标位置，则该选区将取消选择。
 
-If ``can_be_hidden`` is ``false``, The line will be set to the nearest unhidden line below or above.
+如果 ``can_be_hidden`` 为 ``false``\ ，则该行将设置为下方或上方最近的未隐藏行。
 
-If ``wrap_index`` is ``-1``, the selection origin column will be clamped to the ``line``'s length. If ``wrap_index`` is greater than ``-1``, the column will be moved to attempt to match the visual x position on the line's ``wrap_index`` to the position from the last time :ref:`set_selection_origin_column()<class_TextEdit_method_set_selection_origin_column>` or :ref:`select()<class_TextEdit_method_select>` was called.
+如果 ``wrap_index`` 为 ``-1``\ ，则选区原点列将被限制为 ``line`` 的长度。如果 ``wrap_index`` 大于 ``-1``\ ，则将移动该列以尝试将行的 ``wrap_index`` 上的可视 x 位置与上次调用 :ref:`set_selection_origin_column()<class_TextEdit_method_set_selection_origin_column>` 或 :ref:`select()<class_TextEdit_method_select>` 时的位置相匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -3927,7 +3927,7 @@ If ``wrap_index`` is ``-1``, the selection origin column will be clamped to the 
 
 |void| **set_tab_size**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_set_tab_size>`
 
-Sets the tab size for the **TextEdit** to use.
+设置该 **TextEdit** 使用的制表符大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3939,7 +3939,7 @@ Sets the tab size for the **TextEdit** to use.
 
 |void| **set_tooltip_request_func**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_TextEdit_method_set_tooltip_request_func>`
 
-Provide custom tooltip text. The callback method must take the following args: ``hovered_word: String``.
+提供自定义工具提示文本。该回调方法必须接受以下参数：\ ``hovered_word: String``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3951,7 +3951,7 @@ Provide custom tooltip text. The callback method must take the following args: `
 
 |void| **skip_selection_for_next_occurrence**\ (\ ) :ref:`🔗<class_TextEdit_method_skip_selection_for_next_occurrence>`
 
-Moves a selection and a caret for the next occurrence of the current selection. If there is no active selection, moves to the next occurrence of the word under caret.
+将选区和光标移动到当前选择的下一个匹配项。如果没有活动的选区，则移动到光标下的单词的下一个匹配项。
 
 .. rst-class:: classref-item-separator
 
@@ -3963,9 +3963,9 @@ Moves a selection and a caret for the next occurrence of the current selection. 
 
 |void| **start_action**\ (\ action\: :ref:`EditAction<enum_TextEdit_EditAction>`\ ) :ref:`🔗<class_TextEdit_method_start_action>`
 
-Starts an action, will end the current action if ``action`` is different.
+开始一个动作，如果 ``action`` 与当前动作不同，则会终止当前动作。
 
-An action will also end after a call to :ref:`end_action()<class_TextEdit_method_end_action>`, after :ref:`ProjectSettings.gui/timers/text_edit_idle_detect_sec<class_ProjectSettings_property_gui/timers/text_edit_idle_detect_sec>` is triggered or a new undoable step outside the :ref:`start_action()<class_TextEdit_method_start_action>` and :ref:`end_action()<class_TextEdit_method_end_action>` calls.
+调用 :ref:`end_action()<class_TextEdit_method_end_action>`\ 、触发 :ref:`ProjectSettings.gui/timers/text_edit_idle_detect_sec<class_ProjectSettings_property_gui/timers/text_edit_idle_detect_sec>` 或者在 :ref:`start_action()<class_TextEdit_method_start_action>` 和 :ref:`end_action()<class_TextEdit_method_end_action>` 之外调用可撤销的操作都会导致动作的终止。
 
 .. rst-class:: classref-item-separator
 
@@ -3977,7 +3977,7 @@ An action will also end after a call to :ref:`end_action()<class_TextEdit_method
 
 |void| **swap_lines**\ (\ from_line\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_method_swap_lines>`
 
-Swaps the two lines. Carets will be swapped with the lines.
+交换两行。光标将与行交换。
 
 .. rst-class:: classref-item-separator
 
@@ -3989,7 +3989,7 @@ Swaps the two lines. Carets will be swapped with the lines.
 
 |void| **tag_saved_version**\ (\ ) :ref:`🔗<class_TextEdit_method_tag_saved_version>`
 
-Tag the current version as saved.
+将当前版本标记为已保存。
 
 .. rst-class:: classref-item-separator
 
@@ -4001,7 +4001,7 @@ Tag the current version as saved.
 
 |void| **undo**\ (\ ) :ref:`🔗<class_TextEdit_method_undo>`
 
-Perform undo operation.
+执行撤销操作。
 
 .. rst-class:: classref-section-separator
 
@@ -4009,8 +4009,8 @@ Perform undo operation.
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_TextEdit_theme_color_background_color:
 
@@ -4018,7 +4018,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **background_color** = ``Color(0, 0, 0, 0)`` :ref:`🔗<class_TextEdit_theme_color_background_color>`
 
-Sets the background :ref:`Color<class_Color>` of this **TextEdit**.
+设置该 **TextEdit** 的背景 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4030,7 +4030,7 @@ Sets the background :ref:`Color<class_Color>` of this **TextEdit**.
 
 :ref:`Color<class_Color>` **caret_background_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_TextEdit_theme_color_caret_background_color>`
 
-:ref:`Color<class_Color>` of the text behind the caret when using a block caret.
+使用块状光标时，光标下文本的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4042,7 +4042,7 @@ Sets the background :ref:`Color<class_Color>` of this **TextEdit**.
 
 :ref:`Color<class_Color>` **caret_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_TextEdit_theme_color_caret_color>`
 
-:ref:`Color<class_Color>` of the caret. This can be set to a fully transparent color to hide the caret entirely.
+光标的 :ref:`Color<class_Color>`\ 。可以设为完全透明的颜色，从而完全隐藏光标。
 
 .. rst-class:: classref-item-separator
 
@@ -4054,7 +4054,7 @@ Sets the background :ref:`Color<class_Color>` of this **TextEdit**.
 
 :ref:`Color<class_Color>` **current_line_color** = ``Color(0.25, 0.25, 0.26, 0.8)`` :ref:`🔗<class_TextEdit_theme_color_current_line_color>`
 
-Background :ref:`Color<class_Color>` of the line containing the caret.
+光标所在行的背景 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4066,7 +4066,7 @@ Background :ref:`Color<class_Color>` of the line containing the caret.
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_TextEdit_theme_color_font_color>`
 
-Sets the font :ref:`Color<class_Color>`.
+设置字体颜色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4078,7 +4078,7 @@ Sets the font :ref:`Color<class_Color>`.
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_TextEdit_theme_color_font_outline_color>`
 
-The tint of text outline of the **TextEdit**.
+该 **TextEdit** 的文本轮廓的色调。
 
 .. rst-class:: classref-item-separator
 
@@ -4090,7 +4090,7 @@ The tint of text outline of the **TextEdit**.
 
 :ref:`Color<class_Color>` **font_placeholder_color** = ``Color(0.875, 0.875, 0.875, 0.6)`` :ref:`🔗<class_TextEdit_theme_color_font_placeholder_color>`
 
-Font color for :ref:`placeholder_text<class_TextEdit_property_placeholder_text>`.
+:ref:`placeholder_text<class_TextEdit_property_placeholder_text>` 的字体颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -4102,7 +4102,7 @@ Font color for :ref:`placeholder_text<class_TextEdit_property_placeholder_text>`
 
 :ref:`Color<class_Color>` **font_readonly_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_TextEdit_theme_color_font_readonly_color>`
 
-Sets the font :ref:`Color<class_Color>` when :ref:`editable<class_TextEdit_property_editable>` is disabled.
+设置禁用 :ref:`editable<class_TextEdit_property_editable>` 时的字体 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4114,7 +4114,7 @@ Sets the font :ref:`Color<class_Color>` when :ref:`editable<class_TextEdit_prope
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(0, 0, 0, 0)`` :ref:`🔗<class_TextEdit_theme_color_font_selected_color>`
 
-Sets the :ref:`Color<class_Color>` of the selected text. If equal to ``Color(0, 0, 0, 0)``, it will be ignored.
+设置所选文本的 :ref:`Color<class_Color>`\ 。如果等于 ``Color(0, 0, 0, 0)``\ ，则该属性将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -4126,7 +4126,7 @@ Sets the :ref:`Color<class_Color>` of the selected text. If equal to ``Color(0, 
 
 :ref:`Color<class_Color>` **search_result_border_color** = ``Color(0.3, 0.3, 0.3, 0.4)`` :ref:`🔗<class_TextEdit_theme_color_search_result_border_color>`
 
-:ref:`Color<class_Color>` of the border around text that matches the search query.
+与搜索查询匹配的文本周围的边框的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4138,7 +4138,7 @@ Sets the :ref:`Color<class_Color>` of the selected text. If equal to ``Color(0, 
 
 :ref:`Color<class_Color>` **search_result_color** = ``Color(0.3, 0.3, 0.3, 1)`` :ref:`🔗<class_TextEdit_theme_color_search_result_color>`
 
-:ref:`Color<class_Color>` behind the text that matches the search query.
+与搜索查询匹配的文本背景的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4150,7 +4150,7 @@ Sets the :ref:`Color<class_Color>` of the selected text. If equal to ``Color(0, 
 
 :ref:`Color<class_Color>` **selection_color** = ``Color(0.5, 0.5, 0.5, 1)`` :ref:`🔗<class_TextEdit_theme_color_selection_color>`
 
-Sets the highlight :ref:`Color<class_Color>` of text selections.
+设置文本选择的高亮 :ref:`Color<class_Color>` 颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -4162,7 +4162,7 @@ Sets the highlight :ref:`Color<class_Color>` of text selections.
 
 :ref:`Color<class_Color>` **word_highlighted_color** = ``Color(0.5, 0.5, 0.5, 0.25)`` :ref:`🔗<class_TextEdit_theme_color_word_highlighted_color>`
 
-Sets the highlight :ref:`Color<class_Color>` of multiple occurrences. :ref:`highlight_all_occurrences<class_TextEdit_property_highlight_all_occurrences>` has to be enabled.
+设置多次出现的高亮 :ref:`Color<class_Color>` 颜色。须启用 :ref:`highlight_all_occurrences<class_TextEdit_property_highlight_all_occurrences>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -4174,7 +4174,7 @@ Sets the highlight :ref:`Color<class_Color>` of multiple occurrences. :ref:`high
 
 :ref:`int<class_int>` **caret_width** = ``1`` :ref:`🔗<class_TextEdit_theme_constant_caret_width>`
 
-The caret's width in pixels. Greater values can be used to improve accessibility by ensuring the caret is easily visible, or to ensure consistency with a large font size. If set to ``0`` or lower, the caret width is automatically set to 1 pixel and multiplied by the display scaling factor.
+文本光标的像素宽度。较大的值能够确保光标易于看到，确保光标与较大的字体保持一致，从而提高可访问性。如果设置为 ``0`` 或更低，光标的宽度将被自动设置为 1 像素，并乘以显示缩放系数。
 
 .. rst-class:: classref-item-separator
 
@@ -4186,7 +4186,7 @@ The caret's width in pixels. Greater values can be used to improve accessibility
 
 :ref:`int<class_int>` **line_spacing** = ``4`` :ref:`🔗<class_TextEdit_theme_constant_line_spacing>`
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+行与行之间的额外纵向留白（单位为像素），留白会被添加到行的降部。该值可以为负数。
 
 .. rst-class:: classref-item-separator
 
@@ -4198,9 +4198,9 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_TextEdit_theme_constant_outline_size>`
 
-The size of the text outline.
+文字轮廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_TextEdit_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用启用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字体，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为 :ref:`outline_size<class_TextEdit_theme_constant_outline_size>` 的\ *两倍*\ ，轮廓渲染才能看起来正确。否则，轮廓可能会比预期的更早被切断。
 
 .. rst-class:: classref-item-separator
 
@@ -4224,7 +4224,7 @@ Sets an additional margin for line wrapping width.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_TextEdit_theme_font_font>`
 
-Sets the default :ref:`Font<class_Font>`.
+设置默认的字体 :ref:`Font<class_Font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4236,7 +4236,7 @@ Sets the default :ref:`Font<class_Font>`.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_TextEdit_theme_font_size_font_size>`
 
-Sets default font size.
+设置默认的字体大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4248,7 +4248,7 @@ Sets default font size.
 
 :ref:`Texture2D<class_Texture2D>` **space** :ref:`🔗<class_TextEdit_theme_icon_space>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` for space text characters.
+为空格文本字符，设置一个自定义 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4260,7 +4260,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` for space text characters.
 
 :ref:`Texture2D<class_Texture2D>` **tab** :ref:`🔗<class_TextEdit_theme_icon_tab>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` for tab text characters.
+为制表符文本字符，设置一个自定义 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4272,7 +4272,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` for tab text characters.
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_TextEdit_theme_style_focus>`
 
-Sets the :ref:`StyleBox<class_StyleBox>` when in focus. The :ref:`focus<class_TextEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+设置当获得焦点时的 :ref:`StyleBox<class_StyleBox>`\ 。该 :ref:`focus<class_TextEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，因此应使用部分透明的 :ref:`StyleBox<class_StyleBox>` 以确保基础 :ref:`StyleBox<class_StyleBox>` 保持可见。表示轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 非常适合此目的。要禁用焦点视觉效果，请指定一个 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用焦点视觉效果会破坏键盘 / 控制器导航的可用性，出于可访问性原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -4284,7 +4284,7 @@ Sets the :ref:`StyleBox<class_StyleBox>` when in focus. The :ref:`focus<class_Te
 
 :ref:`StyleBox<class_StyleBox>` **normal** :ref:`🔗<class_TextEdit_theme_style_normal>`
 
-Sets the :ref:`StyleBox<class_StyleBox>` of this **TextEdit**.
+设置这个 **TextEdit** 的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4296,14 +4296,14 @@ Sets the :ref:`StyleBox<class_StyleBox>` of this **TextEdit**.
 
 :ref:`StyleBox<class_StyleBox>` **read_only** :ref:`🔗<class_TextEdit_theme_style_read_only>`
 
-Sets the :ref:`StyleBox<class_StyleBox>` of this **TextEdit** when :ref:`editable<class_TextEdit_property_editable>` is disabled.
+设置这个 **TextEdit** 在禁用 :ref:`editable<class_TextEdit_property_editable>` 时的 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

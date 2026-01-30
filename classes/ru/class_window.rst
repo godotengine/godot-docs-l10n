@@ -746,7 +746,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
+Содержимое не будет масштабироваться в соответствии с размером **Window** (:ref:`content_scale_size<class_Window_property_content_scale_size>` игнорируется).
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -1157,11 +1157,11 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_content_scale_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_content_scale_size**\ (\ )
 
-The content's base size in "virtual" pixels. Not to be confused with :ref:`size<class_Window_property_size>`, which sets the actual window's physical size in pixels. If set to a value greater than ``0`` and :ref:`content_scale_mode<class_Window_property_content_scale_mode>` is set to a value other than :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, the **Window**'s content will be scaled when the window is resized to a different size. Higher values will make the content appear *smaller*, as it will be able to fit more of the project in view. On the root **Window**, this is set to match :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` by default.
+Базовый размер содержимого в «виртуальных» пикселях. Не следует путать с параметром :ref:`size<class_Window_property_size>`, который задает фактический физический размер окна в пикселях. Если значение больше ``0``, а параметр :ref:`content_scale_mode<class_Window_property_content_scale_mode>` имеет значение, отличное от :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, содержимое **Window** будет масштабироваться при изменении размера окна. Более высокие значения сделают содержимое *меньше*, так как оно сможет вместить большую часть проекта в поле зрения. Для корневого **Window** это значение по умолчанию соответствует параметрам :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` и :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
 
-For example, when using :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` and :ref:`content_scale_size<class_Window_property_content_scale_size>` set to ``Vector2i(1280, 720)``, using a window size of ``2560×1440`` will make 2D elements appear at double their original size, as the content is scaled by a factor of ``2.0`` (``2560.0 / 1280.0 = 2.0``, ``1440.0 / 720.0 = 2.0``).
+Например, при использовании :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` и :ref:`content_scale_size<class_Window_property_content_scale_size>`, установленного на ``Vector2i(1280, 720)``, использование размера окна ``2560×1440`` приведет к тому, что 2D-элементы будут отображаться вдвое больше исходного размера, поскольку содержимое масштабируется в 2,0 раза (``2560,0 / 1280,0 = 2,0``, ``1440,0 / 720,0 = 2,0``).
 
-See `the Base size section of the Multiple resolutions documentation <../tutorials/rendering/multiple_resolutions.html#base-size>`__ for details.
+Подробнее см. `раздел «Базовый размер» документации по множественным разрешениям <../tutorials/rendering/multiple_resolutions.html#base-size>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1593,7 +1593,7 @@ See `the Base size section of the Multiple resolutions documentation <../tutoria
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-The window's size in pixels. See also :ref:`content_scale_size<class_Window_property_content_scale_size>`, which doesn't set the window's physical size but affects how scaling works relative to the current :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
+Размер окна в пикселях. См. также :ref:`content_scale_size<class_Window_property_content_scale_size>`, который не задает физический размер окна, но влияет на то, как работает масштабирование относительно текущего :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
 
 .. rst-class:: classref-item-separator
 

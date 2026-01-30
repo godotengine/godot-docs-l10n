@@ -5,23 +5,23 @@
 LinkButton
 ==========
 
-**Inherits:** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A button that represents a link.
+代表連結的按鈕。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A button that represents a link. This type of button is primarily used for interactions that cause a context change (like linking to a web page).
+代表連結的按鈕。這種按鈕主要用於與按鈕的互動引起本文變化時（如連結到網頁）。
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另見 :ref:`BaseButton<class_BaseButton>`\ ，它包含了該節點相關的常用屬性和方法。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_LinkButton_UnderlineMode:
 
@@ -105,7 +105,7 @@ enum **UnderlineMode**: :ref:`🔗<enum_LinkButton_UnderlineMode>`
 
 :ref:`UnderlineMode<enum_LinkButton_UnderlineMode>` **UNDERLINE_MODE_ALWAYS** = ``0``
 
-The LinkButton will always show an underline at the bottom of its text.
+LinkButton 將始終在其文字底部顯示底線。
 
 .. _class_LinkButton_constant_UNDERLINE_MODE_ON_HOVER:
 
@@ -113,7 +113,7 @@ The LinkButton will always show an underline at the bottom of its text.
 
 :ref:`UnderlineMode<enum_LinkButton_UnderlineMode>` **UNDERLINE_MODE_ON_HOVER** = ``1``
 
-The LinkButton will show an underline at the bottom of its text when the mouse cursor is over it.
+LinkButton 將在滑鼠游標懸停時，在文字底部顯示底線。
 
 .. _class_LinkButton_constant_UNDERLINE_MODE_NEVER:
 
@@ -121,7 +121,7 @@ The LinkButton will show an underline at the bottom of its text when the mouse c
 
 :ref:`UnderlineMode<enum_LinkButton_UnderlineMode>` **UNDERLINE_MODE_NEVER** = ``2``
 
-The LinkButton will never show an underline at the bottom of its text.
+LinkButton 永遠不會在其文字底部顯示底線。
 
 .. rst-class:: classref-section-separator
 
@@ -129,8 +129,8 @@ The LinkButton will never show an underline at the bottom of its text.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_LinkButton_property_ellipsis_char:
 
@@ -177,7 +177,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_structured_text_bidi_override**\ (\ value\: :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>`\ )
 - :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **get_structured_text_bidi_override**\ (\ )
 
-Set BiDi algorithm override for the structured text.
+為結構化文字設定 BiDi 演算法覆蓋。
 
 .. rst-class:: classref-item-separator
 
@@ -194,7 +194,7 @@ Set BiDi algorithm override for the structured text.
 - |void| **set_structured_text_bidi_override_options**\ (\ value\: :ref:`Array<class_Array>`\ )
 - :ref:`Array<class_Array>` **get_structured_text_bidi_override_options**\ (\ )
 
-Set additional options for BiDi override.
+設定 BiDi 覆蓋的附加選項。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Set additional options for BiDi override.
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-The button's text that will be displayed inside the button's area.
+該按鈕的文字，將顯示在按鈕的區域內。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ The button's text that will be displayed inside the button's area.
 - |void| **set_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ )
 
-Base text writing direction.
+基礎文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -304,8 +304,8 @@ The `URI <https://en.wikipedia.org/wiki/Uniform_Resource_Identifier>`__ for this
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_LinkButton_theme_color_font_color:
 
@@ -313,7 +313,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_color>`
 
-Default text :ref:`Color<class_Color>` of the **LinkButton**.
+**LinkButton** 預設的字形顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -325,7 +325,7 @@ Default text :ref:`Color<class_Color>` of the **LinkButton**.
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_disabled_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is disabled.
+該 :ref:`Button<class_Button>` 處於禁用狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is disabled.
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_focus_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is focused. Only replaces the normal text color of the button. Disabled, hovered, and pressed states take precedence over this color.
+當 **LinkButton** 獲得焦點時使用的文字 :ref:`Color<class_Color>`\ 。只替換按鈕的正常文字顏色。禁用、懸停和按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is focused. Only rep
 
 :ref:`Color<class_Color>` **font_hover_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_hover_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is being hovered.
+當 **LinkButton** 被懸停時使用的文字顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is being hovered.
 
 :ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_hover_pressed_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is being hovered and pressed.
+該 :ref:`Button<class_Button>` 處於懸停並按下狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is being hovered and
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_outline_color>`
 
-The tint of text outline of the **LinkButton**.
+**LinkButton** 的文字輪廓的色調。
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ The tint of text outline of the **LinkButton**.
 
 :ref:`Color<class_Color>` **font_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_LinkButton_theme_color_font_pressed_color>`
 
-Text :ref:`Color<class_Color>` used when the **LinkButton** is being pressed.
+當 **LinkButton** 被按下時使用的文字顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -397,9 +397,9 @@ Text :ref:`Color<class_Color>` used when the **LinkButton** is being pressed.
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_LinkButton_theme_constant_outline_size>`
 
-The size of the text outline.
+文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_LinkButton_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_LinkButton_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ The size of the text outline.
 
 :ref:`int<class_int>` **underline_spacing** = ``2`` :ref:`🔗<class_LinkButton_theme_constant_underline_spacing>`
 
-The vertical space between the baseline of text and the underline.
+文字基線和底線之間的垂直空間。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ The vertical space between the baseline of text and the underline.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_LinkButton_theme_font_font>`
 
-:ref:`Font<class_Font>` of the **LinkButton**'s text.
+該 **LinkButton** 文字的字形 :ref:`Font<class_Font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ The vertical space between the baseline of text and the underline.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_LinkButton_theme_font_size_font_size>`
 
-Font size of the **LinkButton**'s text.
+該 **LinkButton** 文字的字形大小。
 
 .. rst-class:: classref-item-separator
 
@@ -449,12 +449,12 @@ Font size of the **LinkButton**'s text.
 
 :ref:`StyleBox<class_StyleBox>` used when the **LinkButton** is focused. The :ref:`focus<class_LinkButton_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

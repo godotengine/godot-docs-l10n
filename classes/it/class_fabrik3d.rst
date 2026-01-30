@@ -20,6 +20,13 @@ The resulting twist around the forward vector will always be kept from the previ
 
 \ **Note:** When the target is close to the root, it tends to produce zig-zag patterns, resulting in unnatural visual movement.
 
+.. rst-class:: classref-introduction-group
+
+Tutorial
+----------------
+
+- `Inverse Kinematics Returns to Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
+
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Questo metodo non ha effetti collaterali. Non modifica alcuna variabile appartenente all'istanza.)`

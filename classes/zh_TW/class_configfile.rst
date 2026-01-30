@@ -5,14 +5,14 @@
 ConfigFile
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Helper class to handle INI-style files.
+用於處理 INI 樣式檔的輔助類。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This helper class can be used to store :ref:`Variant<class_Variant>` values on the filesystem using INI-style formatting. The stored values are identified by a section and a key:
 
@@ -119,8 +119,8 @@ ConfigFiles can also contain manually written comment lines starting with a semi
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -167,8 +167,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ConfigFile_method_clear:
 
@@ -176,7 +176,7 @@ Method Descriptions
 
 |void| **clear**\ (\ ) :ref:`🔗<class_ConfigFile_method_clear>`
 
-Removes the entire contents of the config.
+移除配置的全部內容。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Removes the entire contents of the config.
 
 :ref:`String<class_String>` **encode_to_text**\ (\ ) |const| :ref:`🔗<class_ConfigFile_method_encode_to_text>`
 
-Obtain the text version of this config file (the same text that would be written to a file).
+獲得該設定檔的文字版本（與寫入檔的文字相同）。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Obtain the text version of this config file (the same text that would be written
 
 |void| **erase_section**\ (\ section\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_erase_section>`
 
-Deletes the specified section along with all the key-value pairs inside. Raises an error if the section does not exist.
+刪除指定小節以及其中的所有鍵值對。如果該小節不存在，則會引發錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Deletes the specified section along with all the key-value pairs inside. Raises 
 
 |void| **erase_section_key**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_erase_section_key>`
 
-Deletes the specified key in a section. Raises an error if either the section or the key do not exist.
+刪除小節中的指定鍵。如果該小節或鍵不存在，則會引發錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ Deletes the specified key in a section. Raises an error if either the section or
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_section_keys**\ (\ section\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ConfigFile_method_get_section_keys>`
 
-Returns an array of all defined key identifiers in the specified section. Raises an error and returns an empty array if the section does not exist.
+返回指定小節中所有已定義鍵識別字的陣列。如果該小節不存在，則會引發錯誤並返回一個空陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Returns an array of all defined key identifiers in the specified section. Raises
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_sections**\ (\ ) |const| :ref:`🔗<class_ConfigFile_method_get_sections>`
 
-Returns an array of all defined section identifiers.
+返回所有已定義小節的識別字的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Returns an array of all defined section identifiers.
 
 :ref:`Variant<class_Variant>` **get_value**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_ConfigFile_method_get_value>`
 
-Returns the current value for the specified section and key. If either the section or the key do not exist, the method returns the fallback ``default`` value. If ``default`` is not specified or set to ``null``, an error is also raised.
+返回指定小節和鍵的目前值。如果該小節或鍵不存在，則該方法返回後備值 ``default``\ 。如果未指定 ``default`` 或將其設定為 ``null``\ ，則會引發一個錯誤。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Returns the current value for the specified section and key. If either the secti
 
 :ref:`bool<class_bool>` **has_section**\ (\ section\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ConfigFile_method_has_section>`
 
-Returns ``true`` if the specified section exists.
+如果指定的小節存在，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns ``true`` if the specified section exists.
 
 :ref:`bool<class_bool>` **has_section_key**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ConfigFile_method_has_section_key>`
 
-Returns ``true`` if the specified section-key pair exists.
+如果指定的小節-鍵對存在，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -284,9 +284,9 @@ Returns ``true`` if the specified section-key pair exists.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_load>`
 
-Loads the config file specified as a parameter. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+載入指定為參數的設定檔。解析檔的內容並將其載入到呼叫該方法的 **ConfigFile** 對象中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -298,9 +298,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_encrypted**\ (\ path\: :ref:`String<class_String>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ConfigFile_method_load_encrypted>`
 
-Loads the encrypted config file specified as a parameter, using the provided ``key`` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+載入指定為參數的加密設定檔，使用提供的 ``key`` 對其解密。解析檔的內容並將其載入到呼叫該方法的 **ConfigFile** 物件中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -312,9 +312,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_encrypted_pass**\ (\ path\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_load_encrypted_pass>`
 
-Loads the encrypted config file specified as a parameter, using the provided ``password`` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+載入作為參數的加密設定檔，使用提供的 ``password`` 解密。該檔的內容被解析並載入到呼叫該方法的 **ConfigFile** 物件中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -326,9 +326,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **parse**\ (\ data\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_parse>`
 
-Parses the passed string as the contents of a config file. The string is parsed and loaded in the ConfigFile object which the method was called on.
+將傳遞的字串解析為設定檔的內容。該字串被解析並載入到呼叫該方法的 ConfigFile 對象中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -340,9 +340,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_save>`
 
-Saves the contents of the **ConfigFile** object to the file specified as a parameter. The output file uses an INI-style structure.
+將 **ConfigFile** 物件的內容保存到指定為參數的檔中。輸出檔使用 INI 樣式的結構。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -354,9 +354,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted**\ (\ path\: :ref:`String<class_String>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ConfigFile_method_save_encrypted>`
 
-Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided ``key`` to encrypt it. The output file uses an INI-style structure.
+使用提供的 ``key`` 將 **ConfigFile** 物件的內容保存到作為參數指定的 AES-256 加密檔中。輸出檔使用 INI 樣式的結構。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted_pass**\ (\ path\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_save_encrypted_pass>`
 
-Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided ``password`` to encrypt it. The output file uses an INI-style structure.
+將 **ConfigFile** 物件的內容保存到作為參數指定的 AES-256 加密檔中，使用提供的 ``password`` 進行加密。輸出檔使用 INI 風格的結構。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+返回 :ref:`Error<enum_@GlobalScope_Error>` 錯誤碼常數（成功時為 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -382,14 +382,14 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **set_value**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ConfigFile_method_set_value>`
 
-Assigns a value to the specified key of the specified section. If either the section or the key do not exist, they are created. Passing a ``null`` value deletes the specified key if it exists, and deletes the section if it ends up empty once the key has been removed.
+為指定小節的指定鍵賦值。如果小節或鍵不存在，則建立它們。如果指定的鍵存在，傳遞 ``null`` 值就會移除指定的鍵，如果鍵被移除後，小節最終是空的，就會移除小節。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

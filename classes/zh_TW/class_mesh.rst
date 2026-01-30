@@ -5,36 +5,36 @@
 Mesh
 ====
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`ArrayMesh<class_ArrayMesh>`, :ref:`ImmediateMesh<class_ImmediateMesh>`, :ref:`PlaceholderMesh<class_PlaceholderMesh>`, :ref:`PrimitiveMesh<class_PrimitiveMesh>`
+**被繼承：** :ref:`ArrayMesh<class_ArrayMesh>`, :ref:`ImmediateMesh<class_ImmediateMesh>`, :ref:`PlaceholderMesh<class_PlaceholderMesh>`, :ref:`PrimitiveMesh<class_PrimitiveMesh>`
 
-A :ref:`Resource<class_Resource>` that contains vertex array-based geometry.
+一種包含基於頂點陣列的幾何資源。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Mesh is a type of :ref:`Resource<class_Resource>` that contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials. The maximum number of surfaces per mesh is :ref:`RenderingServer.MAX_MESH_SURFACES<class_RenderingServer_constant_MAX_MESH_SURFACES>`.
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `3D Material Testers Demo <https://godotengine.org/asset-library/asset/2742>`__
+- `3D 材質測試演示 <https://godotengine.org/asset-library/asset/2742>`__
 
-- `3D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2739>`__
+- `3D 動力學角色演示 <https://godotengine.org/asset-library/asset/2739>`__
 
-- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+- `3D 平台跳躍示範 <https://godotengine.org/asset-library/asset/2748>`__
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -111,8 +111,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Mesh_PrimitiveType:
 
@@ -126,7 +126,7 @@ enum **PrimitiveType**: :ref:`🔗<enum_Mesh_PrimitiveType>`
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_POINTS** = ``0``
 
-Render array as points (one vertex equals one point).
+將陣列算繪為點（一個頂點對應一個點）。
 
 .. _class_Mesh_constant_PRIMITIVE_LINES:
 
@@ -134,7 +134,7 @@ Render array as points (one vertex equals one point).
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_LINES** = ``1``
 
-Render array as lines (every two vertices a line is created).
+將陣列算繪為線（每兩個頂點建立一條連線）。
 
 .. _class_Mesh_constant_PRIMITIVE_LINE_STRIP:
 
@@ -142,7 +142,7 @@ Render array as lines (every two vertices a line is created).
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_LINE_STRIP** = ``2``
 
-Render array as line strip.
+將陣列算繪為線條。
 
 .. _class_Mesh_constant_PRIMITIVE_TRIANGLES:
 
@@ -150,7 +150,7 @@ Render array as line strip.
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_TRIANGLES** = ``3``
 
-Render array as triangles (every three vertices a triangle is created).
+將陣列算繪為三角形（每三個頂點建立一個三角形）。
 
 .. _class_Mesh_constant_PRIMITIVE_TRIANGLE_STRIP:
 
@@ -158,7 +158,7 @@ Render array as triangles (every three vertices a triangle is created).
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **PRIMITIVE_TRIANGLE_STRIP** = ``4``
 
-Render array as triangle strips.
+將陣列算繪為三角形條。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_VERTEX** = ``0``
 
-:ref:`PackedVector3Array<class_PackedVector3Array>`, :ref:`PackedVector2Array<class_PackedVector2Array>`, or :ref:`Array<class_Array>` of vertex positions.
+頂點位置的 :ref:`PackedVector3Array<class_PackedVector3Array>`\ 、\ :ref:`PackedVector2Array<class_PackedVector2Array>` 或 :ref:`Array<class_Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_NORMAL:
 
@@ -194,7 +194,7 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_TANGENT** = ``2``
 
-:ref:`PackedFloat32Array<class_PackedFloat32Array>` of vertex tangents. Each element in groups of 4 floats, first 3 floats determine the tangent, and the last the binormal direction as -1 or 1.
+頂點切線的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。4 個浮點數為一組表示一個元素，前 3 個浮點數確定切線，最後一個是為 -1 或 1 的副法線方向。
 
 .. _class_Mesh_constant_ARRAY_COLOR:
 
@@ -202,7 +202,7 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_COLOR** = ``3``
 
-:ref:`PackedColorArray<class_PackedColorArray>` of vertex colors.
+頂點顏色的 :ref:`PackedColorArray<class_PackedColorArray>`\ 。
 
 .. _class_Mesh_constant_ARRAY_TEX_UV:
 
@@ -210,7 +210,7 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_TEX_UV** = ``4``
 
-:ref:`PackedVector2Array<class_PackedVector2Array>` for UV coordinates.
+UV 座標的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_TEX_UV2:
 
@@ -218,7 +218,7 @@ enum **ArrayType**: :ref:`🔗<enum_Mesh_ArrayType>`
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_TEX_UV2** = ``5``
 
-:ref:`PackedVector2Array<class_PackedVector2Array>` for second UV coordinates.
+第二 UV 座標的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM0:
 
@@ -258,7 +258,7 @@ Contains custom color channel 3. :ref:`PackedByteArray<class_PackedByteArray>` i
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_BONES** = ``10``
 
-:ref:`PackedFloat32Array<class_PackedFloat32Array>` or :ref:`PackedInt32Array<class_PackedInt32Array>` of bone indices. Contains either 4 or 8 numbers per vertex depending on the presence of the :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` flag.
+骨骼索引的 :ref:`PackedFloat32Array<class_PackedFloat32Array>` 或 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。每個頂點包含 4 個還是 8 個數字取決於是否存在 :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` 旗標。
 
 .. _class_Mesh_constant_ARRAY_WEIGHTS:
 
@@ -266,7 +266,7 @@ Contains custom color channel 3. :ref:`PackedByteArray<class_PackedByteArray>` i
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_WEIGHTS** = ``11``
 
-:ref:`PackedFloat32Array<class_PackedFloat32Array>` or :ref:`PackedFloat64Array<class_PackedFloat64Array>` of bone weights in the range ``0.0`` to ``1.0`` (inclusive). Contains either 4 or 8 numbers per vertex depending on the presence of the :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` flag.
+骨骼權重的 :ref:`PackedFloat32Array<class_PackedFloat32Array>` 或 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，取值範圍為 ``0.0`` 到 ``1.0``\ （閉區間）。每個頂點包含 4 個還是 8 個數位取決於是否存在 :ref:`ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` 旗標。
 
 .. _class_Mesh_constant_ARRAY_INDEX:
 
@@ -274,9 +274,9 @@ Contains custom color channel 3. :ref:`PackedByteArray<class_PackedByteArray>` i
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_INDEX** = ``12``
 
-:ref:`PackedInt32Array<class_PackedInt32Array>` of integers used as indices referencing vertices, colors, normals, tangents, and textures. All of those arrays must have the same number of elements as the vertex array. No index can be beyond the vertex array size. When this index array is present, it puts the function into "index mode," where the index selects the *i*'th vertex, normal, tangent, color, UV, etc. This means if you want to have different normals or colors along an edge, you have to duplicate the vertices.
+整數的 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，用作引用頂點、顏色、法線、切線、和紋理的索引。所有這些陣列必須具有與頂點陣列相同數量的元素。任何索引都不能超過頂點陣列的大小。當該索引陣列存在時，它會將函式置於“索引模式”，其中索引選擇第 \*i\* 個頂點、法線、切線、顏色、UV 等。這意味著，如果想要沿著一條邊有不同的法線或顏色，則必須複製這些頂點。
 
-For triangles, the index array is interpreted as triples, referring to the vertices of each triangle. For lines, the index array is in pairs indicating the start and end of each line.
+對於三角形，索引陣列被解釋為三元組，指代每個三角形的頂點。對於線條，索引陣列成對表示每條線的開始和結束。
 
 .. _class_Mesh_constant_ARRAY_MAX:
 
@@ -284,7 +284,7 @@ For triangles, the index array is interpreted as triples, referring to the verti
 
 :ref:`ArrayType<enum_Mesh_ArrayType>` **ARRAY_MAX** = ``13``
 
-Represents the size of the :ref:`ArrayType<enum_Mesh_ArrayType>` enum.
+代表 :ref:`ArrayType<enum_Mesh_ArrayType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ enum **ArrayCustomFormat**: :ref:`🔗<enum_Mesh_ArrayCustomFormat>`
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA8_UNORM** = ``0``
 
-Indicates this custom channel contains unsigned normalized byte colors from 0 to 1, encoded as :ref:`PackedByteArray<class_PackedByteArray>`.
+表示該自訂通道包含的是無符號正規化位元組顏色，範圍為 0 到 1，編碼為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_RGBA8_SNORM:
 
@@ -310,7 +310,7 @@ Indicates this custom channel contains unsigned normalized byte colors from 0 to
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA8_SNORM** = ``1``
 
-Indicates this custom channel contains signed normalized byte colors from -1 to 1, encoded as :ref:`PackedByteArray<class_PackedByteArray>`.
+表示該自訂通道包含的是有符號正規化位元組顏色，範圍為 -1 到 1，編碼為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_RG_HALF:
 
@@ -318,7 +318,7 @@ Indicates this custom channel contains signed normalized byte colors from -1 to 
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RG_HALF** = ``2``
 
-Indicates this custom channel contains half precision float colors, encoded as :ref:`PackedByteArray<class_PackedByteArray>`. Only red and green channels are used.
+表示該自訂通道包含的是半精度浮點數顏色，編碼為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。僅使用紅、綠通道。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_RGBA_HALF:
 
@@ -326,7 +326,7 @@ Indicates this custom channel contains half precision float colors, encoded as :
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA_HALF** = ``3``
 
-Indicates this custom channel contains half precision float colors, encoded as :ref:`PackedByteArray<class_PackedByteArray>`.
+表示該自訂通道包含的是半精度浮點數顏色，編碼為 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_R_FLOAT:
 
@@ -334,7 +334,7 @@ Indicates this custom channel contains half precision float colors, encoded as :
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_R_FLOAT** = ``4``
 
-Indicates this custom channel contains full float colors, in a :ref:`PackedFloat32Array<class_PackedFloat32Array>`. Only the red channel is used.
+表示該自訂通道包含的是全精度浮點數顏色，使用 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。僅使用紅色通道。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_RG_FLOAT:
 
@@ -342,7 +342,7 @@ Indicates this custom channel contains full float colors, in a :ref:`PackedFloat
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RG_FLOAT** = ``5``
 
-Indicates this custom channel contains full float colors, in a :ref:`PackedFloat32Array<class_PackedFloat32Array>`. Only red and green channels are used.
+表示該自訂通道包含的是全精度浮點數顏色，使用 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。僅使用紅、綠通道。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_RGB_FLOAT:
 
@@ -350,7 +350,7 @@ Indicates this custom channel contains full float colors, in a :ref:`PackedFloat
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RGB_FLOAT** = ``6``
 
-Indicates this custom channel contains full float colors, in a :ref:`PackedFloat32Array<class_PackedFloat32Array>`. Only red, green and blue channels are used.
+表示該自訂通道包含的是全精度浮點數顏色，使用 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。僅使用紅、綠、藍通道。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_RGBA_FLOAT:
 
@@ -358,7 +358,7 @@ Indicates this custom channel contains full float colors, in a :ref:`PackedFloat
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA_FLOAT** = ``7``
 
-Indicates this custom channel contains full float colors, in a :ref:`PackedFloat32Array<class_PackedFloat32Array>`.
+表示該自訂通道包含的是全精度浮點數顏色，使用 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
 .. _class_Mesh_constant_ARRAY_CUSTOM_MAX:
 
@@ -366,7 +366,7 @@ Indicates this custom channel contains full float colors, in a :ref:`PackedFloat
 
 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` **ARRAY_CUSTOM_MAX** = ``8``
 
-Represents the size of the :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` enum.
+代表 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ flags **ArrayFormat**: :ref:`🔗<enum_Mesh_ArrayFormat>`
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_VERTEX** = ``1``
 
-Mesh array contains vertices. All meshes require a vertex array so this should always be present.
+網格陣列包含頂點。所有網格都需要有頂點陣列，所以這應該始終存在。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_NORMAL:
 
@@ -392,7 +392,7 @@ Mesh array contains vertices. All meshes require a vertex array so this should a
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_NORMAL** = ``2``
 
-Mesh array contains normals.
+網格陣列包含法線。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_TANGENT:
 
@@ -400,7 +400,7 @@ Mesh array contains normals.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_TANGENT** = ``4``
 
-Mesh array contains tangents.
+網格陣列包含切線。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_COLOR:
 
@@ -408,7 +408,7 @@ Mesh array contains tangents.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_COLOR** = ``8``
 
-Mesh array contains colors.
+網格陣列包含顏色。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_TEX_UV:
 
@@ -416,7 +416,7 @@ Mesh array contains colors.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_TEX_UV** = ``16``
 
-Mesh array contains UVs.
+網格陣列包含 UV。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_TEX_UV2:
 
@@ -424,7 +424,7 @@ Mesh array contains UVs.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_TEX_UV2** = ``32``
 
-Mesh array contains second UV.
+網格陣列包含第二套 UV。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM0:
 
@@ -432,7 +432,7 @@ Mesh array contains second UV.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM0** = ``64``
 
-Mesh array contains custom channel index 0.
+網格陣列包含自訂通道索引 0。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM1:
 
@@ -440,7 +440,7 @@ Mesh array contains custom channel index 0.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM1** = ``128``
 
-Mesh array contains custom channel index 1.
+網格陣列包含自訂通道索引 1。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM2:
 
@@ -448,7 +448,7 @@ Mesh array contains custom channel index 1.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM2** = ``256``
 
-Mesh array contains custom channel index 2.
+網格陣列包含自訂通道索引 2。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM3:
 
@@ -456,7 +456,7 @@ Mesh array contains custom channel index 2.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM3** = ``512``
 
-Mesh array contains custom channel index 3.
+網格陣列包含自訂通道索引 3。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_BONES:
 
@@ -464,7 +464,7 @@ Mesh array contains custom channel index 3.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_BONES** = ``1024``
 
-Mesh array contains bones.
+網格陣列包含骨骼。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_WEIGHTS:
 
@@ -472,7 +472,7 @@ Mesh array contains bones.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_WEIGHTS** = ``2048``
 
-Mesh array contains bone weights.
+網格陣列包含骨骼權重。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_INDEX:
 
@@ -480,7 +480,7 @@ Mesh array contains bone weights.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_INDEX** = ``4096``
 
-Mesh array uses indices.
+網格陣列使用索引。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_BLEND_SHAPE_MASK:
 
@@ -488,7 +488,7 @@ Mesh array uses indices.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_BLEND_SHAPE_MASK** = ``7``
 
-Mask of mesh channels permitted in blend shapes.
+混合形狀中允許使用的網格通道的遮罩。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM_BASE:
 
@@ -496,7 +496,7 @@ Mask of mesh channels permitted in blend shapes.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM_BASE** = ``13``
 
-Shift of first custom channel.
+第一個自訂通道的移位量。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM_BITS:
 
@@ -504,7 +504,7 @@ Shift of first custom channel.
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM_BITS** = ``3``
 
-Number of format bits per custom channel. See :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>`.
+每個自訂通道的格式位數。請參閱 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>`\ 。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM0_SHIFT:
 
@@ -512,7 +512,7 @@ Number of format bits per custom channel. See :ref:`ArrayCustomFormat<enum_Mesh_
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM0_SHIFT** = ``13``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom channel index 0.
+自訂通道索引 0 需要對 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM1_SHIFT:
 
@@ -520,7 +520,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM1_SHIFT** = ``16``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom channel index 1.
+自訂通道索引 1 需要對 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM2_SHIFT:
 
@@ -528,7 +528,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM2_SHIFT** = ``19``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom channel index 2.
+自訂通道索引 2 需要對 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM3_SHIFT:
 
@@ -536,7 +536,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM3_SHIFT** = ``22``
 
-Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom channel index 3.
+自訂通道索引 3 需要對 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 進行的按位移動量。
 
 .. _class_Mesh_constant_ARRAY_FORMAT_CUSTOM_MASK:
 
@@ -544,7 +544,7 @@ Amount to shift :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` for custom
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FORMAT_CUSTOM_MASK** = ``7``
 
-Mask of custom format bits per custom channel. Must be shifted by one of the SHIFT constants. See :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>`.
+每個自訂通道的自訂格式位元遮罩。必須按 SHIFT 常數之一進行移位。請參閱 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>`\ 。
 
 .. _class_Mesh_constant_ARRAY_COMPRESS_FLAGS_BASE:
 
@@ -552,7 +552,7 @@ Mask of custom format bits per custom channel. Must be shifted by one of the SHI
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_COMPRESS_FLAGS_BASE** = ``25``
 
-Shift of first compress flag. Compress flags should be passed to :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` and :ref:`SurfaceTool.commit()<class_SurfaceTool_method_commit>`.
+第一個壓縮旗標的移位元。壓縮旗標應該被傳遞給 :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` 和 :ref:`SurfaceTool.commit()<class_SurfaceTool_method_commit>`\ 。
 
 .. _class_Mesh_constant_ARRAY_FLAG_USE_2D_VERTICES:
 
@@ -560,7 +560,7 @@ Shift of first compress flag. Compress flags should be passed to :ref:`ArrayMesh
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_2D_VERTICES** = ``33554432``
 
-Flag used to mark that the array contains 2D vertices.
+用於標記包含 2D 頂點的陣列的旗標。
 
 .. _class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE:
 
@@ -576,7 +576,7 @@ Flag used to mark that the mesh data will use ``GL_DYNAMIC_DRAW`` on GLES. Unuse
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USE_8_BONE_WEIGHTS** = ``134217728``
 
-Flag used to mark that the mesh contains up to 8 bone influences per vertex. This flag indicates that :ref:`ARRAY_BONES<class_Mesh_constant_ARRAY_BONES>` and :ref:`ARRAY_WEIGHTS<class_Mesh_constant_ARRAY_WEIGHTS>` elements will have double length.
+用於標記網格每個頂點最多包含 8 個骨骼影響的旗標。該旗標表示 :ref:`ARRAY_BONES<class_Mesh_constant_ARRAY_BONES>` 和 :ref:`ARRAY_WEIGHTS<class_Mesh_constant_ARRAY_WEIGHTS>` 元素將具有雙倍長度。
 
 .. _class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY:
 
@@ -584,7 +584,7 @@ Flag used to mark that the mesh contains up to 8 bone influences per vertex. Thi
 
 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` **ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY** = ``268435456``
 
-Flag used to mark that the mesh intentionally contains no vertex array.
+用於標記網格有意不包含頂點陣列的旗標。
 
 .. _class_Mesh_constant_ARRAY_FLAG_COMPRESS_ATTRIBUTES:
 
@@ -610,7 +610,7 @@ enum **BlendShapeMode**: :ref:`🔗<enum_Mesh_BlendShapeMode>`
 
 :ref:`BlendShapeMode<enum_Mesh_BlendShapeMode>` **BLEND_SHAPE_MODE_NORMALIZED** = ``0``
 
-Blend shapes are normalized.
+混合形狀是被正規化了的。
 
 .. _class_Mesh_constant_BLEND_SHAPE_MODE_RELATIVE:
 
@@ -618,7 +618,7 @@ Blend shapes are normalized.
 
 :ref:`BlendShapeMode<enum_Mesh_BlendShapeMode>` **BLEND_SHAPE_MODE_RELATIVE** = ``1``
 
-Blend shapes are relative to base weight.
+混合形狀是相對於基礎的權重。
 
 .. rst-class:: classref-section-separator
 
@@ -626,8 +626,8 @@ Blend shapes are relative to base weight.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Mesh_property_lightmap_size_hint:
 
@@ -640,7 +640,7 @@ Property Descriptions
 - |void| **set_lightmap_size_hint**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_lightmap_size_hint**\ (\ )
 
-Sets a hint to be used for lightmap resolution.
+設定用於光照貼圖解析度的提示。
 
 .. rst-class:: classref-section-separator
 
@@ -648,8 +648,8 @@ Sets a hint to be used for lightmap resolution.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Mesh_private_method__get_aabb:
 
@@ -657,7 +657,7 @@ Method Descriptions
 
 :ref:`AABB<class_AABB>` **_get_aabb**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__get_aabb>`
 
-Virtual method to override the :ref:`AABB<class_AABB>` for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋 :ref:`AABB<class_AABB>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -669,7 +669,7 @@ Virtual method to override the :ref:`AABB<class_AABB>` for a custom class extend
 
 :ref:`int<class_int>` **_get_blend_shape_count**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__get_blend_shape_count>`
 
-Virtual method to override the number of blend shapes for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋混合形狀的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -681,7 +681,7 @@ Virtual method to override the number of blend shapes for a custom class extendi
 
 :ref:`StringName<class_StringName>` **_get_blend_shape_name**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__get_blend_shape_name>`
 
-Virtual method to override the retrieval of blend shape names for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋混合形狀名稱的獲取過程。
 
 .. rst-class:: classref-item-separator
 
@@ -693,7 +693,7 @@ Virtual method to override the retrieval of blend shape names for a custom class
 
 :ref:`int<class_int>` **_get_surface_count**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__get_surface_count>`
 
-Virtual method to override the surface count for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -705,7 +705,7 @@ Virtual method to override the surface count for a custom class extending **Mesh
 
 |void| **_set_blend_shape_name**\ (\ index\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) |virtual| |required| :ref:`🔗<class_Mesh_private_method__set_blend_shape_name>`
 
-Virtual method to override the names of blend shapes for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋混合形狀的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -717,7 +717,7 @@ Virtual method to override the names of blend shapes for a custom class extendin
 
 :ref:`int<class_int>` **_surface_get_array_index_len**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_array_index_len>`
 
-Virtual method to override the surface array index length for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面陣列索引的長度。
 
 .. rst-class:: classref-item-separator
 
@@ -729,7 +729,7 @@ Virtual method to override the surface array index length for a custom class ext
 
 :ref:`int<class_int>` **_surface_get_array_len**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_array_len>`
 
-Virtual method to override the surface array length for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面陣列的長度。
 
 .. rst-class:: classref-item-separator
 
@@ -741,7 +741,7 @@ Virtual method to override the surface array length for a custom class extending
 
 :ref:`Array<class_Array>` **_surface_get_arrays**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_arrays>`
 
-Virtual method to override the surface arrays for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ Virtual method to override the surface arrays for a custom class extending **Mes
 
 :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] **_surface_get_blend_shape_arrays**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_blend_shape_arrays>`
 
-Virtual method to override the blend shape arrays for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋混合形狀陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -765,7 +765,7 @@ Virtual method to override the blend shape arrays for a custom class extending *
 
 :ref:`int<class_int>` **_surface_get_format**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_format>`
 
-Virtual method to override the surface format for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面格式。
 
 .. rst-class:: classref-item-separator
 
@@ -777,7 +777,7 @@ Virtual method to override the surface format for a custom class extending **Mes
 
 :ref:`Dictionary<class_Dictionary>` **_surface_get_lods**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_lods>`
 
-Virtual method to override the surface LODs for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面 LOD。
 
 .. rst-class:: classref-item-separator
 
@@ -789,7 +789,7 @@ Virtual method to override the surface LODs for a custom class extending **Mesh*
 
 :ref:`Material<class_Material>` **_surface_get_material**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_material>`
 
-Virtual method to override the surface material for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面材質。
 
 .. rst-class:: classref-item-separator
 
@@ -801,7 +801,7 @@ Virtual method to override the surface material for a custom class extending **M
 
 :ref:`int<class_int>` **_surface_get_primitive_type**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| |required| |const| :ref:`🔗<class_Mesh_private_method__surface_get_primitive_type>`
 
-Virtual method to override the surface primitive type for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋表面圖元型別。
 
 .. rst-class:: classref-item-separator
 
@@ -813,7 +813,7 @@ Virtual method to override the surface primitive type for a custom class extendi
 
 |void| **_surface_set_material**\ (\ index\: :ref:`int<class_int>`, material\: :ref:`Material<class_Material>`\ ) |virtual| |required| :ref:`🔗<class_Mesh_private_method__surface_set_material>`
 
-Virtual method to override the setting of a ``material`` at the given ``index`` for a custom class extending **Mesh**.
+虛方法，能夠為擴充自 **Mesh** 的自訂類覆蓋索引為 ``index`` 的材質 ``material`` 的設定。
 
 .. rst-class:: classref-item-separator
 
@@ -825,11 +825,11 @@ Virtual method to override the setting of a ``material`` at the given ``index`` 
 
 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` **create_convex_shape**\ (\ clean\: :ref:`bool<class_bool>` = true, simplify\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Mesh_method_create_convex_shape>`
 
-Calculate a :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` from the mesh.
+從網格計算 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`\ 。
 
-If ``clean`` is ``true`` (default), duplicate and interior vertices are removed automatically. You can set it to ``false`` to make the process faster if not needed.
+如果 ``clean`` 為 ``true``\ （預設值），則自動移除重複頂點和內部頂點。如果不需要如此的化話，可以將其設定為 ``false`` 以加快處理速度。
 
-If ``simplify`` is ``true``, the geometry can be further simplified to reduce the number of vertices. Disabled by default.
+如果 ``simplify`` 為 ``true``\ ，則可以進一步簡化幾何體以減少頂點數。預設情況下是禁用的。
 
 .. rst-class:: classref-item-separator
 
@@ -841,9 +841,9 @@ If ``simplify`` is ``true``, the geometry can be further simplified to reduce th
 
 :ref:`Mesh<class_Mesh>` **create_outline**\ (\ margin\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Mesh_method_create_outline>`
 
-Calculate an outline mesh at a defined offset (margin) from the original mesh.
+以一定的偏移量（邊距)，計算出該網格的外輪廓。
 
-\ **Note:** This method typically returns the vertices in reverse order (e.g. clockwise to counterclockwise).
+\ **注意：**\ 這個方法實際上反序返回頂點（例如輸入順時針，返回逆時針）。
 
 .. rst-class:: classref-item-separator
 
@@ -855,7 +855,7 @@ Calculate an outline mesh at a defined offset (margin) from the original mesh.
 
 :ref:`Resource<class_Resource>` **create_placeholder**\ (\ ) |const| :ref:`🔗<class_Mesh_method_create_placeholder>`
 
-Creates a placeholder version of this resource (:ref:`PlaceholderMesh<class_PlaceholderMesh>`).
+建立該資源的預留位置版本（\ :ref:`PlaceholderMesh<class_PlaceholderMesh>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -867,7 +867,7 @@ Creates a placeholder version of this resource (:ref:`PlaceholderMesh<class_Plac
 
 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` **create_trimesh_shape**\ (\ ) |const| :ref:`🔗<class_Mesh_method_create_trimesh_shape>`
 
-Calculate a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` from the mesh.
+從該網格計算出 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -879,7 +879,7 @@ Calculate a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` from the m
 
 :ref:`TriangleMesh<class_TriangleMesh>` **generate_triangle_mesh**\ (\ ) |const| :ref:`🔗<class_Mesh_method_generate_triangle_mesh>`
 
-Generate a :ref:`TriangleMesh<class_TriangleMesh>` from the mesh. Considers only surfaces using one of these primitive types: :ref:`PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`, :ref:`PRIMITIVE_TRIANGLE_STRIP<class_Mesh_constant_PRIMITIVE_TRIANGLE_STRIP>`.
+從網格生成 :ref:`TriangleMesh<class_TriangleMesh>`\ 。僅考慮使用以下圖元型別的表面：\ :ref:`PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 、\ :ref:`PRIMITIVE_TRIANGLE_STRIP<class_Mesh_constant_PRIMITIVE_TRIANGLE_STRIP>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -891,9 +891,9 @@ Generate a :ref:`TriangleMesh<class_TriangleMesh>` from the mesh. Considers only
 
 :ref:`AABB<class_AABB>` **get_aabb**\ (\ ) |const| :ref:`🔗<class_Mesh_method_get_aabb>`
 
-Returns the smallest :ref:`AABB<class_AABB>` enclosing this mesh in local space. Not affected by ``custom_aabb``.
+返回局部空間中包圍這個網格的最小 :ref:`AABB<class_AABB>`\ 。不受 ``custom_aabb`` 的影響。
 
-\ **Note:** This is only implemented for :ref:`ArrayMesh<class_ArrayMesh>` and :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
+\ **注意：**\ 只針對 :ref:`ArrayMesh<class_ArrayMesh>` 和 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 進行了實作。
 
 .. rst-class:: classref-item-separator
 
@@ -905,7 +905,7 @@ Returns the smallest :ref:`AABB<class_AABB>` enclosing this mesh in local space.
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_faces**\ (\ ) |const| :ref:`🔗<class_Mesh_method_get_faces>`
 
-Returns all the vertices that make up the faces of the mesh. Each three vertices represent one triangle.
+返回網格中所有構成面的頂點。每三個頂點代表一個三角形。
 
 .. rst-class:: classref-item-separator
 
@@ -917,7 +917,7 @@ Returns all the vertices that make up the faces of the mesh. Each three vertices
 
 :ref:`int<class_int>` **get_surface_count**\ (\ ) |const| :ref:`🔗<class_Mesh_method_get_surface_count>`
 
-Returns the number of surfaces that the **Mesh** holds. This is equivalent to :ref:`MeshInstance3D.get_surface_override_material_count()<class_MeshInstance3D_method_get_surface_override_material_count>`.
+返回表面覆蓋材質的數量。相當於 :ref:`get_surface_count()<class_Mesh_method_get_surface_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -929,7 +929,7 @@ Returns the number of surfaces that the **Mesh** holds. This is equivalent to :r
 
 :ref:`Array<class_Array>` **surface_get_arrays**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Mesh_method_surface_get_arrays>`
 
-Returns the arrays for the vertices, normals, UVs, etc. that make up the requested surface (see :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+返回構成請求表面的頂點、法線、UV 等陣列。（見 :ref:`ArrayMesh.add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -941,7 +941,7 @@ Returns the arrays for the vertices, normals, UVs, etc. that make up the request
 
 :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] **surface_get_blend_shape_arrays**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Mesh_method_surface_get_blend_shape_arrays>`
 
-Returns the blend shape arrays for the requested surface.
+返回請求表面的混合形狀陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -953,9 +953,9 @@ Returns the blend shape arrays for the requested surface.
 
 :ref:`Material<class_Material>` **surface_get_material**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Mesh_method_surface_get_material>`
 
-Returns a :ref:`Material<class_Material>` in a given surface. Surface is rendered using this material.
+傳回給定表面中的\ :ref:`Material<class_Material>`\ 。表面是使用此材質算繪的。
 
-\ **Note:** This returns the material within the **Mesh** resource, not the :ref:`Material<class_Material>` associated to the :ref:`MeshInstance3D<class_MeshInstance3D>`'s Surface Material Override properties. To get the :ref:`Material<class_Material>` associated to the :ref:`MeshInstance3D<class_MeshInstance3D>`'s Surface Material Override properties, use :ref:`MeshInstance3D.get_surface_override_material()<class_MeshInstance3D_method_get_surface_override_material>` instead.
+\ **注意：** 這將傳回 **Mesh** 資源中的材質，而不是與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性關聯的 :ref:`Material<class_Material>`\ 。若要取得與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性相關的 :ref:`Material<class_Material>`\ ，請改用 :ref:`MeshInstance3D.get_surface_override_material()<class_MeshInstance3D_method_get_surface_override_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -967,16 +967,16 @@ Returns a :ref:`Material<class_Material>` in a given surface. Surface is rendere
 
 |void| **surface_set_material**\ (\ surf_idx\: :ref:`int<class_int>`, material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_Mesh_method_surface_set_material>`
 
-Sets a :ref:`Material<class_Material>` for a given surface. Surface will be rendered using this material.
+設定為給定表面\ :ref:`Material<class_Material>`\ 。表面將使用此材質算繪。
 
-\ **Note:** This assigns the material within the **Mesh** resource, not the :ref:`Material<class_Material>` associated to the :ref:`MeshInstance3D<class_MeshInstance3D>`'s Surface Material Override properties. To set the :ref:`Material<class_Material>` associated to the :ref:`MeshInstance3D<class_MeshInstance3D>`'s Surface Material Override properties, use :ref:`MeshInstance3D.set_surface_override_material()<class_MeshInstance3D_method_set_surface_override_material>` instead.
+\ **注意：** 這會分配 **Mesh** 資源中的材質，而不是與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性關聯的 :ref:`Material<class_Material>`\ 。若要設定與 :ref:`MeshInstance3D<class_MeshInstance3D>` 的表面材質覆蓋屬性相關的 :ref:`Material<class_Material>`\ ，請使用 :ref:`MeshInstance3D.set_surface_override_material()<class_MeshInstance3D_method_set_surface_override_material>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

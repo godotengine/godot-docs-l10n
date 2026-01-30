@@ -5,36 +5,36 @@
 MeshInstance3D
 ==============
 
-**Inherits:** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SoftBody3D<class_SoftBody3D>`
+**派生：** :ref:`SoftBody3D<class_SoftBody3D>`
 
-Node that instances meshes into a scenario.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-MeshInstance3D is a node that takes a :ref:`Mesh<class_Mesh>` resource and adds it to the current scenario by creating an instance of it. This is the class most often used to render 3D geometry and can be used to instance a single :ref:`Mesh<class_Mesh>` in many places. This allows reusing geometry, which can save on resources. When a :ref:`Mesh<class_Mesh>` has to be instantiated more than thousands of times at close proximity, consider using a :ref:`MultiMesh<class_MultiMesh>` in a :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>` instead.
+网格实例与场景相结合的节点。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `3D Material Testers Demo <https://godotengine.org/asset-library/asset/2742>`__
+MeshInstance3D 节点接受 :ref:`Mesh<class_Mesh>` 资源，会为该网格创建一个实例并将该实例添加到当前的场景中。最常用于渲染 3D 几何体，可以将单个 :ref:`Mesh<class_Mesh>` 在不同的地方实例化。这样就能够实现几何体的复用，从而节省资源。如果需要在比较集中的区域内将某个 :ref:`Mesh<class_Mesh>` 实例化超过几千次，请考虑改为在 :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>` 中使用 :ref:`MultiMesh<class_MultiMesh>`\ 。
 
-- `3D Kinematic Character Demo <https://godotengine.org/asset-library/asset/2739>`__
+.. rst-class:: classref-introduction-group
 
-- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+教程
+----
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+- `3D 材质测试演示 <https://godotengine.org/asset-library/asset/2742>`__
+
+- `3D 动力学角色演示 <https://godotengine.org/asset-library/asset/2739>`__
+
+- `3D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2748>`__
+
+- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -93,8 +93,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_MeshInstance3D_property_mesh:
 
@@ -107,7 +107,7 @@ Property Descriptions
 - |void| **set_mesh**\ (\ value\: :ref:`Mesh<class_Mesh>`\ )
 - :ref:`Mesh<class_Mesh>` **get_mesh**\ (\ )
 
-The :ref:`Mesh<class_Mesh>` resource for the instance.
+该实例的 :ref:`Mesh<class_Mesh>` 资源。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ The :ref:`Mesh<class_Mesh>` resource for the instance.
 - |void| **set_skin**\ (\ value\: :ref:`Skin<class_Skin>`\ )
 - :ref:`Skin<class_Skin>` **get_skin**\ (\ )
 
-The :ref:`Skin<class_Skin>` to be used by this instance.
+该实例要使用的 :ref:`Skin<class_Skin>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -151,8 +151,8 @@ The :ref:`Skin<class_Skin>` to be used by this instance.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_MeshInstance3D_method_bake_mesh_from_current_blend_shape_mix:
 
@@ -160,9 +160,9 @@ Method Descriptions
 
 :ref:`ArrayMesh<class_ArrayMesh>` **bake_mesh_from_current_blend_shape_mix**\ (\ existing\: :ref:`ArrayMesh<class_ArrayMesh>` = null\ ) :ref:`🔗<class_MeshInstance3D_method_bake_mesh_from_current_blend_shape_mix>`
 
-Takes a snapshot from the current :ref:`ArrayMesh<class_ArrayMesh>` with all blend shapes applied according to their current weights and bakes it to the provided ``existing`` mesh. If no ``existing`` mesh is provided a new :ref:`ArrayMesh<class_ArrayMesh>` is created, baked and returned. Mesh surface materials are not copied.
+根据当前权重从当前 :ref:`ArrayMesh<class_ArrayMesh>` 中获取所有混合形状的快照，并将其烘焙到提供的 ``existing`` 网格中。如果未提供 ``existing`` 网格，则将创建一个新的 :ref:`ArrayMesh<class_ArrayMesh>`\ ，然后烘焙并返回。不会复制网格表面材质。
 
-\ **Performance:** :ref:`Mesh<class_Mesh>` data needs to be received from the GPU, stalling the :ref:`RenderingServer<class_RenderingServer>` in the process.
+\ **性能：**\ 需要从 GPU 接收 :ref:`Mesh<class_Mesh>` 数据，从而在该过程中拖延了 :ref:`RenderingServer<class_RenderingServer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ Takes a snapshot from the current :ref:`ArrayMesh<class_ArrayMesh>` with all ble
 
 :ref:`ArrayMesh<class_ArrayMesh>` **bake_mesh_from_current_skeleton_pose**\ (\ existing\: :ref:`ArrayMesh<class_ArrayMesh>` = null\ ) :ref:`🔗<class_MeshInstance3D_method_bake_mesh_from_current_skeleton_pose>`
 
-Takes a snapshot of the current animated skeleton pose of the skinned mesh and bakes it to the provided ``existing`` mesh. If no ``existing`` mesh is provided a new :ref:`ArrayMesh<class_ArrayMesh>` is created, baked, and returned. Requires a skeleton with a registered skin to work. Blendshapes are ignored. Mesh surface materials are not copied.
+对蒙皮网格的当前动画骨架姿势进行快照，将其烘焙至已有的 ``existing`` 网格。如果未提供 ``existing`` 网格，则会新建一个 :ref:`ArrayMesh<class_ArrayMesh>` 进行烘焙并返回。骨架需要注册皮肤才能正常工作。会忽略混合形状。不会复制网格表面材质。
 
-\ **Performance:** :ref:`Mesh<class_Mesh>` data needs to be retrieved from the GPU, stalling the :ref:`RenderingServer<class_RenderingServer>` in the process.
+\ **性能：**\ :ref:`Mesh<class_Mesh>` 数据需要从 GPU 获取，过程中会让 :ref:`RenderingServer<class_RenderingServer>` 产生停顿。
 
 .. rst-class:: classref-item-separator
 
@@ -188,11 +188,11 @@ Takes a snapshot of the current animated skeleton pose of the skinned mesh and b
 
 |void| **create_convex_collision**\ (\ clean\: :ref:`bool<class_bool>` = true, simplify\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_MeshInstance3D_method_create_convex_collision>`
 
-This helper creates a :ref:`StaticBody3D<class_StaticBody3D>` child node with a :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` collision shape calculated from the mesh geometry. It's mainly used for testing.
+该助手创建一个 :ref:`StaticBody3D<class_StaticBody3D>` 子节点，该子节点具有根据网格几何计算的 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 碰撞形状。它主要用于测试。
 
-If ``clean`` is ``true`` (default), duplicate and interior vertices are removed automatically. You can set it to ``false`` to make the process faster if not needed.
+如果 ``clean`` 为 ``true``\ （默认值），则重复的顶点和内部顶点会被自动移除。如果不需要，可以将其设置为 ``false``\ ，以加快处理速度。
 
-If ``simplify`` is ``true``, the geometry can be further simplified to reduce the number of vertices. Disabled by default.
+如果 ``simplify`` 为 ``true``\ ，则该几何体可以进一步被简化以减少顶点的数量。默认情况下是禁用的。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ If ``simplify`` is ``true``, the geometry can be further simplified to reduce th
 
 |void| **create_debug_tangents**\ (\ ) :ref:`🔗<class_MeshInstance3D_method_create_debug_tangents>`
 
-This helper creates a **MeshInstance3D** child node with gizmos at every vertex calculated from the mesh geometry. It's mainly used for testing.
+创建 **MeshInstance3D** 子节点的辅助函数，会根据网格几何体计算出各个顶点的小工具。主要用于测试。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ This helper creates a **MeshInstance3D** child node with gizmos at every vertex 
 
 |void| **create_multiple_convex_collisions**\ (\ settings\: :ref:`MeshConvexDecompositionSettings<class_MeshConvexDecompositionSettings>` = null\ ) :ref:`🔗<class_MeshInstance3D_method_create_multiple_convex_collisions>`
 
-This helper creates a :ref:`StaticBody3D<class_StaticBody3D>` child node with multiple :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` collision shapes calculated from the mesh geometry via convex decomposition. The convex decomposition operation can be controlled with parameters from the optional ``settings``.
+创建 :ref:`StaticBody3D<class_StaticBody3D>` 子节点的辅助函数，会根据网格几何体使用凸分解计算出多个 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 碰撞形状。凸分解操作可以通过可选的 ``settings`` 参数控制。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ This helper creates a :ref:`StaticBody3D<class_StaticBody3D>` child node with mu
 
 |void| **create_trimesh_collision**\ (\ ) :ref:`🔗<class_MeshInstance3D_method_create_trimesh_collision>`
 
-This helper creates a :ref:`StaticBody3D<class_StaticBody3D>` child node with a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` collision shape calculated from the mesh geometry. It's mainly used for testing.
+该助手创建一个 :ref:`StaticBody3D<class_StaticBody3D>` 子节点，该子节点具有一个 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 碰撞形状，该形状是根据网格几何体计算出来的。它主要用于测试。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ This helper creates a :ref:`StaticBody3D<class_StaticBody3D>` child node with a 
 
 :ref:`int<class_int>` **find_blend_shape_by_name**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_MeshInstance3D_method_find_blend_shape_by_name>`
 
-Returns the index of the blend shape with the given ``name``. Returns ``-1`` if no blend shape with this name exists, including when :ref:`mesh<class_MeshInstance3D_property_mesh>` is ``null``.
+返回具有给定 ``name`` 的混合形状的索引。如果不存在具有该名称的混合形状，以及当 :ref:`mesh<class_MeshInstance3D_property_mesh>` 为 ``null`` 时，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +252,9 @@ Returns the index of the blend shape with the given ``name``. Returns ``-1`` if 
 
 :ref:`Material<class_Material>` **get_active_material**\ (\ surface\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_active_material>`
 
-Returns the :ref:`Material<class_Material>` that will be used by the :ref:`Mesh<class_Mesh>` when drawing. This can return the :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`, the surface override :ref:`Material<class_Material>` defined in this **MeshInstance3D**, or the surface :ref:`Material<class_Material>` defined in the :ref:`mesh<class_MeshInstance3D_property_mesh>`. For example, if :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>` is used, all surfaces will return the override material.
+返回 :ref:`Mesh<class_Mesh>` 在绘制时将使用的 :ref:`Material<class_Material>`\ 。这可以返回 :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`\ 、在该 **MeshInstance3D** 中定义的表面覆盖 :ref:`Material<class_Material>` 或 :ref:`mesh<class_MeshInstance3D_property_mesh>` 中定义的表面 :ref:`Material<class_Material>`\ 。例如，如果使用 :ref:`GeometryInstance3D.material_override<class_GeometryInstance3D_property_material_override>`\ ，则所有表面都将返回该覆盖材质。
 
-Returns ``null`` if no material is active, including when :ref:`mesh<class_MeshInstance3D_property_mesh>` is ``null``.
+如果没有材质处于活动状态，包括当 :ref:`mesh<class_MeshInstance3D_property_mesh>` 为 ``null`` 时，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Returns ``null`` if no material is active, including when :ref:`mesh<class_MeshI
 
 :ref:`int<class_int>` **get_blend_shape_count**\ (\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_blend_shape_count>`
 
-Returns the number of blend shapes available. Produces an error if :ref:`mesh<class_MeshInstance3D_property_mesh>` is ``null``.
+返回可用混合形状的数量。如果 :ref:`mesh<class_MeshInstance3D_property_mesh>` 为 ``null`` 则会报错。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Returns the number of blend shapes available. Produces an error if :ref:`mesh<cl
 
 :ref:`float<class_float>` **get_blend_shape_value**\ (\ blend_shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_blend_shape_value>`
 
-Returns the value of the blend shape at the given ``blend_shape_idx``. Returns ``0.0`` and produces an error if :ref:`mesh<class_MeshInstance3D_property_mesh>` is ``null`` or doesn't have a blend shape at that index.
+返回给定 ``blend_shape_idx`` 处的混合形状的值。如果 :ref:`mesh<class_MeshInstance3D_property_mesh>` 为 ``null``\ ，或在该索引处没有混合形状，则返回 ``0.0`` 并产生一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Returns the value of the blend shape at the given ``blend_shape_idx``. Returns `
 
 :ref:`SkinReference<class_SkinReference>` **get_skin_reference**\ (\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_skin_reference>`
 
-Returns the internal :ref:`SkinReference<class_SkinReference>` containing the skeleton's :ref:`RID<class_RID>` attached to this RID. See also :ref:`Resource.get_rid()<class_Resource_method_get_rid>`, :ref:`SkinReference.get_skeleton()<class_SkinReference_method_get_skeleton>`, and :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`.
+返回包含附加到该 RID 的骨架的 :ref:`RID<class_RID>` 的内部 :ref:`SkinReference<class_SkinReference>`\ 。另见 :ref:`Resource.get_rid()<class_Resource_method_get_rid>`\ 、\ :ref:`SkinReference.get_skeleton()<class_SkinReference_method_get_skeleton>` 和 :ref:`RenderingServer.instance_attach_skeleton()<class_RenderingServer_method_instance_attach_skeleton>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -302,9 +302,9 @@ Returns the internal :ref:`SkinReference<class_SkinReference>` containing the sk
 
 :ref:`Material<class_Material>` **get_surface_override_material**\ (\ surface\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_surface_override_material>`
 
-Returns the override :ref:`Material<class_Material>` for the specified ``surface`` of the :ref:`Mesh<class_Mesh>` resource. See also :ref:`get_surface_override_material_count()<class_MeshInstance3D_method_get_surface_override_material_count>`.
+返回 :ref:`Mesh<class_Mesh>` 资源的指定 ``surface`` 的覆盖 :ref:`Material<class_Material>`\ 。另见 :ref:`get_surface_override_material_count()<class_MeshInstance3D_method_get_surface_override_material_count>`\ 。
 
-\ **Note:** This returns the :ref:`Material<class_Material>` associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the :ref:`Mesh<class_Mesh>` resource. To get the material within the :ref:`Mesh<class_Mesh>` resource, use :ref:`Mesh.surface_get_material()<class_Mesh_method_surface_get_material>` instead.
+\ **注意：**\ 这将返回与 **MeshInstance3D** 的表面材质覆盖属性关联的 :ref:`Material<class_Material>`\ ，而不是 :ref:`Mesh<class_Mesh>` 资源内的材质。要获取 :ref:`Mesh<class_Mesh>` 资源中的材质，请改用 :ref:`Mesh.surface_get_material()<class_Mesh_method_surface_get_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Returns the override :ref:`Material<class_Material>` for the specified ``surface
 
 :ref:`int<class_int>` **get_surface_override_material_count**\ (\ ) |const| :ref:`🔗<class_MeshInstance3D_method_get_surface_override_material_count>`
 
-Returns the number of surface override materials. This is equivalent to :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>`. See also :ref:`get_surface_override_material()<class_MeshInstance3D_method_get_surface_override_material>`.
+返回表面覆盖材质的数量。相当于 :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>`\ 。另见 :ref:`get_surface_override_material()<class_MeshInstance3D_method_get_surface_override_material>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Returns the number of surface override materials. This is equivalent to :ref:`Me
 
 |void| **set_blend_shape_value**\ (\ blend_shape_idx\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_MeshInstance3D_method_set_blend_shape_value>`
 
-Sets the value of the blend shape at ``blend_shape_idx`` to ``value``. Produces an error if :ref:`mesh<class_MeshInstance3D_property_mesh>` is ``null`` or doesn't have a blend shape at that index.
+将 ``blend_shape_idx`` 处的混合形状的值设置为 ``value``\ 。如果 :ref:`mesh<class_MeshInstance3D_property_mesh>` 为 ``null``\ ，或在该索引处没有混合形状，则会产生一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -340,16 +340,16 @@ Sets the value of the blend shape at ``blend_shape_idx`` to ``value``. Produces 
 
 |void| **set_surface_override_material**\ (\ surface\: :ref:`int<class_int>`, material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_MeshInstance3D_method_set_surface_override_material>`
 
-Sets the override ``material`` for the specified ``surface`` of the :ref:`Mesh<class_Mesh>` resource. This material is associated with this **MeshInstance3D** rather than with :ref:`mesh<class_MeshInstance3D_property_mesh>`.
+设置 :ref:`Mesh<class_Mesh>` 资源的指定 ``surface`` 的覆盖 ``material``\ 。该材质与该 **MeshInstance3D** 关联，而不是与 :ref:`mesh<class_MeshInstance3D_property_mesh>` 关联。
 
-\ **Note:** This assigns the :ref:`Material<class_Material>` associated to the **MeshInstance3D**'s Surface Material Override properties, not the material within the :ref:`Mesh<class_Mesh>` resource. To set the material within the :ref:`Mesh<class_Mesh>` resource, use :ref:`Mesh.surface_set_material()<class_Mesh_method_surface_set_material>` instead.
+\ **注意：**\ 这将分配与 **MeshInstance3D** 的表面材质覆盖属性关联的 :ref:`Material<class_Material>`\ ，而不是 :ref:`Mesh<class_Mesh>` 资源内的材质。要在 :ref:`Mesh<class_Mesh>` 资源中设置材质，请改用 :ref:`Mesh.surface_set_material()<class_Mesh_method_surface_set_material>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -14,9 +14,9 @@ Un nodo usado para crear un fondo de desplazamiento de paralaje.
 Descripción
 ----------------------
 
-A **Parallax2D** is used to create a parallax effect. It can move at a different speed relative to the camera movement using :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. This creates an illusion of depth in a 2D game. If manual scrolling is desired, the :ref:`Camera2D<class_Camera2D>` position can be ignored with :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
+Un **Parallax2D** se utiliza para crear un efecto de paralaje. Puede moverse a una velocidad diferente en relación con el movimiento de la cámara usando :ref:`scroll_scale<class_Parallax2D_property_scroll_scale>`. Esto crea una ilusión de profundidad en un juego 2D. Si se desea un desplazamiento manual, la posición de la :ref:`Camera2D<class_Camera2D>` puede ser ignorada con :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>`.
 
-\ **Note:** Any changes to this node's position made after it enters the scene tree will be overridden if :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` is ``false`` or :ref:`screen_offset<class_Parallax2D_property_screen_offset>` is modified.
+\ **Nota:** Cualquier cambio en la posición de este nodo realizado después de que entre en el árbol de la escena será anulado si :ref:`ignore_camera_scroll<class_Parallax2D_property_ignore_camera_scroll>` es ``false`` o si :ref:`screen_offset<class_Parallax2D_property_screen_offset>` es modificado.
 
 .. rst-class:: classref-introduction-group
 

@@ -5,25 +5,25 @@
 Window
 ======
 
-**Inherits:** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AcceptDialog<class_AcceptDialog>`, :ref:`Popup<class_Popup>`
+**被繼承：** :ref:`AcceptDialog<class_AcceptDialog>`, :ref:`Popup<class_Popup>`
 
-Base class for all windows, dialogs, and popups.
+所有視窗、對話方塊、彈出框的基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A node that creates a window. The window can either be a native system window or embedded inside another **Window** (see :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
+建立視窗的節點。視窗可以是原生系統視窗，也可以是嵌入到其他 **Window** 中的視窗（見 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`\ ）。
 
-At runtime, **Window**\ s will not close automatically when requested. You need to handle it manually using the :ref:`close_requested<class_Window_signal_close_requested>` signal (this applies both to pressing the close button and clicking outside of a popup).
+運作時，\ **Window** 不會在請求關閉時自動關閉。你需要使用 :ref:`close_requested<class_Window_signal_close_requested>` 訊號手動處理（適用於點擊關閉按鈕和點擊快顯視窗外部）。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -112,8 +112,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -272,8 +272,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -312,8 +312,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_Window_signal_about_to_popup:
 
@@ -321,7 +321,7 @@ Signals
 
 **about_to_popup**\ (\ ) :ref:`🔗<class_Window_signal_about_to_popup>`
 
-Emitted right after :ref:`popup()<class_Window_method_popup>` call, before the **Window** appears or does anything.
+在呼叫 :ref:`popup()<class_Window_method_popup>` 之後但在 **Window** 出現或執行任何操作之前發送的訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -333,9 +333,9 @@ Emitted right after :ref:`popup()<class_Window_method_popup>` call, before the *
 
 **close_requested**\ (\ ) :ref:`🔗<class_Window_signal_close_requested>`
 
-Emitted when the **Window**'s close button is pressed or when :ref:`popup_window<class_Window_property_popup_window>` is enabled and user clicks outside the window.
+按下該 **Window** 的關閉按鈕或啟用 :ref:`popup_window<class_Window_property_popup_window>` 並且使用者在視窗外點擊時發出。
 
-This signal can be used to handle window closing, e.g. by connecting it to :ref:`hide()<class_Window_method_hide>`.
+這個訊號可以用來處理視窗的關閉，例如將其連接到 :ref:`hide()<class_Window_method_hide>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Emitted when files are dragged from the OS file manager and dropped in the game 
 
 **focus_entered**\ (\ ) :ref:`🔗<class_Window_signal_focus_entered>`
 
-Emitted when the **Window** gains focus.
+當該 **Window** 獲得焦點時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Emitted when the **Window** gains focus.
 
 **focus_exited**\ (\ ) :ref:`🔗<class_Window_signal_focus_exited>`
 
-Emitted when the **Window** loses its focus.
+當該 **Window** 失去焦點時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Emitted when the **Window** loses its focus.
 
 **go_back_requested**\ (\ ) :ref:`🔗<class_Window_signal_go_back_requested>`
 
-Emitted when a go back request is sent (e.g. pressing the "Back" button on Android), right after :ref:`Node.NOTIFICATION_WM_GO_BACK_REQUEST<class_Node_constant_NOTIFICATION_WM_GO_BACK_REQUEST>`.
+發送返回請求時，在 :ref:`Node.NOTIFICATION_WM_GO_BACK_REQUEST<class_Node_constant_NOTIFICATION_WM_GO_BACK_REQUEST>` 之後發出（例如在 Android 上按下“返回”按鈕）。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Emitted when a go back request is sent (e.g. pressing the "Back" button on Andro
 
 **mouse_entered**\ (\ ) :ref:`🔗<class_Window_signal_mouse_entered>`
 
-Emitted when the mouse cursor enters the **Window**'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or windows, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+當滑鼠遊標進入\ **Window**\ 的可見區域時發出，該區域未被其他\ :ref:`Control<class_Control>`\ 或視窗遮擋，前提是其\ :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>`\ 為\ ``false ``\ ，不論目前是否處於焦點狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ Emitted when the mouse cursor enters the **Window**'s visible area, that is not 
 
 **mouse_exited**\ (\ ) :ref:`🔗<class_Window_signal_mouse_exited>`
 
-Emitted when the mouse cursor leaves the **Window**'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or windows, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+當滑鼠遊標離開\ **Window**\ 的可見區域時發出，該區域未被其他\ :ref:`Control<class_Control>`\ 或視窗遮擋，前提是其\ :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>`\ 為\ ``false ``\ ，不論目前是否處於焦點狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ Emitted when the mouse event is received by the custom decoration area defined b
 
 **theme_changed**\ (\ ) :ref:`🔗<class_Window_signal_theme_changed>`
 
-Emitted when the :ref:`NOTIFICATION_THEME_CHANGED<class_Window_constant_NOTIFICATION_THEME_CHANGED>` notification is sent.
+發送 :ref:`NOTIFICATION_THEME_CHANGED<class_Window_constant_NOTIFICATION_THEME_CHANGED>` 通知時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Emitted when window title bar text is changed.
 
 **titlebar_changed**\ (\ ) :ref:`🔗<class_Window_signal_titlebar_changed>`
 
-Emitted when window title bar decorations are changed, e.g. macOS window enter/exit full screen mode, or extend-to-title flag is changed.
+視窗標題列裝飾發生改變時發出，例如 macOS 視窗進入/退出全屏模式，或者“擴充至標題”旗標發生改變。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Emitted when window title bar decorations are changed, e.g. macOS window enter/e
 
 **visibility_changed**\ (\ ) :ref:`🔗<class_Window_signal_visibility_changed>`
 
-Emitted when **Window** is made visible or disappears.
+顯示或隱藏該 **Window** 時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Emitted when **Window** is made visible or disappears.
 
 **window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_window_input>`
 
-Emitted when the **Window** is currently focused and receives any input, passing the received event as an argument. The event's position, if present, is in the embedder's coordinate system.
+該 **Window** 持有焦點並收到任何輸入時發出，會把收到的事件作為參數傳入。該事件如果存在位置屬性，該位置使用嵌入器的坐標系。
 
 .. rst-class:: classref-section-separator
 
@@ -511,8 +511,8 @@ Emitted when the **Window** is currently focused and receives any input, passing
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Window_Mode:
 
@@ -526,7 +526,7 @@ enum **Mode**: :ref:`🔗<enum_Window_Mode>`
 
 :ref:`Mode<enum_Window_Mode>` **MODE_WINDOWED** = ``0``
 
-Windowed mode, i.e. **Window** doesn't occupy the whole screen (unless set to the size of the screen).
+視窗模式，即 **Window** 不佔據整個螢幕（除非設定為螢幕的大小）。
 
 .. _class_Window_constant_MODE_MINIMIZED:
 
@@ -534,7 +534,7 @@ Windowed mode, i.e. **Window** doesn't occupy the whole screen (unless set to th
 
 :ref:`Mode<enum_Window_Mode>` **MODE_MINIMIZED** = ``1``
 
-Minimized window mode, i.e. **Window** is not visible and available on window manager's window list. Normally happens when the minimize button is pressed.
+最小化視窗模式，即 **Window** 在視窗管理器的視窗列表中既不可見也不可用。通常發生在按下最小化按鈕時。
 
 .. _class_Window_constant_MODE_MAXIMIZED:
 
@@ -542,7 +542,7 @@ Minimized window mode, i.e. **Window** is not visible and available on window ma
 
 :ref:`Mode<enum_Window_Mode>` **MODE_MAXIMIZED** = ``2``
 
-Maximized window mode, i.e. **Window** will occupy whole screen area except task bar and still display its borders. Normally happens when the maximize button is pressed.
+最大化視窗模式，即 **Window** 會佔據整個螢幕區域，工作列除外，並且會顯示邊框。通常發生在按下最大化按鈕時。
 
 .. _class_Window_constant_MODE_FULLSCREEN:
 
@@ -600,7 +600,7 @@ enum **Flags**: :ref:`🔗<enum_Window_Flags>`
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_RESIZE_DISABLED** = ``0``
 
-The window can't be resized by dragging its resize grip. It's still possible to resize the window using :ref:`size<class_Window_property_size>`. This flag is ignored for full screen windows. Set with :ref:`unresizable<class_Window_property_unresizable>`.
+該視窗不能通過拖動其調整大小的手柄來調整大小。仍然可以使用 :ref:`size<class_Window_property_size>` 來調整視窗的大小。這個旗標對於全屏視窗來說是被忽略的。用 :ref:`unresizable<class_Window_property_unresizable>` 設置。
 
 .. _class_Window_constant_FLAG_BORDERLESS:
 
@@ -608,7 +608,7 @@ The window can't be resized by dragging its resize grip. It's still possible to 
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_BORDERLESS** = ``1``
 
-The window do not have native title bar and other decorations. This flag is ignored for full-screen windows. Set with :ref:`borderless<class_Window_property_borderless>`.
+該視窗沒有原生標題列和其他裝飾。全屏視窗會忽略該旗標。由 :ref:`borderless<class_Window_property_borderless>` 設定。
 
 .. _class_Window_constant_FLAG_ALWAYS_ON_TOP:
 
@@ -616,7 +616,7 @@ The window do not have native title bar and other decorations. This flag is igno
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_ALWAYS_ON_TOP** = ``2``
 
-The window is floating on top of all other windows. This flag is ignored for full-screen windows. Set with :ref:`always_on_top<class_Window_property_always_on_top>`.
+該視窗漂浮在所有其他視窗之上。全屏視窗會忽略該旗標。由 :ref:`always_on_top<class_Window_property_always_on_top>` 設定。
 
 .. _class_Window_constant_FLAG_TRANSPARENT:
 
@@ -624,9 +624,9 @@ The window is floating on top of all other windows. This flag is ignored for ful
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_TRANSPARENT** = ``3``
 
-The window background can be transparent. Set with :ref:`transparent<class_Window_property_transparent>`.
+該視窗的背景可以是透明的。使用 :ref:`transparent<class_Window_property_transparent>` 設定。
 
-\ **Note:** This flag has no effect if either :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>`, or the window's :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` is set to ``false``.
+\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` 或該視窗的 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 為 ``false``\ ，則這個旗標無效。
 
 .. _class_Window_constant_FLAG_NO_FOCUS:
 
@@ -634,7 +634,7 @@ The window background can be transparent. Set with :ref:`transparent<class_Windo
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_NO_FOCUS** = ``4``
 
-The window can't be focused. No-focus window will ignore all input, except mouse clicks. Set with :ref:`unfocusable<class_Window_property_unfocusable>`.
+該視窗無法被聚焦。無焦點視窗會忽略除滑鼠點擊之外的所有輸入。由 :ref:`unfocusable<class_Window_property_unfocusable>` 設定。
 
 .. _class_Window_constant_FLAG_POPUP:
 
@@ -642,9 +642,9 @@ The window can't be focused. No-focus window will ignore all input, except mouse
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_POPUP** = ``5``
 
-Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This flag can't be changed when the window is visible. An active popup window will exclusively receive all input, without stealing focus from its parent. Popup windows are automatically closed when uses click outside it, or when an application is switched. Popup window must have transient parent set (see :ref:`transient<class_Window_property_transient>`).
+視窗為功能表或 :ref:`OptionButton<class_OptionButton>` 下拉式功能表的一部分。視窗可見時無法更改這個旗標。活動的快顯視窗會以獨佔的形式接收所有輸入，但不會從其父視窗竊取焦點。使用者在區域外點擊或切換套用程式時，快顯視窗會自動關閉。快顯視窗必須設定臨時父級（見 :ref:`transient<class_Window_property_transient>`\ ）。
 
-\ **Note:** This flag has no effect in embedded windows (unless said window is a :ref:`Popup<class_Popup>`).
+\ **注意：**\ 這個旗標在嵌入式視窗中無效（除非該視窗是 :ref:`Popup<class_Popup>`\ ）。
 
 .. _class_Window_constant_FLAG_EXTEND_TO_TITLE:
 
@@ -652,11 +652,11 @@ Window is part of menu or :ref:`OptionButton<class_OptionButton>` dropdown. This
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_EXTEND_TO_TITLE** = ``6``
 
-Window content is expanded to the full size of the window. Unlike borderless window, the frame is left intact and can be used to resize the window, title bar is transparent, but have minimize/maximize/close buttons. Set with :ref:`extend_to_title<class_Window_property_extend_to_title>`.
+視窗內容擴充到視窗的全部尺寸。與無邊框視窗不同，框架保持不變，可以用來調整窗口的大小，標題列是透明的，但有最小/最大/關閉按鈕。用 :ref:`extend_to_title<class_Window_property_extend_to_title>` 設定。
 
-\ **Note:** This flag is implemented only on macOS.
+\ **注意：**\ 這個旗標在 macOS 上實作。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 這個旗標在嵌入式視窗中無效。
 
 .. _class_Window_constant_FLAG_MOUSE_PASSTHROUGH:
 
@@ -664,9 +664,9 @@ Window content is expanded to the full size of the window. Unlike borderless win
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MOUSE_PASSTHROUGH** = ``7``
 
-All mouse events are passed to the underlying window of the same application.
+所有滑鼠事件都被傳遞到同一套用程式的底層視窗。
 
-\ **Note:** This flag has no effect in embedded windows.
+\ **注意：**\ 這個旗標在嵌入式視窗中無效。
 
 .. _class_Window_constant_FLAG_SHARP_CORNERS:
 
@@ -728,7 +728,7 @@ Window maximize button is disabled.
 
 :ref:`Flags<enum_Window_Flags>` **FLAG_MAX** = ``13``
 
-Max value of the :ref:`Flags<enum_Window_Flags>`.
+:ref:`Flags<enum_Window_Flags>` 的最大值。
 
 .. rst-class:: classref-item-separator
 
@@ -754,7 +754,7 @@ The content will not be scaled to match the **Window**'s size (:ref:`content_sca
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_CANVAS_ITEMS** = ``1``
 
-The content will be rendered at the target size. This is more performance-expensive than :ref:`CONTENT_SCALE_MODE_VIEWPORT<class_Window_constant_CONTENT_SCALE_MODE_VIEWPORT>`, but provides better results.
+會將內容按照目標大小算繪。比 :ref:`CONTENT_SCALE_MODE_VIEWPORT<class_Window_constant_CONTENT_SCALE_MODE_VIEWPORT>` 更消耗性能，但結果更佳。
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_VIEWPORT:
 
@@ -762,7 +762,7 @@ The content will be rendered at the target size. This is more performance-expens
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_VIEWPORT** = ``2``
 
-The content will be rendered at the base size and then scaled to the target size. More performant than :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>`, but results in pixelated image.
+會將內容按照原始大小算繪，然後再縮放到目標大小。比 :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` 性能更高，但會導致圖像的圖元化。
 
 .. rst-class:: classref-item-separator
 
@@ -780,7 +780,7 @@ enum **ContentScaleAspect**: :ref:`🔗<enum_Window_ContentScaleAspect>`
 
 :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **CONTENT_SCALE_ASPECT_IGNORE** = ``0``
 
-The aspect will be ignored. Scaling will simply stretch the content to fit the target size.
+會忽略縱橫比。縮放就是簡單地將內容拉伸至目標大小。
 
 .. _class_Window_constant_CONTENT_SCALE_ASPECT_KEEP:
 
@@ -788,7 +788,7 @@ The aspect will be ignored. Scaling will simply stretch the content to fit the t
 
 :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **CONTENT_SCALE_ASPECT_KEEP** = ``1``
 
-The content's aspect will be preserved. If the target size has different aspect from the base one, the image will be centered and black bars will appear on left and right sides.
+會保留內容的縱橫比。如果目標大小與原始大小的縱橫比不同，則會將圖像居中，左右兩側會出現黑條。
 
 .. _class_Window_constant_CONTENT_SCALE_ASPECT_KEEP_WIDTH:
 
@@ -796,7 +796,7 @@ The content's aspect will be preserved. If the target size has different aspect 
 
 :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **CONTENT_SCALE_ASPECT_KEEP_WIDTH** = ``2``
 
-The content can be expanded vertically. Scaling horizontally will result in keeping the width ratio and then black bars on left and right sides.
+內容可以垂直擴充。橫向縮放時，會保留寬度比，在左右兩側新增黑條。
 
 .. _class_Window_constant_CONTENT_SCALE_ASPECT_KEEP_HEIGHT:
 
@@ -804,7 +804,7 @@ The content can be expanded vertically. Scaling horizontally will result in keep
 
 :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **CONTENT_SCALE_ASPECT_KEEP_HEIGHT** = ``3``
 
-The content can be expanded horizontally. Scaling vertically will result in keeping the height ratio and then black bars on top and bottom sides.
+內容可以水平擴充。縱向縮放時，會保留高度比，在上下兩側新增黑條。
 
 .. _class_Window_constant_CONTENT_SCALE_ASPECT_EXPAND:
 
@@ -812,7 +812,7 @@ The content can be expanded horizontally. Scaling vertically will result in keep
 
 :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **CONTENT_SCALE_ASPECT_EXPAND** = ``4``
 
-The content's aspect will be preserved. If the target size has different aspect from the base one, the content will stay in the top-left corner and add an extra visible area in the stretched space.
+會保留內容的縱橫比。如果目標大小與原始大小的縱橫比不同，則內容會保持在左上角，將拉伸出的空間增加為可見區域。
 
 .. rst-class:: classref-item-separator
 
@@ -830,7 +830,7 @@ enum **ContentScaleStretch**: :ref:`🔗<enum_Window_ContentScaleStretch>`
 
 :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` **CONTENT_SCALE_STRETCH_FRACTIONAL** = ``0``
 
-The content will be stretched according to a fractional factor. This fills all the space available in the window, but allows "pixel wobble" to occur due to uneven pixel scaling.
+內容將根據分數因子進行拉伸。這會填充視窗中的所有可用空間，但會由於像素縮放不均勻而導致出現“像素擺動”。
 
 .. _class_Window_constant_CONTENT_SCALE_STRETCH_INTEGER:
 
@@ -838,7 +838,7 @@ The content will be stretched according to a fractional factor. This fills all t
 
 :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` **CONTENT_SCALE_STRETCH_INTEGER** = ``1``
 
-The content will be stretched only according to an integer factor, preserving sharp pixels. This may leave a black background visible on the window's edges depending on the window size.
+內容將僅根據整數因子進行拉伸，保留銳利像素。這可能會在視窗邊緣留下可見的黑色背景，具體取決於視窗大小。
 
 .. rst-class:: classref-item-separator
 
@@ -856,7 +856,7 @@ enum **LayoutDirection**: :ref:`🔗<enum_Window_LayoutDirection>`
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_INHERITED** = ``0``
 
-Automatic layout direction, determined from the parent window layout direction.
+自動佈局方向，由父視窗的佈局方向決定。
 
 .. _class_Window_constant_LAYOUT_DIRECTION_APPLICATION_LOCALE:
 
@@ -864,7 +864,7 @@ Automatic layout direction, determined from the parent window layout direction.
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_APPLICATION_LOCALE** = ``1``
 
-Automatic layout direction, determined from the current locale.
+自動佈局方向，根據目前語言環境確定。
 
 .. _class_Window_constant_LAYOUT_DIRECTION_LTR:
 
@@ -872,7 +872,7 @@ Automatic layout direction, determined from the current locale.
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_LTR** = ``2``
 
-Left-to-right layout direction.
+從左至右的佈局方向。
 
 .. _class_Window_constant_LAYOUT_DIRECTION_RTL:
 
@@ -880,7 +880,7 @@ Left-to-right layout direction.
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_RTL** = ``3``
 
-Right-to-left layout direction.
+從右至左的佈局方向。
 
 .. _class_Window_constant_LAYOUT_DIRECTION_SYSTEM_LOCALE:
 
@@ -904,7 +904,7 @@ Represents the size of the :ref:`LayoutDirection<enum_Window_LayoutDirection>` e
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **LAYOUT_DIRECTION_LOCALE** = ``1``
 
-**Deprecated:** Use :ref:`LAYOUT_DIRECTION_APPLICATION_LOCALE<class_Window_constant_LAYOUT_DIRECTION_APPLICATION_LOCALE>` instead.
+**已棄用：** Use :ref:`LAYOUT_DIRECTION_APPLICATION_LOCALE<class_Window_constant_LAYOUT_DIRECTION_APPLICATION_LOCALE>` instead.
 
 
 
@@ -924,7 +924,7 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 
 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **WINDOW_INITIAL_POSITION_ABSOLUTE** = ``0``
 
-Initial window position is determined by :ref:`position<class_Window_property_position>`.
+初始視窗位置由 :ref:`position<class_Window_property_position>` 決定。
 
 .. _class_Window_constant_WINDOW_INITIAL_POSITION_CENTER_PRIMARY_SCREEN:
 
@@ -932,7 +932,7 @@ Initial window position is determined by :ref:`position<class_Window_property_po
 
 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **WINDOW_INITIAL_POSITION_CENTER_PRIMARY_SCREEN** = ``1``
 
-Initial window position is the center of the primary screen.
+初始視窗位置為主螢幕的中心。
 
 .. _class_Window_constant_WINDOW_INITIAL_POSITION_CENTER_MAIN_WINDOW_SCREEN:
 
@@ -940,7 +940,7 @@ Initial window position is the center of the primary screen.
 
 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **WINDOW_INITIAL_POSITION_CENTER_MAIN_WINDOW_SCREEN** = ``2``
 
-Initial window position is the center of the main window screen.
+初始視窗位置為主視窗螢幕的中心。
 
 .. _class_Window_constant_WINDOW_INITIAL_POSITION_CENTER_OTHER_SCREEN:
 
@@ -948,7 +948,7 @@ Initial window position is the center of the main window screen.
 
 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **WINDOW_INITIAL_POSITION_CENTER_OTHER_SCREEN** = ``3``
 
-Initial window position is the center of :ref:`current_screen<class_Window_property_current_screen>` screen.
+初始視窗位置為 :ref:`current_screen<class_Window_property_current_screen>` 螢幕的中心。
 
 .. _class_Window_constant_WINDOW_INITIAL_POSITION_CENTER_SCREEN_WITH_MOUSE_FOCUS:
 
@@ -956,7 +956,7 @@ Initial window position is the center of :ref:`current_screen<class_Window_prope
 
 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **WINDOW_INITIAL_POSITION_CENTER_SCREEN_WITH_MOUSE_FOCUS** = ``4``
 
-Initial window position is the center of the screen containing the mouse pointer.
+初始視窗位置為滑鼠指標所在螢幕的中心。
 
 .. _class_Window_constant_WINDOW_INITIAL_POSITION_CENTER_SCREEN_WITH_KEYBOARD_FOCUS:
 
@@ -964,7 +964,7 @@ Initial window position is the center of the screen containing the mouse pointer
 
 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **WINDOW_INITIAL_POSITION_CENTER_SCREEN_WITH_KEYBOARD_FOCUS** = ``5``
 
-Initial window position is the center of the screen containing the window with the keyboard focus.
+初始視窗位置為鍵盤聚焦的視窗所在螢幕的中心。
 
 .. rst-class:: classref-section-separator
 
@@ -972,8 +972,8 @@ Initial window position is the center of the screen containing the window with t
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_Window_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -981,7 +981,7 @@ Constants
 
 **NOTIFICATION_VISIBILITY_CHANGED** = ``30`` :ref:`🔗<class_Window_constant_NOTIFICATION_VISIBILITY_CHANGED>`
 
-Emitted when **Window**'s visibility changes, right before :ref:`visibility_changed<class_Window_signal_visibility_changed>`.
+該 **Window** 的可見性發生改變時，在 :ref:`visibility_changed<class_Window_signal_visibility_changed>` 之前發出。
 
 .. _class_Window_constant_NOTIFICATION_THEME_CHANGED:
 
@@ -989,15 +989,15 @@ Emitted when **Window**'s visibility changes, right before :ref:`visibility_chan
 
 **NOTIFICATION_THEME_CHANGED** = ``32`` :ref:`🔗<class_Window_constant_NOTIFICATION_THEME_CHANGED>`
 
-Sent when the node needs to refresh its theme items. This happens in one of the following cases:
+當節點需要更新其主題項時發送。以下任意情況都會觸發：
 
-- The :ref:`theme<class_Window_property_theme>` property is changed on this node or any of its ancestors.
+- 此節點或其任何祖先節點更改了 :ref:`theme<class_Window_property_theme>` 屬性。
 
-- The :ref:`theme_type_variation<class_Window_property_theme_type_variation>` property is changed on this node.
+- 此節點更改了 :ref:`theme_type_variation<class_Window_property_theme_type_variation>` 屬性。
 
-- The node enters the scene tree.
+- 節點進入場景樹。
 
-\ **Note:** As an optimization, this notification won't be sent from changes that occur while this node is outside of the scene tree. Instead, all of the theme item updates can be applied at once when the node enters the scene tree.
+\ **注意：**\ 為了優化性能，此節點在場景樹之外發生更改時不會發送此通知。取而代之的是，當節點進入場景樹時會均勻套用所有主題項的更新。
 
 .. rst-class:: classref-section-separator
 
@@ -1005,8 +1005,8 @@ Sent when the node needs to refresh its theme items. This happens in one of the 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Window_property_accessibility_description:
 
@@ -1053,7 +1053,7 @@ The human-readable node name that is reported to assistive apps.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the window will be on top of all other windows. Does not work if :ref:`transient<class_Window_property_transient>` is enabled.
+如果為 ``true``\ ，則該視窗將位於所有其他視窗的頂部。如果啟用了 :ref:`transient<class_Window_property_transient>` 則不起作用。
 
 .. rst-class:: classref-item-separator
 
@@ -1070,9 +1070,9 @@ If ``true``, the window will be on top of all other windows. Does not work if :r
 - |void| **set_auto_translate**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_auto_translating**\ (\ )
 
-**Deprecated:** Use :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` and :ref:`Node.can_auto_translate()<class_Node_method_can_auto_translate>` instead.
+**已棄用：** Use :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` and :ref:`Node.can_auto_translate()<class_Node_method_can_auto_translate>` instead.
 
-Toggles if any text should automatically change to its translated version depending on the current locale.
+切換是否所有文字都應該根據目前區域設定自動變為翻譯後的版本。
 
 .. rst-class:: classref-item-separator
 
@@ -1089,7 +1089,7 @@ Toggles if any text should automatically change to its translated version depend
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the window will have no borders.
+如果為 ``true``\ ，則該視窗將沒有邊框。
 
 .. rst-class:: classref-item-separator
 
@@ -1106,7 +1106,7 @@ If ``true``, the window will have no borders.
 - |void| **set_content_scale_aspect**\ (\ value\: :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>`\ )
 - :ref:`ContentScaleAspect<enum_Window_ContentScaleAspect>` **get_content_scale_aspect**\ (\ )
 
-Specifies how the content's aspect behaves when the **Window** is resized. The base aspect is determined by :ref:`content_scale_size<class_Window_property_content_scale_size>`.
+指定當 **Window** 的大小改變時，內容縱橫比的行為。基礎縱橫比由 :ref:`content_scale_size<class_Window_property_content_scale_size>` 決定。
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Specifies the base scale of **Window**'s content when its :ref:`size<class_Windo
 - |void| **set_content_scale_mode**\ (\ value\: :ref:`ContentScaleMode<enum_Window_ContentScaleMode>`\ )
 - :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **get_content_scale_mode**\ (\ )
 
-Specifies how the content is scaled when the **Window** is resized.
+指定當 **Window** 的大小改變時，如何對內容進行縮放。
 
 .. rst-class:: classref-item-separator
 
@@ -1178,7 +1178,7 @@ See `the Base size section of the Multiple resolutions documentation <../tutoria
 - |void| **set_content_scale_stretch**\ (\ value\: :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>`\ )
 - :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` **get_content_scale_stretch**\ (\ )
 
-The policy to use to determine the final scale factor for 2D elements. This affects how :ref:`content_scale_factor<class_Window_property_content_scale_factor>` is applied, in addition to the automatic scale factor determined by :ref:`content_scale_size<class_Window_property_content_scale_size>`.
+用於確定 2D 元素的最終比例因子的策略。除了由 :ref:`content_scale_size<class_Window_property_content_scale_size>` 確定的自動比例因子之外，這還會影響 :ref:`content_scale_factor<class_Window_property_content_scale_factor>` 的應用方式。
 
 .. rst-class:: classref-item-separator
 
@@ -1195,7 +1195,7 @@ The policy to use to determine the final scale factor for 2D elements. This affe
 - |void| **set_current_screen**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_current_screen**\ (\ )
 
-The screen the window is currently on.
+該視窗目前所在的螢幕。
 
 .. rst-class:: classref-item-separator
 
@@ -1233,9 +1233,9 @@ If ``true``, the **Window** is excluded from screenshots taken by :ref:`DisplayS
 - |void| **set_exclusive**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclusive**\ (\ )
 
-If ``true``, the **Window** will be in exclusive mode. Exclusive windows are always on top of their parent and will block all input going to the parent **Window**.
+如果為 ``true``\ ，則 **Window** 將處於獨佔模式。獨佔視窗總是在其父視窗的頂部，會阻止所有輸入到達父級 **Window**\ 。
 
-Needs :ref:`transient<class_Window_property_transient>` enabled to work.
+需要啟用 :ref:`transient<class_Window_property_transient>` 才能正常工作。
 
 .. rst-class:: classref-item-separator
 
@@ -1252,11 +1252,11 @@ Needs :ref:`transient<class_Window_property_transient>` enabled to work.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window** contents is expanded to the full size of the window, window title bar is transparent.
+如果為 ``true``\ ，則 **Window** 的內容將會擴充到視窗的完整大小，視窗標題欄是透明的。
 
-\ **Note:** This property is implemented only on macOS.
+\ **注意：**\ 這個屬性僅在 macOS 上實作。
 
-\ **Note:** This property only works with native windows.
+\ **注意：**\ 這個屬性僅對原生視窗有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1324,9 +1324,9 @@ If ``true``, the **Window** width is expanded to keep the title bar text fully v
 - |void| **set_max_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_max_size**\ (\ )
 
-If non-zero, the **Window** can't be resized to be bigger than this size.
+如果非零，則調整該 **Window** 的大小時無法大於該尺寸。
 
-\ **Note:** This property will be ignored if the value is lower than :ref:`min_size<class_Window_property_min_size>`.
+\ **注意：**\ 如果值小於 :ref:`min_size<class_Window_property_min_size>`\ ，該屬性將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -1364,9 +1364,9 @@ If ``true``, the **Window**'s maximize button is disabled.
 - |void| **set_min_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_min_size**\ (\ )
 
-If non-zero, the **Window** can't be resized to be smaller than this size.
+如果非零，則調整該 **Window** 的大小時無法小於該尺寸。
 
-\ **Note:** This property will be ignored in favor of :ref:`get_contents_minimum_size()<class_Window_method_get_contents_minimum_size>` if :ref:`wrap_controls<class_Window_property_wrap_controls>` is enabled and if its size is bigger.
+\ **注意：**\ 如果啟用了 :ref:`wrap_controls<class_Window_property_wrap_controls>` 並且 :ref:`get_contents_minimum_size()<class_Window_method_get_contents_minimum_size>` 更大，則此屬性將被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -1404,11 +1404,11 @@ If ``true``, the **Window**'s minimize button is disabled.
 - |void| **set_mode**\ (\ value\: :ref:`Mode<enum_Window_Mode>`\ )
 - :ref:`Mode<enum_Window_Mode>` **get_mode**\ (\ )
 
-Set's the window's current mode.
+設定該視窗的目前模式。
 
-\ **Note:** Fullscreen mode is not exclusive full screen on Windows and Linux.
+\ **注意：**\ 在 Windows 和 Linux 上，全屏與獨佔全屏是不同的模式。
 
-\ **Note:** This method only works with native windows, i.e. the main window and **Window**-derived nodes when :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` is disabled in the main viewport.
+\ **注意：**\ 這個方法僅對原生視窗有效，即主視窗和禁用主視口 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>` 時的 **Window** 衍生節點。
 
 .. rst-class:: classref-item-separator
 
@@ -1425,11 +1425,11 @@ Set's the window's current mode.
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, all mouse events will be passed to the underlying window of the same application. See also :ref:`mouse_passthrough_polygon<class_Window_property_mouse_passthrough_polygon>`.
+如果為 ``true``\ ，則所有滑鼠事件都會傳遞給同一套用的底層視窗。另見 :ref:`mouse_passthrough_polygon<class_Window_property_mouse_passthrough_polygon>`\ 。
 
-\ **Note:** This property is implemented on Linux (X11), macOS and Windows.
+\ **注意：**\ 這個屬性在 Linux（X11）、macOS 和 Windows 上實作。
 
-\ **Note:** This property only works with native windows.
+\ **注意：**\ 這個屬性僅對原生視窗有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1517,7 +1517,7 @@ If set, defines the window's custom decoration area which will receive mouse inp
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window** will be considered a popup. Popups are sub-windows that don't show as separate windows in system's window manager's window list and will send close request when anything is clicked outside of them (unless :ref:`exclusive<class_Window_property_exclusive>` is enabled).
+如果為 ``true``\ ，則該 **Window** 將被視為快顯視窗。快顯視窗是子視窗，不會在系統視窗管理器的視窗列表中顯示為單獨的視窗，並且會在按一下它們之外的任何位置時發送關閉請求（除非啟用了 :ref:`exclusive<class_Window_property_exclusive>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1551,11 +1551,11 @@ If ``true``, the **Window** will signal to the window manager that it is suppose
 - |void| **set_position**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_position**\ (\ )
 
-The window's position in pixels.
+該視窗的位置，單位為圖元。
 
-If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` is ``false``, the position is in absolute screen coordinates. This typically applies to editor plugins. If the setting is ``true``, the window's position is in the coordinates of its parent :ref:`Viewport<class_Viewport>`.
+如果 :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>` 為 ``false``\ ，則該位置使用螢幕絕對座標。通常適用於編輯器外掛程式。如果該設置項為 ``true``\ ，則該視窗的位置使用其父 :ref:`Viewport<class_Viewport>` 中的座標。
 
-\ **Note:** This property only works if :ref:`initial_position<class_Window_property_initial_position>` is set to :ref:`WINDOW_INITIAL_POSITION_ABSOLUTE<class_Window_constant_WINDOW_INITIAL_POSITION_ABSOLUTE>`.
+\ **注意：**\ 這個屬性僅在 :ref:`initial_position<class_Window_property_initial_position>` 為 :ref:`WINDOW_INITIAL_POSITION_ABSOLUTE<class_Window_constant_WINDOW_INITIAL_POSITION_ABSOLUTE>` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -1610,9 +1610,9 @@ The window's size in pixels. See also :ref:`content_scale_size<class_Window_prop
 - |void| **set_theme**\ (\ value\: :ref:`Theme<class_Theme>`\ )
 - :ref:`Theme<class_Theme>` **get_theme**\ (\ )
 
-The :ref:`Theme<class_Theme>` resource this node and all its :ref:`Control<class_Control>` and **Window** children use. If a child node has its own :ref:`Theme<class_Theme>` resource set, theme items are merged with child's definitions having higher priority.
+該節點及其子 :ref:`Control<class_Control>` 和 **Window** 所使用的 :ref:`Theme<class_Theme>` 資源。如果子節點也設定了 :ref:`Theme<class_Theme>` 資源，則會合並主題項，子節點的定義優先順序更高。
 
-\ **Note:** **Window** styles will have no effect unless the window is embedded.
+\ **注意：**\ 除非 **Window** 為嵌入式，否則視窗樣式無效。
 
 .. rst-class:: classref-item-separator
 
@@ -1629,7 +1629,7 @@ The :ref:`Theme<class_Theme>` resource this node and all its :ref:`Control<class
 - |void| **set_theme_type_variation**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_theme_type_variation**\ (\ )
 
-The name of a theme type variation used by this **Window** to look up its own theme items. See :ref:`Control.theme_type_variation<class_Control_property_theme_type_variation>` for more details.
+此 **Window** 用於搜尋其自己的主題專案的主題型別變體的名稱。詳情見 :ref:`Control.theme_type_variation<class_Control_property_theme_type_variation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1646,7 +1646,7 @@ The name of a theme type variation used by this **Window** to look up its own th
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The window's title. If the **Window** is native, title styles set in :ref:`Theme<class_Theme>` will have no effect.
+該視窗的標題。如果 **Window** 是原生的，則 :ref:`Theme<class_Theme>` 中設定的標題樣式無效。
 
 .. rst-class:: classref-item-separator
 
@@ -1663,9 +1663,9 @@ The window's title. If the **Window** is native, title styles set in :ref:`Theme
 - |void| **set_transient**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_transient**\ (\ )
 
-If ``true``, the **Window** is transient, i.e. it's considered a child of another **Window**. The transient window will be destroyed with its transient parent and will return focus to their parent when closed. The transient window is displayed on top of a non-exclusive full-screen parent window. Transient windows can't enter full-screen mode.
+如果為 ``true`` 則該 **Window** 是臨時視窗，即會被認為是另一個 **Window** 的子級。臨時視窗會和臨時父級一起銷毀，關閉時會將焦點返還給父級。臨時視窗顯示在非獨占全屏父視窗之上。臨時視窗無法進入全屏模式。
 
-Note that behavior might be different depending on the platform.
+請注意，不同平臺可能由不同的行為。
 
 .. rst-class:: classref-item-separator
 
@@ -1720,7 +1720,7 @@ If ``true``, the **Window**'s background can be transparent. This is best used w
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-If ``true``, the **Window** can't be focused nor interacted with. It can still be visible.
+如果為 ``true``\ ，則該 **Window** 既無法聚焦也無法互動，但仍然可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1754,7 +1754,7 @@ If ``true``, the window can't be resized.
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-If ``true``, the window is visible.
+如果為 ``true``\ ，則該視窗可見。
 
 .. rst-class:: classref-item-separator
 
@@ -1771,9 +1771,9 @@ If ``true``, the window is visible.
 - |void| **set_wrap_controls**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_wrapping_controls**\ (\ )
 
-If ``true``, the window's size will automatically update when a child node is added or removed, ignoring :ref:`min_size<class_Window_property_min_size>` if the new size is bigger.
+如果為 ``true``\ ，則新增或刪除子節點時，視窗的大小會自動更新，新的大小更大時會忽略 :ref:`min_size<class_Window_property_min_size>`\ 。
 
-If ``false``, you need to call :ref:`child_controls_changed()<class_Window_method_child_controls_changed>` manually.
+如果為 ``false``\ ，則需要手動呼叫 :ref:`child_controls_changed()<class_Window_method_child_controls_changed>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -1781,8 +1781,8 @@ If ``false``, you need to call :ref:`child_controls_changed()<class_Window_metho
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Window_private_method__get_contents_minimum_size:
 
@@ -1790,7 +1790,7 @@ Method Descriptions
 
 :ref:`Vector2<class_Vector2>` **_get_contents_minimum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_Window_private_method__get_contents_minimum_size>`
 
-Virtual method to be implemented by the user. Overrides the value returned by :ref:`get_contents_minimum_size()<class_Window_method_get_contents_minimum_size>`.
+可以被使用者重寫的虛方法。在匯出完成後被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -1802,9 +1802,9 @@ Virtual method to be implemented by the user. Overrides the value returned by :r
 
 |void| **add_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Window_method_add_theme_color_override>`
 
-Creates a local override for a theme :ref:`Color<class_Color>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_color_override()<class_Window_method_remove_theme_color_override>`.
+為名為 ``name`` 的主題 :ref:`Color<class_Color>` 建立本地覆蓋項。為控制項獲取主題時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_color_override()<class_Window_method_remove_theme_color_override>` 移除。
 
-See also :ref:`get_theme_color()<class_Window_method_get_theme_color>` and :ref:`Control.add_theme_color_override()<class_Control_method_add_theme_color_override>` for more details.
+詳情請參閱 :ref:`get_theme_color()<class_Window_method_get_theme_color>` 和 :ref:`Control.add_theme_color_override()<class_Control_method_add_theme_color_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1816,9 +1816,9 @@ See also :ref:`get_theme_color()<class_Window_method_get_theme_color>` and :ref:
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_constant_override>`
 
-Creates a local override for a theme constant with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>`.
+為名稱為 ``name`` 的主題常數建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>` 移除。
 
-See also :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`.
+另見 :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1830,9 +1830,9 @@ See also :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`.
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Window_method_add_theme_font_override>`
 
-Creates a local override for a theme :ref:`Font<class_Font>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>`.
+為名稱為 ``name`` 的主題 :ref:`Font<class_Font>` 建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>` 移除。
 
-See also :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
+另見 :ref:`get_theme_font()<class_Window_method_get_theme_font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1844,9 +1844,9 @@ See also :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_font_size_override>`
 
-Creates a local override for a theme font size with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>`.
+為名稱為 ``name`` 的主題字形大小建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>` 移除。
 
-See also :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`.
+另見 :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1858,9 +1858,9 @@ See also :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`.
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Window_method_add_theme_icon_override>`
 
-Creates a local override for a theme icon with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>`.
+為名稱為 ``name`` 的主題圖示建立本地覆蓋項。為控制項獲取主題專案時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>` 移除。
 
-See also :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`.
+另見 :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1872,9 +1872,9 @@ See also :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`.
 
 |void| **add_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_Window_method_add_theme_stylebox_override>`
 
-Creates a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_stylebox_override()<class_Window_method_remove_theme_stylebox_override>`.
+為名為 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 建立本地覆蓋項。為控制項獲取主題時，本地覆蓋項始終優先。覆蓋項可以使用 :ref:`remove_theme_stylebox_override()<class_Window_method_remove_theme_stylebox_override>` 移除。
 
-See also :ref:`get_theme_stylebox()<class_Window_method_get_theme_stylebox>` and :ref:`Control.add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>` for more details.
+詳情請參閱 :ref:`get_theme_stylebox()<class_Window_method_get_theme_stylebox>` 和 :ref:`Control.add_theme_stylebox_override()<class_Control_method_add_theme_stylebox_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1886,7 +1886,7 @@ See also :ref:`get_theme_stylebox()<class_Window_method_get_theme_stylebox>` and
 
 |void| **begin_bulk_theme_override**\ (\ ) :ref:`🔗<class_Window_method_begin_bulk_theme_override>`
 
-Prevents ``*_theme_*_override`` methods from emitting :ref:`NOTIFICATION_THEME_CHANGED<class_Window_constant_NOTIFICATION_THEME_CHANGED>` until :ref:`end_bulk_theme_override()<class_Window_method_end_bulk_theme_override>` is called.
+防止 ``*_theme_*_override`` 方法發出 :ref:`NOTIFICATION_THEME_CHANGED<class_Window_constant_NOTIFICATION_THEME_CHANGED>`\ ，直到 :ref:`end_bulk_theme_override()<class_Window_method_end_bulk_theme_override>` 被呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -1898,7 +1898,7 @@ Prevents ``*_theme_*_override`` methods from emitting :ref:`NOTIFICATION_THEME_C
 
 :ref:`bool<class_bool>` **can_draw**\ (\ ) |const| :ref:`🔗<class_Window_method_can_draw>`
 
-Returns whether the window is being drawn to the screen.
+返回該視窗是否正在被繪製到螢幕上。
 
 .. rst-class:: classref-item-separator
 
@@ -1910,7 +1910,7 @@ Returns whether the window is being drawn to the screen.
 
 |void| **child_controls_changed**\ (\ ) :ref:`🔗<class_Window_method_child_controls_changed>`
 
-Requests an update of the **Window** size to fit underlying :ref:`Control<class_Control>` nodes.
+請求更新 **Window** 大小以適應底層 :ref:`Control<class_Control>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -1922,7 +1922,7 @@ Requests an update of the **Window** size to fit underlying :ref:`Control<class_
 
 |void| **end_bulk_theme_override**\ (\ ) :ref:`🔗<class_Window_method_end_bulk_theme_override>`
 
-Ends a bulk theme override update. See :ref:`begin_bulk_theme_override()<class_Window_method_begin_bulk_theme_override>`.
+結束批量主題覆蓋更新。見 :ref:`begin_bulk_theme_override()<class_Window_method_begin_bulk_theme_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1948,7 +1948,7 @@ The value returned by this method can be overridden with :ref:`_get_contents_min
 
 :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const| :ref:`🔗<class_Window_method_get_flag>`
 
-Returns ``true`` if the ``flag`` is set.
+如果設定了旗標 ``flag``\ ，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1972,7 +1972,7 @@ Returns the focused window.
 
 :ref:`LayoutDirection<enum_Window_LayoutDirection>` **get_layout_direction**\ (\ ) |const| :ref:`🔗<class_Window_method_get_layout_direction>`
 
-Returns layout direction and text writing direction.
+返回排版方向和文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -2012,9 +2012,9 @@ Returns the window's size including its border.
 
 :ref:`Color<class_Color>` **get_theme_color**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_get_theme_color>`
 
-Returns a :ref:`Color<class_Color>` from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a color item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回 :ref:`Color<class_Color>`\ ，該 :ref:`Theme<class_Theme>` 中需要有名稱為 ``name`` 型別為 ``theme_type`` 的顏色專案。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for more details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2026,9 +2026,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for m
 
 :ref:`int<class_int>` **get_theme_constant**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_get_theme_constant>`
 
-Returns a constant from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a constant item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回常數，該 :ref:`Theme<class_Theme>` 中需要有名稱為 ``name`` 型別為 ``theme_type`` 的常數專案。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for more details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2040,9 +2040,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for m
 
 :ref:`float<class_float>` **get_theme_default_base_scale**\ (\ ) |const| :ref:`🔗<class_Window_method_get_theme_default_base_scale>`
 
-Returns the default base scale value from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a valid :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>` value.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回預設基礎縮放，該 :ref:`Theme<class_Theme>` 中需要具有有效的 :ref:`Theme.default_base_scale<class_Theme_property_default_base_scale>` 值。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2054,9 +2054,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`Font<class_Font>` **get_theme_default_font**\ (\ ) |const| :ref:`🔗<class_Window_method_get_theme_default_font>`
 
-Returns the default font from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a valid :ref:`Theme.default_font<class_Theme_property_default_font>` value.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回預設字形，該 :ref:`Theme<class_Theme>` 中需要具有有效的 :ref:`Theme.default_font<class_Theme_property_default_font>` 值。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2068,9 +2068,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`int<class_int>` **get_theme_default_font_size**\ (\ ) |const| :ref:`🔗<class_Window_method_get_theme_default_font_size>`
 
-Returns the default font size value from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a valid :ref:`Theme.default_font_size<class_Theme_property_default_font_size>` value.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回預設字形大小，該 :ref:`Theme<class_Theme>` 中需要具有有效的 :ref:`Theme.default_font_size<class_Theme_property_default_font_size>` 值。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2082,9 +2082,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`Font<class_Font>` **get_theme_font**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_get_theme_font>`
 
-Returns a :ref:`Font<class_Font>` from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a font item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回 :ref:`Font<class_Font>`\ ，該 :ref:`Theme<class_Theme>` 中需要有名稱為 ``name`` 型別為 ``theme_type`` 的字形專案。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2096,9 +2096,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`int<class_int>` **get_theme_font_size**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_get_theme_font_size>`
 
-Returns a font size from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a font size item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回字形大小，該 :ref:`Theme<class_Theme>` 中需要有名稱為 ``name`` 型別為 ``theme_type`` 的字形大小專案。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2110,9 +2110,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`Texture2D<class_Texture2D>` **get_theme_icon**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_get_theme_icon>`
 
-Returns an icon from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has an icon item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回圖示，該 :ref:`Theme<class_Theme>` 中需要有名稱為 ``name`` 型別為 ``theme_type`` 的圖示專案。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2124,9 +2124,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`StyleBox<class_StyleBox>` **get_theme_stylebox**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_get_theme_stylebox>`
 
-Returns a :ref:`StyleBox<class_StyleBox>` from the first matching :ref:`Theme<class_Theme>` in the tree if that :ref:`Theme<class_Theme>` has a stylebox item with the specified ``name`` and ``theme_type``.
+從樹中第一個配對的 :ref:`Theme<class_Theme>` 中返回 :ref:`StyleBox<class_StyleBox>`\ ，該 :ref:`Theme<class_Theme>` 中需要有名稱為 ``name`` 型別為 ``theme_type`` 的樣式盒專案。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2138,7 +2138,7 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`int<class_int>` **get_window_id**\ (\ ) |const| :ref:`🔗<class_Window_method_get_window_id>`
 
-Returns the ID of the window.
+返回該視窗的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -2150,7 +2150,7 @@ Returns the ID of the window.
 
 |void| **grab_focus**\ (\ ) :ref:`🔗<class_Window_method_grab_focus>`
 
-Causes the window to grab focus, allowing it to receive user input.
+使該視窗獲得焦點，從而接收使用者輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -2162,7 +2162,7 @@ Causes the window to grab focus, allowing it to receive user input.
 
 :ref:`bool<class_bool>` **has_focus**\ (\ ) |const| :ref:`🔗<class_Window_method_has_focus>`
 
-Returns ``true`` if the window is focused.
+如果該視窗已獲得焦點，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2174,9 +2174,9 @@ Returns ``true`` if the window is focused.
 
 :ref:`bool<class_bool>` **has_theme_color**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_has_theme_color>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a color item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>`\ ，具有指定名稱 ``name`` 和主題型別 ``theme_type`` 的顏色項，則返回 ``true``\ 。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2188,9 +2188,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`bool<class_bool>` **has_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Window_method_has_theme_color_override>`
 
-Returns ``true`` if there is a local override for a theme :ref:`Color<class_Color>` with the specified ``name`` in this :ref:`Control<class_Control>` node.
+如果該 :ref:`Control<class_Control>` 節點中存在名為指定 ``name`` 的主題 :ref:`Color<class_Color>` 本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>`.
+詳情請參閱 :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2202,9 +2202,9 @@ See :ref:`add_theme_color_override()<class_Window_method_add_theme_color_overrid
 
 :ref:`bool<class_bool>` **has_theme_constant**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_has_theme_constant>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a constant item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>`\ ，具有指定名稱 ``name`` 和主題型別 ``theme_type`` 的常數項，則返回 ``true``\ 。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2216,9 +2216,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`bool<class_bool>` **has_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Window_method_has_theme_constant_override>`
 
-Returns ``true`` if there is a local override for a theme constant with the specified ``name`` in this :ref:`Control<class_Control>` node.
+如果該 :ref:`Control<class_Control>` 節點中存在名為指定 ``name`` 的主題常數本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>`.
+詳情請參閱 :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2230,9 +2230,9 @@ See :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_o
 
 :ref:`bool<class_bool>` **has_theme_font**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_has_theme_font>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a font item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>`\ ，具有指定名稱 ``name`` 和主題型別 ``theme_type`` 的字形項，則返回 ``true``\ 。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2244,9 +2244,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`bool<class_bool>` **has_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Window_method_has_theme_font_override>`
 
-Returns ``true`` if there is a local override for a theme :ref:`Font<class_Font>` with the specified ``name`` in this :ref:`Control<class_Control>` node.
+如果該 :ref:`Control<class_Control>` 節點中存在名為指定 ``name`` 的主題 :ref:`Font<class_Font>` 本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>`.
+詳情請參閱 :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2258,9 +2258,9 @@ See :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>
 
 :ref:`bool<class_bool>` **has_theme_font_size**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_has_theme_font_size>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a font size item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>`\ ，具有指定名稱 ``name`` 和主題型別 ``theme_type`` 的字形大小項，則返回 ``true``\ 。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2272,9 +2272,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`bool<class_bool>` **has_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Window_method_has_theme_font_size_override>`
 
-Returns ``true`` if there is a local override for a theme font size with the specified ``name`` in this :ref:`Control<class_Control>` node.
+如果該 :ref:`Control<class_Control>` 節點中存在名為指定 ``name`` 的主題字形大小本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>`.
+詳情請參閱 :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2286,9 +2286,9 @@ See :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size
 
 :ref:`bool<class_bool>` **has_theme_icon**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_has_theme_icon>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has an icon item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>`\ ，具有指定名稱 ``name`` 和主題型別 ``theme_type`` 的圖示項，則返回 ``true``\ 。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2300,9 +2300,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`bool<class_bool>` **has_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Window_method_has_theme_icon_override>`
 
-Returns ``true`` if there is a local override for a theme icon with the specified ``name`` in this :ref:`Control<class_Control>` node.
+如果該 :ref:`Control<class_Control>` 節點中存在名為指定 ``name`` 的主題圖示本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>`.
+詳情請參閱 :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2314,9 +2314,9 @@ See :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>
 
 :ref:`bool<class_bool>` **has_theme_stylebox**\ (\ name\: :ref:`StringName<class_StringName>`, theme_type\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Window_method_has_theme_stylebox>`
 
-Returns ``true`` if there is a matching :ref:`Theme<class_Theme>` in the tree that has a stylebox item with the specified ``name`` and ``theme_type``.
+如果樹中存在配對的 :ref:`Theme<class_Theme>`\ ，具有指定名稱 ``name`` 和主題型別 ``theme_type`` 的樣式盒項，則返回 ``true``\ 。
 
-See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for details.
+詳情見 :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2328,9 +2328,9 @@ See :ref:`Control.get_theme_color()<class_Control_method_get_theme_color>` for d
 
 :ref:`bool<class_bool>` **has_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Window_method_has_theme_stylebox_override>`
 
-Returns ``true`` if there is a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name`` in this :ref:`Control<class_Control>` node.
+如果該 :ref:`Control<class_Control>` 節點中存在名為指定 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 本地覆蓋項，則返回 ``true``\ 。
 
-See :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>`.
+詳情請參閱 :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2342,7 +2342,7 @@ See :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_o
 
 |void| **hide**\ (\ ) :ref:`🔗<class_Window_method_hide>`
 
-Hides the window. This is not the same as minimized state. Hidden window can't be interacted with and needs to be made visible with :ref:`show()<class_Window_method_show>`.
+隱藏該視窗。與最小化狀態不同。隱藏視窗無法進行互動，需要用 :ref:`show()<class_Window_method_show>` 顯示。
 
 .. rst-class:: classref-item-separator
 
@@ -2354,7 +2354,7 @@ Hides the window. This is not the same as minimized state. Hidden window can't b
 
 :ref:`bool<class_bool>` **is_embedded**\ (\ ) |const| :ref:`🔗<class_Window_method_is_embedded>`
 
-Returns ``true`` if the window is currently embedded in another window.
+如果該視窗目前嵌入在其他視窗中，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2378,7 +2378,7 @@ Returns ``true`` if the layout is right-to-left.
 
 :ref:`bool<class_bool>` **is_maximize_allowed**\ (\ ) |const| :ref:`🔗<class_Window_method_is_maximize_allowed>`
 
-Returns ``true`` if the window can be maximized (the maximize button is enabled).
+如果該視窗可以最大化（啟用了最大化按鈕），則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2390,7 +2390,7 @@ Returns ``true`` if the window can be maximized (the maximize button is enabled)
 
 :ref:`bool<class_bool>` **is_using_font_oversampling**\ (\ ) |const| :ref:`🔗<class_Window_method_is_using_font_oversampling>`
 
-Returns ``true`` if font oversampling is enabled. See :ref:`set_use_font_oversampling()<class_Window_method_set_use_font_oversampling>`.
+如果啟用了字形過取樣，則返回 ``true``\ 。見 :ref:`set_use_font_oversampling()<class_Window_method_set_use_font_oversampling>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2414,9 +2414,9 @@ Centers the window in the current screen. If the window is embedded, it is cente
 
 |void| **move_to_foreground**\ (\ ) :ref:`🔗<class_Window_method_move_to_foreground>`
 
-**Deprecated:** Use :ref:`grab_focus()<class_Window_method_grab_focus>` instead.
+**已棄用：** Use :ref:`grab_focus()<class_Window_method_grab_focus>` instead.
 
-Causes the window to grab focus, allowing it to receive user input.
+使該視窗獲得焦點，從而接收使用者輸入。
 
 .. rst-class:: classref-item-separator
 
@@ -2446,9 +2446,9 @@ If :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 
 |void| **popup_centered**\ (\ minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0)\ ) :ref:`🔗<class_Window_method_popup_centered>`
 
-Popups the **Window** at the center of the current screen, with optionally given minimum size. If the **Window** is embedded, it will be centered in the parent :ref:`Viewport<class_Viewport>` instead.
+在目前螢幕的中心彈出該 **Window**\ ，可以選擇給定最小尺寸。如果該 **Window** 是嵌入的，它將在父 :ref:`Viewport<class_Viewport>` 中居中。
 
-\ **Note:** Calling it with the default value of ``minsize`` is equivalent to calling it with :ref:`size<class_Window_property_size>`.
+\ **注意：**\ 用 ``minsize`` 的預設值呼叫它等同於用 :ref:`size<class_Window_property_size>` 呼叫它。
 
 .. rst-class:: classref-item-separator
 
@@ -2460,9 +2460,9 @@ Popups the **Window** at the center of the current screen, with optionally given
 
 |void| **popup_centered_clamped**\ (\ minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0), fallback_ratio\: :ref:`float<class_float>` = 0.75\ ) :ref:`🔗<class_Window_method_popup_centered_clamped>`
 
-Popups the **Window** centered inside its parent **Window**. ``fallback_ratio`` determines the maximum size of the **Window**, in relation to its parent.
+在父 **Window** 中居中彈出該 **Window**\ 。\ ``fallback_ratio`` 確定 **Window** 相對於其父級的最大尺寸。
 
-\ **Note:** Calling it with the default value of ``minsize`` is equivalent to calling it with :ref:`size<class_Window_property_size>`.
+\ **注意：**\ 用 ``minsize`` 的預設值呼叫它等同於用 :ref:`size<class_Window_property_size>` 呼叫它。
 
 .. rst-class:: classref-item-separator
 
@@ -2474,9 +2474,9 @@ Popups the **Window** centered inside its parent **Window**. ``fallback_ratio`` 
 
 |void| **popup_centered_ratio**\ (\ ratio\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_Window_method_popup_centered_ratio>`
 
-If **Window** is embedded, popups the **Window** centered inside its embedder and sets its size as a ``ratio`` of embedder's size.
+如果 **Window** 為嵌入式視窗，則 **Window** 在彈出時會在嵌入器內居中，並按照嵌入器大小的比例 ``ratio`` 設定其大小。
 
-If **Window** is a native window, popups the **Window** centered inside the screen of its parent **Window** and sets its size as a ``ratio`` of the screen size.
+如果 **Window** 為原生視窗，則 **Window** 在彈出時會在其父 **Window** 所在螢幕內居中，並按照螢幕大小的比例 ``ratio`` 設定其大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2488,9 +2488,9 @@ If **Window** is a native window, popups the **Window** centered inside the scre
 
 |void| **popup_exclusive**\ (\ from_node\: :ref:`Node<class_Node>`, rect\: :ref:`Rect2i<class_Rect2i>` = Rect2i(0, 0, 0, 0)\ ) :ref:`🔗<class_Window_method_popup_exclusive>`
 
-Attempts to parent this dialog to the last exclusive window relative to ``from_node``, and then calls :ref:`popup()<class_Window_method_popup>` on it. The dialog must have no current parent, otherwise the method fails.
+嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup()<class_Window_method_popup>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
 
-See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` and :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`.
+另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2502,9 +2502,9 @@ See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_wh
 
 |void| **popup_exclusive_centered**\ (\ from_node\: :ref:`Node<class_Node>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0)\ ) :ref:`🔗<class_Window_method_popup_exclusive_centered>`
 
-Attempts to parent this dialog to the last exclusive window relative to ``from_node``, and then calls :ref:`popup_centered()<class_Window_method_popup_centered>` on it. The dialog must have no current parent, otherwise the method fails.
+嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered()<class_Window_method_popup_centered>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
 
-See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` and :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`.
+另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2516,9 +2516,9 @@ See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_wh
 
 |void| **popup_exclusive_centered_clamped**\ (\ from_node\: :ref:`Node<class_Node>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0), fallback_ratio\: :ref:`float<class_float>` = 0.75\ ) :ref:`🔗<class_Window_method_popup_exclusive_centered_clamped>`
 
-Attempts to parent this dialog to the last exclusive window relative to ``from_node``, and then calls :ref:`popup_centered_clamped()<class_Window_method_popup_centered_clamped>` on it. The dialog must have no current parent, otherwise the method fails.
+嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered_clamped()<class_Window_method_popup_centered_clamped>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
 
-See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` and :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`.
+另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2530,9 +2530,9 @@ See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_wh
 
 |void| **popup_exclusive_centered_ratio**\ (\ from_node\: :ref:`Node<class_Node>`, ratio\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_Window_method_popup_exclusive_centered_ratio>`
 
-Attempts to parent this dialog to the last exclusive window relative to ``from_node``, and then calls :ref:`popup_centered_ratio()<class_Window_method_popup_centered_ratio>` on it. The dialog must have no current parent, otherwise the method fails.
+嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_centered_ratio()<class_Window_method_popup_centered_ratio>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
 
-See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` and :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`.
+另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2544,9 +2544,9 @@ See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_wh
 
 |void| **popup_exclusive_on_parent**\ (\ from_node\: :ref:`Node<class_Node>`, parent_rect\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Window_method_popup_exclusive_on_parent>`
 
-Attempts to parent this dialog to the last exclusive window relative to ``from_node``, and then calls :ref:`popup_on_parent()<class_Window_method_popup_on_parent>` on it. The dialog must have no current parent, otherwise the method fails.
+嘗試將該對話方塊的父節點設為最近的獨佔視窗，相對於 ``from_node``\ ，然後對其呼叫 :ref:`popup_on_parent()<class_Window_method_popup_on_parent>`\ 。對話方塊目前必須沒有父節點，否則該方法會失敗。
 
-See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` and :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`.
+另見 :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>` 和 :ref:`Node.get_last_exclusive_window()<class_Node_method_get_last_exclusive_window>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2558,7 +2558,7 @@ See also :ref:`set_unparent_when_invisible()<class_Window_method_set_unparent_wh
 
 |void| **popup_on_parent**\ (\ parent_rect\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_Window_method_popup_on_parent>`
 
-Popups the **Window** with a position shifted by parent **Window**'s position. If the **Window** is embedded, has the same effect as :ref:`popup()<class_Window_method_popup>`.
+彈出該 **Window**\ ，位置會根據父級 **Window** 的位置進行偏移。如果該 **Window** 是內嵌的，則與 :ref:`popup()<class_Window_method_popup>` 等效。
 
 .. rst-class:: classref-item-separator
 
@@ -2570,7 +2570,7 @@ Popups the **Window** with a position shifted by parent **Window**'s position. I
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_color_override>`
 
-Removes a local override for a theme :ref:`Color<class_Color>` with the specified ``name`` previously added by :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` or via the Inspector dock.
+移除先前由 :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` 或透過屬性檢視器面板所加入，給定主題 :ref:`Color<class_Color>` 的本地覆寫，該覆寫使用指定的 ``name``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2582,7 +2582,7 @@ Removes a local override for a theme :ref:`Color<class_Color>` with the specifie
 
 |void| **remove_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_constant_override>`
 
-Removes a local override for a theme constant with the specified ``name`` previously added by :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>` or via the Inspector dock.
+移除針對使用指定 ``name`` 的主題常數所設定的本機覆寫，該覆寫先前透過 :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>` 或屬性檢視器面板新增。
 
 .. rst-class:: classref-item-separator
 
@@ -2594,7 +2594,7 @@ Removes a local override for a theme constant with the specified ``name`` previo
 
 |void| **remove_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_font_override>`
 
-Removes a local override for a theme :ref:`Font<class_Font>` with the specified ``name`` previously added by :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>` or via the Inspector dock.
+移除先前透過 :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>` 或透過屬性檢視器面板新增的、名稱為指定 ``name`` 的主題 :ref:`Font<class_Font>` 本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -2606,7 +2606,7 @@ Removes a local override for a theme :ref:`Font<class_Font>` with the specified 
 
 |void| **remove_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_font_size_override>`
 
-Removes a local override for a theme font size with the specified ``name`` previously added by :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>` or via the Inspector dock.
+移除使用指定的 ``name``\ ，先前由 :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>` 或透過屬性檢視器面板新增的主題字型大小的本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -2618,7 +2618,7 @@ Removes a local override for a theme font size with the specified ``name`` previ
 
 |void| **remove_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_icon_override>`
 
-Removes a local override for a theme icon with the specified ``name`` previously added by :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>` or via the Inspector dock.
+移除先前透過 :ref:`add_theme_icon_override()<class_Window_method_add_theme_icon_override>` 或屬性檢視器面板新增的、具有指定 ``name`` 的主題圖示本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -2630,7 +2630,7 @@ Removes a local override for a theme icon with the specified ``name`` previously
 
 |void| **remove_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_stylebox_override>`
 
-Removes a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name`` previously added by :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>` or via the Inspector dock.
+移除先前由 :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>` 或透過屬性檢視器面板新增的、具有指定 ``name`` 的主題 :ref:`StyleBox<class_StyleBox>` 本地覆寫。
 
 .. rst-class:: classref-item-separator
 
@@ -2642,7 +2642,7 @@ Removes a local override for a theme :ref:`StyleBox<class_StyleBox>` with the sp
 
 |void| **request_attention**\ (\ ) :ref:`🔗<class_Window_method_request_attention>`
 
-Tells the OS that the **Window** needs an attention. This makes the window stand out in some way depending on the system, e.g. it might blink on the task bar.
+告訴作業系統 **Window** 需要注意。這樣會讓該視窗以某種方式脫穎而出，具體形式取決於系統，例如可能會在工作列上閃爍。
 
 .. rst-class:: classref-item-separator
 
@@ -2654,7 +2654,7 @@ Tells the OS that the **Window** needs an attention. This makes the window stand
 
 |void| **reset_size**\ (\ ) :ref:`🔗<class_Window_method_reset_size>`
 
-Resets the size to the minimum size, which is the max of :ref:`min_size<class_Window_property_min_size>` and (if :ref:`wrap_controls<class_Window_property_wrap_controls>` is enabled) :ref:`get_contents_minimum_size()<class_Window_method_get_contents_minimum_size>`. This is equivalent to calling ``set_size(Vector2i())`` (or any size below the minimum).
+將大小重設為最小大小，即 :ref:`min_size<class_Window_property_min_size>` 和（\ :ref:`wrap_controls<class_Window_property_wrap_controls>` 啟用時）\ :ref:`get_contents_minimum_size()<class_Window_method_get_contents_minimum_size>` 之間的較大值。相當於呼叫 ``set_size(Vector2i())``\ （或低於最小值的任何大小）。
 
 .. rst-class:: classref-item-separator
 
@@ -2666,7 +2666,7 @@ Resets the size to the minimum size, which is the max of :ref:`min_size<class_Wi
 
 |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Window_method_set_flag>`
 
-Sets a specified window flag.
+設定指定的視窗旗標。
 
 .. rst-class:: classref-item-separator
 
@@ -2678,7 +2678,7 @@ Sets a specified window flag.
 
 |void| **set_ime_active**\ (\ active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Window_method_set_ime_active>`
 
-If ``active`` is ``true``, enables system's native IME (Input Method Editor).
+如果 ``active`` 為 ``true``\ ，則啟用系統的原生 IME（輸入法編輯器）。
 
 .. rst-class:: classref-item-separator
 
@@ -2690,7 +2690,7 @@ If ``active`` is ``true``, enables system's native IME (Input Method Editor).
 
 |void| **set_ime_position**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Window_method_set_ime_position>`
 
-Moves IME to the given position.
+將 IME 移動到給定位置。
 
 .. rst-class:: classref-item-separator
 
@@ -2702,7 +2702,7 @@ Moves IME to the given position.
 
 |void| **set_layout_direction**\ (\ direction\: :ref:`LayoutDirection<enum_Window_LayoutDirection>`\ ) :ref:`🔗<class_Window_method_set_layout_direction>`
 
-Sets layout direction and text writing direction. Right-to-left layouts are necessary for certain languages (e.g. Arabic and Hebrew).
+設定佈局方向和文字書寫方向。某些語言需要從右至左的佈局（例如阿拉伯語和希伯來語）。
 
 .. rst-class:: classref-item-separator
 
@@ -2714,9 +2714,9 @@ Sets layout direction and text writing direction. Right-to-left layouts are nece
 
 |void| **set_unparent_when_invisible**\ (\ unparent\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Window_method_set_unparent_when_invisible>`
 
-If ``unparent`` is ``true``, the window is automatically unparented when going invisible.
+如果 ``unparent`` 為 ``true``\ ，則視窗會在隱藏時自動解除與父節點的關係。
 
-\ **Note:** Make sure to keep a reference to the node, otherwise it will be orphaned. You also need to manually call :ref:`Node.queue_free()<class_Node_method_queue_free>` to free the window if it's not parented.
+\ **注意：**\ 請確保存在對該節點的引用，否則該節點會變為孤兒節點。沒有父節點時，你還需要手動呼叫 :ref:`Node.queue_free()<class_Node_method_queue_free>` 來釋放該視窗。
 
 .. rst-class:: classref-item-separator
 
@@ -2728,7 +2728,7 @@ If ``unparent`` is ``true``, the window is automatically unparented when going i
 
 |void| **set_use_font_oversampling**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Window_method_set_use_font_oversampling>`
 
-Enables font oversampling. This makes fonts look better when they are scaled up.
+啟用字形過取樣。會使得字形在放大後更好看。
 
 .. rst-class:: classref-item-separator
 
@@ -2740,7 +2740,7 @@ Enables font oversampling. This makes fonts look better when they are scaled up.
 
 |void| **show**\ (\ ) :ref:`🔗<class_Window_method_show>`
 
-Makes the **Window** appear. This enables interactions with the **Window** and doesn't change any of its property other than visibility (unlike e.g. :ref:`popup()<class_Window_method_popup>`).
+讓該 **Window** 出現。這樣會啟用與 **Window** 的互動，除了可見性之外不會更改其他任何屬性（與 :ref:`popup()<class_Window_method_popup>` 不同）。
 
 .. rst-class:: classref-item-separator
 
@@ -2772,8 +2772,8 @@ Starts an interactive resize operation on the window, using the current mouse po
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_Window_theme_color_title_color:
 
@@ -2781,7 +2781,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **title_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_Window_theme_color_title_color>`
 
-The color of the title's text.
+標題文字的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -2793,7 +2793,7 @@ The color of the title's text.
 
 :ref:`Color<class_Color>` **title_outline_modulate** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Window_theme_color_title_outline_modulate>`
 
-The color of the title's text outline.
+標題文字輪廓的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -2829,7 +2829,7 @@ Vertical position offset of the close button, relative to the bottom of the titl
 
 :ref:`int<class_int>` **resize_margin** = ``4`` :ref:`🔗<class_Window_theme_constant_resize_margin>`
 
-Defines the outside margin at which the window border can be grabbed with mouse and resized.
+定義了視窗邊框外側可以使用滑鼠抓取和調整大小的邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -2841,7 +2841,7 @@ Defines the outside margin at which the window border can be grabbed with mouse 
 
 :ref:`int<class_int>` **title_height** = ``36`` :ref:`🔗<class_Window_theme_constant_title_height>`
 
-Height of the title bar.
+標題列的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -2853,7 +2853,7 @@ Height of the title bar.
 
 :ref:`int<class_int>` **title_outline_size** = ``0`` :ref:`🔗<class_Window_theme_constant_title_outline_size>`
 
-The size of the title outline.
+標題輪廓的尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -2865,7 +2865,7 @@ The size of the title outline.
 
 :ref:`Font<class_Font>` **title_font** :ref:`🔗<class_Window_theme_font_title_font>`
 
-The font used to draw the title.
+用於繪製標題的字形。
 
 .. rst-class:: classref-item-separator
 
@@ -2877,7 +2877,7 @@ The font used to draw the title.
 
 :ref:`int<class_int>` **title_font_size** :ref:`🔗<class_Window_theme_font_size_title_font_size>`
 
-The size of the title font.
+標題字形的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2889,7 +2889,7 @@ The size of the title font.
 
 :ref:`Texture2D<class_Texture2D>` **close** :ref:`🔗<class_Window_theme_icon_close>`
 
-The icon for the close button.
+關閉按鈕的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -2901,7 +2901,7 @@ The icon for the close button.
 
 :ref:`Texture2D<class_Texture2D>` **close_pressed** :ref:`🔗<class_Window_theme_icon_close_pressed>`
 
-The icon for the close button when it's being pressed.
+關閉按鈕被按下時的圖示。
 
 .. rst-class:: classref-item-separator
 
@@ -2913,9 +2913,9 @@ The icon for the close button when it's being pressed.
 
 :ref:`StyleBox<class_StyleBox>` **embedded_border** :ref:`🔗<class_Window_theme_style_embedded_border>`
 
-The background style used when the **Window** is embedded. Note that this is drawn only under the window's content, excluding the title. For proper borders and title bar style, you can use ``expand_margin_*`` properties of :ref:`StyleBoxFlat<class_StyleBoxFlat>`.
+**Window** 為嵌入模式時使用的背景樣式。請注意，背景僅繪製在視窗內容的下方，不包括標題。要得到合適的邊框和標題列樣式，可以使用 :ref:`StyleBoxFlat<class_StyleBoxFlat>` 的 ``expand_margin_*`` 屬性。
 
-\ **Note:** The content background will not be visible unless :ref:`transparent<class_Window_property_transparent>` is enabled.
+\ **注意：**\ 只有在啟用 :ref:`transparent<class_Window_property_transparent>` 時，內容背景才會可見。
 
 .. rst-class:: classref-item-separator
 
@@ -2927,14 +2927,14 @@ The background style used when the **Window** is embedded. Note that this is dra
 
 :ref:`StyleBox<class_StyleBox>` **embedded_unfocused_border** :ref:`🔗<class_Window_theme_style_embedded_unfocused_border>`
 
-The background style used when the **Window** is embedded and unfocused.
+:ref:`GraphNode<class_GraphNode>` 被選中時使用的背景。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

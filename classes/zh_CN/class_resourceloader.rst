@@ -5,36 +5,36 @@
 ResourceLoader
 ==============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-A singleton for loading resource files.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A singleton used to load resource files from the filesystem.
-
-It uses the many :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` classes registered in the engine (either built-in or from a plugin) to load files into memory and convert them to a format that can be used by the engine.
-
-\ **Note:** You have to import the files into the engine first to load them using :ref:`load()<class_ResourceLoader_method_load>`. If you want to load :ref:`Image<class_Image>`\ s at run-time, you may use :ref:`Image.load()<class_Image_method_load>`. If you want to import audio files, you can use the snippet described in :ref:`AudioStreamMP3.data<class_AudioStreamMP3_property_data>`.
-
-\ **Note:** Non-resource files such as plain text files cannot be read using **ResourceLoader**. Use :ref:`FileAccess<class_FileAccess>` for those files instead, and be aware that non-resource files are not exported by default (see notes in the :ref:`FileAccess<class_FileAccess>` class description for instructions on exporting them).
+用于加载资源文件的单例。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+用于从文件系统加载资源文件的单例。
+
+会使用引擎中（内置或插件）注册的许多 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 类将文件加载到内存中并将其转换为引擎可以使用的格式。
+
+\ **注意：**\ 你需要先将文件导入引擎，才能使用 :ref:`load()<class_ResourceLoader_method_load>` 进行加载。如果你想在运行时加载 :ref:`Image<class_Image>`\ ，可以使用 :ref:`Image.load()<class_Image_method_load>`\ 。如果你想导入音频文件，可以使用 :ref:`AudioStreamMP3.data<class_AudioStreamMP3_property_data>` 中描述的代码段。
+
+\ **注意：**\ 纯文本文件等非资源文件无法使用 **ResourceLoader** 读取。请改用 :ref:`FileAccess<class_FileAccess>` 来处理这些文件，注意默认情况下不会导出非资源文件（导出说明见 :ref:`FileAccess<class_FileAccess>` 类描述）。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - `Threaded Loading Demo <https://godotengine.org/asset-library/asset/2778>`__
 
-- `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
+- `操作系统测试演示 <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ResourceLoader_ThreadLoadStatus:
 
@@ -90,7 +90,7 @@ enum **ThreadLoadStatus**: :ref:`🔗<enum_ResourceLoader_ThreadLoadStatus>`
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_INVALID_RESOURCE** = ``0``
 
-The resource is invalid, or has not been loaded with :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>`.
+该资源无效，或尚未使用 :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>` 加载。
 
 .. _class_ResourceLoader_constant_THREAD_LOAD_IN_PROGRESS:
 
@@ -98,7 +98,7 @@ The resource is invalid, or has not been loaded with :ref:`load_threaded_request
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_IN_PROGRESS** = ``1``
 
-The resource is still being loaded.
+该资源仍在加载中。
 
 .. _class_ResourceLoader_constant_THREAD_LOAD_FAILED:
 
@@ -106,7 +106,7 @@ The resource is still being loaded.
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_FAILED** = ``2``
 
-Some error occurred during loading and it failed.
+加载过程中发生了错误，导致失败。
 
 .. _class_ResourceLoader_constant_THREAD_LOAD_LOADED:
 
@@ -114,7 +114,7 @@ Some error occurred during loading and it failed.
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **THREAD_LOAD_LOADED** = ``3``
 
-The resource was loaded successfully and can be accessed via :ref:`load_threaded_get()<class_ResourceLoader_method_load_threaded_get>`.
+资源成功加载，可以通过 :ref:`load_threaded_get()<class_ResourceLoader_method_load_threaded_get>` 访问。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ enum **CacheMode**: :ref:`🔗<enum_ResourceLoader_CacheMode>`
 
 :ref:`CacheMode<enum_ResourceLoader_CacheMode>` **CACHE_MODE_IGNORE** = ``0``
 
-Neither the main resource (the one requested to be loaded) nor any of its subresources are retrieved from cache nor stored into it. Dependencies (external resources) are loaded with :ref:`CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>`.
+主资源（请求加载的资源）及所有子资源都既不会从缓存中检索也不会存储到缓存中。依赖项（外部资源）使用 :ref:`CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>` 加载。
 
 .. _class_ResourceLoader_constant_CACHE_MODE_REUSE:
 
@@ -140,7 +140,7 @@ Neither the main resource (the one requested to be loaded) nor any of its subres
 
 :ref:`CacheMode<enum_ResourceLoader_CacheMode>` **CACHE_MODE_REUSE** = ``1``
 
-The main resource (the one requested to be loaded), its subresources, and its dependencies (external resources) are retrieved from cache if present, instead of loaded. Those not cached are loaded and then stored into the cache. The same rules are propagated recursively down the tree of dependencies (external resources).
+主资源（请求加载的资源）、子资源、依赖项（外部资源）如果在缓存中存在，则将从缓存中检索，不进行加载。如果未缓存则将进行加载，然后存储到缓存中。相同的规则将沿着依赖关系树（外部资源）递归传播。
 
 .. _class_ResourceLoader_constant_CACHE_MODE_REPLACE:
 
@@ -148,7 +148,7 @@ The main resource (the one requested to be loaded), its subresources, and its de
 
 :ref:`CacheMode<enum_ResourceLoader_CacheMode>` **CACHE_MODE_REPLACE** = ``2``
 
-Like :ref:`CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>`, but the cache is checked for the main resource (the one requested to be loaded) as well as for each of its subresources. Those already in the cache, as long as the loaded and cached types match, have their data refreshed from storage into the already existing instances. Otherwise, they are recreated as completely new objects.
+与 :ref:`CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>` 类似，但会检查主资源（请求加载的资源）及每个子资源的缓存。如果在缓存中存在，只要加载的类型和缓存的类型匹配，就会使用存储的数据刷新已经存在的实例。否则会重新作为全新的对象创建。
 
 .. _class_ResourceLoader_constant_CACHE_MODE_IGNORE_DEEP:
 
@@ -156,7 +156,7 @@ Like :ref:`CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>`, bu
 
 :ref:`CacheMode<enum_ResourceLoader_CacheMode>` **CACHE_MODE_IGNORE_DEEP** = ``3``
 
-Like :ref:`CACHE_MODE_IGNORE<class_ResourceLoader_constant_CACHE_MODE_IGNORE>`, but propagated recursively down the tree of dependencies (external resources).
+与 :ref:`CACHE_MODE_IGNORE<class_ResourceLoader_constant_CACHE_MODE_IGNORE>` 类似，但沿依赖关系树（外部资源）递归传播。
 
 .. _class_ResourceLoader_constant_CACHE_MODE_REPLACE_DEEP:
 
@@ -164,7 +164,7 @@ Like :ref:`CACHE_MODE_IGNORE<class_ResourceLoader_constant_CACHE_MODE_IGNORE>`, 
 
 :ref:`CacheMode<enum_ResourceLoader_CacheMode>` **CACHE_MODE_REPLACE_DEEP** = ``4``
 
-Like :ref:`CACHE_MODE_REPLACE<class_ResourceLoader_constant_CACHE_MODE_REPLACE>`, but propagated recursively down the tree of dependencies (external resources).
+与 :ref:`CACHE_MODE_REPLACE<class_ResourceLoader_constant_CACHE_MODE_REPLACE>` 类似，但沿依赖关系树（外部资源）递归传播。
 
 .. rst-class:: classref-section-separator
 
@@ -172,8 +172,8 @@ Like :ref:`CACHE_MODE_REPLACE<class_ResourceLoader_constant_CACHE_MODE_REPLACE>`
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ResourceLoader_method_add_resource_format_loader:
 
@@ -181,9 +181,9 @@ Method Descriptions
 
 |void| **add_resource_format_loader**\ (\ format_loader\: :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`, at_front\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_ResourceLoader_method_add_resource_format_loader>`
 
-Registers a new :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. The ResourceLoader will use the ResourceFormatLoader as described in :ref:`load()<class_ResourceLoader_method_load>`.
+注册一个新的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。ResourceLoader 将会按照 :ref:`load()<class_ResourceLoader_method_load>` 中的描述使用 ResourceFormatLoader。
 
-This method is performed implicitly for ResourceFormatLoaders written in GDScript (see :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` for more information).
+对于用 GDScript 编写的 ResourceFormatLoader，此方法将隐式执行（详见 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -195,11 +195,11 @@ This method is performed implicitly for ResourceFormatLoaders written in GDScrip
 
 :ref:`bool<class_bool>` **exists**\ (\ path\: :ref:`String<class_String>`, type_hint\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_ResourceLoader_method_exists>`
 
-Returns whether a recognized resource exists for the given ``path``.
+返回给定路径 ``path`` 是否存在已识别的资源。
 
-An optional ``type_hint`` can be used to further specify the :ref:`Resource<class_Resource>` type that should be handled by the :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. Anything that inherits from :ref:`Resource<class_Resource>` can be used as a type hint, for example :ref:`Image<class_Image>`.
+可选的 ``type_hint`` 可用于进一步指定 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 应处理的 :ref:`Resource<class_Resource>` 类型。任何继承自 :ref:`Resource<class_Resource>` 的内容都可以用作类型提示，例如 :ref:`Image<class_Image>`\ 。
 
-\ **Note:** If you use :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>`, this method will return ``true`` for the taken path even if the resource wasn't saved (i.e. exists only in resource cache).
+\ **注意：**\ 如果使用了 :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>`\ ，则这个方法会为接管的路径返回 ``true``\ ，即便对应的资源尚未保存（即仅存在于资源缓存中）。
 
 .. rst-class:: classref-item-separator
 
@@ -211,9 +211,9 @@ An optional ``type_hint`` can be used to further specify the :ref:`Resource<clas
 
 :ref:`Resource<class_Resource>` **get_cached_ref**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_get_cached_ref>`
 
-Returns the cached resource reference for the given ``path``.
+返回路径 ``path`` 对应的资源引用缓存。
 
-\ **Note:** If the resource is not cached, the returned :ref:`Resource<class_Resource>` will be invalid.
+\ **注意：**\ 如果资源尚未缓存，则会返回无效 :ref:`Resource<class_Resource>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -225,18 +225,18 @@ Returns the cached resource reference for the given ``path``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_dependencies**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_get_dependencies>`
 
-Returns the dependencies for the resource at the given ``path``.
+返回路径为 ``path`` 的资源的依赖项。
 
-Each dependency is a string that can be divided into sections by ``::``. There can be either one section or three sections, with the second section always being empty. When there is one section, it contains the file path. When there are three sections, the first section contains the UID and the third section contains the fallback path.
+每个依赖项都是一个字符串，可以用 ``::`` 分割为若干部分。分割后只会有一个部分或三个部分，其中第二个部分始终为空。如果只有一个部分，则包含的是文件路径。如果有三个部分，则第一个部分包含的是 UID、第三个部分包含的是回退路径。
 
 ::
 
     for dependency in ResourceLoader.get_dependencies(path):
         if dependency.contains("::"):
-            print(dependency.get_slice("::", 0)) # Prints the UID.
-            print(dependency.get_slice("::", 2)) # Prints the fallback path.
+            print(dependency.get_slice("::", 0)) # 输出 UID。
+            print(dependency.get_slice("::", 2)) # 输出回退路径。
         else:
-            print(dependency) # Prints the path.
+            print(dependency) # 输出路径。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Each dependency is a string that can be divided into sections by ``::``. There c
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recognized_extensions_for_type**\ (\ type\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_get_recognized_extensions_for_type>`
 
-Returns the list of recognized extensions for a resource type.
+返回资源类型的已识别扩展名列表。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Returns the list of recognized extensions for a resource type.
 
 :ref:`int<class_int>` **get_resource_uid**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_get_resource_uid>`
 
-Returns the ID associated with a given resource path, or ``-1`` when no such ID exists.
+返回与一个给定资源路径关联的 ID，如果不存在此类 ID，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,9 +272,9 @@ Returns the ID associated with a given resource path, or ``-1`` when no such ID 
 
 :ref:`bool<class_bool>` **has_cached**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_has_cached>`
 
-Returns whether a cached resource is available for the given ``path``.
+返回给定 ``path`` 的缓存资源是否可用。
 
-Once a resource has been loaded by the engine, it is cached in memory for faster access, and future calls to the :ref:`load()<class_ResourceLoader_method_load>` method will use the cached version. The cached resource can be overridden by using :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>` on a new resource for that same path.
+一旦引擎加载了资源，它将被缓存在内存中以加快访问速度，未来调用 :ref:`load()<class_ResourceLoader_method_load>` 方法将使用缓存版本。可以通过在具有相同路径的新资源上使用 :ref:`Resource.take_over_path()<class_Resource_method_take_over_path>` 来覆盖缓存资源。
 
 .. rst-class:: classref-item-separator
 
@@ -286,16 +286,16 @@ Once a resource has been loaded by the engine, it is cached in memory for faster
 
 :ref:`PackedStringArray<class_PackedStringArray>` **list_directory**\ (\ directory_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_list_directory>`
 
-Lists a directory, returning all resources and subdirectories contained within. The resource files have the original file names as visible in the editor before exporting. The directories have ``"/"`` appended.
+列出目录，返回其中包含的所有资源和子目录。资源文件使用原始文件名，与导出前编辑器中看到的一致。目录末尾有 ``"/"``\ 。
 
 ::
 
-    # Prints ["extra_data/", "model.gltf", "model.tscn", "model_slime.png"]
+    # 输出 ["extra_data/", "model.gltf", "model.tscn", "model_slime.png"]
     print(ResourceLoader.list_directory("res://assets/enemies/slime"))
 
-\ **Note:** The order of files and directories returned by this method is not deterministic, and can vary between operating systems.
+\ **注意：**\ 该方法返回的文件和目录的顺序并不固定，不同操作系统返回的顺序可能不同。
 
-\ **Note:** To normally traverse the filesystem, see :ref:`DirAccess<class_DirAccess>`.
+\ **注意：**\ 正常遍历文件系统请使用 :ref:`DirAccess<class_DirAccess>`.
 
 .. rst-class:: classref-item-separator
 
@@ -307,21 +307,21 @@ Lists a directory, returning all resources and subdirectories contained within. 
 
 :ref:`Resource<class_Resource>` **load**\ (\ path\: :ref:`String<class_String>`, type_hint\: :ref:`String<class_String>` = "", cache_mode\: :ref:`CacheMode<enum_ResourceLoader_CacheMode>` = 1\ ) :ref:`🔗<class_ResourceLoader_method_load>`
 
-Loads a resource at the given ``path``, caching the result for further access.
+在给定的 ``path`` 中加载资源，并将结果缓存以供进一步访问。
 
-The registered :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ s are queried sequentially to find the first one which can handle the file's extension, and then attempt loading. If loading fails, the remaining ResourceFormatLoaders are also attempted.
+按顺序查询注册的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ，以找到可以处理文件扩展名的第一个 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ，然后尝试加载。如果加载失败，则还会尝试其余的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。
 
-An optional ``type_hint`` can be used to further specify the :ref:`Resource<class_Resource>` type that should be handled by the :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. Anything that inherits from :ref:`Resource<class_Resource>` can be used as a type hint, for example :ref:`Image<class_Image>`.
+可选的 ``type_hint`` 可用于进一步指定 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 应处理的 :ref:`Resource<class_Resource>` 类型。任何继承自 :ref:`Resource<class_Resource>` 的东西都可以用作类型提示，例如 :ref:`Image<class_Image>`\ 。
 
-The ``cache_mode`` property defines whether and how the cache should be used or updated when loading the resource.
+\ ``cache_mode`` 属性定义在加载资源时是否以及如何使用或更新缓存。
 
-Returns an empty resource if no :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` could handle the file, and prints an error if no file is found at the specified path.
+如果没有 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 可以处理该文件则返回空资源，如果指定路径的文件未找到则会输出错误。
 
-GDScript has a simplified :ref:`@GDScript.load()<class_@GDScript_method_load>` built-in method which can be used in most situations, leaving the use of **ResourceLoader** for more advanced scenarios.
+GDScript 具有一个简化的 :ref:`@GDScript.load()<class_@GDScript_method_load>` 内置方法，可在大多数情况下使用，而 **ResourceLoader** 供更高级的情况使用。
 
-\ **Note:** If :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` is ``true``, :ref:`@GDScript.load()<class_@GDScript_method_load>` will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` to ``false``.
+\ **注意：**\ 如果 :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` 为 ``true``\ ，则 :ref:`@GDScript.load()<class_@GDScript_method_load>` 无法在导出后的项目中读取已转换的文件。如果你需要在运行时加载存在于 PCK 中的文件，请将 :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` 设置为 ``false``\ 。
 
-\ **Note:** Relative paths will be prefixed with ``"res://"`` before loading, to avoid unexpected results make sure your paths are absolute.
+\ **注意：**\ 加载相对路径前会加上 ``"res://"`` 前缀，请确保使用绝对路径，以免造成预料之外的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -333,9 +333,9 @@ GDScript has a simplified :ref:`@GDScript.load()<class_@GDScript_method_load>` b
 
 :ref:`Resource<class_Resource>` **load_threaded_get**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ResourceLoader_method_load_threaded_get>`
 
-Returns the resource loaded by :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>`.
+返回由 :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>` 加载的资源。
 
-If this is called before the loading thread is done (i.e. :ref:`load_threaded_get_status()<class_ResourceLoader_method_load_threaded_get_status>` is not :ref:`THREAD_LOAD_LOADED<class_ResourceLoader_constant_THREAD_LOAD_LOADED>`), the calling thread will be blocked until the resource has finished loading. However, it's recommended to use :ref:`load_threaded_get_status()<class_ResourceLoader_method_load_threaded_get_status>` to known when the load has actually completed.
+如果在加载线程完成之前调用此方法（即 :ref:`load_threaded_get_status()<class_ResourceLoader_method_load_threaded_get_status>` 不是 :ref:`THREAD_LOAD_LOADED<class_ResourceLoader_constant_THREAD_LOAD_LOADED>`\ ），则调用线程将被阻塞，直到资源加载完成。不过，建议使用 :ref:`load_threaded_get_status()<class_ResourceLoader_method_load_threaded_get_status>` 来了解加载何时已经实际完成。
 
 .. rst-class:: classref-item-separator
 
@@ -347,11 +347,11 @@ If this is called before the loading thread is done (i.e. :ref:`load_threaded_ge
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **load_threaded_get_status**\ (\ path\: :ref:`String<class_String>`, progress\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_ResourceLoader_method_load_threaded_get_status>`
 
-Returns the status of a threaded loading operation started with :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>` for the resource at ``path``.
+返回使用 :ref:`load_threaded_request()<class_ResourceLoader_method_load_threaded_request>` 在 ``path`` 处启动的线程加载操作的状态。
 
-An array variable can optionally be passed via ``progress``, and will return a one-element array containing the ratio of completion of the threaded loading (between ``0.0`` and ``1.0``).
+还可以通过 ``progress`` 传递数组变量，会返回一个包含线程加载完成比例的单元素的数组（在 ``0.0`` 和 ``1.0`` 之间）。
 
-\ **Note:** The recommended way of using this method is to call it during different frames (e.g., in :ref:`Node._process()<class_Node_private_method__process>`, instead of a loop).
+\ **注意：**\ 该方法的推荐使用方式是在不同的帧期间调用（例如在 :ref:`Node._process()<class_Node_private_method__process>` 中，而不是循环中）。
 
 .. rst-class:: classref-item-separator
 
@@ -363,9 +363,9 @@ An array variable can optionally be passed via ``progress``, and will return a o
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_threaded_request**\ (\ path\: :ref:`String<class_String>`, type_hint\: :ref:`String<class_String>` = "", use_sub_threads\: :ref:`bool<class_bool>` = false, cache_mode\: :ref:`CacheMode<enum_ResourceLoader_CacheMode>` = 1\ ) :ref:`🔗<class_ResourceLoader_method_load_threaded_request>`
 
-Loads the resource using threads. If ``use_sub_threads`` is ``true``, multiple threads will be used to load the resource, which makes loading faster, but may affect the main thread (and thus cause game slowdowns).
+使用线程加载资源。如果 ``use_sub_threads`` 为 ``true``\ ，将使用多个线程来加载资源，这会使加载更快，但可能会影响主线程（从而导致游戏降速）。
 
-The ``cache_mode`` parameter defines whether and how the cache should be used or updated when loading the resource.
+\ ``cache_mode`` 属性定义在加载资源时是否以及如何使用或更新缓存。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ The ``cache_mode`` parameter defines whether and how the cache should be used or
 
 |void| **remove_resource_format_loader**\ (\ format_loader\: :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ) :ref:`🔗<class_ResourceLoader_method_remove_resource_format_loader>`
 
-Unregisters the given :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`.
+取消注册给定的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -389,14 +389,14 @@ Unregisters the given :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`.
 
 |void| **set_abort_on_missing_resources**\ (\ abort\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ResourceLoader_method_set_abort_on_missing_resources>`
 
-Changes the behavior on missing sub-resources. The default behavior is to abort loading.
+更改缺少子资源时的行为。默认行为是中止加载。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

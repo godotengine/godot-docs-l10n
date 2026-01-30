@@ -5,21 +5,21 @@
 Geometry2D
 ==========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Provides methods for some common 2D geometric operations.
+提供常见 2D 几何运算的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Provides a set of helper functions to create geometric shapes, compute intersections between shapes, and process various other geometric operations in 2D.
+为创建几何形状，计算形状之间的交集，以及处理 2D 中的各种其他几何操作提供了一组辅助函数。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Geometry2D_PolyBooleanOperation:
 
@@ -95,7 +95,7 @@ enum **PolyBooleanOperation**: :ref:`🔗<enum_Geometry2D_PolyBooleanOperation>`
 
 :ref:`PolyBooleanOperation<enum_Geometry2D_PolyBooleanOperation>` **OPERATION_UNION** = ``0``
 
-Create regions where either subject or clip polygons (or both) are filled.
+创建区域，其中主体或剪辑多边形（或两者）被填充。
 
 .. _class_Geometry2D_constant_OPERATION_DIFFERENCE:
 
@@ -103,7 +103,7 @@ Create regions where either subject or clip polygons (or both) are filled.
 
 :ref:`PolyBooleanOperation<enum_Geometry2D_PolyBooleanOperation>` **OPERATION_DIFFERENCE** = ``1``
 
-Create regions where subject polygons are filled except where clip polygons are filled.
+创建主体多边形被填充的区域，但剪辑多边形被填充的区域除外。
 
 .. _class_Geometry2D_constant_OPERATION_INTERSECTION:
 
@@ -111,7 +111,7 @@ Create regions where subject polygons are filled except where clip polygons are 
 
 :ref:`PolyBooleanOperation<enum_Geometry2D_PolyBooleanOperation>` **OPERATION_INTERSECTION** = ``2``
 
-Create regions where both subject and clip polygons are filled.
+创建主体和剪辑多边形都被填充的区域。
 
 .. _class_Geometry2D_constant_OPERATION_XOR:
 
@@ -119,7 +119,7 @@ Create regions where both subject and clip polygons are filled.
 
 :ref:`PolyBooleanOperation<enum_Geometry2D_PolyBooleanOperation>` **OPERATION_XOR** = ``3``
 
-Create regions where either subject or clip polygons are filled but not where both are filled.
+创建主体或剪辑多边形被填充的区域，但不是两者都被填充的区域。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ enum **PolyJoinType**: :ref:`🔗<enum_Geometry2D_PolyJoinType>`
 
 :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` **JOIN_SQUARE** = ``0``
 
-Squaring is applied uniformally at all convex edge joins at ``1 * delta``.
+在 ``1 * delta`` 的所有凸边连接处均匀地应用平方。
 
 .. _class_Geometry2D_constant_JOIN_ROUND:
 
@@ -145,7 +145,7 @@ Squaring is applied uniformally at all convex edge joins at ``1 * delta``.
 
 :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` **JOIN_ROUND** = ``1``
 
-While flattened paths can never perfectly trace an arc, they are approximated by a series of arc chords.
+虽然扁平化路径不可能完美地追踪一个弧线，但它们可以通过一系列弧弦来近似。
 
 .. _class_Geometry2D_constant_JOIN_MITER:
 
@@ -153,7 +153,7 @@ While flattened paths can never perfectly trace an arc, they are approximated by
 
 :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` **JOIN_MITER** = ``2``
 
-There's a necessary limit to mitered joins since offsetting edges that join at very acute angles will produce excessively long and narrow "spikes". For any given edge join, when miter offsetting would exceed that maximum distance, "square" joining is applied.
+对斜接有一个必要的限制，因为以非常尖锐的角度连接的边缘偏移会产生过长和过窄的 "尖刺"。对于任何给定的边缘连接，当斜接偏移会超过最大距离时，就采用 "方形 "连接。
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ enum **PolyEndType**: :ref:`🔗<enum_Geometry2D_PolyEndType>`
 
 :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` **END_POLYGON** = ``0``
 
-Endpoints are joined using the :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` value and the path filled as a polygon.
+端点使用 :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` 值连接，路径被填充为多边形。
 
 .. _class_Geometry2D_constant_END_JOINED:
 
@@ -179,7 +179,7 @@ Endpoints are joined using the :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>`
 
 :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` **END_JOINED** = ``1``
 
-Endpoints are joined using the :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` value and the path filled as a polyline.
+端点使用 :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` 值连接，路径被填充为多边形线。
 
 .. _class_Geometry2D_constant_END_BUTT:
 
@@ -187,7 +187,7 @@ Endpoints are joined using the :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>`
 
 :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` **END_BUTT** = ``2``
 
-Endpoints are squared off with no extension.
+端点是方形的，没有延伸。
 
 .. _class_Geometry2D_constant_END_SQUARE:
 
@@ -195,7 +195,7 @@ Endpoints are squared off with no extension.
 
 :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` **END_SQUARE** = ``3``
 
-Endpoints are squared off and extended by ``delta`` units.
+端点被平方化并扩展了 ``delta`` 单位。
 
 .. _class_Geometry2D_constant_END_ROUND:
 
@@ -203,7 +203,7 @@ Endpoints are squared off and extended by ``delta`` units.
 
 :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` **END_ROUND** = ``4``
 
-Endpoints are rounded off and extended by ``delta`` units.
+端点被四舍五入，并以 ``delta`` 为单位进行扩展。
 
 .. rst-class:: classref-section-separator
 
@@ -211,8 +211,8 @@ Endpoints are rounded off and extended by ``delta`` units.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Geometry2D_method_bresenham_line:
 
@@ -220,9 +220,9 @@ Method Descriptions
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **bresenham_line**\ (\ from\: :ref:`Vector2i<class_Vector2i>`, to\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Geometry2D_method_bresenham_line>`
 
-Returns the `Bresenham line <https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm>`__ between the ``from`` and ``to`` points. A Bresenham line is a series of pixels that draws a line and is always 1-pixel thick on every row and column of the drawing (never more, never less).
+返回起点 ``from`` 和终点 ``to`` 之间的\ `布雷森汉姆直线 <https://zh.wikipedia.org/zh-hans/%E5%B8%83%E9%9B%B7%E6%A3%AE%E6%BC%A2%E5%A7%86%E7%9B%B4%E7%B7%9A%E6%BC%94%E7%AE%97%E6%B3%95>`__\ 。布雷森汉姆直线是由一系列像素点构成的直线，绘制的每一行每一列的粗细都（不多不少）始终为 1 像素。
 
-Example code to draw a line between two :ref:`Marker2D<class_Marker2D>` nodes using a series of :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>` calls:
+在两个 :ref:`Marker2D<class_Marker2D>` 节点之间调用一系列 :ref:`CanvasItem.draw_rect()<class_CanvasItem_method_draw_rect>` 绘制直线：
 
 ::
 
@@ -240,9 +240,9 @@ Example code to draw a line between two :ref:`Marker2D<class_Marker2D>` nodes us
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **clip_polygons**\ (\ polygon_a\: :ref:`PackedVector2Array<class_PackedVector2Array>`, polygon_b\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_clip_polygons>`
 
-Clips ``polygon_a`` against ``polygon_b`` and returns an array of clipped polygons. This performs :ref:`OPERATION_DIFFERENCE<class_Geometry2D_constant_OPERATION_DIFFERENCE>` between polygons. Returns an empty array if ``polygon_b`` completely overlaps ``polygon_a``.
+根据 ``polygon_b`` 裁剪 ``polygon_a``\ ，并返回一组裁剪后的多边形。这会在多边形之间执行 :ref:`OPERATION_DIFFERENCE<class_Geometry2D_constant_OPERATION_DIFFERENCE>`\ 。如果 ``polygon_b`` 完全覆盖 ``polygon_a`` ，则返回一个空数组。
 
-If ``polygon_b`` is enclosed by ``polygon_a``, returns an outer polygon (boundary) and inner polygon (hole) which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+如果 ``polygon_b`` 被 ``polygon_a`` 包围，则返回一个外多边形（边界）和一个内多边形（孔），可以通过调用 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 来区分。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ If ``polygon_b`` is enclosed by ``polygon_a``, returns an outer polygon (boundar
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **clip_polyline_with_polygon**\ (\ polyline\: :ref:`PackedVector2Array<class_PackedVector2Array>`, polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_clip_polyline_with_polygon>`
 
-Clips ``polyline`` against ``polygon`` and returns an array of clipped polylines. This performs :ref:`OPERATION_DIFFERENCE<class_Geometry2D_constant_OPERATION_DIFFERENCE>` between the polyline and the polygon. This operation can be thought of as cutting a line with a closed shape.
+根据 ``polygon`` 裁剪 ``polyline``\ ，并返回一组裁剪后的折线。这会在折线和多边形之间执行 :ref:`OPERATION_DIFFERENCE<class_Geometry2D_constant_OPERATION_DIFFERENCE>`\ 。这个操作可以被认为是用一个封闭的形状切割一条线。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Clips ``polyline`` against ``polygon`` and returns an array of clipped polylines
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **convex_hull**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_convex_hull>`
 
-Given an array of :ref:`Vector2<class_Vector2>`\ s, returns the convex hull as a list of points in counterclockwise order. The last point is the same as the first one.
+给出一个 :ref:`Vector2<class_Vector2>` 的数组，以逆时针的顺序返回凸面的点的列表。最后一个点与第一个点相同。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Given an array of :ref:`Vector2<class_Vector2>`\ s, returns the convex hull as a
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **decompose_polygon_in_convex**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_decompose_polygon_in_convex>`
 
-Decomposes the ``polygon`` into multiple convex hulls and returns an array of :ref:`PackedVector2Array<class_PackedVector2Array>`.
+将 ``polygon`` 分解为多个凸面，并返回一个 :ref:`PackedVector2Array<class_PackedVector2Array>` 的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -290,9 +290,9 @@ Decomposes the ``polygon`` into multiple convex hulls and returns an array of :r
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **exclude_polygons**\ (\ polygon_a\: :ref:`PackedVector2Array<class_PackedVector2Array>`, polygon_b\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_exclude_polygons>`
 
-Mutually excludes common area defined by intersection of ``polygon_a`` and ``polygon_b`` (see :ref:`intersect_polygons()<class_Geometry2D_method_intersect_polygons>`) and returns an array of excluded polygons. This performs :ref:`OPERATION_XOR<class_Geometry2D_constant_OPERATION_XOR>` between polygons. In other words, returns all but common area between polygons.
+相互排除由 ``polygon_a`` 和 ``polygon_b`` 的交集（参见 :ref:`intersect_polygons()<class_Geometry2D_method_intersect_polygons>`\ ）定义的公共区域，并返回一组排除的多边形。这会在多边形之间执行 :ref:`OPERATION_XOR<class_Geometry2D_constant_OPERATION_XOR>`\ 。换句话说，返回各多边形之间除公共区域之外的所有区域。
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+该操作可能会产生一个外多边形（边界）和一个内多边形（孔），这可以通过调用 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 来区分。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 :ref:`Vector2<class_Vector2>` **get_closest_point_to_segment**\ (\ point\: :ref:`Vector2<class_Vector2>`, s1\: :ref:`Vector2<class_Vector2>`, s2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_get_closest_point_to_segment>`
 
-Returns the 2D point on the 2D segment (``s1``, ``s2``) that is closest to ``point``. The returned point will always be inside the specified segment.
+返回 2D 线段 (``s1``, ``s2``) 上与 ``point`` 最接近的 2D 点。返回的点始终在指定的线段上。
 
 .. rst-class:: classref-item-separator
 
@@ -316,7 +316,7 @@ Returns the 2D point on the 2D segment (``s1``, ``s2``) that is closest to ``poi
 
 :ref:`Vector2<class_Vector2>` **get_closest_point_to_segment_uncapped**\ (\ point\: :ref:`Vector2<class_Vector2>`, s1\: :ref:`Vector2<class_Vector2>`, s2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_get_closest_point_to_segment_uncapped>`
 
-Returns the 2D point on the 2D line defined by (``s1``, ``s2``) that is closest to ``point``. The returned point can be inside the segment (``s1``, ``s2``) or outside of it, i.e. somewhere on the line extending from the segment.
+返回 2D 直线 (``s1``, ``s2``) 上与 ``point`` 最接近的 2D 点。返回的点可能在 (``s1``, ``s2``) 线段上，也有可能不在，即直线上该线段之外的部分。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ Returns the 2D point on the 2D line defined by (``s1``, ``s2``) that is closest 
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_closest_points_between_segments**\ (\ p1\: :ref:`Vector2<class_Vector2>`, q1\: :ref:`Vector2<class_Vector2>`, p2\: :ref:`Vector2<class_Vector2>`, q2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_get_closest_points_between_segments>`
 
-Given the two 2D segments (``p1``, ``q1``) and (``p2``, ``q2``), finds those two points on the two segments that are closest to each other. Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` that contains this point on (``p1``, ``q1``) as well the accompanying point on (``p2``, ``q2``).
+给定两个 2D 线段 (``p1``, ``q1``) 和 (``p2``, ``q2``)，找出这两个线段见距离最近的两个点。返回 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，包含 (``p1``, ``q1``) 和 (``p2``, ``q2``) 上的点。
 
 .. rst-class:: classref-item-separator
 
@@ -340,9 +340,9 @@ Given the two 2D segments (``p1``, ``q1``) and (``p2``, ``q2``), finds those two
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **intersect_polygons**\ (\ polygon_a\: :ref:`PackedVector2Array<class_PackedVector2Array>`, polygon_b\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_intersect_polygons>`
 
-Intersects ``polygon_a`` with ``polygon_b`` and returns an array of intersected polygons. This performs :ref:`OPERATION_INTERSECTION<class_Geometry2D_constant_OPERATION_INTERSECTION>` between polygons. In other words, returns common area shared by polygons. Returns an empty array if no intersection occurs.
+将 ``polygon_a`` 与 ``polygon_b`` 相交，并返回一组相交的多边形。这会在多边形之间执行 :ref:`OPERATION_INTERSECTION<class_Geometry2D_constant_OPERATION_INTERSECTION>`\ 。换句话说，返回由各多边形共享的公共区域。如果没有交集，则返回一个空数组。
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+该操作可能会产生一个外多边形（边界）和一个内多边形（孔），这可以通过调用 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 来区分。
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **intersect_polyline_with_polygon**\ (\ polyline\: :ref:`PackedVector2Array<class_PackedVector2Array>`, polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_intersect_polyline_with_polygon>`
 
-Intersects ``polyline`` with ``polygon`` and returns an array of intersected polylines. This performs :ref:`OPERATION_INTERSECTION<class_Geometry2D_constant_OPERATION_INTERSECTION>` between the polyline and the polygon. This operation can be thought of as chopping a line with a closed shape.
+将 ``polyline`` 与 ``polygon`` 相交，并返回一组相交的折线。这会在折线和多边形之间执行 :ref:`OPERATION_INTERSECTION<class_Geometry2D_constant_OPERATION_INTERSECTION>`\ 。这个操作可以被认为是用一个封闭的形状切割一条线。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Intersects ``polyline`` with ``polygon`` and returns an array of intersected pol
 
 :ref:`bool<class_bool>` **is_point_in_circle**\ (\ point\: :ref:`Vector2<class_Vector2>`, circle_position\: :ref:`Vector2<class_Vector2>`, circle_radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Geometry2D_method_is_point_in_circle>`
 
-Returns ``true`` if ``point`` is inside the circle or if it's located exactly *on* the circle's boundary, otherwise returns ``false``.
+如果 ``point`` 在圆内或恰好位于圆的边界\ *上*\ ，则返回 ``true``\ ；否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns ``true`` if ``point`` is inside the circle or if it's located exactly *o
 
 :ref:`bool<class_bool>` **is_point_in_polygon**\ (\ point\: :ref:`Vector2<class_Vector2>`, polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_is_point_in_polygon>`
 
-Returns ``true`` if ``point`` is inside ``polygon`` or if it's located exactly *on* polygon's boundary, otherwise returns ``false``.
+如果 ``point`` 在 ``polygon`` 内或者它恰好位于多边形的边界\ *上*\ ，则返回 ``true``\ ；否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -390,9 +390,9 @@ Returns ``true`` if ``point`` is inside ``polygon`` or if it's located exactly *
 
 :ref:`bool<class_bool>` **is_polygon_clockwise**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_is_polygon_clockwise>`
 
-Returns ``true`` if ``polygon``'s vertices are ordered in clockwise order, otherwise returns ``false``.
+如果 ``polygon`` 的顶点按顺时针顺序排列，则返回 ``true``\ ，否则返回 ``false``\ 。
 
-\ **Note:** Assumes a Cartesian coordinate system where ``+x`` is right and ``+y`` is up. If using screen coordinates (``+y`` is down), the result will need to be flipped (i.e. a ``true`` result will indicate counter-clockwise).
+\ **注意：**\ 假设笛卡尔坐标系中 ``+x`` 为右，\ ``+y`` 为上。如果使用屏幕坐标（\ ``+y`` 为下），则需要翻转结果（即 ``true`` 结果将标识是逆时针）。
 
 .. rst-class:: classref-item-separator
 
@@ -404,9 +404,9 @@ Returns ``true`` if ``polygon``'s vertices are ordered in clockwise order, other
 
 :ref:`Variant<class_Variant>` **line_intersects_line**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, dir_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, dir_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_line_intersects_line>`
 
-Returns the point of intersection between the two lines (``from_a``, ``dir_a``) and (``from_b``, ``dir_b``). Returns a :ref:`Vector2<class_Vector2>`, or ``null`` if the lines are parallel.
+返回直线 (``from_a``, ``dir_a``) 和直线 (``from_b``, ``dir_b``) 的交点。返回 :ref:`Vector2<class_Vector2>`\ ，直线平行则返回 ``null``\ 。
 
-\ ``from`` and ``dir`` are *not* endpoints of a line segment or ray but the slope (``dir``) and a known point (``from``) on that line.
+\ ``from`` 和 ``dir`` *不是*\ 线段或射线的端点，而是直线的斜率（\ ``dir``\ ）和直线上的一个已知点（\ ``from``\ ）。
 
 
 .. tabs::
@@ -417,11 +417,11 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
     var dir_a = Vector2.RIGHT
     var from_b = Vector2.DOWN
 
-    # Returns Vector2(1, 0)
+    # 返回 Vector2(1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(1, -1))
-    # Returns Vector2(-1, 0)
+    # 返回 Vector2(-1, 0)
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2(-1, -1))
-    # Returns null
+    # 返回 null
     Geometry2D.line_intersects_line(from_a, dir_a, from_b, Vector2.RIGHT)
 
  .. code-tab:: csharp
@@ -430,11 +430,11 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
     var dirA = Vector2.Right;
     var fromB = Vector2.Down;
 
-    // Returns new Vector2(1, 0)
+    // 返回新的 Vector2(1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(1, -1));
-    // Returns new Vector2(-1, 0)
+    // 返回新的 Vector2(-1, 0)
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, new Vector2(-1, -1));
-    // Returns null
+    // 返回 null
     Geometry2D.LineIntersectsLine(fromA, dirA, fromB, Vector2.Right);
 
 
@@ -449,7 +449,7 @@ Returns the point of intersection between the two lines (``from_a``, ``dir_a``) 
 
 :ref:`Dictionary<class_Dictionary>` **make_atlas**\ (\ sizes\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_make_atlas>`
 
-Given an array of :ref:`Vector2<class_Vector2>`\ s representing tiles, builds an atlas. The returned dictionary has two keys: ``points`` is a :ref:`PackedVector2Array<class_PackedVector2Array>` that specifies the positions of each tile, ``size`` contains the overall size of the whole atlas as :ref:`Vector2i<class_Vector2i>`.
+给定一个表示图块的 :ref:`Vector2<class_Vector2>` 数组，构建一个图集。返回的字典有两个键：\ ``points`` 是一个 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，指定每个图块的位置；\ ``size`` 包含整个图集的整体大小，是一个 :ref:`Vector2i<class_Vector2i>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -461,9 +461,9 @@ Given an array of :ref:`Vector2<class_Vector2>`\ s representing tiles, builds an
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **merge_polygons**\ (\ polygon_a\: :ref:`PackedVector2Array<class_PackedVector2Array>`, polygon_b\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_merge_polygons>`
 
-Merges (combines) ``polygon_a`` and ``polygon_b`` and returns an array of merged polygons. This performs :ref:`OPERATION_UNION<class_Geometry2D_constant_OPERATION_UNION>` between polygons.
+合并（结合）\ ``polygon_a`` 和 ``polygon_b``\ ，并返回一组合并的多边形。这在多边形之间执行 :ref:`OPERATION_UNION<class_Geometry2D_constant_OPERATION_UNION>`\ 。
 
-The operation may result in an outer polygon (boundary) and multiple inner polygons (holes) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+该操作可能会产生一个外部多边形（边界）和多个内部多边形（孔），可以通过调用 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 来区分它们。
 
 .. rst-class:: classref-item-separator
 
@@ -475,13 +475,13 @@ The operation may result in an outer polygon (boundary) and multiple inner polyg
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **offset_polygon**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`, delta\: :ref:`float<class_float>`, join_type\: :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` = 0\ ) :ref:`🔗<class_Geometry2D_method_offset_polygon>`
 
-Inflates or deflates ``polygon`` by ``delta`` units (pixels). If ``delta`` is positive, makes the polygon grow outward. If ``delta`` is negative, shrinks the polygon inward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. Returns an empty array if ``delta`` is negative and the absolute value of it approximately exceeds the minimum bounding rectangle dimensions of the polygon.
+按 ``delta`` 单位（像素）膨胀或缩小 ``polygon``\ 。如果 ``delta`` 为正，则使多边形向外增长。如果 ``delta`` 为负，则使多边形向内收缩。返回一个多边形数组，因为膨胀/收缩可能会产生多个离散的多边形。如果 ``delta`` 为负，且其绝对值大约超过多边形的最小边界矩形尺寸，则返回一个空数组。
 
-Each polygon's vertices will be rounded as determined by ``join_type``.
+每个多边形的顶点将根据 ``join_type`` 决定进行舍入。
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+该操作可能会产生一个外部多边形（边界）和内部多边形（孔），这可以通过调用 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 来区分。
 
-\ **Note:** To translate the polygon's vertices specifically, multiply them to a :ref:`Transform2D<class_Transform2D>`:
+\ **注意：**\ 要具体平移多边形的顶点，将它们乘以一个 :ref:`Transform2D<class_Transform2D>`\ ：
 
 
 .. tabs::
@@ -491,14 +491,14 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
     var polygon = PackedVector2Array([Vector2(0, 0), Vector2(100, 0), Vector2(100, 100), Vector2(0, 100)])
     var offset = Vector2(50, 50)
     polygon = Transform2D(0, offset) * polygon
-    print(polygon) # Prints [(50.0, 50.0), (150.0, 50.0), (150.0, 150.0), (50.0, 150.0)]
+    print(polygon) # 输出 [(50.0, 50.0), (150.0, 50.0), (150.0, 150.0), (50.0, 150.0)]
 
  .. code-tab:: csharp
 
     Vector2[] polygon = [new Vector2(0, 0), new Vector2(100, 0), new Vector2(100, 100), new Vector2(0, 100)];
     var offset = new Vector2(50, 50);
     polygon = new Transform2D(0, offset) * polygon;
-    GD.Print((Variant)polygon); // Prints [(50, 50), (150, 50), (150, 150), (50, 150)]
+    GD.Print((Variant)polygon); // 输出 [(50, 50), (150, 50), (150, 150), (50, 150)]
 
 
 
@@ -512,13 +512,13 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 :ref:`Array<class_Array>`\[:ref:`PackedVector2Array<class_PackedVector2Array>`\] **offset_polyline**\ (\ polyline\: :ref:`PackedVector2Array<class_PackedVector2Array>`, delta\: :ref:`float<class_float>`, join_type\: :ref:`PolyJoinType<enum_Geometry2D_PolyJoinType>` = 0, end_type\: :ref:`PolyEndType<enum_Geometry2D_PolyEndType>` = 3\ ) :ref:`🔗<class_Geometry2D_method_offset_polyline>`
 
-Inflates or deflates ``polyline`` by ``delta`` units (pixels), producing polygons. If ``delta`` is positive, makes the polyline grow outward. Returns an array of polygons because inflating/deflating may result in multiple discrete polygons. If ``delta`` is negative, returns an empty array.
+将 ``polyline`` 膨胀或缩小 ``delta`` 个单位（像素），以产生多边形。如果 ``delta`` 为正，则使折线向外增长。返回一组多边形，因为膨胀/收缩可能会产生多个离散的多边形。如果 ``delta`` 为负，则返回一个空数组。
 
-Each polygon's vertices will be rounded as determined by ``join_type``.
+每个多边形的顶点将由 ``join_type`` 决定进行舍入。
 
-Each polygon's endpoints will be rounded as determined by ``end_type``.
+每个多边形的端点将由 ``end_type`` 决定进行舍入。
 
-The operation may result in an outer polygon (boundary) and inner polygon (hole) produced which could be distinguished by calling :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>`.
+该操作可能会产生一个外多边形（边界）和一个内多边形（孔），这可以通过调用 :ref:`is_polygon_clockwise()<class_Geometry2D_method_is_polygon_clockwise>` 来区分。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ The operation may result in an outer polygon (boundary) and inner polygon (hole)
 
 :ref:`bool<class_bool>` **point_is_inside_triangle**\ (\ point\: :ref:`Vector2<class_Vector2>`, a\: :ref:`Vector2<class_Vector2>`, b\: :ref:`Vector2<class_Vector2>`, c\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Geometry2D_method_point_is_inside_triangle>`
 
-Returns if ``point`` is inside the triangle specified by ``a``, ``b`` and ``c``.
+返回 ``point`` 是否位于由 ``a``\ 、\ ``b``\ 、\ ``c`` 指定的三角形中。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Returns if ``point`` is inside the triangle specified by ``a``, ``b`` and ``c``.
 
 :ref:`float<class_float>` **segment_intersects_circle**\ (\ segment_from\: :ref:`Vector2<class_Vector2>`, segment_to\: :ref:`Vector2<class_Vector2>`, circle_position\: :ref:`Vector2<class_Vector2>`, circle_radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_circle>`
 
-Given the 2D segment (``segment_from``, ``segment_to``), returns the position on the segment (as a number between 0 and 1) at which the segment hits the circle that is located at position ``circle_position`` and has radius ``circle_radius``. If the segment does not intersect the circle, -1 is returned (this is also the case if the line extending the segment would intersect the circle, but the segment does not).
+给定 2D 线段 (``segment_from``, ``segment_to``)，返回该线段与圆相交的位置（0 和 1 之间的数），这个圆位于 ``circle_position``\ ，半径为 ``circle_radius``\ 。如果该线段与圆不相交，则返回 -1（同样也适用于这条线段的延长线所在的直线与圆相交，而线段本身不相交的情况）。
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ Given the 2D segment (``segment_from``, ``segment_to``), returns the position on
 
 :ref:`Variant<class_Variant>` **segment_intersects_segment**\ (\ from_a\: :ref:`Vector2<class_Vector2>`, to_a\: :ref:`Vector2<class_Vector2>`, from_b\: :ref:`Vector2<class_Vector2>`, to_b\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Geometry2D_method_segment_intersects_segment>`
 
-Checks if the two segments (``from_a``, ``to_a``) and (``from_b``, ``to_b``) intersect. If yes, return the point of intersection as :ref:`Vector2<class_Vector2>`. If no intersection takes place, returns ``null``.
+检查两条线段 (``from_a``, ``to_a``) 和 (``from_b``, ``to_b``) 是否相交。如果相交，则返回交点 :ref:`Vector2<class_Vector2>`\ 。如果不相交，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Checks if the two segments (``from_a``, ``to_a``) and (``from_b``, ``to_b``) int
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **triangulate_delaunay**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_triangulate_delaunay>`
 
-Triangulates the area specified by discrete set of ``points`` such that no point is inside the circumcircle of any resulting triangle. Returns a :ref:`PackedInt32Array<class_PackedInt32Array>` where each triangle consists of three consecutive point indices into ``points`` (i.e. the returned array will have ``n * 3`` elements, with ``n`` being the number of found triangles). If the triangulation did not succeed, an empty :ref:`PackedInt32Array<class_PackedInt32Array>` is returned.
+对由离散的 ``points`` 集指定的区域进行三角化，使得任何点都不在任何生成的三角形的外接圆内。返回一个 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，其中每个三角形由 ``points`` 中的三个连续点的索引组成（即返回的数组将具有 ``n * 3`` 个元素，其中 ``n`` 是找到的三角形的数量）。如果三角化没有成功，则返回一个空的 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -578,14 +578,14 @@ Triangulates the area specified by discrete set of ``points`` such that no point
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **triangulate_polygon**\ (\ polygon\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_Geometry2D_method_triangulate_polygon>`
 
-Triangulates the polygon specified by the points in ``polygon``. Returns a :ref:`PackedInt32Array<class_PackedInt32Array>` where each triangle consists of three consecutive point indices into ``polygon`` (i.e. the returned array will have ``n * 3`` elements, with ``n`` being the number of found triangles). Output triangles will always be counter clockwise, and the contour will be flipped if it's clockwise. If the triangulation did not succeed, an empty :ref:`PackedInt32Array<class_PackedInt32Array>` is returned.
+对由 ``polygon`` 中的点指定的多边形进行三角化。 返回一个 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，其中每个三角形由 ``polygon`` 中的三个连续点的索引组成（即返回的数组将具有 ``n * 3`` 个元素，其中 ``n`` 是找到的三角形的数量）。输出三角形将始终为逆时针旋转，如果为顺时针旋转，则轮廓将翻转。如果三角化没有成功，则返回一个空的 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

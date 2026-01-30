@@ -8,34 +8,34 @@
 AudioStreamPlayer2D
 ===================
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Plays positional sound in 2D space.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Plays audio that is attenuated with distance to the listener.
-
-By default, audio is heard from the screen center. This can be changed by adding an :ref:`AudioListener2D<class_AudioListener2D>` node to the scene and enabling it by calling :ref:`AudioListener2D.make_current()<class_AudioListener2D_method_make_current>` on it.
-
-See also :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` to play a sound non-positionally.
-
-\ **Note:** Hiding an **AudioStreamPlayer2D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer2D**'s audio output, set :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` to a very low value like ``-100`` (which isn't audible to human hearing).
+在 2D 空间中播放与位置相关的声音。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Audio streams <../tutorials/audio/audio_streams>`
+播放随与监听者的距离增大而衰减的音频。
+
+默认情况下，音频是从屏幕中心收听的。要修改这个位置，可以在场景中添加一个 :ref:`AudioListener2D<class_AudioListener2D>` 节点，并通过调用 :ref:`AudioListener2D.make_current()<class_AudioListener2D_method_make_current>` 将其启用。
+
+另见 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 以非定位的方式播放声音。
+
+\ **注意：**\ 隐藏 **AudioStreamPlayer2D** 节点并不能禁用其音频输出。要暂时禁用 **AudioStreamPlayer2D** 的音频输出，请将 :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` 设置为非常低的值，如 ``-100``\ （人的听觉听不到）。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`音频流 <../tutorials/audio/audio_streams>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_AudioStreamPlayer2D_signal_finished:
 
@@ -107,7 +107,7 @@ Signals
 
 **finished**\ (\ ) :ref:`🔗<class_AudioStreamPlayer2D_signal_finished>`
 
-Emitted when the audio stops playing.
+当音频停止播放时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -115,8 +115,8 @@ Emitted when the audio stops playing.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AudioStreamPlayer2D_property_area_mask:
 
@@ -129,7 +129,7 @@ Property Descriptions
 - |void| **set_area_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_area_mask**\ (\ )
 
-Determines which :ref:`Area2D<class_Area2D>` layers affect the sound for reverb and audio bus effects. Areas can be used to redirect :ref:`AudioStream<class_AudioStream>`\ s so that they play in a certain audio bus. An example of how you might use this is making a "water" area so that sounds played in the water are redirected through an audio bus to make them sound like they are being played underwater.
+决定对混响及音频总线效果有影响的 :ref:`Area2D<class_Area2D>` 层。可使用区域对 :ref:`AudioStream<class_AudioStream>` 进行重定向，使其在特定的音频总线中播放。一个例子是可以用来制作“水域”，将水中播放的声音重定向至单独的音频总线，让声音听起来像是在水下播放。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ Determines which :ref:`Area2D<class_Area2D>` layers affect the sound for reverb 
 - |void| **set_attenuation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_attenuation**\ (\ )
 
-The volume is attenuated over distance with this as an exponent.
+以该属性为指数，将音量随着距离的增加而衰减。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ The volume is attenuated over distance with this as an exponent.
 - |void| **set_autoplay**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_autoplay_enabled**\ (\ )
 
-If ``true``, audio plays when added to scene tree.
+如果为 ``true``\ ，在添加到场景树时将播放音频。
 
 .. rst-class:: classref-item-separator
 
@@ -180,9 +180,9 @@ If ``true``, audio plays when added to scene tree.
 - |void| **set_bus**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_bus**\ (\ )
 
-Bus on which this audio is playing.
+这个音频在哪个总线上播放。
 
-\ **Note:** When setting this property, keep in mind that no validation is performed to see if the given name matches an existing bus. This is because audio bus layouts might be loaded after this property is set. If this given name can't be resolved at runtime, it will fall back to ``"Master"``.
+\ **注意：**\ 设置这个属性时，请记住它并不会对给定的名称是否与现有总线匹配进行校验。这是因为音频总线布局可以在设置这个属性后再加载。如果这个给定的名称在运行时无法解析，就会回退到 ``"Master"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Bus on which this audio is playing.
 - |void| **set_max_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_distance**\ (\ )
 
-Maximum distance from which audio is still hearable.
+音频仍可听到的最大距离。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Maximum distance from which audio is still hearable.
 - |void| **set_max_polyphony**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_polyphony**\ (\ )
 
-The maximum number of sounds this node can play at the same time. Playing additional sounds after this value is reached will cut off the oldest sounds.
+该节点可以同时播放的最大声音数。达到此值后，播放额外的声音将切断最旧的声音。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ The maximum number of sounds this node can play at the same time. Playing additi
 - |void| **set_panning_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_panning_strength**\ (\ )
 
-Scales the panning strength for this node by multiplying the base :ref:`ProjectSettings.audio/general/2d_panning_strength<class_ProjectSettings_property_audio/general/2d_panning_strength>` with this factor. Higher values will pan audio from left to right more dramatically than lower values.
+通过将基础 :ref:`ProjectSettings.audio/general/2d_panning_strength<class_ProjectSettings_property_audio/general/2d_panning_strength>` 乘以该因子，来缩放该节点的声像强度。与较低的值相比，较高的值将从左到右更显著地声像移动音频。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Scales the panning strength for this node by multiplying the base :ref:`ProjectS
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch and the tempo of the audio, as a multiplier of the audio sample's sample rate.
+音频的音高和节奏，作为音频样本的采样率的倍数。
 
 .. rst-class:: classref-item-separator
 
@@ -267,9 +267,9 @@ The pitch and the tempo of the audio, as a multiplier of the audio sample's samp
 - |void| **set_playback_type**\ (\ value\: :ref:`PlaybackType<enum_AudioServer_PlaybackType>`\ )
 - :ref:`PlaybackType<enum_AudioServer_PlaybackType>` **get_playback_type**\ (\ )
 
-**Experimental:** This property may be changed or removed in future versions.
+**实验性：** 未来版本中可能会修改或移除该属性。
 
-The playback type of the stream player. If set other than to the default value, it will force that playback type.
+流播放器的播放类型。如果设置为非默认值，则将强制使用该播放类型。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ The playback type of the stream player. If set other than to the default value, 
 - |void| **set_playing**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_playing**\ (\ )
 
-If ``true``, audio is playing or is queued to be played (see :ref:`play()<class_AudioStreamPlayer2D_method_play>`).
+如果为 ``true``\ ，则音频正在播放，或者已加入播放队列（见 :ref:`play()<class_AudioStreamPlayer2D_method_play>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ If ``true``, audio is playing or is queued to be played (see :ref:`play()<class_
 - |void| **set_stream**\ (\ value\: :ref:`AudioStream<class_AudioStream>`\ )
 - :ref:`AudioStream<class_AudioStream>` **get_stream**\ (\ )
 
-The :ref:`AudioStream<class_AudioStream>` object to be played.
+要播放的 :ref:`AudioStream<class_AudioStream>` 对象。
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ The :ref:`AudioStream<class_AudioStream>` object to be played.
 - |void| **set_stream_paused**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_stream_paused**\ (\ )
 
-If ``true``, the playback is paused. You can resume it by setting :ref:`stream_paused<class_AudioStreamPlayer2D_property_stream_paused>` to ``false``.
+如果为 ``true``\ ，则播放会暂停。你可以通过将 :ref:`stream_paused<class_AudioStreamPlayer2D_property_stream_paused>` 设置为 ``false``\ 来恢复它。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ If ``true``, the playback is paused. You can resume it by setting :ref:`stream_p
 - |void| **set_volume_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_db**\ (\ )
 
-Base volume before attenuation, in decibels.
+衰减前的基础音量，单位为分贝。
 
 .. rst-class:: classref-item-separator
 
@@ -354,9 +354,9 @@ Base volume before attenuation, in decibels.
 - |void| **set_volume_linear**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_linear**\ (\ )
 
-Base volume before attenuation, as a linear value.
+线性形式的衰减前的基础音量。
 
-\ **Note:** This member modifies :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` for convenience. The returned value is equivalent to the result of :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` on :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>`. Setting this member is equivalent to setting :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` to the result of :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` on a value.
+\ **注意：**\ 该成员会帮助修改 :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>`\ 。返回的值等价于使用 :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` 调用 :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` 的结果。设置该成员等价于将 :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` 设置为使用新值调用 :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` 的结果。
 
 .. rst-class:: classref-section-separator
 
@@ -364,8 +364,8 @@ Base volume before attenuation, as a linear value.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AudioStreamPlayer2D_method_get_playback_position:
 
@@ -373,7 +373,7 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_playback_position**\ (\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_get_playback_position>`
 
-Returns the position in the :ref:`AudioStream<class_AudioStream>`.
+返回 :ref:`AudioStream<class_AudioStream>` 中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns the position in the :ref:`AudioStream<class_AudioStream>`.
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **get_stream_playback**\ (\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_get_stream_playback>`
 
-Returns the :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` object associated with this **AudioStreamPlayer2D**.
+返回与该 **AudioStreamPlayer2D** 相关联的 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` 对象。
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ Returns the :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` object associa
 
 :ref:`bool<class_bool>` **has_stream_playback**\ (\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_has_stream_playback>`
 
-Returns whether the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` can return the :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` object or not.
+返回该 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 是否能够返回 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` 对象。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Returns whether the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` can return
 
 |void| **play**\ (\ from_position\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_play>`
 
-Queues the audio to play on the next physics frame, from the given position ``from_position``, in seconds.
+将要播放的音频入队，将在下一物理帧从给定的位置 ``from_position`` 开始播放，单位为秒。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Queues the audio to play on the next physics frame, from the given position ``fr
 
 |void| **seek**\ (\ to_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_seek>`
 
-Sets the position from which audio will be played, in seconds.
+设置音频的播放位置，以秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -433,14 +433,14 @@ Sets the position from which audio will be played, in seconds.
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_stop>`
 
-Stops the audio.
+停止音频。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

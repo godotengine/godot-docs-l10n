@@ -5,23 +5,23 @@
 PhysicsDirectBodyState3DExtension
 =================================
 
-**Inherits:** :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` **<** :ref:`Object<class_Object>`
 
-Provides virtual methods that can be overridden to create custom :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` implementations.
+提供能够覆盖的虚方法，用于创建自定义的 :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` 实现。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class extends :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` by providing additional virtual methods that can be overridden. When these methods are overridden, they will be called instead of the internal methods of the physics server.
+这个类扩展自 :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`\ ，提供了额外可覆盖的虚方法。覆盖这些方法后，就会代替物理服务器的内部方法进行调用。
 
-Intended for use with GDExtension to create custom implementations of :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`.
+旨在通过 GDExtension 创建自定义的 :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` 实现使用。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -134,8 +134,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsDirectBodyState3DExtension_private_method__add_constant_central_force:
 
@@ -833,12 +833,12 @@ Method Descriptions
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

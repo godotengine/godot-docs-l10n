@@ -5,37 +5,37 @@
 PhysicsServer2D
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`PhysicsServer2DExtension<class_PhysicsServer2DExtension>`
+**派生：** :ref:`PhysicsServer2DExtension<class_PhysicsServer2DExtension>`
 
-A server interface for low-level 2D physics access.
+用于访问低阶 2D 物理的服务器接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-PhysicsServer2D is the server responsible for all 2D physics. It can directly create and manipulate all physics objects:
+PhysicsServer2D 是负责所有 2D 物理的服务器。它可以直接创建和操作所有物理对象：
 
-- A *space* is a self-contained world for a physics simulation. It contains bodies, areas, and joints. Its state can be queried for collision and intersection information, and several parameters of the simulation can be modified.
+- *Space（空间）*\ 是用于物理仿真的自包含世界。它包含实体、区域和关节。可以对其状态进行查询，获取碰撞和相交信息，并且可以修改部分仿真参数。
 
-- A *shape* is a geometric shape such as a circle, a rectangle, a capsule, or a polygon. It can be used for collision detection by adding it to a body/area, possibly with an extra transformation relative to the body/area's origin. Bodies/areas can have multiple (transformed) shapes added to them, and a single shape can be added to bodies/areas multiple times with different local transformations.
+- *Shape（形状）*\ 是圆形、矩形、胶囊形、多边形等几何形状。加入到实体/区域中就可以用来进行碰撞检测，还可以带有相对于实体/区域原点的额外变换。实体/区域中可以添加多个（变换后的）形状，并且可以使用不同的局部变换将单个形状多次添加到实体/区域中。
 
-- A *body* is a physical object which can be in static, kinematic, or rigid mode. Its state (such as position and velocity) can be queried and updated. A force integration callback can be set to customize the body's physics.
+- *Body（实体）*\ 是物理对象，可以处于静态、运动学或刚性模式。可以对其状态进行查询和更新（例如位置、速度等）。可以设置力的集成回调，自定义实体的物理特性。
 
-- An *area* is a region in space which can be used to detect bodies and areas entering and exiting it. A body monitoring callback can be set to report entering/exiting body shapes, and similarly an area monitoring callback can be set. Gravity and damping can be overridden within the area by setting area parameters.
+- *Area（区域）*\ 是空间中的区块，可用于检测进入和离开它的实体和区域。可以设置实体的监视回调，报告进入/离开的实体形状，同样可以设置区域的监视回调。通过设置区域参数，可以在区域内覆盖重力和阻尼。
 
-- A *joint* is a constraint, either between two bodies or on one body relative to a point. Parameters such as the joint bias and the rest length of a spring joint can be adjusted.
+- *Joint（关节）*\ 是两个实体之间或一个实体相对于某个点的约束。可以调整关节偏置和弹簧关节的放松长度等参数。
 
-Physics objects in **PhysicsServer2D** may be created and manipulated independently; they do not have to be tied to nodes in the scene tree.
+\ **PhysicsServer2D** 中的物理对象可以独立创建和操作；不必将它们绑定到场景树中的节点。
 
-\ **Note:** All the 2D physics nodes use the physics server internally. Adding a physics node to the scene tree will cause a corresponding physics object to be created in the physics server. A rigid body node registers a callback that updates the node's transform with the transform of the respective body object in the physics server (every physics update). An area node registers a callback to inform the area node about overlaps with the respective area object in the physics server. The raycast node queries the direct state of the relevant space in the physics server.
+\ **注意：**\ 所有 2D 物理节点都在内部使用这个物理服务器。将物理节点添加到场景树，就会导致在物理服务器中创建相应的物理对象。刚体节点会注册回调，该回调会（在每次物理更新时）使用物理服务器中相应实体对象的变换更新该节点的变换。区域节点会注册回调，用来通知区域节点与物理服务器中相应区域对象的重叠。射线投射节点会查询物理服务器中相关空间的直接状态。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -286,8 +286,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_PhysicsServer2D_SpaceParameter:
 
@@ -301,7 +301,7 @@ enum **SpaceParameter**: :ref:`🔗<enum_PhysicsServer2D_SpaceParameter>`
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_CONTACT_RECYCLE_RADIUS** = ``0``
 
-Constant to set/get the maximum distance a pair of bodies has to move before their collision status has to be recalculated. The default value of this parameter is :ref:`ProjectSettings.physics/2d/solver/contact_recycle_radius<class_ProjectSettings_property_physics/2d/solver/contact_recycle_radius>`.
+常量，用于设置/获取一对物体在其碰撞状态被重新计算之前的最大移动距离。该参数的默认值为 :ref:`ProjectSettings.physics/2d/solver/contact_recycle_radius<class_ProjectSettings_property_physics/2d/solver/contact_recycle_radius>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION:
 
@@ -309,7 +309,7 @@ Constant to set/get the maximum distance a pair of bodies has to move before the
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_CONTACT_MAX_SEPARATION** = ``1``
 
-Constant to set/get the maximum distance a shape can be from another before they are considered separated and the contact is discarded. The default value of this parameter is :ref:`ProjectSettings.physics/2d/solver/contact_max_separation<class_ProjectSettings_property_physics/2d/solver/contact_max_separation>`.
+常量，用于设置/获取两个形状间的最大距离，超过该距离后它们将被视为分离，接触将被弃置。该参数的默认值为 :ref:`ProjectSettings.physics/2d/solver/contact_max_separation<class_ProjectSettings_property_physics/2d/solver/contact_max_separation>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION:
 
@@ -317,7 +317,7 @@ Constant to set/get the maximum distance a shape can be from another before they
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION** = ``2``
 
-Constant to set/get the maximum distance a shape can penetrate another shape before it is considered a collision. The default value of this parameter is :ref:`ProjectSettings.physics/2d/solver/contact_max_allowed_penetration<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`.
+常量，用于设置/获取两个形状互相穿透的最大距离，超过该距离后将视为碰撞。该参数的默认值为 :ref:`ProjectSettings.physics/2d/solver/contact_max_allowed_penetration<class_ProjectSettings_property_physics/2d/solver/contact_max_allowed_penetration>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS:
 
@@ -325,7 +325,7 @@ Constant to set/get the maximum distance a shape can penetrate another shape bef
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_CONTACT_DEFAULT_BIAS** = ``3``
 
-Constant to set/get the default solver bias for all physics contacts. A solver bias is a factor controlling how much two objects "rebound", after overlapping, to avoid leaving them in that state because of numerical imprecision. The default value of this parameter is :ref:`ProjectSettings.physics/2d/solver/default_contact_bias<class_ProjectSettings_property_physics/2d/solver/default_contact_bias>`.
+常量，用于设置/获取所有物理接触的默认求解器偏差。求解器偏差是控制两个对象在重叠后“反弹”的程度的一个系数，以避免由于数值不精确而使它们处于该状态。该参数的默认值为 :ref:`ProjectSettings.physics/2d/solver/default_contact_bias<class_ProjectSettings_property_physics/2d/solver/default_contact_bias>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD:
 
@@ -333,7 +333,7 @@ Constant to set/get the default solver bias for all physics contacts. A solver b
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_BODY_LINEAR_VELOCITY_SLEEP_THRESHOLD** = ``4``
 
-Constant to set/get the threshold linear velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given. The default value of this parameter is :ref:`ProjectSettings.physics/2d/sleep_threshold_linear<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`.
+常量，用于设置/获取活跃的阈值线速度。一个线性速度和角速度都被标记为可能处于非活动状态的物体，将在给定时间后进入睡眠状态。该参数的默认值为 :ref:`ProjectSettings.physics/2d/sleep_threshold_linear<class_ProjectSettings_property_physics/2d/sleep_threshold_linear>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD:
 
@@ -341,7 +341,7 @@ Constant to set/get the threshold linear velocity of activity. A body marked as 
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_BODY_ANGULAR_VELOCITY_SLEEP_THRESHOLD** = ``5``
 
-Constant to set/get the threshold angular velocity of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after the time given. The default value of this parameter is :ref:`ProjectSettings.physics/2d/sleep_threshold_angular<class_ProjectSettings_property_physics/2d/sleep_threshold_angular>`.
+常量，用于设置/获取活跃的阈值角速度。一个线性速度和角速度都被标记为可能处于非活动状态的物体，将在给定时间后进入睡眠状态。该参数的默认值为 :ref:`ProjectSettings.physics/2d/sleep_threshold_angular<class_ProjectSettings_property_physics/2d/sleep_threshold_angular>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_BODY_TIME_TO_SLEEP:
 
@@ -349,7 +349,7 @@ Constant to set/get the threshold angular velocity of activity. A body marked as
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_BODY_TIME_TO_SLEEP** = ``6``
 
-Constant to set/get the maximum time of activity. A body marked as potentially inactive for both linear and angular velocity will be put to sleep after this time. The default value of this parameter is :ref:`ProjectSettings.physics/2d/time_before_sleep<class_ProjectSettings_property_physics/2d/time_before_sleep>`.
+常量，用于设置/获得最大的活动时间。一个被标记为线速度和角速度都可能不活动的物体，在这个时间之后将被置入睡眠状态。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS:
 
@@ -357,7 +357,7 @@ Constant to set/get the maximum time of activity. A body marked as potentially i
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_CONSTRAINT_DEFAULT_BIAS** = ``7``
 
-Constant to set/get the default solver bias for all physics constraints. A solver bias is a factor controlling how much two objects "rebound", after violating a constraint, to avoid leaving them in that state because of numerical imprecision. The default value of this parameter is :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>`.
+常量，用于设置/获取所有物理约束的默认求解器偏差。求解器偏差是控制两个对象在违反约束后“反弹”的程度的一个系数，以避免由于数值不精确而使它们处于该状态。该参数的默认值为 :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>`\ 。
 
 .. _class_PhysicsServer2D_constant_SPACE_PARAM_SOLVER_ITERATIONS:
 
@@ -365,7 +365,7 @@ Constant to set/get the default solver bias for all physics constraints. A solve
 
 :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>` **SPACE_PARAM_SOLVER_ITERATIONS** = ``8``
 
-Constant to set/get the number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. The default value of this parameter is :ref:`ProjectSettings.physics/2d/solver/solver_iterations<class_ProjectSettings_property_physics/2d/solver/solver_iterations>`.
+常量，用于设置/获取所有接触与约束的求解器迭代数。迭代次数越多，碰撞越准确。但是，大量的迭代会需要更多的 CPU 能力，会降低性能。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ enum **ShapeType**: :ref:`🔗<enum_PhysicsServer2D_ShapeType>`
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_WORLD_BOUNDARY** = ``0``
 
-This is the constant for creating world boundary shapes. A world boundary shape is an *infinite* line with an origin point, and a normal. Thus, it can be used for front/behind checks.
+常量，用于创建世界边界形状。一个世界边界形状，是具有原点和法线的\ *无限*\ 直线。因此，它可以用于前面/背面检查。
 
 .. _class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY:
 
@@ -391,7 +391,7 @@ This is the constant for creating world boundary shapes. A world boundary shape 
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_SEPARATION_RAY** = ``1``
 
-This is the constant for creating separation ray shapes. A separation ray is defined by a length and separates itself from what is touching its far endpoint. Useful for character controllers.
+常量，用于创建分离射线形状。一条分离射线由一个长度定义，并将其自身与接触其远端点的物体分开。对角色控制器很有用。
 
 .. _class_PhysicsServer2D_constant_SHAPE_SEGMENT:
 
@@ -399,7 +399,7 @@ This is the constant for creating separation ray shapes. A separation ray is def
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_SEGMENT** = ``2``
 
-This is the constant for creating segment shapes. A segment shape is a *finite* line from a point A to a point B. It can be checked for intersections.
+常量，用于创建线段形状。一条线段形状是从点 A 到点 B 的\ *有限*\ 线段。可以用于检查交叉点。
 
 .. _class_PhysicsServer2D_constant_SHAPE_CIRCLE:
 
@@ -407,7 +407,7 @@ This is the constant for creating segment shapes. A segment shape is a *finite* 
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_CIRCLE** = ``3``
 
-This is the constant for creating circle shapes. A circle shape only has a radius. It can be used for intersections and inside/outside checks.
+这是创建圆形的常量。一个圆的形状只有一个半径。它可以用于交点和内/外侧检查。
 
 .. _class_PhysicsServer2D_constant_SHAPE_RECTANGLE:
 
@@ -415,7 +415,7 @@ This is the constant for creating circle shapes. A circle shape only has a radiu
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_RECTANGLE** = ``4``
 
-This is the constant for creating rectangle shapes. A rectangle shape is defined by a width and a height. It can be used for intersections and inside/outside checks.
+这是用于创建矩形形状的常量。矩形形状是由宽度和高度定义的。它可以用于交点和内/外侧检查。
 
 .. _class_PhysicsServer2D_constant_SHAPE_CAPSULE:
 
@@ -423,7 +423,7 @@ This is the constant for creating rectangle shapes. A rectangle shape is defined
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_CAPSULE** = ``5``
 
-This is the constant for creating capsule shapes. A capsule shape is defined by a radius and a length. It can be used for intersections and inside/outside checks.
+这是创建胶囊形状的常量。一个胶囊形状由一个半径和一个长度定义。它可以用于交点和内/外侧检查。
 
 .. _class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON:
 
@@ -431,7 +431,7 @@ This is the constant for creating capsule shapes. A capsule shape is defined by 
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_CONVEX_POLYGON** = ``6``
 
-This is the constant for creating convex polygon shapes. A polygon is defined by a list of points. It can be used for intersections and inside/outside checks.
+常量，用于创建凸多边形形状。一个多边形是由一个点的列表定义的。它可以用于交叉点和内侧/外侧检查。
 
 .. _class_PhysicsServer2D_constant_SHAPE_CONCAVE_POLYGON:
 
@@ -439,7 +439,7 @@ This is the constant for creating convex polygon shapes. A polygon is defined by
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_CONCAVE_POLYGON** = ``7``
 
-This is the constant for creating concave polygon shapes. A polygon is defined by a list of points. It can be used for intersections checks, but not for inside/outside checks.
+这是创建凹形多边形的常量。一个多边形是由一个点的列表定义的。它可以用于交叉点检查，但不能用于内/外侧检查。
 
 .. _class_PhysicsServer2D_constant_SHAPE_CUSTOM:
 
@@ -447,7 +447,7 @@ This is the constant for creating concave polygon shapes. A polygon is defined b
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **SHAPE_CUSTOM** = ``8``
 
-This constant is used internally by the engine. Any attempt to create this kind of shape results in an error.
+引擎内部会使用这个常量。任何试图创建这种形状的行为都会导致错误。
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ enum **AreaParameter**: :ref:`🔗<enum_PhysicsServer2D_AreaParameter>`
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_OVERRIDE_MODE** = ``0``
 
-Constant to set/get gravity override mode in an area. See :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` for possible values. The default value of this parameter is :ref:`AREA_SPACE_OVERRIDE_DISABLED<class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_DISABLED>`.
+常量，在一个区域中设置/获取重力覆盖模式。有关可能的值，请参阅 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>`\ 。这个参数的默认值是 :ref:`AREA_SPACE_OVERRIDE_DISABLED<class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_DISABLED>`\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY:
 
@@ -473,7 +473,7 @@ Constant to set/get gravity override mode in an area. See :ref:`AreaSpaceOverrid
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY** = ``1``
 
-Constant to set/get gravity strength in an area. The default value of this parameter is ``9.80665``.
+常量，用于设置/获取区域中的重力强度。该参数的默认值为 ``9.80665``\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY_VECTOR:
 
@@ -481,7 +481,7 @@ Constant to set/get gravity strength in an area. The default value of this param
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_VECTOR** = ``2``
 
-Constant to set/get gravity vector/center in an area. The default value of this parameter is ``Vector2(0, -1)``.
+常量，用于设置/获取区域中的重力向量/中心。该参数的默认值为 ``Vector2(0, -1)``\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY_IS_POINT:
 
@@ -489,7 +489,7 @@ Constant to set/get gravity vector/center in an area. The default value of this 
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_IS_POINT** = ``3``
 
-Constant to set/get whether the gravity vector of an area is a direction, or a center point. The default value of this parameter is ``false``.
+常量，用于设置/获取区域中的重力向量是方向，还是中心点。该参数的默认值为 ``false``\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE:
 
@@ -497,9 +497,9 @@ Constant to set/get whether the gravity vector of an area is a direction, or a c
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_GRAVITY_POINT_UNIT_DISTANCE** = ``4``
 
-Constant to set/get the distance at which the gravity strength is equal to the gravity controlled by :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>`. For example, on a planet 100 pixels in radius with a surface gravity of 4.0 px/s², set the gravity to 4.0 and the unit distance to 100.0. The gravity will have falloff according to the inverse square law, so in the example, at 200 pixels from the center the gravity will be 1.0 px/s² (twice the distance, 1/4th the gravity), at 50 pixels it will be 16.0 px/s² (half the distance, 4x the gravity), and so on.
+常量，用于设置/获取重力强度等于 :ref:`AREA_PARAM_GRAVITY<class_PhysicsServer2D_constant_AREA_PARAM_GRAVITY>` 控制的重力的距离。例如，在一个半径为 100 像素且表面重力为 4.0 px/s² 的行星上，将重力设置为 4.0，将单位距离设置为 100.0。重力将根据平方反比定律衰减，因此在该示例中，距离中心 200 像素处的重力将为 1.0 px/s²（距离的两倍，重力的 1/4），距离中心 50 像素处重力为 16.0 px/s²（距离的一半，重力的 4 倍），依此类推。
 
-The above is true only when the unit distance is a positive number. When the unit distance is set to 0.0, the gravity will be constant regardless of distance. The default value of this parameter is ``0.0``.
+仅当单位距离为正数时，上述情况才成立。当单位距离设置为 0.0 时，重力将与距离无关。该参数的默认值为 ``0.0``\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE:
 
@@ -507,7 +507,7 @@ The above is true only when the unit distance is a positive number. When the uni
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_LINEAR_DAMP_OVERRIDE_MODE** = ``5``
 
-Constant to set/get linear damping override mode in an area. See :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` for possible values. The default value of this parameter is :ref:`AREA_SPACE_OVERRIDE_DISABLED<class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_DISABLED>`.
+常量，用于在一个区域中设置/获取线性阻尼覆盖模式。有关可能的值，请参阅 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>`\ 。这个参数的默认值是 :ref:`AREA_SPACE_OVERRIDE_DISABLED<class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_DISABLED>`\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_LINEAR_DAMP:
 
@@ -515,7 +515,7 @@ Constant to set/get linear damping override mode in an area. See :ref:`AreaSpace
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_LINEAR_DAMP** = ``6``
 
-Constant to set/get the linear damping factor of an area. The default value of this parameter is ``0.1``.
+常数，用于设置/获取区域的线性阻尼系数。该参数的默认值为 ``0.1``\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_ANGULAR_DAMP_OVERRIDE_MODE:
 
@@ -523,7 +523,7 @@ Constant to set/get the linear damping factor of an area. The default value of t
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_ANGULAR_DAMP_OVERRIDE_MODE** = ``7``
 
-Constant to set/get angular damping override mode in an area. See :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` for possible values. The default value of this parameter is :ref:`AREA_SPACE_OVERRIDE_DISABLED<class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_DISABLED>`.
+常量，用于在一个区域中设置/获取角度阻尼覆盖模式。有关可能的值，请参阅 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>`\ 。这个参数的默认值是 :ref:`AREA_SPACE_OVERRIDE_DISABLED<class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_DISABLED>`\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_ANGULAR_DAMP:
 
@@ -531,7 +531,7 @@ Constant to set/get angular damping override mode in an area. See :ref:`AreaSpac
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_ANGULAR_DAMP** = ``8``
 
-Constant to set/get the angular damping factor of an area. The default value of this parameter is ``1.0``.
+常数，用于设置/获取区域的角度阻尼系数。该参数的默认值为 ``1.0``\ 。
 
 .. _class_PhysicsServer2D_constant_AREA_PARAM_PRIORITY:
 
@@ -539,7 +539,7 @@ Constant to set/get the angular damping factor of an area. The default value of 
 
 :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>` **AREA_PARAM_PRIORITY** = ``9``
 
-Constant to set/get the priority (order of processing) of an area. The default value of this parameter is ``0``.
+常量，用于设置/获取区域的优先级（处理顺序）。该参数的默认值为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ enum **AreaSpaceOverrideMode**: :ref:`🔗<enum_PhysicsServer2D_AreaSpaceOverrid
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_DISABLED** = ``0``
 
-This area does not affect gravity/damp. These are generally areas that exist only to detect collisions, and objects entering or exiting them.
+该区域不影响重力/阻尼。这些区域的存在通常只是为了检测碰撞、以及物体是否进入或离开它们。
 
 .. _class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_COMBINE:
 
@@ -565,7 +565,7 @@ This area does not affect gravity/damp. These are generally areas that exist onl
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_COMBINE** = ``1``
 
-This area adds its gravity/damp values to whatever has been calculated so far. This way, many overlapping areas can combine their physics to make interesting effects.
+该区域将其重力/阻尼值加到目前已经计算出的结果上。这样一来，许多重叠的区域可以结合它们的物理运算来创建有趣的效果。
 
 .. _class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_COMBINE_REPLACE:
 
@@ -573,7 +573,7 @@ This area adds its gravity/damp values to whatever has been calculated so far. T
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_COMBINE_REPLACE** = ``2``
 
-This area adds its gravity/damp values to whatever has been calculated so far. Then stops taking into account the rest of the areas, even the default one.
+该区域将其重力/阻尼值加到目前已经计算出的结果上。然后停止考虑其余区域，甚至是默认区域。
 
 .. _class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_REPLACE:
 
@@ -581,7 +581,7 @@ This area adds its gravity/damp values to whatever has been calculated so far. T
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_REPLACE** = ``3``
 
-This area replaces any gravity/damp, even the default one, and stops taking into account the rest of the areas.
+该区域将替换所有重力/阻尼，甚至是默认值，并停止考虑其余区域。
 
 .. _class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_REPLACE_COMBINE:
 
@@ -589,7 +589,7 @@ This area replaces any gravity/damp, even the default one, and stops taking into
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_REPLACE_COMBINE** = ``4``
 
-This area replaces any gravity/damp calculated so far, but keeps calculating the rest of the areas, down to the default one.
+该区域将替换目前已经计算出的任何重力/阻尼，但仍将继续计算其余区域，直到默认区域。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ enum **BodyMode**: :ref:`🔗<enum_PhysicsServer2D_BodyMode>`
 
 :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>` **BODY_MODE_STATIC** = ``0``
 
-Constant for static bodies. In this mode, a body can be only moved by user code and doesn't collide with other bodies along its path when moved.
+常量，用于静态物体。在这种模式下，物体只能由用户代码移动，移动时不会与路径上的其他物体发生碰撞。
 
 .. _class_PhysicsServer2D_constant_BODY_MODE_KINEMATIC:
 
@@ -615,7 +615,7 @@ Constant for static bodies. In this mode, a body can be only moved by user code 
 
 :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>` **BODY_MODE_KINEMATIC** = ``1``
 
-Constant for kinematic bodies. In this mode, a body can be only moved by user code and collides with other bodies along its path.
+常量，用于运动学物体。在这种模式下，物体只能由用户代码移动，会与路径上的其他物体发生碰撞。
 
 .. _class_PhysicsServer2D_constant_BODY_MODE_RIGID:
 
@@ -623,7 +623,7 @@ Constant for kinematic bodies. In this mode, a body can be only moved by user co
 
 :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>` **BODY_MODE_RIGID** = ``2``
 
-Constant for rigid bodies. In this mode, a body can be pushed by other bodies and has forces applied.
+常量，用于刚体。在这种模式下，物体可以被其他物体推动，能够对其施加力。
 
 .. _class_PhysicsServer2D_constant_BODY_MODE_RIGID_LINEAR:
 
@@ -631,7 +631,7 @@ Constant for rigid bodies. In this mode, a body can be pushed by other bodies an
 
 :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>` **BODY_MODE_RIGID_LINEAR** = ``3``
 
-Constant for linear rigid bodies. In this mode, a body can not rotate, and only its linear velocity is affected by external forces.
+常量，用于线性刚体。在这种模式下，物体不能旋转，只有线速度受外力影响。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ enum **BodyParameter**: :ref:`🔗<enum_PhysicsServer2D_BodyParameter>`
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_BOUNCE** = ``0``
 
-Constant to set/get a body's bounce factor. The default value of this parameter is ``0.0``.
+常量，用于设置/获取物体的反弹系数。该参数的默认值为 ``0.0``\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_FRICTION:
 
@@ -657,7 +657,7 @@ Constant to set/get a body's bounce factor. The default value of this parameter 
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_FRICTION** = ``1``
 
-Constant to set/get a body's friction. The default value of this parameter is ``1.0``.
+常量，用于设置/获取物体的摩擦力。该参数的默认值为 ``1.0``\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_MASS:
 
@@ -665,11 +665,11 @@ Constant to set/get a body's friction. The default value of this parameter is ``
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_MASS** = ``2``
 
-Constant to set/get a body's mass. The default value of this parameter is ``1.0``. If the body's mode is set to :ref:`BODY_MODE_RIGID<class_PhysicsServer2D_constant_BODY_MODE_RIGID>`, then setting this parameter will have the following additional effects:
+常量，用于设置/获取物体的质量。该参数的默认值为\ ``1.0``\ 。如果该物体的模式被设置为 :ref:`BODY_MODE_RIGID<class_PhysicsServer2D_constant_BODY_MODE_RIGID>`\ ，那么设置这个参数会有以下额外效果：
 
-- If the parameter :ref:`BODY_PARAM_CENTER_OF_MASS<class_PhysicsServer2D_constant_BODY_PARAM_CENTER_OF_MASS>` has never been set explicitly, then the value of that parameter will be recalculated based on the body's shapes.
+- 如果参数 :ref:`BODY_PARAM_CENTER_OF_MASS<class_PhysicsServer2D_constant_BODY_PARAM_CENTER_OF_MASS>` 尚未被明确设置，则该参数的值将根据物体的形状重新计算。
 
-- If the parameter :ref:`BODY_PARAM_INERTIA<class_PhysicsServer2D_constant_BODY_PARAM_INERTIA>` is set to a value ``<= 0.0``, then the value of that parameter will be recalculated based on the body's shapes, mass, and center of mass.
+- 如果参数 :ref:`BODY_PARAM_INERTIA<class_PhysicsServer2D_constant_BODY_PARAM_INERTIA>` 被设置为 ``<= 0.0``\ ，则该参数的值将根据该物体的形状、质量和质心重新计算。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_INERTIA:
 
@@ -677,7 +677,7 @@ Constant to set/get a body's mass. The default value of this parameter is ``1.0`
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_INERTIA** = ``3``
 
-Constant to set/get a body's inertia. The default value of this parameter is ``0.0``. If the body's inertia is set to a value ``<= 0.0``, then the inertia will be recalculated based on the body's shapes, mass, and center of mass.
+常量，用于设置/获取物体的惯性。该参数的默认值为 ``0.0``\ 。如果物体的惯性被设置为 ``<= 0.0``\ ，则惯性将根据该物体的形状、质量和质心重新计算。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_CENTER_OF_MASS:
 
@@ -685,7 +685,7 @@ Constant to set/get a body's inertia. The default value of this parameter is ``0
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_CENTER_OF_MASS** = ``4``
 
-Constant to set/get a body's center of mass position in the body's local coordinate system. The default value of this parameter is ``Vector2(0, 0)``. If this parameter is never set explicitly, then it is recalculated based on the body's shapes when setting the parameter :ref:`BODY_PARAM_MASS<class_PhysicsServer2D_constant_BODY_PARAM_MASS>` or when calling :ref:`body_set_space()<class_PhysicsServer2D_method_body_set_space>`.
+常量，用于在物体局部坐标系中设置/获取该物体的质心位置。该参数的默认值为 ``Vector2(0, 0)``\ 。如果该参数从未明确设置，则在设置参数 :ref:`BODY_PARAM_MASS<class_PhysicsServer2D_constant_BODY_PARAM_MASS>` 或调用 :ref:`body_set_space()<class_PhysicsServer2D_method_body_set_space>` 时，会根据物体的形状重新计算。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_GRAVITY_SCALE:
 
@@ -693,7 +693,7 @@ Constant to set/get a body's center of mass position in the body's local coordin
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_GRAVITY_SCALE** = ``5``
 
-Constant to set/get a body's gravity multiplier. The default value of this parameter is ``1.0``.
+常量，用于设置/获取物体的重力倍数。该参数的默认值为 ``1.0``\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_LINEAR_DAMP_MODE:
 
@@ -701,7 +701,7 @@ Constant to set/get a body's gravity multiplier. The default value of this param
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_LINEAR_DAMP_MODE** = ``6``
 
-Constant to set/get a body's linear damping mode. See :ref:`BodyDampMode<enum_PhysicsServer2D_BodyDampMode>` for possible values. The default value of this parameter is :ref:`BODY_DAMP_MODE_COMBINE<class_PhysicsServer2D_constant_BODY_DAMP_MODE_COMBINE>`.
+常量，用于设置/获取物体的线性阻尼模式。可能的值见 :ref:`BodyDampMode<enum_PhysicsServer2D_BodyDampMode>`\ 。这个参数的默认值为 :ref:`BODY_DAMP_MODE_COMBINE<class_PhysicsServer2D_constant_BODY_DAMP_MODE_COMBINE>`\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_ANGULAR_DAMP_MODE:
 
@@ -709,7 +709,7 @@ Constant to set/get a body's linear damping mode. See :ref:`BodyDampMode<enum_Ph
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_ANGULAR_DAMP_MODE** = ``7``
 
-Constant to set/get a body's angular damping mode. See :ref:`BodyDampMode<enum_PhysicsServer2D_BodyDampMode>` for possible values. The default value of this parameter is :ref:`BODY_DAMP_MODE_COMBINE<class_PhysicsServer2D_constant_BODY_DAMP_MODE_COMBINE>`.
+常量，用于设置/获取物体的角度阻尼模式。可能的值见 :ref:`BodyDampMode<enum_PhysicsServer2D_BodyDampMode>`\ 。这个参数的默认值为 :ref:`BODY_DAMP_MODE_COMBINE<class_PhysicsServer2D_constant_BODY_DAMP_MODE_COMBINE>`\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_LINEAR_DAMP:
 
@@ -717,7 +717,7 @@ Constant to set/get a body's angular damping mode. See :ref:`BodyDampMode<enum_P
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_LINEAR_DAMP** = ``8``
 
-Constant to set/get a body's linear damping factor. The default value of this parameter is ``0.0``.
+常量，用于设置/获取物体的线性阻尼系数。该参数的默认值为 ``0.0``\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_ANGULAR_DAMP:
 
@@ -725,7 +725,7 @@ Constant to set/get a body's linear damping factor. The default value of this pa
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_ANGULAR_DAMP** = ``9``
 
-Constant to set/get a body's angular damping factor. The default value of this parameter is ``0.0``.
+常量，用于设置/获取物体的角度阻尼系数。该参数的默认值为 ``0.0``\ 。
 
 .. _class_PhysicsServer2D_constant_BODY_PARAM_MAX:
 
@@ -733,7 +733,7 @@ Constant to set/get a body's angular damping factor. The default value of this p
 
 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` **BODY_PARAM_MAX** = ``10``
 
-Represents the size of the :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` enum.
+代表 :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -751,7 +751,7 @@ enum **BodyDampMode**: :ref:`🔗<enum_PhysicsServer2D_BodyDampMode>`
 
 :ref:`BodyDampMode<enum_PhysicsServer2D_BodyDampMode>` **BODY_DAMP_MODE_COMBINE** = ``0``
 
-The body's damping value is added to any value set in areas or the default value.
+物体的阻尼值将被加到区域中所设置的值或默认值上。
 
 .. _class_PhysicsServer2D_constant_BODY_DAMP_MODE_REPLACE:
 
@@ -759,7 +759,7 @@ The body's damping value is added to any value set in areas or the default value
 
 :ref:`BodyDampMode<enum_PhysicsServer2D_BodyDampMode>` **BODY_DAMP_MODE_REPLACE** = ``1``
 
-The body's damping value replaces any value set in areas or the default value.
+物体的阻尼值会替换区域中所设置的值或默认值。
 
 .. rst-class:: classref-item-separator
 
@@ -777,7 +777,7 @@ enum **BodyState**: :ref:`🔗<enum_PhysicsServer2D_BodyState>`
 
 :ref:`BodyState<enum_PhysicsServer2D_BodyState>` **BODY_STATE_TRANSFORM** = ``0``
 
-Constant to set/get the current transform matrix of the body.
+常量，用于设置/获取物体的当前变换矩阵。
 
 .. _class_PhysicsServer2D_constant_BODY_STATE_LINEAR_VELOCITY:
 
@@ -785,7 +785,7 @@ Constant to set/get the current transform matrix of the body.
 
 :ref:`BodyState<enum_PhysicsServer2D_BodyState>` **BODY_STATE_LINEAR_VELOCITY** = ``1``
 
-Constant to set/get the current linear velocity of the body.
+常量，用于设置/获取物体的当前线速度。
 
 .. _class_PhysicsServer2D_constant_BODY_STATE_ANGULAR_VELOCITY:
 
@@ -793,7 +793,7 @@ Constant to set/get the current linear velocity of the body.
 
 :ref:`BodyState<enum_PhysicsServer2D_BodyState>` **BODY_STATE_ANGULAR_VELOCITY** = ``2``
 
-Constant to set/get the current angular velocity of the body.
+常量，用于设置/获取物体的当前角速度。
 
 .. _class_PhysicsServer2D_constant_BODY_STATE_SLEEPING:
 
@@ -801,7 +801,7 @@ Constant to set/get the current angular velocity of the body.
 
 :ref:`BodyState<enum_PhysicsServer2D_BodyState>` **BODY_STATE_SLEEPING** = ``3``
 
-Constant to sleep/wake up a body, or to get whether it is sleeping.
+常量，用于使物体沉睡/唤醒，或得到它是否在沉睡。
 
 .. _class_PhysicsServer2D_constant_BODY_STATE_CAN_SLEEP:
 
@@ -809,7 +809,7 @@ Constant to sleep/wake up a body, or to get whether it is sleeping.
 
 :ref:`BodyState<enum_PhysicsServer2D_BodyState>` **BODY_STATE_CAN_SLEEP** = ``4``
 
-Constant to set/get whether the body can sleep.
+常量，用于设置/获取物体是否可以休眠。
 
 .. rst-class:: classref-item-separator
 
@@ -827,7 +827,7 @@ enum **JointType**: :ref:`🔗<enum_PhysicsServer2D_JointType>`
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **JOINT_TYPE_PIN** = ``0``
 
-Constant to create pin joints.
+常量，用于创造销关节。
 
 .. _class_PhysicsServer2D_constant_JOINT_TYPE_GROOVE:
 
@@ -835,7 +835,7 @@ Constant to create pin joints.
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **JOINT_TYPE_GROOVE** = ``1``
 
-Constant to create groove joints.
+常量，用于创造槽关节。
 
 .. _class_PhysicsServer2D_constant_JOINT_TYPE_DAMPED_SPRING:
 
@@ -843,7 +843,7 @@ Constant to create groove joints.
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **JOINT_TYPE_DAMPED_SPRING** = ``2``
 
-Constant to create damped spring joints.
+常量，用于创造有阻尼的弹簧关节。
 
 .. _class_PhysicsServer2D_constant_JOINT_TYPE_MAX:
 
@@ -851,7 +851,7 @@ Constant to create damped spring joints.
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **JOINT_TYPE_MAX** = ``3``
 
-Represents the size of the :ref:`JointType<enum_PhysicsServer2D_JointType>` enum.
+代表 :ref:`JointType<enum_PhysicsServer2D_JointType>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -869,9 +869,9 @@ enum **JointParam**: :ref:`🔗<enum_PhysicsServer2D_JointParam>`
 
 :ref:`JointParam<enum_PhysicsServer2D_JointParam>` **JOINT_PARAM_BIAS** = ``0``
 
-Constant to set/get how fast the joint pulls the bodies back to satisfy the joint constraint. The lower the value, the more the two bodies can pull on the joint. The default value of this parameter is ``0.0``.
+常量，用于设置/获取该关节将实体拉回以满足关节约束的速度。值越低，两个物体对关节的拉动就越大。该参数的默认值为 ``0.0``\ 。
 
-\ **Note:** In Godot Physics, this parameter is only used for pin joints and groove joints.
+\ **注意：**\ 在 Godot 物理中，这个参数只用于销关节和槽关节。
 
 .. _class_PhysicsServer2D_constant_JOINT_PARAM_MAX_BIAS:
 
@@ -879,9 +879,9 @@ Constant to set/get how fast the joint pulls the bodies back to satisfy the join
 
 :ref:`JointParam<enum_PhysicsServer2D_JointParam>` **JOINT_PARAM_MAX_BIAS** = ``1``
 
-Constant to set/get the maximum speed with which the joint can apply corrections. The default value of this parameter is ``3.40282e+38``.
+常量，用于设置/获取关节可以应用校正的最大速度。该参数的默认值为 ``3.40282e+38``\ 。
 
-\ **Note:** In Godot Physics, this parameter is only used for groove joints.
+\ **注意：**\ 在 Godot 物理中，这个参数只用于槽关节。
 
 .. _class_PhysicsServer2D_constant_JOINT_PARAM_MAX_FORCE:
 
@@ -889,9 +889,9 @@ Constant to set/get the maximum speed with which the joint can apply corrections
 
 :ref:`JointParam<enum_PhysicsServer2D_JointParam>` **JOINT_PARAM_MAX_FORCE** = ``2``
 
-Constant to set/get the maximum force that the joint can use to act on the two bodies. The default value of this parameter is ``3.40282e+38``.
+常量，用于设置/获取关节可用于作用于两个实体的最大力。该参数的默认值为 ``3.40282e+38``\ 。
 
-\ **Note:** In Godot Physics, this parameter is only used for groove joints.
+\ **注意：**\ 在 Godot 物理中，这个参数只用于槽关节。
 
 .. rst-class:: classref-item-separator
 
@@ -909,7 +909,7 @@ enum **PinJointParam**: :ref:`🔗<enum_PhysicsServer2D_PinJointParam>`
 
 :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_SOFTNESS** = ``0``
 
-Constant to set/get a how much the bond of the pin joint can flex. The default value of this parameter is ``0.0``.
+常量，用于设置/获取销关节的纽带可以弯曲多少。该参数的默认值为 ``0.0``\ 。
 
 .. _class_PhysicsServer2D_constant_PIN_JOINT_LIMIT_UPPER:
 
@@ -917,7 +917,7 @@ Constant to set/get a how much the bond of the pin joint can flex. The default v
 
 :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_LIMIT_UPPER** = ``1``
 
-The maximum rotation around the pin.
+绕该销的最大旋转。
 
 .. _class_PhysicsServer2D_constant_PIN_JOINT_LIMIT_LOWER:
 
@@ -925,7 +925,7 @@ The maximum rotation around the pin.
 
 :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_LIMIT_LOWER** = ``2``
 
-The minimum rotation around the pin.
+绕该销的最小旋转。
 
 .. _class_PhysicsServer2D_constant_PIN_JOINT_MOTOR_TARGET_VELOCITY:
 
@@ -933,7 +933,7 @@ The minimum rotation around the pin.
 
 :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_MOTOR_TARGET_VELOCITY** = ``3``
 
-Target speed for the motor. In radians per second.
+马达的目标速度。单位为弧度每秒。
 
 .. rst-class:: classref-item-separator
 
@@ -951,7 +951,7 @@ enum **PinJointFlag**: :ref:`🔗<enum_PhysicsServer2D_PinJointFlag>`
 
 :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` **PIN_JOINT_FLAG_ANGULAR_LIMIT_ENABLED** = ``0``
 
-If ``true``, the pin has a maximum and a minimum rotation.
+如果为 ``true``\ ，则销关节具有最大和最小旋转。
 
 .. _class_PhysicsServer2D_constant_PIN_JOINT_FLAG_MOTOR_ENABLED:
 
@@ -959,7 +959,7 @@ If ``true``, the pin has a maximum and a minimum rotation.
 
 :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` **PIN_JOINT_FLAG_MOTOR_ENABLED** = ``1``
 
-If ``true``, a motor turns the pin.
+如果为 ``true``\ ，则马达将转动该销。
 
 .. rst-class:: classref-item-separator
 
@@ -977,7 +977,7 @@ enum **DampedSpringParam**: :ref:`🔗<enum_PhysicsServer2D_DampedSpringParam>`
 
 :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>` **DAMPED_SPRING_REST_LENGTH** = ``0``
 
-Sets the resting length of the spring joint. The joint will always try to go to back this length when pulled apart. The default value of this parameter is the distance between the joint's anchor points.
+设置弹簧关节的放松长度。当拉开时，该关节将始终尝试回到这个长度。该参数的默认值是关节锚点之间的距离。
 
 .. _class_PhysicsServer2D_constant_DAMPED_SPRING_STIFFNESS:
 
@@ -985,7 +985,7 @@ Sets the resting length of the spring joint. The joint will always try to go to 
 
 :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>` **DAMPED_SPRING_STIFFNESS** = ``1``
 
-Sets the stiffness of the spring joint. The joint applies a force equal to the stiffness times the distance from its resting length. The default value of this parameter is ``20.0``.
+设置弹簧关节的刚度。该关节施加的力等于刚度乘以距其放松长度的距离。该参数的默认值为 ``20.0``\ 。
 
 .. _class_PhysicsServer2D_constant_DAMPED_SPRING_DAMPING:
 
@@ -993,7 +993,7 @@ Sets the stiffness of the spring joint. The joint applies a force equal to the s
 
 :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>` **DAMPED_SPRING_DAMPING** = ``2``
 
-Sets the damping ratio of the spring joint. A value of 0 indicates an undamped spring, while 1 causes the system to reach equilibrium as fast as possible (critical damping). The default value of this parameter is ``1.5``.
+设置弹簧关节的阻尼比率。值为 0 表示无阻尼弹簧，而 1 表示系统尽可能快地达到平衡（临界阻尼）。该参数的默认值为 ``1.5``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1011,7 +1011,7 @@ enum **CCDMode**: :ref:`🔗<enum_PhysicsServer2D_CCDMode>`
 
 :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>` **CCD_MODE_DISABLED** = ``0``
 
-Disables continuous collision detection. This is the fastest way to detect body collisions, but it can miss small and/or fast-moving objects.
+禁用连续碰撞检测。这是检测物体碰撞的最快方法，但可能会错过较小和/或快速移动的物体。
 
 .. _class_PhysicsServer2D_constant_CCD_MODE_CAST_RAY:
 
@@ -1019,7 +1019,7 @@ Disables continuous collision detection. This is the fastest way to detect body 
 
 :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>` **CCD_MODE_CAST_RAY** = ``1``
 
-Enables continuous collision detection by raycasting. It is faster than shapecasting, but less precise.
+通过射线投射实现连续的碰撞检测。它比形状投射更快，但不够精确。
 
 .. _class_PhysicsServer2D_constant_CCD_MODE_CAST_SHAPE:
 
@@ -1027,7 +1027,7 @@ Enables continuous collision detection by raycasting. It is faster than shapecas
 
 :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>` **CCD_MODE_CAST_SHAPE** = ``2``
 
-Enables continuous collision detection by shapecasting. It is the slowest CCD method, and the most precise.
+通过形变实现连续的碰撞检测。它是最慢的 CCD 方法，也是最精确的。
 
 .. rst-class:: classref-item-separator
 
@@ -1045,7 +1045,7 @@ enum **AreaBodyStatus**: :ref:`🔗<enum_PhysicsServer2D_AreaBodyStatus>`
 
 :ref:`AreaBodyStatus<enum_PhysicsServer2D_AreaBodyStatus>` **AREA_BODY_ADDED** = ``0``
 
-The value of the first parameter and area callback function receives, when an object enters one of its shapes.
+当对象进入区域的任一形状时，区域回调函数接收的第一个参数值。
 
 .. _class_PhysicsServer2D_constant_AREA_BODY_REMOVED:
 
@@ -1053,7 +1053,7 @@ The value of the first parameter and area callback function receives, when an ob
 
 :ref:`AreaBodyStatus<enum_PhysicsServer2D_AreaBodyStatus>` **AREA_BODY_REMOVED** = ``1``
 
-The value of the first parameter and area callback function receives, when an object exits one of its shapes.
+当对象退出区域的任一形状时，区域回调函数接收的第一个参数值。
 
 .. rst-class:: classref-item-separator
 
@@ -1071,7 +1071,7 @@ enum **ProcessInfo**: :ref:`🔗<enum_PhysicsServer2D_ProcessInfo>`
 
 :ref:`ProcessInfo<enum_PhysicsServer2D_ProcessInfo>` **INFO_ACTIVE_OBJECTS** = ``0``
 
-Constant to get the number of objects that are not sleeping.
+常量，用以获取未休眠的对象的数量。
 
 .. _class_PhysicsServer2D_constant_INFO_COLLISION_PAIRS:
 
@@ -1079,7 +1079,7 @@ Constant to get the number of objects that are not sleeping.
 
 :ref:`ProcessInfo<enum_PhysicsServer2D_ProcessInfo>` **INFO_COLLISION_PAIRS** = ``1``
 
-Constant to get the number of possible collisions.
+常量，用以获取可能的碰撞数。
 
 .. _class_PhysicsServer2D_constant_INFO_ISLAND_COUNT:
 
@@ -1087,7 +1087,7 @@ Constant to get the number of possible collisions.
 
 :ref:`ProcessInfo<enum_PhysicsServer2D_ProcessInfo>` **INFO_ISLAND_COUNT** = ``2``
 
-Constant to get the number of space regions where a collision could occur.
+常量，用以获取可能发生碰撞的空间区块数。
 
 .. rst-class:: classref-section-separator
 
@@ -1095,8 +1095,8 @@ Constant to get the number of space regions where a collision could occur.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsServer2D_method_area_add_shape:
 
@@ -1104,7 +1104,7 @@ Method Descriptions
 
 |void| **area_add_shape**\ (\ area\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), disabled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PhysicsServer2D_method_area_add_shape>`
 
-Adds a shape to the area, with the given local transform. The shape (together with its ``transform`` and ``disabled`` properties) is added to an array of shapes, and the shapes of an area are usually referenced by their index in this array.
+使用给定的局部变换向区域添加一个形状。该形状（连同它的 ``transform`` 和 ``disabled`` 属性）被添加到一个形状数组中，一个区域的形状通常由它们在这个数组中的索引引用。
 
 .. rst-class:: classref-item-separator
 
@@ -1116,7 +1116,7 @@ Adds a shape to the area, with the given local transform. The shape (together wi
 
 |void| **area_attach_canvas_instance_id**\ (\ area\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_attach_canvas_instance_id>`
 
-Attaches the ``ObjectID`` of a canvas to the area. Use :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` to get the ``ObjectID`` of a :ref:`CanvasLayer<class_CanvasLayer>`.
+将画布的 ``ObjectID`` 附加到该区域。使用 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` 获取 :ref:`CanvasLayer<class_CanvasLayer>` 的 ``ObjectID``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1128,7 +1128,7 @@ Attaches the ``ObjectID`` of a canvas to the area. Use :ref:`Object.get_instance
 
 |void| **area_attach_object_instance_id**\ (\ area\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_attach_object_instance_id>`
 
-Attaches the ``ObjectID`` of an :ref:`Object<class_Object>` to the area. Use :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` to get the ``ObjectID`` of a :ref:`CollisionObject2D<class_CollisionObject2D>`.
+将 :ref:`Object<class_Object>` 的 ``ObjectID`` 附加到该区域。使用 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` 获取 :ref:`CollisionObject2D<class_CollisionObject2D>` 的 ``ObjectID``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Attaches the ``ObjectID`` of an :ref:`Object<class_Object>` to the area. Use :re
 
 |void| **area_clear_shapes**\ (\ area\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_clear_shapes>`
 
-Removes all shapes from the area. This does not delete the shapes themselves, so they can continue to be used elsewhere or added back later.
+从该区域移除所有形状。这不会删除形状本身，因此它们可以继续在别处使用或稍后添加回来。
 
 .. rst-class:: classref-item-separator
 
@@ -1152,9 +1152,9 @@ Removes all shapes from the area. This does not delete the shapes themselves, so
 
 :ref:`RID<class_RID>` **area_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_area_create>`
 
-Creates a 2D area object in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. The default settings for the created area include a collision layer and mask set to ``1``, and ``monitorable`` set to ``false``.
+在物理服务器中创建一个 2D 区域对象，并返回标识该区域的 :ref:`RID<class_RID>`\ 。所创建区域的默认设置包括设置为 ``1`` 的碰撞层和遮罩，以及设置为 ``false`` 的 ``monitorable``\ 。
 
-Use :ref:`area_add_shape()<class_PhysicsServer2D_method_area_add_shape>` to add shapes to it, use :ref:`area_set_transform()<class_PhysicsServer2D_method_area_set_transform>` to set its transform, and use :ref:`area_set_space()<class_PhysicsServer2D_method_area_set_space>` to add the area to a space. If you want the area to be detectable use :ref:`area_set_monitorable()<class_PhysicsServer2D_method_area_set_monitorable>`.
+使用 :ref:`area_add_shape()<class_PhysicsServer2D_method_area_add_shape>` 向其添加形状，使用 :ref:`area_set_transform()<class_PhysicsServer2D_method_area_set_transform>` 设置其变换，并使用 :ref:`area_set_space()<class_PhysicsServer2D_method_area_set_space>` 将区域添加到一个空间。如果你希望该区域可被检测，请使用 :ref:`area_set_monitorable()<class_PhysicsServer2D_method_area_set_monitorable>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1166,7 +1166,7 @@ Use :ref:`area_add_shape()<class_PhysicsServer2D_method_area_add_shape>` to add 
 
 :ref:`int<class_int>` **area_get_canvas_instance_id**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_canvas_instance_id>`
 
-Returns the ``ObjectID`` of the canvas attached to the area. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to retrieve a :ref:`CanvasLayer<class_CanvasLayer>` from a nonzero ``ObjectID``.
+返回附加到该区域的画布的 ``ObjectID``\ 。使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 从非零 ``ObjectID`` 检索一个 :ref:`CanvasLayer<class_CanvasLayer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1178,7 +1178,7 @@ Returns the ``ObjectID`` of the canvas attached to the area. Use :ref:`@GlobalSc
 
 :ref:`int<class_int>` **area_get_collision_layer**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_collision_layer>`
 
-Returns the physics layer or layers the area belongs to, as a bitmask.
+返回该区域所属的物理层，形式为位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1190,7 +1190,7 @@ Returns the physics layer or layers the area belongs to, as a bitmask.
 
 :ref:`int<class_int>` **area_get_collision_mask**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_collision_mask>`
 
-Returns the physics layer or layers the area can contact with, as a bitmask.
+返回该区域所能接触的物理层，形式为位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1202,7 +1202,7 @@ Returns the physics layer or layers the area can contact with, as a bitmask.
 
 :ref:`int<class_int>` **area_get_object_instance_id**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_object_instance_id>`
 
-Returns the ``ObjectID`` attached to the area. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to retrieve an :ref:`Object<class_Object>` from a nonzero ``ObjectID``.
+返回附加到该区域的 ``ObjectID``\ 。可使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 从非零 ``ObjectID`` 中检索一个 :ref:`Object<class_Object>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1214,7 +1214,7 @@ Returns the ``ObjectID`` attached to the area. Use :ref:`@GlobalScope.instance_f
 
 :ref:`Variant<class_Variant>` **area_get_param**\ (\ area\: :ref:`RID<class_RID>`, param\: :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_param>`
 
-Returns the value of the given area parameter.
+返回给定区域参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -1226,7 +1226,7 @@ Returns the value of the given area parameter.
 
 :ref:`RID<class_RID>` **area_get_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_shape>`
 
-Returns the :ref:`RID<class_RID>` of the shape with the given index in the area's array of shapes.
+返回该区域的形状数组中给定索引的形状的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1238,7 +1238,7 @@ Returns the :ref:`RID<class_RID>` of the shape with the given index in the area'
 
 :ref:`int<class_int>` **area_get_shape_count**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_shape_count>`
 
-Returns the number of shapes added to the area.
+返回添加给该区域的形状数量。
 
 .. rst-class:: classref-item-separator
 
@@ -1250,7 +1250,7 @@ Returns the number of shapes added to the area.
 
 :ref:`Transform2D<class_Transform2D>` **area_get_shape_transform**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_shape_transform>`
 
-Returns the local transform matrix of the shape with the given index in the area's array of shapes.
+返回该区域的形状数组中给定索引的形状的局部变换矩阵。
 
 .. rst-class:: classref-item-separator
 
@@ -1262,7 +1262,7 @@ Returns the local transform matrix of the shape with the given index in the area
 
 :ref:`RID<class_RID>` **area_get_space**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_space>`
 
-Returns the :ref:`RID<class_RID>` of the space assigned to the area. Returns an empty :ref:`RID<class_RID>` if no space is assigned.
+返回分配给该区域的空间 :ref:`RID<class_RID>`\ 。如果没有分配空间，则返回空 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1274,7 +1274,7 @@ Returns the :ref:`RID<class_RID>` of the space assigned to the area. Returns an 
 
 :ref:`Transform2D<class_Transform2D>` **area_get_transform**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_area_get_transform>`
 
-Returns the transform matrix of the area.
+返回该区域的变换矩阵。
 
 .. rst-class:: classref-item-separator
 
@@ -1286,7 +1286,7 @@ Returns the transform matrix of the area.
 
 |void| **area_remove_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_remove_shape>`
 
-Removes the shape with the given index from the area's array of shapes. The shape itself is not deleted, so it can continue to be used elsewhere or added back later. As a result of this operation, the area's shapes which used to have indices higher than ``shape_idx`` will have their index decreased by one.
+从区域的形状数组中移除具有给定索引的形状。该形状本身并没有被删除，所以它可以继续在别处使用或稍后添加回来。此操作会使曾经索引高于 ``shape_idx`` 的区域形状的索引将减少一个。
 
 .. rst-class:: classref-item-separator
 
@@ -1298,19 +1298,19 @@ Removes the shape with the given index from the area's array of shapes. The shap
 
 |void| **area_set_area_monitor_callback**\ (\ area\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_area_monitor_callback>`
 
-Sets the area's area monitor callback. This callback will be called when any other (shape of an) area enters or exits (a shape of) the given area, and must take the following five parameters:
+设置该区域的区域监视回调。当任何其他（形状）区域进入或退出（形状）给定区域时，将调用此回调，并且必须采用以下五个参数：
 
-1. an integer ``status``: either :ref:`AREA_BODY_ADDED<class_PhysicsServer2D_constant_AREA_BODY_ADDED>` or :ref:`AREA_BODY_REMOVED<class_PhysicsServer2D_constant_AREA_BODY_REMOVED>` depending on whether the other area's shape entered or exited the area,
+1. 一个整数 ``status``\ ：\ :ref:`AREA_BODY_ADDED<class_PhysicsServer2D_constant_AREA_BODY_ADDED>` 或 :ref:`AREA_BODY_REMOVED<class_PhysicsServer2D_constant_AREA_BODY_REMOVED>` 取决于其他区域的形状是进入还是退出该区域，
 
-2. an :ref:`RID<class_RID>` ``area_rid``: the :ref:`RID<class_RID>` of the other area that entered or exited the area,
+2. 一个 :ref:`RID<class_RID>` ``area_rid``\ ：进入或退出该区域的其他区域的 :ref:`RID<class_RID>`\ ，
 
-3. an integer ``instance_id``: the ``ObjectID`` attached to the other area,
+3. 一个整数 ``instance_id``\ ：附加到其他区域的 ``ObjectID``\ ，
 
-4. an integer ``area_shape_idx``: the index of the shape of the other area that entered or exited the area,
+4. 一个整数 ``area_shape_idx``\ ：进入或退出该区域的其他区域的形状索引，
 
-5. an integer ``self_shape_idx``: the index of the shape of the area where the other area entered or exited.
+5. 一个整数 ``self_shape_idx``\ ：其他区域进入或退出的区域的形状索引。
 
-By counting (or keeping track of) the shapes that enter and exit, it can be determined if an area (with all its shapes) is entering for the first time or exiting for the last time.
+通过计算（或跟踪）进入和退出的形状，可以确定一个区域（及其所有形状）是第一次进入还是最后一次退出。
 
 .. rst-class:: classref-item-separator
 
@@ -1322,7 +1322,7 @@ By counting (or keeping track of) the shapes that enter and exit, it can be dete
 
 |void| **area_set_collision_layer**\ (\ area\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_collision_layer>`
 
-Assigns the area to one or many physics layers, via a bitmask.
+将该区域分配给若干个物理层，使用位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1334,7 +1334,7 @@ Assigns the area to one or many physics layers, via a bitmask.
 
 |void| **area_set_collision_mask**\ (\ area\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_collision_mask>`
 
-Sets which physics layers the area will monitor, via a bitmask.
+设置该区域所监视的物理层，使用位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1346,19 +1346,19 @@ Sets which physics layers the area will monitor, via a bitmask.
 
 |void| **area_set_monitor_callback**\ (\ area\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_monitor_callback>`
 
-Sets the area's body monitor callback. This callback will be called when any other (shape of a) body enters or exits (a shape of) the given area, and must take the following five parameters:
+设置区域的实体监视器回调。当任何其他（形状的）实体进入或退出（形状的）给定区域时，将调用此回调，并且必须采用以下五个参数：
 
-1. an integer ``status``: either :ref:`AREA_BODY_ADDED<class_PhysicsServer2D_constant_AREA_BODY_ADDED>` or :ref:`AREA_BODY_REMOVED<class_PhysicsServer2D_constant_AREA_BODY_REMOVED>` depending on whether the other body shape entered or exited the area,
+1. 一个整数 ``status``\ ：\ :ref:`AREA_BODY_ADDED<class_PhysicsServer2D_constant_AREA_BODY_ADDED>` 或 :ref:`AREA_BODY_REMOVED<class_PhysicsServer2D_constant_AREA_BODY_REMOVED>` 取决于其他实体形状是否进入或退出该区域，
 
-2. an :ref:`RID<class_RID>` ``body_rid``: the :ref:`RID<class_RID>` of the body that entered or exited the area,
+2. 一个 :ref:`RID<class_RID>` ``body_rid``\ ：进入或离开该区域的实体的 :ref:`RID<class_RID>`\ ，
 
-3. an integer ``instance_id``: the ``ObjectID`` attached to the body,
+3. 一个整数 ``instance_id``\ ：附加到该实体上的 ``ObjectID``\ ，
 
-4. an integer ``body_shape_idx``: the index of the shape of the body that entered or exited the area,
+4. 一个整数 ``body_shape_idx``\ ：进入或离开该区域的实体形状索引，
 
-5. an integer ``self_shape_idx``: the index of the shape of the area where the body entered or exited.
+5. 一个整数 ``self_shape_idx``\ ：实体进入或离开的区域的形状索引。
 
-By counting (or keeping track of) the shapes that enter and exit, it can be determined if a body (with all its shapes) is entering for the first time or exiting for the last time.
+通过计算（或跟踪）进入和退出的形状，可以确定一个实体（及其所有形状）是第一次进入还是最后一次退出。
 
 .. rst-class:: classref-item-separator
 
@@ -1370,7 +1370,7 @@ By counting (or keeping track of) the shapes that enter and exit, it can be dete
 
 |void| **area_set_monitorable**\ (\ area\: :ref:`RID<class_RID>`, monitorable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_monitorable>`
 
-Sets whether the area is monitorable or not. If ``monitorable`` is ``true``, the area monitoring callback of other areas will be called when this area enters or exits them.
+设置该区域是否可监视。如果 ``monitorable`` 为 ``true``\ ，则该区域进入或退出其他区域时，会调用其他区域的区域监视回调。
 
 .. rst-class:: classref-item-separator
 
@@ -1382,7 +1382,7 @@ Sets whether the area is monitorable or not. If ``monitorable`` is ``true``, the
 
 |void| **area_set_param**\ (\ area\: :ref:`RID<class_RID>`, param\: :ref:`AreaParameter<enum_PhysicsServer2D_AreaParameter>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_param>`
 
-Sets the value of the given area parameter.
+设置给定区域参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -1394,7 +1394,7 @@ Sets the value of the given area parameter.
 
 |void| **area_set_shape**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_shape>`
 
-Replaces the area's shape at the given index by another shape, while not affecting the ``transform`` and ``disabled`` properties at the same index.
+用另一个形状替换给定索引处的区域形状，同时不会影响在同一索引处的 ``transform`` 和 ``disabled`` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -1406,7 +1406,7 @@ Replaces the area's shape at the given index by another shape, while not affecti
 
 |void| **area_set_shape_disabled**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_shape_disabled>`
 
-Sets the disabled property of the area's shape with the given index. If ``disabled`` is ``true``, then the shape will not detect any other shapes entering or exiting it.
+使用给定索引设置区域形状的禁用属性。如果 ``disabled`` 为 ``true``\ ，则该形状将不会检测任何其他形状进入或退出它。
 
 .. rst-class:: classref-item-separator
 
@@ -1418,7 +1418,7 @@ Sets the disabled property of the area's shape with the given index. If ``disabl
 
 |void| **area_set_shape_transform**\ (\ area\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_shape_transform>`
 
-Sets the local transform matrix of the area's shape with the given index.
+设置该区域给定索引的形状的局部变换。
 
 .. rst-class:: classref-item-separator
 
@@ -1430,9 +1430,9 @@ Sets the local transform matrix of the area's shape with the given index.
 
 |void| **area_set_space**\ (\ area\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_space>`
 
-Adds the area to the given space, after removing the area from the previously assigned space (if any).
+从先前赋予的空间（如果有）中移除该区域后，将该区域添加到给定空间。
 
-\ **Note:** To remove an area from a space without immediately adding it back elsewhere, use ``PhysicsServer2D.area_set_space(area, RID())``.
+\ **注意：**\ 要从空间中移除一个区域而不立即将其添加回其他地方，请使用 ``PhysicsServer2D.area_set_space(area, RID())``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1444,7 +1444,7 @@ Adds the area to the given space, after removing the area from the previously as
 
 |void| **area_set_transform**\ (\ area\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_PhysicsServer2D_method_area_set_transform>`
 
-Sets the transform matrix of the area.
+设置该区域的变换矩阵。
 
 .. rst-class:: classref-item-separator
 
@@ -1456,7 +1456,7 @@ Sets the transform matrix of the area.
 
 |void| **body_add_collision_exception**\ (\ body\: :ref:`RID<class_RID>`, excepted_body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_add_collision_exception>`
 
-Adds ``excepted_body`` to the body's list of collision exceptions, so that collisions with it are ignored.
+将 ``excepted_body`` 添加到实体的碰撞例外列表中，以便忽略与它的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -1468,9 +1468,9 @@ Adds ``excepted_body`` to the body's list of collision exceptions, so that colli
 
 |void| **body_add_constant_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_add_constant_central_force>`
 
-Adds a constant directional force to the body. The force does not affect rotation. The force remains applied over time until cleared with ``PhysicsServer2D.body_set_constant_force(body, Vector2(0, 0))``.
+向实体添加一个恒定的定向力。该力不影响旋转。随着时间的推移，力会一直施加，直到使用 ``PhysicsServer2D.body_set_constant_force(body, Vector2(0, 0))`` 清除。
 
-This is equivalent to using :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>` at the body's center of mass.
+这相当于在实体的质心处使用 :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1482,9 +1482,9 @@ This is equivalent to using :ref:`body_add_constant_force()<class_PhysicsServer2
 
 |void| **body_add_constant_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsServer2D_method_body_add_constant_force>`
 
-Adds a constant positioned force to the body. The force can affect rotation if ``position`` is different from the body's center of mass. The force remains applied over time until cleared with ``PhysicsServer2D.body_set_constant_force(body, Vector2(0, 0))``.
+向实体添加一个恒定的定位力。如果 ``position`` 与实体的质心不同，则力会影响旋转。力会持续施加，直到使用 ``PhysicsServer2D.body_set_constant_force(body, Vector2(0, 0))`` 清除。
 
-\ ``position`` is the offset from the body origin in global coordinates.
+\ ``position`` 是在全局坐标中距实体原点的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -1496,7 +1496,7 @@ Adds a constant positioned force to the body. The force can affect rotation if `
 
 |void| **body_add_constant_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_add_constant_torque>`
 
-Adds a constant rotational force to the body. The force does not affect position. The force remains applied over time until cleared with ``PhysicsServer2D.body_set_constant_torque(body, 0)``.
+向实体添加一个恒定的旋转力。该力不影响位置。随着时间的推移，该力会一直施加，直到使用 ``PhysicsServer2D.body_set_constant_torque(body, 0)`` 清除。
 
 .. rst-class:: classref-item-separator
 
@@ -1508,7 +1508,7 @@ Adds a constant rotational force to the body. The force does not affect position
 
 |void| **body_add_shape**\ (\ body\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), disabled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PhysicsServer2D_method_body_add_shape>`
 
-Adds a shape to the area, with the given local transform. The shape (together with its ``transform`` and ``disabled`` properties) is added to an array of shapes, and the shapes of a body are usually referenced by their index in this array.
+使用给定的局部变换向该区域添加一个形状。该形状（连同它的 ``transform`` 和 ``disabled`` 属性）将被添加到一个形状数组中，一个实体的形状通常由它们在这个数组中的索引引用。
 
 .. rst-class:: classref-item-separator
 
@@ -1520,9 +1520,9 @@ Adds a shape to the area, with the given local transform. The shape (together wi
 
 |void| **body_apply_central_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_central_force>`
 
-Applies a directional force to the body, at the body's center of mass. The force does not affect rotation. A force is time dependent and meant to be applied every physics update.
+在实体的质心处向实体施加一个定向力。该力不影响旋转。力是时间相关的，这意味着每次物理更新都会被施加。
 
-This is equivalent to using :ref:`body_apply_force()<class_PhysicsServer2D_method_body_apply_force>` at the body's center of mass.
+这相当于在实体的质心处使用 :ref:`body_apply_force()<class_PhysicsServer2D_method_body_apply_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1534,11 +1534,11 @@ This is equivalent to using :ref:`body_apply_force()<class_PhysicsServer2D_metho
 
 |void| **body_apply_central_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_central_impulse>`
 
-Applies a directional impulse to the body, at the body's center of mass. The impulse does not affect rotation.
+在实体的质心处向该实体施加一个定向冲量。该冲量不影响旋转。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+冲量是时间无关的！每帧施加一个冲量将产生一个依赖于帧速率的力。出于这个原因，它应该只在模拟一次性影响时使用（否则使用“_force”函数）。
 
-This is equivalent to using :ref:`body_apply_impulse()<class_PhysicsServer2D_method_body_apply_impulse>` at the body's center of mass.
+这相当于在实体的质心处使用 :ref:`body_apply_impulse()<class_PhysicsServer2D_method_body_apply_impulse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1550,9 +1550,9 @@ This is equivalent to using :ref:`body_apply_impulse()<class_PhysicsServer2D_met
 
 |void| **body_apply_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_force>`
 
-Applies a positioned force to the body. The force can affect rotation if ``position`` is different from the body's center of mass. A force is time dependent and meant to be applied every physics update.
+向实体施加一个定位力。如果 ``position`` 与实体的质心不同，则力会影响旋转。力是时间相关的，意味着每次物理更新都会被施加。
 
-\ ``position`` is the offset from the body origin in global coordinates.
+\ ``position`` 是在全局坐标中距实体原点的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -1564,11 +1564,11 @@ Applies a positioned force to the body. The force can affect rotation if ``posit
 
 |void| **body_apply_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`Vector2<class_Vector2>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_impulse>`
 
-Applies a positioned impulse to the body. The impulse can affect rotation if ``position`` is different from the body's center of mass.
+向实体施加一个定位冲量。如果 ``position`` 与实体的质心不同，则该冲量会影响旋转。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+冲量是时间无关的！每帧施加一个冲量将产生一个依赖于帧速率的力。出于这个原因，它应该只在模拟一次性影响时使用（否则使用“_force”函数）。
 
-\ ``position`` is the offset from the body origin in global coordinates.
+\ ``position`` 是在全局坐标中距实体原点的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -1580,7 +1580,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 |void| **body_apply_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_torque>`
 
-Applies a rotational force to the body. The force does not affect position. A force is time dependent and meant to be applied every physics update.
+对实体施加一个旋转力。该力不影响位置。力是时间相关的，意味着每次物理更新都会被施加。
 
 .. rst-class:: classref-item-separator
 
@@ -1592,9 +1592,9 @@ Applies a rotational force to the body. The force does not affect position. A fo
 
 |void| **body_apply_torque_impulse**\ (\ body\: :ref:`RID<class_RID>`, impulse\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_apply_torque_impulse>`
 
-Applies a rotational impulse to the body. The impulse does not affect position.
+对实体施加一个旋转的冲量。该冲量不影响位置。
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_force" functions otherwise).
+冲量是时间无关的！每帧施加一个冲量将产生一个依赖于帧速率的力。出于这个原因，它应该只在模拟一次性影响时使用（否则使用“_force”函数）。
 
 .. rst-class:: classref-item-separator
 
@@ -1606,7 +1606,7 @@ An impulse is time-independent! Applying an impulse every frame would result in 
 
 |void| **body_attach_canvas_instance_id**\ (\ body\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_attach_canvas_instance_id>`
 
-Attaches the ``ObjectID`` of a canvas to the body. Use :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` to get the ``ObjectID`` of a :ref:`CanvasLayer<class_CanvasLayer>`.
+将画布的 ``ObjectID`` 附加到该实体。可使用 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` 获取 :ref:`CanvasLayer<class_CanvasLayer>` 的 ``ObjectID``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1618,7 +1618,7 @@ Attaches the ``ObjectID`` of a canvas to the body. Use :ref:`Object.get_instance
 
 |void| **body_attach_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_attach_object_instance_id>`
 
-Attaches the ``ObjectID`` of an :ref:`Object<class_Object>` to the body. Use :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` to get the ``ObjectID`` of a :ref:`CollisionObject2D<class_CollisionObject2D>`.
+将 :ref:`Object<class_Object>` 的 ``ObjectID`` 附加到该实体。可使用 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>` 获取 :ref:`CollisionObject2D<class_CollisionObject2D>` 的 ``ObjectID``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1630,7 +1630,7 @@ Attaches the ``ObjectID`` of an :ref:`Object<class_Object>` to the body. Use :re
 
 |void| **body_clear_shapes**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_clear_shapes>`
 
-Removes all shapes from the body. This does not delete the shapes themselves, so they can continue to be used elsewhere or added back later.
+从该实体中移除所有形状。这不会删除形状本身，因此它们可以继续在别处使用或稍后添加回来。
 
 .. rst-class:: classref-item-separator
 
@@ -1642,9 +1642,9 @@ Removes all shapes from the body. This does not delete the shapes themselves, so
 
 :ref:`RID<class_RID>` **body_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_body_create>`
 
-Creates a 2D body object in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. The default settings for the created area include a collision layer and mask set to ``1``, and body mode set to :ref:`BODY_MODE_RIGID<class_PhysicsServer2D_constant_BODY_MODE_RIGID>`.
+在物理服务器中创建一个 2D 物体对象，并返回标识它的 :ref:`RID<class_RID>`\ 。所创建区域的默认设置包括设置为 ``1`` 的碰撞层和遮罩，以及设置为 :ref:`BODY_MODE_RIGID<class_PhysicsServer2D_constant_BODY_MODE_RIGID>` 的物体模式。
 
-Use :ref:`body_add_shape()<class_PhysicsServer2D_method_body_add_shape>` to add shapes to it, use :ref:`body_set_state()<class_PhysicsServer2D_method_body_set_state>` to set its transform, and use :ref:`body_set_space()<class_PhysicsServer2D_method_body_set_space>` to add the body to a space.
+使用 :ref:`body_add_shape()<class_PhysicsServer2D_method_body_add_shape>` 为其添加形状，使用 :ref:`body_set_state()<class_PhysicsServer2D_method_body_set_state>` 设置其变换，使用 :ref:`body_set_space()<class_PhysicsServer2D_method_body_set_space>` 将物体添加到一个空间。
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ Use :ref:`body_add_shape()<class_PhysicsServer2D_method_body_add_shape>` to add 
 
 :ref:`int<class_int>` **body_get_canvas_instance_id**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_canvas_instance_id>`
 
-Returns the ``ObjectID`` of the canvas attached to the body. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to retrieve a :ref:`CanvasLayer<class_CanvasLayer>` from a nonzero ``ObjectID``.
+返回附加到该实体的画布的 ``ObjectID``\ 。可使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 从非零 ``ObjectID`` 检索一个 :ref:`CanvasLayer<class_CanvasLayer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1668,7 +1668,7 @@ Returns the ``ObjectID`` of the canvas attached to the body. Use :ref:`@GlobalSc
 
 :ref:`int<class_int>` **body_get_collision_layer**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_collision_layer>`
 
-Returns the physics layer or layers the body belongs to, as a bitmask.
+返回物体所属的物理层，形式为位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1680,7 +1680,7 @@ Returns the physics layer or layers the body belongs to, as a bitmask.
 
 :ref:`int<class_int>` **body_get_collision_mask**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_collision_mask>`
 
-Returns the physics layer or layers the body can collide with, as a bitmask.
+返回物体可以碰撞的物理层，形式为位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1692,7 +1692,7 @@ Returns the physics layer or layers the body can collide with, as a bitmask.
 
 :ref:`float<class_float>` **body_get_collision_priority**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_collision_priority>`
 
-Returns the body's collision priority. This is used in the depenetration phase of :ref:`body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`. The higher the priority is, the lower the penetration into the body will be.
+返回该实体的碰撞优先级。这用于 :ref:`body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 的穿透阶段。优先级越高，对该实体的穿透力就越低。
 
 .. rst-class:: classref-item-separator
 
@@ -1704,9 +1704,9 @@ Returns the body's collision priority. This is used in the depenetration phase o
 
 :ref:`Vector2<class_Vector2>` **body_get_constant_force**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_constant_force>`
 
-Returns the body's total constant positional force applied during each physics update.
+返回在每次物理更新期间，该物体被施加的总的恒定位置的力。
 
-See :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>` and :ref:`body_add_constant_central_force()<class_PhysicsServer2D_method_body_add_constant_central_force>`.
+参阅 :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>` 和 :ref:`body_add_constant_central_force()<class_PhysicsServer2D_method_body_add_constant_central_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1718,9 +1718,9 @@ See :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_consta
 
 :ref:`float<class_float>` **body_get_constant_torque**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_constant_torque>`
 
-Returns the body's total constant rotational force applied during each physics update.
+返回在每次物理更新期间，该物体被施加的总的恒定旋转的力。
 
-See :ref:`body_add_constant_torque()<class_PhysicsServer2D_method_body_add_constant_torque>`.
+参阅 :ref:`body_add_constant_torque()<class_PhysicsServer2D_method_body_add_constant_torque>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1732,7 +1732,7 @@ See :ref:`body_add_constant_torque()<class_PhysicsServer2D_method_body_add_const
 
 :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>` **body_get_continuous_collision_detection_mode**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_continuous_collision_detection_mode>`
 
-Returns the body's continuous collision detection mode.
+返回该物体的连续碰撞检测模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1744,7 +1744,7 @@ Returns the body's continuous collision detection mode.
 
 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` **body_get_direct_state**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_get_direct_state>`
 
-Returns the :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` of the body. Returns ``null`` if the body is destroyed or not assigned to a space.
+返回该实体的 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`\ 。如果该实体已被销毁或未被分配给一个空间，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1756,7 +1756,7 @@ Returns the :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` of t
 
 :ref:`int<class_int>` **body_get_max_contacts_reported**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_max_contacts_reported>`
 
-Returns the maximum number of contacts that the body can report. See :ref:`body_set_max_contacts_reported()<class_PhysicsServer2D_method_body_set_max_contacts_reported>`.
+返回该实体可以报告的最大接触数。请参阅 :ref:`body_set_max_contacts_reported()<class_PhysicsServer2D_method_body_set_max_contacts_reported>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1768,7 +1768,7 @@ Returns the maximum number of contacts that the body can report. See :ref:`body_
 
 :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>` **body_get_mode**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_mode>`
 
-Returns the body's mode.
+返回物体的模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1780,7 +1780,7 @@ Returns the body's mode.
 
 :ref:`int<class_int>` **body_get_object_instance_id**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_object_instance_id>`
 
-Returns the ``ObjectID`` attached to the body. Use :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` to retrieve an :ref:`Object<class_Object>` from a nonzero ``ObjectID``.
+返回附加到该实体的 ``ObjectID``\ 。可使用 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 从非零 ``ObjectID`` 中检索一个 :ref:`Object<class_Object>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1792,7 +1792,7 @@ Returns the ``ObjectID`` attached to the body. Use :ref:`@GlobalScope.instance_f
 
 :ref:`Variant<class_Variant>` **body_get_param**\ (\ body\: :ref:`RID<class_RID>`, param\: :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_param>`
 
-Returns the value of the given body parameter.
+返回给定物体参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -1804,7 +1804,7 @@ Returns the value of the given body parameter.
 
 :ref:`RID<class_RID>` **body_get_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_shape>`
 
-Returns the :ref:`RID<class_RID>` of the shape with the given index in the body's array of shapes.
+返回该实体形状数组中具有给定索引的形状的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1816,7 +1816,7 @@ Returns the :ref:`RID<class_RID>` of the shape with the given index in the body'
 
 :ref:`int<class_int>` **body_get_shape_count**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_shape_count>`
 
-Returns the number of shapes added to the body.
+返回添加至该物体的形状的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -1828,7 +1828,7 @@ Returns the number of shapes added to the body.
 
 :ref:`Transform2D<class_Transform2D>` **body_get_shape_transform**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_shape_transform>`
 
-Returns the local transform matrix of the shape with the given index in the area's array of shapes.
+返回该区域的形状数组中给定索引的形状的局部变换矩阵。
 
 .. rst-class:: classref-item-separator
 
@@ -1840,7 +1840,7 @@ Returns the local transform matrix of the shape with the given index in the area
 
 :ref:`RID<class_RID>` **body_get_space**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_space>`
 
-Returns the :ref:`RID<class_RID>` of the space assigned to the body. Returns an empty :ref:`RID<class_RID>` if no space is assigned.
+返回分配给该实体的空间的 :ref:`RID<class_RID>`\ 。如果没有分配空间，则返回空 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1852,7 +1852,7 @@ Returns the :ref:`RID<class_RID>` of the space assigned to the body. Returns an 
 
 :ref:`Variant<class_Variant>` **body_get_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer2D_BodyState>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_get_state>`
 
-Returns the value of the given state of the body.
+返回物体给定状态的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -1864,7 +1864,7 @@ Returns the value of the given state of the body.
 
 :ref:`bool<class_bool>` **body_is_omitting_force_integration**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_body_is_omitting_force_integration>`
 
-Returns ``true`` if the body is omitting the standard force integration. See :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`.
+如果物体省略了标准力积分，则返回 ``true``\ 。参见 :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1876,7 +1876,7 @@ Returns ``true`` if the body is omitting the standard force integration. See :re
 
 |void| **body_remove_collision_exception**\ (\ body\: :ref:`RID<class_RID>`, excepted_body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_remove_collision_exception>`
 
-Removes ``excepted_body`` from the body's list of collision exceptions, so that collisions with it are no longer ignored.
+从物体的碰撞例外列表中移除 ``excepted_body``\ ，不再忽略与该物体的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -1888,7 +1888,7 @@ Removes ``excepted_body`` from the body's list of collision exceptions, so that 
 
 |void| **body_remove_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_remove_shape>`
 
-Removes the shape with the given index from the body's array of shapes. The shape itself is not deleted, so it can continue to be used elsewhere or added back later. As a result of this operation, the body's shapes which used to have indices higher than ``shape_idx`` will have their index decreased by one.
+从该实体的形状数组中移除具有给定索引的形状。该形状本身并没有被删除，所以它可以继续在别处使用或稍后添加回来。该操作将会使曾经索引高于 ``shape_idx`` 的实体形状的索引将减少一个。
 
 .. rst-class:: classref-item-separator
 
@@ -1900,7 +1900,7 @@ Removes the shape with the given index from the body's array of shapes. The shap
 
 |void| **body_reset_mass_properties**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_reset_mass_properties>`
 
-Restores the default inertia and center of mass of the body based on its shapes. This undoes any custom values previously set using :ref:`body_set_param()<class_PhysicsServer2D_method_body_set_param>`.
+根据实体的形状恢复该实体的默认惯性和质心。这会撤消之前使用 :ref:`body_set_param()<class_PhysicsServer2D_method_body_set_param>` 设置的任何自定义值。
 
 .. rst-class:: classref-item-separator
 
@@ -1912,7 +1912,7 @@ Restores the default inertia and center of mass of the body based on its shapes.
 
 |void| **body_set_axis_velocity**\ (\ body\: :ref:`RID<class_RID>`, axis_velocity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_axis_velocity>`
 
-Modifies the body's linear velocity so that its projection to the axis ``axis_velocity.normalized()`` is exactly ``axis_velocity.length()``. This is useful for jumping behavior.
+修改实体的线速度，使其到轴 ``axis_velocity.normalized()`` 的投影正好是 ``axis_velocity.length()``\ 。这对于跳跃行为很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -1924,7 +1924,7 @@ Modifies the body's linear velocity so that its projection to the axis ``axis_ve
 
 |void| **body_set_collision_layer**\ (\ body\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_collision_layer>`
 
-Sets the physics layer or layers the body belongs to, via a bitmask.
+设置该物体所属的物理层，使用位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1936,7 +1936,7 @@ Sets the physics layer or layers the body belongs to, via a bitmask.
 
 |void| **body_set_collision_mask**\ (\ body\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_collision_mask>`
 
-Sets the physics layer or layers the body can collide with, via a bitmask.
+设置该物体能够碰撞的物理层，使用位掩码。
 
 .. rst-class:: classref-item-separator
 
@@ -1948,7 +1948,7 @@ Sets the physics layer or layers the body can collide with, via a bitmask.
 
 |void| **body_set_collision_priority**\ (\ body\: :ref:`RID<class_RID>`, priority\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_collision_priority>`
 
-Sets the body's collision priority. This is used in the depenetration phase of :ref:`body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`. The higher the priority is, the lower the penetration into the body will be.
+设置该实体的碰撞优先级。这用于 :ref:`body_test_motion()<class_PhysicsServer2D_method_body_test_motion>` 的穿透阶段。优先级越高，对实体的穿透力就越低。
 
 .. rst-class:: classref-item-separator
 
@@ -1960,9 +1960,9 @@ Sets the body's collision priority. This is used in the depenetration phase of :
 
 |void| **body_set_constant_force**\ (\ body\: :ref:`RID<class_RID>`, force\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_constant_force>`
 
-Sets the body's total constant positional force applied during each physics update.
+设置在每次物理更新期间，该物体被施加的总的恒定位置的力。
 
-See :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>` and :ref:`body_add_constant_central_force()<class_PhysicsServer2D_method_body_add_constant_central_force>`.
+参阅 :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_constant_force>` 和 :ref:`body_add_constant_central_force()<class_PhysicsServer2D_method_body_add_constant_central_force>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1974,9 +1974,9 @@ See :ref:`body_add_constant_force()<class_PhysicsServer2D_method_body_add_consta
 
 |void| **body_set_constant_torque**\ (\ body\: :ref:`RID<class_RID>`, torque\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_constant_torque>`
 
-Sets the body's total constant rotational force applied during each physics update.
+设置在每次物理更新期间，该物体被施加的总的恒定旋转的力。
 
-See :ref:`body_add_constant_torque()<class_PhysicsServer2D_method_body_add_constant_torque>`.
+参阅 :ref:`body_add_constant_torque()<class_PhysicsServer2D_method_body_add_constant_torque>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1988,9 +1988,9 @@ See :ref:`body_add_constant_torque()<class_PhysicsServer2D_method_body_add_const
 
 |void| **body_set_continuous_collision_detection_mode**\ (\ body\: :ref:`RID<class_RID>`, mode\: :ref:`CCDMode<enum_PhysicsServer2D_CCDMode>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_continuous_collision_detection_mode>`
 
-Sets the continuous collision detection mode.
+设置连续碰撞检测模式。
 
-Continuous collision detection tries to predict where a moving body would collide in between physics updates, instead of moving it and correcting its movement if it collided.
+连续碰撞检测试图预测一个移动的物体将在物理更新之间发生碰撞的位置，而不是移动它并在发生碰撞时纠正它的运动。
 
 .. rst-class:: classref-item-separator
 
@@ -2002,17 +2002,17 @@ Continuous collision detection tries to predict where a moving body would collid
 
 |void| **body_set_force_integration_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`, userdata\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_force_integration_callback>`
 
-Sets the body's custom force integration callback function to ``callable``. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the custom callback.
+将物体的自定义力积分回调函数设置为 ``callable``\ 。使用空的 :ref:`Callable<class_Callable>`\ （\ ``Callable()``\ ） 清除自定义回调。
 
-The function ``callable`` will be called every physics tick, before the standard force integration (see :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`). It can be used for example to update the body's linear and angular velocity based on contact with other bodies.
+函数 ``callable`` 将在标准力积分之前的每个物理刻度被调用（参见 :ref:`body_set_omit_force_integration()<class_PhysicsServer2D_method_body_set_omit_force_integration>`\ ）。例如，它可用于根据与其他物体的接触更新物体的线速度和角速度。
 
-If ``userdata`` is not ``null``, the function ``callable`` must take the following two parameters:
+如果 ``userdata`` 不为 ``null``\ ，函数 ``callable`` 必须采用以下两个参数：
 
-1. ``state``: a :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` used to retrieve and modify the body's state,
+1. ``state``\ ：用于检索和修改物体状态的 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`\ ，
 
-2. ``userdata``: a :ref:`Variant<class_Variant>`; its value will be the ``userdata`` passed into this method.
+2. ``userdata``\ ：\ :ref:`Variant<class_Variant>`\ ；其值将是传递到该方法的 ``userdata``\ 。
 
-If ``userdata`` is ``null``, then ``callable`` must take only the ``state`` parameter.
+如果 ``userdata`` 为 ``null``\ ，则 ``callable`` 必须仅采用 ``state`` 参数。
 
 .. rst-class:: classref-item-separator
 
@@ -2024,7 +2024,7 @@ If ``userdata`` is ``null``, then ``callable`` must take only the ``state`` para
 
 |void| **body_set_max_contacts_reported**\ (\ body\: :ref:`RID<class_RID>`, amount\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_max_contacts_reported>`
 
-Sets the maximum number of contacts that the body can report. If ``amount`` is greater than zero, then the body will keep track of at most this many contacts with other bodies.
+设置该实体可以报告的接触的最大数量。如果 ``amount`` 大于零，那么实体将最多跟踪与其他实体的这么多次接触。
 
 .. rst-class:: classref-item-separator
 
@@ -2036,7 +2036,7 @@ Sets the maximum number of contacts that the body can report. If ``amount`` is g
 
 |void| **body_set_mode**\ (\ body\: :ref:`RID<class_RID>`, mode\: :ref:`BodyMode<enum_PhysicsServer2D_BodyMode>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_mode>`
 
-Sets the body's mode.
+设置物体的模式。
 
 .. rst-class:: classref-item-separator
 
@@ -2048,9 +2048,9 @@ Sets the body's mode.
 
 |void| **body_set_omit_force_integration**\ (\ body\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_omit_force_integration>`
 
-Sets whether the body omits the standard force integration. If ``enable`` is ``true``, the body will not automatically use applied forces, torques, and damping to update the body's linear and angular velocity. In this case, :ref:`body_set_force_integration_callback()<class_PhysicsServer2D_method_body_set_force_integration_callback>` can be used to manually update the linear and angular velocity instead.
+设置物体是否省略标准力积分。如果 ``enable`` 为 ``true``\ ，物体将不会自动使用施加的力、扭矩和阻尼来更新物体的线速度和角速度。在这种情况下，可以使用 :ref:`body_set_force_integration_callback()<class_PhysicsServer2D_method_body_set_force_integration_callback>` 手动更新线速度和角速度。
 
-This method is called when the property :ref:`RigidBody2D.custom_integrator<class_RigidBody2D_property_custom_integrator>` is set.
+当设置属性 :ref:`RigidBody2D.custom_integrator<class_RigidBody2D_property_custom_integrator>` 时，将调用该方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2062,7 +2062,7 @@ This method is called when the property :ref:`RigidBody2D.custom_integrator<clas
 
 |void| **body_set_param**\ (\ body\: :ref:`RID<class_RID>`, param\: :ref:`BodyParameter<enum_PhysicsServer2D_BodyParameter>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_param>`
 
-Sets the value of the given body parameter.
+设置给定物体参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2074,7 +2074,7 @@ Sets the value of the given body parameter.
 
 |void| **body_set_shape**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, shape\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape>`
 
-Replaces the body's shape at the given index by another shape, while not affecting the ``transform``, ``disabled``, and one-way collision properties at the same index.
+用另一个形状替换给定索引处的实体形状，同时不会影响同一索引处的 ``transform``\ 、\ ``disabled`` 和单向碰撞属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2086,7 +2086,7 @@ Replaces the body's shape at the given index by another shape, while not affecti
 
 |void| **body_set_shape_as_one_way_collision**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`, margin\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape_as_one_way_collision>`
 
-Sets the one-way collision properties of the body's shape with the given index. If ``enable`` is ``true``, the one-way collision direction given by the shape's local upward axis ``body_get_shape_transform(body, shape_idx).y`` will be used to ignore collisions with the shape in the opposite direction, and to ensure depenetration of kinematic bodies happens in this direction.
+使用给定索引设置实体形状的单向碰撞属性。如果 ``enable`` 为 ``true``\ ，则形状的局部向上轴 ``body_get_shape_transform(body, shape_idx).y`` 给出的单向碰撞方向将用于忽略与相反方向的形状，并确保运动实体的穿透发生在这个方向上。
 
 .. rst-class:: classref-item-separator
 
@@ -2098,7 +2098,7 @@ Sets the one-way collision properties of the body's shape with the given index. 
 
 |void| **body_set_shape_disabled**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape_disabled>`
 
-Sets the disabled property of the body's shape with the given index. If ``disabled`` is ``true``, then the shape will be ignored in all collision detection.
+使用给定索引设置实体形状的禁用属性。如果 ``disabled`` 为 ``true``\ ，则在所有碰撞检测中将忽略该形状。
 
 .. rst-class:: classref-item-separator
 
@@ -2110,7 +2110,7 @@ Sets the disabled property of the body's shape with the given index. If ``disabl
 
 |void| **body_set_shape_transform**\ (\ body\: :ref:`RID<class_RID>`, shape_idx\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_shape_transform>`
 
-Sets the local transform matrix of the body's shape with the given index.
+使用给定索引设置该实体形状的局部变换矩阵。
 
 .. rst-class:: classref-item-separator
 
@@ -2122,13 +2122,13 @@ Sets the local transform matrix of the body's shape with the given index.
 
 |void| **body_set_space**\ (\ body\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_space>`
 
-Adds the body to the given space, after removing the body from the previously assigned space (if any). If the body's mode is set to :ref:`BODY_MODE_RIGID<class_PhysicsServer2D_constant_BODY_MODE_RIGID>`, then adding the body to a space will have the following additional effects:
+从先前分配的空间（若存在）中移除实体后，将该实体添加到给定空间。如果实体的模式被设置为 :ref:`BODY_MODE_RIGID<class_PhysicsServer2D_constant_BODY_MODE_RIGID>`\ ，则将该实体添加到空间将具有以下额外效果：
 
-- If the parameter :ref:`BODY_PARAM_CENTER_OF_MASS<class_PhysicsServer2D_constant_BODY_PARAM_CENTER_OF_MASS>` has never been set explicitly, then the value of that parameter will be recalculated based on the body's shapes.
+- 如果从未明确设置参数 :ref:`BODY_PARAM_CENTER_OF_MASS<class_PhysicsServer2D_constant_BODY_PARAM_CENTER_OF_MASS>`\ ，则该参数的值将根据实体的形状重新计算。
 
-- If the parameter :ref:`BODY_PARAM_INERTIA<class_PhysicsServer2D_constant_BODY_PARAM_INERTIA>` is set to a value ``<= 0.0``, then the value of that parameter will be recalculated based on the body's shapes, mass, and center of mass.
+- 如果参数 :ref:`BODY_PARAM_INERTIA<class_PhysicsServer2D_constant_BODY_PARAM_INERTIA>` 被设置为一个 ``<= 0.0`` 的值，则该参数的值将根据实体的形状、质量和质心重新计算。
 
-\ **Note:** To remove a body from a space without immediately adding it back elsewhere, use ``PhysicsServer2D.body_set_space(body, RID())``.
+\ **注意：**\ 要从一个空间中移除实体，且不立即将其添加回其他地方，请使用 ``PhysicsServer2D.body_set_space(body, RID())``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2140,9 +2140,9 @@ Adds the body to the given space, after removing the body from the previously as
 
 |void| **body_set_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer2D_BodyState>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_state>`
 
-Sets the value of a body's state.
+设置实体状态的值。
 
-\ **Note:** The state change doesn't take effect immediately. The state will change on the next physics frame.
+\ **注意：**\ 状态更改不会立即生效。状态更改将发生在下一个物理帧上。
 
 .. rst-class:: classref-item-separator
 
@@ -2154,13 +2154,13 @@ Sets the value of a body's state.
 
 |void| **body_set_state_sync_callback**\ (\ body\: :ref:`RID<class_RID>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_PhysicsServer2D_method_body_set_state_sync_callback>`
 
-Sets the body's state synchronization callback function to ``callable``. Use an empty :ref:`Callable<class_Callable>` (``Callable()``) to clear the callback.
+将物体的状态同步回调函数设置为 ``callable``\ 。清空回调请使用空的 :ref:`Callable<class_Callable>`\ （\ ``Callable()``\ ）。
 
-The function ``callable`` will be called every physics frame, assuming that the body was active during the previous physics tick, and can be used to fetch the latest state from the physics server.
+每个物理帧都会调用一次 ``callable`` 函数，前提是该对象在上一个物理周期中处于活动状态，并且可以用于从物理服务器获取最新状态.
 
-The function ``callable`` must take the following parameters:
+\ ``callable`` 函数的参数如下：
 
-1. ``state``: a :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, used to retrieve the body's state.
+1. ``state``\ ：类型为 :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`\ ，用于获取物体的状态。
 
 .. rst-class:: classref-item-separator
 
@@ -2172,7 +2172,7 @@ The function ``callable`` must take the following parameters:
 
 :ref:`bool<class_bool>` **body_test_motion**\ (\ body\: :ref:`RID<class_RID>`, parameters\: :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>`, result\: :ref:`PhysicsTestMotionResult2D<class_PhysicsTestMotionResult2D>` = null\ ) :ref:`🔗<class_PhysicsServer2D_method_body_test_motion>`
 
-Returns ``true`` if a collision would result from moving the body along a motion vector from a given point in space. See :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>` for the available motion parameters. Optionally a :ref:`PhysicsTestMotionResult2D<class_PhysicsTestMotionResult2D>` object can be passed, which will be used to store the information about the resulting collision.
+如果从空间中的给定点，沿着运动向量移动实体会产生一个碰撞，则返回 ``true``\ 。有关可用的运动参数，请参阅 :ref:`PhysicsTestMotionParameters2D<class_PhysicsTestMotionParameters2D>`\ 。可以选择传递一个 :ref:`PhysicsTestMotionResult2D<class_PhysicsTestMotionResult2D>` 对象，该对象将用于存储有关所产生碰撞的信息。
 
 .. rst-class:: classref-item-separator
 
@@ -2184,7 +2184,7 @@ Returns ``true`` if a collision would result from moving the body along a motion
 
 :ref:`RID<class_RID>` **capsule_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_capsule_shape_create>`
 
-Creates a 2D capsule shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the capsule's height and radius.
+在物理服务器中创建一个 2D 胶囊形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置胶囊的高度和半径。
 
 .. rst-class:: classref-item-separator
 
@@ -2196,7 +2196,7 @@ Creates a 2D capsule shape in the physics server, and returns the :ref:`RID<clas
 
 :ref:`RID<class_RID>` **circle_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_circle_shape_create>`
 
-Creates a 2D circle shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the circle's radius.
+在物理服务器中创建一个 2D 圆形，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置圆的半径。
 
 .. rst-class:: classref-item-separator
 
@@ -2208,7 +2208,7 @@ Creates a 2D circle shape in the physics server, and returns the :ref:`RID<class
 
 :ref:`RID<class_RID>` **concave_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_concave_polygon_shape_create>`
 
-Creates a 2D concave polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the concave polygon's segments.
+在物理服务器中创建一个 2D 凹多边形形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置凹多边形的线段。
 
 .. rst-class:: classref-item-separator
 
@@ -2220,7 +2220,7 @@ Creates a 2D concave polygon shape in the physics server, and returns the :ref:`
 
 :ref:`RID<class_RID>` **convex_polygon_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_convex_polygon_shape_create>`
 
-Creates a 2D convex polygon shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the convex polygon's points.
+在物理服务器中创建一个 2D 凸多边形形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置凸多边形的点。
 
 .. rst-class:: classref-item-separator
 
@@ -2232,7 +2232,7 @@ Creates a 2D convex polygon shape in the physics server, and returns the :ref:`R
 
 :ref:`float<class_float>` **damped_spring_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_damped_spring_joint_get_param>`
 
-Returns the value of the given damped spring joint parameter.
+返回给定阻尼弹簧关节参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2244,7 +2244,7 @@ Returns the value of the given damped spring joint parameter.
 
 |void| **damped_spring_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`DampedSpringParam<enum_PhysicsServer2D_DampedSpringParam>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_damped_spring_joint_set_param>`
 
-Sets the value of the given damped spring joint parameter.
+设置给定阻尼弹簧关节参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2256,7 +2256,7 @@ Sets the value of the given damped spring joint parameter.
 
 |void| **free_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_free_rid>`
 
-Destroys any of the objects created by PhysicsServer2D. If the :ref:`RID<class_RID>` passed is not one of the objects that can be created by PhysicsServer2D, an error will be printed to the console.
+销毁由 PhysicsServer2D 创建的任何对象。如果传递的 :ref:`RID<class_RID>` 不是 PhysicsServer2D 可以创建的对象之一，则会将一个错误发送到控制台。
 
 .. rst-class:: classref-item-separator
 
@@ -2268,7 +2268,7 @@ Destroys any of the objects created by PhysicsServer2D. If the :ref:`RID<class_R
 
 :ref:`int<class_int>` **get_process_info**\ (\ process_info\: :ref:`ProcessInfo<enum_PhysicsServer2D_ProcessInfo>`\ ) :ref:`🔗<class_PhysicsServer2D_method_get_process_info>`
 
-Returns the value of a physics engine state specified by ``process_info``.
+返回由 ``process_info`` 指定的物理引擎状态的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2280,7 +2280,7 @@ Returns the value of a physics engine state specified by ``process_info``.
 
 |void| **joint_clear**\ (\ joint\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_clear>`
 
-Destroys the joint with the given :ref:`RID<class_RID>`, creates a new uninitialized joint, and makes the :ref:`RID<class_RID>` refer to this new joint.
+销毁具有给定 :ref:`RID<class_RID>` 的关节，创建一个新的未初始化关节，并使该 :ref:`RID<class_RID>` 引用这个新关节。
 
 .. rst-class:: classref-item-separator
 
@@ -2292,7 +2292,7 @@ Destroys the joint with the given :ref:`RID<class_RID>`, creates a new uninitial
 
 :ref:`RID<class_RID>` **joint_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_create>`
 
-Creates a 2D joint in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. To set the joint type, use :ref:`joint_make_damped_spring()<class_PhysicsServer2D_method_joint_make_damped_spring>`, :ref:`joint_make_groove()<class_PhysicsServer2D_method_joint_make_groove>` or :ref:`joint_make_pin()<class_PhysicsServer2D_method_joint_make_pin>`. Use :ref:`joint_set_param()<class_PhysicsServer2D_method_joint_set_param>` to set generic joint parameters.
+在物理服务器中创建一个 2D 关节，并返回标识它的 :ref:`RID<class_RID>`\ 。要设置关节类型，请使用 :ref:`joint_make_damped_spring()<class_PhysicsServer2D_method_joint_make_damped_spring>`\ 、\ :ref:`joint_make_groove()<class_PhysicsServer2D_method_joint_make_groove>` 或 :ref:`joint_make_pin()<class_PhysicsServer2D_method_joint_make_pin>`\ 。可使用 :ref:`joint_set_param()<class_PhysicsServer2D_method_joint_set_param>` 设置通用关节参数。
 
 .. rst-class:: classref-item-separator
 
@@ -2304,7 +2304,7 @@ Creates a 2D joint in the physics server, and returns the :ref:`RID<class_RID>` 
 
 |void| **joint_disable_collisions_between_bodies**\ (\ joint\: :ref:`RID<class_RID>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_disable_collisions_between_bodies>`
 
-Sets whether the bodies attached to the :ref:`Joint2D<class_Joint2D>` will collide with each other.
+设置附加到该 :ref:`Joint2D<class_Joint2D>` 的物体能否互相碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -2316,7 +2316,7 @@ Sets whether the bodies attached to the :ref:`Joint2D<class_Joint2D>` will colli
 
 :ref:`float<class_float>` **joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`JointParam<enum_PhysicsServer2D_JointParam>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_joint_get_param>`
 
-Returns the value of the given joint parameter.
+返回给定关节参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2328,7 +2328,7 @@ Returns the value of the given joint parameter.
 
 :ref:`JointType<enum_PhysicsServer2D_JointType>` **joint_get_type**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_joint_get_type>`
 
-Returns the joint's type.
+返回关节的类型。
 
 .. rst-class:: classref-item-separator
 
@@ -2340,7 +2340,7 @@ Returns the joint's type.
 
 :ref:`bool<class_bool>` **joint_is_disabled_collisions_between_bodies**\ (\ joint\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_joint_is_disabled_collisions_between_bodies>`
 
-Returns whether the bodies attached to the :ref:`Joint2D<class_Joint2D>` will collide with each other.
+返回分配给该 :ref:`Joint2D<class_Joint2D>` 的物体能否相互碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -2352,7 +2352,7 @@ Returns whether the bodies attached to the :ref:`Joint2D<class_Joint2D>` will co
 
 |void| **joint_make_damped_spring**\ (\ joint\: :ref:`RID<class_RID>`, anchor_a\: :ref:`Vector2<class_Vector2>`, anchor_b\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>`, body_b\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_make_damped_spring>`
 
-Makes the joint a damped spring joint, attached at the point ``anchor_a`` (given in global coordinates) on the body ``body_a`` and at the point ``anchor_b`` (given in global coordinates) on the body ``body_b``. To set the parameters which are specific to the damped spring, see :ref:`damped_spring_joint_set_param()<class_PhysicsServer2D_method_damped_spring_joint_set_param>`.
+使该关节成为一个阻尼弹簧关节，连接到实体 ``body_a`` 上的点 ``anchor_a``\ （在全局坐标中给出）和实体 ``body_b`` 上的点 ``anchor_b``\ （在全局坐标中给出）。要设置特定于阻尼弹簧的参数，请参阅 :ref:`damped_spring_joint_set_param()<class_PhysicsServer2D_method_damped_spring_joint_set_param>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2364,7 +2364,7 @@ Makes the joint a damped spring joint, attached at the point ``anchor_a`` (given
 
 |void| **joint_make_groove**\ (\ joint\: :ref:`RID<class_RID>`, groove1_a\: :ref:`Vector2<class_Vector2>`, groove2_a\: :ref:`Vector2<class_Vector2>`, anchor_b\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>` = RID(), body_b\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_make_groove>`
 
-Makes the joint a groove joint.
+使关节成为凹槽关节。
 
 .. rst-class:: classref-item-separator
 
@@ -2376,7 +2376,7 @@ Makes the joint a groove joint.
 
 |void| **joint_make_pin**\ (\ joint\: :ref:`RID<class_RID>`, anchor\: :ref:`Vector2<class_Vector2>`, body_a\: :ref:`RID<class_RID>`, body_b\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_make_pin>`
 
-Makes the joint a pin joint. If ``body_b`` is an empty :ref:`RID<class_RID>`, then ``body_a`` is pinned to the point ``anchor`` (given in global coordinates); otherwise, ``body_a`` is pinned to ``body_b`` at the point ``anchor`` (given in global coordinates). To set the parameters which are specific to the pin joint, see :ref:`pin_joint_set_param()<class_PhysicsServer2D_method_pin_joint_set_param>`.
+使关节成为一个销关节。如果 ``body_b`` 是一个空 :ref:`RID<class_RID>`\ ，则 ``body_a`` 被固定到点 ``anchor``\ （在全局坐标中给出）； 否则，\ ``body_a`` 在 ``anchor`` 点被固定到 ``body_b``\ （在全局坐标中给出）。要设置特定于销关节的参数，请参阅 :ref:`pin_joint_set_param()<class_PhysicsServer2D_method_pin_joint_set_param>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2388,7 +2388,7 @@ Makes the joint a pin joint. If ``body_b`` is an empty :ref:`RID<class_RID>`, th
 
 |void| **joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`JointParam<enum_PhysicsServer2D_JointParam>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_joint_set_param>`
 
-Sets the value of the given joint parameter.
+设置给定关节参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2400,7 +2400,7 @@ Sets the value of the given joint parameter.
 
 :ref:`bool<class_bool>` **pin_joint_get_flag**\ (\ joint\: :ref:`RID<class_RID>`, flag\: :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_pin_joint_get_flag>`
 
-Gets a pin joint flag.
+获取钉固关节的标志。
 
 .. rst-class:: classref-item-separator
 
@@ -2412,7 +2412,7 @@ Gets a pin joint flag.
 
 :ref:`float<class_float>` **pin_joint_get_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_pin_joint_get_param>`
 
-Returns the value of a pin joint parameter.
+返回钉固关节参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2424,7 +2424,7 @@ Returns the value of a pin joint parameter.
 
 |void| **pin_joint_set_flag**\ (\ joint\: :ref:`RID<class_RID>`, flag\: :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_pin_joint_set_flag>`
 
-Sets a pin joint flag.
+设置钉固关节的标志。
 
 .. rst-class:: classref-item-separator
 
@@ -2436,7 +2436,7 @@ Sets a pin joint flag.
 
 |void| **pin_joint_set_param**\ (\ joint\: :ref:`RID<class_RID>`, param\: :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_pin_joint_set_param>`
 
-Sets a pin joint parameter.
+设置钉固关节的参数。
 
 .. rst-class:: classref-item-separator
 
@@ -2448,7 +2448,7 @@ Sets a pin joint parameter.
 
 :ref:`RID<class_RID>` **rectangle_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_rectangle_shape_create>`
 
-Creates a 2D rectangle shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the rectangle's half-extents.
+在物理服务器中创建一个 2D 矩形形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置该矩形的半边距。
 
 .. rst-class:: classref-item-separator
 
@@ -2460,7 +2460,7 @@ Creates a 2D rectangle shape in the physics server, and returns the :ref:`RID<cl
 
 :ref:`RID<class_RID>` **segment_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_segment_shape_create>`
 
-Creates a 2D segment shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the segment's start and end points.
+在物理服务器中创建一个 2D 线段形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置线段的起点和终点。
 
 .. rst-class:: classref-item-separator
 
@@ -2472,7 +2472,7 @@ Creates a 2D segment shape in the physics server, and returns the :ref:`RID<clas
 
 :ref:`RID<class_RID>` **separation_ray_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_separation_ray_shape_create>`
 
-Creates a 2D separation ray shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the shape's ``length`` and ``slide_on_slope`` properties.
+在物理服务器中创建一个 2D 分离射线形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置形状的 ``length`` 和 ``slide_on_slope`` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2484,7 +2484,7 @@ Creates a 2D separation ray shape in the physics server, and returns the :ref:`R
 
 |void| **set_active**\ (\ active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_set_active>`
 
-Activates or deactivates the 2D physics server. If ``active`` is ``false``, then the physics server will not do anything in its physics step.
+激活或停用 2D 物理服务器。如果 ``active`` 为 ``false``\ ，则物理服务器将不会在其物理迭代中执行任何操作。
 
 .. rst-class:: classref-item-separator
 
@@ -2496,7 +2496,7 @@ Activates or deactivates the 2D physics server. If ``active`` is ``false``, then
 
 :ref:`Variant<class_Variant>` **shape_get_data**\ (\ shape\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_shape_get_data>`
 
-Returns the shape data that defines the configuration of the shape, such as the half-extents of a rectangle or the segments of a concave shape. See :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` for the precise format of this data in each case.
+返回定义形状配置的形状数据，例如矩形的半边长或凹形的线段。有关每种情况下该数据的精确格式，请参阅 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2508,7 +2508,7 @@ Returns the shape data that defines the configuration of the shape, such as the 
 
 :ref:`ShapeType<enum_PhysicsServer2D_ShapeType>` **shape_get_type**\ (\ shape\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_shape_get_type>`
 
-Returns the shape's type.
+返回形状的类型。
 
 .. rst-class:: classref-item-separator
 
@@ -2520,25 +2520,25 @@ Returns the shape's type.
 
 |void| **shape_set_data**\ (\ shape\: :ref:`RID<class_RID>`, data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer2D_method_shape_set_data>`
 
-Sets the shape data that defines the configuration of the shape. The ``data`` to be passed depends on the shape's type (see :ref:`shape_get_type()<class_PhysicsServer2D_method_shape_get_type>`):
+设置定义形状配置的形状数据。要传递的 ``data`` 取决于形状的类型（参见 :ref:`shape_get_type()<class_PhysicsServer2D_method_shape_get_type>`\ ）：
 
-- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer2D_constant_SHAPE_WORLD_BOUNDARY>`: an array of length two containing a :ref:`Vector2<class_Vector2>` ``normal`` direction and a :ref:`float<class_float>` distance ``d``,
+- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer2D_constant_SHAPE_WORLD_BOUNDARY>`\ ：长度为 2 的数组，包含 :ref:`Vector2<class_Vector2>` 类型的 ``normal`` 方向和 :ref:`float<class_float>` 类型的距离 ``d``\ ，
 
-- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>`: a dictionary containing the key ``length`` with a :ref:`float<class_float>` value and the key ``slide_on_slope`` with a :ref:`bool<class_bool>` value,
+- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>`\ ：字典，包含键 ``length`` 和 :ref:`float<class_float>` 值、以及键 ``slide_on_slope`` 和 :ref:`bool<class_bool>` 值，
 
-- :ref:`SHAPE_SEGMENT<class_PhysicsServer2D_constant_SHAPE_SEGMENT>`: a :ref:`Rect2<class_Rect2>` ``rect`` containing the first point of the segment in ``rect.position`` and the second point of the segment in ``rect.size``,
+- :ref:`SHAPE_SEGMENT<class_PhysicsServer2D_constant_SHAPE_SEGMENT>`\ ：\ :ref:`Rect2<class_Rect2>` 类型的 ``rect``\ ，以 ``rect.position`` 表示线段中的第一个点，并以 ``rect.size`` 表示线段中的第二个点，
 
-- :ref:`SHAPE_CIRCLE<class_PhysicsServer2D_constant_SHAPE_CIRCLE>`: a :ref:`float<class_float>` ``radius``,
+- :ref:`SHAPE_CIRCLE<class_PhysicsServer2D_constant_SHAPE_CIRCLE>`\ ：\ :ref:`float<class_float>` 类型的 ``radius``\ ，
 
-- :ref:`SHAPE_RECTANGLE<class_PhysicsServer2D_constant_SHAPE_RECTANGLE>`: a :ref:`Vector2<class_Vector2>` ``half_extents``,
+- :ref:`SHAPE_RECTANGLE<class_PhysicsServer2D_constant_SHAPE_RECTANGLE>`\ ：\ :ref:`Vector2<class_Vector2>` 类型的 ``half_extents``\ ，
 
-- :ref:`SHAPE_CAPSULE<class_PhysicsServer2D_constant_SHAPE_CAPSULE>`: an array of length two (or a :ref:`Vector2<class_Vector2>`) containing a :ref:`float<class_float>` ``height`` and a :ref:`float<class_float>` ``radius``,
+- :ref:`SHAPE_CAPSULE<class_PhysicsServer2D_constant_SHAPE_CAPSULE>`\ ：长度为 2 的数组（或一个 :ref:`Vector2<class_Vector2>`\ ），包含一个 :ref:`float<class_float>` 类型的 ``height`` 和一个 :ref:`float<class_float>` 类型的 ``radius``\ ，
 
-- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON>`: either a :ref:`PackedVector2Array<class_PackedVector2Array>` of points defining a convex polygon in counterclockwise order (the clockwise outward normal of each segment formed by consecutive points is calculated internally), or a :ref:`PackedFloat32Array<class_PackedFloat32Array>` of length divisible by four so that every 4-tuple of :ref:`float<class_float>`\ s contains the coordinates of a point followed by the coordinates of the clockwise outward normal vector to the segment between the current point and the next point,
+- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON>`\ ：按逆时针顺序定义凸多边形的点的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ （在内部使用由连续点形成的每个线段的顺时针向外法线计算）；或一个长度可被 4 整除的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，以便每个 4 元组的 :ref:`float<class_float>` 包含一个点的坐标，后跟一个向量的坐标表示，该向量是当前点和下一个点之间的线段的顺时针向外法向量，
 
-- :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONCAVE_POLYGON>`: a :ref:`PackedVector2Array<class_PackedVector2Array>` of length divisible by two (each pair of points forms one segment).
+- :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONCAVE_POLYGON>`\ ：长度可被 2 整除的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ （每对点形成一个线段）。
 
-\ **Warning:** In the case of :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON>`, this method does not check if the points supplied actually form a convex polygon (unlike the :ref:`CollisionPolygon2D.polygon<class_CollisionPolygon2D_property_polygon>` property).
+\ **警告：**\ 在 :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON>` 的情况下，该方法不检查提供的点是否能够形成凸多边形（与 :ref:`CollisionPolygon2D.polygon<class_CollisionPolygon2D_property_polygon>` 属性不同）。
 
 .. rst-class:: classref-item-separator
 
@@ -2550,7 +2550,7 @@ Sets the shape data that defines the configuration of the shape. The ``data`` to
 
 :ref:`RID<class_RID>` **space_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_space_create>`
 
-Creates a 2D space in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. A space contains bodies and areas, and controls the stepping of the physics simulation of the objects in it.
+在物理服务器中创建一个 2D 空间，并返回标识它的 :ref:`RID<class_RID>`\ 。空间包含实体和区域，并控制其中实体的物理模拟的步骤。
 
 .. rst-class:: classref-item-separator
 
@@ -2562,7 +2562,7 @@ Creates a 2D space in the physics server, and returns the :ref:`RID<class_RID>` 
 
 :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>` **space_get_direct_state**\ (\ space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer2D_method_space_get_direct_state>`
 
-Returns the state of a space, a :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`. This object can be used for collision/intersection queries.
+返回空间的状态，即 :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`\ 。该对象可用于进行碰撞/相交的查询。
 
 .. rst-class:: classref-item-separator
 
@@ -2574,7 +2574,7 @@ Returns the state of a space, a :ref:`PhysicsDirectSpaceState2D<class_PhysicsDir
 
 :ref:`float<class_float>` **space_get_param**\ (\ space\: :ref:`RID<class_RID>`, param\: :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_space_get_param>`
 
-Returns the value of the given space parameter.
+返回给定空间参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2586,7 +2586,7 @@ Returns the value of the given space parameter.
 
 :ref:`bool<class_bool>` **space_is_active**\ (\ space\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer2D_method_space_is_active>`
 
-Returns ``true`` if the space is active.
+如果该空间处于活动状态，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2598,7 +2598,7 @@ Returns ``true`` if the space is active.
 
 |void| **space_set_active**\ (\ space\: :ref:`RID<class_RID>`, active\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer2D_method_space_set_active>`
 
-Activates or deactivates the space. If ``active`` is ``false``, then the physics server will not do anything with this space in its physics step.
+激活或停用该空间。如果 ``active`` 为 ``false``\ ，那么物理服务器将不会在它的物理迭代中对这个空间做任何事情。
 
 .. rst-class:: classref-item-separator
 
@@ -2610,7 +2610,7 @@ Activates or deactivates the space. If ``active`` is ``false``, then the physics
 
 |void| **space_set_param**\ (\ space\: :ref:`RID<class_RID>`, param\: :ref:`SpaceParameter<enum_PhysicsServer2D_SpaceParameter>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer2D_method_space_set_param>`
 
-Sets the value of the given space parameter.
+设置给定空间参数的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -2622,14 +2622,14 @@ Sets the value of the given space parameter.
 
 :ref:`RID<class_RID>` **world_boundary_shape_create**\ (\ ) :ref:`🔗<class_PhysicsServer2D_method_world_boundary_shape_create>`
 
-Creates a 2D world boundary shape in the physics server, and returns the :ref:`RID<class_RID>` that identifies it. Use :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` to set the shape's normal direction and distance properties.
+在物理服务器中创建一个 2D 世界边界形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data()<class_PhysicsServer2D_method_shape_set_data>` 设置形状的法线方向和距离属性。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

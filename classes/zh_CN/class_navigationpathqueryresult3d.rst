@@ -5,30 +5,30 @@
 NavigationPathQueryResult3D
 ===========================
 
-**Experimental:** This class may be changed or removed in future versions.
+**实验性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents the result of a 3D pathfinding query.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This class stores the result of a 3D navigation path query from the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+代表 3D 寻路查询的结果。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using NavigationPathQueryObjects <../tutorials/navigation/navigation_using_navigationpathqueryobjects>`
+这个类存储的是向 :ref:`NavigationServer3D<class_NavigationServer3D>` 进行 3D 导航路径查询的结果。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用 NavigationPathQueryObject <../tutorials/navigation/navigation_using_navigationpathqueryobjects>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_NavigationPathQueryResult3D_PathSegmentType:
 
@@ -78,7 +78,7 @@ enum **PathSegmentType**: :ref:`🔗<enum_NavigationPathQueryResult3D_PathSegmen
 
 :ref:`PathSegmentType<enum_NavigationPathQueryResult3D_PathSegmentType>` **PATH_SEGMENT_TYPE_REGION** = ``0``
 
-This segment of the path goes through a region.
+这一段路径穿过了某个地区。
 
 .. _class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK:
 
@@ -86,7 +86,7 @@ This segment of the path goes through a region.
 
 :ref:`PathSegmentType<enum_NavigationPathQueryResult3D_PathSegmentType>` **PATH_SEGMENT_TYPE_LINK** = ``1``
 
-This segment of the path goes through a link.
+这一段路径穿过了某个链接。
 
 .. rst-class:: classref-section-separator
 
@@ -94,8 +94,8 @@ This segment of the path goes through a link.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationPathQueryResult3D_property_path:
 
@@ -108,7 +108,7 @@ Property Descriptions
 - |void| **set_path**\ (\ value\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ )
 - :ref:`PackedVector3Array<class_PackedVector3Array>` **get_path**\ (\ )
 
-The resulting path array from the navigation query. All path array positions are in global coordinates. Without customized query parameters this is the same path as returned by :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>`.
+导航查询的路径数组结果。所有的路径数组位置都使用全局坐标。未自定义查询参数时，与 :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>` 返回的路径相同。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector3Array<class_PackedVector3Array>` for more details.
 
@@ -127,7 +127,7 @@ The resulting path array from the navigation query. All path array positions are
 - |void| **set_path_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_length**\ (\ )
 
-Returns the length of the path.
+返回路径的长度。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Returns the length of the path.
 - |void| **set_path_owner_ids**\ (\ value\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ )
 - :ref:`PackedInt64Array<class_PackedInt64Array>` **get_path_owner_ids**\ (\ )
 
-The ``ObjectID``\ s of the :ref:`Object<class_Object>`\ s which manage the regions and links each point of the path goes through.
+管理路径上的各个点所经过的地区和链接的 :ref:`Object<class_Object>` 的 ``ObjectID``\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt64Array<class_PackedInt64Array>` for more details.
 
@@ -163,7 +163,7 @@ The ``ObjectID``\ s of the :ref:`Object<class_Object>`\ s which manage the regio
 - |void| **set_path_rids**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_path_rids**\ (\ )
 
-The :ref:`RID<class_RID>`\ s of the regions and links that each point of the path goes through.
+路径上的各个点所经过的地区和链接的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ The :ref:`RID<class_RID>`\ s of the regions and links that each point of the pat
 - |void| **set_path_types**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_path_types**\ (\ )
 
-The type of navigation primitive (region or link) that each point of the path goes through.
+路径上的各个点所经过的导航图元类型（地区或链接）。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -190,8 +190,8 @@ The type of navigation primitive (region or link) that each point of the path go
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationPathQueryResult3D_method_reset:
 
@@ -199,14 +199,14 @@ Method Descriptions
 
 |void| **reset**\ (\ ) :ref:`🔗<class_NavigationPathQueryResult3D_method_reset>`
 
-Reset the result object to its initial state. This is useful to reuse the object across multiple queries.
+将结果对象重置为其初始状态。这对于在多次查询中重复使用该对象是很有用的。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

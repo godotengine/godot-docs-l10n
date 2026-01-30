@@ -716,9 +716,9 @@ Si ``true``, le matériau :ref:`material<class_CanvasItem_property_material>` du
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask.
+La couche de rendu dans laquelle ce **CanvasItem** est rendu par les nœuds :ref:`Viewport<class_Viewport>`. Un :ref:`Viewport<class_Viewport>` rendra un **CanvasItem** si celui-ci et tous ses parents partagent une couche avec le masque de culling du canvas du :ref:`Viewport<class_Viewport>`.
 
-\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
+\ **Note :** Un **CanvasItem** n’hérite pas des couches de visibilité de ses parents. Cela signifie que si un **CanvasItem** parent ne possède pas toutes les mêmes couches que son enfant, l’enfant peut ne pas être visible même si le parent et l’enfant ont tous deux :ref:`visible<class_CanvasItem_property_visible>` défini sur ``true``. Par exemple, si un parent est sur la couche 1 et un enfant sur la couche 2, l’enfant ne sera pas visible dans un :ref:`Viewport<class_Viewport>` dont le masque de culling du canvas est réglé sur la couche 1 ou 2 (voir :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). Pour garantir que le parent et l’enfant soient visibles, le parent doit avoir à la fois les couches 1 et 2, ou l’enfant doit avoir :ref:`top_level<class_CanvasItem_property_top_level>` défini sur ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -1020,9 +1020,9 @@ Si ``width`` est négative, alors des primitives à deux points seront dessinée
 
 |void| **draw_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, texture\: :ref:`Texture2D<class_Texture2D>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_mesh>`
 
-Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`MeshInstance2D<class_MeshInstance2D>` for related documentation. The ``transform`` is defined in local space.
+Dessine un :ref:`Mesh<class_Mesh>` en 2D en utilisant la texture fournie. Voir :ref:`MeshInstance2D<class_MeshInstance2D>` pour une documentation associée. Le ``transform`` est défini dans l’espace local.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Note :** Les styleboxes, textures et meshes stockés uniquement dans des variables locales ne doivent **pas** être utilisés avec cette méthode en GDScript, car l’opération de dessin ne commence pas immédiatement lorsque cette méthode est appelée. En GDScript, lorsque la fonction contenant les variables locales se termine, celles-ci sont détruites avant que le rendu n’ait lieu.
 
 .. rst-class:: classref-item-separator
 
@@ -1108,9 +1108,9 @@ Sépare ``text`` en lignes et dessine le contour du texte avec la police ``font`
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` for related documentation.
+Dessine un :ref:`MultiMesh<class_MultiMesh>` en 2D avec la texture fournie. Voir :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` pour une documentation associée.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Note :** Les styleboxes, textures et meshes stockés uniquement dans des variables locales ne doivent **pas** être utilisés avec cette méthode en GDScript, car l’opération de dessin ne commence pas immédiatement lorsque cette méthode est appelée. En GDScript, lorsque la fonction contenant les variables locales se termine, celles-ci sont détruites avant que le rendu n’ait lieu.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,9 +1267,9 @@ Dessine le contour du ``text`` en utilisant la police ``font`` spécifiée à la
 
 |void| **draw_style_box**\ (\ style_box\: :ref:`StyleBox<class_StyleBox>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_CanvasItem_method_draw_style_box>`
 
-Draws a styled rectangle. The ``rect`` is defined in local space.
+Dessine un rectangle stylisé. Le ``rect`` est défini dans l’espace local.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Note :** Les styleboxes, textures et meshes stockés uniquement dans des variables locales ne doivent **pas** être utilisés avec cette méthode en GDScript, car l’opération de dessin ne commence pas immédiatement lorsque cette méthode est appelée. En GDScript, lorsque la fonction contenant les variables locales se termine, celles-ci sont détruites avant que le rendu n’ait lieu.
 
 .. rst-class:: classref-item-separator
 
@@ -1281,9 +1281,9 @@ Draws a styled rectangle. The ``rect`` is defined in local space.
 
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
-Draws a texture at a given position. The ``position`` is defined in local space.
+Dessine une texture à une position donnée. La ``position`` est définie dans l’espace local.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Note :** Les styleboxes, textures et meshes stockés uniquement dans des variables locales ne doivent **pas** être utilisés avec cette méthode en GDScript, car l’opération de dessin ne commence pas immédiatement lorsque cette méthode est appelée. En GDScript, lorsque la fonction contenant les variables locales se termine, celles-ci sont détruites avant que le rendu n’ait lieu.
 
 .. rst-class:: classref-item-separator
 

@@ -5,21 +5,21 @@
 Marshalls
 =========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Data transformation (marshaling) and encoding helpers.
+数据转换（marshalling）和编码辅助工具。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Provides data transformation and encoding utility functions.
+提供进行数据转换和编码的实用函数。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Marshalls_method_base64_to_raw:
 
@@ -53,7 +53,7 @@ Method Descriptions
 
 :ref:`PackedByteArray<class_PackedByteArray>` **base64_to_raw**\ (\ base64_str\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Marshalls_method_base64_to_raw>`
 
-Returns a decoded :ref:`PackedByteArray<class_PackedByteArray>` corresponding to the Base64-encoded string ``base64_str``.
+返回与 Base64 编码字符串 ``base64_str`` 相对应的解码 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Returns a decoded :ref:`PackedByteArray<class_PackedByteArray>` corresponding to
 
 :ref:`String<class_String>` **base64_to_utf8**\ (\ base64_str\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Marshalls_method_base64_to_utf8>`
 
-Returns a decoded string corresponding to the Base64-encoded string ``base64_str``.
+返回与 Base64 编码字符串 ``base64_str`` 相对应的解码字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -77,11 +77,11 @@ Returns a decoded string corresponding to the Base64-encoded string ``base64_str
 
 :ref:`Variant<class_Variant>` **base64_to_variant**\ (\ base64_str\: :ref:`String<class_String>`, allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Marshalls_method_base64_to_variant>`
 
-Returns a decoded :ref:`Variant<class_Variant>` corresponding to the Base64-encoded string ``base64_str``. If ``allow_objects`` is ``true``, decoding objects is allowed.
+返回与 Base64 编码字符串 ``base64_str`` 相对应的解码 :ref:`Variant<class_Variant>`\ 。如果 ``allow_objects`` 为 ``true``\ ，则允许对对象进行解码。
 
-Internally, this uses the same decoding mechanism as the :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` method.
+内部实现时，使用的解码机制与 :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` 方法相同。
 
-\ **Warning:** Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threats such as remote code execution.
+\ **警告：**\ 反序列化的对象可能包含会被执行的代码。如果序列化的对象来自不受信任的来源，请不要使用这个选项，以避免潜在的安全威胁，如远程代码执行。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ Internally, this uses the same decoding mechanism as the :ref:`@GlobalScope.byte
 
 :ref:`String<class_String>` **raw_to_base64**\ (\ array\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Marshalls_method_raw_to_base64>`
 
-Returns a Base64-encoded string of a given :ref:`PackedByteArray<class_PackedByteArray>`.
+返回给定 :ref:`PackedByteArray<class_PackedByteArray>` 的 Base64 编码的字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ Returns a Base64-encoded string of a given :ref:`PackedByteArray<class_PackedByt
 
 :ref:`String<class_String>` **utf8_to_base64**\ (\ utf8_str\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Marshalls_method_utf8_to_base64>`
 
-Returns a Base64-encoded string of the UTF-8 string ``utf8_str``.
+返回 UTF-8 字符串 ``utf8_str`` 的 Base64 编码的字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -117,16 +117,16 @@ Returns a Base64-encoded string of the UTF-8 string ``utf8_str``.
 
 :ref:`String<class_String>` **variant_to_base64**\ (\ variant\: :ref:`Variant<class_Variant>`, full_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Marshalls_method_variant_to_base64>`
 
-Returns a Base64-encoded string of the :ref:`Variant<class_Variant>` ``variant``. If ``full_objects`` is ``true``, encoding objects is allowed (and can potentially include code).
+返回经过 Base64 编码的 :ref:`Variant<class_Variant>` ``variant`` 的字符串。如果 ``full_objects`` 为 ``true``\ ，则允许将对象进行编码（有可能包括代码）。
 
-Internally, this uses the same encoding mechanism as the :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>` method.
+内部实现时，使用的编码机制与 :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>` 方法相同。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

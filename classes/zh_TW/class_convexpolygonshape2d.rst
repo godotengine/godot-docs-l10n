@@ -5,27 +5,27 @@
 ConvexPolygonShape2D
 ====================
 
-**Inherits:** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D convex polygon shape used for physics collision.
+用於物理碰撞的 2D 凸多邊形形狀。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A 2D convex polygon shape, intended for use in physics. Used internally in :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` when it's in :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` mode.
+2D 凸多邊形形狀，旨在用於物理。\ :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 為 ``BUILD_SOLIDS`` 模式時內部會使用這個類。
 
-\ **ConvexPolygonShape2D** is *solid*, which means it detects collisions from objects that are fully inside it, unlike :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` which is hollow. This makes it more suitable for both detection and physics.
+\ **ConvexPolygonShape2D** 是\ *實心*\ 的，與空心的 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 不同，如果物件完全位於其內部，也能夠偵測到碰撞。因此更適於偵測和物理。
 
-\ **Convex decomposition:** A concave polygon can be split up into several convex polygons. This allows dynamic physics bodies to have complex concave collisions (at a performance cost) and can be achieved by using several **ConvexPolygonShape2D** nodes or by using the :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` node in :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` mode. To generate a collision polygon from a sprite, select the :ref:`Sprite2D<class_Sprite2D>` node, go to the **Sprite2D** menu that appears above the viewport, and choose **Create Polygon2D Sibling**.
+\ **凸分解：**\ 凹多邊形可以拆分為多個凸多邊形。這樣就能夠讓動態物理體擁有複雜的凹碰撞（以消耗性能為代價），做法是使用多個 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 節點，或者使用 ``BUILD_SOLIDS`` 模式的 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 節點。要根據精靈生成碰撞多邊形，請選中 :ref:`Sprite2D<class_Sprite2D>` 節點，前往出現在視口上方的 **Sprite2D** 功能表，然後選擇\ **建立 Polygon2D 同級**\ 。
 
-\ **Performance:** **ConvexPolygonShape2D** is faster to check collisions against compared to :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>`, but it is slower than primitive collision shapes such as :ref:`CircleShape2D<class_CircleShape2D>` and :ref:`RectangleShape2D<class_RectangleShape2D>`. Its use should generally be limited to medium-sized objects that cannot have their collision accurately represented by primitive shapes.
+\ **性能：**\ **ConvexPolygonShape2D** 檢查碰撞的速度比 :ref:`ConcavePolygonShape2D<class_ConcavePolygonShape2D>` 要快，但比 :ref:`CircleShape2D<class_CircleShape2D>`\ 、\ :ref:`RectangleShape2D<class_RectangleShape2D>` 等基本碰撞形狀要慢。通常應該僅限於中等大小的物件，在無法使用基本形狀精確表示碰撞時使用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ConvexPolygonShape2D_property_points:
 
@@ -66,9 +66,9 @@ Property Descriptions
 - |void| **set_points**\ (\ value\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ )
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_points**\ (\ )
 
-The polygon's list of vertices that form a convex hull. Can be in either clockwise or counterclockwise order.
+該多邊形構成凸包的頂點列表。順時針順序或逆時針順序都有可能。
 
-\ **Warning:** Only set this property to a list of points that actually form a convex hull. Use :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` to generate the convex hull of an arbitrary set of points.
+\ **警告：**\ 請務必將這個屬性設定為能夠形成凸包的頂點列表。可以使用 :ref:`set_point_cloud()<class_ConvexPolygonShape2D_method_set_point_cloud>` 從任意頂點集生成凸包。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedVector2Array<class_PackedVector2Array>` for more details.
 
@@ -78,8 +78,8 @@ The polygon's list of vertices that form a convex hull. Can be in either clockwi
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ConvexPolygonShape2D_method_set_point_cloud:
 
@@ -87,14 +87,14 @@ Method Descriptions
 
 |void| **set_point_cloud**\ (\ point_cloud\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_ConvexPolygonShape2D_method_set_point_cloud>`
 
-Based on the set of points provided, this assigns the :ref:`points<class_ConvexPolygonShape2D_property_points>` property using the convex hull algorithm, removing all unneeded points. See :ref:`Geometry2D.convex_hull()<class_Geometry2D_method_convex_hull>` for details.
+根據提供的點集，使用凸包演算法分配 :ref:`points<class_ConvexPolygonShape2D_property_points>` 屬性，移除所有不必要的點。詳見 :ref:`Geometry2D.convex_hull()<class_Geometry2D_method_convex_hull>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

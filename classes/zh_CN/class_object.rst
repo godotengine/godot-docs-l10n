@@ -5,62 +5,62 @@
 Object
 ======
 
-**Inherited By:** :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
+**派生：** :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`FramebufferCacheRD<class_FramebufferCacheRD>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotInstance<class_GodotInstance>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NativeMenu<class_NativeMenu>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderData<class_RenderData>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`ShaderIncludeDB<class_ShaderIncludeDB>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`UniformSetCacheRD<class_UniformSetCacheRD>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`, :ref:`XRVRS<class_XRVRS>`
 
-Base class for all other classes in the engine.
+引擎中所有其他类的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An advanced :ref:`Variant<class_Variant>` type. All classes in the engine inherit from Object. Each class may define new properties, methods or signals, which are available to all inheriting classes. For example, a :ref:`Sprite2D<class_Sprite2D>` instance is able to call :ref:`Node.add_child()<class_Node_method_add_child>` because it inherits from :ref:`Node<class_Node>`.
+一种高级的 :ref:`Variant<class_Variant>` 类型。引擎中的所有类都继承自 Object。每个类都可以定义新的属性、方法或信号，并且这些对所有继承的类都可用。例如，一个 :ref:`Sprite2D<class_Sprite2D>` 实例能够调用 :ref:`Node.add_child()<class_Node_method_add_child>` 因为它继承自 :ref:`Node<class_Node>`\ 。
 
-You can create new instances, using ``Object.new()`` in GDScript, or ``new GodotObject`` in C#.
+可以使用 GDScript 中的 ``Object.new()`` 或 C# 中的 ``new GodotObject`` 来创建新实例。
 
-To delete an Object instance, call :ref:`free()<class_Object_method_free>`. This is necessary for most classes inheriting Object, because they do not manage memory on their own, and will otherwise cause memory leaks when no longer in use. There are a few classes that perform memory management. For example, :ref:`RefCounted<class_RefCounted>` (and by extension :ref:`Resource<class_Resource>`) deletes itself when no longer referenced, and :ref:`Node<class_Node>` deletes its children when freed.
+要删除一个 Object 实例，请调用 :ref:`free()<class_Object_method_free>`\ 。这对于大多数继承 Object 的类来说是必须的，因为它们本身并不管理内存，如果不调用该方法的话，在不再使用时会造成内存泄漏。有几个类会执行内存管理。例如，\ :ref:`RefCounted<class_RefCounted>`\ （以及扩展的 :ref:`Resource<class_Resource>`\ ）在不再被引用时删除自身，而 :ref:`Node<class_Node>` 在释放时会删除其子节点。
 
-Objects can have a :ref:`Script<class_Script>` attached to them. Once the :ref:`Script<class_Script>` is instantiated, it effectively acts as an extension to the base class, allowing it to define and inherit new properties, methods and signals.
+对象可以附加一个 :ref:`Script<class_Script>`\ 。一旦该 :ref:`Script<class_Script>` 被实例化，它就有效地充当了基类的扩展，允许它定义和继承新的属性、方法和信号。
 
-Inside a :ref:`Script<class_Script>`, :ref:`_get_property_list()<class_Object_private_method__get_property_list>` may be overridden to customize properties in several ways. This allows them to be available to the editor, display as lists of options, sub-divide into groups, save on disk, etc. Scripting languages offer easier ways to customize properties, such as with the :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` annotation.
+在 :ref:`Script<class_Script>` 中，\ :ref:`_get_property_list()<class_Object_private_method__get_property_list>` 可以被可以重写，以通过多种方式自定义属性。这允许它们对编辑器可用，显示为选项列表，细分为组，保存在磁盘上，等等。脚本语言提供更简单的方式来自定义属性，例如使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 注解。
 
-Godot is very dynamic. An object's script, and therefore its properties, methods and signals, can be changed at run-time. Because of this, there can be occasions where, for example, a property required by a method may not exist. To prevent run-time errors, see methods such as :ref:`set()<class_Object_method_set>`, :ref:`get()<class_Object_method_get>`, :ref:`call()<class_Object_method_call>`, :ref:`has_method()<class_Object_method_has_method>`, :ref:`has_signal()<class_Object_method_has_signal>`, etc. Note that these methods are **much** slower than direct references.
+Godot 是非常动态的。一个对象的脚本，以及它的属性、方法和信号，都可以在运行时改变。正因为如此，可能会出现这样的情况，例如，一个方法所需的属性可能不存在。为了防止运行时出错，可以参考 :ref:`set()<class_Object_method_set>`\ 、\ :ref:`get()<class_Object_method_get>`\ 、\ :ref:`call()<class_Object_method_call>`\ 、\ :ref:`has_method()<class_Object_method_has_method>`\ 、\ :ref:`has_signal()<class_Object_method_has_signal>` 等方法。请注意，这些方法比直接引用慢\ **得多**\ 。
 
-In GDScript, you can also check if a given property, method, or signal name exists in an object with the ``in`` operator:
+在 GDScript 中，还可以使用 ``in`` 运算符来检查对象中是否存在给定的属性、方法或信号名称：
 
 ::
 
     var node = Node.new()
-    print("name" in node)         # Prints true
-    print("get_parent" in node)   # Prints true
-    print("tree_entered" in node) # Prints true
-    print("unknown" in node)      # Prints false
+    print("name" in node)         # 输出 true
+    print("get_parent" in node)   # 输出 true
+    print("tree_entered" in node) # 输出 true
+    print("unknown" in node)      # 输出 false
 
-Notifications are :ref:`int<class_int>` constants commonly sent and received by objects. For example, on every rendered frame, the :ref:`SceneTree<class_SceneTree>` notifies nodes inside the tree with a :ref:`Node.NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`. The nodes receive it and may call :ref:`Node._process()<class_Node_private_method__process>` to update. To make use of notifications, see :ref:`notification()<class_Object_method_notification>` and :ref:`_notification()<class_Object_private_method__notification>`.
+通知是 :ref:`int<class_int>` 常量，通常由对象发送和接收。例如，在每个渲染帧上，\ :ref:`SceneTree<class_SceneTree>` 使用 :ref:`Node.NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知树内的节点。节点收到它后，可以调用 :ref:`Node._process()<class_Node_private_method__process>` 进行更新。要使用通知，请参阅 :ref:`notification()<class_Object_method_notification>` 和 :ref:`_notification()<class_Object_private_method__notification>`\ 。
 
-Lastly, every object can also contain metadata (data about data). :ref:`set_meta()<class_Object_method_set_meta>` can be useful to store information that the object itself does not depend on. To keep your code clean, making excessive use of metadata is discouraged.
+最后，每个对象还可以包含元数据（关于数据的数据）。\ :ref:`set_meta()<class_Object_method_set_meta>` 可用于存储对象本身不依赖的信息。为了保持代码整洁，不鼓励过度使用元数据。
 
-\ **Note:** Unlike references to a :ref:`RefCounted<class_RefCounted>`, references to an object stored in a variable can become invalid without being set to ``null``. To check if an object has been deleted, do *not* compare it against ``null``. Instead, use :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`. It's also recommended to inherit from :ref:`RefCounted<class_RefCounted>` for classes storing data instead of **Object**.
+\ **注意：**\ 与对 :ref:`RefCounted<class_RefCounted>` 的引用不同，对存储在变量中的对象的引用，可能会在未被设置为 ``null`` 的情况下变得无效。要检查对象是否已被删除，请\ *不要*\ 将其与 ``null`` 进行比较。而是使用 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`\ 。存储数据的类，建议从 :ref:`RefCounted<class_RefCounted>` 继承而不是 **Object**\ 。
 
-\ **Note:** The ``script`` is not exposed like most properties. To set or get an object's :ref:`Script<class_Script>` in code, use :ref:`set_script()<class_Object_method_set_script>` and :ref:`get_script()<class_Object_method_get_script>`, respectively.
+\ **注意：**\ ``script`` 不像大多数属性那样公开。要在代码中设置或获取一个对象的 :ref:`Script<class_Script>`\ ，请分别使用 :ref:`set_script()<class_Object_method_set_script>` 和 :ref:`get_script()<class_Object_method_get_script>`\ 。
 
-\ **Note:** In a boolean context, an **Object** will evaluate to ``false`` if it is equal to ``null`` or it has been freed. Otherwise, an **Object** will always evaluate to ``true``. See also :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`.
+\ **注意：**\ 在布尔值上下文中，\ **Object** 等于 ``null`` 或已释放时会求值为 ``false``\ 。否则 **Object** 始终求值为 ``true``\ 。 另见 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Object class introduction <../engine_details/architecture/object_class>`
+- :doc:`Object 类介绍 <../engine_details/architecture/object_class>`
 
-- :doc:`When and how to avoid using nodes for everything <../tutorials/best_practices/node_alternatives>`
+- :doc:`何时以及如何避免为任何事情使用节点 <../tutorials/best_practices/node_alternatives>`
 
-- :doc:`Object notifications <../tutorials/best_practices/godot_notifications>`
+- :doc:`对象通知 <../tutorials/best_practices/godot_notifications>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -197,8 +197,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Object_signal_property_list_changed:
 
@@ -206,7 +206,7 @@ Signals
 
 **property_list_changed**\ (\ ) :ref:`🔗<class_Object_signal_property_list_changed>`
 
-Emitted when :ref:`notify_property_list_changed()<class_Object_method_notify_property_list_changed>` is called.
+调用 :ref:`notify_property_list_changed()<class_Object_method_notify_property_list_changed>` 时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -218,9 +218,9 @@ Emitted when :ref:`notify_property_list_changed()<class_Object_method_notify_pro
 
 **script_changed**\ (\ ) :ref:`🔗<class_Object_signal_script_changed>`
 
-Emitted when the object's script is changed.
+该对象的脚本发生改变时发出。
 
-\ **Note:** When this signal is emitted, the new script is not initialized yet. If you need to access the new script, defer connections to this signal with :ref:`CONNECT_DEFERRED<class_Object_constant_CONNECT_DEFERRED>`.
+\ **注意：**\ 发出这个信号时，新脚本还没有初始化。如果你需要访问新脚本，请用 :ref:`CONNECT_DEFERRED<class_Object_constant_CONNECT_DEFERRED>` 推迟与这个信号的连接。
 
 .. rst-class:: classref-section-separator
 
@@ -228,8 +228,8 @@ Emitted when the object's script is changed.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Object_ConnectFlags:
 
@@ -243,7 +243,7 @@ enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_DEFERRED** = ``1``
 
-Deferred connections trigger their :ref:`Callable<class_Callable>`\ s on idle time (at the end of the frame), rather than instantly.
+延迟连接会在空闲时触发 :ref:`Callable<class_Callable>`\ （当前帧的末尾），不会立即触发。
 
 .. _class_Object_constant_CONNECT_PERSIST:
 
@@ -261,7 +261,7 @@ Persisting connections are stored when the object is serialized (such as when us
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_ONE_SHOT** = ``4``
 
-One-shot connections disconnect themselves after emission.
+一次性连接，会在触发后自行断开。
 
 .. _class_Object_constant_CONNECT_REFERENCE_COUNTED:
 
@@ -269,7 +269,7 @@ One-shot connections disconnect themselves after emission.
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_REFERENCE_COUNTED** = ``8``
 
-Reference-counted connections can be assigned to the same :ref:`Callable<class_Callable>` multiple times. Each disconnection decreases the internal counter. The signal fully disconnects only when the counter reaches 0.
+引用计数连接可以多次分配给同一个 :ref:`Callable<class_Callable>`\ 。每断开一次连接会让内部计数器减一。信号会在计数器变为 0 时完全断开连接。
 
 .. _class_Object_constant_CONNECT_APPEND_SOURCE_OBJECT:
 
@@ -296,8 +296,8 @@ On signal emission, the source object is automatically appended after the origin
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Object_constant_NOTIFICATION_POSTINITIALIZE:
 
@@ -305,7 +305,7 @@ Constants
 
 **NOTIFICATION_POSTINITIALIZE** = ``0`` :ref:`🔗<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`
 
-Notification received when the object is initialized, before its script is attached. Used internally.
+该对象初始化时收到的通知，发生在附加脚本之前。内部使用。
 
 .. _class_Object_constant_NOTIFICATION_PREDELETE:
 
@@ -313,9 +313,9 @@ Notification received when the object is initialized, before its script is attac
 
 **NOTIFICATION_PREDELETE** = ``1`` :ref:`🔗<class_Object_constant_NOTIFICATION_PREDELETE>`
 
-Notification received when the object is about to be deleted. Can be used like destructors in object-oriented programming languages.
+该对象即将被删除时收到的通知。可以用作面向对象编程语言中的析构函数。
 
-This notification is sent in reversed order.
+该通知会以反向顺序发送。
 
 .. _class_Object_constant_NOTIFICATION_EXTENSION_RELOADED:
 
@@ -323,7 +323,7 @@ This notification is sent in reversed order.
 
 **NOTIFICATION_EXTENSION_RELOADED** = ``2`` :ref:`🔗<class_Object_constant_NOTIFICATION_EXTENSION_RELOADED>`
 
-Notification received when the object finishes hot reloading. This notification is only sent for extensions classes and derived.
+当对象完成热重加载时收到的通知。该通知仅针对扩展类和派生类发送。
 
 .. rst-class:: classref-section-separator
 
@@ -331,8 +331,8 @@ Notification received when the object finishes hot reloading. This notification 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Object_private_method__get:
 
@@ -340,11 +340,11 @@ Method Descriptions
 
 :ref:`Variant<class_Variant>` **_get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__get>`
 
-Override this method to customize the behavior of :ref:`get()<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+覆盖该方法以自定义 :ref:`get()<class_Object_method_get>` 的行为。应该返回给定的 ``property`` 的值，或者 ``property`` 应该被正常处理时返回 ``null``\ 。
 
-Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+结合 :ref:`_set()<class_Object_private_method__set>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。
 
-\ **Note:** This method is not called when getting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **注意：**\ 获取对象的内置属性时不会调用该方法，包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性。
 
 
 .. tabs::
@@ -353,7 +353,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
     func _get(property):
         if property == "fake_property":
-            print("Getting my property!")
+            print("正在获取我的属性！")
             return 4
 
     func _get_property_list():
@@ -367,7 +367,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
     {
         if (property == "FakeProperty")
         {
-            GD.Print("Getting my property!");
+            GD.Print("正在获取我的属性！");
             return 4;
         }
         return default;
@@ -387,7 +387,7 @@ Combined with :ref:`_set()<class_Object_private_method__set>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **注意：** 和其他虚拟方法不同，每一个被脚本覆盖了的该方法都会被自动调用。这意味着基础实现不应该用 GDScript 中的 ``super`` 或者其他语言中的同等构造来调用。最底层子类的该方法会首先被调用，接着是沿类层次结构向上依次调用。调用链会在第一个返回了非 ``null`` 值的类停止。
 
 .. rst-class:: classref-item-separator
 
@@ -529,9 +529,9 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 |void| **_init**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__init>`
 
-Called when the object's script is instantiated, oftentimes after the object is initialized in memory (through ``Object.new()`` in GDScript, or ``new GodotObject`` in C#). It can be also defined to take in parameters. This method is similar to a constructor in most programming languages.
+实例化对象的脚本时调用，通常是在对象在内存中初始化之后（通过 GDScript 中的 ``Object.new()`` 或 C# 中的 ``new GodotObject``\ ）。也可以将其定义为接受参数的形式。该方法类似于大多数编程语言中的构造函数。
 
-\ **Note:** If :ref:`_init()<class_Object_private_method__init>` is defined with *required* parameters, the Object with script may only be created directly. If any other means (such as :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` or :ref:`Node.duplicate()<class_Node_method_duplicate>`) are used, the script's initialization will fail.
+\ **注意：**\ 如果为 :ref:`_init()<class_Object_private_method__init>` 定义了\ *必填的*\ 参数，则带脚本的 Object 只能直接创建。使用任何其他方式（例如 :ref:`PackedScene.instantiate()<class_PackedScene_method_instantiate>` 或 :ref:`Node.duplicate()<class_Node_method_duplicate>`\ ）创建时，该脚本的初始化都将失败。
 
 .. rst-class:: classref-item-separator
 
@@ -543,9 +543,9 @@ Called when the object's script is instantiated, oftentimes after the object is 
 
 :ref:`Variant<class_Variant>` **_iter_get**\ (\ iter\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_get>`
 
-Returns the current iterable value. ``iter`` stores the iteration state, but unlike :ref:`_iter_init()<class_Object_private_method__iter_init>` and :ref:`_iter_next()<class_Object_private_method__iter_next>` the state is supposed to be read-only, so there is no :ref:`Array<class_Array>` wrapper.
+返回当前的可迭代值。\ ``iter`` 存储迭代状态，但与 :ref:`_iter_init()<class_Object_private_method__iter_init>` 和 :ref:`_iter_next()<class_Object_private_method__iter_next>` 不同，此处的状态只读，因此不使用 :ref:`Array<class_Array>` 封装。
 
-\ **Tip:** In GDScript, you can use a subtype of :ref:`Variant<class_Variant>` as the return type for :ref:`_iter_get()<class_Object_private_method__iter_get>`. The specified type will be used to set the type of the iterator variable in ``for`` loops, enhancing type safety.
+\ **贴士：**\ 在 GDScript 中，你可以使用 :ref:`Variant<class_Variant>` 子类型作为 :ref:`_iter_get()<class_Object_private_method__iter_get>` 的返回类型。该类型会用来设置 ``for`` 循环中迭代器变量的类型，提升类型安全。
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ Returns the current iterable value. ``iter`` stores the iteration state, but unl
 
 :ref:`bool<class_bool>` **_iter_init**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_init>`
 
-Initializes the iterator. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns ``true`` so long as the iterator has not reached the end.
+初始化迭代器。\ ``iter`` 存储迭代状态。由于 GDScript 不支持按引用传递参数，这里使用单个元素的数组作为包装器。只要迭代器尚未到达末尾就会返回 ``true``\ 。
 
 ::
 
@@ -584,9 +584,9 @@ Initializes the iterator. ``iter`` stores the iteration state. Since GDScript do
     func _ready():
         var my_range = MyRange.new(2, 5)
         for x in my_range:
-            print(x) # Prints 2, 3, 4.
+            print(x) # 输出 2, 3, 4.
 
-\ **Note:** Alternatively, you can ignore ``iter`` and use the object's state instead, see `online docs <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__ for an example. Note that in this case you will not be able to reuse the same iterator instance in nested loops. Also, make sure you reset the iterator state in this method if you want to reuse the same instance multiple times.
+\ **注意：**\ 你也可以忽略 ``iter``\ ，直接使用对象的状态，示例见\ `在线文档 <../tutorials/scripting/gdscript/gdscript_advanced.html#custom-iterators>`__\ 。请注意，这种情况下无法在嵌套循环中重用相同的迭代器实例。此外，如果想要多次重用相同的实例，请确保在该方法中重置迭代器状态。
 
 .. rst-class:: classref-item-separator
 
@@ -598,7 +598,7 @@ Initializes the iterator. ``iter`` stores the iteration state. Since GDScript do
 
 :ref:`bool<class_bool>` **_iter_next**\ (\ iter\: :ref:`Array<class_Array>`\ ) |virtual| :ref:`🔗<class_Object_private_method__iter_next>`
 
-Moves the iterator to the next iteration. ``iter`` stores the iteration state. Since GDScript does not support passing arguments by reference, a single-element array is used as a wrapper. Returns ``true`` so long as the iterator has not reached the end.
+将迭代器移动到下一次迭代。\ ``iter`` 存储迭代状态。由于 GDScript 不支持按引用传递参数，这里使用单元素数组作为包装器。只要迭代器尚未到达末尾就会返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -679,11 +679,11 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`bool<class_bool>` **_set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__set>`
 
-Override this method to customize the behavior of :ref:`set()<class_Object_method_set>`. Should set the ``property`` to ``value`` and return ``true``, or ``false`` if the ``property`` should be handled normally. The *exact* way to set the ``property`` is up to this method's implementation.
+覆盖该方法以自定义 :ref:`set()<class_Object_method_set>` 的行为。应将 ``property`` 设置为 ``value`` 并返回 ``true``\ ，如果 ``property`` 正常处理则返回 ``false``\ 。设置 ``property`` 的\ *确切*\ 方式取决于该方法的实现。
 
-Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+结合 :ref:`_get()<class_Object_private_method__get>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。
 
-\ **Note:** This method is not called when setting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **注意：**\ 设置对象的内置属性时不会调用该方法，包括使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 定义的属性。
 
 
 .. tabs::
@@ -694,7 +694,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
     func _set(property, value):
         if property == "fake_property":
-            # Storing the value in the fake property.
+            # 在冒牌属性中存值。
             internal_data["fake_property"] = value
             return true
         return false
@@ -712,7 +712,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
     {
         if (property == "FakeProperty")
         {
-            // Storing the value in the fake property.
+            // 在冒牌属性中存值。
             _internalData["FakeProperty"] = value;
             return true;
         }
@@ -734,7 +734,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **注意：** 和其他虚拟方法不同，每一个被脚本覆盖了的该方法都会被自动调用。这意味着基础实现不应该用 GDScript 中的 ``super`` 或者其他语言中的同等构造来调用。最底层子类的该方法会首先被调用，接着是沿类层次结构向上依次调用。调用链会在第一个返回了 ``true`` 的类停止。
 
 .. rst-class:: classref-item-separator
 
@@ -746,16 +746,16 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
 :ref:`String<class_String>` **_to_string**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__to_string>`
 
-Override this method to customize the return value of :ref:`to_string()<class_Object_method_to_string>`, and therefore the object's representation as a :ref:`String<class_String>`.
+覆盖该方法以自定义 :ref:`to_string()<class_Object_method_to_string>` 的返回值，将对象表示为 :ref:`String<class_String>`\ 。
 
 ::
 
     func _to_string():
-        return "Welcome to Godot 4!"
+        return "欢迎来到 Godot 4！"
 
     func _init():
-        print(self)       # Prints "Welcome to Godot 4!"
-        var a = str(self) # a is "Welcome to Godot 4!"
+        print(self)       # 输出“欢迎来到 Godot 4！”
+        var a = str(self) # a 是“欢迎来到 Godot 4！”
 
 .. rst-class:: classref-item-separator
 
@@ -767,7 +767,7 @@ Override this method to customize the return value of :ref:`to_string()<class_Ob
 
 |void| **_validate_property**\ (\ property\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| :ref:`🔗<class_Object_private_method__validate_property>`
 
-Override this method to customize existing properties. Every property info goes through this method, except properties added with :ref:`_get_property_list()<class_Object_private_method__get_property_list>`. The dictionary contents is the same as in :ref:`_get_property_list()<class_Object_private_method__get_property_list>`.
+覆盖该方法以自定义已有属性。除了使用 :ref:`_get_property_list()<class_Object_private_method__get_property_list>` 添加的属性之外，每个属性信息都经过该方法。字典内容与 :ref:`_get_property_list()<class_Object_private_method__get_property_list>` 中的相同。
 
 
 .. tabs::
@@ -830,7 +830,7 @@ Override this method to customize existing properties. Every property info goes 
 
 |void| **add_user_signal**\ (\ signal\: :ref:`String<class_String>`, arguments\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_Object_method_add_user_signal>`
 
-Adds a user-defined signal named ``signal``. Optional arguments for the signal can be added as an :ref:`Array<class_Array>` of dictionaries, each defining a ``name`` :ref:`String<class_String>` and a ``type`` :ref:`int<class_int>` (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`). See also :ref:`has_user_signal()<class_Object_method_has_user_signal>` and :ref:`remove_user_signal()<class_Object_method_remove_user_signal>`.
+添加名为 ``signal`` 的用户定义的信号。信号的参数是可选的，以字典的 :ref:`Array<class_Array>` 形式添加，字典中定义名称 ``name`` :ref:`String<class_String>`\ ，类型 ``type`` :ref:`int<class_int>`\ （见 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）。另见 :ref:`has_user_signal()<class_Object_method_has_user_signal>` 和 :ref:`remove_user_signal()<class_Object_method_remove_user_signal>`\ 。
 
 
 .. tabs::
@@ -870,7 +870,7 @@ Adds a user-defined signal named ``signal``. Optional arguments for the signal c
 
 :ref:`Variant<class_Variant>` **call**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_call>`
 
-Calls the ``method`` on the object and returns the result. This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
+在对象上调用 ``method`` 并返回结果。该方法支持可变数量的参数，因此参数可以作为逗号分隔的列表传递。
 
 
 .. tabs::
@@ -887,7 +887,7 @@ Calls the ``method`` on the object and returns the result. This method supports 
 
 
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，在引用 Godot 内置方法时，\ ``method`` 必须为 snake_case 格式。最好使用 ``MethodName`` 类中公开的名称，以避免在每次调用时分配新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -947,7 +947,7 @@ See also :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
 
 :ref:`Variant<class_Variant>` **callv**\ (\ method\: :ref:`StringName<class_StringName>`, arg_array\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Object_method_callv>`
 
-Calls the ``method`` on the object and returns the result. Unlike :ref:`call()<class_Object_method_call>`, this method expects all parameters to be contained inside ``arg_array``.
+在对象上调用 ``method`` 并返回结果。与 :ref:`call()<class_Object_method_call>` 不同，该方法期望所有参数都包含在 ``arg_array`` 中。
 
 
 .. tabs::
@@ -964,7 +964,7 @@ Calls the ``method`` on the object and returns the result. Unlike :ref:`call()<c
 
 
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，\ ``method`` 在引用 Godot 内置方法时必须是 snake_case。最好使用 ``MethodName`` 类中公开的名称，以避免在每次调用时分配新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -976,7 +976,7 @@ Calls the ``method`` on the object and returns the result. Unlike :ref:`call()<c
 
 :ref:`bool<class_bool>` **can_translate_messages**\ (\ ) |const| :ref:`🔗<class_Object_method_can_translate_messages>`
 
-Returns ``true`` if the object is allowed to translate messages with :ref:`tr()<class_Object_method_tr>` and :ref:`tr_n()<class_Object_method_tr_n>`. See also :ref:`set_message_translation()<class_Object_method_set_message_translation>`.
+如果允许该对象使用 :ref:`tr()<class_Object_method_tr>` 和 :ref:`tr_n()<class_Object_method_tr_n>` 翻译消息，则返回 ``true``\ 。另见 :ref:`set_message_translation()<class_Object_method_set_message_translation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -988,7 +988,7 @@ Returns ``true`` if the object is allowed to translate messages with :ref:`tr()<
 
 |void| **cancel_free**\ (\ ) :ref:`🔗<class_Object_method_cancel_free>`
 
-If this method is called during :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`, this object will reject being freed and will remain allocated. This is mostly an internal function used for error handling to avoid the user from freeing objects when they are not intended to.
+如果在 :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>` 时调用该方法，则该对象拒绝释放，仍会保持已分配的状态。主要是作为内部函数使用，用于错误处理，避免用户释放不想释放的对象。
 
 .. rst-class:: classref-item-separator
 
@@ -1020,7 +1020,7 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 |void| **disconnect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Object_method_disconnect>`
 
-Disconnects a ``signal`` by name from a given ``callable``. If the connection does not exist, generates an error. Use :ref:`is_connected()<class_Object_method_is_connected>` to make sure that the connection exists.
+按名称从给定的 ``callable`` 断开 ``signal``\ 。如果连接不存在，则生成一个错误。使用 :ref:`is_connected()<class_Object_method_is_connected>` 确保该连接存在。
 
 .. rst-class:: classref-item-separator
 
@@ -1032,26 +1032,26 @@ Disconnects a ``signal`` by name from a given ``callable``. If the connection do
 
 :ref:`Error<enum_@GlobalScope_Error>` **emit_signal**\ (\ signal\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_emit_signal>`
 
-Emits the given ``signal`` by name. The signal must exist, so it should be a built-in signal of this class or one of its inherited classes, or a user-defined signal (see :ref:`add_user_signal()<class_Object_method_add_user_signal>`). This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
+按名称发出给定的 ``signal``\ 。该信号必须存在，所以它应该是该类或其继承类之一的内置信号，或者是用户定义的信号（参见 :ref:`add_user_signal()<class_Object_method_add_user_signal>`\ ）。该方法支持可变数量的参数，所以参数可以以逗号分隔的列表形式传递。
 
-Returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` if ``signal`` does not exist or the parameters are invalid.
+如果 ``signal`` 不存在或参数无效，则返回 :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    emit_signal("hit", "sword", 100)
+    emit_signal("hit", "剑", 100)
     emit_signal("game_over")
 
  .. code-tab:: csharp
 
-    EmitSignal(SignalName.Hit, "sword", 100);
+    EmitSignal(SignalName.Hit, "剑", 100);
     EmitSignal(SignalName.GameOver);
 
 
 
-\ **Note:** In C#, ``signal`` must be in snake_case when referring to built-in Godot signals. Prefer using the names exposed in the ``SignalName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在C#中，在引用内置 Godot 信号时，\ ``signal`` 必须是 snake_case。最好使用 ``SignalName`` 类中公开的名称，以避免在每次调用时分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1063,7 @@ Returns :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVA
 
 |void| **free**\ (\ ) :ref:`🔗<class_Object_method_free>`
 
-Deletes the object from memory. Pre-existing references to the object become invalid, and any attempt to access them will result in a runtime error. Checking the references with :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` will return ``false``. This is equivalent to the ``memdelete`` function in GDExtension C++.
+从内存中删除该对象。此前存在的对该对象的引用会失效，尝试访问这些引用会产生运行时错误。使用 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` 检查引用时将返回 ``false``\ 。等价于 GDExtension C++ 中的 ``memdelete`` 函数。
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ Deletes the object from memory. Pre-existing references to the object become inv
 
 :ref:`Variant<class_Variant>` **get**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_get>`
 
-Returns the :ref:`Variant<class_Variant>` value of the given ``property``. If the ``property`` does not exist, this method returns ``null``.
+返回给定 ``property`` 的 :ref:`Variant<class_Variant>` 值。如果 ``property`` 不存在，则该方法返回 ``null``\ 。
 
 
 .. tabs::
@@ -1084,17 +1084,17 @@ Returns the :ref:`Variant<class_Variant>` value of the given ``property``. If th
 
     var node = Node2D.new()
     node.rotation = 1.5
-    var a = node.get("rotation") # a is 1.5
+    var a = node.get("rotation") # a 为 1.5
 
  .. code-tab:: csharp
 
     var node = new Node2D();
     node.Rotation = 1.5f;
-    var a = node.Get(Node2D.PropertyName.Rotation); // a is 1.5
+    var a = node.Get(Node2D.PropertyName.Rotation); // a 为 1.5
 
 
 
-\ **Note:** In C#, ``property`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，在引用 Godot 内置属性时，\ ``property`` 必须是 snake_case。最好使用 ``PropertyName`` 类中公开的名称，以避免在每次调用时分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1106,9 +1106,9 @@ Returns the :ref:`Variant<class_Variant>` value of the given ``property``. If th
 
 :ref:`String<class_String>` **get_class**\ (\ ) |const| :ref:`🔗<class_Object_method_get_class>`
 
-Returns the object's built-in class name, as a :ref:`String<class_String>`. See also :ref:`is_class()<class_Object_method_is_class>`.
+返回该对象的内置类名，作为一个 :ref:`String<class_String>`\ 。另见 :ref:`is_class()<class_Object_method_is_class>`\ 。
 
-\ **Note:** This method ignores ``class_name`` declarations. If this object's script has defined a ``class_name``, the base, built-in class name is returned instead.
+\ **注意：**\ 该方法将忽略 ``class_name`` 声明。如果该对象的脚本定义了一个 ``class_name``\ ，则改为返回内置基类名称。
 
 .. rst-class:: classref-item-separator
 
@@ -1120,13 +1120,13 @@ Returns the object's built-in class name, as a :ref:`String<class_String>`. See 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_incoming_connections**\ (\ ) |const| :ref:`🔗<class_Object_method_get_incoming_connections>`
 
-Returns an :ref:`Array<class_Array>` of signal connections received by this object. Each connection is represented as a :ref:`Dictionary<class_Dictionary>` that contains three entries:
+返回该对象接收到的信号连接的 :ref:`Array<class_Array>`\ 。每个连接都被表示为包含三个条目的 :ref:`Dictionary<class_Dictionary>`\ ：
 
-- ``signal`` is a reference to the :ref:`Signal<class_Signal>`;
+- ``signal`` 是对 :ref:`Signal<class_Signal>` 的引用；
 
-- ``callable`` is a reference to the :ref:`Callable<class_Callable>`;
+- ``callable`` 是对 :ref:`Callable<class_Callable>` 的引用；
 
-- ``flags`` is a combination of :ref:`ConnectFlags<enum_Object_ConnectFlags>`.
+- ``flags`` 是 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 的组合。
 
 .. rst-class:: classref-item-separator
 
@@ -1138,9 +1138,9 @@ Returns an :ref:`Array<class_Array>` of signal connections received by this obje
 
 :ref:`Variant<class_Variant>` **get_indexed**\ (\ property_path\: :ref:`NodePath<class_NodePath>`\ ) |const| :ref:`🔗<class_Object_method_get_indexed>`
 
-Gets the object's property indexed by the given ``property_path``. The path should be a :ref:`NodePath<class_NodePath>` relative to the current object and can use the colon character (``:``) to access nested properties.
+获取该对象的某个属性，该属性的属性路径由 ``property_path`` 给出。该路径应该是相对于当前对象的 :ref:`NodePath<class_NodePath>`\ ，可使用英文冒号（\ ``:``\ ）访问内嵌属性。
 
-\ **Examples:** ``"position:x"`` or ``"material:next_pass:blend_mode"``.
+\ **示例：**\ ``"position:x"`` 或 ``"material:next_pass:blend_mode"``\ 。
 
 
 .. tabs::
@@ -1149,21 +1149,21 @@ Gets the object's property indexed by the given ``property_path``. The path shou
 
     var node = Node2D.new()
     node.position = Vector2(5, -10)
-    var a = node.get_indexed("position")   # a is Vector2(5, -10)
-    var b = node.get_indexed("position:y") # b is -10
+    var a = node.get_indexed("position")   # a 为 Vector2(5, -10)
+    var b = node.get_indexed("position:y") # b 为 -10
 
  .. code-tab:: csharp
 
     var node = new Node2D();
     node.Position = new Vector2(5, -10);
-    var a = node.GetIndexed("position");   // a is Vector2(5, -10)
-    var b = node.GetIndexed("position:y"); // b is -10
+    var a = node.GetIndexed("position");   // a 为 Vector2(5, -10)
+    var b = node.GetIndexed("position:y"); // b 为 -10
 
 
 
-\ **Note:** In C#, ``property_path`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中引用内置 Godot 属性时 ``property_path`` 必须为 snake_case 蛇形大小写。请优先使用 ``PropertyName`` 类中暴露的名称，避免每次调用都重新分配一个 :ref:`StringName<class_StringName>`\ 。
 
-\ **Note:** This method does not support actual paths to nodes in the :ref:`SceneTree<class_SceneTree>`, only sub-property paths. In the context of nodes, use :ref:`Node.get_node_and_resource()<class_Node_method_get_node_and_resource>` instead.
+\ **注意：**\ 这个方法不支持指向 :ref:`SceneTree<class_SceneTree>` 中节点的路径，仅支持子属性路径。在节点语境下，请改用 :ref:`Node.get_node_and_resource()<class_Node_method_get_node_and_resource>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1175,9 +1175,9 @@ Gets the object's property indexed by the given ``property_path``. The path shou
 
 :ref:`int<class_int>` **get_instance_id**\ (\ ) |const| :ref:`🔗<class_Object_method_get_instance_id>`
 
-Returns the object's unique instance ID. This ID can be saved in :ref:`EncodedObjectAsID<class_EncodedObjectAsID>`, and can be used to retrieve this object instance with :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>`.
+返回该对象的唯一实例 ID。该 ID 可以保存在 :ref:`EncodedObjectAsID<class_EncodedObjectAsID>` 中，通过 :ref:`@GlobalScope.instance_from_id()<class_@GlobalScope_method_instance_from_id>` 可以检索到对应的对象实例。
 
-\ **Note:** This ID is only useful during the current session. It won't correspond to a similar object if the ID is sent over a network, or loaded from a file at a later time.
+\ **注意：**\ 该 ID 仅在当前会话中有意义：通过网络传输后并不对应相同的对象，隔段时间后从文件中加载亦然。
 
 .. rst-class:: classref-item-separator
 
@@ -1189,11 +1189,11 @@ Returns the object's unique instance ID. This ID can be saved in :ref:`EncodedOb
 
 :ref:`Variant<class_Variant>` **get_meta**\ (\ name\: :ref:`StringName<class_StringName>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Object_method_get_meta>`
 
-Returns the object's metadata value for the given entry ``name``. If the entry does not exist, returns ``default``. If ``default`` is ``null``, an error is also generated.
+返回该对象的元数据中名称为 ``name`` 的条目。如果不存在该条目，则返回 ``default``\ 。如果 ``default`` 为 ``null``\ ，则还会生成错误。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1205,7 +1205,7 @@ Returns the object's metadata value for the given entry ``name``. If the entry d
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_meta_list**\ (\ ) |const| :ref:`🔗<class_Object_method_get_meta_list>`
 
-Returns the object's metadata entry names as an :ref:`Array<class_Array>` of :ref:`StringName<class_StringName>`\ s.
+将该对象的元数据条目名称以元素为 :ref:`StringName<class_StringName>` 的 :ref:`Array<class_Array>` 形式返回。
 
 .. rst-class:: classref-item-separator
 
@@ -1217,9 +1217,9 @@ Returns the object's metadata entry names as an :ref:`Array<class_Array>` of :re
 
 :ref:`int<class_int>` **get_method_argument_count**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_get_method_argument_count>`
 
-Returns the number of arguments of the given ``method`` by name.
+根据名称返回给定 ``method`` 的参数数量。
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中引用内置 Godot 方法时，\ ``method`` 必须采用 snake_case 蛇形命名法。请优先使用 ``MethodName`` 类中公开的名称，以避免在每次调用时分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1231,21 +1231,21 @@ Returns the number of arguments of the given ``method`` by name.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_method_list**\ (\ ) |const| :ref:`🔗<class_Object_method_get_method_list>`
 
-Returns this object's methods and their signatures as an :ref:`Array<class_Array>` of dictionaries. Each :ref:`Dictionary<class_Dictionary>` contains the following entries:
+将该对象的方法及对应签名作为字典 :ref:`Array<class_Array>` 返回。每个 :ref:`Dictionary<class_Dictionary>` 包含以下条目：
 
-- ``name`` is the name of the method, as a :ref:`String<class_String>`;
+-``name`` 是该方法的名称，为 :ref:`String<class_String>`\ ；
 
-- ``args`` is an :ref:`Array<class_Array>` of dictionaries representing the arguments;
+-``args`` 是代表参数的字典 :ref:`Array<class_Array>`\ ；
 
-- ``default_args`` is the default arguments as an :ref:`Array<class_Array>` of variants;
+-``default_args`` 是默认参数，为变体 :ref:`Array<class_Array>`\ ；
 
-- ``flags`` is a combination of :ref:`MethodFlags<enum_@GlobalScope_MethodFlags>`;
+-``flags`` 是 :ref:`MethodFlags<enum_@GlobalScope_MethodFlags>` 的组合；
 
-- ``id`` is the method's internal identifier :ref:`int<class_int>`;
+-``id`` 是该方法的内部标识符 :ref:`int<class_int>`\ ；
 
-- ``return`` is the returned value, as a :ref:`Dictionary<class_Dictionary>`;
+-``return`` 是返回值，为 :ref:`Dictionary<class_Dictionary>`\ ；
 
-\ **Note:** The dictionaries of ``args`` and ``return`` are formatted identically to the results of :ref:`get_property_list()<class_Object_method_get_property_list>`, although not all entries are used.
+\ **注意：**\ ``args`` 和 ``return`` 的字典格式与 :ref:`get_property_list()<class_Object_method_get_property_list>` 的结果相同，但不会用到所有条目。
 
 .. rst-class:: classref-item-separator
 
@@ -1257,21 +1257,21 @@ Returns this object's methods and their signatures as an :ref:`Array<class_Array
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_property_list**\ (\ ) |const| :ref:`🔗<class_Object_method_get_property_list>`
 
-Returns the object's property list as an :ref:`Array<class_Array>` of dictionaries. Each :ref:`Dictionary<class_Dictionary>` contains the following entries:
+以字典 :ref:`Array<class_Array>` 的形式返回该对象的属性列表。每个 :ref:`Dictionary<class_Dictionary>` 中都包含如下条目：
 
-- ``name`` is the property's name, as a :ref:`String<class_String>`;
+- ``name`` 是该属性的名称，类型为 :ref:`String<class_String>`\ ；
 
-- ``class_name`` is an empty :ref:`StringName<class_StringName>`, unless the property is :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>` and it inherits from a class;
+- ``class_name`` 为空 :ref:`StringName<class_StringName>`\ ，除非该属性为 :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>` 并继承自某个类；
 
-- ``type`` is the property's type, as an :ref:`int<class_int>` (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`);
+- ``type`` 是该属性的类型，类型为 :ref:`int<class_int>`\ （见 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）；
 
-- ``hint`` is *how* the property is meant to be edited (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`);
+- ``hint`` 是应当\ *如何*\ 编辑该属性（见 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`\ ）；
 
-- ``hint_string`` depends on the hint (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`);
+- ``hint_string`` 取决于 hint（见 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`\ ）；
 
-- ``usage`` is a combination of :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`.
+- ``usage`` 是 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` 的组合。
 
-\ **Note:** In GDScript, all class members are treated as properties. In C# and GDExtension, it may be necessary to explicitly mark class members as Godot properties using decorators or attributes.
+\ **注意：**\ 在 GDScript 中，类的所有成员都被视为属性。在 C# 和 GDExtension 中，则需要使用装饰器或特性将类的成员显式标记为 Godot 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -1283,7 +1283,7 @@ Returns the object's property list as an :ref:`Array<class_Array>` of dictionari
 
 :ref:`Variant<class_Variant>` **get_script**\ (\ ) |const| :ref:`🔗<class_Object_method_get_script>`
 
-Returns the object's :ref:`Script<class_Script>` instance, or ``null`` if no script is attached.
+返回该对象的 :ref:`Script<class_Script>` 实例，如果没有附加脚本，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1295,13 +1295,13 @@ Returns the object's :ref:`Script<class_Script>` instance, or ``null`` if no scr
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_signal_connection_list**\ (\ signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_get_signal_connection_list>`
 
-Returns an :ref:`Array<class_Array>` of connections for the given ``signal`` name. Each connection is represented as a :ref:`Dictionary<class_Dictionary>` that contains three entries:
+返回给定 ``signal`` 名称的连接的 :ref:`Array<class_Array>`\ 。每个连接都被表示为包含三个条目的 :ref:`Dictionary<class_Dictionary>`\ ：
 
-- ``signal`` is a reference to the :ref:`Signal<class_Signal>`;
+- ``signal`` 是对 :ref:`Signal<class_Signal>` 的引用；
 
-- ``callable`` is a reference to the connected :ref:`Callable<class_Callable>`;
+- ``callable`` 是对已连接 :ref:`Callable<class_Callable>` 的引用；
 
-- ``flags`` is a combination of :ref:`ConnectFlags<enum_Object_ConnectFlags>`.
+- ``flags`` 是 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 的组合。
 
 .. rst-class:: classref-item-separator
 
@@ -1327,7 +1327,7 @@ Returns the list of existing signals as an :ref:`Array<class_Array>` of dictiona
 
 :ref:`StringName<class_StringName>` **get_translation_domain**\ (\ ) |const| :ref:`🔗<class_Object_method_get_translation_domain>`
 
-Returns the name of the translation domain used by :ref:`tr()<class_Object_method_tr>` and :ref:`tr_n()<class_Object_method_tr_n>`. See also :ref:`TranslationServer<class_TranslationServer>`.
+返回 :ref:`tr()<class_Object_method_tr>` 和 :ref:`tr_n()<class_Object_method_tr_n>` 所使用的翻译域的名称。另见 :ref:`TranslationServer<class_TranslationServer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1339,9 +1339,9 @@ Returns the name of the translation domain used by :ref:`tr()<class_Object_metho
 
 :ref:`bool<class_bool>` **has_connections**\ (\ signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_connections>`
 
-Returns ``true`` if any connection exists on the given ``signal`` name.
+如果给定的信号名称 ``signal`` 存在连接，则返回 ``true``\ 。
 
-\ **Note:** In C#, ``signal`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``SignalName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，引用 Godot 内置方法时 ``signal`` 必须使用 snake_case 形式命名。请优先使用 ``SignalName`` 类中暴露的名称，避免每次调用都分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1353,11 +1353,11 @@ Returns ``true`` if any connection exists on the given ``signal`` name.
 
 :ref:`bool<class_bool>` **has_meta**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_meta>`
 
-Returns ``true`` if a metadata entry is found with the given ``name``. See also :ref:`get_meta()<class_Object_method_get_meta>`, :ref:`set_meta()<class_Object_method_set_meta>` and :ref:`remove_meta()<class_Object_method_remove_meta>`.
+如果找到名称为 ``name`` 的元数据条目，则返回 ``true``\ 。另见 :ref:`get_meta()<class_Object_method_get_meta>`\ 、\ :ref:`set_meta()<class_Object_method_set_meta>` 和 :ref:`remove_meta()<class_Object_method_remove_meta>`\ 。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1369,9 +1369,9 @@ Returns ``true`` if a metadata entry is found with the given ``name``. See also 
 
 :ref:`bool<class_bool>` **has_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object.
+如果该对象中存在给定的方法名 ``method``\ ，则返回 ``true``\ 。
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中引用内置 Godot 方法时 ``method`` 必须为 snake_case 蛇形大小写。请优先使用 ``MethodName`` 类中暴露的名称，避免每次调用都重新分配一个 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1383,9 +1383,9 @@ Returns ``true`` if the given ``method`` name exists in the object.
 
 :ref:`bool<class_bool>` **has_signal**\ (\ signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_signal>`
 
-Returns ``true`` if the given ``signal`` name exists in the object.
+如果对象中存在给定的信号名称 ``signal``\ ，则返回 ``true``\ 。
 
-\ **Note:** In C#, ``signal`` must be in snake_case when referring to built-in Godot signals. Prefer using the names exposed in the ``SignalName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，引用 Godot 内置方法时 ``signal`` 必须使用 snake_case 形式命名。请优先使用 ``SignalName`` 类中暴露的名称，避免每次调用都分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1397,7 +1397,7 @@ Returns ``true`` if the given ``signal`` name exists in the object.
 
 :ref:`bool<class_bool>` **has_user_signal**\ (\ signal\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_has_user_signal>`
 
-Returns ``true`` if the given user-defined ``signal`` name exists. Only signals added with :ref:`add_user_signal()<class_Object_method_add_user_signal>` are included. See also :ref:`remove_user_signal()<class_Object_method_remove_user_signal>`.
+如果存在给定的用户定义信号名称 ``signal``\ ，则返回 ``true``\ 。仅包含通过 :ref:`add_user_signal()<class_Object_method_add_user_signal>` 添加的信号。另见 :ref:`remove_user_signal()<class_Object_method_remove_user_signal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1409,7 +1409,7 @@ Returns ``true`` if the given user-defined ``signal`` name exists. Only signals 
 
 :ref:`bool<class_bool>` **is_blocking_signals**\ (\ ) |const| :ref:`🔗<class_Object_method_is_blocking_signals>`
 
-Returns ``true`` if the object is blocking its signals from being emitted. See :ref:`set_block_signals()<class_Object_method_set_block_signals>`.
+如果该对象正在阻止发出信号，则返回 ``true``\ 。见 :ref:`set_block_signals()<class_Object_method_set_block_signals>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1421,7 +1421,7 @@ Returns ``true`` if the object is blocking its signals from being emitted. See :
 
 :ref:`bool<class_bool>` **is_class**\ (\ class\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_Object_method_is_class>`
 
-Returns ``true`` if the object inherits from the given ``class``. See also :ref:`get_class()<class_Object_method_get_class>`.
+如果该对象继承自给定的 ``class`` 则返回 ``true``\ 。另见 :ref:`get_class()<class_Object_method_get_class>`\ 。
 
 
 .. tabs::
@@ -1429,20 +1429,20 @@ Returns ``true`` if the object inherits from the given ``class``. See also :ref:
  .. code-tab:: gdscript
 
     var sprite2d = Sprite2D.new()
-    sprite2d.is_class("Sprite2D") # Returns true
-    sprite2d.is_class("Node")     # Returns true
-    sprite2d.is_class("Node3D")   # Returns false
+    sprite2d.is_class("Sprite2D") # 返回 true
+    sprite2d.is_class("Node")     # 返回 true
+    sprite2d.is_class("Node3D")   # 返回 false
 
  .. code-tab:: csharp
 
     var sprite2D = new Sprite2D();
-    sprite2D.IsClass("Sprite2D"); // Returns true
-    sprite2D.IsClass("Node");     // Returns true
-    sprite2D.IsClass("Node3D");   // Returns false
+    sprite2D.IsClass("Sprite2D"); // 返回 true
+    sprite2D.IsClass("Node");     // 返回 true
+    sprite2D.IsClass("Node3D");   // 返回 false
 
 
 
-\ **Note:** This method ignores ``class_name`` declarations in the object's script.
+\ **注意：**\ 此方法忽略对象脚本中的 ``class_name`` 声明。
 
 .. rst-class:: classref-item-separator
 
@@ -1454,9 +1454,9 @@ Returns ``true`` if the object inherits from the given ``class``. See also :ref:
 
 :ref:`bool<class_bool>` **is_connected**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Object_method_is_connected>`
 
-Returns ``true`` if a connection exists between the given ``signal`` name and ``callable``.
+如果给定的信号名称 ``signal`` 与可调用体 ``callable`` 之间存在连接，则返回 ``true``\ 。
 
-\ **Note:** In C#, ``signal`` must be in snake_case when referring to built-in Godot signals. Prefer using the names exposed in the ``SignalName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，引用 Godot 内置方法时 ``signal`` 必须使用 snake_case 形式命名。请优先使用 ``SignalName`` 类中暴露的名称，避免每次调用都分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1468,7 +1468,7 @@ Returns ``true`` if a connection exists between the given ``signal`` name and ``
 
 :ref:`bool<class_bool>` **is_queued_for_deletion**\ (\ ) |const| :ref:`🔗<class_Object_method_is_queued_for_deletion>`
 
-Returns ``true`` if the :ref:`Node.queue_free()<class_Node_method_queue_free>` method was called for the object.
+如果为该对象调用了 :ref:`Node.queue_free()<class_Node_method_queue_free>` 方法，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1480,9 +1480,9 @@ Returns ``true`` if the :ref:`Node.queue_free()<class_Node_method_queue_free>` m
 
 |void| **notification**\ (\ what\: :ref:`int<class_int>`, reversed\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Object_method_notification>`
 
-Sends the given ``what`` notification to all classes inherited by the object, triggering calls to :ref:`_notification()<class_Object_private_method__notification>`, starting from the highest ancestor (the **Object** class) and going down to the object's script.
+将给定的 ``what`` 通知发送给对象继承的所有类，触发对 :ref:`_notification()<class_Object_private_method__notification>` 的调用，从最高祖先（\ **Object** 类）开始，向下一直到对象的脚本。
 
-If ``reversed`` is ``true``, the call order is reversed.
+如果 ``reversed`` 为 ``true``\ ，则调用顺序会被颠倒。
 
 
 .. tabs::
@@ -1493,10 +1493,10 @@ If ``reversed`` is ``true``, the call order is reversed.
     player.set_script(load("res://player.gd"))
 
     player.notification(NOTIFICATION_ENTER_TREE)
-    # The call order is Object -> Node -> Node2D -> player.gd.
+    # 调用顺序是 Object -> Node -> Node2D -> player.gd。
 
     player.notification(NOTIFICATION_ENTER_TREE, true)
-    # The call order is player.gd -> Node2D -> Node -> Object.
+    # 调用顺序是 player.gd -> Node2D -> Node -> Object。
 
  .. code-tab:: csharp
 
@@ -1504,10 +1504,10 @@ If ``reversed`` is ``true``, the call order is reversed.
     player.SetScript(GD.Load("res://player.gd"));
 
     player.Notification(NotificationEnterTree);
-    // The call order is GodotObject -> Node -> Node2D -> player.gd.
+    // 调用顺序是 GodotObject -> Node -> Node2D -> player.gd。
 
     player.Notification(NotificationEnterTree, true);
-    // The call order is player.gd -> Node2D -> Node -> GodotObject.
+    // 调用顺序是 player.gd -> Node2D -> Node -> GodotObject。
 
 
 
@@ -1521,7 +1521,7 @@ If ``reversed`` is ``true``, the call order is reversed.
 
 |void| **notify_property_list_changed**\ (\ ) :ref:`🔗<class_Object_method_notify_property_list_changed>`
 
-Emits the :ref:`property_list_changed<class_Object_signal_property_list_changed>` signal. This is mainly used to refresh the editor, so that the Inspector and editor plugins are properly updated.
+发出 :ref:`property_list_changed<class_Object_signal_property_list_changed>` 信号。这主要是用来刷新编辑器，以让检查器和编辑器插件被正确更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1533,9 +1533,9 @@ Emits the :ref:`property_list_changed<class_Object_signal_property_list_changed>
 
 :ref:`bool<class_bool>` **property_can_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_property_can_revert>`
 
-Returns ``true`` if the given ``property`` has a custom default value. Use :ref:`property_get_revert()<class_Object_method_property_get_revert>` to get the ``property``'s default value.
+如果给定的属性 ``property`` 有自定义的默认值，则返回 ``true``\ 。请使用 :ref:`property_get_revert()<class_Object_method_property_get_revert>` 获取 ``property`` 的默认值。
 
-\ **Note:** This method is used by the Inspector dock to display a revert icon. The object must implement :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` to customize the default value. If :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` is not implemented, this method returns ``false``.
+\ **注意：**\ “检查器”面板会使用这个方法来显示恢复图标。该对象必须实现 :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` 来自定义默认值。如果未实现 :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>`\ ，则这个方法返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1547,9 +1547,9 @@ Returns ``true`` if the given ``property`` has a custom default value. Use :ref:
 
 :ref:`Variant<class_Variant>` **property_get_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Object_method_property_get_revert>`
 
-Returns the custom default value of the given ``property``. Use :ref:`property_can_revert()<class_Object_method_property_can_revert>` to check if the ``property`` has a custom default value.
+返回给定的属性 ``property`` 的自定义默认值。请使用 :ref:`property_can_revert()<class_Object_method_property_can_revert>` 检查 ``property`` 是否有自定义的默认值。
 
-\ **Note:** This method is used by the Inspector dock to display a revert icon. The object must implement :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to customize the default value. If :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` is not implemented, this method returns ``null``.
+\ **注意：**\ “检查器”面板会使用这个方法来显示恢复图标。该对象必须实现 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` 来自定义默认值。如果未实现 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>`\ ，则这个方法返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1561,11 +1561,11 @@ Returns the custom default value of the given ``property``. Use :ref:`property_c
 
 |void| **remove_meta**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Object_method_remove_meta>`
 
-Removes the given entry ``name`` from the object's metadata. See also :ref:`has_meta()<class_Object_method_has_meta>`, :ref:`get_meta()<class_Object_method_get_meta>` and :ref:`set_meta()<class_Object_method_set_meta>`.
+从对象的元数据中移除名称为 ``name`` 的条目。另见 :ref:`has_meta()<class_Object_method_has_meta>`\ 、\ :ref:`get_meta()<class_Object_method_get_meta>` 和 :ref:`set_meta()<class_Object_method_set_meta>`\ 。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1577,7 +1577,7 @@ Removes the given entry ``name`` from the object's metadata. See also :ref:`has_
 
 |void| **remove_user_signal**\ (\ signal\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Object_method_remove_user_signal>`
 
-Removes the given user signal ``signal`` from the object. See also :ref:`add_user_signal()<class_Object_method_add_user_signal>` and :ref:`has_user_signal()<class_Object_method_has_user_signal>`.
+从对象中移除给定的用户信号 ``signal``\ 。另见 :ref:`add_user_signal()<class_Object_method_add_user_signal>` 和 :ref:`has_user_signal()<class_Object_method_has_user_signal>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1589,7 +1589,7 @@ Removes the given user signal ``signal`` from the object. See also :ref:`add_use
 
 |void| **set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set>`
 
-Assigns ``value`` to the given ``property``. If the property does not exist or the given ``value``'s type doesn't match, nothing happens.
+将给定属性 ``property`` 的值分配为 ``value``\ 。如果该属性不存在，或者给定 ``value`` 的类型不匹配，则不会发生任何事情。
 
 
 .. tabs::
@@ -1598,17 +1598,17 @@ Assigns ``value`` to the given ``property``. If the property does not exist or t
 
     var node = Node2D.new()
     node.set("global_scale", Vector2(8, 2.5))
-    print(node.global_scale) # Prints (8.0, 2.5)
+    print(node.global_scale) # 输出 (8.0, 2.5)
 
  .. code-tab:: csharp
 
     var node = new Node2D();
     node.Set(Node2D.PropertyName.GlobalScale, new Vector2(8, 2.5f));
-    GD.Print(node.GlobalScale); // Prints (8, 2.5)
+    GD.Print(node.GlobalScale); // 输出 (8, 2.5)
 
 
 
-\ **Note:** In C#, ``property`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，引用 Godot 内置方法时 ``property`` 必须使用 snake_case 形式命名。请优先使用 ``PropertyName`` 类中暴露的名称，避免每次调用都分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ Assigns ``value`` to the given ``property``. If the property does not exist or t
 
 |void| **set_block_signals**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Object_method_set_block_signals>`
 
-If set to ``true``, the object becomes unable to emit signals. As such, :ref:`emit_signal()<class_Object_method_emit_signal>` and signal connections will not work, until it is set to ``false``.
+如果设置为 ``true``\ ，这该对象将无法发出信号。因此，\ :ref:`emit_signal()<class_Object_method_emit_signal>` 和信号连接将不起作用，直到该属性被设置为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1632,7 +1632,7 @@ If set to ``true``, the object becomes unable to emit signals. As such, :ref:`em
 
 |void| **set_deferred**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_deferred>`
 
-Assigns ``value`` to the given ``property``, at the end of the current frame. This is equivalent to calling :ref:`set()<class_Object_method_set>` through :ref:`call_deferred()<class_Object_method_call_deferred>`.
+在当前帧的末尾，将给定属性 ``property`` 的值分配为 ``value``\ 。等价于通过 :ref:`call_deferred()<class_Object_method_call_deferred>` 调用 :ref:`set()<class_Object_method_set>`\ 。
 
 
 .. tabs::
@@ -1644,24 +1644,24 @@ Assigns ``value`` to the given ``property``, at the end of the current frame. Th
 
     node.rotation = 1.5
     node.set_deferred("rotation", 3.0)
-    print(node.rotation) # Prints 1.5
+    print(node.rotation) # 输出 1.5
 
     await get_tree().process_frame
-    print(node.rotation) # Prints 3.0
+    print(node.rotation) # 输出 3.0
 
  .. code-tab:: csharp
 
     var node = new Node2D();
     node.Rotation = 1.5f;
     node.SetDeferred(Node2D.PropertyName.Rotation, 3f);
-    GD.Print(node.Rotation); // Prints 1.5
+    GD.Print(node.Rotation); // 输出 1.5
 
     await ToSignal(GetTree(), SceneTree.SignalName.ProcessFrame);
-    GD.Print(node.Rotation); // Prints 3.0
+    GD.Print(node.Rotation); // 输出 3.0
 
 
 
-\ **Note:** In C#, ``property`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中引用内置 Godot 属性时 ``property`` 必须为 snake_case 蛇形大小写。请优先使用 ``PropertyName`` 类中暴露的名称，避免每次调用都重新分配一个 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ Assigns ``value`` to the given ``property``, at the end of the current frame. Th
 
 |void| **set_indexed**\ (\ property_path\: :ref:`NodePath<class_NodePath>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_indexed>`
 
-Assigns a new ``value`` to the property identified by the ``property_path``. The path should be a :ref:`NodePath<class_NodePath>` relative to this object, and can use the colon character (``:``) to access nested properties.
+将由属性路径 ``property_path`` 标识的属性的值分配为 ``value``\ 。该路径应为相对于这个对象的 :ref:`NodePath<class_NodePath>`\ ，可以使用英文冒号（\ ``:``\ ）访问内嵌属性。
 
 
 .. tabs::
@@ -1683,18 +1683,18 @@ Assigns a new ``value`` to the property identified by the ``property_path``. The
     var node = Node2D.new()
     node.set_indexed("position", Vector2(42, 0))
     node.set_indexed("position:y", -10)
-    print(node.position) # Prints (42.0, -10.0)
+    print(node.position) # 输出 (42.0, -10.0)
 
  .. code-tab:: csharp
 
     var node = new Node2D();
     node.SetIndexed("position", new Vector2(42, 0));
     node.SetIndexed("position:y", -10);
-    GD.Print(node.Position); // Prints (42, -10)
+    GD.Print(node.Position); // 输出 (42, -10)
 
 
 
-\ **Note:** In C#, ``property_path`` must be in snake_case when referring to built-in Godot properties. Prefer using the names exposed in the ``PropertyName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，引用 Godot 内置方法时 ``property_path`` 必须使用 snake_case 形式命名。请优先使用 ``PropertyName`` 类中暴露的名称，避免每次调用都分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1706,7 +1706,7 @@ Assigns a new ``value`` to the property identified by the ``property_path``. The
 
 |void| **set_message_translation**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Object_method_set_message_translation>`
 
-If set to ``true``, allows the object to translate messages with :ref:`tr()<class_Object_method_tr>` and :ref:`tr_n()<class_Object_method_tr_n>`. Enabled by default. See also :ref:`can_translate_messages()<class_Object_method_can_translate_messages>`.
+如果设置为 ``true``\ ，则允许对象使用 :ref:`tr()<class_Object_method_tr>` 和 :ref:`tr_n()<class_Object_method_tr_n>` 翻译消息。该属性默认启用。另见 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1718,13 +1718,13 @@ If set to ``true``, allows the object to translate messages with :ref:`tr()<clas
 
 |void| **set_meta**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_meta>`
 
-Adds or changes the entry ``name`` inside the object's metadata. The metadata ``value`` can be any :ref:`Variant<class_Variant>`, although some types cannot be serialized correctly.
+添加或更改对象元数据中名称为 ``name`` 的条目。元数据值 ``value`` 可以是任何 :ref:`Variant<class_Variant>`\ ，尽管某些类型无法正确序列化。
 
-If ``value`` is ``null``, the entry is removed. This is the equivalent of using :ref:`remove_meta()<class_Object_method_remove_meta>`. See also :ref:`has_meta()<class_Object_method_has_meta>` and :ref:`get_meta()<class_Object_method_get_meta>`.
+如果 ``value`` 为 ``null``\ ，则该条目被移除。等价于使用 :ref:`remove_meta()<class_Object_method_remove_meta>`\ 。另见 :ref:`has_meta()<class_Object_method_has_meta>` 和 :ref:`get_meta()<class_Object_method_get_meta>`\ 。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier()<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1736,9 +1736,9 @@ If ``value`` is ``null``, the entry is removed. This is the equivalent of using 
 
 |void| **set_script**\ (\ script\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Object_method_set_script>`
 
-Attaches ``script`` to the object, and instantiates it. As a result, the script's :ref:`_init()<class_Object_private_method__init>` is called. A :ref:`Script<class_Script>` is used to extend the object's functionality.
+将脚本 ``script`` 附加至该对象，并进行实例化。因此会调用该脚本的 :ref:`_init()<class_Object_private_method__init>`\ 。\ :ref:`Script<class_Script>` 可用于扩展对象的功能。
 
-If a script already exists, its instance is detached, and its property values and state are lost. Built-in property values are still kept.
+如果已存在脚本，则该脚本的实例会被分离，其属性值和状态会丢失。仍会保留内置属性的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1750,7 +1750,7 @@ If a script already exists, its instance is detached, and its property values an
 
 |void| **set_translation_domain**\ (\ domain\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Object_method_set_translation_domain>`
 
-Sets the name of the translation domain used by :ref:`tr()<class_Object_method_tr>` and :ref:`tr_n()<class_Object_method_tr_n>`. See also :ref:`TranslationServer<class_TranslationServer>`.
+设置 :ref:`tr()<class_Object_method_tr>` 和 :ref:`tr_n()<class_Object_method_tr_n>` 所使用的翻译域的名称。另见 :ref:`TranslationServer<class_TranslationServer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1762,7 +1762,7 @@ Sets the name of the translation domain used by :ref:`tr()<class_Object_method_t
 
 :ref:`String<class_String>` **to_string**\ (\ ) :ref:`🔗<class_Object_method_to_string>`
 
-Returns a :ref:`String<class_String>` representing the object. Defaults to ``"<ClassName#RID>"``. Override :ref:`_to_string()<class_Object_private_method__to_string>` to customize the string representation of the object.
+返回表示对象的 :ref:`String<class_String>`\ 。默认为 ``"<ClassName#RID>"``\ 。覆盖 :ref:`_to_string()<class_Object_private_method__to_string>` 以自定义对象的字符串表示形式。
 
 .. rst-class:: classref-item-separator
 
@@ -1774,13 +1774,13 @@ Returns a :ref:`String<class_String>` representing the object. Defaults to ``"<C
 
 :ref:`String<class_String>` **tr**\ (\ message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Object_method_tr>`
 
-Translates a ``message``, using the translation catalogs configured in the Project Settings. Further ``context`` can be specified to help with the translation. Note that most :ref:`Control<class_Control>` nodes automatically translate their strings, so this method is mostly useful for formatted strings or custom drawn text.
+翻译一条 ``message``\ ，该翻译使用项目设置中配置的翻译目录。可指定额外的 ``context`` 来辅助翻译。请注意，大多数 :ref:`Control<class_Control>` 节点会自动翻译其上的字符串，因此该方法主要用于格式化字符串或自定义绘制的文本。
 
-If :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` is ``false``, or no translation is available, this method returns the ``message`` without changes. See :ref:`set_message_translation()<class_Object_method_set_message_translation>`.
+若 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者无可用的翻译，则该方法将原样返回 ``message``\ 。见 :ref:`set_message_translation()<class_Object_method_set_message_translation>`\ 。
 
-For detailed examples, see :doc:`Internationalizing games <../tutorials/i18n/internationalizing_games>`.
+详细示例请见\ :doc:`国际化游戏 <../tutorials/i18n/internationalizing_games>`\ 。
 
-\ **Note:** This method can't be used without an **Object** instance, as it requires the :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` method. To translate strings in a static context, use :ref:`TranslationServer.translate()<class_TranslationServer_method_translate>`.
+\ **注意：**\ 该方法无法在没有 **Object** 实例的情况下使用，因为它依赖 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 方法。静态上下文中的字符串翻译，请使用 :ref:`TranslationServer.translate()<class_TranslationServer_method_translate>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1792,24 +1792,24 @@ For detailed examples, see :doc:`Internationalizing games <../tutorials/i18n/int
 
 :ref:`String<class_String>` **tr_n**\ (\ message\: :ref:`StringName<class_StringName>`, plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_Object_method_tr_n>`
 
-Translates a ``message`` or ``plural_message``, using the translation catalogs configured in the Project Settings. Further ``context`` can be specified to help with the translation.
+使用项目设置中配置的翻译目录，翻译一个 ``message`` 或 ``plural_message``\ 。可以进一步指定 ``context`` 来帮助翻译。
 
-If :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` is ``false``, or no translation is available, this method returns ``message`` or ``plural_message``, without changes. See :ref:`set_message_translation()<class_Object_method_set_message_translation>`.
+如果 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 为 ``false``\ ，或者没有翻译可用，则该方法将返回 ``message`` 或 ``plural_message``\ ，而不做任何更改。请参阅 :ref:`set_message_translation()<class_Object_method_set_message_translation>`\ 。
 
-The ``n`` is the number, or amount, of the message's subject. It is used by the translation system to fetch the correct plural form for the current language.
+\ ``n`` 是消息主题的数字或数量。它被翻译系统用来获取当前语言的正确复数形式。
 
-For detailed examples, see :doc:`Localization using gettext <../tutorials/i18n/localization_using_gettext>`.
+有关详细示例，请参阅\ :doc:`《使用 gettext 进行本地化》 <../tutorials/i18n/localization_using_gettext>`\ 。
 
-\ **Note:** Negative and :ref:`float<class_float>` numbers may not properly apply to some countable subjects. It's recommended to handle these cases with :ref:`tr()<class_Object_method_tr>`.
+\ **注意：**\ 负数和 :ref:`float<class_float>` 数字可能不适用于某些可数科目。建议使用 :ref:`tr()<class_Object_method_tr>` 处理这些情况。
 
-\ **Note:** This method can't be used without an **Object** instance, as it requires the :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` method. To translate strings in a static context, use :ref:`TranslationServer.translate_plural()<class_TranslationServer_method_translate_plural>`.
+\ **注意：**\ 如果没有 **Object** 实例，则无法使用该方法，因为它需要 :ref:`can_translate_messages()<class_Object_method_can_translate_messages>` 方法。要在静态上下文中翻译字符串，请使用 :ref:`TranslationServer.translate_plural()<class_TranslationServer_method_translate_plural>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

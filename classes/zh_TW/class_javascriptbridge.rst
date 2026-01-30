@@ -5,14 +5,14 @@
 JavaScriptBridge
 ================
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-Singleton that connects the engine with the browser's JavaScript context in Web export.
+單例，在 Web 匯出中將引擎與流覽器的 JavaScript 本文連接。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The JavaScriptBridge singleton is implemented only in the Web export. It's used to access the browser's JavaScript context. This allows interaction with embedding pages or calling third-party JavaScript APIs.
 
@@ -20,15 +20,15 @@ The JavaScriptBridge singleton is implemented only in the Web export. It's used 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
 - :doc:`The JavaScriptBridge singleton <../tutorials/platform/web/javascript_bridge>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_JavaScriptBridge_signal_pwa_update_available:
 
@@ -70,7 +70,7 @@ Signals
 
 **pwa_update_available**\ (\ ) :ref:`🔗<class_JavaScriptBridge_signal_pwa_update_available>`
 
-Emitted when an update for this progressive web app has been detected but is waiting to be activated because a previous version is active. See :ref:`pwa_update()<class_JavaScriptBridge_method_pwa_update>` to force the update to take place immediately.
+在偵測到該漸進式網路套用程式的更新，但因為存在活動的較早版本而等待啟動時觸發。要強制立即執行更新，請參閱 :ref:`pwa_update()<class_JavaScriptBridge_method_pwa_update>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -78,8 +78,8 @@ Emitted when an update for this progressive web app has been detected but is wai
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_JavaScriptBridge_method_create_callback:
 
@@ -101,7 +101,7 @@ Creates a reference to a :ref:`Callable<class_Callable>` that can be used as a c
 
 :ref:`Variant<class_Variant>` **create_object**\ (\ object\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_JavaScriptBridge_method_create_object>`
 
-Creates a new JavaScript object using the ``new`` constructor. The ``object`` must a valid property of the JavaScript ``window``. See :ref:`JavaScriptObject<class_JavaScriptObject>` for usage.
+使用 ``new`` 建構子建立一個新的 JavaScript 物件。\ ``object`` 必須是 JavaScript ``window`` 的有效屬性。有關用法，請參閱 :ref:`JavaScriptObject<class_JavaScriptObject>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -113,13 +113,13 @@ Creates a new JavaScript object using the ``new`` constructor. The ``object`` mu
 
 |void| **download_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, name\: :ref:`String<class_String>`, mime\: :ref:`String<class_String>` = "application/octet-stream"\ ) :ref:`🔗<class_JavaScriptBridge_method_download_buffer>`
 
-Prompts the user to download a file containing the specified ``buffer``. The file will have the given ``name`` and ``mime`` type.
+提示使用者下載一個包含指定 ``buffer`` 的檔。該檔將具有給定的 ``name`` 和 ``mime`` 型別。
 
-\ **Note:** The browser may override the `MIME type <https://en.wikipedia.org/wiki/Media_type>`__ provided based on the file ``name``'s extension.
+\ **注意：**\ 流覽器可能會覆蓋根據檔 ``name`` 的副檔名提供的 `MIME 型別 <https://en.wikipedia.org/wiki/Media_type>`__\ 。
 
-\ **Note:** Browsers might block the download if :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` is not being called from a user interaction (e.g. button click).
+\ **注意：**\ 如果 :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` 不是從使用者互動（例如按鈕點擊）中調用的，流覽器可能會阻止下載。
 
-\ **Note:** Browsers might ask the user for permission or block the download if multiple download requests are made in a quick succession.
+\ **注意：**\ 如果快速連續發出多個下載請求，流覽器可能會要求使用者同意或阻止下載。
 
 .. rst-class:: classref-item-separator
 
@@ -145,9 +145,9 @@ If ``use_global_execution_context`` is ``true``, the code will be evaluated in t
 
 |void| **force_fs_sync**\ (\ ) :ref:`🔗<class_JavaScriptBridge_method_force_fs_sync>`
 
-Force synchronization of the persistent file system (when enabled).
+強制同步持久化檔案系統（當啟用時）。
 
-\ **Note:** This is only useful for modules or extensions that can't use :ref:`FileAccess<class_FileAccess>` to write files.
+\ **注意：**\ 這僅對不能使用 :ref:`FileAccess<class_FileAccess>` 寫入檔的模組或擴充有用。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Force synchronization of the persistent file system (when enabled).
 
 :ref:`JavaScriptObject<class_JavaScriptObject>` **get_interface**\ (\ interface\: :ref:`String<class_String>`\ ) :ref:`🔗<class_JavaScriptBridge_method_get_interface>`
 
-Returns an interface to a JavaScript object that can be used by scripts. The ``interface`` must be a valid property of the JavaScript ``window``. The callback must accept a single :ref:`Array<class_Array>` argument, which will contain the JavaScript ``arguments``. See :ref:`JavaScriptObject<class_JavaScriptObject>` for usage.
+返回一個可以被腳本使用的 JavaScript 物件的介面。\ ``interface`` 必須是 JavaScript ``window`` 的有效屬性。回呼函式必須接受單個 :ref:`Array<class_Array>` 參數，它將包含 JavaScript ``arguments``\ 。有關用法，請參閱 :ref:`JavaScriptObject<class_JavaScriptObject>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -195,9 +195,9 @@ Returns a copy of ``javascript_buffer``'s contents as a :ref:`PackedByteArray<cl
 
 :ref:`bool<class_bool>` **pwa_needs_update**\ (\ ) |const| :ref:`🔗<class_JavaScriptBridge_method_pwa_needs_update>`
 
-Returns ``true`` if a new version of the progressive web app is waiting to be activated.
+如果該漸進式網路套用程式有新版本等待啟動，則返回 ``true``\ 。
 
-\ **Note:** Only relevant when exported as a Progressive Web App.
+\ **注意：**\ 只在匯出為漸進式網路套用程式（Progressive Web App）時相關。
 
 .. rst-class:: classref-item-separator
 
@@ -209,18 +209,18 @@ Returns ``true`` if a new version of the progressive web app is waiting to be ac
 
 :ref:`Error<enum_@GlobalScope_Error>` **pwa_update**\ (\ ) :ref:`🔗<class_JavaScriptBridge_method_pwa_update>`
 
-Performs the live update of the progressive web app. Forcing the new version to be installed and the page to be reloaded.
+執行該漸進式網路套用程式的線上更新。強制安裝新版本並重新載入該頁面。
 
-\ **Note:** Your application will be **reloaded in all browser tabs**.
+\ **注意：**\ 你的套用程式將\ **在所有流覽器標籤頁中重新載入**\ 。
 
-\ **Note:** Only relevant when exported as a Progressive Web App and :ref:`pwa_needs_update()<class_JavaScriptBridge_method_pwa_needs_update>` returns ``true``.
+\ **注意：**\ 只在匯出為漸進式網路套用程式（Progressive Web App）且 :ref:`pwa_needs_update()<class_JavaScriptBridge_method_pwa_needs_update>` 返回 ``true`` 時相關。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,18 +5,18 @@
 FileAccess
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides methods for file reading and writing operations.
+提供用于文件读写操作的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class can be used to permanently store data in the user device's file system and to read from it. This is useful for storing game save data or player configuration files.
+这个类可以用于在用户设备的文件系统中永久存储数据，也可以从中读取数据。适用于存储游戏存档数据或玩家配置文件。
 
-\ **Example:** How to write and read from a file. The file named ``"save_game.dat"`` will be stored in the user data folder, as specified in the :doc:`Data paths <../tutorials/io/data_paths>` documentation:
+\ **示例：**\ 如何读写文件。\ :doc:`《数据路径》 <../tutorials/io/data_paths>`\ 文档中提到的用户数据文件夹中会存储一个名叫 ``"save_game.dat"`` 的文件：
 
 
 .. tabs::
@@ -49,31 +49,31 @@ This class can be used to permanently store data in the user device's file syste
 
 
 
-A **FileAccess** instance has its own file cursor, which is the position in bytes in the file where the next read/write operation will occur. Functions such as :ref:`get_8()<class_FileAccess_method_get_8>`, :ref:`get_16()<class_FileAccess_method_get_16>`, :ref:`store_8()<class_FileAccess_method_store_8>`, and :ref:`store_16()<class_FileAccess_method_store_16>` will move the file cursor forward by the number of bytes read/written. The file cursor can be moved to a specific position using :ref:`seek()<class_FileAccess_method_seek>` or :ref:`seek_end()<class_FileAccess_method_seek_end>`, and its position can be retrieved using :ref:`get_position()<class_FileAccess_method_get_position>`.
+\ **FileAccess** 实例拥有自己的文件游标，它是文件中下一次读/写操作将发生的位置（单位为字节）。诸如 :ref:`get_8()<class_FileAccess_method_get_8>`\ 、\ :ref:`get_16()<class_FileAccess_method_get_16>`\ 、\ :ref:`store_8()<class_FileAccess_method_store_8>` 和 :ref:`store_16()<class_FileAccess_method_store_16>` 等函数会将文件游标向前移动读/写的字节数。可以使用 :ref:`seek()<class_FileAccess_method_seek>` 或 :ref:`seek_end()<class_FileAccess_method_seek_end>` 将文件游标移动到特定位置，且可以使用 :ref:`get_position()<class_FileAccess_method_get_position>` 获取其位置。
 
-A **FileAccess** instance will close its file when the instance is freed. Since it inherits :ref:`RefCounted<class_RefCounted>`, this happens automatically when it is no longer in use. :ref:`close()<class_FileAccess_method_close>` can be called to close it earlier. In C#, the reference must be disposed manually, which can be done with the ``using`` statement or by calling the ``Dispose`` method directly.
+\ **FileAccess** 实例被释放时会关闭对应的文件。由于这个类继承自 :ref:`RefCounted<class_RefCounted>`\ ，不再使用实例时会自动触发该行为。可以使用 :ref:`close()<class_FileAccess_method_close>` 在此之前显式关闭。在 C# 中引用必须手动释放，可以通过 ``using`` 语句或直接调用 ``Dispose`` 方法来完成。
 
-\ **Note:** To access project resources once exported, it is recommended to use :ref:`ResourceLoader<class_ResourceLoader>` instead of **FileAccess**, as some files are converted to engine-specific formats and their original source files might not be present in the exported PCK package. If using **FileAccess**, make sure the file is included in the export by changing its import mode to **Keep File (exported as is)** in the Import dock, or, for files where this option is not available, change the non-resource export filter in the Export dialog to include the file's extension (e.g. ``*.txt``).
+\ **注意：**\ 要在导出后访问项目资源，建议使用 :ref:`ResourceLoader<class_ResourceLoader>` 而不是 **FileAccess**\ ，因为有些文件已被转换为特定于引擎的格式，并且它们的原始源文件可能并不存在于导出的 PCK 包中。如果使用 **FileAccess**\ ，请确保通过在导入面板中将其导入模式更改为\ **保留文件（按原样导出）**\ 来将文件包含在导出中；或者对于没有此选项的文件，请在导出对话框中更改非资源导出筛选器，加上文件的扩展名（例如 ``*.txt``\ ）。
 
-\ **Note:** Files are automatically closed only if the process exits "normally" (such as by clicking the window manager's close button or pressing :kbd:`Alt + F4`). If you stop the project execution by pressing :kbd:`F8` while the project is running, the file won't be closed as the game process will be killed. You can work around this by calling :ref:`flush()<class_FileAccess_method_flush>` at regular intervals.
+\ **注意：**\ 只有当进程“正常”退出时（例如通过单击窗口管理器的关闭按钮或按 :kbd:`Alt + F4`\ ），文件才会自动关闭。如果在项目运行时按 :kbd:`F8` 停止项目执行，则不会关闭文件，因为游戏进程将被中止。可以通过定期调用 :ref:`flush()<class_FileAccess_method_flush>` 来解决这个问题。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`File system <../tutorials/scripting/filesystem>`
+- :doc:`文件系统 <../tutorials/scripting/filesystem>`
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
 
-- :doc:`Binary serialization API <../tutorials/io/binary_serialization_api>`
+- :doc:`二进制序列化 API <../tutorials/io/binary_serialization_api>`
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- `3D 体素演示 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -230,8 +230,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_FileAccess_ModeFlags:
 
@@ -245,7 +245,7 @@ enum **ModeFlags**: :ref:`🔗<enum_FileAccess_ModeFlags>`
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **READ** = ``1``
 
-Opens the file for read operations. The file cursor is positioned at the beginning of the file.
+打开文件进行读取操作。文件游标位于文件的开头。
 
 .. _class_FileAccess_constant_WRITE:
 
@@ -263,7 +263,7 @@ Opens the file for write operations. If the file exists, it is truncated to zero
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **READ_WRITE** = ``3``
 
-Opens the file for read and write operations. Does not truncate the file. The file cursor is positioned at the beginning of the file.
+打开文件进行读写操作。不会截断文件。文件游标位于文件的开头。
 
 .. _class_FileAccess_constant_WRITE_READ:
 
@@ -291,7 +291,7 @@ enum **CompressionMode**: :ref:`🔗<enum_FileAccess_CompressionMode>`
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_FASTLZ** = ``0``
 
-Uses the `FastLZ <https://fastlz.org/>`__ compression method.
+使用 `FastLZ <https://fastlz.org/>`__ 压缩方法。
 
 .. _class_FileAccess_constant_COMPRESSION_DEFLATE:
 
@@ -299,7 +299,7 @@ Uses the `FastLZ <https://fastlz.org/>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_DEFLATE** = ``1``
 
-Uses the `DEFLATE <https://en.wikipedia.org/wiki/DEFLATE>`__ compression method.
+使用 `DEFLATE <https://en.wikipedia.org/wiki/DEFLATE>`__ 压缩方法。
 
 .. _class_FileAccess_constant_COMPRESSION_ZSTD:
 
@@ -307,7 +307,7 @@ Uses the `DEFLATE <https://en.wikipedia.org/wiki/DEFLATE>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_ZSTD** = ``2``
 
-Uses the `Zstandard <https://facebook.github.io/zstd/>`__ compression method.
+使用 `Zstandard <https://facebook.github.io/zstd/>`__ 压缩方法。
 
 .. _class_FileAccess_constant_COMPRESSION_GZIP:
 
@@ -315,7 +315,7 @@ Uses the `Zstandard <https://facebook.github.io/zstd/>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_GZIP** = ``3``
 
-Uses the `gzip <https://www.gzip.org/>`__ compression method.
+使用 `gzip <https://www.gzip.org/>`__ 压缩方法。
 
 .. _class_FileAccess_constant_COMPRESSION_BROTLI:
 
@@ -323,7 +323,7 @@ Uses the `gzip <https://www.gzip.org/>`__ compression method.
 
 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` **COMPRESSION_BROTLI** = ``4``
 
-Uses the `brotli <https://github.com/google/brotli>`__ compression method (only decompression is supported).
+使用 `brotli <https://github.com/google/brotli>`__ 压缩方法（仅支持解压缩）。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_OWNER** = ``256``
 
-Read for owner bit.
+读取所有者比特位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_OWNER:
 
@@ -349,7 +349,7 @@ Read for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_OWNER** = ``128``
 
-Write for owner bit.
+写入所有者比特位。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_OWNER:
 
@@ -357,7 +357,7 @@ Write for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_OWNER** = ``64``
 
-Execute for owner bit.
+执行所有者比特位。
 
 .. _class_FileAccess_constant_UNIX_READ_GROUP:
 
@@ -365,7 +365,7 @@ Execute for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_GROUP** = ``32``
 
-Read for group bit.
+读取组比特位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_GROUP:
 
@@ -373,7 +373,7 @@ Read for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_GROUP** = ``16``
 
-Write for group bit.
+写入组比特位。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_GROUP:
 
@@ -381,7 +381,7 @@ Write for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_GROUP** = ``8``
 
-Execute for group bit.
+执行组比特位。
 
 .. _class_FileAccess_constant_UNIX_READ_OTHER:
 
@@ -389,7 +389,7 @@ Execute for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_OTHER** = ``4``
 
-Read for other bit.
+读取其他比特位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_OTHER:
 
@@ -397,7 +397,7 @@ Read for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_OTHER** = ``2``
 
-Write for other bit.
+写入其他比特位。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_OTHER:
 
@@ -405,7 +405,7 @@ Write for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_OTHER** = ``1``
 
-Execute for other bit.
+执行其他比特位。
 
 .. _class_FileAccess_constant_UNIX_SET_USER_ID:
 
@@ -413,7 +413,7 @@ Execute for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_USER_ID** = ``2048``
 
-Set user id on execution bit.
+在执行比特位上设置用户 ID 。
 
 .. _class_FileAccess_constant_UNIX_SET_GROUP_ID:
 
@@ -421,7 +421,7 @@ Set user id on execution bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_GROUP_ID** = ``1024``
 
-Set group id on execution bit.
+在执行位上设置组 ID。
 
 .. _class_FileAccess_constant_UNIX_RESTRICTED_DELETE:
 
@@ -429,7 +429,7 @@ Set group id on execution bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_RESTRICTED_DELETE** = ``512``
 
-Restricted deletion (sticky) bit.
+限制删除（粘性）比特位。
 
 .. rst-class:: classref-section-separator
 
@@ -437,8 +437,8 @@ Restricted deletion (sticky) bit.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FileAccess_property_big_endian:
 
@@ -451,9 +451,9 @@ Property Descriptions
 - |void| **set_big_endian**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_big_endian**\ (\ )
 
-If ``true``, the file is read with big-endian `endianness <https://en.wikipedia.org/wiki/Endianness>`__. If ``false``, the file is read with little-endian endianness. If in doubt, leave this to ``false`` as most files are written with little-endian endianness.
+如果为 ``true``\ ，则文件用大端\ `字节序 <https://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82%E5%BA%8F>`__\ 读取。如果为 ``false``\ ，则文件以小端字节序读取。如果有疑问，请将其保留为 ``false``\ ，因为大多数文件都是用小端字节序编写的。
 
-\ **Note:** This is always reset to system endianness, which is little-endian on all supported platforms, whenever you open the file. Therefore, you must set :ref:`big_endian<class_FileAccess_property_big_endian>` *after* opening the file, not before.
+\ **注意：**\ 每当打开文件时，该选项总会重置为系统字节序，在支持的所有平台上均为小端序。因此必须在打开文件\ *之后*\ 设置 :ref:`big_endian<class_FileAccess_property_big_endian>`\ ，而不是之前。
 
 .. rst-class:: classref-section-separator
 
@@ -461,8 +461,8 @@ If ``true``, the file is read with big-endian `endianness <https://en.wikipedia.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FileAccess_method_close:
 
@@ -470,9 +470,9 @@ Method Descriptions
 
 |void| **close**\ (\ ) :ref:`🔗<class_FileAccess_method_close>`
 
-Closes the currently opened file and prevents subsequent read/write operations. Use :ref:`flush()<class_FileAccess_method_flush>` to persist the data to disk without closing the file.
+关闭当前打开的文件，阻止后续的读写操作。如果要将数据持久化到磁盘而不关闭文件，请使用 :ref:`flush()<class_FileAccess_method_flush>`\ 。
 
-\ **Note:** **FileAccess** will automatically close when it's freed, which happens when it goes out of scope or when it gets assigned with ``null``. In C# the reference must be disposed after we are done using it, this can be done with the ``using`` statement or calling the ``Dispose`` method directly.
+\ **注意：**\ **FileAccess** 被释放时会自动关闭，释放发生在离开作用域或被赋值为 ``null`` 时。在 C# 中，使用完后必须弃置该引用，可以使用 ``using`` 语句或直接调用 ``Dispose`` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -484,15 +484,15 @@ Closes the currently opened file and prevents subsequent read/write operations. 
 
 :ref:`FileAccess<class_FileAccess>` **create_temp**\ (\ mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, prefix\: :ref:`String<class_String>` = "", extension\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_FileAccess_method_create_temp>`
 
-Creates a temporary file. This file will be freed when the returned **FileAccess** is freed.
+创建临时文件。该文件将在返回的 **FileAccess** 释放时释放。
 
-If ``prefix`` is not empty, it will be prefixed to the file name, separated by a ``-``.
+如果 ``prefix`` 非空，则会将其添加为文件名的前缀，用 ``-`` 分隔。
 
-If ``extension`` is not empty, it will be appended to the temporary file name.
+如果 ``extension`` 非空，则会将其追加到临时文件名之后。
 
-If ``keep`` is ``true``, the file is not deleted when the returned **FileAccess** is freed.
+如果 ``keep`` 为 ``true``\ ，则在返回的 **FileAccess** 释放时不会删除该文件。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件失败则返回 ``null``\ ，可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -504,9 +504,9 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`bool<class_bool>` **eof_reached**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_eof_reached>`
 
-Returns ``true`` if the file cursor has already read past the end of the file.
+如果文件光标已经读到了文件末尾，则返回 ``true``\ 。
 
-\ **Note:** ``eof_reached() == false`` cannot be used to check whether there is more data available. To loop while there is more data available, use:
+\ **注意：**\ ``eof_reached() == false`` 不能用于检查是否有更多可用数据。要在有更多可用数据时循环，请使用：
 
 
 .. tabs::
@@ -514,13 +514,13 @@ Returns ``true`` if the file cursor has already read past the end of the file.
  .. code-tab:: gdscript
 
     while file.get_position() < file.get_length():
-        # Read data
+        # 读取数据
 
  .. code-tab:: csharp
 
     while (file.GetPosition() < file.GetLength())
     {
-        // Read data
+        // 读取数据
     }
 
 
@@ -535,11 +535,11 @@ Returns ``true`` if the file cursor has already read past the end of the file.
 
 :ref:`bool<class_bool>` **file_exists**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_file_exists>`
 
-Returns ``true`` if the file exists in the given path.
+如果文件存在于给定路径中，则返回 ``true``\ 。
 
-\ **Note:** Many resources types are imported (e.g. textures or sound files), and their source asset will not be included in the exported game, as only the imported version is used. See :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>` for an alternative approach that takes resource remapping into account.
+\ **注意：**\ 许多资源类型是导入的（例如纹理或声音文件），它们的源资产不会包含在导出的游戏中，因为只使用导入的版本。有关考虑资源重新映射的替代方法，请参阅 :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>`\ 。
 
-For a non-static, relative equivalent, use :ref:`DirAccess.file_exists()<class_DirAccess_method_file_exists>`.
+对于非静态的相对等效项，请使用 :ref:`DirAccess.file_exists()<class_DirAccess_method_file_exists>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -551,9 +551,9 @@ For a non-static, relative equivalent, use :ref:`DirAccess.file_exists()<class_D
 
 |void| **flush**\ (\ ) :ref:`🔗<class_FileAccess_method_flush>`
 
-Writes the file's buffer to disk. Flushing is automatically performed when the file is closed. This means you don't need to call :ref:`flush()<class_FileAccess_method_flush>` manually before closing a file. Still, calling :ref:`flush()<class_FileAccess_method_flush>` can be used to ensure the data is safe even if the project crashes instead of being closed gracefully.
+将文件的缓冲区写入磁盘。当关闭文件时，会自动进行刷新。这意味着你不需要在关闭文件前手动调用 :ref:`flush()<class_FileAccess_method_flush>`\ 。尽管如此，即使项目崩溃而不是正常关闭，调用 :ref:`flush()<class_FileAccess_method_flush>` 仍可用于确保数据安全。
 
-\ **Note:** Only call :ref:`flush()<class_FileAccess_method_flush>` when you actually need it. Otherwise, it will decrease performance due to constant disk writes.
+\ **注意：**\ 只有在你真正需要的时候才调用 :ref:`flush()<class_FileAccess_method_flush>`\ 。否则，它会因不断的磁盘写入而降低性能。
 
 .. rst-class:: classref-item-separator
 
@@ -565,7 +565,7 @@ Writes the file's buffer to disk. Flushing is automatically performed when the f
 
 :ref:`int<class_int>` **get_8**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_8>`
 
-Returns the next 8 bits from the file as an integer. This advances the file cursor by 1 byte. See :ref:`store_8()<class_FileAccess_method_store_8>` for details on what values can be stored and retrieved this way.
+以整数形式返回文件中接下来的 8 位。文件游标前进 1 个字节。请参阅 :ref:`store_8()<class_FileAccess_method_store_8>`\ ，详细了解哪些值可以通过这种方式存储和检索。
 
 .. rst-class:: classref-item-separator
 
@@ -577,7 +577,7 @@ Returns the next 8 bits from the file as an integer. This advances the file curs
 
 :ref:`int<class_int>` **get_16**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_16>`
 
-Returns the next 16 bits from the file as an integer. This advances the file cursor by 2 bytes. See :ref:`store_16()<class_FileAccess_method_store_16>` for details on what values can be stored and retrieved this way.
+以整数形式返回文件中接下来的 16 位。文件游标前进 2 个字节。请参阅 :ref:`store_16()<class_FileAccess_method_store_16>`\ ，以获取有关可以通过这种方式存储和检索哪些值的详细信息。
 
 .. rst-class:: classref-item-separator
 
@@ -589,7 +589,7 @@ Returns the next 16 bits from the file as an integer. This advances the file cur
 
 :ref:`int<class_int>` **get_32**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_32>`
 
-Returns the next 32 bits from the file as an integer. This advances the file cursor by 4 bytes. See :ref:`store_32()<class_FileAccess_method_store_32>` for details on what values can be stored and retrieved this way.
+以整数形式返回文件中接下来的 32 位。文件游标前进 4 个字节。请参阅 :ref:`store_32()<class_FileAccess_method_store_32>`\ ，以获取有关可以通过这种方式存储和检索哪些值的详细信息。
 
 .. rst-class:: classref-item-separator
 
@@ -601,7 +601,7 @@ Returns the next 32 bits from the file as an integer. This advances the file cur
 
 :ref:`int<class_int>` **get_64**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_64>`
 
-Returns the next 64 bits from the file as an integer. This advances the file cursor by 8 bytes. See :ref:`store_64()<class_FileAccess_method_store_64>` for details on what values can be stored and retrieved this way.
+以整数形式返回文件中接下来的 64 位。文件游标前进 8 个字节。请参阅 :ref:`store_64()<class_FileAccess_method_store_64>`\ ，以获取有关可以通过这种方式存储和检索哪些值的详细信息。
 
 .. rst-class:: classref-item-separator
 
@@ -613,7 +613,7 @@ Returns the next 64 bits from the file as an integer. This advances the file cur
 
 :ref:`int<class_int>` **get_access_time**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_access_time>`
 
-Returns the last time the ``file`` was accessed in Unix timestamp format, or ``0`` on error. This Unix timestamp can be converted to another format using the :ref:`Time<class_Time>` singleton.
+返回文件 ``file`` 的最后修改时间，使用 Unix 时间戳格式，出错时返回 ``0``\ 。这个 Unix 时间戳可以用 :ref:`Time<class_Time>` 单例转换为其他格式。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_buffer**\ (\ length\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_FileAccess_method_get_buffer>`
 
-Returns next ``length`` bytes of the file as a :ref:`PackedByteArray<class_PackedByteArray>`. This advances the file cursor by ``length`` bytes.
+将文件中接下来的 ``length`` 个字节作为 :ref:`PackedByteArray<class_PackedByteArray>` 返回。文件游标前进 ``length`` 个字节。
 
 .. rst-class:: classref-item-separator
 
@@ -649,11 +649,11 @@ Returns next ``length`` bytes of the file as a :ref:`PackedByteArray<class_Packe
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_csv_line**\ (\ delim\: :ref:`String<class_String>` = ","\ ) |const| :ref:`🔗<class_FileAccess_method_get_csv_line>`
 
-Returns the next value of the file in CSV (Comma-Separated Values) format. You can pass a different delimiter ``delim`` to use other than the default ``","`` (comma). This delimiter must be one-character long, and cannot be a double quotation mark.
+以 CSV（逗号分隔值）格式返回文件的下一个值。可以传递不同的分隔符 ``delim``\ ，以使用默认 ``","``\ （逗号）以外的其他分隔符。这个分隔符必须为一个字符长，且不能是双引号。
 
-Text is interpreted as being UTF-8 encoded. Text values must be enclosed in double quotes if they include the delimiter character. Double quotes within a text value can be escaped by doubling their occurrence. This advances the file cursor to after the newline character at the end of the line.
+文本被解析为 UTF-8 编码。如果文本值包含分隔符，则它们必须用双引号引起来。文本值中的双引号可以通过将它们的出现次数加倍来转义。文件游标前进至行尾的换行符后。
 
-For example, the following CSV lines are valid and will be properly parsed as two strings each:
+例如，以下 CSV 行是有效的，每行将被正确解析为两个字符串：
 
 .. code:: text
 
@@ -661,7 +661,7 @@ For example, the following CSV lines are valid and will be properly parsed as tw
     Bob,Alice! What a surprise!
     Alice,"I thought you'd reply with ""Hello, world""."
 
-Note how the second line can omit the enclosing quotes as it does not include the delimiter. However it *could* very well use quotes, it was only written without for demonstration purposes. The third line must use ``""`` for each quotation mark that needs to be interpreted as such instead of the end of a text value.
+请注意第二行如何省略封闭的引号，因为它不包含分隔符。然而它\ *可以*\ 很好地使用引号，它只是为了演示目的而没有编写。第三行必须为每个需要被解析为引号而不是文本值的末尾而使用 ``""``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -673,7 +673,7 @@ Note how the second line can omit the enclosing quotes as it does not include th
 
 :ref:`float<class_float>` **get_double**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_double>`
 
-Returns the next 64 bits from the file as a floating-point number. This advances the file cursor by 8 bytes.
+将文件中接下来的 64 位作为浮点数返回。文件游标前进 8 个字节。
 
 .. rst-class:: classref-item-separator
 
@@ -685,7 +685,7 @@ Returns the next 64 bits from the file as a floating-point number. This advances
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_error**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_error>`
 
-Returns the last error that happened when trying to perform operations. Compare with the ``ERR_FILE_*`` constants from :ref:`Error<enum_@GlobalScope_Error>`.
+返回试图执行操作时发生的最后一个错误。请与 :ref:`Error<enum_@GlobalScope_Error>` 中的 ``ERR_FILE_*`` 常量比较。
 
 .. rst-class:: classref-item-separator
 
@@ -757,9 +757,9 @@ Returns a list of file extended attributes.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_file_as_bytes**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_file_as_bytes>`
 
-Returns the whole ``path`` file contents as a :ref:`PackedByteArray<class_PackedByteArray>` without any decoding.
+将整个 ``path`` 文件内容作为 :ref:`PackedByteArray<class_PackedByteArray>` 返回，无需任何解码。
 
-Returns an empty :ref:`PackedByteArray<class_PackedByteArray>` if an error occurred while opening the file. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件时发生错误，则返回空的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。你可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -771,9 +771,9 @@ Returns an empty :ref:`PackedByteArray<class_PackedByteArray>` if an error occur
 
 :ref:`String<class_String>` **get_file_as_string**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_file_as_string>`
 
-Returns the whole ``path`` file contents as a :ref:`String<class_String>`. Text is interpreted as being UTF-8 encoded.
+将整个 ``path`` 文件内容以 :ref:`String<class_String>` 形式返回。文本被解释为 UTF-8 编码。
 
-Returns an empty :ref:`String<class_String>` if an error occurred while opening the file. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件时发生错误，则返回空 :ref:`String<class_String>`\ 。可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -785,7 +785,7 @@ Returns an empty :ref:`String<class_String>` if an error occurred while opening 
 
 :ref:`float<class_float>` **get_float**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_float>`
 
-Returns the next 32 bits from the file as a floating-point number. This advances the file cursor by 4 bytes.
+将文件中接下来的 32 位作为浮点数返回。文件游标前进 4 个字节。
 
 .. rst-class:: classref-item-separator
 
@@ -797,7 +797,7 @@ Returns the next 32 bits from the file as a floating-point number. This advances
 
 :ref:`float<class_float>` **get_half**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_half>`
 
-Returns the next 16 bits from the file as a half-precision floating-point number. This advances the file cursor by 2 bytes.
+将文件中接下来的 16 位作为半精度浮点数返回。文件游标前进 2 个字节。
 
 .. rst-class:: classref-item-separator
 
@@ -823,7 +823,7 @@ Returns ``true`` if the **hidden** attribute is set on the file at the given pat
 
 :ref:`int<class_int>` **get_length**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_length>`
 
-Returns the size of the file in bytes. For a pipe, returns the number of bytes available for reading from the pipe.
+返回文件的大小，单位为字节。如果是管道，则返回可以从管道中读取的字节数。
 
 .. rst-class:: classref-item-separator
 
@@ -835,9 +835,9 @@ Returns the size of the file in bytes. For a pipe, returns the number of bytes a
 
 :ref:`String<class_String>` **get_line**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_line>`
 
-Returns the next line of the file as a :ref:`String<class_String>`. The returned string doesn't include newline (``\n``) or carriage return (``\r``) characters, but does include any other leading or trailing whitespace. This advances the file cursor to after the newline character at the end of the line.
+以 :ref:`String<class_String>` 的形式返回文件中的下一行。返回的字符串不包含换行符（\ ``\n``\ ）和回车符（\ ``\r``\ ），但是会包含开头和结尾的其他空白字符。文件游标前进至行尾的换行符之后。
 
-Text is interpreted as being UTF-8 encoded.
+文本按照 UTF-8 编码规则进行解析。
 
 .. rst-class:: classref-item-separator
 
@@ -849,7 +849,7 @@ Text is interpreted as being UTF-8 encoded.
 
 :ref:`String<class_String>` **get_md5**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_md5>`
 
-Returns an MD5 String representing the file at the given path or an empty :ref:`String<class_String>` on failure.
+返回一个给定路径文件的 MD5 字符串，如果失败则返回一个空的 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -861,7 +861,7 @@ Returns an MD5 String representing the file at the given path or an empty :ref:`
 
 :ref:`int<class_int>` **get_modified_time**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_modified_time>`
 
-Returns the last time the ``file`` was modified in Unix timestamp format, or ``0`` on error. This Unix timestamp can be converted to another format using the :ref:`Time<class_Time>` singleton.
+返回 ``file`` 的最后修改时间，使用 Unix 时间戳格式，出错时返回 ``0``\ 。这个 Unix 时间戳可以用 :ref:`Time<class_Time>` 单例转换为其他格式。
 
 .. rst-class:: classref-item-separator
 
@@ -873,7 +873,7 @@ Returns the last time the ``file`` was modified in Unix timestamp format, or ``0
 
 :ref:`Error<enum_@GlobalScope_Error>` **get_open_error**\ (\ ) |static| :ref:`🔗<class_FileAccess_method_get_open_error>`
 
-Returns the result of the last :ref:`open()<class_FileAccess_method_open>` call in the current thread.
+返回当前线程中最后一次 :ref:`open()<class_FileAccess_method_open>` 调用的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -885,9 +885,9 @@ Returns the result of the last :ref:`open()<class_FileAccess_method_open>` call 
 
 :ref:`String<class_String>` **get_pascal_string**\ (\ ) :ref:`🔗<class_FileAccess_method_get_pascal_string>`
 
-Returns a :ref:`String<class_String>` saved in Pascal format from the file, meaning that the length of the string is explicitly stored at the start. See :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>`. This may include newline characters. The file cursor is advanced after the bytes read.
+返回文件中的一个以 Pascal 格式保存的 :ref:`String<class_String>`\ ，即字符串的长度在开头显式存储。见 :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>`\ 。可能包含换行符。文件游标前进至读取的字节之后。
 
-Text is interpreted as being UTF-8 encoded.
+文本按照 UTF-8 编码规则进行解析。
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ Text is interpreted as being UTF-8 encoded.
 
 :ref:`String<class_String>` **get_path**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_path>`
 
-Returns the path as a :ref:`String<class_String>` for the current open file.
+返回当前打开的文件的路径为\ :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -911,7 +911,7 @@ Returns the path as a :ref:`String<class_String>` for the current open file.
 
 :ref:`String<class_String>` **get_path_absolute**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_path_absolute>`
 
-Returns the absolute path as a :ref:`String<class_String>` for the current open file.
+返回当前打开的文件的绝对路径为\ :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -923,7 +923,7 @@ Returns the absolute path as a :ref:`String<class_String>` for the current open 
 
 :ref:`int<class_int>` **get_position**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_position>`
 
-Returns the file cursor's position in bytes from the beginning of the file. This is the file reading/writing cursor set by :ref:`seek()<class_FileAccess_method_seek>` or :ref:`seek_end()<class_FileAccess_method_seek_end>` and advanced by read/write operations.
+返回文件游标的位置，单位为字节，相对于文件的开头。文件读写游标由 :ref:`seek()<class_FileAccess_method_seek>` 和 :ref:`seek_end()<class_FileAccess_method_seek_end>` 设置，读写操作会导致游标前进。
 
 .. rst-class:: classref-item-separator
 
@@ -949,9 +949,9 @@ Returns ``true`` if the **read only** attribute is set on the file at the given 
 
 :ref:`float<class_float>` **get_real**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_real>`
 
-Returns the next bits from the file as a floating-point number. This advances the file cursor by either 4 or 8 bytes, depending on the precision used by the Godot build that saved the file.
+返回文件中后续数据构成的一个浮点数。文件游标前进 4 个或 8 个字节，取决于保存文件的 Godot 构建所使用的精度。
 
-If the file was saved by a Godot build compiled with the ``precision=single`` option (the default), the number of read bits for that file is 32. Otherwise, if compiled with the ``precision=double`` option, the number of read bits is 64.
+如果保存文件的是使用 ``precision=single`` 编译的 Godot 构建（默认），则会从文件中读取 32 位。否则如果是使用 ``precision=double`` 编译的，那么读取的就是 64 位。
 
 .. rst-class:: classref-item-separator
 
@@ -963,7 +963,7 @@ If the file was saved by a Godot build compiled with the ``precision=single`` op
 
 :ref:`String<class_String>` **get_sha256**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_sha256>`
 
-Returns an SHA-256 :ref:`String<class_String>` representing the file at the given path or an empty :ref:`String<class_String>` on failure.
+返回一个表示给定路径下文件的 SHA-256 :ref:`String<class_String>`\ ，失败时返回一个空的 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1001,11 +1001,11 @@ Returns the UNIX permissions of the file at the given path.
 
 :ref:`Variant<class_Variant>` **get_var**\ (\ allow_objects\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_FileAccess_method_get_var>`
 
-Returns the next :ref:`Variant<class_Variant>` value from the file. If ``allow_objects`` is ``true``, decoding objects is allowed. This advances the file cursor by the number of bytes read.
+返回文件中的下一个 :ref:`Variant<class_Variant>` 值。如果 ``allow_objects`` 为 ``true``\ ，则允许解码对象。这会使文件光标前进读取的字节数。
 
-Internally, this uses the same decoding mechanism as the :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` method, as described in the :doc:`Binary serialization API <../tutorials/io/binary_serialization_api>` documentation.
+在内部，这使用与 :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` 方法相同的解码机制，如在\ :doc:`二进制序列化 API <../tutorials/io/binary_serialization_api>` 文档中所述。
 
-\ **Warning:** Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threats such as remote code execution.
+\ **警告：**\ 反序列化得到的对象可能包含被执行的代码。如果序列化的对象来自不受信任的来源，请不要使用这个选项，以避免潜在的安全威胁，如远程代码执行。
 
 .. rst-class:: classref-item-separator
 
@@ -1017,7 +1017,7 @@ Internally, this uses the same decoding mechanism as the :ref:`@GlobalScope.byte
 
 :ref:`bool<class_bool>` **is_open**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_is_open>`
 
-Returns ``true`` if the file is currently opened.
+如果文件当前被打开，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1029,9 +1029,9 @@ Returns ``true`` if the file is currently opened.
 
 :ref:`FileAccess<class_FileAccess>` **open**\ (\ path\: :ref:`String<class_String>`, flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`\ ) |static| :ref:`🔗<class_FileAccess_method_open>`
 
-Creates a new **FileAccess** object and opens the file for writing or reading, depending on the flags.
+创建一个新的 **FileAccess** 对象，会根据标志来确定以写入还是读取模式打开文件。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件失败，则返回 ``null`` 。你可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -1043,11 +1043,11 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`FileAccess<class_FileAccess>` **open_compressed**\ (\ path\: :ref:`String<class_String>`, mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, compression_mode\: :ref:`CompressionMode<enum_FileAccess_CompressionMode>` = 0\ ) |static| :ref:`🔗<class_FileAccess_method_open_compressed>`
 
-Creates a new **FileAccess** object and opens a compressed file for reading or writing.
+创建一个新的 **FileAccess** 对象，并打开一个压缩文件以进行读取或写入。
 
-\ **Note:** :ref:`open_compressed()<class_FileAccess_method_open_compressed>` can only read files that were saved by Godot, not third-party compression formats. See `GitHub issue #28999 <https://github.com/godotengine/godot/issues/28999>`__ for a workaround.
+\ **注意：**\ :ref:`open_compressed()<class_FileAccess_method_open_compressed>` 只能读取 Godot 保存的文件，不能读取第三方压缩格式。有关解决方法，请参阅 `GitHub 问题 #28999 <https://github.com/godotengine/godot/issues/28999>`__\ 。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件失败，则返回 ``null``\ 。可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -1059,11 +1059,11 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`FileAccess<class_FileAccess>` **open_encrypted**\ (\ path\: :ref:`String<class_String>`, mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`, iv\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray()\ ) |static| :ref:`🔗<class_FileAccess_method_open_encrypted>`
 
-Creates a new **FileAccess** object and opens an encrypted file in write or read mode. You need to pass a binary key to encrypt/decrypt it.
+创建一个新的 **FileAccess** 对象，并以写入或读取模式打开一个加密文件。需要传入一个二进制密钥来加密/解密它。
 
-\ **Note:** The provided key must be 32 bytes long.
+\ **注意：**\ 提供的密钥必须是 32 字节长。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件失败，则返回 ``null``\ 。可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -1075,9 +1075,9 @@ Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<
 
 :ref:`FileAccess<class_FileAccess>` **open_encrypted_with_pass**\ (\ path\: :ref:`String<class_String>`, mode_flags\: :ref:`ModeFlags<enum_FileAccess_ModeFlags>`, pass\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_open_encrypted_with_pass>`
 
-Creates a new **FileAccess** object and opens an encrypted file in write or read mode. You need to pass a password to encrypt/decrypt it.
+创建一个新的 **FileAccess** 对象，以写或读的模式打开一个加密文件。你需要传递一个密码来加密/解密它。
 
-Returns ``null`` if opening the file failed. You can use :ref:`get_open_error()<class_FileAccess_method_get_open_error>` to check the error that occurred.
+如果打开文件失败，则返回 ``null`` 。你可以使用 :ref:`get_open_error()<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -1109,7 +1109,7 @@ Removes file extended attribute with name ``attribute_name``.
 
 :ref:`Error<enum_@GlobalScope_Error>` **resize**\ (\ length\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_resize>`
 
-Resizes the file to a specified length. The file must be open in a mode that permits writing. If the file is extended, NUL characters are appended. If the file is truncated, all data from the end file to the original length of the file is lost.
+将文件大小修改为指定长度。文件必须使用允许写操作的模式打开。如果扩展了文件，则会追加 NUL 字符。如果截断了文件，则会丢弃从文件末尾到文件原长度之间的所有数据。
 
 .. rst-class:: classref-item-separator
 
@@ -1187,9 +1187,9 @@ Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded s
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_hidden_attribute**\ (\ file\: :ref:`String<class_String>`, hidden\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_hidden_attribute>`
 
-Sets file **hidden** attribute.
+设置文件 **hidden** 属性。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 该方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1201,9 +1201,9 @@ Sets file **hidden** attribute.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_read_only_attribute**\ (\ file\: :ref:`String<class_String>`, ro\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_read_only_attribute>`
 
-Sets file **read only** attribute.
+设置文件 **read only** 属性。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 该方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1215,9 +1215,9 @@ Sets file **read only** attribute.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_unix_permissions**\ (\ file\: :ref:`String<class_String>`, permissions\: |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\]\ ) |static| :ref:`🔗<class_FileAccess_method_set_unix_permissions>`
 
-Sets file UNIX permissions.
+设置文件的 UNIX 权限。
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **注意：**\ 该方法在 iOS、Linux/BSD 和 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1229,13 +1229,13 @@ Sets file UNIX permissions.
 
 :ref:`bool<class_bool>` **store_8**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_store_8>`
 
-Stores an integer as 8 bits in the file. This advances the file cursor by 1 byte. Returns ``true`` if the operation is successful.
+将一个整数以 8 位形式存储在文件中。文件游标前进 1 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** The ``value`` should lie in the interval ``[0, 255]``. Any other value will overflow and wrap around.
+\ **注意：**\ ``value`` 应该位于 ``[0, 255]`` 的区间内。任何其他的值都会溢出并环绕。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
-To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64>`, or convert it manually (see :ref:`store_16()<class_FileAccess_method_store_16>` for an example).
+要存储有符号的整数，请使用 :ref:`store_64()<class_FileAccess_method_store_64>`\ ，或者手动转换（见 :ref:`store_16()<class_FileAccess_method_store_16>` 的例子）。
 
 .. rst-class:: classref-item-separator
 
@@ -1247,13 +1247,13 @@ To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64
 
 :ref:`bool<class_bool>` **store_16**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_store_16>`
 
-Stores an integer as 16 bits in the file. This advances the file cursor by 2 bytes. Returns ``true`` if the operation is successful.
+将一个整数以 16 位形式存储到文件中。文件游标前进 2 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** The ``value`` should lie in the interval ``[0, 2^16 - 1]``. Any other value will overflow and wrap around.
+\ **注意：**\ ``value`` 应该位于 ``[0, 2^16 - 1]`` 区间内。任何其他的值都会溢出并进行环绕。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
-To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64>` or store a signed integer from the interval ``[-2^15, 2^15 - 1]`` (i.e. keeping one bit for the signedness) and compute its sign manually when reading. For example:
+要存储有符号的整数，请使用 :ref:`store_64()<class_FileAccess_method_store_64>` 或者从区间 ``[-2^15, 2^15 - 1]`` 中存储一个有符号的整数（即保留一位作为符号），在读取时手动计算其符号。例如：
 
 
 .. tabs::
@@ -1268,9 +1268,9 @@ To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64
 
     func _ready():
         var f = FileAccess.open("user://file.dat", FileAccess.WRITE_READ)
-        f.store_16(-42) # This wraps around and stores 65494 (2^16 - 42).
-        f.store_16(121) # In bounds, will store 121.
-        f.seek(0) # Go back to start to read the stored value.
+        f.store_16(-42) # 发生环绕，存储 65494 (2^16 - 42)。
+        f.store_16(121) # 在范围内，存储 121。
+        f.seek(0) # 回到开头，读取存储的值。
         var read1 = f.get_16() # 65494
         var read2 = f.get_16() # 121
         var converted1 = unsigned16_to_signed(read1) # -42
@@ -1281,9 +1281,9 @@ To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64
     public override void _Ready()
     {
         using var f = FileAccess.Open("user://file.dat", FileAccess.ModeFlags.WriteRead);
-        f.Store16(unchecked((ushort)-42)); // This wraps around and stores 65494 (2^16 - 42).
-        f.Store16(121); // In bounds, will store 121.
-        f.Seek(0); // Go back to start to read the stored value.
+        f.Store16(unchecked((ushort)-42)); // 发生环绕，存储 65494 (2^16 - 42)。
+        f.Store16(121); // 在范围内，存储 121。
+        f.Seek(0); // 回到开头，读取存储的值。
         ushort read1 = f.Get16(); // 65494
         ushort read2 = f.Get16(); // 121
         short converted1 = (short)read1; // -42
@@ -1302,13 +1302,13 @@ To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64
 
 :ref:`bool<class_bool>` **store_32**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_store_32>`
 
-Stores an integer as 32 bits in the file. This advances the file cursor by 4 bytes. Returns ``true`` if the operation is successful.
+将一个整数以 32 位形式存储到文件中。文件游标前进 4 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** The ``value`` should lie in the interval ``[0, 2^32 - 1]``. Any other value will overflow and wrap around.
+\ **注意：**\ ``value`` 应该位于 ``[0, 2^32 - 1]`` 区间内。任何其他的值都会溢出并环绕。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
-To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64>`, or convert it manually (see :ref:`store_16()<class_FileAccess_method_store_16>` for an example).
+要存储有符号的整数，请使用 :ref:`store_64()<class_FileAccess_method_store_64>`\ ，或者手动转换（见 :ref:`store_16()<class_FileAccess_method_store_16>` 的例子）。
 
 .. rst-class:: classref-item-separator
 
@@ -1320,11 +1320,11 @@ To store a signed integer, use :ref:`store_64()<class_FileAccess_method_store_64
 
 :ref:`bool<class_bool>` **store_64**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_store_64>`
 
-Stores an integer as 64 bits in the file. This advances the file cursor by 8 bytes. Returns ``true`` if the operation is successful.
+将一个整数以 64 位形式存储到文件中。文件游标前进 8 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** The ``value`` must lie in the interval ``[-2^63, 2^63 - 1]`` (i.e. be a valid :ref:`int<class_int>` value).
+\ **注意：**\ ``value`` 必须位于 ``[-2^63, 2^63 - 1]`` 的区间内（即有效的 :ref:`int<class_int>` 值）。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1336,9 +1336,9 @@ Stores an integer as 64 bits in the file. This advances the file cursor by 8 byt
 
 :ref:`bool<class_bool>` **store_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_FileAccess_method_store_buffer>`
 
-Stores the given array of bytes in the file. This advances the file cursor by the number of bytes written. Returns ``true`` if the operation is successful.
+将给定的字节数组存储在文件中。文件游标前进写入的字节数。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1366,9 +1366,9 @@ Text will be encoded as UTF-8. Returns ``true`` if the operation is successful.
 
 :ref:`bool<class_bool>` **store_double**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FileAccess_method_store_double>`
 
-Stores a floating-point number as 64 bits in the file. This advances the file cursor by 8 bytes. Returns ``true`` if the operation is successful.
+将一个浮点数以 64 位的形式存储到文件中。文件游标前进 8 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1380,9 +1380,9 @@ Stores a floating-point number as 64 bits in the file. This advances the file cu
 
 :ref:`bool<class_bool>` **store_float**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FileAccess_method_store_float>`
 
-Stores a floating-point number as 32 bits in the file. This advances the file cursor by 4 bytes. Returns ``true`` if the operation is successful.
+将一个浮点数以 32 位的形式存储到文件中。文件游标前进 4 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1394,9 +1394,9 @@ Stores a floating-point number as 32 bits in the file. This advances the file cu
 
 :ref:`bool<class_bool>` **store_half**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FileAccess_method_store_half>`
 
-Stores a half-precision floating-point number as 16 bits in the file. This advances the file cursor by 2 bytes. Returns ``true`` if the operation is successful.
+将一个半精度浮点数以 16 位的形式存储到文件中。文件游标前进 2 个字节。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1408,9 +1408,9 @@ Stores a half-precision floating-point number as 16 bits in the file. This advan
 
 :ref:`bool<class_bool>` **store_line**\ (\ line\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_line>`
 
-Stores ``line`` in the file followed by a newline character (``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the line, after the newline character. The amount of bytes written depends on the UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
+将 ``line`` 存储到文件中，后跟一个换行符（\ ``\n``\ ），文本使用 UTF-8 编码。文件游标前进该行长度，至换行符后。写入的字节数取决于 UTF-8 编码后的字节，可能与 :ref:`String.length()<class_String_method_length>` 不同，后者计算的是 UTF-32 码位的数量。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1422,9 +1422,9 @@ Stores ``line`` in the file followed by a newline character (``\n``), encoding t
 
 :ref:`bool<class_bool>` **store_pascal_string**\ (\ string\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_pascal_string>`
 
-Stores the given :ref:`String<class_String>` as a line in the file in Pascal format (i.e. also store the length of the string). Text will be encoded as UTF-8. This advances the file cursor by the number of bytes written depending on the UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
+将给定的 :ref:`String<class_String>` 作为一行存储到文件中，使用 Pascal 格式（即同时存储字符串的长度）。文本使用 UTF-8 编码。文件游标的前进量为写入的字节数，取决于 UTF-8 编码后的字节，可能与 :ref:`String.length()<class_String_method_length>` 不同，后者计算的是 UTF-32 码位的数量。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1436,11 +1436,11 @@ Stores the given :ref:`String<class_String>` as a line in the file in Pascal for
 
 :ref:`bool<class_bool>` **store_real**\ (\ value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_FileAccess_method_store_real>`
 
-Stores a floating-point number in the file. This advances the file cursor by either 4 or 8 bytes, depending on the precision used by the current Godot build.
+将一个浮点数存储到文件中。文件游标前进 4 个或 8 个字节，取决于当前 Godot 构建所使用的精度。
 
-If using a Godot build compiled with the ``precision=single`` option (the default), this method will save a 32-bit float. Otherwise, if compiled with the ``precision=double`` option, this will save a 64-bit float. Returns ``true`` if the operation is successful.
+如果所用的 Godot 构建在编译时使用了 ``precision=single`` 选项（默认），则该方法保存的是 32 位 float。否则如果编译时使用了 ``precision=double`` 选项，则保存的是 64 位 float。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1452,11 +1452,11 @@ If using a Godot build compiled with the ``precision=single`` option (the defaul
 
 :ref:`bool<class_bool>` **store_string**\ (\ string\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileAccess_method_store_string>`
 
-Stores ``string`` in the file without a newline character (``\n``), encoding the text as UTF-8. This advances the file cursor by the length of the string in UTF-8 encoded bytes, which may be different from :ref:`String.length()<class_String_method_length>` which counts the number of UTF-32 codepoints. Returns ``true`` if the operation is successful.
+将 ``string`` 存储到文件中，不带换行符（\ ``\n``\ ），文本使用 UTF-8 编码。文件游标的前进量为 UTF-8 编码后的字节数，可能与 :ref:`String.length()<class_String_method_length>` 不同，后者计算的是 UTF-32 码位的数量。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** This method is intended to be used to write text files. The string is stored as a UTF-8 encoded buffer without string length or terminating zero, which means that it can't be loaded back easily. If you want to store a retrievable string in a binary file, consider using :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>` instead. For retrieving strings from a text file, you can use ``get_buffer(length).get_string_from_utf8()`` (if you know the length) or :ref:`get_as_text()<class_FileAccess_method_get_as_text>`.
+\ **注意：**\ 该方法适用于写入文本文件。字符串以 UTF-8 编码的缓冲区形式存储，不带字符串长度，不以零结尾，加载并非易事。如果你想要在二进制文件中存储便于读取的字符串，请考虑改用 :ref:`store_pascal_string()<class_FileAccess_method_store_pascal_string>`\ 。从文本文件中读取字符串可以使用 ``get_buffer(length).get_string_from_utf8()``\ （前提是知道长度）或 :ref:`get_as_text()<class_FileAccess_method_get_as_text>`\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 
@@ -1468,20 +1468,20 @@ Stores ``string`` in the file without a newline character (``\n``), encoding the
 
 :ref:`bool<class_bool>` **store_var**\ (\ value\: :ref:`Variant<class_Variant>`, full_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_FileAccess_method_store_var>`
 
-Stores any Variant value in the file. If ``full_objects`` is ``true``, encoding objects is allowed (and can potentially include code). This advances the file cursor by the number of bytes written. Returns ``true`` if the operation is successful.
+将任意 Variant 值存储到文件中。如果 ``full_objects`` 为 ``true``\ ，则允许将对象进行编码（可能包含代码）。文件游标的前进量为写入的字节数。如果操作成功则返回 ``true``\ 。
 
-Internally, this uses the same encoding mechanism as the :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>` method, as described in the :doc:`Binary serialization API <../tutorials/io/binary_serialization_api>` documentation.
+内部使用的编码机制与 :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>` 方法相同，见《\ :doc:`二进制序列化 API <../tutorials/io/binary_serialization_api>` 》文档。
 
-\ **Note:** Not all properties are included. Only properties that are configured with the :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` flag set will be serialized. You can add a new usage flag to a property by overriding the :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` method in your class. You can also check how property usage is configured by calling :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`. See :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the possible usage flags.
+\ **注意：**\ 不是所有属性都会包含在内。只会对设置了 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 标志的属性进行序列化。在你的类中覆盖 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 可以为属性添加新的用法标志。你也可以调用 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 查看属性用法的设置情况。可能的用法标志见 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

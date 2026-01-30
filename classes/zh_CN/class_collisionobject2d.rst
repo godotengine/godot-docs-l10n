@@ -5,25 +5,25 @@
 CollisionObject2D
 =================
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`Area2D<class_Area2D>`, :ref:`PhysicsBody2D<class_PhysicsBody2D>`
+**派生：** :ref:`Area2D<class_Area2D>`, :ref:`PhysicsBody2D<class_PhysicsBody2D>`
 
-Abstract base class for 2D physics objects.
+2D 物理对象的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Abstract base class for 2D physics objects. **CollisionObject2D** can hold any number of :ref:`Shape2D<class_Shape2D>`\ s for collision. Each shape must be assigned to a *shape owner*. Shape owners are not nodes and do not appear in the editor, but are accessible through code using the ``shape_owner_*`` methods.
+2D 物理对象的抽象基类。\ **CollisionObject2D** 能够容纳任意数量的 :ref:`Shape2D<class_Shape2D>` 用作碰撞形状。每个形状必须分配给一个\ *形状所有者*\ 。形状所有者不是节点，也不会出现在编辑器中，但可以通过代码使用 ``shape_owner_*`` 方法访问。
 
-\ **Note:** Only collisions between objects within the same canvas (:ref:`Viewport<class_Viewport>` canvas or :ref:`CanvasLayer<class_CanvasLayer>`) are supported. The behavior of collisions between objects in different canvases is undefined.
+\ **注意：**\ 仅支持相同画布中不同对象的碰撞（\ :ref:`Viewport<class_Viewport>` 画布或 :ref:`CanvasLayer<class_CanvasLayer>`\ ）。不同画布中的对象之间的碰撞行为是未定义的。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -114,8 +114,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CollisionObject2D_signal_input_event:
 
@@ -123,7 +123,7 @@ Signals
 
 **input_event**\ (\ viewport\: :ref:`Node<class_Node>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_signal_input_event>`
 
-Emitted when an input event occurs. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. See :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` for details.
+发生输入事件时发出。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置了一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。详见 :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -135,9 +135,9 @@ Emitted when an input event occurs. Requires :ref:`input_pickable<class_Collisio
 
 **mouse_entered**\ (\ ) :ref:`🔗<class_CollisionObject2D_signal_mouse_entered>`
 
-Emitted when the mouse pointer enters any of this object's shapes. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this signal to be emitted.
+当鼠标指针进入该对象的任何形状时发出。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置了一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。请注意，在单个 **CollisionObject2D** 中的不同形状之间移动，不会导致发出该信号。
 
-\ **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject2D**'s area is small. This signal may also not be emitted if another **CollisionObject2D** is overlapping the **CollisionObject2D** in question.
+\ **注意：**\ 由于缺少连续的碰撞检测，如果鼠标移动得足够快并且 **CollisionObject2D** 的区域很小，则该信号可能不会按预期的顺序发出。如果另一个 **CollisionObject2D** 与所讨论的 **CollisionObject2D** 重叠，则也可能不会发出该信号。
 
 .. rst-class:: classref-item-separator
 
@@ -149,9 +149,9 @@ Emitted when the mouse pointer enters any of this object's shapes. Requires :ref
 
 **mouse_exited**\ (\ ) :ref:`🔗<class_CollisionObject2D_signal_mouse_exited>`
 
-Emitted when the mouse pointer exits all this object's shapes. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this signal to be emitted.
+当鼠标指针离开该对象的所有形状时发出。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置了一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。请注意，在单个 **CollisionObject2D** 中的不同形状之间移动，不会导致发出该信号。
 
-\ **Note:** Due to the lack of continuous collision detection, this signal may not be emitted in the expected order if the mouse moves fast enough and the **CollisionObject2D**'s area is small. This signal may also not be emitted if another **CollisionObject2D** is overlapping the **CollisionObject2D** in question.
+\ **注意：**\ 由于缺少连续的碰撞检测，如果鼠标移动得足够快并且 **CollisionObject2D** 的区域很小，则该信号可能不会按预期的顺序发出。如果另一个 **CollisionObject2D** 与所讨论的 **CollisionObject2D** 重叠，则也可能不会发出该信号。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Emitted when the mouse pointer exits all this object's shapes. Requires :ref:`in
 
 **mouse_shape_entered**\ (\ shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_signal_mouse_shape_entered>`
 
-Emitted when the mouse pointer enters any of this object's shapes or moves from one shape to another. ``shape_idx`` is the child index of the newly entered :ref:`Shape2D<class_Shape2D>`. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
+当鼠标指针进入该实体的任何形状或从一种形状移动到另一种形状时发出。\ ``shape_idx`` 是新进入的 :ref:`Shape2D<class_Shape2D>` 的子索引。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Emitted when the mouse pointer enters any of this object's shapes or moves from 
 
 **mouse_shape_exited**\ (\ shape_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_signal_mouse_shape_exited>`
 
-Emitted when the mouse pointer exits any of this object's shapes. ``shape_idx`` is the child index of the exited :ref:`Shape2D<class_Shape2D>`. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
+当鼠标指针离开该实体的任何形状时发出。\ ``shape_idx`` 是退出的 :ref:`Shape2D<class_Shape2D>` 的子索引。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-section-separator
 
@@ -183,8 +183,8 @@ Emitted when the mouse pointer exits any of this object's shapes. ``shape_idx`` 
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CollisionObject2D_DisableMode:
 
@@ -198,9 +198,9 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`DisableMode<enum_CollisionObject2D_DisableMode>` **DISABLE_MODE_REMOVE** = ``0``
 
-When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, remove from the physics simulation to stop all physics interactions with this **CollisionObject2D**.
+当 :ref:`Node.process_mode<class_Node_property_process_mode>` 被设置为 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 时，从物理仿真中移除，停止与此 **CollisionObject2D** 的所有物理交互。
 
-Automatically re-added to the physics simulation when the :ref:`Node<class_Node>` is processed again.
+当该 :ref:`Node<class_Node>` 再次被处理时，会自动重新加入到物理仿真中。
 
 .. _class_CollisionObject2D_constant_DISABLE_MODE_MAKE_STATIC:
 
@@ -208,9 +208,9 @@ Automatically re-added to the physics simulation when the :ref:`Node<class_Node>
 
 :ref:`DisableMode<enum_CollisionObject2D_DisableMode>` **DISABLE_MODE_MAKE_STATIC** = ``1``
 
-When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, make the body static. Doesn't affect :ref:`Area2D<class_Area2D>`. :ref:`PhysicsBody2D<class_PhysicsBody2D>` can't be affected by forces or other bodies while static.
+当 :ref:`Node.process_mode<class_Node_property_process_mode>` 被设置为 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 时，使物体进入静态模式。不影响 :ref:`Area2D<class_Area2D>`\ 。处于静态模式的 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 不会受到力和其他物体的影响。
 
-Automatically set :ref:`PhysicsBody2D<class_PhysicsBody2D>` back to its original mode when the :ref:`Node<class_Node>` is processed again.
+当该 :ref:`Node<class_Node>` 再次被处理时，会自动将 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 设置回其原始模式。
 
 .. _class_CollisionObject2D_constant_DISABLE_MODE_KEEP_ACTIVE:
 
@@ -218,7 +218,7 @@ Automatically set :ref:`PhysicsBody2D<class_PhysicsBody2D>` back to its original
 
 :ref:`DisableMode<enum_CollisionObject2D_DisableMode>` **DISABLE_MODE_KEEP_ACTIVE** = ``2``
 
-When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`, do not affect the physics simulation.
+当 :ref:`Node.process_mode<class_Node_property_process_mode>` 被设置为 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 时，不影响物理仿真。
 
 .. rst-class:: classref-section-separator
 
@@ -226,8 +226,8 @@ When :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CollisionObject2D_property_collision_layer:
 
@@ -240,9 +240,9 @@ Property Descriptions
 - |void| **set_collision_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_layer**\ (\ )
 
-The physics layers this CollisionObject2D is in. Collision objects can exist in one or more of 32 different layers. See also :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`.
+此 CollisionObject2D 所在的物理层。碰撞对象可以存在于 32 个不同层中的一个或多个中。另见 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`\ 。
 
-\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+\ **注意：**\ 只有当对象 B 在对象 A 扫描的任何层中时，对象 A 才能检测到与对象 B 的接触。有关更多信息，请参阅文档中的\ `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -259,9 +259,9 @@ The physics layers this CollisionObject2D is in. Collision objects can exist in 
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers this CollisionObject2D scans. Collision objects can scan one or more of 32 different layers. See also :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`.
+此 CollisionObject2D 扫描的物理层。碰撞对象可以扫描 32 个不同层中的一个或多个。另见 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`\ 。
 
-\ **Note:** Object A can detect a contact with object B only if object B is in any of the layers that object A scans. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+\ **注意：**\ 只有当对象 B 在对象 A 扫描的任何层中时，对象 A 才能检测到与对象 B 的接触。有关更多信息，请参阅文档中的\ `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ The physics layers this CollisionObject2D scans. Collision objects can scan one 
 - |void| **set_collision_priority**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_priority**\ (\ )
 
-The priority used to solve colliding when occurring penetration. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
+发生穿透时用于解决碰撞的优先级。优先级越高，对物体的穿透度就越低。例如，可以用来防止玩家突破关卡的边界。
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ The priority used to solve colliding when occurring penetration. The higher the 
 - |void| **set_disable_mode**\ (\ value\: :ref:`DisableMode<enum_CollisionObject2D_DisableMode>`\ )
 - :ref:`DisableMode<enum_CollisionObject2D_DisableMode>` **get_disable_mode**\ (\ )
 
-Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property_process_mode>` is set to :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`.
+定义 :ref:`Node.process_mode<class_Node_property_process_mode>` 为 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 时的物理行为。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Defines the behavior in physics when :ref:`Node.process_mode<class_Node_property
 - |void| **set_pickable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pickable**\ (\ )
 
-If ``true``, this object is pickable. A pickable object can detect the mouse pointer entering/leaving, and if the mouse is inside it, report input events. Requires at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
+如果为 ``true`` 则可拾取该对象。可拾取的对象可以检测到鼠标指针的进入和离开，鼠标位于其中时会报告输入事件。要求至少设置一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-section-separator
 
@@ -320,8 +320,8 @@ If ``true``, this object is pickable. A pickable object can detect the mouse poi
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CollisionObject2D_private_method__input_event:
 
@@ -329,9 +329,9 @@ Method Descriptions
 
 |void| **_input_event**\ (\ viewport\: :ref:`Viewport<class_Viewport>`, event\: :ref:`InputEvent<class_InputEvent>`, shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__input_event>`
 
-Accepts unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``shape_idx`` is the child index of the clicked :ref:`Shape2D<class_Shape2D>`. Connect to :ref:`input_event<class_CollisionObject2D_signal_input_event>` to easily pick up these events.
+接收未处理的 :ref:`InputEvent<class_InputEvent>`\ 。\ ``shape_idx`` 是被点击的 :ref:`Shape2D<class_Shape2D>` 的子索引。连接到 :ref:`input_event<class_CollisionObject2D_signal_input_event>` 即可轻松获取这些事件。
 
-\ **Note:** :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set.
+\ **注意：**\ :ref:`_input_event()<class_CollisionObject2D_private_method__input_event>` 要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true``\ ，并且至少要设置一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ Accepts unhandled :ref:`InputEvent<class_InputEvent>`\ s. ``shape_idx`` is the c
 
 |void| **_mouse_enter**\ (\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__mouse_enter>`
 
-Called when the mouse pointer enters any of this object's shapes. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this function to be called.
+当鼠标指针进入该实体的任何形状时调用。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置了一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。请注意，在单个 **CollisionObject2D** 中的不同形状之间移动，不会导致该函数被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ Called when the mouse pointer enters any of this object's shapes. Requires :ref:
 
 |void| **_mouse_exit**\ (\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__mouse_exit>`
 
-Called when the mouse pointer exits all this object's shapes. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be set. Note that moving between different shapes within a single **CollisionObject2D** won't cause this function to be called.
+当鼠标指针退出该实体的所有形状时调用。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少设置了一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。请注意，在单个 **CollisionObject2D** 中的不同形状之间移动，不会导致该函数被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -367,7 +367,7 @@ Called when the mouse pointer exits all this object's shapes. Requires :ref:`inp
 
 |void| **_mouse_shape_enter**\ (\ shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__mouse_shape_enter>`
 
-Called when the mouse pointer enters any of this object's shapes or moves from one shape to another. ``shape_idx`` is the child index of the newly entered :ref:`Shape2D<class_Shape2D>`. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be called.
+当鼠标指针进入该实体的任何形状或从一个形状移动到另一个形状时调用。\ ``shape_idx`` 是新进入的 :ref:`Shape2D<class_Shape2D>` 的子索引。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且要至少设置一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ Called when the mouse pointer enters any of this object's shapes or moves from o
 
 |void| **_mouse_shape_exit**\ (\ shape_idx\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_CollisionObject2D_private_method__mouse_shape_exit>`
 
-Called when the mouse pointer exits any of this object's shapes. ``shape_idx`` is the child index of the exited :ref:`Shape2D<class_Shape2D>`. Requires :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` to be ``true`` and at least one :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` bit to be called.
+当鼠标指针离开该实体的任何形状时调用。\ ``shape_idx`` 是退出的 :ref:`Shape2D<class_Shape2D>` 的子索引。要求 :ref:`input_pickable<class_CollisionObject2D_property_input_pickable>` 为 ``true`` 并且至少要设置一个 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 位。
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Called when the mouse pointer exits any of this object's shapes. ``shape_idx`` i
 
 :ref:`int<class_int>` **create_shape_owner**\ (\ owner\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_CollisionObject2D_method_create_shape_owner>`
 
-Creates a new shape owner for the given object. Returns ``owner_id`` of the new owner for future reference.
+为给定对象创建一个新的形状所有者。返回 ``owner_id``\ 的新所有者，供将来引用。
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Creates a new shape owner for the given object. Returns ``owner_id`` of the new 
 
 :ref:`bool<class_bool>` **get_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_collision_layer_value>`
 
-Returns whether or not the specified layer of the :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Returns whether or not the specified layer of the :ref:`collision_layer<class_Co
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_collision_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Returns whether or not the specified layer of the :ref:`collision_mask<class_Col
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_rid>`
 
-Returns the object's :ref:`RID<class_RID>`.
+返回对象的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Returns the object's :ref:`RID<class_RID>`.
 
 :ref:`float<class_float>` **get_shape_owner_one_way_collision_margin**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_get_shape_owner_one_way_collision_margin>`
 
-Returns the ``one_way_collision_margin`` of the shape owner identified by given ``owner_id``.
+返回由给定 ``owner_id`` 标识的形状所有者的 ``one_way_collision_margin``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Returns the ``one_way_collision_margin`` of the shape owner identified by given 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_shape_owners**\ (\ ) :ref:`🔗<class_CollisionObject2D_method_get_shape_owners>`
 
-Returns an :ref:`Array<class_Array>` of ``owner_id`` identifiers. You can use these ids in other methods that take ``owner_id`` as an argument.
+返回一个 ``owner_id`` 标识符的 :ref:`Array<class_Array>`\ 。你可以在其他使用 ``owner_id`` 作为参数的方法中使用这些 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ Returns an :ref:`Array<class_Array>` of ``owner_id`` identifiers. You can use th
 
 :ref:`bool<class_bool>` **is_shape_owner_disabled**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_is_shape_owner_disabled>`
 
-If ``true``, the shape owner and its shapes are disabled.
+如果为 ``true``\ ，则禁用形状所有者及其形状。
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ If ``true``, the shape owner and its shapes are disabled.
 
 :ref:`bool<class_bool>` **is_shape_owner_one_way_collision_enabled**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_is_shape_owner_one_way_collision_enabled>`
 
-Returns ``true`` if collisions for the shape owner originating from this **CollisionObject2D** will not be reported to collided with **CollisionObject2D**\ s.
+返回 ``true``\ ，如果源于这个 **CollisionObject2D** 的形状所有者的碰撞不会被报告给 **CollisionObject2D**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +487,7 @@ Returns ``true`` if collisions for the shape owner originating from this **Colli
 
 |void| **remove_shape_owner**\ (\ owner_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_method_remove_shape_owner>`
 
-Removes the given shape owner.
+移除给定形状的所有者。
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ Removes the given shape owner.
 
 |void| **set_collision_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_set_collision_layer_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>`, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`collision_layer<class_CollisionObject2D_property_collision_layer>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ Based on ``value``, enables or disables the specified layer in the :ref:`collisi
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_set_collision_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`collision_mask<class_CollisionObject2D_property_collision_mask>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Based on ``value``, enables or disables the specified layer in the :ref:`collisi
 
 :ref:`int<class_int>` **shape_find_owner**\ (\ shape_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_shape_find_owner>`
 
-Returns the ``owner_id`` of the given shape.
+返回指定形状的 ``owner_id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Returns the ``owner_id`` of the given shape.
 
 |void| **shape_owner_add_shape**\ (\ owner_id\: :ref:`int<class_int>`, shape\: :ref:`Shape2D<class_Shape2D>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_add_shape>`
 
-Adds a :ref:`Shape2D<class_Shape2D>` to the shape owner.
+给形状所有者添加一个 :ref:`Shape2D<class_Shape2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Adds a :ref:`Shape2D<class_Shape2D>` to the shape owner.
 
 |void| **shape_owner_clear_shapes**\ (\ owner_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_clear_shapes>`
 
-Removes all shapes from the shape owner.
+移除形状所有者的所有形状。
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ Removes all shapes from the shape owner.
 
 :ref:`Object<class_Object>` **shape_owner_get_owner**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_shape_owner_get_owner>`
 
-Returns the parent object of the given shape owner.
+返回给定形状所有者的父对象。
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ Returns the parent object of the given shape owner.
 
 :ref:`Shape2D<class_Shape2D>` **shape_owner_get_shape**\ (\ owner_id\: :ref:`int<class_int>`, shape_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_shape_owner_get_shape>`
 
-Returns the :ref:`Shape2D<class_Shape2D>` with the given ID from the given shape owner.
+从给定形状所有者返回具有给定 ID 的 :ref:`Shape2D<class_Shape2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +583,7 @@ Returns the :ref:`Shape2D<class_Shape2D>` with the given ID from the given shape
 
 :ref:`int<class_int>` **shape_owner_get_shape_count**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_shape_owner_get_shape_count>`
 
-Returns the number of shapes the given shape owner contains.
+返回给定形状所有者包含的形状数量。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ Returns the number of shapes the given shape owner contains.
 
 :ref:`int<class_int>` **shape_owner_get_shape_index**\ (\ owner_id\: :ref:`int<class_int>`, shape_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_shape_owner_get_shape_index>`
 
-Returns the child index of the :ref:`Shape2D<class_Shape2D>` with the given ID from the given shape owner.
+从给定形状所有者返回具有给定 ID 的 :ref:`Shape2D<class_Shape2D>` 的子索引。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ Returns the child index of the :ref:`Shape2D<class_Shape2D>` with the given ID f
 
 :ref:`Transform2D<class_Transform2D>` **shape_owner_get_transform**\ (\ owner_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CollisionObject2D_method_shape_owner_get_transform>`
 
-Returns the shape owner's :ref:`Transform2D<class_Transform2D>`.
+返回形状所有者的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Returns the shape owner's :ref:`Transform2D<class_Transform2D>`.
 
 |void| **shape_owner_remove_shape**\ (\ owner_id\: :ref:`int<class_int>`, shape_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_remove_shape>`
 
-Removes a shape from the given shape owner.
+从给定的形状所有者中移除一个形状。
 
 .. rst-class:: classref-item-separator
 
@@ -631,7 +631,7 @@ Removes a shape from the given shape owner.
 
 |void| **shape_owner_set_disabled**\ (\ owner_id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_disabled>`
 
-If ``true``, disables the given shape owner.
+如果为 ``true``\ ，则禁用给定的形状所有者。
 
 .. rst-class:: classref-item-separator
 
@@ -643,7 +643,7 @@ If ``true``, disables the given shape owner.
 
 |void| **shape_owner_set_one_way_collision**\ (\ owner_id\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_one_way_collision>`
 
-If ``enable`` is ``true``, collisions for the shape owner originating from this **CollisionObject2D** will not be reported to collided with **CollisionObject2D**\ s.
+如果 ``enable`` 为 ``true``\ ，则源自该 **CollisionObject2D** 的形状所有者的碰撞将不会被报告为与 **CollisionObject2D** 发生碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +655,7 @@ If ``enable`` is ``true``, collisions for the shape owner originating from this 
 
 |void| **shape_owner_set_one_way_collision_margin**\ (\ owner_id\: :ref:`int<class_int>`, margin\: :ref:`float<class_float>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_one_way_collision_margin>`
 
-Sets the ``one_way_collision_margin`` of the shape owner identified by given ``owner_id`` to ``margin`` pixels.
+将由给定 ``owner_id`` 标识的形状所有者的 ``one_way_collision_margin`` 设置为 ``margin`` 像素。
 
 .. rst-class:: classref-item-separator
 
@@ -667,14 +667,14 @@ Sets the ``one_way_collision_margin`` of the shape owner identified by given ``o
 
 |void| **shape_owner_set_transform**\ (\ owner_id\: :ref:`int<class_int>`, transform\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_CollisionObject2D_method_shape_owner_set_transform>`
 
-Sets the :ref:`Transform2D<class_Transform2D>` of the given shape owner.
+设置给定形状所有者的 :ref:`Transform2D<class_Transform2D>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,25 +5,25 @@
 RDFramebufferPass
 =================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Framebuffer pass attachment description (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+框架緩衝區階段的附件描述（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This class contains the list of attachment descriptions for a framebuffer pass. Each points with an index to a previously supplied list of texture attachments.
+該類包含框架緩衝區通道的附件描述列表。每個點都有一個指向先前提供的紋理附件列表的索引。
 
-Multipass framebuffers can optimize some configurations in mobile. On desktop, they provide little to no advantage.
+多通道框架緩衝區，可以優化移動裝置中的某些配置；在桌面裝置上，它們幾乎沒有優勢。
 
-This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
+這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_RDFramebufferPass_constant_ATTACHMENT_UNUSED:
 
@@ -55,7 +55,7 @@ Constants
 
 **ATTACHMENT_UNUSED** = ``-1`` :ref:`🔗<class_RDFramebufferPass_constant_ATTACHMENT_UNUSED>`
 
-Attachment is unused.
+附件未使用。
 
 .. rst-class:: classref-section-separator
 
@@ -63,8 +63,8 @@ Attachment is unused.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RDFramebufferPass_property_color_attachments:
 
@@ -77,7 +77,7 @@ Property Descriptions
 - |void| **set_color_attachments**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_color_attachments**\ (\ )
 
-Color attachments in order starting from 0. If this attachment is not used by the shader, pass ATTACHMENT_UNUSED to skip.
+從 0 開始按順序為附件著色。如果該附件未被著色器使用，則傳遞 ATTACHMENT_UNUSED 以跳過。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -96,7 +96,7 @@ Color attachments in order starting from 0. If this attachment is not used by th
 - |void| **set_depth_attachment**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_depth_attachment**\ (\ )
 
-Depth attachment. ATTACHMENT_UNUSED should be used if no depth buffer is required for this pass.
+深度附件。如果該通道不需要深度緩衝區，則應使用 ATTACHMENT_UNUSED。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Depth attachment. ATTACHMENT_UNUSED should be used if no depth buffer is require
 - |void| **set_input_attachments**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_input_attachments**\ (\ )
 
-Used for multipass framebuffers (more than one render pass). Converts an attachment to an input. Make sure to also supply it properly in the :ref:`RDUniform<class_RDUniform>` for the uniform set.
+用於多通道框架緩衝區（不止一個算繪通道）。將一個附件轉換為一個輸入。確保還在 :ref:`RDUniform<class_RDUniform>` 中為 uniform 集正確提供它。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -132,7 +132,7 @@ Used for multipass framebuffers (more than one render pass). Converts an attachm
 - |void| **set_preserve_attachments**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_preserve_attachments**\ (\ )
 
-Attachments to preserve in this pass (otherwise they are erased).
+要在該階段中保留的附件（否則它們將被刪除）。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -151,16 +151,16 @@ Attachments to preserve in this pass (otherwise they are erased).
 - |void| **set_resolve_attachments**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_resolve_attachments**\ (\ )
 
-If the color attachments are multisampled, non-multisampled resolve attachments can be provided.
+如果顏色附件是多重取樣的，則可以提供非多重取樣的解析附件。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

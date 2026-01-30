@@ -5,30 +5,30 @@
 RootMotionView
 ==============
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Editor-only helper for setting up root motion in :ref:`AnimationMixer<class_AnimationMixer>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-*Root motion* refers to an animation technique where a mesh's skeleton is used to give impulse to a character. When working with 3D animations, a popular technique is for animators to use the root skeleton bone to give motion to the rest of the skeleton. This allows animating characters in a way where steps actually match the floor below. It also allows precise interaction with objects during cinematics. See also :ref:`AnimationMixer<class_AnimationMixer>`.
-
-\ **Note:** **RootMotionView** is only visible in the editor. It will be hidden automatically in the running project.
+在 :ref:`AnimationTree<class_AnimationTree>` 中設定根運動的僅編輯器可用的輔助工具。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `Using AnimationTree - Root motion <../tutorials/animation/animation_tree.html#root-motion>`__
+*根運動*\ （Root Motion）是一種動畫技術，通過使用網格的骨架為角色提供沖量。在處理 3D 動畫時，動畫師通常使用根骨骼來為其餘的骨骼提供動作，從而使得角色的動畫能夠準確地配對地面，並實作在電影中與物體的精確互動。另請參閱 :ref:`AnimationTree<class_AnimationTree>`\ 。
+
+\ **注意：**\ **RootMotionView** 僅在編輯器中可見。在運作的專案中將自動隱藏。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `使用 AnimationTree - 根運動 <../tutorials/animation/animation_tree.html#root-motion>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RootMotionView_property_animation_path:
 
@@ -65,7 +65,7 @@ Property Descriptions
 - |void| **set_animation_path**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_animation_path**\ (\ )
 
-Path to an :ref:`AnimationMixer<class_AnimationMixer>` node to use as a basis for root motion.
+用作根運動的基的 :ref:`AnimationTree<class_AnimationTree>` 節點的路徑。
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +82,7 @@ Path to an :ref:`AnimationMixer<class_AnimationMixer>` node to use as a basis fo
 - |void| **set_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_size**\ (\ )
 
-The grid's cell size in 3D units.
+以 3D 單位表示的網格單元大小。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ The grid's cell size in 3D units.
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The grid's color.
+網格的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ The grid's color.
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The grid's radius in 3D units. The grid's opacity will fade gradually as the distance from the origin increases until this :ref:`radius<class_RootMotionView_property_radius>` is reached.
+以 3D 單位表示的網格半徑。隨著與原點的距離增加，網格的不透明度將逐漸消失，直到達到此半徑 :ref:`radius<class_RootMotionView_property_radius>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -133,14 +133,14 @@ The grid's radius in 3D units. The grid's opacity will fade gradually as the dis
 - |void| **set_zero_y**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_zero_y**\ (\ )
 
-If ``true``, the grid's points will all be on the same Y coordinate (*local* Y = 0). If ``false``, the points' original Y coordinate is preserved.
+如果為 ``true``\ ，則網格的點都將位於相同的 Y 座標上（\ *local* Y = 0）。如果 ``false``\ ，則保留點的原始 Y 座標。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

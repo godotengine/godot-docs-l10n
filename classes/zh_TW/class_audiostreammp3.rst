@@ -5,23 +5,23 @@
 AudioStreamMP3
 ==============
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-MP3 audio stream driver.
+MP3 音訊串流驅動程式。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-MP3 audio stream driver. See :ref:`data<class_AudioStreamMP3_property_data>` if you want to load an MP3 file at run-time.
+MP3 音訊串流驅動程式。如果想在執行時載入 MP3 檔案，請參考 :ref:`data<class_AudioStreamMP3_property_data>`\ 。
 
-\ **Note:** This class can optionally support legacy MP1 and MP2 formats, provided that the engine is compiled with the ``minimp3_extra_formats=yes`` SCons option. These extra formats are not enabled by default.
+\ **注意：** 只要在編譯引擎時加入 ``minimp3_extra_formats=yes`` 這個 SCons 參數，本類別便能選擇性地支援舊式的 MP1 及 MP2 格式；這些額外格式預設為停用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioStreamMP3_property_bar_beats:
 
@@ -131,9 +131,9 @@ Property Descriptions
 - |void| **set_data**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_data**\ (\ )
 
-Contains the audio data in bytes.
+包含以位元組為單位的音訊資料。
 
-You can load a file without having to import it beforehand using the code snippet below. Keep in mind that this snippet loads the whole file into memory and may not be ideal for huge files (hundreds of megabytes or more).
+你可以使用下列程式碼片段在執行時載入檔案，而無須事先匯入。請注意，此程式碼會將整個檔案一次載入至記憶體，對於超大檔案（數百 MB 以上）並不合適。
 
 
 .. tabs::
@@ -175,7 +175,7 @@ You can load a file without having to import it beforehand using the code snippe
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the stream will automatically loop when it reaches the end.
+若為 ``true``\ ，當串流播放到結尾時會自動迴圈。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ If ``true``, the stream will automatically loop when it reaches the end.
 - |void| **set_loop_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_loop_offset**\ (\ )
 
-Time in seconds at which the stream starts after being looped.
+迴圈後串流重新開始的時間（秒）。
 
 .. rst-class:: classref-section-separator
 
@@ -200,8 +200,8 @@ Time in seconds at which the stream starts after being looped.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamMP3_method_load_from_buffer:
 
@@ -209,7 +209,7 @@ Method Descriptions
 
 :ref:`AudioStreamMP3<class_AudioStreamMP3>` **load_from_buffer**\ (\ stream_data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_AudioStreamMP3_method_load_from_buffer>`
 
-Creates a new **AudioStreamMP3** instance from the given buffer. The buffer must contain MP3 data.
+從給定的緩衝區建立新的 **AudioStreamMP3** 實例。該緩衝區必須包含 MP3 資料。
 
 .. rst-class:: classref-item-separator
 
@@ -221,14 +221,14 @@ Creates a new **AudioStreamMP3** instance from the given buffer. The buffer must
 
 :ref:`AudioStreamMP3<class_AudioStreamMP3>` **load_from_file**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_AudioStreamMP3_method_load_from_file>`
 
-Creates a new **AudioStreamMP3** instance from the given file path. The file must be in MP3 format.
+從給定的檔案路徑建立新的 **AudioStreamMP3** 實例。該檔案必須為 MP3 格式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

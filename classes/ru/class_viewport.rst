@@ -845,13 +845,13 @@ enum **DebugDraw**: :ref:`🔗<enum_Viewport_DebugDraw>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SDFGI_PROBES** = ``17``
 
-Draws the probes used for signed distance field global illumination (SDFGI).
+Отображает зонды, используемые для глобального освещения с учетом знаковых расстояний (SDFGI).
 
-When in the editor, left-clicking a probe will display additional bright dots that show its occlusion information. A white dot means the light is not occluded at all at the dot's position, while a red dot means the light is fully occluded. Intermediate values are possible.
+В редакторе щелчок левой кнопкой мыши по зонду отобразит дополнительные яркие точки, показывающие информацию о его перекрытии. Белая точка означает, что свет в точке вообще не перекрыт, а красная точка означает, что свет полностью перекрыт. Возможны промежуточные значения.
 
-Does nothing if the current environment's :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` is ``false``.
+Ничего не делает, если параметр :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` текущей среды имеет значение ``false``.
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **Примечание:** Поддерживается только при использовании метода рендеринга Forward+.
 
 .. _class_Viewport_constant_DEBUG_DRAW_GI_BUFFER:
 
@@ -1290,9 +1290,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_canvas_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_canvas_cull_mask**\ (\ )
 
-The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_CanvasItem>` nodes.
+Слои рендеринга, в которых этот **Viewport** отображает узлы :ref:`CanvasItem<class_CanvasItem>`.
 
-\ **Note:** A :ref:`CanvasItem<class_CanvasItem>` does not inherit its parents' visibility layers. See :ref:`CanvasItem.visibility_layer<class_CanvasItem_property_visibility_layer>`'s description for details.
+\ **Примечание:** :ref:`CanvasItem<class_CanvasItem>` не наследует слои видимости своих родительских элементов. Подробности см. в описании :ref:`CanvasItem.visibility_layer<class_CanvasItem_property_visibility_layer>`.
 
 .. rst-class:: classref-item-separator
 

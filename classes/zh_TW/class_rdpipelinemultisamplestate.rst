@@ -5,21 +5,21 @@
 RDPipelineMultisampleState
 ==========================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Pipeline multisample state (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+管線的多重取樣狀態（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-**RDPipelineMultisampleState** is used to control how multisample or supersample antialiasing is being performed when rendering using :ref:`RenderingDevice<class_RenderingDevice>`.
+**RDPipelineMultisampleState** 控制的是在使用 :ref:`RenderingDevice<class_RenderingDevice>` 進行算繪時，如何進行多重取樣和超取樣抗鋸齒。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RDPipelineMultisampleState_property_enable_alpha_to_coverage:
 
@@ -58,7 +58,7 @@ Property Descriptions
 - |void| **set_enable_alpha_to_coverage**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_alpha_to_coverage**\ (\ )
 
-If ``true``, alpha to coverage is enabled. This generates a temporary coverage value based on the alpha component of the fragment's first color output. This allows alpha transparency to make use of multisample antialiasing.
+如果為 ``true``\ ，則啟用 Alpha 為覆蓋面。此時會根據片段的第一個顏色輸出的 Alpha 分量生成臨時的覆蓋值。這樣就能夠讓 Alpha 透明使用多重取樣抗鋸齒。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ If ``true``, alpha to coverage is enabled. This generates a temporary coverage v
 - |void| **set_enable_alpha_to_one**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_alpha_to_one**\ (\ )
 
-If ``true``, alpha is forced to either ``0.0`` or ``1.0``. This allows hardening the edges of antialiased alpha transparencies. Only relevant if :ref:`enable_alpha_to_coverage<class_RDPipelineMultisampleState_property_enable_alpha_to_coverage>` is ``true``.
+如果為 ``true``\ ，則會將 Alpha 強制為 ``0.0`` 或 ``1.0``\ 。這樣就能夠讓 Alpha 透明抗鋸齒後的邊緣更銳利。僅在 :ref:`enable_alpha_to_coverage<class_RDPipelineMultisampleState_property_enable_alpha_to_coverage>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ If ``true``, alpha is forced to either ``0.0`` or ``1.0``. This allows hardening
 - |void| **set_enable_sample_shading**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_sample_shading**\ (\ )
 
-If ``true``, enables per-sample shading which replaces MSAA by SSAA. This provides higher quality antialiasing that works with transparent (alpha scissor) edges. This has a very high performance cost. See also :ref:`min_sample_shading<class_RDPipelineMultisampleState_property_min_sample_shading>`. See the `per-sample shading Vulkan documentation <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#primsrast-sampleshading>`__ for more details.
+如果為 ``true``\ ，則會啟用逐樣本著色，使用 SSAA 代替 MSAA。這樣能夠提供更高品質的抗鋸齒，支援透明邊緣（Alpha 裁剪）。性能消耗很高。另見 :ref:`min_sample_shading<class_RDPipelineMultisampleState_property_min_sample_shading>`\ 。詳見\ `逐樣本著色 Vulkan 文件 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#primsrast-sampleshading>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ If ``true``, enables per-sample shading which replaces MSAA by SSAA. This provid
 - |void| **set_min_sample_shading**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_sample_shading**\ (\ )
 
-The multiplier of :ref:`sample_count<class_RDPipelineMultisampleState_property_sample_count>` that determines how many samples are performed for each fragment. Must be between ``0.0`` and ``1.0`` (inclusive). Only effective if :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` is ``true``. If :ref:`min_sample_shading<class_RDPipelineMultisampleState_property_min_sample_shading>` is ``1.0``, fragment invocation must only read from the coverage index sample. Tile image access must not be used if :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` is *not* ``1.0``.
+:ref:`sample_count<class_RDPipelineMultisampleState_property_sample_count>` 的乘數，決定每個片段執行多少次取樣。必須在 ``0.0`` 和 ``1.0`` 之間（含端點）。僅在 :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` 為 ``true`` 時有效。如果 :ref:`min_sample_shading<class_RDPipelineMultisampleState_property_min_sample_shading>` 為 ``1.0``\ ，則片段呼叫必須僅從覆蓋索引樣本中讀取。如果 :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` *不是* ``1.0``\ ，則不能對平鋪圖像進行存取。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ The multiplier of :ref:`sample_count<class_RDPipelineMultisampleState_property_s
 - |void| **set_sample_count**\ (\ value\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>`\ )
 - :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **get_sample_count**\ (\ )
 
-The number of MSAA samples (or SSAA samples if :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` is ``true``) to perform. Higher values result in better antialiasing, at the cost of performance.
+要進行 MSAA 取樣的數量（如果 :ref:`enable_sample_shading<class_RDPipelineMultisampleState_property_enable_sample_shading>` 為 ``true`` 則為 SSAA 取樣）。值越高，抗鋸齒效果越好，但會以性能為代價。
 
 .. rst-class:: classref-item-separator
 
@@ -143,14 +143,14 @@ The number of MSAA samples (or SSAA samples if :ref:`enable_sample_shading<class
 - |void| **set_sample_masks**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`int<class_int>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`int<class_int>`\] **get_sample_masks**\ (\ )
 
-The sample mask array. See the `sample mask Vulkan documentation <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#fragops-samplemask>`__ for more details.
+樣本遮罩。詳情見 `Vulkan 的樣本遮罩文件 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#fragops-samplemask>`__\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

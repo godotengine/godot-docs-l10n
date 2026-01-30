@@ -5,21 +5,21 @@
 EditorResourcePreviewGenerator
 ==============================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Custom generator of previews.
+自定义的预览生成器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Custom code to generate previews. Check :ref:`EditorSettings.filesystem/file_dialog/thumbnail_size<class_EditorSettings_property_filesystem/file_dialog/thumbnail_size>` to find a proper size to generate previews at.
+生成预览的自定义代码。请查看 :ref:`EditorSettings.filesystem/file_dialog/thumbnail_size<class_EditorSettings_property_filesystem/file_dialog/thumbnail_size>` 找出适合做预览的尺寸。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorResourcePreviewGenerator_private_method__can_generate_small_preview:
 
@@ -53,9 +53,9 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **_can_generate_small_preview**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__can_generate_small_preview>`
 
-If this function returns ``true``, the generator will call :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` or :ref:`_generate_from_path()<class_EditorResourcePreviewGenerator_private_method__generate_from_path>` for small previews as well.
+如果该函数返回 ``true``\ ，则该生成器也会为小型预览调用 :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` 或 :ref:`_generate_from_path()<class_EditorResourcePreviewGenerator_private_method__generate_from_path>`\ 。
 
-By default, it returns ``false``.
+默认情况下，它返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -67,13 +67,13 @@ By default, it returns ``false``.
 
 :ref:`Texture2D<class_Texture2D>` **_generate**\ (\ resource\: :ref:`Resource<class_Resource>`, size\: :ref:`Vector2i<class_Vector2i>`, metadata\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate>`
 
-Generate a preview from a given resource with the specified size. This must always be implemented.
+根据给定的资源生成指定大小的预览。必须始终实现。
 
-Returning ``null`` is an OK way to fail and let another generator take care.
+失败时允许返回 ``null``\ ，会由其他生成器接手。
 
-Care must be taken because this function is always called from a thread (not the main thread).
+必须保持谨慎，因为这个函数始终是从（主线程以外的）线程中调用的。
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (like image size, sample length etc.).
+可以修改 ``metadata`` 字典，从而保存能够在 :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 中使用的文件相关的源数据（例如图片大小、采样长度等）。
 
 .. rst-class:: classref-item-separator
 
@@ -85,13 +85,13 @@ Care must be taken because this function is always called from a thread (not the
 
 :ref:`Texture2D<class_Texture2D>` **_generate_from_path**\ (\ path\: :ref:`String<class_String>`, size\: :ref:`Vector2i<class_Vector2i>`, metadata\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate_from_path>`
 
-Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`.
+根据路径直接生成指定大小的预览。可选实现，默认代码会在加载后调用 :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>`\ 。
 
-Returning ``null`` is an OK way to fail and let another generator take care.
+失败时允许返回 ``null``\ ，会由其他生成器接手。
 
-Care must be taken because this function is always called from a thread (not the main thread).
+必须保持谨慎，因为这个函数始终是从（主线程以外的）线程中调用的。
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` (like image size, sample length etc.).
+可以修改 ``metadata`` 字典，从而保存能够在 :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path()<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 中使用的文件相关的源数据（例如图片大小、采样长度等）。
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ Care must be taken because this function is always called from a thread (not the
 
 :ref:`bool<class_bool>` **_generate_small_preview_automatically**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__generate_small_preview_automatically>`
 
-If this function returns ``true``, the generator will automatically generate the small previews from the normal preview texture generated by the methods :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` or :ref:`_generate_from_path()<class_EditorResourcePreviewGenerator_private_method__generate_from_path>`.
+如果该函数返回 ``true``\ ，则该生成器将自动从通过方法 :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` 或 :ref:`_generate_from_path()<class_EditorResourcePreviewGenerator_private_method__generate_from_path>` 生成的普通预览纹理生成小型预览。
 
-By default, it returns ``false``.
+默认情况下，它返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ By default, it returns ``false``.
 
 :ref:`bool<class_bool>` **_handles**\ (\ type\: :ref:`String<class_String>`\ ) |virtual| |required| |const| :ref:`🔗<class_EditorResourcePreviewGenerator_private_method__handles>`
 
-Returns ``true`` if your generator supports the resource of type ``type``.
+如果你的生成器支持类型为 ``type`` 的资源，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -131,12 +131,12 @@ Returns ``true`` if your generator supports the resource of type ``type``.
 
 Call from within :ref:`_generate()<class_EditorResourcePreviewGenerator_private_method__generate>` to request the rendering server draw to the ``viewport``.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

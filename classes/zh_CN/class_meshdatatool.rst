@@ -5,20 +5,20 @@
 MeshDataTool
 ============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Helper tool to access and edit :ref:`Mesh<class_Mesh>` data.
+用于访问和编辑 :ref:`Mesh<class_Mesh>` 数据的辅助工具。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-MeshDataTool provides access to individual vertices in a :ref:`Mesh<class_Mesh>`. It allows users to read and edit vertex data of meshes. It also creates an array of faces and edges.
+MeshDataTool 提供对 :ref:`Mesh<class_Mesh>` 中各个顶点的访问。它允许用户读取和编辑网格的顶点数据。它还创建了一系列面和边。
 
-To use MeshDataTool, load a mesh with :ref:`create_from_surface()<class_MeshDataTool_method_create_from_surface>`. When you are finished editing the data commit the data to a mesh with :ref:`commit_to_surface()<class_MeshDataTool_method_commit_to_surface>`.
+要使用 MeshDataTool，请使用 :ref:`create_from_surface()<class_MeshDataTool_method_create_from_surface>` 加载一个网格。完成数据编辑后，使用 :ref:`commit_to_surface()<class_MeshDataTool_method_commit_to_surface>` 将数据提交到一个网格。
 
-Below is an example of how MeshDataTool may be used.
+下面是如何使用 MeshDataTool 的示例。
 
 
 .. tabs::
@@ -31,9 +31,9 @@ Below is an example of how MeshDataTool may be used.
     mdt.create_from_surface(mesh, 0)
     for i in range(mdt.get_vertex_count()):
         var vertex = mdt.get_vertex(i)
-        # In this example we extend the mesh by one unit, which results in separated faces as it is flat shaded.
+        # 在这个例子中，我们将网格挤出一个单位，这会导致分离的面，因为它是平直着色的。
         vertex += mdt.get_vertex_normal(i)
-        # Save your change.
+        # 保存你的更改。
         mdt.set_vertex(i, vertex)
     mesh.clear_surfaces()
     mdt.commit_to_surface(mesh)
@@ -50,9 +50,9 @@ Below is an example of how MeshDataTool may be used.
     for (var i = 0; i < mdt.GetVertexCount(); i++)
     {
         Vector3 vertex = mdt.GetVertex(i);
-        // In this example we extend the mesh by one unit, which results in separated faces as it is flat shaded.
+        // 在这个例子中，我们将网格挤出一个单位，这会导致分离的面，因为它是平直着色的。
         vertex += mdt.GetVertexNormal(i);
-        // Save your change.
+        // 保存你的更改。
         mdt.SetVertex(i, vertex);
     }
     mesh.ClearSurfaces();
@@ -63,21 +63,21 @@ Below is an example of how MeshDataTool may be used.
 
 
 
-See also :ref:`ArrayMesh<class_ArrayMesh>`, :ref:`ImmediateMesh<class_ImmediateMesh>` and :ref:`SurfaceTool<class_SurfaceTool>` for procedural geometry generation.
+另见 :ref:`ArrayMesh<class_ArrayMesh>`\ 、\ :ref:`ImmediateMesh<class_ImmediateMesh>` 和 :ref:`SurfaceTool<class_SurfaceTool>`\ ，以了解程序化几何生成。
 
-\ **Note:** Godot uses clockwise `winding order <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__ for front faces of triangle primitive modes.
+\ **注意：**\ 对于三角形基元模式的前面，Godot 使用顺时针\ `缠绕顺序 <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Using the MeshDataTool <../tutorials/3d/procedural_geometry/meshdatatool>`
+- :doc:`使用 MeshDataTool <../tutorials/3d/procedural_geometry/meshdatatool>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -166,8 +166,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_MeshDataTool_method_clear:
 
@@ -175,7 +175,7 @@ Method Descriptions
 
 |void| **clear**\ (\ ) :ref:`🔗<class_MeshDataTool_method_clear>`
 
-Clears all data currently in MeshDataTool.
+将当前 MeshDataTool 中所有的数据全部清除。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Clears all data currently in MeshDataTool.
 
 :ref:`Error<enum_@GlobalScope_Error>` **commit_to_surface**\ (\ mesh\: :ref:`ArrayMesh<class_ArrayMesh>`, compression_flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_MeshDataTool_method_commit_to_surface>`
 
-Adds a new surface to specified :ref:`Mesh<class_Mesh>` with edited data.
+使用编辑后的数据，向指定的 :ref:`Mesh<class_Mesh>` 中添加一个新的表面。
 
 .. rst-class:: classref-item-separator
 
@@ -199,9 +199,9 @@ Adds a new surface to specified :ref:`Mesh<class_Mesh>` with edited data.
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_from_surface**\ (\ mesh\: :ref:`ArrayMesh<class_ArrayMesh>`, surface\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MeshDataTool_method_create_from_surface>`
 
-Uses specified surface of given :ref:`Mesh<class_Mesh>` to populate data for MeshDataTool.
+使用给定 :ref:`Mesh<class_Mesh>` 的指定表面来填充 MeshDataTool 的数据。
 
-Requires :ref:`Mesh<class_Mesh>` with primitive type :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`.
+要求 :ref:`Mesh<class_Mesh>` 的图元类型为 :ref:`Mesh.PRIMITIVE_TRIANGLES<class_Mesh_constant_PRIMITIVE_TRIANGLES>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ Requires :ref:`Mesh<class_Mesh>` with primitive type :ref:`Mesh.PRIMITIVE_TRIANG
 
 :ref:`int<class_int>` **get_edge_count**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_edge_count>`
 
-Returns the number of edges in this :ref:`Mesh<class_Mesh>`.
+返回这个 :ref:`Mesh<class_Mesh>` 的边数。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Returns the number of edges in this :ref:`Mesh<class_Mesh>`.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_edge_faces**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_edge_faces>`
 
-Returns array of faces that touch given edge.
+返回与给定边相邻的面数组。
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ Returns array of faces that touch given edge.
 
 :ref:`Variant<class_Variant>` **get_edge_meta**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_edge_meta>`
 
-Returns meta information assigned to given edge.
+返回给定边的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -249,9 +249,9 @@ Returns meta information assigned to given edge.
 
 :ref:`int<class_int>` **get_edge_vertex**\ (\ idx\: :ref:`int<class_int>`, vertex\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_edge_vertex>`
 
-Returns the index of the specified ``vertex`` connected to the edge at index ``idx``.
+返回连接到索引为 ``idx`` 的边的顶点 ``vertex`` 的索引。
 
-\ ``vertex`` can only be ``0`` or ``1``, as edges are composed of two vertices.
+\ ``vertex`` 只能是 ``0`` 或 ``1``\ ，因为一条边由两个顶点组成。
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ Returns the index of the specified ``vertex`` connected to the edge at index ``i
 
 :ref:`int<class_int>` **get_face_count**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_count>`
 
-Returns the number of faces in this :ref:`Mesh<class_Mesh>`.
+返回这个 :ref:`Mesh<class_Mesh>` 中的面数。
 
 .. rst-class:: classref-item-separator
 
@@ -275,9 +275,9 @@ Returns the number of faces in this :ref:`Mesh<class_Mesh>`.
 
 :ref:`int<class_int>` **get_face_edge**\ (\ idx\: :ref:`int<class_int>`, edge\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_edge>`
 
-Returns the edge associated with the face at index ``idx``.
+返回与索引为 ``idx`` 的面相关联的边。
 
-\ ``edge`` argument must be either ``0``, ``1``, or ``2`` because a face only has three edges.
+\ ``edge`` 参数只能是 ``0``\ 、\ ``1`` 或 ``2``\ ，因为一个面只有三条边。
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ Returns the edge associated with the face at index ``idx``.
 
 :ref:`Variant<class_Variant>` **get_face_meta**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_meta>`
 
-Returns the metadata associated with the given face.
+返回与给定面关联的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -301,7 +301,7 @@ Returns the metadata associated with the given face.
 
 :ref:`Vector3<class_Vector3>` **get_face_normal**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_normal>`
 
-Calculates and returns the face normal of the given face.
+计算并返回给定面的面法线。
 
 .. rst-class:: classref-item-separator
 
@@ -313,22 +313,22 @@ Calculates and returns the face normal of the given face.
 
 :ref:`int<class_int>` **get_face_vertex**\ (\ idx\: :ref:`int<class_int>`, vertex\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_face_vertex>`
 
-Returns the specified vertex index of the given face.
+返回给定面的指定顶点索引。
 
-\ ``vertex`` must be either ``0``, ``1``, or ``2`` because faces contain three vertices.
+\ ``vertex`` 必须为 ``0``\ 、\ ``1`` 或 ``2``\ ，因为一个面包含三个顶点。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var index = mesh_data_tool.get_face_vertex(0, 1) # Gets the index of the second vertex of the first face.
+    var index = mesh_data_tool.get_face_vertex(0, 1) # 获取第一个面的第二个顶点的索引。
     var position = mesh_data_tool.get_vertex(index)
     var normal = mesh_data_tool.get_vertex_normal(index)
 
  .. code-tab:: csharp
 
-    int index = meshDataTool.GetFaceVertex(0, 1); // Gets the index of the second vertex of the first face.
+    int index = meshDataTool.GetFaceVertex(0, 1); // 获取第一个面的第二个顶点的索引。
     Vector3 position = meshDataTool.GetVertex(index);
     Vector3 normal = meshDataTool.GetVertexNormal(index);
 
@@ -344,7 +344,7 @@ Returns the specified vertex index of the given face.
 
 :ref:`int<class_int>` **get_format**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_format>`
 
-Returns the :ref:`Mesh<class_Mesh>`'s format as a combination of the :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` flags. For example, a mesh containing both vertices and normals would return a format of ``3`` because :ref:`Mesh.ARRAY_FORMAT_VERTEX<class_Mesh_constant_ARRAY_FORMAT_VERTEX>` is ``1`` and :ref:`Mesh.ARRAY_FORMAT_NORMAL<class_Mesh_constant_ARRAY_FORMAT_NORMAL>` is ``2``.
+将 :ref:`Mesh<class_Mesh>` 的格式返回为 :ref:`ArrayFormat<enum_Mesh_ArrayFormat>` 标志的组合。例如，包含顶点和法线的网格将返回为 ``3`` 的格式，因为 :ref:`Mesh.ARRAY_FORMAT_VERTEX<class_Mesh_constant_ARRAY_FORMAT_VERTEX>` 是 ``1``\ ，而 :ref:`Mesh.ARRAY_FORMAT_NORMAL<class_Mesh_constant_ARRAY_FORMAT_NORMAL>` 是 ``2``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Returns the :ref:`Mesh<class_Mesh>`'s format as a combination of the :ref:`Array
 
 :ref:`Material<class_Material>` **get_material**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_material>`
 
-Returns the material assigned to the :ref:`Mesh<class_Mesh>`.
+返回分配给该 :ref:`Mesh<class_Mesh>` 的材质。
 
 .. rst-class:: classref-item-separator
 
@@ -368,7 +368,7 @@ Returns the material assigned to the :ref:`Mesh<class_Mesh>`.
 
 :ref:`Vector3<class_Vector3>` **get_vertex**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex>`
 
-Returns the position of the given vertex.
+返回给定顶点的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Returns the position of the given vertex.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_vertex_bones**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_bones>`
 
-Returns the bones of the given vertex.
+返回给定顶点的骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Returns the bones of the given vertex.
 
 :ref:`Color<class_Color>` **get_vertex_color**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_color>`
 
-Returns the color of the given vertex.
+返回给定顶点的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ Returns the color of the given vertex.
 
 :ref:`int<class_int>` **get_vertex_count**\ (\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_count>`
 
-Returns the total number of vertices in :ref:`Mesh<class_Mesh>`.
+返回 :ref:`Mesh<class_Mesh>` 中顶点的总数。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ Returns the total number of vertices in :ref:`Mesh<class_Mesh>`.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_vertex_edges**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_edges>`
 
-Returns an array of edges that share the given vertex.
+返回共享给定顶点的边的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ Returns an array of edges that share the given vertex.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_vertex_faces**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_faces>`
 
-Returns an array of faces that share the given vertex.
+返回共享给定顶点的面数组。
 
 .. rst-class:: classref-item-separator
 
@@ -440,7 +440,7 @@ Returns an array of faces that share the given vertex.
 
 :ref:`Variant<class_Variant>` **get_vertex_meta**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_meta>`
 
-Returns the metadata associated with the given vertex.
+返回与给定顶点关联的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ Returns the metadata associated with the given vertex.
 
 :ref:`Vector3<class_Vector3>` **get_vertex_normal**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_normal>`
 
-Returns the normal of the given vertex.
+返回给定顶点的法线。
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ Returns the normal of the given vertex.
 
 :ref:`Plane<class_Plane>` **get_vertex_tangent**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_tangent>`
 
-Returns the tangent of the given vertex.
+返回给定顶点的切线。
 
 .. rst-class:: classref-item-separator
 
@@ -476,7 +476,7 @@ Returns the tangent of the given vertex.
 
 :ref:`Vector2<class_Vector2>` **get_vertex_uv**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_uv>`
 
-Returns the UV of the given vertex.
+返回给定顶点的 UV。
 
 .. rst-class:: classref-item-separator
 
@@ -488,7 +488,7 @@ Returns the UV of the given vertex.
 
 :ref:`Vector2<class_Vector2>` **get_vertex_uv2**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_uv2>`
 
-Returns the UV2 of the given vertex.
+返回给定顶点的 UV2。
 
 .. rst-class:: classref-item-separator
 
@@ -500,7 +500,7 @@ Returns the UV2 of the given vertex.
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_vertex_weights**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MeshDataTool_method_get_vertex_weights>`
 
-Returns bone weights of the given vertex.
+返回给定顶点的骨骼权重。
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ Returns bone weights of the given vertex.
 
 |void| **set_edge_meta**\ (\ idx\: :ref:`int<class_int>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_MeshDataTool_method_set_edge_meta>`
 
-Sets the metadata of the given edge.
+设置给定边的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +524,7 @@ Sets the metadata of the given edge.
 
 |void| **set_face_meta**\ (\ idx\: :ref:`int<class_int>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_MeshDataTool_method_set_face_meta>`
 
-Sets the metadata of the given face.
+设置给定面的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ Sets the metadata of the given face.
 
 |void| **set_material**\ (\ material\: :ref:`Material<class_Material>`\ ) :ref:`🔗<class_MeshDataTool_method_set_material>`
 
-Sets the material to be used by newly-constructed :ref:`Mesh<class_Mesh>`.
+设置新构建的 :ref:`Mesh<class_Mesh>` 使用的材质。
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Sets the material to be used by newly-constructed :ref:`Mesh<class_Mesh>`.
 
 |void| **set_vertex**\ (\ idx\: :ref:`int<class_int>`, vertex\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex>`
 
-Sets the position of the given vertex.
+设置给定顶点的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -560,7 +560,7 @@ Sets the position of the given vertex.
 
 |void| **set_vertex_bones**\ (\ idx\: :ref:`int<class_int>`, bones\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_bones>`
 
-Sets the bones of the given vertex.
+设置给定顶点的骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -572,7 +572,7 @@ Sets the bones of the given vertex.
 
 |void| **set_vertex_color**\ (\ idx\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_color>`
 
-Sets the color of the given vertex.
+设置给定顶点的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -584,7 +584,7 @@ Sets the color of the given vertex.
 
 |void| **set_vertex_meta**\ (\ idx\: :ref:`int<class_int>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_meta>`
 
-Sets the metadata associated with the given vertex.
+设置与给定顶点关联的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -596,7 +596,7 @@ Sets the metadata associated with the given vertex.
 
 |void| **set_vertex_normal**\ (\ idx\: :ref:`int<class_int>`, normal\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_normal>`
 
-Sets the normal of the given vertex.
+设置给定顶点的法线。
 
 .. rst-class:: classref-item-separator
 
@@ -622,7 +622,7 @@ Sets the tangent of the given vertex.
 
 |void| **set_vertex_uv**\ (\ idx\: :ref:`int<class_int>`, uv\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_uv>`
 
-Sets the UV of the given vertex.
+设置给定顶点的 UV。
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ Sets the UV of the given vertex.
 
 |void| **set_vertex_uv2**\ (\ idx\: :ref:`int<class_int>`, uv2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_uv2>`
 
-Sets the UV2 of the given vertex.
+设置给定顶点的 UV2。
 
 .. rst-class:: classref-item-separator
 
@@ -646,14 +646,14 @@ Sets the UV2 of the given vertex.
 
 |void| **set_vertex_weights**\ (\ idx\: :ref:`int<class_int>`, weights\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_weights>`
 
-Sets the bone weights of the given vertex.
+设置给定顶点的骨骼权重。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

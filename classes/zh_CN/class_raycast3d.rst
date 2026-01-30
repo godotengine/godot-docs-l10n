@@ -5,36 +5,36 @@
 RayCast3D
 =========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A ray in 3D space, used to find the first collision object it intersects.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A raycast represents a ray from its origin to its :ref:`target_position<class_RayCast3D_property_target_position>` that finds the closest object along its path, if it intersects any.
-
-\ **RayCast3D** can ignore some objects by adding them to an exception list, by making its detection reporting ignore :ref:`Area3D<class_Area3D>`\ s (:ref:`collide_with_areas<class_RayCast3D_property_collide_with_areas>`) or :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s (:ref:`collide_with_bodies<class_RayCast3D_property_collide_with_bodies>`), or by configuring physics layers.
-
-\ **RayCast3D** calculates intersection every physics frame, and it holds the result until the next physics frame. For an immediate raycast, or if you want to configure a **RayCast3D** multiple times within the same physics frame, use :ref:`force_raycast_update()<class_RayCast3D_method_force_raycast_update>`.
-
-To sweep over a region of 3D space, you can approximate the region with multiple **RayCast3D**\ s or use :ref:`ShapeCast3D<class_ShapeCast3D>`.
+3D 空间中的射线，用于查找第一个与其相交的碰撞物体。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
+Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast3D_property_target_position>` 的射线，如果与碰撞对象相交，就能找到路径上距离最近的物体。
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+要让 **RayCast3D** 忽略某些对象，可以通过将它们加入例外列表，也可以通过让检测汇报忽略 :ref:`Area3D<class_Area3D>`\ （\ :ref:`collide_with_areas<class_RayCast3D_property_collide_with_areas>`\ ）或 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （\ :ref:`collide_with_bodies<class_RayCast3D_property_collide_with_bodies>`\ ），还可以通过配置物理层。
+
+\ **RayCast3D** 每一个物理帧都会计算是否相交，且该计算结果会保留到下一个物理帧。如果要立即执行射线投射，或者你想要在同一个物理帧内多次配置 **RayCast3D**\ ，请使用 :ref:`force_raycast_update()<class_RayCast3D_method_force_raycast_update>`\ 。
+
+要扫描 3D 空间中的某个区块，可以使用多个 **RayCast3D** 或使用 :ref:`ShapeCast3D<class_ShapeCast3D>` 去近似该区块。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`发射射线 <../tutorials/physics/ray-casting>`
+
+- `3D 体素演示 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -107,8 +107,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RayCast3D_property_collide_with_areas:
 
@@ -121,7 +121,7 @@ Property Descriptions
 - |void| **set_collide_with_areas**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled**\ (\ )
 
-If ``true``, collisions with :ref:`Area3D<class_Area3D>`\ s will be reported.
+如果为 ``true``\ ，则会报告与 :ref:`Area3D<class_Area3D>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ If ``true``, collisions with :ref:`Area3D<class_Area3D>`\ s will be reported.
 - |void| **set_collide_with_bodies**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled**\ (\ )
 
-If ``true``, collisions with :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s will be reported.
+如果为 ``true``\ ，则会报告与 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ If ``true``, collisions with :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s will b
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The ray's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+射线的碰撞遮罩。只能检测到至少启用了一个遮罩中碰撞层的对象。详见文档中的\ `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -172,9 +172,9 @@ The ray's collision mask. Only objects in at least one collision layer enabled i
 - |void| **set_debug_shape_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_shape_custom_color**\ (\ )
 
-The custom color to use to draw the shape in the editor and at run-time if **Visible Collision Shapes** is enabled in the **Debug** menu. This color will be highlighted at run-time if the **RayCast3D** is colliding with something.
+如果在\ **调试**\ 菜单中启用了\ **可见碰撞形状**\ ，则用于在编辑器中和运行时中绘制形状的自定义颜色。如果 **RayCast3D** 与某物发生碰撞，该颜色将在运行时突出显示。
 
-If set to ``Color(0.0, 0.0, 0.0)`` (by default), the color set in :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>` is used.
+如果设置为 ``Color(0.0, 0.0, 0.0)``\ （默认情况下），则使用 :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>` 中设置的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ If set to ``Color(0.0, 0.0, 0.0)`` (by default), the color set in :ref:`ProjectS
 - |void| **set_debug_shape_thickness**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_debug_shape_thickness**\ (\ )
 
-If set to ``1``, a line is used as the debug shape. Otherwise, a truncated pyramid is drawn to represent the **RayCast3D**. Requires **Visible Collision Shapes** to be enabled in the **Debug** menu for the debug shape to be visible at run-time.
+如果设置为 ``1``\ ，则使用一条线作为调试形状。否则，将绘制一个截断的金字塔来表示 **RayCast3D**\ 。需要在\ **调试**\ 菜单中启用\ **可见碰撞形状**\ ，以便调试形状在运行时可见。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ If set to ``1``, a line is used as the debug shape. Otherwise, a truncated pyram
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-If ``true``, collisions will be reported.
+如果为 ``true``\ ，将报告碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ If ``true``, collisions will be reported.
 - |void| **set_exclude_parent_body**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_exclude_parent_body**\ (\ )
 
-If ``true``, this raycast will not report collisions with its parent node. This property only has an effect if the parent node is a :ref:`CollisionObject3D<class_CollisionObject3D>`. See also :ref:`Node.get_parent()<class_Node_method_get_parent>` and :ref:`add_exception()<class_RayCast3D_method_add_exception>`.
+如果为 ``true``\ ，则射线投射不会汇报与其父节点的碰撞。仅在父节点为 :ref:`CollisionObject3D<class_CollisionObject3D>` 时有效。另见 :ref:`Node.get_parent()<class_Node_method_get_parent>`\ 、\ :ref:`add_exception()<class_RayCast3D_method_add_exception>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ If ``true``, this raycast will not report collisions with its parent node. This 
 - |void| **set_hit_back_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hit_back_faces_enabled**\ (\ )
 
-If ``true``, the ray will hit back faces with concave polygon shapes with back face enabled or heightmap shapes.
+如果为 ``true``\ ，射线将命中背部面，这些背部面是启用了背面的凹多边形形状，或高度图形状。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ If ``true``, the ray will hit back faces with concave polygon shapes with back f
 - |void| **set_hit_from_inside**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hit_from_inside_enabled**\ (\ )
 
-If ``true``, the ray will detect a hit when starting inside shapes. In this case the collision normal will be ``Vector3(0, 0, 0)``. Does not affect shapes with no volume like concave polygon or heightmap.
+如果为 ``true``\ ，射线会在从形状内部开始时检测到命中。在此情况下，碰撞法线将为 ``Vector3(0, 0, 0)``\ 。不会影响无体积的形状，如凹多边形和高度图。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ If ``true``, the ray will detect a hit when starting inside shapes. In this case
 - |void| **set_target_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_target_position**\ (\ )
 
-The ray's destination point, relative to this raycast's :ref:`Node3D.position<class_Node3D_property_position>`.
+射线的目的点，相对于射线投射的 :ref:`Node3D.position<class_Node3D_property_position>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -284,8 +284,8 @@ The ray's destination point, relative to this raycast's :ref:`Node3D.position<cl
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RayCast3D_method_add_exception:
 
@@ -293,7 +293,7 @@ Method Descriptions
 
 |void| **add_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_RayCast3D_method_add_exception>`
 
-Adds a collision exception so the ray does not report collisions with the specified ``node``.
+添加碰撞例外，这样射线就不会报告与 ``node`` 节点的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Adds a collision exception so the ray does not report collisions with the specif
 
 |void| **add_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RayCast3D_method_add_exception_rid>`
 
-Adds a collision exception so the ray does not report collisions with the specified :ref:`RID<class_RID>`.
+添加碰撞例外，这样射线就不会报告与指定 :ref:`RID<class_RID>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -317,7 +317,7 @@ Adds a collision exception so the ray does not report collisions with the specif
 
 |void| **clear_exceptions**\ (\ ) :ref:`🔗<class_RayCast3D_method_clear_exceptions>`
 
-Removes all collision exceptions for this ray.
+删除此射线的所有碰撞例外。
 
 .. rst-class:: classref-item-separator
 
@@ -329,9 +329,9 @@ Removes all collision exceptions for this ray.
 
 |void| **force_raycast_update**\ (\ ) :ref:`🔗<class_RayCast3D_method_force_raycast_update>`
 
-Updates the collision information for the ray immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the ray or its parent has changed state.
+立即更新射线的碰撞信息，不等待下一次的 ``_physics_process`` 调用。例如，请在射线或其父级更改状态后使用该方法。
 
-\ **Note:** :ref:`enabled<class_RayCast3D_property_enabled>` does not need to be ``true`` for this to work.
+\ **注意：**\ :ref:`enabled<class_RayCast3D_property_enabled>` 不需要为 ``true`` 即可生效。
 
 .. rst-class:: classref-item-separator
 
@@ -343,9 +343,9 @@ Updates the collision information for the ray immediately, without waiting for t
 
 :ref:`Object<class_Object>` **get_collider**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collider>`
 
-Returns the first object that the ray intersects, or ``null`` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` returns ``false``).
+返回射线相交的第一个物体，如果没有物体与射线相交则返回 ``null``\ （即 :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` 返回 ``false``\ ）。
 
-\ **Note:** This object is not guaranteed to be a :ref:`CollisionObject3D<class_CollisionObject3D>`. For example, if the ray intersects a :ref:`CSGShape3D<class_CSGShape3D>` or a :ref:`GridMap<class_GridMap>`, the method will return a :ref:`CSGShape3D<class_CSGShape3D>` or :ref:`GridMap<class_GridMap>` instance.
+\ **注意：**\ 该物体不一定是 :ref:`CollisionObject3D<class_CollisionObject3D>`\ 。例如射线与 :ref:`CSGShape3D<class_CSGShape3D>` 或 :ref:`GridMap<class_GridMap>` 相交时，方法返回的就是 :ref:`CSGShape3D<class_CSGShape3D>` 或 :ref:`GridMap<class_GridMap>` 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Returns the first object that the ray intersects, or ``null`` if no object is in
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collider_rid>`
 
-Returns the :ref:`RID<class_RID>` of the first object that the ray intersects, or an empty :ref:`RID<class_RID>` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` returns ``false``).
+返回该射线相交的第一个对象的 :ref:`RID<class_RID>`\ ，如果没有对象与该射线相交，则返回空 :ref:`RID<class_RID>`\ （即 :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` 返回 ``false``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -369,25 +369,25 @@ Returns the :ref:`RID<class_RID>` of the first object that the ray intersects, o
 
 :ref:`int<class_int>` **get_collider_shape**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collider_shape>`
 
-Returns the shape ID of the first object that the ray intersects, or ``0`` if no object is intersecting the ray (i.e. :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` returns ``false``).
+返回与射线相交的第一个对象的形状 ID，射线未与任何对象相交时返回 ``0``\ （即 :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` 返回 ``false`` 时）。
 
-To get the intersected shape node, for a :ref:`CollisionObject3D<class_CollisionObject3D>` target, use:
+要获取相交的形状节点，比如假设目标是 :ref:`CollisionObject3D<class_CollisionObject3D>`\ ，可以使用：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var target = get_collider() # A CollisionObject3D.
-    var shape_id = get_collider_shape() # The shape index in the collider.
-    var owner_id = target.shape_find_owner(shape_id) # The owner ID in the collider.
+    var target = get_collider() # 是 CollisionObject3D 节点。
+    var shape_id = get_collider_shape() # 碰撞体中的形状索引。
+    var owner_id = target.shape_find_owner(shape_id) # 碰撞体中的所有者 ID。
     var shape = target.shape_owner_get_owner(owner_id)
 
  .. code-tab:: csharp
 
-    var target = (CollisionObject3D)GetCollider(); // A CollisionObject3D.
-    var shapeId = GetColliderShape(); // The shape index in the collider.
-    var ownerId = target.ShapeFindOwner(shapeId); // The owner ID in the collider.
+    var target = (CollisionObject3D)GetCollider(); // 是 CollisionObject3D 节点。
+    var shapeId = GetColliderShape(); // 碰撞体中的形状索引。
+    var ownerId = target.ShapeFindOwner(shapeId); // 碰撞体中的所有者 ID。
     var shape = target.ShapeOwnerGetOwner(ownerId);
 
 
@@ -402,7 +402,7 @@ To get the intersected shape node, for a :ref:`CollisionObject3D<class_Collision
 
 :ref:`int<class_int>` **get_collision_face_index**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collision_face_index>`
 
-Returns the collision object's face index at the collision point, or ``-1`` if the shape intersecting the ray is not a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`.
+返回碰撞点处碰撞对象的面索引，如果与射线相交的形状不是 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ ，则返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Returns the collision object's face index at the collision point, or ``-1`` if t
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collision_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`collision_mask<class_RayCast3D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`collision_mask<class_RayCast3D_property_collision_mask>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -426,9 +426,9 @@ Returns whether or not the specified layer of the :ref:`collision_mask<class_Ray
 
 :ref:`Vector3<class_Vector3>` **get_collision_normal**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collision_normal>`
 
-Returns the normal of the intersecting object's shape at the collision point, or ``Vector3(0, 0, 0)`` if the ray starts inside the shape and :ref:`hit_from_inside<class_RayCast3D_property_hit_from_inside>` is ``true``.
+返回相交对象的形状在碰撞点处的法线，如果射线从该形状内部发出并且 :ref:`hit_from_inside<class_RayCast3D_property_hit_from_inside>` 为 ``true``\ ，则为 ``Vector3(0, 0)``\ 。
 
-\ **Note:** Check that :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` returns ``true`` before calling this method to ensure the returned normal is valid and up-to-date.
+\ **注意：**\ 请在调用前检查 :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` 返回的是否为 ``true``\ ，这样返回的法线就是即时有效的。
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Returns the normal of the intersecting object's shape at the collision point, or
 
 :ref:`Vector3<class_Vector3>` **get_collision_point**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_get_collision_point>`
 
-Returns the collision point at which the ray intersects the closest object, in the global coordinate system. If :ref:`hit_from_inside<class_RayCast3D_property_hit_from_inside>` is ``true`` and the ray starts inside of a collision shape, this function will return the origin point of the ray.
+返回全局坐标系中射线与最近的物体相交的碰撞点。如果 :ref:`hit_from_inside<class_RayCast3D_property_hit_from_inside>` 为 ``true`` 并且射线从碰撞形状内部开始，则该函数将返回该射线的原点。
 
-\ **Note:** Check that :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` returns ``true`` before calling this method to ensure the returned point is valid and up-to-date.
+\ **注意：**\ 在调用该方法之前，请检查 :ref:`is_colliding()<class_RayCast3D_method_is_colliding>` 是否返回 ``true``\ ，以确保返回的点有效且最新。
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +454,7 @@ Returns the collision point at which the ray intersects the closest object, in t
 
 :ref:`bool<class_bool>` **is_colliding**\ (\ ) |const| :ref:`🔗<class_RayCast3D_method_is_colliding>`
 
-Returns whether any object is intersecting with the ray's vector (considering the vector length).
+返回是否有任何对象与射线的向量相交（考虑向量长度）。
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ Returns whether any object is intersecting with the ray's vector (considering th
 
 |void| **remove_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_RayCast3D_method_remove_exception>`
 
-Removes a collision exception so the ray can report collisions with the specified ``node``.
+移除碰撞例外，这样射线就会报告与 ``node`` 节点的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ Removes a collision exception so the ray can report collisions with the specifie
 
 |void| **remove_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RayCast3D_method_remove_exception_rid>`
 
-Removes a collision exception so the ray can report collisions with the specified :ref:`RID<class_RID>`.
+移除碰撞例外，这样射线就会报告与指定的 :ref:`RID<class_RID>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -490,14 +490,14 @@ Removes a collision exception so the ray can report collisions with the specifie
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RayCast3D_method_set_collision_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_RayCast3D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`collision_mask<class_RayCast3D_property_collision_mask>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,23 +5,23 @@
 ResourcePreloader
 =================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node used to preload sub-resources inside a scene.
+用於預載入場景子資源的節點。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This node is used to preload sub-resources inside a scene, so when the scene is loaded, all the resources are ready to use and can be retrieved from the preloader. You can add the resources using the ResourcePreloader tab when the node is selected.
+這個節點可以預載入場景中的子資源，這樣場景載入完成時，所有的資源就都處於就緒可用狀態，可以從預載入器獲取。選中該節點後，可以使用 ResourcePreloader 分頁來新增資源。
 
-GDScript has a simplified :ref:`@GDScript.preload()<class_@GDScript_method_preload>` built-in method which can be used in most situations, leaving the use of **ResourcePreloader** for more advanced scenarios.
+GDScript 提供了簡化的 :ref:`@GDScript.preload()<class_@GDScript_method_preload>` 內建方法，可以在大多數場景使用，\ **ResourcePreloader** 則可用於更高階的場合。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ResourcePreloader_method_add_resource:
 
@@ -55,7 +55,7 @@ Method Descriptions
 
 |void| **add_resource**\ (\ name\: :ref:`StringName<class_StringName>`, resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_ResourcePreloader_method_add_resource>`
 
-Adds a resource to the preloader with the given ``name``. If a resource with the given ``name`` already exists, the new resource will be renamed to "``name`` N" where N is an incrementing number starting from 2.
+將資源以給定的名稱 ``name`` 新增至預載入器。如果已存在名為 ``name`` 的資源，則新資源會被重命名為 "``name`` N"，這裡的 N 是從 2 開始遞增的數字。
 
 .. rst-class:: classref-item-separator
 
@@ -67,7 +67,7 @@ Adds a resource to the preloader with the given ``name``. If a resource with the
 
 :ref:`Resource<class_Resource>` **get_resource**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ResourcePreloader_method_get_resource>`
 
-Returns the resource associated to ``name``.
+返回與 ``name`` 關聯的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ Returns the resource associated to ``name``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_resource_list**\ (\ ) |const| :ref:`🔗<class_ResourcePreloader_method_get_resource_list>`
 
-Returns the list of resources inside the preloader.
+返回預載入器內的資源列表。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Returns the list of resources inside the preloader.
 
 :ref:`bool<class_bool>` **has_resource**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ResourcePreloader_method_has_resource>`
 
-Returns ``true`` if the preloader contains a resource associated to ``name``.
+如果預載入器包含一個與 ``name`` 關聯的資源，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Returns ``true`` if the preloader contains a resource associated to ``name``.
 
 |void| **remove_resource**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ResourcePreloader_method_remove_resource>`
 
-Removes the resource associated to ``name`` from the preloader.
+從預載入器中刪除與 ``name`` 關聯的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -115,14 +115,14 @@ Removes the resource associated to ``name`` from the preloader.
 
 |void| **rename_resource**\ (\ name\: :ref:`StringName<class_StringName>`, newname\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ResourcePreloader_method_rename_resource>`
 
-Renames a resource inside the preloader from ``name`` to ``newname``.
+將預載入器中的資源從 ``name`` 重命名為 ``newname``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

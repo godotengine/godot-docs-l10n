@@ -16,9 +16,9 @@ Abstracción y clase base para protocolos basados en paquetes.
 Descripción
 ----------------------
 
-PacketPeer is an abstraction and base class for packet-based protocols (such as UDP). It provides an API for sending and receiving packets both as raw data or variables. This makes it easy to transfer data over a protocol, without having to encode data as low-level bytes or having to worry about network ordering.
+PacketPeer es una abstracción y clase base para protocolos basados en paquetes (como UDP). Proporciona una API para enviar y recibir paquetes tanto como datos en bruto o variables. Esto facilita la transferencia de datos a través de un protocolo, sin tener que codificar los datos como bytes de bajo nivel o tener que preocuparse por el ordenamiento de la red.
 
-\ **Note:** When exporting to Android, make sure to enable the ``INTERNET`` permission in the Android export preset before exporting the project or using one-click deploy. Otherwise, network communication of any kind will be blocked by Android.
+\ **Nota:** Al exportar a Android, asegúrate de habilitar el permiso ``INTERNET`` en el preajuste de exportación de Android antes de exportar el proyecto o usar la implementación con un clic. De lo contrario, Android bloqueará cualquier tipo de comunicación de red.
 
 .. rst-class:: classref-reftable-group
 
@@ -74,9 +74,9 @@ Descripciones de Propiedades
 - |void| **set_encode_buffer_max_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_encode_buffer_max_size**\ (\ )
 
-Maximum buffer size allowed when encoding :ref:`Variant<class_Variant>`\ s. Raise this value to support heavier memory allocations.
+Tamaño máximo del búfer permitido al codificar :ref:`Variant<class_Variant>`\ s. Aumenta este valor para soportar asignaciones de memoria más pesadas.
 
-The :ref:`put_var()<class_PacketPeer_method_put_var>` method allocates memory on the stack, and the buffer used will grow automatically to the closest power of two to match the size of the :ref:`Variant<class_Variant>`. If the :ref:`Variant<class_Variant>` is bigger than :ref:`encode_buffer_max_size<class_PacketPeer_property_encode_buffer_max_size>`, the method will error out with :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`.
+El método :ref:`put_var()<class_PacketPeer_method_put_var>` asigna memoria en la pila, y el búfer utilizado crecerá automáticamente hasta la potencia de dos más cercana para igualar el tamaño de la :ref:`Variant<class_Variant>`. Si la :ref:`Variant<class_Variant>` es más grande que :ref:`encode_buffer_max_size<class_PacketPeer_property_encode_buffer_max_size>`, el método devolverá un error con :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`.
 
 .. rst-class:: classref-section-separator
 
@@ -129,11 +129,11 @@ Devuelve el estado de error del último paquete recibido (a través de :ref:`get
 
 :ref:`Variant<class_Variant>` **get_var**\ (\ allow_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PacketPeer_method_get_var>`
 
-Gets a Variant. If ``allow_objects`` is ``true``, decoding objects is allowed.
+Obtiene una Variant. Si ``allow_objects`` es ``true``, se permite la decodificación de objetos.
 
-Internally, this uses the same decoding mechanism as the :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>` method.
+Internamente, esto usa el mismo mecanismo de decodificación que el método :ref:`@GlobalScope.bytes_to_var()<class_@GlobalScope_method_bytes_to_var>`.
 
-\ **Warning:** Deserialized objects can contain code which gets executed. Do not use this option if the serialized object comes from untrusted sources to avoid potential security threats such as remote code execution.
+\ **Advertencia:** Los objetos deserializados pueden contener código que se ejecuta. No utilices esta opción si el objeto serializado proviene de fuentes no fiables para evitar posibles amenazas de seguridad, como la ejecución remota de código.
 
 .. rst-class:: classref-item-separator
 
@@ -157,9 +157,9 @@ Envía un paquete crudo.
 
 :ref:`Error<enum_@GlobalScope_Error>` **put_var**\ (\ var\: :ref:`Variant<class_Variant>`, full_objects\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PacketPeer_method_put_var>`
 
-Sends a :ref:`Variant<class_Variant>` as a packet. If ``full_objects`` is ``true``, encoding objects is allowed (and can potentially include code).
+Envía una :ref:`Variant<class_Variant>` como un paquete. Si ``full_objects`` es ``true``, se permite la codificación de objetos (y esto puede incluir código).
 
-Internally, this uses the same encoding mechanism as the :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>` method.
+Internamente, utiliza el mismo mecanismo de codificación que el método :ref:`@GlobalScope.var_to_bytes()<class_@GlobalScope_method_var_to_bytes>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

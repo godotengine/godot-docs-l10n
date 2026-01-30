@@ -5,30 +5,30 @@
 BackBufferCopy
 ==============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node that copies a region of the screen to a buffer for access in shader code.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Node for back-buffering the currently-displayed screen. The region defined in the **BackBufferCopy** node is buffered with the content of the screen it covers, or the entire screen according to the :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>`. It can be accessed in shader scripts using the screen texture (i.e. a uniform sampler with ``hint_screen_texture``).
-
-\ **Note:** Since this node inherits from :ref:`Node2D<class_Node2D>` (and not :ref:`Control<class_Control>`), anchors and margins won't apply to child :ref:`Control<class_Control>`-derived nodes. This can be problematic when resizing the window. To avoid this, add :ref:`Control<class_Control>`-derived nodes as *siblings* to the **BackBufferCopy** node instead of adding them as children.
+這個節點能夠將螢幕中的某個區域複製到緩衝中，方便著色器程式碼存取。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Screen-reading shaders <../tutorials/shaders/screen-reading_shaders>`
+用於對目前顯示畫面進行後緩衝的節點。會依據 :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>`\ ，將 **BackBufferCopy** 節點所設定的區域或整個螢幕內容複製到緩衝中。之後可於著色器腳本中透過螢幕紋理存取（亦即帶有 ``hint_screen_texture`` 的 uniform 取樣器）。
+
+\ **注意：**\ 由於此節點繼承自 :ref:`Node2D<class_Node2D>`\ （而非 :ref:`Control<class_Control>`\ ），錨點與邊距不會套用到子系 :ref:`Control<class_Control>` 節點。視窗大小變更時可能因此產生問題。為避免此情形，請將 :ref:`Control<class_Control>` 衍生節點作為 **BackBufferCopy** 的\ *同層*\ 節點，而非子節點。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`螢幕讀取著色器 <../tutorials/shaders/screen-reading_shaders>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_BackBufferCopy_CopyMode:
 
@@ -60,7 +60,7 @@ enum **CopyMode**: :ref:`🔗<enum_BackBufferCopy_CopyMode>`
 
 :ref:`CopyMode<enum_BackBufferCopy_CopyMode>` **COPY_MODE_DISABLED** = ``0``
 
-Disables the buffering mode. This means the **BackBufferCopy** node will directly use the portion of screen it covers.
+停用緩衝模式。這代表 **BackBufferCopy** 節點會直接使用它所覆蓋的螢幕區域。
 
 .. _class_BackBufferCopy_constant_COPY_MODE_RECT:
 
@@ -68,7 +68,7 @@ Disables the buffering mode. This means the **BackBufferCopy** node will directl
 
 :ref:`CopyMode<enum_BackBufferCopy_CopyMode>` **COPY_MODE_RECT** = ``1``
 
-**BackBufferCopy** buffers a rectangular region.
+**BackBufferCopy** 會緩衝一個矩形區域。
 
 .. _class_BackBufferCopy_constant_COPY_MODE_VIEWPORT:
 
@@ -76,7 +76,7 @@ Disables the buffering mode. This means the **BackBufferCopy** node will directl
 
 :ref:`CopyMode<enum_BackBufferCopy_CopyMode>` **COPY_MODE_VIEWPORT** = ``2``
 
-**BackBufferCopy** buffers the entire screen.
+**BackBufferCopy** 會緩衝整個螢幕。
 
 .. rst-class:: classref-section-separator
 
@@ -84,8 +84,8 @@ Disables the buffering mode. This means the **BackBufferCopy** node will directl
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_BackBufferCopy_property_copy_mode:
 
@@ -98,7 +98,7 @@ Property Descriptions
 - |void| **set_copy_mode**\ (\ value\: :ref:`CopyMode<enum_BackBufferCopy_CopyMode>`\ )
 - :ref:`CopyMode<enum_BackBufferCopy_CopyMode>` **get_copy_mode**\ (\ )
 
-Buffer mode.
+緩衝模式。
 
 .. rst-class:: classref-item-separator
 
@@ -115,14 +115,14 @@ Buffer mode.
 - |void| **set_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_rect**\ (\ )
 
-The area covered by the **BackBufferCopy**. Only used if :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>` is :ref:`COPY_MODE_RECT<class_BackBufferCopy_constant_COPY_MODE_RECT>`.
+此 **BackBufferCopy** 所覆蓋的區域。只有當 :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>` 為 :ref:`COPY_MODE_RECT<class_BackBufferCopy_constant_COPY_MODE_RECT>` 時才會使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

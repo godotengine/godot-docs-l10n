@@ -18,6 +18,13 @@ IKModifier3D
 
 Базовий клас :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, який має деякі списки суглобів та застосовує інверсну кінематику. Цей клас має деякі структури, переліки та допоміжні методи, корисні для розв'язання інверсної кінематики.
 
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- `Зворотна кінематика повертається до Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
+
 .. rst-class:: classref-reftable-group
 
 Властивості

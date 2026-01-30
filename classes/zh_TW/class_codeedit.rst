@@ -5,23 +5,23 @@
 CodeEdit
 ========
 
-**Inherits:** :ref:`TextEdit<class_TextEdit>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`TextEdit<class_TextEdit>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A multiline text editor designed for editing code.
+多行文字編輯器，針對編輯程式碼而設計。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-CodeEdit is a specialized :ref:`TextEdit<class_TextEdit>` designed for editing plain text code files. It has many features commonly found in code editors such as line numbers, line folding, code completion, indent management, and string/comment management.
+CodeEdit 是一種專門用於編輯純文字程式碼檔的 :ref:`TextEdit<class_TextEdit>`\ 。它包含了許多程式碼編輯器中的常見功能，如行號、折行、程式碼補全、縮進管理以及字串/注釋管理。
 
-\ **Note:** Regardless of locale, **CodeEdit** will by default always use left-to-right text direction to correctly display source code.
+\ **注意：**\ 無論使用什麼區域設定，\ **CodeEdit** 預設總是使用從左至右的文字方向來正確顯示原始程式碼。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -232,8 +232,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -298,8 +298,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_CodeEdit_signal_breakpoint_toggled:
 
@@ -345,7 +345,7 @@ Emitted when the user hovers over a symbol. Unlike :ref:`Control.mouse_entered<c
 
 **symbol_lookup**\ (\ symbol\: :ref:`String<class_String>`, line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_signal_symbol_lookup>`
 
-Emitted when the user has clicked on a valid symbol.
+使用者點擊有效符號時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -367,8 +367,8 @@ Emitted when the user hovers over a symbol. The symbol should be validated and r
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_CodeEdit_CodeCompletionKind:
 
@@ -382,7 +382,7 @@ enum **CodeCompletionKind**: :ref:`🔗<enum_CodeEdit_CodeCompletionKind>`
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_CLASS** = ``0``
 
-Marks the option as a class.
+將該選項標記為類。
 
 .. _class_CodeEdit_constant_KIND_FUNCTION:
 
@@ -390,7 +390,7 @@ Marks the option as a class.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_FUNCTION** = ``1``
 
-Marks the option as a function.
+將該選項標記為函式。
 
 .. _class_CodeEdit_constant_KIND_SIGNAL:
 
@@ -398,7 +398,7 @@ Marks the option as a function.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_SIGNAL** = ``2``
 
-Marks the option as a Godot signal.
+將該選項標記為 Godot 訊號。
 
 .. _class_CodeEdit_constant_KIND_VARIABLE:
 
@@ -406,7 +406,7 @@ Marks the option as a Godot signal.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_VARIABLE** = ``3``
 
-Marks the option as a variable.
+將該選項標記為變數。
 
 .. _class_CodeEdit_constant_KIND_MEMBER:
 
@@ -414,7 +414,7 @@ Marks the option as a variable.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_MEMBER** = ``4``
 
-Marks the option as a member.
+將該選項標記為成員。
 
 .. _class_CodeEdit_constant_KIND_ENUM:
 
@@ -422,7 +422,7 @@ Marks the option as a member.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_ENUM** = ``5``
 
-Marks the option as an enum entry.
+將該選項標記為列舉條目。
 
 .. _class_CodeEdit_constant_KIND_CONSTANT:
 
@@ -430,7 +430,7 @@ Marks the option as an enum entry.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_CONSTANT** = ``6``
 
-Marks the option as a constant.
+將該選項標記為常數。
 
 .. _class_CodeEdit_constant_KIND_NODE_PATH:
 
@@ -438,7 +438,7 @@ Marks the option as a constant.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_NODE_PATH** = ``7``
 
-Marks the option as a Godot node path.
+將該選項標記為 Godot 節點路徑。
 
 .. _class_CodeEdit_constant_KIND_FILE_PATH:
 
@@ -446,7 +446,7 @@ Marks the option as a Godot node path.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_FILE_PATH** = ``8``
 
-Marks the option as a file path.
+將該選項標記為檔路徑。
 
 .. _class_CodeEdit_constant_KIND_PLAIN_TEXT:
 
@@ -454,7 +454,7 @@ Marks the option as a file path.
 
 :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>` **KIND_PLAIN_TEXT** = ``9``
 
-Marks the option as unclassified or plain text.
+將該選項標記為未分類或純文字。
 
 .. rst-class:: classref-item-separator
 
@@ -472,7 +472,7 @@ enum **CodeCompletionLocation**: :ref:`🔗<enum_CodeEdit_CodeCompletionLocation
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_LOCAL** = ``0``
 
-The option is local to the location of the code completion query - e.g. a local variable. Subsequent value of location represent options from the outer class, the exact value represent how far they are (in terms of inner classes).
+該選項是相對於程式碼補全查詢位置的 - 例如區域變數。位置的後續值表示選項來自外部類，確切的值表示它們的距離（就內部類而言）。
 
 .. _class_CodeEdit_constant_LOCATION_PARENT_MASK:
 
@@ -488,7 +488,7 @@ The option is from the containing class or a parent class, relative to the locat
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_OTHER_USER_CODE** = ``512``
 
-The option is from user code which is not local and not in a derived class (e.g. Autoload Singletons).
+該選項來自使用者程式碼，不是局部，也不是衍生類（例如自動載入單例）。
 
 .. _class_CodeEdit_constant_LOCATION_OTHER:
 
@@ -496,7 +496,7 @@ The option is from user code which is not local and not in a derived class (e.g.
 
 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` **LOCATION_OTHER** = ``1024``
 
-The option is from other engine code, not covered by the other enum constants - e.g. built-in classes.
+該選項來自其他引擎程式碼，未被其他列舉常數覆蓋 - 例如內建類。
 
 .. rst-class:: classref-section-separator
 
@@ -504,8 +504,8 @@ The option is from other engine code, not covered by the other enum constants - 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CodeEdit_property_auto_brace_completion_enabled:
 
@@ -586,7 +586,7 @@ If ``true``, the :ref:`ProjectSettings.input/ui_text_completion_query<class_Proj
 - |void| **set_code_completion_prefixes**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_code_completion_prefixes**\ (\ )
 
-Sets prefixes that will trigger code completion.
+設定將觸發程式碼補全的前綴。
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ Sets prefixes that will trigger code completion.
 - |void| **set_comment_delimiters**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_comment_delimiters**\ (\ )
 
-Sets the comment delimiters. All existing comment delimiters will be removed.
+設定注釋分隔符號。將刪除所有的現有注釋分隔符號。
 
 .. rst-class:: classref-item-separator
 
@@ -620,7 +620,7 @@ Sets the comment delimiters. All existing comment delimiters will be removed.
 - |void| **set_string_delimiters**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`String<class_String>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`String<class_String>`\] **get_string_delimiters**\ (\ )
 
-Sets the string delimiters. All existing string delimiters will be removed.
+設定字串分隔符號。將刪除所有的現有字串分隔符號。
 
 .. rst-class:: classref-item-separator
 
@@ -807,7 +807,7 @@ Size of the tabulation indent (one :kbd:`Tab` press) in characters. If :ref:`ind
 - |void| **set_indent_using_spaces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_indent_using_spaces**\ (\ )
 
-Use spaces instead of tabs for indentation.
+使用空格代替定位字元進行縮進。
 
 .. rst-class:: classref-item-separator
 
@@ -858,7 +858,7 @@ Draws vertical lines at the provided columns. The first entry is considered a ma
 - |void| **set_symbol_lookup_on_click_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_symbol_lookup_on_click_enabled**\ (\ )
 
-Set when a validated word from :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` is clicked, the :ref:`symbol_lookup<class_CodeEdit_signal_symbol_lookup>` should be emitted.
+設定當來自 :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` 的驗證詞被點擊時，應發出 :ref:`symbol_lookup<class_CodeEdit_signal_symbol_lookup>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -883,8 +883,8 @@ If ``true``, the :ref:`symbol_hovered<class_CodeEdit_signal_symbol_hovered>` sig
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_CodeEdit_private_method__confirm_code_completion:
 
@@ -930,9 +930,9 @@ Override this method to define what happens when the user requests code completi
 
 |void| **add_auto_brace_completion_pair**\ (\ start_key\: :ref:`String<class_String>`, end_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_add_auto_brace_completion_pair>`
 
-Adds a brace pair.
+新增一對括弧。
 
-Both the start and end keys must be symbols. Only the start key has to be unique.
+開始和結束鍵都必須是符號。只有開始鍵必須是唯一的。
 
 .. rst-class:: classref-item-separator
 
@@ -944,11 +944,11 @@ Both the start and end keys must be symbols. Only the start key has to be unique
 
 |void| **add_code_completion_option**\ (\ type\: :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`, display_text\: :ref:`String<class_String>`, insert_text\: :ref:`String<class_String>`, text_color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), icon\: :ref:`Resource<class_Resource>` = null, value\: :ref:`Variant<class_Variant>` = null, location\: :ref:`int<class_int>` = 1024\ ) :ref:`🔗<class_CodeEdit_method_add_code_completion_option>`
 
-Submits an item to the queue of potential candidates for the autocomplete menu. Call :ref:`update_code_completion_options()<class_CodeEdit_method_update_code_completion_options>` to update the list.
+向自動補全功能表的潛在候選佇列提交條目。請呼叫 :ref:`update_code_completion_options()<class_CodeEdit_method_update_code_completion_options>` 來更新列表。
 
-\ ``location`` indicates location of the option relative to the location of the code completion query. See :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>` for how to set this value.
+\ ``location`` 指示的是該選項相對於程式碼補全請求位置的位置。這個值如何設定見 :ref:`CodeCompletionLocation<enum_CodeEdit_CodeCompletionLocation>`\ 。
 
-\ **Note:** This list will replace all current candidates.
+\ **注意：**\ 這個列表將替換所有目前候選。
 
 .. rst-class:: classref-item-separator
 
@@ -1000,7 +1000,7 @@ Returns ``true`` if the given line is foldable. A line is foldable if it is the 
 
 |void| **cancel_code_completion**\ (\ ) :ref:`🔗<class_CodeEdit_method_cancel_code_completion>`
 
-Cancels the autocomplete menu.
+取消自動補全功能表。
 
 .. rst-class:: classref-item-separator
 
@@ -1012,7 +1012,7 @@ Cancels the autocomplete menu.
 
 |void| **clear_bookmarked_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_bookmarked_lines>`
 
-Clears all bookmarked lines.
+清除所有書簽行。
 
 .. rst-class:: classref-item-separator
 
@@ -1024,7 +1024,7 @@ Clears all bookmarked lines.
 
 |void| **clear_breakpointed_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_breakpointed_lines>`
 
-Clears all breakpointed lines.
+清除所有中斷點行。
 
 .. rst-class:: classref-item-separator
 
@@ -1036,7 +1036,7 @@ Clears all breakpointed lines.
 
 |void| **clear_comment_delimiters**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_comment_delimiters>`
 
-Removes all comment delimiters.
+移除所有注釋分隔符號。
 
 .. rst-class:: classref-item-separator
 
@@ -1048,7 +1048,7 @@ Removes all comment delimiters.
 
 |void| **clear_executing_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_executing_lines>`
 
-Clears all executed lines.
+清除所有已執行的行。
 
 .. rst-class:: classref-item-separator
 
@@ -1060,7 +1060,7 @@ Clears all executed lines.
 
 |void| **clear_string_delimiters**\ (\ ) :ref:`🔗<class_CodeEdit_method_clear_string_delimiters>`
 
-Removes all string delimiters.
+移除所有字串分隔符號。
 
 .. rst-class:: classref-item-separator
 
@@ -1084,9 +1084,9 @@ Inserts the selected entry into the text. If ``replace`` is ``true``, any existi
 
 |void| **convert_indent**\ (\ from_line\: :ref:`int<class_int>` = -1, to_line\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_CodeEdit_method_convert_indent>`
 
-Converts the indents of lines between ``from_line`` and ``to_line`` to tabs or spaces as set by :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>`.
+將 ``from_line`` 和 ``to_line`` 之間的行縮進，轉換為 :ref:`indent_use_spaces<class_CodeEdit_property_indent_use_spaces>` 設定的定位字元或空格。
 
-Values of ``-1`` convert the entire text.
+值均為 ``-1`` 將轉換整個文字。
 
 .. rst-class:: classref-item-separator
 
@@ -1098,13 +1098,13 @@ Values of ``-1`` convert the entire text.
 
 |void| **create_code_region**\ (\ ) :ref:`🔗<class_CodeEdit_method_create_code_region>`
 
-Creates a new code region with the selection. At least one single line comment delimiter have to be defined (see :ref:`add_comment_delimiter()<class_CodeEdit_method_add_comment_delimiter>`).
+使用選擇建立一個新的程式碼區域。至少必須定義一個單行註解分隔符號（請參閱\ :ref:`add_comment_delimiter()<class_CodeEdit_method_add_comment_delimiter>`\ ）。
 
-A code region is a part of code that is highlighted when folded and can help organize your script.
+程式碼區域是程式碼的一部分，在折疊時會被反白顯示，可以幫助組織腳本。
 
-Code region start and end tags can be customized (see :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`).
+程式碼區域的開始和結束標記可以自訂（請參閱\ :ref:`set_code_region_tags()<class_CodeEdit_method_set_code_region_tags>`\ ）。
 
-Code regions are delimited using start and end tags (respectively ``region`` and ``endregion`` by default) preceded by one line comment delimiter. (eg. ``#region`` and ``#endregion``)
+程式碼區域使用開始和結束標記（預設分別為 ``region`` 和 ``endregion``\ ）進行分隔，前面有一行註解分隔符號。 （例如 ``#region`` 和 ``#endregion``\ ）
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ If there is no selection, indentation is inserted at the caret. Otherwise, the s
 
 |void| **duplicate_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_duplicate_lines>`
 
-Duplicates all lines currently selected with any caret. Duplicates the entire line beneath the current one no matter where the caret is within the line.
+複製所有目前使用任何脫字符號選擇的行。無論脫字符號位於行內的何處，複製目前行下方的整行。
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ Duplicates all selected text and duplicates all lines with a caret on them.
 
 |void| **fold_all_lines**\ (\ ) :ref:`🔗<class_CodeEdit_method_fold_all_lines>`
 
-Folds all lines that are possible to be folded (see :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`).
+折疊所有可能被折疊的行（參見 :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1176,7 +1176,7 @@ Folds all lines that are possible to be folded (see :ref:`can_fold_line()<class_
 
 |void| **fold_line**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_fold_line>`
 
-Folds the given line, if possible (see :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`).
+如果可能，折疊給定的行（參見 :ref:`can_fold_line()<class_CodeEdit_method_can_fold_line>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1188,7 +1188,7 @@ Folds the given line, if possible (see :ref:`can_fold_line()<class_CodeEdit_meth
 
 :ref:`String<class_String>` **get_auto_brace_completion_close_key**\ (\ open_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_auto_brace_completion_close_key>`
 
-Gets the matching auto brace close key for ``open_key``.
+獲取 ``open_key`` 相配對的括弧自動閉合鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1200,7 +1200,7 @@ Gets the matching auto brace close key for ``open_key``.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_bookmarked_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_bookmarked_lines>`
 
-Gets all bookmarked lines.
+獲取所有書簽行。
 
 .. rst-class:: classref-item-separator
 
@@ -1212,7 +1212,7 @@ Gets all bookmarked lines.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_breakpointed_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_breakpointed_lines>`
 
-Gets all breakpointed lines.
+獲取所有中斷點行。
 
 .. rst-class:: classref-item-separator
 
@@ -1224,19 +1224,19 @@ Gets all breakpointed lines.
 
 :ref:`Dictionary<class_Dictionary>` **get_code_completion_option**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_option>`
 
-Gets the completion option at ``index``. The return :ref:`Dictionary<class_Dictionary>` has the following key-values:
+獲取在 ``index`` 處的補全選項。返回的 :ref:`Dictionary<class_Dictionary>` 有以下鍵值。
 
-\ ``kind``: :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`\ 
+\ ``kind``\ ：\ :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`\ 
 
-\ ``display_text``: Text that is shown on the autocomplete menu.
+\ ``display_text`` ：在自動補全功能表上顯示的文字。
 
-\ ``insert_text``: Text that is to be inserted when this item is selected.
+\ ``insert_text`` ：當選中這個選項時要插入的文字。
 
-\ ``font_color``: Color of the text on the autocomplete menu.
+\ ``font_color``\ ：自動補全功能表上文字的顏色。
 
-\ ``icon``: Icon to draw on the autocomplete menu.
+\ ``icon`` ：在自動補全功能表上繪製的圖示。
 
-\ ``default_value``: Value of the symbol.
+\ ``default_value``\ ：符號的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1248,7 +1248,7 @@ Gets the completion option at ``index``. The return :ref:`Dictionary<class_Dicti
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_code_completion_options**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_options>`
 
-Gets all completion options, see :ref:`get_code_completion_option()<class_CodeEdit_method_get_code_completion_option>` for return content.
+獲取所有補全選項，返回值見 :ref:`get_code_completion_option()<class_CodeEdit_method_get_code_completion_option>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1260,7 +1260,7 @@ Gets all completion options, see :ref:`get_code_completion_option()<class_CodeEd
 
 :ref:`int<class_int>` **get_code_completion_selected_index**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_selected_index>`
 
-Gets the index of the current selected completion option.
+獲取目前已選定補全項的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1272,7 +1272,7 @@ Gets the index of the current selected completion option.
 
 :ref:`String<class_String>` **get_code_region_end_tag**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_region_end_tag>`
 
-Returns the code region end tag (without comment delimiter).
+返回該地區的導覽層。
 
 .. rst-class:: classref-item-separator
 
@@ -1284,7 +1284,7 @@ Returns the code region end tag (without comment delimiter).
 
 :ref:`String<class_String>` **get_code_region_start_tag**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_region_start_tag>`
 
-Returns the code region start tag (without comment delimiter).
+返回選區的原始起始列。
 
 .. rst-class:: classref-item-separator
 
@@ -1296,7 +1296,7 @@ Returns the code region start tag (without comment delimiter).
 
 :ref:`String<class_String>` **get_delimiter_end_key**\ (\ delimiter_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_end_key>`
 
-Gets the end key for a string or comment region index.
+獲取字串或注釋塊索引的結束鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1308,7 +1308,7 @@ Gets the end key for a string or comment region index.
 
 :ref:`Vector2<class_Vector2>` **get_delimiter_end_position**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_end_position>`
 
-If ``line`` ``column`` is in a string or comment, returns the end position of the region. If not or no end could be found, both :ref:`Vector2<class_Vector2>` values will be ``-1``.
+如果 ``line`` ``column`` 是在一個字串或注釋中，則返回該區域的結束位元置。如果不在或未找到結束位置，則 :ref:`Vector2<class_Vector2>` 的兩個值都將是 ``-1`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1320,7 @@ If ``line`` ``column`` is in a string or comment, returns the end position of th
 
 :ref:`String<class_String>` **get_delimiter_start_key**\ (\ delimiter_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_start_key>`
 
-Gets the start key for a string or comment region index.
+獲取字串或注釋塊索引的開始鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1332,7 +1332,7 @@ Gets the start key for a string or comment region index.
 
 :ref:`Vector2<class_Vector2>` **get_delimiter_start_position**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_delimiter_start_position>`
 
-If ``line`` ``column`` is in a string or comment, returns the start position of the region. If not or no start could be found, both :ref:`Vector2<class_Vector2>` values will be ``-1``.
+如果 ``line`` ``column`` 是在一個字串或注釋中，則返回該區域的起始位元置。如果不在或未找到開始位置，則 :ref:`Vector2<class_Vector2>` 的兩個值都將是 ``-1`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -1344,7 +1344,7 @@ If ``line`` ``column`` is in a string or comment, returns the start position of 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_executing_lines**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_executing_lines>`
 
-Gets all executing lines.
+獲取所有正在執行的行。
 
 .. rst-class:: classref-item-separator
 
@@ -1368,7 +1368,7 @@ Returns all lines that are currently folded.
 
 :ref:`String<class_String>` **get_text_for_code_completion**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_text_for_code_completion>`
 
-Returns the full text with char ``0xFFFF`` at the caret location.
+返回在插入符號位置帶有 ``0xFFFF`` 字元的全文。
 
 .. rst-class:: classref-item-separator
 
@@ -1380,7 +1380,7 @@ Returns the full text with char ``0xFFFF`` at the caret location.
 
 :ref:`String<class_String>` **get_text_for_symbol_lookup**\ (\ ) |const| :ref:`🔗<class_CodeEdit_method_get_text_for_symbol_lookup>`
 
-Returns the full text with char ``0xFFFF`` at the cursor location.
+返回在游標位置處帶有 ``0xFFFF`` 字元的全文。
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1392,7 @@ Returns the full text with char ``0xFFFF`` at the cursor location.
 
 :ref:`String<class_String>` **get_text_with_cursor_char**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_text_with_cursor_char>`
 
-Returns the full text with char ``0xFFFF`` at the specified location.
+返回在插入符號位置帶有 ``0xFFFF`` 字元的全文。
 
 .. rst-class:: classref-item-separator
 
@@ -1404,7 +1404,7 @@ Returns the full text with char ``0xFFFF`` at the specified location.
 
 :ref:`bool<class_bool>` **has_auto_brace_completion_close_key**\ (\ close_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_auto_brace_completion_close_key>`
 
-Returns ``true`` if close key ``close_key`` exists.
+如果關閉鍵 ``close_key`` 存在，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1416,7 +1416,7 @@ Returns ``true`` if close key ``close_key`` exists.
 
 :ref:`bool<class_bool>` **has_auto_brace_completion_open_key**\ (\ open_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_auto_brace_completion_open_key>`
 
-Returns ``true`` if open key ``open_key`` exists.
+如果打開鍵 ``open_key`` 存在，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ Returns ``true`` if open key ``open_key`` exists.
 
 :ref:`bool<class_bool>` **has_comment_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_comment_delimiter>`
 
-Returns ``true`` if comment ``start_key`` exists.
+如果注釋的 ``start_key`` 存在，返回 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -1440,7 +1440,7 @@ Returns ``true`` if comment ``start_key`` exists.
 
 :ref:`bool<class_bool>` **has_string_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_CodeEdit_method_has_string_delimiter>`
 
-Returns ``true`` if string ``start_key`` exists.
+如果字串的 ``start_key`` 存在，返回 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -1464,7 +1464,7 @@ Indents all lines that are selected or have a caret on them. Uses spaces or a ta
 
 :ref:`int<class_int>` **is_in_comment**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_CodeEdit_method_is_in_comment>`
 
-Returns delimiter index if ``line`` ``column`` is in a comment. If ``column`` is not provided, will return delimiter index if the entire ``line`` is a comment. Otherwise ``-1``.
+如果 ``line`` ``column`` 在一條注釋中，則返回分隔符號索引。如果沒有提供 ``column``\ ，且整個 ``line`` 是一條注釋，則將返回分隔符號索引。否則返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1476,7 +1476,7 @@ Returns delimiter index if ``line`` ``column`` is in a comment. If ``column`` is
 
 :ref:`int<class_int>` **is_in_string**\ (\ line\: :ref:`int<class_int>`, column\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_CodeEdit_method_is_in_string>`
 
-Returns the delimiter index if ``line`` ``column`` is in a string. If ``column`` is not provided, will return the delimiter index if the entire ``line`` is a string. Otherwise ``-1``.
+如果 ``line`` ``column`` 在一條字串中，則返回分隔符號索引。如果沒有提供 ``column``\ ，且整個 ``line`` 是一個字串，則將返回分隔符號索引。否則返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1584,7 +1584,7 @@ Moves all lines up that are selected or have a caret on them.
 
 |void| **remove_comment_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_remove_comment_delimiter>`
 
-Removes the comment delimiter with ``start_key``.
+移除帶有 ``start_key`` 的注釋分隔符號。
 
 .. rst-class:: classref-item-separator
 
@@ -1596,7 +1596,7 @@ Removes the comment delimiter with ``start_key``.
 
 |void| **remove_string_delimiter**\ (\ start_key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_remove_string_delimiter>`
 
-Removes the string delimiter with ``start_key``.
+移除帶有 ``start_key`` 的字串分隔符號。
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ Emits :ref:`code_completion_requested<class_CodeEdit_signal_code_completion_requ
 
 |void| **set_code_completion_selected_index**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_set_code_completion_selected_index>`
 
-Sets the current selected completion option.
+設定目前選定的補全選項。
 
 .. rst-class:: classref-item-separator
 
@@ -1632,7 +1632,7 @@ Sets the current selected completion option.
 
 |void| **set_code_hint**\ (\ code_hint\: :ref:`String<class_String>`\ ) :ref:`🔗<class_CodeEdit_method_set_code_hint>`
 
-Sets the code hint text. Pass an empty string to clear.
+設定程式碼提示文字。傳遞一個空字串來清除。
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1656,7 @@ If ``true``, the code hint will draw below the main caret. If ``false``, the cod
 
 |void| **set_code_region_tags**\ (\ start\: :ref:`String<class_String>` = "region", end\: :ref:`String<class_String>` = "endregion"\ ) :ref:`🔗<class_CodeEdit_method_set_code_region_tags>`
 
-Sets the code region start and end tags (without comment delimiter).
+設定程式碼區域開始和結束標記（無註解分隔符號）。
 
 .. rst-class:: classref-item-separator
 
@@ -1704,7 +1704,7 @@ Sets the given line as executing. If ``true`` and :ref:`gutters_draw_executing_l
 
 |void| **set_symbol_lookup_word_as_valid**\ (\ valid\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_set_symbol_lookup_word_as_valid>`
 
-Sets the symbol emitted by :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` as a valid lookup.
+將 :ref:`symbol_validate<class_CodeEdit_signal_symbol_validate>` 發出的符號設定為有效搜尋。
 
 .. rst-class:: classref-item-separator
 
@@ -1716,7 +1716,7 @@ Sets the symbol emitted by :ref:`symbol_validate<class_CodeEdit_signal_symbol_va
 
 |void| **toggle_foldable_line**\ (\ line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CodeEdit_method_toggle_foldable_line>`
 
-Toggle the folding of the code block at the given line.
+在給定行切換程式碼塊的折疊。
 
 .. rst-class:: classref-item-separator
 
@@ -1776,9 +1776,9 @@ Unindents all lines that are selected or have a caret on them. Uses spaces or a 
 
 |void| **update_code_completion_options**\ (\ force\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CodeEdit_method_update_code_completion_options>`
 
-Submits all completion options added with :ref:`add_code_completion_option()<class_CodeEdit_method_add_code_completion_option>`. Will try to force the autocomplete menu to popup, if ``force`` is ``true``.
+提交所有用 :ref:`add_code_completion_option()<class_CodeEdit_method_add_code_completion_option>` 新增的補全選項。如果 ``force`` 是 ``true``\ ，將嘗試強制彈出自動補全功能表 。
 
-\ **Note:** This will replace all current candidates.
+\ **注意：**\ 這將取代所有目前的候補選項。
 
 .. rst-class:: classref-section-separator
 
@@ -1786,8 +1786,8 @@ Submits all completion options added with :ref:`add_code_completion_option()<cla
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_CodeEdit_theme_color_bookmark_color:
 
@@ -1795,7 +1795,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **bookmark_color** = ``Color(0.5, 0.64, 1, 0.8)`` :ref:`🔗<class_CodeEdit_theme_color_bookmark_color>`
 
-:ref:`Color<class_Color>` of the bookmark icon for bookmarked lines.
+書簽圖示的 :ref:`Color<class_Color>`\ ，用於標記了書簽的行。
 
 .. rst-class:: classref-item-separator
 
@@ -1807,7 +1807,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **brace_mismatch_color** = ``Color(1, 0.2, 0.2, 1)`` :ref:`🔗<class_CodeEdit_theme_color_brace_mismatch_color>`
 
-:ref:`Color<class_Color>` of the text to highlight mismatched braces.
+用於高亮不配對括弧文字的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1819,7 +1819,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **breakpoint_color** = ``Color(0.9, 0.29, 0.3, 1)`` :ref:`🔗<class_CodeEdit_theme_color_breakpoint_color>`
 
-:ref:`Color<class_Color>` of the breakpoint icon for bookmarked lines.
+書簽行的中斷點圖示的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1831,7 +1831,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **code_folding_color** = ``Color(0.8, 0.8, 0.8, 0.8)`` :ref:`🔗<class_CodeEdit_theme_color_code_folding_color>`
 
-:ref:`Color<class_Color>` for all icons related to line folding.
+所有與折疊行相關的圖示的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1843,7 +1843,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **completion_background_color** = ``Color(0.17, 0.16, 0.2, 1)`` :ref:`🔗<class_CodeEdit_theme_color_completion_background_color>`
 
-Sets the background :ref:`Color<class_Color>` for the code completion popup.
+設定程式碼補全快顯視窗的背景色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1855,7 +1855,7 @@ Sets the background :ref:`Color<class_Color>` for the code completion popup.
 
 :ref:`Color<class_Color>` **completion_existing_color** = ``Color(0.87, 0.87, 0.87, 0.13)`` :ref:`🔗<class_CodeEdit_theme_color_completion_existing_color>`
 
-Background highlight :ref:`Color<class_Color>` for matching text in code completion options.
+用於配對程式碼補全選項中的文字的背景高亮的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1867,7 +1867,7 @@ Background highlight :ref:`Color<class_Color>` for matching text in code complet
 
 :ref:`Color<class_Color>` **completion_scroll_color** = ``Color(1, 1, 1, 0.29)`` :ref:`🔗<class_CodeEdit_theme_color_completion_scroll_color>`
 
-:ref:`Color<class_Color>` of the scrollbar in the code completion popup.
+程式碼補全快顯視窗中捲軸的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1879,7 +1879,7 @@ Background highlight :ref:`Color<class_Color>` for matching text in code complet
 
 :ref:`Color<class_Color>` **completion_scroll_hovered_color** = ``Color(1, 1, 1, 0.4)`` :ref:`🔗<class_CodeEdit_theme_color_completion_scroll_hovered_color>`
 
-:ref:`Color<class_Color>` of the scrollbar in the code completion popup when hovered.
+程式碼補全快顯視窗中捲軸在懸停狀態的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1891,7 +1891,7 @@ Background highlight :ref:`Color<class_Color>` for matching text in code complet
 
 :ref:`Color<class_Color>` **completion_selected_color** = ``Color(0.26, 0.26, 0.27, 1)`` :ref:`🔗<class_CodeEdit_theme_color_completion_selected_color>`
 
-Background highlight :ref:`Color<class_Color>` for the current selected option item in the code completion popup.
+程式碼補全快顯視窗中，目前選定選項的背景高亮的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1903,7 +1903,7 @@ Background highlight :ref:`Color<class_Color>` for the current selected option i
 
 :ref:`Color<class_Color>` **executing_line_color** = ``Color(0.98, 0.89, 0.27, 1)`` :ref:`🔗<class_CodeEdit_theme_color_executing_line_color>`
 
-:ref:`Color<class_Color>` of the executing icon for executing lines.
+執行行執行圖示的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1915,7 +1915,7 @@ Background highlight :ref:`Color<class_Color>` for the current selected option i
 
 :ref:`Color<class_Color>` **folded_code_region_color** = ``Color(0.68, 0.46, 0.77, 0.2)`` :ref:`🔗<class_CodeEdit_theme_color_folded_code_region_color>`
 
-:ref:`Color<class_Color>` of background line highlight for folded code region.
+折疊程式碼區域的背景線所反白的\ :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1927,7 +1927,7 @@ Background highlight :ref:`Color<class_Color>` for the current selected option i
 
 :ref:`Color<class_Color>` **line_length_guideline_color** = ``Color(0.3, 0.5, 0.8, 0.1)`` :ref:`🔗<class_CodeEdit_theme_color_line_length_guideline_color>`
 
-:ref:`Color<class_Color>` of the main line length guideline, secondary guidelines will have 50% alpha applied.
+主行長度輔助線的 :ref:`Color<class_Color>`\ ，次要輔助線將套用 50% 的 Alpha。
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ Background highlight :ref:`Color<class_Color>` for the current selected option i
 
 :ref:`Color<class_Color>` **line_number_color** = ``Color(0.67, 0.67, 0.67, 0.4)`` :ref:`🔗<class_CodeEdit_theme_color_line_number_color>`
 
-Sets the :ref:`Color<class_Color>` of line numbers.
+設定行號的顏色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1951,7 +1951,7 @@ Sets the :ref:`Color<class_Color>` of line numbers.
 
 :ref:`int<class_int>` **completion_lines** = ``7`` :ref:`🔗<class_CodeEdit_theme_constant_completion_lines>`
 
-Max number of options to display in the code completion popup at any one time.
+同時在程式碼補全快顯視窗中顯示的最大選項數。
 
 .. rst-class:: classref-item-separator
 
@@ -1975,7 +1975,7 @@ Max width of options in the code completion popup. Options longer than this will
 
 :ref:`int<class_int>` **completion_scroll_width** = ``6`` :ref:`🔗<class_CodeEdit_theme_constant_completion_scroll_width>`
 
-Width of the scrollbar in the code completion popup.
+程式碼補全快顯視窗中捲軸的寬度。
 
 .. rst-class:: classref-item-separator
 
@@ -1987,7 +1987,7 @@ Width of the scrollbar in the code completion popup.
 
 :ref:`Texture2D<class_Texture2D>` **bookmark** :ref:`🔗<class_CodeEdit_theme_icon_bookmark>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the bookmark gutter for bookmarked lines.
+設定書簽行的自訂 :ref:`Texture2D<class_Texture2D>`\ ，會在書簽欄中繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -1999,7 +1999,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the bookmark gutter f
 
 :ref:`Texture2D<class_Texture2D>` **breakpoint** :ref:`🔗<class_CodeEdit_theme_icon_breakpoint>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the breakpoint gutter for breakpointed lines.
+設定中斷點行的自訂 :ref:`Texture2D<class_Texture2D>`\ ，會在中斷點欄中繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -2011,7 +2011,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the breakpoint gutter
 
 :ref:`Texture2D<class_Texture2D>` **can_fold** :ref:`🔗<class_CodeEdit_theme_icon_can_fold>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a line can be folded.
+設定可折疊行的自訂 :ref:`Texture2D<class_Texture2D>`\ ，會在折疊行欄中繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -2023,7 +2023,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutt
 
 :ref:`Texture2D<class_Texture2D>` **can_fold_code_region** :ref:`🔗<class_CodeEdit_theme_icon_can_fold_code_region>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a code region can be folded.
+設定可折疊行的自訂 :ref:`Texture2D<class_Texture2D>`\ ，會在折疊行欄中繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -2047,7 +2047,7 @@ Background panel for the color preview box in autocompletion (visible when the c
 
 :ref:`Texture2D<class_Texture2D>` **executing_line** :ref:`🔗<class_CodeEdit_theme_icon_executing_line>`
 
-Icon to draw in the executing gutter for executing lines.
+執行行的圖示，會在執行欄中繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -2059,7 +2059,7 @@ Icon to draw in the executing gutter for executing lines.
 
 :ref:`Texture2D<class_Texture2D>` **folded** :ref:`🔗<class_CodeEdit_theme_icon_folded>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a line is folded and can be unfolded.
+當行被折疊且可以展開時，設定要在行折疊裝訂線中繪製的一個自訂 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2071,7 +2071,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutt
 
 :ref:`Texture2D<class_Texture2D>` **folded_code_region** :ref:`🔗<class_CodeEdit_theme_icon_folded_code_region>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutter when a code region is folded and can be unfolded.
+當行被折疊且可以展開時，設定要在行折疊裝訂線中繪製的一個自訂 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2083,7 +2083,7 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw in the line folding gutt
 
 :ref:`Texture2D<class_Texture2D>` **folded_eol_icon** :ref:`🔗<class_CodeEdit_theme_icon_folded_eol_icon>`
 
-Sets a custom :ref:`Texture2D<class_Texture2D>` to draw at the end of a folded line.
+設定要繪製在折疊行末尾的一個自訂 :ref:`Texture2D<class_Texture2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2095,14 +2095,14 @@ Sets a custom :ref:`Texture2D<class_Texture2D>` to draw at the end of a folded l
 
 :ref:`StyleBox<class_StyleBox>` **completion** :ref:`🔗<class_CodeEdit_theme_style_completion>`
 
-:ref:`StyleBox<class_StyleBox>` for the code completion popup.
+用於程式碼補全彈窗的 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,18 +5,18 @@
 ArrayMesh
 =========
 
-**Inherits:** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`Mesh<class_Mesh>` type that provides utility for constructing a surface from arrays.
+:ref:`Mesh<class_Mesh>` 型別，可用來從陣列建構曲面。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-The **ArrayMesh** is used to construct a :ref:`Mesh<class_Mesh>` by specifying the attributes as arrays.
+**ArrayMesh** 透過將屬性指定為陣列來建構 :ref:`Mesh<class_Mesh>`\ 。
 
-The most basic example is the creation of a single triangle:
+最基本的範例是建立一個三角形：
 
 
 .. tabs::
@@ -28,13 +28,13 @@ The most basic example is the creation of a single triangle:
     vertices.push_back(Vector3(1, 0, 0))
     vertices.push_back(Vector3(0, 0, 1))
 
-    # Initialize the ArrayMesh.
+    # 初始化 ArrayMesh。
     var arr_mesh = ArrayMesh.new()
     var arrays = []
     arrays.resize(Mesh.ARRAY_MAX)
     arrays[Mesh.ARRAY_VERTEX] = vertices
 
-    # Create the Mesh.
+    # 建立 Mesh。
     arr_mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
     var m = MeshInstance3D.new()
     m.mesh = arr_mesh
@@ -48,36 +48,36 @@ The most basic example is the creation of a single triangle:
         new Vector3(0, 0, 1),
     ];
 
-    // Initialize the ArrayMesh.
+    // 初始化 ArrayMesh。
     var arrMesh = new ArrayMesh();
     Godot.Collections.Array arrays = [];
     arrays.Resize((int)Mesh.ArrayType.Max);
     arrays[(int)Mesh.ArrayType.Vertex] = vertices;
 
-    // Create the Mesh.
+    // 建立 Mesh。
     arrMesh.AddSurfaceFromArrays(Mesh.PrimitiveType.Triangles, arrays);
     var m = new MeshInstance3D();
     m.Mesh = arrMesh;
 
 
 
-The :ref:`MeshInstance3D<class_MeshInstance3D>` is ready to be added to the :ref:`SceneTree<class_SceneTree>` to be shown.
+此 :ref:`MeshInstance3D<class_MeshInstance3D>` 已可加入 :ref:`SceneTree<class_SceneTree>` 進行顯示。
 
-See also :ref:`ImmediateMesh<class_ImmediateMesh>`, :ref:`MeshDataTool<class_MeshDataTool>` and :ref:`SurfaceTool<class_SurfaceTool>` for procedural geometry generation.
+如需程式化幾何產生，亦可參考 :ref:`ImmediateMesh<class_ImmediateMesh>`\ 、\ :ref:`MeshDataTool<class_MeshDataTool>` 與 :ref:`SurfaceTool<class_SurfaceTool>`\ 。
 
-\ **Note:** Godot uses clockwise `winding order <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__ for front faces of triangle primitive modes.
+\ **注意：**\ Godot 在三角形圖元模式的正面使用順時針 `繞線順序 <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Procedural geometry using the ArrayMesh <../tutorials/3d/procedural_geometry/arraymesh>`
+- :doc:`使用 ArrayMesh 進行程式化幾何 <../tutorials/3d/procedural_geometry/arraymesh>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -146,8 +146,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ArrayMesh_property_blend_shape_mode:
 
@@ -160,7 +160,7 @@ Property Descriptions
 - |void| **set_blend_shape_mode**\ (\ value\: :ref:`BlendShapeMode<enum_Mesh_BlendShapeMode>`\ )
 - :ref:`BlendShapeMode<enum_Mesh_BlendShapeMode>` **get_blend_shape_mode**\ (\ )
 
-The blend shape mode.
+混合形狀模式。
 
 .. rst-class:: classref-item-separator
 
@@ -177,7 +177,7 @@ The blend shape mode.
 - |void| **set_custom_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_custom_aabb**\ (\ )
 
-Overrides the :ref:`AABB<class_AABB>` with one defined by user for use with frustum culling. Especially useful to avoid unexpected culling when using a shader to offset vertices.
+使用使用者自訂的 :ref:`AABB<class_AABB>` 取代預設值，供視錐剔除使用。當著色器會偏移頂點時，可避免被意外剔除。
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +194,9 @@ Overrides the :ref:`AABB<class_AABB>` with one defined by user for use with frus
 - |void| **set_shadow_mesh**\ (\ value\: :ref:`ArrayMesh<class_ArrayMesh>`\ )
 - :ref:`ArrayMesh<class_ArrayMesh>` **get_shadow_mesh**\ (\ )
 
-An optional mesh which can be used for rendering shadows and the depth prepass. Can be used to increase performance by supplying a mesh with fused vertices and only vertex position data (without normals, UVs, colors, etc.).
+可選的網格，可用於陰影與深度預傳（depth prepass）的繪製。若提供僅包含融合後頂點且只有頂點位置資料（無法線、UV、顏色等）的網格，可提升效能。
 
-\ **Note:** This mesh must have exactly the same vertex positions as the source mesh (including the source mesh's LODs, if present). If vertex positions differ, then the mesh will not draw correctly.
+\ **注意：**\ 此網格的頂點位置必須與來源網格完全一致（若來源網格有 LOD 亦須相同），否則將無法正確繪製。
 
 .. rst-class:: classref-section-separator
 
@@ -204,8 +204,8 @@ An optional mesh which can be used for rendering shadows and the depth prepass. 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ArrayMesh_method_add_blend_shape:
 
@@ -213,7 +213,7 @@ Method Descriptions
 
 |void| **add_blend_shape**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ArrayMesh_method_add_blend_shape>`
 
-Adds name for a blend shape that will be added with :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`. Must be called before surface is added.
+為將透過 :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>` 加入的混合形狀設定名稱。必須在加入曲面前呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -225,19 +225,19 @@ Adds name for a blend shape that will be added with :ref:`add_surface_from_array
 
 |void| **add_surface_from_arrays**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, flags\: |bitfield|\[:ref:`ArrayFormat<enum_Mesh_ArrayFormat>`\] = 0\ ) :ref:`🔗<class_ArrayMesh_method_add_surface_from_arrays>`
 
-Creates a new surface. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` will become the ``surf_idx`` for this new surface.
+建立新的曲面。\ :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` 的返回值將成為此曲面的 ``surf_idx``\ 。
 
-Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
+曲面會以 ``primitive`` 指定的圖元型別進行繪製，可為 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` 中的任一值。
 
-The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
+\ ``arrays`` 是「陣列的陣列」。在 :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` 個元素中，每個元素要嘛包含由 :ref:`ArrayType<enum_Mesh_ArrayType>` 相對應成員所描述的曲面資料，要嘛為未使用時的 ``null``\ 。例如，\ ``arrays[0]`` 為頂點陣列；此子陣列為必填，其餘則為可選。若加上索引陣列，即會進入「索引模式」，此時頂點與其他陣列成為資料來源，而索引陣列決定頂點次序。除非使用 :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>`\ ，否則所有子陣列長度必須等於頂點陣列長度（或為其整數倍，當一個頂點對應多個子陣列元素時），或保持空陣列。
 
-The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
+\ ``blend_shapes`` 是每個混合形狀的頂點資料陣列。其結構與 ``arrays`` 相同，但僅當 ``arrays`` 內有設定 :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`\ 、\ :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` 或 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` 時，對應項目才會被設定；其餘皆為 ``null``\ 。
 
-The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
+\ ``lods`` 為字典，鍵值為 :ref:`float<class_float>`\ 、內容為 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。每一項代表此曲面的一級 LOD，其中值為該 LOD 使用的 :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` 陣列，鍵值大致對應開始啟用該 LOD 的距離；鍵越大，啟用距離亦越遠。
 
-The ``flags`` argument is the bitwise OR of, as required: One value of :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+\ ``flags`` 為多個旗標的位元 OR：對於每個使用中的自訂通道，將 :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` 的值左移 ``ARRAY_FORMAT_CUSTOMn_SHIFT``\ ；亦可加入 :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`\ 、\ :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`\ 、\ :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`\ 。
 
-\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
+\ **注意：**\ 使用索引時建議僅使用點、線或三角形圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ The ``flags`` argument is the bitwise OR of, as required: One value of :ref:`Arr
 
 |void| **clear_blend_shapes**\ (\ ) :ref:`🔗<class_ArrayMesh_method_clear_blend_shapes>`
 
-Removes all blend shapes from this **ArrayMesh**.
+移除此 **ArrayMesh** 的所有混合形狀。
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ Removes all blend shapes from this **ArrayMesh**.
 
 |void| **clear_surfaces**\ (\ ) :ref:`🔗<class_ArrayMesh_method_clear_surfaces>`
 
-Removes all surfaces from this **ArrayMesh**.
+移除此 **ArrayMesh** 的所有曲面。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ Removes all surfaces from this **ArrayMesh**.
 
 :ref:`int<class_int>` **get_blend_shape_count**\ (\ ) |const| :ref:`🔗<class_ArrayMesh_method_get_blend_shape_count>`
 
-Returns the number of blend shapes that the **ArrayMesh** holds.
+回傳此 **ArrayMesh** 包含的混合形狀數量。
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the number of blend shapes that the **ArrayMesh** holds.
 
 :ref:`StringName<class_StringName>` **get_blend_shape_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_get_blend_shape_name>`
 
-Returns the name of the blend shape at this index.
+回傳此索引處混合形狀的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Returns the name of the blend shape at this index.
 
 :ref:`Error<enum_@GlobalScope_Error>` **lightmap_unwrap**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, texel_size\: :ref:`float<class_float>`\ ) :ref:`🔗<class_ArrayMesh_method_lightmap_unwrap>`
 
-Performs a UV unwrap on the **ArrayMesh** to prepare the mesh for lightmapping.
+對 **ArrayMesh** 執行 UV 展開，以便進行光照貼圖。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Performs a UV unwrap on the **ArrayMesh** to prepare the mesh for lightmapping.
 
 |void| **regen_normal_maps**\ (\ ) :ref:`🔗<class_ArrayMesh_method_regen_normal_maps>`
 
-Regenerates tangents for each of the **ArrayMesh**'s surfaces.
+重新產生此 **ArrayMesh** 每個曲面的切線。
 
 .. rst-class:: classref-item-separator
 
@@ -321,7 +321,7 @@ Regenerates tangents for each of the **ArrayMesh**'s surfaces.
 
 |void| **set_blend_shape_name**\ (\ index\: :ref:`int<class_int>`, name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_ArrayMesh_method_set_blend_shape_name>`
 
-Sets the name of the blend shape at this index.
+設定此索引處混合形狀的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ Sets the name of the blend shape at this index.
 
 :ref:`int<class_int>` **surface_find_by_name**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_find_by_name>`
 
-Returns the index of the first surface with this name held within this **ArrayMesh**. If none are found, -1 is returned.
+回傳此 **ArrayMesh** 中第一個具有指定名稱的曲面索引；若無則回傳 -1。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ Returns the index of the first surface with this name held within this **ArrayMe
 
 :ref:`int<class_int>` **surface_get_array_index_len**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_array_index_len>`
 
-Returns the length in indices of the index array in the requested surface (see :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+回傳所指定曲面之索引陣列的索引數量（參見 :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Returns the length in indices of the index array in the requested surface (see :
 
 :ref:`int<class_int>` **surface_get_array_len**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_array_len>`
 
-Returns the length in vertices of the vertex array in the requested surface (see :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+回傳所指定曲面之頂點陣列的頂點數量（參見 :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Returns the length in vertices of the vertex array in the requested surface (see
 
 |bitfield|\[:ref:`ArrayFormat<enum_Mesh_ArrayFormat>`\] **surface_get_format**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_format>`
 
-Returns the format mask of the requested surface (see :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+回傳所指定曲面的格式遮罩（參見 :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ Returns the format mask of the requested surface (see :ref:`add_surface_from_arr
 
 :ref:`String<class_String>` **surface_get_name**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_name>`
 
-Gets the name assigned to this surface.
+取得此曲面設定的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -393,7 +393,7 @@ Gets the name assigned to this surface.
 
 :ref:`PrimitiveType<enum_Mesh_PrimitiveType>` **surface_get_primitive_type**\ (\ surf_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ArrayMesh_method_surface_get_primitive_type>`
 
-Returns the primitive type of the requested surface (see :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`).
+回傳所指定曲面的圖元型別（參見 :ref:`add_surface_from_arrays()<class_ArrayMesh_method_add_surface_from_arrays>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -405,7 +405,7 @@ Returns the primitive type of the requested surface (see :ref:`add_surface_from_
 
 |void| **surface_remove**\ (\ surf_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_remove>`
 
-Removes the surface at the given index from the Mesh, shifting surfaces with higher index down by one.
+從 Mesh 中移除指定索引的曲面，並將較高索引的曲面依序下移一位。
 
 .. rst-class:: classref-item-separator
 
@@ -417,7 +417,7 @@ Removes the surface at the given index from the Mesh, shifting surfaces with hig
 
 |void| **surface_set_name**\ (\ surf_idx\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ArrayMesh_method_surface_set_name>`
 
-Sets a name for a given surface.
+為指定曲面設定名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -461,12 +461,12 @@ Sets a name for a given surface.
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

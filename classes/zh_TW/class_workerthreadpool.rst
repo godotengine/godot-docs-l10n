@@ -5,75 +5,75 @@
 WorkerThreadPool
 ================
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-A singleton that allocates some :ref:`Thread<class_Thread>`\ s on startup, used to offload tasks to these threads.
+單例，啟動時會分配一些 :ref:`Thread<class_Thread>`\ ，可以將工作解除安裝到這些執行緒中執行。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-The **WorkerThreadPool** singleton allocates a set of :ref:`Thread<class_Thread>`\ s (called worker threads) on project startup and provides methods for offloading tasks to them. This can be used for simple multithreading without having to create :ref:`Thread<class_Thread>`\ s.
+**WorkerThreadPool** 單例在專案啟動時會分配一組 :ref:`Thread<class_Thread>`\ （稱作工作執行緒）並提供將工作解除安裝至這些執行緒上執行的方法。這樣就能夠簡化多執行緒的使用，不必建立 :ref:`Thread<class_Thread>`\ 。
 
-Tasks hold the :ref:`Callable<class_Callable>` to be run by the threads. **WorkerThreadPool** can be used to create regular tasks, which will be taken by one worker thread, or group tasks, which can be distributed between multiple worker threads. Group tasks execute the :ref:`Callable<class_Callable>` multiple times, which makes them useful for iterating over a lot of elements, such as the enemies in an arena.
+工作裡放置的是要讓執行緒執行的 :ref:`Callable<class_Callable>`\ 。\ **WorkerThreadPool** 既可以建立常規任務也可以建立群組工作，常規工作由單個工作執行緒執行，而群組工作可以分佈在多個工作執行緒執行。群組工作會多次執行同一個 :ref:`Callable<class_Callable>`\ ，可用於走訪大量的元素，例如場景中的敵人。
 
-Here's a sample on how to offload an expensive function to worker threads:
+以下是將開銷很大的函式解除安裝到工作執行緒執行的例子：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var enemies = [] # An array to be filled with enemies.
+    var enemies = [] # 用敵人填充的陣列。
 
     func process_enemy_ai(enemy_index):
         var processed_enemy = enemies[enemy_index]
-        # Expensive logic...
+        # 開銷很大的邏輯……
 
     func _process(delta):
         var task_id = WorkerThreadPool.add_group_task(process_enemy_ai, enemies.size())
-        # Other code...
+        # 其他程式碼……
         WorkerThreadPool.wait_for_group_task_completion(task_id)
-        # Other code that depends on the enemy AI already being processed.
+        # 要求敵人 AI 已經處理完畢的其他程式碼。
 
  .. code-tab:: csharp
 
-    private List<Node> _enemies = new List<Node>(); // A list to be filled with enemies.
+    private List<Node> _enemies = new List<Node>(); // 用敵人填充的陣列。
 
     private void ProcessEnemyAI(int enemyIndex)
     {
         Node processedEnemy = _enemies[enemyIndex];
-        // Expensive logic here.
+        // 開銷很大的邏輯……
     }
 
     public override void _Process(double delta)
     {
         long taskId = WorkerThreadPool.AddGroupTask(Callable.From<int>(ProcessEnemyAI), _enemies.Count);
-        // Other code...
+        // 其他程式碼……
         WorkerThreadPool.WaitForGroupTaskCompletion(taskId);
-        // Other code that depends on the enemy AI already being processed.
+        // 要求敵人 AI 已經處理完畢的其他程式碼。
     }
 
 
 
-The above code relies on the number of elements in the ``enemies`` array remaining constant during the multithreaded part.
+以上程式碼要求 ``enemies`` 陣列中的元素個數在多執行緒部分執行時保持不變。
 
-\ **Note:** Using this singleton could affect performance negatively if the task being distributed between threads is not computationally expensive.
+\ **注意：**\ 如果分佈到多個執行緒執行的工作在計算方面的開銷並不大，那麼使用這個單例可能對性能有負面影響。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Using multiple threads <../tutorials/performance/using_multiple_threads>`
+- :doc:`使用多執行緒 <../tutorials/performance/using_multiple_threads>`
 
-- :doc:`Thread-safe APIs <../tutorials/performance/thread_safe_apis>`
+- :doc:`執行緒安全的 API <../tutorials/performance/thread_safe_apis>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_WorkerThreadPool_method_add_group_task:
 
@@ -175,9 +175,9 @@ Can be used by a task to get its own task ID, or to determine whether the curren
 
 :ref:`int<class_int>` **get_group_processed_element_count**\ (\ group_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WorkerThreadPool_method_get_group_processed_element_count>`
 
-Returns how many times the :ref:`Callable<class_Callable>` of the group task with the given ID has already been executed by the worker threads.
+返回具有給定 ID 的群組工作的 :ref:`Callable<class_Callable>` 已經被工作執行緒執行的次數。
 
-\ **Note:** If a thread has started executing the :ref:`Callable<class_Callable>` but is yet to finish, it won't be counted.
+\ **注意：**\ 執行緒已經開始執行 :ref:`Callable<class_Callable>` 但尚未完成的情況不計算在內。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Returns ``true`` if the task with the given ID is completed.
 
 |void| **wait_for_group_task_completion**\ (\ group_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WorkerThreadPool_method_wait_for_group_task_completion>`
 
-Pauses the thread that calls this method until the group task with the given ID is completed.
+在具有給定 ID 的群組工作完成前暫停呼叫這個方法的執行緒。
 
 .. rst-class:: classref-item-separator
 
@@ -237,12 +237,12 @@ Returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR
 
 Returns :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>` if the call is made from another running task and, due to task scheduling, there's potential for deadlocking (e.g., the task to await may be at a lower level in the call stack and therefore can't progress). This is an advanced situation that should only matter when some tasks depend on others (in the current implementation, the tricky case is a task trying to wait on an older one).
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

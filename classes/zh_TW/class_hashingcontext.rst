@@ -5,14 +5,14 @@
 HashingContext
 ==============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides functionality for computing cryptographic hashes chunk by chunk.
+提供分段計算加密雜湊的功能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The HashingContext class provides an interface for computing cryptographic hashes over multiple iterations. Useful for computing hashes of big files (so you don't have to load them all in memory), network streams, and data streams in general (so you don't have to hold buffers).
 
@@ -75,8 +75,8 @@ The :ref:`HashType<enum_HashingContext_HashType>` enum shows the supported hashi
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -95,8 +95,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_HashingContext_HashType:
 
@@ -110,7 +110,7 @@ enum **HashType**: :ref:`🔗<enum_HashingContext_HashType>`
 
 :ref:`HashType<enum_HashingContext_HashType>` **HASH_MD5** = ``0``
 
-Hashing algorithm: MD5.
+雜湊演算法：MD5。
 
 .. _class_HashingContext_constant_HASH_SHA1:
 
@@ -118,7 +118,7 @@ Hashing algorithm: MD5.
 
 :ref:`HashType<enum_HashingContext_HashType>` **HASH_SHA1** = ``1``
 
-Hashing algorithm: SHA-1.
+雜湊演算法：SHA-1。
 
 .. _class_HashingContext_constant_HASH_SHA256:
 
@@ -126,7 +126,7 @@ Hashing algorithm: SHA-1.
 
 :ref:`HashType<enum_HashingContext_HashType>` **HASH_SHA256** = ``2``
 
-Hashing algorithm: SHA-256.
+雜湊演算法：SHA-256。
 
 .. rst-class:: classref-section-separator
 
@@ -134,8 +134,8 @@ Hashing algorithm: SHA-256.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_HashingContext_method_finish:
 
@@ -143,7 +143,7 @@ Method Descriptions
 
 :ref:`PackedByteArray<class_PackedByteArray>` **finish**\ (\ ) :ref:`🔗<class_HashingContext_method_finish>`
 
-Closes the current context, and return the computed hash.
+關閉目前本文，並返回計算出的雜湊值。
 
 .. rst-class:: classref-item-separator
 
@@ -167,14 +167,14 @@ Starts a new hash computation of the given ``type`` (e.g. :ref:`HASH_SHA256<clas
 
 :ref:`Error<enum_@GlobalScope_Error>` **update**\ (\ chunk\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HashingContext_method_update>`
 
-Updates the computation with the given ``chunk`` of data.
+使用給定的資料塊 ``chunk`` 更新計算。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

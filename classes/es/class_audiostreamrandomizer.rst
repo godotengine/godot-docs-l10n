@@ -136,9 +136,9 @@ Controla cómo este AudioStreamRandomizer elige qué AudioStream reproducir a co
 - |void| **set_random_pitch**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch**\ (\ )
 
-The largest possible frequency multiplier of the random pitch variation. Pitch will be randomly chosen within a range of ``1.0 / random_pitch`` and ``random_pitch``. A value of ``1.0`` means no variation. A value of ``2.0`` means pitch will be randomized between double and half.
+El mayor multiplicador de frecuencia posible de la variación de tono aleatoria. El tono se elegirá aleatoriamente dentro de un rango de ``1.0 / random_pitch`` y ``random_pitch``. Un valor de ``1.0`` significa que no hay variación. Un valor de ``2.0`` significa que el tono se aleatorizará entre el doble y la mitad.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
+\ **Nota:** Establecer esta propiedad también establece :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
 
 .. rst-class:: classref-item-separator
 
@@ -155,9 +155,9 @@ The largest possible frequency multiplier of the random pitch variation. Pitch w
 - |void| **set_random_pitch_semitones**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch_semitones**\ (\ )
 
-The largest possible distance, in semitones, of the random pitch variation. A value of ``0.0`` means no variation.
+La mayor distancia posible, en semitonos, de la variación de tono aleatoria. Un valor de ``0.0`` significa que no hay variación.
 
-\ **Note:** Setting this property also sets :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
+\ **Nota:** Establecer esta propiedad también establece :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - |void| **set_random_volume_offset_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
-The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+La intensidad de la variación de volumen aleatoria. El volumen se aumentará o disminuirá en un valor aleatorio hasta ``random_volume_offset_db``. Un valor de ``0.0`` significa que no hay variación. Un valor de ``3.0`` significa que el volumen se aleatorizará entre ``-3.0 dB`` y ``+3.0 dB``.
 
 .. rst-class:: classref-item-separator
 

@@ -5,21 +5,21 @@
 RDSamplerState
 ==============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Sampler state (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+取樣器狀態（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
+這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RDSamplerState_property_anisotropy_max:
 
@@ -76,9 +76,9 @@ Property Descriptions
 - |void| **set_anisotropy_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_anisotropy_max**\ (\ )
 
-Maximum anisotropy that can be used when sampling. Only effective if :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` is ``true``. Higher values result in a sharper sampler at oblique angles, at the cost of performance (due to memory bandwidth). This value may be limited by the graphics hardware in use. Most graphics hardware only supports values up to ``16.0``.
+取樣時能夠使用的最大各向異性。僅在 :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` 為 ``true`` 時有效。值越高，傾斜角度下得到的取樣越銳利，但性能開銷也越大（由於顯存頻寬的原因）。這個值可能受到使用的圖形硬體的限制。大多數圖形硬體最多僅支援 ``16.0``\ 。
 
-If :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>` is ``1.0``, forcibly disables anisotropy even if :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` is ``true``.
+如果 :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>` 為 ``1.0``\ ，則會強制禁用各向異性，即便 :ref:`use_anisotropy<class_RDSamplerState_property_use_anisotropy>` 為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ If :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>` is ``1.0`
 - |void| **set_border_color**\ (\ value\: :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>`\ )
 - :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` **get_border_color**\ (\ )
 
-The border color that will be returned when sampling outside the sampler's bounds and the :ref:`repeat_u<class_RDSamplerState_property_repeat_u>`, :ref:`repeat_v<class_RDSamplerState_property_repeat_v>` or :ref:`repeat_w<class_RDSamplerState_property_repeat_w>` modes have repeating disabled.
+對取樣器範圍外進行取樣，並且 :ref:`repeat_u<class_RDSamplerState_property_repeat_u>`\ 、\ :ref:`repeat_v<class_RDSamplerState_property_repeat_v>` 或 :ref:`repeat_w<class_RDSamplerState_property_repeat_w>` 的模式禁用了重複時，返回的邊框顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ The border color that will be returned when sampling outside the sampler's bound
 - |void| **set_compare_op**\ (\ value\: :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>`\ )
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_compare_op**\ (\ )
 
-The compare operation to use. Only effective if :ref:`enable_compare<class_RDSamplerState_property_enable_compare>` is ``true``.
+要使用的比較運算。僅在 :ref:`enable_compare<class_RDSamplerState_property_enable_compare>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ The compare operation to use. Only effective if :ref:`enable_compare<class_RDSam
 - |void| **set_enable_compare**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_compare**\ (\ )
 
-If ``true``, returned values will be based on the comparison operation defined in :ref:`compare_op<class_RDSamplerState_property_compare_op>`. This is a hardware-based approach and is therefore faster than performing this manually in a shader. For example, compare operations are used for shadow map rendering by comparing depth values from a shadow sampler.
+如果為 ``true``\ ，則返回值基於 :ref:`compare_op<class_RDSamplerState_property_compare_op>` 定義的比較運算。這種做法基於硬體，因此比手動在著色器中執行要快。例如，算繪陰影貼圖時就會對陰影取樣器的深度值進行比較運算。
 
 .. rst-class:: classref-item-separator
 
@@ -146,7 +146,7 @@ If ``true``, returned values will be based on the comparison operation defined i
 - |void| **set_lod_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_lod_bias**\ (\ )
 
-The mipmap LOD bias to use. Positive values will make the sampler blurrier at a given distance, while negative values will make the sampler sharper at a given distance (at the risk of looking grainy). Recommended values are between ``-0.5`` and ``0.0``. Only effective if the sampler has mipmaps available.
+要使用的 mipmap LOD 偏置。正值會讓取樣器在給定距離處更模糊，而負值會讓取樣器在給定距離處更銳利（有可能看上去會很顆粒化）。推薦值在 ``-0.5`` 到 ``0.0`` 之間。僅在取樣器的 mipmap 可用時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ The sampler's magnification filter. It is the filtering method used when samplin
 - |void| **set_max_lod**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_lod**\ (\ )
 
-The maximum mipmap LOD bias to display (lowest resolution). Only effective if the sampler has mipmaps available.
+用於顯示的最大 mipmap LOD 偏置（最低解析度）。僅在取樣器有 mipmap 可用時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ The sampler's minification filter. It is the filtering method used when sampling
 - |void| **set_min_lod**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_lod**\ (\ )
 
-The minimum mipmap LOD bias to display (highest resolution). Only effective if the sampler has mipmaps available.
+用於顯示的最小 mipmap LOD 偏置（最高解析度）。僅在取樣器有 mipmap 可用時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ The minimum mipmap LOD bias to display (highest resolution). Only effective if t
 - |void| **set_mip_filter**\ (\ value\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ )
 - :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **get_mip_filter**\ (\ )
 
-The filtering method to use for mipmaps.
+Mipmap 使用的篩選方法。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ The filtering method to use for mipmaps.
 - |void| **set_repeat_u**\ (\ value\: :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>`\ )
 - :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **get_repeat_u**\ (\ )
 
-The repeat mode to use along the U axis of UV coordinates. This affects the returned values if sampling outside the UV bounds.
+沿著 UV 座標 U 軸的重複模式。影響取樣超出 UV 邊界時的返回值。
 
 .. rst-class:: classref-item-separator
 
@@ -265,7 +265,7 @@ The repeat mode to use along the U axis of UV coordinates. This affects the retu
 - |void| **set_repeat_v**\ (\ value\: :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>`\ )
 - :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **get_repeat_v**\ (\ )
 
-The repeat mode to use along the V axis of UV coordinates. This affects the returned values if sampling outside the UV bounds.
+沿著 UV 座標 V 軸的重複模式。影響取樣超出 UV 邊界時的返回值。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ The repeat mode to use along the V axis of UV coordinates. This affects the retu
 - |void| **set_repeat_w**\ (\ value\: :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>`\ )
 - :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **get_repeat_w**\ (\ )
 
-The repeat mode to use along the W axis of UV coordinates. This affects the returned values if sampling outside the UV bounds. Only effective for 3D samplers.
+沿著 UV 座標 W 軸的重複模式。影響取樣超出 UV 邊界時的返回值。僅對 3D 取樣器有效。
 
 .. rst-class:: classref-item-separator
 
@@ -316,14 +316,14 @@ If ``true``, the texture will be sampled with coordinates ranging from 0 to the 
 - |void| **set_use_anisotropy**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_anisotropy**\ (\ )
 
-If ``true``, perform anisotropic sampling. See :ref:`anisotropy_max<class_RDSamplerState_property_anisotropy_max>`.
+如果為 ``true``\ ，則執行各向異性取樣。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

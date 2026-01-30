@@ -5,25 +5,25 @@
 VisualShaderNodeExpression
 ==========================
 
-**Inherits:** :ref:`VisualShaderNodeGroupBase<class_VisualShaderNodeGroupBase>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNodeGroupBase<class_VisualShaderNodeGroupBase>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>`
+**派生：** :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>`
 
-A custom visual shader graph expression written in Godot Shading Language.
+用Godot着色语言编写的自定义可视化着色器图形表达式。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Custom Godot Shading Language expression, with a custom number of input and output ports.
+自定义 Godot 着色器语言表达式，有自定义数量的输入和输出端口。
 
-The provided code is directly injected into the graph's matching shader function (``vertex``, ``fragment``, or ``light``), so it cannot be used to declare functions, varyings, uniforms, or global constants. See :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` for such global definitions.
+所提供的代码会直接注入到着色器图中匹配的着色器函数中（\ ``vertex``\ 、\ ``fragment`` 或 ``light``\ ），所以不能用于声明函数、varying、uniform 或全局常量。这种全局定义见 :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeExpression_property_expression:
 
@@ -52,14 +52,14 @@ Property Descriptions
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-An expression in Godot Shading Language, which will be injected at the start of the graph's matching shader function (``vertex``, ``fragment``, or ``light``), and thus cannot be used to declare functions, varyings, uniforms, or global constants.
+Godot 着色器语言中的表达式，它将被注入到图形匹配的着色器函数（\ ``vertex``\ 、\ ``fragment`` 或 ``light``\ ）的开头，因此不能用于声明函数、varying、uniform 或全局常量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

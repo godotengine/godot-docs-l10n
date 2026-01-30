@@ -5,21 +5,21 @@
 RDPipelineRasterizationState
 ============================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Pipeline rasterization state (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+管線柵格化狀態（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
+這個物件由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_RDPipelineRasterizationState_property_cull_mode:
 
@@ -68,7 +68,7 @@ Property Descriptions
 - |void| **set_cull_mode**\ (\ value\: :ref:`PolygonCullMode<enum_RenderingDevice_PolygonCullMode>`\ )
 - :ref:`PolygonCullMode<enum_RenderingDevice_PolygonCullMode>` **get_cull_mode**\ (\ )
 
-The cull mode to use when drawing polygons, which determines whether front faces or backfaces are hidden.
+繪製多邊形時的剔除模式，決定隱藏正面還是反面。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ A constant scale applied to the slope of each polygons' depth. Applied before :r
 - |void| **set_discard_primitives**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_discard_primitives**\ (\ )
 
-If ``true``, primitives are discarded immediately before the rasterization stage.
+如果為 ``true``\ ，則會在柵格化階段前立即丟棄圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ If ``true``, clamps depth values according to the minimum and maximum depth of t
 - |void| **set_front_face**\ (\ value\: :ref:`PolygonFrontFace<enum_RenderingDevice_PolygonFrontFace>`\ )
 - :ref:`PolygonFrontFace<enum_RenderingDevice_PolygonFrontFace>` **get_front_face**\ (\ )
 
-The winding order to use to determine which face of a triangle is considered its front face.
+要使用的纏繞順序，決定三角形的哪個面是正面。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ The winding order to use to determine which face of a triangle is considered its
 - |void| **set_line_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_width**\ (\ )
 
-The line width to use when drawing lines (in pixels). Thick lines may not be supported on all hardware.
+繪製線段時使用的線寬（單位為圖元）。可能不是所有硬體都支援粗線段。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ The line width to use when drawing lines (in pixels). Thick lines may not be sup
 - |void| **set_patch_control_points**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_patch_control_points**\ (\ )
 
-The number of control points to use when drawing a patch with tessellation enabled. Higher values result in higher quality at the cost of performance.
+啟用曲面細分繪製面片時，使用的控制點的數量。值越高，品質越高，但是性能開銷也越高。
 
 .. rst-class:: classref-item-separator
 
@@ -238,14 +238,14 @@ The number of control points to use when drawing a patch with tessellation enabl
 - |void| **set_wireframe**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_wireframe**\ (\ )
 
-If ``true``, performs wireframe rendering for triangles instead of flat or textured rendering.
+如果為 ``true``\ ，則會為三角形進行線框算繪，不進行平面或紋理算繪。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

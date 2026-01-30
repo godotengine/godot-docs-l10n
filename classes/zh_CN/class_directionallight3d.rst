@@ -8,32 +8,32 @@
 DirectionalLight3D
 ==================
 
-**Inherits:** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Light3D<class_Light3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Directional light from a distance, as from the Sun.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A directional light is a type of :ref:`Light3D<class_Light3D>` node that models an infinite number of parallel rays covering the entire scene. It is used for lights with strong intensity that are located far away from the scene to model sunlight or moonlight.
-
-Light is emitted in the -Z direction of the node's global basis. For an unrotated light, this means that the light is emitted forwards, illuminating the front side of a 3D model (see :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`). The position of the node is ignored; only the basis is used to determine light direction.
+来自远处的平行光，如太阳光。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`3D lights and shadows <../tutorials/3d/lights_and_shadows>`
+平行光是一种 :ref:`Light3D<class_Light3D>` 节点，它可以模拟覆盖整个场景的无限数量的平行光线。它用于距离场景较远的强光，以模拟日光或月光。
 
-- :doc:`Faking global illumination <../tutorials/3d/global_illumination/faking_global_illumination>`
+光线沿节点全局基的 -Z 方向发射。对于未旋转的光源，这意味着光线向前发射，照亮 3D 模型的正面（参见 :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` 和 :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`\ ）。节点的位置会被忽略；只有基被用于确定光线方向。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`3D 灯光与阴影 <../tutorials/3d/lights_and_shadows>`
+
+- :doc:`伪造全局光照 <../tutorials/3d/global_illumination/faking_global_illumination>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_DirectionalLight3D_ShadowMode:
 
@@ -79,7 +79,7 @@ enum **ShadowMode**: :ref:`🔗<enum_DirectionalLight3D_ShadowMode>`
 
 :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **SHADOW_ORTHOGONAL** = ``0``
 
-Renders the entire scene's shadow map from an orthogonal point of view. This is the fastest directional shadow mode. May result in blurrier shadows on close objects.
+从正交的角度渲染整个场景的阴影图。这是最快的定向阴影模式。可能会导致近距离物体的阴影更模糊。
 
 .. _class_DirectionalLight3D_constant_SHADOW_PARALLEL_2_SPLITS:
 
@@ -87,7 +87,7 @@ Renders the entire scene's shadow map from an orthogonal point of view. This is 
 
 :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **SHADOW_PARALLEL_2_SPLITS** = ``1``
 
-Splits the view frustum in 2 areas, each with its own shadow map. This shadow mode is a compromise between :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` and :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` in terms of performance.
+将视锥体分成2个区域，每个区域都有自己的阴影贴图。这种阴影模式是 :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` 和 :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` 在性能上的折衷。
 
 .. _class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS:
 
@@ -95,7 +95,7 @@ Splits the view frustum in 2 areas, each with its own shadow map. This shadow mo
 
 :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **SHADOW_PARALLEL_4_SPLITS** = ``2``
 
-Splits the view frustum in 4 areas, each with its own shadow map. This is the slowest directional shadow mode.
+将视锥体分成 4 个区域，每个区域都有自己的阴影贴图。这是最慢的定向阴影模式。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ enum **SkyMode**: :ref:`🔗<enum_DirectionalLight3D_SkyMode>`
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_LIGHT_AND_SKY** = ``0``
 
-Makes the light visible in both scene lighting and sky rendering.
+使灯光在场景照明和天空渲染中都可见。
 
 .. _class_DirectionalLight3D_constant_SKY_MODE_LIGHT_ONLY:
 
@@ -121,7 +121,7 @@ Makes the light visible in both scene lighting and sky rendering.
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_LIGHT_ONLY** = ``1``
 
-Makes the light visible in scene lighting only (including direct lighting and global illumination). When using this mode, the light will not be visible from sky shaders.
+使灯光仅在场景照明中可见（包括直接照明和全局照明）。使用此模式时，天空着色器看不到此灯光。
 
 .. _class_DirectionalLight3D_constant_SKY_MODE_SKY_ONLY:
 
@@ -129,7 +129,7 @@ Makes the light visible in scene lighting only (including direct lighting and gl
 
 :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **SKY_MODE_SKY_ONLY** = ``2``
 
-Makes the light visible to sky shaders only. When using this mode the light will not cast light into the scene (either through direct lighting or through global illumination), but can be accessed through sky shaders. This can be useful, for example, when you want to control sky effects without illuminating the scene (during a night cycle, for example).
+使灯光仅对天空着色器可见。使用此模式时，灯光不会将灯光投射到场景中（通过直接照明或通过全局照明），但可以通过天空着色器访问。例如，当你想要控制天空效果而不照亮场景时（例如，在夜间循环期间），这可能很有用。
 
 .. rst-class:: classref-section-separator
 
@@ -137,8 +137,8 @@ Makes the light visible to sky shaders only. When using this mode the light will
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_DirectionalLight3D_property_directional_shadow_blend_splits:
 
@@ -151,7 +151,7 @@ Property Descriptions
 - |void| **set_blend_splits**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_blend_splits_enabled**\ (\ )
 
-If ``true``, shadow detail is sacrificed in exchange for smoother transitions between splits. Enabling shadow blend splitting also has a moderate performance cost. This is ignored when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>`.
+如果为 ``true``\ ，会牺牲阴影的细节，换取分割区域之间更平滑的过渡。启用阴影混合分割同时也会带来一些性能消耗。当 :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` 为 :ref:`SHADOW_ORTHOGONAL<class_DirectionalLight3D_constant_SHADOW_ORTHOGONAL>` 时会被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ If ``true``, shadow detail is sacrificed in exchange for smoother transitions be
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Proportion of :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` at which point the shadow starts to fade. At :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`, the shadow will disappear. The default value is a balance between smooth fading and distant shadow visibility. If the camera moves fast and the :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` is low, consider lowering :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` below ``0.8`` to make shadow transitions less noticeable. On the other hand, if you tuned :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` to cover the entire scene, you can set :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` to ``1.0`` to prevent the shadow from fading in the distance (it will suddenly cut off instead).
+阴影开始消失时，\ :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` 的比例。在 :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` 处，阴影会消失。默认值是平滑淡化和远处阴影可见性之间的平衡。如果相机移动较快且 :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` 较低，请考虑将 :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` 降低到 ``0.8`` 以下，以使阴影过渡不那么明显。另一方面，如果调整了 :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` 来覆盖整个场景，可以将 :ref:`directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` 设置为 ``1.0``\ ，以防止阴影在远处逐渐淡化（它将会突然切断 ）。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Proportion of :ref:`directional_shadow_max_distance<class_DirectionalLight3D_pro
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The maximum distance for shadow splits. Increasing this value will make directional shadows visible from further away, at the cost of lower overall shadow detail and performance (since more objects need to be included in the directional shadow rendering).
+阴影分割的最大距离。将这个值增大会让定向阴影在更远处可见，代价是整体的阴影细节降低和性能（因为渲染定向阴影时需要包含更多的物体）。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ The maximum distance for shadow splits. Increasing this value will make directio
 - |void| **set_shadow_mode**\ (\ value\: :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>`\ )
 - :ref:`ShadowMode<enum_DirectionalLight3D_ShadowMode>` **get_shadow_mode**\ (\ )
 
-The light's shadow rendering algorithm.
+灯光的阴影渲染算法。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ The light's shadow rendering algorithm.
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-Sets the size of the directional shadow pancake. The pancake offsets the start of the shadow's camera frustum to provide a higher effective depth resolution for the shadow. However, a high pancake size can cause artifacts in the shadows of large objects that are close to the edge of the frustum. Reducing the pancake size can help. Setting the size to ``0`` turns off the pancaking effect.
+设置定向阴影压平区域的大小。压平区域会偏移阴影相机视锥体的起点，为阴影提供更高的有效深度分辨率。但是，较大的压平区大小会导致靠近视锥体边缘的大型物体的阴影出现伪影。减少压平区大小会有所帮助。将大小设置为 ``0`` 会关闭该压平效果。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Sets the size of the directional shadow pancake. The pancake offsets the start o
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The distance from camera to shadow split 1. Relative to :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Only used when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_PARALLEL_2_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_2_SPLITS>` or :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
+相机到阴影分割 1 的距离。相对于 :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`\ 。只有当 :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` 为 :ref:`SHADOW_PARALLEL_2_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_2_SPLITS>` 或 :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` 时才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ The distance from camera to shadow split 1. Relative to :ref:`directional_shadow
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The distance from shadow split 1 to split 2. Relative to :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Only used when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
+从阴影分割 1 到阴影分割 2 的距离。相对于 :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`\ 。仅在 :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` 为 :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` 时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ The distance from shadow split 1 to split 2. Relative to :ref:`directional_shado
 - |void| **set_param**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ )
 
-The distance from shadow split 2 to split 3. Relative to :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`. Only used when :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` is :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>`.
+从阴影分割 2 到阴影分割 3 的距离。相对于 :ref:`directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`\ 。只有当 :ref:`directional_shadow_mode<class_DirectionalLight3D_property_directional_shadow_mode>` 为 :ref:`SHADOW_PARALLEL_4_SPLITS<class_DirectionalLight3D_constant_SHADOW_PARALLEL_4_SPLITS>` 时才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -287,14 +287,14 @@ The distance from shadow split 2 to split 3. Relative to :ref:`directional_shado
 - |void| **set_sky_mode**\ (\ value\: :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>`\ )
 - :ref:`SkyMode<enum_DirectionalLight3D_SkyMode>` **get_sky_mode**\ (\ )
 
-Whether this **DirectionalLight3D** is visible in the sky, in the scene, or both in the sky and in the scene.
+设置该 **DirectionalLight3D** 是仅在天空中可见，仅在场景中可见，还是在天空和场景中均可见。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

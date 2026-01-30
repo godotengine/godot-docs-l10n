@@ -5,27 +5,27 @@
 AudioStreamGenerator
 ====================
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An audio stream with utilities for procedural sound generation.
+提供程式式聲音生成工具的音訊流。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-**AudioStreamGenerator** is a type of audio stream that does not play back sounds on its own; instead, it expects a script to generate audio data for it. See also :ref:`AudioStreamGeneratorPlayback<class_AudioStreamGeneratorPlayback>`.
+**AudioStreamGenerator** 是一種音訊流，本身不會播放聲音；它需要程式碼為其產生音訊資料。另請參閱 :ref:`AudioStreamGeneratorPlayback<class_AudioStreamGeneratorPlayback>`\ 。
 
-Here's a sample on how to use it to generate a sine wave:
+以下示範如何使用它來產生正弦波：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var playback # Will hold the AudioStreamGeneratorPlayback.
+    var playback # 用來保存 AudioStreamGeneratorPlayback。
     @onready var sample_hz = $AudioStreamPlayer.stream.mix_rate
-    var pulse_hz = 440.0 # The frequency of the sound wave.
+    var pulse_hz = 440.0 # 聲波頻率。
     var phase = 0.0
 
     func _ready():
@@ -45,14 +45,14 @@ Here's a sample on how to use it to generate a sine wave:
 
     [Export] public AudioStreamPlayer Player { get; set; }
 
-    private AudioStreamGeneratorPlayback _playback; // Will hold the AudioStreamGeneratorPlayback.
+    private AudioStreamGeneratorPlayback _playback; // 保存 AudioStreamGeneratorPlayback。
     private float _sampleHz;
-    private float _pulseHz = 440.0f; // The frequency of the sound wave.
+    private float _pulseHz = 440.0f; // 聲波頻率。
     private double phase = 0.0;
 
     public override void _Ready()
     {
-        if (Player.Stream is AudioStreamGenerator generator) // Type as a generator to access MixRate.
+        if (Player.Stream is AudioStreamGenerator generator) // 轉型為 generator 以存取 MixRate。
         {
             _sampleHz = generator.MixRate;
             Player.Play();
@@ -75,23 +75,23 @@ Here's a sample on how to use it to generate a sine wave:
 
 
 
-In the example above, the "AudioStreamPlayer" node must use an **AudioStreamGenerator** as its stream. The ``fill_buffer`` function provides audio data for approximating a sine wave.
+在上述範例中，「AudioStreamPlayer」節點必須將 **AudioStreamGenerator** 設為其串流來源。\ ``fill_buffer`` 函式會產生近似正弦波的音訊資料。
 
-See also :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectSpectrumAnalyzer>` for performing real-time audio spectrum analysis.
+若要進行即時音訊頻譜分析，請參閱 :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectSpectrumAnalyzer>`\ 。
 
-\ **Note:** Due to performance constraints, this class is best used from C# or from a compiled language via GDExtension. If you still want to use this class from GDScript, consider using a lower :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` such as 11,025 Hz or 22,050 Hz.
+\ **注意：** 受效能限制，建議在 C# 或透過 GDExtension 的編譯語言中使用此類別。若仍需在 GDScript 中使用，請考慮將 :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` 降至 11,025 Hz 或 22,050 Hz。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `Audio Generator Demo <https://godotengine.org/asset-library/asset/2759>`__
+- `音訊產生器範例 <https://godotengine.org/asset-library/asset/2759>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -110,8 +110,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AudioStreamGenerator_AudioStreamGeneratorMixRate:
 
@@ -125,7 +125,7 @@ enum **AudioStreamGeneratorMixRate**: :ref:`🔗<enum_AudioStreamGenerator_Audio
 
 :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>` **MIX_RATE_OUTPUT** = ``0``
 
-Current :ref:`AudioServer<class_AudioServer>` output mixing rate.
+目前 :ref:`AudioServer<class_AudioServer>` 的輸出混音速率。
 
 .. _class_AudioStreamGenerator_constant_MIX_RATE_INPUT:
 
@@ -133,7 +133,7 @@ Current :ref:`AudioServer<class_AudioServer>` output mixing rate.
 
 :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>` **MIX_RATE_INPUT** = ``1``
 
-Current :ref:`AudioServer<class_AudioServer>` input mixing rate.
+目前 :ref:`AudioServer<class_AudioServer>` 的輸入混音速率。
 
 .. _class_AudioStreamGenerator_constant_MIX_RATE_CUSTOM:
 
@@ -141,7 +141,7 @@ Current :ref:`AudioServer<class_AudioServer>` input mixing rate.
 
 :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>` **MIX_RATE_CUSTOM** = ``2``
 
-Custom mixing rate, specified by :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>`.
+由 :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` 指定的自訂混音速率。
 
 .. _class_AudioStreamGenerator_constant_MIX_RATE_MAX:
 
@@ -149,7 +149,7 @@ Custom mixing rate, specified by :ref:`mix_rate<class_AudioStreamGenerator_prope
 
 :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>` **MIX_RATE_MAX** = ``3``
 
-Maximum value for the mixing rate mode enum.
+混音速率模式列舉的最大值。
 
 .. rst-class:: classref-section-separator
 
@@ -157,8 +157,8 @@ Maximum value for the mixing rate mode enum.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioStreamGenerator_property_buffer_length:
 
@@ -171,7 +171,7 @@ Property Descriptions
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-The length of the buffer to generate (in seconds). Lower values result in less latency, but require the script to generate audio data faster, resulting in increased CPU usage and more risk for audio cracking if the CPU can't keep up.
+要產生的緩衝長度（秒）。較低的值延遲更小，但腳本必須更快地生成音訊資料，增加 CPU 使用率，若處理不及恐導致破音。
 
 .. rst-class:: classref-item-separator
 
@@ -188,15 +188,15 @@ The length of the buffer to generate (in seconds). Lower values result in less l
 - |void| **set_mix_rate**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix_rate**\ (\ )
 
-The sample rate to use (in Hz). Higher values are more demanding for the CPU to generate, but result in better quality.
+使用的取樣率（Hz）。取樣率越高，CPU 負擔越重，但音質越好。
 
-In games, common sample rates in use are ``11025``, ``16000``, ``22050``, ``32000``, ``44100``, and ``48000``.
+遊戲中常見的取樣率有 ``11025``\ 、\ ``16000``\ 、\ ``22050``\ 、\ ``32000``\ 、\ ``44100`` 及 ``48000``\ 。
 
-According to the `Nyquist-Shannon sampling theorem <https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem>`__, there is no quality difference to human hearing when going past 40,000 Hz (since most humans can only hear up to ~20,000 Hz, often less). If you are generating lower-pitched sounds such as voices, lower sample rates such as ``32000`` or ``22050`` may be usable with no loss in quality.
+依據 `奈奎斯特–香農取樣定理 <https://zh.wikipedia.org/wiki/奈奎斯特–香農取樣定理>`__\ ，超過 40,000 Hz 對人耳已無聽覺差異（大多數人僅能聽到約 20,000 Hz）。若產生如人聲等低頻音，可使用 ``32000`` 或 ``22050`` 而不影響品質。
 
-\ **Note:** **AudioStreamGenerator** is not automatically resampling input data, to produce expected result :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` should match the sampling rate of input data.
+\ **注意：**\ **AudioStreamGenerator** 不會自動重新取樣輸入資料，為得到預期結果，\ :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` 應與輸入資料的取樣率一致。
 
-\ **Note:** If you are using :ref:`AudioEffectCapture<class_AudioEffectCapture>` as the source of your data, set :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` to :ref:`MIX_RATE_INPUT<class_AudioStreamGenerator_constant_MIX_RATE_INPUT>` or :ref:`MIX_RATE_OUTPUT<class_AudioStreamGenerator_constant_MIX_RATE_OUTPUT>` to automatically match current :ref:`AudioServer<class_AudioServer>` mixing rate.
+\ **注意：**\ 若以 :ref:`AudioEffectCapture<class_AudioEffectCapture>` 作為資料來源，請將 :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` 設為 :ref:`MIX_RATE_INPUT<class_AudioStreamGenerator_constant_MIX_RATE_INPUT>` 或 :ref:`MIX_RATE_OUTPUT<class_AudioStreamGenerator_constant_MIX_RATE_OUTPUT>` 以自動配合目前 :ref:`AudioServer<class_AudioServer>` 的混音速率。
 
 .. rst-class:: classref-item-separator
 
@@ -213,14 +213,14 @@ According to the `Nyquist-Shannon sampling theorem <https://en.wikipedia.org/wik
 - |void| **set_mix_rate_mode**\ (\ value\: :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>`\ )
 - :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>` **get_mix_rate_mode**\ (\ )
 
-Mixing rate mode. If set to :ref:`MIX_RATE_CUSTOM<class_AudioStreamGenerator_constant_MIX_RATE_CUSTOM>`, :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` is used, otherwise current :ref:`AudioServer<class_AudioServer>` mixing rate is used.
+混音速率模式。若設為 :ref:`MIX_RATE_CUSTOM<class_AudioStreamGenerator_constant_MIX_RATE_CUSTOM>` 則使用 :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>`\ ；否則使用目前的 :ref:`AudioServer<class_AudioServer>` 混音速率。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

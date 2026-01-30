@@ -5,21 +5,21 @@
 ReferenceRect
 =============
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A rectangular box for designing UIs.
+用于设计 UI 的矩形框。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A rectangular box that displays only a colored border around its rectangle (see :ref:`Control.get_rect()<class_Control_method_get_rect>`). It can be used to visualize the extents of a :ref:`Control<class_Control>` node, for testing purposes.
+仅在对应矩形周围上显示彩色边框的矩形框（见 :ref:`Control.get_rect()<class_Control_method_get_rect>`\ ）。可以用来在测试时显示 :ref:`Control<class_Control>` 的范围。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ReferenceRect_property_border_color:
 
@@ -52,7 +52,7 @@ Property Descriptions
 - |void| **set_border_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_border_color**\ (\ )
 
-Sets the border color of the **ReferenceRect**.
+设置该 **ReferenceRect** 的边框颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -69,7 +69,7 @@ Sets the border color of the **ReferenceRect**.
 - |void| **set_border_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_border_width**\ (\ )
 
-Sets the border width of the **ReferenceRect**. The border grows both inwards and outwards with respect to the rectangle box.
+设置该 **ReferenceRect** 的边框宽度。边界相对于矩形框同时向内向外伸长。
 
 .. rst-class:: classref-item-separator
 
@@ -86,14 +86,14 @@ Sets the border width of the **ReferenceRect**. The border grows both inwards an
 - |void| **set_editor_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_editor_only**\ (\ )
 
-If ``true``, the **ReferenceRect** will only be visible while in editor. Otherwise, **ReferenceRect** will be visible in the running project.
+如果为 ``true``\ ，则 **ReferenceRect** 仅在编辑器中可见。否则，\ **ReferenceRect** 将在正在运行的项目中可见。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

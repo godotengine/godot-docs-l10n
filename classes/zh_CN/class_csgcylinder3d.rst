@@ -5,30 +5,30 @@
 CSGCylinder3D
 =============
 
-**Inherits:** :ref:`CSGPrimitive3D<class_CSGPrimitive3D>` **<** :ref:`CSGShape3D<class_CSGShape3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`CSGPrimitive3D<class_CSGPrimitive3D>` **<** :ref:`CSGShape3D<class_CSGShape3D>` **<** :ref:`GeometryInstance3D<class_GeometryInstance3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A CSG Cylinder shape.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This node allows you to create a cylinder (or cone) for use with the CSG system.
-
-\ **Note:** CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a :ref:`MeshInstance3D<class_MeshInstance3D>` with a :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.
+CSG 圆柱形状。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Prototyping levels with CSG <../tutorials/3d/csg_tools>`
+此节点允许你创建与 CSG 系统一起使用的圆柱体（或圆锥体）。
+
+\ **注意：**\ CSG 节点旨在用于关卡原型设计。与使用 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 创建 :ref:`MeshInstance3D<class_MeshInstance3D>` 相比，创建 CSG 节点具有显着的 CPU 成本。在另一个 CSG 节点中，移动一个 CSG 节点，也会大量消耗 CPU，因此在游戏过程中，应该避免这种情况。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用 CSG 设计关卡原型 <../tutorials/3d/csg_tools>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CSGCylinder3D_property_cone:
 
@@ -67,7 +67,7 @@ Property Descriptions
 - |void| **set_cone**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cone**\ (\ )
 
-If ``true`` a cone is created, the :ref:`radius<class_CSGCylinder3D_property_radius>` will only apply to one side.
+如果为 ``true``\ ，则创建圆锥，仅在一侧应用 :ref:`radius<class_CSGCylinder3D_property_radius>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -84,7 +84,7 @@ If ``true`` a cone is created, the :ref:`radius<class_CSGCylinder3D_property_rad
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The height of the cylinder.
+圆柱体的高度。
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ The height of the cylinder.
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-The material used to render the cylinder.
+用于渲染圆柱体的材质。
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ The material used to render the cylinder.
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The radius of the cylinder.
+圆柱体的半径。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ The radius of the cylinder.
 - |void| **set_sides**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sides**\ (\ )
 
-The number of sides of the cylinder, the higher this number the more detail there will be in the cylinder.
+圆柱体的边数越多，圆柱体的细节越多。
 
 .. rst-class:: classref-item-separator
 
@@ -152,14 +152,14 @@ The number of sides of the cylinder, the higher this number the more detail ther
 - |void| **set_smooth_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_smooth_faces**\ (\ )
 
-If ``true`` the normals of the cylinder are set to give a smooth effect making the cylinder seem rounded. If ``false`` the cylinder will have a flat shaded look.
+如果为 ``true``\ ，则将圆柱体的法线设置为具有平滑效果，使圆柱体看起来是圆形的。如果为 ``false``\ ，则圆柱体将具有平坦的阴影表现。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

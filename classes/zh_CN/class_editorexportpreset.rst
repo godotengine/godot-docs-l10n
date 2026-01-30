@@ -5,21 +5,21 @@
 EditorExportPreset
 ==================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Export preset configuration.
+导出预设配置。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Represents the configuration of an export preset, as created by the editor's export dialog. An **EditorExportPreset** instance is intended to be used a read-only configuration passed to the :ref:`EditorExportPlatform<class_EditorExportPlatform>` methods when exporting the project.
+表示由编辑器的导出对话框创建的导出预设的配置。\ **EditorExportPreset** 实例旨在用作在导出项目时传递给 :ref:`EditorExportPlatform<class_EditorExportPlatform>` 方法的只读配置。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_EditorExportPreset_ExportFilter:
 
@@ -261,8 +261,8 @@ enum **ScriptExportMode**: :ref:`🔗<enum_EditorExportPreset_ScriptExportMode>`
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorExportPreset_method_are_advanced_options_enabled:
 
@@ -270,7 +270,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **are_advanced_options_enabled**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_are_advanced_options_enabled>`
 
-Returns ``true`` if the "Advanced" toggle is enabled in the export dialog.
+如果导出对话框中打开了“高级”开关，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +282,7 @@ Returns ``true`` if the "Advanced" toggle is enabled in the export dialog.
 
 :ref:`String<class_String>` **get_custom_features**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_custom_features>`
 
-Returns a comma-separated list of custom features added to this preset, as a string. See :doc:`Feature tags <../tutorials/export/feature_tags>` in the documentation for more information.
+返回添加至该预设的自定义特性列表，是一个用英文逗号分隔的字符串。详见《\ :doc:`特性标签 <../tutorials/export/feature_tags>`\ 》文档。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ Returns a comma-separated list of custom features added to this preset, as a str
 
 :ref:`Dictionary<class_Dictionary>` **get_customized_files**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_customized_files>`
 
-Returns a dictionary of files selected in the "Resources" tab of the export dialog. The dictionary's keys are file paths, and its values are the corresponding export modes: ``"strip"``, ``"keep"``, or ``"remove"``. See also :ref:`get_file_export_mode()<class_EditorExportPreset_method_get_file_export_mode>`.
+返回在导出对话框“资源”选项卡中选中的所有文件，是一个字典。字典的键是文件名，值是对应的导出模式 ：\ ``"strip"``\ 、\ ``"keep"`` 或 ``"remove"``\ 。另见 :ref:`get_file_export_mode()<class_EditorExportPreset_method_get_file_export_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ Returns a dictionary of files selected in the "Resources" tab of the export dial
 
 :ref:`int<class_int>` **get_customized_files_count**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_customized_files_count>`
 
-Returns the number of files selected in the "Resources" tab of the export dialog.
+返回在导出对话框“资源”选项卡中选中的文件数。
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Returns the number of files selected in the "Resources" tab of the export dialog
 
 :ref:`bool<class_bool>` **get_encrypt_directory**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_encrypt_directory>`
 
-Returns ``true`` if PCK directory encryption is enabled in the export dialog.
+如果导出对话框中启用了 PCK 目录加密，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ Returns ``true`` if PCK directory encryption is enabled in the export dialog.
 
 :ref:`bool<class_bool>` **get_encrypt_pck**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_encrypt_pck>`
 
-Returns ``true`` if PCK encryption is enabled in the export dialog.
+如果导出对话框中启用了 PCK 加密，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ Returns ``true`` if PCK encryption is enabled in the export dialog.
 
 :ref:`String<class_String>` **get_encryption_ex_filter**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_encryption_ex_filter>`
 
-Returns file filters to exclude during PCK encryption.
+返回 PCK 加密时需要排除的文件过滤器。
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ Returns file filters to exclude during PCK encryption.
 
 :ref:`String<class_String>` **get_encryption_in_filter**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_encryption_in_filter>`
 
-Returns file filters to include during PCK encryption.
+返回 PCK 加密时需要包含的文件过滤器。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Returns file filters to include during PCK encryption.
 
 :ref:`String<class_String>` **get_encryption_key**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_encryption_key>`
 
-Returns PCK encryption key.
+返回 PCK 加密密钥。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns PCK encryption key.
 
 :ref:`String<class_String>` **get_exclude_filter**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_exclude_filter>`
 
-Returns file filters to exclude during export.
+返回导出时需要排除的文件过滤器。
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ Returns file filters to exclude during export.
 
 :ref:`ExportFilter<enum_EditorExportPreset_ExportFilter>` **get_export_filter**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_export_filter>`
 
-Returns export file filter mode selected in the "Resources" tab of the export dialog.
+返回导出对话框“资源”选项卡中选中的导出文件过滤模式。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ Returns export file filter mode selected in the "Resources" tab of the export di
 
 :ref:`String<class_String>` **get_export_path**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_export_path>`
 
-Returns export target path.
+返回导出目标的路径。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ Returns export target path.
 
 :ref:`FileExportMode<enum_EditorExportPreset_FileExportMode>` **get_file_export_mode**\ (\ path\: :ref:`String<class_String>`, default\: :ref:`FileExportMode<enum_EditorExportPreset_FileExportMode>` = 0\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_file_export_mode>`
 
-Returns file export mode for the specified file.
+返回指定文件的文件导出模式。
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ Returns file export mode for the specified file.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_files_to_export**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_files_to_export>`
 
-Returns array of files to export.
+返回要导出的文件数组。
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ Returns array of files to export.
 
 :ref:`String<class_String>` **get_include_filter**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_include_filter>`
 
-Returns file filters to include during export.
+返回导出时需要包含的文件过滤器。
 
 .. rst-class:: classref-item-separator
 
@@ -450,7 +450,7 @@ Returns file filters to include during export.
 
 :ref:`Variant<class_Variant>` **get_or_env**\ (\ name\: :ref:`StringName<class_StringName>`, env_var\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_or_env>`
 
-Returns export option value or value of environment variable if it is set.
+返回导出选项的值，如果设置了环境变量则返回环境变量的值。
 
 .. rst-class:: classref-item-separator
 
@@ -462,7 +462,7 @@ Returns export option value or value of environment variable if it is set.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_patches**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_patches>`
 
-Returns the list of packs on which to base a patch export on.
+返回导出补丁时用作基础的包的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -474,7 +474,7 @@ Returns the list of packs on which to base a patch export on.
 
 :ref:`String<class_String>` **get_preset_name**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_preset_name>`
 
-Returns this export preset's name.
+返回导出预设的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ Returns this export preset's name.
 
 :ref:`Variant<class_Variant>` **get_project_setting**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EditorExportPreset_method_get_project_setting>`
 
-Returns the value of the setting identified by ``name`` using export preset feature tag overrides instead of current OS features.
+返回名为 ``name`` 的设置项的值，会使用导出预设特性标签覆盖，不使用当前操作系统的特性。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Returns the value of the setting identified by ``name`` using export preset feat
 
 :ref:`ScriptExportMode<enum_EditorExportPreset_ScriptExportMode>` **get_script_export_mode**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_script_export_mode>`
 
-Returns the export mode used by GDScript files. ``0`` for "Text", ``1`` for "Binary tokens", and ``2`` for "Compressed binary tokens (smaller files)".
+返回 GDScript 文件的导出模式。\ ``0`` 表示“文本”，\ ``1`` 表示“二进制标记”，\ ``2`` 表示“压缩二进制标记（文件较小）”。
 
 .. rst-class:: classref-item-separator
 
@@ -510,9 +510,9 @@ Returns the export mode used by GDScript files. ``0`` for "Text", ``1`` for "Bin
 
 :ref:`String<class_String>` **get_version**\ (\ name\: :ref:`StringName<class_StringName>`, windows_version\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_EditorExportPreset_method_get_version>`
 
-Returns the preset's version number, or fall back to the :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` project setting if set to an empty string.
+返回预设的版本号，如果为空字符串则回退至 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` 项目设置。
 
-If ``windows_version`` is ``true``, formats the returned version number to be compatible with Windows executable metadata.
+如果 ``windows_version`` 为 ``true``\ ，则会对返回的版本号进行格式化，让其与 Windows 可执行文件元数据兼容。
 
 .. rst-class:: classref-item-separator
 
@@ -524,7 +524,7 @@ If ``windows_version`` is ``true``, formats the returned version number to be co
 
 :ref:`bool<class_bool>` **has**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorExportPreset_method_has>`
 
-Returns ``true`` if the preset has the property named ``property``.
+如果预设中存在名为 ``property`` 的属性，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -536,7 +536,7 @@ Returns ``true`` if the preset has the property named ``property``.
 
 :ref:`bool<class_bool>` **has_export_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPreset_method_has_export_file>`
 
-Returns ``true`` if the file at the specified ``path`` will be exported.
+如果会导出路径为 ``path`` 的文件，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Returns ``true`` if the file at the specified ``path`` will be exported.
 
 :ref:`bool<class_bool>` **is_dedicated_server**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_is_dedicated_server>`
 
-Returns ``true`` if the dedicated server export mode is selected in the export dialog.
+如果导出对话框中选择了专用服务器导出模式，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -560,14 +560,14 @@ Returns ``true`` if the dedicated server export mode is selected in the export d
 
 :ref:`bool<class_bool>` **is_runnable**\ (\ ) |const| :ref:`🔗<class_EditorExportPreset_method_is_runnable>`
 
-Returns ``true`` if the "Runnable" toggle is enabled in the export dialog.
+如果为导出对话框中打开了“可执行”开关，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

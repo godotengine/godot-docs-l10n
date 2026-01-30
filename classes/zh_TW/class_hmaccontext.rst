@@ -5,16 +5,16 @@
 HMACContext
 ===========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Used to create an HMAC for a message using a key.
+用來為一個使用金鑰的資訊建立 HMAC。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-The HMACContext class is useful for advanced HMAC use cases, such as streaming the message as it supports creating the message over time rather than providing it all at once.
+HMACContext 類對於高級的 HMAC 用例非常有用，例如流式消息，因為它支援在一段時間內建立消息，而非一次性提供。
 
 
 .. tabs::
@@ -66,8 +66,8 @@ The HMACContext class is useful for advanced HMAC use cases, such as streaming t
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_HMACContext_method_finish:
 
@@ -95,7 +95,7 @@ Method Descriptions
 
 :ref:`PackedByteArray<class_PackedByteArray>` **finish**\ (\ ) :ref:`🔗<class_HMACContext_method_finish>`
 
-Returns the resulting HMAC. If the HMAC failed, an empty :ref:`PackedByteArray<class_PackedByteArray>` is returned.
+返回生成的 HMAC。如果該 HMAC 失敗，則返回一個空的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Returns the resulting HMAC. If the HMAC failed, an empty :ref:`PackedByteArray<c
 
 :ref:`Error<enum_@GlobalScope_Error>` **start**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HMACContext_method_start>`
 
-Initializes the HMACContext. This method cannot be called again on the same HMACContext until :ref:`finish()<class_HMACContext_method_finish>` has been called.
+初始化 HMACContext。在 :ref:`finish()<class_HMACContext_method_finish>` 被呼叫之前，不能在同一個 HMACContext 上再次呼叫此方法。
 
 .. rst-class:: classref-item-separator
 
@@ -119,14 +119,14 @@ Initializes the HMACContext. This method cannot be called again on the same HMAC
 
 :ref:`Error<enum_@GlobalScope_Error>` **update**\ (\ data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HMACContext_method_update>`
 
-Updates the message to be HMACed. This can be called multiple times before :ref:`finish()<class_HMACContext_method_finish>` is called to append ``data`` to the message, but cannot be called until :ref:`start()<class_HMACContext_method_start>` has been called.
+更新要進行 HMAC 處理的消息。在 :ref:`finish()<class_HMACContext_method_finish>` 被呼叫以將 ``data`` 追加到該消息之前，該函式可以多次被呼叫，但在 :ref:`start()<class_HMACContext_method_start>` 被呼叫之前不能被呼叫。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

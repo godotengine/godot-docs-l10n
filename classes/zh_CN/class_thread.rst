@@ -5,40 +5,40 @@
 Thread
 ======
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A unit of execution in a process.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
-
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
-
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
-
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
-
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+进程中的执行单元。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using multiple threads <../tutorials/performance/using_multiple_threads>`
+进程中的执行单元。可以同时在 :ref:`Object<class_Object>` 上运行方法。如果使用共享对象，建议通过 :ref:`Mutex<class_Mutex>` 或 :ref:`Semaphore<class_Semaphore>` 进行同步。
 
-- :doc:`Thread-safe APIs <../tutorials/performance/thread_safe_apis>`
+\ **警告：**\ 为了确保能够正确清理，避免崩溃和死锁，\ **Thread** 的引用计数变为零进行销毁时，必须满足以下条件：
 
-- `3D Voxel Demo <https://godotengine.org/asset-library/asset/2755>`__
+- 它不能有任何已锁定的 :ref:`Mutex<class_Mutex>` 对象。
+
+- 它不能在等待任何 :ref:`Semaphore<class_Semaphore>` 对象。
+
+- 应该已经对其调用过 :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用多线程 <../tutorials/performance/using_multiple_threads>`
+
+- :doc:`线程安全的 API <../tutorials/performance/thread_safe_apis>`
+
+- `3D 体素演示 <https://godotengine.org/asset-library/asset/2755>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Thread_Priority:
 
@@ -80,7 +80,7 @@ enum **Priority**: :ref:`🔗<enum_Thread_Priority>`
 
 :ref:`Priority<enum_Thread_Priority>` **PRIORITY_LOW** = ``0``
 
-A thread running with lower priority than normally.
+线程以比正常情况下更低的优先级运行。
 
 .. _class_Thread_constant_PRIORITY_NORMAL:
 
@@ -88,7 +88,7 @@ A thread running with lower priority than normally.
 
 :ref:`Priority<enum_Thread_Priority>` **PRIORITY_NORMAL** = ``1``
 
-A thread with a standard priority.
+具有标准优先级的线程。
 
 .. _class_Thread_constant_PRIORITY_HIGH:
 
@@ -96,7 +96,7 @@ A thread with a standard priority.
 
 :ref:`Priority<enum_Thread_Priority>` **PRIORITY_HIGH** = ``2``
 
-A thread running with higher priority than normally.
+以比正常情况更高的优先级运行的线程。
 
 .. rst-class:: classref-section-separator
 
@@ -104,8 +104,8 @@ A thread running with higher priority than normally.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Thread_method_get_id:
 
@@ -113,7 +113,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **get_id**\ (\ ) |const| :ref:`🔗<class_Thread_method_get_id>`
 
-Returns the current **Thread**'s ID, uniquely identifying it among all threads. If the **Thread** has not started running or if :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` has been called, this returns an empty string.
+返回当前 **Thread** 的 ID，能够在所有线程中唯一标识该线程。如果该 **Thread** 尚未运行，或者已经调用过 :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`\ ，则返回空字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -125,9 +125,9 @@ Returns the current **Thread**'s ID, uniquely identifying it among all threads. 
 
 :ref:`bool<class_bool>` **is_alive**\ (\ ) |const| :ref:`🔗<class_Thread_method_is_alive>`
 
-Returns ``true`` if this **Thread** is currently running the provided function. This is useful for determining if :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` can be called without blocking the calling thread.
+如果这个 **Thread** 当前正在运行，则返回 ``true``\ 。可用于确定调用 :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` 是否可以不阻塞调用的线程。
 
-To check if a **Thread** is joinable, use :ref:`is_started()<class_Thread_method_is_started>`.
+要检查 **Thread** 是否可被并入，请使用 :ref:`is_started()<class_Thread_method_is_started>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Returns ``true`` if the thread this method was called from is the main thread.
 
 :ref:`bool<class_bool>` **is_started**\ (\ ) |const| :ref:`🔗<class_Thread_method_is_started>`
 
-Returns ``true`` if this **Thread** has been started. Once started, this will return ``true`` until it is joined using :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`. For checking if a **Thread** is still executing its task, use :ref:`is_alive()<class_Thread_method_is_alive>`.
+如果此 **Thread** 已启动，则返回 ``true``\ 。一旦开始，这将返回 ``true`` ，直到它使用 :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` 加入。要检查 **Thread** 是否仍在执行其任务，请使用 :ref:`is_alive()<class_Thread_method_is_alive>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -165,19 +165,19 @@ Returns ``true`` if this **Thread** has been started. Once started, this will re
 
 |void| **set_thread_safety_checks_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_Thread_method_set_thread_safety_checks_enabled>`
 
-Sets whether the thread safety checks the engine normally performs in methods of certain classes (e.g., :ref:`Node<class_Node>`) should happen **on the current thread**.
+设置是否应该\ **在当前线程**\ 执行线程安全检查，这些检查在一般是在某些类（例如 :ref:`Node<class_Node>`\ ）的方法中进行的。
 
-The default, for every thread, is that they are enabled (as if called with ``enabled`` being ``true``).
+每个线程的默认值是启用（就像将 ``true`` 传给 ``enabled`` 调用一样）。
 
-Those checks are conservative. That means that they will only succeed in considering a call thread-safe (and therefore allow it to happen) if the engine can guarantee such safety.
+这些检查是保守的。也就是说，只有在引擎能够确保安全时才会认为该调用是线程安全的，检查通过（因此允许进行调用）。
 
-Because of that, there may be cases where the user may want to disable them (``enabled`` being ``false``) to make certain operations allowed again. By doing so, it becomes the user's responsibility to ensure thread safety (e.g., by using :ref:`Mutex<class_Mutex>`) for those objects that are otherwise protected by the engine.
+因此，某些情况下用于可能会想要将其禁用（让 ``enabled`` 为 ``false``\ ），允许某些操作。此时引擎不再保护这些对象的线程安全，（通过使用 :ref:`Mutex<class_Mutex>` 等方法来）确保线程安全就是用户自己的责任了。
 
-\ **Note:** This is an advanced usage of the engine. You are advised to use it only if you know what you are doing and there is no safer way.
+\ **注意：**\ 这是引擎的高阶用法。建议只有在你知道自己在做什么，并且没有其他更安全的方法时才使用这个方法。
 
-\ **Note:** This is useful for scripts running on either arbitrary **Thread** objects or tasks submitted to the :ref:`WorkerThreadPool<class_WorkerThreadPool>`. It doesn't apply to code running during :ref:`Node<class_Node>` group processing, where the checks will be always performed.
+\ **注意：**\ 可用于任意 **Thread** 对象中执行的脚本，或者提交至 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 的任务。\ :ref:`Node<class_Node>` 分组处理时执行的代码不适用，这种情况下会始终执行检查。
 
-\ **Note:** Even in the case of having disabled the checks in a :ref:`WorkerThreadPool<class_WorkerThreadPool>` task, there's no need to re-enable them at the end. The engine will do so.
+\ **注意：**\ 即使是在 :ref:`WorkerThreadPool<class_WorkerThreadPool>` 任务中禁用了检查，也不需要在结束后将其重新启用。引擎会帮你去启用。
 
 .. rst-class:: classref-item-separator
 
@@ -189,13 +189,13 @@ Because of that, there may be cases where the user may want to disable them (``e
 
 :ref:`Error<enum_@GlobalScope_Error>` **start**\ (\ callable\: :ref:`Callable<class_Callable>`, priority\: :ref:`Priority<enum_Thread_Priority>` = 1\ ) :ref:`🔗<class_Thread_method_start>`
 
-Starts a new **Thread** that calls ``callable``.
+启动一个调用 ``callable`` 的新 **Thread**\ 。
 
-If the method takes some arguments, you can pass them using :ref:`Callable.bind()<class_Callable_method_bind>`.
+如果该方法需要一些参数，可以使用 :ref:`Callable.bind()<class_Callable_method_bind>` 传递它们。
 
-The ``priority`` of the **Thread** can be changed by passing a value from the :ref:`Priority<enum_Thread_Priority>` enum.
+\ **Thread** 的 ``priority`` 可以通过传递 :ref:`Priority<enum_Thread_Priority>` 枚举中的值来更改。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` on failure.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失败时返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -207,18 +207,18 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or :r
 
 :ref:`Variant<class_Variant>` **wait_to_finish**\ (\ ) :ref:`🔗<class_Thread_method_wait_to_finish>`
 
-Joins the **Thread** and waits for it to finish. Returns the output of the :ref:`Callable<class_Callable>` passed to :ref:`start()<class_Thread_method_start>`.
+合并该 **Thread** 并等待其完成。返回传入 :ref:`start()<class_Thread_method_start>` 的 :ref:`Callable<class_Callable>` 的输出。
 
-Should either be used when you want to retrieve the value returned from the method called by the **Thread** or before freeing the instance that contains the **Thread**.
+应该在你想要获取该 **Thread** 所调用的方法的返回值时使用，或者在释放包含该 **Thread** 的实例前使用。
 
-To determine if this can be called without blocking the calling thread, check if :ref:`is_alive()<class_Thread_method_is_alive>` is ``false``.
+要确定调用时是否不会阻塞调用线程，请检查 :ref:`is_alive()<class_Thread_method_is_alive>` 是否为 ``false``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

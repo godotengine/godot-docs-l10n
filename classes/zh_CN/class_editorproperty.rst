@@ -5,21 +5,21 @@
 EditorProperty
 ==============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Custom control for editing properties that can be added to the :ref:`EditorInspector<class_EditorInspector>`.
+用于编辑属性的自定义控件，可以添加到 :ref:`EditorInspector<class_EditorInspector>` 中。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A custom control for editing properties that can be added to the :ref:`EditorInspector<class_EditorInspector>`. It is added via :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>`.
+用于编辑属性的自定义控件，可以添加到 :ref:`EditorInspector<class_EditorInspector>` 中。通过 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` 添加。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -94,8 +94,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_EditorProperty_signal_multiple_properties_changed:
 
@@ -103,7 +103,7 @@ Signals
 
 **multiple_properties_changed**\ (\ properties\: :ref:`PackedStringArray<class_PackedStringArray>`, value\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_EditorProperty_signal_multiple_properties_changed>`
 
-Emit it if you want multiple properties modified at the same time. Do not use if added via :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`.
+如果想要同时修改多个属性，请发出它。如果属性是通过 :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>` 添加的，请勿使用。
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Emit it if you want multiple properties modified at the same time. Do not use if
 
 **object_id_selected**\ (\ property\: :ref:`StringName<class_StringName>`, id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorProperty_signal_object_id_selected>`
 
-Used by sub-inspectors. Emit it if what was selected was an Object ID.
+子检查器会使用。如果选择的是对象 ID，则触发。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ Used by sub-inspectors. Emit it if what was selected was an Object ID.
 
 **property_can_revert_changed**\ (\ property\: :ref:`StringName<class_StringName>`, can_revert\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_can_revert_changed>`
 
-Emitted when the revertability (i.e., whether it has a non-default value and thus is displayed with a revert icon) of a property has changed.
+当属性的可恢复性（即，它是否具有非默认值并因此显示为带有恢复图标）发生变化时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Emitted when the revertability (i.e., whether it has a non-default value and thu
 
 **property_changed**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`, field\: :ref:`StringName<class_StringName>`, changing\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_changed>`
 
-Do not emit this manually, use the :ref:`emit_changed()<class_EditorProperty_method_emit_changed>` method instead.
+不要手动触发，使用 :ref:`emit_changed()<class_EditorProperty_method_emit_changed>` 方法代替。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Do not emit this manually, use the :ref:`emit_changed()<class_EditorProperty_met
 
 **property_checked**\ (\ property\: :ref:`StringName<class_StringName>`, checked\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_checked>`
 
-Emitted when a property was checked. Used internally.
+勾选某个属性时发出。内部使用。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Emitted when a property was checked. Used internally.
 
 **property_deleted**\ (\ property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EditorProperty_signal_property_deleted>`
 
-Emitted when a property was deleted. Used internally.
+删除某个属性时发出。内部使用。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Emitted when a property was deleted. Used internally.
 
 **property_favorited**\ (\ property\: :ref:`StringName<class_StringName>`, favorited\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_favorited>`
 
-Emit it if you want to mark a property as favorited, making it appear at the top of the inspector.
+请在想要将属性标记为收藏时发出，会让属性显示在检查器开头。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Emit it if you want to mark a property as favorited, making it appear at the top
 
 **property_keyed**\ (\ property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EditorProperty_signal_property_keyed>`
 
-Emit it if you want to add this value as an animation key (check for keying being enabled first).
+请在想要将这个值添加为动画关键帧时发出（请先检查是否启用了键控）。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Emit it if you want to add this value as an animation key (check for keying bein
 
 **property_keyed_with_value**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_EditorProperty_signal_property_keyed_with_value>`
 
-Emit it if you want to key a property with a single value.
+请在想用单个值为属性设置关键帧时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Emit it if you want to key a property with a single value.
 
 **property_overridden**\ (\ ) :ref:`🔗<class_EditorProperty_signal_property_overridden>`
 
-Emitted when a setting override for the current project is requested.
+请求对当前项目的设置进行覆盖时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -223,9 +223,9 @@ Emitted when a setting override for the current project is requested.
 
 **property_pinned**\ (\ property\: :ref:`StringName<class_StringName>`, pinned\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorProperty_signal_property_pinned>`
 
-Emit it if you want to mark (or unmark) the value of a property for being saved regardless of being equal to the default value.
+如果想要对某个属性进行标记（或者取消标记），让它无论是否与默认值相等都进行保存，请发出它。
 
-The default value is the one the property will get when the node is just instantiated and can come from an ancestor scene in the inheritance/instantiation chain, a script or a builtin class.
+默认值指节点刚刚实例化后属性的取值，可以来自继承/实例化链上的祖先场景、脚本或内置类。
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ The default value is the one the property will get when the node is just instant
 
 **resource_selected**\ (\ path\: :ref:`String<class_String>`, resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_EditorProperty_signal_resource_selected>`
 
-If you want a sub-resource to be edited, emit this signal with the resource.
+如果你想编辑一个子资源，请将此信号与资源一起发出。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ If you want a sub-resource to be edited, emit this signal with the resource.
 
 **selected**\ (\ path\: :ref:`String<class_String>`, focusable_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EditorProperty_signal_selected>`
 
-Emitted when selected. Used internally.
+选择时触发。内部使用。
 
 .. rst-class:: classref-section-separator
 
@@ -257,8 +257,8 @@ Emitted when selected. Used internally.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorProperty_property_checkable:
 
@@ -271,7 +271,7 @@ Property Descriptions
 - |void| **set_checkable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_checkable**\ (\ )
 
-Used by the inspector, set to ``true`` when the property is checkable.
+用于检查器，该属性可勾选时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ Used by the inspector, set to ``true`` when the property is checkable.
 - |void| **set_checked**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_checked**\ (\ )
 
-Used by the inspector, set to ``true`` when the property is checked.
+用于检查器，该属性已勾选时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Used by the inspector, set to ``true`` when the property is checked.
 - |void| **set_deletable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deletable**\ (\ )
 
-Used by the inspector, set to ``true`` when the property can be deleted by the user.
+用于检查器，该属性可以被用户删除时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ Used by the inspector, set to ``true`` when the property can be deleted by the u
 - |void| **set_draw_background**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_background**\ (\ )
 
-Used by the inspector, set to ``true`` when the property background is drawn.
+用于检查器，该属性绘制背景时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Used by the inspector, set to ``true`` when the property background is drawn.
 - |void| **set_draw_label**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_label**\ (\ )
 
-Used by the inspector, set to ``true`` when the property label is drawn.
+用于检查器，该属性绘制标签时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Used by the inspector, set to ``true`` when the property label is drawn.
 - |void| **set_draw_warning**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_draw_warning**\ (\ )
 
-Used by the inspector, set to ``true`` when the property is drawn with the editor theme's warning color. This is used for editable children's properties.
+用于检查器，该属性用编辑器主题的警告色绘制时设置为 ``true``\ 。用于可编辑子节点的属性。
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ Used by the inspector, set to ``true`` when the property is drawn with the edito
 - |void| **set_keying**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_keying**\ (\ )
 
-Used by the inspector, set to ``true`` when the property can add keys for animation.
+用于检查器，该属性可以被添加为动画关键帧时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ Used by the inspector, set to ``true`` when the property can add keys for animat
 - |void| **set_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_label**\ (\ )
 
-Set this property to change the label (if you want to show one).
+设置此属性可改变标签（如果你想显示标签）。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Set this property to change the label (if you want to show one).
 - |void| **set_name_split_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_name_split_ratio**\ (\ )
 
-Space distribution ratio between the label and the editing field.
+标签和编辑框之间的空间占比。
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Space distribution ratio between the label and the editing field.
 - |void| **set_read_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_read_only**\ (\ )
 
-Used by the inspector, set to ``true`` when the property is read-only.
+用于检查器，该属性为只读时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Used by the inspector, set to ``true`` when the property is read-only.
 - |void| **set_selectable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_selectable**\ (\ )
 
-Used by the inspector, set to ``true`` when the property is selectable.
+用于检查器，该属性可选中时设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Used by the inspector, set to ``true`` when the property is selectable.
 - |void| **set_use_folding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_folding**\ (\ )
 
-Used by the inspector, set to ``true`` when the property is using folding.
+用于检查器，该属性使用折叠时设置为 ``true``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -466,8 +466,8 @@ Used by the inspector, set to ``true`` when the property is using folding.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorProperty_private_method__set_read_only:
 
@@ -475,7 +475,7 @@ Method Descriptions
 
 |void| **_set_read_only**\ (\ read_only\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_EditorProperty_private_method__set_read_only>`
 
-Called when the read-only status of the property is changed. It may be used to change custom controls into a read-only or modifiable state.
+当属性的只读状态被改变时被调用。它可用于将自定义控件改变为只读或可修改的状态。
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +487,7 @@ Called when the read-only status of the property is changed. It may be used to c
 
 |void| **_update_property**\ (\ ) |virtual| :ref:`🔗<class_EditorProperty_private_method__update_property>`
 
-When this virtual function is called, you must update your editor.
+当这个虚函数被调用时，你必须更新你的编辑器。
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +499,7 @@ When this virtual function is called, you must update your editor.
 
 |void| **add_focusable**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_add_focusable>`
 
-If any of the controls added can gain keyboard focus, add it here. This ensures that focus will be restored if the inspector is refreshed.
+如果添加的任何控件可以获得键盘焦点，将其添加到此处。这样可以确保在检查器被刷新时恢复焦点。
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +511,7 @@ If any of the controls added can gain keyboard focus, add it here. This ensures 
 
 |void| **deselect**\ (\ ) :ref:`🔗<class_EditorProperty_method_deselect>`
 
-Draw property as not selected. Used by the inspector.
+以未选中的形式绘制属性。由检查器使用。
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +523,7 @@ Draw property as not selected. Used by the inspector.
 
 |void| **emit_changed**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`, field\: :ref:`StringName<class_StringName>` = &"", changing\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EditorProperty_method_emit_changed>`
 
-If one or several properties have changed, this must be called. ``field`` is used in case your editor can modify fields separately (as an example, Vector3.x). The ``changing`` argument avoids the editor requesting this property to be refreshed (leave as ``false`` if unsure).
+如果一个或几个属性发生了变化，必然会调用这个函数。\ ``field`` 用于你的编辑器可以单独修改字段的情况（例如，Vector3.x）。\ ``changing`` 参数可以避免编辑器请求刷新该属性（如果不确定，请保留为 ``false``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -535,9 +535,9 @@ If one or several properties have changed, this must be called. ``field`` is use
 
 :ref:`Object<class_Object>` **get_edited_object**\ (\ ) :ref:`🔗<class_EditorProperty_method_get_edited_object>`
 
-Returns the edited object.
+返回编辑的对象。
 
-\ **Note:** This method could return ``null`` if the editor has not yet been associated with a property. However, in :ref:`_update_property()<class_EditorProperty_private_method__update_property>` and :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, this value is *guaranteed* to be non-``null``.
+\ **注意：**\ 如果编辑器尚未与属性关联则会返回 ``null``\ 。不过能够\ *保证*\ 在 :ref:`_update_property()<class_EditorProperty_private_method__update_property>` 和 :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>` 中该值非 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -549,9 +549,9 @@ Returns the edited object.
 
 :ref:`StringName<class_StringName>` **get_edited_property**\ (\ ) |const| :ref:`🔗<class_EditorProperty_method_get_edited_property>`
 
-Returns the edited property. If your editor is for a single property (added via :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>`), then this will return the property.
+返回编辑的属性。如果你的编辑器适用于单个属性（通过 :ref:`EditorInspectorPlugin._parse_property()<class_EditorInspectorPlugin_private_method__parse_property>` 添加），那么就会返回该属性。
 
-\ **Note:** This method could return ``null`` if the editor has not yet been associated with a property. However, in :ref:`_update_property()<class_EditorProperty_private_method__update_property>` and :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>`, this value is *guaranteed* to be non-``null``.
+\ **注意：**\ 如果编辑器尚未与属性关联则会返回 ``null``\ 。不过能够\ *保证*\ 在 :ref:`_update_property()<class_EditorProperty_private_method__update_property>` 和 :ref:`_set_read_only()<class_EditorProperty_private_method__set_read_only>` 中该值非 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Returns the edited property. If your editor is for a single property (added via 
 
 :ref:`bool<class_bool>` **is_selected**\ (\ ) |const| :ref:`🔗<class_EditorProperty_method_is_selected>`
 
-Returns ``true`` if property is drawn as selected. Used by the inspector.
+如果属性以未选中的形式绘制，则返回 ``true``\ 。由检查器使用。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Returns ``true`` if property is drawn as selected. Used by the inspector.
 
 |void| **select**\ (\ focusable\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_EditorProperty_method_select>`
 
-Draw property as selected. Used by the inspector.
+以选中的形式绘制属性。由检查器使用。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +587,7 @@ Draw property as selected. Used by the inspector.
 
 |void| **set_bottom_editor**\ (\ editor\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_set_bottom_editor>`
 
-Puts the ``editor`` control below the property label. The control must be previously added using :ref:`Node.add_child()<class_Node_method_add_child>`.
+将 ``editor`` 控件放在属性标签的下方。该控件必须事先用 :ref:`Node.add_child()<class_Node_method_add_child>` 添加。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Puts the ``editor`` control below the property label. The control must be previo
 
 |void| **set_label_reference**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_EditorProperty_method_set_label_reference>`
 
-Used by the inspector, set to a control that will be used as a reference to calculate the size of the label.
+由检查器使用，设为计算标签大小时用作参考的控件。
 
 .. rst-class:: classref-item-separator
 
@@ -611,7 +611,7 @@ Used by the inspector, set to a control that will be used as a reference to calc
 
 |void| **set_object_and_property**\ (\ object\: :ref:`Object<class_Object>`, property\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EditorProperty_method_set_object_and_property>`
 
-Assigns object and property to edit.
+分配要编辑的对象和属性。
 
 .. rst-class:: classref-item-separator
 
@@ -623,14 +623,14 @@ Assigns object and property to edit.
 
 |void| **update_property**\ (\ ) :ref:`🔗<class_EditorProperty_method_update_property>`
 
-Forces a refresh of the property display.
+强制刷新属性显示。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

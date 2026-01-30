@@ -5,23 +5,23 @@
 VisualShaderNodeComment
 =======================
 
-**Deprecated:** This class has no function anymore and only exists for compatibility.
+**已弃用：** This class has no function anymore and only exists for compatibility.
 
-**Inherits:** :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` **<** :ref:`VisualShaderNodeResizableBase<class_VisualShaderNodeResizableBase>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Only exists for compatibility. Use :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` as a replacement.
+只是为了兼容性而存在。使用 :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` 作为替代品。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This node was replaced by :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` and only exists to preserve compatibility. In the :ref:`VisualShader<class_VisualShader>` editor it behaves exactly like :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>`.
+该节点已被 :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` 取代，仅用于保持兼容性。在 :ref:`VisualShader<class_VisualShader>` 编辑器中，它的行为与 :ref:`VisualShaderNodeFrame<class_VisualShaderNodeFrame>` 完全相同。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -36,8 +36,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeComment_property_description:
 
@@ -50,14 +50,14 @@ Property Descriptions
 - |void| **set_description**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_description**\ (\ )
 
-This property only exists to preserve data authored in earlier versions of Godot. It has currently no function.
+该属性仅用于保存在早期版本的 Godot 中编写的数据。它目前没有任何作用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

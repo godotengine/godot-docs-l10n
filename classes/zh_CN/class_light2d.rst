@@ -5,30 +5,30 @@
 Light2D
 =======
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`DirectionalLight2D<class_DirectionalLight2D>`, :ref:`PointLight2D<class_PointLight2D>`
+**派生：** :ref:`DirectionalLight2D<class_DirectionalLight2D>`, :ref:`PointLight2D<class_PointLight2D>`
 
-Casts light in a 2D environment.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Casts light in a 2D environment. A light is defined as a color, an energy value, a mode (see constants), and various other parameters (range and shadows-related).
+在 2D 环境中投射光线。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`2D lights and shadows <../tutorials/2d/2d_lights_and_shadows>`
+在 2D 环境中投射光线。光线由颜色、能量值、模式（见常量）以及其他各种参数（与范围和阴影有关）来定义。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`2D 灯光和阴影 <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -85,8 +85,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Light2D_ShadowFilter:
 
@@ -100,7 +100,7 @@ enum **ShadowFilter**: :ref:`🔗<enum_Light2D_ShadowFilter>`
 
 :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **SHADOW_FILTER_NONE** = ``0``
 
-No filter applies to the shadow map. This provides hard shadow edges and is the fastest to render. See :ref:`shadow_filter<class_Light2D_property_shadow_filter>`.
+不对阴影贴图应用过滤。提供较硬的阴影边缘，渲染速度最快。见 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
 
 .. _class_Light2D_constant_SHADOW_FILTER_PCF5:
 
@@ -108,7 +108,7 @@ No filter applies to the shadow map. This provides hard shadow edges and is the 
 
 :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **SHADOW_FILTER_PCF5** = ``1``
 
-Percentage closer filtering (5 samples) applies to the shadow map. This is slower compared to hard shadow rendering. See :ref:`shadow_filter<class_Light2D_property_shadow_filter>`.
+对阴影贴图使用百分比接近过滤（5 个样本）。与硬阴影渲染相比较慢。见 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
 
 .. _class_Light2D_constant_SHADOW_FILTER_PCF13:
 
@@ -116,7 +116,7 @@ Percentage closer filtering (5 samples) applies to the shadow map. This is slowe
 
 :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **SHADOW_FILTER_PCF13** = ``2``
 
-Percentage closer filtering (13 samples) applies to the shadow map. This is the slowest shadow filtering mode, and should be used sparingly. See :ref:`shadow_filter<class_Light2D_property_shadow_filter>`.
+对阴影贴图使用百分比接近过滤（13 个样本）。最慢的阴影过滤模式，应谨慎使用。见 :ref:`shadow_filter<class_Light2D_property_shadow_filter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ enum **BlendMode**: :ref:`🔗<enum_Light2D_BlendMode>`
 
 :ref:`BlendMode<enum_Light2D_BlendMode>` **BLEND_MODE_ADD** = ``0``
 
-Adds the value of pixels corresponding to the Light2D to the values of pixels under it. This is the common behavior of a light.
+将 Light2D 对应的像素值与其下方的像素值相加。这是灯的常见行为。
 
 .. _class_Light2D_constant_BLEND_MODE_SUB:
 
@@ -142,7 +142,7 @@ Adds the value of pixels corresponding to the Light2D to the values of pixels un
 
 :ref:`BlendMode<enum_Light2D_BlendMode>` **BLEND_MODE_SUB** = ``1``
 
-Subtracts the value of pixels corresponding to the Light2D to the values of pixels under it, resulting in inversed light effect.
+将 Light2D 对应的像素值减去其下方的像素值，产生反光效果。
 
 .. _class_Light2D_constant_BLEND_MODE_MIX:
 
@@ -150,7 +150,7 @@ Subtracts the value of pixels corresponding to the Light2D to the values of pixe
 
 :ref:`BlendMode<enum_Light2D_BlendMode>` **BLEND_MODE_MIX** = ``2``
 
-Mix the value of pixels corresponding to the Light2D to the values of pixels under it by linear interpolation.
+通过线性插值将 Light2D 对应的像素值与其下方的像素值混合。
 
 .. rst-class:: classref-section-separator
 
@@ -158,8 +158,8 @@ Mix the value of pixels corresponding to the Light2D to the values of pixels und
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Light2D_property_blend_mode:
 
@@ -172,7 +172,7 @@ Property Descriptions
 - |void| **set_blend_mode**\ (\ value\: :ref:`BlendMode<enum_Light2D_BlendMode>`\ )
 - :ref:`BlendMode<enum_Light2D_BlendMode>` **get_blend_mode**\ (\ )
 
-The Light2D's blend mode.
+该 Light2D 的混合模式。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ The Light2D's blend mode.
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The Light2D's :ref:`Color<class_Color>`.
+该 Light2D 的颜色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ The Light2D's :ref:`Color<class_Color>`.
 - |void| **set_editor_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editor_only**\ (\ )
 
-If ``true``, Light2D will only appear when editing the scene.
+如果为 ``true``\ ，Light2D 将只在编辑场景时出现。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ If ``true``, Light2D will only appear when editing the scene.
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-If ``true``, Light2D will emit light.
+如果为 ``true``\ ，Light2D 会发光。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ If ``true``, Light2D will emit light.
 - |void| **set_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy**\ (\ )
 
-The Light2D's energy value. The larger the value, the stronger the light.
+Light2D 的能量值。该值越大，光线就越强。
 
 .. rst-class:: classref-item-separator
 
@@ -257,9 +257,9 @@ The Light2D's energy value. The larger the value, the stronger the light.
 - |void| **set_item_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_cull_mask**\ (\ )
 
-The layer mask. Only objects with a matching :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>` will be affected by the Light2D. See also :ref:`shadow_item_cull_mask<class_Light2D_property_shadow_item_cull_mask>`, which affects which objects can cast shadows.
+层遮罩。\ :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>` 与之匹配的对象才会被该 Light2D 影响。另见 :ref:`shadow_item_cull_mask<class_Light2D_property_shadow_item_cull_mask>`\ ，影响的是哪些对象能够投射阴影。
 
-\ **Note:** :ref:`range_item_cull_mask<class_Light2D_property_range_item_cull_mask>` is ignored by :ref:`DirectionalLight2D<class_DirectionalLight2D>`, which will always light a 2D node regardless of the 2D node's :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>`.
+\ **注意：**\ :ref:`DirectionalLight2D<class_DirectionalLight2D>` 会忽略 :ref:`range_item_cull_mask<class_Light2D_property_range_item_cull_mask>`\ ，始终对 2D 节点进行照明，无论其 :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>` 的取值。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ The layer mask. Only objects with a matching :ref:`CanvasItem.light_mask<class_C
 - |void| **set_layer_range_max**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer_range_max**\ (\ )
 
-Maximum layer value of objects that are affected by the Light2D.
+受 Light2D 影响的对象的最大层数值。
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Maximum layer value of objects that are affected by the Light2D.
 - |void| **set_layer_range_min**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer_range_min**\ (\ )
 
-Minimum layer value of objects that are affected by the Light2D.
+受 Light2D 影响的对象的最小层数值。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ Minimum layer value of objects that are affected by the Light2D.
 - |void| **set_z_range_max**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_range_max**\ (\ )
 
-Maximum ``z`` value of objects that are affected by the Light2D.
+受 Light2D 影响的物体的最大 ``z`` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Maximum ``z`` value of objects that are affected by the Light2D.
 - |void| **set_z_range_min**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_range_min**\ (\ )
 
-Minimum ``z`` value of objects that are affected by the Light2D.
+受 Light2D 影响的物体的最小 ``z`` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Minimum ``z`` value of objects that are affected by the Light2D.
 - |void| **set_shadow_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_shadow_color**\ (\ )
 
-:ref:`Color<class_Color>` of shadows cast by the Light2D.
+该 Light2D 投下的影子的颜色 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Minimum ``z`` value of objects that are affected by the Light2D.
 - |void| **set_shadow_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shadow_enabled**\ (\ )
 
-If ``true``, the Light2D will cast shadows.
+如果为 ``true``\ ，则该 Light2D 将投下阴影。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ If ``true``, the Light2D will cast shadows.
 - |void| **set_shadow_filter**\ (\ value\: :ref:`ShadowFilter<enum_Light2D_ShadowFilter>`\ )
 - :ref:`ShadowFilter<enum_Light2D_ShadowFilter>` **get_shadow_filter**\ (\ )
 
-Shadow filter type.
+阴影过滤类型。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Shadow filter type.
 - |void| **set_shadow_smooth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_shadow_smooth**\ (\ )
 
-Smoothing value for shadows. Higher values will result in softer shadows, at the cost of visible streaks that can appear in shadow rendering. :ref:`shadow_filter_smooth<class_Light2D_property_shadow_filter_smooth>` only has an effect if :ref:`shadow_filter<class_Light2D_property_shadow_filter>` is :ref:`SHADOW_FILTER_PCF5<class_Light2D_constant_SHADOW_FILTER_PCF5>` or :ref:`SHADOW_FILTER_PCF13<class_Light2D_constant_SHADOW_FILTER_PCF13>`.
+阴影的平滑值。更高的值将导致更柔和的阴影，代价是在阴影渲染中可能出现可见的条纹。只有在 :ref:`shadow_filter<class_Light2D_property_shadow_filter>` 为 :ref:`SHADOW_FILTER_PCF5<class_Light2D_constant_SHADOW_FILTER_PCF5>` 或 :ref:`SHADOW_FILTER_PCF13<class_Light2D_constant_SHADOW_FILTER_PCF13>` 时，\ :ref:`shadow_filter_smooth<class_Light2D_property_shadow_filter_smooth>` 才有效果。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ Smoothing value for shadows. Higher values will result in softer shadows, at the
 - |void| **set_item_shadow_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_item_shadow_cull_mask**\ (\ )
 
-The shadow mask. Used with :ref:`LightOccluder2D<class_LightOccluder2D>` to cast shadows. Only occluders with a matching :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>` will cast shadows. See also :ref:`range_item_cull_mask<class_Light2D_property_range_item_cull_mask>`, which affects which objects can *receive* the light.
+阴影遮罩。与 :ref:`LightOccluder2D<class_LightOccluder2D>` 一起使用以投射阴影。只有匹配 :ref:`CanvasItem.light_mask<class_CanvasItem_property_light_mask>` 的遮挡物才会投射阴影。另见 :ref:`range_item_cull_mask<class_Light2D_property_range_item_cull_mask>`\ ，它影响哪些对象可以\ *接收*\ 光。
 
 .. rst-class:: classref-section-separator
 
@@ -420,8 +420,8 @@ The shadow mask. Used with :ref:`LightOccluder2D<class_LightOccluder2D>` to cast
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Light2D_method_get_height:
 
@@ -429,7 +429,7 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_height**\ (\ ) |const| :ref:`🔗<class_Light2D_method_get_height>`
 
-Returns the light's height, which is used in 2D normal mapping. See :ref:`PointLight2D.height<class_PointLight2D_property_height>` and :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`.
+返回该灯光的高度，用于 2D 法线映射。见 :ref:`PointLight2D.height<class_PointLight2D_property_height>` 和 :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -441,14 +441,14 @@ Returns the light's height, which is used in 2D normal mapping. See :ref:`PointL
 
 |void| **set_height**\ (\ height\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Light2D_method_set_height>`
 
-Sets the light's height, which is used in 2D normal mapping. See :ref:`PointLight2D.height<class_PointLight2D_property_height>` and :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`.
+设置该灯光的高度，用于 2D 法线映射。见 :ref:`PointLight2D.height<class_PointLight2D_property_height>` 和 :ref:`DirectionalLight2D.height<class_DirectionalLight2D_property_height>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,16 +5,16 @@
 Button
 ======
 
-**Inherits:** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CheckBox<class_CheckBox>`, :ref:`CheckButton<class_CheckButton>`, :ref:`ColorPickerButton<class_ColorPickerButton>`, :ref:`MenuButton<class_MenuButton>`, :ref:`OptionButton<class_OptionButton>`
+**被繼承：** :ref:`CheckBox<class_CheckBox>`, :ref:`CheckButton<class_CheckButton>`, :ref:`ColorPickerButton<class_ColorPickerButton>`, :ref:`MenuButton<class_MenuButton>`, :ref:`OptionButton<class_OptionButton>`
 
-A themed button that can contain text and an icon.
+按鈕，支援主題，能夠包含文字和圖示。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 **Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
 
@@ -57,17 +57,17 @@ See also :ref:`BaseButton<class_BaseButton>` which contains common properties an
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `2D Dodge The Creeps Demo <https://godotengine.org/asset-library/asset/2712>`__
+- `2D Dodge The Creeps 範例 <https://godotengine.org/asset-library/asset/2712>`__
 
 - `Operating System Testing Demo <https://godotengine.org/asset-library/asset/2789>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -102,8 +102,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -180,8 +180,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Button_property_alignment:
 
@@ -262,7 +262,7 @@ If ``true``, text that is too large to fit the button is clipped horizontally. I
 - |void| **set_expand_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_expand_icon**\ (\ )
 
-When enabled, the button's icon will expand/shrink to fit the button's size while keeping its aspect. See also :ref:`icon_max_width<class_Button_theme_constant_icon_max_width>`.
+啟用後，將在保持按鈕圖示長寬比的前提下對該圖示進行擴充/收縮，從而適應按鈕的大小。另見 :ref:`icon_max_width<class_Button_theme_constant_icon_max_width>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ When enabled, the button's icon will expand/shrink to fit the button's size whil
 - |void| **set_flat**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flat**\ (\ )
 
-Flat buttons don't display decoration.
+平面按鈕不顯示裝飾。
 
 .. rst-class:: classref-item-separator
 
@@ -296,9 +296,9 @@ Flat buttons don't display decoration.
 - |void| **set_button_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_button_icon**\ (\ )
 
-Button's icon, if text is present the icon will be placed before the text.
+按鈕的圖示，如果文字存在，則圖示將被放置在文字之前。
 
-To edit margin and spacing of the icon, use :ref:`h_separation<class_Button_theme_constant_h_separation>` theme property and ``content_margin_*`` properties of the used :ref:`StyleBox<class_StyleBox>`\ es.
+要編輯圖示的邊距和間距，請使用 :ref:`h_separation<class_Button_theme_constant_h_separation>` 主題屬性，和所用 :ref:`StyleBox<class_StyleBox>` 的 ``content_margin_*`` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ To edit margin and spacing of the icon, use :ref:`h_separation<class_Button_them
 - |void| **set_icon_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_icon_alignment**\ (\ )
 
-Specifies if the icon should be aligned horizontally to the left, right, or center of a button. Uses the same :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` constants as the text alignment. If centered horizontally and vertically, text will draw on top of the icon.
+指定圖示在按鈕上水平對齊的方式應該為左對齊、右對齊還是居中對齊。請使用與文字對齊相同的 :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` 常數。如果水平居中並且垂直居中，則文字將被繪製在圖示之上。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_text**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_text**\ (\ )
 
-The button's text that will be displayed inside the button's area.
+該按鈕的文字，將顯示在按鈕的區域內。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ The button's text that will be displayed inside the button's area.
 - |void| **set_text_direction**\ (\ value\: :ref:`TextDirection<enum_Control_TextDirection>`\ )
 - :ref:`TextDirection<enum_Control_TextDirection>` **get_text_direction**\ (\ )
 
-Base text writing direction.
+基礎文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -400,7 +400,7 @@ Sets the clipping behavior when the text exceeds the node's bounding rectangle.
 - |void| **set_vertical_icon_alignment**\ (\ value\: :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>`\ )
 - :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` **get_vertical_icon_alignment**\ (\ )
 
-Specifies if the icon should be aligned vertically to the top, bottom, or center of a button. Uses the same :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` constants as the text alignment. If centered horizontally and vertically, text will draw on top of the icon.
+指定圖示在按鈕上垂直對齊的方式應該為頂端對齊、底部對齊還是居中對齊。請使用與文字對齊相同的 :ref:`VerticalAlignment<enum_@GlobalScope_VerticalAlignment>` 常數。如果水平居中並且垂直居中，則文本將被繪製在圖示之上。
 
 .. rst-class:: classref-section-separator
 
@@ -408,8 +408,8 @@ Specifies if the icon should be aligned vertically to the top, bottom, or center
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_Button_theme_color_font_color:
 
@@ -417,7 +417,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)`` :ref:`🔗<class_Button_theme_color_font_color>`
 
-Default text :ref:`Color<class_Color>` of the **Button**.
+該 **Button** 的預設文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ Default text :ref:`Color<class_Color>` of the **Button**.
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_Button_theme_color_font_disabled_color>`
 
-Text :ref:`Color<class_Color>` used when the **Button** is disabled.
+該 **Button** 處於禁用狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ Text :ref:`Color<class_Color>` used when the **Button** is disabled.
 
 :ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Button_theme_color_font_focus_color>`
 
-Text :ref:`Color<class_Color>` used when the **Button** is focused. Only replaces the normal text color of the button. Disabled, hovered, and pressed states take precedence over this color.
+該 **Button** 處於聚焦狀態時，使用的文字 :ref:`Color<class_Color>`\ 。只替換該按鈕的正常文字顏色。禁用、懸停、按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ Text :ref:`Color<class_Color>` used when the **Button** is focused. Only replace
 
 :ref:`Color<class_Color>` **font_hover_color** = ``Color(0.95, 0.95, 0.95, 1)`` :ref:`🔗<class_Button_theme_color_font_hover_color>`
 
-Text :ref:`Color<class_Color>` used when the **Button** is being hovered.
+該 **Button** 處於懸停狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ Text :ref:`Color<class_Color>` used when the **Button** is being hovered.
 
 :ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_font_hover_pressed_color>`
 
-Text :ref:`Color<class_Color>` used when the **Button** is being hovered and pressed.
+該 **Button** 處於懸停並按下狀態時，使用的文字 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Text :ref:`Color<class_Color>` used when the **Button** is being hovered and pre
 
 :ref:`Color<class_Color>` **font_outline_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Button_theme_color_font_outline_color>`
 
-The tint of text outline of the **Button**.
+該 **Button** 的文字輪廓的色調。
 
 .. rst-class:: classref-item-separator
 
@@ -489,7 +489,7 @@ The tint of text outline of the **Button**.
 
 :ref:`Color<class_Color>` **font_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_font_pressed_color>`
 
-Text :ref:`Color<class_Color>` used when the **Button** is being pressed.
+該 **Button** 處於按下狀態時，使用的文字 :ref:`Color<class_Color>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -501,7 +501,7 @@ Text :ref:`Color<class_Color>` used when the **Button** is being pressed.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 0.4)`` :ref:`🔗<class_Button_theme_color_icon_disabled_color>`
 
-Icon modulate :ref:`Color<class_Color>` used when the **Button** is disabled.
+該 **Button** 處於禁用狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ Icon modulate :ref:`Color<class_Color>` used when the **Button** is disabled.
 
 :ref:`Color<class_Color>` **icon_focus_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_icon_focus_color>`
 
-Icon modulate :ref:`Color<class_Color>` used when the **Button** is focused. Only replaces the normal modulate color of the button. Disabled, hovered, and pressed states take precedence over this color.
+該 **Button** 處於聚焦狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。僅替換該按鈕的正常調變顏色。禁用、懸停和按下狀態優先於這個顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -525,7 +525,7 @@ Icon modulate :ref:`Color<class_Color>` used when the **Button** is focused. Onl
 
 :ref:`Color<class_Color>` **icon_hover_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_icon_hover_color>`
 
-Icon modulate :ref:`Color<class_Color>` used when the **Button** is being hovered.
+該 **Button** 處於懸停狀態時，使用的圖示調變\ :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Icon modulate :ref:`Color<class_Color>` used when the **Button** is being hovere
 
 :ref:`Color<class_Color>` **icon_hover_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_icon_hover_pressed_color>`
 
-Icon modulate :ref:`Color<class_Color>` used when the **Button** is being hovered and pressed.
+該 **Button** 處於懸停並按下按下狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Icon modulate :ref:`Color<class_Color>` used when the **Button** is being hovere
 
 :ref:`Color<class_Color>` **icon_normal_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_icon_normal_color>`
 
-Default icon modulate :ref:`Color<class_Color>` of the **Button**.
+該 **Button** 的預設圖示調變 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ Default icon modulate :ref:`Color<class_Color>` of the **Button**.
 
 :ref:`Color<class_Color>` **icon_pressed_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_Button_theme_color_icon_pressed_color>`
 
-Icon modulate :ref:`Color<class_Color>` used when the **Button** is being pressed.
+該 **Button** 處於按下狀態時，使用的圖示調變 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ This constant acts as a boolean. If ``true``, the minimum size of the button and
 
 :ref:`int<class_int>` **h_separation** = ``4`` :ref:`🔗<class_Button_theme_constant_h_separation>`
 
-The horizontal space between **Button**'s icon and text. Negative values will be treated as ``0`` when used.
+**Button** 的圖示和文字之間的水平間距。使用時會將負值當作 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -621,9 +621,9 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_Button_theme_constant_outline_size>`
 
-The size of the text outline.
+文字輪廓的大小。
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_Button_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **注意：**\ 如果使用啟用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字形，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必須至少設定為 :ref:`outline_size<class_Button_theme_constant_outline_size>` 的\ *兩倍*\ ，輪廓算繪才能看起來正確。否則，輪廓可能會比預期的更早被切斷。
 
 .. rst-class:: classref-item-separator
 
@@ -635,7 +635,7 @@ The size of the text outline.
 
 :ref:`Font<class_Font>` **font** :ref:`🔗<class_Button_theme_font_font>`
 
-:ref:`Font<class_Font>` of the **Button**'s text.
+該 **Button** 文字的 :ref:`Font<class_Font>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -647,7 +647,7 @@ The size of the text outline.
 
 :ref:`int<class_int>` **font_size** :ref:`🔗<class_Button_theme_font_size_font_size>`
 
-Font size of the **Button**'s text.
+該 **Button** 文字的字形大小。
 
 .. rst-class:: classref-item-separator
 
@@ -671,7 +671,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **disabled** :ref:`🔗<class_Button_theme_style_disabled>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is disabled.
+該 **Button** 處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -683,7 +683,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **disabled_mirrored** :ref:`🔗<class_Button_theme_style_disabled_mirrored>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is disabled (for right-to-left layouts).
+該 :ref:`OptionButton<class_OptionButton>` 處於禁用狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -707,7 +707,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **hover** :ref:`🔗<class_Button_theme_style_hover>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being hovered.
+該 **Button** 處於懸停狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -719,7 +719,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **hover_mirrored** :ref:`🔗<class_Button_theme_style_hover_mirrored>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being hovered (for right-to-left layouts).
+該 :ref:`OptionButton<class_OptionButton>` 處於懸停狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -731,7 +731,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **hover_pressed** :ref:`🔗<class_Button_theme_style_hover_pressed>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being pressed and hovered at the same time.
+該 **Button** 處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -743,7 +743,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **hover_pressed_mirrored** :ref:`🔗<class_Button_theme_style_hover_pressed_mirrored>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being pressed and hovered at the same time (for right-to-left layouts).
+該 :ref:`OptionButton<class_OptionButton>` 處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -755,7 +755,7 @@ Default icon for the **Button**. Appears only if :ref:`icon<class_Button_propert
 
 :ref:`StyleBox<class_StyleBox>` **normal** :ref:`🔗<class_Button_theme_style_normal>`
 
-Default :ref:`StyleBox<class_StyleBox>` for the **Button**.
+該 **Button** 的預設 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -767,7 +767,7 @@ Default :ref:`StyleBox<class_StyleBox>` for the **Button**.
 
 :ref:`StyleBox<class_StyleBox>` **normal_mirrored** :ref:`🔗<class_Button_theme_style_normal_mirrored>`
 
-Default :ref:`StyleBox<class_StyleBox>` for the **Button** (for right-to-left layouts).
+該 :ref:`OptionButton<class_OptionButton>` 的預設 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
 .. rst-class:: classref-item-separator
 
@@ -779,7 +779,7 @@ Default :ref:`StyleBox<class_StyleBox>` for the **Button** (for right-to-left la
 
 :ref:`StyleBox<class_StyleBox>` **pressed** :ref:`🔗<class_Button_theme_style_pressed>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being pressed.
+該 **Button** 處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -791,14 +791,14 @@ Default :ref:`StyleBox<class_StyleBox>` for the **Button** (for right-to-left la
 
 :ref:`StyleBox<class_StyleBox>` **pressed_mirrored** :ref:`🔗<class_Button_theme_style_pressed_mirrored>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is being pressed (for right-to-left layouts).
+該 :ref:`OptionButton<class_OptionButton>` 處於按下狀態時使用的 :ref:`StyleBox<class_StyleBox>`\ （用於從右至左佈局）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

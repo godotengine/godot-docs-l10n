@@ -5,18 +5,18 @@
 AStarGrid2D
 ===========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An implementation of A\* for finding the shortest path between two points on a partial 2D grid.
+A\* 的一種實作，用於尋找疏鬆 2D 網格中兩點之間的最短路徑。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-**AStarGrid2D** is a variant of :ref:`AStar2D<class_AStar2D>` that is specialized for partial 2D grids. It is simpler to use because it doesn't require you to manually create points and connect them together. This class also supports multiple types of heuristics, modes for diagonal movement, and a jumping mode to speed up calculations.
+**AStarGrid2D** 是 :ref:`AStar2D<class_AStar2D>` 的變體，專門用於部分 2D 網格。由於不需手動建立並連接點，使用上更為簡單。此類同時支援多種啟發式、對角線移動模式，並提供跳點模式以加速運算。
 
-To use **AStarGrid2D**, you only need to set the :ref:`region<class_AStarGrid2D_property_region>` of the grid, optionally set the :ref:`cell_size<class_AStarGrid2D_property_cell_size>`, and then call the :ref:`update()<class_AStarGrid2D_method_update>` method:
+要使用 **AStarGrid2D**\ ，只需設定網格的 :ref:`region<class_AStarGrid2D_property_region>`\ ，必要時設定 :ref:`cell_size<class_AStarGrid2D_property_cell_size>`\ ，然後呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ ：
 
 
 .. tabs::
@@ -27,8 +27,8 @@ To use **AStarGrid2D**, you only need to set the :ref:`region<class_AStarGrid2D_
     astar_grid.region = Rect2i(0, 0, 32, 32)
     astar_grid.cell_size = Vector2(16, 16)
     astar_grid.update()
-    print(astar_grid.get_id_path(Vector2i(0, 0), Vector2i(3, 4))) # Prints [(0, 0), (1, 1), (2, 2), (3, 3), (3, 4)]
-    print(astar_grid.get_point_path(Vector2i(0, 0), Vector2i(3, 4))) # Prints [(0, 0), (16, 16), (32, 32), (48, 48), (48, 64)]
+    print(astar_grid.get_id_path(Vector2i(0, 0), Vector2i(3, 4))) # 會輸出 [(0, 0), (1, 1), (2, 2), (3, 3), (3, 4)]
+    print(astar_grid.get_point_path(Vector2i(0, 0), Vector2i(3, 4))) # 會輸出 [(0, 0), (16, 16), (32, 32), (48, 48), (48, 64)]
 
  .. code-tab:: csharp
 
@@ -36,24 +36,24 @@ To use **AStarGrid2D**, you only need to set the :ref:`region<class_AStarGrid2D_
     astarGrid.Region = new Rect2I(0, 0, 32, 32);
     astarGrid.CellSize = new Vector2I(16, 16);
     astarGrid.Update();
-    GD.Print(astarGrid.GetIdPath(Vector2I.Zero, new Vector2I(3, 4))); // Prints [(0, 0), (1, 1), (2, 2), (3, 3), (3, 4)]
-    GD.Print(astarGrid.GetPointPath(Vector2I.Zero, new Vector2I(3, 4))); // Prints [(0, 0), (16, 16), (32, 32), (48, 48), (48, 64)]
+    GD.Print(astarGrid.GetIdPath(Vector2I.Zero, new Vector2I(3, 4))); // 會輸出 [(0, 0), (1, 1), (2, 2), (3, 3), (3, 4)]
+    GD.Print(astarGrid.GetPointPath(Vector2I.Zero, new Vector2I(3, 4))); // 會輸出 [(0, 0), (16, 16), (32, 32), (48, 48), (48, 64)]
 
 
 
-To remove a point from the pathfinding grid, it must be set as "solid" with :ref:`set_point_solid()<class_AStarGrid2D_method_set_point_solid>`.
+若要從尋路網格中移除某點，必須先使用 :ref:`set_point_solid()<class_AStarGrid2D_method_set_point_solid>` 將其標記為「實心」。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
+- `使用 AStarGrid2D 的網格導航範例 <https://godotengine.org/asset-library/asset/2723>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -128,8 +128,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_AStarGrid2D_Heuristic:
 
@@ -143,7 +143,7 @@ enum **Heuristic**: :ref:`🔗<enum_AStarGrid2D_Heuristic>`
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_EUCLIDEAN** = ``0``
 
-The `Euclidean heuristic <https://en.wikipedia.org/wiki/Euclidean_distance>`__ to be used for the pathfinding using the following formula:
+`歐氏啟發式 <https://zh.wikipedia.org/wiki/歐幾里得距離>`__\ ，公式如下：
 
 ::
 
@@ -151,7 +151,7 @@ The `Euclidean heuristic <https://en.wikipedia.org/wiki/Euclidean_distance>`__ t
     dy = abs(to_id.y - from_id.y)
     result = sqrt(dx * dx + dy * dy)
 
-\ **Note:** This is also the internal heuristic used in :ref:`AStar3D<class_AStar3D>` and :ref:`AStar2D<class_AStar2D>` by default (with the inclusion of possible z-axis coordinate).
+\ **注意：**\ 這也是 :ref:`AStar3D<class_AStar3D>` 與 :ref:`AStar2D<class_AStar2D>` 預設使用的內部啟發式（含可能的 z 軸）。
 
 .. _class_AStarGrid2D_constant_HEURISTIC_MANHATTAN:
 
@@ -159,7 +159,7 @@ The `Euclidean heuristic <https://en.wikipedia.org/wiki/Euclidean_distance>`__ t
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_MANHATTAN** = ``1``
 
-The `Manhattan heuristic <https://en.wikipedia.org/wiki/Taxicab_geometry>`__ to be used for the pathfinding using the following formula:
+`曼哈頓啟發式 <https://zh.wikipedia.org/wiki/曼哈頓距離>`__\ ，公式如下：
 
 ::
 
@@ -167,7 +167,7 @@ The `Manhattan heuristic <https://en.wikipedia.org/wiki/Taxicab_geometry>`__ to 
     dy = abs(to_id.y - from_id.y)
     result = dx + dy
 
-\ **Note:** This heuristic is intended to be used with 4-side orthogonal movements, provided by setting the :ref:`diagonal_mode<class_AStarGrid2D_property_diagonal_mode>` to :ref:`DIAGONAL_MODE_NEVER<class_AStarGrid2D_constant_DIAGONAL_MODE_NEVER>`.
+\ **注意：**\ 此啟發式預期搭配僅允許四向正交移動的情況（將 :ref:`diagonal_mode<class_AStarGrid2D_property_diagonal_mode>` 設為 :ref:`DIAGONAL_MODE_NEVER<class_AStarGrid2D_constant_DIAGONAL_MODE_NEVER>`\ ）。
 
 .. _class_AStarGrid2D_constant_HEURISTIC_OCTILE:
 
@@ -175,7 +175,7 @@ The `Manhattan heuristic <https://en.wikipedia.org/wiki/Taxicab_geometry>`__ to 
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_OCTILE** = ``2``
 
-The Octile heuristic to be used for the pathfinding using the following formula:
+Octile 啟發式，公式如下：
 
 ::
 
@@ -190,7 +190,7 @@ The Octile heuristic to be used for the pathfinding using the following formula:
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_CHEBYSHEV** = ``3``
 
-The `Chebyshev heuristic <https://en.wikipedia.org/wiki/Chebyshev_distance>`__ to be used for the pathfinding using the following formula:
+`切比雪夫啟發式 <https://zh.wikipedia.org/wiki/切比雪夫距離>`__\ ，公式如下：
 
 ::
 
@@ -204,7 +204,7 @@ The `Chebyshev heuristic <https://en.wikipedia.org/wiki/Chebyshev_distance>`__ t
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_MAX** = ``4``
 
-Represents the size of the :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` enum.
+代表 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ enum **DiagonalMode**: :ref:`🔗<enum_AStarGrid2D_DiagonalMode>`
 
 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` **DIAGONAL_MODE_ALWAYS** = ``0``
 
-The pathfinding algorithm will ignore solid neighbors around the target cell and allow passing using diagonals.
+尋路演算法將忽略目標格周圍的實心鄰格，允許沿對角線通過。
 
 .. _class_AStarGrid2D_constant_DIAGONAL_MODE_NEVER:
 
@@ -230,7 +230,7 @@ The pathfinding algorithm will ignore solid neighbors around the target cell and
 
 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` **DIAGONAL_MODE_NEVER** = ``1``
 
-The pathfinding algorithm will ignore all diagonals and the way will be always orthogonal.
+尋路演算法將完全忽略對角線，路徑僅允許正交移動。
 
 .. _class_AStarGrid2D_constant_DIAGONAL_MODE_AT_LEAST_ONE_WALKABLE:
 
@@ -238,7 +238,7 @@ The pathfinding algorithm will ignore all diagonals and the way will be always o
 
 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` **DIAGONAL_MODE_AT_LEAST_ONE_WALKABLE** = ``2``
 
-The pathfinding algorithm will avoid using diagonals if at least two obstacles have been placed around the neighboring cells of the specific path segment.
+若在特定路段的相鄰格周圍至少有兩個障礙物，尋路演算法將避免使用對角線。
 
 .. _class_AStarGrid2D_constant_DIAGONAL_MODE_ONLY_IF_NO_OBSTACLES:
 
@@ -246,7 +246,7 @@ The pathfinding algorithm will avoid using diagonals if at least two obstacles h
 
 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` **DIAGONAL_MODE_ONLY_IF_NO_OBSTACLES** = ``3``
 
-The pathfinding algorithm will avoid using diagonals if any obstacle has been placed around the neighboring cells of the specific path segment.
+若在特定路段的相鄰格周圍存在任意障礙物，尋路演算法將避免使用對角線。
 
 .. _class_AStarGrid2D_constant_DIAGONAL_MODE_MAX:
 
@@ -254,7 +254,7 @@ The pathfinding algorithm will avoid using diagonals if any obstacle has been pl
 
 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` **DIAGONAL_MODE_MAX** = ``4``
 
-Represents the size of the :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` enum.
+代表 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ enum **CellShape**: :ref:`🔗<enum_AStarGrid2D_CellShape>`
 
 :ref:`CellShape<enum_AStarGrid2D_CellShape>` **CELL_SHAPE_SQUARE** = ``0``
 
-Rectangular cell shape.
+矩形格形。
 
 .. _class_AStarGrid2D_constant_CELL_SHAPE_ISOMETRIC_RIGHT:
 
@@ -280,7 +280,7 @@ Rectangular cell shape.
 
 :ref:`CellShape<enum_AStarGrid2D_CellShape>` **CELL_SHAPE_ISOMETRIC_RIGHT** = ``1``
 
-Diamond cell shape (for isometric look). Cell coordinates layout where the horizontal axis goes up-right, and the vertical one goes down-right.
+菱形格形（等角視覺）。格座標佈局：水平軸朝右上，垂直軸朝右下。
 
 .. _class_AStarGrid2D_constant_CELL_SHAPE_ISOMETRIC_DOWN:
 
@@ -288,7 +288,7 @@ Diamond cell shape (for isometric look). Cell coordinates layout where the horiz
 
 :ref:`CellShape<enum_AStarGrid2D_CellShape>` **CELL_SHAPE_ISOMETRIC_DOWN** = ``2``
 
-Diamond cell shape (for isometric look). Cell coordinates layout where the horizontal axis goes down-right, and the vertical one goes down-left.
+菱形格形（等角視覺）。格座標佈局：水平軸朝右下，垂直軸朝左下。
 
 .. _class_AStarGrid2D_constant_CELL_SHAPE_MAX:
 
@@ -296,7 +296,7 @@ Diamond cell shape (for isometric look). Cell coordinates layout where the horiz
 
 :ref:`CellShape<enum_AStarGrid2D_CellShape>` **CELL_SHAPE_MAX** = ``3``
 
-Represents the size of the :ref:`CellShape<enum_AStarGrid2D_CellShape>` enum.
+代表 :ref:`CellShape<enum_AStarGrid2D_CellShape>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -304,8 +304,8 @@ Represents the size of the :ref:`CellShape<enum_AStarGrid2D_CellShape>` enum.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AStarGrid2D_property_cell_shape:
 
@@ -318,7 +318,7 @@ Property Descriptions
 - |void| **set_cell_shape**\ (\ value\: :ref:`CellShape<enum_AStarGrid2D_CellShape>`\ )
 - :ref:`CellShape<enum_AStarGrid2D_CellShape>` **get_cell_shape**\ (\ )
 
-The cell shape. Affects how the positions are placed in the grid. If changed, :ref:`update()<class_AStarGrid2D_method_update>` needs to be called before finding the next path.
+格形類型，決定點在網格中的放置方式。若變更此屬性，搜尋下一條路徑前需呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ The cell shape. Affects how the positions are placed in the grid. If changed, :r
 - |void| **set_cell_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_cell_size**\ (\ )
 
-The size of the point cell which will be applied to calculate the resulting point position returned by :ref:`get_point_path()<class_AStarGrid2D_method_get_point_path>`. If changed, :ref:`update()<class_AStarGrid2D_method_update>` needs to be called before finding the next path.
+格子的實際尺寸，用於計算 :ref:`get_point_path()<class_AStarGrid2D_method_get_point_path>` 回傳的座標。若變更此屬性，搜尋下一條路徑前需呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ The size of the point cell which will be applied to calculate the resulting poin
 - |void| **set_default_compute_heuristic**\ (\ value\: :ref:`Heuristic<enum_AStarGrid2D_Heuristic>`\ )
 - :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **get_default_compute_heuristic**\ (\ )
 
-The default :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` which will be used to calculate the cost between two points if :ref:`_compute_cost()<class_AStarGrid2D_private_method__compute_cost>` was not overridden.
+預設 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>`\ ，當未覆寫 :ref:`_compute_cost()<class_AStarGrid2D_private_method__compute_cost>` 時，用以計算兩點間成本。
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ The default :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` which will be used to c
 - |void| **set_default_estimate_heuristic**\ (\ value\: :ref:`Heuristic<enum_AStarGrid2D_Heuristic>`\ )
 - :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **get_default_estimate_heuristic**\ (\ )
 
-The default :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` which will be used to calculate the cost between the point and the end point if :ref:`_estimate_cost()<class_AStarGrid2D_private_method__estimate_cost>` was not overridden.
+預設 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>`\ ，當未覆寫 :ref:`_estimate_cost()<class_AStarGrid2D_private_method__estimate_cost>` 時，用以計算目前點與終點之間的成本。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ The default :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` which will be used to c
 - |void| **set_diagonal_mode**\ (\ value\: :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>`\ )
 - :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` **get_diagonal_mode**\ (\ )
 
-A specific :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` mode which will force the path to avoid or accept the specified diagonals.
+指定的 :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>`\ ，用於強制路徑避免或允許特定對角線。
 
 .. rst-class:: classref-item-separator
 
@@ -403,9 +403,9 @@ A specific :ref:`DiagonalMode<enum_AStarGrid2D_DiagonalMode>` mode which will fo
 - |void| **set_jumping_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_jumping_enabled**\ (\ )
 
-Enables or disables jumping to skip up the intermediate points and speeds up the searching algorithm.
+啟用或停用跳點功能以略過中繼點並加速搜尋演算法。
 
-\ **Note:** Currently, toggling it on disables the consideration of weight scaling in pathfinding.
+\ **注意：**\ 目前啟用此功能後，尋路時將不考慮權重比例。
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Enables or disables jumping to skip up the intermediate points and speeds up the
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The offset of the grid which will be applied to calculate the resulting point position returned by :ref:`get_point_path()<class_AStarGrid2D_method_get_point_path>`. If changed, :ref:`update()<class_AStarGrid2D_method_update>` needs to be called before finding the next path.
+網格的位移量，用於計算 :ref:`get_point_path()<class_AStarGrid2D_method_get_point_path>` 回傳的座標。若變更此屬性，搜尋下一條路徑前需呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ The offset of the grid which will be applied to calculate the resulting point po
 - |void| **set_region**\ (\ value\: :ref:`Rect2i<class_Rect2i>`\ )
 - :ref:`Rect2i<class_Rect2i>` **get_region**\ (\ )
 
-The region of grid cells available for pathfinding. If changed, :ref:`update()<class_AStarGrid2D_method_update>` needs to be called before finding the next path.
+可供尋路使用的網格區域。若變更此屬性，搜尋下一條路徑前需呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -456,9 +456,9 @@ The region of grid cells available for pathfinding. If changed, :ref:`update()<c
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-**Deprecated:** Use :ref:`region<class_AStarGrid2D_property_region>` instead.
+**已棄用：** Use :ref:`region<class_AStarGrid2D_property_region>` instead.
 
-The size of the grid (number of cells of size :ref:`cell_size<class_AStarGrid2D_property_cell_size>` on each axis). If changed, :ref:`update()<class_AStarGrid2D_method_update>` needs to be called before finding the next path.
+網格尺寸（各軸上、邊長為 :ref:`cell_size<class_AStarGrid2D_property_cell_size>` 的格數）。若變更此屬性，搜尋下一條路徑前需呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -466,8 +466,8 @@ The size of the grid (number of cells of size :ref:`cell_size<class_AStarGrid2D_
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AStarGrid2D_private_method__compute_cost:
 
@@ -475,9 +475,9 @@ Method Descriptions
 
 :ref:`float<class_float>` **_compute_cost**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`\ ) |virtual| |const| :ref:`🔗<class_AStarGrid2D_private_method__compute_cost>`
 
-Called when computing the cost between two connected points.
+計算兩個連接點之間成本時呼叫。
 
-Note that this function is hidden in the default **AStarGrid2D** class.
+注意：此函式在預設的 **AStarGrid2D** 類別中為隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -489,9 +489,9 @@ Note that this function is hidden in the default **AStarGrid2D** class.
 
 :ref:`float<class_float>` **_estimate_cost**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, end_id\: :ref:`Vector2i<class_Vector2i>`\ ) |virtual| |const| :ref:`🔗<class_AStarGrid2D_private_method__estimate_cost>`
 
-Called when estimating the cost between a point and the path's ending point.
+估算某點與路徑終點之間成本時呼叫。
 
-Note that this function is hidden in the default **AStarGrid2D** class.
+注意：此函式在預設的 **AStarGrid2D** 類別中為隱藏。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Note that this function is hidden in the default **AStarGrid2D** class.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_AStarGrid2D_method_clear>`
 
-Clears the grid and sets the :ref:`region<class_AStarGrid2D_property_region>` to ``Rect2i(0, 0, 0, 0)``.
+清空網格並將 :ref:`region<class_AStarGrid2D_property_region>` 設為 ``Rect2i(0, 0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -515,9 +515,9 @@ Clears the grid and sets the :ref:`region<class_AStarGrid2D_property_region>` to
 
 |void| **fill_solid_region**\ (\ region\: :ref:`Rect2i<class_Rect2i>`, solid\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStarGrid2D_method_fill_solid_region>`
 
-Fills the given ``region`` on the grid with the specified value for the solid flag.
+將指定的 ``region`` 區域填入所給的實心標記值。
 
-\ **Note:** Calling :ref:`update()<class_AStarGrid2D_method_update>` is not needed after the call of this function.
+\ **注意：**\ 呼叫此函式後無需再次呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -529,9 +529,9 @@ Fills the given ``region`` on the grid with the specified value for the solid fl
 
 |void| **fill_weight_scale_region**\ (\ region\: :ref:`Rect2i<class_Rect2i>`, weight_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AStarGrid2D_method_fill_weight_scale_region>`
 
-Fills the given ``region`` on the grid with the specified value for the weight scale.
+為網格中指定的 ``region`` 設定給定的權重比例。
 
-\ **Note:** Calling :ref:`update()<class_AStarGrid2D_method_update>` is not needed after the call of this function.
+\ **注意：**\ 呼叫此函式後無需再次呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_point_data_in_region**\ (\ region\: :ref:`Rect2i<class_Rect2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_get_point_data_in_region>`
 
-Returns an array of dictionaries with point data (``id``: :ref:`Vector2i<class_Vector2i>`, ``position``: :ref:`Vector2<class_Vector2>`, ``solid``: :ref:`bool<class_bool>`, ``weight_scale``: :ref:`float<class_float>`) within a ``region``.
+返回一個陣列，內容為位於 ``region`` 內各點的資料字典（\ ``id``: :ref:`Vector2i<class_Vector2i>`\ 、\ ``position``: :ref:`Vector2<class_Vector2>`\ 、\ ``solid``: :ref:`bool<class_bool>`\ 、\ ``weight_scale``: :ref:`float<class_float>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is solid the
 
 :ref:`Vector2<class_Vector2>` **get_point_position**\ (\ id\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_get_point_position>`
 
-Returns the position of the point associated with the given ``id``.
+回傳與指定 ``id`` 相關聯之點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -605,7 +605,7 @@ Returns the position of the point associated with the given ``id``.
 
 :ref:`float<class_float>` **get_point_weight_scale**\ (\ id\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_get_point_weight_scale>`
 
-Returns the weight scale of the point associated with the given ``id``.
+回傳與指定 ``id`` 相關聯之點的權重係數。
 
 .. rst-class:: classref-item-separator
 
@@ -617,7 +617,7 @@ Returns the weight scale of the point associated with the given ``id``.
 
 :ref:`bool<class_bool>` **is_dirty**\ (\ ) |const| :ref:`🔗<class_AStarGrid2D_method_is_dirty>`
 
-Indicates that the grid parameters were changed and :ref:`update()<class_AStarGrid2D_method_update>` needs to be called.
+指出網格參數已變更，需要呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ Indicates that the grid parameters were changed and :ref:`update()<class_AStarGr
 
 :ref:`bool<class_bool>` **is_in_bounds**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_is_in_bounds>`
 
-Returns ``true`` if the ``x`` and ``y`` is a valid grid coordinate (id), i.e. if it is inside :ref:`region<class_AStarGrid2D_property_region>`. Equivalent to ``region.has_point(Vector2i(x, y))``.
+若 ``x`` 與 ``y`` 組成的座標位於 :ref:`region<class_AStarGrid2D_property_region>` 內，則回傳 ``true``\ ；相當於 ``region.has_point(Vector2i(x, y))``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -641,7 +641,7 @@ Returns ``true`` if the ``x`` and ``y`` is a valid grid coordinate (id), i.e. if
 
 :ref:`bool<class_bool>` **is_in_boundsv**\ (\ id\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_is_in_boundsv>`
 
-Returns ``true`` if the ``id`` vector is a valid grid coordinate, i.e. if it is inside :ref:`region<class_AStarGrid2D_property_region>`. Equivalent to ``region.has_point(id)``.
+若向量 ``id`` 位於 :ref:`region<class_AStarGrid2D_property_region>` 內，則回傳 ``true``\ ；相當於 ``region.has_point(id)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -653,7 +653,7 @@ Returns ``true`` if the ``id`` vector is a valid grid coordinate, i.e. if it is 
 
 :ref:`bool<class_bool>` **is_point_solid**\ (\ id\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_is_point_solid>`
 
-Returns ``true`` if a point is disabled for pathfinding. By default, all points are enabled.
+若某點被停用於尋路，則回傳 ``true``\ 。預設所有點皆為啟用狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -665,9 +665,9 @@ Returns ``true`` if a point is disabled for pathfinding. By default, all points 
 
 |void| **set_point_solid**\ (\ id\: :ref:`Vector2i<class_Vector2i>`, solid\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStarGrid2D_method_set_point_solid>`
 
-Disables or enables the specified point for pathfinding. Useful for making an obstacle. By default, all points are enabled.
+啟用或停用指定點的尋路功能，可用於製造障礙物。預設所有點皆啟用。
 
-\ **Note:** Calling :ref:`update()<class_AStarGrid2D_method_update>` is not needed after the call of this function.
+\ **注意：**\ 呼叫此函式後無需再次呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -679,9 +679,9 @@ Disables or enables the specified point for pathfinding. Useful for making an ob
 
 |void| **set_point_weight_scale**\ (\ id\: :ref:`Vector2i<class_Vector2i>`, weight_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AStarGrid2D_method_set_point_weight_scale>`
 
-Sets the ``weight_scale`` for the point with the given ``id``. The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_AStarGrid2D_private_method__compute_cost>` when determining the overall cost of traveling across a segment from a neighboring point to this point.
+設定指定 ``id`` 點的 ``weight_scale``\ 。在計算從鄰近點移動至此點的段落成本時，會將 :ref:`_compute_cost()<class_AStarGrid2D_private_method__compute_cost>` 的結果乘以此值。
 
-\ **Note:** Calling :ref:`update()<class_AStarGrid2D_method_update>` is not needed after the call of this function.
+\ **注意：**\ 呼叫此函式後無需再次呼叫 :ref:`update()<class_AStarGrid2D_method_update>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -693,16 +693,16 @@ Sets the ``weight_scale`` for the point with the given ``id``. The ``weight_scal
 
 |void| **update**\ (\ ) :ref:`🔗<class_AStarGrid2D_method_update>`
 
-Updates the internal state of the grid according to the parameters to prepare it to search the path. Needs to be called if parameters like :ref:`region<class_AStarGrid2D_property_region>`, :ref:`cell_size<class_AStarGrid2D_property_cell_size>` or :ref:`offset<class_AStarGrid2D_property_offset>` are changed. :ref:`is_dirty()<class_AStarGrid2D_method_is_dirty>` will return ``true`` if this is the case and this needs to be called.
+根據目前參數更新網格內部狀態，以便進行路徑搜尋。若變更了 :ref:`region<class_AStarGrid2D_property_region>`\ 、\ :ref:`cell_size<class_AStarGrid2D_property_cell_size>` 或 :ref:`offset<class_AStarGrid2D_property_offset>` 等參數，必須呼叫此方法。當需要更新時， :ref:`is_dirty()<class_AStarGrid2D_method_is_dirty>` 會回傳 ``true``\ 。
 
-\ **Note:** All point data (solidity and weight scale) will be cleared.
+\ **注意：**\ 此操作會清除所有點的實心與權重比例資料。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

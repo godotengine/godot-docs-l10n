@@ -5,27 +5,27 @@
 OpenXRCompositionLayer
 ======================
 
-**Experimental:** This class may be changed or removed in future versions.
+**实验性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`OpenXRCompositionLayerCylinder<class_OpenXRCompositionLayerCylinder>`, :ref:`OpenXRCompositionLayerEquirect<class_OpenXRCompositionLayerEquirect>`, :ref:`OpenXRCompositionLayerQuad<class_OpenXRCompositionLayerQuad>`
+**派生：** :ref:`OpenXRCompositionLayerCylinder<class_OpenXRCompositionLayerCylinder>`, :ref:`OpenXRCompositionLayerEquirect<class_OpenXRCompositionLayerEquirect>`, :ref:`OpenXRCompositionLayerQuad<class_OpenXRCompositionLayerQuad>`
 
-The parent class of all OpenXR composition layer nodes.
+所有 OpenXR 合成层节点的父类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Composition layers allow 2D viewports to be displayed inside of the headset by the XR compositor through special projections that retain their quality. This allows for rendering clear text while keeping the layer at a native resolution.
+合成层允许 XR 合成器通过保留其质量的特殊投影，从而在头戴式设备内显示 2D 视口。这样可以在保持图层的原始分辨率的同时，渲染清晰的文本。
 
-\ **Note:** If the OpenXR runtime doesn't support the given composition layer type, a fallback mesh can be generated with a :ref:`ViewportTexture<class_ViewportTexture>`, in order to emulate the composition layer.
+\ **注意：**\ 如果 OpenXR 运行时不支持给定的合成层类型，则可以使用 :ref:`ViewportTexture<class_ViewportTexture>` 生成后备网格，以模拟合成层。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_OpenXRCompositionLayer_Filter:
 
@@ -105,7 +105,7 @@ enum **Filter**: :ref:`🔗<enum_OpenXRCompositionLayer_Filter>`
 
 :ref:`Filter<enum_OpenXRCompositionLayer_Filter>` **FILTER_NEAREST** = ``0``
 
-Perform nearest-neighbor filtering when sampling the texture.
+对纹理进行采样时执行最邻近过滤。
 
 .. _class_OpenXRCompositionLayer_constant_FILTER_LINEAR:
 
@@ -113,7 +113,7 @@ Perform nearest-neighbor filtering when sampling the texture.
 
 :ref:`Filter<enum_OpenXRCompositionLayer_Filter>` **FILTER_LINEAR** = ``1``
 
-Perform linear filtering when sampling the texture.
+对纹理进行采样时执行线性过滤。
 
 .. _class_OpenXRCompositionLayer_constant_FILTER_CUBIC:
 
@@ -121,7 +121,7 @@ Perform linear filtering when sampling the texture.
 
 :ref:`Filter<enum_OpenXRCompositionLayer_Filter>` **FILTER_CUBIC** = ``2``
 
-Perform cubic filtering when sampling the texture.
+对纹理进行采样时执行立方过滤。
 
 .. rst-class:: classref-item-separator
 
@@ -139,9 +139,9 @@ enum **MipmapMode**: :ref:`🔗<enum_OpenXRCompositionLayer_MipmapMode>`
 
 :ref:`MipmapMode<enum_OpenXRCompositionLayer_MipmapMode>` **MIPMAP_MODE_DISABLED** = ``0``
 
-Disable mipmapping.
+禁用 Mipmap。
 
-\ **Note:** Mipmapping can only be disabled in the Compatibility renderer.
+\ **注意：**\ Mipmap 只有在兼容渲染器中能够禁用。
 
 .. _class_OpenXRCompositionLayer_constant_MIPMAP_MODE_NEAREST:
 
@@ -149,7 +149,7 @@ Disable mipmapping.
 
 :ref:`MipmapMode<enum_OpenXRCompositionLayer_MipmapMode>` **MIPMAP_MODE_NEAREST** = ``1``
 
-Use the mipmap of the nearest resolution.
+使用最接近分辨率的 mipmap。
 
 .. _class_OpenXRCompositionLayer_constant_MIPMAP_MODE_LINEAR:
 
@@ -157,7 +157,7 @@ Use the mipmap of the nearest resolution.
 
 :ref:`MipmapMode<enum_OpenXRCompositionLayer_MipmapMode>` **MIPMAP_MODE_LINEAR** = ``2``
 
-Use linear interpolation of the two mipmaps of the nearest resolution.
+使用最接近分辨率的两个 mipmap 的线性插值。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ enum **Wrap**: :ref:`🔗<enum_OpenXRCompositionLayer_Wrap>`
 
 :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **WRAP_CLAMP_TO_BORDER** = ``0``
 
-Clamp the texture to its specified border color.
+使用指定的边框颜色限制纹理。
 
 .. _class_OpenXRCompositionLayer_constant_WRAP_CLAMP_TO_EDGE:
 
@@ -183,7 +183,7 @@ Clamp the texture to its specified border color.
 
 :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **WRAP_CLAMP_TO_EDGE** = ``1``
 
-Clamp the texture to its edge color.
+使用边缘颜色限制纹理。
 
 .. _class_OpenXRCompositionLayer_constant_WRAP_REPEAT:
 
@@ -191,7 +191,7 @@ Clamp the texture to its edge color.
 
 :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **WRAP_REPEAT** = ``2``
 
-Repeat the texture infinitely.
+无限重复纹理。
 
 .. _class_OpenXRCompositionLayer_constant_WRAP_MIRRORED_REPEAT:
 
@@ -199,7 +199,7 @@ Repeat the texture infinitely.
 
 :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **WRAP_MIRRORED_REPEAT** = ``3``
 
-Repeat the texture infinitely, mirroring it on each repeat.
+无限重复纹理，每次重复都进行镜像。
 
 .. _class_OpenXRCompositionLayer_constant_WRAP_MIRROR_CLAMP_TO_EDGE:
 
@@ -207,9 +207,9 @@ Repeat the texture infinitely, mirroring it on each repeat.
 
 :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **WRAP_MIRROR_CLAMP_TO_EDGE** = ``4``
 
-Mirror the texture once and then clamp the texture to its edge color.
+纹理会进行一次镜像，然后使用边缘颜色进行限制。
 
-\ **Note:** This wrap mode is not available in the Compatibility renderer.
+\ **注意：**\ 该环绕模式在兼容渲染器中不可用。
 
 .. rst-class:: classref-item-separator
 
@@ -227,7 +227,7 @@ enum **Swizzle**: :ref:`🔗<enum_OpenXRCompositionLayer_Swizzle>`
 
 :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **SWIZZLE_RED** = ``0``
 
-Maps a color channel to the value of the red channel.
+将颜色通道映射为红色通道的值。
 
 .. _class_OpenXRCompositionLayer_constant_SWIZZLE_GREEN:
 
@@ -235,7 +235,7 @@ Maps a color channel to the value of the red channel.
 
 :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **SWIZZLE_GREEN** = ``1``
 
-Maps a color channel to the value of the green channel.
+将颜色通道映射为绿色通道的值。
 
 .. _class_OpenXRCompositionLayer_constant_SWIZZLE_BLUE:
 
@@ -243,7 +243,7 @@ Maps a color channel to the value of the green channel.
 
 :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **SWIZZLE_BLUE** = ``2``
 
-Maps a color channel to the value of the blue channel.
+将颜色通道映射为蓝色通道的值。
 
 .. _class_OpenXRCompositionLayer_constant_SWIZZLE_ALPHA:
 
@@ -251,7 +251,7 @@ Maps a color channel to the value of the blue channel.
 
 :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **SWIZZLE_ALPHA** = ``3``
 
-Maps a color channel to the value of the alpha channel.
+将颜色通道映射为 Alpha 通道的值。
 
 .. _class_OpenXRCompositionLayer_constant_SWIZZLE_ZERO:
 
@@ -259,7 +259,7 @@ Maps a color channel to the value of the alpha channel.
 
 :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **SWIZZLE_ZERO** = ``4``
 
-Maps a color channel to the value of zero.
+将颜色通道映射为零。
 
 .. _class_OpenXRCompositionLayer_constant_SWIZZLE_ONE:
 
@@ -267,7 +267,7 @@ Maps a color channel to the value of zero.
 
 :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **SWIZZLE_ONE** = ``5``
 
-Maps a color channel to the value of one.
+将颜色通道映射为一。
 
 .. rst-class:: classref-section-separator
 
@@ -275,8 +275,8 @@ Maps a color channel to the value of one.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OpenXRCompositionLayer_property_alpha_blend:
 
@@ -289,9 +289,9 @@ Property Descriptions
 - |void| **set_alpha_blend**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_alpha_blend**\ (\ )
 
-Enables the blending the layer using its alpha channel.
+启用使用其 alpha 通道混合图层的功能。
 
-Can be combined with :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` to give the layer a transparent background.
+可以与 :ref:`Viewport.transparent_bg<class_Viewport_property_transparent_bg>` 结合使用，以便为图层提供透明背景。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Can be combined with :ref:`Viewport.transparent_bg<class_Viewport_property_trans
 - |void| **set_android_surface_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_android_surface_size**\ (\ )
 
-The size of the Android surface to create if :ref:`use_android_surface<class_OpenXRCompositionLayer_property_use_android_surface>` is enabled.
+如果启用了 :ref:`use_android_surface<class_OpenXRCompositionLayer_property_use_android_surface>`\ ，则为要创建的 Android 表面的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ The size of the Android surface to create if :ref:`use_android_surface<class_Ope
 - |void| **set_enable_hole_punch**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_hole_punch**\ (\ )
 
-Enables a technique called "hole punching", which allows putting the composition layer behind the main projection layer (i.e. setting :ref:`sort_order<class_OpenXRCompositionLayer_property_sort_order>` to a negative value) while "punching a hole" through everything rendered by Godot so that the layer is still visible.
+启用一种称为“打孔”的技术，该技术允许将合成层置于主投影层后面（即将 :ref:`sort_order<class_OpenXRCompositionLayer_property_sort_order>` 设置为负值），同时在 Godot 渲染的所有内容上“打一个洞”，以便该层仍然可见。
 
-This can be used to create the illusion that the composition layer exists in the same 3D space as everything rendered by Godot, allowing objects to appear to pass both behind or in front of the composition layer.
+这可用于创建合成层与 Godot 渲染的所有内容存在于同一 3D 空间中的幻觉，使对象看起来既从合成层的后面又从合成层的前面经过。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ This can be used to create the illusion that the composition layer exists in the
 - |void| **set_layer_viewport**\ (\ value\: :ref:`SubViewport<class_SubViewport>`\ )
 - :ref:`SubViewport<class_SubViewport>` **get_layer_viewport**\ (\ )
 
-The :ref:`SubViewport<class_SubViewport>` to render on the composition layer.
+合成层上渲染的 :ref:`SubViewport<class_SubViewport>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -380,9 +380,9 @@ When used with an Android Surface, this may allow DRM content to be presented, a
 - |void| **set_sort_order**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_sort_order**\ (\ )
 
-The sort order for this composition layer. Higher numbers will be shown in front of lower numbers.
+合成层的排序顺序。数字较大的层显示在数字较小的层之前。
 
-\ **Note:** This will have no effect if a fallback mesh is being used.
+\ **注意：**\ 使用回退网格时无效。
 
 .. rst-class:: classref-item-separator
 
@@ -399,9 +399,9 @@ The sort order for this composition layer. Higher numbers will be shown in front
 - |void| **set_alpha_swizzle**\ (\ value\: :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>`\ )
 - :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **get_alpha_swizzle**\ (\ )
 
-The swizzle value for the alpha channel of the swapchain state.
+交换链状态的 Alpha 通道分量重排值。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -418,9 +418,9 @@ The swizzle value for the alpha channel of the swapchain state.
 - |void| **set_blue_swizzle**\ (\ value\: :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>`\ )
 - :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **get_blue_swizzle**\ (\ )
 
-The swizzle value for the blue channel of the swapchain state.
+交换链状态的蓝色通道分量重排值。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -437,9 +437,9 @@ The swizzle value for the blue channel of the swapchain state.
 - |void| **set_border_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_border_color**\ (\ )
 
-The border color of the swapchain state that is used when the wrap mode clamps to the border.
+当环绕模式为限制到边界时，使用的交换链状态的边框颜色。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -456,9 +456,9 @@ The border color of the swapchain state that is used when the wrap mode clamps t
 - |void| **set_green_swizzle**\ (\ value\: :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>`\ )
 - :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **get_green_swizzle**\ (\ )
 
-The swizzle value for the green channel of the swapchain state.
+交换链状态的绿色通道分量重排值。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -475,9 +475,9 @@ The swizzle value for the green channel of the swapchain state.
 - |void| **set_horizontal_wrap**\ (\ value\: :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>`\ )
 - :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **get_horizontal_wrap**\ (\ )
 
-The horizontal wrap mode of the swapchain state.
+交换链状态的水平环绕模式。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -494,9 +494,9 @@ The horizontal wrap mode of the swapchain state.
 - |void| **set_mag_filter**\ (\ value\: :ref:`Filter<enum_OpenXRCompositionLayer_Filter>`\ )
 - :ref:`Filter<enum_OpenXRCompositionLayer_Filter>` **get_mag_filter**\ (\ )
 
-The magnification filter of the swapchain state.
+交换链状态的放大过滤器。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -513,9 +513,9 @@ The magnification filter of the swapchain state.
 - |void| **set_max_anisotropy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_anisotropy**\ (\ )
 
-The max anisotropy of the swapchain state.
+交换链状态的最大各向异性。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -532,9 +532,9 @@ The max anisotropy of the swapchain state.
 - |void| **set_min_filter**\ (\ value\: :ref:`Filter<enum_OpenXRCompositionLayer_Filter>`\ )
 - :ref:`Filter<enum_OpenXRCompositionLayer_Filter>` **get_min_filter**\ (\ )
 
-The minification filter of the swapchain state.
+交换链状态的缩小过滤器。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -551,9 +551,9 @@ The minification filter of the swapchain state.
 - |void| **set_mipmap_mode**\ (\ value\: :ref:`MipmapMode<enum_OpenXRCompositionLayer_MipmapMode>`\ )
 - :ref:`MipmapMode<enum_OpenXRCompositionLayer_MipmapMode>` **get_mipmap_mode**\ (\ )
 
-The mipmap mode of the swapchain state.
+交换链状态的 mipmap 模式。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -570,9 +570,9 @@ The mipmap mode of the swapchain state.
 - |void| **set_red_swizzle**\ (\ value\: :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>`\ )
 - :ref:`Swizzle<enum_OpenXRCompositionLayer_Swizzle>` **get_red_swizzle**\ (\ )
 
-The swizzle value for the red channel of the swapchain state.
+交换链状态的红色通道分量重排值。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -589,9 +589,9 @@ The swizzle value for the red channel of the swapchain state.
 - |void| **set_vertical_wrap**\ (\ value\: :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>`\ )
 - :ref:`Wrap<enum_OpenXRCompositionLayer_Wrap>` **get_vertical_wrap**\ (\ )
 
-The vertical wrap mode of the swapchain state.
+交换链状态的垂直环绕模式。
 
-\ **Note:** This property only has an effect on devices that support the OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan extensions.
+\ **注意：**\ 该属性仅对支持 OpenXR XR_FB_swapchain_update_state OpenGLES/Vulkan 扩展的设备有效。
 
 .. rst-class:: classref-item-separator
 
@@ -608,11 +608,11 @@ The vertical wrap mode of the swapchain state.
 - |void| **set_use_android_surface**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_android_surface**\ (\ )
 
-If enabled, an Android surface will be created (with the dimensions from :ref:`android_surface_size<class_OpenXRCompositionLayer_property_android_surface_size>`) which will provide the 2D content for the composition layer, rather than using :ref:`layer_viewport<class_OpenXRCompositionLayer_property_layer_viewport>`.
+如果启用，则会创建 Android 表面（大小为 :ref:`android_surface_size<class_OpenXRCompositionLayer_property_android_surface_size>`\ ），为合成层提供 2D 内容，不使用 :ref:`layer_viewport<class_OpenXRCompositionLayer_property_layer_viewport>`\ 。
 
-See :ref:`get_android_surface()<class_OpenXRCompositionLayer_method_get_android_surface>` for information about how to get the surface so that your application can draw to it.
+如何获取该表面以便应用程序在表面上进行绘制，见 :ref:`get_android_surface()<class_OpenXRCompositionLayer_method_get_android_surface>`\ 。
 
-\ **Note:** This will only work in Android builds.
+\ **注意：**\ 仅在 Android 构建上有效。
 
 .. rst-class:: classref-section-separator
 
@@ -620,8 +620,8 @@ See :ref:`get_android_surface()<class_OpenXRCompositionLayer_method_get_android_
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OpenXRCompositionLayer_method_get_android_surface:
 
@@ -629,9 +629,9 @@ Method Descriptions
 
 :ref:`JavaObject<class_JavaObject>` **get_android_surface**\ (\ ) :ref:`🔗<class_OpenXRCompositionLayer_method_get_android_surface>`
 
-Returns a :ref:`JavaObject<class_JavaObject>` representing an ``android.view.Surface`` if :ref:`use_android_surface<class_OpenXRCompositionLayer_property_use_android_surface>` is enabled and OpenXR has created the surface. Otherwise, this will return ``null``.
+如果启用了 :ref:`use_android_surface<class_OpenXRCompositionLayer_property_use_android_surface>` 并且 OpenXR 已创建 ``android.view.Surface``\ ，则返回代表该表面的 :ref:`JavaObject<class_JavaObject>`\ 。否则返回 ``null``\ 。
 
-\ **Note:** The surface can only be created during an active OpenXR session. So, if :ref:`use_android_surface<class_OpenXRCompositionLayer_property_use_android_surface>` is enabled outside of an OpenXR session, it won't be created until a new session fully starts.
+\ **注意：**\ 表面只能在活动的 OpenXR 会话中创建。因此，如果 :ref:`use_android_surface<class_OpenXRCompositionLayer_property_use_android_surface>` 是在 OpenXR 会话外启用的，就需要等到启动全新的会话才会创建。
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ Returns a :ref:`JavaObject<class_JavaObject>` representing an ``android.view.Sur
 
 :ref:`Vector2<class_Vector2>` **intersects_ray**\ (\ origin\: :ref:`Vector3<class_Vector3>`, direction\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_OpenXRCompositionLayer_method_intersects_ray>`
 
-Returns UV coordinates where the given ray intersects with the composition layer. ``origin`` and ``direction`` must be in global space.
+返回给定射线与合成层相交的 UV 坐标。\ ``origin`` 和 ``direction`` 必须位于全局空间中。
 
-Returns ``Vector2(-1.0, -1.0)`` if the ray doesn't intersect.
+如果射线不相交，则返回 ``Vector2(-1.0, -1.0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -657,16 +657,16 @@ Returns ``Vector2(-1.0, -1.0)`` if the ray doesn't intersect.
 
 :ref:`bool<class_bool>` **is_natively_supported**\ (\ ) |const| :ref:`🔗<class_OpenXRCompositionLayer_method_is_natively_supported>`
 
-Returns ``true`` if the OpenXR runtime natively supports this composition layer type.
+如果 OpenXR 运行时本身支持该合成层类型，则返回 ``true``\ 。
 
-\ **Note:** This will only return an accurate result after the OpenXR session has started.
+\ **注意：**\ 仅在 OpenXR 会话启动后才会返回准确结果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

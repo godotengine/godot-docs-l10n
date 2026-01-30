@@ -5,34 +5,34 @@
 Light3D
 =======
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`DirectionalLight3D<class_DirectionalLight3D>`, :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`
+**被繼承：** :ref:`DirectionalLight3D<class_DirectionalLight3D>`, :ref:`OmniLight3D<class_OmniLight3D>`, :ref:`SpotLight3D<class_SpotLight3D>`
 
-Provides a base class for different kinds of light nodes.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Light3D is the *abstract* base class for light nodes. As it can't be instantiated, it shouldn't be used directly. Other types of light nodes inherit from it. Light3D contains the common variables and parameters used for lighting.
+為不同型別的光節點提供基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`3D lights and shadows <../tutorials/3d/lights_and_shadows>`
+Light3D 是燈光節點的\ *抽象*\ 基底類別。由於無法產生實體，所以不應直接使用。其他類型的燈光節點繼承自它。Light3D 包含用於照明的常見變數和參數。
 
-- :doc:`Faking global illumination <../tutorials/3d/global_illumination/faking_global_illumination>`
+.. rst-class:: classref-introduction-group
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+教學
+----
+
+- :doc:`3D 燈光與陰影 <../tutorials/3d/lights_and_shadows>`
+
+- :doc:`偽造全域光照 <../tutorials/3d/global_illumination/faking_global_illumination>`
+
+- `第三人稱射擊（TPS）示範 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -95,8 +95,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -115,8 +115,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Light3D_Param:
 
@@ -130,7 +130,7 @@ enum **Param**: :ref:`🔗<enum_Light3D_Param>`
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_ENERGY** = ``0``
 
-Constant for accessing :ref:`light_energy<class_Light3D_property_light_energy>`.
+用於存取 :ref:`light_energy<class_Light3D_property_light_energy>` 的常數。
 
 .. _class_Light3D_constant_PARAM_INDIRECT_ENERGY:
 
@@ -138,7 +138,7 @@ Constant for accessing :ref:`light_energy<class_Light3D_property_light_energy>`.
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_INDIRECT_ENERGY** = ``1``
 
-Constant for accessing :ref:`light_indirect_energy<class_Light3D_property_light_indirect_energy>`.
+用於存取 :ref:`light_indirect_energy<class_Light3D_property_light_indirect_energy>` 的常數。
 
 .. _class_Light3D_constant_PARAM_VOLUMETRIC_FOG_ENERGY:
 
@@ -146,7 +146,7 @@ Constant for accessing :ref:`light_indirect_energy<class_Light3D_property_light_
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_VOLUMETRIC_FOG_ENERGY** = ``2``
 
-Constant for accessing :ref:`light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>`.
+用於存取 :ref:`light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SPECULAR:
 
@@ -154,7 +154,7 @@ Constant for accessing :ref:`light_volumetric_fog_energy<class_Light3D_property_
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SPECULAR** = ``3``
 
-Constant for accessing :ref:`light_specular<class_Light3D_property_light_specular>`.
+用於存取 :ref:`light_specular<class_Light3D_property_light_specular>` 的常數。
 
 .. _class_Light3D_constant_PARAM_RANGE:
 
@@ -162,7 +162,7 @@ Constant for accessing :ref:`light_specular<class_Light3D_property_light_specula
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_RANGE** = ``4``
 
-Constant for accessing :ref:`OmniLight3D.omni_range<class_OmniLight3D_property_omni_range>` or :ref:`SpotLight3D.spot_range<class_SpotLight3D_property_spot_range>`.
+用於存取 :ref:`OmniLight3D.omni_range<class_OmniLight3D_property_omni_range>` 或 :ref:`SpotLight3D.spot_range<class_SpotLight3D_property_spot_range>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SIZE:
 
@@ -170,7 +170,7 @@ Constant for accessing :ref:`OmniLight3D.omni_range<class_OmniLight3D_property_o
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SIZE** = ``5``
 
-Constant for accessing :ref:`light_size<class_Light3D_property_light_size>`.
+用於存取 :ref:`light_size<class_Light3D_property_light_size>` 的常數。
 
 .. _class_Light3D_constant_PARAM_ATTENUATION:
 
@@ -178,7 +178,7 @@ Constant for accessing :ref:`light_size<class_Light3D_property_light_size>`.
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_ATTENUATION** = ``6``
 
-Constant for accessing :ref:`OmniLight3D.omni_attenuation<class_OmniLight3D_property_omni_attenuation>` or :ref:`SpotLight3D.spot_attenuation<class_SpotLight3D_property_spot_attenuation>`.
+用於存取 :ref:`OmniLight3D.omni_attenuation<class_OmniLight3D_property_omni_attenuation>` 或 :ref:`SpotLight3D.spot_attenuation<class_SpotLight3D_property_spot_attenuation>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SPOT_ANGLE:
 
@@ -186,7 +186,7 @@ Constant for accessing :ref:`OmniLight3D.omni_attenuation<class_OmniLight3D_prop
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SPOT_ANGLE** = ``7``
 
-Constant for accessing :ref:`SpotLight3D.spot_angle<class_SpotLight3D_property_spot_angle>`.
+用於存取 :ref:`SpotLight3D.spot_angle<class_SpotLight3D_property_spot_angle>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SPOT_ATTENUATION:
 
@@ -194,7 +194,7 @@ Constant for accessing :ref:`SpotLight3D.spot_angle<class_SpotLight3D_property_s
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SPOT_ATTENUATION** = ``8``
 
-Constant for accessing :ref:`SpotLight3D.spot_angle_attenuation<class_SpotLight3D_property_spot_angle_attenuation>`.
+用於存取 :ref:`SpotLight3D.spot_angle_attenuation<class_SpotLight3D_property_spot_angle_attenuation>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_MAX_DISTANCE:
 
@@ -202,7 +202,7 @@ Constant for accessing :ref:`SpotLight3D.spot_angle_attenuation<class_SpotLight3
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_MAX_DISTANCE** = ``9``
 
-Constant for accessing :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>`.
+用於存取 :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_SPLIT_1_OFFSET:
 
@@ -210,7 +210,7 @@ Constant for accessing :ref:`DirectionalLight3D.directional_shadow_max_distance<
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_SPLIT_1_OFFSET** = ``10``
 
-Constant for accessing :ref:`DirectionalLight3D.directional_shadow_split_1<class_DirectionalLight3D_property_directional_shadow_split_1>`.
+用於存取 :ref:`DirectionalLight3D.directional_shadow_split_1<class_DirectionalLight3D_property_directional_shadow_split_1>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_SPLIT_2_OFFSET:
 
@@ -218,7 +218,7 @@ Constant for accessing :ref:`DirectionalLight3D.directional_shadow_split_1<class
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_SPLIT_2_OFFSET** = ``11``
 
-Constant for accessing :ref:`DirectionalLight3D.directional_shadow_split_2<class_DirectionalLight3D_property_directional_shadow_split_2>`.
+用於存取 :ref:`DirectionalLight3D.directional_shadow_split_2<class_DirectionalLight3D_property_directional_shadow_split_2>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_SPLIT_3_OFFSET:
 
@@ -226,7 +226,7 @@ Constant for accessing :ref:`DirectionalLight3D.directional_shadow_split_2<class
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_SPLIT_3_OFFSET** = ``12``
 
-Constant for accessing :ref:`DirectionalLight3D.directional_shadow_split_3<class_DirectionalLight3D_property_directional_shadow_split_3>`.
+用於存取 :ref:`DirectionalLight3D.directional_shadow_split_3<class_DirectionalLight3D_property_directional_shadow_split_3>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_FADE_START:
 
@@ -234,7 +234,7 @@ Constant for accessing :ref:`DirectionalLight3D.directional_shadow_split_3<class
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_FADE_START** = ``13``
 
-Constant for accessing :ref:`DirectionalLight3D.directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>`.
+用於存取 :ref:`DirectionalLight3D.directional_shadow_fade_start<class_DirectionalLight3D_property_directional_shadow_fade_start>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_NORMAL_BIAS:
 
@@ -242,7 +242,7 @@ Constant for accessing :ref:`DirectionalLight3D.directional_shadow_fade_start<cl
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_NORMAL_BIAS** = ``14``
 
-Constant for accessing :ref:`shadow_normal_bias<class_Light3D_property_shadow_normal_bias>`.
+用於存取 :ref:`shadow_normal_bias<class_Light3D_property_shadow_normal_bias>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_BIAS:
 
@@ -250,7 +250,7 @@ Constant for accessing :ref:`shadow_normal_bias<class_Light3D_property_shadow_no
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_BIAS** = ``15``
 
-Constant for accessing :ref:`shadow_bias<class_Light3D_property_shadow_bias>`.
+用於存取 :ref:`shadow_bias<class_Light3D_property_shadow_bias>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_PANCAKE_SIZE:
 
@@ -258,7 +258,7 @@ Constant for accessing :ref:`shadow_bias<class_Light3D_property_shadow_bias>`.
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_PANCAKE_SIZE** = ``16``
 
-Constant for accessing :ref:`DirectionalLight3D.directional_shadow_pancake_size<class_DirectionalLight3D_property_directional_shadow_pancake_size>`.
+用於存取 :ref:`DirectionalLight3D.directional_shadow_pancake_size<class_DirectionalLight3D_property_directional_shadow_pancake_size>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_OPACITY:
 
@@ -266,7 +266,7 @@ Constant for accessing :ref:`DirectionalLight3D.directional_shadow_pancake_size<
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_OPACITY** = ``17``
 
-Constant for accessing :ref:`shadow_opacity<class_Light3D_property_shadow_opacity>`.
+用於存取 :ref:`shadow_opacity<class_Light3D_property_shadow_opacity>` 的常數。
 
 .. _class_Light3D_constant_PARAM_SHADOW_BLUR:
 
@@ -274,7 +274,7 @@ Constant for accessing :ref:`shadow_opacity<class_Light3D_property_shadow_opacit
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_SHADOW_BLUR** = ``18``
 
-Constant for accessing :ref:`shadow_blur<class_Light3D_property_shadow_blur>`.
+用於存取 :ref:`shadow_blur<class_Light3D_property_shadow_blur>` 的常數。
 
 .. _class_Light3D_constant_PARAM_TRANSMITTANCE_BIAS:
 
@@ -282,7 +282,7 @@ Constant for accessing :ref:`shadow_blur<class_Light3D_property_shadow_blur>`.
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_TRANSMITTANCE_BIAS** = ``19``
 
-Constant for accessing :ref:`shadow_transmittance_bias<class_Light3D_property_shadow_transmittance_bias>`.
+用於存取 :ref:`shadow_transmittance_bias<class_Light3D_property_shadow_transmittance_bias>` 的常數。
 
 .. _class_Light3D_constant_PARAM_INTENSITY:
 
@@ -290,7 +290,7 @@ Constant for accessing :ref:`shadow_transmittance_bias<class_Light3D_property_sh
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_INTENSITY** = ``20``
 
-Constant for accessing :ref:`light_intensity_lumens<class_Light3D_property_light_intensity_lumens>` and :ref:`light_intensity_lux<class_Light3D_property_light_intensity_lux>`. Only used when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is ``true``.
+用於存取 :ref:`light_intensity_lumens<class_Light3D_property_light_intensity_lumens>` 和 :ref:`light_intensity_lux<class_Light3D_property_light_intensity_lux>` 的常量。只在 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 為 ``true`` 時使用。
 
 .. _class_Light3D_constant_PARAM_MAX:
 
@@ -298,7 +298,7 @@ Constant for accessing :ref:`light_intensity_lumens<class_Light3D_property_light
 
 :ref:`Param<enum_Light3D_Param>` **PARAM_MAX** = ``21``
 
-Represents the size of the :ref:`Param<enum_Light3D_Param>` enum.
+代表 :ref:`Param<enum_Light3D_Param>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Light is taken into account in static baking (:ref:`VoxelGI<class_VoxelGI>`, :re
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DYNAMIC** = ``2``
 
-Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`) only). The light can be moved around or modified with global illumination updating in real-time. The light's global illumination appearance will be slightly different compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. This has a greater performance cost compared to :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. When using SDFGI, the update speed of dynamic lights is affected by :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+在動態烘焙（僅 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI（\ :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ））時，考慮了燈光。燈光可以四處移動或修改，而且全域照明會即時更新。與 :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 相比，燈光的全域照明外觀會略有不同。與 :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 相比，這具有更大的性能成本。使用 SDFGI 時，動態燈光的更新速度受 :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>` 的影響。
 
 .. rst-class:: classref-section-separator
 
@@ -344,8 +344,8 @@ Light is taken into account in dynamic baking (:ref:`VoxelGI<class_VoxelGI>` and
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Light3D_property_distance_fade_begin:
 
@@ -358,9 +358,9 @@ Property Descriptions
 - |void| **set_distance_fade_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_begin**\ (\ )
 
-The distance from the camera at which the light begins to fade away (in 3D units).
+光線開始逐漸消失時與相機的距離（單位為 3D 單位）。
 
-\ **Note:** Only effective for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>`.
+\ **注意：**\ 僅對 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 有效。
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ The distance from the camera at which the light begins to fade away (in 3D units
 - |void| **set_enable_distance_fade**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_distance_fade_enabled**\ (\ )
 
-If ``true``, the light will smoothly fade away when far from the active :ref:`Camera3D<class_Camera3D>` starting at :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>`. This acts as a form of level of detail (LOD). The light will fade out over :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>`, after which it will be culled and not sent to the shader at all. Use this to reduce the number of active lights in a scene and thus improve performance.
+如果為 ``true``\ ，從 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` 開始，當遠離活動的 :ref:`Camera3D<class_Camera3D>` 時，燈光會平滑地消失。這充當了一種多細節層次（LOD）形式。燈光將在 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` 之外淡出，之後它將被剔除並且根本不會被發送到著色器。使用它可以減少場景中的活動燈光數量，從而提高性能。
 
-\ **Note:** Only effective for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>`.
+\ **注意：**\ 僅對 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 有效。
 
 .. rst-class:: classref-item-separator
 
@@ -396,9 +396,9 @@ If ``true``, the light will smoothly fade away when far from the active :ref:`Ca
 - |void| **set_distance_fade_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_length**\ (\ )
 
-Distance over which the light and its shadow fades. The light's energy and shadow's opacity is progressively reduced over this distance and is completely invisible at the end.
+燈光及其陰影消失的距離。燈光的能量和陰影的不透明度，在此距離內逐漸降低，最終完全不可見。
 
-\ **Note:** Only effective for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>`.
+\ **注意：**\ 僅對 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 有效。
 
 .. rst-class:: classref-item-separator
 
@@ -415,9 +415,9 @@ Distance over which the light and its shadow fades. The light's energy and shado
 - |void| **set_distance_fade_shadow**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_shadow**\ (\ )
 
-The distance from the camera at which the light's shadow cuts off (in 3D units). Set this to a value lower than :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` to further improve performance, as shadow rendering is often more expensive than light rendering itself.
+燈光陰影截止處與相機的距離（單位為 3D 單位）。將該屬性設定為低於 :ref:`distance_fade_begin<class_Light3D_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Light3D_property_distance_fade_length>` 的值，以進一步提高性能，因為陰影算繪通常比光線算繪本身更昂貴。
 
-\ **Note:** Only effective for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>`, and only when :ref:`shadow_enabled<class_Light3D_property_shadow_enabled>` is ``true``.
+\ **注意：**\ 僅對 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>` 有效，且僅在 :ref:`shadow_enabled<class_Light3D_property_shadow_enabled>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -451,11 +451,11 @@ If ``true``, the light only appears in the editor and will not be visible at run
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The light's angular size in degrees. Increasing this will make shadows softer at greater distances (also called percentage-closer soft shadows, or PCSS). Only available for :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s. For reference, the Sun from the Earth is approximately ``0.5``. Increasing this value above ``0.0`` for lights with shadows enabled will have a noticeable performance cost due to PCSS.
+燈光的角度大小，單位是度。增加此值將使陰影在更遠的距離處更柔和（也稱為百分比更近的柔和陰影，或 PCSS）。僅適用於 :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ 。作為參考，太陽距離地球大約是 ``0.5``\ 。對於啟用了陰影的燈光，將此值增加到 ``0.0`` 以上，將由於 PCSS 而產生明顯的性能成本。
 
-\ **Note:** :ref:`light_angular_distance<class_Light3D_property_light_angular_distance>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **注意：**\ :ref:`light_angular_distance<class_Light3D_property_light_angular_distance>` 不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （燈光的縮放或其父級的縮放）的影響。
 
-\ **Note:** PCSS for directional lights is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **注意：**\ 定向光的 PCSS 僅支援 Forward+ 算繪方式，不支援 Mobile 或 Compatibility。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ The light will affect objects in the selected layers.
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The light's strength multiplier (this is not a physical unit). For :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>`, changing this value will only change the light color's intensity, not the light's radius.
+燈光的強度乘數（不是物理單位）。對於 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>`\ ，更改此值只會更改燈光顏色的強度，而不會更改燈光的半徑。
 
 .. rst-class:: classref-item-separator
 
@@ -544,9 +544,9 @@ The light's strength multiplier (this is not a physical unit). For :ref:`OmniLig
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Secondary multiplier used with indirect light (light bounces). Used with :ref:`VoxelGI<class_VoxelGI>` and SDFGI (see :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
+與間接光（光反射）一起使用的輔助乘數。與 :ref:`VoxelGI<class_VoxelGI>` 和 SDFGI 一起使用（參見 :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）。
 
-\ **Note:** This property is ignored if :ref:`light_energy<class_Light3D_property_light_energy>` is equal to ``0.0``, as the light won't be present at all in the GI shader.
+\ **注意：**\ 如果 :ref:`light_energy<class_Light3D_property_light_energy>` 等於 ``0.0``\ ，則該屬性將被忽略，因為在 GI 著色器中，該燈光根本不存在。
 
 .. rst-class:: classref-item-separator
 
@@ -563,11 +563,11 @@ Secondary multiplier used with indirect light (light bounces). Used with :ref:`V
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Used by positional lights (:ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>`) when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is ``true``. Sets the intensity of the light source measured in Lumens. Lumens are a measure of luminous flux, which is the total amount of visible light emitted by a light source per unit of time.
+當 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 為 ``true`` 時，由定位燈（\ :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>`\ ）使用。設定光源的強度，測量單位為流明。流明是對光通量的一種度量，它是光源在單位時間內發出的可見光總量。
 
-For :ref:`SpotLight3D<class_SpotLight3D>`\ s, we assume that the area outside the visible cone is surrounded by a perfect light absorbing material. Accordingly, the apparent brightness of the cone area does not change as the cone increases and decreases in size.
+對於 :ref:`SpotLight3D<class_SpotLight3D>`\ ，我們假設可見錐體之外的區域將被完美的光吸收材質包圍。因此，錐體區域的表觀亮度不會隨著錐體大小的增大和減小而改變。
 
-A typical household lightbulb can range from around 600 lumens to 1,200 lumens, a candle is about 13 lumens, while a streetlight can be approximately 60,000 lumens.
+一隻典型的家用燈泡的流明範圍從 600 流明到 1,200 流明不等，一支蠟燭的流明約為 13 流明，而一盞路燈的流明約為 60,000 流明。
 
 .. rst-class:: classref-item-separator
 
@@ -584,9 +584,9 @@ A typical household lightbulb can range from around 600 lumens to 1,200 lumens, 
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Used by :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is ``true``. Sets the intensity of the light source measured in Lux. Lux is a measure of luminous flux per unit area, it is equal to one lumen per square meter. Lux is the measure of how much light hits a surface at a given time.
+當 :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` 為 ``true`` 時，由 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 使用。設定光源的強度，測量單位為勒克斯（Lux）。勒克斯是對單位面積內光通量的度量，等於每平方米一流明。勒克斯是衡量在給定時間有多少光照射到一個表面。
 
-On a clear sunny day a surface in direct sunlight may be approximately 100,000 lux, a typical room in a home may be approximately 50 lux, while the moonlit ground may be approximately 0.1 lux.
+在晴朗的晴天，陽光直射下的表面可能約為 100,000 勒克斯，家中的一個典型房間可能約為 50 勒克斯，而月光下的地面可能約為 0.1 勒克斯。
 
 .. rst-class:: classref-item-separator
 
@@ -603,7 +603,7 @@ On a clear sunny day a surface in direct sunlight may be approximately 100,000 l
 - |void| **set_negative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_negative**\ (\ )
 
-If ``true``, the light's effect is reversed, darkening areas and casting bright shadows.
+如果為 ``true``\ ，則光線的效果會逆轉，使區域變暗並投射明亮的陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -620,11 +620,11 @@ If ``true``, the light's effect is reversed, darkening areas and casting bright 
 - |void| **set_projector**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_projector**\ (\ )
 
-:ref:`Texture2D<class_Texture2D>` projected by light. :ref:`shadow_enabled<class_Light3D_property_shadow_enabled>` must be on for the projector to work. Light projectors make the light appear as if it is shining through a colored but transparent object, almost like light shining through stained-glass.
+:ref:`Texture2D<class_Texture2D>` 由燈光投影。\ :ref:`shadow_enabled<class_Light3D_property_shadow_enabled>` 必須打開，投影儀才能工作。燈光投影儀使光線看起來像是透過彩色但透明的物體照射，幾乎就像光線透過彩色玻璃照射一樣。
 
-\ **Note:** Unlike :ref:`BaseMaterial3D<class_BaseMaterial3D>` whose filter mode can be adjusted on a per-material basis, the filter mode for light projector textures is set globally with :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`.
+\ **注意：**\ 不像 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 的篩檢程式模式可以在每個材質的基礎上進行調整，燈光投影儀紋理的篩檢程式模式是通過 :ref:`ProjectSettings.rendering/textures/light_projectors/filter<class_ProjectSettings_property_rendering/textures/light_projectors/filter>` 全域設定的。
 
-\ **Note:** Light projector textures are only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 燈光投影儀紋理僅支援 Forward+ 和 Mobile 算繪方法，不支援 Compatibility。
 
 .. rst-class:: classref-item-separator
 
@@ -641,11 +641,11 @@ If ``true``, the light's effect is reversed, darkening areas and casting bright 
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The size of the light in Godot units. Only available for :ref:`OmniLight3D<class_OmniLight3D>`\ s and :ref:`SpotLight3D<class_SpotLight3D>`\ s. Increasing this value will make the light fade out slower and shadows appear blurrier (also called percentage-closer soft shadows, or PCSS). This can be used to simulate area lights to an extent. Increasing this value above ``0.0`` for lights with shadows enabled will have a noticeable performance cost due to PCSS.
+燈光的大小，使用 Godot 的單位。僅適用於 :ref:`OmniLight3D<class_OmniLight3D>` 和 :ref:`SpotLight3D<class_SpotLight3D>`\ 。增加此值將使光線淡出速度變慢，並且陰影看起來更模糊（也稱為百分比接近軟陰影或 PCSS）。這可用於在一定程度上類比區域光。對於啟用了陰影的燈光，將此值增加到 ``0.0`` 以上，將由於 PCSS 而產生明顯的性能成本。
 
-\ **Note:** :ref:`light_size<class_Light3D_property_light_size>` is not affected by :ref:`Node3D.scale<class_Node3D_property_scale>` (the light's scale or its parent's scale).
+\ **注意：**\ :ref:`light_size<class_Light3D_property_light_size>` 不受 :ref:`Node3D.scale<class_Node3D_property_scale>`\ （燈光的縮放或其父級的縮放）的影響。
 
-\ **Note:** PCSS for positional lights is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **注意：**\ 定位光的 PCSS 僅支援 Forward+ 和 Mobile 算繪方法，不支援 Compatibility。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ The size of the light in Godot units. Only available for :ref:`OmniLight3D<class
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The intensity of the specular blob in objects affected by the light. At ``0``, the light becomes a pure diffuse light. When not baking emission, this can be used to avoid unrealistic reflections when placing lights above an emissive surface.
+受燈光影響的對象中鏡面反射斑點的強度。在 ``0`` 處，燈光變成純漫反射燈光。當不烘焙發射時，這可用於在發光表面上方放置燈光時避免不真實的反射。
 
 .. rst-class:: classref-item-separator
 
@@ -679,9 +679,9 @@ The intensity of the specular blob in objects affected by the light. At ``0``, t
 - |void| **set_temperature**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_temperature**\ (\ )
 
-Sets the color temperature of the light source, measured in Kelvin. This is used to calculate a correlated color temperature which tints the :ref:`light_color<class_Light3D_property_light_color>`.
+設定光源的色溫，測量單位為開爾文。這用於計算對 :ref:`light_color<class_Light3D_property_light_color>` 著色的相關色溫。
 
-The sun on a cloudy day is approximately 6500 Kelvin, on a clear day it is between 5500 to 6000 Kelvin, and on a clear day at sunrise or sunset it ranges to around 1850 Kelvin.
+陰天的太陽溫度約為 6500 開爾文，晴天的太陽溫度在 5500 到 6000 開爾文之間，晴天日出或日落時的太陽溫度範圍為 1850 開爾文左右。
 
 .. rst-class:: classref-item-separator
 
@@ -698,9 +698,9 @@ The sun on a cloudy day is approximately 6500 Kelvin, on a clear day it is betwe
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Secondary multiplier multiplied with :ref:`light_energy<class_Light3D_property_light_energy>` then used with the :ref:`Environment<class_Environment>`'s volumetric fog (if enabled). If set to ``0.0``, computing volumetric fog will be skipped for this light, which can improve performance for large amounts of lights when volumetric fog is enabled.
+與 :ref:`light_energy<class_Light3D_property_light_energy>` 相乘的次級乘數，然後與 :ref:`Environment<class_Environment>` 的體積霧（如果啟用）一起使用。如果設定為 ``0.0``\ ，將用於該燈的體積霧計算將被跳過，這可以在啟用體積霧時提高大量燈光的性能。
 
-\ **Note:** To prevent short-lived dynamic light effects from poorly interacting with volumetric fog, lights used in those effects should have :ref:`light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` set to ``0.0`` unless :ref:`Environment.volumetric_fog_temporal_reprojection_enabled<class_Environment_property_volumetric_fog_temporal_reprojection_enabled>` is disabled (or unless the reprojection amount is significantly lowered).
+\ **注意：**\ 除非 :ref:`Environment.volumetric_fog_temporal_reprojection_enabled<class_Environment_property_volumetric_fog_temporal_reprojection_enabled>` 被禁用（或者除非重投影的量顯著降低），否則為防止短暫的動態光效與體積霧的互動性差，這些效果中使用的光應將 :ref:`light_volumetric_fog_energy<class_Light3D_property_light_volumetric_fog_energy>` 設定為 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -717,7 +717,7 @@ Secondary multiplier multiplied with :ref:`light_energy<class_Light3D_property_l
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Used to adjust shadow appearance. Too small a value results in self-shadowing ("shadow acne"), while too large a value causes shadows to separate from casters ("peter-panning"). Adjust as needed.
+用於調整陰影表現。值太小會導致自陰影（“陰影失真”），而值太大會導致陰影與之分離（“陰影懸浮”）。根據需要進行調整。
 
 .. rst-class:: classref-item-separator
 
@@ -734,7 +734,7 @@ Used to adjust shadow appearance. Too small a value results in self-shadowing ("
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Blurs the edges of the shadow. Can be used to hide pixel artifacts in low-resolution shadow maps. A high value can impact performance, make shadows appear grainy and can cause other unwanted artifacts. Try to keep as near default as possible.
+模糊陰影的邊緣。可用於隱藏低解析度陰影貼圖中的圖元偽影。高值會影響性能，使陰影看起來有顆粒感，並可能導致其他不需要的偽影。儘量保持接近預設值。
 
 .. rst-class:: classref-item-separator
 
@@ -768,7 +768,7 @@ The light will only cast shadows using objects in the selected layers.
 - |void| **set_shadow**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_shadow**\ (\ )
 
-If ``true``, the light will cast real-time shadows. This has a significant performance cost. Only enable shadow rendering when it makes a noticeable difference in the scene's appearance, and consider using :ref:`distance_fade_enabled<class_Light3D_property_distance_fade_enabled>` to hide the light when far away from the :ref:`Camera3D<class_Camera3D>`.
+如果為 ``true``\ ，則燈光將投射即時陰影。這具有顯著的性能成本。僅當陰影算繪對場景外觀產生明顯影響時，才啟用陰影算繪，並考慮在遠離 :ref:`Camera3D<class_Camera3D>` 時使用 :ref:`distance_fade_enabled<class_Light3D_property_distance_fade_enabled>` 隱藏該燈光。
 
 .. rst-class:: classref-item-separator
 
@@ -785,7 +785,7 @@ If ``true``, the light will cast real-time shadows. This has a significant perfo
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-Offsets the lookup into the shadow map by the object's normal. This can be used to reduce self-shadowing artifacts without using :ref:`shadow_bias<class_Light3D_property_shadow_bias>`. In practice, this value should be tweaked along with :ref:`shadow_bias<class_Light3D_property_shadow_bias>` to reduce artifacts as much as possible.
+通過物件的法線，將搜尋偏移到陰影貼圖中。這可用於在不使用 :ref:`shadow_bias<class_Light3D_property_shadow_bias>` 的情況下，減少自身陰影偽影。在實踐中，這個值應該與 :ref:`shadow_bias<class_Light3D_property_shadow_bias>` 一起調整，以盡可能減少偽影。
 
 .. rst-class:: classref-item-separator
 
@@ -802,7 +802,7 @@ Offsets the lookup into the shadow map by the object's normal. This can be used 
 - |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const|
 
-The opacity to use when rendering the light's shadow map. Values lower than ``1.0`` make the light appear through shadows. This can be used to fake global illumination at a low performance cost.
+算繪燈光的陰影貼圖時使用的不透明度。低於 ``1.0`` 的值會使光線透過陰影出現。這可以用於以較低的性能成本，偽造全域照明。
 
 .. rst-class:: classref-item-separator
 
@@ -819,7 +819,7 @@ The opacity to use when rendering the light's shadow map. Values lower than ``1.
 - |void| **set_shadow_reverse_cull_face**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shadow_reverse_cull_face**\ (\ )
 
-If ``true``, reverses the backface culling of the mesh. This can be useful when you have a flat mesh that has a light behind it. If you need to cast a shadow on both sides of the mesh, set the mesh to use double-sided shadows with :ref:`GeometryInstance3D.SHADOW_CASTING_SETTING_DOUBLE_SIDED<class_GeometryInstance3D_constant_SHADOW_CASTING_SETTING_DOUBLE_SIDED>`.
+如果為 ``true``\ ，則反轉網格的背面剔除。可用於一個背後有燈光的平面網格。如果需要在該網格的兩側投射陰影，請使用 :ref:`GeometryInstance3D.SHADOW_CASTING_SETTING_DOUBLE_SIDED<class_GeometryInstance3D_constant_SHADOW_CASTING_SETTING_DOUBLE_SIDED>`\ ，將該網格設定為使用雙面陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -846,8 +846,8 @@ If ``true``, reverses the backface culling of the mesh. This can be useful when 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Light3D_method_get_correlated_color:
 
@@ -855,7 +855,7 @@ Method Descriptions
 
 :ref:`Color<class_Color>` **get_correlated_color**\ (\ ) |const| :ref:`🔗<class_Light3D_method_get_correlated_color>`
 
-Returns the :ref:`Color<class_Color>` of an idealized blackbody at the given :ref:`light_temperature<class_Light3D_property_light_temperature>`. This value is calculated internally based on the :ref:`light_temperature<class_Light3D_property_light_temperature>`. This :ref:`Color<class_Color>` is multiplied by :ref:`light_color<class_Light3D_property_light_color>` before being sent to the :ref:`RenderingServer<class_RenderingServer>`.
+返回給定 :ref:`light_temperature<class_Light3D_property_light_temperature>` 下的理想化黑體的 :ref:`Color<class_Color>`\ 。該值是根據 :ref:`light_temperature<class_Light3D_property_light_temperature>` 在內部計算得出的。該 :ref:`Color<class_Color>` 在被發送到 :ref:`RenderingServer<class_RenderingServer>` 之前，將乘以 :ref:`light_color<class_Light3D_property_light_color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -867,7 +867,7 @@ Returns the :ref:`Color<class_Color>` of an idealized blackbody at the given :re
 
 :ref:`float<class_float>` **get_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`\ ) |const| :ref:`🔗<class_Light3D_method_get_param>`
 
-Returns the value of the specified :ref:`Param<enum_Light3D_Param>` parameter.
+返回指定的 :ref:`Param<enum_Light3D_Param>` 參數的值。
 
 .. rst-class:: classref-item-separator
 
@@ -879,14 +879,14 @@ Returns the value of the specified :ref:`Param<enum_Light3D_Param>` parameter.
 
 |void| **set_param**\ (\ param\: :ref:`Param<enum_Light3D_Param>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Light3D_method_set_param>`
 
-Sets the value of the specified :ref:`Param<enum_Light3D_Param>` parameter.
+設定指定的 :ref:`Param<enum_Light3D_Param>` 參數的值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -9,21 +9,21 @@ A 4D vector using floating-point coordinates.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-A 4-element structure that can be used to represent 4D coordinates or any other quadruplet of numeric values.
+包含四個元素的結構體，可用於代表 4D 座標或任何數值的四元組。
 
-It uses floating-point coordinates. By default, these floating-point values use 32-bit precision, unlike :ref:`float<class_float>` which is always 64-bit. If double precision is needed, compile the engine with the option ``precision=double``.
+使用浮點數座標。預設情況下，這些浮點值為 32 位精度，與始終為 64 位的 :ref:`float<class_float>` 並不相同。如果需要雙精度，請在編譯引擎時使用 ``precision=double`` 選項。
 
-See :ref:`Vector4i<class_Vector4i>` for its integer counterpart.
+對應的整數版本見 :ref:`Vector4i<class_Vector4i>`\ 。
 
-\ **Note:** In a boolean context, a Vector4 will evaluate to ``false`` if it's equal to ``Vector4(0, 0, 0, 0)``. Otherwise, a Vector4 will always evaluate to ``true``.
+\ **注意：**\ 在布林語境中，如果 Vector4 等於 ``Vector4(0, 0, 0, 0)`` 則求值結果為 ``false``\ 。否則 Vector4 的求值結果始終為 ``true``\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+建構子
+------
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -132,8 +132,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+運算子
+------
 
 .. table::
    :widths: auto
@@ -182,8 +182,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Vector4_Axis:
 
@@ -197,7 +197,7 @@ enum **Axis**: :ref:`🔗<enum_Vector4_Axis>`
 
 :ref:`Axis<enum_Vector4_Axis>` **AXIS_X** = ``0``
 
-Enumerated value for the X axis. Returned by :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector4_method_min_axis_index>`.
+X 軸的列舉值。由 :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector4_method_min_axis_index>` 返回。
 
 .. _class_Vector4_constant_AXIS_Y:
 
@@ -205,7 +205,7 @@ Enumerated value for the X axis. Returned by :ref:`max_axis_index()<class_Vector
 
 :ref:`Axis<enum_Vector4_Axis>` **AXIS_Y** = ``1``
 
-Enumerated value for the Y axis. Returned by :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector4_method_min_axis_index>`.
+Y 軸的列舉值。由 :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector4_method_min_axis_index>` 返回。
 
 .. _class_Vector4_constant_AXIS_Z:
 
@@ -213,7 +213,7 @@ Enumerated value for the Y axis. Returned by :ref:`max_axis_index()<class_Vector
 
 :ref:`Axis<enum_Vector4_Axis>` **AXIS_Z** = ``2``
 
-Enumerated value for the Z axis. Returned by :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector4_method_min_axis_index>`.
+Z 軸的列舉值。由 :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector4_method_min_axis_index>` 返回。
 
 .. _class_Vector4_constant_AXIS_W:
 
@@ -221,7 +221,7 @@ Enumerated value for the Z axis. Returned by :ref:`max_axis_index()<class_Vector
 
 :ref:`Axis<enum_Vector4_Axis>` **AXIS_W** = ``3``
 
-Enumerated value for the W axis. Returned by :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` and :ref:`min_axis_index()<class_Vector4_method_min_axis_index>`.
+W 軸的列舉值。由 :ref:`max_axis_index()<class_Vector4_method_max_axis_index>` 和 :ref:`min_axis_index()<class_Vector4_method_min_axis_index>` 返回。
 
 .. rst-class:: classref-section-separator
 
@@ -229,8 +229,8 @@ Enumerated value for the W axis. Returned by :ref:`max_axis_index()<class_Vector
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_Vector4_constant_ZERO:
 
@@ -238,7 +238,7 @@ Constants
 
 **ZERO** = ``Vector4(0, 0, 0, 0)`` :ref:`🔗<class_Vector4_constant_ZERO>`
 
-Zero vector, a vector with all components set to ``0``.
+零向量，所有分量都設定為 ``0`` 的向量。
 
 .. _class_Vector4_constant_ONE:
 
@@ -246,7 +246,7 @@ Zero vector, a vector with all components set to ``0``.
 
 **ONE** = ``Vector4(1, 1, 1, 1)`` :ref:`🔗<class_Vector4_constant_ONE>`
 
-One vector, a vector with all components set to ``1``.
+一向量，所有分量都設定為 ``1`` 的向量。
 
 .. _class_Vector4_constant_INF:
 
@@ -254,7 +254,7 @@ One vector, a vector with all components set to ``1``.
 
 **INF** = ``Vector4(inf, inf, inf, inf)`` :ref:`🔗<class_Vector4_constant_INF>`
 
-Infinity vector, a vector with all components set to :ref:`@GDScript.INF<class_@GDScript_constant_INF>`.
+無窮大向量，所有分量都設定為 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 的向量。
 
 .. rst-class:: classref-section-separator
 
@@ -262,8 +262,8 @@ Infinity vector, a vector with all components set to :ref:`@GDScript.INF<class_@
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Vector4_property_w:
 
@@ -271,7 +271,7 @@ Property Descriptions
 
 :ref:`float<class_float>` **w** = ``0.0`` :ref:`🔗<class_Vector4_property_w>`
 
-The vector's W component. Also accessible by using the index position ``[3]``.
+該向量的 W 分量。也可以通過使用索引位置 ``[3]`` 存取。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ The vector's W component. Also accessible by using the index position ``[3]``.
 
 :ref:`float<class_float>` **x** = ``0.0`` :ref:`🔗<class_Vector4_property_x>`
 
-The vector's X component. Also accessible by using the index position ``[0]``.
+向量的 X 分量。也可以通過使用索引位置 ``[0]`` 存取。
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ The vector's X component. Also accessible by using the index position ``[0]``.
 
 :ref:`float<class_float>` **y** = ``0.0`` :ref:`🔗<class_Vector4_property_y>`
 
-The vector's Y component. Also accessible by using the index position ``[1]``.
+向量的 Y 分量。也可以通過使用索引位置 ``[1]`` 存取。
 
 .. rst-class:: classref-item-separator
 
@@ -307,7 +307,7 @@ The vector's Y component. Also accessible by using the index position ``[1]``.
 
 :ref:`float<class_float>` **z** = ``0.0`` :ref:`🔗<class_Vector4_property_z>`
 
-The vector's Z component. Also accessible by using the index position ``[2]``.
+向量的 Z 分量。也可以通過使用索引位置 ``[2]`` 存取。
 
 .. rst-class:: classref-section-separator
 
@@ -315,8 +315,8 @@ The vector's Z component. Also accessible by using the index position ``[2]``.
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+建構子說明
+----------
 
 .. _class_Vector4_constructor_Vector4:
 
@@ -324,7 +324,7 @@ Constructor Descriptions
 
 :ref:`Vector4<class_Vector4>` **Vector4**\ (\ ) :ref:`🔗<class_Vector4_constructor_Vector4>`
 
-Constructs a default-initialized **Vector4** with all components set to ``0``.
+建構預設初始化的 **Vector4**\ ，所有分量都為 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Constructs a default-initialized **Vector4** with all components set to ``0``.
 
 :ref:`Vector4<class_Vector4>` **Vector4**\ (\ from\: :ref:`Vector4<class_Vector4>`\ )
 
-Constructs a **Vector4** as a copy of the given **Vector4**.
+建構給定 **Vector4** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Constructs a **Vector4** as a copy of the given **Vector4**.
 
 :ref:`Vector4<class_Vector4>` **Vector4**\ (\ from\: :ref:`Vector4i<class_Vector4i>`\ )
 
-Constructs a new **Vector4** from the given :ref:`Vector4i<class_Vector4i>`.
+從給定的 :ref:`Vector4i<class_Vector4i>` 建構新的 **Vector4**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ Constructs a new **Vector4** from the given :ref:`Vector4i<class_Vector4i>`.
 
 :ref:`Vector4<class_Vector4>` **Vector4**\ (\ x\: :ref:`float<class_float>`, y\: :ref:`float<class_float>`, z\: :ref:`float<class_float>`, w\: :ref:`float<class_float>`\ )
 
-Returns a **Vector4** with the given components.
+返回具有給定分量的 **Vector4**\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -362,8 +362,8 @@ Returns a **Vector4** with the given components.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Vector4_method_abs:
 
@@ -371,7 +371,7 @@ Method Descriptions
 
 :ref:`Vector4<class_Vector4>` **abs**\ (\ ) |const| :ref:`🔗<class_Vector4_method_abs>`
 
-Returns a new vector with all components in absolute values (i.e. positive).
+返回一個新向量，其所有分量都是絕對值，即正值。
 
 .. rst-class:: classref-item-separator
 
@@ -383,7 +383,7 @@ Returns a new vector with all components in absolute values (i.e. positive).
 
 :ref:`Vector4<class_Vector4>` **ceil**\ (\ ) |const| :ref:`🔗<class_Vector4_method_ceil>`
 
-Returns a new vector with all components rounded up (towards positive infinity).
+返回一個新向量，所有的分量都是向上四捨五入（正無窮大方向）。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Returns a new vector with all components rounded up (towards positive infinity).
 
 :ref:`Vector4<class_Vector4>` **clamp**\ (\ min\: :ref:`Vector4<class_Vector4>`, max\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_clamp>`
 
-Returns a new vector with all components clamped between the components of ``min`` and ``max``, by running :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` on each component.
+返回一個新向量，每個分量都使用 :ref:`@GlobalScope.clamp()<class_@GlobalScope_method_clamp>` 限制在 ``min`` 和 ``max`` 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Returns a new vector with all components clamped between ``min`` and ``max``, by
 
 :ref:`Vector4<class_Vector4>` **cubic_interpolate**\ (\ b\: :ref:`Vector4<class_Vector4>`, pre_a\: :ref:`Vector4<class_Vector4>`, post_b\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_cubic_interpolate>`
 
-Performs a cubic interpolation between this vector and ``b`` using ``pre_a`` and ``post_b`` as handles, and returns the result at position ``weight``. ``weight`` is on the range of 0.0 to 1.0, representing the amount of interpolation.
+返回該向量和 ``b`` 之間進行三次插值 ``weight`` 處的結果，使用 ``pre_a`` 和 ``post_b`` 作為控制柄。\ ``weight`` 在 0.0 到 1.0 的範圍內，代表插值的量。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ It can perform smoother interpolation than :ref:`cubic_interpolate()<class_Vecto
 
 :ref:`Vector4<class_Vector4>` **direction_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_direction_to>`
 
-Returns the normalized vector pointing from this vector to ``to``. This is equivalent to using ``(b - a).normalized()``.
+返回從該向量指向 ``to`` 的正規化向量。相當於使用 ``(b - a).normalized()``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -457,9 +457,9 @@ Returns the normalized vector pointing from this vector to ``to``. This is equiv
 
 :ref:`float<class_float>` **distance_squared_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_distance_squared_to>`
 
-Returns the squared distance between this vector and ``to``.
+返回該向量與 ``to`` 之間的距離的平方。
 
-This method runs faster than :ref:`distance_to()<class_Vector4_method_distance_to>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+該方法比 :ref:`distance_to()<class_Vector4_method_distance_to>` 運作得更快，因此請在需要比較向量或者用於某些公式的平方距離時，優先使用這個方法。
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ This method runs faster than :ref:`distance_to()<class_Vector4_method_distance_t
 
 :ref:`float<class_float>` **distance_to**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_distance_to>`
 
-Returns the distance between this vector and ``to``.
+返回該向量與 ``to`` 之間的距離。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Returns the distance between this vector and ``to``.
 
 :ref:`float<class_float>` **dot**\ (\ with\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_dot>`
 
-Returns the dot product of this vector and ``with``.
+返回該向量與 ``with`` 的點積。
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Returns the dot product of this vector and ``with``.
 
 :ref:`Vector4<class_Vector4>` **floor**\ (\ ) |const| :ref:`🔗<class_Vector4_method_floor>`
 
-Returns a new vector with all components rounded down (towards negative infinity).
+返回一個新的向量，所有的向量都被四捨五入，向負無窮大。
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ Returns a new vector with all components rounded down (towards negative infinity
 
 :ref:`Vector4<class_Vector4>` **inverse**\ (\ ) |const| :ref:`🔗<class_Vector4_method_inverse>`
 
-Returns the inverse of the vector. This is the same as ``Vector4(1.0 / v.x, 1.0 / v.y, 1.0 / v.z, 1.0 / v.w)``.
+返回該向量的逆向量。與 ``Vector4(1.0 / v.x, 1.0 / v.y, 1.0 / v.z, 1.0 / v.w)`` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Returns the inverse of the vector. This is the same as ``Vector4(1.0 / v.x, 1.0 
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ to\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_is_equal_approx>`
 
-Returns ``true`` if this vector and ``to`` are approximately equal, by running :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on each component.
+如果這個向量與 ``to`` 大致相等，則返回 ``true``\ ，判斷方法是對每個分量執行 :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ Returns ``true`` if this vector and ``to`` are approximately equal, by running :
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Vector4_method_is_finite>`
 
-Returns ``true`` if this vector is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on each component.
+如果該向量無窮，則返回 ``true``\ ，判斷方法是對每個分量呼叫 :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ Returns ``true`` if this vector is finite, by calling :ref:`@GlobalScope.is_fini
 
 :ref:`bool<class_bool>` **is_normalized**\ (\ ) |const| :ref:`🔗<class_Vector4_method_is_normalized>`
 
-Returns ``true`` if the vector is normalized, i.e. its length is approximately equal to 1.
+如果該向量是正規化的，即長度約等於 1，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -555,9 +555,9 @@ Returns ``true`` if the vector is normalized, i.e. its length is approximately e
 
 :ref:`bool<class_bool>` **is_zero_approx**\ (\ ) |const| :ref:`🔗<class_Vector4_method_is_zero_approx>`
 
-Returns ``true`` if this vector's values are approximately zero, by running :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>` on each component.
+如果該向量的值大約為零，則返回 ``true``\ ，判斷方法是對每個分量運作 :ref:`@GlobalScope.is_zero_approx()<class_@GlobalScope_method_is_zero_approx>`\ 。
 
-This method is faster than using :ref:`is_equal_approx()<class_Vector4_method_is_equal_approx>` with one value as a zero vector.
+該方法比使用 :ref:`is_equal_approx()<class_Vector4_method_is_equal_approx>` 和零向量比較要快。
 
 .. rst-class:: classref-item-separator
 
@@ -569,7 +569,7 @@ This method is faster than using :ref:`is_equal_approx()<class_Vector4_method_is
 
 :ref:`float<class_float>` **length**\ (\ ) |const| :ref:`🔗<class_Vector4_method_length>`
 
-Returns the length (magnitude) of this vector.
+返回這個向量的長度，即大小。
 
 .. rst-class:: classref-item-separator
 
@@ -581,9 +581,9 @@ Returns the length (magnitude) of this vector.
 
 :ref:`float<class_float>` **length_squared**\ (\ ) |const| :ref:`🔗<class_Vector4_method_length_squared>`
 
-Returns the squared length (squared magnitude) of this vector.
+返回這個向量的平方長度，即平方大小。
 
-This method runs faster than :ref:`length()<class_Vector4_method_length>`, so prefer it if you need to compare vectors or need the squared distance for some formula.
+這個方法比 :ref:`length()<class_Vector4_method_length>` 運作得更快，所以如果你需要比較向量或需要一些公式的平方距離時，更喜歡用它。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ This method runs faster than :ref:`length()<class_Vector4_method_length>`, so pr
 
 :ref:`Vector4<class_Vector4>` **lerp**\ (\ to\: :ref:`Vector4<class_Vector4>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_lerp>`
 
-Returns the result of the linear interpolation between this vector and ``to`` by amount ``weight``. ``weight`` is on the range of ``0.0`` to ``1.0``, representing the amount of interpolation.
+返回此向量和 ``to`` 之間，按數量 ``weight`` 線性插值結果。\ ``weight`` 在 ``0.0`` 到 ``1.0`` 的範圍內，代表插值的量。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Returns the component-wise maximum of this and ``with``, equivalent to ``Vector4
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector4_method_max_axis_index>`
 
-Returns the axis of the vector's highest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_X<class_Vector4_constant_AXIS_X>`.
+返回該向量中最大值的軸。見 ``AXIS_*`` 常數。如果所有分量相等，則該方法返回 :ref:`AXIS_X<class_Vector4_constant_AXIS_X>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +655,7 @@ Returns the component-wise minimum of this and ``with``, equivalent to ``Vector4
 
 :ref:`int<class_int>` **min_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector4_method_min_axis_index>`
 
-Returns the axis of the vector's lowest value. See ``AXIS_*`` constants. If all components are equal, this method returns :ref:`AXIS_W<class_Vector4_constant_AXIS_W>`.
+返回該向量中最小值的軸。見 ``AXIS_*`` 常數。如果所有分量相等，則該方法返回 :ref:`AXIS_W<class_Vector4_constant_AXIS_W>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -693,7 +693,7 @@ Returns the result of scaling the vector to unit length. Equivalent to ``v / v.l
 
 :ref:`Vector4<class_Vector4>` **posmod**\ (\ mod\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Vector4_method_posmod>`
 
-Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` of this vector's components and ``mod``.
+返回由該向量的分量與 ``mod`` 執行 :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` 運算後組成的向量。
 
 .. rst-class:: classref-item-separator
 
@@ -705,7 +705,7 @@ Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope
 
 :ref:`Vector4<class_Vector4>` **posmodv**\ (\ modv\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_posmodv>`
 
-Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` of this vector's components and ``modv``'s components.
+返回由該向量的分量與 ``modv`` 的分量執行 :ref:`@GlobalScope.fposmod()<class_@GlobalScope_method_fposmod>` 運算後組成的向量。
 
 .. rst-class:: classref-item-separator
 
@@ -717,7 +717,7 @@ Returns a vector composed of the :ref:`@GlobalScope.fposmod()<class_@GlobalScope
 
 :ref:`Vector4<class_Vector4>` **round**\ (\ ) |const| :ref:`🔗<class_Vector4_method_round>`
 
-Returns a new vector with all components rounded to the nearest integer, with halfway cases rounded away from zero.
+返回所有分量都被四捨五入為最接近的整數的向量，中間情況向遠離零的方向四捨五入。
 
 .. rst-class:: classref-item-separator
 
@@ -729,7 +729,7 @@ Returns a new vector with all components rounded to the nearest integer, with ha
 
 :ref:`Vector4<class_Vector4>` **sign**\ (\ ) |const| :ref:`🔗<class_Vector4_method_sign>`
 
-Returns a new vector with each component set to ``1.0`` if it's positive, ``-1.0`` if it's negative, and ``0.0`` if it's zero. The result is identical to calling :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` on each component.
+返回新的向量，分量如果為正則設為 ``1.0``\ ，如果為負則設為 ``-1.0``\ ，如果為零則設為 ``0.0``\ 。結果與對每個分量呼叫 :ref:`@GlobalScope.sign()<class_@GlobalScope_method_sign>` 一致。
 
 .. rst-class:: classref-item-separator
 
@@ -741,7 +741,7 @@ Returns a new vector with each component set to ``1.0`` if it's positive, ``-1.0
 
 :ref:`Vector4<class_Vector4>` **snapped**\ (\ step\: :ref:`Vector4<class_Vector4>`\ ) |const| :ref:`🔗<class_Vector4_method_snapped>`
 
-Returns a new vector with each component snapped to the nearest multiple of the corresponding component in ``step``. This can also be used to round the components to an arbitrary number of decimals.
+返回新的向量，每個分量都吸附到了與 ``step`` 中對應分量最接近的倍數。也可以用於將分量四捨五入至小數點後的任意位置。
 
 .. rst-class:: classref-item-separator
 
@@ -761,8 +761,8 @@ Returns a new vector with each component snapped to the nearest multiple of ``st
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+運算子說明
+----------
 
 .. _class_Vector4_operator_neq_Vector4:
 
@@ -770,11 +770,11 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_neq_Vector4>`
 
-Returns ``true`` if the vectors are not equal.
+如果向量不相等，則返回 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Vector4_method_is_equal_approx>` instead, which is more reliable.
+\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Vector4_method_is_equal_approx>`\ ，會更可靠。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -832,7 +832,7 @@ Multiplies each component of the **Vector4** by the given :ref:`float<class_floa
 
 :ref:`Vector4<class_Vector4>` **operator ***\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector4_operator_mul_int>`
 
-Multiplies each component of the **Vector4** by the given :ref:`int<class_int>`.
+將該 **Vector4** 的每個分量乘以給定的 :ref:`int<class_int>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -908,7 +908,7 @@ Divides each component of the **Vector4** by the given :ref:`float<class_float>`
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector4_operator_div_int>`
 
-Divides each component of the **Vector4** by the given :ref:`int<class_int>`.
+將該 **Vector4** 的每個分量除以給定的 :ref:`int<class_int>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -920,9 +920,9 @@ Divides each component of the **Vector4** by the given :ref:`int<class_int>`.
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_lt_Vector4>`
 
-Compares two **Vector4** vectors by first checking if the X value of the left vector is less than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
+比較兩個 **Vector4** 向量，首先檢查左向量的 X 值是否小於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值、Z 值、W 值。該運算符可用於向量排序。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -934,9 +934,9 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_lte_Vector4>`
 
-Compares two **Vector4** vectors by first checking if the X value of the left vector is less than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
+比較兩個 **Vector4** 向量，首先檢查左向量的 X 值是否小於等於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值、Z 值、W 值。該運算子可用於向量排序。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -948,11 +948,11 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_eq_Vector4>`
 
-Returns ``true`` if the vectors are exactly equal.
+如果向量完全相等，則返回 ``true``\ 。
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Vector4_method_is_equal_approx>` instead, which is more reliable.
+\ **注意：**\ 由於浮點數精度誤差，請考慮改用 :ref:`is_equal_approx()<class_Vector4_method_is_equal_approx>`\ ，會更可靠。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -964,9 +964,9 @@ Returns ``true`` if the vectors are exactly equal.
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_gt_Vector4>`
 
-Compares two **Vector4** vectors by first checking if the X value of the left vector is greater than the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
+比較兩個 **Vector4** 向量，首先檢查左向量的 X 值是否大於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值、Z 值、W 值。該運算符可用於向量排序。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -978,9 +978,9 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`Vector4<class_Vector4>`\ ) :ref:`🔗<class_Vector4_operator_gte_Vector4>`
 
-Compares two **Vector4** vectors by first checking if the X value of the left vector is greater than or equal to the X value of the ``right`` vector. If the X values are exactly equal, then it repeats this check with the Y values of the two vectors, Z values of the two vectors, and then with the W values. This operator is useful for sorting vectors.
+比較兩個 **Vector4** 向量，首先檢查左向量的 X 值是否大於等於 ``right`` 向量的 X 值。如果 X 值完全相等，則用相同的方法檢查兩個向量的 Y 值、Z 值、W 值。該運算子可用於向量排序。
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this operator may not be accurate if NaNs are included.
+\ **注意：**\ 包含 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 元素的向量的行為與其他向量不同。因此，如果包含 NaN，則這個方法的結果可能不準確。
 
 .. rst-class:: classref-item-separator
 
@@ -992,7 +992,7 @@ Compares two **Vector4** vectors by first checking if the X value of the left ve
 
 :ref:`float<class_float>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Vector4_operator_idx_int>`
 
-Access vector components using their ``index``. ``v[0]`` is equivalent to ``v.x``, ``v[1]`` is equivalent to ``v.y``, ``v[2]`` is equivalent to ``v.z``, and ``v[3]`` is equivalent to ``v.w``.
+使用向量分量的 ``index`` 來存取向量分量。\ ``v[0]`` 等價於 ``v.x``\ ，\ ``v[1]`` 等價於 ``v.y``\ ，\ ``v[2]`` 等價於 ``v.z``\ ，\ ``v[3]`` 等價於 ``v.w``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1004,7 +1004,7 @@ Access vector components using their ``index``. ``v[0]`` is equivalent to ``v.x`
 
 :ref:`Vector4<class_Vector4>` **operator unary+**\ (\ ) :ref:`🔗<class_Vector4_operator_unplus>`
 
-Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, but sometimes it can make your code more readable.
+返回與 ``+`` 不存在時相同的值。單目 ``+`` 沒有作用，但有時可以使你的程式碼更具可讀性。
 
 .. rst-class:: classref-item-separator
 
@@ -1016,14 +1016,14 @@ Returns the same value as if the ``+`` was not there. Unary ``+`` does nothing, 
 
 :ref:`Vector4<class_Vector4>` **operator unary-**\ (\ ) :ref:`🔗<class_Vector4_operator_unminus>`
 
-Returns the negative value of the **Vector4**. This is the same as writing ``Vector4(-v.x, -v.y, -v.z, -v.w)``. This operation flips the direction of the vector while keeping the same magnitude. With floats, the number zero can be either positive or negative.
+返回該 **Vector4** 的負值。和寫 ``Vector4(-v.x, -v.y, -v.z, -v.w)`` 是一樣的。該操作在保持相同幅度的同時，翻轉向量的方向。對於浮點數，零也有正負兩種。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

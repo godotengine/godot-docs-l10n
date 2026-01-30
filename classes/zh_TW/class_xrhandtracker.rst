@@ -5,14 +5,14 @@
 XRHandTracker
 =============
 
-**Inherits:** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 A tracked hand in XR.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A hand tracking system will create an instance of this object and add it to the :ref:`XRServer<class_XRServer>`. This tracking system will then obtain skeleton data, convert it to the Godot Humanoid hand skeleton and store this data on the **XRHandTracker** object.
 
@@ -20,15 +20,15 @@ Use :ref:`XRHandModifier3D<class_XRHandModifier3D>` to animate a hand mesh using
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`XR documentation index <../tutorials/xr/index>`
+- :doc:`XR 文件索引 <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_XRHandTracker_HandTrackingSource:
 
@@ -144,7 +144,7 @@ enum **HandJoint**: :ref:`🔗<enum_XRHandTracker_HandJoint>`
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_PALM** = ``0``
 
-Palm joint.
+掌關節。
 
 .. _class_XRHandTracker_constant_HAND_JOINT_WRIST:
 
@@ -152,7 +152,7 @@ Palm joint.
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_WRIST** = ``1``
 
-Wrist joint.
+腕關節。
 
 .. _class_XRHandTracker_constant_HAND_JOINT_THUMB_METACARPAL:
 
@@ -160,7 +160,7 @@ Wrist joint.
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_THUMB_METACARPAL** = ``2``
 
-Thumb metacarpal joint.
+掌骨拇指關節。
 
 .. _class_XRHandTracker_constant_HAND_JOINT_THUMB_PHALANX_PROXIMAL:
 
@@ -184,7 +184,7 @@ Thumb phalanx distal joint.
 
 :ref:`HandJoint<enum_XRHandTracker_HandJoint>` **HAND_JOINT_THUMB_TIP** = ``5``
 
-Thumb tip joint.
+拇指尖端關節。
 
 .. _class_XRHandTracker_constant_HAND_JOINT_INDEX_FINGER_METACARPAL:
 
@@ -418,8 +418,8 @@ The hand joint's angular velocity data is valid.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_XRHandTracker_property_hand_tracking_source:
 
@@ -457,8 +457,8 @@ If ``true``, the hand tracking data is valid.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_XRHandTracker_method_get_hand_joint_angular_velocity:
 
@@ -576,12 +576,12 @@ Sets the radius of the given hand joint.
 
 Sets the transform for the given hand joint.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

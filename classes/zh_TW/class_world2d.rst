@@ -5,28 +5,28 @@
 World2D
 =======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A resource that holds all components of a 2D world, such as a canvas and a physics space.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Class that has everything pertaining to a 2D world: A physics space, a canvas, and a sound space. 2D nodes register their resources into the current 2D world.
+一種保存了所有 2D 世界元件的資源，例如畫布和物理運算空間。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
+這個類包含所有與 2D 世界相關的內容：物理空間、可視場景和音訊空間。2D 節點會將它們的資源註冊到目前的 2D 世界中。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`發射射線 <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_World2D_property_canvas:
 
@@ -60,7 +60,7 @@ Property Descriptions
 
 - :ref:`RID<class_RID>` **get_canvas**\ (\ )
 
-The :ref:`RID<class_RID>` of this world's canvas resource. Used by the :ref:`RenderingServer<class_RenderingServer>` for 2D drawing.
+這個世界的畫布資源的 :ref:`RID<class_RID>`\ 。由 :ref:`RenderingServer<class_RenderingServer>` 用於 2D 繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -76,7 +76,7 @@ The :ref:`RID<class_RID>` of this world's canvas resource. Used by the :ref:`Ren
 
 - :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>` **get_direct_space_state**\ (\ )
 
-Direct access to the world's physics 2D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to :ref:`Node._physics_process()<class_Node_private_method__physics_process>` in the main thread.
+直接存取該世界的物理 3D 空間狀態。可用於查詢目前和可能的碰撞。在多執行緒物理中使用時，僅可在主執行緒的 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 中存取。
 
 .. rst-class:: classref-item-separator
 
@@ -92,7 +92,7 @@ Direct access to the world's physics 2D space state. Used for querying current a
 
 - :ref:`RID<class_RID>` **get_navigation_map**\ (\ )
 
-The :ref:`RID<class_RID>` of this world's navigation map. Used by the :ref:`NavigationServer2D<class_NavigationServer2D>`.
+這個世界的導覽地圖的 :ref:`RID<class_RID>`\ 。由 :ref:`NavigationServer2D<class_NavigationServer2D>` 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -108,14 +108,14 @@ The :ref:`RID<class_RID>` of this world's navigation map. Used by the :ref:`Navi
 
 - :ref:`RID<class_RID>` **get_space**\ (\ )
 
-The :ref:`RID<class_RID>` of this world's physics space resource. Used by the :ref:`PhysicsServer2D<class_PhysicsServer2D>` for 2D physics, treating it as both a space and an area.
+這個世界物理空間資源的 :ref:`RID<class_RID>`\ 。由 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 用於 2D 物理，將其視為一個空間和一個區域。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

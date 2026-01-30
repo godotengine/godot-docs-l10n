@@ -5,30 +5,30 @@
 BoneMap
 =======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Describes a mapping of bone names for retargeting :ref:`Skeleton3D<class_Skeleton3D>` into common names defined by a :ref:`SkeletonProfile<class_SkeletonProfile>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This class contains a dictionary that uses a list of bone names in :ref:`SkeletonProfile<class_SkeletonProfile>` as key names.
-
-By assigning the actual :ref:`Skeleton3D<class_Skeleton3D>` bone name as the key value, it maps the :ref:`Skeleton3D<class_Skeleton3D>` to the :ref:`SkeletonProfile<class_SkeletonProfile>`.
+描述骨骼名稱的對應，用於將 :ref:`Skeleton3D<class_Skeleton3D>` 重定向至 :ref:`SkeletonProfile<class_SkeletonProfile>` 中定義的通用名稱。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Retargeting 3D Skeletons <../tutorials/assets_pipeline/retargeting_3d_skeletons>`
+這個類中有一個字典，使用 :ref:`SkeletonProfile<class_SkeletonProfile>` 中的骨骼名稱作為鍵名。
+
+將實際的 :ref:`Skeleton3D<class_Skeleton3D>` 骨骼名稱賦為鍵值後，就會將 :ref:`Skeleton3D<class_Skeleton3D>` 對應到 :ref:`SkeletonProfile<class_SkeletonProfile>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`重定向 3D 骨架 <../tutorials/assets_pipeline/retargeting_3d_skeletons>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -39,8 +39,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_BoneMap_signal_bone_map_updated:
 
@@ -68,7 +68,7 @@ Signals
 
 **bone_map_updated**\ (\ ) :ref:`🔗<class_BoneMap_signal_bone_map_updated>`
 
-This signal is emitted when change the key value in the **BoneMap**. This is used to validate mapping and to update **BoneMap** editor.
+**BoneMap** 中的鍵值發生改變時發出此訊號。用於驗證對應和更新 **BoneMap** 編輯器。
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ This signal is emitted when change the key value in the **BoneMap**. This is use
 
 **profile_updated**\ (\ ) :ref:`🔗<class_BoneMap_signal_profile_updated>`
 
-This signal is emitted when change the value in profile or change the reference of profile. This is used to update key names in the **BoneMap** and to redraw the **BoneMap** editor.
+配置中的值發生改變或配置的引用發生改變時發出此訊號。用於更新 **BoneMap** 中的鍵名、重繪 **BoneMap** 編輯器。
 
 .. rst-class:: classref-section-separator
 
@@ -88,8 +88,8 @@ This signal is emitted when change the value in profile or change the reference 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_BoneMap_property_profile:
 
@@ -102,7 +102,7 @@ Property Descriptions
 - |void| **set_profile**\ (\ value\: :ref:`SkeletonProfile<class_SkeletonProfile>`\ )
 - :ref:`SkeletonProfile<class_SkeletonProfile>` **get_profile**\ (\ )
 
-A :ref:`SkeletonProfile<class_SkeletonProfile>` of the mapping target. Key names in the **BoneMap** are synchronized with it.
+對應目標的 :ref:`SkeletonProfile<class_SkeletonProfile>`\ 。\ **BoneMap** 中的鍵名與此同步。
 
 .. rst-class:: classref-section-separator
 
@@ -110,8 +110,8 @@ A :ref:`SkeletonProfile<class_SkeletonProfile>` of the mapping target. Key names
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_BoneMap_method_find_profile_bone_name:
 
@@ -119,9 +119,9 @@ Method Descriptions
 
 :ref:`StringName<class_StringName>` **find_profile_bone_name**\ (\ skeleton_bone_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_BoneMap_method_find_profile_bone_name>`
 
-Returns a profile bone name having ``skeleton_bone_name``. If not found, an empty :ref:`StringName<class_StringName>` will be returned.
+返回具有 ``skeleton_bone_name`` 的輪廓骨骼名稱。如果沒有找到，將返回一個空的 :ref:`StringName<class_StringName>`\ 。
 
-In the retargeting process, the returned bone name is the bone name of the target skeleton.
+在重定向過程中，返回的骨骼名稱是目標骨架的骨骼名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -133,9 +133,9 @@ In the retargeting process, the returned bone name is the bone name of the targe
 
 :ref:`StringName<class_StringName>` **get_skeleton_bone_name**\ (\ profile_bone_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_BoneMap_method_get_skeleton_bone_name>`
 
-Returns a skeleton bone name is mapped to ``profile_bone_name``.
+返回與配置中的某個骨骼名稱 ``profile_bone_name`` 對應的骨架中的骨骼名稱。
 
-In the retargeting process, the returned bone name is the bone name of the source skeleton.
+在重定向過程中，設定的骨骼名稱是源骨架中骨骼的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -147,16 +147,16 @@ In the retargeting process, the returned bone name is the bone name of the sourc
 
 |void| **set_skeleton_bone_name**\ (\ profile_bone_name\: :ref:`StringName<class_StringName>`, skeleton_bone_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_BoneMap_method_set_skeleton_bone_name>`
 
-Maps a skeleton bone name to ``profile_bone_name``.
+將骨架中的某個骨骼名稱對應到配置中的骨骼名稱 ``profile_bone_name``\ 。
 
-In the retargeting process, the setting bone name is the bone name of the source skeleton.
+在重定向過程中，設定的骨骼名稱是源骨架中骨骼的名稱。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

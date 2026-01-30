@@ -5,28 +5,28 @@
 @GDScript
 =========
 
-Built-in GDScript constants, functions, and annotations.
+内置 GDScript 常量、函数、注解。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A list of utility functions and annotations accessible from any script written in GDScript.
+所有使用 GDScript 编写的脚本中都能够访问的实用函数和注解的列表。
 
-For the list of global functions and constants that can be accessed in any scripting language, see :ref:`@GlobalScope<class_@GlobalScope>`.
+所有脚本语言都能够访问的全局函数和常量的列表见 :ref:`@GlobalScope<class_@GlobalScope>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`GDScript exports <../tutorials/scripting/gdscript/gdscript_exports>`
+- :doc:`GDScript 的导出 <../tutorials/scripting/gdscript/gdscript_exports>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_@GDScript_constant_PI:
 
@@ -80,7 +80,7 @@ Constants
 
 **PI** = ``3.14159265358979`` :ref:`🔗<class_@GDScript_constant_PI>`
 
-Constant that represents how many times the diameter of a circle fits around its perimeter. This is equivalent to ``TAU / 2``, or 180 degrees in rotations.
+常量，表示圆的周长是直径的多少倍。相当于 ``TAU / 2``\ ，即 180 度旋转。
 
 .. _class_@GDScript_constant_TAU:
 
@@ -88,7 +88,7 @@ Constant that represents how many times the diameter of a circle fits around its
 
 **TAU** = ``6.28318530717959`` :ref:`🔗<class_@GDScript_constant_TAU>`
 
-The circle constant, the circumference of the unit circle in radians. This is equivalent to ``PI * 2``, or 360 degrees in rotations.
+圆常量，单位圆的周长，单位为弧度。相当于 ``PI * 2``\ ，即 360 度旋转。
 
 .. _class_@GDScript_constant_INF:
 
@@ -96,9 +96,9 @@ The circle constant, the circumference of the unit circle in radians. This is eq
 
 **INF** = ``inf`` :ref:`🔗<class_@GDScript_constant_INF>`
 
-Positive floating-point infinity. This is the result of floating-point division when the divisor is ``0.0``. For negative infinity, use ``-INF``. Dividing by ``-0.0`` will result in negative infinity if the numerator is positive, so dividing by ``0.0`` is not the same as dividing by ``-0.0`` (despite ``0.0 == -0.0`` returning ``true``).
+正浮点无穷大。这是除数为 ``0.0`` 时浮点除法的结果。对于负无穷大，使用 ``-INF``\ 。如果分子为正，除以 ``-0.0`` 将导致负无穷大，因此除以 ``0.0`` 与除以 ``-0.0`` 不同（尽管 ``0.0 == -0.0`` 返回 ``true``\ ）。
 
-\ **Warning:** Numeric infinity is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer number by ``0`` will not result in :ref:`INF<class_@GDScript_constant_INF>` and will result in a run-time error instead.
+\ **警告：**\ 数值无穷大只是浮点数的一个概念，对于整数来说没有对应的概念。将整数除以 ``0`` 不会产生 :ref:`INF<class_@GDScript_constant_INF>`\ ，而是会产生一个运行时错误。
 
 .. _class_@GDScript_constant_NAN:
 
@@ -106,11 +106,11 @@ Positive floating-point infinity. This is the result of floating-point division 
 
 **NAN** = ``nan`` :ref:`🔗<class_@GDScript_constant_NAN>`
 
-"Not a Number", an invalid floating-point value. It is returned by some invalid operations, such as dividing floating-point ``0.0`` by ``0.0``.
+“Not a Number”（非数）是一个无效的浮点数值。部分无效运算会返回这个值，例如将浮点数 ``0.0`` 除以 ``0.0``\ 。
 
-\ :ref:`NAN<class_@GDScript_constant_NAN>` has special properties, including that ``!=`` always returns ``true``, while other comparison operators always return ``false``. This is true even when comparing with itself (``NAN == NAN`` returns ``false`` and ``NAN != NAN`` returns ``true``). Due to this, you must use :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` to check whether a number is equal to :ref:`NAN<class_@GDScript_constant_NAN>`.
+\ :ref:`NAN<class_@GDScript_constant_NAN>` 有许多特殊的性质，包括 ``!=`` 始终返回 ``true``\ ，而其他比较运算符都始终返回 ``false``\ 。即便是和自己比较也是如此（\ ``NAN == NAN`` 返回 ``false``\ ，而 ``NAN != NAN`` 返回 ``true``\ ）。因此，你必须使用 :ref:`@GlobalScope.is_nan()<class_@GlobalScope_method_is_nan>` 来判断数值是否等于 :ref:`NAN<class_@GDScript_constant_NAN>`\ 。
 
-\ **Warning:** "Not a Number" is only a concept with floating-point numbers, and has no equivalent for integers. Dividing an integer ``0`` by ``0`` will not result in :ref:`NAN<class_@GDScript_constant_NAN>` and will result in a run-time error instead.
+\ **警告：**\ “非数”只是浮点数的概念，整数中没有对应的概念。将整数 ``0`` 除以 ``0`` 不会得到 :ref:`NAN<class_@GDScript_constant_NAN>`\ ，而是会产生运行时错误。
 
 .. rst-class:: classref-section-separator
 
@@ -118,8 +118,8 @@ Positive floating-point infinity. This is the result of floating-point division 
 
 .. rst-class:: classref-descriptions-group
 
-Annotations
------------
+注解
+----
 
 .. _class_@GDScript_annotation_@abstract:
 
@@ -127,13 +127,13 @@ Annotations
 
 **@abstract**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@abstract>`
 
-Marks a class or a method as abstract.
+将类或方法标记为抽象。
 
-An abstract class is a class that cannot be instantiated directly. Instead, it is meant to be inherited by other classes. Attempting to instantiate an abstract class will result in an error.
+抽象类是一种无法直接实例化的类，主要功能是被其他类继承。尝试实例化抽象类会报错。
 
-An abstract method is a method that has no implementation. Therefore, a newline or a semicolon is expected after the function header. This defines a contract that inheriting classes must conform to, because the method signature must be compatible when overriding.
+抽象方法是一种没有实现的方法，因此函数头之后应当为换行或分号。抽象方法定义的是派生类所必须遵守的契约，覆盖方法时签名必须兼容。派生类必须为所有抽象方法都提供实现，否则就必须将它标记为抽象类。如果类中至少存在一个抽象方法（可以是自己定义的，也可以是继承但没实现的），那么也必须标记为抽象类。
 
-Inheriting classes must either provide implementations for all abstract methods, or the inheriting class must be marked as abstract. If a class has at least one abstract method (either its own or an unimplemented inherited one), then it must also be marked as abstract. However, the reverse is not true: an abstract class is allowed to have no abstract methods.
+反之则不然：抽象类可以不包含抽象方法。
 
 ::
 
@@ -142,11 +142,11 @@ Inheriting classes must either provide implementations for all abstract methods,
 
     class Circle extends Shape:
         func draw():
-            print("Drawing a circle.")
+            print("画个圆形。")
 
     class Square extends Shape:
         func draw():
-            print("Drawing a square.")
+            print("画个方形。")
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ Inheriting classes must either provide implementations for all abstract methods,
 
 **@export**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export>`
 
-Mark the following property as exported (editable in the Inspector dock and saved to disk). To control the type of the exported property, use the type hint notation.
+将后续的属性标记为导出属性（可以在检查器面板中编辑并保存至磁盘）。要控制导出属性的类型，请使用类型提示标记。
 
 ::
 
@@ -166,33 +166,33 @@ Mark the following property as exported (editable in the Inspector dock and save
 
     enum Direction {LEFT, RIGHT, UP, DOWN}
 
-    # Built-in types.
+    # 内置类型。
     @export var string = ""
     @export var int_number = 5
     @export var float_number: float = 5
 
-    # Enums.
+    # 枚举。
     @export var type: Variant.Type
     @export var format: Image.Format
     @export var direction: Direction
 
-    # Resources.
+    # 资源。
     @export var image: Image
     @export var custom_resource: CustomResource
 
-    # Nodes.
+    # 节点。
     @export var node: Node
     @export var custom_node: CustomNode
 
-    # Typed arrays.
+    # 类型数组。
     @export var int_array: Array[int]
     @export var direction_array: Array[Direction]
     @export var image_array: Array[Image]
     @export var node_array: Array[Node]
 
-\ **Note:** Custom resources and nodes should be registered as global classes using ``class_name``, since the Inspector currently only supports global classes. Otherwise, a less specific type will be exported instead.
+\ **注意：**\ 自定义资源和自定义节点应该使用 ``class_name`` 注册为全局类，因为属性检查器目前仅支持全局类。否则，将导出不太具体的类型。
 
-\ **Note:** Node export is only supported in :ref:`Node<class_Node>`-derived classes and has a number of other limitations.
+\ **注意：**\ 节点的导出只有派生自 :ref:`Node<class_Node>` 的类才支持，并且还有一些其他限制。
 
 .. rst-class:: classref-item-separator
 
@@ -204,9 +204,9 @@ Mark the following property as exported (editable in the Inspector dock and save
 
 **@export_category**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_annotation_@export_category>`
 
-Define a new category for the following exported properties. This helps to organize properties in the Inspector dock.
+为后续导出属性定义一个新类别，方便在检查器面板中组织属性。
 
-See also :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_PROPERTY_USAGE_CATEGORY>`.
+另见 :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_PROPERTY_USAGE_CATEGORY>`\ 。
 
 ::
 
@@ -214,7 +214,7 @@ See also :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_
     @export var hp = 30
     @export var speed = 1.25
 
-\ **Note:** Categories in the Inspector dock's list usually divide properties coming from different classes (Node, Node2D, Sprite, etc.). For better clarity, it's recommended to use :ref:`@export_group<class_@GDScript_annotation_@export_group>` and :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`, instead.
+\ **注意：**\ 检查器面板中的列表通常会按类别将来自不同类（如 Node、Node2D、Sprite 等）的属性分隔开来。为了让属性组织更明确，推荐改用 :ref:`@export_group<class_@GDScript_annotation_@export_group>` 和 :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +226,9 @@ See also :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_
 
 **@export_color_no_alpha**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_color_no_alpha>`
 
-Export a :ref:`Color<class_Color>`, :ref:`Array<class_Array>`\ \[:ref:`Color<class_Color>`\ \], or :ref:`PackedColorArray<class_PackedColorArray>` property without allowing its transparency (:ref:`Color.a<class_Color_property_a>`) to be edited.
+导出 :ref:`Color<class_Color>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`Color<class_Color>`\ \] 或 :ref:`PackedColorArray<class_PackedColorArray>` 属性，不允许编辑透明度（\ :ref:`Color.a<class_Color_property_a>`\ ）。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_COLOR_NO_ALPHA<class_@GlobalScope_constant_PROPERTY_HINT_COLOR_NO_ALPHA>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_COLOR_NO_ALPHA<class_@GlobalScope_constant_PROPERTY_HINT_COLOR_NO_ALPHA>`\ 。
 
 ::
 
@@ -245,13 +245,13 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_COLOR_NO_ALPHA<class_@GlobalScope_cons
 
 **@export_custom**\ (\ hint\: :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`, hint_string\: :ref:`String<class_String>`, usage\: |bitfield|\[:ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`\] = 6\ ) :ref:`🔗<class_@GDScript_annotation_@export_custom>`
 
-Allows you to set a custom hint, hint string, and usage flags for the exported property. Note that there's no validation done in GDScript, it will just pass the parameters to the editor.
+允许为导出的属性设置自定义提示、提示字符串、和使用标志。请注意，GDScript 中没有进行任何验证，它只是将参数传递给编辑器。
 
 ::
 
     @export_custom(PROPERTY_HINT_NONE, "suffix:m") var suffix: Vector3
 
-\ **Note:** Regardless of the ``usage`` value, the :ref:`@GlobalScope.PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` flag is always added, as with any explicitly declared script variable.
+\ **注意：**\ 无论 ``usage`` 值如何，总会添加 :ref:`@GlobalScope.PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` 标志，就像和任何显式声明的脚本变量一样。
 
 .. rst-class:: classref-item-separator
 
@@ -263,9 +263,9 @@ Allows you to set a custom hint, hint string, and usage flags for the exported p
 
 **@export_dir**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_dir>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], or :ref:`PackedStringArray<class_PackedStringArray>` property as a path to a directory. The path will be limited to the project folder and its subfolders. See :ref:`@export_global_dir<class_@GDScript_annotation_@export_global_dir>` to allow picking from the entire filesystem.
+导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \] 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，用作指向目录的路径。该路径会被限制在项目文件夹及其子文件夹中，要允许在整个文件系统中选取，见 :ref:`@export_global_dir<class_@GDScript_annotation_@export_global_dir>`\ 。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROPERTY_HINT_DIR>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROPERTY_HINT_DIR>`\ 。
 
 ::
 
@@ -282,9 +282,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROPER
 
 **@export_enum**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_enum>`
 
-Export an :ref:`int<class_int>`, :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, or :ref:`PackedStringArray<class_PackedStringArray>` property as an enumerated list of options (or an array of options). If the property is an :ref:`int<class_int>`, then the index of the value is stored, in the same order the values are provided. You can add explicit values using a colon. If the property is a :ref:`String<class_String>`, then the value is stored.
+导出 :ref:`int<class_int>`\ 、\ :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \]、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \]、\ :ref:`PackedByteArray<class_PackedByteArray>`\ 、\ :ref:`PackedInt32Array<class_PackedInt32Array>`\ 、\ :ref:`PackedInt64Array<class_PackedInt64Array>` 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，用作枚举选项列表（或选项的数组）。如果属性为 :ref:`int<class_int>`\ ，则存储的是值的索引，与值的顺序相同。你可以使用冒号来显式添加枚举项的取值。如果属性为 :ref:`String<class_String>`\ ，则存储的是值。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPERTY_HINT_ENUM>`\ 。
 
 ::
 
@@ -295,13 +295,13 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_ENUM<class_@GlobalScope_constant_PROPE
     @export_enum("Sword", "Spear", "Mace") var character_items: Array[int]
     @export_enum("double_jump", "climb", "dash") var character_skills: Array[String]
 
-If you want to set an initial value, you must specify it explicitly:
+如果需要设置初始值，则必须显式指定：
 
 ::
 
     @export_enum("Rebecca", "Mary", "Leah") var character_name: String = "Rebecca"
 
-If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_annotation_@export>` instead:
+如果需要使用具名 GDScript 枚举，请改用 :ref:`@export<class_@GDScript_annotation_@export>`\ ：
 
 ::
 
@@ -321,9 +321,9 @@ If you want to use named GDScript enums, then use :ref:`@export<class_@GDScript_
 
 **@export_exp_easing**\ (\ hints\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_exp_easing>`
 
-Export a floating-point property with an easing editor widget. Additional hints can be provided to adjust the behavior of the widget. ``"attenuation"`` flips the curve, which makes it more intuitive for editing attenuation properties. ``"positive_only"`` limits values to only be greater than or equal to zero.
+使用缓动编辑器小部件导出浮点属性。可以提供额外的提示来调整小部件的行为。通过使用\ ``"attenuation"`` 提示来翻转曲线，使编辑衰减属性更加直观；通过使用\ ``"positive_only"`` 提示来将取值范围限制为仅大于等于零。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_EXP_EASING<class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_EXP_EASING<class_@GlobalScope_constant_PROPERTY_HINT_EXP_EASING>`\ 。
 
 ::
 
@@ -342,11 +342,11 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_EXP_EASING<class_@GlobalScope_constant
 
 **@export_file**\ (\ filter\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_file>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], or :ref:`PackedStringArray<class_PackedStringArray>` property as a path to a file. The path will be limited to the project folder and its subfolders. See :ref:`@export_global_file<class_@GDScript_annotation_@export_global_file>` to allow picking from the entire filesystem.
+导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \] 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，用作指向文件的路径。该路径会被限制在项目文件夹及其子文件夹中。要允许在整个文件系统中选取，见 :ref:`@export_global_file<class_@GDScript_annotation_@export_global_file>`\ 。
 
-If ``filter`` is provided, only matching files will be available for picking.
+如果提供了 ``filter``\ ，则只有匹配的文件可供选取。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPERTY_HINT_FILE>`\ 。
 
 ::
 
@@ -354,7 +354,7 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPE
     @export_file("*.txt") var notes_path: String
     @export_file var level_paths: Array[String]
 
-\ **Note:** The file will be stored and referenced as UID, if available. This ensures that the reference is valid even when the file is moved. You can use :ref:`ResourceUID<class_ResourceUID>` methods to convert it to path.
+\ **注意：**\ 如果文件的 UID 可用，则会以 UID 形式进行存储和引用。这样可以保证即便文件发生移动，引用也仍然有效。可以使用 :ref:`ResourceUID<class_ResourceUID>` 中的方法将 UID 转换为路径。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_FILE<class_@GlobalScope_constant_PROPE
 
 **@export_file_path**\ (\ filter\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_file_path>`
 
-Same as :ref:`@export_file<class_@GDScript_annotation_@export_file>`, except the file will be stored as a raw path. This means that it may become invalid when the file is moved. If you are exporting a :ref:`Resource<class_Resource>` path, consider using :ref:`@export_file<class_@GDScript_annotation_@export_file>` instead.
+与 :ref:`@export_file<class_@GDScript_annotation_@export_file>` 相同，但是文件以原始路径的形式存储。这意味着移动文件后可能失效。导出 :ref:`Resource<class_Resource>` 路径时，请考虑改用 :ref:`@export_file<class_@GDScript_annotation_@export_file>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -378,36 +378,36 @@ Same as :ref:`@export_file<class_@GDScript_annotation_@export_file>`, except the
 
 **@export_flags**\ (\ names\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_flags>`
 
-Export an integer property as a bit flag field. This allows to store several "checked" or ``true`` values with one property, and comfortably select them from the Inspector dock.
+将整数属性导出为位标志字段，能够在单个属性中保存多个“勾选项”（即 ``true`` 值），可以很方便地在检查器面板中进行选择。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_FLAGS<class_@GlobalScope_constant_PROPERTY_HINT_FLAGS>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_FLAGS<class_@GlobalScope_constant_PROPERTY_HINT_FLAGS>`\ 。
 
 ::
 
     @export_flags("Fire", "Water", "Earth", "Wind") var spell_elements = 0
 
-You can add explicit values using a colon:
+可以通过冒号来显式添加取值：
 
 ::
 
     @export_flags("Self:4", "Allies:8", "Foes:16") var spell_targets = 0
 
-You can also combine several flags:
+还可以对标志进行组合：
 
 ::
 
     @export_flags("Self:4", "Allies:8", "Self and Allies:12", "Foes:16")
     var spell_targets = 0
 
-\ **Note:** A flag value must be at least ``1`` and at most ``2 ** 32 - 1``.
+\ **注意：**\ 标志值的最小值为 ``1``\ ，最大值为 ``2 ** 32 - 1``\ 。
 
-\ **Note:** Unlike :ref:`@export_enum<class_@GDScript_annotation_@export_enum>`, the previous explicit value is not taken into account. In the following example, A is 16, B is 2, C is 4.
+\ **注意：**\ 与 :ref:`@export_enum<class_@GDScript_annotation_@export_enum>` 不同，位标志不会考虑其前一个位标志的显式值。下面的例子中，A 为 16、B 为 2、C 为 4。
 
 ::
 
     @export_flags("A:16", "B", "C") var x
 
-You can also use the annotation on :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, and :ref:`PackedInt64Array<class_PackedInt64Array>`\ 
+还可以对 :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \]、\ :ref:`PackedByteArray<class_PackedByteArray>`\ 、\ :ref:`PackedInt32Array<class_PackedInt32Array>` 和 :ref:`PackedInt64Array<class_PackedInt64Array>` 使用该注解。
 
 ::
 
@@ -423,9 +423,9 @@ You can also use the annotation on :ref:`Array<class_Array>`\ \[:ref:`int<class_
 
 **@export_flags_2d_navigation**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_2d_navigation>`
 
-Export an integer property as a bit flag field for 2D navigation layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/2d_navigation/layer_1<class_ProjectSettings_property_layer_names/2d_navigation/layer_1>`.
+将整数属性导出为 2D 导航层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/2d_navigation/layer_1<class_ProjectSettings_property_layer_names/2d_navigation/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_NAVIGATION>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_NAVIGATION>`\ 。
 
 ::
 
@@ -442,9 +442,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_NAVIGATION<class_@GlobalScop
 
 **@export_flags_2d_physics**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_2d_physics>`
 
-Export an integer property as a bit flag field for 2D physics layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/2d_physics/layer_1<class_ProjectSettings_property_layer_names/2d_physics/layer_1>`.
+将整数属性导出为 2D 物理层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/2d_physics/layer_1<class_ProjectSettings_property_layer_names/2d_physics/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_PHYSICS>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_PHYSICS>`\ 。
 
 ::
 
@@ -461,9 +461,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_PHYSICS<class_@GlobalScope_c
 
 **@export_flags_2d_render**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_2d_render>`
 
-Export an integer property as a bit flag field for 2D render layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/2d_render/layer_1<class_ProjectSettings_property_layer_names/2d_render/layer_1>`.
+将整数属性导出为 2D 渲染层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/2d_render/layer_1<class_ProjectSettings_property_layer_names/2d_render/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_2D_RENDER>`\ 。
 
 ::
 
@@ -480,9 +480,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_2D_RENDER<class_@GlobalScope_co
 
 **@export_flags_3d_navigation**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_3d_navigation>`
 
-Export an integer property as a bit flag field for 3D navigation layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/3d_navigation/layer_1<class_ProjectSettings_property_layer_names/3d_navigation/layer_1>`.
+将整数属性导出为 3D 导航层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/3d_navigation/layer_1<class_ProjectSettings_property_layer_names/3d_navigation/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_NAVIGATION>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_NAVIGATION>`\ 。
 
 ::
 
@@ -499,9 +499,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_NAVIGATION<class_@GlobalScop
 
 **@export_flags_3d_physics**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_3d_physics>`
 
-Export an integer property as a bit flag field for 3D physics layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/3d_physics/layer_1<class_ProjectSettings_property_layer_names/3d_physics/layer_1>`.
+将整数属性导出为 3D 物理层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/3d_physics/layer_1<class_ProjectSettings_property_layer_names/3d_physics/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_PHYSICS>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_PHYSICS>`\ 。
 
 ::
 
@@ -518,9 +518,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_PHYSICS<class_@GlobalScope_c
 
 **@export_flags_3d_render**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_3d_render>`
 
-Export an integer property as a bit flag field for 3D render layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/3d_render/layer_1<class_ProjectSettings_property_layer_names/3d_render/layer_1>`.
+将整数属性导出为 3D 渲染层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/3d_render/layer_1<class_ProjectSettings_property_layer_names/3d_render/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_RENDER>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_3D_RENDER>`\ 。
 
 ::
 
@@ -537,9 +537,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_3D_RENDER<class_@GlobalScope_co
 
 **@export_flags_avoidance**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_flags_avoidance>`
 
-Export an integer property as a bit flag field for navigation avoidance layers. The widget in the Inspector dock will use the layer names defined in :ref:`ProjectSettings.layer_names/avoidance/layer_1<class_ProjectSettings_property_layer_names/avoidance/layer_1>`.
+将整数属性导出为导航避障层的位标志字段。检查器面板中对应的部件会使用在 :ref:`ProjectSettings.layer_names/avoidance/layer_1<class_ProjectSettings_property_layer_names/avoidance/layer_1>` 中定义的层名称。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_AVOIDANCE>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE<class_@GlobalScope_constant_PROPERTY_HINT_LAYERS_AVOIDANCE>`\ 。
 
 ::
 
@@ -556,9 +556,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_LAYERS_AVOIDANCE<class_@GlobalScope_co
 
 **@export_global_dir**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_global_dir>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], or :ref:`PackedStringArray<class_PackedStringArray>` property as an absolute path to a directory. The path can be picked from the entire filesystem. See :ref:`@export_dir<class_@GDScript_annotation_@export_dir>` to limit it to the project folder and its subfolders.
+导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \] 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，用作指向目录的绝对路径，该路径可以从整个文件系统中选取。要限制为项目文件夹及其子文件夹，见 :ref:`@export_dir<class_@GDScript_annotation_@export_dir>`\ 。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_DIR<class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_DIR>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_DIR<class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_DIR>`\ 。
 
 ::
 
@@ -575,11 +575,11 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_DIR<class_@GlobalScope_constant
 
 **@export_global_file**\ (\ filter\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_global_file>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], or :ref:`PackedStringArray<class_PackedStringArray>` property as an absolute path to a file. The path can be picked from the entire filesystem. See :ref:`@export_file<class_@GDScript_annotation_@export_file>` to limit it to the project folder and its subfolders.
+导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \] 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，用作指向文件的绝对路径，该路径可以从整个文件系统中选取。要限制为项目文件夹及其子文件夹，见 :ref:`@export_file<class_@GDScript_annotation_@export_file>`\ 。
 
-If ``filter`` is provided, only matching files will be available for picking.
+如果提供了 ``filter``\ ，则只有匹配的文件可供选取。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_FILE>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_FILE>`\ 。
 
 ::
 
@@ -597,13 +597,13 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_constan
 
 **@export_group**\ (\ name\: :ref:`String<class_String>`, prefix\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_group>`
 
-Define a new group for the following exported properties. This helps to organize properties in the Inspector dock. Groups can be added with an optional ``prefix``, which would make group to only consider properties that have this prefix. The grouping will break on the first property that doesn't have a prefix. The prefix is also removed from the property's name in the Inspector dock.
+为以下导出的属性定义一个新分组，分组有助于在检查器面板中组织属性。添加新分组时可以选择性地提供 ``prefix`` 前缀，此时分组将仅考虑具有此前缀的属性。分组将在第一个没有该前缀的属性处结束，前缀也将从检查器面板中的属性名称当中移除。
 
-If no ``prefix`` is provided, then every following property will be added to the group. The group ends when then next group or category is defined. You can also force end a group by using this annotation with empty strings for parameters, ``@export_group("", "")``.
+如果未提供 ``prefix``\ ，则该注解后续的每个属性都将添加到该分组中，在定义下一个分组或类别时，该分组结束。你还可以通过将此注解与空字符串的参数一起使用来强制结束分组：\ ``@export_group("", "")``\ 。
 
-Groups cannot be nested, use :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>` to add subgroups within groups.
+分组不能嵌套使用，请使用 :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>` 在分组内添加子分组。
 
-See also :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_PROPERTY_USAGE_GROUP>`.
+另见 :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_PROPERTY_USAGE_GROUP>`\ 。
 
 ::
 
@@ -628,9 +628,9 @@ See also :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_PRO
 
 **@export_multiline**\ (\ hint\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_multiline>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` or :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] property with a large :ref:`TextEdit<class_TextEdit>` widget instead of a :ref:`LineEdit<class_LineEdit>`. This adds support for multiline content and makes it easier to edit large amount of text stored in the property.
+代替普通的 :ref:`LineEdit<class_LineEdit>` 组件，并使用较大的 :ref:`TextEdit<class_TextEdit>` 组件来导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \]、\ :ref:`PackedStringArray<class_PackedStringArray>`\ 、\ :ref:`Dictionary<class_Dictionary>` 或 :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] 属性，这样就能够支持编辑多行内容，便于在编辑属性中存储大量文本。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`\ 。
 
 ::
 
@@ -648,16 +648,16 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_cons
 
 **@export_node_path**\ (\ type\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_node_path>`
 
-Export a :ref:`NodePath<class_NodePath>` or :ref:`Array<class_Array>`\ \[:ref:`NodePath<class_NodePath>`\ \] property with a filter for allowed node types.
+导出 :ref:`NodePath<class_NodePath>` 或 :ref:`Array<class_Array>`\ \[:ref:`NodePath<class_NodePath>`\ \] 属性，能够指定要过滤的节点类型。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_VALID_TYPES>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_VALID_TYPES>`\ 。
 
 ::
 
     @export_node_path("Button", "TouchScreenButton") var some_button
     @export_node_path("Button", "TouchScreenButton") var many_buttons: Array[NodePath]
 
-\ **Note:** The type must be a native class or a globally registered script (using the ``class_name`` keyword) that inherits :ref:`Node<class_Node>`.
+\ **注意：**\ 类型必须是原生类型或（通过使用 ``[class_name]`` 关键字）全局注册的继承自 :ref:`Node<class_Node>` 的脚本。
 
 .. rst-class:: classref-item-separator
 
@@ -669,9 +669,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalSco
 
 **@export_placeholder**\ (\ placeholder\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_annotation_@export_placeholder>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], or :ref:`PackedStringArray<class_PackedStringArray>` property with a placeholder text displayed in the editor widget when no value is present.
+导出 :ref:`String<class_String>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \] 或 :ref:`PackedStringArray<class_PackedStringArray>` 属性，当值不存在时会在编辑器小部件中显示占位文本。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_PLACEHOLDER_TEXT>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_PLACEHOLDER_TEXT>`\ 。
 
 ::
 
@@ -688,13 +688,13 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT<class_@GlobalScope_co
 
 **@export_range**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`, step\: :ref:`float<class_float>` = 1.0, extra_hints\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_range>`
 
-Export an :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>`, or :ref:`PackedFloat64Array<class_PackedFloat64Array>` property as a range value. The range must be defined by ``min`` and ``max``, as well as an optional ``step`` and a variety of extra hints. The ``step`` defaults to ``1`` for integer properties. For floating-point numbers this value depends on your :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>` setting.
+导出 :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \]、\ :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \]、\ :ref:`PackedByteArray<class_PackedByteArray>`\ 、\ :ref:`PackedInt32Array<class_PackedInt32Array>`\ 、\ :ref:`PackedInt64Array<class_PackedInt64Array>`\ 、\ :ref:`PackedFloat32Array<class_PackedFloat32Array>` 或 :ref:`PackedFloat64Array<class_PackedFloat64Array>` 属性，能够指定取值范围。范围必须由最小值提示 ``min`` 和最大值提示 ``max`` 定义，还有一个可选的步长提示 ``step`` 和各种额外的提示。对于整数属性，\ ``step`` 的默认值是 ``1`` 。对于浮点数，这个值取决于你的 :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>` 所设置的值。
 
-If hints ``"or_greater"`` and ``"or_less"`` are provided, the editor widget will not cap the value at range boundaries. The ``"exp"`` hint will make the edited values on range to change exponentially. The ``"prefer_slider"`` hint will make integer values use the slider instead of arrows for editing, while ``"hide_control"`` will hide the element controlling the value of the editor widget.
+如果提供了 ``"or_greater"`` 和 ``"or_less"`` 提示，则编辑器部件将不会在其范围边界处对数值进行限制。\ ``"exp"`` 提示将使范围内的编辑值以指数形式变化。\ ``"prefer_slider"`` 提示使整数值通过滑块而非箭头进行编辑，而 ``"hide_control"`` 提示会隐藏编辑器部件中用于控制值的元素。
 
-Hints also allow to indicate the units for the edited value. Using ``"radians_as_degrees"`` you can specify that the actual value is in radians, but should be displayed in degrees in the Inspector dock (the range values are also in degrees). ``"degrees"`` allows to add a degree sign as a unit suffix (the value is unchanged). Finally, a custom suffix can be provided using ``"suffix:unit"``, where "unit" can be any string.
+提示还允许指示编辑的值的单位。通过使用 ``"radians_as_degrees"`` 提示，你可以指定实际值以弧度为单位，在检查器中以角度为单位显示的值（其范围值也使用角度）。\ ``"degrees"`` 提示允许添加一个角度符号作为单位后缀。最后，还可以使用 ``"suffix:单位"`` 这种提示来提供一个自定义后缀，其中“单位”可以是任意字符串。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`\ 。
 
 ::
 
@@ -720,13 +720,13 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROP
 
 **@export_storage**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@export_storage>`
 
-Export a property with :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` flag. The property is not displayed in the editor, but it is serialized and stored in the scene or resource file. This can be useful for :ref:`@tool<class_@GDScript_annotation_@tool>` scripts. Also the property value is copied when :ref:`Resource.duplicate()<class_Resource_method_duplicate>` or :ref:`Node.duplicate()<class_Node_method_duplicate>` is called, unlike non-exported variables.
+使用 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 标志导出属性，让该属性不会在编辑器中显示，但是会将其序列化并存储到场景或资源文件中。常用于 :ref:`@tool<class_@GDScript_annotation_@tool>` 脚本当中。调用 :ref:`Resource.duplicate()<class_Resource_method_duplicate>` 和 :ref:`Node.duplicate()<class_Node_method_duplicate>` 时也会复制该属性的值，而其他非导出变量则不会。
 
 ::
 
-    var a # Not stored in the file, not displayed in the editor.
-    @export_storage var b # Stored in the file, not displayed in the editor.
-    @export var c: int # Stored in the file, displayed in the editor.
+    var a # 不保存进文件，不在编辑器中显示。
+    @export_storage var b # 保存进文件，不在编辑器中显示。
+    @export var c: int # 保存进文件，在编辑器中显示。
 
 .. rst-class:: classref-item-separator
 
@@ -738,9 +738,9 @@ Export a property with :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalSc
 
 **@export_subgroup**\ (\ name\: :ref:`String<class_String>`, prefix\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_subgroup>`
 
-Define a new subgroup for the following exported properties. This helps to organize properties in the Inspector dock. Subgroups work exactly like groups, except they need a parent group to exist. See :ref:`@export_group<class_@GDScript_annotation_@export_group>`.
+为接下来的导出属性定义一个新的子分组，有助于在检查器面板中组织属性。子分组的运作方式与分组类似，不过需要依赖于一个父级分组。见 :ref:`@export_group<class_@GDScript_annotation_@export_group>`\ 。
 
-See also :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_PROPERTY_USAGE_SUBGROUP>`.
+另见 :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_PROPERTY_USAGE_SUBGROUP>`\ 。
 
 ::
 
@@ -752,7 +752,7 @@ See also :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_
     @export var car_label = "Speedy"
     @export var car_number = 3
 
-\ **Note:** Subgroups cannot be nested, but you can use the slash separator (``/``) to achieve the desired effect:
+\ **注意：**\ 子分组不能嵌套，但是你可以使用斜杠分隔符（\ ``/``\ ）达到所需效果：
 
 ::
 
@@ -777,42 +777,42 @@ See also :ref:`@GlobalScope.PROPERTY_USAGE_SUBGROUP<class_@GlobalScope_constant_
 
 **@export_tool_button**\ (\ text\: :ref:`String<class_String>`, icon\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_annotation_@export_tool_button>`
 
-Export a :ref:`Callable<class_Callable>` property as a clickable button with the label ``text``. When the button is pressed, the callable is called.
+导出 :ref:`Callable<class_Callable>` 属性，显示为标签为 ``text`` 的可点击按钮。按下按钮会调用该可调用体。
 
-If ``icon`` is specified, it is used to fetch an icon for the button via :ref:`Control.get_theme_icon()<class_Control_method_get_theme_icon>`, from the ``"EditorIcons"`` theme type. If ``icon`` is omitted, the default ``"Callable"`` icon is used instead.
+如果指定了 ``icon``\ ，则按钮的图标会通过 :ref:`Control.get_theme_icon()<class_Control_method_get_theme_icon>` 从 ``"EditorIcons"`` 主题类型中获取。如果省略 ``icon``\ ，则会使用默认的 ``"Callable"`` 图标。
 
-Consider using the :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` to allow the action to be reverted safely.
+请考虑使用 :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`\ ，从而安全地撤销动作。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON<class_@GlobalScope_constant_PROPERTY_HINT_TOOL_BUTTON>`.
+另见 :ref:`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON<class_@GlobalScope_constant_PROPERTY_HINT_TOOL_BUTTON>`\ 。
 
 ::
 
     @tool
     extends Sprite2D
 
-    @export_tool_button("Hello") var hello_action = hello
-    @export_tool_button("Randomize the color!", "ColorRect")
+    @export_tool_button("你好") var hello_action = hello
+    @export_tool_button("随机颜色！", "ColorRect")
     var randomize_color_action = randomize_color
 
     func hello():
-        print("Hello world!")
+        print("你好世界！")
 
     func randomize_color():
         var undo_redo = EditorInterface.get_editor_undo_redo()
-        undo_redo.create_action("Randomized Sprite2D Color")
+        undo_redo.create_action("随机设置 Sprite2D 的颜色")
         undo_redo.add_do_property(self, &"self_modulate", Color(randf(), randf(), randf()))
         undo_redo.add_undo_property(self, &"self_modulate", self_modulate)
         undo_redo.commit_action()
 
-\ **Note:** The property is exported without the :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` flag because a :ref:`Callable<class_Callable>` cannot be properly serialized and stored in a file.
+\ **注意：**\ 该属性导出时不带 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 标识，因为 :ref:`Callable<class_Callable>` 无法正确序列化存储在文件中。
 
-\ **Note:** In an exported project neither :ref:`EditorInterface<class_EditorInterface>` nor :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` exist, which may cause some scripts to break. To prevent this, you can use :ref:`Engine.get_singleton()<class_Engine_method_get_singleton>` and omit the static type from the variable declaration:
+\ **注意：**\ 导出后的项目中，\ :ref:`EditorInterface<class_EditorInterface>` 和 :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` 均不存在，可能导致部分脚本损坏。为了防止这种情况，你可以使用 :ref:`Engine.get_singleton()<class_Engine_method_get_singleton>` 并省略变量声明中的静态类型：
 
 ::
 
     var undo_redo = Engine.get_singleton(&"EditorInterface").get_editor_undo_redo()
 
-\ **Note:** Avoid storing lambda callables in member variables of :ref:`RefCounted<class_RefCounted>`-based classes (e.g. resources), as this can lead to memory leaks. Use only method callables and optionally :ref:`Callable.bind()<class_Callable_method_bind>` or :ref:`Callable.unbind()<class_Callable_method_unbind>`.
+\ **注意：**\ 请避免在 :ref:`RefCounted<class_RefCounted>` 的派生类（例如资源类）的成员变量中存储 Lambda 可调用体，否则可能导致内存泄漏。只能使用方法可调用体，也可搭配 :ref:`Callable.bind()<class_Callable_method_bind>` 和 :ref:`Callable.unbind()<class_Callable_method_unbind>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -824,17 +824,17 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_TOOL_BUTTON<class_@GlobalScope_constan
 
 **@icon**\ (\ icon_path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_annotation_@icon>`
 
-Add a custom icon to the current script. The icon specified at ``icon_path`` is displayed in the Scene dock for every node of that class, as well as in various editor dialogs.
+为当前脚本添加自定义图标。\ ``icon_path`` 所指向的图标会在“场景”面板中该类的所有节点上显示，也会显示在各种编辑器对话框当中。
 
 ::
 
     @icon("res://path/to/class/icon.svg")
 
-\ **Note:** Only the script can have a custom icon. Inner classes are not supported.
+\ **注意：**\ 只有脚本可以带有自定义图标，不支持内部类。
 
-\ **Note:** As annotations describe their subject, the :ref:`@icon<class_@GDScript_annotation_@icon>` annotation must be placed before the class definition and inheritance.
+\ **注意：**\ 由于注解描述的是它们的对象，因此 :ref:`@icon<class_@GDScript_annotation_@icon>` 注解必须放在类定义语句和继承语句之前。
 
-\ **Note:** Unlike most other annotations, the argument of the :ref:`@icon<class_@GDScript_annotation_@icon>` annotation must be a string literal (constant expressions are not supported).
+\ **注意：**\ 与其他大多数注解不同，\ :ref:`@icon<class_@GDScript_annotation_@icon>` 注解的参数必须是字符串字面量（不支持常量表达式）。
 
 .. rst-class:: classref-item-separator
 
@@ -846,7 +846,7 @@ Add a custom icon to the current script. The icon specified at ``icon_path`` is 
 
 **@onready**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@onready>`
 
-Mark the following property as assigned when the :ref:`Node<class_Node>` is ready. Values for these properties are not assigned immediately when the node is initialized (:ref:`Object._init()<class_Object_private_method__init>`), and instead are computed and stored right before :ref:`Node._ready()<class_Node_private_method__ready>`.
+标记后续属性会在 :ref:`Node<class_Node>` 就绪时赋值。节点初始化（\ :ref:`Object._init()<class_Object_private_method__init>`\ ）时不会立即对这些属性赋值，而是会在即将调用 :ref:`Node._ready()<class_Node_private_method__ready>` 之前进行计算与储存。
 
 ::
 
@@ -862,17 +862,17 @@ Mark the following property as assigned when the :ref:`Node<class_Node>` is read
 
 **@rpc**\ (\ mode\: :ref:`String<class_String>` = "authority", sync\: :ref:`String<class_String>` = "call_remote", transfer_mode\: :ref:`String<class_String>` = "reliable", transfer_channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_@GDScript_annotation_@rpc>`
 
-Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
+将后续方法标记为远程过程调用。见\ :doc:`《高阶多人游戏》 <../tutorials/networking/high_level_multiplayer>`\ 。
 
-If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
+如果将 ``mode`` 设为 ``"any_peer"``\ ，则会允许所有对等体调用该 RPC 函数。若只允许该对等体的控制方调用，则应该将 ``mode`` 保持为 ``"authority"``\ 。使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，这些模式分别对应的是 RPC 模式 :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` 和 :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` 。见 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`\ 。如果非控制方的对等体尝试调用仅限控制方调用的函数，则不会执行该函数。此时如果本地能够检测到错误（即本地与远程对等体的 RPC 配置一致），则发送方对等体会显示错误消息。否则远程对等体会检测到错误并在远程一侧输出。
 
-If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config()<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
+如果将 ``sync`` 提示设为 ``"call_remote"``\ ，则该函数只会在远程对等体上执行，不会在本地执行。要让这个函数同时也在本地执行，请将 ``sync`` 设置为 ``"call_local"``\ 。这等价于在使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，将 ``call_local`` 设置为 ``true``\ 。
 
-The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+\ ``transfer_mode`` 接受的值有 ``"unreliable"``\ 、\ ``"unreliable_ordered"``\ 、\ ``"reliable"``\ 。该参数设置底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的传输模式。见 :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`\ 。
 
-The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+\ ``transfer_channel`` 定义了底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的频道。见 :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`\ 。
 
-The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
+\ ``mode``\ 、\ ``sync`` 和 ``transfer_mode`` 的顺序是无关紧要的，但是同一参数的相关取值最多出现一次。\ ``transfer_channel`` 必须为第四个参数（必须同时指定前三个参数）。
 
 ::
 
@@ -882,10 +882,10 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "reliable", 0) # Equivalent to @rpc
+    @rpc("authority", "call_remote", "unreliable", 0) # 等价于 @rpc
     func fn_default(): pass
 
-\ **Note:** Methods annotated with :ref:`@rpc<class_@GDScript_annotation_@rpc>` cannot receive objects which define required parameters in :ref:`Object._init()<class_Object_private_method__init>`. See :ref:`Object._init()<class_Object_private_method__init>` for more details.
+\ **注意：**\ 使用 :ref:`@rpc<class_@GDScript_annotation_@rpc>` 注解的方法无法接收在 :ref:`Object._init()<class_Object_private_method__init>` 中定义了必要参数的对象。详情请参阅 :ref:`Object._init()<class_Object_private_method__init>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -897,11 +897,11 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
 
 **@static_unload**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@static_unload>`
 
-Make a script with static variables to not persist after all references are lost. If the script is loaded again the static variables will revert to their default values.
+使具有静态变量的脚本在所有引用丢失后不持久化。如果再次加载脚本，静态变量将恢复为默认值。
 
-\ **Note:** As annotations describe their subject, the :ref:`@static_unload<class_@GDScript_annotation_@static_unload>` annotation must be placed before the class definition and inheritance.
+\ **注意：**\ 因为注解需要描述对象，所以 :ref:`@static_unload<class_@GDScript_annotation_@static_unload>` 注解必须放在类定义和继承之前。
 
-\ **Warning:** Currently, due to a bug, scripts are never freed, even if :ref:`@static_unload<class_@GDScript_annotation_@static_unload>` annotation is used.
+\ **警告：**\ 目前由于一个 bug，即使使用了\ :ref:`@static_unload<class_@GDScript_annotation_@static_unload>` 注解，脚本也永远不会释放。
 
 .. rst-class:: classref-item-separator
 
@@ -913,14 +913,14 @@ Make a script with static variables to not persist after all references are lost
 
 **@tool**\ (\ ) :ref:`🔗<class_@GDScript_annotation_@tool>`
 
-Mark the current script as a tool script, allowing it to be loaded and executed by the editor. See :doc:`Running code in the editor <../tutorials/plugins/running_code_in_the_editor>`.
+将当前脚本标记为工具脚本，允许该脚本由编辑器所加载与执行。见\ :doc:`《在编辑器中运行代码》 <../tutorials/plugins/running_code_in_the_editor>`\ 。
 
 ::
 
     @tool
     extends Node
 
-\ **Note:** As annotations describe their subject, the :ref:`@tool<class_@GDScript_annotation_@tool>` annotation must be placed before the class definition and inheritance.
+\ **注意：**\ 因为注解描述对象的关系，必须把 :ref:`@tool<class_@GDScript_annotation_@tool>` 注解放在类定义和继承之前。
 
 .. rst-class:: classref-item-separator
 
@@ -932,17 +932,17 @@ Mark the current script as a tool script, allowing it to be loaded and executed 
 
 **@warning_ignore**\ (\ warning\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@warning_ignore>`
 
-Mark the following statement to ignore the specified ``warning``. See :doc:`GDScript warning system <../tutorials/scripting/gdscript/warning_system>`.
+将后续语句标记为忽略指定的 ``warning`` 警告。见\ :doc:`《GDScript 警告系统》 <../tutorials/scripting/gdscript/warning_system>`\ 。
 
 ::
 
     func test():
-        print("hello")
+        print("你好")
         return
         @warning_ignore("unreachable_code")
-        print("unreachable")
+        print("无法到达")
 
-See also :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` and :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>`.
+另见 :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` 和 :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -954,9 +954,9 @@ See also :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_
 
 **@warning_ignore_restore**\ (\ warning\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@warning_ignore_restore>`
 
-Stops ignoring the listed warning types after :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>`. Ignoring the specified warning types will be reset to Project Settings. This annotation can be omitted to ignore the warning types until the end of the file.
+停止忽略列在 :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` 注解后面的警告，对特定警告的忽略将重置为项目设置中的默认配置。该注解可省略，如此则会持续忽略指定警告类型直至文件末尾。
 
-\ **Note:** Unlike most other annotations, arguments of the :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>` annotation must be string literals (constant expressions are not supported).
+\ **注意：**\ 与大多数其他注解不同，注解 :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>` 的参数必须是字符串字面量（不支持常量表达式）。
 
 .. rst-class:: classref-item-separator
 
@@ -968,7 +968,7 @@ Stops ignoring the listed warning types after :ref:`@warning_ignore_start<class_
 
 **@warning_ignore_start**\ (\ warning\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@warning_ignore_start>`
 
-Starts ignoring the listed warning types until the end of the file or the :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>` annotation with the given warning type.
+开始忽略列出的警告类型，直至文件末尾或带有给定警告类型的 :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>` 注解处为止。
 
 ::
 
@@ -980,9 +980,9 @@ Starts ignoring the listed warning types until the end of the file or the :ref:`
         @warning_ignore_restore("unused_variable")
         var d = 4 # Warning (if enabled in the Project Settings).
 
-\ **Note:** To suppress a single warning, use :ref:`@warning_ignore<class_@GDScript_annotation_@warning_ignore>` instead.
+\ **注意：**\ 要抑制单个警告，请改用 :ref:`@warning_ignore<class_@GDScript_annotation_@warning_ignore>` 注解。
 
-\ **Note:** Unlike most other annotations, arguments of the :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` annotation must be string literals (constant expressions are not supported).
+\ **注意：**\ 与大多数其他注解不同，注解 :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` 的参数必须是字符串字面量（不支持常量表达式）。
 
 .. rst-class:: classref-section-separator
 
@@ -990,8 +990,8 @@ Starts ignoring the listed warning types until the end of the file or the :ref:`
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_@GDScript_method_Color8:
 
@@ -999,17 +999,17 @@ Method Descriptions
 
 :ref:`Color<class_Color>` **Color8**\ (\ r8\: :ref:`int<class_int>`, g8\: :ref:`int<class_int>`, b8\: :ref:`int<class_int>`, a8\: :ref:`int<class_int>` = 255\ ) :ref:`🔗<class_@GDScript_method_Color8>`
 
-**Deprecated:** Use :ref:`Color.from_rgba8()<class_Color_method_from_rgba8>` instead.
+**已弃用：** Use :ref:`Color.from_rgba8()<class_Color_method_from_rgba8>` instead.
 
-Returns a :ref:`Color<class_Color>` constructed from red (``r8``), green (``g8``), blue (``b8``), and optionally alpha (``a8``) integer channels, each divided by ``255.0`` for their final value. Using :ref:`Color8()<class_@GDScript_method_Color8>` instead of the standard :ref:`Color<class_Color>` constructor is useful when you need to match exact color values in an :ref:`Image<class_Image>`.
+返回一个由整数红通道（\ ``r8``\ ）、整数绿通道（\ ``g8``\ ）、整数蓝通道（\ ``b8``\ ）和可选的整数 Alpha 通道（\ ``a8``\ ）构造的 :ref:`Color<class_Color>`\ ，每个通道的最终值都会除以 ``255.0``\ 。如果你需要精确匹配 :ref:`Image<class_Image>` 中的颜色值，\ :ref:`Color8()<class_@GDScript_method_Color8>` 比标准的 :ref:`Color<class_Color>` 构造函数更有用。
 
 ::
 
-    var red = Color8(255, 0, 0)             # Same as Color(1, 0, 0).
-    var dark_blue = Color8(0, 0, 51)        # Same as Color(0, 0, 0.2).
-    var my_color = Color8(306, 255, 0, 102) # Same as Color(1.2, 1, 0, 0.4).
+    var red = Color8(255, 0, 0)             # 与 Color(1, 0, 0) 相同
+    var dark_blue = Color8(0, 0, 51)        # 与 Color(0, 0, 0.2) 相同。
+    var my_color = Color8(306, 255, 0, 102) # 与 Color(1.2, 1, 0, 0.4) 相同。
 
-\ **Note:** Due to the lower precision of :ref:`Color8()<class_@GDScript_method_Color8>` compared to the standard :ref:`Color<class_Color>` constructor, a color created with :ref:`Color8()<class_@GDScript_method_Color8>` will generally not be equal to the same color created with the standard :ref:`Color<class_Color>` constructor. Use :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>` for comparisons to avoid issues with floating-point precision error.
+\ **注意：**\ 由于 :ref:`Color8()<class_@GDScript_method_Color8>` 比标准 :ref:`Color<class_Color>` 构造函数精度更低，故使用 :ref:`Color8()<class_@GDScript_method_Color8>` 创建的颜色通常与使用标准 :ref:`Color<class_Color>` 构造函数创建的相同颜色不相等。请使用 :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>` 进行比较，避免浮点数精度误差。
 
 .. rst-class:: classref-item-separator
 
@@ -1021,22 +1021,22 @@ Returns a :ref:`Color<class_Color>` constructed from red (``r8``), green (``g8``
 
 |void| **assert**\ (\ condition\: :ref:`bool<class_bool>`, message\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_@GDScript_method_assert>`
 
-Asserts that the ``condition`` is ``true``. If the ``condition`` is ``false``, an error is generated. When running from the editor, the running project will also be paused until you resume it. This can be used as a stronger form of :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` for reporting errors to project developers or add-on users.
+断言条件 ``condition`` 为 ``true``\ 。如果条件 ``condition`` 为 ``false`` ，则会生成错误。如果是从编辑器运行的断言，正在运行的项目还会被暂停，需要手动恢复。该函数可以作为 :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` 的加强版使用，用于向项目开发者和插件用户报错。
 
-An optional ``message`` can be shown in addition to the generic "Assertion failed" message. You can use this to provide additional details about why the assertion failed.
+如果给出了可选的 ``message`` 参数，该信息会和通用的“Assertion failed”消息一起显示。你可以使用它来提供关于断言失败原因等详细信息。
 
-\ **Warning:** For performance reasons, the code inside :ref:`assert()<class_@GDScript_method_assert>` is only executed in debug builds or when running the project from the editor. Don't include code that has side effects in an :ref:`assert()<class_@GDScript_method_assert>` call. Otherwise, the project will behave differently when exported in release mode.
+\ **警告：**\ 出于对性能的考虑，\ :ref:`assert()<class_@GDScript_method_assert>` 中的代码只会在调试版本或者从编辑器运行项目时执行。请勿在 :ref:`assert()<class_@GDScript_method_assert>` 调用中加入具有副作用的代码。否则，项目在以发布模式导出后将会出现行为不一致的现象。
 
 ::
 
-    # Imagine we always want speed to be between 0 and 20.
-    var speed = -10
-    assert(speed < 20) # True, the program will continue.
-    assert(speed >= 0) # False, the program will stop.
-    assert(speed >= 0 and speed < 20) # You can also combine the two conditional statements in one check.
-    assert(speed < 20, "the speed limit is 20") # Show a message.
+    # 比如说我们希望 speed 始终在 0 和 20 之间。
+    speed = -10
+    assert(speed < 20) # True，程序会继续执行
+    assert(speed >= 0) # False，程序会停止
+    assert(speed >= 0 and speed < 20) # 你还可以在单次检查中合并两个条件语句
+    assert(speed < 20, "限速为 20") # 显示消息。
 
-\ **Note:** :ref:`assert()<class_@GDScript_method_assert>` is a keyword, not a function. So you cannot access it as a :ref:`Callable<class_Callable>` or use it inside expressions.
+\ **注意：**\ :ref:`assert()<class_@GDScript_method_assert>` 是关键字而非函数，无法作为 :ref:`Callable<class_Callable>` 访问，也无法在表达式中使用。
 
 .. rst-class:: classref-item-separator
 
@@ -1048,14 +1048,14 @@ An optional ``message`` can be shown in addition to the generic "Assertion faile
 
 :ref:`String<class_String>` **char**\ (\ code\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GDScript_method_char>`
 
-Returns a single character (as a :ref:`String<class_String>` of length 1) of the given Unicode code point ``code``.
+返回给定 Unicode 码位 ``code`` 的单个字符（作为长度为 1 的 :ref:`String<class_String>`\ ）。
 
 ::
 
-    print(char(65))     # Prints "A"
-    print(char(129302)) # Prints "🤖" (robot face emoji)
+    print(char(65))           # 打印 "A"
+    print(char(129302)) # 打印 "🤖" （机器人脸的emoji）
 
-This is the inverse of :ref:`ord()<class_@GDScript_method_ord>`. See also :ref:`String.chr()<class_String_method_chr>` and :ref:`String.unicode_at()<class_String_method_unicode_at>`.
+这是 :ref:`ord()<class_@GDScript_method_ord>` 的逆运算。参见 :ref:`String.chr()<class_String_method_chr>` 和 :ref:`String.unicode_at()<class_String_method_unicode_at>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1067,18 +1067,18 @@ This is the inverse of :ref:`ord()<class_@GDScript_method_ord>`. See also :ref:`
 
 :ref:`Variant<class_Variant>` **convert**\ (\ what\: :ref:`Variant<class_Variant>`, type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ) :ref:`🔗<class_@GDScript_method_convert>`
 
-**Deprecated:** Use :ref:`@GlobalScope.type_convert()<class_@GlobalScope_method_type_convert>` instead.
+**已弃用：** Use :ref:`@GlobalScope.type_convert()<class_@GlobalScope_method_type_convert>` instead.
 
-Converts ``what`` to ``type`` in the best way possible. The ``type`` uses the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+在可能的情况下将 ``what`` 转换为 ``type`` 类型的值， ``type`` 使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 值。
 
 ::
 
     var a = [4, 2.5, 1.2]
-    print(a is Array) # Prints true
+    print(a is Array) # 输出 true
 
     var b = convert(a, TYPE_PACKED_BYTE_ARRAY)
-    print(b)          # Prints [4, 2, 1]
-    print(b is Array) # Prints false
+    print(b)          # 输出 [4, 2, 1]
+    print(b is Array) # 输出 false
 
 .. rst-class:: classref-item-separator
 
@@ -1090,9 +1090,9 @@ Converts ``what`` to ``type`` in the best way possible. The ``type`` uses the :r
 
 :ref:`Object<class_Object>` **dict_to_inst**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_@GDScript_method_dict_to_inst>`
 
-**Deprecated:** Consider using :ref:`JSON.to_native()<class_JSON_method_to_native>` or :ref:`Object.get_property_list()<class_Object_method_get_property_list>` instead.
+**已弃用：** Consider using :ref:`JSON.to_native()<class_JSON_method_to_native>` or :ref:`Object.get_property_list()<class_Object_method_get_property_list>` instead.
 
-Converts a ``dictionary`` (created with :ref:`inst_to_dict()<class_@GDScript_method_inst_to_dict>`) back to an Object instance. Can be useful for deserializing.
+将一个 ``dictionary`` （用 :ref:`inst_to_dict()<class_@GDScript_method_inst_to_dict>` 创建的）转换回为一个 Object 实例。在反序列化时可能会很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -1104,7 +1104,7 @@ Converts a ``dictionary`` (created with :ref:`inst_to_dict()<class_@GDScript_met
 
 :ref:`Array<class_Array>` **get_stack**\ (\ ) :ref:`🔗<class_@GDScript_method_get_stack>`
 
-Returns an array of dictionaries representing the current call stack.
+返回一个表示当前调用堆栈的字典数组，另见 :ref:`print_stack()<class_@GDScript_method_print_stack>`\ 。
 
 ::
 
@@ -1117,15 +1117,15 @@ Returns an array of dictionaries representing the current call stack.
     func bar():
         print(get_stack())
 
-Starting from ``_ready()``, ``bar()`` would print:
+从 ``_ready()`` 开始，\ ``bar()`` 将打印：
 
 .. code:: text
 
     [{function:bar, line:12, source:res://script.gd}, {function:foo, line:9, source:res://script.gd}, {function:_ready, line:6, source:res://script.gd}]
 
-See also :ref:`print_debug()<class_@GDScript_method_print_debug>`, :ref:`print_stack()<class_@GDScript_method_print_stack>`, and :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+另见 :ref:`print_debug()<class_@GDScript_method_print_debug>`\ ，\ :ref:`print_stack()<class_@GDScript_method_print_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
 
-\ **Note:** By default, backtraces are only available in editor builds and debug builds. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+\ **注意：** 默认情况下，调用堆栈跟踪仅在编辑器构建和调试构建中可用。若要为发布构建启用该功能，你需要启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1137,9 +1137,9 @@ See also :ref:`print_debug()<class_@GDScript_method_print_debug>`, :ref:`print_s
 
 :ref:`Dictionary<class_Dictionary>` **inst_to_dict**\ (\ instance\: :ref:`Object<class_Object>`\ ) :ref:`🔗<class_@GDScript_method_inst_to_dict>`
 
-**Deprecated:** Consider using :ref:`JSON.from_native()<class_JSON_method_from_native>` or :ref:`Object.get_property_list()<class_Object_method_get_property_list>` instead.
+**已弃用：** Consider using :ref:`JSON.from_native()<class_JSON_method_from_native>` or :ref:`Object.get_property_list()<class_Object_method_get_property_list>` instead.
 
-Returns the passed ``instance`` converted to a :ref:`Dictionary<class_Dictionary>`. Can be useful for serializing.
+将传入的实例 ``instance`` 转换为 :ref:`Dictionary<class_Dictionary>` 并返回。适用于序列化。
 
 ::
 
@@ -1149,16 +1149,16 @@ Returns the passed ``instance`` converted to a :ref:`Dictionary<class_Dictionary
         print(d.keys())
         print(d.values())
 
-Prints out:
+输出打印：
 
 .. code:: text
 
     [@subpath, @path, foo]
     [, res://test.gd, bar]
 
-\ **Note:** This function can only be used to serialize objects with an attached :ref:`GDScript<class_GDScript>` stored in a separate file. Objects without an attached script, with a script written in another language, or with a built-in script are not supported.
+\ **注意：**\ 只有附加了存储在单独文件中的 :ref:`GDScript<class_GDScript>` 的对象才能够被这个函数序列化。不支持未附加脚本的对象、使用其他语言脚本的对象、使用内置脚本的对象。
 
-\ **Note:** This function is not recursive, which means that nested objects will not be represented as dictionaries. Also, properties passed by reference (:ref:`Object<class_Object>`, :ref:`Dictionary<class_Dictionary>`, :ref:`Array<class_Array>`, and packed arrays) are copied by reference, not duplicated.
+\ **注意：**\ 这个函数不会进行递归操作，嵌套的对象不会以字典形式表示。另外，按引用传递的属性（\ :ref:`Object<class_Object>`\ 、\ :ref:`Dictionary<class_Dictionary>`\ 、\ :ref:`Array<class_Array>`\ 、紧缩数组等）会按引用进行复制，不会制作副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1170,17 +1170,17 @@ Prints out:
 
 :ref:`bool<class_bool>` **is_instance_of**\ (\ value\: :ref:`Variant<class_Variant>`, type\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GDScript_method_is_instance_of>`
 
-Returns ``true`` if ``value`` is an instance of ``type``. The ``type`` value must be one of the following:
+如果 ``value`` 为 ``type`` 类型的实例，则返回 ``true``\ 。\ ``type`` 的值必须为下列值之一：
 
-- A constant from the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` enumeration, for example :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`.
+- :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 枚举常量，如 :ref:`@GlobalScope.TYPE_INT<class_@GlobalScope_constant_TYPE_INT>`\ 。
 
-- An :ref:`Object<class_Object>`-derived class which exists in :ref:`ClassDB<class_ClassDB>`, for example :ref:`Node<class_Node>`.
+- :ref:`ClassDB<class_ClassDB>` 中存在的派生自 :ref:`Object<class_Object>` 的类，如 :ref:`Node<class_Node>`\ 。
 
-- A :ref:`Script<class_Script>` (you can use any class, including inner one).
+- :ref:`Script<class_Script>`\ （可以用任何类，包括内部类）。
 
-Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant value. The ``is`` operator supports more features (such as typed arrays). Use the operator instead of this method if you do not need to check the type dynamically.
+\ ``type`` 可以不是常量，这一点与 ``is`` 的右操作数不同，\ ``is`` 运算符支持的功能更多（例如类型化数组）。如果你不需要动态地检查类型，请使用该运算符，不要使用此方法。
 
-\ **Examples:**\ 
+\ **示例：**\ 
 
 ::
 
@@ -1189,9 +1189,9 @@ Unlike the right operand of the ``is`` operator, ``type`` can be a non-constant 
     print(is_instance_of(a, MyClass))
     print(is_instance_of(a, MyClass.InnerClass))
 
-\ **Note:** If ``value`` and/or ``type`` are freed objects (see :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`), or ``type`` is not one of the above options, this method will raise a runtime error.
+\ **注意：**\ 如果 ``value`` 和/或 ``type`` 为已释放的对象（见 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>`\ ），或者 ``type`` 不为以上选项中的任何一项，则此方法会报运行时错误。
 
-See also :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`type_exists()<class_@GDScript_method_type_exists>`, :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>` (and other :ref:`Array<class_Array>` methods).
+另见 :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`\ 、\ :ref:`type_exists()<class_@GDScript_method_type_exists>`\ 、\ :ref:`Array.is_same_typed()<class_Array_method_is_same_typed>`\ （以及其他 :ref:`Array<class_Array>` 方法）。
 
 .. rst-class:: classref-item-separator
 
@@ -1203,15 +1203,15 @@ See also :ref:`@GlobalScope.typeof()<class_@GlobalScope_method_typeof>`, :ref:`t
 
 :ref:`int<class_int>` **len**\ (\ var\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GDScript_method_len>`
 
-Returns the length of the given Variant ``var``. The length can be the character count of a :ref:`String<class_String>` or :ref:`StringName<class_StringName>`, the element count of any array type, or the size of a :ref:`Dictionary<class_Dictionary>`. For every other Variant type, a run-time error is generated and execution is stopped.
+返回给定 Variant ``var`` 的长度，该长度可以是 :ref:`String<class_String>` 或 :ref:`StringName<class_StringName>` 的字符数，也可以是任意数组类型的元素数或 :ref:`Dictionary<class_Dictionary>` 的大小等。对于所有其他 Variant 类型，都会生成运行时错误并停止执行。
 
 ::
 
     var a = [1, 2, 3, 4]
-    len(a) # Returns 4
+    len(a) # 返回 4
 
     var b = "Hello!"
-    len(b) # Returns 6
+    len(b) # 返回 6
 
 .. rst-class:: classref-item-separator
 
@@ -1223,22 +1223,22 @@ Returns the length of the given Variant ``var``. The length can be the character
 
 :ref:`Resource<class_Resource>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_method_load>`
 
-Returns a :ref:`Resource<class_Resource>` from the filesystem located at the absolute ``path``. Unless it's already referenced elsewhere (such as in another script or in the scene), the resource is loaded from disk on function call, which might cause a slight delay, especially when loading large scenes. To avoid unnecessary delays when loading something multiple times, either store the resource in a variable or use :ref:`preload()<class_@GDScript_method_preload>`. This method is equivalent of using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>` with :ref:`ResourceLoader.CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>`.
+返回一个位于文件系统绝对路径 ``path`` 下的 :ref:`Resource<class_Resource>`\ 。该资源除非已在其他地方引用（例如在另一个脚本或场景中），否则将在函数调用时从磁盘加载，可能会导致轻微的延迟，尤其是在加载大型场景时。为避免在多次加载某些内容时出现不必要的延迟，可以将资源存储在变量中，也可使用预加载 :ref:`preload()<class_@GDScript_method_preload>` 方法加载，该方法相当于使用 :ref:`ResourceLoader.CACHE_MODE_REUSE<class_ResourceLoader_constant_CACHE_MODE_REUSE>` 模式调用 :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`\ 。
 
-\ **Note:** Resource paths can be obtained by right-clicking on a resource in the FileSystem dock and choosing "Copy Path", or by dragging the file from the FileSystem dock into the current script.
+\ **注意：**\ 资源路径可以通过右键单击文件系统停靠面板中的资源并选择“复制路径”，或将文件从文件系统停靠面板拖到脚本中获得。
 
 ::
 
-    # Load a scene called "main" located in the root of the project directory and cache it in a variable.
-    var main = load("res://main.tscn") # main will contain a PackedScene resource.
+    # 加载位于项目根目录的一个名为“main”的场景，并将其缓存在一个变量中。
+    var main = load("res://main.tscn") # main 将包含一个 PackedScene 资源。
 
-\ **Important:** Relative paths are *not* relative to the script calling this method, instead it is prefixed with ``"res://"``. Loading from relative paths might not work as expected.
+\ **重要：**\ 相对路径相对的\ *不是*\ 调用该方法的脚本，而是会使用 ``"res://"`` 前缀。加载时使用相对路径可能与预期行为不符。
 
-This function is a simplified version of :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`, which can be used for more advanced scenarios.
+这个方法是 :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>` 的简化版，原方法可以用于更高级的场景。
 
-\ **Note:** Files have to be imported into the engine first to load them using this function. If you want to load :ref:`Image<class_Image>`\ s at run-time, you may use :ref:`Image.load()<class_Image_method_load>`. If you want to import audio files, you can use the snippet described in :ref:`AudioStreamMP3.data<class_AudioStreamMP3_property_data>`.
+\ **注意：**\ 必须先将文件导入引擎才能使用此函数加载它们。如果你想在运行时加载 :ref:`Image<class_Image>`\ ，你可以使用 :ref:`Image.load()<class_Image_method_load>`\ 。如果要导入音频文件，可以使用 :ref:`AudioStreamMP3.data<class_AudioStreamMP3_property_data>` 中描述的代码片段。
 
-\ **Note:** If :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` is ``true``, :ref:`load()<class_@GDScript_method_load>` will not be able to read converted files in an exported project. If you rely on run-time loading of files present within the PCK, set :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` to ``false``.
+\ **注意：**\ 如果 :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` 为 ``true``\ ，则 :ref:`load()<class_@GDScript_method_load>` 无法在导出后的项目中读取已转换的文件。如果你需要在运行时加载存在于 PCK 中的文件，请将 :ref:`ProjectSettings.editor/export/convert_text_resources_to_binary<class_ProjectSettings_property_editor/export/convert_text_resources_to_binary>` 设置为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1250,14 +1250,14 @@ This function is a simplified version of :ref:`ResourceLoader.load()<class_Resou
 
 :ref:`int<class_int>` **ord**\ (\ char\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_method_ord>`
 
-Returns an integer representing the Unicode code point of the given character ``char``, which should be a string of length 1.
+返回一个整数，表示给定字符 ``char`` 的 Unicode 码位，该字符应为长度为 1 的字符串。
 
 ::
 
-    print(ord("A")) # Prints 65
-    print(ord("🤖")) # Prints 129302
+    print(ord(“A”)) # 输出 65
+    print(ord(“🤖”)) # 输出 129302
 
-This is the inverse of :ref:`char()<class_@GDScript_method_char>`. See also :ref:`String.chr()<class_String_method_chr>` and :ref:`String.unicode_at()<class_String_method_unicode_at>`.
+这是 :ref:`char()<class_@GDScript_method_char>` 的逆运算。参见 :ref:`String.chr()<class_String_method_chr>` 和 :ref:`String.unicode_at()<class_String_method_unicode_at>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1269,16 +1269,16 @@ This is the inverse of :ref:`char()<class_@GDScript_method_char>`. See also :ref
 
 :ref:`Resource<class_Resource>` **preload**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_@GDScript_method_preload>`
 
-Returns a :ref:`Resource<class_Resource>` from the filesystem located at ``path``. During run-time, the resource is loaded when the script is being parsed. This function effectively acts as a reference to that resource. Note that this function requires ``path`` to be a constant :ref:`String<class_String>`. If you want to load a resource from a dynamic/variable path, use :ref:`load()<class_@GDScript_method_load>`.
+返回一个位于文件系统绝对路径 ``path`` 的 :ref:`Resource<class_Resource>`\ 。运行时，该资源将在解析脚本时加载，实际上可以将这个函数视作对该资源的引用。请注意：此函数要求 ``path`` 为 :ref:`String<class_String>` 常量。如果要动态/可变的路径加载资源，请使用 :ref:`load()<class_@GDScript_method_load>`\ 。
 
-\ **Note:** Resource paths can be obtained by right-clicking on a resource in the Assets Panel and choosing "Copy Path", or by dragging the file from the FileSystem dock into the current script.
+\ **注意：**\ 资源路径可以通过右键单击资产面板中的资源并选择“复制路径”，或通过将文件从文件系统停靠面板拖到脚本中来获得。
 
 ::
 
-    # Create instance of a scene.
+    # 创建场景的实例。
     var diamond = preload("res://diamond.tscn").instantiate()
 
-\ **Note:** :ref:`preload()<class_@GDScript_method_preload>` is a keyword, not a function. So you cannot access it as a :ref:`Callable<class_Callable>`.
+\ **注意：**\ :ref:`preload()<class_@GDScript_method_preload>` 是关键字而非函数，无法作为 :ref:`Callable<class_Callable>` 访问。
 
 .. rst-class:: classref-item-separator
 
@@ -1290,18 +1290,18 @@ Returns a :ref:`Resource<class_Resource>` from the filesystem located at ``path`
 
 |void| **print_debug**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GDScript_method_print_debug>`
 
-Like :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>`, but includes the current stack frame when running with the debugger turned on.
+与 :ref:`@GlobalScope.print()<class_@GlobalScope_method_print>` 类似，但在启用调试器运行时还会包含当前栈帧。
 
-The output in the console may look like the following:
+控制台输出可能如下：
 
 .. code:: text
 
     Test print
     At: res://test.gd:15:_process()
 
-See also :ref:`print_stack()<class_@GDScript_method_print_stack>`, :ref:`get_stack()<class_@GDScript_method_get_stack>`, and :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+另见 :ref:`print_stack()<class_@GDScript_method_print_stack>`\ ，\ :ref:`get_stack()<class_@GDScript_method_get_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
 
-\ **Note:** By default, backtraces are only available in editor builds and debug builds. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+\ **注意：** 默认情况下，调用堆栈仅在编辑器构建和调试构建中可用。若要为发布构建启用该功能，你需要启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1313,17 +1313,17 @@ See also :ref:`print_stack()<class_@GDScript_method_print_stack>`, :ref:`get_sta
 
 |void| **print_stack**\ (\ ) :ref:`🔗<class_@GDScript_method_print_stack>`
 
-Prints a stack trace at the current code location.
+在当前代码位置打印堆栈跟踪。
 
-The output in the console may look like the following:
+控制台输出可能类似于以下内容：
 
 .. code:: text
 
     Frame 0 - res://test.gd:16 in function '_process'
 
-See also :ref:`print_debug()<class_@GDScript_method_print_debug>`, :ref:`get_stack()<class_@GDScript_method_get_stack>`, and :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+参见 :ref:`print_debug()<class_@GDScript_method_print_debug>`\ ，\ :ref:`get_stack()<class_@GDScript_method_get_stack>` 和 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
 
-\ **Note:** By default, backtraces are only available in editor builds and debug builds. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+\ **注意：** 默认情况下，堆栈跟踪仅在编辑器构建和调试构建中可用。若要使其在发布构建中也可用，需启用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1335,28 +1335,28 @@ See also :ref:`print_debug()<class_@GDScript_method_print_debug>`, :ref:`get_sta
 
 :ref:`Array<class_Array>` **range**\ (\ ...\ ) |vararg| :ref:`🔗<class_@GDScript_method_range>`
 
-Returns an array with the given range. :ref:`range()<class_@GDScript_method_range>` can be called in three ways:
+返回具有给定范围的数组。\ :ref:`range()<class_@GDScript_method_range>` 可以通过三种方式调用：
 
-\ ``range(n: int)``: Starts from 0, increases by steps of 1, and stops *before* ``n``. The argument ``n`` is **exclusive**.
+\ ``range(n: int)``\ ：从 0 开始，每次加 1，在到达 ``n`` *之前*\ 停止。\ **不包含**\ 参数 ``n``\ 。
 
-\ ``range(b: int, n: int)``: Starts from ``b``, increases by steps of 1, and stops *before* ``n``. The arguments ``b`` and ``n`` are **inclusive** and **exclusive**, respectively.
+\ ``range(b: int, n: int)``\ ：从 ``b`` 开始，每次加 1，在到达 ``n`` *之前*\ 停止。\ **包含**\ 参数 ``b``\ ，\ **不包含**\ 参数 ``n``\ 。
 
-\ ``range(b: int, n: int, s: int)``: Starts from ``b``, increases/decreases by steps of ``s``, and stops *before* ``n``. The arguments ``b`` and ``n`` are **inclusive** and **exclusive**, respectively. The argument ``s`` **can** be negative, but not ``0``. If ``s`` is ``0``, an error message is printed.
+\ ``range(b: int, n: int, s: int)``\ ：从 ``b`` 开始，以 ``s`` 为步长递增/递减，在到达 ``n`` *之前*\ 停止。\ **包含**\ 参数 ``b``\ ，\ **不包含**\ 参数 ``n``\ 。参数 ``s`` **可以**\ 为负数，但不能为 ``0``\ 。如果 ``s`` 为 ``0``\ ，则会输出一条错误消息。
 
-\ :ref:`range()<class_@GDScript_method_range>` converts all arguments to :ref:`int<class_int>` before processing.
+\ :ref:`range()<class_@GDScript_method_range>` 会先将所有参数转换为 :ref:`int<class_int>` 再进行处理。
 
-\ **Note:** Returns an empty array if no value meets the value constraint (e.g. ``range(2, 5, -1)`` or ``range(5, 5, 1)``).
+\ **注意：**\ 如果没有满足条件的值，则返回空数组（例如 ``range(2, 5, -1)`` 和 ``range(5, 5, 1)``\ ）。
 
-\ **Examples:**\ 
+\ **示例：**\ 
 
 ::
 
-    print(range(4))        # Prints [0, 1, 2, 3]
-    print(range(2, 5))     # Prints [2, 3, 4]
-    print(range(0, 6, 2))  # Prints [0, 2, 4]
-    print(range(4, 1, -1)) # Prints [4, 3, 2]
+    print(range(4))        # 输出 [0, 1, 2, 3]
+    print(range(2, 5))     # 输出 [2, 3, 4]
+    print(range(0, 6, 2))  # 输出 [0, 2, 4]
+    print(range(4, 1, -1)) # 输出 [4, 3, 2]
 
-To iterate over an :ref:`Array<class_Array>` backwards, use:
+要反向遍历 :ref:`Array<class_Array>`\ ，请使用：
 
 ::
 
@@ -1364,7 +1364,7 @@ To iterate over an :ref:`Array<class_Array>` backwards, use:
     for i in range(array.size() - 1, -1, -1):
         print(array[i])
 
-Output:
+输出：
 
 .. code:: text
 
@@ -1372,14 +1372,14 @@ Output:
     6
     3
 
-To iterate over :ref:`float<class_float>`, convert them in the loop.
+要遍历 :ref:`float<class_float>`\ ，请在循环中进行转换。
 
 ::
 
     for i in range (3, 0, -1):
         print(i / 10.0)
 
-Output:
+输出：
 
 .. code:: text
 
@@ -1397,19 +1397,19 @@ Output:
 
 :ref:`bool<class_bool>` **type_exists**\ (\ type\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_@GDScript_method_type_exists>`
 
-Returns ``true`` if the given :ref:`Object<class_Object>`-derived class exists in :ref:`ClassDB<class_ClassDB>`. Note that :ref:`Variant<class_Variant>` data types are not registered in :ref:`ClassDB<class_ClassDB>`.
+如果 :ref:`ClassDB<class_ClassDB>` 中存在给定的 :ref:`Object<class_Object>` 派生类，则返回 ``true``\ 。请注意，\ :ref:`Variant<class_Variant>` 数据类型未在 :ref:`ClassDB<class_ClassDB>` 中注册。
 
 ::
 
-    type_exists("Sprite2D") # Returns true
-    type_exists("NonExistentClass") # Returns false
+    type_exists("Sprite2D") # 返回 true
+    type_exists("NonExistentClass") # 返回 false
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

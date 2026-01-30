@@ -14,9 +14,9 @@ Un script que se ejecuta al exportar el proyecto.
 Descripción
 ----------------------
 
-**EditorExportPlugin**\ s are automatically invoked whenever the user exports the project. Their most common use is to determine what files are being included in the exported project. For each plugin, :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` is called at the beginning of the export process and then :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` is called for each exported file.
+Los **EditorExportPlugin**\ s se invocan automáticamente cada vez que el usuario exporta el proyecto. Su uso más común es determinar qué archivos se incluyen en el proyecto exportado. Para cada plugin, se llama a :ref:`_export_begin()<class_EditorExportPlugin_private_method__export_begin>` al comienzo del proceso de exportación y luego se llama a :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>` para cada archivo exportado.
 
-To use **EditorExportPlugin**, register it using the :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>` method first.
+Para usar **EditorExportPlugin**, regístralo primero usando el método :ref:`EditorPlugin.add_export_plugin()<class_EditorPlugin_method_add_export_plugin>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -142,9 +142,9 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **_begin_customize_resources**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__begin_customize_resources>`
 
-Return ``true`` if this plugin will customize resources based on the platform and features used.
+Devuelve ``true`` si este plugin personalizará los recursos basándose en la plataforma y las características usadas.
 
-When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` and :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` will be called and must be implemented.
+Cuando está habilitado, se llamará a :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` y :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` y deben ser implementados.
 
 .. rst-class:: classref-item-separator
 
@@ -156,11 +156,11 @@ When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPl
 
 :ref:`bool<class_bool>` **_begin_customize_scenes**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__begin_customize_scenes>`
 
-Return ``true`` if this plugin will customize scenes based on the platform and features used.
+Devuelve ``true`` si este plugin personalizará las escenas basándose en la plataforma y las características usadas.
 
-When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will be called and must be implemented.
+Cuando está habilitado, se llamará a :ref:`_get_customization_configuration_hash()<class_EditorExportPlugin_private_method__get_customization_configuration_hash>` y :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` y deben ser implementados.
 
-\ **Note:** :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` will only be called for scenes that have been modified since the last export.
+\ **Nota:** Se llamará a :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>` solo para las escenas que han sido modificadas desde la última exportación.
 
 .. rst-class:: classref-item-separator
 
@@ -172,13 +172,13 @@ When enabled, :ref:`_get_customization_configuration_hash()<class_EditorExportPl
 
 :ref:`Resource<class_Resource>` **_customize_resource**\ (\ resource\: :ref:`Resource<class_Resource>`, path\: :ref:`String<class_String>`\ ) |virtual| |required| :ref:`🔗<class_EditorExportPlugin_private_method__customize_resource>`
 
-Customize a resource. If changes are made to it, return the same or a new resource. Otherwise, return ``null``. When a new resource is returned, ``resource`` will be replaced by a copy of the new resource.
+Personaliza un recurso. Si se le hacen cambios, devuelve el mismo o un nuevo recurso. De lo contrario, devuelve ``null``. Cuando se devuelve un nuevo recurso, ``resource`` será reemplazado por una copia del nuevo recurso.
 
-The ``path`` argument is only used when customizing an actual file, otherwise this means that this resource is part of another one and it will be empty.
+El argumento ``path`` solo se usa al personalizar un archivo real, de lo contrario esto significa que este recurso es parte de otro y estará vacío.
 
-Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+Es obligatorio implementar este método si :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` devuelve ``true``.
 
-\ **Note:** When customizing any of the following types and returning another resource, the other resource should not be skipped using :ref:`skip()<class_EditorExportPlugin_method_skip>` in :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>`:
+\ **Nota:** Al personalizar cualquiera de los siguientes tipos y devolver otro recurso, el otro recurso no debe omitirse usando :ref:`skip()<class_EditorExportPlugin_method_skip>` en :ref:`_export_file()<class_EditorExportPlugin_private_method__export_file>`:
 
 - :ref:`AtlasTexture<class_AtlasTexture>`\ 
 
@@ -264,9 +264,9 @@ Método virtual que debe ser sobrescrito por el usuario. Llamado cuando la expor
 
 |void| **_export_file**\ (\ path\: :ref:`String<class_String>`, type\: :ref:`String<class_String>`, features\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| :ref:`🔗<class_EditorExportPlugin_private_method__export_file>`
 
-Virtual method to be overridden by the user. Called for each exported file before :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` and :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>`. The arguments can be used to identify the file. ``path`` is the path of the file, ``type`` is the :ref:`Resource<class_Resource>` represented by the file (e.g. :ref:`PackedScene<class_PackedScene>`), and ``features`` is the list of features for the export.
+Método virtual que debe ser sobrescrito por el usuario. Se llama para cada archivo exportado antes de :ref:`_customize_resource()<class_EditorExportPlugin_private_method__customize_resource>` y :ref:`_customize_scene()<class_EditorExportPlugin_private_method__customize_scene>`. Los argumentos se pueden usar para identificar el archivo. ``path`` es la ruta del archivo, ``type`` es el :ref:`Resource<class_Resource>` representado por el archivo (por ejemplo, :ref:`PackedScene<class_PackedScene>`), y ``features`` es la lista de características para la exportación.
 
-Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback will make the file not included in the export.
+Llamar a :ref:`skip()<class_EditorExportPlugin_method_skip>` dentro de esta función de retorno de llamada hará que el archivo no se incluya en la exportación.
 
 .. rst-class:: classref-item-separator
 
@@ -278,11 +278,11 @@ Calling :ref:`skip()<class_EditorExportPlugin_method_skip>` inside this callback
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_android_dependencies**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_dependencies>`
 
-Virtual method to be overridden by the user. This is called to retrieve the set of Android dependencies provided by this plugin. Each returned Android dependency should have the format of an Android remote binary dependency: ``org.godot.example:my-plugin:0.0.0``\ 
+Método virtual a ser sobrescrito por el usuario. Se llama para obtener el conjunto de dependencias de Android proporcionadas por este plugin. Cada dependencia de Android devuelta debe tener el formato de una dependencia binaria remota de Android: ``org.godot.example:my-plugin:0.0.0``\ 
 
-For more information see `Android documentation on dependencies <https://developer.android.com/build/dependencies?agpversion=4.1#dependency-types>`__.
+Para más información, véase la `documentación de Android sobre dependencias <https://developer.android.com/build/dependencies?agpversion=4.1#dependency-types>`__.
 
-\ **Note:** Only supported on Android and requires :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` to be enabled.
+\ **Nota:** Solo es compatible con Android y requiere que :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -294,13 +294,13 @@ For more information see `Android documentation on dependencies <https://develop
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_android_dependencies_maven_repos**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_dependencies_maven_repos>`
 
-Virtual method to be overridden by the user. This is called to retrieve the URLs of Maven repositories for the set of Android dependencies provided by this plugin.
+Método virtual a ser sobrescrito por el usuario. Se llama para obtener las URLs de los repositorios Maven para el conjunto de dependencias de Android proporcionadas por este plugin.
 
-For more information see `Gradle documentation on dependency management <https://docs.gradle.org/current/userguide/dependency_management.html#sec:maven_repo>`__.
+Para más información, véase la `documentación de Gradle sobre gestión de dependencias <https://docs.gradle.org/current/userguide/dependency_management.html#sec:maven_repo>`__.
 
-\ **Note:** Google's Maven repo and the Maven Central repo are already included by default.
+\ **Nota:** El repositorio Maven de Google y el repositorio Maven Central ya están incluidos por defecto.
 
-\ **Note:** Only supported on Android and requires :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` to be enabled.
+\ **Nota:** Solo es compatible con Android y requiere que :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -312,11 +312,11 @@ For more information see `Gradle documentation on dependency management <https:/
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_android_libraries**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_libraries>`
 
-Virtual method to be overridden by the user. This is called to retrieve the local paths of the Android libraries archive (AAR) files provided by this plugin.
+Método virtual a ser sobrescrito por el usuario. Se llama para obtener las rutas locales de los archivos de archivo de bibliotecas de Android (AAR) proporcionados por este plugin.
 
-\ **Note:** Relative paths **must** be relative to Godot's ``res://addons/`` directory. For example, an AAR file located under ``res://addons/hello_world_plugin/HelloWorld.release.aar`` can be returned as an absolute path using ``res://addons/hello_world_plugin/HelloWorld.release.aar`` or a relative path using ``hello_world_plugin/HelloWorld.release.aar``.
+\ **Nota:** Las rutas relativas **deben** ser relativas al directorio ``res://addons/`` de Godot. Por ejemplo, un archivo AAR ubicado en ``res://addons/hello_world_plugin/HelloWorld.release.aar`` se puede devolver como una ruta absoluta usando ``res://addons/hello_world_plugin/HelloWorld.release.aar`` o una ruta relativa usando ``hello_world_plugin/HelloWorld.release.aar``.
 
-\ **Note:** Only supported on Android and requires :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` to be enabled.
+\ **Nota:** Solo es compatible con Android y requiere que :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -328,9 +328,9 @@ Virtual method to be overridden by the user. This is called to retrieve the loca
 
 :ref:`String<class_String>` **_get_android_manifest_activity_element_contents**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_manifest_activity_element_contents>`
 
-Virtual method to be overridden by the user. This is used at export time to update the contents of the ``activity`` element in the generated Android manifest.
+Método virtual a ser sobrescrito por el usuario. Se utiliza en tiempo de exportación para actualizar el contenido del elemento ``activity`` en el manifiesto de Android generado.
 
-\ **Note:** Only supported on Android and requires :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` to be enabled.
+\ **Nota:** Solo es compatible con Android y requiere que :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ Virtual method to be overridden by the user. This is used at export time to upda
 
 :ref:`String<class_String>` **_get_android_manifest_application_element_contents**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_manifest_application_element_contents>`
 
-Virtual method to be overridden by the user. This is used at export time to update the contents of the ``application`` element in the generated Android manifest.
+Método virtual a ser sobrescrito por el usuario. Se utiliza en tiempo de exportación para actualizar el contenido del elemento ``application`` en el manifiesto de Android generado.
 
-\ **Note:** Only supported on Android and requires :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` to be enabled.
+\ **Nota:** Solo es compatible con Android y requiere que :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -356,9 +356,9 @@ Virtual method to be overridden by the user. This is used at export time to upda
 
 :ref:`String<class_String>` **_get_android_manifest_element_contents**\ (\ platform\: :ref:`EditorExportPlatform<class_EditorExportPlatform>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_android_manifest_element_contents>`
 
-Virtual method to be overridden by the user. This is used at export time to update the contents of the ``manifest`` element in the generated Android manifest.
+Método virtual a ser sobrescrito por el usuario. Se utiliza en tiempo de exportación para actualizar el contenido del elemento ``manifest`` en el manifiesto de Android generado.
 
-\ **Note:** Only supported on Android and requires :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` to be enabled.
+\ **Nota:** Solo es compatible con Android y requiere que :ref:`EditorExportPlatformAndroid.gradle_build/use_gradle_build<class_EditorExportPlatformAndroid_property_gradle_build/use_gradle_build>` esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -370,9 +370,9 @@ Virtual method to be overridden by the user. This is used at export time to upda
 
 :ref:`int<class_int>` **_get_customization_configuration_hash**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_EditorExportPlugin_private_method__get_customization_configuration_hash>`
 
-Return a hash based on the configuration passed (for both scenes and resources). This helps keep separate caches for separate export configurations.
+Devuelve un hash basado en la configuración pasada (tanto para escenas como para recursos). Esto ayuda a mantener cachés separadas para configuraciones de exportación separadas.
 
-Implementing this method is required if :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` returns ``true``.
+Implementar este método es necesario si :ref:`_begin_customize_resources()<class_EditorExportPlugin_private_method__begin_customize_resources>` devuelve ``true``.
 
 .. rst-class:: classref-item-separator
 

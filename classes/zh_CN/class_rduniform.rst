@@ -5,21 +5,21 @@
 RDUniform
 =========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Shader uniform (used by :ref:`RenderingDevice<class_RenderingDevice>`).
+着色器 Uniform（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
+这个对象由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RDUniform_property_binding:
 
@@ -66,7 +66,7 @@ Property Descriptions
 - |void| **set_binding**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_binding**\ (\ )
 
-The uniform's binding.
+Uniform 的绑定。
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ The uniform's binding.
 - |void| **set_uniform_type**\ (\ value\: :ref:`UniformType<enum_RenderingDevice_UniformType>`\ )
 - :ref:`UniformType<enum_RenderingDevice_UniformType>` **get_uniform_type**\ (\ )
 
-The uniform's data type.
+Uniform 的数据类型。
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ The uniform's data type.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RDUniform_method_add_id:
 
@@ -100,7 +100,7 @@ Method Descriptions
 
 |void| **add_id**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RDUniform_method_add_id>`
 
-Binds the given id to the uniform. The data associated with the id is then used when the uniform is passed to a shader.
+将给定的 ID 绑定到 uniform。将 Uniform 传递给着色器时会使用与该 ID 关联的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Binds the given id to the uniform. The data associated with the id is then used 
 
 |void| **clear_ids**\ (\ ) :ref:`🔗<class_RDUniform_method_clear_ids>`
 
-Unbinds all ids currently bound to the uniform.
+解绑所有与该 uniform 绑定的 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -124,14 +124,14 @@ Unbinds all ids currently bound to the uniform.
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_ids**\ (\ ) |const| :ref:`🔗<class_RDUniform_method_get_ids>`
 
-Returns an array of all ids currently bound to the uniform.
+返回当前绑定到该 uniform 的所有 id 的数组。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

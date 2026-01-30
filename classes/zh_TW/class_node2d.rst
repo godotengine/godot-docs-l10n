@@ -5,34 +5,34 @@
 Node2D
 ======
 
-**Inherits:** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, :ref:`AudioListener2D<class_AudioListener2D>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, :ref:`BackBufferCopy<class_BackBufferCopy>`, :ref:`Bone2D<class_Bone2D>`, :ref:`Camera2D<class_Camera2D>`, :ref:`CanvasGroup<class_CanvasGroup>`, :ref:`CanvasModulate<class_CanvasModulate>`, :ref:`CollisionObject2D<class_CollisionObject2D>`, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`, :ref:`CollisionShape2D<class_CollisionShape2D>`, :ref:`CPUParticles2D<class_CPUParticles2D>`, :ref:`GPUParticles2D<class_GPUParticles2D>`, :ref:`Joint2D<class_Joint2D>`, :ref:`Light2D<class_Light2D>`, :ref:`LightOccluder2D<class_LightOccluder2D>`, :ref:`Line2D<class_Line2D>`, :ref:`Marker2D<class_Marker2D>`, :ref:`MeshInstance2D<class_MeshInstance2D>`, :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`, :ref:`NavigationLink2D<class_NavigationLink2D>`, :ref:`NavigationObstacle2D<class_NavigationObstacle2D>`, :ref:`NavigationRegion2D<class_NavigationRegion2D>`, :ref:`Parallax2D<class_Parallax2D>`, :ref:`ParallaxLayer<class_ParallaxLayer>`, :ref:`Path2D<class_Path2D>`, :ref:`PathFollow2D<class_PathFollow2D>`, :ref:`Polygon2D<class_Polygon2D>`, :ref:`RayCast2D<class_RayCast2D>`, :ref:`RemoteTransform2D<class_RemoteTransform2D>`, :ref:`ShapeCast2D<class_ShapeCast2D>`, :ref:`Skeleton2D<class_Skeleton2D>`, :ref:`Sprite2D<class_Sprite2D>`, :ref:`TileMap<class_TileMap>`, :ref:`TileMapLayer<class_TileMapLayer>`, :ref:`TouchScreenButton<class_TouchScreenButton>`, :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`
+**被繼承：** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, :ref:`AudioListener2D<class_AudioListener2D>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, :ref:`BackBufferCopy<class_BackBufferCopy>`, :ref:`Bone2D<class_Bone2D>`, :ref:`Camera2D<class_Camera2D>`, :ref:`CanvasGroup<class_CanvasGroup>`, :ref:`CanvasModulate<class_CanvasModulate>`, :ref:`CollisionObject2D<class_CollisionObject2D>`, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`, :ref:`CollisionShape2D<class_CollisionShape2D>`, :ref:`CPUParticles2D<class_CPUParticles2D>`, :ref:`GPUParticles2D<class_GPUParticles2D>`, :ref:`Joint2D<class_Joint2D>`, :ref:`Light2D<class_Light2D>`, :ref:`LightOccluder2D<class_LightOccluder2D>`, :ref:`Line2D<class_Line2D>`, :ref:`Marker2D<class_Marker2D>`, :ref:`MeshInstance2D<class_MeshInstance2D>`, :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`, :ref:`NavigationLink2D<class_NavigationLink2D>`, :ref:`NavigationObstacle2D<class_NavigationObstacle2D>`, :ref:`NavigationRegion2D<class_NavigationRegion2D>`, :ref:`Parallax2D<class_Parallax2D>`, :ref:`ParallaxLayer<class_ParallaxLayer>`, :ref:`Path2D<class_Path2D>`, :ref:`PathFollow2D<class_PathFollow2D>`, :ref:`Polygon2D<class_Polygon2D>`, :ref:`RayCast2D<class_RayCast2D>`, :ref:`RemoteTransform2D<class_RemoteTransform2D>`, :ref:`ShapeCast2D<class_ShapeCast2D>`, :ref:`Skeleton2D<class_Skeleton2D>`, :ref:`Sprite2D<class_Sprite2D>`, :ref:`TileMap<class_TileMap>`, :ref:`TileMapLayer<class_TileMapLayer>`, :ref:`TouchScreenButton<class_TouchScreenButton>`, :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`
 
-A 2D game object, inherited by all 2D-related nodes. Has a position, rotation, scale, and skew.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A 2D game object, with a transform (position, rotation, and scale). All 2D nodes, including physics objects and sprites, inherit from Node2D. Use Node2D as a parent node to move, scale and rotate children in a 2D project. Also gives control of the node's render order.
-
-\ **Note:** Since both **Node2D** and :ref:`Control<class_Control>` inherit from :ref:`CanvasItem<class_CanvasItem>`, they share several concepts from the class such as the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` properties.
+2D 遊戲物件，所有 2D 相關節點的父類。具有位置、旋轉、縮放和傾斜屬性。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Custom drawing in 2D <../tutorials/2d/custom_drawing_in_2d>`
+2D 遊戲物件，具有變換（位置、旋轉、縮放）。所有 2D 節點，包括物理物件與精靈，皆繼承自 Node2D。使用 Node2D 作為父節點，可在 2D 專案中移動、縮放與旋轉子節點，並控制節點的繪製順序。
 
-- `All 2D Demos <https://github.com/godotengine/godot-demo-projects/tree/master/2d>`__
+\ **注意：** **Node2D** 與 :ref:`Control<class_Control>` 都繼承自 :ref:`CanvasItem<class_CanvasItem>`\ ，因此共享 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>`\ 、\ :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 等屬性與概念。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`2D 的自訂繪製 <../tutorials/2d/custom_drawing_in_2d>`
+
+- `所有 2D 範例 <https://github.com/godotengine/godot-demo-projects/tree/master/2d>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -101,8 +101,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Node2D_property_global_position:
 
@@ -115,7 +115,7 @@ Property Descriptions
 - |void| **set_global_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_global_position**\ (\ )
 
-Global position. See also :ref:`position<class_Node2D_property_position>`.
+全域位置。另見 :ref:`position<class_Node2D_property_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Global position. See also :ref:`position<class_Node2D_property_position>`.
 - |void| **set_global_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_global_rotation**\ (\ )
 
-Global rotation in radians. See also :ref:`rotation<class_Node2D_property_rotation>`.
+全域旋轉（弧度）。另見 :ref:`rotation<class_Node2D_property_rotation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Global rotation in radians. See also :ref:`rotation<class_Node2D_property_rotati
 - |void| **set_global_rotation_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_global_rotation_degrees**\ (\ )
 
-Helper property to access :ref:`global_rotation<class_Node2D_property_global_rotation>` in degrees instead of radians. See also :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`.
+輔助屬性，可用角度（非弧度）存取 :ref:`global_rotation<class_Node2D_property_global_rotation>`\ 。另見 :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Helper property to access :ref:`global_rotation<class_Node2D_property_global_rot
 - |void| **set_global_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_global_scale**\ (\ )
 
-Global scale. See also :ref:`scale<class_Node2D_property_scale>`.
+全域縮放。另見 :ref:`scale<class_Node2D_property_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ Global scale. See also :ref:`scale<class_Node2D_property_scale>`.
 - |void| **set_global_skew**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_global_skew**\ (\ )
 
-Global skew in radians. See also :ref:`skew<class_Node2D_property_skew>`.
+全域傾斜（弧度）。另見 :ref:`skew<class_Node2D_property_skew>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Global skew in radians. See also :ref:`skew<class_Node2D_property_skew>`.
 - |void| **set_global_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_global_transform**\ (\ )
 
-Global :ref:`Transform2D<class_Transform2D>`. See also :ref:`transform<class_Node2D_property_transform>`.
+全域 :ref:`Transform2D<class_Transform2D>`\ 。另見 :ref:`transform<class_Node2D_property_transform>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Global :ref:`Transform2D<class_Transform2D>`. See also :ref:`transform<class_Nod
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-Position, relative to the node's parent. See also :ref:`global_position<class_Node2D_property_global_position>`.
+相對於父節點的位置。另見 :ref:`global_position<class_Node2D_property_global_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -234,9 +234,9 @@ Position, relative to the node's parent. See also :ref:`global_position<class_No
 - |void| **set_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation**\ (\ )
 
-Rotation in radians, relative to the node's parent. See also :ref:`global_rotation<class_Node2D_property_global_rotation>`.
+以弧度表示、相對於父節點的旋轉。另見 :ref:`global_rotation<class_Node2D_property_global_rotation>`\ 。
 
-\ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`.
+\ **注意：** 此屬性在屬性面板中以角度方式編輯。如需在腳本中使用角度，請用 :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Rotation in radians, relative to the node's parent. See also :ref:`global_rotati
 - |void| **set_rotation_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation_degrees**\ (\ )
 
-Helper property to access :ref:`rotation<class_Node2D_property_rotation>` in degrees instead of radians. See also :ref:`global_rotation_degrees<class_Node2D_property_global_rotation_degrees>`.
+輔助屬性，可用角度（非弧度）存取 :ref:`rotation<class_Node2D_property_rotation>`\ 。另見 :ref:`global_rotation_degrees<class_Node2D_property_global_rotation_degrees>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -270,9 +270,9 @@ Helper property to access :ref:`rotation<class_Node2D_property_rotation>` in deg
 - |void| **set_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scale**\ (\ )
 
-The node's scale, relative to the node's parent. Unscaled value: ``(1, 1)``. See also :ref:`global_scale<class_Node2D_property_global_scale>`.
+節點相對於父節點的縮放。未縮放值為 ``(1, 1)``\ 。另見 :ref:`global_scale<class_Node2D_property_global_scale>`\ 。
 
-\ **Note:** Negative X scales in 2D are not decomposable from the transformation matrix. Due to the way scale is represented with transformation matrices in Godot, negative scales on the X axis will be changed to negative scales on the Y axis and a rotation of 180 degrees when decomposed.
+\ **注意：** 2D 下，變換矩陣無法分解出負 X 軸縮放。Godot 以變換矩陣儲存縮放，分解時 X 軸負縮放會變為 Y 軸負縮放並帶有 180 度旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -289,11 +289,11 @@ The node's scale, relative to the node's parent. Unscaled value: ``(1, 1)``. See
 - |void| **set_skew**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_skew**\ (\ )
 
-If set to a non-zero value, slants the node in one direction or another. This can be used for pseudo-3D effects. See also :ref:`global_skew<class_Node2D_property_global_skew>`.
+若設定為非零值，節點會向一方傾斜。可用於偽 3D 效果。另見 :ref:`global_skew<class_Node2D_property_global_skew>`\ 。
 
-\ **Note:** Skew is performed on the X axis only, and *between* rotation and scaling.
+\ **注意：** 傾斜只作用於 X 軸，且在旋轉與縮放 *之間*\ 。
 
-\ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use ``skew = deg_to_rad(value_in_degrees)``.
+\ **注意：** 此屬性於屬性面板中以角度編輯。如需於腳本中以角度設定，請使用 ``skew = deg_to_rad(value_in_degrees)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ If set to a non-zero value, slants the node in one direction or another. This ca
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-The node's :ref:`Transform2D<class_Transform2D>`, relative to the node's parent. See also :ref:`global_transform<class_Node2D_property_global_transform>`.
+節點相對於父節點的 :ref:`Transform2D<class_Transform2D>`\ 。另見 :ref:`global_transform<class_Node2D_property_global_transform>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -318,8 +318,8 @@ The node's :ref:`Transform2D<class_Transform2D>`, relative to the node's parent.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Node2D_method_apply_scale:
 
@@ -327,7 +327,7 @@ Method Descriptions
 
 |void| **apply_scale**\ (\ ratio\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_apply_scale>`
 
-Multiplies the current scale by the ``ratio`` vector.
+將目前縮放值乘以 ``ratio`` 向量。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Returns the angle between the node and the ``point`` in radians. See also :ref:`
 
 :ref:`Transform2D<class_Transform2D>` **get_relative_transform_to_parent**\ (\ parent\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Node2D_method_get_relative_transform_to_parent>`
 
-Returns the :ref:`Transform2D<class_Transform2D>` relative to this node's parent.
+回傳相對於本節點父節點的 :ref:`Transform2D<class_Transform2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Returns the :ref:`Transform2D<class_Transform2D>` relative to this node's parent
 
 |void| **global_translate**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_global_translate>`
 
-Adds the ``offset`` vector to the node's global position.
+將 ``offset`` 向量加到節點的全域位置。
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Applies a local translation on the node's X axis with the amount specified in ``
 
 |void| **move_local_y**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_y>`
 
-Applies a local translation on the node's Y axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+在節點的 Y 軸上應用由 ``delta`` 指定的量進行局部平移。如果 ``scaled`` 為 ``false``\ ，則將正規化移動，使其與節點的 :ref:`scale<class_Node2D_property_scale>` 無關。
 
 .. rst-class:: classref-item-separator
 
@@ -427,7 +427,7 @@ Applies a rotation to the node, in radians, starting from its current rotation. 
 
 :ref:`Vector2<class_Vector2>` **to_global**\ (\ local_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Node2D_method_to_global>`
 
-Transforms the provided local position into a position in global coordinate space. The input is expected to be local relative to the **Node2D** it is called on. e.g. Applying this method to the positions of child nodes will correctly transform their positions into the global coordinate space, but applying it to a node's own position will give an incorrect result, as it will incorporate the node's own transformation into its global position.
+將給定的本地位置轉換為全域座標空間的位置。輸入必須是相對於該 **Node2D** 的本地座標。例如，對子節點的位置使用本方法可正確轉換為全域座標，但對自身位置使用則會因納入自己的變換而得到錯誤結果。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ Transforms the provided local position into a position in global coordinate spac
 
 :ref:`Vector2<class_Vector2>` **to_local**\ (\ global_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Node2D_method_to_local>`
 
-Transforms the provided global position into a position in local coordinate space. The output will be local relative to the **Node2D** it is called on. e.g. It is appropriate for determining the positions of child nodes, but it is not appropriate for determining its own position relative to its parent.
+將給定的全域座標位置轉換為本地座標空間的位置。輸出為相對於本 **Node2D** 的本地座標。適合用於取得子節點的位置，但不適合用來取得自身相對於父節點的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -453,12 +453,12 @@ Transforms the provided global position into a position in local coordinate spac
 
 Translates the node by the given ``offset`` in local coordinates. This is equivalent to ``position += offset``.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

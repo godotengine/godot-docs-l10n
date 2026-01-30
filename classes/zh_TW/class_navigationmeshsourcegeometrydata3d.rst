@@ -5,23 +5,23 @@
 NavigationMeshSourceGeometryData3D
 ==================================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Container for parsed source geometry data used in navigation mesh baking.
+存放解析所得的源幾何體資料的容器，用於導覽網格的烘焙。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Container for parsed source geometry data used in navigation mesh baking.
+存放解析所得的源幾何體資料的容器，用於導覽網格的烘焙。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_NavigationMeshSourceGeometryData3D_method_add_faces:
 
@@ -135,7 +135,7 @@ Appends arrays of ``vertices`` and ``indices`` at the end of the existing arrays
 
 |void| **clear**\ (\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_clear>`
 
-Clears the internal data.
+清除內部資料。
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ Returns an axis-aligned bounding box that covers all the stored geometry data. T
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_indices**\ (\ ) |const| :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_get_indices>`
 
-Returns the parsed source geometry data indices array.
+返回解析得到的源幾何體資料索引資料。
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ Returns the projected obstructions as an :ref:`Array<class_Array>` of dictionari
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_vertices**\ (\ ) |const| :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_get_vertices>`
 
-Returns the parsed source geometry data vertices array.
+返回解析得到的源幾何體資料頂點資料。
 
 .. rst-class:: classref-item-separator
 
@@ -215,7 +215,7 @@ Returns the parsed source geometry data vertices array.
 
 :ref:`bool<class_bool>` **has_data**\ (\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_has_data>`
 
-Returns ``true`` when parsed source geometry data exists.
+如果存在解析得到的源幾何體資料，則返回 **true**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -239,9 +239,9 @@ Adds the geometry data of another **NavigationMeshSourceGeometryData3D** to the 
 
 |void| **set_indices**\ (\ indices\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_set_indices>`
 
-Sets the parsed source geometry data indices. The indices need to be matched with appropriated vertices.
+設定解析得到的源幾何體資料索引。索引需要與正確的頂點相配對。
 
-\ **Warning:** Inappropriate data can crash the baking process of the involved third-party libraries.
+\ **警告：**\ 資料不正確會導致相關協力廠商庫在烘焙過程中當機。
 
 .. rst-class:: classref-item-separator
 
@@ -277,16 +277,16 @@ Sets the projected obstructions with an Array of Dictionaries with the following
 
 |void| **set_vertices**\ (\ vertices\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData3D_method_set_vertices>`
 
-Sets the parsed source geometry data vertices. The vertices need to be matched with appropriated indices.
+設定解析得到的源幾何體資料頂點。頂點需要與正確的索引相配對。
 
-\ **Warning:** Inappropriate data can crash the baking process of the involved third-party libraries.
+\ **警告：**\ 資料不正確會導致相關協力廠商庫在烘焙過程中當機。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

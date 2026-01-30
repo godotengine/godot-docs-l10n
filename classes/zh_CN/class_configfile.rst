@@ -5,16 +5,16 @@
 ConfigFile
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Helper class to handle INI-style files.
+用于处理 INI 样式文件的辅助类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This helper class can be used to store :ref:`Variant<class_Variant>` values on the filesystem using INI-style formatting. The stored values are identified by a section and a key:
+该辅助类可用于使用 INI 样式格式在文件系统上存储 :ref:`Variant<class_Variant>` 值。存储的值由一个小节和一个键标识：
 
 .. code:: text
 
@@ -23,44 +23,44 @@ This helper class can be used to store :ref:`Variant<class_Variant>` values on t
     string_example="Hello World3D!"
     a_vector=Vector3(1, 0, 2)
 
-The stored data can be saved to or parsed from a file, though ConfigFile objects can also be used directly without accessing the filesystem.
+存储的数据可以被保存到文件中或从文件中解析出来，尽管 ConfigFile 对象也可以直接使用而无需访问文件系统。
 
-The following example shows how to create a simple **ConfigFile** and save it on disc:
+以下示例显示了如何创建一个简单的 **ConfigFile** 并将其保存在磁盘上：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Create new ConfigFile object.
+    # 创建新的 ConfigFile 对象。
     var config = ConfigFile.new()
 
-    # Store some values.
+    # 存储一些值。
     config.set_value("Player1", "player_name", "Steve")
     config.set_value("Player1", "best_score", 10)
     config.set_value("Player2", "player_name", "V3geta")
     config.set_value("Player2", "best_score", 9001)
 
-    # Save it to a file (overwrite if already exists).
+    # 将其保存到文件中（如果已存在则覆盖）。
     config.save("user://scores.cfg")
 
  .. code-tab:: csharp
 
-    // Create new ConfigFile object.
+    // 创建新的 ConfigFile 对象。
     var config = new ConfigFile();
 
-    // Store some values.
+    // 存储一些值。
     config.SetValue("Player1", "player_name", "Steve");
     config.SetValue("Player1", "best_score", 10);
     config.SetValue("Player2", "player_name", "V3geta");
     config.SetValue("Player2", "best_score", 9001);
 
-    // Save it to a file (overwrite if already exists).
+    // 将其保存到文件中（如果已存在则覆盖）。
     config.Save("user://scores.cfg");
 
 
 
-This example shows how the above file could be loaded:
+该示例展示了如何加载上面的文件：
 
 
 .. tabs::
@@ -70,16 +70,16 @@ This example shows how the above file could be loaded:
     var score_data = {}
     var config = ConfigFile.new()
 
-    # Load data from a file.
+    # 从文件加载数据。
     var err = config.load("user://scores.cfg")
 
-    # If the file didn't load, ignore it.
+    # 如果文件没有加载，忽略它。
     if err != OK:
         return
 
-    # Iterate over all sections.
+    # 迭代所有小节。
     for player in config.get_sections():
-        # Fetch the data for each section.
+        # 获取每个小节的数据。
         var player_name = config.get_value(player, "player_name")
         var player_score = config.get_value(player, "best_score")
         score_data[player_name] = player_score
@@ -89,19 +89,19 @@ This example shows how the above file could be loaded:
     var score_data = new Godot.Collections.Dictionary();
     var config = new ConfigFile();
 
-    // Load data from a file.
+    // 从文件加载数据。
     Error err = config.Load("user://scores.cfg");
 
-    // If the file didn't load, ignore it.
+    // 如果文件没有加载，忽略它。
     if (err != Error.Ok)
     {
         return;
     }
 
-    // Iterate over all sections.
+    // 迭代所有小节。
     foreach (String player in config.GetSections())
     {
-        // Fetch the data for each section.
+        // 获取每个小节的数据。
         var player_name = (String)config.GetValue(player, "player_name");
         var player_score = (int)config.GetValue(player, "best_score");
         score_data[player_name] = player_score;
@@ -109,18 +109,18 @@ This example shows how the above file could be loaded:
 
 
 
-Any operation that mutates the ConfigFile such as :ref:`set_value()<class_ConfigFile_method_set_value>`, :ref:`clear()<class_ConfigFile_method_clear>`, or :ref:`erase_section()<class_ConfigFile_method_erase_section>`, only changes what is loaded in memory. If you want to write the change to a file, you have to save the changes with :ref:`save()<class_ConfigFile_method_save>`, :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>`, or :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>`.
+\ :ref:`set_value()<class_ConfigFile_method_set_value>`\ 、\ :ref:`clear()<class_ConfigFile_method_clear>`\ 、\ :ref:`erase_section()<class_ConfigFile_method_erase_section>` 等修改 ConfigFile 的操作只会改变内存中所加载的内容。如果要将更改写入文件，则必须使用 :ref:`save()<class_ConfigFile_method_save>`\ 、\ :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>` 或 :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>` 保存更改。
 
-Keep in mind that section and property names can't contain spaces. Anything after a space will be ignored on save and on load.
+请记住，小节和属性名称不能包含空格。保存和加载时将忽略空格后的任何内容。
 
-ConfigFiles can also contain manually written comment lines starting with a semicolon (``;``). Those lines will be ignored when parsing the file. Note that comments will be lost when saving the ConfigFile. This can still be useful for dedicated server configuration files, which are typically never overwritten without explicit user action.
+ConfigFile 还可以包含以分号（\ ``;``\ ）开头的手动编写的注释行。解析文件时将忽略这些行。请注意，保存 ConfigFile 时注释将丢失。注释对于专用服务器配置文件仍然很有用，如果没有明确的用户操作，这些文件通常永远不会被覆盖。
 
-\ **Note:** The file extension given to a ConfigFile does not have any impact on its formatting or behavior. By convention, the ``.cfg`` extension is used here, but any other extension such as ``.ini`` is also valid. Since neither ``.cfg`` nor ``.ini`` are standardized, Godot's ConfigFile formatting may differ from files written by other programs.
+\ **注意：**\ 为 ConfigFile 指定的文件扩展名对其格式或行为没有任何影响。按照惯例，此处使用 ``.cfg`` 扩展名，但 ``.ini`` 等任何其他扩展名也有效。由于 ``.cfg`` 和 ``.ini`` 都不是标准化的格式，Godot 的 ConfigFile 格式可能与其他程序编写的文件不同。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -167,8 +167,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ConfigFile_method_clear:
 
@@ -176,7 +176,7 @@ Method Descriptions
 
 |void| **clear**\ (\ ) :ref:`🔗<class_ConfigFile_method_clear>`
 
-Removes the entire contents of the config.
+移除配置的全部内容。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Removes the entire contents of the config.
 
 :ref:`String<class_String>` **encode_to_text**\ (\ ) |const| :ref:`🔗<class_ConfigFile_method_encode_to_text>`
 
-Obtain the text version of this config file (the same text that would be written to a file).
+获得该配置文件的文本版本（与写入文件的文本相同）。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Obtain the text version of this config file (the same text that would be written
 
 |void| **erase_section**\ (\ section\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_erase_section>`
 
-Deletes the specified section along with all the key-value pairs inside. Raises an error if the section does not exist.
+删除指定小节以及其中的所有键值对。如果该小节不存在，则会引发错误。
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Deletes the specified section along with all the key-value pairs inside. Raises 
 
 |void| **erase_section_key**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_erase_section_key>`
 
-Deletes the specified key in a section. Raises an error if either the section or the key do not exist.
+删除小节中的指定键。如果该小节或键不存在，则会引发错误。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ Deletes the specified key in a section. Raises an error if either the section or
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_section_keys**\ (\ section\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ConfigFile_method_get_section_keys>`
 
-Returns an array of all defined key identifiers in the specified section. Raises an error and returns an empty array if the section does not exist.
+返回指定小节中所有已定义键标识符的数组。如果该小节不存在，则会引发错误并返回一个空数组。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Returns an array of all defined key identifiers in the specified section. Raises
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_sections**\ (\ ) |const| :ref:`🔗<class_ConfigFile_method_get_sections>`
 
-Returns an array of all defined section identifiers.
+返回所有已定义小节的标识符的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Returns an array of all defined section identifiers.
 
 :ref:`Variant<class_Variant>` **get_value**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`, default\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_ConfigFile_method_get_value>`
 
-Returns the current value for the specified section and key. If either the section or the key do not exist, the method returns the fallback ``default`` value. If ``default`` is not specified or set to ``null``, an error is also raised.
+返回指定小节和键的当前值。如果该小节或键不存在，则该方法返回后备值 ``default``\ 。如果未指定 ``default`` 或将其设置为 ``null``\ ，则会引发一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Returns the current value for the specified section and key. If either the secti
 
 :ref:`bool<class_bool>` **has_section**\ (\ section\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ConfigFile_method_has_section>`
 
-Returns ``true`` if the specified section exists.
+如果指定的小节存在，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ Returns ``true`` if the specified section exists.
 
 :ref:`bool<class_bool>` **has_section_key**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_ConfigFile_method_has_section_key>`
 
-Returns ``true`` if the specified section-key pair exists.
+如果指定的小节-键对存在，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -284,9 +284,9 @@ Returns ``true`` if the specified section-key pair exists.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_load>`
 
-Loads the config file specified as a parameter. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+加载指定为参数的配置文件。解析文件的内容并将其加载到调用该方法的 **ConfigFile** 对象中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -298,9 +298,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_encrypted**\ (\ path\: :ref:`String<class_String>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ConfigFile_method_load_encrypted>`
 
-Loads the encrypted config file specified as a parameter, using the provided ``key`` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+加载指定为参数的加密配置文件，使用提供的 ``key`` 对其解密。解析文件的内容并将其加载到调用该方法的 **ConfigFile** 对象中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -312,9 +312,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_encrypted_pass**\ (\ path\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_load_encrypted_pass>`
 
-Loads the encrypted config file specified as a parameter, using the provided ``password`` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+加载作为参数的加密配置文件，使用提供的 ``password`` 解密。该文件的内容被解析并加载到调用该方法的 **ConfigFile** 对象中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -326,9 +326,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **parse**\ (\ data\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_parse>`
 
-Parses the passed string as the contents of a config file. The string is parsed and loaded in the ConfigFile object which the method was called on.
+将传递的字符串解析为配置文件的内容。该字符串被解析并加载到调用该方法的 ConfigFile 对象中。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -340,9 +340,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_save>`
 
-Saves the contents of the **ConfigFile** object to the file specified as a parameter. The output file uses an INI-style structure.
+将 **ConfigFile** 对象的内容保存到指定为参数的文件中。输出文件使用 INI 样式的结构。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -354,9 +354,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted**\ (\ path\: :ref:`String<class_String>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ConfigFile_method_save_encrypted>`
 
-Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided ``key`` to encrypt it. The output file uses an INI-style structure.
+使用提供的 ``key`` 将 **ConfigFile** 对象的内容保存到作为参数指定的 AES-256 加密文件中。输出文件使用 INI 样式的结构。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted_pass**\ (\ path\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_save_encrypted_pass>`
 
-Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided ``password`` to encrypt it. The output file uses an INI-style structure.
+将 **ConfigFile** 对象的内容保存到作为参数指定的 AES-256 加密文件中，使用提供的 ``password`` 进行加密。输出文件使用 INI 风格的结构。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -382,14 +382,14 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **set_value**\ (\ section\: :ref:`String<class_String>`, key\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ConfigFile_method_set_value>`
 
-Assigns a value to the specified key of the specified section. If either the section or the key do not exist, they are created. Passing a ``null`` value deletes the specified key if it exists, and deletes the section if it ends up empty once the key has been removed.
+为指定小节的指定键赋值。如果小节或键不存在，则创建它们。如果指定的键存在，传递 ``null`` 值就会移除指定的键，如果键被移除后，小节最终是空的，就会移除小节。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

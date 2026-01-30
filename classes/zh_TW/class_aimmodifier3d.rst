@@ -5,23 +5,23 @@
 AimModifier3D
 =============
 
-**Inherits:** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`BoneConstraint3D<class_BoneConstraint3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-The **AimModifier3D** rotates a bone to look at a reference bone.
+**AimModifier3D** 會旋轉骨骼，使其朝向參考骨骼。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This is a simple version of :ref:`LookAtModifier3D<class_LookAtModifier3D>` that only allows bone to the reference without advanced options such as angle limitation or time-based interpolation.
+這是 :ref:`LookAtModifier3D<class_LookAtModifier3D>` 的簡化版本，只支援將骨骼對準參考骨骼，不含角度限制或以時間為基礎的內插等進階選項。
 
-The feature is simplified, but instead it is implemented with smooth tracking without euler, see :ref:`set_use_euler()<class_AimModifier3D_method_set_use_euler>`.
+雖然功能精簡，但以平滑追蹤方式實作，且不使用歐拉角，請參閱 :ref:`set_use_euler()<class_AimModifier3D_method_set_use_euler>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -32,8 +32,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AimModifier3D_property_setting_count:
 
@@ -80,7 +80,7 @@ Property Descriptions
 - |void| **set_setting_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_setting_count**\ (\ )
 
-The number of settings in the modifier.
+此修改器中的設定項數量。
 
 .. rst-class:: classref-section-separator
 
@@ -88,8 +88,8 @@ The number of settings in the modifier.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AimModifier3D_method_get_forward_axis:
 
@@ -97,7 +97,7 @@ Method Descriptions
 
 :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>` **get_forward_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AimModifier3D_method_get_forward_axis>`
 
-Returns the forward axis of the bone.
+傳回骨骼的前向軸。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Returns the forward axis of the bone.
 
 :ref:`Axis<enum_Vector3_Axis>` **get_primary_rotation_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AimModifier3D_method_get_primary_rotation_axis>`
 
-Returns the axis of the first rotation. It is enabled only if :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` is ``true``.
+傳回第一旋轉的軸向；僅當 :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ Returns ``true`` if the relative option is enabled in the setting at ``index``.
 
 :ref:`bool<class_bool>` **is_using_euler**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AimModifier3D_method_is_using_euler>`
 
-Returns ``true`` if it provides rotation with using euler.
+若使用歐拉角進行旋轉，則傳回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Returns ``true`` if it provides rotation with using euler.
 
 :ref:`bool<class_bool>` **is_using_secondary_rotation**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AimModifier3D_method_is_using_secondary_rotation>`
 
-Returns ``true`` if it provides rotation by two axes. It is enabled only if :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` is ``true``.
+若使用雙軸進行旋轉，則傳回 ``true``\ ；僅當 :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Returns ``true`` if it provides rotation by two axes. It is enabled only if :ref
 
 |void| **set_forward_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`BoneAxis<enum_SkeletonModifier3D_BoneAxis>`\ ) :ref:`🔗<class_AimModifier3D_method_set_forward_axis>`
 
-Sets the forward axis of the bone.
+設定骨骼的前向軸。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Sets the forward axis of the bone.
 
 |void| **set_primary_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`Axis<enum_Vector3_Axis>`\ ) :ref:`🔗<class_AimModifier3D_method_set_primary_rotation_axis>`
 
-Sets the axis of the first rotation. It is enabled only if :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` is ``true``.
+設定第一旋轉的軸向；僅當 :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -197,9 +197,9 @@ If sets ``enabled`` to ``false``, the rotation is applied relative to the rest. 
 
 |void| **set_use_euler**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AimModifier3D_method_set_use_euler>`
 
-If sets ``enabled`` to ``true``, it provides rotation with using euler.
+若將 ``enabled`` 設為 ``true``\ ，即使用歐拉角來計算旋轉。
 
-If sets ``enabled`` to ``false``, it provides rotation with using rotation by arc generated from the forward axis vector and the vector toward the reference.
+若將 ``enabled`` 設為 ``false``\ ，則改以由前向軸向量與指向參考的向量所形成的弧度來計算旋轉。
 
 .. rst-class:: classref-item-separator
 
@@ -211,14 +211,14 @@ If sets ``enabled`` to ``false``, it provides rotation with using rotation by ar
 
 |void| **set_use_secondary_rotation**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_AimModifier3D_method_set_use_secondary_rotation>`
 
-If sets ``enabled`` to ``true``, it provides rotation by two axes. It is enabled only if :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` is ``true``.
+若將 ``enabled`` 設為 ``true``\ ，將使用雙軸旋轉；僅當 :ref:`is_using_euler()<class_AimModifier3D_method_is_using_euler>` 為 ``true`` 時有效。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

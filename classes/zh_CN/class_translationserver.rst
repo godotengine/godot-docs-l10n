@@ -5,32 +5,32 @@
 TranslationServer
 =================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-The server responsible for language translations.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-The translation server is the API backend that manages all language translations.
-
-Translations are stored in :ref:`TranslationDomain<class_TranslationDomain>`\ s, which can be accessed by name. The most commonly used translation domain is the main translation domain. It always exists and can be accessed using an empty :ref:`StringName<class_StringName>`. The translation server provides wrapper methods for accessing the main translation domain directly, without having to fetch the translation domain first. Custom translation domains are mainly for advanced usages like editor plugins. Names starting with ``godot.`` are reserved for engine internals.
+负责语言翻译的服务器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Internationalizing games <../tutorials/i18n/internationalizing_games>`
+翻译服务器是负责管理所有语言翻译的 API 后端。
 
-- :doc:`Locales <../tutorials/i18n/locales>`
+翻译存储在翻译域 :ref:`TranslationDomain<class_TranslationDomain>` 中，可以通过名称访问。最常用的翻译域是主翻译域。主翻译域始终存在，可以通过空 :ref:`StringName<class_StringName>` 访问。翻译服务器为直接访问主翻译域提供了封装方法，无需先获取翻译域。自定义翻译域主要用于编辑器插件等高阶用法。以 ``godot.`` 开头的名称是引擎内部保留名称。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`将游戏国际化 <../tutorials/i18n/internationalizing_games>`
+
+- :doc:`区域设置 <../tutorials/i18n/locales>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -119,8 +119,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TranslationServer_property_pseudolocalization_enabled:
 
@@ -133,7 +133,7 @@ Property Descriptions
 - |void| **set_pseudolocalization_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pseudolocalization_enabled**\ (\ )
 
-If ``true``, enables the use of pseudolocalization on the main translation domain. See :ref:`ProjectSettings.internationalization/pseudolocalization/use_pseudolocalization<class_ProjectSettings_property_internationalization/pseudolocalization/use_pseudolocalization>` for details.
+如果为 ``true``\ ，则在主翻译域中启用伪本地化。详见 :ref:`ProjectSettings.internationalization/pseudolocalization/use_pseudolocalization<class_ProjectSettings_property_internationalization/pseudolocalization/use_pseudolocalization>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -141,8 +141,8 @@ If ``true``, enables the use of pseudolocalization on the main translation domai
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TranslationServer_method_add_translation:
 
@@ -150,7 +150,7 @@ Method Descriptions
 
 |void| **add_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_TranslationServer_method_add_translation>`
 
-Adds a translation to the main translation domain.
+在主翻译域中添加翻译。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Adds a translation to the main translation domain.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TranslationServer_method_clear>`
 
-Removes all translations from the main translation domain.
+在主翻译域中移除所有翻译。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Removes all translations from the main translation domain.
 
 :ref:`int<class_int>` **compare_locales**\ (\ locale_a\: :ref:`String<class_String>`, locale_b\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_compare_locales>`
 
-Compares two locales and returns a similarity score between ``0`` (no match) and ``10`` (full match).
+比较两个区域设置，返回 ``0``\ （不匹配）和 ``10``\ （完全匹配）之间的相似度得分。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Converts a number from Western Arabic (0..9) to the numeral system used in the g
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_all_countries**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_all_countries>`
 
-Returns an array of known country codes.
+返回已知地区代码的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Returns an array of known country codes.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_all_languages**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_all_languages>`
 
-Returns array of known language codes.
+返回已知语言代码的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +234,7 @@ Returns array of known language codes.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_all_scripts**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_all_scripts>`
 
-Returns an array of known script codes.
+返回已知文字代码的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Returns an array of known script codes.
 
 :ref:`String<class_String>` **get_country_name**\ (\ country\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_country_name>`
 
-Returns a readable country name for the ``country`` code.
+返回地区代码 ``country`` 的可读地区名称。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ Returns a readable country name for the ``country`` code.
 
 :ref:`String<class_String>` **get_language_name**\ (\ language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_language_name>`
 
-Returns a readable language name for the ``language`` code.
+返回语言代码 ``language`` 的可读语言名称。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +270,7 @@ Returns a readable language name for the ``language`` code.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_loaded_locales**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_loaded_locales>`
 
-Returns an array of all loaded locales of the project.
+返回项目中所有已加载的区域设置的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -282,9 +282,9 @@ Returns an array of all loaded locales of the project.
 
 :ref:`String<class_String>` **get_locale**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_locale>`
 
-Returns the current locale of the project.
+返回项目的当前区域设置。
 
-See also :ref:`OS.get_locale()<class_OS_method_get_locale>` and :ref:`OS.get_locale_language()<class_OS_method_get_locale_language>` to query the locale of the user system.
+查询用户系统的区域设置请参阅 :ref:`OS.get_locale()<class_OS_method_get_locale>` 和 :ref:`OS.get_locale_language()<class_OS_method_get_locale_language>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ See also :ref:`OS.get_locale()<class_OS_method_get_locale>` and :ref:`OS.get_loc
 
 :ref:`String<class_String>` **get_locale_name**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_locale_name>`
 
-Returns a locale's language and its variant (e.g. ``"en_US"`` would return ``"English (United States)"``).
+返回区域设置的语言及其变体。例如，\ ``"en_US"`` 将返回 ``"English (United States)"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ Returns a locale's language and its variant (e.g. ``"en_US"`` would return ``"En
 
 :ref:`TranslationDomain<class_TranslationDomain>` **get_or_add_domain**\ (\ domain\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_TranslationServer_method_get_or_add_domain>`
 
-Returns the translation domain with the specified name. An empty translation domain will be created and added if it does not exist.
+返回给定名称对应的翻译域。如果不存在使用该名称的翻译域，则会创建并添加一个空的翻译域。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Returns the default plural rules for the ``locale``.
 
 :ref:`String<class_String>` **get_script_name**\ (\ script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_script_name>`
 
-Returns a readable script name for the ``script`` code.
+返回文字代码 ``script`` 的可读文字名称。
 
 .. rst-class:: classref-item-separator
 
@@ -356,9 +356,9 @@ Returns a readable script name for the ``script`` code.
 
 :ref:`String<class_String>` **get_tool_locale**\ (\ ) :ref:`🔗<class_TranslationServer_method_get_tool_locale>`
 
-Returns the current locale of the editor.
+返回编辑器的当前区域设置。
 
-\ **Note:** When called from an exported project returns the same value as :ref:`get_locale()<class_TranslationServer_method_get_locale>`.
+\ **注意：**\ 从导出后的项目中调用时，返回值与 :ref:`get_locale()<class_TranslationServer_method_get_locale>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -370,9 +370,9 @@ Returns the current locale of the editor.
 
 :ref:`Translation<class_Translation>` **get_translation_object**\ (\ locale\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TranslationServer_method_get_translation_object>`
 
-**Deprecated:** Use :ref:`find_translations()<class_TranslationServer_method_find_translations>` instead.
+**已弃用：** Use :ref:`find_translations()<class_TranslationServer_method_find_translations>` instead.
 
-Returns the :ref:`Translation<class_Translation>` instance that best matches ``locale`` in the main translation domain. Returns ``null`` if there are no matches.
+返回主翻译域中与 ``locale`` 最为匹配的 :ref:`Translation<class_Translation>` 实例。如果没有能够匹配的翻译则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Returns all available :ref:`Translation<class_Translation>` instances in the mai
 
 :ref:`bool<class_bool>` **has_domain**\ (\ domain\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_domain>`
 
-Returns ``true`` if a translation domain with the specified name exists.
+如果存在指定名称的翻译域，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -444,9 +444,9 @@ Converts ``number`` from the numeral system used in the given ``locale`` to West
 
 :ref:`StringName<class_StringName>` **pseudolocalize**\ (\ message\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_TranslationServer_method_pseudolocalize>`
 
-Returns the pseudolocalized string based on the ``message`` passed in.
+根据传入的 ``message`` 返回伪本地化字符串。
 
-\ **Note:** This method always uses the main translation domain.
+\ **注意：**\ 该方法始终使用主翻译域。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Returns the pseudolocalized string based on the ``message`` passed in.
 
 |void| **reload_pseudolocalization**\ (\ ) :ref:`🔗<class_TranslationServer_method_reload_pseudolocalization>`
 
-Reparses the pseudolocalization options and reloads the translation for the main translation domain.
+重新解析伪本地化选项，并为主翻译域重新加载翻译。
 
 .. rst-class:: classref-item-separator
 
@@ -470,9 +470,9 @@ Reparses the pseudolocalization options and reloads the translation for the main
 
 |void| **remove_domain**\ (\ domain\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_TranslationServer_method_remove_domain>`
 
-Removes the translation domain with the specified name.
+移除指定名称的翻译域。
 
-\ **Note:** Trying to remove the main translation domain is an error.
+\ **注意：**\ 尝试移除主翻译域会发生错误。
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ Removes the translation domain with the specified name.
 
 |void| **remove_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) :ref:`🔗<class_TranslationServer_method_remove_translation>`
 
-Removes the given translation from the main translation domain.
+在主翻译域中移除给定的翻译。
 
 .. rst-class:: classref-item-separator
 
@@ -496,9 +496,9 @@ Removes the given translation from the main translation domain.
 
 |void| **set_locale**\ (\ locale\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TranslationServer_method_set_locale>`
 
-Sets the locale of the project. The ``locale`` string will be standardized to match known locales (e.g. ``en-US`` would be matched to ``en_US``).
+设置项目的区域设置。\ ``locale`` 字符串将被标准化，以匹配已知的区域设置（例如 ``en-US`` 将与 ``en_US`` 匹配）。
 
-If translations have been loaded beforehand for the new locale, they will be applied.
+如果已经为新区域设置预先加载了翻译，则它们将被应用。
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ If translations have been loaded beforehand for the new locale, they will be app
 
 :ref:`String<class_String>` **standardize_locale**\ (\ locale\: :ref:`String<class_String>`, add_defaults\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_TranslationServer_method_standardize_locale>`
 
-Returns a ``locale`` string standardized to match known locales (e.g. ``en-US`` would be matched to ``en_US``). If ``add_defaults`` is ``true``, the locale may have a default script or country added.
+返回标准化后的 ``locale`` 字符串，与已知的区域设置匹配（例如 ``en-US`` 将与 ``en_US`` 匹配）。如果 ``add_defaults`` 为 ``true``\ ，则可以为区域设置添加默认文字和地区。
 
 .. rst-class:: classref-item-separator
 
@@ -522,9 +522,9 @@ Returns a ``locale`` string standardized to match known locales (e.g. ``en-US`` 
 
 :ref:`StringName<class_StringName>` **translate**\ (\ message\: :ref:`StringName<class_StringName>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_TranslationServer_method_translate>`
 
-Returns the current locale's translation for the given message and context.
+返回当前区域设置下，给定消息和上下文对应的翻译。
 
-\ **Note:** This method always uses the main translation domain.
+\ **注意：**\ 该方法始终使用主翻译域。
 
 .. rst-class:: classref-item-separator
 
@@ -536,18 +536,18 @@ Returns the current locale's translation for the given message and context.
 
 :ref:`StringName<class_StringName>` **translate_plural**\ (\ message\: :ref:`StringName<class_StringName>`, plural_message\: :ref:`StringName<class_StringName>`, n\: :ref:`int<class_int>`, context\: :ref:`StringName<class_StringName>` = &""\ ) |const| :ref:`🔗<class_TranslationServer_method_translate_plural>`
 
-Returns the current locale's translation for the given message, plural message and context.
+返回当前区域设置下，与给定消息、复数消息和上下文对应的翻译。
 
-The number ``n`` is the number or quantity of the plural object. It will be used to guide the translation system to fetch the correct plural form for the selected language.
+数字 ``n`` 是复数对象的数量。翻译系统会根据这个数字来针对所选语言获取正确的复数形式。
 
-\ **Note:** This method always uses the main translation domain.
+\ **注意：**\ 该方法始终使用主翻译域。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

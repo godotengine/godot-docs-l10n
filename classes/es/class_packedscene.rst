@@ -142,7 +142,7 @@ enum **GenEditState**: :ref:`🔗<enum_PackedScene_GenEditState>`
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_DISABLED** = ``0``
 
-If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, blocks edits to the scene state.
+Si se pasa a :ref:`instantiate()<class_PackedScene_method_instantiate>`, bloquea las ediciones al estado de la escena.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_INSTANCE:
 
@@ -150,9 +150,9 @@ If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, blocks 
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_INSTANCE** = ``1``
 
-If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene.
+Si se pasa a :ref:`instantiate()<class_PackedScene_method_instantiate>`, proporciona recursos de escena locales a la escena local.
 
-\ **Note:** Only available in editor builds.
+\ **Nota:** Solo disponible en compilaciones de editor.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_MAIN:
 
@@ -160,9 +160,9 @@ If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provide
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_MAIN** = ``2``
 
-If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provides local scene resources to the local scene. Only the main scene should receive the main edit state.
+Si se pasa a :ref:`instantiate()<class_PackedScene_method_instantiate>`, proporciona recursos de la escena local a la escena local. Solo la escena principal debe recibir el estado de edición principal.
 
-\ **Note:** Only available in editor builds.
+\ **Nota:** Solo disponible en las builds del editor.
 
 .. _class_PackedScene_constant_GEN_EDIT_STATE_MAIN_INHERITED:
 
@@ -170,9 +170,9 @@ If passed to :ref:`instantiate()<class_PackedScene_method_instantiate>`, provide
 
 :ref:`GenEditState<enum_PackedScene_GenEditState>` **GEN_EDIT_STATE_MAIN_INHERITED** = ``3``
 
-It's similar to :ref:`GEN_EDIT_STATE_MAIN<class_PackedScene_constant_GEN_EDIT_STATE_MAIN>`, but for the case where the scene is being instantiated to be the base of another one.
+Es similar a :ref:`GEN_EDIT_STATE_MAIN<class_PackedScene_constant_GEN_EDIT_STATE_MAIN>`, pero para el caso en que la escena se está instanciando para ser la base de otra.
 
-\ **Note:** Only available in editor builds.
+\ **Nota:** Solo disponible en las builds del editor.
 
 .. rst-class:: classref-section-separator
 
@@ -213,7 +213,7 @@ Devuelve el :ref:`SceneState<class_SceneState>` que representa el contenido del 
 
 :ref:`Node<class_Node>` **instantiate**\ (\ edit_state\: :ref:`GenEditState<enum_PackedScene_GenEditState>` = 0\ ) |const| :ref:`🔗<class_PackedScene_method_instantiate>`
 
-Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). Triggers a :ref:`Node.NOTIFICATION_SCENE_INSTANTIATED<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>` notification on the root node.
+Instancia la jerarquía de nodos de la escena. Desencadena la(s) instanciación de la(s) escena(s) hija(s). Dispara una notificación :ref:`Node.NOTIFICATION_SCENE_INSTANTIATED<class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED>` en el nodo raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Instantiates the scene's node hierarchy. Triggers child scene instantiation(s). 
 
 :ref:`Error<enum_@GlobalScope_Error>` **pack**\ (\ path\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_PackedScene_method_pack>`
 
-Packs the ``path`` node, and all owned sub-nodes, into this **PackedScene**. Any existing data will be cleared. See :ref:`Node.owner<class_Node_property_owner>`.
+Empaqueta el nodo ``path``, y todos los subnodos propios, en esta **PackedScene**. Cualquier dato existente será borrado. Véase :ref:`Node.owner<class_Node_property_owner>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -5,30 +5,30 @@
 ResourceImporterOBJ
 ===================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Imports an OBJ 3D model as an independent :ref:`Mesh<class_Mesh>` or scene.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Unlike :ref:`ResourceImporterScene<class_ResourceImporterScene>`, **ResourceImporterOBJ** will import a single :ref:`Mesh<class_Mesh>` resource by default instead of importing a :ref:`PackedScene<class_PackedScene>`. This makes it easier to use the :ref:`Mesh<class_Mesh>` resource in nodes that expect direct :ref:`Mesh<class_Mesh>` resources, such as :ref:`GridMap<class_GridMap>`, :ref:`GPUParticles3D<class_GPUParticles3D>` or :ref:`CPUParticles3D<class_CPUParticles3D>`. Note that it is still possible to save mesh resources from 3D scenes using the **Advanced Import Settings** dialog, regardless of the source format.
+與\ :ref:`ResourceImporterScene<class_ResourceImporterScene>`\ 不同，\ **ResourceImporterOBJ**\ 預設會匯入單一\ :ref:`Mesh<class_Mesh>`\ 資源，而不是匯入\ :ref:`PackedScene<class_PackedScene>`\ 。這使得在節點中使用\ :ref:`Mesh<class_Mesh>`\ 資源變得更加容易需要直接\ :ref:`Mesh<class_Mesh>` 資源，例如\ :ref:`GridMap<class_GridMap>`\ 、\ :ref:`GPUParticles3D<class_GPUParticles3D>` 或\ :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。請注意，無論如何，仍然可以使用\ **高階匯入設定** 對話方塊從3D 場景儲存網格資源的來源格式。
 
-See also :ref:`ResourceImporterScene<class_ResourceImporterScene>`, which is used for more advanced 3D formats such as glTF.
+另請參閱 :ref:`ResourceImporterScene<class_ResourceImporterScene>`\ ，它用於更高級的 3D 格式，例如 glTF。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Importing 3D scenes <../tutorials/assets_pipeline/importing_3d_scenes/index>`
+- :doc:`匯入 3D 場景 <../tutorials/assets_pipeline/importing_3d_scenes/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ResourceImporterOBJ_property_force_disable_mesh_compression:
 
@@ -104,7 +104,7 @@ Controls the size of each texel on the baked lightmap. A smaller value results i
 
 :ref:`bool<class_bool>` **generate_lods** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_lods>`
 
-If ``true``, generates lower detail variants of the mesh which will be displayed in the distance to improve rendering performance. Not all meshes benefit from LOD, especially if they are never rendered from far away. Disabling this can reduce output file size and speed up importing. See `Mesh level of detail (LOD) <../tutorials/3d/mesh_lod.html#doc-mesh-lod>`__ for more information.
+如果\ ``true``\ ，則產生網格的較低細節變體，這些變體將顯示在遠處以提高算繪效能。並非所有網格都受益於LOD，特別是如果它們永遠不會從遠處算繪。停用此功能可以減少輸出檔案大小並加快匯入速度。請參閱\ `網格細節等級(LOD) <../tutorials/3d/mesh_lod.html#doc-mesh-lod>`__ 了解更多。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ If ``true``, generates lower detail variants of the mesh which will be displayed
 
 :ref:`bool<class_bool>` **generate_shadow_mesh** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_shadow_mesh>`
 
-If ``true``, enables the generation of shadow meshes on import. This optimizes shadow rendering without reducing quality by welding vertices together when possible. This in turn reduces the memory bandwidth required to render shadows. Shadow mesh generation currently doesn't support using a lower detail level than the source mesh (but shadow rendering will make use of LODs when relevant).
+如果\ ``true``\ ，則在匯入時啟用陰影網格的產生。這可以最佳化陰影算繪，而不會在可能的情況下透過將頂點焊接在一起來降低品質。這反過來又減少了記憶體算繪陰影所需的頻寬。陰影網格產生目前不支援使用比來源網格更低的細節等級（但陰影算繪將在相關時使用LOD）。
 
 .. rst-class:: classref-item-separator
 
@@ -128,9 +128,9 @@ If ``true``, enables the generation of shadow meshes on import. This optimizes s
 
 :ref:`bool<class_bool>` **generate_tangents** = ``true`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_tangents>`
 
-If ``true``, generate vertex tangents using `Mikktspace <http://www.mikktspace.com/>`__ if the source mesh doesn't have tangent data. When possible, it's recommended to let the 3D modeling software generate tangents on export instead on relying on this option. Tangents are required for correct display of normal and height maps, along with any material/shader features that require tangents.
+如果\ ``true``\ ，則使用\ `Mikktspace <http://www.mikktspace.com/>`__ 產生頂點切線（如果來源網格不存在）沒有切線資料。如果可能，建議讓 3D 建模軟體在匯出時產生切線，而不是依賴此選項。需要切線才能正確顯示法線和高度貼圖，以及需要切線的任何材質/著色器功能。
 
-If you don't need material features that require tangents, disabling this can reduce output file size and speed up importing if the source 3D file doesn't contain tangents.
+如果您不需要需要切線的材質特徵，則停用此功能可以減少輸出檔案大小並加快匯入速度（如果來源 3D 檔案不包含切線）。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ If you don't need material features that require tangents, disabling this can re
 
 :ref:`Vector3<class_Vector3>` **offset_mesh** = ``Vector3(0, 0, 0)`` :ref:`🔗<class_ResourceImporterOBJ_property_offset_mesh>`
 
-Offsets the mesh's data by the specified value. This can be used to work around misaligned meshes without having to modify the source file.
+將網格資料偏移指定值。這可用於解決未對齊的網格，而無需修改原始檔案。
 
 .. rst-class:: classref-item-separator
 
@@ -154,14 +154,14 @@ Offsets the mesh's data by the specified value. This can be used to work around 
 
 :ref:`Vector3<class_Vector3>` **scale_mesh** = ``Vector3(1, 1, 1)`` :ref:`🔗<class_ResourceImporterOBJ_property_scale_mesh>`
 
-Scales the mesh's data by the specified value. This can be used to work around misscaled meshes without having to modify the source file.
+會依照指定值縮放網格資料。這可用於解決縮放錯誤的網格，而無需修改來源檔案。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

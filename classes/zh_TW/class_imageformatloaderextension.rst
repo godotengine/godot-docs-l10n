@@ -5,23 +5,23 @@
 ImageFormatLoaderExtension
 ==========================
 
-**Inherits:** :ref:`ImageFormatLoader<class_ImageFormatLoader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ImageFormatLoader<class_ImageFormatLoader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Base class for creating :ref:`ImageFormatLoader<class_ImageFormatLoader>` extensions (adding support for extra image formats).
+用於建立 :ref:`ImageFormatLoader<class_ImageFormatLoader>` 擴充的基底類別（新增對額外圖像格式的支援）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-The engine supports multiple image formats out of the box (PNG, SVG, JPEG, WebP to name a few), but you can choose to implement support for additional image formats by extending this class.
+該引擎支援多種開箱即用的圖像格式（PNG、SVG、JPEG、WebP 等），但也可以選擇通過擴充該類，來實作對其他圖像格式的支援。
 
-Be sure to respect the documented return types and values. You should create an instance of it, and call :ref:`add_format_loader()<class_ImageFormatLoaderExtension_method_add_format_loader>` to register that loader during the initialization phase.
+請務必遵守文件中的返回型別和值。應該建立它的一個實例，並在初始化階段呼叫 :ref:`add_format_loader()<class_ImageFormatLoaderExtension_method_add_format_loader>` 來註冊該載入器。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ImageFormatLoaderExtension_private_method__get_recognized_extensions:
 
@@ -51,7 +51,7 @@ Method Descriptions
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions**\ (\ ) |virtual| |const| :ref:`🔗<class_ImageFormatLoaderExtension_private_method__get_recognized_extensions>`
 
-Returns the list of file extensions for this image format. Files with the given extensions will be treated as image file and loaded using this class.
+返回該圖像格式的檔副檔名列表。具有給定副檔名的檔將被視為影像檔並使用該類載入。
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Returns the list of file extensions for this image format. Files with the given 
 
 :ref:`Error<enum_@GlobalScope_Error>` **_load_image**\ (\ image\: :ref:`Image<class_Image>`, fileaccess\: :ref:`FileAccess<class_FileAccess>`, flags\: |bitfield|\[:ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>`\], scale\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_ImageFormatLoaderExtension_private_method__load_image>`
 
-Loads the content of ``fileaccess`` into the provided ``image``.
+將 ``fileaccess`` 的內容載入至提供的 ``image``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Loads the content of ``fileaccess`` into the provided ``image``.
 
 |void| **add_format_loader**\ (\ ) :ref:`🔗<class_ImageFormatLoaderExtension_method_add_format_loader>`
 
-Add this format loader to the engine, allowing it to recognize the file extensions returned by :ref:`_get_recognized_extensions()<class_ImageFormatLoaderExtension_private_method__get_recognized_extensions>`.
+將這個格式載入器新增至引擎，使其能夠識別 :ref:`_get_recognized_extensions()<class_ImageFormatLoaderExtension_private_method__get_recognized_extensions>` 返回的檔案副檔名。
 
 .. rst-class:: classref-item-separator
 
@@ -87,14 +87,14 @@ Add this format loader to the engine, allowing it to recognize the file extensio
 
 |void| **remove_format_loader**\ (\ ) :ref:`🔗<class_ImageFormatLoaderExtension_method_remove_format_loader>`
 
-Remove this format loader from the engine.
+從引擎中移除這個格式載入器。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

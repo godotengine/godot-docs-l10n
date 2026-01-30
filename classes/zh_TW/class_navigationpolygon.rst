@@ -5,16 +5,16 @@
 NavigationPolygon
 =================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D navigation mesh that describes a traversable surface for pathfinding.
+用於定義可達區域和障礙物的導覽網格。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A navigation mesh can be created either by baking it with the help of the :ref:`NavigationServer2D<class_NavigationServer2D>`, or by adding vertices and convex polygon indices arrays manually.
 
@@ -68,17 +68,17 @@ Adding vertices and polygon indices manually.
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Using NavigationMeshes <../tutorials/navigation/navigation_using_navigationmeshes>`
+- :doc:`使用 NavigationMesh <../tutorials/navigation/navigation_using_navigationmeshes>`
 
 - `Navigation Polygon 2D Demo <https://godotengine.org/asset-library/asset/2722>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -107,8 +107,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -157,8 +157,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_NavigationPolygon_SamplePartitionType:
 
@@ -188,7 +188,7 @@ Triangulation partitioning that results in a navigation mesh with triangle polyg
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_MAX** = ``2``
 
-Represents the size of the :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` enum.
+代表 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,7 @@ enum **ParsedGeometryType**: :ref:`🔗<enum_NavigationPolygon_ParsedGeometryTyp
 
 :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` **PARSED_GEOMETRY_MESH_INSTANCES** = ``0``
 
-Parses mesh instances as obstruction geometry. This includes :ref:`Polygon2D<class_Polygon2D>`, :ref:`MeshInstance2D<class_MeshInstance2D>`, :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`, and :ref:`TileMap<class_TileMap>` nodes.
-
-Meshes are only parsed when they use a 2D vertices surface format.
+將網格實例解析為幾何體。包括 :ref:`MeshInstance3D<class_MeshInstance3D>`\ 、\ :ref:`CSGShape3D<class_CSGShape3D>`\ 、\ :ref:`GridMap<class_GridMap>` 等節點。
 
 .. _class_NavigationPolygon_constant_PARSED_GEOMETRY_STATIC_COLLIDERS:
 
@@ -216,7 +214,7 @@ Meshes are only parsed when they use a 2D vertices surface format.
 
 :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` **PARSED_GEOMETRY_STATIC_COLLIDERS** = ``1``
 
-Parses :ref:`StaticBody2D<class_StaticBody2D>` and :ref:`TileMap<class_TileMap>` colliders as obstruction geometry. The collider should be in any of the layers specified by :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>`.
+將 :ref:`StaticBody2D<class_StaticBody2D>` 和 :ref:`TileMap<class_TileMap>` 碰撞器解析為幾何體。碰撞器應在由 :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` 指定的層中。
 
 .. _class_NavigationPolygon_constant_PARSED_GEOMETRY_BOTH:
 
@@ -224,7 +222,7 @@ Parses :ref:`StaticBody2D<class_StaticBody2D>` and :ref:`TileMap<class_TileMap>`
 
 :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` **PARSED_GEOMETRY_BOTH** = ``2``
 
-Both :ref:`PARSED_GEOMETRY_MESH_INSTANCES<class_NavigationPolygon_constant_PARSED_GEOMETRY_MESH_INSTANCES>` and :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationPolygon_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>`.
+:ref:`PARSED_GEOMETRY_MESH_INSTANCES<class_NavigationPolygon_constant_PARSED_GEOMETRY_MESH_INSTANCES>` 和 :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationPolygon_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>`.
 
 .. _class_NavigationPolygon_constant_PARSED_GEOMETRY_MAX:
 
@@ -232,7 +230,7 @@ Both :ref:`PARSED_GEOMETRY_MESH_INSTANCES<class_NavigationPolygon_constant_PARSE
 
 :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` **PARSED_GEOMETRY_MAX** = ``3``
 
-Represents the size of the :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` enum.
+代表 :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +248,7 @@ enum **SourceGeometryMode**: :ref:`🔗<enum_NavigationPolygon_SourceGeometryMod
 
 :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **SOURCE_GEOMETRY_ROOT_NODE_CHILDREN** = ``0``
 
-Scans the child nodes of the root node recursively for geometry.
+在根節點的子節點中遞迴掃描幾何體。
 
 .. _class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN:
 
@@ -258,7 +256,7 @@ Scans the child nodes of the root node recursively for geometry.
 
 :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN** = ``1``
 
-Scans nodes in a group and their child nodes recursively for geometry. The group is specified by :ref:`source_geometry_group_name<class_NavigationPolygon_property_source_geometry_group_name>`.
+以遞迴方式掃描組中的節點及其子節點以獲取幾何圖形。該組由 :ref:`source_geometry_group_name<class_NavigationPolygon_property_source_geometry_group_name>` 指定。
 
 .. _class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT:
 
@@ -266,7 +264,7 @@ Scans nodes in a group and their child nodes recursively for geometry. The group
 
 :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **SOURCE_GEOMETRY_GROUPS_EXPLICIT** = ``2``
 
-Uses nodes in a group for geometry. The group is specified by :ref:`source_geometry_group_name<class_NavigationPolygon_property_source_geometry_group_name>`.
+使用一個組中的節點進行幾何運算。該組由 :ref:`source_geometry_group_name<class_NavigationPolygon_property_source_geometry_group_name>` 指定。
 
 .. _class_NavigationPolygon_constant_SOURCE_GEOMETRY_MAX:
 
@@ -274,7 +272,7 @@ Uses nodes in a group for geometry. The group is specified by :ref:`source_geome
 
 :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **SOURCE_GEOMETRY_MAX** = ``3``
 
-Represents the size of the :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` enum.
+代表 :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -282,8 +280,8 @@ Represents the size of the :ref:`SourceGeometryMode<enum_NavigationPolygon_Sourc
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_NavigationPolygon_property_agent_radius:
 
@@ -368,7 +366,7 @@ In conjunction with the :ref:`baking_rect<class_NavigationPolygon_property_bakin
 - |void| **set_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_size**\ (\ )
 
-The cell size used to rasterize the navigation mesh vertices. Must match with the cell size on the navigation map.
+用於將導覽網格頂點柵格化的儲存格大小。必須與導覽地圖上的儲存格大小相配對。
 
 .. rst-class:: classref-item-separator
 
@@ -385,9 +383,9 @@ The cell size used to rasterize the navigation mesh vertices. Must match with th
 - |void| **set_parsed_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_parsed_collision_mask**\ (\ )
 
-The physics layers to scan for static colliders.
+用於掃描靜態碰撞的實體層。
 
-Only used when :ref:`parsed_geometry_type<class_NavigationPolygon_property_parsed_geometry_type>` is :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationPolygon_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>` or :ref:`PARSED_GEOMETRY_BOTH<class_NavigationPolygon_constant_PARSED_GEOMETRY_BOTH>`.
+僅在 :ref:`parsed_geometry_type<class_NavigationPolygon_property_parsed_geometry_type>` 是 :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationPolygon_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>` 或 :ref:`PARSED_GEOMETRY_BOTH<class_NavigationPolygon_constant_PARSED_GEOMETRY_BOTH>` 時才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -438,9 +436,9 @@ Partitioning algorithm for creating the navigation mesh polys.
 - |void| **set_source_geometry_group_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_source_geometry_group_name**\ (\ )
 
-The group name of nodes that should be parsed for baking source geometry.
+群組的名稱，會在該群組中掃描幾何體。
 
-Only used when :ref:`source_geometry_mode<class_NavigationPolygon_property_source_geometry_mode>` is :ref:`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN<class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN>` or :ref:`SOURCE_GEOMETRY_GROUPS_EXPLICIT<class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT>`.
+只有當 :ref:`source_geometry_mode<class_NavigationPolygon_property_source_geometry_mode>` 是 :ref:`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN<class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN>` 或 :ref:`SOURCE_GEOMETRY_GROUPS_EXPLICIT<class_NavigationPolygon_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT>` 時才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -465,8 +463,8 @@ The source of the geometry used when baking.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_NavigationPolygon_method_add_outline:
 
@@ -474,7 +472,7 @@ Method Descriptions
 
 |void| **add_outline**\ (\ outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationPolygon_method_add_outline>`
 
-Appends a :ref:`PackedVector2Array<class_PackedVector2Array>` that contains the vertices of an outline to the internal array that contains all the outlines.
+返回一個 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，其中包含在編輯器中或通過腳本建立的輪廓的頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +484,7 @@ Appends a :ref:`PackedVector2Array<class_PackedVector2Array>` that contains the 
 
 |void| **add_outline_at_index**\ (\ outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`, index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationPolygon_method_add_outline_at_index>`
 
-Adds a :ref:`PackedVector2Array<class_PackedVector2Array>` that contains the vertices of an outline to the internal array that contains all the outlines at a fixed position.
+將包含輪廓頂點的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，追加到包含所有輪廓的內部陣列。必須調用 :ref:`make_polygons_from_outlines()<class_NavigationPolygon_method_make_polygons_from_outlines>` 才能將該陣列轉換為引擎將使用的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +496,7 @@ Adds a :ref:`PackedVector2Array<class_PackedVector2Array>` that contains the ver
 
 |void| **add_polygon**\ (\ polygon\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_NavigationPolygon_method_add_polygon>`
 
-Adds a polygon using the indices of the vertices you get when calling :ref:`get_vertices()<class_NavigationPolygon_method_get_vertices>`.
+使用呼叫 :ref:`get_vertices()<class_NavigationPolygon_method_get_vertices>` 得到的頂點的索引新增一個多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +508,7 @@ Adds a polygon using the indices of the vertices you get when calling :ref:`get_
 
 |void| **clear**\ (\ ) :ref:`🔗<class_NavigationPolygon_method_clear>`
 
-Clears the internal arrays for vertices and polygon indices.
+清除頂點和多邊形索引的內部陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -522,7 +520,7 @@ Clears the internal arrays for vertices and polygon indices.
 
 |void| **clear_outlines**\ (\ ) :ref:`🔗<class_NavigationPolygon_method_clear_outlines>`
 
-Clears the array of the outlines, but it doesn't clear the vertices and the polygons that were created by them.
+清除輪廓陣列，但不清除頂點和由頂點建立的多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -534,7 +532,7 @@ Clears the array of the outlines, but it doesn't clear the vertices and the poly
 
 |void| **clear_polygons**\ (\ ) :ref:`🔗<class_NavigationPolygon_method_clear_polygons>`
 
-Clears the array of polygons, but it doesn't clear the array of outlines and vertices.
+清除多邊形陣列，但不清除輪廓和頂點陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +556,7 @@ Returns the :ref:`NavigationMesh<class_NavigationMesh>` resulting from this navi
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_outline**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationPolygon_method_get_outline>`
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing the vertices of an outline that was created in the editor or by script.
+返回一個 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，其中包含在編輯器中或通過腳本建立的輪廓的頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -570,7 +568,7 @@ Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing the ver
 
 :ref:`int<class_int>` **get_outline_count**\ (\ ) |const| :ref:`🔗<class_NavigationPolygon_method_get_outline_count>`
 
-Returns the number of outlines that were created in the editor or by script.
+返回在編輯器或腳本中建立的輪廓的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -582,7 +580,7 @@ Returns the number of outlines that were created in the editor or by script.
 
 :ref:`bool<class_bool>` **get_parsed_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationPolygon_method_get_parsed_collision_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` 中是否啟用了指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -594,7 +592,7 @@ Returns whether or not the specified layer of the :ref:`parsed_collision_mask<cl
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_polygon**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationPolygon_method_get_polygon>`
 
-Returns a :ref:`PackedInt32Array<class_PackedInt32Array>` containing the indices of the vertices of a created polygon.
+返回建立多邊形的頂點索引，形式為 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +604,7 @@ Returns a :ref:`PackedInt32Array<class_PackedInt32Array>` containing the indices
 
 :ref:`int<class_int>` **get_polygon_count**\ (\ ) |const| :ref:`🔗<class_NavigationPolygon_method_get_polygon_count>`
 
-Returns the count of all polygons.
+返回多邊形的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -618,7 +616,7 @@ Returns the count of all polygons.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ ) |const| :ref:`🔗<class_NavigationPolygon_method_get_vertices>`
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing all the vertices being used to create the polygons.
+返回一個 :ref:`PackedVector2Array<class_PackedVector2Array>`\ ，其中包含用於建立多邊形的所有頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -630,7 +628,7 @@ Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing all the
 
 |void| **make_polygons_from_outlines**\ (\ ) :ref:`🔗<class_NavigationPolygon_method_make_polygons_from_outlines>`
 
-**Deprecated:** Use :ref:`NavigationServer2D.parse_source_geometry_data()<class_NavigationServer2D_method_parse_source_geometry_data>` and :ref:`NavigationServer2D.bake_from_source_geometry_data()<class_NavigationServer2D_method_bake_from_source_geometry_data>` instead.
+**已棄用：** Use :ref:`NavigationServer2D.parse_source_geometry_data()<class_NavigationServer2D_method_parse_source_geometry_data>` and :ref:`NavigationServer2D.bake_from_source_geometry_data()<class_NavigationServer2D_method_bake_from_source_geometry_data>` instead.
 
 Creates polygons from the outlines added in the editor or by script.
 
@@ -644,7 +642,7 @@ Creates polygons from the outlines added in the editor or by script.
 
 |void| **remove_outline**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_NavigationPolygon_method_remove_outline>`
 
-Removes an outline created in the editor or by script. You have to call :ref:`make_polygons_from_outlines()<class_NavigationPolygon_method_make_polygons_from_outlines>` for the polygons to update.
+刪除在編輯器或腳本中建立的輪廓。你必須呼叫 :ref:`make_polygons_from_outlines()<class_NavigationPolygon_method_make_polygons_from_outlines>` 來更新多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +654,7 @@ Removes an outline created in the editor or by script. You have to call :ref:`ma
 
 |void| **set_outline**\ (\ idx\: :ref:`int<class_int>`, outline\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationPolygon_method_set_outline>`
 
-Changes an outline created in the editor or by script. You have to call :ref:`make_polygons_from_outlines()<class_NavigationPolygon_method_make_polygons_from_outlines>` for the polygons to update.
+更改在編輯器或腳本中建立的輪廓。你必須呼叫 :ref:`make_polygons_from_outlines()<class_NavigationPolygon_method_make_polygons_from_outlines>` 來更新多邊形。
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +666,7 @@ Changes an outline created in the editor or by script. You have to call :ref:`ma
 
 |void| **set_parsed_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationPolygon_method_set_parsed_collision_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>`, given a ``layer_number`` between 1 and 32.
+根據 ``value``\ ，啟用或禁用 :ref:`parsed_collision_mask<class_NavigationPolygon_property_parsed_collision_mask>` 中指定的層，給定的 ``layer_number`` 應在 1 和 32 之間。
 
 .. rst-class:: classref-item-separator
 
@@ -680,14 +678,14 @@ Based on ``value``, enables or disables the specified layer in the :ref:`parsed_
 
 |void| **set_vertices**\ (\ vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`\ ) :ref:`🔗<class_NavigationPolygon_method_set_vertices>`
 
-Sets the vertices that can be then indexed to create polygons with the :ref:`add_polygon()<class_NavigationPolygon_method_add_polygon>` method.
+設定頂點，可以使用 :ref:`add_polygon()<class_NavigationPolygon_method_add_polygon>` 方法對其進行索引，建立多邊形。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

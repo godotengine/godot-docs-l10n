@@ -5,14 +5,14 @@
 ImmediateMesh
 =============
 
-**Inherits:** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Mesh optimized for creating geometry manually.
+為手動建立幾何體，而優化的網格。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A mesh type optimized for creating geometry manually, similar to OpenGL 1.x immediate mode.
 
@@ -45,15 +45,15 @@ Here's a sample on how to generate a triangular face:
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Using ImmediateMesh <../tutorials/3d/procedural_geometry/immediatemesh>`
+- :doc:`使用 ImmediateMesh <../tutorials/3d/procedural_geometry/immediatemesh>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ImmediateMesh_method_clear_surfaces:
 
@@ -95,7 +95,7 @@ Method Descriptions
 
 |void| **clear_surfaces**\ (\ ) :ref:`🔗<class_ImmediateMesh_method_clear_surfaces>`
 
-Clear all surfaces.
+清除所有表面。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Clear all surfaces.
 
 |void| **surface_add_vertex**\ (\ vertex\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_add_vertex>`
 
-Add a 3D vertex using the current attributes previously set.
+使用先前設定的目前屬性，新增一個 3D 頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Add a 3D vertex using the current attributes previously set.
 
 |void| **surface_add_vertex_2d**\ (\ vertex\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_add_vertex_2d>`
 
-Add a 2D vertex using the current attributes previously set.
+使用先前設定的目前屬性，新增一個 2D 頂點。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Add a 2D vertex using the current attributes previously set.
 
 |void| **surface_begin**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`, material\: :ref:`Material<class_Material>` = null\ ) :ref:`🔗<class_ImmediateMesh_method_surface_begin>`
 
-Begin a new surface.
+開始一個新的表面。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Begin a new surface.
 
 |void| **surface_end**\ (\ ) :ref:`🔗<class_ImmediateMesh_method_surface_end>`
 
-End and commit current surface. Note that surface being created will not be visible until this function is called.
+結束並提交目前表面。請注意，在該函式被呼叫之前，建立的表面將不可見。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ End and commit current surface. Note that surface being created will not be visi
 
 |void| **surface_set_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_color>`
 
-Set the color attribute that will be pushed with the next vertex.
+設定將與下一個頂點一起推送的顏色屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Set the color attribute that will be pushed with the next vertex.
 
 |void| **surface_set_normal**\ (\ normal\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_normal>`
 
-Set the normal attribute that will be pushed with the next vertex.
+設定將與下一個頂點一起推送的法線屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Set the tangent attribute that will be pushed with the next vertex.
 
 |void| **surface_set_uv**\ (\ uv\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_uv>`
 
-Set the UV attribute that will be pushed with the next vertex.
+設定將與下一個頂點一起推送的 UV 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -205,14 +205,14 @@ Set the UV attribute that will be pushed with the next vertex.
 
 |void| **surface_set_uv2**\ (\ uv2\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_uv2>`
 
-Set the UV2 attribute that will be pushed with the next vertex.
+設定將與下一個頂點一起推送的 UV2 屬性。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

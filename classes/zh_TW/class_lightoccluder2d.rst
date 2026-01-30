@@ -5,28 +5,28 @@
 LightOccluder2D
 ===============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Occludes light cast by a Light2D, casting shadows.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Occludes light cast by a Light2D, casting shadows. The LightOccluder2D must be provided with an :ref:`OccluderPolygon2D<class_OccluderPolygon2D>` in order for the shadow to be computed.
+遮擋由 Light2D 投射的光線，投射陰影。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`2D lights and shadows <../tutorials/2d/2d_lights_and_shadows>`
+遮擋 Light2D 投射的燈光，投射陰影。為了計算陰影，必須為 LightOccluder2D 提供 :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`2D 燈光和陰影 <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_LightOccluder2D_property_occluder:
 
@@ -59,7 +59,7 @@ Property Descriptions
 - |void| **set_occluder_polygon**\ (\ value\: :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`\ )
 - :ref:`OccluderPolygon2D<class_OccluderPolygon2D>` **get_occluder_polygon**\ (\ )
 
-The :ref:`OccluderPolygon2D<class_OccluderPolygon2D>` used to compute the shadow.
+用於計算陰影的 :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -76,7 +76,7 @@ The :ref:`OccluderPolygon2D<class_OccluderPolygon2D>` used to compute the shadow
 - |void| **set_occluder_light_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_occluder_light_mask**\ (\ )
 
-The LightOccluder2D's occluder light mask. The LightOccluder2D will cast shadows only from Light2D(s) that have the same light mask(s).
+LightOccluder2D 的遮擋器光照遮罩。LightOccluder2D 將僅從具有相同光照遮罩的 Light2D 投射陰影。
 
 .. rst-class:: classref-item-separator
 
@@ -95,12 +95,12 @@ The LightOccluder2D's occluder light mask. The LightOccluder2D will cast shadows
 
 If enabled, the occluder will be part of a real-time generated signed distance field that can be used in custom shaders.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

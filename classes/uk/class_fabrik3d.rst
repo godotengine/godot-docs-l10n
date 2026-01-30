@@ -20,6 +20,13 @@ FABRIK3D
 
 \ **Примітка:** Коли ціль знаходиться близько до кореня, вона має тенденцію створювати зигзагоподібні візерунки, що призводить до неприродного візуального руху.
 
+.. rst-class:: classref-introduction-group
+
+Посібники
+------------------
+
+- `Зворотна кінематика повертається до Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
+
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
 .. |const| replace:: :abbr:`const (Цей метод не має побічних ефектів. Не змінює ніяку змінну екземпляра об'єкта.)`

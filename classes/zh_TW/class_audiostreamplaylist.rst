@@ -5,14 +5,14 @@
 AudioStreamPlaylist
 ===================
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-:ref:`AudioStream<class_AudioStream>` that includes sub-streams and plays them back like a playlist.
+包含子串流並以播放清單方式播放的 :ref:`AudioStream<class_AudioStream>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -29,8 +29,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_AudioStreamPlaylist_constant_MAX_STREAMS:
 
@@ -58,7 +58,7 @@ Constants
 
 **MAX_STREAMS** = ``64`` :ref:`🔗<class_AudioStreamPlaylist_constant_MAX_STREAMS>`
 
-Maximum amount of streams supported in the playlist.
+播放清單可支援的最大串流數量。
 
 .. rst-class:: classref-section-separator
 
@@ -66,8 +66,8 @@ Maximum amount of streams supported in the playlist.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioStreamPlaylist_property_fade_time:
 
@@ -80,7 +80,7 @@ Property Descriptions
 - |void| **set_fade_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fade_time**\ (\ )
 
-Fade time used when a stream ends, when going to the next one. Streams are expected to have an extra bit of audio after the end to help with fading.
+當一個串流結束並轉到下一個時所使用的淡出時間。建議各串流在結尾保留些許額外音訊以利淡出。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Fade time used when a stream ends, when going to the next one. Streams are expec
 - |void| **set_loop**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_loop**\ (\ )
 
-If ``true``, the playlist will loop, otherwise the playlist will end when the last stream is finished.
+若為 ``true``\ ，播放清單將循環播放；否則在最後一個串流播放完畢後停止。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ If ``true``, the playlist will loop, otherwise the playlist will end when the la
 - |void| **set_shuffle**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shuffle**\ (\ )
 
-If ``true``, the playlist will shuffle each time playback starts and each time it loops.
+若為 ``true``\ ，每次開始播放或重新循環時播放清單將重新隨機排序。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ If ``true``, the playlist will shuffle each time playback starts and each time i
 - |void| **set_stream_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_stream_count**\ (\ )
 
-Amount of streams in the playlist.
+播放清單中的串流數量。
 
 .. rst-class:: classref-section-separator
 
@@ -139,8 +139,8 @@ Amount of streams in the playlist.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioStreamPlaylist_method_get_bpm:
 
@@ -148,7 +148,7 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_bpm**\ (\ ) |const| :ref:`🔗<class_AudioStreamPlaylist_method_get_bpm>`
 
-Returns the BPM of the playlist, which can vary depending on the clip being played.
+返回播放清單的 BPM，可能隨目前播放的片段而異。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Returns the BPM of the playlist, which can vary depending on the clip being play
 
 :ref:`AudioStream<class_AudioStream>` **get_list_stream**\ (\ stream_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamPlaylist_method_get_list_stream>`
 
-Returns the stream at playback position index.
+返回指定播放位置索引處的串流。
 
 .. rst-class:: classref-item-separator
 
@@ -172,14 +172,14 @@ Returns the stream at playback position index.
 
 |void| **set_list_stream**\ (\ stream_index\: :ref:`int<class_int>`, audio_stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioStreamPlaylist_method_set_list_stream>`
 
-Sets the stream at playback position index.
+設定指定播放位置索引處的串流。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

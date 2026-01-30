@@ -5,33 +5,33 @@
 SpringBoneSimulator3D
 =====================
 
-**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inertial wavering to bone chains.
+对骨骼链应用惯性摆动的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` can be used to wiggle hair, cloth, and tails. This modifier behaves differently from :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` as it attempts to return the original pose after modification.
+这种 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 可以用来扭动头发、布料和尾巴，其行为与 :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` 不同，修改后会尝试返回到原始姿势。
 
-If you setup :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` and :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>`, it is treated as one bone chain. Note that it does not support a branched chain like Y-shaped chains.
+如果设置了 :ref:`set_root_bone()<class_SpringBoneSimulator3D_method_set_root_bone>` 和 :ref:`set_end_bone()<class_SpringBoneSimulator3D_method_set_end_bone>` 就会将其视为骨骼链。请注意，不支持像 Y 形链那样的分支链。
 
-When a bone chain is created, an array is generated from the bones that exist in between and listed in the joint list.
+创建骨骼链时会根据首尾之间的骨骼生成数组，在关节列表中展示。
 
-Several properties can be applied to each joint, such as :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`, :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>`, and :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`.
+每个关节都有许多属性可以应用，例如 :ref:`set_joint_stiffness()<class_SpringBoneSimulator3D_method_set_joint_stiffness>`\ 、\ :ref:`set_joint_drag()<class_SpringBoneSimulator3D_method_set_joint_drag>` 和 :ref:`set_joint_gravity()<class_SpringBoneSimulator3D_method_set_joint_gravity>`\ 。
 
-For simplicity, you can set values to all joints at the same time by using a :ref:`Curve<class_Curve>`. If you want to specify detailed values individually, set :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` to ``true``.
+为了简化操作，你可以使用 :ref:`Curve<class_Curve>` 同时设置所有关节的值。如果你想单独指定详细值，请将 :ref:`set_individual_config()<class_SpringBoneSimulator3D_method_set_individual_config>` 设置为 ``true``\ 。
 
-For physical simulation, **SpringBoneSimulator3D** can have children as self-standing collisions that are not related to :ref:`PhysicsServer3D<class_PhysicsServer3D>`, see also :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`.
+物理模拟时，\ **SpringBoneSimulator3D** 可以有子对象作为独立的碰撞体，这些碰撞体与 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 无关，另见 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`\ 。
 
-\ **Warning:** A scaled **SpringBoneSimulator3D** will likely not behave as expected. Make sure that the parent :ref:`Skeleton3D<class_Skeleton3D>` and its bones are not scaled.
+\ **警告：**\ 缩放后的 **SpringBoneSimulator3D** 可能不会按预期行为。请确保父级 :ref:`Skeleton3D<class_Skeleton3D>` 及其骨骼没有缩放。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -214,8 +214,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_SpringBoneSimulator3D_CenterFrom:
 
@@ -229,7 +229,7 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 
 :ref:`CenterFrom<enum_SpringBoneSimulator3D_CenterFrom>` **CENTER_FROM_WORLD_ORIGIN** = ``0``
 
-The world origin is defined as center.
+将世界原点定义为中心。
 
 .. _class_SpringBoneSimulator3D_constant_CENTER_FROM_NODE:
 
@@ -237,9 +237,9 @@ The world origin is defined as center.
 
 :ref:`CenterFrom<enum_SpringBoneSimulator3D_CenterFrom>` **CENTER_FROM_NODE** = ``1``
 
-The :ref:`Node3D<class_Node3D>` specified by :ref:`set_center_node()<class_SpringBoneSimulator3D_method_set_center_node>` is defined as center.
+将 :ref:`set_center_node()<class_SpringBoneSimulator3D_method_set_center_node>` 指定的 :ref:`Node3D<class_Node3D>` 定义为中心。
 
-If :ref:`Node3D<class_Node3D>` is not found, the parent :ref:`Skeleton3D<class_Skeleton3D>` is treated as center.
+如果未找到 :ref:`Node3D<class_Node3D>`\ ，则将父 :ref:`Skeleton3D<class_Skeleton3D>` 作为中心。
 
 .. _class_SpringBoneSimulator3D_constant_CENTER_FROM_BONE:
 
@@ -247,9 +247,9 @@ If :ref:`Node3D<class_Node3D>` is not found, the parent :ref:`Skeleton3D<class_S
 
 :ref:`CenterFrom<enum_SpringBoneSimulator3D_CenterFrom>` **CENTER_FROM_BONE** = ``2``
 
-The bone pose origin of the parent :ref:`Skeleton3D<class_Skeleton3D>` specified by :ref:`set_center_bone()<class_SpringBoneSimulator3D_method_set_center_bone>` is defined as center.
+将 :ref:`set_center_bone()<class_SpringBoneSimulator3D_method_set_center_bone>` 指定的父 :ref:`Skeleton3D<class_Skeleton3D>` 的骨骼姿势原点定义为中心。
 
-If :ref:`Node3D<class_Node3D>` is not found, the parent :ref:`Skeleton3D<class_Skeleton3D>` is treated as center.
+如果未找到 :ref:`Node3D<class_Node3D>`\ ，则将父 :ref:`Skeleton3D<class_Skeleton3D>` 作为中心。
 
 .. rst-class:: classref-section-separator
 
@@ -257,8 +257,8 @@ If :ref:`Node3D<class_Node3D>` is not found, the parent :ref:`Skeleton3D<class_S
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_SpringBoneSimulator3D_property_external_force:
 
@@ -271,9 +271,9 @@ Property Descriptions
 - |void| **set_external_force**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_external_force**\ (\ )
 
-The constant force that always affected bones. It is equal to the result when the parent :ref:`Skeleton3D<class_Skeleton3D>` moves at this speed in the opposite direction.
+始终作用于骨骼的恒定力。当父级 :ref:`Skeleton3D<class_Skeleton3D>` 以相反方向以此速度移动时，该力等于其结果。
 
-This is useful for effects such as wind and anti-gravity.
+对于风和反重力等效果非常有用。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 - |void| **set_setting_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_setting_count**\ (\ )
 
-The number of settings.
+设置的数量。
 
 .. rst-class:: classref-section-separator
 
@@ -317,8 +317,8 @@ The number of settings.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled:
 
@@ -326,7 +326,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **are_all_child_collisions_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>`
 
-Returns ``true`` if all child :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`\ s are contained in the collision list at ``index`` in the settings.
+如果所有子 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 都包含在设置中索引为 ``index`` 的碰撞列表中，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -338,7 +338,7 @@ Returns ``true`` if all child :ref:`SpringBoneCollision3D<class_SpringBoneCollis
 
 |void| **clear_collisions**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_clear_collisions>`
 
-Clears all collisions from the collision list at ``index`` in the settings when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``false``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``false`` 时，清空设置中索引为 ``index`` 的碰撞列表中的所有碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -350,7 +350,7 @@ Clears all collisions from the collision list at ``index`` in the settings when 
 
 |void| **clear_exclude_collisions**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_clear_exclude_collisions>`
 
-Clears all exclude collisions from the collision list at ``index`` in the settings when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``true`` 时，清空设置中索引为 ``index`` 的碰撞列表中的所有排除碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Clears all exclude collisions from the collision list at ``index`` in the settin
 
 |void| **clear_settings**\ (\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_clear_settings>`
 
-Clears all settings.
+清空所有设置。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Clears all settings.
 
 :ref:`int<class_int>` **get_center_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_center_bone>`
 
-Returns the center bone index of the bone chain.
+返回骨骼链中间骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns the center bone index of the bone chain.
 
 :ref:`String<class_String>` **get_center_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_center_bone_name>`
 
-Returns the center bone name of the bone chain.
+返回骨骼链中间骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Returns the center bone name of the bone chain.
 
 :ref:`CenterFrom<enum_SpringBoneSimulator3D_CenterFrom>` **get_center_from**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_center_from>`
 
-Returns what the center originates from in the bone chain.
+返回骨骼链中心的来源。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Returns what the center originates from in the bone chain.
 
 :ref:`NodePath<class_NodePath>` **get_center_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_center_node>`
 
-Returns the center node path of the bone chain.
+返回骨骼链中心节点的路径。
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ Returns the center node path of the bone chain.
 
 :ref:`int<class_int>` **get_collision_count**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_collision_count>`
 
-Returns the collision count of the bone chain's collision list when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``false``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``false`` 时，返回骨骼链的碰撞列表中的碰撞数量。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Returns the collision count of the bone chain's collision list when :ref:`are_al
 
 :ref:`NodePath<class_NodePath>` **get_collision_path**\ (\ index\: :ref:`int<class_int>`, collision\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_collision_path>`
 
-Returns the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` at ``collision`` in the bone chain's collision list when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``false``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``false`` 时，返回骨骼链的碰撞列表中 ``collision`` 的 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 节点路径。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ Returns the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollisi
 
 :ref:`float<class_float>` **get_drag**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_drag>`
 
-Returns the drag force damping curve of the bone chain.
+返回骨骼链的阻力阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Returns the drag force damping curve of the bone chain.
 
 :ref:`Curve<class_Curve>` **get_drag_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_drag_damping_curve>`
 
-Returns the drag force damping curve of the bone chain.
+返回骨骼链的阻力阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ Returns the drag force damping curve of the bone chain.
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone>`
 
-Returns the end bone index of the bone chain.
+返回骨骼链末尾骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +506,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_name>`
 
-Returns the end bone name of the bone chain.
+返回骨骼链末尾骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ Returns the end bone name of the bone chain.
 
 :ref:`int<class_int>` **get_exclude_collision_count**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_exclude_collision_count>`
 
-Returns the exclude collision count of the bone chain's exclude collision list when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``true`` 时，返回骨骼链的排除碰撞列表中的排除碰撞数量。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ Returns the exclude collision count of the bone chain's exclude collision list w
 
 :ref:`NodePath<class_NodePath>` **get_exclude_collision_path**\ (\ index\: :ref:`int<class_int>`, collision\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_exclude_collision_path>`
 
-Returns the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` at ``collision`` in the bone chain's exclude collision list when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``true`` 时，返回骨骼链的排除碰撞列表中 ``collision`` 的 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 节点路径。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ Returns the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollisi
 
 :ref:`float<class_float>` **get_gravity**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_gravity>`
 
-Returns the gravity amount of the bone chain.
+返回骨骼链的重力强度。
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +554,7 @@ Returns the gravity amount of the bone chain.
 
 :ref:`Curve<class_Curve>` **get_gravity_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_gravity_damping_curve>`
 
-Returns the gravity amount damping curve of the bone chain.
+返回骨骼链的重力强度阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ Returns the gravity amount damping curve of the bone chain.
 
 :ref:`Vector3<class_Vector3>` **get_gravity_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_gravity_direction>`
 
-Returns the gravity direction of the bone chain.
+返回骨骼链的重力方向。
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ Returns the gravity direction of the bone chain.
 
 :ref:`int<class_int>` **get_joint_bone**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_bone>`
 
-Returns the bone index at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中位于 ``joint`` 的骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -590,7 +590,7 @@ Returns the bone index at ``joint`` in the bone chain's joint list.
 
 :ref:`String<class_String>` **get_joint_bone_name**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_bone_name>`
 
-Returns the bone name at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中位于 ``joint`` 的骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ Returns the bone name at ``joint`` in the bone chain's joint list.
 
 :ref:`int<class_int>` **get_joint_count**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_count>`
 
-Returns the joint count of the bone chain's joint list.
+返回骨骼链关节列表中的关节数量。
 
 .. rst-class:: classref-item-separator
 
@@ -614,7 +614,7 @@ Returns the joint count of the bone chain's joint list.
 
 :ref:`float<class_float>` **get_joint_drag**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_drag>`
 
-Returns the drag force at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中 ``joint`` 关节的阻力。
 
 .. rst-class:: classref-item-separator
 
@@ -626,7 +626,7 @@ Returns the drag force at ``joint`` in the bone chain's joint list.
 
 :ref:`float<class_float>` **get_joint_gravity**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_gravity>`
 
-Returns the gravity amount at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中 ``joint`` 关节的重力强度。
 
 .. rst-class:: classref-item-separator
 
@@ -638,7 +638,7 @@ Returns the gravity amount at ``joint`` in the bone chain's joint list.
 
 :ref:`Vector3<class_Vector3>` **get_joint_gravity_direction**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_gravity_direction>`
 
-Returns the gravity direction at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中 ``joint`` 关节的重力方向。
 
 .. rst-class:: classref-item-separator
 
@@ -650,7 +650,7 @@ Returns the gravity direction at ``joint`` in the bone chain's joint list.
 
 :ref:`float<class_float>` **get_joint_radius**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_radius>`
 
-Returns the radius at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中 ``joint`` 关节的半径。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ Returns the radius at ``joint`` in the bone chain's joint list.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **get_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>`
 
-Returns the rotation axis at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中 ``joint`` 关节的旋转轴。
 
 .. rst-class:: classref-item-separator
 
@@ -688,7 +688,7 @@ If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_
 
 :ref:`float<class_float>` **get_joint_stiffness**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_stiffness>`
 
-Returns the stiffness force at ``joint`` in the bone chain's joint list.
+返回骨骼链关节列表中 ``joint`` 关节的刚度力。
 
 .. rst-class:: classref-item-separator
 
@@ -700,7 +700,7 @@ Returns the stiffness force at ``joint`` in the bone chain's joint list.
 
 :ref:`float<class_float>` **get_radius**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_radius>`
 
-Returns the joint radius of the bone chain.
+返回骨骼链的关节半径。
 
 .. rst-class:: classref-item-separator
 
@@ -712,7 +712,7 @@ Returns the joint radius of the bone chain.
 
 :ref:`Curve<class_Curve>` **get_radius_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_radius_damping_curve>`
 
-Returns the joint radius damping curve of the bone chain.
+返回骨骼链的关节半径阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -724,7 +724,7 @@ Returns the joint radius damping curve of the bone chain.
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_root_bone>`
 
-Returns the root bone index of the bone chain.
+返回骨骼链根骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Returns the root bone index of the bone chain.
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_root_bone_name>`
 
-Returns the root bone name of the bone chain.
+返回骨骼链根骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -748,7 +748,7 @@ Returns the root bone name of the bone chain.
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **get_rotation_axis**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_rotation_axis>`
 
-Returns the rotation axis of the bone chain.
+返回骨骼链的旋转轴。
 
 .. rst-class:: classref-item-separator
 
@@ -774,7 +774,7 @@ If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axi
 
 :ref:`float<class_float>` **get_stiffness**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_stiffness>`
 
-Returns the stiffness force of the bone chain.
+返回骨骼链的刚度力。
 
 .. rst-class:: classref-item-separator
 
@@ -786,7 +786,7 @@ Returns the stiffness force of the bone chain.
 
 :ref:`Curve<class_Curve>` **get_stiffness_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_stiffness_damping_curve>`
 
-Returns the stiffness force damping curve of the bone chain.
+返回骨骼链的刚度力阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -798,7 +798,7 @@ Returns the stiffness force damping curve of the bone chain.
 
 :ref:`bool<class_bool>` **is_config_individual**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_config_individual>`
 
-Returns ``true`` if the config can be edited individually for each joint.
+如果可以为每个关节单独编辑配置，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -822,9 +822,9 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_reset>`
 
-Resets a simulating state with respect to the current bone pose.
+重置与当前骨骼姿势相关的模拟状态。
 
-It is useful to prevent the simulation result getting violent. For example, calling this immediately after a call to :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` without a fading, or within the previous :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` signal if it's condition changes significantly.
+这样做有助于防止模拟结果变得剧烈。例如在不带渐变调用 :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` 之后立即调用该方法，或者在前一个 :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` 信号中当条件发生显著变化时调用。
 
 .. rst-class:: classref-item-separator
 
@@ -836,7 +836,7 @@ It is useful to prevent the simulation result getting violent. For example, call
 
 |void| **set_center_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_center_bone>`
 
-Sets the center bone index of the bone chain.
+设置骨骼链中心骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -848,7 +848,7 @@ Sets the center bone index of the bone chain.
 
 |void| **set_center_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_center_bone_name>`
 
-Sets the center bone name of the bone chain.
+设置骨骼链中心骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -860,13 +860,13 @@ Sets the center bone name of the bone chain.
 
 |void| **set_center_from**\ (\ index\: :ref:`int<class_int>`, center_from\: :ref:`CenterFrom<enum_SpringBoneSimulator3D_CenterFrom>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_center_from>`
 
-Sets what the center originates from in the bone chain.
+设置骨骼链中心的来源。
 
-Bone movement is calculated based on the difference in relative distance between center and bone in the previous and next frames.
+骨骼的移动是基于中心与骨骼在前后帧之间相对距离的变化来计算的。
 
-For example, if the parent :ref:`Skeleton3D<class_Skeleton3D>` is used as the center, the bones are considered to have not moved if the :ref:`Skeleton3D<class_Skeleton3D>` moves in the world.
+例如将父级 :ref:`Skeleton3D<class_Skeleton3D>` 用作中心，那么 :ref:`Skeleton3D<class_Skeleton3D>` 在世界中移动时，骨骼就会被视为没有移动。
 
-In this case, only a change in the bone pose is considered to be a bone movement.
+在这种情况下，只有骨骼姿势的变化才被视为骨骼的移动。
 
 .. rst-class:: classref-item-separator
 
@@ -878,7 +878,7 @@ In this case, only a change in the bone pose is considered to be a bone movement
 
 |void| **set_center_node**\ (\ index\: :ref:`int<class_int>`, node_path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_center_node>`
 
-Sets the center node path of the bone chain.
+设置骨骼链中心节点的路径。
 
 .. rst-class:: classref-item-separator
 
@@ -890,7 +890,7 @@ Sets the center node path of the bone chain.
 
 |void| **set_collision_count**\ (\ index\: :ref:`int<class_int>`, count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_collision_count>`
 
-Sets the number of collisions in the collision list at ``index`` in the settings when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``false``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``false`` 时，设置索引为 ``index`` 的碰撞列表中的碰撞数量。
 
 .. rst-class:: classref-item-separator
 
@@ -902,7 +902,7 @@ Sets the number of collisions in the collision list at ``index`` in the settings
 
 |void| **set_collision_path**\ (\ index\: :ref:`int<class_int>`, collision\: :ref:`int<class_int>`, node_path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_collision_path>`
 
-Sets the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` at ``collision`` in the bone chain's collision list when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``false``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``false`` 时，设置骨骼链的碰撞列表中 ``collision`` 的 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 节点路径。
 
 .. rst-class:: classref-item-separator
 
@@ -914,9 +914,9 @@ Sets the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3
 
 |void| **set_drag**\ (\ index\: :ref:`int<class_int>`, drag\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_drag>`
 
-Sets the drag force of the bone chain. The greater the value, the more suppressed the wiggling.
+设置骨骼链的阻力。值越大，摆动越受到抑制。
 
-The value is scaled by :ref:`set_drag_damping_curve()<class_SpringBoneSimulator3D_method_set_drag_damping_curve>` and cached in each joint setting in the joint list.
+该值由 :ref:`set_drag_damping_curve()<class_SpringBoneSimulator3D_method_set_drag_damping_curve>` 进行缩放，并缓存到关节列表中每个关节的设置中。
 
 .. rst-class:: classref-item-separator
 
@@ -928,7 +928,7 @@ The value is scaled by :ref:`set_drag_damping_curve()<class_SpringBoneSimulator3
 
 |void| **set_drag_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_drag_damping_curve>`
 
-Sets the drag force damping curve of the bone chain.
+设置骨骼链的阻力阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -940,9 +940,9 @@ Sets the drag force damping curve of the bone chain.
 
 |void| **set_enable_all_child_collisions**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_enable_all_child_collisions>`
 
-If ``enabled`` is ``true``, all child :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>`\ s are colliding and :ref:`set_exclude_collision_path()<class_SpringBoneSimulator3D_method_set_exclude_collision_path>` is enabled as an exclusion list at ``index`` in the settings.
+如果 ``enabled`` 为 ``true``\ ，则所有子级 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 都会发生碰撞，\ :ref:`set_exclude_collision_path()<class_SpringBoneSimulator3D_method_set_exclude_collision_path>` 在设置中的 ``index`` 处启用作为排除列表。
 
-If ``enabled`` is ``false``, you need to manually register all valid collisions with :ref:`set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>`.
+如果 ``enabled`` 为 ``false``\ ，则需要手动使用 :ref:`set_collision_path()<class_SpringBoneSimulator3D_method_set_collision_path>` 注册所有有效的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -954,7 +954,7 @@ If ``enabled`` is ``false``, you need to manually register all valid collisions 
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_end_bone>`
 
-Sets the end bone index of the bone chain.
+设置骨骼链中末端骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -966,7 +966,7 @@ Sets the end bone index of the bone chain.
 
 |void| **set_end_bone_direction**\ (\ index\: :ref:`int<class_int>`, bone_direction\: :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_end_bone_direction>`
 
-Sets the end bone tail direction of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` 为 ``true`` 时，设置骨骼链中末端骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +978,7 @@ Sets the end bone tail direction of the bone chain when :ref:`is_end_bone_extend
 
 |void| **set_end_bone_length**\ (\ index\: :ref:`int<class_int>`, length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_end_bone_length>`
 
-Sets the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` 为 ``true`` 时，设置骨骼链中末端骨骼的尾部长度。
 
 .. rst-class:: classref-item-separator
 
@@ -990,9 +990,9 @@ Sets the end bone tail length of the bone chain when :ref:`is_end_bone_extended(
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+设置骨骼链中末端骨骼的名称。
 
-\ **Note:** End bone must be the root bone or a child of the root bone. If they are the same, the tail must be extended by :ref:`set_extend_end_bone()<class_SpringBoneSimulator3D_method_set_extend_end_bone>` to jiggle the bone.
+\ **注意：** 末端骨骼必须是根骨骼或根骨骼的子骨骼。如果相同，则必须通过 :ref:`set_extend_end_bone()<class_SpringBoneSimulator3D_method_set_extend_end_bone>` 扩展尾部，使骨骼产生摆动。
 
 .. rst-class:: classref-item-separator
 
@@ -1004,7 +1004,7 @@ Sets the end bone name of the bone chain.
 
 |void| **set_exclude_collision_count**\ (\ index\: :ref:`int<class_int>`, count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_exclude_collision_count>`
 
-Sets the number of exclude collisions in the exclude collision list at ``index`` in the settings when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``true`` 时，设置索引为 ``index`` 的排除碰撞列表中的排除碰撞数量。
 
 .. rst-class:: classref-item-separator
 
@@ -1016,7 +1016,7 @@ Sets the number of exclude collisions in the exclude collision list at ``index``
 
 |void| **set_exclude_collision_path**\ (\ index\: :ref:`int<class_int>`, collision\: :ref:`int<class_int>`, node_path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_exclude_collision_path>`
 
-Sets the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` at ``collision`` in the bone chain's exclude collision list when :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` is ``true``.
+当 :ref:`are_all_child_collisions_enabled()<class_SpringBoneSimulator3D_method_are_all_child_collisions_enabled>` 为 ``true`` 时，设置骨骼链的排除碰撞列表中 ``collision`` 的 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 节点路径。
 
 .. rst-class:: classref-item-separator
 
@@ -1028,9 +1028,9 @@ Sets the node path of the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+如果 ``enabled`` 为 ``true``\ ，则会延伸末端骨骼形成尾部。
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+扩展的尾部配置会分配给关节列表中的最后一个元素。换句话说，如果将 ``enabled`` 设置为 ``false``\ ，则关节列表中最后一个元素的配置对模拟结果没有影响。
 
 .. rst-class:: classref-item-separator
 
@@ -1042,11 +1042,11 @@ The extended tail config is allocated to the last element in the joint list. In 
 
 |void| **set_gravity**\ (\ index\: :ref:`int<class_int>`, gravity\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_gravity>`
 
-Sets the gravity amount of the bone chain. This value is not an acceleration, but a constant velocity of movement in :ref:`set_gravity_direction()<class_SpringBoneSimulator3D_method_set_gravity_direction>`.
+设置骨骼链的重力强度。该值不是加速度，而是 :ref:`set_gravity_direction()<class_SpringBoneSimulator3D_method_set_gravity_direction>` 的恒定运动速度。
 
-If ``gravity`` is not ``0``, the modified pose will not return to the original pose since it is always affected by gravity.
+如果 ``gravity`` 不为 ``0``\ ，则修改后的姿势将不会返回到原始姿势，因为它始终受到重力的影响。
 
-The value is scaled by :ref:`set_gravity_damping_curve()<class_SpringBoneSimulator3D_method_set_gravity_damping_curve>` and cached in each joint setting in the joint list.
+该值会被 :ref:`set_gravity_damping_curve()<class_SpringBoneSimulator3D_method_set_gravity_damping_curve>` 缩放，并缓存到关节列表中的每个关节设置中。
 
 .. rst-class:: classref-item-separator
 
@@ -1058,7 +1058,7 @@ The value is scaled by :ref:`set_gravity_damping_curve()<class_SpringBoneSimulat
 
 |void| **set_gravity_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_gravity_damping_curve>`
 
-Sets the gravity amount damping curve of the bone chain.
+设置骨骼链的重力强度阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -1070,9 +1070,9 @@ Sets the gravity amount damping curve of the bone chain.
 
 |void| **set_gravity_direction**\ (\ index\: :ref:`int<class_int>`, gravity_direction\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_gravity_direction>`
 
-Sets the gravity direction of the bone chain. This value is internally normalized and then multiplied by :ref:`set_gravity()<class_SpringBoneSimulator3D_method_set_gravity>`.
+设置骨骼链的重力方向。内部会对该值进行归一化，然后乘以 :ref:`set_gravity()<class_SpringBoneSimulator3D_method_set_gravity>`\ 。
 
-The value is cached in each joint setting in the joint list.
+该值会被缓存到关节列表中的每个关节设置中。
 
 .. rst-class:: classref-item-separator
 
@@ -1084,7 +1084,7 @@ The value is cached in each joint setting in the joint list.
 
 |void| **set_individual_config**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_individual_config>`
 
-If ``enabled`` is ``true``, the config can be edited individually for each joint.
+如果 ``enabled`` 为 ``true``\ ，则可以为每个关节单独编辑配置。
 
 .. rst-class:: classref-item-separator
 
@@ -1096,7 +1096,7 @@ If ``enabled`` is ``true``, the config can be edited individually for each joint
 
 |void| **set_joint_drag**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, drag\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_drag>`
 
-Sets the drag force at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，设置骨骼链关节列表中 ``joint`` 关节的阻力。
 
 .. rst-class:: classref-item-separator
 
@@ -1108,7 +1108,7 @@ Sets the drag force at ``joint`` in the bone chain's joint list when :ref:`is_co
 
 |void| **set_joint_gravity**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, gravity\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_gravity>`
 
-Sets the gravity amount at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，设置骨骼链关节列表中 ``joint`` 关节的重力强度。
 
 .. rst-class:: classref-item-separator
 
@@ -1120,7 +1120,7 @@ Sets the gravity amount at ``joint`` in the bone chain's joint list when :ref:`i
 
 |void| **set_joint_gravity_direction**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, gravity_direction\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_gravity_direction>`
 
-Sets the gravity direction at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，设置骨骼链关节列表中 ``joint`` 关节的重力方向。
 
 .. rst-class:: classref-item-separator
 
@@ -1132,7 +1132,7 @@ Sets the gravity direction at ``joint`` in the bone chain's joint list when :ref
 
 |void| **set_joint_radius**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_radius>`
 
-Sets the joint radius at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，设置骨骼链关节列表中 ``joint`` 关节的半径。
 
 .. rst-class:: classref-item-separator
 
@@ -1176,7 +1176,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_joint_stiffness**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, stiffness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_stiffness>`
 
-Sets the stiffness force at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，设置骨骼链关节列表中 ``joint`` 关节的刚度力。
 
 .. rst-class:: classref-item-separator
 
@@ -1188,9 +1188,9 @@ Sets the stiffness force at ``joint`` in the bone chain's joint list when :ref:`
 
 |void| **set_radius**\ (\ index\: :ref:`int<class_int>`, radius\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_radius>`
 
-Sets the joint radius of the bone chain. It is used to move and slide with the :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` in the collision list.
+设置骨骼链的关节半径，用于在碰撞列表中与 :ref:`SpringBoneCollision3D<class_SpringBoneCollision3D>` 一起移动和滑动。
 
-The value is scaled by :ref:`set_radius_damping_curve()<class_SpringBoneSimulator3D_method_set_radius_damping_curve>` and cached in each joint setting in the joint list.
+该值由 :ref:`set_radius_damping_curve()<class_SpringBoneSimulator3D_method_set_radius_damping_curve>` 进行缩放，并缓存到关节列表中每个关节的设置中。
 
 .. rst-class:: classref-item-separator
 
@@ -1202,7 +1202,7 @@ The value is scaled by :ref:`set_radius_damping_curve()<class_SpringBoneSimulato
 
 |void| **set_radius_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_radius_damping_curve>`
 
-Sets the joint radius damping curve of the bone chain.
+设置骨骼链的关节半径阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -1214,7 +1214,7 @@ Sets the joint radius damping curve of the bone chain.
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_root_bone>`
 
-Sets the root bone index of the bone chain.
+设置骨骼链中根骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1226,7 +1226,7 @@ Sets the root bone index of the bone chain.
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_root_bone_name>`
 
-Sets the root bone name of the bone chain.
+设置骨骼链中根骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -1270,11 +1270,11 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_stiffness**\ (\ index\: :ref:`int<class_int>`, stiffness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_stiffness>`
 
-Sets the stiffness force of the bone chain. The greater the value, the faster it recovers to its initial pose.
+设置骨骼链的刚度力。值越大，恢复到初始姿势的速度越快。
 
-If ``stiffness`` is ``0``, the modified pose will not return to the original pose.
+如果 ``stiffness`` 为 ``0``\ ，则修改后的姿势不会返回到原始姿势。
 
-The value is scaled by :ref:`set_stiffness_damping_curve()<class_SpringBoneSimulator3D_method_set_stiffness_damping_curve>` and cached in each joint setting in the joint list.
+该值由 :ref:`set_stiffness_damping_curve()<class_SpringBoneSimulator3D_method_set_stiffness_damping_curve>` 进行缩放，并缓存到关节列表中每个关节的设置中。
 
 .. rst-class:: classref-item-separator
 
@@ -1286,14 +1286,14 @@ The value is scaled by :ref:`set_stiffness_damping_curve()<class_SpringBoneSimul
 
 |void| **set_stiffness_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_stiffness_damping_curve>`
 
-Sets the stiffness force damping curve of the bone chain.
+设置骨骼链的刚度力阻尼曲线。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

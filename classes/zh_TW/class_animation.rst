@@ -5,24 +5,23 @@
 Animation
 =========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Holds data that can be used to animate anything in the engine.
+用來儲存可對引擎中任何物件進行動畫化的資料。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-This resource holds data that can be used to animate anything in the engine. Animations are divided into tracks and each track must be linked to a node. The state of that node can be changed through time, by adding timed keys (events) to the track.
+此資源保存可用於對引擎中任何物件進行動畫化的資料。動畫由多條「軌道」組成，每條軌道必須連結至一個節點，並可透過在軌道上加入帶時間的鍵值（事件）來隨時間改變該節點狀態。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This creates an animation that makes the node "Enemy" move to the right by
-    # 100 pixels in 2.0 seconds.
+    # 建立一段動畫，使名為 "Enemy" 的節點在 2 秒內向右移動 100 像素。
     var animation = Animation.new()
     var track_index = animation.add_track(Animation.TYPE_VALUE)
     animation.track_set_path(track_index, "Enemy:position:x")
@@ -32,8 +31,7 @@ This resource holds data that can be used to animate anything in the engine. Ani
 
  .. code-tab:: csharp
 
-    // This creates an animation that makes the node "Enemy" move to the right by
-    // 100 pixels in 2.0 seconds.
+    // 建立一段動畫，使名為 "Enemy" 的節點在 2 秒內向右移動 100 像素。
     var animation = new Animation();
     int trackIndex = animation.AddTrack(Animation.TrackType.Value);
     animation.TrackSetPath(trackIndex, "Enemy:position:x");
@@ -43,21 +41,21 @@ This resource holds data that can be used to animate anything in the engine. Ani
 
 
 
-Animations are just data containers, and must be added to nodes such as an :ref:`AnimationPlayer<class_AnimationPlayer>` to be played back. Animation tracks have different types, each with its own set of dedicated methods. Check :ref:`TrackType<enum_Animation_TrackType>` to see available types.
+動畫本身只是資料容器，必須掛到 :ref:`AnimationPlayer<class_AnimationPlayer>` 等節點上才能播放。不同軌道有不同類型，並有各自專用的方法；可參考 :ref:`TrackType<enum_Animation_TrackType>` 以瞭解可用型別。
 
-\ **Note:** For 3D position/rotation/scale, using the dedicated :ref:`TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` and :ref:`TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` track types instead of :ref:`TYPE_VALUE<class_Animation_constant_TYPE_VALUE>` is recommended for performance reasons.
+\ **注意：** 針對 3D 的位置／旋轉／縮放，為效能考量建議使用專用的 :ref:`TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`\ 、\ :ref:`TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`\ 、\ :ref:`TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` 軌道類型，而非使用一般的 :ref:`TYPE_VALUE<class_Animation_constant_TYPE_VALUE>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Animation documentation index <../tutorials/animation/index>`
+- :doc:`動畫文件索引 <../tutorials/animation/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -74,8 +72,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -244,8 +242,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Animation_TrackType:
 
@@ -259,7 +257,7 @@ enum **TrackType**: :ref:`🔗<enum_Animation_TrackType>`
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_VALUE** = ``0``
 
-Value tracks set values in node properties, but only those which can be interpolated. For 3D position/rotation/scale, using the dedicated :ref:`TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` and :ref:`TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` track types instead of :ref:`TYPE_VALUE<class_Animation_constant_TYPE_VALUE>` is recommended for performance reasons.
+值軌道可設定節點屬性中的值，但僅限可插值者。對於 3D 位置／旋轉／縮放，基於效能考量建議使用專用的 :ref:`TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`\ 、\ :ref:`TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` 與 :ref:`TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` 軌道型別，而非 :ref:`TYPE_VALUE<class_Animation_constant_TYPE_VALUE>`\ 。
 
 .. _class_Animation_constant_TYPE_POSITION_3D:
 
@@ -267,7 +265,7 @@ Value tracks set values in node properties, but only those which can be interpol
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_POSITION_3D** = ``1``
 
-3D position track (values are stored in :ref:`Vector3<class_Vector3>`\ s).
+3D 位置軌道（值儲存在 :ref:`Vector3<class_Vector3>` 中）。
 
 .. _class_Animation_constant_TYPE_ROTATION_3D:
 
@@ -275,7 +273,7 @@ Value tracks set values in node properties, but only those which can be interpol
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_ROTATION_3D** = ``2``
 
-3D rotation track (values are stored in :ref:`Quaternion<class_Quaternion>`\ s).
+3D 旋轉軌道（值儲存在 :ref:`Quaternion<class_Quaternion>` 中）。
 
 .. _class_Animation_constant_TYPE_SCALE_3D:
 
@@ -283,7 +281,7 @@ Value tracks set values in node properties, but only those which can be interpol
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_SCALE_3D** = ``3``
 
-3D scale track (values are stored in :ref:`Vector3<class_Vector3>`\ s).
+3D 縮放軌道（值儲存在 :ref:`Vector3<class_Vector3>` 中）。
 
 .. _class_Animation_constant_TYPE_BLEND_SHAPE:
 
@@ -291,7 +289,7 @@ Value tracks set values in node properties, but only those which can be interpol
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_BLEND_SHAPE** = ``4``
 
-Blend shape track.
+混合形狀軌道。
 
 .. _class_Animation_constant_TYPE_METHOD:
 
@@ -299,7 +297,7 @@ Blend shape track.
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_METHOD** = ``5``
 
-Method tracks call functions with given arguments per key.
+方法軌道會於每個關鍵影格以指定參數呼叫函式。
 
 .. _class_Animation_constant_TYPE_BEZIER:
 
@@ -307,7 +305,7 @@ Method tracks call functions with given arguments per key.
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_BEZIER** = ``6``
 
-Bezier tracks are used to interpolate a value using custom curves. They can also be used to animate sub-properties of vectors and colors (e.g. alpha value of a :ref:`Color<class_Color>`).
+貝塞爾軌道可透過自訂曲線對數值進行插值，也可用於為向量或顏色的子屬性製作動畫（例如 :ref:`Color<class_Color>` 的 Alpha 值）。
 
 .. _class_Animation_constant_TYPE_AUDIO:
 
@@ -315,7 +313,7 @@ Bezier tracks are used to interpolate a value using custom curves. They can also
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_AUDIO** = ``7``
 
-Audio tracks are used to play an audio stream with either type of :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`. The stream can be trimmed and previewed in the animation.
+音訊軌道可使用任一種類的 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 播放音訊串流，並可於動畫中剪輯與預覽該串流。
 
 .. _class_Animation_constant_TYPE_ANIMATION:
 
@@ -323,7 +321,7 @@ Audio tracks are used to play an audio stream with either type of :ref:`AudioStr
 
 :ref:`TrackType<enum_Animation_TrackType>` **TYPE_ANIMATION** = ``8``
 
-Animation tracks play animations in other :ref:`AnimationPlayer<class_AnimationPlayer>` nodes.
+動畫軌道會在其他 :ref:`AnimationPlayer<class_AnimationPlayer>` 節點播放動畫。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +339,7 @@ enum **InterpolationType**: :ref:`🔗<enum_Animation_InterpolationType>`
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_NEAREST** = ``0``
 
-No interpolation (nearest value).
+無插值（鄰近值）。
 
 .. _class_Animation_constant_INTERPOLATION_LINEAR:
 
@@ -349,7 +347,7 @@ No interpolation (nearest value).
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_LINEAR** = ``1``
 
-Linear interpolation.
+線性插值。
 
 .. _class_Animation_constant_INTERPOLATION_CUBIC:
 
@@ -357,7 +355,7 @@ Linear interpolation.
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_CUBIC** = ``2``
 
-Cubic interpolation. This looks smoother than linear interpolation, but is more expensive to interpolate. Stick to :ref:`INTERPOLATION_LINEAR<class_Animation_constant_INTERPOLATION_LINEAR>` for complex 3D animations imported from external software, even if it requires using a higher animation framerate in return.
+三次插值。較線性插值平滑但計算成本更高；對於自外部軟體匯入之複雜 3D 動畫，即便需提高影格率，也建議維持使用 :ref:`INTERPOLATION_LINEAR<class_Animation_constant_INTERPOLATION_LINEAR>`\ 。
 
 .. _class_Animation_constant_INTERPOLATION_LINEAR_ANGLE:
 
@@ -365,9 +363,9 @@ Cubic interpolation. This looks smoother than linear interpolation, but is more 
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_LINEAR_ANGLE** = ``3``
 
-Linear interpolation with shortest path rotation.
+最短路徑旋轉的線性插值。
 
-\ **Note:** The result value is always normalized and may not match the key value.
+\ **注意：** 結果值會被正規化，因此可能與鍵值不相符。
 
 .. _class_Animation_constant_INTERPOLATION_CUBIC_ANGLE:
 
@@ -375,9 +373,9 @@ Linear interpolation with shortest path rotation.
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **INTERPOLATION_CUBIC_ANGLE** = ``4``
 
-Cubic interpolation with shortest path rotation.
+最短路徑旋轉的三次插值。
 
-\ **Note:** The result value is always normalized and may not match the key value.
+\ **注意：** 結果值會被正規化，因此可能與鍵值不相符。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +393,7 @@ enum **UpdateMode**: :ref:`🔗<enum_Animation_UpdateMode>`
 
 :ref:`UpdateMode<enum_Animation_UpdateMode>` **UPDATE_CONTINUOUS** = ``0``
 
-Update between keyframes and hold the value.
+在關鍵影格之間持續更新並保持值。
 
 .. _class_Animation_constant_UPDATE_DISCRETE:
 
@@ -403,7 +401,7 @@ Update between keyframes and hold the value.
 
 :ref:`UpdateMode<enum_Animation_UpdateMode>` **UPDATE_DISCRETE** = ``1``
 
-Update at the keyframes.
+僅於關鍵影格更新。
 
 .. _class_Animation_constant_UPDATE_CAPTURE:
 
@@ -411,7 +409,7 @@ Update at the keyframes.
 
 :ref:`UpdateMode<enum_Animation_UpdateMode>` **UPDATE_CAPTURE** = ``2``
 
-Same as :ref:`UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` but works as a flag to capture the value of the current object and perform interpolation in some methods. See also :ref:`AnimationMixer.capture()<class_AnimationMixer_method_capture>`, :ref:`AnimationPlayer.playback_auto_capture<class_AnimationPlayer_property_playback_auto_capture>`, and :ref:`AnimationPlayer.play_with_capture()<class_AnimationPlayer_method_play_with_capture>`.
+與 :ref:`UPDATE_CONTINUOUS<class_Animation_constant_UPDATE_CONTINUOUS>` 相同，但作為旗標以擷取目前物件的值，並在部分方法中進行插值。另請參閱 :ref:`AnimationMixer.capture()<class_AnimationMixer_method_capture>`\ 、\ :ref:`AnimationPlayer.playback_auto_capture<class_AnimationPlayer_property_playback_auto_capture>` 與 :ref:`AnimationPlayer.play_with_capture()<class_AnimationPlayer_method_play_with_capture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +427,7 @@ enum **LoopMode**: :ref:`🔗<enum_Animation_LoopMode>`
 
 :ref:`LoopMode<enum_Animation_LoopMode>` **LOOP_NONE** = ``0``
 
-At both ends of the animation, the animation will stop playing.
+在動畫兩端，動畫將停止播放。
 
 .. _class_Animation_constant_LOOP_LINEAR:
 
@@ -437,7 +435,7 @@ At both ends of the animation, the animation will stop playing.
 
 :ref:`LoopMode<enum_Animation_LoopMode>` **LOOP_LINEAR** = ``1``
 
-At both ends of the animation, the animation will be repeated without changing the playback direction.
+在動畫兩端，動畫將不改變播放方向地重複播放。
 
 .. _class_Animation_constant_LOOP_PINGPONG:
 
@@ -445,7 +443,7 @@ At both ends of the animation, the animation will be repeated without changing t
 
 :ref:`LoopMode<enum_Animation_LoopMode>` **LOOP_PINGPONG** = ``2``
 
-Repeats playback and reverse playback at both ends of the animation.
+在動畫兩端重複正播與反播。
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +461,7 @@ enum **LoopedFlag**: :ref:`🔗<enum_Animation_LoopedFlag>`
 
 :ref:`LoopedFlag<enum_Animation_LoopedFlag>` **LOOPED_FLAG_NONE** = ``0``
 
-This flag indicates that the animation proceeds without any looping.
+此旗標指示動畫不進行任何迴圈。
 
 .. _class_Animation_constant_LOOPED_FLAG_END:
 
@@ -471,7 +469,7 @@ This flag indicates that the animation proceeds without any looping.
 
 :ref:`LoopedFlag<enum_Animation_LoopedFlag>` **LOOPED_FLAG_END** = ``1``
 
-This flag indicates that the animation has reached the end of the animation and just after loop processed.
+此旗標表示動畫已到達尾端並剛完成迴圈處理。
 
 .. _class_Animation_constant_LOOPED_FLAG_START:
 
@@ -479,7 +477,7 @@ This flag indicates that the animation has reached the end of the animation and 
 
 :ref:`LoopedFlag<enum_Animation_LoopedFlag>` **LOOPED_FLAG_START** = ``2``
 
-This flag indicates that the animation has reached the start of the animation and just after loop processed.
+此旗標表示動畫已回到起始並剛完成迴圈處理。
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +495,7 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`FindMode<enum_Animation_FindMode>` **FIND_MODE_NEAREST** = ``0``
 
-Finds the nearest time key.
+尋找最近的時間鍵。
 
 .. _class_Animation_constant_FIND_MODE_APPROX:
 
@@ -505,7 +503,7 @@ Finds the nearest time key.
 
 :ref:`FindMode<enum_Animation_FindMode>` **FIND_MODE_APPROX** = ``1``
 
-Finds only the key with approximating the time.
+僅尋找與時間近似的鍵。
 
 .. _class_Animation_constant_FIND_MODE_EXACT:
 
@@ -513,7 +511,7 @@ Finds only the key with approximating the time.
 
 :ref:`FindMode<enum_Animation_FindMode>` **FIND_MODE_EXACT** = ``2``
 
-Finds only the key with matching the time.
+僅尋找與時間完全相符的鍵。
 
 .. rst-class:: classref-section-separator
 
@@ -521,8 +519,8 @@ Finds only the key with matching the time.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Animation_property_capture_included:
 
@@ -534,7 +532,7 @@ Property Descriptions
 
 - :ref:`bool<class_bool>` **is_capture_included**\ (\ )
 
-Returns ``true`` if the capture track is included. This is a cached readonly value for performance.
+若包含擷取軌道則返回 ``true``\ 。此值為效能考量的快取唯讀值。
 
 .. rst-class:: classref-item-separator
 
@@ -551,9 +549,9 @@ Returns ``true`` if the capture track is included. This is a cached readonly val
 - |void| **set_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_length**\ (\ )
 
-The total length of the animation (in seconds).
+動畫的總長度（單位：秒）。
 
-\ **Note:** Length is not delimited by the last key, as this one may be before or after the end to ensure correct interpolation and looping.
+\ **注意：** 長度並不以最後一個關鍵影格為界，因為為了正確插值與迴圈，最後一個鍵可能位於結束前或之後。
 
 .. rst-class:: classref-item-separator
 
@@ -587,7 +585,7 @@ Determines the behavior of both ends of the animation timeline during animation 
 - |void| **set_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-The animation step value.
+動畫步長值。
 
 .. rst-class:: classref-section-separator
 
@@ -595,8 +593,8 @@ The animation step value.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Animation_method_add_marker:
 
@@ -604,7 +602,7 @@ Method Descriptions
 
 |void| **add_marker**\ (\ name\: :ref:`StringName<class_StringName>`, time\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_add_marker>`
 
-Adds a marker to this Animation.
+將標記新增到此 Animation。
 
 .. rst-class:: classref-item-separator
 
@@ -616,7 +614,7 @@ Adds a marker to this Animation.
 
 :ref:`int<class_int>` **add_track**\ (\ type\: :ref:`TrackType<enum_Animation_TrackType>`, at_position\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Animation_method_add_track>`
 
-Adds a track to the Animation.
+向動畫新增軌道。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +626,7 @@ Adds a track to the Animation.
 
 :ref:`StringName<class_StringName>` **animation_track_get_key_animation**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_animation_track_get_key_animation>`
 
-Returns the animation name at the key identified by ``key_idx``. The ``track_idx`` must be the index of an Animation Track.
+回傳位於 ``key_idx`` 的鍵所對應的動畫名稱。\ ``track_idx`` 必須是動畫軌道的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +638,7 @@ Returns the animation name at the key identified by ``key_idx``. The ``track_idx
 
 :ref:`int<class_int>` **animation_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, animation\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Animation_method_animation_track_insert_key>`
 
-Inserts a key with value ``animation`` at the given ``time`` (in seconds). The ``track_idx`` must be the index of an Animation Track.
+在指定 ``time``\ （秒）插入鍵，鍵值為 ``animation``\ 。\ ``track_idx`` 必須是動畫軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -652,7 +650,7 @@ Inserts a key with value ``animation`` at the given ``time`` (in seconds). The `
 
 |void| **animation_track_set_key_animation**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, animation\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Animation_method_animation_track_set_key_animation>`
 
-Sets the key identified by ``key_idx`` to value ``animation``. The ``track_idx`` must be the index of an Animation Track.
+將索引為 ``key_idx`` 的鍵值設為 ``animation``\ 。\ ``track_idx`` 必須是動畫軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -664,9 +662,9 @@ Sets the key identified by ``key_idx`` to value ``animation``. The ``track_idx``
 
 :ref:`float<class_float>` **audio_track_get_key_end_offset**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_audio_track_get_key_end_offset>`
 
-Returns the end offset of the key identified by ``key_idx``. The ``track_idx`` must be the index of an Audio Track.
+回傳索引為 ``key_idx`` 的鍵的結束偏移量。\ ``track_idx`` 必須是音訊軌道索引。
 
-End offset is the number of seconds cut off at the ending of the audio stream.
+結束偏移量表示在音訊流結尾被截去的秒數。
 
 .. rst-class:: classref-item-separator
 
@@ -678,9 +676,9 @@ End offset is the number of seconds cut off at the ending of the audio stream.
 
 :ref:`float<class_float>` **audio_track_get_key_start_offset**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_audio_track_get_key_start_offset>`
 
-Returns the start offset of the key identified by ``key_idx``. The ``track_idx`` must be the index of an Audio Track.
+回傳索引為 ``key_idx`` 的鍵的起始偏移量。\ ``track_idx`` 必須是音訊軌道索引。
 
-Start offset is the number of seconds cut off at the beginning of the audio stream.
+起始偏移量表示在音訊流開頭被截去的秒數。
 
 .. rst-class:: classref-item-separator
 
@@ -692,7 +690,7 @@ Start offset is the number of seconds cut off at the beginning of the audio stre
 
 :ref:`Resource<class_Resource>` **audio_track_get_key_stream**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_audio_track_get_key_stream>`
 
-Returns the audio stream of the key identified by ``key_idx``. The ``track_idx`` must be the index of an Audio Track.
+回傳索引為 ``key_idx`` 的鍵所使用的音訊流。\ ``track_idx`` 必須是音訊軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -704,9 +702,9 @@ Returns the audio stream of the key identified by ``key_idx``. The ``track_idx``
 
 :ref:`int<class_int>` **audio_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, stream\: :ref:`Resource<class_Resource>`, start_offset\: :ref:`float<class_float>` = 0, end_offset\: :ref:`float<class_float>` = 0\ ) :ref:`🔗<class_Animation_method_audio_track_insert_key>`
 
-Inserts an Audio Track key at the given ``time`` in seconds. The ``track_idx`` must be the index of an Audio Track.
+在指定的 ``time``\ （秒）於音訊軌道插入鍵。\ ``track_idx`` 必須是音訊軌道索引。
 
-\ ``stream`` is the :ref:`AudioStream<class_AudioStream>` resource to play. ``start_offset`` is the number of seconds cut off at the beginning of the audio stream, while ``end_offset`` is at the ending.
+\ ``stream`` 為要播放的 :ref:`AudioStream<class_AudioStream>`\ ，而 ``start_offset`` 與 ``end_offset`` 分別為音訊開頭與結尾欲截去的秒數。
 
 .. rst-class:: classref-item-separator
 
@@ -718,7 +716,7 @@ Inserts an Audio Track key at the given ``time`` in seconds. The ``track_idx`` m
 
 :ref:`bool<class_bool>` **audio_track_is_use_blend**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_audio_track_is_use_blend>`
 
-Returns ``true`` if the track at ``track_idx`` will be blended with other animations.
+若 ``track_idx`` 的軌道會與其他動畫混合則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +728,7 @@ Returns ``true`` if the track at ``track_idx`` will be blended with other animat
 
 |void| **audio_track_set_key_end_offset**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_audio_track_set_key_end_offset>`
 
-Sets the end offset of the key identified by ``key_idx`` to value ``offset``. The ``track_idx`` must be the index of an Audio Track.
+將索引為 ``key_idx`` 的鍵的結束偏移量設為 ``offset`` 秒。\ ``track_idx`` 必須是音訊軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -742,7 +740,7 @@ Sets the end offset of the key identified by ``key_idx`` to value ``offset``. Th
 
 |void| **audio_track_set_key_start_offset**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, offset\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_audio_track_set_key_start_offset>`
 
-Sets the start offset of the key identified by ``key_idx`` to value ``offset``. The ``track_idx`` must be the index of an Audio Track.
+將索引為 ``key_idx`` 的鍵的起始偏移量設為 ``offset`` 秒。\ ``track_idx`` 必須是音訊軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -754,7 +752,7 @@ Sets the start offset of the key identified by ``key_idx`` to value ``offset``. 
 
 |void| **audio_track_set_key_stream**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, stream\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_Animation_method_audio_track_set_key_stream>`
 
-Sets the stream of the key identified by ``key_idx`` to value ``stream``. The ``track_idx`` must be the index of an Audio Track.
+將索引為 ``key_idx`` 的鍵所用的音訊流設為 ``stream``\ 。\ ``track_idx`` 必須是音訊軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +764,7 @@ Sets the stream of the key identified by ``key_idx`` to value ``stream``. The ``
 
 |void| **audio_track_set_use_blend**\ (\ track_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_audio_track_set_use_blend>`
 
-Sets whether the track will be blended with other animations. If ``true``, the audio playback volume changes depending on the blend value.
+設定此軌道是否與其他動畫混合。若為 ``true``\ ，播放音量會依混合值變動。
 
 .. rst-class:: classref-item-separator
 
@@ -778,7 +776,7 @@ Sets whether the track will be blended with other animations. If ``true``, the a
 
 :ref:`Vector2<class_Vector2>` **bezier_track_get_key_in_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_get_key_in_handle>`
 
-Returns the in handle of the key identified by ``key_idx``. The ``track_idx`` must be the index of a Bezier Track.
+回傳索引為 ``key_idx`` 的鍵的「入端控制點」位置。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +788,7 @@ Returns the in handle of the key identified by ``key_idx``. The ``track_idx`` mu
 
 :ref:`Vector2<class_Vector2>` **bezier_track_get_key_out_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_get_key_out_handle>`
 
-Returns the out handle of the key identified by ``key_idx``. The ``track_idx`` must be the index of a Bezier Track.
+回傳索引為 ``key_idx`` 的鍵的「出端控制點」位置。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -802,7 +800,7 @@ Returns the out handle of the key identified by ``key_idx``. The ``track_idx`` m
 
 :ref:`float<class_float>` **bezier_track_get_key_value**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_get_key_value>`
 
-Returns the value of the key identified by ``key_idx``. The ``track_idx`` must be the index of a Bezier Track.
+回傳索引為 ``key_idx`` 的鍵值。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -814,9 +812,9 @@ Returns the value of the key identified by ``key_idx``. The ``track_idx`` must b
 
 :ref:`int<class_int>` **bezier_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, value\: :ref:`float<class_float>`, in_handle\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0), out_handle\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_Animation_method_bezier_track_insert_key>`
 
-Inserts a Bezier Track key at the given ``time`` in seconds. The ``track_idx`` must be the index of a Bezier Track.
+在指定 ``time``\ （秒）於貝茲曲線軌道插入鍵。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
-\ ``in_handle`` is the left-side weight of the added Bezier curve point, ``out_handle`` is the right-side one, while ``value`` is the actual value at this point.
+\ ``in_handle`` 為該點左側控制點，\ ``out_handle`` 為右側控制點，\ ``value`` 為該點實際值。
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +826,7 @@ Inserts a Bezier Track key at the given ``time`` in seconds. The ``track_idx`` m
 
 :ref:`float<class_float>` **bezier_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_bezier_track_interpolate>`
 
-Returns the interpolated value at the given ``time`` (in seconds). The ``track_idx`` must be the index of a Bezier Track.
+回傳在指定 ``time``\ （秒）處插值後的值。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +838,7 @@ Returns the interpolated value at the given ``time`` (in seconds). The ``track_i
 
 |void| **bezier_track_set_key_in_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, in_handle\: :ref:`Vector2<class_Vector2>`, balanced_value_time_ratio\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Animation_method_bezier_track_set_key_in_handle>`
 
-Sets the in handle of the key identified by ``key_idx`` to value ``in_handle``. The ``track_idx`` must be the index of a Bezier Track.
+將索引為 ``key_idx`` 的鍵之入端控制點設為 ``in_handle``\ 。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -852,7 +850,7 @@ Sets the in handle of the key identified by ``key_idx`` to value ``in_handle``. 
 
 |void| **bezier_track_set_key_out_handle**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, out_handle\: :ref:`Vector2<class_Vector2>`, balanced_value_time_ratio\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_Animation_method_bezier_track_set_key_out_handle>`
 
-Sets the out handle of the key identified by ``key_idx`` to value ``out_handle``. The ``track_idx`` must be the index of a Bezier Track.
+將索引為 ``key_idx`` 的鍵之出端控制點設為 ``out_handle``\ 。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +862,7 @@ Sets the out handle of the key identified by ``key_idx`` to value ``out_handle``
 
 |void| **bezier_track_set_key_value**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, value\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_bezier_track_set_key_value>`
 
-Sets the value of the key identified by ``key_idx`` to the given value. The ``track_idx`` must be the index of a Bezier Track.
+將索引為 ``key_idx`` 的鍵值設為指定值。\ ``track_idx`` 必須是貝茲曲線軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -876,7 +874,7 @@ Sets the value of the key identified by ``key_idx`` to the given value. The ``tr
 
 :ref:`int<class_int>` **blend_shape_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_blend_shape_track_insert_key>`
 
-Inserts a key in a given blend shape track. Returns the key index.
+在指定的混合形狀軌道插入關鍵影格，並回傳其索引。
 
 .. rst-class:: classref-item-separator
 
@@ -888,7 +886,7 @@ Inserts a key in a given blend shape track. Returns the key index.
 
 :ref:`float<class_float>` **blend_shape_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_blend_shape_track_interpolate>`
 
-Returns the interpolated blend shape value at the given time (in seconds). The ``track_idx`` must be the index of a blend shape track.
+回傳在指定時間（秒）經插值後之混合形狀值。\ ``track_idx`` 必須是混合形狀軌道索引。
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +898,7 @@ Returns the interpolated blend shape value at the given time (in seconds). The `
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Animation_method_clear>`
 
-Clear the animation (clear all tracks and reset all).
+清除動畫（移除所有軌道並重設所有設定）。
 
 .. rst-class:: classref-item-separator
 
@@ -912,9 +910,9 @@ Clear the animation (clear all tracks and reset all).
 
 |void| **compress**\ (\ page_size\: :ref:`int<class_int>` = 8192, fps\: :ref:`int<class_int>` = 120, split_tolerance\: :ref:`float<class_float>` = 4.0\ ) :ref:`🔗<class_Animation_method_compress>`
 
-Compress the animation and all its tracks in-place. This will make :ref:`track_is_compressed()<class_Animation_method_track_is_compressed>` return ``true`` once called on this **Animation**. Compressed tracks require less memory to be played, and are designed to be used for complex 3D animations (such as cutscenes) imported from external 3D software. Compression is lossy, but the difference is usually not noticeable in real world conditions.
+就地壓縮動畫及其所有軌道；壓縮後再呼叫 :ref:`track_is_compressed()<class_Animation_method_track_is_compressed>` 會回傳 ``true``\ 。壓縮軌道可降低播放時的記憶體用量，主要用於外部 3D 軟體匯入的複雜 3D 動畫（如過場）。壓縮為有損處理，但在實際使用中通常難以察覺。
 
-\ **Note:** Compressed tracks have various limitations (such as not being editable from the editor), so only use compressed animations if you actually need them.
+\ **注意：** 壓縮後的軌道無法於編輯器內編輯等，僅在確有需求時再使用。
 
 .. rst-class:: classref-item-separator
 
@@ -926,7 +924,7 @@ Compress the animation and all its tracks in-place. This will make :ref:`track_i
 
 |void| **copy_track**\ (\ track_idx\: :ref:`int<class_int>`, to_animation\: :ref:`Animation<class_Animation>`\ ) :ref:`🔗<class_Animation_method_copy_track>`
 
-Adds a new track to ``to_animation`` that is a copy of the given track from this animation.
+將本動畫中的指定軌道複製一份並新增到 ``to_animation``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -938,7 +936,7 @@ Adds a new track to ``to_animation`` that is a copy of the given track from this
 
 :ref:`int<class_int>` **find_track**\ (\ path\: :ref:`NodePath<class_NodePath>`, type\: :ref:`TrackType<enum_Animation_TrackType>`\ ) |const| :ref:`🔗<class_Animation_method_find_track>`
 
-Returns the index of the specified track. If the track is not found, return -1.
+回傳指定軌道的索引；若找不到則回傳 -1。
 
 .. rst-class:: classref-item-separator
 
@@ -950,7 +948,7 @@ Returns the index of the specified track. If the track is not found, return -1.
 
 :ref:`StringName<class_StringName>` **get_marker_at_time**\ (\ time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_get_marker_at_time>`
 
-Returns the name of the marker located at the given time.
+回傳位於指定時間點的標記名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -962,7 +960,7 @@ Returns the name of the marker located at the given time.
 
 :ref:`Color<class_Color>` **get_marker_color**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Animation_method_get_marker_color>`
 
-Returns the given marker's color.
+回傳指定標記的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -974,7 +972,7 @@ Returns the given marker's color.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_marker_names**\ (\ ) |const| :ref:`🔗<class_Animation_method_get_marker_names>`
 
-Returns every marker in this Animation, sorted ascending by time.
+依時間排序後，回傳此 Animation 內所有標記。
 
 .. rst-class:: classref-item-separator
 
@@ -986,7 +984,7 @@ Returns every marker in this Animation, sorted ascending by time.
 
 :ref:`float<class_float>` **get_marker_time**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Animation_method_get_marker_time>`
 
-Returns the given marker's time.
+回傳指定標記所在的時間點。
 
 .. rst-class:: classref-item-separator
 
@@ -998,7 +996,7 @@ Returns the given marker's time.
 
 :ref:`StringName<class_StringName>` **get_next_marker**\ (\ time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_get_next_marker>`
 
-Returns the closest marker that comes after the given time. If no such marker exists, an empty string is returned.
+回傳位於指定時間之後最近的標記；若不存在則回傳空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -1010,7 +1008,7 @@ Returns the closest marker that comes after the given time. If no such marker ex
 
 :ref:`StringName<class_StringName>` **get_prev_marker**\ (\ time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_get_prev_marker>`
 
-Returns the closest marker that comes before the given time. If no such marker exists, an empty string is returned.
+回傳位於指定時間之前最近的標記；若不存在則回傳空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -1022,7 +1020,7 @@ Returns the closest marker that comes before the given time. If no such marker e
 
 :ref:`int<class_int>` **get_track_count**\ (\ ) |const| :ref:`🔗<class_Animation_method_get_track_count>`
 
-Returns the amount of tracks in the animation.
+回傳動畫內的軌道數量。
 
 .. rst-class:: classref-item-separator
 
@@ -1034,7 +1032,7 @@ Returns the amount of tracks in the animation.
 
 :ref:`bool<class_bool>` **has_marker**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_Animation_method_has_marker>`
 
-Returns ``true`` if this Animation contains a marker with the given name.
+若此 Animation 含有指定名稱的標記則回傳 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1046,7 +1044,7 @@ Returns ``true`` if this Animation contains a marker with the given name.
 
 :ref:`StringName<class_StringName>` **method_track_get_name**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_method_track_get_name>`
 
-Returns the method name of a method track.
+回傳方法軌道所呼叫的方法名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -1058,7 +1056,7 @@ Returns the method name of a method track.
 
 :ref:`Array<class_Array>` **method_track_get_params**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_method_track_get_params>`
 
-Returns the arguments values to be called on a method track for a given key in a given track.
+返回給定方法軌道中給定鍵的方法要呼叫的參數值。
 
 .. rst-class:: classref-item-separator
 
@@ -1070,7 +1068,7 @@ Returns the arguments values to be called on a method track for a given key in a
 
 |void| **optimize**\ (\ allowed_velocity_err\: :ref:`float<class_float>` = 0.01, allowed_angular_err\: :ref:`float<class_float>` = 0.01, precision\: :ref:`int<class_int>` = 3\ ) :ref:`🔗<class_Animation_method_optimize>`
 
-Optimize the animation and all its tracks in-place. This will preserve only as many keys as are necessary to keep the animation within the specified bounds.
+就地最佳化此動畫及其所有軌道。僅保留足以讓動畫維持在指定誤差範圍內所需的關鍵影格數。
 
 .. rst-class:: classref-item-separator
 
@@ -1082,7 +1080,7 @@ Optimize the animation and all its tracks in-place. This will preserve only as m
 
 :ref:`int<class_int>` **position_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, position\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Animation_method_position_track_insert_key>`
 
-Inserts a key in a given 3D position track. Returns the key index.
+在給定的 3D 位置軌道中插入關鍵影格。返回該關鍵影格的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1094,7 +1092,7 @@ Inserts a key in a given 3D position track. Returns the key index.
 
 :ref:`Vector3<class_Vector3>` **position_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_position_track_interpolate>`
 
-Returns the interpolated position value at the given time (in seconds). The ``track_idx`` must be the index of a 3D position track.
+返回位於給定時間（以秒為單位）的插值後的位置值。\ ``track_idx`` 必須是 3D 位置軌道的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1106,7 +1104,7 @@ Returns the interpolated position value at the given time (in seconds). The ``tr
 
 |void| **remove_marker**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Animation_method_remove_marker>`
 
-Removes the marker with the given name from this Animation.
+從此 Animation 中移除具有指定名稱的標記。
 
 .. rst-class:: classref-item-separator
 
@@ -1118,7 +1116,7 @@ Removes the marker with the given name from this Animation.
 
 |void| **remove_track**\ (\ track_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Animation_method_remove_track>`
 
-Removes a track by specifying the track index.
+透過指定軌道索引來移除軌道。
 
 .. rst-class:: classref-item-separator
 
@@ -1130,7 +1128,7 @@ Removes a track by specifying the track index.
 
 :ref:`int<class_int>` **rotation_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, rotation\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_Animation_method_rotation_track_insert_key>`
 
-Inserts a key in a given 3D rotation track. Returns the key index.
+在給定的 3D 旋轉軌道中插入關鍵影格。返回該關鍵影格的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1142,7 +1140,7 @@ Inserts a key in a given 3D rotation track. Returns the key index.
 
 :ref:`Quaternion<class_Quaternion>` **rotation_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_rotation_track_interpolate>`
 
-Returns the interpolated rotation value at the given time (in seconds). The ``track_idx`` must be the index of a 3D rotation track.
+返回位於給定時間（以秒為單位）的插值後的旋轉值。\ ``track_idx`` 必須是 3D 旋轉軌道的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1154,7 +1152,7 @@ Returns the interpolated rotation value at the given time (in seconds). The ``tr
 
 :ref:`int<class_int>` **scale_track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, scale\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Animation_method_scale_track_insert_key>`
 
-Inserts a key in a given 3D scale track. Returns the key index.
+在給定的 3D 縮放軌道中插入關鍵影格。返回該關鍵影格的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1166,7 +1164,7 @@ Inserts a key in a given 3D scale track. Returns the key index.
 
 :ref:`Vector3<class_Vector3>` **scale_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_scale_track_interpolate>`
 
-Returns the interpolated scale value at the given time (in seconds). The ``track_idx`` must be the index of a 3D scale track.
+返回位於給定時間（以秒為單位）的插值後的縮放值。\ ``track_idx`` 必須是 3D 縮放軌道的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1178,7 +1176,7 @@ Returns the interpolated scale value at the given time (in seconds). The ``track
 
 |void| **set_marker_color**\ (\ name\: :ref:`StringName<class_StringName>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Animation_method_set_marker_color>`
 
-Sets the given marker's color.
+設定指定標記的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -1190,13 +1188,13 @@ Sets the given marker's color.
 
 :ref:`int<class_int>` **track_find_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, find_mode\: :ref:`FindMode<enum_Animation_FindMode>` = 0, limit\: :ref:`bool<class_bool>` = false, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_track_find_key>`
 
-Finds the key index by time in a given track. Optionally, only find it if the approx/exact time is given.
+在指定軌道中依時間尋找鍵的索引。可選擇僅於提供近似／精確時間時才進行尋找。
 
-If ``limit`` is ``true``, it does not return keys outside the animation range.
+若 ``limit`` 為 ``true``\ ，則不會回傳動畫範圍之外的鍵。
 
-If ``backward`` is ``true``, the direction is reversed in methods that rely on one directional processing.
+若 ``backward`` 為 ``true``\ ，則在依賴單向處理的方法中會反轉搜尋方向。
 
-For example, in case ``find_mode`` is :ref:`FIND_MODE_NEAREST<class_Animation_constant_FIND_MODE_NEAREST>`, if there is no key in the current position just after seeked, the first key found is retrieved by searching before the position, but if ``backward`` is ``true``, the first key found is retrieved after the position.
+例如，當 ``find_mode`` 為 :ref:`FIND_MODE_NEAREST<class_Animation_constant_FIND_MODE_NEAREST>` 時，若在跳轉後於目前位置找不到鍵，預設會向位置之前搜尋並取回第一個找到的鍵，但若 ``backward`` 為 ``true``\ ，則會向位置之後搜尋並取回第一個鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1208,7 +1206,7 @@ For example, in case ``find_mode`` is :ref:`FIND_MODE_NEAREST<class_Animation_co
 
 :ref:`bool<class_bool>` **track_get_interpolation_loop_wrap**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_interpolation_loop_wrap>`
 
-Returns ``true`` if the track at ``track_idx`` wraps the interpolation loop. New tracks wrap the interpolation loop by default.
+若 ``track_idx`` 處的軌道會環繞插值迴圈則返回 ``true``\ 。新建軌道預設皆會環繞插值迴圈。
 
 .. rst-class:: classref-item-separator
 
@@ -1220,7 +1218,7 @@ Returns ``true`` if the track at ``track_idx`` wraps the interpolation loop. New
 
 :ref:`InterpolationType<enum_Animation_InterpolationType>` **track_get_interpolation_type**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_interpolation_type>`
 
-Returns the interpolation type of a given track.
+返回指定軌道的插值類型。
 
 .. rst-class:: classref-item-separator
 
@@ -1232,7 +1230,7 @@ Returns the interpolation type of a given track.
 
 :ref:`int<class_int>` **track_get_key_count**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_key_count>`
 
-Returns the number of keys in a given track.
+返回給定軌道中的關鍵影格數量。
 
 .. rst-class:: classref-item-separator
 
@@ -1244,7 +1242,7 @@ Returns the number of keys in a given track.
 
 :ref:`float<class_float>` **track_get_key_time**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_key_time>`
 
-Returns the time at which the key is located.
+返回關鍵影格所在的時間。
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1254,7 @@ Returns the time at which the key is located.
 
 :ref:`float<class_float>` **track_get_key_transition**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_key_transition>`
 
-Returns the transition curve (easing) for a specific key (see the built-in math function :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`).
+返回指定關鍵影格的過渡曲線（緩動）（參閱內建數學函式 :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1268,7 +1266,7 @@ Returns the transition curve (easing) for a specific key (see the built-in math 
 
 :ref:`Variant<class_Variant>` **track_get_key_value**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_key_value>`
 
-Returns the value of a given key in a given track.
+返回給定軌道中指定關鍵影格的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1280,7 +1278,7 @@ Returns the value of a given key in a given track.
 
 :ref:`NodePath<class_NodePath>` **track_get_path**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_path>`
 
-Gets the path of a track. For more information on the path format, see :ref:`track_set_path()<class_Animation_method_track_set_path>`.
+取得軌道的路徑。關於路徑格式的詳細資料，請參閱 :ref:`track_set_path()<class_Animation_method_track_set_path>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1292,7 +1290,7 @@ Gets the path of a track. For more information on the path format, see :ref:`tra
 
 :ref:`TrackType<enum_Animation_TrackType>` **track_get_type**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_get_type>`
 
-Gets the type of a track.
+取得軌道的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -1304,7 +1302,7 @@ Gets the type of a track.
 
 :ref:`int<class_int>` **track_insert_key**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, key\: :ref:`Variant<class_Variant>`, transition\: :ref:`float<class_float>` = 1\ ) :ref:`🔗<class_Animation_method_track_insert_key>`
 
-Inserts a generic key in a given track. Returns the key index.
+在給定軌道中插入通用關鍵影格。返回該關鍵影格的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1316,7 +1314,7 @@ Inserts a generic key in a given track. Returns the key index.
 
 :ref:`bool<class_bool>` **track_is_compressed**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_is_compressed>`
 
-Returns ``true`` if the track is compressed, ``false`` otherwise. See also :ref:`compress()<class_Animation_method_compress>`.
+若軌道已被壓縮則返回 ``true``\ ，否則返回 ``false``\ 。另見 :ref:`compress()<class_Animation_method_compress>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1328,7 +1326,7 @@ Returns ``true`` if the track is compressed, ``false`` otherwise. See also :ref:
 
 :ref:`bool<class_bool>` **track_is_enabled**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_is_enabled>`
 
-Returns ``true`` if the track at index ``track_idx`` is enabled.
+若索引 ``track_idx`` 的軌道已啟用則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1340,7 +1338,7 @@ Returns ``true`` if the track at index ``track_idx`` is enabled.
 
 :ref:`bool<class_bool>` **track_is_imported**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_track_is_imported>`
 
-Returns ``true`` if the given track is imported. Else, return ``false``.
+若給定軌道為匯入則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1352,7 +1350,7 @@ Returns ``true`` if the given track is imported. Else, return ``false``.
 
 |void| **track_move_down**\ (\ track_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Animation_method_track_move_down>`
 
-Moves a track down.
+將軌道下移。
 
 .. rst-class:: classref-item-separator
 
@@ -1364,7 +1362,7 @@ Moves a track down.
 
 |void| **track_move_to**\ (\ track_idx\: :ref:`int<class_int>`, to_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Animation_method_track_move_to>`
 
-Changes the index position of track ``track_idx`` to the one defined in ``to_idx``.
+將軌道 ``track_idx`` 的索引位置改為 ``to_idx``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1376,7 +1374,7 @@ Changes the index position of track ``track_idx`` to the one defined in ``to_idx
 
 |void| **track_move_up**\ (\ track_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Animation_method_track_move_up>`
 
-Moves a track up.
+將軌道上移。
 
 .. rst-class:: classref-item-separator
 
@@ -1388,7 +1386,7 @@ Moves a track up.
 
 |void| **track_remove_key**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Animation_method_track_remove_key>`
 
-Removes a key by index in a given track.
+依索引自指定軌道移除鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1400,7 +1398,7 @@ Removes a key by index in a given track.
 
 |void| **track_remove_key_at_time**\ (\ track_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_track_remove_key_at_time>`
 
-Removes a key at ``time`` in a given track.
+於指定軌道的 ``time`` 移除鍵。
 
 .. rst-class:: classref-item-separator
 
@@ -1412,7 +1410,7 @@ Removes a key at ``time`` in a given track.
 
 |void| **track_set_enabled**\ (\ track_idx\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_track_set_enabled>`
 
-Enables/disables the given track. Tracks are enabled by default.
+啟用／停用指定軌道。軌道預設為啟用。
 
 .. rst-class:: classref-item-separator
 
@@ -1424,7 +1422,7 @@ Enables/disables the given track. Tracks are enabled by default.
 
 |void| **track_set_imported**\ (\ track_idx\: :ref:`int<class_int>`, imported\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_track_set_imported>`
 
-Sets the given track as imported or not.
+設定指定軌道是否為匯入狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -1436,7 +1434,7 @@ Sets the given track as imported or not.
 
 |void| **track_set_interpolation_loop_wrap**\ (\ track_idx\: :ref:`int<class_int>`, interpolation\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_track_set_interpolation_loop_wrap>`
 
-If ``true``, the track at ``track_idx`` wraps the interpolation loop.
+若為 ``true``\ ，則索引 ``track_idx`` 的軌道會環繞插值迴圈。
 
 .. rst-class:: classref-item-separator
 
@@ -1448,7 +1446,7 @@ If ``true``, the track at ``track_idx`` wraps the interpolation loop.
 
 |void| **track_set_interpolation_type**\ (\ track_idx\: :ref:`int<class_int>`, interpolation\: :ref:`InterpolationType<enum_Animation_InterpolationType>`\ ) :ref:`🔗<class_Animation_method_track_set_interpolation_type>`
 
-Sets the interpolation type of a given track.
+設定指定軌道的插值類型。
 
 .. rst-class:: classref-item-separator
 
@@ -1460,7 +1458,7 @@ Sets the interpolation type of a given track.
 
 |void| **track_set_key_time**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_track_set_key_time>`
 
-Sets the time of an existing key.
+設定既有關鍵影格的時間。
 
 .. rst-class:: classref-item-separator
 
@@ -1472,7 +1470,7 @@ Sets the time of an existing key.
 
 |void| **track_set_key_transition**\ (\ track_idx\: :ref:`int<class_int>`, key_idx\: :ref:`int<class_int>`, transition\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Animation_method_track_set_key_transition>`
 
-Sets the transition curve (easing) for a specific key (see the built-in math function :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`).
+設定指定關鍵影格的過渡曲線（緩動）（參閱內建數學函式 :ref:`@GlobalScope.ease()<class_@GlobalScope_method_ease>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1484,7 +1482,7 @@ Sets the transition curve (easing) for a specific key (see the built-in math fun
 
 |void| **track_set_key_value**\ (\ track_idx\: :ref:`int<class_int>`, key\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Animation_method_track_set_key_value>`
 
-Sets the value of an existing key.
+設定既有關鍵影格的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1496,9 +1494,9 @@ Sets the value of an existing key.
 
 |void| **track_set_path**\ (\ track_idx\: :ref:`int<class_int>`, path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_Animation_method_track_set_path>`
 
-Sets the path of a track. Paths must be valid scene-tree paths to a node and must be specified starting from the :ref:`AnimationMixer.root_node<class_AnimationMixer_property_root_node>` that will reproduce the animation. Tracks that control properties or bones must append their name after the path, separated by ``":"``.
+設定軌道的路徑。路徑必須是指向場景樹中節點的有效路徑，且必須從會播放動畫的 :ref:`AnimationMixer.root_node<class_AnimationMixer_property_root_node>` 開始指定。控制屬性或骨骼的軌道必須在路徑後以 ``":"`` 加上其名稱。
 
-For example, ``"character/skeleton:ankle"`` or ``"character/mesh:transform/local"``.
+例如，\ ``"character/skeleton:ankle"`` 或 ``"character/mesh:transform/local"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1510,7 +1508,7 @@ For example, ``"character/skeleton:ankle"`` or ``"character/mesh:transform/local
 
 |void| **track_swap**\ (\ track_idx\: :ref:`int<class_int>`, with_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Animation_method_track_swap>`
 
-Swaps the track ``track_idx``'s index position with the track ``with_idx``.
+將軌道 ``track_idx`` 的索引位置與軌道 ``with_idx`` 互換。
 
 .. rst-class:: classref-item-separator
 
@@ -1522,7 +1520,7 @@ Swaps the track ``track_idx``'s index position with the track ``with_idx``.
 
 :ref:`UpdateMode<enum_Animation_UpdateMode>` **value_track_get_update_mode**\ (\ track_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Animation_method_value_track_get_update_mode>`
 
-Returns the update mode of a value track.
+返回值軌道的更新模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1534,9 +1532,9 @@ Returns the update mode of a value track.
 
 :ref:`Variant<class_Variant>` **value_track_interpolate**\ (\ track_idx\: :ref:`int<class_int>`, time_sec\: :ref:`float<class_float>`, backward\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Animation_method_value_track_interpolate>`
 
-Returns the interpolated value at the given time (in seconds). The ``track_idx`` must be the index of a value track.
+返回於給定時間（以秒為單位）的插值後的值。\ ``track_idx`` 必須是值軌道的索引。
 
-A ``backward`` mainly affects the direction of key retrieval of the track with :ref:`UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` converted by :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` to match the result with :ref:`track_find_key()<class_Animation_method_track_find_key>`.
+\ ``backward`` 主要影響將 :ref:`UPDATE_DISCRETE<class_Animation_constant_UPDATE_DISCRETE>` 經由 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_DISCRETE_FORCE_CONTINUOUS>` 轉換後之軌道的鍵值檢索方向，以使結果與 :ref:`track_find_key()<class_Animation_method_track_find_key>` 一致。
 
 .. rst-class:: classref-item-separator
 
@@ -1548,14 +1546,14 @@ A ``backward`` mainly affects the direction of key retrieval of the track with :
 
 |void| **value_track_set_update_mode**\ (\ track_idx\: :ref:`int<class_int>`, mode\: :ref:`UpdateMode<enum_Animation_UpdateMode>`\ ) :ref:`🔗<class_Animation_method_value_track_set_update_mode>`
 
-Sets the update mode of a value track.
+設定值軌道的更新模式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

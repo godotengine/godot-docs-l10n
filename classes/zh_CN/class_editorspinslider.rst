@@ -5,23 +5,23 @@
 EditorSpinSlider
 ================
 
-**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot editor's control for editing numeric values.
+Godot 编辑器用于编辑数值的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This :ref:`Control<class_Control>` node is used in the editor's Inspector dock to allow editing of numeric values. Can be used with :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` to recreate the same behavior.
+这个 :ref:`Control<class_Control>` 节点在编辑器的检查器面板中使用，允许编辑数值。可以与 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` 一起使用，以重新创建相同的行为。
 
-If the :ref:`Range.step<class_Range_property_step>` value is ``1``, the **EditorSpinSlider** will display up/down arrows, similar to :ref:`SpinBox<class_SpinBox>`. If the :ref:`Range.step<class_Range_property_step>` value is not ``1``, a slider will be displayed instead.
+如果 :ref:`Range.step<class_Range_property_step>` 值为 ``1``\ ，则 **EditorSpinSlider** 将显示向上/向下箭头，类似于 :ref:`SpinBox<class_SpinBox>`\ 。如果 :ref:`Range.step<class_Range_property_step>` 值不是 ``1``\ ，则会显示一个滑块。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_EditorSpinSlider_signal_grabbed:
 
@@ -77,7 +77,7 @@ Signals
 
 **grabbed**\ (\ ) :ref:`🔗<class_EditorSpinSlider_signal_grabbed>`
 
-Emitted when the spinner/slider is grabbed.
+当微调器/滑块被抓取时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Emitted when the spinner/slider is grabbed.
 
 **ungrabbed**\ (\ ) :ref:`🔗<class_EditorSpinSlider_signal_ungrabbed>`
 
-Emitted when the spinner/slider is ungrabbed.
+当微调器/滑块取消抓取时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Emitted when the spinner/slider is ungrabbed.
 
 **updown_pressed**\ (\ ) :ref:`🔗<class_EditorSpinSlider_signal_updown_pressed>`
 
-Emitted when the updown button is pressed.
+当按下上下按钮时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +113,7 @@ Emitted when the updown button is pressed.
 
 **value_focus_entered**\ (\ ) :ref:`🔗<class_EditorSpinSlider_signal_value_focus_entered>`
 
-Emitted when the value form gains focus.
+值表单获得焦点时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -125,7 +125,7 @@ Emitted when the value form gains focus.
 
 **value_focus_exited**\ (\ ) :ref:`🔗<class_EditorSpinSlider_signal_value_focus_exited>`
 
-Emitted when the value form loses focus.
+值表单丢失焦点时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -133,8 +133,8 @@ Emitted when the value form loses focus.
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_EditorSpinSlider_ControlState:
 
@@ -172,8 +172,8 @@ Neither the up-down arrows nor the slider will be shown.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorSpinSlider_property_control_state:
 
@@ -220,7 +220,7 @@ If ``true``, the **EditorSpinSlider** is considered to be editing an integer val
 - |void| **set_flat**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_flat**\ (\ )
 
-If ``true``, the slider will not draw background.
+如果为 ``true``\ ，则滑块不会绘制背景。
 
 .. rst-class:: classref-item-separator
 
@@ -237,9 +237,9 @@ If ``true``, the slider will not draw background.
 - |void| **set_hide_slider**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_hiding_slider**\ (\ )
 
-**Deprecated:** Use :ref:`control_state<class_EditorSpinSlider_property_control_state>` instead.
+**已弃用：** Use :ref:`control_state<class_EditorSpinSlider_property_control_state>` instead.
 
-If ``true``, the slider and up/down arrows are hidden.
+如果为 ``true``\ ，则隐藏滑块和向上/向下箭头。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ If ``true``, the slider and up/down arrows are hidden.
 - |void| **set_label**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_label**\ (\ )
 
-The text that displays to the left of the value.
+在值的左侧显示的文本。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ The text that displays to the left of the value.
 - |void| **set_read_only**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_read_only**\ (\ )
 
-If ``true``, the slider can't be interacted with.
+如果为 ``true``\ ，则无法与滑块交互。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ If ``true``, the slider can't be interacted with.
 - |void| **set_suffix**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_suffix**\ (\ )
 
-The suffix to display after the value (in a faded color). This should generally be a plural word. You may have to use an abbreviation if the suffix is too long to be displayed.
+在值之后显示的后缀（以一种淡化的颜色显示）。这通常应该是一个复数形式的词。如果后缀太长而无法显示，可能必须使用缩写。
 
 .. rst-class:: classref-section-separator
 
@@ -298,8 +298,8 @@ The suffix to display after the value (in a faded color). This should generally 
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_EditorSpinSlider_theme_icon_updown:
 
@@ -307,7 +307,7 @@ Theme Property Descriptions
 
 :ref:`Texture2D<class_Texture2D>` **updown** :ref:`🔗<class_EditorSpinSlider_theme_icon_updown>`
 
-Single texture representing both the up and down buttons.
+代表上下按钮的单张纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -319,14 +319,14 @@ Single texture representing both the up and down buttons.
 
 :ref:`Texture2D<class_Texture2D>` **updown_disabled** :ref:`🔗<class_EditorSpinSlider_theme_icon_updown_disabled>`
 
-Single texture representing both the up and down buttons, when the control is readonly or disabled.
+控件只读或禁用时，代表上下按钮的单张纹理。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

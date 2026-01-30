@@ -5,21 +5,21 @@
 AudioStreamRandomizer
 =====================
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Wraps a pool of audio streams with pitch and volume shifting.
+用音高和音量偏移，包装一个音频流池。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Picks a random AudioStream from the pool, depending on the playback mode, and applies random pitch shifting and volume shifting during playback.
+根据播放模式，从池中随机选择一个 AudioStream，并在播放期间应用随机音高偏移和音量偏移。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_AudioStreamRandomizer_PlaybackMode:
 
@@ -81,7 +81,7 @@ enum **PlaybackMode**: :ref:`🔗<enum_AudioStreamRandomizer_PlaybackMode>`
 
 :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>` **PLAYBACK_RANDOM_NO_REPEATS** = ``0``
 
-Pick a stream at random according to the probability weights chosen for each stream, but avoid playing the same stream twice in a row whenever possible. If only 1 sound is present in the pool, the same sound will always play, effectively allowing repeats to occur.
+根据为每个流选择的概率权重随机挑选一个流，但尽可能避免连续两次播放同一个流。如果池中只有 1 个声音，则将始终播放同一个声音，从而有效地允许重复发生。
 
 .. _class_AudioStreamRandomizer_constant_PLAYBACK_RANDOM:
 
@@ -89,7 +89,7 @@ Pick a stream at random according to the probability weights chosen for each str
 
 :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>` **PLAYBACK_RANDOM** = ``1``
 
-Pick a stream at random according to the probability weights chosen for each stream. If only 1 sound is present in the pool, the same sound will always play.
+根据为每个流选择的概率权重随机挑选一个流。如果池中只有 1 个声音，则将始终播放同一个声音。
 
 .. _class_AudioStreamRandomizer_constant_PLAYBACK_SEQUENTIAL:
 
@@ -97,7 +97,7 @@ Pick a stream at random according to the probability weights chosen for each str
 
 :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>` **PLAYBACK_SEQUENTIAL** = ``2``
 
-Play streams in the order they appear in the stream pool. If only 1 sound is present in the pool, the same sound will always play.
+按照流池中出现的顺序播放流。如果池中只有 1 个声音，则将始终播放同一个声音。
 
 .. rst-class:: classref-section-separator
 
@@ -105,8 +105,8 @@ Play streams in the order they appear in the stream pool. If only 1 sound is pre
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AudioStreamRandomizer_property_playback_mode:
 
@@ -119,7 +119,7 @@ Property Descriptions
 - |void| **set_playback_mode**\ (\ value\: :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>`\ )
 - :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>` **get_playback_mode**\ (\ )
 
-Controls how this AudioStreamRandomizer picks which AudioStream to play next.
+控制该 AudioStreamRandomizer 如何选择下一个要播放的 AudioStream。
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ Controls how this AudioStreamRandomizer picks which AudioStream to play next.
 - |void| **set_random_pitch**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch**\ (\ )
 
-The largest possible frequency multiplier of the random pitch variation. Pitch will be randomly chosen within a range of ``1.0 / random_pitch`` and ``random_pitch``. A value of ``1.0`` means no variation. A value of ``2.0`` means pitch will be randomized between double and half.
+随机音高变化的最大可能频率乘数。音高将在 ``1.0 / random_pitch`` 和 ``random_pitch`` 的范围内随机选择。值为 ``1.0`` 表示没有变化。值为 ``2.0`` 表示音高将在两倍和一半之间随机变化。
 
-\ **Note:** Setting this property also sets :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`.
+\ **注意：**\ 设置该属性也会设置 :ref:`random_pitch_semitones<class_AudioStreamRandomizer_property_random_pitch_semitones>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -155,9 +155,9 @@ The largest possible frequency multiplier of the random pitch variation. Pitch w
 - |void| **set_random_pitch_semitones**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_pitch_semitones**\ (\ )
 
-The largest possible distance, in semitones, of the random pitch variation. A value of ``0.0`` means no variation.
+随机音高变化的最大可能距离，单位为半音。值为 ``0.0`` 表示没有变化。
 
-\ **Note:** Setting this property also sets :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`.
+\ **注意：**\ 设置该属性也会设置 :ref:`random_pitch<class_AudioStreamRandomizer_property_random_pitch>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ The largest possible distance, in semitones, of the random pitch variation. A va
 - |void| **set_random_volume_offset_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_random_volume_offset_db**\ (\ )
 
-The intensity of random volume variation. Volume will be increased or decreased by a random value up to ``random_volume_offset_db``. A value of ``0.0`` means no variation. A value of ``3.0`` means volume will be randomized between ``-3.0 dB`` and ``+3.0 dB``.
+随机音量变化的强度。音量将根据一个最大为 ``random_volume_offset_db`` 的值随机增加或减少。值为 ``0.0`` 表示没有变化。值为 ``3.0`` 表示音量将在 ``-3.0 dB`` 和 ``+3.0 dB`` 之间随机变化。
 
 .. rst-class:: classref-item-separator
 
@@ -191,7 +191,7 @@ The intensity of random volume variation. Volume will be increased or decreased 
 - |void| **set_streams_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_streams_count**\ (\ )
 
-The number of streams in the stream pool.
+流池中流的数量。
 
 .. rst-class:: classref-section-separator
 
@@ -199,8 +199,8 @@ The number of streams in the stream pool.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AudioStreamRandomizer_method_add_stream:
 
@@ -208,7 +208,7 @@ Method Descriptions
 
 |void| **add_stream**\ (\ index\: :ref:`int<class_int>`, stream\: :ref:`AudioStream<class_AudioStream>`, weight\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_AudioStreamRandomizer_method_add_stream>`
 
-Insert a stream at the specified index. If the index is less than zero, the insertion occurs at the end of the underlying pool.
+在指定索引处插入一个流。如果索引小于零，则插入发生在底层池的末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Insert a stream at the specified index. If the index is less than zero, the inse
 
 :ref:`AudioStream<class_AudioStream>` **get_stream**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamRandomizer_method_get_stream>`
 
-Returns the stream at the specified index.
+返回指定索引处的流。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Returns the stream at the specified index.
 
 :ref:`float<class_float>` **get_stream_probability_weight**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AudioStreamRandomizer_method_get_stream_probability_weight>`
 
-Returns the probability weight associated with the stream at the given index.
+返回与给定索引处的流关联的概率权重。
 
 .. rst-class:: classref-item-separator
 
@@ -244,7 +244,7 @@ Returns the probability weight associated with the stream at the given index.
 
 |void| **move_stream**\ (\ index_from\: :ref:`int<class_int>`, index_to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamRandomizer_method_move_stream>`
 
-Move a stream from one index to another.
+将流从一个索引移动到另一个索引。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ Move a stream from one index to another.
 
 |void| **remove_stream**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamRandomizer_method_remove_stream>`
 
-Remove the stream at the specified index.
+移除指定索引处的流。
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +268,7 @@ Remove the stream at the specified index.
 
 |void| **set_stream**\ (\ index\: :ref:`int<class_int>`, stream\: :ref:`AudioStream<class_AudioStream>`\ ) :ref:`🔗<class_AudioStreamRandomizer_method_set_stream>`
 
-Set the AudioStream at the specified index.
+设置指定索引处的 AudioStream。
 
 .. rst-class:: classref-item-separator
 
@@ -280,14 +280,14 @@ Set the AudioStream at the specified index.
 
 |void| **set_stream_probability_weight**\ (\ index\: :ref:`int<class_int>`, weight\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamRandomizer_method_set_stream_probability_weight>`
 
-Set the probability weight of the stream at the specified index. The higher this value, the more likely that the randomizer will choose this stream during random playback modes.
+设置流在指定索引处的概率权重。该值越高，随机化器在随机播放模式下选择该流的可能性就越大。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

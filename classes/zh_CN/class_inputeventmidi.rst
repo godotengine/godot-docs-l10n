@@ -5,20 +5,20 @@
 InputEventMIDI
 ==============
 
-**Inherits:** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a MIDI message from a MIDI device, such as a musical keyboard.
+代表来自 MIDI 设备的 MIDI 消息，例如来自音乐键盘。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-InputEventMIDI stores information about messages from `MIDI <https://en.wikipedia.org/wiki/MIDI>`__ (Musical Instrument Digital Interface) devices. These may include musical keyboards, synthesizers, and drum machines.
+InputEventMIDI 存储有关来自 `MIDI <https://en.wikipedia.org/wiki/MIDI>`__\ （乐器数字接口）设备的消息的信息。这些设备可能包括音乐键盘、合成器和鼓机。
 
-MIDI messages can be received over a 5-pin MIDI connector or over USB. If your device supports both be sure to check the settings in the device to see which output it is using.
+MIDI 消息可以通过 5 针 MIDI 连接器或 USB 接收。如果你的设备支持这两种方式，请务必检查设备中的设置以查看它正在使用哪种输出。
 
-By default, Godot does not detect MIDI devices. You need to call :ref:`OS.open_midi_inputs()<class_OS_method_open_midi_inputs>`, first. You can check which devices are detected with :ref:`OS.get_connected_midi_inputs()<class_OS_method_get_connected_midi_inputs>`, and close the connection with :ref:`OS.close_midi_inputs()<class_OS_method_close_midi_inputs>`.
+默认情况下，Godot 不检测 MIDI 设备。需要首先调用 :ref:`OS.open_midi_inputs()<class_OS_method_open_midi_inputs>`\ 。可以使用 :ref:`OS.get_connected_midi_inputs()<class_OS_method_get_connected_midi_inputs>` 检查检测到哪些设备，并使用 :ref:`OS.close_midi_inputs()<class_OS_method_close_midi_inputs>` 关闭连接。
 
 
 .. tabs::
@@ -75,25 +75,25 @@ By default, Godot does not detect MIDI devices. You need to call :ref:`OS.open_m
 
 
 
-\ **Note:** Godot does not support MIDI output, so there is no way to emit MIDI messages from Godot. Only MIDI input is supported.
+\ **注意：**\ Godot 不支持 MIDI 输出，因此无法从 Godot 发出 MIDI 消息。仅支持 MIDI 输入。
 
-\ **Note:** On the Web platform, using MIDI input requires a browser permission to be granted first. This permission request is performed when calling :ref:`OS.open_midi_inputs()<class_OS_method_open_midi_inputs>`. MIDI input will not work until the user accepts the permission request.
+\ **注意：**\ 在 Web 平台上，需要在浏览器中授权才能使用 MIDI 输入。权限请求会在调用 :ref:`OS.open_midi_inputs()<class_OS_method_open_midi_inputs>` 时进行。用户接受权限请求后浏览器才会处理 MIDI 输入。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- `MIDI Message Status Byte List <https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes>`__
+- `MIDI 消息状态字节列表 <https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes>`__
 
-- `Wikipedia General MIDI Instrument List <https://en.wikipedia.org/wiki/General_MIDI#Program_change_events>`__
+- `维基百科通用 MIDI 乐器列表 <https://en.wikipedia.org/wiki/General_MIDI#Program_change_events>`__
 
-- `Wikipedia Piano Key Frequencies List <https://en.wikipedia.org/wiki/Piano_key_frequencies#List>`__
+- `维基百科钢琴琴键频率列表 <https://en.wikipedia.org/wiki/Piano_key_frequencies#List>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_InputEventMIDI_property_channel:
 
@@ -136,7 +136,7 @@ Property Descriptions
 - |void| **set_channel**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_channel**\ (\ )
 
-The MIDI channel of this message, ranging from ``0`` to ``15``. MIDI channel ``9`` is reserved for percussion instruments.
+该消息的 MIDI 通道，范围从 ``0`` 到 ``15``\ 。MIDI 通道 ``9`` 是为打击乐器保留的。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ The MIDI channel of this message, ranging from ``0`` to ``15``. MIDI channel ``9
 - |void| **set_controller_number**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_controller_number**\ (\ )
 
-The unique number of the controller, if :ref:`message<class_InputEventMIDI_property_message>` is :ref:`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE<class_@GlobalScope_constant_MIDI_MESSAGE_CONTROL_CHANGE>`, otherwise this is ``0``. This value can be used to identify sliders for volume, balance, and panning, as well as switches and pedals on the MIDI device. See the `General MIDI specification <https://en.wikipedia.org/wiki/General_MIDI#Controller_events>`__ for a small list.
+如果 :ref:`message<class_InputEventMIDI_property_message>` 为 :ref:`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE<class_@GlobalScope_constant_MIDI_MESSAGE_CONTROL_CHANGE>`\ ，控制器的唯一编号；否则为 ``0``\ 。该值可用于识别用于音量、平衡和平移的滑块，以及 MIDI 设备上的开关和踏板。有关小列表，请参阅\ `通用 MIDI 规范 <https://en.wikipedia.org/wiki/General_MIDI#Controller_events>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ The unique number of the controller, if :ref:`message<class_InputEventMIDI_prope
 - |void| **set_controller_value**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_controller_value**\ (\ )
 
-The value applied to the controller. If :ref:`message<class_InputEventMIDI_property_message>` is :ref:`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE<class_@GlobalScope_constant_MIDI_MESSAGE_CONTROL_CHANGE>`, this value ranges from ``0`` to ``127``, otherwise it is ``0``. See also :ref:`controller_value<class_InputEventMIDI_property_controller_value>`.
+应用于控制器的值。如果 :ref:`message<class_InputEventMIDI_property_message>` 为 :ref:`@GlobalScope.MIDI_MESSAGE_CONTROL_CHANGE<class_@GlobalScope_constant_MIDI_MESSAGE_CONTROL_CHANGE>`\ ，则该值介于 ``0`` 到 ``127`` 之间，否则为 ``0``\ 。另见 :ref:`controller_value<class_InputEventMIDI_property_controller_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -187,9 +187,9 @@ The value applied to the controller. If :ref:`message<class_InputEventMIDI_prope
 - |void| **set_instrument**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_instrument**\ (\ )
 
-The instrument (also called *program* or *preset*) used on this MIDI message. This value ranges from ``0`` to ``127``.
+该 MIDI 消息上使用的乐器（也称为 *程序* 或 *预设*\ ）。该值介于 ``0`` 到 ``127`` 之间。
 
-To see what each value means, refer to the `General MIDI's instrument list <https://en.wikipedia.org/wiki/General_MIDI#Program_change_events>`__. Keep in mind that the list is off by 1 because it does not begin from 0. A value of ``0`` corresponds to the acoustic grand piano.
+要了解每个值的含义，请参阅\ `通用 MIDI 乐器列表 <https://en.wikipedia.org/wiki/General_MIDI#Program_change_events>`__\ 。请记住，该列表相差 1，因为它不是从 0 开始的。值 ``0`` 对应于原声三角钢琴。
 
 .. rst-class:: classref-item-separator
 
@@ -206,9 +206,9 @@ To see what each value means, refer to the `General MIDI's instrument list <http
 - |void| **set_message**\ (\ value\: :ref:`MIDIMessage<enum_@GlobalScope_MIDIMessage>`\ )
 - :ref:`MIDIMessage<enum_@GlobalScope_MIDIMessage>` **get_message**\ (\ )
 
-Represents the type of MIDI message (see the :ref:`MIDIMessage<enum_@GlobalScope_MIDIMessage>` enum).
+表示 MIDI 消息的类型（请参阅 :ref:`MIDIMessage<enum_@GlobalScope_MIDIMessage>` 枚举）。
 
-For more information, see the `MIDI message status byte list chart <https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes>`__.
+有关更多信息，请参阅 `MIDI 消息状态字节列表图表 <https://www.midi.org/specifications-old/item/table-2-expanded-messages-list-status-bytes>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ For more information, see the `MIDI message status byte list chart <https://www.
 - |void| **set_pitch**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_pitch**\ (\ )
 
-The pitch index number of this MIDI message. This value ranges from ``0`` to ``127``.
+该 MIDI 消息的音高索引号。该值的范围从 ``0`` 到 ``127``\ 。
 
-On a piano, the **middle C** is ``60``, followed by a **C-sharp** (``61``), then a **D** (``62``), and so on. Each octave is split in offsets of 12. See the "MIDI note number" column of the `piano key frequency chart <https://en.wikipedia.org/wiki/Piano_key_frequencies>`__ a full list.
+在钢琴上，\ **中音 C**\ 为 ``60``\ ，后跟 **C 升音**\ （\ ``61``\ ），然后是 **D**\ （\ ``62``\ ），等等。每个八度音阶以 12 为偏移量进行分割。请参阅 `钢琴键频率图表 <https://en.wikipedia.org/wiki/Piano_key_frequencies>`__ 完整列表的“MIDI 音符编号”列。
 
 .. rst-class:: classref-item-separator
 
@@ -244,9 +244,9 @@ On a piano, the **middle C** is ``60``, followed by a **C-sharp** (``61``), then
 - |void| **set_pressure**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_pressure**\ (\ )
 
-The strength of the key being pressed. This value ranges from ``0`` to ``127``.
+按键的力度。该值的范围从 ``0`` 到 ``127``\ 。
 
-\ **Note:** For many devices, this value is always ``0``. Other devices such as musical keyboards may simulate pressure by changing the :ref:`velocity<class_InputEventMIDI_property_velocity>`, instead.
+\ **注意：**\ 对于许多设备，该值始终为 ``0``\ 。其他如音乐键盘等设备可以通过改用更改 :ref:`velocity<class_InputEventMIDI_property_velocity>` 来模拟压力。
 
 .. rst-class:: classref-item-separator
 
@@ -263,9 +263,9 @@ The strength of the key being pressed. This value ranges from ``0`` to ``127``.
 - |void| **set_velocity**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_velocity**\ (\ )
 
-The velocity of the MIDI message. This value ranges from ``0`` to ``127``. For a musical keyboard, this corresponds to how quickly the key was pressed, and is rarely above ``110`` in practice.
+MIDI 消息的速度。这个值在 ``0`` 到 ``127`` 之间。对于音乐键盘，这对应的是按键有多快，实际很少超过 ``110``\ 。
 
-\ **Note:** Some MIDI devices may send a :ref:`@GlobalScope.MIDI_MESSAGE_NOTE_ON<class_@GlobalScope_constant_MIDI_MESSAGE_NOTE_ON>` message with ``0`` velocity and expect it to be treated the same as a :ref:`@GlobalScope.MIDI_MESSAGE_NOTE_OFF<class_@GlobalScope_constant_MIDI_MESSAGE_NOTE_OFF>` message. If necessary, this can be handled with a few lines of code:
+\ **注意：**\ 部分 MIDI 设备可能会发送速度为 ``0`` 的 :ref:`@GlobalScope.MIDI_MESSAGE_NOTE_ON<class_@GlobalScope_constant_MIDI_MESSAGE_NOTE_ON>`\ ，并期望它被视为和 :ref:`@GlobalScope.MIDI_MESSAGE_NOTE_OFF<class_@GlobalScope_constant_MIDI_MESSAGE_NOTE_OFF>` 消息一样。如果有必要，可以用几行代码来处理：
 
 ::
 
@@ -274,12 +274,12 @@ The velocity of the MIDI message. This value ranges from ``0`` to ``127``. For a
             if event.message == MIDI_MESSAGE_NOTE_ON and event.velocity > 0:
                 print("Note pressed!")
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,23 +5,23 @@
 RemoteTransform2D
 =================
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-RemoteTransform2D pushes its own :ref:`Transform2D<class_Transform2D>` to another :ref:`Node2D<class_Node2D>` derived node in the scene.
+RemoteTransform2D 会将自己的 :ref:`Transform2D<class_Transform2D>` 推送到场景中另一个派生自 :ref:`CanvasItem<class_CanvasItem>` 的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-RemoteTransform2D pushes its own :ref:`Transform2D<class_Transform2D>` to another :ref:`Node2D<class_Node2D>` derived node (called the remote node) in the scene.
+RemoteTransform2D 会将自己的 :ref:`Transform2D<class_Transform2D>` 推送到场景中另一个派生自 :ref:`CanvasItem<class_CanvasItem>` 的节点（称为远程节点）。
 
-It can be set to update another node's position, rotation and/or scale. It can use either global or local coordinates.
+可以设置更新另一个节点的位置、旋转和/或比例。可以使用全局坐标，也可以使用局部坐标。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RemoteTransform2D_property_remote_path:
 
@@ -70,7 +70,7 @@ Property Descriptions
 - |void| **set_remote_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_remote_node**\ (\ )
 
-The :ref:`NodePath<class_NodePath>` to the remote node, relative to the RemoteTransform2D's position in the scene.
+到远程节点的 :ref:`NodePath<class_NodePath>`\ ，相对于 RemoteTransform2D 在场景中的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ The :ref:`NodePath<class_NodePath>` to the remote node, relative to the RemoteTr
 - |void| **set_update_position**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_update_position**\ (\ )
 
-If ``true``, the remote node's position is updated.
+如果为 ``true``\ ，则更新远程节点的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ If ``true``, the remote node's position is updated.
 - |void| **set_update_rotation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_update_rotation**\ (\ )
 
-If ``true``, the remote node's rotation is updated.
+如果为 ``true``\ ，则更新远程节点的旋转。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ If ``true``, the remote node's rotation is updated.
 - |void| **set_update_scale**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_update_scale**\ (\ )
 
-If ``true``, the remote node's scale is updated.
+如果为 ``true``\ ，则更新远程节点的比例。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ If ``true``, the remote node's scale is updated.
 - |void| **set_use_global_coordinates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_global_coordinates**\ (\ )
 
-If ``true``, global coordinates are used. If ``false``, local coordinates are used.
+如果为 ``true``\ ，则使用全局坐标。如果 ``false``\ ，则使用本地坐标。
 
 .. rst-class:: classref-section-separator
 
@@ -146,8 +146,8 @@ If ``true``, global coordinates are used. If ``false``, local coordinates are us
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RemoteTransform2D_method_force_update_cache:
 
@@ -155,14 +155,14 @@ Method Descriptions
 
 |void| **force_update_cache**\ (\ ) :ref:`🔗<class_RemoteTransform2D_method_force_update_cache>`
 
-**RemoteTransform2D** caches the remote node. It may not notice if the remote node disappears; :ref:`force_update_cache()<class_RemoteTransform2D_method_force_update_cache>` forces it to update the cache again.
+**RemoteTransform2D** 缓存了远程节点。如果远程节点消失了，它可能不会通知；\ :ref:`force_update_cache()<class_RemoteTransform2D_method_force_update_cache>` 强制它再次更新缓存。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

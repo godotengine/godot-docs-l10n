@@ -5,30 +5,30 @@
 Skeleton2D
 ==========
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-The parent of a hierarchy of :ref:`Bone2D<class_Bone2D>`\ s, used to create a 2D skeletal animation.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**Skeleton2D** parents a hierarchy of :ref:`Bone2D<class_Bone2D>` nodes. It holds a reference to each :ref:`Bone2D<class_Bone2D>`'s rest pose and acts as a single point of access to its bones.
-
-To set up different types of inverse kinematics for the given Skeleton2D, a :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` should be created. The inverse kinematics be applied by increasing :ref:`SkeletonModificationStack2D.modification_count<class_SkeletonModificationStack2D_property_modification_count>` and creating the desired number of modifications.
+:ref:`Bone2D<class_Bone2D>` 层级结构的父节点，用于创建 2D 骨骼动画。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`2D skeletons <../tutorials/animation/2d_skeletons>`
+**Skeleton2D** 是 :ref:`Bone2D<class_Bone2D>` 节点层级结构的父节点，持有对每个 :ref:`Bone2D<class_Bone2D>` 的放松姿势的引用，充当其骨骼的单一访问点。
+
+要为给定的 Skeleton2D 设置不同类型的反向运动学机制，应当创建一个 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。增加 :ref:`SkeletonModificationStack2D.modification_count<class_SkeletonModificationStack2D_property_modification_count>` 并创建所需数量的修改器即可应用反向运动学机制。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`2D 骨架 <../tutorials/animation/2d_skeletons>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Skeleton2D_signal_bone_setup_changed:
 
@@ -66,7 +66,7 @@ Signals
 
 **bone_setup_changed**\ (\ ) :ref:`🔗<class_Skeleton2D_signal_bone_setup_changed>`
 
-Emitted when the :ref:`Bone2D<class_Bone2D>` setup attached to this skeletons changes. This is primarily used internally within the skeleton.
+当附加到该骨架的 :ref:`Bone2D<class_Bone2D>` 设置更改时发出。这主要在骨架内部使用。
 
 .. rst-class:: classref-section-separator
 
@@ -74,8 +74,8 @@ Emitted when the :ref:`Bone2D<class_Bone2D>` setup attached to this skeletons ch
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Skeleton2D_method_execute_modifications:
 
@@ -83,7 +83,7 @@ Method Descriptions
 
 |void| **execute_modifications**\ (\ delta\: :ref:`float<class_float>`, execution_mode\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton2D_method_execute_modifications>`
 
-Executes all the modifications on the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`, if the Skeleton2D has one assigned.
+如果该 Skeleton2D 分配有 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ ，则执行其中的所有修改。
 
 .. rst-class:: classref-item-separator
 
@@ -95,7 +95,7 @@ Executes all the modifications on the :ref:`SkeletonModificationStack2D<class_Sk
 
 :ref:`Bone2D<class_Bone2D>` **get_bone**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton2D_method_get_bone>`
 
-Returns a :ref:`Bone2D<class_Bone2D>` from the node hierarchy parented by Skeleton2D. The object to return is identified by the parameter ``idx``. Bones are indexed by descending the node hierarchy from top to bottom, adding the children of each branch before moving to the next sibling.
+从由 Skeleton2D 为父节点的节点层次结构中返回 :ref:`Bone2D<class_Bone2D>`\ 。要返回的对象由参数 ``idx`` 标识。骨骼通过从上到下降低节点层次结构来索引，在移动到下一个同级节点之前添加每个分支的子节点。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Returns a :ref:`Bone2D<class_Bone2D>` from the node hierarchy parented by Skelet
 
 :ref:`int<class_int>` **get_bone_count**\ (\ ) |const| :ref:`🔗<class_Skeleton2D_method_get_bone_count>`
 
-Returns the number of :ref:`Bone2D<class_Bone2D>` nodes in the node hierarchy parented by Skeleton2D.
+返回由 Skeleton2D 为父节点的节点层次结构中 :ref:`Bone2D<class_Bone2D>` 节点的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Returns the number of :ref:`Bone2D<class_Bone2D>` nodes in the node hierarchy pa
 
 :ref:`Transform2D<class_Transform2D>` **get_bone_local_pose_override**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton2D_method_get_bone_local_pose_override>`
 
-Returns the local pose override transform for ``bone_idx``.
+返回骨骼 ``bone_idx`` 的局部姿势覆盖变换。
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ Returns the local pose override transform for ``bone_idx``.
 
 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` **get_modification_stack**\ (\ ) |const| :ref:`🔗<class_Skeleton2D_method_get_modification_stack>`
 
-Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` attached to this skeleton, if one exists.
+如果存在，则返回附加到此骨架的 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>
 
 :ref:`RID<class_RID>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_Skeleton2D_method_get_skeleton>`
 
-Returns the :ref:`RID<class_RID>` of a Skeleton2D instance.
+返回 Skeleton2D 实例的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -155,11 +155,11 @@ Returns the :ref:`RID<class_RID>` of a Skeleton2D instance.
 
 |void| **set_bone_local_pose_override**\ (\ bone_idx\: :ref:`int<class_int>`, override_pose\: :ref:`Transform2D<class_Transform2D>`, strength\: :ref:`float<class_float>`, persistent\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Skeleton2D_method_set_bone_local_pose_override>`
 
-Sets the local pose transform, ``override_pose``, for the bone at ``bone_idx``.
+为 ``bone_idx`` 处的骨骼设置局部姿势变换 ``override_pose``\ 。
 
-\ ``strength`` is the interpolation strength that will be used when applying the pose, and ``persistent`` determines if the applied pose will remain.
+\ ``strength`` 是应用姿势时将使用的插值强度，\ ``persistent`` 决定是否会保持应用的姿势。
 
-\ **Note:** The pose transform needs to be a local transform relative to the :ref:`Bone2D<class_Bone2D>` node at ``bone_idx``!
+\ **注意：**\ 姿势变换需要是相对于 ``bone_idx`` 处的 :ref:`Bone2D<class_Bone2D>` 节点的局部变换！
 
 .. rst-class:: classref-item-separator
 
@@ -171,14 +171,14 @@ Sets the local pose transform, ``override_pose``, for the bone at ``bone_idx``.
 
 |void| **set_modification_stack**\ (\ modification_stack\: :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ ) :ref:`🔗<class_Skeleton2D_method_set_modification_stack>`
 
-Sets the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` attached to this skeleton.
+设置附加到此骨架的 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

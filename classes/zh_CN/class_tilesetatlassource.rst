@@ -5,29 +5,29 @@
 TileSetAtlasSource
 ==================
 
-**Inherits:** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Exposes a 2D atlas texture as a set of tiles for a :ref:`TileSet<class_TileSet>` resource.
+以一组图块的形式向 :ref:`TileSet<class_TileSet>` 资源暴露 2D 图集纹理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An atlas is a grid of tiles laid out on a texture. Each tile in the grid must be exposed using :ref:`create_tile()<class_TileSetAtlasSource_method_create_tile>`. Those tiles are then indexed using their coordinates in the grid.
+图集是在纹理上铺设的图块栅格。栅格中的每个图块都必须使用 :ref:`create_tile()<class_TileSetAtlasSource_method_create_tile>` 公开。然后使用它们在栅格中的坐标，对这些图块进行索引。
 
-Each tile can also have a size in the grid coordinates, making it more or less cells in the atlas.
+每个图块也可以在栅格坐标中有一个大小，使其在地图集中的单元格更多或更少。
 
-Alternatives version of a tile can be created using :ref:`create_alternative_tile()<class_TileSetAtlasSource_method_create_alternative_tile>`, which are then indexed using an alternative ID. The main tile (the one in the grid), is accessed with an alternative ID equal to 0.
+可以使用 :ref:`create_alternative_tile()<class_TileSetAtlasSource_method_create_alternative_tile>` 创建图块的替代版本，然后使用替代 ID 对其进行索引。主图块（栅格中的那个）使用一个等于 0 的替代 ID 进行访问。
 
-Each tile alternate has a set of properties that is defined by the source's :ref:`TileSet<class_TileSet>` layers. Those properties are stored in a TileData object that can be accessed and modified using :ref:`get_tile_data()<class_TileSetAtlasSource_method_get_tile_data>`.
+每个图块替代品都有一组由源的 :ref:`TileSet<class_TileSet>` 图层定义的属性。这些属性存储在 TileData 对象中，该对象可以使用 :ref:`get_tile_data()<class_TileSetAtlasSource_method_get_tile_data>` 来访问和修改。
 
-As TileData properties are stored directly in the TileSetAtlasSource resource, their properties might also be set using ``TileSetAtlasSource.set("<coords_x>:<coords_y>/<alternative_id>/<tile_data_property>")``.
+由于 TileData 属性直接存储在 TileSetAtlasSource 资源中，它们的属性也可以使用 ``TileSetAtlasSource.set("<coords_x>:<coords_y>/<alternative_id>/<tile_data_property>")`` 设置。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TileSetAtlasSource_TileAnimationMode:
 
@@ -137,7 +137,7 @@ enum **TileAnimationMode**: :ref:`🔗<enum_TileSetAtlasSource_TileAnimationMode
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_DEFAULT** = ``0``
 
-Tile animations start at same time, looking identical.
+图块动画在相同的时间开始，外观一致。
 
 .. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_RANDOM_START_TIMES:
 
@@ -145,7 +145,7 @@ Tile animations start at same time, looking identical.
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_RANDOM_START_TIMES** = ``1``
 
-Tile animations start at random times, looking varied.
+图块动画在随机的时间开始，外观不同。
 
 .. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_MAX:
 
@@ -153,7 +153,7 @@ Tile animations start at random times, looking varied.
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_MAX** = ``2``
 
-Represents the size of the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` enum.
+代表 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ Represents the size of the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileA
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H:
 
@@ -170,16 +170,16 @@ Constants
 
 **TRANSFORM_FLIP_H** = ``4096`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`
 
-Represents cell's horizontal flip flag. Should be used directly with :ref:`TileMapLayer<class_TileMapLayer>` to flip placed tiles by altering their alternative IDs.
+代表单元格的水平翻转标志。应该直接对 :ref:`TileMapLayer<class_TileMapLayer>` 使用，修改放置图块的备选 ID，将其进行翻转。
 
 ::
 
     var alternate_id = $TileMapLayer.get_cell_alternative_tile(Vector2i(2, 2))
     if not alternate_id & TileSetAtlasSource.TRANSFORM_FLIP_H:
-        # If tile is not already flipped, flip it.
+        # 如果没有翻转过就进行翻转。
         $TileMapLayer.set_cell(Vector2i(2, 2), source_id, atlas_coords, alternate_id | TileSetAtlasSource.TRANSFORM_FLIP_H)
 
-\ **Note:** These transformations can be combined to do the equivalent of 0, 90, 180, and 270 degree rotations, as shown below:
+\ **注意：**\ 可以将这些变换进行组合，从而实现 0、90、180、270 度旋转，示例如下：
 
 ::
 
@@ -196,7 +196,7 @@ Represents cell's horizontal flip flag. Should be used directly with :ref:`TileM
 
 **TRANSFORM_FLIP_V** = ``8192`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_V>`
 
-Represents cell's vertical flip flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>` for usage.
+代表单元格的垂直翻转标志。用法见 :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`\ 。
 
 .. _class_TileSetAtlasSource_constant_TRANSFORM_TRANSPOSE:
 
@@ -204,7 +204,7 @@ Represents cell's vertical flip flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAt
 
 **TRANSFORM_TRANSPOSE** = ``16384`` :ref:`🔗<class_TileSetAtlasSource_constant_TRANSFORM_TRANSPOSE>`
 
-Represents cell's transposed flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>` for usage.
+代表单元格的转置标志。用法见 :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -212,8 +212,8 @@ Represents cell's transposed flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAtlas
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TileSetAtlasSource_property_margins:
 
@@ -226,7 +226,7 @@ Property Descriptions
 - |void| **set_margins**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_margins**\ (\ )
 
-Margins, in pixels, to offset the origin of the grid in the texture.
+边距，单位为像素，用于偏移纹理中栅格的原点。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Margins, in pixels, to offset the origin of the grid in the texture.
 - |void| **set_separation**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_separation**\ (\ )
 
-Separation, in pixels, between each tile texture region of the grid.
+间隔，单位为像素，是栅格的纹理区域中图块之间的间距。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ Separation, in pixels, between each tile texture region of the grid.
 - |void| **set_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ )
 
-The atlas texture.
+图集纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ The atlas texture.
 - |void| **set_texture_region_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_texture_region_size**\ (\ )
 
-The base tile size in the texture (in pixel). This size must be bigger than or equal to the TileSet's ``tile_size`` value.
+纹理中的基础图块大小（以像素为单位）。该大小必须大于等于 TileSet 中的 ``tile_size`` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -294,9 +294,9 @@ The base tile size in the texture (in pixel). This size must be bigger than or e
 - |void| **set_use_texture_padding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_texture_padding**\ (\ )
 
-If ``true``, generates an internal texture with an additional one pixel padding around each tile. Texture padding avoids a common artifact where lines appear between tiles.
+如果为 ``true``\ ，则生成一个内部纹理，每个图块周围有一个额外的单像素填充。纹理填充避免了图块之间出现线条状的常见伪像。
 
-Disabling this setting might lead a small performance improvement, as generating the internal texture requires both memory and processing time when the TileSetAtlasSource resource is modified.
+禁用该设置可能会导致性能略有提高，因为在 TileSetAtlasSource 资源被修改时，生成内部纹理需要内存和处理时间。
 
 .. rst-class:: classref-section-separator
 
@@ -304,8 +304,8 @@ Disabling this setting might lead a small performance improvement, as generating
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TileSetAtlasSource_method_clear_tiles_outside_texture:
 
@@ -313,7 +313,7 @@ Method Descriptions
 
 |void| **clear_tiles_outside_texture**\ (\ ) :ref:`🔗<class_TileSetAtlasSource_method_clear_tiles_outside_texture>`
 
-Removes all tiles that don't fit the available texture area. This method iterates over all the source's tiles, so it's advised to use :ref:`has_tiles_outside_texture()<class_TileSetAtlasSource_method_has_tiles_outside_texture>` beforehand.
+移除所有位于可用纹理区域之外的图块。这个方法会遍历所有源的图块，因此建议先使用 :ref:`has_tiles_outside_texture()<class_TileSetAtlasSource_method_has_tiles_outside_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ Removes all tiles that don't fit the available texture area. This method iterate
 
 :ref:`int<class_int>` **create_alternative_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_id_override\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_TileSetAtlasSource_method_create_alternative_tile>`
 
-Creates an alternative tile for the tile at coordinates ``atlas_coords``. If ``alternative_id_override`` is -1, give it an automatically generated unique ID, or assigns it the given ID otherwise.
+为坐标为 ``atlas_coords`` 的图块创建备选图块。如果 ``alternative_id_override`` 为 -1，则会给予自动生成的唯一 ID，否则使用给定的 ID 赋值。
 
-Returns the new alternative identifier, or -1 if the alternative could not be created with a provided ``alternative_id_override``.
+返回新的备选标识符，如果无法使用提供的 ``alternative_id_override`` 创建则返回 -1。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ Returns the new alternative identifier, or -1 if the alternative could not be cr
 
 |void| **create_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>` = Vector2i(1, 1)\ ) :ref:`🔗<class_TileSetAtlasSource_method_create_tile>`
 
-Creates a new tile at coordinates ``atlas_coords`` with the given ``size``.
+在坐标 ``atlas_coords`` 处新建给定大小 ``size`` 的图块。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ Creates a new tile at coordinates ``atlas_coords`` with the given ``size``.
 
 :ref:`Vector2i<class_Vector2i>` **get_atlas_grid_size**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_atlas_grid_size>`
 
-Returns the atlas grid size, which depends on how many tiles can fit in the texture. It thus depends on the :ref:`texture<class_TileSetAtlasSource_property_texture>`'s size, the atlas :ref:`margins<class_TileSetAtlasSource_property_margins>`, and the tiles' :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>`.
+返回图集栅格大小，这取决于纹理中可以容纳多少个图块。因此，它取决于 :ref:`texture<class_TileSetAtlasSource_property_texture>` 的大小，该图集的 :ref:`margins<class_TileSetAtlasSource_property_margins>` 和该图块的 :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Returns the atlas grid size, which depends on how many tiles can fit in the text
 
 :ref:`int<class_int>` **get_next_alternative_tile_id**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_next_alternative_tile_id>`
 
-Returns the alternative ID a following call to :ref:`create_alternative_tile()<class_TileSetAtlasSource_method_create_alternative_tile>` would return.
+返回后续调用 :ref:`create_alternative_tile()<class_TileSetAtlasSource_method_create_alternative_tile>` 时将返回的备选 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -387,9 +387,9 @@ If :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_paddi
 
 :ref:`Rect2i<class_Rect2i>` **get_runtime_tile_texture_region**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_runtime_tile_texture_region>`
 
-Returns the region of the tile at coordinates ``atlas_coords`` for the given ``frame`` inside the texture returned by :ref:`get_runtime_texture()<class_TileSetAtlasSource_method_get_runtime_texture>`.
+返回由 :ref:`get_runtime_texture()<class_TileSetAtlasSource_method_get_runtime_texture>` 返回的纹理内给定 ``frame`` 的坐标 ``atlas_coords`` 处的图块区块。
 
-\ **Note:** If :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` is ``false``, returns the same as :ref:`get_tile_texture_region()<class_TileSetAtlasSource_method_get_tile_texture_region>`.
+\ **注意：**\ 如果 :ref:`use_texture_padding<class_TileSetAtlasSource_property_use_texture_padding>` 为 ``false``\ ，则返回与 :ref:`get_tile_texture_region()<class_TileSetAtlasSource_method_get_tile_texture_region>` 相同的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Returns the region of the tile at coordinates ``atlas_coords`` for the given ``f
 
 :ref:`int<class_int>` **get_tile_animation_columns**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_columns>`
 
-Returns how many columns the tile at ``atlas_coords`` has in its animation layout.
+返回位于坐标 ``atlas_coords`` 的图块的动画布局中有多少列。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Returns how many columns the tile at ``atlas_coords`` has in its animation layou
 
 :ref:`float<class_float>` **get_tile_animation_frame_duration**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_frame_duration>`
 
-Returns the animation frame duration of frame ``frame_index`` for the tile at coordinates ``atlas_coords``.
+返回位于坐标 ``atlas_coords`` 的图块的第 ``frame_index`` 帧的动画帧时长。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Returns the animation frame duration of frame ``frame_index`` for the tile at co
 
 :ref:`int<class_int>` **get_tile_animation_frames_count**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_frames_count>`
 
-Returns how many animation frames has the tile at coordinates ``atlas_coords``.
+返回位于坐标 ``atlas_coords`` 的图块有多少动画帧。
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Returns how many animation frames has the tile at coordinates ``atlas_coords``.
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **get_tile_animation_mode**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_mode>`
 
-Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`set_tile_animation_mode()<class_TileSetAtlasSource_method_set_tile_animation_mode>`.
+返回 ``atlas_coords`` 处图块的图块动画模式。另见 :ref:`set_tile_animation_mode()<class_TileSetAtlasSource_method_set_tile_animation_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Returns the tile animation mode of the tile at ``atlas_coords``. See also :ref:`
 
 :ref:`Vector2i<class_Vector2i>` **get_tile_animation_separation**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_separation>`
 
-Returns the separation (as in the atlas grid) between each frame of an animated tile at coordinates ``atlas_coords``.
+返回位于坐标 ``atlas_coords`` 的图块的帧与帧之间（在图集网格中）的间隔。
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Returns the separation (as in the atlas grid) between each frame of an animated 
 
 :ref:`float<class_float>` **get_tile_animation_speed**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_speed>`
 
-Returns the animation speed of the tile at coordinates ``atlas_coords``.
+返回位于坐标 ``atlas_coords`` 的图块的动画速度。
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Returns the animation speed of the tile at coordinates ``atlas_coords``.
 
 :ref:`float<class_float>` **get_tile_animation_total_duration**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_animation_total_duration>`
 
-Returns the sum of the sum of the frame durations of the tile at coordinates ``atlas_coords``. This value needs to be divided by the animation speed to get the actual animation loop duration.
+返回坐标 ``atlas_coords`` 处的图块的帧持续时间的总和。这个值需要除以动画速度才能得到实际的动画循环持续时间。
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Returns the sum of the sum of the frame durations of the tile at coordinates ``a
 
 :ref:`Vector2i<class_Vector2i>` **get_tile_at_coords**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_at_coords>`
 
-If there is a tile covering the ``atlas_coords`` coordinates, returns the top-left coordinates of the tile (thus its coordinate ID). Returns ``Vector2i(-1, -1)`` otherwise.
+如果有覆盖 ``atlas_coords`` 坐标的图块，则返回该图块左上角的坐标（即它的坐标 ID）。否则返回 ``Vector2i(-1, -1)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ If there is a tile covering the ``atlas_coords`` coordinates, returns the top-le
 
 :ref:`TileData<class_TileData>` **get_tile_data**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_data>`
 
-Returns the :ref:`TileData<class_TileData>` object for the given atlas coordinates and alternative ID.
+返回给定图集坐标和备选 ID 对应的 :ref:`TileData<class_TileData>` 对象。
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +509,7 @@ Returns the :ref:`TileData<class_TileData>` object for the given atlas coordinat
 
 :ref:`Vector2i<class_Vector2i>` **get_tile_size_in_atlas**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_size_in_atlas>`
 
-Returns the size of the tile (in the grid coordinates system) at coordinates ``atlas_coords``.
+返回位于坐标 ``atlas_coords`` 的图块的大小（使用栅格坐标系）。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ Returns the size of the tile (in the grid coordinates system) at coordinates ``a
 
 :ref:`Rect2i<class_Rect2i>` **get_tile_texture_region**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_get_tile_texture_region>`
 
-Returns a tile's texture region in the atlas texture. For animated tiles, a ``frame`` argument might be provided for the different frames of the animation.
+返回某个图块在图集纹理中的纹理区域。对于动画图块，可以提供 ``frame`` 参数来获取动画中不同的帧对应的区域。
 
 .. rst-class:: classref-item-separator
 
@@ -533,7 +533,7 @@ Returns a tile's texture region in the atlas texture. For animated tiles, a ``fr
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_tiles_to_be_removed_on_change**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, margins\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`, texture_region_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_get_tiles_to_be_removed_on_change>`
 
-Returns an array of tiles coordinates ID that will be automatically removed when modifying one or several of those properties: ``texture``, ``margins``, ``separation`` or ``texture_region_size``. This can be used to undo changes that would have caused tiles data loss.
+返回修改以下任意属性时将会自动移除的图块坐标 ID 的数组：\ ``texture``\ 、\ ``margins``\ 、\ ``separation``\ 、\ ``texture_region_size``\ 。可以用来撤销可能造成图块数据丢失的更改。
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ Returns an array of tiles coordinates ID that will be automatically removed when
 
 :ref:`bool<class_bool>` **has_room_for_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, size\: :ref:`Vector2i<class_Vector2i>`, animation_columns\: :ref:`int<class_int>`, animation_separation\: :ref:`Vector2i<class_Vector2i>`, frames_count\: :ref:`int<class_int>`, ignored_tile\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1)\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_has_room_for_tile>`
 
-Returns whether there is enough room in an atlas to create/modify a tile with the given properties. If ``ignored_tile`` is provided, act as is the given tile was not present in the atlas. This may be used when you want to modify a tile's properties.
+返回图集中是否有足够的空间来使用给定的属性创建/修改图块。如果提供了 ``ignored_tile``\ ，则判断时会和给定的图块在图集中不存在一样。可以在想要修改某个图块的属性时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ Returns whether there is enough room in an atlas to create/modify a tile with th
 
 :ref:`bool<class_bool>` **has_tiles_outside_texture**\ (\ ) |const| :ref:`🔗<class_TileSetAtlasSource_method_has_tiles_outside_texture>`
 
-Checks if the source has any tiles that don't fit the texture area (either partially or completely).
+检查该源是否存在位于纹理区域之外的图块（无论是部分位于区域外还是完全位于区域外）。
 
 .. rst-class:: classref-item-separator
 
@@ -569,11 +569,11 @@ Checks if the source has any tiles that don't fit the texture area (either parti
 
 |void| **move_tile_in_atlas**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, new_atlas_coords\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1), new_size\: :ref:`Vector2i<class_Vector2i>` = Vector2i(-1, -1)\ ) :ref:`🔗<class_TileSetAtlasSource_method_move_tile_in_atlas>`
 
-Move the tile and its alternatives at the ``atlas_coords`` coordinates to the ``new_atlas_coords`` coordinates with the ``new_size`` size. This functions will fail if a tile is already present in the given area.
+将 ``atlas_coords`` 坐标处的图块及其替代物移动到具有 ``new_size`` 大小的 ``new_atlas_coords`` 坐标。如果给定区域中已经存在一个图块，则该函数将失败。
 
-If ``new_atlas_coords`` is ``Vector2i(-1, -1)``, keeps the tile's coordinates. If ``new_size`` is ``Vector2i(-1, -1)``, keeps the tile's size.
+如果 ``new_atlas_coords`` 为 ``Vector2i(-1, -1)``\ ，则保持图块的坐标。如果 ``new_size`` 为 ``Vector2i(-1, -1)``\ ，则保持图块的大小。
 
-To avoid an error, first check if a move is possible using :ref:`has_room_for_tile()<class_TileSetAtlasSource_method_has_room_for_tile>`.
+为避免错误，请首先使用 :ref:`has_room_for_tile()<class_TileSetAtlasSource_method_has_room_for_tile>` 来检查移动是否可行。
 
 .. rst-class:: classref-item-separator
 
@@ -585,9 +585,9 @@ To avoid an error, first check if a move is possible using :ref:`has_room_for_ti
 
 |void| **remove_alternative_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_remove_alternative_tile>`
 
-Remove a tile's alternative with alternative ID ``alternative_tile``.
+移除备选 ID 为 ``alternative_tile`` 的备选图块。
 
-Calling this function with ``alternative_tile`` equals to 0 will fail, as the base tile alternative cannot be removed.
+使用为 0 的 ``alternative_tile`` 调用这个函数会失败，因为基础图块备选项无法被移除。
 
 .. rst-class:: classref-item-separator
 
@@ -599,7 +599,7 @@ Calling this function with ``alternative_tile`` equals to 0 will fail, as the ba
 
 |void| **remove_tile**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_remove_tile>`
 
-Remove a tile and its alternative at coordinates ``atlas_coords``.
+移除位于坐标 ``atlas_coords`` 的图块及其备选项。
 
 .. rst-class:: classref-item-separator
 
@@ -611,9 +611,9 @@ Remove a tile and its alternative at coordinates ``atlas_coords``.
 
 |void| **set_alternative_tile_id**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, alternative_tile\: :ref:`int<class_int>`, new_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_alternative_tile_id>`
 
-Change a tile's alternative ID from ``alternative_tile`` to ``new_id``.
+将图块的备选 ID 从 ``alternative_tile`` 改为 ``new_id``\ 。
 
-Calling this function with ``new_id`` of 0 will fail, as the base tile alternative cannot be moved.
+调用这个函数时将 ``new_id`` 设为 0 会导致失败，因为基础图块备选项无法移动。
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ Calling this function with ``new_id`` of 0 will fail, as the base tile alternati
 
 |void| **set_tile_animation_columns**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_columns\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_columns>`
 
-Sets the number of columns in the animation layout of the tile at coordinates ``atlas_coords``. If set to 0, then the different frames of the animation are laid out as a single horizontal line in the atlas.
+设置位于坐标 ``atlas_coords`` 的图块的动画布局中的列数。如果设置为 0，则动画帧在图集中水平排列。
 
 .. rst-class:: classref-item-separator
 
@@ -637,7 +637,7 @@ Sets the number of columns in the animation layout of the tile at coordinates ``
 
 |void| **set_tile_animation_frame_duration**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frame_index\: :ref:`int<class_int>`, duration\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_frame_duration>`
 
-Sets the animation frame ``duration`` of frame ``frame_index`` for the tile at coordinates ``atlas_coords``.
+设置位于坐标 ``atlas_coords`` 的图块动画帧 ``frame_index`` 的持续时间 ``duration``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ Sets the animation frame ``duration`` of frame ``frame_index`` for the tile at c
 
 |void| **set_tile_animation_frames_count**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, frames_count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_frames_count>`
 
-Sets how many animation frames the tile at coordinates ``atlas_coords`` has.
+设置位于坐标 ``atlas_coords`` 的图块有多少动画帧。
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ Sets how many animation frames the tile at coordinates ``atlas_coords`` has.
 
 |void| **set_tile_animation_mode**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, mode\: :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_mode>`
 
-Sets the tile animation mode of the tile at ``atlas_coords`` to ``mode``. See also :ref:`get_tile_animation_mode()<class_TileSetAtlasSource_method_get_tile_animation_mode>`.
+将 ``atlas_coords`` 处的图块的图块动画模式设置为 ``mode``\ 。另见 :ref:`get_tile_animation_mode()<class_TileSetAtlasSource_method_get_tile_animation_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -673,7 +673,7 @@ Sets the tile animation mode of the tile at ``atlas_coords`` to ``mode``. See al
 
 |void| **set_tile_animation_separation**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, separation\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_separation>`
 
-Sets the margin (in grid tiles) between each tile in the animation layout of the tile at coordinates ``atlas_coords`` has.
+设置位于坐标 ``atlas_coords`` 的图块的动画布局中，图块的间距（单位为栅格图块）。
 
 .. rst-class:: classref-item-separator
 
@@ -685,14 +685,14 @@ Sets the margin (in grid tiles) between each tile in the animation layout of the
 
 |void| **set_tile_animation_speed**\ (\ atlas_coords\: :ref:`Vector2i<class_Vector2i>`, speed\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TileSetAtlasSource_method_set_tile_animation_speed>`
 
-Sets the animation speed of the tile at coordinates ``atlas_coords`` has.
+设置位于坐标 ``atlas_coords`` 的图块的动画速度。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

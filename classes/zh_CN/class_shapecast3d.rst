@@ -5,25 +5,25 @@
 ShapeCast3D
 ===========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 3D shape that sweeps a region of space to detect :ref:`CollisionObject3D<class_CollisionObject3D>`\ s.
+3D 形状，会扫描空间中某个区域，用于检测 :ref:`CollisionObject3D<class_CollisionObject3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Shape casting allows to detect collision objects by sweeping its :ref:`shape<class_ShapeCast3D_property_shape>` along the cast direction determined by :ref:`target_position<class_ShapeCast3D_property_target_position>`. This is similar to :ref:`RayCast3D<class_RayCast3D>`, but it allows for sweeping a region of space, rather than just a straight line. **ShapeCast3D** can detect multiple collision objects. It is useful for things like wide laser beams or snapping a simple shape to a floor.
+形状投射会将其 :ref:`shape<class_ShapeCast3D_property_shape>` 沿着 :ref:`target_position<class_ShapeCast3D_property_target_position>` 确定的投射方向进行扫描，能够检测到碰撞对象。类似于 :ref:`RayCast3D<class_RayCast3D>`\ ，但是能够扫描空间中的一个区域，而不仅仅是一条直线。\ **ShapeCast3D** 能够检测到多个碰撞对象。可用于实现较宽的激光射线，或者将简单的形状吸附到地面。
 
-Immediate collision overlaps can be done with the :ref:`target_position<class_ShapeCast3D_property_target_position>` set to ``Vector3(0, 0, 0)`` and by calling :ref:`force_shapecast_update()<class_ShapeCast3D_method_force_shapecast_update>` within the same physics frame. This helps to overcome some limitations of :ref:`Area3D<class_Area3D>` when used as an instantaneous detection area, as collision information isn't immediately available to it.
+要立即检测碰撞重叠，可以将 :ref:`target_position<class_ShapeCast3D_property_target_position>` 设置为 ``Vector3(0, 0, 0)``\ ，并在同一个物理帧中调用 :ref:`force_shapecast_update()<class_ShapeCast3D_method_force_shapecast_update>`\ 。这样就能够克服 :ref:`Area3D<class_Area3D>` 在进行连续区域检测时的局限性，因为它无法立即获取碰撞信息。
 
-\ **Note:** Shape casting is more computationally expensive than ray casting.
+\ **注意：**\ 形状投射比射线投射的计算量更大。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ShapeCast3D_property_collide_with_areas:
 
@@ -118,7 +118,7 @@ Property Descriptions
 - |void| **set_collide_with_areas**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled**\ (\ )
 
-If ``true``, collisions with :ref:`Area3D<class_Area3D>`\ s will be reported.
+如果为 ``true``\ ，则会报告与 :ref:`Area3D<class_Area3D>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ If ``true``, collisions with :ref:`Area3D<class_Area3D>`\ s will be reported.
 - |void| **set_collide_with_bodies**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled**\ (\ )
 
-If ``true``, collisions with :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s will be reported.
+如果为 ``true``\ ，则会报告与 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ If ``true``, collisions with :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s will b
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The shape's collision mask. Only objects in at least one collision layer enabled in the mask will be detected. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+形状的碰撞掩码。只有至少启用了一个在该掩码中的碰撞层的对象才会被检测到。有关详细信息，请参阅文档中的\ `《碰撞层和掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ The shape's collision mask. Only objects in at least one collision layer enabled
 
 - :ref:`Array<class_Array>` **get_collision_result**\ (\ )
 
-Returns the complete collision information from the collision sweep. The data returned is the same as in the :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>` method.
+从碰撞扫描返回完整的碰撞信息。返回的数据与 :ref:`PhysicsDirectSpaceState3D.get_rest_info()<class_PhysicsDirectSpaceState3D_method_get_rest_info>` 方法中的数据相同。
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +185,9 @@ Returns the complete collision information from the collision sweep. The data re
 - |void| **set_debug_shape_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_shape_custom_color**\ (\ )
 
-The custom color to use to draw the shape in the editor and at run-time if **Visible Collision Shapes** is enabled in the **Debug** menu. This color will be highlighted at run-time if the **ShapeCast3D** is colliding with something.
+如果在\ **调试**\ 菜单中启用了\ **可见碰撞形状**\ ，则用于在编辑器中和运行时中绘制形状的自定义颜色。如果 **ShapeCast3D** 与某物发生碰撞，该颜色将在运行时突出显示。
 
-If set to ``Color(0.0, 0.0, 0.0)`` (by default), the color set in :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>` is used.
+如果设置为 ``Color(0.0, 0.0, 0.0)``\ （默认值），则使用 :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>` 中设置的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ If set to ``Color(0.0, 0.0, 0.0)`` (by default), the color set in :ref:`ProjectS
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-If ``true``, collisions will be reported.
+如果为 ``true``\ ，将报告碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ If ``true``, collisions will be reported.
 - |void| **set_exclude_parent_body**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_exclude_parent_body**\ (\ )
 
-If ``true``, the parent node will be excluded from collision detection.
+如果为 ``true``\ ，父节点将被排除在碰撞检测之外。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ If ``true``, the parent node will be excluded from collision detection.
 - |void| **set_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_margin**\ (\ )
 
-The collision margin for the shape. A larger margin helps detecting collisions more consistently, at the cost of precision.
+该形状的碰撞边距。较大的边距有助于更一致地检测碰撞，但代价是牺牲精度。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ The collision margin for the shape. A larger margin helps detecting collisions m
 - |void| **set_max_results**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_results**\ (\ )
 
-The number of intersections can be limited with this parameter, to reduce the processing time.
+可以使用这个参数来限制相交点的数量，减少处理时间。
 
 .. rst-class:: classref-item-separator
 
@@ -272,7 +272,7 @@ The number of intersections can be limited with this parameter, to reduce the pr
 - |void| **set_shape**\ (\ value\: :ref:`Shape3D<class_Shape3D>`\ )
 - :ref:`Shape3D<class_Shape3D>` **get_shape**\ (\ )
 
-The shape to be used for collision queries.
+用于碰撞查询的形状。
 
 .. rst-class:: classref-item-separator
 
@@ -289,7 +289,7 @@ The shape to be used for collision queries.
 - |void| **set_target_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_target_position**\ (\ )
 
-The shape's destination point, relative to this node's :ref:`Node3D.position<class_Node3D_property_position>`.
+形状的目标点，相对于该节点的 :ref:`Node3D.position<class_Node3D_property_position>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -297,8 +297,8 @@ The shape's destination point, relative to this node's :ref:`Node3D.position<cla
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ShapeCast3D_method_add_exception:
 
@@ -306,7 +306,7 @@ Method Descriptions
 
 |void| **add_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_ShapeCast3D_method_add_exception>`
 
-Adds a collision exception so the shape does not report collisions with the specified node.
+添加碰撞例外，使该形状不汇报与指定节点的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Adds a collision exception so the shape does not report collisions with the spec
 
 |void| **add_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_ShapeCast3D_method_add_exception_rid>`
 
-Adds a collision exception so the shape does not report collisions with the specified :ref:`RID<class_RID>`.
+添加碰撞例外，使该形状不汇报与指定 :ref:`RID<class_RID>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ Adds a collision exception so the shape does not report collisions with the spec
 
 |void| **clear_exceptions**\ (\ ) :ref:`🔗<class_ShapeCast3D_method_clear_exceptions>`
 
-Removes all collision exceptions for this shape.
+移除该形状的所有碰撞例外。
 
 .. rst-class:: classref-item-separator
 
@@ -342,9 +342,9 @@ Removes all collision exceptions for this shape.
 
 |void| **force_shapecast_update**\ (\ ) :ref:`🔗<class_ShapeCast3D_method_force_shapecast_update>`
 
-Updates the collision information for the shape immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the shape or its parent has changed state.
+立即更新形状的碰撞信息，不等待下一次的 ``_physics_process`` 调用。例如，请在形状或其父级更改状态后使用该方法。
 
-\ **Note:** Setting :ref:`enabled<class_ShapeCast3D_property_enabled>` to ``true`` is not required for this to work.
+\ **注意：**\ 不将 :ref:`enabled<class_ShapeCast3D_property_enabled>` 设置为 ``true`` 也可以生效。
 
 .. rst-class:: classref-item-separator
 
@@ -356,7 +356,7 @@ Updates the collision information for the shape immediately, without waiting for
 
 :ref:`float<class_float>` **get_closest_collision_safe_fraction**\ (\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_closest_collision_safe_fraction>`
 
-Returns the fraction from this cast's origin to its :ref:`target_position<class_ShapeCast3D_property_target_position>` of how far the shape can move without triggering a collision, as a value between ``0.0`` and ``1.0``.
+返回从投射原点到 :ref:`target_position<class_ShapeCast3D_property_target_position>` 之间的分数，形状在不触发碰撞的情况下能够移动多远，是一个 ``0.0`` 到 ``1.0`` 之间的值。
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Returns the fraction from this cast's origin to its :ref:`target_position<class_
 
 :ref:`float<class_float>` **get_closest_collision_unsafe_fraction**\ (\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_closest_collision_unsafe_fraction>`
 
-Returns the fraction from this cast's origin to its :ref:`target_position<class_ShapeCast3D_property_target_position>` of how far the shape must move to trigger a collision, as a value between ``0.0`` and ``1.0``.
+返回从投射原点到 :ref:`target_position<class_ShapeCast3D_property_target_position>` 之间的分数，形状移动多远才能够触发碰撞，是一个 ``0.0`` 到 ``1.0`` 之间的值。
 
-In ideal conditions this would be the same as :ref:`get_closest_collision_safe_fraction()<class_ShapeCast3D_method_get_closest_collision_safe_fraction>`, however shape casting is calculated in discrete steps, so the precise point of collision can occur between two calculated positions.
+在理想条件下与 :ref:`get_closest_collision_safe_fraction()<class_ShapeCast3D_method_get_closest_collision_safe_fraction>` 相同，但是形状投射是分步骤计算的，因此精确的碰撞点可能发生在两个计算位置之间。
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ In ideal conditions this would be the same as :ref:`get_closest_collision_safe_f
 
 :ref:`Object<class_Object>` **get_collider**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collider>`
 
-Returns the collided :ref:`Object<class_Object>` of one of the multiple collisions at ``index``, or ``null`` if no object is intersecting the shape (i.e. :ref:`is_colliding()<class_ShapeCast3D_method_is_colliding>` returns ``false``).
+返回 ``index`` 处多次碰撞之一的碰撞 :ref:`Object<class_Object>`\ ，如果没有对象与形状相交（即 :ref:`is_colliding()<class_ShapeCast3D_method_is_colliding>` 返回 ``false``\ ），则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -394,7 +394,7 @@ Returns the collided :ref:`Object<class_Object>` of one of the multiple collisio
 
 :ref:`RID<class_RID>` **get_collider_rid**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collider_rid>`
 
-Returns the :ref:`RID<class_RID>` of the collided object of one of the multiple collisions at ``index``.
+返回 ``index`` 处多次碰撞之一的碰撞对象的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -406,7 +406,7 @@ Returns the :ref:`RID<class_RID>` of the collided object of one of the multiple 
 
 :ref:`int<class_int>` **get_collider_shape**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collider_shape>`
 
-Returns the shape ID of the colliding shape of one of the multiple collisions at ``index``, or ``0`` if no object is intersecting the shape (i.e. :ref:`is_colliding()<class_ShapeCast3D_method_is_colliding>` returns ``false``).
+返回 ``index`` 处多次碰撞之一的碰撞形状的形状 ID，如果没有对象与该形状相交（即 :ref:`is_colliding()<class_ShapeCast3D_method_is_colliding>` 返回 ``false``\ ），则返回 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -418,7 +418,7 @@ Returns the shape ID of the colliding shape of one of the multiple collisions at
 
 :ref:`int<class_int>` **get_collision_count**\ (\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collision_count>`
 
-The number of collisions detected at the point of impact. Use this to iterate over multiple collisions as provided by :ref:`get_collider()<class_ShapeCast3D_method_get_collider>`, :ref:`get_collider_shape()<class_ShapeCast3D_method_get_collider_shape>`, :ref:`get_collision_point()<class_ShapeCast3D_method_get_collision_point>`, and :ref:`get_collision_normal()<class_ShapeCast3D_method_get_collision_normal>` methods.
+在撞击点检测到的碰撞次数。使用它来迭代由 :ref:`get_collider()<class_ShapeCast3D_method_get_collider>`\ 、\ :ref:`get_collider_shape()<class_ShapeCast3D_method_get_collider_shape>`\ 、\ :ref:`get_collision_point()<class_ShapeCast3D_method_get_collision_point>` 和 :ref:`get_collision_normal()<class_ShapeCast3D_method_get_collision_normal>` 方法提供的多个碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ The number of collisions detected at the point of impact. Use this to iterate ov
 
 :ref:`bool<class_bool>` **get_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collision_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`collision_mask<class_ShapeCast3D_property_collision_mask>` is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`collision_mask<class_ShapeCast3D_property_collision_mask>` 中是否启用了指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -442,7 +442,7 @@ Returns whether or not the specified layer of the :ref:`collision_mask<class_Sha
 
 :ref:`Vector3<class_Vector3>` **get_collision_normal**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collision_normal>`
 
-Returns the normal of one of the multiple collisions at ``index`` of the intersecting object.
+返回相交对象 ``index`` 处多次碰撞之一的法线。
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ Returns the normal of one of the multiple collisions at ``index`` of the interse
 
 :ref:`Vector3<class_Vector3>` **get_collision_point**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ShapeCast3D_method_get_collision_point>`
 
-Returns the collision point of one of the multiple collisions at ``index`` where the shape intersects the colliding object.
+返回形状与碰撞对象相交的 ``index`` 处多次碰撞之一的碰撞点。
 
-\ **Note:** This point is in the **global** coordinate system.
+\ **注意：**\ 这个点使用\ **全局**\ 坐标系。
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ Returns the collision point of one of the multiple collisions at ``index`` where
 
 :ref:`bool<class_bool>` **is_colliding**\ (\ ) |const| :ref:`🔗<class_ShapeCast3D_method_is_colliding>`
 
-Returns whether any object is intersecting with the shape's vector (considering the vector length).
+返回是否有任何对象与形状的向量相交（考虑向量长度）。
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ Returns whether any object is intersecting with the shape's vector (considering 
 
 |void| **remove_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_ShapeCast3D_method_remove_exception>`
 
-Removes a collision exception so the shape does report collisions with the specified node.
+移除碰撞例外，使该形状能够汇报与指定节点的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ Removes a collision exception so the shape does report collisions with the speci
 
 |void| **remove_exception_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_ShapeCast3D_method_remove_exception_rid>`
 
-Removes a collision exception so the shape does report collisions with the specified :ref:`RID<class_RID>`.
+移除碰撞例外，使该形状能够汇报与指定 :ref:`RID<class_RID>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -504,9 +504,9 @@ Removes a collision exception so the shape does report collisions with the speci
 
 |void| **resource_changed**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_ShapeCast3D_method_resource_changed>`
 
-**Deprecated:** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
+**已弃用：** Use :ref:`Resource.changed<class_Resource_signal_changed>` instead.
 
-This method does nothing.
+这个方法什么也不做。
 
 .. rst-class:: classref-item-separator
 
@@ -518,14 +518,14 @@ This method does nothing.
 
 |void| **set_collision_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ShapeCast3D_method_set_collision_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`collision_mask<class_ShapeCast3D_property_collision_mask>`, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`collision_mask<class_ShapeCast3D_property_collision_mask>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

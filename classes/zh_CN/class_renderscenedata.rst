@@ -5,16 +5,16 @@
 RenderSceneData
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`RenderSceneDataExtension<class_RenderSceneDataExtension>`, :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`
+**派生：** :ref:`RenderSceneDataExtension<class_RenderSceneDataExtension>`, :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`
 
-Abstract render data object, holds scene data related to rendering a single frame of a viewport.
+抽象渲染数据对象，保存与渲染视口的单个帧相关的场景数据。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 Abstract scene data object, exists for the duration of rendering a single viewport. See also :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
 
@@ -22,8 +22,8 @@ Abstract scene data object, exists for the duration of rendering a single viewpo
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RenderSceneData_method_get_cam_projection:
 
@@ -57,9 +57,9 @@ Method Descriptions
 
 :ref:`Projection<class_Projection>` **get_cam_projection**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_cam_projection>`
 
-Returns the camera projection used to render this frame.
+返回用于渲染该帧的相机投影。
 
-\ **Note:** If more than one view is rendered, this will return a combined projection.
+\ **注意：**\ 如果渲染多个视图，则这将返回一个组合的投影。
 
 .. rst-class:: classref-item-separator
 
@@ -71,9 +71,9 @@ Returns the camera projection used to render this frame.
 
 :ref:`Transform3D<class_Transform3D>` **get_cam_transform**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_cam_transform>`
 
-Returns the camera transform used to render this frame.
+返回用于渲染该帧的相机变换。
 
-\ **Note:** If more than one view is rendered, this will return a centered transform.
+\ **注意：**\ 如果渲染多个视图，则这将返回一个居中的变换。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Returns the camera transform used to render this frame.
 
 :ref:`RID<class_RID>` **get_uniform_buffer**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_uniform_buffer>`
 
-Return the :ref:`RID<class_RID>` of the uniform buffer containing the scene data as a UBO.
+返回包含场景数据作为 UBO 的 uniform 缓冲区的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Return the :ref:`RID<class_RID>` of the uniform buffer containing the scene data
 
 :ref:`int<class_int>` **get_view_count**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_view_count>`
 
-Returns the number of views being rendered.
+返回渲染的视图数。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Returns the number of views being rendered.
 
 :ref:`Vector3<class_Vector3>` **get_view_eye_offset**\ (\ view\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_view_eye_offset>`
 
-Returns the eye offset per view used to render this frame. This is the offset between our camera transform and the eye transform.
+返回用于渲染该帧的每个视图的眼睛偏移量。这是我们的相机变换和眼睛变换之间的偏移。
 
 .. rst-class:: classref-item-separator
 
@@ -121,16 +121,16 @@ Returns the eye offset per view used to render this frame. This is the offset be
 
 :ref:`Projection<class_Projection>` **get_view_projection**\ (\ view\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_view_projection>`
 
-Returns the view projection per view used to render this frame.
+返回用于渲染该帧的每个视图的视图投影。
 
-\ **Note:** If a single view is rendered, this returns the camera projection. If more than one view is rendered, this will return a projection for the given view including the eye offset.
+\ **注意：**\ 如果渲染单个视图，则返回相机投影。如果渲染多个视图，则这将返回给定视图的投影，包括眼睛偏移。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

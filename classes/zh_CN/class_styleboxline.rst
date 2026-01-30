@@ -5,21 +5,21 @@
 StyleBoxLine
 ============
 
-**Inherits:** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`StyleBox<class_StyleBox>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A :ref:`StyleBox<class_StyleBox>` that displays a single line of a given color and thickness.
+显示一条线的 :ref:`StyleBox<class_StyleBox>`\ ，可以给定颜色和粗细。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A :ref:`StyleBox<class_StyleBox>` that displays a single line of a given color and thickness. The line can be either horizontal or vertical. Useful for separators.
+显示一条线的 :ref:`StyleBox<class_StyleBox>`\ ，可以给定颜色和粗细。可以是横线也可以是竖线。可用作分隔符。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_StyleBoxLine_property_color:
 
@@ -56,7 +56,7 @@ Property Descriptions
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The line's color.
+线的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ The line's color.
 - |void| **set_grow_begin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_grow_begin**\ (\ )
 
-The number of pixels the line will extend before the **StyleBoxLine**'s bounds. If set to a negative value, the line will begin inside the **StyleBoxLine**'s bounds.
+线将在 **StyleBoxLine** 的边界之前延伸的像素数。如果设置为负值，则该线将从 **StyleBoxLine** 的边界内开始。
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ The number of pixels the line will extend before the **StyleBoxLine**'s bounds. 
 - |void| **set_grow_end**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_grow_end**\ (\ )
 
-The number of pixels the line will extend past the **StyleBoxLine**'s bounds. If set to a negative value, the line will end inside the **StyleBoxLine**'s bounds.
+线将超出 **StyleBoxLine** 边界的像素数。如果设置为负值，则该线将在 **StyleBoxLine** 的边界内结束。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ The number of pixels the line will extend past the **StyleBoxLine**'s bounds. If
 - |void| **set_thickness**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_thickness**\ (\ )
 
-The line's thickness in pixels.
+线条的粗细（以像素为单位）。
 
 .. rst-class:: classref-item-separator
 
@@ -124,14 +124,14 @@ The line's thickness in pixels.
 - |void| **set_vertical**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_vertical**\ (\ )
 
-If ``true``, the line will be vertical. If ``false``, the line will be horizontal.
+如果为 ``true``\ ，则该线将是垂直的。如果 ``false``\ ，该线将是水平的。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

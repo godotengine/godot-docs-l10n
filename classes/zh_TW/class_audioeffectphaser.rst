@@ -5,30 +5,30 @@
 AudioEffectPhaser
 =================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a phaser audio effect to an audio bus.
+向音訊匯流排新增移相器效果。
 
-Combines the original signal with a copy that is slightly out of phase with the original.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Combines phase-shifted signals with the original signal. The movement of the phase-shifted signals is controlled using a low-frequency oscillator.
+將原始訊號與其帶有些微相位差的副本混合。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+將相移訊號與原始訊號混合。相移訊號的移動由低頻振盪器 (LFO) 控制。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioEffectPhaser_property_depth:
 
@@ -65,7 +65,7 @@ Property Descriptions
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Determines how high the filter frequencies sweep. Low value will primarily affect bass frequencies. High value can sweep high into the treble. Value can range from ``0.1`` to ``4.0``.
+決定濾波器掃描的最高頻率。較低值主要影響低頻，較高值可掃描至高音。取值範圍為 ``0.1`` 至 ``4.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +82,7 @@ Determines how high the filter frequencies sweep. Low value will primarily affec
 - |void| **set_feedback**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_feedback**\ (\ )
 
-Output percent of modified sound. Value can range from 0.1 to 0.9.
+修改後聲音的輸出百分比。取值範圍為 0.1 到 0.9。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Output percent of modified sound. Value can range from 0.1 to 0.9.
 - |void| **set_range_max_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_max_hz**\ (\ )
 
-Determines the maximum frequency affected by the LFO modulations, in Hz. Value can range from 10 to 10000.
+決定受 LFO 調變影響的最大頻率（Hz），範圍 10–10000。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ Determines the maximum frequency affected by the LFO modulations, in Hz. Value c
 - |void| **set_range_min_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_range_min_hz**\ (\ )
 
-Determines the minimum frequency affected by the LFO modulations, in Hz. Value can range from 10 to 10000.
+決定受 LFO 調變影響的最小頻率（Hz），範圍 10–10000。
 
 .. rst-class:: classref-item-separator
 
@@ -133,14 +133,14 @@ Determines the minimum frequency affected by the LFO modulations, in Hz. Value c
 - |void| **set_rate_hz**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rate_hz**\ (\ )
 
-Adjusts the rate in Hz at which the effect sweeps up and down across the frequency range.
+以 Hz 為單位調整效果於頻率範圍內上下掃描的速率。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

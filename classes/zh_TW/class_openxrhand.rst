@@ -5,16 +5,16 @@
 OpenXRHand
 ==========
 
-**Deprecated:** Use :ref:`XRHandModifier3D<class_XRHandModifier3D>` instead.
+**已棄用：** Use :ref:`XRHandModifier3D<class_XRHandModifier3D>` instead.
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 Node supporting hand and finger tracking in OpenXR.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This node enables OpenXR's hand tracking functionality. The node should be a child node of an :ref:`XROrigin3D<class_XROrigin3D>` node, tracking will update its position to the player's tracked hand Palm joint location (the center of the middle finger's metacarpal bone). This node also updates the skeleton of a properly skinned hand or avatar model.
 
@@ -26,8 +26,8 @@ By default the skeleton hand bones are repositioned to match the size of the tra
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_OpenXRHand_Hands:
 
@@ -65,7 +65,7 @@ enum **Hands**: :ref:`🔗<enum_OpenXRHand_Hands>`
 
 :ref:`Hands<enum_OpenXRHand_Hands>` **HAND_LEFT** = ``0``
 
-Tracking the player's left hand.
+追蹤玩家的左手。
 
 .. _class_OpenXRHand_constant_HAND_RIGHT:
 
@@ -73,7 +73,7 @@ Tracking the player's left hand.
 
 :ref:`Hands<enum_OpenXRHand_Hands>` **HAND_RIGHT** = ``1``
 
-Tracking the player's right hand.
+追蹤玩家的右手。
 
 .. _class_OpenXRHand_constant_HAND_MAX:
 
@@ -81,7 +81,7 @@ Tracking the player's right hand.
 
 :ref:`Hands<enum_OpenXRHand_Hands>` **HAND_MAX** = ``2``
 
-Maximum supported hands.
+最大支援的手數。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ enum **MotionRange**: :ref:`🔗<enum_OpenXRHand_MotionRange>`
 
 :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **MOTION_RANGE_UNOBSTRUCTED** = ``0``
 
-When player grips, hand skeleton will form a full fist.
+玩家抓握時，手部骨架呈握拳狀。
 
 .. _class_OpenXRHand_constant_MOTION_RANGE_CONFORM_TO_CONTROLLER:
 
@@ -107,7 +107,7 @@ When player grips, hand skeleton will form a full fist.
 
 :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **MOTION_RANGE_CONFORM_TO_CONTROLLER** = ``1``
 
-When player grips, hand skeleton conforms to the controller the player is holding.
+玩家抓握時，手部骨架遵循玩家所持的控制器。
 
 .. _class_OpenXRHand_constant_MOTION_RANGE_MAX:
 
@@ -115,7 +115,7 @@ When player grips, hand skeleton conforms to the controller the player is holdin
 
 :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **MOTION_RANGE_MAX** = ``2``
 
-Maximum supported motion ranges.
+最大支援的運動範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ A :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` compliant skelet
 
 :ref:`SkeletonRig<enum_OpenXRHand_SkeletonRig>` **SKELETON_RIG_MAX** = ``2``
 
-Maximum supported hands.
+最大支援的手數。
 
 .. rst-class:: classref-item-separator
 
@@ -191,8 +191,8 @@ Maximum supported bone update mode.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_OpenXRHand_property_bone_update:
 
@@ -222,7 +222,7 @@ Specify the type of updates to perform on the bone.
 - |void| **set_hand**\ (\ value\: :ref:`Hands<enum_OpenXRHand_Hands>`\ )
 - :ref:`Hands<enum_OpenXRHand_Hands>` **get_hand**\ (\ )
 
-Specifies whether this node tracks the left or right hand of the player.
+指定該節點是追蹤玩家的左手還是右手。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ Specifies whether this node tracks the left or right hand of the player.
 - |void| **set_hand_skeleton**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_hand_skeleton**\ (\ )
 
-Set a :ref:`Skeleton3D<class_Skeleton3D>` node for which the pose positions will be updated.
+設定一個\ :ref:`Skeleton3D<class_Skeleton3D>`\ 節點，該節點的姿勢位置將被更新。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ Set a :ref:`Skeleton3D<class_Skeleton3D>` node for which the pose positions will
 - |void| **set_motion_range**\ (\ value\: :ref:`MotionRange<enum_OpenXRHand_MotionRange>`\ )
 - :ref:`MotionRange<enum_OpenXRHand_MotionRange>` **get_motion_range**\ (\ )
 
-Set the motion range (if supported) limiting the hand motion.
+設定限制手部運動的運動範圍（前提是支援）。
 
 .. rst-class:: classref-item-separator
 
@@ -275,12 +275,12 @@ Set the motion range (if supported) limiting the hand motion.
 
 Set the type of skeleton rig the :ref:`hand_skeleton<class_OpenXRHand_property_hand_skeleton>` is compliant with.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

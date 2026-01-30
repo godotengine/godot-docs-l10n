@@ -5,27 +5,27 @@
 PackedInt32Array
 ================
 
-A packed array of 32-bit integers.
+32 位整数紧缩数组。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An array specifically designed to hold 32-bit integer values. Packs data tightly, so it saves memory for large array sizes.
+专门设计用于存放 32 位整数值的数组。数据是紧密存放的，因此能够在数组较大时节省内存。
 
-\ **Note:** This type stores signed 32-bit integers, which means it can take values in the interval ``[-2^31, 2^31 - 1]``, i.e. ``[-2147483648, 2147483647]``. Exceeding those bounds will wrap around. In comparison, :ref:`int<class_int>` uses signed 64-bit integers which can hold much larger values. If you need to pack 64-bit integers tightly, see :ref:`PackedInt64Array<class_PackedInt64Array>`.
+\ **注意：**\ 该类型存储的是 32 位有符号整数，也就是说它可以取区间 ``[-2^31, 2^31 - 1]`` 内的值，即 ``[-2147483648, 2147483647]``\ 。超过界限时会从另一端绕回。相比之下，\ :ref:`int<class_int>` 使用带符号的 64 位整数，可以容纳更大的值。紧密存放 64 位整数见 :ref:`PackedInt64Array<class_PackedInt64Array>`\ 。
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **注意：**\ 紧缩数组始终通过引用传递。要获取可以独立于原始数组进行修改的数组副本，请使用 :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`\ 。内置属性和方法\ *并非*\ 如此，它们返回的是紧缩数组的副本，对其进行修改\ *不会*\ 影响原值。更新此类内置属性请修改返回的数组，然后将其重新赋值给该属性。
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用该 API 时会有显著不同，详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -96,8 +96,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+运算符
+------
 
 .. table::
    :widths: auto
@@ -118,8 +118,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_PackedInt32Array_constructor_PackedInt32Array:
 
@@ -127,7 +127,7 @@ Constructor Descriptions
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **PackedInt32Array**\ (\ ) :ref:`🔗<class_PackedInt32Array_constructor_PackedInt32Array>`
 
-Constructs an empty **PackedInt32Array**.
+构造空的 **PackedInt32Array**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ Constructs an empty **PackedInt32Array**.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **PackedInt32Array**\ (\ from\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 
-Constructs a **PackedInt32Array** as a copy of the given **PackedInt32Array**.
+构造给定 **PackedInt32Array** 的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Constructs a **PackedInt32Array** as a copy of the given **PackedInt32Array**.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **PackedInt32Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedInt32Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+构造新 **PackedInt32Array**\ 。你还可以传入通用 :ref:`Array<class_Array>` 进行转换。
 
 .. rst-class:: classref-section-separator
 
@@ -155,8 +155,8 @@ Constructs a new **PackedInt32Array**. Optionally, you can pass in a generic :re
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PackedInt32Array_method_append:
 
@@ -164,7 +164,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **append**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_append>`
 
-Appends an element at the end of the array (alias of :ref:`push_back()<class_PackedInt32Array_method_push_back>`).
+向数组末尾追加一个元素（\ :ref:`push_back()<class_PackedInt32Array_method_push_back>` 的别名）。
 
 .. rst-class:: classref-item-separator
 
@@ -176,7 +176,7 @@ Appends an element at the end of the array (alias of :ref:`push_back()<class_Pac
 
 |void| **append_array**\ (\ array\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_method_append_array>`
 
-Appends a **PackedInt32Array** at the end of this array.
+在该数组的末尾追加一个 **PackedInt32Array**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +188,9 @@ Appends a **PackedInt32Array** at the end of this array.
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`int<class_int>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedInt32Array_method_bsearch>`
 
-Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
+使用二进法查找已有值的索引（如果该值尚未存在于数组中，则为保持排序顺序的插入索引）。传递 ``before`` 说明符是可选的。如果该参数为 ``false``\ ，则返回的索引位于数组中该值的所有已有的条目之后。
 
-\ **Note:** Calling :ref:`bsearch()<class_PackedInt32Array_method_bsearch>` on an unsorted array results in unexpected behavior.
+\ **注意：**\ 在未排序的数组上调用 :ref:`bsearch()<class_PackedInt32Array_method_bsearch>` 会产生预料之外的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Finds the index of an existing value (or the insertion index that maintains sort
 
 |void| **clear**\ (\ ) :ref:`🔗<class_PackedInt32Array_method_clear>`
 
-Clears the array. This is equivalent to using :ref:`resize()<class_PackedInt32Array_method_resize>` with a size of ``0``.
+清空数组。相当于调用 :ref:`resize()<class_PackedInt32Array_method_resize>` 时指定大小为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Clears the array. This is equivalent to using :ref:`resize()<class_PackedInt32Ar
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt32Array_method_count>`
 
-Returns the number of times an element is in the array.
+返回元素在数组中出现的次数。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Returns the number of times an element is in the array.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **duplicate**\ (\ ) |const| :ref:`🔗<class_PackedInt32Array_method_duplicate>`
 
-Creates a copy of the array, and returns it.
+创建该数组的副本，并将该副本返回。
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ Creates a copy of the array, and returns it.
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedInt32Array_method_remove_at>` instead.
+在数组中移除首次出现的某个值并返回 ``true``\ 。如果数组中不存在该值，则不会发生任何事情，返回 ``false``\ 。要按照索引移除元素，请改用 :ref:`remove_at()<class_PackedInt32Array_method_remove_at>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Removes the first occurrence of a value from the array and returns ``true``. If 
 
 |void| **fill**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_fill>`
 
-Assigns the given value to all elements in the array. This can typically be used together with :ref:`resize()<class_PackedInt32Array_method_resize>` to create an array with a given size and initialized elements.
+将数组中的所有元素都设为给定的值。通常与 :ref:`resize()<class_PackedInt32Array_method_resize>` 一起使用，创建给定大小的数组并初始化元素。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Assigns the given value to all elements in the array. This can typically be used
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedInt32Array_method_find>`
 
-Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
+在数组中搜索值并返回其索引，如果未找到则返回 ``-1`` 。可选地，可以传递起始搜索索引。
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt32Array_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+如果该数组包含 ``value``\ ，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Returns ``true`` if the array contains ``value``.
 
 :ref:`int<class_int>` **insert**\ (\ at_index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_insert>`
 
-Inserts a new integer at a given position in the array. The position must be valid, or at the end of the array (``idx == size()``).
+在数组中的给定位置插入新的整数。位置必须有效，或者位于数组末尾（\ ``idx == size()``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Inserts a new integer at a given position in the array. The position must be val
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_PackedInt32Array_method_is_empty>`
 
-Returns ``true`` if the array is empty.
+该数组为空时，返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` if the array is empty.
 
 :ref:`bool<class_bool>` **push_back**\ (\ value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_push_back>`
 
-Appends a value to the array.
+将一个值添加到数组中。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Appends a value to the array.
 
 |void| **remove_at**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_remove_at>`
 
-Removes an element from the array by index.
+从数组中删除位于索引的元素。
 
 .. rst-class:: classref-item-separator
 
@@ -348,9 +348,9 @@ Removes an element from the array by index.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedInt32Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+设置数组的大小。如果数组增大，则预留数组末端的元素。如果数组缩小，则将数组截断到新的大小。调用一次 :ref:`resize()<class_PackedInt32Array_method_resize>` 然后赋值比逐个添加新元素要快。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedInt32Array_method_size>` to find the actual size of the array after resize.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失败时返回下列 :ref:`Error<enum_@GlobalScope_Error>` 常量：大小为负数则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ，分配失败则返回 :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>`\ 。请使用 :ref:`size()<class_PackedInt32Array_method_size>` 获取调整后的实际大小。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 |void| **reverse**\ (\ ) :ref:`🔗<class_PackedInt32Array_method_reverse>`
 
-Reverses the order of the elements in the array.
+将数组中的元素逆序排列。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Reverses the order of the elements in the array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedInt32Array_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+逆序搜索数组。还可以传递起始搜索位置索引。如果为负，则起始索引被视为相对于数组的结尾。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Searches the array in reverse order. Optionally, a start search index can be pas
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_set>`
 
-Changes the integer at the given index.
+更改给定索引处的整数。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Changes the integer at the given index.
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_PackedInt32Array_method_size>`
 
-Returns the number of elements in the array.
+返回数组中元素的个数。
 
 .. rst-class:: classref-item-separator
 
@@ -410,11 +410,11 @@ Returns the number of elements in the array.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedInt32Array_method_slice>`
 
-Returns the slice of the **PackedInt32Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedInt32Array**.
+返回该 **PackedInt32Array** 的切片，是从 ``begin``\ （含）到 ``end``\ （不含）的全新 **PackedInt32Array**\ 。
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+\ ``begin`` 和 ``end`` 的绝对值会按数组大小进行限制，所以 ``end`` 的默认值会切到数组大小为止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的简写）。
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+如果 ``begin`` 或 ``end`` 为负，则表示相对于数组的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的简写）。
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ If either ``begin`` or ``end`` are negative, they will be relative to the end of
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedInt32Array_method_sort>`
 
-Sorts the elements of the array in ascending order.
+将该数组中的元素按升序排列。
 
 .. rst-class:: classref-item-separator
 
@@ -438,9 +438,9 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedInt32Array_method_to_byte_array>`
 
-Returns a copy of the data converted to a :ref:`PackedByteArray<class_PackedByteArray>`, where each element has been encoded as 4 bytes.
+返回数据的副本，将其中的每个元素都编码为 4 个字节，放入 :ref:`PackedByteArray<class_PackedByteArray>` 中。
 
-The size of the new array will be ``int32_array.size() * 4``.
+新数组的大小为 ``int32_array.size() * 4``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -448,8 +448,8 @@ The size of the new array will be ``int32_array.size() * 4``.
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+运算符说明
+----------
 
 .. _class_PackedInt32Array_operator_neq_PackedInt32Array:
 
@@ -457,7 +457,7 @@ Operator Descriptions
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_operator_neq_PackedInt32Array>`
 
-Returns ``true`` if contents of the arrays differ.
+如果数组内容不同，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **operator +**\ (\ right\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_operator_sum_PackedInt32Array>`
 
-Returns a new **PackedInt32Array** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedInt32Array_method_append_array>` instead.
+返回新的 **PackedInt32Array**\ ，新数组的内容为此数组在末尾加上 ``right``\ 。为了提高性能，请考虑改用 :ref:`append_array()<class_PackedInt32Array_method_append_array>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +481,7 @@ Returns a new **PackedInt32Array** with contents of ``right`` added at the end o
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_operator_eq_PackedInt32Array>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal ints at the corresponding indices.
+如果两个数组的内容相同，即对应索引号的整数相等，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -493,16 +493,16 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`int<class_int>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_operator_idx_int>`
 
-Returns the :ref:`int<class_int>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+返回索引 ``index`` 处的 :ref:`int<class_int>`\ 。负数索引可以从末尾开始访问元素。使用超出数组范围的索引会导致出错。
 
-Note that :ref:`int<class_int>` type is 64-bit, unlike the values stored in the array.
+注意，\ :ref:`int<class_int>` 类型为 64 位，与该数组中所存储的值不同。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

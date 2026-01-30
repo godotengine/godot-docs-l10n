@@ -5,16 +5,16 @@
 SkeletonModification2DFABRIK
 ============================
 
-**Experimental:** This class may be changed or removed in future versions.
+**實驗性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A modification that uses FABRIK to manipulate a series of :ref:`Bone2D<class_Bone2D>` nodes to reach a target.
+使用 FABRIK 操縱一系列 :ref:`Bone2D<class_Bone2D>` 到達某個目標的修改器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This :ref:`SkeletonModification2D<class_SkeletonModification2D>` uses an algorithm called Forward And Backward Reaching Inverse Kinematics, or FABRIK, to rotate a bone chain so that it reaches a target.
 
@@ -28,8 +28,8 @@ To help control how the FABRIK joints move, a magnet vector can be passed, which
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -42,8 +42,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SkeletonModification2DFABRIK_property_fabrik_data_chain_length:
 
@@ -86,7 +86,7 @@ Property Descriptions
 - |void| **set_fabrik_data_chain_length**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_fabrik_data_chain_length**\ (\ )
 
-The number of FABRIK joints in the FABRIK modification.
+FABRIK 修改中 FABRIK 關節的數量。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ The number of FABRIK joints in the FABRIK modification.
 - |void| **set_target_node**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ )
 
-The NodePath to the node that is the target for the FABRIK modification. This node is what the FABRIK chain will attempt to rotate the bone chain to.
+FABRIK 修改器的目標節點的 NodePath。FABRIK 鏈會嘗試將骨骼鏈轉向這個節點。
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ The NodePath to the node that is the target for the FABRIK modification. This no
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SkeletonModification2DFABRIK_method_get_fabrik_joint_bone2d_node:
 
@@ -120,7 +120,7 @@ Method Descriptions
 
 :ref:`NodePath<class_NodePath>` **get_fabrik_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_bone2d_node>`
 
-Returns the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``joint_idx``.
+返回分配給位於 ``joint_idx`` 的 FABRIK 關節的 :ref:`Bone2D<class_Bone2D>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ Returns the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``j
 
 :ref:`int<class_int>` **get_fabrik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_bone_index>`
 
-Returns the index of the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``joint_idx``.
+返回分配給位於 ``joint_idx`` 的 FABRIK 關節的 :ref:`Bone2D<class_Bone2D>` 節點的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -144,7 +144,7 @@ Returns the index of the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK
 
 :ref:`Vector2<class_Vector2>` **get_fabrik_joint_magnet_position**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_magnet_position>`
 
-Returns the magnet position vector for the joint at ``joint_idx``.
+返回位於 ``joint_idx`` 的關節的磁吸位置向量。
 
 .. rst-class:: classref-item-separator
 
@@ -156,7 +156,7 @@ Returns the magnet position vector for the joint at ``joint_idx``.
 
 :ref:`bool<class_bool>` **get_fabrik_joint_use_target_rotation**\ (\ joint_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonModification2DFABRIK_method_get_fabrik_joint_use_target_rotation>`
 
-Returns whether the joint is using the target's rotation rather than allowing FABRIK to rotate the joint. This option only applies to the tip/final joint in the chain.
+返回關節是否正在使用目標的旋轉，而不是允許 FABRIK 旋轉關節。此選項僅適用於鏈中的末端/最終關節。
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ Returns whether the joint is using the target's rotation rather than allowing FA
 
 |void| **set_fabrik_joint_bone2d_node**\ (\ joint_idx\: :ref:`int<class_int>`, bone2d_nodepath\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_bone2d_node>`
 
-Sets the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``joint_idx``.
+設定分配給位於 ``joint_idx`` 的 FABRIK 關節的 :ref:`Bone2D<class_Bone2D>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Sets the :ref:`Bone2D<class_Bone2D>` node assigned to the FABRIK joint at ``join
 
 |void| **set_fabrik_joint_bone_index**\ (\ joint_idx\: :ref:`int<class_int>`, bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_bone_index>`
 
-Sets the bone index, ``bone_idx``, of the FABRIK joint at ``joint_idx``. When possible, this will also update the ``bone2d_node`` of the FABRIK joint based on data provided by the linked skeleton.
+設定位於 ``joint_idx`` 的 FABRIK 關節的骨骼索引 ``bone_idx``\ 。可能時，這也會根據連結骨架所提供的資料來更新 FABRIK 關節的 ``bone2d_node``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Sets the bone index, ``bone_idx``, of the FABRIK joint at ``joint_idx``. When po
 
 |void| **set_fabrik_joint_magnet_position**\ (\ joint_idx\: :ref:`int<class_int>`, magnet_position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_magnet_position>`
 
-Sets the magnet position vector for the joint at ``joint_idx``.
+設定位於 ``joint_idx`` 的關節的磁吸位置向量。
 
 .. rst-class:: classref-item-separator
 
@@ -204,16 +204,16 @@ Sets the magnet position vector for the joint at ``joint_idx``.
 
 |void| **set_fabrik_joint_use_target_rotation**\ (\ joint_idx\: :ref:`int<class_int>`, use_target_rotation\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2DFABRIK_method_set_fabrik_joint_use_target_rotation>`
 
-Sets whether the joint at ``joint_idx`` will use the target node's rotation rather than letting FABRIK rotate the node.
+設定位於 ``joint_idx`` 的關節是否正在使用目標節點的旋轉，而不是讓 FABRIK 旋轉關節。
 
-\ **Note:** This option only works for the tip/final joint in the chain. For all other nodes, this option will be ignored.
+\ **注意：**\ 這個選項僅適用於鏈中的末端/最終關節。對於所有其他節點，這個選項將被忽略。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

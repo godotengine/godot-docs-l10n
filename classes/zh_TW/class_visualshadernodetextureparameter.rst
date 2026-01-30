@@ -5,23 +5,23 @@
 VisualShaderNodeTextureParameter
 ================================
 
-**Inherits:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisualShaderNodeCubemapParameter<class_VisualShaderNodeCubemapParameter>`, :ref:`VisualShaderNodeTexture2DArrayParameter<class_VisualShaderNodeTexture2DArrayParameter>`, :ref:`VisualShaderNodeTexture2DParameter<class_VisualShaderNodeTexture2DParameter>`, :ref:`VisualShaderNodeTexture3DParameter<class_VisualShaderNodeTexture3DParameter>`, :ref:`VisualShaderNodeTextureParameterTriplanar<class_VisualShaderNodeTextureParameterTriplanar>`
+**被繼承：** :ref:`VisualShaderNodeCubemapParameter<class_VisualShaderNodeCubemapParameter>`, :ref:`VisualShaderNodeTexture2DArrayParameter<class_VisualShaderNodeTexture2DArrayParameter>`, :ref:`VisualShaderNodeTexture2DParameter<class_VisualShaderNodeTexture2DParameter>`, :ref:`VisualShaderNodeTexture3DParameter<class_VisualShaderNodeTexture3DParameter>`, :ref:`VisualShaderNodeTextureParameterTriplanar<class_VisualShaderNodeTextureParameterTriplanar>`
 
-Performs a uniform texture lookup within the visual shader graph.
+在視覺化著色器圖中執行 uniform 的紋理搜尋。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Performs a lookup operation on the texture provided as a uniform for the shader.
+對作為 uniform 著色器提供的紋理進行搜尋操作。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_VisualShaderNodeTextureParameter_TextureType:
 
@@ -59,7 +59,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_TextureTy
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_DATA** = ``0``
 
-No hints are added to the uniform declaration.
+在uniform宣告中未新增提示。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_COLOR:
 
@@ -75,7 +75,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_NORMAL_MAP** = ``2``
 
-Adds ``hint_normal`` as hint to the uniform declaration, which internally converts the texture for proper usage as normal map.
+將 ``hint_normal`` 作為提示新增到 uniform 宣告中，該宣告在內部將紋理轉換為法線貼圖。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_ANISOTROPY:
 
@@ -83,7 +83,7 @@ Adds ``hint_normal`` as hint to the uniform declaration, which internally conver
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_ANISOTROPY** = ``3``
 
-Adds ``hint_anisotropy`` as hint to the uniform declaration to use for a flowmap.
+向該 uniform 宣告新增 ``hint_anisotropy`` 提示，用於流向圖。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_MAX:
 
@@ -91,7 +91,7 @@ Adds ``hint_anisotropy`` as hint to the uniform declaration to use for a flowmap
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_MAX** = ``4``
 
-Represents the size of the :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` enum.
+代表 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ enum **ColorDefault**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_ColorDef
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_WHITE** = ``0``
 
-Defaults to fully opaque white color.
+預設為完全不透明的白色。
 
 .. _class_VisualShaderNodeTextureParameter_constant_COLOR_DEFAULT_BLACK:
 
@@ -117,7 +117,7 @@ Defaults to fully opaque white color.
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_BLACK** = ``1``
 
-Defaults to fully opaque black color.
+預設為完全不透明的黑色。
 
 .. _class_VisualShaderNodeTextureParameter_constant_COLOR_DEFAULT_TRANSPARENT:
 
@@ -125,7 +125,7 @@ Defaults to fully opaque black color.
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_TRANSPARENT** = ``2``
 
-Defaults to fully transparent black color.
+預設為完全透明的黑色。
 
 .. _class_VisualShaderNodeTextureParameter_constant_COLOR_DEFAULT_MAX:
 
@@ -133,7 +133,7 @@ Defaults to fully transparent black color.
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_MAX** = ``3``
 
-Represents the size of the :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` enum.
+代表 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_DEFAULT** = ``0``
 
-Sample the texture using the filter determined by the node this shader is attached to.
+使用由該著色器所附加到的節點決定的篩檢程式對紋理進行取樣。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST:
 
@@ -159,7 +159,7 @@ Sample the texture using the filter determined by the node this shader is attach
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理僅取最鄰近像素，近看呈現馬賽克，遠處因未取樣 mipmap 而顯得顆粒。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR:
 
@@ -167,7 +167,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理在最鄰近 4 像素間插值，近看平滑，遠處因未取樣 mipmap 仍顆粒。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP:
 
@@ -215,7 +215,7 @@ The texture filter blends between the nearest 4 pixels and blends between 2 mipm
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_MAX** = ``7``
 
-Represents the size of the :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` enum.
+代表 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ enum **TextureRepeat**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_DEFAULT** = ``0``
 
-Sample the texture using the repeat mode determined by the node this shader is attached to.
+使用由該著色器所附加到的節點決定的重複模式對該紋理進行取樣。
 
 .. _class_VisualShaderNodeTextureParameter_constant_REPEAT_ENABLED:
 
@@ -241,7 +241,7 @@ Sample the texture using the repeat mode determined by the node this shader is a
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_ENABLED** = ``1``
 
-Texture will repeat normally.
+紋理將正常重複。
 
 .. _class_VisualShaderNodeTextureParameter_constant_REPEAT_DISABLED:
 
@@ -249,7 +249,7 @@ Texture will repeat normally.
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_DISABLED** = ``2``
 
-Texture will not repeat.
+紋理不會重複。
 
 .. _class_VisualShaderNodeTextureParameter_constant_REPEAT_MAX:
 
@@ -257,7 +257,7 @@ Texture will not repeat.
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_MAX** = ``3``
 
-Represents the size of the :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` enum.
+代表 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ enum **TextureSource**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_NONE** = ``0``
 
-The texture source is not specified in the shader.
+著色器中未指定紋理源。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_SCREEN:
 
@@ -283,7 +283,7 @@ The texture source is not specified in the shader.
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_SCREEN** = ``1``
 
-The texture source is the screen texture which captures all opaque objects drawn this frame.
+紋理源為螢幕紋理，捕獲了本影格中繪製的所有不透明物件。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_DEPTH:
 
@@ -291,7 +291,7 @@ The texture source is the screen texture which captures all opaque objects drawn
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_DEPTH** = ``2``
 
-The texture source is the depth texture from the depth prepass.
+紋理源為深度預處理階段的深度紋理。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_NORMAL_ROUGHNESS:
 
@@ -299,7 +299,7 @@ The texture source is the depth texture from the depth prepass.
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_NORMAL_ROUGHNESS** = ``3``
 
-The texture source is the normal-roughness buffer from the depth prepass.
+紋理源為深度預處理階段的法線粗糙度緩衝區。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_MAX:
 
@@ -307,7 +307,7 @@ The texture source is the normal-roughness buffer from the depth prepass.
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_MAX** = ``4``
 
-Represents the size of the :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` enum.
+代表 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -315,8 +315,8 @@ Represents the size of the :ref:`TextureSource<enum_VisualShaderNodeTextureParam
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VisualShaderNodeTextureParameter_property_color_default:
 
@@ -329,7 +329,7 @@ Property Descriptions
 - |void| **set_color_default**\ (\ value\: :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>`\ )
 - :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **get_color_default**\ (\ )
 
-Sets the default color if no texture is assigned to the uniform.
+如果沒有給 uniform 分配紋理，則設定預設顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -399,12 +399,12 @@ Sets the texture source mode. Used for reading from the screen, depth, or normal
 
 Defines the type of data provided by the source texture.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

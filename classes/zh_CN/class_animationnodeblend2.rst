@@ -5,36 +5,36 @@
 AnimationNodeBlend2
 ===================
 
-**Inherits:** :ref:`AnimationNodeSync<class_AnimationNodeSync>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AnimationNodeSync<class_AnimationNodeSync>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Blends two animations linearly inside of an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations linearly based on the amount value.
-
-In general, the blend value should be in the ``[0.0, 1.0]`` range. Values outside of this range can blend amplified or inverted animations, however, :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` works better for this purpose.
+在 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 中将两个动画进行线性混合。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+添加到 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的资源。根据取值将两个动画进行线性混合。
 
-- `3D Platformer Demo <https://godotengine.org/asset-library/asset/2748>`__
+一般而言，混合值应该在 ``[0.0, 1.0]`` 的范围内。超出该范围的值可以混合放大或翻转后的动画，然而，这种场合 :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` 的效果更好。
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+.. rst-class:: classref-introduction-group
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+教程
+----
+
+- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
+
+- `3D 平台跳跃演示 <https://godotengine.org/asset-library/asset/2748>`__
+
+- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

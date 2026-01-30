@@ -5,14 +5,14 @@
 UDPServer
 =========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Helper class to implement a UDP server.
+用於實作 UDP 伺服器的輔助類。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A simple server that opens a UDP socket and returns connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` upon receiving new packets. See also :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`.
 
@@ -146,8 +146,8 @@ Below a small example of how it can be used:
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -158,8 +158,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -186,8 +186,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_UDPServer_property_max_pending_connections:
 
@@ -200,7 +200,7 @@ Property Descriptions
 - |void| **set_max_pending_connections**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_pending_connections**\ (\ )
 
-Define the maximum number of pending connections, during :ref:`poll()<class_UDPServer_method_poll>`, any new pending connection exceeding that value will be automatically dropped. Setting this value to ``0`` effectively prevents any new pending connection to be accepted (e.g. when all your players have connected).
+定義最大的待定連接數，在\ :ref:`poll()<class_UDPServer_method_poll>`\ 期間，任何超過該值的新待定連接將被自動放棄。把這個值設定為\ ``0``\ 可以有效地防止任何新的待定連接被接受，例如，當你的所有玩家都連接時。
 
 .. rst-class:: classref-section-separator
 
@@ -208,8 +208,8 @@ Define the maximum number of pending connections, during :ref:`poll()<class_UDPS
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_UDPServer_method_get_local_port:
 
@@ -217,7 +217,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_UDPServer_method_get_local_port>`
 
-Returns the local port this server is listening to.
+返回該伺服器正在監聽的本地埠。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Returns the local port this server is listening to.
 
 :ref:`bool<class_bool>` **is_connection_available**\ (\ ) |const| :ref:`🔗<class_UDPServer_method_is_connection_available>`
 
-Returns ``true`` if a packet with a new address/port combination was received on the socket.
+如果在通訊端中收到一個具有新位址及埠組合的封包，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Returns ``true`` if a packet with a new address/port combination was received on
 
 :ref:`bool<class_bool>` **is_listening**\ (\ ) |const| :ref:`🔗<class_UDPServer_method_is_listening>`
 
-Returns ``true`` if the socket is open and listening on a port.
+如果通訊端是打開的，並且在監聽埠，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Returns ``true`` if the socket is open and listening on a port.
 
 :ref:`Error<enum_@GlobalScope_Error>` **listen**\ (\ port\: :ref:`int<class_int>`, bind_address\: :ref:`String<class_String>` = "*"\ ) :ref:`🔗<class_UDPServer_method_listen>`
 
-Starts the server by opening a UDP socket listening on the given ``port``. You can optionally specify a ``bind_address`` to only listen for packets sent to that address. See also :ref:`PacketPeerUDP.bind()<class_PacketPeerUDP_method_bind>`.
+啟動伺服器，打開監聽給定埠 ``port`` 的 UDP 通訊端。還可以指定 ``bind_address``\ ，僅監聽發送至該位址的封包。另見 :ref:`PacketPeerUDP.bind()<class_PacketPeerUDP_method_bind>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ Call this method at regular intervals (e.g. inside :ref:`Node._process()<class_N
 
 |void| **stop**\ (\ ) :ref:`🔗<class_UDPServer_method_stop>`
 
-Stops the server, closing the UDP socket if open. Will close all connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` accepted via :ref:`take_connection()<class_UDPServer_method_take_connection>` (remote peers will not be notified).
+停止伺服器，如果 UDP 通訊端處於打開狀態，就關閉它。將關閉所有通過 :ref:`take_connection()<class_UDPServer_method_take_connection>` 接受連接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ （不會通知遠端對等體）。
 
 .. rst-class:: classref-item-separator
 
@@ -289,14 +289,14 @@ Stops the server, closing the UDP socket if open. Will close all connected :ref:
 
 :ref:`PacketPeerUDP<class_PacketPeerUDP>` **take_connection**\ (\ ) :ref:`🔗<class_UDPServer_method_take_connection>`
 
-Returns the first pending connection (connected to the appropriate address/port). Will return ``null`` if no new connection is available. See also :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>`, :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`.
+返回第一個掛起的連接（連接到適當的位址及埠）。如果沒有新的連接可用，將返回 ``null``\ 。另請參閱 :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>`\ 、\ :ref:`PacketPeerUDP.connect_to_host()<class_PacketPeerUDP_method_connect_to_host>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

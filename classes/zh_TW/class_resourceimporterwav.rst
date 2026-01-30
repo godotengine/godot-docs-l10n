@@ -5,14 +5,14 @@
 ResourceImporterWAV
 ===================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports a WAV audio file for playback.
+匯入 WAV 音訊檔案播放。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end devices.
 
@@ -20,15 +20,15 @@ By default, Godot imports WAV files using the lossy Quite OK Audio compression. 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Importing audio samples <../tutorials/assets_pipeline/importing_audio_samples>`
+- :doc:`匯入音訊樣本 <../tutorials/assets_pipeline/importing_audio_samples>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ResourceImporterWAV_property_compress/mode:
 
@@ -136,7 +136,7 @@ Controls how audio should loop.
 
 :ref:`bool<class_bool>` **edit/normalize** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_edit/normalize>`
 
-If ``true``, normalize the audio volume so that its peak volume is equal to 0 dB. When enabled, normalization will make audio sound louder depending on its original peak volume.
+如果\ ``true``\ ，則標準化音訊音量，使其峰值音量等於0 dB。啟用後，標準化將使音訊聽起來更響亮，取決於其原始峰值體積。
 
 .. rst-class:: classref-item-separator
 
@@ -148,7 +148,7 @@ If ``true``, normalize the audio volume so that its peak volume is equal to 0 dB
 
 :ref:`bool<class_bool>` **edit/trim** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_edit/trim>`
 
-If ``true``, automatically trim the beginning and end of the audio if it's lower than -50 dB after normalization (see :ref:`edit/normalize<class_ResourceImporterWAV_property_edit/normalize>`). This prevents having files with silence at the beginning or end, which increases their size unnecessarily and adds latency to the moment they are played back. A fade-in/fade-out period of 500 samples is also used during trimming to avoid audible pops.
+如果\ ``true``\ ，如果標準化後音訊低於-50 dB，則自動修剪音訊的開頭和結尾（請參閱\ :ref:`edit/normalize<class_ResourceImporterWAV_property_edit/normalize>`\ ）。這防止檔案在開頭或結尾處靜音，這不必要地增加了檔案的大小，並增加了播放時的延遲。在修剪過程中還使用了 500 個樣本的淡入/淡出週期，以避免聽到爆音。
 
 .. rst-class:: classref-item-separator
 
@@ -160,9 +160,9 @@ If ``true``, automatically trim the beginning and end of the audio if it's lower
 
 :ref:`bool<class_bool>` **force/8_bit** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/8_bit>`
 
-If ``true``, forces the imported audio to use 8-bit quantization if the source file is 16-bit or higher.
+如果 ``true``\ ，如果來源檔案為 16 位元或更高，則強制匯入的音訊使用 8 位元量化。
 
-Enabling this is generally not recommended, as 8-bit quantization decreases audio quality significantly. If you need smaller file sizes, consider using Ogg Vorbis or MP3 audio instead.
+通常不建議啟用此功能，因為 8 位元量化會顯著降低音訊品質。如果您需要較小的檔案大小，請考慮使用 Ogg Vorbis 或 MP3 音訊。
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ Enabling this is generally not recommended, as 8-bit quantization decreases audi
 
 :ref:`bool<class_bool>` **force/max_rate** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/max_rate>`
 
-If set to a value greater than ``0``, forces the audio's sample rate to be reduced to a value lower than or equal to the value specified in :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>`.
+如果設定為大於 ``0`` 的值，則強制音訊的取樣率降低到低於或等於 :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>` 中指定的值。
 
-This can decrease file size noticeably on certain sounds, without impacting quality depending on the actual sound's contents. See `Best practices <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__ for more information.
+這可以顯著減小某些聲音的檔案大小，而不會影響質量，具體取決於實際聲音的內容。有關詳細信息，請參閱\ `最佳實踐 <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ This can decrease file size noticeably on certain sounds, without impacting qual
 
 :ref:`float<class_float>` **force/max_rate_hz** = ``44100`` :ref:`🔗<class_ResourceImporterWAV_property_force/max_rate_hz>`
 
-The frequency to limit the imported audio sample to (in Hz). Only effective if :ref:`force/max_rate<class_ResourceImporterWAV_property_force/max_rate>` is ``true``.
+代表粒子軌跡的時間量（以秒為單位）。僅當 :ref:`force/max_rate<class_ResourceImporterWAV_property_force/max_rate>` 為 ``true`` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -200,14 +200,14 @@ The frequency to limit the imported audio sample to (in Hz). Only effective if :
 
 :ref:`bool<class_bool>` **force/mono** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/mono>`
 
-If ``true``, forces the imported audio to be mono if the source file is stereo. This decreases the file size by 50% by merging the two channels into one.
+如果\ ``true``\ ，如果來源檔案是立體聲，則強制匯入的音訊為單聲道。透過將兩個通道合併為一個通道，可以將檔案大小減少50% 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

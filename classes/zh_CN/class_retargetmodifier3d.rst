@@ -5,25 +5,25 @@
 RetargetModifier3D
 ==================
 
-**Inherits:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A modifier to transfer parent skeleton poses (or global poses) to child skeletons in model space with different rests.
+修改器，能够将父骨架的姿势（或全局姿势）转移给在模型空间中具有不同放松姿势的子骨架。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Retrieves the pose (or global pose) relative to the parent Skeleton's rest in model space and transfers it to the child Skeleton.
+获取模型空间中相对于父骨架放松姿势的姿势（或全局姿势）并将其转移给子 Skeleton。
 
-This modifier rewrites the pose of the child skeleton directly in the parent skeleton's update process. This means that it overwrites the mapped bone pose set in the normal process on the target skeleton. If you want to set the target skeleton bone pose after retargeting, you will need to add a :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` child to the target skeleton and thereby modify the pose.
+修改器会在父骨架的更新过程中直接重写子骨架的姿势。这意味着它会覆盖目标骨架上正常处理过程中设置的映射骨骼姿势。如果你想要在重新定向后设置目标骨架的骨骼姿势，则需要向目标骨架添加一个 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 子节点才能修改姿势。
 
-\ **Note:** When the :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` is enabled, even if it is an unmapped bone, it can cause visual problems because the global pose is applied ignoring the parent bone's pose **if it has mapped bone children**. See also :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>`.
+\ **注意：**\ 启用 :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` 时，即便是未映射的骨骼也可能导致视觉问题，因为\ **如果父骨骼存在映射的子骨骼**\ ，那么应用全局姿势时会忽略父骨骼的姿势。另见 :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_RetargetModifier3D_TransformFlag:
 
@@ -79,7 +79,7 @@ flags **TransformFlag**: :ref:`🔗<enum_RetargetModifier3D_TransformFlag>`
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_POSITION** = ``1``
 
-If set, allows to retarget the position.
+如果设置，则允许重定向位置。
 
 .. _class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION:
 
@@ -87,7 +87,7 @@ If set, allows to retarget the position.
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_ROTATION** = ``2``
 
-If set, allows to retarget the rotation.
+如果设置，则允许重定向旋转。
 
 .. _class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE:
 
@@ -95,7 +95,7 @@ If set, allows to retarget the rotation.
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_SCALE** = ``4``
 
-If set, allows to retarget the scale.
+如果设置，则允许重定向缩放。
 
 .. _class_RetargetModifier3D_constant_TRANSFORM_FLAG_ALL:
 
@@ -103,7 +103,7 @@ If set, allows to retarget the scale.
 
 :ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>` **TRANSFORM_FLAG_ALL** = ``7``
 
-If set, allows to retarget the position/rotation/scale.
+如果设置，则允许重定向位置、旋转、位置。
 
 .. rst-class:: classref-section-separator
 
@@ -111,8 +111,8 @@ If set, allows to retarget the position/rotation/scale.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RetargetModifier3D_property_enable:
 
@@ -125,7 +125,7 @@ Property Descriptions
 - |void| **set_enable_flags**\ (\ value\: |bitfield|\[:ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>`\]\ )
 - |bitfield|\[:ref:`TransformFlag<enum_RetargetModifier3D_TransformFlag>`\] **get_enable_flags**\ (\ )
 
-Flags to control the process of the transform elements individually when :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` is disabled.
+禁用 :ref:`use_global_pose<class_RetargetModifier3D_property_use_global_pose>` 时，用于单独控制变换元素过程的标志。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ Flags to control the process of the transform elements individually when :ref:`u
 - |void| **set_profile**\ (\ value\: :ref:`SkeletonProfile<class_SkeletonProfile>`\ )
 - :ref:`SkeletonProfile<class_SkeletonProfile>` **get_profile**\ (\ )
 
-:ref:`SkeletonProfile<class_SkeletonProfile>` for retargeting bones with names matching the bone list.
+用于重定向与骨骼列表中名称匹配骨骼的 :ref:`SkeletonProfile<class_SkeletonProfile>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -159,15 +159,15 @@ Flags to control the process of the transform elements individually when :ref:`u
 - |void| **set_use_global_pose**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_global_pose**\ (\ )
 
-If ``false``, in case the target skeleton has fewer bones than the source skeleton, the source bone parent's transform will be ignored.
+如果为 ``false``\ ，则在目标骨架的骨骼数量少于源骨架时，源骨架父级的变换将被忽略。
 
-Instead, it is possible to retarget between models with different body shapes, and position, rotation, and scale can be retargeted separately.
+这样可以在不同体型的模型之间进行重定向，位置、旋转和缩放都可以单独重定向。
 
-If ``true``, retargeting is performed taking into account global pose.
+如果为 ``true``\ ，则在重定向时会考虑全局姿势。
 
-In case the target skeleton has fewer bones than the source skeleton, the source bone parent's transform is taken into account. However, bone length between skeletons must match exactly, if not, the bones will be forced to expand or shrink.
+在目标骨架的骨骼数量少于源骨架的情况下，会考虑源骨架父级的变换。然而，骨架之间的骨骼长度必须完全匹配，否则骨骼将被强制扩展或缩小。
 
-This is useful for using dummy bone with length ``0`` to match postures when retargeting between models with different number of bones.
+适用于在骨骼数量不同的模型之间进行重定向时使用长度为 ``0`` 的虚设骨骼来匹配姿势。
 
 .. rst-class:: classref-section-separator
 
@@ -175,8 +175,8 @@ This is useful for using dummy bone with length ``0`` to match postures when ret
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RetargetModifier3D_method_is_position_enabled:
 
@@ -184,7 +184,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **is_position_enabled**\ (\ ) |const| :ref:`🔗<class_RetargetModifier3D_method_is_position_enabled>`
 
-Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>`.
+如果 :ref:`enable<class_RetargetModifier3D_property_enable>` 中有 :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>` 则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -196,7 +196,7 @@ Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has 
 
 :ref:`bool<class_bool>` **is_rotation_enabled**\ (\ ) |const| :ref:`🔗<class_RetargetModifier3D_method_is_rotation_enabled>`
 
-Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>`.
+如果 :ref:`enable<class_RetargetModifier3D_property_enable>` 中有 :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>` 则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has 
 
 :ref:`bool<class_bool>` **is_scale_enabled**\ (\ ) |const| :ref:`🔗<class_RetargetModifier3D_method_is_scale_enabled>`
 
-Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>`.
+如果 :ref:`enable<class_RetargetModifier3D_property_enable>` 中有 :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>` 则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -220,7 +220,7 @@ Returns ``true`` if :ref:`enable<class_RetargetModifier3D_property_enable>` has 
 
 |void| **set_position_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RetargetModifier3D_method_set_position_enabled>`
 
-Sets :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>` into :ref:`enable<class_RetargetModifier3D_property_enable>`.
+在 :ref:`enable<class_RetargetModifier3D_property_enable>` 中设置 :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_POSITION>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +232,7 @@ Sets :ref:`TRANSFORM_FLAG_POSITION<class_RetargetModifier3D_constant_TRANSFORM_F
 
 |void| **set_rotation_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RetargetModifier3D_method_set_rotation_enabled>`
 
-Sets :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>` into :ref:`enable<class_RetargetModifier3D_property_enable>`.
+在 :ref:`enable<class_RetargetModifier3D_property_enable>` 中设置 :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_FLAG_ROTATION>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -244,14 +244,14 @@ Sets :ref:`TRANSFORM_FLAG_ROTATION<class_RetargetModifier3D_constant_TRANSFORM_F
 
 |void| **set_scale_enabled**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RetargetModifier3D_method_set_scale_enabled>`
 
-Sets :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>` into :ref:`enable<class_RetargetModifier3D_property_enable>`.
+在 :ref:`enable<class_RetargetModifier3D_property_enable>` 中设置 :ref:`TRANSFORM_FLAG_SCALE<class_RetargetModifier3D_constant_TRANSFORM_FLAG_SCALE>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

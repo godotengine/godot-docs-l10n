@@ -5,23 +5,23 @@
 FileSystemDock
 ==============
 
-**Inherits:** :ref:`EditorDock<class_EditorDock>` **<** :ref:`MarginContainer<class_MarginContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`EditorDock<class_EditorDock>` **<** :ref:`MarginContainer<class_MarginContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot editor's dock for managing files in the project.
+Godot 编辑器中用于管理项目文件的停靠面板。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class is available only in :ref:`EditorPlugin<class_EditorPlugin>`\ s and can't be instantiated. You can access it using :ref:`EditorInterface.get_file_system_dock()<class_EditorInterface_method_get_file_system_dock>`.
+这个类仅在 :ref:`EditorPlugin<class_EditorPlugin>` 中可用，无法实例化。可以使用 :ref:`EditorInterface.get_file_system_dock()<class_EditorInterface_method_get_file_system_dock>` 访问。
 
-While **FileSystemDock** doesn't expose any methods for file manipulation, it can listen for various file-related signals.
+虽然 **FileSystemDock** 没有暴露任何操作文件的方法，但是你可以监听各种与文件相关的信号。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_FileSystemDock_signal_display_mode_changed:
 
@@ -49,7 +49,7 @@ Signals
 
 **display_mode_changed**\ (\ ) :ref:`🔗<class_FileSystemDock_signal_display_mode_changed>`
 
-Emitted when the user switches file display mode or split mode.
+用户切换文件显示模式或分隔模式时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Emitted when the user switches file display mode or split mode.
 
 **file_removed**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileSystemDock_signal_file_removed>`
 
-Emitted when the given ``file`` was removed.
+给定的文件 ``file`` 被移除时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Emitted when the given ``file`` was removed.
 
 **files_moved**\ (\ old_file\: :ref:`String<class_String>`, new_file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileSystemDock_signal_files_moved>`
 
-Emitted when a file is moved from ``old_file`` path to ``new_file`` path.
+文件从 ``old_file`` 路径移动到 ``new_file`` 路径时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ Emitted when a file is moved from ``old_file`` path to ``new_file`` path.
 
 **folder_color_changed**\ (\ ) :ref:`🔗<class_FileSystemDock_signal_folder_color_changed>`
 
-Emitted when folders change color.
+当目录改变颜色时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ Emitted when folders change color.
 
 **folder_moved**\ (\ old_folder\: :ref:`String<class_String>`, new_folder\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileSystemDock_signal_folder_moved>`
 
-Emitted when a folder is moved from ``old_folder`` path to ``new_folder`` path.
+文件夹从 ``old_folder`` 路径移动到 ``new_folder`` 路径时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ Emitted when a folder is moved from ``old_folder`` path to ``new_folder`` path.
 
 **folder_removed**\ (\ folder\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileSystemDock_signal_folder_removed>`
 
-Emitted when the given ``folder`` was removed.
+给定的文件夹 ``folder`` 被移除时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Emitted when the given ``folder`` was removed.
 
 **inherit**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileSystemDock_signal_inherit>`
 
-Emitted when a new scene is created that inherits the scene at ``file`` path.
+创建新场景，且该场景继承自位于 ``file`` 路径的场景时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ Emitted when a new scene is created that inherits the scene at ``file`` path.
 
 **instantiate**\ (\ files\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_FileSystemDock_signal_instantiate>`
 
-Emitted when the given scenes are being instantiated in the editor.
+在编辑器中实例化给定场景时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Emitted when the given scenes are being instantiated in the editor.
 
 **resource_removed**\ (\ resource\: :ref:`Resource<class_Resource>`\ ) :ref:`🔗<class_FileSystemDock_signal_resource_removed>`
 
-Emitted when an external ``resource`` had its file removed.
+外部资源 ``resource`` 的对应文件被移除时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -165,8 +165,8 @@ Emitted when the selection changes. Use :ref:`EditorInterface.get_selected_paths
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FileSystemDock_method_add_resource_tooltip_plugin:
 
@@ -174,7 +174,7 @@ Method Descriptions
 
 |void| **add_resource_tooltip_plugin**\ (\ plugin\: :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`\ ) :ref:`🔗<class_FileSystemDock_method_add_resource_tooltip_plugin>`
 
-Registers a new :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`.
+注册一个新的 :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Registers a new :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlu
 
 |void| **navigate_to_path**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_FileSystemDock_method_navigate_to_path>`
 
-Sets the given ``path`` as currently selected, ensuring that the selected file/directory is visible.
+将给定的 ``path`` 设置为当前选定的路径，能够确保选中的文件/目录可见。
 
 .. rst-class:: classref-item-separator
 
@@ -198,14 +198,14 @@ Sets the given ``path`` as currently selected, ensuring that the selected file/d
 
 |void| **remove_resource_tooltip_plugin**\ (\ plugin\: :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`\ ) :ref:`🔗<class_FileSystemDock_method_remove_resource_tooltip_plugin>`
 
-Removes an :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`. Fails if the plugin wasn't previously added.
+移除一个 :ref:`EditorResourceTooltipPlugin<class_EditorResourceTooltipPlugin>`\ 。如果该插件尚未添加，则失败。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

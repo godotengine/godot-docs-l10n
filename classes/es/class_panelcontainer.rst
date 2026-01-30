@@ -9,7 +9,7 @@ PanelContainer
 
 **Heredado por:** :ref:`OpenXRBindingModifierEditor<class_OpenXRBindingModifierEditor>`, :ref:`ScriptEditor<class_ScriptEditor>`
 
-A container that keeps its child controls within the area of a :ref:`StyleBox<class_StyleBox>`.
+Un container que mantiene sus controles hijos dentro del área de un :ref:`StyleBox<class_StyleBox>`.
 
 .. rst-class:: classref-introduction-group
 

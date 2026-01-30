@@ -5,32 +5,32 @@
 VideoStream
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VideoStreamTheora<class_VideoStreamTheora>`
+**被繼承：** :ref:`VideoStreamTheora<class_VideoStreamTheora>`
 
-Base resource for video streams.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Base resource type for all video streams. Classes that derive from **VideoStream** can all be used as resource types to play back videos in :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`.
+影片流的基礎資源。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Playing videos <../tutorials/animation/playing_videos>`
+所有影片流的基礎資源型別。衍生自 **VideoStream** 的類都可以用作在 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 中播放影片的資源型別。
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`播放影片 <../tutorials/animation/playing_videos>`
+
+- :doc:`執行時檔案載入與儲存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_VideoStream_property_file:
 
@@ -71,9 +71,9 @@ Property Descriptions
 - |void| **set_file**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_file**\ (\ )
 
-The video file path or URI that this **VideoStream** resource handles.
+該 **VideoStream** 資源處理的影片檔路徑或 URI。
 
-For :ref:`VideoStreamTheora<class_VideoStreamTheora>`, this filename should be an Ogg Theora video file with the ``.ogv`` extension.
+對於 :ref:`VideoStreamTheora<class_VideoStreamTheora>`\ ，這個檔案名應該是 Ogg Theora 影片檔，副檔名為 ``.ogv``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -81,8 +81,8 @@ For :ref:`VideoStreamTheora<class_VideoStreamTheora>`, this filename should be a
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_VideoStream_private_method__instantiate_playback:
 
@@ -90,14 +90,14 @@ Method Descriptions
 
 :ref:`VideoStreamPlayback<class_VideoStreamPlayback>` **_instantiate_playback**\ (\ ) |virtual| |required| :ref:`🔗<class_VideoStream_private_method__instantiate_playback>`
 
-Called when the video starts playing, to initialize and return a subclass of :ref:`VideoStreamPlayback<class_VideoStreamPlayback>`.
+影片開始播放時呼叫，用於初始化並返回 :ref:`VideoStreamPlayback<class_VideoStreamPlayback>` 的子類別。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

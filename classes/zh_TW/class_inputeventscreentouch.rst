@@ -5,28 +5,28 @@
 InputEventScreenTouch
 =====================
 
-**Inherits:** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a screen touch event.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Stores information about multi-touch press/release input events. Supports touch press, touch release and :ref:`index<class_InputEventScreenTouch_property_index>` for multi-touch count and order.
+代表螢幕觸摸事件。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using InputEvent <../tutorials/inputs/inputevent>`
+儲存多點觸摸的按壓/釋放資訊。支援觸摸按壓、觸摸釋放以及用於多點觸摸計數和定序的 :ref:`index<class_InputEventScreenTouch_property_index>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_InputEventScreenTouch_property_canceled:
 
@@ -63,7 +63,7 @@ Property Descriptions
 - |void| **set_canceled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_canceled**\ (\ )
 
-If ``true``, the touch event has been canceled.
+如果為 ``true``\ ，則觸摸事件被取消。
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ If ``true``, the touch event has been canceled.
 - |void| **set_double_tap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_double_tap**\ (\ )
 
-If ``true``, the touch's state is a double tap.
+如果為 ``true``\ ，則觸摸狀態為按兩下。
 
 .. rst-class:: classref-item-separator
 
@@ -97,7 +97,7 @@ If ``true``, the touch's state is a double tap.
 - |void| **set_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_index**\ (\ )
 
-The touch index in the case of a multi-touch event. One index = one finger.
+在多點觸摸事件中的觸摸指數。一個索引 = 一個手指。
 
 .. rst-class:: classref-item-separator
 
@@ -131,14 +131,14 @@ The touch position in the viewport the node is in, using the coordinate system o
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-If ``true``, the touch's state is pressed. If ``false``, the touch's state is released.
+如果為 ``true``\ ，觸摸的狀態為按下。如果為 ``false``\ ，觸摸的狀態被釋放。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

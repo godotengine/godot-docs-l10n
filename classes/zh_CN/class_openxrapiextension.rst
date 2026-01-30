@@ -5,42 +5,42 @@
 OpenXRAPIExtension
 ==================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Makes the OpenXR API available for GDExtension.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**OpenXRAPIExtension** makes OpenXR available for GDExtension. It provides the OpenXR API to GDExtension through the :ref:`get_instance_proc_addr()<class_OpenXRAPIExtension_method_get_instance_proc_addr>` method, and the OpenXR instance through :ref:`get_instance()<class_OpenXRAPIExtension_method_get_instance>`.
-
-It also provides methods for querying the status of OpenXR initialization, and helper methods for ease of use of the API with GDExtension.
+为 GDExtension 提供 OpenXR API。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `XrResult documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__
+**OpenXRAPIExtension** 使 OpenXR 可用于 GDExtension。它通过 :ref:`get_instance_proc_addr()<class_OpenXRAPIExtension_method_get_instance_proc_addr>` 方法向 GDExtension 提供 OpenXR API，并通过 :ref:`get_instance()<class_OpenXRAPIExtension_method_get_instance>` 提供 OpenXR 实例。
 
-- `XrInstance documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__
+它还提供了用于查询 OpenXR 初始化状态的方法，以及便于通过 GDExtension 使用 API 的辅助方法。
 
-- `XrSpace documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__
+.. rst-class:: classref-introduction-group
 
-- `XrSession documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__
+教程
+----
 
-- `XrSystemId documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__
+- `XrResult 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__
 
-- `xrBeginSession documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__
+- `XrInstance 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__
 
-- `XrPosef documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__
+- `XrSpace 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__
+
+- `XrSession 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__
+
+- `XrSystemId 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__
+
+- `xrBeginSession 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__
+
+- `XrPosef 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -147,8 +147,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport:
 
@@ -162,7 +162,7 @@ enum **OpenXRAlphaBlendModeSupport**: :ref:`🔗<enum_OpenXRAPIExtension_OpenXRA
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **OPENXR_ALPHA_BLEND_MODE_SUPPORT_NONE** = ``0``
 
-Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` isn't supported at all.
+表示完全不支持 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`\ 。
 
 .. _class_OpenXRAPIExtension_constant_OPENXR_ALPHA_BLEND_MODE_SUPPORT_REAL:
 
@@ -170,7 +170,7 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **OPENXR_ALPHA_BLEND_MODE_SUPPORT_REAL** = ``1``
 
-Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is really supported.
+表示确实支持 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`\ 。
 
 .. _class_OpenXRAPIExtension_constant_OPENXR_ALPHA_BLEND_MODE_SUPPORT_EMULATING:
 
@@ -178,7 +178,7 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **OPENXR_ALPHA_BLEND_MODE_SUPPORT_EMULATING** = ``2``
 
-Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is emulated.
+表示模拟 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -186,8 +186,8 @@ Means that :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_con
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OpenXRAPIExtension_method_action_get_handle:
 
@@ -195,7 +195,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **action_get_handle**\ (\ action\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_action_get_handle>`
 
-Returns the corresponding ``XrAction`` OpenXR handle for the given action RID.
+返回与给定动作 RID 对应的 ``XrAction`` OpenXR 句柄。
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Returns the corresponding ``XrAction`` OpenXR handle for the given action RID.
 
 |void| **begin_debug_label_region**\ (\ label_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_begin_debug_label_region>`
 
-Begins a new debug label region, this label will be reported in debug messages for any calls following this until :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>` is called. Debug labels can be stacked.
+开启新的调试标签区域，此后的调用所产生的调试信息中会汇报该标签，直到调用 :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>`\ 。可以堆叠调试标签。
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ Begins a new debug label region, this label will be reported in debug messages f
 
 :ref:`bool<class_bool>` **can_render**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_can_render>`
 
-Returns ``true`` if OpenXR is initialized for rendering with an XR viewport.
+如果 OpenXR 已为使用 XR 视口进行渲染而初始化，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ Returns ``true`` if OpenXR is initialized for rendering with an XR viewport.
 
 |void| **end_debug_label_region**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_end_debug_label_region>`
 
-Marks the end of a debug label region. Removes the latest debug label region added by calling :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>`.
+标记调试标签区域的末尾。移除最新的通过调用 :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>` 添加的调试标签区域。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Marks the end of a debug label region. Removes the latest debug label region add
 
 :ref:`RID<class_RID>` **find_action**\ (\ name\: :ref:`String<class_String>`, action_set\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_find_action>`
 
-Returns the :ref:`RID<class_RID>` corresponding to an ``Action`` of a matching name, optionally limited to a specified action set.
+返回与名称匹配的\ ``动作``\ 所对应的 :ref:`RID<class_RID>`\ ，还可以将匹配范围限制在指定的动作集中。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Returns the :ref:`RID<class_RID>` corresponding to an ``Action`` of a matching n
 
 :ref:`String<class_String>` **get_error_string**\ (\ result\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_error_string>`
 
-Returns an error string for the given `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__.
+返回给定 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ 对应的错误字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ Returns an error string for the given `XrResult <https://registry.khronos.org/Op
 
 :ref:`int<class_int>` **get_hand_tracker**\ (\ hand_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_hand_tracker>`
 
-Returns the corresponding ``XRHandTrackerEXT`` handle for the given hand index value.
+返回给定手索引值的相应 ``XRHandTrackerEXT`` 句柄。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Returns the corresponding ``XRHandTrackerEXT`` handle for the given hand index v
 
 :ref:`int<class_int>` **get_instance**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_instance>`
 
-Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__ created during the initialization of the OpenXR API.
+返回 OpenXR API 初始化过程中创建的 `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -291,9 +291,9 @@ Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/
 
 :ref:`int<class_int>` **get_instance_proc_addr**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_instance_proc_addr>`
 
-Returns the function pointer of the OpenXR function with the specified name, cast to an integer. If the function with the given name does not exist, the method returns ``0``.
+返回具有指定名称的 OpenXR 函数的函数指针，转换为整数。如果给定名称的函数不存在，该方法返回 ``0``\ 。
 
-\ **Note:** ``openxr/util.h`` contains utility macros for acquiring OpenXR functions, e.g. ``GDEXTENSION_INIT_XR_FUNC_V(xrCreateAction)``.
+\ **注意：**\ ``openxr/util.h`` 包含用于获取 OpenXR 函数的实用宏，例如， ``GDEXTENSION_INIT_XR_FUNC_V(xrCreateAction)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ Returns the function pointer of the OpenXR function with the specified name, cas
 
 :ref:`int<class_int>` **get_next_frame_time**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_next_frame_time>`
 
-Returns the predicted display timing for the next frame.
+返回下一帧的预测显示时间。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Returns the version of OpenXR that was initialized. Only valid after the OpenXR 
 
 :ref:`int<class_int>` **get_play_space**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_play_space>`
 
-Returns the play space, which is an `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__ cast to an integer.
+返回播放空间，它是一个被转换为整数的 `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Returns the play space, which is an `XrSpace <https://registry.khronos.org/OpenX
 
 :ref:`int<class_int>` **get_predicted_display_time**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_predicted_display_time>`
 
-Returns the predicted display timing for the current frame.
+返回当前帧的预测显示时间。
 
 .. rst-class:: classref-item-separator
 
@@ -353,9 +353,9 @@ Returns the predicted display timing for the current frame.
 
 :ref:`int<class_int>` **get_projection_layer**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_projection_layer>`
 
-Returns a pointer to the render state's ``XrCompositionLayerProjection`` struct.
+返回指向渲染状态中 ``XrCompositionLayerProjection`` 结构体的指针。
 
-\ **Note:** This method should only be called from the rendering thread.
+\ **注意：**\ 该方法只应从渲染线程调用。
 
 .. rst-class:: classref-item-separator
 
@@ -367,9 +367,9 @@ Returns a pointer to the render state's ``XrCompositionLayerProjection`` struct.
 
 :ref:`float<class_float>` **get_render_state_z_far**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_render_state_z_far>`
 
-Returns the far boundary value of the camera frustum.
+返回相机视锥的远端边界值。
 
-\ **Note:** This is only accessible in the render thread.
+\ **注意：**\ 只能在渲染线程中访问。
 
 .. rst-class:: classref-item-separator
 
@@ -381,9 +381,9 @@ Returns the far boundary value of the camera frustum.
 
 :ref:`float<class_float>` **get_render_state_z_near**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_render_state_z_near>`
 
-Returns the near boundary value of the camera frustum.
+返回相机视锥的近端边界值。
 
-\ **Note:** This is only accessible in the render thread.
+\ **注意：**\ 只能在渲染线程中访问。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ Returns the near boundary value of the camera frustum.
 
 :ref:`int<class_int>` **get_session**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_session>`
 
-Returns the OpenXR session, which is an `XrSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__ cast to an integer.
+返回该 OpenXR 会话，它是一个被转换为整数的 `XrSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Returns the OpenXR session, which is an `XrSession <https://registry.khronos.org
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_supported_swapchain_formats**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_supported_swapchain_formats>`
 
-Returns an array of supported swapchain formats.
+返回支持的交换链格式的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -419,7 +419,7 @@ Returns an array of supported swapchain formats.
 
 :ref:`String<class_String>` **get_swapchain_format_name**\ (\ swapchain_format\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_swapchain_format_name>`
 
-Returns the name of the specified swapchain format.
+返回指定交换链格式的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ Returns the ID of the system, which is an `XrSystemId <https://registry.khronos.
 
 |void| **insert_debug_label**\ (\ label_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_insert_debug_label>`
 
-Inserts a debug label, this label is reported in any debug message resulting from the OpenXR calls that follows, until any of :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>`, :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>`, or :ref:`insert_debug_label()<class_OpenXRAPIExtension_method_insert_debug_label>` is called.
+插入调试标签，此后的 OpenXR 调用所产生的调试信息中会汇报该标签，直到调用 :ref:`begin_debug_label_region()<class_OpenXRAPIExtension_method_begin_debug_label_region>`\ 、\ :ref:`end_debug_label_region()<class_OpenXRAPIExtension_method_end_debug_label_region>` 或 :ref:`insert_debug_label()<class_OpenXRAPIExtension_method_insert_debug_label>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -455,7 +455,7 @@ Inserts a debug label, this label is reported in any debug message resulting fro
 
 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` **is_environment_blend_mode_alpha_supported**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_environment_blend_mode_alpha_supported>`
 
-Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` denoting if :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` is really supported, emulated or not supported at all.
+返回 :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBlendModeSupport>` 表示 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` 是否确实受支持、模拟或根本不支持。
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Returns :ref:`OpenXRAlphaBlendModeSupport<enum_OpenXRAPIExtension_OpenXRAlphaBle
 
 :ref:`bool<class_bool>` **is_initialized**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_initialized>`
 
-Returns ``true`` if OpenXR is initialized.
+如果 OpenXR 已初始化，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ Returns ``true`` if OpenXR is initialized.
 
 :ref:`bool<class_bool>` **is_running**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_is_running>`
 
-Returns ``true`` if OpenXR is running (`xrBeginSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__ was successfully called and the swapchains were created).
+如果 OpenXR 正在运行，则返回 ``true``\ （\ `xrBeginSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__ 已被成功调用并且交换链已被创建）。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Returns ``true`` if OpenXR is running (`xrBeginSession <https://registry.khronos
 
 :ref:`bool<class_bool>` **openxr_is_enabled**\ (\ check_run_in_editor\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_OpenXRAPIExtension_method_openxr_is_enabled>`
 
-Returns ``true`` if OpenXR is enabled.
+如果启用 OpenXR，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ Returns ``true`` if OpenXR is enabled.
 
 |void| **openxr_swapchain_acquire**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_acquire>`
 
-Acquires the image of the provided swapchain.
+获取给定交换链的图像。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ Acquires the image of the provided swapchain.
 
 :ref:`int<class_int>` **openxr_swapchain_create**\ (\ create_flags\: :ref:`int<class_int>`, usage_flags\: :ref:`int<class_int>`, swapchain_format\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, sample_count\: :ref:`int<class_int>`, array_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_create>`
 
-Returns a pointer to a new swapchain created using the provided parameters.
+返回一个指针，指向使用给定参数创建的新交换链。
 
 .. rst-class:: classref-item-separator
 
@@ -527,7 +527,7 @@ Returns a pointer to a new swapchain created using the provided parameters.
 
 |void| **openxr_swapchain_free**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_free>`
 
-Destroys the provided swapchain and frees it from memory.
+销毁给定的交换链并在内存中将其释放。
 
 .. rst-class:: classref-item-separator
 
@@ -539,7 +539,7 @@ Destroys the provided swapchain and frees it from memory.
 
 :ref:`RID<class_RID>` **openxr_swapchain_get_image**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_get_image>`
 
-Returns the RID of the provided swapchain's image.
+返回给定交换链图像的 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Returns the RID of the provided swapchain's image.
 
 :ref:`int<class_int>` **openxr_swapchain_get_swapchain**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_get_swapchain>`
 
-Returns the ``XrSwapchain`` handle of the provided swapchain.
+返回给定交换链的 ``XrSwapchain`` 句柄。
 
 .. rst-class:: classref-item-separator
 
@@ -563,7 +563,7 @@ Returns the ``XrSwapchain`` handle of the provided swapchain.
 
 |void| **openxr_swapchain_release**\ (\ swapchain\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_openxr_swapchain_release>`
 
-Releases the image of the provided swapchain.
+释放给定交换链的图像。
 
 .. rst-class:: classref-item-separator
 
@@ -617,7 +617,7 @@ Registers the given extension as a provider of additional data structures to pro
 
 |void| **set_custom_play_space**\ (\ space\: ``const void*``\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_custom_play_space>`
 
-Sets the reference space used by OpenXR to the given `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__ (cast to a ``void *``).
+将 OpenXR 所使用的参考空间设置为给定的 `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__\ （转换为 ``void *``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ Sets the reference space used by OpenXR to the given `XrSpace <https://registry.
 
 |void| **set_emulate_environment_blend_mode_alpha_blend**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_emulate_environment_blend_mode_alpha_blend>`
 
-If set to ``true``, an OpenXR extension is loaded which is capable of emulating the :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` blend mode.
+如果设置为 ``true``\ ，则会加载 OpenXR 扩展，该扩展能够模拟 :ref:`XRInterface.XR_ENV_BLEND_MODE_ALPHA_BLEND<class_XRInterface_constant_XR_ENV_BLEND_MODE_ALPHA_BLEND>` 混合模式。
 
 .. rst-class:: classref-item-separator
 
@@ -641,7 +641,7 @@ If set to ``true``, an OpenXR extension is loaded which is capable of emulating 
 
 |void| **set_object_name**\ (\ object_type\: :ref:`int<class_int>`, object_handle\: :ref:`int<class_int>`, object_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_object_name>`
 
-Set the object name of an OpenXR object, used for debug output. ``object_type`` must be a valid OpenXR ``XrObjectType`` enum and ``object_handle`` must be a valid OpenXR object handle.
+设置 OpenXR 对象的对象名称，用于调试输出。\ ``object_type`` 必须是有效的 OpenXR ``XrObjectType`` 枚举，\ ``object_handle`` 必须是有效的 OpenXR 对象句柄。
 
 .. rst-class:: classref-item-separator
 
@@ -653,7 +653,7 @@ Set the object name of an OpenXR object, used for debug output. ``object_type`` 
 
 |void| **set_render_region**\ (\ render_region\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_render_region>`
 
-Sets the render region to ``render_region``, overriding the normal render target's rect.
+将渲染区域设置为 ``render_region``\ ，覆盖常规渲染目标的矩形区域。
 
 .. rst-class:: classref-item-separator
 
@@ -665,7 +665,7 @@ Sets the render region to ``render_region``, overriding the normal render target
 
 |void| **set_velocity_depth_texture**\ (\ render_target\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_velocity_depth_texture>`
 
-Sets the render target of the velocity depth texture.
+设置速度深度纹理的渲染目标。
 
 .. rst-class:: classref-item-separator
 
@@ -677,7 +677,7 @@ Sets the render target of the velocity depth texture.
 
 |void| **set_velocity_target_size**\ (\ target_size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_velocity_target_size>`
 
-Sets the target size of the velocity and velocity depth textures.
+设置速度纹理和速度深度纹理的目标大小。
 
 .. rst-class:: classref-item-separator
 
@@ -689,7 +689,7 @@ Sets the target size of the velocity and velocity depth textures.
 
 |void| **set_velocity_texture**\ (\ render_target\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_set_velocity_texture>`
 
-Sets the render target of the velocity texture.
+设置速度纹理的渲染目标。
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ Sets the render target of the velocity texture.
 
 :ref:`Transform3D<class_Transform3D>` **transform_from_pose**\ (\ pose\: ``const void*``\ ) :ref:`🔗<class_OpenXRAPIExtension_method_transform_from_pose>`
 
-Creates a :ref:`Transform3D<class_Transform3D>` from an `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__.
+从 `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__ 创建一个 :ref:`Transform3D<class_Transform3D>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -767,14 +767,14 @@ Request the recommended resolution from the OpenXR runtime and update the main s
 
 :ref:`bool<class_bool>` **xr_result**\ (\ result\: :ref:`int<class_int>`, format\: :ref:`String<class_String>`, args\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_OpenXRAPIExtension_method_xr_result>`
 
-Returns ``true`` if the provided `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ (cast to an integer) is successful. Otherwise returns ``false`` and prints the `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ converted to a string, with the specified additional information.
+如果提供的 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__\ （转换为整数）是成功的，则返回 ``true``\ 。否则返回 ``false`` 并打印被转换为字符串的 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ ，以及指定的附加信息。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,14 +5,14 @@
 ZIPPacker
 =========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Allows the creation of ZIP files.
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This class implements a writer that allows storing the multiple blobs in a ZIP archive. See also :ref:`ZIPReader<class_ZIPReader>` and :ref:`PCKPacker<class_PCKPacker>`.
 
@@ -33,8 +33,8 @@ This class implements a writer that allows storing the multiple blobs in a ZIP a
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -69,8 +69,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_ZIPPacker_ZipAppend:
 
@@ -84,7 +84,7 @@ enum **ZipAppend**: :ref:`🔗<enum_ZIPPacker_ZipAppend>`
 
 :ref:`ZipAppend<enum_ZIPPacker_ZipAppend>` **APPEND_CREATE** = ``0``
 
-Create a new zip archive at the given path.
+在給定的路徑新建 Zip 歸檔檔。
 
 .. _class_ZIPPacker_constant_APPEND_CREATEAFTER:
 
@@ -92,7 +92,7 @@ Create a new zip archive at the given path.
 
 :ref:`ZipAppend<enum_ZIPPacker_ZipAppend>` **APPEND_CREATEAFTER** = ``1``
 
-Append a new zip archive to the end of the already existing file at the given path.
+在位於給定路徑的已有檔的末尾追加新的 Zip 歸檔檔。
 
 .. _class_ZIPPacker_constant_APPEND_ADDINZIP:
 
@@ -100,7 +100,7 @@ Append a new zip archive to the end of the already existing file at the given pa
 
 :ref:`ZipAppend<enum_ZIPPacker_ZipAppend>` **APPEND_ADDINZIP** = ``2``
 
-Add new files to the existing zip archive at the given path.
+在位於給定路徑的已有 Zip 歸檔檔中新增新檔。
 
 .. rst-class:: classref-item-separator
 
@@ -150,8 +150,8 @@ Start a file with the best Deflate compression level (``9``). This is slow to co
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ZIPPacker_property_compression_level:
 
@@ -172,8 +172,8 @@ The compression level used when :ref:`start_file()<class_ZIPPacker_method_start_
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ZIPPacker_method_close:
 
@@ -181,7 +181,7 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **close**\ (\ ) :ref:`🔗<class_ZIPPacker_method_close>`
 
-Closes the underlying resources used by this instance.
+關閉該實例底層所使用的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -193,9 +193,9 @@ Closes the underlying resources used by this instance.
 
 :ref:`Error<enum_@GlobalScope_Error>` **close_file**\ (\ ) :ref:`🔗<class_ZIPPacker_method_close_file>`
 
-Stops writing to a file within the archive.
+停止向歸檔中的檔進行寫入。
 
-It will fail if there is no open file.
+如果沒有打開檔，則會失敗。
 
 .. rst-class:: classref-item-separator
 
@@ -207,9 +207,9 @@ It will fail if there is no open file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ path\: :ref:`String<class_String>`, append\: :ref:`ZipAppend<enum_ZIPPacker_ZipAppend>` = 0\ ) :ref:`🔗<class_ZIPPacker_method_open>`
 
-Opens a zip file for writing at the given path using the specified write mode.
+打開給定路徑處的 Zip 檔，使用指定的寫入模式進行寫入。
 
-This must be called before everything else.
+必須在其他呼叫前呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -221,9 +221,9 @@ This must be called before everything else.
 
 :ref:`Error<enum_@GlobalScope_Error>` **start_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ZIPPacker_method_start_file>`
 
-Starts writing to a file within the archive. Only one file can be written at the same time.
+開始向存檔中的一個檔寫入。同一時間只能寫一個檔。
 
-Must be called after :ref:`open()<class_ZIPPacker_method_open>`.
+必須在\ :ref:`open()<class_ZIPPacker_method_open>`\ 之後呼叫。
 
 .. rst-class:: classref-item-separator
 
@@ -235,16 +235,16 @@ Must be called after :ref:`open()<class_ZIPPacker_method_open>`.
 
 :ref:`Error<enum_@GlobalScope_Error>` **write_file**\ (\ data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ZIPPacker_method_write_file>`
 
-Write the given ``data`` to the file.
+將給定的 ``data`` 寫到檔案中。
 
-Needs to be called after :ref:`start_file()<class_ZIPPacker_method_start_file>`.
+需要在 :ref:`start_file()<class_ZIPPacker_method_start_file>` 之後呼叫。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

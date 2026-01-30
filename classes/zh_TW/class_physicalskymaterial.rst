@@ -5,14 +5,14 @@
 PhysicalSkyMaterial
 ===================
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that defines a sky for a :ref:`Sky<class_Sky>` resource by a set of physical properties.
+透過一組物理屬性定義 :ref:`Sky<class_Sky>` 資源的天空的材質。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The **PhysicalSkyMaterial** uses the Preetham analytic daylight model to draw a sky based on physical properties. This results in a substantially more realistic sky than the :ref:`ProceduralSkyMaterial<class_ProceduralSkyMaterial>`, but it is slightly slower and less flexible.
 
@@ -20,8 +20,8 @@ The **PhysicalSkyMaterial** only supports one sun. The color, energy, and direct
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_PhysicalSkyMaterial_property_energy_multiplier:
 
@@ -70,7 +70,7 @@ Property Descriptions
 - |void| **set_energy_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_energy_multiplier**\ (\ )
 
-The sky's overall brightness multiplier. Higher values result in a brighter sky.
+天空整體亮度的乘數。數值越高，天空就越亮。
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ The sky's overall brightness multiplier. Higher values result in a brighter sky.
 - |void| **set_ground_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_ground_color**\ (\ )
 
-Modulates the :ref:`Color<class_Color>` on the bottom half of the sky to represent the ground.
+調變天空下半部分的 :ref:`Color<class_Color>`\ ，這部分代表地面。
 
 .. rst-class:: classref-item-separator
 
@@ -104,7 +104,7 @@ Modulates the :ref:`Color<class_Color>` on the bottom half of the sky to represe
 - |void| **set_mie_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mie_coefficient**\ (\ )
 
-Controls the strength of `Mie scattering <https://en.wikipedia.org/wiki/Mie_scattering>`__ for the sky. Mie scattering results from light colliding with larger particles (like water). On earth, Mie scattering results in a whitish color around the sun and horizon.
+控制天空中\ `米氏散射 <https://zh.wikipedia.org/wiki/%E7%B1%B3%E6%B0%8F%E6%95%A3%E5%B0%84>`__\ 的強度。米氏散射是光與較大的粒子（例如水）碰撞的結果。在地球上，米氏散射的結果是太陽和地平線周圍的顏色發白。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ Controls the strength of `Mie scattering <https://en.wikipedia.org/wiki/Mie_scat
 - |void| **set_mie_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_mie_color**\ (\ )
 
-Controls the :ref:`Color<class_Color>` of the `Mie scattering <https://en.wikipedia.org/wiki/Mie_scattering>`__ effect. While not physically accurate, this allows for the creation of alien-looking planets.
+控制天空中\ `米氏散射 <https://zh.wikipedia.org/wiki/%E7%B1%B3%E6%B0%8F%E6%95%A3%E5%B0%84>`__\ 效果的 :ref:`Color<class_Color>`\ 。雖然在物理上並不準確，但可以創造出看上去像的外星球的天空。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +138,7 @@ Controls the :ref:`Color<class_Color>` of the `Mie scattering <https://en.wikipe
 - |void| **set_mie_eccentricity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mie_eccentricity**\ (\ )
 
-Controls the direction of the `Mie scattering <https://en.wikipedia.org/wiki/Mie_scattering>`__. A value of ``1`` means that when light hits a particle it's passing through straight forward. A value of ``-1`` means that all light is scatter backwards.
+控制\ `米氏散射 <https://zh.wikipedia.org/wiki/%E7%B1%B3%E6%B0%8F%E6%95%A3%E5%B0%84>`__\ 的方向。值為 ``1`` 表示當光照到粒子時會直接穿過。值為\ ``-1`` 表示所有的光都是向後散射的。
 
 .. rst-class:: classref-item-separator
 
@@ -155,7 +155,7 @@ Controls the direction of the `Mie scattering <https://en.wikipedia.org/wiki/Mie
 - |void| **set_night_sky**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_night_sky**\ (\ )
 
-:ref:`Texture2D<class_Texture2D>` for the night sky. This is added to the sky, so if it is bright enough, it may be visible during the day.
+用於夜空的 :ref:`Texture2D<class_Texture2D>`\ 。會新增到天空中，所以足夠亮的話在白天也可能會看到。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Controls the direction of the `Mie scattering <https://en.wikipedia.org/wiki/Mie
 - |void| **set_rayleigh_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rayleigh_coefficient**\ (\ )
 
-Controls the strength of the `Rayleigh scattering <https://en.wikipedia.org/wiki/Rayleigh_scattering>`__. Rayleigh scattering results from light colliding with small particles. It is responsible for the blue color of the sky.
+控制\ `瑞利散射 <https://zh.wikipedia.org/zh/%E7%91%9E%E5%88%A9%E6%95%A3%E5%B0%84>`__\ 的強度。瑞利散射是光與較小粒子碰撞的結果，是天空呈藍色的原因。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ Controls the strength of the `Rayleigh scattering <https://en.wikipedia.org/wiki
 - |void| **set_rayleigh_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_rayleigh_color**\ (\ )
 
-Controls the :ref:`Color<class_Color>` of the `Rayleigh scattering <https://en.wikipedia.org/wiki/Rayleigh_scattering>`__. While not physically accurate, this allows for the creation of alien-looking planets. For example, setting this to a red :ref:`Color<class_Color>` results in a Mars-looking atmosphere with a corresponding blue sunset.
+控制\ `瑞利散射 <https://zh.wikipedia.org/zh/%E7%91%9E%E5%88%A9%E6%95%A3%E5%B0%84>`__\ 的 :ref:`Color<class_Color>`\ 。雖然在物理上並不準確，但可以創造出看上去像的外星球的天空。例如，將其設為紅色 :ref:`Color<class_Color>`\ ，可以得到火星大氣的外觀，日落時為藍色。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Controls the :ref:`Color<class_Color>` of the `Rayleigh scattering <https://en.w
 - |void| **set_sun_disk_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_sun_disk_scale**\ (\ )
 
-Sets the size of the sun disk. Default value is based on Sol's perceived size from Earth.
+設定太陽圓盤的大小。預設值基於從地球對太陽的感知大小。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Sets the size of the sun disk. Default value is based on Sol's perceived size fr
 - |void| **set_turbidity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_turbidity**\ (\ )
 
-Sets the thickness of the atmosphere. High turbidity creates a foggy-looking atmosphere, while a low turbidity results in a clearer atmosphere.
+設定大氣的厚度。高濁度會產生霧狀外觀的大氣，而低濁度會產生更清晰的大氣。
 
 .. rst-class:: classref-item-separator
 
@@ -240,14 +240,14 @@ Sets the thickness of the atmosphere. High turbidity creates a foggy-looking atm
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_debanding**\ (\ )
 
-If ``true``, enables debanding. Debanding adds a small amount of noise which helps reduce banding that appears from the smooth changes in color in the sky.
+如果為 ``true``\ ，則啟用去色帶。去色帶會增加少量噪點，這有助於減少天空中顏色的平滑變化而出現的色帶。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,14 +5,14 @@
 Mutex
 =====
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A binary :ref:`Semaphore<class_Semaphore>` for synchronization of multiple :ref:`Thread<class_Thread>`\ s.
+二元 :ref:`Semaphore<class_Semaphore>`\ ，用於在多 :ref:`Thread<class_Thread>` 間進行同步。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 A synchronization mutex (mutual exclusion). This is used to synchronize multiple :ref:`Thread<class_Thread>`\ s, and is equivalent to a binary :ref:`Semaphore<class_Semaphore>`. It guarantees that only one thread can access a critical section at a time.
 
@@ -26,17 +26,17 @@ This is a reentrant mutex, meaning that it can be locked multiple times by one t
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Using multiple threads <../tutorials/performance/using_multiple_threads>`
+- :doc:`使用多執行緒 <../tutorials/performance/using_multiple_threads>`
 
-- :doc:`Thread-safe APIs <../tutorials/performance/thread_safe_apis>`
+- :doc:`執行緒安全的 API <../tutorials/performance/thread_safe_apis>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Mutex_method_lock:
 
@@ -64,9 +64,9 @@ Method Descriptions
 
 |void| **lock**\ (\ ) :ref:`🔗<class_Mutex_method_lock>`
 
-Locks this **Mutex**, blocks until it is unlocked by the current owner.
+鎖定此 **Mutex**\ ，直到被目前所有者解鎖為止。
 
-\ **Note:** This function returns without blocking if the thread already has ownership of the mutex.
+\ **注意：**\ 如果執行緒已經擁有互斥鎖的所有權，該函式將無阻塞地返回。
 
 .. rst-class:: classref-item-separator
 
@@ -78,9 +78,9 @@ Locks this **Mutex**, blocks until it is unlocked by the current owner.
 
 :ref:`bool<class_bool>` **try_lock**\ (\ ) :ref:`🔗<class_Mutex_method_try_lock>`
 
-Tries locking this **Mutex**, but does not block. Returns ``true`` on success, ``false`` otherwise.
+嘗試鎖定該 **Mutex**\ ，但不會阻塞。成功時返回 ``true``\ ，否則返回 ``false``\ 。
 
-\ **Note:** This function returns ``true`` if the thread already has ownership of the mutex.
+\ **注意：**\ 如果該執行緒已經擁有了該互斥器的所有權，則函式返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -98,12 +98,12 @@ Unlocks this **Mutex**, leaving it to other threads.
 
 \ **Warning:** Calling :ref:`unlock()<class_Mutex_method_unlock>` more times than :ref:`lock()<class_Mutex_method_lock>` on a given thread, thus ending up trying to unlock a non-locked mutex, is wrong and may causes crashes or deadlocks.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

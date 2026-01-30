@@ -8,27 +8,27 @@
 MarginContainer
 ===============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorDock<class_EditorDock>`
+**派生：** :ref:`EditorDock<class_EditorDock>`
 
-A container that keeps a margin around its child controls.
+在子控件周围保留边距的容器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**MarginContainer** adds an adjustable margin on each side of its child controls. The margins are added around all children, not around each individual one. To control the **MarginContainer**'s margins, use the ``margin_*`` theme properties listed below.
+**MarginContainer** 会为子控件的各条边加上可调整的边距。是在所有子项周围添加边距，而不是在它们各自周围添加边距。要控制 **MarginContainer** 的边距，请使用下列 ``margin_*`` 主题属性。
 
-\ **Note:** The margin sizes are theme overrides, not normal properties. This is an example of how to change them in code:
+\ **注意：**\ 边距大小是主题覆盖项，而不是普通的属性。如果想要通过代码更改，应使用以下示例：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This code sample assumes the current script is extending MarginContainer.
+    # 这段代码示例要求当前脚本扩展的是 MarginContainer。
     var margin_value = 100
     add_theme_constant_override("margin_top", margin_value)
     add_theme_constant_override("margin_left", margin_value)
@@ -37,7 +37,7 @@ Description
 
  .. code-tab:: csharp
 
-    // This code sample assumes the current script is extending MarginContainer.
+    // 这段代码示例要求当前脚本扩展的是 MarginContainer。
     int marginValue = 100;
     AddThemeConstantOverride("margin_top", marginValue);
     AddThemeConstantOverride("margin_left", marginValue);
@@ -48,15 +48,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Using Containers <../tutorials/ui/gui_containers>`
+- :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_MarginContainer_theme_constant_margin_bottom:
 
@@ -86,7 +86,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **margin_bottom** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_bottom>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the bottom.
+从底部向容器的内部直接子项偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 :ref:`int<class_int>` **margin_left** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_left>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the left.
+从左侧向容器的内部直接子项偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 :ref:`int<class_int>` **margin_right** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_right>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the right.
+从右侧向容器的内部直接子项偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -122,14 +122,14 @@ Offsets towards the inside direct children of the container by this amount of pi
 
 :ref:`int<class_int>` **margin_top** = ``0`` :ref:`🔗<class_MarginContainer_theme_constant_margin_top>`
 
-Offsets towards the inside direct children of the container by this amount of pixels from the top.
+从顶部向容器的内部直接子项偏移一定量的像素。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

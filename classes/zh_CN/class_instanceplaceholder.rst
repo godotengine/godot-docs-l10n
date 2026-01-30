@@ -5,23 +5,23 @@
 InstancePlaceholder
 ===================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Placeholder for the root :ref:`Node<class_Node>` of a :ref:`PackedScene<class_PackedScene>`.
+:ref:`PackedScene<class_PackedScene>` 根 :ref:`Node<class_Node>` 的占位符。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. This is useful to avoid loading large scenes all at once by loading parts of it selectively.
+在编辑器中为实例化的场景打开\ **加载为占位符**\ 选项会导致在运行游戏时将其替换为 **InstancePlaceholder**\ 。这样就可以将场景推迟到调用 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 时再实际加载。这样做有助于对大型场景中的不同部分进行有选择的加载，避免一次性加载所有部分。
 
-\ **Note:** Like :ref:`Node<class_Node>`, **InstancePlaceholder** does not have a transform. This causes any child nodes to be positioned relatively to the :ref:`Viewport<class_Viewport>` origin, rather than their parent as displayed in the editor. Replacing the placeholder with a scene with a transform will transform children relatively to their parent again.
+\ **注意：**\ **InstancePlaceholder** 与 :ref:`Node<class_Node>` 类似，不具备变换属性。因此任何子节点都会相对于 :ref:`Viewport<class_Viewport>` 的原点开始定位，而不是在编辑器中显示的父节点。用一个具有变换属性的场景来替换占位符，将使子节点再次相对于它们的父节点进行变换。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -40,8 +40,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_InstancePlaceholder_method_create_instance:
 
@@ -49,9 +49,9 @@ Method Descriptions
 
 :ref:`Node<class_Node>` **create_instance**\ (\ replace\: :ref:`bool<class_bool>` = false, custom_scene\: :ref:`PackedScene<class_PackedScene>` = null\ ) :ref:`🔗<class_InstancePlaceholder_method_create_instance>`
 
-Call this method to actually load in the node. The created node will be placed as a sibling *above* the **InstancePlaceholder** in the scene tree. The :ref:`Node<class_Node>`'s reference is also returned for convenience.
+调用这个方法会实际载入节点。在场景树中放置新创建的节点时，该节点是 **InstancePlaceholder** 的同级节点，位于其\ *上方*\ 。出于方便的考虑，还会返回该 :ref:`Node<class_Node>` 的引用。
 
-\ **Note:** :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` is not thread-safe. Use :ref:`Object.call_deferred()<class_Object_method_call_deferred>` if calling from a thread.
+\ **注意：**\ :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 不是线程安全的。从线程中调用时请使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Call this method to actually load in the node. The created node will be placed a
 
 :ref:`String<class_String>` **get_instance_path**\ (\ ) |const| :ref:`🔗<class_InstancePlaceholder_method_get_instance_path>`
 
-Gets the path to the :ref:`PackedScene<class_PackedScene>` resource file that is loaded by default when calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. Not thread-safe. Use :ref:`Object.call_deferred()<class_Object_method_call_deferred>` if calling from a thread.
+获取调用 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 时默认加载的 :ref:`PackedScene<class_PackedScene>` 资源文件的路径。不是线程安全的。如果从线程调用，请使用 :ref:`Object.call_deferred()<class_Object_method_call_deferred>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -75,16 +75,16 @@ Gets the path to the :ref:`PackedScene<class_PackedScene>` resource file that is
 
 :ref:`Dictionary<class_Dictionary>` **get_stored_values**\ (\ with_order\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_InstancePlaceholder_method_get_stored_values>`
 
-Returns the list of properties that will be applied to the node when :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` is called.
+返回在调用 :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>` 时会应用到节点上的属性列表。
 
-If ``with_order`` is ``true``, a key named ``.order`` (note the leading period) is added to the dictionary. This ``.order`` key is an :ref:`Array<class_Array>` of :ref:`String<class_String>` property names specifying the order in which properties will be applied (with index 0 being the first).
+如果 ``with_order`` 为 ``true``\ ，会在字典中加入 ``.order`` 字段（注意有个前缀的点）。这个 ``.order`` 字段是属性名称 :ref:`String<class_String>` 的 :ref:`Array<class_Array>`\ ，指定属性的应用顺序（索引为 0 的是第一个）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

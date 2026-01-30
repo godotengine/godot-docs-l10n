@@ -5,14 +5,14 @@
 OpenXRAction
 ============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An OpenXR action.
+OpenXR 動作。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 This resource defines an OpenXR action. Actions can be used both for inputs (buttons, joysticks, triggers, etc.) and outputs (haptics).
 
@@ -24,8 +24,8 @@ Note that the name of the resource is used to register the action with.
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_OpenXRAction_ActionType:
 
@@ -59,7 +59,7 @@ enum **ActionType**: :ref:`🔗<enum_OpenXRAction_ActionType>`
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_BOOL** = ``0``
 
-This action provides a boolean value.
+該動作提供布林值。
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_FLOAT:
 
@@ -67,7 +67,7 @@ This action provides a boolean value.
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_FLOAT** = ``1``
 
-This action provides a float value between ``0.0`` and ``1.0`` for any analog input such as triggers.
+該動作提供 ``0.0`` 和 ``1.0`` 之間的浮點值，用於扳機等模擬輸入。
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_VECTOR2:
 
@@ -75,7 +75,7 @@ This action provides a float value between ``0.0`` and ``1.0`` for any analog in
 
 :ref:`ActionType<enum_OpenXRAction_ActionType>` **OPENXR_ACTION_VECTOR2** = ``2``
 
-This action provides a :ref:`Vector2<class_Vector2>` value and can be bound to embedded trackpads and joysticks.
+該動作提供 :ref:`Vector2<class_Vector2>` 值，可以和嵌入式控制板與操縱桿綁定。
 
 .. _class_OpenXRAction_constant_OPENXR_ACTION_POSE:
 
@@ -95,8 +95,8 @@ This action provides a :ref:`Vector2<class_Vector2>` value and can be bound to e
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_OpenXRAction_property_action_type:
 
@@ -109,7 +109,7 @@ Property Descriptions
 - |void| **set_action_type**\ (\ value\: :ref:`ActionType<enum_OpenXRAction_ActionType>`\ )
 - :ref:`ActionType<enum_OpenXRAction_ActionType>` **get_action_type**\ (\ )
 
-The type of action.
+動作的型別。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ The type of action.
 - |void| **set_localized_name**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_localized_name**\ (\ )
 
-The localized description of this action.
+該動作的當地語系化描述。
 
 .. rst-class:: classref-item-separator
 
@@ -143,16 +143,16 @@ The localized description of this action.
 - |void| **set_toplevel_paths**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_toplevel_paths**\ (\ )
 
-A collections of toplevel paths to which this action can be bound.
+該動作所能綁定到的頂級路徑的合集。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

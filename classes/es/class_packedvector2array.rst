@@ -12,11 +12,11 @@ Un array empaquetado de :ref:`Vector2<class_Vector2>`\ s.
 Descripción
 ----------------------
 
-An array specifically designed to hold :ref:`Vector2<class_Vector2>`. Packs data tightly, so it saves memory for large array sizes.
+Un array específicamente diseñado para contener :ref:`Vector2<class_Vector2>`. Empaqueta los datos de forma compacta, lo que ahorra memoria para arrays de gran tamaño.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedVector2Array** versus ``Array[Vector2]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Diferencias entre arrays empaquetados, arrays tipados y arrays sin tipar:** Los arrays empaquetados son generalmente más rápidos de iterar y modificar en comparación con un array tipado del mismo tipo (ej. **PackedVector2Array** versus ``Array[Vector2]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados son a su vez más rápidos de iterar y modificar que los arrays sin tipar.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedVector2Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda ser modificado independientemente del array original, usa :ref:`duplicate()<class_PackedVector2Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y modificarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo de nuevo a la propiedad.
 
 .. note::
 
@@ -156,9 +156,9 @@ Construye un **PackedVector2Array** como una copia del **PackedVector2Array** da
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **PackedVector2Array**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedVector2Array**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+Construye un nuevo **PackedVector2Array**. Opcionalmente, puedes pasar un :ref:`Array<class_Array>` genérico que será convertido.
 
-\ **Note:** When initializing a **PackedVector2Array** with elements, it must be initialized with an :ref:`Array<class_Array>` of :ref:`Vector2<class_Vector2>` values:
+\ **Nota:** Al inicializar un **PackedVector2Array** con elementos, debe ser inicializado con un :ref:`Array<class_Array>` de valores :ref:`Vector2<class_Vector2>`:
 
 ::
 
@@ -203,11 +203,11 @@ Añade un **PackedVector2Array** al final de este array.
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Vector2<class_Vector2>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_PackedVector2Array_method_bsearch>`
 
-Finds the index of an existing value (or the insertion index that maintains sorting order, if the value is not yet present in the array) using binary search. Optionally, a ``before`` specifier can be passed. If ``false``, the returned index comes after all existing entries of the value in the array.
+Encuentra el índice de un valor existente (o el índice de inserción que mantiene el orden, si el valor aún no está presente en el array) usando búsqueda binaria. Opcionalmente, se puede pasar un especificador ``before``. Si es ``false``, el índice devuelto vendrá después de todas las entradas existentes del valor en el array.
 
-\ **Note:** Calling :ref:`bsearch()<class_PackedVector2Array_method_bsearch>` on an unsorted array results in unexpected behavior.
+\ **Nota:** Llamar a :ref:`bsearch()<class_PackedVector2Array_method_bsearch>` en un array sin ordenar resultará en un comportamiento inesperado.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -231,9 +231,9 @@ Limpia el array. Esto es equivalente a usar :ref:`resize()<class_PackedVector2Ar
 
 :ref:`int<class_int>` **count**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PackedVector2Array_method_count>`
 
-Returns the number of times an element is in the array.
+Devuelve el número de veces que un elemento se encuentra en el array.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -257,9 +257,9 @@ Creates a copy of the array, and returns it.
 
 :ref:`bool<class_bool>` **erase**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_PackedVector2Array_method_erase>`
 
-Removes the first occurrence of a value from the array and returns ``true``. If the value does not exist in the array, nothing happens and ``false`` is returned. To remove an element by index, use :ref:`remove_at()<class_PackedVector2Array_method_remove_at>` instead.
+Elimina la primera ocurrencia de un valor del array y devuelve ``true``. Si el valor no existe en el array, no ocurre nada y se devuelve ``false``. Para eliminar un elemento por índice, usa :ref:`remove_at()<class_PackedVector2Array_method_remove_at>` en su lugar.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ Asigna el valor dado a todos los elementos del array. Esto normalmente se puede 
 
 :ref:`int<class_int>` **find**\ (\ value\: :ref:`Vector2<class_Vector2>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_PackedVector2Array_method_find>`
 
-Searches the array for a value and returns its index or ``-1`` if not found. Optionally, the initial search index can be passed.
+Busca el array por un valor y devuelve su índice o ``-1`` si no se encuentra. Opcionalmente, se puede pasar el índice de búsqueda inicial.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método podrían no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -297,9 +297,9 @@ Searches the array for a value and returns its index or ``-1`` if not found. Opt
 
 :ref:`Vector2<class_Vector2>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedVector2Array_method_get>`
 
-Returns the :ref:`Vector2<class_Vector2>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Vector2(0, 0)``.
+Devuelve el :ref:`Vector2<class_Vector2>` en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``Vector2(0, 0)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. Cabe destacar que, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -311,9 +311,9 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_PackedVector2Array_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+Devuelve ``true`` si el array contiene ``value``.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -399,9 +399,9 @@ Invierte el orden de los elementos en el array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`Vector2<class_Vector2>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedVector2Array_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+Busca el array en orden inverso. Opcionalmente, se puede pasar un índice de búsqueda inicial. Si es negativo, el índice inicial se considera relativo al final del array.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -437,11 +437,11 @@ Devuelve el numer de elementos en el array.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedVector2Array_method_slice>`
 
-Returns the slice of the **PackedVector2Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedVector2Array**.
+Devuelve la porción del **PackedVector2Array**, desde ``begin`` (inclusive) hasta ``end`` (exclusive), como un nuevo **PackedVector2Array**.
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+El valor absoluto de ``begin`` y ``end`` se ajustará al tamaño del array, por lo que el valor predeterminado para ``end`` hace que se corte al tamaño del array por defecto (es decir, ``arr.slice(1)`` es una abreviatura de ``arr.slice(1, arr.size())``).
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es decir, ``arr.slice(0, -2)`` es una abreviatura de ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -453,9 +453,9 @@ If either ``begin`` or ``end`` are negative, they will be relative to the end of
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedVector2Array_method_sort>`
 
-Sorts the elements of the array in ascending order.
+Ordena los elementos del array en orden ascendente.
 
-\ **Note:** Vectors with :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` elements don't behave the same as other vectors. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** Los vectores con elementos :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comportan igual que otros vectores. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedVector2Array_method_to_byte_array>`
 
-Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each vector encoded as bytes.
+Devuelve un :ref:`PackedByteArray<class_PackedByteArray>` con cada vector codificado como bytes.
 
 .. rst-class:: classref-section-separator
 
@@ -496,11 +496,11 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **operator ***\ (\ right\: :ref:`Transform2D<class_Transform2D>`\ ) :ref:`🔗<class_PackedVector2Array_operator_mul_Transform2D>`
 
-Returns a new **PackedVector2Array** with all vectors in this array inversely transformed (multiplied) by the given :ref:`Transform2D<class_Transform2D>` transformation matrix, under the assumption that the transformation basis is orthonormal (i.e. rotation/reflection is fine, scaling/skew is not).
+Devuelve un nuevo **PackedVector2Array** con todos los vectores de este array transformados inversamente (multiplicados) por la matriz de transformación :ref:`Transform2D<class_Transform2D>` dada, bajo la suposición de que la base de la transformación es ortonormal (es decir, la rotación/reflexión está bien, el escalado/sesgado no lo está).
 
-\ ``array * transform`` is equivalent to ``transform.inverse() * array``. See :ref:`Transform2D.inverse()<class_Transform2D_method_inverse>`.
+\ ``array * transform`` es equivalente a ``transform.inverse() * array``. Véase :ref:`Transform2D.inverse()<class_Transform2D_method_inverse>`.
 
-For transforming by inverse of an affine transformation (e.g. with scaling) ``transform.affine_inverse() * array`` can be used instead. See :ref:`Transform2D.affine_inverse()<class_Transform2D_method_affine_inverse>`.
+Para transformar por la inversa de una transformación afín (por ejemplo, con escalado) se puede usar ``transform.affine_inverse() * array`` en su lugar. Véase :ref:`Transform2D.affine_inverse()<class_Transform2D_method_affine_inverse>`.
 
 .. rst-class:: classref-item-separator
 

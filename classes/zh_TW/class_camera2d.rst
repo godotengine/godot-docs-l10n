@@ -5,14 +5,14 @@
 Camera2D
 ========
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Camera node for 2D scenes.
+2D 場景的相機節點。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easier (and faster) to program scrollable scenes than manually changing the position of :ref:`CanvasItem<class_CanvasItem>`-based nodes.
 
@@ -24,17 +24,17 @@ Note that the **Camera2D** node's :ref:`Node2D.global_position<class_Node2D_prop
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `2D Platformer Demo <https://godotengine.org/asset-library/asset/2727>`__
+- `2D 平台範例 <https://godotengine.org/asset-library/asset/2727>`__
 
-- `2D Isometric Demo <https://godotengine.org/asset-library/asset/2718>`__
+- `2D 等軸演示 <https://godotengine.org/asset-library/asset/2718>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -99,8 +99,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -137,8 +137,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_Camera2D_AnchorMode:
 
@@ -152,7 +152,7 @@ enum **AnchorMode**: :ref:`🔗<enum_Camera2D_AnchorMode>`
 
 :ref:`AnchorMode<enum_Camera2D_AnchorMode>` **ANCHOR_MODE_FIXED_TOP_LEFT** = ``0``
 
-The camera's position is fixed so that the top-left corner is always at the origin.
+相機的位置是固定的，所以左上角總是在原點。
 
 .. _class_Camera2D_constant_ANCHOR_MODE_DRAG_CENTER:
 
@@ -160,7 +160,7 @@ The camera's position is fixed so that the top-left corner is always at the orig
 
 :ref:`AnchorMode<enum_Camera2D_AnchorMode>` **ANCHOR_MODE_DRAG_CENTER** = ``1``
 
-The camera's position takes into account vertical/horizontal offsets and the screen size.
+相機的位置要考慮垂直/水平偏移和螢幕尺寸。
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ enum **Camera2DProcessCallback**: :ref:`🔗<enum_Camera2D_Camera2DProcessCallba
 
 :ref:`Camera2DProcessCallback<enum_Camera2D_Camera2DProcessCallback>` **CAMERA2D_PROCESS_PHYSICS** = ``0``
 
-The camera updates during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`).
+相機在物理影格期間更新（見 :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ ）。
 
 .. _class_Camera2D_constant_CAMERA2D_PROCESS_IDLE:
 
@@ -186,7 +186,7 @@ The camera updates during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_P
 
 :ref:`Camera2DProcessCallback<enum_Camera2D_Camera2DProcessCallback>` **CAMERA2D_PROCESS_IDLE** = ``1``
 
-The camera updates during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
+相機在程序影格期間更新（見 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -194,8 +194,8 @@ The camera updates during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_P
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_Camera2D_property_anchor_mode:
 
@@ -225,7 +225,7 @@ The Camera2D's anchor point.
 - |void| **set_custom_viewport**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_custom_viewport**\ (\ )
 
-The custom :ref:`Viewport<class_Viewport>` node attached to the **Camera2D**. If ``null`` or not a :ref:`Viewport<class_Viewport>`, uses the default viewport instead.
+連接到 **Camera2D** 的自訂 :ref:`Viewport<class_Viewport>` 節點。如果為 ``null`` 或者不是 :ref:`Viewport<class_Viewport>`\ ，則使用預設的視口。
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ The custom :ref:`Viewport<class_Viewport>` node attached to the **Camera2D**. If
 - |void| **set_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, drag_margin\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Bottom margin needed to drag the camera. A value of ``1`` makes the camera move only when reaching the bottom edge of the screen.
+拖動相機所需的下邊距。值為 ``1`` 時，相機僅在到達螢幕底部邊緣時移動。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Bottom margin needed to drag the camera. A value of ``1`` makes the camera move 
 - |void| **set_drag_horizontal_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_horizontal_enabled**\ (\ )
 
-If ``true``, the camera only moves when reaching the horizontal (left and right) drag margins. If ``false``, the camera moves horizontally regardless of margins.
+如果為 ``true``\ ，相機僅在到達水平（左或右）拖動邊距時移動。如果為 ``false``\ ，則相機水平移動時不考慮邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -276,9 +276,9 @@ If ``true``, the camera only moves when reaching the horizontal (left and right)
 - |void| **set_drag_horizontal_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_horizontal_offset**\ (\ )
 
-The relative horizontal drag offset of the camera between the right (``-1``) and left (``1``) drag margins.
+相機在右側（\ ``-1``\ ）和左側（\ ``1``\ ）拖動邊距之間的相對水平拖動偏移量。
 
-\ **Note:** Used to set the initial horizontal drag offset; determine the current offset; or force the current offset. It's not automatically updated when :ref:`drag_horizontal_enabled<class_Camera2D_property_drag_horizontal_enabled>` is ``true`` or the drag margins are changed.
+\ **注意：**\ 用於設定初始水平拖動偏移量；確定目前偏移量；或強制目前偏移量。當 :ref:`drag_horizontal_enabled<class_Camera2D_property_drag_horizontal_enabled>` 為 ``true`` 或更改拖動邊距時，它不會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ The relative horizontal drag offset of the camera between the right (``-1``) and
 - |void| **set_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, drag_margin\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Left margin needed to drag the camera. A value of ``1`` makes the camera move only when reaching the left edge of the screen.
+拖動相機所需的左邊距。值為 ``1`` 時，相機僅在到達螢幕左側邊緣時移動。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Left margin needed to drag the camera. A value of ``1`` makes the camera move on
 - |void| **set_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, drag_margin\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Right margin needed to drag the camera. A value of ``1`` makes the camera move only when reaching the right edge of the screen.
+拖動相機所需的右邊距。值為 ``1`` 時，相機僅在到達螢幕右側邊緣時移動。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Right margin needed to drag the camera. A value of ``1`` makes the camera move o
 - |void| **set_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, drag_margin\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Top margin needed to drag the camera. A value of ``1`` makes the camera move only when reaching the top edge of the screen.
+拖動相機所需的上邊距。值為 ``1`` 時，相機僅在到達螢幕頂部邊緣時移動。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ Top margin needed to drag the camera. A value of ``1`` makes the camera move onl
 - |void| **set_drag_vertical_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_drag_vertical_enabled**\ (\ )
 
-If ``true``, the camera only moves when reaching the vertical (top and bottom) drag margins. If ``false``, the camera moves vertically regardless of the drag margins.
+如果為 ``true``\ ，相機僅在達到垂直（頂部及底部）拖動邊距時才移動。如果為 ``false``\ ，相機會垂直移動而不管邊距。
 
 .. rst-class:: classref-item-separator
 
@@ -363,9 +363,9 @@ If ``true``, the camera only moves when reaching the vertical (top and bottom) d
 - |void| **set_drag_vertical_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_vertical_offset**\ (\ )
 
-The relative vertical drag offset of the camera between the bottom (``-1``) and top (``1``) drag margins.
+相機在底部（\ ``-1``\ ）和頂部（\ ``1``\ ）拖動邊距之間的相對垂直拖動偏移量。
 
-\ **Note:** Used to set the initial vertical drag offset; determine the current offset; or force the current offset. It's not automatically updated when :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` is ``true`` or the drag margins are changed.
+\ **注意：**\ 用於設定初始垂直拖動偏移量；確定目前偏移量；或強制目前偏移量。當 :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` 為 ``true`` 或更改拖動邊距時，它不會自動更新。
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ The relative vertical drag offset of the camera between the bottom (``-1``) and 
 - |void| **set_margin_drawing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_margin_drawing_enabled**\ (\ )
 
-If ``true``, draws the camera's drag margin rectangle in the editor.
+如果為 ``true``\ ，在編輯器中繪製相機的拖動邊距矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ If ``true``, draws the camera's drag margin rectangle in the editor.
 - |void| **set_limit_drawing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limit_drawing_enabled**\ (\ )
 
-If ``true``, draws the camera's limits rectangle in the editor.
+如果為 ``true``\ ，在編輯器中繪製相機的極限矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ If ``true``, draws the camera's limits rectangle in the editor.
 - |void| **set_screen_drawing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_screen_drawing_enabled**\ (\ )
 
-If ``true``, draws the camera's screen rectangle in the editor.
+如果為 ``true``\ ，在編輯器中繪製相機的畫面矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -433,9 +433,9 @@ If ``true``, draws the camera's screen rectangle in the editor.
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Controls whether the camera can be active or not. If ``true``, the **Camera2D** will become the main camera when it enters the scene tree and there is no active camera currently (see :ref:`Viewport.get_camera_2d()<class_Viewport_method_get_camera_2d>`).
+控制該相機是否可以啟動。如果為 ``true``\ ，當該 **Camera2D** 進入場景樹並且目前沒有活動的相機時，它將成為主相機（參見 :ref:`Viewport.get_camera_2d()<class_Viewport_method_get_camera_2d>`\ ）。
 
-When the camera is currently active and :ref:`enabled<class_Camera2D_property_enabled>` is set to ``false``, the next enabled **Camera2D** in the scene tree will become active.
+當該相機目前處於活動狀態且 :ref:`enabled<class_Camera2D_property_enabled>` 被設定為 ``false`` 時，則場景樹中下一個啟用的 **Camera2D** 將變為活動狀態。
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ When the camera is currently active and :ref:`enabled<class_Camera2D_property_en
 - |void| **set_ignore_rotation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_rotation**\ (\ )
 
-If ``true``, the camera's rendered view is not affected by its :ref:`Node2D.rotation<class_Node2D_property_rotation>` and :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>`.
+如果為 ``true`` ，相機的算繪視圖不會受到其 :ref:`Node2D.rotation<class_Node2D_property_rotation>` 和 :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` 的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -469,7 +469,7 @@ If ``true``, the camera's rendered view is not affected by its :ref:`Node2D.rota
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Bottom scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+底部滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ If ``true``, the limits will be enabled. Disabling this will allow the camera to
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Left scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+左側滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Left scroll limit in pixels. The camera stops moving when reaching this value, b
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Right scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+右側滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -537,11 +537,11 @@ Right scroll limit in pixels. The camera stops moving when reaching this value, 
 - |void| **set_limit_smoothing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limit_smoothing_enabled**\ (\ )
 
-If ``true``, the camera smoothly stops when reaches its limits.
+如果為 ``true``\ ，相機會在達到極限時平滑地停止。
 
-This property has no effect if :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` is ``false``.
+如果 :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` 為 ``false``\ ，則該屬性無效。
 
-\ **Note:** To immediately update the camera's position to be within limits without smoothing, even with this setting enabled, invoke :ref:`reset_smoothing()<class_Camera2D_method_reset_smoothing>`.
+\ **注意：**\ 要立即將相機的位置更新到限制範圍內而不進行平滑，即使啟用了該設置，也要呼叫 :ref:`reset_smoothing()<class_Camera2D_method_reset_smoothing>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ This property has no effect if :ref:`position_smoothing_enabled<class_Camera2D_p
 - |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const|
 
-Top scroll limit in pixels. The camera stops moving when reaching this value, but :ref:`offset<class_Camera2D_property_offset>` can push the view past the limit.
+頂部滾動極限，單位為圖元。相機會在抵達該值時停止移動，但是 :ref:`offset<class_Camera2D_property_offset>` 可以把視圖推過該極限。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Top scroll limit in pixels. The camera stops moving when reaching this value, bu
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The camera's relative offset. Useful for looking around or camera shake animations. The offsetted camera can go past the limits defined in :ref:`limit_top<class_Camera2D_property_limit_top>`, :ref:`limit_bottom<class_Camera2D_property_limit_bottom>`, :ref:`limit_left<class_Camera2D_property_limit_left>` and :ref:`limit_right<class_Camera2D_property_limit_right>`.
+相機的相對偏移量。用於環顧四周或相機抖動動畫。偏移後的相機可以超過 :ref:`limit_top<class_Camera2D_property_limit_top>`\ 、\ :ref:`limit_bottom<class_Camera2D_property_limit_bottom>`\ 、\ :ref:`limit_left<class_Camera2D_property_limit_left>` 和 :ref:`limit_right<class_Camera2D_property_limit_right>` 中定義的限制。
 
 .. rst-class:: classref-item-separator
 
@@ -592,7 +592,7 @@ The camera's relative offset. Useful for looking around or camera shake animatio
 - |void| **set_position_smoothing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_position_smoothing_enabled**\ (\ )
 
-If ``true``, the camera's view smoothly moves towards its target position at :ref:`position_smoothing_speed<class_Camera2D_property_position_smoothing_speed>`.
+如果為 ``true``\ ，相機的視圖會以 :ref:`position_smoothing_speed<class_Camera2D_property_position_smoothing_speed>` 的速度，平滑地移向其目標位置。
 
 .. rst-class:: classref-item-separator
 
@@ -609,7 +609,7 @@ If ``true``, the camera's view smoothly moves towards its target position at :re
 - |void| **set_position_smoothing_speed**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_position_smoothing_speed**\ (\ )
 
-Speed in pixels per second of the camera's smoothing effect when :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` is ``true``.
+當 :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` 為 ``true`` 時，相機平滑效果的速度，單位為每秒圖元。
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ The camera's process callback.
 - |void| **set_rotation_smoothing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_rotation_smoothing_enabled**\ (\ )
 
-If ``true``, the camera's view smoothly rotates, via asymptotic smoothing, to align with its target rotation at :ref:`rotation_smoothing_speed<class_Camera2D_property_rotation_smoothing_speed>`.
+如果為 ``true``\ ，相機的視圖會通過漸近平滑的方式平滑地旋轉，以 :ref:`rotation_smoothing_speed<class_Camera2D_property_rotation_smoothing_speed>` 的速度與其目標旋轉對齊。
 
-\ **Note:** This property has no effect if :ref:`ignore_rotation<class_Camera2D_property_ignore_rotation>` is ``true``.
+\ **注意：**\ 如果 :ref:`ignore_rotation<class_Camera2D_property_ignore_rotation>` 為 ``true``\ ，則該屬性無效。
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ If ``true``, the camera's view smoothly rotates, via asymptotic smoothing, to al
 - |void| **set_rotation_smoothing_speed**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation_smoothing_speed**\ (\ )
 
-The angular, asymptotic speed of the camera's rotation smoothing effect when :ref:`rotation_smoothing_enabled<class_Camera2D_property_rotation_smoothing_enabled>` is ``true``.
+當 :ref:`rotation_smoothing_enabled<class_Camera2D_property_rotation_smoothing_enabled>` 為 ``true`` 時，相機旋轉平滑效果的角度漸近速度。
 
 .. rst-class:: classref-item-separator
 
@@ -689,8 +689,8 @@ The camera's zoom. Higher values are more zoomed in. For example, a zoom of ``Ve
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_Camera2D_method_align:
 
@@ -712,7 +712,7 @@ Aligns the camera to the tracked node.
 
 |void| **force_update_scroll**\ (\ ) :ref:`🔗<class_Camera2D_method_force_update_scroll>`
 
-Forces the camera to update scroll immediately.
+強制相機立即更新滾動。
 
 .. rst-class:: classref-item-separator
 
@@ -724,7 +724,7 @@ Forces the camera to update scroll immediately.
 
 :ref:`float<class_float>` **get_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Camera2D_method_get_drag_margin>`
 
-Returns the specified :ref:`Side<enum_@GlobalScope_Side>`'s margin. See also :ref:`drag_bottom_margin<class_Camera2D_property_drag_bottom_margin>`, :ref:`drag_top_margin<class_Camera2D_property_drag_top_margin>`, :ref:`drag_left_margin<class_Camera2D_property_drag_left_margin>`, and :ref:`drag_right_margin<class_Camera2D_property_drag_right_margin>`.
+返回指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的邊距。另見 :ref:`drag_bottom_margin<class_Camera2D_property_drag_bottom_margin>`\ 、\ :ref:`drag_top_margin<class_Camera2D_property_drag_top_margin>`\ 、\ :ref:`drag_left_margin<class_Camera2D_property_drag_left_margin>` 和 :ref:`drag_right_margin<class_Camera2D_property_drag_right_margin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ Returns the specified :ref:`Side<enum_@GlobalScope_Side>`'s margin. See also :re
 
 :ref:`int<class_int>` **get_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`\ ) |const| :ref:`🔗<class_Camera2D_method_get_limit>`
 
-Returns the camera limit for the specified :ref:`Side<enum_@GlobalScope_Side>`. See also :ref:`limit_bottom<class_Camera2D_property_limit_bottom>`, :ref:`limit_top<class_Camera2D_property_limit_top>`, :ref:`limit_left<class_Camera2D_property_limit_left>`, and :ref:`limit_right<class_Camera2D_property_limit_right>`.
+返回指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的相機極限。另見 :ref:`limit_bottom<class_Camera2D_property_limit_bottom>`\ 、\ :ref:`limit_top<class_Camera2D_property_limit_top>`\ 、\ :ref:`limit_left<class_Camera2D_property_limit_left>` 和 :ref:`limit_right<class_Camera2D_property_limit_right>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -748,9 +748,9 @@ Returns the camera limit for the specified :ref:`Side<enum_@GlobalScope_Side>`. 
 
 :ref:`Vector2<class_Vector2>` **get_screen_center_position**\ (\ ) |const| :ref:`🔗<class_Camera2D_method_get_screen_center_position>`
 
-Returns the center of the screen from this camera's point of view, in global coordinates.
+返回該 **Camera2D** 視角下的螢幕中心位置，使用全域座標。
 
-\ **Note:** The exact targeted position of the camera may be different. See :ref:`get_target_position()<class_Camera2D_method_get_target_position>`.
+\ **注意：**\ 相機實際的目標位置可能與此不同。見 :ref:`get_target_position()<class_Camera2D_method_get_target_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -776,9 +776,9 @@ Returns the current screen rotation from this camera's point of view.
 
 :ref:`Vector2<class_Vector2>` **get_target_position**\ (\ ) |const| :ref:`🔗<class_Camera2D_method_get_target_position>`
 
-Returns this camera's target position, in global coordinates.
+返回該相機的目標位置，使用全域座標。
 
-\ **Note:** The returned value is not the same as :ref:`Node2D.global_position<class_Node2D_property_global_position>`, as it is affected by the drag properties. It is also not the same as the current position if :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` is ``true`` (see :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>`).
+\ **注意：**\ 返回值與 :ref:`Node2D.global_position<class_Node2D_property_global_position>` 不同，因為會受到拖動屬性的影響。如果 :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` 為 ``true`` ，也不等同於目前位置（見 :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -790,7 +790,7 @@ Returns this camera's target position, in global coordinates.
 
 :ref:`bool<class_bool>` **is_current**\ (\ ) |const| :ref:`🔗<class_Camera2D_method_is_current>`
 
-Returns ``true`` if this **Camera2D** is the active camera (see :ref:`Viewport.get_camera_2d()<class_Viewport_method_get_camera_2d>`).
+如果該 **Camera2D** 為活動相機，則返回 ``true``\ （見 :ref:`Viewport.get_camera_2d()<class_Viewport_method_get_camera_2d>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -802,7 +802,7 @@ Returns ``true`` if this **Camera2D** is the active camera (see :ref:`Viewport.g
 
 |void| **make_current**\ (\ ) :ref:`🔗<class_Camera2D_method_make_current>`
 
-Forces this **Camera2D** to become the current active one. :ref:`enabled<class_Camera2D_property_enabled>` must be ``true``.
+強制該 **Camera2D** 成為目前的活動相機。\ :ref:`enabled<class_Camera2D_property_enabled>` 必須為 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -814,9 +814,9 @@ Forces this **Camera2D** to become the current active one. :ref:`enabled<class_C
 
 |void| **reset_smoothing**\ (\ ) :ref:`🔗<class_Camera2D_method_reset_smoothing>`
 
-Sets the camera's position immediately to its current smoothing destination.
+將相機的位置立即設定為其目前平滑的目標位置。
 
-This method has no effect if :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` is ``false``.
+當 :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` 為 ``false`` 時，本方法無效。
 
 .. rst-class:: classref-item-separator
 
@@ -828,7 +828,7 @@ This method has no effect if :ref:`position_smoothing_enabled<class_Camera2D_pro
 
 |void| **set_drag_margin**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, drag_margin\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Camera2D_method_set_drag_margin>`
 
-Sets the specified :ref:`Side<enum_@GlobalScope_Side>`'s margin. See also :ref:`drag_bottom_margin<class_Camera2D_property_drag_bottom_margin>`, :ref:`drag_top_margin<class_Camera2D_property_drag_top_margin>`, :ref:`drag_left_margin<class_Camera2D_property_drag_left_margin>`, and :ref:`drag_right_margin<class_Camera2D_property_drag_right_margin>`.
+設定指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的邊距。另見 :ref:`drag_bottom_margin<class_Camera2D_property_drag_bottom_margin>`\ 、\ :ref:`drag_top_margin<class_Camera2D_property_drag_top_margin>`\ 、\ :ref:`drag_left_margin<class_Camera2D_property_drag_left_margin>` 和 :ref:`drag_right_margin<class_Camera2D_property_drag_right_margin>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -840,14 +840,14 @@ Sets the specified :ref:`Side<enum_@GlobalScope_Side>`'s margin. See also :ref:`
 
 |void| **set_limit**\ (\ margin\: :ref:`Side<enum_@GlobalScope_Side>`, limit\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Camera2D_method_set_limit>`
 
-Sets the camera limit for the specified :ref:`Side<enum_@GlobalScope_Side>`. See also :ref:`limit_bottom<class_Camera2D_property_limit_bottom>`, :ref:`limit_top<class_Camera2D_property_limit_top>`, :ref:`limit_left<class_Camera2D_property_limit_left>`, and :ref:`limit_right<class_Camera2D_property_limit_right>`.
+設定指定邊 :ref:`Side<enum_@GlobalScope_Side>` 的相機極限。另見 :ref:`limit_bottom<class_Camera2D_property_limit_bottom>`\ 、\ :ref:`limit_top<class_Camera2D_property_limit_top>`\ 、\ :ref:`limit_left<class_Camera2D_property_limit_left>` 和 :ref:`limit_right<class_Camera2D_property_limit_right>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

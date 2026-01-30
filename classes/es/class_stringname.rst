@@ -1090,14 +1090,14 @@ Returns ``true`` if this string is a valid color in hexadecimal HTML notation. T
 
 **Obsoleto:** Use :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>` instead.
 
-Returns ``true`` if this string is a valid identifier. A valid identifier may contain only letters, digits and underscores (``_``), and the first character may not be a digit.
+Devuelve ``true`` si esta string es un identificador válido. Un identificador válido solo puede contener letras, dígitos y guiones bajos (``_``), y el primer carácter no puede ser un dígito.
 
 ::
 
-    print("node_2d".is_valid_identifier())    # Prints true
-    print("TYPE_FLOAT".is_valid_identifier()) # Prints true
-    print("1st_method".is_valid_identifier()) # Prints false
-    print("MyMethod#2".is_valid_identifier()) # Prints false
+    print("node_2d".is_valid_identifier())    # Imprime true
+    print("TYPE_FLOAT".is_valid_identifier()) # Imprime true
+    print("1st_method".is_valid_identifier()) # Imprime false
+    print("MyMethod#2".is_valid_identifier()) # Imprime false
 
 .. rst-class:: classref-item-separator
 
@@ -1109,15 +1109,15 @@ Returns ``true`` if this string is a valid identifier. A valid identifier may co
 
 :ref:`bool<class_bool>` **is_valid_int**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_int>`
 
-Returns ``true`` if this string represents a valid integer. A valid integer only contains digits, and may be prefixed with a positive (``+``) or negative (``-``) sign. See also :ref:`to_int()<class_StringName_method_to_int>`.
+Devuelve ``true`` si esta string representa un entero válido. Un entero válido solo contiene dígitos y puede ir prefijado con un signo positivo (``+``) o negativo (``-``). Véase también :ref:`to_int()<class_StringName_method_to_int>`.
 
 ::
 
-    print("7".is_valid_int())    # Prints true
-    print("1.65".is_valid_int()) # Prints false
-    print("Hi".is_valid_int())   # Prints false
-    print("+3".is_valid_int())   # Prints true
-    print("-12".is_valid_int())  # Prints true
+    print("7".is_valid_int())    # Imprime true
+    print("1.65".is_valid_int()) # Imprime false
+    print("Hi".is_valid_int())   # Imprime false
+    print("+3".is_valid_int())   # Imprime true
+    print("-12".is_valid_int())  # Imprime true
 
 .. rst-class:: classref-item-separator
 
@@ -1129,7 +1129,7 @@ Returns ``true`` if this string represents a valid integer. A valid integer only
 
 :ref:`bool<class_bool>` **is_valid_ip_address**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_ip_address>`
 
-Returns ``true`` if this string represents a well-formatted IPv4 or IPv6 address. This method considers `reserved IP addresses <https://en.wikipedia.org/wiki/Reserved_IP_addresses>`__ such as ``"0.0.0.0"`` and ``"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"`` as valid.
+Devuelve ``true`` si esta string representa una dirección IPv4 o IPv6 bien formateada. Este método considera válidas las `direcciones IP reservadas <https://en.wikipedia.org/wiki/Reserved_IP_addresses>`__ como ``"0.0.0.0"`` y ``"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"``.
 
 .. rst-class:: classref-item-separator
 
@@ -1141,22 +1141,22 @@ Returns ``true`` if this string represents a well-formatted IPv4 or IPv6 address
 
 :ref:`bool<class_bool>` **is_valid_unicode_identifier**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_unicode_identifier>`
 
-Returns ``true`` if this string is a valid Unicode identifier.
+Devuelve ``true`` si esta string es un identificador Unicode válido.
 
-A valid Unicode identifier must begin with a Unicode character of class ``XID_Start`` or ``"_"``, and may contain Unicode characters of class ``XID_Continue`` in the other positions.
+Un identificador Unicode válido debe comenzar con un carácter Unicode de clase ``XID_Start`` o ``"_"``, y puede contener caracteres Unicode de clase ``XID_Continue`` en las otras posiciones.
 
 ::
 
-    print("node_2d".is_valid_unicode_identifier())      # Prints true
-    print("1st_method".is_valid_unicode_identifier())   # Prints false
-    print("MyMethod#2".is_valid_unicode_identifier())   # Prints false
-    print("állóképesség".is_valid_unicode_identifier()) # Prints true
-    print("выносливость".is_valid_unicode_identifier()) # Prints true
-    print("体力".is_valid_unicode_identifier())         # Prints true
+    print("node_2d".is_valid_unicode_identifier())      # Imprime true
+    print("1st_method".is_valid_unicode_identifier())   # Imprime false
+    print("MyMethod#2".is_valid_unicode_identifier())   # Imprime false
+    print("állóképesség".is_valid_unicode_identifier()) # Imprime true
+    print("выносливость".is_valid_unicode_identifier()) # Imprime true
+    print("体力".is_valid_unicode_identifier())         # Imprime true
 
-See also :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>`.
+Véase también :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>`.
 
-\ **Note:** This method checks identifiers the same way as GDScript. See :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` for more advanced checks.
+\ **Nota:** Este método verifica identificadores de la misma manera que GDScript. Consulta :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` para comprobaciones más avanzadas.
 
 .. rst-class:: classref-item-separator
 
@@ -1168,25 +1168,25 @@ See also :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_asci
 
 :ref:`String<class_String>` **join**\ (\ parts\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_StringName_method_join>`
 
-Returns the concatenation of ``parts``' elements, with each element separated by the string calling this method. This method is the opposite of :ref:`split()<class_StringName_method_split>`.
+Devuelve la concatenación de los elementos de ``parts``, con cada elemento separado por la string que llama a este método. Este método es lo opuesto a :ref:`split()<class_StringName_method_split>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var fruits = ["Apple", "Orange", "Pear", "Kiwi"]
+    var fruits = ["Manzana", "Naranja", "Pera", "Kiwi"]
 
-    print(", ".join(fruits))  # Prints "Apple, Orange, Pear, Kiwi"
-    print("---".join(fruits)) # Prints "Apple---Orange---Pear---Kiwi"
+    print(", ".join(fruits))  # Imprime "Manzana, Naranja, Pera, Kiwi"
+    print("---".join(fruits)) # Imprime "Manzana---Naranja---Pera---Kiwi"
 
  .. code-tab:: csharp
 
-    string[] fruits = ["Apple", "Orange", "Pear", "Kiwi"];
+    string[] fruits = ["Manzana", "Naranja", "Pera", "Kiwi"];
 
-    // In C#, this method is static.
-    GD.Print(string.Join(", ", fruits));  // Prints "Apple, Orange, Pear, Kiwi"
-    GD.Print(string.Join("---", fruits)); // Prints "Apple---Orange---Pear---Kiwi"
+    // En C#, este método es estático.
+    GD.Print(string.Join(", ", fruits));  // Imprime "Manzana, Naranja, Pera, Kiwi"
+    GD.Print(string.Join("---", fruits)); // Imprime "Manzana---Naranja---Pera---Kiwi"
 
 
 
@@ -1212,12 +1212,12 @@ Devuelve una copia de la string con los caracteres especiales escapados usando e
 
 :ref:`String<class_String>` **left**\ (\ length\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_left>`
 
-Returns the first ``length`` characters from the beginning of the string. If ``length`` is negative, strips the last ``length`` characters from the string's end.
+Devuelve los primeros ``length`` caracteres desde el principio de la string. Si ``length`` es negativo, elimina los últimos ``length`` caracteres del final de la string.
 
 ::
 
-    print("Hello World!".left(3))  # Prints "Hel"
-    print("Hello World!".left(-4)) # Prints "Hello Wo"
+    print("¡Hola mundo!".left(3))  # Imprime "¡Ho"
+    print("¡Hola mundo!".left(-4)) # Imprime "¡Hola mu"
 
 .. rst-class:: classref-item-separator
 
@@ -1291,7 +1291,7 @@ Realiza una comparación simple de expresiones **insensible a mayúsculas/minús
 
 :ref:`PackedByteArray<class_PackedByteArray>` **md5_buffer**\ (\ ) |const| :ref:`🔗<class_StringName_method_md5_buffer>`
 
-Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as a :ref:`PackedByteArray<class_PackedByteArray>`.
+Devuelve el `hash MD5 <https://en.wikipedia.org/wiki/MD5>`__ de la string como un :ref:`PackedByteArray<class_PackedByteArray>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1303,7 +1303,7 @@ Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as a 
 
 :ref:`String<class_String>` **md5_text**\ (\ ) |const| :ref:`🔗<class_StringName_method_md5_text>`
 
-Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as another :ref:`String<class_String>`.
+Devuelve el `hash MD5 <https://en.wikipedia.org/wiki/MD5>`__ de la string como otra :ref:`String<class_String>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1367,7 +1367,7 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`String<class_String>` **pad_decimals**\ (\ digits\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_pad_decimals>`
 
-Formats the string representing a number to have an exact number of ``digits`` *after* the decimal point.
+Formatea la string que representa un número para que tenga exactamente ``digits`` dígitos *después* del punto decimal.
 
 .. rst-class:: classref-item-separator
 
@@ -1379,7 +1379,7 @@ Formats the string representing a number to have an exact number of ``digits`` *
 
 :ref:`String<class_String>` **pad_zeros**\ (\ digits\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_pad_zeros>`
 
-Formats the string representing a number to have an exact number of ``digits`` *before* the decimal point.
+Formatea la string que representa un número para que tenga exactamente ``digits`` dígitos *antes* del punto decimal.
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ Elimina todas las ocurrencias del carácter Unicode con el código ``what``. Ver
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_StringName_method_remove_char>`.
+Elimina cualquier ocurrencia de los caracteres en ``chars``. Véase también :ref:`remove_char()<class_StringName_method_remove_char>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1453,7 +1453,7 @@ Reemplaza todas las instancias de ``what`` dentro de la string con el ``forwhat`
 
 :ref:`String<class_String>` **replace_char**\ (\ key\: :ref:`int<class_int>`, with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_StringName_method_replace_char>`
 
-Replaces all occurrences of the Unicode character with code ``key`` with the Unicode character with code ``with``. Faster version of :ref:`replace()<class_StringName_method_replace>` when the key is only one character long. To get a single character use ``"X".unicode_at(0)`` (note that some strings, like compound letters and emoji, can be composed of multiple unicode codepoints, and will not work with this method, use :ref:`length()<class_StringName_method_length>` to make sure).
+Reemplaza todas las ocurrencias del carácter Unicode con el código ``key`` con el carácter Unicode con el código ``with``. Versión más rápida de :ref:`replace()<class_StringName_method_replace>` cuando la clave tiene solo un carácter de longitud. Para obtener un solo carácter, usa ``"X".unicode_at(0)`` (ten en cuenta que algunas strings, como las letras compuestas y los emojis, pueden estar compuestas de múltiples puntos de código Unicode, y no funcionarán con este método; usa :ref:`length()<class_StringName_method_length>` para asegurarte).
 
 .. rst-class:: classref-item-separator
 
@@ -1501,11 +1501,11 @@ Devuelve la copia de esta string en orden inverso. Esta operación funciona en p
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_StringName_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_StringName_method_find>`.
+Devuelve el índice de la **última** ocurrencia de ``what`` en esta string, o ``-1`` si no hay ninguna. El inicio de la búsqueda se puede especificar con ``from``, continuando hacia el principio de la string. Este método es el inverso de :ref:`find()<class_StringName_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Nota:** Un valor negativo de ``from`` se convierte en un índice de inicio contando hacia atrás desde el último índice posible con espacio suficiente para encontrar ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Nota:** Un valor de ``from`` mayor que el último índice posible con espacio suficiente para encontrar ``what`` se considera fuera de límites y devuelve ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1558,27 +1558,27 @@ Formatea la string para que tenga al menos ``min_length`` de longitud, añadiend
 
 :ref:`PackedStringArray<class_PackedStringArray>` **rsplit**\ (\ delimiter\: :ref:`String<class_String>` = "", allow_empty\: :ref:`bool<class_bool>` = true, maxsplit\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_rsplit>`
 
-Splits the string using a ``delimiter`` and returns an array of the substrings, starting from the end of the string. The splits in the returned array appear in the same order as the original string. If ``delimiter`` is an empty string, each substring will be a single character.
+Divide la string usando un ``delimiter`` y devuelve un array de las subcadenas, empezando desde el final de la string. Las divisiones en el array devuelto aparecen en el mismo orden que la string original. Si ``delimiter`` es una string vacía, cada subcadena será un solo carácter.
 
-If ``allow_empty`` is ``false``, empty strings between adjacent delimiters are excluded from the array.
+Si ``allow_empty`` es ``false``, las strings vacías entre delimitadores adyacentes se excluyen del array.
 
-If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``maxsplit``. By default, the entire string is split, which is mostly identical to :ref:`split()<class_StringName_method_split>`.
+Si ``maxsplit`` es mayor que ``0``, el número de divisiones no puede exceder ``maxsplit``. Por defecto, la string completa se divide, lo que es casi idéntico a :ref:`split()<class_StringName_method_split>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var some_string = "One,Two,Three,Four"
+    var some_string = "Uno,Dos,Tres,Cuatro"
     var some_array = some_string.rsplit(",", true, 1)
 
-    print(some_array.size()) # Prints 2
-    print(some_array[0])     # Prints "One,Two,Three"
-    print(some_array[1])     # Prints "Four"
+    print(some_array.size()) # Imprime 2
+    print(some_array[0])     # Imprime "Uno,Dos,Tres"
+    print(some_array[1])     # Imprime "Cuatro"
 
  .. code-tab:: csharp
 
-    // In C#, there is no String.RSplit() method.
+    // En C#, no existe el método String.RSplit().
 
 
 

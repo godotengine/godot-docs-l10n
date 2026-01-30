@@ -5,32 +5,32 @@
 SkeletonProfile
 ===============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>`
+**被繼承：** :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>`
 
-Base class for a profile of a virtual skeleton used as a target for retargeting.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This resource is used in :ref:`EditorScenePostImport<class_EditorScenePostImport>`. Some parameters are referring to bones in :ref:`Skeleton3D<class_Skeleton3D>`, :ref:`Skin<class_Skin>`, :ref:`Animation<class_Animation>`, and some other nodes are rewritten based on the parameters of **SkeletonProfile**.
-
-\ **Note:** These parameters need to be set only when creating a custom profile. In :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>`, they are defined internally as read-only values.
+用作重定向目標的虛擬骨架的設定檔的基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Retargeting 3D Skeletons <../tutorials/assets_pipeline/retargeting_3d_skeletons>`
+這個資源在 :ref:`EditorScenePostImport<class_EditorScenePostImport>` 中使用。一些參數是指 :ref:`Skeleton3D<class_Skeleton3D>`\ 、\ :ref:`Skin<class_Skin>`\ 、\ :ref:`Animation<class_Animation>` 中的骨骼，還有一些節點是根據 **SkeletonProfile** 中的參數改寫的。
+
+\ **注意：**\ 只有在建立自訂配置時這些參數才需要被設定。在 :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 中，它們在內部被定義為唯讀值。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`重定向 3D 骨架 <../tutorials/assets_pipeline/retargeting_3d_skeletons>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -103,8 +103,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_SkeletonProfile_signal_profile_updated:
 
@@ -112,9 +112,9 @@ Signals
 
 **profile_updated**\ (\ ) :ref:`🔗<class_SkeletonProfile_signal_profile_updated>`
 
-This signal is emitted when change the value in profile. This is used to update key name in the :ref:`BoneMap<class_BoneMap>` and to redraw the :ref:`BoneMap<class_BoneMap>` editor.
+更改配置中的值時會發出該訊號。這被用於更新 :ref:`BoneMap<class_BoneMap>` 中的鍵名並重繪 :ref:`BoneMap<class_BoneMap>` 編輯器。
 
-\ **Note:** This signal is not connected directly to editor to simplify the reference, instead it is passed on to editor through the :ref:`BoneMap<class_BoneMap>`.
+\ **注意：**\ 為了簡化引用，這個訊號沒有直接連接到編輯器，而是通過 :ref:`BoneMap<class_BoneMap>` 傳遞給編輯器。
 
 .. rst-class:: classref-section-separator
 
@@ -122,8 +122,8 @@ This signal is emitted when change the value in profile. This is used to update 
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_SkeletonProfile_TailDirection:
 
@@ -137,7 +137,7 @@ enum **TailDirection**: :ref:`🔗<enum_SkeletonProfile_TailDirection>`
 
 :ref:`TailDirection<enum_SkeletonProfile_TailDirection>` **TAIL_DIRECTION_AVERAGE_CHILDREN** = ``0``
 
-Direction to the average coordinates of bone children.
+子級骨骼平均座標的方向。
 
 .. _class_SkeletonProfile_constant_TAIL_DIRECTION_SPECIFIC_CHILD:
 
@@ -145,7 +145,7 @@ Direction to the average coordinates of bone children.
 
 :ref:`TailDirection<enum_SkeletonProfile_TailDirection>` **TAIL_DIRECTION_SPECIFIC_CHILD** = ``1``
 
-Direction to the coordinates of specified bone child.
+指定子級骨骼座標的方向。
 
 .. _class_SkeletonProfile_constant_TAIL_DIRECTION_END:
 
@@ -153,7 +153,7 @@ Direction to the coordinates of specified bone child.
 
 :ref:`TailDirection<enum_SkeletonProfile_TailDirection>` **TAIL_DIRECTION_END** = ``2``
 
-Direction is not calculated.
+不計算方向。
 
 .. rst-class:: classref-section-separator
 
@@ -161,8 +161,8 @@ Direction is not calculated.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_SkeletonProfile_property_bone_size:
 
@@ -175,9 +175,9 @@ Property Descriptions
 - |void| **set_bone_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bone_size**\ (\ )
 
-The amount of bones in retargeting section's :ref:`BoneMap<class_BoneMap>` editor. For example, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` has 56 bones.
+重定向部分的 :ref:`BoneMap<class_BoneMap>` 編輯器中的骨骼數量。例如，\ :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 有 56 塊骨頭。
 
-The size of elements in :ref:`BoneMap<class_BoneMap>` updates when changing this property in it's assigned **SkeletonProfile**.
+\ :ref:`BoneMap<class_BoneMap>` 中元素的大小在其分配的 **SkeletonProfile** 中更改該屬性時更新。
 
 .. rst-class:: classref-item-separator
 
@@ -194,9 +194,9 @@ The size of elements in :ref:`BoneMap<class_BoneMap>` updates when changing this
 - |void| **set_group_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_group_size**\ (\ )
 
-The amount of groups of bones in retargeting section's :ref:`BoneMap<class_BoneMap>` editor. For example, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` has 4 groups.
+重定向部分的 :ref:`BoneMap<class_BoneMap>` 編輯器中的骨骼組的數量。例如，\ :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 有 4 個組。
 
-This property exists to separate the bone list into several sections in the editor.
+這個屬性的存在是為了在編輯器中把骨骼列表分成幾個部分。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ This property exists to separate the bone list into several sections in the edit
 - |void| **set_root_bone**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_root_bone**\ (\ )
 
-A bone name that will be used as the root bone in :ref:`AnimationTree<class_AnimationTree>`. This should be the bone of the parent of hips that exists at the world origin.
+會被用作 :ref:`AnimationTree<class_AnimationTree>` 中根骨骼的骨骼名稱。應該是髖部父級的骨骼，位於世界原點。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ A bone name that will be used as the root bone in :ref:`AnimationTree<class_Anim
 - |void| **set_scale_base_bone**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_scale_base_bone**\ (\ )
 
-A bone name which will use model's height as the coefficient for normalization. For example, :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` defines it as ``Hips``.
+骨骼的名稱，將使用模型的高度作為正規化的係數。例如，\ :ref:`SkeletonProfileHumanoid<class_SkeletonProfileHumanoid>` 將其定義為 ``Hips`` 。
 
 .. rst-class:: classref-section-separator
 
@@ -238,8 +238,8 @@ A bone name which will use model's height as the coefficient for normalization. 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_SkeletonProfile_method_find_bone:
 
@@ -247,7 +247,7 @@ Method Descriptions
 
 :ref:`int<class_int>` **find_bone**\ (\ bone_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_find_bone>`
 
-Returns the bone index that matches ``bone_name`` as its name.
+返回名稱與 ``bone_name`` 配對的骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -259,9 +259,9 @@ Returns the bone index that matches ``bone_name`` as its name.
 
 :ref:`StringName<class_StringName>` **get_bone_name**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_bone_name>`
 
-Returns the name of the bone at ``bone_idx`` that will be the key name in the :ref:`BoneMap<class_BoneMap>`.
+返回位於 ``bone_idx`` 的骨骼的名稱，會成為 :ref:`BoneMap<class_BoneMap>` 中的鍵名。
 
-In the retargeting process, the returned bone name is the bone name of the target skeleton.
+在重定向過程中，返回的骨骼名稱是目標骨架中的骨骼名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ In the retargeting process, the returned bone name is the bone name of the targe
 
 :ref:`StringName<class_StringName>` **get_bone_parent**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_bone_parent>`
 
-Returns the name of the bone which is the parent to the bone at ``bone_idx``. The result is empty if the bone has no parent.
+返回位於 ``bone_idx`` 的骨骼的父級骨骼的名稱。如果該骨骼沒有父級，則結果為空。
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the name of the bone which is the parent to the bone at ``bone_idx``. Th
 
 :ref:`StringName<class_StringName>` **get_bone_tail**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_bone_tail>`
 
-Returns the name of the bone which is the tail of the bone at ``bone_idx``.
+返回 ``bone_idx`` 處骨骼的尾部骨骼的名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Returns the name of the bone which is the tail of the bone at ``bone_idx``.
 
 :ref:`StringName<class_StringName>` **get_group**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_group>`
 
-Returns the group of the bone at ``bone_idx``.
+返回索引為 ``bone_idx`` 的骨骼的群組。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Returns the group of the bone at ``bone_idx``.
 
 :ref:`StringName<class_StringName>` **get_group_name**\ (\ group_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_group_name>`
 
-Returns the name of the group at ``group_idx`` that will be the drawing group in the :ref:`BoneMap<class_BoneMap>` editor.
+返回 ``group_idx`` 處的組的名稱，該組將成為 :ref:`BoneMap<class_BoneMap>` 編輯器中的繪製組。
 
 .. rst-class:: classref-item-separator
 
@@ -321,9 +321,9 @@ Returns the name of the group at ``group_idx`` that will be the drawing group in
 
 :ref:`Vector2<class_Vector2>` **get_handle_offset**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_handle_offset>`
 
-Returns the offset of the bone at ``bone_idx`` that will be the button position in the :ref:`BoneMap<class_BoneMap>` editor.
+返回在 ``bone_idx`` 處的骨骼的偏移量，這將是 :ref:`BoneMap<class_BoneMap>` 編輯器中的按鈕位元置。
 
-This is the offset with origin at the top left corner of the square.
+這是一個偏移量，原點在正方形的左上角。
 
 .. rst-class:: classref-item-separator
 
@@ -335,7 +335,7 @@ This is the offset with origin at the top left corner of the square.
 
 :ref:`Transform3D<class_Transform3D>` **get_reference_pose**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_reference_pose>`
 
-Returns the reference pose transform for bone ``bone_idx``.
+返回索引為 ``bone_idx`` 的骨骼的參考姿勢變換。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ Returns the reference pose transform for bone ``bone_idx``.
 
 :ref:`TailDirection<enum_SkeletonProfile_TailDirection>` **get_tail_direction**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_tail_direction>`
 
-Returns the tail direction of the bone at ``bone_idx``.
+返回索引為 ``bone_idx`` 的骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -359,7 +359,7 @@ Returns the tail direction of the bone at ``bone_idx``.
 
 :ref:`Texture2D<class_Texture2D>` **get_texture**\ (\ group_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SkeletonProfile_method_get_texture>`
 
-Returns the texture of the group at ``group_idx`` that will be the drawing group background image in the :ref:`BoneMap<class_BoneMap>` editor.
+返回 ``group_idx`` 處的組的紋理，該組將作為 :ref:`BoneMap<class_BoneMap>` 編輯器中的繪製組的背景圖像。
 
 .. rst-class:: classref-item-separator
 
@@ -385,9 +385,9 @@ This value is used by the bone map editor. If this method returns ``true``, and 
 
 |void| **set_bone_name**\ (\ bone_idx\: :ref:`int<class_int>`, bone_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_bone_name>`
 
-Sets the name of the bone at ``bone_idx`` that will be the key name in the :ref:`BoneMap<class_BoneMap>`.
+設定在 ``bone_idx`` 處的骨骼的名稱，這將是 :ref:`BoneMap<class_BoneMap>` 中的鍵名。
 
-In the retargeting process, the setting bone name is the bone name of the target skeleton.
+在重定向過程中，設定的骨骼名稱是目標骨架的骨骼名稱。
 
 .. rst-class:: classref-item-separator
 
@@ -399,7 +399,7 @@ In the retargeting process, the setting bone name is the bone name of the target
 
 |void| **set_bone_parent**\ (\ bone_idx\: :ref:`int<class_int>`, bone_parent\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_bone_parent>`
 
-Sets the bone with name ``bone_parent`` as the parent of the bone at ``bone_idx``. If an empty string is passed, then the bone has no parent.
+將名稱為 ``bone_parent`` 的骨骼設定為索引為 ``bone_idx`` 的骨骼的父級。如果傳入的是空字串，則該骨骼沒有父級。
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Sets the bone with name ``bone_parent`` as the parent of the bone at ``bone_idx`
 
 |void| **set_bone_tail**\ (\ bone_idx\: :ref:`int<class_int>`, bone_tail\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_bone_tail>`
 
-Sets the bone with name ``bone_tail`` as the tail of the bone at ``bone_idx``.
+將名稱為 ``bone_tail`` 的骨骼設定為索引為 ``bone_idx`` 的骨骼的尾部。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Sets the bone with name ``bone_tail`` as the tail of the bone at ``bone_idx``.
 
 |void| **set_group**\ (\ bone_idx\: :ref:`int<class_int>`, group\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_group>`
 
-Sets the group of the bone at ``bone_idx``.
+設定索引為 ``bone_idx`` 的骨骼的群組。
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Sets the group of the bone at ``bone_idx``.
 
 |void| **set_group_name**\ (\ group_idx\: :ref:`int<class_int>`, group_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_group_name>`
 
-Sets the name of the group at ``group_idx`` that will be the drawing group in the :ref:`BoneMap<class_BoneMap>` editor.
+設定在 ``group_idx`` 處的組的名稱，這將是 :ref:`BoneMap<class_BoneMap>` 編輯器中的繪製組。
 
 .. rst-class:: classref-item-separator
 
@@ -447,9 +447,9 @@ Sets the name of the group at ``group_idx`` that will be the drawing group in th
 
 |void| **set_handle_offset**\ (\ bone_idx\: :ref:`int<class_int>`, handle_offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_handle_offset>`
 
-Sets the offset of the bone at ``bone_idx`` that will be the button position in the :ref:`BoneMap<class_BoneMap>` editor.
+設定在 ``bone_idx`` 處的骨骼的偏移量，這將是 :ref:`BoneMap<class_BoneMap>` 編輯器中的按鈕位元置。
 
-This is the offset with origin at the top left corner of the square.
+這是原點在正方形左上角的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ This is the offset with origin at the top left corner of the square.
 
 |void| **set_reference_pose**\ (\ bone_idx\: :ref:`int<class_int>`, bone_name\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_reference_pose>`
 
-Sets the reference pose transform for bone ``bone_idx``.
+設定骨骼 ``bone_idx`` 的參考姿勢變換。
 
 .. rst-class:: classref-item-separator
 
@@ -485,9 +485,9 @@ Sets the required status for bone ``bone_idx`` to ``required``.
 
 |void| **set_tail_direction**\ (\ bone_idx\: :ref:`int<class_int>`, tail_direction\: :ref:`TailDirection<enum_SkeletonProfile_TailDirection>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_tail_direction>`
 
-Sets the tail direction of the bone at ``bone_idx``.
+設定在 ``bone_idx`` 處的骨骼的尾部方向。
 
-\ **Note:** This only specifies the method of calculation. The actual coordinates required should be stored in an external skeleton, so the calculation itself needs to be done externally.
+\ **注意：**\ 這裡只規定了計算方法。所需的實際座標應該儲存在外部骨架中，因此計算本身需要在外部完成。
 
 .. rst-class:: classref-item-separator
 
@@ -499,14 +499,14 @@ Sets the tail direction of the bone at ``bone_idx``.
 
 |void| **set_texture**\ (\ group_idx\: :ref:`int<class_int>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_SkeletonProfile_method_set_texture>`
 
-Sets the texture of the group at ``group_idx`` that will be the drawing group background image in the :ref:`BoneMap<class_BoneMap>` editor.
+設定在 ``group_idx`` 處的組的紋理，這將是 :ref:`BoneMap<class_BoneMap>` 編輯器中繪製組的背景圖像。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

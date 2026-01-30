@@ -5,32 +5,32 @@
 EditorPaths
 ===========
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-Editor-only singleton that returns paths to various OS-specific data folders and files.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This editor-only singleton returns OS-specific paths to various data folders and files. It can be used in editor plugins to ensure files are saved in the correct location on each operating system.
-
-\ **Note:** This singleton is not accessible in exported projects. Attempting to access it in an exported project will result in a script error as the singleton won't be declared. To prevent script errors in exported projects, use :ref:`Engine.has_singleton()<class_Engine_method_has_singleton>` to check whether the singleton is available before using it.
-
-\ **Note:** On the Linux/BSD platform, Godot complies with the `XDG Base Directory Specification <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__. You can override environment variables following the specification to change the editor and project data paths.
+編輯器專用單例，返回特定於作業系統的各種資料檔案夾和檔的路徑。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`File paths in Godot projects <../tutorials/io/data_paths>`
+這個僅供編輯器使用的單例，可返回特定於作業系統的，到各種資料檔案夾和檔的路徑。它可以在編輯器外掛程式中使用，以確保檔被保存在各個作業系統的正確位置。
+
+\ **注意：**\ 這個單例在匯出的專案中是不可存取的。嘗試在匯出的專案中存取它會產生腳本錯誤，因為該單例沒有被宣告。為防止匯出專案中出現腳本錯誤，請使用 :ref:`Engine.has_singleton()<class_Engine_method_has_singleton>` 檢查單例是否可用後再使用該單例。
+
+\ **注意：**\ 在 Linux/BSD 平臺上，Godot 遵守 `XDG 基本目錄規範 <https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__\ 。可以按照規範覆蓋環境變數，來更改編輯器和專案資料路徑。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`Godot 專案中的檔路徑 <../tutorials/io/data_paths>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_EditorPaths_method_get_cache_dir:
 
@@ -136,7 +136,7 @@ Returns the relative path to the editor settings for this project. This is usual
 
 :ref:`String<class_String>` **get_self_contained_file**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_self_contained_file>`
 
-Returns the absolute path to the self-contained file that makes the current Godot editor instance be considered as self-contained. Returns an empty string if the current Godot editor instance isn't self-contained. See also :ref:`is_self_contained()<class_EditorPaths_method_is_self_contained>`.
+返回自包含檔的絕對路徑，該檔會使目前 Godot 編輯器實例被視為是自包含的。如果目前 Godot 編輯器實例不是自包含的，則返回一個空字串。另見 :ref:`is_self_contained()<class_EditorPaths_method_is_self_contained>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -148,22 +148,22 @@ Returns the absolute path to the self-contained file that makes the current Godo
 
 :ref:`bool<class_bool>` **is_self_contained**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_is_self_contained>`
 
-Returns ``true`` if the editor is marked as self-contained, ``false`` otherwise. When self-contained mode is enabled, user configuration, data and cache files are saved in an ``editor_data/`` folder next to the editor binary. This makes portable usage easier and ensures the Godot editor minimizes file writes outside its own folder. Self-contained mode is not available for exported projects.
+如果編輯器被標記為是自包含的，則返回 ``true``\ ，否則返回 ``false``\ 。啟用自包含模式後，使用者配置、資料和快取檔案將保被存在編輯器二進位檔案旁邊的 ``editor_data/`` 資料夾中。這使得便攜使用更容易，並確保 Godot 編輯器最大限度地減少將檔寫入到它自己的資料夾之外的情況。自包含模式不適用於匯出的專案。
 
-Self-contained mode can be enabled by creating a file named ``._sc_`` or ``_sc_`` in the same folder as the editor binary or macOS .app bundle while the editor is not running. See also :ref:`get_self_contained_file()<class_EditorPaths_method_get_self_contained_file>`.
+當編輯器未運作時，可以通過在與編輯器二進位檔案或 macOS .app 組合包相同的檔案夾中建立名為 ``._sc_`` 或 ``_sc_`` 的檔來啟用自包含模式。另見 :ref:`get_self_contained_file()<class_EditorPaths_method_get_self_contained_file>`\ 。
 
-\ **Note:** On macOS, quarantine flag should be manually removed before using self-contained mode, see `Running on macOS <https://docs.godotengine.org/en/stable/tutorials/export/running_on_macos.html>`__.
+\ **注意：**\ 在 macOS 上，應當在使用自包含模式前手動移除隔離旗標，見\ `《在 macOS 上運作》 <https://docs.godotengine.org/en/stable/tutorials/export/running_on_macos.html>`__\ 。
 
-\ **Note:** On macOS, placing ``_sc_`` or any other file inside .app bundle will break digital signature and make it non-portable, consider placing it in the same folder as the .app bundle instead.
+\ **注意：**\ 在 macOS 上，將 ``_sc_`` 或任何其他檔案放入 .app 組合包中會破壞其數位簽章，使其不再便攜，請考慮改為放在與 .app 組合包相同的資料夾中。
 
-\ **Note:** The Steam release of Godot uses self-contained mode by default.
+\ **注意：**\ Godot 的 Steam 版本預設使用自包含模式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

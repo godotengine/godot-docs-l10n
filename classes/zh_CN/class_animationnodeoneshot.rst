@@ -5,81 +5,81 @@
 AnimationNodeOneShot
 ====================
 
-**Inherits:** :ref:`AnimationNodeSync<class_AnimationNodeSync>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AnimationNodeSync<class_AnimationNodeSync>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Plays an animation once in an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+在 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 中播放一次动画。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. This animation node will execute a sub-animation and return once it finishes. Blend times for fading in and out can be customized, as well as filters.
+添加到 :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>` 的资源。这个动画节点将执行子动画并在完成后返回。可以自定义淡入和淡出的混合时间以及过滤器。
 
-After setting the request and changing the animation playback, the one-shot node automatically clears the request on the next process frame by setting its ``request`` value to :ref:`ONE_SHOT_REQUEST_NONE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_NONE>`.
+在设置请求并更改动画播放后，一次性节点会在下一个处理帧中通过将其 ``request`` 值设置为 :ref:`ONE_SHOT_REQUEST_NONE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_NONE>` 来自动清除请求。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Play child animation connected to "shot" port.
+    # 播放连接到 “shot” 端口的子动画。
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE)
-    # Alternative syntax (same result as above).
+    # 替代语法（与上述结果相同）。
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FIRE
 
-    # Abort child animation connected to "shot" port.
+    # 中止连接到 “shot” 端口的子动画。
     animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT)
-    # Alternative syntax (same result as above).
-    animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_ABORT
-
-    # Abort child animation with fading out connected to "shot" port.
-    animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT)
-    # Alternative syntax (same result as above).
+    # 替代语法（与上述结果相同）。
     animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT
 
-    # Get current state (read-only).
-    animation_tree.get("parameters/OneShot/active")
-    # Alternative syntax (same result as above).
+    # 使用淡出的方法中止连接到 “shot”端口的子动画。
+    animation_tree.set("parameters/OneShot/request", AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT)
+    # 替代语法（与上述结果相同）。
+    animation_tree["parameters/OneShot/request"] = AnimationNodeOneShot.ONE_SHOT_REQUEST_FADE_OUT
+
+    # 获取当前状态（只读）。
+    animation_tree.get("parameters/OneShot/active"))
+    # 替代语法（与上述结果相同）。
     animation_tree["parameters/OneShot/active"]
 
-    # Get current internal state (read-only).
+    # 获取当前内部状态（只读）。
     animation_tree.get("parameters/OneShot/internal_active")
-    # Alternative syntax (same result as above).
+    # 替代语法（与上述结果相同）。
     animation_tree["parameters/OneShot/internal_active"]
 
  .. code-tab:: csharp
 
-    // Play child animation connected to "shot" port.
+    // 播放连接到 “shot” 端口的子动画。
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.Fire);
 
-    // Abort child animation connected to "shot" port.
+    // 中止连接到 “shot” 端口的子动画。
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.Abort);
 
-    // Abort child animation with fading out connected to "shot" port.
+    // 使用淡出的方法中止连接到 “shot”端口的子动画。
     animationTree.Set("parameters/OneShot/request", (int)AnimationNodeOneShot.OneShotRequest.FadeOut);
 
-    // Get current state (read-only).
+    // 获取当前状态（只读）。
     animationTree.Get("parameters/OneShot/active");
 
-    // Get current internal state (read-only).
+    // 获取当前内部状态（只读）。
     animationTree.Get("parameters/OneShot/internal_active");
 
 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
 
-- `Third Person Shooter (TPS) Demo <https://godotengine.org/asset-library/asset/2710>`__
+- `第三人称射击（TPS）演示 <https://godotengine.org/asset-library/asset/2710>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -112,8 +112,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_AnimationNodeOneShot_OneShotRequest:
 
@@ -127,7 +127,7 @@ enum **OneShotRequest**: :ref:`🔗<enum_AnimationNodeOneShot_OneShotRequest>`
 
 :ref:`OneShotRequest<enum_AnimationNodeOneShot_OneShotRequest>` **ONE_SHOT_REQUEST_NONE** = ``0``
 
-The default state of the request. Nothing is done.
+请求的默认状态。未完成任何操作。
 
 .. _class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE:
 
@@ -135,7 +135,7 @@ The default state of the request. Nothing is done.
 
 :ref:`OneShotRequest<enum_AnimationNodeOneShot_OneShotRequest>` **ONE_SHOT_REQUEST_FIRE** = ``1``
 
-The request to play the animation connected to "shot" port.
+播放连接到“shot”端口的动画的请求。
 
 .. _class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT:
 
@@ -143,7 +143,7 @@ The request to play the animation connected to "shot" port.
 
 :ref:`OneShotRequest<enum_AnimationNodeOneShot_OneShotRequest>` **ONE_SHOT_REQUEST_ABORT** = ``2``
 
-The request to stop the animation connected to "shot" port.
+停止连接到“shot”端口的动画的请求。
 
 .. _class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FADE_OUT:
 
@@ -151,7 +151,7 @@ The request to stop the animation connected to "shot" port.
 
 :ref:`OneShotRequest<enum_AnimationNodeOneShot_OneShotRequest>` **ONE_SHOT_REQUEST_FADE_OUT** = ``3``
 
-The request to fade out the animation connected to "shot" port.
+淡出连接到“shot”端口的动画的请求。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ enum **MixMode**: :ref:`🔗<enum_AnimationNodeOneShot_MixMode>`
 
 :ref:`MixMode<enum_AnimationNodeOneShot_MixMode>` **MIX_MODE_BLEND** = ``0``
 
-Blends two animations. See also :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>`.
+混合两个动画。另请参见 :ref:`AnimationNodeBlend2<class_AnimationNodeBlend2>`\ 。
 
 .. _class_AnimationNodeOneShot_constant_MIX_MODE_ADD:
 
@@ -177,7 +177,7 @@ Blends two animations. See also :ref:`AnimationNodeBlend2<class_AnimationNodeBle
 
 :ref:`MixMode<enum_AnimationNodeOneShot_MixMode>` **MIX_MODE_ADD** = ``1``
 
-Blends two animations additively. See also :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`.
+以相加方式混合两个动画。另见 :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -185,8 +185,8 @@ Blends two animations additively. See also :ref:`AnimationNodeAdd2<class_Animati
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimationNodeOneShot_property_abort_on_reset:
 
@@ -199,7 +199,7 @@ Property Descriptions
 - |void| **set_abort_on_reset**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_aborted_on_reset**\ (\ )
 
-If ``true``, the sub-animation will abort if resumed with a reset after a prior interruption.
+如果为 ``true``\ ，则子动画在先前中断后使用重置恢复时，子动画将会中止。
 
 .. rst-class:: classref-item-separator
 
@@ -216,9 +216,9 @@ If ``true``, the sub-animation will abort if resumed with a reset after a prior 
 - |void| **set_autorestart**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autorestart**\ (\ )
 
-If ``true``, the sub-animation will restart automatically after finishing.
+如果为 ``true``\ ，子动画结束后会自动重新开始。
 
-In other words, to start auto restarting, the animation must be played once with the :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` request. The :ref:`ONE_SHOT_REQUEST_ABORT<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT>` request stops the auto restarting, but it does not disable the :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` itself. So, the :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` request will start auto restarting again.
+换句话说，要开始自动重启，必须使用 :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` 请求播放一次动画。\ :ref:`ONE_SHOT_REQUEST_ABORT<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_ABORT>` 请求停止自动重启，但它不会禁用 :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` 本身。因此，\ :ref:`ONE_SHOT_REQUEST_FIRE<class_AnimationNodeOneShot_constant_ONE_SHOT_REQUEST_FIRE>` 请求将再次开始自动重启。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ In other words, to start auto restarting, the animation must be played once with
 - |void| **set_autorestart_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_autorestart_delay**\ (\ )
 
-The delay after which the automatic restart is triggered, in seconds.
+触发自动重启的延迟时间，以秒为单位。
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ The delay after which the automatic restart is triggered, in seconds.
 - |void| **set_autorestart_random_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_autorestart_random_delay**\ (\ )
 
-If :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` is ``true``, a random additional delay (in seconds) between 0 and this value will be added to :ref:`autorestart_delay<class_AnimationNodeOneShot_property_autorestart_delay>`.
+如果 :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` 为 ``true``\ ，则介于0和此值之间的随机附加延迟（以秒为单位）将添加到 :ref:`autorestart_delay<class_AnimationNodeOneShot_property_autorestart_delay>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ If :ref:`autorestart<class_AnimationNodeOneShot_property_autorestart>` is ``true
 - |void| **set_break_loop_at_end**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_loop_broken_at_end**\ (\ )
 
-If ``true``, breaks the loop at the end of the loop cycle for transition, even if the animation is looping.
+如果\ ``true``\ ，则在循环循环结束时中断循环以进行转换，即使动画正在循环。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ If ``true``, breaks the loop at the end of the loop cycle for transition, even i
 - |void| **set_fadein_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_fadein_curve**\ (\ )
 
-Determines how cross-fading between animations is eased. If empty, the transition will be linear. Should be a unit :ref:`Curve<class_Curve>`.
+确定如何对动画之间的淡入淡出进行缓动。如果为空，则进行线性过渡。应为单位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -303,9 +303,9 @@ Determines how cross-fading between animations is eased. If empty, the transitio
 - |void| **set_fadein_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fadein_time**\ (\ )
 
-The fade-in duration. For example, setting this to ``1.0`` for a 5 second length animation will produce a cross-fade that starts at 0 second and ends at 1 second during the animation.
+淡入的持续时间。例如有一个长度为 5 秒的动画，如果将该属性设置为 ``1.0``\ ，就会生成一个从动画的 0 秒处开始、1 秒处结束的交叉渐变。
 
-\ **Note:** **AnimationNodeOneShot** transitions the current state after the fading has finished.
+\ **注意：**\ **AnimationNodeOneShot** 是在淡入淡出结束后转换当前状态的。
 
 .. rst-class:: classref-item-separator
 
@@ -322,7 +322,7 @@ The fade-in duration. For example, setting this to ``1.0`` for a 5 second length
 - |void| **set_fadeout_curve**\ (\ value\: :ref:`Curve<class_Curve>`\ )
 - :ref:`Curve<class_Curve>` **get_fadeout_curve**\ (\ )
 
-Determines how cross-fading between animations is eased. If empty, the transition will be linear. Should be a unit :ref:`Curve<class_Curve>`.
+确定如何对动画之间的淡入淡出进行缓动。如果为空，则进行线性过渡。应为单位 :ref:`Curve<class_Curve>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -339,9 +339,9 @@ Determines how cross-fading between animations is eased. If empty, the transitio
 - |void| **set_fadeout_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fadeout_time**\ (\ )
 
-The fade-out duration. For example, setting this to ``1.0`` for a 5 second length animation will produce a cross-fade that starts at 4 second and ends at 5 second during the animation.
+淡出的持续时间。例如有一个长度为 5 秒的动画，如果将该属性设置为 ``1.0``\ ，就会生成一个从动画的 4 秒处开始、5 秒处结束的交叉渐变。
 
-\ **Note:** **AnimationNodeOneShot** transitions the current state after the fading has finished.
+\ **注意：**\ **AnimationNodeOneShot** 是在淡入淡出结束后转换当前状态的。
 
 .. rst-class:: classref-item-separator
 
@@ -358,14 +358,14 @@ The fade-out duration. For example, setting this to ``1.0`` for a 5 second lengt
 - |void| **set_mix_mode**\ (\ value\: :ref:`MixMode<enum_AnimationNodeOneShot_MixMode>`\ )
 - :ref:`MixMode<enum_AnimationNodeOneShot_MixMode>` **get_mix_mode**\ (\ )
 
-The blend type.
+混合类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

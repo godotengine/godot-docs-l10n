@@ -5,36 +5,36 @@
 RenderingDevice
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**繼承：** :ref:`Object<class_Object>`
 
-Abstraction for working with modern low-level graphics APIs.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**RenderingDevice** is an abstraction for working with modern low-level graphics APIs such as Vulkan. Compared to :ref:`RenderingServer<class_RenderingServer>` (which works with Godot's own rendering subsystems), **RenderingDevice** is much lower-level and allows working more directly with the underlying graphics APIs. **RenderingDevice** is used in Godot to provide support for several modern low-level graphics APIs while reducing the amount of code duplication required. **RenderingDevice** can also be used in your own projects to perform things that are not exposed by :ref:`RenderingServer<class_RenderingServer>` or high-level nodes, such as using compute shaders.
-
-On startup, Godot creates a global **RenderingDevice** which can be retrieved using :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>`. This global **RenderingDevice** performs drawing to the screen.
-
-\ **Local RenderingDevices:** Using :ref:`RenderingServer.create_local_rendering_device()<class_RenderingServer_method_create_local_rendering_device>`, you can create "secondary" rendering devices to perform drawing and GPU compute operations on separate threads.
-
-\ **Note:** **RenderingDevice** assumes intermediate knowledge of modern graphics APIs such as Vulkan, Direct3D 12, Metal or WebGPU. These graphics APIs are lower-level than OpenGL or Direct3D 11, requiring you to perform what was previously done by the graphics driver itself. If you have difficulty understanding the concepts used in this class, follow the `Vulkan Tutorial <https://vulkan-tutorial.com/>`__ or `Vulkan Guide <https://vkguide.dev/>`__. It's recommended to have existing modern OpenGL or Direct3D 11 knowledge before attempting to learn a low-level graphics API.
-
-\ **Note:** **RenderingDevice** is not available when running in headless mode or when using the Compatibility rendering method.
+用於處理現代低階圖形 API 的抽象。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Using compute shaders <../tutorials/shaders/compute_shaders>`
+**RenderingDevice** 是用來使用 Vulkan 等現代低階圖形 API 的抽象。與（適用於 Godot 自有算繪子系統的）\ :ref:`RenderingServer<class_RenderingServer>` 相比，\ **RenderingDevice** 所處的層級更低，能夠更加直接地使用底層圖形 API。Godot 使用 **RenderingDevice** 來支援部分現代低階圖形 API，能夠減少所需的重複程式碼。你也可以在自己的專案中使用 **RenderingDevice**\ ，從而執行 :ref:`RenderingServer<class_RenderingServer>` 和高階節點未暴露的功能，例如使用計算著色器。
+
+啟動時，Godot 會建立一個全域的 **RenderingDevice**\ ，可以使用 :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` 獲取。這個全域的 **RenderingDevice** 進行的是螢幕繪圖。
+
+\ **局部 RenderingDevice：**\ 你可以使用 :ref:`RenderingServer.create_local_rendering_device()<class_RenderingServer_method_create_local_rendering_device>` 建立“次級”算繪裝置，在單獨的執行緒中進行算繪和 GPU 計算操作。
+
+\ **注意：**\ 使用 **RenderingDevice** 需要對 Vulkan、Direct3D 12、Metal 或 WebGPU 有中等水平的知識。這些圖形 API 比 OpenGL 和 Direct3D 所處的層級更低，能夠執行原本由圖形驅動自己實作的功能。如果這個類中所使用的概念你理解起來有困難，請學習 `Vulkan 教學 <https://vulkan-tutorial.com/>`__\ 或 `Vulkan 指南 <https://vkguide.dev/>`__\ 。在嘗試學習低階圖形 API 之前，建議先學習現代 OpenGL 或 Direct3D 11 相關的知識。
+
+\ **注意：**\ 使用無頭模式運作或使用 Compatibility 算繪方法時，\ **RenderingDevice** 不可用。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`使用計算著色器 <../tutorials/shaders/compute_shaders>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -283,8 +283,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_RenderingDevice_DeviceType:
 
@@ -298,7 +298,7 @@ enum **DeviceType**: :ref:`🔗<enum_RenderingDevice_DeviceType>`
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **DEVICE_TYPE_OTHER** = ``0``
 
-Rendering device type does not match any of the other enum values or is unknown.
+算繪裝置的型別與其他列舉值均不配對，或者未知。
 
 .. _class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU:
 
@@ -306,7 +306,7 @@ Rendering device type does not match any of the other enum values or is unknown.
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **DEVICE_TYPE_INTEGRATED_GPU** = ``1``
 
-Rendering device is an integrated GPU, which is typically *(but not always)* slower than dedicated GPUs (:ref:`DEVICE_TYPE_DISCRETE_GPU<class_RenderingDevice_constant_DEVICE_TYPE_DISCRETE_GPU>`). On Android and iOS, the rendering device type is always considered to be :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>`.
+算繪裝置為集成 GPU，通常\ *（但不一定）*\ 比獨立 GPU（\ :ref:`DEVICE_TYPE_DISCRETE_GPU<class_RenderingDevice_constant_DEVICE_TYPE_DISCRETE_GPU>`\ ）要慢。在 Android 和 iOS 上，算繪裝置的型別始終為 :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>`\ 。
 
 .. _class_RenderingDevice_constant_DEVICE_TYPE_DISCRETE_GPU:
 
@@ -314,7 +314,7 @@ Rendering device is an integrated GPU, which is typically *(but not always)* slo
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **DEVICE_TYPE_DISCRETE_GPU** = ``2``
 
-Rendering device is a dedicated GPU, which is typically *(but not always)* faster than integrated GPUs (:ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>`).
+算繪裝置為獨立 GPU，通常\ *（但不一定）*\ 比集成 GPU（\ :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>`\ ）要快。
 
 .. _class_RenderingDevice_constant_DEVICE_TYPE_VIRTUAL_GPU:
 
@@ -322,7 +322,7 @@ Rendering device is a dedicated GPU, which is typically *(but not always)* faste
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **DEVICE_TYPE_VIRTUAL_GPU** = ``3``
 
-Rendering device is an emulated GPU in a virtual environment. This is typically much slower than the host GPU, which means the expected performance level on a dedicated GPU will be roughly equivalent to :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>`. Virtual machine GPU passthrough (such as VFIO) will not report the device type as :ref:`DEVICE_TYPE_VIRTUAL_GPU<class_RenderingDevice_constant_DEVICE_TYPE_VIRTUAL_GPU>`. Instead, the host GPU's device type will be reported as if the GPU was not emulated.
+算繪裝置為虛擬環境中的類比 GPU。通常比主機 GPU 要慢很多，這意味著獨立 GPU 的預期性能等級大概與 :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>` 等價。使用虛擬機器 GPU 穿透（例如 VFIO）時，裝置型別不會被彙報為 :ref:`DEVICE_TYPE_VIRTUAL_GPU<class_RenderingDevice_constant_DEVICE_TYPE_VIRTUAL_GPU>`\ 。而是會彙報主機 GPU 的裝置型別，就好像使用的不是模擬 GPU 一樣。
 
 .. _class_RenderingDevice_constant_DEVICE_TYPE_CPU:
 
@@ -330,7 +330,7 @@ Rendering device is an emulated GPU in a virtual environment. This is typically 
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **DEVICE_TYPE_CPU** = ``4``
 
-Rendering device is provided by software emulation (such as Lavapipe or `SwiftShader <https://github.com/google/swiftshader>`__). This is the slowest kind of rendering device available; it's typically much slower than :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>`.
+算繪裝置由軟體類比提供（例如 Lavapipe 或 `SwiftShader <https://github.com/google/swiftshader>`__\ ）。這是可用的算繪裝置中最慢的一種；通常比 :ref:`DEVICE_TYPE_INTEGRATED_GPU<class_RenderingDevice_constant_DEVICE_TYPE_INTEGRATED_GPU>` 要慢很多。
 
 .. _class_RenderingDevice_constant_DEVICE_TYPE_MAX:
 
@@ -338,7 +338,7 @@ Rendering device is provided by software emulation (such as Lavapipe or `SwiftSh
 
 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` **DEVICE_TYPE_MAX** = ``5``
 
-Represents the size of the :ref:`DeviceType<enum_RenderingDevice_DeviceType>` enum.
+代表 :ref:`DeviceType<enum_RenderingDevice_DeviceType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_DEVICE** = ``0``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_LOGICAL_DEVICE<class_RenderingDevice_constant_DRIVER_RESOURCE_LOGICAL_DEVICE>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_LOGICAL_DEVICE<class_RenderingDevice_constant_DRIVER_RESOURCE_LOGICAL_DEVICE>` instead.
 
 
 
@@ -508,7 +508,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_PHYSICAL_DEVICE** = ``1``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_PHYSICAL_DEVICE<class_RenderingDevice_constant_DRIVER_RESOURCE_PHYSICAL_DEVICE>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_PHYSICAL_DEVICE<class_RenderingDevice_constant_DRIVER_RESOURCE_PHYSICAL_DEVICE>` instead.
 
 
 
@@ -518,7 +518,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_INSTANCE** = ``2``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_TOPMOST_OBJECT<class_RenderingDevice_constant_DRIVER_RESOURCE_TOPMOST_OBJECT>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_TOPMOST_OBJECT<class_RenderingDevice_constant_DRIVER_RESOURCE_TOPMOST_OBJECT>` instead.
 
 
 
@@ -528,7 +528,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_QUEUE** = ``3``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_COMMAND_QUEUE<class_RenderingDevice_constant_DRIVER_RESOURCE_COMMAND_QUEUE>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_COMMAND_QUEUE<class_RenderingDevice_constant_DRIVER_RESOURCE_COMMAND_QUEUE>` instead.
 
 
 
@@ -538,7 +538,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_QUEUE_FAMILY_INDEX** = ``4``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_QUEUE_FAMILY<class_RenderingDevice_constant_DRIVER_RESOURCE_QUEUE_FAMILY>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_QUEUE_FAMILY<class_RenderingDevice_constant_DRIVER_RESOURCE_QUEUE_FAMILY>` instead.
 
 
 
@@ -548,7 +548,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_IMAGE** = ``5``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_TEXTURE<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_TEXTURE<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE>` instead.
 
 
 
@@ -558,7 +558,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_IMAGE_VIEW** = ``6``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_TEXTURE_VIEW<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE_VIEW>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_TEXTURE_VIEW<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE_VIEW>` instead.
 
 
 
@@ -568,7 +568,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_IMAGE_NATIVE_TEXTURE_FORMAT** = ``7``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_TEXTURE_DATA_FORMAT<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE_DATA_FORMAT>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_TEXTURE_DATA_FORMAT<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE_DATA_FORMAT>` instead.
 
 
 
@@ -578,7 +578,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_SAMPLER** = ``8``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_SAMPLER<class_RenderingDevice_constant_DRIVER_RESOURCE_SAMPLER>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_SAMPLER<class_RenderingDevice_constant_DRIVER_RESOURCE_SAMPLER>` instead.
 
 
 
@@ -588,7 +588,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_DESCRIPTOR_SET** = ``9``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_UNIFORM_SET<class_RenderingDevice_constant_DRIVER_RESOURCE_UNIFORM_SET>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_UNIFORM_SET<class_RenderingDevice_constant_DRIVER_RESOURCE_UNIFORM_SET>` instead.
 
 
 
@@ -598,7 +598,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_BUFFER** = ``10``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_BUFFER<class_RenderingDevice_constant_DRIVER_RESOURCE_BUFFER>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_BUFFER<class_RenderingDevice_constant_DRIVER_RESOURCE_BUFFER>` instead.
 
 
 
@@ -608,7 +608,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_COMPUTE_PIPELINE** = ``11``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_COMPUTE_PIPELINE<class_RenderingDevice_constant_DRIVER_RESOURCE_COMPUTE_PIPELINE>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_COMPUTE_PIPELINE<class_RenderingDevice_constant_DRIVER_RESOURCE_COMPUTE_PIPELINE>` instead.
 
 
 
@@ -618,7 +618,7 @@ Buffer of any kind of (storage, vertex, etc.).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_VULKAN_RENDER_PIPELINE** = ``12``
 
-**Deprecated:** Use :ref:`DRIVER_RESOURCE_RENDER_PIPELINE<class_RenderingDevice_constant_DRIVER_RESOURCE_RENDER_PIPELINE>` instead.
+**已棄用：** Use :ref:`DRIVER_RESOURCE_RENDER_PIPELINE<class_RenderingDevice_constant_DRIVER_RESOURCE_RENDER_PIPELINE>` instead.
 
 
 
@@ -638,9 +638,9 @@ enum **DataFormat**: :ref:`🔗<enum_RenderingDevice_DataFormat>`
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R4G4_UNORM_PACK8** = ``0``
 
-4-bit-per-channel red/green channel data format, packed into 8 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 4 位的紅、綠通道資料格式，緊縮在 8 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
-\ **Note:** More information on all data formats can be found on the `Identification of formats <https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html#_identification_of_formats>`__ section of the Vulkan specification, as well as the `VkFormat <https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkFormat.html>`__ enum.
+\ **注意：**\ 所有資料格式的更多資訊可以在 Vulkan 規格說明的 `Identification of formats <https://registry.khronos.org/vulkan/specs/1.1/html/vkspec.html#_identification_of_formats>`__ 章節和 `VkFormat <https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkFormat.html>`__ 列舉中找到。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R4G4B4A4_UNORM_PACK16:
 
@@ -648,7 +648,7 @@ enum **DataFormat**: :ref:`🔗<enum_RenderingDevice_DataFormat>`
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R4G4B4A4_UNORM_PACK16** = ``1``
 
-4-bit-per-channel red/green/blue/alpha channel data format, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 4 位的紅、綠、藍、Alpha 通道資料格式，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B4G4R4A4_UNORM_PACK16:
 
@@ -656,7 +656,7 @@ enum **DataFormat**: :ref:`🔗<enum_RenderingDevice_DataFormat>`
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B4G4R4A4_UNORM_PACK16** = ``2``
 
-4-bit-per-channel blue/green/red/alpha channel data format, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 4 位的藍、綠、紅、Alpha 通道資料格式，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R5G6B5_UNORM_PACK16:
 
@@ -664,7 +664,7 @@ enum **DataFormat**: :ref:`🔗<enum_RenderingDevice_DataFormat>`
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R5G6B5_UNORM_PACK16** = ``3``
 
-Red/green/blue channel data format with 5 bits of red, 6 bits of green and 5 bits of blue, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+紅、綠、藍通道資料格式，紅占 5 位、綠占 6 位、藍占 5 位，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B5G6R5_UNORM_PACK16:
 
@@ -672,7 +672,7 @@ Red/green/blue channel data format with 5 bits of red, 6 bits of green and 5 bit
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B5G6R5_UNORM_PACK16** = ``4``
 
-Blue/green/red channel data format with 5 bits of blue, 6 bits of green and 5 bits of red, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+藍、綠、紅通道資料格式，藍占 5 位、綠占 6 位、紅占 5 位，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R5G5B5A1_UNORM_PACK16:
 
@@ -680,7 +680,7 @@ Blue/green/red channel data format with 5 bits of blue, 6 bits of green and 5 bi
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R5G5B5A1_UNORM_PACK16** = ``5``
 
-Red/green/blue/alpha channel data format with 5 bits of red, 6 bits of green, 5 bits of blue and 1 bit of alpha, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+紅、綠、藍、Alpha 通道資料格式，紅占 5 位、綠占 6 位、藍占 5 位、Alpha 占 1 位，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B5G5R5A1_UNORM_PACK16:
 
@@ -688,7 +688,7 @@ Red/green/blue/alpha channel data format with 5 bits of red, 6 bits of green, 5 
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B5G5R5A1_UNORM_PACK16** = ``6``
 
-Blue/green/red/alpha channel data format with 5 bits of blue, 6 bits of green, 5 bits of red and 1 bit of alpha, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+藍、綠、紅、Alpha 通道資料格式，藍占 5 位、綠占 6 位、紅占 5 位、Alpha 占 1 位，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A1R5G5B5_UNORM_PACK16:
 
@@ -696,7 +696,7 @@ Blue/green/red/alpha channel data format with 5 bits of blue, 6 bits of green, 5
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A1R5G5B5_UNORM_PACK16** = ``7``
 
-Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 bits of green and 5 bits of blue, packed into 16 bits. Values are in the ``[0.0, 1.0]`` range.
+Alpha、紅、綠、藍通道資料格式，Alpha 占 1 位、紅占 5 位、綠占 6 位、藍占 5 位，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_UNORM:
 
@@ -704,7 +704,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_UNORM** = ``8``
 
-8-bit-per-channel unsigned floating-point red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_SNORM:
 
@@ -712,7 +712,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_SNORM** = ``9``
 
-8-bit-per-channel signed floating-point red channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數紅通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_USCALED:
 
@@ -720,7 +720,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_USCALED** = ``10``
 
-8-bit-per-channel unsigned floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數紅通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_SSCALED:
 
@@ -728,7 +728,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_SSCALED** = ``11``
 
-8-bit-per-channel signed floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數紅通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_UINT:
 
@@ -736,7 +736,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_UINT** = ``12``
 
-8-bit-per-channel unsigned integer red channel data format. Values are in the ``[0, 255]`` range.
+每通道 8 位元的不帶正負號的整數紅通道資料格式。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_SINT:
 
@@ -744,7 +744,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_SINT** = ``13``
 
-8-bit-per-channel signed integer red channel data format. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數紅通道資料格式。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8_SRGB:
 
@@ -760,7 +760,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_UNORM** = ``15``
 
-8-bit-per-channel unsigned floating-point red/green channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數紅、綠通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_SNORM:
 
@@ -768,7 +768,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_SNORM** = ``16``
 
-8-bit-per-channel signed floating-point red/green channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數紅、綠通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_USCALED:
 
@@ -776,7 +776,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_USCALED** = ``17``
 
-8-bit-per-channel unsigned floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數紅、綠通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_SSCALED:
 
@@ -784,7 +784,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_SSCALED** = ``18``
 
-8-bit-per-channel signed floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數紅、綠通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_UINT:
 
@@ -792,7 +792,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_UINT** = ``19``
 
-8-bit-per-channel unsigned integer red/green channel data format. Values are in the ``[0, 255]`` range.
+每通道 8 位的不帶正負號的整數紅、綠通道資料格式。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_SINT:
 
@@ -800,7 +800,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_SINT** = ``20``
 
-8-bit-per-channel signed integer red/green channel data format. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數紅、綠通道資料格式。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_SRGB:
 
@@ -816,7 +816,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_UNORM** = ``22``
 
-8-bit-per-channel unsigned floating-point red/green/blue channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數紅、綠、藍通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_SNORM:
 
@@ -824,7 +824,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_SNORM** = ``23``
 
-8-bit-per-channel signed floating-point red/green/blue channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數紅、綠、藍通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_USCALED:
 
@@ -832,7 +832,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_USCALED** = ``24``
 
-8-bit-per-channel unsigned floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數紅、綠、藍通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_SSCALED:
 
@@ -840,7 +840,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_SSCALED** = ``25``
 
-8-bit-per-channel signed floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數紅、綠、藍通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_UINT:
 
@@ -848,7 +848,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_UINT** = ``26``
 
-8-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the ``[0, 255]`` range.
+每通道 8 位的不帶正負號的整數紅、綠、藍通道資料格式。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_SINT:
 
@@ -856,7 +856,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_SINT** = ``27``
 
-8-bit-per-channel signed integer red/green/blue channel data format. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數紅、綠、藍通道資料格式。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_SRGB:
 
@@ -872,7 +872,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_UNORM** = ``29``
 
-8-bit-per-channel unsigned floating-point blue/green/red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數藍、綠、紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_SNORM:
 
@@ -880,7 +880,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_SNORM** = ``30``
 
-8-bit-per-channel signed floating-point blue/green/red channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數藍、綠、紅通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_USCALED:
 
@@ -888,7 +888,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_USCALED** = ``31``
 
-8-bit-per-channel unsigned floating-point blue/green/red channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數藍、綠、紅通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_SSCALED:
 
@@ -896,7 +896,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_SSCALED** = ``32``
 
-8-bit-per-channel signed floating-point blue/green/red channel data format with scaled value (value is converted from integer to float). Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數藍、綠、紅通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_UINT:
 
@@ -904,7 +904,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_UINT** = ``33``
 
-8-bit-per-channel unsigned integer blue/green/red channel data format. Values are in the ``[0, 255]`` range.
+每通道 8 位的不帶正負號的整數藍、綠、紅通道資料格式。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_SINT:
 
@@ -912,7 +912,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_SINT** = ``34``
 
-8-bit-per-channel signed integer blue/green/red channel data format. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數藍、綠、紅通道資料格式。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_SRGB:
 
@@ -928,7 +928,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_UNORM** = ``36``
 
-8-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_SNORM:
 
@@ -936,7 +936,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_SNORM** = ``37``
 
-8-bit-per-channel signed floating-point red/green/blue/alpha channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_USCALED:
 
@@ -944,7 +944,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_USCALED** = ``38``
 
-8-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數紅、綠、藍、Alpha 通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_SSCALED:
 
@@ -952,7 +952,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_SSCALED** = ``39``
 
-8-bit-per-channel signed floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數紅、綠、藍、Alpha 通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_UINT:
 
@@ -960,7 +960,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_UINT** = ``40``
 
-8-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the ``[0, 255]`` range.
+每通道 8 位的不帶正負號的整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_SINT:
 
@@ -968,7 +968,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_SINT** = ``41``
 
-8-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_SRGB:
 
@@ -984,7 +984,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_UNORM** = ``43``
 
-8-bit-per-channel unsigned floating-point blue/green/red/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數藍、綠、紅、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_SNORM:
 
@@ -992,7 +992,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_SNORM** = ``44``
 
-8-bit-per-channel signed floating-point blue/green/red/alpha channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數藍、綠、紅、Alpha 通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_USCALED:
 
@@ -1000,7 +1000,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_USCALED** = ``45``
 
-8-bit-per-channel unsigned floating-point blue/green/red/alpha channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數藍、綠、紅、Alpha 通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_SSCALED:
 
@@ -1008,7 +1008,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_SSCALED** = ``46``
 
-8-bit-per-channel signed floating-point blue/green/red/alpha channel data format with scaled value (value is converted from integer to float). Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數藍、綠、紅、Alpha 通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_UINT:
 
@@ -1016,7 +1016,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_UINT** = ``47``
 
-8-bit-per-channel unsigned integer blue/green/red/alpha channel data format. Values are in the ``[0, 255]`` range.
+每通道 8 位的不帶正負號的整數藍、綠、紅、Alpha 通道資料格式。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_SINT:
 
@@ -1024,7 +1024,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_SINT** = ``48``
 
-8-bit-per-channel signed integer blue/green/red/alpha channel data format. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數藍、綠、紅、Alpha 通道資料格式。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_SRGB:
 
@@ -1040,7 +1040,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_UNORM_PACK32** = ``50``
 
-8-bit-per-channel unsigned floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_SNORM_PACK32:
 
@@ -1048,7 +1048,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_SNORM_PACK32** = ``51``
 
-8-bit-per-channel signed floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Values are in the ``[-1.0, 1.0]`` range.
+每通道 8 位元的帶符號浮點數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_USCALED_PACK32:
 
@@ -1056,7 +1056,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_USCALED_PACK32** = ``52``
 
-8-bit-per-channel unsigned floating-point alpha/red/green/blue channel data format with scaled value (value is converted from integer to float), packed in 32 bits. Values are in the ``[0.0, 255.0]`` range.
+每通道 8 位元的無符號浮點數 Alpha、紅、綠、藍通道資料格式，使用縮放後的值（值從整數轉換為浮點數），緊縮在 32 個比特位中。取值均在 ``[0.0, 255.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_SSCALED_PACK32:
 
@@ -1064,7 +1064,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_SSCALED_PACK32** = ``53``
 
-8-bit-per-channel signed floating-point alpha/red/green/blue channel data format with scaled value (value is converted from integer to float), packed in 32 bits. Values are in the ``[-127.0, 127.0]`` range.
+每通道 8 位元的帶符號浮點數 Alpha、紅、綠、藍通道資料格式，使用縮放後的值（值從整數轉換為浮點數），緊縮在 32 個比特位中。取值均在 ``[-127.0, 127.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_UINT_PACK32:
 
@@ -1072,7 +1072,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_UINT_PACK32** = ``54``
 
-8-bit-per-channel unsigned integer alpha/red/green/blue channel data format, packed in 32 bits. Values are in the ``[0, 255]`` range.
+每通道 8 位的不帶正負號的整數 Alpha、紅、綠、藍通道資料格式，緊縮在 32 個比特位中。取值均在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_SINT_PACK32:
 
@@ -1080,7 +1080,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_SINT_PACK32** = ``55``
 
-8-bit-per-channel signed integer alpha/red/green/blue channel data format, packed in 32 bits. Values are in the ``[-127, 127]`` range.
+每通道 8 位元的帶符號整數 Alpha、紅、綠、藍通道資料格式，緊縮在 32 個比特位中。取值均在 ``[-127, 127]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_SRGB_PACK32:
 
@@ -1096,7 +1096,7 @@ Alpha/red/green/blue channel data format with 1 bit of alpha, 5 bits of red, 6 b
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2R10G10B10_UNORM_PACK32** = ``57``
 
-Unsigned floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the ``[0.0, 1.0]`` range.
+無符號浮點數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位紅、10 位綠、10 位藍。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2R10G10B10_SNORM_PACK32:
 
@@ -1104,7 +1104,7 @@ Unsigned floating-point alpha/red/green/blue channel data format with normalized
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2R10G10B10_SNORM_PACK32** = ``58``
 
-Signed floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the ``[-1.0, 1.0]`` range.
+帶符號浮點數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位紅、10 位綠、10 位藍。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2R10G10B10_USCALED_PACK32:
 
@@ -1112,7 +1112,7 @@ Signed floating-point alpha/red/green/blue channel data format with normalized v
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2R10G10B10_USCALED_PACK32** = ``59``
 
-Unsigned floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the ``[0.0, 1023.0]`` range for red/green/blue and ``[0.0, 3.0]`` for alpha.
+無符號浮點數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位紅、10 位綠、10 位藍。紅、綠、藍的取值在 ``[0.0, 1023.0]`` 的範圍內，Alpha 的取值在 ``[0.0, 3.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2R10G10B10_SSCALED_PACK32:
 
@@ -1120,7 +1120,7 @@ Unsigned floating-point alpha/red/green/blue channel data format with normalized
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2R10G10B10_SSCALED_PACK32** = ``60``
 
-Signed floating-point alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the ``[-511.0, 511.0]`` range for red/green/blue and ``[-1.0, 1.0]`` for alpha.
+帶符號浮點數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位紅、10 位綠、10 位藍。紅、綠、藍的取值在 ``[-511.0, 511.0]`` 的範圍內，Alpha 的取值在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2R10G10B10_UINT_PACK32:
 
@@ -1128,7 +1128,7 @@ Signed floating-point alpha/red/green/blue channel data format with normalized v
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2R10G10B10_UINT_PACK32** = ``61``
 
-Unsigned integer alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the ``[0, 1023]`` range for red/green/blue and ``[0, 3]`` for alpha.
+不帶正負號的整數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位紅、10 位綠、10 位藍。紅、綠、藍的取值在 ``[0, 1023]`` 的範圍內，Alpha 的取值在 ``[0, 3]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2R10G10B10_SINT_PACK32:
 
@@ -1136,7 +1136,7 @@ Unsigned integer alpha/red/green/blue channel data format with normalized value,
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2R10G10B10_SINT_PACK32** = ``62``
 
-Signed integer alpha/red/green/blue channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of red, 10 bits of green and 10 bits of blue. Values are in the ``[-511, 511]`` range for red/green/blue and ``[-1, 1]`` for alpha.
+帶符號整數 Alpha、紅、綠、藍通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位紅、10 位綠、10 位藍。紅、綠、藍的取值在 ``[-511, 511]`` 的範圍內，Alpha 的取值在 ``[-1, 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2B10G10R10_UNORM_PACK32:
 
@@ -1144,7 +1144,7 @@ Signed integer alpha/red/green/blue channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2B10G10R10_UNORM_PACK32** = ``63``
 
-Unsigned floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the ``[0.0, 1.0]`` range.
+無符號浮點數 Alpha、藍、綠、紅通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位藍、10 位綠、10 位紅。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2B10G10R10_SNORM_PACK32:
 
@@ -1152,7 +1152,7 @@ Unsigned floating-point alpha/blue/green/red channel data format with normalized
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2B10G10R10_SNORM_PACK32** = ``64``
 
-Signed floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the ``[-1.0, 1.0]`` range.
+帶符號浮點數 Alpha、藍、綠、紅通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位藍、10 位綠、10 位紅。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2B10G10R10_USCALED_PACK32:
 
@@ -1160,7 +1160,7 @@ Signed floating-point alpha/blue/green/red channel data format with normalized v
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2B10G10R10_USCALED_PACK32** = ``65``
 
-Unsigned floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the ``[0.0, 1023.0]`` range for blue/green/red and ``[0.0, 3.0]`` for alpha.
+無符號浮點數 Alpha、藍、綠、紅通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位藍、10 位綠、10 位紅。藍、綠、紅的取值在 ``[0.0, 1023.0]`` 的範圍內，Alpha 的取值在 ``[0.0, 3.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2B10G10R10_SSCALED_PACK32:
 
@@ -1168,7 +1168,7 @@ Unsigned floating-point alpha/blue/green/red channel data format with normalized
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2B10G10R10_SSCALED_PACK32** = ``66``
 
-Signed floating-point alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the ``[-511.0, 511.0]`` range for blue/green/red and ``[-1.0, 1.0]`` for alpha.
+帶符號浮點數 Alpha、藍、綠、紅通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位藍、10 位綠、10 位紅。藍、綠、紅的取值在 ``[-511.0, 511.0]`` 的範圍內，Alpha 的取值在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2B10G10R10_UINT_PACK32:
 
@@ -1176,7 +1176,7 @@ Signed floating-point alpha/blue/green/red channel data format with normalized v
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2B10G10R10_UINT_PACK32** = ``67``
 
-Unsigned integer alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the ``[0, 1023]`` range for blue/green/red and ``[0, 3]`` for alpha.
+不帶正負號的整數 Alpha、藍、綠、紅通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位藍、10 位綠、10 位紅。藍、綠、紅的取值在 ``[0, 1023]`` 的範圍內，Alpha 的取值在 ``[0, 3]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2B10G10R10_SINT_PACK32:
 
@@ -1184,7 +1184,7 @@ Unsigned integer alpha/blue/green/red channel data format with normalized value,
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A2B10G10R10_SINT_PACK32** = ``68``
 
-Signed integer alpha/blue/green/red channel data format with normalized value, packed in 32 bits. Format contains 2 bits of alpha, 10 bits of blue, 10 bits of green and 10 bits of red. Values are in the ``[-511, 511]`` range for blue/green/red and ``[-1, 1]`` for alpha.
+帶符號整數 Alpha、藍、綠、紅通道資料格式，使用正規化的值，緊縮在 32 個比特位中。格式中包含 2 位 Alpha、10 位藍、10 位綠、10 位紅。藍、綠、紅的取值在 ``[-511, 511]`` 的範圍內，Alpha 的取值在 ``[-1, 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_UNORM:
 
@@ -1192,7 +1192,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_UNORM** = ``69``
 
-16-bit-per-channel unsigned floating-point red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 16 位元的無符號浮點數紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_SNORM:
 
@@ -1200,7 +1200,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_SNORM** = ``70``
 
-16-bit-per-channel signed floating-point red channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 16 位元的帶符號浮點數紅通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_USCALED:
 
@@ -1208,7 +1208,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_USCALED** = ``71``
 
-16-bit-per-channel unsigned floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 65535.0]`` range.
+每通道 16 位元的無符號浮點數紅通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 65535.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_SSCALED:
 
@@ -1216,7 +1216,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_SSCALED** = ``72``
 
-16-bit-per-channel signed floating-point red channel data format with scaled value (value is converted from integer to float). Values are in the ``[-32767.0, 32767.0]`` range.
+每通道 16 位元的帶符號浮點數紅通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-32767.0, 32767.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_UINT:
 
@@ -1224,7 +1224,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_UINT** = ``73``
 
-16-bit-per-channel unsigned integer red channel data format. Values are in the ``[0.0, 65535]`` range.
+每通道 16 位元的不帶正負號的整數紅通道資料格式。取值均在 ``[0.0, 65535]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_SINT:
 
@@ -1232,7 +1232,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_SINT** = ``74``
 
-16-bit-per-channel signed integer red channel data format. Values are in the ``[-32767, 32767]`` range.
+每通道 16 位元的帶符號整數紅通道資料格式。取值均在 ``[-32767, 32767]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16_SFLOAT:
 
@@ -1240,7 +1240,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16_SFLOAT** = ``75``
 
-16-bit-per-channel signed floating-point red channel data format with the value stored as-is.
+每通道 16 位元的帶符號浮點數紅通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_UNORM:
 
@@ -1248,7 +1248,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_UNORM** = ``76``
 
-16-bit-per-channel unsigned floating-point red/green channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 16 位元的無符號浮點數紅、綠通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_SNORM:
 
@@ -1256,7 +1256,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_SNORM** = ``77``
 
-16-bit-per-channel signed floating-point red/green channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 16 位元的帶符號浮點數紅、綠通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_USCALED:
 
@@ -1264,7 +1264,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_USCALED** = ``78``
 
-16-bit-per-channel unsigned floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 65535.0]`` range.
+每通道 16 位元的無符號浮點數紅、綠通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 65535.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_SSCALED:
 
@@ -1272,7 +1272,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_SSCALED** = ``79``
 
-16-bit-per-channel signed floating-point red/green channel data format with scaled value (value is converted from integer to float). Values are in the ``[-32767.0, 32767.0]`` range.
+每通道 16 位元的帶符號浮點數紅、綠通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-32767.0, 32767.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_UINT:
 
@@ -1280,7 +1280,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_UINT** = ``80``
 
-16-bit-per-channel unsigned integer red/green channel data format. Values are in the ``[0.0, 65535]`` range.
+每通道 16 位的不帶正負號的整數紅、綠通道資料格式。取值均在 ``[0.0, 65535]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_SINT:
 
@@ -1288,7 +1288,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_SINT** = ``81``
 
-16-bit-per-channel signed integer red/green channel data format. Values are in the ``[-32767, 32767]`` range.
+每通道 16 位元的帶符號整數紅、綠通道資料格式。取值均在 ``[-32767, 32767]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16_SFLOAT:
 
@@ -1296,7 +1296,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16_SFLOAT** = ``82``
 
-16-bit-per-channel signed floating-point red/green channel data format with the value stored as-is.
+每通道 16 位元的帶符號浮點數紅、綠通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_UNORM:
 
@@ -1304,7 +1304,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_UNORM** = ``83``
 
-16-bit-per-channel unsigned floating-point red/green/blue channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 16 位元的無符號浮點數紅、綠、藍通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_SNORM:
 
@@ -1312,7 +1312,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_SNORM** = ``84``
 
-16-bit-per-channel signed floating-point red/green/blue channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 16 位元的帶符號浮點數紅、綠、藍通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_USCALED:
 
@@ -1320,7 +1320,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_USCALED** = ``85``
 
-16-bit-per-channel unsigned floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 65535.0]`` range.
+每通道 16 位元的無符號浮點數紅、綠、藍通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 65535.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_SSCALED:
 
@@ -1328,7 +1328,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_SSCALED** = ``86``
 
-16-bit-per-channel signed floating-point red/green/blue channel data format with scaled value (value is converted from integer to float). Values are in the ``[-32767.0, 32767.0]`` range.
+每通道 16 位元的帶符號浮點數紅、綠、藍通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-32767.0, 32767.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_UINT:
 
@@ -1336,7 +1336,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_UINT** = ``87``
 
-16-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the ``[0.0, 65535]`` range.
+每通道 16 位的不帶正負號的整數紅、綠、藍通道資料格式。取值均在 ``[0.0, 65535]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_SINT:
 
@@ -1344,7 +1344,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_SINT** = ``88``
 
-16-bit-per-channel signed integer red/green/blue channel data format. Values are in the ``[-32767, 32767]`` range.
+每通道 16 位元的帶符號整數紅、綠、藍通道資料格式。取值均在 ``[-32767, 32767]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16_SFLOAT:
 
@@ -1352,7 +1352,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16_SFLOAT** = ``89``
 
-16-bit-per-channel signed floating-point red/green/blue channel data format with the value stored as-is.
+每通道 16 位元的帶符號浮點數紅、綠、藍通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_UNORM:
 
@@ -1360,7 +1360,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_UNORM** = ``90``
 
-16-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+每通道 16 位元的無符號浮點數紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_SNORM:
 
@@ -1368,7 +1368,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_SNORM** = ``91``
 
-16-bit-per-channel signed floating-point red/green/blue/alpha channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range.
+每通道 16 位元的帶符號浮點數紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_USCALED:
 
@@ -1376,7 +1376,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_USCALED** = ``92``
 
-16-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the ``[0.0, 65535.0]`` range.
+每通道 16 位元的無符號浮點數紅、綠、藍、Alpha 通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[0.0, 65535.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_SSCALED:
 
@@ -1384,7 +1384,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_SSCALED** = ``93``
 
-16-bit-per-channel signed floating-point red/green/blue/alpha channel data format with scaled value (value is converted from integer to float). Values are in the ``[-32767.0, 32767.0]`` range.
+每通道 16 位元的帶符號浮點數紅、綠、藍、Alpha 通道資料格式，使用縮放後的值（值從整數轉換為浮點數）。取值均在 ``[-32767.0, 32767.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_UINT:
 
@@ -1392,7 +1392,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_UINT** = ``94``
 
-16-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the ``[0.0, 65535]`` range.
+每通道 16 位的不帶正負號的整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[0.0, 65535]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_SINT:
 
@@ -1400,7 +1400,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_SINT** = ``95``
 
-16-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the ``[-32767, 32767]`` range.
+每通道 16 位元的帶符號整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[-32767, 32767]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R16G16B16A16_SFLOAT:
 
@@ -1408,7 +1408,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R16G16B16A16_SFLOAT** = ``96``
 
-16-bit-per-channel signed floating-point red/green/blue/alpha channel data format with the value stored as-is.
+每通道 16 位元的帶符號浮點數紅、綠、藍、Alpha 通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32_UINT:
 
@@ -1416,7 +1416,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32_UINT** = ``97``
 
-32-bit-per-channel unsigned integer red channel data format. Values are in the ``[0, 2^32 - 1]`` range.
+每通道 32 位元的不帶正負號的整數紅通道資料格式。取值均在 ``[0, 2^32 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32_SINT:
 
@@ -1424,7 +1424,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32_SINT** = ``98``
 
-32-bit-per-channel signed integer red channel data format. Values are in the ``[2^31 + 1, 2^31 - 1]`` range.
+每通道 32 位元的帶符號整數紅通道資料格式。取值均在 ``[2^31 + 1, 2^31 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32_SFLOAT:
 
@@ -1432,7 +1432,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32_SFLOAT** = ``99``
 
-32-bit-per-channel signed floating-point red channel data format with the value stored as-is.
+每通道 32 位元的帶符號整數紅通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32_UINT:
 
@@ -1440,7 +1440,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32_UINT** = ``100``
 
-32-bit-per-channel unsigned integer red/green channel data format. Values are in the ``[0, 2^32 - 1]`` range.
+每通道 32 位的不帶正負號的整數紅、綠通道資料格式。取值均在 ``[0, 2^32 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32_SINT:
 
@@ -1448,7 +1448,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32_SINT** = ``101``
 
-32-bit-per-channel signed integer red/green channel data format. Values are in the ``[2^31 + 1, 2^31 - 1]`` range.
+每通道 32 位元的帶符號整數紅、綠通道資料格式。取值均在 ``[2^31 + 1, 2^31 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32_SFLOAT:
 
@@ -1456,7 +1456,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32_SFLOAT** = ``102``
 
-32-bit-per-channel signed floating-point red/green channel data format with the value stored as-is.
+每通道 32 位元的帶符號整數紅、綠通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32B32_UINT:
 
@@ -1464,7 +1464,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32B32_UINT** = ``103``
 
-32-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the ``[0, 2^32 - 1]`` range.
+每通道 32 位的不帶正負號的整數紅、綠、藍通道資料格式。取值均在 ``[0, 2^32 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32B32_SINT:
 
@@ -1472,7 +1472,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32B32_SINT** = ``104``
 
-32-bit-per-channel signed integer red/green/blue channel data format. Values are in the ``[2^31 + 1, 2^31 - 1]`` range.
+每通道 32 位元的帶符號整數紅、綠、藍通道資料格式。取值均在 ``[2^31 + 1, 2^31 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32B32_SFLOAT:
 
@@ -1480,7 +1480,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32B32_SFLOAT** = ``105``
 
-32-bit-per-channel signed floating-point red/green/blue channel data format with the value stored as-is.
+每通道 32 位元的帶符號整數紅、綠、藍通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32B32A32_UINT:
 
@@ -1488,7 +1488,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32B32A32_UINT** = ``106``
 
-32-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the ``[0, 2^32 - 1]`` range.
+每通道 32 位的不帶正負號的整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[0, 2^32 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32B32A32_SINT:
 
@@ -1496,7 +1496,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32B32A32_SINT** = ``107``
 
-32-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the ``[2^31 + 1, 2^31 - 1]`` range.
+每通道 32 位元的帶符號整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[2^31 + 1, 2^31 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R32G32B32A32_SFLOAT:
 
@@ -1504,7 +1504,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R32G32B32A32_SFLOAT** = ``108``
 
-32-bit-per-channel signed floating-point red/green/blue/alpha channel data format with the value stored as-is.
+每通道 32 位元的帶符號整數紅、綠、藍、Alpha 通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64_UINT:
 
@@ -1512,7 +1512,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64_UINT** = ``109``
 
-64-bit-per-channel unsigned integer red channel data format. Values are in the ``[0, 2^64 - 1]`` range.
+每通道 64 位元的不帶正負號的整數紅通道資料格式。取值均在 ``[0, 2^64 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64_SINT:
 
@@ -1520,7 +1520,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64_SINT** = ``110``
 
-64-bit-per-channel signed integer red channel data format. Values are in the ``[2^63 + 1, 2^63 - 1]`` range.
+每通道 64 位元的帶符號整數紅通道資料格式。取值均在 ``[2^63 + 1, 2^63 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64_SFLOAT:
 
@@ -1528,7 +1528,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64_SFLOAT** = ``111``
 
-64-bit-per-channel signed floating-point red channel data format with the value stored as-is.
+每通道 64 位元的帶符號整數紅通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64_UINT:
 
@@ -1536,7 +1536,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64_UINT** = ``112``
 
-64-bit-per-channel unsigned integer red/green channel data format. Values are in the ``[0, 2^64 - 1]`` range.
+每通道 64 位的不帶正負號的整數紅、綠通道資料格式。取值均在 ``[0, 2^64 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64_SINT:
 
@@ -1544,7 +1544,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64_SINT** = ``113``
 
-64-bit-per-channel signed integer red/green channel data format. Values are in the ``[2^63 + 1, 2^63 - 1]`` range.
+每通道 64 位元的帶符號整數紅、綠通道資料格式。取值均在 ``[2^63 + 1, 2^63 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64_SFLOAT:
 
@@ -1552,7 +1552,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64_SFLOAT** = ``114``
 
-64-bit-per-channel signed floating-point red/green channel data format with the value stored as-is.
+每通道 64 位元的帶符號整數紅、綠通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64B64_UINT:
 
@@ -1560,7 +1560,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64B64_UINT** = ``115``
 
-64-bit-per-channel unsigned integer red/green/blue channel data format. Values are in the ``[0, 2^64 - 1]`` range.
+每通道 64 位的不帶正負號的整數紅、綠、藍通道資料格式。取值均在 ``[0, 2^64 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64B64_SINT:
 
@@ -1568,7 +1568,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64B64_SINT** = ``116``
 
-64-bit-per-channel signed integer red/green/blue channel data format. Values are in the ``[2^63 + 1, 2^63 - 1]`` range.
+每通道 64 位元的帶符號整數紅、綠、藍通道資料格式。取值均在 ``[2^63 + 1, 2^63 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64B64_SFLOAT:
 
@@ -1576,7 +1576,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64B64_SFLOAT** = ``117``
 
-64-bit-per-channel signed floating-point red/green/blue channel data format with the value stored as-is.
+每通道 64 位元的帶符號整數紅、綠、藍通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64B64A64_UINT:
 
@@ -1584,7 +1584,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64B64A64_UINT** = ``118``
 
-64-bit-per-channel unsigned integer red/green/blue/alpha channel data format. Values are in the ``[0, 2^64 - 1]`` range.
+每通道 64 位的不帶正負號的整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[0, 2^64 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64B64A64_SINT:
 
@@ -1592,7 +1592,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64B64A64_SINT** = ``119``
 
-64-bit-per-channel signed integer red/green/blue/alpha channel data format. Values are in the ``[2^63 + 1, 2^63 - 1]`` range.
+每通道 64 位元的帶符號整數紅、綠、藍、Alpha 通道資料格式。取值均在 ``[2^63 + 1, 2^63 - 1]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R64G64B64A64_SFLOAT:
 
@@ -1600,7 +1600,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R64G64B64A64_SFLOAT** = ``120``
 
-64-bit-per-channel signed floating-point red/green/blue/alpha channel data format with the value stored as-is.
+每通道 64 位元的帶符號整數紅、綠、藍、Alpha 通道資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B10G11R11_UFLOAT_PACK32:
 
@@ -1608,7 +1608,7 @@ Signed integer alpha/blue/green/red channel data format with normalized value, p
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B10G11R11_UFLOAT_PACK32** = ``121``
 
-Unsigned floating-point blue/green/red data format with the value stored as-is, packed in 32 bits. The format's precision is 10 bits of blue channel, 11 bits of green channel and 11 bits of red channel.
+無符號浮點數藍、綠、紅資料格式，數值原樣儲存，緊縮在 32 個比特位中。該格式的精度為藍通道 10 位、綠通道 11 位、紅通道 11 位。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_E5B9G9R9_UFLOAT_PACK32:
 
@@ -1616,7 +1616,7 @@ Unsigned floating-point blue/green/red data format with the value stored as-is, 
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_E5B9G9R9_UFLOAT_PACK32** = ``122``
 
-Unsigned floating-point exposure/blue/green/red data format with the value stored as-is, packed in 32 bits. The format's precision is 5 bits of exposure, 9 bits of blue channel, 9 bits of green channel and 9 bits of red channel.
+無符號浮點數曝光、藍、綠、紅資料格式，數值原樣儲存，緊縮在 32 個比特位中。該格式的精度為曝光 5 位、藍通道 9 位、綠通道 9 位、紅通道 9 位。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D16_UNORM:
 
@@ -1624,7 +1624,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D16_UNORM** = ``123``
 
-16-bit unsigned floating-point depth data format with normalized value. Values are in the ``[0.0, 1.0]`` range.
+16 位元無符號浮點數深度資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_X8_D24_UNORM_PACK32:
 
@@ -1632,7 +1632,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_X8_D24_UNORM_PACK32** = ``124``
 
-24-bit unsigned floating-point depth data format with normalized value, plus 8 unused bits, packed in 32 bits. Values for depth are in the ``[0.0, 1.0]`` range.
+24 位元無符號浮點數深度資料格式，使用正規化的值，另有 8 位未使用，緊縮在 32 個比特位中。深度取值在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D32_SFLOAT:
 
@@ -1640,7 +1640,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D32_SFLOAT** = ``125``
 
-32-bit signed floating-point depth data format with the value stored as-is.
+32 位元無符號浮點數深度資料格式，數值原樣儲存。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_S8_UINT:
 
@@ -1648,7 +1648,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_S8_UINT** = ``126``
 
-8-bit unsigned integer stencil data format.
+8 位元不帶正負號的整數範本資料格式。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D16_UNORM_S8_UINT:
 
@@ -1656,7 +1656,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D16_UNORM_S8_UINT** = ``127``
 
-16-bit unsigned floating-point depth data format with normalized value, plus 8 bits of stencil in unsigned integer format. Values for depth are in the ``[0.0, 1.0]`` range. Values for stencil are in the ``[0, 255]`` range.
+16 位元無符號浮點數深度資料格式，使用正規化的值，另有 8 位使用不帶正負號的整數格式的範本。深度取值在 ``[0.0, 1.0]`` 的範圍內。範本取值在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D24_UNORM_S8_UINT:
 
@@ -1664,7 +1664,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D24_UNORM_S8_UINT** = ``128``
 
-24-bit unsigned floating-point depth data format with normalized value, plus 8 bits of stencil in unsigned integer format. Values for depth are in the ``[0.0, 1.0]`` range. Values for stencil are in the ``[0, 255]`` range.
+24 位元無符號浮點數深度資料格式，使用正規化的值，另有 8 位使用不帶正負號的整數格式的範本。深度取值在 ``[0.0, 1.0]`` 的範圍內。範本取值在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_D32_SFLOAT_S8_UINT:
 
@@ -1672,7 +1672,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_D32_SFLOAT_S8_UINT** = ``129``
 
-32-bit signed floating-point depth data format with the value stored as-is, plus 8 bits of stencil in unsigned integer format. Values for stencil are in the ``[0, 255]`` range.
+32 位元無符號浮點數深度資料格式，數值原樣儲存，另有 8 位使用不帶正負號的整數格式的模板。範本取值在 ``[0, 255]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC1_RGB_UNORM_BLOCK:
 
@@ -1680,7 +1680,7 @@ Unsigned floating-point exposure/blue/green/red data format with the value store
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC1_RGB_UNORM_BLOCK** = ``130``
 
-VRAM-compressed unsigned red/green/blue channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel and 5 bits of blue channel. Using BC1 texture compression (also known as S3TC DXT1).
+顯存壓縮的無符號紅、綠、藍通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅通道 5 位、綠通道 6 位、藍通道 5 位。使用 BC1 紋理壓縮（也叫 S3TC DXT1）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC1_RGB_SRGB_BLOCK:
 
@@ -1696,7 +1696,7 @@ VRAM-compressed unsigned red/green/blue channel data format with normalized valu
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC1_RGBA_UNORM_BLOCK** = ``132``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 1 bit of alpha channel. Using BC1 texture compression (also known as S3TC DXT1).
+顯存壓縮的無符號紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅通道 5 位、綠通道 6 位、藍通道 5 位、Alpha 通道 1 位。使用 BC1 紋理壓縮（也叫 S3TC DXT1）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC1_RGBA_SRGB_BLOCK:
 
@@ -1712,7 +1712,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC2_UNORM_BLOCK** = ``134``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 4 bits of alpha channel. Using BC2 texture compression (also known as S3TC DXT3).
+顯存壓縮的無符號紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅通道 5 位、綠通道 6 位、藍通道 5 位、Alpha 通道 4 位。使用 BC2 紋理壓縮（也叫 S3TC DXT3）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC2_SRGB_BLOCK:
 
@@ -1728,7 +1728,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC3_UNORM_BLOCK** = ``136``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel and 8 bits of alpha channel. Using BC3 texture compression (also known as S3TC DXT5).
+顯存壓縮的無符號紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅通道 5 位、綠通道 6 位、藍通道 5 位、Alpha 通道 8 位。使用 BC3 紋理壓縮（也叫 S3TC DXT5）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC3_SRGB_BLOCK:
 
@@ -1744,7 +1744,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC4_UNORM_BLOCK** = ``138``
 
-VRAM-compressed unsigned red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is 8 bits of red channel. Using BC4 texture compression.
+顯存壓縮的無符號紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅通道 8 位。使用 BC4 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC4_SNORM_BLOCK:
 
@@ -1752,7 +1752,7 @@ VRAM-compressed unsigned red channel data format with normalized value. Values a
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC4_SNORM_BLOCK** = ``139``
 
-VRAM-compressed signed red channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range. The format's precision is 8 bits of red channel. Using BC4 texture compression.
+顯存壓縮的帶符號紅通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。該格式的精度為紅通道 8 位。使用 BC4 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC5_UNORM_BLOCK:
 
@@ -1760,7 +1760,7 @@ VRAM-compressed signed red channel data format with normalized value. Values are
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC5_UNORM_BLOCK** = ``140``
 
-VRAM-compressed unsigned red/green channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is 8 bits of red channel and 8 bits of green channel. Using BC5 texture compression (also known as S3TC RGTC).
+顯存壓縮的無符號紅、綠通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅通道 8 位、綠通道 8 位。使用 BC5 紋理壓縮（也叫 S3TC RGTC）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC5_SNORM_BLOCK:
 
@@ -1768,7 +1768,7 @@ VRAM-compressed unsigned red/green channel data format with normalized value. Va
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC5_SNORM_BLOCK** = ``141``
 
-VRAM-compressed signed red/green channel data format with normalized value. Values are in the ``[-1.0, 1.0]`` range. The format's precision is 8 bits of red channel and 8 bits of green channel. Using BC5 texture compression (also known as S3TC RGTC).
+顯存壓縮的帶符號紅、綠通道資料格式，使用正規化的值。取值均在 ``[-1.0, 1.0]`` 的範圍內。該格式的精度為紅通道 8 位、綠通道 8 位。使用 BC5 紋理壓縮（也叫 S3TC RGTC）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC6H_UFLOAT_BLOCK:
 
@@ -1792,7 +1792,7 @@ VRAM-compressed signed red/green/blue channel data format with the floating-poin
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC7_UNORM_BLOCK** = ``144``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. The format's precision is between 4 and 7 bits for the red/green/blue channels and between 0 and 8 bits for the alpha channel. Also known as BPTC LDR.
+顯存壓縮的無符號紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。該格式的精度為紅、綠、藍通道在 4 到 7 位之間，Alpha 通道在 0 到 8 位之間。使用 BC7 紋理壓縮。也叫 BPTC HDR。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC7_SRGB_BLOCK:
 
@@ -1808,7 +1808,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ETC2_R8G8B8_UNORM_BLOCK** = ``146``
 
-VRAM-compressed unsigned red/green/blue channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Using ETC2 texture compression.
+顯存壓縮的無符號紅、綠、藍通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ETC2 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ETC2_R8G8B8_SRGB_BLOCK:
 
@@ -1824,7 +1824,7 @@ VRAM-compressed unsigned red/green/blue channel data format with normalized valu
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ETC2_R8G8B8A1_UNORM_BLOCK** = ``148``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Red/green/blue use 8 bit of precision each, with alpha using 1 bit of precision. Using ETC2 texture compression.
+顯存壓縮的無符號紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。紅、綠、藍均使用 8 位精度，Alpha 使用 1 位精度。使用 ETC2 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK:
 
@@ -1840,7 +1840,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK** = ``150``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Red/green/blue use 8 bits of precision each, with alpha using 8 bits of precision. Using ETC2 texture compression.
+顯存壓縮的無符號紅、綠、藍、Alpha 通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。紅、綠、藍均使用 8 位精度，Alpha 使用 8 位精度。使用 ETC2 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ETC2_R8G8B8A8_SRGB_BLOCK:
 
@@ -1856,7 +1856,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_EAC_R11_UNORM_BLOCK** = ``152``
 
-11-bit VRAM-compressed unsigned red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Using ETC2 texture compression.
+11 位元顯存壓縮的無符號紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ETC2 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_EAC_R11_SNORM_BLOCK:
 
@@ -1872,7 +1872,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_EAC_R11G11_UNORM_BLOCK** = ``154``
 
-11-bit VRAM-compressed unsigned red/green channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Using ETC2 texture compression.
+11 位元顯存壓縮的無符號紅、綠通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ETC2 紋理壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_EAC_R11G11_SNORM_BLOCK:
 
@@ -1888,7 +1888,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_4x4_UNORM_BLOCK** = ``156``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 4×4 blocks (highest quality). Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 4x4 的區塊內（品質最高）。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_4x4_SRGB_BLOCK:
 
@@ -1904,7 +1904,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_5x4_UNORM_BLOCK** = ``158``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 5×4 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 5x4 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_5x4_SRGB_BLOCK:
 
@@ -1920,7 +1920,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_5x5_UNORM_BLOCK** = ``160``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 5×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 5x5 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_5x5_SRGB_BLOCK:
 
@@ -1936,7 +1936,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_6x5_UNORM_BLOCK** = ``162``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 6×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 6x5 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_6x5_SRGB_BLOCK:
 
@@ -1952,7 +1952,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_6x6_UNORM_BLOCK** = ``164``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 6×6 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 6x6 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_6x6_SRGB_BLOCK:
 
@@ -1968,7 +1968,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_8x5_UNORM_BLOCK** = ``166``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 8×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 8x5 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_8x5_SRGB_BLOCK:
 
@@ -1984,7 +1984,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_8x6_UNORM_BLOCK** = ``168``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 8×6 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 8x6 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_8x6_SRGB_BLOCK:
 
@@ -2000,7 +2000,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_8x8_UNORM_BLOCK** = ``170``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 8×8 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 8x8 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_8x8_SRGB_BLOCK:
 
@@ -2016,7 +2016,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x5_UNORM_BLOCK** = ``172``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 10x5 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x5_SRGB_BLOCK:
 
@@ -2032,7 +2032,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x6_UNORM_BLOCK** = ``174``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×6 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 10x6 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x6_SRGB_BLOCK:
 
@@ -2048,7 +2048,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x8_UNORM_BLOCK** = ``176``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×8 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 10x8 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x8_SRGB_BLOCK:
 
@@ -2064,7 +2064,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x10_UNORM_BLOCK** = ``178``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 10×10 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 10x10 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x10_SRGB_BLOCK:
 
@@ -2080,7 +2080,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_12x10_UNORM_BLOCK** = ``180``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 12×10 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 12x10 的區塊內。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_12x10_SRGB_BLOCK:
 
@@ -2096,7 +2096,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_12x12_UNORM_BLOCK** = ``182``
 
-VRAM-compressed unsigned floating-point data format with normalized value, packed in 12 blocks (lowest quality). Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+顯存壓縮的無符號浮點數資料格式，使用正規化的值，緊縮在 12 個區塊內（品質最低）。取值均在 ``[0.0, 1.0]`` 的範圍內。使用 ASTC 壓縮。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_12x12_SRGB_BLOCK:
 
@@ -2112,7 +2112,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G8B8G8R8_422_UNORM** = ``184``
 
-8-bit-per-channel unsigned floating-point green/blue/red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 8 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8G8_422_UNORM:
 
@@ -2120,7 +2120,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8G8_422_UNORM** = ``185``
 
-8-bit-per-channel unsigned floating-point blue/green/red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 8 位元的無符號浮點數藍、綠、紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G8_B8_R8_3PLANE_420_UNORM:
 
@@ -2128,7 +2128,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G8_B8_R8_3PLANE_420_UNORM** = ``186``
 
-8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 8 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值，分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G8_B8R8_2PLANE_420_UNORM:
 
@@ -2136,7 +2136,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G8_B8R8_2PLANE_420_UNORM** = ``187``
 
-8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 2 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 8 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值，分別在兩個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G8_B8_R8_3PLANE_422_UNORM:
 
@@ -2144,7 +2144,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G8_B8_R8_3PLANE_422_UNORM** = ``188``
 
-8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 2 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 8 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值，分別在兩個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G8_B8R8_2PLANE_422_UNORM:
 
@@ -2152,7 +2152,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G8_B8R8_2PLANE_422_UNORM** = ``189``
 
-8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 2 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 8 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值，分別在兩個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G8_B8_R8_3PLANE_444_UNORM:
 
@@ -2160,7 +2160,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G8_B8_R8_3PLANE_444_UNORM** = ``190``
 
-8-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, stored across 3 separate planes. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值，分別在三個獨立平面儲存。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R10X6_UNORM_PACK16:
 
@@ -2168,7 +2168,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R10X6_UNORM_PACK16** = ``191``
 
-10-bit-per-channel unsigned floating-point red channel data with normalized value, plus 6 unused bits, packed in 16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 10 位元的無符號浮點數紅通道資料，使用正規化的值，另有 6 位未使用，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R10X6G10X6_UNORM_2PACK16:
 
@@ -2176,7 +2176,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R10X6G10X6_UNORM_2PACK16** = ``192``
 
-10-bit-per-channel unsigned floating-point red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 2×16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 10 位元的無符號浮點數紅、綠通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 2x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16:
 
@@ -2184,7 +2184,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16** = ``193``
 
-10-bit-per-channel unsigned floating-point red/green/blue/alpha channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 10 位元的無符號浮點數紅、綠、藍、Alpha 通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 4x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16:
 
@@ -2192,7 +2192,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16** = ``194``
 
-10-bit-per-channel unsigned floating-point green/blue/green/red channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.
+每通道 10 位元的無符號浮點數綠、藍、綠、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 4x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。綠通道出現兩次，但包含不同的值，因此能夠表示為完整的解析度。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16:
 
@@ -2200,7 +2200,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16** = ``195``
 
-10-bit-per-channel unsigned floating-point blue/green/red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.
+每通道 10 位元的無符號浮點數藍、綠、紅、綠通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 4x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。綠通道出現兩次，但包含不同的值，因此能夠表示為完整的解析度。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16:
 
@@ -2208,7 +2208,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16** = ``196``
 
-10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 10 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在兩個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16:
 
@@ -2216,7 +2216,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16** = ``197``
 
-10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 10 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在兩個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16:
 
@@ -2224,7 +2224,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16** = ``198``
 
-10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 10 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16:
 
@@ -2232,7 +2232,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16** = ``199``
 
-10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 10 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在三個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16:
 
@@ -2240,7 +2240,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16** = ``200``
 
-10-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range.
+每通道 10 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R12X4_UNORM_PACK16:
 
@@ -2248,7 +2248,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R12X4_UNORM_PACK16** = ``201``
 
-12-bit-per-channel unsigned floating-point red channel data with normalized value, plus 6 unused bits, packed in 16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 12 位元的無符號浮點數紅通道資料，使用正規化的值，另有 6 位未使用，緊縮在 16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R12X4G12X4_UNORM_2PACK16:
 
@@ -2256,7 +2256,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R12X4G12X4_UNORM_2PACK16** = ``202``
 
-12-bit-per-channel unsigned floating-point red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 2×16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 12 位元的無符號浮點數紅、綠通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 2x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16:
 
@@ -2264,7 +2264,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16** = ``203``
 
-12-bit-per-channel unsigned floating-point red/green/blue/alpha channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 12 位元的無符號浮點數紅、綠、藍、Alpha 通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 4x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16:
 
@@ -2272,7 +2272,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16** = ``204``
 
-12-bit-per-channel unsigned floating-point green/blue/green/red channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.
+每通道 12 位元的無符號浮點數綠、藍、綠、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 4x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。綠通道出現兩次，但包含不同的值，因此能夠表示為完整的解析度。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16:
 
@@ -2280,7 +2280,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16** = ``205``
 
-12-bit-per-channel unsigned floating-point blue/green/red/green channel data with normalized value, plus 6 unused bits after each channel, packed in 4×16 bits. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel). The green channel is listed twice, but contains different values to allow it to be represented at full resolution.
+每通道 12 位元的無符號浮點數藍、綠、紅、綠通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 4x16 個比特位中。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。綠通道出現兩次，但包含不同的值，因此能夠表示為完整的解析度。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16:
 
@@ -2288,7 +2288,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16** = ``206``
 
-12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 12 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在兩個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16:
 
@@ -2296,7 +2296,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16** = ``207``
 
-12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 2 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 12 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在兩個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16:
 
@@ -2304,7 +2304,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16** = ``208``
 
-12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 12 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16:
 
@@ -2312,7 +2312,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16** = ``209``
 
-12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 12 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在三個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16:
 
@@ -2320,7 +2320,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16** = ``210``
 
-12-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Packed in 3×16 bits and stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range.
+每通道 12 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用，緊縮在 3x16 個比特位中，分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G16B16G16R16_422_UNORM:
 
@@ -2328,7 +2328,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G16B16G16R16_422_UNORM** = ``211``
 
-16-bit-per-channel unsigned floating-point green/blue/red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 16 位元的無符號浮點數綠、藍、紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B16G16R16G16_422_UNORM:
 
@@ -2336,7 +2336,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B16G16R16G16_422_UNORM** = ``212``
 
-16-bit-per-channel unsigned floating-point blue/green/red channel data format with normalized value. Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 16 位元的無符號浮點數藍、綠、紅通道資料格式，使用正規化的值。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G16_B16_R16_3PLANE_420_UNORM:
 
@@ -2344,7 +2344,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G16_B16_R16_3PLANE_420_UNORM** = ``213``
 
-16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 2 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 16 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用。分別在兩個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G16_B16R16_2PLANE_420_UNORM:
 
@@ -2352,7 +2352,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G16_B16R16_2PLANE_420_UNORM** = ``214``
 
-16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 2 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal and vertical resolution (i.e. 2×2 adjacent pixels will share the same value for the blue/red channel).
+每通道 16 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用。分別在兩個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料縱橫半解析度儲存（即 2x2 相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G16_B16_R16_3PLANE_422_UNORM:
 
@@ -2360,7 +2360,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G16_B16_R16_3PLANE_422_UNORM** = ``215``
 
-16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 16 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用。分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G16_B16R16_2PLANE_422_UNORM:
 
@@ -2368,7 +2368,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G16_B16R16_2PLANE_422_UNORM** = ``216``
 
-16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 3 separate planes (green + blue/red). Values are in the ``[0.0, 1.0]`` range. Blue and red channel data is stored at halved horizontal resolution (i.e. 2 horizontally adjacent pixels will share the same value for the blue/red channel).
+每通道 16 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用。分別在三個獨立平面儲存（綠 + 藍、紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。藍、紅通道資料橫向半解析度儲存（即兩個橫向相鄰的圖元共用同一個藍、紅通道數值）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G16_B16_R16_3PLANE_444_UNORM:
 
@@ -2376,7 +2376,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_G16_B16_R16_3PLANE_444_UNORM** = ``217``
 
-16-bit-per-channel unsigned floating-point green/blue/red channel data with normalized value, plus 6 unused bits after each channel. Stored across 3 separate planes (green + blue + red). Values are in the ``[0.0, 1.0]`` range.
+每通道 16 位元的無符號浮點數綠、藍、紅通道資料，使用正規化的值，每個通道均另有 6 位未使用。分別在三個獨立平面儲存（綠 + 藍 + 紅）。取值均在 ``[0.0, 1.0]`` 的範圍內。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_4x4_SFLOAT_BLOCK:
 
@@ -2552,7 +2552,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_MAX** = ``232``
 
-Represents the size of the :ref:`DataFormat<enum_RenderingDevice_DataFormat>` enum.
+代表 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2570,7 +2570,7 @@ flags **BarrierMask**: :ref:`🔗<enum_RenderingDevice_BarrierMask>`
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_VERTEX** = ``1``
 
-Vertex shader barrier mask.
+傳輸屏障遮罩。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_FRAGMENT:
 
@@ -2578,7 +2578,7 @@ Vertex shader barrier mask.
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_FRAGMENT** = ``8``
 
-Fragment shader barrier mask.
+傳輸屏障遮罩。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_COMPUTE:
 
@@ -2586,7 +2586,7 @@ Fragment shader barrier mask.
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_COMPUTE** = ``2``
 
-Compute barrier mask.
+計算屏障遮罩。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_TRANSFER:
 
@@ -2594,7 +2594,7 @@ Compute barrier mask.
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_TRANSFER** = ``4``
 
-Transfer barrier mask.
+傳輸屏障遮罩。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_RASTER:
 
@@ -2602,7 +2602,7 @@ Transfer barrier mask.
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_RASTER** = ``9``
 
-Raster barrier mask (vertex and fragment). Equivalent to ``BARRIER_MASK_VERTEX | BARRIER_MASK_FRAGMENT``.
+所有型別的屏障遮罩（柵格化、計算、傳輸）。等價於 ``BARRIER_MASK_RASTER | BARRIER_MASK_COMPUTE | BARRIER_MASK_TRANSFER``\ 。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_ALL_BARRIERS:
 
@@ -2610,7 +2610,7 @@ Raster barrier mask (vertex and fragment). Equivalent to ``BARRIER_MASK_VERTEX |
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_ALL_BARRIERS** = ``32767``
 
-Barrier mask for all types (vertex, fragment, compute, transfer).
+所有型別（頂點、片段、計算、傳輸）的屏障遮罩。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_NO_BARRIER:
 
@@ -2618,7 +2618,7 @@ Barrier mask for all types (vertex, fragment, compute, transfer).
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_NO_BARRIER** = ``32768``
 
-No barrier for any type.
+沒有任何型別的屏障。
 
 .. rst-class:: classref-item-separator
 
@@ -2636,7 +2636,7 @@ enum **TextureType**: :ref:`🔗<enum_RenderingDevice_TextureType>`
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_1D** = ``0``
 
-1-dimensional texture.
+一維紋理。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_2D:
 
@@ -2644,7 +2644,7 @@ enum **TextureType**: :ref:`🔗<enum_RenderingDevice_TextureType>`
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_2D** = ``1``
 
-2-dimensional texture.
+二維紋理。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_3D:
 
@@ -2652,7 +2652,7 @@ enum **TextureType**: :ref:`🔗<enum_RenderingDevice_TextureType>`
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_3D** = ``2``
 
-3-dimensional texture.
+三維紋理。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_CUBE:
 
@@ -2660,7 +2660,7 @@ enum **TextureType**: :ref:`🔗<enum_RenderingDevice_TextureType>`
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_CUBE** = ``3``
 
-:ref:`Cubemap<class_Cubemap>` texture.
+:ref:`Cubemap<class_Cubemap>` 紋理。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_1D_ARRAY:
 
@@ -2668,7 +2668,7 @@ enum **TextureType**: :ref:`🔗<enum_RenderingDevice_TextureType>`
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_1D_ARRAY** = ``4``
 
-Array of 1-dimensional textures.
+一維紋理陣列。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_2D_ARRAY:
 
@@ -2676,7 +2676,7 @@ Array of 1-dimensional textures.
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_2D_ARRAY** = ``5``
 
-Array of 2-dimensional textures.
+二維紋理陣列。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_CUBE_ARRAY:
 
@@ -2684,7 +2684,7 @@ Array of 2-dimensional textures.
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_CUBE_ARRAY** = ``6``
 
-Array of :ref:`Cubemap<class_Cubemap>` textures.
+:ref:`Cubemap<class_Cubemap>` 紋理陣列。
 
 .. _class_RenderingDevice_constant_TEXTURE_TYPE_MAX:
 
@@ -2692,7 +2692,7 @@ Array of :ref:`Cubemap<class_Cubemap>` textures.
 
 :ref:`TextureType<enum_RenderingDevice_TextureType>` **TEXTURE_TYPE_MAX** = ``7``
 
-Represents the size of the :ref:`TextureType<enum_RenderingDevice_TextureType>` enum.
+代表 :ref:`TextureType<enum_RenderingDevice_TextureType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2710,7 +2710,7 @@ enum **TextureSamples**: :ref:`🔗<enum_RenderingDevice_TextureSamples>`
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_1** = ``0``
 
-Perform 1 texture sample (this is the fastest but lowest-quality for antialiasing).
+執行 1 次紋理取樣（最快，但抗鋸齒品質最低）。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_2:
 
@@ -2718,7 +2718,7 @@ Perform 1 texture sample (this is the fastest but lowest-quality for antialiasin
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_2** = ``1``
 
-Perform 2 texture samples.
+執行 2 次紋理取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_4:
 
@@ -2726,7 +2726,7 @@ Perform 2 texture samples.
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_4** = ``2``
 
-Perform 4 texture samples.
+執行 4 次紋理取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_8:
 
@@ -2734,7 +2734,7 @@ Perform 4 texture samples.
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_8** = ``3``
 
-Perform 8 texture samples. Not supported on mobile GPUs (including Apple Silicon).
+執行 8 次紋理取樣。移動 GPU 不支援（包括 Apple Silicon）。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_16:
 
@@ -2742,7 +2742,7 @@ Perform 8 texture samples. Not supported on mobile GPUs (including Apple Silicon
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_16** = ``4``
 
-Perform 16 texture samples. Not supported on mobile GPUs and many desktop GPUs.
+執行 16 次紋理取樣。移動 GPU 及許多桌面 GPU 均不支援。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_32:
 
@@ -2750,7 +2750,7 @@ Perform 16 texture samples. Not supported on mobile GPUs and many desktop GPUs.
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_32** = ``5``
 
-Perform 32 texture samples. Not supported on most GPUs.
+執行 32 次紋理取樣。大多數 GPU 均不支援。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_64:
 
@@ -2758,7 +2758,7 @@ Perform 32 texture samples. Not supported on most GPUs.
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_64** = ``6``
 
-Perform 64 texture samples (this is the slowest but highest-quality for antialiasing). Not supported on most GPUs.
+執行 64 次紋理取樣（最慢，但抗鋸齒品質最高）。大多數 GPU 均不支援。
 
 .. _class_RenderingDevice_constant_TEXTURE_SAMPLES_MAX:
 
@@ -2766,7 +2766,7 @@ Perform 64 texture samples (this is the slowest but highest-quality for antialia
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **TEXTURE_SAMPLES_MAX** = ``7``
 
-Represents the size of the :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` enum.
+代表 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2784,7 +2784,7 @@ flags **TextureUsageBits**: :ref:`🔗<enum_RenderingDevice_TextureUsageBits>`
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_SAMPLING_BIT** = ``1``
 
-Texture can be sampled.
+紋理可以取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_COLOR_ATTACHMENT_BIT:
 
@@ -2792,7 +2792,7 @@ Texture can be sampled.
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_COLOR_ATTACHMENT_BIT** = ``2``
 
-Texture can be used as a color attachment in a framebuffer.
+紋理可以用作影格緩衝的顏色附件。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT:
 
@@ -2800,7 +2800,7 @@ Texture can be used as a color attachment in a framebuffer.
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT** = ``4``
 
-Texture can be used as a depth/stencil attachment in a framebuffer.
+紋理可以用作影格緩衝的深度/範本附件。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_DEPTH_RESOLVE_ATTACHMENT_BIT:
 
@@ -2816,7 +2816,7 @@ Texture can be used as a depth/stencil resolve attachment in a framebuffer.
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_STORAGE_BIT** = ``8``
 
-Texture can be used as a `storage image <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#descriptorsets-storageimage>`__.
+紋理可以用作\ `儲存圖像 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#descriptorsets-storageimage>`__\ 。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_STORAGE_ATOMIC_BIT:
 
@@ -2824,7 +2824,7 @@ Texture can be used as a `storage image <https://registry.khronos.org/vulkan/spe
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_STORAGE_ATOMIC_BIT** = ``16``
 
-Texture can be used as a `storage image <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#descriptorsets-storageimage>`__ with support for atomic operations.
+紋理可以用作支援不可分割操作的\ `儲存圖像 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#descriptorsets-storageimage>`__\ 。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_CPU_READ_BIT:
 
@@ -2832,7 +2832,7 @@ Texture can be used as a `storage image <https://registry.khronos.org/vulkan/spe
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_CPU_READ_BIT** = ``32``
 
-Texture can be read back on the CPU using :ref:`texture_get_data()<class_RenderingDevice_method_texture_get_data>` faster than without this bit, since it is always kept in the system memory.
+紋理可以在 CPU 上使用 :ref:`texture_get_data()<class_RenderingDevice_method_texture_get_data>` 讀取，比不設定這一位要快，因為會始終在系統記憶體中保留。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_CAN_UPDATE_BIT:
 
@@ -2840,7 +2840,7 @@ Texture can be read back on the CPU using :ref:`texture_get_data()<class_Renderi
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_CAN_UPDATE_BIT** = ``64``
 
-Texture can be updated using :ref:`texture_update()<class_RenderingDevice_method_texture_update>`.
+紋理可以使用 :ref:`texture_update()<class_RenderingDevice_method_texture_update>` 更新。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT:
 
@@ -2848,7 +2848,7 @@ Texture can be updated using :ref:`texture_update()<class_RenderingDevice_method
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_CAN_COPY_FROM_BIT** = ``128``
 
-Texture can be a source for :ref:`texture_copy()<class_RenderingDevice_method_texture_copy>`.
+紋理可以作為 :ref:`texture_copy()<class_RenderingDevice_method_texture_copy>` 的來源。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT:
 
@@ -2856,7 +2856,7 @@ Texture can be a source for :ref:`texture_copy()<class_RenderingDevice_method_te
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_CAN_COPY_TO_BIT** = ``256``
 
-Texture can be a destination for :ref:`texture_copy()<class_RenderingDevice_method_texture_copy>`.
+紋理可以作為 :ref:`texture_copy()<class_RenderingDevice_method_texture_copy>` 的目標。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_INPUT_ATTACHMENT_BIT:
 
@@ -2864,7 +2864,7 @@ Texture can be a destination for :ref:`texture_copy()<class_RenderingDevice_meth
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_INPUT_ATTACHMENT_BIT** = ``512``
 
-Texture can be used as a `input attachment <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#descriptorsets-inputattachment>`__ in a framebuffer.
+紋理可以用作影格緩衝的\ `輸入附件 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#descriptorsets-inputattachment>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2882,7 +2882,7 @@ enum **TextureSwizzle**: :ref:`🔗<enum_RenderingDevice_TextureSwizzle>`
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_IDENTITY** = ``0``
 
-Return the sampled value as-is.
+原樣返回取樣數值。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_ZERO:
 
@@ -2890,7 +2890,7 @@ Return the sampled value as-is.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_ZERO** = ``1``
 
-Always return ``0.0`` when sampling.
+取樣時使用返回 ``0.0``\ 。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_ONE:
 
@@ -2898,7 +2898,7 @@ Always return ``0.0`` when sampling.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_ONE** = ``2``
 
-Always return ``1.0`` when sampling.
+取樣時使用返回 ``1.0``\ 。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_R:
 
@@ -2906,7 +2906,7 @@ Always return ``1.0`` when sampling.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_R** = ``3``
 
-Sample the red color channel.
+對紅色通道進行取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_G:
 
@@ -2914,7 +2914,7 @@ Sample the red color channel.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_G** = ``4``
 
-Sample the green color channel.
+對綠色通道進行取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_B:
 
@@ -2922,7 +2922,7 @@ Sample the green color channel.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_B** = ``5``
 
-Sample the blue color channel.
+對藍色通道進行取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_A:
 
@@ -2930,7 +2930,7 @@ Sample the blue color channel.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_A** = ``6``
 
-Sample the alpha channel.
+對 Alpha 通道進行取樣。
 
 .. _class_RenderingDevice_constant_TEXTURE_SWIZZLE_MAX:
 
@@ -2938,7 +2938,7 @@ Sample the alpha channel.
 
 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` **TEXTURE_SWIZZLE_MAX** = ``7``
 
-Represents the size of the :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` enum.
+代表 :ref:`TextureSwizzle<enum_RenderingDevice_TextureSwizzle>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2956,7 +2956,7 @@ enum **TextureSliceType**: :ref:`🔗<enum_RenderingDevice_TextureSliceType>`
 
 :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` **TEXTURE_SLICE_2D** = ``0``
 
-2-dimensional texture slice.
+二維紋理切片。
 
 .. _class_RenderingDevice_constant_TEXTURE_SLICE_CUBEMAP:
 
@@ -2964,7 +2964,7 @@ enum **TextureSliceType**: :ref:`🔗<enum_RenderingDevice_TextureSliceType>`
 
 :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` **TEXTURE_SLICE_CUBEMAP** = ``1``
 
-Cubemap texture slice.
+立方體貼圖紋理切片。
 
 .. _class_RenderingDevice_constant_TEXTURE_SLICE_3D:
 
@@ -2972,7 +2972,7 @@ Cubemap texture slice.
 
 :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` **TEXTURE_SLICE_3D** = ``2``
 
-3-dimensional texture slice.
+三維紋理切片。
 
 .. rst-class:: classref-item-separator
 
@@ -2990,7 +2990,7 @@ enum **SamplerFilter**: :ref:`🔗<enum_RenderingDevice_SamplerFilter>`
 
 :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **SAMPLER_FILTER_NEAREST** = ``0``
 
-Nearest-neighbor sampler filtering. Sampling at higher resolutions than the source will result in a pixelated look.
+最近鄰取樣器篩選。按照比源更高解析度取樣時，會產生圖元化的效果。
 
 .. _class_RenderingDevice_constant_SAMPLER_FILTER_LINEAR:
 
@@ -2998,7 +2998,7 @@ Nearest-neighbor sampler filtering. Sampling at higher resolutions than the sour
 
 :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **SAMPLER_FILTER_LINEAR** = ``1``
 
-Bilinear sampler filtering. Sampling at higher resolutions than the source will result in a blurry look.
+雙線性取樣器篩選。按照比源更高解析度取樣時，會產生模糊的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -3016,7 +3016,7 @@ enum **SamplerRepeatMode**: :ref:`🔗<enum_RenderingDevice_SamplerRepeatMode>`
 
 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **SAMPLER_REPEAT_MODE_REPEAT** = ``0``
 
-Sample with repeating enabled.
+啟用重複取樣。
 
 .. _class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_MIRRORED_REPEAT:
 
@@ -3024,7 +3024,7 @@ Sample with repeating enabled.
 
 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **SAMPLER_REPEAT_MODE_MIRRORED_REPEAT** = ``1``
 
-Sample with mirrored repeating enabled. When sampling outside the ``[0.0, 1.0]`` range, return a mirrored version of the sampler. This mirrored version is mirrored again if sampling further away, with the pattern repeating indefinitely.
+啟用鏡像重複取樣。對 ``[0.0, 1.0]`` 範圍外進行取樣時，返回取樣器的鏡像版本。如果取樣的是更遠的位置，則會對鏡像版本再次鏡像，並按照這樣的規律無限重複下去。
 
 .. _class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_EDGE:
 
@@ -3032,7 +3032,7 @@ Sample with mirrored repeating enabled. When sampling outside the ``[0.0, 1.0]``
 
 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **SAMPLER_REPEAT_MODE_CLAMP_TO_EDGE** = ``2``
 
-Sample with repeating disabled. When sampling outside the ``[0.0, 1.0]`` range, return the color of the last pixel on the edge.
+禁用重複取樣。對 ``[0.0, 1.0]`` 範圍外進行取樣時，返回邊緣上最後一個圖元的顏色。
 
 .. _class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER:
 
@@ -3040,7 +3040,7 @@ Sample with repeating disabled. When sampling outside the ``[0.0, 1.0]`` range, 
 
 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER** = ``3``
 
-Sample with repeating disabled. When sampling outside the ``[0.0, 1.0]`` range, return the specified :ref:`RDSamplerState.border_color<class_RDSamplerState_property_border_color>`.
+禁用重複取樣。對 ``[0.0, 1.0]`` 範圍外進行取樣時，返回指定的邊框顏色 :ref:`RDSamplerState.border_color<class_RDSamplerState_property_border_color>`\ 。
 
 .. _class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_MIRROR_CLAMP_TO_EDGE:
 
@@ -3048,7 +3048,7 @@ Sample with repeating disabled. When sampling outside the ``[0.0, 1.0]`` range, 
 
 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **SAMPLER_REPEAT_MODE_MIRROR_CLAMP_TO_EDGE** = ``4``
 
-Sample with mirrored repeating enabled, but only once. When sampling in the ``[-1.0, 0.0]`` range, return a mirrored version of the sampler. When sampling outside the ``[-1.0, 1.0]`` range, return the color of the last pixel on the edge.
+啟用單次鏡像重複取樣。對 ``[-1.0, 0.0]`` 範圍進行取樣時，返回取樣器的鏡像版本。對 ``[-1.0, 1.0]`` 範圍外進行取樣時，返回邊緣上最後一個圖元的顏色。
 
 .. _class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_MAX:
 
@@ -3056,7 +3056,7 @@ Sample with mirrored repeating enabled, but only once. When sampling in the ``[-
 
 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **SAMPLER_REPEAT_MODE_MAX** = ``5``
 
-Represents the size of the :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` enum.
+代表 :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3074,7 +3074,7 @@ enum **SamplerBorderColor**: :ref:`🔗<enum_RenderingDevice_SamplerBorderColor>
 
 :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` **SAMPLER_BORDER_COLOR_FLOAT_TRANSPARENT_BLACK** = ``0``
 
-Return a floating-point transparent black color when sampling outside the ``[0.0, 1.0]`` range. Only effective if the sampler repeat mode is :ref:`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER<class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER>`.
+對 ``[0.0, 1.0]`` 範圍外進行取樣時，返回浮點型的透明黑色。僅在取樣器的重複模式為 :ref:`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER<class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER>` 時有效。
 
 .. _class_RenderingDevice_constant_SAMPLER_BORDER_COLOR_INT_TRANSPARENT_BLACK:
 
@@ -3090,7 +3090,7 @@ Return an integer transparent black color when sampling outside the ``[0.0, 1.0]
 
 :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` **SAMPLER_BORDER_COLOR_FLOAT_OPAQUE_BLACK** = ``2``
 
-Return a floating-point opaque black color when sampling outside the ``[0.0, 1.0]`` range. Only effective if the sampler repeat mode is :ref:`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER<class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER>`.
+對 ``[0.0, 1.0]`` 範圍外進行取樣時，返回浮點型的不透明黑色。僅在取樣器的重複模式為 :ref:`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER<class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER>` 時有效。
 
 .. _class_RenderingDevice_constant_SAMPLER_BORDER_COLOR_INT_OPAQUE_BLACK:
 
@@ -3106,7 +3106,7 @@ Return an integer opaque black color when sampling outside the ``[0.0, 1.0]`` ra
 
 :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` **SAMPLER_BORDER_COLOR_FLOAT_OPAQUE_WHITE** = ``4``
 
-Return a floating-point opaque white color when sampling outside the ``[0.0, 1.0]`` range. Only effective if the sampler repeat mode is :ref:`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER<class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER>`.
+對 ``[0.0, 1.0]`` 範圍外進行取樣時，返回浮點型的不透明白色。僅在取樣器的重複模式為 :ref:`SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER<class_RenderingDevice_constant_SAMPLER_REPEAT_MODE_CLAMP_TO_BORDER>` 時有效。
 
 .. _class_RenderingDevice_constant_SAMPLER_BORDER_COLOR_INT_OPAQUE_WHITE:
 
@@ -3122,7 +3122,7 @@ Return an integer opaque white color when sampling outside the ``[0.0, 1.0]`` ra
 
 :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` **SAMPLER_BORDER_COLOR_MAX** = ``6``
 
-Represents the size of the :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` enum.
+代表 :ref:`SamplerBorderColor<enum_RenderingDevice_SamplerBorderColor>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3140,7 +3140,7 @@ enum **VertexFrequency**: :ref:`🔗<enum_RenderingDevice_VertexFrequency>`
 
 :ref:`VertexFrequency<enum_RenderingDevice_VertexFrequency>` **VERTEX_FREQUENCY_VERTEX** = ``0``
 
-Vertex attribute addressing is a function of the vertex. This is used to specify the rate at which vertex attributes are pulled from buffers.
+頂點屬性定址是頂點的功能。用於指定從緩衝中拉取頂點屬性的頻率。
 
 .. _class_RenderingDevice_constant_VERTEX_FREQUENCY_INSTANCE:
 
@@ -3148,7 +3148,7 @@ Vertex attribute addressing is a function of the vertex. This is used to specify
 
 :ref:`VertexFrequency<enum_RenderingDevice_VertexFrequency>` **VERTEX_FREQUENCY_INSTANCE** = ``1``
 
-Vertex attribute addressing is a function of the instance index. This is used to specify the rate at which vertex attributes are pulled from buffers.
+頂點屬性定址是實例索引的功能。用於指定從緩衝中拉取頂點屬性的頻率。
 
 .. rst-class:: classref-item-separator
 
@@ -3166,7 +3166,7 @@ enum **IndexBufferFormat**: :ref:`🔗<enum_RenderingDevice_IndexBufferFormat>`
 
 :ref:`IndexBufferFormat<enum_RenderingDevice_IndexBufferFormat>` **INDEX_BUFFER_FORMAT_UINT16** = ``0``
 
-Index buffer in 16-bit unsigned integer format. This limits the maximum index that can be specified to ``65535``.
+16 位元不帶正負號的整數格式的索引緩衝。對可指定索引最大值的限制為 ``65535``\ 。
 
 .. _class_RenderingDevice_constant_INDEX_BUFFER_FORMAT_UINT32:
 
@@ -3174,7 +3174,7 @@ Index buffer in 16-bit unsigned integer format. This limits the maximum index th
 
 :ref:`IndexBufferFormat<enum_RenderingDevice_IndexBufferFormat>` **INDEX_BUFFER_FORMAT_UINT32** = ``1``
 
-Index buffer in 32-bit unsigned integer format. This limits the maximum index that can be specified to ``4294967295``.
+32 位元不帶正負號的整數格式的索引緩衝。對可指定索引最大值的限制為 ``4294967295``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3253,7 +3253,7 @@ enum **UniformType**: :ref:`🔗<enum_RenderingDevice_UniformType>`
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_SAMPLER** = ``0``
 
-Sampler uniform.
+取樣器 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_SAMPLER_WITH_TEXTURE:
 
@@ -3261,7 +3261,7 @@ Sampler uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_SAMPLER_WITH_TEXTURE** = ``1``
 
-Sampler uniform with a texture.
+帶有紋理的取樣器 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_TEXTURE:
 
@@ -3269,7 +3269,7 @@ Sampler uniform with a texture.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_TEXTURE** = ``2``
 
-Texture uniform.
+紋理 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_IMAGE:
 
@@ -3277,7 +3277,7 @@ Texture uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_IMAGE** = ``3``
 
-Image uniform.
+圖像 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_TEXTURE_BUFFER:
 
@@ -3285,7 +3285,7 @@ Image uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_TEXTURE_BUFFER** = ``4``
 
-Texture buffer uniform.
+紋理緩衝 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_SAMPLER_WITH_TEXTURE_BUFFER:
 
@@ -3293,7 +3293,7 @@ Texture buffer uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_SAMPLER_WITH_TEXTURE_BUFFER** = ``5``
 
-Sampler uniform with a texture buffer.
+帶有紋理的取樣器 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_IMAGE_BUFFER:
 
@@ -3301,7 +3301,7 @@ Sampler uniform with a texture buffer.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_IMAGE_BUFFER** = ``6``
 
-Image buffer uniform.
+圖像緩衝 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_UNIFORM_BUFFER:
 
@@ -3309,7 +3309,7 @@ Image buffer uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_UNIFORM_BUFFER** = ``7``
 
-Uniform buffer uniform.
+Uniform 緩衝區 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_STORAGE_BUFFER:
 
@@ -3317,7 +3317,7 @@ Uniform buffer uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_STORAGE_BUFFER** = ``8``
 
-`Storage buffer <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__ uniform.
+`儲存緩衝區 <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__ uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_INPUT_ATTACHMENT:
 
@@ -3325,7 +3325,7 @@ Uniform buffer uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_INPUT_ATTACHMENT** = ``9``
 
-Input attachment uniform.
+輸入附件 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_UNIFORM_BUFFER_DYNAMIC:
 
@@ -3357,7 +3357,7 @@ It's exposed in case GD users receive a buffer created with such flag from Godot
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_MAX** = ``12``
 
-Represents the size of the :ref:`UniformType<enum_RenderingDevice_UniformType>` enum.
+表示 :ref:`UniformType<enum_RenderingDevice_UniformType>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3375,7 @@ enum **RenderPrimitive**: :ref:`🔗<enum_RenderingDevice_RenderPrimitive>`
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_POINTS** = ``0``
 
-Point rendering primitive (with constant size, regardless of distance from camera).
+算繪點的圖元（大小為常數，和與相機之間的距離無關）。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_LINES:
 
@@ -3383,7 +3383,7 @@ Point rendering primitive (with constant size, regardless of distance from camer
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_LINES** = ``1``
 
-Line list rendering primitive. Lines are drawn separated from each other.
+算繪線段列表的圖元。線段在繪製時是彼此獨立的。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_LINES_WITH_ADJACENCY:
 
@@ -3391,9 +3391,9 @@ Line list rendering primitive. Lines are drawn separated from each other.
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_LINES_WITH_ADJACENCY** = ``2``
 
-`Line list rendering primitive with adjacency. <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#drawing-line-lists-with-adjacency>`__\ 
+`算繪線段列表的圖元，提供鄰接資料。 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#drawing-line-lists-with-adjacency>`__\ 
 
-\ **Note:** Adjacency is only useful with geometry shaders, which Godot does not expose.
+\ **注意：**\ 鄰接資料僅在幾何著色器中有用，但 Godot 並沒有暴露。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_LINESTRIPS:
 
@@ -3401,7 +3401,7 @@ Line list rendering primitive. Lines are drawn separated from each other.
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_LINESTRIPS** = ``3``
 
-Line strip rendering primitive. Lines drawn are connected to the previous vertex.
+算繪線段條帶的圖元。繪製的線段與它的前一個頂點是相連的。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_LINESTRIPS_WITH_ADJACENCY:
 
@@ -3409,9 +3409,9 @@ Line strip rendering primitive. Lines drawn are connected to the previous vertex
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_LINESTRIPS_WITH_ADJACENCY** = ``4``
 
-`Line strip rendering primitive with adjacency. <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#drawing-line-strips-with-adjacency>`__\ 
+`算繪線段條帶的圖元，提供鄰接資料。 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#drawing-line-strips-with-adjacency>`__\ 
 
-\ **Note:** Adjacency is only useful with geometry shaders, which Godot does not expose.
+\ **注意：**\ 鄰接資料僅在幾何著色器中有用，但 Godot 並沒有暴露。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_TRIANGLES:
 
@@ -3419,7 +3419,7 @@ Line strip rendering primitive. Lines drawn are connected to the previous vertex
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_TRIANGLES** = ``5``
 
-Triangle list rendering primitive. Triangles are drawn separated from each other.
+算繪三角形列表的圖元。三角形在繪製時是彼此獨立的。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_TRIANGLES_WITH_ADJACENCY:
 
@@ -3437,7 +3437,7 @@ Triangle list rendering primitive. Triangles are drawn separated from each other
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_TRIANGLE_STRIPS** = ``7``
 
-Triangle strip rendering primitive. Triangles drawn are connected to the previous triangle.
+算繪三角形條帶的圖元。繪製的三角形與它的前一個三角形是相連的。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_TRIANGLE_STRIPS_WITH_AJACENCY:
 
@@ -3445,9 +3445,9 @@ Triangle strip rendering primitive. Triangles drawn are connected to the previou
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_TRIANGLE_STRIPS_WITH_AJACENCY** = ``8``
 
-`Triangle strip rendering primitive with adjacency. <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#drawing-triangle-strips-with-adjacency>`__\ 
+`算繪三角形條帶的圖元，提供鄰接數據。 <https://registry.khronos.org/vulkan/specs/1.3-extensions/html/vkspec.html#drawing-triangle-strips-with-adjacency>`__\ 
 
-\ **Note:** Adjacency is only useful with geometry shaders, which Godot does not expose.
+\ **注意：**\ 鄰接資料僅在幾何著色器中有用，但 Godot 並沒有暴露。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_TRIANGLE_STRIPS_WITH_RESTART_INDEX:
 
@@ -3455,9 +3455,9 @@ Triangle strip rendering primitive. Triangles drawn are connected to the previou
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_TRIANGLE_STRIPS_WITH_RESTART_INDEX** = ``9``
 
-Triangle strip rendering primitive with *primitive restart* enabled. Triangles drawn are connected to the previous triangle, but a primitive restart index can be specified before drawing to create a second triangle strip after the specified index.
+算繪三角形條帶的圖元，啟用\ *圖元重啟*\ 。繪製的三角形與它的前一個三角形是相連的，但是在繪製前可以指定圖元重啟索引，這樣在指定索引之後就會再建立一條三角形條帶。
 
-\ **Note:** Only compatible with indexed draws.
+\ **注意：**\ 僅相容索引繪圖。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_TESSELATION_PATCH:
 
@@ -3465,7 +3465,7 @@ Triangle strip rendering primitive with *primitive restart* enabled. Triangles d
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_TESSELATION_PATCH** = ``10``
 
-Tessellation patch rendering primitive. Only useful with tessellation shaders, which can be used to deform these patches.
+曲面細分面片算繪圖元。僅對曲面細分著色器有用，可以將面片變形。
 
 .. _class_RenderingDevice_constant_RENDER_PRIMITIVE_MAX:
 
@@ -3473,7 +3473,7 @@ Tessellation patch rendering primitive. Only useful with tessellation shaders, w
 
 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` **RENDER_PRIMITIVE_MAX** = ``11``
 
-Represents the size of the :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` enum.
+代表 :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3491,7 +3491,7 @@ enum **PolygonCullMode**: :ref:`🔗<enum_RenderingDevice_PolygonCullMode>`
 
 :ref:`PolygonCullMode<enum_RenderingDevice_PolygonCullMode>` **POLYGON_CULL_DISABLED** = ``0``
 
-Do not use polygon front face or backface culling.
+不使用多邊形的正面和背面剔除。
 
 .. _class_RenderingDevice_constant_POLYGON_CULL_FRONT:
 
@@ -3499,7 +3499,7 @@ Do not use polygon front face or backface culling.
 
 :ref:`PolygonCullMode<enum_RenderingDevice_PolygonCullMode>` **POLYGON_CULL_FRONT** = ``1``
 
-Use polygon frontface culling (faces pointing towards the camera are hidden).
+使用多邊形的正面剔除（隱藏正對相機的面）。
 
 .. _class_RenderingDevice_constant_POLYGON_CULL_BACK:
 
@@ -3507,7 +3507,7 @@ Use polygon frontface culling (faces pointing towards the camera are hidden).
 
 :ref:`PolygonCullMode<enum_RenderingDevice_PolygonCullMode>` **POLYGON_CULL_BACK** = ``2``
 
-Use polygon backface culling (faces pointing away from the camera are hidden).
+使用多邊形的背面剔除（隱藏背對相機的面）。
 
 .. rst-class:: classref-item-separator
 
@@ -3525,7 +3525,7 @@ enum **PolygonFrontFace**: :ref:`🔗<enum_RenderingDevice_PolygonFrontFace>`
 
 :ref:`PolygonFrontFace<enum_RenderingDevice_PolygonFrontFace>` **POLYGON_FRONT_FACE_CLOCKWISE** = ``0``
 
-Clockwise winding order to determine which face of a polygon is its front face.
+決定多邊形面為是否為正面時，使用順時針纏繞順序。
 
 .. _class_RenderingDevice_constant_POLYGON_FRONT_FACE_COUNTER_CLOCKWISE:
 
@@ -3533,7 +3533,7 @@ Clockwise winding order to determine which face of a polygon is its front face.
 
 :ref:`PolygonFrontFace<enum_RenderingDevice_PolygonFrontFace>` **POLYGON_FRONT_FACE_COUNTER_CLOCKWISE** = ``1``
 
-Counter-clockwise winding order to determine which face of a polygon is its front face.
+決定多邊形面為是否為正面時，使用逆時針纏繞順序。
 
 .. rst-class:: classref-item-separator
 
@@ -3551,7 +3551,7 @@ enum **StencilOperation**: :ref:`🔗<enum_RenderingDevice_StencilOperation>`
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_KEEP** = ``0``
 
-Keep the current stencil value.
+保留目前的範本值。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_ZERO:
 
@@ -3559,7 +3559,7 @@ Keep the current stencil value.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_ZERO** = ``1``
 
-Set the stencil value to ``0``.
+將範本值設定為 ``0``\ 。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_REPLACE:
 
@@ -3567,7 +3567,7 @@ Set the stencil value to ``0``.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_REPLACE** = ``2``
 
-Replace the existing stencil value with the new one.
+將現有的範本值替換為新值。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_INCREMENT_AND_CLAMP:
 
@@ -3575,7 +3575,7 @@ Replace the existing stencil value with the new one.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_INCREMENT_AND_CLAMP** = ``3``
 
-Increment the existing stencil value and clamp to the maximum representable unsigned value if reached. Stencil bits are considered as an unsigned integer.
+將現有的範本值加一，到達能夠表示的最大無符號值之後就不會再增長。會將範本位元視作不帶正負號的整數。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_DECREMENT_AND_CLAMP:
 
@@ -3583,7 +3583,7 @@ Increment the existing stencil value and clamp to the maximum representable unsi
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_DECREMENT_AND_CLAMP** = ``4``
 
-Decrement the existing stencil value and clamp to the minimum value if reached. Stencil bits are considered as an unsigned integer.
+將現有的範本值減一，到達最小值之後就不會再降低。會將範本位元視作不帶正負號的整數。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_INVERT:
 
@@ -3591,7 +3591,7 @@ Decrement the existing stencil value and clamp to the minimum value if reached. 
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_INVERT** = ``5``
 
-Bitwise-invert the existing stencil value.
+將現有的範本值按位元取反。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_INCREMENT_AND_WRAP:
 
@@ -3599,7 +3599,7 @@ Bitwise-invert the existing stencil value.
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_INCREMENT_AND_WRAP** = ``6``
 
-Increment the stencil value and wrap around to ``0`` if reaching the maximum representable unsigned. Stencil bits are considered as an unsigned integer.
+將現有的範本值加一，到達能夠表示的最大無符號值之後環繞至 ``0``\ 。會將範本位元視作不帶正負號的整數。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_DECREMENT_AND_WRAP:
 
@@ -3607,7 +3607,7 @@ Increment the stencil value and wrap around to ``0`` if reaching the maximum rep
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_DECREMENT_AND_WRAP** = ``7``
 
-Decrement the stencil value and wrap around to the maximum representable unsigned if reaching the minimum. Stencil bits are considered as an unsigned integer.
+將現有的範本值減一，到達最小值之後環繞至能夠表示的最大無符號值。會將範本位元視作不帶正負號的整數。
 
 .. _class_RenderingDevice_constant_STENCIL_OP_MAX:
 
@@ -3615,7 +3615,7 @@ Decrement the stencil value and wrap around to the maximum representable unsigne
 
 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **STENCIL_OP_MAX** = ``8``
 
-Represents the size of the :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` enum.
+代表 :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3633,7 +3633,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_NEVER** = ``0``
 
-"Never" comparison (opposite of :ref:`COMPARE_OP_ALWAYS<class_RenderingDevice_constant_COMPARE_OP_ALWAYS>`).
+“永不”比較（與 :ref:`COMPARE_OP_ALWAYS<class_RenderingDevice_constant_COMPARE_OP_ALWAYS>` 相對）。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_LESS:
 
@@ -3641,7 +3641,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_LESS** = ``1``
 
-"Less than" comparison.
+“小於”比較。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_EQUAL:
 
@@ -3649,7 +3649,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_EQUAL** = ``2``
 
-"Equal" comparison.
+“等於”比較。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_LESS_OR_EQUAL:
 
@@ -3657,7 +3657,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_LESS_OR_EQUAL** = ``3``
 
-"Less than or equal" comparison.
+“小於等於”比較。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_GREATER:
 
@@ -3665,7 +3665,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_GREATER** = ``4``
 
-"Greater than" comparison.
+“大於”比較。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_NOT_EQUAL:
 
@@ -3673,7 +3673,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_NOT_EQUAL** = ``5``
 
-"Not equal" comparison.
+“不等於”比較。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_GREATER_OR_EQUAL:
 
@@ -3681,7 +3681,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_GREATER_OR_EQUAL** = ``6``
 
-"Greater than or equal" comparison.
+“大於等於”比較。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_ALWAYS:
 
@@ -3689,7 +3689,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_ALWAYS** = ``7``
 
-"Always" comparison (opposite of :ref:`COMPARE_OP_NEVER<class_RenderingDevice_constant_COMPARE_OP_NEVER>`).
+“始終”比較（與 :ref:`COMPARE_OP_NEVER<class_RenderingDevice_constant_COMPARE_OP_NEVER>` 相對）。
 
 .. _class_RenderingDevice_constant_COMPARE_OP_MAX:
 
@@ -3697,7 +3697,7 @@ enum **CompareOperator**: :ref:`🔗<enum_RenderingDevice_CompareOperator>`
 
 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **COMPARE_OP_MAX** = ``8``
 
-Represents the size of the :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` enum.
+代表 :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3715,7 +3715,7 @@ enum **LogicOperation**: :ref:`🔗<enum_RenderingDevice_LogicOperation>`
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_CLEAR** = ``0``
 
-Clear logic operation (result is always ``0``). See also :ref:`LOGIC_OP_SET<class_RenderingDevice_constant_LOGIC_OP_SET>`.
+邏輯清除運算（結果始終為 ``0``\ ）。另見 :ref:`LOGIC_OP_SET<class_RenderingDevice_constant_LOGIC_OP_SET>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_AND:
 
@@ -3723,7 +3723,7 @@ Clear logic operation (result is always ``0``). See also :ref:`LOGIC_OP_SET<clas
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_AND** = ``1``
 
-AND logic operation.
+邏輯與（AND）運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_AND_REVERSE:
 
@@ -3731,7 +3731,7 @@ AND logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_AND_REVERSE** = ``2``
 
-AND logic operation with the *destination* operand being inverted. See also :ref:`LOGIC_OP_AND_INVERTED<class_RenderingDevice_constant_LOGIC_OP_AND_INVERTED>`.
+邏輯與（AND）運算，翻轉\ *目標*\ 運算元。另見 :ref:`LOGIC_OP_AND_INVERTED<class_RenderingDevice_constant_LOGIC_OP_AND_INVERTED>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_COPY:
 
@@ -3739,7 +3739,7 @@ AND logic operation with the *destination* operand being inverted. See also :ref
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_COPY** = ``3``
 
-Copy logic operation (keeps the *source* value as-is). See also :ref:`LOGIC_OP_COPY_INVERTED<class_RenderingDevice_constant_LOGIC_OP_COPY_INVERTED>` and :ref:`LOGIC_OP_NO_OP<class_RenderingDevice_constant_LOGIC_OP_NO_OP>`.
+邏輯複製運算（保留\ *來源*\ 的值）。另見 :ref:`LOGIC_OP_COPY_INVERTED<class_RenderingDevice_constant_LOGIC_OP_COPY_INVERTED>` 和 :ref:`LOGIC_OP_NO_OP<class_RenderingDevice_constant_LOGIC_OP_NO_OP>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_AND_INVERTED:
 
@@ -3747,7 +3747,7 @@ Copy logic operation (keeps the *source* value as-is). See also :ref:`LOGIC_OP_C
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_AND_INVERTED** = ``4``
 
-AND logic operation with the *source* operand being inverted. See also :ref:`LOGIC_OP_AND_REVERSE<class_RenderingDevice_constant_LOGIC_OP_AND_REVERSE>`.
+邏輯與（AND）運算，翻轉\ *來源*\ 運算元。另見 :ref:`LOGIC_OP_AND_REVERSE<class_RenderingDevice_constant_LOGIC_OP_AND_REVERSE>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_NO_OP:
 
@@ -3755,7 +3755,7 @@ AND logic operation with the *source* operand being inverted. See also :ref:`LOG
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_NO_OP** = ``5``
 
-No-op logic operation (keeps the *destination* value as-is). See also :ref:`LOGIC_OP_COPY<class_RenderingDevice_constant_LOGIC_OP_COPY>`.
+邏輯空運算（保留\ *目標*\ 值）。另見 :ref:`LOGIC_OP_COPY<class_RenderingDevice_constant_LOGIC_OP_COPY>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_XOR:
 
@@ -3763,7 +3763,7 @@ No-op logic operation (keeps the *destination* value as-is). See also :ref:`LOGI
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_XOR** = ``6``
 
-Exclusive or (XOR) logic operation.
+邏輯異或（XOR）運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_OR:
 
@@ -3771,7 +3771,7 @@ Exclusive or (XOR) logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_OR** = ``7``
 
-OR logic operation.
+邏輯或（OR）運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_NOR:
 
@@ -3779,7 +3779,7 @@ OR logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_NOR** = ``8``
 
-Not-OR (NOR) logic operation.
+邏輯非或（NOR）運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_EQUIVALENT:
 
@@ -3787,7 +3787,7 @@ Not-OR (NOR) logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_EQUIVALENT** = ``9``
 
-Not-XOR (XNOR) logic operation.
+邏輯非異或（XNOR）運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_INVERT:
 
@@ -3795,7 +3795,7 @@ Not-XOR (XNOR) logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_INVERT** = ``10``
 
-Invert logic operation.
+邏輯翻轉運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_OR_REVERSE:
 
@@ -3803,7 +3803,7 @@ Invert logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_OR_REVERSE** = ``11``
 
-OR logic operation with the *destination* operand being inverted. See also :ref:`LOGIC_OP_OR_REVERSE<class_RenderingDevice_constant_LOGIC_OP_OR_REVERSE>`.
+邏輯或（OR）運算，翻轉\ *目標*\ 運算元。另見 :ref:`LOGIC_OP_OR_REVERSE<class_RenderingDevice_constant_LOGIC_OP_OR_REVERSE>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_COPY_INVERTED:
 
@@ -3811,7 +3811,7 @@ OR logic operation with the *destination* operand being inverted. See also :ref:
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_COPY_INVERTED** = ``12``
 
-NOT logic operation (inverts the value). See also :ref:`LOGIC_OP_COPY<class_RenderingDevice_constant_LOGIC_OP_COPY>`.
+邏輯非（NOT）運算（將值翻轉）。另見 :ref:`LOGIC_OP_COPY<class_RenderingDevice_constant_LOGIC_OP_COPY>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_OR_INVERTED:
 
@@ -3819,7 +3819,7 @@ NOT logic operation (inverts the value). See also :ref:`LOGIC_OP_COPY<class_Rend
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_OR_INVERTED** = ``13``
 
-OR logic operation with the *source* operand being inverted. See also :ref:`LOGIC_OP_OR_REVERSE<class_RenderingDevice_constant_LOGIC_OP_OR_REVERSE>`.
+邏輯或（OR）運算，翻轉\ *來源*\ 運算元。另見 :ref:`LOGIC_OP_OR_REVERSE<class_RenderingDevice_constant_LOGIC_OP_OR_REVERSE>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_NAND:
 
@@ -3827,7 +3827,7 @@ OR logic operation with the *source* operand being inverted. See also :ref:`LOGI
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_NAND** = ``14``
 
-Not-AND (NAND) logic operation.
+邏輯非與（NAND）運算。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_SET:
 
@@ -3835,7 +3835,7 @@ Not-AND (NAND) logic operation.
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_SET** = ``15``
 
-SET logic operation (result is always ``1``). See also :ref:`LOGIC_OP_CLEAR<class_RenderingDevice_constant_LOGIC_OP_CLEAR>`.
+邏輯設定運算（結果始終為 ``1``\ ）。另見 :ref:`LOGIC_OP_CLEAR<class_RenderingDevice_constant_LOGIC_OP_CLEAR>`\ 。
 
 .. _class_RenderingDevice_constant_LOGIC_OP_MAX:
 
@@ -3843,7 +3843,7 @@ SET logic operation (result is always ``1``). See also :ref:`LOGIC_OP_CLEAR<clas
 
 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` **LOGIC_OP_MAX** = ``16``
 
-Represents the size of the :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` enum.
+代表 :ref:`LogicOperation<enum_RenderingDevice_LogicOperation>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -3861,7 +3861,7 @@ enum **BlendFactor**: :ref:`🔗<enum_RenderingDevice_BlendFactor>`
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ZERO** = ``0``
 
-Constant ``0.0`` blend factor.
+混合係數常數 ``0.0``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE:
 
@@ -3869,7 +3869,7 @@ Constant ``0.0`` blend factor.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE** = ``1``
 
-Constant ``1.0`` blend factor.
+混合係數常數 ``1.0``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_SRC_COLOR:
 
@@ -3877,7 +3877,7 @@ Constant ``1.0`` blend factor.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_SRC_COLOR** = ``2``
 
-Color blend factor is ``source color``. Alpha blend factor is ``source alpha``.
+顏色混合係數為 ``source color``\ 。Alpha 混合係數為 ``source alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC_COLOR:
 
@@ -3885,7 +3885,7 @@ Color blend factor is ``source color``. Alpha blend factor is ``source alpha``.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_SRC_COLOR** = ``3``
 
-Color blend factor is ``1.0 - source color``. Alpha blend factor is ``1.0 - source alpha``.
+顏色混合係數為 ``1.0 - source color``\ 。Alpha 混合係數為 ``1.0 - source alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_DST_COLOR:
 
@@ -3893,7 +3893,7 @@ Color blend factor is ``1.0 - source color``. Alpha blend factor is ``1.0 - sour
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_DST_COLOR** = ``4``
 
-Color blend factor is ``destination color``. Alpha blend factor is ``destination alpha``.
+顏色混合係數為 ``destination color``\ 。Alpha 混合係數為 ``destination alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_DST_COLOR:
 
@@ -3901,7 +3901,7 @@ Color blend factor is ``destination color``. Alpha blend factor is ``destination
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_DST_COLOR** = ``5``
 
-Color blend factor is ``1.0 - destination color``. Alpha blend factor is ``1.0 - destination alpha``.
+顏色混合係數為 ``1.0 - destination color``\ 。Alpha 混合係數為 ``1.0 - destination alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_SRC_ALPHA:
 
@@ -3909,7 +3909,7 @@ Color blend factor is ``1.0 - destination color``. Alpha blend factor is ``1.0 -
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_SRC_ALPHA** = ``6``
 
-Color and alpha blend factor is ``source alpha``.
+顏色混合和 Alpha 混合係數為 ``source alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA:
 
@@ -3917,7 +3917,7 @@ Color and alpha blend factor is ``source alpha``.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_SRC_ALPHA** = ``7``
 
-Color and alpha blend factor is ``1.0 - source alpha``.
+顏色混合和 Alpha 混合係數為 ``1.0 - source alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_DST_ALPHA:
 
@@ -3925,7 +3925,7 @@ Color and alpha blend factor is ``1.0 - source alpha``.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_DST_ALPHA** = ``8``
 
-Color and alpha blend factor is ``destination alpha``.
+顏色混合和 Alpha 混合係數為 ``destination alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_DST_ALPHA:
 
@@ -3933,7 +3933,7 @@ Color and alpha blend factor is ``destination alpha``.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_DST_ALPHA** = ``9``
 
-Color and alpha blend factor is ``1.0 - destination alpha``.
+顏色混合和 Alpha 混合係數為 ``1.0 - destination alpha``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_CONSTANT_COLOR:
 
@@ -3941,7 +3941,7 @@ Color and alpha blend factor is ``1.0 - destination alpha``.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_CONSTANT_COLOR** = ``10``
 
-Color blend factor is ``blend constant color``. Alpha blend factor is ``blend constant alpha`` (see :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`).
+顏色混合係數為 ``blend constant color``\ 。Alpha 混合係數為 ``blend constant alpha``\ （見 :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_CONSTANT_COLOR:
 
@@ -3949,7 +3949,7 @@ Color blend factor is ``blend constant color``. Alpha blend factor is ``blend co
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_CONSTANT_COLOR** = ``11``
 
-Color blend factor is ``1.0 - blend constant color``. Alpha blend factor is ``1.0 - blend constant alpha`` (see :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`).
+顏色混合係數為 ``1.0 - blend constant color``\ 。Alpha 混合係數為 ``1.0 - blend constant alpha``\ （見 :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_CONSTANT_ALPHA:
 
@@ -3957,7 +3957,7 @@ Color blend factor is ``1.0 - blend constant color``. Alpha blend factor is ``1.
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_CONSTANT_ALPHA** = ``12``
 
-Color and alpha blend factor is ``blend constant alpha`` (see :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`).
+顏色混合和 Alpha 混合係數為 ``blend constant alpha``\ （見 :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA:
 
@@ -3965,7 +3965,7 @@ Color and alpha blend factor is ``blend constant alpha`` (see :ref:`draw_list_se
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA** = ``13``
 
-Color and alpha blend factor is ``1.0 - blend constant alpha`` (see :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`).
+顏色混合和 Alpha 混合係數為 ``1.0 - blend constant alpha``\ （見 :ref:`draw_list_set_blend_constants()<class_RenderingDevice_method_draw_list_set_blend_constants>`\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_SRC_ALPHA_SATURATE:
 
@@ -3973,7 +3973,7 @@ Color and alpha blend factor is ``1.0 - blend constant alpha`` (see :ref:`draw_l
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_SRC_ALPHA_SATURATE** = ``14``
 
-Color blend factor is ``min(source alpha, 1.0 - destination alpha)``. Alpha blend factor is ``1.0``.
+顏色混合係數為 ``min(source alpha, 1.0 - destination alpha)``\ 。Alpha 混合係數為 ``1.0``\ 。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_SRC1_COLOR:
 
@@ -3981,7 +3981,7 @@ Color blend factor is ``min(source alpha, 1.0 - destination alpha)``. Alpha blen
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_SRC1_COLOR** = ``15``
 
-Color blend factor is ``second source color``. Alpha blend factor is ``second source alpha``. Only relevant for dual-source blending.
+顏色混合係數為 ``second source color``\ 。Alpha 混合係數為 ``second source alpha``\ 。僅適用於雙源混合。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC1_COLOR:
 
@@ -3989,7 +3989,7 @@ Color blend factor is ``second source color``. Alpha blend factor is ``second so
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_SRC1_COLOR** = ``16``
 
-Color blend factor is ``1.0 - second source color``. Alpha blend factor is ``1.0 - second source alpha``. Only relevant for dual-source blending.
+顏色混合係數為 ``1.0 - second source color``\ 。Alpha 混合係數為 ``1.0 - second source alpha``\ 。僅適用於雙源混合。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_SRC1_ALPHA:
 
@@ -3997,7 +3997,7 @@ Color blend factor is ``1.0 - second source color``. Alpha blend factor is ``1.0
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_SRC1_ALPHA** = ``17``
 
-Color and alpha blend factor is ``second source alpha``. Only relevant for dual-source blending.
+顏色混合和 Alpha 混合係數為 ``second source alpha``\ 。僅適用於雙源混合。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_ONE_MINUS_SRC1_ALPHA:
 
@@ -4005,7 +4005,7 @@ Color and alpha blend factor is ``second source alpha``. Only relevant for dual-
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_ONE_MINUS_SRC1_ALPHA** = ``18``
 
-Color and alpha blend factor is ``1.0 - second source alpha``. Only relevant for dual-source blending.
+顏色混合和 Alpha 混合係數為 ``1.0 - second source alpha``\ 。僅適用於雙源混合。
 
 .. _class_RenderingDevice_constant_BLEND_FACTOR_MAX:
 
@@ -4013,7 +4013,7 @@ Color and alpha blend factor is ``1.0 - second source alpha``. Only relevant for
 
 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` **BLEND_FACTOR_MAX** = ``19``
 
-Represents the size of the :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` enum.
+代表 :ref:`BlendFactor<enum_RenderingDevice_BlendFactor>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4031,7 +4031,7 @@ enum **BlendOperation**: :ref:`🔗<enum_RenderingDevice_BlendOperation>`
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_ADD** = ``0``
 
-Additive blending operation (``source + destination``).
+加法混合運算（\ ``source + destination``\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_OP_SUBTRACT:
 
@@ -4039,7 +4039,7 @@ Additive blending operation (``source + destination``).
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_SUBTRACT** = ``1``
 
-Subtractive blending operation (``source - destination``).
+減法混合運算（\ ``source - destination``\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_OP_REVERSE_SUBTRACT:
 
@@ -4047,7 +4047,7 @@ Subtractive blending operation (``source - destination``).
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_REVERSE_SUBTRACT** = ``2``
 
-Reverse subtractive blending operation (``destination - source``).
+逆減法混合運算（\ ``destination - source``\ ）。
 
 .. _class_RenderingDevice_constant_BLEND_OP_MINIMUM:
 
@@ -4055,7 +4055,7 @@ Reverse subtractive blending operation (``destination - source``).
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_MINIMUM** = ``3``
 
-Minimum blending operation (keep the lowest value of the two).
+最小混合運算（保留兩者之間的較小值）。
 
 .. _class_RenderingDevice_constant_BLEND_OP_MAXIMUM:
 
@@ -4063,7 +4063,7 @@ Minimum blending operation (keep the lowest value of the two).
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_MAXIMUM** = ``4``
 
-Maximum blending operation (keep the highest value of the two).
+最大混合運算（保留兩者之間的較大值）。
 
 .. _class_RenderingDevice_constant_BLEND_OP_MAX:
 
@@ -4071,7 +4071,7 @@ Maximum blending operation (keep the highest value of the two).
 
 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` **BLEND_OP_MAX** = ``5``
 
-Represents the size of the :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` enum.
+代表 :ref:`BlendOperation<enum_RenderingDevice_BlendOperation>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -4175,7 +4175,7 @@ enum **InitialAction**: :ref:`🔗<enum_RenderingDevice_InitialAction>`
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_LOAD** = ``0``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 Load the previous contents of the framebuffer.
 
@@ -4185,7 +4185,7 @@ Load the previous contents of the framebuffer.
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_CLEAR** = ``1``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 Clear the whole framebuffer or its specified region.
 
@@ -4195,7 +4195,7 @@ Clear the whole framebuffer or its specified region.
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_DISCARD** = ``2``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 Ignore the previous contents of the framebuffer. This is the fastest option if you'll overwrite all of the pixels and don't need to read any of them.
 
@@ -4205,9 +4205,9 @@ Ignore the previous contents of the framebuffer. This is the fastest option if y
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_MAX** = ``3``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
-Represents the size of the :ref:`InitialAction<enum_RenderingDevice_InitialAction>` enum.
+代表 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` 列舉的大小。
 
 .. _class_RenderingDevice_constant_INITIAL_ACTION_CLEAR_REGION:
 
@@ -4215,7 +4215,7 @@ Represents the size of the :ref:`InitialAction<enum_RenderingDevice_InitialActio
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_CLEAR_REGION** = ``1``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 
 
@@ -4225,7 +4225,7 @@ Represents the size of the :ref:`InitialAction<enum_RenderingDevice_InitialActio
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_CLEAR_REGION_CONTINUE** = ``1``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 
 
@@ -4235,7 +4235,7 @@ Represents the size of the :ref:`InitialAction<enum_RenderingDevice_InitialActio
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_KEEP** = ``0``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 
 
@@ -4245,7 +4245,7 @@ Represents the size of the :ref:`InitialAction<enum_RenderingDevice_InitialActio
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_DROP** = ``2``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 
 
@@ -4255,7 +4255,7 @@ Represents the size of the :ref:`InitialAction<enum_RenderingDevice_InitialActio
 
 :ref:`InitialAction<enum_RenderingDevice_InitialAction>` **INITIAL_ACTION_CONTINUE** = ``0``
 
-**Deprecated:** Initial actions are solved automatically by RenderingDevice.
+**已棄用：** Initial actions are solved automatically by RenderingDevice.
 
 
 
@@ -4275,7 +4275,7 @@ enum **FinalAction**: :ref:`🔗<enum_RenderingDevice_FinalAction>`
 
 :ref:`FinalAction<enum_RenderingDevice_FinalAction>` **FINAL_ACTION_STORE** = ``0``
 
-**Deprecated:** Final actions are solved automatically by RenderingDevice.
+**已棄用：** Final actions are solved automatically by RenderingDevice.
 
 Store the result of the draw list in the framebuffer. This is generally what you want to do.
 
@@ -4285,7 +4285,7 @@ Store the result of the draw list in the framebuffer. This is generally what you
 
 :ref:`FinalAction<enum_RenderingDevice_FinalAction>` **FINAL_ACTION_DISCARD** = ``1``
 
-**Deprecated:** Final actions are solved automatically by RenderingDevice.
+**已棄用：** Final actions are solved automatically by RenderingDevice.
 
 Discard the contents of the framebuffer. This is the fastest option if you don't need to use the results of the draw list.
 
@@ -4295,9 +4295,9 @@ Discard the contents of the framebuffer. This is the fastest option if you don't
 
 :ref:`FinalAction<enum_RenderingDevice_FinalAction>` **FINAL_ACTION_MAX** = ``2``
 
-**Deprecated:** Final actions are solved automatically by RenderingDevice.
+**已棄用：** Final actions are solved automatically by RenderingDevice.
 
-Represents the size of the :ref:`FinalAction<enum_RenderingDevice_FinalAction>` enum.
+代表 :ref:`FinalAction<enum_RenderingDevice_FinalAction>` 列舉的大小。
 
 .. _class_RenderingDevice_constant_FINAL_ACTION_READ:
 
@@ -4305,7 +4305,7 @@ Represents the size of the :ref:`FinalAction<enum_RenderingDevice_FinalAction>` 
 
 :ref:`FinalAction<enum_RenderingDevice_FinalAction>` **FINAL_ACTION_READ** = ``0``
 
-**Deprecated:** Final actions are solved automatically by RenderingDevice.
+**已棄用：** Final actions are solved automatically by RenderingDevice.
 
 
 
@@ -4315,7 +4315,7 @@ Represents the size of the :ref:`FinalAction<enum_RenderingDevice_FinalAction>` 
 
 :ref:`FinalAction<enum_RenderingDevice_FinalAction>` **FINAL_ACTION_CONTINUE** = ``0``
 
-**Deprecated:** Final actions are solved automatically by RenderingDevice.
+**已棄用：** Final actions are solved automatically by RenderingDevice.
 
 
 
@@ -4335,7 +4335,7 @@ enum **ShaderStage**: :ref:`🔗<enum_RenderingDevice_ShaderStage>`
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_VERTEX** = ``0``
 
-Vertex shader stage. This can be used to manipulate vertices from a shader (but not create new vertices).
+頂點著色器階段。可用於在著色器中操作頂點（但無法新建頂點）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_FRAGMENT:
 
@@ -4343,7 +4343,7 @@ Vertex shader stage. This can be used to manipulate vertices from a shader (but 
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_FRAGMENT** = ``1``
 
-Fragment shader stage (called "pixel shader" in Direct3D). This can be used to manipulate pixels from a shader.
+片段著色器階段（Direct3D 中成為“圖元著色器”）。可用於在著色器中操作圖元。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_CONTROL:
 
@@ -4351,7 +4351,7 @@ Fragment shader stage (called "pixel shader" in Direct3D). This can be used to m
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_TESSELATION_CONTROL** = ``2``
 
-Tessellation control shader stage. This can be used to create additional geometry from a shader.
+曲面細分控制著色器階段。可用於在著色器中建立額外的幾何體。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_EVALUATION:
 
@@ -4359,7 +4359,7 @@ Tessellation control shader stage. This can be used to create additional geometr
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_TESSELATION_EVALUATION** = ``3``
 
-Tessellation evaluation shader stage. This can be used to create additional geometry from a shader.
+曲面細分求值著色器階段。可用於在著色器中建立額外的幾何體。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_COMPUTE:
 
@@ -4367,7 +4367,7 @@ Tessellation evaluation shader stage. This can be used to create additional geom
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_COMPUTE** = ``4``
 
-Compute shader stage. This can be used to run arbitrary computing tasks in a shader, performing them on the GPU instead of the CPU.
+計算著色器階段。可用於在著色器中執行任意計算工作，在 GPU 而不是 CPU 上進行計算。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_MAX:
 
@@ -4375,7 +4375,7 @@ Compute shader stage. This can be used to run arbitrary computing tasks in a sha
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_MAX** = ``5``
 
-Represents the size of the :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` enum.
+代表 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` 列舉的大小。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_VERTEX_BIT:
 
@@ -4383,7 +4383,7 @@ Represents the size of the :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` 
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_VERTEX_BIT** = ``1``
 
-Vertex shader stage bit (see also :ref:`SHADER_STAGE_VERTEX<class_RenderingDevice_constant_SHADER_STAGE_VERTEX>`).
+頂點著色器階段位（另見 :ref:`SHADER_STAGE_VERTEX<class_RenderingDevice_constant_SHADER_STAGE_VERTEX>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_FRAGMENT_BIT:
 
@@ -4391,7 +4391,7 @@ Vertex shader stage bit (see also :ref:`SHADER_STAGE_VERTEX<class_RenderingDevic
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_FRAGMENT_BIT** = ``2``
 
-Fragment shader stage bit (see also :ref:`SHADER_STAGE_FRAGMENT<class_RenderingDevice_constant_SHADER_STAGE_FRAGMENT>`).
+片段著色器階段位（另見 :ref:`SHADER_STAGE_FRAGMENT<class_RenderingDevice_constant_SHADER_STAGE_FRAGMENT>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_CONTROL_BIT:
 
@@ -4399,7 +4399,7 @@ Fragment shader stage bit (see also :ref:`SHADER_STAGE_FRAGMENT<class_RenderingD
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_TESSELATION_CONTROL_BIT** = ``4``
 
-Tessellation control shader stage bit (see also :ref:`SHADER_STAGE_TESSELATION_CONTROL<class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_CONTROL>`).
+曲面細分控制著色器階段位（另見 :ref:`SHADER_STAGE_TESSELATION_CONTROL<class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_CONTROL>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_EVALUATION_BIT:
 
@@ -4407,7 +4407,7 @@ Tessellation control shader stage bit (see also :ref:`SHADER_STAGE_TESSELATION_C
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_TESSELATION_EVALUATION_BIT** = ``8``
 
-Tessellation evaluation shader stage bit (see also :ref:`SHADER_STAGE_TESSELATION_EVALUATION<class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_EVALUATION>`).
+曲面細分求值著色器階段位（另見 :ref:`SHADER_STAGE_TESSELATION_EVALUATION<class_RenderingDevice_constant_SHADER_STAGE_TESSELATION_EVALUATION>`\ ）。
 
 .. _class_RenderingDevice_constant_SHADER_STAGE_COMPUTE_BIT:
 
@@ -4415,7 +4415,7 @@ Tessellation evaluation shader stage bit (see also :ref:`SHADER_STAGE_TESSELATIO
 
 :ref:`ShaderStage<enum_RenderingDevice_ShaderStage>` **SHADER_STAGE_COMPUTE_BIT** = ``16``
 
-Compute shader stage bit (see also :ref:`SHADER_STAGE_COMPUTE<class_RenderingDevice_constant_SHADER_STAGE_COMPUTE>`).
+計算著色器階段位（另見 :ref:`SHADER_STAGE_COMPUTE<class_RenderingDevice_constant_SHADER_STAGE_COMPUTE>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -4433,7 +4433,7 @@ enum **ShaderLanguage**: :ref:`🔗<enum_RenderingDevice_ShaderLanguage>`
 
 :ref:`ShaderLanguage<enum_RenderingDevice_ShaderLanguage>` **SHADER_LANGUAGE_GLSL** = ``0``
 
-Khronos' GLSL shading language (used natively by OpenGL and Vulkan). This is the language used for core Godot shaders.
+Khronos 的 GLSL 著色語言（OpenGL 和 Vulkan 原生使用）。這是核心 Godot 著色器所使用的語言。
 
 .. _class_RenderingDevice_constant_SHADER_LANGUAGE_HLSL:
 
@@ -4441,7 +4441,7 @@ Khronos' GLSL shading language (used natively by OpenGL and Vulkan). This is the
 
 :ref:`ShaderLanguage<enum_RenderingDevice_ShaderLanguage>` **SHADER_LANGUAGE_HLSL** = ``1``
 
-Microsoft's High-Level Shading Language (used natively by Direct3D, but can also be used in Vulkan).
+Microsoft 的高級著色器語言（Direct3D 原生使用，Vulkan 中也能使用）。
 
 .. rst-class:: classref-item-separator
 
@@ -4459,7 +4459,7 @@ enum **PipelineSpecializationConstantType**: :ref:`🔗<enum_RenderingDevice_Pip
 
 :ref:`PipelineSpecializationConstantType<enum_RenderingDevice_PipelineSpecializationConstantType>` **PIPELINE_SPECIALIZATION_CONSTANT_TYPE_BOOL** = ``0``
 
-Boolean specialization constant.
+布林型特化常數。
 
 .. _class_RenderingDevice_constant_PIPELINE_SPECIALIZATION_CONSTANT_TYPE_INT:
 
@@ -4467,7 +4467,7 @@ Boolean specialization constant.
 
 :ref:`PipelineSpecializationConstantType<enum_RenderingDevice_PipelineSpecializationConstantType>` **PIPELINE_SPECIALIZATION_CONSTANT_TYPE_INT** = ``1``
 
-Integer specialization constant.
+整型特化常數。
 
 .. _class_RenderingDevice_constant_PIPELINE_SPECIALIZATION_CONSTANT_TYPE_FLOAT:
 
@@ -4475,7 +4475,7 @@ Integer specialization constant.
 
 :ref:`PipelineSpecializationConstantType<enum_RenderingDevice_PipelineSpecializationConstantType>` **PIPELINE_SPECIALIZATION_CONSTANT_TYPE_FLOAT** = ``2``
 
-Floating-point specialization constant.
+浮點型特化常數。
 
 .. rst-class:: classref-item-separator
 
@@ -4535,7 +4535,7 @@ enum **Limit**: :ref:`🔗<enum_RenderingDevice_Limit>`
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_BOUND_UNIFORM_SETS** = ``0``
 
-Maximum number of uniform sets that can be bound at a given time.
+能夠同時綁定的最大 uniform 集的數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_FRAMEBUFFER_COLOR_ATTACHMENTS:
 
@@ -4543,7 +4543,7 @@ Maximum number of uniform sets that can be bound at a given time.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_FRAMEBUFFER_COLOR_ATTACHMENTS** = ``1``
 
-Maximum number of color framebuffer attachments that can be used at a given time.
+能夠同時使用的最大顏色影格緩衝附件的數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURES_PER_UNIFORM_SET:
 
@@ -4551,7 +4551,7 @@ Maximum number of color framebuffer attachments that can be used at a given time
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURES_PER_UNIFORM_SET** = ``2``
 
-Maximum number of textures that can be used per uniform set.
+單個 uniform 集能夠使用的最大紋理數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_SAMPLERS_PER_UNIFORM_SET:
 
@@ -4559,7 +4559,7 @@ Maximum number of textures that can be used per uniform set.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_SAMPLERS_PER_UNIFORM_SET** = ``3``
 
-Maximum number of samplers that can be used per uniform set.
+單個 uniform 集能夠使用的最大取樣器數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_STORAGE_BUFFERS_PER_UNIFORM_SET:
 
@@ -4567,7 +4567,7 @@ Maximum number of samplers that can be used per uniform set.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_STORAGE_BUFFERS_PER_UNIFORM_SET** = ``4``
 
-Maximum number of `storage buffers <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__ per uniform set.
+單個 uniform 集的最大\ `儲存緩衝 <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__\ 數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_STORAGE_IMAGES_PER_UNIFORM_SET:
 
@@ -4575,7 +4575,7 @@ Maximum number of `storage buffers <https://vkguide.dev/docs/chapter-4/storage_b
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_STORAGE_IMAGES_PER_UNIFORM_SET** = ``5``
 
-Maximum number of storage images per uniform set.
+單個 uniform 集的最大儲存圖像數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_UNIFORM_BUFFERS_PER_UNIFORM_SET:
 
@@ -4583,7 +4583,7 @@ Maximum number of storage images per uniform set.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_UNIFORM_BUFFERS_PER_UNIFORM_SET** = ``6``
 
-Maximum number of uniform buffers per uniform set.
+單個 uniform 集的最大 uniform 緩衝數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_DRAW_INDEXED_INDEX:
 
@@ -4591,7 +4591,7 @@ Maximum number of uniform buffers per uniform set.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_DRAW_INDEXED_INDEX** = ``7``
 
-Maximum index for an indexed draw command.
+索引繪圖指令的最大索引。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_FRAMEBUFFER_HEIGHT:
 
@@ -4599,7 +4599,7 @@ Maximum index for an indexed draw command.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_FRAMEBUFFER_HEIGHT** = ``8``
 
-Maximum height of a framebuffer (in pixels).
+影格緩衝的最大高度（單位為圖元）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_FRAMEBUFFER_WIDTH:
 
@@ -4607,7 +4607,7 @@ Maximum height of a framebuffer (in pixels).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_FRAMEBUFFER_WIDTH** = ``9``
 
-Maximum width of a framebuffer (in pixels).
+影格緩衝的最大寬度（單位為圖元）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURE_ARRAY_LAYERS:
 
@@ -4615,7 +4615,7 @@ Maximum width of a framebuffer (in pixels).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURE_ARRAY_LAYERS** = ``10``
 
-Maximum number of texture array layers.
+紋理陣列的最大層數。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURE_SIZE_1D:
 
@@ -4623,7 +4623,7 @@ Maximum number of texture array layers.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURE_SIZE_1D** = ``11``
 
-Maximum supported 1-dimensional texture size (in pixels on a single axis).
+支援的一維紋理的最大尺寸（單軸圖元數）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURE_SIZE_2D:
 
@@ -4631,7 +4631,7 @@ Maximum supported 1-dimensional texture size (in pixels on a single axis).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURE_SIZE_2D** = ``12``
 
-Maximum supported 2-dimensional texture size (in pixels on a single axis).
+支援的二維紋理的最大尺寸（單軸圖元數）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURE_SIZE_3D:
 
@@ -4639,7 +4639,7 @@ Maximum supported 2-dimensional texture size (in pixels on a single axis).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURE_SIZE_3D** = ``13``
 
-Maximum supported 3-dimensional texture size (in pixels on a single axis).
+支援的三維紋理的最大尺寸（單軸圖元數）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURE_SIZE_CUBE:
 
@@ -4647,7 +4647,7 @@ Maximum supported 3-dimensional texture size (in pixels on a single axis).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURE_SIZE_CUBE** = ``14``
 
-Maximum supported cubemap texture size (in pixels on a single axis of a single face).
+支援的立方體貼圖紋理的最大尺寸（單軸圖元數）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_TEXTURES_PER_SHADER_STAGE:
 
@@ -4655,7 +4655,7 @@ Maximum supported cubemap texture size (in pixels on a single axis of a single f
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_TEXTURES_PER_SHADER_STAGE** = ``15``
 
-Maximum number of textures per shader stage.
+每個著色器階段的最大紋理數。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_SAMPLERS_PER_SHADER_STAGE:
 
@@ -4663,7 +4663,7 @@ Maximum number of textures per shader stage.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_SAMPLERS_PER_SHADER_STAGE** = ``16``
 
-Maximum number of samplers per shader stage.
+每個著色器階段的最大取樣器數。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_STORAGE_BUFFERS_PER_SHADER_STAGE:
 
@@ -4671,7 +4671,7 @@ Maximum number of samplers per shader stage.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_STORAGE_BUFFERS_PER_SHADER_STAGE** = ``17``
 
-Maximum number of `storage buffers <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__ per shader stage.
+每個著色器階段的最大\ `儲存緩衝 <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__\ 數。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_STORAGE_IMAGES_PER_SHADER_STAGE:
 
@@ -4679,7 +4679,7 @@ Maximum number of `storage buffers <https://vkguide.dev/docs/chapter-4/storage_b
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_STORAGE_IMAGES_PER_SHADER_STAGE** = ``18``
 
-Maximum number of storage images per shader stage.
+每個著色器階段的最大儲存圖像數。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_UNIFORM_BUFFERS_PER_SHADER_STAGE:
 
@@ -4687,7 +4687,7 @@ Maximum number of storage images per shader stage.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_UNIFORM_BUFFERS_PER_SHADER_STAGE** = ``19``
 
-Maximum number of uniform buffers per uniform set.
+單個 uniform 集的最大 uniform 緩衝數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_PUSH_CONSTANT_SIZE:
 
@@ -4695,7 +4695,7 @@ Maximum number of uniform buffers per uniform set.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_PUSH_CONSTANT_SIZE** = ``20``
 
-Maximum size of a push constant. A lot of devices are limited to 128 bytes, so try to avoid exceeding 128 bytes in push constants to ensure compatibility even if your GPU is reporting a higher value.
+推送常數的最大大小。許多裝置都有 128 位元組的限制，所以即便你的 GPU 彙報的值更大，也請嘗試避免讓推送常數超過 127 位元組，從而確保相容性。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_UNIFORM_BUFFER_SIZE:
 
@@ -4703,7 +4703,7 @@ Maximum size of a push constant. A lot of devices are limited to 128 bytes, so t
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_UNIFORM_BUFFER_SIZE** = ``21``
 
-Maximum size of a uniform buffer.
+Uniform 緩衝的最大大小。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_ATTRIBUTE_OFFSET:
 
@@ -4711,7 +4711,7 @@ Maximum size of a uniform buffer.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VERTEX_INPUT_ATTRIBUTE_OFFSET** = ``22``
 
-Maximum vertex input attribute offset.
+頂點輸入屬性的最大偏移。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_ATTRIBUTES:
 
@@ -4719,7 +4719,7 @@ Maximum vertex input attribute offset.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VERTEX_INPUT_ATTRIBUTES** = ``23``
 
-Maximum number of vertex input attributes.
+頂點輸入屬性的最大數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_BINDINGS:
 
@@ -4727,7 +4727,7 @@ Maximum number of vertex input attributes.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VERTEX_INPUT_BINDINGS** = ``24``
 
-Maximum number of vertex input bindings.
+頂點輸入綁定的最大數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_BINDING_STRIDE:
 
@@ -4735,7 +4735,7 @@ Maximum number of vertex input bindings.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VERTEX_INPUT_BINDING_STRIDE** = ``25``
 
-Maximum vertex input binding stride.
+頂點輸入綁定的最大步幅。
 
 .. _class_RenderingDevice_constant_LIMIT_MIN_UNIFORM_BUFFER_OFFSET_ALIGNMENT:
 
@@ -4743,7 +4743,7 @@ Maximum vertex input binding stride.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MIN_UNIFORM_BUFFER_OFFSET_ALIGNMENT** = ``26``
 
-Minimum uniform buffer offset alignment.
+Uniform 緩衝的最小偏移對齊。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_SHARED_MEMORY_SIZE:
 
@@ -4751,7 +4751,7 @@ Minimum uniform buffer offset alignment.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_SHARED_MEMORY_SIZE** = ``27``
 
-Maximum shared memory size for compute shaders.
+計算著色器的最大共用記憶體大小。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_COUNT_X:
 
@@ -4759,7 +4759,7 @@ Maximum shared memory size for compute shaders.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_COUNT_X** = ``28``
 
-Maximum number of workgroups for compute shaders on the X axis.
+計算著色器在 X 軸上的最大工作組數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_COUNT_Y:
 
@@ -4767,7 +4767,7 @@ Maximum number of workgroups for compute shaders on the X axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_COUNT_Y** = ``29``
 
-Maximum number of workgroups for compute shaders on the Y axis.
+計算著色器在 Y 軸上的最大工作組數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_COUNT_Z:
 
@@ -4775,7 +4775,7 @@ Maximum number of workgroups for compute shaders on the Y axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_COUNT_Z** = ``30``
 
-Maximum number of workgroups for compute shaders on the Z axis.
+計算著色器在 Z 軸上的最大工作組數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_INVOCATIONS:
 
@@ -4783,7 +4783,7 @@ Maximum number of workgroups for compute shaders on the Z axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_INVOCATIONS** = ``31``
 
-Maximum number of workgroup invocations for compute shaders.
+計算著色器的最大工作組呼叫數量。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_X:
 
@@ -4791,7 +4791,7 @@ Maximum number of workgroup invocations for compute shaders.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_X** = ``32``
 
-Maximum workgroup size for compute shaders on the X axis.
+計算著色器在 X 軸上的最大工作組大小。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Y:
 
@@ -4799,7 +4799,7 @@ Maximum workgroup size for compute shaders on the X axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Y** = ``33``
 
-Maximum workgroup size for compute shaders on the Y axis.
+計算著色器在 Y 軸上的最大工作組大小。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Z:
 
@@ -4807,7 +4807,7 @@ Maximum workgroup size for compute shaders on the Y axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_COMPUTE_WORKGROUP_SIZE_Z** = ``34``
 
-Maximum workgroup size for compute shaders on the Z axis.
+計算著色器在 Z 軸上的最大工作組大小。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VIEWPORT_DIMENSIONS_X:
 
@@ -4815,7 +4815,7 @@ Maximum workgroup size for compute shaders on the Z axis.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VIEWPORT_DIMENSIONS_X** = ``35``
 
-Maximum viewport width (in pixels).
+視口的最大寬度（單位為圖元）。
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VIEWPORT_DIMENSIONS_Y:
 
@@ -4823,7 +4823,7 @@ Maximum viewport width (in pixels).
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_VIEWPORT_DIMENSIONS_Y** = ``36``
 
-Maximum viewport height (in pixels).
+視口的最大高度（單位為圖元）。
 
 .. _class_RenderingDevice_constant_LIMIT_METALFX_TEMPORAL_SCALER_MIN_SCALE:
 
@@ -4861,7 +4861,7 @@ enum **MemoryType**: :ref:`🔗<enum_RenderingDevice_MemoryType>`
 
 :ref:`MemoryType<enum_RenderingDevice_MemoryType>` **MEMORY_TEXTURES** = ``0``
 
-Memory taken by textures.
+紋理佔用的記憶體。
 
 .. _class_RenderingDevice_constant_MEMORY_BUFFERS:
 
@@ -4869,7 +4869,7 @@ Memory taken by textures.
 
 :ref:`MemoryType<enum_RenderingDevice_MemoryType>` **MEMORY_BUFFERS** = ``1``
 
-Memory taken by buffers.
+緩衝區佔用的記憶體。
 
 .. _class_RenderingDevice_constant_MEMORY_TOTAL:
 
@@ -4877,7 +4877,7 @@ Memory taken by buffers.
 
 :ref:`MemoryType<enum_RenderingDevice_MemoryType>` **MEMORY_TOTAL** = ``2``
 
-Total memory taken. This is greater than the sum of :ref:`MEMORY_TEXTURES<class_RenderingDevice_constant_MEMORY_TEXTURES>` and :ref:`MEMORY_BUFFERS<class_RenderingDevice_constant_MEMORY_BUFFERS>`, as it also includes miscellaneous memory usage.
+記憶體中佔用。比 :ref:`MEMORY_TEXTURES<class_RenderingDevice_constant_MEMORY_TEXTURES>` 和 :ref:`MEMORY_BUFFERS<class_RenderingDevice_constant_MEMORY_BUFFERS>` 的總和要大，因為還會包含其他雜項記憶體佔用。
 
 .. rst-class:: classref-item-separator
 
@@ -5225,8 +5225,8 @@ Ignore the previous contents of all attachments.
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_RenderingDevice_constant_INVALID_ID:
 
@@ -5234,7 +5234,7 @@ Constants
 
 **INVALID_ID** = ``-1`` :ref:`🔗<class_RenderingDevice_constant_INVALID_ID>`
 
-Returned by functions that return an ID if a value is invalid.
+返回 ID 的函式會在值無效時返回此值。
 
 .. _class_RenderingDevice_constant_INVALID_FORMAT_ID:
 
@@ -5242,7 +5242,7 @@ Returned by functions that return an ID if a value is invalid.
 
 **INVALID_FORMAT_ID** = ``-1`` :ref:`🔗<class_RenderingDevice_constant_INVALID_FORMAT_ID>`
 
-Returned by functions that return a format ID if a value is invalid.
+返回格式 ID 的函式會在值無效時返回此值。
 
 .. rst-class:: classref-section-separator
 
@@ -5250,8 +5250,8 @@ Returned by functions that return a format ID if a value is invalid.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_RenderingDevice_method_barrier:
 
@@ -5259,7 +5259,7 @@ Method Descriptions
 
 |void| **barrier**\ (\ from\: |bitfield|\[:ref:`BarrierMask<enum_RenderingDevice_BarrierMask>`\] = 32767, to\: |bitfield|\[:ref:`BarrierMask<enum_RenderingDevice_BarrierMask>`\] = 32767\ ) :ref:`🔗<class_RenderingDevice_method_barrier>`
 
-**Deprecated:** Barriers are automatically inserted by RenderingDevice.
+**已棄用：** Barriers are automatically inserted by RenderingDevice.
 
 This method does nothing.
 
@@ -5388,7 +5388,7 @@ Prints an error if:
 
 |void| **capture_timestamp**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingDevice_method_capture_timestamp>`
 
-Creates a timestamp marker with the specified ``name``. This is used for performance reporting with the :ref:`get_captured_timestamp_cpu_time()<class_RenderingDevice_method_get_captured_timestamp_cpu_time>`, :ref:`get_captured_timestamp_gpu_time()<class_RenderingDevice_method_get_captured_timestamp_gpu_time>` and :ref:`get_captured_timestamp_name()<class_RenderingDevice_method_get_captured_timestamp_name>` methods.
+使用指定的名稱 ``name`` 建立時間戳記標記。用於 :ref:`get_captured_timestamp_cpu_time()<class_RenderingDevice_method_get_captured_timestamp_cpu_time>`\ 、\ :ref:`get_captured_timestamp_gpu_time()<class_RenderingDevice_method_get_captured_timestamp_gpu_time>`\ 、\ :ref:`get_captured_timestamp_name()<class_RenderingDevice_method_get_captured_timestamp_name>` 等方法的性能彙報。
 
 .. rst-class:: classref-item-separator
 
@@ -5444,7 +5444,7 @@ A simple compute operation might look like this (code is not a complete example)
 
 |void| **compute_list_bind_compute_pipeline**\ (\ compute_list\: :ref:`int<class_int>`, compute_pipeline\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_compute_list_bind_compute_pipeline>`
 
-Tells the GPU what compute pipeline to use when processing the compute list. If the shader has changed since the last time this function was called, Godot will unbind all descriptor sets and will re-bind them inside :ref:`compute_list_dispatch()<class_RenderingDevice_method_compute_list_dispatch>`.
+告訴 GPU 在處理計算列表時要使用什麼計算管道。如果自上次呼叫此函式以來著色器已更改，Godot 將取消綁定所有描述符集並重新綁定它們在\ :ref:`compute_list_dispatch()<class_RenderingDevice_method_compute_list_dispatch>`\ 中。
 
 .. rst-class:: classref-item-separator
 
@@ -5456,7 +5456,7 @@ Tells the GPU what compute pipeline to use when processing the compute list. If 
 
 |void| **compute_list_bind_uniform_set**\ (\ compute_list\: :ref:`int<class_int>`, uniform_set\: :ref:`RID<class_RID>`, set_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_compute_list_bind_uniform_set>`
 
-Binds the ``uniform_set`` to this ``compute_list``. Godot ensures that all textures in the uniform set have the correct Vulkan access masks. If Godot had to change access masks of textures, it will raise a Vulkan image memory barrier.
+將 ``uniform_set`` 綁定到此 ``compute_list``\ 。Godot 確保均勻集中的所有紋理都具有正確的 Vulkan 存取掩碼。如果 Godot 必須更改紋理的存取掩碼，它將引發Vulkan 影像記憶體障礙。
 
 .. rst-class:: classref-item-separator
 
@@ -5468,7 +5468,7 @@ Binds the ``uniform_set`` to this ``compute_list``. Godot ensures that all textu
 
 |void| **compute_list_dispatch**\ (\ compute_list\: :ref:`int<class_int>`, x_groups\: :ref:`int<class_int>`, y_groups\: :ref:`int<class_int>`, z_groups\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_compute_list_dispatch>`
 
-Submits the compute list for processing on the GPU. This is the compute equivalent to :ref:`draw_list_draw()<class_RenderingDevice_method_draw_list_draw>`.
+將計算列表提交給 GPU 處理。相當於是計算版本的 :ref:`draw_list_draw()<class_RenderingDevice_method_draw_list_draw>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5492,7 +5492,7 @@ Submits the compute list for processing on the GPU with the given group counts s
 
 |void| **compute_list_end**\ (\ ) :ref:`🔗<class_RenderingDevice_method_compute_list_end>`
 
-Finishes a list of compute commands created with the ``compute_*`` methods.
+結束由 ``compute_*`` 方法建立的計算命令列表。
 
 .. rst-class:: classref-item-separator
 
@@ -5504,7 +5504,7 @@ Finishes a list of compute commands created with the ``compute_*`` methods.
 
 |void| **compute_list_set_push_constant**\ (\ compute_list\: :ref:`int<class_int>`, buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, size_bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_compute_list_set_push_constant>`
 
-Sets the push constant data to ``buffer`` for the specified ``compute_list``. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in ``size_bytes`` (this can be obtained by calling the :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` method on the passed ``buffer``).
+為指定的 ``compute_list`` 設定 ``buffer`` 的推送常數資料。如何使用這個二進位資料由著色器決定。另外還必須在 ``size_bytes`` 中指定緩衝的位元組大小（可以通過對 ``buffer`` 呼叫 :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` 獲取）。
 
 .. rst-class:: classref-item-separator
 
@@ -5532,7 +5532,7 @@ This will be freed automatically when the ``shader`` is freed.
 
 :ref:`bool<class_bool>` **compute_pipeline_is_valid**\ (\ compute_pipeline\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_compute_pipeline_is_valid>`
 
-Returns ``true`` if the compute pipeline specified by the ``compute_pipeline`` RID is valid, ``false`` otherwise.
+如果由 ``compute_pipeline`` RID 指定的計算管線有效，則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5544,7 +5544,7 @@ Returns ``true`` if the compute pipeline specified by the ``compute_pipeline`` R
 
 :ref:`RenderingDevice<class_RenderingDevice>` **create_local_device**\ (\ ) :ref:`🔗<class_RenderingDevice_method_create_local_device>`
 
-Create a new local **RenderingDevice**. This is most useful for performing compute operations on the GPU independently from the rest of the engine.
+新建局部 **RenderingDevice**\ 。主要用於在 GPU 上執行計算操作，獨立於引擎的其他部分。
 
 .. rst-class:: classref-item-separator
 
@@ -5570,7 +5570,7 @@ The ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` Vulkan extension must be available and
 
 |void| **draw_command_end_label**\ (\ ) :ref:`🔗<class_RenderingDevice_method_draw_command_end_label>`
 
-Ends the command buffer debug label region started by a :ref:`draw_command_begin_label()<class_RenderingDevice_method_draw_command_begin_label>` call.
+結束命令緩衝除錯標籤區域，該區域由 :ref:`draw_command_begin_label()<class_RenderingDevice_method_draw_command_begin_label>` 呼叫開啟。
 
 .. rst-class:: classref-item-separator
 
@@ -5582,7 +5582,7 @@ Ends the command buffer debug label region started by a :ref:`draw_command_begin
 
 |void| **draw_command_insert_label**\ (\ name\: :ref:`String<class_String>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_command_insert_label>`
 
-**Deprecated:** Inserting labels no longer applies due to command reordering.
+**已棄用：** Inserting labels no longer applies due to command reordering.
 
 This method does nothing.
 
@@ -5641,9 +5641,9 @@ It does not affect rendering behavior and can be set to 0. It is recommended to 
 
 :ref:`int<class_int>` **draw_list_begin_for_screen**\ (\ screen\: :ref:`int<class_int>` = 0, clear_color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 1)\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_begin_for_screen>`
 
-High-level variant of :ref:`draw_list_begin()<class_RenderingDevice_method_draw_list_begin>`, with the parameters automatically being adjusted for drawing onto the window specified by the ``screen`` ID.
+:ref:`draw_list_begin()<class_RenderingDevice_method_draw_list_begin>` 的高階變體，會針對繪製到 ``screen`` ID 指定的窗口上自動調整參數。
 
-\ **Note:** Cannot be used with local RenderingDevices, as these don't have a screen. If called on a local RenderingDevice, :ref:`draw_list_begin_for_screen()<class_RenderingDevice_method_draw_list_begin_for_screen>` returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **注意：**\ 局部 RenderingDevice 沒有螢幕，所以無法使用。如果對局部 RenderingDevice 呼叫，\ :ref:`draw_list_begin_for_screen()<class_RenderingDevice_method_draw_list_begin_for_screen>` 會返回 :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5655,7 +5655,7 @@ High-level variant of :ref:`draw_list_begin()<class_RenderingDevice_method_draw_
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **draw_list_begin_split**\ (\ framebuffer\: :ref:`RID<class_RID>`, splits\: :ref:`int<class_int>`, initial_color_action\: :ref:`InitialAction<enum_RenderingDevice_InitialAction>`, final_color_action\: :ref:`FinalAction<enum_RenderingDevice_FinalAction>`, initial_depth_action\: :ref:`InitialAction<enum_RenderingDevice_InitialAction>`, final_depth_action\: :ref:`FinalAction<enum_RenderingDevice_FinalAction>`, clear_color_values\: :ref:`PackedColorArray<class_PackedColorArray>` = PackedColorArray(), clear_depth\: :ref:`float<class_float>` = 1.0, clear_stencil\: :ref:`int<class_int>` = 0, region\: :ref:`Rect2<class_Rect2>` = Rect2(0, 0, 0, 0), storage_textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] = []\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_begin_split>`
 
-**Deprecated:** Split draw lists are used automatically by RenderingDevice.
+**已棄用：** Split draw lists are used automatically by RenderingDevice.
 
 This method does nothing and always returns an empty :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
@@ -5669,7 +5669,7 @@ This method does nothing and always returns an empty :ref:`PackedInt64Array<clas
 
 |void| **draw_list_bind_index_array**\ (\ draw_list\: :ref:`int<class_int>`, index_array\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_bind_index_array>`
 
-Binds ``index_array`` to the specified ``draw_list``.
+將 ``index_array`` 綁定到指定的 ``draw_list``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5681,7 +5681,7 @@ Binds ``index_array`` to the specified ``draw_list``.
 
 |void| **draw_list_bind_render_pipeline**\ (\ draw_list\: :ref:`int<class_int>`, render_pipeline\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_bind_render_pipeline>`
 
-Binds ``render_pipeline`` to the specified ``draw_list``.
+將 ``render_pipeline`` 綁定到指定的 ``draw_list``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5693,7 +5693,7 @@ Binds ``render_pipeline`` to the specified ``draw_list``.
 
 |void| **draw_list_bind_uniform_set**\ (\ draw_list\: :ref:`int<class_int>`, uniform_set\: :ref:`RID<class_RID>`, set_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_bind_uniform_set>`
 
-Binds ``uniform_set`` to the specified ``draw_list``. A ``set_index`` must also be specified, which is an identifier starting from ``0`` that must match the one expected by the draw list.
+將 ``uniform_set`` 綁定到指定的 ``draw_list``\ 。還必須指定 ``set_index``\ ，這是從 ``0`` 開始的識別字，必須與繪製列表中所需要的相匹配。
 
 .. rst-class:: classref-item-separator
 
@@ -5705,7 +5705,7 @@ Binds ``uniform_set`` to the specified ``draw_list``. A ``set_index`` must also 
 
 |void| **draw_list_bind_vertex_array**\ (\ draw_list\: :ref:`int<class_int>`, vertex_array\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_bind_vertex_array>`
 
-Binds ``vertex_array`` to the specified ``draw_list``.
+將 ``vertex_array`` 綁定到指定的 ``draw_list``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5729,7 +5729,7 @@ Binds a set of ``vertex_buffers`` directly to the specified ``draw_list`` using 
 
 |void| **draw_list_disable_scissor**\ (\ draw_list\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_disable_scissor>`
 
-Removes and disables the scissor rectangle for the specified ``draw_list``. See also :ref:`draw_list_enable_scissor()<class_RenderingDevice_method_draw_list_enable_scissor>`.
+為指定的 ``draw_list`` 移除並禁用裁剪矩形。另見 :ref:`draw_list_enable_scissor()<class_RenderingDevice_method_draw_list_enable_scissor>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5741,7 +5741,7 @@ Removes and disables the scissor rectangle for the specified ``draw_list``. See 
 
 |void| **draw_list_draw**\ (\ draw_list\: :ref:`int<class_int>`, use_indices\: :ref:`bool<class_bool>`, instances\: :ref:`int<class_int>`, procedural_vertex_count\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_draw>`
 
-Submits ``draw_list`` for rendering on the GPU. This is the raster equivalent to :ref:`compute_list_dispatch()<class_RenderingDevice_method_compute_list_dispatch>`.
+將 ``draw_list`` 提交給 GPU 算繪。相當於是柵格版本的 :ref:`compute_list_dispatch()<class_RenderingDevice_method_compute_list_dispatch>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5765,9 +5765,9 @@ Submits ``draw_list`` for rendering on the GPU with the given parameters stored 
 
 |void| **draw_list_enable_scissor**\ (\ draw_list\: :ref:`int<class_int>`, rect\: :ref:`Rect2<class_Rect2>` = Rect2(0, 0, 0, 0)\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_enable_scissor>`
 
-Creates a scissor rectangle and enables it for the specified ``draw_list``. Scissor rectangles are used for clipping by discarding fragments that fall outside a specified rectangular portion of the screen. See also :ref:`draw_list_disable_scissor()<class_RenderingDevice_method_draw_list_disable_scissor>`.
+建立裁剪矩形並為指定的 ``draw_list`` 啟用。裁剪矩形可以用來實作裁剪，會丟棄落在螢幕上指定矩形範圍之外的片段。另見 :ref:`draw_list_disable_scissor()<class_RenderingDevice_method_draw_list_disable_scissor>`\ 。
 
-\ **Note:** The specified ``rect`` is automatically intersected with the screen's dimensions, which means it cannot exceed the screen's dimensions.
+\ **注意：**\ 指定的 ``rect`` 會自動與螢幕尺寸求交集，也就是說裁剪矩形無法超出螢幕的範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -5779,7 +5779,7 @@ Creates a scissor rectangle and enables it for the specified ``draw_list``. Scis
 
 |void| **draw_list_end**\ (\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_end>`
 
-Finishes a list of raster drawing commands created with the ``draw_*`` methods.
+結束由 ``draw_*`` 方法建立的柵格繪圖命令列表。
 
 .. rst-class:: classref-item-separator
 
@@ -5791,7 +5791,7 @@ Finishes a list of raster drawing commands created with the ``draw_*`` methods.
 
 |void| **draw_list_set_blend_constants**\ (\ draw_list\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_set_blend_constants>`
 
-Sets blend constants for the specified ``draw_list`` to ``color``. Blend constants are used only if the graphics pipeline is created with :ref:`DYNAMIC_STATE_BLEND_CONSTANTS<class_RenderingDevice_constant_DYNAMIC_STATE_BLEND_CONSTANTS>` flag set.
+將指定 ``draw_list`` 的混合常數設定為 ``color``\ 。建立圖形管線時設定了 :ref:`DYNAMIC_STATE_BLEND_CONSTANTS<class_RenderingDevice_constant_DYNAMIC_STATE_BLEND_CONSTANTS>` 旗標時才會使用混合常數。
 
 .. rst-class:: classref-item-separator
 
@@ -5803,7 +5803,7 @@ Sets blend constants for the specified ``draw_list`` to ``color``. Blend constan
 
 |void| **draw_list_set_push_constant**\ (\ draw_list\: :ref:`int<class_int>`, buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, size_bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_set_push_constant>`
 
-Sets the push constant data to ``buffer`` for the specified ``draw_list``. The shader determines how this binary data is used. The buffer's size in bytes must also be specified in ``size_bytes`` (this can be obtained by calling the :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` method on the passed ``buffer``).
+為指定的 ``draw_list`` 設定 ``buffer`` 的推送常數資料。如何使用這個二進制資料由著色器決定。另外還必須在 ``size_bytes`` 中指定緩衝的位元組大小（可以通過對 ``buffer`` 呼叫 :ref:`PackedByteArray.size()<class_PackedByteArray_method_size>` 獲取）。
 
 .. rst-class:: classref-item-separator
 
@@ -5827,7 +5827,7 @@ Switches to the next draw pass.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **draw_list_switch_to_next_pass_split**\ (\ splits\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_switch_to_next_pass_split>`
 
-**Deprecated:** Split draw lists are used automatically by RenderingDevice.
+**已棄用：** Split draw lists are used automatically by RenderingDevice.
 
 This method does nothing and always returns an empty :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
@@ -5857,9 +5857,9 @@ This will be freed automatically when any of the ``textures`` is freed.
 
 :ref:`RID<class_RID>` **framebuffer_create_empty**\ (\ size\: :ref:`Vector2i<class_Vector2i>`, samples\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` = 0, validate_with_format\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_create_empty>`
 
-Creates a new empty framebuffer. It can be accessed with the RID that is returned.
+新建空的影格緩衝。可以通過返回的 RID 進行存取。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法進行釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -5887,9 +5887,9 @@ This will be freed automatically when any of the ``textures`` is freed.
 
 :ref:`int<class_int>` **framebuffer_format_create**\ (\ attachments\: :ref:`Array<class_Array>`\[:ref:`RDAttachmentFormat<class_RDAttachmentFormat>`\], view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_format_create>`
 
-Creates a new framebuffer format with the specified ``attachments`` and ``view_count``. Returns the new framebuffer's unique framebuffer format ID.
+新建影格緩衝格式，附件為 ``attachments``\ 、視圖數為 ``view_count``\ 。返回的是新影格緩衝的唯一影格緩衝格式 ID。
 
-If ``view_count`` is greater than or equal to ``2``, enables multiview which is used for VR rendering. This requires support for the Vulkan multiview extension.
+如果 ``view_count`` 大於等於 ``2``\ ，則會針對 VR 算繪啟用多視圖。要求支援 Vulkan 的多視圖擴充。
 
 .. rst-class:: classref-item-separator
 
@@ -5901,7 +5901,7 @@ If ``view_count`` is greater than or equal to ``2``, enables multiview which is 
 
 :ref:`int<class_int>` **framebuffer_format_create_empty**\ (\ samples\: :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_format_create_empty>`
 
-Creates a new empty framebuffer format with the specified number of ``samples`` and returns its ID.
+新建空的影格緩衝格式並返回其 ID，取樣數為 ``samples``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5913,7 +5913,7 @@ Creates a new empty framebuffer format with the specified number of ``samples`` 
 
 :ref:`int<class_int>` **framebuffer_format_create_multipass**\ (\ attachments\: :ref:`Array<class_Array>`\[:ref:`RDAttachmentFormat<class_RDAttachmentFormat>`\], passes\: :ref:`Array<class_Array>`\[:ref:`RDFramebufferPass<class_RDFramebufferPass>`\], view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_format_create_multipass>`
 
-Creates a multipass framebuffer format with the specified ``attachments``, ``passes`` and ``view_count`` and returns its ID. If ``view_count`` is greater than or equal to ``2``, enables multiview which is used for VR rendering. This requires support for the Vulkan multiview extension.
+建立多階段影格緩衝格式並返回其 ID，附件為 ``attachments``\ 、階段數為 ``passes``\ 、視圖數為 ``view_count``\ 。如果 ``view_count`` 大於等於 ``2``\ ，則會針對 VR 算繪啟用多視圖。要求支援 Vulkan 的多視圖擴充。
 
 .. rst-class:: classref-item-separator
 
@@ -5925,7 +5925,7 @@ Creates a multipass framebuffer format with the specified ``attachments``, ``pas
 
 :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` **framebuffer_format_get_texture_samples**\ (\ format\: :ref:`int<class_int>`, render_pass\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_format_get_texture_samples>`
 
-Returns the number of texture samples used for the given framebuffer ``format`` ID (returned by :ref:`framebuffer_get_format()<class_RenderingDevice_method_framebuffer_get_format>`).
+返回給定影格緩衝格式 ID ``format`` 所使用的紋理取樣數量（格式由 :ref:`framebuffer_get_format()<class_RenderingDevice_method_framebuffer_get_format>` 返回）。
 
 .. rst-class:: classref-item-separator
 
@@ -5937,7 +5937,7 @@ Returns the number of texture samples used for the given framebuffer ``format`` 
 
 :ref:`int<class_int>` **framebuffer_get_format**\ (\ framebuffer\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_get_format>`
 
-Returns the format ID of the framebuffer specified by the ``framebuffer`` RID. This ID is guaranteed to be unique for the same formats and does not need to be freed.
+返回由影格緩衝 RID ``framebuffer`` 指定的影格緩衝的格式 ID。相同格式下，這個 ID 一定是唯一的，不需要釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -5949,7 +5949,7 @@ Returns the format ID of the framebuffer specified by the ``framebuffer`` RID. T
 
 :ref:`bool<class_bool>` **framebuffer_is_valid**\ (\ framebuffer\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_framebuffer_is_valid>`
 
-Returns ``true`` if the framebuffer specified by the ``framebuffer`` RID is valid, ``false`` otherwise.
+返回由影格緩衝 RID ``framebuffer`` 指定的影格緩衝有效，則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5961,7 +5961,7 @@ Returns ``true`` if the framebuffer specified by the ``framebuffer`` RID is vali
 
 |void| **free_rid**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_free_rid>`
 
-Tries to free an object in the RenderingDevice. To avoid memory leaks, this should be called after using an object as memory management does not occur automatically when using RenderingDevice directly.
+嘗試釋放 RenderingDevice 中的某個物件。為了防止記憶體洩漏，物件使用完後就應該調用這個方法，因為直接使用 RenderingDevice 時並不會自動進行記憶體管理。
 
 .. rst-class:: classref-item-separator
 
@@ -5973,7 +5973,7 @@ Tries to free an object in the RenderingDevice. To avoid memory leaks, this shou
 
 |void| **full_barrier**\ (\ ) :ref:`🔗<class_RenderingDevice_method_full_barrier>`
 
-**Deprecated:** Barriers are automatically inserted by RenderingDevice.
+**已棄用：** Barriers are automatically inserted by RenderingDevice.
 
 This method does nothing.
 
@@ -5987,7 +5987,7 @@ This method does nothing.
 
 :ref:`int<class_int>` **get_captured_timestamp_cpu_time**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_captured_timestamp_cpu_time>`
 
-Returns the timestamp in CPU time for the rendering step specified by ``index`` (in microseconds since the engine started). See also :ref:`get_captured_timestamp_gpu_time()<class_RenderingDevice_method_get_captured_timestamp_gpu_time>` and :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`.
+返回算繪步驟的 CPU 時間戳記（引擎啟動後經過的毫秒數），算繪步驟由 ``index`` 指定。另見 :ref:`get_captured_timestamp_gpu_time()<class_RenderingDevice_method_get_captured_timestamp_gpu_time>` 和 :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5999,7 +5999,7 @@ Returns the timestamp in CPU time for the rendering step specified by ``index`` 
 
 :ref:`int<class_int>` **get_captured_timestamp_gpu_time**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_captured_timestamp_gpu_time>`
 
-Returns the timestamp in GPU time for the rendering step specified by ``index`` (in microseconds since the engine started). See also :ref:`get_captured_timestamp_cpu_time()<class_RenderingDevice_method_get_captured_timestamp_cpu_time>` and :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`.
+返回算繪步驟的 GPU 時間戳記（引擎啟動後經過的毫秒數），算繪步驟由 ``index`` 指定。另見 :ref:`get_captured_timestamp_cpu_time()<class_RenderingDevice_method_get_captured_timestamp_cpu_time>` 和 :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6011,7 +6011,7 @@ Returns the timestamp in GPU time for the rendering step specified by ``index`` 
 
 :ref:`String<class_String>` **get_captured_timestamp_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_captured_timestamp_name>`
 
-Returns the timestamp's name for the rendering step specified by ``index``. See also :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`.
+返回算繪步驟的時間戳記的名稱，算繪步驟由 ``index`` 指定。另見 :ref:`capture_timestamp()<class_RenderingDevice_method_capture_timestamp>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6023,7 +6023,7 @@ Returns the timestamp's name for the rendering step specified by ``index``. See 
 
 :ref:`int<class_int>` **get_captured_timestamps_count**\ (\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_captured_timestamps_count>`
 
-Returns the total number of timestamps (rendering steps) available for profiling.
+返回能夠進行性能分析的時間戳記（算繪步驟）總數。
 
 .. rst-class:: classref-item-separator
 
@@ -6035,7 +6035,7 @@ Returns the total number of timestamps (rendering steps) available for profiling
 
 :ref:`int<class_int>` **get_captured_timestamps_frame**\ (\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_captured_timestamps_frame>`
 
-Returns the index of the last frame rendered that has rendering timestamps available for querying.
+返回能夠進行算繪時間戳記查詢的最後一個算繪影格的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -6093,7 +6093,7 @@ This is only used by Vulkan in debug builds and can return 0 when this informati
 
 :ref:`String<class_String>` **get_device_name**\ (\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_device_name>`
 
-Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2"). Equivalent to :ref:`RenderingServer.get_video_adapter_name()<class_RenderingServer_method_get_video_adapter_name>`. See also :ref:`get_device_vendor_name()<class_RenderingDevice_method_get_device_vendor_name>`.
+返回視訊卡的名稱（例如 "GeForce GTX 1080/PCIe/SSE2"）。等價於 :ref:`RenderingServer.get_video_adapter_name()<class_RenderingServer_method_get_video_adapter_name>`\ 。另見 :ref:`get_device_vendor_name()<class_RenderingDevice_method_get_device_vendor_name>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6105,7 +6105,7 @@ Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2"). Equiv
 
 :ref:`String<class_String>` **get_device_pipeline_cache_uuid**\ (\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_device_pipeline_cache_uuid>`
 
-Returns the universally unique identifier for the pipeline cache. This is used to cache shader files on disk, which avoids shader recompilations on subsequent engine runs. This UUID varies depending on the graphics card model, but also the driver version. Therefore, updating graphics drivers will invalidate the shader cache.
+返回管線快取的通用唯一識別碼。用於將著色器檔快取到磁片，避免後續運作引擎時進行著色器的重新編譯。這個 UUID 會根據顯卡型號以及驅動版本的不同而不同。因此，更新圖形驅動會使著色器快取失效。
 
 .. rst-class:: classref-item-separator
 
@@ -6131,7 +6131,7 @@ This is only used by Vulkan in debug builds and can return 0 when this informati
 
 :ref:`String<class_String>` **get_device_vendor_name**\ (\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_device_vendor_name>`
 
-Returns the vendor of the video adapter (e.g. "NVIDIA Corporation"). Equivalent to :ref:`RenderingServer.get_video_adapter_vendor()<class_RenderingServer_method_get_video_adapter_vendor>`. See also :ref:`get_device_name()<class_RenderingDevice_method_get_device_name>`.
+返回視訊卡的供應商（例如 "NVIDIA Corporation"）。等價於 :ref:`RenderingServer.get_video_adapter_vendor()<class_RenderingServer_method_get_video_adapter_vendor>`\ 。另見 :ref:`get_device_name()<class_RenderingDevice_method_get_device_name>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6249,7 +6249,7 @@ This is only used by Vulkan in debug builds and can return 0 when this informati
 
 :ref:`int<class_int>` **get_frame_delay**\ (\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_frame_delay>`
 
-Returns the frame count kept by the graphics API. Higher values result in higher input lag, but with more consistent throughput. For the main **RenderingDevice**, frames are cycled (usually 3 with triple-buffered V-Sync enabled). However, local **RenderingDevice**\ s only have 1 frame.
+返回圖形 API 所記錄的影格數。值越高輸入延遲就越高，但輸送量也更一致。對於主 **RenderingDevice** 而言，影格會進行迴圈（啟用三緩衝垂直同步時通常為 3）。但是局部 **RenderingDevice** 只有 1 影格。
 
 .. rst-class:: classref-item-separator
 
@@ -6261,7 +6261,7 @@ Returns the frame count kept by the graphics API. Higher values result in higher
 
 :ref:`int<class_int>` **get_memory_usage**\ (\ type\: :ref:`MemoryType<enum_RenderingDevice_MemoryType>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_get_memory_usage>`
 
-Returns the memory usage in bytes corresponding to the given ``type``. When using Vulkan, these statistics are calculated by `Vulkan Memory Allocator <https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator>`__.
+返回與型別 ``type`` 對應的記憶體用量，單位為位元組。使用 Vulkan 時，會通過 `Vulkan Memory Allocator <https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator>`__ 計算這些統計資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -6367,9 +6367,9 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`int<class_int>` **limit_get**\ (\ limit\: :ref:`Limit<enum_RenderingDevice_Limit>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_limit_get>`
 
-Returns the value of the specified ``limit``. This limit varies depending on the current graphics hardware (and sometimes the driver version). If the given limit is exceeded, rendering errors will occur.
+返回指定 ``limit`` 的值。這個極限值取決於目前的圖形硬體（有時也和驅動版本有關）。如果超出了給定的極限，則會發生算繪錯誤。
 
-Limits for various graphics hardware can be found in the `Vulkan Hardware Database <https://vulkan.gpuinfo.org/>`__.
+各種圖形硬體的極限可以在 `Vulkan 硬體資料庫 <https://vulkan.gpuinfo.org/>`__\ 中找到。
 
 .. rst-class:: classref-item-separator
 
@@ -6397,7 +6397,7 @@ This will be freed automatically when the ``shader`` is freed.
 
 :ref:`bool<class_bool>` **render_pipeline_is_valid**\ (\ render_pipeline\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_render_pipeline_is_valid>`
 
-Returns ``true`` if the render pipeline specified by the ``render_pipeline`` RID is valid, ``false`` otherwise.
+如果由 ``render_pipeline`` RID 指定的算繪管線有效則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6409,9 +6409,9 @@ Returns ``true`` if the render pipeline specified by the ``render_pipeline`` RID
 
 :ref:`RID<class_RID>` **sampler_create**\ (\ state\: :ref:`RDSamplerState<class_RDSamplerState>`\ ) :ref:`🔗<class_RenderingDevice_method_sampler_create>`
 
-Creates a new sampler. It can be accessed with the RID that is returned.
+新建取樣器。可以通過返回的 RID 進行存取。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法進行釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -6423,7 +6423,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`bool<class_bool>` **sampler_is_format_supported_for_filter**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`, sampler_filter\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_sampler_is_format_supported_for_filter>`
 
-Returns ``true`` if implementation supports using a texture of ``format`` with the given ``sampler_filter``.
+如果實作支援使用格式為 ``format`` 和 ``sampler_filter`` 取樣篩選的紋理，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6449,9 +6449,9 @@ Returns the framebuffer format of the given screen.
 
 :ref:`int<class_int>` **screen_get_height**\ (\ screen\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_RenderingDevice_method_screen_get_height>`
 
-Returns the window height matching the graphics API context for the given window ID (in pixels). Despite the parameter being named ``screen``, this returns the *window* size. See also :ref:`screen_get_width()<class_RenderingDevice_method_screen_get_width>`.
+返回與給定視窗 ID 圖形 API 本文相配對的視窗高度（單位為圖元）。雖然參數的名字叫 ``screen``\ ，但返回的是\ *視窗*\ 的大小。另見 :ref:`screen_get_width()<class_RenderingDevice_method_screen_get_width>`\ 。
 
-\ **Note:** Only the main **RenderingDevice** returned by :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` has a height. If called on a local **RenderingDevice**, this method prints an error and returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **注意：**\ 只有 :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` 返回的主 **RenderingDevice** 有高度。如果對局部 **RenderingDevice** 呼叫，則會輸出錯誤並返回 :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6463,9 +6463,9 @@ Returns the window height matching the graphics API context for the given window
 
 :ref:`int<class_int>` **screen_get_width**\ (\ screen\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_RenderingDevice_method_screen_get_width>`
 
-Returns the window width matching the graphics API context for the given window ID (in pixels). Despite the parameter being named ``screen``, this returns the *window* size. See also :ref:`screen_get_height()<class_RenderingDevice_method_screen_get_height>`.
+返回與給定視窗 ID 圖形 API 本文相配對的視窗寬度（單位為圖元）。雖然參數的名字叫 ``screen``\ ，但返回的是\ *視窗*\ 的大小。另見 :ref:`screen_get_height()<class_RenderingDevice_method_screen_get_height>`\ 。
 
-\ **Note:** Only the main **RenderingDevice** returned by :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` has a width. If called on a local **RenderingDevice**, this method prints an error and returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **注意：**\ 只有 :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` 返回的主 **RenderingDevice** 有寬度。如果對局部 **RenderingDevice** 呼叫，則會輸出錯誤並返回 :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6477,11 +6477,11 @@ Returns the window width matching the graphics API context for the given window 
 
 |void| **set_resource_name**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingDevice_method_set_resource_name>`
 
-Sets the resource name for ``id`` to ``name``. This is used for debugging with third-party tools such as `RenderDoc <https://renderdoc.org/>`__.
+將 ID 為 ``id`` 的資源名稱設定為 ``name``\ 。用於使用 `RenderDoc <https://renderdoc.org/>`__ 等協力廠商工具進行除錯。
 
-The following types of resources can be named: texture, sampler, vertex buffer, index buffer, uniform buffer, texture buffer, storage buffer, uniform set buffer, shader, render pipeline and compute pipeline. Framebuffers cannot be named. Attempting to name an incompatible resource type will print an error.
+可以為以下型別的資源命名：紋理、取樣器、頂點緩衝、索引緩衝、uniform 緩衝、紋理緩衝、儲存緩衝、uniform 集緩衝、著色器、算繪管線、計算管線。無法為影格緩衝命名。嘗試為不相容的資源型別命名會輸出錯誤。
 
-\ **Note:** Resource names are only set when the engine runs in verbose mode (:ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` = ``true``), or when using an engine build compiled with the ``dev_mode=yes`` SCons option. The graphics driver must also support the ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` Vulkan extension for named resources to work.
+\ **注意：**\ 引擎以詳細模式運作時（\ :ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` = ``true``\ ），或者使用 ``dev_mode=yes`` SCons 選項編譯引擎構建時，才會設定資源的名稱。圖形驅動也必須支援 Vulkan 擴充 ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` 具名資源才能正常工作。
 
 .. rst-class:: classref-item-separator
 
@@ -6493,9 +6493,9 @@ The following types of resources can be named: texture, sampler, vertex buffer, 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **shader_compile_binary_from_spirv**\ (\ spirv_data\: :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, name\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RenderingDevice_method_shader_compile_binary_from_spirv>`
 
-Compiles a binary shader from ``spirv_data`` and returns the compiled binary data as a :ref:`PackedByteArray<class_PackedByteArray>`. This compiled shader is specific to the GPU model and driver version used; it will not work on different GPU models or even different driver versions. See also :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>`.
+從 ``spirv_data`` 編譯二進位著色器，並將編譯得到的二進位資料以 :ref:`PackedByteArray<class_PackedByteArray>` 的形式返回。編譯後的著色器與所使用的 GPU 型號和驅動版本對應；無法在不同的 GPU 型號甚至不同的驅動版本上正常工作。另見 :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>`\ 。
 
-\ ``name`` is an optional human-readable name that can be given to the compiled shader for organizational purposes.
+\ ``name`` 是可選的人類可讀名稱，會給予編譯後的著色器，方便組織。
 
 .. rst-class:: classref-item-separator
 
@@ -6521,9 +6521,9 @@ If ``allow_cache`` is ``true``, make use of the shader cache generated by Godot.
 
 :ref:`RID<class_RID>` **shader_create_from_bytecode**\ (\ binary_data\: :ref:`PackedByteArray<class_PackedByteArray>`, placeholder_rid\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_RenderingDevice_method_shader_create_from_bytecode>`
 
-Creates a new shader instance from a binary compiled shader. It can be accessed with the RID that is returned.
+根據二進位的已編譯著色器建立新的著色器實例。可以通過返回的 RID 進行存取。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method. See also :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>` and :ref:`shader_create_from_spirv()<class_RenderingDevice_method_shader_create_from_spirv>`.
+RID 使用結束後，應該使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法進行釋放。另見 :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>` 和 :ref:`shader_create_from_spirv()<class_RenderingDevice_method_shader_create_from_spirv>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6535,9 +6535,9 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`RID<class_RID>` **shader_create_from_spirv**\ (\ spirv_data\: :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, name\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RenderingDevice_method_shader_create_from_spirv>`
 
-Creates a new shader instance from SPIR-V intermediate code. It can be accessed with the RID that is returned.
+根據 SPIR-V 中間程式碼建立新的著色器實例。可以通過返回的 RID 進行存取。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method. See also :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>` and :ref:`shader_create_from_bytecode()<class_RenderingDevice_method_shader_create_from_bytecode>`.
+RID 使用結束後，應該使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法進行釋放。另見 :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>` 和 :ref:`shader_create_from_bytecode()<class_RenderingDevice_method_shader_create_from_bytecode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6549,7 +6549,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`RID<class_RID>` **shader_create_placeholder**\ (\ ) :ref:`🔗<class_RenderingDevice_method_shader_create_placeholder>`
 
-Create a placeholder RID by allocating an RID without initializing it for use in :ref:`shader_create_from_bytecode()<class_RenderingDevice_method_shader_create_from_bytecode>`. This allows you to create an RID for a shader and pass it around, but defer compiling the shader to a later time.
+透過指派RID 來建立佔位符RID，而不將其初始化以在\ :ref:`shader_create_from_bytecode()<class_RenderingDevice_method_shader_create_from_bytecode>` 中使用。這允許您為著色器建立RID 並將其傳遞，但延遲編譯著色器稍後。
 
 .. rst-class:: classref-item-separator
 
@@ -6561,7 +6561,7 @@ Create a placeholder RID by allocating an RID without initializing it for use in
 
 :ref:`int<class_int>` **shader_get_vertex_input_attribute_mask**\ (\ shader\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_shader_get_vertex_input_attribute_mask>`
 
-Returns the internal vertex input mask. Internally, the vertex input mask is an unsigned integer consisting of the locations (specified in GLSL via. ``layout(location = ...)``) of the input variables (specified in GLSL by the ``in`` keyword).
+傳回內部頂點輸入遮罩。在內部，頂點輸入遮罩是由位置組成的無符號整數（透過GLSL 指定。\ ``layout(location = ...) ``\ ）輸入變數（在 GLSL 中由 ``in`` 關鍵字指定）。
 
 .. rst-class:: classref-item-separator
 
@@ -6573,9 +6573,9 @@ Returns the internal vertex input mask. Internally, the vertex input mask is an 
 
 :ref:`RID<class_RID>` **storage_buffer_create**\ (\ size_bytes\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray(), usage\: |bitfield|\[:ref:`StorageBufferUsage<enum_RenderingDevice_StorageBufferUsage>`\] = 0, creation_bits\: |bitfield|\[:ref:`BufferCreationBits<enum_RenderingDevice_BufferCreationBits>`\] = 0\ ) :ref:`🔗<class_RenderingDevice_method_storage_buffer_create>`
 
-Creates a `storage buffer <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__ with the specified ``data`` and ``usage``. It can be accessed with the RID that is returned.
+建立帶有指定資料 ``data`` 用法為 ``usage`` 的\ `儲存緩衝 <https://vkguide.dev/docs/chapter-4/storage_buffers/>`__\ 。可以通過返回的 RID 進行訪問。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法進行釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -6587,9 +6587,9 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 |void| **submit**\ (\ ) :ref:`🔗<class_RenderingDevice_method_submit>`
 
-Pushes the frame setup and draw command buffers then marks the local device as currently processing (which allows calling :ref:`sync()<class_RenderingDevice_method_sync>`).
+推送影格設定與繪圖命令緩衝，然後將局部裝置標記為目前正在處理（這樣就能夠呼叫 :ref:`sync()<class_RenderingDevice_method_sync>`\ ）。
 
-\ **Note:** Only available in local RenderingDevices.
+\ **注意：**\ 僅在局部 RenderingDevice 上可用。
 
 .. rst-class:: classref-item-separator
 
@@ -6601,11 +6601,11 @@ Pushes the frame setup and draw command buffers then marks the local device as c
 
 |void| **sync**\ (\ ) :ref:`🔗<class_RenderingDevice_method_sync>`
 
-Forces a synchronization between the CPU and GPU, which may be required in certain cases. Only call this when needed, as CPU-GPU synchronization has a performance cost.
+讓 CPU 與 GPU 進行強制同步，部分場合可能需要進行這樣的操作。請只在需要時調用，因為 CPU 與 GPU 的同步存在性能開銷。
 
-\ **Note:** Only available in local RenderingDevices.
+\ **注意：**\ 僅在局部 RenderingDevice 上可用。
 
-\ **Note:** :ref:`sync()<class_RenderingDevice_method_sync>` can only be called after a :ref:`submit()<class_RenderingDevice_method_submit>`.
+\ **注意：**\ 只能在 :ref:`submit()<class_RenderingDevice_method_submit>` 後呼叫 :ref:`sync()<class_RenderingDevice_method_sync>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6617,9 +6617,9 @@ Forces a synchronization between the CPU and GPU, which may be required in certa
 
 :ref:`RID<class_RID>` **texture_buffer_create**\ (\ size_bytes\: :ref:`int<class_int>`, format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`, data\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray()\ ) :ref:`🔗<class_RenderingDevice_method_texture_buffer_create>`
 
-Creates a new texture buffer. It can be accessed with the RID that is returned.
+新建紋理緩衝。可以通過返回的 RID 進行存取。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+RID 使用結束後，應該使用 RenderingServer 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法進行釋放。
 
 .. rst-class:: classref-item-separator
 
@@ -6645,17 +6645,17 @@ Clears the specified ``texture`` by replacing all of its pixels with the specifi
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_copy**\ (\ from_texture\: :ref:`RID<class_RID>`, to_texture\: :ref:`RID<class_RID>`, from_pos\: :ref:`Vector3<class_Vector3>`, to_pos\: :ref:`Vector3<class_Vector3>`, size\: :ref:`Vector3<class_Vector3>`, src_mipmap\: :ref:`int<class_int>`, dst_mipmap\: :ref:`int<class_int>`, src_layer\: :ref:`int<class_int>`, dst_layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_copy>`
 
-Copies the ``from_texture`` to ``to_texture`` with the specified ``from_pos``, ``to_pos`` and ``size`` coordinates. The Z axis of the ``from_pos``, ``to_pos`` and ``size`` must be ``0`` for 2-dimensional textures. Source and destination mipmaps/layers must also be specified, with these parameters being ``0`` for textures without mipmaps or single-layer textures. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the texture copy was successful or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` otherwise.
+將 ``from_texture`` 複製到 ``to_texture``\ ，使用指定的 ``from_pos``\ 、\ ``to_pos`` 和 ``size`` 座標。對於二維紋理，\ ``from_pos``\ 、\ ``to_pos`` 和 ``size`` 的 Z 軸必須為 ``0``\ 。來源和目標的 mipmap/圖層也必須指定，對於沒有 mipmap 或單層紋理的情況，這些參數應為 ``0``\ 。如果紋理複製成功，則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，否則返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-\ **Note:** ``from_texture`` texture can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **注意：**\ 如果使用 ``from_texture`` 紋理的繪圖列表是建立的影格緩衝的一部分，則無法複製。請確保繪圖列表已經完成（並且使用它的顏色/深度紋理沒有設定為 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然後再複製紋理。
 
-\ **Note:** ``from_texture`` texture requires the :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` to be retrieved.
+\ **注意：**\ ``from_texture`` 紋理需要獲取 :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>`\ 。
 
-\ **Note:** ``to_texture`` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to copy this texture.
+\ **注意：**\ 如果使用 ``to_texture`` 紋理的繪圖列表是建立的影格緩衝的一部分，則無法複製。請確保繪圖列表已經完成（並且使用它的顏色/深度紋理沒有設定為 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然後再複製紋理。
 
-\ **Note:** ``to_texture`` requires the :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` to be retrieved.
+\ **注意：**\ ``to_texture`` 紋理需要獲取 :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>`\ 。
 
-\ **Note:** ``from_texture`` and ``to_texture`` must be of the same type (color or depth).
+\ **注意：**\ ``from_texture`` 和 ``to_texture`` 的型別必須相同（顏色或深度）。
 
 .. rst-class:: classref-item-separator
 
@@ -6772,7 +6772,7 @@ Asynchronous version of :ref:`texture_get_data()<class_RenderingDevice_method_te
 
 :ref:`RDTextureFormat<class_RDTextureFormat>` **texture_get_format**\ (\ texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_get_format>`
 
-Returns the data format used to create this texture.
+返回用於生成 MSDF 紋理的源字形大小。
 
 .. rst-class:: classref-item-separator
 
@@ -6784,11 +6784,11 @@ Returns the data format used to create this texture.
 
 :ref:`int<class_int>` **texture_get_native_handle**\ (\ texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_get_native_handle>`
 
-**Deprecated:** Use :ref:`get_driver_resource()<class_RenderingDevice_method_get_driver_resource>` with :ref:`DRIVER_RESOURCE_TEXTURE<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE>` instead.
+**已棄用：** Use :ref:`get_driver_resource()<class_RenderingDevice_method_get_driver_resource>` with :ref:`DRIVER_RESOURCE_TEXTURE<class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE>` instead.
 
-Returns the internal graphics handle for this texture object. For use when communicating with third-party APIs mostly with GDExtension.
+返回該紋理物件的內部圖形控制碼。主要用於 GDExtension 與協力廠商 API 通訊。
 
-\ **Note:** This function returns a ``uint64_t`` which internally maps to a ``GLuint`` (OpenGL) or ``VkImage`` (Vulkan).
+\ **注意：**\ 這個函式返回的是 ``uint64_t``\ ，內部對應到 ``GLuint``\ （OpenGL）或 ``VkImage``\ （Vulkan）。
 
 .. rst-class:: classref-item-separator
 
@@ -6812,7 +6812,7 @@ Returns ``true`` if the ``texture`` is discardable, ``false`` otherwise. See :re
 
 :ref:`bool<class_bool>` **texture_is_format_supported_for_usage**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`, usage_flags\: |bitfield|\[:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\]\ ) |const| :ref:`🔗<class_RenderingDevice_method_texture_is_format_supported_for_usage>`
 
-Returns ``true`` if the specified ``format`` is supported for the given ``usage_flags``, ``false`` otherwise.
+如果指定的格式 ``format`` 支援給定的用途旗標 ``usage_flags``\ ，則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6824,7 +6824,7 @@ Returns ``true`` if the specified ``format`` is supported for the given ``usage_
 
 :ref:`bool<class_bool>` **texture_is_shared**\ (\ texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_is_shared>`
 
-Returns ``true`` if the ``texture`` is shared, ``false`` otherwise. See :ref:`RDTextureView<class_RDTextureView>`.
+如果 ``texture`` 是共用紋理，則返回 ``true``\ ，否則返回 ``false``\ 。見 :ref:`RDTextureView<class_RDTextureView>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6836,7 +6836,7 @@ Returns ``true`` if the ``texture`` is shared, ``false`` otherwise. See :ref:`RD
 
 :ref:`bool<class_bool>` **texture_is_valid**\ (\ texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_is_valid>`
 
-Returns ``true`` if the ``texture`` is valid, ``false`` otherwise.
+如果 ``texture`` 有效，則返回 ``true``\ ，否則返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6848,21 +6848,21 @@ Returns ``true`` if the ``texture`` is valid, ``false`` otherwise.
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_resolve_multisample**\ (\ from_texture\: :ref:`RID<class_RID>`, to_texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_resolve_multisample>`
 
-Resolves the ``from_texture`` texture onto ``to_texture`` with multisample antialiasing enabled. This must be used when rendering a framebuffer for MSAA to work. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if successful, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` otherwise.
+啟用多重取樣抗鋸齒，將 ``from_texture`` 紋理溶解至 ``to_texture``\ 。啟用後才能夠正常算繪 MSAA 影格緩衝。成功時返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，否則返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-\ **Note:** ``from_texture`` and ``to_texture`` textures must have the same dimension, format and type (color or depth).
+\ **注意：**\ ``from_texture`` 和 ``to_texture`` 的尺寸、格式、型別（顏色或深度）都必須相同。
 
-\ **Note:** ``from_texture`` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to resolve this texture.
+\ **注意：**\ 如果使用 ``from_texture`` 紋理的繪圖列表是建立的影格緩衝的一部分，則無法複製。請確保繪圖列表已經完成（並且使用它的顏色/深度紋理沒有設定為 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然後再複製紋理。
 
-\ **Note:** ``from_texture`` requires the :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>` to be retrieved.
+\ **注意：**\ ``from_texture`` 紋理需要獲取 :ref:`TEXTURE_USAGE_CAN_COPY_FROM_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_FROM_BIT>`\ 。
 
-\ **Note:** ``from_texture`` must be multisampled and must also be 2D (or a slice of a 3D/cubemap texture).
+\ **注意：**\ ``from_texture`` 紋理必須為多重取樣，並且必須為 2D 紋理（或者是 3D/立方體貼圖紋理的切片）。
 
-\ **Note:** ``to_texture`` can't be copied while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to resolve this texture.
+\ **注意：**\ 如果使用 ``to_texture`` 紋理的繪圖列表是建立的影格緩衝的一部分，則無法複製。請確保繪圖列表已經完成（並且使用它的顏色/深度紋理沒有設定為 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然後再溶解紋理。
 
-\ **Note:** ``to_texture`` texture requires the :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>` to be retrieved.
+\ **注意：**\ ``to_texture`` 紋理需要獲取 :ref:`TEXTURE_USAGE_CAN_COPY_TO_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_COPY_TO_BIT>`\ 。
 
-\ **Note:** ``to_texture`` texture must **not** be multisampled and must also be 2D (or a slice of a 3D/cubemap texture).
+\ **注意：**\ ``from_texture`` 紋理必須\ **不能**\ 是多重取樣，並且必須為 2D 紋理（或者是 3D/立方體貼圖紋理的切片）。
 
 .. rst-class:: classref-item-separator
 
@@ -6890,13 +6890,13 @@ This information is used by **RenderingDevice** to figure out if a texture's con
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_update**\ (\ texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_update>`
 
-Updates texture data with new data, replacing the previous data in place. The updated texture data must have the same dimensions and format. For 2D textures (which only have one layer), ``layer`` must be ``0``. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the update was successful, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` otherwise.
+使用新的資料更新紋理資料，會原地替換之前的資料。更新後的紋理資料必須和原有尺寸、格式一致。2D 紋理（只有一層）的 ``layer`` 必須為 ``0``\ 。如果更新成功則返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，否則返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-\ **Note:** Updating textures is forbidden during creation of a draw or compute list.
+\ **注意：**\ 精緻在建立繪圖列表或計算列表時更新紋理。
 
-\ **Note:** The existing ``texture`` can't be updated while a draw list that uses it as part of a framebuffer is being created. Ensure the draw list is finalized (and that the color/depth texture using it is not set to :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`) to update this texture.
+\ **注意：**\ 如果使用 ``texture`` 紋理的繪圖列表是建立的影格緩衝的一部分，則無法更新。請確保繪圖列表已經完成（並且使用它的顏色/深度紋理沒有設定為 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ），然後再更新紋理。
 
-\ **Note:** The existing ``texture`` requires the :ref:`TEXTURE_USAGE_CAN_UPDATE_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_UPDATE_BIT>` to be updatable.
+\ **注意：**\ ``texture`` 紋理需要獲取 :ref:`TEXTURE_USAGE_CAN_UPDATE_BIT<class_RenderingDevice_constant_TEXTURE_USAGE_CAN_UPDATE_BIT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6938,7 +6938,7 @@ This will be freed automatically when the ``shader`` or any of the RIDs in the `
 
 :ref:`bool<class_bool>` **uniform_set_is_valid**\ (\ uniform_set\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_uniform_set_is_valid>`
 
-Checks if the ``uniform_set`` is valid, i.e. is owned.
+檢查 ``uniform_set`` 是否有效，即是否擁有。
 
 .. rst-class:: classref-item-separator
 
@@ -6980,14 +6980,14 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`int<class_int>` **vertex_format_create**\ (\ vertex_descriptions\: :ref:`Array<class_Array>`\[:ref:`RDVertexAttribute<class_RDVertexAttribute>`\]\ ) :ref:`🔗<class_RenderingDevice_method_vertex_format_create>`
 
-Creates a new vertex format with the specified ``vertex_descriptions``. Returns a unique vertex format ID corresponding to the newly created vertex format.
+新建頂點描述為 ``vertex_descriptions`` 的頂點格式。返回與新建頂點格式對應的唯一格式 ID。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -1161,14 +1161,14 @@ Returns ``true`` if this string is a valid color in hexadecimal HTML notation. T
 
 **Obsoleto:** Use :ref:`is_valid_ascii_identifier()<class_String_method_is_valid_ascii_identifier>` instead.
 
-Returns ``true`` if this string is a valid identifier. A valid identifier may contain only letters, digits and underscores (``_``), and the first character may not be a digit.
+Devuelve ``true`` si esta string es un identificador válido. Un identificador válido solo puede contener letras, dígitos y guiones bajos (``_``), y el primer carácter no puede ser un dígito.
 
 ::
 
-    print("node_2d".is_valid_identifier())    # Prints true
-    print("TYPE_FLOAT".is_valid_identifier()) # Prints true
-    print("1st_method".is_valid_identifier()) # Prints false
-    print("MyMethod#2".is_valid_identifier()) # Prints false
+    print("node_2d".is_valid_identifier())    # Imprime true
+    print("TYPE_FLOAT".is_valid_identifier()) # Imprime true
+    print("1st_method".is_valid_identifier()) # Imprime false
+    print("MyMethod#2".is_valid_identifier()) # Imprime false
 
 .. rst-class:: classref-item-separator
 
@@ -1180,15 +1180,15 @@ Returns ``true`` if this string is a valid identifier. A valid identifier may co
 
 :ref:`bool<class_bool>` **is_valid_int**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_int>`
 
-Returns ``true`` if this string represents a valid integer. A valid integer only contains digits, and may be prefixed with a positive (``+``) or negative (``-``) sign. See also :ref:`to_int()<class_String_method_to_int>`.
+Devuelve ``true`` si esta string representa un entero válido. Un entero válido solo contiene dígitos y puede ir prefijado con un signo positivo (``+``) o negativo (``-``). Véase también :ref:`to_int()<class_String_method_to_int>`.
 
 ::
 
-    print("7".is_valid_int())    # Prints true
-    print("1.65".is_valid_int()) # Prints false
-    print("Hi".is_valid_int())   # Prints false
-    print("+3".is_valid_int())   # Prints true
-    print("-12".is_valid_int())  # Prints true
+    print("7".is_valid_int())    # Imprime true
+    print("1.65".is_valid_int()) # Imprime false
+    print("Hi".is_valid_int())   # Imprime false
+    print("+3".is_valid_int())   # Imprime true
+    print("-12".is_valid_int())  # Imprime true
 
 .. rst-class:: classref-item-separator
 
@@ -1200,7 +1200,7 @@ Returns ``true`` if this string represents a valid integer. A valid integer only
 
 :ref:`bool<class_bool>` **is_valid_ip_address**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_ip_address>`
 
-Returns ``true`` if this string represents a well-formatted IPv4 or IPv6 address. This method considers `reserved IP addresses <https://en.wikipedia.org/wiki/Reserved_IP_addresses>`__ such as ``"0.0.0.0"`` and ``"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"`` as valid.
+Devuelve ``true`` si esta string representa una dirección IPv4 o IPv6 bien formateada. Este método considera válidas las `direcciones IP reservadas <https://en.wikipedia.org/wiki/Reserved_IP_addresses>`__ como ``"0.0.0.0"`` y ``"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff"``.
 
 .. rst-class:: classref-item-separator
 
@@ -1212,22 +1212,22 @@ Returns ``true`` if this string represents a well-formatted IPv4 or IPv6 address
 
 :ref:`bool<class_bool>` **is_valid_unicode_identifier**\ (\ ) |const| :ref:`🔗<class_String_method_is_valid_unicode_identifier>`
 
-Returns ``true`` if this string is a valid Unicode identifier.
+Devuelve ``true`` si esta string es un identificador Unicode válido.
 
-A valid Unicode identifier must begin with a Unicode character of class ``XID_Start`` or ``"_"``, and may contain Unicode characters of class ``XID_Continue`` in the other positions.
+Un identificador Unicode válido debe comenzar con un carácter Unicode de clase ``XID_Start`` o ``"_"``, y puede contener caracteres Unicode de clase ``XID_Continue`` en las otras posiciones.
 
 ::
 
-    print("node_2d".is_valid_unicode_identifier())      # Prints true
-    print("1st_method".is_valid_unicode_identifier())   # Prints false
-    print("MyMethod#2".is_valid_unicode_identifier())   # Prints false
-    print("állóképesség".is_valid_unicode_identifier()) # Prints true
-    print("выносливость".is_valid_unicode_identifier()) # Prints true
-    print("体力".is_valid_unicode_identifier())         # Prints true
+    print("node_2d".is_valid_unicode_identifier())      # Imprime true
+    print("1st_method".is_valid_unicode_identifier())   # Imprime false
+    print("MyMethod#2".is_valid_unicode_identifier())   # Imprime false
+    print("állóképesség".is_valid_unicode_identifier()) # Imprime true
+    print("выносливость".is_valid_unicode_identifier()) # Imprime true
+    print("体力".is_valid_unicode_identifier())         # Imprime true
 
-See also :ref:`is_valid_ascii_identifier()<class_String_method_is_valid_ascii_identifier>`.
+Véase también :ref:`is_valid_ascii_identifier()<class_String_method_is_valid_ascii_identifier>`.
 
-\ **Note:** This method checks identifiers the same way as GDScript. See :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` for more advanced checks.
+\ **Nota:** Este método verifica identificadores de la misma manera que GDScript. Consulta :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` para comprobaciones más avanzadas.
 
 .. rst-class:: classref-item-separator
 
@@ -1239,25 +1239,25 @@ See also :ref:`is_valid_ascii_identifier()<class_String_method_is_valid_ascii_id
 
 :ref:`String<class_String>` **join**\ (\ parts\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |const| :ref:`🔗<class_String_method_join>`
 
-Returns the concatenation of ``parts``' elements, with each element separated by the string calling this method. This method is the opposite of :ref:`split()<class_String_method_split>`.
+Devuelve la concatenación de los elementos de ``parts``, con cada elemento separado por la string que llama a este método. Este método es lo opuesto a :ref:`split()<class_String_method_split>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var fruits = ["Apple", "Orange", "Pear", "Kiwi"]
+    var fruits = ["Manzana", "Naranja", "Pera", "Kiwi"]
 
-    print(", ".join(fruits))  # Prints "Apple, Orange, Pear, Kiwi"
-    print("---".join(fruits)) # Prints "Apple---Orange---Pear---Kiwi"
+    print(", ".join(fruits))  # Imprime "Manzana, Naranja, Pera, Kiwi"
+    print("---".join(fruits)) # Imprime "Manzana---Naranja---Pera---Kiwi"
 
  .. code-tab:: csharp
 
-    string[] fruits = ["Apple", "Orange", "Pear", "Kiwi"];
+    string[] fruits = ["Manzana", "Naranja", "Pera", "Kiwi"];
 
-    // In C#, this method is static.
-    GD.Print(string.Join(", ", fruits));  // Prints "Apple, Orange, Pear, Kiwi"
-    GD.Print(string.Join("---", fruits)); // Prints "Apple---Orange---Pear---Kiwi"
+    // En C#, este método es estático.
+    GD.Print(string.Join(", ", fruits));  // Imprime "Manzana, Naranja, Pera, Kiwi"
+    GD.Print(string.Join("---", fruits)); // Imprime "Manzana---Naranja---Pera---Kiwi"
 
 
 
@@ -1283,12 +1283,12 @@ Devuelve una copia de la string con los caracteres especiales escapados usando e
 
 :ref:`String<class_String>` **left**\ (\ length\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_left>`
 
-Returns the first ``length`` characters from the beginning of the string. If ``length`` is negative, strips the last ``length`` characters from the string's end.
+Devuelve los primeros ``length`` caracteres desde el principio de la string. Si ``length`` es negativo, elimina los últimos ``length`` caracteres del final de la string.
 
 ::
 
-    print("Hello World!".left(3))  # Prints "Hel"
-    print("Hello World!".left(-4)) # Prints "Hello Wo"
+    print("¡Hola mundo!".left(3))  # Imprime "¡Ho"
+    print("¡Hola mundo!".left(-4)) # Imprime "¡Hola mu"
 
 .. rst-class:: classref-item-separator
 
@@ -1362,7 +1362,7 @@ Realiza una comparación simple de expresiones **insensible a mayúsculas/minús
 
 :ref:`PackedByteArray<class_PackedByteArray>` **md5_buffer**\ (\ ) |const| :ref:`🔗<class_String_method_md5_buffer>`
 
-Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as a :ref:`PackedByteArray<class_PackedByteArray>`.
+Devuelve el `hash MD5 <https://en.wikipedia.org/wiki/MD5>`__ de la string como un :ref:`PackedByteArray<class_PackedByteArray>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1374,7 +1374,7 @@ Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as a 
 
 :ref:`String<class_String>` **md5_text**\ (\ ) |const| :ref:`🔗<class_String_method_md5_text>`
 
-Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as another **String**.
+Devuelve el `hash MD5 <https://en.wikipedia.org/wiki/MD5>`__ de la string como otra **String**.
 
 .. rst-class:: classref-item-separator
 
@@ -1386,13 +1386,13 @@ Returns the `MD5 hash <https://en.wikipedia.org/wiki/MD5>`__ of the string as an
 
 :ref:`int<class_int>` **naturalcasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_naturalcasecmp_to>`
 
-Performs a **case-sensitive**, *natural order* comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" or "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order.
+Realiza una comparación de **sensible a mayúsculas y minúsculas** y *orden natural* con otra cadena. Devuelve ``-1`` si es menor, ``1`` si es mayor, o ``0`` si es igual. "Menor que" o "mayor que" se determinan por los `puntos de código Unicode <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ de cada cadena, lo que coincide aproximadamente con el orden alfabético.
 
-When used for sorting, natural order comparison orders sequences of numbers by the combined value of each digit as is often expected, instead of the single digit's value. A sorted sequence of numbered strings will be ``["1", "2", "3", ...]``, not ``["1", "10", "2", "3", ...]``.
+Cuando se usa para ordenar, la comparación de orden natural ordena las secuencias de números por el valor combinado de cada dígito como se espera a menudo, en lugar del valor de un solo dígito. Una secuencia ordenada de strings numeradas será ``["1", "2", "3", ...]``, no ``["1", "10", "2", "3", ...]``.
 
-If the character comparison reaches the end of one string, but the other string contains more characters, then it will use length as the deciding factor: ``1`` will be returned if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is always ``0``.
+Si la comparación de caracteres llega al final de una cadena, pero la otra cadena contiene más caracteres, entonces usará la longitud como factor decisivo: se devolverá ``1`` si esta cadena es más larga que la cadena ``to``, o ``-1`` si es más corta. Ten en cuenta que la longitud de las strings vacías es siempre ``0``.
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`, :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>`, and :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`.
+Para obtener un resultado :ref:`bool<class_bool>` de una comparación de strings, usa el operador ``==`` en su lugar. Consulta también :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`, :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>` y :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1404,13 +1404,13 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`int<class_int>` **naturalnocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_naturalnocasecmp_to>`
 
-Performs a **case-insensitive**, *natural order* comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" or "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order. Internally, lowercase characters are converted to uppercase for the comparison.
+Realiza una comparación de **no sensible a mayúsculas y minúsculas** y *orden natural* con otra string. Devuelve ``-1`` si es menor, ``1`` si es mayor, o ``0`` si es igual. "Menor que" o "mayor que" se determinan por los `puntos de código Unicode <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ de cada string, lo que coincide aproximadamente con el orden alfabético. Internamente, los caracteres en minúscula se convierten a mayúscula para la comparación.
 
-When used for sorting, natural order comparison orders sequences of numbers by the combined value of each digit as is often expected, instead of the single digit's value. A sorted sequence of numbered strings will be ``["1", "2", "3", ...]``, not ``["1", "10", "2", "3", ...]``.
+Cuando se usa para ordenar, la comparación de orden natural ordena las secuencias de números por el valor combinado de cada dígito como se espera a menudo, en lugar del valor de un solo dígito. Una secuencia ordenada de strings numeradas será ``["1", "2", "3", ...]``, no ``["1", "10", "2", "3", ...]``.
 
-If the character comparison reaches the end of one string, but the other string contains more characters, then it will use length as the deciding factor: ``1`` will be returned if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is always ``0``.
+Si la comparación de caracteres llega al final de una string, pero la otra string contiene más caracteres, entonces usará la longitud como factor decisivo: se devolverá ``1`` si esta string es más larga que la string ``to``, o ``-1`` si es más corta. Ten en cuenta que la longitud de las strings vacías es siempre ``0``.
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>`, :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>`, and :ref:`casecmp_to()<class_String_method_casecmp_to>`.
+Para obtener un resultado :ref:`bool<class_bool>` de una comparación de strings, usa el operador ``==`` en su lugar. Véase también :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>`, :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>` y :ref:`casecmp_to()<class_String_method_casecmp_to>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1422,11 +1422,11 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`int<class_int>` **nocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_nocasecmp_to>`
 
-Performs a **case-insensitive** comparison to another string. Returns ``-1`` if less than, ``1`` if greater than, or ``0`` if equal. "Less than" or "greater than" are determined by the `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ of each string, which roughly matches the alphabetical order. Internally, lowercase characters are converted to uppercase for the comparison.
+Realiza una comparación **no sensible a mayúsculas y minúsculas** con otra string. Devuelve ``-1`` si es menor, ``1`` si es mayor, o ``0`` si es igual. "Menor que" o "mayor que" se determinan por los `puntos de código Unicode <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ de cada string, lo que coincide aproximadamente con el orden alfabético. Internamente, los caracteres en minúscula se convierten a mayúscula para la comparación.
 
-If the character comparison reaches the end of one string, but the other string contains more characters, then it will use length as the deciding factor: ``1`` will be returned if this string is longer than the ``to`` string, or ``-1`` if shorter. Note that the length of empty strings is always ``0``.
+Si la comparación de caracteres llega al final de una string, pero la otra string contiene más caracteres, entonces usará la longitud como factor decisivo: se devolverá ``1`` si esta string es más larga que la string ``to``, o ``-1`` si es más corta. Ten en cuenta que la longitud de las strings vacías es siempre ``0``.
 
-To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==`` operator instead. See also :ref:`casecmp_to()<class_String_method_casecmp_to>`, :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>`, and :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`.
+Para obtener un resultado :ref:`bool<class_bool>` de una comparación de strings, usa el operador ``==`` en su lugar. Véase también :ref:`casecmp_to()<class_String_method_casecmp_to>`, :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>` y :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1438,25 +1438,25 @@ To get a :ref:`bool<class_bool>` result from a string comparison, use the ``==``
 
 :ref:`String<class_String>` **num**\ (\ number\: :ref:`float<class_float>`, decimals\: :ref:`int<class_int>` = -1\ ) |static| :ref:`🔗<class_String_method_num>`
 
-Converts a :ref:`float<class_float>` to a string representation of a decimal number, with the number of decimal places specified in ``decimals``.
+Convierte un :ref:`float<class_float>` a una representación de string de un número decimal, con el número de decimales especificado en ``decimals``.
 
-If ``decimals`` is ``-1`` as by default, the string representation may only have up to 14 significant digits, with digits before the decimal point having priority over digits after.
+Si ``decimals`` es ``-1`` como por defecto, la representación de string puede tener solo hasta 14 dígitos significativos, con los dígitos antes del punto decimal teniendo prioridad sobre los dígitos después.
 
-Trailing zeros are not included in the string. The last digit is rounded, not truncated.
+Los ceros finales no se incluyen en la string. El último dígito se redondea, no se trunca.
 
 ::
 
-    String.num(3.141593)     # Returns "3.141593"
-    String.num(3.141593, 3)  # Returns "3.142"
-    String.num(3.14159300)   # Returns "3.141593"
+    String.num(3.141593)     # Devuelve "3.141593"
+    String.num(3.141593, 3)  # Devuelve "3.142"
+    String.num(3.14159300)   # Devuelve "3.141593"
 
-    # Here, the last digit will be rounded up,
-    # which reduces the total digit count, since trailing zeros are removed:
+    # Aquí, el último dígito se redondeará hacia arriba,
+    # lo que reduce el conteo total de dígitos, ya que los ceros finales se eliminan:
     String.num(42.129999, 5) # Returns "42.13"
 
-    # If `decimals` is not specified, the maximum number of significant digits is 14:
-    String.num(-0.0000012345432123454321)     # Returns "-0.00000123454321"
-    String.num(-10000.0000012345432123454321) # Returns "-10000.0000012345"
+    # Si `decimals` no se especifica, el número máximo de dígitos significativos es 14:
+    String.num(-0.0000012345432123454321)     # Devuelve "-0.00000123454321"
+    String.num(-10000.0000012345432123454321) # Devuelve "-10000.0000012345"
 
 .. rst-class:: classref-item-separator
 
@@ -1468,11 +1468,11 @@ Trailing zeros are not included in the string. The last digit is rounded, not tr
 
 :ref:`String<class_String>` **num_int64**\ (\ number\: :ref:`int<class_int>`, base\: :ref:`int<class_int>` = 10, capitalize_hex\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_String_method_num_int64>`
 
-Converts the given ``number`` to a string representation, with the given ``base``.
+Convierte el ``number`` dado a una representación de string, con la ``base`` dada.
 
-By default, ``base`` is set to decimal (``10``). Other common bases in programming include binary (``2``), `octal <https://en.wikipedia.org/wiki/Octal>`__ (``8``), hexadecimal (``16``).
+Por defecto, ``base`` se establece en decimal (``10``). Otras bases comunes en programación incluyen binario (``2``), `octal <https://en.wikipedia.org/wiki/Octal>`__ (``8``), hexadecimal (``16``).
 
-If ``capitalize_hex`` is ``true``, digits higher than 9 are represented in uppercase.
+Si ``capitalize_hex`` es ``true``, los dígitos mayores que 9 se representan en mayúsculas.
 
 .. rst-class:: classref-item-separator
 
@@ -1484,7 +1484,7 @@ If ``capitalize_hex`` is ``true``, digits higher than 9 are represented in upper
 
 :ref:`String<class_String>` **num_scientific**\ (\ number\: :ref:`float<class_float>`\ ) |static| :ref:`🔗<class_String_method_num_scientific>`
 
-Converts the given ``number`` to a string representation, in scientific notation.
+Convierte el ``number`` dado a una representación de string, en notación científica.
 
 
 .. tabs::
@@ -1492,20 +1492,20 @@ Converts the given ``number`` to a string representation, in scientific notation
  .. code-tab:: gdscript
 
     var n = -5.2e8
-    print(n)                        # Prints -520000000
-    print(String.num_scientific(n)) # Prints -5.2e+08
+    print(n)                        # Imprime -520000000
+    print(String.num_scientific(n)) # Imprime -5.2e+08
 
  .. code-tab:: csharp
 
-    // This method is not implemented in C#.
-    // Use `string.ToString()` with "e" to achieve similar results.
+    // Este método no está implementado en C#.
+    // Usa `string.ToString()` con "e" para obtener resultados similares.
     var n = -5.2e8f;
-    GD.Print(n);                // Prints -520000000
-    GD.Print(n.ToString("e1")); // Prints -5.2e+008
+    GD.Print(n);                // Imprime -520000000
+    GD.Print(n.ToString("e1")); // Imprime -5.2e+008
 
 
 
-\ **Note:** In C#, this method is not implemented. To achieve similar results, see C#'s `Standard numeric format strings <https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`__.
+\ **Nota:** En C#, este método no está implementado. Para obtener resultados similares, véanse las `strings de formato numérico estándar <https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings>`__ de C#.
 
 .. rst-class:: classref-item-separator
 
@@ -1517,11 +1517,11 @@ Converts the given ``number`` to a string representation, in scientific notation
 
 :ref:`String<class_String>` **num_uint64**\ (\ number\: :ref:`int<class_int>`, base\: :ref:`int<class_int>` = 10, capitalize_hex\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_String_method_num_uint64>`
 
-Converts the given unsigned :ref:`int<class_int>` to a string representation, with the given ``base``.
+Convierte el :ref:`int<class_int>` sin signo dado a una representación de string, con la ``base`` dada.
 
-By default, ``base`` is set to decimal (``10``). Other common bases in programming include binary (``2``), `octal <https://en.wikipedia.org/wiki/Octal>`__ (``8``), hexadecimal (``16``).
+Por defecto, ``base`` se establece en decimal (``10``). Otras bases comunes en programación incluyen binario (``2``), `octal <https://en.wikipedia.org/wiki/Octal>`__ (``8``), hexadecimal (``16``).
 
-If ``capitalize_hex`` is ``true``, digits higher than 9 are represented in uppercase.
+Si ``capitalize_hex`` es ``true``, los dígitos mayores que 9 se representan en mayúsculas.
 
 .. rst-class:: classref-item-separator
 
@@ -1533,7 +1533,7 @@ If ``capitalize_hex`` is ``true``, digits higher than 9 are represented in upper
 
 :ref:`String<class_String>` **pad_decimals**\ (\ digits\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_pad_decimals>`
 
-Formats the string representing a number to have an exact number of ``digits`` *after* the decimal point.
+Formatea la string que representa un número para que tenga exactamente ``digits`` dígitos *después* del punto decimal.
 
 .. rst-class:: classref-item-separator
 
@@ -1545,7 +1545,7 @@ Formats the string representing a number to have an exact number of ``digits`` *
 
 :ref:`String<class_String>` **pad_zeros**\ (\ digits\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_pad_zeros>`
 
-Formats the string representing a number to have an exact number of ``digits`` *before* the decimal point.
+Formatea la string que representa un número para que tenga exactamente ``digits`` dígitos *antes* del punto decimal.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ Elimina todas las ocurrencias del carácter Unicode con el código ``what``. Ver
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_String_method_remove_char>`.
+Elimina cualquier ocurrencia de los caracteres en ``chars``. Véase también :ref:`remove_char()<class_String_method_remove_char>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1619,7 +1619,7 @@ Reemplaza todas las instancias de ``what`` dentro de la string con el ``forwhat`
 
 :ref:`String<class_String>` **replace_char**\ (\ key\: :ref:`int<class_int>`, with\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_replace_char>`
 
-Replaces all occurrences of the Unicode character with code ``key`` with the Unicode character with code ``with``. Faster version of :ref:`replace()<class_String_method_replace>` when the key is only one character long. To get a single character use ``"X".unicode_at(0)`` (note that some strings, like compound letters and emoji, can be composed of multiple unicode codepoints, and will not work with this method, use :ref:`length()<class_String_method_length>` to make sure).
+Reemplaza todas las ocurrencias del carácter Unicode con el código ``key`` con el carácter Unicode con el código ``with``. Versión más rápida de :ref:`replace()<class_String_method_replace>` cuando la clave tiene solo un carácter de longitud. Para obtener un solo carácter, usa ``"X".unicode_at(0)`` (ten en cuenta que algunas strings, como las letras compuestas y los emojis, pueden estar compuestas de múltiples puntos de código Unicode, y no funcionarán con este método; usa :ref:`length()<class_String_method_length>` para asegurarte).
 
 .. rst-class:: classref-item-separator
 
@@ -1667,11 +1667,11 @@ Devuelve la copia de esta string en orden inverso. Esta operación funciona en p
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_String_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_String_method_find>`.
+Devuelve el índice de la **última** ocurrencia de ``what`` en esta string, o ``-1`` si no hay ninguna. El inicio de la búsqueda se puede especificar con ``from``, continuando hacia el principio de la string. Este método es el inverso de :ref:`find()<class_String_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Nota:** Un valor negativo de ``from`` se convierte en un índice de inicio contando hacia atrás desde el último índice posible con espacio suficiente para encontrar ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Nota:** Un valor de ``from`` mayor que el último índice posible con espacio suficiente para encontrar ``what`` se considera fuera de límites y devuelve ``-1``.
 
 .. rst-class:: classref-item-separator
 
@@ -1724,27 +1724,27 @@ Formatea la string para que tenga al menos ``min_length`` de longitud, añadiend
 
 :ref:`PackedStringArray<class_PackedStringArray>` **rsplit**\ (\ delimiter\: :ref:`String<class_String>` = "", allow_empty\: :ref:`bool<class_bool>` = true, maxsplit\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_String_method_rsplit>`
 
-Splits the string using a ``delimiter`` and returns an array of the substrings, starting from the end of the string. The splits in the returned array appear in the same order as the original string. If ``delimiter`` is an empty string, each substring will be a single character.
+Divide la string usando un ``delimiter`` y devuelve un array de las subcadenas, empezando desde el final de la string. Las divisiones en el array devuelto aparecen en el mismo orden que la string original. Si ``delimiter`` es una string vacía, cada subcadena será un solo carácter.
 
-If ``allow_empty`` is ``false``, empty strings between adjacent delimiters are excluded from the array.
+Si ``allow_empty`` es ``false``, las strings vacías entre delimitadores adyacentes se excluyen del array.
 
-If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``maxsplit``. By default, the entire string is split, which is mostly identical to :ref:`split()<class_String_method_split>`.
+Si ``maxsplit`` es mayor que ``0``, el número de divisiones no puede exceder ``maxsplit``. Por defecto, la string completa se divide, lo que es casi idéntico a :ref:`split()<class_String_method_split>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var some_string = "One,Two,Three,Four"
+    var some_string = "Uno,Dos,Tres,Cuatro"
     var some_array = some_string.rsplit(",", true, 1)
 
-    print(some_array.size()) # Prints 2
-    print(some_array[0])     # Prints "One,Two,Three"
-    print(some_array[1])     # Prints "Four"
+    print(some_array.size()) # Imprime 2
+    print(some_array[0])     # Imprime "Uno,Dos,Tres"
+    print(some_array[1])     # Imprime "Cuatro"
 
  .. code-tab:: csharp
 
-    // In C#, there is no String.RSplit() method.
+    // En C#, no existe el método String.RSplit().
 
 
 

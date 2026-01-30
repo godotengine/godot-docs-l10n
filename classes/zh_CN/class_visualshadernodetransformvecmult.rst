@@ -5,21 +5,21 @@
 VisualShaderNodeTransformVecMult
 ================================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Multiplies a :ref:`Transform3D<class_Transform3D>` and a :ref:`Vector3<class_Vector3>` within the visual shader graph.
+在可视化着色器图中，将 :ref:`Transform3D<class_Transform3D>` 与 :ref:`Vector3<class_Vector3>` 相乘。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A multiplication operation on a transform (4×4 matrix) and a vector, with support for different multiplication operators.
+对一个变换（4×4 矩阵）和一个向量进行乘法运算，支持不同的乘法运算符。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -34,8 +34,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisualShaderNodeTransformVecMult_Operator:
 
@@ -49,7 +49,7 @@ enum **Operator**: :ref:`🔗<enum_VisualShaderNodeTransformVecMult_Operator>`
 
 :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **OP_AxB** = ``0``
 
-Multiplies transform ``a`` by the vector ``b``.
+将变换 ``a`` 乘以向量 ``b``\ 。
 
 .. _class_VisualShaderNodeTransformVecMult_constant_OP_BxA:
 
@@ -57,7 +57,7 @@ Multiplies transform ``a`` by the vector ``b``.
 
 :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **OP_BxA** = ``1``
 
-Multiplies vector ``b`` by the transform ``a``.
+将向量 ``b`` 乘以变换 ``a``\ 。
 
 .. _class_VisualShaderNodeTransformVecMult_constant_OP_3x3_AxB:
 
@@ -65,7 +65,7 @@ Multiplies vector ``b`` by the transform ``a``.
 
 :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **OP_3x3_AxB** = ``2``
 
-Multiplies transform ``a`` by the vector ``b``, skipping the last row and column of the transform.
+将变换 ``a`` 乘以向量 ``b``\ ，跳过变换的最后一行和一列。
 
 .. _class_VisualShaderNodeTransformVecMult_constant_OP_3x3_BxA:
 
@@ -73,7 +73,7 @@ Multiplies transform ``a`` by the vector ``b``, skipping the last row and column
 
 :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **OP_3x3_BxA** = ``3``
 
-Multiplies vector ``b`` by the transform ``a``, skipping the last row and column of the transform.
+将向量 ``b`` 乘以变换 ``a``\ ，跳过变换的最后一行和一列。
 
 .. _class_VisualShaderNodeTransformVecMult_constant_OP_MAX:
 
@@ -81,7 +81,7 @@ Multiplies vector ``b`` by the transform ``a``, skipping the last row and column
 
 :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **OP_MAX** = ``4``
 
-Represents the size of the :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` enum.
+代表 :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -89,8 +89,8 @@ Represents the size of the :ref:`Operator<enum_VisualShaderNodeTransformVecMult_
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeTransformVecMult_property_operator:
 
@@ -103,14 +103,14 @@ Property Descriptions
 - |void| **set_operator**\ (\ value\: :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>`\ )
 - :ref:`Operator<enum_VisualShaderNodeTransformVecMult_Operator>` **get_operator**\ (\ )
 
-The multiplication type to be performed.
+要执行的乘法类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

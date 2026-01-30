@@ -5,16 +5,16 @@
 CanvasItem
 ==========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
+**被繼承：** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
 
-Abstract base class for everything in 2D space.
+2D 空間中所有物件的抽象基底類別。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Abstract base class for everything in 2D space. Canvas items are laid out in a tree; children inherit and extend their parent's transform. **CanvasItem** is extended by :ref:`Control<class_Control>` for GUI-related nodes, and by :ref:`Node2D<class_Node2D>` for 2D game objects.
 
@@ -28,19 +28,19 @@ Note that properties like transform, modulation, and visibility are only propaga
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+- :doc:`Viewport 和畫布變換 <../tutorials/2d/2d_transforms>`
 
-- :doc:`Custom drawing in 2D <../tutorials/2d/custom_drawing_in_2d>`
+- :doc:`2D 的自訂繪製 <../tutorials/2d/custom_drawing_in_2d>`
 
-- `Audio Spectrum Visualizer Demo <https://godotengine.org/asset-library/asset/2762>`__
+- `音訊頻譜視覺化範例 <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -217,8 +217,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_CanvasItem_signal_draw:
 
@@ -226,9 +226,9 @@ Signals
 
 **draw**\ (\ ) :ref:`🔗<class_CanvasItem_signal_draw>`
 
-Emitted when the **CanvasItem** must redraw, *after* the related :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` notification, and *before* :ref:`_draw()<class_CanvasItem_private_method__draw>` is called.
+當該 **CanvasItem** 必須重繪時發出，發生在相關的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知\ *之後*\ ，呼叫 :ref:`_draw()<class_CanvasItem_private_method__draw>` *之前*\ 。
 
-\ **Note:** Deferred connections do not allow drawing through the ``draw_*`` methods.
+\ **注意：**\ 延遲連接無法使用 ``draw_*`` 方法進行繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -274,8 +274,8 @@ This signal is emitted *after* the related :ref:`NOTIFICATION_VISIBILITY_CHANGED
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_CanvasItem_TextureFilter:
 
@@ -289,7 +289,7 @@ enum **TextureFilter**: :ref:`🔗<enum_CanvasItem_TextureFilter>`
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the filter from its parent.
+該 **CanvasItem** 將從其父級繼承篩檢程式。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST:
 
@@ -297,7 +297,7 @@ The **CanvasItem** will inherit the filter from its parent.
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理僅取最鄰近像素，近看呈現馬賽克，遠處因未取樣 mipmap 而顯得顆粒。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR:
 
@@ -305,7 +305,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+紋理在最鄰近 4 像素間插值，近看平滑，遠處因未取樣 mipmap 仍顆粒。
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -353,7 +353,7 @@ The texture filter blends between the nearest 4 pixels and blends between 2 mipm
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_MAX** = ``7``
 
-Represents the size of the :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` enum.
+代表 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -371,7 +371,7 @@ enum **TextureRepeat**: :ref:`🔗<enum_CanvasItem_TextureRepeat>`
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_PARENT_NODE** = ``0``
 
-The **CanvasItem** will inherit the filter from its parent.
+該 **CanvasItem** 將從其父級繼承篩檢程式。
 
 .. _class_CanvasItem_constant_TEXTURE_REPEAT_DISABLED:
 
@@ -403,7 +403,7 @@ The texture repeats when the exceeding the texture's size in a "2×2 tiled mode"
 
 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **TEXTURE_REPEAT_MAX** = ``4``
 
-Represents the size of the :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` enum.
+代表 :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` 列舉的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ This node is used as a mask and is also drawn. The mask is based on this node's 
 
 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` **CLIP_CHILDREN_MAX** = ``3``
 
-Represents the size of the :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` enum.
+代表 :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMode>` 列舉的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -453,8 +453,8 @@ Represents the size of the :ref:`ClipChildrenMode<enum_CanvasItem_ClipChildrenMo
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常數
+----
 
 .. _class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED:
 
@@ -482,7 +482,7 @@ Notification received when this node's transform changes, if :ref:`is_local_tran
 
 **NOTIFICATION_DRAW** = ``30`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_DRAW>`
 
-The **CanvasItem** is requested to draw (see :ref:`_draw()<class_CanvasItem_private_method__draw>`).
+要求繪製該 **CanvasItem**\ （見 :ref:`_draw()<class_CanvasItem_private_method__draw>`\ ）。
 
 .. _class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -500,7 +500,7 @@ This notification is received *before* the related :ref:`visibility_changed<clas
 
 **NOTIFICATION_ENTER_CANVAS** = ``32`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_ENTER_CANVAS>`
 
-The **CanvasItem** has entered the canvas.
+該 **CanvasItem** 已進入畫布。
 
 .. _class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS:
 
@@ -526,8 +526,8 @@ Notification received when this **CanvasItem** is registered to a new :ref:`Worl
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CanvasItem_property_clip_children:
 
@@ -559,7 +559,7 @@ The mode in which this node clips its children, acting as a mask.
 - |void| **set_light_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_light_mask**\ (\ )
 
-The rendering layers in which this **CanvasItem** responds to :ref:`Light2D<class_Light2D>` nodes.
+該 **CanvasItem** 的算繪層，用於回應 :ref:`Light2D<class_Light2D>` 節點。
 
 .. rst-class:: classref-item-separator
 
@@ -576,7 +576,7 @@ The rendering layers in which this **CanvasItem** responds to :ref:`Light2D<clas
 - |void| **set_material**\ (\ value\: :ref:`Material<class_Material>`\ )
 - :ref:`Material<class_Material>` **get_material**\ (\ )
 
-The material applied to this **CanvasItem**.
+套用於這個 **CanvasItem** 的材質。
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ The material applied to this **CanvasItem**.
 - |void| **set_modulate**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_modulate**\ (\ )
 
-The color applied to this **CanvasItem**. This property does affect child **CanvasItem**\ s, unlike :ref:`self_modulate<class_CanvasItem_property_self_modulate>` which only affects the node itself.
+套用於這個 **CanvasItem** 的顏色。這個屬性會影響子級 **CanvasItem**\ ，與只會影響節點自身的 :ref:`self_modulate<class_CanvasItem_property_self_modulate>` 不同。
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ The repeating mode used to render this **CanvasItem**'s texture(s). It affects w
 - |void| **set_as_top_level**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_top_level**\ (\ )
 
-If ``true``, this **CanvasItem** will *not* inherit its transform from parent **CanvasItem**\ s. Its draw order will also be changed to make it draw on top of other **CanvasItem**\ s that do not have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``. The **CanvasItem** will effectively act as if it was placed as a child of a bare :ref:`Node<class_Node>`.
+如果為 ``true``\ ，則該 **CanvasItem** *不會*\ 繼承父級 **CanvasItem** 的變換。它的繪製順序也會發生改變，會在其他沒有將 :ref:`top_level<class_CanvasItem_property_top_level>` 設定為 ``true`` 的 **CanvasItem** 之上繪製。效果和把該 **CanvasItem** 作為裸 :ref:`Node<class_Node>` 的子級一樣。
 
 .. rst-class:: classref-item-separator
 
@@ -804,8 +804,8 @@ The order in which this node is drawn. A node with a higher Z index will display
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_CanvasItem_private_method__draw:
 
@@ -813,9 +813,9 @@ Method Descriptions
 
 |void| **_draw**\ (\ ) |virtual| :ref:`🔗<class_CanvasItem_private_method__draw>`
 
-Called when **CanvasItem** has been requested to redraw (after :ref:`queue_redraw()<class_CanvasItem_method_queue_redraw>` is called, either manually or by the engine).
+當 **CanvasItem** 被請求重繪時呼叫（手動呼叫或者引擎呼叫 :ref:`queue_redraw()<class_CanvasItem_method_queue_redraw>` 之後）。
 
-Corresponds to the :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` notification in :ref:`Object._notification()<class_Object_private_method__notification>`.
+對應於 :ref:`Object._notification()<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知。
 
 .. rst-class:: classref-item-separator
 
@@ -827,7 +827,7 @@ Corresponds to the :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATIO
 
 |void| **draw_animation_slice**\ (\ animation_length\: :ref:`float<class_float>`, slice_begin\: :ref:`float<class_float>`, slice_end\: :ref:`float<class_float>`, offset\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_CanvasItem_method_draw_animation_slice>`
 
-Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
+後續的繪製命令將被忽略，除非它們位於指定的動畫切片內。這是實作在背景上迴圈而不是不斷重繪的動畫的更快方法。
 
 .. rst-class:: classref-item-separator
 
@@ -971,7 +971,7 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_end_animation**\ (\ ) :ref:`🔗<class_CanvasItem_method_draw_end_animation>`
 
-After submitting all animations slices via :ref:`draw_animation_slice()<class_CanvasItem_method_draw_animation_slice>`, this function can be used to revert drawing to its default state (all subsequent drawing commands will be visible). If you don't care about this particular use case, usage of this function after submitting the slices is not required.
+通過 :ref:`draw_animation_slice()<class_CanvasItem_method_draw_animation_slice>` 提交所有動畫切片後，該函式可以被用來將繪製恢復到其預設狀態（所有後續繪製命令都將可見）。如果不關心這個特定用例，則不需要在提交切片後使用該函式。
 
 .. rst-class:: classref-item-separator
 
@@ -1399,7 +1399,7 @@ Returns mouse cursor's global position relative to the :ref:`CanvasLayer<class_C
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform>`
 
-Returns the global transform matrix of this item, i.e. the combined transform up to the topmost **CanvasItem** node. The topmost item is a **CanvasItem** that either has no parent, has non-**CanvasItem** parent or it has :ref:`top_level<class_CanvasItem_property_top_level>` enabled.
+返回該專案的全域變換矩陣，即到最頂層的 **CanvasItem** 節點的綜合變換。最頂層的專案是一個 **CanvasItem**\ ，它要麼沒有父級，要麼有非 **CanvasItem** 父級，或者要麼它啟用了 :ref:`top_level<class_CanvasItem_property_top_level>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1411,7 +1411,7 @@ Returns the global transform matrix of this item, i.e. the combined transform up
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform_with_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform_with_canvas>`
 
-Returns the transform from the local coordinate system of this **CanvasItem** to the :ref:`Viewport<class_Viewport>`\ s coordinate system.
+返回從該 **CanvasItem** 的局部坐標系到 :ref:`Viewport<class_Viewport>` 坐標系的變換。
 
 .. rst-class:: classref-item-separator
 
@@ -1423,7 +1423,7 @@ Returns the transform from the local coordinate system of this **CanvasItem** to
 
 :ref:`Variant<class_Variant>` **get_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_CanvasItem_method_get_instance_shader_parameter>`
 
-Get the value of a shader parameter as set on this instance.
+獲取在該實例上設定的著色器參數值。
 
 .. rst-class:: classref-item-separator
 
@@ -1435,7 +1435,7 @@ Get the value of a shader parameter as set on this instance.
 
 :ref:`Vector2<class_Vector2>` **get_local_mouse_position**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_local_mouse_position>`
 
-Returns the mouse's position in this **CanvasItem** using the local coordinate system of this **CanvasItem**.
+返回該 **CanvasItem** 中滑鼠的位置，使用該 **CanvasItem** 的局部坐標系。
 
 .. rst-class:: classref-item-separator
 
@@ -1523,7 +1523,7 @@ Usually, this is the same as this node's viewport (see :ref:`Node.get_viewport()
 
 |void| **hide**\ (\ ) :ref:`🔗<class_CanvasItem_method_hide>`
 
-Hide the **CanvasItem** if it's currently visible. This is equivalent to setting :ref:`visible<class_CanvasItem_property_visible>` to ``false``.
+如果該 **CanvasItem** 目前是可見的，則將其隱藏。相當於將 :ref:`visible<class_CanvasItem_property_visible>` 設為 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1617,7 +1617,7 @@ Moves this node below its siblings, usually causing the node to draw on top of i
 
 |void| **queue_redraw**\ (\ ) :ref:`🔗<class_CanvasItem_method_queue_redraw>`
 
-Queues the **CanvasItem** to redraw. During idle time, if **CanvasItem** is visible, :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` is sent and :ref:`_draw()<class_CanvasItem_private_method__draw>` is called. This only occurs **once** per frame, even if this method has been called multiple times.
+將該 **CanvasItem** 加入重繪佇列。空閒時，如果 **CanvasItem** 可見，則會發送 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 並呼叫 :ref:`_draw()<class_CanvasItem_private_method__draw>`\ 。即便多次呼叫這個方法，每影格也都只會發生\ **一次**\ 繪製。
 
 .. rst-class:: classref-item-separator
 
@@ -1629,11 +1629,11 @@ Queues the **CanvasItem** to redraw. During idle time, if **CanvasItem** is visi
 
 |void| **set_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_CanvasItem_method_set_instance_shader_parameter>`
 
-Set the value of a shader uniform for this instance only (`per-instance uniform <../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms>`__). See also :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` to assign a uniform on all instances using the same :ref:`ShaderMaterial<class_ShaderMaterial>`.
+設定著色器 Uniform 的值，僅限此實例 (`每實例 Uniform <../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms>`__)。另請參閱 :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>`\ ，以在使用相同 :ref:`ShaderMaterial<class_ShaderMaterial>` 的所有實例上指派 Uniform。
 
-\ **Note:** For a shader uniform to be assignable on a per-instance basis, it *must* be defined with ``instance uniform ...`` rather than ``uniform ...`` in the shader code.
+\ **注意：** 著色器 Uniform 若要能夠按每個實例指派，它在著色器程式碼中 *必須* 定義為 ``instance uniform ...``\ ，而非 ``uniform ...``\ 。
 
-\ **Note:** ``name`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
+\ **注意：** ``name`` 區分大小寫，且必須與程式碼中 Uniform 的名稱完全相符 (而非屬性檢視器中大寫的名稱)。
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Ca
 
 |void| **set_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_visibility_layer_bit>`
 
-Set/clear individual bits on the rendering visibility layer. This simplifies editing this **CanvasItem**'s visibility layer.
+設定或清除算繪可見層上的單個位。這簡化了對該 **CanvasItem** 的可見層的編輯。
 
 .. rst-class:: classref-item-separator
 
@@ -1689,12 +1689,12 @@ Show the **CanvasItem** if it's currently hidden. This is equivalent to setting 
 
 \ **Note:** For controls that inherit :ref:`Popup<class_Popup>`, the correct way to make them visible is to call one of the multiple ``popup*()`` functions instead.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

@@ -5,14 +5,14 @@
 LightmapGI
 ==========
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Computes and stores baked lightmaps for fast global illumination.
+計算並儲存烘焙光照貼圖，以實作快速全域照明。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps are used to provide high-quality indirect lighting with very little light leaking. **LightmapGI** can also provide rough reflections using spherical harmonics if :ref:`directional<class_LightmapGI_property_directional>` is enabled. Dynamic objects can receive indirect lighting thanks to *light probes*, which can be automatically placed by setting :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` to a value other than :ref:`GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>`. Additional lightmap probes can also be added by creating :ref:`LightmapProbe<class_LightmapProbe>` nodes. The downside is that lightmaps are fully static and cannot be baked in an exported project. Baking a **LightmapGI** node is also slower compared to :ref:`VoxelGI<class_VoxelGI>`.
 
@@ -30,15 +30,15 @@ The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps 
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Using Lightmap global illumination <../tutorials/3d/global_illumination/using_lightmap_gi>`
+- :doc:`使用光照貼圖全域光照 <../tutorials/3d/global_illumination/using_lightmap_gi>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -95,8 +95,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_LightmapGI_BakeQuality:
 
@@ -110,7 +110,7 @@ enum **BakeQuality**: :ref:`🔗<enum_LightmapGI_BakeQuality>`
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_LOW** = ``0``
 
-Low bake quality (fastest bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count>`.
+較低的烘焙品質（最快的烘焙時間）。可以通過更改 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_ray_count>` 和 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/low_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/low_quality_probe_ray_count>` 來調整此預設的品質。
 
 .. _class_LightmapGI_constant_BAKE_QUALITY_MEDIUM:
 
@@ -118,7 +118,7 @@ Low bake quality (fastest bake times). The quality of this preset can be adjuste
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_MEDIUM** = ``1``
 
-Medium bake quality (fast bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count>`.
+中等的烘焙品質（較快的烘焙時間）。可以通過更改 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_ray_count>` 和 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/medium_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/medium_quality_probe_ray_count>` 來調整此預設的品質。
 
 .. _class_LightmapGI_constant_BAKE_QUALITY_HIGH:
 
@@ -126,7 +126,7 @@ Medium bake quality (fast bake times). The quality of this preset can be adjuste
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_HIGH** = ``2``
 
-High bake quality (slow bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count>`.
+較高的烘焙品質（較慢的烘焙時間）。可以通過更改 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count>` 和 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_probe_ray_count>` 來調整此預設的品質。
 
 .. _class_LightmapGI_constant_BAKE_QUALITY_ULTRA:
 
@@ -134,7 +134,7 @@ High bake quality (slow bake times). The quality of this preset can be adjusted 
 
 :ref:`BakeQuality<enum_LightmapGI_BakeQuality>` **BAKE_QUALITY_ULTRA** = ``3``
 
-Highest bake quality (slowest bake times). The quality of this preset can be adjusted by changing :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_ray_count>` and :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count>`.
+最高的烘焙品質（最慢的烘焙時間）。可以通過更改 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/high_quality_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/high_quality_ray_count>` 和 :ref:`ProjectSettings.rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count<class_ProjectSettings_property_rendering/lightmapping/bake_quality/ultra_quality_probe_ray_count>` 來調整此預設的品質。
 
 .. rst-class:: classref-item-separator
 
@@ -152,7 +152,7 @@ enum **GenerateProbes**: :ref:`🔗<enum_LightmapGI_GenerateProbes>`
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_DISABLED** = ``0``
 
-Don't generate lightmap probes for lighting dynamic objects.
+不要為光照動態物件生成光照貼圖探查。
 
 .. _class_LightmapGI_constant_GENERATE_PROBES_SUBDIV_4:
 
@@ -160,7 +160,7 @@ Don't generate lightmap probes for lighting dynamic objects.
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_SUBDIV_4** = ``1``
 
-Lowest level of subdivision (fastest bake times, smallest file sizes).
+最低級別的細分（烘焙時間最快，檔大小最小）。
 
 .. _class_LightmapGI_constant_GENERATE_PROBES_SUBDIV_8:
 
@@ -168,7 +168,7 @@ Lowest level of subdivision (fastest bake times, smallest file sizes).
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_SUBDIV_8** = ``2``
 
-Low level of subdivision (fast bake times, small file sizes).
+較低級別的細分（烘焙時間較快，檔大小較小）。
 
 .. _class_LightmapGI_constant_GENERATE_PROBES_SUBDIV_16:
 
@@ -176,7 +176,7 @@ Low level of subdivision (fast bake times, small file sizes).
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_SUBDIV_16** = ``3``
 
-High level of subdivision (slow bake times, large file sizes).
+較高級別的細分（烘焙時間較慢，檔大小較大）。
 
 .. _class_LightmapGI_constant_GENERATE_PROBES_SUBDIV_32:
 
@@ -184,7 +184,7 @@ High level of subdivision (slow bake times, large file sizes).
 
 :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **GENERATE_PROBES_SUBDIV_32** = ``4``
 
-Highest level of subdivision (slowest bake times, largest file sizes).
+最高級別的細分（烘焙時間最慢，檔大小最大）。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ enum **BakeError**: :ref:`🔗<enum_LightmapGI_BakeError>`
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_OK** = ``0``
 
-Lightmap baking was successful.
+光照貼圖烘焙成功。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_NO_SCENE_ROOT:
 
@@ -210,7 +210,7 @@ Lightmap baking was successful.
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_NO_SCENE_ROOT** = ``1``
 
-Lightmap baking failed because the root node for the edited scene could not be accessed.
+光照貼圖烘焙失敗，原因是無法存取所編輯場景的根節點。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_FOREIGN_DATA:
 
@@ -218,7 +218,7 @@ Lightmap baking failed because the root node for the edited scene could not be a
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_FOREIGN_DATA** = ``2``
 
-Lightmap baking failed as the lightmap data resource is embedded in a foreign resource.
+光照貼圖烘焙失敗，原因是光照貼圖資料嵌入在外部資源之中。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_NO_LIGHTMAPPER:
 
@@ -226,7 +226,7 @@ Lightmap baking failed as the lightmap data resource is embedded in a foreign re
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_NO_LIGHTMAPPER** = ``3``
 
-Lightmap baking failed as there is no lightmapper available in this Godot build.
+光照貼圖烘焙失敗，原因是這個 Godot 建構中沒有可用的光照貼圖器。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_NO_SAVE_PATH:
 
@@ -234,7 +234,7 @@ Lightmap baking failed as there is no lightmapper available in this Godot build.
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_NO_SAVE_PATH** = ``4``
 
-Lightmap baking failed as the :ref:`LightmapGIData<class_LightmapGIData>` save path isn't configured in the resource.
+光照貼圖烘焙失敗，原因是資源中沒有配置 :ref:`LightmapGIData<class_LightmapGIData>` 保存路徑。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_NO_MESHES:
 
@@ -242,7 +242,7 @@ Lightmap baking failed as the :ref:`LightmapGIData<class_LightmapGIData>` save p
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_NO_MESHES** = ``5``
 
-Lightmap baking failed as there are no meshes whose :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` is :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` and with valid UV2 mapping in the current scene. You may need to select 3D scenes in the Import dock and change their global illumination mode accordingly.
+光照貼圖烘焙失敗，原因是目前場景中沒有 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 為 :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` 且具有有效 UV2 對應的網格。可能需要在匯入停靠面板中選擇 3D 場景，並相應地更改它們的全域照明模式。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_MESHES_INVALID:
 
@@ -250,7 +250,7 @@ Lightmap baking failed as there are no meshes whose :ref:`GeometryInstance3D.gi_
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_MESHES_INVALID** = ``6``
 
-Lightmap baking failed as the lightmapper failed to analyze some of the meshes marked as static for baking.
+光照貼圖烘焙失敗，原因是光照貼圖器無法分析一些標記為靜態的網格以進行烘焙。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_CANT_CREATE_IMAGE:
 
@@ -258,7 +258,7 @@ Lightmap baking failed as the lightmapper failed to analyze some of the meshes m
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_CANT_CREATE_IMAGE** = ``7``
 
-Lightmap baking failed as the resulting image couldn't be saved or imported by Godot after it was saved.
+光照貼圖烘焙失敗，原因是最終的圖像無法保存，或保存後無法被 Godot 匯入。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_USER_ABORTED:
 
@@ -266,7 +266,7 @@ Lightmap baking failed as the resulting image couldn't be saved or imported by G
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_USER_ABORTED** = ``8``
 
-The user aborted the lightmap baking operation (typically by clicking the **Cancel** button in the progress dialog).
+使用者中止了光照貼圖烘焙操作（通常通過點擊進度對話方塊中的\ **取消**\ 按鈕）。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_TEXTURE_SIZE_TOO_SMALL:
 
@@ -274,7 +274,7 @@ The user aborted the lightmap baking operation (typically by clicking the **Canc
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_TEXTURE_SIZE_TOO_SMALL** = ``9``
 
-Lightmap baking failed as the maximum texture size is too small to fit some of the meshes marked for baking.
+光照貼圖烘焙失敗，原因是光照貼圖器無法分析一些標記為靜態的網格以進行烘焙。
 
 .. _class_LightmapGI_constant_BAKE_ERROR_LIGHTMAP_TOO_SMALL:
 
@@ -308,7 +308,7 @@ enum **EnvironmentMode**: :ref:`🔗<enum_LightmapGI_EnvironmentMode>`
 
 :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>` **ENVIRONMENT_MODE_DISABLED** = ``0``
 
-Ignore environment lighting when baking lightmaps.
+烘焙光照貼圖時忽略環境光照。
 
 .. _class_LightmapGI_constant_ENVIRONMENT_MODE_SCENE:
 
@@ -316,9 +316,9 @@ Ignore environment lighting when baking lightmaps.
 
 :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>` **ENVIRONMENT_MODE_SCENE** = ``1``
 
-Use the scene's environment lighting when baking lightmaps.
+烘焙光照貼圖時，使用場景的環境光照。
 
-\ **Note:** If baking lightmaps in a scene with no :ref:`WorldEnvironment<class_WorldEnvironment>` node, this will act like :ref:`ENVIRONMENT_MODE_DISABLED<class_LightmapGI_constant_ENVIRONMENT_MODE_DISABLED>`. The editor's preview sky and sun is *not* taken into account by **LightmapGI** when baking lightmaps.
+\ **注意：**\ 如果在沒有 :ref:`WorldEnvironment<class_WorldEnvironment>` 節點的場景中烘焙光照貼圖，這將表現得像 :ref:`ENVIRONMENT_MODE_DISABLED<class_LightmapGI_constant_ENVIRONMENT_MODE_DISABLED>`\ 。在烘焙光照貼圖時，\ **LightmapGI** *不會*\ 考慮編輯器的預覽天空和太陽。
 
 .. _class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_SKY:
 
@@ -326,7 +326,7 @@ Use the scene's environment lighting when baking lightmaps.
 
 :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>` **ENVIRONMENT_MODE_CUSTOM_SKY** = ``2``
 
-Use :ref:`environment_custom_sky<class_LightmapGI_property_environment_custom_sky>` as a source of environment lighting when baking lightmaps.
+烘焙光照貼圖時，使用 :ref:`environment_custom_sky<class_LightmapGI_property_environment_custom_sky>` 作為環境光照來源。
 
 .. _class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_COLOR:
 
@@ -334,7 +334,7 @@ Use :ref:`environment_custom_sky<class_LightmapGI_property_environment_custom_sk
 
 :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>` **ENVIRONMENT_MODE_CUSTOM_COLOR** = ``3``
 
-Use :ref:`environment_custom_color<class_LightmapGI_property_environment_custom_color>` multiplied by :ref:`environment_custom_energy<class_LightmapGI_property_environment_custom_energy>` as a constant source of environment lighting when baking lightmaps.
+烘焙光照貼圖時，使用 :ref:`environment_custom_color<class_LightmapGI_property_environment_custom_color>` 和 :ref:`environment_custom_energy<class_LightmapGI_property_environment_custom_energy>` 相乘的結果作為環境光照的恒定來源。
 
 .. rst-class:: classref-section-separator
 
@@ -342,8 +342,8 @@ Use :ref:`environment_custom_color<class_LightmapGI_property_environment_custom_
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_LightmapGI_property_bias:
 
@@ -356,7 +356,7 @@ Property Descriptions
 - |void| **set_bias**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bias**\ (\ )
 
-The bias to use when computing shadows. Increasing :ref:`bias<class_LightmapGI_property_bias>` can fix shadow acne on the resulting baked lightmap, but can introduce peter-panning (shadows not connecting to their casters). Real-time :ref:`Light3D<class_Light3D>` shadows are not affected by this :ref:`bias<class_LightmapGI_property_bias>` property.
+計算陰影時使用的偏置。增加 :ref:`bias<class_LightmapGI_property_bias>` 可以修復生成的烘焙光照貼圖上的陰影失真，但會引入陰影懸浮（陰影未連接到其障礙物）。即時 :ref:`Light3D<class_Light3D>` 陰影不受該 :ref:`bias<class_LightmapGI_property_bias>` 屬性的影響。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ The energy multiplier for each bounce. Higher values will make indirect lighting
 - |void| **set_bounces**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bounces**\ (\ )
 
-Number of light bounces that are taken into account during baking. Higher values result in brighter, more realistic lighting, at the cost of longer bake times. If set to ``0``, only environment lighting, direct light and emissive lighting is baked.
+烘焙過程中考慮的光反彈次數。較高的值會產生更明亮、更逼真的光線，但代價是更長的烘焙時間。如果設定為 ``0``\ ，則僅烘焙環境光線、直接光線和自發光光線。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Number of light bounces that are taken into account during baking. Higher values
 - |void| **set_camera_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_camera_attributes**\ (\ )
 
-The :ref:`CameraAttributes<class_CameraAttributes>` resource that specifies exposure levels to bake at. Auto-exposure and non exposure properties will be ignored. Exposure settings should be used to reduce the dynamic range present when baking. If exposure is too high, the **LightmapGI** will have banding artifacts or may have over-exposure artifacts.
+:ref:`CameraAttributes<class_CameraAttributes>` 資源，指定要烘焙的曝光級別。自動曝光和非曝光屬性將被忽略。應該使用曝光設定來減少烘焙時出現的動態範圍。如果曝光度太高，\ **LightmapGI** 將出現帶狀偽影，或可能出現過度曝光偽影。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ If ``true``, bakes lightmaps to contain directional information as spherical har
 - |void| **set_environment_custom_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_environment_custom_color**\ (\ )
 
-The color to use for environment lighting. Only effective if :ref:`environment_mode<class_LightmapGI_property_environment_mode>` is :ref:`ENVIRONMENT_MODE_CUSTOM_COLOR<class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_COLOR>`.
+用於環境照明的顏色。僅在 :ref:`environment_mode<class_LightmapGI_property_environment_mode>` 為 :ref:`ENVIRONMENT_MODE_CUSTOM_COLOR<class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_COLOR>` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -496,7 +496,7 @@ The color to use for environment lighting. Only effective if :ref:`environment_m
 - |void| **set_environment_custom_energy**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_environment_custom_energy**\ (\ )
 
-The color multiplier to use for environment lighting. Only effective if :ref:`environment_mode<class_LightmapGI_property_environment_mode>` is :ref:`ENVIRONMENT_MODE_CUSTOM_COLOR<class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_COLOR>`.
+用於環境照明的顏色倍數。僅在 :ref:`environment_mode<class_LightmapGI_property_environment_mode>` 為 :ref:`ENVIRONMENT_MODE_CUSTOM_COLOR<class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_COLOR>` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -513,7 +513,7 @@ The color multiplier to use for environment lighting. Only effective if :ref:`en
 - |void| **set_environment_custom_sky**\ (\ value\: :ref:`Sky<class_Sky>`\ )
 - :ref:`Sky<class_Sky>` **get_environment_custom_sky**\ (\ )
 
-The sky to use as a source of environment lighting. Only effective if :ref:`environment_mode<class_LightmapGI_property_environment_mode>` is :ref:`ENVIRONMENT_MODE_CUSTOM_SKY<class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_SKY>`.
+用作環境照明光源的天空。僅在 :ref:`environment_mode<class_LightmapGI_property_environment_mode>` 為 :ref:`ENVIRONMENT_MODE_CUSTOM_SKY<class_LightmapGI_constant_ENVIRONMENT_MODE_CUSTOM_SKY>` 時有效。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,7 @@ The sky to use as a source of environment lighting. Only effective if :ref:`envi
 - |void| **set_environment_mode**\ (\ value\: :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>`\ )
 - :ref:`EnvironmentMode<enum_LightmapGI_EnvironmentMode>` **get_environment_mode**\ (\ )
 
-The environment mode to use when baking lightmaps.
+烘焙光照貼圖時使用的環境模式。
 
 .. rst-class:: classref-item-separator
 
@@ -547,11 +547,11 @@ The environment mode to use when baking lightmaps.
 - |void| **set_generate_probes**\ (\ value\: :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>`\ )
 - :ref:`GenerateProbes<enum_LightmapGI_GenerateProbes>` **get_generate_probes**\ (\ )
 
-The level of subdivision to use when automatically generating :ref:`LightmapProbe<class_LightmapProbe>`\ s for dynamic object lighting. Higher values result in more accurate indirect lighting on dynamic objects, at the cost of longer bake times and larger file sizes.
+為動態物件照明自動生成 :ref:`LightmapProbe<class_LightmapProbe>` 時使用的細分級別。較高的值會在動態物件上產生更準確的間接照明，但代價是更長的烘焙時間和更大的檔大小。
 
-\ **Note:** Automatically generated :ref:`LightmapProbe<class_LightmapProbe>`\ s are not visible as nodes in the Scene tree dock, and cannot be modified this way after they are generated.
+\ **注意：**\ 自動生成的 :ref:`LightmapProbe<class_LightmapProbe>`\ ，不作為在場景樹停靠面板中的節點可見，並且生成後無法通過這種方式修改。
 
-\ **Note:** Regardless of :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>`, direct lighting on dynamic objects is always applied using :ref:`Light3D<class_Light3D>` nodes in real-time.
+\ **注意：**\ 不管 :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>`\ ，動態物件上的直接光照，總是使用 :ref:`Light3D<class_Light3D>` 節點即時套用。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ The level of subdivision to use when automatically generating :ref:`LightmapProb
 - |void| **set_interior**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_interior**\ (\ )
 
-If ``true``, ignore environment lighting when baking lightmaps.
+如果為 ``true``\ ，則會在烘焙光照貼圖時忽略環境光照。
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ If ``true``, ignore environment lighting when baking lightmaps.
 - |void| **set_light_data**\ (\ value\: :ref:`LightmapGIData<class_LightmapGIData>`\ )
 - :ref:`LightmapGIData<class_LightmapGIData>` **get_light_data**\ (\ )
 
-The :ref:`LightmapGIData<class_LightmapGIData>` associated to this **LightmapGI** node. This resource is automatically created after baking, and is not meant to be created manually.
+與該 **LightmapGI** 節點關聯的 :ref:`LightmapGIData<class_LightmapGIData>`\ 。該資源是在烘焙後自動建立的，並不意味著要手動建立。
 
 .. rst-class:: classref-item-separator
 
@@ -602,7 +602,7 @@ The :ref:`LightmapGIData<class_LightmapGIData>` associated to this **LightmapGI*
 - |void| **set_max_texture_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_texture_size**\ (\ )
 
-The maximum texture size for the generated texture atlas. Higher values will result in fewer slices being generated, but may not work on all hardware as a result of hardware limitations on texture sizes. Leave :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>` at its default value of ``16384`` if unsure.
+生成的紋理合集的最大紋理大小。更高的值將導致生成的切片更少，但由於硬體對紋理大小的限制，可能無法在所有硬體上工作。如果不確定，請將 :ref:`max_texture_size<class_LightmapGI_property_max_texture_size>` 保留為其預設值 ``16384``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +640,7 @@ To further increase quality, enable :ref:`supersampling<class_LightmapGI_propert
 - |void| **set_shadowmask_mode**\ (\ value\: :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>`\ )
 - :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` **get_shadowmask_mode**\ (\ )
 
-**Experimental:** This property may be changed or removed in future versions.
+**實驗性：** 此屬性可能在未來版本中變更或移除。
 
 The shadowmasking policy to use for directional shadows on static objects that are baked with this **LightmapGI** instance.
 
@@ -722,7 +722,9 @@ For example, doubling :ref:`texel_scale<class_LightmapGI_property_texel_scale>` 
 - |void| **set_use_denoiser**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_denoiser**\ (\ )
 
-If ``true``, uses a GPU-based denoising algorithm on the generated lightmap. This eliminates most noise within the generated lightmap at the cost of longer bake times. File sizes are generally not impacted significantly by the use of a denoiser, although lossless compression may do a better job at compressing a denoised image.
+如果為 ``true``\ ，則在生成的光照貼圖上，使用基於 CPU 的降噪演算法。這以更長的烘焙時間為代價，消除了生成的光照貼圖中的大部分噪點。儘管無失真壓縮在壓縮降噪圖像方面可能做得更好，但使用降噪器通常不會顯著影響檔大小。
+
+\ **注意：**\ 在大場景中對光照貼圖進行降噪時，內建降噪器（OpenImageDenoise）可能會當機。如果在光照貼圖烘焙結束時遇到當機，請嘗試禁用 :ref:`use_denoiser<class_LightmapGI_property_use_denoiser>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -743,12 +745,12 @@ If ``true``, a texture with the lighting information will be generated to speed 
 
 \ **Note:** :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` only has an effect if :ref:`bounces<class_LightmapGI_property_bounces>` is set to a value greater than or equal to ``1``.
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

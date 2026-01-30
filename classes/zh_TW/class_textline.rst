@@ -5,21 +5,21 @@
 TextLine
 ========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Holds a line of text.
+存放一行文字。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Abstraction over :ref:`TextServer<class_TextServer>` for handling a single line of text.
+基於 :ref:`TextServer<class_TextServer>` 的抽象，用於處理單行文字。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -102,8 +102,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_TextLine_property_alignment:
 
@@ -116,7 +116,7 @@ Property Descriptions
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-Sets text alignment within the line as if the line was horizontal.
+設定行內的文字對齊方式，始終按照該行為橫向的情況設定。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ Sets text alignment within the line as if the line was horizontal.
 - |void| **set_direction**\ (\ value\: :ref:`Direction<enum_TextServer_Direction>`\ )
 - :ref:`Direction<enum_TextServer_Direction>` **get_direction**\ (\ )
 
-Text writing direction.
+文字書寫方向。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Ellipsis character used for text clipping.
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\]\ )
 - |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] **get_flags**\ (\ )
 
-Line alignment rules. For more info see :ref:`TextServer<class_TextServer>`.
+行對齊規則。詳細請參閱 :ref:`TextServer<class_TextServer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -184,7 +184,7 @@ Line alignment rules. For more info see :ref:`TextServer<class_TextServer>`.
 - |void| **set_orientation**\ (\ value\: :ref:`Orientation<enum_TextServer_Orientation>`\ )
 - :ref:`Orientation<enum_TextServer_Orientation>` **get_orientation**\ (\ )
 
-Text orientation.
+文字朝向。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Text orientation.
 - |void| **set_preserve_control**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_preserve_control**\ (\ )
 
-If set to ``true`` text will display control characters.
+如果設定為 ``true``\ ，則將在文字中顯示控制字元。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ If set to ``true`` text will display control characters.
 - |void| **set_preserve_invalid**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_preserve_invalid**\ (\ )
 
-If set to ``true`` text will display invalid characters.
+如果設定為 ``true``\ ，則將在文字中顯示無效字元。
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ The clipping behavior when the text exceeds the text line's set width.
 - |void| **set_width**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_width**\ (\ )
 
-Text line width.
+文字行寬。
 
 .. rst-class:: classref-section-separator
 
@@ -260,8 +260,8 @@ Text line width.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_TextLine_method_add_object:
 
@@ -269,7 +269,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **add_object**\ (\ key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, length\: :ref:`int<class_int>` = 1, baseline\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_TextLine_method_add_object>`
 
-Adds inline object to the text buffer, ``key`` must be unique. In the text, object is represented as ``length`` object replacement characters.
+向文字緩衝中新增行內物件，\ ``key`` 必須唯一。在文字中，物件使用 ``length`` 個物件替換字元表示。
 
 .. rst-class:: classref-item-separator
 
@@ -281,7 +281,7 @@ Adds inline object to the text buffer, ``key`` must be unique. In the text, obje
 
 :ref:`bool<class_bool>` **add_string**\ (\ text\: :ref:`String<class_String>`, font\: :ref:`Font<class_Font>`, font_size\: :ref:`int<class_int>`, language\: :ref:`String<class_String>` = "", meta\: :ref:`Variant<class_Variant>` = null\ ) :ref:`🔗<class_TextLine_method_add_string>`
 
-Adds text span and font to draw it.
+新增文字區間以及用於繪製的字形。
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Adds text span and font to draw it.
 
 |void| **clear**\ (\ ) :ref:`🔗<class_TextLine_method_clear>`
 
-Clears text line (removes text and inline objects).
+清除文字行（移除文字和行內物件）。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Returns the text writing direction inferred by the BiDi algorithm.
 
 :ref:`float<class_float>` **get_line_ascent**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_ascent>`
 
-Returns the text ascent (number of pixels above the baseline for horizontal layout or to the left of baseline for vertical).
+返回該文字的升部（水平排版時為基線上方的圖元數，垂直排版時為基線左側的圖元數）。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Returns the text ascent (number of pixels above the baseline for horizontal layo
 
 :ref:`float<class_float>` **get_line_descent**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_descent>`
 
-Returns the text descent (number of pixels below the baseline for horizontal layout or to the right of baseline for vertical).
+返回該文字的降部（水平排版時為基線下方的圖元數，垂直排版時為基線右側的圖元數）。
 
 .. rst-class:: classref-item-separator
 
@@ -377,7 +377,7 @@ Returns the text descent (number of pixels below the baseline for horizontal lay
 
 :ref:`float<class_float>` **get_line_underline_position**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_underline_position>`
 
-Returns pixel offset of the underline below the baseline.
+返回基線下方底線的圖元偏移。
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ Returns pixel offset of the underline below the baseline.
 
 :ref:`float<class_float>` **get_line_underline_thickness**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_underline_thickness>`
 
-Returns thickness of the underline.
+返回底線的粗細度。
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Returns thickness of the underline.
 
 :ref:`float<class_float>` **get_line_width**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_width>`
 
-Returns width (for horizontal layout) or height (for vertical) of the text.
+返回文字的寬度（對於水平排版）或高度（對於垂直排版）。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Returns width (for horizontal layout) or height (for vertical) of the text.
 
 :ref:`Rect2<class_Rect2>` **get_object_rect**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextLine_method_get_object_rect>`
 
-Returns bounding rectangle of the inline object.
+返回行內對象的邊界矩形。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ Returns bounding rectangle of the inline object.
 
 :ref:`Array<class_Array>` **get_objects**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_objects>`
 
-Returns array of inline objects.
+返回行內物件的陣列。
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Returns array of inline objects.
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_rid>`
 
-Returns TextServer buffer RID.
+返回 TextServer 緩衝區 RID。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Returns TextServer buffer RID.
 
 :ref:`Vector2<class_Vector2>` **get_size**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_size>`
 
-Returns size of the bounding box of the text.
+返回文字邊界框的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Returns ``true`` if an object with ``key`` is embedded in this line.
 
 :ref:`int<class_int>` **hit_test**\ (\ coords\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_TextLine_method_hit_test>`
 
-Returns caret character offset at the specified pixel offset at the baseline. This function always returns a valid position.
+返回基線處指定圖元偏移處的文字游標的偏移量。該函式始終返回一個有效位置。
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Returns caret character offset at the specified pixel offset at the baseline. Th
 
 :ref:`bool<class_bool>` **resize_object**\ (\ key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, baseline\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_TextLine_method_resize_object>`
 
-Sets new size and alignment of embedded object.
+設定內嵌物件的新大小和對齊方式。
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ Sets new size and alignment of embedded object.
 
 |void| **set_bidi_override**\ (\ override\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_TextLine_method_set_bidi_override>`
 
-Overrides BiDi for the structured text.
+覆蓋用於結構化文字的 BiDi。
 
-Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
+覆蓋範圍應覆蓋完整的源文字而沒有重疊。BiDi 演算法將分別被用於每個範圍。
 
 .. rst-class:: classref-item-separator
 
@@ -511,14 +511,14 @@ Override ranges should cover full source text without overlaps. BiDi algorithm w
 
 |void| **tab_align**\ (\ tab_stops\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_TextLine_method_tab_align>`
 
-Aligns text to the given tab-stops.
+將文字與給定的定位停駐點對齊。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

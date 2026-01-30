@@ -5,28 +5,28 @@
 CharFXTransform
 ===============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Controls how an individual character will be displayed in a :ref:`RichTextEffect<class_RichTextEffect>`.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-By setting various properties on this object, you can control how individual characters will be displayed in a :ref:`RichTextEffect<class_RichTextEffect>`.
+控制單個字元在 :ref:`RichTextEffect<class_RichTextEffect>` 中的顯示方式。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`BBCode in RichTextLabel <../tutorials/ui/bbcode_in_richtextlabel>`
+通過在此物件上設定各種屬性，可以控制單個字元在 :ref:`RichTextEffect<class_RichTextEffect>` 中的顯示方式。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`RichTextLabel 中的 BBCode <../tutorials/ui/bbcode_in_richtextlabel>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_CharFXTransform_property_color:
 
@@ -79,7 +79,7 @@ Property Descriptions
 - |void| **set_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_color**\ (\ )
 
-The color the character will be drawn with.
+繪製字元所用的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ The color the character will be drawn with.
 - |void| **set_elapsed_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_elapsed_time**\ (\ )
 
-The time elapsed since the :ref:`RichTextLabel<class_RichTextLabel>` was added to the scene tree (in seconds). Time stops when the :ref:`RichTextLabel<class_RichTextLabel>` is paused (see :ref:`Node.process_mode<class_Node_property_process_mode>`). Resets when the text in the :ref:`RichTextLabel<class_RichTextLabel>` is changed.
+自 :ref:`RichTextLabel<class_RichTextLabel>` 被新增到場景樹以來經過的時間（單位：秒）。時間在 :ref:`RichTextLabel<class_RichTextLabel>` 暫停時停止（參見 :ref:`Node.process_mode<class_Node_property_process_mode>`\ ）。在 :ref:`RichTextLabel<class_RichTextLabel>` 中的文字改變時重設。
 
-\ **Note:** Time still passes while the :ref:`RichTextLabel<class_RichTextLabel>` is hidden.
+\ **注意：**\ 當 :ref:`RichTextLabel<class_RichTextLabel>` 被隱藏時，時間仍在流逝。
 
 .. rst-class:: classref-item-separator
 
@@ -115,9 +115,9 @@ The time elapsed since the :ref:`RichTextLabel<class_RichTextLabel>` was added t
 - |void| **set_environment**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_environment**\ (\ )
 
-Contains the arguments passed in the opening BBCode tag. By default, arguments are strings; if their contents match a type such as :ref:`bool<class_bool>`, :ref:`int<class_int>` or :ref:`float<class_float>`, they will be converted automatically. Color codes in the form ``#rrggbb`` or ``#rgb`` will be converted to an opaque :ref:`Color<class_Color>`. String arguments may not contain spaces, even if they're quoted. If present, quotes will also be present in the final string.
+包含在開頭的 BBCode 標記中傳遞的參數。預設情況下，參數是字串。如果它們的內容與 :ref:`bool<class_bool>`\ 、\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>` 之類的型別配對，它們將被自動轉換。格式為 ``#rrggbb`` 或 ``#rgb`` 的顏色程式碼將轉換為不透明的 :ref:`Color<class_Color>`\ 。字串參數即使使用引號也不能包含空格。如果存在，引號也將出現在最終字符串中。
 
-For example, the opening BBCode tag ``[example foo=hello bar=true baz=42 color=#ffffff]`` will map to the following :ref:`Dictionary<class_Dictionary>`:
+例如，開頭的 BBCode 標籤 ``[example foo = hello bar = true baz = 42 color =＃ffffff]`` 將對應到以下 :ref:`Dictionary<class_Dictionary>`\ ：
 
 ::
 
@@ -212,7 +212,7 @@ Glyph index specific to the :ref:`font<class_CharFXTransform_property_font>`. If
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The position offset the character will be drawn with (in pixels).
+繪製字元的位置偏移量（單位：圖元）。
 
 .. rst-class:: classref-item-separator
 
@@ -286,7 +286,7 @@ The character offset of the glyph, relative to the current :ref:`RichTextEffect<
 - |void| **set_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_transform**\ (\ )
 
-The current transform of the current glyph. It can be overridden (for example, by driving the position and rotation from a curve). You can also alter the existing value to apply transforms on top of other effects.
+目前字形的目前變換。它可以被覆寫（例如，透過從曲線驅動位置和旋轉）。您還可以更改現有值以在頂部應用變換其他影響。
 
 .. rst-class:: classref-item-separator
 
@@ -303,14 +303,14 @@ The current transform of the current glyph. It can be overridden (for example, b
 - |void| **set_visibility**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-If ``true``, the character will be drawn. If ``false``, the character will be hidden. Characters around hidden characters will reflow to take the space of hidden characters. If this is not desired, set their :ref:`color<class_CharFXTransform_property_color>` to ``Color(1, 1, 1, 0)`` instead.
+如果為 ``true``\ ，將繪製字元。如果為 ``false``\ ，則隱藏字元。隱藏字元周圍的字元將回流以佔用隱藏字元的空間。如果不希望這樣做，可以將它們的 :ref:`color<class_CharFXTransform_property_color>` 設定為\ ``Color(1, 1, 1, 0)``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

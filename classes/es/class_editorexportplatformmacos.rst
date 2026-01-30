@@ -1267,7 +1267,7 @@ Herramienta a utilizar para notarización.
 
 :ref:`String<class_String>` **privacy/address_book_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>`
 
-A message displayed when requesting access to the user's contacts (in English).
+Un mensaje mostrado al solicitar acceso a los contactos del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -1279,7 +1279,7 @@ A message displayed when requesting access to the user's contacts (in English).
 
 :ref:`Dictionary<class_Dictionary>` **privacy/address_book_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description_localized>`
 
-A message displayed when requesting access to the user's contacts (localized).
+Un mensaje mostrado al solicitar acceso a los contactos del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -1291,7 +1291,7 @@ A message displayed when requesting access to the user's contacts (localized).
 
 :ref:`String<class_String>` **privacy/calendar_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description>`
 
-A message displayed when requesting access to the user's calendar data (in English).
+Un mensaje mostrado al solicitar acceso a los datos del calendario del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -1303,7 +1303,7 @@ A message displayed when requesting access to the user's calendar data (in Engli
 
 :ref:`Dictionary<class_Dictionary>` **privacy/calendar_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/calendar_usage_description_localized>`
 
-A message displayed when requesting access to the user's calendar data (localized).
+Un mensaje mostrado al solicitar acceso a los datos del calendario del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3019,7 +3019,7 @@ Indica si tu aplicación utiliza ID de usuario para realizar seguimiento.
 
 :ref:`String<class_String>` **privacy/desktop_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/desktop_folder_usage_description>`
 
-A message displayed when requesting access to the user's "Desktop" folder (in English).
+Un mensaje mostrado al solicitar acceso a la carpeta "Escritorio" del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -3031,7 +3031,7 @@ A message displayed when requesting access to the user's "Desktop" folder (in En
 
 :ref:`Dictionary<class_Dictionary>` **privacy/desktop_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/desktop_folder_usage_description_localized>`
 
-A message displayed when requesting access to the user's "Desktop" folder (localized).
+Un mensaje mostrado al solicitar acceso a la carpeta "Escritorio" del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3043,7 +3043,7 @@ A message displayed when requesting access to the user's "Desktop" folder (local
 
 :ref:`String<class_String>` **privacy/documents_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/documents_folder_usage_description>`
 
-A message displayed when requesting access to the user's "Documents" folder (in English).
+Un mensaje mostrado al solicitar acceso a la carpeta "Documentos" del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -3055,7 +3055,7 @@ A message displayed when requesting access to the user's "Documents" folder (in 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/documents_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/documents_folder_usage_description_localized>`
 
-A message displayed when requesting access to the user's "Documents" folder (localized).
+Un mensaje mostrado al solicitar acceso a la carpeta "Documentos" del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3067,7 +3067,7 @@ A message displayed when requesting access to the user's "Documents" folder (loc
 
 :ref:`String<class_String>` **privacy/downloads_folder_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/downloads_folder_usage_description>`
 
-A message displayed when requesting access to the user's "Downloads" folder (in English).
+Un mensaje que se muestra al solicitar acceso a la carpeta "Descargas" del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -3079,7 +3079,7 @@ A message displayed when requesting access to the user's "Downloads" folder (in 
 
 :ref:`Dictionary<class_Dictionary>` **privacy/downloads_folder_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/downloads_folder_usage_description_localized>`
 
-A message displayed when requesting access to the user's "Downloads" folder (localized).
+Un mensaje que se muestra al solicitar acceso a la carpeta "Descargas" del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3091,7 +3091,7 @@ A message displayed when requesting access to the user's "Downloads" folder (loc
 
 :ref:`String<class_String>` **privacy/location_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>`
 
-A message displayed when requesting access to the user's location information (in English).
+Un mensaje que se muestra al solicitar acceso a la información de ubicación del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -3103,7 +3103,7 @@ A message displayed when requesting access to the user's location information (i
 
 :ref:`Dictionary<class_Dictionary>` **privacy/location_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/location_usage_description_localized>`
 
-A message displayed when requesting access to the user's location information (localized).
+Un mensaje que se muestra al solicitar acceso a la información de ubicación del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3139,7 +3139,7 @@ Un mensaje que se muestra cuando se solicita acceso al micrófono del dispositiv
 
 :ref:`String<class_String>` **privacy/network_volumes_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/network_volumes_usage_description>`
 
-A message displayed when requesting access to the user's network drives (in English).
+Un mensaje que se muestra al solicitar acceso a las unidades de red del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -3151,7 +3151,7 @@ A message displayed when requesting access to the user's network drives (in Engl
 
 :ref:`Dictionary<class_Dictionary>` **privacy/network_volumes_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/network_volumes_usage_description_localized>`
 
-A message displayed when requesting access to the user's network drives (localized).
+Un mensaje que se muestra al solicitar acceso a las unidades de red del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3187,7 +3187,7 @@ Un mensaje que se muestra cuando se solicita acceso a la biblioteca de fotos del
 
 :ref:`String<class_String>` **privacy/removable_volumes_usage_description** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/removable_volumes_usage_description>`
 
-A message displayed when requesting access to the user's removable drives (in English).
+Un mensaje que se muestra al solicitar acceso a las unidades extraíbles del usuario (en inglés).
 
 .. rst-class:: classref-item-separator
 
@@ -3199,7 +3199,7 @@ A message displayed when requesting access to the user's removable drives (in En
 
 :ref:`Dictionary<class_Dictionary>` **privacy/removable_volumes_usage_description_localized** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/removable_volumes_usage_description_localized>`
 
-A message displayed when requesting access to the user's removable drives (localized).
+Un mensaje que se muestra al solicitar acceso a las unidades extraíbles del usuario (localizado).
 
 .. rst-class:: classref-item-separator
 
@@ -3355,7 +3355,7 @@ The following variables can be used in the script:
 
 :ref:`String<class_String>` **xcode/platform_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/platform_build>`
 
-macOS build number used to build application executable.
+Número de compilación de macOS utilizado para construir el ejecutable de la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -3367,7 +3367,7 @@ macOS build number used to build application executable.
 
 :ref:`String<class_String>` **xcode/sdk_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_build>`
 
-macOS SDK build number used to build application executable.
+Número de compilación del SDK de macOS utilizado para construir el ejecutable de la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -3379,7 +3379,7 @@ macOS SDK build number used to build application executable.
 
 :ref:`String<class_String>` **xcode/sdk_name** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_name>`
 
-macOS SDK name used to build application executable.
+Nombre del SDK de macOS utilizado para construir el ejecutable de la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -3391,7 +3391,7 @@ macOS SDK name used to build application executable.
 
 :ref:`String<class_String>` **xcode/sdk_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/sdk_version>`
 
-macOS SDK version used to build application executable in the ``major.minor`` format.
+Versión del SDK de macOS utilizada para construir el ejecutable de la aplicación en el formato ``major.minor``.
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3403,7 @@ macOS SDK version used to build application executable in the ``major.minor`` fo
 
 :ref:`String<class_String>` **xcode/xcode_build** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/xcode_build>`
 
-Xcode build number used to build application executable.
+Número de compilación de Xcode usado para construir el ejecutable de la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -3415,7 +3415,7 @@ Xcode build number used to build application executable.
 
 :ref:`String<class_String>` **xcode/xcode_version** :ref:`🔗<class_EditorExportPlatformMacOS_property_xcode/xcode_version>`
 
-Xcode version used to build application executable.
+Versión de Xcode usada para construir el ejecutable de la aplicación.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -5,14 +5,14 @@
 WebXRInterface
 ==============
 
-**Inherits:** :ref:`XRInterface<class_XRInterface>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`XRInterface<class_XRInterface>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-XR interface using WebXR.
+使用 WebXR 的 AR/VR 介面。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 WebXR is an open standard that allows creating VR and AR applications that run in the web browser.
 
@@ -114,15 +114,15 @@ You can use both methods to allow your game or app to support a wider or narrowe
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- `How to make a VR game for WebXR with Godot 4 <https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4>`__
+- `如何使用 Godot 4 製作 WebXR 的 VR 遊戲 <https://www.snopekgames.com/tutorial/2023/how-make-vr-game-webxr-godot-4>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -145,8 +145,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -173,8 +173,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_WebXRInterface_signal_display_refresh_rate_changed:
 
@@ -182,7 +182,7 @@ Signals
 
 **display_refresh_rate_changed**\ (\ ) :ref:`🔗<class_WebXRInterface_signal_display_refresh_rate_changed>`
 
-Emitted after the display's refresh rate has changed.
+顯示器的更新率發生改變後觸發。
 
 .. rst-class:: classref-item-separator
 
@@ -194,11 +194,11 @@ Emitted after the display's refresh rate has changed.
 
 **reference_space_reset**\ (\ ) :ref:`🔗<class_WebXRInterface_signal_reference_space_reset>`
 
-Emitted to indicate that the reference space has been reset or reconfigured.
+發射以表明參考空間已被重設或重新配置。
 
-When (or whether) this is emitted depends on the user's browser or device, but may include when the user has changed the dimensions of their play space (which you may be able to access via :ref:`XRInterface.get_play_area()<class_XRInterface_method_get_play_area>`) or pressed/held a button to recenter their position.
+何時（或是否）發射取決於使用者的流覽器或裝置，但可能包括使用者改變了他們的遊戲空間的大小（可以通過 :ref:`XRInterface.get_play_area()<class_XRInterface_method_get_play_area>` 存取），或按下/按住一個按鈕來重新定位他們的位置。
 
-See `WebXR's XRReferenceSpace reset event <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event>`__ for more information.
+有關詳細資訊，請參閱 `WebXR 的 XRReferenceSpace 重設事件 <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpace/reset_event>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ See `WebXR's XRReferenceSpace reset event <https://developer.mozilla.org/en-US/d
 
 **select**\ (\ input_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WebXRInterface_signal_select>`
 
-Emitted after one of the input sources has finished its "primary action".
+某個輸入源完成其“主要動作”後發出。
 
-Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` and :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` to get more information about the input source.
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -224,9 +224,9 @@ Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_sourc
 
 **selectend**\ (\ input_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WebXRInterface_signal_selectend>`
 
-Emitted when one of the input sources has finished its "primary action".
+某個輸入源完成其“主要動作”時發出。
 
-Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` and :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` to get more information about the input source.
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -238,9 +238,9 @@ Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_sourc
 
 **selectstart**\ (\ input_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WebXRInterface_signal_selectstart>`
 
-Emitted when one of the input source has started its "primary action".
+某個輸入源開始其“主要動作”時發出。
 
-Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` and :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` to get more information about the input source.
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +252,9 @@ Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_sourc
 
 **session_ended**\ (\ ) :ref:`🔗<class_WebXRInterface_signal_session_ended>`
 
-Emitted when the user ends the WebXR session (which can be done using UI from the browser or device).
+使用者結束 WebXR 會話時發出（可以使用流覽器或裝置的 UI 結束會話）。
 
-At this point, you should do ``get_viewport().use_xr = false`` to instruct Godot to resume rendering to the screen.
+此時，你應該執行 ``get_viewport().use_xr = false``\ ，讓 Godot 繼續算繪至螢幕。
 
 .. rst-class:: classref-item-separator
 
@@ -266,9 +266,9 @@ At this point, you should do ``get_viewport().use_xr = false`` to instruct Godot
 
 **session_failed**\ (\ message\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebXRInterface_signal_session_failed>`
 
-Emitted by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` if the session fails to start.
+由 :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在該會話啟動失敗時發出。
 
-\ ``message`` may optionally contain an error message from WebXR, or an empty string if no message is available.
+\ ``message`` 可能會包含 WebXR 的錯誤資訊，如果沒有可用資訊則為空字串。
 
 .. rst-class:: classref-item-separator
 
@@ -280,9 +280,9 @@ Emitted by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 
 
 **session_started**\ (\ ) :ref:`🔗<class_WebXRInterface_signal_session_started>`
 
-Emitted by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` if the session is successfully started.
+由 :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 在該會話啟動成功時發出。
 
-At this point, it's safe to do ``get_viewport().use_xr = true`` to instruct Godot to start rendering to the XR device.
+此時，可以安全地執行 ``get_viewport().use_xr = true``\ ，讓 Godot 開始算繪至 XR 裝置。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ At this point, it's safe to do ``get_viewport().use_xr = true`` to instruct Godo
 
 **session_supported**\ (\ session_mode\: :ref:`String<class_String>`, supported\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_WebXRInterface_signal_session_supported>`
 
-Emitted by :ref:`is_session_supported()<class_WebXRInterface_method_is_session_supported>` to indicate if the given ``session_mode`` is supported or not.
+由 :ref:`is_session_supported()<class_WebXRInterface_method_is_session_supported>` 觸發，表示是否支援指定的 ``session_mode``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -306,9 +306,9 @@ Emitted by :ref:`is_session_supported()<class_WebXRInterface_method_is_session_s
 
 **squeeze**\ (\ input_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WebXRInterface_signal_squeeze>`
 
-Emitted after one of the input sources has finished its "primary squeeze action".
+某個輸入源完成其“主要緊握動作”後發出。
 
-Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` and :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` to get more information about the input source.
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -320,9 +320,9 @@ Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_sourc
 
 **squeezeend**\ (\ input_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WebXRInterface_signal_squeezeend>`
 
-Emitted when one of the input sources has finished its "primary squeeze action".
+某個輸入源完成其“主要緊握動作”時發出。
 
-Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` and :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` to get more information about the input source.
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -334,9 +334,9 @@ Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_sourc
 
 **squeezestart**\ (\ input_source_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_WebXRInterface_signal_squeezestart>`
 
-Emitted when one of the input sources has started its "primary squeeze action".
+某個輸入源開始其“主要緊握動作”時發出。
 
-Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` and :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` to get more information about the input source.
+請使用 :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_source_tracker>` 和 :ref:`get_input_source_target_ray_mode()<class_WebXRInterface_method_get_input_source_target_ray_mode>` 獲取關於該輸入源的更多資訊。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Use :ref:`get_input_source_tracker()<class_WebXRInterface_method_get_input_sourc
 
 **visibility_state_changed**\ (\ ) :ref:`🔗<class_WebXRInterface_signal_visibility_state_changed>`
 
-Emitted when :ref:`visibility_state<class_WebXRInterface_property_visibility_state>` has changed.
+當 :ref:`visibility_state<class_WebXRInterface_property_visibility_state>` 已更改時觸發。
 
 .. rst-class:: classref-section-separator
 
@@ -356,8 +356,8 @@ Emitted when :ref:`visibility_state<class_WebXRInterface_property_visibility_sta
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+列舉
+----
 
 .. _enum_WebXRInterface_TargetRayMode:
 
@@ -379,7 +379,7 @@ We don't know the target ray mode.
 
 :ref:`TargetRayMode<enum_WebXRInterface_TargetRayMode>` **TARGET_RAY_MODE_GAZE** = ``1``
 
-Target ray originates at the viewer's eyes and points in the direction they are looking.
+目標射線從觀察者的眼睛出發，指向所觀察的方向。
 
 .. _class_WebXRInterface_constant_TARGET_RAY_MODE_TRACKED_POINTER:
 
@@ -387,7 +387,7 @@ Target ray originates at the viewer's eyes and points in the direction they are 
 
 :ref:`TargetRayMode<enum_WebXRInterface_TargetRayMode>` **TARGET_RAY_MODE_TRACKED_POINTER** = ``2``
 
-Target ray from a handheld pointer, most likely a VR touch controller.
+目標射線由手持指示器發射，很可能是 VR 觸摸控制器。
 
 .. _class_WebXRInterface_constant_TARGET_RAY_MODE_SCREEN:
 
@@ -395,7 +395,7 @@ Target ray from a handheld pointer, most likely a VR touch controller.
 
 :ref:`TargetRayMode<enum_WebXRInterface_TargetRayMode>` **TARGET_RAY_MODE_SCREEN** = ``3``
 
-Target ray from touch screen, mouse or other tactile input device.
+目標射線由觸控式螢幕、滑鼠等觸覺輸入裝置發射。
 
 .. rst-class:: classref-section-separator
 
@@ -403,8 +403,8 @@ Target ray from touch screen, mouse or other tactile input device.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_WebXRInterface_property_enabled_features:
 
@@ -459,9 +459,9 @@ See the MDN documentation on `WebXR's session features <https://developer.mozill
 
 - :ref:`String<class_String>` **get_reference_space_type**\ (\ )
 
-The reference space type (from the list of requested types set in the :ref:`requested_reference_space_types<class_WebXRInterface_property_requested_reference_space_types>` property), that was ultimately used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
+參考空間型別（來自 :ref:`requested_reference_space_types<class_WebXRInterface_property_requested_reference_space_types>` 屬性中設定的請求型別列表），在設定 WebXR 會話時最終由 :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 使用。
 
-Possible values come from `WebXR's XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__. If you want to use a particular reference space type, it must be listed in either :ref:`required_features<class_WebXRInterface_property_required_features>` or :ref:`optional_features<class_WebXRInterface_property_optional_features>`.
+可能的值來自 `WebXR 的 XRReferenceSpaceType <https://developer.mozilla.org/en-US/docs/Web/API/XRReferenceSpaceType>`__\ 。 如果想要使用特定的參考空間型別，則它必須列在 :ref:`required_features<class_WebXRInterface_property_required_features>` 或 :ref:`optional_features<class_WebXRInterface_property_optional_features>` 中。
 
 .. rst-class:: classref-item-separator
 
@@ -524,11 +524,11 @@ See the MDN documentation on `WebXR's session features <https://developer.mozill
 - |void| **set_session_mode**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_session_mode**\ (\ )
 
-The session mode used by :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` when setting up the WebXR session.
+建立 WebXR 會話時，\ :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` 使用的會話模式。
 
-This doesn't have any effect on the interface when already initialized.
+這對已經初始化的介面沒有任何影響。
 
-Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode>`__, including: ``"immersive-vr"``, ``"immersive-ar"``, and ``"inline"``.
+可能的值來自 `WebXR 的 XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode>`__\ ，包括：\ ``"immersive-vr"`` 、\ ``"immersive-ar"`` 和 ``"inline"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -544,9 +544,9 @@ Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/
 
 - :ref:`String<class_String>` **get_visibility_state**\ (\ )
 
-Indicates if the WebXR session's imagery is visible to the user.
+指示使用者是否可以看到 WebXR 會話的圖像。
 
-Possible values come from `WebXR's XRVisibilityState <https://developer.mozilla.org/en-US/docs/Web/API/XRVisibilityState>`__, including ``"hidden"``, ``"visible"``, and ``"visible-blurred"``.
+可能的值來自 `WebXR 的 XRVisibilityState <https://developer.mozilla.org/en-US/docs/Web/API/XRVisibilityState>`__\ ，包括 ``"hidden"``\ 、\ ``"visible"`` 和 ``"visible-blurred"``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -554,8 +554,8 @@ Possible values come from `WebXR's XRVisibilityState <https://developer.mozilla.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_WebXRInterface_method_get_available_display_refresh_rates:
 
@@ -563,7 +563,7 @@ Method Descriptions
 
 :ref:`Array<class_Array>` **get_available_display_refresh_rates**\ (\ ) |const| :ref:`🔗<class_WebXRInterface_method_get_available_display_refresh_rates>`
 
-Returns display refresh rates supported by the current HMD. Only returned if this feature is supported by the web browser and after the interface has been initialized.
+返回目前 HMD 所支援的顯示更新率。網頁流覽器支援該功能，並且該介面已初始化時才會返回。
 
 .. rst-class:: classref-item-separator
 
@@ -575,7 +575,7 @@ Returns display refresh rates supported by the current HMD. Only returned if thi
 
 :ref:`float<class_float>` **get_display_refresh_rate**\ (\ ) |const| :ref:`🔗<class_WebXRInterface_method_get_display_refresh_rate>`
 
-Returns the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It may not report an accurate value until after using :ref:`set_display_refresh_rate()<class_WebXRInterface_method_set_display_refresh_rate>`.
+返回目前 HMD 的顯示更新率。不是所有 HMD 和流覽器都支援。使用 :ref:`set_display_refresh_rate()<class_WebXRInterface_method_set_display_refresh_rate>` 前可能不會彙報精確值。
 
 .. rst-class:: classref-item-separator
 
@@ -587,9 +587,9 @@ Returns the display refresh rate for the current HMD. Not supported on all HMDs 
 
 :ref:`TargetRayMode<enum_WebXRInterface_TargetRayMode>` **get_input_source_target_ray_mode**\ (\ input_source_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WebXRInterface_method_get_input_source_target_ray_mode>`
 
-Returns the target ray mode for the given ``input_source_id``.
+返回給定的 ``input_source_id`` 的目標射線模式。
 
-This can help interpret the input coming from that input source. See `XRInputSource.targetRayMode <https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRayMode>`__ for more information.
+可用於幫助解析來自該輸入源的輸入。詳見 `XRInputSource.targetRayMode <https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource/targetRayMode>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -629,7 +629,7 @@ Use this method to get information about the input source that triggered one of 
 
 :ref:`bool<class_bool>` **is_input_source_active**\ (\ input_source_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WebXRInterface_method_is_input_source_active>`
 
-Returns ``true`` if there is an active input source with the given ``input_source_id``.
+如果存在具有給定 ``input_source_id`` 的活動輸入源，則返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -641,11 +641,11 @@ Returns ``true`` if there is an active input source with the given ``input_sourc
 
 |void| **is_session_supported**\ (\ session_mode\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebXRInterface_method_is_session_supported>`
 
-Checks if the given ``session_mode`` is supported by the user's browser.
+檢查給定的 ``session_mode`` 是否被使用者的流覽器支援。
 
-Possible values come from `WebXR's XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode>`__, including: ``"immersive-vr"``, ``"immersive-ar"``, and ``"inline"``.
+可能的值來自 `WebXR 的 XRSessionMode <https://developer.mozilla.org/en-US/docs/Web/API/XRSessionMode>`__\ ，包括：\ ``"immersive-vr"``\ 、\ ``"immersive-ar"`` 和 ``"inline"``\ 。
 
-This method returns nothing, instead it emits the :ref:`session_supported<class_WebXRInterface_signal_session_supported>` signal with the result.
+此方法不返回任何東西，而是將結果發送給 :ref:`session_supported<class_WebXRInterface_signal_session_supported>` 訊號。
 
 .. rst-class:: classref-item-separator
 
@@ -657,14 +657,14 @@ This method returns nothing, instead it emits the :ref:`session_supported<class_
 
 |void| **set_display_refresh_rate**\ (\ refresh_rate\: :ref:`float<class_float>`\ ) :ref:`🔗<class_WebXRInterface_method_set_display_refresh_rate>`
 
-Sets the display refresh rate for the current HMD. Not supported on all HMDs and browsers. It won't take effect right away until after :ref:`display_refresh_rate_changed<class_WebXRInterface_signal_display_refresh_rate_changed>` is emitted.
+為目前的 HMD 設定螢幕更新率。不是所有 HMD 和流覽器都支援。不會立即生效，發出 :ref:`display_refresh_rate_changed<class_WebXRInterface_signal_display_refresh_rate_changed>` 訊號後才會生效。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

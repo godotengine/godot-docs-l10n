@@ -5,34 +5,34 @@
 GLTFObjectModelProperty
 =======================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Describes how to access a property as defined in the glTF object model.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-GLTFObjectModelProperty defines a mapping between a property in the glTF object model and a NodePath in the Godot scene tree. This can be used to animate properties in a glTF file using the ``KHR_animation_pointer`` extension, or to access them through an engine-agnostic script such as a behavior graph as defined by the ``KHR_interactivity`` extension.
-
-The glTF property is identified by JSON pointer(s) stored in :ref:`json_pointers<class_GLTFObjectModelProperty_property_json_pointers>`, while the Godot property it maps to is defined by :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>`. In most cases :ref:`json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` and :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` will each only have one item, but in some cases a single glTF JSON pointer will map to multiple Godot properties, or a single Godot property will be mapped to multiple glTF JSON pointers, or it might be a many-to-many relationship.
-
-\ :ref:`Expression<class_Expression>` objects can be used to define conversions between the data, such as when glTF defines an angle in radians and Godot uses degrees. The :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>` property defines the type of data stored in the glTF file as defined by the object model, see :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` for possible values.
+描述如何访问 glTF 对象模型中定义的属性。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `GLTF Object Model <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/ObjectModel.adoc>`__
+GLTFObjectModelProperty 定义了 glTF 对象模型中的属性和 Godot 场景树中 NodePath 之间的映射，可以用来使用 ``KHR_animation_pointer`` 扩展对属性进行动画，也可以通过与引擎无关的脚本（例如 ``KHR_interactivity`` 扩展定义的行为图）来访问这些属性。
 
-- `KHR_animation_pointer GLTF extension <https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_animation_pointer>`__
+glTF 属性由 :ref:`json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` 中存储的 JSON 指针标识，对应的 Godot 属性则由 :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` 定义。大多数情况下，\ :ref:`json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` 和 :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` 都只会有一个元素，不过部分情况下一个 glTF JSON 指针也会对应多个 Godot 属性，一个 Godot 属性也可能对应多个 glTF JSON 指针，还可能会存在多对多的关系。
+
+可以使用 :ref:`Expression<class_Expression>` 对象定义数据之间的转换，例如可能 glTF 中定义夹角时使用弧度而 Godot 则使用角度。\ :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>` 属性定义的是 glTF 文件中所存储数据的类型，该类型由对象模型定义，可能的取值见 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `GLTF 对象模型 <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/ObjectModel.adoc>`__
+
+- `KHR_animation_pointer GLTF 扩展 <https://github.com/KhronosGroup/glTF/tree/main/extensions/2.0/Khronos/KHR_animation_pointer>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GLTFObjectModelProperty_GLTFObjectModelType:
 
@@ -94,7 +94,7 @@ enum **GLTFObjectModelType**: :ref:`🔗<enum_GLTFObjectModelProperty_GLTFObject
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_UNKNOWN** = ``0``
 
-Unknown or not set object model type. If the object model type is set to this value, the real type still needs to be determined.
+未知或未设置的对象模型类型。如果将对象模型类型设置为该值，则仍需确定真实类型。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_BOOL:
 
@@ -102,7 +102,7 @@ Unknown or not set object model type. If the object model type is set to this va
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_BOOL** = ``1``
 
-Object model type "bool". Represented in the glTF JSON as a boolean, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "SCALAR". When encoded in an accessor, a value of ``0`` is ``false``, and any other value is ``true``.
+对象模型类型“bool”。在 glTF JSON 中表示为布尔值，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“SCALAR”。在访问器中编码时 ``0`` 表示 ``false``\ ，任何其他值都表示 ``true``\ 。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT:
 
@@ -110,7 +110,7 @@ Object model type "bool". Represented in the glTF JSON as a boolean, and encoded
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT** = ``2``
 
-Object model type "float". Represented in the glTF JSON as a number, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "SCALAR".
+对象模型类型“float”。在 glTF JSON 中表示为数字，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“SCALAR”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT_ARRAY:
 
@@ -118,7 +118,7 @@ Object model type "float". Represented in the glTF JSON as a number, and encoded
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT_ARRAY** = ``3``
 
-Object model type "float\[\]". Represented in the glTF JSON as an array of numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "SCALAR".
+对象模型类型“float\[\]”。在 glTF JSON 中表示为数字数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“SCALAR”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT2:
 
@@ -126,7 +126,7 @@ Object model type "float\[\]". Represented in the glTF JSON as an array of numbe
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT2** = ``4``
 
-Object model type "float2". Represented in the glTF JSON as an array of two numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "VEC2".
+对象模型类型“float2”。在 glTF JSON 中表示为两个数字的数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“VEC2”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT3:
 
@@ -134,7 +134,7 @@ Object model type "float2". Represented in the glTF JSON as an array of two numb
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT3** = ``5``
 
-Object model type "float3". Represented in the glTF JSON as an array of three numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "VEC3".
+对象模型类型“float3”。在 glTF JSON 中表示为三个数字的数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“VEC3”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT4:
 
@@ -142,7 +142,7 @@ Object model type "float3". Represented in the glTF JSON as an array of three nu
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT4** = ``6``
 
-Object model type "float4". Represented in the glTF JSON as an array of four numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "VEC4".
+对象模型类型“float4”。在 glTF JSON 中表示为四个数字的数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“VEC4”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT2X2:
 
@@ -150,7 +150,7 @@ Object model type "float4". Represented in the glTF JSON as an array of four num
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT2X2** = ``7``
 
-Object model type "float2x2". Represented in the glTF JSON as an array of four numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "MAT2".
+对象模型类型“float2x2”。在 glTF JSON 中表示为四个数字的数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“MAT2”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT3X3:
 
@@ -158,7 +158,7 @@ Object model type "float2x2". Represented in the glTF JSON as an array of four n
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT3X3** = ``8``
 
-Object model type "float3x3". Represented in the glTF JSON as an array of nine numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "MAT3".
+对象模型类型“float3x3”。在 glTF JSON 中表示为九个数字的数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“MAT3”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_FLOAT4X4:
 
@@ -166,7 +166,7 @@ Object model type "float3x3". Represented in the glTF JSON as an array of nine n
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_FLOAT4X4** = ``9``
 
-Object model type "float4x4". Represented in the glTF JSON as an array of sixteen numbers, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "MAT4".
+对象模型类型“float4x4”。在 glTF JSON 中表示为十六个数字的数组，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“MAT4”。
 
 .. _class_GLTFObjectModelProperty_constant_GLTF_OBJECT_MODEL_TYPE_INT:
 
@@ -174,7 +174,7 @@ Object model type "float4x4". Represented in the glTF JSON as an array of sixtee
 
 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **GLTF_OBJECT_MODEL_TYPE_INT** = ``10``
 
-Object model type "int". Represented in the glTF JSON as a number, and encoded in a :ref:`GLTFAccessor<class_GLTFAccessor>` as "SCALAR". The range of values is limited to signed integers. For ``KHR_interactivity``, only 32-bit integers are supported.
+对象模型类型“int”。在 glTF JSON 中表示为数字，在 :ref:`GLTFAccessor<class_GLTFAccessor>` 中编码为“SCALAR”。取值范围仅限于有符号整数。\ ``KHR_interactivity`` 仅支持 32 位整数。
 
 .. rst-class:: classref-section-separator
 
@@ -182,8 +182,8 @@ Object model type "int". Represented in the glTF JSON as a number, and encoded i
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GLTFObjectModelProperty_property_gltf_to_godot_expression:
 
@@ -196,7 +196,7 @@ Property Descriptions
 - |void| **set_gltf_to_godot_expression**\ (\ value\: :ref:`Expression<class_Expression>`\ )
 - :ref:`Expression<class_Expression>` **get_gltf_to_godot_expression**\ (\ )
 
-If set, this :ref:`Expression<class_Expression>` will be used to convert the property value from the glTF object model to the value expected by the Godot property. This is useful when the glTF object model uses a different unit system, or when the data needs to be transformed in some way. If ``null``, the value will be copied as-is.
+如果设置了该 :ref:`Expression<class_Expression>`\ ，则会用来将 glTF 对象模型中的属性值转换为 Godot 属性所需的值。适用于 glTF 对象模型使用不同的单位系统，以及数据需要以某种方式进行转换的场合。如果为 ``null``\ ，则会原样复制属性值。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ If set, this :ref:`Expression<class_Expression>` will be used to convert the pro
 - |void| **set_godot_to_gltf_expression**\ (\ value\: :ref:`Expression<class_Expression>`\ )
 - :ref:`Expression<class_Expression>` **get_godot_to_gltf_expression**\ (\ )
 
-If set, this :ref:`Expression<class_Expression>` will be used to convert the property value from the Godot property to the value expected by the glTF object model. This is useful when the glTF object model uses a different unit system, or when the data needs to be transformed in some way. If ``null``, the value will be copied as-is.
+如果设置了该 :ref:`Expression<class_Expression>`\ ，则会用来将 Godot 属性中的属性值转换为 glTF 对象模型所需的值。适用于 glTF 对象模型使用不同的单位系统，以及数据需要以某种方式进行转换的场合。如果为 ``null``\ ，则会原样复制属性值。
 
 .. rst-class:: classref-item-separator
 
@@ -230,7 +230,7 @@ If set, this :ref:`Expression<class_Expression>` will be used to convert the pro
 - |void| **set_json_pointers**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`PackedStringArray<class_PackedStringArray>`\] **get_json_pointers**\ (\ )
 
-The glTF object model JSON pointers used to identify the property in the glTF object model. In most cases, there will be only one item in this array, but specific cases may require multiple pointers. The items are themselves arrays which represent the JSON pointer split into its components.
+用于在 glTF 对象模型中标识属性的 glTF 对象模型 JSON 指针。大多数情况下该数组中只有一个元素，但某些特定情况可能需要多个指针。这些元素本身也是数组，表示将 JSON 指针拆分成组件。
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ The glTF object model JSON pointers used to identify the property in the glTF ob
 - |void| **set_node_paths**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`NodePath<class_NodePath>`\] **get_node_paths**\ (\ )
 
-An array of :ref:`NodePath<class_NodePath>`\ s that point to a property, or multiple properties, in the Godot scene tree. On import, this will either be set by :ref:`GLTFDocument<class_GLTFDocument>`, or by a :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` class. For simple cases, use :ref:`append_path_to_property()<class_GLTFObjectModelProperty_method_append_path_to_property>` to add properties to this array.
+指向 Godot 场景树中一个或多个属性的 :ref:`NodePath<class_NodePath>` 数组。导入时由 :ref:`GLTFDocument<class_GLTFDocument>` 或 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类设置。简单情况可以使用 :ref:`append_path_to_property()<class_GLTFObjectModelProperty_method_append_path_to_property>` 将属性添加到该数组中。
 
-In most cases :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` will only have one item, but in some cases a single glTF JSON pointer will map to multiple Godot properties. For example, a :ref:`GLTFCamera<class_GLTFCamera>` or :ref:`GLTFLight<class_GLTFLight>` used on multiple glTF nodes will be represented by multiple Godot nodes.
+大多数情况下 :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` 只会有一个元素，但在某些情况下，单个 glTF JSON 指针可能映射到多个 Godot 属性。例如多个 glTF 节点上使用的同一个 :ref:`GLTFCamera<class_GLTFCamera>` 或 :ref:`GLTFLight<class_GLTFLight>` 会表示为多个 Godot 节点。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ In most cases :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths
 - |void| **set_object_model_type**\ (\ value\: :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>`\ )
 - :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` **get_object_model_type**\ (\ )
 
-The type of data stored in the glTF file as defined by the object model. This is a superset of the available accessor types, and determines the accessor type.
+根据对象模型定义，存储在 glTF 文件中的数据类型。这是可用访问器类型的超集，决定了访问器类型。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ The type of data stored in the glTF file as defined by the object model. This is
 - |void| **set_variant_type**\ (\ value\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ )
 - :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` **get_variant_type**\ (\ )
 
-The type of data stored in the Godot property. This is the type of the property that the :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` point to.
+存储在 Godot 属性中的数据类型。这是 :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` 指向的属性类型。
 
 .. rst-class:: classref-section-separator
 
@@ -291,8 +291,8 @@ The type of data stored in the Godot property. This is the type of the property 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GLTFObjectModelProperty_method_append_node_path:
 
@@ -300,7 +300,7 @@ Method Descriptions
 
 |void| **append_node_path**\ (\ node_path\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_GLTFObjectModelProperty_method_append_node_path>`
 
-Appends a :ref:`NodePath<class_NodePath>` to :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>`. This can be used by :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes to define how a glTF object model property maps to a Godot property, or multiple Godot properties. Prefer using :ref:`append_path_to_property()<class_GLTFObjectModelProperty_method_append_path_to_property>` for simple cases. Be sure to also call :ref:`set_types()<class_GLTFObjectModelProperty_method_set_types>` once (the order does not matter).
+将一个 :ref:`NodePath<class_NodePath>` 附加到 :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>`\ 。\ :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类可以用它来定义如何将 glTF 对象模型属性映射到一个或或多个 Godot 属性。简单情况建议使用 :ref:`append_path_to_property()<class_GLTFObjectModelProperty_method_append_path_to_property>`\ 。请记得再调用一次 :ref:`set_types()<class_GLTFObjectModelProperty_method_set_types>`\ （顺序无关紧要）。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Appends a :ref:`NodePath<class_NodePath>` to :ref:`node_paths<class_GLTFObjectMo
 
 |void| **append_path_to_property**\ (\ node_path\: :ref:`NodePath<class_NodePath>`, prop_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_GLTFObjectModelProperty_method_append_path_to_property>`
 
-High-level wrapper over :ref:`append_node_path()<class_GLTFObjectModelProperty_method_append_node_path>` that handles the most common cases. It constructs a new :ref:`NodePath<class_NodePath>` using ``node_path`` as a base and appends ``prop_name`` to the subpath. Be sure to also call :ref:`set_types()<class_GLTFObjectModelProperty_method_set_types>` once (the order does not matter).
+对 :ref:`append_node_path()<class_GLTFObjectModelProperty_method_append_node_path>` 的高阶封装，能够处理最常见的情况。它会使用 ``node_path`` 作为基础构造一个新的 :ref:`NodePath<class_NodePath>`\ ，并将 ``prop_name`` 附加到子路径上。请确保再调用一次 :ref:`set_types()<class_GLTFObjectModelProperty_method_set_types>`\ （顺序无关紧要）。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ High-level wrapper over :ref:`append_node_path()<class_GLTFObjectModelProperty_m
 
 :ref:`GLTFAccessorType<enum_GLTFAccessor_GLTFAccessorType>` **get_accessor_type**\ (\ ) |const| :ref:`🔗<class_GLTFObjectModelProperty_method_get_accessor_type>`
 
-The GLTF accessor type associated with this property's :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>`. See :ref:`GLTFAccessor.accessor_type<class_GLTFAccessor_property_accessor_type>` for possible values, and see :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>` for how the object model type maps to accessor types.
+与该属性的 :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>` 关联的 GLTF 访问器类型。可能的值见 :ref:`GLTFAccessor.accessor_type<class_GLTFAccessor_property_accessor_type>`\ ，对象模型类型与访问器类型之间的映射见 :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ The GLTF accessor type associated with this property's :ref:`object_model_type<c
 
 :ref:`bool<class_bool>` **has_json_pointers**\ (\ ) |const| :ref:`🔗<class_GLTFObjectModelProperty_method_has_json_pointers>`
 
-Returns ``true`` if :ref:`json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` is not empty. This is used during export to determine if a **GLTFObjectModelProperty** can handle converting a Godot property to a glTF object model property.
+如果 :ref:`json_pointers<class_GLTFObjectModelProperty_property_json_pointers>` 非空则返回 ``true``\ 。用于在导出过程中确定 **GLTFObjectModelProperty** 是否能够处理将 Godot 属性转换为 glTF 对象模型属性。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Returns ``true`` if :ref:`json_pointers<class_GLTFObjectModelProperty_property_j
 
 :ref:`bool<class_bool>` **has_node_paths**\ (\ ) |const| :ref:`🔗<class_GLTFObjectModelProperty_method_has_node_paths>`
 
-Returns ``true`` if :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` is not empty. This is used during import to determine if a **GLTFObjectModelProperty** can handle converting a glTF object model property to a Godot property.
+如果 :ref:`node_paths<class_GLTFObjectModelProperty_property_node_paths>` 非空则返回 ``true``\ 。用于在导入过程中确定 **GLTFObjectModelProperty** 是否能够处理将 glTF 对象模型属性转换为 Godot 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -360,14 +360,14 @@ Returns ``true`` if :ref:`node_paths<class_GLTFObjectModelProperty_property_node
 
 |void| **set_types**\ (\ variant_type\: :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`, obj_model_type\: :ref:`GLTFObjectModelType<enum_GLTFObjectModelProperty_GLTFObjectModelType>`\ ) :ref:`🔗<class_GLTFObjectModelProperty_method_set_types>`
 
-Sets the :ref:`variant_type<class_GLTFObjectModelProperty_property_variant_type>` and :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>` properties. This is a convenience method to set both properties at once, since they are almost always known at the same time. This method should be called once. Calling it again with the same values will have no effect.
+设置 :ref:`variant_type<class_GLTFObjectModelProperty_property_variant_type>` 和 :ref:`object_model_type<class_GLTFObjectModelProperty_property_object_model_type>` 属性。这是用来同时设置这两个属性的便捷方法，因为两者几乎都是一起确定的。该方法只应该调用一次。再次使用相同的值调用没有效果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

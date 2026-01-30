@@ -5,30 +5,30 @@
 AStar2D
 =======
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An implementation of A\* for finding the shortest path between two vertices on a connected graph in 2D space.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-An implementation of the A\* algorithm, used to find the shortest path between two vertices on a connected graph in 2D space.
-
-See :ref:`AStar3D<class_AStar3D>` for a more thorough explanation on how to use this class. **AStar2D** is a wrapper for :ref:`AStar3D<class_AStar3D>` that enforces 2D coordinates.
+A\* 的一种实现，用于查找 2D 空间中连通图上两个顶点之间的最短路径。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `Grid-based Navigation with AStarGrid2D Demo <https://godotengine.org/asset-library/asset/2723>`__
+A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶点之间的最短路径。
+
+有关如何使用该类的更详尽的解释，请参阅 :ref:`AStar3D<class_AStar3D>`\ 。\ **AStar2D** 是 :ref:`AStar3D<class_AStar3D>` 的包装器，它强制执行 2D 坐标。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `AStarGrid2D 的网格导航演示 <https://godotengine.org/asset-library/asset/2723>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -39,8 +39,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -105,8 +105,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AStar2D_property_neighbor_filter_enabled:
 
@@ -119,7 +119,7 @@ Property Descriptions
 - |void| **set_neighbor_filter_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_neighbor_filter_enabled**\ (\ )
 
-If ``true`` enables the filtering of neighbors via :ref:`_filter_neighbor()<class_AStar2D_private_method__filter_neighbor>`.
+如果为 ``true``\ ，则启用通过 :ref:`_filter_neighbor()<class_AStar2D_private_method__filter_neighbor>` 过滤邻接点。
 
 .. rst-class:: classref-section-separator
 
@@ -127,8 +127,8 @@ If ``true`` enables the filtering of neighbors via :ref:`_filter_neighbor()<clas
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AStar2D_private_method__compute_cost:
 
@@ -136,9 +136,9 @@ Method Descriptions
 
 :ref:`float<class_float>` **_compute_cost**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AStar2D_private_method__compute_cost>`
 
-Called when computing the cost between two connected points.
+计算两个连接点之间的成本时调用。
 
-Note that this function is hidden in the default **AStar2D** class.
+请注意，这个函数在默认的 **AStar2D** 类中是隐藏的。
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +150,9 @@ Note that this function is hidden in the default **AStar2D** class.
 
 :ref:`float<class_float>` **_estimate_cost**\ (\ from_id\: :ref:`int<class_int>`, end_id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AStar2D_private_method__estimate_cost>`
 
-Called when estimating the cost between a point and the path's ending point.
+估算某个点和路径终点之间的成本时调用。
 
-Note that this function is hidden in the default **AStar2D** class.
+请注意，这个函数在默认的 **AStar2D** 类中是隐藏的。
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ Note that this function is hidden in the default **AStar2D** class.
 
 :ref:`bool<class_bool>` **_filter_neighbor**\ (\ from_id\: :ref:`int<class_int>`, neighbor_id\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_AStar2D_private_method__filter_neighbor>`
 
-Called when neighboring enters processing and if :ref:`neighbor_filter_enabled<class_AStar2D_property_neighbor_filter_enabled>` is ``true``. If ``true`` is returned the point will not be processed.
+进入邻接处理且 :ref:`neighbor_filter_enabled<class_AStar2D_property_neighbor_filter_enabled>` 为 ``true`` 时调用。如果返回 ``true``\ ，则不会处理对应的点。
 
-Note that this function is hidden in the default **AStar2D** class.
+请注意，这个函数在默认的 **AStar2D** 类中是隐藏的。
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ Note that this function is hidden in the default **AStar2D** class.
 
 |void| **add_point**\ (\ id\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`, weight_scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_AStar2D_method_add_point>`
 
-Adds a new point at the given position with the given identifier. The ``id`` must be 0 or larger, and the ``weight_scale`` must be 0.0 or greater.
+在具有给定标识符的给定位置添加一个新点。\ ``id`` 必须为 0 或更大，\ ``weight_scale`` 必须为 0.0 或更大。
 
-The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` when determining the overall cost of traveling across a segment from a neighboring point to this point. Thus, all else being equal, the algorithm prefers points with lower ``weight_scale``\ s to form a path.
+在确定从相邻点到此点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` 的结果。因此，在其他条件相同的情况下，算法优先选择 ``weight_scale`` 较低的点来形成路径。
 
 
 .. tabs::
@@ -188,16 +188,16 @@ The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_
  .. code-tab:: gdscript
 
     var astar = AStar2D.new()
-    astar.add_point(1, Vector2(1, 0), 4) # Adds the point (1, 0) with weight_scale 4 and id 1
+    astar.add_point(1, Vector2(1, 0), 4) # 添加点 (1, 0)、权重为 4、ID 为 1
 
  .. code-tab:: csharp
 
     var astar = new AStar2D();
-    astar.AddPoint(1, new Vector2(1, 0), 4); // Adds the point (1, 0) with weight_scale 4 and id 1
+    astar.AddPoint(1, new Vector2(1, 0), 4); // 添加点 (1, 0)、权重为 4、ID 为 1
 
 
 
-If there already exists a point for the given ``id``, its position and weight scale are updated to the given values.
+如果已经存在一个给定 ``id`` 的点，则它的位置和权重缩放将被更新为给定值。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ If there already exists a point for the given ``id``, its position and weight sc
 
 :ref:`bool<class_bool>` **are_points_connected**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_AStar2D_method_are_points_connected>`
 
-Returns whether there is a connection/segment between the given points. If ``bidirectional`` is ``false``, returns whether movement from ``id`` to ``to_id`` is possible through this segment.
+返回两个给定点之间是否存在连接/线段。如果 ``bidirectional`` 为 ``false``\ ，则返回是否可以通过此段从 ``id`` 移动到 ``to_id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ Returns whether there is a connection/segment between the given points. If ``bid
 
 |void| **clear**\ (\ ) :ref:`🔗<class_AStar2D_method_clear>`
 
-Clears all the points and segments.
+清除所有点和线段。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Clears all the points and segments.
 
 |void| **connect_points**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar2D_method_connect_points>`
 
-Creates a segment between the given points. If ``bidirectional`` is ``false``, only movement from ``id`` to ``to_id`` is allowed, not the reverse direction.
+在给定的点之间创建一个线段。如果 ``bidirectional`` 为 ``false``\ ，则只允许从 ``id`` 到 ``to_id`` 的移动，而不允许反向移动。
 
 
 .. tabs::
@@ -264,7 +264,7 @@ Creates a segment between the given points. If ``bidirectional`` is ``false``, o
 
 |void| **disconnect_points**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar2D_method_disconnect_points>`
 
-Deletes the segment between the given points. If ``bidirectional`` is ``false``, only movement from ``id`` to ``to_id`` is prevented, and a unidirectional segment possibly remains.
+删除给定点之间的线段。如果 ``bidirectional`` 为 ``false``\ ，则仅阻止从 ``id`` 到 ``to_id`` 的移动，并且可能会保留一个单向线段。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Deletes the segment between the given points. If ``bidirectional`` is ``false``,
 
 :ref:`int<class_int>` **get_available_point_id**\ (\ ) |const| :ref:`🔗<class_AStar2D_method_get_available_point_id>`
 
-Returns the next available point ID with no point associated to it.
+返回下一个没有关联点的可用点 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -288,9 +288,9 @@ Returns the next available point ID with no point associated to it.
 
 :ref:`int<class_int>` **get_closest_point**\ (\ to_position\: :ref:`Vector2<class_Vector2>`, include_disabled\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_AStar2D_method_get_closest_point>`
 
-Returns the ID of the closest point to ``to_position``, optionally taking disabled points into account. Returns ``-1`` if there are no points in the points pool.
+返回距离 ``to_position`` 最近的点的 ID，可以选择将禁用的点考虑在内。如果点池中没有点，则返回 ``-1``\ 。
 
-\ **Note:** If several points are the closest to ``to_position``, the one with the smallest ID will be returned, ensuring a deterministic result.
+\ **注意：**\ 如果有多个点距离 ``to_position`` 最近，则返回 ID 最小的那个点，以保证结果的确定性。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +302,7 @@ Returns the ID of the closest point to ``to_position``, optionally taking disabl
 
 :ref:`Vector2<class_Vector2>` **get_closest_position_in_segment**\ (\ to_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_AStar2D_method_get_closest_position_in_segment>`
 
-Returns the closest position to ``to_position`` that resides inside a segment between two connected points.
+返回最接近 ``to_position`` 的位置，该位置位于两个连接点之间的线段内。
 
 
 .. tabs::
@@ -313,7 +313,7 @@ Returns the closest position to ``to_position`` that resides inside a segment be
     astar.add_point(1, Vector2(0, 0))
     astar.add_point(2, Vector2(0, 5))
     astar.connect_points(1, 2)
-    var res = astar.get_closest_position_in_segment(Vector2(3, 3)) # Returns (0, 3)
+    var res = astar.get_closest_position_in_segment(Vector2(3, 3)) # 返回 (0, 3)
 
  .. code-tab:: csharp
 
@@ -321,11 +321,11 @@ Returns the closest position to ``to_position`` that resides inside a segment be
     astar.AddPoint(1, new Vector2(0, 0));
     astar.AddPoint(2, new Vector2(0, 5));
     astar.ConnectPoints(1, 2);
-    Vector2 res = astar.GetClosestPositionInSegment(new Vector2(3, 3)); // Returns (0, 3)
+    Vector2 res = astar.GetClosestPositionInSegment(new Vector2(3, 3)); // 返回 (0, 3)
 
 
 
-The result is in the segment that goes from ``y = 0`` to ``y = 5``. It's the closest position in the segment to the given point.
+结果位于从 ``y = 0`` 到 ``y = 5`` 的线段中。它是线段中距给定点最近的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -337,13 +337,13 @@ The result is in the segment that goes from ``y = 0`` to ``y = 5``. It's the clo
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_id_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_id_path>`
 
-Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+返回一个数组，其中包含构成由 AStar2D 在给定点之间找到的路径的点的 ID。数组从路径的起点到终点进行排序。
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+如果 ``from_id`` 点被禁用，则返回一个空数组（即使 ``from_id == to_id``\ ）。
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+如果 ``from_id`` 点未被禁用，没有能够到达目标的有效路径，并且 ``allow_partial_path`` 为\ ``true``\ ，则返回能够到达的最接近目标点的路径。
 
-\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
+\ **注意：**\ 如果 ``allow_partial_path`` 为 ``true`` 并且 ``to_id`` 处于禁用状态，搜索耗时可能异常地大。
 
 
 .. tabs::
@@ -352,7 +352,7 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
 
     var astar = AStar2D.new()
     astar.add_point(1, Vector2(0, 0))
-    astar.add_point(2, Vector2(0, 1), 1) # Default weight is 1
+    astar.add_point(2, Vector2(0, 1), 1) # 默认权重为 1
     astar.add_point(3, Vector2(1, 1))
     astar.add_point(4, Vector2(2, 0))
 
@@ -361,13 +361,13 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
     astar.connect_points(4, 3, false)
     astar.connect_points(1, 4, false)
 
-    var res = astar.get_id_path(1, 3) # Returns [1, 2, 3]
+    var res = astar.get_id_path(1, 3) # 返回 [1, 2, 3]
 
  .. code-tab:: csharp
 
     var astar = new AStar2D();
     astar.AddPoint(1, new Vector2(0, 0));
-    astar.AddPoint(2, new Vector2(0, 1), 1); // Default weight is 1
+    astar.AddPoint(2, new Vector2(0, 1), 1); // 默认权重为 1
     astar.AddPoint(3, new Vector2(1, 1));
     astar.AddPoint(4, new Vector2(2, 0));
 
@@ -375,11 +375,11 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
     astar.ConnectPoints(2, 3, false);
     astar.ConnectPoints(4, 3, false);
     astar.ConnectPoints(1, 4, false);
-    long[] res = astar.GetIdPath(1, 3); // Returns [1, 2, 3]
+    long[] res = astar.GetIdPath(1, 3); // 返回 [1, 2, 3]
 
 
 
-If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]`` instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.
+如果将第 2 个点的权重更改为 3，则结果将改为 ``[1, 4, 3]``\ ，因为现在即使距离更长，通过第 4 点也比通过第 2 点“更容易”。
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]``
 
 :ref:`int<class_int>` **get_point_capacity**\ (\ ) |const| :ref:`🔗<class_AStar2D_method_get_point_capacity>`
 
-Returns the capacity of the structure backing the points, useful in conjunction with :ref:`reserve_space()<class_AStar2D_method_reserve_space>`.
+该函数返回支持点的数据结构的容量，可以与 :ref:`reserve_space()<class_AStar2D_method_reserve_space>` 方法一起使用。
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Returns the capacity of the structure backing the points, useful in conjunction 
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_point_connections**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar2D_method_get_point_connections>`
 
-Returns an array with the IDs of the points that form the connection with the given point.
+返回一个数组，其中包含与给定点形成连接的点的 ID。
 
 
 .. tabs::
@@ -419,7 +419,7 @@ Returns an array with the IDs of the points that form the connection with the gi
     astar.connect_points(1, 2, true)
     astar.connect_points(1, 3, true)
 
-    var neighbors = astar.get_point_connections(1) # Returns [2, 3]
+    var neighbors = astar.get_point_connections(1) # 返回 [2, 3]
 
  .. code-tab:: csharp
 
@@ -432,7 +432,7 @@ Returns an array with the IDs of the points that form the connection with the gi
     astar.ConnectPoints(1, 2, true);
     astar.ConnectPoints(1, 3, true);
 
-    long[] neighbors = astar.GetPointConnections(1); // Returns [2, 3]
+    long[] neighbors = astar.GetPointConnections(1); // 返回 [2, 3]
 
 
 
@@ -446,7 +446,7 @@ Returns an array with the IDs of the points that form the connection with the gi
 
 :ref:`int<class_int>` **get_point_count**\ (\ ) |const| :ref:`🔗<class_AStar2D_method_get_point_count>`
 
-Returns the number of points currently in the points pool.
+返回点池中当前的点数。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Returns the number of points currently in the points pool.
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_point_ids**\ (\ ) :ref:`🔗<class_AStar2D_method_get_point_ids>`
 
-Returns an array of all point IDs.
+返回所有点 ID 的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -470,15 +470,15 @@ Returns an array of all point IDs.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_point_path>`
 
-Returns an array with the points that are in the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+返回一个数组，其中包含 AStar2D 在给定点之间找到的路径中的点。数组从路径的起点到终点进行排序。
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+如果 ``from_id`` 点被禁用，则返回一个空数组（即使 ``from_id == to_id``\ ）。
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+如果 ``from_id`` 点未被禁用，没有通往目标的有效路径并且 ``allow_partial_path`` 为 ``true``\ ，则会返回通往距离目标最近的可达点的路径。
 
-\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+\ **注意：**\ 该方法不是线程安全的，同一时间只能有一个 :ref:`Thread<class_Thread>` 使用。请考虑使用 :ref:`Mutex<class_Mutex>` 来确保线程独占访问，避免竞态条件。
 
-Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
+另外，如果 ``allow_partial_path`` 为 ``true`` 并且 ``to_id`` 处于禁用状态，搜索耗时可能异常地大。
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled 
 
 :ref:`Vector2<class_Vector2>` **get_point_position**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar2D_method_get_point_position>`
 
-Returns the position of the point associated with the given ``id``.
+返回与给定 ``id`` 相关联的点的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -502,7 +502,7 @@ Returns the position of the point associated with the given ``id``.
 
 :ref:`float<class_float>` **get_point_weight_scale**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar2D_method_get_point_weight_scale>`
 
-Returns the weight scale of the point associated with the given ``id``.
+返回与给定 ``id`` 关联的点的权重比例。
 
 .. rst-class:: classref-item-separator
 
@@ -514,7 +514,7 @@ Returns the weight scale of the point associated with the given ``id``.
 
 :ref:`bool<class_bool>` **has_point**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar2D_method_has_point>`
 
-Returns whether a point associated with the given ``id`` exists.
+返回与给定 ``id`` 相关联的点是否存在。
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Returns whether a point associated with the given ``id`` exists.
 
 :ref:`bool<class_bool>` **is_point_disabled**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStar2D_method_is_point_disabled>`
 
-Returns whether a point is disabled or not for pathfinding. By default, all points are enabled.
+返回用于寻路时点是否被禁用。默认情况下，所有点均被启用。
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ Returns whether a point is disabled or not for pathfinding. By default, all poin
 
 |void| **remove_point**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar2D_method_remove_point>`
 
-Removes the point associated with the given ``id`` from the points pool.
+从点池中移除与给定 ``id`` 关联的点。
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Removes the point associated with the given ``id`` from the points pool.
 
 |void| **reserve_space**\ (\ num_nodes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar2D_method_reserve_space>`
 
-Reserves space internally for ``num_nodes`` points. Useful if you're adding a known large number of points at once, such as points on a grid.
+在内部预留 ``num_nodes`` 个点的空间。适用于需要一次性添加大量已知数量的点的情况，例如添加网格上的点。
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ Reserves space internally for ``num_nodes`` points. Useful if you're adding a kn
 
 |void| **set_point_disabled**\ (\ id\: :ref:`int<class_int>`, disabled\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar2D_method_set_point_disabled>`
 
-Disables or enables the specified point for pathfinding. Useful for making a temporary obstacle.
+用于寻路时禁用或启用指定的点。适用于制作临时障碍物。
 
 .. rst-class:: classref-item-separator
 
@@ -574,7 +574,7 @@ Disables or enables the specified point for pathfinding. Useful for making a tem
 
 |void| **set_point_position**\ (\ id\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AStar2D_method_set_point_position>`
 
-Sets the ``position`` for the point with the given ``id``.
+为具有给定 ``id`` 的点设置位置 ``position``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -586,14 +586,14 @@ Sets the ``position`` for the point with the given ``id``.
 
 |void| **set_point_weight_scale**\ (\ id\: :ref:`int<class_int>`, weight_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AStar2D_method_set_point_weight_scale>`
 
-Sets the ``weight_scale`` for the point with the given ``id``. The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` when determining the overall cost of traveling across a segment from a neighboring point to this point.
+为给定的 ``id`` 的点设置 ``weight_scale``\ 。在确定从邻接点到这个点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` 的结果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

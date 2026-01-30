@@ -5,25 +5,23 @@
 MethodTweener
 =============
 
-**Inherits:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Interpolates an abstract value and supplies it to a method called over time.
+對抽象值進行插值，並將其提供給一個持續呼叫的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-**MethodTweener** is similar to a combination of :ref:`CallbackTweener<class_CallbackTweener>` and :ref:`PropertyTweener<class_PropertyTweener>`. It calls a method providing an interpolated value as a parameter. See :ref:`Tween.tween_method()<class_Tween_method_tween_method>` for more usage information.
+**MethodTweener** 類似於 :ref:`CallbackTweener<class_CallbackTweener>` 和 :ref:`PropertyTweener<class_PropertyTweener>` 的組合，會將插值後的值作為呼叫方法時的參數。更多用法資訊請參閱 :ref:`Tween.tween_method()<class_Tween_method_tween_method>`\ 。
 
-The tweener will finish automatically if the callback's target object is freed.
-
-\ **Note:** :ref:`Tween.tween_method()<class_Tween_method_tween_method>` is the only correct way to create **MethodTweener**. Any **MethodTweener** created manually will not function correctly.
+\ **注意：**\ 建立 **MethodTweener** 的唯一正確方法是 :ref:`Tween.tween_method()<class_Tween_method_tween_method>`\ 。任何手動建立的 **MethodTweener** 都無法正常工作。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -42,8 +40,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_MethodTweener_method_set_delay:
 
@@ -51,7 +49,7 @@ Method Descriptions
 
 :ref:`MethodTweener<class_MethodTweener>` **set_delay**\ (\ delay\: :ref:`float<class_float>`\ ) :ref:`🔗<class_MethodTweener_method_set_delay>`
 
-Sets the time in seconds after which the **MethodTweener** will start interpolating. By default there's no delay.
+設定該 **MethodTweener** 開始插值的時間，單位為秒。預設無延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +61,7 @@ Sets the time in seconds after which the **MethodTweener** will start interpolat
 
 :ref:`MethodTweener<class_MethodTweener>` **set_ease**\ (\ ease\: :ref:`EaseType<enum_Tween_EaseType>`\ ) :ref:`🔗<class_MethodTweener_method_set_ease>`
 
-Sets the type of used easing from :ref:`EaseType<enum_Tween_EaseType>`. If not set, the default easing is used from the :ref:`Tween<class_Tween>` that contains this Tweener.
+設定所使用的緩動型別 :ref:`EaseType<enum_Tween_EaseType>`\ 。如果沒有設定，則使用包含這個 Tweener 的 :ref:`Tween<class_Tween>` 的預設緩動型別。
 
 .. rst-class:: classref-item-separator
 
@@ -75,14 +73,14 @@ Sets the type of used easing from :ref:`EaseType<enum_Tween_EaseType>`. If not s
 
 :ref:`MethodTweener<class_MethodTweener>` **set_trans**\ (\ trans\: :ref:`TransitionType<enum_Tween_TransitionType>`\ ) :ref:`🔗<class_MethodTweener_method_set_trans>`
 
-Sets the type of used transition from :ref:`TransitionType<enum_Tween_TransitionType>`. If not set, the default transition is used from the :ref:`Tween<class_Tween>` that contains this Tweener.
+設定所使用的過渡型別 :ref:`TransitionType<enum_Tween_TransitionType>`\ 。如果沒有設定，則使用包含這個 Tweener 的 :ref:`Tween<class_Tween>` 的預設過渡型別。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

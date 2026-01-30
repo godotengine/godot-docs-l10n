@@ -5,44 +5,44 @@
 EditorCommandPalette
 ====================
 
-**Inherits:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Godot editor's command palette.
+Godot 編輯器的命令面板。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
-Object that holds all the available Commands and their shortcuts text. These Commands can be accessed through **Editor > Command Palette** menu.
+該物件包含所有可用命令及其快捷方式文字。這些命令可以通過 **Editor > 命令面板** 選單存取。
 
-Command key names use slash delimiters to distinguish sections, for example: ``"example/command1"`` then ``example`` will be the section name.
+命令鍵名使用斜杠分隔符號來區分部分，例如：\ ``"example/command1"``\ ，那麼 ``example`` 將是部分名稱。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var command_palette = EditorInterface.get_command_palette()
-    # external_command is a function that will be called with the command is executed.
+    var command_palette = get_editor_interface().get_command_palette()
+    # external_command 是將在命令執行時呼叫的函式。
     var command_callable = Callable(self, "external_command").bind(arguments)
     command_palette.add_command("command", "test/command",command_callable)
 
  .. code-tab:: csharp
 
-    EditorCommandPalette commandPalette = EditorInterface.Singleton.GetCommandPalette();
-    // ExternalCommand is a function that will be called with the command is executed.
+    EditorCommandPalette commandPalette = GetEditorInterface().GetCommandPalette();
+    // ExternalCommand 是將在命令執行時呼叫的函式。
     Callable commandCallable = new Callable(this, MethodName.ExternalCommand);
     commandPalette.AddCommand("command", "test/command", commandCallable)
 
 
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_command_palette()<class_EditorInterface_method_get_command_palette>`.
+\ **注意：**\ 不應直接產生實體此類。相反，使用 :ref:`EditorInterface.get_command_palette()<class_EditorInterface_method_get_command_palette>` 存取單例。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_EditorCommandPalette_method_add_command:
 
@@ -80,15 +80,15 @@ Method Descriptions
 
 |void| **add_command**\ (\ command_name\: :ref:`String<class_String>`, key_name\: :ref:`String<class_String>`, binded_callable\: :ref:`Callable<class_Callable>`, shortcut_text\: :ref:`String<class_String>` = "None"\ ) :ref:`🔗<class_EditorCommandPalette_method_add_command>`
 
-Adds a custom command to EditorCommandPalette.
+向 EditorCommandPalette 新增自訂命令。
 
-- ``command_name``: :ref:`String<class_String>` (Name of the **Command**. This is displayed to the user.)
+- ``command_name``\ ：\ :ref:`String<class_String>`\ （\ **Command** 的名稱。這會顯示給使用者。）
 
-- ``key_name``: :ref:`String<class_String>` (Name of the key for a particular **Command**. This is used to uniquely identify the **Command**.)
+- ``key_name``\ ：\ :ref:`String<class_String>`\ （特定 **Command** 的金鑰名稱。這用於唯一標識 **Command**\ 。）
 
-- ``binded_callable``: :ref:`Callable<class_Callable>` (Callable of the **Command**. This will be executed when the **Command** is selected.)
+- ``binded_callable``\ ：\ :ref:`Callable<class_Callable>`\ （\ **Command** 的 Callable。這將在選擇 **Command** 時執行。）
 
-- ``shortcut_text``: :ref:`String<class_String>` (Shortcut text of the **Command** if available.)
+- ``shortcut_text``\ ：\ :ref:`String<class_String>`\ （\ **Command** 的快捷鍵文字，如果可用。）
 
 .. rst-class:: classref-item-separator
 
@@ -100,16 +100,16 @@ Adds a custom command to EditorCommandPalette.
 
 |void| **remove_command**\ (\ key_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorCommandPalette_method_remove_command>`
 
-Removes the custom command from EditorCommandPalette.
+從 EditorCommandPalette 中刪除自訂命令。
 
-- ``key_name``: :ref:`String<class_String>` (Name of the key for a particular **Command**.)
+- ``key_name``: :ref:`String<class_String>` (特定 **Command** 的鍵名)
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

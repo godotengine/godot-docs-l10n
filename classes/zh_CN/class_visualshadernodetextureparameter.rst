@@ -5,23 +5,23 @@
 VisualShaderNodeTextureParameter
 ================================
 
-**Inherits:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisualShaderNodeCubemapParameter<class_VisualShaderNodeCubemapParameter>`, :ref:`VisualShaderNodeTexture2DArrayParameter<class_VisualShaderNodeTexture2DArrayParameter>`, :ref:`VisualShaderNodeTexture2DParameter<class_VisualShaderNodeTexture2DParameter>`, :ref:`VisualShaderNodeTexture3DParameter<class_VisualShaderNodeTexture3DParameter>`, :ref:`VisualShaderNodeTextureParameterTriplanar<class_VisualShaderNodeTextureParameterTriplanar>`
+**派生：** :ref:`VisualShaderNodeCubemapParameter<class_VisualShaderNodeCubemapParameter>`, :ref:`VisualShaderNodeTexture2DArrayParameter<class_VisualShaderNodeTexture2DArrayParameter>`, :ref:`VisualShaderNodeTexture2DParameter<class_VisualShaderNodeTexture2DParameter>`, :ref:`VisualShaderNodeTexture3DParameter<class_VisualShaderNodeTexture3DParameter>`, :ref:`VisualShaderNodeTextureParameterTriplanar<class_VisualShaderNodeTextureParameterTriplanar>`
 
-Performs a uniform texture lookup within the visual shader graph.
+在可视化着色器图中执行 uniform 的纹理查找。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Performs a lookup operation on the texture provided as a uniform for the shader.
+对作为 uniform 着色器提供的纹理进行查找操作。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisualShaderNodeTextureParameter_TextureType:
 
@@ -59,7 +59,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_TextureTy
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_DATA** = ``0``
 
-No hints are added to the uniform declaration.
+在uniform声明中未添加提示。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_COLOR:
 
@@ -75,7 +75,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_NORMAL_MAP** = ``2``
 
-Adds ``hint_normal`` as hint to the uniform declaration, which internally converts the texture for proper usage as normal map.
+将 ``hint_normal`` 作为提示添加到 uniform 声明中，该声明在内部将纹理转换为法线贴图。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_ANISOTROPY:
 
@@ -83,7 +83,7 @@ Adds ``hint_normal`` as hint to the uniform declaration, which internally conver
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_ANISOTROPY** = ``3``
 
-Adds ``hint_anisotropy`` as hint to the uniform declaration to use for a flowmap.
+向该 uniform 声明添加 ``hint_anisotropy`` 提示，用于流向图。
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_MAX:
 
@@ -91,7 +91,7 @@ Adds ``hint_anisotropy`` as hint to the uniform declaration to use for a flowmap
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_MAX** = ``4``
 
-Represents the size of the :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` enum.
+代表 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -109,7 +109,7 @@ enum **ColorDefault**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_ColorDef
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_WHITE** = ``0``
 
-Defaults to fully opaque white color.
+默认为完全不透明的白色。
 
 .. _class_VisualShaderNodeTextureParameter_constant_COLOR_DEFAULT_BLACK:
 
@@ -117,7 +117,7 @@ Defaults to fully opaque white color.
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_BLACK** = ``1``
 
-Defaults to fully opaque black color.
+默认为完全不透明的黑色。
 
 .. _class_VisualShaderNodeTextureParameter_constant_COLOR_DEFAULT_TRANSPARENT:
 
@@ -125,7 +125,7 @@ Defaults to fully opaque black color.
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_TRANSPARENT** = ``2``
 
-Defaults to fully transparent black color.
+默认为完全透明的黑色。
 
 .. _class_VisualShaderNodeTextureParameter_constant_COLOR_DEFAULT_MAX:
 
@@ -133,7 +133,7 @@ Defaults to fully transparent black color.
 
 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **COLOR_DEFAULT_MAX** = ``3``
 
-Represents the size of the :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` enum.
+代表 :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_DEFAULT** = ``0``
 
-Sample the texture using the filter determined by the node this shader is attached to.
+使用由该着色器所附加到的节点决定的过滤器对纹理进行采样。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST:
 
@@ -159,7 +159,7 @@ Sample the texture using the filter determined by the node this shader is attach
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+纹理过滤仅从最近的像素读取。这使得纹理从近距离看是像素化的，从远处看是颗粒状的（由于多级渐远纹理没有被采样）。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR:
 
@@ -167,7 +167,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+纹理过滤在最近的 4 个像素之间进行混合。这使得纹理从近处看起来很平滑，从远处看起来却有颗粒感（由于多级渐远纹理没有被采样）。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP:
 
@@ -175,9 +175,9 @@ The texture filter blends between the nearest 4 pixels. This makes the texture l
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST_MIPMAP** = ``3``
 
-The texture filter reads from the nearest pixel and blends between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look pixelated from up close, and smooth from a distance.
+纹理过滤从最近的像素读取并在最近的 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来像素化，从远处看起来平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+将此用于可能以低缩放查看的非像素艺术纹理（例如，由于 :ref:`Camera2D<class_Camera2D>` 缩放或精灵缩放），因为多级渐远纹理对于平滑小于屏幕像素的像素很重要。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP:
 
@@ -185,9 +185,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR_MIPMAP** = ``4``
 
-The texture filter blends between the nearest 4 pixels and between the nearest 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``). This makes the texture look smooth from up close, and smooth from a distance.
+纹理过滤在最近的 4 个像素和最近的 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来平滑，从远处看起来也平滑。
 
-Use this for non-pixel art textures that may be viewed at a low scale (e.g. due to :ref:`Camera2D<class_Camera2D>` zoom or sprite scaling), as mipmaps are important to smooth out pixels that are smaller than on-screen pixels.
+将此用于可能以低缩放查看的非像素艺术纹理（例如，由于 :ref:`Camera2D<class_Camera2D>` 缩放或精灵缩放），因为多级渐远纹理对于平滑小于屏幕像素的像素很重要。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP_ANISOTROPIC:
 
@@ -195,9 +195,9 @@ Use this for non-pixel art textures that may be viewed at a low scale (e.g. due 
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST_MIPMAP_ANISOTROPIC** = ``5``
 
-The texture filter reads from the nearest pixel and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look pixelated from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+纹理过滤从最近的像素读取并根据表面和相机视图之间的角度在 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来像素化，从远处看起来平滑。各向异性过滤提高了几乎与相机位于一条线的表面上的纹理质量，但速度稍慢。各向异性过滤级别可以通过调整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 来改变。
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`FILTER_NEAREST_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP>` is usually more appropriate in this case.
+\ **注意：**\ 该纹理过滤在 2D 项目中很少有用。\ :ref:`FILTER_NEAREST_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP>` 在这种情况下通常更合适。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP_ANISOTROPIC:
 
@@ -205,9 +205,9 @@ The texture filter reads from the nearest pixel and blends between 2 mipmaps (or
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR_MIPMAP_ANISOTROPIC** = ``6``
 
-The texture filter blends between the nearest 4 pixels and blends between 2 mipmaps (or uses the nearest mipmap if :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` is ``true``) based on the angle between the surface and the camera view. This makes the texture look smooth from up close, and smooth from a distance. Anisotropic filtering improves texture quality on surfaces that are almost in line with the camera, but is slightly slower. The anisotropic filtering level can be changed by adjusting :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+纹理过滤在最近的 4 个像素之间进行混合，并基于表面与相机视图之间的角度在 2 个多级渐远纹理之间进行混合（或者如果 :ref:`ProjectSettings.rendering/textures/default_filters/use_nearest_mipmap_filter<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>` 为 ``true``\ ，则使用最近的多级渐远纹理）。这使得纹理从近处看起来平滑，从远处看起来也平滑。各向异性过滤提高了几乎与相机位于一条线的表面上的纹理质量，但速度稍慢。各向异性过滤级别可以通过调整 :ref:`ProjectSettings.rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>` 来改变。
 
-\ **Note:** This texture filter is rarely useful in 2D projects. :ref:`FILTER_LINEAR_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP>` is usually more appropriate in this case.
+\ **注意：**\ 该纹理过滤在 2D 项目中很少有用。\ :ref:`FILTER_LINEAR_MIPMAP<class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR_MIPMAP>` 在这种情况下通常更合适。
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_MAX:
 
@@ -215,7 +215,7 @@ The texture filter blends between the nearest 4 pixels and blends between 2 mipm
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_MAX** = ``7``
 
-Represents the size of the :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` enum.
+代表 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ enum **TextureRepeat**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_DEFAULT** = ``0``
 
-Sample the texture using the repeat mode determined by the node this shader is attached to.
+使用由该着色器所附加到的节点决定的重复模式对该纹理进行采样。
 
 .. _class_VisualShaderNodeTextureParameter_constant_REPEAT_ENABLED:
 
@@ -241,7 +241,7 @@ Sample the texture using the repeat mode determined by the node this shader is a
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_ENABLED** = ``1``
 
-Texture will repeat normally.
+纹理将正常重复。
 
 .. _class_VisualShaderNodeTextureParameter_constant_REPEAT_DISABLED:
 
@@ -249,7 +249,7 @@ Texture will repeat normally.
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_DISABLED** = ``2``
 
-Texture will not repeat.
+纹理不会重复。
 
 .. _class_VisualShaderNodeTextureParameter_constant_REPEAT_MAX:
 
@@ -257,7 +257,7 @@ Texture will not repeat.
 
 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **REPEAT_MAX** = ``3``
 
-Represents the size of the :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` enum.
+代表 :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ enum **TextureSource**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_NONE** = ``0``
 
-The texture source is not specified in the shader.
+着色器中未指定纹理源。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_SCREEN:
 
@@ -283,7 +283,7 @@ The texture source is not specified in the shader.
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_SCREEN** = ``1``
 
-The texture source is the screen texture which captures all opaque objects drawn this frame.
+纹理源为屏幕纹理，捕获了本帧中绘制的所有不透明对象。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_DEPTH:
 
@@ -291,7 +291,7 @@ The texture source is the screen texture which captures all opaque objects drawn
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_DEPTH** = ``2``
 
-The texture source is the depth texture from the depth prepass.
+纹理源为深度预处理阶段的深度纹理。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_NORMAL_ROUGHNESS:
 
@@ -299,7 +299,7 @@ The texture source is the depth texture from the depth prepass.
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_NORMAL_ROUGHNESS** = ``3``
 
-The texture source is the normal-roughness buffer from the depth prepass.
+纹理源为深度预处理阶段的法线粗糙度缓冲区。
 
 .. _class_VisualShaderNodeTextureParameter_constant_SOURCE_MAX:
 
@@ -307,7 +307,7 @@ The texture source is the normal-roughness buffer from the depth prepass.
 
 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **SOURCE_MAX** = ``4``
 
-Represents the size of the :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` enum.
+代表 :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -315,8 +315,8 @@ Represents the size of the :ref:`TextureSource<enum_VisualShaderNodeTextureParam
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeTextureParameter_property_color_default:
 
@@ -329,7 +329,7 @@ Property Descriptions
 - |void| **set_color_default**\ (\ value\: :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>`\ )
 - :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **get_color_default**\ (\ )
 
-Sets the default color if no texture is assigned to the uniform.
+如果没有给 uniform 分配纹理，则设置默认颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ Sets the default color if no texture is assigned to the uniform.
 - |void| **set_texture_filter**\ (\ value\: :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>`\ )
 - :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **get_texture_filter**\ (\ )
 
-Sets the texture filtering mode.
+设置纹理的过滤模式。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Sets the texture filtering mode.
 - |void| **set_texture_repeat**\ (\ value\: :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>`\ )
 - :ref:`TextureRepeat<enum_VisualShaderNodeTextureParameter_TextureRepeat>` **get_texture_repeat**\ (\ )
 
-Sets the texture repeating mode.
+设置纹理的重复模式。
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Sets the texture repeating mode.
 - |void| **set_texture_source**\ (\ value\: :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>`\ )
 - :ref:`TextureSource<enum_VisualShaderNodeTextureParameter_TextureSource>` **get_texture_source**\ (\ )
 
-Sets the texture source mode. Used for reading from the screen, depth, or normal_roughness texture.
+设置纹理源的模式。用于读取 screen（屏幕）、depth（深度）或 normal_roughness（法线粗糙度）纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -397,14 +397,14 @@ Sets the texture source mode. Used for reading from the screen, depth, or normal
 - |void| **set_texture_type**\ (\ value\: :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>`\ )
 - :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **get_texture_type**\ (\ )
 
-Defines the type of data provided by the source texture.
+定义源纹理提供的数据类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

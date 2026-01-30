@@ -1496,7 +1496,7 @@ Tecla reproduccion parar.
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_MEDIAPREVIOUS** = ``4194390``
 
-Tecla de Canción previa.
+Tecla de Canción anterior.
 
 .. _class_@GlobalScope_constant_KEY_MEDIANEXT:
 

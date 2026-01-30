@@ -5,28 +5,28 @@
 AudioEffectChorus
 =================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Adds a chorus audio effect.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Adds a chorus audio effect. The effect applies a filter with voices to duplicate the audio source and manipulate it through the filter.
+新增合唱音訊效果。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Audio buses <../tutorials/audio/audio_buses>`
+新增合唱效果，透過多重聲部濾波器複製並處理音訊來源。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`音訊匯流排 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -127,8 +127,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_AudioEffectChorus_property_dry:
 
@@ -141,7 +141,7 @@ Property Descriptions
 - |void| **set_dry**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_dry**\ (\ )
 
-The effect's raw signal.
+效果的原始訊號比例。
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ The effect's raw signal.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's cutoff frequency.
+聲部的截止頻率。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ The voice's cutoff frequency.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's signal delay.
+聲部的訊號延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ The voice's signal delay.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice filter's depth.
+聲部濾波深度。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The voice filter's depth.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's volume.
+聲部音量。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ The voice's volume.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's pan level.
+聲部聲像。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ The voice's pan level.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's filter rate.
+聲部濾波速率。
 
 .. rst-class:: classref-item-separator
 
@@ -260,7 +260,7 @@ The voice's filter rate.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's cutoff frequency.
+聲部的截止頻率。
 
 .. rst-class:: classref-item-separator
 
@@ -277,7 +277,7 @@ The voice's cutoff frequency.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's signal delay.
+聲部的訊號延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ The voice's signal delay.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice filter's depth.
+聲部濾波深度。
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ The voice filter's depth.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's volume.
+聲部音量。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ The voice's volume.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's pan level.
+聲部聲像。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ The voice's pan level.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's filter rate.
+聲部濾波速率。
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ The voice's filter rate.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's cutoff frequency.
+聲部的截止頻率。
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ The voice's cutoff frequency.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's signal delay.
+聲部的訊號延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ The voice's signal delay.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice filter's depth.
+聲部濾波深度。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ The voice filter's depth.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's volume.
+聲部音量。
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ The voice's volume.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's pan level.
+聲部聲像。
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ The voice's pan level.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's filter rate.
+聲部濾波速率。
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ The voice's filter rate.
 - |void| **set_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`, cutoff_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_cutoff_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's cutoff frequency.
+聲部的截止頻率。
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +481,7 @@ The voice's cutoff frequency.
 - |void| **set_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`, delay_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_delay_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's signal delay.
+聲部的訊號延遲。
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ The voice's signal delay.
 - |void| **set_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`, depth_ms\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_depth_ms**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice filter's depth.
+聲部濾波深度。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ The voice filter's depth.
 - |void| **set_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`, level_db\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_level_db**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's volume.
+聲部音量。
 
 .. rst-class:: classref-item-separator
 
@@ -532,7 +532,7 @@ The voice's volume.
 - |void| **set_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`, pan\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_pan**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's pan level.
+聲部聲像。
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ The voice's pan level.
 - |void| **set_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`, rate_hz\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_voice_rate_hz**\ (\ voice_idx\: :ref:`int<class_int>`\ ) |const|
 
-The voice's filter rate.
+聲部濾波速率。
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ The voice's filter rate.
 - |void| **set_voice_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_voice_count**\ (\ )
 
-The number of voices in the effect.
+聲部數量。
 
 .. rst-class:: classref-item-separator
 
@@ -583,7 +583,7 @@ The number of voices in the effect.
 - |void| **set_wet**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wet**\ (\ )
 
-The effect's processed signal.
+效果的處理後訊號比例。
 
 .. rst-class:: classref-section-separator
 
@@ -591,8 +591,8 @@ The effect's processed signal.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_AudioEffectChorus_method_get_voice_cutoff_hz:
 
@@ -758,12 +758,12 @@ Method Descriptions
 
 	There is currently no description for this method. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

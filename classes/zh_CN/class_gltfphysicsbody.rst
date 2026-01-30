@@ -5,30 +5,30 @@
 GLTFPhysicsBody
 ===============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a glTF physics body.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Represents a physics body as an intermediary between the ``OMI_physics_body`` glTF data and Godot's nodes, and it's abstracted in a way that allows adding support for different glTF physics extensions in the future.
+代表 glTF 物理体。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Runtime file loading and saving <../tutorials/io/runtime_file_loading_and_saving>`
+代表物理体作为 ``OMI_physics_body`` glTF 数据和 Godot 节点之间的中介，并且它的抽象方式允许在未来添加对不同 glTF 物理扩展的支持。
 
-- `OMI_physics_body glTF extension <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body>`__
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+
+- `OMI_physics_body glTF 扩展 <https://github.com/omigroup/gltf-extensions/tree/main/extensions/2.0/OMI_physics_body>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -75,8 +75,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GLTFPhysicsBody_property_angular_velocity:
 
@@ -89,7 +89,7 @@ Property Descriptions
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-The angular velocity of the physics body, in radians per second. This is only used when the body type is "rigid" or "vehicle".
+该物理体的角速度，单位为弧度每秒。仅在物体类型为“rigid”或“vehicle”时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -106,11 +106,11 @@ The angular velocity of the physics body, in radians per second. This is only us
 - |void| **set_body_type**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_body_type**\ (\ )
 
-The type of the body.
+物体的类型。
 
-When importing, this controls what type of :ref:`CollisionObject3D<class_CollisionObject3D>` node Godot should generate. Valid values are ``"static"``, ``"animatable"``, ``"character"``, ``"rigid"``, ``"vehicle"``, and ``"trigger"``.
+导入时，控制 Godot 应该生成哪种类型的 :ref:`CollisionObject3D<class_CollisionObject3D>` 节点。有效值有 ``"static"``\ 、\ ``"animatable"``\ 、\ ``"character"``\ 、\ ``"rigid"``\ 、\ ``"vehicle"``\ 、\ ``"trigger"``\ 。
 
-When exporting, this will be squashed down to one of ``"static"``, ``"kinematic"``, or ``"dynamic"`` motion types, or the ``"trigger"`` property.
+导出时，会合并为 ``"static"``\ 、\ ``"kinematic"`` 或 ``"dynamic"`` 运动类型，或 ``"trigger"`` 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -127,7 +127,7 @@ When exporting, this will be squashed down to one of ``"static"``, ``"kinematic"
 - |void| **set_center_of_mass**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_center_of_mass**\ (\ )
 
-The center of mass of the body, in meters. This is in local space relative to the body. By default, the center of the mass is the body's origin.
+该物体的质心，单位为米。使用相对于物体的局部空间。质心默认为物体的原点。
 
 .. rst-class:: classref-item-separator
 
@@ -144,9 +144,9 @@ The center of mass of the body, in meters. This is in local space relative to th
 - |void| **set_inertia_diagonal**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_inertia_diagonal**\ (\ )
 
-The inertia strength of the physics body, in kilogram meter squared (kg⋅m²). This represents the inertia around the principle axes, the diagonal of the inertia tensor matrix. This is only used when the body type is "rigid" or "vehicle".
+物理体的惯性强度，单位为千克平方米（kg⋅m²）。这表示绕主轴的惯性，而该轴为惯性张量矩阵的对角线。仅在物体类型为 “rigid” 或 “vehicle” 时使用。
 
-When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this value is zero, then the inertia will be calculated automatically.
+当转换为 Godot :ref:`RigidBody3D<class_RigidBody3D>` 节点时，如果该值为零，则会自动计算惯性。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this va
 - |void| **set_inertia_orientation**\ (\ value\: :ref:`Quaternion<class_Quaternion>`\ )
 - :ref:`Quaternion<class_Quaternion>` **get_inertia_orientation**\ (\ )
 
-The inertia orientation of the physics body. This defines the rotation of the inertia's principle axes relative to the object's local axes. This is only used when the body type is "rigid" or "vehicle" and :ref:`inertia_diagonal<class_GLTFPhysicsBody_property_inertia_diagonal>` is set to a non-zero value.
+物理体的惯性方向。这定义了惯性主轴相对于对象局部轴的旋转。仅当物体类型为“刚性”或“车辆”且 :ref:`inertia_diagonal<class_GLTFPhysicsBody_property_inertia_diagonal>` 被设置为非零值时才使用。
 
 .. rst-class:: classref-item-separator
 
@@ -180,11 +180,11 @@ The inertia orientation of the physics body. This defines the rotation of the in
 - |void| **set_inertia_tensor**\ (\ value\: :ref:`Basis<class_Basis>`\ )
 - :ref:`Basis<class_Basis>` **get_inertia_tensor**\ (\ )
 
-**Deprecated:** This property may be changed or removed in future versions.
+**已弃用：** 未来版本中可能会修改或移除该属性。
 
-The inertia tensor of the physics body, in kilogram meter squared (kg⋅m²). This is only used when the body type is "rigid" or "vehicle".
+该物理体的惯性张量，单位为千克平方米（kg⋅m²）。仅在物体类型为“rigid”或“vehicle”时使用。
 
-When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this value is zero, then the inertia will be calculated automatically.
+转换为 Godot :ref:`RigidBody3D<class_RigidBody3D>` 节点时，如果该值为零，则会自动计算该惯量。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ When converted to a Godot :ref:`RigidBody3D<class_RigidBody3D>` node, if this va
 - |void| **set_linear_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity**\ (\ )
 
-The linear velocity of the physics body, in meters per second. This is only used when the body type is "rigid" or "vehicle".
+该物理体的线速度，单位为米每秒。仅在物体类型为“rigid”或“vehicle”时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ The linear velocity of the physics body, in meters per second. This is only used
 - |void| **set_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mass**\ (\ )
 
-The mass of the physics body, in kilograms. This is only used when the body type is "rigid" or "vehicle".
+该物理体的质量，单位为千克。仅在物体类型为“rigid”或“vehicle”时使用。
 
 .. rst-class:: classref-section-separator
 
@@ -226,8 +226,8 @@ The mass of the physics body, in kilograms. This is only used when the body type
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GLTFPhysicsBody_method_from_dictionary:
 
@@ -235,7 +235,7 @@ Method Descriptions
 
 :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFPhysicsBody_method_from_dictionary>`
 
-Creates a new GLTFPhysicsBody instance by parsing the given :ref:`Dictionary<class_Dictionary>` in the ``OMI_physics_body`` glTF extension format.
+通过解析 ``OMI_physics_body`` glTF 扩展格式中给定的 :ref:`Dictionary<class_Dictionary>`\ ，创建新的 GLTFPhysicsBody 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Creates a new GLTFPhysicsBody instance by parsing the given :ref:`Dictionary<cla
 
 :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>` **from_node**\ (\ body_node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) |static| :ref:`🔗<class_GLTFPhysicsBody_method_from_node>`
 
-Creates a new GLTFPhysicsBody instance from the given Godot :ref:`CollisionObject3D<class_CollisionObject3D>` node.
+从给定的 Godot :ref:`CollisionObject3D<class_CollisionObject3D>` 节点新建 GLTFPhysicsBody 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Creates a new GLTFPhysicsBody instance from the given Godot :ref:`CollisionObjec
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFPhysicsBody_method_to_dictionary>`
 
-Serializes this GLTFPhysicsBody instance into a :ref:`Dictionary<class_Dictionary>`. It will be in the format expected by the ``OMI_physics_body`` glTF extension.
+将这个 GLTFPhysicsBody 实例序列化到 :ref:`Dictionary<class_Dictionary>` 中。使用的是 ``OMI_physics_body`` glTF 扩展所需要的格式。
 
 .. rst-class:: classref-item-separator
 
@@ -271,14 +271,14 @@ Serializes this GLTFPhysicsBody instance into a :ref:`Dictionary<class_Dictionar
 
 :ref:`CollisionObject3D<class_CollisionObject3D>` **to_node**\ (\ ) |const| :ref:`🔗<class_GLTFPhysicsBody_method_to_node>`
 
-Converts this GLTFPhysicsBody instance into a Godot :ref:`CollisionObject3D<class_CollisionObject3D>` node.
+将这个 GLTFPhysicsBody 实例转换为 Godot :ref:`CollisionObject3D<class_CollisionObject3D>` 节点。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

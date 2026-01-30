@@ -5,42 +5,42 @@
 NavigationRegion3D
 ==================
 
-**Experimental:** This class may be changed or removed in future versions.
+**实验性：** This class may be changed or removed in future versions.
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A traversable 3D region that :ref:`NavigationAgent3D<class_NavigationAgent3D>`\ s can use for pathfinding.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A traversable 3D region based on a :ref:`NavigationMesh<class_NavigationMesh>` that :ref:`NavigationAgent3D<class_NavigationAgent3D>`\ s can use for pathfinding.
-
-Two regions can be connected to each other if they share a similar edge. You can set the minimum distance between two vertices required to connect two edges by using :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>`.
-
-\ **Note:** Overlapping two regions' navigation meshes is not enough for connecting two regions. They must share a similar edge.
-
-The cost of entering this region from another region can be controlled with the :ref:`enter_cost<class_NavigationRegion3D_property_enter_cost>` value.
-
-\ **Note:** This value is not added to the path cost when the start position is already inside this region.
-
-The cost of traveling distances inside this region can be controlled with the :ref:`travel_cost<class_NavigationRegion3D_property_travel_cost>` multiplier.
-
-\ **Note:** This node caches changes to its properties, so if you make changes to the underlying region :ref:`RID<class_RID>` in :ref:`NavigationServer3D<class_NavigationServer3D>`, they will not be reflected in this node's properties.
+可达的 3D 地区，\ :ref:`NavigationAgent3D<class_NavigationAgent3D>` 能够将其用于寻路。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Using NavigationRegions <../tutorials/navigation/navigation_using_navigationregions>`
+可达的 3D 地区，基于 :ref:`NavigationMesh<class_NavigationMesh>`\ ，\ :ref:`NavigationAgent3D<class_NavigationAgent3D>` 能够将其用于寻路。
+
+两个地区如果存在相近的边就可以互相连接。连接两条边所需的顶点最小间距可以通过 :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>` 设置。
+
+\ **注意：**\ 两个地区存在重叠部分并不足以让它们相连。必须有相近的边。
+
+从一个地区进入另一个地区的寻路成本可以使用 :ref:`enter_cost<class_NavigationRegion3D_property_enter_cost>` 控制。
+
+\ **注意：**\ 起点位于该地区时，这个值不计入路径成本。
+
+在该地区中行进的寻路成本可以使用乘数 :ref:`travel_cost<class_NavigationRegion3D_property_travel_cost>` 控制。
+
+\ **注意：**\ 该节点会对这些属性进行缓存，因此，你在 :ref:`NavigationServer3D<class_NavigationServer3D>` 中对底层的地区 :ref:`RID<class_RID>` 进行的修改不会在该节点的属性中。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`使用 NavigationRegion <../tutorials/navigation/navigation_using_navigationregions>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -93,8 +93,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_NavigationRegion3D_signal_bake_finished:
 
@@ -102,7 +102,7 @@ Signals
 
 **bake_finished**\ (\ ) :ref:`🔗<class_NavigationRegion3D_signal_bake_finished>`
 
-Notifies when the navigation mesh bake operation is completed.
+导航网格烘焙操作完成时发出通知。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Notifies when the navigation mesh bake operation is completed.
 
 **navigation_mesh_changed**\ (\ ) :ref:`🔗<class_NavigationRegion3D_signal_navigation_mesh_changed>`
 
-Notifies when the :ref:`NavigationMesh<class_NavigationMesh>` has changed.
+:ref:`NavigationMesh<class_NavigationMesh>` 发生变化时发出通知。
 
 .. rst-class:: classref-section-separator
 
@@ -122,8 +122,8 @@ Notifies when the :ref:`NavigationMesh<class_NavigationMesh>` has changed.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationRegion3D_property_enabled:
 
@@ -136,7 +136,7 @@ Property Descriptions
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Determines if the **NavigationRegion3D** is enabled or disabled.
+决定该 **NavigationRegion3D** 是启用还是禁用。
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ Determines if the **NavigationRegion3D** is enabled or disabled.
 - |void| **set_enter_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_enter_cost**\ (\ )
 
-When pathfinding enters this region's navigation mesh from another regions navigation mesh the :ref:`enter_cost<class_NavigationRegion3D_property_enter_cost>` value is added to the path distance for determining the shortest path.
+当寻路从另一个区块的导航网格进入该区块的导航网格时，\ :ref:`enter_cost<class_NavigationRegion3D_property_enter_cost>` 值将被加到路径距离，以确定最短路径。
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ When pathfinding enters this region's navigation mesh from another regions navig
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-A bitfield determining all navigation layers the region belongs to. These navigation layers can be checked upon when requesting a path with :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>`.
+确定该区块所属的所有导航层的位字段。当使用 :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>` 请求一个路径时，可以检查这些导航层。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ A bitfield determining all navigation layers the region belongs to. These naviga
 - |void| **set_navigation_mesh**\ (\ value\: :ref:`NavigationMesh<class_NavigationMesh>`\ )
 - :ref:`NavigationMesh<class_NavigationMesh>` **get_navigation_mesh**\ (\ )
 
-The :ref:`NavigationMesh<class_NavigationMesh>` resource to use.
+使用的 :ref:`NavigationMesh<class_NavigationMesh>` 资源。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ The :ref:`NavigationMesh<class_NavigationMesh>` resource to use.
 - |void| **set_travel_cost**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_travel_cost**\ (\ )
 
-When pathfinding moves inside this region's navigation mesh the traveled distances are multiplied with :ref:`travel_cost<class_NavigationRegion3D_property_travel_cost>` for determining the shortest path.
+当寻路在该区块的导航网格内移动时，将行进距离乘以 :ref:`travel_cost<class_NavigationRegion3D_property_travel_cost>` 以确定最短路径。
 
 .. rst-class:: classref-item-separator
 
@@ -221,7 +221,7 @@ When pathfinding moves inside this region's navigation mesh the traveled distanc
 - |void| **set_use_edge_connections**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_edge_connections**\ (\ )
 
-If enabled the navigation region will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
+如果启用，导航区块将使用边缘连接来与位于导航地图连接边距范围内的其他导航区块相连接。
 
 .. rst-class:: classref-section-separator
 
@@ -229,8 +229,8 @@ If enabled the navigation region will use edge connections to connect with other
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationRegion3D_method_bake_navigation_mesh:
 
@@ -238,7 +238,7 @@ Method Descriptions
 
 |void| **bake_navigation_mesh**\ (\ on_thread\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_NavigationRegion3D_method_bake_navigation_mesh>`
 
-Bakes the :ref:`NavigationMesh<class_NavigationMesh>`. If ``on_thread`` is set to ``true`` (default), the baking is done on a separate thread. Baking on separate thread is useful because navigation baking is not a cheap operation. When it is completed, it automatically sets the new :ref:`NavigationMesh<class_NavigationMesh>`. Please note that baking on separate thread may be very slow if geometry is parsed from meshes as async access to each mesh involves heavy synchronization. Also, please note that baking on a separate thread is automatically disabled on operating systems that cannot use threads (such as Web with threads disabled).
+烘焙该 :ref:`NavigationMesh<class_NavigationMesh>`\ 。如果 ``on_thread`` 被设置为 ``true``\ （默认），则该烘焙将在单独的线程上完成。独立线程烘焙很有用，因为导航烘焙不是一项廉价的操作。完成后，它会自动设置新的 :ref:`NavigationMesh<class_NavigationMesh>`\ 。请注意，如果几何体是从网格解析而来的，则独立线程烘焙可能会非常慢，因为对每个网格的异步访问会涉及大量同步操作。另外，请注意在无法使用线程的操作系统（例如禁用线程的 Web）上，会自动禁用独立线程烘焙。
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ Bakes the :ref:`NavigationMesh<class_NavigationMesh>`. If ``on_thread`` is set t
 
 :ref:`AABB<class_AABB>` **get_bounds**\ (\ ) |const| :ref:`🔗<class_NavigationRegion3D_method_get_bounds>`
 
-Returns the axis-aligned bounding box for the region's transformed navigation mesh.
+返回区块中变换后的导航网格对应的轴对齐边界框。
 
 .. rst-class:: classref-item-separator
 
@@ -262,7 +262,7 @@ Returns the axis-aligned bounding box for the region's transformed navigation me
 
 :ref:`bool<class_bool>` **get_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_NavigationRegion3D_method_get_navigation_layer_value>`
 
-Returns whether or not the specified layer of the :ref:`navigation_layers<class_NavigationRegion3D_property_navigation_layers>` bitmask is enabled, given a ``layer_number`` between 1 and 32.
+返回 :ref:`navigation_layers<class_NavigationRegion3D_property_navigation_layers>` 位掩码中指定的层是否启用，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -274,7 +274,7 @@ Returns whether or not the specified layer of the :ref:`navigation_layers<class_
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_NavigationRegion3D_method_get_navigation_map>`
 
-Returns the current navigation map :ref:`RID<class_RID>` used by this region.
+返回该区块使用的当前导航地图 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -286,9 +286,9 @@ Returns the current navigation map :ref:`RID<class_RID>` used by this region.
 
 :ref:`RID<class_RID>` **get_region_rid**\ (\ ) |const| :ref:`🔗<class_NavigationRegion3D_method_get_region_rid>`
 
-**Deprecated:** Use :ref:`get_rid()<class_NavigationRegion3D_method_get_rid>` instead.
+**已弃用：** Use :ref:`get_rid()<class_NavigationRegion3D_method_get_rid>` instead.
 
-Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+返回 :ref:`NavigationServer3D<class_NavigationServer3D>` 上该区块的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer3D
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_NavigationRegion3D_method_get_rid>`
 
-Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer3D<class_NavigationServer3D>`. Combined with :ref:`NavigationServer3D.map_get_closest_point_owner()<class_NavigationServer3D_method_map_get_closest_point_owner>` can be used to identify the **NavigationRegion3D** closest to a point on the merged navigation map.
+返回 :ref:`NavigationServer3D<class_NavigationServer3D>` 上该区块的 :ref:`RID<class_RID>`\ 。结合 :ref:`NavigationServer3D.map_get_closest_point_owner()<class_NavigationServer3D_method_map_get_closest_point_owner>` 可用于识别距离该合并导航地图上的点最近的 **NavigationRegion3D**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns the :ref:`RID<class_RID>` of this region on the :ref:`NavigationServer3D
 
 :ref:`bool<class_bool>` **is_baking**\ (\ ) |const| :ref:`🔗<class_NavigationRegion3D_method_is_baking>`
 
-Returns ``true`` when the :ref:`NavigationMesh<class_NavigationMesh>` is being baked on a background thread.
+当 :ref:`NavigationMesh<class_NavigationMesh>` 正在后台线程上烘焙时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` when the :ref:`NavigationMesh<class_NavigationMesh>` is being b
 
 |void| **set_navigation_layer_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationRegion3D_method_set_navigation_layer_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`navigation_layers<class_NavigationRegion3D_property_navigation_layers>` bitmask, given a ``layer_number`` between 1 and 32.
+根据 ``value``\ ，启用或禁用 :ref:`navigation_layers<class_NavigationRegion3D_property_navigation_layers>` 位掩码中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
 .. rst-class:: classref-item-separator
 
@@ -336,14 +336,14 @@ Based on ``value``, enables or disables the specified layer in the :ref:`navigat
 
 |void| **set_navigation_map**\ (\ navigation_map\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_NavigationRegion3D_method_set_navigation_map>`
 
-Sets the :ref:`RID<class_RID>` of the navigation map this region should use. By default the region will automatically join the :ref:`World3D<class_World3D>` default navigation map so this function is only required to override the default map.
+设置该区块应使用的导航地图的 :ref:`RID<class_RID>`\ 。默认情况下，该区块会自动加入 :ref:`World3D<class_World3D>` 默认导航地图，因此该函数只需要覆盖默认地图即可。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,14 +5,14 @@
 OccluderInstance3D
 ==================
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Provides occlusion culling for 3D nodes, which improves performance in closed areas.
+為 3D 節點提供遮擋剔除，可以提高封閉區域的性能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+說明
+----
 
 Occlusion culling can improve rendering performance in closed/semi-open areas by hiding geometry that is occluded by other objects.
 
@@ -28,15 +28,15 @@ The occlusion culling system works by rendering the occluders on the CPU in para
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教學
+----
 
-- :doc:`Occlusion culling <../tutorials/3d/occlusion_culling>`
+- :doc:`遮擋剔除 <../tutorials/3d/occlusion_culling>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -69,8 +69,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_OccluderInstance3D_property_bake_mask:
 
@@ -83,9 +83,9 @@ Property Descriptions
 - |void| **set_bake_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bake_mask**\ (\ )
 
-The visual layers to account for when baking for occluders. Only :ref:`MeshInstance3D<class_MeshInstance3D>`\ s whose :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` match with this :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` will be included in the generated occluder mesh. By default, all objects with *opaque* materials are taken into account for the occluder baking.
+烘焙遮擋物時要考慮的可視層。只有其 :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` 與該 :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` 配對的 :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，才會被包含在生成的遮擋物網格中。預設情況下，所有具有\ *不透明*\ 材質的對象，都將被考慮用於遮擋物烘焙。
 
-To improve performance and avoid artifacts, it is recommended to exclude dynamic objects, small objects and fixtures from the baking process by moving them to a separate visual layer and excluding this layer in :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>`.
+為了提高性能並避免偽影，建議將動態物件、小物件和固定裝置從烘焙過程中排除，方法是將它們移動到一個單獨的可視層，並在 :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` 中排除該層。
 
 .. rst-class:: classref-item-separator
 
@@ -102,13 +102,13 @@ To improve performance and avoid artifacts, it is recommended to exclude dynamic
 - |void| **set_bake_simplification_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bake_simplification_distance**\ (\ )
 
-The simplification distance to use for simplifying the generated occluder polygon (in 3D units). Higher values result in a less detailed occluder mesh, which improves performance but reduces culling accuracy.
+用於簡化生成的遮擋物多邊形的簡化距離（單位為 3D 單位）。更高的值會導致遮擋物網格的細節更少，這會提高性能但會降低剔除精度。
 
-The occluder geometry is rendered on the CPU, so it is important to keep its geometry as simple as possible. Since the buffer is rendered at a low resolution, less detailed occluder meshes generally still work well. The default value is fairly aggressive, so you may have to decrease it if you run into false negatives (objects being occluded even though they are visible by the camera). A value of ``0.01`` will act conservatively, and will keep geometry *perceptually* unaffected in the occlusion culling buffer. Depending on the scene, a value of ``0.01`` may still simplify the mesh noticeably compared to disabling simplification entirely.
+遮擋物幾何體是在 CPU 上算繪的，因此保持其幾何體盡可能簡單很重要。由於緩衝區以低解析度算繪，因此細節較少的遮擋網格通常仍能正常工作。預設值相當激進，因此如果遇到誤報（即使相機可見的物件也被遮擋），可能必須降低該屬性。\ ``0.01`` 的值將保守地起作用，並將保持幾何體\ *感知*\ 在遮擋剔除緩衝區中不受影響。根據場景的不同，與完全禁用簡化相比，\ ``0.01`` 的值仍能顯著簡化網格。
 
-Setting this to ``0.0`` disables simplification entirely, but vertices in the exact same position will still be merged. The mesh will also be re-indexed to reduce both the number of vertices and indices.
+將該屬性設定為 ``0.0`` 將會完全禁用簡化，但仍會合並位置完全相同的頂點。網格也將被重新索引以減少頂點和索引的數量。
 
-\ **Note:** This uses the `meshoptimizer <https://meshoptimizer.org/>`__ library under the hood, similar to LOD generation.
+\ **注意：**\ 這在底層使用了 `meshoptimizer <https://meshoptimizer.org/>`__ 庫，類似於 LOD 生成。
 
 .. rst-class:: classref-item-separator
 
@@ -125,11 +125,11 @@ Setting this to ``0.0`` disables simplification entirely, but vertices in the ex
 - |void| **set_occluder**\ (\ value\: :ref:`Occluder3D<class_Occluder3D>`\ )
 - :ref:`Occluder3D<class_Occluder3D>` **get_occluder**\ (\ )
 
-The occluder resource for this **OccluderInstance3D**. You can generate an occluder resource by selecting an **OccluderInstance3D** node then using the **Bake Occluders** button at the top of the editor.
+這個 **OccluderInstance3D** 的遮擋器資源。要生成遮擋器資源，你可以先選中 **OccluderInstance3D** 節點，然後使用編輯器頂部的\ **烘焙遮擋器**\ 按鈕。
 
-You can also draw your own 2D occluder polygon by adding a new :ref:`PolygonOccluder3D<class_PolygonOccluder3D>` resource to the :ref:`occluder<class_OccluderInstance3D_property_occluder>` property in the Inspector.
+你還可以通過在“屬性檢視器”中為 :ref:`occluder<class_OccluderInstance3D_property_occluder>` 屬性新增新的 :ref:`PolygonOccluder3D<class_PolygonOccluder3D>` 資源來繪製自己的 2D 遮擋器多邊形。
 
-Alternatively, you can select a primitive occluder to use: :ref:`QuadOccluder3D<class_QuadOccluder3D>`, :ref:`BoxOccluder3D<class_BoxOccluder3D>` or :ref:`SphereOccluder3D<class_SphereOccluder3D>`.
+另外，你也可以選擇要使用的基本遮擋器：\ :ref:`QuadOccluder3D<class_QuadOccluder3D>`\ 、\ :ref:`BoxOccluder3D<class_BoxOccluder3D>`\ 、\ :ref:`SphereOccluder3D<class_SphereOccluder3D>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -137,8 +137,8 @@ Alternatively, you can select a primitive occluder to use: :ref:`QuadOccluder3D<
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_OccluderInstance3D_method_get_bake_mask_value:
 
@@ -146,7 +146,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **get_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OccluderInstance3D_method_get_bake_mask_value>`
 
-Returns whether or not the specified layer of the :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` is enabled, given a ``layer_number`` between 1 and 32.
+返回是否啟用了 :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` 的指定層，該層由給定的一個介於 1 和 32 之間的 ``layer_number`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -158,14 +158,14 @@ Returns whether or not the specified layer of the :ref:`bake_mask<class_Occluder
 
 |void| **set_bake_mask_value**\ (\ layer_number\: :ref:`int<class_int>`, value\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_OccluderInstance3D_method_set_bake_mask_value>`
 
-Based on ``value``, enables or disables the specified layer in the :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>`, given a ``layer_number`` between 1 and 32.
+基於 ``value``\ ，啟用或禁用 :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` 中的指定層，該層由給定的一個介於 1 和 32 之間的 ``layer_number`` 指定。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

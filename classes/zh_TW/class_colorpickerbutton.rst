@@ -5,34 +5,34 @@
 ColorPickerButton
 =================
 
-**Inherits:** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A button that brings up a :ref:`ColorPicker<class_ColorPicker>` when pressed.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Encapsulates a :ref:`ColorPicker<class_ColorPicker>`, making it accessible by pressing a button. Pressing the button will toggle the :ref:`ColorPicker<class_ColorPicker>`'s visibility.
-
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
-
-\ **Note:** By default, the button may not be wide enough for the color preview swatch to be visible. Make sure to set :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` to a big enough value to give the button enough space.
+點擊後會顯示 :ref:`ColorPicker<class_ColorPicker>` 的按鈕。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- `2D GD Paint Demo <https://godotengine.org/asset-library/asset/2768>`__
+封裝一個 :ref:`ColorPicker<class_ColorPicker>`\ ，按下按鈕即可存取該控制項。按下按鈕會切換 :ref:`ColorPicker<class_ColorPicker>` 的可見性。
 
-- `GUI Drag And Drop Demo <https://godotengine.org/asset-library/asset/2767>`__
+另見 :ref:`BaseButton<class_BaseButton>`\ ，其中包含與該節點關聯的通用屬性和方法。
+
+\ **注意：**\ 預設情況下，按鈕的寬度可能不足以使顏色預覽色板可見。確保將 :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` 設定為足夠大的值，以便為按鈕提供足夠的空間。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- `2D GD 畫圖演示 <https://godotengine.org/asset-library/asset/2768>`__
+
+- `GUI 拖放演示 <https://godotengine.org/asset-library/asset/2767>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主題屬性
+--------
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+訊號
+----
 
 .. _class_ColorPickerButton_signal_color_changed:
 
@@ -88,7 +88,7 @@ Signals
 
 **color_changed**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_ColorPickerButton_signal_color_changed>`
 
-Emitted when the color changes.
+顏色改變時發出。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Emitted when the color changes.
 
 **picker_created**\ (\ ) :ref:`🔗<class_ColorPickerButton_signal_picker_created>`
 
-Emitted when the :ref:`ColorPicker<class_ColorPicker>` is created (the button is pressed for the first time).
+建立 :ref:`ColorPicker<class_ColorPicker>` 時（第一次按下按鈕）發出。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Emitted when the :ref:`ColorPicker<class_ColorPicker>` is created (the button is
 
 **popup_closed**\ (\ ) :ref:`🔗<class_ColorPickerButton_signal_popup_closed>`
 
-Emitted when the :ref:`ColorPicker<class_ColorPicker>` is closed.
+當 :ref:`ColorPicker<class_ColorPicker>` 關閉時發出。
 
 .. rst-class:: classref-section-separator
 
@@ -120,8 +120,8 @@ Emitted when the :ref:`ColorPicker<class_ColorPicker>` is closed.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_ColorPickerButton_property_color:
 
@@ -134,7 +134,7 @@ Property Descriptions
 - |void| **set_pick_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_pick_color**\ (\ )
 
-The currently selected color.
+目前選擇的顏色。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ The currently selected color.
 - |void| **set_edit_alpha**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_alpha**\ (\ )
 
-If ``true``, the alpha channel in the displayed :ref:`ColorPicker<class_ColorPicker>` will be visible.
+如果為 ``true``\ ，則顯示的 :ref:`ColorPicker<class_ColorPicker>` 中的 Alpha 通道將可見。
 
 .. rst-class:: classref-item-separator
 
@@ -176,8 +176,8 @@ If ``true``, the intensity slider in the displayed :ref:`ColorPicker<class_Color
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法說明
+--------
 
 .. _class_ColorPickerButton_method_get_picker:
 
@@ -185,9 +185,9 @@ Method Descriptions
 
 :ref:`ColorPicker<class_ColorPicker>` **get_picker**\ (\ ) :ref:`🔗<class_ColorPickerButton_method_get_picker>`
 
-Returns the :ref:`ColorPicker<class_ColorPicker>` that this node toggles.
+返回此節點所切換的 :ref:`ColorPicker<class_ColorPicker>`\ 。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，移除和釋放它可能會導致當機。如果你希望隱藏它或其所有子項，請使用其 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 屬性。
 
 .. rst-class:: classref-item-separator
 
@@ -199,9 +199,9 @@ Returns the :ref:`ColorPicker<class_ColorPicker>` that this node toggles.
 
 :ref:`PopupPanel<class_PopupPanel>` **get_popup**\ (\ ) :ref:`🔗<class_ColorPickerButton_method_get_popup>`
 
-Returns the control's :ref:`PopupPanel<class_PopupPanel>` which allows you to connect to popup signals. This allows you to handle events when the ColorPicker is shown or hidden.
+返回該控制項的 :ref:`PopupPanel<class_PopupPanel>`\ ，它允許連接到其彈出訊號。這允許在顯示或隱藏 ColorPicker 時處理事件。
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`Window.visible<class_Window_property_visible>` property.
+\ **警告：**\ 這是一個必需的內部節點，移除和釋放它可能會導致當機。如果希望隱藏它或它的任何子項，請使用它們的 :ref:`Window.visible<class_Window_property_visible>` 屬性。
 
 .. rst-class:: classref-section-separator
 
@@ -209,8 +209,8 @@ Returns the control's :ref:`PopupPanel<class_PopupPanel>` which allows you to co
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主題屬性說明
+------------
 
 .. _class_ColorPickerButton_theme_icon_bg:
 
@@ -218,14 +218,14 @@ Theme Property Descriptions
 
 :ref:`Texture2D<class_Texture2D>` **bg** :ref:`🔗<class_ColorPickerButton_theme_icon_bg>`
 
-The background of the color preview rect on the button.
+顏色預覽的背景將在按鈕上顯示。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

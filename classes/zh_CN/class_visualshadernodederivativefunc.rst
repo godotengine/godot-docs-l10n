@@ -5,21 +5,21 @@
 VisualShaderNodeDerivativeFunc
 ==============================
 
-**Inherits:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Calculates a derivative within the visual shader graph.
+在可视化着色器图中，计算导数。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This node is only available in ``Fragment`` and ``Light`` visual shaders.
+此节点仅在\ ``Fragment``\ 和\ ``Light``\ 可视化着色器中可用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -38,8 +38,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisualShaderNodeDerivativeFunc_OpType:
 
@@ -53,7 +53,7 @@ enum **OpType**: :ref:`🔗<enum_VisualShaderNodeDerivativeFunc_OpType>`
 
 :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` **OP_TYPE_SCALAR** = ``0``
 
-A floating-point scalar.
+浮点标量。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_OP_TYPE_VECTOR_2D:
 
@@ -61,7 +61,7 @@ A floating-point scalar.
 
 :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` **OP_TYPE_VECTOR_2D** = ``1``
 
-A 2D vector type.
+2D 向量类型。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_OP_TYPE_VECTOR_3D:
 
@@ -69,7 +69,7 @@ A 2D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` **OP_TYPE_VECTOR_3D** = ``2``
 
-A 3D vector type.
+3D向量类型。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_OP_TYPE_VECTOR_4D:
 
@@ -77,7 +77,7 @@ A 3D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` **OP_TYPE_VECTOR_4D** = ``3``
 
-A 4D vector type.
+4D 向量类型。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_OP_TYPE_MAX:
 
@@ -85,7 +85,7 @@ A 4D vector type.
 
 :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` **OP_TYPE_MAX** = ``4``
 
-Represents the size of the :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` enum.
+代表 :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ enum **Function**: :ref:`🔗<enum_VisualShaderNodeDerivativeFunc_Function>`
 
 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **FUNC_SUM** = ``0``
 
-Sum of absolute derivative in ``x`` and ``y``.
+``x`` 和 ``y`` 的绝对导数之和。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_FUNC_X:
 
@@ -111,7 +111,7 @@ Sum of absolute derivative in ``x`` and ``y``.
 
 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **FUNC_X** = ``1``
 
-Derivative in ``x`` using local differencing.
+在 ``x`` 中使用局部差分的导数。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_FUNC_Y:
 
@@ -119,7 +119,7 @@ Derivative in ``x`` using local differencing.
 
 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **FUNC_Y** = ``2``
 
-Derivative in ``y`` using local differencing.
+在 ``y`` 中使用局部差分的导数。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_FUNC_MAX:
 
@@ -127,7 +127,7 @@ Derivative in ``y`` using local differencing.
 
 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **FUNC_MAX** = ``3``
 
-Represents the size of the :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` enum.
+代表 :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ enum **Precision**: :ref:`🔗<enum_VisualShaderNodeDerivativeFunc_Precision>`
 
 :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **PRECISION_NONE** = ``0``
 
-No precision is specified, the GPU driver is allowed to use whatever level of precision it chooses. This is the default option and is equivalent to using ``dFdx()`` or ``dFdy()`` in text shaders.
+未指定精度，GPU 驱动可以自行选用精度等级。这是默认选项，等价于在文本着色器中使用 ``dFdx()`` 或 ``dFdy()``\ 。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_PRECISION_COARSE:
 
@@ -153,7 +153,7 @@ No precision is specified, the GPU driver is allowed to use whatever level of pr
 
 :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **PRECISION_COARSE** = ``1``
 
-The derivative will be calculated using the current fragment's neighbors (which may not include the current fragment). This tends to be faster than using :ref:`PRECISION_FINE<class_VisualShaderNodeDerivativeFunc_constant_PRECISION_FINE>`, but may not be suitable when more precision is needed. This is equivalent to using ``dFdxCoarse()`` or ``dFdyCoarse()`` in text shaders.
+将使用当前片段的邻居（可能不包括当前片段）计算导数。这往往比使用 :ref:`PRECISION_FINE<class_VisualShaderNodeDerivativeFunc_constant_PRECISION_FINE>` 更快，但在需要更高精度时可能不适合。这相当于在文本着色器中使用 ``dFdxCoarse()`` 或 ``dFdyCoarse()``\ 。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_PRECISION_FINE:
 
@@ -161,7 +161,7 @@ The derivative will be calculated using the current fragment's neighbors (which 
 
 :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **PRECISION_FINE** = ``2``
 
-The derivative will be calculated using the current fragment and its immediate neighbors. This tends to be slower than using :ref:`PRECISION_COARSE<class_VisualShaderNodeDerivativeFunc_constant_PRECISION_COARSE>`, but may be necessary when more precision is needed. This is equivalent to using ``dFdxFine()`` or ``dFdyFine()`` in text shaders.
+将使用当前片段及其直接邻居计算导数。这往往比使用 :ref:`PRECISION_COARSE<class_VisualShaderNodeDerivativeFunc_constant_PRECISION_COARSE>` 慢，但当需要更高的精度时可能是必需的。这相当于在文本着色器中使用 ``dFdxFine()`` 或 ``dFdyFine()``\ 。
 
 .. _class_VisualShaderNodeDerivativeFunc_constant_PRECISION_MAX:
 
@@ -169,7 +169,7 @@ The derivative will be calculated using the current fragment and its immediate n
 
 :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **PRECISION_MAX** = ``3``
 
-Represents the size of the :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` enum.
+代表 :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -177,8 +177,8 @@ Represents the size of the :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_P
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisualShaderNodeDerivativeFunc_property_function:
 
@@ -191,7 +191,7 @@ Property Descriptions
 - |void| **set_function**\ (\ value\: :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>`\ )
 - :ref:`Function<enum_VisualShaderNodeDerivativeFunc_Function>` **get_function**\ (\ )
 
-A derivative function type.
+导数函数的类型。
 
 .. rst-class:: classref-item-separator
 
@@ -208,7 +208,7 @@ A derivative function type.
 - |void| **set_op_type**\ (\ value\: :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>`\ )
 - :ref:`OpType<enum_VisualShaderNodeDerivativeFunc_OpType>` **get_op_type**\ (\ )
 
-A type of operands and returned value.
+操作数和返回值的类型。
 
 .. rst-class:: classref-item-separator
 
@@ -225,14 +225,14 @@ A type of operands and returned value.
 - |void| **set_precision**\ (\ value\: :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>`\ )
 - :ref:`Precision<enum_VisualShaderNodeDerivativeFunc_Precision>` **get_precision**\ (\ )
 
-Sets the level of precision to use for the derivative function. When using the Compatibility renderer, this setting has no effect.
+设置用于导数函数的精度级别。使用 Compatibility 渲染器时此设置无效。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

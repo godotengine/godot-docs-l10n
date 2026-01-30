@@ -5,30 +5,30 @@
 ORMMaterial3D
 =============
 
-**Inherits:** :ref:`BaseMaterial3D<class_BaseMaterial3D>` **<** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`BaseMaterial3D<class_BaseMaterial3D>` **<** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A PBR (Physically Based Rendering) material to be used on 3D objects. Uses an ORM texture.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-ORMMaterial3D's properties are inherited from :ref:`BaseMaterial3D<class_BaseMaterial3D>`. Unlike :ref:`StandardMaterial3D<class_StandardMaterial3D>`, ORMMaterial3D uses a single texture for ambient occlusion, roughness and metallic maps, known as an ORM texture.
+基於物理的算繪（PBR）材質，可以套用於 3D 物件，可以使用 ORM 紋理。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Standard Material 3D and ORM Material 3D <../tutorials/3d/standard_material_3d>`
+ORMMaterial3D 的屬性繼承自 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ 。與 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 不同，ORMMaterial3D 對環境光遮蔽、粗糙度和金屬度貼圖使用單一紋理，稱為 ORM 紋理。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`標準 3D 材質與 ORM 3D 材質 <../tutorials/3d/standard_material_3d>`
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

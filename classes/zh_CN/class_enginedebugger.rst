@@ -5,21 +5,21 @@
 EngineDebugger
 ==============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Exposes the internal debugger.
+暴露内部调试器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**EngineDebugger** handles the communication between the editor and the running game. It is active in the running game. Messages can be sent/received through it. It also manages the profilers.
+**EngineDebugger** 处理编辑器与正在运行的游戏之间的通信。它会在运行游戏时激活，可以通过它收发消息，还负责管理性能分析器。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EngineDebugger_method_clear_breakpoints:
 
@@ -87,7 +87,7 @@ Method Descriptions
 
 |void| **clear_breakpoints**\ (\ ) :ref:`🔗<class_EngineDebugger_method_clear_breakpoints>`
 
-Clears all breakpoints.
+清除所有断点。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Clears all breakpoints.
 
 |void| **debug**\ (\ can_continue\: :ref:`bool<class_bool>` = true, is_error_breakpoint\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EngineDebugger_method_debug>`
 
-Starts a debug break in script execution, optionally specifying whether the program can continue based on ``can_continue`` and whether the break was due to a breakpoint.
+在运行脚本时触发调试中断，可以使用 ``can_continue`` 指定程序是否能够继续运行，还可以指定该中断是否是由断点导致的。
 
 .. rst-class:: classref-item-separator
 
@@ -111,9 +111,9 @@ Starts a debug break in script execution, optionally specifying whether the prog
 
 :ref:`int<class_int>` **get_depth**\ (\ ) |const| :ref:`🔗<class_EngineDebugger_method_get_depth>`
 
-**Experimental:** This method may be changed or removed in future versions.
+**实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the current debug depth.
+返回当前调试深度。
 
 .. rst-class:: classref-item-separator
 
@@ -125,9 +125,9 @@ Returns the current debug depth.
 
 :ref:`int<class_int>` **get_lines_left**\ (\ ) |const| :ref:`🔗<class_EngineDebugger_method_get_lines_left>`
 
-**Experimental:** This method may be changed or removed in future versions.
+**实验性：** 未来版本中可能会修改或移除该方法。
 
-Returns the number of lines that remain.
+返回剩余的行数。
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Returns the number of lines that remain.
 
 :ref:`bool<class_bool>` **has_capture**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_has_capture>`
 
-Returns ``true`` if a capture with the given name is present otherwise ``false``.
+如果存在具有给定名称的捕获，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Returns ``true`` if a capture with the given name is present otherwise ``false``
 
 :ref:`bool<class_bool>` **has_profiler**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_has_profiler>`
 
-Returns ``true`` if a profiler with the given name is present otherwise ``false``.
+如果存在具有给定名称的分析器，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Returns ``true`` if a profiler with the given name is present otherwise ``false`
 
 |void| **insert_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_insert_breakpoint>`
 
-Inserts a new breakpoint with the given ``source`` and ``line``.
+使用给定的 ``source`` 和 ``line`` 插入一个新断点。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Inserts a new breakpoint with the given ``source`` and ``line``.
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) :ref:`🔗<class_EngineDebugger_method_is_active>`
 
-Returns ``true`` if the debugger is active otherwise ``false``.
+如果调试器处于活动状态，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Returns ``true`` if the debugger is active otherwise ``false``.
 
 :ref:`bool<class_bool>` **is_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EngineDebugger_method_is_breakpoint>`
 
-Returns ``true`` if the given ``source`` and ``line`` represent an existing breakpoint.
+如果给定的 ``source`` 和 ``line`` 代表一个已存在的断点，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Returns ``true`` if the given ``source`` and ``line`` represent an existing brea
 
 :ref:`bool<class_bool>` **is_profiling**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_is_profiling>`
 
-Returns ``true`` if a profiler with the given name is present and active otherwise ``false``.
+如果存在具有给定名称的分析器，并且该分析器处于活动状态，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Returns ``true`` if a profiler with the given name is present and active otherwi
 
 :ref:`bool<class_bool>` **is_skipping_breakpoints**\ (\ ) |const| :ref:`🔗<class_EngineDebugger_method_is_skipping_breakpoints>`
 
-Returns ``true`` if the debugger is skipping breakpoints otherwise ``false``.
+如果调试器跳过断点，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Returns ``true`` if the debugger is skipping breakpoints otherwise ``false``.
 
 |void| **line_poll**\ (\ ) :ref:`🔗<class_EngineDebugger_method_line_poll>`
 
-Forces a processing loop of debugger events. The purpose of this method is just processing events every now and then when the script might get too busy, so that bugs like infinite loops can be caught.
+强制调试器事件的一个处理循环。该方法的目的是当脚本可能过于繁忙时不时地处理事件，以便可以捕获无限循环之类的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Forces a processing loop of debugger events. The purpose of this method is just 
 
 |void| **profiler_add_frame_data**\ (\ name\: :ref:`StringName<class_StringName>`, data\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_EngineDebugger_method_profiler_add_frame_data>`
 
-Calls the ``add`` callable of the profiler with given ``name`` and ``data``.
+使用给定的 ``name`` 和 ``data`` 调用分析器中的 ``add`` 可调用体。
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Calls the ``add`` callable of the profiler with given ``name`` and ``data``.
 
 |void| **profiler_enable**\ (\ name\: :ref:`StringName<class_StringName>`, enable\: :ref:`bool<class_bool>`, arguments\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_EngineDebugger_method_profiler_enable>`
 
-Calls the ``toggle`` callable of the profiler with given ``name`` and ``arguments``. Enables/Disables the same profiler depending on ``enable`` argument.
+使用给定的 ``name`` 和 ``arguments`` 调用分析器中的 ``toggle`` 可调用体。会根据 ``enable`` 参数启用/禁用同一分析器。
 
 .. rst-class:: classref-item-separator
 
@@ -259,11 +259,11 @@ Calls the ``toggle`` callable of the profiler with given ``name`` and ``argument
 
 |void| **register_message_capture**\ (\ name\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_EngineDebugger_method_register_message_capture>`
 
-Registers a message capture with given ``name``. If ``name`` is "my_message" then messages starting with "my_message:" will be called with the given callable.
+使用名称 ``name`` 注册消息捕获。如果 ``name`` 为“my_message”则会为“my_message:”开头的消息调用给定的可调用体。
 
-The callable must accept a message string and a data array as argument. The callable should return ``true`` if the message is recognized.
+可调用体必须接受消息字符串和数据数组参数。如果能够识别该消息，则可调用体应返回 ``true``\ 。
 
-\ **Note:** The callable will receive the message with the prefix stripped, unlike :ref:`EditorDebuggerPlugin._capture()<class_EditorDebuggerPlugin_private_method__capture>`. See the :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` description for an example.
+\ **注意：**\ 可调用体收到的消息已剥离前缀，这一点与 :ref:`EditorDebuggerPlugin._capture()<class_EditorDebuggerPlugin_private_method__capture>` 不同。示例见 :ref:`EditorDebuggerPlugin<class_EditorDebuggerPlugin>` 的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ The callable must accept a message string and a data array as argument. The call
 
 |void| **register_profiler**\ (\ name\: :ref:`StringName<class_StringName>`, profiler\: :ref:`EngineProfiler<class_EngineProfiler>`\ ) :ref:`🔗<class_EngineDebugger_method_register_profiler>`
 
-Registers a profiler with the given ``name``. See :ref:`EngineProfiler<class_EngineProfiler>` for more information.
+使用给定的名称 ``name`` 注册分析器。详见 :ref:`EngineProfiler<class_EngineProfiler>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ Registers a profiler with the given ``name``. See :ref:`EngineProfiler<class_Eng
 
 |void| **remove_breakpoint**\ (\ line\: :ref:`int<class_int>`, source\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_remove_breakpoint>`
 
-Removes a breakpoint with the given ``source`` and ``line``.
+使用给定的 ``source`` 和 ``line`` 移除一个断点。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ Removes a breakpoint with the given ``source`` and ``line``.
 
 |void| **script_debug**\ (\ language\: :ref:`ScriptLanguage<class_ScriptLanguage>`, can_continue\: :ref:`bool<class_bool>` = true, is_error_breakpoint\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_EngineDebugger_method_script_debug>`
 
-Starts a debug break in script execution, optionally specifying whether the program can continue based on ``can_continue`` and whether the break was due to a breakpoint.
+在运行脚本时触发调试中断，可以使用 ``can_continue`` 指定程序是否能够继续运行，还可以指定该中断是否是由断点导致的。
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ Starts a debug break in script execution, optionally specifying whether the prog
 
 |void| **send_message**\ (\ message\: :ref:`String<class_String>`, data\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_EngineDebugger_method_send_message>`
 
-Sends a message with given ``message`` and ``data`` array.
+发送消息，内容为给定的 ``message`` 和 ``data`` 数组。
 
 .. rst-class:: classref-item-separator
 
@@ -323,9 +323,9 @@ Sends a message with given ``message`` and ``data`` array.
 
 |void| **set_depth**\ (\ depth\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EngineDebugger_method_set_depth>`
 
-**Experimental:** This method may be changed or removed in future versions.
+**实验性：** 未来版本中可能会修改或移除该方法。
 
-Sets the current debugging depth.
+设置当前调试深度。
 
 .. rst-class:: classref-item-separator
 
@@ -337,9 +337,9 @@ Sets the current debugging depth.
 
 |void| **set_lines_left**\ (\ lines\: :ref:`int<class_int>`\ ) :ref:`🔗<class_EngineDebugger_method_set_lines_left>`
 
-**Experimental:** This method may be changed or removed in future versions.
+**实验性：** 未来版本中可能会修改或移除该方法。
 
-Sets the current debugging lines that remain.
+设置当前剩余的调试行。
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +351,7 @@ Sets the current debugging lines that remain.
 
 |void| **unregister_message_capture**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_unregister_message_capture>`
 
-Unregisters the message capture with given ``name``.
+将具有给定名称 ``name`` 的消息捕获解除注册。
 
 .. rst-class:: classref-item-separator
 
@@ -363,14 +363,14 @@ Unregisters the message capture with given ``name``.
 
 |void| **unregister_profiler**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_EngineDebugger_method_unregister_profiler>`
 
-Unregisters a profiler with given ``name``.
+将具有给定名称 ``name`` 的分析器解除注册。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

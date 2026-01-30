@@ -5,23 +5,23 @@
 EditorFeatureProfile
 ====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An editor feature profile which can be used to disable specific features.
+编辑器功能配置，可用于禁用特定功能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An editor feature profile can be used to disable specific features of the Godot editor. When disabled, the features won't appear in the editor, which makes the editor less cluttered. This is useful in education settings to reduce confusion or when working in a team. For example, artists and level designers could use a feature profile that disables the script editor to avoid accidentally making changes to files they aren't supposed to edit.
+编辑器功能配置可以用来禁用 Godot 编辑器的特定功能。当禁用时，这些功能将不会出现在编辑器中，从而使编辑器不那么混乱。这个设置使编辑器更简洁，在团队中工作时。例如，游戏美术和关卡设计师可以使用禁用脚本编辑器的功能配置，以避免意外地对他们不应该编辑的文件进行更改。
 
-To manage editor feature profiles visually, use **Editor > Manage Feature Profiles...** at the top of the editor window.
+要可视化地管理编辑器功能配置，请使用编辑器窗口顶部的\ **编辑器 >管理功能配置...**\ 。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_EditorFeatureProfile_Feature:
 
@@ -71,7 +71,7 @@ enum **Feature**: :ref:`🔗<enum_EditorFeatureProfile_Feature>`
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_3D** = ``0``
 
-The 3D editor. If this feature is disabled, the 3D editor won't display but 3D nodes will still display in the Create New Node dialog.
+3D 编辑器。如果禁用此功能，3D 编辑器将不显示，但 3D 节点仍将显示在“创建新 Node”对话框中。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCRIPT:
 
@@ -79,7 +79,7 @@ The 3D editor. If this feature is disabled, the 3D editor won't display but 3D n
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SCRIPT** = ``1``
 
-The Script tab, which contains the script editor and class reference browser. If this feature is disabled, the Script tab won't display.
+脚本选项卡，它包含脚本编辑器和类引用浏览器。如果该功能被禁用，脚本选项卡将不会显示。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_ASSET_LIB:
 
@@ -87,7 +87,7 @@ The Script tab, which contains the script editor and class reference browser. If
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_ASSET_LIB** = ``2``
 
-The AssetLib tab. If this feature is disabled, the AssetLib tab won't display.
+AssetLib 选项卡。如果禁用此功能，则不会显示 AssetLib 选项卡。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SCENE_TREE:
 
@@ -95,7 +95,7 @@ The AssetLib tab. If this feature is disabled, the AssetLib tab won't display.
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SCENE_TREE** = ``3``
 
-Scene tree editing. If this feature is disabled, the Scene tree dock will still be visible but will be read-only.
+场景树编辑。如果禁用此功能，场景树面板仍将可见，但将是只读的。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_NODE_DOCK:
 
@@ -103,9 +103,9 @@ Scene tree editing. If this feature is disabled, the Scene tree dock will still 
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_NODE_DOCK** = ``4``
 
-**Deprecated:** Replaced by the Signals and Groups docks.
+**已弃用：** Replaced by the Signals and Groups docks.
 
-The Node dock. If this feature is disabled, signals and groups won't be visible and modifiable from the editor.
+节点面板。如果此功能被禁用，信号和组将不可见，也不能从编辑器中修改。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_FILESYSTEM_DOCK:
 
@@ -113,7 +113,7 @@ The Node dock. If this feature is disabled, signals and groups won't be visible 
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_FILESYSTEM_DOCK** = ``5``
 
-The FileSystem dock. If this feature is disabled, the FileSystem dock won't be visible.
+文件系统面板。如果禁用此功能，则文件系统面板将不可见。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_IMPORT_DOCK:
 
@@ -121,7 +121,7 @@ The FileSystem dock. If this feature is disabled, the FileSystem dock won't be v
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_IMPORT_DOCK** = ``6``
 
-The Import dock. If this feature is disabled, the Import dock won't be visible.
+导入面板。如果禁用此功能，则导入面板将不可见。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_HISTORY_DOCK:
 
@@ -129,7 +129,7 @@ The Import dock. If this feature is disabled, the Import dock won't be visible.
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_HISTORY_DOCK** = ``7``
 
-The History dock. If this feature is disabled, the History dock won't be visible.
+历史面板。如果禁用此功能，则历史面板将不可见。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GAME:
 
@@ -137,7 +137,7 @@ The History dock. If this feature is disabled, the History dock won't be visible
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_GAME** = ``8``
 
-The Game tab, which allows embedding the game window and selecting nodes by clicking inside of it. If this feature is disabled, the Game tab won't display.
+游戏选项卡，能够在其中嵌入游戏窗口，在游戏窗口中通过点击选择节点。如果禁用此功能，则不会显示游戏选项卡。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_SIGNALS_DOCK:
 
@@ -161,7 +161,7 @@ The Groups dock. If this feature is disabled, groups won't be visible and modifi
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_MAX** = ``11``
 
-Represents the size of the :ref:`Feature<enum_EditorFeatureProfile_Feature>` enum.
+代表 :ref:`Feature<enum_EditorFeatureProfile_Feature>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -169,8 +169,8 @@ Represents the size of the :ref:`Feature<enum_EditorFeatureProfile_Feature>` enu
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorFeatureProfile_method_get_feature_name:
 
@@ -178,7 +178,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **get_feature_name**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_get_feature_name>`
 
-Returns the specified ``feature``'s human-readable name.
+返回指定特性 ``feature`` 的人类可读名称。
 
 .. rst-class:: classref-item-separator
 
@@ -190,7 +190,7 @@ Returns the specified ``feature``'s human-readable name.
 
 :ref:`bool<class_bool>` **is_class_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_disabled>`
 
-Returns ``true`` if the class specified by ``class_name`` is disabled. When disabled, the class won't appear in the Create New Node dialog.
+如果 ``class_name`` 指定的类被禁用，则返回 ``true``\ 。被禁用时，该类不会出现在“创建 Node”对话框中。
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +202,7 @@ Returns ``true`` if the class specified by ``class_name`` is disabled. When disa
 
 :ref:`bool<class_bool>` **is_class_editor_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_editor_disabled>`
 
-Returns ``true`` if editing for the class specified by ``class_name`` is disabled. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
+如果由 ``class_name`` 指定的类的编辑被禁用，则返回 ``true``\ 。被禁用时，该类仍会出现在“创建 Node”对话框中，但在选择继承该类的节点时，检查器将是只读的。
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ Returns ``true`` if editing for the class specified by ``class_name`` is disable
 
 :ref:`bool<class_bool>` **is_class_property_disabled**\ (\ class_name\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_class_property_disabled>`
 
-Returns ``true`` if ``property`` is disabled in the class specified by ``class_name``. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by ``class_name``.
+如果在 ``class_name`` 指定的类中禁用 ``property``\ ，则返回 ``true``\ 。当属性被禁用时，在选择继承由 ``class_name`` 指定的类的节点时，该属性将不会出现在检查器中。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Returns ``true`` if ``property`` is disabled in the class specified by ``class_n
 
 :ref:`bool<class_bool>` **is_feature_disabled**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`\ ) |const| :ref:`🔗<class_EditorFeatureProfile_method_is_feature_disabled>`
 
-Returns ``true`` if the ``feature`` is disabled. When a feature is disabled, it will disappear from the editor entirely.
+如果 ``feature`` 被禁用，则返回 ``true``\ 。当一个功能被禁用时，它将从编辑器中完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -238,9 +238,9 @@ Returns ``true`` if the ``feature`` is disabled. When a feature is disabled, it 
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_from_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_load_from_file>`
 
-Loads an editor feature profile from a file. The file must follow the JSON format obtained by using the feature profile manager's **Export** button or the :ref:`save_to_file()<class_EditorFeatureProfile_method_save_to_file>` method.
+从文件加载编辑器功能配置文件。该文件必须遵循使用功能配置文件管理器的\ **导出**\ 按钮或 :ref:`save_to_file()<class_EditorFeatureProfile_method_save_to_file>` 方法获取的 JSON 格式。
 
-\ **Note:** Feature profiles created via the user interface are loaded from the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`.
+\ **注意：**\ 通过用户界面创建的功能配置文件将从 ``feature_profiles`` 目录中的扩展名为 ``.profile`` 的文件加载。可以使用 :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
 
 .. rst-class:: classref-item-separator
 
@@ -252,9 +252,9 @@ Loads an editor feature profile from a file. The file must follow the JSON forma
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_to_file**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_save_to_file>`
 
-Saves the editor feature profile to a file in JSON format. It can then be imported using the feature profile manager's **Import** button or the :ref:`load_from_file()<class_EditorFeatureProfile_method_load_from_file>` method.
+将编辑器功能配置文件保存到一个 JSON 格式的文件中。然后可以使用功能配置文件管理器的\ **导入**\ 按钮或 :ref:`load_from_file()<class_EditorFeatureProfile_method_load_from_file>` 方法导入它。
 
-\ **Note:** Feature profiles created via the user interface are saved in the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>`.
+\ **注意：**\ 通过用户界面创建的功能配置文件，将作为扩展名为 ``.profile`` 的文件，保存在 ``feature_profiles`` 目录中。可以使用 :ref:`EditorPaths.get_config_dir()<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ Saves the editor feature profile to a file in JSON format. It can then be import
 
 |void| **set_disable_class**\ (\ class_name\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class>`
 
-If ``disable`` is ``true``, disables the class specified by ``class_name``. When disabled, the class won't appear in the Create New Node dialog.
+如果 ``disable`` 为 ``true``\ ，则禁用 ``class_name`` 指定的类。禁用后，该类不会出现在“创建新 Node”对话框中。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ If ``disable`` is ``true``, disables the class specified by ``class_name``. When
 
 |void| **set_disable_class_editor**\ (\ class_name\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class_editor>`
 
-If ``disable`` is ``true``, disables editing for the class specified by ``class_name``. When disabled, the class will still appear in the Create New Node dialog but the Inspector will be read-only when selecting a node that extends the class.
+如果 ``disable`` 为 ``true``\ ，则禁用 ``class_name`` 指定的类的编辑。禁用后，该类仍然会出现在“创建新 Node”对话框中，但在选中继承的节点时，检查器将只读。
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ If ``disable`` is ``true``, disables editing for the class specified by ``class_
 
 |void| **set_disable_class_property**\ (\ class_name\: :ref:`StringName<class_StringName>`, property\: :ref:`StringName<class_StringName>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_class_property>`
 
-If ``disable`` is ``true``, disables editing for ``property`` in the class specified by ``class_name``. When a property is disabled, it won't appear in the Inspector when selecting a node that extends the class specified by ``class_name``.
+如果 ``disable`` 为 ``true``\ ，则禁用 ``class_name`` 指定的类中的 ``property`` 属性的编辑。禁用某一属性后，选中继承自 ``class_name`` 指定的类的节点时，这个属性将不会出现在检查器中。
 
 .. rst-class:: classref-item-separator
 
@@ -302,14 +302,14 @@ If ``disable`` is ``true``, disables editing for ``property`` in the class speci
 
 |void| **set_disable_feature**\ (\ feature\: :ref:`Feature<enum_EditorFeatureProfile_Feature>`, disable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorFeatureProfile_method_set_disable_feature>`
 
-If ``disable`` is ``true``, disables the editor feature specified in ``feature``. When a feature is disabled, it will disappear from the editor entirely.
+如果 ``disable`` 为 ``true``\ ，则禁用 ``feature`` 中指定的编辑器功能。当一个功能被禁用时，它将从编辑器中完全消失。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

@@ -5,32 +5,32 @@
 AudioEffectSpectrumAnalyzer
 ===========================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Audio effect that can be used for real-time audio visualizations.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This audio effect does not affect sound output, but can be used for real-time audio visualizations.
-
-This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance can be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
-
-See also :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` for procedurally generating sounds.
+可用于实时音频可视化的音频效果。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `Audio Spectrum Visualizer Demo <https://godotengine.org/asset-library/asset/2762>`__
+这种音频效果不影响声音输出，但可以用于实时音频可视化。
+
+该资源配置了一个 :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`\ ，会在运行时执行实际的分析工作。可以使用 :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>` 获取实例。
+
+另见用于程序式声音生成的 :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `音频频谱可视化演示 <https://godotengine.org/asset-library/asset/2762>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_AudioEffectSpectrumAnalyzer_FFTSize:
 
@@ -64,7 +64,7 @@ enum **FFTSize**: :ref:`🔗<enum_AudioEffectSpectrumAnalyzer_FFTSize>`
 
 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **FFT_SIZE_256** = ``0``
 
-Use a buffer of 256 samples for the Fast Fourier transform. Lowest latency, but least stable over time.
+使用 256 个样本的缓冲器进行快速傅里叶变换。最低延迟，但随着时间的推移最不稳定。
 
 .. _class_AudioEffectSpectrumAnalyzer_constant_FFT_SIZE_512:
 
@@ -72,7 +72,7 @@ Use a buffer of 256 samples for the Fast Fourier transform. Lowest latency, but 
 
 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **FFT_SIZE_512** = ``1``
 
-Use a buffer of 512 samples for the Fast Fourier transform. Low latency, but less stable over time.
+使用 512 个样本的缓冲器进行快速傅里叶变换。低延迟，但随着时间的推移不太稳定。
 
 .. _class_AudioEffectSpectrumAnalyzer_constant_FFT_SIZE_1024:
 
@@ -80,7 +80,7 @@ Use a buffer of 512 samples for the Fast Fourier transform. Low latency, but les
 
 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **FFT_SIZE_1024** = ``2``
 
-Use a buffer of 1024 samples for the Fast Fourier transform. This is a compromise between latency and stability over time.
+使用 1024 个样本的缓冲器进行快速傅里叶变换。这是延迟和随着时间的推移的稳定性之间的折衷。
 
 .. _class_AudioEffectSpectrumAnalyzer_constant_FFT_SIZE_2048:
 
@@ -88,7 +88,7 @@ Use a buffer of 1024 samples for the Fast Fourier transform. This is a compromis
 
 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **FFT_SIZE_2048** = ``3``
 
-Use a buffer of 2048 samples for the Fast Fourier transform. High latency, but stable over time.
+使用 2048 个样本的缓冲器进行快速傅里叶变换。高延迟，但随着时间的推移稳定。
 
 .. _class_AudioEffectSpectrumAnalyzer_constant_FFT_SIZE_4096:
 
@@ -96,7 +96,7 @@ Use a buffer of 2048 samples for the Fast Fourier transform. High latency, but s
 
 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **FFT_SIZE_4096** = ``4``
 
-Use a buffer of 4096 samples for the Fast Fourier transform. Highest latency, but most stable over time.
+使用 4096 个样本的缓冲器进行快速傅里叶变换。延迟最高，但随着时间的推移最稳定。
 
 .. _class_AudioEffectSpectrumAnalyzer_constant_FFT_SIZE_MAX:
 
@@ -104,7 +104,7 @@ Use a buffer of 4096 samples for the Fast Fourier transform. Highest latency, bu
 
 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **FFT_SIZE_MAX** = ``5``
 
-Represents the size of the :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` enum.
+代表 :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -112,8 +112,8 @@ Represents the size of the :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSiz
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AudioEffectSpectrumAnalyzer_property_buffer_length:
 
@@ -126,7 +126,7 @@ Property Descriptions
 - |void| **set_buffer_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_buffer_length**\ (\ )
 
-The length of the buffer to keep (in seconds). Higher values keep data around for longer, but require more memory.
+要保留的缓冲区长度（以秒为单位）。较高的值将数据保存的时间更长，但需要更多的内存。
 
 .. rst-class:: classref-item-separator
 
@@ -143,7 +143,7 @@ The length of the buffer to keep (in seconds). Higher values keep data around fo
 - |void| **set_fft_size**\ (\ value\: :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>`\ )
 - :ref:`FFTSize<enum_AudioEffectSpectrumAnalyzer_FFTSize>` **get_fft_size**\ (\ )
 
-The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__ buffer. Higher values smooth out the spectrum analysis over time, but have greater latency. The effects of this higher latency are especially noticeable with sudden amplitude changes.
+`快速傅里叶变换 <https://en.wikipedia.org/wiki/Fast_Fourier_transform>`__\ 缓冲区的大小。较高的值可以使频谱分析随时间的推移而平滑，但有较大的延迟。这种较高延迟的影响在突然的振幅变化中特别明显。
 
 .. rst-class:: classref-item-separator
 
@@ -164,12 +164,12 @@ The size of the `Fast Fourier transform <https://en.wikipedia.org/wiki/Fast_Four
 
 	There is currently no description for this property. Please help us by `contributing one <https://contributing.godotengine.org/en/latest/documentation/class_reference.html>`__!
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

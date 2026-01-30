@@ -5,16 +5,16 @@
 AnimationNodeStateMachine
 =========================
 
-**Inherits:** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AnimationRootNode<class_AnimationRootNode>` **<** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A state machine with multiple :ref:`AnimationRootNode<class_AnimationRootNode>`\ s, used by :ref:`AnimationTree<class_AnimationTree>`.
+带有多个 :ref:`AnimationRootNode<class_AnimationRootNode>` 的状态机，用于 :ref:`AnimationTree<class_AnimationTree>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Contains multiple :ref:`AnimationRootNode<class_AnimationRootNode>`\ s representing animation states, connected in a graph. State transitions can be configured to happen automatically or via code, using a shortest-path algorithm. Retrieve the :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>` object from the :ref:`AnimationTree<class_AnimationTree>` node to control it programmatically.
+包含表示动画状态的多个 :ref:`AnimationRootNode<class_AnimationRootNode>`\ ，以图的形式连接。可以使用最短路径算法，将节点过渡配置为自动发生或通过代码发生。要以编程的方式控制过渡，请从 :ref:`AnimationTree<class_AnimationTree>` 节点获取 :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>` 对象。
 
 
 .. tabs::
@@ -33,15 +33,15 @@ Contains multiple :ref:`AnimationRootNode<class_AnimationRootNode>`\ s represent
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Using AnimationTree <../tutorials/animation/animation_tree>`
+- :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -110,8 +110,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_AnimationNodeStateMachine_StateMachineType:
 
@@ -125,7 +125,7 @@ enum **StateMachineType**: :ref:`🔗<enum_AnimationNodeStateMachine_StateMachin
 
 :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>` **STATE_MACHINE_TYPE_ROOT** = ``0``
 
-Seeking to the beginning is treated as playing from the start state. Transition to the end state is treated as exiting the state machine.
+寻道到开头被视为从开始状态开始播放。过渡到结束状态被视为退出状态机。
 
 .. _class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED:
 
@@ -133,7 +133,7 @@ Seeking to the beginning is treated as playing from the start state. Transition 
 
 :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>` **STATE_MACHINE_TYPE_NESTED** = ``1``
 
-Seeking to the beginning is treated as seeking to the beginning of the animation in the current state. Transition to the end state, or the absence of transitions in each state, is treated as exiting the state machine.
+寻道到开头被视为在当前状态下寻道到动画的开头。过渡到结束状态，或每个状态的过渡都缺失，被视为退出状态机。
 
 .. _class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_GROUPED:
 
@@ -141,7 +141,7 @@ Seeking to the beginning is treated as seeking to the beginning of the animation
 
 :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>` **STATE_MACHINE_TYPE_GROUPED** = ``2``
 
-This is a grouped state machine that can be controlled from a parent state machine. It does not work independently. There must be a state machine with :ref:`state_machine_type<class_AnimationNodeStateMachine_property_state_machine_type>` of :ref:`STATE_MACHINE_TYPE_ROOT<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_ROOT>` or :ref:`STATE_MACHINE_TYPE_NESTED<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED>` in the parent or ancestor.
+这是一个可以从父状态机控制的编组的状态机。它不能独立运行。父级或祖先中必须有一个 :ref:`state_machine_type<class_AnimationNodeStateMachine_property_state_machine_type>` 为 :ref:`STATE_MACHINE_TYPE_ROOT<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_ROOT>` 或 :ref:`STATE_MACHINE_TYPE_NESTED<class_AnimationNodeStateMachine_constant_STATE_MACHINE_TYPE_NESTED>` 的状态机。
 
 .. rst-class:: classref-section-separator
 
@@ -149,8 +149,8 @@ This is a grouped state machine that can be controlled from a parent state machi
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimationNodeStateMachine_property_allow_transition_to_self:
 
@@ -163,7 +163,7 @@ Property Descriptions
 - |void| **set_allow_transition_to_self**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_allow_transition_to_self**\ (\ )
 
-If ``true``, allows teleport to the self state with :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>`. When the reset option is enabled in :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>`, the animation is restarted. If ``false``, nothing happens on the teleportation to the self state.
+如果为 ``true``\ ，允许使用 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 传送到当前状态。当在 :ref:`AnimationNodeStateMachinePlayback.travel()<class_AnimationNodeStateMachinePlayback_method_travel>` 中启用重置选项时，动画将重新启动。如果为 ``false``\ ，传送到当前状态时不会发生任何事情。
 
 .. rst-class:: classref-item-separator
 
@@ -180,9 +180,9 @@ If ``true``, allows teleport to the self state with :ref:`AnimationNodeStateMach
 - |void| **set_reset_ends**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_ends_reset**\ (\ )
 
-If ``true``, treat the cross-fade to the start and end nodes as a blend with the RESET animation.
+如果为 ``true``\ ，则将与开始和结束节点的淡入淡出视为与 RESET 动画的混合。
 
-In most cases, when additional cross-fades are performed in the parent :ref:`AnimationNode<class_AnimationNode>` of the state machine, setting this property to ``false`` and matching the cross-fade time of the parent :ref:`AnimationNode<class_AnimationNode>` and the state machine's start node and end node gives good results.
+大多数情况下，状态机的父级 :ref:`AnimationNode<class_AnimationNode>` 执行额外的淡入淡出时，将这个属性设置为 ``false`` 并将父 :ref:`AnimationNode<class_AnimationNode>` 和该状态机的开始和结束节点的淡入淡出时间设为相同的值能够得到不错的效果。
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ In most cases, when additional cross-fades are performed in the parent :ref:`Ani
 - |void| **set_state_machine_type**\ (\ value\: :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>`\ )
 - :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>` **get_state_machine_type**\ (\ )
 
-This property can define the process of transitions for different use cases. See also :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>`.
+该属性可以为不同用例定义过渡过程。另见 :ref:`StateMachineType<enum_AnimationNodeStateMachine_StateMachineType>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -207,8 +207,8 @@ This property can define the process of transitions for different use cases. See
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AnimationNodeStateMachine_method_add_node:
 
@@ -216,7 +216,7 @@ Method Descriptions
 
 |void| **add_node**\ (\ name\: :ref:`StringName<class_StringName>`, node\: :ref:`AnimationNode<class_AnimationNode>`, position\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_add_node>`
 
-Adds a new animation node to the graph. The ``position`` is used for display in the editor.
+向图中添加一个新的动画节点。\ ``position`` 用于在编辑器中显示。
 
 .. rst-class:: classref-item-separator
 
@@ -228,7 +228,7 @@ Adds a new animation node to the graph. The ``position`` is used for display in 
 
 |void| **add_transition**\ (\ from\: :ref:`StringName<class_StringName>`, to\: :ref:`StringName<class_StringName>`, transition\: :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_add_transition>`
 
-Adds a transition between the given animation nodes.
+在给定动画节点之间添加一个过渡。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Adds a transition between the given animation nodes.
 
 :ref:`Vector2<class_Vector2>` **get_graph_offset**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_graph_offset>`
 
-Returns the draw offset of the graph. Used for display in the editor.
+返回图的绘制偏移。用于在编辑器中显示。
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ Returns the draw offset of the graph. Used for display in the editor.
 
 :ref:`AnimationNode<class_AnimationNode>` **get_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_node>`
 
-Returns the animation node with the given name.
+返回指定名称的动画节点。
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ Returns the animation node with the given name.
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_node_list**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_node_list>`
 
-Returns a list containing the names of all animation nodes in this state machine.
+返回包含状态机中所有动画节点名称的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Returns a list containing the names of all animation nodes in this state machine
 
 :ref:`StringName<class_StringName>` **get_node_name**\ (\ node\: :ref:`AnimationNode<class_AnimationNode>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_node_name>`
 
-Returns the given animation node's name.
+返回指定动画节点的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ Returns the given animation node's name.
 
 :ref:`Vector2<class_Vector2>` **get_node_position**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_node_position>`
 
-Returns the given animation node's coordinates. Used for display in the editor.
+返回给定动画节点的坐标。用于在编辑器中显示。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Returns the given animation node's coordinates. Used for display in the editor.
 
 :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>` **get_transition**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition>`
 
-Returns the given transition.
+返回给定的过渡。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns the given transition.
 
 :ref:`int<class_int>` **get_transition_count**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition_count>`
 
-Returns the number of connections in the graph.
+返回图中的连接数。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns the number of connections in the graph.
 
 :ref:`StringName<class_StringName>` **get_transition_from**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition_from>`
 
-Returns the given transition's start node.
+返回给定过渡的开始节点。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ Returns the given transition's start node.
 
 :ref:`StringName<class_StringName>` **get_transition_to**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition_to>`
 
-Returns the given transition's end node.
+返回给定过渡的末端节点。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Returns the given transition's end node.
 
 :ref:`bool<class_bool>` **has_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_has_node>`
 
-Returns ``true`` if the graph contains the given animation node.
+如果图中包含给定的动画节点，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +360,7 @@ Returns ``true`` if the graph contains the given animation node.
 
 :ref:`bool<class_bool>` **has_transition**\ (\ from\: :ref:`StringName<class_StringName>`, to\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_has_transition>`
 
-Returns ``true`` if there is a transition between the given animation nodes.
+如果在给定动画节点之间存在过渡，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +372,7 @@ Returns ``true`` if there is a transition between the given animation nodes.
 
 |void| **remove_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_remove_node>`
 
-Deletes the given animation node from the graph.
+从图中删除指定的动画节点。
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ Deletes the given animation node from the graph.
 
 |void| **remove_transition**\ (\ from\: :ref:`StringName<class_StringName>`, to\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_remove_transition>`
 
-Deletes the transition between the two specified animation nodes.
+删除两个指定动画节点之间的过渡。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Deletes the transition between the two specified animation nodes.
 
 |void| **remove_transition_by_index**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_remove_transition_by_index>`
 
-Deletes the given transition by index.
+按索引删除给定的过渡。
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Deletes the given transition by index.
 
 |void| **rename_node**\ (\ name\: :ref:`StringName<class_StringName>`, new_name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_rename_node>`
 
-Renames the given animation node.
+重命名给定的动画节点。
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ Renames the given animation node.
 
 |void| **replace_node**\ (\ name\: :ref:`StringName<class_StringName>`, node\: :ref:`AnimationNode<class_AnimationNode>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_replace_node>`
 
-Replaces the given animation node with a new animation node.
+用新的动画节点替换给定的动画节点。
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Replaces the given animation node with a new animation node.
 
 |void| **set_graph_offset**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_set_graph_offset>`
 
-Sets the draw offset of the graph. Used for display in the editor.
+设置图形的绘制偏移。用于在编辑器中显示。
 
 .. rst-class:: classref-item-separator
 
@@ -444,14 +444,14 @@ Sets the draw offset of the graph. Used for display in the editor.
 
 |void| **set_node_position**\ (\ name\: :ref:`StringName<class_StringName>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_set_node_position>`
 
-Sets the animation node's coordinates. Used for display in the editor.
+设置动画节点的坐标。用于在编辑器中显示。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法无副作用，不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了能接受在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，可直接使用类名进行调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效运算符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列位标志构成位掩码的整数。)`
+.. |void| replace:: :abbr:`void (无返回值。)`

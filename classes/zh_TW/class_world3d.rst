@@ -5,28 +5,28 @@
 World3D
 =======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**繼承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A resource that holds all components of a 3D world, such as a visual scenario and a physics space.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Class that has everything pertaining to a world: A physics space, a visual scenario, and a sound space. 3D nodes register their resources into the current 3D world.
+包含 3D 世界所有元件的資源，例如可視場景和物理空間。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+說明
+----
 
-- :doc:`Ray-casting <../tutorials/physics/ray-casting>`
+這個類包含所有與世界相關的內容：物理空間、可視場景和音訊空間。3D 節點會將它們的資源註冊到目前的 3D 世界中。
+
+.. rst-class:: classref-introduction-group
+
+教學
+----
+
+- :doc:`發射射線 <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+屬性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+屬性說明
+--------
 
 .. _class_World3D_property_camera_attributes:
 
@@ -67,7 +67,7 @@ Property Descriptions
 - |void| **set_camera_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_camera_attributes**\ (\ )
 
-The default :ref:`CameraAttributes<class_CameraAttributes>` resource to use if none set on the :ref:`Camera3D<class_Camera3D>`.
+:ref:`Camera3D<class_Camera3D>` 上未設定時 :ref:`CameraAttributes<class_CameraAttributes>` 時預設使用的資源。
 
 .. rst-class:: classref-item-separator
 
@@ -83,7 +83,7 @@ The default :ref:`CameraAttributes<class_CameraAttributes>` resource to use if n
 
 - :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>` **get_direct_space_state**\ (\ )
 
-Direct access to the world's physics 3D space state. Used for querying current and potential collisions. When using multi-threaded physics, access is limited to :ref:`Node._physics_process()<class_Node_private_method__physics_process>` in the main thread.
+直接存取該世界的物理 3D 空間狀態。可用於查詢目前和可能的碰撞。在多執行緒物理中使用時，僅可在主執行緒的 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 中存取。
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Direct access to the world's physics 3D space state. Used for querying current a
 - |void| **set_environment**\ (\ value\: :ref:`Environment<class_Environment>`\ )
 - :ref:`Environment<class_Environment>` **get_environment**\ (\ )
 
-The World3D's :ref:`Environment<class_Environment>`.
+該 World3D 的 :ref:`Environment<class_Environment>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ The World3D's :ref:`Environment<class_Environment>`.
 - |void| **set_fallback_environment**\ (\ value\: :ref:`Environment<class_Environment>`\ )
 - :ref:`Environment<class_Environment>` **get_fallback_environment**\ (\ )
 
-The World3D's fallback environment will be used if :ref:`environment<class_World3D_property_environment>` fails or is missing.
+在 :ref:`environment<class_World3D_property_environment>` 失敗或丟失時，World3D 所使用的退回環境。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ The World3D's fallback environment will be used if :ref:`environment<class_World
 
 - :ref:`RID<class_RID>` **get_navigation_map**\ (\ )
 
-The :ref:`RID<class_RID>` of this world's navigation map. Used by the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+這個世界的導覽地圖的 :ref:`RID<class_RID>`\ 。由 :ref:`NavigationServer3D<class_NavigationServer3D>` 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ The :ref:`RID<class_RID>` of this world's navigation map. Used by the :ref:`Navi
 
 - :ref:`RID<class_RID>` **get_scenario**\ (\ )
 
-The World3D's visual scenario.
+該 World3D 的可視場景。
 
 .. rst-class:: classref-item-separator
 
@@ -165,14 +165,14 @@ The World3D's visual scenario.
 
 - :ref:`RID<class_RID>` **get_space**\ (\ )
 
-The World3D's physics space.
+該 World3D 的物理空間。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要使用者覆寫才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
-.. |void| replace:: :abbr:`void (No return value.)`
+.. |const| replace:: :abbr:`const (本方法沒有副作用。不會修改該實例的任何成員變數。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了這裡描述的參數外，還可以接受任意數量的參數。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用於建構一個型別。)`
+.. |static| replace:: :abbr:`static (本方法無需實例即可呼叫，因此可以直接使用類別名稱呼叫。)`
+.. |operator| replace:: :abbr:`operator (本方法描述將本型別作為左運算元時可用的有效運算子。)`
+.. |bitfield| replace:: :abbr:`BitField (此值是由下列旗標組成的位元遮罩整數。)`
+.. |void| replace:: :abbr:`void (無回傳值。)`

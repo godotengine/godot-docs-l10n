@@ -193,15 +193,15 @@ Engine
 - |void| **set_physics_ticks_per_second**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_ticks_per_second**\ (\ )
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+Количество фиксированных итераций в секунду. Этот параметр определяет, как часто запускаются моделирование физики и метод :ref:`Node._physics_process()<class_Node_private_method__physics_process>`.
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+Использование ЦП приблизительно зависит от частоты обновления физики. Однако при очень низкой частоте обновления (обычно ниже 30) поведение физики может нарушаться. При низкой частоте обновления ввод также может стать менее отзывчивым, поскольку может возникнуть разрыв между регистрацией ввода и ответом на следующий такт обновления физики. Высокая частота обновления обеспечивает более точное моделирование физики, особенно для быстро движущихся объектов. Например, в гоночных играх может быть полезно увеличить частоту обновления выше значения по умолчанию (60).
 
-See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+См. также :ref:`max_fps<class_Engine_property_max_fps>` и :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
 
-\ **Note:** Only :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+\ **Примечание:** За один отрендеренный кадр может быть смоделировано максимум :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` тактов физики. Если для обеспечения корректной работы рендеринга требуется больше физических тиков на каждый отрендеренный кадр, проект будет казаться замедленным (даже если ``delta`` постоянно используется в физических расчетах). Поэтому рекомендуется также увеличить :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>`, если :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` значительно превышает значение по умолчанию.
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **Примечание:** Рекомендуется включить :doc:`интерполяцию физики <../tutorials/physics/interpolation/index>`, если вы изменяете :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` на значение, не кратное ``60``. Использование интерполяции физики позволит избежать дрожания изображения, когда частота обновления монитора и частота обновления физики не совпадают точно.
 
 .. rst-class:: classref-item-separator
 
