@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -31,6 +31,12 @@ msgstr ""
 "Para compilar las plantillas de exportación para la Web, se requiere lo "
 "siguiente:"
 
+msgid "`Emscripten 4.0.0+ <https://emscripten.org>`__."
+msgstr "`Emscripten 4.0.0+ <https://emscripten.org>`__."
+
+msgid "`Python 3.8+ <https://www.python.org/>`__."
+msgstr "`Python 3.8+ <https://www.python.org/>`__."
+
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
 msgstr ""
@@ -45,7 +51,7 @@ msgstr ""
 "sección :ref:`doc_introduction_to_the_buildsystem`."
 
 msgid "Building export templates"
-msgstr "Construyendo plantillas de exportación"
+msgstr "Construir plantillas de exportación"
 
 msgid ""
 "Before starting, confirm that ``emcc`` is available in your PATH. This is "
@@ -65,9 +71,8 @@ msgid ""
 "<doc_javascript_export_options>` for more info."
 msgstr ""
 "Las plantillas de exportación predeterminadas no son compatibles con "
-"GDExtension por motivos de rendimiento y compatibilidad. "
-"Consulta :ref:`export page <doc_javascript_export_options>` para obtener más "
-"información."
+"GDExtension por motivos de rendimiento y compatibilidad. Véase :ref:`export "
+"page <doc_javascript_export_options>` para obtener más información."
 
 msgid ""
 "Refer to the :ref:`export page <doc_javascript_export_options>` for the web "

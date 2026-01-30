@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -10,6 +10,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "Upgrading from Godot 4.5 to Godot 4.6"
+msgstr "Migrar desde Godot 4.5 a Godot 4.6"
 
 msgid "Breaking changes"
 msgstr "Cambios importantes"
@@ -56,8 +59,17 @@ msgstr "|✔️|"
 msgid "|✔️ with compat|"
 msgstr "|✔️ compatible|"
 
+msgid "`GH-114053`_"
+msgstr "`GH-114053`_"
+
+msgid "`GH-110867`_"
+msgstr "`GH-110867`_"
+
 msgid "**Performance**"
 msgstr "**Rendimiento:**"
+
+msgid "`GH-110433`_"
+msgstr "`GH-110433`_"
 
 msgid "Animation"
 msgstr "Animación"
@@ -68,20 +80,95 @@ msgstr "**AnimationPlayer**"
 msgid "|❌|"
 msgstr "|❌|"
 
+msgid "`GH-110767`_"
+msgstr "`GH-110767`_"
+
 msgid "3D"
 msgstr "3D"
+
+msgid "`GH-110120`_"
+msgstr "`GH-110120`_"
 
 msgid "Rendering"
 msgstr "Renderizado"
 
+msgid "**DisplayServer**"
+msgstr "**DisplayServer**"
+
+msgid "`GH-113459`_"
+msgstr "`GH-113459`_"
+
+msgid "`GH-112379`_"
+msgstr "`GH-112379`_"
+
 msgid "GUI nodes"
 msgstr "Nodos GUI"
+
+msgid "**Control**"
+msgstr "**Control**"
+
+msgid "`GH-110250`_"
+msgstr "`GH-110250`_"
+
+msgid "**FileDialog**"
+msgstr "**FileDialog**"
+
+msgid "`GH-111439`_"
+msgstr "`GH-111439`_"
+
+msgid "**LineEdit**"
+msgstr "**LineEdit**"
+
+msgid "`GH-111117`_"
+msgstr "`GH-111117`_"
+
+msgid "**SplitContainer**"
+msgstr "**SplitContainer**"
+
+msgid "`GH-90411`_"
+msgstr "`GH-90411`_"
 
 msgid "Networking"
 msgstr "Redes"
 
+msgid "**StreamPeerTCP**"
+msgstr "**StreamPeerTCP**"
+
+msgid "`GH-107954`_"
+msgstr "`GH-107954`_"
+
+msgid "**TCPServer**"
+msgstr "**TCPServer**"
+
+msgid "OpenXR"
+msgstr "OpenXR"
+
+msgid "**OpenXRExtensionWrapper**"
+msgstr "**OpenXRExtensionWrapper**"
+
+msgid "`GH-109302`_"
+msgstr "`GH-109302`_"
+
+msgid "N/A"
+msgstr "N/A"
+
 msgid "Editor"
 msgstr "Editor"
+
+msgid "**EditorExportPreset**"
+msgstr "**EditorExportPreset**"
+
+msgid "`GH-107167`_"
+msgstr "`GH-107167`_"
+
+msgid "**EditorFileDialog**"
+msgstr "**EditorFileDialog**"
+
+msgid "`GH-111212`_"
+msgstr "`GH-111212`_"
+
+msgid "`GH-111162`_"
+msgstr "`GH-111162`_"
 
 msgid "Behavior changes"
 msgstr "Cambios de comportamiento"
@@ -89,8 +176,32 @@ msgstr "Cambios de comportamiento"
 msgid "Android"
 msgstr "Android"
 
+msgid "Navigation"
+msgstr "Navegación"
+
+msgid "Member"
+msgstr "Miembro"
+
+msgid "Old Value"
+msgstr "Valor antiguo"
+
+msgid "New Value"
+msgstr "Nuevo valor"
+
 msgid "**MeshInstance3D**"
 msgstr "**MeshInstance3D**"
+
+msgid "NodePath(\"..\")"
+msgstr "NodePath(\"..\")"
+
+msgid "NodePath(\"\")"
+msgstr "NodePath(\"\")"
+
+msgid "`GH-112267`_"
+msgstr "`GH-112267`_"
+
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
 
 msgid "8"
 msgstr "8"
@@ -98,11 +209,89 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "`GH-107902`_"
+msgstr "`GH-107902`_"
+
+msgid "613"
+msgstr "613"
+
+msgid "618"
+msgstr "618"
+
+msgid "`GH-114043`_"
+msgstr "`GH-114043`_"
+
+msgid "**Environment**"
+msgstr "**Entorno**"
+
+msgid "Property ``glow_blend_mode``"
+msgstr "Propiedad ``glow_blend_mode``"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
 
+msgid "`GH-110671`_"
+msgstr "`GH-110671`_"
+
+msgid "Property ``glow_intensity``"
+msgstr "Propiedad ``glow_intensity``"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "Property ``glow_levels/2``"
+msgstr "Propiedad ``glow_levels/2``"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "Property ``glow_levels/3``"
+msgstr "Propiedad ``glow_levels/3``"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "Property ``glow_levels/4``"
+msgstr "Propiedad ``glow_levels/4``"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "Property ``glow_levels/5``"
+msgstr "Propiedad ``glow_levels/5``"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "Propiedad ``ssr_depth_tolerance``"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "`GH-111210`_"
+msgstr "`GH-111210`_"
+
+msgid "Property/Parameter"
+msgstr "Propiedad/Parámetro"
+
 msgid "**PopupMenu**"
 msgstr "**PopupMenu**"
+
+msgid "`GH-110256`_"
+msgstr "`GH-110256`_"
+
+msgid "true"
+msgstr "true"
+
+msgid "`GH-112073`_"
+msgstr "`GH-112073`_"

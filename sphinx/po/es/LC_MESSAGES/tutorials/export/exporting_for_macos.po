@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Exporting for macOS"
-msgstr "Exportando para macOS"
+msgstr "Exportar para macOS"
 
 msgid "Requirements"
 msgstr "Requerimientos"
@@ -52,8 +52,8 @@ msgid ""
 msgstr ""
 "De forma predeterminada, macOS solo ejecutará aplicaciones que estén "
 "firmadas y notarizadas. Si utilizas alguna otra configuración de firma, "
-"consulta :ref:`Running Godot apps on macOS <doc_running_on_macos>` para "
-"conocer soluciones alternativas."
+"véase :ref:`Running Godot apps on macOS <doc_running_on_macos>` para conocer "
+"soluciones alternativas."
 
 msgid ""
 "To notarize an app, you **must** have a valid `Apple Developer ID "
@@ -90,7 +90,7 @@ msgid ""
 msgstr ""
 "Después de que se haya completado la notarización, \"grapa el ticket\" "
 "(staple the ticket) al proyecto exportado. Puedes encontrar más información "
-"sobre cómo hacerlo en `Agregando el ticket de notarización a tu proyecto "
+"sobre cómo hacerlo en `Agregar el ticket de notarización a tu proyecto "
 "exportado <https://developer.apple.com/documentation/security/"
 "notarizing_macos_software_before_distribution/"
 "customizing_the_notarization_workflow>`__."
@@ -113,6 +113,15 @@ msgstr "Codesign"
 msgid "Identity"
 msgstr "Identidad"
 
+msgid "Certificate File"
+msgstr "Archivo de certificado"
+
+msgid "Certificate Password"
+msgstr "Contraseña de certificado"
+
+msgid "Custom Options"
+msgstr "Opciones personalizadas"
+
 msgid "Notarization Options"
 msgstr "Opciones de Notorización"
 
@@ -133,9 +142,6 @@ msgstr ""
 "Contraseña de Apple ID específica de la aplicación. Ver `Using app-specific "
 "passwords <https://support.apple.com/en-us/HT204397>`__ para habilitar el "
 "factor doble de autenticación y crear la contraseña de la app. [3]_"
-
-msgid "Apple Team ID"
-msgstr "*Apple Team ID"
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://"

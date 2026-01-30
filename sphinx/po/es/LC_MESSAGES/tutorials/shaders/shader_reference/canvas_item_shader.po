@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -101,6 +101,15 @@ msgstr "Integrado"
 msgid "in float **TIME**"
 msgstr "en real **TIME**"
 
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
 msgid "Vertex built-ins"
 msgstr "Incorporados en Vertex"
 
@@ -109,6 +118,18 @@ msgstr "**x**: Ángulo de rotación en radianes."
 
 msgid "**z**: Animation frame."
 msgstr "**z**: Fotograma de animación."
+
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "in mat4 **MODEL_MATRIX**"
+
+msgid "in mat4 **CANVAS_MATRIX**"
+msgstr "in mat4 **CANVAS_MATRIX**"
+
+msgid "in mat4 **SCREEN_MATRIX**"
+msgstr "in mat4 **SCREEN_MATRIX**"
+
+msgid "in int  **INSTANCE_ID**"
+msgstr "in int  **INSTANCE_ID**"
 
 msgid "Instance ID for instancing."
 msgstr "ID de instancia para el instanciamiento."
@@ -120,7 +141,7 @@ msgid "Instance custom data."
 msgstr "Datos personalizados de la instancia."
 
 msgid "in bool **AT_LIGHT_PASS**"
-msgstr "in booleano **AT_LIGHT_PASS**"
+msgstr "in bool **AT_LIGHT_PASS**"
 
 msgid "Always ``false``."
 msgstr "Siempre ``false``."
@@ -131,6 +152,9 @@ msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
 
+msgid "in int **VERTEX_ID**"
+msgstr "in int **VERTEX_ID**"
+
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
@@ -138,19 +162,34 @@ msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
 
 msgid "inout float **POINT_SIZE**"
-msgstr "inout real **POINT_SIZE**"
+msgstr "inout float **POINT_SIZE**"
 
 msgid "Point size for point drawing."
 msgstr "Tamaño del punto para el dibujo del punto."
 
+msgid "in vec4 **CUSTOM0**"
+msgstr "in vec4 **CUSTOM0**"
+
+msgid "in vec4 **CUSTOM1**"
+msgstr "in vec4 **CUSTOM1**"
+
 msgid "Fragment built-ins"
 msgstr "Incorporados en Fragment"
+
+msgid "COLOR and TEXTURE"
+msgstr "COLOR y TEXTURE"
+
+msgid "NORMAL"
+msgstr "NORMAL"
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
+
+msgid "in vec4 **REGION_RECT**"
+msgstr "in vec4 **REGION_RECT**"
 
 msgid "in vec2 **POINT_COORD**"
 msgstr "in vec2 **POINT_COORD**"
@@ -163,6 +202,9 @@ msgstr "sampler2D **TEXTURE**"
 
 msgid "Default 2D texture."
 msgstr "Textura 2D por defecto."
+
+msgid "in vec4 **SPECULAR_SHININESS**"
+msgstr "in vec4 **SPECULAR_SHININESS**"
 
 msgid "in vec2 **UV**"
 msgstr "in vec2 **UV**"
@@ -179,6 +221,15 @@ msgstr "inout vec3 **NORMAL**"
 msgid "Default 2D normal texture."
 msgstr "Textura normal 2D por defecto."
 
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMAL_MAP**"
+
+msgid "inout vec2 **SHADOW_VERTEX**"
+msgstr "inout vec2 **SHADOW_VERTEX**"
+
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
+
 msgid "Light built-ins"
 msgstr "Incorporados en Light"
 
@@ -191,11 +242,38 @@ msgstr "in vec4 **COLOR**"
 msgid "UV for Point Sprite."
 msgstr "UV para Point Sprite."
 
+msgid "in vec4 **LIGHT_COLOR**"
+msgstr "in vec4 **LIGHT_COLOR**"
+
+msgid "in float **LIGHT_ENERGY**"
+msgstr "in float **LIGHT_ENERGY**"
+
+msgid "in vec3 **LIGHT_POSITION**"
+msgstr "in vec3 **LIGHT_POSITION**"
+
+msgid "in vec3 **LIGHT_DIRECTION**"
+msgstr "in vec3 **LIGHT_DIRECTION**"
+
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
+
+msgid "in vec3 **LIGHT_VERTEX**"
+msgstr "in vec3 **LIGHT_VERTEX**"
+
 msgid "inout vec4 **LIGHT**"
 msgstr "inout vec4 **LIGHT**"
+
+msgid "out vec4 **SHADOW_MODULATE**"
+msgstr "out vec4 **SHADOW_MODULATE**"
 
 msgid "Function"
 msgstr "Función"
 
+msgid "float **texture_sdf** (vec2 sdf_pos)"
+msgstr "float **texture_sdf** (vec2 sdf_pos)"
+
 msgid "Performs an SDF texture lookup."
 msgstr "Realiza una lectura de textura SDF."
+
+msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"

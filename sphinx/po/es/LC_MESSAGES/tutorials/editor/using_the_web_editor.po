@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Using the Web editor"
-msgstr "Usando el editor web"
+msgstr "Usar el editor web"
 
 msgid ""
 "There is a `Web editor <https://editor.godotengine.org/>`__ you can use to "
@@ -28,10 +28,17 @@ msgid ""
 msgstr ""
 "El editor web está en una fase preliminar. Tiene las funciones suficientes "
 "para propósitos educativos, pero **no se recomienda para crear proyectos.** "
-"Ver :ref:`doc_using_the_web_editor_limitations` abajo."
+"Véase :ref:`doc_using_the_web_editor_limitations` abajo."
 
 msgid "Browser support"
 msgstr "Soporte del navegador"
+
+msgid ""
+"The Web editor requires support for WebAssembly's SharedArrayBuffer. This is "
+"in turn required to support threading in the browser."
+msgstr ""
+"El editor web requiere soporte para SharedArrayBuffer de WebAssembly. Esto, "
+"a su vez, es necesario para admitir subprocesos en el navegador."
 
 msgid "Limitations"
 msgstr "Limitaciones"
@@ -97,7 +104,7 @@ msgid "No support for Android one-click deploy."
 msgstr "Sin soporte para el deploy en Android con sólo un click."
 
 msgid "Importing a project"
-msgstr "Importando un proyecto"
+msgstr "Importar un proyecto"
 
 msgid "To import an existing project, the current process is as follows:"
 msgstr "Para importar un proyecto existente, el proceso actual es como sigue:"

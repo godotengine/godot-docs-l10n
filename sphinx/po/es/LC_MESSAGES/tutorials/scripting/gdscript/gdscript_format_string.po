@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -13,6 +13,16 @@ msgstr ""
 
 msgid "GDScript format strings"
 msgstr "Cadenas de formato en GDScript"
+
+msgid "Format strings"
+msgstr "Strings de formato"
+
+msgid ""
+"*Format strings* are a way to reuse text templates to succinctly create "
+"different but similar strings."
+msgstr ""
+"Las *strings de formato* son una forma de reutilizar plantillas de texto "
+"para crear de forma sucinta strings diferentes pero similares."
 
 msgid "Examine this concrete GDScript example:"
 msgstr "Mira este ejemplo concreto en GDScript:"
@@ -100,6 +110,9 @@ msgstr "``X``"
 
 msgid "``f``"
 msgstr "``f``"
+
+msgid "``v``"
+msgstr "``v``"
 
 msgid "Placeholder modifiers"
 msgstr "Modificadores de parámetros"
@@ -268,8 +281,14 @@ msgstr ""
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "``\"Hola, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
+msgid "``\"Hi, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
+msgstr "``\"¡Hola, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
+
 msgid "no index"
 msgstr "sin índice"
+
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
+msgstr "``\"¡Hola, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
 
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
@@ -317,3 +336,6 @@ msgstr ""
 
 msgid "Hi, Godette v3.11"
 msgstr "Hola, Godette v3.11"
+
+msgid "String concatenation"
+msgstr "Concatenación de Strings"

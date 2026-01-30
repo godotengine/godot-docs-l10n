@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -165,14 +165,26 @@ msgstr "array crudo"
 msgid "21"
 msgstr "21"
 
+msgid "int32 array"
+msgstr "array de int32"
+
 msgid "22"
 msgstr "22"
+
+msgid "int64 array"
+msgstr "arreglo de int64"
 
 msgid "23"
 msgstr "23"
 
+msgid "float32 array"
+msgstr "array de float32"
+
 msgid "24"
 msgstr "24"
+
+msgid "float64 array"
+msgstr "array de float64"
 
 msgid "25"
 msgstr "25"
@@ -367,6 +379,9 @@ msgstr "Normal en Z"
 msgid "Distance"
 msgstr "Distancia"
 
+msgid "10: :ref:`Quaternion<class_quaternion>`"
+msgstr "10: :ref:`Quaternion<class_quaternion>`"
+
 msgid "Imaginary X"
 msgstr "X imaginario"
 
@@ -408,6 +423,9 @@ msgstr "36"
 
 msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr "La componente Z del vector columna Z, accedido mediante [2][2]"
+
+msgid "13: :ref:`Transform3D<class_transform3d>`"
+msgstr "13: :ref:`Transform3D<class_transform3d>`"
 
 msgid "40"
 msgstr "40"
@@ -490,6 +508,9 @@ msgstr "Cada cadena de nombres es rellenado a 4 bytes."
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr "16: :ref:`RID<class_rid>` (sin soporte)"
 
+msgid "17: :ref:`Object<class_object>`"
+msgstr "17: :ref:`Object<class_object>`"
+
 msgid "X+8"
 msgstr "X+8"
 
@@ -555,17 +576,32 @@ msgstr "Byte (0..255)"
 msgid "The array data is padded to 4 bytes."
 msgstr "Los datos del array son rellenados a 4 bytes."
 
+msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
+msgstr "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
+
 msgid "Array length (Integers)"
 msgstr "longitud de array(Enteros)"
 
 msgid "8..8+length\\*4"
 msgstr "8..8+longitud\\*4"
 
+msgid "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
+msgstr "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
+
 msgid "8..8+length\\*8"
 msgstr "8..8+longitud\\*8"
 
+msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
+msgstr "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
+
 msgid "Array length (Floats)"
 msgstr "Longitud de array (Flotantes)"
+
+msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
+msgstr "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
+
+msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
+msgstr "25: :ref:`PackedStringArray<class_PackedStringArray>`"
 
 msgid "Array length (Strings)"
 msgstr "Longitud de array (Cadenas)"
@@ -576,11 +612,17 @@ msgstr "Por cada Cadena:"
 msgid "Every string is padded to 4 bytes."
 msgstr "Cada cadena es rellenada a 4 bytes."
 
+msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
+msgstr "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
+
 msgid "Array length"
 msgstr "Longitud de la matriz"
 
 msgid "8..12+length\\*8"
 msgstr "8..12+longitud\\*8"
+
+msgid "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
+msgstr "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
 
 msgid "8..8+length\\*12"
 msgstr "8..8+longitud\\*12"
@@ -590,6 +632,9 @@ msgstr "8..12+longitud\\*12"
 
 msgid "8..16+length\\*12"
 msgstr "8..16+longitud\\*12"
+
+msgid "28: :ref:`PackedColorArray<class_PackedColorArray>`"
+msgstr "28: :ref:`PackedColorArray<class_PackedColorArray>`"
 
 msgid "8..8+length\\*16"
 msgstr "8..8+longitud\\*16"

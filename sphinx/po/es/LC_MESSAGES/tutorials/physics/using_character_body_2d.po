@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -24,6 +24,9 @@ msgstr ""
 "Ambos métodos de movimiento tienen diferentes propósitos, y más adelante se "
 "mostrarán ejemplos de cómo funcionan."
 
+msgid "move_and_collide"
+msgstr "move_and_collide"
+
 msgid ""
 "``KinematicCollision2D`` is an object containing data about the collision "
 "and the colliding object. Using this data, you can calculate your collision "
@@ -32,6 +35,9 @@ msgstr ""
 "``KinematicCollision2D`` es un objeto que contiene datos sobre la colisión y "
 "el objeto con el cual se colisiona. Utiliza estos datos para calcular la "
 "respuesta a la colisión."
+
+msgid "move_and_slide"
+msgstr "move_and_slide"
 
 msgid ""
 "The ``move_and_slide()`` method is intended to simplify the collision "
@@ -64,7 +70,7 @@ msgstr ""
 "\"suelo.\""
 
 msgid "Detecting collisions"
-msgstr "Detectando colisiones"
+msgstr "Detectar colisiones"
 
 msgid ""
 "When using ``move_and_collide()`` the function returns a "
@@ -112,7 +118,7 @@ msgstr "Movimiento y paredes"
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr ""
-"Ver :ref:`doc_2d_movement` para más ejemplos de técnicas para implementar "
+"Véase :ref:`doc_2d_movement` para más ejemplos de técnicas para implementar "
 "movimiento en 2D."
 
 msgid ""

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -69,11 +69,26 @@ msgstr "**depth_draw_never**"
 msgid "Never draw depth."
 msgstr "Nunca dibuja depth."
 
+msgid "**depth_prepass_alpha**"
+msgstr "**depth_prepass_alpha**"
+
 msgid "Do opaque depth pre-pass for transparent geometry."
 msgstr "Realiza un pre-pass de depth opaco para geometría transparente."
 
+msgid "**depth_test_disabled**"
+msgstr "**depth_test_disabled**"
+
 msgid "Disable depth testing."
 msgstr "Desactiva testing de depth."
+
+msgid "**depth_test_default**"
+msgstr "**depth_test_default**"
+
+msgid "**depth_test_inverted**"
+msgstr "**depth_test_inverted**"
+
+msgid "**sss_mode_skin**"
+msgstr "**sss_mode_skin**"
 
 msgid "**cull_back**"
 msgstr "**cull_back**"
@@ -95,6 +110,12 @@ msgstr "Culling deshabilitado (doble cara)."
 
 msgid "**unshaded**"
 msgstr "**unshaded**"
+
+msgid "**wireframe**"
+msgstr "**wireframe**"
+
+msgid "**debug_shadow_splits**"
+msgstr "**debug_shadow_splits**"
 
 msgid "**diffuse_burley**"
 msgstr "**diffuse_burley**"
@@ -140,7 +161,7 @@ msgstr ""
 "Deshabilitar la contribución de la luz ambiental y el mapa de radiaciones."
 
 msgid "**shadow_to_opacity**"
-msgstr "**sombra_a_opacidad**"
+msgstr "**shadow_to_opacity**"
 
 msgid ""
 "Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
@@ -154,12 +175,54 @@ msgstr ""
 msgid "**vertex_lighting**"
 msgstr "**vertex_lighting**"
 
+msgid "**particle_trails**"
+msgstr "**particle_trails**"
+
+msgid "**alpha_to_coverage**"
+msgstr "**alpha_to_coverage**"
+
 msgid ""
 "Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
 "pull/40364>`_ for more."
 msgstr ""
 "Modo Alpha antialiasing, ver `aquí <https://github.com/godotengine/godot/"
 "pull/40364>`_ para más detalles."
+
+msgid "**alpha_to_coverage_and_one**"
+msgstr "**alpha_to_coverage_and_one**"
+
+msgid "**fog_disabled**"
+msgstr "**fog_disabled**"
+
+msgid "**read**"
+msgstr "**read**"
+
+msgid "**write**"
+msgstr "**write**"
+
+msgid "**write_if_depth_fail**"
+msgstr "**write_if_depth_fail**"
+
+msgid "**compare_always**"
+msgstr "**compare_always**"
+
+msgid "**compare_equal**"
+msgstr "**compare_equal**"
+
+msgid "**compare_not_equal**"
+msgstr "**compare_not_equal**"
+
+msgid "**compare_less**"
+msgstr "**compare_less**"
+
+msgid "**compare_less_or_equal**"
+msgstr "**compare_less_or_equal**"
+
+msgid "**compare_greater**"
+msgstr "**compare_greater**"
+
+msgid "**compare_greater_or_equal**"
+msgstr "**compare_greater_or_equal**"
 
 msgid "Built-ins"
 msgstr "Funciones propias"
@@ -178,6 +241,15 @@ msgstr "Integrado"
 msgid "in float **TIME**"
 msgstr "en real **TIME**"
 
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in booleano **OUTPUT_IS_SRGB**"
 
@@ -187,6 +259,9 @@ msgid ""
 msgstr ""
 "``true`` cuando la salida está en el espacio de color sRGB (esto es ``true`` "
 "en el renderizador Compatibility, y ``false`` en Forward+ y Mobile)."
+
+msgid "in float **CLIP_SPACE_FAR**"
+msgstr "in float **CLIP_SPACE_FAR**"
 
 msgid ""
 "Clip space far ``z`` value. In the Forward+ or Mobile renderers, it's "
@@ -218,11 +293,20 @@ msgstr "en vec2 **VIEWPORT_SIZE**"
 msgid "Size of viewport (in pixels)."
 msgstr "Tamaño del viewport (en píxeles)."
 
+msgid "in mat4 **VIEW_MATRIX**"
+msgstr "in mat4 **VIEW_MATRIX**"
+
 msgid "World space to view space transform."
 msgstr "El espacio mundial para ver la transformada del espacio."
 
+msgid "in mat4 **INV_VIEW_MATRIX**"
+msgstr "in mat4 **INV_VIEW_MATRIX**"
+
 msgid "View space to world space transform."
 msgstr "Transform de espacio de vista a espacio de mundo."
+
+msgid "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
+msgstr "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
 
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
@@ -230,8 +314,23 @@ msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 msgid "Clip space to view space transform."
 msgstr "Recortar el espacio para ver la transformada del espacio."
 
+msgid "in vec3 **NODE_POSITION_WORLD**"
+msgstr "in vec3 **NODE_POSITION_WORLD**"
+
 msgid "Node position, in world space."
 msgstr "Posición del nodo, en el espacio mundial."
+
+msgid "in vec3 **NODE_POSITION_VIEW**"
+msgstr "in vec3 **NODE_POSITION_VIEW**"
+
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr "in vec3 **CAMERA_POSITION_WORLD**"
+
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr "in vec3 **CAMERA_DIRECTION_WORLD**"
+
+msgid "in uint **CAMERA_VISIBLE_LAYERS**"
+msgstr "in uint **CAMERA_VISIBLE_LAYERS**"
 
 msgid "in int **INSTANCE_ID**"
 msgstr "en entero **INSTANCE_ID**"
@@ -246,8 +345,23 @@ msgid "Instance custom data (for particles, mostly)."
 msgstr ""
 "Datos personalizados de la instancia (para las partículas, en su mayoría)."
 
+msgid "in int **VIEW_INDEX**"
+msgstr "in int **VIEW_INDEX**"
+
+msgid "in int **VIEW_MONO_LEFT**"
+msgstr "in int **VIEW_MONO_LEFT**"
+
+msgid "in int **VIEW_RIGHT**"
+msgstr "in int **VIEW_RIGHT**"
+
+msgid "in vec3 **EYE_OFFSET**"
+msgstr "in vec3 **EYE_OFFSET**"
+
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
+
+msgid "in int **VERTEX_ID**"
+msgstr "in int **VERTEX_ID**"
 
 msgid "inout vec3 **NORMAL**"
 msgstr "inout vec3 **NORMAL**"
@@ -277,13 +391,13 @@ msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
 
 msgid "out float **ROUGHNESS**"
-msgstr "out real **ROUGHNESS**"
+msgstr "out float **ROUGHNESS**"
 
 msgid "Roughness for vertex lighting."
 msgstr "Rugosidad para la iluminación del vértice."
 
 msgid "inout float **POINT_SIZE**"
-msgstr "inout real **POINT_SIZE**"
+msgstr "inout float **POINT_SIZE**"
 
 msgid "Point size for point rendering."
 msgstr "Tamaño de punto para la representación de puntos."
@@ -291,11 +405,41 @@ msgstr "Tamaño de punto para la representación de puntos."
 msgid "inout mat4 **MODELVIEW_MATRIX**"
 msgstr "inout mat4 **MODELVIEW_MATRIX**"
 
+msgid "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+msgstr "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "in mat4 **MODEL_MATRIX**"
+
+msgid "in mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "in mat3 **MODEL_NORMAL_MATRIX**"
+
 msgid "inout mat4 **PROJECTION_MATRIX**"
 msgstr "inout mat4 **PROJECTION_MATRIX**"
 
 msgid "View space to clip space transform."
 msgstr "Ver el espacio para recortar la transformación del espacio."
+
+msgid "in uvec4 **BONE_INDICES**"
+msgstr "in uvec4 **BONE_INDICES**"
+
+msgid "in vec4 **BONE_WEIGHTS**"
+msgstr "in vec4 **BONE_WEIGHTS**"
+
+msgid "in vec4 **CUSTOM0**"
+msgstr "in vec4 **CUSTOM0**"
+
+msgid "in vec4 **CUSTOM1**"
+msgstr "in vec4 **CUSTOM1**"
+
+msgid "in vec4 **CUSTOM2**"
+msgstr "in vec4 **CUSTOM2**"
+
+msgid "in vec4 **CUSTOM3**"
+msgstr "in vec4 **CUSTOM3**"
+
+msgid "out float **Z_CLIP_SCALE**"
+msgstr "out float **Z_CLIP_SCALE**"
 
 msgid "Fragment built-ins"
 msgstr "Incorporados en Fragment"
@@ -340,6 +484,9 @@ msgstr "in mat4 **PROJECTION_MATRIX**"
 msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
 
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
+
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr "sampler2D **SCREEN_TEXTURE**"
 
@@ -352,22 +499,40 @@ msgstr "sampler2D **DEPTH_TEXTURE**"
 msgid "out float **DEPTH**"
 msgstr "out real **DEPTH**"
 
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMAL_MAP**"
+
 msgid "out vec3 **ALBEDO**"
 msgstr "out vec3 **ALBEDO**"
 
 msgid "out float **ALPHA**"
 msgstr "out real **ALPHA**"
 
+msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
+msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
+
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 "Si se escribe, se descartan los valores inferiores a una cierta cantidad de "
 "alfa."
 
+msgid "out float **ALPHA_HASH_SCALE**"
+msgstr "out float **ALPHA_HASH_SCALE**"
+
+msgid "out float **ALPHA_ANTIALIASING_EDGE**"
+msgstr "out float **ALPHA_ANTIALIASING_EDGE**"
+
+msgid "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+msgstr "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+
+msgid "out float **PREMUL_ALPHA_FACTOR**"
+msgstr "out float **PREMUL_ALPHA_FACTOR**"
+
 msgid "out float **METALLIC**"
-msgstr "out real **METALLIC**"
+msgstr "out float **METALLIC**"
 
 msgid "out float **SPECULAR**"
-msgstr "out real **SPECULAR**"
+msgstr "out float **SPECULAR**"
 
 msgid "out float **RIM**"
 msgstr "out real **RIM**"
@@ -396,6 +561,18 @@ msgstr "Dirección de la distorsión, uso con flowmaps."
 msgid "out float **SSS_STRENGTH**"
 msgstr "out real **SSS_STRENGTH**"
 
+msgid "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+msgstr "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+
+msgid "out float **SSS_TRANSMITTANCE_DEPTH**"
+msgstr "out float **SSS_TRANSMITTANCE_DEPTH**"
+
+msgid "out float **SSS_TRANSMITTANCE_BOOST**"
+msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
+
+msgid "inout vec3 **BACKLIGHT**"
+msgstr "inout vec3 **BACKLIGHT**"
+
 msgid "out float **AO**"
 msgstr "out real **AO**"
 
@@ -404,6 +581,15 @@ msgstr "out real **AO_LIGHT_AFFECT**"
 
 msgid "out vec3 **EMISSION**"
 msgstr "out vec3 **EMISSION**"
+
+msgid "out vec4 **FOG**"
+msgstr "out vec4 **FOG**"
+
+msgid "out vec4 **RADIANCE**"
+msgstr "out vec4 **RADIANCE**"
+
+msgid "out vec4 **IRRADIANCE**"
+msgstr "out vec4 **IRRADIANCE**"
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -452,6 +638,15 @@ msgstr "in vec3 **LIGHT**"
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "in vec3 **LIGHT_COLOR**"
 
+msgid "in float **SPECULAR_AMOUNT**"
+msgstr "in float **SPECULAR_AMOUNT**"
+
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
+
+msgid "in float **ATTENUATION**"
+msgstr "in float **ATTENUATION**"
+
 msgid "Attenuation based on distance or shadow."
 msgstr "Atenuación basada en la distancia o en la sombra."
 
@@ -460,6 +655,12 @@ msgstr "in vec3 **ALBEDO**"
 
 msgid "Base albedo."
 msgstr "Albedo de la base."
+
+msgid "in vec3 **BACKLIGHT**"
+msgstr "in vec3 **BACKLIGHT**"
+
+msgid "in float **METALLIC**"
+msgstr "in float **METALLIC**"
 
 msgid "Metallic."
 msgstr "Metálico."

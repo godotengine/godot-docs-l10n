@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Using C++ profilers"
-msgstr "Usando perfiladores de C++"
+msgstr "Usar perfiladores de C++"
 
 msgid ""
 "To optimize Godot's performance, you need to know what to optimize first. To "
@@ -20,6 +20,19 @@ msgid ""
 msgstr ""
 "Para optimizar el rendimiento de Godot, es necesario saber qué aspectos "
 "optimizar primero. Para lograr esto, los perfiles son herramientas útiles."
+
+msgid ""
+"There are two main types of profilers: sampling profilers and tracing "
+"profilers."
+msgstr ""
+"Existen dos tipos principales de perfiladores: perfiladores de muestreo y "
+"perfiladores de rastreo."
+
+msgid ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Windows only)"
+msgstr ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Solo en Windows)"
+
+msgid ":ref:`Hotspot <doc_profiler_hotspot>` (Linux only)"
+msgstr ":ref:`Hotspot <doc_profiler_hotspot>` (Solo en Linux)"
 
 msgid ""
 "These profilers may not be the most powerful or flexible options, but their "
@@ -31,7 +44,7 @@ msgstr ""
 "tiende a hacerlos más fáciles de usar."
 
 msgid "Setting up Godot"
-msgstr "Configurando Godot"
+msgstr "Configurar Godot"
 
 msgid ""
 "To get useful profiling information, it is **absolutely required** to use a "
@@ -69,5 +82,11 @@ msgid ""
 "See :ref:`doc_command_line_tutorial` for more command line arguments "
 "supported by Godot."
 msgstr ""
-"Consulta :ref:`doc_command_line_tutorial` para obtener más información sobre "
+"Véase :ref:`doc_command_line_tutorial` para obtener más información sobre "
 "los argumentos de línea de comandos admitidos por Godot."
+
+msgid ":ref:`Tracy <doc_profiler_tracy>`"
+msgstr ":ref:`Tracy <doc_profiler_tracy>`"
+
+msgid ":ref:`Perfetto <doc_profiler_perfetto>`"
+msgstr ":ref:`Perfetto <doc_profiler_perfetto>`"

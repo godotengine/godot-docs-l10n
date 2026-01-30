@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -109,6 +109,9 @@ msgstr "match"
 msgid "See match_."
 msgstr "Ver match_."
 
+msgid "when"
+msgstr "when"
+
 msgid "break"
 msgstr "break"
 
@@ -169,6 +172,9 @@ msgstr "Convertir el valor a un tipo dado si es posible."
 msgid "self"
 msgstr "self"
 
+msgid "super"
+msgstr "super"
+
 msgid "signal"
 msgstr "señal"
 
@@ -195,6 +201,9 @@ msgstr "precarga"
 
 msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr "Precarga una clase o variable. Ver `Clases como recursos`_."
+
+msgid "await"
+msgstr "await"
 
 msgid "yield"
 msgstr "yield"
@@ -239,6 +248,9 @@ msgstr "**Operador**"
 msgid "**Description**"
 msgstr "**Descripción**"
 
+msgid "``(`` ``)``"
+msgstr "``(`` ``)``"
+
 msgid "``x[index]``"
 msgstr "``x[index]``"
 
@@ -254,29 +266,161 @@ msgstr "``foo()``"
 msgid "Function call"
 msgstr "Llamada a funciones"
 
+msgid "``await x``"
+msgstr "``await x``"
+
+msgid "``x is Node``"
+msgstr "``x is Node``"
+
+msgid "``x is not Node``"
+msgstr "``x is not Node``"
+
+msgid "``x ** y``"
+msgstr "``x ** y``"
+
+msgid "``~x``"
+msgstr "``~x``"
+
 msgid "Bitwise NOT"
 msgstr "Negación lógica a nivel de bits (NOT)"
+
+msgid "``+x``"
+msgstr "``+x``"
 
 msgid "``-x``"
 msgstr "``-x``"
 
+msgid "``x * y``"
+msgstr "``x * y``"
+
+msgid "``x / y``"
+msgstr "``x / y``"
+
+msgid "``x % y``"
+msgstr "``x % y``"
+
 msgid "Multiplication / Division / Remainder"
 msgstr "Multiplicación / División / Resto"
+
+msgid "``x + y``"
+msgstr "``x + y``"
+
+msgid "``x - y``"
+msgstr "``x - y``"
+
+msgid "``x << y``"
+msgstr "``x << y``"
+
+msgid "``x >> y``"
+msgstr "``x >> y``"
 
 msgid "Bit shifting"
 msgstr "Poco desplazamiento"
 
+msgid "``x & y``"
+msgstr "``x & y``"
+
 msgid "Bitwise AND"
 msgstr "Conjunción lógica a nivel de bits (AND)"
+
+msgid "``x ^ y``"
+msgstr "``x ^ y``"
 
 msgid "Bitwise XOR"
 msgstr "Disyunción exclusiva a nivel de bits (XOR)"
 
+msgid "``x | y``"
+msgstr "``x | y``"
+
 msgid "Bitwise OR"
 msgstr "Disyunción lógica a nivel de bits (OR)"
 
+msgid "``x == y``"
+msgstr "``x == y``"
+
+msgid "``x != y``"
+msgstr "``x != y``"
+
+msgid "``x < y``"
+msgstr "``x < y``"
+
+msgid "``x > y``"
+msgstr "``x > y``"
+
+msgid "``x <= y``"
+msgstr "``x <= y``"
+
+msgid "``x >= y``"
+msgstr "``x >= y``"
+
+msgid "Comparison"
+msgstr "Comparación"
+
+msgid "``x in y``"
+msgstr "``x in y``"
+
+msgid "``x not in y``"
+msgstr "``x not in y``"
+
+msgid "``not x``"
+msgstr "``not x``"
+
+msgid "``!x``"
+msgstr "``!x``"
+
+msgid "``x and y``"
+msgstr "``x and y``"
+
+msgid "``x && y``"
+msgstr "``x && y``"
+
+msgid "``x or y``"
+msgstr "``x or y``"
+
+msgid "``x || y``"
+msgstr "``x || y``"
+
 msgid "Ternary if/else"
 msgstr "if / else en una linea"
+
+msgid "``x as Node``"
+msgstr "``x as Node``"
+
+msgid "``x = y``"
+msgstr "``x = y``"
+
+msgid "``x += y``"
+msgstr "``x += y``"
+
+msgid "``x -= y``"
+msgstr "``x -= y``"
+
+msgid "``x *= y``"
+msgstr "``x *= y``"
+
+msgid "``x /= y``"
+msgstr "``x /= y``"
+
+msgid "``x **= y``"
+msgstr "``x **= y``"
+
+msgid "``x %= y``"
+msgstr "``x %= y``"
+
+msgid "``x &= y``"
+msgstr "``x &= y``"
+
+msgid "``x |= y``"
+msgstr "``x |= y``"
+
+msgid "``x ^= y``"
+msgstr "``x ^= y``"
+
+msgid "``x <<= y``"
+msgstr "``x <<= y``"
+
+msgid "``x >>= y``"
+msgstr "``x >>= y``"
 
 msgid "Assignment (lowest priority)"
 msgstr "Asignación (prioridad más baja)"
@@ -284,8 +428,14 @@ msgstr "Asignación (prioridad más baja)"
 msgid "Literals"
 msgstr "Literales"
 
+msgid "**Example(s)**"
+msgstr "**Ejemplo(s)**"
+
 msgid "``null``"
 msgstr "``null``"
+
+msgid "``false``, ``true``"
+msgstr "``false``, ``true``"
 
 msgid "``45``"
 msgstr "``45``"
@@ -310,6 +460,9 @@ msgstr "``3.14``, ``58.1e-10``"
 
 msgid "Floating-point number (real)"
 msgstr "Número de punto flotante (real)"
+
+msgid "Regular strings"
+msgstr "Strings regulares"
 
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
@@ -391,6 +544,9 @@ msgstr "Barra Invertida"
 
 msgid "``\\uXXXX``"
 msgstr "``\\uXXXX``"
+
+msgid "``\\UXXXXXX``"
+msgstr "``\\UXXXXXX``"
 
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
@@ -478,6 +634,9 @@ msgstr ""
 "Tipo de vector 2D que contiene los campos ``x`` y ``y``. También puedes ser "
 "accedido como un array."
 
+msgid ":ref:`Vector2i <class_Vector2i>`"
+msgstr ":ref:`Vector2i <class_Vector2i>`"
+
 msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
 
@@ -498,6 +657,9 @@ msgstr ""
 "Tipo de vector 3D que contiene los campos ``x``, ``y`` y ``z``. También "
 "puede ser accedido como si fuera un array."
 
+msgid ":ref:`Vector3i <class_Vector3i>`"
+msgstr ":ref:`Vector3i <class_Vector3i>`"
+
 msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
 
@@ -513,6 +675,9 @@ msgid ""
 msgstr ""
 "Tipo Plano 3D en forma normalizada que contiene un vector ``normal`` y una "
 "distancia escalar ``d``."
+
+msgid ":ref:`Quaternion <class_Quaternion>`"
+msgstr ":ref:`Quaternion <class_Quaternion>`"
 
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
@@ -543,6 +708,9 @@ msgstr ""
 "Matriz de 3x3 utilizada para la rotación y la escala 3D. Contiene 3 campos "
 "vectoriales (``x``, ``y`` y ``z``) y también se puede acceder como un array "
 "de vectores 3D."
+
+msgid ":ref:`Transform3D <class_Transform3D>`"
+msgstr ":ref:`Transform3D <class_Transform3D>`"
 
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
@@ -624,6 +792,12 @@ msgstr ""
 "<class_Object_method_get>` y :ref:`Object.set() <class_Object_method_set>` "
 "en su lugar."
 
+msgid ":ref:`Signal <class_Signal>`"
+msgstr ":ref:`Signal <class_Signal>`"
+
+msgid ":ref:`Callable <class_Callable>`"
+msgstr ":ref:`Callable <class_Callable>`"
+
 msgid "Variables"
 msgstr "Variables"
 
@@ -686,6 +860,9 @@ msgstr "Clases de script declaradas con la palabra clave ``class_name``."
 
 msgid "Initialization order"
 msgstr "Orden de inicialización"
+
+msgid "Will print:"
+msgstr "Esto imprimirá:"
 
 msgid "Casting"
 msgstr "Casting"
@@ -790,8 +967,14 @@ msgstr ""
 msgid "Referencing functions"
 msgstr "Funciones de referencia"
 
+msgid "Lambda functions"
+msgstr "Funciones Lambda"
+
 msgid "Static functions"
 msgstr "Funciones estáticas"
+
+msgid "Abstract functions"
+msgstr "Funciones abstractas"
 
 msgid "Statements and control flow"
 msgstr "Declaraciones y estructuras de control"
@@ -804,6 +987,9 @@ msgstr ""
 "Las declaraciones son estándar y pueden ser asignaciones, llamadas a "
 "funciones, estructuras de control, etc (mirar abajo). Usar ``;`` como "
 "separador de las declaraciones es opcional."
+
+msgid "Expressions"
+msgstr "Expresiones"
 
 msgid "if/else/elif"
 msgstr "if/else/elif"
@@ -950,6 +1136,9 @@ msgstr "Registrar clases con nombres"
 msgid "Here's a class file example:"
 msgstr "Aquí hay un ejemplo de archivo de clase:"
 
+msgid "Abstract classes and methods"
+msgstr "Clases abstractas y métodos"
+
 msgid "Inheritance"
 msgstr "Herencia"
 
@@ -973,6 +1162,9 @@ msgstr "Constructor de clase"
 
 msgid "There are a few things to keep in mind here:"
 msgstr "Hay algunas cosas a tener en cuenta aquí:"
+
+msgid "Static constructor"
+msgstr "Constructor estático"
 
 msgid "Inner classes"
 msgstr "Clases internas"
@@ -1000,11 +1192,14 @@ msgstr ""
 msgid "Example:"
 msgstr "Ejemplo:"
 
+msgid "Alternative syntax"
+msgstr "Sintaxis alternativa"
+
 msgid "Tool mode"
 msgstr "Modo Tool"
 
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
-msgstr "Ver :ref:`doc_running_code_in_the_editor`para más información."
+msgstr "Véase :ref:`doc_running_code_in_the_editor` para más información."
 
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
@@ -1069,6 +1264,13 @@ msgstr ""
 "acoplarse al nodo ``personaje``."
 
 msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition:"
+msgstr ""
+"Puedes escribir nombres de argumentos opcionales entre paréntesis después de "
+"la definición de la señal:"
+
+msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
 "of arguments when you emit signals; it's up to you to emit the correct "
@@ -1078,6 +1280,12 @@ msgstr ""
 "usarlos para generar funciones callbacks por ti. Sin embargo, puedes seguir "
 "emitiendo cualquier número de argumentos cuando emites señales, está en tus "
 "manos emitir los valores correctos."
+
+msgid ""
+"Our ``BattleLog`` node receives each bound element as an extra argument:"
+msgstr ""
+"Nuestro nodo ``BattleLog`` (registro de batalla) recibe cada elemento en el "
+"array como un argumento extra:"
 
 msgid "Assert keyword"
 msgstr "Palabra clave Assert"

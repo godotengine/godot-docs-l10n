@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -42,7 +42,7 @@ msgid ""
 msgstr ""
 "Esta página explica cómo usar ParticleProcessMaterial específicamente para "
 "escenas 2D. Para obtener información sobre cómo usarlo en una escena 3D, "
-"consulta :ref:`doc_process_material_properties`."
+"véase :ref:`doc_process_material_properties`."
 
 msgid ""
 "The ``Lifetime Randomness`` property controls how much randomness to apply "
@@ -60,6 +60,9 @@ msgstr ""
 "``1`` indica que la duración de vida de una partícula será completamente "
 "aleatoria dentro del rango [0.0, ``Lifetime``]."
 
+msgid "Particle Flags"
+msgstr "Banderas de partículas"
+
 msgid "Spawn"
 msgstr "Emisión (Spawn)"
 
@@ -72,6 +75,9 @@ msgid ""
 msgstr ""
 "Determina el ángulo inicial de la partícula (en grados). Este parámetro es "
 "mayormente útil aleatorizado."
+
+msgid "Velocity"
+msgstr "Velocidad"
 
 msgid "Direction"
 msgstr "Dirección"
@@ -137,6 +143,9 @@ msgstr ""
 "Orbit velocity se utiliza para hacer que las partículas giren alrededor de "
 "su centro."
 
+msgid "Accelerations"
+msgstr "Aceleraciones"
+
 msgid "Gravity"
 msgstr "Gravity (Gravedad)"
 
@@ -189,6 +198,9 @@ msgstr "Escala"
 
 msgid "Determines the initial scale of the particles."
 msgstr "Determina la escala inicial de las partículas."
+
+msgid "Color Curves"
+msgstr "Curvas de Color"
 
 msgid "Color"
 msgstr "Color"

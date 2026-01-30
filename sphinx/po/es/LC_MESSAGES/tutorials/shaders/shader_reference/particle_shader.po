@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -35,6 +35,12 @@ msgstr "**disable_force**"
 msgid "**disable_velocity**"
 msgstr "**disable_velocity**"
 
+msgid "Ignore ``VELOCITY`` value."
+msgstr "Ignora el valor de ``VELOCITY``."
+
+msgid "**collision_use_scale**"
+msgstr "**collision_use_scale**"
+
 msgid "Scale the particle's size for collisions."
 msgstr "Escala el tamaño de las partículas para colisiones."
 
@@ -54,6 +60,15 @@ msgstr "Integrado"
 
 msgid "in float **TIME**"
 msgstr "en real **TIME**"
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
 
 msgid "Function"
 msgstr "Función"
@@ -75,6 +90,9 @@ msgstr "in uint **NUMBER**"
 
 msgid "Unique number since emission start."
 msgstr "Un número único desde el comienzo de la emisión."
+
+msgid "in uint **INDEX**"
+msgstr "in uint **INDEX**"
 
 msgid "Particle index (from total particles)."
 msgstr "Índice de partículas (de partículas totales)."
@@ -112,5 +130,65 @@ msgstr "Transformación de partícula."
 msgid "inout vec4 **CUSTOM**"
 msgstr "inout vec4 **CUSTOM**"
 
+msgid "inout float **MASS**"
+msgstr "inout float **MASS**"
+
+msgid "in vec4 **USERDATAX**"
+msgstr "in vec4 **USERDATAX**"
+
+msgid "in uint **FLAG_EMIT_POSITION**"
+msgstr "in uint **FLAG_EMIT_POSITION**"
+
+msgid "in uint **FLAG_EMIT_ROT_SCALE**"
+msgstr "in uint **FLAG_EMIT_ROT_SCALE**"
+
+msgid "in uint **FLAG_EMIT_VELOCITY**"
+msgstr "in uint **FLAG_EMIT_VELOCITY**"
+
+msgid "in uint **FLAG_EMIT_COLOR**"
+msgstr "in uint **FLAG_EMIT_COLOR**"
+
+msgid "in uint **FLAG_EMIT_CUSTOM**"
+msgstr "in uint **FLAG_EMIT_CUSTOM**"
+
+msgid "in vec3 **EMITTER_VELOCITY**"
+msgstr "in vec3 **EMITTER_VELOCITY**"
+
+msgid "in float **INTERPOLATE_TO_END**"
+msgstr "in float **INTERPOLATE_TO_END**"
+
+msgid "in uint **AMOUNT_RATIO**"
+msgstr "in uint **AMOUNT_RATIO**"
+
+msgid "in bool **RESTART_POSITION**"
+msgstr "in bool **RESTART_POSITION**"
+
+msgid "in bool **RESTART_ROT_SCALE**"
+msgstr "in bool **RESTART_ROT_SCALE**"
+
+msgid "in bool **RESTART_VELOCITY**"
+msgstr "in bool **RESTART_VELOCITY**"
+
+msgid "in bool **RESTART_COLOR**"
+msgstr "in bool **RESTART_COLOR**"
+
+msgid "in bool **RESTART_CUSTOM**"
+msgstr "in bool **RESTART_CUSTOM**"
+
 msgid "in bool **RESTART**"
-msgstr "in booleano **RESTART**"
+msgstr "in bool **RESTART**"
+
+msgid "in bool **COLLIDED**"
+msgstr "in bool **COLLIDED**"
+
+msgid "in vec3 **COLLISION_NORMAL**"
+msgstr "in vec3 **COLLISION_NORMAL**"
+
+msgid "in float **COLLISION_DEPTH**"
+msgstr "in float **COLLISION_DEPTH**"
+
+msgid "in vec3 **ATTRACTOR_FORCE**"
+msgstr "in vec3 **ATTRACTOR_FORCE**"
+
+msgid "Emits a particle from a sub-emitter."
+msgstr "Emite una partícula desde un subemisor."

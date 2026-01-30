@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -93,7 +93,7 @@ msgstr ""
 "godotengine/godot-demo-projects/tree/master/gui/rich_text_bbcode>`__."
 
 msgid "Using BBCode"
-msgstr "Usando BBCode"
+msgstr "Usar BBCode"
 
 msgid ""
 "By default, :ref:`class_RichTextLabel` functions like a "
@@ -278,7 +278,7 @@ msgstr ""
 "Algunas de estas etiquetas BBCode se pueden usar en la información sobre "
 "herramientas de las variables de script ``@export``, así como en el código "
 "fuente XML de la referencia de clase. Para más información, "
-"consulta :ref:`Referencia de clase BBCode <doc_class_reference_bbcode>`."
+"véase :ref:`Referencia de clase BBCode <doc_class_reference_bbcode>`."
 
 msgid "Tag"
 msgstr "Etiqueta"
@@ -286,14 +286,26 @@ msgstr "Etiqueta"
 msgid "Example"
 msgstr "Ejemplo"
 
+msgid "**b**"
+msgstr "**b**"
+
 msgid "``[b]{text}[/b]``"
 msgstr "``[b]{text}[/b]``"
+
+msgid "**i**"
+msgstr "**i**"
 
 msgid "``[i]{text}[/i]``"
 msgstr "``[i]{text}[/i]``"
 
+msgid "**u**"
+msgstr "**u**"
+
+msgid "**s**"
+msgstr "**s**"
+
 msgid "**code**"
-msgstr "**codigo**"
+msgstr "**code**"
 
 msgid "Makes ``{text}`` use the mono font of ``RichTextLabel``."
 msgstr "Hace que ``{text}`` utilice la fuente mono de ``RichTextLabel``."
@@ -302,10 +314,28 @@ msgid "``[code]{text}[/code]``"
 msgstr "``[code]{text}[/code]``"
 
 msgid "**char**"
-msgstr "**carbonizarse**"
+msgstr "**char**"
+
+msgid "**p**"
+msgstr "**p**"
 
 msgid "``[p]{text}[/p]``"
 msgstr "``[p]{text}[/p]``"
+
+msgid "``[p {options}]{text}[/p]``"
+msgstr "``[p {options}]{text}[/p]``"
+
+msgid "**br**"
+msgstr "**br**"
+
+msgid "``[br]``"
+msgstr "``[br]``"
+
+msgid "``[hr]``"
+msgstr "``[hr]``"
+
+msgid "``[hr {options}]``"
+msgstr "``[hr {options}]``"
 
 msgid "**center**"
 msgstr "**centrado**"
@@ -337,14 +367,32 @@ msgstr "``[indent]{text}[/indent]``"
 msgid "**url**"
 msgstr "**url**"
 
+msgid "**img**"
+msgstr "**img**"
+
 msgid "``[img]{path}[/img]``"
 msgstr "``[img]{path}[/img]``"
 
 msgid "**font**"
 msgstr "**fuente**"
 
+msgid "``[opentype_features={list}]``"
+msgstr "``[opentype_features={list}]``"
+
+msgid "``[/opentype_features]``"
+msgstr "``[/opentype_features]``"
+
 msgid "**color**"
 msgstr "**color**"
+
+msgid "``[outline_size={size}]``"
+msgstr "``[outline_size={size}]``"
+
+msgid "``[/outline_size]``"
+msgstr "``[/outline_size]``"
+
+msgid "``[/outline_color]``"
+msgstr "``[/outline_color]``"
 
 msgid "**table**"
 msgstr "**tabla**"
@@ -364,7 +412,7 @@ msgstr ""
 "texto."
 
 msgid "ISO language codes. See :ref:`doc_locales`"
-msgstr "Códigos ISO de idiomas. Ver :ref:`doc_locales`"
+msgstr "Códigos ISO de idiomas. Véase :ref:`doc_locales`"
 
 msgid "Handling ``[url]`` tag clicks"
 msgstr "El manejo de clics de la etiqueta ``[url]``"
@@ -378,17 +426,32 @@ msgstr ""
 "ellas. Esto permite un uso flexible de las etiquetas ``[url]`` en lugar de "
 "limitarlas a la apertura de URL en un navegador web."
 
+msgid "``Color(1, 1, 1, 1)``"
+msgstr "``Color(1, 1, 1, 1)``"
+
 msgid "``2``"
 msgstr "``2``"
 
+msgid "String."
+msgstr "String."
+
 msgid "**pad**"
 msgstr "**rellenar**"
+
+msgid "``false``, ``true``"
+msgstr "``false``, ``true``"
+
+msgid "``false``"
+msgstr "``false``"
 
 msgid "String"
 msgstr "Cadena"
 
 msgid "Image tooltip."
 msgstr "Tooltip de imágen."
+
+msgid "**alt**"
+msgstr "**alt**"
 
 msgid "Font resource path."
 msgstr "Ruta del recurso fuente."
@@ -399,8 +462,14 @@ msgstr "Tamaño de fuente personalizado."
 msgid "Floating-point number."
 msgstr "Número de punto flotante."
 
+msgid "``0.0``"
+msgstr "``0.0``"
+
 msgid "Integer number."
 msgstr "Número entero."
+
+msgid "``0``"
+msgstr "``0``"
 
 msgid "Named colors"
 msgstr "Colores con nombre"
@@ -414,8 +483,14 @@ msgstr "``true``"
 msgid "1"
 msgstr "1"
 
+msgid "``0,0,0,0``"
+msgstr "``0,0,0,0``"
+
 msgid "Unordered list bullet"
 msgstr "Lista con viñetas desordenada"
+
+msgid "Text effects"
+msgstr "Efectos de texto"
 
 msgid "Pulse"
 msgstr "Pulso"

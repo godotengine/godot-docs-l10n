@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -158,23 +158,53 @@ msgstr ""
 "las etiquetas disponibles, ejemplos de uso y los resultados después de la "
 "conversión a reStructuredText."
 
+msgid "Tag and Description"
+msgstr "Etiqueta y Descripción"
+
 msgid "Example"
 msgstr "Ejemplo"
 
 msgid "Result"
 msgstr "Resultado"
 
+msgid "``[Class]``"
+msgstr "``[Class]``"
+
 msgid "``Move the [Sprite2D].``"
 msgstr "``Mueve el [Sprite2D].``"
 
+msgid "``[annotation Class.name]``"
+msgstr "``[annotation Class.name]``"
+
+msgid "``See [annotation @GDScript.@rpc].``"
+msgstr "``Véase [annotation @GDScript.@rpc].``"
+
 msgid "See :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
-msgstr "Consulta :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+msgstr "Véase :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+
+msgid "``[constant Class.name]``"
+msgstr "``[constant Class.name]``"
 
 msgid "Link to constant"
 msgstr "Vínculo a constante"
 
+msgid "``See [constant Color.RED].``"
+msgstr "``Véase [constant Color.RED].``"
+
 msgid "See :ref:`Color.RED <class_Color_constant_RED>`."
-msgstr "Consulta :ref:`Color.RED <class_Color_constant_RED>`."
+msgstr "Véase :ref:`Color.RED <class_Color_constant_RED>`."
+
+msgid "``[enum Class.name]``"
+msgstr "``[enum Class.name]``"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr "``Véase [enum Mesh.ArrayType].``"
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr "Véase :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+
+msgid "``[member Class.name]``"
+msgstr "``[member Class.name]``"
 
 msgid "Link to member"
 msgstr "Vínculo a miembro"
@@ -188,14 +218,26 @@ msgstr "``[method Class.name]``"
 msgid "``Call [method Node3D.hide].``"
 msgstr "``Llama a [method Node3D.hide].``"
 
+msgid "``[constructor Class.name]``"
+msgstr "``[constructor Class.name]``"
+
+msgid "``Use [constructor Color.Color].``"
+msgstr "``Usa [constructor Color.Color].``"
+
 msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
-msgstr "Consulta :ref:`Color.Color <class_Color_constructor_Color>`."
+msgstr "Véase :ref:`Color.Color <class_Color_constructor_Color>`."
 
 msgid "``[operator Class.name]``"
 msgstr "``[operator Class.name]``"
 
+msgid "``Use [operator Color.operator *].``"
+msgstr "``Usa [operator Color.operator *].``"
+
 msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
-msgstr "Consulta :ref:`Color.operator * <class_Color_operator_mul_int>`."
+msgstr "Véase :ref:`Color.operator * <class_Color_operator_mul_int>`."
+
+msgid "``[signal Class.name]``"
+msgstr "``[signal Class.name]``"
 
 msgid "``Emit [signal Node.renamed].``"
 msgstr "``Emite [signal Node.renamed].``"
@@ -203,14 +245,74 @@ msgstr "``Emite [signal Node.renamed].``"
 msgid "``[theme_item Class.name]``"
 msgstr "``[theme_item Class.name]``"
 
+msgid "``See [theme_item Label.font].``"
+msgstr "``Véase [theme_item Label.font].``"
+
+msgid "``[param name]``"
+msgstr "``[param name]``"
+
 msgid "Formatting text"
-msgstr "Formateando texto"
+msgstr "Formatear texto"
+
+msgid "``[br]``"
+msgstr "``[br]``"
+
+msgid "Line 1."
+msgstr "Línea 1."
+
+msgid "Line 2."
+msgstr "Línea 2"
+
+msgid "``[lb]`` ``[rb]``"
+msgstr "``[lb]`` ``[rb]``"
+
+msgid "``[b]`` ``[/b]``"
+msgstr "``[b]`` ``[/b]``"
 
 msgid "Bold"
 msgstr "Negrita"
 
+msgid "``Do [b]not[/b] call this method.``"
+msgstr "``[b]No[/b] llames a este método.``"
+
+msgid "``[i]`` ``[/i]``"
+msgstr "``[i]`` ``[/i]``"
+
 msgid "Italic"
 msgstr "Cursiva"
+
+msgid "Returns the *global* position."
+msgstr "Devuelve la posición *global*."
+
+msgid "``[u]`` ``[/u]``"
+msgstr "``[u]`` ``[/u]``"
+
+msgid "Underline"
+msgstr "Subrayado"
+
+msgid "``[s]`` ``[/s]``"
+msgstr "``[s]`` ``[/s]``"
+
+msgid "``[url]`` ``[/url]``"
+msgstr "``[url]`` ``[/url]``"
+
+msgid "``[url]https://example.com[/url]``"
+msgstr "``[url]https://ejemplo.com[/url]``"
+
+msgid "``[url=https://example.com]Website[/url]``"
+msgstr "``[url=https://ejemplo.com]Sitio web[/url]``"
+
+msgid "https://example.com"
+msgstr "https://ejemplo.com"
+
+msgid "`Website <https://example.com>`_"
+msgstr "`Sitio web <https://ejemplo.com>`_"
+
+msgid "``[center]`` ``[/center]``"
+msgstr "``[center]`` ``[/center]``"
+
+msgid "``[center]2 + 2 = 4[/center]``"
+msgstr "``[center]2 + 2 = 4[/center]``"
 
 msgid "``[kbd]`` ``[/kbd]``"
 msgstr "``[kbd]`` ``[/kbd]``"
@@ -224,6 +326,9 @@ msgstr "Presiona :kbd:`Ctrl + C`."
 msgid "``[code]`` ``[/code]``"
 msgstr "``[code]`` ``[/code]``"
 
+msgid "``Returns [code]true[/code].``"
+msgstr "``Devuelve [code]true[/code].``"
+
 msgid "Returns ``true``."
 msgstr "Devuelve ``true``."
 
@@ -235,7 +340,7 @@ msgstr ""
 "aquí porque no se recomiendan en la documentación del motor."
 
 msgid "Formatting code blocks"
-msgstr "Formateando bloques de código"
+msgstr "Formatear bloques de código"
 
 msgid "There are two options for formatting code blocks:"
 msgstr "Existen dos opciones para dar formato a los bloques de código:"
@@ -243,7 +348,8 @@ msgstr "Existen dos opciones para dar formato a los bloques de código:"
 msgid ""
 "Use ``[codeblock]`` if you want to add an example for a specific language."
 msgstr ""
-"Use ``[codeblock]``si desea añadir un ejemplo para un lenguaje en específico."
+"Use ``[codeblock]`` si deseas añadir un ejemplo para un lenguaje en "
+"específico."
 
 msgid ""
 "Use ``[codeblocks]``, ``[gdscript]``, and ``[csharp]`` if you want to add "

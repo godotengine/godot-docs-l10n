@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -38,6 +38,13 @@ msgid ""
 msgstr ""
 "Siehe :ref:`doc_system_requirements` für Hardware- und Software-"
 "Versionsanforderungen."
+
+msgid ""
+"For information about console support, see the `Godot website <https://"
+"godotengine.org/consoles/>`_."
+msgstr ""
+"Informationen zur Konsolenunterstützung finden Sie auf der `Godot-Website "
+"<https://godotengine.org/consoles/>`_."
 
 msgid "**Can run both the editor and exported projects:**"
 msgstr "**Mit Editor und exportierten Projekten kompatibel:**"
@@ -987,6 +994,9 @@ msgstr ""
 msgid "**Post-processing:**"
 msgstr "**Post-Processing:**"
 
+msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
+msgstr "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
+
 msgid ""
 "Automatic exposure adjustments based on viewport brightness (and manual "
 "exposure override)."
@@ -1184,12 +1194,6 @@ msgstr "3D Physik"
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr "Fahrzeug-Bodies (vorgesehen für Arcade Physik, keine Simulation)."
 
-msgid "Soft bodies."
-msgstr "Soft-Bodies."
-
-msgid "Ragdolls."
-msgstr "Ragdolls."
-
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
 "plane)."
@@ -1225,9 +1229,6 @@ msgstr ""
 msgid "Visual shader editor."
 msgstr "Visueller Shader Editor."
 
-msgid "Support for visual shader plugins."
-msgstr "Unterstützung für visuelle Shader Plugins."
-
 msgid "Scripting"
 msgstr "Skripting"
 
@@ -1252,6 +1253,9 @@ msgid ""
 msgstr ""
 "Viele 2D-, 3D- und 4D- Datentypen der linearen Algebra wie Vektoren und "
 "Transformationen."
+
+msgid ":ref:`GDScript: <doc_gdscript>`"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
 
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript_reference>` "
@@ -1660,13 +1664,6 @@ msgstr ""
 "oder mit Hilfe der ``tr()`` Funktion."
 
 msgid ""
-"Support for pluralization and translation contexts when using gettext "
-"translations."
-msgstr ""
-"Unterstützung für Pluralisierung und Übersetzungskontexte bei der Verwendung "
-"von gettext-Übersetzungen."
-
-msgid ""
 "Support for :ref:`bidirectional typesetting "
 "<doc_internationalizing_games_bidi>`, text shaping and OpenType localized "
 "forms."
@@ -1720,9 +1717,6 @@ msgstr ""
 
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "Rahmenloses Fenster (Vollbild oder nicht-Vollbild)."
-
-msgid "Ability to keep a window always on top."
-msgstr "Möglichkeit, das Fenster immer im Vordergrund zu behalten."
 
 msgid "Global menu integration on macOS."
 msgstr "Globale Menü Integration auf MacOS."
@@ -2110,6 +2104,14 @@ msgid ""
 msgstr ""
 "Unterstützung für :ref:`C++ Module <doc_custom_modules_in_cpp>`, die "
 "statisch in die Engine-Binärdatei gelinkt sind."
+
+msgid ""
+"Most built-in modules can be disabled at compile-time to reduce binary size "
+"in custom builds. See :ref:`doc_optimizing_for_size` for details."
+msgstr ""
+"Die meisten Built-in-Module können zur Kompilierzeit deaktiviert werden, um "
+"die Binärgröße in benutzerdefinierten Builds zu reduzieren. Weitere "
+"Informationen finden Sie unter :ref:`doc_optimizing_for_size`."
 
 msgid "Engine and editor written in C++17."
 msgstr "Engine und Editor geschrieben in C++17."

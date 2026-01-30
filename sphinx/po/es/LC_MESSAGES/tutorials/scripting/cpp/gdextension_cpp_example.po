@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -14,14 +14,27 @@ msgstr ""
 msgid "Getting started"
 msgstr "Empezar"
 
+msgid ""
+"Optional: Publish on the `Godot Asset Library <https://godotengine.org/asset-"
+"library/asset>`__."
+msgstr ""
+"Opcional: Publícala en la `Librería de Assets de Godot <https://"
+"godotengine.org/asset-library/asset>`__."
+
 msgid "Example project"
 msgstr "Proyecto ejemplo"
 
 msgid "Setting up the project"
-msgstr "Configurando el proyecto"
+msgstr "Configurar el proyecto"
 
 msgid "There are a few prerequisites you'll need:"
 msgstr "Hay algunos requisitos previos que necesitarás:"
+
+msgid "A Godot 4 executable."
+msgstr "Un ejecutable de Godot4."
+
+msgid "A C++ compiler."
+msgstr "Un compilador de C++."
 
 msgid "SCons as a build tool."
 msgstr "SCons como una herramienta de compilación."
@@ -45,13 +58,6 @@ msgstr ""
 "Es hora de hacer un plugin real. Iniciaremos creando un proyecto de Godot "
 "vacío en el que colocaremos unos cuantos archivos."
 
-msgid ""
-"In our demo project, we'll create a scene containing a Node called \"Main\" "
-"and we'll save it as ``main.tscn``. We'll come back to that later."
-msgstr ""
-"En nuestro proyecto demo, crearemos una escena que contendrá un Nodo llamado "
-"\"Main\" y lo guardaremos como ``main.tscn``. Volveremos a esto más tarde."
-
 msgid "After that, we declare a single member variable called ``time_passed``."
 msgstr ""
 "Después de eso declaramos una sola variable de miembro llamada "
@@ -64,14 +70,11 @@ msgstr ""
 msgid "Compiling the plugin"
 msgstr "Compilar el plugin"
 
-msgid "You should now be able to find the module in ``demo/bin/<platform>``."
-msgstr "Ahora deberías poder encontrar el módulo en ``demo/bin/<platform>``."
-
 msgid "We're finally ready to run the project:"
 msgstr "Finalmente, estamos listos para ejecutar el proyecto:"
 
 msgid "Adding properties"
-msgstr "Agregando propiedades"
+msgstr "Agregar propiedades"
 
 msgid ""
 "In our ``gdexample.cpp`` file we need to make a number of changes, we will "

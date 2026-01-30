@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -50,7 +50,7 @@ msgstr ""
 "sección :ref:`doc_introduction_to_the_buildsystem`."
 
 msgid "Setting up SCons"
-msgstr "Configurando SCons"
+msgstr "Configurar SCons"
 
 msgid ""
 "If you are prompted with the message ``Defaulting to user installation "
@@ -95,7 +95,7 @@ msgstr ""
 "con el comando ``python -m pip install --upgrade scons``."
 
 msgid "Downloading Godot's source"
-msgstr "Descargando el código fuente de Godot"
+msgstr "Descargar el código fuente de Godot"
 
 msgid "Refer to :ref:`doc_getting_source` for detailed instructions."
 msgstr ""
@@ -133,7 +133,7 @@ msgstr ""
 "MinGW."
 
 msgid "Running SCons"
-msgstr "Ejecutando SCons"
+msgstr "Ejecutar SCons"
 
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
@@ -158,6 +158,9 @@ msgstr ""
 "compilaciones de Godot y las versiones oficiales, puedes "
 "habilitar :ref:`doc_data_paths_self_contained_mode` creando un archivo "
 "llamado ``._sc_`` o ``_sc_`` en la carpeta ``bin/``."
+
+msgid "Installing Direct3D 12 requirements"
+msgstr "Instalar requisitos de Direct3D 12"
 
 msgid ""
 "You can find the detailed steps below if you wish to set up dependencies "
@@ -199,6 +202,9 @@ msgid ""
 msgstr ""
 "Clone el directorio `godot-nir-static <https://github.com/godotengine/godot-"
 "nir-static>`_ y navegue hasta él."
+
+msgid "Run the following:"
+msgstr "Ejecuta lo siguiente:"
 
 msgid "Optionally, you can compile with the following for additional features:"
 msgstr ""
@@ -311,7 +317,7 @@ msgstr ""
 "Studio y compilar Godot usando el botón **Build** de Visual Studio."
 
 msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
-msgstr "Consulta :ref:`doc_configuring_an_ide_vs` para obtener más detalles."
+msgstr "Véase :ref:`doc_configuring_an_ide_vs` para obtener más detalles."
 
 msgid "Troubleshooting"
 msgstr "Solución De Problemas"
@@ -354,8 +360,14 @@ msgstr ""
 "una configuración predeterminada que no incluye soporte para el enhebrado "
 "POSIX."
 
+msgid "And for 32-bit:"
+msgstr "Y para 32-bits:"
+
 msgid "Creating Windows export templates"
 msgstr "Para crear las plantillas de exportación para Windows"
+
+msgid "With the following names:"
+msgstr "Con los siguientes nombres:"
 
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "

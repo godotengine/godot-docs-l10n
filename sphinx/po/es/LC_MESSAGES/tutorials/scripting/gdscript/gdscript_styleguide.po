@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -63,7 +63,7 @@ msgstr ""
 "Aquí tenemos un ejemplo completo de una clase basada en esos lineamientos:"
 
 msgid "Formatting"
-msgstr "Formateando"
+msgstr "Formatear"
 
 msgid "Encoding and special characters"
 msgstr "Codificación y caracteres especiales"
@@ -246,6 +246,9 @@ msgstr "Usa ``and`` en lugar de ``&&``."
 msgid "Use ``or`` instead of ``||``."
 msgstr "Usa ``or`` en lugar de ``||``."
 
+msgid "Use ``not`` instead of ``!``."
+msgstr "Usa ``not`` en lugar de ``!``."
+
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
@@ -316,11 +319,23 @@ msgstr ""
 msgid "Type"
 msgstr "Tipo"
 
+msgid "Convention"
+msgstr "Convención"
+
 msgid "Example"
 msgstr "Ejemplo"
 
 msgid "File names"
 msgstr "Nombres de archivo"
+
+msgid "snake_case"
+msgstr "snake_case"
+
+msgid "Node names"
+msgstr "Nombres de nodos"
+
+msgid "``Camera3D``, ``Player``"
+msgstr "``Camera3D``, ``Player``"
 
 msgid "Functions"
 msgstr "Funciones"
@@ -330,6 +345,9 @@ msgstr "Variables"
 
 msgid "Signals"
 msgstr "Señales"
+
+msgid "``signal door_opened``"
+msgstr "``signal door_opened``"
 
 msgid "Constants"
 msgstr "Constantes"

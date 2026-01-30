@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -41,8 +41,138 @@ msgstr "Contenedores"
 msgid "Comment"
 msgstr "Comentario"
 
+msgid "|string| 📜"
+msgstr "|string| 📜"
+
+msgid "``std::string``"
+msgstr "``std::string``"
+
+msgid "|vector|"
+msgstr "|vector|"
+
+msgid "``std::vector``"
+msgstr "``std::vector``"
+
+msgid "|hash_set|"
+msgstr "|hash_set|"
+
 msgid "``std::unordered_set``"
 msgstr "``std::unordered_set``"
+
+msgid "|a_hash_map|"
+msgstr "|a_hash_map|"
+
+msgid "``std::unordered_map``"
+msgstr "``std::unordered_map``"
+
+msgid "|string_name| 📜"
+msgstr "|string_name| 📜"
+
+msgid "|local_vector|"
+msgstr "|local_vector|"
+
+msgid "|array| 📜"
+msgstr "|array| 📜"
+
+msgid "|typed_array| 📜"
+msgstr "|typed_array| 📜"
+
+msgid "|packed_array| 📜"
+msgstr "|packed_array| 📜"
+
+msgid "|list|"
+msgstr "|list|"
+
+msgid "``std::list``"
+msgstr "``std::list``"
+
+msgid "|fixed_vector|"
+msgstr "|fixed_vector|"
+
+msgid "``std::array``"
+msgstr "``std::array``"
+
+msgid "|span|"
+msgstr "|span|"
+
+msgid "``std::span``"
+msgstr "``std::span``"
+
+msgid "|rb_set|"
+msgstr "|rb_set|"
+
+msgid "``std::set``"
+msgstr "``std::set``"
+
+msgid "|v_set|"
+msgstr "|v_set|"
+
+msgid "``std::flat_set``"
+msgstr "``std::flat_set``"
+
+msgid "|hash_map|"
+msgstr "|hash_map|"
+
+msgid "|rb_map|"
+msgstr "|rb_map|"
+
+msgid "``std::map``"
+msgstr "``std::map``"
+
+msgid "|dictionary| 📜"
+msgstr "|dictionary| 📜"
+
+msgid "|typed_dictionary| 📜"
+msgstr "|typed_dictionary| 📜"
+
+msgid "|pair|"
+msgstr "|pair|"
+
+msgid "``std::pair``"
+msgstr "``std::pair``"
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ rastrea "
+"esta decisión."
+
+msgid "``std::recursive_mutex``"
+msgstr "``std::recursive_mutex``"
+
+msgid "``std::mutex``"
+msgstr "``std::mutex``"
+
+msgid "``std::shared_timed_mutex``"
+msgstr "``std::shared_timed_mutex``"
+
+msgid "|condition_variable|"
+msgstr "|condition_variable|"
+
+msgid "``std::condition_variable``"
+msgstr "``std::condition_variable``"
+
+msgid "|semaphore|"
+msgstr "|semaphore|"
+
+msgid "``std::counting_semaphore``"
+msgstr "``std::counting_semaphore``"
+
+msgid "|safe_numeric|"
+msgstr "|safe_numeric|"
+
+msgid "``std::atomic``"
+msgstr "``std::atomic``"
+
+msgid "|safe_flag|"
+msgstr "|safe_flag|"
+
+msgid "``std::atomic_bool``"
+msgstr "``std::atomic_bool``"
+
+msgid "|safe_ref_count|"
+msgstr "|safe_ref_count|"
 
 msgid "Math types"
 msgstr "Tipos Matemáticos"
@@ -53,6 +183,11 @@ msgstr ""
 "Hay varios tipos de matemáticas lineales disponibles en el directorio ``core/"
 "math``:"
 
+msgid ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+
 msgid "NodePath"
 msgstr "Ruta del nodo"
 
@@ -62,6 +197,13 @@ msgid ""
 msgstr ""
 "Este es un tipo de dato especial utilizado para almacenar rutas en un árbol "
 "de escena y hacer referencia a ellas de manera optimizada:"
+
+msgid ""
+"`core/string/node_path.h <https://github.com/godotengine/godot/blob/master/"
+"core/string/node_path.h>`__"
+msgstr ""
+"`core/string/node_path.h <https://github.com/godotengine/godot/blob/master/"
+"core/string/node_path.h>`__"
 
 msgid "RID"
 msgstr "RID"
@@ -76,3 +218,10 @@ msgstr ""
 "que significa que los datos a los que hacen referencia no se pueden acceder "
 "directamente. Los RID son únicos, incluso para diferentes tipos de datos "
 "referenciados:"
+
+msgid ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"
+msgstr ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"

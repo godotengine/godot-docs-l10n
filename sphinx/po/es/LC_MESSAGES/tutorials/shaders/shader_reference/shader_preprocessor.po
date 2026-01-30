@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -11,8 +11,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "#define"
+msgstr "#define"
+
+msgid "#if"
+msgstr "#if"
+
+msgid "#elif"
+msgstr "#elif"
+
+msgid "#ifndef"
+msgstr "#ifndef"
+
+msgid "#else"
+msgstr "#else"
+
+msgid "**Syntax:** ``#else``"
+msgstr "**Sintaxis:** ``#else``"
+
+msgid "#endif"
+msgstr "#endif"
+
+msgid "**Syntax:** ``#endif``"
+msgstr "**Sintaxis:** ``#endif``"
+
 msgid "#error"
 msgstr "#error"
+
+msgid "#include"
+msgstr "#include"
+
+msgid "#pragma"
+msgstr "#pragma"
 
 msgid ""
 "Since Godot 4.4, you can check which renderer is currently used with the "
@@ -25,3 +55,9 @@ msgstr ""
 
 msgid "``RENDERER_COMPATIBILITY`` is always ``0``."
 msgstr "``RENDERER_COMPATIBILITY`` siempre es ``0``."
+
+msgid "``RENDERER_MOBILE`` is always ``1``."
+msgstr "``RENDERER_MOBILE`` siempre es ``1``."
+
+msgid "``RENDERER_FORWARD_PLUS`` is always ``2``."
+msgstr "``RENDERER_FORWARD_PLUS`` siempre es ``2``."

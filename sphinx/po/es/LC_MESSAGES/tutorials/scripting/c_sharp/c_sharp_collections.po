@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -11,26 +11,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "C# collections"
+msgstr "Colecciones de C#"
+
+msgid "Choose a collection"
+msgstr "Elije una colección"
+
+msgid "Godot collections"
+msgstr "Colecciones de Godot"
+
+msgid "PackedArray"
+msgstr "PackedArray"
+
 msgid "GDScript"
 msgstr "GDScript"
 
 msgid "C#"
 msgstr "C#"
 
+msgid "``PackedByteArray``"
+msgstr "``PackedByteArray``"
+
 msgid "``byte[]``"
 msgstr "``byte[]``"
+
+msgid "``PackedInt32Array``"
+msgstr "``PackedInt32Array``"
 
 msgid "``int[]``"
 msgstr "``int[]``"
 
+msgid "``PackedInt64Array``"
+msgstr "``PackedInt64Array``"
+
+msgid "``long[]``"
+msgstr "``long[]``"
+
+msgid "``PackedFloat32Array``"
+msgstr "``PackedFloat32Array``"
+
 msgid "``float[]``"
 msgstr "``float[]``"
+
+msgid "``PackedFloat64Array``"
+msgstr "``PackedFloat64Array``"
+
+msgid "``double[]``"
+msgstr "``double[]``"
+
+msgid "``PackedStringArray``"
+msgstr "``PackedStringArray``"
+
+msgid "``string[]``"
+msgstr "``string[]``"
+
+msgid "``PackedVector2Array``"
+msgstr "``PackedVector2Array``"
 
 msgid "``Vector2[]``"
 msgstr "``Vector2[]``"
 
+msgid "``PackedVector3Array``"
+msgstr "``PackedVector3Array``"
+
 msgid "``Vector3[]``"
 msgstr "``Vector3[]``"
+
+msgid "``PackedVector4Array``"
+msgstr "``PackedVector4Array``"
+
+msgid "``Vector4[]``"
+msgstr "``Vector4[]``"
+
+msgid "``PackedColorArray``"
+msgstr "``PackedColorArray``"
 
 msgid "``Color[]``"
 msgstr "``Color[]``"
@@ -38,11 +92,47 @@ msgstr "``Color[]``"
 msgid "Array"
 msgstr "Arreglo"
 
+msgid "append_array"
+msgstr "append_array"
+
+msgid "N/A"
+msgstr "N/A"
+
 msgid "clear"
 msgstr "claro"
 
+msgid "count"
+msgstr "count"
+
 msgid "Duplicate"
 msgstr "Duplicar"
+
+msgid "erase"
+msgstr "erase"
+
+msgid "find"
+msgstr "find"
+
+msgid "get_typed_builtin"
+msgstr "get_typed_builtin"
+
+msgid "get_typed_class_name"
+msgstr "get_typed_class_name"
+
+msgid "hash"
+msgstr "hash"
+
+msgid "GD.Hash"
+msgstr "GD.Hash"
+
+msgid "insert"
+msgstr "insert"
+
+msgid "is_empty"
+msgstr "is_empty"
+
+msgid "is_typed"
+msgstr "is_typed"
 
 msgid "max"
 msgstr "maximo"
@@ -50,8 +140,68 @@ msgstr "maximo"
 msgid "min"
 msgstr "min"
 
+msgid "``Array[i]`` with ``RemoveAt(i)``"
+msgstr "``Array[i]`` con ``RemoveAt(i)``"
+
+msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
+msgstr "``Array[^1]`` con ``RemoveAt(Count - 1)``"
+
+msgid "``Array[0]`` with ``RemoveAt(0)``"
+msgstr "``Array[0]`` con ``RemoveAt(0)``"
+
+msgid "push_front"
+msgstr "push_front"
+
+msgid "remove_at"
+msgstr "remove_at"
+
+msgid "RemoveAt"
+msgstr "RemoveAt"
+
+msgid "reverse"
+msgstr "reverse"
+
+msgid "rfind"
+msgstr "rfind"
+
+msgid "sort_custom"
+msgstr "sort_custom"
+
+msgid "operator !="
+msgstr "operador !="
+
+msgid "operator +"
+msgstr "operador +"
+
+msgid "operator <"
+msgstr "operador <"
+
+msgid "operator <="
+msgstr "operador <="
+
+msgid "operator =="
+msgstr "operador =="
+
+msgid "operator >"
+msgstr "operador >"
+
+msgid "operator >="
+msgstr "operador >="
+
+msgid "operator []"
+msgstr "operador []"
+
 msgid "Dictionary"
 msgstr "Diccionario"
+
+msgid "get"
+msgstr "get"
+
+msgid "ContainsKey"
+msgstr "ContainsKey"
+
+msgid "has_all"
+msgstr "has_all"
 
 msgid "keys"
 msgstr "claves"

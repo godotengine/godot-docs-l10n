@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -75,6 +75,9 @@ msgstr "|❌|"
 msgid "3D"
 msgstr "3D"
 
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
 msgid "Rendering"
 msgstr "渲染"
 
@@ -93,6 +96,15 @@ msgstr "OpenXR"
 msgid "N/A"
 msgstr "N/A"
 
+msgid ""
+"The ``OpenXRExtensionWrapper`` type is intended to be subclassed from "
+"GDExtensions. The method ``_set_instance_create_info_and_get_next_pointer`` "
+"has a ``void*`` parameter so it's not exposed to scripting."
+msgstr ""
+"``OpenXRExtensionWrapper`` 类型旨在从 GDExtensions 中细分为子类。方法 "
+"``_set_instance_create_info_and_get_next_pointer`` 有一个 ``void*`` 参数，所"
+"以不会暴露在脚本中。"
+
 msgid "Editor"
 msgstr "编辑器"
 
@@ -105,8 +117,84 @@ msgstr "行为更改"
 msgid "Android"
 msgstr "Android"
 
+msgid ""
+"The source sets configuration for Android export templates has been updated "
+"to match the default Android Studio project structure (`GH-110829`_). This "
+"affects the directory layout of the Android project:"
+msgstr ""
+"Android 导出模板的源集配置已更新，以匹配默认的 Android Studio 项目结构"
+"（ `GH-110829`_ ）。这会影响 Android 项目的目录布局："
+
+msgid ""
+"Files previously in ``[Project root]/android/build/src/`` are now in "
+"``[Project root]/android/build/src/main/java/``."
+msgstr ""
+"之前位于 ``[项目根目录]/android/build/src/`` 中的文件现在位于 ``[项目根目录]/"
+"android/build/src/main/java/`` 中。"
+
+msgid ""
+"Android manifest file and assets directory have been moved to ``src/main/`` "
+"subdirectories."
+msgstr "Android 清单文件和资产目录已移至 ``src/main/`` 子目录。"
+
+msgid ""
+"For example, ``GodotApp.java`` moved from ``src/com/godot/game/"
+"GodotApp.java`` to ``src/main/java/com/godot/game/GodotApp.java``."
+msgstr ""
+"例如， ``GodotApp.java`` 从 ``src/com/godot/game/GodotApp.java`` 移动到了 "
+"``src/main/java/com/godot/game/GodotApp.java`` 。"
+
+msgid ""
+"Soft Light blend mode now always behaves as it did previously with "
+"``use_hdr_2d``, regardless of the Viewport's ``use_hdr_2d`` setting "
+"(`GH-109971`_)."
+msgstr ""
+"现在，无论视口的 ``use_hdr_2d`` 设置如何，柔光混合模式的行为始终与以前使用 "
+"``use_hdr_2d`` 时的行为相同（ `GH-109971`_ ）。"
+
+msgid "Navigation"
+msgstr "导航"
+
+msgid ""
+"The following default values have been changed. If your project relies on "
+"the previous defaults, you may need to explicitly set them to the old values."
+msgstr ""
+"以下默认值已更改 。如果你的项目依赖于之前的默认值，则可能需要将其显式设置为旧"
+"的值。"
+
+msgid ""
+"The default rendering driver on Windows for **newly created** projects is "
+"now :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). This can be changed in "
+"Project Settings under ``rendering/rendering_device/driver.windows``."
+msgstr ""
+"Windows 系统上 **新建** 项目的默认渲染驱动程序现在是 :abbr:`D3D12 (Direct3D "
+"12)` (`GH-113213`_)。可以在项目设置的 ``rendering/rendering_device/"
+"driver.windows`` 下更改此设置。"
+
+msgid ""
+"The default 3D physics engine for **newly created** projects is now Jolt "
+"Physics (`GH-105737`_). This can be changed in Project Settings under "
+"``physics/3d/physics_engine``."
+msgstr ""
+"**新建项目** 的默认 3D 物理引擎现在是 Jolt Physics ( `GH-105737`_ )。可以在项"
+"目设置的 ``physics/3d/physics_engine`` 下更改此设置。"
+
 msgid "**MeshInstance3D**"
 msgstr "**MeshInstance3D**"
+
+msgid ""
+"The default value of ``skeleton`` has changed. Enable ``animation/"
+"compatibility/default_parent_skeleton_in_mesh_instance_3d`` in Project "
+"Settings if the old behavior is needed for compatibility."
+msgstr ""
+"``骨骼`` 的默认值已更改 。如果为实现兼容性需要旧的行为 ，请在项目设置中启用 "
+"``animation/ compatibility /default_parent_skeleton_in_mesh_instance_3d`` 。"
+
+msgid "**ProjectSettings**"
+msgstr "**ProjectSettings**"
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "属性 ``rendering/reflections/sky_reflections/roughness_layers``"
 
 msgid "8"
 msgstr "8"
@@ -114,11 +202,29 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "属性 ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
+msgid "**Environment**"
+msgstr "**Environment**"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
 
+msgid "0.4"
+msgstr "0.4"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "属性 ``ssr_depth_tolerance``"
+
 msgid "**PopupMenu**"
 msgstr "**PopupMenu**"
+
+msgid "**ResourceImporterCSVTranslation**"
+msgstr "**ResourceImporterCSVTranslation**"
+
+msgid "Property ``compress``"
+msgstr "属性 ``compress``"

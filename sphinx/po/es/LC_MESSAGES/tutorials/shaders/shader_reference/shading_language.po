@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -239,12 +239,18 @@ msgstr ""
 msgid "**samplerCube**"
 msgstr "**samplerCube**"
 
+msgid "**samplerCubeArray**"
+msgstr "**samplerCubeArray**"
+
 msgid ""
 "Sampler type for binding Cubemap arrays, which are read as float. Only "
 "supported in Forward+ and Mobile, not Compatibility."
 msgstr ""
 "Tipo Sampler para enlazar Cubemaps, que se leen como flotantes. Compatible "
 "solo con Forward+ y Mobile; no con Compatibility."
+
+msgid "**samplerExternalOES**"
+msgstr "**samplerExternalOES**"
 
 msgid ""
 "External sampler type. Only supported in Compatibility/Android platform."
@@ -385,6 +391,9 @@ msgstr ""
 "confundirse con la función integrada ``length()``). No acepta ningún "
 "parámetro y devolverá el tamaño del array."
 
+msgid "Global arrays"
+msgstr "Arrays globales"
+
 msgid "Constants"
 msgstr "Constantes"
 
@@ -428,6 +437,9 @@ msgstr ""
 "necesita ser modificado. Al igual que los uniformes, las constantes globales "
 "se comparten entre todas las etapas del shader, pero no son accesibles fuera "
 "del shader."
+
+msgid "You can also pass them to functions:"
+msgstr "También puedes pasarlos a las funciones:"
 
 msgid "Operators"
 msgstr "Operadores"
@@ -555,6 +567,27 @@ msgstr "OR lógico inclusivo"
 
 msgid "**||**"
 msgstr "**||**"
+
+msgid "Operation"
+msgstr "Operación"
+
+msgid "``vec3(4, 5, 6) + 2``"
+msgstr "``vec3(4, 5, 6) + 2``"
+
+msgid "``vec3(4 + 2, 5 + 2, 6 + 2)``"
+msgstr "``vec3(4 + 2, 5 + 2, 6 + 2)``"
+
+msgid "``vec2(3, 4) * vec2(10, 20)``"
+msgstr "``vec2(3, 4) * vec2(10, 20)``"
+
+msgid "``vec2(3 * 10, 4 * 20)``"
+msgstr "``vec2(3 * 10, 4 * 20)``"
+
+msgid "``mat2(vec2(1, 2), vec2(3, 4)) + 10``"
+msgstr "``mat2(vec2(1, 2), vec2(3, 4)) + 10``"
+
+msgid "``mat2(vec2(1 + 10, 2 + 10), vec2(3 + 10, 4 + 10))``"
+msgstr "``mat2(vec2(1 + 10, 2 + 10), vec2(3 + 10, 4 + 10))``"
 
 msgid "Flow control"
 msgstr "Control de Flujo"
@@ -687,6 +720,12 @@ msgstr "A los uniforms se les pueden asignar valores por defecto:"
 msgid "Hint"
 msgstr "Hint"
 
+msgid "**vec3, vec4**"
+msgstr "**vec3, vec4**"
+
+msgid "source_color"
+msgstr "source_color"
+
 msgid "Used as color."
 msgstr "Utilizado como color."
 
@@ -705,8 +744,23 @@ msgstr "hint_normal"
 msgid "Used as normalmap."
 msgstr "Utilizado como normalmap."
 
+msgid "hint_default_white"
+msgstr "hint_default_white"
+
+msgid "hint_default_black"
+msgstr "hint_default_black"
+
+msgid "hint_anisotropy"
+msgstr "hint_anisotropy"
+
 msgid "As flowmap, default to right."
 msgstr "Como flowmap, hacia la derecha por defecto."
+
+msgid "hint_depth_texture"
+msgstr "hint_depth_texture"
+
+msgid "Using ``source_color``"
+msgstr "Usar ``source_color``"
 
 msgid ""
 "Using ``source_color`` hint is required in the Forward+ and Mobile "
@@ -725,6 +779,12 @@ msgstr ""
 "HDR 2D está deshabilitado. Sin embargo, se recomienda usar siempre la "
 "sugerencia ``source_color``, ya que funciona incluso si se cambian los "
 "renderizadores o se deshabilita HDR 2D."
+
+msgid "Uniform groups"
+msgstr "Grupos de uniformes"
+
+msgid "Global uniforms"
+msgstr "Variables uniformes globales"
 
 msgid ""
 "Sometimes, you want to modify a parameter on each node using the material. "
@@ -767,8 +827,20 @@ msgstr "Tipo GDScript"
 msgid "Notes"
 msgstr "Notas"
 
+msgid "**Vector2i**"
+msgstr "**Vector2i**"
+
+msgid "**Vector3i**"
+msgstr "**Vector3i**"
+
+msgid "**Vector4i**"
+msgstr "**Vector4i**"
+
 msgid "**Vector2**"
 msgstr "**Vector2**"
+
+msgid "**Vector3**, **Color**"
+msgstr "**Vector3**, **Color**"
 
 msgid "**Transform2D**"
 msgstr "**Transform2D**"
@@ -776,8 +848,29 @@ msgstr "**Transform2D**"
 msgid "**Basis**"
 msgstr "**Basis**"
 
+msgid "**Projection**, **Transform3D**"
+msgstr "**Projection**, **Transform3D**"
+
+msgid "**Texture2D**"
+msgstr "**Texture2D**"
+
+msgid "**Texture2DArray**"
+msgstr "**Texture2DArray**"
+
+msgid "**Texture3D**"
+msgstr "**Texture3D**"
+
+msgid "**Cubemap**"
+msgstr "**Cubemap**"
+
+msgid "**CubemapArray**"
+msgstr "**CubemapArray**"
+
 msgid "Only supported in Forward+ and Mobile, not Compatibility."
 msgstr "Solo compatible con Forward+ y Mobile, no con Compatibility."
+
+msgid "**ExternalTexture**"
+msgstr "**ExternalTexture**"
 
 msgid "Only supported in Compatibility/Android platform."
 msgstr "Solo compatible con la plataforma Compatibility/Android."
@@ -793,6 +886,12 @@ msgstr ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
 msgstr ":ref:`Shaders de partículas <doc_particle_shader>`"
+
+msgid ":ref:`Sky shaders <doc_sky_shader>`"
+msgstr ":ref:`Shaders celestes <doc_sky_shader>`"
+
+msgid ":ref:`Fog shaders <doc_fog_shader>`"
+msgstr ":ref:`Shaders de niebla <doc_fog_shader>`"
 
 msgid "Built-in functions"
 msgstr "Funciones integradas"

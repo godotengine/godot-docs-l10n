@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -24,7 +24,7 @@ msgstr ""
 "microsoft.com>`_ (no confundir con :ref:`doc_configuring_an_ide_vs`)."
 
 msgid "Importing the project"
-msgstr "Importando el proyecto"
+msgstr "Importar el proyecto"
 
 msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
@@ -68,6 +68,9 @@ msgstr ""
 "Dentro del archivo ``tasks.json``, busca el array ``\"tasks\"`` y agrega una "
 "nueva sección a él:"
 
+msgid ".vscode/tasks.json"
+msgstr ".vscode/tasks.json"
+
 msgid "An example of a filled out ``tasks.json``."
 msgstr "Un ejemplo de cómo podría quedar el archivo ``tasks.json``."
 
@@ -76,11 +79,11 @@ msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 "Los parámetros pueden ser diferente según tu configuración y necesidades. "
-"Ver :ref:`doc_introduction_to_the_buildsystem` para una lista completa de "
+"Véase :ref:`doc_introduction_to_the_buildsystem` para una lista completa de "
 "parámetros."
 
 msgid "Debugging the project"
-msgstr "Depurando el proyecto"
+msgstr "Depurar el proyecto"
 
 msgid ""
 "To run and debug the project you need to create a new configuration in the "
@@ -106,6 +109,12 @@ msgstr ""
 
 msgid "An example of a filled out ``launch.json``."
 msgstr "Un ejemplo de un archivo ``launch.json`` completo."
+
+msgid "For the C/C++ extension:"
+msgstr "Para la extensión de C/C++:"
+
+msgid ".vscode/c_cpp_properties.json"
+msgstr ".vscode/c_cpp_properties.json"
 
 msgid "Troubleshooting"
 msgstr "Solución De Problemas"

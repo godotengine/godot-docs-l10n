@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -11,11 +11,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Documenting a script"
+msgstr "Documentar un script"
+
+msgid "A brief description of the script."
+msgstr "Una descripción breve del script."
+
 msgid "Detailed description."
 msgstr "Descripción detallada."
 
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "Brief description"
+msgstr "Descripción breve"
+
 msgid "Description"
 msgstr "Descripción"
+
+msgid "Tutorial"
+msgstr "Tutorial"
+
+msgid "``@tutorial: https://example.com``"
+msgstr "``@tutorial: https://ejemplo.com``"
+
+msgid "Deprecated"
+msgstr "Obsoleto"
+
+msgid "``@deprecated``"
+msgstr "``@deprecated``"
+
+msgid "Experimental"
+msgstr "Experimental"
+
+msgid "``@experimental``"
+msgstr "``@experimental``"
+
+msgid "``@experimental: This class is unstable.``"
+msgstr "``@experimental: Esta clase es inestable.``"
 
 msgid "For example:"
 msgstr "Por ejemplo:"
@@ -26,11 +59,17 @@ msgstr "Señal"
 msgid "Enum value"
 msgstr "Valor de enumeración"
 
+msgid "Constant"
+msgstr "Constante"
+
 msgid "Variable"
 msgstr "Variable"
 
 msgid "Function"
 msgstr "Función"
+
+msgid "No tag."
+msgstr "Sin etiqueta."
 
 msgid ""
 "**Deprecated** marks a non-recommended API that is subject to removal or "
@@ -41,23 +80,56 @@ msgstr ""
 "cambios incompatibles en una futura versión principal. Normalmente, la API "
 "se mantiene por motivos de compatibilidad con versiones anteriores."
 
+msgid "Here's the list of available tags:"
+msgstr "Aquí está la lista de etiquetas disponibles:"
+
+msgid "Tag and Description"
+msgstr "Etiqueta y Descripción"
+
 msgid "Example"
 msgstr "Ejemplo"
 
 msgid "Result"
 msgstr "Resultado"
 
+msgid "``[Class]``"
+msgstr "``[Class]``"
+
 msgid "``Move the [Sprite2D].``"
 msgstr "``Mueve el [Sprite2D].``"
 
+msgid "``[annotation Class.name]``"
+msgstr "``[annotation Class.name]``"
+
+msgid "``See [annotation @GDScript.@rpc].``"
+msgstr "``Véase [annotation @GDScript.@rpc].``"
+
 msgid "See :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
-msgstr "Consulta :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+msgstr "Véase :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+
+msgid "``[constant Class.name]``"
+msgstr "``[constant Class.name]``"
 
 msgid "Link to constant"
 msgstr "Vínculo a constante"
 
+msgid "``See [constant Color.RED].``"
+msgstr "``Véase [constant Color.RED].``"
+
 msgid "See :ref:`Color.RED <class_Color_constant_RED>`."
-msgstr "Consulta :ref:`Color.RED <class_Color_constant_RED>`."
+msgstr "Véase :ref:`Color.RED <class_Color_constant_RED>`."
+
+msgid "``[enum Class.name]``"
+msgstr "``[enum Class.name]``"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr "``Véase [enum Mesh.ArrayType].``"
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr "Véase :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+
+msgid "``[member Class.name]``"
+msgstr "``[member Class.name]``"
 
 msgid "``Get [member Node2D.scale].``"
 msgstr "``Obtén [member Node2D.scale].``"
@@ -68,14 +140,26 @@ msgstr "``[method Class.name]``"
 msgid "``Call [method Node3D.hide].``"
 msgstr "``Llama a [method Node3D.hide].``"
 
+msgid "``[constructor Class.name]``"
+msgstr "``[constructor Class.name]``"
+
+msgid "``Use [constructor Color.Color].``"
+msgstr "``Usa [constructor Color.Color].``"
+
 msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
-msgstr "Consulta :ref:`Color.Color <class_Color_constructor_Color>`."
+msgstr "Véase :ref:`Color.Color <class_Color_constructor_Color>`."
 
 msgid "``[operator Class.name]``"
 msgstr "``[operator Class.name]``"
 
+msgid "``Use [operator Color.operator *].``"
+msgstr "``Usa [operator Color.operator *].``"
+
 msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
-msgstr "Consulta :ref:`Color.operator * <class_Color_operator_mul_int>`."
+msgstr "Véase :ref:`Color.operator * <class_Color_operator_mul_int>`."
+
+msgid "``[signal Class.name]``"
+msgstr "``[signal Class.name]``"
 
 msgid "``Emit [signal Node.renamed].``"
 msgstr "``Emite [signal Node.renamed].``"
@@ -83,14 +167,98 @@ msgstr "``Emite [signal Node.renamed].``"
 msgid "``[theme_item Class.name]``"
 msgstr "``[theme_item Class.name]``"
 
+msgid "``See [theme_item Label.font].``"
+msgstr "``Véase [theme_item Label.font].``"
+
+msgid "``[param name]``"
+msgstr "``[param name]``"
+
+msgid "``[br]``"
+msgstr "``[br]``"
+
+msgid "Line 1."
+msgstr "Línea 1."
+
+msgid "Line 2."
+msgstr "Línea 2"
+
+msgid "``[lb]`` ``[rb]``"
+msgstr "``[lb]`` ``[rb]``"
+
+msgid "``[b]`` ``[/b]``"
+msgstr "``[b]`` ``[/b]``"
+
 msgid "Bold"
 msgstr "Negrita"
+
+msgid "``Do [b]not[/b] call this method.``"
+msgstr "``[b]No[/b] llames a este método.``"
+
+msgid "``[i]`` ``[/i]``"
+msgstr "``[i]`` ``[/i]``"
 
 msgid "Italic"
 msgstr "Cursiva"
 
+msgid "Returns the *global* position."
+msgstr "Devuelve la posición *global*."
+
+msgid "``[u]`` ``[/u]``"
+msgstr "``[u]`` ``[/u]``"
+
+msgid "Underline"
+msgstr "Subrayado"
+
+msgid "``[s]`` ``[/s]``"
+msgstr "``[s]`` ``[/s]``"
+
+msgid "``[color]`` ``[/color]``"
+msgstr "``[color]`` ``[/color]``"
+
 msgid "Color"
 msgstr "Color"
+
+msgid "``[color=red]Error![/color]``"
+msgstr "``[color=red]Error![/color]``"
+
+msgid "``[font]`` ``[/font]``"
+msgstr "``[font]`` ``[/font]``"
+
+msgid "Font"
+msgstr "Fuente"
+
+msgid "``[font=res://mono.ttf]LICENSE[/font]``"
+msgstr "``[font=res://mono.ttf]LICENSE[/font]``"
+
+msgid "``[img]`` ``[/img]``"
+msgstr "``[img]`` ``[/img]``"
+
+msgid "Image"
+msgstr "Imagen"
+
+msgid "``[img width=32]res://icon.svg[/img]``"
+msgstr "``[img width=32]res://icon.svg[/img]``"
+
+msgid "``[url]`` ``[/url]``"
+msgstr "``[url]`` ``[/url]``"
+
+msgid "``[url]https://example.com[/url]``"
+msgstr "``[url]https://ejemplo.com[/url]``"
+
+msgid "``[url=https://example.com]Website[/url]``"
+msgstr "``[url=https://ejemplo.com]Sitio web[/url]``"
+
+msgid "https://example.com"
+msgstr "https://ejemplo.com"
+
+msgid "`Website <https://example.com>`_"
+msgstr "`Sitio web <https://ejemplo.com>`_"
+
+msgid "``[center]`` ``[/center]``"
+msgstr "``[center]`` ``[/center]``"
+
+msgid "``[center]2 + 2 = 4[/center]``"
+msgstr "``[center]2 + 2 = 4[/center]``"
 
 msgid "``[kbd]`` ``[/kbd]``"
 msgstr "``[kbd]`` ``[/kbd]``"
@@ -104,8 +272,20 @@ msgstr "Presiona :kbd:`Ctrl + C`."
 msgid "``[code]`` ``[/code]``"
 msgstr "``[code]`` ``[/code]``"
 
+msgid "``Returns [code]true[/code].``"
+msgstr "``Devuelve [code]true[/code].``"
+
 msgid "Returns ``true``."
 msgstr "Devuelve ``true``."
+
+msgid "``[codeblock]``"
+msgstr "``[codeblock]``"
+
+msgid "``[/codeblock]``"
+msgstr "``[/codeblock]``"
+
+msgid "Multiline code block"
+msgstr "Bloque de código con múltiples líneas"
 
 msgid "*See below.*"
 msgstr "*Ver a continuación.*"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Using the ArrayMesh"
-msgstr "Usando ArrayMesh"
+msgstr "Usar ArrayMesh"
 
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
@@ -41,7 +41,7 @@ msgstr ""
 "El primer parámetro es el ``PrimitiveType``, un concepto de OpenGL que "
 "instruye a la GPU cómo organizar el primitivo basado en los vértices "
 "proporcionados, es decir, si representan triángulos, líneas, puntos, etc. "
-"Consulta :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` para ver las "
+"Véase :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` para ver las "
 "opciones disponibles."
 
 msgid ""
@@ -51,7 +51,7 @@ msgid ""
 msgstr ""
 "Los posibles elementos de los ``arrays`` se enumeran a continuación, junto "
 "con la posición que deben tener dentro de ``arrays``. "
-"Consulta :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>` para obtener una lista "
+"Véase :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>` para obtener una lista "
 "completa."
 
 msgid "Index"
@@ -187,6 +187,48 @@ msgstr ""
 msgid "Put together, the full code looks like:"
 msgstr "A continuación se muestra el código completo:"
 
+msgid "Generating a rectangle"
+msgstr "Generar un rectángulo"
+
+msgid "``verts[Index]``"
+msgstr "``verts[Index]``"
+
+msgid "``uvs[Index]``"
+msgstr "``uvs[Index]``"
+
+msgid "``normals[Index]``"
+msgstr "``normals[Index]``"
+
+msgid "(0, 0, 0)"
+msgstr "(0, 0, 0)"
+
+msgid "(0, 0)"
+msgstr "(0, 0)"
+
+msgid "Vector3.UP"
+msgstr "Vector3.UP"
+
+msgid "(0, 0, 1)"
+msgstr "(0, 0, 1)"
+
+msgid "(1, 0)"
+msgstr "(1, 0)"
+
+msgid "(1, 0, 0)"
+msgstr "(1, 0, 0)"
+
+msgid "(0, 1)"
+msgstr "(0, 1)"
+
+msgid "(1, 0, 1)"
+msgstr "(1, 0, 1)"
+
+msgid "(1, 1)"
+msgstr "(1, 1)"
+
+msgid "Generating a sphere"
+msgstr "Generar una esfera"
+
 msgid ""
 "Here is sample code for generating a sphere. Although the code is presented "
 "in GDScript, there is nothing Godot specific about the approach to "
@@ -204,7 +246,7 @@ msgstr ""
 "línea."
 
 msgid "Saving"
-msgstr "Guardando"
+msgstr "Guardar"
 
 msgid ""
 "Finally, we can use the :ref:`ResourceSaver <class_resourcesaver>` class to "

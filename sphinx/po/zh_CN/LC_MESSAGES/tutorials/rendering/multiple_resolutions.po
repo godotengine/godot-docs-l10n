@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -698,23 +698,6 @@ msgstr ""
 
 msgid "Keep the stretch mode to its default value, ``disabled``."
 msgstr "保持拉伸模式为默认值 ``disabled``\\ （禁用）。"
-
-msgid ""
-"Keep the stretch aspect to its default value, ``ignore`` (its value won't be "
-"used since the stretch mode is ``disabled``)."
-msgstr ""
-"保持拉伸比例为默认值 ``ignore``\\ （因为拉伸模式是 ``disabled``\\ ，所以这里"
-"的值不会被用到）。"
-
-msgid ""
-"You can define a minimum window size by calling "
-"``get_window().set_min_size()`` in a script's ``_ready()`` function. This "
-"prevents the user from resizing the application below a certain size, which "
-"could break the UI layout."
-msgstr ""
-"你可以通过在脚本的 ``_ready()`` 函数中调用 ``get_window().set_min_size()`` 来"
-"定义最小窗口大小。这可以防止用户将应用程序调整到低于某个大小，否则可能会破坏 "
-"UI 布局。"
 
 msgid ""
 "Add a setting in the application's settings to change the root "

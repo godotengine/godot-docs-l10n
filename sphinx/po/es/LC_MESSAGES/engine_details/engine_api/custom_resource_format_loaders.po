@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -99,6 +99,12 @@ msgstr ""
 "recursos utilizando la función ``load``. Para cargar un recurso, ``load`` "
 "debe leer y manejar la serialización de datos."
 
+msgid "resource_loader_json.h"
+msgstr "resource_loader_json.h"
+
+msgid "resource_loader_json.cpp"
+msgstr "resource_loader_json.cpp"
+
 msgid "Creating a ResourceFormatSaver"
 msgstr "Crear un ResourceFormatSaver"
 
@@ -108,6 +114,12 @@ msgid ""
 msgstr ""
 "Si deseas poder editar y guardar un recurso, puedes implementar un "
 "``ResourceFormatSaver``:"
+
+msgid "resource_saver_json.h"
+msgstr "resource_saver_json.h"
+
+msgid "resource_saver_json.cpp"
+msgstr "resource_saver_json.cpp"
 
 msgid "Creating custom data types"
 msgstr "Crear tipos de datos personalizados"
@@ -124,6 +136,12 @@ msgstr ""
 
 msgid "Here is an example of creating a custom datatype:"
 msgstr "Aquí hay un ejemplo de creación de un tipo de dato personalizado:"
+
+msgid "resource_json.h"
+msgstr "resource_json.h"
+
+msgid "resource_json.cpp"
+msgstr "resource_json.cpp"
 
 msgid "Considerations"
 msgstr "Consideraciones"
@@ -143,6 +161,23 @@ msgstr ""
 "Por ejemplo, aquí está el código para traducir llamadas de ``FileAccess`` a "
 "``std::istream``."
 
+msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+msgstr "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+
+msgid ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+msgstr ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+
+msgid ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+msgstr ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+
 msgid "Registering the new file format"
 msgstr "Registrando un nuevo formato de archivo"
 
@@ -153,6 +188,12 @@ msgstr ""
 "Godot registra \"ResourceFormatLoader\" con un manejador \"ResourceLoader\". "
 "El manejador selecciona automáticamente el cargador adecuado cuando se llama "
 "a \"load\"."
+
+msgid "register_types.h"
+msgstr "register_types.h"
+
+msgid "register_types.cpp"
+msgstr "register_types.cpp"
 
 msgid "Loading it on GDScript"
 msgstr "Cargandolo en GDScript"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -216,37 +216,11 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <directory>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr "專案路徑（<directory> 內必須包含一個「project.godot」檔案）。"
-
-msgid "|release| Path or UID of a scene in the project that should be started."
-msgstr "|release| 要啟動的專案場景之路徑或 UID 。"
-
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr "向上層資料夾搜尋「project.godot」檔案。"
-
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "欲載入之 Pack (.pck) 檔。"
-
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| 算繪執行緒模式（「unsafe」、「safe」、「separate」）。詳"
-"見 :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` 以取得更多資訊。"
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
@@ -275,17 +249,6 @@ msgid ""
 "|release| Display driver (and rendering driver). Use ``--help`` first to "
 "display the list of available drivers."
 msgstr "視訊驅動程式。先指定 ``--help`` 以顯示所有可用的驅動程式。"
-
-msgid "``--audio-output-latency`` <ms>"
-msgstr "``--audio-output-latency`` <ms>"
-
-msgid ""
-"|release| Override audio output latency in milliseconds (default is 15 ms). "
-"Lower values make sound playback more reactive but increase CPU usage, and "
-"may result in audio cracking if the CPU can't keep up"
-msgstr ""
-"|release| 覆寫音訊輸出延遲（毫秒，預設為 15 ms）。較低的數值可提升回應性，但"
-"會增加 CPU 使用率；若 CPU 無法負荷，可能導致聲音破音"
 
 msgid "``--rendering-method <renderer>``"
 msgstr "``--render-thread <mode>``"
@@ -333,14 +296,6 @@ msgstr ""
 
 msgid "``--log-file``"
 msgstr "``--log-file``"
-
-msgid ""
-"|release| Write output/error log to the specified path instead of the "
-"default location defined by the project. <file> path should be absolute or "
-"relative to the project directory."
-msgstr ""
-"|release| 將輸出/錯誤日誌寫入指定路徑，而非專案預設位置。<file> 路徑可為絕對"
-"路徑或相對於專案目錄的路徑 。"
 
 msgid "``--write-movie <file>``"
 msgstr "``--main-pack <file>``"
@@ -411,9 +366,6 @@ msgstr "|release|使用單一視窗（沒有單獨的子視窗）。"
 msgid "``--xr-mode <mode>``"
 msgstr "``--render-thread <mode>``"
 
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release|選擇 XR 模式（“預設”、“關閉”、“開啟”）。"
-
 msgid "``--wid <window_id>``"
 msgstr "``--wid <window_id>``"
 
@@ -422,13 +374,6 @@ msgstr "|release| 要求將視窗隸屬於指定的父視窗 。"
 
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
-
-msgid ""
-"|release| Select accessibility mode ['auto' (when screen reader is running, "
-"default), 'always', 'disabled']."
-msgstr ""
-"|release| 選擇無障礙模式 ['auto'（當螢幕報讀程式執行時，預"
-"設）、'always'、'disabled'] 。"
 
 msgid "**Debug options**"
 msgstr "**偵錯選項**"
@@ -590,13 +535,6 @@ msgstr ""
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid ""
-"|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
-"not use as a FPS limiter; use --max-fps instead."
-msgstr ""
-"|release| 模擬高 CPU 負載（每個影格延遲 <ms> 毫秒）。 請勿用作 FPS 限制器；若"
-"要限制請使用 --max-fps。"
-
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
@@ -639,10 +577,6 @@ msgstr "強制固定數 FPS。該設定將禁用即時同步。"
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <啟用>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr "|release| 啟用或停用幀差平滑化 ('enable', 'disable')。"
-
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
@@ -662,26 +596,11 @@ msgstr "**獨立工具**"
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s <script>``, ``--script <script>``"
 
-msgid ""
-"|release| Run a script. ``<script>`` must be a resource path relative to the "
-"project (``myscript.gd`` will be interpreted as ``res://myscript.gd``) or an "
-"absolute filesystem path (for example on Windows ``C:/tmp/myscript.gd``)"
-msgstr ""
-"|release| 執行腳本。 ``<script>`` 必須是相對於專案的資源路徑 "
-"(``myscript.gd`` 將會被解釋為 ``res://myscript.gd``)，或是絕對檔案系統路徑 "
-"(例如在 Windows 上為 ``C:/tmp/myscript.gd``)"
-
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <main_loop_name>``"
 
-msgid "|release| Run a MainLoop specified by its global class name."
-msgstr "|release| 以全域類別名稱執行指定的 MainLoop."
-
 msgid "``--check-only``"
 msgstr "``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr "僅解析錯誤並退出（與 ``--script`` 一起使用）。"
 
 msgid "``--import``"
 msgstr "``--import``"
@@ -695,18 +614,6 @@ msgstr ""
 
 msgid "``--export-release <preset> <path>``"
 msgstr "``--export-pack <preset> <path>``"
-
-msgid ""
-"|editor| Export the project in release mode using the given preset and "
-"output path. The preset name should match one defined in "
-"'export_presets.cfg'. ``<path>`` should be absolute or relative to the "
-"project directory, and include the filename for the binary (e.g. 'builds/"
-"game.exe'). The target directory must exist."
-msgstr ""
-"|editor| 使用指定的預設與輸出路徑，以 release 模式匯出專案。 預設名稱需與 "
-"'export_presets.cfg' 中定義的相符。 ``<path>`` 應為絕對路徑或相對於專案目錄的"
-"路徑，且需包含產出二進位的檔名（例如 'builds/game.exe'）。 目標目錄必須已存"
-"在。"
 
 msgid "``--export-debug <preset> <path>``"
 msgstr "``--export-pack <preset> <path>``"
@@ -731,30 +638,11 @@ msgstr ""
 msgid "``--export-patch <preset> <path>``"
 msgstr "``--export-patch <preset> <path>``"
 
-msgid ""
-"|editor| Export pack with changed files only. See --export-pack description "
-"for other considerations."
-msgstr ""
-"|editor| 只匯出變更過的檔案作為資料包。 其他注意事項請參考 --export-pack 的說"
-"明。"
-
 msgid "``--patches <paths>``"
 msgstr "``--patches <paths>``"
 
-msgid ""
-"|editor| List of patches to use with --export-patch. The list is comma-"
-"separated."
-msgstr "|editor| 與 --export-patch 一起使用的補丁列表，以逗號分隔."
-
 msgid "``--install-android-build-template``"
 msgstr "``--install-android-build-template``"
-
-msgid ""
-"|editor| Install the Android build template. Used in conjunction with --"
-"export-release or --export-debug."
-msgstr ""
-"|editor| 安裝 Android 建置範本。 可與 --export-release 或 --export-debug 搭配"
-"使用。"
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<最大檔案kb值>] [<最大行數>]``"
@@ -789,14 +677,6 @@ msgstr "|editor| 禁止傾印基礎型別（與 ``--doctool`` 搭配使用）。
 msgid "``--gdscript-docs <path>``"
 msgstr "``--doctool <path>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| 不要傾印引擎 API，而是從 <path> 中 GDScript 檔案的內聯文件產生 API "
-"參考（搭配 ``--doctool`` 使用）."
-
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
@@ -810,23 +690,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| 在目前資料夾產生 GDExtension 標頭檔 'gdnative_interface.h'. 這個檔案"
-"是實作 GDExtension 所需的基礎檔案."
-
 msgid "``--dump-extension-api``"
 msgstr "``--gdnative-generate-json-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| 在目前資料夾產生名為 'extension_api.json' 的 Godot API JSON 傾印, 用"
-"於 GDExtension 綁定."
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--gdnative-generate-json-api``"
@@ -857,9 +722,6 @@ msgstr ""
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"
-
-msgid "|editor| Run unit tests. Use --test --help for more information."
-msgstr "|editor| 執行單元測試。 使用 --test --help 以取得更多資訊。"
 
 msgid "Path"
 msgstr "路徑"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -104,15 +104,6 @@ msgstr "\\ |image3|"
 msgid "image3"
 msgstr "image3"
 
-msgid ""
-"When areas detect a collision, they emit signals. We're going to connect one "
-"to the ``Player`` node. Select ``MobDetector`` and go to *Inspector*'s "
-"*Node* tab, double-click the ``body_entered`` signal and connect it to the "
-"``Player``"
-msgstr ""
-"當區域偵測到碰撞時，它們會發出訊號。我們要將一個訊號連接到 *Player* 節點。在*"
-"節點*分頁中，按兩下 ``body_entered`` 訊號並將其連接到 *Player*\\\\\\\\"
-
 msgid "|image4|"
 msgstr "\\ |image4|"
 
@@ -147,13 +138,6 @@ msgid ""
 msgstr ""
 "我們可以利用 ''Player'' 的 ''hit'' 信號來結束遊戲。我們所要做的就是將它連接"
 "到 ''Main'' 節點上，在處理時停止 ''MobTimer''\\ 。"
-
-msgid ""
-"Open ``main.tscn``, select the ``Player`` node, and in the *Node* dock, "
-"connect its ``hit`` signal to the ``Main`` node."
-msgstr ""
-"打開 ``main.tscn`` 場景，選中 ``Player`` 節點，然後在*節點*面板中把 ``hit`` "
-"訊號連接到 ``Main`` 節點。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"

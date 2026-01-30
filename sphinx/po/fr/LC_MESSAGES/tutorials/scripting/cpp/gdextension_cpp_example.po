@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -59,14 +59,6 @@ msgstr ""
 "par créer un projet Godot vide dans lequel nous placerons quelques fichiers."
 
 msgid ""
-"In our demo project, we'll create a scene containing a Node called \"Main\" "
-"and we'll save it as ``main.tscn``. We'll come back to that later."
-msgstr ""
-"Dans notre projet de démo, nous allons créer une scène contenant un nœud "
-"appelé \"Main\" et nous l'enregistrerons sous le nom de ``main.tscn``. Nous "
-"y reviendrons plus tard."
-
-msgid ""
 "In the ``src`` folder, we'll start with creating our header file for the "
 "GDExtension node we'll be creating. We will name it ``gdexample.h``:"
 msgstr ""
@@ -105,11 +97,6 @@ msgstr "gdextension_cpp_example/src/register_types.h"
 
 msgid "Compiling the plugin"
 msgstr "Compiler le plugin"
-
-msgid "You should now be able to find the module in ``demo/bin/<platform>``."
-msgstr ""
-"Vous devriez maintenant être en mesure de trouver le module dans ``demo/bin/"
-"<platform>``."
 
 msgid "Using the GDExtension module"
 msgstr "Utilisation du module GDExtension"

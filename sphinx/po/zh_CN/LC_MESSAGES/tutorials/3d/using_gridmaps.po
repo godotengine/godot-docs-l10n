@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -164,6 +164,12 @@ msgstr ""
 msgid "MeshLibrary format"
 msgstr "MeshLibrary 格式"
 
+msgid ""
+"Have a material, in the mesh's material slot, *not* the MeshInstance3D's "
+"material slots."
+msgstr ""
+"在网格（mesh）的材质槽中使用材质， *而不是* 在 MeshInstance3D 的材质槽中。"
+
 msgid "Exporting the MeshLibrary"
 msgstr "导出 MeshLibrary"
 
@@ -178,6 +184,15 @@ msgstr "使用 GridMap"
 
 msgid "From left to right in the toolbar:"
 msgstr "在工具栏中从左到右："
+
+msgid ""
+"Clicking on **Settings** in that dropdown brings up a window that allows you "
+"to change the **Pick Distance**, which is the maximum distance at which "
+"tiles can be placed on a GridMap, relative to the camera position (in "
+"meters)."
+msgstr ""
+"点击下拉菜单中的 **Settings** 会打开一个窗口，可调整 **Pick Distance** （即相"
+"对于摄像机位置，可在 GridMap 上放置图块的最大距离，单位为米）。"
 
 msgid "Using GridMap in code"
 msgstr "在代码中使用 GridMap"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -51,6 +51,14 @@ msgstr "Requerimientos"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "Para compilar en Windows, Linux o macOS, se requiere lo siguiente:"
 
+msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
+
+msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+"El sistema de construcción `SCons 4.0+ <https://scons.org/pages/"
+"download.html>`_."
+
 msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr "Gradle (se descargará e instalará automáticamente si falta)."
 
@@ -71,7 +79,7 @@ msgstr ""
 "sección :ref:`doc_introduction_to_the_buildsystem`."
 
 msgid "Setting up the buildsystem"
-msgstr "Configurando el sistema de construcción"
+msgstr "Configurar el sistema de construcción"
 
 msgid ""
 "After setting up the SDK and environment variables, be sure to **restart "
@@ -94,7 +102,7 @@ msgstr ""
 "el motor para descargar el NDK y luego podrá compilar GDExtension."
 
 msgid "Building the export templates"
-msgstr "Construyendo las plantillas de exportación"
+msgstr "Construir las plantillas de exportación"
 
 msgid ""
 "Compiling the standard export templates is done by calling SCons from the "
@@ -136,14 +144,14 @@ msgid ""
 "If you want to enable Vulkan validation layers, see :ref:`Vulkan validation "
 "layers on Android <doc_vulkan_validation_layers_android>`."
 msgstr ""
-"Si deseas habilitar las capas de validación de Vulkan, consulta :ref:`Capas "
-"de validación de Vulkan en Android <doc_vulkan_validation_layers_android>`."
+"Si deseas habilitar las capas de validación de Vulkan, véase :ref:`Capas de "
+"validación de Vulkan en Android <doc_vulkan_validation_layers_android>`."
 
 msgid "Adding support for x86 devices"
 msgstr "Añadir soporte para dispositivos x86"
 
 msgid "Cleaning the generated export templates"
-msgstr "Limpiando las plantillas de exportación generada"
+msgstr "Limpiar las plantillas de exportación generada"
 
 msgid ""
 "You can use the following commands to remove the generated export templates:"
@@ -152,10 +160,10 @@ msgstr ""
 "exportación generadas:"
 
 msgid "Using the export templates"
-msgstr "Usando las plantillas de exportación"
+msgstr "Usar las plantillas de exportación"
 
 msgid "Installing the templates"
-msgstr "Instalando las plantillas"
+msgstr "Instalar las plantillas"
 
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "A continuación se explican las diferencias de redes de alto y bajo nivel en "
 "Godot, así como algunos aspectos fundamentales. Si deseas saltar de cabeza y "
-"agregar redes a tus primeros nodos, salta a `Inicializando la red`_ a "
+"agregar redes a tus primeros nodos, salta a `Inicializar la red`_ a "
 "continuación. ¡Pero asegúrate de leer el resto más tarde!"
 
 msgid "This is due to the inherent limitations of the low-level protocols:"
@@ -185,7 +185,7 @@ msgstr ""
 "ENet que permite compatibilidad total con IPv6."
 
 msgid "Initializing the network"
-msgstr "Inicializando la red"
+msgstr "Inicializar la red"
 
 msgid ""
 "Each node has a ``multiplayer`` property, which is a reference to the "
@@ -238,8 +238,20 @@ msgstr ""
 "Es posible responder a las conexiones o desconexiones conectándose a las "
 "señales de ``MultiplayerAPI``:"
 
+msgid "``connected_to_server()``"
+msgstr "``connected_to_server()``"
+
+msgid "``connection_failed()``"
+msgstr "``connection_failed()``"
+
+msgid "``server_disconnected()``"
+msgstr "``server_disconnected()``"
+
 msgid "Remote procedure calls"
 msgstr "Llamadas a procedimientos remotos"
+
+msgid "``mode``:"
+msgstr "``mode``:"
 
 msgid ""
 "``\"authority\"``: Only the multiplayer authority can call remotely. The "
@@ -252,6 +264,12 @@ msgstr ""
 "usando :ref:`Node.set_multiplayer_authority "
 "<class_Node_method_set_multiplayer_authority>`."
 
+msgid "``sync``:"
+msgstr "``sync``:"
+
+msgid "``transfer_mode``:"
+msgstr "``transfer_mode``:"
+
 msgid ""
 "The function ``multiplayer.get_remote_sender_id()`` can be used to get the "
 "unique id of an rpc sender, when used within the function called by rpc."
@@ -260,8 +278,11 @@ msgstr ""
 "obtener el identificador único de un remitente rpc, cuando se utiliza dentro "
 "de la función llamada por rpc."
 
+msgid "Channels"
+msgstr "Canales"
+
 msgid "Exporting for dedicated servers"
-msgstr "Exportando para servidores dedicados"
+msgstr "Exportar para servidores dedicados"
 
 msgid ""
 "Once you've made a multiplayer game, you may want to export it to run it on "
@@ -270,7 +291,7 @@ msgid ""
 msgstr ""
 "Una vez que hayas hecho un juego multijugador, tal vez quieras exportarlo "
 "para ejecutarlo en un servidor dedicado sin GPU disponible. "
-"Ver :ref:`doc_exporting_for_dedicated_servers` para más información."
+"Véase :ref:`doc_exporting_for_dedicated_servers` para más información."
 
 msgid ""
 "The code samples on this page aren't designed to run on a dedicated server. "

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -11,11 +11,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "TrueType Font or Collection (``.ttf``, ``.ttc``)"
+msgstr "TrueType Font o Collection (``.ttf``, ``.ttc``)"
+
+msgid "OpenType Font or Collection (``.otf``, ``.otc``)"
+msgstr "OpenType Font o Collection (``.otf``, ``.otc``)"
+
 msgid "Web Open Font Format 1 (``.woff``)"
 msgstr "Formato de Fuente Web Abierta 1 (``.woff``)"
 
 msgid "Font shadow example"
 msgstr "Ejemplo de sombra de fuente"
+
+msgid "Hinting"
+msgstr "Hinting"
 
 msgid "Mipmaps"
 msgstr "Mipmaps"
@@ -30,8 +39,47 @@ msgstr ""
 msgid "It's possible to use a system font as a fallback font too."
 msgstr "Es posible usar también una fuente de sistema como fuente de fallback."
 
+msgid "``100``"
+msgstr "``100``"
+
+msgid "``200``"
+msgstr "``200``"
+
+msgid "``300``"
+msgstr "``300``"
+
+msgid "``400``"
+msgstr "``400``"
+
+msgid "**Regular (Normal)**"
+msgstr "**Regular (Normal)**"
+
+msgid "``500``"
+msgstr "``500``"
+
+msgid "``600``"
+msgstr "``600``"
+
+msgid "``700``"
+msgstr "``700``"
+
+msgid "**Bold**"
+msgstr "**Negrita**"
+
+msgid "``800``"
+msgstr "``800``"
+
+msgid "``900``"
+msgstr "``900``"
+
+msgid "``950``"
+msgstr "``950``"
+
 msgid "Windows"
 msgstr "Windows"
+
+msgid "macOS/iOS"
+msgstr "macOS/iOS"
 
 msgid "Linux"
 msgstr "Linux"
@@ -39,8 +87,47 @@ msgstr "Linux"
 msgid "Android"
 msgstr "Android"
 
+msgid "Arial"
+msgstr "Arial"
+
+msgid "Helvetica"
+msgstr "Helvetica"
+
+msgid "Roboto / Noto Sans"
+msgstr "Roboto/Noto Sans"
+
+msgid "``serif``"
+msgstr "``serif``"
+
+msgid "Times New Roman"
+msgstr "Times New Roman"
+
+msgid "Times"
+msgstr "Times"
+
+msgid "Noto Serif"
+msgstr "Noto Serif"
+
+msgid "Courier New"
+msgstr "Courier New"
+
+msgid "Courier"
+msgstr "Courier"
+
+msgid "Droid Sans Mono"
+msgstr "Droid Sans Mono"
+
+msgid "Comic Sans MS"
+msgstr "Comic Sans MS"
+
 msgid "Apple Chancery"
 msgstr "Apple Chancery"
+
+msgid "Gabriola"
+msgstr "Gabriola"
+
+msgid "Papyrus"
+msgstr "Papyrus"
 
 msgid ""
 "When using traditional rasterized fonts, Godot caches glyphs on a per-font "
@@ -186,7 +273,7 @@ msgstr ""
 "strings proporcionadas por el usuario o no traducibles)."
 
 msgid "**By enabling character sets**"
-msgstr "**Habilitando conjuntos de caracteres**"
+msgstr "**Habilitar conjuntos de caracteres**"
 
 msgid ""
 "The second method requires less configuration and fewer updates if your "

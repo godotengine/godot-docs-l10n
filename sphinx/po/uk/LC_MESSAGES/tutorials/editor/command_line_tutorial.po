@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -235,41 +235,14 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <каталог>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr ""
-"|release| Шлях до проекту (``<directory>`` має містити файл 'project.godot')."
-
 msgid "``--scene <path>``"
 msgstr "``--scene <path>``"
-
-msgid "|release| Path or UID of a scene in the project that should be started."
-msgstr "|release| Шлях або UID сцени в проєкті, яку слід запустити."
-
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr "|release| Скануйте папки вгору, щоб знайти файл «project.godot»."
 
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "|release| Шлях до пакетного файлу (.pck) для завантаження."
-
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| Режим потоку відтворення («небезпечний», «безпечний», «окремий»). "
-"Перегляньте :ref:`Модель потоку <class_ProjectSettings_property_rendering/"
-"driver/threads/thread_model>` для отримання додаткової інформації."
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
@@ -302,19 +275,6 @@ msgid ""
 msgstr ""
 "|release| Драйвер дисплея (та драйвер візуалізації). Спочатку використовуйте "
 "``--help``, щоб відобразити список доступних драйверів."
-
-msgid "``--audio-output-latency`` <ms>"
-msgstr "``--audio-output-latency`` <ms>"
-
-msgid ""
-"|release| Override audio output latency in milliseconds (default is 15 ms). "
-"Lower values make sound playback more reactive but increase CPU usage, and "
-"may result in audio cracking if the CPU can't keep up"
-msgstr ""
-"|release| Змінити затримку виведення аудіо в мілісекундах (за замовчуванням "
-"15 мс). Нижчі значення роблять відтворення звуку більш реактивним, але "
-"збільшують використання процесора та можуть призвести до переривання звуку, "
-"якщо процесор не встигає за ним"
 
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
@@ -366,15 +326,6 @@ msgstr ""
 
 msgid "``--log-file``"
 msgstr "``--log-file``"
-
-msgid ""
-"|release| Write output/error log to the specified path instead of the "
-"default location defined by the project. <file> path should be absolute or "
-"relative to the project directory."
-msgstr ""
-"|release| Записувати вивід/журнал помилок за вказаним шляхом, а не за місцем "
-"розташування за замовчуванням, визначеним проектом. Шлях <файл> має бути "
-"абсолютним або відносним до каталогу проекту."
 
 msgid "``--write-movie <file>``"
 msgstr "``--write-movie <файл>``"
@@ -447,9 +398,6 @@ msgstr "|release| Використовуйте одне вікно (без ок�
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <режим>``"
 
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| Виберіть режим XR (\"default\", \"off\", \"on\")."
-
 msgid "``--wid <window_id>``"
 msgstr "``--wid <window_id>``"
 
@@ -458,13 +406,6 @@ msgstr "|release| Запит, прив'язаний до вікна."
 
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
-
-msgid ""
-"|release| Select accessibility mode ['auto' (when screen reader is running, "
-"default), 'always', 'disabled']."
-msgstr ""
-"|release| Виберіть режим доступності [«авто» (коли працює програма "
-"зчитування з екрана, за замовчуванням), «завжди», «вимкнено»]."
 
 msgid "**Debug options**"
 msgstr "**Команди налагодження**"
@@ -646,14 +587,6 @@ msgstr ""
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid ""
-"|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
-"not use as a FPS limiter; use --max-fps instead."
-msgstr ""
-"|release| Імітувати високе навантаження на процесор (затримувати кожен кадр "
-"на <мс> мілісекунд). Не використовувати як обмежувач FPS; натомість "
-"використовувати --max-fps."
-
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
@@ -704,12 +637,6 @@ msgstr ""
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <включити>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
-"|release| Увімкнути або вимкнути дельта-згладжування кадру («ввімкнути», "
-"«вимкнути»)."
-
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
@@ -730,29 +657,11 @@ msgstr "**Автономні інструменти**"
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
 
-msgid ""
-"|release| Run a script. ``<script>`` must be a resource path relative to the "
-"project (``myscript.gd`` will be interpreted as ``res://myscript.gd``) or an "
-"absolute filesystem path (for example on Windows ``C:/tmp/myscript.gd``)"
-msgstr ""
-"|release| Запустіть скрипт. ``<script>`` має бути шляхом до ресурсу відносно "
-"проекту (``myscript.gd`` буде інтерпретуватися як ``res://myscript.gd``) або "
-"абсолютним шляхом до файлової системи (наприклад, у Windows ``C:/tmp/"
-"myscript.gd``)"
-
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <main_loop_name>``"
 
-msgid "|release| Run a MainLoop specified by its global class name."
-msgstr "|release| Запустити MainLoop, визначений його глобальною назвою класу."
-
 msgid "``--check-only``"
 msgstr "``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr ""
-"|release| Лише аналізуйте помилки та виходьте (використовуйте з ``--"
-"script``)."
 
 msgid "``--import``"
 msgstr "``--імпорт``"
@@ -766,19 +675,6 @@ msgstr ""
 
 msgid "``--export-release <preset> <path>``"
 msgstr "``--export-release <попереднє налаштування> <шлях>``"
-
-msgid ""
-"|editor| Export the project in release mode using the given preset and "
-"output path. The preset name should match one defined in "
-"'export_presets.cfg'. ``<path>`` should be absolute or relative to the "
-"project directory, and include the filename for the binary (e.g. 'builds/"
-"game.exe'). The target directory must exist."
-msgstr ""
-"|editor| Експортуйте проєкт у режимі випуску, використовуючи заданий пресет "
-"та вихідний шлях. Назва пресету повинна збігатися з назвою, визначеною у "
-"'export_presets.cfg'. ``<path>`` має бути абсолютним або відносним до "
-"каталогу проєкту та містити назву файлу для бінарного файлу (наприклад, "
-"'builds/game.exe'). Цільовий каталог має існувати."
 
 msgid "``--export-debug <preset> <path>``"
 msgstr "``--export-debug <попереднє налаштування> <шлях>``"
@@ -805,32 +701,11 @@ msgstr ""
 msgid "``--export-patch <preset> <path>``"
 msgstr "``--export-patch <preset> <path>``"
 
-msgid ""
-"|editor| Export pack with changed files only. See --export-pack description "
-"for other considerations."
-msgstr ""
-"|editor| Експортувати пакет лише зі зміненими файлами. Див. опис --export-"
-"pack для інших міркувань."
-
 msgid "``--patches <paths>``"
 msgstr "``--patches <paths>``"
 
-msgid ""
-"|editor| List of patches to use with --export-patch. The list is comma-"
-"separated."
-msgstr ""
-"|editor| Список патчів для використання з --export-patch. Список "
-"розділяється комами."
-
 msgid "``--install-android-build-template``"
 msgstr "``--install-android-build-template``"
-
-msgid ""
-"|editor| Install the Android build template. Used in conjunction with --"
-"export-release or --export-debug."
-msgstr ""
-"|editor| Встановлює шаблон збірки Android. Використовується разом з --export-"
-"release або --export-debug."
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
@@ -869,15 +744,6 @@ msgstr ""
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <шлях>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| Замість того, щоб створювати дамп API двигуна, згенеруйте посилання "
-"на API із вбудованої документації у файлах GDScript, знайдених у <path> "
-"(використовується з ``--doctool``)."
-
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
@@ -891,24 +757,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| Створіть файл заголовка GDExtension 'gdnative_interface.h' у "
-"поточній папці. Цей файл є базовим файлом, необхідним для впровадження "
-"GDExtension."
-
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| Створіть JSON-дамп API Godot для прив’язок GDExtension під назвою "
-"«extension_api.json» у поточній папці."
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <шлях>``"
@@ -940,11 +790,6 @@ msgstr ""
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"
-
-msgid "|editor| Run unit tests. Use --test --help for more information."
-msgstr ""
-"|editor| Запускайте модульні тести. Використовуйте --test --help для "
-"отримання додаткової інформації."
 
 msgid "Path"
 msgstr "Шлях"

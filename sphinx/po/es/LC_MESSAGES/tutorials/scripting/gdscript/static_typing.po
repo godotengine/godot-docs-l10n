@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -84,8 +84,27 @@ msgstr ":ref:`Clases globales <doc_gdscript_basics_class_name>`."
 msgid ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
 msgstr ":ref:`Clases internas <doc_gdscript_basics_inner_classes>`."
 
+msgid "Specify the return type of a function with the arrow ``->``"
+msgstr "Define el tipo de retorno de una función con la flecha ``->``"
+
+msgid "Covariance and contravariance"
+msgstr "Covarianza y contravarianza"
+
 msgid "Example:"
 msgstr "Ejemplo:"
+
+msgid "Type casting"
+msgstr "Conversión (casting) de tipo"
+
+msgid ""
+"Type casting is an important concept in typed languages. Casting is the "
+"conversion of a value from one type to another."
+msgstr ""
+"El type casting es un concepto clave en lenguajes tipados. El casting es la "
+"conversión de un valor de un tipo a otro."
+
+msgid "Alternatively, you can use the ``assert()`` statement:"
+msgstr "Alternativamente, puedes utilizar la declaración ``assert()``:"
 
 msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
@@ -142,5 +161,227 @@ msgstr ""
 msgid "Warning system"
 msgstr "Sistema de advertencias"
 
+msgid "Method"
+msgstr "Método"
+
+msgid "Statically typed equivalents"
+msgstr "Equivalentes tipados estáticamente"
+
+msgid ""
+":ref:`Vector2.abs() <class_Vector2_method_abs>`, :ref:`Vector2i.abs() "
+"<class_Vector2i_method_abs>`"
+msgstr ""
+":ref:`Vector2.abs() <class_Vector2_method_abs>`, :ref:`Vector2i.abs() "
+"<class_Vector2i_method_abs>`"
+
+msgid ""
+":ref:`Vector3.abs() <class_Vector3_method_abs>`, :ref:`Vector3i.abs() "
+"<class_Vector3i_method_abs>`"
+msgstr ""
+":ref:`Vector3.abs() <class_Vector3_method_abs>`, :ref:`Vector3i.abs() "
+"<class_Vector3i_method_abs>`"
+
+msgid ""
+":ref:`Vector4.abs() <class_Vector4_method_abs>`, :ref:`Vector4i.abs() "
+"<class_Vector4i_method_abs>`"
+msgstr ""
+":ref:`Vector4.abs() <class_Vector4_method_abs>`, :ref:`Vector4i.abs() "
+"<class_Vector4i_method_abs>`"
+
+msgid ":ref:`ceil() <class_@GlobalScope_method_ceil>`"
+msgstr ":ref:`ceil() <class_@GlobalScope_method_ceil>`"
+
+msgid ""
+":ref:`ceilf() <class_@GlobalScope_method_ceilf>`, :ref:`ceili() "
+"<class_@GlobalScope_method_ceili>`"
+msgstr ""
+":ref:`ceilf() <class_@GlobalScope_method_ceilf>`, :ref:`ceili() "
+"<class_@GlobalScope_method_ceili>`"
+
+msgid ":ref:`Vector2.ceil() <class_Vector2_method_ceil>`"
+msgstr ":ref:`Vector2.ceil() <class_Vector2_method_ceil>`"
+
+msgid ":ref:`Vector3.ceil() <class_Vector3_method_ceil>`"
+msgstr ":ref:`Vector3.ceil() <class_Vector3_method_ceil>`"
+
+msgid ":ref:`Vector4.ceil() <class_Vector4_method_ceil>`"
+msgstr ":ref:`Vector4.ceil() <class_Vector4_method_ceil>`"
+
+msgid ":ref:`clamp() <class_@GlobalScope_method_clamp>`"
+msgstr ":ref:`clamp() <class_@GlobalScope_method_clamp>`"
+
+msgid ""
+":ref:`clampf() <class_@GlobalScope_method_clampf>`, :ref:`clampi() "
+"<class_@GlobalScope_method_clampi>`"
+msgstr ""
+":ref:`clampf() <class_@GlobalScope_method_clampf>`, :ref:`clampi() "
+"<class_@GlobalScope_method_clampi>`"
+
+msgid ""
+":ref:`Vector2.clamp() <class_Vector2_method_clamp>`, :ref:`Vector2i.clamp() "
+"<class_Vector2i_method_clamp>`"
+msgstr ""
+":ref:`Vector2.clamp() <class_Vector2_method_clamp>`, :ref:`Vector2i.clamp() "
+"<class_Vector2i_method_clamp>`"
+
+msgid ""
+":ref:`Vector3.clamp() <class_Vector3_method_clamp>`, :ref:`Vector3i.clamp() "
+"<class_Vector3i_method_clamp>`"
+msgstr ""
+":ref:`Vector3.clamp() <class_Vector3_method_clamp>`, :ref:`Vector3i.clamp() "
+"<class_Vector3i_method_clamp>`"
+
+msgid ""
+":ref:`Vector4.clamp() <class_Vector4_method_clamp>`, :ref:`Vector4i.clamp() "
+"<class_Vector4i_method_clamp>`"
+msgstr ""
+":ref:`Vector4.clamp() <class_Vector4_method_clamp>`, :ref:`Vector4i.clamp() "
+"<class_Vector4i_method_clamp>`"
+
+msgid ":ref:`Color.clamp() <class_Color_method_clamp>`"
+msgstr ":ref:`Color.clamp() <class_Color_method_clamp>`"
+
+msgid ":ref:`floor() <class_@GlobalScope_method_floor>`"
+msgstr ":ref:`floor() <class_@GlobalScope_method_floor>`"
+
+msgid ""
+":ref:`floorf() <class_@GlobalScope_method_floorf>`, :ref:`floori() "
+"<class_@GlobalScope_method_floori>`"
+msgstr ""
+":ref:`floorf() <class_@GlobalScope_method_floorf>`, :ref:`floori() "
+"<class_@GlobalScope_method_floori>`"
+
+msgid ":ref:`Vector2.floor() <class_Vector2_method_floor>`"
+msgstr ":ref:`Vector2.floor() <class_Vector2_method_floor>`"
+
+msgid ":ref:`Vector3.floor() <class_Vector3_method_floor>`"
+msgstr ":ref:`Vector3.floor() <class_Vector3_method_floor>`"
+
+msgid ":ref:`Vector4.floor() <class_Vector4_method_floor>`"
+msgstr ":ref:`Vector4.floor() <class_Vector4_method_floor>`"
+
+msgid ":ref:`lerp() <class_@GlobalScope_method_lerp>`"
+msgstr ":ref:`lerp() <class_@GlobalScope_method_lerp>`"
+
+msgid ":ref:`lerpf() <class_@GlobalScope_method_lerpf>`"
+msgstr ":ref:`lerpf() <class_@GlobalScope_method_lerpf>`"
+
+msgid ":ref:`Vector2.lerp() <class_Vector2_method_lerp>`"
+msgstr ":ref:`Vector2.lerp() <class_Vector2_method_lerp>`"
+
+msgid ":ref:`Vector3.lerp() <class_Vector3_method_lerp>`"
+msgstr ":ref:`Vector3.lerp() <class_Vector3_method_lerp>`"
+
+msgid ":ref:`Vector4.lerp() <class_Vector4_method_lerp>`"
+msgstr ":ref:`Vector4.lerp() <class_Vector4_method_lerp>`"
+
+msgid ":ref:`Color.lerp() <class_Color_method_lerp>`"
+msgstr ":ref:`Color.lerp() <class_Color_method_lerp>`"
+
+msgid ":ref:`Quaternion.slerp() <class_Quaternion_method_slerp>`"
+msgstr ":ref:`Quaternion.slerp() <class_Quaternion_method_slerp>`"
+
+msgid ":ref:`Basis.slerp() <class_Basis_method_slerp>`"
+msgstr ":ref:`Basis.slerp() <class_Basis_method_slerp>`"
+
+msgid ""
+":ref:`Transform2D.interpolate_with() "
+"<class_Transform2D_method_interpolate_with>`"
+msgstr ""
+":ref:`Transform2D.interpolate_with() "
+"<class_Transform2D_method_interpolate_with>`"
+
+msgid ""
+":ref:`Transform3D.interpolate_with() "
+"<class_Transform3D_method_interpolate_with>`"
+msgstr ""
+":ref:`Transform3D.interpolate_with() "
+"<class_Transform3D_method_interpolate_with>`"
+
+msgid ":ref:`round() <class_@GlobalScope_method_round>`"
+msgstr ":ref:`round() <class_@GlobalScope_method_round>`"
+
+msgid ""
+":ref:`roundf() <class_@GlobalScope_method_roundf>`, :ref:`roundi() "
+"<class_@GlobalScope_method_roundi>`"
+msgstr ""
+":ref:`roundf() <class_@GlobalScope_method_roundf>`, :ref:`roundi() "
+"<class_@GlobalScope_method_roundi>`"
+
+msgid ":ref:`Vector2.round() <class_Vector2_method_round>`"
+msgstr ":ref:`Vector2.round() <class_Vector2_method_round>`"
+
+msgid ":ref:`Vector3.round() <class_Vector3_method_round>`"
+msgstr ":ref:`Vector3.round() <class_Vector3_method_round>`"
+
+msgid ":ref:`Vector4.round() <class_Vector4_method_round>`"
+msgstr ":ref:`Vector4.round() <class_Vector4_method_round>`"
+
+msgid ":ref:`sign() <class_@GlobalScope_method_sign>`"
+msgstr ":ref:`sign() <class_@GlobalScope_method_sign>`"
+
+msgid ":ref:`signf() <class_@GlobalScope_method_signf>`"
+msgstr ":ref:`signf() <class_@GlobalScope_method_signf>`"
+
+msgid ":ref:`signi() <class_@GlobalScope_method_signi>`"
+msgstr ":ref:`signi() <class_@GlobalScope_method_signi>`"
+
+msgid ""
+":ref:`Vector2.sign() <class_Vector2_method_sign>`, :ref:`Vector2i.sign() "
+"<class_Vector2i_method_sign>`"
+msgstr ""
+":ref:`Vector2.sign() <class_Vector2_method_sign>`, :ref:`Vector2i.sign() "
+"<class_Vector2i_method_sign>`"
+
+msgid ""
+":ref:`Vector3.sign() <class_Vector3_method_sign>`, :ref:`Vector3i.sign() "
+"<class_Vector3i_method_sign>`"
+msgstr ""
+":ref:`Vector3.sign() <class_Vector3_method_sign>`, :ref:`Vector3i.sign() "
+"<class_Vector3i_method_sign>`"
+
+msgid ""
+":ref:`Vector4.sign() <class_Vector4_method_sign>`, :ref:`Vector4i.sign() "
+"<class_Vector4i_method_sign>`"
+msgstr ""
+":ref:`Vector4.sign() <class_Vector4_method_sign>`, :ref:`Vector4i.sign() "
+"<class_Vector4i_method_sign>`"
+
+msgid ":ref:`snapped() <class_@GlobalScope_method_snapped>`"
+msgstr ":ref:`snapped() <class_@GlobalScope_method_snapped>`"
+
+msgid ":ref:`snappedf() <class_@GlobalScope_method_snappedf>`"
+msgstr ":ref:`snappedf() <class_@GlobalScope_method_snappedf>`"
+
+msgid ":ref:`snappedi() <class_@GlobalScope_method_snappedi>`"
+msgstr ":ref:`snappedi() <class_@GlobalScope_method_snappedi>`"
+
+msgid ""
+":ref:`Vector2.snapped() "
+"<class_Vector2_method_snapped>`, :ref:`Vector2i.snapped() "
+"<class_Vector2i_method_snapped>`"
+msgstr ""
+":ref:`Vector2.snapped() "
+"<class_Vector2_method_snapped>`, :ref:`Vector2i.snapped() "
+"<class_Vector2i_method_snapped>`"
+
+msgid ""
+":ref:`Vector3.snapped() "
+"<class_Vector3_method_snapped>`, :ref:`Vector3i.snapped() "
+"<class_Vector3i_method_snapped>`"
+msgstr ""
+":ref:`Vector3.snapped() "
+"<class_Vector3_method_snapped>`, :ref:`Vector3i.snapped() "
+"<class_Vector3i_method_snapped>`"
+
+msgid ""
+":ref:`Vector4.snapped() "
+"<class_Vector4_method_snapped>`, :ref:`Vector4i.snapped() "
+"<class_Vector4i_method_snapped>`"
+msgstr ""
+":ref:`Vector4.snapped() "
+"<class_Vector4_method_snapped>`, :ref:`Vector4i.snapped() "
+"<class_Vector4i_method_snapped>`"
+
 msgid "Summary"
-msgstr "Sumario"
+msgstr "Resumen"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Running code in the editor"
-msgstr "Ejecutando código en el editor"
+msgstr "Ejecutar código en el editor"
+
+msgid "What is ``@tool``?"
+msgstr "¿Qué es ``@tool``?"
 
 msgid ""
 "You can use it for doing many things, but it is mostly useful in level "
@@ -49,18 +52,24 @@ msgstr ""
 "código, puedes hacer que ese código de dibujo se ejecute en el editor para "
 "ver a tu jugador."
 
+msgid "How to use ``@tool``"
+msgstr "How to use ``@tool``"
+
 msgid "For example, if you want to execute some code only in the editor, use:"
-msgstr "Por ejemplo, si desea ejecutar algún código solo en el editor, use:"
+msgstr "Por ejemplo si deseas ejecutar algún código solo en el editor, use:"
 
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
 msgstr ""
-"Por otro lado, si desea ejecutar código solo en el juego, simplemente niegue "
+"Por otro lado si deseas ejecutar código solo en el juego, simplemente niegue "
 "la misma declaración:"
 
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr "Aquí tienes cómo podría lucir una función ``_process()`` para ti:"
+
+msgid "Important information"
+msgstr "Información importante"
 
 msgid "Debugging"
 msgstr "Depuración"
@@ -92,7 +101,7 @@ msgstr ""
 "pero si ejecutas el juego, girará en sentido antihorario."
 
 msgid "Editing variables"
-msgstr "Editando variables"
+msgstr "Editar variables"
 
 msgid "Instancing scenes"
 msgstr "Instanciación de escenas"
@@ -115,6 +124,9 @@ msgstr ""
 "la escena, debes establecer la propiedad :ref:`owner "
 "<class_Node_property_owner>` del nodo hijo en el nodo raíz de la escena que "
 "está siendo editada actualmente."
+
+msgid "If you are using ``@tool``:"
+msgstr "Si estás usando ``@tool``:"
 
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr "Si estás usando :ref:`EditorScript<class_EditorScript>`:"

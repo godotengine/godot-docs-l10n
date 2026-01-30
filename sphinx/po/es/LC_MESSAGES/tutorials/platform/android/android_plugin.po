@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -25,6 +25,12 @@ msgstr ""
 "Compilar en la arquitectura previa v1, plugins de Android continúan siendo "
 "derivados de la `bliblioteca de archivos Android <https://"
 "developer.android.com/studio/projects/android-library#aar-contents>`_."
+
+msgid "Android libraries"
+msgstr "Bibliotecas de Android"
+
+msgid "Kotlin and Java libraries"
+msgstr "Bibliotecas de Kotlin y Java"
 
 msgid "GDExtension libraries"
 msgstr "Bibliotecas de GDExtensions"
@@ -83,21 +89,3 @@ msgstr "Por ejemplo:"
 
 msgid "Godot crashes upon load"
 msgstr "Godot falla al cargar"
-
-msgid "Check ``adb logcat`` for possible problems, then:"
-msgstr "Revisa ``adb logcat`` en busca de posibles problemas y luego:"
-
-msgid ""
-"Check that the methods exposed by the plugin used the following Java types: "
-"``void``, ``boolean``, ``int``, ``float``, ``java.lang.String``, "
-"``org.godotengine.godot.Dictionary``, ``int[]``, ``byte[]``, ``float[]``, "
-"``java.lang.String[]``."
-msgstr ""
-"Verifica que los métodos expuestos por el plugin utilicen los siguientes "
-"tipos de datos en Java: ``void``, ``boolean``, ``int``, ``float``, "
-"``java.lang.String``, ``org.godotengine.godot.Dictionary``, ``int[]``, "
-"``byte[]``, ``float[]``, ``java.lang.String[]``."
-
-msgid "More complex datatypes are not supported for now."
-msgstr ""
-"Tipos más complejos de estructuras de datos todavía no están soportados."

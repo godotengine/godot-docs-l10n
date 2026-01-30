@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -11,6 +11,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GDScript exported properties"
+msgstr "Propiedades exportadas de GDScript"
+
+msgid "Basic use"
+msgstr "Uso básico"
+
+msgid "Colors"
+msgstr "Colores"
+
 msgid "Nodes"
 msgstr "Nodos"
 
@@ -18,7 +27,10 @@ msgid "Resources"
 msgstr "Recursos"
 
 msgid "Exporting bit flags"
-msgstr "Exportando \"bit flags\""
+msgstr "Exportar \"bit flags\""
+
+msgid "See :ref:`@export_flags <class_@GDScript_annotation_@export_flags>`."
+msgstr "Véase :ref:`@export_flags <class_@GDScript_annotation_@export_flags>`."
 
 msgid ""
 "You must provide a string description for each flag. In this example, "
@@ -38,8 +50,11 @@ msgstr ""
 "Usar banderas requiere ciertos conocimientos de las operaciones bit a bit. "
 "En caso de duda, se pueden exportar variables booleanas en su lugar."
 
+msgid "See :ref:`@export_enum <class_@GDScript_annotation_@export_enum>`."
+msgstr "Véase :ref:`@export_enum <class_@GDScript_annotation_@export_enum>`."
+
 msgid "Exporting arrays"
-msgstr "Exportando arrays"
+msgstr "Exportar arrays"
 
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
@@ -56,8 +71,20 @@ msgstr ""
 "asignar valores al array arrastrando y soltando múltiples archivos a la vez "
 "desde el panel de Sistema de Archivos."
 
+msgid "``@export_storage``"
+msgstr "``@export_storage``"
+
+msgid "``@export_custom``"
+msgstr "``@export_custom``"
+
+msgid "``@export_tool_button``"
+msgstr "``@export_tool_button``"
+
 msgid "Setting exported variables from a tool script"
-msgstr "Configurando variables exportadas desde un script en modo tool"
+msgstr "Configurar variables exportadas desde un script en modo tool"
+
+msgid "Results in:"
+msgstr "Resultados entrantes:"
 
 msgid "Advanced exports"
 msgstr "Exportación avanzada"
@@ -76,4 +103,4 @@ msgid ""
 "see :ref:`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
 "Para vincular propiedades usando los métodos mostrados anteriormente en C++, "
-"ver :ref:`doc_binding_properties_using_set_get_property_list`."
+"véase :ref:`doc_binding_properties_using_set_get_property_list`."

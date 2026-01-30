@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -233,37 +233,11 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <directory>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr "Путь к проекту (<directory> должен содержать файл 'project.godot')."
-
-msgid "|release| Path or UID of a scene in the project that should be started."
-msgstr "|release| Путь или UID сцены в проекте, которую следует запустить."
-
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr "|release| Просканировать папки вверх на предмет файла «project.godot»."
-
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "|release| Путь к файлу пакета (.pck) для загрузки."
-
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| Режим потока рендеринга ('unsafe', 'safe', 'separate'). Подробнее "
-"см. :ref:`Модель потока <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>`."
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
@@ -296,19 +270,6 @@ msgid ""
 msgstr ""
 "|release| Драйвер дисплея (и драйвер рендеринга). Сначала используйте ``--"
 "help``, чтобы отобразить список доступных драйверов."
-
-msgid "``--audio-output-latency`` <ms>"
-msgstr "``--audio-output-latency`` <ms>"
-
-msgid ""
-"|release| Override audio output latency in milliseconds (default is 15 ms). "
-"Lower values make sound playback more reactive but increase CPU usage, and "
-"may result in audio cracking if the CPU can't keep up"
-msgstr ""
-"|release| Переопределить задержку аудиовывода в миллисекундах (по умолчанию "
-"15 мс). Более низкие значения делают воспроизведение звука более быстрым, но "
-"увеличивают нагрузку на процессор и могут привести к прерыванию звука, если "
-"процессор не справляется"
 
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
@@ -360,15 +321,6 @@ msgstr ""
 
 msgid "``--log-file``"
 msgstr "``--log-file``"
-
-msgid ""
-"|release| Write output/error log to the specified path instead of the "
-"default location defined by the project. <file> path should be absolute or "
-"relative to the project directory."
-msgstr ""
-"|release| Записывать выходные данные/журнал ошибок по указанному пути вместо "
-"расположения по умолчанию, определенного проектом. <file> путь должен быть "
-"абсолютным или относительным к каталогу проекта."
 
 msgid "``--write-movie <file>``"
 msgstr "``--write-movie <файл>``"
@@ -441,9 +393,6 @@ msgstr "|release| Использовать одиночное окно (без �
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <режим>``"
 
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| Выберите режим XR ('по умолчанию', 'выключен', 'включен')."
-
 msgid "``--wid <window_id>``"
 msgstr "``--wid <window_id>``"
 
@@ -452,13 +401,6 @@ msgstr "|release| Запрос привязан к окну."
 
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
-
-msgid ""
-"|release| Select accessibility mode ['auto' (when screen reader is running, "
-"default), 'always', 'disabled']."
-msgstr ""
-"|release| Выберите режим доступности ['auto' (по умолчанию, когда запущена "
-"программа чтения с экрана), 'always', 'disabled']."
 
 msgid "**Debug options**"
 msgstr "**Опции отладки**"
@@ -640,14 +582,6 @@ msgstr ""
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid ""
-"|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
-"not use as a FPS limiter; use --max-fps instead."
-msgstr ""
-"|release| Имитировать высокую нагрузку на процессор (задерживать каждый кадр "
-"на <мс> миллисекунд). Не используйте его для ограничения FPS; вместо этого "
-"лучше подойдёт --max-fps."
-
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
@@ -699,12 +633,6 @@ msgstr ""
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <включить>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
-"|release| Включает или выключает размытие кадра ('enable' (включить), "
-"'disable' (выключить))."
-
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
@@ -724,29 +652,11 @@ msgstr "**Автономные инструменты**"
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
 
-msgid ""
-"|release| Run a script. ``<script>`` must be a resource path relative to the "
-"project (``myscript.gd`` will be interpreted as ``res://myscript.gd``) or an "
-"absolute filesystem path (for example on Windows ``C:/tmp/myscript.gd``)"
-msgstr ""
-"|release| Запустить скрипт. ``<script>`` должен быть путем к ресурсу "
-"относительно проекта (``myscript.gd`` будет интерпретироваться как ``res://"
-"myscript.gd``) или абсолютным путем к файловой системе (например, в Windows "
-"``C:/tmp/myscript.gd``)"
-
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <main_loop_name>``"
 
-msgid "|release| Run a MainLoop specified by its global class name."
-msgstr "|release| Запустить MainLoop, заданный именем его глобального класса."
-
 msgid "``--check-only``"
 msgstr "``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr ""
-"|release| Только анализировать на наличие ошибок и выходить (использовать с "
-"``--script``)."
 
 msgid "``--import``"
 msgstr "``--import``"
@@ -760,20 +670,6 @@ msgstr ""
 
 msgid "``--export-release <preset> <path>``"
 msgstr "``--export-release <preset> <path>``"
-
-msgid ""
-"|editor| Export the project in release mode using the given preset and "
-"output path. The preset name should match one defined in "
-"'export_presets.cfg'. ``<path>`` should be absolute or relative to the "
-"project directory, and include the filename for the binary (e.g. 'builds/"
-"game.exe'). The target directory must exist."
-msgstr ""
-"|editor| Экспортирует проект с использованием заданного пресета и "
-"соответствующего шаблона релиза. Имя пресета должно совпадать с одним из "
-"определенных в файле 'export_presets.cfg'. ``<path>`` должен быть либо "
-"абсолютным, либо относительным по отношению к каталогу проекта и включать "
-"имя файла для бинарной версии (например, 'builds/game.exe'). Целевой каталог "
-"должен существовать."
 
 msgid "``--export-debug <preset> <path>``"
 msgstr "``--export-debug <preset> <path>``"
@@ -800,32 +696,11 @@ msgstr ""
 msgid "``--export-patch <preset> <path>``"
 msgstr "``--export-patch <preset> <path>``"
 
-msgid ""
-"|editor| Export pack with changed files only. See --export-pack description "
-"for other considerations."
-msgstr ""
-"|editor| Экспортировать пакет только с изменёнными файлами. См. описание "
-"параметра --export-pack для получения дополнительной информации."
-
 msgid "``--patches <paths>``"
 msgstr "``--patches <paths>``"
 
-msgid ""
-"|editor| List of patches to use with --export-patch. The list is comma-"
-"separated."
-msgstr ""
-"|editor| Список патчей для использования с --export-patch. Список разделён "
-"запятыми."
-
 msgid "``--install-android-build-template``"
 msgstr "``--install-android-build-template``"
-
-msgid ""
-"|editor| Install the Android build template. Used in conjunction with --"
-"export-release or --export-debug."
-msgstr ""
-"|editor| Установить шаблон сборки Android. Используется вместе с --export-"
-"release или --export-debug."
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<макс_разм_файла_кб>] [<макс_разм_линии>]``"
@@ -864,15 +739,6 @@ msgstr ""
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <путь>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| Вместо выгрузки API движка, генерировать справочную документацию "
-"API из встроенной документации в файлах GDScript, найденных в <path> "
-"(используется с ``--doctool``)."
-
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
@@ -887,23 +753,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| Сгенерировать файл заголовка GDExtension 'gdnative_interface.h' в "
-"текущей папке. Этот файл является базовым для реализации GDExtension."
-
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| Сгенерировать JSON-выгрузку API Godot для привязок GDExtension с "
-"именем „extension_api.json“ в текущей папке."
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <путь>``"
@@ -938,11 +789,6 @@ msgstr ""
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"
-
-msgid "|editor| Run unit tests. Use --test --help for more information."
-msgstr ""
-"|editor| Запустите модульные тесты. Для получения дополнительной информации "
-"используйте --test --help."
 
 msgid "Path"
 msgstr "Путь"

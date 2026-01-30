@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -10,6 +10,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "``TIME`` is used."
+msgstr "Se usa ``TIME``."
 
 msgid ""
 "Note that the :ref:`process mode <class_Sky_property_process_mode>` only "
@@ -43,6 +46,15 @@ msgstr "Modo de renderizado"
 msgid "Description"
 msgstr "Descripción"
 
+msgid "**use_half_res_pass**"
+msgstr "**use_half_res_pass**"
+
+msgid "**use_quarter_res_pass**"
+msgstr "**use_quarter_res_pass**"
+
+msgid "**disable_fog**"
+msgstr "**disable_fog**"
+
 msgid "Built-ins"
 msgstr "Funciones propias"
 
@@ -55,11 +67,71 @@ msgstr "Integrado"
 msgid "in float **TIME**"
 msgstr "en real **TIME**"
 
+msgid "in vec3 **POSITION**"
+msgstr "in vec3 **POSITION**"
+
+msgid "samplerCube **RADIANCE**"
+msgstr "samplerCube **RADIANCE**"
+
+msgid "in bool **AT_HALF_RES_PASS**"
+msgstr "in bool **AT_HALF_RES_PASS**"
+
+msgid "in bool **AT_QUARTER_RES_PASS**"
+msgstr "in bool **AT_QUARTER_RES_PASS**"
+
+msgid "in bool **AT_CUBEMAP_PASS**"
+msgstr "in bool **AT_CUBEMAP_PASS**"
+
+msgid "in bool **LIGHTX_ENABLED**"
+msgstr "in bool **LIGHTX_ENABLED**"
+
+msgid "in float **LIGHTX_ENERGY**"
+msgstr "in float **LIGHTX_ENERGY**"
+
+msgid "in vec3 **LIGHTX_DIRECTION**"
+msgstr "in vec3 **LIGHTX_DIRECTION**"
+
+msgid "in vec3 **LIGHTX_COLOR**"
+msgstr "in vec3 **LIGHTX_COLOR**"
+
+msgid "Color of ``LIGHTX``."
+msgstr "Color de ``LIGHTX``."
+
+msgid "in float **LIGHTX_SIZE**"
+msgstr "in float **LIGHTX_SIZE**"
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid "in vec3 **EYEDIR**"
+msgstr "in vec3 **EYEDIR**"
+
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
+
+msgid "in vec2 **SKY_COORDS**"
+msgstr "in vec2 **SKY_COORDS**"
+
+msgid "in vec4 **HALF_RES_COLOR**"
+msgstr "in vec4 **HALF_RES_COLOR**"
+
+msgid "in vec4 **QUARTER_RES_COLOR**"
+msgstr "in vec4 **QUARTER_RES_COLOR**"
+
+msgid "out vec3 **COLOR**"
+msgstr "out vec3 **COLOR**"
 
 msgid "Output color."
 msgstr "Color de salida."
 
 msgid "out float **ALPHA**"
 msgstr "out real **ALPHA**"
+
+msgid "out vec4 **FOG**"
+msgstr "out vec4 **FOG**"

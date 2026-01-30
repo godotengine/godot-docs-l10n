@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -15,10 +15,13 @@ msgid "Introduction"
 msgstr "Introducción"
 
 msgid "Setting up the project"
-msgstr "Configurando el proyecto"
+msgstr "Configurar el proyecto"
 
 msgid "There are a few prerequisites you'll need:"
 msgstr "Hay algunos requisitos previos que necesitarás:"
+
+msgid "a C compiler,"
+msgstr "un compilador de C,"
 
 msgid "SCons as a build tool."
 msgstr "SCons como una herramienta de compilación."
@@ -43,6 +46,9 @@ msgstr ""
 "que no pretendemos dar soporte a versiones anteriores de Godot en este "
 "ejemplo."
 
+msgid "A demo project"
+msgstr "Un proyecto de demostración"
+
 msgid ""
 "We also set the compatibility minimum to 4.2, since we are targeting this "
 "version. It should still work on later versions. If you are using a later "
@@ -55,8 +61,14 @@ msgstr ""
 "versión objetivo. Debería seguir funcionando en versiones posteriores. Si "
 "usa una versión posterior de Godot y utiliza las nuevas funciones, debe "
 "aumentar este valor a una versión que incluya todo lo que usa. "
-"Consulta :ref:`doc_what_is_gdextension_version_compatibility` para obtener "
-"más información."
+"Véase :ref:`doc_what_is_gdextension_version_compatibility` para obtener más "
+"información."
+
+msgid "Custom methods"
+msgstr "Métodos personalizados"
+
+msgid "Custom properties"
+msgstr "Propiedades personalizadas"
 
 msgid ""
 "The seemingly random number for getting the bind is actually a hash of the "

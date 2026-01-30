@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -10,6 +10,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "Upgrading from Godot 4.3 to Godot 4.4"
+msgstr "Migrar desde Godot 4.3 a Godot 4.4"
 
 msgid "Breaking changes"
 msgstr "Cambios importantes"
@@ -56,8 +59,44 @@ msgstr "|✔️|"
 msgid "|✔️ with compat|"
 msgstr "|✔️ compatible|"
 
+msgid "`GH-98918`_"
+msgstr "`GH-98918`_"
+
+msgid "Method ``store_8`` changes return type from ``void`` to ``bool``"
+msgstr "El método ``store_8``cambia el tipo de retorno de ``void`` a ``bool``"
+
 msgid "|❌|"
 msgstr "|❌|"
+
+msgid "`GH-78289`_"
+msgstr "`GH-78289`_"
+
+msgid "**OS**"
+msgstr "**OS**"
+
+msgid "`GH-94434`_"
+msgstr "`GH-94434`_"
+
+msgid "`GH-91201`_"
+msgstr "`GH-91201`_"
+
+msgid "**RegEx**"
+msgstr "**RegEx**"
+
+msgid "`GH-95212`_"
+msgstr "`GH-95212`_"
+
+msgid "**Semaphore**"
+msgstr "**Semaphore**"
+
+msgid "`GH-93605`_"
+msgstr "`GH-93605`_"
+
+msgid "**TranslationServer**"
+msgstr "**TranslationServer**"
+
+msgid "`GH-98972`_"
+msgstr "`GH-98972`_"
 
 msgid ""
 "The behavior of ``@export_file`` changed in Godot 4.4. When assigning a new "
@@ -105,11 +144,17 @@ msgstr "**RichTextLabel**"
 msgid "Method ``push_meta`` adds a new ``tooltip`` optional parameter"
 msgstr "El método ``push_meta`` añade un nuevo parámetro opcional ``tooltip``"
 
+msgid "`GH-99481`_"
+msgstr "`GH-99481`_"
+
 msgid ""
 "Method ``set_table_column_expand`` adds a new ``shrink`` optional parameter"
 msgstr ""
 "El método ``set_table_column_expand`` agrega un nuevo parámetro opcional "
 "``shrink``"
+
+msgid "`GH-101482`_"
+msgstr "`GH-101482`_"
 
 msgid "**GraphEdit**"
 msgstr "**GraphEdit**"
@@ -118,6 +163,9 @@ msgid "Method ``connect_node`` adds a new ``keep_alive`` optional parameter"
 msgstr ""
 "El método ``connect_node`` agrega un nuevo parámetro opcional ``keep_alive``"
 
+msgid "`GH-97449`_"
+msgstr "`GH-97449`_"
+
 msgid ""
 "Signal ``frame_rect_changed`` changes ``new_rect`` parameter type from "
 "``Vector2`` to ``Rect2``"
@@ -125,23 +173,74 @@ msgstr ""
 "La señal ``frame_rect_changed`` cambia el tipo de parámetro ``new_rect`` de "
 "``Vector2`` a ``Rect2``"
 
+msgid "`GH-102796`_"
+msgstr "`GH-102796`_"
+
 msgid "Physics"
 msgstr "Física"
+
+msgid "**SoftBody3D**"
+msgstr "**SoftBody3D**"
+
+msgid "`GH-94684`_"
+msgstr "`GH-94684`_"
 
 msgid "Rendering"
 msgstr "Renderizado"
 
+msgid "**CPUParticles2D**"
+msgstr "**CPUParticles2D**"
+
+msgid "`GH-92089`_"
+msgstr "`GH-92089`_"
+
+msgid "**CPUParticles3D**"
+msgstr "**CPUParticles3D**"
+
+msgid "**GPUParticles2D**"
+msgstr "**GPUParticles2D**"
+
+msgid "**GPUParticles3D**"
+msgstr "**GPUParticles3D**"
+
 msgid "**RenderingDevice**"
 msgstr "**RenderingDevice**"
 
+msgid "`GH-90993`_"
+msgstr "`GH-90993`_"
+
+msgid "`GH-98670`_"
+msgstr "`GH-98670`_"
+
+msgid "`GH-100062`_"
+msgstr "`GH-100062`_"
+
 msgid "**RenderingServer**"
 msgstr "**RenderingServer**"
+
+msgid "`GH-99455`_"
+msgstr "`GH-99455`_"
+
+msgid "**Shader**"
+msgstr "**Shader**"
+
+msgid "`GH-95126`_"
+msgstr "`GH-95126`_"
+
+msgid "**VisualShaderNodeCubemap**"
+msgstr "**VisualShaderNodeCubemap**"
+
+msgid "**VisualShaderNodeTexture2DArray**"
+msgstr "**VisualShaderNodeTexture2DArray**"
 
 msgid "Navigation"
 msgstr "Navegación"
 
 msgid "**NavigationServer2D**"
 msgstr "**NavigationServer2D**"
+
+msgid "`GH-100129`_"
+msgstr "`GH-100129`_"
 
 msgid "**NavigationServer3D**"
 msgstr "**NavigationServer3D**"
@@ -152,12 +251,30 @@ msgstr "Plugins del editor"
 msgid "**EditorInterface**"
 msgstr "**EditorInterface**"
 
+msgid "`GH-90057`_"
+msgstr "`GH-90057`_"
+
+msgid "`GH-94323`_"
+msgstr "`GH-94323`_"
+
+msgid "Method ``_get_import_flags`` removed"
+msgstr "Método ``_get_import_flags`` eliminado"
+
+msgid "`GH-101531`_"
+msgstr "`GH-101531`_"
+
+msgid "**EditorTranslationParserPlugin**"
+msgstr "**EditorTranslationParserPlugin**"
+
 msgid ""
 "Method ``_parse_file`` changes return type to ``Array`` and removes "
 "``msgids`` and ``msgids_context_plural`` parameters"
 msgstr ""
 "El método ``_parse_file`` cambia el tipo de retorno a ``Array`` y elimina "
 "los parámetros ``msgids`` y ``msgids_context_plural``"
+
+msgid "`GH-99297`_"
+msgstr "`GH-99297`_"
 
 msgid ""
 "The method ``_get_import_flags`` was never used by the engine. It was "
@@ -187,6 +304,9 @@ msgstr ""
 "Se cambió el tipo de entrada del nodo sombreador "
 "``VisualShaderNodeVec4Constant`` a ``Vector4``. Los usuarios deben recrear "
 "los valores de sus constantes."
+
+msgid "CSG"
+msgstr "CSG"
 
 msgid ""
 "The CSG implementation now uses Emmett Lalish's `Manifold <https://"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -38,6 +38,27 @@ msgstr ""
 "físicas, organizan interfaces gráficas, etc. Los **Resources** son **data "
 "containers**. Ellos no hacen nada por su cuenta: en su lugar, los nodos usan "
 "los datos contenidos en los **Resources**."
+
+msgid ":ref:`Texture <class_Texture>`"
+msgstr ":ref:`Texture <class_Texture>`"
+
+msgid ":ref:`Script <class_Script>`"
+msgstr ":ref:`Script <class_Script>`"
+
+msgid ":ref:`Mesh <class_Mesh>`"
+msgstr ":ref:`Mesh <class_Mesh>`"
+
+msgid ":ref:`Animation <class_Animation>`"
+msgstr ":ref:`Animation <class_Animation>`"
+
+msgid ":ref:`AudioStream <class_AudioStream>`"
+msgstr ":ref:`AudioStream <class_AudioStream>`"
+
+msgid ":ref:`Font <class_Font>`"
+msgstr ":ref:`Font <class_Font>`"
+
+msgid ":ref:`Translation <class_Translation>`"
+msgstr ":ref:`Translation <class_Translation>`"
 
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
@@ -108,7 +129,7 @@ msgstr ""
 "de una escena, el motor sólo cargará una copia del recurso."
 
 msgid "Loading resources from code"
-msgstr "Cargando recursos desde código"
+msgstr "Cargar recursos desde código"
 
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
@@ -118,7 +139,7 @@ msgstr ""
 "función ``load()`` en cualquier momento:"
 
 msgid "Loading scenes"
-msgstr "Cargando escenas"
+msgstr "Cargar escenas"
 
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
@@ -130,7 +151,7 @@ msgstr ""
 "agregado como hijo a cualquier otro nodo."
 
 msgid "Freeing resources"
-msgstr "Liberando recursos"
+msgstr "Liberar recursos"
 
 msgid "Creating your own resources"
 msgstr "Crear tus propios Resources"

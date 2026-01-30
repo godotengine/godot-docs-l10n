@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -10,6 +10,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# exported properties"
+msgstr "Propiedades exportadas de C#"
 
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
@@ -35,8 +38,14 @@ msgstr ""
 "influenciarán en cómo el programa se ejecuta. Para esto, se proporciona una "
 "sintaxis especial."
 
+msgid "Basic use"
+msgstr "Uso básico"
+
 msgid "String as a path to a file."
 msgstr "Cadenas de texto como ruta a un archivo."
+
+msgid "Colors"
+msgstr "Colores"
 
 msgid "Nodes"
 msgstr "Nodos"
@@ -54,7 +63,7 @@ msgstr ""
 "conjunto con un :ref:`script en modo \"tool\" <doc_gdscript_tool_mode>`."
 
 msgid "Exporting bit flags"
-msgstr "Exportando \"bit flags\""
+msgstr "Exportar \"bit flags\""
 
 msgid ""
 "Export annotations are also provided for the physics and render layers "
@@ -70,8 +79,20 @@ msgstr ""
 "Usar banderas requiere ciertos conocimientos de las operaciones bit a bit. "
 "En caso de duda, se pueden exportar variables booleanas en su lugar."
 
+msgid "Exporting collections"
+msgstr "Exportar colecciones"
+
+msgid "Exporting Godot arrays"
+msgstr "Exportar arrays de Godot"
+
+msgid "Exporting Godot dictionaries"
+msgstr "Exportar diccionarios de Godot"
+
+msgid "Exporting C# arrays"
+msgstr "Exportar arrays de C#"
+
 msgid "Setting exported variables from a tool script"
-msgstr "Configurando variables exportadas desde un script en modo tool"
+msgstr "Configurar variables exportadas desde un script en modo tool"
 
 msgid "Advanced exports"
 msgstr "Exportación avanzada"
@@ -90,7 +111,7 @@ msgid ""
 "see :ref:`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
 "Para vincular propiedades usando los métodos mostrados anteriormente en C++, "
-"ver :ref:`doc_binding_properties_using_set_get_property_list`."
+"véase :ref:`doc_binding_properties_using_set_get_property_list`."
 
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "

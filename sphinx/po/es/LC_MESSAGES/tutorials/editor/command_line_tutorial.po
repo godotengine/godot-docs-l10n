@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -110,6 +110,9 @@ msgstr ""
 "|release| Modo silencioso, silencia los mensajes de stdout. Los errores "
 "seguirán siendo mostrados."
 
+msgid "``--no-header``"
+msgstr "``--no-header``"
+
 msgid "**Run options**"
 msgstr "**Opciones de ejecución**"
 
@@ -138,6 +141,9 @@ msgstr ""
 "|editor| Inicia el Administrador de Proyectos, incluso si el proyecto es "
 "detectado de forma automática."
 
+msgid "``--recovery-mode``"
+msgstr "``--recovery-mode``"
+
 msgid "``--debug-server <uri>``"
 msgstr "``--debug-server <uri>``"
 
@@ -147,6 +153,12 @@ msgid ""
 msgstr ""
 "|editor| Inicia el servidor de depuración del editor (``<protocolo>://<host/"
 "IP>[:<puerto>]``, ej. ``tcp:127.0.0.1:6007``)"
+
+msgid "``--dap-port <port>``"
+msgstr "``--dap-port <port>``"
+
+msgid "``--lsp-port <port>``"
+msgstr "``--lsp-port <port>``"
 
 msgid "``--quit``"
 msgstr "``--quit``"
@@ -180,37 +192,14 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <directorio>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr ""
-"|release| La ruta a un proyecto (``directory`` debe contener un archivo "
-"'project.godot')."
-
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr ""
-"|release| Buscar un archivo 'project.godot' en las carpetas recursivamente."
+msgid "``--scene <path>``"
+msgstr "``--scene <path>``"
 
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <archivo>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "|release| Ruta a un archivo de paquete (.pck) a cargar."
-
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <modo>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| Modo de renderizado con hilos ('unsafe', 'safe', 'separate'). "
-"Ver :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` para más detalles."
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <dirección>``"
@@ -293,6 +282,9 @@ msgstr ""
 "|release| Habilitar el modo descabezado (``--display-driver headless --audio-"
 "driver Dummy``). Útil para servidores y con ``--script``."
 
+msgid "``--log-file``"
+msgstr "``--log-file``"
+
 msgid "``--write-movie <file>``"
 msgstr "``--write-movie <file>``"
 
@@ -365,8 +357,11 @@ msgstr "|release| Utiliza una ventana única (no sub-ventanas separadas)."
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <mode>``"
 
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| Selecciona el modo XR ('default', 'off', 'on')."
+msgid "``--wid <window_id>``"
+msgstr "``--wid <window_id>``"
+
+msgid "``--accessibility <mode>``"
+msgstr "``--accessibility <mode>``"
 
 msgid "**Debug options**"
 msgstr "**Opciones de depuración**"
@@ -386,6 +381,9 @@ msgid ""
 msgstr ""
 "|release| Lista de puntos de interrupción como fuente::pares separados por "
 "comas, sin espacios (usar ``%20`` en su lugar)."
+
+msgid "``--ignore-error-breaks``"
+msgstr "``--ignore-error-breaks``"
 
 msgid "``--profiling``"
 msgstr "``--profiling``"
@@ -424,6 +422,15 @@ msgstr ""
 "|debug| Aborta ante errores de GPU (usualmente errores de layers de "
 "validación), puede ser útil para visualizar los problemas si tu sistema se "
 "congela."
+
+msgid "``--generate-spirv-debug-info``"
+msgstr "``--generate-spirv-debug-info``"
+
+msgid "``--extra-gpu-memory-tracking``"
+msgstr "``--extra-gpu-memory-tracking``"
+
+msgid "``--accurate-breadcrumbs``"
+msgstr "``--accurate-breadcrumbs``"
 
 msgid ""
 "|debug| Force barriers between breadcrumbs. Useful for narrowing down a "
@@ -488,6 +495,9 @@ msgstr ""
 "|debug| Imprime todas las asignaciones de StringName en stdout cuando el "
 "motor se cierra."
 
+msgid "``--max-fps <fps>``"
+msgstr "``--max-fps <fps>``"
+
 msgid ""
 "|release| Set a maximum number of frames per second rendered (can be used to "
 "limit power usage). A value of 0 results in unlimited framerate."
@@ -550,17 +560,14 @@ msgstr ""
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <enable>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
-"|release| Activa o desactiva el suavizado del delta de fotogramas ('enable', "
-"'disable')."
-
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
 msgid "|release| Print the frames per second to the stdout."
 msgstr "|release| Imprime los fotogramas por segundo en la stdout."
+
+msgid "``--editor-pseudolocalization``"
+msgstr "``--editor-pseudolocalization``"
 
 msgid "**Standalone tools**"
 msgstr "**Herramientas independientes**"
@@ -568,21 +575,11 @@ msgstr "**Herramientas independientes**"
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
 
-msgid ""
-"|release| Run a script. ``<script>`` must be a resource path relative to the "
-"project (``myscript.gd`` will be interpreted as ``res://myscript.gd``) or an "
-"absolute filesystem path (for example on Windows ``C:/tmp/myscript.gd``)"
-msgstr ""
-"|release| Ejecutar un script. ``<script>`` debe ser una ruta de recurso "
-"relativa al proyecto (``myscript.gd`` se interpretará como ``res://"
-"myscript.gd``) o una ruta absoluta del sistema de archivos (por ejemplo en "
-"Windows ``C:/tmp/myscript.gd``)"
+msgid "``--main-loop <main_loop_name>``"
+msgstr "``--main-loop <main_loop_name>``"
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr "|release| Analizar solo los errores y salir (usar con `` --script``)."
 
 msgid "``--import``"
 msgstr "``--import``"
@@ -619,22 +616,14 @@ msgstr ""
 "juego para un ajuste preestablecido dado. La extensión de ``<path>`` "
 "determina si será en formato PCK o ZIP. Implica ``--import``."
 
-msgid ""
-"|editor| List of patches to use with --export-patch. The list is comma-"
-"separated."
-msgstr ""
-"|editor| Lista de parches para usar con --export-patch. La lista está "
-"separada por comas."
+msgid "``--export-patch <preset> <path>``"
+msgstr "``--export-patch <preset> <path>``"
+
+msgid "``--patches <paths>``"
+msgstr "``--patches <paths>``"
 
 msgid "``--install-android-build-template``"
 msgstr "``--instalar-plantilla-de-compilación-de-android``"
-
-msgid ""
-"|editor| Install the Android build template. Used in conjunction with --"
-"export-release or --export-debug."
-msgstr ""
-"|editor| Instala la plantilla de compilación de Android. Se usa junto con --"
-"export-release o --export-debug."
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
@@ -672,16 +661,6 @@ msgstr ""
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <path>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| En vez de volcar los datos de la API del motor, genera una "
-"referencia de la API a partir de la documentación incluida dentro de los "
-"archivos GDScript que se encuentren en la <ruta> (utilizado con ``--"
-"doctool``)."
-
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
@@ -695,24 +674,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| Genera el archivo cabecera de GDExtension 'gdnative_interface.h' en "
-"la carpeta actual. Este archivo es el archivo base necesario para "
-"implementar una GDExtension."
-
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| Genera un volcado en JSON de la API de Godot para los bindings de "
-"la GDExtension llamado 'extension_api.json' en la carpeta actual."
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <path>``"
@@ -745,9 +708,8 @@ msgstr ""
 "|editor| Realiza una prueba de rendimiento del tiempo de ejecución y la "
 "guarda en un archivo especificado en formato JSON. La ruta debe ser absoluta."
 
-msgid "|editor| Run unit tests. Use --test --help for more information."
-msgstr ""
-"|editor| Ejecute pruebas unitarias. Use --test --help para más información."
+msgid "``--test [--help]``"
+msgstr "``--test [--help]``"
 
 msgid "Path"
 msgstr "Ruta"

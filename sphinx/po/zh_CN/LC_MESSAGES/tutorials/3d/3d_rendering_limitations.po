@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -197,6 +197,14 @@ msgstr ""
 "偏置<class_VisualInstance3D_property_sorting_offset>` 属性。渲染优先级将强制"
 "特定材质出现在其他透明材质的前面或后面，而排序偏置将向前或向后移动对象以进行"
 "排序。即便如此，这可能也并不总是能解决问题。"
+
+msgid ""
+"Transparent objects are not rendered to the normal-roughness buffer, as they "
+"are drawn after opaque geometry. As a result, features that rely on the "
+"normal-roughness buffer will not affect transparent materials."
+msgstr ""
+"透明物体不会渲染到法线-粗糙度缓冲区 （normal-roughness buffer），因为它们是在"
+"不透明几何体之后绘制的。因此，依赖于法线-粗糙度缓冲区的特征不会影响透明材质。"
 
 msgid ""
 "Some rendering engines feature *order-independent transparency* techniques "

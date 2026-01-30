@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -71,8 +71,14 @@ msgstr ""
 "``modules/``. Si quieres mantener el módulo por separado, puedes obtener un "
 "VCS diferente en módulos para utilizarlo."
 
+msgid "godot/modules/summator/summator.h"
+msgstr "godot/modules/summator/summator.h"
+
 msgid "And then the cpp file."
 msgstr "Y después, el archivo cpp."
+
+msgid "godot/modules/summator/summator.cpp"
+msgstr "godot/modules/summator/summator.cpp"
 
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
@@ -91,6 +97,15 @@ msgstr ""
 
 msgid "These files should contain the following:"
 msgstr "Estos archivos deberán contener lo siguiente:"
+
+msgid "godot/modules/summator/register_types.h"
+msgstr "godot/modules/summator/register_types.h"
+
+msgid "godot/modules/summator/register_types.cpp"
+msgstr "godot/modules/summator/register_types.cpp"
+
+msgid "godot/modules/summator/SCsub"
+msgstr "godot/modules/summator/SCsub"
 
 msgid ""
 "With multiple sources, you can also add each file individually to a Python "
@@ -125,6 +140,9 @@ msgstr ""
 "toda la compilación de Godot (lo cual puede causar errores). Ejemplo de `` "
 "SCsub`` con banderas personalizadas:"
 
+msgid "godot/modules/summator/config.py"
+msgstr "godot/modules/summator/config.py"
+
 msgid ""
 "The module is asked if it's OK to build for the specific platform (in this "
 "case, ``True`` means it will build for every platform)."
@@ -153,7 +171,7 @@ msgid "Using the module"
 msgstr "Usar el módulo"
 
 msgid "You can now use your newly created module from any script:"
-msgstr "Ahora puede usar su módulo recién creado desde cualquier script:"
+msgstr "Ahora puedes usar tu módulo recién creado desde cualquier script:"
 
 msgid "The output will be ``60``."
 msgstr "La salida será ``60``."
@@ -165,9 +183,9 @@ msgid ""
 "external libraries."
 msgstr ""
 "El ejemplo Summator anterior es excelente para módulos personalizados "
-"pequeños, pero podría preguntarse qué sucede si desea usar una biblioteca "
-"externa más grande. Consulta :ref:`doc_binding_to_external_libraries` para "
-"más detalles sobre la vinculación de bibliotecas externas."
+"pequeños, pero podrías preguntarte qué sucede si deseas usar una biblioteca "
+"externa más grande. Véase :ref:`doc_binding_to_external_libraries` para más "
+"detalles sobre la vinculación de bibliotecas externas."
 
 msgid ""
 "If your module is meant to be accessed from the running project (not just "
@@ -276,7 +294,7 @@ msgstr ""
 "módulos personalizados <doc_buildsystem_custom_modules>`."
 
 msgid "Writing custom documentation"
-msgstr "Escribiendo documentación personalizada"
+msgstr "Escribir documentación personalizada"
 
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
@@ -382,6 +400,9 @@ msgid ""
 msgstr ""
 "Ten en cuenta que si no tienes derechos de escritura en la ``<ruta>`` que "
 "proporcionaste, es posible que encuentres un error similar al siguiente:"
+
+msgid "godot/modules/summator/tests/test_summator.h"
+msgstr "godot/modules/summator/tests/test_summator.h"
 
 msgid "Adding custom editor icons"
 msgstr "Añadir iconos de editor personalizados"

@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -182,37 +182,11 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "\\ ``--path <directory>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr ""
-"|release| プロジェクトへのパス (``<directory>`` には「project.godot」ファイル"
-"が含まれている必要があります)。"
-
-msgid "``-u``, ``--upwards``"
-msgstr "\\ ``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr ""
-"|release| 「project.godot」ファイルのフォルダを上方向にスキャンします。"
-
 msgid "``--main-pack <file>``"
 msgstr "\\ ``--main-pack <file>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "|release| 読み込むパック (.pck) ファイルへのパス。"
-
 msgid "``--render-thread <mode>``"
 msgstr "\\ ``--render-thread <mode>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| レンダリングスレッドモード ('unsafe', 'safe', 'separate')。詳細につ"
-"いては、 :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` を参照してください。"
 
 msgid "``--remote-fs <address>``"
 msgstr "\\ ``--remote-fs <address>``"
@@ -365,9 +339,6 @@ msgstr ""
 
 msgid "``--xr-mode <mode>``"
 msgstr "\\ ``--xr-mode <mode>``"
-
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| XR モードを選択します ('default', 'off', 'on')。"
 
 msgid "**Debug options**"
 msgstr "**デバッグオプション**"
@@ -527,12 +498,6 @@ msgstr "|release| フレーム毎秒の固定。この設定によりリアル�
 msgid "``--delta-smoothing <enable>``"
 msgstr "\\ ``--delta-smoothing <enable>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
-"|release| フレーム間のスムージングを有効または無効にします ('enable', "
-"'disable')。"
-
 msgid "``--print-fps``"
 msgstr "\\ ``--print-fps``"
 
@@ -547,9 +512,6 @@ msgstr "\\ ``-s``, ``--script <script>``"
 
 msgid "``--check-only``"
 msgstr "\\ ``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr "|release| エラー分析のみ行って終了 (``--script`` と一緒に使用)。"
 
 msgid "``--import``"
 msgstr "\\ ``--import``"
@@ -621,15 +583,6 @@ msgstr "|editor| 基本型のダンプを禁止します (``--doctool`` で使�
 msgid "``--gdscript-docs <path>``"
 msgstr "\\ ``--gdscript-docs <path>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| エンジン API をダンプするのではなく、<path> にある GDScript ファイル"
-"内のインライン ドキュメントから API リファレンスを生成します (``--doctool`` "
-"で使用)。"
-
 msgid "``--build-solutions``"
 msgstr "\\ ``--build-solutions``"
 
@@ -643,24 +596,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "\\ ``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| 現在のフォルダーに GDExtension ヘッダーファイル "
-"'gdnative_interface.h' を生成します。このファイルは GDExtension を実装するた"
-"めに必要な基本ファイルです。"
-
 msgid "``--dump-extension-api``"
 msgstr "\\ ``--dump-extension-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| 現在のフォルダーに 'extension_api.json' という名前の GDExtension バ"
-"インディングの Godot API の JSON ダンプを生成します。"
 
 msgid "``--validate-extension-api <path>``"
 msgstr "\\ ``--validate-extension-api <path>``"

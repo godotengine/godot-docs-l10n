@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Using InputEvent"
-msgstr "Usando InputEvent"
+msgstr "Usar InputEvent"
 
 msgid "What is it?"
 msgstr "¿Qué es eso?"
@@ -161,6 +161,18 @@ msgstr ""
 "Contiene información de arrastre multi-touch. (sólo disponible en "
 "dispositivos móviles)"
 
+msgid ":ref:`InputEventMagnifyGesture <class_InputEventMagnifyGesture>`"
+msgstr ":ref:`InputEventMagnifyGesture <class_InputEventMagnifyGesture>`"
+
+msgid ":ref:`InputEventPanGesture <class_InputEventPanGesture>`"
+msgstr ":ref:`InputEventPanGesture <class_InputEventPanGesture>`"
+
+msgid ":ref:`InputEventMIDI <class_InputEventMIDI>`"
+msgstr ":ref:`InputEventMIDI <class_InputEventMIDI>`"
+
+msgid ":ref:`InputEventShortcut <class_InputEventShortcut>`"
+msgstr ":ref:`InputEventShortcut <class_InputEventShortcut>`"
+
 msgid "Contains a shortcut."
 msgstr "Contiene un atajo."
 
@@ -173,6 +185,12 @@ msgid ""
 msgstr ""
 "Contiene una acción genérica. Estos eventos a menudo son generados por el "
 "programador como feedback. (más información a continuación)"
+
+msgid "Input actions"
+msgstr "Acciones de entrada"
+
+msgid "This allows for:"
+msgstr "Esto permite:"
 
 msgid ""
 "The same code to work on different devices with different inputs (e.g., "

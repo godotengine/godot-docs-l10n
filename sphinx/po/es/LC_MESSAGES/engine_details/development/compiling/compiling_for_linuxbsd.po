@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Compiling for Linux, \\*BSD"
+msgstr "Compilar para Linux, \\*BSD"
+
 msgid ""
 "This page describes how to compile Linux editor and export template binaries "
 "from source. If you're looking to export your project to Linux instead, "
@@ -18,7 +21,7 @@ msgid ""
 msgstr ""
 "Esta página describe cómo compilar los binarios del editor y las plantillas "
 "de exportación para Linux desde el código fuente. Si lo que buscas es "
-"exportar tu proyecto a Linux, consulta :ref:`doc_exporting_for_linux`."
+"exportar tu proyecto a Linux, véase :ref:`doc_exporting_for_linux`."
 
 msgid "Requirements"
 msgstr "Requerimientos"
@@ -28,8 +31,22 @@ msgid ""
 msgstr ""
 "Para compilar en Linux u otras variantes de Unix, se requiere lo siguiente:"
 
+msgid "GCC 9+ or Clang 6+."
+msgstr "GCC 9+ o Clang 6+."
+
+msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
+
+msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+"El sistema de construcción `SCons 4.0+ <https://scons.org/pages/"
+"download.html>`_."
+
 msgid "Development libraries:"
 msgstr "Bibliotecas de desarrollo:"
+
+msgid "X11, Xcursor, Xinerama, Xi and XRandR."
+msgstr "X11, Xcursor, Xinerama, Xi y XRandR."
 
 msgid "Wayland and wayland-scanner."
 msgstr "Wayland y wayland-scanner."
@@ -62,18 +79,45 @@ msgstr ""
 msgid "Distro-specific one-liners"
 msgstr "Líneas de comandos específicas para cada distribución"
 
+msgid "Alpine Linux"
+msgstr "Alpine Linux"
+
 msgid "Arch Linux"
 msgstr "**Arch Linux**"
 
 msgid "Debian/Ubuntu"
 msgstr "**Debian** / **Ubuntu**"
 
+msgid "Fedora"
+msgstr "Fedora"
+
+msgid "FreeBSD"
+msgstr "FreeBSD"
+
+msgid "Gentoo"
+msgstr "Gentoo"
+
+msgid "Mageia"
+msgstr "Mageia"
+
+msgid "NetBSD"
+msgstr "NetBSD"
+
 msgid "For audio support, you can optionally install ``pulseaudio``."
 msgstr ""
 "Para tener soporte de audio, opcionalmente puedes instalar \"pulseaudio\"."
 
+msgid "OpenBSD"
+msgstr "OpenBSD"
+
 msgid "openKylin"
 msgstr "openKylin"
+
+msgid "openSUSE"
+msgstr "openSUSE"
+
+msgid "Solus"
+msgstr "Solus"
 
 msgid "Compiling"
 msgstr "Compilar"
@@ -136,7 +180,7 @@ msgstr ""
 "siguientes pasos:"
 
 msgid "Building export templates"
-msgstr "Construyendo plantillas de exportación"
+msgstr "Construir plantillas de exportación"
 
 msgid "(32 bits)"
 msgstr "(32 bits)"
@@ -217,7 +261,7 @@ msgid ""
 "You can now copy this executable to your favorite RISC-V device, then launch "
 "it there by double-clicking, which should bring up the project manager."
 msgstr ""
-"Ahora puede copiar este ejecutable a su dispositivo RISC-V favorito y luego "
+"Ahora puedes copiar este ejecutable a su dispositivo RISC-V favorito y luego "
 "iniciarlo allí haciendo doble clic, lo que debería abrir el administrador de "
 "proyectos."
 
@@ -232,7 +276,7 @@ msgstr ""
 "``template_release`` para una compilación de lanzamiento."
 
 msgid "Using Clang and LLD for faster development"
-msgstr "Utilizando Clang y LLD para un desarrollo más rápido"
+msgstr "Utilizar Clang y LLD para un desarrollo más rápido"
 
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
@@ -269,8 +313,14 @@ msgstr ""
 "se pueden compilar utilizando la optimización en tiempo de enlace, lo que "
 "hace que los archivos binarios resultantes sean más pequeños y rápidos."
 
+msgid "If this error occurs:"
+msgstr "Si ocurre este error:"
+
+msgid "There are two solutions:"
+msgstr "Hay dos soluciones:"
+
 msgid "In your SCons command, add the parameter ``use_static_cpp=no``."
-msgstr "En el comando SCons, agregue el parámetro ``use_static_cpp=no``."
+msgstr "En el comando SCons, agrega el parámetro ``use_static_cpp=no``."
 
 msgid ""
 "Follow `these instructions <https://github.com/ivmai/"

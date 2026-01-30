@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -83,6 +83,9 @@ msgstr "**macos**"
 msgid "**ios**"
 msgstr "**ios**"
 
+msgid "**visionos**"
+msgstr "**visionos**"
+
 msgid "**windows**"
 msgstr "**windows**"
 
@@ -92,11 +95,14 @@ msgstr "Ejecución en Windows"
 msgid "**linuxbsd**"
 msgstr "**linuxbsd**"
 
+msgid "Running on Linux or \\*BSD"
+msgstr "Ejecución en Linux o \\*BSD"
+
 msgid "**debug**"
 msgstr "**debug**"
 
 msgid "Running on a debug build (including the editor)"
-msgstr "Ejecutando en una versión de depuración (incluyendo el editor)"
+msgstr "Ejecutar en una versión de depuración (incluyendo el editor)"
 
 msgid "**release**"
 msgstr "**versión**"
@@ -108,7 +114,13 @@ msgid "**editor**"
 msgstr "**editor**"
 
 msgid "Running on an editor build"
-msgstr "Ejecutando en una compilación con editor"
+msgstr "Ejecutar en una compilación con editor"
+
+msgid "**editor_hint**"
+msgstr "**editor_hint**"
+
+msgid "**editor_runtime**"
+msgstr "**editor_runtime**"
 
 msgid "**template**"
 msgstr "**plantilla**"
@@ -123,25 +135,25 @@ msgid "**64**"
 msgstr "**64**"
 
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
+msgstr "Ejecutar en una versión de 64 bits (cualquier arquitectura)"
 
 msgid "**32**"
 msgstr "**32**"
 
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "Ejecutando en una versión de 32 bits (cualquier arquitectura)"
+msgstr "Ejecutar en una versión de 32 bits (cualquier arquitectura)"
 
 msgid "**x86_64**"
 msgstr "**x86_64**"
 
 msgid "Running on a 64-bit x86 build"
-msgstr "Ejecutando en una compilación de 64 bits"
+msgstr "Ejecutar en una compilación de 64 bits"
 
 msgid "**x86_32**"
 msgstr "**x86_32**"
 
 msgid "Running on a 32-bit x86 build"
-msgstr "Ejecutando en una compilación de 32 bits x86"
+msgstr "Ejecutar en una compilación de 32 bits x86"
 
 msgid "**x86**"
 msgstr "**x86**"
@@ -150,13 +162,13 @@ msgid "**arm64**"
 msgstr "**arm64**"
 
 msgid "Running on a 64-bit ARM build"
-msgstr "Ejecutando en una versión de 64 bits ARM"
+msgstr "Ejecutar en una versión de 64 bits ARM"
 
 msgid "**arm32**"
 msgstr "**arm32**"
 
 msgid "Running on a 32-bit ARM build"
-msgstr "Ejecutando en una versión de 32 bits ARM"
+msgstr "Ejecutar en una versión de 32 bits ARM"
 
 msgid "**arm**"
 msgstr "**arm**"
@@ -203,6 +215,12 @@ msgstr "**web**"
 msgid "Host OS is a Web browser"
 msgstr "El sistema operativo anfitrión es un navegador Web"
 
+msgid "**nothreads**"
+msgstr "**nothreads**"
+
+msgid "**threads**"
+msgstr "**threads**"
+
 msgid "**web_android**"
 msgstr "**web_android**"
 
@@ -238,6 +256,12 @@ msgstr "Las texturas que utilizan una compresión S3TC (DXT/BC) son soportadas"
 
 msgid "**movie**"
 msgstr "**película**"
+
+msgid "**shader_baker**"
+msgstr "**shader_baker**"
+
+msgid "**dedicated_server**"
+msgstr "**dedicated_server**"
 
 msgid "Custom features"
 msgstr "Funcionalidades personalizadas"

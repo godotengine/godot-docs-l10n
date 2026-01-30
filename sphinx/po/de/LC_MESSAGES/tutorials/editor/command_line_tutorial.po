@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -177,37 +177,11 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <Verzeichnis>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr ""
-"|release| Pfad zu einem Projekt (``<Verzeichnis>`` muss eine 'project.godot'-"
-"Datei enthalten)."
-
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr ""
-"|release| Ordner aufwärts nach der Datei \"project.godot\" durchsuchen."
-
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "|release| Pfad zu einer zu ladenden Pack-Datei (.pck)."
-
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| Render-Thread-Modus ('unsafe', 'safe', 'separate'). "
-"Siehe :ref:`Thread-Modell <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` für weitere Details."
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
@@ -359,9 +333,6 @@ msgstr "|release| Einzelnes Fenster verwenden (keine separaten Unterfenster)."
 
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <mode>``"
-
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| XR-Modus auswählen (\"Standard\", \"Aus\", \"Ein\")."
 
 msgid "**Debug options**"
 msgstr "**Debug-Optionen**"
@@ -526,11 +497,6 @@ msgstr ""
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <enable>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
-"|release| Delta-Glättung aktivieren oder deaktivieren ('enable', 'disable')."
-
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
@@ -545,10 +511,6 @@ msgstr "``-s``, ``--script <script>``"
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr ""
-"|release| Nur auf Fehler prüfen und beenden (mit ``--script`` verwenden)."
 
 msgid "``--import``"
 msgstr "``--import``"
@@ -621,15 +583,6 @@ msgstr ""
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <path>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| API-Referenz aus der Inline-Dokumentation in den GDScript-Dateien "
-"in <Pfad> generieren (verwendet mit ``--doctool``), anstatt die Engine-API "
-"zu dumpen."
-
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
@@ -643,24 +596,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| GDExtension-Header-Datei 'gdnative_interface.h' im aktuellen Ordner "
-"generieren. Diese Datei ist die Basisdatei, die zur Implementierung einer "
-"GDExtension benötigt wird."
-
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| JSON-Dump der Godot-API für GDExtension-Bindungen mit dem Namen "
-"'extension_api.json' im aktuellen Ordner generieren."
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <path>``"

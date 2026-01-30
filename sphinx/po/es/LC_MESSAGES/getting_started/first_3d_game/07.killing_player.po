@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Killing the player"
-msgstr "Eliminando al jugador"
+msgstr "Eliminar al jugador"
 
 msgid ""
 "We can kill enemies by jumping on them, but the player still can't die. "
@@ -112,17 +112,6 @@ msgstr "|image3|"
 msgid "image3"
 msgstr "image3"
 
-msgid ""
-"When areas detect a collision, they emit signals. We're going to connect one "
-"to the ``Player`` node. Select ``MobDetector`` and go to *Inspector*'s "
-"*Node* tab, double-click the ``body_entered`` signal and connect it to the "
-"``Player``"
-msgstr ""
-"Cuando las áreas detectan una colisión, emiten señales. Vamos a conectar una "
-"al nodo ``Player``. Selecciona ``MobDetector`` y ve a la pestaña *Node* del "
-"*Inspector*, haz doble clic en la señal ``body_entered`` y conéctala a "
-"``Player``"
-
 msgid "|image4|"
 msgstr "|image4|"
 
@@ -151,7 +140,7 @@ msgstr ""
 "etiqueta descriptiva en el código."
 
 msgid "Ending the game"
-msgstr "Finalizando el juego"
+msgstr "Finalizar el juego"
 
 msgid ""
 "We can use the ``Player``\\ 's ``hit`` signal to end the game. All we need "
@@ -161,13 +150,6 @@ msgstr ""
 "Podemos utilizar la señal ``hit`` de ``Player`` para finalizar el juego. "
 "Todo lo que necesitamos hacer es conectarla al nodo ``Main`` y detener el "
 "``MobTimer`` en consecuencia."
-
-msgid ""
-"Open ``main.tscn``, select the ``Player`` node, and in the *Node* dock, "
-"connect its ``hit`` signal to the ``Main`` node."
-msgstr ""
-"Abre ``main.tscn``, selecciona el nodo ``Player`` y en el panel *Nodo*, "
-"conecta su señal ``hit`` al nodo ``Main``."
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -224,7 +206,7 @@ msgstr ""
 "código."
 
 msgid "Starting with ``main.gd``."
-msgstr "Empezando con ``main.gd``."
+msgstr "Empezar con ``main.gd``."
 
 msgid "Next is ``mob.gd``."
 msgstr "A continuación ``Mob.gd``."

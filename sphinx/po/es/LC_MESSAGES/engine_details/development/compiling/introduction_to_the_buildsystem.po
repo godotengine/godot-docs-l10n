@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -13,6 +13,24 @@ msgstr ""
 
 msgid "Introduction to the buildsystem"
 msgstr "Introducción al sistema de compilación"
+
+msgid ":ref:`doc_compiling_for_android`"
+msgstr ":ref:`doc_compiling_for_android`"
+
+msgid ":ref:`doc_compiling_for_ios`"
+msgstr ":ref:`doc_compiling_for_ios`"
+
+msgid ":ref:`doc_compiling_for_linuxbsd`"
+msgstr ":ref:`doc_compiling_for_linuxbsd`"
+
+msgid ":ref:`doc_compiling_for_macos`"
+msgstr ":ref:`doc_compiling_for_macos`"
+
+msgid ":ref:`doc_compiling_for_web`"
+msgstr ":ref:`doc_compiling_for_web`"
+
+msgid ":ref:`doc_compiling_for_windows`"
+msgstr ":ref:`doc_compiling_for_windows`"
 
 msgid ""
 "These articles cover in great detail both how to setup your environment to "
@@ -153,8 +171,8 @@ msgid ""
 msgstr ""
 "Existen opciones adicionales de SCons para habilitar los *sanitizers*, que "
 "son herramientas que se pueden habilitar en tiempo de compilación para "
-"depurar mejor ciertos problemas del motor. "
-"Consulta :ref:`doc_using_sanitizers` para obtener más información."
+"depurar mejor ciertos problemas del motor. Véase :ref:`doc_using_sanitizers` "
+"para obtener más información."
 
 msgid ""
 "By default, ``debug_symbols=no`` is used, which means **no** debugging "
@@ -197,6 +215,12 @@ msgstr ""
 "con MSVC, la información de depuración *siempre* se escribe en un archivo "
 "``.pdb`` separado independientemente de ``separate_debug_symbols``."
 
+msgid "Optimization level"
+msgstr "Nivel de optimización"
+
+msgid "Architecture"
+msgstr "Arquitectura"
+
 msgid "Custom modules"
 msgstr "Módulos personalizados"
 
@@ -235,8 +259,11 @@ msgstr ""
 "módulo integrado, el motor solo compilará el personalizado. Esta lógica se "
 "puede usar para anular las implementaciones de módulos integrados."
 
+msgid ":ref:`doc_custom_modules_in_cpp`"
+msgstr ":ref:`doc_custom_modules_in_cpp`"
+
 msgid "Cleaning generated files"
-msgstr "Limpiando archivos generados"
+msgstr "Limpiar archivos generados"
 
 msgid ""
 "Sometimes, you may encounter an error due to generated files being present. "
@@ -283,7 +310,7 @@ msgid "Overriding the build options"
 msgstr "Sobrescribendo las opciones de configuración"
 
 msgid "Using a file"
-msgstr "Usando un archivo"
+msgstr "Usar un archivo"
 
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
@@ -325,7 +352,7 @@ msgid "It's also possible to override the options conditionally:"
 msgstr "También es posible anular las opciones condicionalmente:"
 
 msgid "Using the SCONSFLAGS"
-msgstr "Usando las SCONSFLAGS"
+msgstr "Usar las SCONSFLAGS"
 
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "

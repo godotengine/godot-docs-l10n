@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Evaluating expressions"
-msgstr "Evaluando expresiones"
+msgstr "Evaluar expresiones"
 
 msgid ""
 "Godot provides an :ref:`class_Expression` class you can use to evaluate "
@@ -27,6 +27,12 @@ msgstr "Una expresión puede ser:"
 msgid "A mathematical expression such as ``(2 + 4) * 16/4.0``."
 msgstr "Una expresión matemática como ``(2 + 4) * 16/4.0``."
 
+msgid "A boolean expression such as ``true && false``."
+msgstr "Una expresión booleana como ``true && false``."
+
+msgid "A built-in method call like ``deg_to_rad(90)``."
+msgstr "Una llamada a un método integrado como ``deg_to_rad(90)``."
+
 msgid ""
 "The Expression class is independent from GDScript. It's available even if "
 "you compile Godot with the GDScript module disabled."
@@ -36,6 +42,9 @@ msgstr ""
 
 msgid "Basic usage"
 msgstr "Uso básico"
+
+msgid "To evaluate a mathematical expression, use:"
+msgstr "Para evaluar una expresión matemática, utiliza:"
 
 msgid "The following operators are available:"
 msgstr "Los siguientes operadores estan disponibles:"
@@ -73,6 +82,21 @@ msgstr ""
 "Realiza una división entera si ambos operandos son enteros. Si al menos uno "
 "de ellos es un número de punto flotante, devuelve un valor de punto flotante."
 
+msgid "Remainder (``%``)"
+msgstr "Residuo (``%``)"
+
+msgid "Returns the result of a boolean AND."
+msgstr "Devuelve el resultado de un AND booleano."
+
+msgid "Returns the result of a boolean OR."
+msgstr "Devuelve el resultado de un OR booleano."
+
+msgid "Negation (``!``)"
+msgstr "Negación (``!``)"
+
+msgid "Returns the result of a boolean NOT."
+msgstr "Devuelve el resultado de un NOT booleano."
+
 msgid ""
 "Spaces around operators are optional. Also, keep in mind the usual `order of "
 "operations <https://en.wikipedia.org/wiki/Order_of_operations>`__ applies. "
@@ -105,7 +129,7 @@ msgstr ""
 "y minúsculas**."
 
 msgid "Setting a base instance for the expression"
-msgstr "Configurando una instancia base para la expresión"
+msgstr "Configurar una instancia base para la expresión"
 
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "

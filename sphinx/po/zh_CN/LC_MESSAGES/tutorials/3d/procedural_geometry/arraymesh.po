@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -255,6 +255,120 @@ msgstr ""
 
 msgid "Put together, the full code looks like:"
 msgstr "把这些放到一起，完整的代码是这样的："
+
+msgid ""
+"The code that goes in the middle can be whatever you want. Below we will "
+"present some example code for generating shapes, starting with a rectangle."
+msgstr ""
+"中间可以放你想要的任何代码。下面我们将展示一些生成形状的示例代码，首先从矩形"
+"开始。"
+
+msgid "Generating a rectangle"
+msgstr "生成一个矩形"
+
+msgid ""
+"Since we are using ``Mesh.PRIMITIVE_TRIANGLES`` to render, we will construct "
+"a rectangle with triangles."
+msgstr ""
+"由于我们使用 ``Mesh.PRIMITIVE_TRIANGLES`` 进行渲染，我们将构建一个由三角形组"
+"成的矩形。"
+
+msgid ""
+"A rectangle is formed by two triangles sharing four vertices. For our "
+"example, we will create a rectangle with its top left point at ``(0, 0, 0)`` "
+"with a width and length of one as shown below:"
+msgstr ""
+"矩形由两个共用四个顶点的三角形组成。例如，我们将创建一个左上角点为 ``(0, 0, "
+"0)`` 、宽和长均为 1 的矩形， 如下图所示："
+
+msgid "A rectangle made of two triangles sharing four vertices."
+msgstr "矩形由两个共用四个顶点的三角形组成。"
+
+msgid ""
+"To draw this rectangle, define the coordinates of each vertex in the "
+"``verts`` array."
+msgstr "要绘制这个矩形，请在 ``verts`` 数组中定义每个顶点的坐标。"
+
+msgid ""
+"The ``uvs`` array helps describe where parts of a texture should go onto the "
+"mesh. The values range from 0 to 1. Depending on your texture, you may want "
+"to change these values."
+msgstr ""
+"``uvs`` 数组用于描述纹理的各个部分在网格上的位置。其值范围为 0 到 1。根据你的"
+"纹理 ，可能需要更改这些值。"
+
+msgid ""
+"The ``normals`` array is used to describe the direction the vertices face "
+"and is used in lighting calculations. For this example, we will default to "
+"the ``Vector3.UP`` direction."
+msgstr ""
+"``normals`` 数组用于描述顶点朝向的方向，并用于光照计算。在本例中，我们将默认"
+"使用 ``Vector3.UP`` 方向。"
+
+msgid ""
+"The ``indices`` array defines the order vertices are drawn. Godot renders in "
+"a *clockwise* direction, meaning that we must specify the vertices of a "
+"triangle we want to draw in clockwise order."
+msgstr ""
+"``indices`` 数组定义了顶点的绘制顺序。Godot 以 *顺时针* 方向渲染，这意味着我"
+"们必须指定要按顺时针顺序绘制的三角形的顶点。"
+
+msgid ""
+"For example, to draw the first triangle, we will want to draw the vertices "
+"``(0, 0, 0)``, ``(1, 0, 0)``, and ``(0, 0, 1)`` in that order. This is the "
+"same as drawing ``vert[0]``, ``vert[2]``, and ``vert[1]``, i.e., indices 0, "
+"2, and 1, in the ``verts`` array. These index values are what the "
+"``indices`` array defines."
+msgstr ""
+"例如，要绘制第一个三角形，我们需要按顺序绘制顶点 ``(0, 0, 0)`` 、 ``(1, 0, "
+"0)`` 和 ``(0, 0, 1)`` 。这等同于绘制 ``verts`` 数组中的 ``vert[0]`` 、 "
+"``vert[2]`` 和 ``vert[1]`` ，即索引 0、2 和 1。这些索引值由 ``indices`` 数组"
+"定义。"
+
+msgid "``verts[Index]``"
+msgstr "``verts[Index]``"
+
+msgid "``uvs[Index]``"
+msgstr "``uvs[Index]``"
+
+msgid "``normals[Index]``"
+msgstr "``normals[Index]``"
+
+msgid "(0, 0, 0)"
+msgstr "(0, 0, 0)"
+
+msgid "(0, 0)"
+msgstr "(0, 0)"
+
+msgid "Vector3.UP"
+msgstr "Vector3.UP"
+
+msgid "(0, 0, 1)"
+msgstr "(0, 0, 1)"
+
+msgid "(1, 0)"
+msgstr "(1, 0)"
+
+msgid "(1, 0, 0)"
+msgstr "(1, 0, 0)"
+
+msgid "(0, 1)"
+msgstr "(0, 1)"
+
+msgid "(1, 0, 1)"
+msgstr "(1, 0, 1)"
+
+msgid "(1, 1)"
+msgstr "(1, 1)"
+
+msgid "Put together, the rectangle generation code looks like:"
+msgstr "把这些放到一起，生成矩形的代码是这样的："
+
+msgid "For a more complex example, see the sphere generation section below."
+msgstr "更复杂的示例请参见下面的球体生成部分。"
+
+msgid "Generating a sphere"
+msgstr "创建一个球体"
 
 msgid ""
 "Here is sample code for generating a sphere. Although the code is presented "

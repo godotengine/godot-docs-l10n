@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -216,38 +216,11 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <目录>``"
 
-msgid ""
-"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
-"file)."
-msgstr ""
-"|release| 项目的路径（\\ ``<directory>`` 必须包含“project.godot”文件）。"
-
-msgid "|release| Path or UID of a scene in the project that should be started."
-msgstr "|release| 指定启动时应加载的项目场景路径或UID。"
-
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr "|release| 向上扫描文件夹中的“project.godot”文件。"
-
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-msgid "|release| Path to a pack (.pck) file to load."
-msgstr "|release| 要加载的包（.pck）文件的路径。"
-
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <模式>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| 渲染线程模式（'unsafe'、'safe'、'separate'）。详见\\ :ref:`线程模"
-"型 <class_ProjectSettings_property_rendering/driver/threads/"
-"thread_model>`\\ 。"
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <地址>``"
@@ -276,17 +249,6 @@ msgid ""
 "|release| Display driver (and rendering driver). Use ``--help`` first to "
 "display the list of available drivers."
 msgstr "视频驱动。使用 ``--help`` 来显示可用驱动列表。"
-
-msgid "``--audio-output-latency`` <ms>"
-msgstr "``--audio-output-latency`` <毫秒>"
-
-msgid ""
-"|release| Override audio output latency in milliseconds (default is 15 ms). "
-"Lower values make sound playback more reactive but increase CPU usage, and "
-"may result in audio cracking if the CPU can't keep up"
-msgstr ""
-"|release| 覆盖音频输出延迟（毫秒，默认为15毫秒）。数值越低声音播放响应越快，"
-"但会增加CPU占用，若CPU性能不足可能导致音频爆音"
 
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
@@ -334,14 +296,6 @@ msgstr ""
 
 msgid "``--log-file``"
 msgstr "``--log-file``"
-
-msgid ""
-"|release| Write output/error log to the specified path instead of the "
-"default location defined by the project. <file> path should be absolute or "
-"relative to the project directory."
-msgstr ""
-"|release| 将输出/错误日志写入指定路径（替代项目定义的默认位置）。<file> 路径"
-"需为绝对路径或相对于项目目录的路径。"
 
 msgid "``--write-movie <file>``"
 msgstr "``--write-movie <file>``"
@@ -412,9 +366,6 @@ msgstr "|release| 使用单个窗口（没有单独的子窗口）。"
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <mode>``"
 
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| 选择 XR 模式（“default”默认、“off”关闭、“on”打开）。"
-
 msgid "``--wid <window_id>``"
 msgstr "``--wid <window_id>``"
 
@@ -423,13 +374,6 @@ msgstr "|release| 请求附加到窗口。"
 
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <mode>``"
-
-msgid ""
-"|release| Select accessibility mode ['auto' (when screen reader is running, "
-"default), 'always', 'disabled']."
-msgstr ""
-"|release| 选择无障碍模式 ['auto'（当屏幕阅读器运行时，默认值）, 'always', "
-"'disabled']。"
 
 msgid "**Debug options**"
 msgstr "**调试选项**"
@@ -593,13 +537,6 @@ msgstr ""
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid ""
-"|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
-"not use as a FPS limiter; use --max-fps instead."
-msgstr ""
-"|release| 模拟高 CPU 负载（每帧延迟 <ms> 毫秒。不要把它当作FPS限制器，使用--"
-"max-fps代替它。"
-
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <缩放>``"
 
@@ -642,10 +579,6 @@ msgstr "每秒强制固定数量的帧。此设置禁用实时同步。"
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <启用>``"
 
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr "|release| 启用或禁用帧间隔平滑（“enable”启用、“disable”禁用）。"
-
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
@@ -665,26 +598,11 @@ msgstr "**单独的工具**"
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
 
-msgid ""
-"|release| Run a script. ``<script>`` must be a resource path relative to the "
-"project (``myscript.gd`` will be interpreted as ``res://myscript.gd``) or an "
-"absolute filesystem path (for example on Windows ``C:/tmp/myscript.gd``)"
-msgstr ""
-"|release| 运行脚本。\\ ``<script>`` 必须是相对于项目的资源路径（\\ "
-"``myscript.gd`` 会被解释为 ``res://myscript.gd``\\ ）或绝对文件系统路径（例"
-"如 Windows 上的 ``C:/tmp/myscript.gd``\\ ）"
-
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <main_loop_name>``"
 
-msgid "|release| Run a MainLoop specified by its global class name."
-msgstr "|release| 运行由其全局类名指定的 MainLoop。"
-
 msgid "``--check-only``"
 msgstr "``--check-only``"
-
-msgid "|release| Only parse for errors and quit (use with ``--script``)."
-msgstr "|release| 仅解析错误并退出（与 ``--script`` 一起使用）。"
 
 msgid "``--import``"
 msgstr "``--import``"
@@ -698,18 +616,6 @@ msgstr ""
 
 msgid "``--export-release <preset> <path>``"
 msgstr "``--export-release <preset> <path>``"
-
-msgid ""
-"|editor| Export the project in release mode using the given preset and "
-"output path. The preset name should match one defined in "
-"'export_presets.cfg'. ``<path>`` should be absolute or relative to the "
-"project directory, and include the filename for the binary (e.g. 'builds/"
-"game.exe'). The target directory must exist."
-msgstr ""
-"|editor| 使用指定的预设和输出路径以发布模式导出项目。预设名称应与 "
-"'export_presets.cfg' 中定义的名称一致。``<path>`` 应为绝对路径或相对于项目目"
-"录的相对路径，并包含生成的可执行文件（例如 'builds/game.exe'）。目标目录必须"
-"存在。"
 
 msgid "``--export-debug <preset> <path>``"
 msgstr "``--export-debug <preset> <path>``"
@@ -734,30 +640,11 @@ msgstr ""
 msgid "``--export-patch <preset> <path>``"
 msgstr "``--export-patch <预设> <路径>``"
 
-msgid ""
-"|editor| Export pack with changed files only. See --export-pack description "
-"for other considerations."
-msgstr ""
-"|editor| 仅导出包含已更改文件的打包文件。其他注意事项请参见 --export-pack 的"
-"说明。"
-
 msgid "``--patches <paths>``"
 msgstr "``--patches <paths>``"
 
-msgid ""
-"|editor| List of patches to use with --export-patch. The list is comma-"
-"separated."
-msgstr "|editor| 与 --export-patch 配合使用的补丁列表，以逗号分隔。"
-
 msgid "``--install-android-build-template``"
 msgstr "``--install-android-build-template``"
-
-msgid ""
-"|editor| Install the Android build template. Used in conjunction with --"
-"export-release or --export-debug."
-msgstr ""
-"|editor| 安装 Android 构建模板。与 --export-release 或 --export-debug 配合使"
-"用。"
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<最大文件kb值>] [<最大行数>]``"
@@ -792,14 +679,6 @@ msgstr "|editor| 禁止转储基本类型（与 ``--doctool`` 一起使用）。
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <路径>``"
 
-msgid ""
-"|editor| Rather than dumping the engine API, generate API reference from the "
-"inline documentation in the GDScript files found in <path> (used with ``--"
-"doctool``)."
-msgstr ""
-"|editor| 不转储引擎 API，而是从 <路径> 找到 GDScript 文件（与 ``--doctool`` "
-"一起使用）的内联文档生成 API 引用。"
-
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
@@ -813,23 +692,8 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
-msgid ""
-"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
-"current folder. This file is the base file required to implement a "
-"GDExtension."
-msgstr ""
-"|editor| 在当前文件夹下生成 GDExtension 头文件 “gdnative_interface.h”。该文件"
-"是实现 GDExtension 所需的基础文件。"
-
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
-
-msgid ""
-"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
-"'extension_api.json' in the current folder."
-msgstr ""
-"|editor| 在当前文件夹中生成 GDExtension 绑定的 Godot API ，其名"
-"为“extension_api.json” 的JSON 转储。"
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <路径>``"
@@ -860,9 +724,6 @@ msgstr ""
 
 msgid "``--test [--help]``"
 msgstr "``--test [--help]``"
-
-msgid "|editor| Run unit tests. Use --test --help for more information."
-msgstr "|editor| 运行单元测试。使用 --test --help 获取更多信息。"
 
 msgid "Path"
 msgstr "路径"

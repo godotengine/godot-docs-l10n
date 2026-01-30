@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -112,27 +112,23 @@ msgstr "``groups``"
 msgid "NodePath"
 msgstr "Ruta del nodo"
 
+msgid "Skeleton3D"
+msgstr "Skeleton3D"
+
+msgid "``position``: Vector3"
+msgstr "``position``: Vector3"
+
+msgid "``scale``: Vector3"
+msgstr "``scale``: Vector3"
+
 msgid "Here's an example of a skeleton node with two bones:"
 msgstr "Aquí hay un ejemplo de un nodo esqueleto con dos huesos:"
 
+msgid "BoneAttachment3D"
+msgstr "BoneAttachment3D"
+
 msgid "AnimationPlayer"
 msgstr "AnimationPlayer"
-
-msgid ""
-"If the library name is empty, then it acts acts the unique source of "
-"animations for this AnimationPlayer. This allows using ``<animation_name>`` "
-"directly to play animations from script. If you name the library, then you "
-"must play it as ``<library_name>/<animation_name>``. This ensures backwards "
-"compatibility and keeps the existing workflow if you don't want to use "
-"multiple animation libraries."
-msgstr ""
-"Si el nombre de la biblioteca está vacío, esta actúa como la fuente única de "
-"animaciones para este AnimationPlayer. Esto permite usar "
-"``<animation_name>`` directamente para reproducir animaciones desde el "
-"script. Si se le asigna un nombre a la biblioteca, debe reproducirse como "
-"``<library_name>/<animation_name>``. Esto garantiza la compatibilidad con "
-"versiones anteriores y conserva el flujo de trabajo existente si no se "
-"desean usar varias bibliotecas de animación."
 
 msgid "Resources"
 msgstr "Recursos"
@@ -179,6 +175,9 @@ msgstr "ArrayMesh"
 
 msgid "Animation"
 msgstr "Animación"
+
+msgid "Each animation has the following properties:"
+msgstr "Cada animación tiene las siguientes propiedades:"
 
 msgid ""
 "For 3D position, rotation and scale tracks, ``keys`` is a PackedFloat32Array "

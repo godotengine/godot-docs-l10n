@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.6\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -130,26 +130,11 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <디렉터리>``"
 
-msgid "``-u``, ``--upwards``"
-msgstr "``-u``, ``--upwards``"
-
-msgid "|release| Scan folders upwards for 'project.godot' file."
-msgstr "|release| 'project.godot' 파일을 찾기 위해 위로 폴더를 스캔합니다."
-
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <파일>``"
 
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <모드>``"
-
-msgid ""
-"|release| Render thread mode ('unsafe', 'safe', 'separate'). "
-"See :ref:`Thread Model <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>` for more details."
-msgstr ""
-"|release| 렌더 스레드 모드 ('unsafe', 'safe', 'separate'). 자세한 사항"
-"은 :ref:`스레드 모델 <class_ProjectSettings_property_rendering/driver/"
-"threads/thread_model>`\\ 을 참조하세요."
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <주소>``"
@@ -182,9 +167,6 @@ msgid ""
 msgstr ""
 "|release| 비디오 드라이버. 사용 가능한 드라이버의 목록을 표시하려면 먼저 ``--"
 "help``\\ 를 입력하세요."
-
-msgid "``--audio-output-latency`` <ms>"
-msgstr "``--audio-output-latency`` <ms>"
 
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <렌더러>``"
@@ -271,9 +253,6 @@ msgstr "|release| 단일 창을 사용합니다 (별도의 하위 창 없음)."
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <모드>``"
 
-msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr "|release| XR 모드를 선택합니다 ('default', 'off', 'on')."
-
 msgid "``--wid <window_id>``"
 msgstr "``--wid <창_id>``"
 
@@ -282,13 +261,6 @@ msgstr "|release| 창에 부모로 지정되도록 요청합니다."
 
 msgid "``--accessibility <mode>``"
 msgstr "``--accessibility <모드>``"
-
-msgid ""
-"|release| Select accessibility mode ['auto' (when screen reader is running, "
-"default), 'always', 'disabled']."
-msgstr ""
-"|release| 접근성 모드를 선택합니다 ['auto' (스크린 리더가 실행 중일 때, 디폴"
-"트), 'always', 'disabled']."
 
 msgid "**Debug options**"
 msgstr "**디버그 옵션**"
@@ -465,13 +437,6 @@ msgstr ""
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid ""
-"|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
-"not use as a FPS limiter; use --max-fps instead."
-msgstr ""
-"|release| 높은 CPU 점유률을 시뮬레이션합니다 (각 프레임을 <ms>밀리초씩 지"
-"연). FPS 제한으로 사용하지 마세요. 대신 --max-fps를 사용하세요."
-
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <스케일>``"
 
@@ -519,12 +484,6 @@ msgstr ""
 
 msgid "``--delta-smoothing <enable>``"
 msgstr "``--delta-smoothing <enable>``"
-
-msgid ""
-"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
-"|release| 프레임 델타 스무딩을 활성화하거나 비활성화합니다 ('enable', "
-"'disable')."
 
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
