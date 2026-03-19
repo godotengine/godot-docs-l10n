@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,118 +277,142 @@ msgid "The part about the remote branch can be omitted if you want it to have th
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:350
-msgid "Git will ask you for your username and password, and the changes will be sent to your remote. If you check the fork's page on GitHub, you should see a new branch with your added commits."
-msgstr ""
-
-#: ../../docs/community/contributing/pr_workflow.rst:355
-msgid "Issuing a pull request"
+msgid "Git will ask you for your username and password. For your password, enter your GitHub Personal Access Token (PAT). If you do not have a GitHub Personal Access Token, or do not have one with the correct permissions for your newly forked repository, you will need to create one. Follow this link to create your Personal Access Token: `Creating a personal access token <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>`_."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:357
-msgid "When you load your fork's branch on GitHub, you should see a line saying *\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially some commits behind, if your ``master`` branch was out of sync with the upstream ``master`` branch)."
+msgid "After you have successfully verified your account using your PAT, the changes will be sent to your remote repository. If you check the fork's page on GitHub, you should see a new branch with your added commits."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:362
+msgid "Issuing a pull request"
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:364
-msgid "On that line, there is a \"Pull request\" link. Clicking it will open a form that will let you issue a pull request on the ``godotengine/godot`` upstream repository. It should show you your two commits, and state \"Able to merge\". If not (e.g. it has way more commits, or says there are merge conflicts), don't create the PR yet, something went wrong. Go to our `Godot Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
+msgid "When you load your fork's branch on GitHub, you should see a line saying *\"This branch is 2 commits ahead of godotengine:master.\"* (and potentially some commits behind, if your ``master`` branch was out of sync with the upstream ``master`` branch)."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:371
+msgid "On that line, there is a \"Pull request\" link. Clicking it will open a form that will let you issue a pull request on the ``godotengine/godot`` upstream repository. It should show you your two commits, and state \"Able to merge\". If not (e.g. it has way more commits, or says there are merge conflicts), don't create the PR yet, something went wrong. Go to our `Godot Contributors Chat <https://chat.godotengine.org/>`_ and ask for support :)"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:378
 msgid "Use an explicit title for the PR and put the necessary details in the comment area. You can drag and drop screenshots, GIFs or zipped projects if relevant, to showcase what your work implements. Click \"Create a pull request\", and tadaa!"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:377
+#: ../../docs/community/contributing/pr_workflow.rst:384
 msgid "Modifying a pull request"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:379
+#: ../../docs/community/contributing/pr_workflow.rst:386
 msgid "While it is reviewed by other contributors, you will often need to make changes to your yet-unmerged PR, either because contributors requested them, or because you found issues yourself while testing."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:383
+#: ../../docs/community/contributing/pr_workflow.rst:390
 msgid "The good news is that you can modify a pull request simply by acting on the branch you made the pull request from. You can e.g. make a new commit on that branch, push it to your fork, and the PR will be updated automatically:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:398
+#: ../../docs/community/contributing/pr_workflow.rst:405
 msgid "However, be aware that in our PR workflow, we favor commits that bring the codebase from one functional state to another functional state, without having intermediate commits fixing up bugs in your own code or style issues. Most of the time, we will prefer a single commit in a given PR (unless there's a good reason to keep the changes separate). Instead of authoring a new commit, consider using ``git commit --amend`` to amend the previous commit with your fixes. The above example would then become:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:428
+#: ../../docs/community/contributing/pr_workflow.rst:435
 msgid "The interactive rebase"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:430
+#: ../../docs/community/contributing/pr_workflow.rst:437
 msgid "If you didn't follow the above steps closely to *amend* changes into a commit instead of creating fixup commits, or if you authored your changes without being aware of our workflow and Git usage tips, reviewers might request of your to *rebase* your branch to *squash* some or all of the commits into one."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:435
+#: ../../docs/community/contributing/pr_workflow.rst:442
 msgid "Indeed, if some commits have been made following reviews to fix bugs, typos, etc. in the original commit, they are not relevant to a future changelog reader who would want to know what happened in the Godot codebase, or when and how a given file was last modified."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:440
+#: ../../docs/community/contributing/pr_workflow.rst:447
 msgid "To squash those extraneous commits into the main one, we will have to *rewrite history*. Right, we have that power. You may read that it's a bad practice, and it's true when it comes to branches of the upstream repo. But in your fork, you can do whatever you want, and everything is allowed to get neat PRs :)"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:445
+#: ../../docs/community/contributing/pr_workflow.rst:452
 msgid "We will use the *interactive rebase* ``git rebase -i`` to do this. This command takes a commit ID or a branch name as argument, and will let you modify all commits between that commit/branch and the last one in your working branch, the so-called ``HEAD``."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:450
+#: ../../docs/community/contributing/pr_workflow.rst:457
 msgid "While you can give any commit ID to ``git rebase -i`` and review everything in between, the most common and convenient workflow involves rebasing on the upstream ``master`` branch, which you can do with:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:458
+#: ../../docs/community/contributing/pr_workflow.rst:465
 msgid "Referencing branches in Git is a bit tricky due to the distinction between remote and local branches. Here, ``upstream/master`` (with a `/`) is a local branch which has been pulled from the ``upstream`` remote's ``master`` branch."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:463
+#: ../../docs/community/contributing/pr_workflow.rst:470
 msgid "Interactive rebases can only be done on local branches, so the `/` is important here. As the upstream remote changes frequently, your local ``upstream/master`` branch may become outdated, so you can update it with ``git fetch upstream master``. Contrarily to ``git pull --rebase upstream master`` which would update your currently checked out branch, ``fetch`` will only update the ``upstream/master`` reference (which is distinct from your local ``master`` branch... yes it's confusing, but you'll become familiar with this little by little)."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:473
+#: ../../docs/community/contributing/pr_workflow.rst:480
 msgid "This will open a text editor (``vi`` by default, see `Git docs <https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>`_ to configure your favorite one) with something which may look like this:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:482
+#: ../../docs/community/contributing/pr_workflow.rst:489
 msgid "The editor will also show instructions regarding how you can act on those commits. In particular, it should tell you that \"pick\" means to use that commit (do nothing), and that \"squash\" and \"fixup\" can be used to *meld* the commit in its parent commit. The difference between \"squash\" and \"fixup\" is that \"fixup\" will discard the commit log from the squashed commit. In our example, we are not interested in keeping the log of the \"Fix a typo\" commit, so we use:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:495
+#: ../../docs/community/contributing/pr_workflow.rst:502
 msgid "Upon saving and quitting the editor, the rebase will occur. The second commit will be melded into the first one, and ``git log`` and ``git show`` should now confirm that you have only one commit with the changes from both previous commits."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:500
+#: ../../docs/community/contributing/pr_workflow.rst:507
 msgid "But! You rewrote the history, and now your local and remote branches have diverged. Indeed, commit 1b4aad7 in the above example will have changed, and therefore got a new commit hash. If you try to push to your remote branch, it will raise an error:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:514
-msgid "This is a sane behavior, Git will not let you push changes that would override remote content. But that's actually what we want to do here, so we will have to *force* it:"
-msgstr ""
-
-#: ../../docs/community/contributing/pr_workflow.rst:522
-msgid "And tadaa! Git will happily *replace* your remote branch with what you had locally (so make sure that's what you wanted, using ``git log``). This will also update the PR accordingly."
-msgstr ""
-
-#: ../../docs/community/contributing/pr_workflow.rst:527
-msgid "Deleting a Git branch"
+#: ../../docs/community/contributing/pr_workflow.rst:521
+msgid "This is reasonable behavior, Git will not let you push changes that would override remote content. But that's actually what we want to do here, so we will have to *force* it:"
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:529
-msgid "After your pull request gets merged, there's one last thing you should do: delete your Git branch for the PR. There won't be issues if you don't delete your branch, but it's good practice to do so. You'll need to do this twice, once for the local branch and another for the remote branch on GitHub."
+msgid "And tadaa! Git will happily *replace* your remote branch with what you had locally (so make sure that's what you wanted, using ``git log``). This will also update the PR accordingly."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:534
+msgid "Rebasing onto another branch"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:536
+msgid "If you have accidentally opened your PR on the wrong branch, or need to target another branch for some reason, you might need to filter out a lot of commits that differ between the old branch (for example ``4.2``) and the new branch (for example ``master``). This can make rebasing difficult and tedious. Fortunately ``git`` has a command just for this situation, ``git rebase --onto``."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:541
+msgid "If your PR was created from the ``4.2`` branch and you want to update it to instead start at ``master`` the following steps *should* fix this in one step:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:548
+msgid "This will take all the commits on your branch *after* the ``4.2`` branch, and then splice them on top of ``master``, ignoring any commits from the ``4.2`` branch not on the ``master`` branch. You may still need to do some fixing, but this command should save you a lot of tedious work removing commits."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:552
+msgid "Just like above for the interactive rebase you need to force push your branch to handle the different changes:"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:559
+msgid "Deleting a Git branch"
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:561
+msgid "After your pull request gets merged, there's one last thing you should do: delete your Git branch for the PR. There won't be issues if you don't delete your branch, but it's good practice to do so. You'll need to do this twice, once for the local branch and another for the remote branch on GitHub."
+msgstr ""
+
+#: ../../docs/community/contributing/pr_workflow.rst:566
 msgid "To delete our better project manager branch locally, use this command:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:540
+#: ../../docs/community/contributing/pr_workflow.rst:572
 msgid "Alternatively, if the branch hadn't been merged yet and we wanted to delete it anyway, instead of ``-d`` you would use ``-D``."
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:543
+#: ../../docs/community/contributing/pr_workflow.rst:575
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr ""
 
-#: ../../docs/community/contributing/pr_workflow.rst:549
+#: ../../docs/community/contributing/pr_workflow.rst:581
 msgid "You can also delete the remote branch from the GitHub PR itself, a button should appear once it has been merged or closed."
 msgstr ""
 

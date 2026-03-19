@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:4
+msgid "Level of Detail (LOD)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:6
+msgid "Level of detail (LOD) is one of the most important ways to optimize rendering (and performance in general) in a 3D project, along with occlusion culling."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:10
+msgid "The LOD node"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:12
+msgid "The ``LOD`` node provides a simple way of automatically switching between visual representations as the node gets closer or further from the :ref:`Camera <class_Camera>`, in order to increase performance."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:16
+msgid "You might:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:18
+msgid "substitute lower poly count meshes"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:19
+msgid "swap several separate meshes for a single approximate mesh"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:20
+msgid "swap from a mesh to a billboard"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:21
+msgid "turn off particle effects, animations, sounds, scripts according to distance"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:22
+msgid "entirely remove visuals in the distance"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:24
+msgid "The ``LOD`` node should be added as a parent to whatever you wish to use to show the object, e.g. a :ref:`MeshInstance <class_MeshInstance>`. You can place several :ref:`Spatial <class_Spatial>` derived nodes as children."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:30
+msgid "The ``LOD`` node will automatically hide and show Spatial children depending on the distance from the ``Camera``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:35
+msgid "You can react to ``NOTIFICATION_VISIBILITY_CHANGED`` in scripts to detect when a node has been shown or hidden."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:38
+msgid "Children are shown in order with the first children shown when closest to the ``Camera``, and the latter children shown when further away."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:41
+msgid "You can determine the distance at which these swaps occur by setting the **lod_range** property of ``Spatial``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:46
+msgid "Children of the ``LOD`` node can in turn have any number of children, of any type. These grandchildren will inherit their visibility as the ``LOD`` node operates."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:50
+msgid "One of the most common cases is to swap between high-poly and low-poly models."
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:56
+#: ../../docs/tutorials/3d/level_of_detail.rst:56
+msgid "From most detailed (left) to least detailed (right), wireframe view"
+msgstr ""
+
+#: ../../docs/tutorials/3d/level_of_detail.rst:60
+msgid "Godot 3.x does not currently generate decimated meshes for you. You are advised to generate several versions of a mesh in your modeling program (e.g. using the Decimate modifier in Blender)."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

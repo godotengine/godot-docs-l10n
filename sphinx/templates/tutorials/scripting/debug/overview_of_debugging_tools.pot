@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,58 +121,70 @@ msgid "The script editor has its own set of debug tools for use with breakpoints
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:84
+msgid "You can create a breakpoint by clicking the gutter in the left of the script editor (on the left of the line numbers). When hovering this gutter, you will see a transparent red dot appearing, which turns into an opaque red dot after the breakpoint is placed by clicking. Click the red dot again to remove the breakpoint. Breakpoints created this way persist across editor restarts, even if the script wasn't saved when exiting the editor."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:91
+msgid "You can also use the ``breakpoint`` keyword in GDScript to create a breakpoint that is stored in the script itself. Unlike breakpoints created by clicking in the gutter, this keyword-based breakpoint is persistent across different machines when using version control."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:98
 msgid "The **Break** button causes a break in the script like a breakpoint would. **Continue** makes the game continue after pausing at a breakpoint. **Step Over** goes to the next line of code, and **Step Into** goes into a function if possible. Otherwise, it does the same thing as **Step Over**."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:89
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:103
 msgid "The **Keep Debugger Open** option keeps the debugger open after a scene has been closed. And the **Debug with External Editor** option lets you debug your game with an external editor."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:95
-msgid "Breakpoints won't break on code if it's :ref:`running in a thread <doc_using_multiple_threads>`. This is a current limitation of the GDScript debugger."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:100
-msgid "Debug project settings"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:102
-msgid "In the project settings, there is a **Debug** category with three subcategories which control different things."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
-msgid "Settings"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
-msgid "These are some general settings such as printing the current FPS to the **Output** panel, the maximum amount of functions when profiling and others."
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:107
+msgid "When the debugger breaks on a breakpoint, a green triangle arrow is visible in the script editor's gutter. This arrow indicates the line of code the debugger broke on."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:113
+msgid "Breakpoints won't break on code if it's :ref:`running in a thread <doc_using_multiple_threads>`. This is a current limitation of the GDScript debugger."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:118
+msgid "Debug project settings"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:120
+msgid "In the project settings, there is a **Debug** category with three subcategories which control different things."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:124
+msgid "Settings"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:126
+msgid "These are some general settings such as printing the current FPS to the **Output** panel, the maximum amount of functions when profiling and others."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:131
 msgid "GDScript"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:115
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:133
 msgid "These settings allow you to toggle specific GDScript warnings, such as for unused variables. You can also turn off warnings completely."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:119
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:137
 msgid "Shapes"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:121
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:139
 msgid "Shapes are where you can adjust the color of shapes that only appear for debugging purposes, such as collision and navigation shapes."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:125
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:143
 msgid "Remote in scene dock"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:127
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:145
 msgid "When running a game in the editor two options appear at the top of the **Scene** dock, **Remote** and **Local**. While using **Remote** you can inspect or change the nodes' parameters in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:133
+#: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:151
 msgid "Some editor settings related to debugging can be found inside the **Editor Settings**, under the **Network > Debug** and **Debugger** sections."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "When Godot users begin crafting their own scenes, they often run into the
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:16
-msgid "They create their first scene and fill it with content only to eventually end up saving branches of their scene into separate scenes as the nagging feeling that they should split things up starts to accumulate. However, they then notice that the hard references they were able to rely on before are no longer possible. Re-using the scene in multiple places creates issues because the node paths do not find their targets and signal connections established in the editor break."
+msgid "They create their first scene and fill it with content only to eventually end up saving branches of their scene into separate scenes as the nagging feeling that they should split things up starts to accumulate. However, they then notice that the hard references they were able to rely on before are no longer possible. Reusing the scene in multiple places creates issues because the node paths do not find their targets and signal connections established in the editor break."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:24
@@ -81,7 +81,7 @@ msgid "Initialize a NodePath."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:150
-msgid "These options hide the points of access from the child node. This in turn keeps the child **loosely coupled** to its environment. One can re-use it in another context without any extra changes to its API."
+msgid "These options hide the points of access from the child node. This in turn keeps the child **loosely coupled** to its environment. One can reuse it in another context without any extra changes to its API."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:156
