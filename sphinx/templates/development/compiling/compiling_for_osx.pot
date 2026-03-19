@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,34 +149,46 @@ msgid "You can then zip the ``osx_template.app`` folder to reproduce the ``osx.z
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:144
-msgid "Cross-compiling for macOS from Linux"
+msgid "Using Pyston for faster development"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:146
-msgid "It is possible to compile for macOS in a Linux environment (and maybe also in Windows using the Windows Subsystem for Linux). For that, you'll need to install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able to use macOS as a target. First, follow the instructions to install it:"
+msgid "You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a JIT-enabled implementation of the Python language (which SCons is written in). Its \"full\" version is currently only compatible with Linux, but Pyston-lite is also compatible with macOS (both x86 and ARM). Pyston can speed up incremental builds significantly, often by a factor between 1.5× and 2×. Pyston can be combined with alternative likers such as LLD or Mold to get even faster builds."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:151
-msgid "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ somewhere on your machine (or download a ZIP file and extract it somewhere), e.g.::"
+#: ../../docs/development/compiling/compiling_for_osx.rst:153
+msgid "To install Pyston-lite, run ``python -m pip install pyston_lite_autoload`` then run SCons as usual. This will automatically load a subset of Pyston's optimizations in any Python program you run. However, this won't bring as much of a performance improvement compared to installing \"full\" Pyston (which currently can't be done on macOS)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:157
-msgid "Follow the instructions to package the SDK: https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:159
-msgid "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/osxcross#installation"
+#: ../../docs/development/compiling/compiling_for_osx.rst:160
+msgid "Cross-compiling for macOS from Linux"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:162
+msgid "It is possible to compile for macOS in a Linux environment (and maybe also in Windows using the Windows Subsystem for Linux). For that, you'll need to install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able to use macOS as a target. First, follow the instructions to install it:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:167
+msgid "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ somewhere on your machine (or download a ZIP file and extract it somewhere), e.g.::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:173
+msgid "Follow the instructions to package the SDK: https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:175
+msgid "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/osxcross#installation"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:178
 msgid "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the OSXCross installation (the same place where you cloned the repository/extracted the zip), e.g.::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:168
+#: ../../docs/development/compiling/compiling_for_osx.rst:184
 msgid "Now you can compile with SCons like you normally would::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:172
+#: ../../docs/development/compiling/compiling_for_osx.rst:188
 msgid "If you have an OSXCross SDK version different from the one expected by the SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` argument::"
 msgstr ""
 

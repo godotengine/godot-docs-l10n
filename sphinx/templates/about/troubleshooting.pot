@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,30 +121,50 @@ msgid "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:95
-msgid "The editor/project freezes or displays glitched visuals after resuming the PC from suspend"
+msgid "The editor or project appears to have washed out colors"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:97
-msgid "This is a known issue on Linux with NVIDIA graphics when using the proprietary driver. There is no definitive fix yet, as suspend on Linux + NVIDIA is often buggy when OpenGL is involved."
+msgid "On Windows, this is usually caused by incorrect OS or monitor settings, as Godot currently does not support :abbr:`HDR (High Dynamic Range)` *output* (even though it may internally render in HDR)."
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:101
-msgid "The NVIDIA driver offers an *experimental* `option to preserve video memory after suspend <https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve this issue. This option has been reported to work better with more recent NVIDIA driver versions."
+msgid "As `most displays are not designed to display SDR content in HDR mode <https://tftcentral.co.uk/articles/heres-why-you-should-only-enable-hdr-mode-on-your-pc-when-you-are-viewing-hdr-content>`__, it is recommended to disable HDR in the Windows settings when not running applications that use HDR output. On Windows 11, this can be done by pressing :kbd:`Windows + Alt + B` (this shortcut is part of the Xbox Game Bar app). To toggle HDR automatically based on applications currently running, you can use `AutoActions <https://github.com/Codectory/AutoActions>`__."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:106
-msgid "To avoid losing work, save scenes in the editor before putting the PC to sleep."
+#: ../../docs/about/troubleshooting.rst:108
+msgid "If you insist on leaving HDR enabled, it is possible to somewhat improve the result by ensuring the display is configured to use :abbr:`HGIG (HDR Gaming Interest Group)` tonemapping (as opposed to :abbr:`DTM (Dynamic Tone Mapping)`), then `using the Windows HDR calibration app <https://support.microsoft.com/en-us/windows/calibrate-your-hdr-display-using-the-windows-hdr-calibration-app-f30f4809-3369-43e4-9b02-9eabebd23f19>`__. It is also strongly recommended to use Windows 11 instead of Windows 10 when using HDR. The end result will still likely be inferior to disabling HDR on the display, though."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:109
-msgid "The project works when run from the editor, but fails to load some files when running from an exported copy"
-msgstr ""
-
-#: ../../docs/about/troubleshooting.rst:111
-msgid "This is usually caused by forgetting to specify a filter for non-resource files in the Export dialog. By default, Godot will only include actual *resources* into the PCK file. Some files commonly used, such as JSON files, are not considered resources. For example, if you load ``test.json`` in the exported project, you need to specify ``*.json`` in the non-resource export filter. See :ref:`doc_exporting_projects_export_mode` for more information."
+#: ../../docs/about/troubleshooting.rst:115
+msgid "Support for HDR *output* is planned in a future release."
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:118
+msgid "The editor/project freezes or displays glitched visuals after resuming the PC from suspend"
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:120
+msgid "This is a known issue on Linux with NVIDIA graphics when using the proprietary driver. There is no definitive fix yet, as suspend on Linux + NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:124
+msgid "The NVIDIA driver offers an *experimental* `option to preserve video memory after suspend <https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve this issue. This option has been reported to work better with more recent NVIDIA driver versions."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:129
+msgid "To avoid losing work, save scenes in the editor before putting the PC to sleep."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:132
+msgid "The project works when run from the editor, but fails to load some files when running from an exported copy"
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:134
+msgid "This is usually caused by forgetting to specify a filter for non-resource files in the Export dialog. By default, Godot will only include actual *resources* into the PCK file. Some files commonly used, such as JSON files, are not considered resources. For example, if you load ``test.json`` in the exported project, you need to specify ``*.json`` in the non-resource export filter. See :ref:`doc_exporting_projects_export_mode` for more information."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:141
 msgid "On Windows, this can also be due to :ref:`case sensitivity <doc_project_organization_case_sensitivity>` issues. If you reference a resource in your script with a different case than on the filesystem, loading will fail once you export the project. This is because the virtual PCK filesystem is case-sensitive, while Windows's filesystem is case-insensitive by default."
 msgstr ""
 

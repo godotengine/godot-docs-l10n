@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "You are free to modify, distribute, redistribute, and remix Godot to your
 msgstr ""
 
 #: ../../docs/about/faq.rst:19
-msgid "All the contents of this accompanying documentation are published under the permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community.\""
+msgid "All the contents of this accompanying documentation are published under the permissive Creative Commons Attribution 3.0 (`CC BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
 
 #: ../../docs/about/faq.rst:23
@@ -269,7 +269,7 @@ msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
 
 #: ../../docs/about/faq.rst:207
-msgid "Move the created shortcut to ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start Menu\\Programs``. This is the user-wide location for shortcuts that will appear in the Start menu. You can also pin Godot in the task bar by right-clicking the executable and choosing **Pin to Task Bar**."
+msgid "Move the created shortcut to ``%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs``. This is the user-wide location for shortcuts that will appear in the Start menu. You can also pin Godot in the task bar by right-clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
 
 #: ../../docs/about/faq.rst:215
@@ -497,122 +497,118 @@ msgid "When creating a non-game application, make sure to enable :ref:`low-proce
 msgstr ""
 
 #: ../../docs/about/faq.rst:439
-msgid "That said, we wouldn't recommend using Godot to create a *mobile* application since low-processor mode isn't supported on mobile platforms yet."
-msgstr ""
-
-#: ../../docs/about/faq.rst:442
 msgid "Check out `Material Maker <https://github.com/RodZill4/material-maker>`__ and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for examples of open source applications made with Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:449
+#: ../../docs/about/faq.rst:446
 msgid "Is it possible to use Godot as a library?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:451
+#: ../../docs/about/faq.rst:448
 msgid "Godot is meant to be used with its editor. We recommend you give it a try, as it will most likely save you time in the long term. There are no plans to make Godot usable as a library, as it would make the rest of the engine more convoluted and difficult to use for casual users."
 msgstr ""
 
-#: ../../docs/about/faq.rst:456
+#: ../../docs/about/faq.rst:453
 msgid "If you want to use a rendering library, look into using an established rendering engine instead. Keep in mind rendering engines usually have smaller communities compared to Godot. This will make it more difficult to find answers to your questions."
 msgstr ""
 
-#: ../../docs/about/faq.rst:462
+#: ../../docs/about/faq.rst:459
 msgid "What user interface toolkit does Godot use?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:464
+#: ../../docs/about/faq.rst:461
 msgid "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface toolkit, rendered using OpenGL ES or Vulkan. This toolkit is exposed in the form of Control nodes, which are used to render the editor (which is written in C++). These Control nodes can also be used in projects from any scripting language supported by Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:471
+#: ../../docs/about/faq.rst:468
 msgid "This custom toolkit makes it possible to benefit from hardware acceleration and have a consistent appearance across all platforms. On top of that, it doesn't have to deal with the LGPL licensing caveats that come with GTK or Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor itself is one of the most complex users of Godot's UI system."
 msgstr ""
 
-#: ../../docs/about/faq.rst:477
+#: ../../docs/about/faq.rst:474
 msgid "This custom UI toolkit :ref:`can't be used as a library <doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create non-game applications by using the editor <doc_faq_non_game_applications>`."
 msgstr ""
 
-#: ../../docs/about/faq.rst:484
+#: ../../docs/about/faq.rst:481
 msgid "Why does Godot not use STL (Standard Template Library)?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:486
+#: ../../docs/about/faq.rst:483
 msgid "Like many other libraries (Qt as an example), Godot does not make use of STL. We believe STL is a great general purpose library, but we had special requirements for Godot."
 msgstr ""
 
-#: ../../docs/about/faq.rst:490
+#: ../../docs/about/faq.rst:487
 msgid "STL templates create very large symbols, which results in huge debug binaries. We use few templates with very short names instead."
 msgstr ""
 
-#: ../../docs/about/faq.rst:491
+#: ../../docs/about/faq.rst:488
 msgid "Most of our containers cater to special needs, like Vector, which uses copy on write and we use to pass data around, or the RID system, which requires O(1) access time for performance. Likewise, our hash map implementations are designed to integrate seamlessly with internal engine types."
 msgstr ""
 
-#: ../../docs/about/faq.rst:492
+#: ../../docs/about/faq.rst:489
 msgid "Our containers have memory tracking built-in, which helps better track memory usage."
 msgstr ""
 
-#: ../../docs/about/faq.rst:493
+#: ../../docs/about/faq.rst:490
 msgid "For large arrays, we use pooled memory, which can be mapped to either a preallocated buffer or virtual memory."
 msgstr ""
 
-#: ../../docs/about/faq.rst:494
+#: ../../docs/about/faq.rst:491
 msgid "We use our custom String type, as the one provided by STL is too basic and lacks proper internationalization support."
 msgstr ""
 
-#: ../../docs/about/faq.rst:497
+#: ../../docs/about/faq.rst:494
 msgid "Why does Godot not use exceptions?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:499
+#: ../../docs/about/faq.rst:496
 msgid "We believe games should not crash, no matter what. If an unexpected situation happens, Godot will print an error (which can be traced even to script), but then it will try to recover as gracefully as possible and keep going."
 msgstr ""
 
-#: ../../docs/about/faq.rst:504
+#: ../../docs/about/faq.rst:501
 msgid "Additionally, exceptions significantly increase binary size for the executable."
 msgstr ""
 
-#: ../../docs/about/faq.rst:508
+#: ../../docs/about/faq.rst:505
 msgid "Why does Godot not enforce RTTI?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:510
+#: ../../docs/about/faq.rst:507
 msgid "Godot provides its own type-casting system, which can optionally use RTTI internally. Disabling RTTI in Godot means considerably smaller binary sizes can be achieved, at a little performance cost."
 msgstr ""
 
-#: ../../docs/about/faq.rst:515
+#: ../../docs/about/faq.rst:512
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:517
+#: ../../docs/about/faq.rst:514
 msgid "While Godot internally for a lot of the heavy performance tasks attempts to use cache coherency as well as possible, we believe most users don't really need to be forced to use DoD practices."
 msgstr ""
 
-#: ../../docs/about/faq.rst:521
+#: ../../docs/about/faq.rst:518
 msgid "DoD is mostly a cache coherency optimization that can only gain you significant performance improvements when dealing with dozens of thousands of objects (which are processed every frame with little modification). As in, if you are moving a few hundred sprites or enemies per frame, DoD won't help you, and you should consider a different approach to optimization."
 msgstr ""
 
-#: ../../docs/about/faq.rst:528
+#: ../../docs/about/faq.rst:525
 msgid "The vast majority of games do not need this and Godot provides handy helpers to do the job for most cases when you do."
 msgstr ""
 
-#: ../../docs/about/faq.rst:531
+#: ../../docs/about/faq.rst:528
 msgid "If a game that really needs to process such large amount of objects is needed, our recommendation is to use C++ and GDNative for the high performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
 
-#: ../../docs/about/faq.rst:536
+#: ../../docs/about/faq.rst:533
 msgid "How can I support Godot development or contribute?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:538
+#: ../../docs/about/faq.rst:535
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr ""
 
-#: ../../docs/about/faq.rst:541
+#: ../../docs/about/faq.rst:538
 msgid "Who is working on Godot? How can I contact you?"
 msgstr ""
 
-#: ../../docs/about/faq.rst:543
+#: ../../docs/about/faq.rst:540
 msgid "See the corresponding page on the `Godot website <https://godotengine.org/contact>`_."
 msgstr ""
 

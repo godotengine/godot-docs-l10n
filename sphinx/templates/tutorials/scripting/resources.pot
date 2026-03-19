@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2026-03-15 20:20-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,35 +192,35 @@ msgstr ""
 msgid "Let's see some examples."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:277
+#: ../../docs/tutorials/scripting/resources.rst:281
 msgid "Resource scripts are similar to Unity's ScriptableObjects. The Inspector provides built-in support for custom resources. If desired though, users can even design their own Control-based tool scripts and combine them with an :ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and editors for their data."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:283
+#: ../../docs/tutorials/scripting/resources.rst:287
 msgid "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with Resource scripts. DataTables are a String mapped to a custom struct, similar to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:319
+#: ../../docs/tutorials/scripting/resources.rst:323
 msgid "Instead of just inlining the Dictionary values, one could also, alternatively..."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:321
+#: ../../docs/tutorials/scripting/resources.rst:325
 msgid "Import a table of values from a spreadsheet and generate these key-value pairs, or..."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:323
+#: ../../docs/tutorials/scripting/resources.rst:327
 msgid "Design a visualization within the editor and create a simple plugin that adds it to the Inspector when you open these types of Resources."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:326
+#: ../../docs/tutorials/scripting/resources.rst:330
 msgid "CurveTables are the same thing, except mapped to an Array of float values or a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:331
+#: ../../docs/tutorials/scripting/resources.rst:335
 msgid "Beware that resource files (\\*.tres/\\*.res) will store the path of the script they use in the file. When loaded, they will fetch and load this script as an extension of their type. This means that trying to assign a subclass, i.e. an inner class of a script (such as using the ``class`` keyword in GDScript) won't work. Godot will not serialize the custom properties on the script subclass properly."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:337
+#: ../../docs/tutorials/scripting/resources.rst:341
 msgid "In the example below, Godot would load the ``Node`` script, see that it doesn't extend ``Resource``, and then determine that the script failed to load for the Resource object since the types are incompatible."
 msgstr ""
 
