@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -168,7 +168,11 @@ msgid "**Canvas** displays the 2D scene as a background to the 3D scene. This ca
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:158
-msgid "**Keep** does not draw any sky, keeping what was present on previous frames instead. This improves performance in purely indoor scenes, but creates a \"hall of mirrors\" visual glitch if the sky is visible at any time. - **Camera Feed** displays a :ref:`class_CameraFeed` from a physical camera as the background, useful for AR games on mobile devices."
+msgid "**Keep** does not draw any sky, keeping what was present on previous frames instead. This improves performance in purely indoor scenes, but creates a \"hall of mirrors\" visual glitch if the sky is visible at any time."
+msgstr ""
+
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:161
+msgid "**Camera Feed** displays a :ref:`class_CameraFeed` from a physical camera as the background, useful for AR games on mobile devices."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:165
@@ -324,11 +328,11 @@ msgid "**Exposure:** Adjusts the brightness of values before they are provided t
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:309
-msgid "**White:** The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, recommended values are between ``6.0`` and ``8.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. **White** is not available when using **Linear**. If you're using AGX, the mobile renderer, and HDR 2D is disabled, then the value set here will be ignored, and a value of ``2.0`` will be used instead."
+msgid "**White:** The white reference value for tonemapping, which indicates where bright white is located in the scale of values provided to the tonemapper. For photorealistic lighting, recommended values are between ``6.0`` and ``8.0``. Higher values result in less blown out highlights, but may make the scene appear lower contrast. **White** is not available when using **Linear**. If you're using AgX, the mobile renderer, and HDR 2D is disabled, then the value set here will be ignored, and a value of ``2.0`` will be used instead."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
-msgid "**AGX Contrast:** Only available when using AGX. Increasing this makes dark values darker, and bright values brighter. It creates better results than the contrast option in the adjustment section at no additional performance cost."
+msgid "**AGX Contrast:** Only available when using AgX. Increasing this makes dark values darker, and bright values brighter. It creates better results than the contrast option in the adjustment section at no additional performance cost."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
@@ -350,7 +354,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:339
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:498
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:569
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:945
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:946
 msgid "*This feature is only available when using the Forward+ renderer, not Mobile or Compatibility.*"
 msgstr ""
 
@@ -869,7 +873,7 @@ msgid "Camera attribute options"
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:900
-msgid "Godot has two kinds of camera attributes, physical and practical. When using CameraAttributesPhysical instead of CameraAttributesPractical, depth of field is automatically computed from the camera attributes' focus distance, focal length, and aperture. In addition, Frutsum options are available."
+msgid "Godot has two kinds of camera attributes, physical and practical. When using CameraAttributesPhysical instead of CameraAttributesPractical, depth of field is automatically computed from the camera attributes' focus distance, focal length, and aperture. In addition, Frustum options are available."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:906
@@ -881,6 +885,7 @@ msgid "This effect simulates focal distance on cameras. It blurs objects behind 
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:914
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:927
 msgid "The **Amount** parameter controls the amount of blur. For larger blurs, tweaking the depth of field quality in the advanced project settings may be needed to avoid artifacts."
 msgstr ""
 
@@ -892,66 +897,62 @@ msgstr ""
 msgid "This effect simulates focal distance on cameras. It blurs objects close to the camera (acts in the opposite direction as far blur). It has an initial **Distance** with a **Transition** region (in world units):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:927
-msgid "The **Amount** parameter controls the amount of blur. For larger blurs, tweaking the **Quality** may be needed in order to avoid artifacts."
-msgstr ""
-
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:930
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:931
 msgid "It is common to use both blurs together to focus the viewer's attention on a given object, or create a so-called `\"tilt shift\" effect <https://en.wikipedia.org/wiki/Miniature_faking>`__."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:937
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:938
 msgid "Exposure"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:939
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:940
 msgid "This multiplies the overall scene brightness visible from the camera. Higher values result in a visually brighter scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:943
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:944
 msgid "Auto Exposure"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:948
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:949
 msgid "Even though, in most cases, lighting and texturing are heavily artist controlled, Godot supports a basic high dynamic range implementation with the auto exposure mechanism. This is generally used to add realism when combining interior areas with low light and bright outdoor areas. Auto exposure simulates the camera (or eye) in an effort to adapt between light and dark locations and their different amounts of light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:957
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:958
 msgid "Auto exposure needs to evaluate the scene's brightness every frame, which has a moderate performance cost. Therefore, it's recommended to leave Auto Exposure disabled if it doesn't make much of a difference in your scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:963
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:964
 msgid "The simplest way to use auto exposure is to make sure outdoor lights (or other strong lights) have energy beyond 1.0. This is done by tweaking their **Energy** multiplier (on the Light itself). To make it consistent, the **Sky** usually needs to use the energy multiplier too, to match with the directional light. Normally, values between 3.0 and 6.0 are enough to simulate indoor-outdoor conditions."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:969
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:970
 msgid "By combining Auto Exposure with :ref:`doc_environment_and_post_processing_glow` post-processing, pixels that go over the tonemap **White** will bleed to the glow buffer, creating the typical bloom effect in photography."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:975
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:976
 msgid "The user-controllable values in the Auto Exposure section come with sensible defaults, but you can still tweak them:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:980
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:981
 msgid "**Scale:** Value to scale the lighting. Higher values produce brighter images, and lower values produce darker ones."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:982
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:983
 msgid "**Min Sensitivity / Min Exposure Value:** Minimum luminance that auto exposure will aim to adjust for (in ISO when using CameraAttributesPractical, or in EV100 when using CameraAttributesPhysical). Luminance is the average of the light in all the pixels of the screen."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:986
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:987
 msgid "**Max Sensitivity / Max Exposure Value:** Maximum luminance that auto exposure will aim to adjust for (in ISO when using CameraAttributesPractical, or in EV100 when using CameraAttributesPhysical)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:989
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:990
 msgid "**Speed:** Speed at which luminance corrects itself. The higher the value, the faster luminance correction happens. High values may be more suited to fast-paced games, but can be distracting in some scenarios."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:993
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:994
 msgid "When using CameraAttributesPractical, exposure is set using *sensitivity* defined in ISO instead of an exposure value in EV100. Typical ISO values are between 50 and 3200, with higher values resulting in higher final exposure. In real life, daytime photography generally uses ISO values between 100 and 800."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:1000
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:1001
 msgid "See :ref:`doc_physical_light_and_camera_units` if you wish to use real world units to configure your camera's exposure, field of view and depth of field."
 msgstr ""

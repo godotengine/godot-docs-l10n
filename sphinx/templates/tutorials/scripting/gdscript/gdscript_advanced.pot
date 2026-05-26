@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -246,61 +246,69 @@ msgid "Custom iterators"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:420
-msgid "You can create custom iterators in case the default ones don't quite meet your needs by overriding the Variant class's ``_iter_init``, ``_iter_next``, and ``_iter_get`` functions in your script. An example implementation of a forward iterator follows:"
+msgid "You can create custom iterators in case the default ones don't quite meet your needs by overriding ``_iter_init()``, ``_iter_next()``, and ``_iter_get()`` functions in your script. An example implementation of a forward iterator follows:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:452
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:453
 msgid "And it can be used like any other iterator:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:460
-msgid "Make sure to reset the state of the iterator in ``_iter_init``, otherwise nested for-loops that use custom iterators will not work as expected."
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:461
+msgid "It is possible but discouraged to store the state in a member variable. Multiple states are necessary in cases such as nested loops where the same iterator instance is used simultaneously. The ``iter`` parameter in ``_iter_init()`` and ``_iter_next()`` is a single-element array so that updates can persist. Whereas in ``_iter_get()``, the state is is not wrapped because it is supposed to be read-only."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:464
-msgid "Duck typing"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:466
-msgid "One of the most difficult concepts to grasp when moving from a statically typed language to a dynamic one is duck typing. Duck typing makes overall code design much simpler and straightforward to write, but it's not obvious how it works."
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:468
+msgid "Returning ``true`` from ``_iter_init()`` and ``_iter_next()`` indicates that the iterator is valid. Returning ``false`` will terminate the loop."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:471
+msgid "For more details see :ref:`_iter_init() <class_Object_private_method__iter_init>`, :ref:`_iter_next() <class_Object_private_method__iter_next>`, and :ref:`_iter_get() <class_Object_private_method__iter_get>`."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:476
+msgid "Duck typing"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:478
+msgid "One of the most difficult concepts to grasp when moving from a statically typed language to a dynamic one is duck typing. Duck typing makes overall code design much simpler and straightforward to write, but it's not obvious how it works."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:483
 msgid "As an example, imagine a situation where a big rock is falling down a tunnel, smashing everything on its way. The code for the rock, in a statically typed language would be something like:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:482
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:494
 msgid "This way, everything that can be smashed by a rock would have to inherit Smashable. If a character, enemy, piece of furniture, small rock were all smashable, they would need to inherit from the class Smashable, possibly requiring multiple inheritance. If multiple inheritance was undesired, then they would have to inherit a common class like Entity. Yet, it would not be very elegant to add a virtual method ``smash()`` to Entity only if a few of them can be smashed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:490
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:502
 msgid "With dynamically typed languages, this is not a problem. Duck typing makes sure you only have to define a ``smash()`` function where required and that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:499
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:511
 msgid "And that's it. If the object that hit the big rock has a smash() method, it will be called. No need for inheritance or polymorphism. Dynamically typed languages only care about the instance having the desired method or member, not what it inherits or the class type. The definition of Duck Typing should make this clearer:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:505
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:517
 msgid "*\"When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck\"*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:508
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:520
 msgid "In this case, it translates to:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:510
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:522
 msgid "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:512
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:524
 msgid "Yes, we should call it Hulk typing instead."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:514
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:526
 msgid "It's possible that the object being hit doesn't have a smash() function. Some dynamically typed languages simply ignore a method call when it doesn't exist, but GDScript is stricter, so checking if the function exists is desirable:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:525
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:537
 msgid "Then, define that method and anything the rock touches can be smashed."
 msgstr ""

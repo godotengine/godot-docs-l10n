@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -120,10 +120,14 @@ msgstr ""
 msgid ":ref:`Perfetto <doc_profiler_perfetto>`"
 msgstr ""
 
-#: ../../docs/engine_details/development/profiling/index.rst:92
+#: ../../docs/engine_details/development/profiling/index.rst:94
+msgid "Perfetto is the default tracing system for Android, so pre-built export templates with Perfetto built-in and enabled are provided from the `GitHub Releases page <https://github.com/godotengine/godot-builds/releases>`__."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:98
 msgid "In order to use either of them, you'll need to build the engine from source. If you've never done this before, please read :ref:`these docs <doc_compiling_index>` for the platform you want to profile on. You'll need to perform the same steps here, but with some additional arguments for ``scons``."
 msgstr ""
 
-#: ../../docs/engine_details/development/profiling/index.rst:99
+#: ../../docs/engine_details/development/profiling/index.rst:105
 msgid "All recommended profilers"
 msgstr ""

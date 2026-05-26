@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -190,91 +190,91 @@ msgid "Click on result categories on the left to highlight them in the CPU and G
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:166
-msgid "You can switch the result display between a time value (in milliseconds per frame) or a percentage of the target frametime (which is currently hardcoded to 16.67 milliseconds, or 60 FPS)."
+msgid "You can switch the result display between a time value (in milliseconds per frame) or a percentage of the target frametime. The :ref:`debugger/profiler_target_fps <class_EditorSettings_property_debugger/profiler_target_fps>` editor setting controls the target frametime value according to the specified FPS."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:170
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:171
 msgid "If framerate spikes occur during profiling, this can cause the graph to be poorly scaled. Disable **Fit to Frame** so that the graph will zoom onto the 60 FPS+ portion."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:176
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:177
 msgid "Remember that Visual Profiler results can vary **heavily** based on viewport resolution, which is determined by the window size if using the ``disabled`` or ``canvas_items`` :ref:`stretch modes <doc_multiple_resolutions>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:181
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:182
 msgid "When comparing results across different runs, make sure to use the same viewport size for all runs."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:184
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:185
 msgid "Visual Profiler is supported when using any rendering method (Forward+, Mobile or Compatibility), but the reported categories will vary depending on the current rendering method as well as the enabled graphics features. For example, when using Forward+, a simple 2D scene with shadow-casting lights will result in the following categories appearing:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:190
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:193
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:191
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:194
 msgid "Example results from a 2D scene in the Visual Profiler"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:195
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:196
 msgid "To give another example with Forward+, a 3D scene with shadow-casting lights and various effects enabled will result in the following categories enabled:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:198
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:201
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:199
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:202
 msgid "Example results from a 3D scene in the Visual Profiler"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:203
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:204
 msgid "Notice how in the 3D example, several of the categories have **(Parallel)** appended to their name. This hints that multiple tasks are being performed in parallel on the GPU. This generally means that disabling only one of the features involved won't improve performance as much as anticipated, as the other task still needs to be performed sequentially."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:211
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:212
 msgid "The Visual Profiler is not supported when using the Compatibility renderer on macOS, due to platform limitations."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:215
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:216
 msgid "Network Profiler"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:217
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:218
 msgid "The Network Profiler contains a list of all the nodes that communicate over the multiplayer API and, for each one, some counters on the amount of incoming and outgoing network interactions. It also features a bandwidth meter that displays the total bandwidth usage at any given moment."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:224
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:225
 msgid "The bandwidth meter does **not** take the :ref:`doc_high_level_multiplayer` API's own compression system into account. This means that changing the compression algorithm used will not change the metrics reported by the bandwidth meter."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:230
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:231
 msgid "Monitors"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:232
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:233
 msgid "The monitors are graphs of several aspects of the game while it's running such as FPS, memory usage, how many nodes are in a scene and more. All monitors keep track of stats automatically, so even if one monitor isn't open while the game is running, you can open it later and see how the values changed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:239
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:240
 msgid "In addition to the default performance monitors, you can also create :ref:`custom performance monitors <doc_custom_performance_monitors>` to track arbitrary values in your project."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:244
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:245
 msgid "Video RAM"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:246
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:247
 msgid "The **Video RAM** tab shows the video RAM usage of the game while it is running. It provides a list of every resource using video RAM by resource path, the type of resource it is, what format it is in, and how much Video RAM that resource is using. There is also a total video RAM usage number at the top right of the panel."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:254
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:255
 msgid "Misc"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:256
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:257
 msgid "The **Misc** tab contains tools to identify the control nodes you are clicking at runtime:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:259
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:260
 msgid "**Clicked Control** tells you where the clicked node is in the scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:260
+#: ../../docs/tutorials/scripting/debug/debugger_panel.rst:261
 msgid "**Clicked Control Type** tells you the type of the node you clicked is."
 msgstr ""

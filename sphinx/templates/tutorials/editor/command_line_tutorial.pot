@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -296,7 +296,7 @@ msgid "``--rendering-method <renderer>``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:109
-msgid "|release| Renderer name. Requires driver support."
+msgid "|release| Renderer name. Valid values are ``forward_plus``, ``mobile``, and ``gl_compatibility``. Requires driver support."
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:111
@@ -312,7 +312,7 @@ msgid "``--gpu-index <device_index>``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:113
-msgid "|release| Use a specific GPU (run with ``--verbose`` to get available device list)."
+msgid "|release| Use a specific GPU (only available on the Forward+/Mobile renderers; run with ``--verbose`` to get available device list)."
 msgstr ""
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:115

@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:4
+msgid "XR Terminology"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:6
+msgid "This page defines how terms such as *XR*, *VR*, and *AR* are used within Godot."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:8
+msgid "These terms are not always used consistently across the industry. In Godot, we use clear and practical definitions to avoid ambiguity and to better reflect how these technologies are actually implemented."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:13
+msgid "XR (Extended Reality)"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:15
+msgid "**XR** is an umbrella term that covers all extended reality technologies supported by Godot."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:17
+msgid "In practice, XR refers to the complete system exposed through the :ref:`XRServer <class_xrserver>` and related APIs. This system abstracts away platform differences and provides a unified way to build XR applications."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:21
+msgid "XR includes:"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:23
+msgid "Virtual Reality (VR)"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:24
+msgid "Augmented Reality (AR)"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:26
+msgid "From a development perspective, XR is the entry point for working with both fully virtual experiences and those that combine virtual and real-world elements."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:30
+msgid "VR (Virtual Reality)"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:38
+msgid "**Virtual Reality (VR)** refers to fully **immersive** experiences where the user is placed inside a completely virtual environment."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:41
+msgid "When using VR, the user does not see the real world. Instead, everything they see is rendered by the application, and their movement is tracked and applied to the virtual camera and controllers."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:45
+msgid "In Godot, VR typically involves:"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:47
+msgid "Head-mounted displays (HMDs)"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:48
+msgid "Fully virtual 3D scenes"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:49
+msgid "6DOF (six degrees of freedom) tracking for head and controllers"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:51
+msgid "This is the most common use of XR in Godot. See :ref:`Setting up XR <doc_setting_up_xr>` for how to get started."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:56
+msgid "Even in VR applications, passthrough can be used if supported by the headset."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:58
+msgid "In this case, passthrough is typically used to reveal specific real-world elements, such as a keyboard, mouse, or other peripherals, while the rest of the experience remains fully virtual."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:62
+msgid "This is a hybrid use case and differs from Augmented Reality, as passthrough is not used to place virtual content into the real world, but to selectively expose parts of the real world within a VR experience."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:67
+msgid "AR (Augmented Reality)"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:75
+msgid "**Augmented Reality (AR)** refers to experiences where virtual content is overlaid onto the real world."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:78
+msgid "The user continues to see their physical surroundings, while virtual objects are rendered in a way that makes them appear part of that environment."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:81
+msgid "In Godot, AR is treated as a single concept, regardless of the type of device used. This includes XR headsets using camera passthrough, see-through glasses with displays, and handheld devices such as phones and tablets."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:85
+msgid "For XR devices and AR glasses that support standards such as OpenXR or WebXR, AR functionality is available through the XR system. In these cases, applications can run across different devices with minimal changes. Passthrough on VR headsets is one example of this, and is simply a technical method used to enable AR capabilities on such devices."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:90
+msgid "Outside of Godot, this type of experience is sometimes referred to as \"Mixed Reality (MR)\". In Godot documentation, this is treated as Augmented Reality to avoid ambiguity. Passthrough is considered an implementation detail, not a separate category."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:94
+msgid "See :ref:`AR passthrough <doc_openxr_passthrough>` for an example of AR using the XR system."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:98
+msgid "Handheld platforms such as phones and tablets currently do not provide OpenXR support."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:100
+msgid "Instead, AR functionality is exposed through proprietary APIs and requires platform-specific plugins:"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:103
+msgid "`ARCore plugin (Android) <https://github.com/godotvr/godot_arcore>`_"
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:105
+msgid "This results in platform-specific implementations that are not fully portable."
+msgstr ""
+
+#: ../../docs/tutorials/xr/xr_terminology.rst:107
+msgid "OpenXR is capable of supporting handheld AR. If adopted by platform vendors, this would allow AR applications to run across phones, headsets, and glasses using a shared codebase."
+msgstr ""

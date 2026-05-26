@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -116,37 +116,41 @@ msgid ":ref:`printraw() <class_@GlobalScope_method_printraw>`: Same as ``print()
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/output_panel.rst:83
-msgid ":ref:`print_stack() <class_@GDScript_method_print_stack>`: Print a stack trace from the current location. Only supported when running from the editor, or when the project is exported in debug mode."
+msgid ":ref:`print_debug() <class_@GDScript_method_print_debug>`: Same as ``print()``, but adds the current stack frame on a new line at the end. Only supported when running from the editor, or when the project is exported in debug mode."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/output_panel.rst:86
+msgid ":ref:`print_stack() <class_@GDScript_method_print_stack>`: Print a stack trace from the current location. Only supported when running from the editor, or when the project is exported in debug mode."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:89
 msgid ":ref:`print_tree() <class_Node_method_print_tree>`: Prints the scene tree relative to the current node. Useful for debugging node structures created at runtime."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:88
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:91
 msgid ":ref:`print_tree_pretty() <class_Node_method_print_tree_pretty>`: Same as ``print_tree()``, but with Unicode characters for a more tree-like appearance. This relies on `box-drawing characters <https://en.wikipedia.org/wiki/Box-drawing_characters>`__, so it may not render correctly with all fonts."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:93
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:96
 msgid "To get more advanced formatting capabilities, consider using :ref:`doc_gdscript_printf` along with the above printing functions."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:98
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:101
 msgid "The engine's logging facilities are covered in the :ref:`logging <doc_logging>` documentation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:104
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:107
 msgid "Printing rich text"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:106
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:109
 msgid "Using :ref:`print_rich() <class_@GlobalScope_method_print_rich>`, you can print rich text to the editor Output panel and standard output (visible when the user runs the project from a terminal). This works by converting the BBCode to `ANSI escape codes <https://en.wikipedia.org/wiki/ANSI_escape_code>`__ that the terminal understands."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:112
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:115
 msgid "In the editor output, all BBCode tags are recognized as usual. In the terminal output, only a subset of BBCode tags will work, as documented in the linked ``print_rich()`` method description above. In the terminal, the colors will look different depending on the user's theme, while colors in the editor will use the same colors as they would in the project."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/debug/output_panel.rst:120
+#: ../../docs/tutorials/scripting/debug/output_panel.rst:123
 msgid "ANSI escape code support varies across terminal emulators. The exact colors displayed in terminal output also depend on the terminal theme chosen by the user."
 msgstr ""

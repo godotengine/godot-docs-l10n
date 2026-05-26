@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -332,101 +332,137 @@ msgid "BlendSpace1D works just like BlendSpace2D, but in one dimension (a line).
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:340
-msgid "For better blending"
+msgid "Sync mode"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:342
-msgid "For the blending results to be deterministic (reproducible and always consistent), the blended property values must have a specific initial value. For example, in the case of two animations to be blended, if one animation has a property track and the other does not, the blended animation is calculated as if the latter animation had a property track with the initial value."
+msgid "Both ``BlendSpace1D`` and ``BlendSpace2D`` have a **Sync Mode** property that controls how animations advance when they are blended. This replaces the older boolean ``sync`` property and offers more precise control."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:347
-msgid "When using Position/Rotation/Scale 3D tracks for Skeleton3D bones, the initial value is Bone Rest. For other properties, the initial value is ``0`` and if the track is present in the ``RESET`` animation, the value of its first keyframe is used instead."
+msgid "There are four modes available:"
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:349
+msgid "**None** (default): Inactive animations are frozen and do not advance. Only the currently active (highest-weight) animation moves forward."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:350
+msgid "**Independent**: Inactive animations advance with a weight of ``0``. This matches the behavior of the old ``sync = true`` setting."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:351
-msgid "For example, the following AnimationPlayer has two animations, but one of them lacks a Property track for Position."
+msgid "**Cyclic Mutable**: All animations are time-scaled so their phases stay aligned. The shared cycle length is computed dynamically from the active blend weights, which means a single unblended animation plays at its normal speed. This is useful when all your animations have the same logical cycle (e.g. locomotion loops) but may differ slightly in length."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:355
-msgid "This means that the animation lacking that will treat those Positions as ``Vector2(0, 0)``."
+#: ../../docs/tutorials/animation/animation_tree.rst:354
+msgid "**Cyclic Constant**: All animations are time-scaled to complete one full cycle in exactly **Cyclic Length** seconds, regardless of their individual lengths. Set the ``cyclic_length`` property to your desired cycle duration (must be greater than ``0``)."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:359
-msgid "This problem can be solved by adding a Property track for Position as an initial value to the ``RESET`` animation."
+msgid "Cyclic sync modes require that all blend points use :ref:`AnimationNodeAnimation <class_AnimationNodeAnimation>` with a finite, immutable length. If any blend point uses a different node type, a warning will be shown and cyclic sync will not take effect:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:365
-msgid "Be aware that the ``RESET`` animation exists to define the default pose when loading an object originally. It is assumed to have only one frame and is not expected to be played back using the timeline."
+#: ../../docs/tutorials/animation/animation_tree.rst:367
+msgid "When using either cyclic mode with animations of different lengths, applying an :ref:`AnimationNodeTimeSeek <class_AnimationNodeTimeSeek>` to the output will break synchronization. In that case, use :ref:`AnimationNodeAnimation.use_custom_timeline <class_AnimationNodeAnimation_property_use_custom_timeline>` to normalize animation lengths before syncing."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:368
-msgid "Also keep in mind that the Rotation 3D tracks and the Property tracks for 2D rotation with Interpolation Type set to Linear Angle or Cubic Angle will prevent rotations greater than 180 degrees from the initial value as blended animation."
+#: ../../docs/tutorials/animation/animation_tree.rst:373
+msgid "For better blending"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:372
-msgid "This can be useful for Skeleton3Ds to prevent the bones penetrating the body when blending animations. Therefore, Skeleton3D's Bone Rest values should be as close to the midpoint of the movable range as possible. **This means that for humanoid models, it is preferable to import them in a T-pose**."
-msgstr ""
-
-#: ../../docs/tutorials/animation/animation_tree.rst:378
-msgid "You can see that the shortest rotation path from Bone Rests is prioritized rather than the shortest rotation path between animations."
+#: ../../docs/tutorials/animation/animation_tree.rst:375
+msgid "For the blending results to be deterministic (reproducible and always consistent), the blended property values must have a specific initial value. For example, in the case of two animations to be blended, if one animation has a property track and the other does not, the blended animation is calculated as if the latter animation had a property track with the initial value."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:380
-msgid "If you need to rotate Skeleton3D itself more than 180 degrees by blend animations for movement, you can use Root Motion."
+msgid "When using Position/Rotation/Scale 3D tracks for Skeleton3D bones, the initial value is Bone Rest. For other properties, the initial value is ``0`` and if the track is present in the ``RESET`` animation, the value of its first keyframe is used instead."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:383
-msgid "Root motion"
-msgstr ""
-
-#: ../../docs/tutorials/animation/animation_tree.rst:385
-msgid "When working with 3D animations, a popular technique is for animators to use the root skeleton bone to give motion to the rest of the skeleton. This allows animating characters in a way where steps actually match the floor below. It also allows precise interaction with objects during cinematics."
+#: ../../docs/tutorials/animation/animation_tree.rst:384
+msgid "For example, the following AnimationPlayer has two animations, but one of them lacks a Property track for Position."
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:388
+msgid "This means that the animation lacking that will treat those Positions as ``Vector2(0, 0)``."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:392
+msgid "This problem can be solved by adding a Property track for Position as an initial value to the ``RESET`` animation."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:398
+msgid "Be aware that the ``RESET`` animation exists to define the default pose when loading an object originally. It is assumed to have only one frame and is not expected to be played back using the timeline."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:401
+msgid "Also keep in mind that the Rotation 3D tracks and the Property tracks for 2D rotation with Interpolation Type set to Linear Angle or Cubic Angle will prevent rotations greater than 180 degrees from the initial value as blended animation."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:405
+msgid "This can be useful for Skeleton3Ds to prevent the bones penetrating the body when blending animations. Therefore, Skeleton3D's Bone Rest values should be as close to the midpoint of the movable range as possible. **This means that for humanoid models, it is preferable to import them in a T-pose**."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:411
+msgid "You can see that the shortest rotation path from Bone Rests is prioritized rather than the shortest rotation path between animations."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:413
+msgid "If you need to rotate Skeleton3D itself more than 180 degrees by blend animations for movement, you can use Root Motion."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:416
+msgid "Root motion"
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:418
+msgid "When working with 3D animations, a popular technique is for animators to use the root skeleton bone to give motion to the rest of the skeleton. This allows animating characters in a way where steps actually match the floor below. It also allows precise interaction with objects during cinematics."
+msgstr ""
+
+#: ../../docs/tutorials/animation/animation_tree.rst:421
 msgid "When playing back the animation in Godot, it is possible to select this bone as the *root motion track*. Doing so will cancel the bone transformation visually (the animation will stay in place)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:393
+#: ../../docs/tutorials/animation/animation_tree.rst:426
 msgid "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree <class_AnimationTree>` API as a transform:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:420
+#: ../../docs/tutorials/animation/animation_tree.rst:453
 msgid "This can be fed to functions such as :ref:`CharacterBody3D.move_and_slide <class_CharacterBody3D_method_move_and_slide>` to control the character movement."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:422
+#: ../../docs/tutorials/animation/animation_tree.rst:455
 msgid "There is also a tool node, ``RootMotionView``, you can place a scene that will act as a custom floor for your character and animations (this node is disabled by default during the game)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:428
+#: ../../docs/tutorials/animation/animation_tree.rst:461
 msgid "Controlling from code"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:430
+#: ../../docs/tutorials/animation/animation_tree.rst:463
 msgid "After building the tree and previewing it, the only question remaining is \"How is all this controlled from code?\"."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:432
+#: ../../docs/tutorials/animation/animation_tree.rst:465
 msgid "Keep in mind that the animation nodes are just resources, so they are shared between all instances using them. Setting values in the nodes directly will affect all instances of the scene that uses this ``AnimationTree``. This is generally undesirable, but does have some cool use cases, e.g. you can copy and paste parts of your animation tree, or reuse nodes with a complex layout (such as a StateMachine or blend space) in different animation trees."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:437
+#: ../../docs/tutorials/animation/animation_tree.rst:470
 msgid "The actual animation data is contained in the ``AnimationTree`` node and is accessed via properties. Check the \"Parameters\" section of the ``AnimationTree`` node to see all the parameters that can be modified in real-time:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:442
+#: ../../docs/tutorials/animation/animation_tree.rst:475
 msgid "This is handy because it makes it possible to animate them from an ``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing very complex animation logic."
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:445
+#: ../../docs/tutorials/animation/animation_tree.rst:478
 msgid "To modify these values from code, you must obtain the property path. You can find them by hovering your mouse over any of the parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:449
+#: ../../docs/tutorials/animation/animation_tree.rst:482
 msgid "Then you can set or read them:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/animation_tree.rst:462
+#: ../../docs/tutorials/animation/animation_tree.rst:495
 msgid "Advance Expressions from a StateMachine will not be found under the parameters. This is because they are held in another script rather than the AnimationTree itself. Advance `Conditions` will be found under parameters."
 msgstr ""

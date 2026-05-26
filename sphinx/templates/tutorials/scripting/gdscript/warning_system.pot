@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -44,5 +44,9 @@ msgid "To ignore multiple warnings in a region within a file, use the :ref:`@war
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/warning_system.rst:40
+msgid "The names of the warnings to ignore match the names of the project settings. For example, to ignore the warning configured by the :ref:`debug/gdscript/warnings/unused_variable <class_ProjectSettings_property_debug/gdscript/warnings/unused_variable>` project setting, use ``@warning_ignore(\"unused_variable\")``. An autocompletion dialog displays when entering a warning name in the annotation, listing all available warnings."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdscript/warning_system.rst:47
 msgid "Warnings won't prevent the game from running, but you can turn them into errors if you'd like. This way your game won't compile unless you fix all warnings. Head to the ``GDScript`` section of the Project Settings to turn on this option to the warning that you want. Here's the same file as the previous example with the warning ``unused_variable`` as an error turned on:"
 msgstr ""

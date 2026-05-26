@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -209,61 +209,41 @@ msgid "If you still wish to force sharpening or FXAA on other applications, it's
 msgstr ""
 
 #: ../../docs/tutorials/troubleshooting.rst:194
-msgid "The editor or project appears to have washed out colors"
-msgstr ""
-
-#: ../../docs/tutorials/troubleshooting.rst:196
-msgid "On Windows, this is usually caused by incorrect OS or monitor settings, as Godot currently does not support :abbr:`HDR (High Dynamic Range)` *output* (even though it may internally render in HDR)."
-msgstr ""
-
-#: ../../docs/tutorials/troubleshooting.rst:200
-msgid "As `most displays are not designed to display SDR content in HDR mode <https://tftcentral.co.uk/articles/heres-why-you-should-only-enable-hdr-mode-on-your-pc-when-you-are-viewing-hdr-content>`__, it is recommended to disable HDR in the Windows settings when not running applications that use HDR output. On Windows 11, this can be done by pressing :kbd:`Windows + Alt + B` (this shortcut is part of the Xbox Game Bar app). To toggle HDR automatically based on applications currently running, you can use `AutoActions <https://github.com/Codectory/AutoActions>`__."
-msgstr ""
-
-#: ../../docs/tutorials/troubleshooting.rst:207
-msgid "If you insist on leaving HDR enabled, it is possible to somewhat improve the result by ensuring the display is configured to use :abbr:`HGIG (HDR Gaming Interest Group)` tonemapping (as opposed to :abbr:`DTM (Dynamic Tone Mapping)`), then `using the Windows HDR calibration app <https://support.microsoft.com/en-us/windows/calibrate-your-hdr-display-using-the-windows-hdr-calibration-app-f30f4809-3369-43e4-9b02-9eabebd23f19>`__. It is also strongly recommended to use Windows 11 instead of Windows 10 when using HDR. The end result will still likely be inferior to disabling HDR on the display, though."
-msgstr ""
-
-#: ../../docs/tutorials/troubleshooting.rst:217
-msgid "Support for HDR *output* is planned in a future release."
-msgstr ""
-
-#: ../../docs/tutorials/troubleshooting.rst:220
 msgid "The editor/project freezes or displays glitched visuals after resuming the PC from suspend"
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:222
+#: ../../docs/tutorials/troubleshooting.rst:196
 msgid "This is a known issue on Linux with NVIDIA graphics when using the proprietary driver. There is no definitive fix yet, as suspend on Linux + NVIDIA is often buggy when OpenGL or Vulkan is involved. The Compatibility rendering method (which uses OpenGL) is generally less prone to suspend-related issues compared to the Forward+ and Mobile renderers (which use Vulkan)."
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:228
+#: ../../docs/tutorials/troubleshooting.rst:202
 msgid "The NVIDIA driver offers an *experimental* `option to preserve video memory after suspend <https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve this issue. This option has been reported to work better with more recent NVIDIA driver versions."
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:233
+#: ../../docs/tutorials/troubleshooting.rst:207
 msgid "To avoid losing work, save scenes in the editor before putting the PC to sleep."
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:236
+#: ../../docs/tutorials/troubleshooting.rst:210
 msgid "The project works when run from the editor, but fails to load some files when running from an exported copy"
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:238
+#: ../../docs/tutorials/troubleshooting.rst:212
 msgid "This is usually caused by forgetting to specify a filter for non-resource files in the Export dialog. By default, Godot will only include actual *resources* into the PCK file. Some files commonly used, such as JSON files, are not considered resources. For example, if you load ``test.json`` in the exported project, you need to specify ``*.json`` in the non-resource export filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:245
+#: ../../docs/tutorials/troubleshooting.rst:219
 msgid "Also, note that files and folders whose names begin with a period will never be included in the exported project. This is done to prevent version control folders like ``.git`` from being included in the exported PCK file."
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:249
+#: ../../docs/tutorials/troubleshooting.rst:223
 msgid "On Windows, this can also be due to :ref:`case sensitivity <doc_project_organization_case_sensitivity>` issues. If you reference a resource in your script with a different case than on the filesystem, loading will fail once you export the project. This is because the virtual PCK filesystem is case-sensitive, while Windows's filesystem is case-insensitive by default."
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:256
+#: ../../docs/tutorials/troubleshooting.rst:230
 msgid "The project crashes frequently or instantly after opening it from the project manager"
 msgstr ""
 
-#: ../../docs/tutorials/troubleshooting.rst:258
+#: ../../docs/tutorials/troubleshooting.rst:232
 msgid "This could be caused by a number of things such as an editor plugin, GDExtension addon, or something else. In this scenario it's recommended that you open the project in recovery mode, and attempt to find and fix whatever is causing the crashes. See the :ref:`Project Manager page <doc_project_manager>` for more information."
 msgstr ""

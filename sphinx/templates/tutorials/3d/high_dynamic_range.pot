@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -44,11 +44,11 @@ msgid "This means that some transformation of the scene light intensity, also kn
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:39
-msgid "Godot does not support high dynamic range *output* yet. It can only perform lighting in HDR and tonemap the result to a low dynamic range image."
+msgid "Godot supports high dynamic range *output*. You can read more about this on the :ref:`doc_hdr_output` page."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:42
-msgid "For advanced users, it is still possible to get a non-tonemapped image of the viewport with full HDR data, which can then be saved to an OpenEXR file."
+msgid "For advanced users, it possible to get a non-tonemapped image of the viewport with full HDR data, which can then be saved to an OpenEXR file."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:46
@@ -64,7 +64,7 @@ msgid "For a majority of computer displays, the specifications of the display ar
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:60
-msgid "Not all displays use the same OETF and EOTF as a computer display. For example, television broadcast displays use the BT.1886 EOTF. However, Godot currently only supports sRGB displays."
+msgid "Not all displays use the same OETF and EOTF as a computer display. For example, television broadcast displays use the BT.1886 EOTF. However, Godot only supports sRGB and HDR displays."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:64

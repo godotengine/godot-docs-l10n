@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -173,46 +173,46 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:128
 #: ../../docs/tutorials/rendering/renderers.rst:196
-#: ../../docs/tutorials/rendering/renderers.rst:226
-#: ../../docs/tutorials/rendering/renderers.rst:254
-#: ../../docs/tutorials/rendering/renderers.rst:291
-#: ../../docs/tutorials/rendering/renderers.rst:317
-#: ../../docs/tutorials/rendering/renderers.rst:329
-#: ../../docs/tutorials/rendering/renderers.rst:347
+#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:256
+#: ../../docs/tutorials/rendering/renderers.rst:293
+#: ../../docs/tutorials/rendering/renderers.rst:319
+#: ../../docs/tutorials/rendering/renderers.rst:331
+#: ../../docs/tutorials/rendering/renderers.rst:349
 msgid "Feature"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:128
 #: ../../docs/tutorials/rendering/renderers.rst:196
-#: ../../docs/tutorials/rendering/renderers.rst:226
-#: ../../docs/tutorials/rendering/renderers.rst:254
-#: ../../docs/tutorials/rendering/renderers.rst:291
-#: ../../docs/tutorials/rendering/renderers.rst:317
-#: ../../docs/tutorials/rendering/renderers.rst:329
-#: ../../docs/tutorials/rendering/renderers.rst:347
+#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:256
+#: ../../docs/tutorials/rendering/renderers.rst:293
+#: ../../docs/tutorials/rendering/renderers.rst:319
+#: ../../docs/tutorials/rendering/renderers.rst:331
+#: ../../docs/tutorials/rendering/renderers.rst:349
 msgid "Compatibility"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:128
 #: ../../docs/tutorials/rendering/renderers.rst:150
 #: ../../docs/tutorials/rendering/renderers.rst:196
-#: ../../docs/tutorials/rendering/renderers.rst:226
-#: ../../docs/tutorials/rendering/renderers.rst:254
-#: ../../docs/tutorials/rendering/renderers.rst:291
-#: ../../docs/tutorials/rendering/renderers.rst:317
-#: ../../docs/tutorials/rendering/renderers.rst:329
-#: ../../docs/tutorials/rendering/renderers.rst:347
+#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:256
+#: ../../docs/tutorials/rendering/renderers.rst:293
+#: ../../docs/tutorials/rendering/renderers.rst:319
+#: ../../docs/tutorials/rendering/renderers.rst:331
+#: ../../docs/tutorials/rendering/renderers.rst:349
 msgid "Mobile"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:128
 #: ../../docs/tutorials/rendering/renderers.rst:196
-#: ../../docs/tutorials/rendering/renderers.rst:226
-#: ../../docs/tutorials/rendering/renderers.rst:254
-#: ../../docs/tutorials/rendering/renderers.rst:291
-#: ../../docs/tutorials/rendering/renderers.rst:317
-#: ../../docs/tutorials/rendering/renderers.rst:329
-#: ../../docs/tutorials/rendering/renderers.rst:347
+#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:256
+#: ../../docs/tutorials/rendering/renderers.rst:293
+#: ../../docs/tutorials/rendering/renderers.rst:319
+#: ../../docs/tutorials/rendering/renderers.rst:331
+#: ../../docs/tutorials/rendering/renderers.rst:349
 msgid "Forward+"
 msgstr ""
 
@@ -420,99 +420,104 @@ msgid "Lighting approach"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:198
-msgid "Forward"
+msgid "Forward single-pass. Lights with shadows use a multi-pass approach and less accurate blending."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:198
-msgid "Clustered Forward"
+msgid "Forward single-pass."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:201
+#: ../../docs/tutorials/rendering/renderers.rst:198
+msgid "Clustered forward."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:203
 msgid "Maximum OmniLights"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:201
-#: ../../docs/tutorials/rendering/renderers.rst:204
+#: ../../docs/tutorials/rendering/renderers.rst:203
+#: ../../docs/tutorials/rendering/renderers.rst:206
 msgid "8 per mesh. Can be increased."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:201
-#: ../../docs/tutorials/rendering/renderers.rst:204
+#: ../../docs/tutorials/rendering/renderers.rst:203
+#: ../../docs/tutorials/rendering/renderers.rst:206
 msgid "8 per mesh, 256 per view."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:201
-#: ../../docs/tutorials/rendering/renderers.rst:204
+#: ../../docs/tutorials/rendering/renderers.rst:203
+#: ../../docs/tutorials/rendering/renderers.rst:206
 msgid "512 per cluster. Can be increased."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:204
+#: ../../docs/tutorials/rendering/renderers.rst:206
 msgid "Maximum SpotLights"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:207
+#: ../../docs/tutorials/rendering/renderers.rst:209
 msgid "Maximum DirectionalLights"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:207
+#: ../../docs/tutorials/rendering/renderers.rst:209
 msgid "8"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:210
+#: ../../docs/tutorials/rendering/renderers.rst:212
 msgid "PCSS for OmniLight and SpotLight"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:210
-#: ../../docs/tutorials/rendering/renderers.rst:213
-#: ../../docs/tutorials/rendering/renderers.rst:216
-#: ../../docs/tutorials/rendering/renderers.rst:237
-#: ../../docs/tutorials/rendering/renderers.rst:240
-#: ../../docs/tutorials/rendering/renderers.rst:243
-#: ../../docs/tutorials/rendering/renderers.rst:258
-#: ../../docs/tutorials/rendering/renderers.rst:262
+#: ../../docs/tutorials/rendering/renderers.rst:212
+#: ../../docs/tutorials/rendering/renderers.rst:215
+#: ../../docs/tutorials/rendering/renderers.rst:218
+#: ../../docs/tutorials/rendering/renderers.rst:239
+#: ../../docs/tutorials/rendering/renderers.rst:242
+#: ../../docs/tutorials/rendering/renderers.rst:245
+#: ../../docs/tutorials/rendering/renderers.rst:260
 #: ../../docs/tutorials/rendering/renderers.rst:264
-#: ../../docs/tutorials/rendering/renderers.rst:267
-#: ../../docs/tutorials/rendering/renderers.rst:270
-#: ../../docs/tutorials/rendering/renderers.rst:281
-#: ../../docs/tutorials/rendering/renderers.rst:295
+#: ../../docs/tutorials/rendering/renderers.rst:266
+#: ../../docs/tutorials/rendering/renderers.rst:269
+#: ../../docs/tutorials/rendering/renderers.rst:272
+#: ../../docs/tutorials/rendering/renderers.rst:283
 #: ../../docs/tutorials/rendering/renderers.rst:297
 #: ../../docs/tutorials/rendering/renderers.rst:299
 #: ../../docs/tutorials/rendering/renderers.rst:301
 #: ../../docs/tutorials/rendering/renderers.rst:303
-#: ../../docs/tutorials/rendering/renderers.rst:307
-#: ../../docs/tutorials/rendering/renderers.rst:319
-#: ../../docs/tutorials/rendering/renderers.rst:336
+#: ../../docs/tutorials/rendering/renderers.rst:305
+#: ../../docs/tutorials/rendering/renderers.rst:309
+#: ../../docs/tutorials/rendering/renderers.rst:321
 #: ../../docs/tutorials/rendering/renderers.rst:338
-#: ../../docs/tutorials/rendering/renderers.rst:349
-#: ../../docs/tutorials/rendering/renderers.rst:352
-#: ../../docs/tutorials/rendering/renderers.rst:354
-#: ../../docs/tutorials/rendering/renderers.rst:356
-#: ../../docs/tutorials/rendering/renderers.rst:358
-#: ../../docs/tutorials/rendering/renderers.rst:360
-#: ../../docs/tutorials/rendering/renderers.rst:363
+#: ../../docs/tutorials/rendering/renderers.rst:340
+#: ../../docs/tutorials/rendering/renderers.rst:359
+#: ../../docs/tutorials/rendering/renderers.rst:362
 #: ../../docs/tutorials/rendering/renderers.rst:365
+#: ../../docs/tutorials/rendering/renderers.rst:367
+#: ../../docs/tutorials/rendering/renderers.rst:369
+#: ../../docs/tutorials/rendering/renderers.rst:371
+#: ../../docs/tutorials/rendering/renderers.rst:373
+#: ../../docs/tutorials/rendering/renderers.rst:376
+#: ../../docs/tutorials/rendering/renderers.rst:378
+#: ../../docs/tutorials/rendering/renderers.rst:380
 msgid "❌ Not supported."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:210
-#: ../../docs/tutorials/rendering/renderers.rst:213
-#: ../../docs/tutorials/rendering/renderers.rst:216
-#: ../../docs/tutorials/rendering/renderers.rst:231
-#: ../../docs/tutorials/rendering/renderers.rst:237
-#: ../../docs/tutorials/rendering/renderers.rst:240
-#: ../../docs/tutorials/rendering/renderers.rst:243
-#: ../../docs/tutorials/rendering/renderers.rst:256
+#: ../../docs/tutorials/rendering/renderers.rst:212
+#: ../../docs/tutorials/rendering/renderers.rst:215
+#: ../../docs/tutorials/rendering/renderers.rst:218
+#: ../../docs/tutorials/rendering/renderers.rst:233
+#: ../../docs/tutorials/rendering/renderers.rst:239
+#: ../../docs/tutorials/rendering/renderers.rst:242
+#: ../../docs/tutorials/rendering/renderers.rst:245
 #: ../../docs/tutorials/rendering/renderers.rst:258
 #: ../../docs/tutorials/rendering/renderers.rst:260
 #: ../../docs/tutorials/rendering/renderers.rst:262
 #: ../../docs/tutorials/rendering/renderers.rst:264
-#: ../../docs/tutorials/rendering/renderers.rst:267
-#: ../../docs/tutorials/rendering/renderers.rst:270
-#: ../../docs/tutorials/rendering/renderers.rst:274
+#: ../../docs/tutorials/rendering/renderers.rst:266
+#: ../../docs/tutorials/rendering/renderers.rst:269
+#: ../../docs/tutorials/rendering/renderers.rst:272
 #: ../../docs/tutorials/rendering/renderers.rst:276
 #: ../../docs/tutorials/rendering/renderers.rst:278
-#: ../../docs/tutorials/rendering/renderers.rst:281
-#: ../../docs/tutorials/rendering/renderers.rst:293
+#: ../../docs/tutorials/rendering/renderers.rst:280
+#: ../../docs/tutorials/rendering/renderers.rst:283
 #: ../../docs/tutorials/rendering/renderers.rst:295
 #: ../../docs/tutorials/rendering/renderers.rst:297
 #: ../../docs/tutorials/rendering/renderers.rst:299
@@ -520,232 +525,275 @@ msgstr ""
 #: ../../docs/tutorials/rendering/renderers.rst:303
 #: ../../docs/tutorials/rendering/renderers.rst:305
 #: ../../docs/tutorials/rendering/renderers.rst:307
-#: ../../docs/tutorials/rendering/renderers.rst:319
-#: ../../docs/tutorials/rendering/renderers.rst:331
+#: ../../docs/tutorials/rendering/renderers.rst:309
+#: ../../docs/tutorials/rendering/renderers.rst:321
 #: ../../docs/tutorials/rendering/renderers.rst:333
-#: ../../docs/tutorials/rendering/renderers.rst:336
+#: ../../docs/tutorials/rendering/renderers.rst:335
 #: ../../docs/tutorials/rendering/renderers.rst:338
-#: ../../docs/tutorials/rendering/renderers.rst:349
-#: ../../docs/tutorials/rendering/renderers.rst:352
-#: ../../docs/tutorials/rendering/renderers.rst:354
-#: ../../docs/tutorials/rendering/renderers.rst:356
-#: ../../docs/tutorials/rendering/renderers.rst:358
-#: ../../docs/tutorials/rendering/renderers.rst:360
-#: ../../docs/tutorials/rendering/renderers.rst:363
+#: ../../docs/tutorials/rendering/renderers.rst:340
+#: ../../docs/tutorials/rendering/renderers.rst:359
+#: ../../docs/tutorials/rendering/renderers.rst:362
 #: ../../docs/tutorials/rendering/renderers.rst:365
+#: ../../docs/tutorials/rendering/renderers.rst:367
+#: ../../docs/tutorials/rendering/renderers.rst:369
+#: ../../docs/tutorials/rendering/renderers.rst:371
+#: ../../docs/tutorials/rendering/renderers.rst:373
+#: ../../docs/tutorials/rendering/renderers.rst:376
+#: ../../docs/tutorials/rendering/renderers.rst:378
+#: ../../docs/tutorials/rendering/renderers.rst:380
 msgid "✔️ Supported."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:213
+#: ../../docs/tutorials/rendering/renderers.rst:215
 msgid "PCSS for DirectionalLight"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:216
+#: ../../docs/tutorials/rendering/renderers.rst:218
 msgid "Light projector textures"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:221
+#: ../../docs/tutorials/rendering/renderers.rst:223
 msgid "Global Illumination"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:223
+#: ../../docs/tutorials/rendering/renderers.rst:225
 msgid "See :ref:`doc_introduction_to_global_illumination` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:230
 msgid "ReflectionProbe"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:230
 msgid "✔️ Supported, 2 per mesh."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:230
 msgid "✔️ Supported, 8 per mesh."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:228
+#: ../../docs/tutorials/rendering/renderers.rst:230
 msgid "✔️ Supported, unlimited."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:231
+#: ../../docs/tutorials/rendering/renderers.rst:233
 msgid "LightmapGI"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:231
+#: ../../docs/tutorials/rendering/renderers.rst:233
 msgid "⚠️ Rendering of baked lightmaps is supported. Baking requires hardware with RenderingDevice support."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:237
+#: ../../docs/tutorials/rendering/renderers.rst:239
 msgid "VoxelGI"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:240
-#: ../../docs/tutorials/rendering/renderers.rst:267
+#: ../../docs/tutorials/rendering/renderers.rst:242
+#: ../../docs/tutorials/rendering/renderers.rst:269
 msgid "Screen-Space Indirect Lighting (SSIL)"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:243
-#: ../../docs/tutorials/rendering/renderers.rst:270
+#: ../../docs/tutorials/rendering/renderers.rst:245
+#: ../../docs/tutorials/rendering/renderers.rst:272
 msgid "Signed Distance Field Global Illumination (SDFGI)"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:249
+#: ../../docs/tutorials/rendering/renderers.rst:251
 msgid "Environment and post-processing"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:251
+#: ../../docs/tutorials/rendering/renderers.rst:253
 msgid "See :ref:`doc_environment_and_post_processing` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:256
+#: ../../docs/tutorials/rendering/renderers.rst:258
 msgid "Fog (Depth and Height)"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:258
+#: ../../docs/tutorials/rendering/renderers.rst:260
 msgid "Volumetric Fog"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:260
+#: ../../docs/tutorials/rendering/renderers.rst:262
 msgid "Tonemapping"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:262
+#: ../../docs/tutorials/rendering/renderers.rst:264
 msgid "Screen-Space Reflections"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:264
+#: ../../docs/tutorials/rendering/renderers.rst:266
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:274
+#: ../../docs/tutorials/rendering/renderers.rst:276
 msgid "Glow"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:276
+#: ../../docs/tutorials/rendering/renderers.rst:278
 msgid "Adjustments"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:278
+#: ../../docs/tutorials/rendering/renderers.rst:280
 msgid "Custom post-processing with fullscreen quad"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:281
+#: ../../docs/tutorials/rendering/renderers.rst:283
 msgid "Custom post-processing with CompositorEffects"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:286
+#: ../../docs/tutorials/rendering/renderers.rst:288
 msgid "Antialiasing"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:288
+#: ../../docs/tutorials/rendering/renderers.rst:290
 msgid "See :ref:`doc_3d_antialiasing` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:293
+#: ../../docs/tutorials/rendering/renderers.rst:295
 msgid "MSAA 3D"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:295
+#: ../../docs/tutorials/rendering/renderers.rst:297
 msgid "MSAA 2D"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:297
+#: ../../docs/tutorials/rendering/renderers.rst:299
 msgid "TAA"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:299
+#: ../../docs/tutorials/rendering/renderers.rst:301
 msgid "FSR2"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:301
+#: ../../docs/tutorials/rendering/renderers.rst:303
 msgid "FXAA"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:303
+#: ../../docs/tutorials/rendering/renderers.rst:305
 msgid "SMAA"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:305
+#: ../../docs/tutorials/rendering/renderers.rst:307
 msgid "SSAA"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:307
+#: ../../docs/tutorials/rendering/renderers.rst:309
 msgid "Screen-space roughness limiter"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:312
+#: ../../docs/tutorials/rendering/renderers.rst:314
 msgid "StandardMaterial features"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:314
+#: ../../docs/tutorials/rendering/renderers.rst:316
 msgid "See :ref:`doc_standard_material_3d` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:319
+#: ../../docs/tutorials/rendering/renderers.rst:321
 msgid "Sub-surface scattering"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:324
+#: ../../docs/tutorials/rendering/renderers.rst:326
 msgid "Shader features"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:326
+#: ../../docs/tutorials/rendering/renderers.rst:328
 msgid "See :ref:`doc_shading_reference` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:331
+#: ../../docs/tutorials/rendering/renderers.rst:333
 msgid "Screen texture"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:333
+#: ../../docs/tutorials/rendering/renderers.rst:335
 msgid "Depth texture"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:336
+#: ../../docs/tutorials/rendering/renderers.rst:338
 msgid "Normal/Roughness buffer"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:338
+#: ../../docs/tutorials/rendering/renderers.rst:340
 msgid "Compute shaders"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:338
+#: ../../docs/tutorials/rendering/renderers.rst:340
 msgid "⚠️ Supported, but comes with a performance penalty on older devices."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:344
+#: ../../docs/tutorials/rendering/renderers.rst:346
 msgid "Other features"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:349
-msgid "Variable rate shading"
+#: ../../docs/tutorials/rendering/renderers.rst:351
+msgid "Color precision"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:352
-msgid "Decals"
+#: ../../docs/tutorials/rendering/renderers.rst:351
+msgid "RGBA8. Low dynamic range, medium precision."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:354
-msgid "Particle trails"
+#: ../../docs/tutorials/rendering/renderers.rst:351
+msgid "RGB10A2. Medium dynamic range, low precision. RGBA16F if HDR 2D is enabled."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:351
+msgid "RGBA16F. High dynamic range, good precision."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:356
-msgid "Particle SDF collision"
+msgid "Depth precision"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:358
-msgid "Depth of field blur"
+#: ../../docs/tutorials/rendering/renderers.rst:356
+msgid "24-bit without reverse Z. Medium precision."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:360
-msgid "Adaptive and Mailbox VSync modes"
+#: ../../docs/tutorials/rendering/renderers.rst:356
+msgid "24-bit with reverse Z. Medium precision."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/renderers.rst:363
-msgid "2D HDR Viewport"
+#: ../../docs/tutorials/rendering/renderers.rst:356
+msgid "32-bit with reverse Z. Good precision."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:359
+msgid "Debanding"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:362
+msgid "Variable rate shading"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/renderers.rst:365
+msgid "Decals"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:367
+msgid "Particle trails"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:369
+msgid "Particle SDF collision"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:371
+msgid "Depth of field blur"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:373
+msgid "Adaptive and Mailbox VSync modes"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:376
+msgid "2D HDR Viewport"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:378
+msgid "HDR output"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/renderers.rst:380
 msgid "RenderingDevice access"
 msgstr ""

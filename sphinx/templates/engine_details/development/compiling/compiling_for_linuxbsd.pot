@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -36,11 +36,11 @@ msgid "GCC 9+ or Clang 6+."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:20
-msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
+msgid "`Python 3.9+ <https://www.python.org/downloads/>`_."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:21
-msgid "`SCons 4.0+ <https://scons.org/pages/download.html>`_ build system."
+msgid "`SCons 4.4+ <https://scons.org/pages/download.html>`_ build system."
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:22
@@ -92,19 +92,19 @@ msgid "Alpine Linux"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:65
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:572
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:571
 msgid "Arch Linux"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:84
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:559
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:607
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:558
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:606
 msgid "Debian/Ubuntu"
 msgstr ""
 
 #: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:105
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:566
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:632
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:565
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:631
 msgid "Fedora"
 msgstr ""
 
@@ -124,318 +124,314 @@ msgstr ""
 msgid "NetBSD"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:178
-msgid "For audio support, you can optionally install ``pulseaudio``."
-msgstr ""
-
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:180
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:179
 msgid "OpenBSD"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:189
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:188
 msgid "openKylin"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:211
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:210
 msgid "openSUSE"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:231
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:230
 msgid "Solus"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:249
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:248
 msgid "Compiling"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:251
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:250
 msgid "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:259
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:258
 msgid "Prior to Godot 4.0, the Linux/\\*BSD target was called ``x11`` instead of ``linuxbsd``. If you are looking to compile Godot 3.x, make sure to use the `3.x branch of this documentation <https://docs.godotengine.org/en/3.6/development/compiling/compiling_for_x11.html>`__."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:264
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:263
 msgid "If you are compiling Godot to make changes or contribute to the engine, you may want to use the SCons options ``dev_build=yes`` or ``dev_mode=yes``. See :ref:`doc_introduction_to_the_buildsystem_development_and_production_aliases` for more info."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:269
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:268
 msgid "If all goes well, the resulting binary executable will be placed in the \"bin\" subdirectory. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:276
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:275
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:282
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:281
 msgid "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would not build. For RISC-V architecture devices, use the Clang compiler instead of the GCC compiler."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:288
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:287
 msgid "Compiling on some platforms such as OpenBSD may require more memory than available by default. To increase the memory limit on OpenBSD within the maximum for the current user, run ``ulimit -d {new amount in kB}``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:293
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:292
 msgid "If you are compiling Godot for production use, you can make the final executable smaller and faster by adding the SCons option ``production=yes``. This enables additional compiler optimizations and link-time optimization."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:298
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:297
 msgid "LTO takes some time to run and requires about 7 GB of available RAM while compiling. If you're running out of memory with the above option, use ``production=yes lto=none`` or ``production=yes lto=thin`` for a lightweight but less effective form of LTO."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:303
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:302
 msgid "If you want to use separate editor settings for your own Godot builds and official releases, you can enable :ref:`doc_data_paths_self_contained_mode` by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:309
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:308
 msgid "Compiling with AccessKit support"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:311
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:310
 msgid "AccessKit provides support for screen readers."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:313
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:312
 msgid "By default, Godot is built with AccessKit dynamically linked. You can use it by placing ``accesskit.so`` alongside the executable."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:316
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:315
 msgid "You can use dynamically linked AccessKit with export templates as well, rename the SO to ``accesskit.{architecture}.so`` and place them alongside the export template executables, and the libraries will be automatically copied during the export process."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:321
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:320
 msgid "To compile Godot with statically linked AccessKit:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:323
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:322
 msgid "Download the pre-built static libraries from `godot-accesskit-c-static library <https://github.com/godotengine/godot-accesskit-c-static/releases>`_, and unzip them."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:324
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:323
 msgid "When building Godot, add ``accesskit_sdk_path={path}`` to tell SCons where to look for the AccessKit libraries:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:330
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:329
 msgid "You can optionally build the godot-angle-static libraries yourself with the following steps:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:333
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:332
 msgid "Clone the `godot-accesskit-c-static <https://github.com/godotengine/godot-accesskit-c-static/>`_ directory and navigate to it."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:335
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:334
 msgid "Run the following command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:344
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:343
 msgid "The AccessKit static library should be built using the same compiler you are using for building Godot."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:348
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:347
 msgid "Running a headless/server build"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:350
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:349
 msgid "To run in *headless* mode which provides editor functionality to export projects in an automated manner, use the normal build:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:357
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:356
 msgid "And then use the ``--headless`` command line argument:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:363
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:362
 msgid "To compile a debug *server* build which can be used with :ref:`remote debugging tools <doc_command_line_tutorial>`, use:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:370
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:369
 msgid "To compile a *server* build which is optimized to run dedicated game servers, use:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:377
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:376
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:379
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:378
 msgid "Linux binaries usually won't run on distributions that are older than the distribution they were built on. If you wish to distribute binaries that work on most distributions, you should build them on an old distribution such as Ubuntu 20.04. You can use a virtual machine or a container to set up a suitable build environment."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:387
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:386
 msgid "To build Linux or \\*BSD export templates, run the build system with the following parameters:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:390
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:389
 msgid "(32 bits)"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:397
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:396
 msgid "(64 bits)"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:404
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:403
 msgid "Note that cross-compiling for the opposite bits (64/32) as your host platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:407
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:406
 msgid "To create standard export templates, the resulting files in the ``bin/`` folder must be copied to:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:414
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:413
 msgid "and named like this (even for \\*BSD which is seen as \"Linux/X11\" by Godot):"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:427
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:426
 msgid "However, if you are writing your custom modules or custom C++ code, you might instead want to configure your binaries as custom export templates in the project export menu. You must have **Advanced Options** enabled to set this."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:434
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:433
 msgid "You don't even need to copy them, you can just reference the resulting files in the ``bin/`` directory of your Godot source folder, so the next time you build, you automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:439
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:438
 msgid "Cross-compiling for RISC-V devices"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:441
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:440
 msgid "To cross-compile Godot for RISC-V devices, we need to setup the following items:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:443
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:442
 msgid "`riscv-gnu-toolchain <https://github.com/riscv-collab/riscv-gnu-toolchain/releases>`__. While we are not going to use this directly, it provides us with a sysroot, as well as header and libraries files that we will need. There are many versions to choose from, however, the older the toolchain, the more compatible our final binaries will be. If in doubt, `use this version <https://github.com/riscv-collab/riscv-gnu-toolchain/releases/tag/2023.07.07>`__, and download ``riscv64-glibc-ubuntu-20.04-gcc-nightly-2023.07.07-nightly.tar.gz``. Extract it somewhere and remember its path."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:450
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:449
 msgid "`mold <https://github.com/rui314/mold/releases>`__. This fast linker, is the only one that correctly links the resulting binary. Download it, extract it, and make sure to add its ``bin`` folder to your PATH. Run ``mold --help | grep support`` to check if your version of Mold supports RISC-V. If you don't see RISC-V, your Mold may need to be updated."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:456
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:455
 msgid "To make referencing our toolchain easier, we can set an environment variable like this:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:463
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:462
 msgid "This way, we won't have to manually set the directory location each time we want to reference it."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:466
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:465
 msgid "With all the above setup, we are now ready to build Godot."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:468
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:467
 msgid "Go to the root of the source code, and execute the following build command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:479
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:478
 msgid "RISC-V GCC has `bugs with its atomic operations <https://github.com/riscv-collab/riscv-gcc/issues/15>`__ which prevent it from compiling Godot correctly. That's why Clang is used instead. Make sure that it *can* compile to RISC-V. You can verify by executing this command ``clang -print-targets``, make sure you see ``riscv64`` on the list of targets."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:484
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:483
 msgid "The code above includes adding ``$RISCV_TOOLCHAIN_PATH/bin`` to the PATH, but only for the following ``scons`` command. Since riscv-gnu-toolchain uses its own Clang located in the ``bin`` folder, adding ``$RISCV_TOOLCHAIN_PATH/bin`` to your user's PATH environment variable may block you from accessing another version of Clang if one is installed. For this reason it's not recommended to make adding the bin folder permanent. You can also omit the ``PATH=\"$RISCV_TOOLCHAIN_PATH/bin:$PATH\"`` line if you want to use scons with self-installed version of Clang, but it may have compatibility issues with riscv-gnu-toolchain."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:493
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:492
 msgid "The command is similar in nature, but with some key changes. ``ccflags`` and ``linkflags`` append additional flags to the build. ``--sysroot`` points to a folder simulating a Linux system, it contains all the headers, libraries, and ``.so`` files Clang will use. ``--gcc-toolchain`` tells Clang where the complete toolchain is, and ``-target riscv64-unknown-linux-gnu`` indicates to Clang the target architecture, and OS we want to build for."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:500
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:499
 msgid "If all went well, you should now see a ``bin`` directory, and within it, a binary similar to the following:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:507
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:506
 msgid "You can now copy this executable to your favorite RISC-V device, then launch it there by double-clicking, which should bring up the project manager."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:511
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:510
 msgid "If you later decide to compile the export templates, copy the above build command but change the value of ``target`` to ``template_debug`` for a debug build, or ``template_release`` for a release build."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:516
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:515
 msgid "Using Clang and LLD for faster development"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:518
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:517
 msgid "You can also use Clang and LLD to build Godot. This has two upsides compared to the default GCC + GNU ld setup:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:521
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:520
 msgid "LLD links Godot significantly faster compared to GNU ld or gold. This leads to faster iteration times."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:523
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:522
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:525
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:524
 msgid "To do so, install Clang and the ``lld`` package from your distribution's package manager then use the following SCons command:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:532
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:531
 msgid "After the build is completed, a new binary with a ``.llvm`` suffix will be created in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:535
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:534
 msgid "It's still recommended to use GCC for production builds as it's the compiler used for official builds and is more rigorously tested."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:538
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:537
 msgid "If this error occurs:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:544
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:543
 msgid "There are two solutions:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:546
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:545
 msgid "In your SCons command, add the parameter ``use_static_cpp=no``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:547
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:546
 msgid "Follow `these instructions <https://github.com/ivmai/libatomic_ops#installation-and-usage>`__ to configure, build, and install ``libatomic_ops``. Then, copy ``/usr/lib/libatomic_ops.a`` to ``/usr/lib/libatomic.a``, or create a soft link to ``libatomic_ops`` by command ``ln -s /usr/lib/libatomic_ops.a /usr/lib/libatomic.a``. The soft link can ensure the latest ``libatomic_ops`` will be used without the need to copy it every time when it is updated."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:553
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:552
 msgid "Using mold for faster development"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:555
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:554
 msgid "For even faster linking compared to LLD, you can use `mold <https://github.com/rui314/mold>`__. mold can be used with either GCC or Clang."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:578
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:577
 msgid "Once mold is installed, use the following SCons command when compiling Godot:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:585
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:584
 msgid "Using system libraries for faster development"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:587
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:586
 msgid "`Godot bundles the source code of various third-party libraries. <https://github.com/godotengine/godot/tree/master/thirdparty>`__ You can choose to use system versions of third-party libraries instead. This makes the Godot binary faster to link, as third-party libraries are dynamically linked. Therefore, they don't need to be statically linked every time you build the engine (even on small incremental changes)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:593
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:592
 msgid "However, not all Linux distributions have packages for third-party libraries available (or they may not be up-to-date)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:596
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:595
 msgid "Moving to system libraries can reduce linking times by several seconds on slow CPUs, but it requires manual testing depending on your Linux distribution. Also, you may not be able to use system libraries for everything due to bugs in the system library packages (or in the build system, as this feature is less tested)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:602
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:601
 msgid "To compile Godot with system libraries, install these dependencies **on top** of the ones listed in the :ref:`doc_compiling_for_linuxbsd_oneliners`:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:652
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:651
 msgid "After installing all required packages, use the following command to build Godot:"
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:661
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:660
 msgid "On Debian stable, you will need to remove `builtin_embree=no` as the system-provided Embree version is too old to work with Godot's latest `master` branch (which requires Embree 4)."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:665
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:664
 msgid "You can view a list of all built-in libraries that have system alternatives by running ``scons -h``, then looking for options starting with ``builtin_``."
 msgstr ""
 
-#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:670
+#: ../../docs/engine_details/development/compiling/compiling_for_linuxbsd.rst:669
 msgid "When using system libraries, the resulting binary is **not** portable across Linux distributions anymore. Do not use this approach for creating binaries you intend to distribute to others, unless you're creating a package for a Linux distribution."
 msgstr ""

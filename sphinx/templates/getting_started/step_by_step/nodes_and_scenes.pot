@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -179,34 +179,38 @@ msgstr ""
 msgid "Close the window or press :kbd:`F8` (:kbd:`Cmd + .` on macOS) to quit the running scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:165
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:166
+msgid "See :ref:`doc_game_embedding` for more information about the Game window that appears when running the project."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:170
 msgid "Setting the main scene"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:167
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:172
 msgid "To run our test scene, we used the :button:`Run Current Scene` button. Another button next to it, :button:`Run Project`, allows you to set and run the project's **main scene**. You can also press :kbd:`F5` (:kbd:`Cmd + B` on macOS) to do so."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:173
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:178
 msgid "Running the project's *main scene* is distinct from running the *current scene*. If you encounter unexpected behavior, check to ensure you are running the correct scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:177
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:182
 msgid "A popup window appears and invites you to select the main scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:181
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:186
 msgid "Click the :button:`Select` button, and in the file dialog that appears, double click on ``label.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:186
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:191
 msgid "The demo should run again. Moving forward, every time you run the project, Godot will use this scene as a starting point."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:189
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:194
 msgid "The editor saves the main scene's path in a project.godot file in your project's directory. While you can edit this text file directly to change project settings, you can also use the :menu:`Project > Project Settings` window to do so. For more information, see :ref:`doc_project_settings`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:194
+#: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:199
 msgid "In the next part, we will discuss another key concept in games and in Godot: creating instances of a scene."
 msgstr ""

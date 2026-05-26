@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -200,7 +200,7 @@ msgid "Remote procedure calls, or RPCs, are functions that can be called on othe
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
-msgid "RPCs will not serialize objects or callables."
+msgid "RPCs will not serialize Objects or Callables."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
@@ -283,46 +283,114 @@ msgstr ""
 msgid "The function ``multiplayer.get_remote_sender_id()`` can be used to get the unique id of an rpc sender, when used within the function called by rpc."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:340
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:341
+msgid "RPC methods must be defined on :ref:`class_Node`-derived classes. Attempting to use high-level RPC calls on methods defined only in non-Node classes (such as Resource) will result in runtime errors."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:346
 msgid "Channels"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:341
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
 msgid "Modern networking protocols support channels, which are separate connections within the connection. This allows for multiple streams of packets that do not interfere with each other."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:344
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
 msgid "For example, game chat related messages and some of the core gameplay messages should all be sent reliably, but a gameplay message should not wait for a chat message to be acknowledged. This can be achieved by using different channels."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:353
 msgid "Channels are also useful when used with the unreliable ordered transfer mode. Sending packets of variable size with this transfer mode can cause packet loss, since packets which are slower to arrive are ignored. Separating them into multiple streams of homogeneous packets by using channels allows ordered transfer with little packet loss, and without the latency penalty caused by reliable mode."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:351
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:357
 msgid "The default channel with index 0 is actually three different channels - one for each transfer mode."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:360
 msgid "Example lobby implementation"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:356
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:362
 msgid "This is an example lobby that can handle peers joining and leaving, notify UI scenes through signals, and start the game after all clients have loaded the game scene."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:623
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:629
 msgid "The game scene's root node should be named Game. In the script attached to it:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:663
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:669
 msgid "Exporting for dedicated servers"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:665
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:671
 msgid "Once you've made a multiplayer game, you may want to export it to run it on a dedicated server with no GPU available. See :ref:`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:671
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:677
 msgid "The code samples on this page aren't designed to run on a dedicated server. You'll have to modify them so the server isn't considered to be a player. You'll also have to modify the game starting mechanism so that the first player who joins can start the game."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:683
+msgid "Authentication"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:685
+msgid "Before hosting your game online to a public audience, you may want to consider adding authentication and protecting your RPCs against unauthenticated access. You can use the :ref:`SceneMultiplayer <class_SceneMultiplayer>`'s built-in authentication mechanism for this."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:688
+msgid "On the server:"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:703
+msgid "On the client:"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:723
+msgid "As soon as both the client's and the server's :ref:`complete_auth() <class_SceneMultiplayer_method_complete_auth>` methods have been called, the connection is considered to be established and the ``connected_to_server`` and ``peer_connected`` signals fire."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:728
+msgid "Secure multiplayer design"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:730
+msgid "Godot's high-level multiplayer API makes it easier to build networked games, but it does not automatically make gameplay logic secure. For competitive or persistent multiplayer games, treat all client input as untrusted."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:734
+msgid "A common mistake is to let clients authoritatively decide important game states, such as player position, combat results, inventory changes, or match outcomes. This can make cheating much easier, and result in more frequent desynchronization (\"desync\")."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:739
+msgid "In general, prefer the following patterns:"
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:741
+msgid "Use server-authoritative logic for gameplay-critical decisions."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:742
+msgid "Validate RPC arguments before applying them to the game state."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:743
+msgid "Avoid trusting client-reported positions, timers, cooldowns, or resource values without checks."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:745
+msgid "Add safety checks and rate limits to actions that can be triggered frequently."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:747
+msgid "In short, you should design your networking so that the server remains the source of truth for important states."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:750
+msgid "For example, instead of accepting a client's final position directly, consider sending player input or movement intent to the authority/server, then validating and applying the result there. This comes with some tradeoffs (such as server-side performance and complexity due to the need for client-side prediction), but will make it much harder for attackers to cheat by sending falsified data."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:757
+msgid "See `Choosing the right network model for your multiplayer game <https://mas-bandwidth.com/choosing-the-right-network-model-for-your-multiplayer-game/>`__ for more information on different multiplayer models and their security implications."
 msgstr ""

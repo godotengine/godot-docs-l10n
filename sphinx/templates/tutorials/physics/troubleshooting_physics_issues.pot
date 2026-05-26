@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -32,7 +32,7 @@ msgid "Objects are passing through each other at high speeds"
 msgstr ""
 
 #: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:19
-msgid "This is known as *tunneling*. Enabling **Continuous CD** in the RigidBody properties can sometimes resolve this issue. If this does not help, there are other solutions you can try:"
+msgid "This is known as *tunneling*. Enabling **Continuous CD** (Continuous Collision Detection) in the RigidBody properties can sometimes resolve this issue. If this does not help, there are other solutions you can try:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:23
@@ -72,121 +72,129 @@ msgid "Godot does not currently support scaling of physics bodies or collision s
 msgstr ""
 
 #: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:67
-msgid "Since resources are shared by default, you'll have to make the collision shape resource unique if you don't want the change to be applied to all nodes using the same collision shape resource in the scene. This can be done by calling ``duplicate()`` in a script on the collision shape resource *before* changing its size."
+msgid "Since resources are shared by default, you'll have to make the collision shape resource unique if you don't want the change to be applied to all nodes using the same collision shape resource in the scene. This can be done in two ways:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:74
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:71
+msgid "In the editor, by clicking :menu:`Make Unique` in the CollisionShape resource dropdown in the inspector, then changing its size."
+msgstr ""
+
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:73
+msgid "In a script, by calling ``duplicate()`` in a script on the collision shape resource *before* changing its size."
+msgstr ""
+
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:77
 msgid "Thin objects are wobbly when resting on the floor"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:76
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:79
 msgid "This can be due to one of two causes:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:78
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:81
 msgid "The floor's collision shape is too thin."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:79
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:82
 msgid "The RigidBody's collision shape is too thin."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:81
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:84
 msgid "In the first case, this can be alleviated by making the floor's collision shape thicker. For example, if you have a thin floor that the player can't get below in some way, you can make the collider thicker than the floor's visual representation."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:86
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:89
 msgid "In the second case, this can usually only be resolved by increasing the physics simulation rate (as making the shape thicker would cause a disconnect between the RigidBody's visual representation and its collision)."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:90
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:93
 msgid "In both cases, increasing the physics simulation rate can also help alleviate this issue. To do so, increase :ref:`Physics Ticks per Second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` in the advanced Project Settings. Note that this increases CPU utilization and may not be viable for mobile/web platforms. Multipliers of the default value of ``60`` (such as ``120``, ``180`` or ``240``) should be preferred for a smooth appearance on most displays."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:100
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:103
 msgid "Cylinder collision shapes are unstable"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:102
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:105
 msgid "Switching the physics engine from the default GodotPhysics to Jolt should make cylinder collision shapes more reliable. See :ref:`doc_using_jolt_physics` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:106
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:109
 msgid "During the transition from Bullet to GodotPhysics in Godot 4, cylinder collision shapes had to be reimplemented from scratch. However, cylinder collision shapes are one of the most difficult shapes to support, which is why many other physics engines don't provide any support for them. There are several known bugs with cylinder collision shapes currently."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:112
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:115
 msgid "If you are sticking to GodotPhysics, we recommend using box or capsule collision shapes for characters for now. Boxes generally provide the best reliability, but have the downside of making the character take more space diagonally. Capsule collision shapes do not have this downside, but their shape can make precision platforming more difficult."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:119
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:122
 msgid "VehicleBody simulation is unstable, especially at high speeds"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:121
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:124
 msgid "When a physics body moves at a high speed, it travels a large distance between each physics step. For instance, when using the 1 unit = 1 meter convention in 3D, a vehicle moving at 360 km/h will travel 100 units per second. With the default physics simulation rate of 60 Hz, the vehicle moves by ~1.67 units each physics tick. This means that small objects may be ignored entirely by the vehicle (due to tunneling), but also that the simulation has little data to work with in general at such a high speed."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:129
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:132
 msgid "Fast-moving vehicles can benefit a lot from an increased physics simulation rate. To do so, increase :ref:`Physics Ticks per Second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` in the advanced Project Settings. Note that this increases CPU utilization and may not be viable for mobile/web platforms. Multipliers of the default value of ``60`` (such as ``120``, ``180`` or ``240``) should be preferred for a smooth appearance on most displays."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:139
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:142
 msgid "Collision results in bumps when an object moves across tiles"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:141
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:144
 msgid "This is a known issue in the physics engine caused by the object bumping on a shape's edges, even though that edge is covered by another shape. This can occur in both 2D and 3D."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:145
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:148
 msgid "The best way to work around this issue is to create a \"composite\" collider. This means that instead of individual tiles having their collision, you create a single collision shape representing the collision for a group of tiles. Typically, you should split composite colliders on a per-island basis (which means each group of touching tiles gets its own collider)."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:151
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:154
 msgid "Using a composite collider can also improve physics simulation performance in certain cases. However, since the composite collision shape is much more complex, this may not be a net performance win in all cases."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:157
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:160
 msgid "In Godot 4.5 and later, creating a composite collider is automatically done when using a TileMapLayer node. The chunk size (``16`` tiles on each axis by default) can be set using the **Physics Quadrant Size** property in the TileMapLayer inspector. Larger values provide more reliable collision, at the cost of slower updates when the TileMap is changed."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:164
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:167
 msgid "Framerate drops when an object touches another object"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:166
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:169
 msgid "This is likely due to one of the objects using a collision shape that is too complex. Convex collision shapes should use a number of shapes as low as possible for performance reasons. When relying on Godot's automatic generation, it's possible that you ended up with dozens if not hundreds of shapes created for a single convex shape collision resource."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:172
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:175
 msgid "In some cases, replacing a convex collider with a couple of primitive collision shapes (box, sphere, or capsule) can deliver better performance."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:175
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:178
 msgid "This issue can also occur with StaticBodies that use very detailed trimesh (concave) collisions. In this case, use a simplified representation of the level geometry as a collider. Not only this will improve physics simulation performance significantly, but this can also improve stability by letting you remove small fixtures and crevices from being considered by collision."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:181
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:184
 msgid "In 3D, switching the physics engine from the default GodotPhysics to Jolt can also improve performance. See :ref:`doc_using_jolt_physics` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:185
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:188
 msgid "Framerate suddenly drops to a very low value beyond a certain amount of physics simulation"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:187
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:190
 msgid "This occurs because the physics engine can't keep up with the expected simulation rate. In this case, the framerate will start dropping, but the engine is only allowed to simulate a certain number of physics steps per rendered frame. This snowballs into a situation where framerate keeps dropping until it reaches a very low framerate (typically 1-2 FPS) and is called the *physics spiral of death*."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:194
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:197
 msgid "To avoid this, you should check for situations in your project that can cause excessive number of physics simulations to occur at the same time (or with excessively complex collision shapes). If these situations cannot be avoided, you can increase the **Max Physics Steps per Frame** project setting and/or reduce **Physics Ticks per Second** to alleviate this."
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:201
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:204
 msgid "Physics simulation is unreliable when far away from the world origin"
 msgstr ""
 
-#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:203
+#: ../../docs/tutorials/physics/troubleshooting_physics_issues.rst:206
 msgid "This is caused by floating-point precision errors, which become more pronounced as the physics simulation occurs further away from the world origin. This issue also affects rendering, which results in wobbly camera movement when far away from the world origin. See :ref:`doc_large_world_coordinates` for more information."
 msgstr ""

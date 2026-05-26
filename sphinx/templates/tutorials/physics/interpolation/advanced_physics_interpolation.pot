@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -35,138 +35,146 @@ msgstr ""
 msgid "This is possible using the :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>` property which is present in all Nodes. If you for example, turn off interpolation for a Node, the children will recursively also be affected (as they default to inheriting the parent setting). This means you can easily disable interpolation for an entire subscene."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:24
-msgid "The most common situation where you may want to perform your own interpolation is Cameras."
-msgstr ""
-
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:28
-msgid "Cameras"
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:26
+msgid "It is worth noting that, both in 2D and 3D, physics interpolation is performed on the **local transform** of each instance. During rendering, interpolated local transforms are passed down to children."
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:30
-msgid "In many cases, a :ref:`Camera3D<class_Camera3D>` can use automatic interpolation just like any other node. However, for best results, especially at low physics tick rates, it is recommended that you take a manual approach to camera interpolation."
+msgid "This means that if a parent has ``physics_interpolation_mode`` set to ``On``, but the child is set to ``Off``, the child will still be interpolated if the parent is moving. *Only the child's local transform is uninterpolated.* Controlling the on / off behavior of nodes therefore requires some thought and planning."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:34
-msgid "This is because viewers are very sensitive to camera movement. For instance, a Camera3D that realigns slightly every 1/10th of a second (at 10tps tick rate) will often be noticeable. You can get a much smoother result by moving the camera each frame in ``_process``, and following an interpolated target manually."
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:36
+msgid "The most common situation where you may want to perform your own interpolation is Cameras."
 msgstr ""
 
 #: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:40
+msgid "Cameras"
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:42
+msgid "In many cases, a :ref:`Camera3D<class_Camera3D>` can use automatic interpolation just like any other node. However, for best results, especially at low physics tick rates, it is recommended that you take a manual approach to camera interpolation."
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:46
+msgid "This is because viewers are very sensitive to camera movement. For instance, a Camera3D that realigns slightly every 1/10th of a second (at 10tps tick rate) will often be noticeable. You can get a much smoother result by moving the camera each frame in ``_process``, and following an interpolated target manually."
+msgstr ""
+
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:52
 msgid "Manual camera interpolation"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:43
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:55
 msgid "Ensure the camera is using global coordinate space"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:45
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:57
 msgid "The very first step when performing manual camera interpolation is to make sure the Camera3D transform is specified in *global space* rather than inheriting the transform of a moving parent. This is because feedback can occur between the movement of a parent node of a Camera3D and the movement of the camera Node itself, which can mess up the interpolation."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:51
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:63
 msgid "There are two ways of doing this:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:53
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:65
 msgid "Move the Camera3D so it is independent on its own branch, rather than being a child of a moving object."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:57
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:69
 msgid "Call :ref:`Node3D.top_level<class_Node3D_property_top_level>` and set this to ``true``, which will make the Camera ignore the transform of its parent."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:60
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:72
 msgid "Typical example"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:62
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:74
 msgid "A typical example of a custom approach is to use the ``look_at`` function in the Camera3D every frame in ``_process()`` to look at a target node (such as the player)."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:65
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:77
 msgid "But there is a problem. If we use the traditional ``get_global_transform()`` on a Camera3D \"target\" node, this transform will only focus the Camera3D on the target *at the current physics tick*. This is *not* what we want, as the camera will jump about on each physics tick as the target moves. Even though the camera may be updated each frame, this does not help give smooth motion if the *target* is only changing each physics tick."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:73
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:85
 msgid "get_global_transform_interpolated()"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:75
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:87
 msgid "What we really want to focus the camera on, is not the position of the target on the physics tick, but the *interpolated* position, i.e. the position at which the target will be rendered."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:79
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:91
 msgid "We can do this using the :ref:`Node3D.get_global_transform_interpolated<class_Node3D_method_get_global_transform_interpolated>` function. This acts exactly like getting :ref:`Node3D.global_transform<class_Node3D_property_global_transform>` but it gives you the *interpolated* transform (during a ``_process()`` call)."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:83
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:95
 msgid "``get_global_transform_interpolated()`` should only be used once or twice for special cases such as cameras. It should **not** be used all over the place in your code (both for performance reasons, and to give correct gameplay)."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:88
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:100
 msgid "Aside from exceptions like the camera, in most cases, your game logic should be in ``_physics_process()``. In game logic you should be calling ``get_global_transform()`` or ``get_transform()``, which will give the current physics transform (in global or local space respectively), which is usually what you will want for gameplay code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:95
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:107
 msgid "Example manual camera script"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:97
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:109
 msgid "Here is an example of a simple fixed camera which follows an interpolated target:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:129
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:141
 msgid "Mouse look"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:131
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:143
 msgid "Mouse look is a very common way of controlling cameras. But there is a problem. Unlike keyboard input which can be sampled periodically on the physics tick, mouse move events can come in continuously. The camera will be expected to react and follow these mouse movements on the next frame, rather than waiting until the next physics tick."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:137
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:149
 msgid "In this situation, it can be better to disable physics interpolation for the camera node (using :ref:`Node.physics_interpolation_mode<class_Node_property_physics_interpolation_mode>`) and directly apply the mouse input to the camera rotation, rather than apply it in ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:142
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:154
 msgid "Sometimes, especially with cameras, you will want to use a combination of interpolation and non-interpolation:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:145
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:157
 msgid "A first person camera may position the camera at a player location (perhaps using :ref:`Node3D.get_global_transform_interpolated<class_Node3D_method_get_global_transform_interpolated>`), but control the Camera rotation from mouse look *without* interpolation."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:148
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:160
 msgid "A third person camera may similarly determine the look at (target location) of the camera using :ref:`Node3D.get_global_transform_interpolated<class_Node3D_method_get_global_transform_interpolated>`, but position the camera using mouse look *without* interpolation."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:152
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:164
 msgid "There are many permutations and variations of camera types, but it should be clear that in many cases, disabling automatic physics interpolation and handling this yourself can give a better result."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:157
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:169
 msgid "Disabling interpolation on other nodes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:159
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:171
 msgid "Although cameras are the most common example, there are a number of cases when you may wish other nodes to control their own interpolation, or be non-interpolated. Consider for example, a player in a top view game whose rotation is controlled by mouse look. Disabling physics rotation allows the player rotation to match the mouse in real-time."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:167
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:179
 msgid "MultiMeshes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:169
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:181
 msgid "Although most visual Nodes follow the single Node single visual instance paradigm, MultiMeshes can control several instances from the same Node. Therefore, they have some extra functions for controlling interpolation functionality on a *per-instance* basis. You should explore these functions if you are using interpolated MultiMeshes."
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:175
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:187
 msgid ":ref:`MultiMesh.reset_instance_physics_interpolation<class_MultiMesh_method_reset_instance_physics_interpolation>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:176
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:188
 msgid ":ref:`MultiMesh.set_buffer_interpolated<class_MultiMesh_method_set_buffer_interpolated>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:178
+#: ../../docs/tutorials/physics/interpolation/advanced_physics_interpolation.rst:190
 msgid "Full details are in the :ref:`MultiMesh<class_MultiMesh>` documentation."
 msgstr ""

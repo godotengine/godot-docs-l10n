@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -68,15 +68,15 @@ msgid "And many of the callbacks that *do* exist in Nodes don't have any dedicat
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:41
-msgid ":ref:`Node::NOTIFICATION_PARENTED <class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers anytime one adds a child node to another node."
+msgid ":ref:`Node::NOTIFICATION_PARENTED <class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers anytime you add a child node to another node."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:44
-msgid ":ref:`Node::NOTIFICATION_UNPARENTED <class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers anytime one removes a child node from another node."
+msgid ":ref:`Node::NOTIFICATION_UNPARENTED <class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers anytime you remove a child node from another node."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:48
-msgid "One can access all these custom notifications from the universal ``_notification()`` method."
+msgid "The universal ``_notification()`` method provides access to all these custom notifications."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:52
@@ -88,7 +88,7 @@ msgid "A classic example is the :ref:`_init <class_Object_private_method__init>`
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:60
-msgid "So, in which situation should one use each of these notifications or virtual functions?"
+msgid "So, when should you use each of these notifications or virtual functions?"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:64
@@ -96,19 +96,19 @@ msgid "_process vs. _physics_process vs. \\*_input"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:66
-msgid "Use ``_process()`` when one needs a framerate-dependent delta time between frames. If code that updates object data needs to update as often as possible, this is the right place. Recurring logic checks and data caching often execute here, but it comes down to the frequency at which one needs the evaluations to update. If they don't need to execute every frame, then implementing a Timer-timeout loop is another option."
+msgid "Use ``_process()`` when you need a framerate-dependent delta time between frames. If code that updates object data needs to update as often as possible, this is the right place. Recurring logic checks and data caching often execute here, but it comes down to how often the evaluations need to update. If they don't need to execute every frame, then implementing a Timer-timeout loop is another option."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:128
-msgid "Use ``_physics_process()`` when one needs a framerate-independent delta time between frames. If code needs consistent updates over time, regardless of how fast or slow time advances, this is the right place. Recurring kinematic and object transform operations should execute here."
+msgid "Use ``_physics_process()`` when you need a framerate-independent delta time between frames. If code needs consistent updates over time, regardless of how fast or slow time advances, this is the right place. Recurring kinematic and object transform operations should execute here."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:133
-msgid "While it is possible, to achieve the best performance, one should avoid making input checks during these callbacks. ``_process()`` and ``_physics_process()`` will trigger at every opportunity (they do not \"rest\" by default). In contrast, ``*_input()`` callbacks will trigger only on frames in which the engine has actually detected the input."
+msgid "While it is possible, to achieve the best performance, you should avoid making input checks during these callbacks. ``_process()`` and ``_physics_process()`` will trigger at every opportunity (they do not \"rest\" by default). In contrast, ``*_input()`` callbacks will trigger only on frames in which the engine has actually detected the input."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:139
-msgid "One can check for input actions within the input callbacks just the same. If one wants to use delta time, one can fetch it from the related delta time methods as needed."
+msgid "You can check for input actions within the input callbacks just the same. If you want to use delta time, you can fetch it from the related delta time methods as needed."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:215
@@ -156,5 +156,5 @@ msgid "When instantiating a script or a standalone scene, nodes are not added to
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:324
-msgid "If one needs to trigger behavior that occurs as nodes parent to another, regardless of whether it occurs as part of the main/active scene or not, one can use the :ref:`PARENTED <class_Node_constant_NOTIFICATION_PARENTED>` notification. For example, here is a snippet that connects a node's method to a custom signal on the parent node without failing. Useful on data-centric nodes that one might create at runtime."
+msgid "If you need to trigger behavior that occurs as nodes parent to another, regardless of whether it occurs as part of the main/active scene or not, you can use the :ref:`PARENTED <class_Node_constant_NOTIFICATION_PARENTED>` notification. For example, here is a snippet that connects a node's method to a custom signal on the parent node without failing. Useful on data-centric nodes potentially created at runtime."
 msgstr ""

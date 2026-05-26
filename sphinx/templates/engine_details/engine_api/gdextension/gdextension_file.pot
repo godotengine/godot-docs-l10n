@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -15,310 +15,310 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:4
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:4
 msgid "The .gdextension file"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:7
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:7
 msgid "Introduction"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:9
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:9
 msgid "The ``.gdextension`` file in your project contains the instructions for how to load the GDExtension. The instructions are separated into specific sections. This page should give you a quick overview of the different options available to you. For an introduction how to get started with C++ (godot-cpp), take a look at the :ref:`GDExtension C++ Example <doc_godot_cpp_getting_started>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:15
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:15
 msgid "Configuration section"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:18
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:18
 msgid "Property"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:18
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:18
 msgid "Type"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:18
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:89
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:112
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:125
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:18
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:89
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:112
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:125
 msgid "Description"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:20
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:20
 msgid "**entry_symbol**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:20
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:24
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:27
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:20
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:24
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:27
 msgid "String"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:20
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:20
 msgid "Name of the entry function for initializing the GDExtension. This function should be defined in the ``register_types.cpp`` file when using godot-cpp. Adding this is necessary for the extension to work."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:24
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:24
 msgid "**compatibility_minimum**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:24
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:24
 msgid "Minimum compatible version. This prevents older versions of Godot from loading extensions that depend on features from newer versions of Godot. **Only supported in Godot 4.1 or later**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:27
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:27
 msgid "**compatibility_maximum**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:27
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:27
 msgid "Maximum compatible version. This prevents newer versions of Godot from loading the extension. **Only supported in Godot 4.3 or later**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:30
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:30
 msgid "**reloadable**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:30
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:34
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:30
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:34
 msgid "Boolean"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:30
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:30
 msgid "Reloads the extension upon recompilation. Reloading is supported for the godot-cpp binding in Godot 4.2 or later. Other language bindings may or may not support it as well. This flag should be mainly used for developing or debugging an extension."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:34
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:34
 msgid "**android_aar_plugin**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:34
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:34
 msgid "The GDExtension is part of a :ref:`v2 Android plugin <doc_android_plugin>`. During export this flag will indicate to the editor that the GDExtension native shared libraries are exported by the Android plugin AAR binaries."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:40
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:40
 msgid "Libraries section"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:42
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:42
 msgid "In this section you can set the paths to the compiled binaries of your GDExtension libraries. By specifying feature flags you can filter which version should be loaded and exported with your game depending on which feature flags are active. Every feature flag must match to Godot's feature flags or your custom export flags to be loaded in an exported game. For instance ``macos.debug`` means that it will be loaded if Godot has both the ``macos`` and ``debug`` flag active. Each line of the section is evaluated from top to bottom."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:49
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:49
 msgid "Here is an example of what that can look like:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:69
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:69
 msgid "Paths can be relative or absolute (starting with ``res://``). Relative paths are recommended, as they allow the extension to keep working if it's installed to a different folder than what's specified in the path."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:73
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:73
 msgid "Entries are matched in order, so if two sets of feature tags could match the same system, be sure to put the more specific ones first:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:83
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:83
 msgid "Here are lists of some of the available built-in options (for more look at the :ref:`feature tags <doc_feature_tags>`):"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:86
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:86
 msgid "Running system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:89
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:112
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:125
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:89
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:112
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:125
 msgid "Flag"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:91
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:91
 msgid "**windows**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:91
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:91
 msgid "Windows operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:93
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:93
 msgid "**macos**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:93
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:93
 msgid "Mac operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:95
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:95
 msgid "**linux**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:95
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:95
 msgid "Linux operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:97
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:97
 msgid "**bsd**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:97
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:97
 msgid "BSD operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:99
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:99
 msgid "**linuxbsd**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:99
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:99
 msgid "Linux or BSD operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:101
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:101
 msgid "**android**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:101
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:101
 msgid "Android operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:103
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:103
 msgid "**ios**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:103
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:103
 msgid "iOS operating system"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:105
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:105
 msgid "**web**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:105
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:105
 msgid "Web browser"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:109
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:109
 msgid "Build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:114
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:114
 msgid "**debug**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:114
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:114
 msgid "Build with debugging features (editor builds always have debugging features)"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:116
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:116
 msgid "**release**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:116
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:116
 msgid "Optimized build without debugging features"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:118
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:118
 msgid "**editor**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:118
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:118
 msgid "Editor build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:122
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:122
 msgid "Architecture"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:127
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:127
 msgid "**double**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:127
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:127
 msgid "double-precision build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:129
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:129
 msgid "**single**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:129
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:129
 msgid "single-precision build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:131
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:131
 msgid "**x86_64**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:131
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:131
 msgid "64-bit x86 build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:133
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:133
 msgid "**arm64**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:133
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:133
 msgid "64-bit ARM build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:135
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:135
 msgid "**rv64**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:135
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:135
 msgid "64-bit RISC-V build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:137
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:137
 msgid "**riscv**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:137
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:137
 msgid "RISC-V build (any bitness)"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:139
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:139
 msgid "**wasm32**"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:139
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:139
 msgid "32-bit WebAssembly build"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:143
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:143
 msgid "Icons section"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:145
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:145
 msgid "By default, Godot uses the Node icon in the scene dock for GDExtension nodes. A custom icon can be set by reference to its name and resource path of an SVG file."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:148
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:148
 msgid "For example:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:156
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:156
 msgid "The path should point to a 16×16 pixel SVG image, with two options enabled on the image in the Import dock:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:159
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:159
 msgid "**Editor > Scale with Editor Scale**."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:160
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:160
 msgid "**Editor > Convert Colors with Editor Theme**."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:162
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:162
 msgid "Enabling both options ensures the icon behaves as closely as possible to the stock editor icons. Read the guide for :ref:`creating icons <doc_editor_icons>` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:167
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:167
 msgid "Dependencies section"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:169
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:169
 msgid "In this section, you set the paths of the GDExtension dependencies. This is used internally to export the dependencies when exporting your game executable. You are able to set which dependency is loaded depending on the feature flags of the exported executable. In addition, you are able to set an optional subdirectory to move your dependencies into. If no path is supplied, Godot will move the libraries into the same directory as your game executable."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/gdextension_file.rst:176
+#: ../../docs/engine_details/engine_api/gdextension/gdextension_file.rst:176
 msgid "On macOS, it is necessary to have shared libraries inside a folder called ``Frameworks`` with a directory structure like this: ``Game.app/Contents/Frameworks``."
 msgstr ""

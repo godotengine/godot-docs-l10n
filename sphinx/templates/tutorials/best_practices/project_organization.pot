@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -76,49 +76,49 @@ msgid "Godot versions prior to 3.0 did the import process from files outside the
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/project_organization.rst:71
-msgid "Because of this, assets are now transparently imported from within the project folder."
+msgid "Because of this, assets are now transparently imported from within the project folder. See :ref:`doc_import_process` for more details on how importing works in Godot."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:75
+#: ../../docs/tutorials/best_practices/project_organization.rst:78
 msgid "Ignoring specific folders"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:77
+#: ../../docs/tutorials/best_practices/project_organization.rst:80
 msgid "To prevent Godot from importing files contained in a specific folder, create an empty file called ``.gdignore`` in the folder (the leading ``.`` is required). This can be useful to speed up the initial project importing."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:83
-msgid "To create a file whose name starts with a dot on Windows, place a dot at both the beginning and end of the filename (\".gdignore.\"). Windows will automatically remove the trailing dot when you confirm the name."
-msgstr ""
-
-#: ../../docs/tutorials/best_practices/project_organization.rst:87
-msgid "Alternatively, you can use a text editor such as Notepad++ or use the following command in a command prompt: ``type nul > .gdignore``"
+#: ../../docs/tutorials/best_practices/project_organization.rst:86
+msgid "To create a file whose name starts with a dot on Windows, place a dot at both the beginning and end of the filename (``.gdignore.``). Windows will automatically remove the trailing dot when you confirm the name."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/project_organization.rst:90
+msgid "Alternatively, you can use a text editor such as Notepad++ or use the following command in a command prompt: ``type nul > .gdignore``"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/project_organization.rst:93
 msgid "Once the folder is ignored, resources in that folder can't be loaded anymore using the ``load()`` and ``preload()`` methods. Ignoring a folder will also automatically hide it from the FileSystem dock, which can be useful to reduce clutter."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:94
+#: ../../docs/tutorials/best_practices/project_organization.rst:97
 msgid "Note that the ``.gdignore`` file's contents are ignored, which is why the file should be empty. It does not support patterns like ``.gitignore`` files do."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:100
+#: ../../docs/tutorials/best_practices/project_organization.rst:103
 msgid "Case sensitivity"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:102
+#: ../../docs/tutorials/best_practices/project_organization.rst:105
 msgid "Windows and recent macOS versions use case-insensitive filesystems by default, whereas Linux distributions use a case-sensitive filesystem by default. This can cause issues after exporting a project, since Godot's PCK virtual filesystem is case-sensitive. To avoid this, it's recommended to stick to ``snake_case`` naming for all files in the project (and lowercase characters in general)."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:111
+#: ../../docs/tutorials/best_practices/project_organization.rst:114
 msgid "You can break this rule when style guides say otherwise (such as the C# style guide). Still, be consistent to avoid mistakes."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:114
+#: ../../docs/tutorials/best_practices/project_organization.rst:117
 msgid "On Windows 10, to further avoid mistakes related to case sensitivity, you can also make the project folder case-sensitive. After enabling the Windows Subsystem for Linux feature, run the following command in a PowerShell window:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/project_organization.rst:126
+#: ../../docs/tutorials/best_practices/project_organization.rst:129
 msgid "If you haven't enabled the Windows Subsystem for Linux, you can enter the following line in a PowerShell window *running as Administrator* then reboot when asked:"
 msgstr ""

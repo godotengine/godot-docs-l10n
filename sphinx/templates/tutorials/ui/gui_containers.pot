@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -164,11 +164,11 @@ msgid "Split Container"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:122
-msgid "Accepts only one or two children controls, then places them side to side with a divisor (via :ref:`HSplitContainer <class_HSplitContainer>` and :ref:`VSplitContainer <class_VSplitContainer>`). Respects both horizontal and vertical flags, as well as *Ratio*."
+msgid "Arranges child controls vertically or horizontally and creates grabbers between them (via :ref:`HSplitContainer <class_HSplitContainer>` and :ref:`VSplitContainer <class_VSplitContainer>`). Respects both horizontal and vertical expand flags, as well as *Stretch Ratio*."
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:128
-msgid "The divisor can be dragged around to change the size relation between both children:"
+msgid "The grabbers can be dragged around to change the size relation between the children:"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:134

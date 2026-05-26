@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:334
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:329
 msgid "image0"
 msgstr ""
 
@@ -51,7 +51,7 @@ msgstr ""
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:335
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:330
 msgid "image1"
 msgstr ""
 
@@ -63,7 +63,7 @@ msgstr ""
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:336
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:331
 msgid "image2"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:337
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
 msgid "image4"
 msgstr ""
 
@@ -108,7 +108,7 @@ msgid "When you keep instancing an object, there's a technique you can use to av
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:73
-msgid "When working with GDScript, you don't need to worry about this. The main reason to use pools is to avoid freezes with garbage-collected languages like C# or Lua. GDScript uses a different technique to manage memory, reference counting, which doesn't have that caveat. You can learn more about that here: :ref:`doc_gdscript_basics_memory_management`."
+msgid "When working with GDScript, this usually isn't needed. The main reason to use pools is to avoid freezes with garbage-collected languages like C# or Lua. GDScript uses a different technique to manage memory, reference counting, which doesn't have that caveat. You can learn more about that here: :ref:`doc_gdscript_basics_memory_management`."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:79
@@ -119,7 +119,7 @@ msgstr ""
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:338
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:333
 msgid "image5"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "|image6|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:339
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:334
 msgid "image6"
 msgstr ""
 
@@ -151,7 +151,7 @@ msgstr ""
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:340
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:335
 msgid "image7"
 msgstr ""
 
@@ -188,49 +188,37 @@ msgid "We still have to destroy the mobs when they leave the screen. To do so, w
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:219
-msgid "Head back to the 3D viewport by clicking on the *3D* label at the top of the editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Opt + 2` on macOS)."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:222
-msgid "|image8|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:341
-msgid "image8"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:224
 msgid "Select the :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` node and on the right side of the interface, navigate to the *Signals* dock. Double-click the ``screen_exited()`` signal."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:222
 msgid "|image9|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:342
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:336
 msgid "image9"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:229
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:224
 msgid "Connect the signal to the ``Mob``"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:231
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:226
 msgid "|image10|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:343
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:337
 msgid "image10"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:233
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:228
 msgid "This will add a new function for you in your mob script, ``_on_visible_on_screen_notifier_3d_screen_exited()``. From it, call the ``queue_free()`` method. This function destroys the instance it's called on."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:252
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:247
 msgid "Our monster is ready to enter the game! In the next part, you will spawn monsters in the game level."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:255
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:250
 msgid "Here is the complete ``mob.gd`` script for reference."
 msgstr ""

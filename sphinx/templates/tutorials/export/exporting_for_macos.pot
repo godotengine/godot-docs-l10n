@@ -6,7 +6,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 4.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
@@ -44,577 +44,581 @@ msgid "A valid and unique ``Bundle identifier`` should be set in the ``Applicati
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:34
+msgid "A valid bundle ID can only contain alphanumeric characters, hyphens, and periods (``A-Z``, ``a-z``, ``0-9``, ``-``, and ``.``). Apple recommends using reverse-DNS format (e.g. ``com.example.your-game``) of a domain you own, so that your bundle ID is guaranteed to be unique. Bundle IDs are case-insensitive. See `CFBundleIdentifier <https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier>`__."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_macos.rst:40
 msgid "Projects exported without code signing and notarization will be blocked by Gatekeeper if they are downloaded from unknown sources, see the :ref:`Running Godot apps on macOS <doc_running_on_macos>` page for more information."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:37
+#: ../../docs/tutorials/export/exporting_for_macos.rst:43
 msgid "Code signing and notarization"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:39
+#: ../../docs/tutorials/export/exporting_for_macos.rst:45
 msgid "By default, macOS will run only applications that are signed and notarized. If you use any other signing configuration, see :ref:`Running Godot apps on macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:41
+#: ../../docs/tutorials/export/exporting_for_macos.rst:47
 msgid "To notarize an app, you **must** have a valid `Apple Developer ID Certificate <https://developer.apple.com/>`__."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:44
+#: ../../docs/tutorials/export/exporting_for_macos.rst:50
 msgid "If you have an Apple Developer ID Certificate and exporting from macOS"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:46
-msgid "Install `Xcode <https://developer.apple.com/xcode/>`__ command line tools and open Xcode at least once or run the ``sudo xcodebuild -license accept`` command to accept license agreement."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_macos.rst:49
-#: ../../docs/tutorials/export/exporting_for_macos.rst:73
-msgid "To sign exported app"
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_macos.rst:51
-msgid "Select ``Xcode codesign`` in the ``Code Signing > Codesign`` option."
-msgstr ""
-
 #: ../../docs/tutorials/export/exporting_for_macos.rst:52
-msgid "Set valid Apple ID certificate identity (certificate \"Common Name\") in the ``Code Signing > Identity`` section."
+msgid "Install `Xcode <https://developer.apple.com/xcode/>`__ command line tools and open Xcode at least once or run the ``sudo xcodebuild -license accept`` command to accept license agreement."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:55
 #: ../../docs/tutorials/export/exporting_for_macos.rst:79
-msgid "To notarize exported app"
+msgid "To sign exported app"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:57
-msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
+msgid "Select ``Xcode codesign`` in the ``Code Signing > Codesign`` option."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:58
-#: ../../docs/tutorials/export/exporting_for_macos.rst:82
-msgid "Disable the ``Debugging`` entitlement."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_macos.rst:59
-msgid "Set valid Apple ID login / app. specific password or `App Store Connect <https://developer.apple.com/documentation/appstoreconnectapi>`__ API UUID / Key in the ``Notarization`` section."
+msgid "Set valid Apple ID certificate identity (certificate \"Common Name\") in the ``Code Signing > Identity`` section."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:61
-msgid "You can use the ``xcrun notarytool history`` command to check notarization status and use the ``xcrun notarytool log {ID}`` command to download the notarization log."
+#: ../../docs/tutorials/export/exporting_for_macos.rst:85
+msgid "To notarize exported app"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:63
-msgid "If you encounter notarization issues, see `Resolving common notarization issues <https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues>`__ for more info."
+msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_macos.rst:64
+#: ../../docs/tutorials/export/exporting_for_macos.rst:88
+msgid "Disable the ``Debugging`` entitlement."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:65
+msgid "Set valid Apple ID login / app. specific password or `App Store Connect <https://developer.apple.com/documentation/appstoreconnectapi>`__ API UUID / Key in the ``Notarization`` section."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_macos.rst:67
+msgid "You can use the ``xcrun notarytool history`` command to check notarization status and use the ``xcrun notarytool log {ID}`` command to download the notarization log."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_macos.rst:69
+msgid "If you encounter notarization issues, see `Resolving common notarization issues <https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues>`__ for more info."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_macos.rst:71
 msgid "After notarization is completed, `staple the ticket <https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/customizing_the_notarization_workflow>`__ to the exported project."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:68
+#: ../../docs/tutorials/export/exporting_for_macos.rst:74
 msgid "If you have an Apple Developer ID Certificate and exporting from Linux or Windows"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:70
+#: ../../docs/tutorials/export/exporting_for_macos.rst:76
 msgid "Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the ``Editor Settings > Export > macOS > rcodesign``."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:75
+#: ../../docs/tutorials/export/exporting_for_macos.rst:81
 msgid "Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:76
+#: ../../docs/tutorials/export/exporting_for_macos.rst:82
 msgid "Set valid Apple ID PKCS #12 certificate file and password in the ``Code Signing`` section."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:81
+#: ../../docs/tutorials/export/exporting_for_macos.rst:87
 msgid "Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:83
+#: ../../docs/tutorials/export/exporting_for_macos.rst:89
 msgid "Set valid `App Store Connect <https://developer.apple.com/documentation/appstoreconnectapi>`__ API UUID / Key in the ``Notarization`` section."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:85
+#: ../../docs/tutorials/export/exporting_for_macos.rst:91
 msgid "You can use the ``rcodesign notary-log`` command to check notarization status."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:87
+#: ../../docs/tutorials/export/exporting_for_macos.rst:93
 msgid "After notarization is completed, use the ``rcodesign staple`` command to staple the ticket to the exported project."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:90
+#: ../../docs/tutorials/export/exporting_for_macos.rst:96
 msgid "If you do not have an Apple Developer ID Certificate"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:92
+#: ../../docs/tutorials/export/exporting_for_macos.rst:98
 msgid "Select ``Built-in (ad-hoc only)`` in the ``Code Signing > Codesign`` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:93
+#: ../../docs/tutorials/export/exporting_for_macos.rst:99
 msgid "Select ``Disabled`` in the ``Notarization > Notarization`` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:95
+#: ../../docs/tutorials/export/exporting_for_macos.rst:101
 msgid "In this case Godot will use an ad-hoc signature, which will make running an exported app easier for the end users, see the :ref:`Running Godot apps on macOS <doc_running_on_macos>` page for more information."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:99
+#: ../../docs/tutorials/export/exporting_for_macos.rst:105
 msgid "Signing Options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:102
-#: ../../docs/tutorials/export/exporting_for_macos.rst:122
+#: ../../docs/tutorials/export/exporting_for_macos.rst:108
+#: ../../docs/tutorials/export/exporting_for_macos.rst:128
 msgid "Option"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:102
-#: ../../docs/tutorials/export/exporting_for_macos.rst:122
-#: ../../docs/tutorials/export/exporting_for_macos.rst:155
-#: ../../docs/tutorials/export/exporting_for_macos.rst:198
+#: ../../docs/tutorials/export/exporting_for_macos.rst:108
+#: ../../docs/tutorials/export/exporting_for_macos.rst:128
+#: ../../docs/tutorials/export/exporting_for_macos.rst:161
+#: ../../docs/tutorials/export/exporting_for_macos.rst:204
 msgid "Description"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:104
+#: ../../docs/tutorials/export/exporting_for_macos.rst:110
 msgid "Codesign"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:104
+#: ../../docs/tutorials/export/exporting_for_macos.rst:110
 msgid "Tool to use for code signing."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:106
+#: ../../docs/tutorials/export/exporting_for_macos.rst:112
 msgid "Identity"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:106
+#: ../../docs/tutorials/export/exporting_for_macos.rst:112
 msgid "The \"Full Name\" or \"Common Name\" of the signing identity, store in the macOS keychain. [1]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:108
+#: ../../docs/tutorials/export/exporting_for_macos.rst:114
 msgid "Certificate File"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:108
+#: ../../docs/tutorials/export/exporting_for_macos.rst:114
 msgid "The PKCS #12 certificate file. [2]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:110
+#: ../../docs/tutorials/export/exporting_for_macos.rst:116
 msgid "Certificate Password"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:110
+#: ../../docs/tutorials/export/exporting_for_macos.rst:116
 msgid "Password for the certificate file. [2]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:112
+#: ../../docs/tutorials/export/exporting_for_macos.rst:118
 msgid "Custom Options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:112
+#: ../../docs/tutorials/export/exporting_for_macos.rst:118
 msgid "Array of command line arguments passed to the code signing tool."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:115
+#: ../../docs/tutorials/export/exporting_for_macos.rst:121
 msgid "This option is visible only when signing with Xcode codesign."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:116
+#: ../../docs/tutorials/export/exporting_for_macos.rst:122
 msgid "These options are visible only when signing with PyOxidizer rcodesign."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:119
+#: ../../docs/tutorials/export/exporting_for_macos.rst:125
 msgid "Notarization Options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:124
+#: ../../docs/tutorials/export/exporting_for_macos.rst:130
 msgid "Notarization"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:124
+#: ../../docs/tutorials/export/exporting_for_macos.rst:130
 msgid "Tool to use for notarization."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:126
+#: ../../docs/tutorials/export/exporting_for_macos.rst:132
 msgid "Apple ID Name"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:126
+#: ../../docs/tutorials/export/exporting_for_macos.rst:132
 msgid "Apple ID account name (email address). [3]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:128
+#: ../../docs/tutorials/export/exporting_for_macos.rst:134
 msgid "Apple ID Password"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:128
+#: ../../docs/tutorials/export/exporting_for_macos.rst:134
 msgid "Apple ID app-specific password. See `Using app-specific passwords <https://support.apple.com/en-us/HT204397>`__ to enable two-factor authentication and create app password. [3]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:130
+#: ../../docs/tutorials/export/exporting_for_macos.rst:136
 msgid "Apple Team ID"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:130
+#: ../../docs/tutorials/export/exporting_for_macos.rst:136
 msgid "Team ID (\"Organization Unit\"), if your Apple ID belongs to multiple teams (optional). [3]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:132
+#: ../../docs/tutorials/export/exporting_for_macos.rst:138
 msgid "API UUID"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:132
+#: ../../docs/tutorials/export/exporting_for_macos.rst:138
 msgid "Apple `App Store Connect <https://developer.apple.com/documentation/appstoreconnectapi>`__ API issuer UUID."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:134
+#: ../../docs/tutorials/export/exporting_for_macos.rst:140
 msgid "API Key"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:134
+#: ../../docs/tutorials/export/exporting_for_macos.rst:140
 msgid "Apple `App Store Connect <https://developer.apple.com/documentation/appstoreconnectapi>`__ API key."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:139
+#: ../../docs/tutorials/export/exporting_for_macos.rst:145
 msgid "You should set either Apple ID Name/Password or App Store Connect API UUID/Key."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:141
+#: ../../docs/tutorials/export/exporting_for_macos.rst:147
 msgid "These options are visible only when notarizing with Xcode altool."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:143
+#: ../../docs/tutorials/export/exporting_for_macos.rst:149
 msgid "See `Notarizing macOS Software Before Distribution <https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution?language=objc>`__ for more info."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:146
+#: ../../docs/tutorials/export/exporting_for_macos.rst:152
 msgid "Entitlements"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:149
+#: ../../docs/tutorials/export/exporting_for_macos.rst:155
 msgid "Hardened Runtime Entitlements"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:151
+#: ../../docs/tutorials/export/exporting_for_macos.rst:157
 msgid "Hardened Runtime entitlements manage security options and resource access policy. See `Hardened Runtime <https://developer.apple.com/documentation/security/hardened_runtime?language=objc>`__ for more info."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:155
-#: ../../docs/tutorials/export/exporting_for_macos.rst:198
+#: ../../docs/tutorials/export/exporting_for_macos.rst:161
+#: ../../docs/tutorials/export/exporting_for_macos.rst:204
 msgid "Entitlement"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:157
+#: ../../docs/tutorials/export/exporting_for_macos.rst:163
 msgid "Allow JIT Code Execution [4]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:157
+#: ../../docs/tutorials/export/exporting_for_macos.rst:163
 msgid "Allows creating writable and executable memory for JIT code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:159
+#: ../../docs/tutorials/export/exporting_for_macos.rst:165
 msgid "Allow Unsigned Executable Memory [4]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:159
+#: ../../docs/tutorials/export/exporting_for_macos.rst:165
 msgid "Allows creating writable and executable memory without JIT restrictions. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:161
+#: ../../docs/tutorials/export/exporting_for_macos.rst:167
 msgid "Allow DYLD Environment Variables [4]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:161
+#: ../../docs/tutorials/export/exporting_for_macos.rst:167
 msgid "Allows app to uss dynamic linker environment variables to inject code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:163
+#: ../../docs/tutorials/export/exporting_for_macos.rst:169
 msgid "Disable Library Validation"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:163
+#: ../../docs/tutorials/export/exporting_for_macos.rst:169
 msgid "Allows app to load arbitrary libraries and frameworks. Enable it if you are using GDExtension add-ons or ad-hoc signing, or want to support user-provided external add-ons."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:165
+#: ../../docs/tutorials/export/exporting_for_macos.rst:171
 msgid "Audio Input"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:165
+#: ../../docs/tutorials/export/exporting_for_macos.rst:171
 msgid "Enable if you need to use the microphone or other audio input sources, if it's enabled you should also provide usage message in the `privacy/microphone_usage_description` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:167
+#: ../../docs/tutorials/export/exporting_for_macos.rst:173
 msgid "Camera"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:167
+#: ../../docs/tutorials/export/exporting_for_macos.rst:173
 msgid "Enable if you need to use the camera, if it's enabled you should also provide usage message in the `privacy/camera_usage_description` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:169
+#: ../../docs/tutorials/export/exporting_for_macos.rst:175
 msgid "Location"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:169
+#: ../../docs/tutorials/export/exporting_for_macos.rst:175
 msgid "Enable if you need to use location information from Location Services, if it's enabled you should also provide usage message in the `privacy/location_usage_description` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:171
+#: ../../docs/tutorials/export/exporting_for_macos.rst:177
 msgid "Address Book"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:171
+#: ../../docs/tutorials/export/exporting_for_macos.rst:177
 msgid "[5]_ Enable to allow access contacts in the user's address book, if it's enabled you should also provide usage message in the `privacy/address_book_usage_description` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:173
+#: ../../docs/tutorials/export/exporting_for_macos.rst:179
 msgid "Calendars"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:173
+#: ../../docs/tutorials/export/exporting_for_macos.rst:179
 msgid "[5]_ Enable to allow access to the user's calendar, if it's enabled you should also provide usage message in the `privacy/calendar_usage_description` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:175
+#: ../../docs/tutorials/export/exporting_for_macos.rst:181
 msgid "Photo Library"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:175
+#: ../../docs/tutorials/export/exporting_for_macos.rst:181
 msgid "[5]_ Enable to allow access to the user's Photos library, if it's enabled you should also provide usage message in the `privacy/photos_library_usage_description` option."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:177
+#: ../../docs/tutorials/export/exporting_for_macos.rst:183
 msgid "Apple Events"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:177
+#: ../../docs/tutorials/export/exporting_for_macos.rst:183
 msgid "[5]_ Enable to allow app to send Apple events to other apps."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:179
+#: ../../docs/tutorials/export/exporting_for_macos.rst:185
 msgid "Debugging"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:179
+#: ../../docs/tutorials/export/exporting_for_macos.rst:185
 msgid "[6]_ You can temporarily enable this entitlement to use native debugger (GDB, LLDB) with the exported app. This entitlement should be disabled for production export."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:182
+#: ../../docs/tutorials/export/exporting_for_macos.rst:188
 msgid "The ``Allow JIT Code Execution``, ``Allow Unsigned Executable Memory`` and ``Allow DYLD Environment Variables`` entitlements are always enabled for the Godot Mono exports, and are not visible in the export options."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:183
+#: ../../docs/tutorials/export/exporting_for_macos.rst:189
 msgid "These features aren't supported by Godot out of the box, enable them only if you are using add-ons which require them."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:184
+#: ../../docs/tutorials/export/exporting_for_macos.rst:190
 msgid "To notarize an app, you must disable the ``Debugging`` entitlement."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:187
+#: ../../docs/tutorials/export/exporting_for_macos.rst:193
 msgid "App Sandbox Entitlement"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:189
+#: ../../docs/tutorials/export/exporting_for_macos.rst:195
 msgid "The App Sandbox restricts access to user data, networking and devices. Sandboxed apps can't access most of the file system, can't use custom file dialogs and execute binaries (using ``OS.execute`` and ``OS.create_process``) outside the ``.app`` bundle. See `App Sandbox <https://developer.apple.com/documentation/security/app_sandbox?language=objc>`__ for more info."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:195
+#: ../../docs/tutorials/export/exporting_for_macos.rst:201
 msgid "To distribute an app through the App Store, you must enable the App Sandbox."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:200
+#: ../../docs/tutorials/export/exporting_for_macos.rst:206
 msgid "Enabled"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:200
+#: ../../docs/tutorials/export/exporting_for_macos.rst:206
 msgid "Enables App Sandbox."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:202
+#: ../../docs/tutorials/export/exporting_for_macos.rst:208
 msgid "Network Server"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:202
+#: ../../docs/tutorials/export/exporting_for_macos.rst:208
 msgid "Enable to allow app to listen for incoming network connections."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:204
+#: ../../docs/tutorials/export/exporting_for_macos.rst:210
 msgid "Network Client"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:204
+#: ../../docs/tutorials/export/exporting_for_macos.rst:210
 msgid "Enable to allow app to establish outgoing network connections."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:206
+#: ../../docs/tutorials/export/exporting_for_macos.rst:212
 msgid "Device USB"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:206
+#: ../../docs/tutorials/export/exporting_for_macos.rst:212
 msgid "Enable to allow app to interact with USB devices. This entitlement is required to use wired controllers."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:208
+#: ../../docs/tutorials/export/exporting_for_macos.rst:214
 msgid "Device Bluetooth"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:208
+#: ../../docs/tutorials/export/exporting_for_macos.rst:214
 msgid "Enable to allow app to interact with Bluetooth devices. This entitlement is required to use wireless controllers."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:210
+#: ../../docs/tutorials/export/exporting_for_macos.rst:216
 msgid "Files Downloads [7]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:210
+#: ../../docs/tutorials/export/exporting_for_macos.rst:216
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:212
+#: ../../docs/tutorials/export/exporting_for_macos.rst:218
 msgid "Files Pictures [7]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:212
+#: ../../docs/tutorials/export/exporting_for_macos.rst:218
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:214
+#: ../../docs/tutorials/export/exporting_for_macos.rst:220
 msgid "Files Music [7]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:214
+#: ../../docs/tutorials/export/exporting_for_macos.rst:220
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:216
+#: ../../docs/tutorials/export/exporting_for_macos.rst:222
 msgid "Files Movies [7]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:216
+#: ../../docs/tutorials/export/exporting_for_macos.rst:222
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:218
+#: ../../docs/tutorials/export/exporting_for_macos.rst:224
 msgid "Files User Selected [7]_"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:218
+#: ../../docs/tutorials/export/exporting_for_macos.rst:224
 msgid "Allows read or write access to arbitrary folder. To gain access, a folder must be selected from the native file dialog by the user."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:220
+#: ../../docs/tutorials/export/exporting_for_macos.rst:226
 msgid "Helper Executable"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:220
+#: ../../docs/tutorials/export/exporting_for_macos.rst:226
 msgid "List of helper executables to embedded to the app bundle. Sandboxed app are limited to execute only these executable."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:223
+#: ../../docs/tutorials/export/exporting_for_macos.rst:229
 msgid "You can optionally provide usage messages for various folders in the `privacy/*_folder_usage_description` options."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:227
+#: ../../docs/tutorials/export/exporting_for_macos.rst:233
 msgid "You can override default entitlements by selecting custom entitlements file, in this case all other entitlement are ignored."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:230
+#: ../../docs/tutorials/export/exporting_for_macos.rst:236
 msgid "Environment variables"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:232
+#: ../../docs/tutorials/export/exporting_for_macos.rst:238
 msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:236
+#: ../../docs/tutorials/export/exporting_for_macos.rst:242
 msgid "macOS export environment variables"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:239
+#: ../../docs/tutorials/export/exporting_for_macos.rst:245
 msgid "Export option"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:240
+#: ../../docs/tutorials/export/exporting_for_macos.rst:246
 msgid "Environment variable"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:241
+#: ../../docs/tutorials/export/exporting_for_macos.rst:247
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:242
+#: ../../docs/tutorials/export/exporting_for_macos.rst:248
 msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:243
+#: ../../docs/tutorials/export/exporting_for_macos.rst:249
 msgid "Options / Codesign / Certificate File"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:244
+#: ../../docs/tutorials/export/exporting_for_macos.rst:250
 msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:245
+#: ../../docs/tutorials/export/exporting_for_macos.rst:251
 msgid "Options / Codesign / Certificate Password"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:246
+#: ../../docs/tutorials/export/exporting_for_macos.rst:252
 msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:247
+#: ../../docs/tutorials/export/exporting_for_macos.rst:253
 msgid "Options / Codesign / Provisioning Profile"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:248
+#: ../../docs/tutorials/export/exporting_for_macos.rst:254
 msgid "``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:249
+#: ../../docs/tutorials/export/exporting_for_macos.rst:255
 msgid "Options / Notarization / API UUID"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:250
+#: ../../docs/tutorials/export/exporting_for_macos.rst:256
 msgid "``GODOT_MACOS_NOTARIZATION_API_UUID``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:251
+#: ../../docs/tutorials/export/exporting_for_macos.rst:257
 msgid "Options / Notarization / API Key"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:252
+#: ../../docs/tutorials/export/exporting_for_macos.rst:258
 msgid "``GODOT_MACOS_NOTARIZATION_API_KEY``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:253
+#: ../../docs/tutorials/export/exporting_for_macos.rst:259
 msgid "Options / Notarization / API Key ID"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:254
+#: ../../docs/tutorials/export/exporting_for_macos.rst:260
 msgid "``GODOT_MACOS_NOTARIZATION_API_KEY_ID``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:255
+#: ../../docs/tutorials/export/exporting_for_macos.rst:261
 msgid "Options / Notarization / Apple ID Name"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:256
+#: ../../docs/tutorials/export/exporting_for_macos.rst:262
 msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:257
+#: ../../docs/tutorials/export/exporting_for_macos.rst:263
 msgid "Options / Notarization / Apple ID Password"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:258
+#: ../../docs/tutorials/export/exporting_for_macos.rst:264
 msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:261
+#: ../../docs/tutorials/export/exporting_for_macos.rst:267
 msgid "Export options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_macos.rst:263
+#: ../../docs/tutorials/export/exporting_for_macos.rst:269
 msgid "You can find a full list of export options available in the :ref:`class_EditorExportPlatformMacOS` class reference."
 msgstr ""
