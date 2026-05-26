@@ -256,7 +256,7 @@ Reglas de alineación de relleno de línea.
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al descenso de la línea (line descent). Este valor puede ser negativo.
 
 .. rst-class:: classref-item-separator
 
@@ -411,7 +411,7 @@ Limpia el párrafo de texto (elimina el texto y los objetos en línea).
 
 |void| **clear_dropcap**\ (\ ) :ref:`🔗<class_TextParagraph_method_clear_dropcap>`
 
-Removes dropcap.
+Elimina la letra capital.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Removes dropcap.
 
 |void| **draw**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), dc_color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw>`
 
-Draw all lines of the text and drop cap into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dibuja todas las líneas del texto y la letra capital en un elemento del canvas en una posición dada, con ``color``. ``pos`` especifica la esquina superior izquierda del cuadro delimitador. Si ``oversampling`` es mayor que cero, se utiliza como factor de sobremuestreo de la fuente, de lo contrario, se utilizan los ajustes de sobremuestreo del viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -435,7 +435,7 @@ Draw all lines of the text and drop cap into a canvas item at a given position, 
 
 |void| **draw_dropcap**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_dropcap>`
 
-Draw drop cap into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dibuja la letra capital en un elemento del canvas en una posición dada, con ``color``. ``pos`` especifica la esquina superior izquierda del cuadro delimitador. Si ``oversampling`` es mayor que cero, se utiliza como factor de sobremuestreo de la fuente, de lo contrario, se utilizan los ajustes de sobremuestreo del viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ Draw drop cap into a canvas item at a given position, with ``color``. ``pos`` sp
 
 |void| **draw_dropcap_outline**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_dropcap_outline>`
 
-Draw drop cap outline into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dibuja el contorno de la letra capital en un elemento del canvas en una posición dada, con ``color``. ``pos`` especifica la esquina superior izquierda del cuadro delimitador. Si ``oversampling`` es mayor que cero, se utiliza como factor de sobremuestreo de la fuente, de lo contrario, se utilizan los ajustes de sobremuestreo del viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ Draw drop cap outline into a canvas item at a given position, with ``color``. ``
 
 |void| **draw_line**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, line\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_line>`
 
-Draw single line of text into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dibuja una sola línea de texto en un elemento del canvas en una posición dada, con ``color``. ``pos`` especifica la esquina superior izquierda del cuadro delimitador. Si ``oversampling`` es mayor que cero, se utiliza como factor de sobremuestreo de la fuente, de lo contrario, se utilizan los ajustes de sobremuestreo del viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Draw single line of text into a canvas item at a given position, with ``color``.
 
 |void| **draw_line_outline**\ (\ canvas\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, line\: :ref:`int<class_int>`, outline_size\: :ref:`int<class_int>` = 1, color\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_TextParagraph_method_draw_line_outline>`
 
-Draw outline of the single line of text into a canvas item at a given position, with ``color``. ``pos`` specifies the top left corner of the bounding box. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dibuja el contorno de una sola línea de texto en un elemento del canvas en una posición dada, con ``color``. ``pos`` especifica la esquina superior izquierda del cuadro delimitador. Si ``oversampling`` es mayor que cero, se utiliza como factor de sobremuestreo de la fuente, de lo contrario, se utilizan los ajustes de sobremuestreo del viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -495,7 +495,7 @@ Dibuja los contornos de todas las líneas del texto y la letra capital en un ele
 
 :ref:`TextParagraph<class_TextParagraph>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextParagraph_method_duplicate>`
 
-Duplicates this **TextParagraph**.
+Duplica este **TextParagraph**.
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ Devuelve el tamaño del cuadro delimitador de la letra capital.
 
 :ref:`Direction<enum_TextServer_Direction>` **get_inferred_direction**\ (\ ) |const| :ref:`🔗<class_TextParagraph_method_get_inferred_direction>`
 
-Returns the text writing direction inferred by the BiDi algorithm.
+Devuelve la dirección de escritura del texto inferida por el algoritmo BiDi.
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ Returns the text writing direction inferred by the BiDi algorithm.
 
 :ref:`float<class_float>` **get_line_ascent**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextParagraph_method_get_line_ascent>`
 
-Returns the text line ascent (number of pixels above the baseline for horizontal layout or to the left of baseline for vertical).
+Devuelve el ascenso de la línea de texto (número de píxeles por encima de la línea de base para el diseño horizontal o a la izquierda de la línea de base para el diseño vertical).
 
 .. rst-class:: classref-item-separator
 
@@ -591,7 +591,7 @@ Devuelve el descenso de la línea de texto (número de píxeles por debajo de la
 
 :ref:`Rect2<class_Rect2>` **get_line_object_rect**\ (\ line\: :ref:`int<class_int>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextParagraph_method_get_line_object_rect>`
 
-Returns bounding rectangle of the inline object.
+Devuelve el rectángulo delimitador del objeto en línea.
 
 .. rst-class:: classref-item-separator
 
@@ -663,7 +663,7 @@ Devuelve el desplazamiento de píxeles del subrayado debajo de la línea base.
 
 :ref:`float<class_float>` **get_line_underline_thickness**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextParagraph_method_get_line_underline_thickness>`
 
-Returns thickness of the underline.
+Devuelve el grosor del subrayado.
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ Devuelve el tamaño del cuadro delimitador del párrafo.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextParagraph_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Devuelve ``true`` si un objeto con ``key`` está incrustado en este búfer de texto moldeado.
 
 .. rst-class:: classref-item-separator
 
@@ -759,7 +759,7 @@ Devuelve el desplazamiento del cursor en las coordenadas especificadas. Esta fun
 
 :ref:`bool<class_bool>` **resize_object**\ (\ key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, baseline\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_TextParagraph_method_resize_object>`
 
-Sets new size and alignment of embedded object.
+Establece el nuevo tamaño y alineación del objeto incrustado.
 
 .. rst-class:: classref-item-separator
 
@@ -771,9 +771,9 @@ Sets new size and alignment of embedded object.
 
 |void| **set_bidi_override**\ (\ override\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_TextParagraph_method_set_bidi_override>`
 
-Overrides BiDi for the structured text.
+Sobreescribe BiDi para el texto estructurado.
 
-Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
+Los rangos de sobreescritura deben cubrir el texto fuente completo sin superposiciones. El algoritmo BiDi se utilizará en cada rango por separado.
 
 .. rst-class:: classref-item-separator
 

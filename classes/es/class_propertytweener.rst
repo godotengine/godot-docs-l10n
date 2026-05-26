@@ -14,11 +14,11 @@ Interpola una propiedad de un :ref:`Object<class_Object>` a lo largo del tiempo.
 Descripción
 ----------------------
 
-**PropertyTweener** is used to interpolate a property in an object. See :ref:`Tween.tween_property()<class_Tween_method_tween_property>` for more usage information.
+**PropertyTweener** se usa para interpolar una propiedad en un objeto. Véase :ref:`Tween.tween_property()<class_Tween_method_tween_property>` para obtener más información de uso.
 
-The tweener will finish automatically if the target object is freed.
+El tweener finalizará automáticamente si el objeto de destino es liberado.
 
-\ **Note:** :ref:`Tween.tween_property()<class_Tween_method_tween_property>` is the only correct way to create **PropertyTweener**. Any **PropertyTweener** created manually will not function correctly.
+\ **Nota:** :ref:`Tween.tween_property()<class_Tween_method_tween_property>` es la única forma correcta de crear **PropertyTweener**. Cualquier **PropertyTweener** creado manualmente no funcionará correctamente.
 
 .. rst-class:: classref-reftable-group
 
@@ -59,9 +59,9 @@ Descripciones de Métodos
 
 :ref:`PropertyTweener<class_PropertyTweener>` **as_relative**\ (\ ) :ref:`🔗<class_PropertyTweener_method_as_relative>`
 
-When called, the final value will be used as a relative value instead.
+Cuando se llama, el valor final se usará como un valor relativo en su lugar.
 
-\ **Example:** Move the node by ``100`` pixels to the right.
+\ **Ejemplo:** Mueve el nodo ``100`` píxeles a la derecha.
 
 
 .. tabs::

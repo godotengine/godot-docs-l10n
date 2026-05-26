@@ -16,7 +16,7 @@ SkeletonModification2DFABRIK
 描述
 ----
 
-这种 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 使用的是名为前后延伸反向运动学（Forward And Backward Reaching Inverse Kinematics）的算法，即 FABRIK，能够对一条骨骼链进行旋转，从而抵达目标。
+这种 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 使用的是名为前后延伸反向动力学（Forward And Backward Reaching Inverse Kinematics）的算法，即 FABRIK，能够对一条骨骼链进行旋转，从而抵达目标。
 
 FABRIK 需要先拿到一系列骨骼的位置和长度，这组骨骼通常称作“骨骼链”。它首先会做一次向前处理，将最终的骨骼放置在目标的位置。然后让所有其他骨骼朝尖端骨骼移动，恢复原有的骨骼长度。然后再做一次向后处理，将 FABRIK 链中的根/第一根骨骼放回原点。然后移动所有其他骨骼，恢复原有的骨骼长度。这样就尽可能地让骨骼链抵达了目标，并且所有骨骼之间的长度仍然为正确的长度。
 

@@ -430,9 +430,9 @@ enum **FilterAction**: :ref:`🔗<enum_AnimationNode_FilterAction>`
 
 :ref:`int<class_int>` **get_processing_animation_tree_instance_id**\ (\ ) |const| :ref:`🔗<class_AnimationNode_method_get_processing_animation_tree_instance_id>`
 
-返回拥有此节点的\ :ref:`AnimationTree<class_AnimationTree>`\ 对象ID。
+返回拥有此节点的 :ref:`AnimationTree<class_AnimationTree>` 的对象 id。
 
-\ **注意：**\ 此方法应仅在\ :ref:`AnimationNodeExtension._process_animation_node()<class_AnimationNodeExtension_private_method__process_animation_node>`\ 方法内部调用，否则将返回一个无效ID。
+\ **注意：** 这个方法只能在 :ref:`AnimationNodeExtension._process_animation_node()<class_AnimationNodeExtension_private_method__process_animation_node>` 方法内部调用，否则它会返回一个无效的 id。
 
 .. rst-class:: classref-item-separator
 

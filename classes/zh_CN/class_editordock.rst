@@ -11,36 +11,36 @@ EditorDock
 
 **派生：** :ref:`FileSystemDock<class_FileSystemDock>`
 
-Dockable container for the editor.
+用于编辑器的可停靠容器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-EditorDock is a :ref:`Container<class_Container>` node that can be docked in one of the editor's dock slots. Docks are added by plugins to provide space for controls related to an :ref:`EditorPlugin<class_EditorPlugin>`. The editor comes with a few built-in docks, such as the Scene dock, FileSystem dock, etc.
+EditorDock 是一个 :ref:`Container<class_Container>` 节点，可以停靠在编辑器的一个停靠面板槽中。插件可以添加停靠面板来为与 :ref:`EditorPlugin<class_EditorPlugin>` 相关的控件提供空间。编辑器自带一些内置的停靠面板，例如场景面板、文件系统面板等等。
 
-You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>`. The dock can be customized by changing its properties.
+可以使用 :ref:`EditorPlugin.add_dock()<class_EditorPlugin_method_add_dock>` 添加停靠面板。可以通过更改其属性来自定义停靠面板。
 
 ::
 
     @tool
     extends EditorPlugin
 
-    # Dock reference.
+    # 停靠面板引用。
     var dock
 
-    # Plugin initialization.
+    # 插件实例化。
     func _enter_tree():
         dock = EditorDock.new()
-        dock.title = "My Dock"
+        dock.title = "我的停靠面板"
         dock.dock_icon = preload("./dock_icon.png")
         dock.default_slot = EditorDock.DOCK_SLOT_RIGHT_UL
         var dock_content = preload("./dock_content.tscn").instantiate()
         dock.add_child(dock_content)
         add_dock(dock)
 
-    # Plugin clean-up.
+    # 插件清理。
     func _exit_tree():
         remove_dock(dock)
         dock.queue_free()
@@ -51,7 +51,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 教程
 ----
 
-- :doc:`Making plugins <../tutorials/plugins/editor/making_plugins>`
+- :doc:`创建插件 <../tutorials/plugins/editor/making_plugins>`
 
 .. rst-class:: classref-reftable-group
 
@@ -124,7 +124,7 @@ You can add a dock by using :ref:`EditorPlugin.add_dock()<class_EditorPlugin_met
 
 **closed**\ (\ ) :ref:`🔗<class_EditorDock_signal_closed>`
 
-Emitted when the dock is closed with the Close button in the context popup, before it's removed from its parent. See :ref:`closable<class_EditorDock_property_closable>`.
+当使用上下文弹出菜单中的“关闭”按钮关闭停靠面板时，在它从其父容器中移除之前发出。见 :ref:`closable<class_EditorDock_property_closable>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -147,7 +147,7 @@ flags **DockLayout**: :ref:`🔗<enum_EditorDock_DockLayout>`
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_VERTICAL** = ``1``
 
-Allows placing the dock in the vertical dock slots on either side of the editor.
+允许将停靠面板放置在编辑器两侧的垂直停靠面板插槽中。
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_HORIZONTAL:
 
@@ -155,7 +155,7 @@ Allows placing the dock in the vertical dock slots on either side of the editor.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_HORIZONTAL** = ``2``
 
-Allows placing the dock in the editor's bottom panel.
+允许将停靠面板放置在编辑器的底部面板中。
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_FLOATING:
 
@@ -163,7 +163,7 @@ Allows placing the dock in the editor's bottom panel.
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_FLOATING** = ``4``
 
-Allows making the dock floating (opened as a separate window).
+允许将停靠面板设置为浮动（以单独窗口的形式打开）。
 
 .. _class_EditorDock_constant_DOCK_LAYOUT_ALL:
 
@@ -171,7 +171,7 @@ Allows making the dock floating (opened as a separate window).
 
 :ref:`DockLayout<enum_EditorDock_DockLayout>` **DOCK_LAYOUT_ALL** = ``7``
 
-Allows placing the dock in all available slots.
+允许将停靠面板放置在所有可用插槽中。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorDock_DockSlot>`
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
 
-The dock is closed.
+停靠面板是关闭的。
 
 .. _class_EditorDock_constant_DOCK_SLOT_LEFT_UL:
 
@@ -221,7 +221,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_LEFT_BR** = ``3``
 
-Dock slot, left side, bottom-right (in default layout includes FileSystem and History docks).
+左侧停靠槽的右下方（默认布局中包含“文件系统”和“历史”面板）。
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_UL:
 
@@ -229,7 +229,7 @@ Dock slot, left side, bottom-right (in default layout includes FileSystem and Hi
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_RIGHT_UL** = ``4``
 
-Dock slot, right side, upper-left (in default layout includes Inspector, Signal, and Group docks).
+右侧停靠槽的左上方（默认布局中包含“检查器”、“信号”和“分组”面板）。
 
 .. _class_EditorDock_constant_DOCK_SLOT_RIGHT_BL:
 
@@ -261,7 +261,7 @@ Dock slot, right side, upper-left (in default layout includes Inspector, Signal,
 
 :ref:`DockSlot<enum_EditorDock_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+底部面板。
 
 .. _class_EditorDock_constant_DOCK_SLOT_MAX:
 
@@ -291,7 +291,7 @@ Bottom panel.
 - |void| **set_available_layouts**\ (\ value\: |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\]\ )
 - |bitfield|\[:ref:`DockLayout<enum_EditorDock_DockLayout>`\] **get_available_layouts**\ (\ )
 
-The available layouts for this dock, as a bitmask. By default, the dock allows vertical and floating layouts.
+该停靠面板可用的布局，以位掩码形式表示。默认情况下，该停靠面板允许垂直布局和浮动布局。
 
 .. rst-class:: classref-item-separator
 
@@ -308,7 +308,7 @@ The available layouts for this dock, as a bitmask. By default, the dock allows v
 - |void| **set_closable**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_closable**\ (\ )
 
-If ``true``, the dock can be closed with the Close button in the context popup. Docks with :ref:`global<class_EditorDock_property_global>` enabled are always closable.
+如果为 ``true``\ ，则可以使用上下文弹出窗口中的“关闭”按钮关闭该停靠面板。启用 :ref:`global<class_EditorDock_property_global>` 的停靠面板始终是可关闭的。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ If ``true``, the dock can be closed with the Close button in the context popup. 
 - |void| **set_dock_icon**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_dock_icon**\ (\ )
 
-The icon for the dock, as a texture. If specified, it will override :ref:`icon_name<class_EditorDock_property_icon_name>`.
+该停靠面板的图标，作为纹理。如果已指定，则它将覆盖 :ref:`icon_name<class_EditorDock_property_icon_name>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ The icon for the dock, as a texture. If specified, it will override :ref:`icon_n
 - |void| **set_dock_shortcut**\ (\ value\: :ref:`Shortcut<class_Shortcut>`\ )
 - :ref:`Shortcut<class_Shortcut>` **get_dock_shortcut**\ (\ )
 
-The shortcut used to open the dock.
+用于打开停靠面板的快捷键。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ The shortcut used to open the dock.
 - |void| **set_force_show_icon**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_force_show_icon**\ (\ )
 
-If ``true``, the dock will always display an icon, regardless of :ref:`EditorSettings.interface/editor/dock_tab_style<class_EditorSettings_property_interface/editor/dock_tab_style>` or :ref:`EditorSettings.interface/editor/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>`.
+如果为 ``true``\ ，则无论 :ref:`EditorSettings.interface/editor/dock_tab_style<class_EditorSettings_property_interface/editor/dock_tab_style>` 或 :ref:`EditorSettings.interface/editor/bottom_dock_tab_style<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>` 的值如何，该停靠面板始终会显示一个图标。
 
 .. rst-class:: classref-item-separator
 
@@ -395,7 +395,7 @@ If ``true``, the dock will always display an icon, regardless of :ref:`EditorSet
 - |void| **set_global**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_global**\ (\ )
 
-If ``true``, the dock appears in the **Editor > Editor Docks** menu and can be closed. Non-global docks can still be closed using :ref:`close()<class_EditorDock_method_close>` or when :ref:`closable<class_EditorDock_property_closable>` is ``true``.
+如果为 ``true``\ ，则停靠面板会出现在\ **编辑器 > 编辑器面板**\ 菜单中，并且可以被关闭。非全局的停靠面板仍然可以使用 :ref:`close()<class_EditorDock_method_close>` 关闭，或者当 :ref:`closable<class_EditorDock_property_closable>` 为 ``true`` 时关闭。
 
 .. rst-class:: classref-item-separator
 
@@ -412,7 +412,7 @@ If ``true``, the dock appears in the **Editor > Editor Docks** menu and can be c
 - |void| **set_icon_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_icon_name**\ (\ )
 
-The icon for the dock, as a name from the ``EditorIcons`` theme type in the editor theme. You can find the list of available icons `here <https://godot-editor-icons.github.io/>`__.
+停靠面板的图标，名称取自编辑器主题中的 ``EditorIcons`` 主题类型。可以在\ `此处 <https://godot-editor-icons.github.io/>`__\ 找到可用的图标列表。
 
 .. rst-class:: classref-item-separator
 
@@ -429,7 +429,7 @@ The icon for the dock, as a name from the ``EditorIcons`` theme type in the edit
 - |void| **set_layout_key**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_layout_key**\ (\ )
 
-The key representing this dock in the editor's layout file. If empty, the dock's displayed name will be used instead.
+该键值用于在编辑器的布局文件中表示该停靠面板。如果为空，则将改用该停靠面板的显示名称。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ The key representing this dock in the editor's layout file. If empty, the dock's
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-The title of the dock's tab. If empty, the dock's :ref:`Node.name<class_Node_property_name>` will be used. If the name is auto-generated (contains ``@``), the first child's name will be used instead.
+停靠面板选项卡的标题。如果为空，则使用停靠面板的 :ref:`Node.name<class_Node_property_name>`\ 。如果名称是自动生成的（包含 ``@``\ ），则会改用第一个子节点的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +463,7 @@ The title of the dock's tab. If empty, the dock's :ref:`Node.name<class_Node_pro
 - |void| **set_title_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_title_color**\ (\ )
 
-The color of the dock tab's title. If its alpha is ``0.0``, the default font color will be used.
+停靠面板选项卡标题的颜色。如果其 Alpha 为 ``0.0``\ ，则将使用默认字体颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -480,7 +480,7 @@ The color of the dock tab's title. If its alpha is ``0.0``, the default font col
 - |void| **set_transient**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_transient**\ (\ )
 
-If ``true``, the dock is not automatically opened or closed when loading an editor layout, only moved. It also can't be opened using a shortcut. This is meant for docks that are opened and closed in specific cases, such as when selecting a :ref:`TileMap<class_TileMap>` or :ref:`AnimationTree<class_AnimationTree>` node.
+如果为 ``true``\ ，则加载编辑器布局时，停靠面板不会自动打开或关闭，只会移动。它也无法通过快捷键打开。这是为在特定情况下打开和关闭的停靠面板而设计的，例如选择 :ref:`TileMap<class_TileMap>` 或 :ref:`AnimationTree<class_AnimationTree>` 节点时。
 
 .. rst-class:: classref-section-separator
 
@@ -497,7 +497,7 @@ If ``true``, the dock is not automatically opened or closed when loading an edit
 
 |void| **_load_layout_from_config**\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__load_layout_from_config>`
 
-Implement this method to handle loading this dock's layout. It's equivalent to :ref:`EditorPlugin._set_window_layout()<class_EditorPlugin_private_method__set_window_layout>`. ``section`` is a unique section based on :ref:`layout_key<class_EditorDock_property_layout_key>`.
+实现该方法以处理加载该停靠面板的布局。它等效于 :ref:`EditorPlugin._set_window_layout()<class_EditorPlugin_private_method__set_window_layout>`\ 。\ ``section`` 是基于 :ref:`layout_key<class_EditorDock_property_layout_key>` 的独特节。
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +509,7 @@ Implement this method to handle loading this dock's layout. It's equivalent to :
 
 |void| **_save_layout_to_config**\ (\ config\: :ref:`ConfigFile<class_ConfigFile>`, section\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_EditorDock_private_method__save_layout_to_config>`
 
-Implement this method to handle saving this dock's layout. It's equivalent to :ref:`EditorPlugin._get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`. ``section`` is a unique section based on :ref:`layout_key<class_EditorDock_property_layout_key>`.
+实现该方法来处理保存该停靠面板的布局。它等价于 :ref:`EditorPlugin._get_window_layout()<class_EditorPlugin_private_method__get_window_layout>`\ 。\ ``section`` 是基于 :ref:`layout_key<class_EditorDock_property_layout_key>` 的独特节。
 
 .. rst-class:: classref-item-separator
 
@@ -521,7 +521,7 @@ Implement this method to handle saving this dock's layout. It's equivalent to :r
 
 |void| **_update_layout**\ (\ layout\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_EditorDock_private_method__update_layout>`
 
-Implement this method to handle the layout switching for this dock. ``layout`` is one of the :ref:`DockLayout<enum_EditorDock_DockLayout>` constants.
+实现该方法以处理该停靠面板的布局切换。\ ``layout`` 是 :ref:`DockLayout<enum_EditorDock_DockLayout>` 枚举常量之一。
 
 ::
 
@@ -538,7 +538,7 @@ Implement this method to handle the layout switching for this dock. ``layout`` i
 
 |void| **close**\ (\ ) :ref:`🔗<class_EditorDock_method_close>`
 
-Closes the dock, making its tab hidden.
+关闭该停靠面板，使其选项卡隐藏。
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Closes the dock, making its tab hidden.
 
 |void| **make_visible**\ (\ ) :ref:`🔗<class_EditorDock_method_make_visible>`
 
-Focuses the dock's tab (or window if it's floating). If the dock was closed, it will be opened. If it's a bottom dock, makes the bottom panel visible.
+聚焦停靠面板的选项卡（如果是浮动窗口，则聚焦窗口）。如果该停靠面板已关闭，则会将其打开。如果是底部停靠面板，则使底部面板可见。
 
 .. rst-class:: classref-item-separator
 
@@ -562,9 +562,9 @@ Focuses the dock's tab (or window if it's floating). If the dock was closed, it 
 
 |void| **open**\ (\ ) :ref:`🔗<class_EditorDock_method_open>`
 
-Opens the dock. It will appear in the last used dock slot. If the dock has no default slot, it will be opened floating.
+打开停靠面板。它将显示在上次使用的停靠插槽中。如果该停靠面板没有默认插槽，它将以浮动窗口的形式打开。
 
-\ **Note:** This does not focus the dock. If you want to open and focus the dock, use :ref:`make_visible()<class_EditorDock_method_make_visible>`.
+\ **注意：**\ 它不会聚焦停靠面板。如果想打开并聚焦停靠面板，请使用 :ref:`make_visible()<class_EditorDock_method_make_visible>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

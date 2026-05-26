@@ -539,7 +539,7 @@ glTF 访问器类型 :ref:`int<class_int>`\ 。取值为 ``0`` 表示“SCALAR�
 
 :ref:`GLTFAccessor<class_GLTFAccessor>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFAccessor_method_from_dictionary>`
 
-Creates a new GLTFAccessor instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
+通过解析给定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFAccessor 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Creates a new GLTFAccessor instance by parsing the given :ref:`Dictionary<class_
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFAccessor_method_to_dictionary>`
 
-Serializes this GLTFAccessor instance into a :ref:`Dictionary<class_Dictionary>`.
+将这个 GLTFAccessor 实例序列化为 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

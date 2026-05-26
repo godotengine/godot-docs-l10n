@@ -16,7 +16,7 @@ StyleBox
 描述
 ----
 
-样式盒 **StyleBox** 是一个为 UI 元素定义风格化方框的抽象基类。常用于面板、按钮、\ :ref:`LineEdit<class_LineEdit>` 的背景、\ :ref:`Tree<class_Tree>` 的背景等，也用于针对指针信号检查透明掩码。如果 **StyleBox** 是某个控件的掩码，而掩码检查失败，则点击和运动信号会穿透这个控件进入下方控件。
+样式盒 **StyleBox** 是一个为 UI 元素定义风格化方框的抽象基类。常用于面板、按钮、\ :ref:`LineEdit<class_LineEdit>` 的背景、\ :ref:`Tree<class_Tree>` 的背景等，也用于针对指针信号检查透明遮罩。如果 **StyleBox** 是某个控件的遮罩，而遮罩检查失败，则点击和运动信号会穿透这个控件进入下方控件。
 
 \ **注意：**\ 对于有\ *主题属性*\ 的控件节点，名为 ``focus`` 的 **StyleBox** 会显示在名为 ``normal``\ 、\ ``hover``\ 、\ ``pressed`` 的 **StyleBox**\ 之上。这样的行为有助于 ``focus`` **StyleBox** 在不同节点上复用。
 
@@ -202,7 +202,7 @@ StyleBox
 
 :ref:`Vector2<class_Vector2>` **_get_minimum_size**\ (\ ) |virtual| |const| :ref:`🔗<class_StyleBox_private_method__get_minimum_size>`
 
-可以由用户实现的虚拟方法。样式盒在绘制时必须遵循所返回的自定义最小尺寸。默认情况下，\ :ref:`get_minimum_size()<class_StyleBox_method_get_minimum_size>` 仅考虑边距。可以覆盖这个方法添加其他尺寸限制。会使用默认行为和这个方法输出的组合，两个大小均进行考虑。
+可以由用户实现的虚拟方法。样式盒在绘制时必须遵循所返回的自定义最小尺寸。默认情况下，\ :ref:`get_minimum_size()<class_StyleBox_method_get_minimum_size>` 仅考虑内容边距。可以覆盖这个方法添加其他尺寸限制。会使用默认行为和这个方法输出的组合，两个大小均进行考虑。
 
 .. rst-class:: classref-item-separator
 
@@ -328,7 +328,7 @@ StyleBox
 
 :ref:`bool<class_bool>` **test_mask**\ (\ point\: :ref:`Vector2<class_Vector2>`, rect\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_StyleBox_method_test_mask>`
 
-测试矩形中的一个位置，返回它是否通过掩码测试。
+测试矩形中的一个位置，返回它是否通过遮罩测试。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

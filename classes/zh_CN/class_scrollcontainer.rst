@@ -205,7 +205,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+滚动提示将永远不会显示。
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_ALL:
 
@@ -213,7 +213,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_ALL** = ``1``
 
-Scroll hints will be shown at the top and bottom (if vertical), or left and right (if horizontal).
+滚动提示将显示在顶部和底部（如果是垂直的），或左侧和右侧（如果是水平的）。
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_TOP_AND_LEFT:
 
@@ -221,7 +221,7 @@ Scroll hints will be shown at the top and bottom (if vertical), or left and righ
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_TOP_AND_LEFT** = ``2``
 
-Scroll hints will be shown at the top (if vertical), or the left (if horizontal).
+滚动提示将显示在顶部（如果是垂直的），或左侧（如果是水平的）。
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_BOTTOM_AND_RIGHT:
 
@@ -229,7 +229,7 @@ Scroll hints will be shown at the top (if vertical), or the left (if horizontal)
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM_AND_RIGHT** = ``3``
 
-Scroll hints will be shown at the bottom (if horizontal), or the right (if horizontal).
+滚动提示将显示在底部（如果是水平的），或右侧（如果是垂直的）。
 
 .. rst-class:: classref-section-separator
 
@@ -319,9 +319,9 @@ Scroll hints will be shown at the bottom (if horizontal), or the right (if horiz
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+滚动提示（指示内容可以向特定方向滚动的指示器）的显示方式。
 
-\ **Note:** Hints won't be shown if the content can be scrolled both vertically and horizontally.
+\ **注意：**\ 如果内容可以同时在垂直和水平方向滚动，则不会显示提示。
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+如果为 ``true``\ ，则滚动提示纹理将平铺而不是拉伸。见 :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 :ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` texture.
+用于调制 :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` 纹理的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 :ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` texture.
+用于调制 :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` 纹理的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 :ref:`int<class_int>` **scrollbar_h_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_h_separation>`
 
-The space between the ScrollContainer's vertical scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+ScrollContainer 的垂直滚动条与其内容之间的间距，单位为像素。如果内容的最小大小大于 ScrollContainer 的大小，则不会添加任何间距。
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ The space between the ScrollContainer's vertical scroll bar and its content, in 
 
 :ref:`int<class_int>` **scrollbar_v_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_v_separation>`
 
-The space between the ScrollContainer's horizontal scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+ScrollContainer 的水平滚动条与其内容之间的间距，单位为像素。如果内容的最小大小大于 ScrollContainer 的大小，则不会添加任何间距。
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ The space between the ScrollContainer's horizontal scroll bar and its content, i
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_horizontal** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`
 
-The indicator that will be shown when the content can still be scrolled horizontally. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+当内容仍可水平滚动时将显示的指示器。请参阅 :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -567,7 +567,7 @@ The indicator that will be shown when the content can still be scrolled horizont
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_vertical** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_vertical>`
 
-The indicator that will be shown when the content can still be scrolled vertically. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+当内容仍可垂直滚动时将显示的指示器。请参阅 :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 

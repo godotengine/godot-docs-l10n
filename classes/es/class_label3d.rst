@@ -502,7 +502,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al descenso de la línea (line descent). Este valor puede ser negativo.
 
 .. rst-class:: classref-item-separator
 

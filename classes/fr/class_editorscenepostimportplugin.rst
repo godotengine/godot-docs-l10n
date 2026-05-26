@@ -14,7 +14,7 @@ Plugin to control and modifying the process of importing a scene.
 Description
 -----------
 
-This plugin type exists to modify the process of importing scenes, allowing to change the content as well as add importer options at every stage of the process.
+Ce type de plugin existe pour modifier le processus d'importation de scène, permettant de modifier le contenu ainsi que d'ajouter des options d'import à chaque étape du processus.
 
 .. rst-class:: classref-reftable-group
 

@@ -14,13 +14,13 @@ RenderSceneBuffersRD
 Описание
 ----------------
 
-This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled. See also :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
+Этот объект управляет всеми буферами 3D-рендеринга для рендереров, использующих устройства рендеринга. Экземпляр этого объекта создается для каждого видового окна, в котором включен 3D-рендеринг. См. также :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
 
-All buffers are organized in **contexts**. The default context is called **render_buffers** and can contain amongst others the color buffer, depth buffer, velocity buffers, VRS density map and MSAA variants of these buffers.
+Все буферы организованы в **контексты**. Контекст по умолчанию называется **render_buffers** и может содержать, помимо прочего, буфер цвета, буфер глубины, буферы скорости, карту плотности VRS и варианты MSAA этих буферов.
 
-Buffers are only guaranteed to exist during rendering of the viewport.
+Существование буферов гарантируется только во время рендеринга видового окна.
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **Примечание:** Это внутренний объект сервера рендеринга. Не создавайте экземпляр этого класса из скрипта.
 
 .. rst-class:: classref-reftable-group
 

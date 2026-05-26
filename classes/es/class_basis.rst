@@ -12,27 +12,27 @@ Una matriz de 3×3 para representar la rotación y la escala 3D.
 Descripción
 ----------------------
 
-The **Basis** built-in :ref:`Variant<class_Variant>` type is a 3×3 `matrix <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ used to represent 3D rotation, scale, and shear. It is frequently used within a :ref:`Transform3D<class_Transform3D>`.
+El tipo :ref:`Variant<class_Variant>` incorporado **Basis** es una `matriz <https://en.wikipedia.org/wiki/Matrix_(mathematics)>`__ de 3×3 utilizada para representar rotación, escala y cizallamiento en 3D. Se utiliza frecuentemente dentro de un :ref:`Transform3D<class_Transform3D>`.
 
-A **Basis** is composed by 3 axis vectors, each representing a column of the matrix: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>`, and :ref:`z<class_Basis_property_z>`. The length of each axis (:ref:`Vector3.length()<class_Vector3_method_length>`) influences the basis's scale, while the direction of all axes influence the rotation. Usually, these axes are perpendicular to one another. However, when you rotate any axis individually, the basis becomes sheared. Applying a sheared basis to a 3D model will make the model appear distorted.
+Un **Basis** está compuesto por 3 vectores de eje, cada uno representando una columna de la matriz: :ref:`x<class_Basis_property_x>`, :ref:`y<class_Basis_property_y>` y :ref:`z<class_Basis_property_z>`. La longitud de cada eje (:ref:`Vector3.length()<class_Vector3_method_length>`) influye en la escala de la base, mientras que la dirección de todos los ejes influye en la rotación. Por lo general, estos ejes son perpendiculares entre sí. Sin embargo, cuando rotas cualquier eje individualmente, la base se vuelve cizallada. Aplicar una base cizallada a un modelo 3D hará que el modelo aparezca distorsionado.
 
-A **Basis** is:
+Un **Basis** es:
 
-- **Orthogonal** if its axes are perpendicular to each other.
+- **Ortogonal** si sus ejes son perpendiculares entre sí.
 
-- **Normalized** if the length of every axis is ``1.0``.
+- **Normalizado** si la longitud de cada eje es ``1.0``.
 
-- **Uniform** if all axes share the same length (see :ref:`get_scale()<class_Basis_method_get_scale>`).
+- **Uniforme** si todos los ejes comparten la misma longitud (consulta :ref:`get_scale()<class_Basis_method_get_scale>`).
 
-- **Orthonormal** if it is both orthogonal and normalized, which allows it to only represent rotations (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+- **Ortonormal** si es tanto ortogonal como normalizado, lo que le permite representar solo rotaciones (consulta :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-- **Conformal** if it is both orthogonal and uniform, which ensures it is not distorted.
+- **Conforme** si es tanto ortogonal como uniforme, lo que asegura que no esté distorsionado.
 
-For a general introduction, see the :doc:`Matrices and transforms <../tutorials/math/matrices_and_transforms>` tutorial.
+Para una introducción general, consulta el tutorial :doc:`Matrices y transformaciones <../tutorials/math/matrices_and_transforms>`.
 
-\ **Note:** Godot uses a `right-handed coordinate system <https://en.wikipedia.org/wiki/Right-hand_rule>`__, which is a common standard. For directions, the convention for built-in types like :ref:`Camera3D<class_Camera3D>` is for -Z to point forward (+X is right, +Y is up, and +Z is back). Other objects may use different direction conventions. For more information, see the `3D asset direction conventions <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__ tutorial.
+\ **Nota:** Godot utiliza un `sistema de coordenadas derecho <https://en.wikipedia.org/wiki/Right-hand_rule>`__, que es un estándar común. Para las direcciones, la convención para tipos incorporados como :ref:`Camera3D<class_Camera3D>` es que -Z apunte hacia adelante (+X es derecha, +Y es arriba y +Z es atrás). Otros objetos pueden usar diferentes convenciones de dirección. Para más información, consulta el tutorial `Convenciones de dirección de activos 3D <../tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.html#d-asset-direction-conventions>`__.
 
-\ **Note:** The basis matrices are exposed as `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__ order, which is the same as OpenGL. However, they are stored internally in row-major order, which is the same as DirectX.
+\ **Nota:** Las matrices de base se exponen en orden `column-major <https://www.mindcontrol.org/~hplus/graphics/matrix-layout.html>`__, que es el mismo que OpenGL. Sin embargo, se almacenan internamente en orden row-major, que es el mismo que DirectX.
 
 .. note::
 
@@ -186,13 +186,13 @@ Constantes
 
 **IDENTITY** = ``Basis(1, 0, 0, 0, 1, 0, 0, 0, 1)`` :ref:`🔗<class_Basis_constant_IDENTITY>`
 
-The identity **Basis**. This is an orthonormal basis with no rotation, no shear, and a scale of :ref:`Vector3.ONE<class_Vector3_constant_ONE>`. This also means that:
+La identidad **Basis**. Esta es una base ortonormal sin rotación, sin cizallamiento y con una escala de :ref:`Vector3.ONE<class_Vector3_constant_ONE>`. Esto también significa que:
 
-- The :ref:`x<class_Basis_property_x>` points right (:ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`);
+- El elemento :ref:`x<class_Basis_property_x>` apunta a la derecha (:ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`);
 
-- The :ref:`y<class_Basis_property_y>` points up (:ref:`Vector3.UP<class_Vector3_constant_UP>`);
+- El elemento :ref:`y<class_Basis_property_y>` apunta hacia arriba (:ref:`Vector3.UP<class_Vector3_constant_UP>`);
 
-- The :ref:`z<class_Basis_property_z>` points back (:ref:`Vector3.BACK<class_Vector3_constant_BACK>`).
+- El elemento :ref:`z<class_Basis_property_z>` apunta hacia atrás (:ref:`Vector3.BACK<class_Vector3_constant_BACK>`).
 
 ::
 
@@ -201,15 +201,15 @@ The identity **Basis**. This is an orthonormal basis with no rotation, no shear,
     print("| %.f | %.f | %.f" % [basis.x.x, basis.y.x, basis.z.x])
     print("| %.f | %.f | %.f" % [basis.x.y, basis.y.y, basis.z.y])
     print("| %.f | %.f | %.f" % [basis.x.z, basis.y.z, basis.z.z])
-    # Prints:
+    # Imprime:
     # | X | Y | Z
     # | 1 | 0 | 0
     # | 0 | 1 | 0
     # | 0 | 0 | 1
 
-If a :ref:`Vector3<class_Vector3>` or another **Basis** is transformed (multiplied) by this constant, no transformation occurs.
+Si un :ref:`Vector3<class_Vector3>` u otro **Basis** se transforma (multiplica) por esta constante, no se produce ninguna transformación.
 
-\ **Note:** In GDScript, this constant is equivalent to creating a :ref:`Basis<class_Basis_constructor_Basis>` without any arguments. It can be used to make your code clearer, and for consistency with C#.
+\ **Nota:** En GDScript, esta constante equivale a crear un :ref:`Basis<class_Basis_constructor_Basis>` sin argumentos. Se puede usar para que el código sea más claro y para mantener la coherencia con C#.
 
 .. _class_Basis_constant_FLIP_X:
 
@@ -217,9 +217,9 @@ If a :ref:`Vector3<class_Vector3>` or another **Basis** is transformed (multipli
 
 **FLIP_X** = ``Basis(-1, 0, 0, 0, 1, 0, 0, 0, 1)`` :ref:`🔗<class_Basis_constant_FLIP_X>`
 
-When any basis is multiplied by :ref:`FLIP_X<class_Basis_constant_FLIP_X>`, it negates all components of the :ref:`x<class_Basis_property_x>` axis (the X column).
+Cuando cualquier base se multiplica por :ref:`FLIP_X<class_Basis_constant_FLIP_X>`, se invierten todos los componentes del eje :ref:`x<class_Basis_property_x>` (la columna X).
 
-When :ref:`FLIP_X<class_Basis_constant_FLIP_X>` is multiplied by any basis, it negates the :ref:`Vector3.x<class_Vector3_property_x>` component of all axes (the X row).
+Cuando :ref:`FLIP_X<class_Basis_constant_FLIP_X>` se multiplica por cualquier base, se invierte el componente :ref:`Vector3.x<class_Vector3_property_x>` de todos los ejes (la fila X).
 
 .. _class_Basis_constant_FLIP_Y:
 
@@ -227,9 +227,9 @@ When :ref:`FLIP_X<class_Basis_constant_FLIP_X>` is multiplied by any basis, it n
 
 **FLIP_Y** = ``Basis(1, 0, 0, 0, -1, 0, 0, 0, 1)`` :ref:`🔗<class_Basis_constant_FLIP_Y>`
 
-When any basis is multiplied by :ref:`FLIP_Y<class_Basis_constant_FLIP_Y>`, it negates all components of the :ref:`y<class_Basis_property_y>` axis (the Y column).
+Cuando cualquier base se multiplica por :ref:`FLIP_Y<class_Basis_constant_FLIP_Y>`, se invierten todos los componentes del eje :ref:`y<class_Basis_property_y>` (la columna Y).
 
-When :ref:`FLIP_Y<class_Basis_constant_FLIP_Y>` is multiplied by any basis, it negates the :ref:`Vector3.y<class_Vector3_property_y>` component of all axes (the Y row).
+Cuando :ref:`FLIP_Y<class_Basis_constant_FLIP_Y>` se multiplica por cualquier base, se invierte el componente :ref:`Vector3.y<class_Vector3_property_y>` de todos los ejes (la fila Y).
 
 .. _class_Basis_constant_FLIP_Z:
 
@@ -237,9 +237,9 @@ When :ref:`FLIP_Y<class_Basis_constant_FLIP_Y>` is multiplied by any basis, it n
 
 **FLIP_Z** = ``Basis(1, 0, 0, 0, 1, 0, 0, 0, -1)`` :ref:`🔗<class_Basis_constant_FLIP_Z>`
 
-When any basis is multiplied by :ref:`FLIP_Z<class_Basis_constant_FLIP_Z>`, it negates all components of the :ref:`z<class_Basis_property_z>` axis (the Z column).
+Cuando cualquier base se multiplica por :ref:`FLIP_Z<class_Basis_constant_FLIP_Z>`, se anulan todos los componentes del eje :ref:`z<class_Basis_property_z>` (la columna Z).
 
-When :ref:`FLIP_Z<class_Basis_constant_FLIP_Z>` is multiplied by any basis, it negates the :ref:`Vector3.z<class_Vector3_property_z>` component of all axes (the Z row).
+Cuando :ref:`FLIP_Z<class_Basis_constant_FLIP_Z>` se multiplica por cualquier base, se anula el componente :ref:`Vector3.z<class_Vector3_property_z>` de todos los ejes (la fila Z).
 
 .. rst-class:: classref-section-separator
 
@@ -256,9 +256,9 @@ Descripciones de Propiedades
 
 :ref:`Vector3<class_Vector3>` **x** = ``Vector3(1, 0, 0)`` :ref:`🔗<class_Basis_property_x>`
 
-The basis's X axis, and the column ``0`` of the matrix.
+El eje X de la base y la columna ``0`` de la matriz.
 
-On the identity basis, this vector points right (:ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`).
+En la base identidad, este vector apunta a la derecha (:ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`).
 
 .. rst-class:: classref-item-separator
 
@@ -270,9 +270,9 @@ On the identity basis, this vector points right (:ref:`Vector3.RIGHT<class_Vecto
 
 :ref:`Vector3<class_Vector3>` **y** = ``Vector3(0, 1, 0)`` :ref:`🔗<class_Basis_property_y>`
 
-The basis's Y axis, and the column ``1`` of the matrix.
+El eje Y de la base y la columna ``1`` de la matriz.
 
-On the identity basis, this vector points up (:ref:`Vector3.UP<class_Vector3_constant_UP>`).
+En la base identidad, este vector apunta hacia arriba (:ref:`Vector3.UP<class_Vector3_constant_UP>`).
 
 .. rst-class:: classref-item-separator
 
@@ -284,9 +284,9 @@ On the identity basis, this vector points up (:ref:`Vector3.UP<class_Vector3_con
 
 :ref:`Vector3<class_Vector3>` **z** = ``Vector3(0, 0, 1)`` :ref:`🔗<class_Basis_property_z>`
 
-The basis's Z axis, and the column ``2`` of the matrix.
+El eje Z de la base y la columna ``2`` de la matriz.
 
-On the identity basis, this vector points back (:ref:`Vector3.BACK<class_Vector3_constant_BACK>`).
+En la base identidad, este vector apunta hacia atrás (:ref:`Vector3.BACK<class_Vector3_constant_BACK>`).
 
 .. rst-class:: classref-section-separator
 
@@ -303,9 +303,9 @@ Descripciones de Constructores
 
 :ref:`Basis<class_Basis>` **Basis**\ (\ ) :ref:`🔗<class_Basis_constructor_Basis>`
 
-Constructs a **Basis** identical to :ref:`IDENTITY<class_Basis_constant_IDENTITY>`.
+Construye una **Basis** idéntica a :ref:`IDENTITY<class_Basis_constant_IDENTITY>`.
 
-\ **Note:** In C#, this constructs a **Basis** with all of its components set to :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **Nota:** En C#, esto construye una **Basis** con todos sus componentes establecidos a :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ Construye una **Basis** como una copia de la **Basis** dada.
 
 :ref:`Basis<class_Basis>` **Basis**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ )
 
-Constructs a **Basis** that only represents rotation, rotated around the ``axis`` by the given ``angle``, in radians. The axis must be a normalized vector.
+Construye una **Basis** que solo representa la rotación, girada alrededor del ``axis`` según el ``angle`` dado, en radianes. El eje debe ser un vector normalizado.
 
-\ **Note:** This is the same as using :ref:`rotated()<class_Basis_method_rotated>` on the :ref:`IDENTITY<class_Basis_constant_IDENTITY>` basis. With more than one angle consider using :ref:`from_euler()<class_Basis_method_from_euler>`, instead.
+\ **Nota:** Esto es equivalente a usar :ref:`rotated()<class_Basis_method_rotated>` en la base :ref:`IDENTITY<class_Basis_constant_IDENTITY>`. Si se requiere más de un ángulo, considere usar :ref:`from_euler()<class_Basis_method_from_euler>`.
 
 .. rst-class:: classref-item-separator
 
@@ -337,9 +337,9 @@ Constructs a **Basis** that only represents rotation, rotated around the ``axis`
 
 :ref:`Basis<class_Basis>` **Basis**\ (\ from\: :ref:`Quaternion<class_Quaternion>`\ )
 
-Constructs a **Basis** that only represents rotation from the given :ref:`Quaternion<class_Quaternion>`.
+Construye una **Basis** que solo representa la rotación del :ref:`Quaternion<class_Quaternion>` dado.
 
-\ **Note:** Quaternions *only* store rotation, not scale. Because of this, conversions from **Basis** to :ref:`Quaternion<class_Quaternion>` cannot always be reversed.
+\ **Nota:** Los cuaterniones *solo* almacenan rotación, no escala. Por esta razón, las conversiones de **Basis** a :ref:`Quaternion<class_Quaternion>` no siempre se pueden revertir.
 
 .. rst-class:: classref-item-separator
 
@@ -384,34 +384,34 @@ Returns the `determinant <https://en.wikipedia.org/wiki/Determinant>`__ of this 
 
 :ref:`Basis<class_Basis>` **from_euler**\ (\ euler\: :ref:`Vector3<class_Vector3>`, order\: :ref:`int<class_int>` = 2\ ) |static| :ref:`🔗<class_Basis_method_from_euler>`
 
-Constructs a new **Basis** that only represents rotation from the given :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians.
+Construye una nueva **Basis** que solo representa la rotación respecto al :ref:`Vector3<class_Vector3>` dado de `ángulos de Euler <https://en.wikipedia.org/wiki/Euler_angles>`__, en radianes.
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` should contain the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- El :ref:`Vector3.x<class_Vector3_property_x>` debe contener el ángulo alrededor del :ref:`x<class_Basis_property_x>` (cabeceo);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` should contain the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- El :ref:`Vector3.y<class_Vector3_property_y>` debe contener el ángulo alrededor del :ref:`y<class_Basis_property_y>` (guiñada);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` should contain the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- El :ref:`Vector3.z<class_Vector3_property_z>` debe contener el ángulo alrededor del :ref:`z<class_Basis_property_z>` (balanceo).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Creates a Basis whose z axis points down.
+    # Crea una Base cuyo eje z apunta hacia abajo.
     var my_basis = Basis.from_euler(Vector3(TAU / 4, 0, 0))
 
-    print(my_basis.z) # Prints (0.0, -1.0, 0.0)
+    print(my_basis.z) # Imprime (0.0, -1.0, 0.0)
 
  .. code-tab:: csharp
 
-    // Creates a Basis whose z axis points down.
+    // Crea una base cuyo eje z apunta hacia abajo.
     var myBasis = Basis.FromEuler(new Vector3(Mathf.Tau / 4.0f, 0.0f, 0.0f));
 
-    GD.Print(myBasis.Z); // Prints (0, -1, 0)
+    GD.Print(myBasis.Z); // Imprime (0, -1, 0)
 
 
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). By default, the YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): the basis rotates first around the Y axis (yaw), then X (pitch), and lastly Z (roll). When using the opposite method :ref:`get_euler()<class_Basis_method_get_euler>`, this order is reversed.
+El orden de cada rotación consecutiva se puede cambiar con ``order`` (ver constantes :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). Por defecto, se utiliza la convención YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): la base gira primero alrededor del eje Y (guiñada), luego del eje X (cabeceo) y, por último, del eje Z (balanceo). Al utilizar el método opuesto :ref:`get_euler()<class_Basis_method_get_euler>`, este orden se invierte.
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`Basis<class_Basis>` **from_scale**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |static| :ref:`🔗<class_Basis_method_from_scale>`
 
-Constructs a new **Basis** that only represents scale, with no rotation or shear, from the given ``scale`` vector.
+Construye una nueva **Basis** que solo representa la escala, sin rotación ni deformación, a partir del vector ``scale`` dado.
 
 
 .. tabs::
@@ -432,21 +432,21 @@ Constructs a new **Basis** that only represents scale, with no rotation or shear
 
     var my_basis = Basis.from_scale(Vector3(2, 4, 8))
 
-    print(my_basis.x) # Prints (2.0, 0.0, 0.0)
-    print(my_basis.y) # Prints (0.0, 4.0, 0.0)
-    print(my_basis.z) # Prints (0.0, 0.0, 8.0)
+    print(my_basis.x) # Imprime (2.0, 0.0, 0.0)
+    print(my_basis.y) # Imprime (0.0, 4.0, 0.0)
+    print(my_basis.z) # Imprime (0.0, 0.0, 8.0)
 
  .. code-tab:: csharp
 
     var myBasis = Basis.FromScale(new Vector3(2.0f, 4.0f, 8.0f));
 
-    GD.Print(myBasis.X); // Prints (2, 0, 0)
-    GD.Print(myBasis.Y); // Prints (0, 4, 0)
-    GD.Print(myBasis.Z); // Prints (0, 0, 8)
+    GD.Print(myBasis.X); // Imprime (2, 0, 0)
+    GD.Print(myBasis.Y); // Imprime (0, 4, 0)
+    GD.Print(myBasis.Z); // Imprime (0, 0, 8)
 
 
 
-\ **Note:** In linear algebra, the matrix of this basis is also known as a `diagonal matrix <https://en.wikipedia.org/wiki/Diagonal_matrix>`__.
+\ **Nota:** En álgebra lineal, la matriz de esta base también se conoce como `matriz diagonal <https://en.wikipedia.org/wiki/Diagonal_matrix>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -458,21 +458,21 @@ Constructs a new **Basis** that only represents scale, with no rotation or shear
 
 :ref:`Vector3<class_Vector3>` **get_euler**\ (\ order\: :ref:`int<class_int>` = 2\ ) |const| :ref:`🔗<class_Basis_method_get_euler>`
 
-Returns this basis's rotation as a :ref:`Vector3<class_Vector3>` of `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians. For the returned value:
+Devuelve la rotación de esta base como un :ref:`Vector3<class_Vector3>` de `ángulos de Euler <https://en.wikipedia.org/wiki/Euler_angles>`__, en radianes. Para el valor devuelto:
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` contains the angle around the :ref:`x<class_Basis_property_x>` axis (pitch);
+- El :ref:`Vector3.x<class_Vector3_property_x>` contiene el ángulo alrededor del :ref:`x<class_Basis_property_x>` (cabeceo);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` contains the angle around the :ref:`y<class_Basis_property_y>` axis (yaw);
+- El :ref:`Vector3.y<class_Vector3_property_y>` contiene el ángulo alrededor del :ref:`y<class_Basis_property_y>` (guiñada);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` contains the angle around the :ref:`z<class_Basis_property_z>` axis (roll).
+- El :ref:`Vector3.z<class_Vector3_property_z>` contiene el ángulo alrededor del :ref:`z<class_Basis_property_z>` (balanceo).
 
-The order of each consecutive rotation can be changed with ``order`` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). By default, the YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): Z (roll) is calculated first, then X (pitch), and lastly Y (yaw). When using the opposite method :ref:`from_euler()<class_Basis_method_from_euler>`, this order is reversed.
+El orden de cada rotación consecutiva se puede cambiar con ``order`` (ver constantes :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). Por defecto, se utiliza la convención YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`): primero se calcula Z (balanceo), luego X (cabeceo) y, por último, Y (guiñada). Al usar el método opuesto :ref:`from_euler()<class_Basis_method_from_euler>`, este orden se invierte.
 
-\ **Note:** For this method to return correctly, the basis needs to be *orthonormal* (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+\ **Nota:** Para que este método funcione correctamente, la base debe ser *ortonormal* (véase :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-\ **Note:** Euler angles are much more intuitive but are not suitable for 3D math. Because of this, consider using the :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>` method instead, which returns a :ref:`Quaternion<class_Quaternion>`.
+\ **Nota:** Los ángulos de Euler son mucho más intuitivos, pero no son adecuados para matemáticas 3D. Por ello, considere utilizar el método :ref:`get_rotation_quaternion()<class_Basis_method_get_rotation_quaternion>`, que devuelve un :ref:`Quaternion<class_Quaternion>`.
 
-\ **Note:** In the Inspector dock, a basis's rotation is often displayed in Euler angles (in degrees), as is the case with the :ref:`Node3D.rotation<class_Node3D_property_rotation>` property.
+\ **Nota:** En el panel Inspector, la rotación de una base suele mostrarse en ángulos de Euler (en grados), como ocurre con la propiedad :ref:`Node3D.rotation<class_Node3D_property_rotation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -484,9 +484,9 @@ The order of each consecutive rotation can be changed with ``order`` (see :ref:`
 
 :ref:`Quaternion<class_Quaternion>` **get_rotation_quaternion**\ (\ ) |const| :ref:`🔗<class_Basis_method_get_rotation_quaternion>`
 
-Returns this basis's rotation as a :ref:`Quaternion<class_Quaternion>`.
+Devuelve la rotación de esta base como un :ref:`Quaternion<class_Quaternion>`.
 
-\ **Note:** Quaternions are much more suitable for 3D math but are less intuitive. For user interfaces, consider using the :ref:`get_euler()<class_Basis_method_get_euler>` method, which returns Euler angles.
+\ **Nota:** Los cuaterniones son mucho más adecuados para matemáticas 3D, pero son menos intuitivos. Para interfaces de usuario, considere usar el método :ref:`get_euler()<class_Basis_method_get_euler>`, que devuelve ángulos de Euler.
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ Returns this basis's rotation as a :ref:`Quaternion<class_Quaternion>`.
 
 :ref:`Vector3<class_Vector3>` **get_scale**\ (\ ) |const| :ref:`🔗<class_Basis_method_get_scale>`
 
-Returns the length of each axis of this basis, as a :ref:`Vector3<class_Vector3>`. If the basis is not sheared, this value is the scaling factor. It is not affected by rotation.
+Devuelve la longitud de cada eje de esta base como un :ref:`Vector3<class_Vector3>`. Si la base no se deforma, este valor es el factor de escala. No se ve afectado por la rotación.
 
 
 .. tabs::
@@ -510,11 +510,11 @@ Returns the length of each axis of this basis, as a :ref:`Vector3<class_Vector3>
         Vector3(0, 4, 0),
         Vector3(0, 0, 8)
     )
-    # Rotating the Basis in any way preserves its scale.
+    # Cualquier rotación de la base conserva su escala.
     my_basis = my_basis.rotated(Vector3.UP, TAU / 2)
     my_basis = my_basis.rotated(Vector3.RIGHT, TAU / 4)
 
-    print(my_basis.get_scale()) # Prints (2.0, 4.0, 8.0)
+    print(my_basis.get_scale()) # Imprime (2.0, 4.0, 8.0)
 
  .. code-tab:: csharp
 
@@ -523,15 +523,15 @@ Returns the length of each axis of this basis, as a :ref:`Vector3<class_Vector3>
         Vector3(0.0f, 4.0f, 0.0f),
         Vector3(0.0f, 0.0f, 8.0f)
     );
-    // Rotating the Basis in any way preserves its scale.
+    // Rotar la base de cualquier forma conserva su escala.
     myBasis = myBasis.Rotated(Vector3.Up, Mathf.Tau / 2.0f);
     myBasis = myBasis.Rotated(Vector3.Right, Mathf.Tau / 4.0f);
 
-    GD.Print(myBasis.Scale); // Prints (2, 4, 8)
+    GD.Print(myBasis.Scale); // Imprime (2, 4, 8)
 
 
 
-\ **Note:** If the value returned by :ref:`determinant()<class_Basis_method_determinant>` is negative, the scale is also negative.
+\ **Nota:** Si el valor devuelto por el método :ref:`determinant()<class_Basis_method_determinant>` es negativo, la escala también es negativa.
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ Devuelve la `inversa de la matriz de esta base <https://en.wikipedia.org/wiki/In
 
 :ref:`bool<class_bool>` **is_conformal**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_conformal>`
 
-Returns ``true`` if this basis is conformal. A conformal basis is both *orthogonal* (the axes are perpendicular to each other) and *uniform* (the axes share the same length). This method can be especially useful during physics calculations.
+Devuelve ``true`` si esta base es conforme. Una base conforme es tanto *ortogonal* (los ejes son perpendiculares entre sí) como *uniforme* (los ejes comparten la misma longitud). Este método puede ser especialmente útil durante los cálculos físicos.
 
 .. rst-class:: classref-item-separator
 
@@ -567,7 +567,7 @@ Returns ``true`` if this basis is conformal. A conformal basis is both *orthogon
 
 :ref:`bool<class_bool>` **is_equal_approx**\ (\ b\: :ref:`Basis<class_Basis>`\ ) |const| :ref:`🔗<class_Basis_method_is_equal_approx>`
 
-Returns ``true`` if this basis and ``b`` are approximately equal, by calling :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` on all vector components.
+Devuelve ``true`` si esta base y ``b`` son aproximadamente iguales, llamando a :ref:`@GlobalScope.is_equal_approx()<class_@GlobalScope_method_is_equal_approx>` en todos los componentes vectoriales.
 
 .. rst-class:: classref-item-separator
 
@@ -579,7 +579,7 @@ Returns ``true`` if this basis and ``b`` are approximately equal, by calling :re
 
 :ref:`bool<class_bool>` **is_finite**\ (\ ) |const| :ref:`🔗<class_Basis_method_is_finite>`
 
-Returns ``true`` if this basis is finite, by calling :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` on all vector components.
+Devuelve ``true`` si esta base es finita, llamando a :ref:`@GlobalScope.is_finite()<class_@GlobalScope_method_is_finite>` en todos los componentes vectoriales.
 
 .. rst-class:: classref-item-separator
 
@@ -591,13 +591,13 @@ Returns ``true`` if this basis is finite, by calling :ref:`@GlobalScope.is_finit
 
 :ref:`Basis<class_Basis>` **looking_at**\ (\ target\: :ref:`Vector3<class_Vector3>`, up\: :ref:`Vector3<class_Vector3>` = Vector3(0, 1, 0), use_model_front\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_Basis_method_looking_at>`
 
-Creates a new **Basis** with a rotation such that the forward axis (-Z) points towards the ``target`` position.
+Crea una nueva **Basis** con una rotación tal que el eje frontal (-Z) apunta hacia la posición ``target``.
 
-By default, the -Z axis (camera forward) is treated as forward (implies +X is right). If ``use_model_front`` is ``true``, the +Z axis (asset front) is treated as forward (implies +X is left) and points toward the ``target`` position.
+Por defecto, el eje -Z (frontal de la cámara) se considera frontal (lo que implica que +X apunta a la derecha). Si ``use_model_front`` es ``true``, el eje +Z (frontal del objeto) se considera frontal (lo que implica que +X apunta a la izquierda) y apunta hacia la posición ``target``.
 
-The up axis (+Y) points as close to the ``up`` vector as possible while staying perpendicular to the forward axis. The returned basis is orthonormalized (see :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
+El eje vertical (+Y) apunta lo más cerca posible del vector ``up``, manteniéndose perpendicular al eje frontal. La base resultante está ortonormalizada (véase :ref:`orthonormalized()<class_Basis_method_orthonormalized>`).
 
-The ``target`` and the ``up`` cannot be :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`, and shouldn't be colinear to avoid unintended rotation around local Z axis.
+\ ``target`` y ``up`` no pueden ser :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` y no deben ser colineales para evitar rotaciones no deseadas alrededor del eje Z local.
 
 .. rst-class:: classref-item-separator
 
@@ -609,24 +609,24 @@ The ``target`` and the ``up`` cannot be :ref:`Vector3.ZERO<class_Vector3_constan
 
 :ref:`Basis<class_Basis>` **orthonormalized**\ (\ ) |const| :ref:`🔗<class_Basis_method_orthonormalized>`
 
-Returns the orthonormalized version of this basis. An orthonormal basis is both *orthogonal* (the axes are perpendicular to each other) and *normalized* (the axes have a length of ``1.0``), which also means it can only represent a rotation.
+Devuelve la versión ortonormalizada de esta base. Una base ortonormal es tanto *ortogonal* (los ejes son perpendiculares entre sí) como *normalizada* (los ejes tienen una longitud de ``1.0``), lo que también significa que solo puede representar una rotación.
 
-It is often useful to call this method to avoid rounding errors on a rotating basis:
+A menudo resulta útil llamar a este método para evitar errores de redondeo en una base giratoria:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Rotate this Node3D every frame.
+    # Rota este Node3D en cada fotograma.
     func _process(delta):
-        basis = basis.rotated(Vector3.UP, TAU * delta)
-        basis = basis.rotated(Vector3.RIGHT, TAU * delta)
-        basis = basis.orthonormalized()
+        basic = basis.rotated(Vector3.UP, TAU * delta)
+        basic = basis.rotated(Vector3.RIGHT, TAU * delta)
+        basic = basis.orthonormalized()
 
  .. code-tab:: csharp
 
-    // Rotate this Node3D every frame.
+    // Rota este Node3D en cada fotograma.
     public override void _Process(double delta)
     {
         Basis = Basis.Rotated(Vector3.Up, Mathf.Tau * (float)delta)
@@ -646,9 +646,9 @@ It is often useful to call this method to avoid rounding errors on a rotating ba
 
 :ref:`Basis<class_Basis>` **rotated**\ (\ axis\: :ref:`Vector3<class_Vector3>`, angle\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Basis_method_rotated>`
 
-Returns a copy of this basis rotated around the given ``axis`` by the given ``angle`` (in radians).
+Devuelve una copia de esta base rotada alrededor del eje ``axis`` dado, con el ángulo ``angle`` dado (en radianes).
 
-The ``axis`` must be a normalized vector (see :ref:`Vector3.normalized()<class_Vector3_method_normalized>`). If ``angle`` is positive, the basis is rotated counter-clockwise around the axis.
+El eje ``axis`` debe ser un vector normalizado (véase :ref:`Vector3.normalized()<class_Vector3_method_normalized>`). Si el ángulo ``angle`` es positivo, la base se rota en sentido antihorario alrededor del eje.
 
 
 .. tabs::
@@ -658,18 +658,18 @@ The ``axis`` must be a normalized vector (see :ref:`Vector3.normalized()<class_V
     var my_basis = Basis.IDENTITY
     var angle = TAU / 2
 
-    my_basis = my_basis.rotated(Vector3.UP, angle)    # Rotate around the up axis (yaw).
-    my_basis = my_basis.rotated(Vector3.RIGHT, angle) # Rotate around the right axis (pitch).
-    my_basis = my_basis.rotated(Vector3.BACK, angle)  # Rotate around the back axis (roll).
+    my_basis = my_basis.rotated(Vector3.UP, angle)     # Rotar alrededor del eje vertical (guiñada).
+    my_basis = my_basis.rotated(Vector3.RIGHT, angle) # Rotar alrededor del eje horizontal (cabeceo).
+    my_basis = my_basis.rotated(Vector3.BACK, angle)  # Rotar alrededor del eje vertical (balanceo).
 
  .. code-tab:: csharp
 
     var myBasis = Basis.Identity;
-    var angle = Mathf.Tau / 2.0f;
+    var ángulo = Mathf.Tau / 2.0f;
 
-    myBasis = myBasis.Rotated(Vector3.Up, angle);    // Rotate around the up axis (yaw).
-    myBasis = myBasis.Rotated(Vector3.Right, angle); // Rotate around the right axis (pitch).
-    myBasis = myBasis.Rotated(Vector3.Back, angle);  // Rotate around the back axis (roll).
+    myBasis = myBasis.Rotated(Vector3.Up, ángulo);      // Rotar alrededor del eje vertical (guiñada).
+    myBasis = myBasis.Rotated(Vector3.Right, ángulo); // Rotar alrededor del eje horizontal (cabeceo).
+    myBasis = myBasis.Rotated(Vector3.Back, ángulo);   // Rotar alrededor del eje vertical (balanceo).
 
 
 
@@ -683,9 +683,9 @@ The ``axis`` must be a normalized vector (see :ref:`Vector3.normalized()<class_V
 
 :ref:`Basis<class_Basis>` **scaled**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled>`
 
-Returns this basis with each axis's components scaled by the given ``scale``'s components.
+Devuelve esta base con los componentes de cada eje escalados según los componentes de ``scale`` especificados.
 
-The basis matrix's rows are multiplied by ``scale``'s components. This operation is a global scale (relative to the parent).
+Las filas de la matriz base se multiplican por los componentes de ``scale``. Esta operación aplica una escala global (relativa a la matriz padre).
 
 
 .. tabs::
@@ -699,9 +699,9 @@ The basis matrix's rows are multiplied by ``scale``'s components. This operation
     )
     my_basis = my_basis.scaled(Vector3(0, 2, -2))
 
-    print(my_basis.x) # Prints (0.0, 2.0, -2.0)
-    print(my_basis.y) # Prints (0.0, 4.0, -4.0)
-    print(my_basis.z) # Prints (0.0, 6.0, -6.0)
+    print(my_basis.x) # Imprime (0.0, 2.0, -2.0)
+    print(my_basis.y) # Imprime (0.0, 4.0, -4.0)
+    print(my_basis.z) # Imprime (0.0, 6.0, -6.0)
 
  .. code-tab:: csharp
 
@@ -709,12 +709,12 @@ The basis matrix's rows are multiplied by ``scale``'s components. This operation
         new Vector3(1.0f, 1.0f, 1.0f),
         new Vector3(2.0f, 2.0f, 2.0f),
         new Vector3(3.0f, 3.0f, 3.0f)
-    );
+
     myBasis = myBasis.Scaled(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(myBasis.X); // Prints (0, 2, -2)
-    GD.Print(myBasis.Y); // Prints (0, 4, -4)
-    GD.Print(myBasis.Z); // Prints (0, 6, -6)
+    GD.Print(myBasis.X); // Imprime (0, 2, -2)
+    GD.Print(myBasis.Y); // Imprime (0, 4, -4)
+    GD.Print(myBasis.Z); // Imprime (0, 6, -6)
 
 
 
@@ -728,9 +728,9 @@ The basis matrix's rows are multiplied by ``scale``'s components. This operation
 
 :ref:`Basis<class_Basis>` **scaled_local**\ (\ scale\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_scaled_local>`
 
-Returns this basis with each axis scaled by the corresponding component in the given ``scale``.
+Devuelve esta base con cada eje escalado por el componente correspondiente en el parámetro ``scale``.
 
-The basis matrix's columns are multiplied by ``scale``'s components. This operation is a local scale (relative to self).
+Las columnas de la matriz base se multiplican por los componentes de ``scale``. Esta operación es una escala local (relativa a sí misma).
 
 
 .. tabs::
@@ -744,9 +744,9 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
     )
     my_basis = my_basis.scaled_local(Vector3(0, 2, -2))
 
-    print(my_basis.x) # Prints (0.0, 0.0, 0.0)
-    print(my_basis.y) # Prints (4.0, 4.0, 4.0)
-    print(my_basis.z) # Prints (-6.0, -6.0, -6.0)
+    print(my_basis.x) # Imprime (0.0, 0.0, 0.0)
+    print(my_basis.y) # Imprime (4.0, 4.0, 4.0)
+    print(my_basis.z) # Imprime (-6.0, -6.0, -6.0)
 
  .. code-tab:: csharp
 
@@ -757,9 +757,9 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
     );
     myBasis = myBasis.ScaledLocal(new Vector3(0.0f, 2.0f, -2.0f));
 
-    GD.Print(myBasis.X); // Prints (0, 0, 0)
-    GD.Print(myBasis.Y); // Prints (4, 4, 4)
-    GD.Print(myBasis.Z); // Prints (-6, -6, -6)
+    GD.Print(myBasis.X); // Imprime (0, 0, 0)
+    GD.Print(myBasis.Y); // Imprime (4, 4, 4)
+    GD.Print(myBasis.Z); // Imprime (-6, -6, -6)
 
 
 
@@ -773,9 +773,9 @@ The basis matrix's columns are multiplied by ``scale``'s components. This operat
 
 :ref:`Basis<class_Basis>` **slerp**\ (\ to\: :ref:`Basis<class_Basis>`, weight\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Basis_method_slerp>`
 
-Performs a spherical-linear interpolation with the ``to`` basis, given a ``weight``. Both this basis and ``to`` should represent a rotation.
+Realiza una interpolación esférica lineal con la base ``to``, dado un ``weight``. Tanto esta base como ``to`` deben representar una rotación.
 
-\ **Example:** Smoothly rotate a :ref:`Node3D<class_Node3D>` to the target basis over time, with a :ref:`Tween<class_Tween>`:
+\ **Ejemplo:** Rota suavemente un :ref:`Node3D<class_Node3D>` a la base objetivo a lo largo del tiempo, con un :ref:`Tween<class_Tween>`:
 
 ::
 
@@ -786,7 +786,7 @@ Performs a spherical-linear interpolation with the ``to`` basis, given a ``weigh
         create_tween().tween_method(interpolate, 0.0, 1.0, 5.0).set_trans(Tween.TRANS_EXPO)
 
     func interpolate(weight):
-        basis = start_basis.slerp(target_basis, weight)
+        basic = start_basis.slerp(target_basis, weight)
 
 .. rst-class:: classref-item-separator
 
@@ -798,9 +798,9 @@ Performs a spherical-linear interpolation with the ``to`` basis, given a ``weigh
 
 :ref:`float<class_float>` **tdotx**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_tdotx>`
 
-Returns the transposed dot product between ``with`` and the :ref:`x<class_Basis_property_x>` axis (see :ref:`transposed()<class_Basis_method_transposed>`).
+Devuelve el producto escalar transpuesto entre ``with`` y el eje :ref:`x<class_Basis_property_x>` (ver :ref:`transposed()<class_Basis_method_transposed>`).
 
-This is equivalent to ``basis.x.dot(vector)``.
+Esto es equivalente a ``basis.x.dot(vector)``.
 
 .. rst-class:: classref-item-separator
 
@@ -812,9 +812,9 @@ This is equivalent to ``basis.x.dot(vector)``.
 
 :ref:`float<class_float>` **tdoty**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_tdoty>`
 
-Returns the transposed dot product between ``with`` and the :ref:`y<class_Basis_property_y>` axis (see :ref:`transposed()<class_Basis_method_transposed>`).
+Devuelve el producto escalar transpuesto entre ``with`` y el eje :ref:`y<class_Basis_property_y>` (ver :ref:`transposed()<class_Basis_method_transposed>`).
 
-This is equivalent to ``basis.y.dot(vector)``.
+Esto es equivalente a ``basis.y.dot(vector)``.
 
 .. rst-class:: classref-item-separator
 
@@ -826,9 +826,9 @@ This is equivalent to ``basis.y.dot(vector)``.
 
 :ref:`float<class_float>` **tdotz**\ (\ with\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Basis_method_tdotz>`
 
-Returns the transposed dot product between ``with`` and the :ref:`z<class_Basis_property_z>` axis (see :ref:`transposed()<class_Basis_method_transposed>`).
+Devuelve el producto escalar transpuesto entre ``with`` y el eje :ref:`z<class_Basis_property_z>` (ver :ref:`transposed()<class_Basis_method_transposed>`).
 
-This is equivalent to ``basis.z.dot(vector)``.
+Esto es equivalente a ``basis.z.dot(vector)``.
 
 .. rst-class:: classref-item-separator
 
@@ -840,7 +840,7 @@ This is equivalent to ``basis.z.dot(vector)``.
 
 :ref:`Basis<class_Basis>` **transposed**\ (\ ) |const| :ref:`🔗<class_Basis_method_transposed>`
 
-Returns the transposed version of this basis. This turns the basis matrix's columns into rows, and its rows into columns.
+Devuelve la versión transpuesta de esta base. Esto convierte las columnas de la matriz base en filas y sus filas en columnas.
 
 
 .. tabs::
@@ -854,9 +854,9 @@ Returns the transposed version of this basis. This turns the basis matrix's colu
     )
     my_basis = my_basis.transposed()
 
-    print(my_basis.x) # Prints (1.0, 4.0, 7.0)
-    print(my_basis.y) # Prints (2.0, 5.0, 8.0)
-    print(my_basis.z) # Prints (3.0, 6.0, 9.0)
+    print(my_basis.x) # Imprime (1.0, 4.0, 7.0)
+    print(my_basis.y) # Imprime (2.0, 5.0, 8.0)
+    print(my_basis.z) # Imprime (3.0, 6.0, 9.0)
 
  .. code-tab:: csharp
 
@@ -867,9 +867,9 @@ Returns the transposed version of this basis. This turns the basis matrix's colu
     );
     myBasis = myBasis.Transposed();
 
-    GD.Print(myBasis.X); // Prints (1, 4, 7)
-    GD.Print(myBasis.Y); // Prints (2, 5, 8)
-    GD.Print(myBasis.Z); // Prints (3, 6, 9)
+    GD.Print(myBasis.X); // Imprime (1, 4, 7)
+    GD.Print(myBasis.Y); // Imprime (2, 5, 8)
+    GD.Print(myBasis.Z); // Imprime (3, 6, 9)
 
 
 
@@ -888,9 +888,9 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Basis<class_Basis>`\ ) :ref:`🔗<class_Basis_operator_neq_Basis>`
 
-Returns ``true`` if the components of both **Basis** matrices are not equal.
+Devuelve ``true`` si los componentes de ambas matrices **Basis** no son iguales.
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Basis_method_is_equal_approx>` instead, which is more reliable.
+\ **Nota:** Debido a errores de precisión de punto flotante, considera usar :ref:`is_equal_approx()<class_Basis_method_is_equal_approx>` en su lugar, ya que es más confiable.
 
 .. rst-class:: classref-item-separator
 
@@ -902,9 +902,9 @@ Returns ``true`` if the components of both **Basis** matrices are not equal.
 
 :ref:`Basis<class_Basis>` **operator ***\ (\ right\: :ref:`Basis<class_Basis>`\ ) :ref:`🔗<class_Basis_operator_mul_Basis>`
 
-Transforms (multiplies) the ``right`` basis by this basis.
+Transforma (multiplica) la base ``right`` por esta base.
 
-This is the operation performed between parent and child :ref:`Node3D<class_Node3D>`\ s.
+Esta es la operación que se realiza entre los nodos :ref:`Node3D<class_Node3D>` padre e hijo.
 
 .. rst-class:: classref-item-separator
 
@@ -916,22 +916,22 @@ This is the operation performed between parent and child :ref:`Node3D<class_Node
 
 :ref:`Vector3<class_Vector3>` **operator ***\ (\ right\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Basis_operator_mul_Vector3>`
 
-Transforms (multiplies) the ``right`` vector by this basis, returning a :ref:`Vector3<class_Vector3>`.
+Transforma (multiplica) el vector ``right`` por esta base, devolviendo un :ref:`Vector3<class_Vector3>`.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Basis that swaps the X/Z axes and doubles the scale.
+    # Base que intercambia los ejes X/Z y duplica la escala.
     var my_basis = Basis(Vector3(0, 2, 0), Vector3(2, 0, 0), Vector3(0, 0, 2))
-    print(my_basis * Vector3(1, 2, 3)) # Prints (4.0, 2.0, 6.0)
+    print(my_basis * Vector3(1, 2, 3)) # Imprime (4.0, 2.0, 6.0)
 
  .. code-tab:: csharp
 
-    // Basis that swaps the X/Z axes and doubles the scale.
+    // Base que intercambia los ejes X/Z y duplica la escala.
     var myBasis = new Basis(new Vector3(0, 2, 0), new Vector3(2, 0, 0), new Vector3(0, 0, 2));
-    GD.Print(myBasis * new Vector3(1, 2, 3)); // Prints (4, 2, 6)
+    GD.Print(myBasis * new Vector3(1, 2, 3)); // Imprime (4, 2, 6)
 
 
 
@@ -993,9 +993,9 @@ Divide todos los componentes de la **Basis** por el :ref:`int<class_int>` dado. 
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Basis<class_Basis>`\ ) :ref:`🔗<class_Basis_operator_eq_Basis>`
 
-Returns ``true`` if the components of both **Basis** matrices are exactly equal.
+Devuelve ``true`` si los componentes de ambas matrices **Basis** son exactamente iguales.
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Basis_method_is_equal_approx>` instead, which is more reliable.
+\ **Nota:** Debido a errores de precisión de punto flotante, considera usar :ref:`is_equal_approx()<class_Basis_method_is_equal_approx>` en su lugar, ya que es más confiable.
 
 .. rst-class:: classref-item-separator
 

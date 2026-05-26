@@ -199,7 +199,7 @@ Si es ``true``, el tamaño de la textura no se considerará para el cálculo del
 - |void| **set_stretch_mode**\ (\ value\: :ref:`StretchMode<enum_TextureButton_StretchMode>`\ )
 - :ref:`StretchMode<enum_TextureButton_StretchMode>` **get_stretch_mode**\ (\ )
 
-Controla el comportamiento de la textura al redimensionar el rectángulo delimitador del nodo. Consulta las constantes :ref:`StretchMode<enum_TextureButton_StretchMode>` para ver las opciones disponibles.
+Controla el comportamiento de la textura al redimensionar el rectángulo delimitador del nodo. Véanse las constantes :ref:`StretchMode<enum_TextureButton_StretchMode>` para ver las opciones disponibles.
 
 .. rst-class:: classref-item-separator
 

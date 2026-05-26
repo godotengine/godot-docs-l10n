@@ -148,9 +148,9 @@ Señales
 
 **body_entered**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_RigidBody2D_signal_body_entered>`
 
-Emitted when a collision with another :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>` occurs. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`TileMap<class_TileMap>`\ s are detected if the :ref:`TileSet<class_TileSet>` has Collision :ref:`Shape2D<class_Shape2D>`\ s.
+Se emite cuando ocurre una colisión con otro :ref:`PhysicsBody2D<class_PhysicsBody2D>` o :ref:`TileMap<class_TileMap>`. Requiere que :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` esté establecido en ``true`` y que :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` sea lo suficientemente alto para detectar todas las colisiones. Los :ref:`TileMap<class_TileMap>`\ s se detectan si el :ref:`TileSet<class_TileSet>` tiene formas de colisión :ref:`Shape2D<class_Shape2D>`.
 
-\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`.
+\ ``body`` el :ref:`Node<class_Node>`, si existe en el árbol, del otro :ref:`PhysicsBody2D<class_PhysicsBody2D>` o :ref:`TileMap<class_TileMap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -162,9 +162,9 @@ Emitted when a collision with another :ref:`PhysicsBody2D<class_PhysicsBody2D>` 
 
 **body_exited**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_RigidBody2D_signal_body_exited>`
 
-Emitted when the collision with another :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>` ends. Requires :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`TileMap<class_TileMap>`\ s are detected if the :ref:`TileSet<class_TileSet>` has Collision :ref:`Shape2D<class_Shape2D>`\ s.
+Se emite cuando la colisión con otro :ref:`PhysicsBody2D<class_PhysicsBody2D>` o :ref:`TileMap<class_TileMap>` finaliza. Requiere que :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>` esté establecido en ``true`` y que :ref:`max_contacts_reported<class_RigidBody2D_property_max_contacts_reported>` sea lo suficientemente alto para detectar todas las colisiones. Los :ref:`TileMap<class_TileMap>`\ s se detectan si el :ref:`TileSet<class_TileSet>` tiene formas de colisión :ref:`Shape2D<class_Shape2D>`.
 
-\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody2D<class_PhysicsBody2D>` or :ref:`TileMap<class_TileMap>`.
+\ ``body`` el :ref:`Node<class_Node>`, si existe en el árbol, del otro :ref:`PhysicsBody2D<class_PhysicsBody2D>` o :ref:`TileMap<class_TileMap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -520,9 +520,9 @@ If ``true``, the RigidBody2D will emit signals when it collides with another bod
 - |void| **set_continuous_collision_detection_mode**\ (\ value\: :ref:`CCDMode<enum_RigidBody2D_CCDMode>`\ )
 - :ref:`CCDMode<enum_RigidBody2D_CCDMode>` **get_continuous_collision_detection_mode**\ (\ )
 
-Continuous collision detection mode.
+Modo de detección de colisiones continua.
 
-Continuous collision detection tries to predict where a moving body will collide instead of moving it and correcting its movement after collision. Continuous collision detection is slower, but more precise and misses fewer collisions with small, fast-moving objects. Raycasting and shapecasting methods are available.
+La detección de colisiones continua intenta predecir dónde colisionará un cuerpo en movimiento en lugar de moverlo y corregir su movimiento después de la colisión. La detección de colisiones continua es más lenta, pero más precisa y omite menos colisiones con objetos pequeños que se mueven a gran velocidad. Están disponibles los métodos de raycasting y shapecasting.
 
 .. rst-class:: classref-item-separator
 
@@ -681,7 +681,7 @@ See :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_mode**\ (\ value\: :ref:`DampMode<enum_RigidBody2D_DampMode>`\ )
 - :ref:`DampMode<enum_RigidBody2D_DampMode>` **get_linear_damp_mode**\ (\ )
 
-Defines how :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` is applied.
+Define cómo se aplica :ref:`linear_damp<class_RigidBody2D_property_linear_damp>`.
 
 .. rst-class:: classref-item-separator
 

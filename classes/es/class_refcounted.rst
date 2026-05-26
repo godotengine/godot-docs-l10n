@@ -31,7 +31,7 @@ In the vast majority of use cases, instantiating and using **RefCounted**-derive
 Tutoriales
 --------------------
 
-- :doc:`When and how to avoid using nodes for everything <../tutorials/best_practices/node_alternatives>`
+- :doc:`Cuándo y cómo evitar el uso de nodos para todo <../tutorials/best_practices/node_alternatives>`
 
 .. rst-class:: classref-reftable-group
 

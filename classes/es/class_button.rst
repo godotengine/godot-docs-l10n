@@ -16,9 +16,9 @@ Un botón temático que puede contener texto y un icono.
 Descripción
 ----------------------
 
-**Button** is the standard themed button. It can contain text and an icon, and it will display them according to the current :ref:`Theme<class_Theme>`.
+**Button** es el botón con tema estándar. Puede contener texto y un icono, y los mostrará de acuerdo con el :ref:`Theme<class_Theme>` actual.
 
-\ **Example:** Create a button and connect a method that will be called when the button is pressed:
+\ **Ejemplo:** Crea un botón y conecta un método que se llamará cuando se presione el botón:
 
 
 .. tabs::
@@ -51,9 +51,9 @@ Descripción
 
 
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+Véase también :ref:`BaseButton<class_BaseButton>`, que contiene las propiedades y métodos comunes asociados con este nodo.
 
-\ **Note:** Buttons do not detect touch input and therefore don't support multitouch, since mouse emulation can only press one button at a given time. Use :ref:`TouchScreenButton<class_TouchScreenButton>` for buttons that trigger gameplay movement or actions.
+\ **Nota:** Los botones no detectan entrada táctil y, por lo tanto, no admiten multitáctil, ya que la emulación del ratón solo puede presionar un botón a la vez. Usa :ref:`TouchScreenButton<class_TouchScreenButton>` para botones que activan movimientos o acciones de juego.
 
 .. rst-class:: classref-introduction-group
 
@@ -597,7 +597,7 @@ El espacio horizontal entre el icono y el texto del **Button**. Los valores nega
 
 :ref:`int<class_int>` **icon_max_width** = ``0`` :ref:`🔗<class_Button_theme_constant_icon_max_width>`
 
-The maximum allowed width of the **Button**'s icon. This limit is applied on top of the default size of the icon, or its expanded size if :ref:`expand_icon<class_Button_property_expand_icon>` is ``true``. The height is adjusted according to the icon's ratio. If the button has additional icons (e.g. :ref:`CheckBox<class_CheckBox>`), they will also be limited.
+El ancho máximo permitido para el icono del **Button**. Este límite se aplica sobre el tamaño predeterminado del icono, o sobre su tamaño expandido si :ref:`expand_icon<class_Button_property_expand_icon>` es ``true``. La altura se ajusta según la relación de aspecto (ratio) del icono. Si el botón tiene iconos adicionales (por ejemplo, :ref:`CheckBox<class_CheckBox>`), estos también se verán limitados.
 
 .. rst-class:: classref-item-separator
 
@@ -609,7 +609,7 @@ The maximum allowed width of the **Button**'s icon. This limit is applied on top
 
 :ref:`int<class_int>` **line_spacing** = ``0`` :ref:`🔗<class_Button_theme_constant_line_spacing>`
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al descenso de la línea (line descent). Este valor puede ser negativo.
 
 .. rst-class:: classref-item-separator
 
@@ -621,9 +621,9 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_Button_theme_constant_outline_size>`
 
-The size of the text outline.
+El tamaño del contorno del texto.
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_Button_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_Button_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 
@@ -695,7 +695,7 @@ Icono predeterminado para el **Button**. Aparece solo si :ref:`icon<class_Button
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_Button_theme_style_focus>`
 
-:ref:`StyleBox<class_StyleBox>` used when the **Button** is focused. The :ref:`focus<class_Button_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` is displayed *over* the base :ref:`StyleBox<class_StyleBox>`, so a partially transparent :ref:`StyleBox<class_StyleBox>` should be used to ensure the base :ref:`StyleBox<class_StyleBox>` remains visible. A :ref:`StyleBox<class_StyleBox>` that represents an outline or an underline works well for this purpose. To disable the focus visual effect, assign a :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` resource. Note that disabling the focus visual effect will harm keyboard/controller navigation usability, so this is not recommended for accessibility reasons.
+:ref:`StyleBox<class_StyleBox>` usado cuando el **Button** está enfocado. El :ref:`StyleBox<class_StyleBox>` :ref:`focus<class_Button_theme_style_focus>` se muestra *sobre* el :ref:`StyleBox<class_StyleBox>` base, por lo que se debe usar un :ref:`StyleBox<class_StyleBox>` parcialmente transparente para asegurar que el :ref:`StyleBox<class_StyleBox>` base permanezca visible. Un :ref:`StyleBox<class_StyleBox>` que represente un contorno o un subrayado funciona bien para este propósito. Para desactivar el efecto visual de enfoque, asigna un recurso :ref:`StyleBoxEmpty<class_StyleBoxEmpty>`. Ten en cuenta que desactivar el efecto visual de enfoque perjudicará la usabilidad de la navegación con teclado/mando, por lo que no se recomienda por razones de accesibilidad.
 
 .. rst-class:: classref-item-separator
 

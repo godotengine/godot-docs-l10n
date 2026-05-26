@@ -162,7 +162,7 @@ Cuando un servidor ha recibido y procesado una solicitud, se espera que envíe u
 
 Crea una respuesta que indica que una respuesta anterior ha fallado de alguna manera.
 
-- ``code``: El código de error que corresponde al tipo de error. Consulta las constantes :ref:`ErrorCode<enum_JSONRPC_ErrorCode>`.
+- ``code``: El código de error que corresponde al tipo de error. Véanse las constantes :ref:`ErrorCode<enum_JSONRPC_ErrorCode>`.
 
 - ``message``: Un mensaje personalizado sobre este error.
 

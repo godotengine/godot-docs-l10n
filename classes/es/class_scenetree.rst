@@ -186,7 +186,7 @@ Emitida cuando el :ref:`Node.name<class_Node_property_name>` de ``node`` es camb
 
 **physics_frame**\ (\ ) :ref:`🔗<class_SceneTree_signal_physics_frame>`
 
-Emitted immediately before :ref:`Node._physics_process()<class_Node_private_method__physics_process>` is called on every node in this tree.
+Emitida inmediatamente antes de que se llame a :ref:`Node._physics_process()<class_Node_private_method__physics_process>` en cada nodo de este árbol.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Emitted immediately before :ref:`Node._physics_process()<class_Node_private_meth
 
 **process_frame**\ (\ ) :ref:`🔗<class_SceneTree_signal_process_frame>`
 
-Emitted immediately before :ref:`Node._process()<class_Node_private_method__process>` is called on every node in this tree.
+Emitida inmediatamente antes de que se llame a :ref:`Node._process()<class_Node_private_method__process>` en cada nodo de este árbol.
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ enum **GroupCallFlags**: :ref:`🔗<enum_SceneTree_GroupCallFlags>`
 
 :ref:`GroupCallFlags<enum_SceneTree_GroupCallFlags>` **GROUP_CALL_DEFAULT** = ``0``
 
-Call nodes within a group with no special behavior (default).
+Llama a los nodos dentro de un grupo sin comportamiento especial (por defecto).
 
 .. _class_SceneTree_constant_GROUP_CALL_REVERSE:
 
@@ -505,9 +505,9 @@ To handle 'Go Back' button when this option is disabled, use :ref:`DisplayServer
 
 - :ref:`Window<class_Window>` **get_root**\ (\ )
 
-The tree's root :ref:`Window<class_Window>`. This is top-most :ref:`Node<class_Node>` of the scene tree, and is always present. An absolute :ref:`NodePath<class_NodePath>` always starts from this node. Children of the root node may include the loaded :ref:`current_scene<class_SceneTree_property_current_scene>`, as well as any :doc:`AutoLoad <../tutorials/scripting/singletons_autoload>` configured in the Project Settings.
+La :ref:`Window<class_Window>` raíz del árbol. Este es el :ref:`Node<class_Node>` más alto del árbol de escenas, y siempre está presente. Un :ref:`NodePath<class_NodePath>` absoluto siempre comienza desde este nodo. Los hijos del nodo raíz pueden incluir la :ref:`current_scene<class_SceneTree_property_current_scene>` cargada, así como cualquier :doc:`AutoLoad <../tutorials/scripting/singletons_autoload>` configurado en la Configuración del Proyecto.
 
-\ **Warning:** Do not delete this node. This will result in unstable behavior, followed by a crash.
+\ **Advertencia:** No borres este nodo. Esto resultará en un comportamiento inestable, seguido de un fallo.
 
 .. rst-class:: classref-section-separator
 
@@ -619,15 +619,15 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`SceneTreeTimer<class_SceneTreeTimer>` **create_timer**\ (\ time_sec\: :ref:`float<class_float>`, process_always\: :ref:`bool<class_bool>` = true, process_in_physics\: :ref:`bool<class_bool>` = false, ignore_time_scale\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_SceneTree_method_create_timer>`
 
-Returns a new :ref:`SceneTreeTimer<class_SceneTreeTimer>`. After ``time_sec`` in seconds have passed, the timer will emit :ref:`SceneTreeTimer.timeout<class_SceneTreeTimer_signal_timeout>` and will be automatically freed.
+Devuelve un nuevo :ref:`SceneTreeTimer<class_SceneTreeTimer>`. Después de que hayan transcurrido ``time_sec`` segundos, el temporizador emitirá :ref:`SceneTreeTimer.timeout<class_SceneTreeTimer_signal_timeout>` y se liberará automáticamente.
 
-If ``process_always`` is ``false``, the timer will be paused when setting :ref:`paused<class_SceneTree_property_paused>` to ``true``.
+Si ``process_always`` es ``false``, el temporizador se pausará cuando se configure :ref:`paused<class_SceneTree_property_paused>` en ``true``.
 
-If ``process_in_physics`` is ``true``, the timer will update at the end of the physics frame, instead of the process frame.
+Si ``process_in_physics`` es ``true``, el temporizador se actualizará al final del frame de física, en lugar de al final del frame de proceso.
 
-If ``ignore_time_scale`` is ``true``, the timer will ignore :ref:`Engine.time_scale<class_Engine_property_time_scale>` and update with the real, elapsed time.
+Si ``ignore_time_scale`` es ``true``, el temporizador ignorará :ref:`Engine.time_scale<class_Engine_property_time_scale>` y se actualizará con el tiempo real transcurrido.
 
-This method is commonly used to create a one-shot delay timer, as in the following example:
+Este método se utiliza comúnmente para crear un temporizador de retardo de una sola vez, como en el siguiente ejemplo:
 
 
 .. tabs::
@@ -650,7 +650,7 @@ This method is commonly used to create a one-shot delay timer, as in the followi
 
 
 
-\ **Note:** The timer is always updated *after* all of the nodes in the tree. A node's :ref:`Node._process()<class_Node_private_method__process>` method would be called before the timer updates (or :ref:`Node._physics_process()<class_Node_private_method__physics_process>` if ``process_in_physics`` is set to ``true``).
+\ **Nota:** El temporizador siempre se actualiza *después* de todos los nodos del árbol. El método :ref:`Node._process()<class_Node_private_method__process>` de un nodo se llamaría antes de que se actualice el temporizador (o :ref:`Node._physics_process()<class_Node_private_method__physics_process>` si ``process_in_physics`` se configura en ``true``).
 
 .. rst-class:: classref-item-separator
 

@@ -90,9 +90,9 @@ Un éditeur plus pratique pour :ref:`bar_beats<class_ResourceImporterOggVorbis_p
 
 :ref:`int<class_int>` **beat_count** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_beat_count>`
 
-The beat count of the audio track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+Le compte de battement de la piste audio. Ceci n'est pertinent que pour des musiques qui souhaitent utiliser la fonctionnalité de musique interactive, pas pour des effets sonores.
 
-A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Un éditeur plus pratique pour :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` est fourni dans le dialogue **Paramètres d'import avancés**, car il vous permet de prévisualiser vos changements sans avoir à réimporter l'audio.
 
 .. rst-class:: classref-item-separator
 
@@ -104,9 +104,9 @@ A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_pr
 
 :ref:`float<class_float>` **bpm** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_bpm>`
 
-The beats per minute of the audio track. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality, not sound effects.
+Les battements par minute de la piste audio. Ceci devrait correspondre aux battements par minute utilisés pour composer la piste. Ceci n'est pertinent que pour des musiques qui souhaitent utiliser la fonctionnalité de musique interactive, pas pour des effets sonores.
 
-A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Un éditeur plus pratique pour :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` est fourni dans le dialogue **Paramètres d'import avancés**, car il vous permet de prévisualiser vos changements sans avoir à réimporter l'audio.
 
 .. rst-class:: classref-item-separator
 
@@ -118,9 +118,9 @@ A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_
 
 :ref:`bool<class_bool>` **loop** = ``false`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop>`
 
-If enabled, the audio will begin playing at the beginning after playback ends by reaching the end of the audio.
+Si activé, l'audio re-commencera à jouer du début après que la lecture se termine en atteignant la fin de l'audio.
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **Note :** Dans :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, le signal :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` ne sera pas émis pour faire boucler l'audio quand il atteint la fin du fichier audio, car l'audio continuera de jouer indéfiniment.
 
 .. rst-class:: classref-item-separator
 
@@ -132,11 +132,11 @@ If enabled, the audio will begin playing at the beginning after playback ends by
 
 :ref:`float<class_float>` **loop_offset** = ``0`` :ref:`🔗<class_ResourceImporterOggVorbis_property_loop_offset>`
 
-Determines where audio will start to loop after playback reaches the end of the audio. This can be used to only loop a part of the audio file, which is useful for some ambient sounds or music. The value is determined in seconds relative to the beginning of the audio. A value of ``0.0`` will loop the entire audio file.
+Détermine où l'audio commencera à reboucler après que la lecture atteignela fin de l'audio. Cela peut être utilisé que pour ne faire boucler qu'une partie du fichier audio, ce qui est utile pour certains sons ou musique ambiants. La valeur est déterminée en secondes par rapport au début de l'audio. Une valeur de ``0.0`` fera boucler l'ensemble du fichier audio.
 
-Only has an effect if :ref:`loop<class_ResourceImporterOggVorbis_property_loop>` is ``true``.
+A seulement un effet si :ref:`loop<class_ResourceImporterOggVorbis_property_loop>` vaut ``true``.
 
-A more convenient editor for :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+Un éditeur plus commode pour :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` est fourni dans le dialogue **Paramètres d'import avancés**, car il vous permet de prévisualiser vos changements sans avoir à réimporter l'audio.
 
 .. rst-class:: classref-section-separator
 

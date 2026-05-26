@@ -366,9 +366,9 @@ Elimina un elemento del array por indice.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedVector3Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedVector3Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+Establece el tamaño del array. Si el array aumenta de tamaño, reserva elementos al final del array. Si el array se encoge, trunca el array al nuevo tamaño. Llamar a :ref:`resize()<class_PackedVector3Array_method_resize>` una vez y asignar los nuevos valores es más rápido que añadir nuevos elementos uno por uno.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedVector3Array_method_size>` to find the actual size of the array after resize.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las siguientes constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si el tamaño es negativo, o :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` si las asignaciones fallan. Usa :ref:`size()<class_PackedVector3Array_method_size>` para encontrar el tamaño real del array después del redimensionamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -477,7 +477,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedVector3Array<class_PackedVector3Array>`\ ) :ref:`🔗<class_PackedVector3Array_operator_neq_PackedVector3Array>`
 
-Returns ``true`` if contents of the arrays differ.
+Devuelve ``true`` si los contenidos de los arrays difieren.
 
 .. rst-class:: classref-item-separator
 

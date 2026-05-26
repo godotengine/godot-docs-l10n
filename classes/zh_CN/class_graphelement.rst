@@ -226,7 +226,7 @@ GraphElement 的偏移量，相对于 :ref:`GraphEdit<class_GraphEdit>` 的滚�
 - |void| **set_scaling_menus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scaling_menus**\ (\ )
 
-If ``true``, :ref:`PopupMenu<class_PopupMenu>`\ s that are descendants of the GraphElement are scaled with the :ref:`GraphEdit<class_GraphEdit>` zoom.
+如果为 ``true``\ ，则作为该 GraphElement 后代的 :ref:`PopupMenu<class_PopupMenu>` 会随着 :ref:`GraphEdit<class_GraphEdit>` 的缩放而缩放。
 
 .. rst-class:: classref-item-separator
 

@@ -16,7 +16,7 @@ A node for inverse kinematics which may modify more than one bone.
 Descrizione
 ----------------------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s that has some joint lists and applies inverse kinematics. This class has some structs, enums, and helper methods which are useful to solve inverse kinematics.
+Classe base di :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` che possiede alcune liste di giunti e applica la cinematica inversa. Questa classe ha alcune struct, enumerazioni e metodi ausiliari utili per risolvere la cinematica inversa.
 
 .. rst-class:: classref-introduction-group
 

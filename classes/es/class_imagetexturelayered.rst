@@ -47,13 +47,13 @@ Descripciones de Métodos
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_from_images**\ (\ images\: :ref:`Array<class_Array>`\[:ref:`Image<class_Image>`\]\ ) :ref:`🔗<class_ImageTextureLayered_method_create_from_images>`
 
-Creates an **ImageTextureLayered** from an array of :ref:`Image<class_Image>`\ s. See :ref:`Image.create()<class_Image_method_create>` for the expected data format. The first image decides the width, height, image format and mipmapping setting. The other images *must* have the same width, height, image format and mipmapping setting.
+Crea una **ImageTextureLayered** a partir de un array de :ref:`Image<class_Image>`\ s. Véase :ref:`Image.create()<class_Image_method_create>` para el formato de datos esperado. La primera imagen decide el ancho, alto, formato de imagen y la configuración de mipmapping. Las otras imágenes *deben* tener el mismo ancho, alto, formato de imagen y configuración de mipmapping.
 
-Each :ref:`Image<class_Image>` represents one ``layer``.
+Cada :ref:`Image<class_Image>` representa una ``layer``.
 
 ::
 
-    # Fill in an array of Images with different colors.
+    # Rellena un array de Images con diferentes colores.
     var images = []
     const LAYERS = 6
     for i in LAYERS:
@@ -66,21 +66,21 @@ Each :ref:`Image<class_Image>` represents one ``layer``.
             image.fill(Color.BLUE)
         images.push_back(image)
 
-    # Create and save a 2D texture array. The array of images must have at least 1 Image.
+    # Crea y guarda un array de textura 2D. El array de imágenes debe tener al menos 1 Image.
     var texture_2d_array = Texture2DArray.new()
     texture_2d_array.create_from_images(images)
     ResourceSaver.save(texture_2d_array, "res://texture_2d_array.res", ResourceSaver.FLAG_COMPRESS)
 
-    # Create and save a cubemap. The array of images must have exactly 6 Images.
-    # The cubemap's images are specified in this order: X+, X-, Y+, Y-, Z+, Z-
-    # (in Godot's coordinate system, so Y+ is "up" and Z- is "forward").
+    # Crea y guarda un cubemap. El array de imágenes debe tener exactamente 6 Images.
+    # Las imágenes del cubemap se especifican en este orden: X+, X-, Y+, Y-, Z+, Z-
+    # (en el sistema de coordenadas de Godot, donde Y+ es "arriba" y Z- es "adelante").
     var cubemap = Cubemap.new()
     cubemap.create_from_images(images)
     ResourceSaver.save(cubemap, "res://cubemap.res", ResourceSaver.FLAG_COMPRESS)
 
-    # Create and save a cubemap array. The array of images must have a multiple of 6 Images.
-    # Each cubemap's images are specified in this order: X+, X-, Y+, Y-, Z+, Z-
-    # (in Godot's coordinate system, so Y+ is "up" and Z- is "forward").
+    # Crea y guarda un array de cubemaps. El array de imágenes debe tener un múltiplo de 6 Images.
+    # Las imágenes de cada cubemap se especifican en este orden: X+, X-, Y+, Y-, Z+, Z-
+    # (en el sistema de coordenadas de Godot, donde Y+ es "arriba" y Z- es "adelante").
     var cubemap_array = CubemapArray.new()
     cubemap_array.create_from_images(images)
     ResourceSaver.save(cubemap_array, "res://cubemap_array.res", ResourceSaver.FLAG_COMPRESS)

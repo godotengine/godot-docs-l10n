@@ -9,14 +9,14 @@ AnimationNodeExtension
 
 **继承：** :ref:`AnimationNode<class_AnimationNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于从GDScript、C#或C++中继承\ :ref:`AnimationRootNode<class_AnimationRootNode>`\ 的基类。
+用于从 GDScript、C# 或 C++ 中继承 :ref:`AnimationRootNode<class_AnimationRootNode>` 的基类。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-**AnimationNodeExtension**\ 暴露了\ :ref:`AnimationRootNode<class_AnimationRootNode>`\ 的API，使得用户能够在GDScript、C#或C++中扩展它。这个类并不应被直接使用，而是通过其他类进行扩展。它被用于为\ :ref:`AnimationTree<class_AnimationTree>`\ 系统创建自定义节点。
+**AnimationNodeExtension** 暴露了 :ref:`AnimationRootNode<class_AnimationRootNode>` 的 API，使得用户能够在 GDScript、C# 或 C++ 中扩展它。这个类并不应被直接使用，而是被其他类扩展。它用于为 :ref:`AnimationTree<class_AnimationTree>` 系统创建自定义节点。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,11 +49,11 @@ AnimationNodeExtension
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **_process_animation_node**\ (\ playback_info\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`, test_only\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_AnimationNodeExtension_private_method__process_animation_node>`
 
-方法 :ref:`AnimationNode._process()<class_AnimationNode_private_method__process>` 的某个版本是供自定义节点覆盖所用。它会返回一个带有已处理过的动画数据的\ :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
+方法 :ref:`AnimationNode._process()<class_AnimationNode_private_method__process>` 用于供自定义节点覆盖的版本。它返回一个含有处理过的动画数据的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ 。
 
-\ :ref:`PackedFloat64Array<class_PackedFloat64Array>`\ 参数包含了回访信息，包括编码成浮点数的如下值（按顺序）：回访时间与偏移、开始和结束时间、是否请求快进快退（编码为一个大于\ ``0``\ 的浮点数）、快进快退请求是否是外部请求（编码为一个大于\ ``0``\ 的浮点数）、当前位置\ :ref:`LoopedFlag<enum_Animation_LoopedFlag>`\ （编码为一个浮点数）以及当前混合权重。
+\ :ref:`PackedFloat64Array<class_PackedFloat64Array>` 参数包含回放的信息，依次包括以下的浮点数编码值：回放时间与偏移、开始和结束时间、是否为检索请求（编码为一个大于 ``0`` 的浮点数）、是否为外部检索请求（编码为一个大于 ``0`` 的浮点数）、当前位置 :ref:`LoopedFlag<enum_Animation_LoopedFlag>`\ （编码为一个浮点数）、当前混合权重。
 
-此函数必须返回该节点时间信息的一个\ :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，包含如下值（按顺序）：动画长度、时间位置、偏移、\ :ref:`LoopMode<enum_Animation_LoopMode>`\ （编码为一个浮点数）、动画是否接近结束（编码为一个大于\ ``0``\ 的浮点数）以及动画是否永不结束（编码为一个大于\ ``0``\ 的浮点数）。所有值都须包含在返回的数组中。
+此函数必须返回该节点时间信息的一个 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，其依次包含以下值：动画长度、时间位置、偏移、\ :ref:`LoopMode<enum_Animation_LoopMode>`\ （编码为一个浮点数）、动画是否即将结束（编码为一个大于 ``0`` 的浮点数）、动画是否永不结束（编码为一个大于 ``0`` 的浮点数）。返回数组必须包含所有值。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ AnimationNodeExtension
 
 :ref:`float<class_float>` **get_remaining_time**\ (\ node_info\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`, break_loop\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_AnimationNodeExtension_method_get_remaining_time>`
 
-返回给定节点信息的动画剩余时间。对于循环动画，若 ``break_loop``\ 为\ ``true``\ ，将仅返回剩余时间，否则将返回一个巨大的整型数值。
+返回给定节点信息的动画剩余时间。对于循环动画，若 ``break_loop`` 为 ``true``\ ，将仅返回剩余时间，否则将返回一个巨大的整型数值。
 
 .. rst-class:: classref-item-separator
 

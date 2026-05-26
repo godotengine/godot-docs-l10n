@@ -142,7 +142,7 @@ enum **MotionMode**: :ref:`🔗<enum_CharacterBody2D_MotionMode>`
 
 :ref:`MotionMode<enum_CharacterBody2D_MotionMode>` **MOTION_MODE_GROUNDED** = ``0``
 
-Apply when notions of walls, ceiling and floor are relevant. In this mode the body motion will react to slopes (acceleration/slowdown). This mode is suitable for sided games like platformers.
+Se aplica cuando las nociones de paredes, techo y suelo son relevantes. En este modo, el motion del cuerpo reaccionará a las pendientes (aceleración/desaceleración). Este modo es adecuado para juegos laterales como los plataformas.
 
 .. _class_CharacterBody2D_constant_MOTION_MODE_FLOATING:
 
@@ -150,7 +150,7 @@ Apply when notions of walls, ceiling and floor are relevant. In this mode the bo
 
 :ref:`MotionMode<enum_CharacterBody2D_MotionMode>` **MOTION_MODE_FLOATING** = ``1``
 
-Apply when there is no notion of floor or ceiling. All collisions will be reported as ``on_wall``. In this mode, when you slide, the speed will always be constant. This mode is suitable for top-down games.
+Se aplica cuando no hay noción de suelo o techo. Todas las colisiones se informarán como ``on_wall``. En este modo, al deslizarse, la velocidad siempre será constante. Este modo es adecuado para juegos con vista cenital.
 
 .. rst-class:: classref-item-separator
 
@@ -168,7 +168,7 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody2D_PlatformOnLeave>`
 
 :ref:`PlatformOnLeave<enum_CharacterBody2D_PlatformOnLeave>` **PLATFORM_ON_LEAVE_ADD_VELOCITY** = ``0``
 
-Add the last platform velocity to the :ref:`velocity<class_CharacterBody2D_property_velocity>` when you leave a moving platform.
+Añade la velocidad de la última plataforma a :ref:`velocity<class_CharacterBody2D_property_velocity>` al abandonar una plataforma móvil.
 
 .. _class_CharacterBody2D_constant_PLATFORM_ON_LEAVE_ADD_UPWARD_VELOCITY:
 
@@ -176,7 +176,7 @@ Add the last platform velocity to the :ref:`velocity<class_CharacterBody2D_prope
 
 :ref:`PlatformOnLeave<enum_CharacterBody2D_PlatformOnLeave>` **PLATFORM_ON_LEAVE_ADD_UPWARD_VELOCITY** = ``1``
 
-Add the last platform velocity to the :ref:`velocity<class_CharacterBody2D_property_velocity>` when you leave a moving platform, but any downward motion is ignored. It's useful to keep full jump height even when the platform is moving down.
+Añade la velocidad de la última plataforma a :ref:`velocity<class_CharacterBody2D_property_velocity>` al abandonar una plataforma móvil, pero se ignora cualquier motion hacia abajo. Es útil para mantener la altura total del salto incluso cuando la plataforma se mueve hacia abajo.
 
 .. _class_CharacterBody2D_constant_PLATFORM_ON_LEAVE_DO_NOTHING:
 
@@ -206,7 +206,7 @@ Descripciones de Propiedades
 - |void| **set_floor_block_on_wall_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_floor_block_on_wall_enabled**\ (\ )
 
-If ``true``, the body will be able to move on the floor only. This option avoids to be able to walk on walls, it will however allow to slide down along them.
+Si es ``true``, el cuerpo solo podrá moverse por el suelo. Esta opción impide caminar por las paredes, aunque permite deslizarse hacia abajo por ellas.
 
 .. rst-class:: classref-item-separator
 
@@ -223,9 +223,9 @@ If ``true``, the body will be able to move on the floor only. This option avoids
 - |void| **set_floor_constant_speed_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_floor_constant_speed_enabled**\ (\ )
 
-If ``false`` (by default), the body will move faster on downward slopes and slower on upward slopes.
+Si es ``false`` (por defecto), el cuerpo se moverá más rápido en pendientes descendentes y más lento en pendientes ascendentes.
 
-If ``true``, the body will always move at the same speed on the ground no matter the slope. Note that you need to use :ref:`floor_snap_length<class_CharacterBody2D_property_floor_snap_length>` to stick along a downward slope at constant speed.
+Si es ``true``, el cuerpo siempre se moverá a la misma velocidad en el suelo, independientemente de la pendiente. Ten en cuenta que debes usar :ref:`floor_snap_length<class_CharacterBody2D_property_floor_snap_length>` para seguir a lo largo de una pendiente descendente a una velocidad constante.
 
 .. rst-class:: classref-item-separator
 
@@ -242,7 +242,7 @@ If ``true``, the body will always move at the same speed on the ground no matter
 - |void| **set_floor_max_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_floor_max_angle**\ (\ )
 
-Maximum angle (in radians) where a slope is still considered a floor (or a ceiling), rather than a wall, when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. The default value equals 45 degrees.
+Ángulo máximo (en radianes) en el que una pendiente se sigue considerando un suelo (o un techo), en lugar de una pared, al llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. El valor predeterminado equivale a 45 grados.
 
 .. rst-class:: classref-item-separator
 
@@ -259,9 +259,9 @@ Maximum angle (in radians) where a slope is still considered a floor (or a ceili
 - |void| **set_floor_snap_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_floor_snap_length**\ (\ )
 
-Sets a snapping distance. When set to a value different from ``0.0``, the body is kept attached to slopes when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. The snapping vector is determined by the given distance along the opposite direction of the :ref:`up_direction<class_CharacterBody2D_property_up_direction>`.
+Establece una distancia de snap. Cuando se establece en un value distinto de ``0.0``, el cuerpo se mantiene attached a las pendientes al llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. El vector de snap se determina por la distancia dada en la dirección opuesta a :ref:`up_direction<class_CharacterBody2D_property_up_direction>`.
 
-As long as the snapping vector is in contact with the ground and the body moves against :ref:`up_direction<class_CharacterBody2D_property_up_direction>`, the body will remain attached to the surface. Snapping is not applied if the body moves along :ref:`up_direction<class_CharacterBody2D_property_up_direction>`, meaning it contains vertical rising velocity, so it will be able to detach from the ground when jumping or when the body is pushed up by something. If you want to apply a snap without taking into account the velocity, use :ref:`apply_floor_snap()<class_CharacterBody2D_method_apply_floor_snap>`.
+Mientras el vector de snap esté en contacto con el suelo y el cuerpo se mueva contra :ref:`up_direction<class_CharacterBody2D_property_up_direction>`, el cuerpo permanecerá attached a la superficie. El snap no se aplica si el cuerpo se mueve a lo largo de :ref:`up_direction<class_CharacterBody2D_property_up_direction>`, lo que significa que contiene velocidad de ascenso vertical, por lo que podrá despegarse del suelo al saltar o cuando el cuerpo sea empujado hacia arriba por algo. Si deseas aplicar un snap sin tener en cuenta la velocidad, usa :ref:`apply_floor_snap()<class_CharacterBody2D_method_apply_floor_snap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -278,9 +278,9 @@ As long as the snapping vector is in contact with the ground and the body moves 
 - |void| **set_floor_stop_on_slope_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_floor_stop_on_slope_enabled**\ (\ )
 
-If ``true``, the body will not slide on slopes when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` when the body is standing still.
+Si es ``true``, el cuerpo no se deslizará por las pendientes al llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` cuando esté quieto.
 
-If ``false``, the body will slide on floor's slopes when :ref:`velocity<class_CharacterBody2D_property_velocity>` applies a downward force.
+Si es ``false``, el cuerpo se deslizará por las pendientes del suelo cuando :ref:`velocity<class_CharacterBody2D_property_velocity>` aplique una fuerza hacia abajo.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ Sets the motion mode which defines the behavior of :ref:`move_and_slide()<class_
 - |void| **set_platform_floor_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_platform_floor_layers**\ (\ )
 
-Collision layers that will be included for detecting floor bodies that will act as moving platforms to be followed by the **CharacterBody2D**. By default, all floor bodies are detected and propagate their velocity.
+Capas de colisión que se incluirán para detectar cuerpos de suelo que actuarán como plataformas móviles a seguir por el **CharacterBody2D**. Por defecto, todos los cuerpos de suelo se detectan y propagan su velocidad.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Collision layers that will be included for detecting floor bodies that will act 
 - |void| **set_platform_on_leave**\ (\ value\: :ref:`PlatformOnLeave<enum_CharacterBody2D_PlatformOnLeave>`\ )
 - :ref:`PlatformOnLeave<enum_CharacterBody2D_PlatformOnLeave>` **get_platform_on_leave**\ (\ )
 
-Sets the behavior to apply when you leave a moving platform. By default, to be physically accurate, when you leave the last platform velocity is applied.
+Establece el comportamiento a aplicar al abandonar una plataforma móvil. Por defecto, para ser físicamente preciso, cuando abandonas la última plataforma se aplica su velocidad.
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Sets the behavior to apply when you leave a moving platform. By default, to be p
 - |void| **set_platform_wall_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_platform_wall_layers**\ (\ )
 
-Collision layers that will be included for detecting wall bodies that will act as moving platforms to be followed by the **CharacterBody2D**. By default, all wall bodies are ignored.
+Capas de colisión que se incluirán para detectar cuerpos de pared que actuarán como plataformas móviles a seguir por el **CharacterBody2D**. Por defecto, todos los cuerpos de pared se ignoran.
 
 .. rst-class:: classref-item-separator
 
@@ -382,13 +382,13 @@ Collision layers that will be included for detecting wall bodies that will act a
 - |void| **set_safe_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_safe_margin**\ (\ )
 
-Extra margin used for collision recovery when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
+Margen adicional utilizado para la recuperación de colisiones al llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
 
-If the body is at least this close to another body, it will consider them to be colliding and will be pushed away before performing the actual motion.
+Si el cuerpo está al menos a esta distancia de otro cuerpo, se considerará que están colisionando y será empujado antes de realizar el motion real.
 
-A higher value means it's more flexible for detecting collision, which helps with consistently detecting walls and floors.
+Un value más alto significa que es más flexible para detectar colisiones, lo que ayuda a detectar paredes y suelos de forma consistente.
 
-A lower value forces the collision algorithm to use more exact detection, so it can be used in cases that specifically require precision, e.g at very low scale to avoid visible jittering, or for stability with a stack of character bodies.
+Un value más bajo obliga al algoritmo de colisión a utilizar una detección más exacta, por lo que puede usarse en casos que requieran precisión específicamente, por ejemplo, a una escala muy baja para evitar vibraciones visibles, o para lograr estabilidad con una pila de cuerpos de personaje.
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ If ``true``, during a jump against the ceiling, the body will slide, if ``false`
 - |void| **set_up_direction**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_up_direction**\ (\ )
 
-Vector pointing upwards, used to determine what is a wall and what is a floor (or a ceiling) when calling :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Defaults to :ref:`Vector2.UP<class_Vector2_constant_UP>`. As the vector will be normalized it can't be equal to :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`, if you want all collisions to be reported as walls, consider using :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` as :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`.
+Vector que apunta hacia arriba, utilizado para determinar qué es una pared y qué es un suelo (o un techo) al llamar a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Defaults a :ref:`Vector2.UP<class_Vector2_constant_UP>`. Como el vector se normalizará, no puede ser igual a :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`; si deseas que todas las colisiones se informen como paredes, considera usar :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` como :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -439,9 +439,9 @@ Vector pointing upwards, used to determine what is a wall and what is a floor (o
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-Current velocity vector in pixels per second, used and modified during calls to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
+Vector de velocidad actual en píxeles por segundo, utilizado y modificado durante las llamadas a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`.
 
-\ **Note:** A common mistake is setting this property to the desired velocity multiplied by ``delta``, which produces a motion vector in pixels.
+\ **Nota:** Un error common es establecer esta propiedad a la velocidad deseada multiplicada por ``delta``, lo que produce un vector de motion en píxeles.
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Current velocity vector in pixels per second, used and modified during calls to 
 - |void| **set_wall_min_slide_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_wall_min_slide_angle**\ (\ )
 
-Minimum angle (in radians) where the body is allowed to slide when it encounters a wall. The default value equals 15 degrees. This property only affects movement when :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` is :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>`.
+Ángulo mínimo (en radianes) en el que se permite que el cuerpo se deslice al encontrar una pared. El value predeterminado equivale a 15 grados. Esta propiedad solo afecta al movimiento cuando :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` es :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>`.
 
 .. rst-class:: classref-section-separator
 
@@ -525,7 +525,7 @@ Devuelve el último movimiento aplicado al **CharacterBody2D** durante la últim
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_last_slide_collision**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_get_last_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>` if a collision occurred. The returned value contains information about the latest collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Returns ``null`` if no collision occurred. See also :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+Devuelve un :ref:`KinematicCollision2D<class_KinematicCollision2D>` si ocurrió una colisión. El valor devuelto contiene información sobre la colisión más reciente que ocurrió durante la última llamada a :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Devuelve ``null`` si no ocurrió ninguna colisión. Consulte también :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 
@@ -632,7 +632,7 @@ Devuelve la normal de la colisión de la pared en el último punto de colisión.
 
 :ref:`bool<class_bool>` **is_on_ceiling**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_is_on_ceiling>`
 
-Returns ``true`` if the body collided with the ceiling on the last call of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody2D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` are used to determine whether a surface is "ceiling" or not.
+Devuelve ``true`` si el cuerpo colisionó con el techo en la última llamada de :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. De lo contrario, devuelve ``false``. Se utilizan :ref:`up_direction<class_CharacterBody2D_property_up_direction>` y :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` para determinar si una superficie es «techo» o no.
 
 .. rst-class:: classref-item-separator
 
@@ -644,7 +644,7 @@ Returns ``true`` if the body collided with the ceiling on the last call of :ref:
 
 :ref:`bool<class_bool>` **is_on_ceiling_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_is_on_ceiling_only>`
 
-Returns ``true`` if the body collided only with the ceiling on the last call of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody2D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` are used to determine whether a surface is "ceiling" or not.
+Devuelve ``true`` si el cuerpo colisionó solo con el techo en la última llamada de :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. De lo contrario, devuelve ``false``. Se utilizan :ref:`up_direction<class_CharacterBody2D_property_up_direction>` y :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` para determinar si una superficie es «techo» o no.
 
 .. rst-class:: classref-item-separator
 
@@ -656,7 +656,7 @@ Returns ``true`` if the body collided only with the ceiling on the last call of 
 
 :ref:`bool<class_bool>` **is_on_floor**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_is_on_floor>`
 
-Returns ``true`` if the body collided with the floor on the last call of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody2D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` are used to determine whether a surface is "floor" or not.
+Devuelve ``true`` si el cuerpo colisionó con el suelo en la última llamada de :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. De lo contrario, devuelve ``false``. Se utilizan :ref:`up_direction<class_CharacterBody2D_property_up_direction>` y :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` para determinar si una superficie es «suelo» o no.
 
 .. rst-class:: classref-item-separator
 
@@ -668,7 +668,7 @@ Returns ``true`` if the body collided with the floor on the last call of :ref:`m
 
 :ref:`bool<class_bool>` **is_on_floor_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_is_on_floor_only>`
 
-Returns ``true`` if the body collided only with the floor on the last call of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody2D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` are used to determine whether a surface is "floor" or not.
+Devuelve ``true`` si el cuerpo colisionó solo con el suelo en la última llamada de :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. De lo contrario, devuelve ``false``. Se utilizan :ref:`up_direction<class_CharacterBody2D_property_up_direction>` y :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` para determinar si una superficie es «suelo» o no.
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Returns ``true`` if the body collided only with the floor on the last call of :r
 
 :ref:`bool<class_bool>` **is_on_wall**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_is_on_wall>`
 
-Returns ``true`` if the body collided with a wall on the last call of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody2D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` are used to determine whether a surface is "wall" or not.
+Devuelve ``true`` si el cuerpo colisionó con una pared en la última llamada de :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. De lo contrario, devuelve ``false``. Se utilizan :ref:`up_direction<class_CharacterBody2D_property_up_direction>` y :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` para determinar si una superficie es «pared» o no.
 
 .. rst-class:: classref-item-separator
 
@@ -692,7 +692,7 @@ Returns ``true`` if the body collided with a wall on the last call of :ref:`move
 
 :ref:`bool<class_bool>` **is_on_wall_only**\ (\ ) |const| :ref:`🔗<class_CharacterBody2D_method_is_on_wall_only>`
 
-Returns ``true`` if the body collided only with a wall on the last call of :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Otherwise, returns ``false``. The :ref:`up_direction<class_CharacterBody2D_property_up_direction>` and :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` are used to determine whether a surface is "wall" or not.
+Devuelve ``true`` si el cuerpo colisionó solo con una pared en la última llamada de :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. De lo contrario, devuelve ``false``. Se utilizan :ref:`up_direction<class_CharacterBody2D_property_up_direction>` y :ref:`floor_max_angle<class_CharacterBody2D_property_floor_max_angle>` para determinar si una superficie es «pared» o no.
 
 .. rst-class:: classref-item-separator
 
@@ -704,17 +704,17 @@ Returns ``true`` if the body collided only with a wall on the last call of :ref:
 
 :ref:`bool<class_bool>` **move_and_slide**\ (\ ) :ref:`🔗<class_CharacterBody2D_method_move_and_slide>`
 
-Moves the body based on :ref:`velocity<class_CharacterBody2D_property_velocity>`. If the body collides with another, it will slide along the other body (by default only on floor) rather than stop immediately. If the other body is a **CharacterBody2D** or :ref:`RigidBody2D<class_RigidBody2D>`, it will also be affected by the motion of the other body. You can use this to make moving and rotating platforms, or to make nodes push other nodes.
+Mueve el cuerpo en función de :ref:`velocity<class_CharacterBody2D_property_velocity>`. Si el cuerpo colisiona con otro, se deslizará a lo largo del otro cuerpo (por defecto solo en el suelo) en lugar de detenerse inmediatamente. Si el otro cuerpo es un **CharacterBody2D** o :ref:`RigidBody2D<class_RigidBody2D>`, también se verá afectado por el motion del otro cuerpo. Puedes usar esto para crear plataformas en movimiento y rotación, o para hacer que los nodos empujen a otros nodos.
 
-This method should be used in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (or in a method called by :ref:`Node._physics_process()<class_Node_private_method__physics_process>`), as it uses the physics step's ``delta`` value automatically in calculations. Otherwise, the simulation will run at an incorrect speed.
+Este método debe utilizarse en :ref:`Node._physics_process()<class_Node_private_method__physics_process>` (o en un método llamado por :ref:`Node._physics_process()<class_Node_private_method__physics_process>`), ya que utiliza automáticamente el value del ``delta`` del physics step en los cálculos. De lo contrario, la simulación se ejecutará a una velocidad incorrecta.
 
-Modifies :ref:`velocity<class_CharacterBody2D_property_velocity>` if a slide collision occurred. To get the latest collision call :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`, for detailed information about collisions that occurred, use :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
+Modifica :ref:`velocity<class_CharacterBody2D_property_velocity>` si se produjo una colisión de deslizamiento. Para obtener la colisión más reciente llama a :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`; para información detallada sobre las colisiones que se hayan producido, usa :ref:`get_slide_collision()<class_CharacterBody2D_method_get_slide_collision>`.
 
-When the body touches a moving platform, the platform's velocity is automatically added to the body motion. If a collision occurs due to the platform's motion, it will always be first in the slide collisions.
+Cuando el cuerpo toca una plataforma en movimiento, la velocidad de la plataforma se añade automáticamente al motion del cuerpo. Si se produce una colisión debido al motion de la plataforma, siempre ocupará el primer lugar en las colisiones de deslizamiento.
 
-The general behavior and available properties change according to the :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`.
+El comportamiento general y las propiedades disponibles change según el :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`.
 
-Returns ``true`` if the body collided, otherwise, returns ``false``.
+Devuelve ``true`` si el cuerpo colisionó; de lo contrario, devuelve ``false``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

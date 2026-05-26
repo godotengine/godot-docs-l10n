@@ -695,7 +695,7 @@ enum **ExpandMode**: :ref:`🔗<enum_LineEdit_ExpandMode>`
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_ORIGINAL_SIZE** = ``0``
 
-Use the original size for the right icon.
+右侧图标使用原始大小。
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_TEXT:
 
@@ -703,7 +703,7 @@ Use the original size for the right icon.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_TEXT** = ``1``
 
-Scale the right icon's size to match the size of the text.
+缩放右侧图标的大小以匹配文本大小。
 
 .. _class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT:
 
@@ -711,7 +711,7 @@ Scale the right icon's size to match the size of the text.
 
 :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **EXPAND_MODE_FIT_TO_LINE_EDIT** = ``2``
 
-Scale the right icon to fit the LineEdit.
+缩放右侧图标以适应 LineEdit。
 
 .. rst-class:: classref-section-separator
 
@@ -733,7 +733,7 @@ Scale the right icon to fit the LineEdit.
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-The text's horizontal alignment.
+文本的水平对齐方式。
 
 .. rst-class:: classref-item-separator
 
@@ -1007,7 +1007,7 @@ The text's horizontal alignment.
 - |void| **set_icon_expand_mode**\ (\ value\: :ref:`ExpandMode<enum_LineEdit_ExpandMode>`\ )
 - :ref:`ExpandMode<enum_LineEdit_ExpandMode>` **get_icon_expand_mode**\ (\ )
 
-Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_right_icon>`.
+定义 :ref:`right_icon<class_LineEdit_property_right_icon>` 的缩放行为。
 
 .. rst-class:: classref-item-separator
 
@@ -1041,7 +1041,7 @@ Define the scaling behavior of the :ref:`right_icon<class_LineEdit_property_righ
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用于断行和文本塑形算法的语言代码。如果留空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_right_icon_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_right_icon_scale**\ (\ )
 
-Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` is set to :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>`.
+:ref:`icon_expand_mode<class_LineEdit_property_icon_expand_mode>` 设置为 :ref:`EXPAND_MODE_FIT_TO_LINE_EDIT<class_LineEdit_constant_EXPAND_MODE_FIT_TO_LINE_EDIT>` 时图标的缩放比例。
 
 .. rst-class:: classref-item-separator
 
@@ -1452,9 +1452,9 @@ Scale ratio of the icon when :ref:`icon_expand_mode<class_LineEdit_property_icon
 
 |void| **edit**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_LineEdit_method_edit>`
 
-Allows entering edit mode whether the **LineEdit** is focused or not. If ``hide_focus`` is ``true``, the focused state will not be shown (see :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
+允许进入编辑模式，无论 **LineEdit** 是否获得焦点。如果 ``hide_focus`` 为 ``true``\ ，则不会显示焦点状态（参见 :ref:`Control.grab_focus()<class_Control_method_grab_focus>`\ ）。
 
-See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+另见 :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1613,7 +1613,7 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_redo>`
 
-有“重做”动作可用时返回 ``true``\ 。
+如果有“重做”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1637,7 +1637,7 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_LineEdit_method_has_undo>`
 
-有“撤销”动作可用时返回 ``true``\ 。
+如果有“撤销”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1865,7 +1865,7 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`int<class_int>` **caret_width** = ``1`` :ref:`🔗<class_LineEdit_theme_constant_caret_width>`
 
-文本光标的像素宽度。使用较大的数值可以提高可访问性，使文本光标更加显眼，或者确保文本与较大字体尺寸的一致性。
+文本光标的像素宽度。使用较大的数值可以提高无障碍访问，使文本光标更加显眼，或者确保文本与较大字体尺寸的一致性。
 
 .. rst-class:: classref-item-separator
 
@@ -1939,7 +1939,7 @@ See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_LineEdit_theme_style_focus>`
 
-**LineEdit** 拥有 GUI 焦点时使用的背景。\ :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+**LineEdit** 拥有 GUI 焦点时使用的背景。\ :ref:`focus<class_LineEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 

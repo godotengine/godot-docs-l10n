@@ -475,7 +475,7 @@ PopupMenu
 - |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+Если ``true``, то при отображении **PopupMenu** оно уменьшается до минимальной высоты.
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
 - |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
+Если ``true``, то при отображении **PopupMenu** оно уменьшается до минимальной ширины.
 
 .. rst-class:: classref-item-separator
 

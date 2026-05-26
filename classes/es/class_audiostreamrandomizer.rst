@@ -89,7 +89,7 @@ Pick a stream at random according to the probability weights chosen for each str
 
 :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>` **PLAYBACK_RANDOM** = ``1``
 
-Pick a stream at random according to the probability weights chosen for each stream. If only 1 sound is present in the pool, the same sound will always play.
+Selecciona un flujo al azar según los pesos de probabilidad asignados a cada flujo. Si solo hay 1 sonido en la colección, siempre se reproducirá ese mismo sonido.
 
 .. _class_AudioStreamRandomizer_constant_PLAYBACK_SEQUENTIAL:
 
@@ -97,7 +97,7 @@ Pick a stream at random according to the probability weights chosen for each str
 
 :ref:`PlaybackMode<enum_AudioStreamRandomizer_PlaybackMode>` **PLAYBACK_SEQUENTIAL** = ``2``
 
-Play streams in the order they appear in the stream pool. If only 1 sound is present in the pool, the same sound will always play.
+Reproduce los flujos en el orden en que aparecen en la colección. Si solo hay 1 sonido en la colección, siempre se reproducirá ese mismo sonido.
 
 .. rst-class:: classref-section-separator
 
@@ -280,7 +280,7 @@ Establece el AudioStream en el índice especificado.
 
 |void| **set_stream_probability_weight**\ (\ index\: :ref:`int<class_int>`, weight\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamRandomizer_method_set_stream_probability_weight>`
 
-Set the probability weight of the stream at the specified index. The higher this value, the more likely that the randomizer will choose this stream during random playback modes.
+Establece el peso de probabilidad de la transmisión en el índice especificado. Cuanto mayor sea este valor, más probable será que el generador aleatorio elija esta transmisión durante los modos de reproducción aleatoria.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

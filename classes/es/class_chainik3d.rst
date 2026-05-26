@@ -247,9 +247,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_ChainIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Si ``enabled`` es ``true``, el hueso final se extiende para tener una cola.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+La configuración de la cola extendida se asigna al último elemento de la lista de articulaciones. En otras palabras, si estableces ``enabled`` en ``false``, la configuración del último elemento de la lista de articulaciones no tiene efecto en el resultado simulado.
 
 .. rst-class:: classref-item-separator
 

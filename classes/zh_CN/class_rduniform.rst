@@ -100,7 +100,7 @@ Uniform 的数据类型。
 
 |void| **add_id**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RDUniform_method_add_id>`
 
-将给定的 ID 绑定到 uniform。将 Uniform 传递给着色器时会使用与该 ID 关联的数据。
+将给定的 id 绑定到该 uniform（统一变量）上。随后，当该 uniform 被传递给着色器时，就会使用与该 id 相关联的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Uniform 的数据类型。
 
 |void| **clear_ids**\ (\ ) :ref:`🔗<class_RDUniform_method_clear_ids>`
 
-解绑所有与该 uniform 绑定的 ID。
+解除当前绑定到该 uniform（统一变量）上的所有 id。
 
 .. rst-class:: classref-item-separator
 

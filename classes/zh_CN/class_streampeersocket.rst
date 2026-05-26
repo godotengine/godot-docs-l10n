@@ -9,14 +9,14 @@ StreamPeerSocket
 
 **派生：** :ref:`StreamPeerTCP<class_StreamPeerTCP>`, :ref:`StreamPeerUDS<class_StreamPeerUDS>`
 
-Abstract base class for interacting with socket streams.
+用于与套接字流交互的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-StreamPeerSocket is an abstract base class that defines common behavior for socket-based streams.
+StreamPeerSocket 是一个抽象基类，定义了基于套接字的流的通用行为。
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerSocket_Status>`
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_NONE** = ``0``
 
-The initial status of the **StreamPeerSocket**. This is also the status after disconnecting.
+**StreamPeerSocket** 的初始状态。这也是断开连接后的状态。
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTING:
 
@@ -63,7 +63,7 @@ The initial status of the **StreamPeerSocket**. This is also the status after di
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTING** = ``1``
 
-A status representing a **StreamPeerSocket** that is connecting to a host.
+表示 **StreamPeerSocket** 正在连接到主机的状态。
 
 .. _class_StreamPeerSocket_constant_STATUS_CONNECTED:
 
@@ -71,7 +71,7 @@ A status representing a **StreamPeerSocket** that is connecting to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_CONNECTED** = ``2``
 
-A status representing a **StreamPeerSocket** that is connected to a host.
+表示 **StreamPeerSocket** 已连接到主机的状态。
 
 .. _class_StreamPeerSocket_constant_STATUS_ERROR:
 
@@ -79,7 +79,7 @@ A status representing a **StreamPeerSocket** that is connected to a host.
 
 :ref:`Status<enum_StreamPeerSocket_Status>` **STATUS_ERROR** = ``3``
 
-A status representing a **StreamPeerSocket** in error state.
+表示 **StreamPeerSocket** 处于错误状态的状态。
 
 .. rst-class:: classref-section-separator
 
@@ -120,7 +120,7 @@ A status representing a **StreamPeerSocket** in error state.
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_StreamPeerSocket_method_poll>`
 
-Polls the socket, updating its state. See :ref:`get_status()<class_StreamPeerSocket_method_get_status>`.
+轮询套接字，更新其状态。见 :ref:`get_status()<class_StreamPeerSocket_method_get_status>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

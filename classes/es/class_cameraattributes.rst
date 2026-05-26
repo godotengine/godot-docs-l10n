@@ -16,13 +16,13 @@ Clase padre para la configuración de la cámara.
 Descripción
 ----------------------
 
-Controls camera-specific attributes such as depth of field and exposure override.
+Controla los atributos específicos de la cámara, como la profundidad de campo (depth of field) y la anulación de la exposición (exposure override).
 
-When used in a :ref:`WorldEnvironment<class_WorldEnvironment>` it provides default settings for exposure, auto-exposure, and depth of field that will be used by all cameras without their own **CameraAttributes**, including the editor camera. When used in a :ref:`Camera3D<class_Camera3D>` it will override any **CameraAttributes** set in the :ref:`WorldEnvironment<class_WorldEnvironment>`. When used in :ref:`VoxelGI<class_VoxelGI>` or :ref:`LightmapGI<class_LightmapGI>`, only the exposure settings will be used.
+Cuando se utiliza en un :ref:`WorldEnvironment<class_WorldEnvironment>`, proporciona los ajustes predeterminados de exposición, exposición automática y profundidad de campo que usarán todas las cámaras que no tengan sus propios **CameraAttributes**, incluida la cámara del editor. Cuando se usa en un :ref:`Camera3D<class_Camera3D>`, anulará cualquier **CameraAttributes** configurado en el :ref:`WorldEnvironment<class_WorldEnvironment>`. Al usarse en :ref:`VoxelGI<class_VoxelGI>` o :ref:`LightmapGI<class_LightmapGI>`, solo se utilizarán los ajustes de exposición.
 
-See also :ref:`Environment<class_Environment>` for general 3D environment settings.
+Consulta también :ref:`Environment<class_Environment>` para los ajustes generales del entorno 3D.
 
-This is a pure virtual class that is inherited by :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>` and :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`.
+Esta es una clase virtual pura heredada por :ref:`CameraAttributesPhysical<class_CameraAttributesPhysical>` y :ref:`CameraAttributesPractical<class_CameraAttributesPractical>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -115,7 +115,7 @@ La velocidad del efecto de la exposición automática. Afecta al tiempo necesari
 - |void| **set_exposure_multiplier**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_exposure_multiplier**\ (\ )
 
-Multiplier for the exposure amount. A higher value results in a brighter image.
+Multiplicador para la cantidad de exposición. Un valor más alto da como resultado una imagen más brillante.
 
 .. rst-class:: classref-item-separator
 
@@ -132,11 +132,11 @@ Multiplier for the exposure amount. A higher value results in a brighter image.
 - |void| **set_exposure_sensitivity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_exposure_sensitivity**\ (\ )
 
-Sensitivity of camera sensors, measured in ISO. A higher sensitivity results in a brighter image.
+Sensibilidad de los sensores de cámara, medida en ISO. Una sensibilidad mayor produce una imagen más brillante.
 
-If :ref:`auto_exposure_enabled<class_CameraAttributes_property_auto_exposure_enabled>` is ``true``, this can be used as a method of exposure compensation, doubling the value will increase the exposure value (measured in EV100) by 1 stop.
+Si :ref:`auto_exposure_enabled<class_CameraAttributes_property_auto_exposure_enabled>` está ``true``, esto puede utilizarse como método de compensación de exposición; duplicar el valor aumentará el valor de exposición (medido en EV100) en 1 parada.
 
-\ **Note:** Only available when :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` is enabled.
+\ **Nota:** Solo disponible cuando :ref:`ProjectSettings.rendering/lights_and_shadows/use_physical_light_units<class_ProjectSettings_property_rendering/lights_and_shadows/use_physical_light_units>` está habilitado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

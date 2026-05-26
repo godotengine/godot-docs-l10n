@@ -145,7 +145,7 @@ AssetLib 选项卡。如果禁用此功能，则不会显示 AssetLib 选项卡�
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_SIGNALS_DOCK** = ``9``
 
-The Signals dock. If this feature is disabled, signals won't be visible and modifiable from the editor.
+信号面板。如果该功能被禁用，则信号将不可见，也不能从编辑器中修改。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_GROUPS_DOCK:
 
@@ -153,7 +153,7 @@ The Signals dock. If this feature is disabled, signals won't be visible and modi
 
 :ref:`Feature<enum_EditorFeatureProfile_Feature>` **FEATURE_GROUPS_DOCK** = ``10``
 
-The Groups dock. If this feature is disabled, groups won't be visible and modifiable from the editor.
+分组面板。如果该功能被禁用，则分组将不可见，也不能从编辑器中修改。
 
 .. _class_EditorFeatureProfile_constant_FEATURE_MAX:
 

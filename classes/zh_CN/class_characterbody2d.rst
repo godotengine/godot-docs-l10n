@@ -573,9 +573,9 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody2D_PlatformOnLeave>`
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody2D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody2D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`.
+返回 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ ，包含最近一次调用 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 时发生的碰撞信息。因为单次调用 :ref:`move_and_slide()<class_CharacterBody2D_method_move_and_slide>` 可能发生多次碰撞，所以你必须指定碰撞索引，范围为 0 到 (:ref:`get_slide_collision_count()<class_CharacterBody2D_method_get_slide_collision_count>` - 1)。另见 :ref:`get_last_slide_collision()<class_CharacterBody2D_method_get_last_slide_collision>`\ 。
 
-\ **Example:** Iterate through the collisions with a ``for`` loop:
+\ **示例：**\ 使用 ``for`` 循环遍历碰撞：
 
 
 .. tabs::
@@ -583,15 +583,15 @@ Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contain
  .. code-tab:: gdscript
 
     for i in get_slide_collision_count():
-        var collision = get_slide_collision(i)
-        print("Collided with: ", collision.get_collider().name)
+    var collision = get_slide_collision(i)
+    print("碰到了：", collision.get_collider().name)
 
  .. code-tab:: csharp
 
     for (int i = 0; i < GetSlideCollisionCount(); i++)
     {
         KinematicCollision2D collision = GetSlideCollision(i);
-        GD.Print("Collided with: ", (collision.GetCollider() as Node).Name);
+        GD.Print("碰到了：", (collision.GetCollider() as Node).Name);
     }
 
 

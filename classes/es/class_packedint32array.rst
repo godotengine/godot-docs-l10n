@@ -14,7 +14,7 @@ Descripción
 
 Un array diseñado específicamente para contener valores enteros de 32 bits. Empaqueta los datos de forma compacta, por lo que ahorra memoria para arrays de gran tamaño.
 
-\ **Nota:** Este tipo almacena enteros de 32 bits con signo, lo que significa que puede tomar valores en el intervalo ``[-2^31, 2^31 - 1]``, es decir, ``[-2147483648, 2147483647]``. Si se exceden estos límites, se dará la vuelta. En comparación, :ref:`int<class_int>` utiliza enteros de 64 bits con signo que pueden contener valores mucho mayores. Si necesitas empaquetar enteros de 64 bits de forma compacta, consulta :ref:`PackedInt64Array<class_PackedInt64Array>`.
+\ **Nota:** Este tipo almacena enteros de 32 bits con signo, lo que significa que puede tomar valores en el intervalo ``[-2^31, 2^31 - 1]``, es decir, ``[-2147483648, 2147483647]``. Si se exceden estos límites, se dará la vuelta. En comparación, :ref:`int<class_int>` utiliza enteros de 64 bits con signo que pueden contener valores mucho mayores. Si necesitas empaquetar enteros de 64 bits de forma compacta, véase :ref:`PackedInt64Array<class_PackedInt64Array>`.
 
 \ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda modificarse independientemente del array original, utiliza :ref:`duplicate()<class_PackedInt32Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y cambiarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo a la propiedad de nuevo.
 
@@ -274,9 +274,9 @@ Busca un valor en el array y devuelve su índice o ``-1`` si no lo encuentra. Op
 
 :ref:`int<class_int>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt32Array_method_get>`
 
-Returns the 32-bit integer at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0``.
+Devuelve el entero de 32 bits en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``0``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. Lo más notable es que, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -288,7 +288,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt32Array_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+Devuelve ``true`` si el array contiene ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -348,9 +348,9 @@ Elimina un elemento del array por indice.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedInt32Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+Establece el tamaño del array. Si el array aumenta de tamaño, reserva elementos al final del array. Si el array se encoge, trunca el array al nuevo tamaño. Llamar a :ref:`resize()<class_PackedInt32Array_method_resize>` una vez y asignar los nuevos valores es más rápido que añadir nuevos elementos uno por uno.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedInt32Array_method_size>` to find the actual size of the array after resize.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las siguientes constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si el tamaño es negativo, o :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` si las asignaciones fallan. Usa :ref:`size()<class_PackedInt32Array_method_size>` para encontrar el tamaño real del array después del redimensionamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Invierte el orden de los elementos en el array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedInt32Array_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+Busca el array en orden inverso. Opcionalmente, se puede pasar un índice de búsqueda inicial. Si es negativo, el índice inicial se considera relativo al final del array.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es de
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedInt32Array_method_sort>`
 
-Sorts the elements of the array in ascending order.
+Ordena los elementos del array en orden ascendente.
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_operator_neq_PackedInt32Array>`
 
-Returns ``true`` if contents of the arrays differ.
+Devuelve ``true`` si los contenidos de los arrays difieren.
 
 .. rst-class:: classref-item-separator
 
@@ -481,7 +481,7 @@ Devuelve un nuevo **PackedInt32Array** con el contenido de ``right`` añadido al
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ ) :ref:`🔗<class_PackedInt32Array_operator_eq_PackedInt32Array>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal ints at the corresponding indices.
+Devuelve ``true`` si el contenido de ambos arrays es el mismo, es decir, si tienen todos los enteros iguales en los índices correspondientes.
 
 .. rst-class:: classref-item-separator
 
@@ -493,9 +493,9 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`int<class_int>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt32Array_operator_idx_int>`
 
-Returns the :ref:`int<class_int>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+Devuelve el :ref:`int<class_int>` en el ``index`` dado. Se pueden usar índices negativos para acceder a los elementos desde el final. Usar un índice fuera de los límites del array resultará en un error.
 
-Note that :ref:`int<class_int>` type is 64-bit, unlike the values stored in the array.
+Ten en cuenta que el tipo :ref:`int<class_int>` es de 64 bits, a diferencia de los valores almacenados en el array.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -9,14 +9,14 @@ OpenXRSpatialAnchorCapability
 
 **继承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Implementation for handling spatial entity anchor logic.
+用于处理空间实体锚点逻辑的实现。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-This is an internal class that handles the OpenXR anchor spatial entity extension.
+这是一个内部类，用于处理 OpenXR 锚点空间实体扩展。
 
 .. rst-class:: classref-reftable-group
 
@@ -69,7 +69,7 @@ enum **PersistenceScope**: :ref:`🔗<enum_OpenXRSpatialAnchorCapability_Persist
 
 :ref:`PersistenceScope<enum_OpenXRSpatialAnchorCapability_PersistenceScope>` **PERSISTENCE_SCOPE_SYSTEM_MANAGED** = ``1``
 
-Provides the application with read-only access (i.e. application cannot modify this scope) to spatial entities persisted and managed by the system. The application can use the UUID in the persistence component for this scope to correlate entities across spatial contexts and device reboots.
+为应用程序提供对由系统持久化和管理的空间实体的只读访问权限（即应用程序不能修改该范围）。应用程序可以使用该范围的持久化组件中的 UUID，以便在不同的地理空间上下文和设备重启后关联实体。
 
 .. _class_OpenXRSpatialAnchorCapability_constant_PERSISTENCE_SCOPE_LOCAL_ANCHORS:
 
@@ -77,7 +77,7 @@ Provides the application with read-only access (i.e. application cannot modify t
 
 :ref:`PersistenceScope<enum_OpenXRSpatialAnchorCapability_PersistenceScope>` **PERSISTENCE_SCOPE_LOCAL_ANCHORS** = ``1000781000``
 
-Persistence operations and data access is limited to spatial anchors, on the same device, for the same user and same app (using :ref:`persist_anchor()<class_OpenXRSpatialAnchorCapability_method_persist_anchor>` and :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` functions)
+持久化操作和数据访问仅限于同一设备、同一用户和同一应用程序的空间锚点（使用 :ref:`persist_anchor()<class_OpenXRSpatialAnchorCapability_method_persist_anchor>` 和 :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` 函数）
 
 .. rst-class:: classref-section-separator
 
@@ -94,7 +94,7 @@ Persistence operations and data access is limited to spatial anchors, on the sam
 
 :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` **create_new_anchor**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, spatial_context\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`
 
-Creates a new anchor that will be tracked by the XR runtime. The ``transform`` should be a transform in the local space of your :ref:`XROrigin3D<class_XROrigin3D>` node. If ``spatial_context`` is not specified the default will be used, this requires :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` to be set. The returned tracker will track the location in case our reference space changes.
+创建一个新的锚点，该锚点将由 XR 运行时进行跟踪。\ ``transform`` 参数应为相对于 :ref:`XROrigin3D<class_XROrigin3D>` 节点的本地空间变换。如果未指定 ``spatial_context``\ ，则将使用默认值，但这需要设置 :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`\ 。返回的跟踪器将跟踪该位置，以防参考空间发生变化。
 
 .. rst-class:: classref-item-separator
 
@@ -106,9 +106,9 @@ Creates a new anchor that will be tracked by the XR runtime. The ``transform`` s
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **create_persistence_context**\ (\ scope\: :ref:`PersistenceScope<enum_OpenXRSpatialAnchorCapability_PersistenceScope>`, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`
 
-Creates a new persistence context for storing persistent data.
+创建一个新的持久化上下文，用于存储持久化数据。
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result value for this function is the :ref:`RID<class_RID>` for our persistence context.
+\ **注意：**\ 这是一个异步方法，它返回一个 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 对象，用于跟踪状态；丢弃该对象不会取消创建过程。如果指定了 ``user_callback``\ ，则创建成功后会调用该回调函数。该函数的返回值是持久化上下文的 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ Creates a new persistence context for storing persistent data.
 
 |void| **free_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_free_persistence_context>`
 
-Frees a persistence context previously created with :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
+释放之前使用 :ref:`create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` 创建的持久化上下文。
 
 .. rst-class:: classref-item-separator
 
@@ -132,9 +132,9 @@ Frees a persistence context previously created with :ref:`create_persistence_con
 
 :ref:`int<class_int>` **get_persistence_context_handle**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_get_persistence_context_handle>`
 
-Returns the internal handle for this persistence context.
+返回该持久化上下文的内部句柄。
 
-\ **Note:** For GDExtension implementations.
+\ **注意：**\ 适用于 GDExtension 实现。
 
 .. rst-class:: classref-item-separator
 
@@ -146,9 +146,9 @@ Returns the internal handle for this persistence context.
 
 :ref:`bool<class_bool>` **is_persistence_scope_supported**\ (\ scope\: :ref:`PersistenceScope<enum_OpenXRSpatialAnchorCapability_PersistenceScope>`\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_is_persistence_scope_supported>`
 
-Returns ``true`` if this persistence scope is supported by our spatial anchor capability.
+如果空间锚点功能支持该持久性范围，则返回 ``true``\ 。
 
-\ **Note:** Only valid after an OpenXR instance has been created.
+\ **注意：**\ 该方法仅在 OpenXR 实例创建后有效。
 
 .. rst-class:: classref-item-separator
 
@@ -160,7 +160,7 @@ Returns ``true`` if this persistence scope is supported by our spatial anchor ca
 
 :ref:`bool<class_bool>` **is_spatial_anchor_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_is_spatial_anchor_supported>`
 
-Returns ``true`` if spatial anchors are supported by the hardware. Only returns a valid value after OpenXR has been initialized.
+如果硬件支持空间锚点功能，则返回 ``true``\ 。该函数只有在 OpenXR 初始化后才会返回有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -172,7 +172,7 @@ Returns ``true`` if spatial anchors are supported by the hardware. Only returns 
 
 :ref:`bool<class_bool>` **is_spatial_persistence_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_is_spatial_persistence_supported>`
 
-Returns ``true`` if persistent spatial anchors are supported by the hardware. Only returns a valid value after OpenXR has been initialized.
+如果硬件支持持久空间锚点，则返回 ``true``\ 。仅在 OpenXR 初始化后才会返回有效值。
 
 .. rst-class:: classref-item-separator
 
@@ -184,9 +184,9 @@ Returns ``true`` if persistent spatial anchors are supported by the hardware. On
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **persist_anchor**\ (\ anchor_tracker\: :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`, persistence_context\: :ref:`RID<class_RID>` = RID(), user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_persist_anchor>`
 
-Changes this anchor into a persistent anchor. This means its location will be stored on the device and the anchor will be restored the next time your application starts. If ``persistence_context`` is not specified the default will be used, this requires :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>` to be set.
+将该锚点转换为持久锚点。这意味着其位置将存储在设备上，并在下次应用程序启动时恢复该锚点。如果未指定 ``persistence_context``\ ，则将使用默认值，但这需要设置 :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`\ 。
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result value for this function is a boolean which will be set to ``true`` on successful completion.
+\ **注意：**\ 这是一个异步方法，它返回一个 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 对象，用于跟踪状态；丢弃该对象不会取消创建过程。如果指定了 ``user_callback``\ ，则在成功完成后将调用该回调函数。该函数的返回值是一个布尔值，成功完成后将被设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Changes this anchor into a persistent anchor. This means its location will be st
 
 |void| **remove_anchor**\ (\ anchor_tracker\: :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_remove_anchor>`
 
-Remove an anchor previously created with :ref:`create_new_anchor()<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`. If this anchor was persistent you must first call :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` and await its callback.
+移除之前使用 :ref:`create_new_anchor()<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>` 方法创建的锚点。如果该锚点是持久化的，则必须先调用 :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` 并等待其回调完成。
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ Remove an anchor previously created with :ref:`create_new_anchor()<class_OpenXRS
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **unpersist_anchor**\ (\ anchor_tracker\: :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`, persistence_context\: :ref:`RID<class_RID>` = RID(), user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>`
 
-Removes the persistent data from this anchor. The runtime will not recreate the anchor when your application restarts. If ``persistence_context`` is not specified the default will be used, this requires :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` to be set.
+移除该锚点的持久化数据。应用程序重启后，运行时将不会重新创建该锚点。如果未指定 ``persistence_context``\ ，则将使用默认值，但这需要启用 :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`\ 。
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result value for this function is a boolean which will be set to ``true`` on successful completion.
+\ **注意：**\ 这是一个异步方法，它返回一个 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` 对象，用于跟踪状态；丢弃该对象不会取消创建过程。如果指定了 ``user_callback``\ ，则成功完成后会调用该回调函数。该函数的返回值为布尔值，成功完成后将被设置为 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

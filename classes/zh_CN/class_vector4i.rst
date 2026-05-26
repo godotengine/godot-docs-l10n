@@ -686,13 +686,13 @@ W 轴的枚举值。由 :ref:`max_axis_index()<class_Vector4i_method_max_axis_in
 
 :ref:`Vector4<class_Vector4>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector4i_operator_div_float>`
 
-Divides each component of the **Vector4i** by the given :ref:`float<class_float>`.
+将该 **Vector4i** 的每个分量除以给定的 :ref:`float<class_float>`\ 。
 
-Returns a Vector4 value due to floating-point operations.
+由于浮点数运算，返回值为 Vector4。
 
 ::
 
-    print(Vector4i(1, 2, 3, 4) / 2.5) # Prints (0.4, 0.8, 1.2, 1.6)
+    print(Vector4i(1, 2, 3, 4) / 2.5) # 输出 (0.4, 0.8, 1.2, 1.6)
 
 .. rst-class:: classref-item-separator
 

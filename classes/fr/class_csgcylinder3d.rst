@@ -152,7 +152,7 @@ Le nombre de côtés du cylindre, plus ce nombre est élevé, plus il y aura de 
 - |void| **set_smooth_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_smooth_faces**\ (\ )
 
-SI ``true``, les normales du cylindre sont positionnées pour donner un effet lise faisaint paraître le cylindre comme arrondi. Si ``false``, le cylindre aura un ombrage plat.
+Si ``true``, les normales du cylindre sont positionnées pour donner un effet lisse faisant paraître le cylindre comme arrondi. Si ``false``, le cylindre aura un ombrage plat.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

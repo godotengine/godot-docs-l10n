@@ -89,7 +89,7 @@ JavaClass
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JavaClass_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object's Java methods.
+如果给定的 ``method`` 名存在于对象的 Java 方法中，则返回 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

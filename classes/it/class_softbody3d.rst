@@ -18,7 +18,7 @@ Una mesh di fisica 3D deformabile. Utilizzata per creare oggetti elastici o defo
 
 Inoltre, **SoftBody3D** è soggetto alle forze del vento definite in :ref:`Area3D<class_Area3D>` (vedi :ref:`Area3D.wind_source_path<class_Area3D_property_wind_source_path>`, :ref:`Area3D.wind_force_magnitude<class_Area3D_property_wind_force_magnitude>` e :ref:`Area3D.wind_attenuation_factor<class_Area3D_property_wind_attenuation_factor>`).
 
-\ **Nota:** Si consiglia di utilizzare Jolt Physics quando si utilizza **SoftBody3D** invece del GodotPhysics3D predefinito, poiché l'implementazione dei corpi morbidi di Jolt Physics è più veloce e affidabile. È possibile cambiare il motore fisico attraverso l'impostazione del progetto :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>`.
+\ **Nota:** Si consiglia di utilizzare Jolt Physics quando si utilizza **SoftBody3D** invece del GodotPhysics3D predefinito, poiché l'implementazione dei corpi deformabili di Jolt Physics è più veloce e affidabile. È possibile cambiare il motore fisico attraverso l'impostazione del progetto :ref:`ProjectSettings.physics/3d/physics_engine<class_ProjectSettings_property_physics/3d/physics_engine>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -279,7 +279,7 @@ Il :ref:`NodePath<class_NodePath>` verso un :ref:`CollisionObject3D<class_Collis
 - |void| **set_pressure_coefficient**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pressure_coefficient**\ (\ )
 
-Il coefficiente di pressione di questo corpo morbido. Simula l'accumulo di pressione dall'interno di questo corpo. Valori più alti aumentano la forza di questo effetto.
+Il coefficiente di pressione di questo corpo deformabile. Simula l'accumulo di pressione dall'interno di questo corpo. Valori più alti aumentano la forza di questo effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,9 @@ Aumentare questo valore migliorerà la simulazione risultante, ma può influire 
 - |void| **set_total_mass**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_total_mass**\ (\ )
 
-La massa del SoftBody3D.
+The SoftBody3D's mass.
+
+\ **Note:** When using Jolt Physics, the default value of this property will instead be ``0.0``, which will cause the body to automatically calculate the mass to 1 kg per point. This is a bug, which will be fixed in Godot 4.7.
 
 .. rst-class:: classref-section-separator
 

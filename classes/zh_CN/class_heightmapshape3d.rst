@@ -7,7 +7,7 @@ HeightMapShape3D
 
 **继承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 3D heightmap shape used for physics collision.
+3D 高度图形状，用于物理碰撞。
 
 .. rst-class:: classref-introduction-group
 
@@ -94,7 +94,7 @@ A 3D heightmap shape used for physics collision.
 - |void| **set_map_data**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_map_data**\ (\ )
 
-Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMapShape3D_property_map_width>` multiplied by :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
+高度图数据。该数组的大小必须等于 :ref:`map_width<class_HeightMapShape3D_property_map_width>` 乘以 :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`\ 。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -113,7 +113,7 @@ Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMa
 - |void| **set_map_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_depth**\ (\ )
 
-Number of vertices in the depth of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+高度图深度中的顶点数。更改该项将调整 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Number of vertices in the depth of the heightmap. Changing this will resize the 
 - |void| **set_map_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_width**\ (\ )
 
-Number of vertices in the width of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+高度图宽度中的顶点数。更改该项将调整 :ref:`map_data<class_HeightMapShape3D_property_map_data>` 的大小。
 
 .. rst-class:: classref-section-separator
 

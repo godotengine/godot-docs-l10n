@@ -14,7 +14,7 @@ Proporciona control de reproducción para un :ref:`AnimationNodeStateMachine<cla
 Descripción
 ----------------------
 
-Allows control of :ref:`AnimationTree<class_AnimationTree>` state machines created with :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`. Retrieve with ``$AnimationTree.get("parameters/playback")``.
+Permite controlar máquinas de estado de :ref:`AnimationTree<class_AnimationTree>` creadas con :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>`. Recupera con ``$AnimationTree.get("parameters/playback")``.
 
 
 .. tabs::
@@ -174,7 +174,7 @@ Devuelve la posición de reproducción dentro del estado de animación actual.
 
 :ref:`float<class_float>` **get_fading_from_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_length>`
 
-Returns the playback state length of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+Devuelve la duración del estado de reproducción del nodo desde :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Devuelve ``0`` si no se produce ningún desvanecimiento de animación.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Devuelve el estado inicial de la animación que se está desvaneciendo actualmen
 
 :ref:`float<class_float>` **get_fading_from_play_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_play_position>`
 
-Returns the playback position of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+Devuelve la posición de reproducción del nodo desde :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Devuelve ``0`` si no se produce ningún desvanecimiento de animación.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Returns the playback position of the node from :ref:`get_fading_from_node()<clas
 
 :ref:`float<class_float>` **get_fading_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_length>`
 
-Returns the length of the current fade animation. Returns ``0`` if no animation fade is occurring.
+Devuelve la duración de la animación de fade (desvanecimiento) actual. Devuelve ``0`` si no se está produciendo ningún fade (desvanecimiento) de animación.
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Returns the length of the current fade animation. Returns ``0`` if no animation 
 
 :ref:`float<class_float>` **get_fading_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_position>`
 
-Returns the playback position of the current fade animation. Returns ``0`` if no animation fade is occurring.
+Devuelve la posición de reproducción de la animación de fade (desvanecimiento) actual. Devuelve ``0`` si no se está produciendo ningún fade (desvanecimiento) de animación.
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ Devuelve la ruta de viaje actual calculada internamente por el algorithmo A\*.
 
 :ref:`bool<class_bool>` **is_playing**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_is_playing>`
 
-Devuelve ``true`` si una animacion esta reproduciendose.
+Devuelve ``true`` si una animación esta reproduciendose.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Si ``reset`` es ``true``, la animación se reproduce desde el principio.
 
 |void| **stop**\ (\ ) :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_stop>`
 
-Para la animacion en ejecucion.
+Para la animación en ejecucion.
 
 .. rst-class:: classref-item-separator
 

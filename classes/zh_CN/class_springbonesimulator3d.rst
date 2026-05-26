@@ -290,9 +290,9 @@ enum **CenterFrom**: :ref:`🔗<enum_SpringBoneSimulator3D_CenterFrom>`
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+如果为 ``true``\ ，则求解器会每帧从骨骼姿势中检索骨骼轴。
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **SpringBoneSimulator3D** are ignored.
+如果为 ``false``\ ，则求解器会从骨骼放松姿势中检索骨骼轴并进行缓存，这会略微提高性能，但在该 **SpringBoneSimulator3D** 处理之前对骨骼姿势进行的任何位置更改都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` 为 ``true`` 时，返回骨骼链末端骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` 为 ``true`` 时，返回骨骼链的末端骨骼尾部长度。
 
 .. rst-class:: classref-item-separator
 
@@ -674,9 +674,9 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+返回骨骼链中指定关节的旋转轴向量。该向量表示关节可以绕其旋转的轴。它根据为该关节设置的旋转轴确定。
 
-If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+如果 :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`\ ，则该方法返回 ``Vector3(0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -760,9 +760,9 @@ If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_
 
 :ref:`Vector3<class_Vector3>` **get_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_rotation_axis_vector>`
 
-Returns the rotation axis vector of the bone chain. This vector represents the axis around which the bone chain can rotate. It is determined based on the rotation axis set for the bone chain.
+返回骨骼链的旋转轴向量。该向量表示骨骼链围绕哪个轴旋转，是根据为骨骼链设置的旋转轴确定的。
 
-If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+如果 :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axis>` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`\ ，则该方法返回 ``Vector3(0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ If :ref:`get_rotation_axis()<class_SpringBoneSimulator3D_method_get_rotation_axi
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+如果末端骨骼被扩展形成尾部，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1144,11 +1144,11 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **set_joint_rotation_axis**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis>`
 
-Sets the rotation axis at ``joint`` in the bone chain's joint list when :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` is ``true``.
+设置当 :ref:`is_config_individual()<class_SpringBoneSimulator3D_method_is_config_individual>` 为 ``true`` 时，在骨骼链的关节列表中 ``joint`` 的旋转轴。
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+旋转轴基于 :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` 的空间，如果 ``axis`` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ ，则可以指定任何轴。
 
-\ **Note:** The rotation axis and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **注意：**\ 旋转轴和前向向量不应共线，否则可能造成意外旋转，因为 **SpringBoneSimulator3D** 不考虑扭转力。
 
 .. rst-class:: classref-item-separator
 
@@ -1160,11 +1160,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+设置骨骼链中指定关节的旋转轴向量。
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+该向量会经过内部处理进行归一化，并代表骨骼链可以围绕其旋转的轴。
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+如果向量长度为 ``0``\ ，则被视为等同于 :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1238,11 +1238,11 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_rotation_axis**\ (\ index\: :ref:`int<class_int>`, axis\: :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis>`
 
-Sets the rotation axis of the bone chain. If set to a specific axis, it acts like a hinge joint. The value is cached in each joint setting in the joint list.
+设置骨骼链的旋转轴。如果设置为特定的轴，行为就会像铰链关节。该值会缓存到关节列表中的每个关节设置中。
 
-The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`'s space, if ``axis`` is :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`, you can specify any axis.
+旋转轴基于 :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` 的空间，如果 ``axis`` 为 :ref:`SkeletonModifier3D.ROTATION_AXIS_CUSTOM<class_SkeletonModifier3D_constant_ROTATION_AXIS_CUSTOM>`\ ，则可以指定任何轴。
 
-\ **Note:** The rotation axis vector and the forward vector shouldn't be colinear to avoid unintended rotation since **SpringBoneSimulator3D** does not factor in twisting forces.
+\ **注意：**\ 旋转轴向量和前向向量不应共线，否则可能造成意外旋转，因为 **SpringBoneSimulator3D** 不考虑扭转力。
 
 .. rst-class:: classref-item-separator
 
@@ -1254,11 +1254,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_rotation_axis_vector>`
 
-Sets the rotation axis vector of the bone chain. The value is cached in each joint setting in the joint list.
+设置骨骼链的旋转轴向量。该值会缓存到关节列表中的每个关节设置中。
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+该向量经过内部处理后会被归一化，表示骨骼链围绕哪个轴旋转。
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+如果向量长度为 ``0``\ ，则被视为与 :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>` 同义。
 
 .. rst-class:: classref-item-separator
 

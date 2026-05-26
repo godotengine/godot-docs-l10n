@@ -85,7 +85,7 @@ Devuelve la transformación de cámara utilizada para renderizar este fotograma.
 
 :ref:`RID<class_RID>` **get_uniform_buffer**\ (\ ) |const| :ref:`🔗<class_RenderSceneData_method_get_uniform_buffer>`
 
-Devuelve el :ref:`RID<class_RID>` del búfer uniforme que contiene los datos de la escena como un UBO.
+Devuelve el :ref:`RID<class_RID>` del búfer de variable uniforme que contiene los datos de la escena como un UBO.
 
 .. rst-class:: classref-item-separator
 

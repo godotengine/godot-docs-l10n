@@ -316,11 +316,11 @@ Al heredar de :ref:`AnimationRootNode<class_AnimationRootNode>`, implementa este
 
 **Obsoleto:** Currently this is mostly useless as there is a lack of many APIs to extend AnimationNode by GDScript. It is planned that a more flexible API using structures will be provided in the future.
 
-When inheriting from :ref:`AnimationRootNode<class_AnimationRootNode>`, implement this virtual method to run some code when this animation node is processed. The ``time`` parameter is a relative delta, unless ``seek`` is ``true``, in which case it is absolute.
+Al heredar de :ref:`AnimationRootNode<class_AnimationRootNode>`, implemente este método virtual para ejecutar algún código cuando se procese este nodo de animación. El parámetro ``time`` es un delta relativo, a menos que ``seek`` sea ``true``, en cuyo caso es absoluto.
 
-Here, call the :ref:`blend_input()<class_AnimationNode_method_blend_input>`, :ref:`blend_node()<class_AnimationNode_method_blend_node>` or :ref:`blend_animation()<class_AnimationNode_method_blend_animation>` functions. You can also use :ref:`get_parameter()<class_AnimationNode_method_get_parameter>` and :ref:`set_parameter()<class_AnimationNode_method_set_parameter>` to modify local memory.
+Aquí, llame a las funciones :ref:`blend_input()<class_AnimationNode_method_blend_input>`, :ref:`blend_node()<class_AnimationNode_method_blend_node>` o :ref:`blend_animation()<class_AnimationNode_method_blend_animation>`. También puede usar :ref:`get_parameter()<class_AnimationNode_method_get_parameter>` y :ref:`set_parameter()<class_AnimationNode_method_set_parameter>` para modificar la memoria local.
 
-This function should return the delta.
+Esta función debe devolver el delta.
 
 .. rst-class:: classref-item-separator
 
@@ -344,9 +344,9 @@ Añade una entrada al nodo de animación. Esto solo es útil para nodos de anima
 
 |void| **blend_animation**\ (\ animation\: :ref:`StringName<class_StringName>`, time\: :ref:`float<class_float>`, delta\: :ref:`float<class_float>`, seeked\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, blend\: :ref:`float<class_float>`, looped_flag\: :ref:`LoopedFlag<enum_Animation_LoopedFlag>` = 0\ ) :ref:`🔗<class_AnimationNode_method_blend_animation>`
 
-Blends an animation by ``blend`` amount (name must be valid in the linked :ref:`AnimationPlayer<class_AnimationPlayer>`). A ``time`` and ``delta`` may be passed, as well as whether ``seeked`` happened.
+Mezcla una animación por la cantidad ``blend`` (el nombre debe ser válido en el :ref:`AnimationPlayer<class_AnimationPlayer>` vinculado). Se pueden pasar ``time`` y ``delta``, así como si se produjo ``seeked``.
 
-A ``looped_flag`` is used by internal processing immediately after the loop.
+Un ``looped_flag`` se utiliza para el procesamiento interno inmediatamente después del bucle.
 
 .. rst-class:: classref-item-separator
 
@@ -358,7 +358,7 @@ A ``looped_flag`` is used by internal processing immediately after the loop.
 
 :ref:`float<class_float>` **blend_input**\ (\ input_index\: :ref:`int<class_int>`, time\: :ref:`float<class_float>`, seek\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, blend\: :ref:`float<class_float>`, filter\: :ref:`FilterAction<enum_AnimationNode_FilterAction>` = 0, sync\: :ref:`bool<class_bool>` = true, test_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationNode_method_blend_input>`
 
-Blends an input. This is only useful for animation nodes created for an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. The ``time`` parameter is a relative delta, unless ``seek`` is ``true``, in which case it is absolute. A filter mode may be optionally passed.
+Mezcla una entrada. Esto sólo es útil para los nodos creados para un :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. El parametro ``time`` es un delta relativo, a menos que ``seek`` sea ``true``, en cuyo caso es absoluto. Se puede pasar opcionalmente a un modo de filtro.
 
 .. rst-class:: classref-item-separator
 
@@ -370,7 +370,7 @@ Blends an input. This is only useful for animation nodes created for an :ref:`An
 
 :ref:`float<class_float>` **blend_node**\ (\ name\: :ref:`StringName<class_StringName>`, node\: :ref:`AnimationNode<class_AnimationNode>`, time\: :ref:`float<class_float>`, seek\: :ref:`bool<class_bool>`, is_external_seeking\: :ref:`bool<class_bool>`, blend\: :ref:`float<class_float>`, filter\: :ref:`FilterAction<enum_AnimationNode_FilterAction>` = 0, sync\: :ref:`bool<class_bool>` = true, test_only\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationNode_method_blend_node>`
 
-Blend another animation node (in case this animation node contains child animation nodes). This function is only useful if you inherit from :ref:`AnimationRootNode<class_AnimationRootNode>` instead, otherwise editors will not display your animation node for addition.
+Mezcla otro nodo de animación (en caso de que este nodo contenga nodos hijos de animación). Esta función es útil sólo si hereda de :ref:`AnimationRootNode<class_AnimationRootNode>` En cambio, de lo contrario, los editores no mostrarán su nodo de animación para su adición.
 
 .. rst-class:: classref-item-separator
 

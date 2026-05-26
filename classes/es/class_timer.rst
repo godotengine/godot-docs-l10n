@@ -144,11 +144,11 @@ Descripciones de Propiedades
 - |void| **set_autostart**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **has_autostart**\ (\ )
 
-If ``true``, the timer will start immediately when it enters the scene tree.
+Si es ``true``, el temporizador comenzará inmediatamente cuando entre en el árbol de escenas.
 
-\ **Note:** After the timer enters the tree, this property is automatically set to ``false``.
+\ **Nota:** Después de que el temporizador entra en el árbol, esta propiedad se establece automáticamente en ``false``.
 
-\ **Note:** This property does nothing when the timer is running in the editor.
+\ **Nota:** Esta propiedad no hace nada cuando el temporizador se está ejecutando en el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -284,7 +284,7 @@ Devuelve ``true`` si el temporizador está detenido o no ha comenzado.
 
 Inicia el temporizador, o reinicia el temporizador si ya se ha iniciado. Falla si el temporizador no está dentro del árbol de escenas. Si ``time_sec`` es mayor que ``0``, este valor se utiliza para :ref:`wait_time<class_Timer_property_wait_time>`.
 
-\ **Nota:** Este método no reanuda un temporizador en pausa. Consulta :ref:`paused<class_Timer_property_paused>`.
+\ **Nota:** Este método no reanuda un temporizador en pausa. Véase :ref:`paused<class_Timer_property_paused>`.
 
 .. rst-class:: classref-item-separator
 

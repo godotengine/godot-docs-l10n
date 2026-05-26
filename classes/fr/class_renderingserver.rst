@@ -1259,7 +1259,7 @@ Top face of a :ref:`Cubemap<class_Cubemap>`.
 
 :ref:`CubeMapLayer<enum_RenderingServer_CubeMapLayer>` **CUBEMAP_LAYER_FRONT** = ``4``
 
-Front face of a :ref:`Cubemap<class_Cubemap>`.
+Face avant d'une :ref:`Cubemap<class_Cubemap>`.
 
 .. _class_RenderingServer_constant_CUBEMAP_LAYER_BACK:
 
@@ -1285,7 +1285,7 @@ enum **ShaderMode**: :ref:`🔗<enum_RenderingServer_ShaderMode>`
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_SPATIAL** = ``0``
 
-Ce shader est utilisé en 3D.
+Le shader est un shader 3D.
 
 .. _class_RenderingServer_constant_SHADER_CANVAS_ITEM:
 
@@ -1293,7 +1293,7 @@ Ce shader est utilisé en 3D.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_CANVAS_ITEM** = ``1``
 
-Ce shader est utilisé en 2D.
+Le shader est un shader 2D.
 
 .. _class_RenderingServer_constant_SHADER_PARTICLES:
 
@@ -1301,7 +1301,7 @@ Ce shader est utilisé en 2D.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_PARTICLES** = ``2``
 
-Shader is a particle shader (can be used in both 2D and 3D).
+Le shader est un shader de particules (peut être utilisé en 2D ou en 3D).
 
 .. _class_RenderingServer_constant_SHADER_SKY:
 
@@ -1309,7 +1309,7 @@ Shader is a particle shader (can be used in both 2D and 3D).
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_SKY** = ``3``
 
-Shader is a 3D sky shader.
+Le shader est un shader de ciel 3D.
 
 .. _class_RenderingServer_constant_SHADER_FOG:
 
@@ -1317,7 +1317,7 @@ Shader is a 3D sky shader.
 
 :ref:`ShaderMode<enum_RenderingServer_ShaderMode>` **SHADER_FOG** = ``4``
 
-Shader is a 3D fog shader.
+Le shader est un shader de brouillard 3D.
 
 .. _class_RenderingServer_constant_SHADER_MAX:
 
@@ -1343,7 +1343,7 @@ enum **ArrayType**: :ref:`🔗<enum_RenderingServer_ArrayType>`
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_VERTEX** = ``0``
 
-Array is a vertex position array.
+Le tableau est un tableau de position de sommets.
 
 .. _class_RenderingServer_constant_ARRAY_NORMAL:
 
@@ -1351,7 +1351,7 @@ Array is a vertex position array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_NORMAL** = ``1``
 
-Le tableau est un tableau normal.
+Le tableau est un tableau de normales.
 
 .. _class_RenderingServer_constant_ARRAY_TANGENT:
 
@@ -1367,7 +1367,7 @@ Le tableau est un tableau de tangentes.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_COLOR** = ``3``
 
-Array is a vertex color array.
+Le tableau est un tableau de couleurs de sommets.
 
 .. _class_RenderingServer_constant_ARRAY_TEX_UV:
 
@@ -1375,7 +1375,7 @@ Array is a vertex color array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_TEX_UV** = ``4``
 
-Array is a UV coordinates array.
+Le tableau est un tableau de coordonnées UV.
 
 .. _class_RenderingServer_constant_ARRAY_TEX_UV2:
 
@@ -1383,7 +1383,7 @@ Array is a UV coordinates array.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_TEX_UV2** = ``5``
 
-Array is a UV coordinates array for the second set of UV coordinates.
+Le tableau est un tableau de coordonnées UV pour le second ensemble de coordonnées UV.
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM0:
 
@@ -1391,7 +1391,7 @@ Array is a UV coordinates array for the second set of UV coordinates.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM0** = ``6``
 
-Array is a custom data array for the first set of custom data.
+Le tableau est un tableau de données personnalisées pour le premier ensemble de données personnalisées.
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM1:
 
@@ -1399,7 +1399,7 @@ Array is a custom data array for the first set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM1** = ``7``
 
-Array is a custom data array for the second set of custom data.
+Le tableau est un tableau de données personnalisées pour le deuxième ensemble de données personnalisées.
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM2:
 
@@ -1407,7 +1407,7 @@ Array is a custom data array for the second set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM2** = ``8``
 
-Array is a custom data array for the third set of custom data.
+Le tableau est un tableau de données personnalisées pour le troisième ensemble de données personnalisées.
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM3:
 
@@ -1415,7 +1415,7 @@ Array is a custom data array for the third set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_CUSTOM3** = ``9``
 
-Array is a custom data array for the fourth set of custom data.
+Le tableau est un tableau de données personnalisées pour le quatrième ensemble de données personnalisées.
 
 .. _class_RenderingServer_constant_ARRAY_BONES:
 
@@ -1423,7 +1423,7 @@ Array is a custom data array for the fourth set of custom data.
 
 :ref:`ArrayType<enum_RenderingServer_ArrayType>` **ARRAY_BONES** = ``10``
 
-Le tableau contient des informations sur les os.
+Le tableau contient des informations d'os.
 
 .. _class_RenderingServer_constant_ARRAY_WEIGHTS:
 
@@ -1465,7 +1465,7 @@ enum **ArrayCustomFormat**: :ref:`🔗<enum_RenderingServer_ArrayCustomFormat>`
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA8_UNORM** = ``0``
 
-Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Values are normalized, unsigned floating-point in the ``[0.0, 1.0]`` range.
+Le tableau de données personnalisées contient des données de couleur rouge/vert/bleu/alpha avec 8 bits par canal. Les valeurs sont normalisées, à virgule flottante non signées dans l'intervalle ``[0.0, 1.0]``.
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RGBA8_SNORM:
 
@@ -1473,7 +1473,7 @@ Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Va
 
 :ref:`ArrayCustomFormat<enum_RenderingServer_ArrayCustomFormat>` **ARRAY_CUSTOM_RGBA8_SNORM** = ``1``
 
-Custom data array contains 8-bit-per-channel red/green/blue/alpha color data. Values are normalized, signed floating-point in the ``[-1.0, 1.0]`` range.
+Le tableau de données personnalisées contient des données de couleur rouge/vert/bleu/alpha avec 8 bits par canal. Les valeurs sont normalisées, à virgule flottante signées dans l'intervalle ``[-1.0, 1.0]``.
 
 .. _class_RenderingServer_constant_ARRAY_CUSTOM_RG_HALF:
 
@@ -1853,7 +1853,7 @@ Primitive to draw consists of triangles.
 
 :ref:`PrimitiveType<enum_RenderingServer_PrimitiveType>` **PRIMITIVE_TRIANGLE_STRIP** = ``4``
 
-Primitive to draw consists of a triangle strip (the last 3 vertices are always combined to make a triangle).
+La primitive à dessiner se compose d'une bande de triangles (les 3 derniers sommets sont toujours combinés pour faire un triangle).
 
 .. _class_RenderingServer_constant_PRIMITIVE_MAX:
 
@@ -1905,7 +1905,7 @@ enum **MultimeshTransformFormat**: :ref:`🔗<enum_RenderingServer_MultimeshTran
 
 :ref:`MultimeshTransformFormat<enum_RenderingServer_MultimeshTransformFormat>` **MULTIMESH_TRANSFORM_2D** = ``0``
 
-Utiliser :ref:`Transform2D<class_Transform2D>` pour stocker la transformation des MultiMesh.
+Utilise :ref:`Transform2D<class_Transform2D>` pour stocker la transformation des MultiMesh.
 
 .. _class_RenderingServer_constant_MULTIMESH_TRANSFORM_3D:
 
@@ -1913,7 +1913,7 @@ Utiliser :ref:`Transform2D<class_Transform2D>` pour stocker la transformation de
 
 :ref:`MultimeshTransformFormat<enum_RenderingServer_MultimeshTransformFormat>` **MULTIMESH_TRANSFORM_3D** = ``1``
 
-Utiliser :ref:`Transform3D<class_Transform3D>` pour stocker la transformation des MultiMesh.
+Utilise :ref:`Transform3D<class_Transform3D>` pour stocker la transformation des MultiMesh.
 
 .. rst-class:: classref-item-separator
 
@@ -1931,7 +1931,7 @@ enum **MultimeshPhysicsInterpolationQuality**: :ref:`🔗<enum_RenderingServer_M
 
 :ref:`MultimeshPhysicsInterpolationQuality<enum_RenderingServer_MultimeshPhysicsInterpolationQuality>` **MULTIMESH_INTERP_QUALITY_FAST** = ``0``
 
-MultiMesh physics interpolation favors speed over quality.
+L'interpolation de la physique du MultiMesh favorise la vitesse par rapport à la qualité.
 
 .. _class_RenderingServer_constant_MULTIMESH_INTERP_QUALITY_HIGH:
 
@@ -1939,7 +1939,7 @@ MultiMesh physics interpolation favors speed over quality.
 
 :ref:`MultimeshPhysicsInterpolationQuality<enum_RenderingServer_MultimeshPhysicsInterpolationQuality>` **MULTIMESH_INTERP_QUALITY_HIGH** = ``1``
 
-MultiMesh physics interpolation favors quality over speed.
+L'interpolation de la physique du MultiMesh favorise la qualité par rapport à la vitesse.
 
 .. rst-class:: classref-item-separator
 
@@ -6096,7 +6096,7 @@ La priorité maximale de rendu de tous les matériaux.
 
 **ARRAY_CUSTOM_COUNT** = ``4`` :ref:`🔗<class_RenderingServer_constant_ARRAY_CUSTOM_COUNT>`
 
-The number of custom data arrays available (:ref:`ARRAY_CUSTOM0<class_RenderingServer_constant_ARRAY_CUSTOM0>`, :ref:`ARRAY_CUSTOM1<class_RenderingServer_constant_ARRAY_CUSTOM1>`, :ref:`ARRAY_CUSTOM2<class_RenderingServer_constant_ARRAY_CUSTOM2>`, :ref:`ARRAY_CUSTOM3<class_RenderingServer_constant_ARRAY_CUSTOM3>`).
+Le nombre de tableaux de données personnalisées disponibles (:ref:`ARRAY_CUSTOM0<class_RenderingServer_constant_ARRAY_CUSTOM0>`, :ref:`ARRAY_CUSTOM1<class_RenderingServer_constant_ARRAY_CUSTOM1>`, :ref:`ARRAY_CUSTOM2<class_RenderingServer_constant_ARRAY_CUSTOM2>`, :ref:`ARRAY_CUSTOM3<class_RenderingServer_constant_ARRAY_CUSTOM3>`).
 
 .. _class_RenderingServer_constant_PARTICLES_EMIT_FLAG_POSITION:
 

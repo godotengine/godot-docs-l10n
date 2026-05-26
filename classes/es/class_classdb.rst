@@ -14,9 +14,9 @@ Un repositorio de información de clases.
 Descripción
 ----------------------
 
-Provides access to metadata stored for every available engine class.
+Proporciona acceso a los metadatos almacenados para cada clase disponible del motor.
 
-\ **Note:** Script-defined classes with ``class_name`` are not part of **ClassDB**, so they will not return reflection data such as a method or property list. However, :ref:`GDExtension<class_GDExtension>`-defined classes *are* part of **ClassDB**, so they will return reflection data.
+\ **Nota:** Las clases definidas mediante scripts con ``class_name`` no forman parte de **ClassDB**, por lo que no devolverán datos de reflexión como listas de métodos o propiedades. Sin embargo, las clases definidas mediante :ref:`GDExtension<class_GDExtension>` *sí* forman parte de **ClassDB**, por lo que devolverán datos de reflexión.
 
 .. rst-class:: classref-reftable-group
 
@@ -436,9 +436,9 @@ Establece el valor de la ``property`` de ``object`` a ``value``.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_class_list**\ (\ ) |const| :ref:`🔗<class_ClassDB_method_get_class_list>`
 
-Returns the names of all engine classes available.
+Devuelve los nombres de todas las clases disponibles en el motor .
 
-\ **Note:** Script-defined classes with ``class_name`` are not included in this list. Use :ref:`ProjectSettings.get_global_class_list()<class_ProjectSettings_method_get_global_class_list>` to get a list of script-defined classes instead.
+\ **Nota:** Las clases definidas mediante scripts con ``class_name`` no se incluyen en esta lista. Utiliza :ref:`ProjectSettings.get_global_class_list()<class_ProjectSettings_method_get_global_class_list>` para obtener, en su lugar, una lista de las clases definidas mediante scripts.
 
 .. rst-class:: classref-item-separator
 
@@ -510,7 +510,7 @@ Devuelve si ``class`` (o sus clases ancestras si ``no_inheritance`` es ``false``
 
 :ref:`bool<class_bool>` **is_parent_class**\ (\ class\: :ref:`StringName<class_StringName>`, inherits\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ClassDB_method_is_parent_class>`
 
-Returns whether ``inherits`` is an ancestor of ``class`` or not.
+Devuelve si ``inherits`` es un ancestro de ``class`` o no.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,7 +7,7 @@ CubemapArray
 
 **Hereda:** :ref:`ImageTextureLayered<class_ImageTextureLayered>` **<** :ref:`TextureLayered<class_TextureLayered>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-An array of :ref:`Cubemap<class_Cubemap>`\ s, stored together and with a single reference.
+Un array de :ref:`Cubemap<class_Cubemap>`\ s, guardados juntos con una sola referencia.
 
 .. rst-class:: classref-introduction-group
 
@@ -63,7 +63,7 @@ Descripciones de Métodos
 
 :ref:`Resource<class_Resource>` **create_placeholder**\ (\ ) |const| :ref:`🔗<class_CubemapArray_method_create_placeholder>`
 
-Creates a placeholder version of this resource (:ref:`PlaceholderCubemapArray<class_PlaceholderCubemapArray>`).
+Crea una versión de marcador de posición de este recurso (:ref:`PlaceholderCubemapArray<class_PlaceholderCubemapArray>`).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

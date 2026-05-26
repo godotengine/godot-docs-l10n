@@ -17,13 +17,13 @@ Reproduce sonido posicional en el espacio 2D.
 Descripción
 ----------------------
 
-Plays audio that is attenuated with distance to the listener.
+Reproduce audio que se atenúa según la distancia al oyente.
 
-By default, audio is heard from the screen center. This can be changed by adding an :ref:`AudioListener2D<class_AudioListener2D>` node to the scene and enabling it by calling :ref:`AudioListener2D.make_current()<class_AudioListener2D_method_make_current>` on it.
+Por defecto, el audio se escucha desde el centro de la pantalla. Esto se puede cambiar agregando un nodo :ref:`AudioListener2D<class_AudioListener2D>` a la escena y activándolo llamando a :ref:`AudioListener2D.make_current()<class_AudioListener2D_method_make_current>`.
 
-See also :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` to play a sound non-positionally.
+Véase también :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` para reproducir un sonido sin posicionamiento.
 
-\ **Note:** Hiding an **AudioStreamPlayer2D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer2D**'s audio output, set :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` to a very low value like ``-100`` (which isn't audible to human hearing).
+\ **Nota:** Ocultar un nodo **AudioStreamPlayer2D** no desactiva su salida de audio. Para desactivar temporalmente el audio de un **AudioStreamPlayer2D**, establece :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` a un valor muy bajo como ``-100`` (que no es audible para el oído humano).
 
 .. rst-class:: classref-introduction-group
 
@@ -129,7 +129,7 @@ Descripciones de Propiedades
 - |void| **set_area_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_area_mask**\ (\ )
 
-Determines which :ref:`Area2D<class_Area2D>` layers affect the sound for reverb and audio bus effects. Areas can be used to redirect :ref:`AudioStream<class_AudioStream>`\ s so that they play in a certain audio bus. An example of how you might use this is making a "water" area so that sounds played in the water are redirected through an audio bus to make them sound like they are being played underwater.
+Determina qué capas de :ref:`Area2D<class_Area2D>` afectan el sonido para la reverberación y los efectos del bus de audio. Las áreas pueden usarse para redirigir :ref:`AudioStream<class_AudioStream>`\ s de manera que se reproduzcan en un bus de audio específico. Un ejemplo de uso sería crear un área de "agua" para que los sonidos reproducidos dentro del agua se redirijan a través de un bus de audio, haciendo que suenen como si se reprodujeran bajo el agua.
 
 .. rst-class:: classref-item-separator
 
@@ -180,9 +180,9 @@ Si es ``true``, el audio se reproduce cuando se añade al árbol de escenas.
 - |void| **set_bus**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_bus**\ (\ )
 
-Bus on which this audio is playing.
+Bus en el que se está reproduciendo este audio.
 
-\ **Note:** When setting this property, keep in mind that no validation is performed to see if the given name matches an existing bus. This is because audio bus layouts might be loaded after this property is set. If this given name can't be resolved at runtime, it will fall back to ``"Master"``.
+\ **Nota:** Al establecer esta propiedad, ten en cuenta que no se realiza ninguna validación para verificar si el nombre proporcionado coincide con un bus existente. Esto se debe a que los diseños de buses de audio podrían cargarse después de que se haya establecido esta propiedad. Si el nombre proporcionado no se puede resolver en tiempo de ejecución, se usará como valor predeterminado ``"Master"``.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Distancia máxima desde la que se puede oír el audio.
 - |void| **set_max_polyphony**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_polyphony**\ (\ )
 
-The maximum number of sounds this node can play at the same time. Playing additional sounds after this value is reached will cut off the oldest sounds.
+El número máximo de sonidos que este nodo puede reproducir simultáneamente. Reproducir sonidos adicionales después de alcanzar este límite hará que se corten los sonidos más antiguos.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ The maximum number of sounds this node can play at the same time. Playing additi
 - |void| **set_panning_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_panning_strength**\ (\ )
 
-Scales the panning strength for this node by multiplying the base :ref:`ProjectSettings.audio/general/2d_panning_strength<class_ProjectSettings_property_audio/general/2d_panning_strength>` with this factor. Higher values will pan audio from left to right more dramatically than lower values.
+Escala la intensidad del paneo de este nodo multiplicando el valor base de :ref:`ProjectSettings.audio/general/2d_panning_strength<class_ProjectSettings_property_audio/general/2d_panning_strength>` por este factor. Valores más altos harán que el audio se panee de izquierda a derecha de manera más pronunciada que los valores bajos.
 
 .. rst-class:: classref-item-separator
 
@@ -269,7 +269,7 @@ El tono y el tempo del audio, como multiplicador de la tasa de muestreo de la mu
 
 **Experimental:** Esta propiedad podría ser modificada o eliminada en versiones futuras.
 
-The playback type of the stream player. If set other than to the default value, it will force that playback type.
+El tipo de reproducción del reproductor de flujo. Si se establece un valor distinto al predeterminado, se forzará ese tipo de reproducción.
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ El objeto :ref:`AudioStream<class_AudioStream>` que se va a reproducir.
 - |void| **set_stream_paused**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_stream_paused**\ (\ )
 
-If ``true``, the playback is paused. You can resume it by setting :ref:`stream_paused<class_AudioStreamPlayer2D_property_stream_paused>` to ``false``.
+Si es ``true``, la reproducción se pausa. Puede reanudarla estableciendo :ref:`stream_paused<class_AudioStreamPlayer2D_property_stream_paused>` en ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -354,9 +354,9 @@ Base volume before attenuation, in decibels.
 - |void| **set_volume_linear**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_volume_linear**\ (\ )
 
-Base volume before attenuation, as a linear value.
+Volumen base antes de la atenuación, como un valor lineal.
 
-\ **Note:** This member modifies :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` for convenience. The returned value is equivalent to the result of :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` on :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>`. Setting this member is equivalent to setting :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` to the result of :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` on a value.
+\ **Nota:** Este miembro modifica :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` por conveniencia. El valor devuelto es equivalente al resultado de :ref:`@GlobalScope.db_to_linear()<class_@GlobalScope_method_db_to_linear>` aplicado a :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>`. Configurar este miembro es equivalente a establecer :ref:`volume_db<class_AudioStreamPlayer2D_property_volume_db>` al resultado de :ref:`@GlobalScope.linear_to_db()<class_@GlobalScope_method_linear_to_db>` aplicado a un valor.
 
 .. rst-class:: classref-section-separator
 
@@ -409,7 +409,7 @@ Returns whether the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` can return
 
 |void| **play**\ (\ from_position\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_AudioStreamPlayer2D_method_play>`
 
-Queues the audio to play on the next physics frame, from the given position ``from_position``, in seconds.
+Pone el audio en cola para reproducirse en el siguiente cuadro de física, desde la posición dada ``from_position``, en segundos.
 
 .. rst-class:: classref-item-separator
 

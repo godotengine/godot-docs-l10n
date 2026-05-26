@@ -296,7 +296,7 @@ Añade una opción de importación específica. Esta función solo puede ser lla
 
 :ref:`Variant<class_Variant>` **get_option_value**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_EditorScenePostImportPlugin_method_get_option_value>`
 
-Consulta el valor de una opción. Esta función solo puede ser llamada desde aquellos que consultan la visibilidad o el procesamiento.
+Véase el valor de una opción. Esta función solo puede ser llamada desde aquellos que consultan la visibilidad o el procesamiento.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -538,7 +538,7 @@ Ajoute un fichier de paquet de plate-forme intégré d'Apple depuis ``path`` au 
 
 |void| **add_apple_embedded_platform_cpp_code**\ (\ code\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorExportPlugin_method_add_apple_embedded_platform_cpp_code>`
 
-Adds C++ code to the Apple embedded platform export. The final code is created from the code appended by each active export plugin.
+Ajoute du code C++ à l'export de plate-forme intégrée Apple. Le code final est créé à partir du code ajouté par chaque plugin d'export actif.
 
 .. rst-class:: classref-item-separator
 

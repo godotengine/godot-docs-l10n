@@ -14,15 +14,15 @@ Contiene datos que pueden usarse para animar cualquier cosa en el motor.
 Descripción
 ----------------------
 
-This resource holds data that can be used to animate anything in the engine. Animations are divided into tracks and each track must be linked to a node. The state of that node can be changed through time, by adding timed keys (events) to the track.
+Este recurso contiene los datos que pueden utilizarse para animar cualquier cosa en el motor. Las animaciones se dividen en pistas (tracks) y cada pista debe estar vinculada a un nodo. El estado de dicho nodo puede cambiarse a lo largo del tiempo añadiendo claves temporales (eventos) en las pistas.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This creates an animation that makes the node "Enemy" move to the right by
-    # 100 pixels in 2.0 seconds.
+    # Esto crea una animación que hace que el nodo "Enemy" se mueva a la derecha
+    # 100 píxeles en 2.0 segundos.
     var animation = Animation.new()
     var track_index = animation.add_track(Animation.TYPE_VALUE)
     animation.track_set_path(track_index, "Enemy:position:x")
@@ -32,8 +32,8 @@ This resource holds data that can be used to animate anything in the engine. Ani
 
  .. code-tab:: csharp
 
-    // This creates an animation that makes the node "Enemy" move to the right by
-    // 100 pixels in 2.0 seconds.
+    // Esto crea una animación que hace que el nodo "Enemy" se mueva a la derecha
+    // 100 píxeles en 2.0 segundos.
     var animation = new Animation();
     int trackIndex = animation.AddTrack(Animation.TrackType.Value);
     animation.TrackSetPath(trackIndex, "Enemy:position:x");
@@ -43,9 +43,9 @@ This resource holds data that can be used to animate anything in the engine. Ani
 
 
 
-Animations are just data containers, and must be added to nodes such as an :ref:`AnimationPlayer<class_AnimationPlayer>` to be played back. Animation tracks have different types, each with its own set of dedicated methods. Check :ref:`TrackType<enum_Animation_TrackType>` to see available types.
+Las animaciones son sólo contenedores de datos y deben añadirse a nodos como un :ref:`AnimationPlayer<class_AnimationPlayer>` para poder ser reproducidas. Las pistas de animación tienen diferentes tipos, cada una con su propio conjunto de métodos dedicados. Véase :ref:`TrackType<enum_Animation_TrackType>` para ver los tipos disponibles.
 
-\ **Note:** For 3D position/rotation/scale, using the dedicated :ref:`TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` and :ref:`TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` track types instead of :ref:`TYPE_VALUE<class_Animation_constant_TYPE_VALUE>` is recommended for performance reasons.
+\ **Nota:** Para posición/rotación/escala en 3D, se recomienda utilizar los tipos de pista dedicados :ref:`TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` y :ref:`TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` en lugar de :ref:`TYPE_VALUE<class_Animation_constant_TYPE_VALUE>` por razones de rendimiento.
 
 .. rst-class:: classref-introduction-group
 
@@ -766,7 +766,7 @@ Establece el flujo de la clave identificada por ``key_idx`` al valor ``stream``.
 
 |void| **audio_track_set_use_blend**\ (\ track_idx\: :ref:`int<class_int>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Animation_method_audio_track_set_use_blend>`
 
-Establece si la pista se combinará con otras animaciones. Si ``true``, el volumen de reproducción de audio cambia dependiendo del valor de la mezcla.
+Establece si la pista se combinará con otras animaciones. Si es ``true``, el volumen de reproducción de audio cambia dependiendo del valor de la mezcla.
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ Devuelve el valor interpolado de la "blend shape" en el time dado (en segundos).
 
 |void| **clear**\ (\ ) :ref:`🔗<class_Animation_method_clear>`
 
-Limpiar la animacion (limpia todas las pistas y reinicia todo).
+Limpiar la animación (limpia todas las pistas y reinicia todo).
 
 .. rst-class:: classref-item-separator
 

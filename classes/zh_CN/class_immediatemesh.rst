@@ -179,9 +179,9 @@ ImmediateMesh
 
 |void| **surface_set_tangent**\ (\ tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_tangent>`
 
-Set the tangent attribute that will be pushed with the next vertex.
+设置将与下一个顶点一起推送的切线属性。
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **注意：**\ 尽管 ``tangent`` 是一个 :ref:`Plane<class_Plane>` ，但它并不直接表示切平面。它的 :ref:`Plane.x<class_Plane_property_x>`\ 、\ :ref:`Plane.y<class_Plane_property_y>` 和 :ref:`Plane.z<class_Plane_property_z>` 表示切线向量，而 :ref:`Plane.d<class_Plane_property_d>` 应该为 ``-1`` 或 ``1``\ 。另见 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -136,7 +136,7 @@ Returns the relative path to the editor settings for this project. This is usual
 
 :ref:`String<class_String>` **get_self_contained_file**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_get_self_contained_file>`
 
-Restituisce il percorso assoluto al file autosufficiente che fa in modo che l'istanza attuale dell'editor Godot sia considerata autosufficiente. Restituisce una stringa vuota se l'istanza attuale dell'editor Godot non è autosufficiente. Vedi anche :ref:`is_self_contained()<class_EditorPaths_method_is_self_contained>`.
+Restituisce il percorso assoluto al file autonomo che fa in modo che l'istanza attuale dell'editor Godot sia considerata autonoma. Restituisce una stringa vuota se l'istanza attuale dell'editor Godot non è autonoma. Vedi anche :ref:`is_self_contained()<class_EditorPaths_method_is_self_contained>`.
 
 .. rst-class:: classref-item-separator
 
@@ -148,15 +148,15 @@ Restituisce il percorso assoluto al file autosufficiente che fa in modo che l'is
 
 :ref:`bool<class_bool>` **is_self_contained**\ (\ ) |const| :ref:`🔗<class_EditorPaths_method_is_self_contained>`
 
-Restituisce ``true`` se l'editor è contrassegnato come autosufficiente, altrimenti ``false``. Quando è abilitata la modalità autosufficiente, la configurazione utente, i dati e i file di cache sono salvati in una cartella ``editor_data/`` accanto al binario dell'editor. Ciò facilità l'uso portatile e garantisce che l'editor Godot riduca al minimo le scritture di file al di fuori della propria cartella. La modalità autosufficiente non è disponibile per i progetti esportati.
+Restituisce ``true`` se l'editor è contrassegnato come autonomo, altrimenti ``false``. Quando è abilitata la modalità autonoma, la configurazione utente, i dati e i file di cache sono salvati in una cartella ``editor_data/`` accanto al binario dell'editor. Ciò facilità l'uso portatile e garantisce che l'editor Godot riduca al minimo le scritture di file al di fuori della propria cartella. La modalità autonoma non è disponibile per i progetti esportati.
 
-La modalità autosufficiente può essere abilitata creando un file denominato ``._sc_`` o ``_sc_`` nella stessa cartella del binario dell'editor o del bundle macOS .app mentre l'editor non è in esecuzione. Vedi anche :ref:`get_self_contained_file()<class_EditorPaths_method_get_self_contained_file>`.
+La modalità autonoma può essere abilitata creando un file denominato ``._sc_`` o ``_sc_`` nella stessa cartella del binario dell'editor o del bundle macOS .app mentre l'editor non è in esecuzione. Vedi anche :ref:`get_self_contained_file()<class_EditorPaths_method_get_self_contained_file>`.
 
-\ **Nota:** Su macOS, il flag di quarantena dovrebbe essere rimosso manualmente prima di usare la modalità autosufficiente, consulta `Esecuzione su macOS <https://docs.godotengine.org/en/stable/tutorials/export/running_on_macos.html>`__.
+\ **Nota:** Su macOS, il flag di quarantena dovrebbe essere rimosso manualmente prima di usare la modalità autonoma, consulta `Esecuzione su macOS <https://docs.godotengine.org/en/stable/tutorials/export/running_on_macos.html>`__.
 
 \ **Nota:** Su macOS, posizionare ``_sc_`` o qualsiasi altro file all'interno del bundle .app interromperà la firma digitale e lo renderà non portabile, quindi considera di posizionarlo nella stessa cartella del bundle .app.
 
-\ **Nota:** La versione su Steam di Godot usa la modalità autosufficiente per impostazione predefinita.
+\ **Nota:** La versione su Steam di Godot usa la modalità autonoma come predefinita.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

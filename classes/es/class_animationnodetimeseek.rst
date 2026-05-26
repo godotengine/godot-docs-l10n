@@ -14,32 +14,32 @@ Un nodo de animación de búsqueda de tiempo utilizado en :ref:`AnimationTree<cl
 Descripción
 ----------------------
 
-This animation node can be used to cause a seek command to happen to any sub-children of the animation graph. Use to play an :ref:`Animation<class_Animation>` from the start or a certain playback position inside the :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+Este nodo de animación puede ser utilizado para generar un comando de búsqueda en cualquier subelemento de la grafica de animación. Utilizable para reproducir un :ref:`Animation<class_Animation>` desde el inicio o una posición especifica de la repetición dentro de :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-After setting the time and changing the animation playback, the time seek node automatically goes into sleep mode on the next process frame by setting its ``seek_request`` value to ``-1.0``.
+Despues de configurar el tiempo y cambiar la reproducción de la animación, el tiempo que tarda el nodo de búsqueda automaticamente en entrar en modo de reposo en el siguiente cuadro de proceso por defecto es ``seek_request``\ value to ``-1.0``\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Play child animation from the start.
-    animation_tree.set("parameters/TimeSeek/seek_request", 0.0)
-    # Alternative syntax (same result as above).
-    animation_tree["parameters/TimeSeek/seek_request"] = 0.0
+    #Reproducir animación hija desde el inicio.
+    animation_tree.set("parameters/TimeSeek/seek_request",0.0)
+    #Sintaxis alternativa(Mismo resultado al de arriba).
+    animation_tree.set["parameters/TimeSeek/seek_request"] = 0.0
 
-    # Play child animation from 12 second timestamp.
-    animation_tree.set("parameters/TimeSeek/seek_request", 12.0)
-    # Alternative syntax (same result as above).
-    animation_tree["parameters/TimeSeek/seek_request"] = 12.0
+    #Reproducir animación hija a partir del segundo 12.
+    animation_tree.set("parameters/TimeSeek/seek_request",12.0)
+    #Sintaxis alternativa(Mismo resultado al de arriba).
+    animation_tree.set["parameters/TimeSeek/seek_request"] = 12.0
 
  .. code-tab:: csharp
 
-    // Play child animation from the start.
-    animationTree.Set("parameters/TimeSeek/seek_request", 0.0);
+    //Reproducir animación hija desde el inicio.
+    animation_tree.set("parameters/TimeSeek/seek_request",0.0)
 
-    // Play child animation from 12 second timestamp.
-    animationTree.Set("parameters/TimeSeek/seek_request", 12.0);
+    //Reproducir animación hija a partir del segundo 12.
+    animation_tree.set("parameters/TimeSeek/seek_request",12.0)
 
 
 

@@ -186,7 +186,7 @@ TranslationServer
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **find_translations**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationServer_method_find_translations>`
 
-Returns the :ref:`Translation<class_Translation>` instances in the main translation domain that match ``locale`` (see :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` will be returned.
+返回主翻译域中与 ``locale`` 匹配（见 :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`\ ）的 :ref:`Translation<class_Translation>` 实例。如果 ``exact`` 为 ``true``\ ，则仅返回其区域设置与 ``locale`` 完全匹配的实例。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Returns the :ref:`Translation<class_Translation>` instances in the main translat
 
 :ref:`String<class_String>` **format_number**\ (\ number\: :ref:`String<class_String>`, locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_format_number>`
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``locale``.
+将数字从阿拉伯数字（0..9）转换为给定 ``locale`` 中使用的记数系统。
 
 .. rst-class:: classref-item-separator
 
@@ -320,7 +320,7 @@ Converts a number from Western Arabic (0..9) to the numeral system used in the g
 
 :ref:`String<class_String>` **get_percent_sign**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_percent_sign>`
 
-Returns the percent sign used in the given ``locale``.
+返回给定 ``locale`` 中使用的百分号。
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Returns the percent sign used in the given ``locale``.
 
 :ref:`String<class_String>` **get_plural_rules**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_get_plural_rules>`
 
-Returns the default plural rules for the ``locale``.
+返回 ``locale`` 的默认复数规则。
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +384,7 @@ Returns the default plural rules for the ``locale``.
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **get_translations**\ (\ ) |const| :ref:`🔗<class_TranslationServer_method_get_translations>`
 
-Returns all available :ref:`Translation<class_Translation>` instances in the main translation domain as added by :ref:`add_translation()<class_TranslationServer_method_add_translation>`.
+返回通过 :ref:`add_translation()<class_TranslationServer_method_add_translation>` 添加的主翻译域中所有可用的 :ref:`Translation<class_Translation>` 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +408,7 @@ Returns all available :ref:`Translation<class_Translation>` instances in the mai
 
 :ref:`bool<class_bool>` **has_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_translation>`
 
-Returns ``true`` if the main translation domain contains the given ``translation``.
+如果主翻译域包含给定的 ``translation``\ ，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ Returns ``true`` if the main translation domain contains the given ``translation
 
 :ref:`bool<class_bool>` **has_translation_for_locale**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationServer_method_has_translation_for_locale>`
 
-Returns ``true`` if there are any :ref:`Translation<class_Translation>` instances in the main translation domain that match ``locale`` (see :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` are considered.
+如果主翻译域中存在与 ``locale`` 匹配（见 :ref:`compare_locales()<class_TranslationServer_method_compare_locales>`\ ）的 :ref:`Translation<class_Translation>` 实例，则返回 ``true``\ 。如果 ``exact`` 为 ``true``\ ，则仅考虑其区域设置与 ``locale`` 完全相等的实例。
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Returns ``true`` if there are any :ref:`Translation<class_Translation>` instance
 
 :ref:`String<class_String>` **parse_number**\ (\ number\: :ref:`String<class_String>`, locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TranslationServer_method_parse_number>`
 
-Converts ``number`` from the numeral system used in the given ``locale`` to Western Arabic (0..9).
+将数字 ``number`` 从给定 ``locale`` 中使用的记数系统转换为西阿拉伯数字（0..9）。
 
 .. rst-class:: classref-item-separator
 

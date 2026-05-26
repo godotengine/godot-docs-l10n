@@ -64,7 +64,7 @@ bool
 
 
 
-\ **注意：**\ 在现代编程语言中，逻辑运算符是按顺序求值的。如果后续条件不会对最终结果产生影响，那么就会跳过对这些条件的求值。这种行为叫作\ `短路求值 <https://zh.wikipedia.org/wiki/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC>`__\ ，在注重性能的场合能够避免对开销较大的条件进行求值。
+\ **注意：**\ 在现代编程语言中，逻辑运算符是按顺序求值的。如果后续条件不会对最终结果产生影响，那么就会跳过对这些条件的求值。这种行为叫作 `short-circuit evaluation <https://en.wikipedia.org/wiki/Short-circuit_evaluation>`__ ，在注重性能的场合能够避免对开销较大的条件进行求值。
 
 \ **注意：**\ 根据惯例，返回布尔值的内置方法和属性通常都以判断题、形容词等形式命名（\ :ref:`String.is_empty()<class_String_method_is_empty>`\ 、\ :ref:`Node.can_process()<class_Node_method_can_process>`\ 、\ :ref:`Camera2D.enabled<class_Camera2D_property_enabled>` 等）。
 

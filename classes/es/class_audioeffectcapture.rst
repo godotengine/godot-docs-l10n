@@ -112,9 +112,9 @@ Devuelve ``true`` si al menos ``frames`` fotogramas de audio están disponibles 
 
 |void| **clear_buffer**\ (\ ) :ref:`🔗<class_AudioEffectCapture_method_clear_buffer>`
 
-Clears the internal ring buffer.
+Borra el búfer circular interno.
 
-\ **Note:** Calling this during a capture can cause the loss of samples which causes popping in the playback.
+\ **Nota:** Llamar a esto durante una captura puede causar la pérdida de muestras, lo que provocaría chasquidos en la reproducción.
 
 .. rst-class:: classref-item-separator
 
@@ -178,7 +178,7 @@ Returns the number of frames available to read using :ref:`get_buffer()<class_Au
 
 :ref:`int<class_int>` **get_pushed_frames**\ (\ ) |const| :ref:`🔗<class_AudioEffectCapture_method_get_pushed_frames>`
 
-Returns the number of audio frames inserted from the audio bus.
+Devuelve el número de frames de audio insertados desde el bus de audio.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

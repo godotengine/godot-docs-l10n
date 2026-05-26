@@ -1944,7 +1944,7 @@ Parses the :ref:`SceneTree<class_SceneTree>` for source geometry according to th
 
 |void| **query_path**\ (\ parameters\: :ref:`NavigationPathQueryParameters3D<class_NavigationPathQueryParameters3D>`, result\: :ref:`NavigationPathQueryResult3D<class_NavigationPathQueryResult3D>`, callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_NavigationServer3D_method_query_path>`
 
-Consulta una ruta en un mapa de navegación dado. La posición de inicio y de destino y otros parámetros se definen a través de :ref:`NavigationPathQueryParameters3D<class_NavigationPathQueryParameters3D>`. Actualiza el objeto de resultado :ref:`NavigationPathQueryResult3D<class_NavigationPathQueryResult3D>` proporcionado con la ruta entre otros resultados solicitados por la consulta. Una vez finalizado el proceso, se llamará al ``callback`` opcional.
+Véase una ruta en un mapa de navegación dado. La posición de inicio y de destino y otros parámetros se definen a través de :ref:`NavigationPathQueryParameters3D<class_NavigationPathQueryParameters3D>`. Actualiza el objeto de resultado :ref:`NavigationPathQueryResult3D<class_NavigationPathQueryResult3D>` proporcionado con la ruta entre otros resultados solicitados por la consulta. Una vez finalizado el proceso, se llamará al ``callback`` opcional.
 
 .. rst-class:: classref-item-separator
 

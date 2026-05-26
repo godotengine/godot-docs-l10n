@@ -433,7 +433,7 @@ HSL OK 颜色模型圆形色彩空间。
 - |void| **set_edit_intensity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_intensity**\ (\ )
 
-If ``true``, shows an intensity slider. The intensity is applied as follows: convert the color to linear encoding, multiply it by ``2 ** intensity``, and then convert it back to nonlinear sRGB encoding.
+如果为 ``true`` 则显示强度滑块。强度的应用方式如下：将颜色转换为线性编码，乘以 ``2 ** intensity``\ ，然后将其转换回非线性 sRGB 编码。
 
 .. rst-class:: classref-item-separator
 
@@ -892,7 +892,7 @@ If ``true``, shows an intensity slider. The intensity is applied as follows: con
 
 :ref:`StyleBox<class_StyleBox>` **picker_focus_circle** :ref:`🔗<class_ColorPicker_theme_style_picker_focus_circle>`
 
-拾取器的圆形部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在拾取器形状\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+拾取器的圆形部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在拾取器形状\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -904,7 +904,7 @@ If ``true``, shows an intensity slider. The intensity is applied as follows: con
 
 :ref:`StyleBox<class_StyleBox>` **picker_focus_rectangle** :ref:`🔗<class_ColorPicker_theme_style_picker_focus_rectangle>`
 
-拾取器的矩形部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在拾取器形状\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+拾取器的矩形部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在拾取器形状\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -916,7 +916,7 @@ If ``true``, shows an intensity slider. The intensity is applied as follows: con
 
 :ref:`StyleBox<class_StyleBox>` **sample_focus** :ref:`🔗<class_ColorPicker_theme_style_sample_focus>`
 
-旧颜色样本部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在样本\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+旧颜色样本部分处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。显示在样本\ *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保拾取器形状仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

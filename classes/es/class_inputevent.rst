@@ -25,7 +25,7 @@ Tutoriales
 
 - :doc:`Usando InputEvent <../tutorials/inputs/inputevent>`
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+- :doc:`Transformaciones de la ventana gráfica y del lienzo <../tutorials/2d/2d_transforms>`
 
 - `Demo de Dodge The Creeps en 2D <https://godotengine.org/asset-library/asset/2712>`__
 
@@ -193,7 +193,7 @@ Devuelve ``true`` si la acción dada coincide con este evento y está siendo pre
 
 Si ``exact_match`` es ``false``, ignora los modificadores de entrada adicionales para los eventos :ref:`InputEventKey<class_InputEventKey>` e :ref:`InputEventMouseButton<class_InputEventMouseButton>`, y la dirección para los eventos :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
-\ **Nota:** Debido al efecto fantasma del teclado, :ref:`is_action_pressed()<class_InputEvent_method_is_action_pressed>` puede devolver ``false`` incluso si una de las teclas de la acción está presionada. Consulta los `ejemplos de entrada <../tutorials/inputs/input_examples.html#keyboard-events>`__ en la documentación para obtener más información.
+\ **Nota:** Debido al efecto fantasma del teclado, :ref:`is_action_pressed()<class_InputEvent_method_is_action_pressed>` puede devolver ``false`` incluso si una de las teclas de la acción está presionada. Véanse los `ejemplos de entrada <../tutorials/inputs/input_examples.html#keyboard-events>`__ en la documentación para obtener más información.
 
 .. rst-class:: classref-item-separator
 

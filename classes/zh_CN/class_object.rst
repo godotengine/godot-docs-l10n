@@ -251,9 +251,9 @@ enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_PERSIST** = ``2``
 
-Persisting connections are stored when the object is serialized (such as when using :ref:`PackedScene.pack()<class_PackedScene_method_pack>`). In the editor, connections created through the Signals dock are always persisting.
+持久连接会在序列化对象时存储（比如使用 :ref:`PackedScene.pack()<class_PackedScene_method_pack>` 时）。在编辑器中，通过“信号”面板创建的连接总是持久的。
 
-\ **Note:** Connections to lambda functions (that is, when the function code is embedded in the :ref:`connect()<class_Object_method_connect>` call) cannot be made persistent.
+\ **注意：**\ 与 Lambda 函数（即函数代码嵌入在 :ref:`connect()<class_Object_method_connect>` 调用中的）的连接无法持久化。
 
 .. _class_Object_constant_CONNECT_ONE_SHOT:
 
@@ -277,7 +277,7 @@ Persisting connections are stored when the object is serialized (such as when us
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_APPEND_SOURCE_OBJECT** = ``16``
 
-On signal emission, the source object is automatically appended after the original arguments of the signal, regardless of the connected :ref:`Callable<class_Callable>`'s unbinds which affect only the original arguments of the signal (see :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
+信号发出时，源对象会自动追加到信号的原始参数之后，与连接的 :ref:`Callable<class_Callable>` 的解绑操作无关，因为解绑操作只会影响信号的原始参数（见 :ref:`Callable.unbind()<class_Callable_method_unbind>` 和 :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`\ ）。
 
 ::
 
@@ -286,9 +286,9 @@ On signal emission, the source object is automatically appended after the origin
     signal test_signal
 
     func test():
-        print(self) # Prints e.g. <Object#35332818393>
+        print(self) # 输出如：<Object#35332818393>
         test_signal.connect(prints.unbind(1), CONNECT_APPEND_SOURCE_OBJECT)
-        test_signal.emit("emit_arg_1", "emit_arg_2") # Prints emit_arg_1 <Object#35332818393>
+        test_signal.emit("emit_arg_1", "emit_arg_2") # 输出：emit_arg_1 <Object#35332818393>
 
 .. rst-class:: classref-section-separator
 
@@ -399,13 +399,13 @@ On signal emission, the source object is automatically appended after the origin
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_property_list**\ (\ ) |virtual| :ref:`🔗<class_Object_private_method__get_property_list>`
 
-Override this method to provide a custom list of additional properties to handle by the engine.
+覆盖该方法以提供由引擎处理的额外属性的自定义列表。
 
-Should return a property list, as an :ref:`Array<class_Array>` of dictionaries. The result is added to the array of :ref:`get_property_list()<class_Object_method_get_property_list>`, and should be formatted in the same way. Each :ref:`Dictionary<class_Dictionary>` must at least contain the ``name`` and ``type`` entries.
+应该返回一个属性列表，作为字典的 :ref:`Array<class_Array>`\ 。该结果被添加到 :ref:`get_property_list()<class_Object_method_get_property_list>` 的数组中，并且应该以相同的方式进行格式化。每个 :ref:`Dictionary<class_Dictionary>` 必须至少包含 ``name`` 和 ``type`` 条目。
 
-You can use :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` and :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to customize the default values of the properties added by this method.
+你可以使用 :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` 和 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` 自定义该方法添加的属性的默认值。
 
-The example below displays a list of numbers shown as words going from ``ZERO`` to ``FIVE``, with ``number_count`` controlling the size of the list:
+下面的示例显示了一个数字列表，该列表显示为从 ``ZERO`` 到 ``FIVE`` 的单词，其中 ``number_count`` 控制列表的大小：
 
 
 .. tabs::
@@ -513,11 +513,11 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 
 
-\ **Note:** This method is intended for advanced purposes. For most common use cases, the scripting languages offer easier ways to handle properties. See :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`, :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`, :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>`, etc. If you want to customize exported properties, use :ref:`_validate_property()<class_Object_private_method__validate_property>`.
+\ **注意：**\ 该方法旨在用于高级目的。对于大多数常见用例，脚本语言提供了更简单的方法来处理属性。参见 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`\ 、\ :ref:`@GDScript.@export_enum<class_@GDScript_annotation_@export_enum>`\ 、\ :ref:`@GDScript.@export_group<class_@GDScript_annotation_@export_group>` 等。如果要自定义导出的属性，请使用 :ref:`_validate_property()<class_Object_private_method__validate_property>`\ 。
 
-\ **Note:** If the object's script is not :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`, this method will not be called in the editor.
+\ **注意：**\ 如果该对象的脚本不是 :ref:`@GDScript.@tool<class_@GDScript_annotation_@tool>`\ ，则该方法在编辑器中不会被调用。
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy.
+\ **注意：**\ 与其他虚方法不同，该方法会被每个重写它的脚本自动调用。这意味着不应该通过 GDScript 中的 ``super`` 或其他语言中的类似手段来调用基类实现。最底层的子类最先被调用，后续调用将沿着类层次结构向上进行。
 
 .. rst-class:: classref-item-separator
 
@@ -610,7 +610,7 @@ The example below displays a list of numbers shown as words going from ``ZERO`` 
 
 |void| **_notification**\ (\ what\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_Object_private_method__notification>`
 
-Called when the object receives a notification, which can be identified in ``what`` by comparing it with a constant. See also :ref:`notification()<class_Object_method_notification>`.
+当对象收到通知时被调用，可以通过将 ``what`` 与常量比较来识别通知。另见 :ref:`notification()<class_Object_method_notification>`\ 。
 
 
 .. tabs::
@@ -619,7 +619,7 @@ Called when the object receives a notification, which can be identified in ``wha
 
     func _notification(what):
         if what == NOTIFICATION_PREDELETE:
-            print("Goodbye!")
+            print("再见！")
 
  .. code-tab:: csharp
 
@@ -627,15 +627,15 @@ Called when the object receives a notification, which can be identified in ``wha
     {
         if (what == NotificationPredelete)
         {
-            GD.Print("Goodbye!");
+            GD.Print("再见！");
         }
     }
 
 
 
-\ **Note:** The base **Object** defines a few notifications (:ref:`NOTIFICATION_POSTINITIALIZE<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` and :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`). Inheriting classes such as :ref:`Node<class_Node>` define a lot more notifications, which are also received by this method.
+\ **注意：**\ 基类 **Object** 定义了一些通知（\ :ref:`NOTIFICATION_POSTINITIALIZE<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` 和 :ref:`NOTIFICATION_PREDELETE<class_Object_constant_NOTIFICATION_PREDELETE>`\ ）。\ :ref:`Node<class_Node>` 等继承类定义了更多通知，这些通知也由该方法接收。
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. Call order depends on the ``reversed`` argument of :ref:`notification()<class_Object_method_notification>` and varies between different notifications. Most notifications are sent in the forward order (i.e. Object class first, most derived class last).
+\ **注意：**\ 与其他虚方法不同，该方法会被每个覆盖的脚本自动调用。这意味着不应该通过 GDScript 中的 ``super`` 或其他语言中的类似手段来调用基类实现。调用顺序取决于 :ref:`notification()<class_Object_method_notification>` 方法的 ``reversed`` 参数，并且不同的通知类型的调用顺序也可能不同。大多数通知都按正向顺序发送（即先调用 Object 类，最后调用派生程度最高的类）。
 
 .. rst-class:: classref-item-separator
 
@@ -647,11 +647,11 @@ Called when the object receives a notification, which can be identified in ``wha
 
 :ref:`bool<class_bool>` **_property_can_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_can_revert>`
 
-Override this method to customize the given ``property``'s revert behavior. Should return ``true`` if the ``property`` has a custom default value and is revertible in the Inspector dock. Use :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` to specify the ``property``'s default value.
+覆盖该方法以自定义给定 ``property`` 的恢复行为。如果 ``property`` 具有自定义默认值并且可在检查器面板中恢复，则应返回 ``true``\ 。使用 :ref:`_property_get_revert()<class_Object_private_method__property_get_revert>` 来指定 ``property`` 的默认值。
 
-\ **Note:** This method must return consistently, regardless of the current value of the ``property``.
+\ **注意：**\ 无论 ``property`` 的当前值如何，该方法都必须始终如一地返回。
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **注意：**\ 与其他虚方法不同，该方法会被每个重写它的脚本自动调用。这意味着不应该通过 GDScript 中的 ``super`` 或其他语言中的类似手段来调用基类实现。最底层的子类最先被调用，后续调用将沿着类层次结构向上进行。调用链会在第一个返回 ``true`` 的类处停止。
 
 .. rst-class:: classref-item-separator
 
@@ -663,11 +663,11 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`Variant<class_Variant>` **_property_get_revert**\ (\ property\: :ref:`StringName<class_StringName>`\ ) |virtual| :ref:`🔗<class_Object_private_method__property_get_revert>`
 
-Override this method to customize the given ``property``'s revert behavior. Should return the default value for the ``property``. If the default value differs from the ``property``'s current value, a revert icon is displayed in the Inspector dock.
+覆盖该方法以自定义给定 ``property`` 的还原行为。应返回 ``property`` 的默认值。如果默认值与 ``property`` 的当前值不同，则检查器停靠面板中会显示一个还原图标。
 
-\ **Note:** :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` must also be overridden for this method to be called.
+\ **注意：**\ :ref:`_property_can_revert()<class_Object_private_method__property_can_revert>` 也必须被覆盖，该方法才能被调用。
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns a non-``null`` value.
+\ **注意：**\ 与其他虚方法不同，该方法会被每个重写它的脚本自动调用。这意味着不应该通过 GDScript 中的 ``super`` 或其他语言中的类似手段来调用基类实现。最底层的子类最先被调用，后续调用将沿着类层次结构向上进行。调用链会在第一个返回非 ``null`` 的类处停止。
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`bool<class_bool>` **_set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__set>`
 
-覆盖该方法以自定义 :ref:`set()<class_Object_method_set>` 的行为。应将 ``property`` 设置为 ``value`` 并返回 ``true``\ ，如果 ``property`` 正常处理则返回 ``false``\ 。设置 ``property`` 的\ *确切*\ 方式取决于该方法的实现。
+覆盖该方法以自定义 :ref:`set()<class_Object_method_set>` 的行为。应将 ``property`` 设置为 ``value`` 并返回 ``true``\ ，如果 ``property`` 被正常处理则返回 ``false``\ 。设置 ``property`` 的\ *确切*\ 方式取决于该方法的实现。
 
 结合 :ref:`_get()<class_Object_private_method__get>` 和 :ref:`_get_property_list()<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。
 
@@ -899,11 +899,11 @@ Override this method to customize the given ``property``'s revert behavior. Shou
 
 :ref:`Variant<class_Variant>` **call_deferred**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_call_deferred>`
 
-Calls the ``method`` on the object during idle time. Always returns ``null``, **not** the method's result.
+在空闲时调用该对象的 ``method`` 方法。始终返回 ``null``\ ，\ **不返回**\ 该方法的结果。
 
-Idle time happens mainly at the end of process and physics frames. In it, deferred calls will be run until there are none left, which means you can defer calls from other deferred calls and they'll still be run in the current idle time cycle. This means you should not call a method deferred from itself (or from a method called by it), as this causes infinite recursion the same way as if you had called the method directly.
+空闲时间主要出现在处理帧和物理帧的末尾。延迟的调用会在此时执行，直到全部执行完毕，这意味着你可以从其他延迟调用中延迟调用，并且它们仍将在当前空闲时间周期中运行。这意味着你不应从延迟调用的方法（或从其调用的方法）中延迟调用其自身，因为这会导致无限递归，就像你直接调用该方法一样。
 
-This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
+这个方法支持可变数量的参数，所以参数可以用逗号分隔列表的形式传递。
 
 
 .. tabs::
@@ -920,21 +920,21 @@ This method supports a variable number of arguments, so parameters can be passed
 
 
 
-For methods that are deferred from the same thread, the order of execution at idle time is identical to the order in which ``call_deferred`` was called.
+对于从同一线程中延迟执行的方法，在空闲时执行的顺序与调用 ``call_deferred`` 的顺序相同。
 
-See also :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
+另见 :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`\ 。
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **注意：**\ 在 C# 中，\ ``method`` 引用内置的 Godot 方法时必须使用 snake_case 的形式。请优先使用 ``MethodName`` 类中暴露的名称，避免每次调用都分配一个新的 :ref:`StringName<class_StringName>`\ 。
 
-\ **Note:** If you're looking to delay the function call by a frame, refer to the :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` and :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>` signals.
+\ **注意：**\ 如果你想要延迟一帧再调用函数，请使用 :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` 和 :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>` 信号。
 
 ::
 
     var node = Node3D.new()
-    # Make a Callable and bind the arguments to the node's rotate() call.
+    # 制作可调用体并将参数绑定到该节点的 rotate() 调用。
     var callable = node.rotate.bind(Vector3(1.0, 0.0, 0.0), 1.571)
-    # Connect the callable to the process_frame signal, so it gets called in the next process frame.
-    # CONNECT_ONE_SHOT makes sure it only gets called once instead of every frame.
+    # 将可调用体连接到 process_frame 信号，这样就能够在下一个处理帧中调用。
+    # CONNECT_ONE_SHOT 能够确保只调用一次，不会每帧都调用。
     get_tree().process_frame.connect(callable, CONNECT_ONE_SHOT)
 
 .. rst-class:: classref-item-separator
@@ -1000,15 +1000,15 @@ See also :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect**\ (\ signal\: :ref:`StringName<class_StringName>`, callable\: :ref:`Callable<class_Callable>`, flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_Object_method_connect>`
 
-Connects a ``signal`` by name to a ``callable``. Optional ``flags`` can be also added to configure the connection's behavior (see :ref:`ConnectFlags<enum_Object_ConnectFlags>` constants).
+将名为 ``signal`` 的信号与可调用体 ``callable`` 连接。还可以通过 ``flags`` 添加标志，配置连接行为（见 :ref:`ConnectFlags<enum_Object_ConnectFlags>` 常量）。
 
-A signal can only be connected once to the same :ref:`Callable<class_Callable>`. If the signal is already connected, this method returns :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` and generates an error, unless the signal is connected with :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>`. To prevent this, use :ref:`is_connected()<class_Object_method_is_connected>` first to check for existing connections.
+一个信号与同一个 :ref:`Callable<class_Callable>` 只能连接一次。如果信号已连接，则该方法会返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` 并报错误，除非信号是使用 :ref:`CONNECT_REFERENCE_COUNTED<class_Object_constant_CONNECT_REFERENCE_COUNTED>` 连接的。要防止出现这种情况，请先使用 :ref:`is_connected()<class_Object_method_is_connected>` 检查是否已存在连接。
 
-\ **Note:** If the ``callable``'s object is freed, the connection will be lost.
+\ **注意：**\ 如果 ``callable`` 的对象被释放，连接就会丢失。
 
-\ **Note:** In GDScript, it is generally recommended to connect signals with :ref:`Signal.connect()<class_Signal_method_connect>` instead.
+\ **注意：**\ 在 GDScript 中，通常建议使用 :ref:`Signal.connect()<class_Signal_method_connect>` 来连接信号。
 
-\ **Note:** This method, and all other signal-related methods, are thread-safe.
+\ **注意：**\ 该方法以及所有其他与信号相关的方法都是线程安全的。
 
 .. rst-class:: classref-item-separator
 
@@ -1313,9 +1313,9 @@ A signal can only be connected once to the same :ref:`Callable<class_Callable>`.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_signal_list**\ (\ ) |const| :ref:`🔗<class_Object_method_get_signal_list>`
 
-Returns the list of existing signals as an :ref:`Array<class_Array>` of dictionaries.
+将现有信号的列表返回为字典的一个 :ref:`Array<class_Array>` 。
 
-\ **Note:** Due to the implementation, each :ref:`Dictionary<class_Dictionary>` is formatted very similarly to the returned values of :ref:`get_method_list()<class_Object_method_get_method_list>`.
+\ **注意：**\ 由于该实现，每个 :ref:`Dictionary<class_Dictionary>` 的格式与 :ref:`get_method_list()<class_Object_method_get_method_list>` 的返回值非常相似。
 
 .. rst-class:: classref-item-separator
 

@@ -71,7 +71,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_FPS** = ``0``
 
-The number of frames rendered in the last second. This metric is only updated once per second, even if queried more often. *Higher is better.*
+El número de fotogramas renderizados en el último segundo. Esta métrica solo se actualiza una vez por segundo, incluso si se consulta con más frecuencia. *Cuanto mayor, mejor.*
 
 .. _class_Performance_constant_TIME_PROCESS:
 
@@ -95,7 +95,7 @@ El tiempo que tomó completar un fotograma de la física, en segundos. *Cuanto m
 
 :ref:`Monitor<enum_Performance_Monitor>` **TIME_NAVIGATION_PROCESS** = ``3``
 
-Time it took to complete one navigation step, in seconds. This includes navigation map updates as well as agent avoidance calculations. *Lower is better.*
+Tiempo que tardó en completarse un paso de navegación, en segundos. Esto incluye las actualizaciones del mapa de navegación, así como los cálculos de evitación de agentes. *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_MEMORY_STATIC:
 
@@ -111,7 +111,7 @@ Memoria estática actualmente utilizada, en bytes. No está disponible en las ve
 
 :ref:`Monitor<enum_Performance_Monitor>` **MEMORY_STATIC_MAX** = ``5``
 
-Available static memory. Not available in release builds. *Lower is better.*
+Memoria estática disponible. No disponible en las versiones de lanzamiento. *Cuanto menor, mejor.*
 
 .. _class_Performance_constant_MEMORY_MESSAGE_BUFFER_MAX:
 
@@ -151,9 +151,9 @@ Número de nodos actualmente instanciados en el árbol de escenas. Esto también
 
 :ref:`Monitor<enum_Performance_Monitor>` **OBJECT_ORPHAN_NODE_COUNT** = ``10``
 
-Number of orphan nodes, i.e. nodes which are not parented to a node of the scene tree. *Lower is better.*\ 
+Número de nodos huérfanos, es decir, nodos que no están emparentados con un nodo del árbol de la escena. *Cuanto menor, mejor.*\ 
 
-\ **Note:** This is only available in debug mode and will always return ``0`` when used in a project exported in release mode.
+\ **Nota:** Esto solo está disponible en modo de depuración y siempre devolverá ``0`` cuando se use en un proyecto exportado en modo de lanzamiento.
 
 .. _class_Performance_constant_RENDER_TOTAL_OBJECTS_IN_FRAME:
 
@@ -281,7 +281,7 @@ Número de regiones de navegación activas en :ref:`NavigationServer2D<class_Nav
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_AGENT_COUNT** = ``26``
 
-Number of active navigation agents processing avoidance in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Número de agentes de navegación activos procesando evasión en :ref:`NavigationServer2D<class_NavigationServer2D>` y :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_LINK_COUNT:
 
@@ -305,7 +305,7 @@ Número de polígonos de malla de navegación en :ref:`NavigationServer2D<class_
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_EDGE_COUNT** = ``29``
 
-Number of navigation mesh polygon edges in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Número de aristas de polígonos de malla de navegación en :ref:`NavigationServer2D<class_NavigationServer2D>` y :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. _class_Performance_constant_NAVIGATION_EDGE_MERGE_COUNT:
 
@@ -385,7 +385,7 @@ Number of pipeline compilations that were triggered to optimize the current scen
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_ACTIVE_MAPS** = ``39``
 
-Number of active navigation maps in the :ref:`NavigationServer2D<class_NavigationServer2D>`. This also includes the empty default navigation maps created by :ref:`World2D<class_World2D>` instances.
+Número de mapas de navegación activos en el :ref:`NavigationServer2D<class_NavigationServer2D>`. Esto también incluye los mapas de navegación predeterminados vacíos creados por instancias de :ref:`World2D<class_World2D>`.
 
 .. _class_Performance_constant_NAVIGATION_2D_REGION_COUNT:
 
@@ -465,7 +465,7 @@ Número de obstáculos de navegación activos en el :ref:`NavigationServer2D<cla
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_ACTIVE_MAPS** = ``49``
 
-Number of active navigation maps in the :ref:`NavigationServer3D<class_NavigationServer3D>`. This also includes the empty default navigation maps created by :ref:`World3D<class_World3D>` instances.
+Número de mapas de navegación activos en el :ref:`NavigationServer3D<class_NavigationServer3D>`. Esto también incluye los mapas de navegación predeterminados vacíos creados por instancias de :ref:`World3D<class_World3D>`.
 
 .. _class_Performance_constant_NAVIGATION_3D_REGION_COUNT:
 
@@ -571,7 +571,7 @@ La salida del monitor tiene el formato de un valor entero.
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_MEMORY** = ``1``
 
-Monitor output is formatted as computer memory. Submitted values should represent a number of bytes.
+La salida del monitor está formateada como memoria de ordenador. Los valores enviados deben representar un número de bytes.
 
 .. _class_Performance_constant_MONITOR_TYPE_TIME:
 
@@ -579,7 +579,7 @@ Monitor output is formatted as computer memory. Submitted values should represen
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_TIME** = ``2``
 
-Monitor output is formatted as time in milliseconds. Submitted values should represent a time in seconds (not milliseconds).
+La salida del monitor está formateada como tiempo en milisegundos. Los valores enviados deben representar un tiempo en segundos (no milisegundos).
 
 .. _class_Performance_constant_MONITOR_TYPE_PERCENTAGE:
 
@@ -587,7 +587,7 @@ Monitor output is formatted as time in milliseconds. Submitted values should rep
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_PERCENTAGE** = ``3``
 
-Monitor output is formatted as a percentage. Submitted values should represent a fractional value rather than the percentage directly, e.g. ``0.5`` for ``50.00%``.
+La salida del monitor está formateada como un porcentaje. Los valores enviados deben representar un valor fraccional en lugar del porcentaje directamente, p. ej. ``0.5`` para ``50.00%``.
 
 .. rst-class:: classref-section-separator
 
@@ -672,7 +672,7 @@ Callables are called with arguments supplied in argument array.
 
 :ref:`Variant<class_Variant>` **get_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_get_custom_monitor>`
 
-Returns the value of custom monitor with given ``id``. The callable is called to get the value of custom monitor. See also :ref:`has_custom_monitor()<class_Performance_method_has_custom_monitor>`. Prints an error if the given ``id`` is absent.
+Devuelve el valor del monitor personalizado con el ``id`` dado. Se llama al invocable para obtener el valor del monitor personalizado. Véase también :ref:`has_custom_monitor()<class_Performance_method_has_custom_monitor>`. Imprime un error si el ``id`` dado está ausente.
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ Returns the value of custom monitor with given ``id``. The callable is called to
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **get_custom_monitor_names**\ (\ ) :ref:`🔗<class_Performance_method_get_custom_monitor_names>`
 
-Returns the names of active custom monitors in an :ref:`Array<class_Array>`.
+Devuelve los nombres de los monitores personalizados activos en un :ref:`Array<class_Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -696,7 +696,7 @@ Returns the names of active custom monitors in an :ref:`Array<class_Array>`.
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_custom_monitor_types**\ (\ ) :ref:`🔗<class_Performance_method_get_custom_monitor_types>`
 
-Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active custom monitors in an :ref:`Array<class_Array>`.
+Devuelve los valores :ref:`MonitorType<enum_Performance_MonitorType>` de los monitores personalizados activos en un :ref:`Array<class_Array>`.
 
 .. rst-class:: classref-item-separator
 
@@ -708,22 +708,22 @@ Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active cu
 
 :ref:`float<class_float>` **get_monitor**\ (\ monitor\: :ref:`Monitor<enum_Performance_Monitor>`\ ) |const| :ref:`🔗<class_Performance_method_get_monitor>`
 
-Returns the value of one of the available built-in monitors. You should provide one of the :ref:`Monitor<enum_Performance_Monitor>` constants as the argument, like this:
+Devuelve el valor de uno de los monitores integrados disponibles. Se debe proporcionar una de los constantes :ref:`Monitor<enum_Performance_Monitor>` como argumento, de la siguiente manera:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(Performance.get_monitor(Performance.TIME_FPS)) # Prints the FPS to the console.
+    print(Performance.get_monitor(Performance.TIME_FPS)) # Imprime los FPS en la consola.
 
  .. code-tab:: csharp
 
-    GD.Print(Performance.GetMonitor(Performance.Monitor.TimeFps)); // Prints the FPS to the console.
+    GD.Print(Performance.GetMonitor(Performance.Monitor.TimeFps)); // Imprime los FPS en la consola.
 
 
 
-See :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>` to query custom performance monitors' values.
+Véase :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>` para obtener los valores de los monitores de rendimiento personalizados.
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ See :ref:`get_custom_monitor()<class_Performance_method_get_custom_monitor>` to 
 
 :ref:`int<class_int>` **get_monitor_modification_time**\ (\ ) :ref:`🔗<class_Performance_method_get_monitor_modification_time>`
 
-Returns the last tick in which custom monitor was added/removed (in microseconds since the engine started). This is set to :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>` when the monitor is updated.
+Devuelve el último tick en el que se añadió/eliminó el monitor personalizado (en microsegundos desde que se inició el motor). Esto se establece en :ref:`Time.get_ticks_usec()<class_Time_method_get_ticks_usec>` cuando el monitor se actualiza.
 
 .. rst-class:: classref-item-separator
 
@@ -747,7 +747,7 @@ Returns the last tick in which custom monitor was added/removed (in microseconds
 
 :ref:`bool<class_bool>` **has_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_has_custom_monitor>`
 
-Returns ``true`` if custom monitor with the given ``id`` is present, ``false`` otherwise.
+Devuelve ``true`` si el monitor personalizado con el ``id`` dado está presente, ``false`` en caso contrario.
 
 .. rst-class:: classref-item-separator
 
@@ -759,7 +759,7 @@ Returns ``true`` if custom monitor with the given ``id`` is present, ``false`` o
 
 |void| **remove_custom_monitor**\ (\ id\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Performance_method_remove_custom_monitor>`
 
-Removes the custom monitor with given ``id``. Prints an error if the given ``id`` is already absent.
+Elimina el monitor personalizado con el ``id`` dado. Imprime un error si el ``id`` dado ya está ausente.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

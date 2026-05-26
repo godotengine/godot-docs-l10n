@@ -470,7 +470,7 @@ Devuelve la :ref:`Texture2D<class_Texture2D>` personalizada derecha (salida) de 
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_left>`
 
-Returns the left (input) metadata of the slot with the given ``slot_index``.
+Devuelve los metadatos izquierdos (entrada) de la ranura con el ``slot_index`` dado.
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Returns the left (input) metadata of the slot with the given ``slot_index``.
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_right>`
 
-Returns the right (output) metadata of the slot with the given ``slot_index``.
+Devuelve los metadatos derechos (salida) de la ranura con el ``slot_index`` dado.
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ Activa o desactiva el lado derecho (salida) de la ranura con el ``slot_index`` d
 
 |void| **set_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_left>`
 
-Sets the custom metadata for the left (input) side of the slot with the given ``slot_index`` to ``value``.
+Establece los metadatos personalizados para el lado izquierdo (entrada) de la ranura con el ``slot_index`` dado a ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Sets the custom metadata for the left (input) side of the slot with the given ``
 
 |void| **set_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_right>`
 
-Sets the custom metadata for the right (output) side of the slot with the given ``slot_index`` to ``value``.
+Establece los metadatos personalizados para el lado derecho (salida) de la ranura con el ``slot_index`` dado a ``value``.
 
 .. rst-class:: classref-item-separator
 

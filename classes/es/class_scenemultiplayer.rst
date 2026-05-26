@@ -277,7 +277,7 @@ Descripciones de Métodos
 
 |void| **clear**\ (\ ) :ref:`🔗<class_SceneMultiplayer_method_clear>`
 
-Clears the current SceneMultiplayer network state (you shouldn't call this unless you know what you are doing).
+Limpia el estado de red actual de **SceneMultiplayer** (no deberías llamar a esto a menos que sepas exactamente lo que estás haciendo).
 
 .. rst-class:: classref-item-separator
 

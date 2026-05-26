@@ -96,9 +96,9 @@ El color con el que se dibujará el carácter.
 - |void| **set_elapsed_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_elapsed_time**\ (\ )
 
-The time elapsed since the :ref:`RichTextLabel<class_RichTextLabel>` was added to the scene tree (in seconds). Time stops when the :ref:`RichTextLabel<class_RichTextLabel>` is paused (see :ref:`Node.process_mode<class_Node_property_process_mode>`). Resets when the text in the :ref:`RichTextLabel<class_RichTextLabel>` is changed.
+El tiempo transcurrido desde que el :ref:`RichTextLabel<class_RichTextLabel>` fue añadido al árbol de escenas (en segundos). El tiempo se detiene cuando el :ref:`RichTextLabel<class_RichTextLabel>` está en pausa (véase :ref:`Node.process_mode<class_Node_property_process_mode>`). Se reinicia cuando cambia el texto en el :ref:`RichTextLabel<class_RichTextLabel>`.
 
-\ **Note:** Time still passes while the :ref:`RichTextLabel<class_RichTextLabel>` is hidden.
+\ **Nota:** El tiempo sigue pasando mientras el :ref:`RichTextLabel<class_RichTextLabel>` está oculto.
 
 .. rst-class:: classref-item-separator
 

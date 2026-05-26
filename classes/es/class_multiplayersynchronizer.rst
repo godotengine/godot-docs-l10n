@@ -323,7 +323,7 @@ Sets the visibility of ``peer`` to ``visible``. If ``peer`` is ``0``, the value 
 
 |void| **update_visibility**\ (\ for_peer\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_update_visibility>`
 
-Updates the visibility of ``for_peer`` according to visibility filters. If ``for_peer`` is ``0`` (the default), all peers' visibilties are updated.
+Actualiza la visibilidad de ``for_peer`` de acuerdo con los filtros de visibilidad. Si ``for_peer`` es ``0`` (valor predeterminado), se actualiza la visibilidad de todos los peers.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

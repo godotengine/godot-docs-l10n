@@ -163,7 +163,7 @@ El sesgo de LOD de mipmap a utilizar. Los valores positivos harán que el sample
 - |void| **set_mag_filter**\ (\ value\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ )
 - :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **get_mag_filter**\ (\ )
 
-The sampler's magnification filter. It is the filtering method used when sampling texels that appear bigger than on-screen pixels.
+El filtro de magnificación del muestreador. Es el método de filtrado utilizado al muestrear texeles que aparecen más grandes que los píxeles en pantalla.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ The sampler's magnification filter. It is the filtering method used when samplin
 - |void| **set_max_lod**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_lod**\ (\ )
 
-The maximum mipmap LOD bias to display (lowest resolution). Only effective if the sampler has mipmaps available.
+El sesgo LOD de mipmap máximo a mostrar (la resolución más baja). Solo es efectivo si el muestreador tiene mipmaps disponibles.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ The maximum mipmap LOD bias to display (lowest resolution). Only effective if th
 - |void| **set_min_filter**\ (\ value\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ )
 - :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **get_min_filter**\ (\ )
 
-The sampler's minification filter. It is the filtering method used when sampling texels that appear smaller than on-screen pixels.
+El filtro de minificación del muestreador. Es el método de filtrado utilizado al muestrear texeles que aparecen más pequeños que los píxeles en pantalla.
 
 .. rst-class:: classref-item-separator
 
@@ -214,7 +214,7 @@ The sampler's minification filter. It is the filtering method used when sampling
 - |void| **set_min_lod**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min_lod**\ (\ )
 
-The minimum mipmap LOD bias to display (highest resolution). Only effective if the sampler has mipmaps available.
+El sesgo LOD de mipmap mínimo a mostrar (la resolución más alta). Solo es efectivo si el muestreador tiene mipmaps disponibles.
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ The minimum mipmap LOD bias to display (highest resolution). Only effective if t
 - |void| **set_mip_filter**\ (\ value\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ )
 - :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>` **get_mip_filter**\ (\ )
 
-The filtering method to use for mipmaps.
+El método de filtrado a usar para los mipmaps.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ The filtering method to use for mipmaps.
 - |void| **set_repeat_u**\ (\ value\: :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>`\ )
 - :ref:`SamplerRepeatMode<enum_RenderingDevice_SamplerRepeatMode>` **get_repeat_u**\ (\ )
 
-The repeat mode to use along the U axis of UV coordinates. This affects the returned values if sampling outside the UV bounds.
+El modo de repetición a usar a lo largo del eje U de las coordenadas UV. Esto afecta los valores devueltos si se muestrea fuera de los límites UV.
 
 .. rst-class:: classref-item-separator
 

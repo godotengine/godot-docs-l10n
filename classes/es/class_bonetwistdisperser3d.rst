@@ -7,18 +7,18 @@ BoneTwistDisperser3D
 
 **Hereda:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node that propagates and disperses the child bone's twist to the parent bones.
+Un nodo que propaga y dispersa la torsión del hueso hijo hacia los huesos padres.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+Este **BoneTwistDisperser3D** permite una interpolación de torsión suave entre múltiples huesos al dispersar la torsión del hueso final a los padres. Esto solo cambia la torsión sin cambiar la posición global de cada articulación.
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+Esto es útil para torcer huesos suavemente en combinación con :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` e IK.
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **Nota:** Si una torsión extraída es mayor de 180 grados, se produce un volteo. Esto es similar a :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -125,7 +125,7 @@ enum **DisperseMode**: :ref:`🔗<enum_BoneTwistDisperser3D_DisperseMode>`
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_EVEN** = ``0``
 
-Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, ensuring all weights are equal. For example, with five joints, the amounts would be ``0.2``, ``0.4``, ``0.6``, ``0.8``, and ``1.0`` starting from the root bone.
+Asigne cantidades de manera que aumenten monótonamente de ``0.0`` a ``1.0``, asegurando que todos los pesos sean iguales. Por ejemplo, con cinco articulaciones, las cantidades serían ``0.2``, ``0.4``, ``0.6``, ``0.8`` y ``1.0`` comenzando desde el hueso raíz.
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED:
 
@@ -133,7 +133,7 @@ Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, ensu
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_WEIGHTED** = ``1``
 
-Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, based on the length of the bones between joint segments. See also :ref:`set_weight_position()<class_BoneTwistDisperser3D_method_set_weight_position>`.
+Asigne cantidades de modo que aumenten monótonamente de ``0.0`` a ``1.0``, en función de la longitud de los huesos entre los segmentos articulares. Véase también :ref:`set_weight_position()<class_BoneTwistDisperser3D_method_set_weight_position>`.
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM:
 
@@ -141,9 +141,9 @@ Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, base
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_CUSTOM** = ``2``
 
-You can assign arbitrary amounts to the joint list. See also :ref:`set_joint_twist_amount()<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`.
+Puedes asignar cantidades arbitrarias a la lista de articulaciones. Véase también :ref:`set_joint_twist_amount()<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`.
 
-When :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``false``, a child of the reference bone exists solely to determine the twist axis, so its custom amount has absolutely no effect at all.
+Cuando :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` es ``false``, un hijo del hueso de referencia existe únicamente para determinar el eje de torsión, por lo que su cantidad personalizada no tiene absolutamente ningún efecto.
 
 .. rst-class:: classref-section-separator
 
@@ -213,7 +213,7 @@ Limpia todos los ajustes.
 
 :ref:`Curve<class_Curve>` **get_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_damping_curve>`
 
-Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Devuelve la curva de amortiguación cuando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` es :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperse
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **get_disperse_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_disperse_mode>`
 
-Returns whether to use automatic amount assignment or to allow manual assignment.
+Devuelve si se debe usar la asignación automática de importes o permitir la asignación manual.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Devuelve el número de articulaciones de la lista de articulaciones de la cadena
 
 :ref:`float<class_float>` **get_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_twist_amount>`
 
-Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Devuelve la cantidad de torsión en ``joint`` en la lista de articulaciones de la cadena de huesos cuando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` es :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns the rotation to an arbitrary state before twisting for the current bone 
 
 :ref:`float<class_float>` **get_weight_position**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_weight_position>`
 
-Returns the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+Devuelve la posición en la que dividir el segmento entre articulaciones para la asignación de peso cuando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` es :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Returns ``true`` if extracting the twist amount from the difference between the 
 
 |void| **set_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_damping_curve>`
 
-Sets the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Fija la curva de amortiguación cuando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` es :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ Sets the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D
 
 |void| **set_disperse_mode**\ (\ index\: :ref:`int<class_int>`, disperse_mode\: :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_disperse_mode>`
 
-Sets whether to use automatic amount assignment or to allow manual assignment.
+Establece si se debe utilizar la asignación automática de importes o permitir la asignación manual.
 
 .. rst-class:: classref-item-separator
 
@@ -483,9 +483,9 @@ Sets the end bone name of the bone chain.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Si ``enabled`` es ``true``, el hueso final se extiende para tener una cola.
 
-If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` becomes a parent of the end bone and it uses the vector to the end bone as a twist axis.
+Si ``enabled`` es ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser3D_method_get_reference_bone>` se convierte en padre del hueso final y utiliza el vector hacia el hueso final como eje de torsión.
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ If ``enabled`` is ``false``, :ref:`get_reference_bone()<class_BoneTwistDisperser
 
 |void| **set_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, twist_amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`
 
-Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+Establece la cantidad de torsión en ``joint`` en la lista de articulaciones de la cadena de huesos cuando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` es :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -533,9 +533,9 @@ Establece el nombre del hueso raíz de la cadena de huesos.
 
 |void| **set_twist_from**\ (\ index\: :ref:`int<class_int>`, from\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_twist_from>`
 
-Sets the rotation to an arbitrary state before twisting for the current bone pose to extract the twist when :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` is ``false``.
+Establece la rotación a un estado arbitrario antes de girar para la pose ósea actual para extraer el giro cuando :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` es ``false``.
 
-In other words, by calling :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>` by :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` of a specific :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, you can extract only the twists generated by modifiers processed after that but before this **BoneTwistDisperser3D**.
+En otras palabras, al llamar a :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>` por :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` de un :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` específico, puede extraer solo los giros generados por los modificadores procesados después de eso pero antes de este **BoneTwistDisperser3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -547,9 +547,9 @@ In other words, by calling :ref:`set_twist_from()<class_BoneTwistDisperser3D_met
 
 |void| **set_twist_from_rest**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_twist_from_rest>`
 
-If ``enabled`` is ``true``, it extracts the twist amount from the difference between the bone rest and the current bone pose.
+Si ``enabled`` es ``true``, extrae la cantidad de torsión de la diferencia entre el reposo del hueso y la pose actual del hueso.
 
-If ``enabled`` is ``false``, it extracts the twist amount from the difference between :ref:`get_twist_from()<class_BoneTwistDisperser3D_method_get_twist_from>` and the current bone pose. See also :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`.
+Si ``enabled`` es ``false``, extrae la cantidad de torsión de la diferencia entre :ref:`get_twist_from()<class_BoneTwistDisperser3D_method_get_twist_from>` y la pose actual del hueso. Véase también :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`.
 
 .. rst-class:: classref-item-separator
 
@@ -561,9 +561,9 @@ If ``enabled`` is ``false``, it extracts the twist amount from the difference be
 
 |void| **set_weight_position**\ (\ index\: :ref:`int<class_int>`, weight_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_weight_position>`
 
-Sets the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+Establece la posición en la que se divide el segmento entre las articulaciones para la asignación de peso cuando :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` es :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
 
-For example, when ``weight_position`` is ``0.5``, if two bone segments with a length of ``1.0`` exist between three joints, weights are assigned to each joint from root to end at ratios of ``0.5``, ``1.0``, and ``0.5``. Then amounts become ``0.25``, ``0.75``, and ``1.0`` respectively.
+Por ejemplo, cuando ``weight_position`` es ``0.5``, si existen dos segmentos óseos con una longitud de ``1.0`` entre tres articulaciones, se asignan pesos a cada articulación desde la raíz hasta el extremo en proporciones de ``0.5``, ``1.0`` y ``0.5``. Entonces, las cantidades se convierten en ``0.25``, ``0.75`` y ``1.0`` respectivamente.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

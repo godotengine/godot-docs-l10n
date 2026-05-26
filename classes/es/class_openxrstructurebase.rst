@@ -9,14 +9,14 @@ OpenXRStructureBase
 
 **Heredado por:** :ref:`OpenXRSpatialContextPersistenceConfig<class_OpenXRSpatialContextPersistenceConfig>`
 
-Object for storing OpenXR structure data.
+Objeto para almacenar datos de estructuras OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Object for storing OpenXR structure data that is passed when calling into OpenXR APIs.
+Objeto para almacenar datos de estructuras OpenXR que se pasan al llamar a las API de OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -64,7 +64,7 @@ Descripciones de Propiedades
 - |void| **set_next**\ (\ value\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>`\ )
 - :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **get_next**\ (\ )
 
-Setting another structure object here chains these structures together to extend the API functionality. Consult the OpenXR documentation for which structures can be used with a given API call.
+Establecer otro objeto de estructura aquí encadena estas estructuras para extender la funcionalidad de la API. Véase la documentación de OpenXR para saber qué estructuras se pueden usar con una llamada API determinada.
 
 .. rst-class:: classref-section-separator
 

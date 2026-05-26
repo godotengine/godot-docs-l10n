@@ -9,16 +9,16 @@ InputEventWithModifiers
 
 **Heredado por:** :ref:`InputEventGesture<class_InputEventGesture>`, :ref:`InputEventKey<class_InputEventKey>`, :ref:`InputEventMouse<class_InputEventMouse>`
 
-Abstract base class for input events affected by modifier keys like :kbd:`Shift` and :kbd:`Alt`.
+Clase base abstracta para eventos de entrada afectados por teclas modificadoras como :kbd:`Shift` y :kbd:`Alt`.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Stores information about mouse, keyboard, and touch gesture input events. This includes information about which modifier keys are pressed, such as :kbd:`Shift` or :kbd:`Alt`. See :ref:`Node._input()<class_Node_private_method__input>`.
+Almacena información sobre eventos de entrada de ratón, teclado y gestos táctiles. Esto incluye información sobre qué teclas modificadoras están pulsadas, como :kbd:`Shift` o :kbd:`Alt`. Véase :ref:`Node._input()<class_Node_private_method__input>`.
 
-\ **Note:** Modifier keys are considered modifiers only when used in combination with another key. As a result, their corresponding member variables, such as :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>`, will return ``false`` if the key is pressed on its own.
+\ **Nota:** Las teclas modificadoras se consideran modificadoras solo cuando se usan en combinación con otra tecla. Como resultado, sus variables miembro correspondientes, como :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>`, devolverán ``false`` si la tecla se pulsa por sí sola.
 
 .. rst-class:: classref-introduction-group
 
@@ -81,7 +81,7 @@ Descripciones de Propiedades
 - |void| **set_alt_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_alt_pressed**\ (\ )
 
-State of the :kbd:`Alt` modifier.
+Estado del modificador :kbd:`Alt`.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ State of the :kbd:`Alt` modifier.
 - |void| **set_command_or_control_autoremap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_command_or_control_autoremap**\ (\ )
 
-Automatically use :kbd:`Meta` (:kbd:`Cmd`) on macOS and :kbd:`Ctrl` on other platforms. If ``true``, :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>` and :ref:`meta_pressed<class_InputEventWithModifiers_property_meta_pressed>` cannot be set.
+Usa automáticamente :kbd:`Meta` (:kbd:`Cmd`) en macOS y :kbd:`Ctrl` en otras plataformas. Si es ``true``, :ref:`ctrl_pressed<class_InputEventWithModifiers_property_ctrl_pressed>` y :ref:`meta_pressed<class_InputEventWithModifiers_property_meta_pressed>` no se pueden establecer.
 
 .. rst-class:: classref-item-separator
 
@@ -115,7 +115,7 @@ Automatically use :kbd:`Meta` (:kbd:`Cmd`) on macOS and :kbd:`Ctrl` on other pla
 - |void| **set_ctrl_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ctrl_pressed**\ (\ )
 
-State of the :kbd:`Ctrl` modifier.
+Estado del modificador :kbd:`Ctrl`.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ State of the :kbd:`Ctrl` modifier.
 - |void| **set_meta_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_meta_pressed**\ (\ )
 
-State of the :kbd:`Meta` modifier. On Windows and Linux, this represents the Windows key (sometimes called "meta" or "super" on Linux). On macOS, this represents the Command key.
+Estado del modificador :kbd:`Meta`. En Windows y Linux, esto representa la tecla Windows (a veces llamada "meta" o "super" en Linux). En macOS, esto representa la tecla Comando.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ State of the :kbd:`Meta` modifier. On Windows and Linux, this represents the Win
 - |void| **set_shift_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shift_pressed**\ (\ )
 
-State of the :kbd:`Shift` modifier.
+Estado del modificador :kbd:`Shift`.
 
 .. rst-class:: classref-section-separator
 
@@ -166,7 +166,7 @@ Descripciones de Métodos
 
 |bitfield|\[:ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\] **get_modifiers_mask**\ (\ ) |const| :ref:`🔗<class_InputEventWithModifiers_method_get_modifiers_mask>`
 
-Returns the keycode combination of modifier keys.
+Devuelve la combinación de códigos de tecla de las teclas modificadoras.
 
 .. rst-class:: classref-item-separator
 
@@ -178,9 +178,9 @@ Returns the keycode combination of modifier keys.
 
 :ref:`bool<class_bool>` **is_command_or_control_pressed**\ (\ ) |const| :ref:`🔗<class_InputEventWithModifiers_method_is_command_or_control_pressed>`
 
-On macOS, returns ``true`` if :kbd:`Meta` (:kbd:`Cmd`) is pressed.
+En macOS, devuelve ``true`` si :kbd:`Meta` (:kbd:`Cmd`) está pulsada.
 
-On other platforms, returns ``true`` if :kbd:`Ctrl` is pressed.
+En otras plataformas, devuelve ``true`` si :kbd:`Ctrl` está pulsada.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

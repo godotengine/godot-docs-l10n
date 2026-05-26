@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationMicroQrCode
 
 **Hereda:** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for QR code markers.
+Encabezado de configuración para marcadores de código QR.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Configuration header for QR code markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect QR code markers.
+Encabezado de configuración para marcadores de código QR. Pasa esto a :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` para crear un contexto espacial que pueda detectar marcadores de código QR.
 
 .. rst-class:: classref-reftable-group
 
@@ -45,9 +45,9 @@ Descripciones de Métodos
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationMicroQrCode_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+Devuelve los componentes habilitados por esta configuración.
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **Nota:** Solo válido después de que esta configuración se haya utilizado para crear un contexto espacial.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

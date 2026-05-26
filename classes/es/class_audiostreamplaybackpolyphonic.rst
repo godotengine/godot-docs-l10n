@@ -14,7 +14,7 @@ Instancia de reproducción para :ref:`AudioStreamPolyphonic<class_AudioStreamPol
 Descripción
 ----------------------
 
-Playback instance for :ref:`AudioStreamPolyphonic<class_AudioStreamPolyphonic>`. After setting the ``stream`` property of :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, or :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, the playback instance can be obtained by calling :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`, :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` or :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>` methods.
+Instancia de reproducción para :ref:`AudioStreamPolyphonic<class_AudioStreamPolyphonic>`. Después de establecer la propiedad ``stream`` de :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>` o :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, la instancia de reproducción puede obtenerse llamando a los métodos :ref:`AudioStreamPlayer.get_stream_playback()<class_AudioStreamPlayer_method_get_stream_playback>`, :ref:`AudioStreamPlayer2D.get_stream_playback()<class_AudioStreamPlayer2D_method_get_stream_playback>` o :ref:`AudioStreamPlayer3D.get_stream_playback()<class_AudioStreamPlayer3D_method_get_stream_playback>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ Constantes
 
 **INVALID_ID** = ``-1`` :ref:`🔗<class_AudioStreamPlaybackPolyphonic_constant_INVALID_ID>`
 
-Returned by :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>` in case it could not allocate a stream for playback.
+Devuelto por :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>` en caso de que no se pudiera asignar un flujo para la reproducción.
 
 .. rst-class:: classref-section-separator
 
@@ -80,13 +80,13 @@ Returns ``true`` if the stream associated with the given integer ID is still pla
 
 :ref:`int<class_int>` **play_stream**\ (\ stream\: :ref:`AudioStream<class_AudioStream>`, from_offset\: :ref:`float<class_float>` = 0, volume_db\: :ref:`float<class_float>` = 0, pitch_scale\: :ref:`float<class_float>` = 1.0, playback_type\: :ref:`PlaybackType<enum_AudioServer_PlaybackType>` = 0, bus\: :ref:`StringName<class_StringName>` = &"Master"\ ) :ref:`🔗<class_AudioStreamPlaybackPolyphonic_method_play_stream>`
 
-Play an :ref:`AudioStream<class_AudioStream>` at a given offset, volume, pitch scale, playback type, and bus. Playback starts immediately.
+Reproduce un :ref:`AudioStream<class_AudioStream>` con un desplazamiento inicial, volumen, escala de tono, tipo de reproducción y bus determinados. La reproducción comienza de inmediato.
 
-The return value is a unique integer ID that is associated to this playback stream and which can be used to control it.
+El valor devuelto es un ID entero único asociado a esta reproducción, que puede usarse para controlarla.
 
-This ID becomes invalid when the stream ends (if it does not loop), when the **AudioStreamPlaybackPolyphonic** is stopped, or when :ref:`stop_stream()<class_AudioStreamPlaybackPolyphonic_method_stop_stream>` is called.
+Este ID se vuelve inválido cuando el flujo termina (si no está en bucle), cuando se detiene el **AudioStreamPlaybackPolyphonic**, o cuando se llama a :ref:`stop_stream()<class_AudioStreamPlaybackPolyphonic_method_stop_stream>`.
 
-This function returns :ref:`INVALID_ID<class_AudioStreamPlaybackPolyphonic_constant_INVALID_ID>` if the amount of streams currently playing equals :ref:`AudioStreamPolyphonic.polyphony<class_AudioStreamPolyphonic_property_polyphony>`. If you need a higher amount of maximum polyphony, raise this value.
+Esta función devuelve :ref:`INVALID_ID<class_AudioStreamPlaybackPolyphonic_constant_INVALID_ID>` si la cantidad de flujos actualmente en reproducción alcanza :ref:`AudioStreamPolyphonic.polyphony<class_AudioStreamPolyphonic_property_polyphony>`. Si necesitas una mayor polifonía máxima, incrementa este valor.
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ This function returns :ref:`INVALID_ID<class_AudioStreamPlaybackPolyphonic_const
 
 |void| **set_stream_pitch_scale**\ (\ stream\: :ref:`int<class_int>`, pitch_scale\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamPlaybackPolyphonic_method_set_stream_pitch_scale>`
 
-Change the stream pitch scale. The ``stream`` argument is an integer ID returned by :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>`.
+Cambia la escala del tono del flujo. El argumento ``stream`` es un ID entero devuelto por :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>`.
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Change the stream pitch scale. The ``stream`` argument is an integer ID returned
 
 |void| **set_stream_volume**\ (\ stream\: :ref:`int<class_int>`, volume_db\: :ref:`float<class_float>`\ ) :ref:`🔗<class_AudioStreamPlaybackPolyphonic_method_set_stream_volume>`
 
-Change the stream volume (in db). The ``stream`` argument is an integer ID returned by :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>`.
+Cambia el volumen del flujo (en dB). El argumento ``stream`` es un ID entero devuelto por :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>`.
 
 .. rst-class:: classref-item-separator
 
@@ -122,7 +122,7 @@ Change the stream volume (in db). The ``stream`` argument is an integer ID retur
 
 |void| **stop_stream**\ (\ stream\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamPlaybackPolyphonic_method_stop_stream>`
 
-Stop a stream. The ``stream`` argument is an integer ID returned by :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>`, which becomes invalid after calling this function.
+Detiene un flujo. El argumento ``stream`` es un ID entero devuelto por :ref:`play_stream()<class_AudioStreamPlaybackPolyphonic_method_play_stream>`, que se vuelve inválido después de llamar a esta función.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

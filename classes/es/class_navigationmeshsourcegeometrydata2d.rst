@@ -87,7 +87,7 @@ Añade los puntos de contorno de una forma como área obstruida.
 
 |void| **add_projected_obstruction**\ (\ vertices\: :ref:`PackedVector2Array<class_PackedVector2Array>`, carve\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationMeshSourceGeometryData2D_method_add_projected_obstruction>`
 
-Añade una forma de obstrucción proyectada a la geometría de origen. Si ``carve`` es ``true``, la forma esculpida no se verá afectada por desplazamientos adicionales (p. ej., radio del agente) del proceso de horneado de la malla de navegación.
+Añade una forma de obstrucción proyectada a la geometría de origen. Si ``carve`` es ``true``, la forma esculpida no se verá afectada por desplazamientos adicionales (p. ej., radio del agente) del proceso de baking de la malla de navegación.
 
 .. rst-class:: classref-item-separator
 

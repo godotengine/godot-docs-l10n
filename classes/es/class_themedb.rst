@@ -194,7 +194,7 @@ Devuelve una referencia al :ref:`Theme<class_Theme>` predeterminado del motor. E
 
 Devuelve una referencia al :ref:`Theme<class_Theme>` personalizado del proyecto. Este recurso de tema permite sobrescribir el tema predeterminado del motor para cada nodo de control en el proyecto.
 
-Para establecer el tema del proyecto, consulta :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`.
+Para establecer el tema del proyecto, véase :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

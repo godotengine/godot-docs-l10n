@@ -16,7 +16,7 @@ Meta clase para reproducir el audio.
 Descripción
 ----------------------
 
-Can play, loop, pause a scroll through audio. See :ref:`AudioStream<class_AudioStream>` and :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` for usage.
+Puede reproducir, loopear, pausar y desplazarse a través del audio. Véase :ref:`AudioStream<class_AudioStream>` y :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` para su uso.
 
 .. rst-class:: classref-introduction-group
 
@@ -88,7 +88,7 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **_get_loop_count**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStreamPlayback_private_method__get_loop_count>`
 
-Overridable method. Should return how many times this audio stream has looped. Most built-in playbacks always return ``0``.
+Método sobrescribible. Debe devolver cuántas veces se ha repetido este flujo de audio en bucle. La mayoría de las reproducciones integradas siempre devuelven ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Overridable method. Should return the current progress along the audio stream, i
 
 :ref:`bool<class_bool>` **_is_playing**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_AudioStreamPlayback_private_method__is_playing>`
 
-Overridable method. Should return ``true`` if this playback is active and playing its audio stream.
+Método sobrescribible. Debe devolver ``true`` si esta reproducción está activa y reproduciendo su flujo de audio.
 
 .. rst-class:: classref-item-separator
 
@@ -136,9 +136,9 @@ Overridable method. Should return ``true`` if this playback is active and playin
 
 :ref:`int<class_int>` **_mix**\ (\ buffer\: ``AudioFrame*``, rate_scale\: :ref:`float<class_float>`, frames\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlayback_private_method__mix>`
 
-Override this method to customize how the audio stream is mixed. This method is called even if the playback is not active.
+Sobrescribe este método para personalizar cómo se mezcla el flujo de audio. Este método se llama incluso si la reproducción no está activa.
 
-\ **Note:** It is not useful to override this method in GDScript or C#. Only GDExtension can take advantage of it.
+\ **Nota:** No es útil sobrescribir este método en GDScript o C#. Solo GDExtension puede aprovecharlo.
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ Override this method to customize how the audio stream is mixed. This method is 
 
 |void| **_seek**\ (\ position\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__seek>`
 
-Override this method to customize what happens when seeking this audio stream at the given ``position``, such as by calling :ref:`AudioStreamPlayer.seek()<class_AudioStreamPlayer_method_seek>`.
+Sobrescribe este método para personalizar qué sucede al buscar una posición en este flujo de audio en la ``position`` dada, como por ejemplo llamando a :ref:`AudioStreamPlayer.seek()<class_AudioStreamPlayer_method_seek>`.
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +162,7 @@ Override this method to customize what happens when seeking this audio stream at
 
 |void| **_set_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__set_parameter>`
 
-Set the current value of a playback parameter by name (see :ref:`AudioStream._get_parameter_list()<class_AudioStream_private_method__get_parameter_list>`).
+Establece el valor actual de un parámetro de reproducción por su nombre (ver :ref:`AudioStream._get_parameter_list()<class_AudioStream_private_method__get_parameter_list>`).
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ Set the current value of a playback parameter by name (see :ref:`AudioStream._ge
 
 |void| **_start**\ (\ from_pos\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlayback_private_method__start>`
 
-Override this method to customize what happens when the playback starts at the given position, such as by calling :ref:`AudioStreamPlayer.play()<class_AudioStreamPlayer_method_play>`.
+Sobrescribe este método para personalizar lo que ocurre cuando la reproducción comienza en la posición indicada, por ejemplo, al llamar a :ref:`AudioStreamPlayer.play()<class_AudioStreamPlayer_method_play>`.
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +186,7 @@ Override this method to customize what happens when the playback starts at the g
 
 |void| **_stop**\ (\ ) |virtual| |required| :ref:`🔗<class_AudioStreamPlayback_private_method__stop>`
 
-Override this method to customize what happens when the playback is stopped, such as by calling :ref:`AudioStreamPlayer.stop()<class_AudioStreamPlayer_method_stop>`.
+Sobrescriba este método para personalizar lo que sucede cuando se detiene la reproducción, como por ejemplo al llamar a :ref:`AudioStreamPlayer.stop()<class_AudioStreamPlayer_method_stop>`.
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +198,7 @@ Override this method to customize what happens when the playback is stopped, suc
 
 |void| **_tag_used_streams**\ (\ ) |virtual| :ref:`🔗<class_AudioStreamPlayback_private_method__tag_used_streams>`
 
-Overridable method. Called whenever the audio stream is mixed if the playback is active and :ref:`AudioServer.set_enable_tagging_used_audio_streams()<class_AudioServer_method_set_enable_tagging_used_audio_streams>` has been set to ``true``. Editor plugins may use this method to "tag" the current position along the audio stream and display it in a preview.
+Método que se puede sobrescribir. Se llama siempre que se mezcla el flujo de audio si la reproducción está activa y :ref:`AudioServer.set_enable_tagging_used_audio_streams()<class_AudioServer_method_set_enable_tagging_used_audio_streams>` se ha establecido en ``true``. Los complementos del editor pueden usar este método para "marcar" la posición actual a lo largo del flujo de audio y mostrarla en una vista previa.
 
 .. rst-class:: classref-item-separator
 
@@ -260,11 +260,11 @@ Returns ``true`` if the stream is playing.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **mix_audio**\ (\ rate_scale\: :ref:`float<class_float>`, frames\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AudioStreamPlayback_method_mix_audio>`
 
-Mixes up to ``frames`` of audio from the stream from the current position, at a rate of ``rate_scale``, advancing the stream.
+Mezcla hasta ``frames`` de audio del flujo desde la posición actual, a una velocidad de ``rate_scale``, avanzando el flujo.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` where each element holds the left and right channel volume levels of each frame.
+Devuelve un :ref:`PackedVector2Array<class_PackedVector2Array>` donde cada elemento contiene los niveles de volumen de los canales izquierdo y derecho de cada frame.
 
-\ **Note:** Can return fewer frames than requested, make sure to use the size of the return value.
+\ **Nota:** Puede devolver menos frames de los solicitados; asegúrate de usar el tamaño del valor devuelto.
 
 .. rst-class:: classref-item-separator
 

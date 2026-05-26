@@ -102,11 +102,11 @@ ShaderMaterial
 
 |void| **set_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ShaderMaterial_method_set_shader_parameter>`
 
-Changes the value set for this material of a uniform in the shader.
+Изменяет значение, установленное для этого материала униформы в шейдере.
 
-\ **Note:** ``param`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
+\ **Примечание:** ``param`` чувствителен к регистру и должен точно соответствовать имени униформы в коде (а не имени, написанному с заглавной буквы в инспекторе).
 
-\ **Note:** Changes to the shader uniform will be effective on all instances using this **ShaderMaterial**. To prevent this, use per-instance uniforms with :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` or duplicate the **ShaderMaterial** resource using :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Per-instance uniforms allow for better shader reuse and are therefore faster, so they should be preferred over duplicating the **ShaderMaterial** when possible.
+\ **Примечание:** Изменения в униформе шейдера будут действовать на всех экземплярах, использующих этот **ShaderMaterial**. Чтобы этого избежать, используйте униформы для каждого экземпляра с помощью :ref:`CanvasItem.set_instance_shader_parameter()<class_CanvasItem_method_set_instance_shader_parameter>`, :ref:`GeometryInstance3D.set_instance_shader_parameter()<class_GeometryInstance3D_method_set_instance_shader_parameter>` или дублируйте ресурс **ShaderMaterial** с помощью :ref:`Resource.duplicate()<class_Resource_method_duplicate>`. Униформы для каждого экземпляра обеспечивают лучшее повторное использование шейдера и, следовательно, работают быстрее, поэтому их следует предпочитать дублированию **ShaderMaterial**, когда это возможно.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

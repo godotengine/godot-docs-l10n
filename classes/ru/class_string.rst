@@ -666,32 +666,32 @@ String
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_String_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+Возвращает индекс **первого** вхождения ``what`` в этой строке или ``-1``, если таких вхождений нет. Начало поиска можно указать с помощью ``from``, поиск продолжается до конца строки.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("Team".find("I")) # Выводит -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Potato".find("t"))    # Выводит 2
+    print("Potato".find("t", 3)) # Выводит 4
+    print("Potato".find("t", 5)) # Выводит -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("Team".Find("I")); // Выводит -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Potato".Find("t"));    // Выводит 2
+    GD.Print("Potato".Find("t", 3)); // Выводит 4
+    GD.Print("Potato".Find("t", 5)); // Выводит -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_String_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **Примечание:** Если вам нужно просто узнать, содержит ли строка ``what``, используйте :ref:`contains()<class_String_method_contains>`. В GDScript вы также можете использовать оператор ``in``.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Примечание:** Отрицательное значение ``from`` преобразуется в начальный индекс путем отсчета назад от последнего возможного индекса с достаточным пространством для нахождения ``what``.
 
 .. rst-class:: classref-item-separator
 
@@ -839,13 +839,13 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`String<class_String>` **get_slice**\ (\ delimiter\: :ref:`String<class_String>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slice>`
 
-Splits the string using a ``delimiter`` and returns the substring at index ``slice``. Returns the original string if ``delimiter`` does not occur in the string. Returns an empty string if the ``slice`` does not exist.
+Разделяет строку с помощью ``delimiter`` и возвращает подстроку по индексу ``slice``. Возвращает исходную строку, если ``delimiter`` отсутствует в строке. Возвращает пустую строку, если ``slice`` не существует.
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+Это быстрее, чем :ref:`split()<class_String_method_split>`, если вам нужна только одна или две подстроки.
 
 ::
 
-    print("i/am/example/hi".get_slice("/", 2)) # Prints "example"
+    print("i/am/example/hi".get_slice("/", 2)) # Выводит "example"
 
 .. rst-class:: classref-item-separator
 
@@ -857,14 +857,14 @@ This is faster than :ref:`split()<class_String_method_split>`, if you only need 
 
 :ref:`int<class_int>` **get_slice_count**\ (\ delimiter\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_get_slice_count>`
 
-Returns the total number of slices when the string is split with the given ``delimiter`` (see :ref:`split()<class_String_method_split>`).
+Возвращает общее количество фрагментов, когда строка разделена с помощью заданного ``delimiter`` (см. :ref:`split()<class_String_method_split>`).
 
-Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slice.
+Используйте :ref:`get_slice()<class_String_method_get_slice>` для извлечения конкретного фрагмента.
 
 ::
 
-    print("i/am/example/string".get_slice_count("/")) # Prints '4'.
-    print("i am example string".get_slice_count("/")) # Prints '1'.
+    print("i/am/example/string".get_slice_count("/")) # Выводит '4'.
+    print("i am example string".get_slice_count("/")) # Выводит '1'.
 
 .. rst-class:: classref-item-separator
 
@@ -876,11 +876,11 @@ Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slic
 
 :ref:`String<class_String>` **get_slicec**\ (\ delimiter\: :ref:`int<class_int>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slicec>`
 
-Splits the string using a Unicode character with code ``delimiter`` and returns the substring at index ``slice``. Returns an empty string if the ``slice`` does not exist.
+Разделяет строку с помощью символа Юникода с кодом ``delimiter`` и возвращает подстроку по индексу ``slice``. Возвращает пустую строку, если ``slice`` не существует.
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+Это быстрее, чем :ref:`split()<class_String_method_split>`, если вам нужна только одна или две подстроки.
 
-This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
+Это версия метода :ref:`get_slice()<class_String_method_get_slice>` для Юникода.
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_String_method_remove_char>`.
+Удаляет все вхождения символов из ``chars``. См. также :ref:`remove_char()<class_String_method_remove_char>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1667,11 +1667,11 @@ Removes all occurrences of the characters in ``chars``. See also :ref:`remove_ch
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_String_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_String_method_find>`.
+Возвращает индекс **последнего** вхождения ``what`` в этой строке или ``-1``, если таких вхождений нет. Начало поиска можно указать с помощью ``from``, продолжая поиск до начала строки. Этот метод является обратным методу :ref:`find()<class_String_method_find>`.
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **Примечание:** Отрицательное значение ``from`` преобразуется в начальный индекс путем обратного отсчета от последнего возможного индекса с достаточным пространством для нахождения ``what``.
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **Примечание:** Значение ``from``, превышающее последний возможный индекс с достаточным пространством для нахождения ``what``, считается выходящим за пределы допустимого диапазона и возвращает ``-1``.
 
 .. rst-class:: classref-item-separator
 

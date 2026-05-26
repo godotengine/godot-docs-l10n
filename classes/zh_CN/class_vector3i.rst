@@ -721,11 +721,11 @@ Z 轴的枚举值。由 :ref:`max_axis_index()<class_Vector3i_method_max_axis_in
 
 :ref:`Vector3<class_Vector3>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector3i_operator_div_float>`
 
-Divides each component of the **Vector3i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector3<class_Vector3>`.
+将该 **Vector3i** 的每个分量除以给定的 :ref:`float<class_float>`\ 。返回的是 :ref:`Vector3<class_Vector3>`\ 。
 
 ::
 
-    print(Vector3i(1, 2, 3) / 2.5) # Prints (0.4, 0.8, 1.2)
+    print(Vector3i(1, 2, 3) / 2.5) # 输出 (0.4, 0.8, 1.2)
 
 .. rst-class:: classref-item-separator
 

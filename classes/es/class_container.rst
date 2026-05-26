@@ -16,7 +16,7 @@ Base class for all GUI containers.
 Descripción
 ----------------------
 
-Base class for all GUI containers. A **Container** automatically arranges its child controls in a certain way. This class can be inherited to make custom container types.
+Clase base para todos los contenedores de GUI. Un **Container** organiza automáticamente sus controles hijos de una manera determinada. Esta clase puede heredarse para crear tipos de contenedores personalizados.
 
 .. rst-class:: classref-introduction-group
 
@@ -99,7 +99,7 @@ Constantes
 
 **NOTIFICATION_PRE_SORT_CHILDREN** = ``50`` :ref:`🔗<class_Container_constant_NOTIFICATION_PRE_SORT_CHILDREN>`
 
-Notification just before children are going to be sorted, in case there's something to process beforehand.
+Notificación enviada justo antes de que los hijos sean ordenados, en caso de que haya algo que procesar de antemano.
 
 .. _class_Container_constant_NOTIFICATION_SORT_CHILDREN:
 
@@ -124,9 +124,9 @@ Descripciones de Métodos
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_allowed_size_flags_horizontal**\ (\ ) |virtual| |const| :ref:`🔗<class_Container_private_method__get_allowed_size_flags_horizontal>`
 
-Implement to return a list of allowed horizontal :ref:`SizeFlags<enum_Control_SizeFlags>` for child nodes. This doesn't technically prevent the usages of any other size flags, if your implementation requires that. This only limits the options available to the user in the Inspector dock.
+Implementa este método para devolver una lista de los indicadores de tamaño (:ref:`SizeFlags<enum_Control_SizeFlags>`) horizontales permitidos para los nodos hijos. Técnicamente, esto no impide el uso de otros indicadores de tamaño si tu implementación lo requiere; solo limita las opciones disponibles para el usuario en el panel del Inspector.
 
-\ **Note:** Having no size flags is equal to having :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. As such, this value is always implicitly allowed.
+\ **Nota:** No tener ningún indicador de tamaño equivale a tener :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. Por lo tanto, este valor siempre está permitido de forma implícita.
 
 .. rst-class:: classref-item-separator
 
@@ -138,9 +138,9 @@ Implement to return a list of allowed horizontal :ref:`SizeFlags<enum_Control_Si
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_get_allowed_size_flags_vertical**\ (\ ) |virtual| |const| :ref:`🔗<class_Container_private_method__get_allowed_size_flags_vertical>`
 
-Implement to return a list of allowed vertical :ref:`SizeFlags<enum_Control_SizeFlags>` for child nodes. This doesn't technically prevent the usages of any other size flags, if your implementation requires that. This only limits the options available to the user in the Inspector dock.
+Implementa este método para devolver una lista de los indicadores de tamaño (:ref:`SizeFlags<enum_Control_SizeFlags>`) verticales permitidos para los nodos hijos. Técnicamente, esto no impide el uso de otros indicadores de tamaño si tu implementación lo requiere; solo limita las opciones disponibles para el usuario en el panel del Inspector.
 
-\ **Note:** Having no size flags is equal to having :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. As such, this value is always implicitly allowed.
+\ **Nota:** No tener ningún indicador de tamaño equivale a tener :ref:`Control.SIZE_SHRINK_BEGIN<class_Control_constant_SIZE_SHRINK_BEGIN>`. Por lo tanto, este valor siempre está permitido de forma implícita.
 
 .. rst-class:: classref-item-separator
 

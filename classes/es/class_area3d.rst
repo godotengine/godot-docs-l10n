@@ -17,13 +17,13 @@ Una región del espacio 3D que detecta otros :ref:`CollisionObject3D<class_Colli
 Descripción
 ----------------------
 
-**Area3D** is a region of 3D space defined by one or multiple :ref:`CollisionShape3D<class_CollisionShape3D>` or :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` child nodes. It detects when other :ref:`CollisionObject3D<class_CollisionObject3D>`\ s enter or exit it, and it also keeps track of which collision objects haven't exited it yet (i.e. which one are overlapping it).
+**Area3D** es una región del espacio 3D definida por uno o varios nodos hijo :ref:`CollisionShape3D<class_CollisionShape3D>` o :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`. Detecta cuándo otros :ref:`CollisionObject3D<class_CollisionObject3D>` entran o salen de ella, y también realiza un seguimiento de qué objetos de colisión aún no han salido (es decir, cuáles la están superponiendo).
 
-This node can also locally alter or override physics parameters (gravity, damping) and route audio to custom audio buses.
+Este nodo también puede alterar o sobrescribir parámetros físicos (gravedad, amortiguación) y enrutar el audio a buses de audio personalizados.
 
-\ **Note:** Areas and bodies created with :ref:`PhysicsServer3D<class_PhysicsServer3D>` might not interact as expected with **Area3D**\ s, and might not emit signals or track objects correctly.
+\ **Nota:** Las áreas y los cuerpos creados con :ref:`PhysicsServer3D<class_PhysicsServer3D>` podrían no interactuar como se espera con los **Area3D**, y podrían no emitir señales ni realizar el seguimiento de objetos correctamente.
 
-\ **Warning:** Using a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` inside a :ref:`CollisionShape3D<class_CollisionShape3D>` child of this node (created e.g. by using the **Create Trimesh Collision Sibling** option in the **Mesh** menu that appears when selecting a :ref:`MeshInstance3D<class_MeshInstance3D>` node) may give unexpected results, since this collision shape is hollow. If this is not desired, it has to be split into multiple :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`\ s or primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`, or in some cases it may be replaceable by a :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`.
+\ **Advertencia:** Usar un :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` dentro de un hijo :ref:`CollisionShape3D<class_CollisionShape3D>` de este nodo (por ejemplo, creado usando la opción **Crear Malla de Contorno...** en el menú **Malla** que aparece al seleccionar un nodo :ref:`MeshInstance3D<class_MeshInstance3D>`) puede dar resultados inesperados, ya que esta forma de colisión es hueca. Si esto no es lo deseado, debe dividirse en múltiples :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` o en formas primitivas como :ref:`BoxShape3D<class_BoxShape3D>`, o en algunos casos puede reemplazarse por un :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -34,7 +34,7 @@ Tutoriales
 
 - `Demo de Plataformas en 3D <https://godotengine.org/asset-library/asset/2748>`__
 
-- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
+- `Demostración GUI en el Viewport 3D <https://godotengine.org/asset-library/asset/2807>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -151,11 +151,11 @@ Emitida cuando el ``area`` recibido sale de esta área. Requiere que :ref:`monit
 
 **area_shape_entered**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area3D<class_Area3D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_area_shape_entered>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``area`` enters a shape of this area. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+Emitida cuando una forma (:ref:`Shape2D<class_Shape2D>`) del área externa (``area``) entra en una forma de ésta área. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
 
-\ ``local_shape_index`` and ``area_shape_index`` contain indices of the interacting shapes from this area and the other area, respectively. ``area_rid`` contains the :ref:`RID<class_RID>` of the other area. These values can be used with the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+Los parámetros ``local_shape_index`` y ``area_shape_index`` contienen los índices de las formas que interactúan de ésta área y del área externa, respectivamente. El parámetro ``area_rid`` contiene el :ref:`RID<class_RID>` del área externa. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **Example:** Get the :ref:`CollisionShape3D<class_CollisionShape3D>` node from the shape index:
+\ **Ejemplo:** Obtener el nodo :ref:`CollisionShape2D<class_CollisionShape2D>` a partir del índice de la forma:
 
 
 .. tabs::
@@ -180,7 +180,7 @@ Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``area`` enters a s
 
 **area_shape_exited**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area3D<class_Area3D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_area_shape_exited>`
 
-Emitida cuando una :ref:`Shape3D<class_Shape3D>` del ``area`` recibido sale de una forma de esta área. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
+Emitida cuando una :ref:`Shape3D<class_Shape3D>` de la ``area`` recibido sale de una forma de esta área. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
 
 Véase también :ref:`area_shape_entered<class_Area3D_signal_area_shape_entered>`.
 
@@ -218,11 +218,11 @@ Emitida cuando el ``body`` recibido sale de esta área. ``body`` puede ser un :r
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_entered>`
 
-Emitted when a :ref:`Shape3D<class_Shape3D>` of the received ``body`` enters a shape of this area. ``body`` can be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>`. :ref:`GridMap<class_GridMap>`\ s are detected if their :ref:`MeshLibrary<class_MeshLibrary>` has collision shapes configured. Requires :ref:`monitoring<class_Area3D_property_monitoring>` to be set to ``true``.
+Emitida cuando una forma :ref:`Shape3D<class_Shape3D>` del cuerpo recibido ``body`` entra en una forma de ésta área. ``body`` puede ser un :ref:`PhysicsBody3D<class_PhysicsBody3D>` o un :ref:`GridMap<class_GridMap>`. Los :ref:`GridMap<class_GridMap>` se detectan si su :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area3D_property_monitoring>` esté establecido en ``true``.
 
-\ ``local_shape_index`` and ``body_shape_index`` contain indices of the interacting shapes from this area and the interacting body, respectively. ``body_rid`` contains the :ref:`RID<class_RID>` of the body. These values can be used with the :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
+\ ``local_shape_index`` y ``body_shape_index`` contienen los índices de las formas que interactúan de ésta área y del cuerpo externo, respectivamente. ``body_rid`` contiene el :ref:`RID<class_RID>` del cuerpo. Estos valores pueden utilizarse con :ref:`PhysicsServer3D<class_PhysicsServer3D>`.
 
-\ **Example:** Get the :ref:`CollisionShape3D<class_CollisionShape3D>` node from the shape index:
+\ **Ejemplo:** Obtener el nodo :ref:`CollisionShape3D<class_CollisionShape3D>` a partir del índice de la forma:
 
 
 .. tabs::
@@ -272,7 +272,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area3D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **SPACE_OVERRIDE_DISABLED** = ``0``
 
-Esta zona no afecta a la gravedad/amortiguación.
+Esta área no afecta a la gravedad/amortiguación.
 
 .. _class_Area3D_constant_SPACE_OVERRIDE_COMBINE:
 
@@ -326,9 +326,9 @@ Descripciones de Propiedades
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-The rate at which objects stop spinning in this area. Represents the angular velocity lost per second.
+La velocidad a la que los objetos dejan de girar en esta área. Representa la velocidad angular perdida por segundo.
 
-See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
+Véase :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` para obtener más detalles sobre la amortiguación.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-Override mode for angular damping calculations within this area.
+Modo de sobre-escritura para los cálculos de amortiguación angular dentro de esta área.
 
 .. rst-class:: classref-item-separator
 
@@ -362,7 +362,7 @@ Override mode for angular damping calculations within this area.
 - |void| **set_audio_bus_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_audio_bus_name**\ (\ )
 
-El nombre del bus de audio de la zona.
+El nombre del bus de audio del área.
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +396,7 @@ Si es ``true``, el área del bus de audio sobrescribe el bus de audio por defect
 - |void| **set_gravity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity**\ (\ )
 
-The area's gravity intensity (in meters per second squared). This value multiplies the gravity direction. This is useful to alter the force of gravity without altering its direction.
+La intensidad de la gravedad en la zona (en metros por segundo al cuadrado). Este valor multiplica la dirección de la gravedad. Esto es útil para modificar la fuerza de la gravedad sin alterar su dirección.
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ El vector de gravedad del área (no normalizado).
 - |void| **set_gravity_is_point**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_gravity_a_point**\ (\ )
 
-If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_center<class_Area3D_property_gravity_point_center>`). See also :ref:`gravity_space_override<class_Area3D_property_gravity_space_override>`.
+Si es ``true``, la gravedad se calcula a partir de un punto (establecido mediante :ref:`gravity_point_center<class_Area3D_property_gravity_point_center>`). Véase también :ref:`gravity_space_override<class_Area3D_property_gravity_space_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -447,7 +447,7 @@ If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_cen
 - |void| **set_gravity_point_center**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_gravity_point_center**\ (\ )
 
-If gravity is a point (see :ref:`gravity_point<class_Area3D_property_gravity_point>`), this will be the point of attraction.
+Si la gravedad es un punto (ver :ref:`gravity_point<class_Area3D_property_gravity_point>`), este será el punto de atracción.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Véase :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSetting
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area3D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area3D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-Override mode for linear damping calculations within this area.
+Modo de sobre-escritura para cálculos de amortiguación lineal dentro de esta área.
 
 .. rst-class:: classref-item-separator
 
@@ -712,9 +712,9 @@ Descripciones de Métodos
 
 :ref:`Array<class_Array>`\[:ref:`Area3D<class_Area3D>`\] **get_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_areas>`
 
-Returns a list of intersecting **Area3D**\ s. The overlapping area's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+Devuelve una lista de **Area3D** que se intersecan. El :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del área superpuesta debe formar parte del :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), esta lista se modifica una vez durante el paso de física, no inmediatamente después de que se muevan los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -726,9 +726,9 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 :ref:`Array<class_Array>`\[:ref:`Node3D<class_Node3D>`\] **get_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_get_overlapping_bodies>`
 
-Returns a list of intersecting :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s and :ref:`GridMap<class_GridMap>`\ s. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+Devuelve una lista de :ref:`PhysicsBody3D<class_PhysicsBody3D>` y :ref:`GridMap<class_GridMap>` que se intersecan. El :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del cuerpo superpuesto debe formar parte del :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), esta lista se modifica una vez durante el paso de física, no inmediatamente después de que se muevan los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -740,9 +740,9 @@ For performance reasons (collisions are all processed at the same time) this lis
 
 :ref:`bool<class_bool>` **has_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_areas>`
 
-Returns ``true`` if intersecting any **Area3D**\ s, otherwise returns ``false``. The overlapping area's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+Devuelve ``true`` si interseca alguna **Area3D**, de lo contrario devuelve ``false``. El :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del área superpuesta debe ser parte del :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping areas is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), la lista de áreas superpuestas se modifica una vez durante el paso de física, no inmediatamente después de que se mueven los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -754,9 +754,9 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area3D_method_has_overlapping_bodies>`
 
-Returns ``true`` if intersecting any :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ s or :ref:`GridMap<class_GridMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` must be part of this area's :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` in order to be detected.
+Devuelve ``true`` si interseca cualquier :ref:`PhysicsBody3D<class_PhysicsBody3D>` o :ref:`GridMap<class_GridMap>`, de lo contrario devuelve ``false``. El :ref:`CollisionObject3D.collision_layer<class_CollisionObject3D_property_collision_layer>` del cuerpo superpuesto debe ser parte del :ref:`CollisionObject3D.collision_mask<class_CollisionObject3D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), la lista de cuerpos superpuestos se modifica una vez durante el paso de física, no inmediatamente después de que se mueven los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -768,9 +768,9 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **overlaps_area**\ (\ area\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_area>`
 
-Returns ``true`` if the given **Area3D** intersects or overlaps this **Area3D**, ``false`` otherwise.
+Devuelve ``true`` si el **Area3D** dado interseca o se superpone con este **Area3D**, ``false`` en caso contrario.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **Nota:** El resultado de esta prueba no es inmediato después de mover objetos. Por rendimiento, la lista de superposiciones se actualiza una vez por fotograma y antes del paso de física. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -782,11 +782,11 @@ Returns ``true`` if the given **Area3D** intersects or overlaps this **Area3D**,
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area3D_method_overlaps_body>`
 
-Returns ``true`` if the given physics body intersects or overlaps this **Area3D**, ``false`` otherwise.
+Devuelve ``true`` si el cuerpo físico dado interseca o se superpone con este **Area3D**, ``false`` en caso contrario.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **Nota:** El resultado de esta prueba no es inmediato después de mover objetos. Por rendimiento, la lista de superposiciones se actualiza una vez por fotograma y antes del paso de física. Considera usar señales en su lugar.
 
-The ``body`` argument can either be a :ref:`PhysicsBody3D<class_PhysicsBody3D>` or a :ref:`GridMap<class_GridMap>` instance. While GridMaps are not physics body themselves, they register their tiles with collision shapes as a virtual physics body.
+El argumento ``body`` puede ser una instancia de :ref:`PhysicsBody3D<class_PhysicsBody3D>` o de :ref:`GridMap<class_GridMap>`. Aunque los GridMaps no son cuerpos físicos en sí mismos, registran sus baldosas con formas de colisión como un cuerpo físico virtual.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

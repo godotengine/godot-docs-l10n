@@ -396,7 +396,7 @@ Se ``true``, la luce svanirà gradualmente quando è lontana dalla :ref:`Camera3
 - |void| **set_distance_fade_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_length**\ (\ )
 
-Distanza su cui la luce e la sua ombra svaniscono. L'energia della luce e l'opacità dell'ombra sono ridotti progressivamente su questa distanza e alla fine risultano completamente invisibili.
+Distanza su cui la luce e la sua ombra svaniscono. L'energia della luce e l'opacità dell'ombra sono ridotti progressivamente su questa distanza, fino a diventare completamente invisibili.
 
 \ **Nota:** Efficace solo per :ref:`OmniLight3D<class_OmniLight3D>` e :ref:`SpotLight3D<class_SpotLight3D>`.
 

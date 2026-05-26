@@ -95,7 +95,7 @@ Descripciones de Métodos
 
 :ref:`PackedByteArray<class_PackedByteArray>` **finish**\ (\ ) :ref:`🔗<class_HMACContext_method_finish>`
 
-Returns the resulting HMAC. If the HMAC failed, an empty :ref:`PackedByteArray<class_PackedByteArray>` is returned.
+Devuelve el HMAC resultante. Si el HMAC falló, se devuelve un :ref:`PackedByteArray<class_PackedByteArray>` vacío.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Returns the resulting HMAC. If the HMAC failed, an empty :ref:`PackedByteArray<c
 
 :ref:`Error<enum_@GlobalScope_Error>` **start**\ (\ hash_type\: :ref:`HashType<enum_HashingContext_HashType>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HMACContext_method_start>`
 
-Initializes the HMACContext. This method cannot be called again on the same HMACContext until :ref:`finish()<class_HMACContext_method_finish>` has been called.
+Inicializa el HMACContext. Este método no puede volver a llamarse en el mismo HMACContext hasta que se haya llamado a :ref:`finish()<class_HMACContext_method_finish>`.
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Initializes the HMACContext. This method cannot be called again on the same HMAC
 
 :ref:`Error<enum_@GlobalScope_Error>` **update**\ (\ data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HMACContext_method_update>`
 
-Updates the message to be HMACed. This can be called multiple times before :ref:`finish()<class_HMACContext_method_finish>` is called to append ``data`` to the message, but cannot be called until :ref:`start()<class_HMACContext_method_start>` has been called.
+Actualiza el mensaje a ser HMAC. Esto puede ser llamado múltiples veces antes de que se llame a :ref:`finish()<class_HMACContext_method_finish>` para añadir ``data`` al mensaje, pero no puede ser llamado hasta que se haya llamado a :ref:`start()<class_HMACContext_method_start>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

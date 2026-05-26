@@ -1137,8 +1137,8 @@ Solo para el Editor
     class_scripteditor
     class_scripteditorbase
 
-Tipos de Variant
-================================
+Tipos Variant
+==========================
 
 .. toctree::
     :maxdepth: 1

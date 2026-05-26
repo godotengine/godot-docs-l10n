@@ -14,7 +14,7 @@ Proporciona parámetros para :ref:`PhysicsServer2D.body_test_motion()<class_Phys
 Descripción
 ----------------------
 
-By changing various properties of this object, such as the motion, you can configure the parameters for :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
+Cambiando varias propiedades de este objeto, como el movimiento, puedes configurar los parámetros para :ref:`PhysicsServer2D.body_test_motion()<class_PhysicsServer2D_method_body_test_motion>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -60,9 +60,9 @@ Descripciones de Propiedades
 - |void| **set_collide_separation_ray_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collide_separation_ray_enabled**\ (\ )
 
-If set to ``true``, shapes of type :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` are used to detect collisions and can stop the motion. Can be useful when snapping to the ground.
+Si se establece como ``true``, las formas de tipo :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` se utilizan para detectar colisiones y pueden detener el movimiento. Puede ser útil al pegarse al suelo.
 
-If set to ``false``, shapes of type :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` are only used for separation when overlapping with other bodies. That's the main use for separation ray shapes.
+Si se establece a ``false``, las formas de tipo :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>` solo se utilizan para la separación cuando se superponen con otros cuerpos. Ese es el uso principal para las formas de rayo de separación.
 
 .. rst-class:: classref-item-separator
 
@@ -79,7 +79,7 @@ If set to ``false``, shapes of type :ref:`PhysicsServer2D.SHAPE_SEPARATION_RAY<c
 - |void| **set_exclude_bodies**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_exclude_bodies**\ (\ )
 
-Optional array of body :ref:`RID<class_RID>` to exclude from collision. Use :ref:`CollisionObject2D.get_rid()<class_CollisionObject2D_method_get_rid>` to get the :ref:`RID<class_RID>` associated with a :ref:`CollisionObject2D<class_CollisionObject2D>`-derived node.
+Array opcional de :ref:`RID<class_RID>` de cuerpos a excluir de la colisión. Usa :ref:`CollisionObject2D.get_rid()<class_CollisionObject2D_method_get_rid>` para obtener el :ref:`RID<class_RID>` asociado a un nodo derivado de :ref:`CollisionObject2D<class_CollisionObject2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ Vector de movimiento para definir la longitud y la dirección del movimiento a p
 - |void| **set_recovery_as_collision_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_recovery_as_collision_enabled**\ (\ )
 
-If set to ``true``, any depenetration from the recovery phase is reported as a collision; this is used e.g. by :ref:`CharacterBody2D<class_CharacterBody2D>` for improving floor detection during floor snapping.
+Si se establece a ``true``, cualquier despenetración de la fase de recuperación se reporta como una colisión; esto lo usa, por ejemplo, :ref:`CharacterBody2D<class_CharacterBody2D>` para mejorar la detección del suelo durante el ajuste al suelo.
 
-If set to ``false``, only collisions resulting from the motion are reported, which is generally the desired behavior.
+Si se establece a ``false``, solo se reportan las colisiones resultantes del movimiento, que es generalmente el comportamiento deseado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

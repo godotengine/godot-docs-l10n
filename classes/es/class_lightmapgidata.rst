@@ -75,7 +75,7 @@ enum **ShadowmaskMode**: :ref:`🔗<enum_LightmapGIData_ShadowmaskMode>`
 
 :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` **SHADOWMASK_MODE_NONE** = ``0``
 
-El enmascaramiento de sombras está desactivado. No se creará ninguna textura de máscara de sombra al procesar lightmaps. Las texturas de máscara de sombra existentes se eliminarán durante el procesado.
+El enmascaramiento de sombras está desactivado. No se creará ninguna textura de máscara de sombra al procesar lightmaps. Las texturas de máscara de sombra existentes se eliminarán durante el baking.
 
 .. _class_LightmapGIData_constant_SHADOWMASK_MODE_REPLACE:
 
@@ -83,7 +83,7 @@ El enmascaramiento de sombras está desactivado. No se creará ninguna textura d
 
 :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` **SHADOWMASK_MODE_REPLACE** = ``1``
 
-Shadowmasking is enabled. Directional shadows that are outside the :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` will be rendered using the shadowmask texture. Shadows that are inside the range will be rendered using real-time shadows exclusively. This mode allows for more precise real-time shadows up close, without the potential "smearing" effect that can occur when using lightmaps with a high texel size. The downside is that when the camera moves fast, the transition between the real-time light and shadowmask can be obvious. Also, objects that only have shadows baked in the shadowmask (and no real-time shadows) won't display any shadows up close.
+El shadowmasking está habilitado. Las sombras direccionales que estén fuera de :ref:`DirectionalLight3D.directional_shadow_max_distance<class_DirectionalLight3D_property_directional_shadow_max_distance>` se renderizarán usando la textura de shadowmask. Las sombras que estén dentro del rango se renderizarán usando exclusivamente sombras en tiempo real. Este modo permite sombras en tiempo real más precisas de cerca, sin el potencial efecto de "manchado" que puede ocurrir al usar lightmaps con un tamaño de téxel alto. La desventaja es que cuando la cámara se mueve rápido, la transición entre la luz en tiempo real y el shadowmask puede ser obvia. Además, los objetos que solo tienen sombras procesadas en el shadowmask (y no sombras en tiempo real) no mostrarán ninguna sombra de cerca.
 
 .. _class_LightmapGIData_constant_SHADOWMASK_MODE_OVERLAY:
 
@@ -91,7 +91,7 @@ Shadowmasking is enabled. Directional shadows that are outside the :ref:`Directi
 
 :ref:`ShadowmaskMode<enum_LightmapGIData_ShadowmaskMode>` **SHADOWMASK_MODE_OVERLAY** = ``2``
 
-Shadowmasking is enabled. Directional shadows will be rendered with real-time shadows overlaid on top of the shadowmask texture. This mode makes for smoother shadow transitions when the camera moves fast, at the cost of a potential smearing effect for directional shadows that are up close (due to the real-time shadow being mixed with a low-resolution shadowmask). Objects that only have shadows baked in the shadowmask (and no real-time shadows) will keep their shadows up close.
+El shadowmasking está habilitado. Las sombras direccionales se renderizarán con sombras en tiempo real superpuestas sobre la textura de shadowmask. Este modo permite transiciones de sombra más suaves cuando la cámara se mueve rápido, a costa de un potencial efecto de manchado para las sombras direccionales que están de cerca (debido a que la sombra en tiempo real se mezcla con un shadowmask de baja resolución). Los objetos que solo tienen sombras procesadas en el shadowmask (y no sombras en tiempo real) mantendrán sus sombras de cerca.
 
 .. rst-class:: classref-section-separator
 

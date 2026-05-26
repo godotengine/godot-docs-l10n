@@ -212,9 +212,9 @@ Descripciones de Métodos
 
 Procesa el efecto de todos los :ref:`GeometryInstance3D<class_GeometryInstance3D>` marcados con :ref:`GeometryInstance3D.GI_MODE_STATIC<class_GeometryInstance3D_constant_GI_MODE_STATIC>` y los :ref:`Light3D<class_Light3D>` marcados con :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` o :ref:`Light3D.BAKE_DYNAMIC<class_Light3D_constant_BAKE_DYNAMIC>`. Si ``create_visual_debug`` es ``true``, después de procesar la luz, esto generará un :ref:`MultiMesh<class_MultiMesh>` que tiene un cubo que representa cada celda sólida con cada cubo coloreado al color albedo de la celda. Esto puede usarse para visualizar los datos del **VoxelGI** y depurar cualquier problema que pueda estar ocurriendo.
 
-\ **Nota:** :ref:`bake()<class_VoxelGI_method_bake>` funciona desde el editor y en proyectos exportados. Esto lo hace adecuado para niveles generados proceduralmente o construidos por el usuario. Procesar un nodo **VoxelGI** generalmente toma de 5 a 20 segundos en la mayoría de las escenas. Reducir :ref:`subdiv<class_VoxelGI_property_subdiv>` puede acelerar el procesado.
+\ **Nota:** :ref:`bake()<class_VoxelGI_method_bake>` funciona desde el editor y en proyectos exportados. Esto lo hace adecuado para niveles generados proceduralmente o construidos por el usuario. Procesar un nodo **VoxelGI** generalmente toma de 5 a 20 segundos en la mayoría de las escenas. Reducir :ref:`subdiv<class_VoxelGI_property_subdiv>` puede acelerar el baking.
 
-\ **Nota:** Los :ref:`GeometryInstance3D<class_GeometryInstance3D>` y :ref:`Light3D<class_Light3D>` deben estar completamente listos antes de llamar a :ref:`bake()<class_VoxelGI_method_bake>`. Si los está creando proceduralmente y faltan algunas mallas o luces en su **VoxelGI** procesado, use ``call_deferred("bake")`` en lugar de llamar a :ref:`bake()<class_VoxelGI_method_bake>` directamente.
+\ **Nota:** Los :ref:`GeometryInstance3D<class_GeometryInstance3D>` y :ref:`Light3D<class_Light3D>` deben estar completamente listos antes de llamar a :ref:`bake()<class_VoxelGI_method_bake>`. Si los está creando proceduralmente y faltan algunas mallas o luces en su **VoxelGI** baking, use ``call_deferred("bake")`` en lugar de llamar a :ref:`bake()<class_VoxelGI_method_bake>` directamente.
 
 .. rst-class:: classref-item-separator
 

@@ -845,13 +845,13 @@ enum **DebugDraw**: :ref:`🔗<enum_Viewport_DebugDraw>`
 
 :ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_SDFGI_PROBES** = ``17``
 
-Draws the probes used for signed distance field global illumination (SDFGI).
+绘制用于带符号距离场全局照明（SDFGI）的探针。
 
-When in the editor, left-clicking a probe will display additional bright dots that show its occlusion information. A white dot means the light is not occluded at all at the dot's position, while a red dot means the light is fully occluded. Intermediate values are possible.
+在编辑器中，左键点击探针将显示额外的亮点，这些亮点显示其遮挡信息。白点表示该点位置的光线完全没有被遮挡，而红点表示该位置的光线完全被遮挡。也可能出现中间值。
 
-Does nothing if the current environment's :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` is ``false``.
+如果当前环境的 :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>` 为 ``false``\ ，则不执行任何操作。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时受支持。
 
 .. _class_Viewport_constant_DEBUG_DRAW_GI_BUFFER:
 
@@ -1290,9 +1290,9 @@ enum **VRSUpdateMode**: :ref:`🔗<enum_Viewport_VRSUpdateMode>`
 - |void| **set_canvas_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_canvas_cull_mask**\ (\ )
 
-The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_CanvasItem>` nodes.
+该 **Viewport** 渲染 :ref:`CanvasItem<class_CanvasItem>` 节点的渲染层。
 
-\ **Note:** A :ref:`CanvasItem<class_CanvasItem>` does not inherit its parents' visibility layers. See :ref:`CanvasItem.visibility_layer<class_CanvasItem_property_visibility_layer>`'s description for details.
+\ **注意：**\ :ref:`CanvasItem<class_CanvasItem>` 不会继承其父级的可见性图层。详情见 :ref:`CanvasItem.visibility_layer<class_CanvasItem_property_visibility_layer>` 的描述。
 
 .. rst-class:: classref-item-separator
 
@@ -1309,7 +1309,7 @@ The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_C
 - |void| **set_default_canvas_item_texture_filter**\ (\ value\: :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>`\ )
 - :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **get_default_canvas_item_texture_filter**\ (\ )
 
-The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+该视口中 :ref:`CanvasItem<class_CanvasItem>` 节点所使用的默认过滤模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1326,7 +1326,7 @@ The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_default_canvas_item_texture_repeat**\ (\ value\: :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>`\ )
 - :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **get_default_canvas_item_texture_repeat**\ (\ )
 
-The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+该视口中 :ref:`CanvasItem<class_CanvasItem>` 所使用的默认重复模式。
 
 .. rst-class:: classref-item-separator
 
@@ -1447,7 +1447,7 @@ The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_drag_threshold**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_drag_threshold**\ (\ )
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins.
+鼠标光标在按下状态下必须移动的最小距离，超过该距离后才会开始拖动操作。
 
 .. rst-class:: classref-item-separator
 
@@ -1965,11 +1965,11 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 - |void| **set_use_debanding**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_debanding**\ (\ )
 
-When using the Mobile or Forward+ renderers, set :ref:`use_debanding<class_Viewport_property_use_debanding>` to enable or disable the debanding feature of this **Viewport**. If :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``false``, 2D rendering is *not* affected by debanding unless the :ref:`Environment.background_mode<class_Environment_property_background_mode>` is :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`. If :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true``, debanding will only be applied if this is the root **Viewport** and will affect all 2D and 3D rendering, including canvas items.
+使用 Mobile 或 Forward+ 渲染器时，设置 :ref:`use_debanding<class_Viewport_property_use_debanding>` 以启用或禁用该 **Viewport** 的去色带功能。如果 :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``false``\ ，则除非 :ref:`Environment.background_mode<class_Environment_property_background_mode>` 为 :ref:`Environment.BG_CANVAS<class_Environment_constant_BG_CANVAS>`\ ，否则 2D 渲染\ *不会*\ 受到去色带的影响。如果 :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true``\ ，则仅当该 **Viewport** 为根 **Viewport** 时才会应用去色带，并会影响所有 2D 和 3D 渲染，包括画布项目。
 
-\ :ref:`use_debanding<class_Viewport_property_use_debanding>` has no effect when using the Compatibility rendering method. The Mobile renderer can also use material debanding, which can be set with :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` or configured with :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`.
+使用 Compatibility 渲染方法时，\ :ref:`use_debanding<class_Viewport_property_use_debanding>` 无效。Mobile 渲染器还可以使用材质去色带，可以通过 :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 设置，或通过 :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` 配置。
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`, :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>`, and :ref:`RenderingServer.viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
+另见 :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`\ 、\ :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 和 :ref:`RenderingServer.viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1986,9 +1986,9 @@ See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<cla
 - |void| **set_use_hdr_2d**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_hdr_2d**\ (\ )
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen (if the Viewport is attached to the screen).
+如果为 ``true``\ ，则 2D 渲染将使用高动态范围（HDR）\ ``RGBA16`` 格式帧缓冲区。此外，2D 渲染将在线性值上进行，并在绘制到屏幕之前（如果视口已连接到屏幕）立即使用适当的传输函数进行转换。
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+实际上，这意味着视口的最终结果不会限制在 ``0-1`` 范围内，无需调整颜色编码即可在 3D 渲染中使用。这使得 2D 渲染能够利用需要高动态范围的效果（例如 2D 辉光），并显著改善需要高度详细渐变的效果的外观。
 
 .. rst-class:: classref-item-separator
 
@@ -2212,9 +2212,9 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`Camera2D<class_Camera2D>` **get_camera_2d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_camera_2d>`
 
-Returns the currently active 2D camera. Returns ``null`` if there are no active cameras.
+返回当前活动的 2D 相机。如果没有活动的相机，则返回 ``null``\ 。
 
-\ **Note:** If called while the *Camera Override* system is active in editor, this will return the internally managed override camera. It is therefore advised to avoid caching the return value, or to check that the cached value is still a valid instance and is the current camera before use. See :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` and :ref:`Camera2D.is_current()<class_Camera2D_method_is_current>`.
+\ **注意：**\ 如果在编辑器中启用\ *相机覆盖*\ 系统时调用该方法，它将返回内部管理的覆盖相机。因此，建议避免缓存该返回值，或者在使用缓存值之前检查缓存值是否仍然是有效实例且是当前相机。见 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` 和 :ref:`Camera2D.is_current()<class_Camera2D_method_is_current>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2226,9 +2226,9 @@ Returns the currently active 2D camera. Returns ``null`` if there are no active 
 
 :ref:`Camera3D<class_Camera3D>` **get_camera_3d**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_camera_3d>`
 
-Returns the currently active 3D camera. Returns ``null`` if there are no active cameras.
+返回当前活动的 3D 相机。如果没有活动的相机，则返回 ``null``\ 。
 
-\ **Note:** If called while the *Camera Override* system is active in editor, this will return the internally managed override camera. It is therefore advised to avoid caching the return value, or to check that the cached value is a valid instance and is the current camera before use. See :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` and :ref:`Camera3D.current<class_Camera3D_property_current>`.
+\ **注意：**\ 如果在编辑器中启用\ *相机覆盖*\ 系统时调用该方法，它将返回内部管理的覆盖相机。因此，建议避免缓存该返回值，或者在使用缓存值之前检查缓存值是否仍然是有效实例且是当前相机。见 :ref:`@GlobalScope.is_instance_valid()<class_@GlobalScope_method_is_instance_valid>` 和 :ref:`Camera3D.current<class_Camera3D_property_current>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2352,9 +2352,9 @@ Returns the currently active 3D camera. Returns ``null`` if there are no active 
 
 :ref:`ViewportTexture<class_ViewportTexture>` **get_texture**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_texture>`
 
-Returns the viewport's texture.
+返回该视口的纹理
 
-\ **Note:** When trying to store the current texture (e.g. in a file), it might be completely black or outdated if used too early, especially when used in e.g. :ref:`Node._ready()<class_Node_private_method__ready>`. To make sure the texture you get is correct, you can await :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` signal.
+\ **注意：**\ 保存当前纹理时（例如保存到文件中），如果时机过早则可能是全黑或过时的图片，尤其是在 :ref:`Node._ready()<class_Node_private_method__ready>` 等函数中使用时。要确保获得正确的纹理，你可以等待 :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` 信号。
 
 
 .. tabs::
@@ -2376,7 +2376,7 @@ Returns the viewport's texture.
 
 
 
-\ **Note:** When :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` is ``true`` the returned texture will be an HDR image using linear encoding.
+\ **注意：**\ :ref:`use_hdr_2d<class_Viewport_property_use_hdr_2d>` 为 ``true`` 时，返回的纹理将是使用线性编码的 HDR 图像。
 
 .. rst-class:: classref-item-separator
 
@@ -2436,7 +2436,7 @@ Returns the viewport's texture.
 
 :ref:`String<class_String>` **gui_get_drag_description**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_drag_description>`
 
-Returns the human-readable description of the drag data, used for assistive apps.
+返回用于辅助应用程序的拖拽数据的人类可读描述。
 
 .. rst-class:: classref-item-separator
 
@@ -2512,7 +2512,7 @@ Returns the human-readable description of the drag data, used for assistive apps
 
 |void| **gui_set_drag_description**\ (\ description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Viewport_method_gui_set_drag_description>`
 
-Sets the human-readable description of the drag data to ``description``, used for assistive apps.
+将拖拽数据的人类可读描述设置为 ``description``\ ，用于辅助应用程序。
 
 .. rst-class:: classref-item-separator
 
@@ -2654,9 +2654,9 @@ Sets the human-readable description of the drag data to ``description``, used fo
 
 |void| **set_input_as_handled**\ (\ ) :ref:`🔗<class_Viewport_method_set_input_as_handled>`
 
-Stops the input from propagating further up the :ref:`SceneTree<class_SceneTree>`.
+让输入停止继续沿着 :ref:`SceneTree<class_SceneTree>` 向上传播。
 
-\ **Note:** This does not affect the methods in :ref:`Input<class_Input>`, only the way events are propagated.
+\ **注意：**\ 不会影响 :ref:`Input<class_Input>` 中的方法，只会影响事件的传播。
 
 .. rst-class:: classref-item-separator
 

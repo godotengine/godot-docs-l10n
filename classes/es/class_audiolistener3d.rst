@@ -17,7 +17,7 @@ Sobrescribe los sonidos de localización que se escuchan.
 Descripción
 ----------------------
 
-Once added to the scene tree and enabled using :ref:`make_current()<class_AudioListener3D_method_make_current>`, this node will override the location sounds are heard from. This can be used to listen from a location different from the :ref:`Camera3D<class_Camera3D>`.
+Una vez añadido al árbol de escenas y habilitado usando :ref:`make_current()<class_AudioListener3D_method_make_current>`, este nodo sobrescribirá la ubicación desde la que se escuchan los sonidos. Esto puede usarse para escuchar desde una ubicación diferente a la de la :ref:`Camera3D<class_Camera3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -78,7 +78,7 @@ Desactiva la simulación del `efecto Doppler <https://en.wikipedia.org/wiki/Dopp
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_process``. Changes in the relative velocity of this listener compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+Simula el `efecto Doppler <https://en.wikipedia.org/wiki/Doppler_effect>`__ rastreando las posiciones de los objetos que cambian en ``_process``. Los cambios en la velocidad relativa de este escuchador en comparación con esos objetos afectan cómo se percibe el audio (cambiando el :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` del audio).
 
 .. _class_AudioListener3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -86,7 +86,7 @@ Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tr
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_physics_process``. Changes in the relative velocity of this listener compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+Simula el `efecto Doppler <https://es.wikipedia.org/wiki/Efecto_Doppler>`__ rastreando las posiciones de los objetos que cambian en ``_physics_process``. Los cambios en la velocidad relativa de este receptor en comparación con esos objetos afectan a cómo se percibe el audio (cambiando el :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` del audio).
 
 .. rst-class:: classref-section-separator
 
@@ -108,9 +108,9 @@ Descripciones de Propiedades
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-If not :ref:`DOPPLER_TRACKING_DISABLED<class_AudioListener3D_constant_DOPPLER_TRACKING_DISABLED>`, this listener will simulate the `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ for objects changed in particular ``_process`` methods.
+Si no es :ref:`DOPPLER_TRACKING_DISABLED<class_AudioListener3D_constant_DOPPLER_TRACKING_DISABLED>`, este oyente simulará el `efecto Doppler <https://es.wikipedia.org/wiki/Efecto_Doppler>`__ para los objetos modificados en métodos específicos de ``_process``.
 
-\ **Note:** The Doppler effect will only be heard on :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`\ s if :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not set to :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
+\ **Nota:** El efecto Doppler solo se escuchará en los :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` si :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` no está configurado en :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
 
 .. rst-class:: classref-section-separator
 
@@ -165,7 +165,7 @@ Returns ``true`` if the listener was made current using :ref:`make_current()<cla
 
 |void| **make_current**\ (\ ) :ref:`🔗<class_AudioListener3D_method_make_current>`
 
-Habilita el listener. Esto anulará el listener de la cámara actual.
+Habilita el listener. Esto sobrescribirá el listener de la cámara actual.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

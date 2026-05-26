@@ -190,7 +190,7 @@ Si es ``true``, el usuario puede arrastrar el GraphElement.
 - |void| **set_position_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position_offset**\ (\ )
 
-The offset of the GraphElement, relative to the scroll offset of the :ref:`GraphEdit<class_GraphEdit>`.
+El desplazamiento del GraphElement, relativo al desplazamiento del :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ Si es ``true``, el usuario puede cambiar el tamaño del GraphElement.
 - |void| **set_scaling_menus**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scaling_menus**\ (\ )
 
-If ``true``, :ref:`PopupMenu<class_PopupMenu>`\ s that are descendants of the GraphElement are scaled with the :ref:`GraphEdit<class_GraphEdit>` zoom.
+Si es ``true``, los :ref:`PopupMenu<class_PopupMenu>` que son descendientes del GraphElement se escalan con el zoom del :ref:`GraphEdit<class_GraphEdit>`.
 
 .. rst-class:: classref-item-separator
 

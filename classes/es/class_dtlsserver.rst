@@ -14,9 +14,9 @@ Clase de ayuda para implementar un servidor DTLS.
 Descripción
 ----------------------
 
-This class is used to store the state of a DTLS server. Upon :ref:`setup()<class_DTLSServer_method_setup>` it converts connected :ref:`PacketPeerUDP<class_PacketPeerUDP>` to :ref:`PacketPeerDTLS<class_PacketPeerDTLS>` accepting them via :ref:`take_connection()<class_DTLSServer_method_take_connection>` as DTLS clients. Under the hood, this class is used to store the DTLS state and cookies of the server. The reason of why the state and cookies are needed is outside of the scope of this documentation.
+Esta clase se utiliza para almacenar el estado de un servidor DTLS. Tras llamar a :ref:`setup()<class_DTLSServer_method_setup>`, convierte los :ref:`PacketPeerUDP<class_PacketPeerUDP>` conectados en :ref:`PacketPeerDTLS<class_PacketPeerDTLS>`, aceptándolos a través de :ref:`take_connection()<class_DTLSServer_method_take_connection>` como clientes DTLS. Internamente, esta clase se utiliza para almacenar el estado DTLS y las cookies del servidor. El motivo por el cual el estado y las cookies son necesarios queda fuera del alcance de esta documentación.
 
-Below a small example of how to use it:
+A continuación, un pequeño ejemplo de cómo utilizarla:
 
 
 .. tabs::
@@ -32,8 +32,8 @@ Below a small example of how to use it:
 
     func _ready():
         server.listen(4242)
-        var key = load("key.key") # Your private key.
-        var cert = load("cert.crt") # Your X509 certificate.
+        var key = load("key.key") # Su llave privada.
+        var cert = load("cert.crt") # Su certificado X509.
         dtls.setup(TlsOptions.server(key, cert))
 
     func _process(delta):
@@ -41,16 +41,16 @@ Below a small example of how to use it:
             var peer = server.take_connection()
             var dtls_peer = dtls.take_connection(peer)
             if dtls_peer.get_status() != PacketPeerDTLS.STATUS_HANDSHAKING:
-                continue # It is normal that 50% of the connections fails due to cookie exchange.
-            print("Peer connected!")
+                continue # Es normal que el 50% de las conexiones fallen debido al intercambio de cookies.
+            print("¡Par conectado!")
             peers.append(dtls_peer)
 
         for p in peers:
-            p.poll() # Must poll to update the state.
+            p.poll() # Debe llamar a poll para actualizar el estado.
             if p.get_status() == PacketPeerDTLS.STATUS_CONNECTED:
                 while p.get_available_packet_count() > 0:
-                    print("Received message from client: %s" % p.get_packet().get_string_from_utf8())
-                    p.put_packet("Hello DTLS client".to_utf8_buffer())
+                    print("Mensaje recibido del cliente: %s" % p.get_packet().get_string_from_utf8())
+                    p.put_packet("Hola cliente DTLS".to_utf8_buffer())
 
  .. code-tab:: csharp
 
@@ -66,8 +66,8 @@ Below a small example of how to use it:
         public override void _Ready()
         {
             _server.Listen(4242);
-            var key = GD.Load<CryptoKey>("key.key"); // Your private key.
-            var cert = GD.Load<X509Certificate>("cert.crt"); // Your X509 certificate.
+            var key = GD.Load<CryptoKey>("key.key"); // Su llave privada.
+            var cert = GD.Load<X509Certificate>("cert.crt"); // Su certificado X509.
             _dtls.Setup(TlsOptions.Server(key, cert));
         }
 
@@ -79,21 +79,21 @@ Below a small example of how to use it:
                 PacketPeerDtls dtlsPeer = _dtls.TakeConnection(peer);
                 if (dtlsPeer.GetStatus() != PacketPeerDtls.Status.Handshaking)
                 {
-                    continue; // It is normal that 50% of the connections fails due to cookie exchange.
+                    continue; // Es normal que el 50% de las conexiones fallen debido al intercambio de cookies.
                 }
-                GD.Print("Peer connected!");
+                GD.Print("¡Par conectado!");
                 _peers.Add(dtlsPeer);
             }
 
             foreach (var p in _peers)
             {
-                p.Poll(); // Must poll to update the state.
+                p.Poll(); // Debe llamar a Poll para actualizar el estado.
                 if (p.GetStatus() == PacketPeerDtls.Status.Connected)
                 {
                     while (p.GetAvailablePacketCount() > 0)
                     {
-                        GD.Print($"Received Message From Client: {p.GetPacket().GetStringFromUtf8()}");
-                        p.PutPacket("Hello DTLS Client".ToUtf8Buffer());
+                        GD.Print($"Mensaje recibido del cliente: {p.GetPacket().GetStringFromUtf8()}");
+                        p.PutPacket("Hola cliente DTLS".ToUtf8Buffer());
                     }
                 }
             }
@@ -116,16 +116,16 @@ Below a small example of how to use it:
 
     func _ready():
         udp.connect_to_host("127.0.0.1", 4242)
-        dtls.connect_to_peer(udp, false) # Use true in production for certificate validation!
+        dtls.connect_to_peer(udp, false) # ¡Use true en producción para la validación de certificados!
 
     func _process(delta):
         dtls.poll()
         if dtls.get_status() == PacketPeerDTLS.STATUS_CONNECTED:
             if !connected:
-                # Try to contact server
-                dtls.put_packet("The answer is... 42!".to_utf8_buffer())
+                # Intentar contactar con el servidor
+                dtls.put_packet("La respuesta es... ¡42!".to_utf8_buffer())
             while dtls.get_available_packet_count() > 0:
-                print("Connected: %s" % dtls.get_packet().get_string_from_utf8())
+                print("Conectado: %s" % dtls.get_packet().get_string_from_utf8())
                 connected = true
 
  .. code-tab:: csharp
@@ -143,7 +143,7 @@ Below a small example of how to use it:
         public override void _Ready()
         {
             _udp.ConnectToHost("127.0.0.1", 4242);
-            _dtls.ConnectToPeer(_udp, validateCerts: false); // Use true in production for certificate validation!
+            _dtls.ConnectToPeer(_udp, validateCerts: false); // ¡Use true en producción para la validación de certificados!
         }
 
         public override void _Process(double delta)
@@ -153,12 +153,12 @@ Below a small example of how to use it:
             {
                 if (!_connected)
                 {
-                    // Try to contact server
-                    _dtls.PutPacket("The Answer Is..42!".ToUtf8Buffer());
+                    // Intentar contactar con el servidor
+                    _dtls.PutPacket("La respuesta es... ¡42!".ToUtf8Buffer());
                 }
                 while (_dtls.GetAvailablePacketCount() > 0)
                 {
-                    GD.Print($"Connected: {_dtls.GetPacket().GetStringFromUtf8()}");
+                    GD.Print($"Conectado: {_dtls.GetPacket().GetStringFromUtf8()}");
                     _connected = true;
                 }
             }

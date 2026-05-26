@@ -59,7 +59,7 @@ OpenXRSpatialComponentPersistenceList
 
 :ref:`String<class_String>` **get_persistent_uuid**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_uuid>`
 
-Повертає постійний UUID для сутності за цією адресою ``index``.
+Повертає постійний uuid для об’єкта за цим ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

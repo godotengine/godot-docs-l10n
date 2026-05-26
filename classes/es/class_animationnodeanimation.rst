@@ -216,9 +216,9 @@ Si es ``false``, se respeta la duración original de la animación. Si establece
 - |void| **set_timeline_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeline_length**\ (\ )
 
-The length of the custom timeline.
+Duración de la línea de tiempo personalizada.
 
-If :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` is ``true``, scales the animation to this length.
+Si :ref:`stretch_time_scale<class_AnimationNodeAnimation_property_stretch_time_scale>` es ``true``, la animación se ajusta a esta duración.
 
 .. rst-class:: classref-item-separator
 

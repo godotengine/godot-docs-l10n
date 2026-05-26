@@ -139,7 +139,7 @@ Habilita el uso de :ref:`default_value<class_VisualShaderNodeFloatParameter_prop
 - |void| **set_hint**\ (\ value\: :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>`\ )
 - :ref:`Hint<enum_VisualShaderNodeFloatParameter_Hint>` **get_hint**\ (\ )
 
-Una sugerencia aplicada al uniforme, que controla los valores que puede tomar cuando se establece a través del Inspector.
+Una sugerencia aplicada a la variable uniforme, que controla los valores que puede tomar cuando se establece a través del Inspector.
 
 .. rst-class:: classref-item-separator
 

@@ -366,7 +366,7 @@ Basis
 
 :ref:`float<class_float>` **determinant**\ (\ ) |const| :ref:`🔗<class_Basis_method_determinant>`
 
-返回基矩阵的\ `行列式 <https://zh.wikipedia.org/wiki/%E8%A1%8C%E5%88%97%E5%BC%8F>`__\ 。在高等数学中，这个数可以用来确定一些性质：
+返回基矩阵的 `determinant <https://en.wikipedia.org/wiki/Determinant>`__ 。在高等数学中，这个数可以用来确定一些性质：
 
 - 如果行列式为 ``0.0``\ ，则基不可逆（见 :ref:`inverse()<class_Basis_method_inverse>`\ ）。
 

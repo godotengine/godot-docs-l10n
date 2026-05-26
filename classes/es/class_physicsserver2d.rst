@@ -557,7 +557,7 @@ enum **AreaSpaceOverrideMode**: :ref:`🔗<enum_PhysicsServer2D_AreaSpaceOverrid
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer2D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_DISABLED** = ``0``
 
-Esta zona no afecta a la gravedad/humedad. Estas son generalmente áreas que existen sólo para detectar colisiones, y objetos que entran o salen de ellas.
+Esta área no afecta a la gravedad/humedad. Estas son generalmente áreas que existen sólo para detectar colisiones, y objetos que entran o salen de ellas.
 
 .. _class_PhysicsServer2D_constant_AREA_SPACE_OVERRIDE_COMBINE:
 

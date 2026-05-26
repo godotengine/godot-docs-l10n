@@ -204,7 +204,7 @@ enum **RotationEditMode**: :ref:`🔗<enum_Node3D_RotationEditMode>`
 
 :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **ROTATION_EDIT_MODE_EULER** = ``0``
 
-旋转量以 :ref:`Vector3<class_Vector3>` `欧拉角 <https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E8%A7%92>`__\ 的形式编辑。
+旋转量以 :ref:`Vector3<class_Vector3>` `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__ 的形式编辑。
 
 .. _class_Node3D_constant_ROTATION_EDIT_MODE_QUATERNION:
 

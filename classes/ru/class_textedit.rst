@@ -4212,7 +4212,7 @@ Cut — текущий выбор. Может быть переопределе�
 
 :ref:`int<class_int>` **wrap_offset** = ``10`` :ref:`🔗<class_TextEdit_theme_constant_wrap_offset>`
 
-Sets an additional margin for line wrapping width.
+Задает дополнительный отступ для ширины переноса строки.
 
 .. rst-class:: classref-item-separator
 

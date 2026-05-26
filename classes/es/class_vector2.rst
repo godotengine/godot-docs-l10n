@@ -420,13 +420,13 @@ Devuelve un nuevo vector con todos los componentes en valores absolutos (es deci
 
 :ref:`float<class_float>` **angle**\ (\ ) |const| :ref:`🔗<class_Vector2_method_angle>`
 
-Returns this vector's angle with respect to the positive X axis, or ``(1, 0)`` vector, in radians.
+Devuelve el ángulo de este vector con respecto al eje X positivo, o al vector ``(1, 0)``, en radianes.
 
-For example, ``Vector2.RIGHT.angle()`` will return zero, ``Vector2.DOWN.angle()`` will return ``PI / 2`` (a quarter turn, or 90 degrees), and ``Vector2(1, -1).angle()`` will return ``-PI / 4`` (a negative eighth turn, or -45 degrees).
+Por ejemplo, ``Vector2.RIGHT.angle()`` devolverá cero, ``Vector2.DOWN.angle()`` devolverá ``PI / 2`` (un cuarto de vuelta, o 90 grados), y ``Vector2(1, -1).angle()`` devolverá ``-PI / 4`` (un octavo de vuelta negativo, o -45 grados).
 
-This is equivalent to calling :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>` with :ref:`y<class_Vector2_property_y>` and :ref:`x<class_Vector2_property_x>`.
+Esto es equivalente a llamar a :ref:`@GlobalScope.atan2()<class_@GlobalScope_method_atan2>` con :ref:`y<class_Vector2_property_y>` y :ref:`x<class_Vector2_property_x>`.
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
+\ `Ilustración del ángulo devuelto. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -468,7 +468,7 @@ Returns the signed angle between the X axis and the line from this vector to poi
 
 :ref:`float<class_float>` **aspect**\ (\ ) |const| :ref:`🔗<class_Vector2_method_aspect>`
 
-Returns this vector's aspect ratio, which is :ref:`x<class_Vector2_property_x>` divided by :ref:`y<class_Vector2_property_y>`.
+Devuelve la relación de aspecto de este vector, que es :ref:`x<class_Vector2_property_x>` dividido por :ref:`y<class_Vector2_property_y>`.
 
 .. rst-class:: classref-item-separator
 
@@ -798,7 +798,7 @@ Devuelve el máximo componente a componente de este y ``with``, equivalente a ``
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector2_method_max_axis_index>`
 
-Devuelve el eje del valor más alto del vector. Consulta las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_X<class_Vector2_constant_AXIS_X>`.
+Devuelve el eje del valor más alto del vector. Véanse las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_X<class_Vector2_constant_AXIS_X>`.
 
 .. rst-class:: classref-item-separator
 
@@ -834,7 +834,7 @@ Devuelve el mínimo componente a componente de este y ``with``, equivalente a ``
 
 :ref:`int<class_int>` **min_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector2_method_min_axis_index>`
 
-Devuelve el eje del valor más bajo del vector. Consulta las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_Y<class_Vector2_constant_AXIS_Y>`.
+Devuelve el eje del valor más bajo del vector. Véanse las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_Y<class_Vector2_constant_AXIS_Y>`.
 
 .. rst-class:: classref-item-separator
 

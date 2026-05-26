@@ -874,7 +874,7 @@ Si es ``true``, habilita el snapping.
 - |void| **set_type_names**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_type_names**\ (\ )
 
-:ref:`Dictionary<class_Dictionary>` of human-readable port type names.
+:ref:`Dictionary<class_Dictionary>` de nombres de tipo de puerto legibles por humanos.
 
 .. rst-class:: classref-item-separator
 
@@ -1296,9 +1296,9 @@ A connection is represented as a :ref:`Dictionary<class_Dictionary>` in the form
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_connections_intersecting_with_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`\ ) |const| :ref:`🔗<class_GraphEdit_method_get_connections_intersecting_with_rect>`
 
-Returns an :ref:`Array<class_Array>` containing the list of connections that intersect with the given :ref:`Rect2<class_Rect2>`.
+Devuelve un :ref:`Array<class_Array>` que contiene la lista de conexiones que intersectan con el :ref:`Rect2<class_Rect2>` dado.
 
-A connection is represented as a :ref:`Dictionary<class_Dictionary>` in the form of:
+Una conexión se representa como un :ref:`Dictionary<class_Dictionary>` con la siguiente forma:
 
 ::
 
@@ -1332,9 +1332,9 @@ Devuelve el :ref:`GraphFrame<class_GraphFrame>` que contiene el :ref:`GraphEleme
 
 :ref:`HBoxContainer<class_HBoxContainer>` **get_menu_hbox**\ (\ ) :ref:`🔗<class_GraphEdit_method_get_menu_hbox>`
 
-Gets the :ref:`HBoxContainer<class_HBoxContainer>` that contains the zooming and grid snap controls in the top left of the graph. You can use this method to reposition the toolbar or to add your own custom controls to it.
+Obtiene el :ref:`HBoxContainer<class_HBoxContainer>` que contiene los controles de zoom y de ajuste a la cuadrícula en la parte superior izquierda del gráfico. Puedes usar este método para reposicionar la barra de herramientas o para añadir tus propios controles personalizados a ella.
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **Advertencia:** Este es un nodo interno requerido, eliminarlo y liberarlo puede causar un fallo. Si deseas ocultarlo o a cualquiera de sus hijos, usa su propiedad :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1372,9 +1372,9 @@ Véase también :ref:`add_valid_connection_type()<class_GraphEdit_method_add_val
 
 |void| **remove_valid_connection_type**\ (\ from_type\: :ref:`int<class_int>`, to_type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_connection_type>`
 
-Disallows the connection between two different port types previously allowed by :ref:`add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>`. The port type is defined individually for the left and the right port of each slot with the :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>` method.
+No permite la conexión entre dos tipos de puerto diferentes previamente permitida por :ref:`add_valid_connection_type()<class_GraphEdit_method_add_valid_connection_type>`. El tipo de puerto se define individualmente para el puerto izquierdo y el puerto derecho de cada ranura con el método :ref:`GraphNode.set_slot()<class_GraphNode_method_set_slot>`.
 
-See also :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>`.
+Véase también :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connection_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1386,7 +1386,7 @@ See also :ref:`is_valid_connection_type()<class_GraphEdit_method_is_valid_connec
 
 |void| **remove_valid_left_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_left_disconnect_type>`
 
-Disallows to disconnect nodes when dragging from the left port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. Use this to disable a disconnection previously allowed with :ref:`add_valid_left_disconnect_type()<class_GraphEdit_method_add_valid_left_disconnect_type>`.
+No permite desconectar nodos al arrastrar desde el puerto izquierdo de la ranura del :ref:`GraphNode<class_GraphNode>` si tiene el tipo especificado. Utiliza esto para deshabilitar una desconexión previamente permitida con :ref:`add_valid_left_disconnect_type()<class_GraphEdit_method_add_valid_left_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1398,7 +1398,7 @@ Disallows to disconnect nodes when dragging from the left port of the :ref:`Grap
 
 |void| **remove_valid_right_disconnect_type**\ (\ type\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GraphEdit_method_remove_valid_right_disconnect_type>`
 
-Disallows to disconnect nodes when dragging from the right port of the :ref:`GraphNode<class_GraphNode>`'s slot if it has the specified type. Use this to disable a disconnection previously allowed with :ref:`add_valid_right_disconnect_type()<class_GraphEdit_method_add_valid_right_disconnect_type>`.
+No permite desconectar nodos al arrastrar desde el puerto derecho de la ranura del :ref:`GraphNode<class_GraphNode>` si tiene el tipo especificado. Utiliza esto para deshabilitar una desconexión previamente permitida con :ref:`add_valid_right_disconnect_type()<class_GraphEdit_method_add_valid_right_disconnect_type>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1535,7 +1535,7 @@ El color del contorno del rectángulo de selección.
 
 :ref:`int<class_int>` **connection_hover_thickness** = ``0`` :ref:`🔗<class_GraphEdit_theme_constant_connection_hover_thickness>`
 
-Widens the line of a connection when the mouse is hovering over it by a percentage factor. A value of ``0`` disables the highlight. A value of ``100`` doubles the line width.
+Ensancha la línea de la conexión cuando el ratón se sitúa sobre ella en un factor porcentual. Un valor de ``0`` desactiva el resaltado. Un valor de ``100`` duplica el ancho de la línea.
 
 .. rst-class:: classref-item-separator
 

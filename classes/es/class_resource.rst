@@ -31,7 +31,7 @@ Tutoriales
 
 - :doc:`Recursos <../tutorials/scripting/resources>`
 
-- :doc:`When and how to avoid using nodes for everything <../tutorials/best_practices/node_alternatives>`
+- :doc:`Cuándo y cómo evitar el uso de nodos para todo <../tutorials/best_practices/node_alternatives>`
 
 .. rst-class:: classref-reftable-group
 
@@ -149,7 +149,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-No se duplica ningún subrecurso. Esto es útil incluso en una duplicación profunda para tener todos los arrays y diccionarios duplicados pero siguiendo apuntando a los recursos originales.
+No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 

@@ -454,9 +454,9 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_Plane_operator_neq_Plane>`
 
-Returns ``true`` if the planes are not equal.
+Devuelve ``true`` si los planos no son iguales.
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` instead, which is more reliable.
+\ **Nota:** Debido a errores de precisión de punto flotante, considera usar :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` en su lugar, que es más fiable.
 
 .. rst-class:: classref-item-separator
 
@@ -482,9 +482,9 @@ Transforma inversamente (multiplica) el **Plane** por la matriz de transformaci�
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_Plane_operator_eq_Plane>`
 
-Returns ``true`` if the planes are exactly equal.
+Devuelve ``true`` si los planos son exactamente iguales.
 
-\ **Note:** Due to floating-point precision errors, consider using :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` instead, which is more reliable.
+\ **Nota:** Debido a errores de precisión de punto flotante, considera usar :ref:`is_equal_approx()<class_Plane_method_is_equal_approx>` en su lugar, que es más fiable.
 
 .. rst-class:: classref-item-separator
 

@@ -3286,22 +3286,22 @@ EditorSettings
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-Шлях до виконуваного файлу Blender, який використовується для перетворення файлів 3D сцени Blender ``.blend`` у формат glTF 2.0 під час імпорту. Потрібен Blender 3.0 або новішої версії.
+The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-Щоб увімкнути цю функцію для вашого конкретного проекту, використовуйте :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-Якщо це налаштування порожнє, шляхи за замовчуванням Blender будуть визначені та використані автоматично, якщо вони присутні в такому порядку:
+If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
 
 \ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
 \ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3311,7 +3311,7 @@ EditorSettings
 
 \ **Linux/\*BSD:**\ 
 
-::
+.. code:: text
 
     - /usr/bin/blender
     - /usr/local/bin/blender
@@ -3647,9 +3647,9 @@ EditorSettings
 
 :ref:`String<class_String>` **interface/editor/code_font_custom_variations** :ref:`🔗<class_EditorSettings_property_interface/editor/code_font_custom_variations>`
 
-Список альтернативних символів для використання, якщо підтримується на даний момент налаштованим шрифтом коду. Не всі шрифти включають підтримку індивідуальних варіацій. Рядок слідувати специфікації OpenType.
+Список альтернативних символів, які можна використовувати, якщо їх підтримує поточний шрифт коду. Не всі шрифти підтримують користувацькі варіації. Рядок повинен відповідати специфікації OpenType.
 
-\ **Примітка:** JavaScript licenses API Веб-сайт Go1.13.8.
+\ **Примітка:** Шрифт коду редактора за замовчуванням (`JetBrains Mono <https://www.jetbrains.com/lp/mono/>`__) містить альтернативні символи у своєму файлі, але документального списку поки що немає.
 
 .. rst-class:: classref-item-separator
 

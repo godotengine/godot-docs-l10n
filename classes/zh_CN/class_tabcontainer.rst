@@ -432,7 +432,7 @@ enum **TabPosition**: :ref:`🔗<enum_TabContainer_TabPosition>`
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange.
+如果为 ``true``\ ，则在拖动内容时将鼠标悬停在选项卡上将切换到该选项卡。将鼠标悬停在另一个标签页上进行重新排列时无效。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tabs_position**\ (\ value\: :ref:`TabPosition<enum_TabContainer_TabPosition>`\ )
 - :ref:`TabPosition<enum_TabContainer_TabPosition>` **get_tabs_position**\ (\ )
 
-The horizontal alignment of the tabs.
+选项卡的水平对齐方式。
 
 .. rst-class:: classref-item-separator
 
@@ -900,7 +900,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_TabContainer_theme_color_font_disabled_color>`
 
-禁用选项卡的字体颜色。
+禁用的选项卡的字体颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -960,7 +960,7 @@ The horizontal alignment of the tabs.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+禁用的选项卡的图标颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -972,7 +972,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+当前悬停的选项卡的图标颜色。不适用于选中的选项卡。
 
 .. rst-class:: classref-item-separator
 
@@ -984,7 +984,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+当前所选选项卡的图标颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -996,7 +996,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+其他未被选中的选项卡的图标颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1204,7 +1204,7 @@ Icon color of the other, unselected tabs.
 
 :ref:`StyleBox<class_StyleBox>` **tab_focus** :ref:`🔗<class_TabContainer_theme_style_tab_focus>`
 
-该 :ref:`TabBar<class_TabBar>` 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabContainer_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+该 :ref:`TabBar<class_TabBar>` 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabContainer_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 

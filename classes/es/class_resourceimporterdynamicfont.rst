@@ -226,7 +226,7 @@ Sobrescribe la lista de idiomas soportados por esta fuente. Si se deja vacío, s
 
 :ref:`bool<class_bool>` **modulate_color_glyphs** = ``false`` :ref:`🔗<class_ResourceImporterDynamicFont_property_modulate_color_glyphs>`
 
-If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
+Si se establece como ``true``, la modulación de color se aplica al dibujar glifos coloreados, de lo contrario, se aplica solo a los glifos monocromáticos.
 
 .. rst-class:: classref-item-separator
 

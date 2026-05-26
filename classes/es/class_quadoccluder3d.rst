@@ -16,7 +16,7 @@ Descripción
 
 **QuadOccluder3D** almacena una forma de plano que puede ser utilizada por el sistema de oclusión de recorte del motor. Véase también :ref:`PolygonOccluder3D<class_PolygonOccluder3D>` si necesita personalizar la forma del quad.
 
-Consulta la documentación de :ref:`OccluderInstance3D<class_OccluderInstance3D>` para obtener instrucciones sobre cómo configurar la oclusión de recorte.
+Véase la documentación de :ref:`OccluderInstance3D<class_OccluderInstance3D>` para obtener instrucciones sobre cómo configurar la oclusión de recorte.
 
 .. rst-class:: classref-introduction-group
 

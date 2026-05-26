@@ -9,7 +9,7 @@ SkeletonModification2DJiggle
 
 **Hereda:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A modification that jiggles :ref:`Bone2D<class_Bone2D>` nodes as they move towards a target.
+Una modificación que sacude los nodos :ref:`Bone2D<class_Bone2D>` mientras se mueven hacia un objetivo.
 
 .. rst-class:: classref-introduction-group
 

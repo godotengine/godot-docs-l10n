@@ -496,9 +496,9 @@ HTTPRequest 无法写入下载文件。
 - |void| **set_timeout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_timeout**\ (\ )
 
-The duration to wait before a request times out, in seconds (independent of :ref:`Engine.time_scale<class_Engine_property_time_scale>`). If :ref:`timeout<class_HTTPRequest_property_timeout>` is set to ``0.0``, the request will never time out.
+请求超时前的等待时间，单位为秒（与 :ref:`Engine.time_scale<class_Engine_property_time_scale>` 无关）。如果 :ref:`timeout<class_HTTPRequest_property_timeout>` 为 ``0.0``\ ，则请求将永远不会超时。
 
-For simple requests, such as communication with a REST API, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to a value suitable for the server response time (commonly between ``1.0`` and ``10.0``). This will help prevent unwanted timeouts caused by variation in response times while still allowing the application to detect when a request has timed out. For larger requests such as file downloads, it is recommended to set :ref:`timeout<class_HTTPRequest_property_timeout>` to ``0.0``, disabling the timeout functionality. This will help prevent large transfers from failing due to exceeding the timeout value.
+对于简单的请求，例如与 REST API 通信，建议将 :ref:`timeout<class_HTTPRequest_property_timeout>` 设为与服务器响应时间匹配的值（通常在 ``1.0`` 到 ``10.0`` 之间）。这将有助于防止由于响应时间波动而导致的不必要的超时，同时仍然允许应用程序检测请求何时超时。对于较大的请求，例如文件下载，建议将 :ref:`timeout<class_HTTPRequest_property_timeout>` 设置为 ``0.0``\ ，禁用超时功能。这将有助于防止由于超出超时值而导致大型传输失败。
 
 .. rst-class:: classref-item-separator
 

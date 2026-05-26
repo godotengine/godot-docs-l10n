@@ -12,9 +12,9 @@ Un tipo booleano incorporado.
 Descripción
 ----------------------
 
-The **bool** is a built-in :ref:`Variant<class_Variant>` type that may only store one of two values: ``true`` or ``false``. You can imagine it as a switch that can be either turned on or off, or as a binary digit that can either be 1 or 0.
+El **bool** es un tipo :ref:`Variant<class_Variant>` integrado que solo puede almacenar uno de dos valores: ``true`` o ``false``. Puede imaginarlo como un interruptor que puede estar encendido o apagado, o como un dígito binario que puede ser 1 o 0.
 
-Booleans can be directly used in ``if``, and other conditional statements:
+Los booleanos pueden utilizarse directamente en ``if`` y otras sentencias condicionales:
 
 
 .. tabs::
@@ -35,9 +35,9 @@ Booleans can be directly used in ``if``, and other conditional statements:
 
 
 
-All comparison operators return booleans (``==``, ``>``, ``<=``, etc.). As such, it is not necessary to compare booleans themselves. You do not need to add ``== true`` or ``== false``.
+Todos los operadores de comparación devuelven booleanos (``==``, ``>``, ``<=``, etc.). Como tal, no es necesario comparar los booleanos entre sí. No es necesario añadir ``== true`` o ``== false``.
 
-Booleans can be combined with the logical operators ``and``, ``or``, ``not`` to create complex conditions:
+Los booleanos pueden combinarse con los operadores lógicos ``and``, ``or``, ``not`` para crear condiciones complejas:
 
 
 .. tabs::
@@ -64,9 +64,9 @@ Booleans can be combined with the logical operators ``and``, ``or``, ``not`` to 
 
 
 
-\ **Note:** In modern programming languages, logical operators are evaluated in order. All remaining conditions are skipped if their result would have no effect on the final value. This concept is known as `short-circuit evaluation <https://en.wikipedia.org/wiki/Short-circuit_evaluation>`__ and can be useful to avoid evaluating expensive conditions in some performance-critical cases.
+\ **Nota:** En los lenguajes de programación modernos, los operadores lógicos se evalúan en orden. Todas las condiciones restantes se omiten si su resultado no tuviera efecto en el valor final. Este concepto se conoce como `evaluación de cortocircuito <https://es.wikipedia.org/wiki/Evaluaci%C3%B3n_de_cortocircuito>`__ y puede ser útil para evitar la evaluación de condiciones costosas en algunos casos críticos para el rendimiento.
 
-\ **Note:** By convention, built-in methods and properties that return booleans are usually defined as yes-no questions, single adjectives, or similar (:ref:`String.is_empty()<class_String_method_is_empty>`, :ref:`Node.can_process()<class_Node_method_can_process>`, :ref:`Camera2D.enabled<class_Camera2D_property_enabled>`, etc.).
+\ **Nota:** Por convención, los métodos y propiedades integrados que devuelven booleanos suelen definirse como preguntas de sí o no, adjetivos simples o similares (:ref:`String.is_empty()<class_String_method_is_empty>`, :ref:`Node.can_process()<class_Node_method_can_process>`, :ref:`Camera2D.enabled<class_Camera2D_property_enabled>`, etc.).
 
 .. rst-class:: classref-reftable-group
 

@@ -661,9 +661,9 @@ Restituisce il valore attuale dell'asse del joypad all'indice [param axis).
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Restituisce un GUID dispositivo compatibile con SDL2 su piattaforme che utilizzano la rimappatura del gamepad, ad esempio ``030000004c050000c405000000010000``. Restituisce una stringa vuota se non può essere trovato. Godot utilizza il `database dei controller di gioco SDL2 <https://github.com/gabomdq/SDL_GameControllerDB>`__ per determinare i nomi e le mappature dei gamepad in base a questo GUID.
+Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
 
-Su Windows, tutti i GUID dei joypad XInput saranno sovrascritti da Godot in ``__XINPUT_DEVICE__``, perché le loro mappature sono le stesse.
+On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
 
 .. rst-class:: classref-item-separator
 

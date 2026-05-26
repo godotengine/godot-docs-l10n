@@ -674,9 +674,9 @@ Devuelve el eje de rotación en ``joint`` en la lista de articulaciones de la ca
 
 :ref:`Vector3<class_Vector3>` **get_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_joint_rotation_axis_vector>`
 
-Returns the rotation axis vector for the specified joint in the bone chain. This vector represents the axis around which the joint can rotate. It is determined based on the rotation axis set for the joint.
+Devuelve el vector del eje de rotación para la articulación especificada en la cadena de huesos. Este vector representa el eje alrededor del cual la articulación puede rotar. Se determina en función del eje de rotación establecido para la articulación.
 
-If :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` is :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, this method returns ``Vector3(0, 0, 0)``.
+Si :ref:`get_joint_rotation_axis()<class_SpringBoneSimulator3D_method_get_joint_rotation_axis>` es :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`, este método devuelve ``Vector3(0, 0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -1028,9 +1028,9 @@ Establece la ruta del nodo del :ref:`SpringBoneCollision3D<class_SpringBoneColli
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+Si ``enabled`` es ``true``, el hueso final se extiende para tener una cola.
 
-The extended tail config is allocated to the last element in the joint list. In other words, if you set ``enabled`` to ``false``, the config of the last element in the joint list has no effect in the simulated result.
+La configuración de la cola extendida se asigna al último elemento de la lista de articulaciones. En otras palabras, si estableces ``enabled`` en ``false``, la configuración del último elemento de la lista de articulaciones no tiene efecto en el resultado simulado.
 
 .. rst-class:: classref-item-separator
 
@@ -1160,11 +1160,11 @@ The axes are based on the :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_meth
 
 |void| **set_joint_rotation_axis_vector**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_SpringBoneSimulator3D_method_set_joint_rotation_axis_vector>`
 
-Sets the rotation axis vector for the specified joint in the bone chain.
+Establece el vector del eje de rotación para la articulación especificada en la cadena de huesos.
 
-This vector is normalized by an internal process and represents the axis around which the bone chain can rotate.
+Este vector se normaliza mediante un proceso interno y representa el eje alrededor del cual puede rotar la cadena de huesos.
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
+Si la longitud del vector es ``0``, se considera sinónimo de :ref:`SkeletonModifier3D.ROTATION_AXIS_ALL<class_SkeletonModifier3D_constant_ROTATION_AXIS_ALL>`.
 
 .. rst-class:: classref-item-separator
 

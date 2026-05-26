@@ -175,9 +175,9 @@ Determina cómo se suaviza el fundido cruzado (cross-fading) entre animaciones. 
 - |void| **set_xfade_time**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_xfade_time**\ (\ )
 
-Cross-fading time (in seconds) between each animation connected to the inputs.
+La duración del cross-fading (en segundos) entre cada animación conecta las entradas.
 
-\ **Note:** **AnimationNodeTransition** transitions the current state immediately after the start of the fading. The precise remaining time can only be inferred from the main animation. When :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` is considered as the most upstream, so the :ref:`xfade_time<class_AnimationNodeTransition_property_xfade_time>` is not scaled depending on the downstream delta. See also :ref:`AnimationNodeOneShot.fadeout_time<class_AnimationNodeOneShot_property_fadeout_time>`.
+\ **Note:** **AnimationNodeTransition** transiciona el estado actual inmediatamente después de iniciar el fading. El tiempo restante exacto solo puede ser inferido de la ai¿nimación principal. Cuando :ref:`AnimationNodeOutput<class_AnimationNodeOutput>` es considerado el punto más alto, mientras el :ref:`xfade_time<class_AnimationNodeTransition_property_xfade_time>` no se escala en función del delta downstream. Véase también :ref:`AnimationNodeOneShot.fadeout_time<class_AnimationNodeOneShot_property_fadeout_time>`.
 
 .. rst-class:: classref-section-separator
 

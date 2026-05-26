@@ -1023,7 +1023,7 @@ See also :ref:`is_valid_unicode_identifier()<class_StringName_method_is_valid_un
 
 :ref:`bool<class_bool>` **is_valid_filename**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_filename>`
 
-Returns ``true`` if this string is a valid file name. A valid file name cannot be empty, begin or end with space characters, or contain characters that are not allowed (``:`` ``/`` ``\`` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
+Devuelve ``true`` si esta string es un nombre de archivo válido. Un nombre de archivo válido no puede estar vacío, ni comenzar o terminar con caracteres de espacio, ni contener caracteres que no están permitidos (``:`` ``/`` ```` ``?`` ``*`` ``"`` ``|`` ``%`` ``<`` ``>``).
 
 .. rst-class:: classref-item-separator
 
@@ -1035,14 +1035,14 @@ Returns ``true`` if this string is a valid file name. A valid file name cannot b
 
 :ref:`bool<class_bool>` **is_valid_float**\ (\ ) |const| :ref:`🔗<class_StringName_method_is_valid_float>`
 
-Returns ``true`` if this string represents a valid floating-point number. A valid float may contain only digits, one decimal point (``.``), and the exponent letter (``e``). It may also be prefixed with a positive (``+``) or negative (``-``) sign. Any valid integer is also a valid float (see :ref:`is_valid_int()<class_StringName_method_is_valid_int>`). See also :ref:`to_float()<class_StringName_method_to_float>`.
+Devuelve ``true`` si esta string representa un número de punto flotante válido. Un flotante válido puede contener solo dígitos, un punto decimal (``.``) y la letra de exponente (``e``). También puede estar precedido por un signo positivo (``+``) o negativo (``-``). Cualquier número entero válido también es un flotante válido (véase :ref:`is_valid_int()<class_StringName_method_is_valid_int>`). Véase también :ref:`to_float()<class_StringName_method_to_float>`.
 
 ::
 
-    print("1.7".is_valid_float())   # Prints true
-    print("24".is_valid_float())    # Prints true
-    print("7e3".is_valid_float())   # Prints true
-    print("Hello".is_valid_float()) # Prints false
+    print("1.7".is_valid_float())   # Imprime true
+    print("24".is_valid_float())    # Imprime true
+    print("7e3".is_valid_float())   # Imprime true
+    print("Hello".is_valid_float()) # Imprime false
 
 .. rst-class:: classref-item-separator
 
@@ -1156,7 +1156,7 @@ Un identificador Unicode válido debe comenzar con un carácter Unicode de clase
 
 Véase también :ref:`is_valid_ascii_identifier()<class_StringName_method_is_valid_ascii_identifier>`.
 
-\ **Nota:** Este método verifica identificadores de la misma manera que GDScript. Consulta :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` para comprobaciones más avanzadas.
+\ **Nota:** Este método verifica identificadores de la misma manera que GDScript. Véase :ref:`TextServer.is_valid_identifier()<class_TextServer_method_is_valid_identifier>` para comprobaciones más avanzadas.
 
 .. rst-class:: classref-item-separator
 
@@ -1690,11 +1690,11 @@ Si la string es una ruta de archivo válida, convierte la string en una ruta can
 
 :ref:`PackedStringArray<class_PackedStringArray>` **split**\ (\ delimiter\: :ref:`String<class_String>` = "", allow_empty\: :ref:`bool<class_bool>` = true, maxsplit\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_split>`
 
-Splits the string using a ``delimiter`` and returns an array of the substrings. If ``delimiter`` is an empty string, each substring will be a single character. This method is the opposite of :ref:`join()<class_StringName_method_join>`.
+Divide la string utilizando un ``delimiter`` y devuelve un arreglo con las subcadenas. Si ``delimiter`` es una string vacía, cada subcadena será un solo carácter. Este método es el opuesto a :ref:`join()<class_StringName_method_join>`.
 
-If ``allow_empty`` is ``false``, empty strings between adjacent delimiters are excluded from the array.
+Si ``allow_empty`` es ``false``, las cadenas vacías entre delimitadores adyacentes se excluyen del arreglo.
 
-If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``maxsplit``. By default, the entire string is split.
+Si ``maxsplit`` es mayor que ``0``, el número de divisiones no podrá exceder ``maxsplit``. De forma predeterminada, toda la string se divide.
 
 
 .. tabs::
@@ -1703,23 +1703,23 @@ If ``maxsplit`` is greater than ``0``, the number of splits may not exceed ``max
 
     var some_array = "One,Two,Three,Four".split(",", true, 2)
 
-    print(some_array.size()) # Prints 3
-    print(some_array[0])     # Prints "One"
-    print(some_array[1])     # Prints "Two"
-    print(some_array[2])     # Prints "Three,Four"
+    print(some_array.size()) # Imprime 3
+    print(some_array[0])     # Imprime "One"
+    print(some_array[1])     # Imprime "Two"
+    print(some_array[2])     # Imprime "Three,Four"
 
  .. code-tab:: csharp
 
-    // C#'s `Split()` does not support the `maxsplit` parameter.
+    // El `Split()` de C# no admite el parámetro `maxsplit`.
     var someArray = "One,Two,Three".Split(",");
 
-    GD.Print(someArray[0]); // Prints "One"
-    GD.Print(someArray[1]); // Prints "Two"
-    GD.Print(someArray[2]); // Prints "Three"
+    GD.Print(someArray[0]); // Imprime "One"
+    GD.Print(someArray[1]); // Imprime "Two"
+    GD.Print(someArray[2]); // Imprime "Three"
 
 
 
-\ **Note:** If you only need one substring from the array, consider using :ref:`get_slice()<class_StringName_method_get_slice>` which is faster. If you need to split strings with more complex rules, use the :ref:`RegEx<class_RegEx>` class instead.
+\ **Nota:** Si solo necesitas una subcadena del arreglo, considera usar :ref:`get_slice()<class_StringName_method_get_slice>`, que es más rápido. Si necesitas dividir cadenas con reglas más complejas, utiliza la clase :ref:`RegEx<class_RegEx>`.
 
 .. rst-class:: classref-item-separator
 

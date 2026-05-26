@@ -3711,11 +3711,11 @@ enum **ViewportDebugDraw**: :ref:`🔗<enum_RenderingServer_ViewportDebugDraw>`
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_SDFGI_PROBES** = ``17``
 
-Draws SDFGI probe data. This is the data structure that is used to give indirect lighting dynamic objects moving within the scene.
+绘制 SDFGI 探针数据。这是用于为场景中移动的动态对象提供间接照明的数据结构。
 
-When in the editor, left-clicking a probe will display additional bright dots that show its occlusion information. A white dot means the light is not occluded at all at the dot's position, while a red dot means the light is fully occluded. Intermediate values are possible.
+在编辑器中，左键点击探针将显示额外的亮点，这些亮点显示其遮挡信息。白点表示该点位置处的光线完全没有被遮挡，而红点表示光线完全被遮挡。也可能出现中间值。
 
-\ **Note:** Only supported when using the Forward+ rendering method.
+\ **注意：**\ 仅在使用 Forward+ 渲染方法时支持。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_GI_BUFFER:
 
@@ -4315,7 +4315,7 @@ enum **EnvironmentToneMapper**: :ref:`🔗<enum_RenderingServer_EnvironmentToneM
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+使用可调节的电影胶片式的色调映射曲线对较亮的值进行去饱和处理，从而获得更真实的外观。相比其他色调映射器而言，在颜色变亮时能够更好地保持色调。这是最慢的色调映射选项。
 
 .. rst-class:: classref-item-separator
 
@@ -5911,7 +5911,7 @@ enum **SplashStretchMode**: :ref:`🔗<enum_RenderingServer_SplashStretchMode>`
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_DISABLED** = ``0``
 
-No stretching is applied.
+不执行拉伸。
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP:
 
@@ -5919,7 +5919,7 @@ No stretching is applied.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP** = ``1``
 
-Stretches image to fullscreen while preserving aspect ratio.
+将图像拉伸至全屏，同时保持纵横比。
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_WIDTH:
 
@@ -5927,7 +5927,7 @@ Stretches image to fullscreen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_WIDTH** = ``2``
 
-Stretches the height of the image based on the width of the screen.
+根据屏幕宽度拉伸图像的高度。
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_KEEP_HEIGHT:
 
@@ -5935,7 +5935,7 @@ Stretches the height of the image based on the width of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_KEEP_HEIGHT** = ``3``
 
-Stretches the width of the image based on the height of the screen.
+根据屏幕高度拉伸图像的宽度。
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_COVER:
 
@@ -5943,7 +5943,7 @@ Stretches the width of the image based on the height of the screen.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_COVER** = ``4``
 
-Stretches the image to cover the entire screen while preserving aspect ratio.
+将图像拉伸以覆盖整个屏幕，同时保持纵横比。
 
 .. _class_RenderingServer_constant_SPLASH_STRETCH_MODE_IGNORE:
 
@@ -5951,7 +5951,7 @@ Stretches the image to cover the entire screen while preserving aspect ratio.
 
 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` **SPLASH_STRETCH_MODE_IGNORE** = ``5``
 
-Stretches the image to cover the entire screen but doesn't preserve aspect ratio.
+将图像拉伸以覆盖整个屏幕，但不保留纵横比。
 
 .. rst-class:: classref-item-separator
 
@@ -6485,7 +6485,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **canvas_item_add_ellipse**\ (\ item\: :ref:`RID<class_RID>`, pos\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor`` on the :ref:`CanvasItem<class_CanvasItem>` pointed to by the ``item`` :ref:`RID<class_RID>`. See also :ref:`CanvasItem.draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+在由 ``item`` :ref:`RID<class_RID>` 指向的 :ref:`CanvasItem<class_CanvasItem>` 上绘制一个半长轴为 ``major``\ 、半短轴为 ``minor`` 的椭圆。另见 :ref:`CanvasItem.draw_ellipse()<class_CanvasItem_method_draw_ellipse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7959,11 +7959,11 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`Image<class_Image>` **environment_bake_panorama**\ (\ environment\: :ref:`RID<class_RID>`, bake_irradiance\: :ref:`bool<class_bool>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_environment_bake_panorama>`
 
-Generates and returns an :ref:`Image<class_Image>` containing the radiance map for the specified ``environment`` RID's sky. This supports built-in sky material and custom sky shaders. If ``bake_irradiance`` is ``true``, the irradiance map is saved instead of the radiance map. The radiance map is used to render reflected light, while the irradiance map is used to render ambient light. See also :ref:`sky_bake_panorama()<class_RenderingServer_method_sky_bake_panorama>`.
+生成并返回包含 ``environment`` RID 中的天空的辐射率贴图的 :ref:`Image<class_Image>`\ 。支持内置天空材质和自定义天空着色器。如果 ``bake_irradiance`` 为 ``true``\ ，则保存的是辐照度贴图，而不是辐射率贴图。辐射率贴图用于渲染反射光，而辐照度贴图用于渲染环境光。另见 :ref:`sky_bake_panorama()<class_RenderingServer_method_sky_bake_panorama>`\ 。
 
-\ **Note:** The image is saved using linear encoding without any tonemapping performed, which means it will look too dark if viewed directly in an image editor.
+\ **注意：**\ 该图像使用线性编码保存，未执行任何色调映射，这意味着如果直接在图像编辑器中查看，图像会显得太暗。
 
-\ **Note:** ``size`` should be a 2:1 aspect ratio for the generated panorama to have square pixels. For radiance maps, there is no point in using a height greater than :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, as it won't increase detail. Irradiance maps only contain low-frequency data, so there is usually no point in going past a size of 128×64 pixels when saving an irradiance map.
+\ **注意：**\ 要让生成的全景图拥有正方形的像素，\ ``size`` 的长宽比应该为 2:1。辐射率贴图的高度超过 :ref:`Sky.radiance_size<class_Sky_property_radiance_size>` 没有意义，不会增加细节。辐照度仅包含低频数据，保存时超过 128×64 像素通常没有意义。
 
 .. rst-class:: classref-item-separator
 
@@ -8257,7 +8257,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **environment_set_ssr_half_size**\ (\ half_size\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_ssr_half_size>`
 
-Sets whether screen-space reflections will be rendered at full or half size. Half size is faster, but may look pixelated or cause flickering.
+设置屏幕空间反射是以全尺寸还是半尺寸渲染。半尺寸渲染速度更快，但可能会出现像素化或闪烁现象。
 
 .. rst-class:: classref-item-separator
 
@@ -8293,7 +8293,7 @@ Sets whether screen-space reflections will be rendered at full or half size. Hal
 
 |void| **environment_set_tonemap_agx_contrast**\ (\ env\: :ref:`RID<class_RID>`, agx_contrast\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_environment_set_tonemap_agx_contrast>`
 
-See :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>` for more details.
+有关更多详细信息，请参阅 :ref:`Environment.tonemap_agx_contrast<class_Environment_property_tonemap_agx_contrast>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9649,11 +9649,11 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **material_set_use_debanding**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_material_set_use_debanding>`
 
-When using the Mobile renderer, :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` can be used to enable or disable the debanding feature of 3D materials (:ref:`BaseMaterial3D<class_BaseMaterial3D>` and :ref:`ShaderMaterial<class_ShaderMaterial>`).
+使用移动渲染器时，可以使用 :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 启用或禁用 3D 材质（\ :ref:`BaseMaterial3D<class_BaseMaterial3D>` 和 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ）的去色带功能。
 
-\ :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` has no effect when using the Compatibility or Forward+ renderer. In Forward+, :ref:`Viewport<class_Viewport>` debanding can be used instead.
+使用兼容性渲染器或 Forward+ 渲染器时，\ :ref:`material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 无效。在 Forward+ 渲染器中，可以改用 :ref:`Viewport<class_Viewport>` 的去色带功能。
 
-See also :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` and :ref:`viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`.
+另见 :ref:`ProjectSettings.rendering/anti_aliasing/quality/use_debanding<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>` 和 :ref:`viewport_set_use_debanding()<class_RenderingServer_method_viewport_set_use_debanding>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -9761,7 +9761,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`AABB<class_AABB>` **mesh_get_custom_aabb**\ (\ mesh\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_mesh_get_custom_aabb>`
 
-返回网格的自定义 AABB。
+返回网格的自定义 aabb。
 
 .. rst-class:: classref-item-separator
 
@@ -9811,7 +9811,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **mesh_set_custom_aabb**\ (\ mesh\: :ref:`RID<class_RID>`, aabb\: :ref:`AABB<class_AABB>`\ ) :ref:`🔗<class_RenderingServer_method_mesh_set_custom_aabb>`
 
-设置网格的自定义 AABB。
+设置网格的自定义 aabb。
 
 .. rst-class:: classref-item-separator
 
@@ -10282,9 +10282,9 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **multimesh_instances_reset_physics_interpolation**\ (\ multimesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingServer_method_multimesh_instances_reset_physics_interpolation>`
 
-Prevents physics interpolation for all instances during the current physics tick.
+在当前物理周期中阻止对所有实例进行物理插值。
 
-This is useful when moving all instances to new locations, to give instantaneous changes rather than interpolation from the previous locations.
+适用于将所有实例移动到新位置的场合，可以产生瞬时变化，而不是从先前位置进行插值。
 
 .. rst-class:: classref-item-separator
 
@@ -11351,7 +11351,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 **已弃用：** Use :ref:`set_boot_image_with_stretch()<class_RenderingServer_method_set_boot_image_with_stretch>` instead.
 
-Sets a boot image. The ``color`` defines the background color. The value of ``scale`` indicates if the image will be scaled to fit the screen size. If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
+设置一个启动图像。\ ``color`` 定义背景颜色。\ ``scale`` 的值指示该图像是否会缩放以适应屏幕大小。如果 ``use_filter`` 为 ``true``\ ，则该图像将使用线性插值进行缩放。如果 ``use_filter`` 为 ``false``\ ，则该图像将使用最近邻插值进行缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -11363,7 +11363,7 @@ Sets a boot image. The ``color`` defines the background color. The value of ``sc
 
 |void| **set_boot_image_with_stretch**\ (\ image\: :ref:`Image<class_Image>`, color\: :ref:`Color<class_Color>`, stretch_mode\: :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>`, use_filter\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingServer_method_set_boot_image_with_stretch>`
 
-Sets a boot image. The ``color`` defines the background color. The value of ``stretch_mode`` indicates how the image will be stretched (see :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` for possible values). If ``use_filter`` is ``true``, the image will be scaled with linear interpolation. If ``use_filter`` is ``false``, the image will be scaled with nearest-neighbor interpolation.
+设置一个启动图像。\ ``color`` 定义背景颜色。\ ``stretch_mode`` 的值（可能的取值见 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>`\ ）指示该图像的拉伸方式。如果 ``use_filter`` 为 ``true``\ ，则该图像将使用线性插值进行缩放。如果 ``use_filter`` 为 ``false``\ ，则该图像将使用最近邻插值进行缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -11595,11 +11595,11 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`Image<class_Image>` **sky_bake_panorama**\ (\ sky\: :ref:`RID<class_RID>`, energy\: :ref:`float<class_float>`, bake_irradiance\: :ref:`bool<class_bool>`, size\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_RenderingServer_method_sky_bake_panorama>`
 
-Generates and returns an :ref:`Image<class_Image>` containing the radiance map for the specified ``sky`` RID. This supports built-in sky material and custom sky shaders. If ``bake_irradiance`` is ``true``, the irradiance map is saved instead of the radiance map. The radiance map is used to render reflected light, while the irradiance map is used to render ambient light. See also :ref:`environment_bake_panorama()<class_RenderingServer_method_environment_bake_panorama>`.
+生成并返回包含指定 ``sky`` RID 的辐射率贴图的 :ref:`Image<class_Image>`\ 。这样就能支持内置天空材质和自定义天空着色器。如果 ``bake_irradiance`` 为 ``true``\ ，则会保存辐照度贴图，不保存辐射率贴图。辐射率贴图用于渲染反射光，而辐照度贴图用于渲染环境光。另见 :ref:`environment_bake_panorama()<class_RenderingServer_method_environment_bake_panorama>`\ 。
 
-\ **Note:** The image is saved using linear encoding without any tonemapping performed, which means it will look too dark if viewed directly in an image editor. ``energy`` values above ``1.0`` can be used to brighten the resulting image.
+\ **注意：**\ 该图像使用线性编码保存，未进行任何色调映射，这意味着如果直接在图像编辑器中查看，图像会显得太暗。\ ``energy`` 值高于 ``1.0`` 可以用来提高图像亮度。
 
-\ **Note:** ``size`` should be a 2:1 aspect ratio for the generated panorama to have square pixels. For radiance maps, there is no point in using a height greater than :ref:`Sky.radiance_size<class_Sky_property_radiance_size>`, as it won't increase detail. Irradiance maps only contain low-frequency data, so there is usually no point in going past a size of 128×64 pixels when saving an irradiance map.
+\ **注意：**\ 对于生成的全景图，\ ``size`` 应该是 2:1 的比例，才能够得到正方形的像素。对于辐射率贴图，将高度设为大于 :ref:`Sky.radiance_size<class_Sky_property_radiance_size>` 的值没有意义，因为不会增加细节。辐照度贴图仅包含低频数据，因此保存辐照度贴图时通常大小超过 128×64 像素没有意义。
 
 .. rst-class:: classref-item-separator
 
@@ -11865,9 +11865,9 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`RID<class_RID>` **texture_create_from_native_handle**\ (\ type\: :ref:`TextureType<enum_RenderingServer_TextureType>`, format\: :ref:`Format<enum_Image_Format>`, native_handle\: :ref:`int<class_int>`, width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, depth\: :ref:`int<class_int>`, layers\: :ref:`int<class_int>` = 1, layered_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_create_from_native_handle>`
 
-Creates a texture based on a native handle that was created outside of Godot's renderer.
+根据在 Godot 渲染器外部创建的原生句柄创建纹理。
 
-\ **Note:** If using only the rendering device renderer, it's recommend to use :ref:`RenderingDevice.texture_create_from_extension()<class_RenderingDevice_method_texture_create_from_extension>` together with :ref:`texture_rd_create()<class_RenderingServer_method_texture_rd_create>`, rather than this method. This way, the texture's format and usage can be controlled more effectively.
+\ **注意：**\ 如果仅使用渲染设备渲染器，建议将 :ref:`RenderingDevice.texture_create_from_extension()<class_RenderingDevice_method_texture_create_from_extension>` 和 :ref:`texture_rd_create()<class_RenderingServer_method_texture_rd_create>` 结合使用，不要使用此方法。这样可以更有效地控制纹理的格式和用途。
 
 .. rst-class:: classref-item-separator
 
@@ -11891,11 +11891,11 @@ Creates a texture based on a native handle that was created outside of Godot's r
 
 :ref:`int<class_int>` **texture_get_native_handle**\ (\ texture\: :ref:`RID<class_RID>`, srgb\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_native_handle>`
 
-Returns the internal graphics handle for this texture object. For use when communicating with third-party APIs mostly with GDExtension.
+返回该纹理对象的内部图形句柄。主要用于 GDExtension 与第三方 API 通讯。
 
-\ ``srgb`` should be ``true`` when the texture uses nonlinear sRGB encoding and ``false`` when the texture uses linear encoding.
+\ ``srgb`` 在纹理使用非线性 sRGB 编码时应为 ``true``\ ，在纹理使用线性编码时应为 ``false``\ 。
 
-\ **Note:** This function returns a ``uint64_t`` which internally maps to a ``GLuint`` (OpenGL) or ``VkImage`` (Vulkan).
+\ **注意：**\ 这个函数返回的是 ``uint64_t``\ ，内部将其映射到 ``GLuint``\ （OpenGL）或 ``VkImage``\ （Vulkan）。
 
 .. rst-class:: classref-item-separator
 
@@ -11921,9 +11921,9 @@ Returns the internal graphics handle for this texture object. For use when commu
 
 :ref:`RID<class_RID>` **texture_get_rd_texture**\ (\ texture\: :ref:`RID<class_RID>`, srgb\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_RenderingServer_method_texture_get_rd_texture>`
 
-Returns a texture :ref:`RID<class_RID>` that can be used with :ref:`RenderingDevice<class_RenderingDevice>`.
+返回一个可用于 :ref:`RenderingDevice<class_RenderingDevice>` 的纹理 :ref:`RID<class_RID>`\ 。
 
-\ ``srgb`` should be ``true`` when the texture uses nonlinear sRGB encoding and ``false`` when the texture uses linear encoding.
+当纹理使用非线性 sRGB 编码时，\ ``srgb`` 应为 ``true``\ ；当纹理使用线性编码时，则应为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11963,11 +11963,11 @@ Returns a texture :ref:`RID<class_RID>` that can be used with :ref:`RenderingDev
 
 :ref:`RID<class_RID>` **texture_rd_create**\ (\ rd_texture\: :ref:`RID<class_RID>`, layer_type\: :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` = 0\ ) :ref:`🔗<class_RenderingServer_method_texture_rd_create>`
 
-Creates a new texture object based on a texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>`. If the texture contains layers, ``layer_type`` is used to define the layer type.
+基于直接在 :ref:`RenderingDevice<class_RenderingDevice>` 上创建的纹理新建一个纹理对象。如果纹理包含图层，则使用 ``layer_type`` 定义图层类型。
 
-Once finished with your RID, you will want to free the RID using the RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法释放该 RID。
 
-\ **Note:** The RenderingServer's :ref:`free_rid()<class_RenderingServer_method_free_rid>` won't free the underlying ``rd_texture``, you will want to free the ``rd_texture`` using :ref:`RenderingDevice.free_rid()<class_RenderingDevice_method_free_rid>`.
+\ **注意：**\ RenderingServer 的 :ref:`free_rid()<class_RenderingServer_method_free_rid>` 方法不会释放底层 ``rd_texture``\ ，需要使用 :ref:`RenderingDevice.free_rid()<class_RenderingDevice_method_free_rid>` 方法释放 ``rd_texture``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -12644,9 +12644,9 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **viewport_set_use_hdr_2d**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_use_hdr_2d>`
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen (if the Viewport is attached to the screen).
+如果为 ``true``\ ，则 2D 渲染将使用高动态范围（HDR）\ ``RGBA16`` 格式帧缓冲区。此外，2D 渲染将在线性值上执行，并在位块传输到屏幕之前（如果视口被附加到屏幕）立即使用适当的传输函数进行转换。
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients. This setting has the same effect as :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+实际上，这意味着视口的最终结果不会被限制在 ``0-1`` 范围内，无需调整颜色编码即可在 3D 渲染中使用。这使得 2D 渲染能够利用需要高动态范围的效果（例如 2D 辉光），并显著改善需要高度详细渐变的效果的外观。该设置与 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 的效果相同。
 
 .. rst-class:: classref-item-separator
 
@@ -12892,7 +12892,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 |void| **voxel_gi_set_baked_exposure_normalization**\ (\ voxel_gi\: :ref:`RID<class_RID>`, baked_exposure\: :ref:`float<class_float>`\ ) :ref:`🔗<class_RenderingServer_method_voxel_gi_set_baked_exposure_normalization>`
 
-用于通知渲染器烘焙体素 GI 时使用的曝光归一化值。运行时会使用这个值进行调制，确保体素 GI 能够维持恒定的曝光等级，即便场景范围的曝光归一化值在运行时发生改变。更多信息见 :ref:`camera_attributes_set_exposure()<class_RenderingServer_method_camera_attributes_set_exposure>`\ 。
+用于告知渲染器在烘焙 voxel gi（体素全局光照）时使用了什么样的曝光归一化值。该值会在运行时被调用并进行调制，以确保即使场景全局的曝光归一化在运行时发生改变，voxel gi 依然能保持一致的曝光水平。详情请参阅 :ref:`camera_attributes_set_exposure()<class_RenderingServer_method_camera_attributes_set_exposure>`\ 。
 
 .. rst-class:: classref-item-separator
 

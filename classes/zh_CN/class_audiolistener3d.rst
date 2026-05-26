@@ -78,7 +78,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。该监听器相对于这些物体的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
+通过在 ``_process`` 中追踪对象位置的变化，来模拟 `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ 。这个监听器（listener）与那些对象之间的相对速度变化，会影响音频的听感（具体表现为改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` 属性）。
 
 .. _class_AudioListener3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -86,7 +86,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_AudioListener3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_AudioListener3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。该监听器相对于这些物体的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
+通过在 ``_physics_process`` 中追踪物体位置的变化，来模拟 `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 。该监听器（listener）与这些物体之间的相对速度变化，会影响音频的听感（具体表现为改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` 属性）。
 
 .. rst-class:: classref-section-separator
 

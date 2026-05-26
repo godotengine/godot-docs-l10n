@@ -289,9 +289,9 @@ PackedStringArray
 
 :ref:`String<class_String>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedStringArray_method_get>`
 
-Returns the :ref:`String<class_String>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns an empty string.
+返回数组中给定 ``index`` 处的 :ref:`String<class_String>` 值。如果 ``index`` 越界或为负数，则该方法失败并返回空字符串。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+该方法类似于 ``[]`` 运算符（但不等价）。最显著的区别就是从编辑器中运行时，该方法失败不会暂停项目运行。
 
 .. rst-class:: classref-item-separator
 

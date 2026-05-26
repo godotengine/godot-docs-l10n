@@ -1278,11 +1278,11 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 - |void| **set_owner**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_owner**\ (\ )
 
-The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a :ref:`PackedScene<class_PackedScene>`, all the nodes it owns are also saved with it. See also :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
+Владелец этого узла. Владелец должен быть предком этого узла. При упаковке узла-владельца в :ref:`PackedScene<class_PackedScene>` все принадлежащие ему узлы также сохраняются вместе с ним. См. также :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
 
-\ **Note:** In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will **not** be saved. To prevent this, remember to set the owner after calling :ref:`add_child()<class_Node_method_add_child>`.
+\ **Примечание:** В редакторе узлы, не принадлежащие корневому узлу сцены, обычно не отображаются в панели сцен и не будут **сохранены**. Чтобы этого избежать, не забудьте установить владельца после вызова :ref:`add_child()<class_Node_method_add_child>`.
 
-\ **Note:** The owner needs to be the current scene root. See `Instancing scenes <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ in the documentation for more information.
+\ **Примечание:** Владельцем должен быть текущий корневой узел сцены. См. `Создание экземпляров сцен <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ в документации для получения дополнительной информации.
 
 .. rst-class:: classref-item-separator
 

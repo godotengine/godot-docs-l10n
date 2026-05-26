@@ -1410,7 +1410,7 @@ The outline size in the 2D skeleton editor (in pixels). See also :ref:`editors/2
 
 :ref:`Color<class_Color>` **editors/2d/bone_selected_color** :ref:`🔗<class_EditorSettings_property_editors/2d/bone_selected_color>`
 
-The color to use for selected bones in the 2D skeleton editor. See also :ref:`editors/2d/bone_outline_color<class_EditorSettings_property_editors/2d/bone_outline_color>`.
+La couleur à utiliser pour les os sélectionnés dans l'éditeur de squelette 2D. Voir aussi :ref:`editors/2d/bone_outline_color<class_EditorSettings_property_editors/2d/bone_outline_color>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1422,9 +1422,9 @@ The color to use for selected bones in the 2D skeleton editor. See also :ref:`ed
 
 :ref:`float<class_float>` **editors/2d/bone_width** :ref:`🔗<class_EditorSettings_property_editors/2d/bone_width>`
 
-The bone width in the 2D skeleton editor (in pixels). See also :ref:`editors/2d/bone_outline_size<class_EditorSettings_property_editors/2d/bone_outline_size>`.
+La largeur d'os dans l'éditeur de squelette 2D (en pixels). Voir aussi :ref:`editors/2d/bone_outline_size<class_EditorSettings_property_editors/2d/bone_outline_size>`.
 
-\ **Note:** Changes to this value only apply after modifying a :ref:`Bone2D<class_Bone2D>` node in any way, or closing and reopening the scene.
+\ **Note :** Les modifications apportées à cette valeur ne s'appliquent qu'après avoir modifié un noeud :ref:`Bone2D<class_Bone2D>` de quelque manière que ce soit, ou après avoir fermé et ré-ouvert la scène.
 
 .. rst-class:: classref-item-separator
 
@@ -3294,14 +3294,14 @@ If this setting is empty, Blender's default paths will be detected and used auto
 
 \ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
 \ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3311,7 +3311,7 @@ If this setting is empty, Blender's default paths will be detected and used auto
 
 \ **Linux/\*BSD:**\ 
 
-::
+.. code:: text
 
     - /usr/bin/blender
     - /usr/local/bin/blender

@@ -284,7 +284,7 @@ Si es ``true``, genera variantes de menor detalle de la malla que se mostrarán 
 
 :ref:`int<class_int>` **meshes/light_baking** = ``1`` :ref:`🔗<class_ResourceImporterScene_property_meshes/light_baking>`
 
-Configura :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` de las mallas en la escena 3D. Si se establece en **Lightmaps estáticos**, establece el modo GI de las mallas en estático y genera UV2 al importar para el procesado de :ref:`LightmapGI<class_LightmapGI>`.
+Configura :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` de las mallas en la escena 3D. Si se establece en **Lightmaps estáticos**, establece el modo GI de las mallas en estático y genera UV2 al importar para el baking de :ref:`LightmapGI<class_LightmapGI>`.
 
 .. rst-class:: classref-item-separator
 

@@ -14,27 +14,27 @@ CopyTransformModifier3D
 描述
 ----
 
-Apply the copied transform of the bone set by :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` to the bone set by :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` with processing it with some masks and options.
+从通过 :ref:`BoneConstraint3D.set_reference_bone()<class_BoneConstraint3D_method_set_reference_bone>` 指定的骨骼上复制变换，将所复制的变换应用到通过 :ref:`BoneConstraint3D.set_apply_bone()<class_BoneConstraint3D_method_set_apply_bone>` 设置的骨骼上，并可使用一些遮罩和选项对这个过程进行调整。
 
-There are 4 ways to apply the transform, depending on the combination of :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>` and :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`.
+根据 :ref:`set_relative()<class_CopyTransformModifier3D_method_set_relative>`\ （相对）和 :ref:`set_additive()<class_CopyTransformModifier3D_method_set_additive>`\ （叠加）的组合，有四种方式可以应用该变换：
 
-\ **Relative + Additive:**\ 
+\ **相对 + 叠加**\ ：
 
-- Extract reference pose relative to the rest and add it to the apply bone's pose.
+- 提取相对于静止姿态的参考姿态，并将其添加到目标骨骼的姿态上。
 
-\ **Relative + Not Additive:**\ 
+\ **相对 + 非叠加：**\ 
 
-- Extract reference pose relative to the rest and add it to the apply bone's rest.
+- 提取相对于静止姿态的参考姿态，并将其添加到目标骨骼的静止姿态上。
 
-\ **Not Relative + Additive:**\ 
+\ **非相对 + 叠加：**\ 
 
-- Extract reference pose absolutely and add it to the apply bone's pose.
+- 提取参考姿态的绝对姿态，并将其添加到目标骨骼的姿态上。
 
-\ **Not Relative + Not Additive:**\ 
+\ **非相对 + 非叠加**\ ：
 
-- Extract reference pose absolutely and the apply bone's pose is replaced with it.
+- 提取参考姿态的绝对姿态，并将其替换目标骨骼的姿态。
 
-\ **Note:** Relative option is available only in the case :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` is :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>`. See also :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`.
+\ **注意：**\ 相对选项仅当 :ref:`BoneConstraint3D.get_reference_type()<class_BoneConstraint3D_method_get_reference_type>` 为 :ref:`BoneConstraint3D.REFERENCE_TYPE_BONE<class_BoneConstraint3D_constant_REFERENCE_TYPE_BONE>` 时可用。另见 :ref:`ReferenceType<enum_BoneConstraint3D_ReferenceType>`\ 。
 
 .. rst-class:: classref-reftable-group
 

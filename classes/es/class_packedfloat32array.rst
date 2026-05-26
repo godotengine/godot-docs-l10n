@@ -12,11 +12,11 @@ A packed array of 32-bit floating-point values.
 Descripción
 ----------------------
 
-An array specifically designed to hold 32-bit floating-point values (float). Packs data tightly, so it saves memory for large array sizes.
+Un array diseñado específicamente para almacenar valores de punto flotante de 32 bits (float). Empaqueta los datos de forma compacta, ahorrando memoria para arrays de gran tamaño.
 
-If you need to pack 64-bit floats tightly, see :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
+Si necesitas empaquetar floats de 64 bits de forma compacta, consulta :ref:`PackedFloat64Array<class_PackedFloat64Array>`.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda modificarse independientemente del array original, usa :ref:`duplicate()<class_PackedFloat32Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y cambiarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo de nuevo a la propiedad.
 
 .. note::
 
@@ -282,9 +282,9 @@ Busca un valor en el array y devuelve su índice o ``-1`` si no lo encuentra. Op
 
 :ref:`float<class_float>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_get>`
 
-Returns the 32-bit float at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``0.0``.
+Devuelve el float de 32 bits en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``0.0``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. Lo más notable es que, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -358,9 +358,9 @@ Elimina un elemento del array por indice.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedFloat32Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedFloat32Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+Establece el tamaño del array. Si el array aumenta de tamaño, reserva elementos al final del array. Si el array se encoge, trunca el array al nuevo tamaño. Llamar a :ref:`resize()<class_PackedFloat32Array_method_resize>` una vez y asignar los nuevos valores es más rápido que añadir nuevos elementos uno por uno.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedFloat32Array_method_size>` to find the actual size of the array after resize.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las siguientes constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si el tamaño es negativo, o :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` si las asignaciones fallan. Usa :ref:`size()<class_PackedFloat32Array_method_size>` para encontrar el tamaño real del array después del redimensionamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -384,9 +384,9 @@ Invierte el orden de los elementos en el array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`float<class_float>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+Busca el array en orden inverso. Opcionalmente, se puede pasar un índice de inicio de búsqueda. Si es negativo, el índice de inicio se considera relativo al final del array.
 
-\ **Note:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` doesn't behave the same as other numbers. Therefore, the results from this method may not be accurate if NaNs are included.
+\ **Nota:** :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` no se comporta igual que otros números. Por lo tanto, los resultados de este método pueden no ser precisos si se incluyen NaNs.
 
 .. rst-class:: classref-item-separator
 
@@ -422,11 +422,11 @@ Devuelve el numer de elementos en el array.
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedFloat32Array_method_slice>`
 
-Returns the slice of the **PackedFloat32Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedFloat32Array**.
+Devuelve la porción del **PackedFloat32Array**, desde ``begin`` (inclusivo) hasta ``end`` (exclusivo), como un nuevo **PackedFloat32Array**.
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+El valor absoluto de ``begin`` y ``end`` se ajustará al tamaño del array, por lo que el valor predeterminado para ``end`` hace que se corte al tamaño del array por defecto (es decir, ``arr.slice(1)`` es una abreviatura de ``arr.slice(1, arr.size())``).
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es decir, ``arr.slice(0, -2)`` es una abreviatura de ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -471,7 +471,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ) :ref:`🔗<class_PackedFloat32Array_operator_neq_PackedFloat32Array>`
 
-Returns ``true`` if contents of the arrays differ.
+Devuelve ``true`` si los contenidos de los arrays difieren.
 
 .. rst-class:: classref-item-separator
 

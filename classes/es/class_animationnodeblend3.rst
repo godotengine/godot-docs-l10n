@@ -14,17 +14,17 @@ Mezcla dos de tres animaciones linealmente dentro de un :ref:`AnimationNodeBlend
 Descripción
 ----------------------
 
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations out of three linearly out of three based on the amount value.
+Un recurso para añadir a un :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Mezcla linealmente dos animaciones de un total de tres según el valor de amount.
 
-This animation node has three inputs:
+Este nodo de animación tiene tres entradas:
 
-- The base animation to blend with
+- La animación base con la que mezclar.
 
-- A "-blend" animation to blend with when the blend amount is negative value
+- Una animación "-blend" para mezclar cuando el valor de blend es negativo.
 
-- A "+blend" animation to blend with when the blend amount is positive value
+- Una animación "+blend" para mezclar cuando el valor de blend es positivo.
 
-In general, the blend value should be in the ``[-1.0, 1.0]`` range. Values outside of this range can blend amplified animations, however, :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>` works better for this purpose.
+En general, el valor de mezcla (blend) debería estar en el rango ``[-1.0, 1.0]``. Valores fuera de este rango pueden mezclar animaciones amplificadas; sin embargo, :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>` funciona mejor para este propósito.
 
 .. rst-class:: classref-introduction-group
 

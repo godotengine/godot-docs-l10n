@@ -205,7 +205,7 @@ SpinBox
 - |void| **set_custom_arrow_round**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_custom_arrow_rounding**\ (\ )
 
-If ``true``, the value will be rounded to a multiple of :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>` when interacting with the arrow buttons. Otherwise, increments the value by :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>` and then rounds it according to :ref:`Range.step<class_Range_property_step>`.
+如果为 ``true``\ ，则与箭头按钮交互时，该值将四舍五入为 :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>` 的倍数。否则，值将增加 :ref:`custom_arrow_step<class_SpinBox_property_custom_arrow_step>`\ ，然后根据 :ref:`Range.step<class_Range_property_step>` 进行四舍五入。
 
 .. rst-class:: classref-item-separator
 

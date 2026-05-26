@@ -7,22 +7,22 @@ HeightMapShape3D
 
 **Hereda:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 3D heightmap shape used for physics collision.
+Una forma de mapa de altura 3D utilizada para la colisión física.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A 3D heightmap shape, intended for use in physics to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`. This type is most commonly used for terrain with vertices placed in a fixed-width grid.
+Una forma de mapa de altura 3D, destinada a ser utilizada en físicas para proporcionar una forma a un :ref:`CollisionShape3D<class_CollisionShape3D>`. Este tipo se utiliza con mayor frecuencia para terrenos con vértices colocados en una cuadrícula de ancho fijo.
 
-The heightmap is represented as a 2D grid of height values, which represent the position of grid points on the Y axis. Grid points are spaced 1 unit apart on the X and Z axes, and the grid is centered on the origin of the :ref:`CollisionShape3D<class_CollisionShape3D>` node. Internally, each grid square is divided into two triangles.
+El mapa de altura se representa como una cuadrícula 2D de valores de altura, que representan la posición de los puntos de la cuadrícula en el eje Y. Los puntos de la cuadrícula están espaciados 1 unidad en los ejes X y Z, y la cuadrícula está centrada en el origen del nodo :ref:`CollisionShape3D<class_CollisionShape3D>`. Internamente, cada cuadrado de la cuadrícula se divide en dos triángulos.
 
-Due to the nature of the heightmap, it cannot be used to model overhangs or caves, which would require multiple vertices at the same vertical location. Holes can be punched through the collision by assigning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` to the height of the desired vertices (this is supported in both GodotPhysics3D and Jolt Physics). You could then insert meshes with their own separate collision to provide overhangs, caves, and so on.
+Debido a la naturaleza del mapa de altura, no puede utilizarse para modelar salientes o cuevas, lo que requeriría múltiples vértices en la misma ubicación vertical. Se pueden hacer agujeros a través de la colisión asignando :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` a la altura de los vértices deseados (esto es compatible tanto con GodotPhysics3D como con Jolt Physics). Luego podrías insertar mallas con su propia colisión separada para proporcionar salientes, cuevas, etc.
 
-\ **Performance:** **HeightMapShape3D** is faster to check collisions against than :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, but it is significantly slower than primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`.
+\ **Rendimiento:** **HeightMapShape3D** es más rápido para comprobar colisiones que :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`, pero es significativamente más lento que formas primitivas como :ref:`BoxShape3D<class_BoxShape3D>`.
 
-A heightmap collision shape can also be built by using an :ref:`Image<class_Image>` reference:
+Una forma de colisión de mapa de altura también se puede construir utilizando una referencia :ref:`Image<class_Image>`:
 
 
 .. tabs::
@@ -40,7 +40,7 @@ A heightmap collision shape can also be built by using an :ref:`Image<class_Imag
 
 
 
-\ **Note:** If you need to use a spacing different than 1 unit, you can adjust the :ref:`Node3D.scale<class_Node3D_property_scale>` of the shape. However, keep in mind that GodotPhysics3D does not support non-uniform scaling: you'll need to scale the Y axis by the same amount as the X and Z axes, which means the values in :ref:`map_data<class_HeightMapShape3D_property_map_data>` will need to be pre-scaled by the inverse of that scale. Also note that GodotPhysics3D does not support scaling at all for dynamic bodies (that is, non-frozen :ref:`RigidBody3D<class_RigidBody3D>` nodes); to use a scaled **HeightMapShape3D** with those, you will need to use Jolt Physics.
+\ **Nota:** Si necesitas usar un espaciado diferente a 1 unidad, puedes ajustar la :ref:`Node3D.scale<class_Node3D_property_scale>` de la forma. Sin embargo, ten en cuenta que GodotPhysics3D no soporta el escalado no uniforme: necesitarás escalar el eje Y por la misma cantidad que los ejes X y Z, lo que significa que los valores en :ref:`map_data<class_HeightMapShape3D_property_map_data>` deberán ser pre-escalados por el inverso de esa escala. También ten en cuenta que GodotPhysics3D no soporta escalado en absoluto para cuerpos dinámicos (es decir, nodos :ref:`RigidBody3D<class_RigidBody3D>` no congelados); para usar un **HeightMapShape3D** escalado con estos, necesitarás usar Jolt Physics.
 
 .. rst-class:: classref-reftable-group
 
@@ -94,7 +94,7 @@ Descripciones de Propiedades
 - |void| **set_map_data**\ (\ value\: :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ )
 - :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_map_data**\ (\ )
 
-Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMapShape3D_property_map_width>` multiplied by :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
+Datos del mapa de altura. El tamaño del array debe ser igual a :ref:`map_width<class_HeightMapShape3D_property_map_width>` multiplicado por :ref:`map_depth<class_HeightMapShape3D_property_map_depth>`.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedFloat32Array<class_PackedFloat32Array>` for more details.
 
@@ -113,7 +113,7 @@ Heightmap data. The array's size must be equal to :ref:`map_width<class_HeightMa
 - |void| **set_map_depth**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_depth**\ (\ )
 
-Number of vertices in the depth of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+Número de vértices en la profundidad del mapa de altura. Cambiar esto redimensionará :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Number of vertices in the depth of the heightmap. Changing this will resize the 
 - |void| **set_map_width**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_map_width**\ (\ )
 
-Number of vertices in the width of the heightmap. Changing this will resize the :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
+Número de vértices en el ancho del mapa de altura. Cambiar esto redimensionará :ref:`map_data<class_HeightMapShape3D_property_map_data>`.
 
 .. rst-class:: classref-section-separator
 
@@ -171,13 +171,13 @@ Devuelve el valor de altura más pequeño encontrado en :ref:`map_data<class_Hei
 
 |void| **update_map_data_from_image**\ (\ image\: :ref:`Image<class_Image>`, height_min\: :ref:`float<class_float>`, height_max\: :ref:`float<class_float>`\ ) :ref:`🔗<class_HeightMapShape3D_method_update_map_data_from_image>`
 
-Updates :ref:`map_data<class_HeightMapShape3D_property_map_data>` with data read from an :ref:`Image<class_Image>` reference. Automatically resizes heightmap :ref:`map_width<class_HeightMapShape3D_property_map_width>` and :ref:`map_depth<class_HeightMapShape3D_property_map_depth>` to fit the full image width and height.
+Actualiza :ref:`map_data<class_HeightMapShape3D_property_map_data>` con datos leídos de una referencia :ref:`Image<class_Image>`. Redimensiona automáticamente el mapa de altura :ref:`map_width<class_HeightMapShape3D_property_map_width>` y :ref:`map_depth<class_HeightMapShape3D_property_map_depth>` para ajustarse al ancho y alto completo de la imagen.
 
-The image needs to be in either :ref:`Image.FORMAT_RF<class_Image_constant_FORMAT_RF>` (32 bit), :ref:`Image.FORMAT_RH<class_Image_constant_FORMAT_RH>` (16 bit), or :ref:`Image.FORMAT_R8<class_Image_constant_FORMAT_R8>` (8 bit).
+La imagen debe estar en :ref:`Image.FORMAT_RF<class_Image_constant_FORMAT_RF>` (32 bits), :ref:`Image.FORMAT_RH<class_Image_constant_FORMAT_RH>` (16 bits) o :ref:`Image.FORMAT_R8<class_Image_constant_FORMAT_R8>` (8 bits).
 
-Each image pixel is read in as a float on the range from ``0.0`` (black pixel) to ``1.0`` (white pixel). This range value gets remapped to ``height_min`` and ``height_max`` to form the final height value.
+Cada píxel de la imagen se lee como un flotante en el rango de ``0.0`` (píxel negro) a ``1.0`` (píxel blanco). Este valor de rango se reasigna a ``height_min`` y ``height_max`` para formar el valor de altura final.
 
-\ **Note:** Using a heightmap with 16-bit or 32-bit data, stored in EXR or HDR format is recommended. Using 8-bit height data, or a format like PNG that Godot imports as 8-bit, will result in a terraced terrain.
+\ **Nota:** Se recomienda usar un mapa de altura con datos de 16 o 32 bits, almacenado en formato EXR o HDR. Usar datos de altura de 8 bits, o un formato como PNG que Godot importa como 8 bits, resultará en un terreno aterrazado.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -139,9 +139,9 @@ enum **MipmapMode**: :ref:`🔗<enum_OpenXRCompositionLayer_MipmapMode>`
 
 :ref:`MipmapMode<enum_OpenXRCompositionLayer_MipmapMode>` **MIPMAP_MODE_DISABLED** = ``0``
 
-Вимкнути MIP-мапінг.
+Вимкнути міпмаппінг.
 
-\ **Примітка:** MIP-мапінг можна вимкнути лише в рендерері сумісності.
+\ **Примітка:** Міпмаппінг можна вимкнути лише в рендерері «Сумісність».
 
 .. _class_OpenXRCompositionLayer_constant_MIPMAP_MODE_NEAREST:
 

@@ -16,9 +16,9 @@ RenderSceneBuffers
 描述
 ----
 
-Abstract scene buffers object, created for each viewport for which 3D rendering is done. It manages any additional buffers used during rendering and will discard buffers when the viewport is resized. See also :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`.
+抽象场景缓冲对象，为完成 3D 渲染的每个视口创建。它管理渲染期间使用的任何额外缓冲区，并在调整视口大小时丢弃缓冲区。另见 :ref:`RenderSceneBuffersRD<class_RenderSceneBuffersRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 这是内部渲染服务器对象。请勿在脚本中实例化该类。
 
 .. rst-class:: classref-reftable-group
 

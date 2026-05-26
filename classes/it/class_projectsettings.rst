@@ -1532,6 +1532,8 @@ Proprietà
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`rendering/environment/defaults/default_environment<class_ProjectSettings_property_rendering/environment/defaults/default_environment>`                                                               | ``""``                                                                                           |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`rendering/environment/fog/use_legacy_blending<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`                                                                         | ``false``                                                                                        |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>`                                                                                     | ``1``                                                                                            |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/environment/glow/upscale_mode.mobile<class_ProjectSettings_property_rendering/environment/glow/upscale_mode.mobile>`                                                                       | ``0``                                                                                            |
@@ -1712,7 +1714,7 @@ Proprietà
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/ggx_samples.mobile<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples.mobile>`                                                   | ``16``                                                                                           |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`                                                       | ``7``                                                                                            |
+   | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`                                                       | ``8``                                                                                            |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>`                                     | ``true``                                                                                         |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -3757,7 +3759,7 @@ Quando impostato su ``true``, produce un avviso quando una variabile locale non 
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/unused_struct** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/unused_struct>`
 
-Quando impostato su ``true``, produce un avviso quando uno struct non è mai utilizzato.
+Quando impostato su ``true``, produce un avviso quando una struct non è mai utilizzata.
 
 .. rst-class:: classref-item-separator
 
@@ -4899,7 +4901,7 @@ Se ``true``, la finestra principale usa angoli acuti per impostazione predefinit
 
 Se ``true``, suggerisce al gestore delle finestre che lo sfondo della finestra principale *può* essere trasparente. Questo non rende lo sfondo effettivamente trasparente. Affinché lo sfondo sia trasparente, anche la viewport radice si deve rendere trasparente abilitando :ref:`rendering/viewport/transparent_background<class_ProjectSettings_property_rendering/viewport/transparent_background>`.
 
-\ **Nota:** Per usare una schermata iniziale trasparente, imposta :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` su ``Color(0, 0, 0, 0)``.
+\ **Nota:** Per usare una schermata di avvio trasparente, imposta :ref:`application/boot_splash/bg_color<class_ProjectSettings_property_application/boot_splash/bg_color>` su ``Color(0, 0, 0, 0)``.
 
 \ **Nota:** Questa impostazione non ha effetto se :ref:`display/window/per_pixel_transparency/allowed<class_ProjectSettings_property_display/window/per_pixel_transparency/allowed>` è impostato su ``false``.
 
@@ -11693,6 +11695,18 @@ L':ref:`Environment<class_Environment>` che sarà utilizzato come ambiente di ri
 
 ----
 
+.. _class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
+
+Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ProjectSettings_property_rendering/environment/glow/upscale_mode:
 
 .. rst-class:: classref-property
@@ -12557,7 +12571,7 @@ La quantità di suddivisione del secondo quadrante sull'atlante delle ombre. Per
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv>`
 
-The subdivision amount of the third quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
+La quantità di suddivisione del terzo quadrante sull'atlante delle ombre. Per ulteriori informazioni, consultare la `documentazione <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -12569,7 +12583,7 @@ The subdivision amount of the third quadrant on the shadow atlas. See the `docum
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv** = ``4`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv>`
 
-The subdivision amount of the fourth quadrant on the shadow atlas. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
+La quantità di suddivisione del quarto quadrante sull'atlante delle ombre. Per ulteriori informazioni, consultare la `documentazione <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -12581,7 +12595,7 @@ The subdivision amount of the fourth quadrant on the shadow atlas. See the `docu
 
 :ref:`int<class_int>` **rendering/lights_and_shadows/positional_shadow/atlas_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/lights_and_shadows/positional_shadow/atlas_size>`
 
-The size of the shadow atlas used for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>` nodes. See the `documentation <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__ for more information.
+La dimensione dell'atlante delle ombre utilizzato per i nodi :ref:`OmniLight3D<class_OmniLight3D>` e :ref:`SpotLight3D<class_SpotLight3D>`. Per ulteriori informazioni, consultare la `documentazione <../tutorials/3d/lights_and_shadows.html#shadow-atlas>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -12913,7 +12927,7 @@ Sostituzione di fascia bassa per :ref:`rendering/reflections/sky_reflections/ggx
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``7`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
+:ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
 
 Limita il numero di strati da usare nelle mappe di radianza quando si usa il campionamento di importanza. Un numero inferiore sarà leggermente più veloce e occuperà meno VRAM.
 

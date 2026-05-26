@@ -333,11 +333,11 @@ Habilitar o deshabilitar la oclusión de luz.
 - |void| **set_physics_quadrant_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_quadrant_size**\ (\ )
 
-The **TileMapLayer**'s physics quadrant size. Within a physics quadrant, cells with similar physics properties are grouped together and their collision shapes get merged. :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together ``16 * 16 = 256`` tiles.
+El tamaño del cuadrante de física de **TileMapLayer**. Dentro de un cuadrante de física, las celdas con propiedades físicas similares se agrupan y sus formas de colisión se fusionan. :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` define la longitud del lado de un cuadrado, en el sistema de coordenadas del mapa, que forma el cuadrante. Por lo tanto, el tamaño de cuadrante predeterminado agrupa juntos ``16 * 16 = 256`` tiles.
 
-\ **Note:** As quadrants are created according to the map's coordinate system, the quadrant's "square shape" might not look like square in the **TileMapLayer**'s local coordinate system.
+\ **Nota:** Como los cuadrantes se crean de acuerdo con el sistema de coordenadas del mapa, la "forma cuadrada" del cuadrante podría no parecerse a un cuadrado en el sistema de coordenadas local de **TileMapLayer**.
 
-\ **Note:** This impacts the value returned by :ref:`get_coords_for_body_rid()<class_TileMapLayer_method_get_coords_for_body_rid>`. Higher values will make that function less precise. To get the exact cell coordinates, you need to set :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which disables physics chunking.
+\ **Nota:** Esto afecta el valor devuelto por :ref:`get_coords_for_body_rid()<class_TileMapLayer_method_get_coords_for_body_rid>`. Valores más altos harán que esa función sea menos precisa. Para obtener las coordenadas exactas de la celda, debes establecer :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` en ``1``, lo que deshabilita la fragmentación de la física.
 
 .. rst-class:: classref-item-separator
 
@@ -616,9 +616,9 @@ Devuelve el objeto :ref:`TileData<class_TileData>` asociado con la celda dada, o
 
 :ref:`Vector2i<class_Vector2i>` **get_coords_for_body_rid**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_coords_for_body_rid>`
 
-Returns the coordinates of the physics quadrant (see :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>`) for given physics body :ref:`RID<class_RID>`. Such an :ref:`RID<class_RID>` can be retrieved from :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>`, when colliding with a tile.
+Devuelve las coordenadas del cuadrante de física (ver :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>`) para el cuerpo de física :ref:`RID<class_RID>` dado. Dicho :ref:`RID<class_RID>` se puede recuperar de :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>`, al colisionar con un tile.
 
-\ **Note:** Higher values of :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` will make this function less precise. To get the exact cell coordinates, you need to set :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which disables physics chunking.
+\ **Nota:** Valores más altos de :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` harán que esta función sea menos precisa. Para obtener las coordenadas exactas de la celda, debes establecer :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` en ``1``, lo que deshabilita la fragmentación de la física.
 
 .. rst-class:: classref-item-separator
 

@@ -113,9 +113,9 @@ EditorExportPlatformExtension
 
 :ref:`bool<class_bool>` **_can_export**\ (\ preset\: :ref:`EditorExportPreset<class_EditorExportPreset>`, debug\: :ref:`bool<class_bool>`\ ) |virtual| |const| :ref:`🔗<class_EditorExportPlatformExtension_private_method__can_export>`
 
-Returns ``true`` if the specified ``preset`` is valid and can be exported. Use :ref:`set_config_error()<class_EditorExportPlatformExtension_method_set_config_error>` and :ref:`set_config_missing_templates()<class_EditorExportPlatformExtension_method_set_config_missing_templates>` to set error details.
+如果指定的 ``preset`` 有效且可以导出，则返回 ``true``\ 。使用 :ref:`set_config_error()<class_EditorExportPlatformExtension_method_set_config_error>` 和 :ref:`set_config_missing_templates()<class_EditorExportPlatformExtension_method_set_config_missing_templates>` 来设置错误细节。
 
-Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>` and :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` to determine if exporting is possible.
+通常的实现会调用 :ref:`_has_valid_export_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_export_configuration>` 和 :ref:`_has_valid_project_configuration()<class_EditorExportPlatformExtension_private_method__has_valid_project_configuration>` 来确定导出是否可行。
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Usual implementations call :ref:`_has_valid_export_configuration()<class_EditorE
 
 |void| **_initialize**\ (\ ) |virtual| :ref:`🔗<class_EditorExportPlatformExtension_private_method__initialize>`
 
-Initializes the plugin. Called by the editor when platform is registered.
+初始化插件。平台注册时由编辑器调用。
 
 .. rst-class:: classref-item-separator
 

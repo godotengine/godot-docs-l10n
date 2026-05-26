@@ -14,15 +14,15 @@ Una unidad de ejecución en un proceso.
 Descripción
 ----------------------
 
-A unit of execution in a process. Can run methods on :ref:`Object<class_Object>`\ s simultaneously. The use of synchronization via :ref:`Mutex<class_Mutex>` or :ref:`Semaphore<class_Semaphore>` is advised if working with shared objects.
+Una unidad de ejecución en un proceso. Puede ejecutar métodos en :ref:`Object<class_Object>`\ s simultáneamente. Se aconseja el uso de la sincronización a través de :ref:`Mutex<class_Mutex>` o :ref:`Semaphore<class_Semaphore>` si se trabaja con objetos compartidos.
 
-\ **Warning:** To ensure proper cleanup without crashes or deadlocks, when a **Thread**'s reference count reaches zero and it is therefore destroyed, the following conditions must be met:
+\ **Advertencia:** Para asegurar una limpieza adecuada sin fallos o interbloqueos, cuando el contador de referencias de un **Thread** llega a cero y, por lo tanto, es destruido, deben cumplirse las siguientes condiciones:
 
-- It must not have any :ref:`Mutex<class_Mutex>` objects locked.
+- No debe tener ningún :ref:`Mutex<class_Mutex>` bloqueado.
 
-- It must not be waiting on any :ref:`Semaphore<class_Semaphore>` objects.
+- No debe estar esperando ningún :ref:`Semaphore<class_Semaphore>`.
 
-- :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>` should have been called on it.
+- Se debe haber llamado a :ref:`wait_to_finish()<class_Thread_method_wait_to_finish>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -139,9 +139,9 @@ Para comprobar si un **Thread** se puede unir, utiliza :ref:`is_started()<class_
 
 :ref:`bool<class_bool>` **is_main_thread**\ (\ ) |static| :ref:`🔗<class_Thread_method_is_main_thread>`
 
-Returns ``true`` if the thread this method was called from is the main thread.
+Devuelve ``true`` si el hilo desde el que se llamó a este método es el hilo principal.
 
-\ **Note:** This is a static method and isn't associated with a specific **Thread** object.
+\ **Nota:** Este es un método estático y no está asociado con un objeto **Thread** específico.
 
 .. rst-class:: classref-item-separator
 

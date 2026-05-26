@@ -14,9 +14,9 @@ Una forma de esfera CSG.
 Descripción
 ----------------------
 
-This node allows you to create a sphere for use with the CSG system.
+Este nodo te permite crear una esfera para usar con el sistema CSG.
 
-\ **Note:** CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a :ref:`MeshInstance3D<class_MeshInstance3D>` with a :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.
+\ **Nota:** Los nodos CSG están pensados para el prototipado de niveles. Crear nodos CSG tiene un costo de CPU significativo en comparación con crear un :ref:`MeshInstance3D<class_MeshInstance3D>` con un :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Mover un nodo CSG dentro de otro nodo CSG también tiene un costo de CPU significativo, por lo que debe evitarse durante el gameplay.
 
 .. rst-class:: classref-introduction-group
 

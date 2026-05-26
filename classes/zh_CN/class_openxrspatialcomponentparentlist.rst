@@ -9,14 +9,14 @@ OpenXRSpatialComponentParentList
 
 **继承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries parent result data.
+用于存储查询父级结果数据的对象。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Object for storing the queries parent result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+用于调用 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 时存储查询父级结果数据的对象。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,7 +45,7 @@ Object for storing the queries parent result data when calling :ref:`OpenXRSpati
 
 :ref:`RID<class_RID>` **get_parent**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentParentList_method_get_parent>`
 
-Returns the RID for the parent entity at this ``index``.
+返回该 ``index`` 处的父实体的 RID。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

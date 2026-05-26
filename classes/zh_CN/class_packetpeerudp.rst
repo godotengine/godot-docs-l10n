@@ -14,7 +14,7 @@ UDP 数据包客户端。
 描述
 ----
 
-UDP 数据包对等体。可以用来发送和接收原始 UPD 数据包和 :ref:`Variant<class_Variant>`\ 。
+UDP 数据包对等端。可以用来发送和接收原始 UPD 数据包和 :ref:`Variant<class_Variant>`\ 。
 
 \ **示例：**\ 发送数据包：
 
@@ -100,11 +100,11 @@ UDP 数据包对等体。可以用来发送和接收原始 UPD 数据包和 :ref
 
 将该 **PacketPeerUDP** 绑定到指定的 ``port`` 和 ``bind_address``\ ，其缓冲区大小为 ``recv_buf_size``\ ，允许它接收传入的数据包。
 
-如果 ``bind_address`` 被设置为 ``"*"``\ （默认），对等体将被绑定到所有可用地址（IPv4 和 IPv6）。
+如果 ``bind_address`` 被设置为 ``"*"``\ （默认），对等端将被绑定到所有可用地址（IPv4 和 IPv6）。
 
-如果 ``bind_address`` 被设置为 ``"0.0.0.0"``\ （对于 IPv4）或 ``"::"``\ （对于 IPv6），对等体将被绑定到匹配该 IP 类型的所有可用地址。
+如果 ``bind_address`` 被设置为 ``"0.0.0.0"``\ （对于 IPv4）或 ``"::"``\ （对于 IPv6），对等端将被绑定到匹配该 IP 类型的所有可用地址。
 
-如果 ``bind_address`` 被设置为任何有效地址（例如 ``"192.168.1.101"``\ 、\ ``"::1"`` 等），对等体将只被绑定到该地址的接口（如果不存在具有给定地址的接口，则失败）。
+如果 ``bind_address`` 被设置为任何有效地址（例如 ``"192.168.1.101"``\ 、\ ``"::1"`` 等），对等端将只被绑定到该地址的接口（如果不存在具有给定地址的接口，则失败）。
 
 .. rst-class:: classref-item-separator
 
@@ -128,9 +128,9 @@ UDP 数据包对等体。可以用来发送和接收原始 UPD 数据包和 :ref
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PacketPeerUDP_method_connect_to_host>`
 
-调用该方法将该 UDP 对等体连接到给定的 ``host``/``port`` 对。UDP 实际上是无连接的，因此该选项仅意味着自动丢弃来自不同地址的传入数据包，并且传出的数据包始终发送到连接的地址（不允许将来调用 :ref:`set_dest_address()<class_PacketPeerUDP_method_set_dest_address>`\ ）。该方法不会向远程对等体发送任何数据，要发送数据，请像往常一样使用 :ref:`PacketPeer.put_var()<class_PacketPeer_method_put_var>` 或 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ 。另见 :ref:`UDPServer<class_UDPServer>`\ 。
+调用该方法将该 UDP 对等端连接到给定的 ``host``/``port`` 对。UDP 实际上是无连接的，因此该选项仅意味着自动丢弃来自不同地址的传入数据包，并且传出的数据包始终发送到连接的地址（不允许将来调用 :ref:`set_dest_address()<class_PacketPeerUDP_method_set_dest_address>`\ ）。该方法不会向远程对等端发送任何数据，要发送数据，请像往常一样使用 :ref:`PacketPeer.put_var()<class_PacketPeer_method_put_var>` 或 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ 。另见 :ref:`UDPServer<class_UDPServer>`\ 。
 
-\ **注意：**\ 连接到远程对等体并不能防止 IP 欺骗等恶意攻击。如果你觉得你的应用程序正在传输敏感信息，可以考虑使用 TLS 或 DTLS 等加密技术。
+\ **注意：**\ 连接到远程对等端并不能防止 IP 欺骗等恶意攻击。如果你觉得你的应用程序正在传输敏感信息，可以考虑使用 TLS 或 DTLS 等加密技术。
 
 .. rst-class:: classref-item-separator
 
@@ -142,7 +142,7 @@ UDP 数据包对等体。可以用来发送和接收原始 UPD 数据包和 :ref
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_get_local_port>`
 
-返回该对等体绑定到的本地端口。
+返回该对等端绑定到的本地端口。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ UDP 数据包对等体。可以用来发送和接收原始 UPD 数据包和 :ref
 
 :ref:`String<class_String>` **get_packet_ip**\ (\ ) |const| :ref:`🔗<class_PacketPeerUDP_method_get_packet_ip>`
 
-返回发送最后一个数据包（通过 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` 或 :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>` 接收）的远程对等体的 IP。
+返回发送最后一个数据包（通过 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>` 或 :ref:`PacketPeer.get_var()<class_PacketPeer_method_get_var>` 接收）的远程对等端的 IP。
 
 .. rst-class:: classref-item-separator
 

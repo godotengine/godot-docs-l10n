@@ -395,7 +395,7 @@ enum **DockSlot**: :ref:`🔗<enum_EditorPlugin_DockSlot>`
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_NONE** = ``-1``
 
-The dock is closed.
+停靠面板是关闭的。
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_LEFT_UL:
 
@@ -467,7 +467,7 @@ The dock is closed.
 
 :ref:`DockSlot<enum_EditorPlugin_DockSlot>` **DOCK_SLOT_BOTTOM** = ``8``
 
-Bottom panel.
+底部面板。
 
 .. _class_EditorPlugin_constant_DOCK_SLOT_MAX:
 
@@ -1052,7 +1052,7 @@ enum **AfterGUIInput**: :ref:`🔗<enum_EditorPlugin_AfterGUIInput>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_run_scene**\ (\ scene\: :ref:`String<class_String>`, args\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |virtual| |const| :ref:`🔗<class_EditorPlugin_private_method__run_scene>`
 
-This function is called when an individual scene is about to be played in the editor. ``args`` is a list of command line arguments that will be passed to the new Godot instance, which will be replaced by the list returned by this function.
+当编辑器中即将播放某个场景时，将调用该函数。\ ``args`` 是将被传递给新的 Godot 实例的命令行参数列表，该列表将被该函数返回的列表替换。
 
 ::
 
@@ -1060,7 +1060,7 @@ This function is called when an individual scene is about to be played in the ed
         args.append("--an-extra-argument")
         return args
 
-\ **Note:** Text that is printed in this method will not be visible in the editor's Output panel unless :ref:`EditorSettings.run/output/always_clear_output_on_play<class_EditorSettings_property_run/output/always_clear_output_on_play>` is ``false``.
+\ **注意：**\ 除非 :ref:`EditorSettings.run/output/always_clear_output_on_play<class_EditorSettings_property_run/output/always_clear_output_on_play>` 为 ``false``\ ，否则使用该方法打印的文本将不会显示在编辑器的输出面板中。
 
 .. rst-class:: classref-item-separator
 
@@ -1620,7 +1620,7 @@ This function is called when an individual scene is about to be played in the ed
 
 |void| **remove_dock**\ (\ dock\: :ref:`EditorDock<class_EditorDock>`\ ) :ref:`🔗<class_EditorPlugin_method_remove_dock>`
 
-Removes ``dock`` from the available docks. You should manually call :ref:`Node.queue_free()<class_Node_method_queue_free>` to free it.
+从可用停靠面板中移除 ``dock``\ 。你需要手动调用 :ref:`Node.queue_free()<class_Node_method_queue_free>` 来释放它。
 
 .. rst-class:: classref-item-separator
 

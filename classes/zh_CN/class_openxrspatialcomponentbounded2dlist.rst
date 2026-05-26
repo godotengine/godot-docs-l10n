@@ -9,14 +9,14 @@ OpenXRSpatialComponentBounded2DList
 
 **继承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries bounded2d result data.
+用于存储查询 bounded2d 结果数据的对象。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Object for storing the queries 2D bounding rectangle result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+用于存储调用 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 时查询二维边界矩形结果数据的对象。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the queries 2D bounding rectangle result data when calling :r
 
 :ref:`Transform3D<class_Transform3D>` **get_center_pose**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded2DList_method_get_center_pose>`
 
-Returns the center of our bounding rectangle for the entity at this ``index``.
+返回位于该 ``index`` 处实体的边界矩形的中心点。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the center of our bounding rectangle for the entity at this ``index``.
 
 :ref:`Vector2<class_Vector2>` **get_size**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentBounded2DList_method_get_size>`
 
-Returns the size of our bounding rectangle for the entity at this ``index``.
+返回该 ``index`` 处实体的边界矩形的大小。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

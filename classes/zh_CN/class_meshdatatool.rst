@@ -608,9 +608,9 @@ MeshDataTool 提供对 :ref:`Mesh<class_Mesh>` 中各个顶点的访问。它允
 
 |void| **set_vertex_tangent**\ (\ idx\: :ref:`int<class_int>`, tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_MeshDataTool_method_set_vertex_tangent>`
 
-Sets the tangent of the given vertex.
+设置给定顶点的切线。
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **注意：**\ 尽管 ``tangent`` 是一个 :ref:`Plane<class_Plane>`\ ，但它并不直接表示切平面。它的 :ref:`Plane.x<class_Plane_property_x>`\ 、\ :ref:`Plane.y<class_Plane_property_y>` 和 :ref:`Plane.z<class_Plane_property_z>` 表示切向量，而 :ref:`Plane.d<class_Plane_property_d>` 应该为 ``-1`` 或 ``1``\ 。另见 :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -116,7 +116,7 @@ Descripciones de Propiedades
 - |void| **set_horizontal_alignment**\ (\ value\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>`\ )
 - :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` **get_horizontal_alignment**\ (\ )
 
-Sets text alignment within the line as if the line was horizontal.
+Establece la alineación del texto dentro de la línea como si la línea fuera horizontal.
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ Carácter de elipsis utilizado para el recorte de texto.
 - |void| **set_flags**\ (\ value\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\]\ )
 - |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] **get_flags**\ (\ )
 
-Reglas de alineación de línea. Para más información, consulta :ref:`TextServer<class_TextServer>`.
+Reglas de alineación de línea. Para más información, véase :ref:`TextServer<class_TextServer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ Draw text into a canvas item at a given position, with ``color``. ``pos`` specif
 
 :ref:`TextLine<class_TextLine>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextLine_method_duplicate>`
 
-Duplicates this **TextLine**.
+Duplica este **TextLine**.
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Duplicates this **TextLine**.
 
 :ref:`Direction<enum_TextServer_Direction>` **get_inferred_direction**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_inferred_direction>`
 
-Returns the text writing direction inferred by the BiDi algorithm.
+Devuelve la dirección de escritura del texto inferida por el algoritmo BiDi.
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Returns the text writing direction inferred by the BiDi algorithm.
 
 :ref:`float<class_float>` **get_line_ascent**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_ascent>`
 
-Returns the text ascent (number of pixels above the baseline for horizontal layout or to the left of baseline for vertical).
+Devuelve el ascenso del texto (número de píxeles por encima de la línea de base para diseño horizontal o a la izquierda de la línea de base para vertical).
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ Returns the text ascent (number of pixels above the baseline for horizontal layo
 
 :ref:`float<class_float>` **get_line_descent**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_descent>`
 
-Returns the text descent (number of pixels below the baseline for horizontal layout or to the right of baseline for vertical).
+Devuelve el descenso del texto (número de píxeles por debajo de la línea de base para diseño horizontal o a la derecha de la línea de base para vertical).
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,7 @@ Devuelve el desplazamiento de píxeles del subrayado debajo de la línea base.
 
 :ref:`float<class_float>` **get_line_underline_thickness**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_underline_thickness>`
 
-Returns thickness of the underline.
+Devuelve el grosor del subrayado.
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +401,7 @@ Returns thickness of the underline.
 
 :ref:`float<class_float>` **get_line_width**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_line_width>`
 
-Returns width (for horizontal layout) or height (for vertical) of the text.
+Devuelve el ancho (para diseño horizontal) o la altura (para vertical) del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ Returns width (for horizontal layout) or height (for vertical) of the text.
 
 :ref:`Rect2<class_Rect2>` **get_object_rect**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextLine_method_get_object_rect>`
 
-Returns bounding rectangle of the inline object.
+Devuelve el rectángulo delimitador del objeto en línea.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Devuelve el RID del búfer de TextServer.
 
 :ref:`Vector2<class_Vector2>` **get_size**\ (\ ) |const| :ref:`🔗<class_TextLine_method_get_size>`
 
-Returns size of the bounding box of the text.
+Devuelve el tamaño del cuadro delimitador del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Returns size of the bounding box of the text.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextLine_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this line.
+Devuelve ``true`` si un objeto con ``key`` está incrustado en esta línea.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Devuelve el desplazamiento del cursor en el píxel especificado en la línea bas
 
 :ref:`bool<class_bool>` **resize_object**\ (\ key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>` = 5, baseline\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_TextLine_method_resize_object>`
 
-Sets new size and alignment of embedded object.
+Establece el nuevo tamaño y alineación del objeto incrustado.
 
 .. rst-class:: classref-item-separator
 
@@ -497,9 +497,9 @@ Sets new size and alignment of embedded object.
 
 |void| **set_bidi_override**\ (\ override\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_TextLine_method_set_bidi_override>`
 
-Overrides BiDi for the structured text.
+Sobreescribe BiDi para el texto estructurado.
 
-Override ranges should cover full source text without overlaps. BiDi algorithm will be used on each range separately.
+Los rangos de sobreescritura deben cubrir el texto fuente completo sin superposiciones. El algoritmo BiDi se utilizará en cada rango por separado.
 
 .. rst-class:: classref-item-separator
 

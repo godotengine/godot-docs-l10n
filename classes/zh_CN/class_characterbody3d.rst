@@ -589,7 +589,7 @@ enum **PlatformOnLeave**: :ref:`🔗<enum_CharacterBody3D_PlatformOnLeave>`
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody3D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
+返回 :ref:`KinematicCollision3D<class_KinematicCollision3D>`\ ，包含最近一次调用 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 时发生的碰撞信息。因为单次调用 :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>` 可能发生多次碰撞，所以你必须指定碰撞索引，范围为 0 到 (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1)。另见 :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`\ 。
 
 .. rst-class:: classref-item-separator
 

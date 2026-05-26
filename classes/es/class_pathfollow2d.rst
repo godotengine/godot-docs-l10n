@@ -14,9 +14,9 @@ Una muestra de puntos para un :ref:`Path2D<class_Path2D>`.
 Descripción
 ----------------------
 
-This node takes its parent :ref:`Path2D<class_Path2D>`, and returns the coordinates of a point within it, given a distance from the first vertex.
+Este nodo toma su padre :ref:`Path2D<class_Path2D>`, y devuelve las coordenadas de un punto dentro de él, dada una distancia desde el primer vértice.
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the :ref:`progress<class_PathFollow2D_property_progress>` in this node.
+Es útil para hacer que otros nodos sigan una ruta, sin codificar el patrón de movimiento. Para ello, los nodos deben ser hijos de este nodo. Los nodos descendientes se moverán en consecuencia al establecer el :ref:`progress<class_PathFollow2D_property_progress>` en este nodo.
 
 .. rst-class:: classref-reftable-group
 
@@ -134,9 +134,9 @@ La distancia a lo largo de la ruta, en píxeles. Al cambiar este valor, la posic
 - |void| **set_progress_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress_ratio**\ (\ )
 
-The distance along the path as a number in the range 0.0 (for the first vertex) to 1.0 (for the last). This is just another way of expressing the progress within the path, as the offset supplied is multiplied internally by the path's length.
+La distancia a lo largo de la ruta como un número en el rango de 0.0 (para el primer vértice) a 1.0 (para el último). Esta es solo otra forma de expresar el progreso dentro de la ruta, ya que el desplazamiento proporcionado se multiplica internamente por la longitud de la ruta.
 
-It can be set or get only if the **PathFollow2D** is the child of a :ref:`Path2D<class_Path2D>` which is part of the scene tree, and that this :ref:`Path2D<class_Path2D>` has a :ref:`Curve2D<class_Curve2D>` with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return ``0.0``.
+Solo se puede establecer u obtener si el **PathFollow2D** es hijo de un :ref:`Path2D<class_Path2D>` que forma parte del árbol de la escena, y si este :ref:`Path2D<class_Path2D>` tiene una :ref:`Curve2D<class_Curve2D>` con una longitud distinta de cero. De lo contrario, intentar establecer este campo imprimirá un error, y obtener este campo devolverá ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -153,7 +153,7 @@ It can be set or get only if the **PathFollow2D** is the child of a :ref:`Path2D
 - |void| **set_rotates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_rotating**\ (\ )
 
-If ``true``, this node rotates to follow the path, with the +X direction facing forward on the path.
+Si es ``true``, este nodo rota para seguir la ruta, con la dirección +X orientada hacia adelante en la ruta.
 
 .. rst-class:: classref-item-separator
 

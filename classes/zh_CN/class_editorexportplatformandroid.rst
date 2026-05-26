@@ -455,7 +455,7 @@ Android 导出器。
 
 :ref:`String<class_String>` **apk_expansion/SALT** :ref:`🔗<class_EditorExportPlatformAndroid_property_apk_expansion/SALT>`
 
-Array of random bytes that the licensing policy uses to create an `Obfuscator <https://developer.android.com/google/play/licensing/adding-licensing#impl-Obfuscator>`__.
+许可策略用于创建\ `混淆器 <https://developer.android.com/google/play/licensing/adding-licensing#impl-Obfuscator>`__\ 的随机字节数组。
 
 .. rst-class:: classref-item-separator
 
@@ -625,13 +625,13 @@ Array of random bytes that the licensing policy uses to create an `Obfuscator <h
 
 :ref:`Dictionary<class_Dictionary>` **gradle_build/custom_theme_attributes** :ref:`🔗<class_EditorExportPlatformAndroid_property_gradle_build/custom_theme_attributes>`
 
-要包含在导出的 Android 项目中的自定义主题属性的字典。每个条目都定义了一个主题属性名称及其值，并将添加到 **GodotAppMainTheme** 中。
+一个包含在导出的 Android 项目中的自定义主题属性字典。每个条目定义了一个主题属性名称及其对应的值，这些属性会被添加到 **GodotAppMainTheme**\ （Godot 应用主主题）中。
 
-例如，值为 ``false`` 的键 ``android:windowSwipeToDismiss`` 被解析为 ``<item name="android"windowSwipeToDismiss">false</item>``\ 。
+例如，键 key ``android:windowSwipeToDismiss`` 搭配值 ``false``\ ，在导出时会被解析为 ``<item name="android:windowSwipeToDismiss">false</item>``\ 。
 
-\ **注意：**\ 要向 **GodotAppSplashTheme** 添加自定义属性，请在属性名称前加上 ``[splash]``\ 。
+\ **注意：** 如果想给 **GodotAppSplashTheme**\ （Godot 应用启动页主题）添加自定义属性，需要在属性名称前加上 ``[splash]`` 前缀。
 
-\ **注意：**\ 通过其他导出选项或项目设置配置的保留属性不能被 ``custom_theme_attributes`` 覆盖，并且在导出过程中会被跳过。
+\ **注意：** 那些已经通过其他导出选项或项目设置配置过的保留属性，无法通过 ``custom_theme_attributes`` 进行覆盖，导出时会被自动跳过。
 
 .. rst-class:: classref-item-separator
 
@@ -1871,7 +1871,7 @@ WallpaperService 必须要求此权限，确保只能系统能够进行绑定。
 
 :ref:`bool<class_bool>` **permissions/manage_media** :ref:`🔗<class_EditorExportPlatformAndroid_property_permissions/manage_media>`
 
-Allows an application to modify and delete media files on this device or any connected storage device without user confirmation. Applications must already be granted the ``READ_EXTERNAL_STORAGE`` or ``MANAGE_EXTERNAL_STORAGE`` permissions for this permission to take effect. See `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__.
+允许应用程序在未经用户确认的情况下修改和删除该设备或任何已连接的存储设备上的媒体文件。应用程序必须已获得 ``READ_EXTERNAL_STORAGE`` 或 ``MANAGE_EXTERNAL_STORAGE`` 权限，该权限才能生效。请参阅 `MANAGE_MEDIA <https://developer.android.com/reference/android/Manifest.permission#MANAGE_MEDIA>`__\ 。
 
 .. rst-class:: classref-item-separator
 

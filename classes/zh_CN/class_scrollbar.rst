@@ -192,7 +192,7 @@ ScrollBar
 
 :ref:`StyleBox<class_StyleBox>` **grabber** :ref:`🔗<class_ScrollBar_theme_style_grabber>`
 
-用作拖动条的纹理，表示当前的可拖动元素。
+用作抓取器的纹理，表示当前的可拖动元素。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ ScrollBar
 
 :ref:`StyleBox<class_StyleBox>` **grabber_highlight** :ref:`🔗<class_ScrollBar_theme_style_grabber_highlight>`
 
-当鼠标悬停在拖动条上时使用。
+当鼠标悬停在抓取器上时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ ScrollBar
 
 :ref:`StyleBox<class_StyleBox>` **grabber_pressed** :ref:`🔗<class_ScrollBar_theme_style_grabber_pressed>`
 
-在拖动条被拖动时使用。
+在抓取器被拖动时使用。
 
 .. rst-class:: classref-item-separator
 

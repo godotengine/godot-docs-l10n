@@ -149,7 +149,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-完全不复制子资源。即使在深层复制时也很有用，因为可以在复制所有数组和字典的同时，仍然指向原始资源。
+No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 
@@ -352,7 +352,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`Resource<class_Resource>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` = 1\ ) |const| :ref:`🔗<class_Resource_method_duplicate_deep>`
 
-Duplicates this resource, deeply, like :ref:`duplicate()<class_Resource_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+深度复制该资源，就像传递 ``true`` 时 :ref:`duplicate()<class_Resource_method_duplicate>` 一样，并对子资源的处理方式进行额外控制。
 
 .. rst-class:: classref-item-separator
 

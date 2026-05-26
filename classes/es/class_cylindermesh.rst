@@ -14,7 +14,7 @@ Clase que representa un cilindro :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 Descripción
 ----------------------
 
-Class representing a cylindrical :ref:`PrimitiveMesh<class_PrimitiveMesh>`. This class can be used to create cones by setting either the :ref:`top_radius<class_CylinderMesh_property_top_radius>` or :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` properties to ``0.0``.
+Clase que representa un :ref:`PrimitiveMesh<class_PrimitiveMesh>` cilíndrico. Esta clase se puede utilizar para crear conos estableciendo las propiedades :ref:`top_radius<class_CylinderMesh_property_top_radius>` o :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` en ``0.0``.
 
 .. rst-class:: classref-reftable-group
 
@@ -60,7 +60,7 @@ Descripciones de Propiedades
 - |void| **set_bottom_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bottom_radius**\ (\ )
 
-Bottom radius of the cylinder. If set to ``0.0``, the bottom faces will not be generated, resulting in a conic shape. See also :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>`.
+Radio inferior del cilindro. Si se establece en ``0.0``, no se generarán las caras inferiores, lo que dará lugar a una forma cónica. Ver también :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>`.
 
 .. rst-class:: classref-item-separator
 
@@ -77,9 +77,9 @@ Bottom radius of the cylinder. If set to ``0.0``, the bottom faces will not be g
 - |void| **set_cap_bottom**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_bottom**\ (\ )
 
-If ``true``, generates a cap at the bottom of the cylinder. This can be set to ``false`` to speed up generation and rendering when the cap is never seen by the camera. See also :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>`.
+Si es ``true``, genera una tapa en la parte inferior del cilindro. Esto se puede establecer en ``false`` para agilizar la generación y el renderizado cuando la tapa nunca es visible para la cámara. Ver también :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>`.
 
-\ **Note:** If :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` is ``0.0``, cap generation is always skipped even if :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>` is ``true``.
+\ **Nota:** Si :ref:`bottom_radius<class_CylinderMesh_property_bottom_radius>` es ``0.0``, la generación de la tapa siempre se omite, incluso si :ref:`cap_bottom<class_CylinderMesh_property_cap_bottom>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -96,9 +96,9 @@ If ``true``, generates a cap at the bottom of the cylinder. This can be set to `
 - |void| **set_cap_top**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_cap_top**\ (\ )
 
-If ``true``, generates a cap at the top of the cylinder. This can be set to ``false`` to speed up generation and rendering when the cap is never seen by the camera. See also :ref:`top_radius<class_CylinderMesh_property_top_radius>`.
+Si es ``true``, genera una tapa en la parte superior del cilindro. Esto se puede establecer en ``false`` para agilizar la generación y el renderizado cuando la tapa nunca es visible para la cámara. Ver también :ref:`top_radius<class_CylinderMesh_property_top_radius>`.
 
-\ **Note:** If :ref:`top_radius<class_CylinderMesh_property_top_radius>` is ``0.0``, cap generation is always skipped even if :ref:`cap_top<class_CylinderMesh_property_cap_top>` is ``true``.
+\ **Nota:** Si :ref:`top_radius<class_CylinderMesh_property_top_radius>` es ``0.0``, la generación de la tapa siempre se omite, incluso si :ref:`cap_top<class_CylinderMesh_property_cap_top>` es ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -132,7 +132,7 @@ La altura total del cilindro.
 - |void| **set_radial_segments**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_radial_segments**\ (\ )
 
-Number of radial segments on the cylinder. Higher values result in a more detailed cylinder/cone at the cost of performance.
+Número de segmentos radiales del cilindro. Valores más altos dan como resultado un cilindro/cono más detallado, a costa del rendimiento.
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ Number of radial segments on the cylinder. Higher values result in a more detail
 - |void| **set_rings**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_rings**\ (\ )
 
-Number of edge rings along the height of the cylinder. Changing :ref:`rings<class_CylinderMesh_property_rings>` does not have any visual impact unless a shader or procedural mesh tool is used to alter the vertex data. Higher values result in more subdivisions, which can be used to create smoother-looking effects with shaders or procedural mesh tools (at the cost of performance). When not altering the vertex data using a shader or procedural mesh tool, :ref:`rings<class_CylinderMesh_property_rings>` should be kept to its default value.
+Número de anillos de arista a lo largo de la altura del cilindro. Cambiar :ref:`rings<class_CylinderMesh_property_rings>` no tiene ningún impacto visual a menos que se utilice un shader o una herramienta de malla procedural para modificar los datos de los vértices. Valores más altos dan como resultado más subdivisiones, que pueden usarse para crear efectos de apariencia más suave con shaders o herramientas de malla procedural (a costa del rendimiento). Cuando no se modifiquen los datos de los vértices mediante un shader o una herramienta de malla procedural, :ref:`rings<class_CylinderMesh_property_rings>` debe mantenerse en su valor predeterminado.
 
 .. rst-class:: classref-item-separator
 
@@ -166,7 +166,7 @@ Number of edge rings along the height of the cylinder. Changing :ref:`rings<clas
 - |void| **set_top_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_top_radius**\ (\ )
 
-Top radius of the cylinder. If set to ``0.0``, the top faces will not be generated, resulting in a conic shape. See also :ref:`cap_top<class_CylinderMesh_property_cap_top>`.
+Radio superior del cilindro. Si se establece en ``0.0``, no se generarán las caras superiores, lo que dará lugar a una forma cónica. Ver también :ref:`cap_top<class_CylinderMesh_property_cap_top>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

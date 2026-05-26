@@ -2440,9 +2440,9 @@ Si es ``true``, actualiza automáticamente las rutas de destino de las pistas de
 
 :ref:`bool<class_bool>` **editors/animation/confirm_insert_track** :ref:`🔗<class_EditorSettings_property_editors/animation/confirm_insert_track>`
 
-Si es ``true``, muestra un diálogo de confirmación al añadir una nueva pista a una animación presionando el icono de "llave" al lado de una propiedad. Mantener pulsado Shift omitirá el diálogo.
+Si es ``true``, muestra un diálogo de confirmación al añadir una nueva pista a una animación presionando el icono de "llave" al lado de una propiedad. Mantener pulsado Mayús omitirá el diálogo.
 
-Si es ``false``, el comportamiento se invierte, es decir, el diálogo solo aparecerá si se mantiene pulsado Shift.
+Si es ``false``, el comportamiento se invierte, es decir, el diálogo solo aparecerá cuando Shift se mantiene pulsado.
 
 .. rst-class:: classref-item-separator
 
@@ -3068,7 +3068,7 @@ La opacidad del minimapa mostrado en la esquina inferior derecha del editor de s
 
 :ref:`int<class_int>` **editors/visual_editors/visual_shader/port_preview_size** :ref:`🔗<class_EditorSettings_property_editors/visual_editors/visual_shader/port_preview_size>`
 
-El tamaño a usar para las previsualizaciones de puertos en los uniformes del shader visual (se activa haciendo clic en el icono del "ojo" junto a una salida). El valor se define en píxeles con un zoom del 100% y se escalará automáticamente con el zoom.
+El tamaño a usar para las previsualizaciones de puertos en las variables uniformes del shader visual (se activa haciendo clic en el icono del "ojo" junto a una salida). El valor se define en píxeles con un zoom del 100% y se escalará automáticamente con el zoom.
 
 .. rst-class:: classref-item-separator
 
@@ -3286,22 +3286,22 @@ Puerto utilizado para el servidor de archivos al exportar el proyecto con un sis
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-La ruta al ejecutable de Blender usado para convertir los archivos de escena 3D de Blender ``.blend`` al formato glTF 2.0 durante la importación. Se requiere Blender 3.0 o posterior.
+The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-Para activar esta característica para tu proyecto específico, usa :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-Si esta configuración está vacía, las rutas por defecto de Blender serán detectadas y usadas automáticamente si están presentes en este orden:
+If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
 
 \ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
 \ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3311,7 +3311,7 @@ Si esta configuración está vacía, las rutas por defecto de Blender serán det
 
 \ **Linux/\*BSD:**\ 
 
-::
+.. code:: text
 
     - /usr/bin/blender
     - /usr/local/bin/blender
@@ -4123,7 +4123,7 @@ If ``true``, redraws the editor every frame even if nothing has changed on scree
 
 :ref:`bool<class_bool>` **interface/editor/use_embedded_menu** :ref:`🔗<class_EditorSettings_property_interface/editor/use_embedded_menu>`
 
-Si ``true``, el menú principal del editor utiliza una :ref:`MenuBar<class_MenuBar>` incrustada en lugar del menú global del sistema.
+Si es ``true``, el menú principal del editor utiliza una :ref:`MenuBar<class_MenuBar>` incrustada en lugar del menú global del sistema.
 
 Específico de la plataforma macOS.
 
@@ -4137,7 +4137,7 @@ Específico de la plataforma macOS.
 
 :ref:`bool<class_bool>` **interface/editor/use_native_file_dialogs** :ref:`🔗<class_EditorSettings_property_interface/editor/use_native_file_dialogs>`
 
-Si ``true``, la interfaz de usuario del editor utiliza los diálogos nativos del sistema operativo para la selección de archivos/directorios.
+Si es ``true``, la interfaz de usuario del editor utiliza los diálogos nativos del sistema operativo para la selección de archivos/directorios.
 
 .. rst-class:: classref-item-separator
 
@@ -4189,7 +4189,7 @@ Si es ``true``, el dock de Escena mostrará botones para agregar rápidamente un
 
 :ref:`bool<class_bool>` **interface/inspector/auto_unfold_foreign_scenes** :ref:`🔗<class_EditorSettings_property_interface/inspector/auto_unfold_foreign_scenes>`
 
-Si ``true``, despliega automáticamente los grupos de propiedades del Inspector que contienen valores modificados al abrir una escena por primera vez. Solo afecta a escenas sin preferencias de plegado guardadas y solo despliega grupos con propiedades que han sido cambiadas de sus valores predeterminados.
+Si es ``true``, despliega automáticamente los grupos de propiedades del Inspector que contienen valores modificados al abrir una escena por primera vez. Solo afecta a escenas sin preferencias de plegado guardadas y solo despliega grupos con propiedades que han sido cambiadas de sus valores predeterminados.
 
 \ **Nota:** Esta configuración solo funciona en escenarios específicos: al abrir una escena traída de otro proyecto, o al abrir una nueva escena que ya tiene propiedades modificadas (por ejemplo, desde control de versiones). Las escenas duplicadas no se consideran ajenas, por lo que esta configuración no las afectará.
 
@@ -5641,7 +5641,7 @@ Si es ``true``, permite desplazarse más allá del final del archivo.
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/smooth_scrolling** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/smooth_scrolling>`
 
-Si es ``true``, activa una animación de desplazamiento suave al usar la rueda del ratón para desplazarse. Consulta :ref:`text_editor/behavior/navigation/v_scroll_speed<class_EditorSettings_property_text_editor/behavior/navigation/v_scroll_speed>` para la velocidad de esta animación.
+Si es ``true``, activa una animación de desplazamiento suave al usar la rueda del ratón para desplazarse. Véase :ref:`text_editor/behavior/navigation/v_scroll_speed<class_EditorSettings_property_text_editor/behavior/navigation/v_scroll_speed>` para la velocidad de esta animación.
 
 \ **Nota:** :ref:`text_editor/behavior/navigation/smooth_scrolling<class_EditorSettings_property_text_editor/behavior/navigation/smooth_scrolling>` se comporta mal en proyectos donde :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` se ha aumentado significativamente de su valor predeterminado (``60``). En este caso, se recomienda desactivar esta configuración.
 

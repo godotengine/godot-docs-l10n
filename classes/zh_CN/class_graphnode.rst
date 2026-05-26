@@ -470,7 +470,7 @@ GraphNode
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_left>`
 
-Returns the left (input) metadata of the slot with the given ``slot_index``.
+返回索引为 ``slot_index`` 的插槽左侧（输入）的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ Returns the left (input) metadata of the slot with the given ``slot_index``.
 
 :ref:`Variant<class_Variant>` **get_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GraphNode_method_get_slot_metadata_right>`
 
-Returns the right (output) metadata of the slot with the given ``slot_index``.
+返回索引为 ``slot_index`` 的插槽右侧（输出）的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -674,7 +674,7 @@ Returns the right (output) metadata of the slot with the given ``slot_index``.
 
 |void| **set_slot_metadata_left**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_left>`
 
-Sets the custom metadata for the left (input) side of the slot with the given ``slot_index`` to ``value``.
+将索引为 ``slot_index`` 的插槽的左侧（输入）的自定义元数据设置为 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -686,7 +686,7 @@ Sets the custom metadata for the left (input) side of the slot with the given ``
 
 |void| **set_slot_metadata_right**\ (\ slot_index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_GraphNode_method_set_slot_metadata_right>`
 
-Sets the custom metadata for the right (output) side of the slot with the given ``slot_index`` to ``value``.
+将索引为 ``slot_index`` 的插槽的右侧（输出）的自定义元数据设置为 ``value``\ 。
 
 .. rst-class:: classref-item-separator
 

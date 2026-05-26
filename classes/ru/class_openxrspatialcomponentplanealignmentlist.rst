@@ -51,7 +51,7 @@ enum **PlaneAlignment**: :ref:`🔗<enum_OpenXRSpatialComponentPlaneAlignmentLis
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_UPWARD** = ``0``
 
-Plane is facing upward.
+Плоскость обращена вверх.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD:
 
@@ -59,7 +59,7 @@ Plane is facing upward.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_HORIZONTAL_DOWNWARD** = ``1``
 
-Plane is facing downwards.
+Плоскость обращена вниз.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_VERTICAL:
 
@@ -67,7 +67,7 @@ Plane is facing downwards.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_VERTICAL** = ``2``
 
-Plane is vertically aligned.
+Плоскость выровнена вертикально.
 
 .. _class_OpenXRSpatialComponentPlaneAlignmentList_constant_PLANE_ALIGNMENT_ARBITRARY:
 
@@ -75,7 +75,7 @@ Plane is vertically aligned.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **PLANE_ALIGNMENT_ARBITRARY** = ``3``
 
-Plane has an arbitrary alignment.
+Плоскость имеет произвольное выравнивание.
 
 .. rst-class:: classref-section-separator
 
@@ -92,7 +92,7 @@ Plane has an arbitrary alignment.
 
 :ref:`PlaneAlignment<enum_OpenXRSpatialComponentPlaneAlignmentList_PlaneAlignment>` **get_plane_alignment**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPlaneAlignmentList_method_get_plane_alignment>`
 
-Returns the plane alignment for the parent entity at this ``index``.
+Возвращает выравнивание плоскости для родительского объекта по этому ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

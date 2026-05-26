@@ -172,7 +172,7 @@ enum **SamplePartitionType**: :ref:`🔗<enum_NavigationPolygon_SamplePartitionT
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_CONVEX_PARTITION** = ``0``
 
-Convex partitioning that results in a navigation mesh with convex polygons.
+凸面剖分，生成具有凸多边形的导航网格。
 
 .. _class_NavigationPolygon_constant_SAMPLE_PARTITION_TRIANGULATE:
 
@@ -180,7 +180,7 @@ Convex partitioning that results in a navigation mesh with convex polygons.
 
 :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **SAMPLE_PARTITION_TRIANGULATE** = ``1``
 
-Triangulation partitioning that results in a navigation mesh with triangle polygons.
+三角剖分，生成由三角状多边形构成的导航网格。
 
 .. _class_NavigationPolygon_constant_SAMPLE_PARTITION_MAX:
 

@@ -1041,7 +1041,7 @@ Si ``true``, le **LineEdit** ne sortira pas du mode édition lorsque le texte es
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+Code de langue utilisé pour les algorithmes de retour à la ligne et de "text shaping". Si laissé vide, la langue actuelle est utilisée à la place.
 
 .. rst-class:: classref-item-separator
 

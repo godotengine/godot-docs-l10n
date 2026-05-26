@@ -100,11 +100,11 @@ ResourceImporterTexture
 
 :ref:`int<class_int>` **compress/channel_pack** = ``0`` :ref:`🔗<class_ResourceImporterTexture_property_compress/channel_pack>`
 
-Controls how color channels should be used in the imported texture.
+控制在导入的纹理中应如何使用颜色通道。
 
-\ **sRGB Friendly:** Prevents the R and RG color formats from being used, as they do not support nonlinear sRGB encoding.
+\ **sRGB 友好：**\ 阻止使用 R 和 RG 颜色格式，因为它们不支持非线性 sRGB 编码。
 
-\ **Optimized:** Allows the RG color format to be used if the texture does not use the blue channel. This reduces memory usage if the texture's blue channel can be discarded (all pixels must have a blue value of ``0``).
+\ **优化：**\ 如果纹理不使用蓝色通道，则允许使用 RG 颜色格式。如果可以丢弃纹理的蓝色通道（所有像素的蓝色值必须为 ``0``\ ），则可以减少内存占用。
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ UASTC 编码级别。值越高质量越好，但编码耗时更长。
 
 :ref:`bool<class_bool>` **process/hdr_as_srgb** = ``false`` :ref:`🔗<class_ResourceImporterTexture_property_process/hdr_as_srgb>`
 
-Some HDR images you can find online may be broken and contain data that is encoded using the nonlinear sRGB transfer function (instead of using linear encoding). It is advised not to use those files. If you absolutely have to, enabling :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` will make them look correct.
+你在网上可以找到的一些 HDR 图像可能已损坏，并且包含使用非线性 sRGB 传输函数（而不是使用线性编码）编码的数据。建议不要使用这些文件。如果你确实需要使用，启用 :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` 选项可以使它们看起来正确。
 
-\ **Warning:** Enabling :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` on well-formatted HDR images will cause the resulting image to look too dark, so leave this on ``false`` if unsure.
+\ **警告：**\ 在格式良好的 HDR 图像上启用 :ref:`process/hdr_as_srgb<class_ResourceImporterTexture_property_process/hdr_as_srgb>` 将导致生成的图像看起来太暗，因此如果不确定，请将其保留为 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 

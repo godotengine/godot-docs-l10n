@@ -78,7 +78,7 @@ Si es ``true``, la compresión de la malla no se utilizará. Considera activar e
 
 :ref:`bool<class_bool>` **generate_lightmap_uv2** = ``false`` :ref:`🔗<class_ResourceImporterOBJ_property_generate_lightmap_uv2>`
 
-Si es ``true``, genera UV2 al importar para el procesado de :ref:`LightmapGI<class_LightmapGI>`.
+Si es ``true``, genera UV2 al importar para el baking de :ref:`LightmapGI<class_LightmapGI>`.
 
 .. rst-class:: classref-item-separator
 

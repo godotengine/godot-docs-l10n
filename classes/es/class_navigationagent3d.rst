@@ -9,20 +9,20 @@ NavigationAgent3D
 
 **Hereda:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 3D agent used to pathfind to a position while avoiding obstacles.
+Un agente 3D utilizado para encontrar un trayecto a una posición mientras evita obstáculos.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A 3D agent used to pathfind to a position while avoiding static and dynamic obstacles. The calculation can be used by the parent node to dynamically move it along the path. Requires navigation data to work correctly.
+Un agente 3D utilizado para encontrar un trayecto a una posición mientras evita obstáculos estáticos y dinámicos. El cálculo puede ser utilizado por el nodo padre para moverlo dinámicamente a lo largo del trayecto. Requiere datos de navegación para funcionar correctamente.
 
-Dynamic obstacles are avoided using RVO collision avoidance. Avoidance is computed before physics, so the pathfinding information can be used safely in the physics step.
+Los obstáculos dinámicos se evitan usando la evitación de colisiones RVO. La evitación se calcula antes de la física, por lo que la información de pathfinding puede ser usada de forma segura en el paso de física.
 
-\ **Note:** After setting the :ref:`target_position<class_NavigationAgent3D_property_target_position>` property, the :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` method must be used once every physics frame to update the internal path logic of the navigation agent. The vector position it returns should be used as the next movement position for the agent's parent node.
+\ **Nota:** Después de establecer la propiedad :ref:`target_position<class_NavigationAgent3D_property_target_position>`, el método :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>` debe usarse una vez en cada frame de física para actualizar la lógica de trayecto interna del agente de navegación. La posición del vector que devuelve debe usarse como la siguiente posición de movimiento para el nodo padre del agente.
 
-\ **Note:** Several methods of this class, such as :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>`, can trigger a new path calculation. Calling these in your callback to an agent's signal, such as :ref:`waypoint_reached<class_NavigationAgent3D_signal_waypoint_reached>`, can cause infinite recursion. It is recommended to call these methods in the physics step or, alternatively, delay their call until the end of the frame (see :ref:`Object.call_deferred()<class_Object_method_call_deferred>` or :ref:`Object.CONNECT_DEFERRED<class_Object_constant_CONNECT_DEFERRED>`).
+\ **Nota:** Varios métodos de esta clase, como :ref:`get_next_path_position()<class_NavigationAgent3D_method_get_next_path_position>`, pueden desencadenar un nuevo cálculo de trayecto. Llamar a estos en tu callback a una señal del agente, como :ref:`waypoint_reached<class_NavigationAgent3D_signal_waypoint_reached>`, puede causar una recursión infinita. Se recomienda llamar a estos métodos en el paso de física o, alternativamente, retrasar su llamada hasta el final del frame (véase :ref:`Object.call_deferred()<class_Object_method_call_deferred>` o :ref:`Object.CONNECT_DEFERRED<class_Object_constant_CONNECT_DEFERRED>`).
 
 .. rst-class:: classref-introduction-group
 
@@ -198,9 +198,9 @@ El diccionario de detalles puede contener las siguientes claves, dependiendo del
 
 **navigation_finished**\ (\ ) :ref:`🔗<class_NavigationAgent3D_signal_navigation_finished>`
 
-Signals that the agent's navigation has finished. If the target is reachable, navigation ends when the target is reached. If the target is unreachable, navigation ends when the last waypoint of the path is reached. This signal is emitted only once per loaded path.
+Señala que la navegación del agente ha terminado. Si el objetivo es alcanzable, la navegación termina cuando se alcanza el objetivo. Si el objetivo es inalcanzable, la navegación termina cuando se alcanza el último punto de trayecto de la trayectoria. Esta señal se emite solo una vez por trayectoria cargada.
 
-This signal will be emitted just after :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` when the target is reachable.
+Esta señal se emitirá justo después de :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` cuando el objetivo sea alcanzable.
 
 .. rst-class:: classref-item-separator
 
@@ -212,13 +212,13 @@ This signal will be emitted just after :ref:`target_reached<class_NavigationAgen
 
 **path_changed**\ (\ ) :ref:`🔗<class_NavigationAgent3D_signal_path_changed>`
 
-Emitted when the agent had to update the loaded path:
+Se emite cuando el agente tuvo que actualizar la trayectoria cargada:
 
-- because path was previously empty.
+- porque la trayectoria estaba previamente vacía.
 
-- because navigation map has changed.
+- porque el mapa de navegación ha cambiado.
 
-- because agent pushed further away from the current path segment than the :ref:`path_max_distance<class_NavigationAgent3D_property_path_max_distance>`.
+- porque el agente se alejó más del segmento de trayectoria actual de lo que permite :ref:`path_max_distance<class_NavigationAgent3D_property_path_max_distance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -230,11 +230,11 @@ Emitted when the agent had to update the loaded path:
 
 **target_reached**\ (\ ) :ref:`🔗<class_NavigationAgent3D_signal_target_reached>`
 
-Signals that the agent reached the target, i.e. the agent moved within :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` of the :ref:`target_position<class_NavigationAgent3D_property_target_position>`. This signal is emitted only once per loaded path.
+Señala que el agente alcanzó el objetivo, es decir, el agente se movió dentro de :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` de la :ref:`target_position<class_NavigationAgent3D_property_target_position>`. Esta señal se emite solo una vez por trayectoria cargada.
 
-This signal will be emitted just before :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>` when the target is reachable.
+Esta señal se emitirá justo antes de :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>` cuando el objetivo sea alcanzable.
 
-It may not always be possible to reach the target but it should always be possible to reach the final position. See :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>`.
+Puede que no siempre sea posible alcanzar el objetivo, pero siempre debería ser posible alcanzar la posición final. Véase :ref:`get_final_position()<class_NavigationAgent3D_method_get_final_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +246,7 @@ It may not always be possible to reach the target but it should always be possib
 
 **velocity_computed**\ (\ safe_velocity\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_velocity_computed>`
 
-Notifies when the collision avoidance velocity is calculated. Emitted every update as long as :ref:`avoidance_enabled<class_NavigationAgent3D_property_avoidance_enabled>` is ``true`` and the agent has a navigation map.
+Notifica cuando se calcula la velocidad de evitación de colisiones. Se emite en cada actualización siempre que :ref:`avoidance_enabled<class_NavigationAgent3D_property_avoidance_enabled>` sea ``true`` y el agente tenga un mapa de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -258,17 +258,17 @@ Notifies when the collision avoidance velocity is calculated. Emitted every upda
 
 **waypoint_reached**\ (\ details\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_NavigationAgent3D_signal_waypoint_reached>`
 
-Signals that the agent reached a waypoint. Emitted when the agent moves within :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` of the next position of the path.
+Señala que el agente alcanzó un punto de trayecto. Se emite cuando el agente se mueve dentro de :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` de la siguiente posición del trayecto.
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
+El diccionario de detalles puede contener las siguientes claves dependiendo del valor de :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
 
-- ``position``: The position of the waypoint that was reached.
+- ``position``: La posición del punto de trayecto que se alcanzó.
 
-- ``type``: The type of navigation primitive (region or link) that contains this waypoint.
+- ``type``: El tipo de primitiva de navegación (región o enlace) que contiene este punto de trayecto.
 
-- ``rid``: The :ref:`RID<class_RID>` of the containing navigation primitive (region or link).
+- ``rid``: El :ref:`RID<class_RID>` de la primitiva de navegación contenedora (región o enlace).
 
-- ``owner``: The object which manages the containing navigation primitive (region or link).
+- ``owner``: El objeto que gestiona la primitiva de navegación contenedora (región o enlace).
 
 .. rst-class:: classref-section-separator
 
@@ -290,7 +290,7 @@ Descripciones de Propiedades
 - |void| **set_avoidance_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_avoidance_enabled**\ (\ )
 
-If ``true`` the agent is registered for an RVO avoidance callback on the :ref:`NavigationServer3D<class_NavigationServer3D>`. When :ref:`velocity<class_NavigationAgent3D_property_velocity>` is set and the processing is completed a ``safe_velocity`` Vector3 is received with a signal connection to :ref:`velocity_computed<class_NavigationAgent3D_signal_velocity_computed>`. Avoidance processing with many registered agents has a significant performance cost and should only be enabled on agents that currently require it.
+Si es ``true``, el agente se registra para una llamada de retorno de evitación RVO en el :ref:`NavigationServer3D<class_NavigationServer3D>`. Cuando se establece :ref:`velocity<class_NavigationAgent3D_property_velocity>` y se completa el procesamiento, se recibe un Vector3 ``safe_velocity`` con una conexión de señal a :ref:`velocity_computed<class_NavigationAgent3D_signal_velocity_computed>`. El procesamiento de evitación con muchos agentes registrados tiene un costo de rendimiento significativo y solo debe habilitarse en agentes que actualmente lo requieran.
 
 .. rst-class:: classref-item-separator
 
@@ -426,7 +426,7 @@ If ``true`` uses the defined :ref:`debug_path_custom_color<class_NavigationAgent
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The height of the avoidance agent. Agents will ignore other agents or obstacles that are above or below their current position + height in 2D avoidance. Does nothing in 3D avoidance which uses radius spheres alone.
+La altura del agente de evitación. Los agentes ignorarán a otros agentes u obstáculos que estén por encima o por debajo de su posición actual + altura en la evitación 2D. No hace nada en la evitación 3D, que usa solo esferas de radio.
 
 .. rst-class:: classref-item-separator
 
@@ -443,7 +443,7 @@ The height of the avoidance agent. Agents will ignore other agents or obstacles 
 - |void| **set_keep_y_velocity**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_keep_y_velocity**\ (\ )
 
-If ``true``, and the agent uses 2D avoidance, it will remember the set y-axis velocity and reapply it after the avoidance step. While 2D avoidance has no y-axis and simulates on a flat plane this setting can help to soften the most obvious clipping on uneven 3D geometry.
+Si es ``true``, y el agente usa evitación 2D, recordará la velocidad establecida en el eje Y y la volverá a aplicar después del paso de evitación. Aunque la evitación 2D no tiene eje Y y simula en un plano plano, esta configuración puede ayudar a suavizar el recorte más obvio en geometría 3D irregular.
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ The distance threshold before a path point is considered to be reached. This all
 - |void| **set_path_height_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_path_height_offset**\ (\ )
 
-The height offset is subtracted from the y-axis value of any vector path position for this NavigationAgent. The NavigationAgent height offset does not change or influence the navigation mesh or pathfinding query result. Additional navigation maps that use regions with navigation meshes that the developer baked with appropriate agent radius or height values are required to support different-sized agents.
+El desplazamiento de altura se resta del valor del eje Y de cualquier posición de trayecto vectorial para este NavigationAgent. El desplazamiento de altura del NavigationAgent no cambia ni influye en la malla de navegación ni en el resultado de la consulta de búsqueda de rutas. Se requieren mapas de navegación adicionales que utilicen regiones con mallas de navegación que el desarrollador haya procesado con baking con los valores de radio o altura del agente apropiados para admitir agentes de diferentes tamaños.
 
 .. rst-class:: classref-item-separator
 
@@ -700,9 +700,9 @@ The pathfinding algorithm used in the path query.
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The radius of the avoidance agent. This is the "body" of the avoidance agent and not the avoidance maneuver starting radius (which is controlled by :ref:`neighbor_distance<class_NavigationAgent3D_property_neighbor_distance>`).
+El radio del agente de evitación. Este es el "cuerpo" del agente de evitación y no el radio de inicio de la maniobra de evitación (que se controla mediante :ref:`neighbor_distance<class_NavigationAgent3D_property_neighbor_distance>`).
 
-Does not affect normal pathfinding. To change an actor's pathfinding radius bake :ref:`NavigationMesh<class_NavigationMesh>` resources with a different :ref:`NavigationMesh.agent_radius<class_NavigationMesh_property_agent_radius>` property and use different navigation maps for each actor size.
+No afecta la búsqueda normal de trayectos. Para cambiar el radio de búsqueda de trayectos de un actor, hornea recursos :ref:`NavigationMesh<class_NavigationMesh>` con una propiedad :ref:`NavigationMesh.agent_radius<class_NavigationMesh_property_agent_radius>` diferente y usa diferentes mapas de navegación para cada tamaño de actor.
 
 .. rst-class:: classref-item-separator
 
@@ -736,9 +736,9 @@ The path simplification amount in worlds units.
 - |void| **set_simplify_path**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_simplify_path**\ (\ )
 
-If ``true`` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by :ref:`simplify_epsilon<class_NavigationAgent3D_property_simplify_epsilon>`. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+Si es ``true``, se devolverá una versión simplificada del trayecto con menos puntos críticos de trayectos eliminados. La cantidad de simplificación se controla mediante :ref:`simplify_epsilon<class_NavigationAgent3D_property_simplify_epsilon>`. La simplificación utiliza una variante del algoritmo Ramer-Douglas-Peucker para la diezma de puntos de curva.
 
-Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
+La simplificación de trayectos puede ser útil para mitigar varios problemas de seguimiento de trayectos que pueden surgir con ciertos tipos de agentes y comportamientos de script. Por ejemplo, agentes de "dirección" o evitación en "campos abiertos".
 
 .. rst-class:: classref-item-separator
 
@@ -755,11 +755,11 @@ Path simplification can be helpful to mitigate various path following issues tha
 - |void| **set_target_desired_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_target_desired_distance**\ (\ )
 
-The distance threshold before the target is considered to be reached. On reaching the target, :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` is emitted and navigation ends (see :ref:`is_navigation_finished()<class_NavigationAgent3D_method_is_navigation_finished>` and :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>`).
+El umbral de distancia antes de que se considere alcanzado el objetivo. Al alcanzar el objetivo, se emite :ref:`target_reached<class_NavigationAgent3D_signal_target_reached>` y la navegación termina (véase :ref:`is_navigation_finished()<class_NavigationAgent3D_method_is_navigation_finished>` y :ref:`navigation_finished<class_NavigationAgent3D_signal_navigation_finished>`).
 
-You can make navigation end early by setting this property to a value greater than :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` (navigation will end before reaching the last waypoint).
+Puedes hacer que la navegación termine antes estableciendo esta propiedad a un valor mayor que :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` (la navegación terminará antes de alcanzar el último punto de paso).
 
-You can also make navigation end closer to the target than each individual path position by setting this property to a value lower than :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` (navigation won't immediately end when reaching the last waypoint). However, if the value set is too low, the agent will be stuck in a repath loop because it will constantly overshoot the distance to the target on each physics frame update.
+También puedes hacer que la navegación termine más cerca del objetivo que cada posición de trayecto individual estableciendo esta propiedad a un valor menor que :ref:`path_desired_distance<class_NavigationAgent3D_property_path_desired_distance>` (la navegación no terminará inmediatamente al alcanzar el último punto de paso). Sin embargo, si el valor establecido es demasiado bajo, el agente se quedará atascado en un bucle de repath porque constantemente superará la distancia al objetivo en cada actualización del frame de física.
 
 .. rst-class:: classref-item-separator
 
@@ -776,7 +776,7 @@ You can also make navigation end closer to the target than each individual path 
 - |void| **set_target_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_target_position**\ (\ )
 
-If set, a new navigation path from the current agent position to the :ref:`target_position<class_NavigationAgent3D_property_target_position>` is requested from the NavigationServer.
+Si se establece, se solicita un nuevo camino de navegación desde la posición actual del agente hasta la :ref:`target_position<class_NavigationAgent3D_property_target_position>` al NavigationServer.
 
 .. rst-class:: classref-item-separator
 
@@ -793,7 +793,7 @@ If set, a new navigation path from the current agent position to the :ref:`targe
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agents movement considerably. Must be positive.
+La cantidad mínima de tiempo durante la cual las velocidades de este agente, que se calculan con el algoritmo de evitación de colisiones, son seguras con respecto a otros agentes. Cuanto mayor sea el número, antes responderá el agente a otros agentes, pero tendrá menos libertad para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -810,7 +810,7 @@ The minimal amount of time for which this agent's velocities, that are computed 
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agents movement considerably. Must be positive.
+La cantidad mínima de tiempo durante la cual las velocidades de este agente, calculadas con el algoritmo de evitación de colisiones, son seguras con respecto a los obstáculos de evitación estáticos. Cuanto mayor sea el número, antes responderá el agente a los obstáculos de evitación estáticos, pero tendrá menos libertad para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -846,7 +846,7 @@ Si es ``false``, el agente calcula las velocidades de evasión en 2D a lo largo 
 - |void| **set_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_velocity**\ (\ )
 
-Sets the new wanted velocity for the agent. The avoidance simulation will try to fulfill this velocity if possible but will modify it to avoid collision with other agents and obstacles. When an agent is teleported to a new position, use :ref:`set_velocity_forced()<class_NavigationAgent3D_method_set_velocity_forced>` as well to reset the internal simulation velocity.
+Establece la nueva velocidad deseada para el agente. La simulación de evitación intentará cumplir esta velocidad si es posible, pero la modificará para evitar colisiones con otros agentes y obstáculos. Cuando un agente es teletransportado a una nueva posición, usa también :ref:`set_velocity_forced()<class_NavigationAgent3D_method_set_velocity_forced>` para restablecer la velocidad de simulación interna.
 
 .. rst-class:: classref-section-separator
 
@@ -911,7 +911,7 @@ Returns this agent's current path from start to finish in global coordinates. Th
 
 :ref:`int<class_int>` **get_current_navigation_path_index**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_current_navigation_path_index>`
 
-Returns which index the agent is currently on in the navigation path's :ref:`PackedVector3Array<class_PackedVector3Array>`.
+Devuelve el índice en el que se encuentra actualmente el agente en el :ref:`PackedVector3Array<class_PackedVector3Array>` del trayecto de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -995,7 +995,7 @@ Devuelve la longitud de la ruta calculada actualmente. El valor devuelto es ``0.
 
 :ref:`RID<class_RID>` **get_rid**\ (\ ) |const| :ref:`🔗<class_NavigationAgent3D_method_get_rid>`
 
-Returns the :ref:`RID<class_RID>` of this agent on the :ref:`NavigationServer3D<class_NavigationServer3D>`.
+Devuelve el :ref:`RID<class_RID>` de este agente en el :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 .. rst-class:: classref-item-separator
 

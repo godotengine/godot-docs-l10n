@@ -58,9 +58,9 @@ RDVertexAttribute
 - |void| **set_binding**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_binding**\ (\ )
 
-The index of the buffer in the vertex buffer array to bind this vertex attribute. When set to ``-1``, it defaults to the index of the attribute.
+Индекс буфера в массиве вершинных буферов для привязки этого атрибута вершины. Если установлено значение ``-1``, по умолчанию используется индекс атрибута.
 
-\ **Note:** You cannot mix binding explicitly assigned attributes with implicitly assigned ones (i.e. ``-1``). Either all attributes must have their binding set to ``-1``, or all must have explicit bindings.
+\ **Примечание:** Нельзя смешивать привязку явно назначенных атрибутов с неявно назначенными (т.е. ``-1``). Либо все атрибуты должны иметь привязку, установленную на ``-1``, либо все должны иметь явную привязку.
 
 .. rst-class:: classref-item-separator
 

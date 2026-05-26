@@ -249,7 +249,7 @@ Renvoie l'index de l'os de fin de la chaîne d'os.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``true``.
+Renvoie la direction de la queue de l'os de fin de la chaîne d'os lorsque :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` vaut ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ Définit la courbe d'amortissement quand :ref:`get_disperse_mode()<class_BoneTwi
 
 |void| **set_disperse_mode**\ (\ index\: :ref:`int<class_int>`, disperse_mode\: :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_disperse_mode>`
 
-Sets whether to use automatic amount assignment or to allow manual assignment.
+Définit si la quantité est attribuée automatiquement ou manuellement.
 
 .. rst-class:: classref-item-separator
 
@@ -469,9 +469,9 @@ Définit la direction de la queue de l'os de fin de la chaîne d'os lorsque :ref
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Définit le nom de l'os de fin de la chaîne d'os.
 
-\ **Note:** The end bone must be a child of the root bone.
+\ **Note :** L'os de fin doit être l'os racine ou un enfant de l'os racine. S'ils sont les mêmes, la queue doit être étendue par :ref:`set_extend_end_bone()<class_BoneTwistDisperser3D_method_set_extend_end_bone>` pour faire gigoter l'os.
 
 .. rst-class:: classref-item-separator
 

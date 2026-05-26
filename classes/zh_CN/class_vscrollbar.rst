@@ -59,9 +59,9 @@ VScrollBar
 
 :ref:`int<class_int>` **padding_left** = ``0`` :ref:`🔗<class_VScrollBar_theme_constant_padding_left>`
 
-Padding between the left of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+:ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 元素左侧与 :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>` 之间的内边距。
 
-\ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **注意：**\ 要应用垂直内边距，请改为修改 :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 的顶部/底部内容边距。
 
 .. rst-class:: classref-item-separator
 
@@ -73,9 +73,9 @@ Padding between the left of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_sty
 
 :ref:`int<class_int>` **padding_right** = ``0`` :ref:`🔗<class_VScrollBar_theme_constant_padding_right>`
 
-Padding between the right of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+:ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 元素右侧与 :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>` 之间的内边距。
 
-\ **Note:** To apply vertical padding, modify the top/bottom content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **注意：**\ 要应用垂直内边距，请改为修改 :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` 的顶部/底部内容边距。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

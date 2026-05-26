@@ -9,14 +9,14 @@ OpenXRSpatialQueryResultData
 
 **继承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the main query result data.
+用于存储主查询结果数据的对象。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Object for storing the main query result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. This must always be the first component requested.
+调用 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 时，用于存储主查询结果数据的对象。这必须始终是请求的第一个组件。
 
 .. rst-class:: classref-reftable-group
 
@@ -49,7 +49,7 @@ Object for storing the main query result data when calling :ref:`OpenXRSpatialEn
 
 :ref:`int<class_int>` **get_capacity**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_capacity>`
 
-Returns the number of entities that were retrieved.
+返回已检索到的实体数量。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Returns the number of entities that were retrieved.
 
 :ref:`int<class_int>` **get_entity_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_id>`
 
-Returns the entity id (``XrSpatialEntityIdEXT``) for the entity at this ``index``.
+返回位于该 ``index`` 的实体的实体 ID（\ ``XrSpatialEntityIdEXT``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +73,7 @@ Returns the entity id (``XrSpatialEntityIdEXT``) for the entity at this ``index`
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **get_entity_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialQueryResultData_method_get_entity_state>`
 
-Returns the entity state for the entity at this ``index``.
+返回该 ``index`` 处实体的实体状态。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -402,9 +402,9 @@ The path simplification amount in worlds units.
 - |void| **set_simplify_path**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_simplify_path**\ (\ )
 
-If ``true`` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by :ref:`simplify_epsilon<class_NavigationPathQueryParameters2D_property_simplify_epsilon>`. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+Si es ``true``, se devolverá una versión simplificada del trayecto con menos puntos críticos de trayectos eliminados. La cantidad de simplificación se controla mediante :ref:`simplify_epsilon<class_NavigationPathQueryParameters2D_property_simplify_epsilon>`. La simplificación utiliza una variante del algoritmo Ramer-Douglas-Peucker para la diezma de puntos de curva.
 
-Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
+La simplificación de trayectos puede ser útil para mitigar varios problemas de seguimiento de trayectos que pueden surgir con ciertos tipos de agentes y comportamientos de script. Por ejemplo, agentes de "dirección" o evitación en "campos abiertos".
 
 .. rst-class:: classref-item-separator
 

@@ -222,7 +222,7 @@ Emitida cuando la pestaña activa se reorganiza mediante el arrastre del ratón.
 
 **pre_popup_pressed**\ (\ ) :ref:`🔗<class_TabContainer_signal_pre_popup_pressed>`
 
-Emitida cuando se hace clic en el botón :ref:`Popup<class_Popup>` del **TabContainer**. Consulta :ref:`set_popup()<class_TabContainer_method_set_popup>` para obtener más detalles.
+Emitida cuando se hace clic en el botón :ref:`Popup<class_Popup>` del **TabContainer**. Véase :ref:`set_popup()<class_TabContainer_method_set_popup>` para obtener más detalles.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ The focus access mode for the internal :ref:`TabBar<class_TabBar>` node.
 - |void| **set_tabs_position**\ (\ value\: :ref:`TabPosition<enum_TabContainer_TabPosition>`\ )
 - :ref:`TabPosition<enum_TabContainer_TabPosition>` **get_tabs_position**\ (\ )
 
-The horizontal alignment of the tabs.
+La alineación horizontal de las pestañas.
 
 .. rst-class:: classref-item-separator
 
@@ -960,7 +960,7 @@ Color de la fuente de las otras pestañas no seleccionadas.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Color del icono de las pestañas deshabilitadas.
 
 .. rst-class:: classref-item-separator
 
@@ -972,7 +972,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabContainer_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Color del icono de la pestaña sobre la que se pasa el cursor. No se aplica a la pestaña seleccionada.
 
 .. rst-class:: classref-item-separator
 

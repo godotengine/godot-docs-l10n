@@ -19,13 +19,13 @@ Objeto base en el espacio 3D, del que heredan todos los nodos 3D.
 Descripción
 ----------------------
 
-The **Node3D** node is the base representation of a node in 3D space. All other 3D nodes inherit from this class.
+El nodo **Node3D** es la representación base de un nodo en el espacio 3D. Todos los demás nodos 3D heredan de esta clase.
 
-Affine operations (translation, rotation, scale) are calculated in the coordinate system relative to the parent, unless the **Node3D**'s :ref:`top_level<class_Node3D_property_top_level>` is ``true``. In this coordinate system, affine operations correspond to direct affine operations on the **Node3D**'s :ref:`transform<class_Node3D_property_transform>`. The term *parent space* refers to this coordinate system. The coordinate system that is attached to the **Node3D** itself is referred to as object-local coordinate system, or *local space*.
+Las operaciones afines (traslación, rotación, escala) se calculan en el sistema de coordenadas relativo al padre, a menos que el :ref:`top_level<class_Node3D_property_top_level>` del **Node3D** sea ``true``. En este sistema de coordenadas, las operaciones afines corresponden a operaciones afines directas sobre el :ref:`transform<class_Node3D_property_transform>` del **Node3D**. El término *espacio del padre* se refiere a este sistema de coordenadas. El sistema de coordenadas que está asociado al propio **Node3D** se conoce como sistema de coordenadas objeto-local, o *espacio local*.
 
-\ **Note:** Unless otherwise specified, all methods that need angle parameters must receive angles in *radians*. To convert degrees to radians, use :ref:`@GlobalScope.deg_to_rad()<class_@GlobalScope_method_deg_to_rad>`.
+\ **Nota:** A menos que se especifique lo contrario, todos los métodos que necesiten parámetros de ángulo deben recibir los ángulos en *radianes*. Para convertir grados a radianes, usa :ref:`@GlobalScope.deg_to_rad()<class_@GlobalScope_method_deg_to_rad>`.
 
-\ **Note:** In Godot 3 and older, **Node3D** was named *Spatial*.
+\ **Nota:** En Godot 3 y anteriores, **Node3D** se llamaba *Spatial*.
 
 .. rst-class:: classref-introduction-group
 
@@ -257,9 +257,9 @@ Notificación recibida cuando este nodo se registra en un nuevo :ref:`World3D<cl
 
 **NOTIFICATION_EXIT_WORLD** = ``42`` :ref:`🔗<class_Node3D_constant_NOTIFICATION_EXIT_WORLD>`
 
-Notification received when this node is unregistered from the current :ref:`World3D<class_World3D>` (see :ref:`get_world_3d()<class_Node3D_method_get_world_3d>`).
+Notificación recibida cuando este nodo se da de baja del :ref:`World3D<class_World3D>` actual (véase :ref:`get_world_3d()<class_Node3D_method_get_world_3d>`).
 
-This notification is sent in reversed order.
+Esta notificación se envía en orden inverso.
 
 .. _class_Node3D_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -267,9 +267,9 @@ This notification is sent in reversed order.
 
 **NOTIFICATION_VISIBILITY_CHANGED** = ``43`` :ref:`🔗<class_Node3D_constant_NOTIFICATION_VISIBILITY_CHANGED>`
 
-Notification received when this node's visibility changes (see :ref:`visible<class_Node3D_property_visible>` and :ref:`is_visible_in_tree()<class_Node3D_method_is_visible_in_tree>`).
+Notificación recibida cuando cambia la visibilidad de este nodo (consulta :ref:`visible<class_Node3D_property_visible>` y :ref:`is_visible_in_tree()<class_Node3D_method_is_visible_in_tree>`).
 
-This notification is received *before* the related :ref:`visibility_changed<class_Node3D_signal_visibility_changed>` signal.
+Esta notificación se recibe *antes* de la señal relacionada :ref:`visibility_changed<class_Node3D_signal_visibility_changed>`.
 
 .. _class_Node3D_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED:
 
@@ -457,17 +457,17 @@ Rotación de este nodo representada como un :ref:`Quaternion<class_Quaternion>` 
 - |void| **set_rotation**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation**\ (\ )
 
-Rotation of this node as `Euler angles <https://en.wikipedia.org/wiki/Euler_angles>`__, in radians and in parent space (relative to the parent node). This value is obtained from :ref:`basis<class_Node3D_property_basis>`'s rotation.
+Rotación de este nodo como `ángulos de Euler <https://en.wikipedia.org/wiki/Euler_angles>`__, en radianes y en espacio padre (relativo al nodo padre). Este valor se obtiene de la rotación de la :ref:`basis<class_Node3D_property_basis>`.
 
-- The :ref:`Vector3.x<class_Vector3_property_x>` is the angle around the local X axis (pitch);
+- :ref:`Vector3.x<class_Vector3_property_x>` es el ángulo alrededor del eje X local (cabeceo);
 
-- The :ref:`Vector3.y<class_Vector3_property_y>` is the angle around the local Y axis (yaw);
+- :ref:`Vector3.y<class_Vector3_property_y>` es el ángulo alrededor del eje Y local (guiñada);
 
-- The :ref:`Vector3.z<class_Vector3_property_z>` is the angle around the local Z axis (roll).
+- :ref:`Vector3.z<class_Vector3_property_z>` es el ángulo alrededor del eje Z local (alabeo).
 
-The order of each consecutive rotation can be changed with :ref:`rotation_order<class_Node3D_property_rotation_order>` (see :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>` constants). By default, the YXZ convention is used (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
+El orden de cada rotación consecutiva puede cambiarse con :ref:`rotation_order<class_Node3D_property_rotation_order>` (ver las constantes :ref:`EulerOrder<enum_@GlobalScope_EulerOrder>`). Por defecto, se usa la convención YXZ (:ref:`@GlobalScope.EULER_ORDER_YXZ<class_@GlobalScope_constant_EULER_ORDER_YXZ>`).
 
-\ **Note:** This property is edited in degrees in the inspector. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
+\ **Nota:** Esta propiedad se edita en grados en el inspector. Si quieres usar grados en un script, usa :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
 
 .. rst-class:: classref-item-separator
 
@@ -484,9 +484,9 @@ The order of each consecutive rotation can be changed with :ref:`rotation_order<
 - |void| **set_rotation_degrees**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_rotation_degrees**\ (\ )
 
-The :ref:`rotation<class_Node3D_property_rotation>` of this node, in degrees instead of radians.
+La :ref:`rotation<class_Node3D_property_rotation>` de este nodo, en grados en lugar de radianes.
 
-\ **Note:** This is **not** the property available in the Inspector dock.
+\ **Nota:** Esta **no** es la propiedad disponible en el dock Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -503,7 +503,7 @@ The :ref:`rotation<class_Node3D_property_rotation>` of this node, in degrees ins
 - |void| **set_rotation_edit_mode**\ (\ value\: :ref:`RotationEditMode<enum_Node3D_RotationEditMode>`\ )
 - :ref:`RotationEditMode<enum_Node3D_RotationEditMode>` **get_rotation_edit_mode**\ (\ )
 
-How this node's rotation and scale are displayed in the Inspector dock.
+Cómo se muestran la rotación y la escala de este nodo en el dock Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -537,11 +537,11 @@ El orden de rotación de los ejes de la propiedad :ref:`rotation<class_Node3D_pr
 - |void| **set_scale**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_scale**\ (\ )
 
-Scale of this node in local space (relative to this node). This value is obtained from :ref:`basis<class_Node3D_property_basis>`'s scale.
+Escala de este nodo en el espacio local (relativa a este nodo). Este valor se obtiene de la escala de :ref:`basis<class_Node3D_property_basis>`.
 
-\ **Note:** The behavior of some 3D node types is not affected by this property. These include :ref:`Light3D<class_Light3D>`, :ref:`Camera3D<class_Camera3D>`, :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, and more.
+\ **Nota:** El comportamiento de algunos tipos de nodo 3D no se ve afectado por esta propiedad. Estos incluyen :ref:`Light3D<class_Light3D>`, :ref:`Camera3D<class_Camera3D>`, :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` y más.
 
-\ **Warning:** The scale's components must either be all positive or all negative, and **not** exactly ``0.0``. Otherwise, it won't be possible to obtain the scale from the :ref:`basis<class_Node3D_property_basis>`. This may cause the intended scale to be lost when reloaded from disk, and potentially other unstable behavior.
+\ **Advertencia:** Los componentes de la escala deben ser todos positivos o todos negativos, y **no** exactamente ``0.0``. De lo contrario, no será posible obtener la escala de la :ref:`basis<class_Node3D_property_basis>`. Esto puede causar que la escala prevista se pierda al recargarla del disco, y potencialmente otros comportamientos inestables.
 
 .. rst-class:: classref-item-separator
 
@@ -558,7 +558,7 @@ Scale of this node in local space (relative to this node). This value is obtaine
 - |void| **set_as_top_level**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_top_level**\ (\ )
 
-If ``true``, the node does not inherit its transformations from its parent. As such, node transformations will only be in global space, which also means that :ref:`global_transform<class_Node3D_property_global_transform>` and :ref:`transform<class_Node3D_property_transform>` will be identical.
+Si es ``true``, el nodo no hereda sus transformaciones de su padre. Como tal, las transformaciones del nodo solo estarán en el espacio global, lo que también significa que :ref:`global_transform<class_Node3D_property_global_transform>` y :ref:`transform<class_Node3D_property_transform>` serán idénticas.
 
 .. rst-class:: classref-item-separator
 
@@ -666,9 +666,9 @@ Deselecciona todos los subgizmos para este nodo. Útil para llamar cuando el sub
 
 |void| **force_update_transform**\ (\ ) :ref:`🔗<class_Node3D_method_force_update_transform>`
 
-Forces the node's :ref:`global_transform<class_Node3D_property_global_transform>` to update, by sending :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Node3D_constant_NOTIFICATION_TRANSFORM_CHANGED>`. Fails if the node is not inside the tree.
+Fuerza la actualización del :ref:`global_transform<class_Node3D_property_global_transform>` del nodo, enviando :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Node3D_constant_NOTIFICATION_TRANSFORM_CHANGED>`. Falla si el nodo no está dentro del árbol.
 
-\ **Note:** For performance reasons, transform changes are usually accumulated and applied *once* at the end of the frame. The update propagates through **Node3D** children, as well. Therefore, use this method only when you need an up-to-date transform (such as during physics operations).
+\ **Nota:** Por razones de rendimiento, los cambios de transformación se suelen acumular y aplicar *una sola vez* al final del fotograma. La actualización se propaga también a través de los hijos **Node3D**. Por lo tanto, usa este método solo cuando necesites una transformación actualizada (como durante las operaciones de física).
 
 .. rst-class:: classref-item-separator
 
@@ -680,7 +680,7 @@ Forces the node's :ref:`global_transform<class_Node3D_property_global_transform>
 
 :ref:`Array<class_Array>`\[:ref:`Node3DGizmo<class_Node3DGizmo>`\] **get_gizmos**\ (\ ) |const| :ref:`🔗<class_Node3D_method_get_gizmos>`
 
-Returns all the :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` objects attached to this node. Only works in the editor.
+Devuelve todos los objetos :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` adjuntos a este nodo. Solo funciona en el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -692,11 +692,11 @@ Returns all the :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` objects attach
 
 :ref:`Transform3D<class_Transform3D>` **get_global_transform_interpolated**\ (\ ) :ref:`🔗<class_Node3D_method_get_global_transform_interpolated>`
 
-When using physics interpolation, there will be circumstances in which you want to know the interpolated (displayed) transform of a node rather than the standard transform (which may only be accurate to the most recent physics tick).
+Al usar la interpolación física, habrá circunstancias en las que querrás saber la transformación interpolada (mostrada) de un nodo en lugar de la transformación estándar (que puede ser precisa solo hasta el tick de física más reciente).
 
-This is particularly important for frame-based operations that take place in :ref:`Node._process()<class_Node_private_method__process>`, rather than :ref:`Node._physics_process()<class_Node_private_method__physics_process>`. Examples include :ref:`Camera3D<class_Camera3D>`\ s focusing on a node, or finding where to fire lasers from on a frame rather than physics tick.
+Esto es particularmente importante para operaciones basadas en fotogramas que tienen lugar en :ref:`Node._process()<class_Node_private_method__process>`, en lugar de :ref:`Node._physics_process()<class_Node_private_method__physics_process>`. Los ejemplos incluyen :ref:`Camera3D<class_Camera3D>`\ s enfocándose en un nodo, o encontrar desde dónde disparar láseres en un fotograma en lugar de en un tick de física.
 
-\ **Note:** This function creates an interpolation pump on the **Node3D** the first time it is called, which can respond to physics interpolation resets. If you get problems with "streaking" when initially following a **Node3D**, be sure to call :ref:`get_global_transform_interpolated()<class_Node3D_method_get_global_transform_interpolated>` at least once *before* resetting the **Node3D** physics interpolation.
+\ **Nota:** Esta función crea una 'bomba de interpolación' en el **Node3D** la primera vez que se llama, la cual puede responder a los reinicios de interpolación física. Si tienes problemas de "rayas" al seguir inicialmente un **Node3D**, asegúrate de llamar a :ref:`get_global_transform_interpolated()<class_Node3D_method_get_global_transform_interpolated>` al menos una vez *antes* de reiniciar la interpolación física del **Node3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -1074,11 +1074,11 @@ Devuelve el ``global_point`` convertido del espacio global al espacio local de e
 
 |void| **translate**\ (\ offset\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_Node3D_method_translate>`
 
-Adds the given translation ``offset`` to the node's position, in local space (relative to this node).
+Añade la traslación dada ``offset`` a la posición del nodo, en espacio local (relativo a este nodo).
 
-\ **Note:** Prefer using :ref:`translate_object_local()<class_Node3D_method_translate_object_local>`, instead, as this method may be changed in a future release.
+\ **Nota:** Es preferible usar :ref:`translate_object_local()<class_Node3D_method_translate_object_local>`, en su lugar, ya que este método podría cambiar en una futura versión.
 
-\ **Note:** Despite the naming convention, this operation is **not** calculated in parent space for compatibility reasons. To translate in parent space, add ``offset`` to the :ref:`position<class_Node3D_property_position>` (``node_3d.position += offset``).
+\ **Nota:** A pesar de la convención de nombres, esta operación **no** se calcula en el espacio del padre por razones de compatibilidad. Para trasladar en el espacio del padre, añade ``offset`` a la :ref:`position<class_Node3D_property_position>` (``node_3d.position += offset``).
 
 .. rst-class:: classref-item-separator
 

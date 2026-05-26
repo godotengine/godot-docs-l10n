@@ -250,7 +250,7 @@ enum **StretchMode**: :ref:`🔗<enum_TextureButton_StretchMode>`
 - |void| **set_texture_focused**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_texture_focused**\ (\ )
 
-节点持有鼠标或键盘焦点时\ *覆盖在基础纹理上*\ 的纹理。因为 :ref:`texture_focused<class_TextureButton_property_texture_focused>` 会在基础纹理上方显示，所以要让基础纹理可见就应该使用半透明纹理。这种情况下比较适用代表轮廓或者下划线的纹理。要禁用焦点的视觉效果，请分配一张任意大小的全透明纹理。请注意，禁用焦点的视觉效果不利于键盘/控制器的导航，所以出于可用性的原因并不建议这么做。
+节点持有鼠标或键盘焦点时\ *覆盖在基础纹理上*\ 的纹理。因为 :ref:`texture_focused<class_TextureButton_property_texture_focused>` 会在基础纹理上方显示，所以要让基础纹理可见就应该使用半透明纹理。这种情况下比较适用代表轮廓或者下划线的纹理。要禁用焦点的视觉效果，请分配一张任意大小的全透明纹理。请注意，禁用焦点的视觉效果不利于键盘/控制器的导航，所以出于无障碍访问的原因并不建议这么做。
 
 .. rst-class:: classref-item-separator
 

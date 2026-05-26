@@ -26,7 +26,7 @@ El nodo **PhysicalBone3D** es un cuerpo físico que se puede utilizar para hacer
 Tutoriales
 --------------------
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`Sistema de Ragdoll <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 
@@ -201,9 +201,9 @@ Descripciones de Propiedades
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-Damps the body's rotation. By default, the body will use the :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` project setting or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`, you can set :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` to be added to or to replace the body's damping value.
+Amortigua la rotación del cuerpo. Por defecto, el cuerpo utilizará el ajuste del proyecto :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` o cualquier valor de anulación establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>`, puedes configurar :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` para que se añada o reemplace el valor de amortiguación del cuerpo.
 
-See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
+Véase :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` para más detalles sobre la amortiguación.
 
 .. rst-class:: classref-item-separator
 
@@ -237,7 +237,7 @@ Define cómo se aplica :ref:`angular_damp<class_PhysicalBone3D_property_angular_
 - |void| **set_angular_velocity**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_angular_velocity**\ (\ )
 
-The PhysicalBone3D's rotational velocity in *radians* per second.
+La velocidad de rotación del PhysicsBone3D en *radianes* por segundo.
 
 .. rst-class:: classref-item-separator
 
@@ -271,9 +271,9 @@ Establece la transformación del cuerpo.
 - |void| **set_bounce**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_bounce**\ (\ )
 
-The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounciness).
+La elasticidad del cuerpo. Los valores van desde ``0`` (sin rebote) hasta ``1`` (rebote completo).
 
-\ **Note:** Even with :ref:`bounce<class_PhysicalBone3D_property_bounce>` set to ``1.0``, some energy will be lost over time due to linear and angular damping. To have a **PhysicalBone3D** that preserves all its energy over time, set :ref:`bounce<class_PhysicalBone3D_property_bounce>` to ``1.0``, :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>` to :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` to ``0.0``, :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>` to :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, and :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` to ``0.0``.
+\ **Nota:** Incluso con :ref:`bounce<class_PhysicalBone3D_property_bounce>` establecido en ``1.0``, se perderá algo de energía con el tiempo debido a la amortiguación lineal y angular. Para tener un **PhysicalBone3D** que conserve toda su energía con el tiempo, establece :ref:`bounce<class_PhysicalBone3D_property_bounce>` en ``1.0``, :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>` en :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` en ``0.0``, :ref:`angular_damp_mode<class_PhysicalBone3D_property_angular_damp_mode>` en :ref:`DAMP_MODE_REPLACE<class_PhysicalBone3D_constant_DAMP_MODE_REPLACE>`, y :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>` en ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ The body's bounciness. Values range from ``0`` (no bounce) to ``1`` (full bounci
 - |void| **set_can_sleep**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_able_to_sleep**\ (\ )
 
-If ``true``, the body is deactivated when there is no movement, so it will not take part in the simulation until it is awakened by an external force.
+Si es ``true``, el cuerpo se desactiva cuando no hay movimiento, por lo que no participará en la simulación hasta que sea despertado por una fuerza externa.
 
 .. rst-class:: classref-item-separator
 
@@ -307,9 +307,9 @@ If ``true``, the body is deactivated when there is no movement, so it will not t
 - |void| **set_use_custom_integrator**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_custom_integrator**\ (\ )
 
-If ``true``, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>` method, if that virtual method is overridden.
+Si es ``true``, la integración estándar de fuerzas (como la gravedad o la amortiguación) se deshabilitará para este cuerpo. Aparte de la respuesta a la colisión, el cuerpo solo se moverá según lo determinado por el método :ref:`_integrate_forces()<class_PhysicalBone3D_private_method__integrate_forces>`, si ese método virtual es sobrescrito.
 
-Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>` internally.
+Establecer esta propiedad llamará internamente al método :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -326,7 +326,7 @@ Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_f
 - |void| **set_friction**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_friction**\ (\ )
 
-The body's friction, from ``0`` (frictionless) to ``1`` (max friction).
+La fricción del cuerpo. Los valores van desde ``0`` (sin fricción) hasta ``1`` (fricción máxima).
 
 .. rst-class:: classref-item-separator
 
@@ -343,7 +343,7 @@ The body's friction, from ``0`` (frictionless) to ``1`` (max friction).
 - |void| **set_gravity_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_scale**\ (\ )
 
-This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` to produce this body's gravity. For example, a value of ``1.0`` will apply normal gravity, ``2.0`` will apply double the gravity, and ``0.5`` will apply half the gravity to this body.
+Esto se multiplica por :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` para producir la gravedad de este cuerpo. Por ejemplo, un valor de ``1.0`` aplicará la gravedad normal, ``2.0`` aplicará el doble de gravedad y ``0.5`` aplicará la mitad de gravedad a este cuerpo.
 
 .. rst-class:: classref-item-separator
 
@@ -411,9 +411,9 @@ Establece el tipo de articulación.
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-Damps the body's movement. By default, the body will use :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` may be added to or replace the body's damping value.
+Amortigua el movimiento del cuerpo. Por defecto, el cuerpo usará :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` o cualquier valor de anulación establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`linear_damp_mode<class_PhysicalBone3D_property_linear_damp_mode>`, :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` puede añadirse o reemplazar el valor de amortiguación del cuerpo.
 
-See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` for more details about damping.
+Véase :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_property_physics/3d/default_linear_damp>` para más detalles sobre la amortiguación.
 
 .. rst-class:: classref-item-separator
 
@@ -430,7 +430,7 @@ See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_mode**\ (\ value\: :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ )
 - :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **get_linear_damp_mode**\ (\ )
 
-Defines how :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>` is applied.
+Define cómo se aplica :ref:`linear_damp<class_PhysicalBone3D_property_linear_damp>`.
 
 .. rst-class:: classref-item-separator
 
@@ -493,11 +493,11 @@ Called during physics processing, allowing you to read and safely modify the sim
 
 |void| **apply_central_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicalBone3D_method_apply_central_impulse>`
 
-Applies a directional impulse without affecting rotation.
+Aplica un impulso direccional sin afectar la rotación.
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_integrate_forces" functions otherwise).
+¡Un impulso es independiente del tiempo! Aplicar un impulso en cada cuadro resultaría en una fuerza dependiente de la tasa de fotogramas. Por esta razón, solo debe usarse al simular impactos únicos (usa las funciones "_integrate_forces" en su lugar).
 
-This is equivalent to using :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>` at the body's center of mass.
+Esto es equivalente a usar :ref:`apply_impulse()<class_PhysicalBone3D_method_apply_impulse>` en el centro de masa del cuerpo.
 
 .. rst-class:: classref-item-separator
 
@@ -509,11 +509,11 @@ This is equivalent to using :ref:`apply_impulse()<class_PhysicalBone3D_method_ap
 
 |void| **apply_impulse**\ (\ impulse\: :ref:`Vector3<class_Vector3>`, position\: :ref:`Vector3<class_Vector3>` = Vector3(0, 0, 0)\ ) :ref:`🔗<class_PhysicalBone3D_method_apply_impulse>`
 
-Applies a positioned impulse to the PhysicsBone3D.
+Aplica un impulso posicionado al PhysicsBone3D.
 
-An impulse is time-independent! Applying an impulse every frame would result in a framerate-dependent force. For this reason, it should only be used when simulating one-time impacts (use the "_integrate_forces" functions otherwise).
+¡Un impulso es independiente del tiempo! Aplicar un impulso en cada cuadro resultaría en una fuerza dependiente de los fotogramas. Por esta razón, sólo debe utilizarse cuando se simulan impactos únicos (de lo contrario, utiliza las funciones "_integrate_forces").
 
-\ ``position`` is the offset from the PhysicsBone3D origin in global coordinates.
+\ ``position`` es el desplazamiento desde el origen del PhysicsBone3D en coordenadas globales.
 
 .. rst-class:: classref-item-separator
 
@@ -537,7 +537,7 @@ Devuelve el identificador único del PhysicsBone3D.
 
 :ref:`bool<class_bool>` **get_simulate_physics**\ (\ ) :ref:`🔗<class_PhysicalBone3D_method_get_simulate_physics>`
 
-Returns ``true`` if the PhysicsBone3D is allowed to simulate physics.
+Devuelve ``true`` si el PhysicsBone3D tiene permitido simular física.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +549,7 @@ Returns ``true`` if the PhysicsBone3D is allowed to simulate physics.
 
 :ref:`bool<class_bool>` **is_simulating_physics**\ (\ ) :ref:`🔗<class_PhysicalBone3D_method_is_simulating_physics>`
 
-Returns ``true`` if the PhysicsBone3D is currently simulating physics.
+Devuelve ``true`` si el PhysicsBone3D está simulando física actualmente.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

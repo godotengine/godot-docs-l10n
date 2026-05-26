@@ -390,7 +390,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ItemList_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+滚动提示将永远不会显示。
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTH:
 
@@ -398,7 +398,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTH** = ``1``
 
-Scroll hints will be shown at the top and bottom.
+滚动提示将显示在顶部和底部。
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_TOP:
 
@@ -406,7 +406,7 @@ Scroll hints will be shown at the top and bottom.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_TOP** = ``2``
 
-Only the top scroll hint will be shown.
+只会显示顶部的滚动提示。
 
 .. _class_ItemList_constant_SCROLL_HINT_MODE_BOTTOM:
 
@@ -414,7 +414,7 @@ Only the top scroll hint will be shown.
 
 :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM** = ``3``
 
-Only the bottom scroll hint will be shown.
+只会显示底部的滚动提示。
 
 .. rst-class:: classref-section-separator
 
@@ -669,7 +669,7 @@ Only the bottom scroll hint will be shown.
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ItemList_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+滚动提示（指示内容仍可沿特定方向滚动的指示器）的显示方式。
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ The way which scroll hints (indicators that show that the content can still be s
 - |void| **set_tile_scroll_hint**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_scroll_hint_tiled**\ (\ )
 
-If ``true``, the scroll hint texture will be tiled instead of stretched. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+如果为 ``true``\ ，则滚动提示纹理将平铺而不是拉伸。见 :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1256,7 +1256,7 @@ If ``true``, the scroll hint texture will be tiled instead of stretched. See :re
 
 |void| **set_item_language**\ (\ idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ItemList_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+将给定索引处项目的文本语言代码设置为 ``language``\ 。这是用于换行和文本塑形算法的。如果 ``language`` 为空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1429,7 +1429,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 :ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ItemList_theme_color_scroll_hint_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` texture.
+用于调制 :ref:`scroll_hint<class_ItemList_theme_icon_scroll_hint>` 纹理的 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1527,7 +1527,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint** :ref:`🔗<class_ItemList_theme_icon_scroll_hint>`
 
-The indicator that will be shown when the content can still be scrolled. See :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`.
+内容仍可滚动时将显示的指示器。见 :ref:`scroll_hint_mode<class_ItemList_property_scroll_hint_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1563,7 +1563,7 @@ The indicator that will be shown when the content can still be scrolled. See :re
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_ItemList_theme_style_focus>`
 
-The focused style for the **ItemList**, drawn on top of everything.
+**ItemList** 的聚焦样式，绘制在所有内容之上。
 
 .. rst-class:: classref-item-separator
 

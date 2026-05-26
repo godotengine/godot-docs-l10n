@@ -23,7 +23,7 @@ Emite luz en un entorno 2D. Una luz se define por un color, un valor de energía
 Tutoriales
 --------------------
 
-- :doc:`2D lights and shadows <../tutorials/2d/2d_lights_and_shadows>`
+- :doc:`Luces y sombras 2D <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 

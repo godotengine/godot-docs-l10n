@@ -124,9 +124,9 @@ Font
 - |void| **set_fallbacks**\ (\ value\: :ref:`Array<class_Array>`\[:ref:`Font<class_Font>`\]\ )
 - :ref:`Array<class_Array>`\[:ref:`Font<class_Font>`\] **get_fallbacks**\ (\ )
 
-Арра пада **Font** використовувати як замінник, якщо гліф не знайдено в цьому струмі **Font**.
+Масив запасних **Font**, які використовуються як заміна, якщо гліф не знайдено в поточному **Font**.
 
-Якщо цей масив порожній у :ref:`FontVariation<class_FontVariation>`, то [member FontVariation. JavaScript licenses API Веб-сайт Go1.13.8.
+Якщо цей масив у :ref:`FontVariation<class_FontVariation>` порожній, замість нього використовуються запасні варіанти :ref:`FontVariation.base_font<class_FontVariation_property_base_font>`.
 
 .. rst-class:: classref-section-separator
 

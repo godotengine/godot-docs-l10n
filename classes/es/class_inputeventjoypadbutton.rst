@@ -79,7 +79,7 @@ Identificador del botón. Una de las constantes de botón :ref:`JoyButton<enum_@
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-Si es ``true``, el estado del botón es presionado. Si ``false``, se libera el estado del botón.
+Si es ``true``, el estado del botón es presionado. Si es ``false``, se libera el estado del botón.
 
 .. rst-class:: classref-item-separator
 

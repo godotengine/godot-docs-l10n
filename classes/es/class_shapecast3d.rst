@@ -480,7 +480,7 @@ Returns whether any object is intersecting with the shape's vector (considering 
 
 |void| **remove_exception**\ (\ node\: :ref:`CollisionObject3D<class_CollisionObject3D>`\ ) :ref:`🔗<class_ShapeCast3D_method_remove_exception>`
 
-Removes a collision exception so the shape does report collisions with the specified node.
+Elimina una excepción de colisión para que la forma vuelva a informar de colisiones con el nodo especificado.
 
 .. rst-class:: classref-item-separator
 

@@ -12,15 +12,15 @@ Quaternion
 描述
 ----
 
-**Quaternion** 即四元数，是一种内置的 :ref:`Variant<class_Variant>` 类型，这种 4D 数据结构使用\ `哈密顿四元数 <https://zh.wikipedia.org/zh-cn/%E5%9B%9B%E5%85%83%E6%95%B0%E4%B8%8E%E7%A9%BA%E9%97%B4%E6%97%8B%E8%BD%AC>`__\ 来代表旋转。\ :ref:`Basis<class_Basis>` 类型能够同时存储旋转和缩放，而四元数\ *只能*\ 存储旋转。
+内置的 **Quaternion**\ （四元数）\ :ref:`Variant<class_Variant>`\ （变体）类型是一种 4D 数据结构，它采用 `哈密顿约定四元数 <https://en.wikipedia.org/wiki/Quaternions_and_spatial_rotation>`__ 的形式来表示旋转。与既能存储旋转又能存储缩放的 :ref:`Basis<class_Basis>`\ （基）类型相比，四元数\ *只能*\ 存储旋转。
 
-\ **Quaternion** 由 4 个浮点分量组成：\ :ref:`w<class_Quaternion_property_w>`\ 、\ :ref:`x<class_Quaternion_property_x>`\ 、\ :ref:`y<class_Quaternion_property_y>`\ 、\ :ref:`z<class_Quaternion_property_z>`\ 。这些分量在内存中非常紧凑，因此部分运算更加高效、造成的浮点数误差也更低。\ :ref:`get_angle()<class_Quaternion_method_get_angle>`\ 、\ :ref:`get_axis()<class_Quaternion_method_get_axis>`\ 、\ :ref:`slerp()<class_Quaternion_method_slerp>` 等方法与 :ref:`Basis<class_Basis>` 中的版本相比也更快。
+一个 **Quaternion** 由 4 个浮点分量组成：\ :ref:`w<class_Quaternion_property_w>`\ 、\ :ref:`x<class_Quaternion_property_x>`\ 、\ :ref:`y<class_Quaternion_property_y>` 和 :ref:`z<class_Quaternion_property_z>`\ 。这些分量在内存中非常紧凑，正因如此，某些运算会更加高效，并且更不容易引发浮点数误差。诸如 :ref:`get_angle()<class_Quaternion_method_get_angle>`\ 、\ :ref:`get_axis()<class_Quaternion_method_get_axis>` 和 :ref:`slerp()<class_Quaternion_method_slerp>` 等方法，都比它们在 :ref:`Basis<class_Basis>` 中的对应方法速度更快。
 
-四元数的入门知识请观看 `3Blue1Brown 的这个视频 <https://www.bilibili.com/video/BV1SW411y7W1/>`__\ 。四元数背后的数学原理并不需要理解，因为 Godot 提供了一些辅助方法能够帮你处理相关的情况。其中包含 :ref:`slerp()<class_Quaternion_method_slerp>`\ 、\ :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>` 以及 ``*`` 运算符。
+想要深入了解四元数，推荐观看 `3Blue1Brown 的这个视频 <https://www.youtube.com/watch?v=d4EgbgTm0Bg>`__\ 。不过，你并不需要完全搞懂四元数背后的数学原理，因为 Godot 提供了多种辅助方法来为你处理这些底层逻辑，其中包括 :ref:`slerp()<class_Quaternion_method_slerp>`\ （球面线性插值）、\ :ref:`spherical_cubic_interpolate()<class_Quaternion_method_spherical_cubic_interpolate>`\ （球面三次插值）以及 ``*``\ （乘号）运算符。
 
-\ **注意：**\ 用于旋转前，必须将四元数归一化（见 :ref:`normalized()<class_Quaternion_method_normalized>`\ ）。
+\ **注意：** 四元数在用于旋转之前必须先进行归一化处理（请见 :ref:`normalized()<class_Quaternion_method_normalized>`\ ）。
 
-\ **注意：**\ 与 :ref:`Vector2<class_Vector2>` 和 :ref:`Vector3<class_Vector3>` 类似，四元数的分量默认使用的是 32 位精度，而 :ref:`float<class_float>` 则是 64 位。如果需要双精度，请使用 ``precision=double`` 选项编译引擎。
+\ **注意：** 与 :ref:`Vector2<class_Vector2>` 和 :ref:`Vector3<class_Vector3>` 类似，四元数的分量默认使用 32 位精度，这与始终为 64 位的 :ref:`float<class_float>` 类型不同。如果需要双精度，请使用 ``precision=double`` 选项重新编译引擎。
 
 .. note::
 

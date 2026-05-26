@@ -1532,6 +1532,8 @@ ProjectSettings
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`rendering/environment/defaults/default_environment<class_ProjectSettings_property_rendering/environment/defaults/default_environment>`                                                               | ``""``                                                                                           |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`rendering/environment/fog/use_legacy_blending<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`                                                                         | ``false``                                                                                        |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>`                                                                                     | ``1``                                                                                            |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/environment/glow/upscale_mode.mobile<class_ProjectSettings_property_rendering/environment/glow/upscale_mode.mobile>`                                                                       | ``0``                                                                                            |
@@ -1712,7 +1714,7 @@ ProjectSettings
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/ggx_samples.mobile<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples.mobile>`                                                   | ``16``                                                                                           |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`                                                       | ``7``                                                                                            |
+   | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`                                                       | ``8``                                                                                            |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>`                                     | ``true``                                                                                         |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -1993,15 +1995,15 @@ ProjectSettings
 
 :ref:`int<class_int>` **accessibility/general/accessibility_support** = ``0`` :ref:`🔗<class_ProjectSettings_property_accessibility/general/accessibility_support>`
 
-Accessibility support mode:
+无障碍支持模式：
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Auto**\ （\ ``0``\ ）：启用无障碍支持，但只会在辅助应用（屏幕阅读器、盲文显示器等）处于活动状态时才会处理无障碍信息的更新（默认）。
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Always Active**\ （\ ``1``\ ）：启用无障碍支持，无论当前辅助应用的状态都会处理无障碍信息的处理。
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Disabled**\ （\ ``2``\ ）：完全禁用无障碍支持。
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test your project with these tools, use **Always Active**.
+\ **注意：**\ Accessibility Insights for Windows、Accessibility Inspector（macOS）、AT-SPI 浏览器（Linux/BSD）等无障碍调试工具不算作辅助应用。要使用这些工具测试应用，请使用 **Always Active**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2025,9 +2027,9 @@ Accessibility support mode:
 
 :ref:`bool<class_bool>` **animation/compatibility/default_parent_skeleton_in_mesh_instance_3d** = ``false`` :ref:`🔗<class_ProjectSettings_property_animation/compatibility/default_parent_skeleton_in_mesh_instance_3d>`
 
-If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` will point to the parent node (``..``) by default, which was the behavior before Godot 4.6. It's recommended to keep this setting disabled unless the old behavior is needed for compatibility.
+如果为 ``true``\ ，则 :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleton>` 默认指向父节点（\ ``..``\ ），这是 Godot 4.6 之前的行为。建议保持该设置项的禁用状态，除非出于兼容性考虑需要保留旧的行为。
 
-\ **Note:** If you disable this option in an existing project, it's strongly recommended to use the ``Project > Tools > Upgrade Project Files...`` option to ensure existing scenes do not break.
+\ **注意：**\ 如果你在已有项目中禁用该选项，强烈建议使用\ ``项目 > 工具 > 升级项目文件...``\ 选项，以确保已有场景不会出现问题。
 
 .. rst-class:: classref-item-separator
 
@@ -2117,7 +2119,7 @@ If ``true``, :ref:`MeshInstance3D.skeleton<class_MeshInstance3D_property_skeleto
 
 :ref:`int<class_int>` **application/boot_splash/stretch_mode** = ``1`` :ref:`🔗<class_ProjectSettings_property_application/boot_splash/stretch_mode>`
 
-Specifies how the splash image will be stretched. For the original size without stretching, set to disabled. See :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` constants for more information.
+指定启动画面图像的拉伸方式。如果不需要拉伸，保持原始尺寸，请设置为“禁用”。更多信息请参阅 :ref:`SplashStretchMode<enum_RenderingServer_SplashStretchMode>` 常量。
 
 .. rst-class:: classref-item-separator
 
@@ -2181,7 +2183,7 @@ Specifies how the splash image will be stretched. For the original size without 
 
 :ref:`bool<class_bool>` **application/config/disable_project_settings_override** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/config/disable_project_settings_override>`
 
-If ``true``, disables loading of project settings overrides (file defined in :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` and ``res://override.cfg``) and related CLI arguments.
+如果为 ``true``\ ，则禁用加载项目设置项覆盖（在 :ref:`application/config/project_settings_override<class_ProjectSettings_property_application/config/project_settings_override>` 和 ``res://override.cfg`` 中定义的文件）以及相关的命令行参数。
 
 .. rst-class:: classref-item-separator
 
@@ -2231,9 +2233,9 @@ If ``true``, disables loading of project settings overrides (file defined in :re
 
 :ref:`Dictionary<class_Dictionary>` **application/config/name_localized** = ``{}`` :ref:`🔗<class_ProjectSettings_property_application/config/name_localized>`
 
-Translations of the project's name. This setting is used by OS tools to translate application name on Android, iOS and macOS.
+项目名称的翻译。操作系统工具会使用此设置来翻译 Android、iOS 和 macOS 上的应用程序名称。
 
-\ **Note:** When left empty, the application name is translated using the project translations.
+\ **注意：**\ 如果留空，应用程序名称将使用项目翻译进行翻译。
 
 .. rst-class:: classref-item-separator
 
@@ -2371,11 +2373,11 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`bool<class_bool>` **application/run/enable_alt_space_menu** = ``false`` :ref:`🔗<class_ProjectSettings_property_application/run/enable_alt_space_menu>`
 
-如果为 ``true``\ ，则允许 :kbd:`Alt + 空格` 键显示窗口菜单。用户能够通过窗口菜单执行移动、调整大小、最小化等窗口管理操作。
+如果设为 ``true``\ ，允许通过按下 :kbd:`Alt + Space` 键来显示窗口菜单。该菜单允许用户执行各种窗口管理操作，例如移动、调整大小或最小化窗口。
 
-\ **注意：**\ 显示窗口菜单时会暂停项目运行，直到该菜单\ *完全*\ 关闭，这是 Windows 的行为。在网络多人游戏中启用该设置时请考虑这一点。完全关闭的意思是，选择了某个选项，用户点击菜单外部，或打开窗口菜单后按下 :kbd:`ESC` 键\ *并且*\ 此后按下了另一个按键。
+\ **注意：** 当菜单显示时，由于 Windows 系统的行为机制，项目的执行将会暂停，直到该菜单被\ *完全*\ 关闭。如果你在联网多人游戏中启用此设置，请务必考虑到这一点。只有当用户选择了一个选项、在菜单外点击，或者在调出窗口菜单后按下 :kbd:`Escape` 键\ *并且*\ 随后又按下了另一个键时，该菜单才会被视为完全关闭。
 
-\ **注意：**\ 该设置仅在 Windows 上实现。
+\ **注意：** 此设置仅在 Windows 平台上生效。
 
 .. rst-class:: classref-item-separator
 
@@ -2495,21 +2497,21 @@ Translations of the project's name. This setting is used by OS tools to translat
 
 :ref:`int<class_int>` **application/run/max_fps** = ``0`` :ref:`🔗<class_ProjectSettings_property_application/run/max_fps>`
 
-Maximum number of frames per second allowed. A value of ``0`` means "no limit". The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project logic and rendering.
+每秒允许的最大帧数。\ ``0`` 表示“不限制”。如果 CPU 或 GPU 无法满足项目逻辑和渲染，则实际每秒的帧数可能仍然比这个值小。
 
-Limiting the FPS can be useful to reduce system power consumption, which reduces heat and noise emissions (and improves battery life on mobile devices).
+限制 FPS 可以降低系统对电源的消耗，能够降低发热、减少噪音（延长移动设备的电池寿命）。
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is set to ``Enabled`` or ``Adaptive``, it takes precedence and the forced FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+\ :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 ``Enabled`` 或 ``Adaptive`` 时，该设置优先生效，强制的 FPS 数无法超过显示器的刷新率。另见 :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`\ 。
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Enabled``, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit slightly lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+\ :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 ``Enabled`` 时，在启用了可变刷新率（G-Sync/FreeSync）的显示器上使用比显示器刷新率略低的 FPS 限制会\ `降低输入延迟，避免画面撕裂 <https://blurbusters.com/howto-low-lag-vsync-on/>`__\ 。在较高的刷新率下，应增大帧率限制与显示器刷新率之间的差值，以确保有足够的帧数来弥补计时误差。在这种情况下，帧率限制值的最佳公式为 ``r - (r * r) / 3600.0``\ ，其中 ``r`` 是显示器的刷新率。
 
-If :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is ``Disabled``, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+\ :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 ``Disabled`` 时，与不限制帧率相比，将 FPS 限制设为系统所能达到的较高值能够降低输入延迟。因为原理是确保 GPU 负载低于 100%，所以只有在 GPU 为瓶颈时才会降低延迟，无法缓解 CPU 瓶颈导致的延迟。
 
-See also :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+另见 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
 
-This setting can be overridden using the ``--max-fps <fps>`` command line argument (including with a value of ``0`` for unlimited framerate).
+这个设置可以使用 ``--max-fps <fps>`` 命令行参数覆盖（设为 ``0`` 则是不限制帧率）。
 
-\ **Note:** This property is only read when the project starts. To change the rendering FPS cap at runtime, set :ref:`Engine.max_fps<class_Engine_property_max_fps>` instead.
+\ **注意：**\ 这个属性仅在项目启动时读取。要在运行时修改渲染 FPS 上限，请改为设置 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2747,9 +2749,9 @@ This setting can be overridden using the ``--max-fps <fps>`` command line argume
 
 :ref:`bool<class_bool>` **audio/general/text_to_speech** = ``false`` :ref:`🔗<class_ProjectSettings_property_audio/general/text_to_speech>`
 
-If ``true``, text-to-speech support is enabled on startup, otherwise it is enabled the first time any TTS method is used. See also :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` and :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`.
+如果为 ``true``\ ，则文本转语音（Text-to-Speech，TTS）支持会在启动时启用，否则会在首次使用任意 TTS 方法时启用，另见 :ref:`DisplayServer.tts_get_voices()<class_DisplayServer_method_tts_get_voices>` 和 :ref:`DisplayServer.tts_speak()<class_DisplayServer_method_tts_speak>`\ 。
 
-\ **Note:** Enabling TTS can cause additional idle CPU usage and interfere with the sleep mode, so consider disabling it if TTS is not used.
+\ **注意：**\ 启用 TTS 会增加空闲 CPU 的占用，影响睡眠模式，所以请在不需要 TTS 时考虑将其关闭。
 
 .. rst-class:: classref-item-separator
 
@@ -2921,7 +2923,7 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_false** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_false>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``false``.
+设为 **Warn** 或 **Error** 时，会在 ``assert`` 调用永远求值为 ``false`` 时对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -2933,7 +2935,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/assert_always_true** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/assert_always_true>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an ``assert`` call always evaluates to ``true``.
+设为 **Warn** 或 **Error** 时，会在 ``assert`` 调用永远求值为 ``true`` 时对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -2945,7 +2947,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_capture_reassignment** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_capture_reassignment>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable captured by a lambda is reassigned, since this does not modify the outer local variable.
+设为 **Warn** 或 **Error** 时，如果为 lambda 捕获的局部变量重新赋值，就会对应产生警告或错误，因为这样做并不会修改外部的局部变量。
 
 .. rst-class:: classref-item-separator
 
@@ -2957,7 +2959,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier contains characters that can be confused with something else, like when mixing different alphabets.
+设为 **Warn** 或 **Error** 时，会在标识符中的字符可能与其他东西产生混淆时对应产生警告或错误，例如混用不同的字母表。
 
 .. rst-class:: classref-item-separator
 
@@ -2969,7 +2971,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_declaration** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier declared in the nested block has the same name as an identifier declared below in the parent block.
+设为 **Warn** 或 **Error** 时，会在嵌套块中声明的标识符与父块中下面声明的标识符同名时，分别产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -2981,7 +2983,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/confusable_local_usage** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/confusable_local_usage>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an identifier that will be shadowed below in the block is used.
+设为 **Warn** 或 **Error** 时，会在该块下的一个将被隐藏的标识符被使用时，分别产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -2993,9 +2995,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/deprecated_keyword** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/deprecated_keyword>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when deprecated keywords are used.
+设为 **Warn** 或 **Error** 时，会在使用已启用的关键字时对应产生警告或错误。
 
-\ **Note:** There are currently no deprecated keywords, so this warning is never produced.
+\ **注意：**\ 目前没有弃用的关键字，因此不会产生该警告。
 
 .. rst-class:: classref-item-separator
 
@@ -3007,13 +3009,13 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`Dictionary<class_Dictionary>` **debug/gdscript/warnings/directory_rules** = ``{ "res://addons": 0 }`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/directory_rules>`
 
-The rules for including or excluding scripts when generating warnings, as a dictionary. Each rule is an entry consisting of a directory path (key) and a decision (value). When trying to generate a warning, the GDScript parser chooses the most specific rule, i.e. the most nested directory containing the script. If the decision is **Exclude**, warnings are not generated for this script. If the decision is **Include** or the script doesn't satisfy any of the rules, the warning configuration specified in the Project Settings is applied.
+生成警告时包含或排除脚本的规则，以字典形式表示。每条规则都是一个条目，由目录路径（键）和决策（值）组成。尝试生成警告时，GDScript 解析器会选择最具体的规则，即包含该脚本的最深层目录。如果决策是 **Exclude**\ ，则不会为此脚本生成警告。如果决策是 **Include** 或脚本不满足任何规则，则会应用项目设置中指定的警告配置。
 
-It is recommended to include your own addons/libraries, either project-specific or actively being developed at the moment. Third-party or project-agnostic addons/libraries should be excluded, as they may be incompatible with the project's warning configuration.
+建议包含你自己的插件/库，无论是项目特定的还是当前正在积极开发的。第三方或与项目无关的插件/库应排除在外，因为它们可能与项目的警告配置不兼容。
 
-\ **Note:** It is not recommended to remove or change the rule for ``"res://addons"`` as the project's warning configuration may break third-party addons. Instead, consider including individual addons, if necessary.
+\ **注意：**\ 不建议删除或更改 ``"res://addons"`` 的规则，因为项目的警告配置可能会破坏第三方插件。如有必要，可以考虑添加单独的插件。
 
-\ **Note:** The editor does not check whether the specified paths are existing directories. It also does not automatically update these paths when directories are moved.
+\ **注意：**\ 编辑器不会检查指定的路径是否为已存在的目录。当目录被移动时，它也不会自动更新这些路径。
 
 .. rst-class:: classref-item-separator
 
@@ -3025,7 +3027,7 @@ It is recommended to include your own addons/libraries, either project-specific 
 
 :ref:`int<class_int>` **debug/gdscript/warnings/empty_file** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/empty_file>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an empty file is parsed.
+设为 **Warn** 或 **Error** 时，会在解析空文件时对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3049,7 +3051,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/enum_variable_without_default** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/enum_variable_without_default>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable has an enum type but no explicit default value, but only if the enum does not contain ``0`` as a valid value.
+设为 **Warn** 或 **Error** 时，如果变量具有枚举类型但没有明确的默认值，且枚举不包含 ``0`` 作为有效值时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3061,7 +3063,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/get_node_default_without_onready** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/get_node_default_without_onready>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when :ref:`Node.get_node()<class_Node_method_get_node>` (or the shorthand ``$``) is used as default value of a class variable without the ``@onready`` annotation.
+设为 **Warn** 或 **Error** 时，当 :ref:`Node.get_node()<class_Node_method_get_node>`\ （或简写 ``$``\ ）被用作一个没有 ``@onready`` 注解的类变量的默认值时，会分别产生一个警告或一个错误 。
 
 .. rst-class:: classref-item-separator
 
@@ -3073,7 +3075,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/incompatible_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/incompatible_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a ternary operator may emit values with incompatible types.
+设为 **Warn** 或 **Error** 时，当三元运算符可能发出具有不兼容类型的值时，分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3085,7 +3087,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inference_on_variant** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inference_on_variant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a static inferred type uses a :ref:`Variant<class_Variant>` as initial value, which makes the static type to also be Variant.
+设为 **Warn** 或 **Error** 时，当静态推断类型使用一个 :ref:`Variant<class_Variant>` 作为初始值时，这使得静态类型也成为 Variant，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3097,9 +3099,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/inferred_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/inferred_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable, constant, or parameter has an implicitly inferred static type. In GDScript, type inference is performed by declaring a variable with ``:=`` instead of ``=`` and leaving out the type specifier. For example, ``var x := 1`` will *infer* the :ref:`int<class_int>` type, while ``var x: int = 1`` explicitly declares the variable as :ref:`int<class_int>`.
+设为 **Warn** 或 **Error** 时，当变量、常量或参数具有隐式推断的静态类型时，分别产生警告或错误。在 GDScript 中，类型推断的执行是通过使用 ``:=`` 而不是 ``=`` 声明变量，并且省略类型说明符。例如，\ ``var x := 1`` 将\ *推断*\ 为 :ref:`int<class_int>` 类型，而 ``var x: int = 1`` 则明确将变量声明为 :ref:`int<class_int>`\ 。
 
-\ **Note:** This warning is recommended *in addition* to :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>` if you want to always specify the type explicitly. Having ``INFERRED_DECLARATION`` warning level higher than ``UNTYPED_DECLARATION`` warning level makes little sense and is not recommended.
+\ **注意：**\ 如果你希望始终显式指定类型，则推荐该警告，\ *除了* :ref:`debug/gdscript/warnings/untyped_declaration<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`\ 。使 ``INFERRED_DECLARATION`` 警告级别高于 ``UNTYPED_DECLARATION`` 警告级别意义不大，且不被推荐。
 
 .. rst-class:: classref-item-separator
 
@@ -3111,7 +3113,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_cast** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum without an explicit cast.
+设为 **Warn** 或 **Error** 时，当尝试将整数用作没有显式转换的枚举时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3123,7 +3125,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/int_as_enum_without_match** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/int_as_enum_without_match>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when trying to use an integer as an enum when there is no matching enum member for that numeric value.
+设为 **Warn** 或 **Error** 时，当在尝试将整数用作枚举，且没有与该数值匹配的枚举成员时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3135,7 +3137,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/integer_division** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/integer_division>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when dividing an integer by another integer (the decimal part will be discarded).
+设为 **Warn** 或 **Error** 时，当一个整数除以另一个整数时（小数部分将被丢弃），会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3147,7 +3149,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_await** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a coroutine without ``await``.
+设为 **Warn** 或 **Error** 时，当在调用协程时没有使用 ``await``\ ，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3159,7 +3161,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/missing_tool** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/missing_tool>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the base class script has the ``@tool`` annotation, but the current class script does not have it.
+设为 **Warn** 或 **Error** 时，会在基类脚本带有 ``@tool`` 注解，但当前类脚本没有该注解时对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3171,7 +3173,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/narrowing_conversion** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/narrowing_conversion>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when passing a floating-point value to a function that expects an integer (it will be converted and lose precision).
+设为 **Warn** 或 **Error** 时，在将浮点值传递给需要整数的函数时（它将被转换并失去精度），会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3183,7 +3185,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/native_method_override** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/native_method_override>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a method in the script overrides a native method, because it may not behave as expected.
+设为 **Warn** 或 **Error** 时，当脚本中的方法覆盖本地方法，因为它可能不会按预期运行时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3195,7 +3197,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/onready_with_export** = ``2`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/onready_with_export>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@onready`` annotation is used together with the ``@export`` annotation, since it may not behave as expected.
+设为 **Warn** 或 **Error** 时，当 ``@onready`` 注解与 ``@export`` 注解一起使用时，因为它可能不会按预期运行，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3209,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_await** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function that is not a coroutine is called with await.
+设为 **Warn** 或 **Error** 时，当使用 await 调用一个非协程的函数时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3219,7 +3221,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_static_unload** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_static_unload>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@static_unload`` annotation is used in a script without any static variables.
+设为 **Warn** 或 **Error** 时，会在 ``@static_unload`` 注解用于不包含任何静态变量的脚本时对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3243,7 +3245,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/return_value_discarded** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/return_value_discarded>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a function without using its return value (by assigning it to a variable or using it as a function argument). These return values are sometimes used to indicate possible errors using the :ref:`Error<enum_@GlobalScope_Error>` enum.
+设为 **Warn** 或 **Error** 时，当调用函数却不使用其返回值（通过将其分配给变量或将其用作函数参数）时，会分别产生一个警告或一个错误。这些返回值有时使用 :ref:`Error<enum_@GlobalScope_Error>` 枚举来指示可能的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3255,7 +3257,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_global_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_global_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when defining a local or member variable, signal, or enum that would have the same name as a built-in function or global class name, thus shadowing it.
+设为 **Warn** 或 **Error** 时，当定义一个与内置函数或全局类同名的局部变量或成员变量、信号或枚举，从而隐藏该内置函数或全局类时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3267,7 +3269,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in the current class.
+设为 **Warn** 或 **Error** 时，当局部变量或局部常量隐藏了当前类定义成员时，会对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3279,7 +3281,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable_base_class** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
+设为 **Warn** 或 **Error** 时，当局部变量或局部常量隐藏了基类定义成员时，会对应产生警告或错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3291,7 +3293,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_expression** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_expression>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling an expression that may have no effect on the surrounding code, such as writing ``2 + 2`` as a statement.
+设为 **Warn** 或 **Error** 时，当调用可能对周围代码没有影响的表达式，例如将 ``2 + 2`` 写为语句时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3303,7 +3305,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a ternary expression that may have no effect on the surrounding code, such as writing ``42 if active else 0`` as a statement.
+设为 **Warn** 或 **Error** 时，当调用可能对周围代码没有影响的三元表达式，例如将 ``42 if active else 0`` 写为语句时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3315,7 +3317,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/static_called_on_instance** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/static_called_on_instance>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a static method from an instance of a class instead of from the class directly.
+设为 **Warn** 或 **Error** 时，当从类的实例而不是直接从类调用静态方法时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3327,7 +3329,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using a variable that wasn't previously assigned.
+设为 **Warn** 或 **Error** 时，当使用以前未分配的变量时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3339,7 +3341,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable_op_assign** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable_op_assign>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when assigning a variable using an assignment operator like ``+=`` if the variable wasn't previously assigned.
+设为 **Warn** 或 **Error** 时，当使用 ``+=`` 等赋值运算符分配一个变量，且该变量以前未分配时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3351,7 +3353,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_code** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_code>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when unreachable code is detected (such as after a ``return`` statement that will always be executed).
+设为 **Warn** 或 **Error** 时，当检测到无法访问的代码（例如始终在 ``return`` 语句之后被执行的代码）时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3363,7 +3365,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_pattern** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_pattern>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an unreachable ``match`` pattern is detected.
+设为 **Warn** 或 **Error** 时，当检测到无法到达的 ``match`` 模式时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3377,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_call_argument** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_call_argument>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using an expression whose type may not be compatible with the function parameter expected.
+设为 **Warn** 或 **Error** 时，当使用类型可能与函数参数预期的类型不兼容的表达式时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3387,7 +3389,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_cast** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a :ref:`Variant<class_Variant>` value is cast to a non-Variant.
+设为 **Warn** 或 **Error** 时，当 :ref:`Variant<class_Variant>` 值转换为非 Variant 时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3399,7 +3401,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_method_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_method_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a method whose presence is not guaranteed at compile-time in the class.
+设为 **Warn** 或 **Error** 时，当调用类中不能保证在编译时存在的方法时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3411,7 +3413,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_property_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when accessing a property whose presence is not guaranteed at compile-time in the class.
+设为 **Warn** 或 **Error** 时，当访问类中不能保证在编译时存在的属性时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3423,7 +3425,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_void_return** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_void_return>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when returning a call from a ``void`` function when such call cannot be guaranteed to be also ``void``.
+设为 **Warn** 或 **Error** 时，当从 ``void`` 函数返回一个调用，且无法保证该调用也是 ``void`` 时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3435,9 +3437,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/untyped_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable or parameter has no static type, or if a function has no static return type.
+设为 **Warn** 或 **Error** 时，当变量或参数没有静态类型，或函数没有静态返回类型时，会分别产生一个警告或一个错误。
 
-\ **Note:** This warning is recommended together with :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` to help achieve type safety.
+\ **注意：**\ 建议将该警告与 :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` 一起使用，以帮助实现类型安全。
 
 .. rst-class:: classref-item-separator
 
@@ -3449,7 +3451,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_local_constant** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_local_constant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local constant is never used.
+设为 **Warn** 或 **Error** 时，当一个局部常量从未被使用时，分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3461,7 +3463,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_parameter** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_parameter>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function parameter is never used.
+设为 **Warn** 或 **Error** 时，当一个函数参数从未使用时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3473,7 +3475,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_private_class_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_private_class_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a private member variable is never used.
+设为 **Warn** 或 **Error** 时，当一个私有成员变量从未被使用时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3485,7 +3487,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_signal** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_signal>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a signal is declared but never explicitly used in the class.
+设为 **Warn** 或 **Error** 时，当信号在类中声明但从未明确使用时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3497,7 +3499,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable is unused.
+设为 **Warn** 或 **Error** 时，当一个局部变量未被使用时，会分别产生一个警告或一个错误。
 
 .. rst-class:: classref-item-separator
 
@@ -4777,19 +4779,19 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **display/window/size/initial_position_type** = ``1`` :ref:`🔗<class_ProjectSettings_property_display/window/size/initial_position_type>`
 
-Main window initial position.
+主窗口的初始位置。
 
-\ ``0`` - "Absolute", :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` is used to set window position.
+\ ``0`` - “Absolute（绝对位置）”，窗口位置用 :ref:`display/window/size/initial_position<class_ProjectSettings_property_display/window/size/initial_position>` 设置。
 
-\ ``1`` - "Primary Screen Center".
+\ ``1`` - “Primary Screen Center（主屏幕中心）”。
 
-\ ``3`` - "Other Screen Center", :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` is used to set the screen.
+\ ``3`` - “Other Screen Center（其他屏幕中心）”，屏幕用 :ref:`display/window/size/initial_screen<class_ProjectSettings_property_display/window/size/initial_screen>` 设置。
 
-\ ``4`` - "Center of Screen With Mouse Pointer".
+\ ``4`` - “Center of Screen With Mouse Pointer（屏幕中心，带有鼠标指针）”。
 
-\ ``5`` - "Center of Screen With Keyboard Focus".
+\ ``5`` - “Center of Screen With Keyboard Focus（屏幕中心，带有键盘焦点）”。
 
-\ **Note:** This setting only affects the exported project, or when the project is run from the command line. In the editor, the value of :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>` is used instead.
+\ **注意：**\ 该设置仅影响导出的项目，或者当项目从命令行运行时。在编辑器中，请改用 :ref:`EditorSettings.run/window_placement/rect<class_EditorSettings_property_run/window_placement/rect>` 的值。
 
 .. rst-class:: classref-item-separator
 
@@ -4967,17 +4969,17 @@ Main window initial position.
 
 :ref:`String<class_String>` **display/window/stretch/aspect** = ``"keep"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/aspect>`
 
-Defines how the aspect ratio of the base size is preserved when stretching to fit the resolution of the window or screen.
+定义在拉伸以适应窗口或屏幕分辨率时如何保持基本大小的纵横比。
 
-\ ``"ignore"``: Ignore the aspect ratio when stretching the screen. This means that the original resolution will be stretched to exactly fill the screen, even if it's wider or narrower. This may result in non-uniform stretching: things looking wider or taller than designed.
+\ ``"ignore"``\ ：拉伸屏幕时忽略纵横比。这意味着即使屏幕更宽或更窄，原始分辨率也会被拉伸以完全填满屏幕。这可能会导致拉伸不均匀：物体看起来比设计得更宽或更高。
 
-\ ``"keep"``: Keep aspect ratio when stretching the screen. This means that the viewport retains its original size regardless of the screen resolution, and black bars will be added to the top/bottom of the screen ("letterboxing") or the sides ("pillarboxing").
+\ ``"keep"``\ ：拉伸屏幕时保持纵横比。这意味着无论屏幕分辨率如何，视口都会保持其原始大小，并且会在屏幕顶部/底部（“信箱模式”）或两侧（“柱状模式”）添加黑边。
 
-\ ``"keep_width"``: Keep aspect ratio when stretching the screen. If the screen is wider than the base size, black bars are added at the left and right (pillarboxing). But if the screen is taller than the base resolution, the viewport will be grown in the vertical direction (and more content will be visible at the bottom). You can also think of this as "Expand Vertically".
+\ ``"keep_width"``\ ：拉伸屏幕时保持纵横比。如果屏幕比基本大小宽，则会在左右两侧添加黑边（柱状模式）。但如果屏幕比基本分辨率高，则视口会在垂直方向上扩展（并且底部会显示更多内容）。你也可以把它理解为“垂直扩展”。
 
-\ ``"keep_height"``: Keep aspect ratio when stretching the screen. If the screen is taller than the base size, black bars are added at the top and bottom (letterboxing). But if the screen is wider than the base resolution, the viewport will be grown in the horizontal direction (and more content will be visible to the right). You can also think of this as "Expand Horizontally".
+\ ``"keep_height"``\ ：拉伸屏幕时保持纵横比。如果屏幕比基本大小高，则会在顶部和底部添加黑边（信箱模式）。但如果屏幕比基本分辨率宽，则视口会在水平方向上扩展（并且右侧会显示更多内容）。你也可以把它理解为“水平扩展”。
 
-\ ``"expand"``: Keep aspect ratio when stretching the screen, but keep neither the base width nor height. Depending on the screen aspect ratio, the viewport will either be larger in the horizontal direction (if the screen is wider than the base size) or in the vertical direction (if the screen is taller than the original size).
+\ ``"expand"``\ ：拉伸屏幕时保持宽高比，但不保持基本宽度或高度。根据屏幕纵横比，视口将在水平方向（如果屏幕比基本大小宽）或垂直方向（如果屏幕比原始大小高）上更大。
 
 .. rst-class:: classref-item-separator
 
@@ -4989,13 +4991,13 @@ Defines how the aspect ratio of the base size is preserved when stretching to fi
 
 :ref:`String<class_String>` **display/window/stretch/mode** = ``"disabled"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/mode>`
 
-Defines how the base size is stretched to fit the resolution of the window or screen.
+定义如何将基础大小进行拉伸，从而适应窗口或屏幕的分辨率。
 
-\ ``"disabled"``: No stretching happens. One unit in the scene corresponds to one pixel on the screen. In this mode, :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` has no effect. Recommended for non-game applications.
+\ ``"disabled"``\ ：不进行拉伸。场景中的一个单位对应屏幕上的一个像素。\ :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` 在该模式下无效。推荐非游戏应用程序使用。
 
-\ ``"canvas_items"``: The base size specified in width and height in the project settings is stretched to cover the whole screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). This means that everything is rendered directly at the target resolution. 3D is unaffected, while in 2D, there is no longer a 1:1 correspondence between sprite pixels and screen pixels, which may result in scaling artifacts. Recommended for most games that don't use a pixel art aesthetic, although it is possible to use this stretch mode for pixel art games too (especially in 3D).
+\ ``"canvas_items"``\ ：将项目设置中指定的基础大小拉伸至覆盖整个屏幕（会考虑 :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`\ ）。这样所有东西都是直接按照目标分辨率渲染的。3D 不受影响，但在 2D 中精灵的像素和屏幕像素就不再是 1:1 的关系了，缩放可能导致画面问题。推荐大多数非像素风的游戏使用，尽管像素风游戏也可以使用该拉伸模式（尤其是 3D）。
 
-\ ``"viewport"``: The size of the root :ref:`Viewport<class_Viewport>` is set precisely to the base size specified in the Project Settings' Display section. The scene is rendered to this viewport first. Finally, this viewport is scaled to fit the screen (taking :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>` into account). Recommended for games that use a pixel art aesthetic.
+\ ``"viewport"``\ ：将根 :ref:`Viewport<class_Viewport>` 的大小设为项目设置中“显示”部分中指定的基础大小。场景会现在这个视口中渲染。最终会将该视口缩放至适合屏幕的尺寸（会考虑 :ref:`display/window/stretch/aspect<class_ProjectSettings_property_display/window/stretch/aspect>`\ ）。推荐像素风游戏使用。
 
 .. rst-class:: classref-item-separator
 
@@ -5019,13 +5021,13 @@ Defines how the base size is stretched to fit the resolution of the window or sc
 
 :ref:`String<class_String>` **display/window/stretch/scale_mode** = ``"fractional"`` :ref:`🔗<class_ProjectSettings_property_display/window/stretch/scale_mode>`
 
-The policy to use to determine the final scale factor for 2D elements. This affects how :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` is applied, in addition to the automatic scale factor determined by :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>`.
+决定 2D 元素最终缩放系数的策略。会影响 :ref:`display/window/stretch/scale<class_ProjectSettings_property_display/window/stretch/scale>` 的使用，与 :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` 决定的自动缩放系数共同生效。
 
-\ ``"fractional"``: The scale factor will not be modified.
+\ ``"fractional"``\ ：小数。不改变缩放系数。
 
-\ ``"integer"``: The scale factor will be floored to an integer value, which means that the screen size will always be an integer multiple of the base viewport size. This provides a crisp pixel art appearance.
+\ ``"integer"``\ ：整数。将缩放系数向下取整，屏幕大小始终为基础视口大小的整数倍。能够显示锐利的像素风画面。
 
-\ **Note:** When using integer scaling with a stretch mode, resizing the window to be smaller than the base viewport size will clip the contents. Consider preventing that by setting :ref:`Window.min_size<class_Window_property_min_size>` to the same value as the base viewport size defined in :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>`.
+\ **注意：**\ 使用整数缩放并设置拉伸模式时，将窗口大小调整得比基础视口大小更小会将内容进行裁剪。请考虑将 :ref:`Window.min_size<class_Window_property_min_size>` 设为与 :ref:`display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` 定义的基础视口大小一致，避免这种情况的发生。
 
 .. rst-class:: classref-item-separator
 
@@ -5037,11 +5039,11 @@ The policy to use to determine the final scale factor for 2D elements. This affe
 
 :ref:`bool<class_bool>` **display/window/subwindows/embed_subwindows** = ``true`` :ref:`🔗<class_ProjectSettings_property_display/window/subwindows/embed_subwindows>`
 
-If ``true``, subwindows are embedded in the main window (this is also called single-window mode). Single-window mode can be faster as it does not need to create a separate window for every popup and tooltip, which can be a slow operation depending on the operating system and rendering method in use.
+如果为 ``true``\ ，则会将子窗口嵌入到主窗口中（也称为单窗口模式）。单窗口模式可能更快，因为无须为每个弹出项和工具提示都创建一个单独的窗口，根据操作系统和所使用的渲染方法的不同，创建窗口可能是很慢的操作。
 
-If ``false``, subwindows are created as separate windows (this is also called multi-window mode). This allows them to be moved outside the main window and use native operating system window decorations.
+如果为 ``false``\ ，则会为子窗口会创建单独的窗口（也称为多窗口模式）。该模式下能够将子窗口移动到主窗口之外，使用的也是操作系统窗口的装饰。
 
-This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>` in the editor.
+等价于编辑器中的 :ref:`EditorSettings.interface/editor/single_window_mode<class_EditorSettings_property_interface/editor/single_window_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5167,7 +5169,7 @@ This is equivalent to :ref:`EditorSettings.interface/editor/single_window_mode<c
 
 :ref:`int<class_int>` **editor/movie_writer/audio_bit_depth** = ``16`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/audio_bit_depth>`
 
-Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit are supported.
+写入 ``.avi`` 文件的每个音频采样的比特数。目前仅支持 16 位和 32 位。
 
 .. rst-class:: classref-item-separator
 
@@ -5179,7 +5181,7 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`bool<class_bool>` **editor/movie_writer/disable_vsync** = ``false`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/disable_vsync>`
 
-如果为 ``true``\ ，则在写入电影时会请求禁用垂直同步（类似于将 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 设置为 **Disabled**\ ）。如果硬件的渲染速度足够快，那么就可以加速视频的写入，以高于显示器刷新率的帧速率渲染、编码和保存视频。
+如果为 ``true``\ ，则在影片录制时会请求禁用垂直同步（类似于将 :ref:`display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 设置为 **Disabled**\ ）。如果硬件的渲染速度足够快，那么就可以加速视频录制，以高于显示器刷新率的帧速率渲染、编码和保存视频。
 
 \ **注意：**\ 如果操作系统或图形驱动程序强制垂直同步，则应用程序无法禁用，\ :ref:`editor/movie_writer/disable_vsync<class_ProjectSettings_property_editor/movie_writer/disable_vsync>` 无效。
 
@@ -5193,7 +5195,7 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`int<class_int>` **editor/movie_writer/fps** = ``60`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/fps>`
 
-输出电影时，在视频中每秒记录的帧数。仿真速度将调整为始终与指定的帧数相匹配，这意味着引擎在较高的 :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` 值下会显得运行较慢。部分 FPS 值将需要你调整 :ref:`editor/movie_writer/mix_rate<class_ProjectSettings_property_editor/movie_writer/mix_rate>`\ ，防止音频随着时间的推移而出现不同步。
+影片录制时，在视频中每秒记录的帧数。仿真速度将调整为始终与指定的帧数相匹配，这意味着引擎在较高的 :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` 值下会显得运行较慢。部分 FPS 值将需要你调整 :ref:`editor/movie_writer/mix_rate<class_ProjectSettings_property_editor/movie_writer/mix_rate>`\ ，防止音频随着时间的推移而出现不同步。
 
 可以在命令行中使用 ``--fixed-fps <fps>`` :doc:`命令行参数 <../tutorials/editor/command_line_tutorial>`\ 手动指定。
 
@@ -5207,7 +5209,7 @@ Number of bits per audio sample written to the ``.avi`` file. Only 16 and 32-bit
 
 :ref:`int<class_int>` **editor/movie_writer/mix_rate** = ``48000`` :ref:`🔗<class_ProjectSettings_property_editor/movie_writer/mix_rate>`
 
-写入影片时，录制的音频所使用的音频混合采样率（单位为 Hz）。可以和 :ref:`audio/driver/mix_rate<class_ProjectSettings_property_audio/driver/mix_rate>` 不同，但这个值必须能够被 :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` 整除，从而防止音频可能逐渐不同步的问题。
+影片录制时，录制的音频所使用的音频混合采样率（单位为 Hz）。可以和 :ref:`audio/driver/mix_rate<class_ProjectSettings_property_audio/driver/mix_rate>` 不同，但这个值必须能够被 :ref:`editor/movie_writer/fps<class_ProjectSettings_property_editor/movie_writer/fps>` 整除，从而防止音频可能逐渐不同步的问题。
 
 .. rst-class:: classref-item-separator
 
@@ -5229,7 +5231,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 - 视频使用 PNG 图像序列，音频使用 WAV（文件扩展名为 ``.png``\ ）。无损压缩，文件大小较大，编码较慢。旨在录制后使用 `FFmpeg <https://ffmpeg.org/>`__ 等其他工具编码为视频文件。目前不支持透明度，即便将根视口设为透明也不行。
 
-如果需要编码为其他格式，或者将流导入至第三方软件，你可以扩展 :ref:`MovieWriter<class_MovieWriter>` 类，创建自己的影片写入器。
+如果需要编码为其他格式，或者将流导入至第三方软件，你可以扩展 :ref:`MovieWriter<class_MovieWriter>` 类，创建自己的影片录制器。
 
 使用 PNG 输出时，帧号将附加在文件名末尾。帧号从 0 开始，会补齐至 8 位数字，从而确保能够正确排序，处理起来也更方便。例如，如果输出路径为 ``/tmp/hello.png``\ ，那么前两帧就是 ``/tmp/hello00000000.png`` 和 ``/tmp/hello00000001.png``\ 。音频将保存在 ``/tmp/hello.wav``\ 。
 
@@ -5539,7 +5541,7 @@ Godot 内置的 :ref:`MovieWriter<class_MovieWriter>` 有 3 个：
 
 :ref:`int<class_int>` **gui/common/drag_threshold** = ``10`` :ref:`🔗<class_ProjectSettings_property_gui/common/drag_threshold>`
 
-The minimum distance the mouse cursor must move while pressed before a drag operation begins in the default viewport. For custom viewports see :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`.
+在默认视口中，鼠标光标按下后必须移动的最小距离，超过该距离才会开始拖动操作。对于自定义视口，请参阅 :ref:`Viewport.gui_drag_threshold<class_Viewport_property_gui_drag_threshold>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5551,13 +5553,13 @@ The minimum distance the mouse cursor must move while pressed before a drag oper
 
 :ref:`int<class_int>` **gui/common/show_focus_state_on_pointer_event** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/common/show_focus_state_on_pointer_event>`
 
-Determines whether a :ref:`Control<class_Control>` should visually indicate focus when said focus is gained using a mouse or touch input.
+确定当使用鼠标或触摸输入获得焦点时，\ :ref:`Control<class_Control>` 是否应在视觉上指示焦点。
 
-- **Never** (``0``) show the focused state for mouse/touch input.
+- **Never（从不）**\ （\ ``0``\ ）显示鼠标/触摸输入时的焦点状态。
 
-- **Control Supports Keyboard Input** (``1``) shows the focused state even when gained via mouse/touch input (similar to how browsers handle focus).
+- **Control Supports Keyboard Input（控件支持键盘输入）**\ （\ ``1``\ ）显示焦点状态，即使通过鼠标/触摸输入获得焦点（类似于浏览器处理焦点的方式）。
 
-- **Always** (``2``) show the focused state, even if said focus was gained via mouse/touch input.
+- **Always（始终）**\ （\ ``2``\ ）显示焦点状态，即使焦点是通过鼠标/触摸输入获得的。
 
 .. rst-class:: classref-item-separator
 
@@ -5581,17 +5583,17 @@ Determines whether a :ref:`Control<class_Control>` should visually indicate focu
 
 :ref:`int<class_int>` **gui/common/swap_cancel_ok** = ``0`` :ref:`🔗<class_ProjectSettings_property_gui/common/swap_cancel_ok>`
 
-How to position the Cancel and OK buttons in the project's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting.
+如何在编辑器的 :ref:`AcceptDialog<class_AcceptDialog>` 窗口中放置“取消”和“确定”按钮。不同的平台有不同的约定，但可以通过这个设置项来覆盖。
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** 遵守平台约定：在 Windows、KDE、LXQt 上确定在前，在 macOS 和其他 Linux 桌面环境中取消在前。
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Cancel First** 强制为取消、确定的顺序。
 
-- **OK First** forces the OK/Cancel ordering.
+- **OK First** 强制为确定、取消的顺序。
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+要检查这些按钮在运行时中是否被调换位置，请使用 :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`\ 。
 
-\ **Note:** This doesn't affect native dialogs such as the ones spawned by :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>`.
+\ **注意：**\ 这不会影响原生对话框，例如由 :ref:`DisplayServer.dialog_show()<class_DisplayServer_method_dialog_show>` 方法生成的对话框。
 
 .. rst-class:: classref-item-separator
 
@@ -5615,7 +5617,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`bool<class_bool>` **gui/fonts/dynamic_fonts/use_oversampling** = ``true`` :ref:`🔗<class_ProjectSettings_property_gui/fonts/dynamic_fonts/use_oversampling>`
 
-If set to ``true`` and :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` is set to ``"canvas_items"``, font and :ref:`DPITexture<class_DPITexture>` oversampling is enabled in the main window. Use :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` to control oversampling in other viewports and windows.
+如果为 ``true`` 且 :ref:`display/window/stretch/mode<class_ProjectSettings_property_display/window/stretch/mode>` 为 ``"canvas_items"``\ ，则会在主窗口启用字体和 :ref:`DPITexture<class_DPITexture>` 的过采样。其他视口和窗口中请使用 :ref:`Viewport.oversampling<class_Viewport_property_oversampling>` 来控制过采样。
 
 .. rst-class:: classref-item-separator
 
@@ -5725,9 +5727,9 @@ MSDF 字体渲染可以与 :ref:`gui/theme/default_font_generate_mipmaps<class_P
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
+当未被 :ref:`Theme<class_Theme>` 覆盖时，\ :ref:`Control<class_Control>` 的默认缩放因子。
 
-\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
+\ **注意：**\ 该属性仅在项目启动时读取。要在运行时中更改默认主题缩放比例，请改为设置 :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>`\ 。但是，要在运行时中调整所有 2D 元素的缩放比例，最好在根 :ref:`Window<class_Window>` 节点上使用 :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>`\ （因为这也会影响覆盖的 :ref:`Theme<class_Theme>`\ ）。有关详细信息，请参阅文档中的\ :doc:`多分辨率 <../tutorials/rendering/multiple_resolutions>`\ 部分。
 
 .. rst-class:: classref-item-separator
 
@@ -5853,9 +5855,9 @@ LCD 次像素布局，用于字体抗锯齿。见 :ref:`FontLCDSubpixelLayout<en
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window.
+用于关闭对话框窗口的默认 :ref:`InputEventAction<class_InputEventAction>`\ 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 默认的 ``ui_*`` 动作无法移除，因为它们是多个 :ref:`Control<class_Control>` 控件内部逻辑所必需的。但是，可以修改分配给该动作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5867,7 +5869,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog.macos>`
 
-macOS specific override for the shortcut to close a dialog window.
+macOS 特有的用于关闭对话框窗口的快捷键覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -5949,9 +5951,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected file in a :ref:`FileDialog<class_FileDialog>`.
+用于在 :ref:`FileDialog<class_FileDialog>` 中删除选定文件的默认 :ref:`InputEventAction<class_InputEventAction>`\ 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 默认的 ``ui_*`` 动作无法移除，因为它们是多个 :ref:`Control<class_Control>` 控件内部逻辑所必需的。但是，可以修改分配给该动作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5963,9 +5965,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected f
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_find** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_find>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a :ref:`FileDialog<class_FileDialog>`.
+用于在 :ref:`FileDialog<class_FileDialog>` 中打开文件筛选器的默认 :ref:`InputEventAction<class_InputEventAction>` 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 默认的 ``ui_*`` 动作无法移除，因为它们是多个 :ref:`Control<class_Control>` 控件内部逻辑所必需的。但是，可以修改分配给该动作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5977,9 +5979,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field in a :ref:`FileDialog<class_FileDialog>`.
+用于在 :ref:`FileDialog<class_FileDialog>` 中聚焦路径编辑字段的默认 :ref:`InputEventAction<class_InputEventAction>` 。
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **注意：**\ 默认的 ``ui_*`` 动作无法移除，因为它们是多个 :ref:`Control<class_Control>` 控件内部逻辑所必需的。但是，可以修改分配给该动作的事件。
 
 .. rst-class:: classref-item-separator
 
@@ -5991,7 +5993,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path.macos>`
 
-macOS specific override for the shortcut to focus path edit field in :ref:`FileDialog<class_FileDialog>`.
+macOS 特有的用于在 :ref:`FileDialog<class_FileDialog>` 中聚焦路径编辑字段的快捷键覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -9947,15 +9949,15 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`String<class_String>` **navigation/2d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/navigation_engine>`
 
-Sets which navigation engine to use for 2D navigation.
+设置用于 2D 导航的导航引擎。
 
-\ **DEFAULT** is equivalent to **GodotNavigation2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 等价于 **GodotNavigation2D**\ ，但在未来的版本中可能会更改。如果希望确保项目始终使用相同的引擎，请选择明确的实现。
 
-\ **GodotNavigation2D** is Godot's internal 2D navigation engine.
+\ **GodotNavigation2D** 是 Godot 的内部 2D 导航引擎。
 
-\ **Dummy** is a 2D navigation server that does nothing and returns only dummy values, effectively disabling all 2D navigation functionality.
+\ **Dummy** 是一个不执行任何操作、仅返回虚设值的 2D 导航服务器，实际上禁用了所有 2D 导航功能。
 
-Third-party modules can add other navigation engines to select with this setting.
+第三方模块可以通过该设置添加其他可选择的导航引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10075,15 +10077,15 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`String<class_String>` **navigation/3d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/navigation_engine>`
 
-Sets which navigation engine to use for 3D navigation.
+设置用于 3D 导航的导航引擎。
 
-\ **DEFAULT** is equivalent to **GodotNavigation3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 等价于 **GodotNavigation3D**\ ，但在未来的版本中可能会更改。如果希望确保项目始终使用相同的引擎，请选择明确的实现。
 
-\ **GodotNavigation3D** is Godot's internal 3D navigation engine.
+\ **GodotNavigation3D** 是 Godot 的内部 3D 导航引擎。
 
-\ **Dummy** is a 3D navigation server that does nothing and returns only dummy values, effectively disabling all 3D navigation functionality.
+\ **Dummy** 是一个不执行任何操作、仅返回虚设值的 3D 导航服务器，实际上禁用了所有 3D 导航功能。
 
-Third-party modules can add other navigation engines to select with this setting.
+第三方模块可以通过该设置添加其他可选择的导航引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10299,7 +10301,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`int<class_int>` **network/limits/unix/connect_timeout_seconds** = ``30`` :ref:`🔗<class_ProjectSettings_property_network/limits/unix/connect_timeout_seconds>`
 
-Timeout (in seconds) for connection attempts using UNIX domain socket.
+使用 UNIX 域套接字连接尝试的超时（以秒为单位）。
 
 .. rst-class:: classref-item-separator
 
@@ -10323,9 +10325,9 @@ Timeout (in seconds) for connection attempts using UNIX domain socket.
 
 :ref:`String<class_String>` **network/tls/certificate_bundle_override** = ``""`` :ref:`🔗<class_ProjectSettings_property_network/tls/certificate_bundle_override>`
 
-The CA certificates bundle to use for TLS connections. If this is set to a non-empty value, this will *override* Godot's default `Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__. If left empty, the default certificate bundle will be used.
+用于 TLS 连接的 CA 证书包。如果设置为非空值，这将\ *覆盖* Godot 默认的 `Mozilla 证书包 <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__\ 。如果留空，将使用默认的证书包。
 
-If in doubt, leave this setting empty.
+如果有疑问，请将此设置留空。
 
 .. rst-class:: classref-item-separator
 
@@ -10691,17 +10693,17 @@ If in doubt, leave this setting empty.
 
 :ref:`String<class_String>` **physics/3d/physics_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_physics/3d/physics_engine>`
 
-Sets which physics engine to use for 3D physics.
+设置用于 3D 物理的物理引擎。
 
-\ **DEFAULT** is currently equivalent to **GodotPhysics3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** 目前等价于 **GodotPhysics3D**\ ，但在未来的版本中可能会有所更改。如果希望确保项目始终使用相同的引擎，请选择明确的实现。
 
-\ **GodotPhysics3D** is Godot's internal 3D physics engine.
+\ **GodotPhysics3D** 是 Godot 的内部 3D 物理引擎。
 
-\ **Jolt Physics** is an alternative physics engine that is generally faster and more reliable than **GodotPhysics3D**. Jolt Physics is the default for projects created starting in Godot 4.6.
+\ **Jolt Physics** 是备选的物理引擎，通常比 **GodotPhysics3D** 更快更可靠。从 Godot 4.6 开始创建的项目默认使用 Jolt Physics。
 
-\ **Dummy** is a 3D physics server that does nothing and returns only dummy values, effectively disabling all 3D physics functionality.
+\ **Dummy** 是一个不执行任何操作、仅返回虚设值的 3D 物理服务器，实际上禁用了所有 3D 物理功能。
 
-Third-party extensions and modules can add other physics engines to select with this setting.
+第三方扩展和模块可以通过该设置添加其他可选择的物理引擎。
 
 .. rst-class:: classref-item-separator
 
@@ -10907,17 +10909,17 @@ Third-party extensions and modules can add other physics engines to select with 
 
 :ref:`int<class_int>` **physics/common/physics_ticks_per_second** = ``60`` :ref:`🔗<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+每秒执行的固定迭代次数。用于控制物理仿真和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 的执行频率。
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+CPU 使用率大致与物理周期速率成正比。然而，在周期速率非常低（通常低于 30）的情况下，物理行为可能损坏。在低周期速率下，输入响应也可能变得迟钝，因为输入被注册和在下一个物理周期做出响应之间会存在延迟。较高的周期速率可以提供更精确的物理模拟，尤其对于快速移动的物体而言更是如此。例如，赛车游戏可以通过将刷新率提高到高于默认值 60 来获得更好的体验。
 
-See also :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`.
+另见 :ref:`application/run/max_fps<class_ProjectSettings_property_application/run/max_fps>`\ 。
 
-\ **Note:** This property is only read when the project starts. To change the physics FPS at runtime, set :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` instead.
+\ **注意：**\ 这个属性只在项目启动时读取。要在运行时改变物理 FPS，请改为设置 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。
 
-\ **Note:** Only :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` if increasing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` significantly above its default value.
+\ **注意：**\ 每个渲染帧最多只能模拟 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` 个物理周期。如果为了追赶渲染，需要在每个渲染帧中模拟更多物理周期，游戏看上去会是降速的（即便在物理计算中始终使用 ``delta``\ ）。因此，如果增大了 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ ，而且远大于默认值，那么建议将 :ref:`physics/common/max_physics_steps_per_frame<class_ProjectSettings_property_physics/common/max_physics_steps_per_frame>` 也调大。
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **注意：**\ 如果将 :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` 的值更改为不是 ``60`` 的倍数，请考虑启用 :doc:`物理插值 <../tutorials/physics/interpolation/index>`\ 。使用物理插值可以避免显示器刷新率和物理更新率不完全匹配时出现抖动。
 
 .. rst-class:: classref-item-separator
 
@@ -11525,11 +11527,11 @@ See also :ref:`application/run/max_fps<class_ProjectSettings_property_applicatio
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_debanding** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_debanding>`
 
-If ``true``, uses a fast dithering filter just before transforming floating point color values to integer color values to make banding significantly less visible. Debanding is applied at different steps of the rendering process depending on the rendering method and :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` setting.
+如果为 ``true``\ ，则在将浮点颜色值转换为整数颜色值之前使用快速抖动滤镜，以显著减少色带现象。去色带处理会在渲染过程的不同阶段应用，具体取决于渲染方法和 :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` 设置项。
 
-In some cases, debanding may introduce a slightly noticeable dithering pattern. It's recommended to enable debanding only when actually needed since the dithering pattern will make lossless-compressed screenshots larger.
+在某些情况下，去条带处理可能会引入轻微可见的抖动图案。建议仅在实际需要时启用去条带处理，因为抖动图案会使无损压缩的截图变大。
 
-\ **Note:** This property is only read when the project starts and configures :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of the root :ref:`Viewport<class_Viewport>`. When :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` is disabled, you should additionally set the :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` of other viewports in your project. To set debanding at run-time, the property that should be set depends on the renderer: Forward+ only uses :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` and Mobile uses both :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` and :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`.
+\ **注意：**\ 该属性仅在项目启动时读取，并用于配置根 :ref:`Viewport<class_Viewport>` 的 :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 和 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`\ 。当 :ref:`rendering/viewport/hdr_2d<class_ProjectSettings_property_rendering/viewport/hdr_2d>` 被禁用时，还需要设置项目中其他视口的 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>` 属性。要在运行时中设置去色带功能，需要设置的属性取决于渲染器：Forward+ 仅使用 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`\ ，而 Mobile 则同时使用 :ref:`RenderingServer.material_set_use_debanding()<class_RenderingServer_method_material_set_use_debanding>` 和 :ref:`Viewport.use_debanding<class_Viewport_property_use_debanding>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -11693,6 +11695,18 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 ----
 
+.. _class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
+
+Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ProjectSettings_property_rendering/environment/glow/upscale_mode:
 
 .. rst-class:: classref-property
@@ -11725,7 +11739,7 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/environment/screen_space_reflection/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/screen_space_reflection/half_size>`
 
-If ``true``, screen-space reflections will be rendered at half size and then upscaled before being added to the scene. This is faster but may look pixelated or cause flickering. If ``false``, screen-space reflections will be rendered at full size.
+如果为 ``true``\ ，屏幕空间反射将以一半大小渲染，然后在被添加到场景之前放大。这更快但可能会出现像素化或闪烁。如果为 ``false``\ ，则屏幕空间反射将以全尺寸渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -12913,7 +12927,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``7`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
+:ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
 
 使用重要性采样时，限制在辐射率映射中使用的层数。较低的数字会稍微快一些，并且会占用较少的 VRAM。
 
@@ -12965,17 +12979,17 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`String<class_String>` **rendering/renderer/rendering_method** = ``"forward_plus"`` :ref:`🔗<class_ProjectSettings_property_rendering/renderer/rendering_method>`
 
-Sets the renderer that will be used by the project. Options are:
+设置项目使用的渲染器。选项有：
 
-\ **forward_plus** (Forward+): High-end renderer designed for desktop devices. Has a higher base overhead, but scales well with complex scenes. Not suitable for older devices or mobile.
+\ **forward_plus**\ （Forward+）：为桌面设备设计的高端渲染器。有较高的基础开销，但能够很好地扩展到复杂的场景。不适合老旧设备和移动设备。
 
-\ **mobile** (Mobile): Modern renderer designed for mobile devices. Has a lower base overhead than Forward+, but does not scale as well to large scenes with many elements.
+\ **mobile**\ （移动）：为移动设备设计的现代渲染器。基础开销比 Forward+ 低，但在处理有许多元素的大型场景时，扩展性并不理想。
 
-\ **gl_compatibility** (Compatibility): Low-end renderer designed for older devices. Based on the limitations of the OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2 APIs. Lighting calculations are performed on nonlinear sRGB-encoded color data, which produces inaccurate results that may look acceptable for some games.
+\ **gl_compatibility**\ （兼容）：为老旧设备设计的低端渲染器。基于 OpenGL 3.3/ OpenGL ES 3.0 / WebGL 2 API 的限制。光照计算是在非线性 sRGB 编码的颜色数据上进行的，这会产生不准确的结果，尽管对于某些游戏来说，这些结果看起来可能可以接受。
 
-This can be overridden using the ``--rendering-method <method>`` command line argument.
+可以使用 ``--rendering-method <method>`` 命令行参数覆盖。
 
-\ **Note:** The actual rendering method may be automatically changed by the engine as a result of a fallback, or a user-specified command line argument. To get the actual rendering method that is used at runtime, use :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>` instead of reading this project setting's value.
+\ **注意：**\ 实际的渲染方法可能会因回退或用户指定的命令行参数而被引擎自动更改。要获取运行时使用的实际渲染方法，请使用 :ref:`RenderingServer.get_current_rendering_method()<class_RenderingServer_method_get_current_rendering_method>`\ ，不该读取该项目设置的值。
 
 .. rst-class:: classref-item-separator
 
@@ -13011,7 +13025,7 @@ Web 平台的 :ref:`rendering/renderer/rendering_method<class_ProjectSettings_pr
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/agility_sdk_version** = ``618`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/agility_sdk_version>`
 
-Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ to use (``D3D12SDKVersion``). This must match the *minor* version that is installed next to the editor binary and in the export templates directory for the current editor version. For example, if you have ``1.618.5`` installed, you need to input ``618`` here.
+要使用的 `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/directx/directx12agility/>`__ 的版本代码（\ ``D3D12SDKVersion``\ ）。该代码必须与安装在编辑器二进制文件旁边的\ *次要*\ 版本以及当前编辑器版本的导出模板目录中的版本相匹配。例如，如果安装了 ``1.618.5``\ ，则需要在此处输入 ``618``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13023,9 +13037,9 @@ Version code of the `Direct3D 12 Agility SDK <https://devblogs.microsoft.com/dir
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_resource_descriptors** = ``65536`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_resource_descriptors>`
 
-The number of entries in the resource descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Direct3D 12 渲染驱动程序用于大多数渲染操作的资源描述符堆中的条目数。
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+这个值可能会降低，也可能需要提高，具体取决于场景的复杂度。
 
 .. rst-class:: classref-item-separator
 
@@ -13037,9 +13051,9 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`int<class_int>` **rendering/rendering_device/d3d12/max_sampler_descriptors** = ``1024`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/d3d12/max_sampler_descriptors>`
 
-The number of entries in the sampler descriptor heap the Direct3D 12 rendering driver uses for most rendering operations.
+Direct3D 12 渲染驱动程序用于大多数渲染操作的采样器描述符堆中的条目数。
 
-Depending on the complexity of scenes, this value may be lowered or may need to be raised.
+这个值可能会降低，也可能需要提高，具体取决于场景的复杂度。
 
 .. rst-class:: classref-item-separator
 
@@ -13167,15 +13181,15 @@ Depending on the complexity of scenes, this value may be lowered or may need to 
 
 :ref:`String<class_String>` **rendering/rendering_device/driver.windows** = ``"vulkan"`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/driver.windows>`
 
-Windows override for :ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>`.
+:ref:`rendering/rendering_device/driver<class_ProjectSettings_property_rendering/rendering_device/driver>` 针对 Windows 的覆盖项。
 
-Two options are supported:
+支持两个选项：
 
-- ``vulkan`` (default), Vulkan from native drivers. If :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>` is enabled, this is used as a fallback if Direct3D 12 is not supported.
+- ``vulkan``\ （默认），使用原生驱动程序的 Vulkan。如果启用了 :ref:`rendering/rendering_device/fallback_to_vulkan<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`\ ，则在不支持 Direct3D 12 时将作为回退使用。
 
-- ``d3d12``, Direct3D 12 from native drivers. If :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>` is enabled, this is used as a fallback if Vulkan is not supported.
+- ``d3d12``\ ，使用原生驱动程序的 Direct3D 12。如果启用了 :ref:`rendering/rendering_device/fallback_to_d3d12<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`\ ，则在不支持 Vulkan 时将作为回退使用。
 
-\ **Note:** Starting with Godot 4.6, new projects are configured by default to use ``d3d12`` on Windows. Projects created before Godot 4.6 keep ``vulkan`` for compatibility reasons, but it is recommended to switch them manually to ``d3d12``.
+\ **注意：**\ 从 Godot 4.6 开始，新项目默认配置为在 Windows 上使用 ``d3d12``\ 。出于兼容性考虑，在 Godot 4.6 之前创建的项目仍然使用 ``vulkan``\ ，但建议手动将其切换到 ``d3d12``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13187,9 +13201,9 @@ Two options are supported:
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_d3d12** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`
 
-If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is not supported. The fallback is always attempted regardless of this setting if Vulkan driver support was disabled at compile time.
+如果为 ``true``\ ，则 Forward+ 渲染器会在不支持 Vulkan 时回退到 Direct3D 12。如果在编译时禁用了 Vulkan 驱动程序支持则会始终尝试回退，不考虑该设置。
 
-\ **Note:** This setting is implemented only on Windows.
+\ **注意：**\ 该设置仅在 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -13201,9 +13215,9 @@ If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is no
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_opengl3** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>`
 
-If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Metal, and Vulkan are not supported.
+如果为 ``true``\ ，则 Forward+ 渲染器在不支持 Direct3D 12、Metal、Vulkan 时会回退到 OpenGL 3。
 
-\ **Note:** This setting is implemented on Windows, Android, macOS, iOS, and Linux/X11.
+\ **注意：**\ 该设置在 Windows、Android、macOS、iOS、Linux/X11 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -13215,9 +13229,9 @@ If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Me
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_vulkan** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`
 
-If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on Windows) or Metal (on macOS x86_64) are not supported. The fallback is always attempted regardless of this setting if Direct3D 12 (Windows) or Metal (macOS) driver support was disabled at compile time.
+如果为 ``true``\ ，则 Forward+ 渲染器在不支持 Direct3D 12（在 Windows 上）或 Metal（在 macOS x86_64 上）时会回退到 Vulkan。如果编译时禁用了 Direct3D 12（Windows）或 Metal（macOS）驱动程序支持，则会始终尝试回退，不考虑该设置。
 
-\ **Note:** This setting is implemented on Windows and macOS.
+\ **注意：**\ 该设置在 Windows 和 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -13331,19 +13345,19 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`int<class_int>` **rendering/rendering_device/vsync/swapchain_image_count** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/vsync/swapchain_image_count>`
 
-The number of images the swapchain will consist of (back buffers + front buffer).
+交换链将包含的图像数量（后台缓冲区 + 前台缓冲区）。
 
-\ ``2`` corresponds to double-buffering and ``3`` to triple-buffering.
+\ ``2`` 对应双缓冲，\ ``3`` 对应三缓冲。
 
-Double-buffering may give you the lowest lag/latency but if V-Sync is on and the system can't render at 60 fps, the framerate will go down in multiples of it (e.g. 30 fps, 15, 7.5, etc.). Triple buffering gives you higher framerate (specially if the system can't reach a constant 60 fps) at the cost of up to 1 frame of latency, with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` (FIFO).
+双缓冲可能会给你带来最低的滞后/延迟，但如果垂直同步打开并且系统无法以 60 fps 渲染，则帧率将以它的倍数下降（例如 30 fps、15、7.5 等） 。三重缓冲可为你提供更高的帧率（特别是在系统无法达到恒定 60 fps 的情况下），其代价是 :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`\ （FIFO）时最多 1 帧延迟。
 
-Use double-buffering with :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`. Triple-buffering is a must if you plan on using :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` mode.
+将双缓冲与 :ref:`DisplayServer.VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` 结合使用。如果你计划使用 :ref:`DisplayServer.VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` 模式，则必须使用三重缓冲。
 
-Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an interactive interface that simulates presentation to better understand how it is affected by different variables under various conditions.
+尝试使用\ `垂直同步模拟器 <https://darksylinc.github.io/vsync_simulator/>`__\ ，这是一个交互式界面，可以模拟演示，以更好地了解不同条件下不同变量的影响。
 
-\ **Note:** Changes to this setting will only be applied on startup or when the swapchain is recreated (e.g. when setting the V-Sync mode).
+\ **注意：**\ 该设置项的更改仅在启动时或重新创建交换链时生效（例如，设置垂直同步模式时）。
 
-\ **Note:** Some platforms may restrict the actual value.
+\ **注意：**\ 某些平台可能会限制实际值。
 
 .. rst-class:: classref-item-separator
 
@@ -13687,7 +13701,7 @@ Try the `V-Sync Simulator <https://darksylinc.github.io/vsync_simulator/>`__, an
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/cache_gpu_compressor** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/cache_gpu_compressor>`
 
-If ``true``, the GPU texture compressor will cache the local RenderingDevice and its resources (shaders and pipelines), making subsequent imports faster at the cost of increased memory usage.
+如果为 ``true``\ ，则 GPU 纹理压缩器会缓存本地 RenderingDevice 及其资源（着色器和管道），从而加快后续导入速度，但会增加内存使用量。
 
 .. rst-class:: classref-item-separator
 
@@ -13771,11 +13785,11 @@ WebP 的默认压缩方法。影响有损和无损 WebP。较高的值会以压�
 
 :ref:`bool<class_bool>` **rendering/viewport/hdr_2d** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/hdr_2d>`
 
-If ``true``, enables :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root Viewport. 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen.
+如果为 ``true``\ ，则在根 Viewport 上启用 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ 。2D 渲染将使用高动态范围（HDR）\ ``RGBA16`` 格式的帧缓冲区。此外，2D 渲染将在线性值下进行，并在位块传输到屏幕之前立即使用适当的传输函数进行转换。
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+实际上，这意味着 Viewport 的最终结果不会被限制在 ``0-1`` 范围内，无需调整颜色编码即可在 3D 渲染中使用。这使得 2D 渲染能够利用需要高动态范围的效果（例如 2D 辉光），并显著改善需要高度详细渐变的效果的外观。
 
-\ **Note:** This property is only read when the project starts. To toggle HDR 2D at runtime, set :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root :ref:`Viewport<class_Viewport>`.
+\ **注意：**\ 该属性仅在项目启动时读取。要在运行时开关 HDR 2D，请在根 :ref:`Viewport<class_Viewport>` 上设置 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -13850,7 +13864,7 @@ Practically speaking, this means that the end result of the Viewport will not be
 
 :ref:`int<class_int>` **threading/worker_pool/max_threads** = ``-1`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/max_threads>`
 
-Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThreadPool>`. On Web, a value of ``-1`` means ``1``. On other platforms, it means all *logical* CPU cores available (see :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
+:ref:`WorkerThreadPool<class_WorkerThreadPool>` 所使用的最大线程数。在 Web 平台上，值为 ``-1`` 表示 ``1``\ 。在其他平台上，表示所有可用的\ *逻辑* CPU 内核（见 :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -13958,9 +13972,9 @@ Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThrea
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/frame_synthesis** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/frame_synthesis>`
 
-If ``true`` the frame synthesis extension will be activated if supported by the platform.
+如果为 ``true``\ ，则如果平台支持，帧合成扩展功能将被激活。
 
-\ **Note:** This feature should not be enabled in conjunction with Application Space Warp, if supported this replaces ASW.
+\ **注意：**\ 该功能不应与应用程序空间扭曲（Application Space Warp）同时启用；如果支持，该功能将取代 ASW。
 
 .. rst-class:: classref-item-separator
 
@@ -14040,7 +14054,7 @@ If ``true`` the frame synthesis extension will be activated if supported by the 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/april_tag_dict** = ``"3"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/april_tag_dict>`
 
-The April Tag marker types the built-in marker tracking is set to recognize (if April Tag marker tracking is available and enabled).
+April Tag 标记类型，内置标记跟踪被设置以识别（如果 April Tag 标记跟踪可用且已启用）。
 
 .. rst-class:: classref-item-separator
 
@@ -14052,7 +14066,7 @@ The April Tag marker types the built-in marker tracking is set to recognize (if 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/aruco_dict** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/aruco_dict>`
 
-The ArUco marker types the built-in marker tracking is set to recognize (if ArUco marker tracking is available and enabled).
+ArUco 标记类型，内置标记跟踪被设置以识别（如果 ArUco 标记跟踪可用且已启用）。
 
 .. rst-class:: classref-item-separator
 
@@ -14064,9 +14078,9 @@ The ArUco marker types the built-in marker tracking is set to recognize (if ArUc
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`
 
-If ``true``, we enable the built-in logic for handling anchors. Godot will query (persistent) anchors and manage :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` instances for you. If disabled you'll need to create your own spatial and persistence context and perform your own discovery queries.
+如果为 ``true``\ ，则启用用于处理锚点的内置逻辑。Godot 将查询（持久化）锚点并管理 :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` 实例。如果禁用，则需要创建自己的空间和持久化上下文，并执行自己的发现查询。
 
-\ **Note:** This functionality requires that spatial anchors are supported and enabled.
+\ **注意：**\ 该功能要求支持并启用空间锚点。
 
 .. rst-class:: classref-item-separator
 
@@ -14078,9 +14092,9 @@ If ``true``, we enable the built-in logic for handling anchors. Godot will query
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking>`
 
-If ``true``, we enable the built-in logic for handling marker tracking. Godot will query markers and manage :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+如果为 ``true``\ ，则启用用于处理标记跟踪的内置逻辑。Godot 将查询标记并管理 :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` 实例。如果禁用，则需要创建自己的空间上下文并执行自己的发现查询。
 
-\ **Note:** This functionality requires that marker tracking is supported and enabled.
+\ **注意：**\ 该功能需要标记跟踪功能得到支持并已启用。
 
 .. rst-class:: classref-item-separator
 
@@ -14092,9 +14106,9 @@ If ``true``, we enable the built-in logic for handling marker tracking. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection>`
 
-If ``true``, we enable the built-in logic for handling plane detection. Godot will query detected planes (walls, floors, ceilings, etc.) and manage :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+如果为 ``true``\ ，则启用用于处理平面检测的内置逻辑。Godot 将查询检测到的平面（墙壁、地板、天花板等）并管理 :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` 实例。如果禁用，则需要创建自己的空间上下文并执行自己的发现查询。
 
-\ **Note:** This functionality requires that plane tracking is supported and enabled.
+\ **注意：**\ 该功能需要平面跟踪功能得到支持且已启用。
 
 .. rst-class:: classref-item-separator
 
@@ -14106,9 +14120,9 @@ If ``true``, we enable the built-in logic for handling plane detection. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_marker_tracking>`
 
-If ``true``, support for the marker tracking extension is requested. If supported, you will be able to query information about markers detected by the XR runtime, e.g. QR codes, aruca markers and april tags.
+如果为 ``true``\ ，则请求支持标记跟踪扩展。如果支持，则将能够查询 XR 运行时检测到的标记信息，例如二维码、Aruco 标记和 AprilTag 标记。
 
-\ **Note:** This requires that the OpenXR spatial entities and marker tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **注意：**\ 这要求 XR 运行时支持 OpenXR 空间实体和标记跟踪扩展。如果不支持，则该设置项将被忽略。必须启用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 才能使用该设置项。
 
 .. rst-class:: classref-item-separator
 
@@ -14120,9 +14134,9 @@ If ``true``, support for the marker tracking extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_persistent_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_persistent_anchors>`
 
-If ``true``, support for the persistent anchors extension is requested. If supported, you will be able to store spatial anchors and they will be restored on application startup.
+如果为 ``true``\ ，则请求支持持久锚点扩展。如果支持，则将能够存储空间锚点，并且它们将在应用程序启动时恢复。
 
-\ **Note:** This requires that the OpenXR spatial entities, spatial anchors, and spatial persistence extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` and :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` must be enabled for this setting to be used.
+\ **注意：**\ 这要求 XR 运行时支持 OpenXR 空间实体、空间锚点和空间持久性扩展。如果不支持，则该设置项将被忽略。必须启用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 和 :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` 才能使用该设置项。
 
 .. rst-class:: classref-item-separator
 
@@ -14134,9 +14148,9 @@ If ``true``, support for the persistent anchors extension is requested. If suppo
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_plane_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_plane_tracking>`
 
-If ``true``, support for the plane tracking extension is requested. If supported, you will be able to query information about planes detected by the XR runtime, e.g. walls, floors, etc.
+如果为 ``true``\ ，则请求支持平面跟踪扩展。如果支持，则将能够查询 XR 运行时检测到的平面信息，例如墙壁、地板等。
 
-\ **Note:** This requires that the OpenXR spatial entities and plane tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **注意：**\ 这要求 XR 运行时支持 OpenXR 空间实体和平面跟踪扩展。如果不支持，则该设置项将被忽略。必须启用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 才能使用该设置项。
 
 .. rst-class:: classref-item-separator
 
@@ -14148,9 +14162,9 @@ If ``true``, support for the plane tracking extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_spatial_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>`
 
-If ``true``, support for the spatial anchors extension is requested. If supported, you will be able to register anchor locations in the real world that the XR runtime will adjust as needed and/or potentially share with other headsets.
+如果为 ``true``\ ，则请求支持空间锚点扩展。如果支持，则将能够在现实世界中注册锚点位置，XR 运行时会根据需要调整这些位置，并/或可能与其他头显设备共享这些位置。
 
-\ **Note:** This requires that the OpenXR spatial entities and spatial anchors extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **注意：**\ 这要求 XR 运行时支持 OpenXR 空间实体和空间锚点扩展。如果不支持，则该设置项将被忽略。必须启用 :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` 才能使用该设置项。
 
 .. rst-class:: classref-item-separator
 
@@ -14162,9 +14176,9 @@ If ``true``, support for the spatial anchors extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`
 
-If ``true``, support for the spatial entity extension is requested. If supported, you will be able to access spatial information about the real environment around you. What information is available is dependent on additional extensions.
+如果为 ``true``\ ，则请求支持空间实体扩展。如果支持，则将能够访问周围真实环境的空间信息。具体可用的信息取决于其他扩展。
 
-\ **Note:** This requires that the OpenXR spatial entities extension is supported by the XR runtime. If not supported this setting will be ignored.
+\ **注意：**\ 这要求 XR 运行时支持 OpenXR 空间实体扩展。如果不支持，则该设置项将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -14200,9 +14214,9 @@ If ``true``, support for the spatial entity extension is requested. If supported
 
 :ref:`int<class_int>` **xr/openxr/foveation_level** = ``"0"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/foveation_level>`
 
-Applied foveation level if supported.
+支持时应用的注视点级别。
 
-\ **Note:** On platforms other than Android, if :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>` is enabled, this feature will be disabled.
+\ **注意：**\ 在 Android 以外的平台上，如果启用了 :ref:`rendering/anti_aliasing/quality/msaa_3d<class_ProjectSettings_property_rendering/anti_aliasing/quality/msaa_3d>`\ ，则该功能将被禁用。
 
 .. rst-class:: classref-item-separator
 
@@ -14250,7 +14264,7 @@ Applied foveation level if supported.
 
 :ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
 
-Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
+可选地以 ``major.minor.patch`` 表示法设置要初始化的特定 OpenXR API 版本。某些 XR 运行时会通过版本检查来限制旧功能。这并非 OpenXR 的标准行为。
 
 .. rst-class:: classref-item-separator
 
@@ -14367,7 +14381,7 @@ Optionally sets a specific API version of OpenXR to initialize in ``major.minor.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_changed_settings**\ (\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_changed_settings>`
 
-Gets an array of the settings which have been changed since the last save. Note that internally ``changed_settings`` is cleared after a successful save, so generally the most appropriate place to use this method is when processing :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
+获取上次保存以来发生更改的设置项数组。请注意，成功保存后内部会将 ``changed_settings`` 清空，所以一般最适合使用该方法的地方是在处理 :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>` 信号时。
 
 .. rst-class:: classref-item-separator
 

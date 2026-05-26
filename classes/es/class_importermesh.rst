@@ -14,9 +14,9 @@ Un :ref:`Resource<class_Resource>` que contiene geometría basada en un array de
 Descripción
 ----------------------
 
-ImporterMesh is a type of :ref:`Resource<class_Resource>` analogous to :ref:`ArrayMesh<class_ArrayMesh>`. It contains vertex array-based geometry, divided in *surfaces*. Each surface contains a completely separate array and a material used to draw it. Design wise, a mesh with multiple surfaces is preferred to a single surface, because objects created in 3D editing software commonly contain multiple materials.
+ImporterMesh es un tipo de :ref:`Resource<class_Resource>` análogo a :ref:`ArrayMesh<class_ArrayMesh>`. Contiene geometría basada en arrays de vértices, dividida en *superficies*. Cada superficie contiene un array completamente separado y un material usado para dibujarla. En cuanto al diseño, se prefiere una malla con múltiples superficies a una sola, porque los objetos creados en software de edición 3D suelen contener múltiples materiales.
 
-Unlike its runtime counterpart, **ImporterMesh** contains mesh data before various import steps, such as lod and shadow mesh generation, have taken place. Modify surface data by calling :ref:`clear()<class_ImporterMesh_method_clear>`, followed by :ref:`add_surface()<class_ImporterMesh_method_add_surface>` for each surface.
+A diferencia de su contraparte de tiempo de ejecución, **ImporterMesh** contiene datos de malla antes de que se hayan realizado varios pasos de importación, como la generación de lods y mallas de sombras. Modifica los datos de la superficie llamando a :ref:`clear()<class_ImporterMesh_method_clear>`, seguido de :ref:`add_surface()<class_ImporterMesh_method_add_surface>` para cada superficie.
 
 .. rst-class:: classref-reftable-group
 
@@ -103,19 +103,19 @@ Añade un nombre para una blend shape que se añadirá con :ref:`add_surface()<c
 
 |void| **add_surface**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, material\: :ref:`Material<class_Material>` = null, name\: :ref:`String<class_String>` = "", flags\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ImporterMesh_method_add_surface>`
 
-Creates a new surface. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` will become the ``surf_idx`` for this new surface.
+Crea una nueva superficie. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` se convertirá en el ``surf_idx`` de esta nueva superficie.
 
-Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
+Las superficies se crean para ser renderizadas usando un ``primitive``, que puede ser cualquiera de los valores definidos en :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
+El argumento ``arrays`` es un arreglo de arreglos. Cada uno de los elementos :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` contiene un arreglo con parte de los datos de la malla para esta superficie, según se describe en el miembro correspondiente de :ref:`ArrayType<enum_Mesh_ArrayType>`, o ``null`` si no se utiliza en la superficie. Por ejemplo, ``arrays[0]`` es el arreglo de vértices. Este primer sub-arreglo de vértices siempre es obligatorio; los demás son opcionales. Agregar un arreglo de índices coloca esta superficie en "modo índice", donde los arreglos de vértices y otros se usan como fuentes de datos y el arreglo de índices define el orden de los vértices. Todos los sub-arreglos deben tener la misma longitud que el arreglo de vértices (o ser un múltiplo exacto de la longitud del arreglo de vértices, cuando múltiples elementos de un sub-arreglo corresponden a un solo vértice) o estar vacíos, excepto :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` si se utiliza.
 
-The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
+El argumento ``blend_shapes`` es un arreglo de datos de vértices para cada blend shape. Cada elemento es un arreglo con la misma estructura que ``arrays``, pero :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` se establecen únicamente si están presentes en ``arrays`` y todas las demás entradas son ``null``.
 
-The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
+El argumento ``lods`` es un diccionario con claves :ref:`float<class_float>` y valores :ref:`PackedInt32Array<class_PackedInt32Array>`. Cada entrada del diccionario representa un nivel LOD de la superficie, donde el valor es el arreglo :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` que se utilizará para ese nivel LOD y la clave es aproximadamente proporcional a la distancia a la que se usará el LOD. Es decir, aumentar la clave de un LOD también aumenta la distancia a la que los objetos deben estar de la cámara antes de usar ese LOD.
 
-The ``flags`` argument is the bitwise OR of, as required: One value of :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+El argumento ``flags`` es la operación OR a nivel de bits de, según se necesite: un valor de :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` desplazado a la izquierda por ``ARRAY_FORMAT_CUSTOMn_SHIFT`` para cada canal personalizado en uso, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` o :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
-\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
+\ **Nota:** Al usar índices, se recomienda emplear únicamente puntos, líneas o triángulos.
 
 .. rst-class:: classref-item-separator
 
@@ -139,7 +139,7 @@ Elimina todas las superficies y las blendshapes de este **ImporterMesh**.
 
 :ref:`ImporterMesh<class_ImporterMesh>` **from_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`\ ) |static| :ref:`🔗<class_ImporterMesh_method_from_mesh>`
 
-Converts the given :ref:`Mesh<class_Mesh>` into an **ImporterMesh** by copying all its surfaces, blend shapes, materials, and metadata into a new **ImporterMesh** object.
+Convierte la :ref:`Mesh<class_Mesh>` dada en un **ImporterMesh** copiando todas sus superficies, formas de mezcla, materiales y metadatos en un nuevo objeto **ImporterMesh**.
 
 .. rst-class:: classref-item-separator
 
@@ -151,15 +151,15 @@ Converts the given :ref:`Mesh<class_Mesh>` into an **ImporterMesh** by copying a
 
 |void| **generate_lods**\ (\ normal_merge_angle\: :ref:`float<class_float>`, normal_split_angle\: :ref:`float<class_float>`, bone_transform_array\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_ImporterMesh_method_generate_lods>`
 
-Generates all lods for this ImporterMesh.
+Genera todos los LOD para este ImporterMesh.
 
-\ ``normal_merge_angle`` is in degrees and used in the same way as the importer settings in ``lods``.
+\ ``normal_merge_angle`` está en grados y se usa de la misma manera que la configuración del importador en ``lods``.
 
-\ ``normal_split_angle`` is not used and only remains for compatibility with older versions of the API.
+\ ``normal_split_angle`` no se usa y solo permanece por compatibilidad con versiones anteriores de la API.
 
-The number of generated lods can be accessed using :ref:`get_surface_lod_count()<class_ImporterMesh_method_get_surface_lod_count>`, and each LOD is available in :ref:`get_surface_lod_size()<class_ImporterMesh_method_get_surface_lod_size>` and :ref:`get_surface_lod_indices()<class_ImporterMesh_method_get_surface_lod_indices>`.
+El número de LOD generados se puede acceder usando :ref:`get_surface_lod_count()<class_ImporterMesh_method_get_surface_lod_count>`, y cada LOD está disponible en :ref:`get_surface_lod_size()<class_ImporterMesh_method_get_surface_lod_size>` y :ref:`get_surface_lod_indices()<class_ImporterMesh_method_get_surface_lod_indices>`.
 
-\ ``bone_transform_array`` is an :ref:`Array<class_Array>` which can be either empty or contain :ref:`Transform3D<class_Transform3D>`\ s which, for each of the mesh's bone IDs, will apply mesh skinning when generating the LOD mesh variations. This is usually used to account for discrepancies in scale between the mesh itself and its skinning data.
+\ ``bone_transform_array`` es un :ref:`Array<class_Array>` que puede estar vacío o contener :ref:`Transform3D<class_Transform3D>`\ s que, para cada ID de hueso de la malla, aplicará el skinning de malla al generar las variaciones de la malla LOD. Esto se usa normalmente para tener en cuenta las discrepancias de escala entre la propia malla y sus datos de skinning.
 
 .. rst-class:: classref-item-separator
 

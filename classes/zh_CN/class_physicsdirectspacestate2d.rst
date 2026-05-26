@@ -96,21 +96,21 @@ PhysicsDirectSpaceState2D
 
 :ref:`Dictionary<class_Dictionary>` **get_rest_info**\ (\ parameters\: :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>`\ ) :ref:`🔗<class_PhysicsDirectSpaceState2D_method_get_rest_info>`
 
-检查通过 :ref:`PhysicsShapeQueryParameters3D<class_PhysicsShapeQueryParameters3D>` 对象给出的形状与该空间的交点。如果它与多个形状发生碰撞，则选择最近的一个。返回的对象是一个包含以下字段的字典：
+根据传入的 :ref:`PhysicsShapeQueryParameters2D<class_PhysicsShapeQueryParameters2D>` 对象所定义的形状，检测它与物理空间中的碰撞情况。如果该形状与多个物体发生了碰撞，系统只会选取距离最近的那一个。返回的结果是一个字典，包含以下字段：
 
-\ ``collider_id``\ ：该碰撞对象的 ID。
+\ ``collider_id``\ ：发生碰撞的物体的唯一 ID。
 
-\ ``linear_velocity``\ ：该碰撞对象的速度 :ref:`Vector3<class_Vector3>`\ 。如果对象是一个 :ref:`Area3D<class_Area3D>`\ ，则结果为 ``(0, 0, 0)``\ 。
+\ ``linear_velocity``\ ：发生碰撞的物体的速度（Vector2 类型）。如果该物体是一个 :ref:`Area2D<class_Area2D>`\ ，结果则为 ``(0, 0)``\ 。
 
-\ ``normal``\ ：相交点处查询形状的碰撞法线，法线指向远离相交对象的方向。
+\ ``normal``\ ：在交点处，检测形状的碰撞法线，方向背离发生相交的物体。
 
-\ ``point``\ ：相交点。
+\ ``point``\ ：具体的碰撞交点坐标。
 
-\ ``rid``\ ：该相交对象的 :ref:`RID<class_RID>`\ 。
+\ ``rid``\ ：发生相交的物体的 :ref:`RID<class_RID>`\ （资源 ID）。
 
-\ ``shape``\ ：该碰撞形状的形状索引。
+\ ``shape``\ ：发生碰撞的碰撞形状索引。
 
-如果该形状没有与任何东西相交，则返回一个空字典。
+如果该形状没有与任何物体发生相交，则返回一个空字典。
 
 .. rst-class:: classref-item-separator
 

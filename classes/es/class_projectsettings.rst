@@ -1532,6 +1532,8 @@ Propiedades
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                       | :ref:`rendering/environment/defaults/default_environment<class_ProjectSettings_property_rendering/environment/defaults/default_environment>`                                                               | ``""``                                                                                           |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`rendering/environment/fog/use_legacy_blending<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`                                                                         | ``false``                                                                                        |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/environment/glow/upscale_mode<class_ProjectSettings_property_rendering/environment/glow/upscale_mode>`                                                                                     | ``1``                                                                                            |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/environment/glow/upscale_mode.mobile<class_ProjectSettings_property_rendering/environment/glow/upscale_mode.mobile>`                                                                       | ``0``                                                                                            |
@@ -1712,7 +1714,7 @@ Propiedades
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/ggx_samples.mobile<class_ProjectSettings_property_rendering/reflections/sky_reflections/ggx_samples.mobile>`                                                   | ``16``                                                                                           |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`                                                       | ``7``                                                                                            |
+   | :ref:`int<class_int>`                             | :ref:`rendering/reflections/sky_reflections/roughness_layers<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`                                                       | ``8``                                                                                            |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                           | :ref:`rendering/reflections/sky_reflections/texture_array_reflections<class_ProjectSettings_property_rendering/reflections/sky_reflections/texture_array_reflections>`                                     | ``true``                                                                                         |
    +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+
@@ -3207,7 +3209,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_await** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_await>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function that is not a coroutine is called with await.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error, respectivamente, cuando una función que no es una corrutina se llama con await.
 
 .. rst-class:: classref-item-separator
 
@@ -3219,7 +3221,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/redundant_static_unload** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/redundant_static_unload>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when the ``@static_unload`` annotation is used in a script without any static variables.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error, respectivamente, cuando la anotación ``@static_unload`` se utiliza en un script sin ninguna variable estática.
 
 .. rst-class:: classref-item-separator
 
@@ -3255,7 +3257,7 @@ Si está establecido como **Warn** o **Error**, produce una advertencia o un err
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_global_identifier** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_global_identifier>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when defining a local or member variable, signal, or enum that would have the same name as a built-in function or global class name, thus shadowing it.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al definir una variable local o de miembro, señal o enumeración que tendría el mismo nombre que una función incorporada o un nombre de clase global, sombreándola así.
 
 .. rst-class:: classref-item-separator
 
@@ -3267,7 +3269,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in the current class.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una variable local o una constante local ensombrece a un miembro declarado en la clase actual.
 
 .. rst-class:: classref-item-separator
 
@@ -3279,7 +3281,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/shadowed_variable_base_class** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/shadowed_variable_base_class>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable or local constant shadows a member declared in a base class.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una variable local o una constante local ensombrece a un miembro declarado en una clase base.
 
 .. rst-class:: classref-item-separator
 
@@ -3291,7 +3293,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_expression** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_expression>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling an expression that may have no effect on the surrounding code, such as writing ``2 + 2`` as a statement.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al llamar a una expresión que puede no tener efecto en el código circundante, como escribir ``2 + 2`` como una declaración.
 
 .. rst-class:: classref-item-separator
 
@@ -3303,7 +3305,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/standalone_ternary** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/standalone_ternary>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a ternary expression that may have no effect on the surrounding code, such as writing ``42 if active else 0`` as a statement.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al llamar a una expresión ternaria que puede no tener efecto en el código circundante, como escribir ``42 if active else 0`` como una declaración.
 
 .. rst-class:: classref-item-separator
 
@@ -3315,7 +3317,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/static_called_on_instance** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/static_called_on_instance>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a static method from an instance of a class instead of from the class directly.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al llamar a un método estático desde una instancia de una clase en lugar de la clase directamente.
 
 .. rst-class:: classref-item-separator
 
@@ -3327,7 +3329,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using a variable that wasn't previously assigned.
+Cuando se establece como **Warn** o **Error**, se produce una advertencia o un error respectivamente al usar una variable que no ha sido asignada previamente.
 
 .. rst-class:: classref-item-separator
 
@@ -3339,7 +3341,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unassigned_variable_op_assign** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unassigned_variable_op_assign>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when assigning a variable using an assignment operator like ``+=`` if the variable wasn't previously assigned.
+Cuando se establece como **Warn** o **Error**, se produce una advertencia o un error respectivamente al asignar una variable usando un operador de asignación como ``+=`` si la variable no ha sido asignada previamente.
 
 .. rst-class:: classref-item-separator
 
@@ -3351,7 +3353,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_code** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_code>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when unreachable code is detected (such as after a ``return`` statement that will always be executed).
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando se detecta código inalcanzable (como después de una sentencia ``return`` que siempre se ejecutará).
 
 .. rst-class:: classref-item-separator
 
@@ -3363,7 +3365,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unreachable_pattern** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unreachable_pattern>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when an unreachable ``match`` pattern is detected.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando se detecta un patrón de ``match`` inalcanzable.
 
 .. rst-class:: classref-item-separator
 
@@ -3375,7 +3377,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_call_argument** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_call_argument>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when using an expression whose type may not be compatible with the function parameter expected.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al usar una expresión cuyo tipo puede no ser compatible con el parámetro de función esperado.
 
 .. rst-class:: classref-item-separator
 
@@ -3387,7 +3389,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_cast** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_cast>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a :ref:`Variant<class_Variant>` value is cast to a non-Variant.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando un valor :ref:`Variant<class_Variant>` es convertido a un no-Variant.
 
 .. rst-class:: classref-item-separator
 
@@ -3399,7 +3401,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_method_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_method_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when calling a method whose presence is not guaranteed at compile-time in the class.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al llamar a un método cuya presencia no está garantizada en tiempo de compilación en la clase.
 
 .. rst-class:: classref-item-separator
 
@@ -3411,7 +3413,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_property_access** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_property_access>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when accessing a property whose presence is not guaranteed at compile-time in the class.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al acceder a una propiedad cuya presencia no está garantizada en tiempo de compilación en la clase.
 
 .. rst-class:: classref-item-separator
 
@@ -3423,7 +3425,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unsafe_void_return** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unsafe_void_return>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when returning a call from a ``void`` function when such call cannot be guaranteed to be also ``void``.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente al devolver una llamada desde una función ``void`` cuando no se puede garantizar que dicha llamada sea también ``void``.
 
 .. rst-class:: classref-item-separator
 
@@ -3435,9 +3437,9 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/untyped_declaration** = ``0`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/untyped_declaration>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a variable or parameter has no static type, or if a function has no static return type.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una variable o parámetro no tiene un tipo estático, o si una función no tiene un tipo de retorno estático.
 
-\ **Note:** This warning is recommended together with :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` to help achieve type safety.
+\ **Nota:** Se recomienda esta advertencia junto con :ref:`EditorSettings.text_editor/completion/add_type_hints<class_EditorSettings_property_text_editor/completion/add_type_hints>` para ayudar a lograr la seguridad de tipos.
 
 .. rst-class:: classref-item-separator
 
@@ -3449,7 +3451,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_local_constant** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_local_constant>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local constant is never used.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una constante local nunca es utilizada.
 
 .. rst-class:: classref-item-separator
 
@@ -3461,7 +3463,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_parameter** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_parameter>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a function parameter is never used.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando un parámetro de función nunca es utilizado.
 
 .. rst-class:: classref-item-separator
 
@@ -3473,7 +3475,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_private_class_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_private_class_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a private member variable is never used.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una variable miembro privada nunca es utilizada.
 
 .. rst-class:: classref-item-separator
 
@@ -3485,7 +3487,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_signal** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_signal>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a signal is declared but never explicitly used in the class.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una señal es declarada pero nunca se usa explícitamente en la clase.
 
 .. rst-class:: classref-item-separator
 
@@ -3497,7 +3499,7 @@ When set to **Warn** or **Error**, produces a warning or an error respectively w
 
 :ref:`int<class_int>` **debug/gdscript/warnings/unused_variable** = ``1`` :ref:`🔗<class_ProjectSettings_property_debug/gdscript/warnings/unused_variable>`
 
-When set to **Warn** or **Error**, produces a warning or an error respectively when a local variable is unused.
+Cuando se establece como **Warn** o **Error**, produce una advertencia o un error respectivamente cuando una variable local no es utilizada.
 
 .. rst-class:: classref-item-separator
 
@@ -3649,7 +3651,7 @@ Imprime más información en la salida estándar al ejecutar. Muestra informaci�
 
 :ref:`bool<class_bool>` **debug/shader_language/warnings/device_limit_exceeded** = ``true`` :ref:`🔗<class_ProjectSettings_property_debug/shader_language/warnings/device_limit_exceeded>`
 
-Cuando se establece en ``true``, produce una advertencia cuando el shader excede ciertos límites del dispositivo. Actualmente, el único límite del dispositivo que se comprueba es el límite en el tamaño del búfer uniforme. Se agregarán más límites de dispositivo en el futuro.
+Cuando se establece en ``true``, produce una advertencia cuando el shader excede ciertos límites del dispositivo. Actualmente, el único límite del dispositivo que se comprueba es el límite en el tamaño del búfer de la variable uniforme. Se agregarán más límites de dispositivo en el futuro.
 
 .. rst-class:: classref-item-separator
 
@@ -5711,9 +5713,9 @@ MSDF font rendering can be combined with :ref:`gui/theme/default_font_generate_m
 
 :ref:`int<class_int>` **gui/theme/default_font_subpixel_positioning** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_font_subpixel_positioning>`
 
-Font glyph subpixel positioning mode for the default project font. See :ref:`FontFile.subpixel_positioning<class_FontFile_property_subpixel_positioning>`.
+Modo de posicionamiento de subpíxeles de glifos de fuente para la fuente predeterminada del proyecto. Véase :ref:`FontFile.subpixel_positioning<class_FontFile_property_subpixel_positioning>`.
 
-\ **Note:** This setting does not affect custom :ref:`Font<class_Font>`\ s used within the project. Use the **Import** dock for that instead (see :ref:`ResourceImporterDynamicFont.subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>`).
+\ **Nota:** Esta configuración no afecta a las :ref:`Font<class_Font>`\ s personalizadas utilizadas dentro del proyecto. Usa el dock de **Importar** para ello en su lugar (véase :ref:`ResourceImporterDynamicFont.subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>`).
 
 .. rst-class:: classref-item-separator
 
@@ -5725,9 +5727,9 @@ Font glyph subpixel positioning mode for the default project font. See :ref:`Fon
 
 :ref:`float<class_float>` **gui/theme/default_theme_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_gui/theme/default_theme_scale>`
 
-The default scale factor for :ref:`Control<class_Control>`\ s, when not overridden by a :ref:`Theme<class_Theme>`.
+El factor de escala predeterminado para los :ref:`Control<class_Control>`\ s, cuando no es sobrescrito por un :ref:`Theme<class_Theme>`.
 
-\ **Note:** This property is only read when the project starts. To change the default theme scale at runtime, set :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` instead. However, to adjust the scale of all 2D elements at runtime, it's preferable to use :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` on the root :ref:`Window<class_Window>` node instead (as this also affects overridden :ref:`Theme<class_Theme>`\ s). See :doc:`Multiple resolutions <../tutorials/rendering/multiple_resolutions>` in the documentation for details.
+\ **Nota:** Esta propiedad solo se lee al iniciar el proyecto. Para cambiar la escala de tema predeterminada en tiempo de ejecución, establece :ref:`ThemeDB.fallback_base_scale<class_ThemeDB_property_fallback_base_scale>` en su lugar. Sin embargo, para ajustar la escala de todos los elementos 2D en tiempo de ejecución, es preferible usar :ref:`Window.content_scale_factor<class_Window_property_content_scale_factor>` en el nodo raíz :ref:`Window<class_Window>` en su lugar (ya que esto también afecta a los :ref:`Theme<class_Theme>`\ s sobrescritos). Véase :doc:`Múltiples resoluciones <../tutorials/rendering/multiple_resolutions>` en la documentación para más detalles.
 
 .. rst-class:: classref-item-separator
 
@@ -5739,7 +5741,7 @@ The default scale factor for :ref:`Control<class_Control>`\ s, when not overridd
 
 :ref:`int<class_int>` **gui/theme/lcd_subpixel_layout** = ``1`` :ref:`🔗<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>`
 
-LCD subpixel layout used for font anti-aliasing. See :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>`.
+Disposición de subpíxeles LCD utilizada para el suavizado de fuentes. Véase :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5751,7 +5753,7 @@ LCD subpixel layout used for font anti-aliasing. See :ref:`FontLCDSubpixelLayout
 
 :ref:`float<class_float>` **gui/timers/button_shortcut_feedback_highlight_time** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_gui/timers/button_shortcut_feedback_highlight_time>`
 
-When :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` is enabled, this is the time the :ref:`BaseButton<class_BaseButton>` will remain highlighted after a shortcut.
+Cuando :ref:`BaseButton.shortcut_feedback<class_BaseButton_property_shortcut_feedback>` está habilitado, este es el tiempo que el :ref:`BaseButton<class_BaseButton>` permanecerá resaltado después de un atajo.
 
 .. rst-class:: classref-item-separator
 
@@ -5799,7 +5801,7 @@ Retraso predeterminado para las sugerencias (en segundos).
 
 :ref:`float<class_float>` **gui/timers/tooltip_delay_sec.editor_hint** = ``0.5`` :ref:`🔗<class_ProjectSettings_property_gui/timers/tooltip_delay_sec.editor_hint>`
 
-Delay for tooltips in the editor.
+Retraso para las sugerencias en el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -5825,9 +5827,9 @@ Delay for tooltips in the editor.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_accessibility_drag_and_drop** :ref:`🔗<class_ProjectSettings_property_input/ui_accessibility_drag_and_drop>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to start or end a drag-and-drop operation without using mouse.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para iniciar o finalizar una operación de arrastrar y soltar (drag-and-drop) sin utilizar el ratón.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción sí pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5853,9 +5855,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to start or end a drag-a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para cerrar una ventana de diálogo.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5867,7 +5869,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to close a dialog window
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_close_dialog.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_close_dialog.macos>`
 
-macOS specific override for the shortcut to close a dialog window.
+Sobrescritura específica de macOS para el atajo para cerrar una ventana de diálogo.
 
 .. rst-class:: classref-item-separator
 
@@ -5879,9 +5881,9 @@ macOS specific override for the shortcut to close a dialog window.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_colorpicker_delete_preset** :ref:`🔗<class_ProjectSettings_property_input/ui_colorpicker_delete_preset>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset in a :ref:`ColorPicker<class_ColorPicker>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar un ajuste preestablecido de color en un :ref:`ColorPicker<class_ColorPicker>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5893,9 +5895,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete a color preset
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_copy** :ref:`🔗<class_ProjectSettings_property_input/ui_copy>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to copy a selection to the clipboard.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para copiar una selección al portapapeles.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5907,9 +5909,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to copy a selection to t
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_cut** :ref:`🔗<class_ProjectSettings_property_input/ui_cut>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to cut a selection to the clipboard.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para cortar una selección al portapapeles.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5949,9 +5951,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to cut a selection to th
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected file in a :ref:`FileDialog<class_FileDialog>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar el archivo seleccionado en un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5963,9 +5965,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the selected f
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_find** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_find>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a :ref:`FileDialog<class_FileDialog>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para abrir el filtro de archivos en un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5977,9 +5979,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to open file filter in a
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field in a :ref:`FileDialog<class_FileDialog>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para enfocar el campo de edición de ruta en un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -5991,7 +5993,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to focus path edit field
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_focus_path.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_focus_path.macos>`
 
-macOS specific override for the shortcut to focus path edit field in :ref:`FileDialog<class_FileDialog>`.
+Sobrescritura específica de macOS para el atajo para enfocar el campo de edición de ruta en :ref:`FileDialog<class_FileDialog>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6003,9 +6005,9 @@ macOS specific override for the shortcut to focus path edit field in :ref:`FileD
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_refresh** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_refresh>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to refresh the contents of the current directory of a :ref:`FileDialog<class_FileDialog>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para actualizar el contenido del directorio actual de un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6017,9 +6019,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to refresh the contents 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_show_hidden** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_show_hidden>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to toggle showing hidden files and directories in a :ref:`FileDialog<class_FileDialog>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para alternar la visualización de archivos y directorios ocultos en un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6031,9 +6033,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to toggle showing hidden
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_filedialog_up_one_level** :ref:`🔗<class_ProjectSettings_property_input/ui_filedialog_up_one_level>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to go up one directory in a :ref:`FileDialog<class_FileDialog>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para subir un nivel de directorio en un :ref:`FileDialog<class_FileDialog>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6045,9 +6047,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to go up one directory i
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_focus_mode** :ref:`🔗<class_ProjectSettings_property_input/ui_focus_mode>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to switch :ref:`TextEdit<class_TextEdit>` :ref:`input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` between moving keyboard focus to the next :ref:`Control<class_Control>` in the scene and inputting a ``Tab`` character.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para alternar el comportamiento de :ref:`input/ui_text_indent<class_ProjectSettings_property_input/ui_text_indent>` en un :ref:`TextEdit<class_TextEdit>` entre mover el foco del teclado al siguiente :ref:`Control<class_Control>` de la escena e insertar un carácter de tabulación (``Tab``).
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6087,9 +6089,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to switch :ref:`TextEdit
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete a :ref:`GraphNode<class_GraphNode>` in a :ref:`GraphEdit<class_GraphEdit>`.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar un :ref:`GraphNode<class_GraphNode>` en un :ref:`GraphEdit<class_GraphEdit>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6101,9 +6103,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete a :ref:`GraphN
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_duplicate** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_duplicate>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to duplicate a :ref:`GraphNode<class_GraphNode>` in a :ref:`GraphEdit<class_GraphEdit>`.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para duplicar un :ref:`GraphNode<class_GraphNode>` en un :ref:`GraphEdit<class_GraphEdit>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6115,9 +6117,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to duplicate a :ref:`Gra
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_left** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_left>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphNode<class_GraphNode>` input port connection.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para seguir la conexión de un puerto de entrada de un :ref:`GraphNode<class_GraphNode>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6129,7 +6131,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphN
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_left.macos>`
 
-macOS specific override for the shortcut to follow a :ref:`GraphNode<class_GraphNode>` input port connection.
+Sobrescritura específica de macOS para el atajo de teclado para seguir una conexión de puerto de entrada de un :ref:`GraphNode<class_GraphNode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6141,9 +6143,9 @@ macOS specific override for the shortcut to follow a :ref:`GraphNode<class_Graph
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_right** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_right>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphNode<class_GraphNode>` output port connection.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para seguir la conexión de un puerto de salida de un :ref:`GraphNode<class_GraphNode>`.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6155,7 +6157,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to follow a :ref:`GraphN
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_graph_follow_right.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_graph_follow_right.macos>`
 
-macOS specific override for the shortcut to follow a :ref:`GraphNode<class_GraphNode>` output port connection.
+Sobrescritura específica de macOS para el atajo de teclado para seguir una conexión de puerto de salida de un :ref:`GraphNode<class_GraphNode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6195,9 +6197,9 @@ macOS specific override for the shortcut to follow a :ref:`GraphNode<class_Graph
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_menu** :ref:`🔗<class_ProjectSettings_property_input/ui_menu>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to open a context menu in a text field.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para abrir un menú contextual en un campo de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6237,9 +6239,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to open a context menu i
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_paste** :ref:`🔗<class_ProjectSettings_property_input/ui_paste>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to paste from the clipboard.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para pegar desde el portapapeles.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Note:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6251,9 +6253,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to paste from the clipbo
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_redo** :ref:`🔗<class_ProjectSettings_property_input/ui_redo>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to redo an undone action.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para rehacer una acción deshecha.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6293,7 +6295,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to redo an undone action
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_swap_input_direction** :ref:`🔗<class_ProjectSettings_property_input/ui_swap_input_direction>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to swap input direction, i.e. change between left-to-right to right-to-left modes. Affects text-editing controls (:ref:`LineEdit<class_LineEdit>`, :ref:`TextEdit<class_TextEdit>`).
+:ref:`InputEventAction<class_InputEventAction>` por defecto para intercambiar la dirección de entrada, es decir, cambiar entre los modos de izquierda a derecha y de derecha a izquierda. Afecta a los controles de edición de texto (:ref:`LineEdit<class_LineEdit>`, :ref:`TextEdit<class_TextEdit>`).
 
 .. rst-class:: classref-item-separator
 
@@ -6305,15 +6307,15 @@ Default :ref:`InputEventAction<class_InputEventAction>` to swap input direction,
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_add_selection_for_next_occurrence** :ref:`🔗<class_ProjectSettings_property_input/ui_text_add_selection_for_next_occurrence>`
 
-If a selection is currently active with the last caret in text fields, searches for the next occurrence of the selection, adds a caret and selects the next occurrence.
+Si una selección está actualmente activa con el último cursor en los campos de texto, busca la siguiente ocurrencia de la selección, añade un cursor y selecciona la siguiente ocurrencia.
 
-If no selection is currently active with the last caret in text fields, selects the word currently under the caret.
+Si no hay ninguna selección activa con el último cursor en los campos de texto, selecciona la palabra que está actualmente bajo el cursor.
 
-The action can be performed sequentially for all occurrences of the selection of the last caret and for all existing carets.
+La acción se puede realizar secuencialmente para todas las ocurrencias de la selección del último cursor y para todos los cursores existentes.
 
-The viewport is adjusted to the latest newly added caret.
+La ventana gráfica se ajusta al último cursor recién añadido.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6325,9 +6327,9 @@ The viewport is adjusted to the latest newly added caret.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the character before the text cursor.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar el carácter anterior al cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6339,9 +6341,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the character 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_all_to_left** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_all_to_left>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete **all** text before the text cursor.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar **todo** el texto anterior al cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6353,7 +6355,7 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete **all** text b
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_all_to_left.macos** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_all_to_left.macos>`
 
-macOS specific override for the shortcut to delete all text before the text cursor.
+Sobrescritura específica de macOS para el atajo de teclado para eliminar todo el texto antes del cursor de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -6365,9 +6367,9 @@ macOS specific override for the shortcut to delete all text before the text curs
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_backspace_word** :ref:`🔗<class_ProjectSettings_property_input/ui_text_backspace_word>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete all characters before the cursor up until a whitespace or punctuation character.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para eliminar todos los caracteres antes del cursor hasta un espacio en blanco o un signo de puntuación.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6439,9 +6441,9 @@ Sobrescritura específica de macOS para el acceso directo para agregar un cursor
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_end** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_end>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the end of the text.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto al final del texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6465,9 +6467,9 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_document_start** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_document_start>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the start of the text.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto al inicio del texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6491,9 +6493,9 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_down>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor down.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto hacia abajo.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6505,9 +6507,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_left** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_left>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor left.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto hacia la izquierda.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6519,9 +6521,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_end** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_end>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the end of the line.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto al final de la línea.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6545,9 +6547,9 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_line_start** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_line_start>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor to the start of the line.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto al inicio de la línea.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6571,9 +6573,9 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_page_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_page_down>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor down one page.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para bajar una página con el cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6585,9 +6587,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_page_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_page_up>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor up one page.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para subir una página con el cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6599,9 +6601,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_right** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_right>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor right.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto hacia la derecha.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6613,9 +6615,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_up>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor up.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto hacia arriba.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6627,9 +6629,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_left** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_left>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor left to the next whitespace or punctuation.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto hacia la izquierda hasta el siguiente espacio en blanco o signo de puntuación.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6653,9 +6655,9 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_caret_word_right** :ref:`🔗<class_ProjectSettings_property_input/ui_text_caret_word_right>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to move the text cursor right to the next whitespace or punctuation.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para mover el cursor de texto hacia la derecha hasta el siguiente espacio en blanco o signo de puntuación.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6679,11 +6681,11 @@ Sobrescritura específica de macOS para el acceso directo para mover el cursor d
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_clear_carets_and_selection** :ref:`🔗<class_ProjectSettings_property_input/ui_text_clear_carets_and_selection>`
 
-If there's only one caret active and with a selection, clears the selection.
+Si solo hay un cursor activo y con una selección, borra la selección.
 
-In case there's more than one caret active, removes the secondary carets and clears their selections.
+En caso de que haya más de un cursor activo, elimina los cursores secundarios y borra sus selecciones.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6695,9 +6697,9 @@ In case there's more than one caret active, removes the secondary carets and cle
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_accept** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_accept>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocompletion hint.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para aceptar una sugerencia de autocompletado.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6709,9 +6711,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_query** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_query>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to request autocompletion.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para solicitar el autocompletado.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6723,9 +6725,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to request autocompletio
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_completion_replace** :ref:`🔗<class_ProjectSettings_property_input/ui_text_completion_replace>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocompletion hint, replacing existing text.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para aceptar una sugerencia de autocompletado, reemplazando el texto existente.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Note:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6737,9 +6739,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to accept an autocomplet
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_dedent** :ref:`🔗<class_ProjectSettings_property_input/ui_text_dedent>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to unindent text.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para reducir la sangría del texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6751,9 +6753,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to unindent text.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete the character after the text cursor.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar el carácter posterior al cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6765,9 +6767,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to delete the character 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_all_to_right** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_all_to_right>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete **all** text after the text cursor.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para eliminar **todo** el texto posterior al cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6791,9 +6793,9 @@ Sobrescritura específica de macOS para el acceso directo para eliminar todo el 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_delete_word** :ref:`🔗<class_ProjectSettings_property_input/ui_text_delete_word>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to delete all characters after the cursor up until a whitespace or punctuation character.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para eliminar todos los caracteres después del cursor hasta un espacio en blanco o un signo de puntuación.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6817,9 +6819,9 @@ Sobrescritura específica de macOS para el acceso directo para eliminar una pala
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_indent** :ref:`🔗<class_ProjectSettings_property_input/ui_text_indent>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to indent the current line.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para aumentar la sangría de la línea actual.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6831,9 +6833,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to indent the current li
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_newline** :ref:`🔗<class_ProjectSettings_property_input/ui_text_newline>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line at the position of the text cursor.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para insertar una nueva línea en la posición del cursor de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6845,9 +6847,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line at 
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_newline_above** :ref:`🔗<class_ProjectSettings_property_input/ui_text_newline_above>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line before the current one.
+:ref:`InputEventAction<class_InputEventAction>` predeterminado para insertar una nueva línea antes de la actual.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` predeterminadas no pueden eliminarse, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. No obstante, los eventos asignados a la acción pueden modificarse.
 
 .. rst-class:: classref-item-separator
 
@@ -6859,9 +6861,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line bef
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_newline_blank** :ref:`🔗<class_ProjectSettings_property_input/ui_text_newline_blank>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line after the current one.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para insertar una nueva línea después de la actual.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6873,9 +6875,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to insert a new line aft
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_down** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_down>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to scroll down one line of text.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para desplazarse una línea de texto hacia abajo.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6899,9 +6901,9 @@ Sobrescritura específica de macOS para el acceso directo para desplazarse hacia
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_scroll_up** :ref:`🔗<class_ProjectSettings_property_input/ui_text_scroll_up>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to scroll up one line of text.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para desplazarse una línea de texto hacia arriba.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6925,9 +6927,9 @@ Sobrescritura específica de macOS para el acceso directo para desplazarse hacia
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_select_all** :ref:`🔗<class_ProjectSettings_property_input/ui_text_select_all>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to select all text.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para seleccionar todo el texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6939,9 +6941,9 @@ Default :ref:`InputEventAction<class_InputEventAction>` to select all text.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_select_word_under_caret** :ref:`🔗<class_ProjectSettings_property_input/ui_text_select_word_under_caret>`
 
-If no selection is currently active, selects the word currently under the caret in text fields. If a selection is currently active, deselects the current selection.
+Si no hay ninguna selección activa, selecciona la palabra que se encuentra actualmente bajo el cursor en los campos de texto. Si hay una selección activa, deselecciona la selección actual.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6965,13 +6967,13 @@ Sobrescritura específica de macOS para el acceso directo para seleccionar la pa
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_skip_selection_for_next_occurrence** :ref:`🔗<class_ProjectSettings_property_input/ui_text_skip_selection_for_next_occurrence>`
 
-If no selection is currently active with the last caret in text fields, searches for the next occurrence of the word currently under the caret and moves the caret to the next occurrence. The action can be performed sequentially for other occurrences of the word under the last caret.
+Si no hay ninguna selección activa con el último cursor en los campos de texto, busca la siguiente ocurrencia de la palabra que se encuentra actualmente bajo el cursor y mueve el cursor a la siguiente ocurrencia. La acción se puede realizar secuencialmente para otras ocurrencias de la palabra bajo el último cursor.
 
-If a selection is currently active with the last caret in text fields, searches for the next occurrence of the selection, adds a caret, selects the next occurrence then deselects the previous selection and its associated caret. The action can be performed sequentially for other occurrences of the selection of the last caret.
+Si hay una selección activa con el último cursor en los campos de texto, busca la siguiente ocurrencia de la selección, añade un cursor, selecciona la siguiente ocurrencia y luego deselecciona la selección anterior y su cursor asociado. La acción se puede realizar secuencialmente para otras ocurrencias de la selección del último cursor.
 
-The viewport is adjusted to the latest newly added caret.
+La ventana gráfica se ajusta al último cursor recién añadido.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -6983,9 +6985,9 @@ The viewport is adjusted to the latest newly added caret.
 
 :ref:`Dictionary<class_Dictionary>` **input/ui_text_submit** :ref:`🔗<class_ProjectSettings_property_input/ui_text_submit>`
 
-Default :ref:`InputEventAction<class_InputEventAction>` to submit a text field.
+:ref:`InputEventAction<class_InputEventAction>` por defecto para enviar un campo de texto.
 
-\ **Note:** Default ``ui_*`` actions cannot be removed as they are necessary for the internal logic of several :ref:`Control<class_Control>`\ s. The events assigned to the action can however be modified.
+\ **Nota:** Las acciones ``ui_*`` por defecto no se pueden eliminar, ya que son necesarias para la lógica interna de varios :ref:`Control<class_Control>`\ s. Sin embargo, los eventos asignados a la acción pueden ser modificados.
 
 .. rst-class:: classref-item-separator
 
@@ -7053,13 +7055,13 @@ Default :ref:`InputEventAction<class_InputEventAction>` to submit a text field.
 
 :ref:`bool<class_bool>` **input_devices/buffering/agile_event_flushing** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`
 
-If ``true``, key/touch/joystick events will be flushed just before every idle and physics frame.
+Si es ``true``, los eventos de teclado/táctil/joystick se vaciarán justo antes de cada frame de inactividad y de física.
 
-If ``false``, such events will be flushed only once per process frame, between iterations of the engine.
+Si es ``false``, dichos eventos se vaciarán solo una vez por frame de proceso, entre las iteraciones del motor.
 
-Enabling this can greatly improve the responsiveness to input, specially in devices that need to run multiple physics frames per visible (process) frame, because they can't run at the target frame rate.
+Habilitar esto puede mejorar en gran medida la capacidad de respuesta a la entrada, especialmente en dispositivos que necesitan ejecutar múltiples frames de física por frame visible (de proceso), porque no pueden ejecutarse a la velocidad de fotogramas objetivo.
 
-\ **Note:** Currently implemented only on Android.
+\ **Nota:** Actualmente implementado solo en Android.
 
 .. rst-class:: classref-item-separator
 
@@ -7103,15 +7105,15 @@ Especifica el controlador de tableta a usar. Si se deja vacío, se usará el con
 
 :ref:`String<class_String>` **input_devices/pen_tablet/driver.windows** :ref:`🔗<class_ProjectSettings_property_input_devices/pen_tablet/driver.windows>`
 
-Override for :ref:`input_devices/pen_tablet/driver<class_ProjectSettings_property_input_devices/pen_tablet/driver>` on Windows. Supported values are:
+Sobrescritura para :ref:`input_devices/pen_tablet/driver<class_ProjectSettings_property_input_devices/pen_tablet/driver>` en Windows. Los valores admitidos son:
 
-- ``auto`` (default), uses ``wintab`` if Windows Ink is disabled in the Wacom Tablet Properties or system settings, ``winink`` otherwise.
+- ``auto`` (por defecto), usa ``wintab`` si Windows Ink está deshabilitado en las propiedades de la tableta Wacom o en la configuración del sistema, ``winink`` en caso contrario.
 
-- ``winink``, uses Windows native "Windows Ink" driver.
+- ``winink``, usa el controlador nativo de Windows "Windows Ink".
 
-- ``wintab``, uses Wacom "WinTab" driver.
+- ``wintab``, usa el controlador de Wacom "WinTab".
 
-- ``dummy``, tablet input is disabled.
+- ``dummy``, la entrada de la tableta está deshabilitada.
 
 .. rst-class:: classref-item-separator
 
@@ -7123,7 +7125,7 @@ Override for :ref:`input_devices/pen_tablet/driver<class_ProjectSettings_propert
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/disable_scroll_deadzone** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/disable_scroll_deadzone>`
 
-If ``true``, disables the scroll deadzone on Android, allowing even very small scroll movements to be registered. This may increase scroll sensitivity but can also lead to unintended scrolling from slight finger movements.
+Si es ``true``, deshabilita la zona muerta de desplazamiento en Android, permitiendo que se registren incluso movimientos de desplazamiento muy pequeños. Esto puede aumentar la sensibilidad del desplazamiento, pero también puede conducir a desplazamientos involuntarios por ligeros movimientos de los dedos.
 
 .. rst-class:: classref-item-separator
 
@@ -7135,7 +7137,7 @@ If ``true``, disables the scroll deadzone on Android, allowing even very small s
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/enable_long_press_as_right_click** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/enable_long_press_as_right_click>`
 
-If ``true``, long press events on an Android touchscreen are transformed into right click events.
+Si es ``true``, los eventos de pulsación larga en una pantalla táctil de Android se transforman en eventos de clic derecho.
 
 .. rst-class:: classref-item-separator
 
@@ -7147,7 +7149,7 @@ If ``true``, long press events on an Android touchscreen are transformed into ri
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/enable_pan_and_scale_gestures** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/enable_pan_and_scale_gestures>`
 
-If ``true``, multi-touch pan and scale gestures are enabled on Android devices.
+Si es ``true``, los gestos multi-táctiles de panorámica y escala están habilitados en dispositivos Android.
 
 .. rst-class:: classref-item-separator
 
@@ -7159,7 +7161,7 @@ If ``true``, multi-touch pan and scale gestures are enabled on Android devices.
 
 :ref:`bool<class_bool>` **input_devices/pointing/android/override_volume_buttons** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/override_volume_buttons>`
 
-If ``true``, system volume changes are disabled when the buttons are used within the app.
+Si es ``true``, los cambios de volumen del sistema se deshabilitan cuando se usan los botones dentro de la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -7171,7 +7173,7 @@ If ``true``, system volume changes are disabled when the buttons are used within
 
 :ref:`int<class_int>` **input_devices/pointing/android/rotary_input_scroll_axis** = ``1`` :ref:`🔗<class_ProjectSettings_property_input_devices/pointing/android/rotary_input_scroll_axis>`
 
-On Wear OS devices, defines which axis of the mouse wheel rotary input is mapped to. This rotary input is usually performed by rotating the physical or virtual (touch-based) bezel on a smartwatch.
+En dispositivos Wear OS, define a qué eje se asigna la entrada rotatoria de la rueda del ratón. Esta entrada rotatoria se realiza normalmente girando el bisel físico o virtual (basado en el tacto) de un reloj inteligente.
 
 .. rst-class:: classref-item-separator
 
@@ -7207,7 +7209,7 @@ Si es ``true``, envía eventos de entrada táctil al hacer clic o arrastrar el r
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_accelerometer** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`
 
-If ``true``, the accelerometer sensor is enabled and :ref:`Input.get_accelerometer()<class_Input_method_get_accelerometer>` returns valid data.
+Si es ``true``, el sensor de acelerómetro está habilitado y :ref:`Input.get_accelerometer()<class_Input_method_get_accelerometer>` devuelve datos válidos.
 
 .. rst-class:: classref-item-separator
 
@@ -7219,7 +7221,7 @@ If ``true``, the accelerometer sensor is enabled and :ref:`Input.get_acceleromet
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_gravity** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`
 
-If ``true``, the gravity sensor is enabled and :ref:`Input.get_gravity()<class_Input_method_get_gravity>` returns valid data.
+Si es ``true``, el sensor de gravedad está habilitado y :ref:`Input.get_gravity()<class_Input_method_get_gravity>` devuelve datos válidos.
 
 .. rst-class:: classref-item-separator
 
@@ -7231,7 +7233,7 @@ If ``true``, the gravity sensor is enabled and :ref:`Input.get_gravity()<class_I
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_gyroscope** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>`
 
-If ``true``, the gyroscope sensor is enabled and :ref:`Input.get_gyroscope()<class_Input_method_get_gyroscope>` returns valid data.
+Si es ``true``, el sensor de giroscopio está habilitado y :ref:`Input.get_gyroscope()<class_Input_method_get_gyroscope>` devuelve datos válidos.
 
 .. rst-class:: classref-item-separator
 
@@ -7243,7 +7245,7 @@ If ``true``, the gyroscope sensor is enabled and :ref:`Input.get_gyroscope()<cla
 
 :ref:`bool<class_bool>` **input_devices/sensors/enable_magnetometer** = ``false`` :ref:`🔗<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>`
 
-If ``true``, the magnetometer sensor is enabled and :ref:`Input.get_magnetometer()<class_Input_method_get_magnetometer>` returns valid data.
+Si es ``true``, el sensor de magnetómetro está habilitado y :ref:`Input.get_magnetometer()<class_Input_method_get_magnetometer>` devuelve datos válidos.
 
 .. rst-class:: classref-item-separator
 
@@ -7255,9 +7257,9 @@ If ``true``, the magnetometer sensor is enabled and :ref:`Input.get_magnetometer
 
 :ref:`String<class_String>` **internationalization/locale/fallback** = ``"en"`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/fallback>`
 
-The locale to fall back to if a translation isn't available in a given language. If left empty, ``en`` (English) will be used.
+La configuración regional a la que recurrir si una traducción no está disponible en un idioma determinado. Si se deja vacío, se usará ``en`` (inglés).
 
-\ **Note:** Not to be confused with :ref:`TextServerFallback<class_TextServerFallback>`.
+\ **Nota:** No confundir con :ref:`TextServerFallback<class_TextServerFallback>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7269,11 +7271,11 @@ The locale to fall back to if a translation isn't available in a given language.
 
 :ref:`bool<class_bool>` **internationalization/locale/include_text_server_data** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/include_text_server_data>`
 
-If ``true``, text server break iteration rule sets, dictionaries and other optional data are included in the exported project.
+Si es ``true``, los conjuntos de reglas de iteración de saltos del servidor de texto, los diccionarios y otros datos opcionales se incluyen en el proyecto exportado.
 
-\ **Note:** "ICU / HarfBuzz / Graphite" text server data includes dictionaries for Burmese, Chinese, Japanese, Khmer, Lao and Thai as well as Unicode Standard Annex #29 and Unicode Standard Annex #14 word and line breaking rules. Data is about 4 MB large.
+\ **Nota:** Los datos del servidor de texto "ICU / HarfBuzz / Graphite" incluyen diccionarios para birmano, chino, japonés, jemer, laosiano y tailandés, así como las reglas de salto de palabra y línea del Anexo Estándar Unicode #29 y el Anexo Estándar Unicode #14. Los datos tienen un tamaño aproximado de 4 MB.
 
-\ **Note:** :ref:`TextServerFallback<class_TextServerFallback>` does not use additional data.
+\ **Nota:** :ref:`TextServerFallback<class_TextServerFallback>` no usa datos adicionales.
 
 .. rst-class:: classref-item-separator
 
@@ -7307,9 +7309,9 @@ See `Line Breaking Strictness: the line-break property <https://www.w3.org/TR/cs
 
 :ref:`String<class_String>` **internationalization/locale/test** = ``""`` :ref:`🔗<class_ProjectSettings_property_internationalization/locale/test>`
 
-If non-empty, this locale will be used instead of the automatically detected system locale.
+Si no está vacío, esta configuración regional se utilizará en lugar de la configuración regional del sistema detectada automáticamente.
 
-\ **Note:** This setting also applies to the exported project. To only affect testing within the editor, override this setting with an ``editor`` :doc:`feature tag <../tutorials/export/feature_tags>` for localization testing purposes.
+\ **Nota:** Esta configuración también se aplica al proyecto exportado. Para afectar solo las pruebas dentro del editor, anula esta configuración con una :doc:`etiqueta de característica <../tutorials/export/feature_tags>` ``editor`` para fines de prueba de localización.
 
 .. rst-class:: classref-item-separator
 
@@ -7321,7 +7323,7 @@ If non-empty, this locale will be used instead of the automatically detected sys
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/double_vowels** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/double_vowels>`
 
-Double vowels in strings during pseudolocalization to simulate the lengthening of text due to localization.
+Duplica las vocales en las strings durante la pseudolocalización para simular el alargamiento del texto debido a la localización.
 
 .. rst-class:: classref-item-separator
 
@@ -7333,7 +7335,7 @@ Double vowels in strings during pseudolocalization to simulate the lengthening o
 
 :ref:`float<class_float>` **internationalization/pseudolocalization/expansion_ratio** = ``0.0`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/expansion_ratio>`
 
-The expansion ratio to use during pseudolocalization. A value of ``0.3`` is sufficient for most practical purposes, and will increase the length of each string by 30%.
+La relación de expansión a utilizar durante la pseudolocalización. Un valor de ``0.3`` es suficiente para la mayoría de los propósitos prácticos y aumentará la longitud de cada string en un 30%.
 
 .. rst-class:: classref-item-separator
 
@@ -7345,7 +7347,7 @@ The expansion ratio to use during pseudolocalization. A value of ``0.3`` is suff
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/fake_bidi** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`
 
-If ``true``, emulate bidirectional (right-to-left) text when pseudolocalization is enabled. This can be used to spot issues with RTL layout and UI mirroring that will crop up if the project is localized to RTL languages such as Arabic or Hebrew. See also :ref:`internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`.
+Si es ``true``, emula texto bidireccional (de derecha a izquierda) cuando la pseudolocalización está habilitada. Esto se puede usar para detectar problemas con el diseño RTL y el reflejo de la interfaz de usuario que surgirán si el proyecto se localiza a idiomas RTL como el árabe o el hebreo. Véase también :ref:`internationalization/rendering/force_right_to_left_layout_direction<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7357,7 +7359,7 @@ If ``true``, emulate bidirectional (right-to-left) text when pseudolocalization 
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/override** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/override>`
 
-Replace all characters in the string with ``*``. Useful for finding non-localizable strings.
+Reemplaza todos los caracteres de la string con ``*``. Útil para encontrar strings no localizables.
 
 .. rst-class:: classref-item-separator
 
@@ -7369,7 +7371,7 @@ Replace all characters in the string with ``*``. Useful for finding non-localiza
 
 :ref:`String<class_String>` **internationalization/pseudolocalization/prefix** = ``"["`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/prefix>`
 
-Prefix that will be prepended to the pseudolocalized string.
+Prefijo que se antepondrá a la string pseudolocalizada.
 
 .. rst-class:: classref-item-separator
 
@@ -7381,7 +7383,7 @@ Prefix that will be prepended to the pseudolocalized string.
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/replace_with_accents** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/replace_with_accents>`
 
-Replace all characters with their accented variants during pseudolocalization.
+Reemplaza todos los caracteres con sus variantes acentuadas durante la pseudolocalización.
 
 .. rst-class:: classref-item-separator
 
@@ -7393,7 +7395,7 @@ Replace all characters with their accented variants during pseudolocalization.
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/skip_placeholders** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/skip_placeholders>`
 
-Skip placeholders for string formatting like ``%s`` or ``%f`` during pseudolocalization. Useful to identify strings which need additional control characters to display correctly.
+Omite los marcadores de posición para el formato de cadenas como ``%s`` o ``%f`` durante la pseudolocalización. Útil para identificar cadenas que necesitan caracteres de control adicionales para mostrarse correctamente.
 
 .. rst-class:: classref-item-separator
 
@@ -7405,7 +7407,7 @@ Skip placeholders for string formatting like ``%s`` or ``%f`` during pseudolocal
 
 :ref:`String<class_String>` **internationalization/pseudolocalization/suffix** = ``"]"`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/suffix>`
 
-Suffix that will be appended to the pseudolocalized string.
+Sufijo que se añadirá a la cadena pseudolocalizada.
 
 .. rst-class:: classref-item-separator
 
@@ -7417,9 +7419,9 @@ Suffix that will be appended to the pseudolocalized string.
 
 :ref:`bool<class_bool>` **internationalization/pseudolocalization/use_pseudolocalization** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/pseudolocalization/use_pseudolocalization>`
 
-If ``true``, enables pseudolocalization for the project. This can be used to spot untranslatable strings or layout issues that may occur once the project is localized to languages that have longer strings than the source language.
+Si es ``true``, habilita la pseudolocalización para el proyecto. Esto puede usarse para detectar cadenas intraducibles o problemas de diseño que puedan ocurrir una vez que el proyecto se localice a idiomas que tienen cadenas más largas que el idioma de origen.
 
-\ **Note:** This property is only read when the project starts. To toggle pseudolocalization at run-time, use :ref:`TranslationServer.pseudolocalization_enabled<class_TranslationServer_property_pseudolocalization_enabled>` instead.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Para activar/desactivar la pseudolocalización en tiempo de ejecución, usa :ref:`TranslationServer.pseudolocalization_enabled<class_TranslationServer_property_pseudolocalization_enabled>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -7431,7 +7433,7 @@ If ``true``, enables pseudolocalization for the project. This can be used to spo
 
 :ref:`bool<class_bool>` **internationalization/rendering/force_right_to_left_layout_direction** = ``false`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/force_right_to_left_layout_direction>`
 
-Force layout direction and text writing direction to RTL for all controls, even if the current locale is intended to use a left-to-right layout and text writing direction. This should be enabled for testing purposes only. See also :ref:`internationalization/pseudolocalization/fake_bidi<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`.
+Fuerza la dirección del diseño y la dirección de escritura del texto a RTL para todos los controles, incluso si la configuración regional actual está destinada a usar un diseño de izquierda a derecha y una dirección de escritura del texto. Esto solo debe habilitarse para fines de prueba. Véase también :ref:`internationalization/pseudolocalization/fake_bidi<class_ProjectSettings_property_internationalization/pseudolocalization/fake_bidi>`.
 
 .. rst-class:: classref-item-separator
 
@@ -7443,9 +7445,9 @@ Force layout direction and text writing direction to RTL for all controls, even 
 
 :ref:`bool<class_bool>` **internationalization/rendering/root_node_auto_translate** = ``true`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`
 
-If ``true``, root node will use :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`, otherwise :ref:`Node.AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>` will be used.
+Si es ``true``, el nodo raíz usará :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`, de lo contrario se usará :ref:`Node.AUTO_TRANSLATE_MODE_DISABLED<class_Node_constant_AUTO_TRANSLATE_MODE_DISABLED>`.
 
-\ **Note:** This property is only read when the project starts. To change the auto translate mode at runtime, set :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` of :ref:`SceneTree.root<class_SceneTree_property_root>` instead.
+\ **Nota:** Esta propiedad solo se lee cuando se inicia el proyecto. Para cambiar el modo de traducción automática en tiempo de ejecución, configura :ref:`Node.auto_translate_mode<class_Node_property_auto_translate_mode>` de :ref:`SceneTree.root<class_SceneTree_property_root>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -7457,7 +7459,7 @@ If ``true``, root node will use :ref:`Node.AUTO_TRANSLATE_MODE_ALWAYS<class_Node
 
 :ref:`int<class_int>` **internationalization/rendering/root_node_layout_direction** = ``0`` :ref:`🔗<class_ProjectSettings_property_internationalization/rendering/root_node_layout_direction>`
 
-Root node default layout direction.
+Dirección de diseño predeterminada del nodo raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -9899,7 +9901,7 @@ Godot utiliza una cola de mensajes para aplazar algunas llamadas a funciones. Si
 
 :ref:`float<class_float>` **navigation/2d/default_cell_size** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/default_cell_size>`
 
-Default cell size for 2D navigation maps. See :ref:`NavigationServer2D.map_set_cell_size()<class_NavigationServer2D_method_map_set_cell_size>`.
+Tamaño de celda predeterminado para mapas de navegación 2D. Véase :ref:`NavigationServer2D.map_set_cell_size()<class_NavigationServer2D_method_map_set_cell_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9911,7 +9913,7 @@ Default cell size for 2D navigation maps. See :ref:`NavigationServer2D.map_set_c
 
 :ref:`float<class_float>` **navigation/2d/default_edge_connection_margin** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/default_edge_connection_margin>`
 
-Default edge connection margin for 2D navigation maps. See :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>`.
+Margen de conexión de borde predeterminado para mapas de navegación 2D. Véase :ref:`NavigationServer2D.map_set_edge_connection_margin()<class_NavigationServer2D_method_map_set_edge_connection_margin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9923,7 +9925,7 @@ Default edge connection margin for 2D navigation maps. See :ref:`NavigationServe
 
 :ref:`float<class_float>` **navigation/2d/default_link_connection_radius** = ``4.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/default_link_connection_radius>`
 
-Default link connection radius for 2D navigation maps. See :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
+Radio de conexión de enlace predeterminado para mapas de navegación 2D. Véase :ref:`NavigationServer2D.map_set_link_connection_radius()<class_NavigationServer2D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9935,7 +9937,7 @@ Default link connection radius for 2D navigation maps. See :ref:`NavigationServe
 
 :ref:`float<class_float>` **navigation/2d/merge_rasterizer_cell_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/merge_rasterizer_cell_scale>`
 
-Default merge rasterizer cell scale for 2D navigation maps. See :ref:`NavigationServer2D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`.
+Escala de celda del rasterizador de fusión predeterminada para mapas de navegación 2D. Véase :ref:`NavigationServer2D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer2D_method_map_set_merge_rasterizer_cell_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9947,15 +9949,15 @@ Default merge rasterizer cell scale for 2D navigation maps. See :ref:`Navigation
 
 :ref:`String<class_String>` **navigation/2d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/navigation_engine>`
 
-Sets which navigation engine to use for 2D navigation.
+Establece qué motor de navegación usar para la navegación 2D.
 
-\ **DEFAULT** is equivalent to **GodotNavigation2D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** es equivalente a **GodotNavigation2D**, pero puede cambiar en futuras versiones. Selecciona una implementación explícita si quieres asegurarte de que tu proyecto permanezca en el mismo motor.
 
-\ **GodotNavigation2D** is Godot's internal 2D navigation engine.
+\ **GodotNavigation2D** es el motor de navegación 2D interno de Godot.
 
-\ **Dummy** is a 2D navigation server that does nothing and returns only dummy values, effectively disabling all 2D navigation functionality.
+\ **Dummy** es un servidor de navegación 2D que no hace nada y devuelve solo valores ficticios, deshabilitando efectivamente toda la funcionalidad de navegación 2D.
 
-Third-party modules can add other navigation engines to select with this setting.
+Los módulos de terceros pueden añadir otros motores de navegación para seleccionar con esta configuración.
 
 .. rst-class:: classref-item-separator
 
@@ -9967,7 +9969,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/2d/use_edge_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/use_edge_connections>`
 
-If enabled 2D navigation regions will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin. This setting only affects World2D default navigation maps.
+Si está habilitado, las regiones de navegación 2D usarán conexiones de borde para conectarse con otras regiones de navegación dentro de la proximidad del margen de conexión de borde del mapa de navegación. Esta configuración solo afecta a los mapas de navegación predeterminados de World2D.
 
 .. rst-class:: classref-item-separator
 
@@ -9979,7 +9981,7 @@ If enabled 2D navigation regions will use edge connections to connect with other
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_cell_size_mismatch>`
 
-If ``true``, the navigation system will print warnings when a navigation mesh with a small cell size is used on a navigation map with a larger size as this commonly causes rasterization errors.
+Si es ``true``, el sistema de navegación imprimirá advertencias cuando una malla de navegación con un tamaño de celda pequeño se use en un mapa de navegación con un tamaño mayor, ya que esto comúnmente causa errores de rasterización.
 
 .. rst-class:: classref-item-separator
 
@@ -9991,7 +9993,7 @@ If ``true``, the navigation system will print warnings when a navigation mesh wi
 
 :ref:`bool<class_bool>` **navigation/2d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/2d/warnings/navmesh_edge_merge_errors>`
 
-If ``true``, the navigation system will print warnings about navigation mesh edge merge errors occurring in navigation regions or maps.
+Si es ``true``, el sistema de navegación imprimirá advertencias sobre errores de fusión de bordes de malla de navegación que ocurran en regiones o mapas de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -10003,7 +10005,7 @@ If ``true``, the navigation system will print warnings about navigation mesh edg
 
 :ref:`float<class_float>` **navigation/3d/default_cell_height** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_cell_height>`
 
-Default cell height for 3D navigation maps. See :ref:`NavigationServer3D.map_set_cell_height()<class_NavigationServer3D_method_map_set_cell_height>`.
+Altura de celda predeterminada para mapas de navegación 3D. Véase :ref:`NavigationServer3D.map_set_cell_height()<class_NavigationServer3D_method_map_set_cell_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10015,7 +10017,7 @@ Default cell height for 3D navigation maps. See :ref:`NavigationServer3D.map_set
 
 :ref:`float<class_float>` **navigation/3d/default_cell_size** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_cell_size>`
 
-Default cell size for 3D navigation maps. See :ref:`NavigationServer3D.map_set_cell_size()<class_NavigationServer3D_method_map_set_cell_size>`.
+Tamaño de celda por defecto para mapas de navegación 3D. Véase :ref:`NavigationServer3D.map_set_cell_size()<class_NavigationServer3D_method_map_set_cell_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10027,7 +10029,7 @@ Default cell size for 3D navigation maps. See :ref:`NavigationServer3D.map_set_c
 
 :ref:`float<class_float>` **navigation/3d/default_edge_connection_margin** = ``0.25`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_edge_connection_margin>`
 
-Default edge connection margin for 3D navigation maps. See :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>`.
+Margen de conexión de borde por defecto para mapas de navegación 3D. Véase :ref:`NavigationServer3D.map_set_edge_connection_margin()<class_NavigationServer3D_method_map_set_edge_connection_margin>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10039,7 +10041,7 @@ Default edge connection margin for 3D navigation maps. See :ref:`NavigationServe
 
 :ref:`float<class_float>` **navigation/3d/default_link_connection_radius** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_link_connection_radius>`
 
-Default link connection radius for 3D navigation maps. See :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
+Radio de conexión de enlace por defecto para mapas de navegación 3D. Véase :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10051,7 +10053,7 @@ Default link connection radius for 3D navigation maps. See :ref:`NavigationServe
 
 :ref:`Vector3<class_Vector3>` **navigation/3d/default_up** = ``Vector3(0, 1, 0)`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/default_up>`
 
-Default up orientation for 3D navigation maps. See :ref:`NavigationServer3D.map_set_up()<class_NavigationServer3D_method_map_set_up>`.
+Orientación hacia arriba predeterminada para mapas de navegación 3D. Véase :ref:`NavigationServer3D.map_set_up()<class_NavigationServer3D_method_map_set_up>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10063,7 +10065,7 @@ Default up orientation for 3D navigation maps. See :ref:`NavigationServer3D.map_
 
 :ref:`float<class_float>` **navigation/3d/merge_rasterizer_cell_scale** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/merge_rasterizer_cell_scale>`
 
-Default merge rasterizer cell scale for 3D navigation maps. See :ref:`NavigationServer3D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer3D_method_map_set_merge_rasterizer_cell_scale>`.
+Escala de celda del rasterizador de fusión predeterminada para mapas de navegación 3D. Véase :ref:`NavigationServer3D.map_set_merge_rasterizer_cell_scale()<class_NavigationServer3D_method_map_set_merge_rasterizer_cell_scale>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10075,15 +10077,15 @@ Default merge rasterizer cell scale for 3D navigation maps. See :ref:`Navigation
 
 :ref:`String<class_String>` **navigation/3d/navigation_engine** = ``"DEFAULT"`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/navigation_engine>`
 
-Sets which navigation engine to use for 3D navigation.
+Establece qué motor de navegación usar para la navegación 3D.
 
-\ **DEFAULT** is equivalent to **GodotNavigation3D**, but may change in future releases. Select an explicit implementation if you want to ensure that your project stays on the same engine.
+\ **DEFAULT** es equivalente a **GodotNavigation3D**, pero puede cambiar en futuras versiones. Selecciona una implementación explícita si quieres asegurar que tu proyecto permanezca en el mismo motor.
 
-\ **GodotNavigation3D** is Godot's internal 3D navigation engine.
+\ **GodotNavigation3D** es el motor de navegación 3D interno de Godot.
 
-\ **Dummy** is a 3D navigation server that does nothing and returns only dummy values, effectively disabling all 3D navigation functionality.
+\ **Dummy** es un servidor de navegación 3D que no hace nada y solo devuelve valores ficticios, deshabilitando efectivamente toda la funcionalidad de navegación 3D.
 
-Third-party modules can add other navigation engines to select with this setting.
+Los módulos de terceros pueden añadir otros motores de navegación para seleccionar con esta configuración.
 
 .. rst-class:: classref-item-separator
 
@@ -10095,7 +10097,7 @@ Third-party modules can add other navigation engines to select with this setting
 
 :ref:`bool<class_bool>` **navigation/3d/use_edge_connections** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/use_edge_connections>`
 
-If enabled 3D navigation regions will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin. This setting only affects World3D default navigation maps.
+Si está habilitado, las regiones de navegación 3D usarán conexiones de borde para conectar con otras regiones de navegación dentro de la proximidad del margen de conexión de borde del mapa de navegación. Esta configuración solo afecta a los mapas de navegación por defecto de World3D.
 
 .. rst-class:: classref-item-separator
 
@@ -10107,7 +10109,7 @@ If enabled 3D navigation regions will use edge connections to connect with other
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_cell_size_mismatch** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_cell_size_mismatch>`
 
-If ``true``, the navigation system will print warnings when a navigation mesh with a small cell size (or in 3D height) is used on a navigation map with a larger size as this commonly causes rasterization errors.
+Si es ``true``, el sistema de navegación imprimirá advertencias cuando se use una malla de navegación con un tamaño de celda pequeño (o en altura 3D) en un mapa de navegación con un tamaño mayor, ya que esto comúnmente causa errores de rasterización.
 
 .. rst-class:: classref-item-separator
 
@@ -10119,7 +10121,7 @@ If ``true``, the navigation system will print warnings when a navigation mesh wi
 
 :ref:`bool<class_bool>` **navigation/3d/warnings/navmesh_edge_merge_errors** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/3d/warnings/navmesh_edge_merge_errors>`
 
-If ``true``, the navigation system will print warnings about navigation mesh edge merge errors occurring in navigation regions or maps.
+Si es ``true``, el sistema de navegación imprimirá advertencias sobre errores de fusión de bordes de malla de navegación que ocurran en regiones o mapas de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -10131,7 +10133,7 @@ If ``true``, the navigation system will print warnings about navigation mesh edg
 
 :ref:`bool<class_bool>` **navigation/avoidance/thread_model/avoidance_use_high_priority_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/avoidance/thread_model/avoidance_use_high_priority_threads>`
 
-If enabled and avoidance calculations use multiple threads the threads run with high priority.
+Si está activado y los cálculos de evitación usan múltiples hilos, los hilos se ejecutan con alta prioridad.
 
 .. rst-class:: classref-item-separator
 
@@ -10143,7 +10145,7 @@ If enabled and avoidance calculations use multiple threads the threads run with 
 
 :ref:`bool<class_bool>` **navigation/avoidance/thread_model/avoidance_use_multiple_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/avoidance/thread_model/avoidance_use_multiple_threads>`
 
-If enabled the avoidance calculations use multiple threads.
+Si está activado, los cálculos de evitación usan múltiples hilos.
 
 .. rst-class:: classref-item-separator
 
@@ -10155,7 +10157,7 @@ If enabled the avoidance calculations use multiple threads.
 
 :ref:`bool<class_bool>` **navigation/baking/thread_model/baking_use_high_priority_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/thread_model/baking_use_high_priority_threads>`
 
-If enabled and async navmesh baking uses multiple threads the threads run with high priority.
+Si está activado y el baking asíncrono de navmesh usa múltiples hilos, los hilos se ejecutan con alta prioridad.
 
 .. rst-class:: classref-item-separator
 
@@ -10167,7 +10169,7 @@ If enabled and async navmesh baking uses multiple threads the threads run with h
 
 :ref:`bool<class_bool>` **navigation/baking/thread_model/baking_use_multiple_threads** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/thread_model/baking_use_multiple_threads>`
 
-If enabled the async navmesh baking uses multiple threads.
+Si está activado, el baking asíncrono de navmesh usa múltiples hilos.
 
 .. rst-class:: classref-item-separator
 
@@ -10179,7 +10181,7 @@ If enabled the async navmesh baking uses multiple threads.
 
 :ref:`bool<class_bool>` **navigation/baking/use_crash_prevention_checks** = ``true`` :ref:`🔗<class_ProjectSettings_property_navigation/baking/use_crash_prevention_checks>`
 
-If enabled, and baking would potentially lead to an engine crash, the baking will be interrupted and an error message with explanation will be raised.
+Si está activado, y el baking pudiera provocar un fallo del motor, el baking se interrumpirá y se mostrará un mensaje de error con una explicación.
 
 .. rst-class:: classref-item-separator
 
@@ -10191,7 +10193,7 @@ If enabled, and baking would potentially lead to an engine crash, the baking wil
 
 :ref:`int<class_int>` **navigation/pathfinding/max_threads** = ``4`` :ref:`🔗<class_ProjectSettings_property_navigation/pathfinding/max_threads>`
 
-Maximum number of threads that can run pathfinding queries simultaneously on the same pathfinding graph, for example the same navigation map. Additional threads increase memory consumption and synchronization time due to the need for extra data copies prepared for each thread. A value of ``-1`` means unlimited and the maximum available OS processor count is used. Defaults to ``1`` when the OS does not support threads.
+Número máximo de hilos que pueden ejecutar consultas de búsqueda de rutas simultáneamente en el mismo grafo de búsqueda de rutas, por ejemplo, el mismo mapa de navegación. Los hilos adicionales aumentan el consumo de memoria y el tiempo de sincronización debido a la necesidad de copias de datos adicionales preparadas para cada hilo. Un valor de ``-1`` significa ilimitado y se usa el número máximo de procesadores disponibles del SO. Por defecto es ``1`` cuando el SO no soporta hilos.
 
 .. rst-class:: classref-item-separator
 
@@ -10239,7 +10241,7 @@ Cantidad máxima de caracteres que se pueden enviar como salida desde el depurad
 
 :ref:`int<class_int>` **network/limits/debugger/max_errors_per_second** = ``400`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_errors_per_second>`
 
-Maximum number of errors allowed to be sent from the debugger. Over this value, content is dropped. This helps not to stall the debugger connection.
+Máximo número de errores que se permite enviar desde el depurador. Por encima de este valor, el contenido se elimina. Esto ayuda a no detener la conexión del depurador.
 
 .. rst-class:: classref-item-separator
 
@@ -10251,7 +10253,7 @@ Maximum number of errors allowed to be sent from the debugger. Over this value, 
 
 :ref:`int<class_int>` **network/limits/debugger/max_queued_messages** = ``2048`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_queued_messages>`
 
-Maximum number of messages in the debugger queue. Over this value, content is dropped. This helps to limit the debugger memory usage.
+Número máximo de mensajes en la cola del depurador. Por encima de este valor, el contenido se descarta. Esto ayuda a limitar el uso de memoria del depurador.
 
 .. rst-class:: classref-item-separator
 
@@ -10263,7 +10265,7 @@ Maximum number of messages in the debugger queue. Over this value, content is dr
 
 :ref:`int<class_int>` **network/limits/debugger/max_warnings_per_second** = ``400`` :ref:`🔗<class_ProjectSettings_property_network/limits/debugger/max_warnings_per_second>`
 
-Maximum number of warnings allowed to be sent from the debugger. Over this value, content is dropped. This helps not to stall the debugger connection.
+Número máximo de advertencias permitidas para ser enviadas desde el depurador. Por encima de este valor, el contenido se descarta. Esto ayuda a evitar que la conexión del depurador se detenga.
 
 .. rst-class:: classref-item-separator
 
@@ -10275,7 +10277,7 @@ Maximum number of warnings allowed to be sent from the debugger. Over this value
 
 :ref:`int<class_int>` **network/limits/packet_peer_stream/max_buffer_po2** = ``16`` :ref:`🔗<class_ProjectSettings_property_network/limits/packet_peer_stream/max_buffer_po2>`
 
-Default size of packet peer stream for deserializing Godot data (in bytes, specified as a power of two). The default value ``16`` is equal to 65,536 bytes. Over this size, data is dropped.
+Tamaño predeterminado del flujo de pares de paquetes para deserializar datos de Godot (en bytes, especificado como una potencia de dos). El valor predeterminado ``16`` es igual a 65,536 bytes. Por encima de este tamaño, los datos se descartan.
 
 .. rst-class:: classref-item-separator
 
@@ -10299,7 +10301,7 @@ Tiempo de espera (en segundos) para los intentos de conexión usando TCP.
 
 :ref:`int<class_int>` **network/limits/unix/connect_timeout_seconds** = ``30`` :ref:`🔗<class_ProjectSettings_property_network/limits/unix/connect_timeout_seconds>`
 
-Timeout (in seconds) for connection attempts using UNIX domain socket.
+Tiempo de espera (en segundos) para los intentos de conexión usando un socket de dominio UNIX.
 
 .. rst-class:: classref-item-separator
 
@@ -10351,15 +10353,15 @@ Si es ``true``, habilita la negociación TLSv1.3.
 
 :ref:`float<class_float>` **physics/2d/default_angular_damp** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_angular_damp>`
 
-The default rotational motion damping in 2D. Damping is used to gradually slow down physical objects over time. RigidBodies will fall back to this value when combining their own damping values and no area damping value is present.
+La amortiguación de movimiento rotacional por defecto en 2D. La amortiguación se utiliza para ralentizar gradualmente los objetos físicos con el tiempo. Los RigidBodies recurrirán a este valor al combinar sus propios valores de amortiguación y si no hay un valor de amortiguación de área presente.
 
-Suggested values are in the range ``0`` to ``30``. At value ``0`` objects will keep moving with the same velocity. Greater values will stop the object faster. A value equal to or greater than the physics tick rate (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) will bring the object to a stop in one iteration.
+Los valores sugeridos están en el rango de ``0`` a ``30``. Con el valor ``0``, los objetos seguirán moviéndose con la misma velocidad. Valores mayores detendrán el objeto más rápidamente. Un valor igual o mayor que la tasa de ticks de física (:ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`) detendrá el objeto en una iteración.
 
-\ **Note:** Godot damping calculations are velocity-dependent, meaning bodies moving faster will take a longer time to come to rest. They do not simulate inertia, friction, or air resistance. Therefore heavier or larger bodies will lose speed at the same proportional rate as lighter or smaller bodies.
+\ **Nota:** Los cálculos de amortiguación de Godot dependen de la velocidad, lo que significa que los cuerpos que se mueven más rápido tardarán más en detenerse. No simulan inercia, fricción ni resistencia del aire. Por lo tanto, los cuerpos más pesados o más grandes perderán velocidad a la misma tasa proporcional que los cuerpos más ligeros o más pequeños.
 
-During each physics tick, Godot will multiply the linear velocity of RigidBodies by ``1.0 - combined_damp / physics_ticks_per_second``. By default, bodies combine damp factors: ``combined_damp`` is the sum of the damp value of the body and this value or the area's value the body is in. See :ref:`DampMode<enum_RigidBody2D_DampMode>`.
+Durante cada tick de física, Godot multiplicará la velocidad lineal de los RigidBodies por ``1.0 - combined_damp / physics_ticks_per_second``. Por defecto, los cuerpos combinan los factores de amortiguación: ``combined_damp`` es la suma del valor de amortiguación del cuerpo y este valor o el valor del área en la que se encuentra el cuerpo. Ver :ref:`DampMode<enum_RigidBody2D_DampMode>`.
 
-\ **Warning:** Godot's damping calculations are simulation tick rate dependent. Changing :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` may significantly change the outcomes and feel of your simulation. This is true for the entire range of damping values greater than 0. To get back to a similar feel, you also need to change your damp values. This needed change is not proportional and differs from case to case.
+\ **Advertencia:** Los cálculos de amortiguación de Godot dependen de la tasa de ticks de simulación. Cambiar :ref:`physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>` puede alterar significativamente los resultados y la sensación de tu simulación. Esto es cierto para todo el rango de valores de amortiguación mayores que 0. Para volver a una sensación similar, también necesitas cambiar tus valores de amortiguación. Este cambio necesario no es proporcional y difiere de un caso a otro.
 
 .. rst-class:: classref-item-separator
 
@@ -10371,21 +10373,21 @@ During each physics tick, Godot will multiply the linear velocity of RigidBodies
 
 :ref:`float<class_float>` **physics/2d/default_gravity** = ``980.0`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_gravity>`
 
-The default gravity strength in 2D (in pixels per second squared).
+La fuerza de gravedad por defecto en 2D (en píxeles por segundo al cuadrado).
 
-\ **Note:** This property is only read when the project starts. To change the default gravity at runtime, use the following code sample:
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto comienza. Para cambiar la gravedad por defecto en tiempo de ejecución, usa el siguiente ejemplo de código:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Set the default gravity strength to 980.
+    # Establece la fuerza de gravedad por defecto a 980.
     PhysicsServer2D.area_set_param(get_viewport().find_world_2d().space, PhysicsServer2D.AREA_PARAM_GRAVITY, 980)
 
  .. code-tab:: csharp
 
-    // Set the default gravity strength to 980.
+    // Establece la fuerza de gravedad por defecto a 980.
     PhysicsServer2D.AreaSetParam(GetViewport().FindWorld2D().Space, PhysicsServer2D.AreaParameter.Gravity, 980);
 
 
@@ -10400,21 +10402,21 @@ The default gravity strength in 2D (in pixels per second squared).
 
 :ref:`Vector2<class_Vector2>` **physics/2d/default_gravity_vector** = ``Vector2(0, 1)`` :ref:`🔗<class_ProjectSettings_property_physics/2d/default_gravity_vector>`
 
-The default gravity direction in 2D.
+La dirección de gravedad por defecto en 2D.
 
-\ **Note:** This property is only read when the project starts. To change the default gravity vector at runtime, use the following code sample:
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto comienza. Para cambiar el vector de gravedad por defecto en tiempo de ejecución, usa el siguiente ejemplo de código:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # Set the default gravity direction to `Vector2(0, 1)`.
+    # Establece la dirección de gravedad por defecto a `Vector2(0, 1)`.
     PhysicsServer2D.area_set_param(get_viewport().find_world_2d().space, PhysicsServer2D.AREA_PARAM_GRAVITY_VECTOR, Vector2.DOWN)
 
  .. code-tab:: csharp
 
-    // Set the default gravity direction to `Vector2(0, 1)`.
+    // Establece la dirección de gravedad por defecto a `Vector2(0, 1)`.
     PhysicsServer2D.AreaSetParam(GetViewport().FindWorld2D().Space, PhysicsServer2D.AreaParameter.GravityVector, Vector2.Down)
 
 
@@ -10769,7 +10771,7 @@ Threshold linear velocity under which a 3D physics body will be considered inact
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_allowed_penetration** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_allowed_penetration>`
 
-Maximum distance a shape can penetrate another shape before it is considered a collision. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
+Distancia máxima que una forma puede penetrar en otra forma antes de que se considere una colisión. Véase :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_ALLOWED_PENETRATION>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10781,7 +10783,7 @@ Maximum distance a shape can penetrate another shape before it is considered a c
 
 :ref:`float<class_float>` **physics/3d/solver/contact_max_separation** = ``0.05`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_max_separation>`
 
-Maximum distance a shape can be from another before they are considered separated and the contact is discarded. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
+Distancia máxima a la que puede estar una forma de otra antes de que se consideren separadas y el contacto sea descartado. Véase :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_MAX_SEPARATION<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_MAX_SEPARATION>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10793,7 +10795,7 @@ Maximum distance a shape can be from another before they are considered separate
 
 :ref:`float<class_float>` **physics/3d/solver/contact_recycle_radius** = ``0.01`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/contact_recycle_radius>`
 
-Maximum distance a pair of bodies has to move before their collision status has to be recalculated. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
+Distancia máxima que un par de cuerpos tiene que moverse antes de que su estado de colisión tenga que ser recalculado. Véase :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_RECYCLE_RADIUS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_RECYCLE_RADIUS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10805,9 +10807,9 @@ Maximum distance a pair of bodies has to move before their collision status has 
 
 :ref:`float<class_float>` **physics/3d/solver/default_contact_bias** = ``0.8`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/default_contact_bias>`
 
-Default solver bias for all physics contacts. Defines how much bodies react to enforce contact separation. See :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
+Sesgo por defecto del solucionador para todos los contactos de física. Define cuánto reaccionan los cuerpos para forzar la separación de contactos. Véase :ref:`PhysicsServer3D.SPACE_PARAM_CONTACT_DEFAULT_BIAS<class_PhysicsServer3D_constant_SPACE_PARAM_CONTACT_DEFAULT_BIAS>`.
 
-Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
+Las formas individuales pueden tener un valor de sesgo específico (véase :ref:`Shape3D.custom_solver_bias<class_Shape3D_property_custom_solver_bias>`).
 
 .. rst-class:: classref-item-separator
 
@@ -10819,7 +10821,7 @@ Individual shapes can have a specific bias value (see :ref:`Shape3D.custom_solve
 
 :ref:`int<class_int>` **physics/3d/solver/solver_iterations** = ``16`` :ref:`🔗<class_ProjectSettings_property_physics/3d/solver/solver_iterations>`
 
-Number of solver iterations for all contacts and constraints. The greater the number of iterations, the more accurate the collisions will be. However, a greater number of iterations requires more CPU power, which can decrease performance. See :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
+Número de iteraciones del solucionador para todos los contactos y restricciones. Cuanto mayor sea el número de iteraciones, más precisas serán las colisiones. Sin embargo, un mayor número de iteraciones requiere más potencia de CPU, lo que puede disminuir el rendimiento. Véase :ref:`PhysicsServer3D.SPACE_PARAM_SOLVER_ITERATIONS<class_PhysicsServer3D_constant_SPACE_PARAM_SOLVER_ITERATIONS>`.
 
 .. rst-class:: classref-item-separator
 
@@ -10993,9 +10995,9 @@ This is mainly used as a fail-safe, to prevent the simulation from exploding, as
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_bodies** = ``10240`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_bodies>`
 
-The maximum number of :ref:`PhysicsBody3D<class_PhysicsBody3D>` to support at the same time, awake or sleeping. When this limit is exceeded, an error is reported and anything past that point is undefined behavior.
+El número máximo de :ref:`PhysicsBody3D<class_PhysicsBody3D>` que se pueden soportar al mismo tiempo, despiertos o dormidos. Cuando se excede este límite, se informa de un error y cualquier cosa más allá de ese punto es un comportamiento indefinido.
 
-\ **Note:** This limit also applies within the editor.
+\ **Nota:** Este límite también se aplica dentro del editor.
 
 .. rst-class:: classref-item-separator
 
@@ -11007,7 +11009,7 @@ The maximum number of :ref:`PhysicsBody3D<class_PhysicsBody3D>` to support at th
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_body_pairs** = ``65536`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_body_pairs>`
 
-The maximum number of body pairs to allow processing of. When this limit is exceeded, a warning is reported and collisions will randomly be ignored while bodies pass through each other.
+El número máximo de pares de cuerpos que se permite procesar. Cuando se excede este límite, se informa de una advertencia y las colisiones se ignorarán aleatoriamente mientras los cuerpos se atraviesan entre sí.
 
 .. rst-class:: classref-item-separator
 
@@ -11019,7 +11021,7 @@ The maximum number of body pairs to allow processing of. When this limit is exce
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/max_contact_constraints** = ``20480`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_contact_constraints>`
 
-The maximum number of contact constraints to allow processing of. When this limit is exceeded, a warning is reported and collisions will randomly be ignored while bodies pass through each other.
+El número máximo de restricciones de contacto que se permite procesar. Cuando se excede este límite, se informa de una advertencia y las colisiones se ignorarán aleatoriamente mientras los cuerpos se atraviesan entre sí.
 
 .. rst-class:: classref-item-separator
 
@@ -11031,9 +11033,9 @@ The maximum number of contact constraints to allow processing of. When this limi
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/max_linear_velocity** = ``500.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/max_linear_velocity>`
 
-The maximum linear velocity that a :ref:`RigidBody3D<class_RigidBody3D>` can reach, in meters per second.
+La velocidad lineal máxima que un :ref:`RigidBody3D<class_RigidBody3D>` puede alcanzar, en metros por segundo.
 
-This is mainly used as a fail-safe, to prevent the simulation from exploding, as fast-moving objects colliding with complex physics structures can otherwise cause them to go out of control. Fast-moving objects can also cause a lot of stress on the collision detection system, which can slow down the simulation considerably.
+Esto se utiliza principalmente como medida de seguridad, para evitar que la simulación explote, ya que los objetos que se mueven rápidamente y chocan con estructuras físicas complejas pueden hacer que estas se descontrolen. Los objetos que se mueven rápidamente también pueden causar mucho estrés en el sistema de detección de colisiones, lo que puede ralentizar considerablemente la simulación.
 
 .. rst-class:: classref-item-separator
 
@@ -11045,7 +11047,7 @@ This is mainly used as a fail-safe, to prevent the simulation from exploding, as
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/limits/temporary_memory_buffer_size** = ``32`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/temporary_memory_buffer_size>`
 
-The amount of memory to pre-allocate for the stack allocator used within Jolt, in MiB. This allocator is used within the physics step to store things that are only needed during it, like which bodies are in contact, how they form islands and the data needed to solve the contacts.
+La cantidad de memoria a preasignar para el asignador de pila utilizado dentro de Jolt, en MiB. Este asignador se utiliza dentro del paso de física para almacenar cosas que solo se necesitan durante este, como qué cuerpos están en contacto, cómo forman islas y los datos necesarios para resolver los contactos.
 
 .. rst-class:: classref-item-separator
 
@@ -11057,11 +11059,11 @@ The amount of memory to pre-allocate for the stack allocator used within Jolt, i
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/limits/world_boundary_shape_size** = ``2000.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/limits/world_boundary_shape_size>`
 
-The size of :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` boundaries, for all three dimensions. The plane is effectively centered within a box of this size, and anything outside of the box will not collide with it. This is necessary as :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` is not unbounded when using Jolt, in order to prevent precision issues.
+El tamaño de los límites de :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>`, para las tres dimensiones. El plano está efectivamente centrado dentro de una caja de este tamaño, y cualquier cosa fuera de la caja no colisionará con él. Esto es necesario ya que :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` no es ilimitado cuando se usa Jolt, para evitar problemas de precisión.
 
-\ **Note:** Setting this value too high can make collision detection less accurate.
+\ **Nota:** Establecer este valor demasiado alto puede hacer que la detección de colisiones sea menos precisa.
 
-\ **Note:** Collisions against the effective edges of a :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` will be inconsistent.
+\ **Nota:** Las colisiones contra los bordes efectivos de un :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` serán inconsistentes.
 
 .. rst-class:: classref-item-separator
 
@@ -11073,9 +11075,9 @@ The size of :ref:`WorldBoundaryShape3D<class_WorldBoundaryShape3D>` boundaries, 
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/motion_queries/recovery_amount** = ``0.4`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/recovery_amount>`
 
-Fraction of the total penetration to depenetrate per iteration during motion queries.
+Fracción de la penetración total a despenetrar por iteración durante las consultas de movimiento.
 
-\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+\ **Nota:** Esto afecta a los métodos :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` y :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11087,9 +11089,9 @@ Fraction of the total penetration to depenetrate per iteration during motion que
 
 :ref:`int<class_int>` **physics/jolt_physics_3d/motion_queries/recovery_iterations** = ``4`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/motion_queries/recovery_iterations>`
 
-The number of iterations to run when depenetrating during motion queries.
+El número de iteraciones a ejecutar al despenetrar durante las consultas de movimiento.
 
-\ **Note:** This affects methods :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` and :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
+\ **Nota:** Esto afecta a los métodos :ref:`CharacterBody3D.move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, :ref:`PhysicsBody3D.move_and_collide()<class_PhysicsBody3D_method_move_and_collide>`, :ref:`PhysicsBody3D.test_move()<class_PhysicsBody3D_method_test_move>` y :ref:`PhysicsServer3D.body_test_motion()<class_PhysicsServer3D_method_body_test_motion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11145,7 +11147,7 @@ If ``true``, enables Jolt's enhanced internal edge removal during shape queries.
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/allow_sleep** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/allow_sleep>`
 
-If ``true``, :ref:`RigidBody3D<class_RigidBody3D>` nodes are allowed to go to sleep if their velocity is below the threshold defined in :ref:`physics/jolt_physics_3d/simulation/sleep_velocity_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>` for the duration set in :ref:`physics/jolt_physics_3d/simulation/sleep_time_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>`. This can improve physics simulation performance when there are non-moving :ref:`RigidBody3D<class_RigidBody3D>` nodes, at the cost of some nodes possibly failing to wake up in certain scenarios. Consider disabling this temporarily to troubleshoot :ref:`RigidBody3D<class_RigidBody3D>` nodes not moving when they should.
+Si es ``true``, los nodos :ref:`RigidBody3D<class_RigidBody3D>` pueden entrar en reposo si su velocidad está por debajo del umbral definido en :ref:`physics/jolt_physics_3d/simulation/sleep_velocity_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_velocity_threshold>` durante la duración establecida en :ref:`physics/jolt_physics_3d/simulation/sleep_time_threshold<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/sleep_time_threshold>`. Esto puede mejorar el rendimiento de la simulación física cuando hay nodos :ref:`RigidBody3D<class_RigidBody3D>` que no se mueven, a costa de que algunos nodos posiblemente no se despierten en ciertos escenarios. Considera deshabilitar esto temporalmente para solucionar problemas de nodos :ref:`RigidBody3D<class_RigidBody3D>` que no se mueven cuando deberían.
 
 .. rst-class:: classref-item-separator
 
@@ -11157,9 +11159,9 @@ If ``true``, :ref:`RigidBody3D<class_RigidBody3D>` nodes are allowed to go to sl
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/baumgarte_stabilization_factor** = ``0.2`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/baumgarte_stabilization_factor>`
 
-How much of the position error of a :ref:`RigidBody3D<class_RigidBody3D>` to fix during a physics step, where ``0.0`` is none and ``1.0`` is the full amount. This affects things like how quickly bodies depenetrate.
+Cuánto del error de posición de un :ref:`RigidBody3D<class_RigidBody3D>` se debe corregir durante un paso de física, donde ``0.0`` es nada y ``1.0`` es la cantidad total. Esto afecta cosas como la rapidez con la que los cuerpos se despenetran.
 
-\ **Note:** Setting this value too high can make :ref:`RigidBody3D<class_RigidBody3D>` nodes unstable.
+\ **Nota:** Establecer este valor demasiado alto puede hacer que los nodos :ref:`RigidBody3D<class_RigidBody3D>` sean inestables.
 
 .. rst-class:: classref-item-separator
 
@@ -11171,7 +11173,7 @@ How much of the position error of a :ref:`RigidBody3D<class_RigidBody3D>` to fix
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_angle_threshold** = ``0.034906585`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_angle_threshold>`
 
-The maximum relative angle by which a body pair can move and still reuse the collision results from the previous physics step, in radians.
+El ángulo relativo máximo por el cual un par de cuerpos puede moverse y aún así reutilizar los resultados de colisión del paso de física anterior, en radianes.
 
 .. rst-class:: classref-item-separator
 
@@ -11183,7 +11185,7 @@ The maximum relative angle by which a body pair can move and still reuse the col
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_distance_threshold** = ``0.001`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_distance_threshold>`
 
-The maximum relative distance by which a body pair can move and still reuse the collision results from the previous physics step, in meters.
+La distancia relativa máxima por la cual un par de cuerpos puede moverse y aún así reutilizar los resultados de colisión del paso de física anterior, en metros.
 
 .. rst-class:: classref-item-separator
 
@@ -11195,7 +11197,7 @@ The maximum relative distance by which a body pair can move and still reuse the 
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/body_pair_contact_cache_enabled>`
 
-If ``true``, enables the body pair contact cache, which removes the need for potentially expensive collision detection when the relative orientation between two bodies hasn't changed much.
+Si es ``true``, habilita la caché de contactos de pares de cuerpos, lo que elimina la necesidad de una detección de colisiones potencialmente costosa cuando la orientación relativa entre dos cuerpos no ha cambiado mucho.
 
 .. rst-class:: classref-item-separator
 
@@ -11207,7 +11209,7 @@ If ``true``, enables the body pair contact cache, which removes the need for pot
 
 :ref:`float<class_float>` **physics/jolt_physics_3d/simulation/bounce_velocity_threshold** = ``1.0`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/bounce_velocity_threshold>`
 
-The minimum velocity needed before a collision can be bouncy, in meters per second.
+La velocidad mínima necesaria para que una colisión pueda ser rebotante, en metros por segundo.
 
 .. rst-class:: classref-item-separator
 
@@ -11243,9 +11245,9 @@ Fracción del radio interior de un cuerpo que el cuerpo debe moverse por paso pa
 
 :ref:`bool<class_bool>` **physics/jolt_physics_3d/simulation/generate_all_kinematic_contacts** = ``false`` :ref:`🔗<class_ProjectSettings_property_physics/jolt_physics_3d/simulation/generate_all_kinematic_contacts>`
 
-If ``true``, a :ref:`RigidBody3D<class_RigidBody3D>` frozen with :ref:`RigidBody3D.FREEZE_MODE_KINEMATIC<class_RigidBody3D_constant_FREEZE_MODE_KINEMATIC>` is able to collide with other kinematic and static bodies, and therefore generate contacts for them.
+Si es ``true``, un :ref:`RigidBody3D<class_RigidBody3D>` congelado con :ref:`RigidBody3D.FREEZE_MODE_KINEMATIC<class_RigidBody3D_constant_FREEZE_MODE_KINEMATIC>` puede colisionar con otros cuerpos cinemáticos y estáticos, y por lo tanto generar contactos para ellos.
 
-\ **Note:** This setting can come at a heavy CPU and memory cost if you allow many/large frozen kinematic bodies with a non-zero :ref:`RigidBody3D.max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` to overlap with complex static geometry, such as :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` or :ref:`HeightMapShape3D<class_HeightMapShape3D>`.
+\ **Nota:** Esta configuración puede tener un alto costo de CPU y memoria si permites que muchos/grandes cuerpos cinemáticos congelados con un :ref:`RigidBody3D.max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` no nulo se superpongan con geometría estática compleja, como :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` o :ref:`HeightMapShape3D<class_HeightMapShape3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11357,7 +11359,7 @@ Número de iteraciones de velocidad del solucionador. Cuanto mayor sea el númer
 
 :ref:`int<class_int>` **rendering/2d/batching/item_buffer_size** = ``16384`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/batching/item_buffer_size>`
 
-Maximum number of canvas item commands that can be batched into a single draw call.
+Número máximo de comandos de elementos del canvas que se pueden agrupar en una sola llamada de dibujo.
 
 .. rst-class:: classref-item-separator
 
@@ -11369,7 +11371,7 @@ Maximum number of canvas item commands that can be batched into a single draw ca
 
 :ref:`int<class_int>` **rendering/2d/batching/uniform_set_cache_size** = ``4096`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/batching/uniform_set_cache_size>`
 
-Número máximo de conjuntos uniformes que la renderización 2D almacenará en caché al procesar llamadas de dibujo por lotes.
+Número máximo de conjuntos de variables uniformes que la renderización 2D almacenará en caché al procesar llamadas de dibujo por lotes.
 
 \ **Nota:** Aumentar este valor puede mejorar el rendimiento si el proyecto renderiza muchas texturas de sprite únicas cada fotograma.
 
@@ -11383,11 +11385,11 @@ Número máximo de conjuntos uniformes que la renderización 2D almacenará en c
 
 :ref:`int<class_int>` **rendering/2d/sdf/oversize** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/sdf/oversize>`
 
-Controls how much of the original viewport size should be covered by the 2D signed distance field. This SDF can be sampled in :ref:`CanvasItem<class_CanvasItem>` shaders and is used for :ref:`GPUParticles2D<class_GPUParticles2D>` collision. Higher values allow portions of occluders located outside the viewport to still be taken into account in the generated signed distance field, at the cost of performance. If you notice particles falling through :ref:`LightOccluder2D<class_LightOccluder2D>`\ s as the occluders leave the viewport, increase this setting.
+Controla cuánto del tamaño original del viewport debe ser cubierto por el campo de distancia con signo 2D. Este SDF puede ser muestreado en shaders de :ref:`CanvasItem<class_CanvasItem>` y se usa para la colisión de :ref:`GPUParticles2D<class_GPUParticles2D>`. Valores más altos permiten que porciones de ocluyentes ubicadas fuera del viewport se sigan teniendo en cuenta en el campo de distancia con signo generado, a costa del rendimiento. Si notas que las partículas caen a través de :ref:`LightOccluder2D<class_LightOccluder2D>`\ s a medida que los ocluyentes salen del viewport, aumenta este ajuste.
 
-The percentage specified is added on each axis and on both sides. For example, with the default setting of 120%, the signed distance field will cover 20% of the viewport's size outside the viewport on each side (top, right, bottom, left).
+El porcentaje especificado se añade en cada eje y en ambos lados. Por ejemplo, con el ajuste predeterminado del 120%, el campo de distancia con signo cubrirá el 20% del tamaño del viewport fuera del viewport en cada lado (arriba, derecha, abajo, izquierda).
 
-\ **Note:** This property is only read when the project starts. To change the 2D SDF oversizing percentage at runtime, use :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>` instead.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Para cambiar el porcentaje de sobredimensionamiento del SDF 2D en tiempo de ejecución, usa :ref:`RenderingServer.viewport_set_sdf_oversize_and_scale()<class_RenderingServer_method_viewport_set_sdf_oversize_and_scale>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -11427,13 +11429,13 @@ El tamaño del atlas de sombras 2D en píxeles. Los valores más altos dan como 
 
 :ref:`bool<class_bool>` **rendering/2d/snap/snap_2d_transforms_to_pixel** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`
 
-If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to full pixels. Useful for low-resolution pixel art games. Their position can still be sub-pixel, but the decimals will not have effect as the position is rounded. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
+Si es ``true``, los nodos :ref:`CanvasItem<class_CanvasItem>` se ajustarán internamente a píxeles completos. Útil para juegos de pixel art de baja resolución. Su posición aún puede ser subpíxel, pero los decimales no tendrán efecto ya que la posición se redondea. Esto puede resultar en una apariencia más nítida a costa de un movimiento menos suave, especialmente cuando el suavizado de :ref:`Camera2D<class_Camera2D>` está habilitado.
 
-\ **Note:** This property is only read when the project starts. To toggle 2D transform snapping at runtime, use :ref:`RenderingServer.viewport_set_snap_2d_transforms_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>` on the root :ref:`Viewport<class_Viewport>` instead.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Para alternar el ajuste de transformaciones 2D en tiempo de ejecución, usa :ref:`RenderingServer.viewport_set_snap_2d_transforms_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_transforms_to_pixel>` en el :ref:`Viewport<class_Viewport>` raíz en su lugar.
 
-\ **Note:** :ref:`Control<class_Control>` nodes are snapped to the nearest pixel by default. This is controlled by :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
+\ **Nota:** Los nodos :ref:`Control<class_Control>` se ajustan al píxel más cercano por defecto. Esto se controla mediante :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
 
-\ **Note:** It is not recommended to use this setting together with :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`, as movement may appear even less smooth. Prefer only enabling this setting instead.
+\ **Nota:** No se recomienda usar este ajuste junto con :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`, ya que el movimiento puede parecer aún menos suave. Prefiere habilitar solo este ajuste en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -11445,13 +11447,13 @@ If ``true``, :ref:`CanvasItem<class_CanvasItem>` nodes will internally snap to f
 
 :ref:`bool<class_bool>` **rendering/2d/snap/snap_2d_vertices_to_pixel** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>`
 
-If ``true``, vertices of :ref:`CanvasItem<class_CanvasItem>` nodes will snap to full pixels. Useful for low-resolution pixel art games. Only affects the final vertex positions, not the transforms. This can lead to a crisper appearance at the cost of less smooth movement, especially when :ref:`Camera2D<class_Camera2D>` smoothing is enabled.
+Si es ``true``, los vértices de los nodos :ref:`CanvasItem<class_CanvasItem>` se ajustarán a píxeles completos. Útil para juegos de pixel art de baja resolución. Solo afecta las posiciones finales de los vértices, no las transformaciones. Esto puede resultar en una apariencia más nítida a costa de un movimiento menos suave, especialmente cuando el suavizado de :ref:`Camera2D<class_Camera2D>` está habilitado.
 
-\ **Note:** This property is only read when the project starts. To toggle 2D vertex snapping at runtime, use :ref:`RenderingServer.viewport_set_snap_2d_vertices_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>` on the root :ref:`Viewport<class_Viewport>` instead.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Para alternar el ajuste de vértices 2D en tiempo de ejecución, usa :ref:`RenderingServer.viewport_set_snap_2d_vertices_to_pixel()<class_RenderingServer_method_viewport_set_snap_2d_vertices_to_pixel>` en el :ref:`Viewport<class_Viewport>` raíz en su lugar.
 
-\ **Note:** :ref:`Control<class_Control>` nodes are snapped to the nearest pixel by default. This is controlled by :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
+\ **Nota:** Los nodos :ref:`Control<class_Control>` se ajustan al píxel más cercano por defecto. Esto se controla mediante :ref:`gui/common/snap_controls_to_pixels<class_ProjectSettings_property_gui/common/snap_controls_to_pixels>`.
 
-\ **Note:** It is not recommended to use this setting together with :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`, as movement may appear even less smooth. Prefer only enabling that setting instead.
+\ **Nota:** No se recomienda usar este ajuste junto con :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`, ya que el movimiento puede parecer aún menos suave. Prefiere habilitar solo ese ajuste en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -11493,13 +11495,13 @@ Sets the number of multisample antialiasing (MSAA) samples to use for 3D renderi
 
 :ref:`int<class_int>` **rendering/anti_aliasing/quality/screen_space_aa** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`
 
-Sets the screen-space antialiasing mode for the default screen :ref:`Viewport<class_Viewport>`. Screen-space antialiasing works by selectively blurring edges in a post-process shader. It differs from MSAA which takes multiple coverage samples while rendering objects. Screen-space AA methods are typically faster than MSAA and will smooth out specular aliasing, but tend to make scenes appear blurry. The blurriness is partially counteracted by automatically using a negative mipmap LOD bias (see :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
+Establece el modo de antialiasing en espacio de pantalla para el :ref:`Viewport<class_Viewport>` de pantalla predeterminado. El antialiasing en espacio de pantalla funciona difuminando selectivamente los bordes en un shader de post-procesado. Se diferencia del MSAA, que toma múltiples muestras de cobertura al renderizar objetos. Los métodos de AA en espacio de pantalla son normalmente más rápidos que el MSAA y suavizarán el aliasing especular, pero tienden a hacer que las escenas aparezcan borrosas. La borrosidad se contrarresta parcialmente usando automáticamente un sesgo LOD negativo de mipmap (ver :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
 
-Another way to combat specular aliasing is to enable :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`.
+Otra forma de combatir el aliasing especular es habilitar :ref:`rendering/anti_aliasing/screen_space_roughness_limiter/enabled<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`.
 
-\ **Note:** Screen-space antialiasing is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** El antialiasing en espacio de pantalla solo es compatible con los métodos de renderizado Forward+ y Mobile, no con Compatibility.
 
-\ **Note:** This property is only read when the project starts. To set the screen-space antialiasing mode at runtime, set :ref:`Viewport.screen_space_aa<class_Viewport_property_screen_space_aa>` on the root :ref:`Viewport<class_Viewport>` instead, or use :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`.
+\ **Nota:** Esta propiedad solo se lee cuando se inicia el proyecto. Para establecer el modo de antialiasing en espacio de pantalla en tiempo de ejecución, configura :ref:`Viewport.screen_space_aa<class_Viewport_property_screen_space_aa>` en la :ref:`Viewport<class_Viewport>` raíz en su lugar, o usa :ref:`RenderingServer.viewport_set_screen_space_aa()<class_RenderingServer_method_viewport_set_screen_space_aa>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11541,13 +11543,13 @@ In some cases, debanding may introduce a slightly noticeable dithering pattern. 
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/quality/use_taa** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`
 
-Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewport>`. TAA works by jittering the camera and accumulating the images of the last rendered frames, motion vector rendering is used to account for camera and object motion. Enabling TAA can make the image blurrier, which is partially counteracted by automatically using a negative mipmap LOD bias (see :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
+Habilita el antialiasing temporal para el :ref:`Viewport<class_Viewport>` de pantalla predeterminado. TAA funciona agitando la cámara y acumulando las imágenes de los últimos fotogramas renderizados; el renderizado de vectores de movimiento se utiliza para tener en cuenta el movimiento de la cámara y los objetos. Habilitar TAA puede hacer que la imagen se vea más borrosa, lo cual se contrarresta parcialmente utilizando automáticamente un sesgo LOD de mipmap negativo (véase :ref:`rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`).
 
-\ **Note:** The implementation is not complete yet. Some visual instances such as particles and skinned meshes may show ghosting artifacts in motion.
+\ **Nota:** La implementación aún no está completa. Algunas instancias visuales, como partículas y mallas con skin, pueden mostrar artefactos de fantasmas en movimiento.
 
-\ **Note:** TAA is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+\ **Nota:** TAA solo es compatible con el método de renderizado Forward+, no con Mobile o Compatibility.
 
-\ **Note:** This property is only read when the project starts. To set TAA at runtime, set :ref:`Viewport.use_taa<class_Viewport_property_use_taa>` on the root :ref:`Viewport<class_Viewport>` instead, or use :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`.
+\ **Nota:** Esta propiedad solo se lee al iniciar el proyecto. Para configurar TAA en tiempo de ejecución, establece :ref:`Viewport.use_taa<class_Viewport_property_use_taa>` en el :ref:`Viewport<class_Viewport>` raíz en su lugar, o utiliza :ref:`RenderingServer.viewport_set_use_taa()<class_RenderingServer_method_viewport_set_use_taa>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11571,11 +11573,11 @@ Enables temporal antialiasing for the default screen :ref:`Viewport<class_Viewpo
 
 :ref:`bool<class_bool>` **rendering/anti_aliasing/screen_space_roughness_limiter/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/anti_aliasing/screen_space_roughness_limiter/enabled>`
 
-If ``true``, enables a spatial filter to limit roughness in areas with high-frequency detail. This can help reduce specular aliasing to an extent, though not as much as enabling :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`. This filter has a small performance cost, so consider disabling it if it doesn't benefit your scene noticeably.
+Si es ``true``, habilita un filtro espacial para limitar la rugosidad en áreas con detalles de alta frecuencia. Esto puede ayudar a reducir el aliasing especular hasta cierto punto, aunque no tanto como habilitar :ref:`rendering/anti_aliasing/quality/use_taa<class_ProjectSettings_property_rendering/anti_aliasing/quality/use_taa>`. Este filtro tiene un pequeño costo de rendimiento, así que considera deshabilitarlo si no beneficia tu escena de manera notable.
 
-\ **Note:** The screen-space roughness limiter is only supported in the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Nota:** El limitador de rugosidad en espacio de pantalla solo es compatible con los métodos de renderizado Forward+ y Mobile, no con Compatibility.
 
-\ **Note:** This property is only read when the project starts. To control the screen-space roughness limiter at runtime, call :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>` instead.
+\ **Nota:** Esta propiedad solo se lee al iniciar el proyecto. Para controlar el limitador de rugosidad en espacio de pantalla en tiempo de ejecución, llama a :ref:`RenderingServer.screen_space_roughness_limiter_set_active()<class_RenderingServer_method_screen_space_roughness_limiter_set_active>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -11693,6 +11695,18 @@ Default background clear color. Overridable per :ref:`Viewport<class_Viewport>` 
 
 ----
 
+.. _class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **rendering/environment/fog/use_legacy_blending** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/fog/use_legacy_blending>`
+
+Enables legacy fog blending behavior from version 4.5 and earlier. This is intended for users who are developing on pre-4.6 versions and want to upgrade to 4.6 with the smallest possible change to their visuals.
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ProjectSettings_property_rendering/environment/glow/upscale_mode:
 
 .. rst-class:: classref-property
@@ -11785,7 +11799,7 @@ Distancia a la que la oclusión ambiental en espacio de pantalla está completam
 
 :ref:`bool<class_bool>` **rendering/environment/ssao/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssao/half_size>`
 
-Si ``true``, la oclusión ambiental en espacio de pantalla se renderizará a la mitad de tamaño y luego se aumentará antes de agregarse a la escena. Esto es significativamente más rápido pero puede perder pequeños detalles. Si ``false``, la oclusión ambiental en espacio de pantalla se renderizará a tamaño completo.
+Si es ``true``, la oclusión ambiental en espacio de pantalla se renderizará a la mitad de tamaño y luego se aumentará antes de agregarse a la escena. Esto es significativamente más rápido pero puede perder pequeños detalles. Si es ``false``, la oclusión ambiental en espacio de pantalla se renderizará a tamaño completo.
 
 .. rst-class:: classref-item-separator
 
@@ -11857,7 +11871,7 @@ Distancia a la que la iluminación indirecta en espacio de pantalla está comple
 
 :ref:`bool<class_bool>` **rendering/environment/ssil/half_size** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/environment/ssil/half_size>`
 
-Si ``true``, la iluminación indirecta en espacio de pantalla se renderizará a la mitad de tamaño y luego se aumentará antes de agregarse a la escena. Esto es significativamente más rápido pero puede perder pequeños detalles y puede hacer que algunos objetos parezcan brillar en sus bordes.
+Si es ``true``, la iluminación indirecta en espacio de pantalla se renderizará a la mitad de tamaño y luego se aumentará antes de agregarse a la escena. Esto es significativamente más rápido pero puede perder pequeños detalles y puede hacer que algunos objetos parezcan brillar en sus bordes.
 
 .. rst-class:: classref-item-separator
 
@@ -12913,7 +12927,7 @@ Lower-end override for :ref:`rendering/reflections/sky_reflections/ggx_samples<c
 
 .. rst-class:: classref-property
 
-:ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``7`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
+:ref:`int<class_int>` **rendering/reflections/sky_reflections/roughness_layers** = ``8`` :ref:`🔗<class_ProjectSettings_property_rendering/reflections/sky_reflections/roughness_layers>`
 
 Limits the number of layers to use in radiance maps when using importance sampling. A lower number will be slightly faster and take up less VRAM.
 
@@ -13187,9 +13201,9 @@ Two options are supported:
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_d3d12** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_d3d12>`
 
-If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is not supported. The fallback is always attempted regardless of this setting if Vulkan driver support was disabled at compile time.
+Si es ``true``, el renderizador Forward+ recurrirá a Direct3D 12 si Vulkan no es compatible. El recurso alternativo siempre se intenta independientemente de esta configuración si el soporte del controlador Vulkan fue deshabilitado en tiempo de compilación.
 
-\ **Note:** This setting is implemented only on Windows.
+\ **Nota:** Esta configuración solo se implementa en Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -13201,9 +13215,9 @@ If ``true``, the Forward+ renderer will fall back to Direct3D 12 if Vulkan is no
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_opengl3** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_opengl3>`
 
-If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Metal, and Vulkan are not supported.
+Si es ``true``, el renderizador Forward+ recurrirá a OpenGL 3 si Direct3D 12, Metal y Vulkan no son compatibles.
 
-\ **Note:** This setting is implemented on Windows, Android, macOS, iOS, and Linux/X11.
+\ **Nota:** Esta configuración se implementa en Windows, Android, macOS, iOS y Linux/X11.
 
 .. rst-class:: classref-item-separator
 
@@ -13215,9 +13229,9 @@ If ``true``, the Forward+ renderer will fall back to OpenGL 3 if Direct3D 12, Me
 
 :ref:`bool<class_bool>` **rendering/rendering_device/fallback_to_vulkan** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/fallback_to_vulkan>`
 
-If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on Windows) or Metal (on macOS x86_64) are not supported. The fallback is always attempted regardless of this setting if Direct3D 12 (Windows) or Metal (macOS) driver support was disabled at compile time.
+Si es ``true``, el renderizador Forward+ recurrirá a Vulkan si Direct3D 12 (en Windows) o Metal (en macOS x86_64) no son compatibles. El recurso alternativo siempre se intenta independientemente de esta configuración si el soporte del controlador de Direct3D 12 (Windows) o Metal (macOS) fue deshabilitado en tiempo de compilación.
 
-\ **Note:** This setting is implemented on Windows and macOS.
+\ **Nota:** Esta configuración se implementa en Windows y macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -13229,9 +13243,9 @@ If ``true``, the Forward+ renderer will fall back to Vulkan if Direct3D 12 (on W
 
 :ref:`bool<class_bool>` **rendering/rendering_device/pipeline_cache/enable** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/pipeline_cache/enable>`
 
-Enable the pipeline cache that is saved to disk if the graphics API supports it.
+Habilita la caché de la pipeline que se guarda en disco si la API de gráficos lo soporta.
 
-\ **Note:** This property is unable to control the pipeline caching the GPU driver itself does. Only turn this off along with deleting the contents of the driver's cache if you wish to simulate the experience a user will get when starting the game for the first time.
+\ **Nota:** Esta propiedad no puede controlar el almacenamiento en caché de la pipeline que realiza el propio controlador de GPU. Solo desactiva esto, junto con la eliminación del contenido de la caché del controlador, si deseas simular la experiencia que un usuario obtendrá al iniciar el juego por primera vez.
 
 .. rst-class:: classref-item-separator
 
@@ -13243,7 +13257,7 @@ Enable the pipeline cache that is saved to disk if the graphics API supports it.
 
 :ref:`float<class_float>` **rendering/rendering_device/pipeline_cache/save_chunk_size_mb** = ``3.0`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/pipeline_cache/save_chunk_size_mb>`
 
-Determines at which interval pipeline cache is saved to disk. The lower the value, the more often it is saved.
+Determina el intervalo en el que la caché de la pipeline se guarda en disco. Cuanto menor sea el valor, más a menudo se guardará.
 
 .. rst-class:: classref-item-separator
 
@@ -13255,9 +13269,9 @@ Determines at which interval pipeline cache is saved to disk. The lower the valu
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/block_size_kb** = ``256`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>`
 
-The size of a block allocated in the staging buffers. Staging buffers are the intermediate resources the engine uses to upload or download data to the GPU. This setting determines the max amount of data that can be transferred in a copy operation. Increasing this will result in faster data transfers at the cost of extra memory.
+El tamaño de un bloque asignado en los búferes de preparación (staging buffers). Los búferes de preparación son los recursos intermedios que el motor utiliza para cargar o descargar datos a la GPU. Esta configuración determina la cantidad máxima de datos que se pueden transferir en una operación de copia. Aumentar esto resultará en transferencias de datos más rápidas a costa de memoria extra.
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Actualmente no hay forma de cambiar este valor en tiempo de ejecución.
 
 .. rst-class:: classref-item-separator
 
@@ -13269,9 +13283,9 @@ The size of a block allocated in the staging buffers. Staging buffers are the in
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/max_size_mb** = ``128`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/max_size_mb>`
 
-The maximum amount of memory allowed to be used by staging buffers. If the amount of data being uploaded or downloaded exceeds this amount, the GPU will stall and wait for previous frames to finish.
+La cantidad máxima de memoria permitida para ser utilizada por los búferes de preparación. Si la cantidad de datos que se están cargando o descargando excede esta cantidad, la GPU se detendrá y esperará a que terminen los fotogramas anteriores.
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Actualmente no hay forma de cambiar este valor en tiempo de ejecución.
 
 .. rst-class:: classref-item-separator
 
@@ -13283,11 +13297,11 @@ The maximum amount of memory allowed to be used by staging buffers. If the amoun
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/texture_download_region_size_px** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/texture_download_region_size_px>`
 
-The region size in pixels used to download texture data from the GPU when using methods like :ref:`RenderingDevice.texture_get_data_async()<class_RenderingDevice_method_texture_get_data_async>`.
+El tamaño de la región en píxeles utilizada para descargar datos de textura de la GPU al usar métodos como :ref:`RenderingDevice.texture_get_data_async()<class_RenderingDevice_method_texture_get_data_async>`.
 
-\ **Note:** This property's upper limit is controlled by :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` and whether it's possible to allocate a single block of texture data with this region size in the format that is requested.
+\ **Nota:** El límite superior de esta propiedad está controlado por :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` y si es posible asignar un solo bloque de datos de textura con este tamaño de región en el formato solicitado.
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Actualmente no hay forma de cambiar este valor en tiempo de ejecución.
 
 .. rst-class:: classref-item-separator
 
@@ -13299,11 +13313,11 @@ The region size in pixels used to download texture data from the GPU when using 
 
 :ref:`int<class_int>` **rendering/rendering_device/staging_buffer/texture_upload_region_size_px** = ``64`` :ref:`🔗<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/texture_upload_region_size_px>`
 
-The region size in pixels used to upload texture data from the GPU when using methods like :ref:`RenderingDevice.texture_update()<class_RenderingDevice_method_texture_update>`.
+El tamaño de la región en píxeles utilizada para cargar datos de textura a la GPU al usar métodos como :ref:`RenderingDevice.texture_update()<class_RenderingDevice_method_texture_update>`.
 
-\ **Note:** This property's upper limit is controlled by :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` and whether it's possible to allocate a single block of texture data with this region size in the format that is requested.
+\ **Nota:** El límite superior de esta propiedad está controlado por :ref:`rendering/rendering_device/staging_buffer/block_size_kb<class_ProjectSettings_property_rendering/rendering_device/staging_buffer/block_size_kb>` y si es posible asignar un solo bloque de datos de textura con este tamaño de región en el formato solicitado.
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this value at run-time.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Actualmente no hay forma de cambiar este valor en tiempo de ejecución.
 
 .. rst-class:: classref-item-separator
 
@@ -13447,7 +13461,7 @@ Scales the 3D render buffer based on the viewport size uses an image filter spec
 
 :ref:`bool<class_bool>` **rendering/shader_compiler/shader_cache/enabled** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/shader_compiler/shader_cache/enabled>`
 
-Enable the shader cache, which stores compiled shaders to disk to prevent stuttering from shader compilation the next time the shader is needed.
+Habilita la caché de shaders, que almacena los shaders compilados en el disco para evitar tartamudeos por la compilación de shaders la próxima vez que se necesite el shader.
 
 .. rst-class:: classref-item-separator
 
@@ -13513,7 +13527,7 @@ Si es ``true``, utiliza un modelo de iluminación de material Lambert más rápi
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_lambert_over_burley.mobile** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley.mobile>`
 
-Lower-end override for :ref:`rendering/shading/overrides/force_lambert_over_burley<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>` on mobile devices, due to performance concerns or driver support.
+Sobrescritura para gama baja de :ref:`rendering/shading/overrides/force_lambert_over_burley<class_ProjectSettings_property_rendering/shading/overrides/force_lambert_over_burley>` en dispositivos móviles, debido a problemas de rendimiento o compatibilidad con el controlador.
 
 .. rst-class:: classref-item-separator
 
@@ -13525,7 +13539,7 @@ Lower-end override for :ref:`rendering/shading/overrides/force_lambert_over_burl
 
 :ref:`bool<class_bool>` **rendering/shading/overrides/force_vertex_shading** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/shading/overrides/force_vertex_shading>`
 
-If ``true``, forces vertex shading for all rendering. This can increase performance a lot, but also reduces quality immensely. Can be used to optimize performance on low-end mobile devices.
+Si es ``true``, fuerza el sombreado de vértices para todo el renderizado. Esto puede aumentar mucho el rendimiento, pero también reduce inmensamente la calidad. Puede usarse para optimizar el rendimiento en dispositivos móviles de gama baja.
 
 .. rst-class:: classref-item-separator
 
@@ -13549,9 +13563,9 @@ The dictionary size for Rate-Distortion Optimization (RDO) when importing textur
 
 :ref:`bool<class_bool>` **rendering/textures/basis_universal/zstd_supercompression** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/basis_universal/zstd_supercompression>`
 
-If ``true``, enables Zstandard supercompression to reduce file size when importing textures as Basis Universal.
+Si es ``true``, habilita la supercompresión Zstandard para reducir el tamaño del archivo al importar texturas como Basis Universal.
 
-\ **Note:** Basis Universal textures need to be compressed to gain the benefit of smaller file sizes, otherwise they are as large as VRAM-compressed textures.
+\ **Nota:** Las texturas Basis Universal deben ser comprimidas para obtener el beneficio de tamaños de archivo más pequeños; de lo contrario, son tan grandes como las texturas comprimidas en VRAM.
 
 .. rst-class:: classref-item-separator
 
@@ -13575,9 +13589,9 @@ Specify the compression level for Basis Universal Zstandard supercompression, ra
 
 :ref:`int<class_int>` **rendering/textures/canvas_textures/default_texture_filter** = ``1`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/canvas_textures/default_texture_filter>`
 
-The default texture filtering mode to use for :ref:`CanvasItem<class_CanvasItem>`\ s built-in texture. In shaders, this texture is accessed as ``TEXTURE``.
+El modo de filtrado de textura predeterminado a utilizar para la textura incorporada de los :ref:`CanvasItem<class_CanvasItem>`\ s. En los shaders, esta textura se accede como ``TEXTURE``.
 
-\ **Note:** For pixel art aesthetics, see also :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` and :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`.
+\ **Nota:** Para una estética de pixel art, consulta también :ref:`rendering/2d/snap/snap_2d_vertices_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_vertices_to_pixel>` y :ref:`rendering/2d/snap/snap_2d_transforms_to_pixel<class_ProjectSettings_property_rendering/2d/snap/snap_2d_transforms_to_pixel>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13589,7 +13603,7 @@ The default texture filtering mode to use for :ref:`CanvasItem<class_CanvasItem>
 
 :ref:`int<class_int>` **rendering/textures/canvas_textures/default_texture_repeat** = ``0`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/canvas_textures/default_texture_repeat>`
 
-The default texture repeating mode to use for :ref:`CanvasItem<class_CanvasItem>`\ s built-in texture. In shaders, this texture is accessed as ``TEXTURE``.
+El modo de repetición de textura predeterminado a utilizar para la textura incorporada de los :ref:`CanvasItem<class_CanvasItem>`\ s. En los shaders, esta textura se accede como ``TEXTURE``.
 
 .. rst-class:: classref-item-separator
 
@@ -13601,7 +13615,7 @@ The default texture repeating mode to use for :ref:`CanvasItem<class_CanvasItem>
 
 :ref:`int<class_int>` **rendering/textures/decals/filter** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/decals/filter>`
 
-The filtering quality to use for :ref:`Decal<class_Decal>` nodes. When using one of the anisotropic filtering modes, the anisotropic filtering level is controlled by :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+La calidad de filtrado a utilizar para los nodos :ref:`Decal<class_Decal>`. Cuando se utiliza uno de los modos de filtrado anisotrópico, el nivel de filtrado anisotrópico se controla mediante :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13649,9 +13663,9 @@ Enabling temporal antialiasing (:ref:`rendering/anti_aliasing/quality/use_taa<cl
 
 :ref:`bool<class_bool>` **rendering/textures/default_filters/use_nearest_mipmap_filter** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/default_filters/use_nearest_mipmap_filter>`
 
-If ``true``, uses nearest-neighbor mipmap filtering when using mipmaps (also called "bilinear filtering"), which will result in visible seams appearing between mipmap stages. This may increase performance in mobile as less memory bandwidth is used. If ``false``, linear mipmap filtering (also called "trilinear filtering") is used.
+Si es ``true``, utiliza el filtrado de mipmaps más cercano cuando utiliza mipmaps (también llamado "filtrado bilineal"), lo que dará lugar a la aparición de vetas visibles entre las etapas del mipmap. Esto puede aumentar el rendimiento en el móvil, ya que se utiliza menos ancho de banda de memoria. Si es ``false``, se utiliza el filtrado lineal de mipmaps (también llamado "filtrado trilíneo").
 
-\ **Note:** This property is only read when the project starts. There is currently no way to change this setting at run-time.
+\ **Nota:** Esta propiedad solo se lee cuando se inicia el proyecto. Actualmente no hay forma de cambiar esta configuración en tiempo de ejecución.
 
 .. rst-class:: classref-item-separator
 
@@ -13663,7 +13677,7 @@ If ``true``, uses nearest-neighbor mipmap filtering when using mipmaps (also cal
 
 :ref:`int<class_int>` **rendering/textures/light_projectors/filter** = ``3`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/light_projectors/filter>`
 
-The filtering quality to use for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:`SpotLight3D<class_SpotLight3D>` projectors. When using one of the anisotropic filtering modes, the anisotropic filtering level is controlled by :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
+La calidad de filtro a usar para los proyectores :ref:`OmniLight3D<class_OmniLight3D>` y :ref:`SpotLight3D<class_SpotLight3D>`. Cuando se usa uno de los modos de filtrado anisotrópico, el nivel de filtrado anisotrópico es controlado por :ref:`rendering/textures/default_filters/anisotropic_filtering_level<class_ProjectSettings_property_rendering/textures/default_filters/anisotropic_filtering_level>`.
 
 .. rst-class:: classref-item-separator
 
@@ -13675,7 +13689,7 @@ The filtering quality to use for :ref:`OmniLight3D<class_OmniLight3D>` and :ref:
 
 :ref:`bool<class_bool>` **rendering/textures/lossless_compression/force_png** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/lossless_compression/force_png>`
 
-If ``true``, the texture importer will import lossless textures using the PNG format. Otherwise, it will default to using WebP.
+Si es ``true``, el importador de texturas importará texturas sin pérdidas usando el formato PNG. De lo contrario, usará WebP por defecto.
 
 .. rst-class:: classref-item-separator
 
@@ -13687,7 +13701,7 @@ If ``true``, the texture importer will import lossless textures using the PNG fo
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/cache_gpu_compressor** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/cache_gpu_compressor>`
 
-If ``true``, the GPU texture compressor will cache the local RenderingDevice and its resources (shaders and pipelines), making subsequent imports faster at the cost of increased memory usage.
+Si es ``true``, el compresor de texturas de la GPU almacenará en caché el RenderingDevice local y sus recursos (shaders y pipelines), haciendo que las importaciones subsiguientes sean más rápidas a costa de un mayor uso de memoria.
 
 .. rst-class:: classref-item-separator
 
@@ -13699,11 +13713,11 @@ If ``true``, the GPU texture compressor will cache the local RenderingDevice and
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/compress_with_gpu** = ``true`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/compress_with_gpu>`
 
-If ``true``, the texture importer will utilize the GPU for compressing textures, improving the import time of large images.
+Si es ``true``, el importador de texturas utilizará la GPU para comprimir texturas, mejorando el tiempo de importación de imágenes grandes.
 
-\ **Note:** This only functions on a device which supports either Vulkan, Direct3D 12, or Metal as a rendering driver.
+\ **Nota:** Esto solo funciona en un dispositivo que admita Vulkan, Direct3D 12 o Metal como controlador de renderizado.
 
-\ **Note:** Currently this only affects certain compressed formats (BC1, BC3, BC4, BC5, and BC6), all of which are exclusive to desktop platforms and consoles.
+\ **Nota:** Actualmente esto solo afecta a ciertos formatos comprimidos (BC1, BC3, BC4, BC5 y BC6), todos ellos exclusivos de plataformas de escritorio y consolas.
 
 .. rst-class:: classref-item-separator
 
@@ -13731,11 +13745,11 @@ If ``true``, the texture importer will import VRAM-compressed textures using the
 
 :ref:`bool<class_bool>` **rendering/textures/vram_compression/import_s3tc_bptc** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/vram_compression/import_s3tc_bptc>`
 
-If ``true``, the texture importer will import VRAM-compressed textures using the S3 Texture Compression algorithm (DXT1-5) for lower quality textures and the BPTC algorithm (BC6H and BC7) for high quality textures. This algorithm is only supported on PC desktop platforms and consoles.
+Si es ``true``, el importador de texturas importará texturas comprimidas con VRAM utilizando el algoritmo S3 Texture Compression (DXT1-5) para texturas de menor calidad y el algoritmo BPTC (BC6H y BC7) para texturas de alta calidad. Este algoritmo solo es compatible con plataformas de escritorio PC y consolas.
 
-\ **Note:** This setting is an override. The texture importer will always import the format the host platform needs, even if this is set to ``false``.
+\ **Nota:** Esta configuración es una sobrescritura. El importador de texturas siempre importará el formato que la plataforma anfitriona necesite, incluso si esto se establece en ``false``.
 
-\ **Note:** Changing this setting does *not* impact textures that were already imported before. To make this setting apply to textures that were already imported, exit the editor, remove the ``.godot/imported/`` folder located inside the project folder then restart the editor (see :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
+\ **Nota:** Cambiar esta configuración *no* afecta a las texturas que ya fueron importadas anteriormente. Para que esta configuración se aplique a las texturas ya importadas, sal del editor, elimina la carpeta ``.godot/imported/`` ubicada dentro de la carpeta del proyecto y luego reinicia el editor (ver :ref:`application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
 
 .. rst-class:: classref-item-separator
 
@@ -13747,7 +13761,7 @@ If ``true``, the texture importer will import VRAM-compressed textures using the
 
 :ref:`int<class_int>` **rendering/textures/webp_compression/compression_method** = ``2`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/webp_compression/compression_method>`
 
-The default compression method for WebP. Affects both lossy and lossless WebP. A higher value results in smaller files at the cost of compression speed. Decompression speed is mostly unaffected by the compression method. Supported values are 0 to 6. Note that compression methods above 4 are very slow and offer very little savings.
+El método de compresión predeterminado para WebP. Afecta tanto a WebP con pérdida como sin pérdida. Un valor más alto resulta en archivos más pequeños a costa de la velocidad de compresión. La velocidad de descompresión no se ve afectada en su mayor parte por el método de compresión. Los valores admitidos son de 0 a 6. Ten en cuenta que los métodos de compresión superiores a 4 son muy lentos y ofrecen muy pocos ahorros.
 
 .. rst-class:: classref-item-separator
 
@@ -13759,7 +13773,7 @@ The default compression method for WebP. Affects both lossy and lossless WebP. A
 
 :ref:`float<class_float>` **rendering/textures/webp_compression/lossless_compression_factor** = ``25`` :ref:`🔗<class_ProjectSettings_property_rendering/textures/webp_compression/lossless_compression_factor>`
 
-The default compression factor for lossless WebP. Decompression speed is mostly unaffected by the compression factor. Supported values are 0 to 100.
+El factor de compresión predeterminado para WebP sin pérdida. La velocidad de descompresión no se ve afectada en su mayor parte por el factor de compresión. Los valores admitidos son de 0 a 100.
 
 .. rst-class:: classref-item-separator
 
@@ -13771,11 +13785,11 @@ The default compression factor for lossless WebP. Decompression speed is mostly 
 
 :ref:`bool<class_bool>` **rendering/viewport/hdr_2d** = ``false`` :ref:`🔗<class_ProjectSettings_property_rendering/viewport/hdr_2d>`
 
-If ``true``, enables :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root Viewport. 2D rendering will use a high dynamic range (HDR) ``RGBA16`` format framebuffer. Additionally, 2D rendering will be performed on linear values and will be converted using the appropriate transfer function immediately before blitting to the screen.
+Si es ``true``, habilita :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` en el Viewport raíz. El renderizado 2D usará un framebuffer de formato de alto rango dinámico (HDR) ``RGBA16``. Además, el renderizado 2D se realizará con valores lineales y se convertirá usando la función de transferencia apropiada inmediatamente antes de blittear a la pantalla.
 
-Practically speaking, this means that the end result of the Viewport will not be clamped to the ``0-1`` range and can be used in 3D rendering without color encoding adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+Prácticamente, esto significa que el resultado final del Viewport no se limitará al rango ``0-1`` y podrá usarse en el renderizado 3D sin ajustes de codificación de color. Esto permite que el renderizado 2D aproveche los efectos que requieren alto rango dinámico (por ejemplo, el brillo 2D) y mejora sustancialmente la apariencia de los efectos que requieren gradientes muy detallados.
 
-\ **Note:** This property is only read when the project starts. To toggle HDR 2D at runtime, set :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` on the root :ref:`Viewport<class_Viewport>`.
+\ **Nota:** Esta propiedad solo se lee cuando el proyecto se inicia. Para alternar HDR 2D en tiempo de ejecución, establece :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` en el :ref:`Viewport<class_Viewport>` raíz.
 
 .. rst-class:: classref-item-separator
 
@@ -13838,7 +13852,7 @@ The texture *must* use a lossless compression format so that colors can be match
 
 :ref:`float<class_float>` **threading/worker_pool/low_priority_thread_ratio** = ``0.3`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/low_priority_thread_ratio>`
 
-The ratio of :ref:`WorkerThreadPool<class_WorkerThreadPool>`'s threads that will be reserved for low-priority tasks. For example, if 10 threads are available and this value is set to ``0.3``, 3 of the worker threads will be reserved for low-priority tasks. The actual value won't exceed the number of CPU cores minus one, and if possible, at least one worker thread will be dedicated to low-priority tasks.
+La proporción de hilos de :ref:`WorkerThreadPool<class_WorkerThreadPool>` que se reservarán para tareas de baja prioridad. Por ejemplo, si hay 10 hilos disponibles y este valor se establece en ``0.3``, 3 de los hilos de trabajo se reservarán para tareas de baja prioridad. El valor real no excederá el número de núcleos de CPU menos uno, y si es posible, al menos un hilo de trabajo se dedicará a tareas de baja prioridad.
 
 .. rst-class:: classref-item-separator
 
@@ -13850,7 +13864,7 @@ The ratio of :ref:`WorkerThreadPool<class_WorkerThreadPool>`'s threads that will
 
 :ref:`int<class_int>` **threading/worker_pool/max_threads** = ``-1`` :ref:`🔗<class_ProjectSettings_property_threading/worker_pool/max_threads>`
 
-Maximum number of threads to be used by :ref:`WorkerThreadPool<class_WorkerThreadPool>`. On Web, a value of ``-1`` means ``1``. On other platforms, it means all *logical* CPU cores available (see :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
+Número máximo de hilos a ser usados por :ref:`WorkerThreadPool<class_WorkerThreadPool>`. Un valor de ``-1`` significa ``1`` en la Web, o el número de núcleos de CPU *lógicos* disponibles en otras plataformas (véase :ref:`OS.get_processor_count()<class_OS_method_get_processor_count>`).
 
 .. rst-class:: classref-item-separator
 
@@ -13984,9 +13998,9 @@ Si es ``true``, la extensión del perfil de interacción de mano se activará si
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>`
 
-If ``true``, the hand tracking extension is enabled if available.
+Si es ``true``, la extensión de seguimiento de manos se habilita si está disponible.
 
-\ **Note:** By default hand tracking will only work for data sources chosen by the XR runtime. For SteamVR this is the controller inferred data source, for most other runtimes this is the unobstructed data source. There is no way to query this. If a runtime supports the OpenXR data source extension you can use the :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` and/or :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` to indicate you wish to enable these data sources. If neither is selected the data source extension is not enabled and the XR runtimes default behavior persists.
+\ **Nota:** Por defecto, el seguimiento de manos solo funcionará para las fuentes de datos elegidas por el tiempo de ejecución de XR. Para SteamVR, esta es la fuente de datos inferida del controlador; para la mayoría de los demás tiempos de ejecución, esta es la fuente de datos sin obstrucciones. No hay forma de consultar esto. Si un tiempo de ejecución soporta la extensión de fuente de datos de OpenXR, puedes usar :ref:`xr/openxr/extensions/hand_tracking_controller_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>` y/o :ref:`xr/openxr/extensions/hand_tracking_unobstructed_data_source<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>` para indicar que deseas habilitar estas fuentes de datos. Si no se selecciona ninguna, la extensión de fuente de datos no se habilita y persiste el comportamiento predeterminado del tiempo de ejecución de XR.
 
 .. rst-class:: classref-item-separator
 
@@ -13998,9 +14012,9 @@ If ``true``, the hand tracking extension is enabled if available.
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_controller_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_controller_data_source>`
 
-If ``true``, support for the controller inferred data source is requested. If supported, you will receive hand tracking data even if the user has a controller in hand, with finger positions automatically inferred from controller input and/or sensors.
+Si es ``true``, se solicita soporte para la fuente de datos inferida por el controlador. Si es compatible, recibirás datos de seguimiento de manos incluso si el usuario tiene un controlador en la mano, con las posiciones de los dedos inferidas automáticamente a partir de la entrada del controlador y/o los sensores.
 
-\ **Note:** This requires the OpenXR data source extension and controller inferred handtracking to be supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` must be enabled for this setting to be used.
+\ **Nota:** Esto requiere que la extensión de fuente de datos de OpenXR y el seguimiento de manos inferido por el controlador sean compatibles con el runtime de XR. Si no es compatible, esta configuración será ignorada. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` debe estar habilitado para que esta configuración se utilice.
 
 .. rst-class:: classref-item-separator
 
@@ -14012,9 +14026,9 @@ If ``true``, support for the controller inferred data source is requested. If su
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/hand_tracking_unobstructed_data_source** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking_unobstructed_data_source>`
 
-If ``true``, support for the unobstructed data source is requested. If supported, you will receive hand tracking data based on the actual finger positions of the user often determined by optical tracking.
+Si es ``true``, se solicita soporte para la fuente de datos sin obstáculos. Si es compatible, recibirás datos de seguimiento de manos basados en las posiciones reales de los dedos del usuario, a menudo determinadas por seguimiento óptico.
 
-\ **Note:** This requires the OpenXR data source extension and unobstructed handtracking to be supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` must be enabled for this setting to be used.
+\ **Nota:** Esto requiere que la extensión de fuente de datos de OpenXR y el seguimiento de manos sin obstáculos sean compatibles con el runtime de XR. Si no es compatible, esta configuración será ignorada. :ref:`xr/openxr/extensions/hand_tracking<class_ProjectSettings_property_xr/openxr/extensions/hand_tracking>` debe estar habilitado para que esta configuración se utilice.
 
 .. rst-class:: classref-item-separator
 
@@ -14026,9 +14040,9 @@ If ``true``, support for the unobstructed data source is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/render_model** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/render_model>`
 
-If ``true`` we enable the render model extension if available.
+Si es ``true`` habilitamos la extensión de modelo de renderizado si está disponible.
 
-\ **Note:** This relates to the core OpenXR render model extension and has no relation to any vendor render model extensions.
+\ **Nota:** Esto se relaciona con la extensión central de modelo de renderizado de OpenXR y no tiene relación con ninguna extensión de modelo de renderizado de proveedores.
 
 .. rst-class:: classref-item-separator
 
@@ -14040,7 +14054,7 @@ If ``true`` we enable the render model extension if available.
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/april_tag_dict** = ``"3"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/april_tag_dict>`
 
-The April Tag marker types the built-in marker tracking is set to recognize (if April Tag marker tracking is available and enabled).
+Los tipos de marcadores AprilTag que el seguimiento de marcadores integrado está configurado para reconocer (si el seguimiento de marcadores April Tag está disponible y habilitado).
 
 .. rst-class:: classref-item-separator
 
@@ -14052,7 +14066,7 @@ The April Tag marker types the built-in marker tracking is set to recognize (if 
 
 :ref:`int<class_int>` **xr/openxr/extensions/spatial_entity/aruco_dict** = ``"15"`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/aruco_dict>`
 
-The ArUco marker types the built-in marker tracking is set to recognize (if ArUco marker tracking is available and enabled).
+Los tipos de marcadores ArUco que el seguimiento de marcadores integrado está configurado para reconocer (si el seguimiento de marcadores ArUco está disponible y habilitado).
 
 .. rst-class:: classref-item-separator
 
@@ -14064,9 +14078,9 @@ The ArUco marker types the built-in marker tracking is set to recognize (if ArUc
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_anchor_detection>`
 
-If ``true``, we enable the built-in logic for handling anchors. Godot will query (persistent) anchors and manage :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` instances for you. If disabled you'll need to create your own spatial and persistence context and perform your own discovery queries.
+Si es ``true``, habilitamos la lógica integrada para manejar anclajes. Godot consultará los anclajes (persistentes) y gestionará las instancias de :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>` por ti. Si está deshabilitado, deberás crear tu propio contexto espacial y de persistencia, y realizar tus propias consultas de descubrimiento.
 
-\ **Note:** This functionality requires that spatial anchors are supported and enabled.
+\ **Nota:** Esta funcionalidad requiere que los anclajes espaciales sean compatibles y estén habilitados.
 
 .. rst-class:: classref-item-separator
 
@@ -14078,9 +14092,9 @@ If ``true``, we enable the built-in logic for handling anchors. Godot will query
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_marker_tracking>`
 
-If ``true``, we enable the built-in logic for handling marker tracking. Godot will query markers and manage :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+Si es ``true``, habilitamos la lógica integrada para manejar el seguimiento de marcadores. Godot consultará los marcadores y gestionará las instancias de :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>` por ti. Si está deshabilitado, deberás crear tu propio contexto espacial y realizar tus propias consultas de descubrimiento.
 
-\ **Note:** This functionality requires that marker tracking is supported and enabled.
+\ **Nota:** Esta funcionalidad requiere que el seguimiento de marcadores sea compatible y esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -14092,9 +14106,9 @@ If ``true``, we enable the built-in logic for handling marker tracking. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_builtin_plane_detection>`
 
-If ``true``, we enable the built-in logic for handling plane detection. Godot will query detected planes (walls, floors, ceilings, etc.) and manage :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` instances for you. If disabled you'll need to create your own spatial context and perform your own discovery queries.
+Si es ``true``, habilitamos la lógica integrada para manejar la detección de planos. Godot consultará los planos detectados (paredes, suelos, techos, etc.) y gestionará las instancias de :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>` por ti. Si está deshabilitado, deberás crear tu propio contexto espacial y realizar tus propias consultas de descubrimiento.
 
-\ **Note:** This functionality requires that plane tracking is supported and enabled.
+\ **Nota:** Esta funcionalidad requiere que el seguimiento de planos sea compatible y esté habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -14106,9 +14120,9 @@ If ``true``, we enable the built-in logic for handling plane detection. Godot wi
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_marker_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_marker_tracking>`
 
-If ``true``, support for the marker tracking extension is requested. If supported, you will be able to query information about markers detected by the XR runtime, e.g. QR codes, aruca markers and april tags.
+Si es ``true``, se solicita soporte para la extensión de seguimiento de marcadores. Si es compatible, podrás consultar información sobre los marcadores detectados por el tiempo de ejecución de XR, por ejemplo, códigos QR, marcadores ArUco y AprilTags.
 
-\ **Note:** This requires that the OpenXR spatial entities and marker tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Nota:** Esto requiere que las entidades espaciales de OpenXR y las extensiones de seguimiento de marcadores sean compatibles con el tiempo de ejecución de XR. Si no son compatibles, esta configuración será ignorada. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` debe estar habilitado para que se utilice esta configuración.
 
 .. rst-class:: classref-item-separator
 
@@ -14120,9 +14134,9 @@ If ``true``, support for the marker tracking extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_persistent_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_persistent_anchors>`
 
-If ``true``, support for the persistent anchors extension is requested. If supported, you will be able to store spatial anchors and they will be restored on application startup.
+Si es ``true``, se solicita soporte para la extensión de anclajes persistentes. Si es compatible, podrás almacenar anclajes espaciales y se restaurarán al iniciar la aplicación.
 
-\ **Note:** This requires that the OpenXR spatial entities, spatial anchors, and spatial persistence extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` and :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` must be enabled for this setting to be used.
+\ **Nota:** Esto requiere que las entidades espaciales de OpenXR, los anclajes espaciales y las extensiones de persistencia espacial sean compatibles con el tiempo de ejecución de XR. Si no son compatibles, esta configuración será ignorada. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` y :ref:`xr/openxr/extensions/spatial_entity/enable_spatial_anchors<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>` deben estar habilitados para que se utilice esta configuración.
 
 .. rst-class:: classref-item-separator
 
@@ -14134,9 +14148,9 @@ If ``true``, support for the persistent anchors extension is requested. If suppo
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_plane_tracking** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_plane_tracking>`
 
-If ``true``, support for the plane tracking extension is requested. If supported, you will be able to query information about planes detected by the XR runtime, e.g. walls, floors, etc.
+Si es ``true``, se solicita soporte para la extensión de seguimiento de planos. Si es compatible, podrás consultar información sobre los planos detectados por el tiempo de ejecución de XR, por ejemplo, paredes, suelos, etc.
 
-\ **Note:** This requires that the OpenXR spatial entities and plane tracking extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Nota:** Esto requiere que las entidades espaciales de OpenXR y las extensiones de seguimiento de planos sean compatibles con el tiempo de ejecución de XR. Si no son compatibles, esta configuración será ignorada. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` debe estar habilitado para que se utilice esta configuración.
 
 .. rst-class:: classref-item-separator
 
@@ -14148,9 +14162,9 @@ If ``true``, support for the plane tracking extension is requested. If supported
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enable_spatial_anchors** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enable_spatial_anchors>`
 
-If ``true``, support for the spatial anchors extension is requested. If supported, you will be able to register anchor locations in the real world that the XR runtime will adjust as needed and/or potentially share with other headsets.
+Si es ``true``, se solicita soporte para la extensión de anclajes espaciales. Si es compatible, podrás registrar ubicaciones de anclaje en el mundo real que el tiempo de ejecución de XR ajustará según sea necesario y/o potencialmente compartirá con otros auriculares.
 
-\ **Note:** This requires that the OpenXR spatial entities and spatial anchors extensions are supported by the XR runtime. If not supported this setting will be ignored. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` must be enabled for this setting to be used.
+\ **Nota:** Esto requiere que las extensiones de entidades espaciales y anclajes espaciales de OpenXR sean compatibles con el tiempo de ejecución de XR. Si no es compatible, esta configuración se ignorará. :ref:`xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` debe estar habilitado para que se utilice esta configuración.
 
 .. rst-class:: classref-item-separator
 
@@ -14162,9 +14176,9 @@ If ``true``, support for the spatial anchors extension is requested. If supporte
 
 :ref:`bool<class_bool>` **xr/openxr/extensions/spatial_entity/enabled** = ``false`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>`
 
-If ``true``, support for the spatial entity extension is requested. If supported, you will be able to access spatial information about the real environment around you. What information is available is dependent on additional extensions.
+Si es ``true``, se solicita soporte para la extensión de entidad espacial. Si es compatible, podrás acceder a información espacial sobre el entorno real que te rodea. La información disponible depende de extensiones adicionales.
 
-\ **Note:** This requires that the OpenXR spatial entities extension is supported by the XR runtime. If not supported this setting will be ignored.
+\ **Nota:** Esto requiere que la extensión de entidades espaciales de OpenXR sea compatible con el tiempo de ejecución de XR. Si no es compatible, esta configuración se ignorará.
 
 .. rst-class:: classref-item-separator
 
@@ -14250,7 +14264,7 @@ Si es ``true``, OpenXR gestionará el búfer de profundidad y lo usará para la 
 
 :ref:`String<class_String>` **xr/openxr/target_api_version** = ``""`` :ref:`🔗<class_ProjectSettings_property_xr/openxr/target_api_version>`
 
-Optionally sets a specific API version of OpenXR to initialize in ``major.minor.patch`` notation. Some XR runtimes gate old behavior behind version checks. This is non-standard OpenXR behavior.
+Establece opcionalmente una versión específica de la API de OpenXR para inicializar en notación ``major.minor.patch``. Algunos runtimes XR restringen el comportamiento antiguo detrás de comprobaciones de versión. Esto es un comportamiento no estándar de OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -14291,13 +14305,13 @@ Descripciones de Métodos
 
 |void| **add_property_info**\ (\ hint\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_ProjectSettings_method_add_property_info>`
 
-Adds a custom property info to a property. The dictionary must contain:
+Añade información personalizada de propiedad a una propiedad. El diccionario debe contener:
 
-- ``"name"``: :ref:`String<class_String>` (the property's name)
+- ``"name"``: :ref:`String<class_String>` (el nombre de la propiedad)
 
-- ``"type"``: :ref:`int<class_int>` (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`)
+- ``"type"``: :ref:`int<class_int>` (véase :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`)
 
-- optionally ``"hint"``: :ref:`int<class_int>` (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`) and ``"hint_string"``: :ref:`String<class_String>`\ 
+- opcionalmente, ``"hint"``: :ref:`int<class_int>` (véase :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`) y ``"hint_string"``: :ref:`String<class_String>`\ 
 
 
 .. tabs::
@@ -14331,7 +14345,7 @@ Adds a custom property info to a property. The dictionary must contain:
 
 
 
-\ **Note:** Setting ``"usage"`` for the property is not supported. Use :ref:`set_as_basic()<class_ProjectSettings_method_set_as_basic>`, :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>`, and :ref:`set_as_internal()<class_ProjectSettings_method_set_as_internal>` to modify usage flags.
+\ **Nota:** No se soporta la configuración de ``"usage"`` para la propiedad. Utilice :ref:`set_as_basic()<class_ProjectSettings_method_set_as_basic>`, :ref:`set_restart_if_changed()<class_ProjectSettings_method_set_restart_if_changed>` y :ref:`set_as_internal()<class_ProjectSettings_method_set_as_internal>` para modificar las banderas de uso.
 
 .. rst-class:: classref-item-separator
 
@@ -14367,7 +14381,7 @@ Despeja toda la configuración (no recomendado, puede romper cosas).
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_changed_settings**\ (\ ) |const| :ref:`🔗<class_ProjectSettings_method_get_changed_settings>`
 
-Gets an array of the settings which have been changed since the last save. Note that internally ``changed_settings`` is cleared after a successful save, so generally the most appropriate place to use this method is when processing :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
+Obtiene un array de los ajustes que han sido modificados desde el último guardado. Ten en cuenta que, internamente, ``changed_settings`` se limpia tras un guardado exitoso, por lo que generalmente el lugar más apropiado para usar este método es al procesar la señal :ref:`settings_changed<class_ProjectSettings_signal_settings_changed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -14660,7 +14674,7 @@ Sets whether a setting requires restarting the editor to properly take effect.
 
 |void| **set_setting**\ (\ name\: :ref:`String<class_String>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_ProjectSettings_method_set_setting>`
 
-Sets the value of a setting.
+Establece el valor de una configuración.
 
 
 .. tabs::
@@ -14675,7 +14689,7 @@ Sets the value of a setting.
 
 
 
-This can also be used to erase custom project settings. To do this change the setting value to ``null``.
+También se puede utilizar para borrar configuraciones personalizadas del proyecto. Para hacerlo, cambia el valor de la configuración a ``null``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

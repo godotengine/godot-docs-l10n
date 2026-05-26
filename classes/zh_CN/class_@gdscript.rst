@@ -864,9 +864,9 @@
 
 将后续方法标记为远程过程调用。见\ :doc:`《高阶多人游戏》 <../tutorials/networking/high_level_multiplayer>`\ 。
 
-如果将 ``mode`` 设为 ``"any_peer"``\ ，则会允许所有对等体调用该 RPC 函数。若只允许该对等体的控制方调用，则应该将 ``mode`` 保持为 ``"authority"``\ 。使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，这些模式分别对应的是 RPC 模式 :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` 和 :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` 。见 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`\ 。如果非控制方的对等体尝试调用仅限控制方调用的函数，则不会执行该函数。此时如果本地能够检测到错误（即本地与远程对等体的 RPC 配置一致），则发送方对等体会显示错误消息。否则远程对等体会检测到错误并在远程一侧输出。
+如果将 ``mode`` 设为 ``"any_peer"``\ ，则会允许所有对等端调用该 RPC 函数。若只允许该对等端的控制方调用，则应该将 ``mode`` 保持为 ``"authority"``\ 。使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，这些模式分别对应的是 RPC 模式 :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` 和 :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` 。见 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`\ 。如果非控制方的对等端尝试调用仅限控制方调用的函数，则不会执行该函数。此时如果本地能够检测到错误（即本地与远程对等端的 RPC 配置一致），则发送方对等端会显示错误消息。否则远程对等端会检测到错误并在远程一侧输出。
 
-如果将 ``sync`` 提示设为 ``"call_remote"``\ ，则该函数只会在远程对等体上执行，不会在本地执行。要让这个函数同时也在本地执行，请将 ``sync`` 设置为 ``"call_local"``\ 。这等价于在使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，将 ``call_local`` 设置为 ``true``\ 。
+如果将 ``sync`` 提示设为 ``"call_remote"``\ ，则该函数只会在远程对等端上执行，不会在本地执行。要让这个函数同时也在本地执行，请将 ``sync`` 设置为 ``"call_local"``\ 。这等价于在使用 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 将函数配置为 RPC 时，将 ``call_local`` 设置为 ``true``\ 。
 
 \ ``transfer_mode`` 接受的值有 ``"unreliable"``\ 、\ ``"unreliable_ordered"``\ 、\ ``"reliable"``\ 。该参数设置底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的传输模式。见 :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`\ 。
 
@@ -882,7 +882,7 @@
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
 
-    @rpc("authority", "call_remote", "unreliable", 0) # 等价于 @rpc
+    @rpc("authority", "call_remote", "reliable", 0) # 等价于 @rpc
     func fn_default(): pass
 
 \ **注意：**\ 使用 :ref:`@rpc<class_@GDScript_annotation_@rpc>` 注解的方法无法接收在 :ref:`Object._init()<class_Object_private_method__init>` 中定义了必要参数的对象。详情请参阅 :ref:`Object._init()<class_Object_private_method__init>`\ 。
@@ -954,7 +954,7 @@
 
 **@warning_ignore_restore**\ (\ warning\: :ref:`String<class_String>`, ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@warning_ignore_restore>`
 
-停止忽略列在 :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` 注解后面的警告，对特定警告的忽略将重置为项目设置中的默认配置。该注解可省略，如此则会持续忽略指定警告类型直至文件末尾。
+停止忽略列出的警告类型，在注解 :ref:`@warning_ignore_start<class_@GDScript_annotation_@warning_ignore_start>` 后使用。停止忽略的警告将重置为项目设置中的配置。该注解可省略，省略时会持续忽略指定警告类型直至文件末尾。
 
 \ **注意：**\ 与大多数其他注解不同，注解 :ref:`@warning_ignore_restore<class_@GDScript_annotation_@warning_ignore_restore>` 的参数必须是字符串字面量（不支持常量表达式）。
 

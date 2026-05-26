@@ -7,16 +7,16 @@ BackBufferCopy
 
 **Hereda:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node that copies a region of the screen to a buffer for access in shader code.
+Un nodo que copia una región de la pantalla a un búfer para acceder a ella desde código de shader.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Node for back-buffering the currently-displayed screen. The region defined in the **BackBufferCopy** node is buffered with the content of the screen it covers, or the entire screen according to the :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>`. It can be accessed in shader scripts using the screen texture (i.e. a uniform sampler with ``hint_screen_texture``).
+Nodo para realizar un "back-buffering" de la pantalla que se muestra actualmente. La región definida en el nodo **BackBufferCopy** se almacena en un búfer con el contenido de la zona de la pantalla que cubre, o de toda la pantalla según el :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>`. Se puede acceder a este contenido en scripts de sombreado (shaders) utilizando la textura de pantalla (es decir, un uniform sampler con ``hint_screen_texture``).
 
-\ **Note:** Since this node inherits from :ref:`Node2D<class_Node2D>` (and not :ref:`Control<class_Control>`), anchors and margins won't apply to child :ref:`Control<class_Control>`-derived nodes. This can be problematic when resizing the window. To avoid this, add :ref:`Control<class_Control>`-derived nodes as *siblings* to the **BackBufferCopy** node instead of adding them as children.
+\ **Nota:** Dado que este nodo hereda de :ref:`Node2D<class_Node2D>` (y no de :ref:`Control<class_Control>`), las anclas (anchors) y márgenes no se aplicarán a los nodos hijos derivados de :ref:`Control<class_Control>`. Esto puede ser problemático al cambiar el tamaño de la ventana. Para evitarlo, añade los nodos derivados de :ref:`Control<class_Control>` como *hermanos* del nodo **BackBufferCopy** en lugar de añadirlos como hijos.
 
 .. rst-class:: classref-introduction-group
 

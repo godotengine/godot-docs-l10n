@@ -618,11 +618,11 @@ App Store 的应用程序分类。
 
 :ref:`String<class_String>` **application/liquid_glass_icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/liquid_glass_icon>`
 
-macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.apple.com/icon-composer/>`__ to create Liquid Glass icons.
+macOS 26 Liquid Glass 图标源文件。使用 `Icon Composer <https://developer.apple.com/icon-composer/>`__ 创建 Liquid Glass 图标。
 
-\ **Note:** Supported when exporting from macOS only, Xcode 26+ required.
+\ **注意：**\ 仅在从 macOS 导出时支持，需要 Xcode 26 或更高版本。
 
-\ **Note:** Liquid Glass icons are supported on macOS 26 only, use :ref:`application/icon<class_EditorExportPlatformMacOS_property_application/icon>` to set the icon for older macOS versions.
+\ **注意：**\ Liquid Glass 图标仅在 macOS 26 上受支持，请使用 :ref:`application/icon<class_EditorExportPlatformMacOS_property_application/icon>` 设置旧版 macOS 的图标。
 
 .. rst-class:: classref-item-separator
 

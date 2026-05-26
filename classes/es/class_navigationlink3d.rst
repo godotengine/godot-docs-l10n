@@ -114,7 +114,7 @@ Indica si este enlace puede ser recorrido en ambas direcciones o solo desde :ref
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Whether this link is currently active. If ``false``, :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>` will ignore this link.
+Está este enlace activo actualmente? Si es ``false``, :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>` ignorará este enlace.
 
 .. rst-class:: classref-item-separator
 
@@ -131,11 +131,11 @@ Whether this link is currently active. If ``false``, :ref:`NavigationServer3D.ma
 - |void| **set_end_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_end_position**\ (\ )
 
-Ending position of the link.
+Posición final del enlace.
 
-This position will search out the nearest polygon in the navigation mesh to attach to.
+Esta posición buscará el polígono más cercano en la malla de navegación para adjuntarse.
 
-The distance the link will search is controlled by :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
+La distancia que buscará el enlace está controlada por :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Cuando la búsqueda de trayectos entra en este enlace desde la malla de navegaci
 - |void| **set_navigation_layers**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_navigation_layers**\ (\ )
 
-A bitfield determining all navigation layers the link belongs to. These navigation layers will be checked when requesting a path with :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>`.
+Un campo de bits que determina todas las capas de navegación a las que pertenece el enlace. Estas capas de navegación se comprobarán al solicitar un trayecto con :ref:`NavigationServer3D.map_get_path()<class_NavigationServer3D_method_map_get_path>`.
 
 .. rst-class:: classref-item-separator
 
@@ -186,11 +186,11 @@ A bitfield determining all navigation layers the link belongs to. These navigati
 - |void| **set_start_position**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_start_position**\ (\ )
 
-Starting position of the link.
+Posición inicial del enlace.
 
-This position will search out the nearest polygon in the navigation mesh to attach to.
+Esta posición buscará el polígono más cercano en la malla de navegación para adjuntarse.
 
-The distance the link will search is controlled by :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
+La distancia que buscará el enlace está controlada por :ref:`NavigationServer3D.map_set_link_connection_radius()<class_NavigationServer3D_method_map_set_link_connection_radius>`.
 
 .. rst-class:: classref-item-separator
 

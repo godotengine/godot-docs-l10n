@@ -110,9 +110,9 @@ UV 布局由 4 个横条组成，从上到下依次为：正面占 40% 高度，
 - |void| **set_curve_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_curve_step**\ (\ )
 
-Step (in pixels) used to approximate Bézier curves. Lower values result in smoother curves, but is slower to generate and render. Consider adjusting this according to the font size and the typical viewing distance.
+用于近似贝塞尔曲线的步长（单位为像素）。值越小，曲线越平滑，但生成和渲染速度越慢。请根据字体大小和典型的观看距离进行调整。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts.
+\ **注意：**\ 更改该属性会重新生成网格，这是一个耗时的操作，尤其是在字体较大和文本较长时。
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ Step (in pixels) used to approximate Bézier curves. Lower values result in smoo
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-Font size of the **TextMesh**'s text. This property works in tandem with :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Higher values will result in a more detailed font, regardless of :ref:`curve_step<class_TextMesh_property_curve_step>` and :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Consider keeping this value below 63 (inclusive) for good performance, and adjust :ref:`pixel_size<class_TextMesh_property_pixel_size>` as needed to enlarge text.
+**TextMesh** 文本的字体大小。该属性与 :ref:`pixel_size<class_TextMesh_property_pixel_size>` 协同工作。无论 :ref:`curve_step<class_TextMesh_property_curve_step>` 和 :ref:`pixel_size<class_TextMesh_property_pixel_size>` 的值如何，更高的值都会产生更精细的字体。为了获得良好的性能，请考虑将该值保持在 63（含）以下，并根据需要调整 :ref:`pixel_size<class_TextMesh_property_pixel_size>` 以放大文本。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **注意：**\ 更改该属性会重新生成网格，这是一个耗时的操作，尤其是在字体较大且文本较长时。要高效地实时更改文本大小，请改为更改节点的 :ref:`Node3D.scale<class_Node3D_property_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Font size of the **TextMesh**'s text. This property works in tandem with :ref:`p
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用于断行和文本塑形算法的语言代码。如果留空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The text drawing offset (in pixels).
+文本绘制偏移量（单位为像素）。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation. To change the text's position in real-time efficiently, change the node's :ref:`Node3D.position<class_Node3D_property_position>` instead.
+\ **注意：**\ 更改该属性会重新生成网格，这是一个耗时的操作。要高效地实时更改文本位置，请改为更改节点的 :ref:`Node3D.position<class_Node3D_property_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -269,9 +269,9 @@ The text drawing offset (in pixels).
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-The size of one pixel's width on the text to scale it in 3D. This property works in tandem with :ref:`font_size<class_TextMesh_property_font_size>`.
+用于缩放文本在 3D 空间中单个像素宽度的大小。该属性与 :ref:`font_size<class_TextMesh_property_font_size>` 协同工作。
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **注意：**\ 更改该属性会重新生成网格，这是一个耗时的操作，尤其是在字体大小较大且文本较长时。要高效地实时更改文本大小，请改为更改节点的 :ref:`Node3D.scale<class_Node3D_property_scale>`\ 。
 
 .. rst-class:: classref-item-separator
 

@@ -14,9 +14,9 @@ Funzioni di Universal Plug and Play (UPnP) per il rilevamento dei dispositivi di
 Descrizione
 ----------------------
 
-Questa classe può essere utilizzata per individuare :ref:`UPNPDevice<class_UPNPDevice>` compatibili sulla rete locale ed eseguire comandi su di essi, come per gestire la mappatura delle porte (per inoltrare le porte/NAT traversal) e per richiedere l'indirizzo IP della rete locale e remota. Nota che i metodi su questa classe sono sincroni e bloccano il thread che li chiama.
+This class can be used to discover compatible :ref:`UPNPDevice<class_UPNPDevice>`\ s on the local network and execute commands on them, like managing port mappings (for port forwarding/NAT traversal) and querying the local and remote network IP address. Note that methods on this class are synchronous and block the calling thread.
 
-Per inoltrare una porta specifica (qui ``7777``, nota che sia :ref:`discover()<class_UPNP_method_discover>` sia :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` possono restituire errori che dovrebbero essere verificati):
+To forward a specific port (here ``7777``, note both :ref:`discover()<class_UPNP_method_discover>` and :ref:`add_port_mapping()<class_UPNP_method_add_port_mapping>` can return errors that should be checked):
 
 ::
 
@@ -24,61 +24,61 @@ Per inoltrare una porta specifica (qui ``7777``, nota che sia :ref:`discover()<c
     upnp.discover()
     upnp.add_port_mapping(7777)
 
-Per chiudere una porta specifica (ad esempio dopo aver finito di usarla):
+To close a specific port (e.g. after you have finished using it):
 
 ::
 
     upnp.delete_port_mapping(port)
 
-\ **Nota:** L'individuazione UPnP blocca il thread attuale. Per eseguire l'individuazione senza bloccare il thread principale, utilizza un :ref:`Thread<class_Thread>` in questo modo:
+\ **Note:** UPnP discovery blocks the current thread. To perform discovery without blocking the main thread, use :ref:`Thread<class_Thread>`\ s like this:
 
 ::
 
-    # Emesso quando la configurazione della mappatura delle porte UPnP viene completata (a prescindere dal successo o dal fallimento).
+    # Emitted when UPnP port mapping setup is completed (regardless of success or failure).
     signal upnp_completed(error)
 
-    # Sostituiscilo con il numero di porta del tuo server, tra 1024 e 65535.
+    # Replace this with your own server port number between 1024 and 65535.
     const SERVER_PORT = 3928
     var thread = null
 
     func _upnp_setup(server_port):
-        #Le richieste UPNP richiedono un po' di tempo.
+        # UPNP queries take some time.
         var upnp = UPNP.new()
         var err = upnp.discover()
 
-        if err != OK:
+        if err != UPNP.UPNP_RESULT_SUCCESS:
             push_error(str(err))
-            upnp_completed.emit(OK)
+            upnp_completed.emit(err)
             return
 
         if upnp.get_gateway() and upnp.get_gateway().is_valid_gateway():
             upnp.add_port_mapping(server_port, server_port, ProjectSettings.get_setting("application/config/name"), "UDP")
             upnp.add_port_mapping(server_port, server_port, ProjectSettings.get_setting("application/config/name"), "TCP")
-            upnp_completed.emit(OK)
+            upnp_completed.emit(UPNP.UPNP_RESULT_SUCCESS)
 
     func _ready():
         thread = Thread.new()
         thread.start(_upnp_setup.bind(SERVER_PORT))
 
     func _exit_tree():
-        # Attendi la fine del thread qui, per gestire l'uscita dal gioco mentre il thread è in esecuzione.
+        # Wait for thread finish here to handle game exit while the thread is running.
         thread.wait_to_finish()
 
-\ **Terminologia:** Nel contesto della rete UPnP, "gateway" (o "dispositivo gateway Internet", abbreviato IGD) si riferisce ai dispositivi di rete che consentono ai computer nella rete locale di accedere a Internet ("rete WAN"). Questi gateway sono spesso chiamati anche "router".
+\ **Terminology:** In the context of UPnP networking, "gateway" (or "internet gateway device", short IGD) refers to network devices that allow computers in the local network to access the internet ("wide area network", WAN). These gateways are often also called "routers".
 
-\ **Insidie:**\ 
+\ **Pitfalls:**\ 
 
-- Come spiegato in precedenza, queste chiamate sono bloccanti e non dovrebbero essere eseguite sul thread principale, soprattutto perché possono bloccarsi per più secondi alla volta. Usa altri thread!
+- As explained above, these calls are blocking and shouldn't be run on the main thread, especially as they can block for multiple seconds at a time. Use threading!
 
-- La rete è fisica e disordinata. I pacchetti si perdono durante il transito o sono filtrati, gli indirizzi, le porte libere e le mappature assegnate cambiano e i dispositivi possono abbandonare o unirsi alla rete in qualsiasi momento. Tieni questo presente, sii diligente quando verifichi e gestisci gli errori e gestiscili con grazia se puoi: aggiungi un'interfaccia utente di errore chiara, timeout e gestione dei nuovi tentativi.
+- Networking is physical and messy. Packets get lost in transit or get filtered, addresses, free ports and assigned mappings change, and devices may leave or join the network at any time. Be mindful of this, be diligent when checking and handling errors, and handle these gracefully if you can: add clear error UI, timeouts and re-try handling.
 
-- Le mappature delle porte possono cambiare (ed essere rimosse) in qualsiasi momento e l'indirizzo IP remoto/esterno del gateway può cambiare allo stesso modo. Dovresti considerare di ri-interrogare l'IP esterno e provare ad aggiornare periodicamente la mappatura delle porte (ad esempio, ogni 5 minuti e in caso di guasti di rete).
+- Port mappings may change (and be removed) at any time, and the remote/external IP address of the gateway can change likewise. You should consider re-querying the external IP and try to update/refresh the port mapping periodically (for example, every 5 minutes and on networking failures).
 
-- Non tutti i dispositivi supportano UPnP e alcuni utenti disabilitano il supporto UPnP. Devi gestire questo aspetto (ad esempio documentando e richiedendo all'utente di inoltrare manualmente le porte o aggiungendo metodi alternativi di attraversamento NAT, come un server di relay/mirror o NAT hole punching, STUN/TURN, ecc.).
+- Not all devices support UPnP, and some users disable UPnP support. You need to handle this (e.g. documenting and requiring the user to manually forward ports, or adding alternative methods of NAT traversal, like a relay/mirror server, or NAT hole punching, STUN/TURN, etc.).
 
-- Considera cosa succede in caso di conflitti di mappatura. Forse più utenti sulla stessa rete vorrebbero giocare al tuo gioco allo stesso tempo, o forse un'altra applicazione utilizza la stessa porta. Rendi la porta configurabile e scegli automaticamente una porta in modo ottimale (riprovando con una porta diversa in caso di guasto).
+- Consider what happens on mapping conflicts. Maybe multiple users on the same network would like to play your game at the same time, or maybe another application uses the same port. Make the port configurable, and optimally choose a port automatically (re-trying with a different port on failure).
 
-\ **Ulteriori approfondimenti:** Se vuoi saperne di più su UPnP (e in particolare su Internet Gateway Device (IGD) e Port Control Protocol (PCP)), `Wikipedia <https://it.wikipedia.org/wiki/Universal_Plug_and_Play>`__ è un buon punto di partenza, le specifiche possono essere trovate su `Open Connectivity Foundation <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ e l'implementazione di Godot è basata sul `client MiniUPnP <https://github.com/miniupnp/miniupnp>`__.
+\ **Further reading:** If you want to know more about UPnP (and the Internet Gateway Device (IGD) and Port Control Protocol (PCP) specifically), `Wikipedia <https://en.wikipedia.org/wiki/Universal_Plug_and_Play>`__ is a good first stop, the specification can be found at the `Open Connectivity Foundation <https://openconnectivity.org/developer/specifications/upnp-resources/upnp/>`__ and Godot's implementation is based on the `MiniUPnP client <https://github.com/miniupnp/miniupnp>`__.
 
 .. rst-class:: classref-reftable-group
 

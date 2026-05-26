@@ -9,7 +9,7 @@ Node2D
 
 **Heredado por:** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, :ref:`AudioListener2D<class_AudioListener2D>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, :ref:`BackBufferCopy<class_BackBufferCopy>`, :ref:`Bone2D<class_Bone2D>`, :ref:`Camera2D<class_Camera2D>`, :ref:`CanvasGroup<class_CanvasGroup>`, :ref:`CanvasModulate<class_CanvasModulate>`, :ref:`CollisionObject2D<class_CollisionObject2D>`, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`, :ref:`CollisionShape2D<class_CollisionShape2D>`, :ref:`CPUParticles2D<class_CPUParticles2D>`, :ref:`GPUParticles2D<class_GPUParticles2D>`, :ref:`Joint2D<class_Joint2D>`, :ref:`Light2D<class_Light2D>`, :ref:`LightOccluder2D<class_LightOccluder2D>`, :ref:`Line2D<class_Line2D>`, :ref:`Marker2D<class_Marker2D>`, :ref:`MeshInstance2D<class_MeshInstance2D>`, :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`, :ref:`NavigationLink2D<class_NavigationLink2D>`, :ref:`NavigationObstacle2D<class_NavigationObstacle2D>`, :ref:`NavigationRegion2D<class_NavigationRegion2D>`, :ref:`Parallax2D<class_Parallax2D>`, :ref:`ParallaxLayer<class_ParallaxLayer>`, :ref:`Path2D<class_Path2D>`, :ref:`PathFollow2D<class_PathFollow2D>`, :ref:`Polygon2D<class_Polygon2D>`, :ref:`RayCast2D<class_RayCast2D>`, :ref:`RemoteTransform2D<class_RemoteTransform2D>`, :ref:`ShapeCast2D<class_ShapeCast2D>`, :ref:`Skeleton2D<class_Skeleton2D>`, :ref:`Sprite2D<class_Sprite2D>`, :ref:`TileMap<class_TileMap>`, :ref:`TileMapLayer<class_TileMapLayer>`, :ref:`TouchScreenButton<class_TouchScreenButton>`, :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`
 
-A 2D game object, inherited by all 2D-related nodes. Has a position, rotation, scale, and skew.
+Un objeto de juego en 2D, heredado por todos los nodos relacionados con el 2D. Tiene una posición, rotación, escala y deformación.
 
 .. rst-class:: classref-introduction-group
 
@@ -183,7 +183,7 @@ Escala global. Véase también :ref:`scale<class_Node2D_property_scale>`.
 - |void| **set_global_skew**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_global_skew**\ (\ )
 
-Global skew in radians. See also :ref:`skew<class_Node2D_property_skew>`.
+Sesgo global en radianes. Véase también :ref:`skew<class_Node2D_property_skew>`.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ Global skew in radians. See also :ref:`skew<class_Node2D_property_skew>`.
 - |void| **set_global_transform**\ (\ value\: :ref:`Transform2D<class_Transform2D>`\ )
 - :ref:`Transform2D<class_Transform2D>` **get_global_transform**\ (\ )
 
-Global :ref:`Transform2D<class_Transform2D>`. See also :ref:`transform<class_Node2D_property_transform>`.
+:ref:`Transform2D<class_Transform2D>` global. Véase también :ref:`transform<class_Node2D_property_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Global :ref:`Transform2D<class_Transform2D>`. See also :ref:`transform<class_Nod
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-Position, relative to the node's parent. See also :ref:`global_position<class_Node2D_property_global_position>`.
+Posición, relativa al padre del nodo. Véase también :ref:`global_position<class_Node2D_property_global_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -234,9 +234,9 @@ Position, relative to the node's parent. See also :ref:`global_position<class_No
 - |void| **set_rotation**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation**\ (\ )
 
-Rotation in radians, relative to the node's parent. See also :ref:`global_rotation<class_Node2D_property_global_rotation>`.
+Rotación en radianes, relativa al padre del nodo. Véase también :ref:`global_rotation<class_Node2D_property_global_rotation>`.
 
-\ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`.
+\ **Nota:** Esta propiedad se edita en el inspector en grados. Si quieres usar grados en un script, usa :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Rotation in radians, relative to the node's parent. See also :ref:`global_rotati
 - |void| **set_rotation_degrees**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_rotation_degrees**\ (\ )
 
-Helper property to access :ref:`rotation<class_Node2D_property_rotation>` in degrees instead of radians. See also :ref:`global_rotation_degrees<class_Node2D_property_global_rotation_degrees>`.
+Propiedad de ayuda para acceder a :ref:`rotation<class_Node2D_property_rotation>` en grados en lugar de radianes. Véase también :ref:`global_rotation_degrees<class_Node2D_property_global_rotation_degrees>`.
 
 .. rst-class:: classref-item-separator
 
@@ -270,9 +270,9 @@ Helper property to access :ref:`rotation<class_Node2D_property_rotation>` in deg
 - |void| **set_scale**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_scale**\ (\ )
 
-The node's scale, relative to the node's parent. Unscaled value: ``(1, 1)``. See also :ref:`global_scale<class_Node2D_property_global_scale>`.
+La escala del nodo, relativa al padre del nodo. Valor sin escalar: ``(1, 1)``. Véase también :ref:`global_scale<class_Node2D_property_global_scale>`.
 
-\ **Note:** Negative X scales in 2D are not decomposable from the transformation matrix. Due to the way scale is represented with transformation matrices in Godot, negative scales on the X axis will be changed to negative scales on the Y axis and a rotation of 180 degrees when decomposed.
+\ **Nota:** Las escalas X negativas en 2D no son descomponibles de la matriz de transformación. Debido a la forma en que se representa la escala con las matrices de transformación en Godot, las escalas negativas en el eje X se cambiarán a escalas negativas en el eje Y y una rotación de 180 grados al descomponerse.
 
 .. rst-class:: classref-item-separator
 
@@ -289,11 +289,11 @@ The node's scale, relative to the node's parent. Unscaled value: ``(1, 1)``. See
 - |void| **set_skew**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_skew**\ (\ )
 
-If set to a non-zero value, slants the node in one direction or another. This can be used for pseudo-3D effects. See also :ref:`global_skew<class_Node2D_property_global_skew>`.
+Si se establece en un valor distinto de cero, inclina el nodo en una dirección u otra. Esto puede usarse para efectos pseudo-3D. Véase también :ref:`global_skew<class_Node2D_property_global_skew>`.
 
-\ **Note:** Skew is performed on the X axis only, and *between* rotation and scaling.
+\ **Nota:** El sesgo se realiza solo en el eje X, y *entre* la rotación y el escalado.
 
-\ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use ``skew = deg_to_rad(value_in_degrees)``.
+\ **Nota:** Esta propiedad se edita en el inspector en grados. Si quieres usar grados en un script, usa ``skew = deg_to_rad(value_in_degrees)``.
 
 .. rst-class:: classref-item-separator
 
@@ -339,9 +339,9 @@ Multiplica la escala actual por el vector ``ratio``.
 
 :ref:`float<class_float>` **get_angle_to**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Node2D_method_get_angle_to>`
 
-Returns the angle between the node and the ``point`` in radians. See also :ref:`look_at()<class_Node2D_method_look_at>`.
+Devuelve el ángulo entre el nodo y el ``point`` en radianes. Véase también :ref:`look_at()<class_Node2D_method_look_at>`.
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
+\ `Ilustración del ángulo devuelto. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ Añade el vector ``offset`` a la posición global del nodo.
 
 |void| **look_at**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_look_at>`
 
-Rotates the node so that its local +X axis points towards the ``point``, which is expected to use global coordinates. This method is a combination of both :ref:`rotate()<class_Node2D_method_rotate>` and :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
+Rota el nodo para que su eje +X local apunte hacia el ``point``, que se espera que use coordenadas globales. Este método es una combinación de :ref:`rotate()<class_Node2D_method_rotate>` y :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
 
-\ ``point`` should not be the same as the node's position, otherwise the node always looks to the right.
+\ ``point`` no debe ser el mismo que la posición del nodo, de lo contrario el nodo siempre mirará hacia la derecha.
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Rotates the node so that its local +X axis points towards the ``point``, which i
 
 |void| **move_local_x**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_x>`
 
-Applies a local translation on the node's X axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+Aplica una traslación local en el eje X del nodo con la cantidad especificada en ``delta``. Si ``scaled`` es ``false``, normaliza el movimiento para que ocurra independientemente de la :ref:`scale<class_Node2D_property_scale>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Applies a local translation on the node's X axis with the amount specified in ``
 
 |void| **move_local_y**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_y>`
 
-Applies a local translation on the node's Y axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+Aplica una traslación local en el eje Y del nodo con la cantidad especificada en ``delta``. Si ``scaled`` es ``false``, normaliza el movimiento para que ocurra independientemente de la :ref:`scale<class_Node2D_property_scale>` del nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Applies a local translation on the node's Y axis with the amount specified in ``
 
 |void| **rotate**\ (\ radians\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Node2D_method_rotate>`
 
-Applies a rotation to the node, in radians, starting from its current rotation. This is equivalent to ``rotation += radians``.
+Aplica una rotación al nodo, en radianes, a partir de su rotación actual. Esto es equivalente a ``rotation += radians``.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Transforma la posición global proporcionada en una posición en el espacio de c
 
 |void| **translate**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_translate>`
 
-Translates the node by the given ``offset`` in local coordinates. This is equivalent to ``position += offset``.
+Traslada el nodo por el ``offset`` dado en coordenadas locales. Esto es equivalente a ``position += offset``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

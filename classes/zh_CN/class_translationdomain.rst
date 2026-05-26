@@ -316,7 +316,7 @@ TranslationDomain
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **find_translations**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_find_translations>`
 
-Returns the :ref:`Translation<class_Translation>` instances that match ``locale`` (see :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` will be returned.
+返回与 ``locale`` 匹配的 :ref:`Translation<class_Translation>` 实例（见 :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`\ ）。如果 ``exact`` 为 ``true``\ ，则仅返回其区域设置与 ``locale`` 完全相等的实例。
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ Returns the :ref:`Translation<class_Translation>` instances that match ``locale`
 
 :ref:`Array<class_Array>`\[:ref:`Translation<class_Translation>`\] **get_translations**\ (\ ) |const| :ref:`🔗<class_TranslationDomain_method_get_translations>`
 
-Returns all available :ref:`Translation<class_Translation>` instances as added by :ref:`add_translation()<class_TranslationDomain_method_add_translation>`.
+返回通过 :ref:`add_translation()<class_TranslationDomain_method_add_translation>` 添加的所有可用 :ref:`Translation<class_Translation>` 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -366,7 +366,7 @@ Returns all available :ref:`Translation<class_Translation>` instances as added b
 
 :ref:`bool<class_bool>` **has_translation**\ (\ translation\: :ref:`Translation<class_Translation>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_has_translation>`
 
-Returns ``true`` if this translation domain contains the given ``translation``.
+如果该翻译域包含给定的 ``translation``\ ，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -378,7 +378,7 @@ Returns ``true`` if this translation domain contains the given ``translation``.
 
 :ref:`bool<class_bool>` **has_translation_for_locale**\ (\ locale\: :ref:`String<class_String>`, exact\: :ref:`bool<class_bool>`\ ) |const| :ref:`🔗<class_TranslationDomain_method_has_translation_for_locale>`
 
-Returns ``true`` if there are any :ref:`Translation<class_Translation>` instances that match ``locale`` (see :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`). If ``exact`` is ``true``, only instances whose locale exactly equals ``locale`` are considered.
+如果存在任何与 ``locale`` 匹配（见 :ref:`TranslationServer.compare_locales()<class_TranslationServer_method_compare_locales>`\ ）的 :ref:`Translation<class_Translation>` 实例，则返回 ``true``\ 。如果 ``exact`` 为 ``true``\ ，则仅考虑其区域设置与 ``locale`` 完全相等的实例。
 
 .. rst-class:: classref-item-separator
 

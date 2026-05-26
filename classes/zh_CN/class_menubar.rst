@@ -163,7 +163,7 @@ MenuBar
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用于断行和文本塑形算法的语言代码。如果留空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -300,7 +300,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`bool<class_bool>` **is_menu_disabled**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_disabled>`
 
-Returns ``true`` if the menu item is disabled.
+如果菜单项被禁用，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Returns ``true`` if the menu item is disabled.
 
 :ref:`bool<class_bool>` **is_menu_hidden**\ (\ menu\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MenuBar_method_is_menu_hidden>`
 
-Returns ``true`` if the menu item is hidden.
+如果菜单项被隐藏，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +324,7 @@ Returns ``true`` if the menu item is hidden.
 
 :ref:`bool<class_bool>` **is_native_menu**\ (\ ) |const| :ref:`🔗<class_MenuBar_method_is_native_menu>`
 
-Returns ``true`` if the current system's global menu is supported and used by this **MenuBar**.
+如果当前系统的全局菜单受支持且被该 **MenuBar** 使用，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

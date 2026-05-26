@@ -1380,7 +1380,7 @@ Descripciones de Métodos
 
 |void| **apply_ime**\ (\ ) :ref:`🔗<class_LineEdit_method_apply_ime>`
 
-Applies text from the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) and closes the IME if it is open.
+Aplica texto del `Editor de Métodos de Entrada <https://en.wikipedia.org/wiki/Input_method>`__ (IME) y cierra el IME si está abierto.
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1392,7 @@ Applies text from the `Input Method Editor <https://en.wikipedia.org/wiki/Input_
 
 |void| **cancel_ime**\ (\ ) :ref:`🔗<class_LineEdit_method_cancel_ime>`
 
-Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) if it is open. Any text in the IME will be lost.
+Cierra el `Editor de Métodos de Entrada <https://en.wikipedia.org/wiki/Input_method>`__ (IME) si está abierto. Cualquier texto en el IME se perderá.
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ Elimina un carácter en la posición actual del cursor (equivalente a presionar 
 
 |void| **delete_text**\ (\ from_column\: :ref:`int<class_int>`, to_column\: :ref:`int<class_int>`\ ) :ref:`🔗<class_LineEdit_method_delete_text>`
 
-Deletes a section of the :ref:`text<class_LineEdit_property_text>` going from position ``from_column`` to ``to_column``. Both parameters should be within the text's length.
+Elimina una sección del :ref:`text<class_LineEdit_property_text>` que va de la posición ``from_column`` a ``to_column``. Ambos parámetros deben estar dentro de la longitud del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -1452,9 +1452,9 @@ Borra la selección actual.
 
 |void| **edit**\ (\ hide_focus\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_LineEdit_method_edit>`
 
-Allows entering edit mode whether the **LineEdit** is focused or not. If ``hide_focus`` is ``true``, the focused state will not be shown (see :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
+Permite entrar en el modo de edición tanto si el **LineEdit** está enfocado como si no. Si ``hide_focus`` es ``true``, el estado de enfoque no se mostrará (véase :ref:`Control.grab_focus()<class_Control_method_grab_focus>`).
 
-See also :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
+Véase también :ref:`keep_editing_on_text_submit<class_LineEdit_property_keep_editing_on_text_submit>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1889,9 +1889,9 @@ Espacio horizontal mínimo para el texto (sin contar el botón de borrar y los m
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_LineEdit_theme_constant_outline_size>`
 
-The size of the text outline.
+El tamaño del contorno del texto.
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_LineEdit_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 

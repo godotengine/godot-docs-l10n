@@ -159,7 +159,7 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST** = ``1``
 
-Фільтр текстур читає лише з найближчого пікселя. Це робить текстуру піксельною зблизька та зернистою на відстані (через те, що MIP-карти не вибираються).
+Фільтр текстури зчитує дані лише з найближчого пікселя. Через це текстура виглядає пікселізованою зблизька та зернистою здалеку (оскільки міп-мапи не прочитуються).
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR:
 
@@ -167,7 +167,7 @@ enum **TextureFilter**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_Texture
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR** = ``2``
 
-Фільтр текстури змішується між найближчими 4 пікселями. Це робить текстуру гладкою зблизька та зернистою на відстані (через те, що MIP-карти не вибираються).
+Фільтр текстури виконує згладжування між 4 найближчими пікселями. Завдяки цьому текстура виглядає гладкою зблизька, а здалеку — зернистою (оскільки міп-мапи не зчитуються).
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP:
 

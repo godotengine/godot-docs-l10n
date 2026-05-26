@@ -1951,7 +1951,7 @@ Définit la :ref:`Color<class_Color>` des numéros de ligne.
 
 :ref:`int<class_int>` **completion_lines** = ``7`` :ref:`🔗<class_CodeEdit_theme_constant_completion_lines>`
 
-Max number of options to display in the code completion popup at any one time.
+Le nombre maximum d'otption à afficher pour la complétion du code.
 
 .. rst-class:: classref-item-separator
 

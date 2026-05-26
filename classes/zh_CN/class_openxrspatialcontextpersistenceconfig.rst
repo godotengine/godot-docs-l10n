@@ -9,14 +9,14 @@ OpenXRSpatialContextPersistenceConfig
 
 **继承：** :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for spatial persistence.
+空间持久性配置标头。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Configuration header for spatial persistence. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` as the next parameter to create a spatial context with spatial persistence capabilities.
+用于空间持久化的配置标头。将其作为下一个参数传递给 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 方法即可创建具有空间持久化功能的空间上下文。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Configuration header for spatial persistence. Pass this to :ref:`OpenXRSpatialEn
 
 |void| **add_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_add_persistence_context>`
 
-Adds a persistence context to this configuration. You must add at least one persistence context to create a valid configuration. You can create a persistence context by calling :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>`.
+将持久化上下文添加到该配置中。必须添加至少一个持久化上下文才能创建一个有效的配置。可以通过调用 :ref:`OpenXRSpatialAnchorCapability.create_persistence_context()<class_OpenXRSpatialAnchorCapability_method_create_persistence_context>` 来创建持久化上下文。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Adds a persistence context to this configuration. You must add at least one pers
 
 |void| **remove_persistence_context**\ (\ persistence_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialContextPersistenceConfig_method_remove_persistence_context>`
 
-Removes a persistence context.
+移除持久化上下文。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

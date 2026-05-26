@@ -410,7 +410,7 @@ Puede ser sobrescrito con la variable de entorno ``GODOT_WINDOWS_CODESIGN_PASSWO
 
 :ref:`bool<class_bool>` **codesign/timestamp** :ref:`🔗<class_EditorExportPlatformWindows_property_codesign/timestamp>`
 
-Si ``true``, se añade una marca de tiempo a la firma. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
+Si es ``true``, se añade una marca de tiempo a la firma. Véase `Sign Tool <https://learn.microsoft.com/en-us/dotnet/framework/tools/signtool-exe>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ Ruta a la plantilla de exportación personalizada. Si se deja vacío, se utiliza
 
 :ref:`int<class_int>` **debug/export_console_wrapper** :ref:`🔗<class_EditorExportPlatformWindows_property_debug/export_console_wrapper>`
 
-Si ``true``, se exporta un ejecutable contenedor de consola junto con el ejecutable principal, lo que permite ejecutar el proyecto con la salida de consola habilitada.
+Si es ``true``, se exporta un ejecutable contenedor de consola junto con el ejecutable principal, lo que permite ejecutar el proyecto con la salida de consola habilitada.
 
 .. rst-class:: classref-item-separator
 

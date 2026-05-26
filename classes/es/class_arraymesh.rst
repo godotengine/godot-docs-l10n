@@ -14,9 +14,9 @@ Tipo :ref:`Mesh<class_Mesh>` que provee la funcionalidad para construir una supe
 Descripción
 ----------------------
 
-The **ArrayMesh** is used to construct a :ref:`Mesh<class_Mesh>` by specifying the attributes as arrays.
+El **ArrayMesh** se utiliza para construir un :ref:`Mesh<class_Mesh>` especificando los atributos como arrays.
 
-The most basic example is the creation of a single triangle:
+El ejemplo más básico es la creación de un único triángulo:
 
 
 .. tabs::
@@ -61,11 +61,11 @@ The most basic example is the creation of a single triangle:
 
 
 
-The :ref:`MeshInstance3D<class_MeshInstance3D>` is ready to be added to the :ref:`SceneTree<class_SceneTree>` to be shown.
+El :ref:`MeshInstance3D<class_MeshInstance3D>` está listo para ser añadido al :ref:`SceneTree<class_SceneTree>` para mostrarse.
 
-See also :ref:`ImmediateMesh<class_ImmediateMesh>`, :ref:`MeshDataTool<class_MeshDataTool>` and :ref:`SurfaceTool<class_SurfaceTool>` for procedural geometry generation.
+Véase también :ref:`ImmediateMesh<class_ImmediateMesh>`, :ref:`MeshDataTool<class_MeshDataTool>` y :ref:`SurfaceTool<class_SurfaceTool>` para la generación de geometría procedural.
 
-\ **Note:** Godot uses clockwise `winding order <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__ for front faces of triangle primitive modes.
+\ **Nota:** Godot usa el `winding order <https://learnopengl.com/Advanced-OpenGL/Face-culling>`__ en sentido horario para las caras frontales de los modos primitivos de triángulo.
 
 .. rst-class:: classref-introduction-group
 
@@ -225,19 +225,19 @@ Añade un nombre a una forma de mezcla que se añadira con :ref:`add_surface_fro
 
 |void| **add_surface_from_arrays**\ (\ primitive\: :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`, arrays\: :ref:`Array<class_Array>`, blend_shapes\: :ref:`Array<class_Array>`\[:ref:`Array<class_Array>`\] = [], lods\: :ref:`Dictionary<class_Dictionary>` = {}, flags\: |bitfield|\[:ref:`ArrayFormat<enum_Mesh_ArrayFormat>`\] = 0\ ) :ref:`🔗<class_ArrayMesh_method_add_surface_from_arrays>`
 
-Creates a new surface. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` will become the ``surf_idx`` for this new surface.
+Crea una nueva superficie. :ref:`Mesh.get_surface_count()<class_Mesh_method_get_surface_count>` se convertirá en el ``surf_idx`` de esta nueva superficie.
 
-Surfaces are created to be rendered using a ``primitive``, which may be any of the values defined in :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
+Las superficies se crean para ser renderizadas usando un ``primitive``, que puede ser cualquiera de los valores definidos en :ref:`PrimitiveType<enum_Mesh_PrimitiveType>`.
 
-The ``arrays`` argument is an array of arrays. Each of the :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` elements contains an array with some of the mesh data for this surface as described by the corresponding member of :ref:`ArrayType<enum_Mesh_ArrayType>` or ``null`` if it is not used by the surface. For example, ``arrays[0]`` is the array of vertices. That first vertex sub-array is always required; the others are optional. Adding an index array puts this surface into "index mode" where the vertex and other arrays become the sources of data and the index array defines the vertex order. All sub-arrays must have the same length as the vertex array (or be an exact multiple of the vertex array's length, when multiple elements of a sub-array correspond to a single vertex) or be empty, except for :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` if it is used.
+El argumento ``arrays`` es un arreglo de arreglos. Cada uno de los elementos :ref:`Mesh.ARRAY_MAX<class_Mesh_constant_ARRAY_MAX>` contiene un arreglo con parte de los datos de la malla para esta superficie, según se describe en el miembro correspondiente de :ref:`ArrayType<enum_Mesh_ArrayType>`, o ``null`` si no se utiliza en la superficie. Por ejemplo, ``arrays[0]`` es el arreglo de vértices. Este primer sub-arreglo de vértices siempre es obligatorio; los demás son opcionales. Agregar un arreglo de índices coloca esta superficie en "modo índice", donde los arreglos de vértices y otros se usan como fuentes de datos y el arreglo de índices define el orden de los vértices. Todos los sub-arreglos deben tener la misma longitud que el arreglo de vértices (o ser un múltiplo exacto de la longitud del arreglo de vértices, cuando múltiples elementos de un sub-arreglo corresponden a un solo vértice) o estar vacíos, excepto :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` si se utiliza.
 
-The ``blend_shapes`` argument is an array of vertex data for each blend shape. Each element is an array of the same structure as ``arrays``, but :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>`, and :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` are set if and only if they are set in ``arrays`` and all other entries are ``null``.
+El argumento ``blend_shapes`` es un arreglo de datos de vértices para cada blend shape. Cada elemento es un arreglo con la misma estructura que ``arrays``, pero :ref:`Mesh.ARRAY_VERTEX<class_Mesh_constant_ARRAY_VERTEX>`, :ref:`Mesh.ARRAY_NORMAL<class_Mesh_constant_ARRAY_NORMAL>` y :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>` se establecen únicamente si están presentes en ``arrays`` y todas las demás entradas son ``null``.
 
-The ``lods`` argument is a dictionary with :ref:`float<class_float>` keys and :ref:`PackedInt32Array<class_PackedInt32Array>` values. Each entry in the dictionary represents an LOD level of the surface, where the value is the :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` array to use for the LOD level and the key is roughly proportional to the distance at which the LOD stats being used. I.e., increasing the key of an LOD also increases the distance that the objects has to be from the camera before the LOD is used.
+El argumento ``lods`` es un diccionario con claves :ref:`float<class_float>` y valores :ref:`PackedInt32Array<class_PackedInt32Array>`. Cada entrada del diccionario representa un nivel LOD de la superficie, donde el valor es el arreglo :ref:`Mesh.ARRAY_INDEX<class_Mesh_constant_ARRAY_INDEX>` que se utilizará para ese nivel LOD y la clave es aproximadamente proporcional a la distancia a la que se usará el LOD. Es decir, aumentar la clave de un LOD también aumenta la distancia a la que los objetos deben estar de la cámara antes de usar ese LOD.
 
-The ``flags`` argument is the bitwise OR of, as required: One value of :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` left shifted by ``ARRAY_FORMAT_CUSTOMn_SHIFT`` for each custom channel in use, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>`, or :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
+El argumento ``flags`` es la operación OR a nivel de bits de, según se necesite: un valor de :ref:`ArrayCustomFormat<enum_Mesh_ArrayCustomFormat>` desplazado a la izquierda por ``ARRAY_FORMAT_CUSTOMn_SHIFT`` para cada canal personalizado en uso, :ref:`Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE<class_Mesh_constant_ARRAY_FLAG_USE_DYNAMIC_UPDATE>`, :ref:`Mesh.ARRAY_FLAG_USE_8_BONE_WEIGHTS<class_Mesh_constant_ARRAY_FLAG_USE_8_BONE_WEIGHTS>` o :ref:`Mesh.ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY<class_Mesh_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY>`.
 
-\ **Note:** When using indices, it is recommended to only use points, lines, or triangles.
+\ **Nota:** Al usar índices, se recomienda emplear únicamente puntos, líneas o triángulos.
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ Elimina todas las superificies de este **ArrayMesh**.
 
 :ref:`int<class_int>` **get_blend_shape_count**\ (\ ) |const| :ref:`🔗<class_ArrayMesh_method_get_blend_shape_count>`
 
-Devuelve el numero de formas de mezcla que el **ArrayMesh** posee.
+Devuelve el número de formas de mezcla que el **ArrayMesh** posee.
 
 .. rst-class:: classref-item-separator
 

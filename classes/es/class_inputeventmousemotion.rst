@@ -14,11 +14,11 @@ Representa un movimiento de ratón o de lápiz.
 Descripción
 ----------------------
 
-Stores information about a mouse or a pen motion. This includes relative position, absolute position, and velocity. See :ref:`Node._input()<class_Node_private_method__input>`.
+Almacena información sobre el movimiento de un ratón o un lápiz. Esto incluye posición relativa, posición absoluta y velocidad. Véase :ref:`Node._input()<class_Node_private_method__input>`.
 
-\ **Note:** By default, this event is only emitted once per frame rendered at most. If you need more precise input reporting, set :ref:`Input.use_accumulated_input<class_Input_property_use_accumulated_input>` to ``false`` to make events emitted as often as possible. If you use InputEventMouseMotion to draw lines, consider using :ref:`Geometry2D.bresenham_line()<class_Geometry2D_method_bresenham_line>` as well to avoid visible gaps in lines if the user is moving the mouse quickly.
+\ **Nota:** Por defecto, este evento solo se emite una vez por fotograma renderizado como máximo. Si necesitas un informe de entrada más preciso, establece :ref:`Input.use_accumulated_input<class_Input_property_use_accumulated_input>` a ``false`` para que los eventos se emitan tan a menudo como sea posible. Si usas InputEventMouseMotion para dibujar líneas, considera usar :ref:`Geometry2D.bresenham_line()<class_Geometry2D_method_bresenham_line>` también para evitar huecos visibles en las líneas si el usuario mueve el ratón rápidamente.
 
-\ **Note:** This event may be emitted even when the mouse hasn't moved, either by the operating system or by Godot itself. If you really need to know if the mouse has moved (e.g. to suppress displaying a tooltip), you should check that ``relative.is_zero_approx()`` is ``false``.
+\ **Nota:** Este evento puede emitirse incluso cuando el ratón no se ha movido, ya sea por el sistema operativo o por el propio Godot. Si realmente necesitas saber si el ratón se ha movido (por ejemplo, para suprimir la visualización de una sugerencia), deberías comprobar que ``relative.is_zero_approx()`` es ``false``.
 
 .. rst-class:: classref-introduction-group
 
@@ -75,9 +75,9 @@ Descripciones de Propiedades
 - |void| **set_pen_inverted**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_pen_inverted**\ (\ )
 
-Returns ``true`` when using the eraser end of a stylus pen.
+Devuelve ``true`` cuando se usa el extremo de borrador de un lápiz óptico.
 
-\ **Note:** This property is implemented on Linux, macOS and Windows.
+\ **Nota:** Esta propiedad está implementada en Linux, macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -111,11 +111,11 @@ Representa la presión que el usuario ejerce sobre el bolígrafo. Va desde ``0.0
 - |void| **set_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_relative**\ (\ )
 
-The mouse position relative to the previous position (position at the last frame).
+La posición del ratón relativa a la posición anterior (posición en el último fotograma).
 
-\ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
+\ **Nota:** Dado que **InputEventMouseMotion** solo se emite cuando el ratón se mueve, no es posible detectar de forma fiable cuándo el ratón ha dejado de moverse comprobando esta propiedad. Puede ser necesario un temporizador corto separado.
 
-\ **Note:** :ref:`relative<class_InputEventMouseMotion_property_relative>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means mouse sensitivity will appear different depending on resolution when using :ref:`relative<class_InputEventMouseMotion_property_relative>` in a script that handles mouse aiming with the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode. To avoid this, use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` instead.
+\ **Nota:** :ref:`relative<class_InputEventMouseMotion_property_relative>` se escala automáticamente según el factor de escala de contenido, que se define por la configuración del modo de estiramiento del proyecto. Esto significa que la sensibilidad del ratón parecerá diferente dependiendo de la resolución cuando se use :ref:`relative<class_InputEventMouseMotion_property_relative>` en un script que maneje el apuntado del ratón con el modo de ratón :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`. Para evitar esto, usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -132,11 +132,11 @@ The mouse position relative to the previous position (position at the last frame
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-The unscaled mouse position relative to the previous position in the coordinate system of the screen (position at the last frame).
+La posición del ratón sin escalar relativa a la posición anterior en el sistema de coordenadas de la pantalla (posición en el último cuadro).
 
-\ **Note:** Since **InputEventMouseMotion** may only be emitted when the mouse moves, it is not possible to reliably detect when the mouse has stopped moving by checking this property. A separate, short timer may be necessary.
+\ **Nota:** Dado que **InputEventMouseMotion** solo se emite cuando el ratón se mueve, no es posible detectar de forma fiable cuándo el ratón ha dejado de moverse comprobando esta propiedad. Puede ser necesario un temporizador corto y separado.
 
-\ **Note:** This coordinate is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`relative<class_InputEventMouseMotion_property_relative>` for mouse aiming when using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode, regardless of the project's stretch mode.
+\ **Nota:** Esta coordenada *no* se escala según el factor de escala del contenido o las llamadas a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Esto debería preferirse sobre :ref:`relative<class_InputEventMouseMotion_property_relative>` para la puntería del ratón cuando se usa el modo de ratón :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`, independientemente del modo de estiramiento del proyecto.
 
 .. rst-class:: classref-item-separator
 
@@ -153,9 +153,9 @@ The unscaled mouse position relative to the previous position in the coordinate 
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled mouse velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
+La velocidad del ratón sin escalar en píxeles por segundo en coordenadas de pantalla. Esta velocidad *no* se escala según el factor de escala del contenido o las llamadas a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`.
 
-\ **Note:** Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **Nota:** Usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` para la puntería del ratón usando el modo de ratón :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -189,11 +189,11 @@ Representa los ángulos de inclinación del bolígrafo. El valor positivo de la 
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The mouse velocity in pixels per second.
+La velocidad del ratón en píxeles por segundo.
 
-\ **Note:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. That means mouse sensitivity may appear different depending on resolution.
+\ **Nota:** :ref:`velocity<class_InputEventMouseMotion_property_velocity>` se escala automáticamente según el factor de escala del contenido, que se define por la configuración del modo de estiramiento del proyecto. Eso significa que la sensibilidad del ratón puede parecer diferente dependiendo de la resolución.
 
-\ **Note:** Use :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` for mouse aiming using the :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>` mouse mode.
+\ **Nota:** Usa :ref:`screen_relative<class_InputEventMouseMotion_property_screen_relative>` para la puntería del ratón usando el modo de ratón :ref:`Input.MOUSE_MODE_CAPTURED<class_Input_constant_MOUSE_MODE_CAPTURED>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

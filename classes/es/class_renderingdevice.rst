@@ -3309,7 +3309,7 @@ Uniforme de búfer de imagen.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_UNIFORM_BUFFER** = ``7``
 
-Uniforme de búfer de uniformes.
+Uniforme de búfer de variables uniformes.
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_STORAGE_BUFFER:
 
@@ -4575,7 +4575,7 @@ Maximum number of `storage buffers <https://vkguide.dev/docs/chapter-4/storage_b
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_STORAGE_IMAGES_PER_UNIFORM_SET** = ``5``
 
-Número máximo de imágenes de almacenamiento por conjunto de uniformes.
+Número máximo de imágenes de almacenamiento por conjunto de variables uniformes.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_UNIFORM_BUFFERS_PER_UNIFORM_SET:
 
@@ -4583,7 +4583,7 @@ Número máximo de imágenes de almacenamiento por conjunto de uniformes.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_UNIFORM_BUFFERS_PER_UNIFORM_SET** = ``6``
 
-Número máximo de búferes de uniformes por conjunto de uniformes.
+Número máximo de búferes de variables uniformes por conjunto de variables uniformes.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_DRAW_INDEXED_INDEX:
 
@@ -4687,7 +4687,7 @@ Número máximo de imágenes de almacenamiento por etapa de shader.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_UNIFORM_BUFFERS_PER_SHADER_STAGE** = ``19``
 
-Número máximo de búferes de uniformes por conjunto de uniformes.
+Número máximo de búferes de variables uniformes por conjunto de variables uniformes.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_PUSH_CONSTANT_SIZE:
 
@@ -4703,7 +4703,7 @@ Tamaño máximo de una push constante. Muchos dispositivos están limitados a 12
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MAX_UNIFORM_BUFFER_SIZE** = ``21``
 
-Tamaño máximo de un búfer de uniformes.
+Tamaño máximo de un búfer de variables uniformes.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_VERTEX_INPUT_ATTRIBUTE_OFFSET:
 
@@ -4743,7 +4743,7 @@ Paso máximo del enlace de entrada de vértice.
 
 :ref:`Limit<enum_RenderingDevice_Limit>` **LIMIT_MIN_UNIFORM_BUFFER_OFFSET_ALIGNMENT** = ``26``
 
-Alineación mínima del desplazamiento del búfer uniforme.
+Alineación mínima del desplazamiento del búfer de variables uniforme.
 
 .. _class_RenderingDevice_constant_LIMIT_MAX_COMPUTE_SHARED_MEMORY_SIZE:
 
@@ -5456,7 +5456,7 @@ Le dice a la GPU qué pipeline de cálculo usar al procesar la lista de cálculo
 
 |void| **compute_list_bind_uniform_set**\ (\ compute_list\: :ref:`int<class_int>`, uniform_set\: :ref:`RID<class_RID>`, set_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_compute_list_bind_uniform_set>`
 
-Vincula el ``uniform_set`` a esta ``compute_list``. Godot se asegura de que todas las texturas en el conjunto uniforme tengan las máscaras de acceso Vulkan correctas. Si Godot tuvo que cambiar las máscaras de acceso de las texturas, elevará una barrera de memoria de imagen Vulkan.
+Vincula el ``uniform_set`` a esta ``compute_list``. Godot se asegura de que todas las texturas en el conjunto de variables uniformes tengan las máscaras de acceso Vulkan correctas. Si Godot tuvo que cambiar las máscaras de acceso de las texturas, elevará una barrera de memoria de imagen Vulkan.
 
 .. rst-class:: classref-item-separator
 
@@ -6325,7 +6325,7 @@ This is only used by Vulkan in debug builds. Godot must also be started with the
 
 :ref:`bool<class_bool>` **has_feature**\ (\ feature\: :ref:`Features<enum_RenderingDevice_Features>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_has_feature>`
 
-Returns ``true`` if the ``feature`` is supported by the GPU.
+Devuelve ``true`` si la ``feature`` es compatible con la GPU.
 
 .. rst-class:: classref-item-separator
 
@@ -6337,11 +6337,11 @@ Returns ``true`` if the ``feature`` is supported by the GPU.
 
 :ref:`RID<class_RID>` **index_array_create**\ (\ index_buffer\: :ref:`RID<class_RID>`, index_offset\: :ref:`int<class_int>`, index_count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_index_array_create>`
 
-Creates a new index array. It can be accessed with the RID that is returned.
+Crea un nuevo array de índices. Se puede acceder a él con el RID que se devuelve.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una vez que hayas terminado con tu RID, querrás liberarlo usando el método :ref:`free_rid()<class_RenderingDevice_method_free_rid>` de RenderingDevice.
 
-This will be freed automatically when the ``index_buffer`` is freed.
+Esto se liberará automáticamente cuando se libere el ``index_buffer``.
 
 .. rst-class:: classref-item-separator
 
@@ -6353,9 +6353,9 @@ This will be freed automatically when the ``index_buffer`` is freed.
 
 :ref:`RID<class_RID>` **index_buffer_create**\ (\ size_indices\: :ref:`int<class_int>`, format\: :ref:`IndexBufferFormat<enum_RenderingDevice_IndexBufferFormat>`, data\: :ref:`PackedByteArray<class_PackedByteArray>` = PackedByteArray(), use_restart_indices\: :ref:`bool<class_bool>` = false, creation_bits\: |bitfield|\[:ref:`BufferCreationBits<enum_RenderingDevice_BufferCreationBits>`\] = 0\ ) :ref:`🔗<class_RenderingDevice_method_index_buffer_create>`
 
-Creates a new index buffer. It can be accessed with the RID that is returned.
+Crea un nuevo búfer de índices. Se puede acceder a él con el RID que se devuelve.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una vez que hayas terminado con tu RID, querrás liberarlo usando el método :ref:`free_rid()<class_RenderingDevice_method_free_rid>` de RenderingDevice.
 
 .. rst-class:: classref-item-separator
 
@@ -6367,9 +6367,9 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`int<class_int>` **limit_get**\ (\ limit\: :ref:`Limit<enum_RenderingDevice_Limit>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_limit_get>`
 
-Returns the value of the specified ``limit``. This limit varies depending on the current graphics hardware (and sometimes the driver version). If the given limit is exceeded, rendering errors will occur.
+Devuelve el valor del ``limit`` especificado. Este límite varía dependiendo del hardware gráfico actual (y a veces de la versión del controlador). Si se excede el límite dado, ocurrirán errores de renderizado.
 
-Limits for various graphics hardware can be found in the `Vulkan Hardware Database <https://vulkan.gpuinfo.org/>`__.
+Los límites para varios hardwares gráficos se pueden encontrar en la `Base de Datos de Hardware de Vulkan <https://vulkan.gpuinfo.org/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -6381,11 +6381,11 @@ Limits for various graphics hardware can be found in the `Vulkan Hardware Databa
 
 :ref:`RID<class_RID>` **render_pipeline_create**\ (\ shader\: :ref:`RID<class_RID>`, framebuffer_format\: :ref:`int<class_int>`, vertex_format\: :ref:`int<class_int>`, primitive\: :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>`, rasterization_state\: :ref:`RDPipelineRasterizationState<class_RDPipelineRasterizationState>`, multisample_state\: :ref:`RDPipelineMultisampleState<class_RDPipelineMultisampleState>`, stencil_state\: :ref:`RDPipelineDepthStencilState<class_RDPipelineDepthStencilState>`, color_blend_state\: :ref:`RDPipelineColorBlendState<class_RDPipelineColorBlendState>`, dynamic_state_flags\: |bitfield|\[:ref:`PipelineDynamicStateFlags<enum_RenderingDevice_PipelineDynamicStateFlags>`\] = 0, for_render_pass\: :ref:`int<class_int>` = 0, specialization_constants\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] = []\ ) :ref:`🔗<class_RenderingDevice_method_render_pipeline_create>`
 
-Creates a new render pipeline. It can be accessed with the RID that is returned.
+Crea una nueva render pipeline. Se puede acceder a ella con el RID que se devuelve.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una vez que hayas terminado con tu RID, querrás liberarlo usando el método :ref:`free_rid()<class_RenderingDevice_method_free_rid>` de RenderingDevice.
 
-This will be freed automatically when the ``shader`` is freed.
+Esto se liberará automáticamente cuando se libere el ``shader``.
 
 .. rst-class:: classref-item-separator
 
@@ -6397,7 +6397,7 @@ This will be freed automatically when the ``shader`` is freed.
 
 :ref:`bool<class_bool>` **render_pipeline_is_valid**\ (\ render_pipeline\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_render_pipeline_is_valid>`
 
-Returns ``true`` if the render pipeline specified by the ``render_pipeline`` RID is valid, ``false`` otherwise.
+Devuelve ``true`` si el pipeline de renderizado especificado por el RID ``render_pipeline`` es válido, ``false`` en caso contrario.
 
 .. rst-class:: classref-item-separator
 
@@ -6409,9 +6409,9 @@ Returns ``true`` if the render pipeline specified by the ``render_pipeline`` RID
 
 :ref:`RID<class_RID>` **sampler_create**\ (\ state\: :ref:`RDSamplerState<class_RDSamplerState>`\ ) :ref:`🔗<class_RenderingDevice_method_sampler_create>`
 
-Creates a new sampler. It can be accessed with the RID that is returned.
+Crea un nuevo sampler. Se puede acceder a él con el RID que se devuelve.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+Una vez que hayas terminado con tu RID, querrás liberarlo usando el método :ref:`free_rid()<class_RenderingDevice_method_free_rid>` de RenderingDevice.
 
 .. rst-class:: classref-item-separator
 
@@ -6423,7 +6423,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`bool<class_bool>` **sampler_is_format_supported_for_filter**\ (\ format\: :ref:`DataFormat<enum_RenderingDevice_DataFormat>`, sampler_filter\: :ref:`SamplerFilter<enum_RenderingDevice_SamplerFilter>`\ ) |const| :ref:`🔗<class_RenderingDevice_method_sampler_is_format_supported_for_filter>`
 
-Returns ``true`` if implementation supports using a texture of ``format`` with the given ``sampler_filter``.
+Devuelve ``true`` si la implementación soporta el uso de una textura de ``format`` con el ``sampler_filter`` dado.
 
 .. rst-class:: classref-item-separator
 
@@ -6435,9 +6435,9 @@ Returns ``true`` if implementation supports using a texture of ``format`` with t
 
 :ref:`int<class_int>` **screen_get_framebuffer_format**\ (\ screen\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_RenderingDevice_method_screen_get_framebuffer_format>`
 
-Returns the framebuffer format of the given screen.
+Devuelve el formato del framebuffer de la pantalla dada.
 
-\ **Note:** Only the main **RenderingDevice** returned by :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` has a format. If called on a local **RenderingDevice**, this method prints an error and returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **Nota:** Solo el **RenderingDevice** principal devuelto por :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` tiene un formato. Si se llama a este método en un **RenderingDevice** local, se imprime un error y se devuelve :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6449,9 +6449,9 @@ Returns the framebuffer format of the given screen.
 
 :ref:`int<class_int>` **screen_get_height**\ (\ screen\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_RenderingDevice_method_screen_get_height>`
 
-Returns the window height matching the graphics API context for the given window ID (in pixels). Despite the parameter being named ``screen``, this returns the *window* size. See also :ref:`screen_get_width()<class_RenderingDevice_method_screen_get_width>`.
+Devuelve la altura de la ventana que coincide con el contexto de la API gráfica para el ID de ventana dado (en píxeles). A pesar de que el parámetro se llama ``screen``, esto devuelve el tamaño de la *ventana*. Véase también :ref:`screen_get_width()<class_RenderingDevice_method_screen_get_width>`.
 
-\ **Note:** Only the main **RenderingDevice** returned by :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` has a height. If called on a local **RenderingDevice**, this method prints an error and returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **Nota:** Solo el **RenderingDevice** principal devuelto por :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` tiene una altura. Si se llama a este método en un **RenderingDevice** local, se imprime un error y se devuelve :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6463,9 +6463,9 @@ Returns the window height matching the graphics API context for the given window
 
 :ref:`int<class_int>` **screen_get_width**\ (\ screen\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_RenderingDevice_method_screen_get_width>`
 
-Returns the window width matching the graphics API context for the given window ID (in pixels). Despite the parameter being named ``screen``, this returns the *window* size. See also :ref:`screen_get_height()<class_RenderingDevice_method_screen_get_height>`.
+Devuelve el ancho de la ventana que coincide con el contexto de la API gráfica para el ID de ventana dado (en píxeles). A pesar de que el parámetro se llama ``screen``, esto devuelve el tamaño de la *ventana*. Véase también :ref:`screen_get_height()<class_RenderingDevice_method_screen_get_height>`.
 
-\ **Note:** Only the main **RenderingDevice** returned by :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` has a width. If called on a local **RenderingDevice**, this method prints an error and returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **Nota:** Solo el **RenderingDevice** principal devuelto por :ref:`RenderingServer.get_rendering_device()<class_RenderingServer_method_get_rendering_device>` tiene un ancho. Si se llama a este método en un **RenderingDevice** local, se imprime un error y se devuelve :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6477,11 +6477,11 @@ Returns the window width matching the graphics API context for the given window 
 
 |void| **set_resource_name**\ (\ id\: :ref:`RID<class_RID>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_RenderingDevice_method_set_resource_name>`
 
-Sets the resource name for ``id`` to ``name``. This is used for debugging with third-party tools such as `RenderDoc <https://renderdoc.org/>`__.
+Establece el nombre del recurso para ``id`` como ``name``. Esto se utiliza para la depuración con herramientas de terceros como `RenderDoc <https://renderdoc.org/>`__.
 
-The following types of resources can be named: texture, sampler, vertex buffer, index buffer, uniform buffer, texture buffer, storage buffer, uniform set buffer, shader, render pipeline and compute pipeline. Framebuffers cannot be named. Attempting to name an incompatible resource type will print an error.
+Los siguientes tipos de recursos pueden ser nombrados: texture, sampler, vertex buffer, index buffer, uniform buffer, texture buffer, storage buffer, uniform set buffer, shader, render pipeline y compute pipeline. Los framebuffers no pueden ser nombrados. Intentar nombrar un tipo de recurso incompatible imprimirá un error.
 
-\ **Note:** Resource names are only set when the engine runs in verbose mode (:ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` = ``true``), or when using an engine build compiled with the ``dev_mode=yes`` SCons option. The graphics driver must also support the ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` Vulkan extension for named resources to work.
+\ **Nota:** Los nombres de los recursos solo se establecen cuando el motor se ejecuta en modo detallado (:ref:`OS.is_stdout_verbose()<class_OS_method_is_stdout_verbose>` = ``true``), o cuando se utiliza una compilación del motor con la opción SCons ``dev_mode=yes``. El controlador de gráficos también debe ser compatible con la extensión Vulkan ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` para que los recursos nombrados funcionen.
 
 .. rst-class:: classref-item-separator
 
@@ -6493,9 +6493,9 @@ The following types of resources can be named: texture, sampler, vertex buffer, 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **shader_compile_binary_from_spirv**\ (\ spirv_data\: :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, name\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RenderingDevice_method_shader_compile_binary_from_spirv>`
 
-Compiles a binary shader from ``spirv_data`` and returns the compiled binary data as a :ref:`PackedByteArray<class_PackedByteArray>`. This compiled shader is specific to the GPU model and driver version used; it will not work on different GPU models or even different driver versions. See also :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>`.
+Compila un shader binario a partir de ``spirv_data`` y devuelve los datos binarios compilados como un :ref:`PackedByteArray<class_PackedByteArray>`. Este shader compilado es específico del modelo de GPU y la versión del controlador utilizados; no funcionará en diferentes modelos de GPU ni siquiera en diferentes versiones de controlador. Véase también :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>`.
 
-\ ``name`` is an optional human-readable name that can be given to the compiled shader for organizational purposes.
+\ ``name`` es un nombre opcional legible por humanos que se puede dar al shader compilado con fines organizativos.
 
 .. rst-class:: classref-item-separator
 
@@ -6507,9 +6507,9 @@ Compiles a binary shader from ``spirv_data`` and returns the compiled binary dat
 
 :ref:`RDShaderSPIRV<class_RDShaderSPIRV>` **shader_compile_spirv_from_source**\ (\ shader_source\: :ref:`RDShaderSource<class_RDShaderSource>`, allow_cache\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_RenderingDevice_method_shader_compile_spirv_from_source>`
 
-Compiles a SPIR-V from the shader source code in ``shader_source`` and returns the SPIR-V as an :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`. This intermediate language shader is portable across different GPU models and driver versions, but cannot be run directly by GPUs until compiled into a binary shader using :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>`.
+Compila un SPIR-V a partir del código fuente del shader en ``shader_source`` y devuelve el SPIR-V como un :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`. Este shader de lenguaje intermedio es portátil entre diferentes modelos de GPU y versiones de controlador, pero no puede ser ejecutado directamente por las GPUs hasta que se compile en un shader binario usando :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>`.
 
-If ``allow_cache`` is ``true``, make use of the shader cache generated by Godot. This avoids a potentially lengthy shader compilation step if the shader is already in cache. If ``allow_cache`` is ``false``, Godot's shader cache is ignored and the shader will always be recompiled.
+Si ``allow_cache`` es ``true``, utiliza la caché de shaders generada por Godot. Esto evita un paso de compilación de shader potencialmente largo si el shader ya está en la caché. Si ``allow_cache`` es ``false``, la caché de shaders de Godot se ignora y el shader siempre se volverá a compilar.
 
 .. rst-class:: classref-item-separator
 
@@ -6521,9 +6521,9 @@ If ``allow_cache`` is ``true``, make use of the shader cache generated by Godot.
 
 :ref:`RID<class_RID>` **shader_create_from_bytecode**\ (\ binary_data\: :ref:`PackedByteArray<class_PackedByteArray>`, placeholder_rid\: :ref:`RID<class_RID>` = RID()\ ) :ref:`🔗<class_RenderingDevice_method_shader_create_from_bytecode>`
 
-Creates a new shader instance from a binary compiled shader. It can be accessed with the RID that is returned.
+Crea una nueva instancia de shader a partir de un shader binario compilado. Se puede acceder a ella con el RID que se devuelve.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method. See also :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>` and :ref:`shader_create_from_spirv()<class_RenderingDevice_method_shader_create_from_spirv>`.
+Una vez que hayas terminado con tu RID, querrás liberar el RID usando el método :ref:`free_rid()<class_RenderingDevice_method_free_rid>` de RenderingDevice. Véase también :ref:`shader_compile_binary_from_spirv()<class_RenderingDevice_method_shader_compile_binary_from_spirv>` y :ref:`shader_create_from_spirv()<class_RenderingDevice_method_shader_create_from_spirv>`.
 
 .. rst-class:: classref-item-separator
 
@@ -6535,9 +6535,9 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`RID<class_RID>` **shader_create_from_spirv**\ (\ spirv_data\: :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, name\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_RenderingDevice_method_shader_create_from_spirv>`
 
-Creates a new shader instance from SPIR-V intermediate code. It can be accessed with the RID that is returned.
+Crea una nueva instancia de shader a partir de código intermedio SPIR-V. Se puede acceder a ella con el RID que se devuelve.
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method. See also :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>` and :ref:`shader_create_from_bytecode()<class_RenderingDevice_method_shader_create_from_bytecode>`.
+Una vez que hayas terminado con tu RID, querrás liberar el RID usando el método :ref:`free_rid()<class_RenderingDevice_method_free_rid>` de RenderingDevice. Véase también :ref:`shader_compile_spirv_from_source()<class_RenderingDevice_method_shader_compile_spirv_from_source>` y :ref:`shader_create_from_bytecode()<class_RenderingDevice_method_shader_create_from_bytecode>`.
 
 .. rst-class:: classref-item-separator
 

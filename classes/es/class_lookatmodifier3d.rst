@@ -63,7 +63,7 @@ Propiedades
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`Axis<enum_Vector3_Axis>`                      | :ref:`primary_rotation_axis<class_LookAtModifier3D_property_primary_rotation_axis>`                         | ``1``                |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`relative<class_LookAtModifier3D_property_relative>`                                                   | ``true``             |
+   | :ref:`bool<class_bool>`                             | :ref:`relative<class_LookAtModifier3D_property_relative>`                                                   | ``false``            |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`float<class_float>`                           | :ref:`secondary_damp_threshold<class_LookAtModifier3D_property_secondary_damp_threshold>`                   |                      |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
@@ -476,7 +476,7 @@ El eje de la primera rotación. Este :ref:`SkeletonModifier3D<class_SkeletonModi
 
 .. rst-class:: classref-property
 
-:ref:`bool<class_bool>` **relative** = ``true`` :ref:`🔗<class_LookAtModifier3D_property_relative>`
+:ref:`bool<class_bool>` **relative** = ``false`` :ref:`🔗<class_LookAtModifier3D_property_relative>`
 
 .. rst-class:: classref-property-setget
 
@@ -484,6 +484,8 @@ El eje de la primera rotación. Este :ref:`SkeletonModifier3D<class_SkeletonModi
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
 The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+
+\ **Note:** This option affects the base angle for :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>` unlike :ref:`IterateIK3D<class_IterateIK3D>`'s :ref:`JointLimitation3D<class_JointLimitation3D>`. Since the **LookAtModifier3D** relies strongly on Euler rotation, the axis that determines the limitation and the actual rotation are strongly tied together.
 
 .. rst-class:: classref-item-separator
 
@@ -655,11 +657,11 @@ El tipo de transición de la interpolación basada en el tiempo. Véase también
 - |void| **set_use_angle_limitation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_angle_limitation**\ (\ )
 
-Si es ``true``, limita la cantidad de rotación. Por ejemplo, esto ayuda a evitar que el cuello de un personaje rote 360 grados.
+If ``true``, limits the amount of rotation. For example, this helps to prevent a character's neck from rotating 360 degrees.
 
-\ **Nota:** Al igual que con la mezcla de :ref:`AnimationTree<class_AnimationTree>`, se proporciona una interpolación que favorece a :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Esto significa que la interpolación no selecciona el camino más corto en algunos casos.
+\ **Note:** As with :ref:`AnimationTree<class_AnimationTree>` blending, interpolation is provided that favors :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` or :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>` depends on the :ref:`relative<class_LookAtModifier3D_property_relative>` option. This means that interpolation does not select the shortest path in some cases.
 
-\ **Nota:** Algunos valores para :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` (como :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>` y :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`) pueden exceder las limitaciones. Si la interpolación se produce mientras se sobrepasan las limitaciones, es posible que el resultado no respete el reposo del hueso.
+\ **Note:** Some values for :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` (such as :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>`, and :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`) may exceed the limitations. If interpolation occurs while overshooting the limitations, the result might not respect the bone rest.
 
 .. rst-class:: classref-item-separator
 

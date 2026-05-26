@@ -722,7 +722,7 @@ If ``true``, the line number gutter is drawn. Line numbers start at ``1`` and ar
 - |void| **set_line_numbers_min_digits**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_line_numbers_min_digits**\ (\ )
 
-The minimum width in digits reserved for the line number gutter.
+El ancho mínimo en dígitos reservado para el margen (gutter) de los números de línea.
 
 .. rst-class:: classref-item-separator
 
@@ -1224,19 +1224,19 @@ Obtiene todas las líneas con puntos de interrupción.
 
 :ref:`Dictionary<class_Dictionary>` **get_code_completion_option**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CodeEdit_method_get_code_completion_option>`
 
-Gets the completion option at ``index``. The return :ref:`Dictionary<class_Dictionary>` has the following key-values:
+Obtiene la opción de completado en el ``index`` indicado. El :ref:`Dictionary<class_Dictionary>` devuelto tiene los siguientes pares clave-valor:
 
 \ ``kind``: :ref:`CodeCompletionKind<enum_CodeEdit_CodeCompletionKind>`\ 
 
-\ ``display_text``: Text that is shown on the autocomplete menu.
+\ ``display_text``: Texto que se muestra en el menú de autocompletado.
 
-\ ``insert_text``: Text that is to be inserted when this item is selected.
+\ ``insert_text``: Texto que se insertará cuando se seleccione este elemento.
 
-\ ``font_color``: Color of the text on the autocomplete menu.
+\ ``font_color``: Color del texto en el menú de autocompletado.
 
-\ ``icon``: Icon to draw on the autocomplete menu.
+\ ``icon``: Icono que se dibujará en el menú de autocompletado.
 
-\ ``default_value``: Value of the symbol.
+\ ``default_value``: Valor del símbolo.
 
 .. rst-class:: classref-item-separator
 

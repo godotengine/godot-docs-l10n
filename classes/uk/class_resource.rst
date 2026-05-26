@@ -149,7 +149,7 @@ enum **DeepDuplicateMode**: :ref:`🔗<enum_Resource_DeepDuplicateMode>`
 
 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` **DEEP_DUPLICATE_NONE** = ``0``
 
-Жодні підресурси не дублюються. Це корисно навіть при глибокому дублюванні, щоб усі масиви та словники були продубльовані, але все ще вказували на оригінальні ресурси.
+No subresources at all are duplicated. This is useful even in a deep duplication to have all the arrays and dictionaries duplicated but still pointing to the original resources.
 
 .. _class_Resource_constant_DEEP_DUPLICATE_INTERNAL:
 

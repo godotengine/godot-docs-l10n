@@ -9,27 +9,27 @@ CanvasLayer
 
 **Heredado por:** :ref:`ParallaxBackground<class_ParallaxBackground>`
 
-A node used for independent rendering of objects within a 2D scene.
+Un nodo utilizado para el renderizado independiente de objetos dentro de una escena 2D.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-:ref:`CanvasItem<class_CanvasItem>`-derived nodes that are direct or indirect children of a **CanvasLayer** will be drawn in that layer. The layer is a numeric index that defines the draw order. The default 2D scene renders with index ``0``, so a **CanvasLayer** with index ``-1`` will be drawn below, and a **CanvasLayer** with index ``1`` will be drawn above. This order will hold regardless of the :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` of the nodes within each layer.
+Los nodos derivados de :ref:`CanvasItem<class_CanvasItem>` que son hijos directos o indirectos de un **CanvasLayer** se dibujarán en esa capa. La capa es un índice numérico que define el orden de dibujo. La escena 2D predeterminada se renderiza con el índice ``0``, por lo que un **CanvasLayer** con índice ``-1`` se dibujará debajo, y un **CanvasLayer** con índice ``1`` se dibujará encima. Este orden se mantendrá independientemente del :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` de los nodos dentro de cada capa.
 
-\ **CanvasLayer**\ s can be hidden and they can also optionally follow the viewport. This makes them useful for HUDs like health bar overlays (on layers ``1`` and higher) or backgrounds (on layers ``-1`` and lower).
+Los **CanvasLayer** pueden ocultarse y también pueden seguir opcionalmente el viewport. Esto los hace útiles para HUDs como superposiciones de barras de vida (en capas ``1`` y superiores) o fondos (en capas ``-1`` e inferiores).
 
-\ **Note:** Embedded :ref:`Window<class_Window>`\ s are placed on layer ``1024``. :ref:`CanvasItem<class_CanvasItem>`\ s on layers ``1025`` and higher appear in front of embedded windows.
+\ **Nota:** Las :ref:`Window<class_Window>` incrustadas se colocan en la capa ``1024``. Los :ref:`CanvasItem<class_CanvasItem>` en las capas ``1025`` y superiores aparecen delante de las ventanas incrustadas.
 
-\ **Note:** Each **CanvasLayer** is drawn on one specific :ref:`Viewport<class_Viewport>` and cannot be shared between multiple :ref:`Viewport<class_Viewport>`\ s, see :ref:`custom_viewport<class_CanvasLayer_property_custom_viewport>`. When using multiple :ref:`Viewport<class_Viewport>`\ s, for example in a split-screen game, you need to create an individual **CanvasLayer** for each :ref:`Viewport<class_Viewport>` you want it to be drawn on.
+\ **Nota:** Cada **CanvasLayer** se dibuja en un :ref:`Viewport<class_Viewport>` específico y no puede compartirse entre múltiples :ref:`Viewport<class_Viewport>`; consulta :ref:`custom_viewport<class_CanvasLayer_property_custom_viewport>`. Al usar múltiples :ref:`Viewport<class_Viewport>`, por ejemplo en un juego con pantalla dividida, necesitas crear un **CanvasLayer** individual para cada :ref:`Viewport<class_Viewport>` en el que quieras que se dibuje.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+- :doc:`Transformaciones de la ventana gráfica y del lienzo <../tutorials/2d/2d_transforms>`
 
 - :doc:`Capas del canvas <../tutorials/2d/canvas_layers>`
 
@@ -135,9 +135,9 @@ El nodo personalizado :ref:`Viewport<class_Viewport>` asignado al **CanvasLayer*
 - |void| **set_follow_viewport**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_following_viewport**\ (\ )
 
-If enabled, the **CanvasLayer** maintains its position in world space. If disabled, the **CanvasLayer** stays in a fixed position on the screen.
+Si está habilitado, el **CanvasLayer** mantiene su posición en el world space. Si está deshabilitado, el **CanvasLayer** se mantiene en una posición fija en la pantalla.
 
-Together with :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>`, this can be used for a pseudo-3D effect.
+Junto con :ref:`follow_viewport_scale<class_CanvasLayer_property_follow_viewport_scale>`, esto puede usarse para un pseudo-3D effect.
 
 .. rst-class:: classref-item-separator
 
@@ -171,11 +171,11 @@ Scales the layer when using :ref:`follow_viewport_enabled<class_CanvasLayer_prop
 - |void| **set_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_layer**\ (\ )
 
-Layer index for draw order. Lower values are drawn behind higher values.
+Índice de capa para el orden de dibujo. Los valores más bajos se dibujan detrás de los valores más altos.
 
-\ **Note:** If multiple CanvasLayers have the same layer index, :ref:`CanvasItem<class_CanvasItem>` children of one CanvasLayer are drawn behind the :ref:`CanvasItem<class_CanvasItem>` children of the other CanvasLayer. Which CanvasLayer is drawn in front is non-deterministic.
+\ **Nota:** Si varios CanvasLayers tienen el mismo índice de capa, los hijos :ref:`CanvasItem<class_CanvasItem>` de un CanvasLayer se dibujan detrás de los hijos :ref:`CanvasItem<class_CanvasItem>` del otro CanvasLayer. Qué CanvasLayer se dibuja al frente no es determinista.
 
-\ **Note:** The layer index should be between :ref:`RenderingServer.CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` and :ref:`RenderingServer.CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` (inclusive). Any other value will wrap around.
+\ **Nota:** El índice de capa debe estar entre :ref:`RenderingServer.CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` y :ref:`RenderingServer.CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` (inclusivo). Cualquier otro value se envolverá wrap alrededor.
 
 .. rst-class:: classref-item-separator
 
@@ -260,9 +260,9 @@ La transformación de la capa.
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visible**\ (\ )
 
-If ``false``, any :ref:`CanvasItem<class_CanvasItem>` under this **CanvasLayer** will be hidden.
+Si es ``false``, cualquier :ref:`CanvasItem<class_CanvasItem>` debajo de este **CanvasLayer** estará oculto.
 
-Unlike :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`, visibility of a **CanvasLayer** isn't propagated to underlying layers.
+A diferencia de :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`, la visibilidad de un **CanvasLayer** no se propaga a capas subyacentes.
 
 .. rst-class:: classref-section-separator
 

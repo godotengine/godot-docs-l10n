@@ -104,9 +104,9 @@ enum **PlayMode**: :ref:`🔗<enum_AnimationNodeAnimation_PlayMode>`
 - |void| **set_advance_on_start**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_advance_on_start**\ (\ )
 
-若为\ ``true``\ ，在收到一个从头播放某个动画的请求时，第一帧会被绘制，但仅仅是被处理，而回放会从第二帧开始。
+若为 ``true``\ ，则在请求从头播放某个动画时，第一帧不会被绘制，而仅仅是被处理，回放会从第二帧开始。
 
-另见\ :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>`\ 的注意事项。
+另见 :ref:`AnimationPlayer.play()<class_AnimationPlayer_method_play>` 的注意事项。
 
 .. rst-class:: classref-item-separator
 

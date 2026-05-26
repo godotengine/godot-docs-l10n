@@ -16,7 +16,7 @@ Descripción
 
 Una implementación del algoritmo A\*, utilizado para encontrar el camino más corto entre dos vértices en un grafo conectado en un espacio 2D.
 
-Consulta :ref:`AStar3D<class_AStar3D>` para obtener una explicación más detallada sobre cómo usar esta clase. **AStar2D** es un envoltorio para :ref:`AStar3D<class_AStar3D>` que aplica coordenadas 2D.
+Véase :ref:`AStar3D<class_AStar3D>` para obtener una explicación más detallada sobre cómo usar esta clase. **AStar2D** es un envoltorio para :ref:`AStar3D<class_AStar3D>` que aplica coordenadas 2D.
 
 .. rst-class:: classref-introduction-group
 
@@ -178,9 +178,9 @@ Ten en cuenta que esta función está oculta en la clase **AStar2D** por defecto
 
 |void| **add_point**\ (\ id\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`, weight_scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_AStar2D_method_add_point>`
 
-Adds a new point at the given position with the given identifier. The ``id`` must be 0 or larger, and the ``weight_scale`` must be 0.0 or greater.
+Añade un nuevo punto en la posición dada con el identificador dado. El ``id`` debe ser 0 o mayor, y el ``weight_scale`` debe ser 0.0 o mayor.
 
-The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` when determining the overall cost of traveling across a segment from a neighboring point to this point. Thus, all else being equal, the algorithm prefers points with lower ``weight_scale``\ s to form a path.
+El ``weight_scale`` se multiplica por el resultado de :ref:`_compute_cost()<class_AStar2D_private_method__compute_cost>` al determinar el costo total de viajar a través de un segmento desde un punto vecino hasta este punto. Por lo tanto, si todo lo demás es igual, el algoritmo prefiere puntos con ``weight_scale`` más bajos para formar una ruta.
 
 
 .. tabs::
@@ -197,7 +197,7 @@ The ``weight_scale`` is multiplied by the result of :ref:`_compute_cost()<class_
 
 
 
-If there already exists a point for the given ``id``, its position and weight scale are updated to the given values.
+Si ya existe un punto para el ``id`` dado, su posición y escala de peso se actualizan a los valores dados.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Limpia todos los puntos y segmentos.
 
 |void| **connect_points**\ (\ id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, bidirectional\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_AStar2D_method_connect_points>`
 
-Creates a segment between the given points. If ``bidirectional`` is ``false``, only movement from ``id`` to ``to_id`` is allowed, not the reverse direction.
+Crea un segmento entre los puntos dados. Si ``bidirectional`` es ``false``, solo se permite el movimiento desde ``id`` hacia ``to_id``, no en la dirección inversa.
 
 
 .. tabs::
@@ -302,7 +302,7 @@ Devuelve el ID del punto más cercano a ``to_position``, opcionalmente teniendo 
 
 :ref:`Vector2<class_Vector2>` **get_closest_position_in_segment**\ (\ to_position\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_AStar2D_method_get_closest_position_in_segment>`
 
-Returns the closest position to ``to_position`` that resides inside a segment between two connected points.
+Devuelve la posición más cercana a ``to_position`` que reside dentro de un segmento entre dos puntos conectados.
 
 
 .. tabs::
@@ -325,7 +325,7 @@ Returns the closest position to ``to_position`` that resides inside a segment be
 
 
 
-The result is in the segment that goes from ``y = 0`` to ``y = 5``. It's the closest position in the segment to the given point.
+El resultado está en el segmento que va desde ``y = 0`` hasta ``y = 5``. Es la posición más cercana en el segmento al punto dado.
 
 .. rst-class:: classref-item-separator
 
@@ -337,13 +337,13 @@ The result is in the segment that goes from ``y = 0`` to ``y = 5``. It's the clo
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_id_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_id_path>`
 
-Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+Devuelve un array con los IDs de los puntos que forman la ruta encontrada por AStar2D entre los puntos dados. El array está ordenado desde el punto de inicio hasta el punto final de la ruta.
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+Si el punto ``from_id`` está desactivado, devuelve un array vacío (incluso si ``from_id == to_id``).
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+Si el punto ``from_id`` no está desactivado, no hay una ruta válida al objetivo y ``allow_partial_path`` es ``true``, devuelve una ruta al punto más cercano al objetivo que se puede alcanzar.
 
-\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
+\ **Nota:** Cuando ``allow_partial_path`` es ``true`` y ``to_id`` está desactivado, la búsqueda puede tardar un tiempo inusualmente largo en finalizar.
 
 
 .. tabs::
@@ -379,7 +379,7 @@ If ``from_id`` point is not disabled, there is no valid path to the target, and 
 
 
 
-If you change the 2nd point's weight to 3, then the result will be ``[1, 4, 3]`` instead, because now even though the distance is longer, it's "easier" to get through point 4 than through point 2.
+Si cambias el peso del segundo punto a 3, entonces el resultado será ``[1, 4, 3]`` en su lugar, porque ahora, aunque la distancia es mayor, es "más fácil" pasar por el punto 4 que por el punto 2.
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Devuelve la capacidad de la estructura que respalda los puntos, útil en conjunt
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_point_connections**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_AStar2D_method_get_point_connections>`
 
-Returns an array with the IDs of the points that form the connection with the given point.
+Devuelve un array con los IDs de los puntos que forman la conexión con el punto dado.
 
 
 .. tabs::
@@ -446,7 +446,7 @@ Returns an array with the IDs of the points that form the connection with the gi
 
 :ref:`int<class_int>` **get_point_count**\ (\ ) |const| :ref:`🔗<class_AStar2D_method_get_point_count>`
 
-Devuelve el numero de puntos actualmente en el grupo(pool) de puntos.
+Devuelve el número de puntos actualmente en el grupo(pool) de puntos.
 
 .. rst-class:: classref-item-separator
 
@@ -470,15 +470,15 @@ Devuelve un array de todos los ID de los puntos.
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`int<class_int>`, to_id\: :ref:`int<class_int>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStar2D_method_get_point_path>`
 
-Returns an array with the points that are in the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+Devuelve un array con los puntos que están en la ruta encontrada por AStar2D entre los puntos dados. El array está ordenado desde el punto de inicio hasta el punto final de la ruta.
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+Si el punto ``from_id`` está desactivado, devuelve un array vacío (incluso si ``from_id == to_id``).
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+Si el punto ``from_id`` no está desactivado, no hay una ruta válida al objetivo y ``allow_partial_path`` es ``true``, devuelve una ruta al punto más cercano al objetivo que se puede alcanzar.
 
-\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+\ **Nota:** Este método no es seguro para hilos; solo puede usarse desde un único :ref:`Thread<class_Thread>` a la vez. Considera usar :ref:`Mutex<class_Mutex>` para asegurar el acceso exclusivo de un hilo y evitar condiciones de carrera.
 
-Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is disabled the search may take an unusually long time to finish.
+Adicionalmente, cuando ``allow_partial_path`` es ``true`` y ``to_id`` está desactivado, la búsqueda puede tardar un tiempo inusualmente largo en finalizar.
 
 .. rst-class:: classref-item-separator
 

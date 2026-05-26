@@ -849,17 +849,17 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 - |void| **set_use_native_dialog**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_native_dialog**\ (\ )
 
-Якщо ``true``, і якщо підтримується поточним :ref:`DisplayServer<class_DisplayServer>`, замість власного діалогового вікна буде використано рідне діалогове вікно ОС.
+If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
 
-\ **Примітка:** На Android це підтримується лише для пристроїв Android 10+ та під час використання :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. Для режиму доступу :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` та :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>` система повернеться до власного FileDialog.
+\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
 
-\ **Примітка:** У Linux та macOS ізольовані програми завжди використовують рідні діалогові вікна для доступу до файлової системи хоста.
+\ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
 
-\ **Примітка:** У macOS ізольовані програми зберігатимуть закладки з областю безпеки, щоб зберегти доступ до відкритих папок протягом кількох сеансів. Використовуйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, щоб отримати список збережених закладок.
+\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
 
-\ **Примітка:** Рідні діалогові вікна ізольовані від базового процесу, властивості діалогового вікна файлу не можна змінити після того, як діалогове вікно відображається.
+\ **Note:** Native dialogs are isolated from the base process, file dialog properties can't be modified once the dialog is shown.
 
-\ **Примітка:** Ця властивість ігнорується в :ref:`EditorFileDialog<class_EditorFileDialog>`.
+\ **Note:** This property is ignored in :ref:`EditorFileDialog<class_EditorFileDialog>`.
 
 .. rst-class:: classref-section-separator
 

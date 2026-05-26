@@ -63,7 +63,7 @@ Ruta a la hoja de sprites del atlas. Esto *debe* establecerse en una ruta válid
 
 :ref:`bool<class_bool>` **crop_to_region** = ``false`` :ref:`🔗<class_ResourceImporterTextureAtlas_property_crop_to_region>`
 
-Si es ``true``, descarta las áreas vacías del atlas. Esto solo afecta el posicionamiento final del sprite, no el almacenamiento. Consulta también :ref:`trim_alpha_border_from_region<class_ResourceImporterTextureAtlas_property_trim_alpha_border_from_region>`.
+Si es ``true``, descarta las áreas vacías del atlas. Esto solo afecta el posicionamiento final del sprite, no el almacenamiento. Véase también :ref:`trim_alpha_border_from_region<class_ResourceImporterTextureAtlas_property_trim_alpha_border_from_region>`.
 
 \ **Nota:** Solo es efectivo si :ref:`import_mode<class_ResourceImporterTextureAtlas_property_import_mode>` es **Region**.
 

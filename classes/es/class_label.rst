@@ -17,9 +17,9 @@ Un control para mostrar texto sin formato.
 Descripción
 ----------------------
 
-A control for displaying plain text. It gives you control over the horizontal and vertical alignment and can wrap the text inside the node's bounding rectangle. It doesn't support bold, italics, or other rich text formatting. For that, use :ref:`RichTextLabel<class_RichTextLabel>` instead.
+Un control para mostrar texto sin formato. Te da control sobre la alineación horizontal y vertical y puede ajustar el texto dentro del rectángulo delimitador del nodo. No admite negrita, cursiva u otro formato de texto enriquecido. Para eso, usa :ref:`RichTextLabel<class_RichTextLabel>` en su lugar.
 
-\ **Note:** A single Label node is not designed to display huge amounts of text. To display large amounts of text in a single node, consider using :ref:`RichTextLabel<class_RichTextLabel>` instead as it supports features like an integrated scroll bar and threading. :ref:`RichTextLabel<class_RichTextLabel>` generally performs better when displaying large amounts of text (several pages or more).
+\ **Nota:** Un solo nodo Label no está diseñado para mostrar grandes cantidades de texto. Para mostrar grandes cantidades de texto en un solo nodo, considera usar :ref:`RichTextLabel<class_RichTextLabel>` en su lugar, ya que soporta características como una barra de desplazamiento integrada y subprocesos. :ref:`RichTextLabel<class_RichTextLabel>` generalmente rinde mejor al mostrar grandes cantidades de texto (varias páginas o más).
 
 .. rst-class:: classref-introduction-group
 
@@ -649,7 +649,7 @@ El color del contorno del texto.
 
 :ref:`int<class_int>` **line_spacing** = ``3`` :ref:`🔗<class_Label_theme_constant_line_spacing>`
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al descenso de la línea (line descent). Este valor puede ser negativo.
 
 .. rst-class:: classref-item-separator
 

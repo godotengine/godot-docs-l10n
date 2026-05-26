@@ -341,7 +341,7 @@ OptionButton
 
 :ref:`int<class_int>` **get_item_index**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OptionButton_method_get_item_index>`
 
-返回 ID 为 ``id`` 的菜单项的索引。
+返回具有指定 ``id`` 的项目的索引。
 
 .. rst-class:: classref-item-separator
 

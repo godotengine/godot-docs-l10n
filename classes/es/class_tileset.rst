@@ -24,7 +24,7 @@ Se puede configurar un TileSet para que sus tiles expongan más o menos propieda
 
 Por ejemplo, añadir una capa de física permite dar formas de colisión a tus tiles. Cada capa tiene propiedades dedicadas (capa de física y máscara), por lo que puedes añadir varias capas de física TileSet para cada tipo de colisión que necesites.
 
-Consulta las funciones para añadir nuevas capas para obtener más información.
+Véanse las funciones para añadir nuevas capas para obtener más información.
 
 .. rst-class:: classref-introduction-group
 

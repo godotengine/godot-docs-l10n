@@ -175,7 +175,7 @@ La `heurística de Manhattan <https://en.wikipedia.org/wiki/Taxicab_geometry>`__
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_OCTILE** = ``2``
 
-The Octile heuristic to be used for the pathfinding using the following formula:
+La heurística Octile que se utilizará para la búsqueda de trayectos utiliza la siguiente fórmula:
 
 ::
 
@@ -543,13 +543,13 @@ Rellena la ``region`` dada en la cuadrícula con el valor especificado para la e
 
 :ref:`Array<class_Array>`\[:ref:`Vector2i<class_Vector2i>`\] **get_id_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_id_path>`
 
-Returns an array with the IDs of the points that form the path found by AStar2D between the given points. The array is ordered from the starting point to the ending point of the path.
+Devuelve un array con los IDs de los puntos que forman la ruta encontrada por AStar2D entre los puntos dados. El array está ordenado desde el punto de inicio hasta el punto final de la ruta.
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+Si el punto ``from_id`` está desactivado, devuelve un array vacío (incluso si ``from_id == to_id``).
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+Si el punto ``from_id`` no está desactivado, no hay una ruta válida al objetivo y ``allow_partial_path`` es ``true``, devuelve una ruta al punto más cercano al objetivo que se puede alcanzar.
 
-\ **Note:** When ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
+\ **Nota:** Cuando ``allow_partial_path`` es ``true`` y ``to_id`` es sólido, la búsqueda puede tardar un tiempo inusualmente largo en finalizar.
 
 .. rst-class:: classref-item-separator
 
@@ -573,15 +573,15 @@ Devuelve un array de diccionarios con información de los puntos (``id``: :ref:`
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_point_path**\ (\ from_id\: :ref:`Vector2i<class_Vector2i>`, to_id\: :ref:`Vector2i<class_Vector2i>`, allow_partial_path\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AStarGrid2D_method_get_point_path>`
 
-Returns an array with the points that are in the path found by **AStarGrid2D** between the given points. The array is ordered from the starting point to the ending point of the path.
+Devuelve un array con los puntos que están en la ruta encontrada por **AStarGrid2D** entre los puntos dados. El array está ordenado desde el punto de inicio hasta el punto final de la ruta.
 
-If ``from_id`` point is disabled, returns an empty array (even if ``from_id == to_id``).
+Si el punto ``from_id`` está desactivado, devuelve un array vacío (incluso si ``from_id == to_id``).
 
-If ``from_id`` point is not disabled, there is no valid path to the target, and ``allow_partial_path`` is ``true``, returns a path to the point closest to the target that can be reached.
+Si el punto ``from_id`` no está desactivado, no hay una ruta válida al objetivo y ``allow_partial_path`` es ``true``, devuelve una ruta al punto más cercano al objetivo que se puede alcanzar.
 
-\ **Note:** This method is not thread-safe; it can only be used from a single :ref:`Thread<class_Thread>` at a given time. Consider using :ref:`Mutex<class_Mutex>` to ensure exclusive access to one thread to avoid race conditions.
+\ **Nota:** Este método no es seguro para hilos; solo puede usarse desde un único :ref:`Thread<class_Thread>` a la vez. Considera usar :ref:`Mutex<class_Mutex>` para asegurar el acceso exclusivo de un hilo y evitar condiciones de carrera.
 
-Additionally, when ``allow_partial_path`` is ``true`` and ``to_id`` is solid the search may take an unusually long time to finish.
+Adicionalmente, cuando ``allow_partial_path`` es ``true`` y ``to_id`` es sólido, la búsqueda puede tardar un tiempo inusualmente largo en finalizar.
 
 .. rst-class:: classref-item-separator
 

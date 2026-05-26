@@ -7,7 +7,7 @@ HashingContext
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides functionality for computing cryptographic hashes chunk by chunk.
+Proporciona funcionalidad para calcular hashes criptográficos fragmento a fragmento.
 
 .. rst-class:: classref-introduction-group
 

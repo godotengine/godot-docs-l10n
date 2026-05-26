@@ -303,7 +303,7 @@ Adds lines to the gizmo (as sets of 2 points), with a given material. The lines 
 
 |void| **add_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, material\: :ref:`Material<class_Material>` = null, transform\: :ref:`Transform3D<class_Transform3D>` = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), skeleton\: :ref:`SkinReference<class_SkinReference>` = null\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_mesh>`
 
-Adds a mesh to the gizmo with the specified ``material``, local ``transform`` and ``skeleton``. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
+Agregar un mesh al gizmo con el ``material``, ``transform`` local y ``skeleton`` especificado. Llama este función dentro de :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ Adds a mesh to the gizmo with the specified ``material``, local ``transform`` an
 
 |void| **add_unscaled_billboard**\ (\ material\: :ref:`Material<class_Material>`, default_scale\: :ref:`float<class_float>` = 1, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_EditorNode3DGizmo_method_add_unscaled_billboard>`
 
-Adds an unscaled billboard for visualization and selection. Call this method during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
+Añade una billboard sin escala para la visualización. Llame a esta función durante el :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ Devuelve el :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>` que po
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_subgizmo_selection**\ (\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_get_subgizmo_selection>`
 
-Returns a list of the currently selected subgizmos. Can be used to highlight selected elements during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
+Devuleve una lista de los subgizmos selecionados, Se puede usar para resaltar los elementos selecionados durante el :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ Returns a list of the currently selected subgizmos. Can be used to highlight sel
 
 :ref:`bool<class_bool>` **is_subgizmo_selected**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorNode3DGizmo_method_is_subgizmo_selected>`
 
-Returns ``true`` if the given subgizmo is currently selected. Can be used to highlight selected elements during :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
+Devuelve ``true`` si el subgizmo dado está actualmente seleccionado. Se puede usar para resaltar los elementos seleccionados durante el :ref:`_redraw()<class_EditorNode3DGizmo_private_method__redraw>`.
 
 .. rst-class:: classref-item-separator
 

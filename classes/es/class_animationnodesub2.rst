@@ -14,13 +14,13 @@ Combina dos animaciones de forma sustractiva dentro de un :ref:`AnimationNodeBle
 Descripción
 ----------------------
 
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations subtractively based on the amount value.
+Es un recurso que se puede añadir a un :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Combina dos animaciones de forma sustractiva en función del valor de cantidad.
 
-This animation node is usually used for pre-calculation to cancel out any extra poses from the animation for the "add" animation source in :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` or :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>`.
+Este nodo de animación se suele utilizar para realizar cálculos previos con el objetivo de cancelar cualquier pose extra de la animación para el recurso "añadir" en :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` o :ref:`AnimationNodeAdd3<class_AnimationNodeAdd3>`.
 
-In general, the blend value should be in the ``[0.0, 1.0]`` range, but values outside of this range can be used for amplified or inverted animations.
+En general, el valor de mezcla debe estar en el rango de ``[0.0, 1.0]``, pero se pueden usar valores fuera de este rango para amplificar o invertir animaciones.
 
-\ **Note:** This calculation is different from using a negative value in :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`, since the transformation matrices do not satisfy the commutative law. **AnimationNodeSub2** multiplies the transformation matrix of the inverted animation from the left side, while negative :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` multiplies it from the right side.
+\ **Nota: ** Este cálculo es diferente a utilizar un valor negativo en :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>`, ya que la transformación de matrices no cumple la ley conmutativa. **AnimationNodeSub2** multiplica la matriz transformada de la animación invertida desde el lado izquierdo, mientras que el :ref:`AnimationNodeAdd2<class_AnimationNodeAdd2>` negativo lo multiplica del lado derecho.
 
 .. rst-class:: classref-introduction-group
 

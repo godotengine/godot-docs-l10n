@@ -12,48 +12,48 @@ Una estructura de datos incorporada que contiene una secuencia de elementos.
 Descripción
 ----------------------
 
-An array data structure that can contain a sequence of elements of any :ref:`Variant<class_Variant>` type by default. Values can optionally be constrained to a specific type by creating a *typed array*. Elements are accessed by a numerical index starting at ``0``. Negative indices are used to count from the back (``-1`` is the last element, ``-2`` is the second to last, etc.).
+Una estructura de datos de tipo arreglo que puede contener una secuencia de elementos de cualquier tipo :ref:`Variant<class_Variant>` de forma predeterminada. Opcionalmente, los valores pueden restringirse a un tipo específico creando un *arreglo tipado*. Se accede a los elementos mediante un índice numérico que comienza en ``0``. Los índices negativos se utilizan para contar desde el final (``-1`` es el último elemento, ``-2`` es el penúltimo, etc.).
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var array = ["First", 2, 3, "Last"]
-    print(array[0])  # Prints "First"
-    print(array[2])  # Prints 3
-    print(array[-1]) # Prints "Last"
+    var array = ["Primero", 2, 3, "Ultimo"]
+    print(array[0]) # Imprime "Primero"
+    print(array[2]) # Imprime 3
+    print(array[-1]) # Imprime "Ultimo"
 
-    array[1] = "Second"
-    print(array[1])  # Prints "Second"
-    print(array[-3]) # Prints "Second"
+    array[1] = "Segundo"
+    print(array[1]) # Imprime "Segundo"
+    print(array[-3]) # Imprime "Segundo"
 
-    # This typed array can only contain integers.
-    # Attempting to add any other type will result in an error.
+    # Este arreglo tipado solo puede contener enteros.
+    # Intentar agregar un valor de otro tipo provocará un error.
     var typed_array: Array[int] = [1, 2, 3]
 
  .. code-tab:: csharp
 
-    Godot.Collections.Array array = ["First", 2, 3, "Last"];
-    GD.Print(array[0]); // Prints "First"
-    GD.Print(array[2]); // Prints 3
-    GD.Print(array[^1]); // Prints "Last"
+    Godot.Collections.Array array = ["Primero", 2, 3, "Ultimo"];
+    GD.Print(array[0]); // Imprime "Primero"
+    GD.Print(array[2]); // Imprime 3
+    GD.Print(array[^1]); // Imprime "Ultimo"
 
-    array[1] = "Second";
-    GD.Print(array[1]); // Prints "Second"
-    GD.Print(array[^3]); // Prints "Second"
+    array[1] = "Segundo";
+    GD.Print(array[1]); // Imprime "Segundo"
+    GD.Print(array[^3]); // Imprime "Segundo"
 
-    // This typed array can only contain integers.
-    // Attempting to add any other type will result in an error.
+    // Este arreglo tipado solo puede contener enteros.
+    // Intentar agregar un valor de otro tipo provocará un error.
     Godot.Collections.Array<int> typedArray = [1, 2, 3];
 
 
 
-\ **Note:** Arrays are always passed by **reference**. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_Array_method_duplicate>`.
+\ **Nota:** Los arreglos siempre se pasan por **referencia**. Para obtener una copia de un arreglo que pueda modificarse independientemente del original, use :ref:`duplicate()<class_Array_method_duplicate>`.
 
-\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
+\ **Nota:** **No** está soportado eliminar elementos mientras se itera sobre arreglos, y hacerlo dará como resultado un comportamiento impredecible.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. :ref:`PackedInt64Array<class_PackedInt64Array>` versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Diferencias entre arreglos empaquetados, tipados y no tipados:** Los arreglos empaquetados suelen ser más rápidos de iterar y modificar que un arreglo tipado del mismo tipo (por ejemplo, :ref:`PackedInt64Array<class_PackedInt64Array>` frente a ``Array[int]``). Además, los arreglos empaquetados consumen menos memoria. Como desventaja, son menos flexibles, ya que no ofrecen tantos métodos de conveniencia como :ref:`map()<class_Array_method_map>`. A su vez, los arreglos tipados son más rápidos de iterar y modificar que los arreglos no tipados.
 
 .. note::
 
@@ -258,15 +258,15 @@ Construye un **Array** vacío.
 
 :ref:`Array<class_Array>` **Array**\ (\ base\: :ref:`Array<class_Array>`, type\: :ref:`int<class_int>`, class_name\: :ref:`StringName<class_StringName>`, script\: :ref:`Variant<class_Variant>`\ )
 
-Creates a typed array from the ``base`` array. A typed array can only contain elements of the given type, or that inherit from the given class, as described by this constructor's parameters:
+Crea un arreglo tipado a partir del arreglo ``base``. Un arreglo tipado solo puede contener elementos del tipo indicado, o que hereden de la clase especificada, según lo descrito por los parámetros de este constructor:
 
-- ``type`` is the built-in :ref:`Variant<class_Variant>` type, as one the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` constants.
+- ``type`` es el tipo incorporado de :ref:`Variant<class_Variant>`, como una de las constantes de :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
 
-- ``class_name`` is the built-in class name (see :ref:`Object.get_class()<class_Object_method_get_class>`).
+- ``class_name`` es el nombre de la clase incorporada (ver :ref:`Object.get_class()<class_Object_method_get_class>`).
 
-- ``script`` is the associated script. It must be a :ref:`Script<class_Script>` instance or ``null``.
+- ``script`` es el script asociado. Debe ser una instancia de :ref:`Script<class_Script>` o ``null``.
 
-If ``type`` is not :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`, ``class_name`` must be an empty :ref:`StringName<class_StringName>` and ``script`` must be ``null``.
+Si ``type`` no es :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>`, ``class_name`` debe ser un :ref:`StringName<class_StringName>` vacío y ``script`` debe ser ``null``.
 
 ::
 
@@ -282,9 +282,9 @@ If ``type`` is not :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TY
         var c = Array([], TYPE_OBJECT, "Node", Sword)       # Array[Sword]
         var d = Array([], TYPE_OBJECT, "RefCounted", Stats) # Array[Stats]
 
-The ``base`` array's elements are converted when necessary. If this is not possible or ``base`` is already typed, this constructor fails and returns an empty **Array**.
+Los elementos del arreglo ``base`` se convierten cuando es necesario. Si esto no es posible o si ``base`` ya es tipado, este constructor falla y devuelve un **Array** vacío.
 
-In GDScript, this constructor is usually not necessary, as it is possible to create a typed array through static typing:
+En GDScript, este constructor normalmente no es necesario, ya que es posible crear un arreglo tipado mediante tipado estático:
 
 ::
 
@@ -292,7 +292,7 @@ In GDScript, this constructor is usually not necessary, as it is possible to cre
     var children: Array[Node] = [$Node, $Sprite2D, $RigidBody3D]
 
     var integers: Array[int] = [0.2, 4.5, -2.0]
-    print(integers) # Prints [0, 4, -2]
+    print(integers) # Imprime [0, 4, -2]
 
 .. rst-class:: classref-item-separator
 
@@ -419,9 +419,9 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **all**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_all>`
 
-Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *all* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for one array element or more, this method returns ``false``.
+Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve ``true`` si el :ref:`Callable<class_Callable>` devuelve ``true`` para *todos* los elementos del arreglo. Si el :ref:`Callable<class_Callable>` devuelve ``false`` para uno o más elementos, este método devuelve ``false``.
 
-The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
+El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el elemento actual del arreglo) y devolver un :ref:`bool<class_bool>`.
 
 
 .. tabs::
@@ -432,13 +432,13 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
         return number > 5
 
     func _ready():
-        print([6, 10, 6].all(greater_than_5)) # Prints true (3/3 elements evaluate to true).
-        print([4, 10, 4].all(greater_than_5)) # Prints false (1/3 elements evaluate to true).
-        print([4, 4, 4].all(greater_than_5))  # Prints false (0/3 elements evaluate to true).
-        print([].all(greater_than_5))         # Prints true (0/0 elements evaluate to true).
+        print([6, 10, 6].all(greater_than_5)) # Imprime true (3/3 elementos evalúan a true).
+        print([4, 10, 4].all(greater_than_5)) # Imprime false (1/3 elementos evalúan a true).
+        print([4, 4, 4].all(greater_than_5))  # Imprime false (0/3 elementos evalúan a true).
+        print([].all(greater_than_5))         # Imprime true (0/0 elementos evalúan a true).
 
-        # Same as the first line above, but using a lambda function.
-        print([6, 10, 6].all(func(element): return element > 5)) # Prints true
+        # Igual que la primera línea de arriba, pero usando una función lambda.
+        print([6, 10, 6].all(func(element): return element > 5)) # Imprime true
 
  .. code-tab:: csharp
 
@@ -449,26 +449,26 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
 
     public override void _Ready()
     {
-        // Prints True (3/3 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(GreaterThan5));
-        // Prints False (1/3 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(GreaterThan5));
-        // Prints False (0/3 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(GreaterThan5));
-        // Prints True (0/0 elements evaluate to true).
-        GD.Print(new Godot.Collections.Array>int< { }.All(GreaterThan5));
+        // Imprime True (3/3 elementos evalúan a true).
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
+        // Imprime False (1/3 elementos evalúan a true).
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
+        // Imprime False (0/3 elementos evalúan a true).
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
+        // Imprime True (0/0 elementos evalúan a true).
+        GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
-        // Same as the first line above, but using a lambda function.
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // Prints True
+        // Igual que la primera línea de arriba, pero usando una función lambda.
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Imprime True
     }
 
 
 
-See also :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
+Véase también :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` y :ref:`reduce()<class_Array_method_reduce>`.
 
-\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
+\ **Nota:** A diferencia de depender del tamaño de un arreglo devuelto por :ref:`filter()<class_Array_method_filter>`, este método devuelve el resultado lo antes posible para mejorar el rendimiento (especialmente con arreglos grandes).
 
-\ **Note:** For an empty array, this method `always <https://en.wikipedia.org/wiki/Vacuous_truth>`__ returns ``true``.
+\ **Nota:** Para un arreglo vacío, este método `siempre <https://es.wikipedia.org/wiki/Vacuous_truth>`__ devuelve ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -480,9 +480,9 @@ See also :ref:`any()<class_Array_method_any>`, :ref:`filter()<class_Array_method
 
 :ref:`bool<class_bool>` **any**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_any>`
 
-Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns ``true`` if the :ref:`Callable<class_Callable>` returns ``true`` for *one or more* elements in the array. If the :ref:`Callable<class_Callable>` returns ``false`` for all elements in the array, this method returns ``false``.
+Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve ``true`` si el :ref:`Callable<class_Callable>` devuelve ``true`` para *uno o más* elementos del arreglo. Si el :ref:`Callable<class_Callable>` devuelve ``false`` para todos los elementos, este método devuelve ``false``.
 
-The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and return a :ref:`bool<class_bool>`.
+El parámetro ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el elemento actual del arreglo) y devolver un :ref:`bool<class_bool>`.
 
 ::
 
@@ -490,19 +490,19 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
         return number > 5
 
     func _ready():
-        print([6, 10, 6].any(greater_than_5)) # Prints true (3 elements evaluate to true).
-        print([4, 10, 4].any(greater_than_5)) # Prints true (1 elements evaluate to true).
-        print([4, 4, 4].any(greater_than_5))  # Prints false (0 elements evaluate to true).
-        print([].any(greater_than_5))         # Prints false (0 elements evaluate to true).
+        print([6, 10, 6].any(greater_than_5)) # Imprime true (3 elementos evalúan a true).
+        print([4, 10, 4].any(greater_than_5)) # Imprime true (1 elemento evalúa a true).
+        print([4, 4, 4].any(greater_than_5))  # Imprime false (0 elementos evalúan a true).
+        print([].any(greater_than_5))         # Imprime false (0 elementos evalúan a true).
 
-        # Same as the first line above, but using a lambda function.
-        print([6, 10, 6].any(func(number): return number > 5)) # Prints true
+        # Igual que la primera línea de arriba, pero usando una función lambda.
+        print([6, 10, 6].any(func(number): return number > 5)) # Imprime true
 
-See also :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
+Véase también :ref:`all()<class_Array_method_all>`, :ref:`filter()<class_Array_method_filter>`, :ref:`map()<class_Array_method_map>` y :ref:`reduce()<class_Array_method_reduce>`.
 
-\ **Note:** Unlike relying on the size of an array returned by :ref:`filter()<class_Array_method_filter>`, this method will return as early as possible to improve performance (especially with large arrays).
+\ **Nota:** A diferencia de depender del tamaño de un arreglo devuelto por :ref:`filter()<class_Array_method_filter>`, este método devuelve el resultado lo antes posible para mejorar el rendimiento (especialmente con arreglos grandes).
 
-\ **Note:** For an empty array, this method always returns ``false``.
+\ **Nota:** Para un arreglo vacío, este método siempre devuelve ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -557,9 +557,9 @@ Asigna los elementos de otro ``array`` en el array. Cambia el tamaño del array 
 
 :ref:`Variant<class_Variant>` **back**\ (\ ) |const| :ref:`🔗<class_Array_method_back>`
 
-Returns the last element of the array. If the array is empty, fails and returns ``null``. See also :ref:`front()<class_Array_method_front>`.
+Devuelve el último elemento del array. Si el array está vacío, falla y devuelve ``null``. Véase también :ref:`front()<class_Array_method_front>`.
 
-\ **Note:** Unlike with the ``[]`` operator (``array[-1]``), an error is generated without stopping project execution.
+\ **Nota:** A diferencia del ``[]`` operador (``array[-1]``), se genera un error sin detener la ejecución del proyecto.
 
 .. rst-class:: classref-item-separator
 
@@ -571,9 +571,9 @@ Returns the last element of the array. If the array is empty, fails and returns 
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Variant<class_Variant>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch>`
 
-Returns the index of ``value`` in the sorted array. If it cannot be found, returns where ``value`` should be inserted to keep the array sorted. The algorithm used is `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__.
+Devuelve el índice de ``value`` en el arreglo ordenado. Si no se encuentra, devuelve la posición en la que se debería insertar ``value`` para mantener el arreglo ordenado. El algoritmo utilizado es la `búsqueda binaria <https://es.wikipedia.org/wiki/B%C3%Basqueda_binaria>`__.
 
-If ``before`` is ``true`` (as by default), the returned index comes before all existing elements equal to ``value`` in the array.
+Si el parámetro ``before`` es ``true`` (como por defecto), el índice devuelto estará antes de todos los elementos existentes iguales a ``value`` en el arreglo.
 
 ::
 
@@ -581,13 +581,13 @@ If ``before`` is ``true`` (as by default), the returned index comes before all e
     var idx = numbers.bsearch(7)
 
     numbers.insert(idx, 7)
-    print(numbers) # Prints [2, 4, 7, 8, 10]
+    print(numbers) # Imprime [2, 4, 7, 8, 10]
 
-    var fruits = ["Apple", "Lemon", "Lemon", "Orange"]
-    print(fruits.bsearch("Lemon", true))  # Prints 1, points at the first "Lemon".
-    print(fruits.bsearch("Lemon", false)) # Prints 3, points at "Orange".
+    var fruits = ["Limón", "Manzana", "Manzana", "Naranja"]
+    print(fruits.bsearch("Manzana", true)) # Imprime 1, apunta al primer "Manzana".
+    print(fruits.bsearch("Manzana", false)) # Imprime 3, apunta a "Naranja".
 
-\ **Note:** Calling :ref:`bsearch()<class_Array_method_bsearch>` on an *unsorted* array will result in unexpected behavior. Use :ref:`sort()<class_Array_method_sort>` before calling this method.
+\ **Nota:** Llamar a :ref:`bsearch()<class_Array_method_bsearch>` sobre un arreglo *no ordenado* dará lugar a un comportamiento inesperado. Utilice :ref:`sort()<class_Array_method_sort>` antes de llamar a este método.
 
 .. rst-class:: classref-item-separator
 
@@ -599,11 +599,11 @@ If ``before`` is ``true`` (as by default), the returned index comes before all e
 
 :ref:`int<class_int>` **bsearch_custom**\ (\ value\: :ref:`Variant<class_Variant>`, func\: :ref:`Callable<class_Callable>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch_custom>`
 
-Returns the index of ``value`` in the sorted array. If it cannot be found, returns where ``value`` should be inserted to keep the array sorted (using ``func`` for the comparisons). The algorithm used is `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__.
+Devuelve el índice de ``value`` en el arreglo ordenado. Si no se encuentra, devuelve la posición en la que se debería insertar ``value`` para mantener el arreglo ordenado (utilizando ``func`` para las comparaciones). El algoritmo utilizado es la `búsqueda binaria <https://es.wikipedia.org/wiki/B%C3%Basqueda_binaria>`__.
 
-Similar to :ref:`sort_custom()<class_Array_method_sort_custom>`, ``func`` is called as many times as necessary, receiving one array element and ``value`` as arguments. The function should return ``true`` if the array element should be *behind* ``value``, otherwise it should return ``false``.
+De manera similar a :ref:`sort_custom()<class_Array_method_sort_custom>`, ``func`` se llama tantas veces como sea necesario, recibiendo un elemento del arreglo y ``value`` como argumentos. La función debe devolver ``true`` si el elemento del arreglo debe colocarse *detrás* de ``value``, de lo contrario debe devolver ``false``.
 
-If ``before`` is ``true`` (as by default), the returned index comes before all existing elements equal to ``value`` in the array.
+Si ``before`` es ``true`` (como por defecto), el índice devuelto estará antes de todos los elementos existentes iguales a ``value`` en el arreglo.
 
 ::
 
@@ -616,17 +616,17 @@ If ``before`` is ``true`` (as by default), the returned index comes before all e
         var my_items = [["Tomato", 2], ["Kiwi", 5], ["Rice", 9]]
 
         var apple = ["Apple", 5]
-        # "Apple" is inserted before "Kiwi".
+        # "Apple" se inserta antes de "Kiwi".
         my_items.insert(my_items.bsearch_custom(apple, sort_by_amount, true), apple)
 
         var banana = ["Banana", 5]
-        # "Banana" is inserted after "Kiwi".
+        # "Banana" se inserta después de "Kiwi".
         my_items.insert(my_items.bsearch_custom(banana, sort_by_amount, false), banana)
 
-        # Prints [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
+        # Imprime [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
         print(my_items)
 
-\ **Note:** Calling :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` on an *unsorted* array will result in unexpected behavior. Use :ref:`sort_custom()<class_Array_method_sort_custom>` with ``func`` before calling this method.
+\ **Nota:** Llamar a :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` sobre un arreglo *no ordenado* dará lugar a un comportamiento inesperado. Use :ref:`sort_custom()<class_Array_method_sort_custom>` con ``func`` antes de llamar a este método.
 
 .. rst-class:: classref-item-separator
 
@@ -680,9 +680,9 @@ Si ``deep`` es ``true``, se devuelve una copia **profunda**: Todos los arrays y 
 
 :ref:`Array<class_Array>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Array_method_duplicate_deep>`
 
-Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+Duplica este array profundamente, como :ref:`duplicate()<class_Array_method_duplicate>` al pasar ``true``, con control adicional sobre cómo se manejan los subrecursos.
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` debe ser uno de los valores de :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. Por defecto, solo se duplicarán los recursos internos (recursivamente).
 
 .. rst-class:: classref-item-separator
 
@@ -694,11 +694,11 @@ Duplicates this array, deeply, like :ref:`duplicate()<class_Array_method_duplica
 
 |void| **erase**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_erase>`
 
-Finds and removes the first occurrence of ``value`` from the array. If ``value`` does not exist in the array, nothing happens. To remove an element by index, use :ref:`remove_at()<class_Array_method_remove_at>` instead.
+Encuentra y elimina la primera aparición de ``value`` del array. Si ``value`` no existe en el array, no ocurre nada. Para eliminar un elemento por índice, usa :ref:`remove_at()<class_Array_method_remove_at>` en su lugar.
 
-\ **Note:** This method shifts every element's index after the removed ``value`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **Nota:** Este método desplaza hacia atrás el índice de cada elemento después del ``value`` eliminado, lo que puede tener un coste de rendimiento notable, especialmente en arrays grandes.
 
-\ **Note:** Erasing elements while iterating over arrays is **not** supported and will result in unpredictable behavior.
+\ **Nota:** Eliminar elementos mientras se itera sobre arrays **no** está soportado y resultará en un comportamiento impredecible.
 
 .. rst-class:: classref-item-separator
 
@@ -710,9 +710,9 @@ Finds and removes the first occurrence of ``value`` from the array. If ``value``
 
 |void| **fill**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_fill>`
 
-Assigns the given ``value`` to all elements in the array.
+Asigna el ``value`` dado a todos los elementos del arreglo.
 
-This method can often be combined with :ref:`resize()<class_Array_method_resize>` to create an array with a given size and initialized elements:
+Este método se puede combinar a menudo con :ref:`resize()<class_Array_method_resize>` para crear un arreglo de un tamaño determinado y con elementos inicializados:
 
 
 .. tabs::
@@ -722,18 +722,18 @@ This method can often be combined with :ref:`resize()<class_Array_method_resize>
     var array = []
     array.resize(5)
     array.fill(2)
-    print(array) # Prints [2, 2, 2, 2, 2]
+    print(array) # Imprime [2, 2, 2, 2, 2]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array array = [];
     array.Resize(5);
     array.Fill(2);
-    GD.Print(array); // Prints [2, 2, 2, 2, 2]
+    GD.Print(array); // Imprime [2, 2, 2, 2, 2]
 
 
 
-\ **Note:** If ``value`` is a :ref:`Variant<class_Variant>` passed by reference (:ref:`Object<class_Object>`-derived, **Array**, :ref:`Dictionary<class_Dictionary>`, etc.), the array will be filled with references to the same ``value``, which are not duplicates.
+\ **Nota:** Si ``value`` es un :ref:`Variant<class_Variant>` pasado por referencia (derivado de :ref:`Object<class_Object>`, **Array**, :ref:`Dictionary<class_Dictionary>`, etc.), el arreglo se llenará con referencias al mismo ``value``, las cuales no son duplicados.
 
 .. rst-class:: classref-item-separator
 
@@ -745,9 +745,9 @@ This method can often be combined with :ref:`resize()<class_Array_method_resize>
 
 :ref:`Array<class_Array>` **filter**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_filter>`
 
-Calls the given :ref:`Callable<class_Callable>` on each element in the array and returns a new, filtered **Array**.
+Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve un nuevo **Array** filtrado.
 
-The ``method`` receives one of the array elements as an argument, and should return ``true`` to add the element to the filtered array, or ``false`` to exclude it.
+El parámetro ``method`` recibe como argumento uno de los elementos del arreglo y debe devolver ``true`` para agregar el elemento al arreglo filtrado, o ``false`` para excluirlo.
 
 ::
 
@@ -755,12 +755,12 @@ The ``method`` receives one of the array elements as an argument, and should ret
         return number % 2 == 0
 
     func _ready():
-        print([1, 4, 5, 8].filter(is_even)) # Prints [4, 8]
+        print([1, 4, 5, 8].filter(is_even)) # Imprime [4, 8]
 
-        # Same as above, but using a lambda function.
+        # Igual que arriba, pero usando una función lambda.
         print([1, 4, 5, 8].filter(func(number): return number % 2 == 0))
 
-See also :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_all>`, :ref:`map()<class_Array_method_map>` and :ref:`reduce()<class_Array_method_reduce>`.
+Véase también :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_all>`, :ref:`map()<class_Array_method_map>` y :ref:`reduce()<class_Array_method_reduce>`.
 
 .. rst-class:: classref-item-separator
 
@@ -772,11 +772,11 @@ See also :ref:`any()<class_Array_method_any>`, :ref:`all()<class_Array_method_al
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this array, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+Devuelve el índice de la **primera** aparición de ``what`` en este arreglo, o ``-1`` si no existe ninguna. El inicio de la búsqueda puede especificarse con ``from``, continuando hasta el final del arreglo.
 
-\ **Note:** If you just want to know whether the array contains ``what``, use :ref:`has()<class_Array_method_has>` (``Contains`` in C#). In GDScript, you may also use the ``in`` operator.
+\ **Nota:** Si solo desea comprobar si el arreglo contiene ``what``, utilice :ref:`has()<class_Array_method_has>` (``Contains`` en C#). En GDScript, también puede usar el operador ``in``.
 
-\ **Note:** For performance reasons, the search is affected by ``what``'s :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`. For example, ``7`` (:ref:`int<class_int>`) and ``7.0`` (:ref:`float<class_float>`) are not considered equal for this method.
+\ **Nota:** Por razones de rendimiento, la búsqueda está influenciada por el :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` de ``what``. Por ejemplo, ``7`` (:ref:`int<class_int>`) y ``7.0`` (:ref:`float<class_float>`) no se consideran iguales para este método.
 
 .. rst-class:: classref-item-separator
 
@@ -788,11 +788,11 @@ Returns the index of the **first** occurrence of ``what`` in this array, or ``-1
 
 :ref:`int<class_int>` **find_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_Array_method_find_custom>`
 
-Returns the index of the **first** element in the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the array.
+Devuelve el índice del **primer** elemento del arreglo que hace que ``method`` devuelva ``true``, o ``-1`` si no existe ninguno. El inicio de la búsqueda puede especificarse con ``from``, continuando hasta el final del arreglo.
 
-\ ``method`` is a callable that takes an element of the array, and returns a :ref:`bool<class_bool>`.
+\ ``method`` es un callable que recibe un elemento del arreglo y devuelve un :ref:`bool<class_bool>`.
 
-\ **Note:** If you just want to know whether the array contains *anything* that satisfies ``method``, use :ref:`any()<class_Array_method_any>`.
+\ **Nota:** Si solo desea comprobar si el arreglo contiene *algún* elemento que satisfaga ``method``, utilice :ref:`any()<class_Array_method_any>`.
 
 
 .. tabs::
@@ -803,7 +803,7 @@ Returns the index of the **first** element in the array that causes ``method`` t
         return number % 2 == 0
 
     func _ready():
-        print([1, 3, 4, 7].find_custom(is_even.bind())) # Prints 2
+        print([1, 3, 4, 7].find_custom(is_even.bind())) # Imprime 2
 
 
 
@@ -817,9 +817,9 @@ Returns the index of the **first** element in the array that causes ``method`` t
 
 :ref:`Variant<class_Variant>` **front**\ (\ ) |const| :ref:`🔗<class_Array_method_front>`
 
-Returns the first element of the array. If the array is empty, fails and returns ``null``. See also :ref:`back()<class_Array_method_back>`.
+Devuelve el primer elemento del Arreglo. Imprime un error y retorna ``null`` si el array está vacío. Véase también :ref:`back()<class_Array_method_back>`.
 
-\ **Note:** Unlike with the ``[]`` operator (``array[0]``), an error is generated without stopping project execution.
+\ **Note:** Llamar esta función ``[]`` no es lo mismo que poner ``array[0]``. Si el array está vacío, acceder por el índice detendrá el la ejecución del proyecto si se ejecuta desde el Editor.
 
 .. rst-class:: classref-item-separator
 
@@ -831,9 +831,9 @@ Returns the first element of the array. If the array is empty, fails and returns
 
 :ref:`Variant<class_Variant>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Array_method_get>`
 
-Returns the element at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``null``.
+Devuelve el elemento en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``null``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. Lo más notable es que, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -881,37 +881,37 @@ Devuelve la instancia de :ref:`Script<class_Script>` asociada con este array tip
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_Array_method_has>`
 
-Returns ``true`` if the array contains the given ``value``.
+Devuelve ``true`` si el array contiene el ``value`` dado.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(["inside", 7].has("inside"))  # Prints true
-    print(["inside", 7].has("outside")) # Prints false
-    print(["inside", 7].has(7))         # Prints true
-    print(["inside", 7].has("7"))       # Prints false
+    print(["inside", 7].has("inside"))  # Imprime true
+    print(["inside", 7].has("outside")) # Imprime false
+    print(["inside", 7].has(7))         # Imprime true
+    print(["inside", 7].has("7"))       # Imprime false
 
  .. code-tab:: csharp
 
     Godot.Collections.Array arr = ["inside", 7];
-    // By C# convention, this method is renamed to `Contains`.
-    GD.Print(arr.Contains("inside"));  // Prints True
-    GD.Print(arr.Contains("outside")); // Prints False
-    GD.Print(arr.Contains(7));         // Prints True
-    GD.Print(arr.Contains("7"));       // Prints False
+    // Por convención de C#, este método se renombra a `Contains`.
+    GD.Print(arr.Contains("inside"));  // Imprime True
+    GD.Print(arr.Contains("outside")); // Imprime False
+    GD.Print(arr.Contains(7));         // Imprime True
+    GD.Print(arr.Contains("7"));       // Imprime False
 
 
 
-In GDScript, this is equivalent to the ``in`` operator:
+En GDScript, esto es equivalente al operador ``in``:
 
 ::
 
     if 4 in [2, 4, 6, 8]:
-        print("4 is here!") # Will be printed.
+        print("¡4 está aquí!") # Se imprimirá.
 
-\ **Note:** For performance reasons, the search is affected by the ``value``'s :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`. For example, ``7`` (:ref:`int<class_int>`) and ``7.0`` (:ref:`float<class_float>`) are not considered equal for this method.
+\ **Nota:** Por razones de rendimiento, la búsqueda se ve afectada por el :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` del ``value``. Por ejemplo, ``7`` (:ref:`int<class_int>`) y ``7.0`` (:ref:`float<class_float>`) no se consideran iguales para este método.
 
 .. rst-class:: classref-item-separator
 
@@ -923,9 +923,9 @@ In GDScript, this is equivalent to the ``in`` operator:
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_Array_method_hash>`
 
-Returns a hashed 32-bit integer value representing the array and its contents.
+Devuelve un valor entero hash de 32 bits que representa el array y su contenido.
 
-\ **Note:** Arrays with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. On the contrary, arrays with different hash values are guaranteed to be different.
+\ **Nota:** *No* se garantiza que los arrays con valores hash iguales sean idénticos, como resultado de las colisiones hash. Por el contrario, se garantiza que los arrays con valores hash diferentes sean distintos.
 
 .. rst-class:: classref-item-separator
 
@@ -937,11 +937,11 @@ Returns a hashed 32-bit integer value representing the array and its contents.
 
 :ref:`int<class_int>` **insert**\ (\ position\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_insert>`
 
-Inserts a new element (``value``) at a given index (``position``) in the array. ``position`` should be between ``0`` and the array's :ref:`size()<class_Array_method_size>`. If negative, ``position`` is considered relative to the end of the array.
+Inserta un nuevo elemento (``value``) en un índice dado (``position``) en el array. ``position`` debe estar entre ``0`` y el :ref:`size()<class_Array_method_size>` del array. Si es negativo, ``position`` se considera relativo al final del array.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las otras constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla.
 
-\ **Note:** Every element's index after ``position`` needs to be shifted forward, which may have a noticeable performance cost, especially on larger arrays.
+\ **Nota:** El índice de cada elemento después de ``position`` necesita ser desplazado hacia adelante, lo que puede tener un costo de rendimiento notable, especialmente en arrays más grandes.
 
 .. rst-class:: classref-item-separator
 
@@ -1024,9 +1024,9 @@ En GDScript, los arrays son automáticamente de solo lectura si se declaran con 
 
 :ref:`Array<class_Array>` **map**\ (\ method\: :ref:`Callable<class_Callable>`\ ) |const| :ref:`🔗<class_Array_method_map>`
 
-Calls the given :ref:`Callable<class_Callable>` for each element in the array and returns a new array filled with values returned by the ``method``.
+Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo y devuelve un nuevo arreglo con los valores devueltos por ``method``.
 
-The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the current array element) and can return any :ref:`Variant<class_Variant>`.
+El ``method`` debe recibir un parámetro :ref:`Variant<class_Variant>` (el elemento actual del arreglo) y puede devolver cualquier :ref:`Variant<class_Variant>`.
 
 ::
 
@@ -1034,12 +1034,12 @@ The ``method`` should take one :ref:`Variant<class_Variant>` parameter (the curr
         return number * 2
 
     func _ready():
-        print([1, 2, 3].map(double)) # Prints [2, 4, 6]
+        print([1, 2, 3].map(double)) # Imprime [2, 4, 6]
 
-        # Same as above, but using a lambda function.
+        # Igual que arriba, pero usando una función lambda.
         print([1, 2, 3].map(func(element): return element * 2))
 
-See also :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_method_reduce>`, :ref:`any()<class_Array_method_any>` and :ref:`all()<class_Array_method_all>`.
+Véase también :ref:`filter()<class_Array_method_filter>`, :ref:`reduce()<class_Array_method_reduce>`, :ref:`any()<class_Array_method_any>` y :ref:`all()<class_Array_method_all>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1077,24 +1077,24 @@ Devuelve el valor mínimo contenido en el array, si todos los elementos se puede
 
 :ref:`Variant<class_Variant>` **pick_random**\ (\ ) |const| :ref:`🔗<class_Array_method_pick_random>`
 
-Returns a random element from the array. Generates an error and returns ``null`` if the array is empty.
+Devuelve un elemento aleatorio del arreglo. Genera un error y devuelve ``null`` si el arreglo está vacío.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # May print 1, 2, 3.25, or "Hi".
+    # Puede imprimir 1, 2, 3.25 o "Hi".
     print([1, 2, 3.25, "Hi"].pick_random())
 
  .. code-tab:: csharp
 
     Godot.Collections.Array array = [1, 2, 3.25f, "Hi"];
-    GD.Print(array.PickRandom()); // May print 1, 2, 3.25, or "Hi".
+    GD.Print(array.PickRandom()); // Puede imprimir 1, 2, 3.25 o "Hi".
 
 
 
-\ **Note:** Like many similar functions in the engine (such as :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` or :ref:`shuffle()<class_Array_method_shuffle>`), this method uses a common, global random seed. To get a predictable outcome from this method, see :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
+\ **Nota:** Al igual que muchas funciones similares en el motor (como :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` o :ref:`shuffle()<class_Array_method_shuffle>`), este método utiliza una semilla aleatoria global común. Para obtener un resultado predecible con este método, véase :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1106,9 +1106,9 @@ Returns a random element from the array. Generates an error and returns ``null``
 
 :ref:`Variant<class_Variant>` **pop_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_pop_at>`
 
-Removes and returns the element of the array at index ``position``. If negative, ``position`` is considered relative to the end of the array. Returns ``null`` if the array is empty. If ``position`` is out of bounds, an error message is also generated.
+Elimina y devuelve el elemento del array en el índice ``position``. Si es negativo, ``position`` se considera relativo al final del array. Devuelve ``null`` si el array está vacío. Si ``position`` está fuera de los límites, también se genera un mensaje de error.
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **Nota:** Este método desplaza hacia atrás el índice de cada elemento después de ``position``, lo que puede tener un costo de rendimiento notable, especialmente en arrays grandes.
 
 .. rst-class:: classref-item-separator
 
@@ -1120,7 +1120,7 @@ Removes and returns the element of the array at index ``position``. If negative,
 
 :ref:`Variant<class_Variant>` **pop_back**\ (\ ) :ref:`🔗<class_Array_method_pop_back>`
 
-Removes and returns the last element of the array. Returns ``null`` if the array is empty, without generating an error. See also :ref:`pop_front()<class_Array_method_pop_front>`.
+Elimina y devuelve el ultimo elemento del array. Devuelve ``null`` si el array esta vacío, sin generar un error. Véase también :ref:`pop_front()<class_Array_method_pop_front>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1132,9 +1132,9 @@ Removes and returns the last element of the array. Returns ``null`` if the array
 
 :ref:`Variant<class_Variant>` **pop_front**\ (\ ) :ref:`🔗<class_Array_method_pop_front>`
 
-Removes and returns the first element of the array. Returns ``null`` if the array is empty, without generating an error. See also :ref:`pop_back()<class_Array_method_pop_back>`.
+Elimina y devuelve el primer elemento del array. Devuelve ``null`` si el array está vacío, sin mostrar un mensaje de error. Véase también :ref:`pop_back()<class_Array_method_pop_back>`.
 
-\ **Note:** This method shifts every other element's index back, which may have a noticeable performance cost, especially on larger arrays.
+\ **Note:** En arrays largos, este método es mucho más lento que :ref:`pop_back()<class_Array_method_pop_back>` debido a que tiene que re-indexar todos los elementos del array cada vez que es llamado. Mientras más largo el array, más lento será :ref:`pop_front()<class_Array_method_pop_front>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1146,7 +1146,7 @@ Removes and returns the first element of the array. Returns ``null`` if the arra
 
 |void| **push_back**\ (\ value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_push_back>`
 
-Appends an element at the end of the array. See also :ref:`push_front()<class_Array_method_push_front>`.
+Agrega un elemento al final del array (alias de :ref:`push_back()<class_Array_method_push_back>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1172,9 +1172,9 @@ Adds an element at the beginning of the array. See also :ref:`push_back()<class_
 
 :ref:`Variant<class_Variant>` **reduce**\ (\ method\: :ref:`Callable<class_Callable>`, accum\: :ref:`Variant<class_Variant>` = null\ ) |const| :ref:`🔗<class_Array_method_reduce>`
 
-Calls the given :ref:`Callable<class_Callable>` for each element in array, accumulates the result in ``accum``, then returns it.
+Llama al :ref:`Callable<class_Callable>` dado para cada elemento del arreglo, acumula el resultado en ``accum`` y luego lo devuelve.
 
-The ``method`` takes two arguments: the current value of ``accum`` and the current array element. If ``accum`` is ``null`` (as by default), the iteration will start from the second element, with the first one used as initial value of ``accum``.
+El ``method`` recibe dos argumentos: el valor actual de ``accum`` y el elemento actual del arreglo. Si ``accum`` es ``null`` (como por defecto), la iteración comenzará desde el segundo elemento, utilizando el primero como valor inicial de ``accum``.
 
 ::
 
@@ -1182,13 +1182,13 @@ The ``method`` takes two arguments: the current value of ``accum`` and the curre
         return accum + number
 
     func _ready():
-        print([1, 2, 3].reduce(sum, 0))  # Prints 6
-        print([1, 2, 3].reduce(sum, 10)) # Prints 16
+        print([1, 2, 3].reduce(sum, 0))  # Imprime 6
+        print([1, 2, 3].reduce(sum, 10)) # Imprime 16
 
-        # Same as above, but using a lambda function.
+        # Igual que arriba, pero usando una función lambda.
         print([1, 2, 3].reduce(func(accum, number): return accum + number, 10))
 
-If :ref:`max()<class_Array_method_max>` is not desirable, this method may also be used to implement a custom comparator:
+Si :ref:`max()<class_Array_method_max>` no es adecuado, este método también puede utilizarse para implementar un comparador personalizado:
 
 ::
 
@@ -1196,12 +1196,12 @@ If :ref:`max()<class_Array_method_max>` is not desirable, this method may also b
         var arr = [Vector2i(5, 0), Vector2i(3, 4), Vector2i(1, 2)]
 
         var longest_vec = arr.reduce(func(max, vec): return vec if is_length_greater(vec, max) else max)
-        print(longest_vec) # Prints (3, 4)
+        print(longest_vec) # Imprime (3, 4)
 
     func is_length_greater(a, b):
         return a.length() > b.length()
 
-This method can also be used to count how many elements in an array satisfy a certain condition, similar to :ref:`count()<class_Array_method_count>`:
+Este método también puede utilizarse para contar cuántos elementos de un arreglo cumplen cierta condición, de forma similar a :ref:`count()<class_Array_method_count>`:
 
 ::
 
@@ -1210,11 +1210,11 @@ This method can also be used to count how many elements in an array satisfy a ce
 
     func _ready():
         var arr = [1, 2, 3, 4, 5]
-        # If the current element is even, increment count, otherwise leave count the same.
+        # Si el elemento actual es par, incrementa el contador; de lo contrario, lo deja igual.
         var even_count = arr.reduce(func(count, next): return count + 1 if is_even(next) else count, 0)
-        print(even_count) # Prints 2
+        print(even_count) # Imprime 2
 
-See also :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method_filter>`, :ref:`any()<class_Array_method_any>`, and :ref:`all()<class_Array_method_all>`.
+Véase también :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method_filter>`, :ref:`any()<class_Array_method_any>` y :ref:`all()<class_Array_method_all>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1226,11 +1226,11 @@ See also :ref:`map()<class_Array_method_map>`, :ref:`filter()<class_Array_method
 
 |void| **remove_at**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_remove_at>`
 
-Removes the element from the array at the given index (``position``). If the index is out of bounds, this method fails. If the index is negative, ``position`` is considered relative to the end of the array.
+Elimina el elemento del array en el índice dado (``position``). Si el índice está fuera de los límites, este método falla. Si el índice es negativo, ``position`` se considera relativo al final del array.
 
-If you need to return the removed element, use :ref:`pop_at()<class_Array_method_pop_at>`. To remove an element by value, use :ref:`erase()<class_Array_method_erase>` instead.
+Si necesitas devolver el elemento eliminado, usa :ref:`pop_at()<class_Array_method_pop_at>`. Para eliminar un elemento por valor, usa :ref:`erase()<class_Array_method_erase>` en su lugar.
 
-\ **Note:** This method shifts every element's index after ``position`` back, which may have a noticeable performance cost, especially on larger arrays.
+\ **Nota:** Este método desplaza hacia atrás el índice de cada elemento después de ``position``, lo que puede tener un coste de rendimiento notable, especialmente en arrays grandes.
 
 .. rst-class:: classref-item-separator
 
@@ -1242,11 +1242,11 @@ If you need to return the removed element, use :ref:`pop_at()<class_Array_method
 
 :ref:`int<class_int>` **resize**\ (\ size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Array_method_resize>`
 
-Sets the array's number of elements to ``size``. If ``size`` is smaller than the array's current size, the elements at the end are removed. If ``size`` is greater, new default elements (usually ``null``) are added, depending on the array's type.
+Establece el número de elementos del array a ``size``. Si ``size`` es menor que el tamaño actual del array, se eliminan los elementos al final. Si ``size`` es mayor, se añaden nuevos elementos predeterminados (usualmente ``null``), dependiendo del tipo del array.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_LOCKED<class_@GlobalScope_constant_ERR_LOCKED>` if the array is read-only, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_Array_method_size>` to find the actual size of the array after resize.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las siguientes constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla: :ref:`@GlobalScope.ERR_LOCKED<class_@GlobalScope_constant_ERR_LOCKED>` si el array es de solo lectura, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si el tamaño es negativo, o :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` si fallan las asignaciones. Usa :ref:`size()<class_Array_method_size>` para encontrar el tamaño real del array después de redimensionar.
 
-\ **Note:** Calling this method once and assigning the new values is faster than calling :ref:`append()<class_Array_method_append>` for every new element.
+\ **Nota:** Llamar a este método una vez y asignar los nuevos valores es más rápido que llamar a :ref:`append()<class_Array_method_append>` para cada nuevo elemento.
 
 .. rst-class:: classref-item-separator
 
@@ -1270,7 +1270,7 @@ Invierte el orden de todos los elementos del array.
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`Variant<class_Variant>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this array, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the array. This method is the reverse of :ref:`find()<class_Array_method_find>`.
+Devuelve el índice de la **última** aparición de ``what`` en este arreglo, o ``-1`` si no existe ninguna. El inicio de la búsqueda puede especificarse con ``from``, continuando hacia el comienzo del arreglo. Este método es el inverso de :ref:`find()<class_Array_method_find>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1282,7 +1282,7 @@ Returns the index of the **last** occurrence of ``what`` in this array, or ``-1`
 
 :ref:`int<class_int>` **rfind_custom**\ (\ method\: :ref:`Callable<class_Callable>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_Array_method_rfind_custom>`
 
-Returns the index of the **last** element of the array that causes ``method`` to return ``true``, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the array. This method is the reverse of :ref:`find_custom()<class_Array_method_find_custom>`.
+Devuelve el índice del **último** elemento que produce que ``method`` devuelva ``true``, o ``-1`` si no existe ninguno. El inicio de la búsqueda puede especificarse con ``from``, continuando hacia el comienzo del arreglo. Este método es el inverso de :ref:`find_custom()<class_Array_method_find_custom>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1294,7 +1294,7 @@ Returns the index of the **last** element of the array that causes ``method`` to
 
 |void| **set**\ (\ index\: :ref:`int<class_int>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_Array_method_set>`
 
-Sets the value of the element at the given ``index`` to the given ``value``. This will not change the size of the array, it only changes the value at an index already in the array. This is the same as using the ``[]`` operator (``array[index] = value``).
+Asigna el ``value`` al elemento en el ``index`` indicado. Esto no cambia el tamaño del arreglo; únicamente modifica el valor en un índice que ya existe. Es equivalente a usar el operador ``[]`` (``array[index] = value``).
 
 .. rst-class:: classref-item-separator
 
@@ -1306,9 +1306,9 @@ Sets the value of the element at the given ``index`` to the given ``value``. Thi
 
 |void| **shuffle**\ (\ ) :ref:`🔗<class_Array_method_shuffle>`
 
-Shuffles all elements of the array in a random order.
+Reordena todos los elementos del arreglo en un orden aleatorio.
 
-\ **Note:** Like many similar functions in the engine (such as :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` or :ref:`pick_random()<class_Array_method_pick_random>`), this method uses a common, global random seed. To get a predictable outcome from this method, see :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
+\ **Nota:** Al igual que muchas funciones similares en el motor (como :ref:`@GlobalScope.randi()<class_@GlobalScope_method_randi>` o :ref:`pick_random()<class_Array_method_pick_random>`), este método utiliza una semilla aleatoria global compartida. Para obtener un resultado predecible con este método, véase :ref:`@GlobalScope.seed()<class_@GlobalScope_method_seed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1320,7 +1320,7 @@ Shuffles all elements of the array in a random order.
 
 :ref:`int<class_int>` **size**\ (\ ) |const| :ref:`🔗<class_Array_method_size>`
 
-Returns the number of elements in the array. Empty arrays (``[]``) always return ``0``. See also :ref:`is_empty()<class_Array_method_is_empty>`.
+Devuelve el número de elementos en el array. Si el array está vacío (``[]``), devuelve ``0``. Ver también :ref:`is_empty()<class_Array_method_is_empty>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1332,24 +1332,24 @@ Returns the number of elements in the array. Empty arrays (``[]``) always return
 
 :ref:`Array<class_Array>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647, step\: :ref:`int<class_int>` = 1, deep\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Array_method_slice>`
 
-Returns a new **Array** containing this array's elements, from index ``begin`` (inclusive) to ``end`` (exclusive), every ``step`` elements.
+Devuelve un nuevo **Array** que contiene los elementos de este arreglo, desde el índice ``begin`` (inclusive) hasta ``end`` (exclusivo), saltando tanto elementos como se indique en ``step``.
 
-If either ``begin`` or ``end`` are negative, their value is relative to the end of the array.
+Si ``begin`` o ``end`` son negativos, su valor se interpreta relativo al final del arreglo.
 
-If ``step`` is negative, this method iterates through the array in reverse, returning a slice ordered backwards. For this to work, ``begin`` must be greater than ``end``.
+Si ``step`` es negativo, este método recorre el arreglo en orden inverso, devolviendo una porción en orden descendente. Para que esto funcione, ``begin`` debe ser mayor que ``end``.
 
-If ``deep`` is ``true``, all nested **Array** and :ref:`Dictionary<class_Dictionary>` elements in the slice are duplicated from the original, recursively. See also :ref:`duplicate()<class_Array_method_duplicate>`.
+Si ``deep`` es ``true``, todos los elementos anidados de tipo **Array** y :ref:`Dictionary<class_Dictionary>` en la porción se duplican recursivamente a partir del original. Véase también :ref:`duplicate()<class_Array_method_duplicate>`.
 
 ::
 
     var letters = ["A", "B", "C", "D", "E", "F"]
 
-    print(letters.slice(0, 2))  # Prints ["A", "B"]
-    print(letters.slice(2, -2)) # Prints ["C", "D"]
-    print(letters.slice(-2, 6)) # Prints ["E", "F"]
+    print(letters.slice(0, 2))  # Imprime ["A", "B"]
+    print(letters.slice(2, -2)) # Imprime ["C", "D"]
+    print(letters.slice(-2, 6)) # Imprime ["E", "F"]
 
-    print(letters.slice(0, 6, 2))  # Prints ["A", "C", "E"]
-    print(letters.slice(4, 1, -1)) # Prints ["E", "D", "C"]
+    print(letters.slice(0, 6, 2))  # Imprime ["A", "C", "E"]
+    print(letters.slice(4, 1, -1)) # Imprime ["E", "D", "C"]
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ If ``deep`` is ``true``, all nested **Array** and :ref:`Dictionary<class_Diction
 
 |void| **sort**\ (\ ) :ref:`🔗<class_Array_method_sort>`
 
-Sorts the array in ascending order. The final order is dependent on the "less than" (``<``) comparison between elements.
+Ordena el arreglo en orden ascendente. El orden final depende de la comparación "menor que" (``<``) entre los elementos.
 
 
 .. tabs::
@@ -1370,17 +1370,17 @@ Sorts the array in ascending order. The final order is dependent on the "less th
 
     var numbers = [10, 5, 2.5, 8]
     numbers.sort()
-    print(numbers) # Prints [2.5, 5, 8, 10]
+    print(numbers) # Imprime [2.5, 5, 8, 10]
 
  .. code-tab:: csharp
 
     Godot.Collections.Array numbers = [10, 5, 2.5, 8];
     numbers.Sort();
-    GD.Print(numbers); // Prints [2.5, 5, 8, 10]
+    GD.Print(numbers); // Imprime [2.5, 5, 8, 10]
 
 
 
-\ **Note:** The sorting algorithm used is not `stable <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__. This means that equivalent elements (such as ``2`` and ``2.0``) may have their order changed when calling :ref:`sort()<class_Array_method_sort>`.
+\ **Nota:** El algoritmo de ordenamiento usado no es `estable <https://es.wikipedia.org/wiki/Algoritmo_de_ordenamiento#Estabilidad>`__. Esto significa que elementos equivalentes (como ``2`` y ``2.0``) pueden cambiar de orden al llamar a :ref:`sort()<class_Array_method_sort>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1392,9 +1392,9 @@ Sorts the array in ascending order. The final order is dependent on the "less th
 
 |void| **sort_custom**\ (\ func\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_Array_method_sort_custom>`
 
-Sorts the array using a custom :ref:`Callable<class_Callable>`.
+Ordena el arreglo usando un :ref:`Callable<class_Callable>` personalizado.
 
-\ ``func`` is called as many times as necessary, receiving two array elements as arguments. The function should return ``true`` if the first element should be moved *before* the second one, otherwise it should return ``false``.
+\ ``func`` se llama tantas veces como sea necesario, recibiendo dos elementos del arreglo como argumentos. La función debe devolver ``true`` si el primer elemento debe colocarse *antes* del segundo, de lo contrario debe devolver ``false``.
 
 ::
 
@@ -1406,25 +1406,25 @@ Sorts the array using a custom :ref:`Callable<class_Callable>`.
     func _ready():
         var my_items = [["Tomato", 5], ["Apple", 9], ["Rice", 4]]
         my_items.sort_custom(sort_ascending)
-        print(my_items) # Prints [["Rice", 4], ["Tomato", 5], ["Apple", 9]]
+        print(my_items) # Imprime [["Rice", 4], ["Tomato", 5], ["Apple", 9]]
 
-        # Sort descending, using a lambda function.
+        # Orden descendente usando una función lambda.
         my_items.sort_custom(func(a, b): return a[1] > b[1])
-        print(my_items) # Prints [["Apple", 9], ["Tomato", 5], ["Rice", 4]]
+        print(my_items) # Imprime [["Apple", 9], ["Tomato", 5], ["Rice", 4]]
 
-It may also be necessary to use this method to sort strings by natural order, with :ref:`String.naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`, as in the following example:
+También puede ser necesario usar este método para ordenar cadenas por orden natural, con :ref:`String.naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`, como en el siguiente ejemplo:
 
 ::
 
     var files = ["newfile1", "newfile2", "newfile10", "newfile11"]
     files.sort_custom(func(a, b): return a.naturalnocasecmp_to(b) < 0)
-    print(files) # Prints ["newfile1", "newfile2", "newfile10", "newfile11"]
+    print(files) # Imprime ["newfile1", "newfile2", "newfile10", "newfile11"]
 
-\ **Note:** In C#, this method is not supported.
+\ **Nota:** En C#, este método no está soportado.
 
-\ **Note:** The sorting algorithm used is not `stable <https://en.wikipedia.org/wiki/Sorting_algorithm#Stability>`__. This means that values considered equal may have their order changed when calling this method.
+\ **Nota:** El algoritmo de ordenamiento usado no es `estable <https://es.wikipedia.org/wiki/Algoritmo_de_ordenamiento#Estabilidad>`__. Esto significa que valores considerados iguales pueden cambiar de orden al usar este método.
 
-\ **Note:** You should not randomize the return value of ``func``, as the heapsort algorithm expects a consistent result. Randomizing the return value will result in unexpected behavior.
+\ **Nota:** No se debe aleatorizar el valor devuelto por ``func``, ya que el algoritmo heapsort espera un resultado consistente. Aleatorizarlo puede producir comportamientos inesperados.
 
 .. rst-class:: classref-section-separator
 
@@ -1441,7 +1441,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_neq_Array>`
 
-Returns ``true`` if the array's size or its elements are different than ``right``'s.
+Devuelve ``true`` si el tamaño del arreglo o sus elementos son diferentes a los de ``right``.
 
 .. rst-class:: classref-item-separator
 
@@ -1453,27 +1453,27 @@ Returns ``true`` if the array's size or its elements are different than ``right`
 
 :ref:`Array<class_Array>` **operator +**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_sum_Array>`
 
-Appends the ``right`` array to the left operand, creating a new **Array**. This is also known as an array concatenation.
+Agrega el arreglo ``right`` al operando izquierdo, creando un nuevo **Array**. Esto también se conoce como concatenación de arreglos.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var array1 = ["One", 2]
-    var array2 = [3, "Four"]
-    print(array1 + array2) # Prints ["One", 2, 3, "Four"]
+    var array1 = ["Uno", 2]
+    var array2 = [3, "Cuatro"]
+    print(array1 + array2) # Imprime ["Uno", 2, 3, "Cuatro"]
 
  .. code-tab:: csharp
 
-    // Note that concatenation is not possible with C#'s native Array type.
-    Godot.Collections.Array array1 = ["One", 2];
-    Godot.Collections.Array array2 = [3, "Four"];
-    GD.Print(array1 + array2); // Prints ["One", 2, 3, "Four"]
+    // Nota: La concatenación no es posible con el tipo nativo Array de C#.
+    Godot.Collections.Array array1 = ["Uno", 2];
+    Godot.Collections.Array array2 = [3, "Cuatro"];
+    GD.Print(array1 + array2); // Imprime ["Uno", 2, 3, "Cuatro"]
 
 
 
-\ **Note:** For existing arrays, :ref:`append_array()<class_Array_method_append_array>` is much more efficient than concatenation and assignment with the ``+=`` operator.
+\ **Nota:** Para arreglos existentes, :ref:`append_array()<class_Array_method_append_array>` es mucho más eficiente que concatenar y asignar usando el operador ``+=``.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,9 +1485,9 @@ Appends the ``right`` array to the left operand, creating a new **Array**. This 
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`Array<class_Array>`\ ) :ref:`🔗<class_Array_operator_lt_Array>`
 
-Compares the elements of both arrays in order, starting from index ``0`` and ending on the last index in common between both arrays. For each pair of elements, returns ``true`` if this array's element is less than ``right``'s, ``false`` if this element is greater. Otherwise, continues to the next pair.
+Compara los elementos de ambos arreglos en orden, comenzando desde el índice ``0`` y hasta el último índice que tengan en común ambos arreglos. Para cada par de elementos, devuelve ``true`` si el elemento de este arreglo es menor que el correspondiente en ``right``, y ``false`` si es mayor. De lo contrario, continúa con el siguiente par.
 
-If all searched elements are equal, returns ``true`` if this array's size is less than ``right``'s, otherwise returns ``false``.
+Si todos los elementos comparados son iguales, devuelve ``true`` si el tamaño de este arreglo es menor que el de ``right``; de lo contrario, devuelve ``false``.
 
 .. rst-class:: classref-item-separator
 

@@ -7,14 +7,14 @@ GrooveJoint2D
 
 **Hereda:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A physics joint that restricts the movement of two 2D physics bodies to a fixed axis.
+Una unión física que restringe el movimiento de dos cuerpos físicos 2D a un eje fijo.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A physics joint that restricts the movement of two 2D physics bodies to a fixed axis. For example, a :ref:`StaticBody2D<class_StaticBody2D>` representing a piston base can be attached to a :ref:`RigidBody2D<class_RigidBody2D>` representing the piston head, moving up and down.
+Una unión física que restringe el movimiento de dos cuerpos físicos 2D a un eje fijo. Por ejemplo, un :ref:`StaticBody2D<class_StaticBody2D>` que representa una base de pistón puede adjuntarse a un :ref:`RigidBody2D<class_RigidBody2D>` que representa la cabeza del pistón, moviéndose hacia arriba y abajo.
 
 .. rst-class:: classref-reftable-group
 

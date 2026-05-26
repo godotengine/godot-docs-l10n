@@ -7,16 +7,16 @@ LimitAngularVelocityModifier3D
 
 **继承：** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Limit bone rotation angular velocity.
+限制骨骼旋转角速度。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+该修改器通过比较前一帧和当前帧之间的姿势来限制骨骼旋转角速度。
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+可以通过指定骨骼链的根骨骼和末端骨骼来添加骨骼链，然后将它们之间的骨骼添加到列表中。修改器会根据选项 :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>` 处理该列表中的骨骼或处理除列表中骨骼之外的其他骨骼。
 
 .. rst-class:: classref-reftable-group
 
@@ -86,7 +86,7 @@ You can add bone chains by specifying their root and end bones, then add the bon
 - |void| **set_chain_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_chain_count**\ (\ )
 
-The number of chains.
+链数。
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ The number of chains.
 - |void| **set_exclude**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclude**\ (\ )
 
-If ``true``, the modifier processes bones not included in the bone list.
+如果为 ``true``\ ，则修改器会处理骨骼列表中未包含的骨骼。
 
-If ``false``, the bones processed by the modifier are equal to the bone list.
+如果为 ``false``\ ，则修改器处理的骨骼与骨骼列表中的骨骼相同。
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If ``false``, the bones processed by the modifier are equal to the bone list.
 
 :ref:`int<class_int>` **joint_count** = ``0`` :ref:`🔗<class_LimitAngularVelocityModifier3D_property_joint_count>`
 
-The number of joints in the list which created by chains dynamically.
+链式结构动态创建的列表中的关节数。
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ The number of joints in the list which created by chains dynamically.
 - |void| **set_max_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_angular_velocity**\ (\ )
 
-The maximum angular velocity per second.
+每秒最大角速度。
 
 .. rst-class:: classref-section-separator
 
@@ -151,7 +151,7 @@ The maximum angular velocity per second.
 
 |void| **clear_chains**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_clear_chains>`
 
-Clear all chains.
+清除所有链。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Clear all chains.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_reset>`
 
-Sets the reference pose for angle comparison to the current pose with the influence of constraints removed. This function is automatically triggered when joints change or upon activation.
+设置参考姿态，用于与当前姿态进行角度比较，并去除约束的影响。当关节发生变化或激活时，该函数会自动触发。
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ Sets the reference pose for angle comparison to the current pose with the influe
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+设置骨骼链中末端骨骼的名称。
 
-\ **Note:** End bone must be the root bone or a child of the root bone.
+\ **注意：**\ 末端骨骼必须是根骨骼或根骨骼的子骨骼。
 
 .. rst-class:: classref-item-separator
 

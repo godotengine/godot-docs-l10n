@@ -7,16 +7,16 @@ RenderDataRD
 
 **Наследует:** :ref:`RenderData<class_RenderData>` **<** :ref:`Object<class_Object>`
 
-Render data implementation for the RenderingDevice based renderers.
+Реализация данных для рендеринга в рендерерах на основе RenderingDevice.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-This object manages all render data for the :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. See also :ref:`RenderData<class_RenderData>`, :ref:`RenderSceneData<class_RenderSceneData>`, and :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
+Этот объект управляет всеми данными рендеринга для рендереров на основе :ref:`RenderingDevice<class_RenderingDevice>`. См. также :ref:`RenderData<class_RenderData>`, :ref:`RenderSceneData<class_RenderSceneData>` и :ref:`RenderSceneDataRD<class_RenderSceneDataRD>`.
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **Примечание:** Это внутренний объект сервера рендеринга. Не создавайте экземпляр этого класса из скрипта.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

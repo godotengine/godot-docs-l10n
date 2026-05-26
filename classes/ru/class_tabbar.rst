@@ -263,9 +263,9 @@ TabBar
 
 **tab_close_pressed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_close_pressed>`
 
-Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` is ``true``, when middle-clicking on a tab.
+Генерируется при нажатии кнопки закрытия вкладки или, если параметр :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` имеет значение ``true``, при щелчке средней кнопкой мыши по вкладке.
 
-\ **Note:** Tabs are not removed automatically; this behavior needs to be coded manually. For example:
+\ **Примечание:** Вкладки не закрываются автоматически; это поведение необходимо запрограммировать вручную. Например:
 
 
 .. tabs::
@@ -302,7 +302,7 @@ Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mous
 
 **tab_rmb_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_rmb_clicked>`
 
-Emitted when a tab is right-clicked.
+Вызывается при щелчке правой кнопкой мыши по вкладке.
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_TabBar_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_LEFT** = ``0``
 
-Aligns tabs to the left.
+Выравнивает вкладки по левому краю.
 
 .. _class_TabBar_constant_ALIGNMENT_CENTER:
 
@@ -345,7 +345,7 @@ Aligns tabs to the left.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-Aligns tabs in the middle.
+Выравнивает вкладки посередине.
 
 .. _class_TabBar_constant_ALIGNMENT_RIGHT:
 
@@ -353,7 +353,7 @@ Aligns tabs in the middle.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_RIGHT** = ``2``
 
-Aligns tabs to the right.
+Выравнивает вкладки по правому краю.
 
 .. _class_TabBar_constant_ALIGNMENT_MAX:
 
@@ -442,7 +442,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 - |void| **set_close_with_middle_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_with_middle_mouse**\ (\ )
 
-If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` signal.
+Если ``true``, то щелчок средней кнопкой мыши по вкладке вызовет сигнал :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>`.
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange. The delay for when this happens is dictated by :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
+Если ``true``, то при наведении курсора на вкладку во время перетаскивания элемента произойдет переключение на эту вкладку. При наведении курсора на другую вкладку для изменения ее порядка это не сработает. Задержка при этом определяется параметром :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tab_alignment**\ (\ value\: :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **get_tab_alignment**\ (\ )
 
-The horizontal alignment of the tabs.
+Горизонтальное выравнивание вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +989,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_language**\ (\ tab_idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_language>`
 
-Sets the language code of the title for the tab at index ``tab_idx`` to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+Устанавливает языковой код заголовка вкладки с индексом ``tab_idx`` равным ``language``. Это используется для алгоритмов переноса строк и формирования текста. Если ``language`` пустое значение, используется текущая локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -1128,7 +1128,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Цвет значков отключенных вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Цвет значка текущей вкладки, на которую наведен курсор. Не применяется к выбранной вкладке.
 
 .. rst-class:: classref-item-separator
 
@@ -1152,7 +1152,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+Цвет значка текущей выбранной вкладки.
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+Цвет значков других, невыбранных вкладок.
 
 .. rst-class:: classref-item-separator
 
@@ -1188,7 +1188,7 @@ Icon color of the other, unselected tabs.
 
 :ref:`int<class_int>` **hover_switch_wait_msec** = ``500`` :ref:`🔗<class_TabBar_theme_constant_hover_switch_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait before switching the tab.
+При перетаскивании элементов это количество миллисекунд, которое нужно подождать перед переключением вкладки.
 
 .. rst-class:: classref-item-separator
 

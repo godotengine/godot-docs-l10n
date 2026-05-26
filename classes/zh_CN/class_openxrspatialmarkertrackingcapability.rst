@@ -9,14 +9,14 @@ OpenXRSpatialMarkerTrackingCapability
 
 **继承：** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Implementation for handling spatial entity marker tracking logic.
+用于处理空间实体标记跟踪逻辑的实现。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-This class handles the OpenXR marker tracking spatial entity extension.
+该类用于处理 OpenXR 标记跟踪空间实体扩展。
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ This class handles the OpenXR marker tracking spatial entity extension.
 
 :ref:`bool<class_bool>` **is_april_tag_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`
 
-Returns ``true`` if April tag marker tracking is supported by the current device.
+如果当前设备支持 April 标签标记跟踪，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Returns ``true`` if April tag marker tracking is supported by the current device
 
 :ref:`bool<class_bool>` **is_aruco_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`
 
-Returns ``true`` if Aruco marker tracking is supported by the current device.
+如果当前设备支持 Aruco 标记跟踪，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Returns ``true`` if Aruco marker tracking is supported by the current device.
 
 :ref:`bool<class_bool>` **is_micro_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`
 
-Returns ``true`` if micro QR code marker tracking is supported by the current device.
+如果当前设备支持微型二维码标记跟踪，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Returns ``true`` if micro QR code marker tracking is supported by the current de
 
 :ref:`bool<class_bool>` **is_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`
 
-Returns ``true`` if QR code marker tracking is supported by the current device.
+如果当前设备支持二维码标记跟踪，则返回 ``true``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

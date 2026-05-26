@@ -14,11 +14,11 @@ Mezcla dos animaciones sumándolas dentro de un :ref:`AnimationNodeBlendTree<cla
 Descripción
 ----------------------
 
-A resource to add to an :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Blends two animations additively based on the amount value.
+Un recurso para añadir a un :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`. Mezcla dos animaciones de forma aditiva basándose en el valor de cantidad.
 
-If the amount is greater than ``1.0``, the animation connected to "in" port is blended with the amplified animation connected to "add" port.
+Si la cantidad es mayor que ``1.0``, la animación conectada al puerto "in" se mezcla con la animación amplificada conectada al puerto "add".
 
-If the amount is less than ``0.0``, the animation connected to "in" port is blended with the inverted animation connected to "add" port.
+Si la cantidad es menor que ``0.0``, la animación conectada al puerto "in" se mezcla con la animación invertida conectada al puerto "add".
 
 .. rst-class:: classref-introduction-group
 

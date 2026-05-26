@@ -87,7 +87,7 @@ SceneMultiplayer
 
 **peer_authenticating**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_authenticating>`
 
-当此 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 连接到一个新对等体并设置有效的 :ref:`auth_callback<class_SceneMultiplayer_property_auth_callback>` 时，将发出此信号。在这种情况下，只有在调用 :ref:`complete_auth()<class_SceneMultiplayer_method_complete_auth>` 并传递给定的对等体 ``id`` 时，才会发出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>`\ 。在此状态下，该对等体不会包含在 :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>` 返回的列表中（但会包含在 :ref:`get_authenticating_peers()<class_SceneMultiplayer_method_get_authenticating_peers>` 返回的列表中），且只会发送和接收身份验证数据。有关发送身份验证数据的信息，请参阅 :ref:`send_auth()<class_SceneMultiplayer_method_send_auth>`\ 。
+当此 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 连接到一个新对等端并设置有效的 :ref:`auth_callback<class_SceneMultiplayer_property_auth_callback>` 时，将发出此信号。在这种情况下，只有在调用 :ref:`complete_auth()<class_SceneMultiplayer_method_complete_auth>` 并传递给定的对等端 ``id`` 时，才会发出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>`\ 。在此状态下，该对等端不会包含在 :ref:`MultiplayerAPI.get_peers()<class_MultiplayerAPI_method_get_peers>` 返回的列表中（但会包含在 :ref:`get_authenticating_peers()<class_SceneMultiplayer_method_get_authenticating_peers>` 返回的列表中），且只会发送和接收身份验证数据。有关发送身份验证数据的信息，请参阅 :ref:`send_auth()<class_SceneMultiplayer_method_send_auth>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ SceneMultiplayer
 
 **peer_authentication_failed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_authentication_failed>`
 
-当这个 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与另一个尚未完成授权的对等体断开连接时触发。见 :ref:`peer_authenticating<class_SceneMultiplayer_signal_peer_authenticating>`\ 。
+当这个 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与另一个尚未完成授权的对等端断开连接时触发。见 :ref:`peer_authenticating<class_SceneMultiplayer_signal_peer_authenticating>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ SceneMultiplayer
 
 **peer_packet**\ (\ id\: :ref:`int<class_int>`, packet\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_SceneMultiplayer_signal_peer_packet>`
 
-当这个 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 收到带有自定义数据（见 :ref:`send_bytes()<class_SceneMultiplayer_method_send_bytes>`\ ）的 ``packet`` 时发出。ID 是发送数据包的对等体的对等体 ID。
+当这个 MultiplayerAPI 的 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 收到带有自定义数据（见 :ref:`send_bytes()<class_SceneMultiplayer_method_send_bytes>`\ ）的 ``packet`` 时发出。ID 是发送数据包的对等端的对等端 ID。
 
 .. rst-class:: classref-section-separator
 
@@ -256,9 +256,9 @@ SceneMultiplayer
 - |void| **set_server_relay_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_server_relay_enabled**\ (\ )
 
-启用或禁用服务器功能，该功能通知客户端其他对等体的连接/断开，并在它们之间转发消息。当此选项为 ``false`` 时，客户端将不会自动收到其他对等体的通知，也无法通过服务器向它们发送数据包。
+启用或禁用服务器功能，该功能通知客户端其他对等端的连接/断开，并在它们之间转发消息。当此选项为 ``false`` 时，客户端将不会自动收到其他对等端的通知，也无法通过服务器向它们发送数据包。
 
-\ **注意：**\ 在其他对等体连接时更改此选项可能会导致意外行为。
+\ **注意：**\ 在其他对等端连接时更改此选项可能会导致意外行为。
 
 \ **注意：**\ 对该功能的支持可能取决于当前的 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 配置。请参阅 :ref:`MultiplayerPeer.is_server_relay_supported()<class_MultiplayerPeer_method_is_server_relay_supported>`\ 。
 
@@ -289,9 +289,9 @@ SceneMultiplayer
 
 :ref:`Error<enum_@GlobalScope_Error>` **complete_auth**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_method_complete_auth>`
 
-完成对由 ``id`` 标识的远程对等体的身份验证步骤。远程端也完成身份验证之后，将会为这个对等体发出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` 信号。不会再从此对等体接收到身份验证消息。
+完成对由 ``id`` 标识的远程对等端的身份验证步骤。远程端也完成身份验证之后，将会为这个对等端发出 :ref:`MultiplayerAPI.peer_connected<class_MultiplayerAPI_signal_peer_connected>` 信号。不会再从此对等端接收到身份验证消息。
 
-如果对等体在完成身份验证之前断开连接，无论是由于网络问题、\ :ref:`auth_timeout<class_SceneMultiplayer_property_auth_timeout>` 过期还是手动调用 :ref:`disconnect_peer()<class_SceneMultiplayer_method_disconnect_peer>`\ ，都会发出 :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` 信号，而不是 :ref:`MultiplayerAPI.peer_disconnected<class_MultiplayerAPI_signal_peer_disconnected>` 信号。
+如果对等端在完成身份验证之前断开连接，无论是由于网络问题、\ :ref:`auth_timeout<class_SceneMultiplayer_property_auth_timeout>` 过期还是手动调用 :ref:`disconnect_peer()<class_SceneMultiplayer_method_disconnect_peer>`\ ，都会发出 :ref:`peer_authentication_failed<class_SceneMultiplayer_signal_peer_authentication_failed>` 信号，而不是 :ref:`MultiplayerAPI.peer_disconnected<class_MultiplayerAPI_signal_peer_disconnected>` 信号。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ SceneMultiplayer
 
 |void| **disconnect_peer**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SceneMultiplayer_method_disconnect_peer>`
 
-断开由 ``id`` 标识的对等体的连接，将其从连接的对等体列表中移除，并关闭与它的底层连接。
+断开由 ``id`` 标识的对等端的连接，将其从连接的对等端列表中移除，并关闭与它的底层连接。
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +339,7 @@ SceneMultiplayer
 
 :ref:`Error<enum_@GlobalScope_Error>` **send_bytes**\ (\ bytes\: :ref:`PackedByteArray<class_PackedByteArray>`, id\: :ref:`int<class_int>` = 0, mode\: :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` = 2, channel\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SceneMultiplayer_method_send_bytes>`
 
-向由 ``id`` 标识的特定对等体发送给定的原始字节 ``bytes``\ （见 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。默认 ID 为 ``0``\ ，即广播到所有对等体。
+向由 ``id`` 标识的特定对等端发送给定的原始字节 ``bytes``\ （见 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。默认 ID 为 ``0``\ ，即广播到所有对等端。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

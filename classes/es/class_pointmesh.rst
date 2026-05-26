@@ -7,7 +7,7 @@ PointMesh
 
 **Hereda:** :ref:`PrimitiveMesh<class_PrimitiveMesh>` **<** :ref:`Mesh<class_Mesh>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Mesh with a single point primitive.
+Malla con una sola primitiva de punto.
 
 .. rst-class:: classref-introduction-group
 

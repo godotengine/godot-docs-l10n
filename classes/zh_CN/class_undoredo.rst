@@ -482,7 +482,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_has_redo>`
 
-有“重做”动作可用时返回 ``true``\ 。
+如果有“重做”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ enum **MergeMode**: :ref:`🔗<enum_UndoRedo_MergeMode>`
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_UndoRedo_method_has_undo>`
 
-有“撤销”动作可用时返回 ``true``\ 。
+如果有“撤销”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

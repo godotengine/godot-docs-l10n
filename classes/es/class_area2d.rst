@@ -17,11 +17,11 @@ Una región de espacio 2D que detecta otros :ref:`CollisionObject2D<class_Collis
 Descripción
 ----------------------
 
-**Area2D** is a region of 2D space defined by one or multiple :ref:`CollisionShape2D<class_CollisionShape2D>` or :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` child nodes. It detects when other :ref:`CollisionObject2D<class_CollisionObject2D>`\ s enter or exit it, and it also keeps track of which collision objects haven't exited it yet (i.e. which one are overlapping it).
+**Area2D** es una región del espacio 2D definida por uno o varios nodos hijo :ref:`CollisionShape2D<class_CollisionShape2D>` o :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`. Detecta cuándo otros :ref:`CollisionObject2D<class_CollisionObject2D>` entran o salen de ella, y también realiza un seguimiento de qué objetos de colisión aún no han salido (es decir, cuáles la están superponiendo).
 
-This node can also locally alter or override physics parameters (gravity, damping) and route audio to custom audio buses.
+Este nodo también puede alterar o sobrescribir parámetros físicos (gravedad, amortiguación) y enrutar el audio a buses de audio personalizados.
 
-\ **Note:** Areas and bodies created with :ref:`PhysicsServer2D<class_PhysicsServer2D>` might not interact as expected with **Area2D**\ s, and might not emit signals or track objects correctly.
+\ **Nota:** Las áreas y los cuerpos creados con :ref:`PhysicsServer2D<class_PhysicsServer2D>` pueden no interactuar como se espera con los **Area2D**, y podrían fallar al emitir señales o realizar el seguimiento de objetos.
 
 .. rst-class:: classref-introduction-group
 
@@ -137,11 +137,11 @@ Emitida cuando el ``area`` recibido sale de esta área. Requiere que :ref:`monit
 
 **area_shape_entered**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area2D<class_Area2D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_area_shape_entered>`
 
-Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``area`` enters a shape of this area. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
+Emitida cuando una forma (:ref:`Shape2D<class_Shape2D>`) del área externa (``area``) entra en una forma de esta área. Requiere que :ref:`monitoring<class_Area2D_property_monitoring>` esté establecido en ``true``.
 
-\ ``local_shape_index`` and ``area_shape_index`` contain indices of the interacting shapes from this area and the other area, respectively. ``area_rid`` contains the :ref:`RID<class_RID>` of the other area. These values can be used with the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
+Los parámetros ``local_shape_index`` y ``area_shape_index`` contienen los índices de las formas que interactúan de ésta área y del área externa, respectivamente. ``area_rid`` contiene el :ref:`RID<class_RID>` del área externa. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **Example:** Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node from the shape index:
+\ **Ejemplo:** Obtener el nodo :ref:`CollisionShape2D<class_CollisionShape2D>` a partir del índice de la forma:
 
 
 .. tabs::
@@ -166,9 +166,9 @@ Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``area`` enters a s
 
 **area_shape_exited**\ (\ area_rid\: :ref:`RID<class_RID>`, area\: :ref:`Area2D<class_Area2D>`, area_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_area_shape_exited>`
 
-Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``area`` exits a shape of this area. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
+Se emite cuando una :ref:`Shape2D<class_Shape2D>` de la ``area`` recibido sale de una forma de esta área. Requiere que :ref:`monitoring<class_Area2D_property_monitoring>` esté configurado como ``true``.
 
-See also :ref:`area_shape_entered<class_Area2D_signal_area_shape_entered>`.
+Véase también :ref:`area_shape_entered<class_Area2D_signal_area_shape_entered>`.
 
 .. rst-class:: classref-item-separator
 
@@ -204,11 +204,11 @@ Emitido cuando el ``body`` recibido sale de este área. ``body`` puede ser un :r
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node2D<class_Node2D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_body_shape_entered>`
 
-Emitted when a :ref:`Shape2D<class_Shape2D>` of the received ``body`` enters a shape of this area. ``body`` can be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>`. :ref:`TileMap<class_TileMap>`\ s are detected if their :ref:`TileSet<class_TileSet>` has collision shapes configured. Requires :ref:`monitoring<class_Area2D_property_monitoring>` to be set to ``true``.
+Emitida cuando una forma :ref:`Shape2D<class_Shape2D>` del cuerpo externo ``body`` entra en una forma de ésta área. ``body`` puede ser un :ref:`PhysicsBody2D<class_PhysicsBody2D>` o un :ref:`TileMap<class_TileMap>`. Los :ref:`TileMap<class_TileMap>` se detectan si su :ref:`TileSet<class_TileSet>` tiene formas de colisión configuradas. Requiere que :ref:`monitoring<class_Area2D_property_monitoring>` esté establecido en ``true``.
 
-\ ``local_shape_index`` and ``body_shape_index`` contain indices of the interacting shapes from this area and the interacting body, respectively. ``body_rid`` contains the :ref:`RID<class_RID>` of the body. These values can be used with the :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
+Los parámetros ``local_shape_index`` y ``body_shape_index`` contienen los índices de las formas que interactúan de ésta área y del cuerpo externo, respectivamente. ``body_rid`` contiene el :ref:`RID<class_RID>` del cuerpo externo. Estos valores pueden utilizarse con :ref:`PhysicsServer2D<class_PhysicsServer2D>`.
 
-\ **Example:** Get the :ref:`CollisionShape2D<class_CollisionShape2D>` node from the shape index:
+\ **Ejemplo:** Obtener el nodo :ref:`CollisionShape2D<class_CollisionShape2D>` a partir del índice de la forma:
 
 
 .. tabs::
@@ -258,7 +258,7 @@ enum **SpaceOverride**: :ref:`🔗<enum_Area2D_SpaceOverride>`
 
 :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **SPACE_OVERRIDE_DISABLED** = ``0``
 
-Esta zona no afecta a la gravedad/amortiguación.
+Esta área no afecta a la gravedad/amortiguación.
 
 .. _class_Area2D_constant_SPACE_OVERRIDE_COMBINE:
 
@@ -312,9 +312,9 @@ Descripciones de Propiedades
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-The rate at which objects stop spinning in this area. Represents the angular velocity lost per second.
+La velocidad a la que los objetos dejan de girar en esta área. Representa la velocidad angular perdida por segundo.
 
-See :ref:`ProjectSettings.physics/2d/default_angular_damp<class_ProjectSettings_property_physics/2d/default_angular_damp>` for more details about damping.
+Véase :ref:`ProjectSettings.physics/2d/default_angular_damp<class_ProjectSettings_property_physics/2d/default_angular_damp>` para obtener más detalles sobre la amortiguación.
 
 .. rst-class:: classref-item-separator
 
@@ -331,7 +331,7 @@ See :ref:`ProjectSettings.physics/2d/default_angular_damp<class_ProjectSettings_
 - |void| **set_angular_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_angular_damp_space_override_mode**\ (\ )
 
-Override mode for angular damping calculations within this area.
+Modo de sobre-escritura para los cálculos de amortiguación angular dentro de esta área.
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +348,7 @@ Override mode for angular damping calculations within this area.
 - |void| **set_audio_bus_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_audio_bus_name**\ (\ )
 
-El nombre del bus de audio de la zona.
+El nombre del bus de audio del área.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ Si es ``true``, el área del bus de audio sobrescribe el bus de audio por defect
 - |void| **set_gravity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity**\ (\ )
 
-The area's gravity intensity (in pixels per second squared). This value multiplies the gravity direction. This is useful to alter the force of gravity without altering its direction.
+Intensidad gravitatoria del area (en píxeles por segundo al cuadrado). Este valor multiplica la dirección gravitatoria . Esto resulta útil para modificar la fuerza de la gravedad sin alterar su dirección.
 
 .. rst-class:: classref-item-separator
 
@@ -416,7 +416,7 @@ El vector de gravedad del área (no normalizado).
 - |void| **set_gravity_is_point**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_gravity_a_point**\ (\ )
 
-If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_center<class_Area2D_property_gravity_point_center>`). See also :ref:`gravity_space_override<class_Area2D_property_gravity_space_override>`.
+Si es ``true``, la gravedad se calcula a partir de un punto (establecido mediante :ref:`gravity_point_center<class_Area2D_property_gravity_point_center>`). Véase también :ref:`gravity_space_override<class_Area2D_property_gravity_space_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ If ``true``, gravity is calculated from a point (set via :ref:`gravity_point_cen
 - |void| **set_gravity_point_center**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_gravity_point_center**\ (\ )
 
-If gravity is a point (see :ref:`gravity_point<class_Area2D_property_gravity_point>`), this will be the point of attraction.
+Si la gravedad es un punto (ver :ref:`gravity_point<class_Area2D_property_gravity_point>`), este será el punto de atracción.
 
 .. rst-class:: classref-item-separator
 
@@ -486,9 +486,9 @@ Modo de sobrescritura para los cálculos de gravedad dentro de esta área.
 - |void| **set_linear_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_linear_damp**\ (\ )
 
-The rate at which objects stop moving in this area. Represents the linear velocity lost per second.
+La tasa a la que los objetos dejan de moverse en esta área. Representa la velocidad lineal perdida por segundo.
 
-See :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>` for more details about damping.
+Véase :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>` para obtener más detalles sobre la amortiguación.
 
 .. rst-class:: classref-item-separator
 
@@ -505,7 +505,7 @@ See :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_space_override_mode**\ (\ value\: :ref:`SpaceOverride<enum_Area2D_SpaceOverride>`\ )
 - :ref:`SpaceOverride<enum_Area2D_SpaceOverride>` **get_linear_damp_space_override_mode**\ (\ )
 
-Override mode for linear damping calculations within this area.
+Modo de sobre-escritura para cálculos de amortiguación lineal dentro de esta área.
 
 .. rst-class:: classref-item-separator
 
@@ -556,7 +556,7 @@ Si es ``true``, el área detecta cuerpos o áreas que entran y salen de ella.
 - |void| **set_priority**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_priority**\ (\ )
 
-The area's priority. Higher priority areas are processed first. The :ref:`World2D<class_World2D>`'s physics is always processed last, after all areas.
+La prioridad del área. Las áreas de mayor prioridad se procesan primero. La física de :ref:`World2D<class_World2D>` siempre se procesa al final, después de todas las áreas.
 
 .. rst-class:: classref-section-separator
 
@@ -573,9 +573,9 @@ Descripciones de Métodos
 
 :ref:`Array<class_Array>`\[:ref:`Area2D<class_Area2D>`\] **get_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area2D_method_get_overlapping_areas>`
 
-Returns a list of intersecting **Area2D**\ s. The overlapping area's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
+Devuelve una lista de **Area2D** que se intersecan. El :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` del área superpuesta debe formar parte del :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) this list is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), esta lista se modifica una vez durante el paso de física, no inmediatamente después de que se muevan los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -601,9 +601,9 @@ Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), e
 
 :ref:`bool<class_bool>` **has_overlapping_areas**\ (\ ) |const| :ref:`🔗<class_Area2D_method_has_overlapping_areas>`
 
-Returns ``true`` if intersecting any **Area2D**\ s, otherwise returns ``false``. The overlapping area's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
+Devuelve ``true`` si interseca alguna **Area2D**, de lo contrario devuelve ``false``. El :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` del área superpuesta debe ser parte del :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping areas is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), la lista de áreas superpuestas se modifica una vez durante el paso de física, no inmediatamente después de que se mueven los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -615,9 +615,9 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **has_overlapping_bodies**\ (\ ) |const| :ref:`🔗<class_Area2D_method_has_overlapping_bodies>`
 
-Returns ``true`` if intersecting any :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s or :ref:`TileMap<class_TileMap>`\ s, otherwise returns ``false``. The overlapping body's :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` must be part of this area's :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` in order to be detected.
+Devuelve ``true`` si interseca cualquier :ref:`PhysicsBody2D<class_PhysicsBody2D>` o :ref:`TileMap<class_TileMap>`, de lo contrario devuelve ``false``. El :ref:`CollisionObject2D.collision_layer<class_CollisionObject2D_property_collision_layer>` del cuerpo superpuesto debe ser parte del :ref:`CollisionObject2D.collision_mask<class_CollisionObject2D_property_collision_mask>` de esta área para que se detecte.
 
-For performance reasons (collisions are all processed at the same time) the list of overlapping bodies is modified once during the physics step, not immediately after objects are moved. Consider using signals instead.
+Por razones de rendimiento (todas las colisiones se procesan al mismo tiempo), la lista de cuerpos superpuestos se modifica una vez durante el paso de física, no inmediatamente después de que se mueven los objetos. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -629,9 +629,9 @@ For performance reasons (collisions are all processed at the same time) the list
 
 :ref:`bool<class_bool>` **overlaps_area**\ (\ area\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area2D_method_overlaps_area>`
 
-Returns ``true`` if the given **Area2D** intersects or overlaps this **Area2D**, ``false`` otherwise.
+Devuelve ``true`` si el **Area2D** dado interseca o se superpone a este **Area2D**, ``false`` en caso contrario.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, the list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **Nota:** El resultado de esta prueba no es inmediato después de mover objetos. Para mejorar el rendimiento, la lista de superposiciones se actualiza una vez por fotograma y antes del paso de física. Considera usar señales en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -643,11 +643,11 @@ Returns ``true`` if the given **Area2D** intersects or overlaps this **Area2D**,
 
 :ref:`bool<class_bool>` **overlaps_body**\ (\ body\: :ref:`Node<class_Node>`\ ) |const| :ref:`🔗<class_Area2D_method_overlaps_body>`
 
-Returns ``true`` if the given physics body intersects or overlaps this **Area2D**, ``false`` otherwise.
+Devuelve ``true`` si el cuerpo físico dado intersecciona o se superpone con esta **Area2D**, ``false`` en caso contrario.
 
-\ **Note:** The result of this test is not immediate after moving objects. For performance, list of overlaps is updated once per frame and before the physics step. Consider using signals instead.
+\ **Nota:** El resultado de esta test no es inmediato después de mover objetos. Por rendimiento, la lista de superposiciones se actualiza una vez por fotograma y antes del paso de física. Considera usar señales en su lugar.
 
-The ``body`` argument can either be a :ref:`PhysicsBody2D<class_PhysicsBody2D>` or a :ref:`TileMap<class_TileMap>` instance. While TileMaps are not physics bodies themselves, they register their tiles with collision shapes as a virtual physics body.
+El argumento ``body`` puede ser una instancia de :ref:`PhysicsBody2D<class_PhysicsBody2D>` o de :ref:`TileMap<class_TileMap>`. Aunque los TileMaps no son cuerpos físicos en sí mismos, registran sus piezas con formas de colisión como un cuerpo físico virtual.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

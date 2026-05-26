@@ -14,18 +14,18 @@ Una transmisión de audio con utilidades para la generación de sonido procedime
 Descripción
 ----------------------
 
-**AudioStreamGenerator** is a type of audio stream that does not play back sounds on its own; instead, it expects a script to generate audio data for it. See also :ref:`AudioStreamGeneratorPlayback<class_AudioStreamGeneratorPlayback>`.
+**AudioStreamGenerator** es un tipo de flujo de audio que no reproduce sonidos por sí mismo; en su lugar, espera que un script le genere datos de audio. Véase también :ref:`AudioStreamGeneratorPlayback<class_AudioStreamGeneratorPlayback>`.
 
-Here's a sample on how to use it to generate a sine wave:
+Aquí hay un ejemplo de cómo usarlo para generar una onda sinusoidal:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var playback # Will hold the AudioStreamGeneratorPlayback.
+    var playback # Contendrá el AudioStreamGeneratorPlayback.
     @onready var sample_hz = $AudioStreamPlayer.stream.mix_rate
-    var pulse_hz = 440.0 # The frequency of the sound wave.
+    var pulse_hz = 440.0 # La frecuencia de la onda de sonido.
     var phase = 0.0
 
     func _ready():
@@ -45,14 +45,14 @@ Here's a sample on how to use it to generate a sine wave:
 
     [Export] public AudioStreamPlayer Player { get; set; }
 
-    private AudioStreamGeneratorPlayback _playback; // Will hold the AudioStreamGeneratorPlayback.
+    private AudioStreamGeneratorPlayback _playback; // Contendrá el AudioStreamGeneratorPlayback.
     private float _sampleHz;
-    private float _pulseHz = 440.0f; // The frequency of the sound wave.
+    private float _pulseHz = 440.0f; // La frecuencia de la onda de sonido.
     private double phase = 0.0;
 
     public override void _Ready()
     {
-        if (Player.Stream is AudioStreamGenerator generator) // Type as a generator to access MixRate.
+        if (Player.Stream is AudioStreamGenerator generator) // Tipo como generador para acceder a MixRate.
         {
             _sampleHz = generator.MixRate;
             Player.Play();
@@ -75,11 +75,11 @@ Here's a sample on how to use it to generate a sine wave:
 
 
 
-In the example above, the "AudioStreamPlayer" node must use an **AudioStreamGenerator** as its stream. The ``fill_buffer`` function provides audio data for approximating a sine wave.
+En el ejemplo anterior, el nodo "AudioStreamPlayer" debe usar un **AudioStreamGenerator** como su flujo. La función ``fill_buffer`` proporciona datos de audio para aproximar una onda sinusoidal.
 
-See also :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectSpectrumAnalyzer>` for performing real-time audio spectrum analysis.
+Véase también :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectSpectrumAnalyzer>` para realizar análisis de espectro de audio en tiempo real.
 
-\ **Note:** Due to performance constraints, this class is best used from C# or from a compiled language via GDExtension. If you still want to use this class from GDScript, consider using a lower :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` such as 11,025 Hz or 22,050 Hz.
+\ **Nota:** Debido a limitaciones de rendimiento, esta clase se usa mejor desde C# o desde un lenguaje compilado mediante GDExtension. Si aún deseas usar esta clase desde GDScript, considera usar un :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` más bajo, como 11,025 Hz o 22,050 Hz.
 
 .. rst-class:: classref-introduction-group
 
@@ -188,15 +188,15 @@ La duración del búfer a generar (en segundos). Valores más bajos resultan en 
 - |void| **set_mix_rate**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_mix_rate**\ (\ )
 
-The sample rate to use (in Hz). Higher values are more demanding for the CPU to generate, but result in better quality.
+La frecuencia de muestreo a utilizar (en Hz). Los valores más altos son más exigentes para la CPU al generarlos, pero dan como resultado una mejor calidad.
 
-In games, common sample rates in use are ``11025``, ``16000``, ``22050``, ``32000``, ``44100``, and ``48000``.
+En los juegos, las frecuencias de muestreo habituales son ``11025``, ``16000``, ``22050``, ``32000``, ``44100`` y ``48000``.
 
-According to the `Nyquist-Shannon sampling theorem <https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem>`__, there is no quality difference to human hearing when going past 40,000 Hz (since most humans can only hear up to ~20,000 Hz, often less). If you are generating lower-pitched sounds such as voices, lower sample rates such as ``32000`` or ``22050`` may be usable with no loss in quality.
+Según el `teorema de muestreo de Nyquist-Shannon <https://es.wikipedia.org/wiki/Teorema_de_muestreo_de_Nyquist-Shannon>`__, no hay diferencia de calidad para el oído humano al superar los 40.000 Hz (ya que la mayoría de los humanos solo pueden oír hasta ~20.000 Hz, a menudo menos). Si estás generando sonidos de tono más bajo, como voces, se pueden utilizar frecuencias de muestreo menores, como ``32000`` o ``22050``, sin pérdida de calidad.
 
-\ **Note:** **AudioStreamGenerator** is not automatically resampling input data, to produce expected result :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` should match the sampling rate of input data.
+\ **Nota:** **AudioStreamGenerator** no remuestrea automáticamente los datos de entrada; para obtener el resultado esperado, :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` debe coincidir con la frecuencia de muestreo de los datos de entrada.
 
-\ **Note:** If you are using :ref:`AudioEffectCapture<class_AudioEffectCapture>` as the source of your data, set :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` to :ref:`MIX_RATE_INPUT<class_AudioStreamGenerator_constant_MIX_RATE_INPUT>` or :ref:`MIX_RATE_OUTPUT<class_AudioStreamGenerator_constant_MIX_RATE_OUTPUT>` to automatically match current :ref:`AudioServer<class_AudioServer>` mixing rate.
+\ **Nota:** Si utilizas :ref:`AudioEffectCapture<class_AudioEffectCapture>` como fuente de tus datos, establece :ref:`mix_rate_mode<class_AudioStreamGenerator_property_mix_rate_mode>` en :ref:`MIX_RATE_INPUT<class_AudioStreamGenerator_constant_MIX_RATE_INPUT>` o :ref:`MIX_RATE_OUTPUT<class_AudioStreamGenerator_constant_MIX_RATE_OUTPUT>` para que coincida automáticamente con la frecuencia de mezcla actual del :ref:`AudioServer<class_AudioServer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ According to the `Nyquist-Shannon sampling theorem <https://en.wikipedia.org/wik
 - |void| **set_mix_rate_mode**\ (\ value\: :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>`\ )
 - :ref:`AudioStreamGeneratorMixRate<enum_AudioStreamGenerator_AudioStreamGeneratorMixRate>` **get_mix_rate_mode**\ (\ )
 
-Mixing rate mode. If set to :ref:`MIX_RATE_CUSTOM<class_AudioStreamGenerator_constant_MIX_RATE_CUSTOM>`, :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>` is used, otherwise current :ref:`AudioServer<class_AudioServer>` mixing rate is used.
+Modo de frecuencia de mezcla. Si se establece en :ref:`MIX_RATE_CUSTOM<class_AudioStreamGenerator_constant_MIX_RATE_CUSTOM>`, se utiliza :ref:`mix_rate<class_AudioStreamGenerator_property_mix_rate>`; de lo contrario, se utiliza la frecuencia de mezcla actual de :ref:`AudioServer<class_AudioServer>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

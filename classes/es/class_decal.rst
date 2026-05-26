@@ -17,17 +17,17 @@ Nodo que proyecta una textura sobre una :ref:`MeshInstance3D<class_MeshInstance3
 Descripción
 ----------------------
 
-**Decal**\ s are used to project a texture onto a :ref:`Mesh<class_Mesh>` in the scene. Use Decals to add detail to a scene without affecting the underlying :ref:`Mesh<class_Mesh>`. They are often used to add weathering to building, add dirt or mud to the ground, or add variety to props. Decals can be moved at any time, making them suitable for things like blob shadows or laser sight dots.
+Los **Decal**\ s se utilizan para project una textura sobre un :ref:`Mesh<class_Mesh>` en la escena. Utiliza Decals para añadir detalles a una escena sin afectar al :ref:`Mesh<class_Mesh>` subyacente. A menudo se utilizan para añadir desgaste a los edificios, añadir suciedad o barro al suelo, o añadir variedad a los props. Los Decals se pueden mover en cualquier momento, lo que los hace adecuados para cosas como blob shadows o laser sight dots.
 
-They are made of an :ref:`AABB<class_AABB>` and a group of :ref:`Texture2D<class_Texture2D>`\ s specifying :ref:`Color<class_Color>`, normal, ORM (ambient occlusion, roughness, metallic), and emission. Decals are projected within their :ref:`AABB<class_AABB>` so altering the orientation of the Decal affects the direction in which they are projected. By default, Decals are projected down (i.e. from positive Y to negative Y).
+Están hechos de un :ref:`AABB<class_AABB>` y un grupo de :ref:`Texture2D<class_Texture2D>`\ s que especifican el :ref:`Color<class_Color>`, normal, ORM (ambient occlusion, roughness, metallic) y emisión. Los Decals se proyectan dentro de su :ref:`AABB<class_AABB>`, por lo que alterar la orientación del Decal afecta la dirección en la que se proyectan. Por defecto, los Decals se proyectan hacia abajo (es decir, de Y positivo a Y negativo).
 
-The :ref:`Texture2D<class_Texture2D>`\ s associated with the Decal are automatically stored in a texture atlas which is used for drawing the decals so all decals can be drawn at once. Godot uses clustered decals, meaning they are stored in cluster data and drawn when the mesh is drawn, they are not drawn as a post-processing effect after.
+Los :ref:`Texture2D<class_Texture2D>`\ s asociados con el Decal se almacenan automáticamente en un atlas de texturas que se utiliza para dibujar los decals, de modo que todos los decals se puedan dibujar a la vez. Godot utiliza decals agrupados, lo que significa que se almacenan en datos de cluster y se dibujan cuando se dibuja el mesh; no se dibujan como un effect de post-procesamiento posterior.
 
-\ **Note:** Decals cannot affect an underlying material's transparency, regardless of its transparency mode (alpha blend, alpha scissor, alpha hash, opaque pre-pass). This means translucent or transparent areas of a material will remain translucent or transparent even if an opaque decal is applied on them.
+\ **Note:** Los Decals no pueden afectar la transparencia de un material subyacente, independientemente de su modo de transparencia (alpha blend, alpha scissor, alpha hash, opaque pre-pass). Esto significa que las áreas translúcidas o transparentes de un material seguirán siendo translúcidas o transparentes incluso si se aplica un decal opaco sobre ellas.
 
-\ **Note:** Decals are only supported in the Forward+ and Mobile rendering methods, not Compatibility. When using the Mobile rendering method, only 8 decals can be displayed on each mesh resource. Attempting to display more than 8 decals on a single mesh resource will result in decals flickering in and out as the camera moves.
+\ **Note:** Los Decals solo son compatibles con los métodos de renderizado Forward+ y Mobile, no con Compatibility. Al usar el método de renderizado Mobile, solo se pueden mostrar 8 decals en cada recurso mesh. Intentar mostrar más de 8 decals en un solo recurso mesh hará que los decals parpadeen a medida que la cámara se mueve.
 
-\ **Note:** When using the Mobile rendering method, decals will only correctly affect meshes whose visibility AABB intersects with the decal's AABB. If using a shader to deform the mesh in a way that makes it go outside its AABB, :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` must be increased on the mesh. Otherwise, the decal may not be visible on the mesh.
+\ **Note:** Al usar el método de renderizado Mobile, los decals solo afectarán correctamente a las mallas cuya visibilidad AABB se intersecte con el decal's AABB. Si se usa un shader para deformar el mesh de manera que salga de su AABB, se debe aumentar :ref:`GeometryInstance3D.extra_cull_margin<class_GeometryInstance3D_property_extra_cull_margin>` en el mesh. De lo contrario, el decal podría no ser visible en el mesh.
 
 .. rst-class:: classref-reftable-group
 
@@ -158,7 +158,7 @@ Descripciones de Propiedades
 - |void| **set_albedo_mix**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_albedo_mix**\ (\ )
 
-Blends the albedo :ref:`Color<class_Color>` of the decal with albedo :ref:`Color<class_Color>` of the underlying mesh. This can be set to ``0.0`` to create a decal that only affects normal or ORM. In this case, an albedo texture is still required as its alpha channel will determine where the normal and ORM will be overridden. See also :ref:`modulate<class_Decal_property_modulate>`.
+Mezcla el :ref:`Color<class_Color>` de albedo del decal con el :ref:`Color<class_Color>` de albedo del mesh subyacente. Esto se puede establecer en ``0.0`` para crear un decal que solo afecte a normal o ORM. En este caso, todavía se requiere una textura de albedo, ya que su canal alpha determinará dónde se sobrescribirán normal y ORM. Consulte también :ref:`modulate<class_Decal_property_modulate>`.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Blends the albedo :ref:`Color<class_Color>` of the decal with albedo :ref:`Color
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-Specifies which :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` this decal will project on. By default, Decals affect all layers. This is used so you can specify which types of objects receive the Decal and which do not. This is especially useful so you can ensure that dynamic objects don't accidentally receive a Decal intended for the terrain under them.
+Especifica en qué :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` se proyectará este decal. Por defecto, los Decals afectan a todas las capas. Esto se utiliza para poder especificar qué tipos de objetos reciben el Decal y cuáles no. Esto es especialmente útil para asegurar que los objetos dinámicos no reciban accidentalmente un Decal destinado al terreno debajo de ellos.
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ The distance from the camera at which the Decal begins to fade away (in 3D units
 - |void| **set_enable_distance_fade**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_distance_fade_enabled**\ (\ )
 
-If ``true``, decals will smoothly fade away when far from the active :ref:`Camera3D<class_Camera3D>` starting at :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>`. The Decal will fade out over :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Decal_property_distance_fade_length>`, after which it will be culled and not sent to the shader at all. Use this to reduce the number of active Decals in a scene and thus improve performance.
+Si es ``true``, los decals se desvanecerán suavemente cuando estén lejos de la :ref:`Camera3D<class_Camera3D>` activa, comenzando en :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>`. El Decal se desvanecerá por completo a lo largo de :ref:`distance_fade_begin<class_Decal_property_distance_fade_begin>` + :ref:`distance_fade_length<class_Decal_property_distance_fade_length>`, después de lo cual será descartado culled y no se enviará al shader en absoluto. Utiliza esto para reducir el número de calcos activos en una escena y así mejorar el rendimiento.
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ If ``true``, decals will smoothly fade away when far from the active :ref:`Camer
 - |void| **set_distance_fade_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_length**\ (\ )
 
-The distance over which the Decal fades (in 3D units). The Decal becomes slowly more transparent over this distance and is completely invisible at the end. Higher values result in a smoother fade-out transition, which is more suited when the camera moves fast.
+La distancia sobre la cual el Decal se desvanece (en unidades 3D). El Decal se vuelve lentamente mas transparente a lo largo de esta distancia y es completamente invisible al final. Los valores más altos resultan en una transición de desvanecimiento más suave, lo cual es más adecuado cuando la cámara se mueve rápido.
 
 .. rst-class:: classref-item-separator
 

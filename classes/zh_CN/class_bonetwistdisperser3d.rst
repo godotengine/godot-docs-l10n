@@ -14,11 +14,11 @@ BoneTwistDisperser3D
 描述
 ----
 
-This **BoneTwistDisperser3D** allows for smooth twist interpolation between multiple bones by dispersing the end bone's twist to the parents. This only changes the twist without changing the global position of each joint.
+此 **BoneTwistDisperser3D** 节点通过将末端骨骼的扭转分散到父骨骼，来实现多个骨骼间的平滑扭转插值。它只会改变扭转角度，而不会改变每个关节的全局位置。
 
-This is useful for smoothly twisting bones in combination with :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` and IK.
+与 :ref:`CopyTransformModifier3D<class_CopyTransformModifier3D>` 和反向动力学（IK）结合使用时，可用于实现骨骼的平滑扭转效果。
 
-\ **Note:** If an extracted twist is greater than 180 degrees, flipping occurs. This is similar to :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>`.
+\ **注意：**\ 如果提取的扭转角度超过 180 度，则会发生翻转。这一点与 :ref:`ConvertTransformModifier3D<class_ConvertTransformModifier3D>` 类似。
 
 .. rst-class:: classref-reftable-group
 
@@ -133,7 +133,7 @@ enum **DisperseMode**: :ref:`🔗<enum_BoneTwistDisperser3D_DisperseMode>`
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_WEIGHTED** = ``1``
 
-Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, based on the length of the bones between joint segments. See also :ref:`set_weight_position()<class_BoneTwistDisperser3D_method_set_weight_position>`.
+根据关节节段之间骨骼的长度，分配数值，使其从 ``0.0`` 单调递增到 ``1.0``\ 。另见 :ref:`set_weight_position()<class_BoneTwistDisperser3D_method_set_weight_position>`\ 。
 
 .. _class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM:
 
@@ -141,9 +141,9 @@ Assign amounts so that they monotonically increase from ``0.0`` to ``1.0``, base
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **DISPERSE_MODE_CUSTOM** = ``2``
 
-You can assign arbitrary amounts to the joint list. See also :ref:`set_joint_twist_amount()<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`.
+可以为关节列表分配任意值。另见 :ref:`set_joint_twist_amount()<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`\ 。
 
-When :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``false``, a child of the reference bone exists solely to determine the twist axis, so its custom amount has absolutely no effect at all.
+当 :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` 为 ``false`` 时，参考骨骼的子骨骼仅用于确定扭转轴，因此其自定义量完全没有效果。
 
 .. rst-class:: classref-section-separator
 
@@ -165,9 +165,9 @@ When :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+如果为 ``true``\ ，则求解器每帧从骨骼姿态中检索骨骼轴。
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it.
+如果为 ``false``\ ，则求解器将从骨骼放松中检索骨骼轴并将其缓存。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`Curve<class_Curve>` **get_damping_curve**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_damping_curve>`
 
-Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+当 :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` 的值为 :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>` 时，返回阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -225,7 +225,7 @@ Returns the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperse
 
 :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>` **get_disperse_mode**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_disperse_mode>`
 
-Returns whether to use automatic amount assignment or to allow manual assignment.
+返回是使用自动分配还是允许手动分配。
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +249,7 @@ Returns whether to use automatic amount assignment or to allow manual assignment
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>` 为 ``true`` 时，返回骨骼链末端骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_joint_twist_amount>`
 
-Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+当 :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` 为 :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>` 时，返回骨骼链关节列表中 ``joint`` 处的扭转量。
 
 .. rst-class:: classref-item-separator
 
@@ -321,9 +321,9 @@ Returns the twist amount at ``joint`` in the bone chain's joint list when :ref:`
 
 :ref:`int<class_int>` **get_reference_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_reference_bone>`
 
-Returns the reference bone to extract twist of the setting at ``index``.
+返回参考骨骼，以提取 ``index`` 处的设置项的扭曲。
 
-This bone is either the end of the chain or its parent, depending on :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`.
+根据 :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`\ ，该骨骼要么是链的末端，要么是它的父级。
 
 .. rst-class:: classref-item-separator
 
@@ -335,9 +335,9 @@ This bone is either the end of the chain or its parent, depending on :ref:`is_en
 
 :ref:`String<class_String>` **get_reference_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_reference_bone_name>`
 
-Returns the reference bone name to extract twist of the setting at ``index``.
+返回参考骨骼名称，以提取 ``index`` 处的设置项的扭曲。
 
-This bone is either the end of the chain or its parent, depending on :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`.
+根据 :ref:`is_end_bone_extended()<class_BoneTwistDisperser3D_method_is_end_bone_extended>`\ ，该骨骼要么是链的末端，要么是它的父级。
 
 .. rst-class:: classref-item-separator
 
@@ -373,7 +373,7 @@ This bone is either the end of the chain or its parent, depending on :ref:`is_en
 
 :ref:`Quaternion<class_Quaternion>` **get_twist_from**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_twist_from>`
 
-Returns the rotation to an arbitrary state before twisting for the current bone pose to extract the twist when :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` is ``false``.
+当 :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` 为 ``false`` 时，返回当前骨骼姿势在扭转之前恢复到任意状态时的旋转，以便提取扭转角度。
 
 .. rst-class:: classref-item-separator
 
@@ -385,7 +385,7 @@ Returns the rotation to an arbitrary state before twisting for the current bone 
 
 :ref:`float<class_float>` **get_weight_position**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_get_weight_position>`
 
-Returns the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+返回当 :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` 为 :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>` 时，在关节之间分割线段以进行权重分配的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ Returns the position at which to divide the segment between joints for weight as
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+如果末端骨骼被扩展形成尾部，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 :ref:`bool<class_bool>` **is_twist_from_rest**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_BoneTwistDisperser3D_method_is_twist_from_rest>`
 
-Returns ``true`` if extracting the twist amount from the difference between the bone rest and the current bone pose.
+如果能够从骨骼放松姿势和当前骨骼姿势之间的差异中提取扭转量，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Returns ``true`` if extracting the twist amount from the difference between the 
 
 |void| **set_damping_curve**\ (\ index\: :ref:`int<class_int>`, curve\: :ref:`Curve<class_Curve>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_damping_curve>`
 
-Sets the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+当 :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` 为 :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>` 时，用于设置阻尼曲线。
 
 .. rst-class:: classref-item-separator
 
@@ -433,7 +433,7 @@ Sets the damping curve when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D
 
 |void| **set_disperse_mode**\ (\ index\: :ref:`int<class_int>`, disperse_mode\: :ref:`DisperseMode<enum_BoneTwistDisperser3D_DisperseMode>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_disperse_mode>`
 
-Sets whether to use automatic amount assignment or to allow manual assignment.
+设置是使用自动分配还是允许手动分配。
 
 .. rst-class:: classref-item-separator
 
@@ -469,9 +469,9 @@ Sets whether to use automatic amount assignment or to allow manual assignment.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+设置骨骼链的末端骨骼名称。
 
-\ **Note:** The end bone must be a child of the root bone.
+\ **注意：**\ 末端骨骼必须是根骨骼的子骨骼。
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ Sets the end bone name of the bone chain.
 
 |void| **set_joint_twist_amount**\ (\ index\: :ref:`int<class_int>`, joint\: :ref:`int<class_int>`, twist_amount\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_joint_twist_amount>`
 
-Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>`.
+当 :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` 为 :ref:`DISPERSE_MODE_CUSTOM<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_CUSTOM>` 时，设置骨骼链关节列表中 ``joint`` 处的扭转量。
 
 .. rst-class:: classref-item-separator
 
@@ -533,9 +533,9 @@ Sets the twist amount at ``joint`` in the bone chain's joint list when :ref:`get
 
 |void| **set_twist_from**\ (\ index\: :ref:`int<class_int>`, from\: :ref:`Quaternion<class_Quaternion>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_twist_from>`
 
-Sets the rotation to an arbitrary state before twisting for the current bone pose to extract the twist when :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` is ``false``.
+在扭转当前骨骼姿势之前，将旋转设置为任意状态，以便在 :ref:`is_twist_from_rest()<class_BoneTwistDisperser3D_method_is_twist_from_rest>` 为 ``false`` 时提取扭转。
 
-In other words, by calling :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>` by :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` of a specific :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`, you can extract only the twists generated by modifiers processed after that but before this **BoneTwistDisperser3D**.
+换言之，通过对特定 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的 :ref:`SkeletonModifier3D.modification_processed<class_SkeletonModifier3D_signal_modification_processed>` 调用 :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`\ ，可以仅提取在该 **BoneTwistDisperser3D** 之前处理的修改器生成的扭转。
 
 .. rst-class:: classref-item-separator
 
@@ -547,9 +547,9 @@ In other words, by calling :ref:`set_twist_from()<class_BoneTwistDisperser3D_met
 
 |void| **set_twist_from_rest**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_twist_from_rest>`
 
-If ``enabled`` is ``true``, it extracts the twist amount from the difference between the bone rest and the current bone pose.
+如果 ``enabled`` 为 ``true``\ ，则从骨骼放松姿势和当前骨骼姿势之间的差异中提取扭转量。
 
-If ``enabled`` is ``false``, it extracts the twist amount from the difference between :ref:`get_twist_from()<class_BoneTwistDisperser3D_method_get_twist_from>` and the current bone pose. See also :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`.
+如果 ``enabled`` 为 ``false``\ ，则从 :ref:`get_twist_from()<class_BoneTwistDisperser3D_method_get_twist_from>` 和当前骨骼姿势之间的差异中提取扭转量。另见 :ref:`set_twist_from()<class_BoneTwistDisperser3D_method_set_twist_from>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -561,9 +561,9 @@ If ``enabled`` is ``false``, it extracts the twist amount from the difference be
 
 |void| **set_weight_position**\ (\ index\: :ref:`int<class_int>`, weight_position\: :ref:`float<class_float>`\ ) :ref:`🔗<class_BoneTwistDisperser3D_method_set_weight_position>`
 
-Sets the position at which to divide the segment between joints for weight assignment when :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` is :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>`.
+当 :ref:`get_disperse_mode()<class_BoneTwistDisperser3D_method_get_disperse_mode>` 的值为 :ref:`DISPERSE_MODE_WEIGHTED<class_BoneTwistDisperser3D_constant_DISPERSE_MODE_WEIGHTED>` 时，设置在关节之间分割线段以进行权重分配的位置。
 
-For example, when ``weight_position`` is ``0.5``, if two bone segments with a length of ``1.0`` exist between three joints, weights are assigned to each joint from root to end at ratios of ``0.5``, ``1.0``, and ``0.5``. Then amounts become ``0.25``, ``0.75``, and ``1.0`` respectively.
+例如，当 ``weight_position`` 为 ``0.5`` 时，如果三个关节之间存在两段长度为 ``1.0`` 的骨骼，则从根关节到末端关节，每个关节的权重分配比例分别为 ``0.5``\ 、\ ``1.0`` 和 ``0.5``\ 。然后，最终的权重值将分别变为 ``0.25``\ 、\ ``0.75`` 和 ``1.0``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

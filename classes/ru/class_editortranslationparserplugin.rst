@@ -14,13 +14,13 @@ EditorTranslationParserPlugin
 Описание
 ----------------
 
-**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` method in script.
+**EditorTranslationParserPlugin** вызывается при разборе файла для извлечения строк, требующих перевода. Для определения логики разбора и извлечения строк переопределите метод :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` в скрипте.
 
-The return value should be an :ref:`Array<class_Array>` of :ref:`PackedStringArray<class_PackedStringArray>`\ s, one for each extracted translatable string. Each entry should contain ``[msgid, msgctxt, msgid_plural, comment, source_line]``, where all except ``msgid`` are optional. Empty strings will be ignored.
+Возвращаемое значение должно представлять собой массив :ref:`Array<class_Array>` из :ref:`PackedStringArray<class_PackedStringArray>`, по одному для каждой извлеченной переводимой строки. Каждая запись должна содержать ``[msgid, msgctxt, msgid_plural, comment, source_line]``, где все, кроме ``msgid``, являются необязательными. Пустые строки будут игнорироваться.
 
-The extracted strings will be written into a translation template file selected by user under "Template Generation" in "Localization" tab in "Project Settings" menu.
+Извлеченные строки будут записаны в файл шаблона перевода, выбранный пользователем в разделе «Генерация шаблонов» на вкладке «Локализация» в меню «Настройки проекта».
 
-Below shows an example of a custom parser that extracts strings from a CSV file to write into a template.
+Ниже приведен пример пользовательского парсера, который извлекает строки из CSV-файла для записи в шаблон.
 
 
 .. tabs::
@@ -37,7 +37,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
         var split_strs = text.split(",", false)
         for s in split_strs:
             ret.append(PackedStringArray([s]))
-            #print("Extracted string: " + s)
+            #print("Извлеченная строка: " + s)
 
         return ret
 
@@ -60,7 +60,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
             foreach (string s in splitStrs)
             {
                 ret.Add([s]);
-                //GD.Print($"Extracted string: {s}");
+                //GD.Print($"Извлеченная строка: {s}");
             }
             return ret;
         }
@@ -73,32 +73,32 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
 
 
 
-To add a translatable string associated with a context, plural, comment, or source line:
+Чтобы добавить переводимую строку, связанную с контекстом, множественным числом, комментарием или исходной строкой:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
+    # Это добавит сообщение с msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment" и строкой источника "7".
     ret.append(PackedStringArray(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]))
-    # This will add a message with msgid "A test without context" and msgid_plural "plurals".
+    # Это добавит сообщение с идентификатором msgid "Тест без контекста" и значением msgid_plural "множественное число".
     ret.append(PackedStringArray(["A test without context", "", "plurals"]))
-    # This will add a message with msgid "Only with context" and msgctxt "a friendly context".
+    # Это добавит сообщение с идентификатором msgid "Только с контекстом" и текстом msgctxt "дружественный контекст".
     ret.append(PackedStringArray(["Only with context", "a friendly context"]))
 
  .. code-tab:: csharp
 
-    // This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
+    // Это добавит сообщение с msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment" и строкой источника "7".
     ret.Add(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]);
-    // This will add a message with msgid "A test without context" and msgid_plural "plurals".
+    // Это добавит сообщение с идентификатором msgid "Тест без контекста" и значением msgid_plural "множественное число".
     ret.Add(["A test without context", "", "plurals"]);
-    // This will add a message with msgid "Only with context" and msgctxt "a friendly context".
+    // Это добавит сообщение с идентификатором msgid "Только с контекстом" и текстом msgctxt "дружественный контекст".
     ret.Add(["Only with context", "a friendly context"]);
 
 
 
-\ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the ``path`` argument using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. This is because built-in scripts are loaded as :ref:`Resource<class_Resource>` type, not :ref:`FileAccess<class_FileAccess>` type. For example:
+\ **Примечание:** Если вы переопределяете логику парсинга для стандартных типов скриптов (GDScript, C# и т. д.), лучше загружать аргумент ``path`` с помощью :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. Это связано с тем, что встроенные скрипты загружаются как тип :ref:`Resource<class_Resource>`, а не :ref:`FileAccess<class_FileAccess>`. Например:
 
 
 .. tabs::
@@ -108,7 +108,7 @@ To add a translatable string associated with a context, plural, comment, or sour
     func _parse_file(path):
         var res = ResourceLoader.load(path, "Script")
         var text = res.source_code
-        # Parsing logic.
+        # Логика синтаксического анализа.
 
     func _get_recognized_extensions():
         return ["gd"]
@@ -119,7 +119,7 @@ To add a translatable string associated with a context, plural, comment, or sour
     {
         var res = ResourceLoader.Load<Script>(path, "Script");
         string text = res.SourceCode;
-        // Parsing logic.
+        // Логика синтаксического анализа.
     }
 
     public override string[] _GetRecognizedExtensions()
@@ -129,7 +129,7 @@ To add a translatable string associated with a context, plural, comment, or sour
 
 
 
-To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` method first.
+Чтобы использовать **EditorTranslationParserPlugin**, сначала зарегистрируйте его с помощью :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>`.
 
 .. rst-class:: classref-reftable-group
 

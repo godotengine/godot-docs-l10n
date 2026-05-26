@@ -267,7 +267,7 @@ Returns the root bone name.
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+Devuelve el nodo objetivo que el hueso final está intentando alcanzar.
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Sets the root bone name.
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+Establece el nodo objetivo que el hueso final intenta alcanzar.
 
 .. rst-class:: classref-item-separator
 

@@ -54,9 +54,9 @@ Descripciones de Propiedades
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-Total height of the capsule mesh (including the hemispherical ends).
+Altura total de la capsule mesh (incluidos los extremos semiesféricos).
 
-\ **Note:** The :ref:`height<class_CapsuleMesh_property_height>` of a capsule must be at least twice its :ref:`radius<class_CapsuleMesh_property_radius>`. Otherwise, the capsule becomes a circle. If the :ref:`height<class_CapsuleMesh_property_height>` is less than twice the :ref:`radius<class_CapsuleMesh_property_radius>`, the properties adjust to a valid value.
+\ **Nota:** El :ref:`height<class_CapsuleMesh_property_height>` de una capsule debe ser al menos el doble de su :ref:`radius<class_CapsuleMesh_property_radius>`. De lo contrario, la capsule se convierte en un círculo. Si el :ref:`height<class_CapsuleMesh_property_height>` es menor que el doble del :ref:`radius<class_CapsuleMesh_property_radius>`, las propiedades se ajustan a un value válido.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ Número de segmentos radiales en la malla de la cápsula.
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-Radius of the capsule mesh.
+Radio de la capsule mesh.
 
-\ **Note:** The :ref:`radius<class_CapsuleMesh_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_CapsuleMesh_property_height>`. Otherwise, the capsule becomes a circle. If the :ref:`radius<class_CapsuleMesh_property_radius>` is greater than half of the :ref:`height<class_CapsuleMesh_property_height>`, the properties adjust to a valid value.
+\ **Nota:** El :ref:`radius<class_CapsuleMesh_property_radius>` de una capsule no puede ser mayor que la mitad de su :ref:`height<class_CapsuleMesh_property_height>`. De lo contrario, la capsule se convierte en un círculo. Si el :ref:`radius<class_CapsuleMesh_property_radius>` es mayor que la mitad del :ref:`height<class_CapsuleMesh_property_height>`, las propiedades se ajustan a un value válido.
 
 .. rst-class:: classref-item-separator
 

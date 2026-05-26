@@ -17,7 +17,7 @@ Nodo che proietta una texture su un :ref:`MeshInstance3D<class_MeshInstance3D>`.
 Descrizione
 ----------------------
 
-I **Decal** servono per proiettare una texture su una :ref:`Mesh<class_Mesh>` nella scena. Utilizza le decalcomanie per aggiungere dettagli a una scena senza influenzare la :ref:`Mesh<class_Mesh>` sottostante. Sono spesso utilizzati per aggiungere intemperie a un edificio, sporcizia o fango al terreno o varietà agli oggetti di scena. Le decalcomanie possono essere spostate in qualsiasi momento, rendendole adatte per cose come ammassi di ombre o punti laser.
+I **Decal** servono per proiettare una texture su una :ref:`Mesh<class_Mesh>` nella scena. Utilizza le decalcomanie per aggiungere dettagli a una scena senza influenzare la :ref:`Mesh<class_Mesh>` sottostante. Sono spesso utilizzati per aggiungere intemperie a un edificio, sporcizia o fango al terreno o varietà agli oggetti di scena. Le decalcomanie possono essere spostate in qualsiasi momento, rendendole adatte per cose come ombre a chiazze o punti laser.
 
 Sono costituiti da un :ref:`AABB<class_AABB>` e un gruppo di :ref:`Texture2D<class_Texture2D>` che specificano :ref:`Color<class_Color>`, normale, ORM (occlusione ambientale, ruvidità, metallico) ed emissione. Le decalcomanie sono proiettate all'interno del loro :ref:`AABB<class_AABB>`, quindi la modifica dell'orientamento della decalcomania influenza la direzione in cui sono proiettate. Per impostazione predefinita, le decalcomanie sono proiettate verso il basso (ovvero da Y positivo a Y negativo).
 
@@ -226,7 +226,7 @@ Se ``true``, le decalcomanie svaniranno gradualmente quando sono lontane dalla :
 - |void| **set_distance_fade_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_distance_fade_length**\ (\ )
 
-La distanza su cui la decalcomania si dissolve (in unità 3D). La decalcomania diventa lentamente più trasparente su questa distanza fino a diventare totalmente invisibile. Valori più alti risultano in una transizione di dissolvenza più fluida, che è più adatta quando la telecamera si muove velocemente.
+La distanza su cui la decalcomania svanisce (in unità 3D). La decalcomania diventa gradualmente più trasparente su questa distanza, fino a diventare completamente invisibile. Valori più elevati rendono la dissolvenza più graduale, più adatta quando la telecamera si muove velocemente.
 
 .. rst-class:: classref-item-separator
 

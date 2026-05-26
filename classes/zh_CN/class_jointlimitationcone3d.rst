@@ -7,14 +7,14 @@ JointLimitationCone3D
 
 **继承：** :ref:`JointLimitation3D<class_JointLimitation3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
+与 :ref:`ChainIK3D<class_ChainIK3D>` 交互的锥形限制。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
+与 :ref:`ChainIK3D<class_ChainIK3D>` 交互的锥形限制。
 
 .. rst-class:: classref-reftable-group
 
@@ -48,9 +48,9 @@ A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
 - |void| **set_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angle**\ (\ )
 
-The radius range of the hole made by the cone.
+圆锥体形成的孔的半径范围。
 
-\ ``0`` degrees makes a sphere without hole, ``180`` degrees makes a hemisphere, and ``360`` degrees become empty (no limitation).
+\ ``0`` 度时形成一个没有孔的球体，\ ``180`` 度时形成一个半球体，\ ``360`` 度时则为空（无限制）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,14 +7,14 @@ StreamPeerBuffer
 
 **继承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-用于处理二进制数据流的流对等体。
+用于处理二进制数据流的流对等端。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-使用字节数组作为流的数据缓冲区流对等体。该对象可用于处理来自网络会话的二进制数据。要处理保存在文件中的二进制数据，可以直接使用 :ref:`FileAccess<class_FileAccess>`\ 。
+使用字节数组作为流的数据缓冲区流对等端。该对象可用于处理来自网络会话的二进制数据。要处理保存在文件中的二进制数据，可以直接使用 :ref:`FileAccess<class_FileAccess>`\ 。
 
 \ **StreamPeerBuffer** 对象会保存一个内部指针，是距离该缓冲区开头的字节偏移量。Get 和 put 操作都在该指针处进行，并会将其进行对应的移动。
 

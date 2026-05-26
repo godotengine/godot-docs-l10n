@@ -628,15 +628,15 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_USAGE_GROUP<class_@GlobalScope_constant_P
 
 **@export_multiline**\ (\ hint\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_multiline>`
 
-Export a :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` or :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] property with a large :ref:`TextEdit<class_TextEdit>` widget instead of a :ref:`LineEdit<class_LineEdit>`. This adds support for multiline content and makes it easier to edit large amount of text stored in the property.
+Esporta una proprietà di tipo :ref:`String<class_String>`, :ref:`Array<class_Array>`\ \[:ref:`String<class_String>`\ \], :ref:`PackedStringArray<class_PackedStringArray>`, :ref:`Dictionary<class_Dictionary>` o :ref:`Array<class_Array>`\ \[:ref:`Dictionary<class_Dictionary>`\ \] con un grande widget :ref:`TextEdit<class_TextEdit>` anziché con un :ref:`LineEdit<class_LineEdit>`. Ciò permette di supportare contenuti su più righe e semplifica la modifica di grandi quantità di testo memorizzate nella proprietà.
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
+Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_MULTILINE_TEXT<class_@GlobalScope_constant_PROPERTY_HINT_MULTILINE_TEXT>`.
 
 ::
 
     @export_multiline var character_biography
     @export_multiline var npc_dialogs: Array[String]
-    @export_multiline("monospace", "no_wrap") var favorite_ascii_art: String
+    @export_multiline(“monospace”, “no_wrap”) var favorite_ascii_art: String
 
 .. rst-class:: classref-item-separator
 
@@ -688,27 +688,27 @@ Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_PLACEHOLDER_TEXT<class_@GlobalScope_
 
 **@export_range**\ (\ min\: :ref:`float<class_float>`, max\: :ref:`float<class_float>`, step\: :ref:`float<class_float>` = 1.0, extra_hints\: :ref:`String<class_String>` = "", ...\ ) |vararg| :ref:`🔗<class_@GDScript_annotation_@export_range>`
 
-Export an :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>`\ \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>`, or :ref:`PackedFloat64Array<class_PackedFloat64Array>` property as a range value. The range must be defined by ``min`` and ``max``, as well as an optional ``step`` and a variety of extra hints. The ``step`` defaults to ``1`` for integer properties. For floating-point numbers this value depends on your :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>` setting.
+Esporta una proprietà di tipo :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Array<class_Array>`\ \[:ref:`int<class_int>`\ \], :ref:`Array<class_Array>` \[:ref:`float<class_float>`\ \], :ref:`PackedByteArray<class_PackedByteArray>`, :ref:`PackedInt32Array<class_PackedInt32Array>`, :ref:`PackedInt64Array<class_PackedInt64Array>`, :ref:`PackedFloat32Array<class_PackedFloat32Array>` o :ref:`PackedFloat64Array<class_PackedFloat64Array>` come valore tra un intervallo. L'intervallo deve essere definito da ``min`` e ``max``, oltre che da un passo facoltativo (``step``) e da una serie di ulteriori indicazioni. Il valore predefinito di ``step`` è ``1`` per le proprietà di tipo intero. Per i numeri in virgola mobile, questo valore dipende dall'impostazione :ref:`EditorSettings.interface/inspector/default_float_step<class_EditorSettings_property_interface/inspector/default_float_step>`.
 
-If hints ``"or_greater"`` and ``"or_less"`` are provided, the editor widget will not cap the value at range boundaries. The ``"exp"`` hint will make the edited values on range to change exponentially. The ``"prefer_slider"`` hint will make integer values use the slider instead of arrows for editing, while ``"hide_control"`` will hide the element controlling the value of the editor widget.
+Se vengono fornite le indicazioni ``"or_greater"`` e ``"or_less"``, il widget nell'editor non limiterà il valore ai confini dell'intervallo. L'indicazione ``"exp"`` consente di modificare i valori nell'intervallo in modo esponenziale. L'indicazione ``"prefer_slider"`` consente di modificare i valori di tipo intero tramite uno slider invece delle frecce, mentre ``"hide_control"`` nasconderà l'elemento che controlla il valore del widget nell'editor.
 
-Hints also allow to indicate the units for the edited value. Using ``"radians_as_degrees"`` you can specify that the actual value is in radians, but should be displayed in degrees in the Inspector dock (the range values are also in degrees). ``"degrees"`` allows to add a degree sign as a unit suffix (the value is unchanged). Finally, a custom suffix can be provided using ``"suffix:unit"``, where "unit" can be any string.
+Le indicazioni consentono anche di indicare le unità di misura del valore modificato. Utilizzando ``"radians_as_degrees"`` è possibile specificare che il valore effettivo è in radianti, ma deve essere visualizzato in gradi nel pannello Ispettore (anche i valori dell'intervallo sono in gradi). ``"degrees"`` consente di aggiungere il simbolo dei gradi come suffisso dell'unità di misura (il valore rimane invariato). Infine, è possibile fornire un suffisso personalizzato utilizzando ``"suffix:unit"``, dove "unit" può essere qualsiasi stringa.
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
+Vedi anche :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`.
 
 ::
 
-    @export_range(0, 20) var number
-    @export_range(-10, 20) var number
-    @export_range(-10, 20, 0.2) var number: float
-    @export_range(0, 20) var numbers: Array[float]
+    @export_range(0, 20) var numero
+    @export_range(-10, 20) var numero
+    @export_range(-10, 20, 0.2) var numero: float
+    @export_range(0, 20) var numeri: Array[float]
 
-    @export_range(0, 100, 1, "or_greater") var power_percent
-    @export_range(0, 100, 1, "or_greater", "or_less") var health_delta
+    @export_range(0, 100, 1, "or_greater") var energia_percentuale
+    @export_range(0, 100, 1, "or_greater","or_less") var vita_delta
 
-    @export_range(-180, 180, 0.001, "radians_as_degrees") var angle_radians
-    @export_range(0, 360, 1, "degrees") var angle_degrees
-    @export_range(-8, 8, 2, "suffix:px") var target_offset
+    @export_range(-180, 180, 0.001, "radians_as_degrees") var angolo_radianti
+    @export_range(0, 360, 1, "degrees") var angolo_gradi
+    @export_range(-8, 8, 2, "suffix:px") var offset_obiettivo
 
 .. rst-class:: classref-item-separator
 

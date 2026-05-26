@@ -1671,7 +1671,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`int<class_int>` **check_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_check_h_separation>`
 
-The horizontal space between the checkbox and the text in a :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>` mode cell.
+Горизонтальное расстояние между флажком и текстом в ячейке режима :ref:`TreeItem.CELL_MODE_CHECK<class_TreeItem_constant_CELL_MODE_CHECK>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1743,7 +1743,7 @@ The horizontal space between the checkbox and the text in a :ref:`TreeItem.CELL_
 
 :ref:`int<class_int>` **icon_h_separation** = ``4`` :ref:`🔗<class_Tree_theme_constant_icon_h_separation>`
 
-The horizontal space between the icon and the text in item's cells.
+Горизонтальное расстояние между значком и текстом в ячейках элемента.
 
 .. rst-class:: classref-item-separator
 

@@ -852,9 +852,9 @@ Dock 图标右键菜单 ID（在 macOS 上，该菜单包括标准应用程序�
 
 :ref:`String<class_String>` **get_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`\ ) |const| :ref:`🔗<class_NativeMenu_method_get_system_menu_text>`
 
-Returns the text of the system menu item.
+返回系统菜单项的文本。
 
-\ **Note:** This method is implemented on macOS.
+\ **注意：**\ 该方法在 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1348,9 +1348,9 @@ Returns the text of the system menu item.
 
 |void| **set_system_menu_text**\ (\ menu_id\: :ref:`SystemMenus<enum_NativeMenu_SystemMenus>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_NativeMenu_method_set_system_menu_text>`
 
-Sets the text of the system menu item.
+设置系统菜单项的文本。
 
-\ **Note:** This method is implemented on macOS.
+\ **注意：**\ 该方法在 macOS 上实现。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

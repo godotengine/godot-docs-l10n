@@ -14,20 +14,20 @@ Timer
 描述
 ----
 
-The **Timer** node is a countdown timer and is the simplest way to handle time-based logic in the engine. When a timer reaches the end of its :ref:`wait_time<class_Timer_property_wait_time>`, it will emit the :ref:`timeout<class_Timer_signal_timeout>` signal.
+**Timer** 即计时器节点，是一种倒计时器，也是引擎中最简单的处理基于时间的逻辑的方法。计时器在等待 :ref:`wait_time<class_Timer_property_wait_time>` 结束后就会发出 :ref:`timeout<class_Timer_signal_timeout>` 信号。
 
-After a timer enters the scene tree, it can be manually started with :ref:`start()<class_Timer_method_start>`. A timer node is also started automatically if :ref:`autostart<class_Timer_property_autostart>` is ``true``.
+计时器进入场景树时，可以使用 :ref:`start()<class_Timer_method_start>` 手动启动。如果 :ref:`autostart<class_Timer_property_autostart>` 为 ``true``\ ，计时器节点也会自动启动。
 
-Without requiring much code, a timer node can be added and configured in the editor. The :ref:`timeout<class_Timer_signal_timeout>` signal it emits can also be connected through the Signals dock in the editor:
+可以在编辑器中添加并配置计时器节点，无需编写特别多的代码。计时器发出的 :ref:`timeout<class_Timer_signal_timeout>` 信号可以在编辑器的“信号”面板中连接：
 
 ::
 
     func _on_timer_timeout():
-        print("Time to attack!")
+        print("是时候表演真正的技术了！")
 
-\ **Note:** To create a one-shot timer without instantiating a node, use :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`.
+\ **注意：**\ 如果只想创建一次性的计时器，不想实例化节点，请使用 :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`\ 。
 
-\ **Note:** Timers are affected by :ref:`Engine.time_scale<class_Engine_property_time_scale>` unless :ref:`ignore_time_scale<class_Timer_property_ignore_time_scale>` is ``true``. The higher the time scale, the sooner timers will end. How often a timer processes may depend on the framerate or :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
+\ **注意：**\ 除非 :ref:`ignore_time_scale<class_Timer_property_ignore_time_scale>` 为 ``true``\ ，否则计时器会受到 :ref:`Engine.time_scale<class_Engine_property_time_scale>` 的影响。时间缩放值越大，计时器结束得越早。计时器的处理频率取决于帧率或 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ 。
 
 .. rst-class:: classref-introduction-group
 

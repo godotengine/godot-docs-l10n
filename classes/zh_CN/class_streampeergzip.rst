@@ -9,7 +9,7 @@ StreamPeerGZIP
 
 **继承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-能够处理 GZIP 和 deflate 压缩/解压缩的流对等体。
+能够处理 GZIP 和 deflate 压缩/解压缩的流对等端。
 
 .. rst-class:: classref-introduction-group
 

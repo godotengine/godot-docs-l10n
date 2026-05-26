@@ -36,7 +36,7 @@ To get a **ViewportTexture** in code, use the :ref:`Viewport.get_texture()<class
 Tutoriales
 --------------------
 
-- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
+- `Demostración GUI en el Viewport 3D <https://godotengine.org/asset-library/asset/2807>`__
 
 - `Demo de Viewport 3D en 2D <https://godotengine.org/asset-library/asset/2804>`__
 

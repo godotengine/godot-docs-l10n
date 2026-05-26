@@ -7,7 +7,7 @@ InputMap
 
 **Hereda:** :ref:`Object<class_Object>`
 
-A singleton that manages all :ref:`InputEventAction<class_InputEventAction>`\ s.
+Un singleton que gestiona todas las :ref:`InputEventAction<class_InputEventAction>`\ s.
 
 .. rst-class:: classref-introduction-group
 
@@ -67,6 +67,23 @@ Métodos
 
 .. rst-class:: classref-descriptions-group
 
+Señales
+--------------
+
+.. _class_InputMap_signal_project_settings_loaded:
+
+.. rst-class:: classref-signal
+
+**project_settings_loaded**\ (\ ) :ref:`🔗<class_InputMap_signal_project_settings_loaded>`
+
+Emitted when the :ref:`ProjectSettings<class_ProjectSettings>` **InputMap** has been loaded.
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
 Descripciones de Métodos
 ------------------------------------------------
 
@@ -112,7 +129,7 @@ Elimina todos los eventos de una acción.
 
 :ref:`float<class_float>` **action_get_deadzone**\ (\ action\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_InputMap_method_action_get_deadzone>`
 
-Returns a deadzone value for the action.
+Devuelve un valor de zona muerta para la acción.
 
 .. rst-class:: classref-item-separator
 
@@ -124,9 +141,9 @@ Returns a deadzone value for the action.
 
 :ref:`Array<class_Array>`\[:ref:`InputEvent<class_InputEvent>`\] **action_get_events**\ (\ action\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_InputMap_method_action_get_events>`
 
-Returns an array of :ref:`InputEvent<class_InputEvent>`\ s associated with a given action.
+Devuelve un array de :ref:`InputEvent<class_InputEvent>`\ s asociados a una acción dada.
 
-\ **Note:** When used in the editor (e.g. a tool script or :ref:`EditorPlugin<class_EditorPlugin>`), this method will return events for the editor action. If you want to access your project's input binds from the editor, read the ``input/*`` settings from :ref:`ProjectSettings<class_ProjectSettings>`.
+\ **Nota:** Cuando se usa en el editor (por ejemplo, un script de herramienta o :ref:`EditorPlugin<class_EditorPlugin>`), este método devolverá eventos para la acción del editor. Si quieres acceder a los enlaces de entrada de tu proyecto desde el editor, lee la configuración ``input/*`` de :ref:`ProjectSettings<class_ProjectSettings>`.
 
 .. rst-class:: classref-item-separator
 
@@ -162,9 +179,9 @@ Establece un valor de zona muerta para la acción.
 
 |void| **add_action**\ (\ action\: :ref:`StringName<class_StringName>`, deadzone\: :ref:`float<class_float>` = 0.2\ ) :ref:`🔗<class_InputMap_method_add_action>`
 
-Adds an empty action to the **InputMap** with a configurable ``deadzone``.
+Añade una acción vacía al **InputMap** con una ``deadzone`` configurable.
 
-An :ref:`InputEvent<class_InputEvent>` can then be added to this action with :ref:`action_add_event()<class_InputMap_method_action_add_event>`.
+Se puede añadir un :ref:`InputEvent<class_InputEvent>` a esta acción con :ref:`action_add_event()<class_InputMap_method_action_add_event>`.
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +205,9 @@ Elimina una acción del **InputMap**.
 
 :ref:`bool<class_bool>` **event_is_action**\ (\ event\: :ref:`InputEvent<class_InputEvent>`, action\: :ref:`StringName<class_StringName>`, exact_match\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_InputMap_method_event_is_action>`
 
-Returns ``true`` if the given event is part of an existing action. This method ignores keyboard modifiers if the given :ref:`InputEvent<class_InputEvent>` is not pressed (for proper release detection). See :ref:`action_has_event()<class_InputMap_method_action_has_event>` if you don't want this behavior.
+Devuelve ``true`` si el evento dado es parte de una acción existente. Este método ignora los modificadores de teclado si el :ref:`InputEvent<class_InputEvent>` dado no está pulsado (para una detección de liberación adecuada). Véase :ref:`action_has_event()<class_InputMap_method_action_has_event>` si no deseas este comportamiento.
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+Si ``exact_match`` es ``false``, ignora los modificadores de entrada adicionales para los eventos :ref:`InputEventKey<class_InputEventKey>` y :ref:`InputEventMouseButton<class_InputEventMouseButton>`, y la dirección para los eventos :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>`.
 
 .. rst-class:: classref-item-separator
 
@@ -202,7 +219,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 :ref:`String<class_String>` **get_action_description**\ (\ action\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_InputMap_method_get_action_description>`
 
-Returns the human-readable description of the given action.
+Devuelve la descripción legible por humanos de la acción dada.
 
 .. rst-class:: classref-item-separator
 

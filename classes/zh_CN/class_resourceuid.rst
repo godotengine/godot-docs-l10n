@@ -126,7 +126,7 @@ ResourceUID
 
 :ref:`String<class_String>` **ensure_path**\ (\ path_or_uid\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ResourceUID_method_ensure_path>`
 
-Returns a path, converting ``path_or_uid`` if necessary. Fails and returns an empty string if an invalid UID is provided.
+返回路径，必要时转换 ``path_or_uid``\ 。如果提供了无效的 UID，则操作失败并返回空字符串。
 
 .. rst-class:: classref-item-separator
 

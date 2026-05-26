@@ -17,11 +17,11 @@ FoldableContainer
 描述
 ----
 
-A container that can be expanded/collapsed, with a title that can be filled with controls, such as buttons. This is also called an accordion.
+能够展开、折叠的容器，标题中可以添加按钮等控件。这也叫做手风琴。
 
-The title can be positioned at the top or bottom of the container. The container can be expanded or collapsed by clicking the title or by pressing ``ui_accept`` when focused. Child control nodes are hidden when the container is collapsed. Ignores non-control children.
+标题可以放在容器的顶部或底部。点击标题或在聚焦时按下 ``ui_accept`` 可以将容器展开或折叠。容器折叠时子控件节点隐藏。忽略非控件子节点。
 
-A FoldableContainer can be grouped with other FoldableContainers so that only one of them can be opened at a time; see :ref:`foldable_group<class_FoldableContainer_property_foldable_group>` and :ref:`FoldableGroup<class_FoldableGroup>`.
+可折叠容器可以与其他可折叠容器分组，这样一次只能打开其中一个；见 :ref:`foldable_group<class_FoldableContainer_property_foldable_group>` 和 :ref:`FoldableGroup<class_FoldableGroup>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -219,7 +219,7 @@ enum **TitlePosition**: :ref:`🔗<enum_FoldableContainer_TitlePosition>`
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for text shaping algorithms. If left empty, the current locale is used instead.
+语言代码，用于文本塑形算法。如果留空则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -520,7 +520,7 @@ Language code used for text shaping algorithms. If left empty, the current local
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_FoldableContainer_theme_style_focus>`
 
-**FoldableContainer** 拥有 GUI 焦点时使用的背景。\ :ref:`focus<class_FoldableContainer_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+**FoldableContainer** 拥有 GUI 焦点时使用的背景。\ :ref:`focus<class_FoldableContainer_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 

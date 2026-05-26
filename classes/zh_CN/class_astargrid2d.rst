@@ -190,7 +190,7 @@ Octile 启发式算法将被用于寻路，使用的公式如下：
 
 :ref:`Heuristic<enum_AStarGrid2D_Heuristic>` **HEURISTIC_CHEBYSHEV** = ``3``
 
-`切比雪夫启发式算法 <https://zh.wikipedia.org/wiki/%E5%88%87%E6%AF%94%E9%9B%AA%E5%A4%AB%E8%B7%9D%E7%A6%BB>`__\ 将被用于寻路，使用的公式如下：
+`Chebyshev heuristic <https://en.wikipedia.org/wiki/Chebyshev_distance>`__ 将被用于寻路，使用的公式如下：
 
 ::
 
@@ -629,7 +629,7 @@ enum **CellShape**: :ref:`🔗<enum_AStarGrid2D_CellShape>`
 
 :ref:`bool<class_bool>` **is_in_bounds**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_AStarGrid2D_method_is_in_bounds>`
 
-如果 ``x`` 和 ``y`` 是有效的网格坐标（ID），即如果它位于 :ref:`region<class_AStarGrid2D_property_region>` 内部，则返回 ``true``\ 。相当于 ``region.has_point(Vector2i(x, y))``\ 。
+如果 ``x`` 和 ``y`` 是有效的网格坐标（id），即如果它位于 :ref:`region<class_AStarGrid2D_property_region>` 内部，则返回 ``true``\ 。相当于 ``region.has_point(Vector2i(x, y))``\ 。
 
 .. rst-class:: classref-item-separator
 

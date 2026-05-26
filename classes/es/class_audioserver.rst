@@ -322,9 +322,9 @@ Número de buses de audio disponibles.
 - |void| **set_input_device**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_input_device**\ (\ )
 
-Name of the current device for audio input (see :ref:`get_input_device_list()<class_AudioServer_method_get_input_device_list>`). On systems with multiple audio inputs (such as analog, USB and HDMI audio), this can be used to select the audio input device. The value ``"Default"`` will record audio on the system-wide default audio input. If an invalid device name is set, the value will be reverted back to ``"Default"``.
+Nombre del dispositivo actual para la entrada de audio (ver :ref:`get_input_device_list()<class_AudioServer_method_get_input_device_list>`). En sistemas con múltiples entradas de audio (como analógica, USB o HDMI), ésto se puede usar para seleccionar el dispositivo de entrada de audio. El valor ``"Default"`` grabará audio desde la entrada de audio predeterminada del sistema. Si se establece un nombre de dispositivo no válido, el valor se revertirá a ``"Default"``.
 
-\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+\ **Nota:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe ser ``true`` para que la entrada de audio funcione. Véase también la descripción de esa configuración para advertencias relacionadas con permisos y ajustes de privacidad del sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ Name of the current device for audio input (see :ref:`get_input_device_list()<cl
 - |void| **set_output_device**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_output_device**\ (\ )
 
-Name of the current device for audio output (see :ref:`get_output_device_list()<class_AudioServer_method_get_output_device_list>`). On systems with multiple audio outputs (such as analog, USB and HDMI audio), this can be used to select the audio output device. The value ``"Default"`` will play audio on the system-wide default audio output. If an invalid device name is set, the value will be reverted back to ``"Default"``.
+Nombre del dispositivo actual para la salida de audio (ver :ref:`get_output_device_list()<class_AudioServer_method_get_output_device_list>`). En sistemas con múltiples salidas de audio (como analógica, USB o HDMI), ésto se puede usar para seleccionar el dispositivo de salida de audio. El valor ``"Default"`` reproducirá audio a través de la salida de audio predeterminada del sistema. Si se establece un nombre de dispositivo no válido, el valor se revertirá a ``"Default"``.
 
 .. rst-class:: classref-item-separator
 
@@ -559,7 +559,7 @@ Devuelve el nombre del controlador de audio actual. El valor predeterminado suel
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Returns the absolute size of the microphone input buffer. This is set to a multiple of the audio latency and can be used to estimate the minimum rate at which the frames need to be fetched.
+Devuelve el tamaño absoluto del búfer de entrada del micrófono. Este valor se establece como un múltiplo de la latencia de audio y puede usarse para estimar la tasa mínima a la que se deben obtener los cuadros (frames).
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +573,7 @@ Returns the absolute size of the microphone input buffer. This is set to a multi
 
 Devuelve los nombres de todos los dispositivos de entrada de audio detectados en el sistema.
 
-\ **Nota:** El valor de :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe ser ``true`` para que la entrada de audio funcione. Consulta también la descripción de esta configuración para conocer las advertencias relacionadas con los permisos y la configuración de privacidad del sistema operativo.
+\ **Nota:** El valor de :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe ser ``true`` para que la entrada de audio funcione. Véase también la descripción de esta configuración para conocer las advertencias relacionadas con los permisos y la configuración de privacidad del sistema operativo.
 
 .. rst-class:: classref-item-separator
 
@@ -587,11 +587,11 @@ Devuelve los nombres de todos los dispositivos de entrada de audio detectados en
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Returns a :ref:`PackedVector2Array<class_PackedVector2Array>` containing exactly ``frames`` audio samples from the internal microphone buffer if available, otherwise returns an empty :ref:`PackedVector2Array<class_PackedVector2Array>`.
+Devuelve un :ref:`PackedVector2Array<class_PackedVector2Array>` que contiene exactamente ``frames`` muestras de audio del búfer interno del micrófono, si está disponible. De lo contrario, devuelve un :ref:`PackedVector2Array<class_PackedVector2Array>` vacío.
 
-The buffer is filled at the rate of :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` frames per second when :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` has successfully been set to ``true``.
+El búfer se llena a una tasa de :ref:`get_input_mix_rate()<class_AudioServer_method_get_input_mix_rate>` cuadros por segundo cuando :ref:`set_input_device_active()<class_AudioServer_method_set_input_device_active>` se ha configurado correctamente en ``true``.
 
-The samples are signed floating-point PCM values between ``-1`` and ``1``.
+Las muestras son valores PCM de punto flotante con signo entre ``-1`` y ``1``.
 
 .. rst-class:: classref-item-separator
 
@@ -959,9 +959,9 @@ Si se establece como ``true``, todas las instancias de :ref:`AudioStreamPlayback
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-If ``active`` is ``true``, starts the microphone input stream specified by :ref:`input_device<class_AudioServer_property_input_device>` or returns an error if it failed.
+Si ``active`` es ``true``, inicia el flujo de entrada del micrófono especificado por :ref:`input_device<class_AudioServer_property_input_device>` o devuelve un error si falla.
 
-If ``active`` is ``false``, stops the input stream if it is running.
+Si ``active`` es ``false``, detiene el flujo de entrada si está en ejecución.
 
 .. rst-class:: classref-item-separator
 

@@ -7,18 +7,18 @@ XMLParser
 
 **Hérite de :** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Provides a low-level interface for creating parsers for XML files.
+Fournit une interface de bas niveau pour créer des parsers pour des fichiers XML.
 
 .. rst-class:: classref-introduction-group
 
 Description
 -----------
 
-Provides a low-level interface for creating parsers for `XML <https://en.wikipedia.org/wiki/XML>`__ files. This class can serve as base to make custom XML parsers.
+Fournit une interface de bas niveau pour créer des parsers pour `XML <https://en.wikipedia.org/wiki/XML>`__. Cette classe peut servir de base pour faire des parsers XML personnalisés.
 
-To parse XML, you must open a file with the :ref:`open()<class_XMLParser_method_open>` method or a buffer with the :ref:`open_buffer()<class_XMLParser_method_open_buffer>` method. Then, the :ref:`read()<class_XMLParser_method_read>` method must be called to parse the next nodes. Most of the methods take into consideration the currently parsed node.
+Pour parser du XML, vous devez ouvrir un fichier avec la méthode :ref:`open()<class_XMLParser_method_open>` ou un buffer avec la méthode :ref:`open_buffer()<class_XMLParser_method_open_buffer>`. Ensuite, la méthode :ref:`read()<class_XMLParser_method_read>` doit être appelée pour parser les prochains nœuds. La plupart des méthodes prennent en considération le noeud actuellement parsé.
 
-Here is an example of using **XMLParser** to parse an SVG file (which is based on XML), printing each element and its attributes as a dictionary:
+Voici un exemple d'utilisation de **XMLParser** pour parser un fichier SVG (qui est basé sur XML), affichant chaque élément et ses attributs en tant que dictionnaire :
 
 
 .. tabs::
@@ -26,30 +26,30 @@ Here is an example of using **XMLParser** to parse an SVG file (which is based o
  .. code-tab:: gdscript
 
     var parser = XMLParser.new()
-    parser.open("path/to/file.svg")
-    while parser.read() != ERR_FILE_EOF:
+    parser.open("chemin/vers/fichier.svg")
+    while parser.read() != ERR_FILE_EOF:
         if parser.get_node_type() == XMLParser.NODE_ELEMENT:
-            var node_name = parser.get_node_name()
-            var attributes_dict = {}
+            var nom_noeud = parser.get_node_name()
+            var dict_attributs = {}
             for idx in range(parser.get_attribute_count()):
-                attributes_dict[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
-            print("The ", node_name, " element has the following attributes: ", attributes_dict)
+                dict_attributs[parser.get_attribute_name(idx)] = parser.get_attribute_value(idx)
+            print("L'élément ", nom_noeud, " a les attributs suivants : ", dict_attributs)
 
  .. code-tab:: csharp
 
     var parser = new XmlParser();
     parser.Open("path/to/file.svg");
-    while (parser.Read() != Error.FileEof)
+    while (parser.Read() != Error.FileEof)
     {
         if (parser.GetNodeType() == XmlParser.NodeType.Element)
         {
-            var nodeName = parser.GetNodeName();
-            var attributesDict = new Godot.Collections.Dictionary();
+            var nomNoeud = parser.GetNodeName();
+            var dictAttributs = new Godot.Collections.Dictionary();
             for (int idx = 0; idx < parser.GetAttributeCount(); idx++)
             {
-                attributesDict[parser.GetAttributeName(idx)] = parser.GetAttributeValue(idx);
+                dictAttributs[parser.GetAttributeName(idx)] = parser.GetAttributeValue(idx);
             }
-            GD.Print($"The {nodeName} element has the following attributes: {attributesDict}");
+            GD.Print($"L'élément {nomNoeud} a les attributs suivants : {dictAttributs}");
         }
     }
 
@@ -120,7 +120,7 @@ enum **NodeType**: :ref:`🔗<enum_XMLParser_NodeType>`
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_NONE** = ``0``
 
-Il y aucun nœud (pas de fichier ou de mémoire tampon ouverte).
+Il n'y a aucun nœud (aucun fichier ou buffer ouvert).
 
 .. _class_XMLParser_constant_NODE_ELEMENT:
 
@@ -128,7 +128,7 @@ Il y aucun nœud (pas de fichier ou de mémoire tampon ouverte).
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_ELEMENT** = ``1``
 
-An element node type, also known as a tag, e.g. ``<title>``.
+Un type de nœud d'élément, également connu sous le nom de balise, par ex. ``<title>``.
 
 .. _class_XMLParser_constant_NODE_ELEMENT_END:
 
@@ -136,7 +136,7 @@ An element node type, also known as a tag, e.g. ``<title>``.
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_ELEMENT_END** = ``2``
 
-An end of element node type, e.g. ``</title>``.
+Une fin de type de nœud d'élément, par ex. ``</title>``.
 
 .. _class_XMLParser_constant_NODE_TEXT:
 
@@ -144,7 +144,7 @@ An end of element node type, e.g. ``</title>``.
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_TEXT** = ``3``
 
-A text node type, i.e. text that is not inside an element. This includes whitespace.
+Un type de nœud de texte, c'est-à-dire un texte qui n'est pas à l'intérieur d'un élément. Cela inclut les espacements.
 
 .. _class_XMLParser_constant_NODE_COMMENT:
 
@@ -152,7 +152,7 @@ A text node type, i.e. text that is not inside an element. This includes whitesp
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_COMMENT** = ``4``
 
-A comment node type, e.g. ``<!--A comment-->``.
+Un type de nœud de commentaire, par ex. ``<!--Un commentaire-->``.
 
 .. _class_XMLParser_constant_NODE_CDATA:
 
@@ -160,7 +160,7 @@ A comment node type, e.g. ``<!--A comment-->``.
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_CDATA** = ``5``
 
-A node type for CDATA (Character Data) sections, e.g. ``<![CDATA[CDATA section]]>``.
+Un type de nœud pour les sections CDATA (Character Data, litt. données de caractère), par ex. ``<![CDATA[CDATA section]]>``.
 
 .. _class_XMLParser_constant_NODE_UNKNOWN:
 
@@ -168,7 +168,7 @@ A node type for CDATA (Character Data) sections, e.g. ``<![CDATA[CDATA section]]
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **NODE_UNKNOWN** = ``6``
 
-An unknown node type.
+Un type de nœud inconnu.
 
 .. rst-class:: classref-section-separator
 
@@ -185,9 +185,9 @@ Descriptions des méthodes
 
 :ref:`int<class_int>` **get_attribute_count**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_attribute_count>`
 
-Returns the number of attributes in the currently parsed element.
+Renvoie le nombre d'attributs dans l'élément actuellement parsé.
 
-\ **Note:** If this method is used while the currently parsed node is not :ref:`NODE_ELEMENT<class_XMLParser_constant_NODE_ELEMENT>` or :ref:`NODE_ELEMENT_END<class_XMLParser_constant_NODE_ELEMENT_END>`, this count will not be updated and will still reflect the last element.
+\ **Note :** Si cette méthode est utilisée alors que le nœud actuellement parsé n'est pas :ref:`NODE_ELEMENT<class_XMLParser_constant_NODE_ELEMENT>` ou :ref:`NODE_ELEMENT_END<class_XMLParser_constant_NODE_ELEMENT_END>`, ce compte ne sera pas mis à jour et reflétera toujours le dernier élément.
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Returns the number of attributes in the currently parsed element.
 
 :ref:`String<class_String>` **get_attribute_name**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_attribute_name>`
 
-Returns the name of an attribute of the currently parsed element, specified by the ``idx`` index.
+Renvoie le nom d'un attribut de l'élément actuellement parsé, spécifié par l'index ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Returns the name of an attribute of the currently parsed element, specified by t
 
 :ref:`String<class_String>` **get_attribute_value**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_attribute_value>`
 
-Returns the value of an attribute of the currently parsed element, specified by the ``idx`` index.
+Renvoie la valeur d'un attribut de l'élément actuellement parsé, spécifié par l'index ``idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -223,7 +223,7 @@ Returns the value of an attribute of the currently parsed element, specified by 
 
 :ref:`int<class_int>` **get_current_line**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_current_line>`
 
-Returns the current line in the parsed file, counting from 0.
+Renvoie la ligne courante dans le fichier parsé, en comptant à partir de 0.
 
 .. rst-class:: classref-item-separator
 
@@ -235,7 +235,7 @@ Returns the current line in the parsed file, counting from 0.
 
 :ref:`String<class_String>` **get_named_attribute_value**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_named_attribute_value>`
 
-Returns the value of an attribute of the currently parsed element, specified by its ``name``. This method will raise an error if the element has no such attribute.
+Renvoie la valeur d'un attribut de l'élément actuellement parsé, spécifié par son nom ``name``. Cette méthode va générer une erreur si l'élément n'a pas de tel attribut.
 
 .. rst-class:: classref-item-separator
 
@@ -247,7 +247,7 @@ Returns the value of an attribute of the currently parsed element, specified by 
 
 :ref:`String<class_String>` **get_named_attribute_value_safe**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XMLParser_method_get_named_attribute_value_safe>`
 
-Returns the value of an attribute of the currently parsed element, specified by its ``name``. This method will return an empty string if the element has no such attribute.
+Renvoie la valeur d'un attribut de l'élément actuellement parsé, spécifié par son nom ``name``. Cette méthode renverra une chaîne vide si l'élément n'a pas de tel attribut.
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Returns the value of an attribute of the currently parsed element, specified by 
 
 :ref:`String<class_String>` **get_node_data**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_data>`
 
-Returns the contents of a text node. This method will raise an error if the current parsed node is of any other type.
+Renvoie le contenu d'un nœud de texte. Cette méthode générera une erreur si le nœud parsé actuel est d'un autre type.
 
 .. rst-class:: classref-item-separator
 
@@ -271,9 +271,9 @@ Returns the contents of a text node. This method will raise an error if the curr
 
 :ref:`String<class_String>` **get_node_name**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_name>`
 
-Returns the name of a node. This method will raise an error if the currently parsed node is a text node.
+Renvoie le nom d'un noeud. Cette méthode générera une erreur si le nœud actuellement parsé est un noeud de texte.
 
-\ **Note:** The content of a :ref:`NODE_CDATA<class_XMLParser_constant_NODE_CDATA>` node and the comment string of a :ref:`NODE_COMMENT<class_XMLParser_constant_NODE_COMMENT>` node are also considered names.
+\ **Note :** Le contenu d'un nœud :ref:`NODE_CDATA<class_XMLParser_constant_NODE_CDATA>` et la chaîne de commentaires d'un nœud :ref:`NODE_COMMENT<class_XMLParser_constant_NODE_COMMENT>` sont également considérés comme des noms.
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +285,7 @@ Returns the name of a node. This method will raise an error if the currently par
 
 :ref:`int<class_int>` **get_node_offset**\ (\ ) |const| :ref:`🔗<class_XMLParser_method_get_node_offset>`
 
-Returns the byte offset of the currently parsed node since the beginning of the file or buffer. This is usually equivalent to the number of characters before the read position.
+Renvoie le décalage en octet du nœud actuellement parsé depuis le début du fichier ou du buffer. Ceci est généralement équivalent au nombre de caractères avant la position de lecture.
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ Returns the byte offset of the currently parsed node since the beginning of the 
 
 :ref:`NodeType<enum_XMLParser_NodeType>` **get_node_type**\ (\ ) :ref:`🔗<class_XMLParser_method_get_node_type>`
 
-Returns the type of the current node. Compare with :ref:`NodeType<enum_XMLParser_NodeType>` constants.
+Renvoie le type du nœud actuel. Comparez avec les constantes :ref:`NodeType<enum_XMLParser_NodeType>`.
 
 .. rst-class:: classref-item-separator
 
@@ -309,7 +309,7 @@ Returns the type of the current node. Compare with :ref:`NodeType<enum_XMLParser
 
 :ref:`bool<class_bool>` **has_attribute**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_XMLParser_method_has_attribute>`
 
-Returns ``true`` if the currently parsed element has an attribute with the ``name``.
+Renvoie ``true`` si l'élément actuellement parsé a un attribut ayant pour nom ``name``.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ Renvoie ``true`` si l’élément actuellement traité est vide, par exemple ``<
 
 :ref:`Error<enum_@GlobalScope_Error>` **open**\ (\ file\: :ref:`String<class_String>`\ ) :ref:`🔗<class_XMLParser_method_open>`
 
-Opens an XML ``file`` for parsing. This method returns an error code.
+Ouvre un fichier XML ``file`` pour le parsage. Cette méthode renvoie un code d'erreur.
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ Opens an XML ``file`` for parsing. This method returns an error code.
 
 :ref:`Error<enum_@GlobalScope_Error>` **open_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_XMLParser_method_open_buffer>`
 
-Opens an XML raw ``buffer`` for parsing. This method returns an error code.
+Ouvre un ``buffer`` XML brut pour être parsé. Cette méthode renvoie un code d'erreur.
 
 .. rst-class:: classref-item-separator
 
@@ -357,7 +357,7 @@ Opens an XML raw ``buffer`` for parsing. This method returns an error code.
 
 :ref:`Error<enum_@GlobalScope_Error>` **read**\ (\ ) :ref:`🔗<class_XMLParser_method_read>`
 
-Parses the next node in the file. This method returns an error code.
+Parse le prochain noeud dans le fichier. Cette méthode renvoie un code d'erreur.
 
 .. rst-class:: classref-item-separator
 
@@ -369,7 +369,7 @@ Parses the next node in the file. This method returns an error code.
 
 :ref:`Error<enum_@GlobalScope_Error>` **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_XMLParser_method_seek>`
 
-Moves the buffer cursor to a certain offset (since the beginning) and reads the next node there. This method returns an error code.
+Déplace le curseur du buffer vers un certain décalage (depuis le début) et lit le nœud suivant à cet endroit. Cette méthode renvoie un code d'erreur.
 
 .. rst-class:: classref-item-separator
 
@@ -381,7 +381,7 @@ Moves the buffer cursor to a certain offset (since the beginning) and reads the 
 
 |void| **skip_section**\ (\ ) :ref:`🔗<class_XMLParser_method_skip_section>`
 
-Skips the current section. If the currently parsed node contains more inner nodes, they will be ignored and the cursor will go to the closing of the current element.
+Saute la section actuelle. Si le nœud actuellement parsé contient d'autres nœuds internes, ils seront ignorés et le curseur ira à la fin de l'élément courant.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

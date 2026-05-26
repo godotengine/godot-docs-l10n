@@ -9,7 +9,7 @@ SkeletonModification2DFABRIK
 
 **Hereda:** :ref:`SkeletonModification2D<class_SkeletonModification2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A modification that uses FABRIK to manipulate a series of :ref:`Bone2D<class_Bone2D>` nodes to reach a target.
+Una modificación que utiliza FABRIK para manipular una serie de nodos :ref:`Bone2D<class_Bone2D>` para alcanzar un objetivo.
 
 .. rst-class:: classref-introduction-group
 

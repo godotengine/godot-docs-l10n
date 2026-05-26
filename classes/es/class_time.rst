@@ -294,7 +294,7 @@ Convierte la marca de tiempo de Unix dada en un diccionario de claves: ``year``,
 
 :ref:`String<class_String>` **get_date_string_from_system**\ (\ utc\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Time_method_get_date_string_from_system>`
 
-Devuelve la fecha actual como una cadena de fecha ISO 8601 (AAAA-MM-DD).
+Devuelve la fecha actual como una string de fecha ISO 8601 (AAAA-MM-DD).
 
 Los valores devueltos están en la hora local del sistema cuando ``utc`` es ``false``, de lo contrario, están en UTC.
 

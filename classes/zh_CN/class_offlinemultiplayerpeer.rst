@@ -14,7 +14,7 @@ OfflineMultiplayerPeer
 描述
 ----
 
-这是 :ref:`Node.multiplayer<class_Node_property_multiplayer>` 的默认 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ 。会模仿未连接任何对等体的服务器的行为。
+这是 :ref:`Node.multiplayer<class_Node_property_multiplayer>` 的默认 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ 。会模仿未连接任何对等端的服务器的行为。
 
 这意味着 :ref:`SceneTree<class_SceneTree>` 会默认作为多人游戏控制方。调用 :ref:`MultiplayerAPI.is_server()<class_MultiplayerAPI_method_is_server>` 会返回 ``true``\ ，调用 :ref:`MultiplayerAPI.get_unique_id()<class_MultiplayerAPI_method_get_unique_id>` 会返回 :ref:`MultiplayerPeer.TARGET_PEER_SERVER<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>`\ 。
 

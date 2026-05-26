@@ -9,14 +9,14 @@ OpenXRSpatialComponentPlaneSemanticLabelList
 
 **Hereda:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries plane semantic label result data.
+Objeto para almacenar los datos del resultado de las consultas de etiquetas semánticas del plano.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Object for storing the queries plane semantic label result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Objeto para almacenar los datos del resultado de las consultas de etiquetas semánticas del plano al llamar a :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ enum **PlaneSemanticLabel**: :ref:`🔗<enum_OpenXRSpatialComponentPlaneSemantic
 
 :ref:`PlaneSemanticLabel<enum_OpenXRSpatialComponentPlaneSemanticLabelList_PlaneSemanticLabel>` **PLANE_SEMANTIC_LABEL_UNCATEGORIZED** = ``1``
 
-Uncategorized plane.
+Plano sin categorizar.
 
 .. _class_OpenXRSpatialComponentPlaneSemanticLabelList_constant_PLANE_SEMANTIC_LABEL_FLOOR:
 
@@ -59,7 +59,7 @@ Uncategorized plane.
 
 :ref:`PlaneSemanticLabel<enum_OpenXRSpatialComponentPlaneSemanticLabelList_PlaneSemanticLabel>` **PLANE_SEMANTIC_LABEL_FLOOR** = ``2``
 
-Plane represents a floor.
+El plano representa un suelo.
 
 .. _class_OpenXRSpatialComponentPlaneSemanticLabelList_constant_PLANE_SEMANTIC_LABEL_WALL:
 
@@ -67,7 +67,7 @@ Plane represents a floor.
 
 :ref:`PlaneSemanticLabel<enum_OpenXRSpatialComponentPlaneSemanticLabelList_PlaneSemanticLabel>` **PLANE_SEMANTIC_LABEL_WALL** = ``3``
 
-Plane represents a wall.
+El plano representa una pared.
 
 .. _class_OpenXRSpatialComponentPlaneSemanticLabelList_constant_PLANE_SEMANTIC_LABEL_CEILING:
 
@@ -75,7 +75,7 @@ Plane represents a wall.
 
 :ref:`PlaneSemanticLabel<enum_OpenXRSpatialComponentPlaneSemanticLabelList_PlaneSemanticLabel>` **PLANE_SEMANTIC_LABEL_CEILING** = ``4``
 
-Plane represents a ceiling.
+El plano representa un techo.
 
 .. _class_OpenXRSpatialComponentPlaneSemanticLabelList_constant_PLANE_SEMANTIC_LABEL_TABLE:
 
@@ -83,7 +83,7 @@ Plane represents a ceiling.
 
 :ref:`PlaneSemanticLabel<enum_OpenXRSpatialComponentPlaneSemanticLabelList_PlaneSemanticLabel>` **PLANE_SEMANTIC_LABEL_TABLE** = ``5``
 
-Plane represents the surface of a table.
+El plano representa la superficie de una mesa.
 
 .. rst-class:: classref-section-separator
 
@@ -100,7 +100,7 @@ Descripciones de Métodos
 
 :ref:`PlaneSemanticLabel<enum_OpenXRSpatialComponentPlaneSemanticLabelList_PlaneSemanticLabel>` **get_plane_semantic_label**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPlaneSemanticLabelList_method_get_plane_semantic_label>`
 
-Returns the plane semantic label for the parent entity at this ``index``.
+Devuelve la etiqueta semántica del plano para la entidad padre en este ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

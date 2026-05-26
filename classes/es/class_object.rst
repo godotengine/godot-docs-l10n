@@ -53,7 +53,7 @@ Tutoriales
 
 - :doc:`Introducción a la clase de Objeto <../engine_details/architecture/object_class>`
 
-- :doc:`When and how to avoid using nodes for everything <../tutorials/best_practices/node_alternatives>`
+- :doc:`Cuándo y cómo evitar el uso de nodos para todo <../tutorials/best_practices/node_alternatives>`
 
 - :doc:`Notificaciones de objeto <../tutorials/best_practices/godot_notifications>`
 

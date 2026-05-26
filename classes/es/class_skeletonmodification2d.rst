@@ -84,7 +84,7 @@ Descripciones de Propiedades
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enabled**\ (\ )
 
-If ``true``, the modification's :ref:`_execute()<class_SkeletonModification2D_private_method__execute>` function will be called by the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`.
+Si es ``true``, la función :ref:`_execute()<class_SkeletonModification2D_private_method__execute>` de la modificación será llamada por :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ If ``true``, the modification's :ref:`_execute()<class_SkeletonModification2D_pr
 - |void| **set_execution_mode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_execution_mode**\ (\ )
 
-The execution mode for the modification. This tells the modification stack when to execute the modification. Some modifications have settings that are only available in certain execution modes.
+El modo de ejecución para la modificación. Esto le dice a la pila de modificaciones cuándo ejecutar la modificación. Algunas modificaciones tienen ajustes que solo están disponibles en ciertos modos de ejecución.
 
 .. rst-class:: classref-section-separator
 
@@ -168,7 +168,7 @@ Toma un ángulo y lo limita para que esté dentro del rango ``min`` y ``max`` pa
 
 :ref:`bool<class_bool>` **get_editor_draw_gizmo**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2D_method_get_editor_draw_gizmo>`
 
-Returns whether this modification will call :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` in the Godot editor to draw modification-specific gizmos.
+Devuelve si esta modificación llamará a :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` en el editor de Godot para dibujar gizmos específicos de la modificación.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ Returns whether this modification will call :ref:`_draw_editor_gizmo()<class_Ske
 
 :ref:`bool<class_bool>` **get_is_setup**\ (\ ) |const| :ref:`🔗<class_SkeletonModification2D_method_get_is_setup>`
 
-Returns whether this modification has been successfully setup or not.
+Devuelve si esta modificación se ha configurado correctamente o no.
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Returns whether this modification has been successfully setup or not.
 
 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` **get_modification_stack**\ (\ ) :ref:`🔗<class_SkeletonModification2D_method_get_modification_stack>`
 
-Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` that this modification is bound to. Through the modification stack, you can access the Skeleton2D the modification is operating on.
+Devuelve la :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` a la que está vinculada esta modificación. A través de la pila de modificación, puedes acceder al Skeleton2D en el que está operando la modificación.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Returns the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>
 
 |void| **set_editor_draw_gizmo**\ (\ draw_gizmo\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2D_method_set_editor_draw_gizmo>`
 
-Sets whether this modification will call :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` in the Godot editor to draw modification-specific gizmos.
+Establece si esta modificación llamará a :ref:`_draw_editor_gizmo()<class_SkeletonModification2D_private_method__draw_editor_gizmo>` en el editor de Godot para dibujar gizmos específicos de la modificación.
 
 .. rst-class:: classref-item-separator
 
@@ -216,7 +216,7 @@ Sets whether this modification will call :ref:`_draw_editor_gizmo()<class_Skelet
 
 |void| **set_is_setup**\ (\ is_setup\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SkeletonModification2D_method_set_is_setup>`
 
-Manually allows you to set the setup state of the modification. This function should only rarely be used, as the :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` the modification is bound to should handle setting the modification up.
+Te permite establecer manualmente el estado de configuración de la modificación. Esta función solo debe usarse en raras ocasiones, ya que el :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>` al que está vinculada la modificación debería encargarse de configurarla.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -485,7 +485,7 @@ Alpha 裁剪丢弃数值的阈值。
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用于断行和文本塑形算法的语言代码。如果留空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 

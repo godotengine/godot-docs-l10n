@@ -14,9 +14,9 @@ An optimized translation.
 Descripción
 ----------------------
 
-An optimized translation. Uses real-time compressed translations, which results in very small dictionaries.
+Una traducción optimizada. Utiliza traducciones comprimidas en tiempo real, lo que resulta en diccionarios muy pequeños.
 
-This class does not store the untranslated strings for optimization purposes. Therefore, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` always returns an empty array, and :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` always returns ``0``.
+Esta clase no almacena las cadenas sin traducir con fines de optimización. Por lo tanto, :ref:`Translation.get_message_list()<class_Translation_method_get_message_list>` siempre devuelve un array vacío, y :ref:`Translation.get_message_count()<class_Translation_method_get_message_count>` siempre devuelve ``0``.
 
 .. rst-class:: classref-reftable-group
 

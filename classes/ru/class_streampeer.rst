@@ -205,7 +205,7 @@ StreamPeer — абстрактный базовый класс, в основн
 
 :ref:`Array<class_Array>` **get_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will block until the desired amount is received.
+Возвращает фрагмент данных с полученными байтами в виде массива :ref:`Array<class_Array>`, содержащего два элемента: константу :ref:`Error<enum_@GlobalScope_Error>` и массив :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` — количество байтов, которые необходимо получить. Если байтов недостаточно, функция будет блокироваться до тех пор, пока не будет получено необходимое количество.
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`Array<class_Array>` **get_partial_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_partial_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will return how many were actually received.
+Возвращает фрагмент данных с полученными байтами в виде массива :ref:`Array<class_Array>`, содержащего два элемента: константу :ref:`Error<enum_@GlobalScope_Error>` и массив :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` — количество байтов, которые необходимо получить. Если байтов недостаточно, функция вернет фактическое количество полученных байтов.
 
 .. rst-class:: classref-item-separator
 

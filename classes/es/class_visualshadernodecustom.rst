@@ -180,7 +180,7 @@ Definir este método es **opcional**.
 
 :ref:`String<class_String>` **_get_global_code**\ (\ mode\: :ref:`Mode<enum_Shader_Mode>`\ ) |virtual| |const| :ref:`🔗<class_VisualShaderNodeCustom_private_method__get_global_code>`
 
-Sobrescribe este método para agregar código de shader en la parte superior del shader global, para definir tu propia biblioteca estándar de métodos reutilizables, variables, constantes, uniformes, etc. El código shader debe devolverse como una string, que puede tener varias líneas (la construcción de string multilínea ``"""`` se puede usar para mayor comodidad).
+Sobrescribe este método para agregar código de shader en la parte superior del shader global, para definir tu propia biblioteca estándar de métodos reutilizables, variables, constantes, variables uniformes, etc. El código shader debe devolverse como una string, que puede tener varias líneas (la construcción de string multilínea ``"""`` se puede usar para mayor comodidad).
 
 Ten cuidado con esta funcionalidad, ya que puede causar conflictos de nombres con otros nodos personalizados, así que asegúrate de dar a las entidades definidas nombres únicos.
 

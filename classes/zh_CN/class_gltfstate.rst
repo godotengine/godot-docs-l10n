@@ -182,7 +182,7 @@ enum **HandleBinaryImageMode**: :ref:`🔗<enum_GLTFState_HandleBinaryImageMode>
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_DISCARD_TEXTURES** = ``0``
 
-When importing a glTF file with embedded binary images, discards all images and uses untextured materials in their place. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+导入包含嵌入式二进制图像的 glTF 文件时，会丢弃所有图像，并使用未应用纹理的材质代替它们。以独立文件存储在 ``res://`` 文件夹中的图像不受此影响；Godot 会按照导入时的设置使用这些图像。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES:
 
@@ -190,11 +190,11 @@ When importing a glTF file with embedded binary images, discards all images and 
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EXTRACT_TEXTURES** = ``1``
 
-When importing a glTF file with embedded binary images, extracts them and saves them to their own files. This allows the image to be imported by Godot's image importer, which can then have their import options customized by the user, including optionally compressing the image to VRAM texture formats.
+导入包含嵌入式二进制图像的 glTF 文件时，程序会提取这些图像并将它们保存到单独的文件中。这样，Godot 的图像导入器就可以导入这些图像，用户也可以自定义它们的导入选项，包括选择性地将图像压缩为 VRAM 纹理格式。
 
-This will save the images's bytes exactly as-is, without recompression. For image formats supplied by glTF extensions, the file will have a filename ending with the file extension supplied by :ref:`GLTFDocumentExtension._get_image_file_extension()<class_GLTFDocumentExtension_private_method__get_image_file_extension>` of the extension class.
+这将以原始格式保存图像的字节数据，而不会重新压缩。对于由 glTF 扩展提供的图像格式，文件名将以扩展类的 :ref:`GLTFDocumentExtension._get_image_file_extension()<class_GLTFDocumentExtension_private_method__get_image_file_extension>` 提供的文件扩展名结尾。
 
-\ **Note:** This option is editor-only. At runtime, this acts the same as :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>`.
+\ **注意：**\ 该选项仅供编辑器使用。在运行时中，它的行为与 :ref:`HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED<class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED>` 相同。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU:
 
@@ -202,7 +202,7 @@ This will save the images's bytes exactly as-is, without recompression. For imag
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EMBED_AS_BASISU** = ``2``
 
-When importing a glTF file with embedded binary images, embeds textures VRAM compressed with Basis Universal into the generated scene. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+导入包含嵌入的二进制图像的 glTF 文件时，会将使用 Basis Universal 压缩的 VRAM 纹理嵌入到生成的场景中。以独立文件存储在 ``res://`` 文件夹中的图像不受此影响；这些图像将按照 Godot 导入的方式使用。
 
 .. _class_GLTFState_constant_HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED:
 
@@ -210,7 +210,7 @@ When importing a glTF file with embedded binary images, embeds textures VRAM com
 
 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **HANDLE_BINARY_IMAGE_MODE_EMBED_AS_UNCOMPRESSED** = ``3``
 
-When importing a glTF file with embedded binary images, embeds textures compressed losslessly into the generated scene. Images stored as separate files in the ``res://`` folder are not affected by this; those will be used as Godot imported them.
+导入包含嵌入的二进制图像的 glTF 文件时，程序会将纹理以无损压缩方式嵌入到生成的场景中。以独立文件存储在 ``res://`` 文件夹中的图像不受此影响；这些文件将按照 Godot 导入的方式使用。
 
 .. rst-class:: classref-section-separator
 
@@ -406,9 +406,9 @@ When importing a glTF file with embedded binary images, embeds textures compress
 - |void| **set_handle_binary_image_mode**\ (\ value\: :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>`\ )
 - :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` **get_handle_binary_image_mode**\ (\ )
 
-When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled. Images can be discarded, saved as separate files, or embedded in the scene lossily or losslessly. See :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>` for options.
+导入包含未导入的原始二进制图像（这些图像可能嵌入在二进制数据块缓冲区中、数据 URI 中或 Godot 未导入的单独文件中）的 glTF 文件时，该设置控制图像的处理方式。图像可以被丢弃，保存为单独的文件，或以有损或无损方式嵌入到场景中。有关选项见 :ref:`HandleBinaryImageMode<enum_GLTFState_HandleBinaryImageMode>`\ 。
 
-This property does nothing for image files in the ``res://`` folder imported by Godot, as those are handled by Godot's image importer directly, and then the Godot scene generated from the glTF file will use the images as Godot imported them.
+该属性对 Godot 导入的位于 ``res://`` 文件夹中的图像文件不起作用，因为这些文件由 Godot 的图像导入器直接处理，然后从 glTF 文件生成的 Godot 场景将使用 Godot 导入的图像。
 
 .. rst-class:: classref-item-separator
 
@@ -684,7 +684,7 @@ glTF 文件的根节点。通常一个 glTF 文件只有一个场景，因此只
 
 **已弃用：** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
-Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
+:ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` 的已弃用无类型别名。当导入包含未导入的原始二进制图像（这些图像可能嵌入在二进制数据块缓冲区中、数据 URI 中或 Godot 未导入的单独文件中）的 glTF 文件时，该选项控制图像的处理方式。
 
 .. rst-class:: classref-item-separator
 
@@ -928,7 +928,7 @@ Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_prop
 
 **已弃用：** Use :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` instead.
 
-Deprecated untyped alias for :ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>`. When importing a glTF file with unimported raw binary images embedded inside of binary blob buffers, in data URIs, or separate files not imported by Godot, this controls how the images are handled.
+:ref:`handle_binary_image_mode<class_GLTFState_property_handle_binary_image_mode>` 的已弃用无类型别名。当导入包含未导入的原始二进制图像（这些图像可能嵌入在二进制数据块缓冲区中、数据 URI 中或 Godot 未导入的单独文件中）的 glTF 文件时，该选项控制图像的处理方式。
 
 .. rst-class:: classref-item-separator
 

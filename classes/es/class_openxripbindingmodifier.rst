@@ -9,14 +9,14 @@ OpenXRIPBindingModifier
 
 **Heredado por:** :ref:`OpenXRDpadBindingModifier<class_OpenXRDpadBindingModifier>`
 
-Binding modifier that applies directly on an interaction profile.
+Modificador de vinculación que se aplica directamente en un perfil de interacción.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Binding modifier that applies directly on an interaction profile.
+Modificador de vinculación que se aplica directamente en un perfil de interacción.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

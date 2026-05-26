@@ -450,16 +450,16 @@ La méthode ``method`` devrait prendre un paramètre :ref:`Variant<class_Variant
     public override void _Ready()
     {
         // Affiche True (3/3 éléments sont évalués à true).
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(SuperieurA5));
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(SuperieurA5));
         // Affiche False (1/3 éléments sont évalués à true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(SuperieurA5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(SuperieurA5));
         // Affiche False (0/3 éléments sont évalués à true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(SuperieurA5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(SuperieurA5));
         // Affiche True (0/0 éléments sont évalués à true).
-        GD.Print(new Godot.Collections.Array>int< { }.All(SuperieurA5));
+        GD.Print(new Godot.Collections.Array<int> { }.All(SuperieurA5));
 
         // Même chose que la première ligne du dessus, mais avec une fonction lambda.
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // Affiche True
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Affiche True
     }
 
 
@@ -831,9 +831,9 @@ Renvoie le premier élément du tableau. Si le tableau est vide, échoue et renv
 
 :ref:`Variant<class_Variant>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Array_method_get>`
 
-Returns the element at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``null``.
+Renvoie l'élément à l'index ``index`` du tableau. Si ``index`` est hors des limites ou négatif, cette méthode échoue et renvoie ``null``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Cette méthode est similaire (mais pas identique) à l'opérateur ``[]``. Plus particulièrement, lorsque cette méthode échoue, elle ne met pas en pause l'exécution de projet si elle est exécutée depuis l'éditeur.
 
 .. rst-class:: classref-item-separator
 
@@ -923,9 +923,9 @@ En GDScript, c'est équivalent à l'opérateur ``in``\  :
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_Array_method_hash>`
 
-Returns a hashed 32-bit integer value representing the array and its contents.
+Renvoie un entier 32 bits haché représentant le tableau et son contenu.
 
-\ **Note:** Arrays with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. On the contrary, arrays with different hash values are guaranteed to be different.
+\ **Note :** Les tableaux avec des valeurs de hachage égales ne sont *pas* garantis d'être les même, à cause des collisions de hachage. Au contraire, les tableaux avec différentes valeurs de hachage sont garantis d'être différents.
 
 .. rst-class:: classref-item-separator
 

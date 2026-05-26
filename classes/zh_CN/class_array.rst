@@ -450,16 +450,16 @@ Array
     public override void _Ready()
     {
         // 输出 True （3/3 元素被评估为真）。
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
         // 输出 False （1/3 元素被评估为真）。
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
         // 输出 False （0/3 元素被评估为真）。
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
         // 输出 True （0/0 元素被评估为真）。
-        GD.Print(new Godot.Collections.Array>int< { }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
         // 与上面的第一行相同，但使用 lambda 函数。
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // 输出 True
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // 输出 True
     }
 
 
@@ -571,9 +571,9 @@ Array
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Variant<class_Variant>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch>`
 
-返回已排序数组中 ``value`` 的索引。如果找不到，则返回应被插入 ``value`` 的位置以保持数组被排序。使用的算法是\ `二分查找算法 <https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95>`__\ 。
+返回 ``value``\ （目标值）在已排序数组中的索引。如果无法在数组中找到该值，则返回为了保持数组有序，\ ``value`` 应该被插入的位置。该算法使用的是\ `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__\ 。
 
-如果 ``before`` 为 ``true``\ （默认情况下），则返回的索引位于数组中所有等于 ``value`` 的已有元素之前。
+如果 ``before`` 为 ``true``\ （默认情况），返回的索引会排在数组中所有与 ``value`` 相等的现有元素之前。
 
 ::
 
@@ -587,7 +587,7 @@ Array
     print(fruits.bsearch("Lemon", true))  # 输出 1，位于第一个 "Lemon"。
     print(fruits.bsearch("Lemon", false)) # 输出 3，位于 "Orange"。
 
-\ **注意：**\ 对\ *未排序的*\ 数组调用 :ref:`bsearch()<class_Array_method_bsearch>` 将导致意外行为。调用该方法之前，请使用 :ref:`sort()<class_Array_method_sort>`\ 。
+\ **注意：**\ 在 *unsorted*\ 数组上调用 :ref:`bsearch()<class_Array_method_bsearch>` 会导致意外行为。在调用此方法之前，请先使用 :ref:`sort()<class_Array_method_sort>`\ （进行排序）。
 
 .. rst-class:: classref-item-separator
 
@@ -599,11 +599,11 @@ Array
 
 :ref:`int<class_int>` **bsearch_custom**\ (\ value\: :ref:`Variant<class_Variant>`, func\: :ref:`Callable<class_Callable>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch_custom>`
 
-返回已排序数组中 ``value`` 的索引。如果找不到，则返回 ``value`` 应插入的位置，以保持数组已排序（使用 ``func`` 进行比较）。使用的算法是\ `二分查找算法 <https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95>`__\ 。
+返回 ``value``\ （目标值）在已排序数组中的索引。如果无法在数组中找到该值，则返回为了保持数组有序，\ ``value`` 应该被插入的位置（使用 ``func`` 来进行比较）。该算法使用的是\ `binary search <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__\ 。
 
-与 :ref:`sort_custom()<class_Array_method_sort_custom>` 类似，\ ``func`` 会根据需要多次调用，接收一个数组元素和 ``value`` 作为参数。如果数组元素应该在 ``value`` *后面*\ ，则函数应该返回 ``true``\ ，否则应该返回 ``false``\ 。
+与 :ref:`sort_custom()<class_Array_method_sort_custom>` 类似，\ ``func`` 会根据需要被调用多次，接收一个数组元素和 ``value`` 作为参数。如果该数组元素应该排在 ``value`` 的后面，函数应返回 ``true``\ ，否则应返回 ``false``\ 。
 
-如果 ``before`` 为 ``true``\ （默认情况下），则返回的索引位于数组中所有等于 ``value`` 的已有元素之前。
+如果 ``before`` 为 ``true``\ （默认情况），返回的索引会排在数组中所有与 ``value`` 相等的现有元素\ *behind* 。
 
 ::
 
@@ -626,7 +626,7 @@ Array
         # 输出 [["Tomato", 2], ["Apple", 5], ["Kiwi", 5], ["Banana", 5], ["Rice", 9]]
         print(my_items)
 
-\ **注意：**\ 在\ *未排序的*\ 数组上调用 :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` 将导致意外行为。在调用该方法之前，请将 :ref:`sort_custom()<class_Array_method_sort_custom>` 与 ``func`` 结合使用。
+\ **注意：**\ 在 *unsorted*\ 数组上调用 :ref:`bsearch_custom()<class_Array_method_bsearch_custom>` 会导致意外行为。在调用此方法之前，请先使用 ``func`` 配合 :ref:`sort_custom()<class_Array_method_sort_custom>`\ （进行自定义排序）。
 
 .. rst-class:: classref-item-separator
 

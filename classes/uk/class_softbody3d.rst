@@ -351,6 +351,8 @@ enum **DisableMode**: :ref:`🔗<enum_SoftBody3D_DisableMode>`
 
 Маса SoftBody3D.
 
+\ **Примітка:** При використанні Jolt Physics, значенням за замовчуванням цієї властивості буде ``0.0``, що призведе до автоматичного обчислення маси тіла як 1 кг на точку. Це помилка, яка буде виправлена в Godot 4.7.
+
 .. rst-class:: classref-section-separator
 
 ----

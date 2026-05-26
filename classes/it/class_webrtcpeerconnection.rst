@@ -284,7 +284,7 @@ Descrizioni dei metodi
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_ice_candidate**\ (\ media\: :ref:`String<class_String>`, index\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_method_add_ice_candidate>`
 
-Aggiungere un candidato ICE generato da un peer remoto (e ricevuto sul server di segnalazione). Vedi :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`.
+Aggiunge un candidato ICE generato da un peer remoto (e ricevuto sul server di segnalazione). Vedi :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`.
 
 .. rst-class:: classref-item-separator
 

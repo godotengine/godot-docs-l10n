@@ -315,7 +315,7 @@ La distancia para erosionar/reducir la superficie transitable al procesar la mal
 - |void| **set_baking_rect**\ (\ value\: :ref:`Rect2<class_Rect2>`\ )
 - :ref:`Rect2<class_Rect2>` **get_baking_rect**\ (\ )
 
-Si el :ref:`Rect2<class_Rect2>` de procesado tiene un área, el procesado de la malla de navegación se restringirá a su área de cierre.
+Si el :ref:`Rect2<class_Rect2>` de procesado tiene un área, el baking de la malla de navegación se restringirá a su área de cierre.
 
 .. rst-class:: classref-item-separator
 
@@ -404,7 +404,7 @@ Solo se usa cuando :ref:`parsed_geometry_type<class_NavigationPolygon_property_p
 - |void| **set_parsed_geometry_type**\ (\ value\: :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>`\ )
 - :ref:`ParsedGeometryType<enum_NavigationPolygon_ParsedGeometryType>` **get_parsed_geometry_type**\ (\ )
 
-Determines which type of nodes will be parsed as geometry.
+Determina qué tipo de nodos se analizarán como geometría.
 
 .. rst-class:: classref-item-separator
 
@@ -421,7 +421,7 @@ Determines which type of nodes will be parsed as geometry.
 - |void| **set_sample_partition_type**\ (\ value\: :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>`\ )
 - :ref:`SamplePartitionType<enum_NavigationPolygon_SamplePartitionType>` **get_sample_partition_type**\ (\ )
 
-Partitioning algorithm for creating the navigation mesh polys.
+Algoritmo de partición para crear los polígonos de la malla de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ Solo se usa cuando :ref:`source_geometry_mode<class_NavigationPolygon_property_s
 - |void| **set_source_geometry_mode**\ (\ value\: :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>`\ )
 - :ref:`SourceGeometryMode<enum_NavigationPolygon_SourceGeometryMode>` **get_source_geometry_mode**\ (\ )
 
-The source of the geometry used when baking.
+La fuente de la geometría utilizada al hornear.
 
 .. rst-class:: classref-section-separator
 

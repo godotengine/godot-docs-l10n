@@ -263,9 +263,9 @@ TabBar
 
 **tab_close_pressed**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_close_pressed>`
 
-Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` is ``true``, when middle-clicking on a tab.
+当按下选项卡的关闭按钮时，或者如果 :ref:`close_with_middle_mouse<class_TabBar_property_close_with_middle_mouse>` 为 ``true`` 且中键点击选项卡时，会发出。
 
-\ **Note:** Tabs are not removed automatically; this behavior needs to be coded manually. For example:
+\ **注意：**\ 选项卡不会自动移除；这种行为需要手动编写代码来实现。例如：
 
 
 .. tabs::
@@ -302,7 +302,7 @@ Emitted when a tab's close button is pressed or, if :ref:`close_with_middle_mous
 
 **tab_rmb_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_rmb_clicked>`
 
-Emitted when a tab is right-clicked.
+右键点击选项卡时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_TabBar_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_LEFT** = ``0``
 
-Aligns tabs to the left.
+将选项卡左对齐。
 
 .. _class_TabBar_constant_ALIGNMENT_CENTER:
 
@@ -345,7 +345,7 @@ Aligns tabs to the left.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-Aligns tabs in the middle.
+将选项卡居中对齐。
 
 .. _class_TabBar_constant_ALIGNMENT_RIGHT:
 
@@ -353,7 +353,7 @@ Aligns tabs in the middle.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_RIGHT** = ``2``
 
-Aligns tabs to the right.
+将选项卡右对齐。
 
 .. _class_TabBar_constant_ALIGNMENT_MAX:
 
@@ -442,7 +442,7 @@ enum **CloseButtonDisplayPolicy**: :ref:`🔗<enum_TabBar_CloseButtonDisplayPoli
 - |void| **set_close_with_middle_mouse**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_with_middle_mouse**\ (\ )
 
-If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` signal.
+如果为 ``true``\ ，则在选项卡上点击鼠标中键将发出 :ref:`tab_close_pressed<class_TabBar_signal_tab_close_pressed>` 信号。
 
 .. rst-class:: classref-item-separator
 
@@ -578,7 +578,7 @@ If ``true``, middle-clicking on a tab will emit the :ref:`tab_close_pressed<clas
 - |void| **set_switch_on_drag_hover**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_switch_on_drag_hover**\ (\ )
 
-If ``true``, hovering over a tab while dragging something will switch to that tab. Does not have effect when hovering another tab to rearrange. The delay for when this happens is dictated by :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>`.
+如果为 ``true``\ ，则在拖动内容时将鼠标悬停在选项卡上将切换到该选项卡。将鼠标悬停在另一个标签页上进行重新排列时无效。该操作的延迟时间由 :ref:`hover_switch_wait_msec<class_TabBar_theme_constant_hover_switch_wait_msec>` 决定。
 
 .. rst-class:: classref-item-separator
 
@@ -595,7 +595,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tab_alignment**\ (\ value\: :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **get_tab_alignment**\ (\ )
 
-The horizontal alignment of the tabs.
+选项卡的水平对齐方式。
 
 .. rst-class:: classref-item-separator
 
@@ -989,7 +989,7 @@ The horizontal alignment of the tabs.
 
 |void| **set_tab_language**\ (\ tab_idx\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TabBar_method_set_tab_language>`
 
-Sets the language code of the title for the tab at index ``tab_idx`` to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+将索引为 ``tab_idx`` 的选项卡的标题语言代码设置为 ``language``\ 。这是用于断行和文本塑形算法的。如果 ``language`` 为空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1068,7 +1068,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)`` :ref:`🔗<class_TabBar_theme_color_font_disabled_color>`
 
-禁用选项卡的字体颜色。
+禁用的选项卡的字体颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1128,7 +1128,7 @@ Sets the language code of the title for the tab at index ``tab_idx`` to ``langua
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+禁用的选项卡的图标颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+当前悬停的选项卡的图标颜色。不适用于选中的选项卡。
 
 .. rst-class:: classref-item-separator
 
@@ -1152,7 +1152,7 @@ Icon color of the currently hovered tab. Does not apply to the selected tab.
 
 :ref:`Color<class_Color>` **icon_selected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_selected_color>`
 
-Icon color of the currently selected tab.
+当前所选选项卡的图标颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1164,7 +1164,7 @@ Icon color of the currently selected tab.
 
 :ref:`Color<class_Color>` **icon_unselected_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_unselected_color>`
 
-Icon color of the other, unselected tabs.
+其他未被选中的选项卡的图标颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1188,7 +1188,7 @@ Icon color of the other, unselected tabs.
 
 :ref:`int<class_int>` **hover_switch_wait_msec** = ``500`` :ref:`🔗<class_TabBar_theme_constant_hover_switch_wait_msec>`
 
-During a drag-and-drop, this is how many milliseconds to wait before switching the tab.
+在拖放操作中，切换选项卡之前需要等待的毫秒数。
 
 .. rst-class:: classref-item-separator
 
@@ -1370,7 +1370,7 @@ During a drag-and-drop, this is how many milliseconds to wait before switching t
 
 :ref:`StyleBox<class_StyleBox>` **tab_focus** :ref:`🔗<class_TabBar_theme_style_tab_focus>`
 
-该 **TabBar** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabBar_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+该 **TabBar** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabBar_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 

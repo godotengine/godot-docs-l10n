@@ -7,18 +7,18 @@ CCDIK3D
 
 **Hereda:** :ref:`IterateIK3D<class_IterateIK3D>` **<** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Rotation based cyclic coordinate descent inverse kinematics solver.
+Solver de cinemática inversa de descenso cíclico de coordenadas basado en rotación.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-**CCDIK3D** is rotation based IK, enabling fast and effective tracking even with large joint rotations. It's especially suitable for chains with limitations, providing smoother and more stable target tracking compared to :ref:`FABRIK3D<class_FABRIK3D>`.
+**CCDIK3D** es una IK basada en rotación que permite un seguimiento rápido y eficaz, incluso con grandes rotaciones de articulaciones. Es especialmente adecuado para cadenas con limitaciones, ofreciendo un seguimiento del objetivo más suave y estable en comparación con :ref:`FABRIK3D<class_FABRIK3D>`.
 
-The resulting twist around the forward vector will always be kept from the previous pose.
+La torsión resultante alrededor del vector frontal siempre se conservará a partir de la pose anterior.
 
-\ **Note:** When the target is close to the root, it can cause unnatural movement, including joint flips and oscillations.
+\ **Nota:** Cuando el objetivo está cerca de la raíz, puede provocar movimientos antinaturales, incluyendo volteos de articulaciones y oscilaciones.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

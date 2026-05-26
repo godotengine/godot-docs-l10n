@@ -9,14 +9,14 @@ OpenXRMarkerTracker
 
 **Hereda:** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Spatial entity tracker for our spatial entity marker tracking extension.
+Rastreador de entidad espacial para nuestra extensión de seguimiento de marcadores de entidad espacial.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or Aruco code, and map their location to our virtual space.
+Rastreador de entidad espacial para nuestra extensión de seguimiento de marcadores de entidad espacial de OpenXR. Estos rastreadores identifican entidades en nuestro espacio real detectadas por un marcador visual como un código QR o Aruco, y mapean su ubicación a nuestro espacio virtual.
 
 .. rst-class:: classref-reftable-group
 
@@ -119,7 +119,7 @@ Descripciones de Métodos
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ ) |const| :ref:`🔗<class_OpenXRMarkerTracker_method_get_marker_data>`
 
-Returns the marker data for this marker. This can return a :ref:`String<class_String>` or :ref:`PackedByteArray<class_PackedByteArray>`. Only applicable to QR Code based markers.
+Devuelve los datos del marcador para este marcador. Puede devolver un :ref:`String<class_String>` o :ref:`PackedByteArray<class_PackedByteArray>`. Solo aplicable a marcadores basados en códigos QR.
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ Returns the marker data for this marker. This can return a :ref:`String<class_St
 
 |void| **set_marker_data**\ (\ marker_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_OpenXRMarkerTracker_method_set_marker_data>`
 
-Sets the marker data for this marker.
+Establece los datos del marcador para este marcador.
 
-\ **Note:** This should only be set by marker discovery logic.
+\ **Nota:** Esto solo debe ser establecido por la lógica de descubrimiento de marcadores.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

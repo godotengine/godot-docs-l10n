@@ -87,7 +87,7 @@ Slider
 
 **drag_ended**\ (\ value_changed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Slider_signal_drag_ended>`
 
-停止拖拽拖动器时发出。如果 ``value_changed`` 为 ``true``\ ，则 :ref:`Range.value<class_Range_property_value>` 与开始拖拽时的值不同。
+停止拖拽抓取器时发出。如果 ``value_changed`` 为 ``true``\ ，则 :ref:`Range.value<class_Range_property_value>` 与开始拖拽时的值不同。
 
 .. rst-class:: classref-item-separator
 
@@ -99,7 +99,7 @@ Slider
 
 **drag_started**\ (\ ) :ref:`🔗<class_Slider_signal_drag_started>`
 
-开始拖拽拖动器时发出，时机在对应的 :ref:`Range.value_changed<class_Range_signal_value_changed>` 信号之前。
+开始拖拽抓取器时发出，时机在对应的 :ref:`Range.value_changed<class_Range_signal_value_changed>` 信号之前。
 
 .. rst-class:: classref-section-separator
 
@@ -289,7 +289,7 @@ enum **TickPosition**: :ref:`🔗<enum_Slider_TickPosition>`
 
 :ref:`Texture2D<class_Texture2D>` **grabber** :ref:`🔗<class_Slider_theme_icon_grabber>`
 
-用作拖动条的纹理（可拖动的元素）。
+用作抓取器（可拖动的元素）的纹理。
 
 .. rst-class:: classref-item-separator
 

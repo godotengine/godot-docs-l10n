@@ -118,7 +118,7 @@ Hace que las uniones de la polilínea sean puntiagudas, conectando los lados de 
 
 :ref:`LineJointMode<enum_Line2D_LineJointMode>` **LINE_JOINT_BEVEL** = ``1``
 
-Makes the polyline's joints bevelled/chamfered, connecting the sides of the two segments with a simple line.
+Hace que las uniones de la polilínea sean biseladas/achanflanadas, conectando los lados de los dos segmentos con una simple línea.
 
 .. _class_Line2D_constant_LINE_JOINT_ROUND:
 

@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationPlaneTracking
 
 **继承：** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for plane tracking.
+平面跟踪的配置标头。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Configuration header for plane tracking. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context with plane tracking capabilities.
+用于平面跟踪的配置标头。将它传递给 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 方法即可创建具有平面跟踪功能的空间上下文。
 
 .. rst-class:: classref-reftable-group
 
@@ -51,9 +51,9 @@ Configuration header for plane tracking. Pass this to :ref:`OpenXRSpatialEntityE
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+返回该配置启用的组件。
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **注意：**\ 仅在该配置用于创建空间上下文后有效。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Returns the components enabled by this configuration.
 
 :ref:`bool<class_bool>` **supports_labels**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_supports_labels>`
 
-Returns ``true`` if we support the plane semantic label component (only valid after the OpenXR session has started). You can query these using the :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>` data object.
+如果支持平面语义标签组件，则返回 ``true``\ （仅在 OpenXR 会话启动后有效）。可以使用 :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>` 数据对象查询这些标签。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Returns ``true`` if we support the plane semantic label component (only valid af
 
 :ref:`bool<class_bool>` **supports_mesh_2d**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_supports_mesh_2d>`
 
-Returns ``true`` if we support the mesh 2D component (only valid after the OpenXR session has started). You can query these using the :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>` data object.
+如果支持网格 2D 组件，则返回 ``true``\ （仅在 OpenXR 会话启动后有效）。可以使用 :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>` 数据对象查询这些信息。
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Returns ``true`` if we support the mesh 2D component (only valid after the OpenX
 
 :ref:`bool<class_bool>` **supports_polygons**\ (\ ) :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationPlaneTracking_method_supports_polygons>`
 
-Returns ``true`` if we support the polygon 2D component (only valid after the OpenXR session has started). You can query these using the :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>` data object.
+如果支持 2D 多边形组件，则返回 ``true``\ （仅在 OpenXR 会话启动后有效）。可以使用 :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>` 数据对象查询这些信息。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

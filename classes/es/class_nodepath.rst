@@ -162,32 +162,32 @@ Construye un **NodePath** como copia del **NodePath** dado.
 
 :ref:`NodePath<class_NodePath>` **NodePath**\ (\ from\: :ref:`String<class_String>`\ )
 
-Constructs a **NodePath** from a :ref:`String<class_String>`. The created path is absolute if prefixed with a slash (see :ref:`is_absolute()<class_NodePath_method_is_absolute>`).
+Construye un **NodePath** a partir de un :ref:`String<class_String>`. La ruta creada es absoluta si comienza con una barra (consulta el :ref:`is_absolute()<class_NodePath_method_is_absolute>`).
 
-The "subnames" optionally included after the path to the target node can point to properties, and can also be nested.
+Los "subnombres" opcionales que se incluyen después de la ruta apuntando al nodo objetivo pueden hacer referencia a propiedades, y también pueden estar anidados.
 
-The following strings can be valid node paths:
+Las siguientes cadenas pueden ser rutas válidas de nodos:
 
 ::
 
-    # Points to the Sprite2D node.
+    # Apunta al nodo Sprite2D.
     "Level/RigidBody2D/Sprite2D"
 
-    # Points to the Sprite2D node and its "texture" resource.
-    # get_node() would retrieve the Sprite2D, while get_node_and_resource()
-    # would retrieve both the Sprite2D node and the "texture" resource.
+    # Señala al nodo Sprite2D y a su recurso "texture".
+    # get_node() recuperaría el Sprite2D, mientras que get_node_and_resource()
+    # recuperaría tanto el nodo Sprite2D como el recurso "texture".
     "Level/RigidBody2D/Sprite2D:texture"
 
-    # Points to the Sprite2D node and its "position" property.
+    # Apunta al nodo Sprite2D y a su propiedad "position".
     "Level/RigidBody2D/Sprite2D:position"
 
-    # Points to the Sprite2D node and the "x" component of its "position" property.
+    # Señala al nodo Sprite2D y al componente "x" de su propiedad "position".
     "Level/RigidBody2D/Sprite2D:position:x"
 
-    # Points to the RigidBody2D node as an absolute path beginning from the SceneTree.
+    # Apunta al nodo RigidBody2D como una ruta absoluta comenzando desde el SceneTree.
     "/root/Level/RigidBody2D"
 
-\ **Note:** In GDScript, it's also possible to convert a constant string into a node path by prefixing it with ``^``. ``^"path/to/node"`` is equivalent to ``NodePath("path/to/node")``.
+\ **Nota:** En GDScript, también es posible convertir una cadena constante en una ruta de nodo anteponiéndole ``^``. ``^"path/to/node"`` es equivalente a ``NodePath("path/to/node")``.
 
 .. rst-class:: classref-section-separator
 
@@ -352,9 +352,9 @@ Returns the property name indicated by ``idx``, starting from 0. If ``idx`` is o
 
 :ref:`int<class_int>` **get_subname_count**\ (\ ) |const| :ref:`🔗<class_NodePath_method_get_subname_count>`
 
-Returns the number of property names ("subnames") in the path. Each subname in the node path is listed after a colon character (``:``).
+Devuelve el número de nombres de propiedades ("subnombres") en la ruta. Cada subnombre en la ruta del nodo se lista después de un carácter de dos puntos (``:``).
 
-For example, ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` contains 2 subnames.
+Por ejemplo, ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` contiene 2 subnombres.
 
 .. rst-class:: classref-item-separator
 
@@ -366,9 +366,9 @@ For example, ``"Level/RigidBody2D/Sprite2D:texture:resource_name"`` contains 2 s
 
 :ref:`int<class_int>` **hash**\ (\ ) |const| :ref:`🔗<class_NodePath_method_hash>`
 
-Returns the 32-bit hash value representing the node path's contents.
+Devuelve el valor hash de 32 bits que representa el contenido de la ruta del nodo.
 
-\ **Note:** Node paths with equal hash values are *not* guaranteed to be the same, as a result of hash collisions. Node paths with different hash values are guaranteed to be different.
+\ **Nota:** Las rutas de nodo con valores hash iguales *no* garantizan ser las mismas, como resultado de colisiones de hash. Las rutas de nodo con valores hash diferentes garantizan ser diferentes.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Returns the 32-bit hash value representing the node path's contents.
 
 :ref:`bool<class_bool>` **is_absolute**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_absolute>`
 
-Returns ``true`` if the node path is absolute. Unlike a relative path, an absolute path is represented by a leading slash character (``/``) and always begins from the :ref:`SceneTree<class_SceneTree>`. It can be used to reliably access nodes from the root node (e.g. ``"/root/Global"`` if an autoload named "Global" exists).
+Devuelve ``true`` si la ruta del nodo es absoluta. A diferencia de una ruta relativa, una ruta absoluta se representa con un carácter de barra inicial (``/``) y siempre comienza desde el :ref:`SceneTree<class_SceneTree>`. Se puede utilizar para acceder de forma fiable a los nodos desde el nodo raíz (por ejemplo, ``"/root/Global"`` si existe una autocarga llamada "Global").
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ Returns ``true`` if the node path is absolute. Unlike a relative path, an absolu
 
 :ref:`bool<class_bool>` **is_empty**\ (\ ) |const| :ref:`🔗<class_NodePath_method_is_empty>`
 
-Returns ``true`` if the node path has been constructed from an empty :ref:`String<class_String>` (``""``).
+Devuelve ``true`` si la ruta del nodo ha sido construida a partir de una :ref:`String<class_String>` vacía (``""``).
 
 .. rst-class:: classref-item-separator
 
@@ -404,11 +404,11 @@ Returns ``true`` if the node path has been constructed from an empty :ref:`Strin
 
 :ref:`NodePath<class_NodePath>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_NodePath_method_slice>`
 
-Returns the slice of the **NodePath**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **NodePath**.
+Devuelve una porción de la **NodePath**, desde ``begin`` (inclusive) hasta ``end`` (exclusive), como una nueva **NodePath**.
 
-The absolute value of ``begin`` and ``end`` will be clamped to the sum of :ref:`get_name_count()<class_NodePath_method_get_name_count>` and :ref:`get_subname_count()<class_NodePath_method_get_subname_count>`, so the default value for ``end`` makes it slice to the end of the **NodePath** by default (i.e. ``path.slice(1)`` is a shorthand for ``path.slice(1, path.get_name_count() + path.get_subname_count())``).
+El valor absoluto de ``begin`` y ``end`` se ajustará a la suma de :ref:`get_name_count()<class_NodePath_method_get_name_count>` y :ref:`get_subname_count()<class_NodePath_method_get_subname_count>`, por lo que el valor predeterminado de ``end`` hace que la porción vaya hasta el final de la **NodePath** por defecto (es decir, ``path.slice(1)`` es una abreviatura de ``path.slice(1, path.get_name_count() + path.get_subname_count())``).
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the **NodePath** (i.e. ``path.slice(0, -2)`` is a shorthand for ``path.slice(0, path.get_name_count() + path.get_subname_count() - 2)``).
+Si ``begin`` o ``end`` son negativos, serán relativos al final de la **NodePath** (es decir, ``path.slice(0, -2)`` es una abreviatura de ``path.slice(0, path.get_name_count() + path.get_subname_count() - 2)``).
 
 .. rst-class:: classref-section-separator
 

@@ -11,14 +11,14 @@ OpenXRSpatialComponentData
 
 **派生：** :ref:`OpenXRSpatialComponentAnchorList<class_OpenXRSpatialComponentAnchorList>`, :ref:`OpenXRSpatialComponentBounded2DList<class_OpenXRSpatialComponentBounded2DList>`, :ref:`OpenXRSpatialComponentBounded3DList<class_OpenXRSpatialComponentBounded3DList>`, :ref:`OpenXRSpatialComponentMarkerList<class_OpenXRSpatialComponentMarkerList>`, :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>`, :ref:`OpenXRSpatialComponentMesh3DList<class_OpenXRSpatialComponentMesh3DList>`, :ref:`OpenXRSpatialComponentParentList<class_OpenXRSpatialComponentParentList>`, :ref:`OpenXRSpatialComponentPersistenceList<class_OpenXRSpatialComponentPersistenceList>`, :ref:`OpenXRSpatialComponentPlaneAlignmentList<class_OpenXRSpatialComponentPlaneAlignmentList>`, :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>`, :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>`, :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>`
 
-Object for storing OpenXR spatial entity component data.
+用于存储 OpenXR 空间实体组件数据的对象。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Object for storing OpenXR spatial entity component data.
+用于存储 OpenXR 空间实体组件数据的对象。
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Object for storing OpenXR spatial entity component data.
 
 :ref:`int<class_int>` **_get_component_type**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_component_type>`
 
-Return the component type for the component we store data for.
+返回存储数据的组件的组件类型。
 
 .. rst-class:: classref-item-separator
 
@@ -65,7 +65,7 @@ Return the component type for the component we store data for.
 
 :ref:`int<class_int>` **_get_structure_data**\ (\ next\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_structure_data>`
 
-Return a pointer to the structure data that will be submitted along with the snapshot query. This pointer must remain valid as long as this object is instantiated.
+返回指向结构体数据的指针，该结构体数据将与快照查询一起提交。只要该对象被实例化，该指针就必须保持有效。
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Return a pointer to the structure data that will be submitted along with the sna
 
 |void| **_set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__set_capacity>`
 
-Set the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+设置空间实体查询系统提供的预期容量。缓冲区应使用正确的存储空间进行初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Set the expected capacity as provided by the spatial entities query system. Buff
 
 |void| **set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialComponentData_method_set_capacity>`
 
-Set the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+设置空间实体查询系统提供的预期容量。缓冲区应使用正确的存储空间进行初始化。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

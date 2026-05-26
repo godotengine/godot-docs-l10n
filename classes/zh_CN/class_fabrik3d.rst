@@ -7,25 +7,25 @@ FABRIK3D
 
 **继承：** :ref:`IterateIK3D<class_IterateIK3D>` **<** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Position based forward and backward reaching inverse kinematics solver.
+基于位置的前后向延伸的反向动力学求解器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-**FABRIK3D** is position based IK, allowing precise and accurate tracking of targets. It's ideal for simple chains without limitations.
+**FABRIK3D** 是一种基于位置的反向动力学算法，可以实现对目标的精确跟踪。它非常适合没有限制的简单链式结构。
 
-The resulting twist around the forward vector will always be kept from the previous pose.
+围绕前向向量产生的扭转角度将始终保持与上一姿势相同。
 
-\ **Note:** When the target is close to the root, it tends to produce zig-zag patterns, resulting in unnatural visual movement.
+\ **注意：**\ 当目标靠近根时，容易产生锯齿状运动，导致不自然的视觉运动。
 
 .. rst-class:: classref-introduction-group
 
 教程
 ----
 
-- `Inverse Kinematics Returns to Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
+- `反向动力学回归到 Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

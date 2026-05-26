@@ -693,9 +693,9 @@ enum **Feature**: :ref:`🔗<enum_DisplayServer_Feature>`
 
 :ref:`Feature<enum_DisplayServer_Feature>` **FEATURE_ICON** = ``13``
 
-Display server supports changing the window icon (usually displayed in the top-left corner). **Windows, macOS, Linux (X11/Wayland)**\ 
+显示服务器支持更改窗口图标（通常显示在左上角）。\ **Windows、macOS、Linux（X11/Wayland）**\ 
 
-\ **Note:** Use on Wayland requires the compositor to implement the `xdg_toplevel_icon_v1 <https://wayland.app/protocols/xdg-toplevel-icon-v1#xdg_toplevel_icon_v1>`__ protocol, which not all compositors do. See `xdg_toplevel_icon_v1#compositor-support <https://wayland.app/protocols/xdg-toplevel-icon-v1#compositor-support>`__ for more information on individual compositor support.
+\ **注意：**\ 在 Wayland 上使用时需要合成器实现 `xdg_toplevel_icon_v1 <https://wayland.app/protocols/xdg-toplevel-icon-v1#xdg_toplevel_icon_v1>`__ 协议，但并非所有合成器都支持该协议。有关各个合成器的支持情况，请参阅 `xdg_toplevel_icon_v1#compositor-support <https://wayland.app/protocols/xdg-toplevel-icon-v1#compositor-support>`__\ 。
 
 .. _class_DisplayServer_constant_FEATURE_NATIVE_ICON:
 
@@ -1301,7 +1301,7 @@ enum **AccessibilityFlags**: :ref:`🔗<enum_DisplayServer_AccessibilityFlags>`
 
 :ref:`AccessibilityFlags<enum_DisplayServer_AccessibilityFlags>` **FLAG_MULTISELECTABLE** = ``1``
 
-Element supports multiple item selection.
+元素支持多项选择。
 
 .. _class_DisplayServer_constant_FLAG_REQUIRED:
 
@@ -2309,7 +2309,7 @@ enum **WindowFlags**: :ref:`🔗<enum_DisplayServer_WindowFlags>`
 
 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` **WINDOW_FLAG_MAX** = ``13``
 
-Represents the size of the :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` enum.
+代表 :ref:`WindowFlags<enum_DisplayServer_WindowFlags>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2397,9 +2397,9 @@ enum **WindowEvent**: :ref:`🔗<enum_DisplayServer_WindowEvent>`
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_FORCE_CLOSE** = ``8``
 
-Sent when the window has been forcibly closed by the display server. The window will immediately hide and clean any internal rendering references.
+当窗口被显示服务器强制关闭时发送。该窗口应立即隐藏并清理内部的渲染引用。
 
-\ **Note:** This flag is implemented only on Linux (Wayland).
+\ **注意：**\ 该标志仅在 Linux（Wayland）上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -2805,7 +2805,7 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`Variant<class_Variant>` **accessibility_element_get_meta**\ (\ id\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_element_get_meta>`
 
-Returns the metadata of the accessibility element ``id``.
+返回无障碍元素 ``id`` 的元数据。
 
 .. rst-class:: classref-item-separator
 
@@ -2817,7 +2817,7 @@ Returns the metadata of the accessibility element ``id``.
 
 |void| **accessibility_element_set_meta**\ (\ id\: :ref:`RID<class_RID>`, meta\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_element_set_meta>`
 
-Sets the metadata of the accessibility element ``id`` to ``meta``.
+将无障碍元素 ``id`` 的元数据设置为 ``meta``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2829,7 +2829,7 @@ Sets the metadata of the accessibility element ``id`` to ``meta``.
 
 |void| **accessibility_free_element**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_DisplayServer_method_accessibility_free_element>`
 
-Frees the accessibility element ``id`` created by :ref:`accessibility_create_element()<class_DisplayServer_method_accessibility_create_element>`, :ref:`accessibility_create_sub_element()<class_DisplayServer_method_accessibility_create_sub_element>`, or :ref:`accessibility_create_sub_text_edit_elements()<class_DisplayServer_method_accessibility_create_sub_text_edit_elements>`.
+释放由 :ref:`accessibility_create_element()<class_DisplayServer_method_accessibility_create_element>`\ 、\ :ref:`accessibility_create_sub_element()<class_DisplayServer_method_accessibility_create_sub_element>` 或 :ref:`accessibility_create_sub_text_edit_elements()<class_DisplayServer_method_accessibility_create_sub_text_edit_elements>` 创建的无障碍元素 ``id``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2865,11 +2865,11 @@ Frees the accessibility element ``id`` created by :ref:`accessibility_create_ele
 
 :ref:`int<class_int>` **accessibility_screen_reader_active**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_accessibility_screen_reader_active>`
 
-Returns ``1`` if a screen reader, Braille display or other assistive app is active, ``0`` otherwise. Returns ``-1`` if status is unknown.
+如果屏幕阅读器、盲文显示器或其他辅助应用处于活动状态则返回 ``1``\ ， 否则返回 ``0``\ 。如果状态未知则返回 ``-1``\ 。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps and will not affect this value. To test your project with these tools, set :ref:`ProjectSettings.accessibility/general/accessibility_support<class_ProjectSettings_property_accessibility/general/accessibility_support>` to ``1``.
+\ **注意：**\ Windows 的 Accessibility Insights、Accessibility Inspector（macOS）、AT-SPI 浏览器（Linux/BSD）等无障碍调试工具不算作辅助应用，不影响取值。要使用这些工具测试你的项目，请将 :ref:`ProjectSettings.accessibility/general/accessibility_support<class_ProjectSettings_property_accessibility/general/accessibility_support>` 设置为 ``1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3851,11 +3851,11 @@ Returns ``1`` if a screen reader, Braille display or other assistive app is acti
 
 |void| **cursor_set_custom_image**\ (\ cursor\: :ref:`Resource<class_Resource>`, shape\: :ref:`CursorShape<enum_DisplayServer_CursorShape>` = 0, hotspot\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0)\ ) :ref:`🔗<class_DisplayServer_method_cursor_set_custom_image>`
 
-Sets a custom mouse cursor image for the given ``shape``. This means the user's operating system and mouse cursor theme will no longer influence the mouse cursor's appearance.
+为给定的形状 ``shape`` 设置自定义鼠标指针图像。这意味着用户的操作系统和鼠标光标主题不再影响鼠标光标的外观。
 
-\ ``cursor`` can be either a :ref:`Texture2D<class_Texture2D>` or an :ref:`Image<class_Image>`, and it should not be larger than 256×256 to display correctly. Optionally, ``hotspot`` can be set to offset the image's position relative to the click point. By default, ``hotspot`` is set to the top-left corner of the image. See also :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`.
+\ ``cursor`` 可以是 :ref:`Texture2D<class_Texture2D>` 或 :ref:`Image<class_Image>`\ ，并且它不应大于 256×256 才能正确显示。还可以选择设置 ``hotspot`` 以偏移图像相对于点击点的位置。默认情况下，\ ``hotspot`` 被设置为图像的左上角。另见 :ref:`cursor_set_shape()<class_DisplayServer_method_cursor_set_shape>`\ 。
 
-\ **Note:** On Web, calling this method every frame can cause the cursor to flicker.
+\ **注意：**\ 在 Web 上，每帧调用该方法可能会导致光标闪烁。
 
 .. rst-class:: classref-item-separator
 
@@ -3933,45 +3933,45 @@ Sets a custom mouse cursor image for the given ``shape``. This means the user's 
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-显示操作系统原生对话框，用于选择文件系统中的文件或目录。
+Displays OS native dialog for selecting files or directories in the file system.
 
-\ ``filters`` 数组中的每个筛选字符串的格式应类似于：\ ``*.png,*.jpg,*.jpeg;图像文件;image/png,image/jpeg``\ 。过滤器的描述文本是可选的，可以省略。建议同时设置文件扩展名和 MIME 类型。另见 :ref:`FileDialog.filters<class_FileDialog_property_filters>`\ 。
+Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-回调的参数如下：\ ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``\ 。\ **在 Android 平台上**\ ，第三个回调参数（\ ``selected_filter_index``\ ）始终为 ``0``\ 。
+Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
 
-\ **注意：**\ 此方法仅在显示服务器支持 :ref:`FEATURE_NATIVE_DIALOG<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG>` 特性时可用。支持的平台包括 Linux（X11/Wayland）、Windows、macOS 和 Android（API 级别 29+）。
+\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
 
-\ **注意：**\ ``current_directory`` 可能会被忽略。
+\ **Note:** ``current_directory`` might be ignored.
 
-\ **注意：**\ 嵌入文件对话框和 Windows 文件对话框仅支持文件扩展名过滤，而 Android、Linux 和 macOS 的文件对话框还支持 MIME 类型过滤。
+\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
 
-\ **注意：**\ 在 Android 和 Linux 上，\ ``show_hidden`` 无效。
+\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
 
-\ **注意：**\ 在 Android 和 macOS 上，原生文件对话框没有标题。
+\ **Note:** On Android and macOS, native file dialogs have no title.
 
-\ **注意：**\ 在 macOS 上，沙盒应用程序将保存安全范围书签，以便在多次会话期间保持对已打开文件夹的访问权限。可使用 :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` 获取已保存书签的列表。
+\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
 
-\ **注意：**\ 在 Android 上，此方法使用 Android 存储访问框架（SAF）。
+\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
 
-文件选择器返回的是一个 URI 而非文件系统路径。此 URI 可直接传递给 :ref:`FileAccess<class_FileAccess>` 以执行读写操作。
+The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
 
-当使用 :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>` 模式时，会返回一个授予对所选目录完全访问权限的树形 URI。在该目录内进行文件操作时，可将形如 ``treeUri#相对/路径/到/文件`` 的路径传递给 :ref:`FileAccess<class_FileAccess>`\ 。
+When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
 
-为避免每次应用重启后重复打开文件选择器，可按如下方式获取持久化的 URI 权限：
+To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # 所选文件或文件夹的 URI。
-    val persist = true # 设为 false 可释放持久化权限。
+    val uri = "content://com.android..." # URI of the selected file or folder.
+    val persist = true # Set to false to release the persistable permission.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-只要目录未被移动、重命名或删除，持久化的 URI 权限将在应用重启后保持有效。
+The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
 
 .. rst-class:: classref-item-separator
 
@@ -3983,31 +3983,31 @@ Sets a custom mouse cursor image for the given ``shape``. This means the user's 
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_with_options_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, root\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, options\: :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\], callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_with_options_show>`
 
-Displays OS native dialog for selecting files or directories in the file system with additional user selectable options.
+显示操作系统原生对话框，用于使用其他用户可选选项，选择文件系统中的文件或目录。
 
-Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+\ ``filters`` 数组中的每个过滤字符串都应该使用类似 ``png,*.jpg,*.jpeg;图像文件;image/png,image/jpeg`` 的格式。过滤器的描述文本不是必填项，可以省略。建议同时设置文件扩展名和 MIME 类型。另见 :ref:`FileDialog.filters<class_FileDialog_property_filters>`\ 。
 
-\ ``options`` is array of :ref:`Dictionary<class_Dictionary>`\ s with the following keys:
+\ ``options`` 是具有以下字段的 :ref:`Dictionary<class_Dictionary>` 的数组：
 
-- ``"name"`` - option's name :ref:`String<class_String>`.
+- ``"name"`` - 选项的名称 :ref:`String<class_String>`\ 。
 
-- ``"values"`` - :ref:`PackedStringArray<class_PackedStringArray>` of values. If empty, boolean option (check box) is used.
+- ``"values"`` - 值的 :ref:`PackedStringArray<class_PackedStringArray>`\ 。如果为空，则使用布尔选项（复选框）。
 
-- ``"default"`` - default selected option index (:ref:`int<class_int>`) or default boolean value (:ref:`bool<class_bool>`).
+- ``"default"`` - 默认选择的选项索引（\ :ref:`int<class_int>`\ ）或默认布尔值（\ :ref:`bool<class_bool>`\ ）。
 
-Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary``.
+回调具有以下参数：\ ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int, selected_option: Dictionary``\ 。
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE_EXTRA<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE_EXTRA>` feature. Supported platforms include Linux (X11/Wayland), Windows, and macOS.
+\ **注意：**\ 如果显示服务器具有 :ref:`FEATURE_NATIVE_DIALOG<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG>` 功能，则该方法已被实现。支持的平台包括 Linux（X11/Wayland）、Windows、macOS。
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **注意：**\ ``current_directory`` 可能会被忽略。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：**\ 内嵌文件对话框和 Windows 文件对话框仅支持文件扩展名，而 Android、Linux 和 macOS 的文件对话框还支持 MIME 类型。
 
-\ **Note:** On Linux (X11), ``show_hidden`` is ignored.
+\ **注意：**\ 在 Linux（X11） 上，\ ``show_hidden`` 会被忽略。
 
-\ **Note:** On macOS, native file dialogs have no title.
+\ **注意：**\ 在 macOS 上，原生文件对话框没有标题。
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **注意：**\ 在 macOS 上，沙盒应用程序将保存安全范围的书签，以保留对多个会话中打开的文件夹的访问权限。请使用 :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` 获取已保存书签的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -4117,9 +4117,9 @@ Callbacks have the following arguments: ``status: bool, selected_paths: PackedSt
 
 :ref:`int<class_int>` **get_primary_screen**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_primary_screen>`
 
-Returns the index of the primary screen.
+返回主屏幕的索引。
 
-\ **Note:** This method is implemented on Linux/X11, macOS, and Windows. On other platforms, this method always returns ``0``.
+\ **注意：**\ 该方法在 Linux/X11、macOS、Windows 上实现。该方法在其他平台上始终返回 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5604,9 +5604,9 @@ Returns the index of the primary screen.
 
 :ref:`float<class_float>` **screen_get_refresh_rate**\ (\ screen\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_refresh_rate>`
 
-Returns the current refresh rate of the specified screen. When V-Sync is enabled, this returns the maximum framerate the project can effectively reach. Returns ``-1.0`` if ``screen`` is invalid or the **DisplayServer** fails to find the refresh rate for the specified screen.
+返回指定屏幕的当前刷新率。启用垂直同步时，该函数返回项目实际能够达到的最大帧率。如果 ``screen`` 无效或 **DisplayServer** 无法查到指定屏幕的刷新率，则返回 ``-1.0``\ 。
 
-To fallback to a default refresh rate if the method fails, try:
+要在该方法失败时回退至默认刷新率，可以试一试：
 
 ::
 
@@ -5614,9 +5614,9 @@ To fallback to a default refresh rate if the method fails, try:
     if refresh_rate < 0:
         refresh_rate = 60.0
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **注意：**\ 下列常量可以当作 ``screen`` 使用：\ :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`\ 、\ :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`\ 、\ :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`\ 、\ :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`\ 。
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Linux (X11 and Wayland), and Windows. On other platforms, this method always returns ``-1.0``.
+\ **注意：**\ 该方法在 Android、iOS、macOS、Linux（X11 和 Wayland）、Windows 上实现。该方法在其他平台上始终返回 ``-1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5762,9 +5762,9 @@ To fallback to a default refresh rate if the method fails, try:
 
 |void| **set_system_theme_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_system_theme_change_callback>`
 
-Sets the callback that should be called when the system's theme settings are changed. ``callable`` should accept zero arguments.
+设置系统主题设置项更改时应调用的回调函数。\ ``callable`` 应该接受零个参数。
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Windows, and Linux (X11/Wayland).
+\ **注意：**\ 该方法在 Android、iOS、macOS、Windows 和 Linux（X11/Wayland）上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -6396,9 +6396,9 @@ Sets the callback that should be called when the system's theme settings are cha
 
 :ref:`bool<class_bool>` **window_maximize_on_title_dbl_click**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_window_maximize_on_title_dbl_click>`
 
-Returns ``true`` if double-clicking on a window's title should maximize it.
+如果双击窗口标题应使其最大化，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 这个方法仅在 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -6410,9 +6410,9 @@ Returns ``true`` if double-clicking on a window's title should maximize it.
 
 :ref:`bool<class_bool>` **window_minimize_on_title_dbl_click**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_window_minimize_on_title_dbl_click>`
 
-Returns ``true`` if double-clicking on a window's title should minimize it.
+如果双击窗口标题应将其最小化，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented only on macOS.
+\ **注意：**\ 这个方法仅在 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -6448,9 +6448,9 @@ Returns ``true`` if double-clicking on a window's title should minimize it.
 
 |void| **window_set_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_DisplayServer_method_window_set_color>`
 
-Sets the background color of the root window.
+设置根窗口的背景颜色。
 
-\ **Note:** This method is implemented only on Android.
+\ **注意：**\ 该方法仅在 Android 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -6522,7 +6522,7 @@ Sets the background color of the root window.
 
 |void| **window_set_ime_active**\ (\ active\: :ref:`bool<class_bool>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_ime_active>`
 
-设置是否应该为窗口启用\ `输入法编辑器 <https://zh.wikipedia.org/wiki/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ ，该窗口由 ``window_id`` 指定。另见 :ref:`window_set_ime_position()<class_DisplayServer_method_window_set_ime_position>`\ 。
+设置是否应该为窗口启用\ `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__\ ，该窗口由 ``window_id`` 指定。另见 :ref:`window_set_ime_position()<class_DisplayServer_method_window_set_ime_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6534,7 +6534,7 @@ Sets the background color of the root window.
 
 |void| **window_set_ime_position**\ (\ position\: :ref:`Vector2i<class_Vector2i>`, window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_window_set_ime_position>`
 
-设置指定 ``window_id`` 的\ `输入法编辑器 <https://zh.wikipedia.org/wiki/%E8%BE%93%E5%85%A5%E6%B3%95>`__\ 弹出框的位置。仅在指定 ``window_id`` 的 :ref:`window_set_ime_active()<class_DisplayServer_method_window_set_ime_active>` 为 ``true`` 时有效。
+设置指定 ``window_id`` 的 `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ 弹出框的位置。仅在指定 ``window_id`` 的 :ref:`window_set_ime_active()<class_DisplayServer_method_window_set_ime_active>` 为 ``true`` 时有效。
 
 .. rst-class:: classref-item-separator
 

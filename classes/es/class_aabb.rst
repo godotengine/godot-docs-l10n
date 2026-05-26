@@ -523,7 +523,7 @@ Devuelve el volumen del cuadro delimitador. Esto es equivalente a ``size.x * siz
 
 :ref:`AABB<class_AABB>` **grow**\ (\ by\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_AABB_method_grow>`
 
-Returns a copy of this bounding box extended on all sides by the given amount ``by``. A negative amount shrinks the box instead.
+Devuelve una copia de esta caja delimitadora extendida en todos sus lados por la cantidad dada ``by``. Una cantidad negativa, en cambio, encoge la caja.
 
 
 .. tabs::
@@ -531,22 +531,22 @@ Returns a copy of this bounding box extended on all sides by the given amount ``
  .. code-tab:: gdscript
 
     var a = AABB(Vector3(4, 4, 4), Vector3(8, 8, 8)).grow(4)
-    print(a.position) # Prints (0.0, 0.0, 0.0)
-    print(a.size)     # Prints (16.0, 16.0, 16.0)
+    print(a.position) # Imprime (0.0, 0.0, 0.0)
+    print(a.size)     # Imprime (16.0, 16.0, 16.0)
 
     var b = AABB(Vector3(0, 0, 0), Vector3(8, 4, 2)).grow(2)
-    print(b.position) # Prints (-2.0, -2.0, -2.0)
-    print(b.size)     # Prints (12.0, 8.0, 6.0)
+    print(b.position) # Imprime (-2.0, -2.0, -2.0)
+    print(b.size)     # Imprime (12.0, 8.0, 6.0)
 
  .. code-tab:: csharp
 
     var a = new Aabb(new Vector3(4, 4, 4), new Vector3(8, 8, 8)).Grow(4);
-    GD.Print(a.Position); // Prints (0, 0, 0)
-    GD.Print(a.Size);     // Prints (16, 16, 16)
+    GD.Print(a.Position); // Imprime (0, 0, 0)
+    GD.Print(a.Size);     // Imprime (16, 16, 16)
 
     var b = new Aabb(new Vector3(0, 0, 0), new Vector3(8, 4, 2)).Grow(2);
-    GD.Print(b.Position); // Prints (-2, -2, -2)
-    GD.Print(b.Size);     // Prints (12, 8, 6)
+    GD.Print(b.Position); // Imprime (-2, -2, -2)
+    GD.Print(b.Size);     // Imprime (12, 8, 6)
 
 
 

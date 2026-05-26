@@ -14,9 +14,9 @@ RenderSceneDataRD
 描述
 ----
 
-Object holds scene data related to rendering a single frame of a viewport. See also :ref:`RenderSceneData<class_RenderSceneData>`, :ref:`RenderData<class_RenderData>`, and :ref:`RenderDataRD<class_RenderDataRD>`.
+对象保存与渲染视口的单个帧相关的场景数据。另见 :ref:`RenderSceneData<class_RenderSceneData>`\ 、\ :ref:`RenderData<class_RenderData>` 和 :ref:`RenderDataRD<class_RenderDataRD>`\ 。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 这是一个内部渲染服务器对象。不要从脚本中实例化该类。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -196,7 +196,7 @@ Si es ``true``, el color de tinte se utilizará para teñir el marco.
 - |void| **set_title**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_title**\ (\ )
 
-Title of the frame.
+Título del marco.
 
 .. rst-class:: classref-section-separator
 

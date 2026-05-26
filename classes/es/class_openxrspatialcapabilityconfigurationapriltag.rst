@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationAprilTag
 
 **Hereda:** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for April tag markers.
+Encabezado de configuración para marcadores AprilTag.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Configuration header for April tag markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect April tags.
+Encabezado de configuración para marcadores April tag. Pasa esto a :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` para crear un contexto espacial que pueda detectar AprilTags.
 
 .. rst-class:: classref-reftable-group
 
@@ -63,7 +63,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_16H5** = ``1``
 
-4 by 4 bits, minimum Hamming distance between any two codes = 5, 30 codes.
+4 por 4 bits, distancia de Hamming mínima entre dos códigos cualesquiera = 5, 30 códigos.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_25H9:
 
@@ -71,7 +71,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_25H9** = ``2``
 
-5 by 5 bits, minimum Hamming distance between any two codes = 9, 35 codes.
+5 por 5 bits, distancia de Hamming mínima entre dos códigos cualesquiera = 9, 35 códigos.
 
 .. _class_OpenXRSpatialCapabilityConfigurationAprilTag_constant_APRIL_TAG_DICT_36H10:
 
@@ -87,7 +87,7 @@ enum **AprilTagDict**: :ref:`🔗<enum_OpenXRSpatialCapabilityConfigurationApril
 
 :ref:`AprilTagDict<enum_OpenXRSpatialCapabilityConfigurationAprilTag_AprilTagDict>` **APRIL_TAG_DICT_36H11** = ``4``
 
-6 by 6 bits, minimum Hamming distance between any two codes = 11, 587 codes.
+6 por 6 bits, distancia de Hamming mínima entre dos códigos cualesquiera = 11, 587 códigos.
 
 .. rst-class:: classref-section-separator
 
@@ -128,9 +128,9 @@ Descripciones de Métodos
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationAprilTag_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+Devuelve los componentes habilitados por esta configuración.
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **Nota:** Solo válido después de que esta configuración se haya utilizado para crear un contexto espacial.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

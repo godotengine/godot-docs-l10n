@@ -63,7 +63,7 @@ LookAtModifier3D
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`Axis<enum_Vector3_Axis>`                      | :ref:`primary_rotation_axis<class_LookAtModifier3D_property_primary_rotation_axis>`                         | ``1``                |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`relative<class_LookAtModifier3D_property_relative>`                                                   | ``true``             |
+   | :ref:`bool<class_bool>`                             | :ref:`relative<class_LookAtModifier3D_property_relative>`                                                   | ``false``            |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`float<class_float>`                           | :ref:`secondary_damp_threshold<class_LookAtModifier3D_property_secondary_damp_threshold>`                   |                      |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
@@ -476,14 +476,16 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 .. rst-class:: classref-property
 
-:ref:`bool<class_bool>` **relative** = ``true`` :ref:`🔗<class_LookAtModifier3D_property_relative>`
+:ref:`bool<class_bool>` **relative** = ``false`` :ref:`🔗<class_LookAtModifier3D_property_relative>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-Относительная опция. Если ``true``, вращение применяется относительно позы. Если ``false``, вращение применяется относительно всего остального. Это означает замену текущей позы результатом **LookAtModifier3D**.
+Относительная опция. Если ``true``, вращение применяется относительно позы. Если ``false``, вращение применяется относительно остальных. Это означает замену текущей позы результатом **LookAtModifier3D**.
+
+\ **Примечание:** Эта опция влияет на базовый угол для :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>`, в отличие от :ref:`JointLimitation3D<class_JointLimitation3D>` в :ref:`IterateIK3D<class_IterateIK3D>`. Поскольку **LookAtModifier3D** в значительной степени опирается на вращение Эйлера, ось, определяющая ограничение, и фактическое вращение тесно связаны.
 
 .. rst-class:: classref-item-separator
 
@@ -657,9 +659,9 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 
 Если ``true``, ограничивается величина вращения. Например, это помогает предотвратить вращение шеи персонажа на 360 градусов.
 
-\ **Примечание:** Как и в случае смешивания :ref:`AnimationTree<class_AnimationTree>`, предоставляется интерполяция, которая отдаёт предпочтение :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`. Это означает, что в некоторых случаях интерполяция не выбирает кратчайший путь.
+\ **Примечание:** Как и в случае с :ref:`AnimationTree<class_AnimationTree>`, предоставляется интерполяция, которая отдает предпочтение :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` или :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>` в зависимости от параметра :ref:`relative<class_LookAtModifier3D_property_relative>`. Это означает, что в некоторых случаях интерполяция не выбирает кратчайший путь.
 
-\ **Примечание:** Некоторые значения :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` (например, :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>` и :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`) могут превышать ограничения. Если интерполяция происходит с превышением ограничений, результат может не учитывать опору кости.
+\ **Примечание:** Некоторые значения для :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` (такие как :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`, :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>` и :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`) могут превышать ограничения. Если интерполяция происходит при превышении ограничений, результат может не соответствовать положению кости.
 
 .. rst-class:: classref-item-separator
 

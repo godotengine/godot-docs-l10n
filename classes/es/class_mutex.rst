@@ -78,9 +78,9 @@ Locks this **Mutex**, blocks until it is unlocked by the current owner.
 
 :ref:`bool<class_bool>` **try_lock**\ (\ ) :ref:`🔗<class_Mutex_method_try_lock>`
 
-Tries locking this **Mutex**, but does not block. Returns ``true`` on success, ``false`` otherwise.
+Intenta bloquear este **Mutex** sin bloquear el hilo. Devuelve ``true`` si se logra adquirir el mutex y ``false`` en caso contrario.
 
-\ **Note:** This function returns ``true`` if the thread already has ownership of the mutex.
+\ **Nota:** Esta función también devuelve ``true`` si el hilo ya posee el mutex.
 
 .. rst-class:: classref-item-separator
 

@@ -94,7 +94,7 @@ Guarda un certificado en la ``path`` indicada (debe ser un archivo "\*.crt").
 
 :ref:`String<class_String>` **save_to_string**\ (\ ) :ref:`🔗<class_X509Certificate_method_save_to_string>`
 
-Devuelve una representación de cadena del certificado o una cadena vacía si el certificado no es válido.
+Devuelve una representación de string del certificado o una string vacía si el certificado no es válido.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

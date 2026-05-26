@@ -16,7 +16,7 @@ SkeletonModification2DCCDIK
 描述
 ----
 
-这种 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 使用的是名为循环坐标下降逆向运动学（Cyclic Coordinate Descent Inverse Kinematics）的算法，即 CCDIK，能够对 :ref:`Skeleton2D<class_Skeleton2D>` 中的一条骨骼链进行操作，从而抵达指定的目标。
+这种 :ref:`SkeletonModification2D<class_SkeletonModification2D>` 使用的是名为循环坐标下降反向动力学（Cyclic Coordinate Descent Inverse Kinematics）的算法，即 CCDIK，能够对 :ref:`Skeleton2D<class_Skeleton2D>` 中的一条骨骼链进行操作，从而抵达指定的目标。
 
 CCDIK 的工作原理是让一组骨骼围绕单一轴旋转，这组骨骼通常称作“骨骼链”。每根骨骼的尖端都会转向目标（默认），这样整条骨骼链就能够正确旋转，从而抵达目标。因为这些骨骼都只围绕单一轴进行旋转，CCDIK 看起来\ *能够*\ 比其他 IK 解算器更加机械。
 

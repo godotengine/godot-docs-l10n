@@ -290,9 +290,9 @@ PackedVector3Array
 
 :ref:`Vector3<class_Vector3>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedVector3Array_method_get>`
 
-Returns the :ref:`Vector3<class_Vector3>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Vector3(0, 0, 0)``.
+返回数组中索引为 ``index`` 的 :ref:`Vector3<class_Vector3>`\ 。如果 ``index`` 越界或为负数，则该方法失败并返回 ``Vector3(0, 0, 0)``\ 。
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+该方法类似于 ``[]`` 运算符（但不等价）。最显著的区别就是从编辑器中运行时，该方法失败不会暂停项目运行。
 
 .. rst-class:: classref-item-separator
 

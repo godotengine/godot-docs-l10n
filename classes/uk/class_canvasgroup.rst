@@ -107,7 +107,7 @@ CanvasGroup
 - |void| **set_use_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_mipmaps**\ (\ )
 
-Якщо ``true``, перед малюванням **CanvasGroup** розраховує mipmaps для заднього буфера, щоб можна було використовувати mipmaps у спеціальному :ref:`ShaderMaterial<class_ShaderMaterial>`, прикріпленому до **CanvasGroup**. Створення MIP-карт має низьку продуктивність, тому її не слід вмикати, якщо це не потрібно.
+Якщо ``true``, перед малюванням **CanvasGroup** обчислюються міп-мапи для буфера відтворення, щоб їх можна було використовувати у власному :ref:`ShaderMaterial<class_ShaderMaterial>`, приєднаному до **CanvasGroup**. Створення міп-мап знижує продуктивність, тому цю опцію слід вмикати лише за необхідності.
 
 .. |virtual| replace:: :abbr:`virtual (Зазвичай, цей метод перевизначається користувачем, щоб він мав вплив.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

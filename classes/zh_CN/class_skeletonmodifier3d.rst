@@ -227,7 +227,7 @@ enum **SecondaryDirection**: :ref:`🔗<enum_SkeletonModifier3D_SecondaryDirecti
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_NONE** = ``0``
 
-Enumerated value for the case when the axis is undefined.
+当轴未定义时对应的枚举值。
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_X:
 
@@ -283,7 +283,7 @@ Enumerated value for the case when the axis is undefined.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_CUSTOM** = ``7``
 
-Enumerated value for an optional axis.
+可选轴对应的枚举值。
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ enum **RotationAxis**: :ref:`🔗<enum_SkeletonModifier3D_RotationAxis>`
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_CUSTOM** = ``4``
 
-Enumerated value for an optional rotation axis.
+可选旋转轴对应的枚举值。
 
 .. rst-class:: classref-section-separator
 
@@ -407,13 +407,13 @@ Enumerated value for an optional rotation axis.
 
 |void| **_process_modification_with_delta**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__process_modification_with_delta>`
 
-Override this virtual method to implement a custom skeleton modifier. You should do things like get the :ref:`Skeleton3D<class_Skeleton3D>`'s current pose and apply the pose here.
+覆盖该虚方法可以实现自定义骨架修改器。你应该在这里执行获取 :ref:`Skeleton3D<class_Skeleton3D>` 的当前姿势、应用姿势之类的操作。
 
-\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` must not apply :ref:`influence<class_SkeletonModifier3D_property_influence>` to bone poses because the :ref:`Skeleton3D<class_Skeleton3D>` automatically applies influence to all bone poses set by the modifier.
+\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` 不得将 :ref:`influence<class_SkeletonModifier3D_property_influence>` 应用于骨骼姿势，因为 :ref:`Skeleton3D<class_Skeleton3D>` 会自动将影响应用于修改器设置的所有骨骼姿势。
 
-\ ``delta`` is passed from parent :ref:`Skeleton3D<class_Skeleton3D>`. See also :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
+\ ``delta`` 是由父级 :ref:`Skeleton3D<class_Skeleton3D>` 传入的。另见 :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`\ 。
 
-\ **Note:** This method may be called outside :ref:`Node._process()<class_Node_private_method__process>` and :ref:`Node._physics_process()<class_Node_private_method__physics_process>` with ``delta`` is ``0.0``, since the modification should be processed immediately after initialization of the :ref:`Skeleton3D<class_Skeleton3D>`.
+\ **注意：**\ 该方法可以在 :ref:`Node._process()<class_Node_private_method__process>` 和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 之外调用，\ ``delta`` 为 ``0.0``\ ，因为修改应该在 :ref:`Skeleton3D<class_Skeleton3D>` 初始化之后立即处理。
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Override this virtual method to implement a custom skeleton modifier. You should
 
 |void| **_validate_bone_names**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__validate_bone_names>`
 
-Called when bone names and indices need to be validated, such as when entering the scene tree or changing skeleton.
+在骨骼名称和索引需要验证时调用，例如进入场景树时或更改骨架时。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Called when bone names and indices need to be validated, such as when entering t
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonModifier3D_method_get_skeleton>`
 
-Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node if it exists. Otherwise, returns ``null``.
+如果存在父级 :ref:`Skeleton3D<class_Skeleton3D>` 节点则将其返回。否则，返回 ``null``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -7,14 +7,14 @@ InputEventScreenTouch
 
 **Hereda:** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a screen touch event.
+Representa un evento de toque de pantalla.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Stores information about multi-touch press/release input events. Supports touch press, touch release and :ref:`index<class_InputEventScreenTouch_property_index>` for multi-touch count and order.
+Almacena información de presión/liberación multitáctil. Soporta presión táctil, liberación táctil y :ref:`index<class_InputEventScreenTouch_property_index>` para el conteo y el orden multitáctil.
 
 .. rst-class:: classref-introduction-group
 
@@ -63,7 +63,7 @@ Descripciones de Propiedades
 - |void| **set_canceled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_canceled**\ (\ )
 
-If ``true``, the touch event has been canceled.
+Si es ``true``, el evento táctil ha sido cancelado.
 
 .. rst-class:: classref-item-separator
 
@@ -80,7 +80,7 @@ If ``true``, the touch event has been canceled.
 - |void| **set_double_tap**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_double_tap**\ (\ )
 
-If ``true``, the touch's state is a double tap.
+Si es ``true``, el estado del toque es un doble toque.
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ El índice táctil en el caso de un evento multitáctil. Un índice = un dedo.
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-The touch position in the viewport the node is in, using the coordinate system of this viewport.
+La posición del toque en la ventanilla donde se encuentra el nodo, usando el sistema de coordenadas de esta ventanilla.
 
 .. rst-class:: classref-item-separator
 

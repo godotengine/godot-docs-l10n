@@ -823,7 +823,7 @@ flags **ImageUpdateMask**: :ref:`🔗<enum_RichTextLabel_ImageUpdateMask>`
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用于断行和文本塑形算法的语言代码。如果留空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -2077,7 +2077,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 |void| **push_strikethrough**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_strikethrough>`
 
-Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>` is used.
+添加一个 ``[s]`` 标签到标签栈。如果 ``color`` 的 Alpha 值是 ``0.0``\ ，则会使用当前字体的颜色并将其 Alpha 值与 :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -2101,7 +2101,7 @@ Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the 
 
 |void| **push_underline**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_underline>`
 
-Adds a ``[u]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>` is used.
+添加一个 ``[u]`` 标签到标签栈。如果 ``color`` 的 Alpha 值是 ``0.0``\ ，则会使用当前字体的颜色并将其 Alpha 值与 :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>` 相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -2406,7 +2406,7 @@ Adds a ``[u]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the 
 
 :ref:`int<class_int>` **paragraph_separation** = ``0`` :ref:`🔗<class_RichTextLabel_theme_constant_paragraph_separation>`
 
-行与行之间的额外纵向留白（单位为像素），留白会被添加到上一行之后。该值可以为负数。
+段落与段落之间的额外纵向留白（单位为像素），留白会被添加到上一行之后。该值可以为负数。
 
 .. rst-class:: classref-item-separator
 
@@ -2658,7 +2658,7 @@ Adds a ``[u]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the 
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_RichTextLabel_theme_style_focus>`
 
-该 **RichTextLabel** 处于聚焦状态时使用的背景。\ :ref:`focus<class_RichTextLabel_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+该 **RichTextLabel** 处于聚焦状态时使用的背景。\ :ref:`focus<class_RichTextLabel_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 

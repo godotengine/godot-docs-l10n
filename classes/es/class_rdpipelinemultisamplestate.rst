@@ -75,7 +75,7 @@ Si es ``true``, se habilita la cobertura alfa. Esto genera un valor de cobertura
 - |void| **set_enable_alpha_to_one**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_enable_alpha_to_one**\ (\ )
 
-If ``true``, alpha is forced to either ``0.0`` or ``1.0``. This allows hardening the edges of antialiased alpha transparencies. Only relevant if :ref:`enable_alpha_to_coverage<class_RDPipelineMultisampleState_property_enable_alpha_to_coverage>` is ``true``.
+Si es ``true``, el alfa se fuerza a ``0.0`` o ``1.0``. Esto permite endurecer los bordes de las transparencias alfa antialiasing. Solo es relevante si :ref:`enable_alpha_to_coverage<class_RDPipelineMultisampleState_property_enable_alpha_to_coverage>` es ``true``.
 
 .. rst-class:: classref-item-separator
 

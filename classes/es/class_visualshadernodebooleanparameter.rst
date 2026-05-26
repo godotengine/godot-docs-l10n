@@ -14,7 +14,7 @@ Un parámetro booleano para ser usado dentro del gráfico de shader visual.
 Descripción
 ----------------------
 
-Traducido a ``uniform bool`` uniforme en el lenguaje de los shaders.
+Traducido a ``uniform bool`` en el lenguaje de los shaders.
 
 .. rst-class:: classref-reftable-group
 

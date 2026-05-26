@@ -14,11 +14,11 @@ WebSocket 连接。
 描述
 ----
 
-This class represents WebSocket connection, and can be used as a WebSocket client (`RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__-compliant) or as a remote peer of a WebSocket server.
+这个类代表 WebSocket 连接，可以用作 WebSocket 客户端（兼容 `RFC 6455 <https://datatracker.ietf.org/doc/html/rfc6455>`__\ ），也可以用作 WebSocket 服务器的远程对等端。
 
-You can send WebSocket binary frames using :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`, and WebSocket text frames using :ref:`send()<class_WebSocketPeer_method_send>` (prefer text frames when interacting with text-based API). You can check the frame type of the last packet via :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>`.
+发送 WebSocket 二进制帧请使用 :ref:`PacketPeer.put_packet()<class_PacketPeer_method_put_packet>`\ ，发送 WebSocket 文本帧请使用 :ref:`send()<class_WebSocketPeer_method_send>`\ （与基于文本的 API 交互时请优先选择文本帧）。可以通过 :ref:`was_string_packet()<class_WebSocketPeer_method_was_string_packet>` 检查最近一个数据包的帧类型。
 
-To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`, then regularly call :ref:`poll()<class_WebSocketPeer_method_poll>` (e.g. during :ref:`Node<class_Node>` process). You can query the socket state via :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`, get the number of pending packets using :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`, and retrieve them via :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`.
+开启 WebSocket 客户端的方法是：首先调用 :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>`\ ，然后定期调用 :ref:`poll()<class_WebSocketPeer_method_poll>`\ （例如在 :ref:`Node<class_Node>` 的处理过程中）。查询套接字的状态请使用 :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>`\ ，获取挂起的数据包数量请使用 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ ，获取挂起的数据包请使用 :ref:`PacketPeer.get_packet()<class_PacketPeer_method_get_packet>`\ 。
 
 
 .. tabs::
@@ -37,19 +37,19 @@ To start a WebSocket client, first call :ref:`connect_to_url()<class_WebSocketPe
         var state = socket.get_ready_state()
         if state == WebSocketPeer.STATE_OPEN:
             while socket.get_available_packet_count():
-                print("Packet: ", socket.get_packet())
+                print("数据包：", socket.get_packet())
         elif state == WebSocketPeer.STATE_CLOSING:
-            # Keep polling to achieve proper close.
+            # 继续轮询才能正确关闭。
             pass
         elif state == WebSocketPeer.STATE_CLOSED:
             var code = socket.get_close_code()
             var reason = socket.get_close_reason()
-            print("WebSocket closed with code: %d, reason %s. Clean: %s" % [code, reason, code != -1])
-            set_process(false) # Stop processing.
+            print("WebSocket 已关闭，代码：%d，原因 %s。干净得体：%s" % [code, reason, code != -1])
+            set_process(false) # 停止处理。
 
 
 
-To use the peer as part of a WebSocket server refer to :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` and the online tutorial.
+如果要作为 WebSocket 服务器的对等端使用，请参考 :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` 及在线教程。
 
 .. rst-class:: classref-reftable-group
 
@@ -178,7 +178,7 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 
 :ref:`State<enum_WebSocketPeer_State>` **STATE_CLOSING** = ``2``
 
-连接正在关闭过程中。这意味着已经向远程对等体发送了关闭请求，但还没有收到确认。
+连接正在关闭过程中。这意味着已经向远程对等端发送了关闭请求，但还没有收到确认。
 
 .. _class_WebSocketPeer_constant_STATE_CLOSED:
 
@@ -229,7 +229,7 @@ enum **State**: :ref:`🔗<enum_WebSocketPeer_State>`
 - |void| **set_heartbeat_interval**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_heartbeat_interval**\ (\ )
 
-对等体自动发送 WebSocket“ping”控制帧的间隔（单位为秒）。设为 ``0`` 时不会发送“ping”控制帧。
+对等端自动发送 WebSocket“ping”控制帧的间隔（单位为秒）。设为 ``0`` 时不会发送“ping”控制帧。
 
 \ **注意：**\ 由于浏览器的限制，在 Web 导出中无效。
 
@@ -318,7 +318,7 @@ WebSocket 握手期间允许的 WebSocket 子协议。
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`\ ) :ref:`🔗<class_WebSocketPeer_method_accept_stream>`
 
-以 WebSocket 服务器的名义，接受正在执行 HTTP 握手的对等体连接。\ ``stream`` 必须是从 :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>` 获取的有效 TCP 流，或者是从 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 接受的 TLS 流。
+以 WebSocket 服务器的名义，接受正在执行 HTTP 握手的对等端连接。\ ``stream`` 必须是从 :ref:`TCPServer.take_connection()<class_TCPServer_method_take_connection>` 获取的有效 TCP 流，或者是从 :ref:`StreamPeerTLS.accept_stream()<class_StreamPeerTLS_method_accept_stream>` 接受的 TLS 流。
 
 \ **注意：**\ 由于浏览器的限制，Web 导出中不支持此方法。
 
@@ -332,15 +332,15 @@ WebSocket 握手期间允许的 WebSocket 子协议。
 
 |void| **close**\ (\ code\: :ref:`int<class_int>` = 1000, reason\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_WebSocketPeer_method_close>`
 
-Closes this WebSocket connection.
+关闭该 WebSocket 连接。
 
-\ ``code`` is the status code for the closure (see `RFC 6455 section 7.4 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__ for a list of valid status codes). If ``code`` is negative, the connection will be closed immediately without notifying the remote peer.
+\ ``code`` 是关闭的状态码（有效状态代码的列表见 `RFC 6455 第 7.4 节 <https://datatracker.ietf.org/doc/html/rfc6455#section-7.4.1>`__\ ）。如果 ``code`` 为负数，则连接会立即关闭而不通知远程对等端。
 
-\ ``reason`` is the human-readable reason for closing the connection. It can be any UTF-8 string that's smaller than 123 bytes.
+\ ``reason`` 是人类可读的关闭连接原因。可以是任何小于 123 字节的 UTF-8 字符串。
 
-\ **Note:** To achieve a clean closure, you will need to keep polling until :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` is reached.
+\ **注意：**\ 为了实现干净得体的关闭，你需要在达到 :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>` 之前保持轮询。
 
-\ **Note:** The Web export might not support all status codes. Please refer to browser-specific documentation for more details.
+\ **注意：**\ Web 导出可能不支持部分状态码。详情请参考具体浏览器的文档。
 
 .. rst-class:: classref-item-separator
 
@@ -354,7 +354,7 @@ Closes this WebSocket connection.
 
 连接到给定的 URL。使用 ``wss://`` 协议连接时会校验 TLS 证书与主机名。传入可选的 ``tls_client_options`` 参数可以自定义信任的证书颁发机构，也可以禁用通用名校验。见 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
-\ **注意：**\ 该方法不会阻塞，只要提供的参数有效且对等体不处于无效状态（例如已连接）就会在建立连接前返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。要检测连接成功还是失败，请定期调用 :ref:`poll()<class_WebSocketPeer_method_poll>`\ （例如在 :ref:`Node<class_Node>` 的处理方法中）并检查 :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>` 的结果。
+\ **注意：**\ 该方法不会阻塞，只要提供的参数有效且对等端不处于无效状态（例如已连接）就会在建立连接前返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。要检测连接成功还是失败，请定期调用 :ref:`poll()<class_WebSocketPeer_method_poll>`\ （例如在 :ref:`Node<class_Node>` 的处理方法中）并检查 :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>` 的结果。
 
 \ **注意：**\ 为了避免 Web 中的混合内容警告或错误，你可能需要使用以 ``wss://``\ （安全）开头的 ``url`` 而不是 ``ws://``\ 。采用这种做法时，请确保使用与服务器 TLS 证书相匹配的主机域名全称。\ ``wss://`` 连接请勿直接使用 IP 地址连接，因为不会与 TLS 证书匹配。
 
@@ -392,7 +392,7 @@ Closes this WebSocket connection.
 
 :ref:`String<class_String>` **get_connected_host**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_connected_host>`
 
-返回已连接对等体的 IP 地址。
+返回已连接对等端的 IP 地址。
 
 \ **注意：**\ 在 Web 导出中不可用。
 
@@ -406,7 +406,7 @@ Closes this WebSocket connection.
 
 :ref:`int<class_int>` **get_connected_port**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_connected_port>`
 
-返回已连接对等体的远程端口。
+返回已连接对等端的远程端口。
 
 \ **注意：**\ 在 Web 导出中不可用。
 
@@ -444,7 +444,7 @@ Closes this WebSocket connection.
 
 :ref:`String<class_String>` **get_requested_url**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_requested_url>`
 
-返回该对等体请求的 URL。该 URL 由传给 :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>` 的 ``url`` 得出，作为服务器时则从 HTTP 标头获取（即使用 :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` 时）。
+返回该对等端请求的 URL。该 URL 由传给 :ref:`connect_to_url()<class_WebSocketPeer_method_connect_to_url>` 的 ``url`` 得出，作为服务器时则从 HTTP 标头获取（即使用 :ref:`accept_stream()<class_WebSocketPeer_method_accept_stream>` 时）。
 
 .. rst-class:: classref-item-separator
 

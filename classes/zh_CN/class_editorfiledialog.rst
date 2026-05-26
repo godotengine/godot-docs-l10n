@@ -85,7 +85,7 @@ EditorFileDialog
 
 **已弃用：** This feature is no longer supported.
 
-This method is kept for compatibility and does nothing. As an alternative, you can display another dialog after showing the file dialog.
+该方法仅为保持兼容性而保留，不执行任何操作。作为替代方案，你可以在显示文件对话框后显示另一个对话框。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

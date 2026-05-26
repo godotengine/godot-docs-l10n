@@ -265,7 +265,7 @@ Inicia el servidor abriendo un socket UDP que escucha en el ``port`` dado. Opcio
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll**\ (\ ) :ref:`🔗<class_UDPServer_method_poll>`
 
-Llama a este método a intervalos regulares (p. ej., dentro de :ref:`Node._process()<class_Node_private_method__process>`) para procesar nuevos paquetes. Cualquier paquete de un par dirección/puerto conocido se entregará al :ref:`PacketPeerUDP<class_PacketPeerUDP>` apropiado, mientras que cualquier paquete recibido de un par dirección/puerto desconocido se añadirá como una conexión pendiente (consulta :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>` y :ref:`take_connection()<class_UDPServer_method_take_connection>`). El número máximo de conexiones pendientes se define mediante :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>`.
+Llama a este método a intervalos regulares (p. ej., dentro de :ref:`Node._process()<class_Node_private_method__process>`) para procesar nuevos paquetes. Cualquier paquete de un par dirección/puerto conocido se entregará al :ref:`PacketPeerUDP<class_PacketPeerUDP>` apropiado, mientras que cualquier paquete recibido de un par dirección/puerto desconocido se añadirá como una conexión pendiente (véase :ref:`is_connection_available()<class_UDPServer_method_is_connection_available>` y :ref:`take_connection()<class_UDPServer_method_take_connection>`). El número máximo de conexiones pendientes se define mediante :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>`.
 
 .. rst-class:: classref-item-separator
 

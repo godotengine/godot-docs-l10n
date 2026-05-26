@@ -348,6 +348,8 @@ TextServer
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                            | :ref:`shaped_get_run_font_size<class_TextServer_method_shaped_get_run_font_size>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                          |
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                  | :ref:`shaped_get_run_glyph_range<class_TextServer_method_shaped_get_run_glyph_range>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                      |
+   +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`shaped_get_run_language<class_TextServer_method_shaped_get_run_language>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                            |
    +------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`                                    | :ref:`shaped_get_run_object<class_TextServer_method_shaped_get_run_object>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const|                                                                                                                                                                                                                                                                                |
@@ -1082,7 +1084,7 @@ flags **TextOverrunFlag**: :ref:`🔗<enum_TextServer_TextOverrunFlag>`
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_SHORT_STRING_ELLIPSIS** = ``32``
 
-Determines whether the ellipsis should be added regardless of the string length, otherwise it is added only if the string is 6 characters or longer.
+决定是否无论字符串长度如何都应添加省略号，否则仅当字符串长度为 6 个字符或更长时才添加省略号。
 
 .. rst-class:: classref-item-separator
 
@@ -1963,7 +1965,7 @@ enum **FixedSizeScaleMode**: :ref:`🔗<enum_TextServer_FixedSizeScaleMode>`
 
 **已弃用：** Use :ref:`Viewport<class_Viewport>` oversampling, or the ``oversampling`` argument of the ``draw_*`` methods instead.
 
-This method does nothing and always returns ``1.0``.
+该方法不执行任何操作，并且始终返回 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2537,7 +2539,7 @@ This method does nothing and always returns ``1.0``.
 
 :ref:`bool<class_bool>` **font_is_language_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, language\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_language_supported>`
 
-Returns ``true`` if the font supports the given language (as a `ISO 639 <https://en.wikipedia.org/wiki/ISO_639-1>`__ code).
+如果该字体支持给定的语言（以 `ISO 639 <https://zh.wikipedia.org/wiki/ISO_639-1>`__ 码），则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2549,7 +2551,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+如果绘制字体彩色字形时应用了颜色调制，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2573,7 +2575,7 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 :ref:`bool<class_bool>` **font_is_script_supported**\ (\ font_rid\: :ref:`RID<class_RID>`, script\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_font_is_script_supported>`
 
-Returns ``true`` if the font supports the given script (as a `ISO 15924 <https://en.wikipedia.org/wiki/ISO_15924>`__ code).
+如果该字体支持给定的文字（以 `ISO 15924 <https://zh.wikipedia.org/wiki/ISO_15924>`__ 码），则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3253,9 +3255,9 @@ Returns ``true`` if the font supports the given script (as a `ISO 15924 <https:/
 
 **已弃用：** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+将数字从西阿拉伯数字（0..9）转换为给定 ``language`` 中使用的记数系统。
 
-If ``language`` is an empty string, the active locale will be used.
+如果 ``language`` 为空字符串，则会使用激活的区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -3403,7 +3405,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+如果区域设置需要文本服务器支持数据以进行断行、断词，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3469,7 +3471,7 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`int<class_int>` **name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_TextServer_method_name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+将给定的特性、变体、文字、语言的可读名称转换为 OpenType 标记。
 
 .. rst-class:: classref-item-separator
 
@@ -3483,9 +3485,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **已弃用：** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+将 ``number`` 从给定 ``language`` 所使用的记数系统转换为西阿拉伯数字（0..9）。
 
-If ``language`` is an empty string, the active locale will be used.
+如果 ``language`` 为空字符串，则会使用激活的区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -3511,9 +3513,9 @@ BiDi 算法覆盖函数的默认实现。
 
 **已弃用：** Use :ref:`TranslationServer.get_percent_sign()<class_TranslationServer_method_get_percent_sign>` instead.
 
-Returns the percent sign used in the given ``language``.
+返回给定语言 ``language`` 中使用的百分号。
 
-If ``language`` is an empty string, the active locale will be used.
+如果 ``language`` 是空字符串，则会使用激活的区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -3576,6 +3578,18 @@ If ``language`` is an empty string, the active locale will be used.
 :ref:`int<class_int>` **shaped_get_run_font_size**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_font_size>`
 
 返回索引为 ``index`` 的文本行程（按显示顺序）的字体大小。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextServer_method_shaped_get_run_glyph_range:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_get_run_glyph_range>`
+
+Returns the glyph range of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -3795,7 +3809,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`RID<class_RID>` **shaped_text_duplicate**\ (\ rid\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_TextServer_method_shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+复制塑形文本缓冲区。
 
 .. rst-class:: classref-item-separator
 
@@ -4233,7 +4247,7 @@ Duplicates shaped text buffer.
 
 :ref:`bool<class_bool>` **shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextServer_method_shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+如果该塑形文本缓冲区中嵌入了具有 ``key`` 的对象，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4572,11 +4586,11 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`String<class_String>` **string_to_lower**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_lower>`
 
-Returns the string converted to ``lowercase``.
+返回转换为 ``lowercase`` 的字符串。
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **注意：**\ 如果服务器支持 :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` 特性（由 :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持），则大小写取决于区域设置和上下文敏感。
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **注意：**\ 结果可能比原字符更长，也可能更短。
 
 .. rst-class:: classref-item-separator
 
@@ -4588,11 +4602,11 @@ Returns the string converted to ``lowercase``.
 
 :ref:`String<class_String>` **string_to_title**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_title>`
 
-Returns the string converted to ``Title Case``.
+返回转换为 ``Title Case`` 的字符串。
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **注意：**\ 如果服务器支持 :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` 特性（由 :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持），则大小写取决于区域设置和上下文敏感。
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **注意：**\ 结果可能比原字符更长，也可能更短。
 
 .. rst-class:: classref-item-separator
 
@@ -4604,11 +4618,11 @@ Returns the string converted to ``Title Case``.
 
 :ref:`String<class_String>` **string_to_upper**\ (\ string\: :ref:`String<class_String>`, language\: :ref:`String<class_String>` = ""\ ) |const| :ref:`🔗<class_TextServer_method_string_to_upper>`
 
-Returns the string converted to ``UPPERCASE``.
+返回转换为 ``UPPERCASE`` 的字符串。
 
-\ **Note:** Casing is locale dependent and context sensitive if server support :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` feature (supported by :ref:`TextServerAdvanced<class_TextServerAdvanced>`).
+\ **注意：**\ 如果服务器支持 :ref:`FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION<class_TextServer_constant_FEATURE_CONTEXT_SENSITIVE_CASE_CONVERSION>` 特性（由 :ref:`TextServerAdvanced<class_TextServerAdvanced>` 支持），则大小写取决于区域设置和上下文敏感。
 
-\ **Note:** The result may be longer or shorter than the original.
+\ **注意：**\ 结果可能比原字符更长，也可能更短。
 
 .. rst-class:: classref-item-separator
 
@@ -4634,7 +4648,7 @@ Returns the string converted to ``UPPERCASE``.
 
 :ref:`String<class_String>` **tag_to_name**\ (\ tag\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextServer_method_tag_to_name>`
 
-Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
+将给定的 OpenType 标签转换为特性、变体、文字、语言的可读名称。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

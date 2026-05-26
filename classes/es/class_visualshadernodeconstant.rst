@@ -16,7 +16,7 @@ Un tipo base para las constantes dentro del gráfico de shader visual.
 Descripción
 ----------------------
 
-Esta es una clase abstracta. Consulta los tipos derivados para obtener descripciones de los valores posibles.
+Esta es una clase abstracta. Véase los tipos derivados para obtener descripciones de los valores posibles.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

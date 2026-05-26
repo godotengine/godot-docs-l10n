@@ -697,11 +697,11 @@ Y 轴的枚举值。由 :ref:`max_axis_index()<class_Vector2i_method_max_axis_in
 
 :ref:`Vector2<class_Vector2>` **operator /**\ (\ right\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Vector2i_operator_div_float>`
 
-Divides each component of the **Vector2i** by the given :ref:`float<class_float>`. Returns a :ref:`Vector2<class_Vector2>`.
+将该 **Vector2i** 的每个分量除以给定的 :ref:`float<class_float>`\ 。返回的是 :ref:`Vector2<class_Vector2>`\ 。
 
 ::
 
-    print(Vector2i(1, 2) / 2.5) # Prints (0.4, 0.8)
+    print(Vector2i(1, 2) / 2.5) # 输出 (0.4, 0.8)
 
 .. rst-class:: classref-item-separator
 

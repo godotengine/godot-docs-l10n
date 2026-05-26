@@ -113,7 +113,7 @@ Adjunto de profundidad. ATTACHMENT_UNUSED debe ser usado si no se requiere ning�
 - |void| **set_input_attachments**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_input_attachments**\ (\ )
 
-Utilizado para búferes de fotogramas multipase (más de un pase de renderizado). Convierte un adjunto en una entrada. Asegúrate de suministrarlo también correctamente en el :ref:`RDUniform<class_RDUniform>` para el conjunto uniforme.
+Utilizado para búferes de fotogramas multipase (más de un pase de renderizado). Convierte un adjunto en una entrada. Asegúrate de suministrarlo también correctamente en el :ref:`RDUniform<class_RDUniform>` para el conjunto de variables uniformes.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 

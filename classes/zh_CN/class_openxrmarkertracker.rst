@@ -9,14 +9,14 @@ OpenXRMarkerTracker
 
 **继承：** :ref:`OpenXRSpatialEntityTracker<class_OpenXRSpatialEntityTracker>` **<** :ref:`XRPositionalTracker<class_XRPositionalTracker>` **<** :ref:`XRTracker<class_XRTracker>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Spatial entity tracker for our spatial entity marker tracking extension.
+用于空间实体标记跟踪扩展的空间实体跟踪器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Spatial entity tracker for our OpenXR spatial entity marker tracking extension. These trackers identify entities in our real space detected by a visual marker such as a QRCode or Aruco code, and map their location to our virtual space.
+用于 OpenXR 空间实体标记跟踪扩展的空间实体跟踪器。这些跟踪器可以识别现实空间中由诸如二维码或 Aruco 码等视觉标记检测到的实体，并将它们的位置映射到虚拟空间。
 
 .. rst-class:: classref-reftable-group
 
@@ -68,7 +68,7 @@ Spatial entity tracker for our OpenXR spatial entity marker tracking extension. 
 - |void| **set_bounds_size**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_bounds_size**\ (\ )
 
-The bounds size for this marker.
+该标记的边界大小。
 
 .. rst-class:: classref-item-separator
 
@@ -85,7 +85,7 @@ The bounds size for this marker.
 - |void| **set_marker_id**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_marker_id**\ (\ )
 
-The marker ID for this marker, this is only returned for Aruco and April Tag markers. Call :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>` for QRCode markers.
+该标记的标记 ID，仅适用于 Aruco 和 AprilTag 标记。对于二维码标记，请调用 :ref:`get_marker_data()<class_OpenXRMarkerTracker_method_get_marker_data>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ The marker ID for this marker, this is only returned for Aruco and April Tag mar
 - |void| **set_marker_type**\ (\ value\: :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>`\ )
 - :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **get_marker_type**\ (\ )
 
-The type of marker.
+标记的类型。
 
 .. rst-class:: classref-section-separator
 
@@ -119,7 +119,7 @@ The type of marker.
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ ) |const| :ref:`🔗<class_OpenXRMarkerTracker_method_get_marker_data>`
 
-Returns the marker data for this marker. This can return a :ref:`String<class_String>` or :ref:`PackedByteArray<class_PackedByteArray>`. Only applicable to QR Code based markers.
+返回该标记的标记数据。可以返回 :ref:`String<class_String>` 或 :ref:`PackedByteArray<class_PackedByteArray>`\ 。仅适用于基于二维码的标记。
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ Returns the marker data for this marker. This can return a :ref:`String<class_St
 
 |void| **set_marker_data**\ (\ marker_data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_OpenXRMarkerTracker_method_set_marker_data>`
 
-Sets the marker data for this marker.
+设置该标记的标记数据。
 
-\ **Note:** This should only be set by marker discovery logic.
+\ **注意：**\ 该数据只能由标记发现逻辑设置。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

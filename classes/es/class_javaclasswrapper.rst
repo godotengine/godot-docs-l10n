@@ -7,16 +7,16 @@ JavaClassWrapper
 
 **Hereda:** :ref:`Object<class_Object>`
 
-Provides access to the Java Native Interface.
+Proporciona acceso a la Interfaz Nativa de Java.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-The JavaClassWrapper singleton provides a way for the Godot application to send and receive data through the `Java Native Interface <https://developer.android.com/training/articles/perf-jni>`__ (JNI).
+El singleton JavaClassWrapper proporciona una forma para que la aplicación de Godot envíe y reciba datos a través de la `Interfaz Nativa de Java <https://developer.android.com/training/articles/perf-jni>`__ (JNI).
 
-\ **Note:** This singleton is only available in Android builds.
+\ **Nota:** Este singleton solo está disponible en compilaciones de Android.
 
 ::
 
@@ -28,14 +28,14 @@ The JavaClassWrapper singleton provides a way for the Godot application to send 
 
     print(datetime.format(formatter))
 
-\ **Warning:** When calling Java methods, be sure to check :ref:`get_exception()<class_JavaClassWrapper_method_get_exception>` to check if the method threw an exception.
+\ **Advertencia:** Al llamar a métodos Java, asegúrate de verificar :ref:`get_exception()<class_JavaClassWrapper_method_get_exception>` para comprobar si el método lanzó una excepción.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
 
-- :doc:`Integrating with Android APIs <../tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin>`
+- :doc:`Integración con las API de Android <../tutorials/platform/android/javaclasswrapper_and_androidruntimeplugin>`
 
 .. rst-class:: classref-reftable-group
 
@@ -66,9 +66,9 @@ Descripciones de Métodos
 
 :ref:`JavaObject<class_JavaObject>` **get_exception**\ (\ ) :ref:`🔗<class_JavaClassWrapper_method_get_exception>`
 
-Returns the Java exception from the last call into a Java class. If there was no exception, it will return ``null``.
+Devuelve la excepción Java de la última llamada a una clase Java. Si no hubo ninguna excepción, devolverá ``null``.
 
-\ **Note:** This method only works on Android. On every other platform, this method will always return ``null``.
+\ **Nota:** Este método solo funciona en Android. En cualquier otra plataforma, este método siempre devolverá ``null``.
 
 .. rst-class:: classref-item-separator
 
@@ -80,18 +80,18 @@ Returns the Java exception from the last call into a Java class. If there was no
 
 :ref:`JavaClass<class_JavaClass>` **wrap**\ (\ name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_JavaClassWrapper_method_wrap>`
 
-Wraps a class defined in Java, and returns it as a :ref:`JavaClass<class_JavaClass>` :ref:`Object<class_Object>` type that Godot can interact with.
+Envuelve una clase definida en Java y la devuelve como un tipo :ref:`Object<class_Object>` :ref:`JavaClass<class_JavaClass>` con el que Godot puede interactuar.
 
-When wrapping inner (nested) classes, use ``$`` instead of ``.`` to separate them. For example, ``JavaClassWrapper.wrap("android.view.WindowManager$LayoutParams")`` wraps the **WindowManager.LayoutParams** class.
+Al envolver clases internas (anidadas), utiliza ``$`` en lugar de ``.`` para separarlas. Por ejemplo, ``JavaClassWrapper.wrap("android.view.WindowManager$LayoutParams")`` envuelve la clase **WindowManager.LayoutParams**.
 
-\ **Note:** To invoke a constructor, call a method with the same name as the class. For example:
+\ **Nota:** Para invocar un constructor, llama a un método con el mismo nombre que la clase. Por ejemplo:
 
 ::
 
     var Intent = JavaClassWrapper.wrap("android.content.Intent")
     var intent = Intent.Intent()
 
-\ **Note:** This method only works on Android. On every other platform, this method does nothing and returns an empty :ref:`JavaClass<class_JavaClass>`.
+\ **Nota:** Este método solo funciona en Android. En cualquier otra plataforma, este método no hace nada y devuelve una :ref:`JavaClass<class_JavaClass>` vacía.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

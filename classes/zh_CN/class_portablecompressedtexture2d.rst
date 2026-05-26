@@ -181,9 +181,9 @@ enum **CompressionMode**: :ref:`🔗<enum_PortableCompressedTexture2D_Compressio
 - |void| **set_keep_compressed_buffer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_keeping_compressed_buffer**\ (\ )
 
-If ``true``, when running in the editor, this texture will keep the source-compressed data in memory, allowing the data to persist after loading. Otherwise, the source-compressed data is lost after loading and the texture can't be re-saved.
+如果为 ``true``\ ，则在编辑器中运行时，该纹理会将源压缩数据保留在内存中，从而使数据在加载后仍然存在。否则，源压缩数据在加载后会丢失，并且纹理无法重新保存。
 
-\ **Note:** This property must be set before :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` for this to work.
+\ **注意：**\ 该属性必须在 :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` 之前设置才能生效。
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ If ``true``, when running in the editor, this texture will keep the source-compr
 - |void| **set_size_override**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_size_override**\ (\ )
 
-Allows overriding the texture's size (for 2D only).
+允许覆盖纹理大小（仅限 2D）。
 
 .. rst-class:: classref-section-separator
 
@@ -257,7 +257,7 @@ Allows overriding the texture's size (for 2D only).
 
 :ref:`bool<class_bool>` **is_keeping_all_compressed_buffers**\ (\ ) |static| :ref:`🔗<class_PortableCompressedTexture2D_method_is_keeping_all_compressed_buffers>`
 
-Returns ``true`` if the flag is overridden for all textures of this type.
+如果此类型的纹理的所有标志都被覆盖，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -269,9 +269,9 @@ Returns ``true`` if the flag is overridden for all textures of this type.
 
 |void| **set_basisu_compressor_params**\ (\ uastc_level\: :ref:`int<class_int>`, rdo_quality_loss\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PortableCompressedTexture2D_method_set_basisu_compressor_params>`
 
-Sets the compressor parameters for Basis Universal compression. See also the settings in :ref:`ResourceImporterTexture<class_ResourceImporterTexture>`.
+设置 Basis Universal 压缩的压缩器参数。另见 :ref:`ResourceImporterTexture<class_ResourceImporterTexture>` 中的设置。
 
-\ **Note:** This method must be called before :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` for this to work.
+\ **注意：**\ 该方法必须在 :ref:`create_from_image()<class_PortableCompressedTexture2D_method_create_from_image>` 之前调用才能生效。
 
 .. rst-class:: classref-item-separator
 
@@ -283,7 +283,7 @@ Sets the compressor parameters for Basis Universal compression. See also the set
 
 |void| **set_keep_all_compressed_buffers**\ (\ keep\: :ref:`bool<class_bool>`\ ) |static| :ref:`🔗<class_PortableCompressedTexture2D_method_set_keep_all_compressed_buffers>`
 
-If ``keep`` is ``true``, overrides the flag globally for all textures of this type. This is used primarily by the editor.
+如果 ``keep`` 为 ``true``\ ，则会全局覆盖所有此类纹理的标志。主要用于编辑器。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

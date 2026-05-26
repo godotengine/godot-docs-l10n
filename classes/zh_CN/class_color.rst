@@ -1391,9 +1391,9 @@ Color
 
 :ref:`float<class_float>` **a** = ``1.0`` :ref:`🔗<class_Color_property_a>`
 
-The color's alpha component, typically on the range of 0 to 1. A value of 0 means that the color is fully transparent. A value of 1 means that the color is fully opaque.
+颜色的 Alpha 分量，通常在 0 到 1 的范围内。取值为 0 表示颜色完全透明。取值为 1 表示颜色完全不透明。
 
-\ **Note:** The alpha channel is always stored with linear encoding, regardless of the encoding of the other color channels. The :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` and :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` methods do not affect the alpha channel.
+\ **注意：**\ Alpha 通道始终按照线性编码存储，与其他颜色通道如何编码无关。\ :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` 和 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` 等方法不影响 Alpha 通道。
 
 .. rst-class:: classref-item-separator
 
@@ -1631,18 +1631,18 @@ The color's alpha component, typically on the range of 0 to 1. A value of 0 mean
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<class_Color_property_a>` is set to 1.0.
+从通常介于 0.0 和 1.0 之间的 RGB 值构造一个 **Color**\ 。\ :ref:`a<class_Color_property_a>` 被设置为 1.0。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7) # Similar to `Color.from_rgba8(51, 255, 178, 255)`
+    var color = Color(0.2, 1.0, 0.7) # 类似于 `Color.from_rgba8(51, 255, 178, 255)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f); // Similar to `Color.Color8(51, 255, 178, 255)`
+    var color = new Color(0.2f, 1.0f, 0.7f); // 类似于 `Color.Color8(51, 255, 178, 255)`
 
 
 
@@ -1654,18 +1654,18 @@ Constructs a **Color** from RGB values, typically between 0.0 and 1.0. :ref:`a<c
 
 :ref:`Color<class_Color>` **Color**\ (\ r\: :ref:`float<class_float>`, g\: :ref:`float<class_float>`, b\: :ref:`float<class_float>`, a\: :ref:`float<class_float>`\ )
 
-Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
+从通常介于 0.0 和 1.0 之间的 RGBA 值构造一个 **Color**\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var color = Color(0.2, 1.0, 0.7, 0.8) # Similar to `Color.from_rgba8(51, 255, 178, 204)`
+    var color = Color(0.2, 1.0, 0.7, 0.8) # 类似于 `Color.from_rgba8(51, 255, 178, 204)`
 
  .. code-tab:: csharp
 
-    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // Similar to `Color.Color8(51, 255, 178, 255, 204)`
+    var color = new Color(0.2f, 1.0f, 0.7f, 0.8f); // 类似于 `Color.Color8(51, 255, 178, 255, 204)`
 
 
 
@@ -1848,9 +1848,9 @@ Constructs a **Color** from RGBA values, typically between 0.0 and 1.0.
 
 :ref:`float<class_float>` **get_luminance**\ (\ ) |const| :ref:`🔗<class_Color_method_get_luminance>`
 
-Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclusive). This is useful when determining light or dark color. Colors with a luminance smaller than 0.5 can be generally considered dark.
+将颜色的光照强度返回为一个介于 0.0 和 1.0（包含）之间的值。这在确定浅色或深色时很有用。亮度小于 0.5 的颜色通常可以认为是深色。
 
-\ **Note:** :ref:`get_luminance()<class_Color_method_get_luminance>` relies on the color using linear encoding to return an accurate relative luminance value. If the color uses the default nonlinear sRGB encoding, use :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` to convert it to linear encoding first.
+\ **注意：**\ :ref:`get_luminance()<class_Color_method_get_luminance>` 依赖于颜色使用线性编码，这样才能返回准确的相对亮度值。如果颜色使用默认的非线性 sRGB 编码，请先使用 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` 将其转换为线性编码。
 
 .. rst-class:: classref-item-separator
 
@@ -2080,9 +2080,9 @@ Returns the light intensity of the color, as a value between 0.0 and 1.0 (inclus
 
 :ref:`Color<class_Color>` **linear_to_srgb**\ (\ ) |const| :ref:`🔗<class_Color_method_linear_to_srgb>`
 
-Returns a copy of the color that is encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB>`__. This method requires the original color to use linear encoding. See also :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>` which performs the opposite operation.
+返回使用\ `非线性 sRGB 传递函数 <https://en.wikipedia.org/wiki/SRGB>`__\ 编码的颜色副本。该方法要求原始颜色使用线性编码。另见执行相反操作的 :ref:`srgb_to_linear()<class_Color_method_srgb_to_linear>`\ 。
 
-\ **Note:** The color's alpha channel (:ref:`a<class_Color_property_a>`) is not affected. The alpha channel is always stored with linear encoding, regardless of the color space of the other color channels.
+\ **注意：**\ 颜色的 Alpha 通道（\ :ref:`a<class_Color_property_a>`\ ）不受影响。Alpha 通道始终使用线性编码，与其他颜色通道所使用的色彩空间无关。
 
 .. rst-class:: classref-item-separator
 
@@ -2094,9 +2094,9 @@ Returns a copy of the color that is encoded using the `nonlinear sRGB transfer f
 
 :ref:`Color<class_Color>` **srgb_to_linear**\ (\ ) |const| :ref:`🔗<class_Color_method_srgb_to_linear>`
 
-Returns a copy of the color that uses linear encoding. This method requires the original color to be encoded using the `nonlinear sRGB transfer function <https://en.wikipedia.org/wiki/SRGB>`__. See also :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>` which performs the opposite operation.
+返回使用线性编码的颜色副本。该方法要求原始颜色使用\ `非线性 sRGB 传输函数 <https://en.wikipedia.org/wiki/SRGB>`__\ 进行编码。另见执行相反操作的 :ref:`linear_to_srgb()<class_Color_method_linear_to_srgb>`\ 。
 
-\ **Note:** The color's alpha channel (:ref:`a<class_Color_property_a>`) is not affected. The alpha channel is always stored with linear encoding, regardless of the color space of the other color channels.
+\ **注意：**\ 颜色的 Alpha 通道（\ :ref:`a<class_Color_property_a>`\ ）不受影响。Alpha 通道始终使用线性编码，与其他颜色通道所使用的色彩空间无关。
 
 .. rst-class:: classref-item-separator
 

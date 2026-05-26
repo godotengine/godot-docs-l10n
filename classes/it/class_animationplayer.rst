@@ -303,7 +303,7 @@ La chiave dell'animazione da riprodurre quando la scena è caricata.
 
 La chiave dell'animazione attualmente in gioco. Se nessuna animazione si sta riproducendo, il valore della proprietà è una stringa vuota. Cambiare questo valore non riavvia l'animazione. Vedi :ref:`play()<class_AnimationPlayer_method_play>`\ Per ulteriori informazioni sulla riproduzione delle animazioni.
 
-\ **Nota:** Nonostante questa proprietà appaia nell'Ispettore, non è pensata per essere modificata, e non è salvata nella scena. Questa proprietà è utilizzata principalmente per ottenere l'animazione attualmente in riproduzione, e internamente per le tracce di riproduzione di animazione. Per ulteriori informazioni, vedi :ref:`Animation<class_Animation>`.
+\ **Nota:** Nonostante questa proprietà appaia nell'Ispettore, non è pensata per essere modificata, e non è salvata nella scena. Questa proprietà è utilizzata principalmente per ottenere l'animazione attualmente in riproduzione, e internamente per le tracce di riproduzione animazioni. Per ulteriori informazioni, vedi :ref:`Animation<class_Animation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -817,7 +817,7 @@ Ripristina la sezione attuale. Non fa nulla se non è stata impostata una sezion
 
 Cerca l'animazione fino al punto ``seconds`` nel tempo (in secondi). Se ``update`` è ``true``, anche l'animazione viene aggiornata, altrimenti viene aggiornata in fase di processo. Gli eventi compresi tra il frame attuale e ``seconds`` vengono saltati.
 
-Se ``update_only`` è ``true``, le tracce di riproduzione di metodo/audio/animazione non verranno elaborate.
+Se ``update_only`` è ``true``, le tracce di riproduzione metodi/audio/animazioni non saranno elaborate.
 
 \ **Nota:** Cercare fino alla fine dell'animazione non emette :ref:`AnimationMixer.animation_finished<class_AnimationMixer_signal_animation_finished>`. Se si desidera saltare l'animazione ed emettere il segnale, usa :ref:`AnimationMixer.advance()<class_AnimationMixer_method_advance>`.
 
@@ -915,7 +915,7 @@ Interrompe l'animazione attualmente in riproduzione. La posizione di animazione 
 
 Se ``keep_state`` è ``true``, lo stato di animazione non è aggiornato visivamente.
 
-\ **Nota:** Le tracce di riproduzione metodo / audio / animazione non saranno elaborate da questo metodo.
+\ **Nota:** Le tracce di riproduzione metodi/audio/animazioni non saranno elaborate da questo metodo.
 
 .. |virtual| replace:: :abbr:`virtual (Questo metodo dovrebbe solitamente essere sovrascritto dall'utente per aver un effetto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

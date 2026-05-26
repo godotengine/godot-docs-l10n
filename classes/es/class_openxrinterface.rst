@@ -325,7 +325,7 @@ La sesión está a punto de perderse. :ref:`session_loss_pending<class_OpenXRInt
 
 :ref:`SessionState<enum_OpenXRInterface_SessionState>` **SESSION_STATE_EXITING** = ``8``
 
-The OpenXR instance is about to be destroyed and we're exiting. :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>` is emitted when we change to this state.
+La instancia de OpenXR está a punto de ser destruida y estamos saliendo. :ref:`instance_exiting<class_OpenXRInterface_signal_instance_exiting>` se emite cuando cambiamos a este estado.
 
 .. rst-class:: classref-item-separator
 

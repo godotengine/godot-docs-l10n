@@ -2074,7 +2074,7 @@ flags **ImageUpdateMask**: :ref:`🔗<enum_RichTextLabel_ImageUpdateMask>`
 
 |void| **push_strikethrough**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_strikethrough>`
 
-Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>` is used.
+Добавляет тег ``[s]`` в стек тегов. Если значение альфа-канала ``color`` равно ``0.0``, используется цвет текущего шрифта с альфа-каналом, умноженным на :ref:`strikethrough_alpha<class_RichTextLabel_theme_constant_strikethrough_alpha>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2098,7 +2098,7 @@ Adds a ``[s]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the 
 
 |void| **push_underline**\ (\ color\: :ref:`Color<class_Color>` = Color(0, 0, 0, 0)\ ) :ref:`🔗<class_RichTextLabel_method_push_underline>`
 
-Adds a ``[u]`` tag to the tag stack. If ``color``'s alpha value is ``0.0``, the current font's color with its alpha multiplied by :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>` is used.
+Добавляет тег ``[u]`` в стек тегов. Если значение альфа-канала ``color`` равно ``0.0``, используется цвет текущего шрифта с альфа-каналом, умноженным на :ref:`underline_alpha<class_RichTextLabel_theme_constant_underline_alpha>`.
 
 .. rst-class:: classref-item-separator
 

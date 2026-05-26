@@ -404,7 +404,7 @@ Para que los resultados mezclados se vean bien, se recomienda establecerlo en :r
 - |void| **set_callback_mode_method**\ (\ value\: :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>`\ )
 - :ref:`AnimationCallbackModeMethod<enum_AnimationMixer_AnimationCallbackModeMethod>` **get_callback_mode_method**\ (\ )
 
-The call mode used for "Call Method" tracks.
+El modo de llamada a utilizar para las pistas "Call Method".
 
 .. rst-class:: classref-item-separator
 
@@ -438,7 +438,7 @@ La notificación de proceso en la que se actualizan las animaciones.
 - |void| **set_deterministic**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_deterministic**\ (\ )
 
-Si ``true``, la mezcla utiliza el algoritmo determinista. El peso total no se normaliza y el resultado se acumula con un valor inicial (``0`` o una animación ``"RESET"`` si está presente).
+Si es ``true``, la mezcla utiliza el algoritmo determinista. El peso total no se normaliza y el resultado se acumula con un valor inicial (``0`` o una animación ``"RESET"`` si está presente).
 
 Esto significa que si la cantidad total de mezcla es ``0.0``, el resultado es igual a la animación ``"RESET"``.
 
@@ -501,9 +501,9 @@ Si es ``true``, el valor de :ref:`get_root_motion_position()<class_AnimationMixe
 - |void| **set_root_motion_track**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_root_motion_track**\ (\ )
 
-The path to the Animation track used for root motion. Paths must be valid scene-tree paths to a node, and must be specified starting from the parent node of the node that will reproduce the animation. The :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` uses the same format as :ref:`Animation.track_set_path()<class_Animation_method_track_set_path>`, but note that a bone must be specified.
+La ruta de la pista de Animación utilizada para el movimiento raíz. Las rutas deben ser rutas validas, escena-árbol hacia un nodo, y deben especificarse empezando por el nodo padre del nodo que reproducirá la animación. :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` utiliza el mismo formato que :ref:`Animation.track_set_path()<class_Animation_method_track_set_path>`, pero ten en cuenta que un hueso debe ser especificado.
 
-If the track has type :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`, or :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` the transformation will be canceled visually, and the animation will appear to stay in place. See also :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`, :ref:`get_root_motion_rotation()<class_AnimationMixer_method_get_root_motion_rotation>`, :ref:`get_root_motion_scale()<class_AnimationMixer_method_get_root_motion_scale>`, and :ref:`RootMotionView<class_RootMotionView>`.
+Si la pista tiene tipo :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`, o :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` la transformación se cancelará visualmente, y la animación aparentará estar estática. Véase :ref:`get_root_motion_position()<class_AnimationMixer_method_get_root_motion_position>`, :ref:`get_root_motion_rotation()<class_AnimationMixer_method_get_root_motion_rotation>`, :ref:`get_root_motion_scale()<class_AnimationMixer_method_get_root_motion_scale>`, y :ref:`RootMotionView<class_RootMotionView>`.
 
 .. rst-class:: classref-item-separator
 
@@ -687,13 +687,13 @@ Devuelve la lista de claves de animación almacenadas.
 
 :ref:`Vector3<class_Vector3>` **get_root_motion_position**\ (\ ) |const| :ref:`🔗<class_AnimationMixer_method_get_root_motion_position>`
 
-Retrieve the motion delta of position with the :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` as a :ref:`Vector3<class_Vector3>` that can be used elsewhere.
+Recupera el delta de movimiento de la posición con la :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` como un :ref:`Vector3<class_Vector3>` que puede ser usado en otro lugar.
 
-If :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` is not a path to a track of type :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, returns ``Vector3(0, 0, 0)``.
+Si :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` no es una ruta a una pista de tipo :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`, devuelve ``Vector3(0, 0, 0)``.
 
-See also :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` and :ref:`RootMotionView<class_RootMotionView>`.
+Véase también :ref:`root_motion_track<class_AnimationMixer_property_root_motion_track>` y :ref:`RootMotionView<class_RootMotionView>`.
 
-The most basic example is applying position to :ref:`CharacterBody3D<class_CharacterBody3D>`:
+El ejemplo más básico es aplicar la posición a un :ref:`CharacterBody3D<class_CharacterBody3D>`:
 
 
 .. tabs::
@@ -712,7 +712,7 @@ The most basic example is applying position to :ref:`CharacterBody3D<class_Chara
 
 
 
-By using this in combination with :ref:`get_root_motion_rotation_accumulator()<class_AnimationMixer_method_get_root_motion_rotation_accumulator>`, you can apply the root motion position more correctly to account for the rotation of the node.
+Al usar esto en combinación con :ref:`get_root_motion_rotation_accumulator()<class_AnimationMixer_method_get_root_motion_rotation_accumulator>`, puedes aplicar la posición del movimiento de raíz de forma más correcta para tener en cuenta la rotación del nodo.
 
 
 .. tabs::
@@ -729,9 +729,9 @@ By using this in combination with :ref:`get_root_motion_rotation_accumulator()<c
 
 
 
-If :ref:`root_motion_local<class_AnimationMixer_property_root_motion_local>` is ``true``, returns the pre-multiplied translation value with the inverted rotation.
+Si :ref:`root_motion_local<class_AnimationMixer_property_root_motion_local>` es ``true``, devuelve el valor de traslación pre-multiplicado con la rotación invertida.
 
-In this case, the code can be written as follows:
+En este caso, el código puede escribirse de la siguiente manera:
 
 
 .. tabs::

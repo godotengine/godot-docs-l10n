@@ -17,9 +17,9 @@ Sobrescribe los sonidos de localización que se escuchan.
 Descripción
 ----------------------
 
-Once added to the scene tree and enabled using :ref:`make_current()<class_AudioListener2D_method_make_current>`, this node will override the location sounds are heard from. Only one **AudioListener2D** can be current. Using :ref:`make_current()<class_AudioListener2D_method_make_current>` will disable the previous **AudioListener2D**.
+Una vez añadido al árbol de escena y activado mediante :ref:`make_current()<class_AudioListener2D_method_make_current>`, este nodo sobrescribirá la ubicación desde la que se escuchan los sonidos. Solo un **AudioListener2D** puede estar activo. El uso de :ref:`make_current()<class_AudioListener2D_method_make_current>` desactivará el **AudioListener2D** anterior.
 
-If there is no active **AudioListener2D** in the current :ref:`Viewport<class_Viewport>`, center of the screen will be used as a hearing point for the audio. **AudioListener2D** needs to be inside :ref:`SceneTree<class_SceneTree>` to function.
+Si no hay ningún **AudioListener2D** activo en el :ref:`Viewport<class_Viewport>` actual, se utilizará el centro de la pantalla como punto de audición para el audio. El **AudioListener2D** debe estar dentro del :ref:`SceneTree<class_SceneTree>` para funcionar.
 
 .. rst-class:: classref-reftable-group
 

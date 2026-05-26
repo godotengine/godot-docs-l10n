@@ -18,7 +18,7 @@ Descripción
 
 Expresión personalizada del lenguaje de sombreado de Godot, con un número personalizado de puertos de entrada y salida.
 
-El código proporcionado se inyecta directamente en la función shader correspondiente del gráfico (``vertex``, ``fragment`` o ``light``), por lo que no se puede utilizar para declarar funciones, variables, uniformes o constantes globales. Consulta :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` para tales definiciones globales.
+El código proporcionado se inyecta directamente en la función shader correspondiente del gráfico (``vertex``, ``fragment`` o ``light``), por lo que no se puede utilizar para declarar funciones, variables, variables uniformes o constantes globales. Véase :ref:`VisualShaderNodeGlobalExpression<class_VisualShaderNodeGlobalExpression>` para tales definiciones globales.
 
 .. rst-class:: classref-reftable-group
 
@@ -52,7 +52,7 @@ Descripciones de Propiedades
 - |void| **set_expression**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_expression**\ (\ )
 
-Una expresión del Lenguaje de Sombreado Godot, que se inyectará al comienzo de la función shader correspondiente del gráfico (``vertex``, ``fragment``, o ``light``), y por lo tanto no puede utilizarse para declarar funciones, variaciones, uniformes o constantes globales.
+Una expresión del Lenguaje de Sombreado Godot, que se inyectará al comienzo de la función shader correspondiente del gráfico (``vertex``, ``fragment``, o ``light``), y por lo tanto no puede utilizarse para declarar funciones, variaciones, variables uniformes o constantes globales.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

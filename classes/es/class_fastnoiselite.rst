@@ -390,7 +390,7 @@ Determina cómo se calcula la distancia al punto más cercano/segundo más cerca
 - |void| **set_cellular_jitter**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cellular_jitter**\ (\ )
 
-Distancia máxima que un punto puede moverse fuera de su posición en la cuadrícula. Establecer en ``0`` para una cuadrícula uniforme.
+Distancia máxima que un punto puede moverse fuera de su posición en la cuadrícula. Establécela como ``0`` para una cuadrícula uniforme.
 
 .. rst-class:: classref-item-separator
 

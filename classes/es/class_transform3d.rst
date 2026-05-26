@@ -313,7 +313,7 @@ Descripciones de Métodos
 
 Devuelve la versión invertida de esta transformación. A diferencia de :ref:`inverse()<class_Transform3D_method_inverse>`, este método funciona con casi cualquier :ref:`basis<class_Transform3D_property_basis>`, incluyendo las no uniformes, pero es más lento. Véase también :ref:`Basis.inverse()<class_Basis_method_inverse>`.
 
-\ **Nota:** Para que este método se devuelva correctamente, la :ref:`basis<class_Transform3D_property_basis>` de la transformación debe tener un determinante que no sea exactamente ``0.0`` (consulta :ref:`Basis.determinant()<class_Basis_method_determinant>`).
+\ **Nota:** Para que este método se devuelva correctamente, la :ref:`basis<class_Transform3D_property_basis>` de la transformación debe tener un determinante que no sea exactamente ``0.0`` (véase :ref:`Basis.determinant()<class_Basis_method_determinant>`).
 
 .. rst-class:: classref-item-separator
 
@@ -341,7 +341,7 @@ El ``weight`` debe estar entre ``0.0`` y ``1.0`` (inclusive). Se permiten valore
 
 Devuelve la `versión invertida de esta transformación <https://en.wikipedia.org/wiki/Invertible_matrix>`__. Véase también :ref:`Basis.inverse()<class_Basis_method_inverse>`.
 
-\ **Nota:** Para que este método se devuelva correctamente, la :ref:`basis<class_Transform3D_property_basis>` de la transformación debe ser *ortonormal* (consulta :ref:`orthonormalized()<class_Transform3D_method_orthonormalized>`). Eso significa que la base sólo debe representar una rotación. Si no es así, utiliza :ref:`affine_inverse()<class_Transform3D_method_affine_inverse>` en su lugar.
+\ **Nota:** Para que este método se devuelva correctamente, la :ref:`basis<class_Transform3D_property_basis>` de la transformación debe ser *ortonormal* (véase :ref:`orthonormalized()<class_Transform3D_method_orthonormalized>`). Eso significa que la base sólo debe representar una rotación. Si no es así, utiliza :ref:`affine_inverse()<class_Transform3D_method_affine_inverse>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -407,7 +407,7 @@ Devuelve una copia de esta transformación con su :ref:`basis<class_Transform3D_
 
 Devuelve una copia de esta transformación rotada alrededor del ``axis`` dado por el ``angle`` dado (en radianes).
 
-El ``axis`` debe ser un vector normalizado (consulta :ref:`Vector3.normalized()<class_Vector3_method_normalized>`). Si ``angle`` es positivo, la base se gira en sentido contrario a las agujas del reloj alrededor del eje.
+El ``axis`` debe ser un vector normalizado (véase :ref:`Vector3.normalized()<class_Vector3_method_normalized>`). Si ``angle`` es positivo, la base se gira en sentido contrario a las agujas del reloj alrededor del eje.
 
 Este método es una versión optimizada de la multiplicación de la transformación ``X`` dada con una transformación de rotación ``R`` correspondiente desde la izquierda, es decir, ``R * X``.
 
@@ -568,11 +568,11 @@ Esta es la operación realizada entre :ref:`Node3D<class_Node3D>` padre e hijo.
 
 \ **Nota:** Si solo necesitas modificar un atributo de esta transformación, considera usar uno de los siguientes métodos en su lugar:
 
-- Para traslación, consulta :ref:`translated()<class_Transform3D_method_translated>` o :ref:`translated_local()<class_Transform3D_method_translated_local>`.
+- Para traslación, véase :ref:`translated()<class_Transform3D_method_translated>` o :ref:`translated_local()<class_Transform3D_method_translated_local>`.
 
-- Para rotación, consulta :ref:`rotated()<class_Transform3D_method_rotated>` o :ref:`rotated_local()<class_Transform3D_method_rotated_local>`.
+- Para rotación, véase :ref:`rotated()<class_Transform3D_method_rotated>` o :ref:`rotated_local()<class_Transform3D_method_rotated_local>`.
 
-- Para escala, consulta :ref:`scaled()<class_Transform3D_method_scaled>` o :ref:`scaled_local()<class_Transform3D_method_scaled_local>`.
+- Para escala, véase :ref:`scaled()<class_Transform3D_method_scaled>` o :ref:`scaled_local()<class_Transform3D_method_scaled_local>`.
 
 .. rst-class:: classref-item-separator
 

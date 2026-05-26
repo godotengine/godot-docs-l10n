@@ -5,61 +5,61 @@
 int
 ===
 
-A built-in type for integers.
+Un tipo incorporado para enteros.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Signed 64-bit integer type. This means that it can take values from ``-2^63`` to ``2^63 - 1``, i.e. from ``-9223372036854775808`` to ``9223372036854775807``. When it exceeds these bounds, it will wrap around.
+Tipo de entero con signo de 64 bits. Esto significa que puede tomar valores desde ``-2^63`` hasta ``2^63 - 1``, es decir, desde ``-9223372036854775808`` hasta ``9223372036854775807``. Cuando excede estos límites, se ajustará (wrapping around).
 
-\ **int**\ s can be automatically converted to :ref:`float<class_float>`\ s when necessary, for example when passing them as arguments in functions. The :ref:`float<class_float>` will be as close to the original integer as possible.
+Los **int** se pueden convertir automáticamente a :ref:`float<class_float>`\ s cuando sea necesario, por ejemplo, al pasarlos como argumentos en funciones. El :ref:`float<class_float>` será lo más cercano posible al entero original.
 
-Likewise, :ref:`float<class_float>`\ s can be automatically converted into **int**\ s. This will truncate the :ref:`float<class_float>`, discarding anything after the floating-point.
+Del mismo modo, los :ref:`float<class_float>` se pueden convertir automáticamente en **int**\ s. Esto truncará el :ref:`float<class_float>`, descartando cualquier cosa después del punto decimal.
 
-\ **Note:** In a boolean context, an **int** will evaluate to ``false`` if it equals ``0``, and to ``true`` otherwise.
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var x: int = 1 # x is 1
-    x = 4.2 # x is 4, because 4.2 gets truncated
-    var max_int = 9223372036854775807 # Biggest value an int can store
-    max_int += 1 # max_int is -9223372036854775808, because it wrapped around
-
- .. code-tab:: csharp
-
-    int x = 1; // x is 1
-    x = (int)4.2; // x is 4, because 4.2 gets truncated
-    // We use long below, because GDScript's int is 64-bit while C#'s int is 32-bit.
-    long maxLong = 9223372036854775807; // Biggest value a long can store
-    maxLong++; // maxLong is now -9223372036854775808, because it wrapped around.
-
-    // Alternatively with C#'s 32-bit int type, which has a smaller maximum value.
-    int maxInt = 2147483647; // Biggest value an int can store
-    maxInt++; // maxInt is now -2147483648, because it wrapped around
-
-
-
-You can use the ``0b`` literal for binary representation, the ``0x`` literal for hexadecimal representation, and the ``_`` symbol to separate long numbers and improve readability.
+\ **Nota:** En un contexto booleano, un **int** se evaluará como ``false`` si es igual a ``0``, y como ``true`` en caso contrario.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var x = 0b1001 # x is 9
-    var y = 0xF5 # y is 245
-    var z = 10_000_000 # z is 10000000
+    var x: int = 1 # x es 1
+    x = 4.2 # x es 4, porque 4.2 se trunca
+    var max_int = 9223372036854775807 # El valor más grande que un int puede almacenar
+    max_int += 1 # max_int es -9223372036854775808, porque se ajustó
 
  .. code-tab:: csharp
 
-    int x = 0b1001; // x is 9
-    int y = 0xF5; // y is 245
-    int z = 10_000_000; // z is 10000000
+    int x = 1; // x es 1
+    x = (int)4.2; // x es 4, porque 4.2 se trunca
+    // Usamos long a continuación, porque el int de GDScript es de 64 bits mientras que el int de C# es de 32 bits.
+    long maxLong = 9223372036854775807; // El valor más grande que un long puede almacenar
+    maxLong++; // maxLong es ahora -9223372036854775808, porque se ajustó.
+
+    // Alternativamente con el tipo int de 32 bits de C#, que tiene un valor máximo más pequeño.
+    int maxInt = 2147483647; // El valor más grande que un int puede almacenar
+    maxInt++; // maxInt es ahora -2147483648, porque se ajustó
+
+
+
+Puedes usar el literal ``0b`` para la representación binaria, el literal ``0x`` para la representación hexadecimal, y el símbolo ``_`` para separar números largos y mejorar la legibilidad.
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var x = 0b1001 # x es 9
+    var y = 0xF5 # y es 245
+    var z = 10_000_000 # z es 10000000
+
+ .. code-tab:: csharp
+
+    int x = 0b1001; // x es 9
+    int y = 0xF5; // y es 245
+    int z = 10_000_000; // z es 10000000
 
 
 
@@ -741,18 +741,18 @@ Devuelve el valor negado del **int**. Si es positivo, lo vuelve negativo. Si es 
 
 :ref:`int<class_int>` **operator |**\ (\ right\: :ref:`int<class_int>`\ ) :ref:`🔗<class_int_operator_bwor_int>`
 
-Performs the bitwise ``OR`` operation.
+Realiza la operación ``OR`` bit a bit.
 
 ::
 
-    print(0b1100 | 0b1010) # Prints 14 (binary 1110)
+    print(0b1100 | 0b1010) # Imprime 14 (binario 1110)
 
-This is useful for storing binary flags in a variable.
+Esto es útil para almacenar indicadores binarios en una variable.
 
 ::
 
     var flags = 0
-    flags |= 0b101 # Turn the first and third bits on.
+    flags |= 0b101 # Activa el primer y tercer bit.
 
 .. rst-class:: classref-item-separator
 
@@ -764,12 +764,12 @@ This is useful for storing binary flags in a variable.
 
 :ref:`int<class_int>` **operator ~**\ (\ ) :ref:`🔗<class_int_operator_bwnot>`
 
-Performs the bitwise ``NOT`` operation on the **int**. Due to `2's complement <https://en.wikipedia.org/wiki/Two%27s_complement>`__, it's effectively equal to ``-(int + 1)``.
+Realiza la operación ``NOT`` bit a bit sobre el **int**. Debido al `complemento a 2 <https://en.wikipedia.org/wiki/Two%27s_complement>`__, es efectivamente igual a ``-(int + 1)``.
 
 ::
 
-    print(~4) # Prints -5
-    print(~(-7)) # Prints 6
+    print(~4) # Imprime -5
+    print(~(-7)) # Imprime 6
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -26,7 +26,7 @@ PhysicalBone3D
 教程
 ----
 
-- :doc:`Ragdoll System <../tutorials/physics/ragdoll_system>`
+- :doc:`布娃娃系统 <../tutorials/physics/ragdoll_system>`
 
 .. rst-class:: classref-reftable-group
 

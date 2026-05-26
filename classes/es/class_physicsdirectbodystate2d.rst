@@ -551,7 +551,7 @@ Devuelve el :ref:`RID<class_RID>` del colisionador.
 
 :ref:`int<class_int>` **get_contact_collider_id**\ (\ contact_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsDirectBodyState2D_method_get_contact_collider_id>`
 
-Devuelve la identificación del objeto del colisionador.
+Devuelve el Id del objeto del colisionador.
 
 .. rst-class:: classref-item-separator
 

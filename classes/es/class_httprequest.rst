@@ -614,9 +614,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if request is suc
 
 |void| **set_http_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPRequest_method_set_http_proxy>`
 
-Sets the proxy server for HTTP requests.
+Establece el servidor proxy para las peticiones HTTP.
 
-The proxy server is unset if ``host`` is empty or ``port`` is -1.
+El servidor proxy se desactiva si ``host`` está vacío o ``port`` es -1.
 
 .. rst-class:: classref-item-separator
 
@@ -628,9 +628,9 @@ The proxy server is unset if ``host`` is empty or ``port`` is -1.
 
 |void| **set_https_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPRequest_method_set_https_proxy>`
 
-Sets the proxy server for HTTPS requests.
+Establece el servidor proxy para las peticiones HTTPS.
 
-The proxy server is unset if ``host`` is empty or ``port`` is -1.
+El servidor proxy se desactiva si ``host`` está vacío o ``port`` es -1.
 
 .. rst-class:: classref-item-separator
 

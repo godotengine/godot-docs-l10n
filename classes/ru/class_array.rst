@@ -450,16 +450,16 @@ Array
     public override void _Ready()
     {
         // Выводит True (3/3 элементы оцениваются как true).
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
         // Выводит False (1/3 элементы оцениваются как true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
         // Выводит False (0/3 элементы оцениваются как true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
         // Выводит True (0/0 элементы оцениваются как true).
-        GD.Print(new Godot.Collections.Array>int< { }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
         // То же, что и в первой строке выше, но с использованием лямбда-функции.
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // Выводит True
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Выводит True
     }
 
 

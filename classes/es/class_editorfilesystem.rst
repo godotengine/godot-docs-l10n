@@ -138,7 +138,7 @@ Descripciones de Métodos
 
 :ref:`String<class_String>` **get_file_type**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorFileSystem_method_get_file_type>`
 
-Returns the resource type of the file, given the full path. This returns a string such as ``"Resource"`` or ``"GDScript"``, *not* a file extension such as ``".gd"``.
+Devuelve el tipo de recurso del archivo, dada la ruta completa. Esto devuelve una cadena como ``"Resource"`` o ``"GDScript"``, *no* una extensión de archivo como ``".gd"``.
 
 .. rst-class:: classref-item-separator
 

@@ -739,7 +739,7 @@ enum **TreeCellMode**: :ref:`🔗<enum_TreeItem_TreeCellMode>`
 
 :ref:`StyleBox<class_StyleBox>` **get_custom_stylebox**\ (\ column\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TreeItem_method_get_custom_stylebox>`
 
-Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+返回给定列的自定义 :ref:`StyleBox<class_StyleBox>`\ ，用于绘制背景。
 
 .. rst-class:: classref-item-separator
 
@@ -1429,9 +1429,9 @@ Returns the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw t
 
 |void| **set_custom_bg_color**\ (\ column\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, just_outline\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_TreeItem_method_set_custom_bg_color>`
 
-Sets the given column's custom background color and whether to just use it as an outline.
+设置给定列的自定义背景颜色，以及是否只将其用作轮廓。
 
-\ **Note:** If a custom :ref:`StyleBox<class_StyleBox>` is set, the background color will be drawn behind it.
+\ **注意：**\ 如果设置了自定义 :ref:`StyleBox<class_StyleBox>`\ ，则背景颜色将绘制在其后方。
 
 .. rst-class:: classref-item-separator
 
@@ -1509,9 +1509,9 @@ Sets the given column's custom background color and whether to just use it as an
 
 |void| **set_custom_stylebox**\ (\ column\: :ref:`int<class_int>`, stylebox\: :ref:`StyleBox<class_StyleBox>`\ ) :ref:`🔗<class_TreeItem_method_set_custom_stylebox>`
 
-Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the background.
+设置给定列的自定义 :ref:`StyleBox<class_StyleBox>`\ ，用于绘制背景。
 
-\ **Note:** If a custom background color is set, the :ref:`StyleBox<class_StyleBox>` will be drawn in front of it.
+\ **注意：**\ 如果设置了自定义背景颜色，则该 :ref:`StyleBox<class_StyleBox>` 将绘制在它之前。
 
 .. rst-class:: classref-item-separator
 
@@ -1647,7 +1647,7 @@ Sets the given column's custom :ref:`StyleBox<class_StyleBox>` used to draw the 
 
 |void| **set_language**\ (\ column\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TreeItem_method_set_language>`
 
-Sets the language code of the given ``column``'s text to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+将给定 ``column`` 的文本的语言代码设置为 ``language``\ 。用于断行和文本塑形算法。如果 ``language`` 为空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 

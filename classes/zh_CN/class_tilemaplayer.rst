@@ -333,11 +333,11 @@ enum **DebugVisibilityMode**: :ref:`🔗<enum_TileMapLayer_DebugVisibilityMode>`
 - |void| **set_physics_quadrant_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_quadrant_size**\ (\ )
 
-The **TileMapLayer**'s physics quadrant size. Within a physics quadrant, cells with similar physics properties are grouped together and their collision shapes get merged. :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` defines the length of a square's side, in the map's coordinate system, that forms the quadrant. Thus, the default quadrant size groups together ``16 * 16 = 256`` tiles.
+**TileMapLayer** 的物理象限大小。物理象限中具有相似的物理属性的单元格会被分组在一起，其碰撞形状会被合并。\ :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` 定义的是形成象限的正方形的边长，使用地图坐标系。因此，默认象限大小将 ``16 * 16 = 256`` 个图块组合到了一起。
 
-\ **Note:** As quadrants are created according to the map's coordinate system, the quadrant's "square shape" might not look like square in the **TileMapLayer**'s local coordinate system.
+\ **注意：**\ 象限是根据地图坐标系创建的，“正方形”的象限在 **TileMapLayer** 的局部坐标系中可能看起来并不像正方形。
 
-\ **Note:** This impacts the value returned by :ref:`get_coords_for_body_rid()<class_TileMapLayer_method_get_coords_for_body_rid>`. Higher values will make that function less precise. To get the exact cell coordinates, you need to set :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which disables physics chunking.
+\ **注意：**\ 这会影响 :ref:`get_coords_for_body_rid()<class_TileMapLayer_method_get_coords_for_body_rid>` 方法返回的值。值越大，该函数的精度越低。要获取精确的单元格坐标，需要将 :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` 设置为 ``1``\ ，这将禁用物理分块。
 
 .. rst-class:: classref-item-separator
 
@@ -616,9 +616,9 @@ The **TileMapLayer**'s physics quadrant size. Within a physics quadrant, cells w
 
 :ref:`Vector2i<class_Vector2i>` **get_coords_for_body_rid**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_TileMapLayer_method_get_coords_for_body_rid>`
 
-Returns the coordinates of the physics quadrant (see :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>`) for given physics body :ref:`RID<class_RID>`. Such an :ref:`RID<class_RID>` can be retrieved from :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>`, when colliding with a tile.
+返回给定物理体 :ref:`RID<class_RID>` 对应的物理象限的坐标（见 :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>`\ ）。与图块发生碰撞时，可以通过 :ref:`KinematicCollision2D.get_collider_rid()<class_KinematicCollision2D_method_get_collider_rid>` 获取该 :ref:`RID<class_RID>`\ 。
 
-\ **Note:** Higher values of :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` will make this function less precise. To get the exact cell coordinates, you need to set :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` to ``1``, which disables physics chunking.
+\ **注意：**\ :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` 的值越大，该函数的精度越低。要获取精确的单元格坐标，需要将 :ref:`physics_quadrant_size<class_TileMapLayer_property_physics_quadrant_size>` 设置为 ``1``\ ，这将禁用物理分块。
 
 .. rst-class:: classref-item-separator
 

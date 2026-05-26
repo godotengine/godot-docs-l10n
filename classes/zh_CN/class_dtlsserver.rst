@@ -42,7 +42,7 @@ DTLSServer
             var dtls_peer = dtls.take_connection(peer)
             if dtls_peer.get_status() != PacketPeerDTLS.STATUS_HANDSHAKING:
                 continue # 由于 cookie 交换，50% 的连接会失败，这是正常现象。
-            print("对等体已连接！")
+            print("对等端已连接！")
             peers.append(dtls_peer)
 
         for p in peers:
@@ -81,7 +81,7 @@ DTLSServer
                 {
                     continue; // 由于 cookie 交换，50% 的连接会失败，这是正常现象。
                 }
-                GD.Print("对等体已连接！");
+                GD.Print("对等端已连接！");
                 _peers.Add(dtlsPeer);
             }
 

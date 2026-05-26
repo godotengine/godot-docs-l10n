@@ -7,7 +7,7 @@ InputEventPanGesture
 
 **Hereda:** :ref:`InputEventGesture<class_InputEventGesture>` **<** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a panning touch gesture.
+Representa un gesto táctil de desplazamiento.
 
 .. rst-class:: classref-introduction-group
 
@@ -57,7 +57,7 @@ Descripciones de Propiedades
 - |void| **set_delta**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_delta**\ (\ )
 
-Panning amount since last pan event.
+Cantidad de desplazamiento desde el último evento de desplazamiento.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

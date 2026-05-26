@@ -698,9 +698,9 @@ Camera2D 的锚点。
 
 |void| **align**\ (\ ) :ref:`🔗<class_Camera2D_method_align>`
 
-Aligns the camera to the tracked node.
+将相机对准跟踪节点。
 
-\ **Note:** Calling :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` after this method is not required.
+\ **注意：**\ 在该方法之后，不需要调用 :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>`\ 。
 
 .. rst-class:: classref-item-separator
 

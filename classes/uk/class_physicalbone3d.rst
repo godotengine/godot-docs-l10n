@@ -17,9 +17,9 @@ PhysicalBone3D
 Опис
 --------
 
-**PhysicalBone3D** вершина є фізико-фізичним тілом, який можна використовувати для того, щоб зробити кістки в :ref:`Skeleton3D<class_Skeleton3D>` реагувати на фізику.
+Вузол **PhysicalBone3D** — це фізичний об’єкт, за допомогою якого можна зробити так, щоб кістки в :ref:`Skeleton3D<class_Skeleton3D>` реагували на фізичні ефекти.
 
-\ **Примітка:** Для виявлення фізичних кісток з променями, :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` властивість батька :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` повинна бути ``true`` і :ref:`Skeleton3D<class_Skeleton3D>` повинні бути призначені для **PhysicalBone3D** правильно; це означає, що :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` повинен повернути дійсну ID (``>= 0``).
+\ **Примітка:** Щоб виявити фізичні кістки за допомогою raycasts, властивість :ref:`SkeletonModifier3D.active<class_SkeletonModifier3D_property_active>` батьківського :ref:`PhysicalBoneSimulator3D<class_PhysicalBoneSimulator3D>` має бути ``true``, а кістка :ref:`Skeleton3D<class_Skeleton3D>` має бути правильно прив’язана до **PhysicalBone3D**; це означає, що :ref:`get_bone_id()<class_PhysicalBone3D_method_get_bone_id>` повинен повертати дійсний ідентифікатор (``>= 0``).
 
 .. rst-class:: classref-introduction-group
 

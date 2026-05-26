@@ -277,7 +277,7 @@ Si se establece en ``true``, al alinear los glifos a los límites de los píxele
 - |void| **set_modulate_color_glyphs**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_modulate_color_glyphs**\ (\ )
 
-If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
+Si se establece como ``true``, la modulación de color se aplica al dibujar glifos coloreados, de lo contrario, se aplica solo a los glifos monocromáticos.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ If set to ``true``, color modulation is applied when drawing colored glyphs, oth
 - |void| **set_msdf_pixel_range**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_pixel_range**\ (\ )
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` value of ``16`` allows outline sizes up to ``8`` to look correct.
+El ancho del rango alrededor de la forma entre la distancia con signo mínima y máxima representable. Si usas contornos de fuente, :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` debe establecerse al menos a *el doble* del tamaño del contorno de fuente más grande. El valor por defecto de :ref:`msdf_pixel_range<class_SystemFont_property_msdf_pixel_range>` de ``16`` permite que los tamaños de contorno de hasta ``8`` se vean correctos.
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ The width of the range around the shape between the minimum and maximum represen
 - |void| **set_msdf_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_msdf_size**\ (\ )
 
-Source font size used to generate MSDF textures. Higher values allow for more precision, but are slower to render and require more memory. Only increase this value if you notice a visible lack of precision in glyph rendering.
+Tamaño de fuente de origen usado para generar texturas MSDF. Valores más altos permiten mayor precisión, pero son más lentos de renderizar y requieren más memoria. Solo aumenta este valor si notas una falta visible de precisión en el renderizado de glifos.
 
 .. rst-class:: classref-item-separator
 

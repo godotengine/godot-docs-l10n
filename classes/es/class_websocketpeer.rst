@@ -380,7 +380,7 @@ Devuelve el código de estado del frame de cierre de WebSocket recibido, o ``-1`
 
 :ref:`String<class_String>` **get_close_reason**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_close_reason>`
 
-Devuelve la cadena de motivo del estado del frame de cierre de WebSocket recibido. Solo llama a este método cuando :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>` devuelve :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>`.
+Devuelve la string de motivo del estado del frame de cierre de WebSocket recibido. Solo llama a este método cuando :ref:`get_ready_state()<class_WebSocketPeer_method_get_ready_state>` devuelve :ref:`STATE_CLOSED<class_WebSocketPeer_constant_STATE_CLOSED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -456,7 +456,7 @@ Devuelve la URL solicitada por este par. La URL se deriva de la ``url`` pasada a
 
 :ref:`String<class_String>` **get_selected_protocol**\ (\ ) |const| :ref:`🔗<class_WebSocketPeer_method_get_selected_protocol>`
 
-Devuelve el subprotocolo WebSocket seleccionado para esta conexión o una cadena vacía si el subprotocolo aún no se ha seleccionado.
+Devuelve el subprotocolo WebSocket seleccionado para esta conexión o una string vacía si el subprotocolo aún no se ha seleccionado.
 
 .. rst-class:: classref-item-separator
 

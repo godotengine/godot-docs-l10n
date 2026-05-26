@@ -7,18 +7,18 @@ CCDIK3D
 
 **继承：** :ref:`IterateIK3D<class_IterateIK3D>` **<** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Rotation based cyclic coordinate descent inverse kinematics solver.
+基于旋转的循环坐标下降反向动力学求解器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-**CCDIK3D** is rotation based IK, enabling fast and effective tracking even with large joint rotations. It's especially suitable for chains with limitations, providing smoother and more stable target tracking compared to :ref:`FABRIK3D<class_FABRIK3D>`.
+**CCDIK3D** 是一种基于旋转的反向动力学算法，即使在关节大幅旋转的情况下也能实现快速有效的跟踪。它特别适用于有限制的链，与 :ref:`FABRIK3D<class_FABRIK3D>` 相比，它能提供更平滑、更稳定的目标跟踪。
 
-The resulting twist around the forward vector will always be kept from the previous pose.
+由此产生的绕前向向量的扭转将始终与之前的姿态保持一致。
 
-\ **Note:** When the target is close to the root, it can cause unnatural movement, including joint flips and oscillations.
+\ **注意：**\ 当目标靠近根部时，可能会导致不自然的运动，包括关节翻转和振荡。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -3933,47 +3933,45 @@ ID Идентификатор, который ссылается на экран
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Отображает встроенный диалог ОС для выбора файлов или каталогов в файловой системе.
+Displays OS native dialog for selecting files or directories in the file system.
 
+Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
+Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
 
-Каждая строка фильтра в массиве ``filters`` должна быть отформатирована следующим образом: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Текст описания фильтра является необязательным и может быть опущен. Рекомендуется указывать как расширение файла, так и MIME-тип. См. также :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
 
-Обратные вызовы имеют следующие аргументы: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **На Android** третий аргумент обратного вызова (``selected_filter_index``) всегда равен ``0``.
+\ **Note:** ``current_directory`` might be ignored.
 
-\ **Примечание:** Этот метод реализован, если сервер отображения имеет функцию :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Поддерживаемые платформы: Linux (X11/Wayland), Windows, macOS и Android (уровень API 29+).
+\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
 
-\ **Примечание:** Параметр ``current_directory`` может быть проигнорирован.
+\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
 
-\ **Примечание:** Встроенные диалоговые окна выбора файлов и диалоговые окна выбора файлов Windows поддерживают только расширения файлов, в то время как диалоговые окна выбора файлов Android, Linux и macOS также поддерживают типы MIME.
+\ **Note:** On Android and macOS, native file dialogs have no title.
 
-\ **Примечание:** На Android и Linux параметр ``show_hidden`` игнорируется.
+\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
 
-\ **Примечание:** На Android и macOS у нативных диалоговых окон выбора файлов нет заголовка.
+\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
 
-\ **Примечание:** На macOS изолированные приложения сохраняют закладки с ограниченным доступом, чтобы сохранить доступ к открытым папкам в нескольких сессиях. Используйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, чтобы получить список сохраненных закладок.
+The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
 
-\ **Примечание:** На Android этот метод использует Android Storage Access Framework (SAF).
+When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
 
-Средство выбора файлов возвращает URI вместо пути к файловой системе. Этот URI можно передать непосредственно в :ref:`FileAccess<class_FileAccess>` для выполнения операций чтения/записи.
-
-При использовании :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>` возвращается URI дерева, предоставляющий полный доступ к выбранному каталогу. Операции с файлами внутри этого каталога можно выполнять, передавая путь в формате ``treeUri#relative/path/to/file`` в :ref:`FileAccess<class_FileAccess>`.
-
-Чтобы избежать повторного открытия средства выбора файлов после каждого перезапуска приложения, можно получить постоянное разрешение URI следующим образом:
+To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI выбранного файла или папки.
-    val persist = true # Установите значение false, чтобы освободить сохраняемое разрешение.
+    val uri = "content://com.android..." # URI of the selected file or folder.
+    val persist = true # Set to false to release the persistable permission.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-Сохраняемое разрешение URI остается в силе после перезапуска приложения, если каталог не перемещен, не переименован и не удален.
+The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
 
 .. rst-class:: classref-item-separator
 

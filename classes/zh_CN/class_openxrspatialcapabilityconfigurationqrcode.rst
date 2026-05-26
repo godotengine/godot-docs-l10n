@@ -9,14 +9,14 @@ OpenXRSpatialCapabilityConfigurationQrCode
 
 **继承：** :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration header for micro QR code markers.
+微型二维码标记的配置标头。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Configuration header for micro QR code markers. Pass this to :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` to create a spatial context that can detect micro QR code markers.
+用于微型二维码标记的配置标头。将它传递给 :ref:`OpenXRSpatialEntityExtension.create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>` 即可创建一个能够检测微型二维码标记的空间上下文。
 
 .. rst-class:: classref-reftable-group
 
@@ -45,9 +45,9 @@ Configuration header for micro QR code markers. Pass this to :ref:`OpenXRSpatial
 
 :ref:`PackedInt64Array<class_PackedInt64Array>` **get_enabled_components**\ (\ ) |const| :ref:`🔗<class_OpenXRSpatialCapabilityConfigurationQrCode_method_get_enabled_components>`
 
-Returns the components enabled by this configuration.
+返回该配置启用的组件。
 
-\ **Note:** Only valid after this configuration was used to create a spatial context.
+\ **注意：**\ 仅在该配置用于创建空间上下文后有效。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

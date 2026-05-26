@@ -97,7 +97,7 @@ Descripciones de Propiedades
 - |void| **set_affect_navigation_mesh**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_affect_navigation_mesh**\ (\ )
 
-Si está habilitado y se procesa en un proceso de bakeo de malla de navegación, el obstáculo descartará la geometría de origen dentro de su forma definida por :ref:`vertices<class_NavigationObstacle3D_property_vertices>` y :ref:`height<class_NavigationObstacle3D_property_height>`.
+Si está habilitado y se procesa en un proceso de baking de malla de navegación, el obstáculo descartará la geometría de origen dentro de su forma definida por :ref:`vertices<class_NavigationObstacle3D_property_vertices>` y :ref:`height<class_NavigationObstacle3D_property_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -203,9 +203,9 @@ Establece el radio de evitación del obstáculo.
 - |void| **set_use_3d_avoidance**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_use_3d_avoidance**\ (\ )
 
-Si ``true``, el obstáculo afecta la evitación 3D usando agentes con :ref:`radius<class_NavigationObstacle3D_property_radius>` del obstáculo.
+Si es ``true``, el obstáculo afecta la evitación 3D usando agentes con :ref:`radius<class_NavigationObstacle3D_property_radius>` del obstáculo.
 
-Si ``false``, el obstáculo afecta la evitación 2D usando agentes con :ref:`vertices<class_NavigationObstacle3D_property_vertices>` del obstáculo, así como con :ref:`radius<class_NavigationObstacle3D_property_radius>` del obstáculo.
+Si es ``false``, el obstáculo afecta la evitación 2D usando agentes con :ref:`vertices<class_NavigationObstacle3D_property_vertices>` del obstáculo, así como con :ref:`radius<class_NavigationObstacle3D_property_radius>` del obstáculo.
 
 .. rst-class:: classref-item-separator
 

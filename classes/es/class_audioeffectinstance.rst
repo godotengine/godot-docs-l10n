@@ -16,7 +16,7 @@ Manipula el audio que recibe para un efecto determinado.
 Descripción
 ----------------------
 
-An audio effect instance manipulates the audio it receives for a given effect. This instance is automatically created by an :ref:`AudioEffect<class_AudioEffect>` when it is added to a bus, and should usually not be created directly. If necessary, it can be fetched at run-time with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
+Una instancia de efecto de audio manipula el audio que recibe para un efecto determinado. Esta instancia es creada automáticamente por un :ref:`AudioEffect<class_AudioEffect>` cuando se agrega a un bus, y normalmente no debería crearse directamente. Si es necesario, se puede obtener en tiempo de ejecución mediante :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -54,9 +54,9 @@ Descripciones de Métodos
 
 |void| **_process**\ (\ src_buffer\: ``const void*``, dst_buffer\: ``AudioFrame*``, frame_count\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_AudioEffectInstance_private_method__process>`
 
-Called by the :ref:`AudioServer<class_AudioServer>` to process this effect. When :ref:`_process_silence()<class_AudioEffectInstance_private_method__process_silence>` is not overridden or it returns ``false``, this method is called only when the bus is active.
+Llamado por el :ref:`AudioServer<class_AudioServer>` para procesar este efecto. Cuando :ref:`_process_silence()<class_AudioEffectInstance_private_method__process_silence>` no se sobrescribe o devuelve ``false``, este método se llama únicamente cuando el bus está activo.
 
-\ **Note:** It is not useful to override this method in GDScript or C#. Only GDExtension can take advantage of it.
+\ **Nota:** No es útil sobrescribir este método en GDScript o C#. Solo GDExtension puede aprovecharlo.
 
 .. rst-class:: classref-item-separator
 
@@ -68,9 +68,9 @@ Called by the :ref:`AudioServer<class_AudioServer>` to process this effect. When
 
 :ref:`bool<class_bool>` **_process_silence**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioEffectInstance_private_method__process_silence>`
 
-Override this method to customize the processing behavior of this effect instance.
+Sobrescribe este método para personalizar el comportamiento del procesamiento de esta instancia de efecto.
 
-Should return ``true`` to force the :ref:`AudioServer<class_AudioServer>` to always call :ref:`_process()<class_AudioEffectInstance_private_method__process>`, even if the bus has been muted or cannot otherwise be heard.
+Debe devolver ``true`` para forzar que el :ref:`AudioServer<class_AudioServer>` llame siempre a :ref:`_process()<class_AudioEffectInstance_private_method__process>`, incluso si el bus ha sido silenciado o no se puede escuchar de otra manera.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

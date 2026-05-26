@@ -447,7 +447,7 @@ Devuelve el máximo por componente de este y ``with``, equivalente a ``Vector4i(
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector4i_method_max_axis_index>`
 
-Devuelve el eje del valor más alto del vector. Consulta las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_X<class_Vector4i_constant_AXIS_X>`.
+Devuelve el eje del valor más alto del vector. Véanse las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_X<class_Vector4i_constant_AXIS_X>`.
 
 .. rst-class:: classref-item-separator
 

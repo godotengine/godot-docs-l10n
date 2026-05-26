@@ -444,9 +444,9 @@ enum **Customization**: :ref:`🔗<enum_FileDialog_Customization>`
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_OVERWRITE_WARNING** = ``7``
 
-If enabled, the **FileDialog** will warn the user before overwriting files in save mode.
+如果启用，则 **FileDialog** 在保存模式下覆盖文件之前会向用户发出警告。
 
-Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`.
+等价于 :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrite_warning_enabled>`\ 。
 
 .. _class_FileDialog_constant_CUSTOMIZATION_DELETE:
 
@@ -454,9 +454,9 @@ Equivalent to :ref:`overwrite_warning_enabled<class_FileDialog_property_overwrit
 
 :ref:`Customization<enum_FileDialog_Customization>` **CUSTOMIZATION_DELETE** = ``8``
 
-If enabled, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+如果启用，则上下文菜单将显示“删除”选项，允许将文件和文件夹移动到回收站。
 
-Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`.
+等价于 :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -550,7 +550,7 @@ Equivalent to :ref:`deleting_enabled<class_FileDialog_property_deleting_enabled>
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the context menu will show the "Delete" option, which allows moving files and folders to trash.
+如果为 ``true``\ ，则上下文菜单将显示“删除”选项，允许将文件和文件夹移动到回收站。
 
 .. rst-class:: classref-item-separator
 
@@ -671,9 +671,9 @@ If ``true``, the context menu will show the "Delete" option, which allows moving
 - |void| **set_filters**\ (\ value\: :ref:`PackedStringArray<class_PackedStringArray>`\ )
 - :ref:`PackedStringArray<class_PackedStringArray>` **get_filters**\ (\ )
 
-The available file type filters. Each filter string in the array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. Both file extensions and MIME type should be always set.
+可用的文件类型筛选器。数组中筛选器字符串的格式应类似于：\ ``*.png,*.jpg,*.jpeg;图像文件;image/png,image/jpeg``\ 。筛选器的描述文本是可选的，可以省略。应始终设置文件扩展名和 MIME 类型。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：**\ 嵌入式文件对话框和 Windows 文件对话框仅支持文件扩展名，而 Android、Linux 和 macOS 文件对话框还支持 MIME 类型。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -692,7 +692,7 @@ The available file type filters. Each filter string in the array should be forma
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, shows the button for creating new directories (when using :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`, :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`, or :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`), and the context menu will have the "New Folder..." option.
+如果为 ``true``\ ，则会显示用于新建文件夹的按钮（适用于 :ref:`FILE_MODE_OPEN_DIR<class_FileDialog_constant_FILE_MODE_OPEN_DIR>`\ 、\ :ref:`FILE_MODE_OPEN_ANY<class_FileDialog_constant_FILE_MODE_OPEN_ANY>`\ 、\ :ref:`FILE_MODE_SAVE_FILE<class_FileDialog_constant_FILE_MODE_SAVE_FILE>`\ ），并且上下文菜单中会包含“新建文件夹...”选项。
 
 .. rst-class:: classref-item-separator
 
@@ -777,7 +777,7 @@ If ``true``, shows the button for creating new directories (when using :ref:`FIL
 - |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`\ ) |const|
 
-If ``true``, the **FileDialog** will warn the user before overwriting files in save mode.
+如果为 ``true``\ ，则在保存模式下，\ **FileDialog** 会在覆盖文件之前向用户发出警告。
 
 .. rst-class:: classref-item-separator
 
@@ -851,7 +851,7 @@ If ``true``, the **FileDialog** will warn the user before overwriting files in s
 
 If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
 
-\ **Note:** On Android, it is only supported for Android 10+ devices and when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
+\ **Note:** On Android, it is only supported when using :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`. For access mode :ref:`ACCESS_RESOURCES<class_FileDialog_constant_ACCESS_RESOURCES>` and :ref:`ACCESS_USERDATA<class_FileDialog_constant_ACCESS_USERDATA>`, the system will fall back to custom FileDialog.
 
 \ **Note:** On Linux and macOS, sandboxed apps always use native dialogs to access the host file system.
 
@@ -876,13 +876,13 @@ If ``true``, and if supported by the current :ref:`DisplayServer<class_DisplaySe
 
 |void| **add_filter**\ (\ filter\: :ref:`String<class_String>`, description\: :ref:`String<class_String>` = "", mime_type\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_FileDialog_method_add_filter>`
 
-Adds a comma-separated file extension ``filter`` and comma-separated MIME type ``mime_type`` option to the **FileDialog** with an optional ``description``, which restricts what files can be picked.
+将一个逗号分隔的文件扩展名 ``filter`` 和以逗号分隔的 MIME 类型 ``mime_type`` 的选项添加到 **FileDialog**\ ，并可选择添加描述 ``description``\ ，用于限制可以选择的文件类型。
 
-A ``filter`` should be of the form ``"filename.extension"``, where filename and extension can be ``*`` to match any string. Filters starting with ``.`` (i.e. empty filenames) are not allowed.
+\ ``filter`` 的格式应为 ``"文件名.扩展名"``\ ，其中文件名和扩展名可以是 ``*``\ ，以匹配任意字符串。不允许使用以 ``.`` 开头的筛选器（即空文件名）。
 
-For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png, image/jpeg``, and a ``description`` of ``"Images"`` results in filter text "Images (\*.png, \*.jpg)".
+例如，如果 ``filter`` 为 ``"*.png, *.jpg"``\ ，\ ``mime_type`` 为 ``image/png, image/jpeg``\ ，\ ``description`` 为 ``"图像"``\ ，则生成的筛选器文本为“图像 (\*.png, \*.jpg)”。
 
-\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
+\ **注意：**\ 嵌入的文件对话框和 Windows 文件对话框仅支持文件扩展名，而 Android、Linux 和 macOS 的文件对话框还支持 MIME 类型。
 
 .. rst-class:: classref-item-separator
 
@@ -944,7 +944,7 @@ For example, a ``filter`` of ``"*.png, *.jpg"``, a ``mime_type`` of ``image/png,
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_favorite_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_favorite_list>`
 
-Returns the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to store the list of favorites between project sessions. This method can be called only from the main thread.
+返回所有 **FileDialog** 节点共享的收藏目录列表。有利于在项目会话之间保存收藏列表。该方法只能从主线程中调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1006,7 +1006,7 @@ Returns the list of favorite directories, which is shared by all **FileDialog** 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_recent_list**\ (\ ) |static| :ref:`🔗<class_FileDialog_method_get_recent_list>`
 
-Returns the list of recent directories, which is shared by all **FileDialog** nodes. Useful to store the list of recents between project sessions. This method can be called only from the main thread.
+返回所有 **FileDialog** 节点共享的最近访问目录列表。有利于在项目会话之间保存最近访问的目录列表。该方法只能从主线程中调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1046,9 +1046,9 @@ Returns the list of recent directories, which is shared by all **FileDialog** no
 
 |void| **invalidate**\ (\ ) :ref:`🔗<class_FileDialog_method_invalidate>`
 
-Invalidates and updates this dialog's content list.
+使该对话框的内容列表失效并更新。
 
-\ **Note:** This method does nothing on native file dialogs.
+\ **注意：**\ 该方法对原生文件对话框不执行任何操作。
 
 .. rst-class:: classref-item-separator
 
@@ -1072,7 +1072,7 @@ Invalidates and updates this dialog's content list.
 
 |void| **popup_file_dialog**\ (\ ) :ref:`🔗<class_FileDialog_method_popup_file_dialog>`
 
-Shows the **FileDialog** using the default size and position for file dialogs, and selects the file name if there is a current file.
+使用文件对话框的默认大小和位置显示该 **FileDialog**\ ，如果有当前文件则选择该文件名。
 
 .. rst-class:: classref-item-separator
 
@@ -1084,7 +1084,7 @@ Shows the **FileDialog** using the default size and position for file dialogs, a
 
 |void| **set_customization_flag_enabled**\ (\ flag\: :ref:`Customization<enum_FileDialog_Customization>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_FileDialog_method_set_customization_flag_enabled>`
 
-Sets the specified customization ``flag``, allowing to customize the features available in this **FileDialog**.
+设置指定的自定义标志 ``flag``\ ，允许自定义该 **FileDialog** 的特性。
 
 .. rst-class:: classref-item-separator
 
@@ -1096,9 +1096,9 @@ Sets the specified customization ``flag``, allowing to customize the features av
 
 |void| **set_favorite_list**\ (\ favorites\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_favorite_list>`
 
-Sets the list of favorite directories, which is shared by all **FileDialog** nodes. Useful to restore the list of favorites saved with :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>`. This method can be called only from the main thread.
+设置所有 **FileDialog** 节点共享的收藏目录列表。有利于恢复使用 :ref:`get_favorite_list()<class_FileDialog_method_get_favorite_list>` 保存的收藏列表。该方法只能从主线程中调用。
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of favorites when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **注意：**\ **FileDialog** 在可见性发生变化时会更新其内部的收藏列表 :ref:`ItemList<class_ItemList>`\ 。如果你希望你的更改生效，请务必提前调用该方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1110,7 +1110,7 @@ Sets the list of favorite directories, which is shared by all **FileDialog** nod
 
 |void| **set_get_icon_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_icon_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file<class_FileDialog_theme_icon_file>` icon will be used instead.
+设置 **FileDialog** 节点在使用 :ref:`DISPLAY_LIST<class_FileDialog_constant_DISPLAY_LIST>` 模式时获取文件图标所用的回调函数。该回调函数应接受一个 :ref:`String<class_String>` 类型的参数（文件路径），并返回一个 :ref:`Texture2D<class_Texture2D>` 对象。如果返回的纹理无效，则会改用 :ref:`file<class_FileDialog_theme_icon_file>` 图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1122,9 +1122,9 @@ Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref
 
 |void| **set_get_thumbnail_callback**\ (\ callback\: :ref:`Callable<class_Callable>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_get_thumbnail_callback>`
 
-Sets the callback used by the **FileDialog** nodes to get a file icon, when :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` mode is used. The callback should take a single :ref:`String<class_String>` argument (file path), and return a :ref:`Texture2D<class_Texture2D>`. If an invalid texture is returned, the :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>` icon will be used instead.
+设置 **FileDialog** 节点在使用 :ref:`DISPLAY_THUMBNAILS<class_FileDialog_constant_DISPLAY_THUMBNAILS>` 模式时获取文件图标所用的回调函数。该回调函数应接受一个 :ref:`String<class_String>` 类型的参数（文件路径），并返回一个 :ref:`Texture2D<class_Texture2D>` 对象。如果返回的纹理无效，则会改用 :ref:`file_thumbnail<class_FileDialog_theme_icon_file_thumbnail>` 图标。
 
-Thumbnails are usually more complex and may take a while to load. To avoid stalling the application, you can use :ref:`ImageTexture<class_ImageTexture>` to asynchronously create the thumbnail.
+缩略图通常比较复杂，加载可能需要一些时间。为了避免应用程序卡顿，可以使用 :ref:`ImageTexture<class_ImageTexture>` 来异步创建缩略图。
 
 ::
 
@@ -1137,7 +1137,7 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
         return image_texture
 
     func make_thumbnail_async(path, image_texture):
-        var thumbnail_texture = await generate_thumbnail(path) # Some method that generates a thumbnail.
+        var thumbnail_texture = await generate_thumbnail(path) # 某种用于生成缩略图的方法。
         image_texture.set_image(thumbnail_texture.get_image())
 
 .. rst-class:: classref-item-separator
@@ -1186,9 +1186,9 @@ Thumbnails are usually more complex and may take a while to load. To avoid stall
 
 |void| **set_recent_list**\ (\ recents\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) |static| :ref:`🔗<class_FileDialog_method_set_recent_list>`
 
-Sets the list of recent directories, which is shared by all **FileDialog** nodes. Useful to restore the list of recents saved with :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>`. This method can be called only from the main thread.
+设置由所有 **FileDialog** 节点共享的最近访问目录列表。有利于恢复使用 :ref:`set_recent_list()<class_FileDialog_method_set_recent_list>` 保存的最近访问列表。该方法只能从主线程中调用。
 
-\ **Note:** **FileDialog** will update its internal :ref:`ItemList<class_ItemList>` of recent directories when its visibility changes. Be sure to call this method earlier if you want your changes to have effect.
+\ **注意：**\ **FileDialog** 在其可见性改变时会更新其内部的最近目录 :ref:`ItemList<class_ItemList>`\ 。如果你希望你的更改生效，请务必尽早调用该方法。
 
 .. rst-class:: classref-section-separator
 

@@ -9,14 +9,14 @@ OpenXRSpatialComponentMarkerList
 
 **Hereda:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries marker result data.
+Objeto para almacenar los datos del resultado del marcador de las consultas.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Object for storing the queries marker result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Objeto para almacenar los datos del resultado del marcador de las consultas al llamar a :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -55,7 +55,7 @@ enum **MarkerType**: :ref:`🔗<enum_OpenXRSpatialComponentMarkerList_MarkerType
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_UNKNOWN** = ``0``
 
-Unknown or unset marker type.
+Tipo de marcador desconocido o no establecido.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_QRCODE:
 
@@ -63,7 +63,7 @@ Unknown or unset marker type.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_QRCODE** = ``1``
 
-Marker based on a QR code.
+Marcador basado en un código QR.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_MICRO_QRCODE:
 
@@ -71,7 +71,7 @@ Marker based on a QR code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_MICRO_QRCODE** = ``2``
 
-Marker based on a micro QR code.
+Marcador basado en un código micro QR.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_ARUCO:
 
@@ -79,7 +79,7 @@ Marker based on a micro QR code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_ARUCO** = ``3``
 
-Marker based on an Aruco code.
+Marcador basado en un código Aruco.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_APRIL_TAG:
 
@@ -87,7 +87,7 @@ Marker based on an Aruco code.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_APRIL_TAG** = ``4``
 
-Marker based on an April Tag.
+Marcador basado en un AprilTag.
 
 .. _class_OpenXRSpatialComponentMarkerList_constant_MARKER_TYPE_MAX:
 
@@ -95,7 +95,7 @@ Marker based on an April Tag.
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **MARKER_TYPE_MAX** = ``5``
 
-Maximum value for this enum.
+Valor máximo para esta enumeración.
 
 .. rst-class:: classref-section-separator
 
@@ -112,7 +112,7 @@ Descripciones de Métodos
 
 :ref:`Variant<class_Variant>` **get_marker_data**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_data>`
 
-Returns either a :ref:`String<class_String>` or a :ref:`PackedByteArray<class_PackedByteArray>` buffer with data for the marker at this ``index``. Only applicable for QR code markers.
+Devuelve un búfer :ref:`String<class_String>` o :ref:`PackedByteArray<class_PackedByteArray>` con datos para el marcador en este ``index``. Solo aplicable para marcadores de código QR.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Returns either a :ref:`String<class_String>` or a :ref:`PackedByteArray<class_Pa
 
 :ref:`int<class_int>` **get_marker_id**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_id>`
 
-Returns the marker ID for the marker at this ``index``. Only applicable for Aruco or April Tag markers.
+Devuelve el ID del marcador para el marcador en este ``index``. Solo aplicable para marcadores Aruco o AprilTag.
 
 .. rst-class:: classref-item-separator
 
@@ -136,7 +136,7 @@ Returns the marker ID for the marker at this ``index``. Only applicable for Aruc
 
 :ref:`MarkerType<enum_OpenXRSpatialComponentMarkerList_MarkerType>` **get_marker_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentMarkerList_method_get_marker_type>`
 
-Returns the marker type for the marker at this ``index``.
+Devuelve el tipo de marcador para el marcador en este ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

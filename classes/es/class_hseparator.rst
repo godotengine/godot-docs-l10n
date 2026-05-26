@@ -14,7 +14,7 @@ Una línea horizontal utilizada para separar otros controles.
 Descripción
 ----------------------
 
-A horizontal separator used for separating other controls that are arranged **vertically**. **HSeparator** is purely visual and normally drawn as a :ref:`StyleBoxLine<class_StyleBoxLine>`.
+Un separador horizontal usado para separar otros controles que están organizados **verticalmente**. **HSeparator** es puramente visual y normalmente se dibuja como un :ref:`StyleBoxLine<class_StyleBoxLine>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

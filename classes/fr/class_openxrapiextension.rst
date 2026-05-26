@@ -701,7 +701,7 @@ Sets the render target of the velocity texture.
 
 :ref:`Transform3D<class_Transform3D>` **transform_from_pose**\ (\ pose\: ``const void*``\ ) :ref:`🔗<class_OpenXRAPIExtension_method_transform_from_pose>`
 
-Creates a :ref:`Transform3D<class_Transform3D>` from an `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__.
+Crée une :ref:`Transform3D<class_Transform3D>` depuis une `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -755,7 +755,7 @@ Unregisters the given extension as a provider of additional data structures to p
 
 |void| **update_main_swapchain_size**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_update_main_swapchain_size>`
 
-Request the recommended resolution from the OpenXR runtime and update the main swapchain size if it has changed.
+Demande la résolution recommandée au runtime OpenXR et met à jour la taille de la swapchain principale si elle a changé.
 
 .. rst-class:: classref-item-separator
 

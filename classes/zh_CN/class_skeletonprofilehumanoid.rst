@@ -14,9 +14,9 @@ SkeletonProfileHumanoid
 描述
 ----
 
-A :ref:`SkeletonProfile<class_SkeletonProfile>` as a preset that is optimized for the human form. This exists for standardization, so all parameters are read-only.
+:ref:`SkeletonProfile<class_SkeletonProfile>` 是针对人形优化的预设。它存在的目的是进行标准化，因此所有参数都是只读的。
 
-A humanoid skeleton profile contains 56 bones divided into 4 groups: ``"Body"``, ``"Face"``, ``"LeftHand"``, and ``"RightHand"``. It is structured as follows:
+人形骨架预设包含了 56 根骨骼，分为 ``"Body"``\ （身体）、\ ``"Face"``\ （面部）、 ``"LeftHand"``\ （左手）、\ ``"RightHand"``\ （右手）4 组。结构如下：
 
 .. code:: text
 

@@ -14,9 +14,9 @@ La interfaz del editor de Godot.
 Descripción
 ----------------------
 
-**EditorInterface** gives you control over Godot editor's window. It allows customizing the window, saving and (re-)loading scenes, rendering mesh previews, inspecting and editing resources and objects, and provides access to :ref:`EditorSettings<class_EditorSettings>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`ScriptEditor<class_ScriptEditor>`, the editor viewport, and information about scenes.
+**EditorInterface** te da control sobre la ventana del editor de Godot. Permite personalizar la ventana, guardar y (re)cargar escenas, renderizar vistas previas de mallas, inspeccionar y editar recursos y objetos, y proporciona acceso a :ref:`EditorSettings<class_EditorSettings>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`ScriptEditor<class_ScriptEditor>`, al viewport del editor y a información sobre las escenas.
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton directly by its name.
+\ **Nota:** Esta clase no debe instanciarse directamente. En su lugar, accede al singleton directamente por su nombre.
 
 
 .. tabs::
@@ -27,7 +27,7 @@ Descripción
 
  .. code-tab:: csharp
 
-    // In C# you can access it via the static Singleton property.
+    // En C# puedes acceder a él mediante la propiedad estática Singleton.
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
 
 
@@ -714,7 +714,7 @@ Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``fal
 
 :ref:`bool<class_bool>` **is_object_edited**\ (\ object\: :ref:`Object<class_Object>`\ ) |const| :ref:`🔗<class_EditorInterface_method_is_object_edited>`
 
-Returns ``true`` if the object has been marked as edited through :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
+Devuelve ``true`` si el objecto fue marcado como edited por :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
 
 .. rst-class:: classref-item-separator
 
@@ -848,9 +848,9 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **popup_dialog**\ (\ dialog\: :ref:`Window<class_Window>`, rect\: :ref:`Rect2i<class_Rect2i>` = Rect2i(0, 0, 0, 0)\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog>`
 
-Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive()<class_Window_method_popup_exclusive>`. The dialog must have no current parent, otherwise the method fails.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive()<class_Window_method_popup_exclusive>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
-See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
+También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -862,9 +862,9 @@ See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unpa
 
 |void| **popup_dialog_centered**\ (\ dialog\: :ref:`Window<class_Window>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0)\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered>`
 
-Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive_centered()<class_Window_method_popup_exclusive_centered>`. The dialog must have no current parent, otherwise the method fails.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive_centered()<class_Window_method_popup_exclusive_centered>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
-See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
+También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -876,9 +876,9 @@ See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unpa
 
 |void| **popup_dialog_centered_clamped**\ (\ dialog\: :ref:`Window<class_Window>`, minsize\: :ref:`Vector2i<class_Vector2i>` = Vector2i(0, 0), fallback_ratio\: :ref:`float<class_float>` = 0.75\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered_clamped>`
 
-Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive_centered_clamped()<class_Window_method_popup_exclusive_centered_clamped>`. The dialog must have no current parent, otherwise the method fails.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive_centered_clamped()<class_Window_method_popup_exclusive_centered_clamped>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
-See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
+También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -890,9 +890,9 @@ See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unpa
 
 |void| **popup_dialog_centered_ratio**\ (\ dialog\: :ref:`Window<class_Window>`, ratio\: :ref:`float<class_float>` = 0.8\ ) :ref:`🔗<class_EditorInterface_method_popup_dialog_centered_ratio>`
 
-Pops up the ``dialog`` in the editor UI with :ref:`Window.popup_exclusive_centered_ratio()<class_Window_method_popup_exclusive_centered_ratio>`. The dialog must have no current parent, otherwise the method fails.
+Muestra el ``dialog`` detro del editor dentro de la interfaz de Usuario con :ref:`Window.popup_exclusive_centered_ratio()<class_Window_method_popup_exclusive_centered_ratio>`. El diálogo no debe ser tener un padre y en el caso que tenga padre el método fracasa.
 
-See also :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
+También véase :ref:`Window.set_unparent_when_invisible()<class_Window_method_set_unparent_when_invisible>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1026,7 +1026,7 @@ Saves the currently active scene. Returns either :ref:`@GlobalScope.OK<class_@Gl
 
 |void| **save_scene_as**\ (\ path\: :ref:`String<class_String>`, with_preview\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_EditorInterface_method_save_scene_as>`
 
-Saves the currently active scene as a file at ``path``.
+Guarda la escena actualmente activa como un archivo en ``path``.
 
 .. rst-class:: classref-item-separator
 

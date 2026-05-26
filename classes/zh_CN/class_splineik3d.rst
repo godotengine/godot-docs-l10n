@@ -7,22 +7,22 @@ SplineIK3D
 
 **继承：** :ref:`ChainIK3D<class_ChainIK3D>` **<** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`.
+用于沿 :ref:`Path3D<class_Path3D>` 对齐骨骼的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` for aligning bones along a :ref:`Path3D<class_Path3D>`. The smoothness of the fitting depends on the :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`.
+用于沿 :ref:`Path3D<class_Path3D>` 对齐骨骼的 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ 。拟合的平滑度取决于 :ref:`Curve3D.bake_interval<class_Curve3D_property_bake_interval>`\ 。
 
-If you want the :ref:`Path3D<class_Path3D>` to attach to a specific bone, it is recommended to place a :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` before the **SplineIK3D** in the :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` list (children of the :ref:`Skeleton3D<class_Skeleton3D>`), and then place a :ref:`Path3D<class_Path3D>` as the :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>`'s child.
+如果希望 :ref:`Path3D<class_Path3D>` 附加到特定骨骼，建议在 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 列表中（\ :ref:`Skeleton3D<class_Skeleton3D>` 的子级）将 :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` 放置在 **SplineIK3D** 之前，然后将 :ref:`Path3D<class_Path3D>` 放置为 :ref:`ModifierBoneTarget3D<class_ModifierBoneTarget3D>` 的子节点。
 
-Bone twist is determined based on the :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>`.
+骨骼扭转根据 :ref:`Curve3D.get_point_tilt()<class_Curve3D_method_get_point_tilt>` 确定。
 
-If the root bone joint and the start point of the :ref:`Curve3D<class_Curve3D>` are separated, it assumes that there is a linear line segment between them. This means that the vector pointing toward the start point of the :ref:`Curve3D<class_Curve3D>` takes precedence over the shortest intersection point along the :ref:`Curve3D<class_Curve3D>`.
+如果根骨骼关节与 :ref:`Curve3D<class_Curve3D>` 的起点不重合，则假定它们之间存在一条直线段。这意味着指向 :ref:`Curve3D<class_Curve3D>` 起点的向量优先于沿 :ref:`Curve3D<class_Curve3D>` 的最短交点。
 
-If the end bone joint exceeds the path length, it is bent as close as possible to the end point of the :ref:`Curve3D<class_Curve3D>`.
+如果末端骨骼关节超出路径长度，则会将其弯曲到尽可能靠近 :ref:`Curve3D<class_Curve3D>` 终点的位置。
 
 .. rst-class:: classref-reftable-group
 
@@ -99,7 +99,7 @@ If the end bone joint exceeds the path length, it is bent as close as possible t
 
 :ref:`NodePath<class_NodePath>` **get_path_3d**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_path_3d>`
 
-Returns the node path of the :ref:`Path3D<class_Path3D>` which is describing the path.
+返回描述路径的 :ref:`Path3D<class_Path3D>` 的节点路径。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ Returns the node path of the :ref:`Path3D<class_Path3D>` which is describing the
 
 :ref:`int<class_int>` **get_tilt_fade_in**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_tilt_fade_in>`
 
-Returns the tilt interpolation method used between the root bone and the start point of the :ref:`Curve3D<class_Curve3D>` when they are apart. See also :ref:`set_tilt_fade_in()<class_SplineIK3D_method_set_tilt_fade_in>`.
+根骨骼与 :ref:`Curve3D<class_Curve3D>` 起始点不重合时，返回它们之间使用的倾斜插值方法。另见 :ref:`set_tilt_fade_in()<class_SplineIK3D_method_set_tilt_fade_in>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ Returns the tilt interpolation method used between the root bone and the start p
 
 :ref:`int<class_int>` **get_tilt_fade_out**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_get_tilt_fade_out>`
 
-Returns the tilt interpolation method used between the end bone and the end point of the :ref:`Curve3D<class_Curve3D>` when they are apart. See also :ref:`set_tilt_fade_out()<class_SplineIK3D_method_set_tilt_fade_out>`.
+当末端骨骼和 :ref:`Curve3D<class_Curve3D>` 的终点不重合时，返回它们之间使用的倾斜插值的方法。另见 :ref:`set_tilt_fade_out()<class_SplineIK3D_method_set_tilt_fade_out>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -135,7 +135,7 @@ Returns the tilt interpolation method used between the end bone and the end poin
 
 :ref:`bool<class_bool>` **is_tilt_enabled**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SplineIK3D_method_is_tilt_enabled>`
 
-Returns if the tilt property of the :ref:`Curve3D<class_Curve3D>` affects the bone twist.
+返回 :ref:`Curve3D<class_Curve3D>` 的倾斜属性是否影响骨骼扭转。
 
 .. rst-class:: classref-item-separator
 
@@ -147,7 +147,7 @@ Returns if the tilt property of the :ref:`Curve3D<class_Curve3D>` affects the bo
 
 |void| **set_path_3d**\ (\ index\: :ref:`int<class_int>`, path_3d\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_SplineIK3D_method_set_path_3d>`
 
-Sets the node path of the :ref:`Path3D<class_Path3D>` which is describing the path.
+设置描述路径的 :ref:`Path3D<class_Path3D>` 的节点路径。
 
 .. rst-class:: classref-item-separator
 
@@ -159,7 +159,7 @@ Sets the node path of the :ref:`Path3D<class_Path3D>` which is describing the pa
 
 |void| **set_tilt_enabled**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_enabled>`
 
-Sets if the tilt property of the :ref:`Curve3D<class_Curve3D>` should affect the bone twist.
+设置 :ref:`Curve3D<class_Curve3D>` 的倾斜属性是否应该影响骨骼的扭转。
 
 .. rst-class:: classref-item-separator
 
@@ -171,11 +171,11 @@ Sets if the tilt property of the :ref:`Curve3D<class_Curve3D>` should affect the
 
 |void| **set_tilt_fade_in**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_fade_in>`
 
-If ``size`` is greater than ``0``, the tilt is interpolated between ``size`` start bones from the start point of the :ref:`Curve3D<class_Curve3D>` when they are apart.
+如果 ``size`` 大于 ``0``\ ，则当它们彼此分离时，倾斜角度会在从 :ref:`Curve3D<class_Curve3D>` 起始点起的 ``size`` 个起始骨骼之间进行插值计算。
 
-If ``size`` is equal ``0``, the tilts between the root bone head and the start point of the :ref:`Curve3D<class_Curve3D>` are unified with a tilt of the start point of the :ref:`Curve3D<class_Curve3D>`.
+如果 ``size`` 等于 ``0``\ ，则根骨骼头部和 :ref:`Curve3D<class_Curve3D>` 起始点之间的倾斜角度将与 :ref:`Curve3D<class_Curve3D>` 起始点的倾斜角度保持一致。
 
-If ``size`` is less than ``0``, the tilts between the root bone and the start point of the :ref:`Curve3D<class_Curve3D>` are ``0.0``.
+如果 ``size`` 小于 ``0``\ ，则根骨骼和 :ref:`Curve3D<class_Curve3D>` 起始点之间的倾斜角度为 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -187,11 +187,11 @@ If ``size`` is less than ``0``, the tilts between the root bone and the start po
 
 |void| **set_tilt_fade_out**\ (\ index\: :ref:`int<class_int>`, size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplineIK3D_method_set_tilt_fade_out>`
 
-If ``size`` is greater than ``0``, the tilt is interpolated between ``size`` end bones from the end point of the :ref:`Curve3D<class_Curve3D>` when they are apart.
+如果 ``size`` 大于 ``0``\ ，则当它们彼此分离时，倾斜角度会在从 :ref:`Curve3D<class_Curve3D>` 终点起的 ``size`` 个末端骨骼之间进行插值计算。
 
-If ``size`` is equal ``0``, the tilts between the end bone tail and the end point of the :ref:`Curve3D<class_Curve3D>` are unified with a tilt of the end point of the :ref:`Curve3D<class_Curve3D>`.
+如果 ``size`` 等于 ``0``\ ，则末端骨骼尾部与 :ref:`Curve3D<class_Curve3D>` 终点之间的倾斜角度将与 :ref:`Curve3D<class_Curve3D>` 终点的倾斜角度保持一致。
 
-If ``size`` is less than ``0``, the tilts between the end bone and the end point of the :ref:`Curve3D<class_Curve3D>` are ``0.0``.
+如果 ``size`` 小于 ``0``\ ，则末端骨骼与 :ref:`Curve3D<class_Curve3D>` 终点之间的倾斜角度为 ``0.0``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

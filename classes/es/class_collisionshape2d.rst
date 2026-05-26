@@ -69,9 +69,9 @@ Descripciones de Propiedades
 - |void| **set_debug_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_color**\ (\ )
 
-The collision shape color that is displayed in the editor, or in the running project if **Debug > Visible Collision Shapes** is checked at the top of the editor.
+El color de la forma de colisión (collision shape) que se muestra en el editor, o en el proyecto en ejecución si la opción **Depuración > Formas de colisión visibles** está marcada en la parte superior del editor.
 
-\ **Note:** The default value is :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. The ``Color(0, 0, 0, 0)`` value documented here is a placeholder, and not the actual default debug color.
+\ **Nota:** El valor por defecto es :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. El valor ``Color(0, 0, 0, 0)`` documentado aquí es un marcador de posición (placeholder) y no el color de depuración real por defecto.
 
 .. rst-class:: classref-item-separator
 

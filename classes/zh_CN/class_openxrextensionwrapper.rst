@@ -16,17 +16,17 @@ OpenXRExtensionWrapper
 描述
 ----
 
-**OpenXRExtensionWrapper** allows implementing OpenXR extensions with GDExtension. The extension should be registered with :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`.
+**OpenXRExtensionWrapper** 允许使用 GDExtension 实现 OpenXR 扩展。扩展必须使用 :ref:`register_extension_wrapper()<class_OpenXRExtensionWrapper_method_register_extension_wrapper>` 方法进行注册。
 
-When :ref:`OpenXRInterface<class_OpenXRInterface>` is initialized as the primary interface and any :ref:`Viewport<class_Viewport>` has :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` set to ``true``, OpenXR will become involved in Godot's rendering process. If :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>` is set to "Separate", Godot's renderer will run on its own thread, and special care must be taken in all **OpenXRExtensionWrapper**\ s in order to prevent crashes or unexpected behavior. Some virtual methods will be called on the render thread, and any data they access should not be directly written to on the main thread. This is to prevent two potential issues:
+当 :ref:`OpenXRInterface<class_OpenXRInterface>` 被初始化为主接口，并且任何 :ref:`Viewport<class_Viewport>` 的 :ref:`Viewport.use_xr<class_Viewport_property_use_xr>` 被设置为 ``true`` 时，OpenXR 将参与 Godot 的渲染过程。如果 :ref:`ProjectSettings.rendering/driver/threads/thread_model<class_ProjectSettings_property_rendering/driver/threads/thread_model>` 被设置为“Separate”，Godot 的渲染器将在其自己的线程上运行，因此所有 **OpenXRExtensionWrapper** 都必须特别注意，以防止崩溃或意外行为。一些虚方法将在渲染线程上调用，它们访问的任何数据都不应在主线程上直接写入。这是为了防止两个潜在问题：
 
-1. Changes intended for the next frame, taking effect on the current frame. When using the "Separate" thread model, the main thread will immediately start working on the next frame while the render thread may still be rendering the current frame. If the main thread changes anything used by the render thread directly, the change could end up being used one frame earlier than intended.
+1. 旨在用于下一帧的更改，却在当前帧生效。使用“Separate”线程模型时，主线程会立即开始处理下一帧，而渲染线程可能仍在渲染当前帧。如果主线程直接更改渲染线程使用的任何内容，则更改可能会比预期提前一帧生效。
 
-2. Reading and writing to the same data at the same time from different threads can lead to the render thread using data in an invalid state.
+2. 从不同的线程同时读取和写入相同的数据会导致渲染线程使用处于无效状态的数据。
 
-In most cases, the solution is to use :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` to schedule :ref:`Callable<class_Callable>`\ s to write to any data used on the render thread. When using the "Separate" thread model, these :ref:`Callable<class_Callable>`\ s will run after the renderer finishes the current frame and before it starts rendering the next frame. When not using this mode, they'll run immediately, so it's recommended to always use :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` in these cases, which will allow your code to do the right thing regardless of the thread model.
+在大多数情况下，解决方案是使用 :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>` 来调度 :ref:`Callable<class_Callable>` 函数，以便写入渲染线程上使用的任何数据。使用“Separate”线程模型时，这些 :ref:`Callable<class_Callable>` 函数将在渲染器完成当前帧渲染后、开始渲染下一帧之前运行。不使用该模式时，它们会立即运行，因此建议始终在这些情况下使用 :ref:`RenderingServer.call_on_render_thread()<class_RenderingServer_method_call_on_render_thread>`\ ，这样无论使用哪种线程模型，你的代码都能正常工作。
 
-Any virtual methods that run on the render thread will be noted below.
+任何在渲染线程上运行的虚方法都将在下面注明。
 
 .. rst-class:: classref-reftable-group
 
@@ -145,11 +145,11 @@ Any virtual methods that run on the render thread will be noted below.
 
 :ref:`int<class_int>` **_get_composition_layer**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`
 
-Returns a pointer to an ``XrCompositionLayerBaseHeader`` struct to provide the given composition layer.
+返回指向 ``XrCompositionLayerBaseHeader`` 结构的指针以提供给定的合成层。
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+仅当扩展先前使用 :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>` 注册自身后才会调用该函数。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，它返回的数据将在调用该方法后不久使用，因此它需要保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行为止。
 
 .. rst-class:: classref-item-separator
 
@@ -161,11 +161,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_get_composition_layer_count**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer_count>`
 
-Returns the number of composition layers this extension wrapper provides via :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`.
+通过 :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>` 返回该扩展包装器提供的合成层数量。
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+仅当扩展先前使用 :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>` 注册自身时，才会调用该方法。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，它返回的数据将在调用该方法后不久使用，因此它需要保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行为止。
 
 .. rst-class:: classref-item-separator
 
@@ -177,11 +177,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_get_composition_layer_order**\ (\ index\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_composition_layer_order>`
 
-Returns an integer that will be used to sort the given composition layer provided via :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>`. Lower numbers will move the layer to the front of the list, and higher numbers to the end. The default projection layer has an order of ``0``, so layers provided by this method should probably be above or below (but not exactly) ``0``.
+返回一个整数，该整数将用于对通过 :ref:`_get_composition_layer()<class_OpenXRExtensionWrapper_private_method__get_composition_layer>` 提供的给定合成层进行排序。数字越小，层就越容易移到列表的最前面，数字越大，层就越容易移到列表的最后面。默认投影层的顺序为 ``0``\ ，因此该方法提供的层可能应该位于（但不完全位于）\ ``0`` 的上方或下方。
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>`.
+仅当扩展程序先前使用 :ref:`OpenXRAPIExtension.register_composition_layer_provider()<class_OpenXRAPIExtension_method_register_composition_layer_provider>` 注册自身时，才会调用该方法。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，它返回的数据将在调用该方法后不久使用，因此它需要保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行为止。
 
 .. rst-class:: classref-item-separator
 
@@ -193,11 +193,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`Dictionary<class_Dictionary>` **_get_requested_extensions**\ (\ xr_version\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_requested_extensions>`
 
-Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to this extension. ``xr_version`` specifies the OpenXR version we're instantiating. This will be zero if the editor requests this list to flag supported features. The :ref:`Dictionary<class_Dictionary>` should contain the name of the extension, mapped to a ``bool *`` cast to an integer:
+返回与该扩展相关的 OpenXR 扩展的 :ref:`Dictionary<class_Dictionary>`\ 。\ ``xr_version`` 指定我们正在实例化的 OpenXR 版本。如果编辑器请求该列表以标记支持的功能，则该值将为零。\ :ref:`Dictionary<class_Dictionary>` 应包含扩展的名称，并将其映射到一个强制转换为整数的 ``bool *`` 类型指针：
 
-- If the ``bool *`` is a ``nullptr`` this extension is mandatory.
+- 如果 ``bool *`` 是 ``nullptr``\ ，则该扩展是强制性的。
 
-- If the ``bool *`` points to a boolean, the boolean will be updated to ``true`` if the extension is enabled.
+- 如果 ``bool *`` 指向布尔值，则在启用扩展的情况下，该布尔值将更新为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -221,9 +221,9 @@ Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to th
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_viewport_composition_layer_extension_properties**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`
 
-Gets an array of :ref:`Dictionary<class_Dictionary>`\ s that represent properties, just like :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`, that will be added to :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` nodes.
+获取表示属性的 :ref:`Dictionary<class_Dictionary>` 数组，就像 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 一样，将被添加到 :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` 节点。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -247,9 +247,9 @@ Gets an array of :ref:`Dictionary<class_Dictionary>`\ s that represent propertie
 
 |void| **_on_before_instance_created**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_before_instance_created>`
 
-Called before the OpenXR instance is created.
+在 OpenXR 实例创建之前调用。
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **注意：**\ 该虚方法将在主线程上调用，但它会在 OpenXR 参与渲染\ *之前*\ 调用，因此可以安全地写入渲染线程将使用的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ Called before the OpenXR instance is created.
 
 |void| **_on_instance_created**\ (\ instance\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_instance_created>`
 
-Called right after the OpenXR instance is created.
+在 OpenXR 实例创建后立即调用。
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **注意：**\ 该虚方法将在主线程上调用，但会在 OpenXR 参与渲染\ *之前*\ 调用，因此可以安全地写入渲染线程将使用的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -287,9 +287,9 @@ Called right after the OpenXR instance is created.
 
 |void| **_on_instance_destroyed**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_instance_destroyed>`
 
-Called right before the OpenXR instance is destroyed.
+在 OpenXR 实例销毁之前调用。
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *after* OpenXR is done being involved in rendering, so it is safe to write to data that was used by the render thread.
+\ **注意：**\ 该虚方法将在主线程上调用，但会在 OpenXR 完成渲染\ *之后*\ 调用，因此可以安全地写入渲染线程使用的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -301,9 +301,9 @@ Called right before the OpenXR instance is destroyed.
 
 |void| **_on_main_swapchains_created**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_main_swapchains_created>`
 
-Called right after the main swapchains are (re)created.
+在主交换链（重新）创建后立即调用。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -315,11 +315,11 @@ Called right after the main swapchains are (re)created.
 
 |void| **_on_post_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_post_draw_viewport>`
 
-Called right after the given viewport is rendered.
+在给定视口渲染完成后立即调用。
 
-\ **Note:** The draw commands might only be queued at this point, not executed.
+\ **注意：**\ 此时绘制命令可能只是在队列中，尚未执行。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -331,9 +331,9 @@ Called right after the given viewport is rendered.
 
 |void| **_on_pre_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_draw_viewport>`
 
-Called right before the given viewport is rendered.
+在给定视口渲染之前调用。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -345,9 +345,9 @@ Called right before the given viewport is rendered.
 
 |void| **_on_pre_render**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_render>`
 
-Called right before the XR viewports begin their rendering step.
+在 XR 视口开始其渲染步骤之前调用。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -385,9 +385,9 @@ Called right before the XR viewports begin their rendering step.
 
 |void| **_on_session_created**\ (\ session\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_session_created>`
 
-Called right after the OpenXR session is created.
+在 OpenXR 会话创建后立即调用。
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *before* OpenXR becomes involved in rendering, so it is safe to write to data that will be used by the render thread.
+\ **注意：**\ 该虚方法将在主线程上调用，但会在 OpenXR 参与渲染\ *之前*\ 调用，因此可以安全地写入渲染线程将使用的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -399,9 +399,9 @@ Called right after the OpenXR session is created.
 
 |void| **_on_session_destroyed**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_session_destroyed>`
 
-Called right before the OpenXR session is destroyed.
+在 OpenXR 会话销毁之前调用。
 
-\ **Note:** This virtual method will be called on the main thread, however, it will be called *after* OpenXR is done being involved in rendering, so it is safe to write to data that was used by the render thread.
+\ **注意：**\ 该虚方法将在主线程上调用，但会在 OpenXR 完成渲染相关操作\ *之后*\ 调用，因此可以安全地写入渲染线程使用的数据。
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +535,7 @@ Called right before the OpenXR session is destroyed.
 
 |void| **_prepare_view_configuration**\ (\ view_count\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__prepare_view_configuration>`
 
-Called before :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>` to allow the extension to reserve data for the given number of views.
+在 :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>` 之前调用，以允许扩展为给定数量的视图保留数据。
 
 .. rst-class:: classref-item-separator
 
@@ -547,7 +547,7 @@ Called before :ref:`_set_view_configuration_and_get_next_pointer()<class_OpenXRE
 
 |void| **_print_view_configuration_info**\ (\ view\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__print_view_configuration_info>`
 
-Called to allow an extension to print additional information about its view configuration, if applicable. This will only be called if verbose output is enabled.
+如果适用，调用以用于允许扩展打印有关其视图配置的更多信息。仅当详细输出启用时才会调用该方法。
 
 .. rst-class:: classref-item-separator
 
@@ -559,11 +559,11 @@ Called to allow an extension to print additional information about its view conf
 
 :ref:`int<class_int>` **_set_android_surface_swapchain_create_info_and_get_next_pointer**\ (\ property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures to Android surface swapchains created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+向由 :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` 创建的 Android 表面交换链添加额外的数据结构。
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` 包含 :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>` 返回的属性值。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -575,11 +575,11 @@ Add additional data structures to Android surface swapchains created by :ref:`Op
 
 :ref:`int<class_int>` **_set_frame_end_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameEndInfo``.
+向 ``XrFrameEndInfo`` 添加额外的数据结构。
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+仅当扩展之前已通过 :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>` 注册自身后才会调用。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，它返回的数据将在调用该方法后不久使用，因此该数据必须保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行。
 
 .. rst-class:: classref-item-separator
 
@@ -591,11 +591,11 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_frame_wait_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_wait_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameWaitInfo``.
+向 ``XrFrameWaitInfo`` 添加额外的数据结构。
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+仅当扩展之前已通过 :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>` 方法注册自身后才会调用。
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **注意：**\ 该虚方法将在渲染线程上调用。
 
 .. rst-class:: classref-item-separator
 
@@ -607,7 +607,7 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_hand_joint_locations_and_get_next_pointer**\ (\ hand_index\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_hand_joint_locations_and_get_next_pointer>`
 
-Add additional data structures when each hand tracker is created.
+当每个手部跟踪器被创建时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -619,7 +619,7 @@ Add additional data structures when each hand tracker is created.
 
 :ref:`int<class_int>` **_set_instance_create_info_and_get_next_pointer**\ (\ xr_version\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_instance_create_info_and_get_next_pointer>`
 
-Add additional data structures when the OpenXR instance is created. ``xr_version`` specifies the OpenXR version we're instantiating.
+在 OpenXR 实例被创建时添加额外的数据结构。\ ``xr_version`` 指定我们要实例化的 OpenXR 版本。
 
 .. rst-class:: classref-item-separator
 
@@ -631,9 +631,9 @@ Add additional data structures when the OpenXR instance is created. ``xr_version
 
 :ref:`int<class_int>` **_set_projection_views_and_get_next_pointer**\ (\ view_index\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_projection_views_and_get_next_pointer>`
 
-Add additional data structures to the projection view of the given ``view_index``.
+向给定 ``view_index`` 的投影视图添加额外数据结构。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，该方法返回的数据将在调用该方法后不久使用，因此它需要保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行。
 
 .. rst-class:: classref-item-separator
 
@@ -645,7 +645,7 @@ Add additional data structures to the projection view of the given ``view_index`
 
 :ref:`int<class_int>` **_set_reference_space_create_info_and_get_next_pointer**\ (\ reference_space_type\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_reference_space_create_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrReferenceSpaceCreateInfo``.
+向 ``XrReferenceSpaceCreateInfo`` 添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -657,7 +657,7 @@ Add additional data structures to ``XrReferenceSpaceCreateInfo``.
 
 :ref:`int<class_int>` **_set_session_create_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_session_create_and_get_next_pointer>`
 
-Add additional data structures when the OpenXR session is created.
+在 OpenXR 会话创建时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -669,7 +669,7 @@ Add additional data structures when the OpenXR session is created.
 
 :ref:`int<class_int>` **_set_swapchain_create_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures when creating OpenXR swapchains.
+在 OpenXR 交换链创建时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -681,7 +681,7 @@ Add additional data structures when creating OpenXR swapchains.
 
 :ref:`int<class_int>` **_set_system_properties_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_system_properties_and_get_next_pointer>`
 
-Add additional data structures when querying OpenXR system abilities.
+在查询 OpenXR 系统功能时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -693,7 +693,7 @@ Add additional data structures when querying OpenXR system abilities.
 
 :ref:`int<class_int>` **_set_view_configuration_and_get_next_pointer**\ (\ view\: :ref:`int<class_int>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_configuration_and_get_next_pointer>`
 
-Add additional data structures when querying OpenXR view configuration.
+在查询 OpenXR 视图配置时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -705,11 +705,11 @@ Add additional data structures when querying OpenXR view configuration.
 
 :ref:`int<class_int>` **_set_view_locate_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_view_locate_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrViewLocateInfo``.
+为 ``XrViewLocateInfo`` 添加额外的数据结构。
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+仅当扩展先前使用 :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>` 注册自身时才会调用该函数。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，该方法返回的数据将在调用该方法后不久使用，因此它需要保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行。
 
 .. rst-class:: classref-item-separator
 
@@ -721,13 +721,13 @@ This will only be called if the extension previously registered itself with :ref
 
 :ref:`int<class_int>` **_set_viewport_composition_layer_and_get_next_pointer**\ (\ layer\: ``const void*``, property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_viewport_composition_layer_and_get_next_pointer>`
 
-Add additional data structures to composition layers created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+向由 :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` 创建的合成层添加其他数据结构。
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` 包含 :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>` 返回的属性值。
 
-\ ``layer`` is a pointer to an ``XrCompositionLayerBaseHeader`` struct.
+\ ``layer`` 是指向 ``XrCompositionLayerBaseHeader`` 结构的指针。
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **注意：**\ 该虚方法将在渲染线程上调用。此外，该方法返回的数据将在调用该方法后不久使用，因此它需要保持有效，直到下次 :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` 运行。
 
 .. rst-class:: classref-item-separator
 
@@ -751,9 +751,9 @@ Add additional data structures to composition layers created by :ref:`OpenXRComp
 
 |void| **register_extension_wrapper**\ (\ ) :ref:`🔗<class_OpenXRExtensionWrapper_method_register_extension_wrapper>`
 
-Registers the extension. This should happen at core module initialization level.
+注册扩展。这应该发生在核心模块初始化阶段。
 
-\ **Note:** This cannot be called once OpenXR has been initialized.
+\ **注意：**\ OpenXR 初始化后不能再调用该函数。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

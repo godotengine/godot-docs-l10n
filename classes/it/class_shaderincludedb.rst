@@ -14,7 +14,7 @@ Database interno dei file include integrati degli shader.
 Descrizione
 ----------------------
 
-Questo oggetto contiene frammenti di shader dagli shader interni di Godot. È possibile usarli quando è richiesto l'accesso ai buffer interni di uniformi e/o alle funzioni interne, ad esempio quando si compongono effetti di compositor o shader di calcolo. Sono caricati solo i frammenti per il dispositivo di rendering attuale.
+Questo oggetto contiene frammenti di shader dagli shader interni di Godot. È possibile usarli quando è richiesto l'accesso ai buffer interni di uniformi e/o alle funzioni interne, ad esempio quando si compongono effetti compositore o shader di calcolo. Sono caricati solo i frammenti per il dispositivo di rendering attuale.
 
 .. rst-class:: classref-reftable-group
 

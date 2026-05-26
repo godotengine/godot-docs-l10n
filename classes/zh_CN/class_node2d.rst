@@ -339,9 +339,9 @@ Node2D
 
 :ref:`float<class_float>` **get_angle_to**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Node2D_method_get_angle_to>`
 
-Returns the angle between the node and the ``point`` in radians. See also :ref:`look_at()<class_Node2D_method_look_at>`.
+返回该节点和 ``point`` 之间的夹角，单位为弧度。另见 :ref:`look_at()<class_Node2D_method_look_at>`\ 。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
+\ `返回夹角的示意图。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ Returns the angle between the node and the ``point`` in radians. See also :ref:`
 
 |void| **look_at**\ (\ point\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_look_at>`
 
-Rotates the node so that its local +X axis points towards the ``point``, which is expected to use global coordinates. This method is a combination of both :ref:`rotate()<class_Node2D_method_rotate>` and :ref:`get_angle_to()<class_Node2D_method_get_angle_to>`.
+旋转该节点，使其局部 X 轴的正方向指向 ``point``\ ，该参数应使用全局坐标。该方法是 :ref:`rotate()<class_Node2D_method_rotate>` 和 :ref:`get_angle_to()<class_Node2D_method_get_angle_to>` 的结合。
 
-\ ``point`` should not be the same as the node's position, otherwise the node always looks to the right.
+\ ``point`` 不应该与该节点的位置相同，否则该节点始终看向右侧。
 
 .. rst-class:: classref-item-separator
 
@@ -391,7 +391,7 @@ Rotates the node so that its local +X axis points towards the ``point``, which i
 
 |void| **move_local_x**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_x>`
 
-Applies a local translation on the node's X axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+在节点的 X 轴应用局部平移，平移量由 ``delta`` 指定。如果 ``scaled`` 为 ``false``\ ，则对移动进行归一化处理，使其不受节点 :ref:`scale<class_Node2D_property_scale>` 的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -403,7 +403,7 @@ Applies a local translation on the node's X axis with the amount specified in ``
 
 |void| **move_local_y**\ (\ delta\: :ref:`float<class_float>`, scaled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node2D_method_move_local_y>`
 
-Applies a local translation on the node's Y axis with the amount specified in ``delta``. If ``scaled`` is ``false``, normalizes the movement to occur independently of the node's :ref:`scale<class_Node2D_property_scale>`.
+在节点的 Y 轴应用局部平移，平移量由 ``delta`` 指定。如果 ``scaled`` 为 ``false``\ ，则对移动进行归一化处理，使其不受节点 :ref:`scale<class_Node2D_property_scale>` 的影响。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Applies a local translation on the node's Y axis with the amount specified in ``
 
 |void| **rotate**\ (\ radians\: :ref:`float<class_float>`\ ) :ref:`🔗<class_Node2D_method_rotate>`
 
-Applies a rotation to the node, in radians, starting from its current rotation. This is equivalent to ``rotation += radians``.
+从节点的当前旋转开始，以弧度为单位，对节点进行旋转。这相当于 ``rotation += radians``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +451,7 @@ Applies a rotation to the node, in radians, starting from its current rotation. 
 
 |void| **translate**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Node2D_method_translate>`
 
-Translates the node by the given ``offset`` in local coordinates. This is equivalent to ``position += offset``.
+在局部坐标系中，将该节点按给定的偏移量 ``offset`` 进行平移。这相当于 ``position += offset``\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

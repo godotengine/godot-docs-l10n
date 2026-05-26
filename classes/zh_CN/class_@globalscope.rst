@@ -784,7 +784,7 @@ enum **Key**: :ref:`🔗<enum_@GlobalScope_Key>`
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_ESCAPE** = ``4194305``
 
-ESC 键。
+Esc 键。
 
 .. _class_@GlobalScope_constant_KEY_TAB:
 
@@ -2272,7 +2272,7 @@ Z 键。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_BAR** = ``124``
 
-垂直的条或\ *竖线*\ （\ ``|``\ 键）。
+竖杠或\ *竖线*\ （\ ``|``\ ）键。
 
 .. _class_@GlobalScope_constant_KEY_BRACERIGHT:
 
@@ -3867,14 +3867,14 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_TOOL_BUTTON** = ``39``
 
-一个\ :ref:`Callable<class_Callable>`\ 属性应当被显示为一个可点击的按钮。当按钮被按下，该属性被调用。提示字符串指定了按钮的文本并可以通过\ ``"EditorIcons"``\ 主题类型指定一个图标。
+提示属性是一个 :ref:`Callable<class_Callable>`\ ，应当被显示为可点击的按钮。按钮被按下时，该可调用体将被调用。提示字符串指定了按钮的文本以及可选的 ``"EditorIcons"`` 主题类型中的一个图标。
 
 .. code:: text
 
-    "Click me!" - 一个按钮，文本为“Click me!”，图标是默认的“Callable”图标。
-    "Click me!,ColorRect" - 一个按钮，文本为“Click me!”，图标是“ColorRect”图标。
+    "Click me!"——一个按钮，文本为“Click me!”，图标是默认的“Callable”图标。
+    "Click me!,ColorRect"——一个按钮，文本为“Click me!”，图标是“ColorRect”图标。
 
-\ **注意：**\ 一个可调用对象\ :ref:`Callable<class_Callable>`\ 无法被妥善序列化和保存到文件，所以建议使用\ :ref:`PROPERTY_USAGE_EDITOR<class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR>`\ 而不是\ :ref:`PROPERTY_USAGE_DEFAULT<class_@GlobalScope_constant_PROPERTY_USAGE_DEFAULT>`\ 。
+\ **注意：**\ 一个可调用对象 :ref:`Callable<class_Callable>` 无法被妥善序列化和保存到文件，所以建议使用 :ref:`PROPERTY_USAGE_EDITOR<class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR>` 而不是 :ref:`PROPERTY_USAGE_DEFAULT<class_@GlobalScope_constant_PROPERTY_USAGE_DEFAULT>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ONESHOT:
 
@@ -3882,7 +3882,7 @@ enum **PropertyHint**: :ref:`🔗<enum_@GlobalScope_PropertyHint>`
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ONESHOT** = ``40``
 
-提示一个属性在设置后仍会自动被改变，例如\ :ref:`AudioStreamPlayer.playing<class_AudioStreamPlayer_property_playing>`\ 或\ :ref:`GPUParticles3D.emitting<class_GPUParticles3D_property_emitting>`\ 。
+提示一个属性在被设置后仍会自动改变，例如 :ref:`AudioStreamPlayer.playing<class_AudioStreamPlayer_property_playing>` 或 :ref:`GPUParticles3D.emitting<class_GPUParticles3D_property_emitting>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_GROUP_ENABLE:
 
@@ -4034,7 +4034,7 @@ flags **PropertyUsageFlags**: :ref:`🔗<enum_@GlobalScope_PropertyUsageFlags>`
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_SCRIPT_VARIABLE** = ``4096``
 
-本属性是一个脚本变量。\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>`\ 可以用来把导出的脚本变量与内建变量（没有这一项使用标识）区分开来。默认情况下，\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>`\ 对脚本中通过重载\ :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`\ 创建的变量\ **不生效**\ 。
+该属性是一个脚本变量。\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` 可以用来把被导出的脚本变量与内置变量（没有这种使用标识）区分开来。默认情况下，\ :ref:`PROPERTY_USAGE_SCRIPT_VARIABLE<class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_VARIABLE>` 对脚本中通过重载 :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>` 创建的变量\ **不生效**\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_STORE_IF_NULL:
 
@@ -6284,15 +6284,15 @@ enum **Variant.Operator**: :ref:`🔗<enum_@GlobalScope_Variant.Operator>`
 
 :ref:`float<class_float>` **log**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_log>`
 
-返回 ``x`` 的\ `自然对数 <https://zh.wikipedia.org/zh-cn/%E8%87%AA%E7%84%B6%E5%B0%8D%E6%95%B8>`__\ （底数为 `[i]e[/i] <https://zh.wikipedia.org/zh-cn/E_(%E6%95%B0%E5%AD%A6%E5%B8%B8%E6%95%B0)>`__\ ，\ *e* 约为 2.71828）。这是持续增长到一定程度所需的时间。
+返回 `natural logarithm <https://en.wikipedia.org/wiki/Natural_logarithm>`__ of ``x`` (base `[i]e[/i] <https://en.wikipedia.org/wiki/E_(mathematical_constant)>`__, with *e* being approximately 2.71828). 这就是达到某种程度的连续增长所需要的时间。
 
-\ **注意：**\ 这个函数与大多数计算器上的对数“log”函数不同，他们适用的底数是 10。要使用底数为 10 的对数，请使用 ``log(x) / log(10)``\ 。
+\ **注意：** 这和大多数计算器上的 "log" 函数不一样，计算器上那个用的是以 10 为底的对数。 如果想要使用以 10 为底的对数，请使用 ``log(x) / log(10)``\ 。
 
 ::
 
     log(10) # 返回 2.302585
 
-\ **注意：**\ ``0`` 的对数返回 ``-inf``\ ，负值返回 ``-nan``\ 。
+\ **注意：** 当输入为 ``0`` 时，对数函数会返回 ``-inf``\ ，而输入负数则会返回 ``-nan``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -6899,7 +6899,7 @@ URL 标签仅支持在 URL 标签中包含 URL，不支持使用不同标题的 
 
 :ref:`int<class_int>` **randi_range**\ (\ from\: :ref:`int<class_int>`, to\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_randi_range>`
 
-返回介于 ``from`` 和 ``to``\ （包含）之间的一个随机有符号 32 位整数。如果 ``to`` 小于 ``from``\ ，则它们将被交换。
+返回一个介于 ``from`` 和 ``to`` 之间的随机有符号 32 位整数（包含这两个边界值）。如果 ``to`` 比 ``from`` 小，它们会自动交换。
 
 
 .. tabs::

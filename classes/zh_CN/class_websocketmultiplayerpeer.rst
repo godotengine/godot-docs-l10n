@@ -14,7 +14,7 @@ WebSocket 服务器和客户端的基类。
 描述
 ----
 
-用于 WebSocket 服务器和客户端的基类，可以用作 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的多人对等体。
+用于 WebSocket 服务器和客户端的基类，可以用作 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的多人对等端。
 
 \ **注意：**\ 导出到安卓时，在导出项目或使用一键部署之前，请务必在安卓导出预设中开启 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
 
@@ -99,7 +99,7 @@ WebSocket 服务器和客户端的基类。
 - |void| **set_handshake_timeout**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_handshake_timeout**\ (\ )
 
-每个对等体在被丢弃之前可以保持在连接状态的最长时间。
+每个对等端在被丢弃之前可以保持在连接状态的最长时间。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ WebSocket 服务器和客户端的基类。
 - |void| **set_inbound_buffer_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_inbound_buffer_size**\ (\ )
 
-已连接对等体的入站缓冲区大小。详见 :ref:`WebSocketPeer.inbound_buffer_size<class_WebSocketPeer_property_inbound_buffer_size>`\ 。
+已连接对等端的入站缓冲区大小。详见 :ref:`WebSocketPeer.inbound_buffer_size<class_WebSocketPeer_property_inbound_buffer_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ WebSocket 服务器和客户端的基类。
 - |void| **set_max_queued_packets**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_queued_packets**\ (\ )
 
-已连接对等体的最大排队数据包数量。详见 :ref:`WebSocketPeer.max_queued_packets<class_WebSocketPeer_property_max_queued_packets>`\ 。
+已连接对等端的最大排队数据包数量。详见 :ref:`WebSocketPeer.max_queued_packets<class_WebSocketPeer_property_max_queued_packets>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ WebSocket 服务器和客户端的基类。
 - |void| **set_outbound_buffer_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_outbound_buffer_size**\ (\ )
 
-已连接对等体的出站缓冲区大小。详见 :ref:`WebSocketPeer.outbound_buffer_size<class_WebSocketPeer_property_outbound_buffer_size>`\ 。
+已连接对等端的出站缓冲区大小。详见 :ref:`WebSocketPeer.outbound_buffer_size<class_WebSocketPeer_property_outbound_buffer_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ WebSocket 服务器和客户端的基类。
 
 :ref:`String<class_String>` **get_peer_address**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WebSocketMultiplayerPeer_method_get_peer_address>`
 
-返回给定对等体的 IP 地址。
+返回给定对等端的 IP 地址。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ WebSocket 服务器和客户端的基类。
 
 :ref:`int<class_int>` **get_peer_port**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_WebSocketMultiplayerPeer_method_get_peer_port>`
 
-返回给定对等体的远程端口。
+返回给定对等端的远程端口。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

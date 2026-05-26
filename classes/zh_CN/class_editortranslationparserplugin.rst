@@ -14,13 +14,13 @@ EditorTranslationParserPlugin
 描述
 ----
 
-**EditorTranslationParserPlugin** is invoked when a file is being parsed to extract strings that require translation. To define the parsing and string extraction logic, override the :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` method in script.
+解析文件提取需要翻译的字符串时会调用 **EditorTranslationParserPlugin**\ 。要定义文件解析和字符串提取逻辑，请在脚本中覆盖 :ref:`_parse_file()<class_EditorTranslationParserPlugin_private_method__parse_file>` 方法。
 
-The return value should be an :ref:`Array<class_Array>` of :ref:`PackedStringArray<class_PackedStringArray>`\ s, one for each extracted translatable string. Each entry should contain ``[msgid, msgctxt, msgid_plural, comment, source_line]``, where all except ``msgid`` are optional. Empty strings will be ignored.
+返回值应当为元素为 :ref:`PackedStringArray<class_PackedStringArray>` 的 :ref:`Array<class_Array>`\ ，每个元素对应一个提取到的可翻译字符串。每个条目都应该包含 ``[msgid, msgctxt, msgid_plural, comment, source_line]``\ ，除 ``msgid`` 外都是可选的。空字符串会被忽略。
 
-The extracted strings will be written into a translation template file selected by user under "Template Generation" in "Localization" tab in "Project Settings" menu.
+提取到的字符串会被写入到一个翻译模板文件中，该文件由用户在“项目设置”菜单“本地化”选项卡的“模板生成”中选择。
 
-Below shows an example of a custom parser that extracts strings from a CSV file to write into a template.
+下面是一个自定义解析器的示例，会从 CSV 文件中提取字符串，写入到模板中。
 
 
 .. tabs::
@@ -37,7 +37,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
         var split_strs = text.split(",", false)
         for s in split_strs:
             ret.append(PackedStringArray([s]))
-            #print("Extracted string: " + s)
+            #print("提取到字符串：" + s)
 
         return ret
 
@@ -60,7 +60,7 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
             foreach (string s in splitStrs)
             {
                 ret.Add([s]);
-                //GD.Print($"Extracted string: {s}");
+                //GD.Print($"提取到字符串：{s}");
             }
             return ret;
         }
@@ -73,32 +73,32 @@ Below shows an example of a custom parser that extracts strings from a CSV file 
 
 
 
-To add a translatable string associated with a context, plural, comment, or source line:
+添加带有上下文、复数形式、注释、源行号的可翻译字符串：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
+    # 添加 msgid 为“Test 1”、msgctxt 为“context”、msgid_plural 为“test 1 plurals”、注释为“test 1 comment”、源行号为“7”的消息。
     ret.append(PackedStringArray(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]))
-    # This will add a message with msgid "A test without context" and msgid_plural "plurals".
+    # 添加 msgid 为“A test without context”、msgid_plural 为“plurals”的消息。
     ret.append(PackedStringArray(["A test without context", "", "plurals"]))
-    # This will add a message with msgid "Only with context" and msgctxt "a friendly context".
+    # 添加 msgid 为“Only with context”、msgctxt 为“a friendly context”的消息。
     ret.append(PackedStringArray(["Only with context", "a friendly context"]))
 
  .. code-tab:: csharp
 
-    // This will add a message with msgid "Test 1", msgctxt "context", msgid_plural "test 1 plurals", comment "test 1 comment", and source line "7".
+    // 添加 msgid 为“Test 1”、msgctxt 为“context”、msgid_plural 为“test 1 plurals”、注释为“test 1 comment”、源行号为“7”的消息。
     ret.Add(["Test 1", "context", "test 1 plurals", "test 1 comment", "7"]);
-    // This will add a message with msgid "A test without context" and msgid_plural "plurals".
+    // 添加 msgid 为“A test without context”、msgid_plural 为“plurals”的消息。
     ret.Add(["A test without context", "", "plurals"]);
-    // This will add a message with msgid "Only with context" and msgctxt "a friendly context".
+    // 添加 msgid 为“Only with context”、msgctxt 为“a friendly context”的消息。
     ret.Add(["Only with context", "a friendly context"]);
 
 
 
-\ **Note:** If you override parsing logic for standard script types (GDScript, C#, etc.), it would be better to load the ``path`` argument using :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>`. This is because built-in scripts are loaded as :ref:`Resource<class_Resource>` type, not :ref:`FileAccess<class_FileAccess>` type. For example:
+\ **注意：**\ 如果你覆盖了标准脚本类型（GDScript、C# 等）的解析逻辑，最好使用 :ref:`ResourceLoader.load()<class_ResourceLoader_method_load>` 来加载 ``path`` 参数。因为内置脚本会以 :ref:`Resource<class_Resource>` 类型的形式加载，而非 :ref:`FileAccess<class_FileAccess>` 类型。例如：
 
 
 .. tabs::
@@ -108,7 +108,7 @@ To add a translatable string associated with a context, plural, comment, or sour
     func _parse_file(path):
         var res = ResourceLoader.load(path, "Script")
         var text = res.source_code
-        # Parsing logic.
+        # 解析逻辑。
 
     func _get_recognized_extensions():
         return ["gd"]
@@ -119,7 +119,7 @@ To add a translatable string associated with a context, plural, comment, or sour
     {
         var res = ResourceLoader.Load<Script>(path, "Script");
         string text = res.SourceCode;
-        // Parsing logic.
+        // 解析逻辑。
     }
 
     public override string[] _GetRecognizedExtensions()
@@ -129,7 +129,7 @@ To add a translatable string associated with a context, plural, comment, or sour
 
 
 
-To use **EditorTranslationParserPlugin**, register it using the :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` method first.
+要使用 **EditorTranslationParserPlugin**\ ，请先使用 :ref:`EditorPlugin.add_translation_parser_plugin()<class_EditorPlugin_method_add_translation_parser_plugin>` 方法注册。
 
 .. rst-class:: classref-reftable-group
 

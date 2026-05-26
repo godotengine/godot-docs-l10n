@@ -74,9 +74,9 @@ Emitida cuando se agrega una :ref:`Animation<class_Animation>`, bajo la clave ``
 
 **animation_changed**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_AnimationLibrary_signal_animation_changed>`
 
-Emitted when there's a change in one of the animations, e.g. tracks are added, moved or have changed paths. ``name`` is the key of the animation that was changed.
+Emitida cuando hay un cambio en una de las animaciones, por ejemplo, se añaden, mueven o cambian las rutas de las pistas. ``name`` es la clave de la animación que se ha cambiado.
 
-See also :ref:`Resource.changed<class_Resource_signal_changed>`, which this acts as a relay for.
+Véase también :ref:`Resource.changed<class_Resource_signal_changed>`, para lo que esto actua como un relé.
 
 .. rst-class:: classref-item-separator
 

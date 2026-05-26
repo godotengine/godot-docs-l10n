@@ -9,14 +9,14 @@ OpenXRSpatialMarkerTrackingCapability
 
 **Hereda:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Implementation for handling spatial entity marker tracking logic.
+Implementación para manejar la lógica de rastreo de marcadores de entidad espacial.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-This class handles the OpenXR marker tracking spatial entity extension.
+Esta clase maneja la extensión de entidad espacial de rastreo de marcadores de OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **is_april_tag_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`
 
-Returns ``true`` if April tag marker tracking is supported by the current device.
+Devuelve ``true`` si el rastreo de marcadores April tag es compatible con el dispositivo actual.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Returns ``true`` if April tag marker tracking is supported by the current device
 
 :ref:`bool<class_bool>` **is_aruco_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`
 
-Returns ``true`` if Aruco marker tracking is supported by the current device.
+Devuelve ``true`` si el rastreo de marcadores Aruco es compatible con el dispositivo actual.
 
 .. rst-class:: classref-item-separator
 
@@ -75,7 +75,7 @@ Returns ``true`` if Aruco marker tracking is supported by the current device.
 
 :ref:`bool<class_bool>` **is_micro_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_micro_qrcode_supported>`
 
-Returns ``true`` if micro QR code marker tracking is supported by the current device.
+Devuelve ``true`` si el rastreo de marcadores de código micro QR es compatible con el dispositivo actual.
 
 .. rst-class:: classref-item-separator
 
@@ -87,7 +87,7 @@ Returns ``true`` if micro QR code marker tracking is supported by the current de
 
 :ref:`bool<class_bool>` **is_qrcode_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_qrcode_supported>`
 
-Returns ``true`` if QR code marker tracking is supported by the current device.
+Devuelve ``true`` si el rastreo de marcadores de código QR es compatible con el dispositivo actual.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

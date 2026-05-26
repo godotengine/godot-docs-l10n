@@ -9,14 +9,14 @@ SocketServer
 
 **Наследуется от:** :ref:`TCPServer<class_TCPServer>`, :ref:`UDSServer<class_UDSServer>`
 
-An abstract class for servers based on sockets.
+Абстрактный класс для серверов, работающих на основе сокетов.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A socket server.
+Сервер сокетов.
 
 .. rst-class:: classref-reftable-group
 
@@ -87,7 +87,7 @@ A socket server.
 
 :ref:`StreamPeerSocket<class_StreamPeerSocket>` **take_socket_connection**\ (\ ) :ref:`🔗<class_SocketServer_method_take_socket_connection>`
 
-If a connection is available, returns a StreamPeerSocket with the connection.
+Если соединение доступно, возвращает объект StreamPeerSocket с установленным соединением.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

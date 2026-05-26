@@ -18,7 +18,7 @@ Descripción
 
 Un ParallaxBackground utiliza uno o más nodos hijos :ref:`ParallaxLayer<class_ParallaxLayer>` para crear un efecto de paralaje. Cada :ref:`ParallaxLayer<class_ParallaxLayer>` puede moverse a una velocidad diferente usando :ref:`ParallaxLayer.motion_offset<class_ParallaxLayer_property_motion_offset>`. Esto crea una ilusión de profundidad en un juego 2D. Si no se usa con una :ref:`Camera2D<class_Camera2D>`, debes calcular manualmente :ref:`scroll_offset<class_ParallaxBackground_property_scroll_offset>`.
 
-\ **Nota:** Cada **ParallaxBackground** se dibuja en un :ref:`Viewport<class_Viewport>` específico y no se puede compartir entre múltiples :ref:`Viewport<class_Viewport>`\ s, consulta :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. Cuando se utilizan múltiples :ref:`Viewport<class_Viewport>`\ s, por ejemplo, en un juego de pantalla dividida, debes crear un **ParallaxBackground** individual para cada :ref:`Viewport<class_Viewport>` en el que quieras que se dibuje.
+\ **Nota:** Cada **ParallaxBackground** se dibuja en un :ref:`Viewport<class_Viewport>` específico y no se puede compartir entre múltiples :ref:`Viewport<class_Viewport>`\ s, véase :ref:`CanvasLayer.custom_viewport<class_CanvasLayer_property_custom_viewport>`. Cuando se utilizan múltiples :ref:`Viewport<class_Viewport>`\ s, por ejemplo, en un juego de pantalla dividida, debes crear un **ParallaxBackground** individual para cada :ref:`Viewport<class_Viewport>` en el que quieras que se dibuje.
 
 .. rst-class:: classref-reftable-group
 

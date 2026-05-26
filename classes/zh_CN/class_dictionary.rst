@@ -440,9 +440,9 @@ Dictionary
 
 :ref:`Dictionary<class_Dictionary>` **duplicate_deep**\ (\ deep_subresources_mode\: :ref:`int<class_int>` = 1\ ) |const| :ref:`🔗<class_Dictionary_method_duplicate_deep>`
 
-Duplicates this dictionary, deeply, like :ref:`duplicate()<class_Dictionary_method_duplicate>` when passing ``true``, with extra control over how subresources are handled.
+深度复制该字典，类似于传递 ``true`` 时的 :ref:`duplicate()<class_Dictionary_method_duplicate>` 方法，但可以额外控制子资源的处理方式。
 
-\ ``deep_subresources_mode`` must be one of the values from :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>`. By default, only internal resources will be duplicated (recursively).
+\ ``deep_subresources_mode`` 必须是 :ref:`DeepDuplicateMode<enum_Resource_DeepDuplicateMode>` 中的某个值。默认只会（递归）复制内部资源。
 
 .. rst-class:: classref-item-separator
 

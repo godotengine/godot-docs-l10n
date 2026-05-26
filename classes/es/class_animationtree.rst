@@ -14,9 +14,9 @@ Un nodo para usarse en transiciones de animación avanzadas en un :ref:`Animatio
 Descripción
 ----------------------
 
-A node used for advanced animation transitions in an :ref:`AnimationPlayer<class_AnimationPlayer>`.
+Un nodo utilizado para transiciones de animación avanzadas en un :ref:`AnimationPlayer<class_AnimationPlayer>`.
 
-\ **Note:** When linked with an :ref:`AnimationPlayer<class_AnimationPlayer>`, several properties and methods of the corresponding :ref:`AnimationPlayer<class_AnimationPlayer>` will not function as expected. Playback and transitions should be handled using only the **AnimationTree** and its constituent :ref:`AnimationNode<class_AnimationNode>`\ (s). The :ref:`AnimationPlayer<class_AnimationPlayer>` node should be used solely for adding, deleting, and editing animations.
+\ **Nota:** Cuando se enlaza con un :ref:`AnimationPlayer<class_AnimationPlayer>`, varias propiedades y métodos del :ref:`AnimationPlayer<class_AnimationPlayer>` correspondiente no funcionarán como se espera. La reproducción y las transiciones deben manejarse usando únicamente el **AnimationTree** y sus :ref:`AnimationNode<class_AnimationNode>`\ (s) constituyentes. El nodo :ref:`AnimationPlayer<class_AnimationPlayer>` debe usarse exclusivamente para añadir, eliminar y editar animaciones.
 
 .. rst-class:: classref-introduction-group
 
@@ -160,7 +160,7 @@ El path al :ref:`Node<class_Node>` usado para evaluar el :ref:`AnimationNode<cla
 - |void| **set_animation_player**\ (\ value\: :ref:`NodePath<class_NodePath>`\ )
 - :ref:`NodePath<class_NodePath>` **get_animation_player**\ (\ )
 
-La ruta al :ref:`AnimationPlayer<class_AnimationPlayer>` utilizada para la animacion.
+La ruta al :ref:`AnimationPlayer<class_AnimationPlayer>` utilizada para la animación.
 
 .. rst-class:: classref-item-separator
 

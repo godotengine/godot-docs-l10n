@@ -16,9 +16,9 @@ Clase abstracta para exponer gizmos de editor para :ref:`Node3D<class_Node3D>`.
 Descripción
 ----------------------
 
-This abstract class helps connect the :ref:`Node3D<class_Node3D>` scene with the editor-specific :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` class.
+Esta clase abstracta ayuda a conectar la escena :ref:`Node3D<class_Node3D>` con la clase :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` específica del editor.
 
-\ **Node3DGizmo** by itself has no exposed API, refer to :ref:`Node3D.add_gizmo()<class_Node3D_method_add_gizmo>` and pass it an :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` instance.
+\ **Node3DGizmo** por sí misma no tiene API expuesta, véase :ref:`Node3D.add_gizmo()<class_Node3D_method_add_gizmo>` y pásale una instancia de :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

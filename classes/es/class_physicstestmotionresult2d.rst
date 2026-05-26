@@ -79,7 +79,7 @@ Devuelve el :ref:`Object<class_Object>` adjunto al cuerpo que colisiona, si se p
 
 :ref:`int<class_int>` **get_collider_id**\ (\ ) |const| :ref:`🔗<class_PhysicsTestMotionResult2D_method_get_collider_id>`
 
-Returns the unique instance ID of the colliding body's attached :ref:`Object<class_Object>`, if a collision occurred. See :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+Devuelve el ID de instancia único del :ref:`Object<class_Object>` adjunto del cuerpo colisionante, si ocurrió una colisión. Véase :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 .. rst-class:: classref-item-separator
 

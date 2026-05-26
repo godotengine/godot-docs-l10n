@@ -7,16 +7,16 @@ LimitAngularVelocityModifier3D
 
 **Hereda:** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Limit bone rotation angular velocity.
+Limita la velocidad angular de rotación del hueso.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-This modifier limits bone rotation angular velocity by comparing poses between previous and current frame.
+Este modificador limita la velocidad angular de rotación de los huesos comparando poses entre el fotograma anterior y el actual.
 
-You can add bone chains by specifying their root and end bones, then add the bones between them to a list. Modifier processes either that list or the bones excluding those in the list depending on the option :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
+Puedes añadir cadenas de huesos especificando sus huesos raíz y final, y luego añadir los huesos intermedios a una lista. El modificador procesa esa lista o los huesos excluyendo los de la lista, dependiendo de la opción :ref:`exclude<class_LimitAngularVelocityModifier3D_property_exclude>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -86,7 +86,7 @@ Descripciones de Propiedades
 - |void| **set_chain_count**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_chain_count**\ (\ )
 
-The number of chains.
+El número de cadenas.
 
 .. rst-class:: classref-item-separator
 
@@ -103,9 +103,9 @@ The number of chains.
 - |void| **set_exclude**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_exclude**\ (\ )
 
-If ``true``, the modifier processes bones not included in the bone list.
+Si es ``true``, el modificador procesa los huesos no incluidos en la lista de huesos.
 
-If ``false``, the bones processed by the modifier are equal to the bone list.
+Si es ``false``, los huesos procesados por el modificador son iguales a la lista de huesos.
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +117,7 @@ If ``false``, the bones processed by the modifier are equal to the bone list.
 
 :ref:`int<class_int>` **joint_count** = ``0`` :ref:`🔗<class_LimitAngularVelocityModifier3D_property_joint_count>`
 
-The number of joints in the list which created by chains dynamically.
+El número de articulaciones en la lista creadas dinámicamente por cadenas.
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +134,7 @@ The number of joints in the list which created by chains dynamically.
 - |void| **set_max_angular_velocity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max_angular_velocity**\ (\ )
 
-The maximum angular velocity per second.
+La velocidad angular máxima por segundo.
 
 .. rst-class:: classref-section-separator
 
@@ -151,7 +151,7 @@ Descripciones de Métodos
 
 |void| **clear_chains**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_clear_chains>`
 
-Clear all chains.
+Despeja todas las cadenas.
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Devuelve el nombre del hueso raíz de la cadena de huesos.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_reset>`
 
-Sets the reference pose for angle comparison to the current pose with the influence of constraints removed. This function is automatically triggered when joints change or upon activation.
+Establece la pose de referencia para la comparación de ángulos a la pose actual con la influencia de las restricciones eliminada. Esta función se activa automáticamente cuando las articulaciones cambian o al activarse.
 
 .. rst-class:: classref-item-separator
 
@@ -235,9 +235,9 @@ Establece el índice del hueso final de la cadena de huesos.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_LimitAngularVelocityModifier3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+Establece el nombre del hueso final de la cadena de huesos.
 
-\ **Note:** End bone must be the root bone or a child of the root bone.
+\ **Nota:** El hueso final debe ser el hueso raíz o un hijo del hueso raíz.
 
 .. rst-class:: classref-item-separator
 

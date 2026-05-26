@@ -96,13 +96,13 @@ ResourceImporterImageFont
 
 :ref:`PackedStringArray<class_PackedStringArray>` **character_ranges** = ``PackedStringArray()`` :ref:`🔗<class_ResourceImporterImageFont_property_character_ranges>`
 
-The character ranges to import from the font image. This is an array that maps each position on the image (in tile coordinates, not pixels). The font atlas is traversed from left to right and top to bottom. Characters can be specified with decimal numbers (126), hexadecimal numbers (``0x007e`` or ``U+007e``), or between single quotes (``'~'``). Ranges can be specified with a hyphen between characters.
+从字体图像导入的字符范围。这是一个数组，能够对图像上的每一个位置做映射（使用图块坐标，而非像素坐标）。字体图集是从左到右、从上到下遍历的。可以使用十进制数字（126）、十六进制数字（\ ``0x007e`` 或 ``U+007e``\ ）、单引号（\ ``'~'``\ ）来指定字符。在字符之间加上连字符指定的就是一个范围。
 
-For example, ``0-127`` represents the full ASCII range. It can also be written as ``0x0000-0x007f`` (or ``U+0000-U+007f``). As another example, ``' '-'~'`` is equivalent to ``32-126`` and represents the range of printable (visible) ASCII characters.
+例如 ``0-127`` 表示的是完整的 ASCII 范围。这个范围也可以写作 ``0x0000-0x007f``\ （或者 ``U+0000-U+007f``\ ）。再比如，\ ``' '-'~'`` 等价于 ``32-126``\ ，表示的是可打印（可见）ASCII 字符的范围。
 
-For any range, the character advance and offset can be customized by appending three space-separated integer values (additional advance, x offset, y offset) to the end. For example ``'a'-'b' 4 5 2`` sets the advance to ``char_width + 4`` and offset to ``Vector2(5, 2)`` for both `a` and `b` characters.
+指定范围时如果在后面加上三个用空格分隔的整数值，就可以自定义字符的前进量和偏移（额外前进量、X 偏移量、Y 偏移量）。例如 ``'a'-'b' 4 5 2`` 就是将 `a` 和 `b` 这两个字符的前进量设为 ``char_width + 4`` 并将偏移量设为 ``Vector2(5, 2)``\ 。
 
-\ **Note:** The overall number of characters must not exceed the number of :ref:`columns<class_ResourceImporterImageFont_property_columns>` multiplied by :ref:`rows<class_ResourceImporterImageFont_property_rows>`. Otherwise, the font will fail to import.
+\ **注意：**\ 总字符数必须不超过 :ref:`columns<class_ResourceImporterImageFont_property_columns>` 与 :ref:`rows<class_ResourceImporterImageFont_property_rows>` 的乘积。否则字体将无法导入。
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 

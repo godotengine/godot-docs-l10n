@@ -14,16 +14,16 @@ Textura para Cubemap que está vinculada a una textura creada en el :ref:`Render
 Descripción
 ----------------------
 
-This texture class allows you to use a cubemap texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>` as a texture for materials, meshes, etc.
+Esta clase de textura te permite utilizar una textura de mapa de cubo creada directamente en :ref:`RenderingDevice<class_RenderingDevice>` como textura para materiales, mallas, etc.
 
-\ **Note:** **TextureCubemapRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`Cubemap<class_Cubemap>` instead.
+\ **Nota:** **TextureCubemapRD** está pensada para un uso de bajo nivel con :ref:`RenderingDevice<class_RenderingDevice>`. Para la mayoría de los casos de uso, utiliza :ref:`Cubemap<class_Cubemap>` en su lugar.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
 
-- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
+- `Demostración de textura de cómputo <https://godotengine.org/asset-library/asset/2764>`__
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

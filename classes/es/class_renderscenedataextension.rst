@@ -77,7 +77,7 @@ Implementa esto en GDExtension para devolver el :ref:`Transform3D<class_Transfor
 
 :ref:`RID<class_RID>` **_get_uniform_buffer**\ (\ ) |virtual| |const| :ref:`🔗<class_RenderSceneDataExtension_private_method__get_uniform_buffer>`
 
-Implementa esto en GDExtension para devolver el :ref:`RID<class_RID>` del búfer uniforme que contiene los datos de la escena como un UBO.
+Implementa esto en GDExtension para devolver el :ref:`RID<class_RID>` del búfer de variable uniforme que contiene los datos de la escena como un UBO.
 
 .. rst-class:: classref-item-separator
 

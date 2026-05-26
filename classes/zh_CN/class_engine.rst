@@ -124,17 +124,17 @@ Engine
 - |void| **set_max_fps**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_fps**\ (\ )
 
-The maximum number of frames that can be rendered every second (FPS). A value of ``0`` means the framerate is uncapped.
+每秒可渲染的最大帧数（FPS）。值为 ``0`` 表示帧速率不受限制。
 
-Limiting the FPS can be useful to reduce the host machine's power consumption, which reduces heat, noise emissions, and improves battery life.
+限制 FPS 会对降低主机功耗很有帮助，可以减少热量、噪音排放并延长电池寿命。
 
-If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Enabled** or **Adaptive**, the setting takes precedence and the max FPS number cannot exceed the monitor's refresh rate. See also :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`.
+如果 :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 **Enabled** 或 **Adaptive** ，则该设置将被优先考虑，并且最大 FPS 数不能超过显示器的刷新率。另见 :ref:`DisplayServer.screen_get_refresh_rate()<class_DisplayServer_method_screen_get_refresh_rate>`\ 。
 
-If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Enabled**, on monitors with variable refresh rate enabled (G-Sync/FreeSync), using an FPS limit a few frames lower than the monitor's refresh rate will `reduce input lag while avoiding tearing <https://blurbusters.com/howto-low-lag-vsync-on/>`__. At higher refresh rates, the difference between the FPS limit and the monitor refresh rate should be increased to ensure frames to account for timing inaccuracies. The optimal formula for the FPS limit value in this scenario is ``r - (r * r) / 3600.0``, where ``r`` is the monitor's refresh rate.
+如果 :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 **Enabled**\ ，在启用了可变刷新率（G-Sync/FreeSync）的显示器上，使用比显示器刷新率低几帧的 FPS 限制，将\ `减少输入延迟，同时可以避免撕裂 <https://blurbusters.com/howto-low-lag-vsync-on/>`__\ 。在较高的刷新率下，应增大帧率限制与显示器刷新率之间的差值，以确保有足够的帧数来弥补计时误差。在这种情况下，帧率限制值的最佳公式为 ``r - (r * r) / 3600.0``\ ，其中 ``r`` 是显示器的刷新率。
 
-\ **Note:** The actual number of frames per second may still be below this value if the CPU or GPU cannot keep up with the project's logic and rendering.
+\ **注意：**\ 如果CPU或GPU跟不上项目的逻辑和渲染，则每秒的实际帧数可能仍低于该值。
 
-\ **Note:** If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` is **Disabled**, limiting the FPS to a high value that can be consistently reached on the system can reduce input lag compared to an uncapped framerate. Since this works by ensuring the GPU load is lower than 100%, this latency reduction is only effective in GPU-bottlenecked scenarios, not CPU-bottlenecked scenarios.
+\ **注意：**\ 如果 :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_property_display/window/vsync/vsync_mode>` 为 **Disabled**\ ，则与无上限的帧率相比，将 FPS 限制为可以在系统上持续达到的较高值，可以减少输入滞后。由于这是通过确保 GPU 负载低于 100% 来实现的，因此这种延迟减少仅在 GPU 瓶颈场景中有效，在 CPU 瓶颈场景中无效。
 
 .. rst-class:: classref-item-separator
 
@@ -191,15 +191,15 @@ If :ref:`ProjectSettings.display/window/vsync/vsync_mode<class_ProjectSettings_p
 - |void| **set_physics_ticks_per_second**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_physics_ticks_per_second**\ (\ )
 
-The number of fixed iterations per second. This controls how often physics simulation and the :ref:`Node._physics_process()<class_Node_private_method__physics_process>` method are run.
+每秒执行的固定迭代次数。用于控制物理仿真和 :ref:`Node._physics_process()<class_Node_private_method__physics_process>` 的执行频率。
 
-CPU usage scales approximately with the physics tick rate. However, at very low tick rates (usually below 30), physics behavior can break down. Input can also become less responsive at low tick rates as there can be a gap between input being registered, and the response on the next physics tick. High tick rates give more accurate physics simulation, particularly for fast moving objects. For example, racing games may benefit from increasing the tick rate above the default 60.
+CPU 使用率大致与物理周期频率成正比。然而，在周期频率非常低（通常低于 30）的情况下，物理行为可能会出现异常。在低周期频率下，输入响应也会变得迟钝，因为输入被注册到系统和系统在下一个物理周期做出响应之间会存在延迟。较高的周期频率可以提供更精确的物理模拟，尤其对于快速移动的物体而言。例如，赛车游戏可以通过将周期频率提高到高于默认的 60 来获得更好的效果。
 
-See also :ref:`max_fps<class_Engine_property_max_fps>` and :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`.
+另见 :ref:`max_fps<class_Engine_property_max_fps>` 和 :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
 
-\ **Note:** Only :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` physics ticks may be simulated per rendered frame at most. If more physics ticks have to be simulated per rendered frame to keep up with rendering, the project will appear to slow down (even if ``delta`` is used consistently in physics calculations). Therefore, it is recommended to also increase :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` if increasing :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` significantly above its default value.
+\ **注意：**\ 每个渲染帧最多只能模拟 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 个物理周期。如果为了追赶渲染，需要在每个渲染帧中模拟更多物理周期，游戏看上去会是降速的（即便在物理计算中始终使用 ``delta``\ ）。因此，如果增大了 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ ，而且远大于默认值，那么建议将 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 也调大。
 
-\ **Note:** Consider enabling :doc:`physics interpolation <../tutorials/physics/interpolation/index>` if you change :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` to a value that is not a multiple of ``60``. Using physics interpolation will avoid jittering when the monitor refresh rate and physics update rate don't exactly match.
+\ **注意：**\ 如果你将 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 的值更改为不是 ``60`` 的倍数的值，请考虑启用\ :doc:`物理插值 <../tutorials/physics/interpolation/index>`\ 。使用物理插值可以避免显示器刷新率和物理更新速率不完全匹配时出现的画面抖动。
 
 .. rst-class:: classref-item-separator
 

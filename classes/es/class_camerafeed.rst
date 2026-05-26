@@ -14,11 +14,11 @@ La alimentación de la cámara le da acceso a una única cámara física conecta
 Descripción
 ----------------------
 
-A camera feed gives you access to a single physical camera attached to your device. When enabled, Godot will start capturing frames from the camera which can then be used. See also :ref:`CameraServer<class_CameraServer>`.
+Una fuente de cámara (camera feed) te da acceso a una única cámara física conectada a tu dispositivo. Cuando está habilitada, Godot comenzará a capturar fotogramas de la cámara que luego pueden utilizarse. Véase también :ref:`CameraServer<class_CameraServer>`.
 
-\ **Note:** Many cameras will return YCbCr images which are split into two textures and need to be combined in a shader. Godot does this automatically for you if you set the environment to show the camera image in the background.
+\ **Nota:** Muchas cámaras devolverán imágenes YCbCr que se dividen en dos texturas y necesitan combinarse en un shader. Godot hace esto automáticamente por ti si configuras el entorno para mostrar la imagen de la cámara en el fondo.
 
-\ **Note:** This class is currently only implemented on Linux, Android, macOS, and iOS. On other platforms no **CameraFeed**\ s will be available. To get a **CameraFeed** on iOS, the camera plugin from `godot-ios-plugins <https://github.com/godotengine/godot-ios-plugins>`__ is required.
+\ **Nota:** Esta clase está actualmente implementada solo en Linux, Android, macOS e iOS. En otras plataformas no habrá **CameraFeed**\ s disponibles. Para obtener una **CameraFeed** en iOS, se requiere el plugin de cámara de `godot-ios-plugins <https://github.com/godotengine/godot-ios-plugins>`__.
 
 .. rst-class:: classref-reftable-group
 
@@ -148,7 +148,7 @@ Proporciona imágenes YCbCr que necesitan ser convertidas a RGB.
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_YCBCR_SEP** = ``3``
 
-Feed supplies separate Y and CbCr images that need to be combined and converted to RGB.
+El sistema de alimentación proporciona imágenes Y y CbCr separadas que deben combinarse y convertirse a RGB.
 
 .. _class_CameraFeed_constant_FEED_EXTERNAL:
 
@@ -156,7 +156,7 @@ Feed supplies separate Y and CbCr images that need to be combined and converted 
 
 :ref:`FeedDataType<enum_CameraFeed_FeedDataType>` **FEED_EXTERNAL** = ``4``
 
-Feed supplies external image.
+El feed proporciona una imagen externa.
 
 .. rst-class:: classref-item-separator
 
@@ -245,7 +245,7 @@ The transform applied to the camera's image.
 
 - :ref:`Array<class_Array>` **get_formats**\ (\ )
 
-Formats supported by the feed. Each entry is a :ref:`Dictionary<class_Dictionary>` describing format parameters.
+Formatos compatibles con la fuente. Cada entrada es un :ref:`Dictionary<class_Dictionary>` que describe los parámetros del formato.
 
 .. rst-class:: classref-section-separator
 
@@ -334,7 +334,7 @@ Devuelve la posición de la cámara en el dispositivo.
 
 :ref:`int<class_int>` **get_texture_tex_id**\ (\ feed_image_type\: :ref:`FeedImage<enum_CameraServer_FeedImage>`\ ) :ref:`🔗<class_CameraFeed_method_get_texture_tex_id>`
 
-Returns the texture backend ID (usable by some external libraries that need a handle to a texture to write data).
+Devuelve el ID del backend de la textura (utilizable por algunas bibliotecas externas que necesitan un identificador para una textura para escribir datos).
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ Returns the texture backend ID (usable by some external libraries that need a ha
 
 |void| **set_external**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CameraFeed_method_set_external>`
 
-Sets the feed as external feed provided by another library.
+Establece la fuente como una fuente externa proporcionada por otra biblioteca.
 
 .. rst-class:: classref-item-separator
 
@@ -358,13 +358,13 @@ Sets the feed as external feed provided by another library.
 
 :ref:`bool<class_bool>` **set_format**\ (\ index\: :ref:`int<class_int>`, parameters\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_CameraFeed_method_set_format>`
 
-Sets the feed format parameters for the given ``index`` in the :ref:`formats<class_CameraFeed_property_formats>` array. Returns ``true`` on success. By default, the YUYV encoded stream is transformed to :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`. The YUYV encoded stream output format can be changed by setting ``parameters``'s ``output`` entry to one of the following:
+Establece los parámetros de formato de la fuente para el ``index`` dado en el arreglo :ref:`formats<class_CameraFeed_property_formats>`. Devuelve ``true`` en caso de éxito. Por defecto, el flujo codificado en YUYV se transforma a :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`. El formato de salida del flujo codificado en YUYV se puede cambiar estableciendo la entrada ``output`` de ``parameters`` a uno de los siguientes:
 
-- ``"separate"`` will result in :ref:`FEED_YCBCR_SEP<class_CameraFeed_constant_FEED_YCBCR_SEP>`;
+- ``"separate"`` resultará en :ref:`FEED_YCBCR_SEP<class_CameraFeed_constant_FEED_YCBCR_SEP>`;
 
-- ``"grayscale"`` will result in desaturated :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>`;
+- ``"grayscale"`` resultará en un :ref:`FEED_RGB<class_CameraFeed_constant_FEED_RGB>` desaturado;
 
-- ``"copy"`` will result in :ref:`FEED_YCBCR<class_CameraFeed_constant_FEED_YCBCR>`.
+- ``"copy"`` resultará en :ref:`FEED_YCBCR<class_CameraFeed_constant_FEED_YCBCR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -424,7 +424,7 @@ Sets YCbCr image for this feed.
 
 |void| **set_ycbcr_images**\ (\ y_image\: :ref:`Image<class_Image>`, cbcr_image\: :ref:`Image<class_Image>`\ ) :ref:`🔗<class_CameraFeed_method_set_ycbcr_images>`
 
-Sets Y and CbCr images for this feed.
+Establece las imágenes Y y CbCr para esta fuente (feed).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

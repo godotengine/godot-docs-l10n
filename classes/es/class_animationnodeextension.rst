@@ -49,11 +49,11 @@ Descripciones de Métodos
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **_process_animation_node**\ (\ playback_info\: :ref:`PackedFloat64Array<class_PackedFloat64Array>`, test_only\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_AnimationNodeExtension_private_method__process_animation_node>`
 
-A version of the :ref:`AnimationNode._process()<class_AnimationNode_private_method__process>` method that is meant to be overridden by custom nodes. It returns a :ref:`PackedFloat32Array<class_PackedFloat32Array>` with the processed animation data.
+Una versión del método :ref:`AnimationNode._process()<class_AnimationNode_private_method__process>` pensada para ser sobrescrita por un nodo personalizado. Devuelve una :ref:`PackedFloat32Array<class_PackedFloat32Array>` con la información de la animación procesada.
 
-The :ref:`PackedFloat64Array<class_PackedFloat64Array>` parameter contains the playback information, containing the following values encoded as floating point numbers (in order): playback time and delta, start and end times, whether a seek was requested (encoded as a float greater than ``0``), whether the seek request was externally requested (encoded as a float greater than ``0``), the current :ref:`LoopedFlag<enum_Animation_LoopedFlag>` (encoded as a float), and the current blend weight.
+El parámetro :ref:`PackedFloat64Array<class_PackedFloat64Array>` contiene información de reproducción, conteniendo los siguientes valores codificados como números de punto flotante (en orden): tiempo de reproducción y delta, tiempo de inicio y final, si se ha solicitado una búsqueda (codificado como un float mayor a ``0``), si la solicitud de búsqueda fue solicitada externamente (codificado como un float mayor a ``0``), el :ref:`LoopedFlag<enum_Animation_LoopedFlag>` actual (codificado como float), y el peso de mezcla actual.
 
-The function must return a :ref:`PackedFloat32Array<class_PackedFloat32Array>` of the node's time info, containing the following values (in order): animation length, time position, delta, :ref:`LoopMode<enum_Animation_LoopMode>` (encoded as a float), whether the animation is about to end (encoded as a float greater than ``0``) and whether the animation is infinite (encoded as a float greater than ``0``). All values must be included in the returned array.
+La función debe retornar un :ref:`PackedFloat32Array<class_PackedFloat32Array>` de la información de tiempo del nodo, conteniendo los siguientes valores (en orden): largo de la animación, posición en el tiempo, delta, :ref:`LoopMode<enum_Animation_LoopMode>` (codificado como float), si la animación está por terminar (codificado como un float mayor a ``0``) y si la animación es infinita (codificado como un float mayor a ``0``). Todos los valores deben incluirse en la array retornada.
 
 .. rst-class:: classref-item-separator
 

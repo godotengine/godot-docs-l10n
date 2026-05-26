@@ -450,16 +450,16 @@ Il ``method`` dovrebbe accettare un parametro :ref:`Variant<class_Variant>` (l'e
     public override void _Ready()
     {
         // Stampa True (3/3 elementi sono valutati come true).
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5));
         // Stampa False (1/3 elementi sono valutati come true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5));
         // Stampa False (0/3 elementi sono valutati come true).
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5));
         // Stampa True (0/0 elementi sono valutati come true).
-        GD.Print(new Godot.Collections.Array>int< { }.All(GreaterThan5));
+        GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5));
 
         // Come la prima riga sopra, ma usando una funzione lambda.
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // Stampa True
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Stampa True
     }
 
 

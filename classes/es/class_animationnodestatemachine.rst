@@ -14,7 +14,7 @@ Una máquina de estados con múltiples :ref:`AnimationRootNode<class_AnimationRo
 Descripción
 ----------------------
 
-Contains multiple :ref:`AnimationRootNode<class_AnimationRootNode>`\ s representing animation states, connected in a graph. State transitions can be configured to happen automatically or via code, using a shortest-path algorithm. Retrieve the :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>` object from the :ref:`AnimationTree<class_AnimationTree>` node to control it programmatically.
+Contiene múltiples :ref:`AnimationRootNode<class_AnimationRootNode>`\ s que representan estados de animación, conectados en un grafo. Las transiciones de estado pueden configurarse para ocurrir automáticamente o mediante código, usando un algoritmo de camino más corto. Recupera el objeto :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>` desde el nodo :ref:`AnimationTree<class_AnimationTree>` para controlarlo programáticamente.
 
 
 .. tabs::
@@ -240,7 +240,7 @@ Agrega una transición entre los nodos de animación dados.
 
 :ref:`Vector2<class_Vector2>` **get_graph_offset**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_graph_offset>`
 
-Devuelve el dezplazamiento del dibujo de un grafico. Utilizado para visualizaciones en el editor.
+Devuelve el dezplazamiento del dibujo de un gráfico. Utilizado para visualizaciones en el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ Devuelve el dezplazamiento del dibujo de un grafico. Utilizado para visualizacio
 
 :ref:`AnimationNode<class_AnimationNode>` **get_node**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_node>`
 
-Devuelve el nodo animacion con el nombre dado.
+Devuelve el nodo animación con el nombre dado.
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Devuelve una lista que contiene los nombres de todos los nodos de animación en 
 
 :ref:`StringName<class_StringName>` **get_node_name**\ (\ node\: :ref:`AnimationNode<class_AnimationNode>`\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_node_name>`
 
-Devuelve el node del nombre de la animacion dada.
+Devuelve el node del nombre de la animación dada.
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Devuelve la transicion dada.
 
 :ref:`int<class_int>` **get_transition_count**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachine_method_get_transition_count>`
 
-Devuelve el numero de conexiones en el grafico.
+Devuelve el número de conexiones en el gráfico.
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Reemplaza el nodo de animación dado con un nuevo nodo de animación.
 
 |void| **set_graph_offset**\ (\ offset\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_AnimationNodeStateMachine_method_set_graph_offset>`
 
-Coloca el desplazamiento de dibujo del grafico. Utilizado para visualizaciones en el editor.
+Coloca el desplazamiento de dibujo del gráfico. Utilizado para visualizaciones en el editor.
 
 .. rst-class:: classref-item-separator
 

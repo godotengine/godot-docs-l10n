@@ -746,7 +746,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
+El contenido no se escalará para coincidir con el tamaño de **Window** (:ref:`content_scale_size<class_Window_property_content_scale_size>` se ignora).
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -1572,7 +1572,7 @@ Si :ref:`ProjectSettings.display/window/subwindows/embed_subwindows<class_Projec
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`, enabled\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_Window_Flags>`\ ) |const|
 
-Si es ``true``, la **Window** anulará el estilo de ventana del SO para mostrar esquinas afiladas.
+Si es ``true``, la **Window** sobrescribirá el estilo de ventana del SO para mostrar esquinas afiladas.
 
 \ **Nota:** Esta propiedad solo se implementa en Windows (11).
 
@@ -1816,9 +1816,9 @@ Véase también :ref:`get_theme_color()<class_Window_method_get_theme_color>` y 
 
 |void| **add_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`, constant\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_constant_override>`
 
-Creates a local override for a theme constant with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>`.
+Crea una anulación local para una constante del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_constant_override()<class_Window_method_remove_theme_constant_override>`.
 
-See also :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`.
+Véase también :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1830,9 +1830,9 @@ See also :ref:`get_theme_constant()<class_Window_method_get_theme_constant>`.
 
 |void| **add_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`, font\: :ref:`Font<class_Font>`\ ) :ref:`🔗<class_Window_method_add_theme_font_override>`
 
-Creates a local override for a theme :ref:`Font<class_Font>` with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>`.
+Crea una anulación local para una :ref:`Font<class_Font>` del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_font_override()<class_Window_method_remove_theme_font_override>`.
 
-See also :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
+Véase también :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1844,9 +1844,9 @@ See also :ref:`get_theme_font()<class_Window_method_get_theme_font>`.
 
 |void| **add_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`, font_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Window_method_add_theme_font_size_override>`
 
-Creates a local override for a theme font size with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>`.
+Crea una anulación local para un tamaño de fuente del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_font_size_override()<class_Window_method_remove_theme_font_size_override>`.
 
-See also :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`.
+Véase también :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1858,9 +1858,9 @@ See also :ref:`get_theme_font_size()<class_Window_method_get_theme_font_size>`.
 
 |void| **add_theme_icon_override**\ (\ name\: :ref:`StringName<class_StringName>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_Window_method_add_theme_icon_override>`
 
-Creates a local override for a theme icon with the specified ``name``. Local overrides always take precedence when fetching theme items for the control. An override can be removed with :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>`.
+Crea una anulación local para un icono del tema con el ``name`` especificado. Las anulaciones locales siempre tienen prioridad al obtener elementos del tema para el control. Una anulación puede eliminarse con :ref:`remove_theme_icon_override()<class_Window_method_remove_theme_icon_override>`.
 
-See also :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`.
+Véase también :ref:`get_theme_icon()<class_Window_method_get_theme_icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1886,7 +1886,7 @@ Véase también :ref:`get_theme_stylebox()<class_Window_method_get_theme_stylebo
 
 |void| **begin_bulk_theme_override**\ (\ ) :ref:`🔗<class_Window_method_begin_bulk_theme_override>`
 
-Prevents ``*_theme_*_override`` methods from emitting :ref:`NOTIFICATION_THEME_CHANGED<class_Window_constant_NOTIFICATION_THEME_CHANGED>` until :ref:`end_bulk_theme_override()<class_Window_method_end_bulk_theme_override>` is called.
+Evita que los métodos ``*_theme_*_override`` emitan :ref:`NOTIFICATION_THEME_CHANGED<class_Window_constant_NOTIFICATION_THEME_CHANGED>` hasta que se llame a :ref:`end_bulk_theme_override()<class_Window_method_end_bulk_theme_override>`.
 
 .. rst-class:: classref-item-separator
 
@@ -2570,7 +2570,7 @@ Muestra la **Window** con una posición desplazada por la posición de la **Wind
 
 |void| **remove_theme_color_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_color_override>`
 
-Removes a local override for a theme :ref:`Color<class_Color>` with the specified ``name`` previously added by :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` or via the Inspector dock.
+Elimina una anulación local para un :ref:`Color<class_Color>` del tema con el ``name`` especificado, añadido previamente mediante :ref:`add_theme_color_override()<class_Window_method_add_theme_color_override>` o a través del panel del Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -2582,7 +2582,7 @@ Removes a local override for a theme :ref:`Color<class_Color>` with the specifie
 
 |void| **remove_theme_constant_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_constant_override>`
 
-Removes a local override for a theme constant with the specified ``name`` previously added by :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>` or via the Inspector dock.
+Elimina una sobrescritura local para una constante de tema con el ``name`` especificado, previamente añadida por :ref:`add_theme_constant_override()<class_Window_method_add_theme_constant_override>` o a través del dock Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -2594,7 +2594,7 @@ Removes a local override for a theme constant with the specified ``name`` previo
 
 |void| **remove_theme_font_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_font_override>`
 
-Removes a local override for a theme :ref:`Font<class_Font>` with the specified ``name`` previously added by :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>` or via the Inspector dock.
+Elimina una sobrescritura local para una :ref:`Font<class_Font>` de tema con el ``name`` especificado, previamente añadida por :ref:`add_theme_font_override()<class_Window_method_add_theme_font_override>` o a través del dock Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -2606,7 +2606,7 @@ Removes a local override for a theme :ref:`Font<class_Font>` with the specified 
 
 |void| **remove_theme_font_size_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_font_size_override>`
 
-Removes a local override for a theme font size with the specified ``name`` previously added by :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>` or via the Inspector dock.
+Elimina una sobrescritura local para un tamaño de fuente de tema con el ``name`` especificado, previamente añadido por :ref:`add_theme_font_size_override()<class_Window_method_add_theme_font_size_override>` o a través del dock Inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -2630,7 +2630,7 @@ Removes a local override for a theme icon with the specified ``name`` previously
 
 |void| **remove_theme_stylebox_override**\ (\ name\: :ref:`StringName<class_StringName>`\ ) :ref:`🔗<class_Window_method_remove_theme_stylebox_override>`
 
-Removes a local override for a theme :ref:`StyleBox<class_StyleBox>` with the specified ``name`` previously added by :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>` or via the Inspector dock.
+Elimina una sobrescritura local para un :ref:`StyleBox<class_StyleBox>` de tema con el ``name`` especificado, previamente añadido por :ref:`add_theme_stylebox_override()<class_Window_method_add_theme_stylebox_override>` o a través del dock Inspector.
 
 .. rst-class:: classref-item-separator
 

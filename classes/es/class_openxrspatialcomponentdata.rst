@@ -11,14 +11,14 @@ OpenXRSpatialComponentData
 
 **Heredado por:** :ref:`OpenXRSpatialComponentAnchorList<class_OpenXRSpatialComponentAnchorList>`, :ref:`OpenXRSpatialComponentBounded2DList<class_OpenXRSpatialComponentBounded2DList>`, :ref:`OpenXRSpatialComponentBounded3DList<class_OpenXRSpatialComponentBounded3DList>`, :ref:`OpenXRSpatialComponentMarkerList<class_OpenXRSpatialComponentMarkerList>`, :ref:`OpenXRSpatialComponentMesh2DList<class_OpenXRSpatialComponentMesh2DList>`, :ref:`OpenXRSpatialComponentMesh3DList<class_OpenXRSpatialComponentMesh3DList>`, :ref:`OpenXRSpatialComponentParentList<class_OpenXRSpatialComponentParentList>`, :ref:`OpenXRSpatialComponentPersistenceList<class_OpenXRSpatialComponentPersistenceList>`, :ref:`OpenXRSpatialComponentPlaneAlignmentList<class_OpenXRSpatialComponentPlaneAlignmentList>`, :ref:`OpenXRSpatialComponentPlaneSemanticLabelList<class_OpenXRSpatialComponentPlaneSemanticLabelList>`, :ref:`OpenXRSpatialComponentPolygon2DList<class_OpenXRSpatialComponentPolygon2DList>`, :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>`
 
-Object for storing OpenXR spatial entity component data.
+Objeto para almacenar los datos del componente de entidad espacial de OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Object for storing OpenXR spatial entity component data.
+Objeto para almacenar los datos del componente de entidad espacial de OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -53,7 +53,7 @@ Descripciones de Métodos
 
 :ref:`int<class_int>` **_get_component_type**\ (\ ) |virtual| |const| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__get_component_type>`
 
-Return the component type for the component we store data for.
+Devuelve el tipo de componente para el que almacenamos datos.
 
 .. rst-class:: classref-item-separator
 
@@ -77,7 +77,7 @@ Return a pointer to the structure data that will be submitted along with the sna
 
 |void| **_set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) |virtual| :ref:`🔗<class_OpenXRSpatialComponentData_private_method__set_capacity>`
 
-Set the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Establece la capacidad esperada proporcionada por el sistema de consulta de entidades espaciales. Los búferes deben inicializarse con el almacenamiento correcto.
 
 .. rst-class:: classref-item-separator
 
@@ -89,7 +89,7 @@ Set the expected capacity as provided by the spatial entities query system. Buff
 
 |void| **set_capacity**\ (\ capacity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialComponentData_method_set_capacity>`
 
-Set the expected capacity as provided by the spatial entities query system. Buffers should be initialized with the correct storage.
+Establece la capacidad esperada proporcionada por el sistema de consulta de entidades espaciales. Los búferes deben inicializarse con el almacenamiento correcto.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

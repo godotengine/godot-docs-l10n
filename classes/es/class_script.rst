@@ -16,11 +16,11 @@ Una clase almacenada como recurso.
 Descripción
 ----------------------
 
-A class stored as a resource. A script extends the functionality of all objects that instantiate it.
+Una clase almacenada como recurso. Un script extiende la funcionalidad de todos los objetos que lo instancian.
 
-This is the base class for all scripts and should not be used directly. Trying to create a new script with this class will result in an error.
+Esta es la clase base para todos los scripts y no debe usarse directamente. Intentar crear un nuevo script con esta clase resultará en un error.
 
-The ``new`` method of a script subclass creates a new instance. :ref:`Object.set_script()<class_Object_method_set_script>` extends an existing object, if that object's class matches one of the script's base classes.
+El método ``new`` de una subclase de un script crea una nueva instancia. :ref:`Object.set_script()<class_Object_method_set_script>` extiende un objeto existente, si la clase de ese objeto coincide con una de las clases base del script.
 
 .. rst-class:: classref-introduction-group
 
@@ -144,16 +144,16 @@ Devuelve el script directamente heredado por este script.
 
 :ref:`StringName<class_StringName>` **get_global_name**\ (\ ) |const| :ref:`🔗<class_Script_method_get_global_name>`
 
-Returns the class name associated with the script, if there is one. Returns an empty string otherwise.
+Devuelve el nombre de la clase asociado con el script, si existe. Devuelve una string vacía en caso contrario.
 
-To give the script a global name, you can use the ``class_name`` keyword in GDScript and the ``[GlobalClass]`` attribute in C#.
+Para dar al script un nombre global, puedes usar la palabra clave ``class_name`` en GDScript y el atributo ``[GlobalClass]`` en C#.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    class_name MyNode
+    class_name MiNodo
     extends Node
 
  .. code-tab:: csharp
@@ -161,7 +161,7 @@ To give the script a global name, you can use the ``class_name`` keyword in GDSc
     using Godot;
 
     [GlobalClass]
-    public partial class MyNode : Node
+    public partial class MiNodo : Node
     {
     }
 
@@ -253,9 +253,9 @@ Devuelve la lista de propiedades en este **Script**.
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_script_signal_list**\ (\ ) :ref:`🔗<class_Script_method_get_script_signal_list>`
 
-Returns the list of signals defined in this **Script**.
+Devuelve la lista de señales definidas en este **Script**.
 
-\ **Note:** The dictionaries returned by this method are formatted identically to those returned by :ref:`Object.get_signal_list()<class_Object_method_get_signal_list>`.
+\ **Nota:** Los diccionarios devueltos por este método están formateados idénticamente a los devueltos por :ref:`Object.get_signal_list()<class_Object_method_get_signal_list>`.
 
 .. rst-class:: classref-item-separator
 

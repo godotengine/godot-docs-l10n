@@ -1056,9 +1056,9 @@ Establece la dirección de la disposición del texto del menú de derecha a izqu
 
 |void| **set_item_accelerator**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, keycode\: :ref:`Key<enum_@GlobalScope_Key>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_accelerator>`
 
-Sets the accelerator of the item at index ``idx``. ``keycode`` can be a single :ref:`Key<enum_@GlobalScope_Key>`, or a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Establece el acelerador del elemento en el índice ``idx``. ``keycode`` puede ser una única :ref:`Key<enum_@GlobalScope_Key>`, o una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando el operador OR a nivel de bits, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1128,9 +1128,9 @@ Enables/disables the item at index ``idx``. When it is disabled, it can't be sel
 
 |void| **set_item_hidden**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, hidden\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_hidden>`
 
-Hides/shows the item at index ``idx``. When it is hidden, an item does not appear in a menu and its action cannot be invoked.
+Oculta o muestra el elemento en el índice ``idx``. Cuando está oculto, el elemento no aparece en el menú y su acción no puede ser invocada.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1142,11 +1142,11 @@ Hides/shows the item at index ``idx``. When it is hidden, an item does not appea
 
 |void| **set_item_hover_callbacks**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_hover_callbacks>`
 
-Sets the callback of the item at index ``idx``. The callback is emitted when an item is hovered.
+Establece la función de llamada (callback) del elemento en el índice ``idx``. La función de llamada se emite cuando se pasa el cursor sobre un elemento.
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Nota:** El objeto Callable ``callback`` debe aceptar exactamente un parámetro de tipo Variant. El parámetro pasado al Callable será el valor asignado al parámetro ``tag`` cuando se creó el elemento del menú.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -1188,11 +1188,11 @@ Sets the horizontal offset of the item at the given ``idx``.
 
 |void| **set_item_key_callback**\ (\ rid\: :ref:`RID<class_RID>`, idx\: :ref:`int<class_int>`, key_callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NativeMenu_method_set_item_key_callback>`
 
-Sets the callback of the item at index ``idx``. Callback is emitted when its accelerator is activated.
+Establece la función de llamada (callback) del elemento en el índice ``idx``. La función de llamada se emite cuando se activa su acelerador.
 
-\ **Note:** The ``key_callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Nota:** El objeto Callable ``key_callback`` debe aceptar exactamente un parámetro de tipo Variant. El parámetro pasado al Callable será el valor asignado al parámetro ``tag`` cuando se creó el elemento del menú.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 

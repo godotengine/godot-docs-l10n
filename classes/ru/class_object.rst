@@ -277,7 +277,7 @@ enum **ConnectFlags**: :ref:`🔗<enum_Object_ConnectFlags>`
 
 :ref:`ConnectFlags<enum_Object_ConnectFlags>` **CONNECT_APPEND_SOURCE_OBJECT** = ``16``
 
-On signal emission, the source object is automatically appended after the original arguments of the signal, regardless of the connected :ref:`Callable<class_Callable>`'s unbinds which affect only the original arguments of the signal (see :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
+При отправке сигнала исходный объект автоматически добавляется после исходных аргументов сигнала, независимо от отвязок подключенного :ref:`Callable<class_Callable>`, которые влияют только на исходные аргументы сигнала (см. :ref:`Callable.unbind()<class_Callable_method_unbind>`, :ref:`Callable.get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>`).
 
 ::
 
@@ -286,9 +286,9 @@ On signal emission, the source object is automatically appended after the origin
     signal test_signal
 
     func test():
-        print(self) # Prints e.g. <Object#35332818393>
+        print(self) # Выводит <Object#35332818393> итд.
         test_signal.connect(prints.unbind(1), CONNECT_APPEND_SOURCE_OBJECT)
-        test_signal.emit("emit_arg_1", "emit_arg_2") # Prints emit_arg_1 <Object#35332818393>
+        test_signal.emit("emit_arg_1", "emit_arg_2") # Выводит emit_arg_1 <Object#35332818393>
 
 .. rst-class:: classref-section-separator
 
@@ -681,11 +681,11 @@ On signal emission, the source object is automatically appended after the origin
 
 :ref:`bool<class_bool>` **_set**\ (\ property\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) |virtual| :ref:`🔗<class_Object_private_method__set>`
 
-Override this method to customize the behavior of :ref:`set()<class_Object_method_set>`. Should set the ``property`` to ``value`` and return ``true``, or ``false`` if the ``property`` should be handled normally. The *exact* way to set the ``property`` is up to this method's implementation.
+Переопределите этот метод, чтобы настроить поведение :ref:`set()<class_Object_method_set>`. Он должен устанавливать ``property`` в ``value`` и возвращать ``true`` или ``false``, если ``property`` должен обрабатываться обычным образом. *Точный* способ установки ``property`` зависит от реализации этого метода.
 
-Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_property_list()<class_Object_private_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins.
+В сочетании с :ref:`_get()<class_Object_private_method__get>` и :ref:`_get_property_list()<class_Object_private_method__get_property_list>` этот метод позволяет определять пользовательские свойства, что особенно полезно для плагинов редактора.
 
-\ **Note:** This method is not called when setting built-in properties of an object, including properties defined with :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
+\ **Примечание:** Этот метод не вызывается при установке встроенных свойств объекта, включая свойства, определенные с помощью :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`.
 
 
 .. tabs::
@@ -696,7 +696,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
     func _set(property, value):
         if property == "fake_property":
-            # Storing the value in the fake property.
+            # Сохранение значения в fake_property.
             internal_data["fake_property"] = value
             return true
         return false
@@ -714,7 +714,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
     {
         if (property == "FakeProperty")
         {
-            // Storing the value in the fake property.
+            // Сохранение значения в FakeProperty.
             _internalData["FakeProperty"] = value;
             return true;
         }
@@ -736,7 +736,7 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
 
 
-\ **Note:** Unlike other virtual methods, this method is called automatically for every script that overrides it. This means that the base implementation should not be called via ``super`` in GDScript or its equivalents in other languages. The bottom-most sub-class will be called first, with subsequent calls ascending the class hierarchy. The call chain will stop on the first class that returns ``true``.
+\ **Примечание:** В отличие от других виртуальных методов, этот метод вызывается автоматически для каждого скрипта, который его переопределяет. Это означает, что базовую реализацию не следует вызывать через ``super`` в GDScript или его эквивалентах в других языках. Первым будет вызван самый нижний подкласс, а последующие вызовы будут происходить по иерархии классов. Цепочка вызовов остановится на первом классе, который вернет ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -901,11 +901,11 @@ Combined with :ref:`_get()<class_Object_private_method__get>` and :ref:`_get_pro
 
 :ref:`Variant<class_Variant>` **call_deferred**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Object_method_call_deferred>`
 
-Calls the ``method`` on the object during idle time. Always returns ``null``, **not** the method's result.
+Вызывает метод ``method`` объекта во время простоя. Всегда возвращает ``null``, **не** результат метода.
 
-Idle time happens mainly at the end of process and physics frames. In it, deferred calls will be run until there are none left, which means you can defer calls from other deferred calls and they'll still be run in the current idle time cycle. This means you should not call a method deferred from itself (or from a method called by it), as this causes infinite recursion the same way as if you had called the method directly.
+Простой происходит в основном в конце кадров процесса и физики. В это время отложенные вызовы будут выполняться до тех пор, пока их не останется, что означает, что вы можете откладывать вызовы из других отложенных вызовов, и они все равно будут выполняться в текущем цикле простоя. Это означает, что вы не должны вызывать отложенный метод из самого себя (или из метода, вызываемого им), так как это вызывает бесконечную рекурсию так же, как если бы вы вызвали метод напрямую.
 
-This method supports a variable number of arguments, so parameters can be passed as a comma separated list.
+Этот метод поддерживает переменное количество аргументов, поэтому параметры можно передавать в виде списка, разделенного запятыми.
 
 
 .. tabs::
@@ -922,21 +922,21 @@ This method supports a variable number of arguments, so parameters can be passed
 
 
 
-For methods that are deferred from the same thread, the order of execution at idle time is identical to the order in which ``call_deferred`` was called.
+Для методов, отложенных из одного и того же потока, порядок выполнения в свободное время идентично порядку вызова ``call_deferred``.
 
-See also :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
+См. также :ref:`Callable.call_deferred()<class_Callable_method_call_deferred>`.
 
-\ **Note:** In C#, ``method`` must be in snake_case when referring to built-in Godot methods. Prefer using the names exposed in the ``MethodName`` class to avoid allocating a new :ref:`StringName<class_StringName>` on each call.
+\ **Примечание:** В C# ``method`` должен быть в формате snake_case при обращении к встроенным методам Godot. Предпочтительнее использовать имена, предоставляемые классом ``MethodName``, чтобы избежать выделения нового :ref:`StringName<class_StringName>` при каждом вызове.
 
-\ **Note:** If you're looking to delay the function call by a frame, refer to the :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` and :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>` signals.
+\ **Примечание:** Если вы хотите отложить вызов функции на кадр, обратитесь к сигналам :ref:`SceneTree.process_frame<class_SceneTree_signal_process_frame>` и :ref:`SceneTree.physics_frame<class_SceneTree_signal_physics_frame>`.
 
 ::
 
     var node = Node3D.new()
-    # Make a Callable and bind the arguments to the node's rotate() call.
+    # Создайте вызываемый Callable объект и привяжите его аргументы к вызову функции rotate() узла.
     var callable = node.rotate.bind(Vector3(1.0, 0.0, 0.0), 1.571)
-    # Connect the callable to the process_frame signal, so it gets called in the next process frame.
-    # CONNECT_ONE_SHOT makes sure it only gets called once instead of every frame.
+    # Свяжите вызываемую функцию с сигналом process_frame, чтобы она вызывалась в следующем кадре процесса.
+    # CONNECT_ONE_SHOT гарантирует, что она будет вызвана только один раз, а не в каждом кадре.
     get_tree().process_frame.connect(callable, CONNECT_ONE_SHOT)
 
 .. rst-class:: classref-item-separator

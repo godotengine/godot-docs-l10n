@@ -12,11 +12,11 @@ Un array empaquetado de :ref:`Color<class_Color>`\ s.
 Descripción
 ----------------------
 
-An array specifically designed to hold :ref:`Color<class_Color>`. Packs data tightly, so it saves memory for large array sizes.
+Un array específicamente diseñado para contener :ref:`Color<class_Color>`. Empaqueta los datos de forma compacta, lo que ahorra memoria para arrays grandes.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedColorArray** versus ``Array[Color]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Diferencias entre arrays empaquetados, arrays tipados y arrays sin tipo:** Los arrays empaquetados son generalmente más rápidos de iterar y modificar en comparación con un array tipado del mismo tipo (ej. **PackedColorArray** frente a ``Array[Color]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados, a su vez, son más rápidos de iterar y modificar que los arrays sin tipo.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedColorArray_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda ser modificado independientemente del array original, usa :ref:`duplicate()<class_PackedColorArray_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y cambiarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo de nuevo a la propiedad.
 
 .. note::
 
@@ -137,7 +137,7 @@ Construye un **PackedColorArray** vacío.
 
 :ref:`PackedColorArray<class_PackedColorArray>` **PackedColorArray**\ (\ from\: :ref:`PackedColorArray<class_PackedColorArray>`\ )
 
-Constructs a **PackedColorArray** as a copy of the given **PackedColorArray**.
+Construye un **PackedColorArray** como una copia del **PackedColorArray** dado.
 
 .. rst-class:: classref-item-separator
 
@@ -147,9 +147,9 @@ Constructs a **PackedColorArray** as a copy of the given **PackedColorArray**.
 
 :ref:`PackedColorArray<class_PackedColorArray>` **PackedColorArray**\ (\ from\: :ref:`Array<class_Array>`\ )
 
-Constructs a new **PackedColorArray**. Optionally, you can pass in a generic :ref:`Array<class_Array>` that will be converted.
+Construye un nuevo **PackedColorArray**. Opcionalmente, puedes pasar un :ref:`Array<class_Array>` genérico que será convertido.
 
-\ **Note:** When initializing a **PackedColorArray** with elements, it must be initialized with an :ref:`Array<class_Array>` of :ref:`Color<class_Color>` values:
+\ **Nota:** Al inicializar un **PackedColorArray** con elementos, debe ser inicializado con un :ref:`Array<class_Array>` de valores :ref:`Color<class_Color>`:
 
 ::
 
@@ -280,9 +280,9 @@ Busca un valor en el array y devuelve su índice o ``-1`` si no lo encuentra. Op
 
 :ref:`Color<class_Color>` **get**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedColorArray_method_get>`
 
-Returns the :ref:`Color<class_Color>` at the given ``index`` in the array. If ``index`` is out-of-bounds or negative, this method fails and returns ``Color(0, 0, 0, 1)``.
+Devuelve el :ref:`Color<class_Color>` en el ``index`` dado en el array. Si ``index`` está fuera de los límites o es negativo, este método falla y devuelve ``Color(0, 0, 0, 1)``.
 
-This method is similar (but not identical) to the ``[]`` operator. Most notably, when this method fails, it doesn't pause project execution if run from the editor.
+Este método es similar (pero no idéntico) al operador ``[]``. En particular, cuando este método falla, no pausa la ejecución del proyecto si se ejecuta desde el editor.
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +294,7 @@ This method is similar (but not identical) to the ``[]`` operator. Most notably,
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`Color<class_Color>`\ ) |const| :ref:`🔗<class_PackedColorArray_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+Devuelve ``true`` si el array contiene ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -354,9 +354,9 @@ Elimina un elemento del array por indice.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedColorArray_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedColorArray_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+Establece el tamaño del array. Si el array aumenta de tamaño, reserva elementos al final del array. Si el array se encoge, trunca el array al nuevo tamaño. Llamar a :ref:`resize()<class_PackedColorArray_method_resize>` una vez y asignar los nuevos valores es más rápido que añadir nuevos elementos uno por uno.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedColorArray_method_size>` to find the actual size of the array after resize.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las siguientes constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si el tamaño es negativo, o :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` si las asignaciones fallan. Usa :ref:`size()<class_PackedColorArray_method_size>` para encontrar el tamaño real del array después del redimensionamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ Invierte el orden de los elementos en el array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`Color<class_Color>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedColorArray_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+Busca el array en orden inverso. Opcionalmente, se puede pasar un índice de búsqueda inicial. Si es negativo, el índice inicial se considera relativo al final del array.
 
 .. rst-class:: classref-item-separator
 
@@ -416,11 +416,11 @@ Devuelve el numer de elementos en el array.
 
 :ref:`PackedColorArray<class_PackedColorArray>` **slice**\ (\ begin\: :ref:`int<class_int>`, end\: :ref:`int<class_int>` = 2147483647\ ) |const| :ref:`🔗<class_PackedColorArray_method_slice>`
 
-Returns the slice of the **PackedColorArray**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **PackedColorArray**.
+Devuelve la porción del **PackedColorArray**, desde ``begin`` (inclusivo) hasta ``end`` (exclusive), como un nuevo **PackedColorArray**.
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+El valor absoluto de ``begin`` y ``end`` se ajustará al tamaño del array, por lo que el valor predeterminado para ``end`` hace que se divida hasta el tamaño del array por defecto (es decir, ``arr.slice(1)`` es una abreviatura de ``arr.slice(1, arr.size())``).
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es decir, ``arr.slice(0, -2)`` es una abreviatura de ``arr.slice(0, arr.size() - 2)``).
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ If either ``begin`` or ``end`` are negative, they will be relative to the end of
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedColorArray_method_sort>`
 
-Sorts the elements of the array in ascending order.
+Ordena los elementos del array en orden ascendente.
 
 .. rst-class:: classref-item-separator
 
@@ -444,7 +444,7 @@ Sorts the elements of the array in ascending order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_byte_array**\ (\ ) |const| :ref:`🔗<class_PackedColorArray_method_to_byte_array>`
 
-Returns a :ref:`PackedByteArray<class_PackedByteArray>` with each color encoded as bytes.
+Devuelve un :ref:`PackedByteArray<class_PackedByteArray>` con cada color codificado como bytes.
 
 .. rst-class:: classref-section-separator
 
@@ -461,7 +461,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) :ref:`🔗<class_PackedColorArray_operator_neq_PackedColorArray>`
 
-Returns ``true`` if contents of the arrays differ.
+Devuelve ``true`` si los contenidos de los arrays difieren.
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Returns ``true`` if contents of the arrays differ.
 
 :ref:`PackedColorArray<class_PackedColorArray>` **operator +**\ (\ right\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) :ref:`🔗<class_PackedColorArray_operator_sum_PackedColorArray>`
 
-Returns a new **PackedColorArray** with contents of ``right`` added at the end of this array. For better performance, consider using :ref:`append_array()<class_PackedColorArray_method_append_array>` instead.
+Devuelve un nuevo **PackedColorArray** con el contenido de ``right`` añadido al final de este array. Para un mejor rendimiento, considera usar :ref:`append_array()<class_PackedColorArray_method_append_array>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -485,7 +485,7 @@ Returns a new **PackedColorArray** with contents of ``right`` added at the end o
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedColorArray<class_PackedColorArray>`\ ) :ref:`🔗<class_PackedColorArray_operator_eq_PackedColorArray>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal :ref:`Color<class_Color>`\ s at the corresponding indices.
+Devuelve ``true`` si el contenido de ambos arrays es el mismo, es decir, tienen todos los :ref:`Color<class_Color>`\ s iguales en los índices correspondientes.
 
 .. rst-class:: classref-item-separator
 
@@ -497,7 +497,7 @@ Returns ``true`` if contents of both arrays are the same, i.e. they have all equ
 
 :ref:`Color<class_Color>` **operator []**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedColorArray_operator_idx_int>`
 
-Returns the :ref:`Color<class_Color>` at index ``index``. Negative indices can be used to access the elements starting from the end. Using index out of array's bounds will result in an error.
+Devuelve el :ref:`Color<class_Color>` en el índice ``index``. Se pueden usar índices negativos para acceder a los elementos empezando por el final. Usar un índice fuera de los límites del array resultará en un error.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

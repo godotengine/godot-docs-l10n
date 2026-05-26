@@ -828,7 +828,7 @@ Devuelve el máximo componente a componente de este y ``with``, equivalente a ``
 
 :ref:`int<class_int>` **max_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector3_method_max_axis_index>`
 
-Devuelve el eje del valor más alto del vector. Consulta las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_X<class_Vector3_constant_AXIS_X>`.
+Devuelve el eje del valor más alto del vector. Véanse las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve :ref:`AXIS_X<class_Vector3_constant_AXIS_X>`.
 
 .. rst-class:: classref-item-separator
 
@@ -864,7 +864,7 @@ Devuelve el mínimo componente a componente de este y ``with``, equivalente a ``
 
 :ref:`int<class_int>` **min_axis_index**\ (\ ) |const| :ref:`🔗<class_Vector3_method_min_axis_index>`
 
-Devuelve el eje del valor más bajo del vector. Consulta las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve la constante :ref:`AXIS_Z<class_Vector3_constant_AXIS_Z>`.
+Devuelve el eje del valor más bajo del vector. Véanse las constantes ``AXIS_*``. Si todos los componentes son iguales, este método devuelve la constante :ref:`AXIS_Z<class_Vector3_constant_AXIS_Z>`.
 
 .. rst-class:: classref-item-separator
 

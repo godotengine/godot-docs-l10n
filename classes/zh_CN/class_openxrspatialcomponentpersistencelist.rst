@@ -9,14 +9,14 @@ OpenXRSpatialComponentPersistenceList
 
 **继承：** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the query persistence result data.
+用于存储查询持久化结果数据的对象。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Object for storing the query persistence result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+用于调用 :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>` 时存储查询持久化结果数据的对象。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the query persistence result data when calling :ref:`OpenXRSp
 
 :ref:`int<class_int>` **get_persistent_state**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_state>`
 
-Returns the persistent state (``XrSpatialPersistenceStateEXT``) for the entity at this ``index``.
+返回该 ``index`` 处实体的持久状态（\ ``XrSpatialPersistenceStateEXT``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the persistent state (``XrSpatialPersistenceStateEXT``) for the entity a
 
 :ref:`String<class_String>` **get_persistent_uuid**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPersistenceList_method_get_persistent_uuid>`
 
-Returns the persistent uuid for the entity at this ``index``.
+返回该 ``index`` 处实体的持久 uuid。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

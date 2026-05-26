@@ -654,7 +654,7 @@ Devuelve la rotación de pose del hueso en ``bone_idx``. El :ref:`Quaternion<cla
 
 :ref:`Vector3<class_Vector3>` **get_bone_pose_scale**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_pose_scale>`
 
-Returns the pose scale of the bone at ``bone_idx``.
+Devuelve la escala de la pose del hueso en ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -666,7 +666,7 @@ Returns the pose scale of the bone at ``bone_idx``.
 
 :ref:`Transform3D<class_Transform3D>` **get_bone_rest**\ (\ bone_idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Skeleton3D_method_get_bone_rest>`
 
-Returns the rest transform for a bone ``bone_idx``.
+Devuelve la transformación restante de un hueso ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 
@@ -744,7 +744,7 @@ Returns whether the bone pose for the bone at ``bone_idx`` is enabled.
 
 |void| **localize_rests**\ (\ ) :ref:`🔗<class_Skeleton3D_method_localize_rests>`
 
-Returns all bones in the skeleton to their rest poses.
+Devuelve todos los huesos del esqueleto a sus posiciones de reposo.
 
 .. rst-class:: classref-item-separator
 
@@ -830,7 +830,7 @@ Vincula la Skin dada al Skeleton.
 
 |void| **reset_bone_pose**\ (\ bone_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Skeleton3D_method_reset_bone_pose>`
 
-Sets the bone pose to rest for ``bone_idx``.
+Establece la postura del hueso en reposo para ``bone_idx``.
 
 .. rst-class:: classref-item-separator
 

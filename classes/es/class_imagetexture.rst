@@ -14,7 +14,7 @@ Una :ref:`Texture2D<class_Texture2D>` basada en una :ref:`Image<class_Image>`.
 Descripción
 ----------------------
 
-A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`. For an image to be displayed, an **ImageTexture** has to be created from it using the :ref:`create_from_image()<class_ImageTexture_method_create_from_image>` method:
+Una :ref:`Texture2D<class_Texture2D>` basada en una :ref:`Image<class_Image>`. Para que una imagen se muestre, se debe crear una **ImageTexture** a partir de ella utilizando el método :ref:`create_from_image()<class_ImageTexture_method_create_from_image>`:
 
 ::
 
@@ -22,27 +22,27 @@ A :ref:`Texture2D<class_Texture2D>` based on an :ref:`Image<class_Image>`. For a
     var texture = ImageTexture.create_from_image(image)
     $Sprite2D.texture = texture
 
-This way, textures can be created at run-time by loading images both from within the editor and externally.
+De esta manera, las texturas se pueden crear en tiempo de ejecución cargando imágenes tanto desde el editor como externamente.
 
-\ **Warning:** Prefer to load imported textures with :ref:`@GDScript.load()<class_@GDScript_method_load>` over loading them from within the filesystem dynamically with :ref:`Image.load()<class_Image_method_load>`, as it may not work in exported projects:
+\ **Advertencia:** Prefiere cargar texturas importadas con :ref:`@GDScript.load()<class_@GDScript_method_load>` en lugar de cargarlas dinámicamente desde el sistema de archivos con :ref:`Image.load()<class_Image_method_load>`, ya que esto podría no funcionar en proyectos exportados:
 
 ::
 
     var texture = load("res://icon.svg")
     $Sprite2D.texture = texture
 
-This is because images have to be imported as a :ref:`CompressedTexture2D<class_CompressedTexture2D>` first to be loaded with :ref:`@GDScript.load()<class_@GDScript_method_load>`. If you'd still like to load an image file just like any other :ref:`Resource<class_Resource>`, import it as an :ref:`Image<class_Image>` resource instead, and then load it normally using the :ref:`@GDScript.load()<class_@GDScript_method_load>` method.
+Esto se debe a que las imágenes deben importarse primero como :ref:`CompressedTexture2D<class_CompressedTexture2D>` para ser cargadas con :ref:`@GDScript.load()<class_@GDScript_method_load>`. Si aún deseas cargar un archivo de imagen como cualquier otro :ref:`Resource<class_Resource>`, impórtalo como un recurso :ref:`Image<class_Image>` en su lugar, y luego cárgalo normalmente usando el método :ref:`@GDScript.load()<class_@GDScript_method_load>`.
 
-\ **Note:** The image can be retrieved from an imported texture using the :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>` method, which returns a copy of the image:
+\ **Nota:** La imagen se puede recuperar de una textura importada usando el método :ref:`Texture2D.get_image()<class_Texture2D_method_get_image>`, que devuelve una copia de la imagen:
 
 ::
 
     var texture = load("res://icon.svg")
     var image = texture.get_image()
 
-An **ImageTexture** is not meant to be operated from within the editor interface directly, and is mostly useful for rendering images on screen dynamically via code. If you need to generate images procedurally from within the editor, consider saving and importing images as custom texture resources implementing a new :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
+Una **ImageTexture** no está destinada a ser operada directamente desde la interfaz del editor, y es principalmente útil para renderizar imágenes en pantalla dinámicamente a través de código. Si necesitas generar imágenes proceduralmente desde el editor, considera guardar e importar imágenes como recursos de textura personalizados que implementen un nuevo :ref:`EditorImportPlugin<class_EditorImportPlugin>`.
 
-\ **Note:** The maximum texture size is 16384×16384 pixels due to graphics hardware limitations.
+\ **Nota:** El tamaño máximo de textura es de 16384×16384 píxeles debido a limitaciones de hardware gráfico.
 
 .. rst-class:: classref-introduction-group
 

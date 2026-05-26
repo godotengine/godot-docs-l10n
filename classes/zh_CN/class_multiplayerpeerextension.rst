@@ -90,7 +90,7 @@ MultiplayerPeerExtension
 
 |void| **_close**\ (\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__close>`
 
-该多人游戏对等体应当立即关闭时调用（见 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ）。
+该多人游戏对等端应当立即关闭时调用（见 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +102,7 @@ MultiplayerPeerExtension
 
 |void| **_disconnect_peer**\ (\ p_peer\: :ref:`int<class_int>`, p_force\: :ref:`bool<class_bool>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__disconnect_peer>`
 
-应当强制断开与对等体 ``p_peer`` 的连接时调用（见 :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`\ ）。
+应当强制断开与对等端 ``p_peer`` 的连接时调用（见 :ref:`MultiplayerPeer.disconnect_peer()<class_MultiplayerPeer_method_disconnect_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ MultiplayerPeerExtension
 
 :ref:`ConnectionStatus<enum_MultiplayerPeer_ConnectionStatus>` **_get_connection_status**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_connection_status>`
 
-:ref:`MultiplayerAPI<class_MultiplayerAPI>` 请求连接状态时调用（见 :ref:`MultiplayerPeer.get_connection_status()<class_MultiplayerPeer_method_get_connection_status>`\ ）。
+:ref:`MultiplayerPeer<class_MultiplayerPeer>` 请求连接状态时调用（见 :ref:`MultiplayerPeer.get_connection_status()<class_MultiplayerPeer_method_get_connection_status>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ MultiplayerPeerExtension
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **_get_packet_mode**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_MultiplayerPeerExtension_private_method__get_packet_mode>`
 
-调用以获取远程对等体用于发送下一个可用数据包的传输模式。请参阅 :ref:`MultiplayerPeer.get_packet_mode()<class_MultiplayerPeer_method_get_packet_mode>`\ 。
+调用以获取远程对等端用于发送下一个可用数据包的传输模式。请参阅 :ref:`MultiplayerPeer.get_packet_mode()<class_MultiplayerPeer_method_get_packet_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -330,7 +330,7 @@ MultiplayerPeerExtension
 
 |void| **_set_target_peer**\ (\ p_peer\: :ref:`int<class_int>`\ ) |virtual| |required| :ref:`🔗<class_MultiplayerPeerExtension_private_method__set_target_peer>`
 
-设置 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的目标对等体时调用（见 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。
+设置 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 所使用的目标对等端时调用（见 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。
 
 .. rst-class:: classref-item-separator
 

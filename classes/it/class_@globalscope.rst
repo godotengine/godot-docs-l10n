@@ -12,7 +12,7 @@ Costanti e funzioni di ambito globale.
 Descrizione
 ----------------------
 
-Una lista di costanti enumerate e funzioni di ambito globale. Questo è tutto ciò che risiede nei globali, le costanti riguardano gli errori di codice, keycode, indicazioni di proprietà, ecc...
+Una lista di costanti enumerate e funzioni di ambito globale. Questo è tutto ciò che risiede nei globali, le costanti riguardano gli errori di codice, codici di tasti, indicazioni di proprietà, ecc...
 
 Anche i singleton sono documentati qui, visto che sono accessibili da ovunque.
 
@@ -776,7 +776,7 @@ Valore dell'enumeratore che non corrisponde ad alcun tasto. Utilizzato per inizi
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_SPECIAL** = ``4194304``
 
-I keycode con questo bit applicato non si possono stampare.
+I codici di tasti con questo bit applicato non si possono stampare.
 
 .. _class_@GlobalScope_constant_KEY_ESCAPE:
 
@@ -3626,11 +3626,11 @@ Indica che una proprietà è un'istanza di un tipo derivato da :ref:`Resource<cl
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_MULTILINE_TEXT** = ``18``
 
-Hints that a :ref:`String<class_String>` property is text with line breaks. Editing it will show a text input field where line breaks can be typed.
+Indica che una proprietà :ref:`String<class_String>` è costituita da testo con interruzioni di riga. Modificandola, verrà visualizzato un campo di immissione testo in cui è possibile digitare le interruzioni di riga.
 
-The hint string can be set to ``"monospace"`` to force the input field to use a monospaced font.
+La stringa indicativa può essere impostata su ``“monospace”`` per forzare il campo di immissione a utilizzare un font a spaziatura fissa.
 
-If the hint string ``"no_wrap"`` is set, the input field will not wrap lines at boundaries, instead resorting to making the area scrollable.
+Se la stringa indicativa ``“no_wrap”`` è impostata, il campo di immissione non effettuerà il ritorno a capo ai margini, ma renderà invece l'area scorrevole.
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_EXPRESSION:
 
@@ -4084,23 +4084,23 @@ Se la proprietà ha ``nil`` come valore predefinito, il suo tipo sarà :ref:`Var
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_ARRAY** = ``262144``
 
-The property is the element count of a property array, i.e. a list of groups of related properties. Properties defined with this usage also need a specific ``class_name`` field in the form of ``label,prefix``. The field may also include additional comma-separated options:
+La proprietà rappresenta il numero di elementi di un array di proprietà, ovvero un elenco di gruppi di proprietà correlate. Le proprietà definite con questo utilizzo richiedono inoltre un campo specifico ``class_name`` nella forma ``label,prefix``. Il campo può includere anche ulteriori opzioni separate da virgola:
 
-- ``page_size=N``: Overrides :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` for this array.
+- ``page_size=N``: sovrascrive :ref:`EditorSettings.interface/inspector/max_array_dictionary_items_per_page<class_EditorSettings_property_interface/inspector/max_array_dictionary_items_per_page>` per questo array.
 
-- ``add_button_text=text``: The text displayed by the "Add Element" button.
+- ``add_button_text=text``: il testo visualizzato dal pulsante “Aggiungi elemento”.
 
-- ``static``: The elements can't be re-arranged.
+- ``static``: gli elementi non possono essere riorganizzati.
 
-- ``const``: New elements can't be added.
+- ``const``: non è possibile aggiungere nuovi elementi.
 
-- ``numbered``: An index will appear next to each element.
+- ``numbered``: accanto a ciascun elemento apparirà un indice.
 
-- ``unfoldable``: The array can't be folded.
+- ``unfoldable``: l'array non può essere ridotto.
 
-- ``swap_method=method_name``: The method that will be called when two elements switch places. The method should take 2 :ref:`int<class_int>` parameters, which will be indices of the elements being swapped.
+- ``swap_method=method_name``: Il metodo che verrà chiamato quando due elementi si scambiano di posto. Il metodo dovrebbe accettare 2 parametri :ref:`int<class_int>`, che saranno gli indici degli elementi da scambiare.
 
-Note that making a full-fledged property array requires boilerplate code involving :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
+Si noti che la creazione di un array di proprietà completo richiede codice boilerplate che coinvolge :ref:`Object._get_property_list()<class_Object_private_method__get_property_list>`.
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE:
 

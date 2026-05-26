@@ -127,7 +127,7 @@ DPITexture
 
 :ref:`DPITexture<class_DPITexture>` **create_from_string**\ (\ source\: :ref:`String<class_String>`, scale\: :ref:`float<class_float>` = 1.0, saturation\: :ref:`float<class_float>` = 1.0, color_map\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_DPITexture_method_create_from_string>`
 
-Creates a new **DPITexture** and initializes it by allocating and setting the SVG data to ``source``.
+新建 **DPITexture**\ ，并通过分配内存并将 SVG 数据设置为 ``source`` 来对其进行初始化。
 
 .. rst-class:: classref-item-separator
 
@@ -151,7 +151,7 @@ Creates a new **DPITexture** and initializes it by allocating and setting the SV
 
 :ref:`String<class_String>` **get_source**\ (\ ) |const| :ref:`🔗<class_DPITexture_method_get_source>`
 
-Returns this SVG texture's source code.
+返回该 SVG 纹理的源代码。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Returns this SVG texture's source code.
 
 |void| **set_source**\ (\ source\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DPITexture_method_set_source>`
 
-Sets this SVG texture's source code.
+设置该 SVG 纹理的源代码。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

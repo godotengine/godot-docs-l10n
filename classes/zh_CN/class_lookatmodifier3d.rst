@@ -63,7 +63,7 @@ LookAtModifier3D
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`Axis<enum_Vector3_Axis>`                      | :ref:`primary_rotation_axis<class_LookAtModifier3D_property_primary_rotation_axis>`                         | ``1``                |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`relative<class_LookAtModifier3D_property_relative>`                                                   | ``true``             |
+   | :ref:`bool<class_bool>`                             | :ref:`relative<class_LookAtModifier3D_property_relative>`                                                   | ``false``            |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
    | :ref:`float<class_float>`                           | :ref:`secondary_damp_threshold<class_LookAtModifier3D_property_secondary_damp_threshold>`                   |                      |
    +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------+----------------------+
@@ -381,7 +381,7 @@ enum **OriginFrom**: :ref:`🔗<enum_LookAtModifier3D_OriginFrom>`
 - |void| **set_primary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_limit_angle**\ (\ )
 
-The limit angle of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+当 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 为 ``true`` 时，主旋转的限制角度，单位为弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ The limit angle of the primary rotation when :ref:`symmetry_limitation<class_Loo
 - |void| **set_primary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+当 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 为 ``false`` 时，主旋转负方向的限制角度，单位为弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ The limit angle of negative side of the primary rotation when :ref:`symmetry_lim
 - |void| **set_primary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_primary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the primary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+当 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 为 ``false`` 时，主旋转正方向的限制角度，单位为弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -476,14 +476,16 @@ The limit angle of positive side of the primary rotation when :ref:`symmetry_lim
 
 .. rst-class:: classref-property
 
-:ref:`bool<class_bool>` **relative** = ``true`` :ref:`🔗<class_LookAtModifier3D_property_relative>`
+:ref:`bool<class_bool>` **relative** = ``false`` :ref:`🔗<class_LookAtModifier3D_property_relative>`
 
 .. rst-class:: classref-property-setget
 
 - |void| **set_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_relative**\ (\ )
 
-The relative option. If ``true``, the rotation is applied relative to the pose. If ``false``, the rotation is applied relative to the rest. It means to replace the current pose with the **LookAtModifier3D**'s result.
+相对选项。如果为 ``true``\ ，则旋转是相对于该姿势应用的。如果为 ``false``\ ，则旋转是相对于放松姿势应用的。这意味着用 **LookAtModifier3D** 的结果替换当前姿势。
+
+\ **注意：**\ 与 :ref:`IterateIK3D<class_IterateIK3D>` 的 :ref:`JointLimitation3D<class_JointLimitation3D>` 不同，该选项会影响 :ref:`use_angle_limitation<class_LookAtModifier3D_property_use_angle_limitation>` 的基准角度。由于 **LookAtModifier3D** 强烈依赖于欧拉旋转，因此决定限制的轴与实际旋转紧密相关。
 
 .. rst-class:: classref-item-separator
 
@@ -517,7 +519,7 @@ The relative option. If ``true``, the rotation is applied relative to the pose. 
 - |void| **set_secondary_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_limit_angle**\ (\ )
 
-The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``true``, in radians.
+当 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 为 ``true`` 时，次旋转的限制角度，单位为弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +553,7 @@ The limit angle of the secondary rotation when :ref:`symmetry_limitation<class_L
 - |void| **set_secondary_negative_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_negative_limit_angle**\ (\ )
 
-The limit angle of negative side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+当 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 为 ``false`` 时，次旋转负方向的限制角度，单位为弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +587,7 @@ The limit angle of negative side of the secondary rotation when :ref:`symmetry_l
 - |void| **set_secondary_positive_limit_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_secondary_positive_limit_angle**\ (\ )
 
-The limit angle of positive side of the secondary rotation when :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` is ``false``, in radians.
+当 :ref:`symmetry_limitation<class_LookAtModifier3D_property_symmetry_limitation>` 为 ``false`` 时，次旋转正方向的限制角度，单位为弧度。
 
 .. rst-class:: classref-item-separator
 
@@ -657,7 +659,7 @@ The limit angle of positive side of the secondary rotation when :ref:`symmetry_l
 
 如果为 ``true`` 则会限制旋转量。例如，可以帮助防止角色的脖子发生 360 度旋转。
 
-\ **注意：**\ 与 :ref:`AnimationTree<class_AnimationTree>` 混合一样，插值时会优先考虑 :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>`\ 。这意味着插值在某些情况下不会选择最短路径。
+\ **注意：**\ 与 :ref:`AnimationTree<class_AnimationTree>` 混合一样，插值会根据 :ref:`relative<class_LookAtModifier3D_property_relative>` 选项优先选择 :ref:`Skeleton3D.get_bone_rest()<class_Skeleton3D_method_get_bone_rest>` 或 :ref:`Skeleton3D.get_bone_pose()<class_Skeleton3D_method_get_bone_pose>`\ 。这意味着插值在某些情况下不会选择最短路径。
 
 \ **注意：**\ 某些 :ref:`transition_type<class_LookAtModifier3D_property_transition_type>` 的取值可能会超出限制（例如 :ref:`Tween.TRANS_BACK<class_Tween_constant_TRANS_BACK>`\ 、\ :ref:`Tween.TRANS_ELASTIC<class_Tween_constant_TRANS_ELASTIC>`\ 、\ :ref:`Tween.TRANS_SPRING<class_Tween_constant_TRANS_SPRING>`\ ）。如果在超出限制时发生插值，结果可能不会遵循骨骼的放松姿势。
 

@@ -1294,9 +1294,9 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 :ref:`int<class_int>` **map_get_iteration_id**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer2D_method_map_get_iteration_id>`
 
-返回导航地图的当前迭代 ID。导航地图发生更改并同步时都会增加迭代 ID。迭代 ID 为 0 表示导航地图从未进行过同步。
+返回当前导航地图的迭代 ID。每当导航地图发生改变并进行同步时，这个迭代 id 就会增加。如果迭代id 为 0，则表示该导航地图从未进行过同步。
 
-\ **注意：**\ 迭代 ID 超过取值范围后会绕回 1。
+\ **注意：** 当迭代 ID 达到其数值范围的上限时，会重新绕回 1。
 
 .. rst-class:: classref-item-separator
 
@@ -2144,13 +2144,13 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer2D_ProcessInfo>`
 
 |void| **source_geometry_parser_set_callback**\ (\ parser\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer2D_method_source_geometry_parser_set_callback>`
 
-为特定源几何体 ``parser`` 设置 ``callback`` :ref:`Callable<class_Callable>`\ 。\ :ref:`Callable<class_Callable>` 将接收具有以下参数的调用：
+为指定的源几何体 ``parser``\ （解析器）设置 ``callback`` :ref:`Callable<class_Callable>`\ 。该 :ref:`Callable<class_Callable>` 在调用时会接收以下参数：
 
-- ``navigation_mesh`` - 用于定义解析设置的 :ref:`NavigationPolygon<class_NavigationPolygon>` 引用。请勿直接编辑或添加到导航网格。
+\ ``navigation_mesh`` - 用于定义解析设置的 :ref:`NavigationPolygon<class_NavigationPolygon>` 引用。请勿直接编辑或向其添加内容。
 
-- ``source_geometry_data`` - :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>` 引用。将用于导航网格烘焙的自定义源几何体添加到该对象。
+\ ``source_geometry_data`` - :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>` 引用。请将用于烘焙导航网格的自定义源几何体添加到这个对象中。
 
-- ``node`` - 解析的 :ref:`Node<class_Node>`\ 。
+\ ``node`` - 当前正在被解析的 :ref:`Node<class_Node>`\ （节点）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

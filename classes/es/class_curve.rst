@@ -14,9 +14,9 @@ Una curva matemática.
 Descripción
 ----------------------
 
-This resource describes a mathematical curve by defining a set of points and tangents at each point. By default, it ranges between ``0`` and ``1`` on the X and Y axes, but these ranges can be changed.
+Este recurso describe una curva matemática definiendo un conjunto de puntos y tangentes en cada punto. Por defecto, abarca entre ``0`` y ``1`` en los ejes X e Y, pero estos rangos pueden cambiarse.
 
-Please note that many resources and nodes assume they are given *unit curves*. A unit curve is a curve whose domain (the X axis) is between ``0`` and ``1``. Some examples of unit curve usage are :ref:`CPUParticles2D.angle_curve<class_CPUParticles2D_property_angle_curve>` and :ref:`Line2D.width_curve<class_Line2D_property_width_curve>`.
+Ten en cuenta que muchos recursos y nodos asumen que se les proporcionan *curvas unitarias*. Una curva unitaria es una curva cuyo dominio (el eje X) está entre ``0`` y ``1``. Algunos ejemplos de uso de curvas unitarias son :ref:`CPUParticles2D.angle_curve<class_CPUParticles2D_property_angle_curve>` y :ref:`Line2D.width_curve<class_Line2D_property_width_curve>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -304,7 +304,7 @@ Recompone la caché de puntos cocinada para la curva.
 
 |void| **clean_dupes**\ (\ ) :ref:`🔗<class_Curve_method_clean_dupes>`
 
-Removes duplicate points, i.e. points that are less than 0.00001 units (engine epsilon value) away from their neighbor on the curve.
+Elimina los puntos duplicados, es decir, aquellos que se encuentran a menos de 0.00001 unidades (valor epsilon del motor) de su punto vecino en la curva.
 
 .. rst-class:: classref-item-separator
 

@@ -107,7 +107,7 @@ Intercambia a el proximo estado inmediatamente, pero buscara el nuevo estado a l
 
 :ref:`SwitchMode<enum_AnimationNodeStateMachineTransition_SwitchMode>` **SWITCH_MODE_AT_END** = ``2``
 
-Espera a que termine el actual estado en reproduccion, entonces intercambia con el principio de la proxima animacion.
+Espera a que termine el actual estado en reproduccion, entonces intercambia con el principio de la proxima animación.
 
 .. rst-class:: classref-item-separator
 
@@ -163,7 +163,7 @@ Descripciones de Propiedades
 - |void| **set_advance_condition**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_advance_condition**\ (\ )
 
-Turn on auto advance when this condition is set. The provided name will become a boolean parameter on the :ref:`AnimationTree<class_AnimationTree>` that can be controlled from code (see `Using AnimationTree <../tutorials/animation/animation_tree.html#controlling-from-code>`__). For example, if :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>` is an :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` and :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` is set to ``"idle"``:
+Activa el avance automático cuando se establece esta condición. El nombre proporcionado se convertirá en un parámetro booleano en el :ref:`AnimationTree<class_AnimationTree>` que puede controlarse desde el código (véase `Uso de AnimationTree <../tutorials/animation/animation_tree.html#controlling-from-code>`__). Por ejemplo, si :ref:`AnimationTree.tree_root<class_AnimationTree_property_tree_root>` es un :ref:`AnimationNodeStateMachine<class_AnimationNodeStateMachine>` y :ref:`advance_condition<class_AnimationNodeStateMachineTransition_property_advance_condition>` está establecido en ``"idle"``:
 
 
 .. tabs::

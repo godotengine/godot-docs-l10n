@@ -716,9 +716,9 @@ enum **ClipChildrenMode**: :ref:`🔗<enum_CanvasItem_ClipChildrenMode>`
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask.
+该 **CanvasItem** 由 :ref:`Viewport<class_Viewport>` 节点渲染的渲染层。如果 **CanvasItem** 及其所有父级都与 :ref:`Viewport<class_Viewport>` 的画布剔除遮罩共享同一图层，则该 :ref:`Viewport<class_Viewport>` 将渲染它。
 
-\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
+\ **注意：**\ **CanvasItem** 不会继承其父级的可见性图层。这意味着，如果父 **CanvasItem** 没有与其子节点相同的全部层，则即使父节点和子节点的 :ref:`visible<class_CanvasItem_property_visible>` 都设置为 ``true``\ ，该子节点也可能不可见。例如，如果父节点具有图层 1，而子节点具有图层 2，则在画布剔除遮罩设置为图层 1 或图层 2 （见 :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`\ ）的 :ref:`Viewport<class_Viewport>` 中，该子节点将不可见。为了确保父节点和子节点都可见，父节点必须同时具有图层 1 和图层 2，或者子节点必须将 :ref:`top_level<class_CanvasItem_property_top_level>` 设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -839,11 +839,11 @@ The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<c
 
 |void| **draw_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_arc>`
 
-Draws an unfilled arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. ``center`` is defined in local space. For elliptical arcs, see :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
+使用一个 uniform ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），在给定的角度之间绘制一条未填充的弧线。\ ``point_count`` 的值越大，该曲线越平滑。\ ``center`` 定义在局部空间。绘制椭圆弧见 :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`\ 。另见 :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`\ 。
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该弧线。这意味着当缩放 CanvasItem 时，弧线将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full circle arc is drawn (i.e. arc will not overlap itself).
+如果 ``start_angle < end_angle`` ，则弧线是从 ``start_angle`` 朝向 ``end_angle`` 的值绘制的，即是顺时针方向；否则为逆时针方向。以相反的顺序传递相同的角度，将产生相同的弧线。如果 ``start_angle`` 和 ``end_angle`` 的差的绝对值大于 :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` 弧度，则绘制一个完整的圆弧（即弧线不会与自身重叠）。
 
 .. rst-class:: classref-item-separator
 
@@ -879,15 +879,15 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+绘制圆形，\ ``position`` 定义在局部空间。另见 :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`\ 、\ :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`\ 、\ :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 、\ :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`\ 。
 
-If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
+如果 ``filled`` 为 ``true``\ ，则圆形将使用指定的 ``color`` 填充。如果 ``filled`` 为 ``false``\ ，则圆形将被绘制为具有指定的 ``color`` 和 ``width`` 的笔划。
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则将绘制两点图元而不是四点图元。这意味着当缩放 CanvasItem 时，线条将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **注意：**\ ``width`` 只有在 ``filled`` 为 ``false`` 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -899,11 +899,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_colored_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_colored_polygon>`
 
-Draws a colored polygon of any number of points, convex or concave. The points in the ``points`` array are defined in local space. Unlike :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, a single color must be specified for the whole polygon.
+绘制一个由任意数量的点构成的实心多边形，凹凸均可。\ ``points`` 数组中的点定义在局部空间。与 :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>` 不同，必须为整个多边形制定单一颜色。
 
-\ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **注意：**\ 如果你需要频繁重绘同样的多边形，包含大量顶点，请考虑预先使用 :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` 进行三角剖分计算，并使用 :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`\ 、\ :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` 或 :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`\ 。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -935,15 +935,15 @@ Draws a colored polygon of any number of points, convex or concave. The points i
 
 |void| **draw_ellipse**\ (\ position\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor``. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+绘制一个长半轴长 ``major`` 、短半轴长 ``minor`` 的椭圆。另见 :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`\ 、\ :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`\ 、\ :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` 和 :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`\ 。
 
-If ``filled`` is ``true``, the ellipse will be filled with the ``color`` specified. If ``filled`` is ``false``, the ellipse will be drawn as a stroke with the ``color`` and ``width`` specified.
+如果 ``filled`` 为 ``true``\ ，则圆形将使用指定的 ``color`` 填充。如果 ``filled`` 为 ``false``\ ，则圆形将被绘制为具有指定的 ``color`` 和 ``width`` 的笔划。
 
-If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则将绘制两点图元而不是四点图元。这意味着当缩放 CanvasItem 时，线条将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+如果 ``antialiased`` 为 ``true``\ ，则半透明的“羽毛”将附加到边界，使轮廓变得平滑。
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **注意：**\ ``width`` 只有在 ``filled`` 为 ``false`` 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -955,11 +955,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_ellipse_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse_arc>`
 
-Draws an unfilled elliptical arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. For circular arcs, see :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+使用一个 uniform ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），在给定的角度之间绘制一条未填充的椭圆弧线。\ ``point_count`` 的值越大，该曲线越平滑。\ ``center`` 定义在局部空间。绘制圆弧见 :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`\ 。另见 :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`\ 。
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该弧线。这意味着当缩放 CanvasItem 时，弧线将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full ellipse is drawn (i.e. arc will not overlap itself).
+如果 ``start_angle < end_angle`` ，则弧线是从 ``start_angle`` 朝向 ``end_angle`` 的值绘制的，即是顺时针方向；否则为逆时针方向。以相反的顺序传递相同的角度，将产生相同的弧线。如果 ``start_angle`` 和 ``end_angle`` 的差的绝对值大于 :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` 弧度，则绘制一个完整的椭圆（即弧线不会与自身重叠）。
 
 .. rst-class:: classref-item-separator
 
@@ -983,9 +983,9 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_lcd_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_lcd_texture_rect_region>`
 
-Draws a textured rectangle region of the font texture with LCD subpixel anti-aliasing at a given position, optionally modulated by a color. The ``rect`` is defined in local space.
+在给定的位置绘制一个带有 LCD 子像素抗锯齿的字体纹理的矩形区域，可以选择用一种颜色来调制。\ ``rect`` 定义在局部空间。
 
-Texture is drawn using the following blend operation, blend mode of the :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` is ignored:
+纹理是通过以下混合操作绘制的，\ :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` 的混合模式被忽略：
 
 ::
 
@@ -994,7 +994,7 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
     dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
     dst.a = modulate.a + dst.a * (1.0 - modulate.a);
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1020,9 +1020,9 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
 
 |void| **draw_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, texture\: :ref:`Texture2D<class_Texture2D>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_mesh>`
 
-Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`MeshInstance2D<class_MeshInstance2D>` for related documentation. The ``transform`` is defined in local space.
+使用提供的纹理在 2D 中绘制一个\ :ref:`Mesh<class_Mesh>`\ 。相关文档见 :ref:`MeshInstance2D<class_MeshInstance2D>`\ 。\ ``transform`` 是在局部空间中定义的。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1034,13 +1034,13 @@ Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`Mes
 
 |void| **draw_msdf_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline\: :ref:`float<class_float>` = 0.0, pixel_range\: :ref:`float<class_float>` = 4.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_CanvasItem_method_draw_msdf_texture_rect_region>`
 
-Draws a textured rectangle region of the multichannel signed distance field texture at a given position, optionally modulated by a color. The ``rect`` is defined in local space. See :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` for more information and caveats about MSDF font rendering.
+在给定位置，绘制一条多通道有符号距离场纹理的纹理矩形区域，可以选择用一种颜色来调制。\ ``rect`` 定义在局部空间。有关 MSDF 字体渲染的更多信息和注意事项，请参阅 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>`\ 。
 
-If ``outline`` is positive, each alpha channel value of pixel in region is set to maximum value of true distance in the ``outline`` radius.
+如果 ``outline`` 为正，则区域中像素的每个 Alpha 通道值都被设置为 ``outline`` 半径内真实距离的最大值。
 
-Value of the ``pixel_range`` should the same that was used during distance field texture generation.
+\ ``pixel_range`` 的值应该与距离场纹理生成期间使用的值相同。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1108,9 +1108,9 @@ Value of the ``pixel_range`` should the same that was used during distance field
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` for related documentation.
+使用提供的纹理在 2D 中绘制一个\ :ref:`MultiMesh<class_MultiMesh>`\ 。相关文档见 :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`\ 。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1122,11 +1122,11 @@ Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :
 
 |void| **draw_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_polygon>`
 
-Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, each point's color can be changed individually. The ``points`` array is defined in local space. See also :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` and :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. If you need more flexibility (such as being able to use bones), use :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>` instead.
+绘制一个由任意数量的点构成的实心多边形，凹凸均可。与 :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>` 不同，每个点的颜色都可以单独修改。\ ``points`` 数组定义在局部空间。另见 :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` 和 :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`\ 。如果需要更高的灵活度（例如能够用到骨骼），请改用 :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`\ 。
 
-\ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **注意：**\ 如果你需要频繁重绘同样的多边形，包含大量顶点，请考虑预先使用 :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` 进行三角剖分计算，并使用 :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`\ 、\ :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` 或 :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`\ 。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1166,9 +1166,9 @@ Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`d
 
 |void| **draw_primitive**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>`, texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_primitive>`
 
-Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for a triangle, and 4 points for a quad. If 0 points or more than 4 points are specified, nothing will be drawn and an error message will be printed. The ``points`` array is defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, and :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`.
+绘制自定义图元。1 个点的是个点，2 个点的是线段，3 个点的是三角形，4 个点的是四边形。如果没有指定点或者指定了超过 4 个点，则不会绘制任何东西，只会输出错误消息。\ ``points`` 数组定义在局部空间。另见 :ref:`draw_line()<class_CanvasItem_method_draw_line>`\ 、\ :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`\ 、\ :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`\ 、\ :ref:`draw_rect()<class_CanvasItem_method_draw_rect>`\ 。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1226,9 +1226,9 @@ Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for
 
 |void| **draw_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string>`
 
-Draws ``text`` using the specified ``font`` at the ``pos`` in local space (bottom-left corner using the baseline of the font). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+使用 ``font`` 字体绘制 ``text`` 文本，以局部空间中的 ``pos`` 作为左下角，对齐字体基线。文本颜色会与 ``modulate`` 相乘。如果 ``width`` 大于等于 0，则文本超出该宽度的部分会被裁剪。如果 ``oversampling`` 大于零则会用作字体过采样系数，否则使用视口的过采样设置。
 
-\ **Example:** Draw "Hello world", using the project's default font:
+\ **示例：**\ 使用项目默认字体绘制“Hello world”：
 
 
 .. tabs::
@@ -1243,7 +1243,7 @@ Draws ``text`` using the specified ``font`` at the ``pos`` in local space (botto
 
 
 
-See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
+另见 :ref:`Font.draw_string()<class_Font_method_draw_string>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1267,9 +1267,9 @@ See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
 
 |void| **draw_style_box**\ (\ style_box\: :ref:`StyleBox<class_StyleBox>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_CanvasItem_method_draw_style_box>`
 
-Draws a styled rectangle. The ``rect`` is defined in local space.
+绘制一个样式化的矩形。\ ``rect`` 在局部空间中定义。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1281,9 +1281,9 @@ Draws a styled rectangle. The ``rect`` is defined in local space.
 
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
-Draws a texture at a given position. The ``position`` is defined in local space.
+在给定位置绘制纹理。\ ``position`` 是在局部空间中定义的。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1295,9 +1295,9 @@ Draws a texture at a given position. The ``position`` is defined in local space.
 
 |void| **draw_texture_rect**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, tile\: :ref:`bool<class_bool>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect>`
 
-Draws a textured rectangle at a given position, optionally modulated by a color. The ``rect`` is defined in local space. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` and :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
+在给定位置绘制一个带纹理的矩形，可以选择用颜色调制。\ ``rect`` 定义在局部空间。如果 ``transpose`` 为 ``true``\ ，则纹理将交换其 X 和 Y 坐标。另见 :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` 和 :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`\ 。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1309,9 +1309,9 @@ Draws a textured rectangle at a given position, optionally modulated by a color.
 
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
-Draws a textured rectangle from a texture's region (specified by ``src_rect``) at a given position in local space, optionally modulated by a color. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+在给定的局部空间位置绘制具有纹理的矩形，可以指定所使用的纹理区域（由 ``src_rect`` 指定），可选择用颜色调制。如果 ``transpose`` 为 ``true``\ ，则纹理将交换其 X 和 Y 坐标。另见 :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`\ 。
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **注意：**\ 在 GDScript 中，\ **不**\ 应将仅存储在局部变量中的样式框、纹理和网格与该方法一起使用，因为调用该方法后绘制操作不会立即开始。在 GDScript 中，当使用局部变量的函数结束时，局部变量会在渲染发生之前被销毁。
 
 .. rst-class:: classref-item-separator
 
@@ -1659,9 +1659,9 @@ Draws a textured rectangle from a texture's region (specified by ``src_rect``) a
 
 |void| **set_notify_transform**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_notify_transform>`
 
-If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` whenever its global transform changes.
+如果为 ``true``\ ，则该节点将在其全局变换发生改变时收到 :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>`\ 。
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`Light2D<class_Light2D>` automatically enable this in order to function correctly.
+\ **注意：**\ :ref:`Camera2D<class_Camera2D>`\ 、\ :ref:`Light2D<class_Light2D>` 等许多画布项都会自动启用该功能，以便正常运行。
 
 .. rst-class:: classref-item-separator
 

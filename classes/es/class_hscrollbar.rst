@@ -7,14 +7,14 @@ HScrollBar
 
 **Hereda:** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A horizontal scrollbar that goes from left (min) to right (max).
+Una barra de desplazamiento horizontal que va de izquierda (mín) a derecha (máx).
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A horizontal scrollbar, typically used to navigate through content that extends beyond the visible width of a control. It is a :ref:`Range<class_Range>`-based control and goes from left (min) to right (max).
+Una barra de desplazamiento horizontal, utilizada típicamente para navegar por contenido que se extiende más allá del ancho visible de un control. Es un control basado en :ref:`Range<class_Range>` y va de izquierda (mín) a derecha (máx).
 
 .. rst-class:: classref-reftable-group
 
@@ -45,9 +45,9 @@ Descripciones de las propiedades del tema
 
 :ref:`int<class_int>` **padding_bottom** = ``0`` :ref:`🔗<class_HScrollBar_theme_constant_padding_bottom>`
 
-Padding between the bottom of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+Relleno entre la parte inferior del elemento :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` y el :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
 
-\ **Note:** To apply horizontal padding, modify the left/right content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **Nota:** Para aplicar relleno horizontal, modifica los márgenes de contenido izquierdo/derecho de :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -59,9 +59,9 @@ Padding between the bottom of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_s
 
 :ref:`int<class_int>` **padding_top** = ``0`` :ref:`🔗<class_HScrollBar_theme_constant_padding_top>`
 
-Padding between the top of the :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` element and the :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
+Relleno entre la parte superior del elemento :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` y el :ref:`ScrollBar.grabber<class_ScrollBar_theme_style_grabber>`.
 
-\ **Note:** To apply horizontal padding, modify the left/right content margins of :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` instead.
+\ **Nota:** Para aplicar relleno horizontal, modifica los márgenes de contenido izquierdo/derecho de :ref:`ScrollBar.scroll<class_ScrollBar_theme_style_scroll>` en su lugar.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

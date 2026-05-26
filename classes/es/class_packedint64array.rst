@@ -12,13 +12,13 @@ Un array empaquetado de enteros de 64 bits.
 Descripción
 ----------------------
 
-An array specifically designed to hold 64-bit integer values. Packs data tightly, so it saves memory for large array sizes.
+Un array diseñado específicamente para almacenar valores enteros de 64 bits. Empaqueta los datos de forma compacta, ahorrando memoria para arrays grandes.
 
-\ **Note:** This type stores signed 64-bit integers, which means it can take values in the interval ``[-2^63, 2^63 - 1]``, i.e. ``[-9223372036854775808, 9223372036854775807]``. Exceeding those bounds will wrap around. If you only need to pack 32-bit integers tightly, see :ref:`PackedInt32Array<class_PackedInt32Array>` for a more memory-friendly alternative.
+\ **Nota:** Este tipo almacena enteros con signo de 64 bits, lo que significa que puede tomar valores en el intervalo ``[-2^63, 2^63 - 1]``, es decir, ``[-9223372036854775808, 9223372036854775807]``. Exceder esos límites hará que se ajusten. Si solo necesitas empaquetar enteros de 32 bits de forma compacta, véase :ref:`PackedInt32Array<class_PackedInt32Array>` para una alternativa que ahorra más memoria.
 
-\ **Differences between packed arrays, typed arrays, and untyped arrays:** Packed arrays are generally faster to iterate on and modify compared to a typed array of the same type (e.g. **PackedInt64Array** versus ``Array[int]``). Also, packed arrays consume less memory. As a downside, packed arrays are less flexible as they don't offer as many convenience methods such as :ref:`Array.map()<class_Array_method_map>`. Typed arrays are in turn faster to iterate on and modify than untyped arrays.
+\ **Diferencias entre arrays empaquetados, arrays tipados y arrays sin tipo:** Los arrays empaquetados son generalmente más rápidos para iterar y modificar en comparación con un array tipado del mismo tipo (por ejemplo, **PackedInt64Array** versus ``Array[int]``). Además, los arrays empaquetados consumen menos memoria. Como desventaja, los arrays empaquetados son menos flexibles ya que no ofrecen tantos métodos de conveniencia como :ref:`Array.map()<class_Array_method_map>`. Los arrays tipados son a su vez más rápidos para iterar y modificar que los arrays sin tipo.
 
-\ **Note:** Packed arrays are always passed by reference. To get a copy of an array that can be modified independently of the original array, use :ref:`duplicate()<class_PackedInt64Array_method_duplicate>`. This is *not* the case for built-in properties and methods. In these cases the returned packed array is a copy, and changing it will *not* affect the original value. To update a built-in property of this type, modify the returned array and then assign it to the property again.
+\ **Nota:** Los arrays empaquetados siempre se pasan por referencia. Para obtener una copia de un array que pueda modificarse independientemente del array original, usa :ref:`duplicate()<class_PackedInt64Array_method_duplicate>`. Este *no* es el caso de las propiedades y métodos incorporados. En estos casos, el array empaquetado devuelto es una copia, y cambiarlo *no* afectará al valor original. Para actualizar una propiedad incorporada de este tipo, modifica el array devuelto y luego asígnalo a la propiedad de nuevo.
 
 .. note::
 
@@ -290,7 +290,7 @@ Este método es similar (pero no idéntico) al operador ``[]``. Lo más notable 
 
 :ref:`bool<class_bool>` **has**\ (\ value\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PackedInt64Array_method_has>`
 
-Returns ``true`` if the array contains ``value``.
+Devuelve ``true`` si el array contiene ``value``.
 
 .. rst-class:: classref-item-separator
 
@@ -350,9 +350,9 @@ Elimina un elemento del array por indice.
 
 :ref:`int<class_int>` **resize**\ (\ new_size\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PackedInt64Array_method_resize>`
 
-Sets the size of the array. If the array is grown, reserves elements at the end of the array. If the array is shrunk, truncates the array to the new size. Calling :ref:`resize()<class_PackedInt64Array_method_resize>` once and assigning the new values is faster than adding new elements one by one.
+Establece el tamaño del array. Si el array aumenta de tamaño, reserva elementos al final del array. Si el array se encoge, trunca el array al nuevo tamaño. Llamar a :ref:`resize()<class_PackedInt64Array_method_resize>` una vez y asignar los nuevos valores es más rápido que añadir nuevos elementos uno por uno.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the following :ref:`Error<enum_@GlobalScope_Error>` constants if this method fails: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the size is negative, or :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` if allocations fail. Use :ref:`size()<class_PackedInt64Array_method_size>` to find the actual size of the array after resize.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o una de las siguientes constantes :ref:`Error<enum_@GlobalScope_Error>` si este método falla: :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si el tamaño es negativo, o :ref:`@GlobalScope.ERR_OUT_OF_MEMORY<class_@GlobalScope_constant_ERR_OUT_OF_MEMORY>` si las asignaciones fallan. Usa :ref:`size()<class_PackedInt64Array_method_size>` para encontrar el tamaño real del array después del redimensionamiento.
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ Invierte el orden de los elementos en el array.
 
 :ref:`int<class_int>` **rfind**\ (\ value\: :ref:`int<class_int>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_PackedInt64Array_method_rfind>`
 
-Searches the array in reverse order. Optionally, a start search index can be passed. If negative, the start index is considered relative to the end of the array.
+Busca el array en orden inverso. Opcionalmente, se puede pasar un índice de búsqueda inicial. Si es negativo, el índice inicial se considera relativo al final del array.
 
 .. rst-class:: classref-item-separator
 
@@ -428,7 +428,7 @@ Si ``begin`` o ``end`` son negativos, serán relativos al final del array (es de
 
 |void| **sort**\ (\ ) :ref:`🔗<class_PackedInt64Array_method_sort>`
 
-Sorts the elements of the array in ascending order.
+Ordena los elementos del array en orden ascendente.
 
 .. rst-class:: classref-item-separator
 
@@ -459,7 +459,7 @@ Descripciones de Operadores
 
 :ref:`bool<class_bool>` **operator !=**\ (\ right\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ ) :ref:`🔗<class_PackedInt64Array_operator_neq_PackedInt64Array>`
 
-Returns ``true`` if contents of the arrays differ.
+Devuelve ``true`` si los contenidos de los arrays difieren.
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Devuelve un nuevo **PackedInt64Array** con el contenido de ``right`` añadido al
 
 :ref:`bool<class_bool>` **operator ==**\ (\ right\: :ref:`PackedInt64Array<class_PackedInt64Array>`\ ) :ref:`🔗<class_PackedInt64Array_operator_eq_PackedInt64Array>`
 
-Returns ``true`` if contents of both arrays are the same, i.e. they have all equal ints at the corresponding indices.
+Devuelve ``true`` si el contenido de ambos arrays es el mismo, es decir, si tienen todos los enteros iguales en los índices correspondientes.
 
 .. rst-class:: classref-item-separator
 

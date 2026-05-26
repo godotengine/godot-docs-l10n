@@ -21,7 +21,7 @@ Ocluye la luz emitida por un Light2D, proyectando sombras. El LightOccluder2D de
 Tutoriales
 --------------------
 
-- :doc:`2D lights and shadows <../tutorials/2d/2d_lights_and_shadows>`
+- :doc:`Luces y sombras 2D <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 

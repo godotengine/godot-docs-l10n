@@ -3290,14 +3290,14 @@ If this setting is empty, Blender's default paths will be detected and used auto
 
 \ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
 \ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3307,7 +3307,7 @@ If this setting is empty, Blender's default paths will be detected and used auto
 
 \ **Linux/\*BSD:**\ 
 
-::
+.. code:: text
 
     - /usr/bin/blender
     - /usr/local/bin/blender

@@ -153,7 +153,7 @@ Si es ``true``, :ref:`value<class_Range_property_value>` puede ser menor que :re
 - |void| **set_exp_ratio**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ratio_exp**\ (\ )
 
-If ``true``, and :ref:`min_value<class_Range_property_min_value>` is greater or equal to ``0``, :ref:`value<class_Range_property_value>` will be represented exponentially rather than linearly.
+Si es ``true``, y :ref:`min_value<class_Range_property_min_value>` es mayor o igual que ``0``, :ref:`value<class_Range_property_value>` se representará exponencialmente en lugar de linealmente.
 
 .. rst-class:: classref-item-separator
 
@@ -170,7 +170,7 @@ If ``true``, and :ref:`min_value<class_Range_property_min_value>` is greater or 
 - |void| **set_max**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_max**\ (\ )
 
-Maximum value. Range is clamped if :ref:`value<class_Range_property_value>` is greater than :ref:`max_value<class_Range_property_max_value>`.
+Valor máximo. El rango se limita si :ref:`value<class_Range_property_value>` es mayor que :ref:`max_value<class_Range_property_max_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -187,7 +187,7 @@ Maximum value. Range is clamped if :ref:`value<class_Range_property_value>` is g
 - |void| **set_min**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_min**\ (\ )
 
-Minimum value. Range is clamped if :ref:`value<class_Range_property_value>` is less than :ref:`min_value<class_Range_property_min_value>`.
+Valor mínimo. El rango se limita si :ref:`value<class_Range_property_value>` es menor que :ref:`min_value<class_Range_property_min_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Minimum value. Range is clamped if :ref:`value<class_Range_property_value>` is l
 - |void| **set_page**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_page**\ (\ )
 
-Page size. Used mainly for :ref:`ScrollBar<class_ScrollBar>`. A :ref:`ScrollBar<class_ScrollBar>`'s grabber length is the :ref:`ScrollBar<class_ScrollBar>`'s size multiplied by :ref:`page<class_Range_property_page>` over the difference between :ref:`min_value<class_Range_property_min_value>` and :ref:`max_value<class_Range_property_max_value>`.
+Tamaño de la página. Usado principalmente para :ref:`ScrollBar<class_ScrollBar>`. La longitud del tirador de una :ref:`ScrollBar<class_ScrollBar>` es el tamaño de la :ref:`ScrollBar<class_ScrollBar>` multiplicado por :ref:`page<class_Range_property_page>` sobre la diferencia entre :ref:`min_value<class_Range_property_min_value>` y :ref:`max_value<class_Range_property_max_value>`.
 
 .. rst-class:: classref-item-separator
 
@@ -238,7 +238,7 @@ El valor asignado entre 0 y 1.
 - |void| **set_use_rounded_values**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_rounded_values**\ (\ )
 
-If ``true``, :ref:`value<class_Range_property_value>` will always be rounded to the nearest integer.
+Si es ``true``, :ref:`value<class_Range_property_value>` siempre se redondeará al entero más cercano.
 
 .. rst-class:: classref-item-separator
 

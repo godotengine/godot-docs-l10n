@@ -65,7 +65,7 @@ Descripciones de Propiedades
 - |void| **set_depth**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_depth**\ (\ )
 
-Determines how high the filter frequencies sweep. Low value will primarily affect bass frequencies. High value can sweep high into the treble. Value can range from ``0.1`` to ``4.0``.
+Determina qué tan alto barren las frecuencias del filtro. Un valor bajo afectará principalmente a las frecuencias graves. Un valor alto puede barrer hasta los agudos. El valor puede variar de ``0.1`` a ``4.0``.
 
 .. rst-class:: classref-item-separator
 

@@ -739,21 +739,21 @@ enum **StdHandleType**: :ref:`🔗<enum_OS_StdHandleType>`
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_args>`
 
-Returns the command-line arguments passed to the engine, excluding arguments processed by the engine, such as ``--headless`` and ``--fullscreen``.
+返回传递给引擎的命令行参数，但不包括引擎处理的参数，例如 ``--headless`` 和 ``--fullscreen``\ 。
 
 ::
 
-    # Godot has been executed with the following command:
+    # Godot 已使用以下命令执行：
     # godot --headless --verbose --scene my_scene.tscn --custom
-    OS.get_cmdline_args() # Returns ["--scene", "my_scene.tscn", "--custom"]
+    OS.get_cmdline_args() # 返回 ["--scene", "my_scene.tscn", "--custom"]
 
-Command-line arguments can be written in any form, including both ``--key value`` and ``--key=value`` forms so they can be properly parsed, as long as custom command-line arguments do not conflict with engine arguments.
+命令行参数可以写成任何形式，包括 ``--key value`` 和 ``--key=value`` 两种形式，这样它们就可以被正确解析，只要自定义命令行参数不与引擎参数冲突。
 
-You can also incorporate environment variables using the :ref:`get_environment()<class_OS_method_get_environment>` method.
+还可以使用 :ref:`get_environment()<class_OS_method_get_environment>` 方法合并环境变量。
 
-You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` to define command-line arguments to be passed by the editor when running the project.
+可以设置 :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` 来定义编辑器在运行项目时传递的命令行参数。
 
-\ **Example:** Parse command-line arguments into a :ref:`Dictionary<class_Dictionary>` using the ``--key=value`` form for arguments:
+\ **示例：**\ 使用参数的 ``--key=value`` 形式，将命令行参数解析为 :ref:`Dictionary<class_Dictionary>`\ ：
 
 
 .. tabs::
@@ -766,8 +766,8 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
             var key_value = argument.split("=")
             arguments[key_value[0].trim_prefix("--")] = key_value[1]
         else:
-            # Options without an argument will be present in the dictionary,
-            # with the value set to an empty string.
+            # 没有参数的选项将出现在字典中，
+            # 其值被设置为空字符串。
             arguments[argument.trim_prefix("--")] = ""
 
  .. code-tab:: csharp
@@ -782,15 +782,15 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
         }
         else
         {
-            // Options without an argument will be present in the dictionary,
-            // with the value set to an empty string.
+            // 没有参数的选项将出现在字典中，
+            // 其值被设置为空字符串。
             arguments[argument.TrimPrefix("--")] = "";
         }
     }
 
 
 
-\ **Note:** Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, pass the standard UNIX double dash (``--``) and then the custom arguments, which the engine will ignore by design. These can be read via :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **注意：**\ 不建议直接传递自定义用户参数，因为引擎可能会丢弃或修改它们。相反，传递标准的 UNIX 双破折号（\ ``--``\ ），然后传递自定义参数，引擎将根据设计忽略这些参数。这些可以通过 :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>` 读取。
 
 .. rst-class:: classref-item-separator
 
@@ -802,17 +802,17 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_user_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_user_args>`
 
-Returns the command-line user arguments passed to the engine. User arguments are ignored by the engine and reserved for the user. They are passed after the double dash ``--`` argument. ``++`` may be used when ``--`` is intercepted by another program (such as ``startx``).
+返回传递给引擎的命令行用户参数。引擎不会使用用户参数，用户可以自由指定。用户参数在双横杠 ``--`` 之后指定。如果其他程序会拦截 ``--``\ （例如 ``startx``\ ），那么也可以使用 ``++``\ 。
 
 ::
 
-    # Godot has been executed with the following command:
+    # Godot 已使用以下命令执行：
     # godot --fullscreen --custom -- --level=2 --hardcore
 
-    OS.get_cmdline_args()      # Returns ["--custom"]
-    OS.get_cmdline_user_args() # Returns ["--level=2", "--hardcore"]
+    OS.get_cmdline_args()      # 返回 ["--custom"]
+    OS.get_cmdline_user_args() # 返回 ["--level=2", "--hardcore"]
 
-To get arguments passed before ``--`` or ``++``, use :ref:`get_cmdline_args()<class_OS_method_get_cmdline_args>`.
+要获取在 ``--`` 或 ``++`` 之前传递的参数，请使用 :ref:`get_cmdline_args()<class_OS_method_get_cmdline_args>`\ 。
 
 .. rst-class:: classref-item-separator
 

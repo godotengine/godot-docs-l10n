@@ -14,13 +14,13 @@ Nodo de cámara para escenas 2D.
 Descripción
 ----------------------
 
-Camera node for 2D scenes. It forces the screen (current layer) to scroll following this node. This makes it easier (and faster) to program scrollable scenes than manually changing the position of :ref:`CanvasItem<class_CanvasItem>`-based nodes.
+Nodo de cámara para escenas 2D. Fuerza a la pantalla (capa actual) a desplazarse siguiendo a este nodo. Esto hace que sea más fácil (y rápido) programar escenas con desplazamiento que cambiar manualmente la posición de los nodos basados en :ref:`CanvasItem<class_CanvasItem>`.
 
-Cameras register themselves in the nearest :ref:`Viewport<class_Viewport>` node (when ascending the tree). Only one camera can be active per viewport. If no viewport is available ascending the tree, the camera will register in the global viewport.
+Las cámaras se registran en el nodo :ref:`Viewport<class_Viewport>` más cercano (al ascender por el árbol). Solo puede haber una cámara activa por viewport. Si no hay ningún viewport disponible al ascender por el árbol, la cámara se registrará en el viewport global.
 
-This node is intended to be a simple helper to get things going quickly, but more functionality may be desired to change how the camera works. To make your own custom camera node, inherit it from :ref:`Node2D<class_Node2D>` and change the transform of the canvas by setting :ref:`Viewport.canvas_transform<class_Viewport_property_canvas_transform>` in :ref:`Viewport<class_Viewport>` (you can obtain the current :ref:`Viewport<class_Viewport>` by using :ref:`Node.get_viewport()<class_Node_method_get_viewport>`).
+Este nodo está pensado para ser una ayuda simple para empezar rápidamente, pero es posible que se desee más funcionalidad para cambiar cómo funciona la cámara. Para crear tu propio nodo de cámara personalizado, hereda de :ref:`Node2D<class_Node2D>` y cambia la transformación del lienzo estableciendo :ref:`Viewport.canvas_transform<class_Viewport_property_canvas_transform>` en :ref:`Viewport<class_Viewport>` (puedes obtener el :ref:`Viewport<class_Viewport>` actual usando :ref:`Node.get_viewport()<class_Node_method_get_viewport>`).
 
-Note that the **Camera2D** node's :ref:`Node2D.global_position<class_Node2D_property_global_position>` doesn't represent the actual position of the screen, which may differ due to applied smoothing or limits. You can use :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>` to get the real position. Same for the node's :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` which may be different due to applied rotation smoothing. You can use :ref:`get_screen_rotation()<class_Camera2D_method_get_screen_rotation>` to get the current rotation of the screen.
+Ten en cuenta que la :ref:`Node2D.global_position<class_Node2D_property_global_position>` del nodo **Camera2D** no representa la posición real de la pantalla, la cual puede diferir debido al suavizado o límites aplicados. Puedes usar :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>` para obtener la posición real. Lo mismo ocurre con la :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>` del nodo, que puede ser diferente debido al suavizado de rotación aplicado. Puedes usar :ref:`get_screen_rotation()<class_Camera2D_method_get_screen_rotation>` para obtener la rotación actual de la pantalla.
 
 .. rst-class:: classref-introduction-group
 
@@ -178,7 +178,7 @@ enum **Camera2DProcessCallback**: :ref:`🔗<enum_Camera2D_Camera2DProcessCallba
 
 :ref:`Camera2DProcessCallback<enum_Camera2D_Camera2DProcessCallback>` **CAMERA2D_PROCESS_PHYSICS** = ``0``
 
-The camera updates during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`).
+La cámara se actualiza al mismo tiempo que la física (mira :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`).
 
 .. _class_Camera2D_constant_CAMERA2D_PROCESS_IDLE:
 
@@ -186,7 +186,7 @@ The camera updates during physics frames (see :ref:`Node.NOTIFICATION_INTERNAL_P
 
 :ref:`Camera2DProcessCallback<enum_Camera2D_Camera2DProcessCallback>` **CAMERA2D_PROCESS_IDLE** = ``1``
 
-The camera updates during process frames (see :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
+La cámara se actualiza en cada frame de imagen (mira :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`).
 
 .. rst-class:: classref-section-separator
 
@@ -363,9 +363,9 @@ If ``true``, the camera only moves when reaching the vertical (top and bottom) d
 - |void| **set_drag_vertical_offset**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_drag_vertical_offset**\ (\ )
 
-The relative vertical drag offset of the camera between the bottom (``-1``) and top (``1``) drag margins.
+El desplazamiento vertical relativo de arrastre (drag offset) de la cámara entre los márgenes de arrastre inferior (``-1``) y superior (``1``).
 
-\ **Note:** Used to set the initial vertical drag offset; determine the current offset; or force the current offset. It's not automatically updated when :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` is ``true`` or the drag margins are changed.
+\ **Nota:** Se utiliza para establecer el desplazamiento vertical inicial de arrastre; determinar el desplazamiento actual; o forzar el desplazamiento actual. No se actualiza automáticamente cuando :ref:`drag_vertical_enabled<class_Camera2D_property_drag_vertical_enabled>` es ``true`` o se cambian los márgenes de arrastre.
 
 .. rst-class:: classref-item-separator
 
@@ -433,9 +433,9 @@ Si es ``true``, dibuja el rectángulo de la pantalla de la cámara en el editor.
 - |void| **set_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_enabled**\ (\ )
 
-Controls whether the camera can be active or not. If ``true``, the **Camera2D** will become the main camera when it enters the scene tree and there is no active camera currently (see :ref:`Viewport.get_camera_2d()<class_Viewport_method_get_camera_2d>`).
+Controla si la cámara puede estar activa o no. Si es ``true``, el **Camera2D** se convertirá en la cámara principal cuando entre en el árbol de escenas y no haya una cámara activa actualmente (ver :ref:`Viewport.get_camera_2d()<class_Viewport_method_get_camera_2d>`).
 
-When the camera is currently active and :ref:`enabled<class_Camera2D_property_enabled>` is set to ``false``, the next enabled **Camera2D** in the scene tree will become active.
+Cuando la cámara está activa actualmente y :ref:`enabled<class_Camera2D_property_enabled>` se establece en ``false``, el siguiente **Camera2D** habilitado en el árbol de escenas pasará a estar activo.
 
 .. rst-class:: classref-item-separator
 
@@ -452,7 +452,7 @@ When the camera is currently active and :ref:`enabled<class_Camera2D_property_en
 - |void| **set_ignore_rotation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_ignoring_rotation**\ (\ )
 
-If ``true``, the camera's rendered view is not affected by its :ref:`Node2D.rotation<class_Node2D_property_rotation>` and :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>`.
+Si es ``true``, la vista renderizada de la cámara no se ve afectada por su :ref:`Node2D.rotation<class_Node2D_property_rotation>` ni por su :ref:`Node2D.global_rotation<class_Node2D_property_global_rotation>`.
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ Bottom scroll limit in pixels. The camera stops moving when reaching this value,
 - |void| **set_limit_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limit_enabled**\ (\ )
 
-If ``true``, the limits will be enabled. Disabling this will allow the camera to focus anywhere, when the four ``limit_*`` properties will not work.
+Si es ``true``, los límites serán habilitados. Deshabilitar esto permitirá que la cámara se enfoque en cualquier lugar, por lo que las cuatro propiedades ``limit_*`` no funcionarán.
 
 .. rst-class:: classref-item-separator
 
@@ -537,11 +537,11 @@ Right scroll limit in pixels. The camera stops moving when reaching this value, 
 - |void| **set_limit_smoothing_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_limit_smoothing_enabled**\ (\ )
 
-If ``true``, the camera smoothly stops when reaches its limits.
+Si es ``true``, la cámara se detiene suavemente cuando alcanza sus límites.
 
-This property has no effect if :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` is ``false``.
+Esta propiedad no tiene efecto si :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` es ``false``.
 
-\ **Note:** To immediately update the camera's position to be within limits without smoothing, even with this setting enabled, invoke :ref:`reset_smoothing()<class_Camera2D_method_reset_smoothing>`.
+\ **Nota:** Para actualizar inmediatamente la posición de la cámara para que esté dentro de los límites sin suavizado, incluso con este ajuste habilitado, invoque :ref:`reset_smoothing()<class_Camera2D_method_reset_smoothing>`.
 
 .. rst-class:: classref-item-separator
 
@@ -679,9 +679,9 @@ The angular, asymptotic speed of the camera's rotation smoothing effect when :re
 - |void| **set_zoom**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_zoom**\ (\ )
 
-The camera's zoom. Higher values are more zoomed in. For example, a zoom of ``Vector2(2.0, 2.0)`` will be twice as zoomed in on each axis (the view covers an area four times smaller). In contrast, a zoom of ``Vector2(0.5, 0.5)`` will be twice as zoomed out on each axis (the view covers an area four times larger). The X and Y components should generally always be set to the same value, unless you wish to stretch the camera view.
+El zoom de la cámara. Los valores más altos acercan más la vista. Por ejemplo, un zoom de ``Vector2(2.0, 2.0)`` acercará el doble en cada eje (la vista cubre un área cuatro veces más pequeña). En contraste, un zoom de ``Vector2(0.5, 0.5)`` alejará el doble en cada eje (la vista cubre un área cuatro veces más grande). Generalmente, los componentes X e Y siempre deben establecerse con el mismo valor, a menos que desees estirar la vista de la cámara.
 
-\ **Note:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` does *not* take **Camera2D** zoom into account. This means that zooming in/out will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated unless the font is part of a :ref:`CanvasLayer<class_CanvasLayer>` that makes it ignore camera zoom. To ensure text remains crisp regardless of zoom, you can enable MSDF font rendering by enabling :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (applies to the default project font only), or enabling **Multichannel Signed Distance Field** in the import options of a DynamicFont for custom fonts. On system fonts, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` can be enabled in the inspector.
+\ **Nota:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` *no* tiene en cuenta el zoom de **Camera2D**. Esto significa que acercar o alejar la cámara hará que las fuentes de mapa de bits y las fuentes dinámicas rasterizadas (no MSDF) aparezcan borrosas o pixeladas, a menos que la fuente forme parte de un :ref:`CanvasLayer<class_CanvasLayer>` que haga que ignore el zoom de la cámara. Para asegurar que el texto permanezca nítido independientemente del zoom, puedes habilitar el renderizado de fuentes MSDF activando :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (se aplica solo a la fuente predeterminada del proyecto), o habilitando **Campo de Distancia Firmado Multicanal** en las opciones de importación de una DynamicFont para fuentes personalizadas. En las fuentes del sistema, se puede habilitar :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` en el inspector.
 
 .. rst-class:: classref-section-separator
 
@@ -698,9 +698,9 @@ Descripciones de Métodos
 
 |void| **align**\ (\ ) :ref:`🔗<class_Camera2D_method_align>`
 
-Aligns the camera to the tracked node.
+Alinea la cámara al nodo rastreado.
 
-\ **Note:** Calling :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` after this method is not required.
+\ **Nota:** No es necesario llamar a :ref:`force_update_scroll()<class_Camera2D_method_force_update_scroll>` después de este método.
 
 .. rst-class:: classref-item-separator
 
@@ -776,9 +776,9 @@ Devuelve la rotación actual de la pantalla desde el punto de vista de esta cám
 
 :ref:`Vector2<class_Vector2>` **get_target_position**\ (\ ) |const| :ref:`🔗<class_Camera2D_method_get_target_position>`
 
-Returns this camera's target position, in global coordinates.
+Devuelve la posición objetivo de esta cámara, en coordenadas globales.
 
-\ **Note:** The returned value is not the same as :ref:`Node2D.global_position<class_Node2D_property_global_position>`, as it is affected by the drag properties. It is also not the same as the current position if :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` is ``true`` (see :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>`).
+\ **Nota:** El valor devuelto no es el mismo que :ref:`Node2D.global_position<class_Node2D_property_global_position>`, ya que se ve afectado por las propiedades de arrastre (drag). Tampoco es el mismo que la posición actual si :ref:`position_smoothing_enabled<class_Camera2D_property_position_smoothing_enabled>` es ``true`` (ver :ref:`get_screen_center_position()<class_Camera2D_method_get_screen_center_position>`).
 
 .. rst-class:: classref-item-separator
 

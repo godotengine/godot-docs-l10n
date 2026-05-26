@@ -12,7 +12,7 @@ Un tipo incorporado que representa un método o una función independiente.
 Descripción
 ----------------------
 
-**Callable** is a built-in :ref:`Variant<class_Variant>` type that represents a function. It can either be a method within an :ref:`Object<class_Object>` instance, or a custom callable used for different purposes (see :ref:`is_custom()<class_Callable_method_is_custom>`). Like all :ref:`Variant<class_Variant>` types, it can be stored in variables and passed to other functions. It is most commonly used for signal callbacks.
+**Callable** es un tipo de :ref:`Variant<class_Variant>` integrado que representa una función. Puede ser un método dentro de una instancia de :ref:`Object<class_Object>`, o un callable personalizado utilizado para diferentes propósitos (ver :ref:`is_custom()<class_Callable_method_is_custom>`). Al igual que todos los tipos :ref:`Variant<class_Variant>`, puede almacenarse en variables y pasarse a otras funciones. Se utiliza más comúnmente para callbacks de señales.
 
 
 .. tabs::
@@ -24,13 +24,13 @@ Descripción
 
     func test():
         var callable = Callable(self, "print_args")
-        callable.call("hello", "world")  # Prints "hello world ".
-        callable.call(Vector2.UP, 42, callable)  # Prints "(0.0, -1.0) 42 Node(node.gd)::print_args"
-        callable.call("invalid")  # Invalid call, should have at least 2 arguments.
+        callable.call("hello", "world")  # Imprime "hello world ".
+        callable.call(Vector2.UP, 42, callable)  # Imprime "(0.0, -1.0) 42 Node(node.gd)::print_args"
+        callable.call("invalid")  # Llamada inválida, debe tener al menos 2 argumentos.
 
  .. code-tab:: csharp
 
-    // Default parameter values are not supported.
+    // Los valores de parámetros predeterminados no están soportados.
     public void PrintArgs(Variant arg1, Variant arg2, Variant arg3 = default)
     {
         GD.PrintS(arg1, arg2, arg3);
@@ -38,16 +38,16 @@ Descripción
 
     public void Test()
     {
-        // Invalid calls fail silently.
+        // Las llamadas inválidas fallan silenciosamente.
         Callable callable = new Callable(this, MethodName.PrintArgs);
-        callable.Call("hello", "world"); // Default parameter values are not supported, should have 3 arguments.
-        callable.Call(Vector2.Up, 42, callable); // Prints "(0, -1) 42 Node(Node.cs)::PrintArgs"
-        callable.Call("invalid"); // Invalid call, should have 3 arguments.
+        callable.Call("hello", "world"); // Los valores de parámetros predeterminados no están soportados, debe tener 3 argumentos.
+        callable.Call(Vector2.Up, 42, callable); // Imprime "(0, -1) 42 Node(Node.cs)::PrintArgs"
+        callable.Call("invalid"); // Llamada inválida, debe tener 3 argumentos.
     }
 
 
 
-In GDScript, it's possible to create lambda functions within a method. Lambda functions are custom callables that are not associated with an :ref:`Object<class_Object>` instance. Optionally, lambda functions can also be named. The name will be displayed in the debugger, or when calling :ref:`get_method()<class_Callable_method_get_method>`.
+En GDScript, es posible crear funciones lambda dentro de un método. Las funciones lambda son callables personalizados que no están asociados con una instancia de :ref:`Object<class_Object>`. Opcionalmente, las funciones lambda también pueden ser nombradas. El nombre se mostrará en el depurador, o al llamar a :ref:`get_method()<class_Callable_method_get_method>`.
 
 ::
 
@@ -55,30 +55,30 @@ In GDScript, it's possible to create lambda functions within a method. Lambda fu
         var my_lambda = func (message):
             print(message)
 
-        # Prints "Hello everyone!"
+        # Imprime "Hello everyone!"
         my_lambda.call("Hello everyone!")
 
-        # Prints "Attack!", when the button_pressed signal is emitted.
+        # Imprime "Attack!", cuando se emite la señal button_pressed.
         button_pressed.connect(func(): print("Attack!"))
 
-In GDScript, you can access methods and global functions as **Callable**\ s:
+En GDScript, puedes acceder a métodos y funciones globales como **Callable**\ s:
 
 ::
 
-    tween.tween_callback(node.queue_free)  # Object methods.
-    tween.tween_callback(array.clear)  # Methods of built-in types.
-    tween.tween_callback(print.bind("Test"))  # Global functions.
+    tween.tween_callback(node.queue_free)  # Métodos de objeto.
+    tween.tween_callback(array.clear)  # Métodos de tipos integrados.
+    tween.tween_callback(print.bind("Test"))  # Funciones globales.
 
-\ **Note:** :ref:`Dictionary<class_Dictionary>` does not support the above due to ambiguity with keys.
+\ **Nota:** :ref:`Dictionary<class_Dictionary>` no soporta lo anterior debido a la ambigüedad con las claves.
 
 ::
 
     var dictionary = { "hello": "world" }
 
-    # This will not work, `clear` is treated as a key.
+    # Esto no funcionará, `clear` se trata como una clave.
     tween.tween_callback(dictionary.clear)
 
-    # This will work.
+    # Esto sí funcionará.
     tween.tween_callback(Callable.create(dictionary, "clear"))
 
 .. note::
@@ -261,7 +261,7 @@ Llama al método representado por este **Callable**. Se pueden pasar argumentos 
 
 |void| **call_deferred**\ (\ ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_call_deferred>`
 
-Calls the method represented by this **Callable** in deferred mode, i.e. at the end of the current frame. Arguments can be passed and should match the method's signature.
+Llama al método representado por este **Callable** en modo diferido, es decir, al final del frame actual. Se pueden pasar argumentos, los cuales deben coincidir con la firma del método.
 
 
 .. tabs::
@@ -280,9 +280,9 @@ Calls the method represented by this **Callable** in deferred mode, i.e. at the 
 
 
 
-\ **Note:** Deferred calls are processed at idle time. Idle time happens mainly at the end of process and physics frames. In it, deferred calls will be run until there are none left, which means you can defer calls from other deferred calls and they'll still be run in the current idle time cycle. This means you should not call a method deferred from itself (or from a method called by it), as this causes infinite recursion the same way as if you had called the method directly.
+\ **Nota:** Las llamadas diferidas se procesan en tiempo de inactividad (idle time). El tiempo de inactividad ocurre principalmente al final de los frames de proceso y de física. En él, las llamadas diferidas se ejecutarán hasta que no quede ninguna, lo que significa que puedes diferir llamadas desde otras llamadas diferidas y aun así se ejecutarán en el ciclo de tiempo de inactividad actual. Esto significa que no debes llamar a un método de forma diferida desde sí mismo (o desde un método llamado por este), ya que esto provoca una recursión infinita de la misma manera que si hubieras llamado al método directamente.
 
-See also :ref:`Object.call_deferred()<class_Object_method_call_deferred>`.
+Consulta también :ref:`Object.call_deferred()<class_Object_method_call_deferred>`.
 
 .. rst-class:: classref-item-separator
 
@@ -332,7 +332,7 @@ Devuelve el número total de argumentos que debe tomar este **Callable**, inclui
 
 :ref:`Array<class_Array>` **get_bound_arguments**\ (\ ) |const| :ref:`🔗<class_Callable_method_get_bound_arguments>`
 
-Returns the array of arguments bound via successive :ref:`bind()<class_Callable_method_bind>` or :ref:`unbind()<class_Callable_method_unbind>` calls. These arguments will be added *after* the arguments passed to the call, from which :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>` arguments on the right have been previously excluded.
+Devuelve el array de argumentos vinculados mediante llamadas sucesivas a :ref:`bind()<class_Callable_method_bind>` o :ref:`unbind()<class_Callable_method_unbind>`. Estos argumentos se añadirán *después* de los argumentos pasados a la llamada, de los cuales se habrán excluido previamente :ref:`get_unbound_arguments_count()<class_Callable_method_get_unbound_arguments_count>` argumentos a la derecha.
 
 ::
 
@@ -512,15 +512,15 @@ Perform an RPC (Remote Procedure Call) on a specific peer ID (see multiplayer do
 
 :ref:`Callable<class_Callable>` **unbind**\ (\ argcount\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Callable_method_unbind>`
 
-Returns a copy of this **Callable** with a number of arguments unbound. In other words, when the new callable is called the last few arguments supplied by the user are ignored, according to ``argcount``. The remaining arguments are passed to the callable. This allows to use the original callable in a context that attempts to pass more arguments than this callable can handle, e.g. a signal with a fixed number of arguments. See also :ref:`bind()<class_Callable_method_bind>`.
+Devuelve una copia de este **Callable** con un número de argumentos desvinculados (unbound). En otras palabras, cuando se llama al nuevo callable, se ignoran los últimos argumentos proporcionados por el usuario, según ``argcount``. Los argumentos restantes se pasan al callable. Esto permite utilizar el callable original en un contexto que intenta pasar más argumentos de los que este puede manejar, por ejemplo, una señal con un número fijo de argumentos. Consulta también :ref:`bind()<class_Callable_method_bind>`.
 
-\ **Note:** When this method is chained with other similar methods, the order in which the argument list is modified is read from right to left.
+\ **Nota:** Cuando este método se encadena con otros métodos similares, el orden en el que se modifica la lista de argumentos se lee de derecha a izquierda.
 
 ::
 
     func _ready():
-        foo.unbind(1).call(1, 2) # Calls foo(1).
-        foo.bind(3, 4).unbind(1).call(1, 2) # Calls foo(1, 3, 4), note that it does not change the arguments from bind.
+        foo.unbind(1).call(1, 2) # Llama a foo(1).
+        foo.bind(3, 4).unbind(1).call(1, 2) # Llama a foo(1, 3, 4), ten en cuenta que no cambia los argumentos de bind.
 
 .. rst-class:: classref-section-separator
 

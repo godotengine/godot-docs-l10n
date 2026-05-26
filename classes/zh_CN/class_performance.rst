@@ -265,7 +265,7 @@ enum **Monitor**: :ref:`🔗<enum_Performance_Monitor>`
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_ACTIVE_MAPS** = ``24``
 
-Number of active navigation maps in :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>`. This also includes the empty default navigation maps created by :ref:`World2D<class_World2D>` and :ref:`World3D<class_World3D>` instances.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 和 :ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航地图的数量。这也包括由 :ref:`World2D<class_World2D>` 和 :ref:`World3D<class_World3D>` 实例创建的默认空导航地图。
 
 .. _class_Performance_constant_NAVIGATION_REGION_COUNT:
 
@@ -385,7 +385,7 @@ Number of active navigation maps in :ref:`NavigationServer2D<class_NavigationSer
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_2D_ACTIVE_MAPS** = ``39``
 
-Number of active navigation maps in the :ref:`NavigationServer2D<class_NavigationServer2D>`. This also includes the empty default navigation maps created by :ref:`World2D<class_World2D>` instances.
+:ref:`NavigationServer2D<class_NavigationServer2D>` 中活动导航地图的数量。这也包括由 :ref:`World2D<class_World2D>` 实例创建的默认空导航地图。
 
 .. _class_Performance_constant_NAVIGATION_2D_REGION_COUNT:
 
@@ -465,7 +465,7 @@ Number of active navigation maps in the :ref:`NavigationServer2D<class_Navigatio
 
 :ref:`Monitor<enum_Performance_Monitor>` **NAVIGATION_3D_ACTIVE_MAPS** = ``49``
 
-Number of active navigation maps in the :ref:`NavigationServer3D<class_NavigationServer3D>`. This also includes the empty default navigation maps created by :ref:`World3D<class_World3D>` instances.
+:ref:`NavigationServer3D<class_NavigationServer3D>` 中活动导航地图的数量。这也包括由 :ref:`World3D<class_World3D>` 实例创建的默认空导航地图。
 
 .. _class_Performance_constant_NAVIGATION_3D_REGION_COUNT:
 
@@ -563,7 +563,7 @@ enum **MonitorType**: :ref:`🔗<enum_Performance_MonitorType>`
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_QUANTITY** = ``0``
 
-Monitor output is formatted as an integer value.
+显示器输出格式化为整数值。
 
 .. _class_Performance_constant_MONITOR_TYPE_MEMORY:
 
@@ -571,7 +571,7 @@ Monitor output is formatted as an integer value.
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_MEMORY** = ``1``
 
-Monitor output is formatted as computer memory. Submitted values should represent a number of bytes.
+显示器输出格式化为计算机内存格式。提交的值应代表字节数。
 
 .. _class_Performance_constant_MONITOR_TYPE_TIME:
 
@@ -579,7 +579,7 @@ Monitor output is formatted as computer memory. Submitted values should represen
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_TIME** = ``2``
 
-Monitor output is formatted as time in milliseconds. Submitted values should represent a time in seconds (not milliseconds).
+显示器输出格式化为毫秒级时间。提交的值应表示以秒（而不是毫秒）为单位的时间。
 
 .. _class_Performance_constant_MONITOR_TYPE_PERCENTAGE:
 
@@ -587,7 +587,7 @@ Monitor output is formatted as time in milliseconds. Submitted values should rep
 
 :ref:`MonitorType<enum_Performance_MonitorType>` **MONITOR_TYPE_PERCENTAGE** = ``3``
 
-Monitor output is formatted as a percentage. Submitted values should represent a fractional value rather than the percentage directly, e.g. ``0.5`` for ``50.00%``.
+显示器输出格式化为百分比。提交的值应表示分数，而不是直接表示百分比，例如 ``0.5`` 表示 ``50.00%``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -696,7 +696,7 @@ Monitor output is formatted as a percentage. Submitted values should represent a
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_custom_monitor_types**\ (\ ) :ref:`🔗<class_Performance_method_get_custom_monitor_types>`
 
-Returns the :ref:`MonitorType<enum_Performance_MonitorType>` values of active custom monitors in an :ref:`Array<class_Array>`.
+以一个数组返回活动自定义监视器的 :ref:`MonitorType<enum_Performance_MonitorType>` 值。
 
 .. rst-class:: classref-item-separator
 

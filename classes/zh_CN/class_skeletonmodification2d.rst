@@ -20,7 +20,7 @@ SkeletonModification2D
 
 该资源提供了一个可以扩展的接口，因此在 :ref:`Skeleton2D<class_Skeleton2D>` 中的 :ref:`Bone2D<class_Bone2D>` 节点上运行的代码可以被混合并匹配在一起，以创建复杂的交互。
 
-这用于为 Godot 提供一套灵活而强大的反向运动学解决方案，该解决方案可以适用许多不同的用途。
+这用于为 Godot 提供一套灵活而强大的反向动力学解决方案，该解决方案可以适用许多不同的用途。
 
 .. rst-class:: classref-reftable-group
 

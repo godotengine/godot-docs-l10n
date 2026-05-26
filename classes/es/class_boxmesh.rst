@@ -14,11 +14,11 @@ Genera una caja alineada con los ejes :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
 Descripción
 ----------------------
 
-Generate an axis-aligned box :ref:`PrimitiveMesh<class_PrimitiveMesh>`.
+Genera un :ref:`PrimitiveMesh<class_PrimitiveMesh>` de caja alineado a los ejes.
 
-The box's UV layout is arranged in a 3×2 layout that allows texturing each face individually. To apply the same texture on all faces, change the material's UV property to ``Vector3(3, 2, 1)``. This is equivalent to adding ``UV *= vec2(3.0, 2.0)`` in a vertex shader.
+El diseño UV de la caja está organizado en un diseño de 3×2 que permite texturizar cada cara individualmente. Para aplicar la misma textura en todas las caras, cambia la propiedad UV del material a ``Vector3(3, 2, 1)``. Esto es equivalente a añadir ``UV *= vec2(3.0, 2.0)`` en un shader de vértices.
 
-\ **Note:** When using a large textured **BoxMesh** (e.g. as a floor), you may stumble upon UV jittering issues depending on the camera angle. To solve this, increase :ref:`subdivide_depth<class_BoxMesh_property_subdivide_depth>`, :ref:`subdivide_height<class_BoxMesh_property_subdivide_height>` and :ref:`subdivide_width<class_BoxMesh_property_subdivide_width>` until you no longer notice UV jittering.
+\ **Nota:** Al usar una **BoxMesh** texturizada grande (por ejemplo, como suelo), puedes encontrarte con problemas de parpadeo UV dependiendo del ángulo de la cámara. Para solucionarlo, aumenta :ref:`subdivide_depth<class_BoxMesh_property_subdivide_depth>`, :ref:`subdivide_height<class_BoxMesh_property_subdivide_height>` y :ref:`subdivide_width<class_BoxMesh_property_subdivide_width>` hasta que ya no notes el parpadeo UV.
 
 .. rst-class:: classref-reftable-group
 

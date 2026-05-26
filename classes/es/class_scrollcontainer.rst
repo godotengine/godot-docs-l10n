@@ -205,7 +205,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Las pistas de desplazamiento nunca se mostrarán.
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_ALL:
 

@@ -14,7 +14,7 @@ FramebufferCacheRD
 描述
 ----
 
-Framebuffer cache manager for :ref:`RenderingDevice<class_RenderingDevice>`-based renderers. Provides a way to create a framebuffer and reuse it in subsequent calls for as long as the used textures exists. Framebuffers will automatically be cleaned up when dependent objects are freed.
+基于 :ref:`RenderingDevice<class_RenderingDevice>` 的渲染器的帧缓冲区缓存管理器。提供一种创建帧缓冲区并在后续调用中重用它（只要使用的纹理存在）的方法。当依赖的对象被释放时，帧缓冲区将被自动清理。
 
 .. rst-class:: classref-reftable-group
 

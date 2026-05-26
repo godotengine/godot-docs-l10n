@@ -613,7 +613,7 @@ Si es ``true``, las librerías nativas se comprimen cuando se realiza una compil
 
 \ **Nota:** Si bien habilitar la compresión puede reducir el tamaño del binario, puede resultar en un inicio de aplicación más lento porque las librerías nativas deben extraerse antes de usarse, en lugar de cargarse directamente.
 
-Si estás distribuyendo tu aplicación a través de Play Store, generalmente se recomienda mantener esta opción ``false``, consulta `documentación oficial <https://developer.android.com/build/releases/past-releases/agp-3-6-0-release-notes#extractNativeLibs>`__.
+Si estás distribuyendo tu aplicación a través de Play Store, generalmente se recomienda mantener esta opción ``false``, véase `documentación oficial <https://developer.android.com/build/releases/past-releases/agp-3-6-0-release-notes#extractNativeLibs>`__.
 
 .. rst-class:: classref-item-separator
 

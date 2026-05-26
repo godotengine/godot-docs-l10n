@@ -137,7 +137,7 @@ Apply automatically-sourced environment lighting inside the **ReflectionProbe**'
 
 :ref:`AmbientMode<enum_ReflectionProbe_AmbientMode>` **AMBIENT_COLOR** = ``2``
 
-Apply custom ambient lighting inside the **ReflectionProbe**'s box defined by its :ref:`size<class_ReflectionProbe_property_size>`. See :ref:`ambient_color<class_ReflectionProbe_property_ambient_color>` and :ref:`ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`.
+Aplica iluminación ambiental personalizada dentro de la caja de **ReflectionProbe** definida por su :ref:`size<class_ReflectionProbe_property_size>`. Véase :ref:`ambient_color<class_ReflectionProbe_property_ambient_color>` y :ref:`ambient_color_energy<class_ReflectionProbe_property_ambient_color_energy>`.
 
 .. rst-class:: classref-section-separator
 

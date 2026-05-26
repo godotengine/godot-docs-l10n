@@ -158,7 +158,7 @@ El factor de sobre muestreo a usar. Altos valores permiten obtener mejor calidad
 - |void| **set_pitch_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pitch_scale**\ (\ )
 
-The pitch scale to use. ``1.0`` is the default pitch and plays sounds unaffected. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` can range from ``0.0`` (infinitely low pitch, inaudible) to ``16`` (16 times higher than the initial pitch).
+La escala de tono a utilizar. ``1.0`` es el tono por defecto y reproduce los sonidos sin alteraciones. :ref:`pitch_scale<class_AudioEffectPitchShift_property_pitch_scale>` puede variar entre ``0.0`` (tono infinitamente bajo, inaudible) y ``16`` (16 veces más alto que el tono inicial).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

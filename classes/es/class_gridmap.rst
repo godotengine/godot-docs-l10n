@@ -17,15 +17,15 @@ Nodo para mapas en 3D basados en tiles.
 Descripción
 ----------------------
 
-GridMap lets you place meshes on a grid interactively. It works both from the editor and from scripts, which can help you create in-game level editors.
+GridMap te permite colocar mallas en una cuadrícula de forma interactiva. Funciona tanto desde el editor como desde los scripts, que pueden ayudarte a crear editores de nivel de juego.
 
-GridMaps use a :ref:`MeshLibrary<class_MeshLibrary>` which contains a list of tiles. Each tile is a mesh with materials plus optional collision and navigation shapes.
+GridMaps utiliza una :ref:`MeshLibrary<class_MeshLibrary>` que contiene una lista de tiles. Cada tile es una malla con materiales, además de formas de colisión y navegación opcionales.
 
-A GridMap contains a collection of cells. Each grid cell refers to a tile in the :ref:`MeshLibrary<class_MeshLibrary>`. All cells in the map have the same dimensions.
+Un GridMap contiene una colección de celdas. Cada celda de la cuadrícula se refiere a un tile de la :ref:`MeshLibrary<class_MeshLibrary>`. Todas las celdas en el mapa tienen las mismas dimensiones.
 
-Internally, a GridMap is split into a sparse collection of octants for efficient rendering and physics processing. Every octant has the same dimensions and can contain several cells.
+Internamente, un GridMap se divide en una colección dispersa de octantes para una representación eficiente y un procesamiento físico. Cada octante tiene las mismas dimensiones y puede contener varias celdas.
 
-\ **Note:** GridMap doesn't extend :ref:`VisualInstance3D<class_VisualInstance3D>` and therefore can't be hidden or cull masked based on :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`. If you make a light not affect the first layer, the whole GridMap won't be lit by the light in question.
+\ **Nota:** GridMap no extiende :ref:`VisualInstance3D<class_VisualInstance3D>` y, por lo tanto, no se puede ocultar ni enmascarar por selección basada en :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>`. Si haces que una luz no afecte la primera capa, todo el GridMap no será iluminado por la luz en cuestión.
 
 .. rst-class:: classref-introduction-group
 
@@ -336,7 +336,7 @@ Los GridMaps actúan como cuerpos estáticos, lo que significa que no son afecta
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers this GridMap detects collisions in. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+Las capas físicas en las que este GridMap detecta colisiones. Véase `Capas y máscaras de colisión <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ en la documentación para más información.
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ La :ref:`MeshLibrary<class_MeshLibrary>` asignada.
 - |void| **set_physics_material**\ (\ value\: :ref:`PhysicsMaterial<class_PhysicsMaterial>`\ )
 - :ref:`PhysicsMaterial<class_PhysicsMaterial>` **get_physics_material**\ (\ )
 
-Overrides the default friction and bounce physics properties for the whole **GridMap**.
+Sobrescribe las propiedades físicas predeterminadas de fricción y rebote para todo el **GridMap**.
 
 .. rst-class:: classref-section-separator
 
@@ -428,7 +428,7 @@ Borra todas las mallas procesadas. Véase :ref:`make_baked_meshes()<class_GridMa
 
 :ref:`RID<class_RID>` **get_bake_mesh_instance**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_GridMap_method_get_bake_mesh_instance>`
 
-Returns :ref:`RID<class_RID>` of a baked mesh with the given ``idx``.
+Devuelve el :ref:`RID<class_RID>` de una malla horneada con el ``idx`` dado.
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ Returns :ref:`RID<class_RID>` of a baked mesh with the given ``idx``.
 
 :ref:`Array<class_Array>` **get_bake_meshes**\ (\ ) :ref:`🔗<class_GridMap_method_get_bake_meshes>`
 
-Returns an array of :ref:`ArrayMesh<class_ArrayMesh>`\ es and :ref:`Transform3D<class_Transform3D>` references of all bake meshes that exist within the current GridMap. Even indices contain :ref:`ArrayMesh<class_ArrayMesh>`\ es, while odd indices contain :ref:`Transform3D<class_Transform3D>`\ s that are always equal to :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`.
+Devuelve un array de :ref:`ArrayMesh<class_ArrayMesh>`\ es y referencias de :ref:`Transform3D<class_Transform3D>` de todas las mallas horneadas que existen dentro del GridMap actual. Los índices pares contienen :ref:`ArrayMesh<class_ArrayMesh>`\ es, mientras que los índices impares contienen :ref:`Transform3D<class_Transform3D>`\ s que son siempre iguales a :ref:`Transform3D.IDENTITY<class_Transform3D_constant_IDENTITY>`.
 
-This method relies on the output of :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>`, which will be called with ``gen_lightmap_uv`` set to ``true`` and ``lightmap_uv_texel_size`` set to ``0.1`` if it hasn't been called yet.
+Este método se basa en la salida de :ref:`make_baked_meshes()<class_GridMap_method_make_baked_meshes>`, que se llamará con ``gen_lightmap_uv`` establecido a ``true`` y ``lightmap_uv_texel_size`` establecido a ``0.1`` si aún no se ha llamado.
 
 .. rst-class:: classref-item-separator
 
@@ -454,7 +454,7 @@ This method relies on the output of :ref:`make_baked_meshes()<class_GridMap_meth
 
 :ref:`Basis<class_Basis>` **get_basis_with_orthogonal_index**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_GridMap_method_get_basis_with_orthogonal_index>`
 
-Returns one of 24 possible rotations that lie along the vectors (x,y,z) with each component being either -1, 0, or 1. For further details, refer to the Godot source code.
+Devuelve una de las 24 rotaciones posibles que se encuentran a lo largo de los vectores (x,y,z) con cada componente siendo -1, 0 o 1. Para más detalles, consulta el código fuente de Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -466,7 +466,7 @@ Returns one of 24 possible rotations that lie along the vectors (x,y,z) with eac
 
 :ref:`int<class_int>` **get_cell_item**\ (\ position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_cell_item>`
 
-The :ref:`MeshLibrary<class_MeshLibrary>` item index located at the given grid coordinates. If the cell is empty, :ref:`INVALID_CELL_ITEM<class_GridMap_constant_INVALID_CELL_ITEM>` will be returned.
+El índice de elementos :ref:`MeshLibrary<class_MeshLibrary>` situado en las coordenadas de la cuadrícula dada. Si la celda está vacía, se devolverá :ref:`INVALID_CELL_ITEM<class_GridMap_constant_INVALID_CELL_ITEM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -478,7 +478,7 @@ The :ref:`MeshLibrary<class_MeshLibrary>` item index located at the given grid c
 
 :ref:`Basis<class_Basis>` **get_cell_item_basis**\ (\ position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_cell_item_basis>`
 
-Returns the basis that gives the specified cell its orientation.
+Devuelve la base que da a la celda especificada su orientación.
 
 .. rst-class:: classref-item-separator
 
@@ -490,7 +490,7 @@ Returns the basis that gives the specified cell its orientation.
 
 :ref:`int<class_int>` **get_cell_item_orientation**\ (\ position\: :ref:`Vector3i<class_Vector3i>`\ ) |const| :ref:`🔗<class_GridMap_method_get_cell_item_orientation>`
 
-The orientation of the cell at the given grid coordinates. ``-1`` is returned if the cell is empty.
+La orientación de la celda en las coordenadas de la cuadrícula dada. ``-1`` se devuelve si la celda está vacía.
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ Devuelve si la capa especificada de :ref:`collision_mask<class_GridMap_property_
 
 :ref:`Array<class_Array>` **get_meshes**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_meshes>`
 
-Returns an array of :ref:`Transform3D<class_Transform3D>` and :ref:`Mesh<class_Mesh>` references corresponding to the non-empty cells in the grid. The transforms are specified in local space. Even indices contain :ref:`Transform3D<class_Transform3D>`\ s, while odd indices contain :ref:`Mesh<class_Mesh>`\ es related to the :ref:`Transform3D<class_Transform3D>` in the index preceding it.
+Devuelve un array de referencias de :ref:`Transform3D<class_Transform3D>` y :ref:`Mesh<class_Mesh>` correspondientes a las celdas no vacías de la cuadrícula. Las transformaciones se especifican en el espacio local. Los índices pares contienen :ref:`Transform3D<class_Transform3D>`\ s, mientras que los índices impares contienen :ref:`Mesh<class_Mesh>`\ es relacionados con el :ref:`Transform3D<class_Transform3D>` del índice que lo precede.
 
 .. rst-class:: classref-item-separator
 
@@ -538,9 +538,9 @@ Returns an array of :ref:`Transform3D<class_Transform3D>` and :ref:`Mesh<class_M
 
 :ref:`RID<class_RID>` **get_navigation_map**\ (\ ) |const| :ref:`🔗<class_GridMap_method_get_navigation_map>`
 
-Returns the :ref:`RID<class_RID>` of the navigation map this GridMap node uses for its cell baked navigation meshes.
+Devuelve el :ref:`RID<class_RID>` del mapa de navegación que este nodo GridMap utiliza para sus mallas de navegación horneadas por celda.
 
-This function returns always the map set on the GridMap node and not the map on the NavigationServer. If the map is changed directly with the NavigationServer API the GridMap node will not be aware of the map change.
+Esta función siempre devuelve el mapa establecido en el nodo GridMap y no el mapa en el NavigationServer. Si el mapa se cambia directamente con la API de NavigationServer, el nodo GridMap no será consciente del cambio de mapa.
 
 .. rst-class:: classref-item-separator
 
@@ -552,7 +552,7 @@ This function returns always the map set on the GridMap node and not the map on 
 
 :ref:`int<class_int>` **get_orthogonal_index_from_basis**\ (\ basis\: :ref:`Basis<class_Basis>`\ ) |const| :ref:`🔗<class_GridMap_method_get_orthogonal_index_from_basis>`
 
-This function considers a discretization of rotations into 24 points on unit sphere, lying along the vectors (x,y,z) with each component being either -1, 0, or 1, and returns the index (in the range from 0 to 23) of the point best representing the orientation of the object. For further details, refer to the Godot source code.
+Esta función considera una discretización de las rotaciones en 24 puntos en la esfera unitaria, situados a lo largo de los vectores (x,y,z), siendo cada componente -1, 0 o 1, y devuelve el índice (en el rango de 0 a 23) del punto que mejor representa la orientación del objeto. Para más detalles, consulta el código fuente de Godot.
 
 .. rst-class:: classref-item-separator
 
@@ -600,9 +600,9 @@ Devuelve las coordenadas del mapa de la celda que contiene la ``local_position``
 
 |void| **make_baked_meshes**\ (\ gen_lightmap_uv\: :ref:`bool<class_bool>` = false, lightmap_uv_texel_size\: :ref:`float<class_float>` = 0.1\ ) :ref:`🔗<class_GridMap_method_make_baked_meshes>`
 
-Genera una malla procesada que representa todas las mallas en la :ref:`MeshLibrary<class_MeshLibrary>` asignada para su uso con :ref:`LightmapGI<class_LightmapGI>`. Si ``gen_lightmap_uv`` es ``true``, se generarán datos UV2 para cada malla utilizada actualmente en **GridMap**. De lo contrario, solo las mallas que ya tengan datos UV2 presentes podrán usar lightmaps procesados. Al generar UV2, ``lightmap_uv_texel_size`` controla la densidad de texeles para los lightmaps, con valores más bajos que dan como resultado lightmaps más detallados. ``lightmap_uv_texel_size`` se ignora si ``gen_lightmap_uv`` es ``false``. Consulta también :ref:`get_bake_meshes()<class_GridMap_method_get_bake_meshes>`, que se basa en la salida de este método.
+Genera una malla procesada que representa todas las mallas en la :ref:`MeshLibrary<class_MeshLibrary>` asignada para su uso con :ref:`LightmapGI<class_LightmapGI>`. Si ``gen_lightmap_uv`` es ``true``, se generarán datos UV2 para cada malla utilizada actualmente en **GridMap**. De lo contrario, solo las mallas que ya tengan datos UV2 presentes podrán usar lightmaps procesados. Al generar UV2, ``lightmap_uv_texel_size`` controla la densidad de texeles para los lightmaps, con valores más bajos que dan como resultado lightmaps más detallados. ``lightmap_uv_texel_size`` se ignora si ``gen_lightmap_uv`` es ``false``. Véase también :ref:`get_bake_meshes()<class_GridMap_method_get_bake_meshes>`, que se basa en la salida de este método.
 
-\ **Nota:** Llamar a este método no procesará realmente los lightmaps, ya que el procesado del lightmap se realiza utilizando el nodo :ref:`LightmapGI<class_LightmapGI>`.
+\ **Nota:** Llamar a este método no procesará realmente los lightmaps, ya que el baking del lightmap se realiza utilizando el nodo :ref:`LightmapGI<class_LightmapGI>`.
 
 .. rst-class:: classref-item-separator
 

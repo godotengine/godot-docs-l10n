@@ -523,7 +523,7 @@ Chiamato quando OpenXR ha effettuato la sua sincronizzazione di azioni.
 
 Chiamato quando un livello di composizione creato tramite :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>` viene distrutto.
 
-\ ``layer`` è un puntatore a una struttura ``XrCompositionLayerBaseHeader``.
+\ ``layer`` è un puntatore a una struct ``XrCompositionLayerBaseHeader``.
 
 .. rst-class:: classref-item-separator
 

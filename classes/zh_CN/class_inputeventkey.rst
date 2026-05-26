@@ -114,11 +114,11 @@ InputEventKey
 - |void| **set_key_label**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_key_label**\ (\ )
 
-Represents the localized label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants or any valid Unicode character. Key labels are meant for key prompts.
+表示当前键盘布局中印在键上的本地化标签，对应于 :ref:`Key<enum_@GlobalScope_Key>` 常量之一或任何有效的 Unicode 字符。按键标签用于按键提示。
 
-For keyboard layouts with a single label on the key, it is equivalent to :ref:`keycode<class_InputEventKey_property_keycode>`.
+对于键上只有一个标签的键盘布局，它等同于 :ref:`keycode<class_InputEventKey_property_keycode>`\ 。
 
-To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.key_label)`` where ``event`` is the **InputEventKey**.
+要获得 **InputEventKey** 的人类可读表示，请使用 ``OS.get_keycode_string(event.key_label)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
 
 .. code:: text
 
@@ -142,15 +142,15 @@ To get a human-readable representation of the **InputEventKey**, use ``OS.get_ke
 - |void| **set_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_keycode**\ (\ )
 
-Latin label printed on the key in the current keyboard layout, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Key codes are meant for shortcuts expressed with a standard Latin keyboard, such as :kbd:`Ctrl + S` for a "Save" shortcut.
+当前键盘布局中键上打印的拉丁标签，对应于 :ref:`Key<enum_@GlobalScope_Key>` 常量之一。键码用于表示使用标准拉丁键盘的快捷键，例如 :kbd:`Ctrl + S` 表示“保存”快捷键。
 
-To get a human-readable representation of the **InputEventKey**, use ``OS.get_keycode_string(event.keycode)`` where ``event`` is the **InputEventKey**.
+要获得 **InputEventKey** 的人类可读表示，请使用 ``OS.get_keycode_string(event.keycode)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
 
 .. code:: text
 
     +-----+ +-----+
-    | Q   | | Q   | - "Q" - keycode
-    |   Й | |  ض | - "Й" and "ض" - key_label
+    | Q   | | Q   | - "Q" - 键码
+    |   Й | |  ض | - "Й" 和 "ض" - key_label
     +-----+ +-----+
 
 .. rst-class:: classref-item-separator
@@ -185,9 +185,9 @@ To get a human-readable representation of the **InputEventKey**, use ``OS.get_ke
 - |void| **set_physical_keycode**\ (\ value\: :ref:`Key<enum_@GlobalScope_Key>`\ )
 - :ref:`Key<enum_@GlobalScope_Key>` **get_physical_keycode**\ (\ )
 
-Represents the physical location of a key on the 101/102-key US QWERTY keyboard, which corresponds to one of the :ref:`Key<enum_@GlobalScope_Key>` constants. Physical key codes meant for game input, such as WASD movement, where only the location of the keys is important.
+代表按键在 101/102 键的美式键盘上的物理位置，对应一个 :ref:`Key<enum_@GlobalScope_Key>` 常量。用于游戏输入的物理键码，例如 WASD 移动键，其中只有按键的位置很重要。
 
-To get a human-readable representation of the **InputEventKey**, use :ref:`OS.get_keycode_string()<class_OS_method_get_keycode_string>` in combination with :ref:`DisplayServer.keyboard_get_keycode_from_physical()<class_DisplayServer_method_keyboard_get_keycode_from_physical>` or :ref:`DisplayServer.keyboard_get_label_from_physical()<class_DisplayServer_method_keyboard_get_label_from_physical>`:
+要获取 **InputEventKey** 的人类可读表示，请搭配使用 :ref:`OS.get_keycode_string()<class_OS_method_get_keycode_string>` 和 :ref:`DisplayServer.keyboard_get_keycode_from_physical()<class_DisplayServer_method_keyboard_get_keycode_from_physical>` 或 :ref:`DisplayServer.keyboard_get_label_from_physical()<class_DisplayServer_method_keyboard_get_label_from_physical>` 方法：
 
 
 .. tabs::
@@ -248,9 +248,9 @@ To get a human-readable representation of the **InputEventKey**, use :ref:`OS.ge
 - |void| **set_unicode**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_unicode**\ (\ )
 
-The key Unicode character code (when relevant), shifted by modifier keys. Unicode character codes for composite characters and complex scripts may not be available unless IME input mode is active. See :ref:`Window.set_ime_active()<class_Window_method_set_ime_active>` for more information. Unicode character codes are meant for text input.
+按键 Unicode 字符代码（当相关时），由修饰键进行调整。除非 IME 输入模式处于活动状态，否则复合字符和复杂文字的 Unicode 字符代码可能不可用。有关详细信息，请参阅 :ref:`Window.set_ime_active()<class_Window_method_set_ime_active>`\ 。Unicode 字符码用于文本输入。
 
-\ **Note:** This property is set by the engine only for a pressed event. If the event is sent by an IME or a virtual keyboard, no corresponding key released event is sent.
+\ **注意：**\ 该属性由引擎设置仅用于按下事件。如果事件是由 IME 或虚拟键盘发送的，则不会发送相应的按键释放事件。
 
 .. rst-class:: classref-section-separator
 

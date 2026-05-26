@@ -14,7 +14,7 @@ Un mecanismo de sincronización utilizado para controlar el acceso a un recurso 
 Descripción
 ----------------------
 
-Un semáforo de sincronización que se puede utilizar para sincronizar múltiples :ref:`Thread<class_Thread>`\ s. Inicializado a cero en la creación. Para una versión binaria, consulta :ref:`Mutex<class_Mutex>`.
+Un semáforo de sincronización que se puede utilizar para sincronizar múltiples :ref:`Thread<class_Thread>`\ s. Inicializado a cero en la creación. Para una versión binaria, véase :ref:`Mutex<class_Mutex>`.
 
 \ **Advertencia:** Los semáforos deben utilizarse con cuidado para evitar interbloqueos.
 

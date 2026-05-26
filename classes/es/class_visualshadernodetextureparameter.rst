@@ -9,14 +9,14 @@ VisualShaderNodeTextureParameter
 
 **Heredado por:** :ref:`VisualShaderNodeCubemapParameter<class_VisualShaderNodeCubemapParameter>`, :ref:`VisualShaderNodeTexture2DArrayParameter<class_VisualShaderNodeTexture2DArrayParameter>`, :ref:`VisualShaderNodeTexture2DParameter<class_VisualShaderNodeTexture2DParameter>`, :ref:`VisualShaderNodeTexture3DParameter<class_VisualShaderNodeTexture3DParameter>`, :ref:`VisualShaderNodeTextureParameterTriplanar<class_VisualShaderNodeTextureParameterTriplanar>`
 
-Realiza una búsqueda de texturas uniformes dentro del gráfico shader visual.
+Realiza una búsqueda de texturas de variables uniformes dentro del gráfico shader visual.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Realiza una operación de búsqueda en la textura proporcionada como un uniforme para el shader.
+Realiza una operación de búsqueda en la textura proporcionada como una variable uniforme para el shader.
 
 .. rst-class:: classref-reftable-group
 
@@ -59,7 +59,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTextureParameter_TextureTy
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_DATA** = ``0``
 
-No se añade ninguna sugerencia a la declaración del uniforme.
+No se añade ninguna sugerencia a la declaración de la variable uniforme.
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_COLOR:
 
@@ -75,7 +75,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_NORMAL_MAP** = ``2``
 
-Añade ``hint_normal`` como sugerencia a la declaración uniforme, lo que internamente convierte la textura para su uso adecuado como mapa normal.
+Añade ``hint_normal`` como sugerencia a la declaración de la variable uniforme uniforme, lo que internamente convierte la textura para su uso adecuado como mapa normal.
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_ANISOTROPY:
 
@@ -83,7 +83,7 @@ Añade ``hint_normal`` como sugerencia a la declaración uniforme, lo que intern
 
 :ref:`TextureType<enum_VisualShaderNodeTextureParameter_TextureType>` **TYPE_ANISOTROPY** = ``3``
 
-Agrega ``hint_anisotropy`` como sugerencia a la declaración uniforme para usar en un mapa de flujo.
+Agrega ``hint_anisotropy`` como sugerencia a la declaración de variable uniforme para usar en un mapa de flujo.
 
 .. _class_VisualShaderNodeTextureParameter_constant_TYPE_MAX:
 
@@ -159,7 +159,7 @@ Muestrea la textura usando el filtro determinado por el nodo al que está adjunt
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_LINEAR:
 
@@ -167,7 +167,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_VisualShaderNodeTextureParameter_TextureFilter>` **FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_VisualShaderNodeTextureParameter_constant_FILTER_NEAREST_MIPMAP:
 
@@ -329,7 +329,7 @@ Descripciones de Propiedades
 - |void| **set_color_default**\ (\ value\: :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>`\ )
 - :ref:`ColorDefault<enum_VisualShaderNodeTextureParameter_ColorDefault>` **get_color_default**\ (\ )
 
-Establece el color por defecto si no se asigna una textura al uniforme.
+Establece el color por defecto si no se asigna una textura a la variable uniforme.
 
 .. rst-class:: classref-item-separator
 

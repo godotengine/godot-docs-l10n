@@ -1351,7 +1351,7 @@ Blends з низьким альфа-пікселем.
 
 :ref:`int<class_int>` **get_mipmap_offset**\ (\ mipmap\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Image_method_get_mipmap_offset>`
 
-Повертає зміщення, де MIP-карта зображення з індексом ``mipmap`` зберігається у словнику :ref:`data<class_Image_property_data>`.
+Повертає зміщення, за яким у словнику :ref:`data<class_Image_property_data>` зберігається міпмапа зображення з індексом ``mipmap``.
 
 .. rst-class:: classref-item-separator
 

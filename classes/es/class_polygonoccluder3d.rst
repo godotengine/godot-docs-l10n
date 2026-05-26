@@ -16,7 +16,7 @@ Descripción
 
 **PolygonOccluder3D** almacena una forma de polígono que puede ser utilizada por el sistema de ocultación por oclusión del motor. Cuando se selecciona en el editor un :ref:`OccluderInstance3D<class_OccluderInstance3D>` con un **PolygonOccluder3D**, aparecerá un editor en la parte superior del viewport 3D para que puedas añadir/eliminar puntos. Todos los puntos deben estar situados en el mismo plano 2D, lo que significa que no es posible crear formas 3D arbitrarias con un único **PolygonOccluder3D**. Para usar formas 3D arbitrarias como oclusores, utiliza en su lugar :ref:`ArrayOccluder3D<class_ArrayOccluder3D>` o la función de procesado de :ref:`OccluderInstance3D<class_OccluderInstance3D>`.
 
-Consulta la documentación de :ref:`OccluderInstance3D<class_OccluderInstance3D>` para obtener instrucciones sobre cómo configurar la ocultación por oclusión.
+Véase la documentación de :ref:`OccluderInstance3D<class_OccluderInstance3D>` para obtener instrucciones sobre cómo configurar la ocultación por oclusión.
 
 .. rst-class:: classref-introduction-group
 

@@ -112,7 +112,7 @@ MultiplayerAPI
 
 **peer_connected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerAPI_signal_peer_connected>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与新对等体连接时发出。ID 为新对等体的对等体 ID。当某个客户端连接到同一服务器时，其他客户端会收到通知。连接到服务器时，该客户端也会收到此信号，新对等体为服务器（ID 为 1）。
+当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与新对等端连接时发出。ID 为新对等端的对等端 ID。当某个客户端连接到同一服务器时，其他客户端会收到通知。连接到服务器时，该客户端也会收到此信号，新对等端为服务器（ID 为 1）。
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ MultiplayerAPI
 
 **peer_disconnected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerAPI_signal_peer_disconnected>`
 
-当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与对等体断开连接时发出。当某个客户端从同一服务器断开连接时，其他客户端会收到通知。
+当此 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 与对等端断开连接时发出。当某个客户端从同一服务器断开连接时，其他客户端会收到通知。
 
 .. rst-class:: classref-item-separator
 
@@ -167,7 +167,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` **RPC_MODE_ANY_PEER** = ``1``
 
-在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以将某个方法设置为能够被任何对等体远程调用。类似于 ``@rpc("any_peer")`` 注解。接受来自所有远程对等体的调用，无论是否为节点的控制者。
+在 :ref:`Node.rpc_config()<class_Node_method_rpc_config>` 中使用，可以将某个方法设置为能够被任何对等端远程调用。类似于 ``@rpc("any_peer")`` 注解。接受来自所有远程对等端的调用，无论是否为节点的控制者。
 
 .. _class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY:
 
@@ -197,7 +197,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 - |void| **set_multiplayer_peer**\ (\ value\: :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ )
 - :ref:`MultiplayerPeer<class_MultiplayerPeer>` **get_multiplayer_peer**\ (\ )
 
-处理 RPC 系统的对等体对象（设置后会启用网络）。根据对等体本身的不同，该 MultiplayerAPI 可能会成为网络服务器（使用 :ref:`is_server()<class_MultiplayerAPI_method_is_server>` 判断）并将根节点的网络模式设置为控制者，也可能会成为普通的客户端对等体。所有子节点默认会继承其网络模式。网络相关事件（连接、断开连接、新客户端）的处理是通过连接 MultiplayerAPI 的信号来完成的。
+处理 RPC 系统的对等端对象（设置后会启用网络）。根据对等端本身的不同，该 MultiplayerAPI 可能会成为网络服务器（使用 :ref:`is_server()<class_MultiplayerAPI_method_is_server>` 判断）并将根节点的网络模式设置为控制者，也可能会成为普通的客户端对等端。所有子节点默认会继承其网络模式。网络相关事件（连接、断开连接、新客户端）的处理是通过连接 MultiplayerAPI 的信号来完成的。
 
 .. rst-class:: classref-section-separator
 
@@ -238,7 +238,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_peers**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_get_peers>`
 
-返回这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 所有已连接对等体的对等体 ID。
+返回这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 所有已连接对等端的对等端 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -264,7 +264,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`int<class_int>` **get_unique_id**\ (\ ) :ref:`🔗<class_MultiplayerAPI_method_get_unique_id>`
 
-返回这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 唯一对等体 ID。
+返回这个 MultiplayerAPI 的 :ref:`multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 唯一对等端 ID。
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +342,7 @@ enum **RPCMode**: :ref:`🔗<enum_MultiplayerAPI_RPCMode>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc**\ (\ peer\: :ref:`int<class_int>`, object\: :ref:`Object<class_Object>`, method\: :ref:`StringName<class_StringName>`, arguments\: :ref:`Array<class_Array>` = []\ ) :ref:`🔗<class_MultiplayerAPI_method_rpc>`
 
-向目标对等体 ``peer`` 发送 RPC。会使用提供的参数 ``arguments`` 在远程对象 ``object`` 上调用给定的方法 ``method``\ 。根据实现和 RPC 配置，RPC 可能也可以进行本地调用。见 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ 。
+向目标对等端 ``peer`` 发送 RPC。会使用提供的参数 ``arguments`` 在远程对象 ``object`` 上调用给定的方法 ``method``\ 。根据实现和 RPC 配置，RPC 可能也可以进行本地调用。见 :ref:`Node.rpc()<class_Node_method_rpc>` 和 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ 。
 
 \ **注意：**\ 请尽量使用 :ref:`Node.rpc()<class_Node_method_rpc>`\ 、\ :ref:`Node.rpc_id()<class_Node_method_rpc_id>` 或 ``my_method.rpc(peer, arg1, arg2, ...)``\ （适用于 GDScript），因为速度更快。这个方法主要用于连同 :ref:`MultiplayerAPIExtension<class_MultiplayerAPIExtension>` 进行多人游戏功能的扩展和替换。
 

@@ -9,14 +9,14 @@ OpenXRSpatialComponentPolygon2DList
 
 **Наследует:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries polygon2d result data.
+Объект для хранения данных результатов запросов polygon2d.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Object for storing the queries 2D polygon result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
+Объект для хранения данных результатов запроса в виде 2D полигонов при вызове :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -47,7 +47,7 @@ Object for storing the queries 2D polygon result data when calling :ref:`OpenXRS
 
 :ref:`Transform3D<class_Transform3D>` **get_transform**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPolygon2DList_method_get_transform>`
 
-Returns the transform for positioning our polygon for the entity at this ``index``.
+Возвращает преобразование для позиционирования полигона относительно объекта в точке с ``index``.
 
 .. rst-class:: classref-item-separator
 
@@ -59,7 +59,7 @@ Returns the transform for positioning our polygon for the entity at this ``index
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vertices**\ (\ snapshot\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialComponentPolygon2DList_method_get_vertices>`
 
-Returns the polygon vertices for the entity at this ``index``.
+Возвращает вершины полигона для объекта, находящегося по этому ``index``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

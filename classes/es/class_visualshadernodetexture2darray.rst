@@ -7,7 +7,7 @@ VisualShaderNodeTexture2DArray
 
 **Hereda:** :ref:`VisualShaderNodeSample3D<class_VisualShaderNodeSample3D>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Un array uniforme de texturas 2D para usar dentro del grafo de shader visual.
+Un array de variables uniformes de texturas 2D para usar dentro del grafo de shader visual.
 
 .. rst-class:: classref-introduction-group
 

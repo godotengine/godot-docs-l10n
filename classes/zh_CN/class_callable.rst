@@ -488,7 +488,7 @@ GDScript 中可以在方法里创建 lambda 函数。Lambda 函数是自定义�
 
 |void| **rpc**\ (\ ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_rpc>`
 
-在所有已连接的对等体上执行 RPC（Remote Procedure Call，远程过程调用）。用于多人游戏，一般不可用，除非所调用的函数有 *RPC* 标记（使用 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 或 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ ）。在不支持的方法上调用该方法会导致出错。见 :ref:`Node.rpc()<class_Node_method_rpc>`\ 。
+在所有已连接的对等端上执行 RPC（Remote Procedure Call，远程过程调用）。用于多人游戏，一般不可用，除非所调用的函数有 *RPC* 标记（使用 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 或 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ ）。在不支持的方法上调用该方法会导致出错。见 :ref:`Node.rpc()<class_Node_method_rpc>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -500,7 +500,7 @@ GDScript 中可以在方法里创建 lambda 函数。Lambda 函数是自定义�
 
 |void| **rpc_id**\ (\ peer_id\: :ref:`int<class_int>`, ...\ ) |vararg| |const| :ref:`🔗<class_Callable_method_rpc_id>`
 
-在指定的对等体 ID（请参阅多人游戏文档）上执行 RPC（Remote Procedure Call，远程过程调用）。用于多人游戏，一般不可用，除非所调用的函数有 *RPC* 标记（使用 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 或 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ ）。在不支持的方法上调用该方法会导致出错。见 :ref:`Node.rpc_id()<class_Node_method_rpc_id>`\ 。
+在指定的对等端 ID（请参阅多人游戏文档）上执行 RPC（Remote Procedure Call，远程过程调用）。用于多人游戏，一般不可用，除非所调用的函数有 *RPC* 标记（使用 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 或 :ref:`Node.rpc_config()<class_Node_method_rpc_config>`\ ）。在不支持的方法上调用该方法会导致出错。见 :ref:`Node.rpc_id()<class_Node_method_rpc_id>`\ 。
 
 .. rst-class:: classref-item-separator
 

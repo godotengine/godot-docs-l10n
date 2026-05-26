@@ -202,7 +202,7 @@ Desactiva la simulación del `efecto Doppler <https://en.wikipedia.org/wiki/Dopp
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_process``. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+Simula el `efecto Doppler <https://es.wikipedia.org/wiki/Efecto_Doppler>`__ rastreando las posiciones de los objetos que cambian en ``_process``. Los cambios en la velocidad relativa de esta cámara en comparación con esos objetos afectan a cómo se percibe el audio (cambiando el :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` del audio).
 
 .. _class_Camera3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -210,7 +210,7 @@ Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tr
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-Simulate `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ by tracking positions of objects that are changed in ``_physics_process``. Changes in the relative velocity of this camera compared to those objects affect how audio is perceived (changing the audio's :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`).
+Simular el `efecto Doppler <https://es.wikipedia.org/wiki/Efecto_Doppler>`__ rastreando las posiciones de los objetos que cambian en ``_physics_process``. Los cambios en la velocidad relativa de esta cámara en comparación con esos objetos afectan a cómo se percibe el audio (cambiando el :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>` del audio).
 
 .. rst-class:: classref-section-separator
 
@@ -266,13 +266,13 @@ El :ref:`Compositor<class_Compositor>` a utilizar para esta cámara.
 - |void| **set_cull_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_cull_mask**\ (\ )
 
-The culling mask that describes which :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` are rendered by this camera. By default, all 20 user-visible layers are rendered.
+La máscara de recorte (cull mask) que describe cuáles :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` son renderizadas por esta cámara. Por defecto, se renderizan las 20 capas visibles para el usuario.
 
-\ **Note:** Since the :ref:`cull_mask<class_Camera3D_property_cull_mask>` allows for 32 layers to be stored in total, there are an additional 12 layers that are only used internally by the engine and aren't exposed in the editor. Setting :ref:`cull_mask<class_Camera3D_property_cull_mask>` using a script allows you to toggle those reserved layers, which can be useful for editor plugins.
+\ **Nota:** Dado que la :ref:`cull_mask<class_Camera3D_property_cull_mask>` permite almacenar 32 capas en total, hay 12 capas adicionales que solo se usan internamente por el motor y no se muestran en el editor. Configurar la :ref:`cull_mask<class_Camera3D_property_cull_mask>` mediante un script te permite activar o desactivar esas capas reservadas, lo cual puede ser útil para complementos (plugins) del editor.
 
-To adjust :ref:`cull_mask<class_Camera3D_property_cull_mask>` more easily using a script, use :ref:`get_cull_mask_value()<class_Camera3D_method_get_cull_mask_value>` and :ref:`set_cull_mask_value()<class_Camera3D_method_set_cull_mask_value>`.
+Para ajustar la :ref:`cull_mask<class_Camera3D_property_cull_mask>` más fácilmente usando un script, usa :ref:`get_cull_mask_value()<class_Camera3D_method_get_cull_mask_value>` y :ref:`set_cull_mask_value()<class_Camera3D_method_set_cull_mask_value>`.
 
-\ **Note:** :ref:`VoxelGI<class_VoxelGI>`, SDFGI and :ref:`LightmapGI<class_LightmapGI>` will always take all layers into account to determine what contributes to global illumination. If this is an issue, set :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` to :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>` for meshes and :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` to :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>` for lights to exclude them from global illumination.
+\ **Nota:** :ref:`VoxelGI<class_VoxelGI>`, SDFGI y :ref:`LightmapGI<class_LightmapGI>` siempre tendrán en cuenta todas las capas para determinar qué contribuye a la iluminación global. Si esto es un problema, establece :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` como :ref:`GeometryInstance3D.GI_MODE_DISABLED<class_GeometryInstance3D_constant_GI_MODE_DISABLED>` para las mallas y :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` como :ref:`Light3D.BAKE_DISABLED<class_Light3D_constant_BAKE_DISABLED>` para las luces para excluirlas de la iluminación global.
 
 .. rst-class:: classref-item-separator
 
@@ -289,9 +289,9 @@ To adjust :ref:`cull_mask<class_Camera3D_property_cull_mask>` more easily using 
 - |void| **set_current**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_current**\ (\ )
 
-If ``true``, the ancestor :ref:`Viewport<class_Viewport>` is currently using this camera.
+Si es ``true``, el :ref:`Viewport<class_Viewport>` ancestro está utilizando actualmente esta cámara.
 
-If multiple cameras are in the scene, one will always be made current. For example, if two **Camera3D** nodes are present in the scene and only one is current, setting one camera's :ref:`current<class_Camera3D_property_current>` to ``false`` will cause the other camera to be made current.
+Si hay varias cámaras en la escena, una siempre se establecerá como actual. Por ejemplo, si hay dos nodos **Camera3D** en la escena y solo uno es el actual, establecer el :ref:`current<class_Camera3D_property_current>` de una cámara a ``false`` hará que la otra cámara pase a ser la actual.
 
 .. rst-class:: classref-item-separator
 
@@ -308,9 +308,9 @@ If multiple cameras are in the scene, one will always be made current. For examp
 - |void| **set_doppler_tracking**\ (\ value\: :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>`\ )
 - :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **get_doppler_tracking**\ (\ )
 
-If not :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_DISABLED>`, this camera will simulate the `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ for objects changed in particular ``_process`` methods.
+Si no está en :ref:`DOPPLER_TRACKING_DISABLED<class_Camera3D_constant_DOPPLER_TRACKING_DISABLED>`, esta cámara simulará el `efecto Doppler <https://es.wikipedia.org/wiki/Efecto_Doppler>`__ para los objetos que cambien en métodos ``_process`` específicos.
 
-\ **Note:** The Doppler effect will only be heard on :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`\ s if :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` is not set to :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
+\ **Nota:** El efecto Doppler solo se escuchará en los :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>` si su propiedad :ref:`AudioStreamPlayer3D.doppler_tracking<class_AudioStreamPlayer3D_property_doppler_tracking>` no está configurada como :ref:`AudioStreamPlayer3D.DOPPLER_TRACKING_DISABLED<class_AudioStreamPlayer3D_constant_DOPPLER_TRACKING_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ El :ref:`Environment<class_Environment>` a utilizar para esta cámara.
 - |void| **set_far**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_far**\ (\ )
 
-The distance to the far culling boundary for this camera relative to its local Z axis. Higher values allow the camera to see further away, while decreasing :ref:`far<class_Camera3D_property_far>` can improve performance if it results in objects being partially or fully culled.
+La distancia al límite de recorte lejano (far culling) de esta cámara, relativa a su eje Z local. Valores más altos permiten que la cámara vea más lejos, mientras que disminuir :ref:`far<class_Camera3D_property_far>` puede mejorar el rendimiento si esto hace que los objetos se recorten parcial o totalmente.
 
 .. rst-class:: classref-item-separator
 
@@ -361,17 +361,17 @@ The distance to the far culling boundary for this camera relative to its local Z
 - |void| **set_fov**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fov**\ (\ )
 
-The camera's field of view angle (in degrees). Only applicable in perspective mode. Since :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` locks one axis, :ref:`fov<class_Camera3D_property_fov>` sets the other axis' field of view angle.
+El ángulo del campo de visión de la cámara (en grados). Solo es aplicable en modo perspectiva. Dado que :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` bloquea un eje, :ref:`fov<class_Camera3D_property_fov>` establece el ángulo del campo de visión del otro eje.
 
-For reference, the default vertical field of view value (``75.0``) is equivalent to a horizontal FOV of:
+Como referencia, el valor predeterminado del campo de visión vertical (``75.0``) es equivalente a un FOV horizontal de:
 
-- ~91.31 degrees in a 4:3 viewport
+- ~91.31 grados en un viewport de 4:3
 
-- ~101.67 degrees in a 16:10 viewport
+- ~101.67 grados en un viewport de 16:10
 
-- ~107.51 degrees in a 16:9 viewport
+- ~107.51 grados en un viewport de 16:9
 
-- ~121.63 degrees in a 21:9 viewport
+- ~121.63 grados en un viewport de 21:9
 
 .. rst-class:: classref-item-separator
 
@@ -388,9 +388,9 @@ For reference, the default vertical field of view value (``75.0``) is equivalent
 - |void| **set_frustum_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_frustum_offset**\ (\ )
 
-The camera's frustum offset. This can be changed from the default to create "tilted frustum" effects such as `Y-shearing <https://zdoom.org/wiki/Y-shearing>`__.
+El desplazamiento del frustum de la cámara. Esto puede cambiarse desde el valor predeterminado para crear efectos de "frustum inclinado" como el `cizallamiento en Y <https://zdoom.org/wiki/Y-shearing>`__.
 
-\ **Note:** Only effective if :ref:`projection<class_Camera3D_property_projection>` is :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`.
+\ **Nota:** Solo es efectivo si :ref:`projection<class_Camera3D_property_projection>` es :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`.
 
 .. rst-class:: classref-item-separator
 
@@ -441,7 +441,7 @@ El eje a bloquear durante los ajustes de :ref:`fov<class_Camera3D_property_fov>`
 - |void| **set_near**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_near**\ (\ )
 
-The distance to the near culling boundary for this camera relative to its local Z axis. Lower values allow the camera to see objects more up close to its origin, at the cost of lower precision across the *entire* range. Values lower than the default can lead to increased Z-fighting.
+La distancia al límite de recorte cercano (near culling) de esta cámara, relativa a su eje Z local. Valores más bajos permiten que la cámara vea objetos más de cerca, pero a costa de perder precisión en *todo* el rango. Usar valores menores al predeterminado puede causar que aumente el "Z-fighting" (parpadeo de texturas).
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ El modo de proyección de la cámara. En el modo :ref:`PROJECTION_PERSPECTIVE<cl
 - |void| **set_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_size**\ (\ )
 
-The camera's size in meters measured as the diameter of the width or height, depending on :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. Only applicable in orthogonal and frustum modes.
+El tamaño de la cámara en metros, medido como el diámetro del ancho o del alto, dependiendo de :ref:`keep_aspect<class_Camera3D_property_keep_aspect>`. Solo es aplicable en los modos orthogonal y frustum.
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ Devuelve el RID de una forma piramidal que abarca el frustum de visión de la c�
 
 :ref:`bool<class_bool>` **is_position_behind**\ (\ world_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Camera3D_method_is_position_behind>`
 
-Devuelve ``true`` si la posición dada está detrás de la cámara (la parte azul del diagrama enlazado). `Consulta este diagrama <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ para obtener una visión general de los métodos de consulta de posición.
+Devuelve ``true`` si la posición dada está detrás de la cámara (la parte azul del diagrama enlazado). `Véase este diagrama <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ para obtener una visión general de los métodos de consulta de posición.
 
 \ **Nota:** Una posición que devuelva ``false`` aún puede estar fuera del campo de visión de la cámara.
 
@@ -607,7 +607,7 @@ Devuelve ``true`` si la posición dada está detrás de la cámara (la parte azu
 
 :ref:`bool<class_bool>` **is_position_in_frustum**\ (\ world_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Camera3D_method_is_position_in_frustum>`
 
-Devuelve ``true`` si la posición dada está dentro del frustum de la cámara (la parte verde del diagrama enlazado). `Consulta este diagrama <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ para obtener una visión general de los métodos de consulta de posición.
+Devuelve ``true`` si la posición dada está dentro del frustum de la cámara (la parte verde del diagrama enlazado). `Véase este diagrama <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ para obtener una visión general de los métodos de consulta de posición.
 
 .. rst-class:: classref-item-separator
 
@@ -729,14 +729,14 @@ Establece la proyección de la cámara en modo de perspectiva (véase :ref:`PROJ
 
 :ref:`Vector2<class_Vector2>` **unproject_position**\ (\ world_point\: :ref:`Vector3<class_Vector3>`\ ) |const| :ref:`🔗<class_Camera3D_method_unproject_position>`
 
-Returns the 2D coordinate in the :ref:`Viewport<class_Viewport>` rectangle that maps to the given 3D point in world space.
+Devuelve la coordenada 2D en el rectángulo del :ref:`Viewport<class_Viewport>` que corresponde al punto 3D dado en el espacio del mundo.
 
-\ **Note:** When using this to position GUI elements over a 3D viewport, use :ref:`is_position_behind()<class_Camera3D_method_is_position_behind>` to prevent them from appearing if the 3D point is behind the camera:
+\ **Nota:** Cuando uses esto para posicionar elementos de la interfaz (GUI) sobre una vista 3D, usa :ref:`is_position_behind()<class_Camera3D_method_is_position_behind>` para evitar que aparezcan si el punto 3D está detrás de la cámara:
 
 ::
 
-    # This code block is part of a script that inherits from Node3D.
-    # `control` is a reference to a node inheriting from Control.
+    #Este bloque de código es parte de un script que hereda de Node3D.
+    # `control` es una referencia a un nodo que hereda de Control.
     control.visible = not get_viewport().get_camera_3d().is_position_behind(global_transform.origin)
     control.position = get_viewport().get_camera_3d().unproject_position(global_transform.origin)
 

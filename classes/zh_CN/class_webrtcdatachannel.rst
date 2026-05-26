@@ -80,7 +80,7 @@ enum **WriteMode**: :ref:`🔗<enum_WebRTCDataChannel_WriteMode>`
 
 :ref:`WriteMode<enum_WebRTCDataChannel_WriteMode>` **WRITE_MODE_TEXT** = ``0``
 
-告诉通道以文本形式在这个通道上发送数据。外部对等体（非 Godot）会以字符串的形式接收。
+告诉通道以文本形式在这个通道上发送数据。外部对等端（非 Godot）会以字符串的形式接收。
 
 .. _class_WebRTCDataChannel_constant_WRITE_MODE_BINARY:
 
@@ -88,7 +88,7 @@ enum **WriteMode**: :ref:`🔗<enum_WebRTCDataChannel_WriteMode>`
 
 :ref:`WriteMode<enum_WebRTCDataChannel_WriteMode>` **WRITE_MODE_BINARY** = ``1``
 
-告诉通道以二进制形式在此通道上发送数据。外部对等体（非 Godot）将以数组缓冲区或 blob 的形式接收。
+告诉通道以二进制形式在此通道上发送数据。外部对等端（非 Godot）将以数组缓冲区或 blob 的形式接收。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ enum **ChannelState**: :ref:`🔗<enum_WebRTCDataChannel_ChannelState>`
 
 |void| **close**\ (\ ) :ref:`🔗<class_WebRTCDataChannel_method_close>`
 
-关闭此数据通道，通知另一个对等体。
+关闭此数据通道，通知另一个对等端。
 
 .. rst-class:: classref-item-separator
 

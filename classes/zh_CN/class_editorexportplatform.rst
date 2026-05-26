@@ -374,7 +374,7 @@ flags **DebugFlags**: :ref:`🔗<enum_EditorExportPlatform_DebugFlags>`
 
 :ref:`String<class_String>` **get_message_category**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_category>`
 
-Returns the message category for the message with the given ``index``.
+返回给定 ``index`` 的消息的消息类别。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ Returns the message category for the message with the given ``index``.
 
 :ref:`int<class_int>` **get_message_count**\ (\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_count>`
 
-Returns the number of messages in the export log.
+返回导出日志中的消息数。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ Returns the number of messages in the export log.
 
 :ref:`String<class_String>` **get_message_text**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_text>`
 
-Returns the text for the message with the given ``index``.
+返回给定 ``index`` 的消息文本。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ Returns the text for the message with the given ``index``.
 
 :ref:`ExportMessageType<enum_EditorExportPlatform_ExportMessageType>` **get_message_type**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_EditorExportPlatform_method_get_message_type>`
 
-Returns the type for the message with the given ``index``.
+返回具有给定 ``index`` 的消息的类型。
 
 .. rst-class:: classref-item-separator
 

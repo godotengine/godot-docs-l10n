@@ -9,14 +9,14 @@ IKModifier3D
 
 **Heredado por:** :ref:`ChainIK3D<class_ChainIK3D>`, :ref:`TwoBoneIK3D<class_TwoBoneIK3D>`
 
-A node for inverse kinematics which may modify more than one bone.
+Un nodo para cinemática inversa que puede modificar más de un hueso.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s that has some joint lists and applies inverse kinematics. This class has some structs, enums, and helper methods which are useful to solve inverse kinematics.
+Clase base de :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s que tiene algunas listas de articulaciones y aplica cinemática inversa. Esta clase tiene algunas estructuras, enumeraciones y métodos de ayuda que son útiles para resolver la cinemática inversa.
 
 .. rst-class:: classref-introduction-group
 
@@ -75,9 +75,9 @@ Descripciones de Propiedades
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+Si es ``true``, el solucionador recupera el eje del hueso de la pose del hueso en cada fotograma.
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+Si es ``false``, el solucionador recupera el eje del hueso de la posición de reposo del hueso y lo guarda en caché, lo que aumenta ligeramente el rendimiento, pero los cambios de posición en la pose del hueso realizados antes de procesar este **IKModifier3D** se ignoran.
 
 .. rst-class:: classref-section-separator
 
@@ -106,7 +106,7 @@ Limpia todos los ajustes.
 
 :ref:`int<class_int>` **get_setting_count**\ (\ ) |const| :ref:`🔗<class_IKModifier3D_method_get_setting_count>`
 
-Returns the number of settings.
+Devuelve el número de configuraciones.
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ Returns the number of settings.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_IKModifier3D_method_reset>`
 
-Resets a state with respect to the current bone pose.
+Reinicia un estado con respecto a la pose actual del hueso.
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Resets a state with respect to the current bone pose.
 
 |void| **set_setting_count**\ (\ count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_IKModifier3D_method_set_setting_count>`
 
-Sets the number of settings.
+Establece el número de configuraciones.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

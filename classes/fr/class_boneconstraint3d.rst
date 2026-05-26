@@ -288,9 +288,9 @@ Cet os sera uniquement référencé et non modifié par ce modificateur.
 
 |void| **set_reference_node**\ (\ index\: :ref:`int<class_int>`, node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_BoneConstraint3D_method_set_reference_node>`
 
-Sets the reference node path of the setting at ``index`` to ``node``.
+Définit le chemin du nœud de référence du paramètre à l'index ``index`` au nœud ``node``.
 
-This node will be only referenced and not modified by this modifier.
+Ce nœud sera uniquement référencé et non modifié par ce modificateur.
 
 .. rst-class:: classref-item-separator
 

@@ -14,13 +14,13 @@ Un nodo utilizado para la reproducción de animación.
 Descripción
 ----------------------
 
-An animation player is used for general-purpose playback of animations. It contains a dictionary of :ref:`AnimationLibrary<class_AnimationLibrary>` resources and custom blend times between animation transitions.
+Un reproductor de animación se utiliza para la reproducción de propósito general de animaciones. Contiene un diccionario de recursos :ref:`AnimationLibrary<class_AnimationLibrary>` y tiempos de mezcla personalizados entre transiciones de animación.
 
-Some methods and properties use a single key to reference an animation directly. These keys are formatted as the key for the library, followed by a forward slash, then the key for the animation within the library, for example ``"movement/run"``. If the library's key is an empty string (known as the default library), the forward slash is omitted, being the same key used by the library.
+Algunos métodos y propiedades usan una única clave para referenciar una animación directamente. Estas claves tienen el formato de la clave de la biblioteca, seguida de una barra inclinada y luego la clave de la animación dentro de la biblioteca, por ejemplo ``"movement/run"``. Si la clave de la biblioteca es una string vacía (conocida como la biblioteca predeterminada), la barra inclinada se omite, siendo la misma clave utilizada por la biblioteca.
 
-\ **AnimationPlayer** is better-suited than :ref:`Tween<class_Tween>` for more complex animations, for example ones with non-trivial timings. It can also be used over :ref:`Tween<class_Tween>` if the animation track editor is more convenient than doing it in code.
+\ **AnimationPlayer** es más adecuado que :ref:`Tween<class_Tween>` para animaciones más complejas, por ejemplo, aquellas con temporizaciones no triviales. También puede usarse en lugar de :ref:`Tween<class_Tween>` si el editor de pistas de animación es más conveniente que hacerlo en código.
 
-Updating the target properties of animations occurs at the process frame.
+La actualización de las propiedades objetivo de las animaciones ocurre en el fotograma de proceso.
 
 .. rst-class:: classref-introduction-group
 
@@ -352,9 +352,9 @@ La posición (en segundos) de la animación que se está reproduciendo.
 - |void| **set_movie_quit_on_finish_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_movie_quit_on_finish_enabled**\ (\ )
 
-If ``true`` and the engine is running in Movie Maker mode (see :ref:`MovieWriter<class_MovieWriter>`), exits the engine with :ref:`SceneTree.quit()<class_SceneTree_method_quit>` as soon as an animation is done playing in this **AnimationPlayer**. A message is printed when the engine quits for this reason.
+Si es ``true`` y el motor se está ejecutando en modo Movie Maker (ver :ref:`MovieWriter<class_MovieWriter>`), sale del motor con :ref:`SceneTree.quit()<class_SceneTree_method_quit>` tan pronto como una animación termine de reproducirse en este **AnimationPlayer**. Se imprime un mensaje cuando el motor se cierra por este motivo.
 
-\ **Note:** This obeys the same logic as the :ref:`AnimationMixer.animation_finished<class_AnimationMixer_signal_animation_finished>` signal, so it will not quit the engine if the animation is set to be looping.
+\ **Nota:** Esto obedece la misma lógica que la señal :ref:`AnimationMixer.animation_finished<class_AnimationMixer_signal_animation_finished>`, por lo que no cerrará el motor si la animación está configurada para reproducirse en bucle.
 
 .. rst-class:: classref-item-separator
 
@@ -631,9 +631,9 @@ Devuelve ``true`` si una animación se está reproduciendo actualmente con una s
 
 :ref:`bool<class_bool>` **is_animation_active**\ (\ ) |const| :ref:`🔗<class_AnimationPlayer_method_is_animation_active>`
 
-Returns ``true`` if the an animation is currently active. An animation is active if it was played by calling :ref:`play()<class_AnimationPlayer_method_play>` and was not finished yet, or was stopped by calling :ref:`stop()<class_AnimationPlayer_method_stop>`.
+Devuelve\ ``true`` si hay una animación activa. Una animación se considera activa cuando se ha empezado a reproducir utilizando :ref:`play()<class_AnimationPlayer_method_play>` y no ha terminado aún, o sido detenida con :ref:`stop()<class_AnimationPlayer_method_stop>`\ 
 
-This can be used to check whether an animation is currently paused or stopped.
+Sirve para comprobar si una animación está en pausa o detenida.
 
 ::
 
@@ -662,9 +662,9 @@ Devuelve ``true`` si una animación se está reproduciendo actualmente (incluso 
 
 |void| **pause**\ (\ ) :ref:`🔗<class_AnimationPlayer_method_pause>`
 
-Pauses the currently playing animation. The :ref:`current_animation_position<class_AnimationPlayer_property_current_animation_position>` will be kept and calling :ref:`play()<class_AnimationPlayer_method_play>` or :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>` without arguments or with the same animation name as :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>` will resume the animation.
+Pausa la animación que se está reproduciendo actualmente. Se mantendrá el :ref:`current_animation_position<class_AnimationPlayer_property_current_animation_position>` y llamar a :ref:`play()<class_AnimationPlayer_method_play>` o :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>` sin argumentos o con el mismo nombre de animación que :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>` reanudará la animación.
 
-See also :ref:`stop()<class_AnimationPlayer_method_stop>`.
+Véase también :ref:`stop()<class_AnimationPlayer_method_stop>`.
 
 .. rst-class:: classref-item-separator
 
@@ -676,13 +676,13 @@ See also :ref:`stop()<class_AnimationPlayer_method_stop>`.
 
 |void| **play**\ (\ name\: :ref:`StringName<class_StringName>` = &"", custom_blend\: :ref:`float<class_float>` = -1, custom_speed\: :ref:`float<class_float>` = 1.0, from_end\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationPlayer_method_play>`
 
-Plays the animation with key ``name``. Custom blend times and speed can be set.
+Reproduce la animación con la clave ``name``. Se pueden establecer tiempos de mezcla y velocidad personalizados.
 
-The ``from_end`` option only affects when switching to a new animation track, or if the same track but at the start or end. It does not affect resuming playback that was paused in the middle of an animation. If ``custom_speed`` is negative and ``from_end`` is ``true``, the animation will play backwards (which is equivalent to calling :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>`).
+La opción ``from_end`` solo afecta al cambiar a una nueva pista de animación, o si es la misma pista pero al inicio o al final. No afecta a reanudar la reproducción que fue pausada en medio de una animación. Si ``custom_speed`` es negativo y ``from_end`` es ``true``, la animación se reproducirá hacia atrás (lo cual es equivalente a llamar a :ref:`play_backwards()<class_AnimationPlayer_method_play_backwards>`).
 
-The **AnimationPlayer** keeps track of its current or last played animation with :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>`. If this method is called with that same animation ``name``, or with no ``name`` parameter, the assigned animation will resume playing if it was paused.
+El **AnimationPlayer** mantiene un registro de su animación actual o la última reproducida con :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>`. Si este método se llama con ese mismo ``name`` de animación, o sin el parámetro ``name``, la animación asignada se reanudará si estaba pausada.
 
-\ **Note:** The animation will be updated the next time the **AnimationPlayer** is processed. If other variables are updated at the same time this is called, they may be updated too early. To perform the update immediately, call ``advance(0)``.
+\ **Nota:** La animación se actualizará la próxima vez que se procese el **AnimationPlayer**. Si otras variables se actualizan al mismo tiempo que se llama a esto, pueden actualizarse demasiado pronto. Para realizar la actualización inmediatamente, llama a ``advance(0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -764,20 +764,20 @@ Este método es una abreviatura de :ref:`play_section_with_markers()<class_Anima
 
 |void| **play_with_capture**\ (\ name\: :ref:`StringName<class_StringName>` = &"", duration\: :ref:`float<class_float>` = -1.0, custom_blend\: :ref:`float<class_float>` = -1, custom_speed\: :ref:`float<class_float>` = 1.0, from_end\: :ref:`bool<class_bool>` = false, trans_type\: :ref:`TransitionType<enum_Tween_TransitionType>` = 0, ease_type\: :ref:`EaseType<enum_Tween_EaseType>` = 0\ ) :ref:`🔗<class_AnimationPlayer_method_play_with_capture>`
 
-See also :ref:`AnimationMixer.capture()<class_AnimationMixer_method_capture>`.
+Véase también :ref:`AnimationMixer.capture()<class_AnimationMixer_method_capture>`.
 
-You can use this method to use more detailed options for capture than those performed by :ref:`playback_auto_capture<class_AnimationPlayer_property_playback_auto_capture>`. When :ref:`playback_auto_capture<class_AnimationPlayer_property_playback_auto_capture>` is ``false``, this method is almost the same as the following:
+Se puede usar este método para emplear opciones de captura más detalladas que las realizadas por :ref:`playback_auto_capture<class_AnimationPlayer_property_playback_auto_capture>`. Cuando :ref:`playback_auto_capture<class_AnimationPlayer_property_playback_auto_capture>` es ``false``, este método es casi igual a lo siguiente:
 
 ::
 
     capture(name, duration, trans_type, ease_type)
     play(name, custom_blend, custom_speed, from_end)
 
-If ``name`` is blank, it specifies :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>`.
+Si ``name`` está vacío, se utilizará :ref:`assigned_animation<class_AnimationPlayer_property_assigned_animation>`.
 
-If ``duration`` is a negative value, the duration is set to the interval between the current position and the first key, when ``from_end`` is ``true``, uses the interval between the current position and the last key instead.
+Si ``duration`` es un valor negativo, la duración se establece en el intervalo entre la posición actual y la primera clave; cuando ``from_end`` es ``true``, en su lugar se usa el intervalo entre la posición actual y la última clave.
 
-\ **Note:** The ``duration`` takes :ref:`speed_scale<class_AnimationPlayer_property_speed_scale>` into account, but ``custom_speed`` does not, because the capture cache is interpolated with the blend result and the result may contain multiple animations.
+\ **Nota:** La ``duration`` tiene en cuenta :ref:`speed_scale<class_AnimationPlayer_property_speed_scale>`, pero ``custom_speed`` no, porque la caché de captura se interpola con el resultado de la mezcla, y dicho resultado puede contener múltiples animaciones.
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +845,7 @@ Especifica un tiempo de mezcla (en segundos) entre dos animaciones, referenciada
 
 **Obsoleto:** Use :ref:`AnimationMixer.callback_mode_method<class_AnimationMixer_property_callback_mode_method>` instead.
 
-Sets the call mode used for "Call Method" tracks.
+Establece el modo de llamada usado para las pistas de "Método de llamada".
 
 .. rst-class:: classref-item-separator
 
@@ -911,11 +911,11 @@ Si el argumento está vacío, la sección utiliza el principio o el final de la 
 
 |void| **stop**\ (\ keep_state\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AnimationPlayer_method_stop>`
 
-Stops the currently playing animation. The animation position is reset to ``0`` and the ``custom_speed`` is reset to ``1.0``. See also :ref:`pause()<class_AnimationPlayer_method_pause>`.
+Detiene la animación que se está reproduciendo actualmente. La posición de la animación se restablece a ``0`` y la ``custom_speed`` se restablece a ``1.0``. Véase también :ref:`pause()<class_AnimationPlayer_method_pause>`.
 
-If ``keep_state`` is ``true``, the animation state is not updated visually.
+Si ``keep_state`` es ``true``, el estado de la animación no se actualiza visualmente.
 
-\ **Note:** The method / audio / animation playback tracks will not be processed by this method.
+\ **Nota:** Los métodos / audio / pistas de reproducción de animación no serán procesados por este método.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

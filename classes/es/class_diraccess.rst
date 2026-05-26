@@ -17,23 +17,23 @@ Proporciona métodos para gestionar directorios y su contenido.
 Descripción
 ----------------------
 
-This class is used to manage directories and their content, even outside of the project folder.
+Esta clase se utiliza para gestionar directorios y su contenido, incluso fuera de la carpeta del proyecto.
 
-\ **DirAccess** can't be instantiated directly. Instead it is created with a static method that takes a path for which it will be opened.
+\ **DirAccess** no puede instanciarse directamente. En su lugar, se crea mediante un método estático que recibe la ruta que se desea abrir.
 
-Most of the methods have a static alternative that can be used without creating a **DirAccess**. Static methods only support absolute paths (including ``res://`` and ``user://``).
+La mayoría de los métodos tienen una alternativa estática que se puede usar sin crear un **DirAccess**. Los métodos estáticos solo admiten rutas absolutas (incluyendo ``res://`` y ``user://``).
 
 ::
 
-    # Standard
+    # Estándar
     var dir = DirAccess.open("user://levels")
     dir.make_dir("world1")
-    # Static
+    # Estático
     DirAccess.make_dir_absolute("user://levels/world1")
 
-\ **Note:** Accessing project ("res://") directories once exported may behave unexpectedly as some files are converted to engine-specific formats and their original source files may not be present in the expected PCK package. Because of this, to access resources in an exported project, it is recommended to use :ref:`ResourceLoader<class_ResourceLoader>` instead of :ref:`FileAccess<class_FileAccess>`.
+\ **Nota:** Acceder a directorios del proyecto ("res://") una vez exportado puede comportarse de manera inesperada, ya que algunos archivos se convierten a formatos específicos del motor y sus archivos fuente originales pueden no estar presentes en el paquete PCK esperado. Por este motivo, para acceder a recursos en un proyecto exportado, se recomienda usar :ref:`ResourceLoader<class_ResourceLoader>` en lugar de :ref:`FileAccess<class_FileAccess>`.
 
-Here is an example on how to iterate through the files of a directory:
+A continuación, un ejemplo de cómo iterar los archivos de un directorio:
 
 
 .. tabs::
@@ -47,12 +47,12 @@ Here is an example on how to iterate through the files of a directory:
             var file_name = dir.get_next()
             while file_name != "":
                 if dir.current_is_dir():
-                    print("Found directory: " + file_name)
+                    print("Directorio encontrado: " + file_name)
                 else:
-                    print("Found file: " + file_name)
+                    print("Archivo encontrado: " + file_name)
                 file_name = dir.get_next()
         else:
-            print("An error occurred when trying to access the path.")
+            print("Ocurrió un error al intentar acceder a la ruta.")
 
  .. code-tab:: csharp
 
@@ -67,24 +67,24 @@ Here is an example on how to iterate through the files of a directory:
             {
                 if (dir.CurrentIsDir())
                 {
-                    GD.Print($"Found directory: {fileName}");
+                    GD.Print($"Directorio encontrado: {fileName}");
                 }
                 else
                 {
-                    GD.Print($"Found file: {fileName}");
+                    GD.Print($"Archivo encontrado: {fileName}");
                 }
                 fileName = dir.GetNext();
             }
         }
         else
         {
-            GD.Print("An error occurred when trying to access the path.");
+            GD.Print("Ocurrió un error al intentar acceder a la ruta.");
         }
     }
 
 
 
-Keep in mind that file names may change or be remapped after export. If you want to see the actual resource file list as it appears in the editor, use :ref:`ResourceLoader.list_directory()<class_ResourceLoader_method_list_directory>` instead.
+Tenga en cuenta que los nombres de archivo pueden cambiar o reasignarse después de la exportación. Si desea ver la lista real de archivos de recursos tal como aparece en el editor, usa :ref:`ResourceLoader.list_directory()<class_ResourceLoader_method_list_directory>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -211,7 +211,7 @@ Descripciones de Propiedades
 - |void| **set_include_hidden**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_include_hidden**\ (\ )
 
-Si ``true``, los archivos ocultos se incluyen al navegar por el directorio.
+Si es ``true``, los archivos ocultos se incluyen al navegar por el directorio.
 
 Afecta a :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`, :ref:`get_directories()<class_DirAccess_method_get_directories>` y :ref:`get_files()<class_DirAccess_method_get_files>`.
 
@@ -230,7 +230,7 @@ Afecta a :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>`, :ref:`g
 - |void| **set_include_navigational**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_include_navigational**\ (\ )
 
-Si ``true``, ``.`` y ``..`` se incluyen al navegar por el directorio.
+Si es ``true``, ``.`` y ``..`` se incluyen al navegar por el directorio.
 
 Afecta a :ref:`list_dir_begin()<class_DirAccess_method_list_dir_begin>` y :ref:`get_directories()<class_DirAccess_method_get_directories>`.
 
@@ -249,11 +249,11 @@ Descripciones de Métodos
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_dir**\ (\ to_dir\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_change_dir>`
 
-Changes the currently opened directory to the one passed as an argument. The argument can be relative to the current directory (e.g. ``newdir`` or ``../newdir``), or an absolute path (e.g. ``/tmp/newdir`` or ``res://somedir/newdir``).
+Cambia el directorio abierto actualmente al que se pasa como argumento. El argumento puede ser relativo al directorio actual (por ejemplo, ``newdir`` o ``../newdir``), o una ruta absoluta (por ejemplo, ``/tmp/newdir`` o ``res://somedir/newdir``).
 
-Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
+Devuelve una de las constantes de código de :ref:`Error<enum_@GlobalScope_Error>` (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito).
 
-\ **Note:** The new directory must be within the same scope, e.g. when you had opened a directory inside ``res://``, you can't change it to ``user://`` directory. If you need to open a directory in another access scope, use :ref:`open()<class_DirAccess_method_open>` to create a new instance instead.
+\ **Nota:** El nuevo directorio debe estar dentro del mismo ámbito; por ejemplo, si habías abierto un directorio dentro de ``res://``, no puedes cambiarlo al directorio ``user://``. Si necesitas abrir un directorio en otro ámbito de acceso, utiliza :ref:`open()<class_DirAccess_method_open>` para crear una nueva instancia en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -265,11 +265,11 @@ Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@
 
 :ref:`Error<enum_@GlobalScope_Error>` **copy**\ (\ from\: :ref:`String<class_String>`, to\: :ref:`String<class_String>`, chmod_flags\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_DirAccess_method_copy>`
 
-Copies the ``from`` file to the ``to`` destination. Both arguments should be paths to files, either relative or absolute. If the destination file exists and is not access-protected, it will be overwritten.
+Copia el archivo ``from`` al destino ``to``. Ambos argumentos deben ser rutas a archivos, ya sean relativas o absolutas. Si el archivo de destino existe y no está protegido contra escritura, se sobrescribirá.
 
-If ``chmod_flags`` is different than ``-1``, the Unix permissions for the destination path will be set to the provided value, if available on the current operating system.
+Si ``chmod_flags`` es distinto de ``-1``, los permisos de Unix para la ruta de destino se establecerán al valor proporcionado, siempre que esté disponible en el sistema operativo actual.
 
-Returns one of the :ref:`Error<enum_@GlobalScope_Error>` code constants (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success).
+Devuelve una de las constantes de código de :ref:`Error<enum_@GlobalScope_Error>` (:ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito).
 
 .. rst-class:: classref-item-separator
 
@@ -309,13 +309,13 @@ Crea un enlace simbólico entre archivos o carpetas.
 
 :ref:`DirAccess<class_DirAccess>` **create_temp**\ (\ prefix\: :ref:`String<class_String>` = "", keep\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_DirAccess_method_create_temp>`
 
-Creates a temporary directory. This directory will be freed when the returned **DirAccess** is freed.
+Crea un directorio temporal. Este directorio se eliminará cuando el **DirAccess** devuelto sea liberado.
 
-If ``prefix`` is not empty, it will be prefixed to the directory name, separated by a ``-``.
+Si ``prefix`` no está vacío, se antepondrá al nombre del directorio, separado por un ``-``.
 
-If ``keep`` is ``true``, the directory is not deleted when the returned **DirAccess** is freed.
+Si ``keep`` es ``true``, el directorio no se eliminará cuando el **DirAccess** devuelto sea liberado.
 
-Returns ``null`` if opening the directory failed. You can use :ref:`get_open_error()<class_DirAccess_method_get_open_error>` to check the error that occurred.
+Devuelve ``null`` si no se pudo abrir el directorio. Puede utilizarse :ref:`get_open_error()<class_DirAccess_method_get_open_error>` para comprobar el error que se produjo.
 
 .. rst-class:: classref-item-separator
 
@@ -367,11 +367,11 @@ Versión estática de :ref:`dir_exists()<class_DirAccess_method_dir_exists>`. So
 
 :ref:`bool<class_bool>` **file_exists**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_DirAccess_method_file_exists>`
 
-Returns whether the target file exists. The argument can be relative to the current directory, or an absolute path.
+Devuelve si el archivo de destino existe. El argumento puede ser relativo al directorio actual o una ruta absoluta.
 
-For a static equivalent, use :ref:`FileAccess.file_exists()<class_FileAccess_method_file_exists>`.
+Para un equivalente estático, utiliza :ref:`FileAccess.file_exists()<class_FileAccess_method_file_exists>`.
 
-\ **Note:** Many resources types are imported (e.g. textures or sound files), and their source asset will not be included in the exported game, as only the imported version is used. See :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>` for an alternative approach that takes resource remapping into account.
+\ **Nota:** Muchos tipos de recursos se importan (por ejemplo, texturas o archivos de sonido) y su asset original no se incluirá en el juego exportado, ya que solo se utiliza la versión importada. Consulta :ref:`ResourceLoader.exists()<class_ResourceLoader_method_exists>` para un enfoque alternativo que tenga en cuenta el remapeo de recursos.
 
 .. rst-class:: classref-item-separator
 

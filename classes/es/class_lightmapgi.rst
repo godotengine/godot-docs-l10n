@@ -14,19 +14,19 @@ Calcula y almacena lightmaps procesados para una iluminación global rápida.
 Descripción
 ----------------------
 
-The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps are used to provide high-quality indirect lighting with very little light leaking. **LightmapGI** can also provide rough reflections using spherical harmonics if :ref:`directional<class_LightmapGI_property_directional>` is enabled. Dynamic objects can receive indirect lighting thanks to *light probes*, which can be automatically placed by setting :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` to a value other than :ref:`GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>`. Additional lightmap probes can also be added by creating :ref:`LightmapProbe<class_LightmapProbe>` nodes. The downside is that lightmaps are fully static and cannot be baked in an exported project. Baking a **LightmapGI** node is also slower compared to :ref:`VoxelGI<class_VoxelGI>`.
+El nodo **LightmapGI** se utiliza para calcular y almacenar lightmaps horneados. Los lightmaps se utilizan para proporcionar iluminación indirecta de alta calidad con muy poca fuga de luz. **LightmapGI** también puede proporcionar reflejos rudimentarios utilizando armónicos esféricos si :ref:`directional<class_LightmapGI_property_directional>` está habilitado. Los objetos dinámicos pueden recibir iluminación indirecta gracias a las *sondas de luz*, que pueden colocarse automáticamente configurando :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` a un valor diferente de :ref:`GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>`. Se pueden añadir sondas de lightmap adicionales creando nodos :ref:`LightmapProbe<class_LightmapProbe>`. La desventaja es que los lightmaps son completamente estáticos y no se pueden hornear en un proyecto exportado. Hornear un nodo **LightmapGI** también es más lento en comparación con :ref:`VoxelGI<class_VoxelGI>`.
 
-\ **Procedural generation:** Lightmap baking functionality is only available in the editor. This means **LightmapGI** is not suited to procedurally generated or user-built levels. For procedurally generated or user-built levels, use :ref:`VoxelGI<class_VoxelGI>` or SDFGI instead (see :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
+\ **Generación procedural:** La funcionalidad de baking de lightmaps solo está disponible en el editor. Esto significa que **LightmapGI** no es adecuado para niveles generados proceduralmente o construidos por el usuario. Para niveles generados proceduralmente o construidos por el usuario, usa :ref:`VoxelGI<class_VoxelGI>` o SDFGI en su lugar (véase :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
 
-\ **Performance:** **LightmapGI** provides the best possible run-time performance for global illumination. It is suitable for low-end hardware including integrated graphics and mobile devices.
+\ **Rendimiento:** **LightmapGI** proporciona el mejor rendimiento posible en tiempo de ejecución para la iluminación global. Es adecuado para hardware de gama baja, incluyendo gráficos integrados y dispositivos móviles.
 
-\ **Note:** Due to how lightmaps work, most properties only have a visible effect once lightmaps are baked again.
+\ **Nota:** Debido a cómo funcionan los lightmaps, la mayoría de las propiedades solo tienen un efecto visible una vez que los lightmaps se hornean de nuevo.
 
-\ **Note:** Lightmap baking on :ref:`CSGShape3D<class_CSGShape3D>`\ s and :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ es is not supported, as these cannot store UV2 data required for baking.
+\ **Nota:** El baking de lightmaps en :ref:`CSGShape3D<class_CSGShape3D>`\ s y :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ es no es compatible, ya que estos no pueden almacenar los datos UV2 necesarios para el baking.
 
-\ **Note:** If no custom lightmappers are installed, **LightmapGI** can only be baked from devices that support the Forward+ or Mobile renderers.
+\ **Nota:** Si no hay lightmappers personalizados instalados, **LightmapGI** solo puede hornearse desde dispositivos que soporten los renderizadores Forward+ o Mobile.
 
-\ **Note:** The **LightmapGI** node only bakes light data for child nodes of its parent. Nodes further up the hierarchy of the scene will not be baked.
+\ **Nota:** El nodo **LightmapGI** solo hornea datos de luz para los nodos hijos de su padre. Los nodos más arriba en la jerarquía de la escena no se hornearán.
 
 .. rst-class:: classref-introduction-group
 
@@ -250,7 +250,7 @@ El procesado del lightmap falló porque no hay mallas cuyo :ref:`GeometryInstanc
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_MESHES_INVALID** = ``6``
 
-El procesado del lightmap falló porque el mapeador de luz no pudo analizar algunas de las mallas marcadas como estáticas para el procesado.
+El procesado del lightmap falló porque el mapeador de luz no pudo analizar algunas de las mallas marcadas como estáticas para el baking.
 
 .. _class_LightmapGI_constant_BAKE_ERROR_CANT_CREATE_IMAGE:
 
@@ -392,7 +392,7 @@ El multiplicador de energía para cada rebote. Los valores más altos harán que
 - |void| **set_bounces**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bounces**\ (\ )
 
-Número de rebotes de luz que se tienen en cuenta durante el procesado. Los valores más altos dan como resultado una iluminación más brillante y realista, a costa de tiempos de procesado más largos. Si se establece en ``0``, solo se procesa la iluminación del entorno, la luz directa y la iluminación emisiva.
+Número de rebotes de luz que se tienen en cuenta durante el baking. Los valores más altos dan como resultado una iluminación más brillante y realista, a costa de tiempos de baking más largos. Si se establece en ``0``, solo se procesa la iluminación del entorno, la luz directa y la iluminación emisiva.
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Número de rebotes de luz que se tienen en cuenta durante el procesado. Los valo
 - |void| **set_camera_attributes**\ (\ value\: :ref:`CameraAttributes<class_CameraAttributes>`\ )
 - :ref:`CameraAttributes<class_CameraAttributes>` **get_camera_attributes**\ (\ )
 
-El recurso :ref:`CameraAttributes<class_CameraAttributes>` que especifica los niveles de exposición para procesar. La exposición automática y las propiedades de no exposición se ignorarán. La configuración de exposición debe utilizarse para reducir el rango dinámico presente durante el procesado. Si la exposición es demasiado alta, el **LightmapGI** tendrá artefactos de bandas o puede tener artefactos de sobreexposición.
+El recurso :ref:`CameraAttributes<class_CameraAttributes>` que especifica los niveles de exposición para procesar. La exposición automática y las propiedades de no exposición se ignorarán. La configuración de exposición debe utilizarse para reducir el rango dinámico presente durante el baking. Si la exposición es demasiado alta, el **LightmapGI** tendrá artefactos de bandas o puede tener artefactos de sobreexposición.
 
 .. rst-class:: classref-item-separator
 
@@ -460,7 +460,7 @@ La fuerza del paso de eliminación de ruido aplicado a los lightmaps generados. 
 - |void| **set_directional**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_directional**\ (\ )
 
-Si ``true``, procesa lightmaps para contener información direccional como armónicos esféricos. Esto resulta en una apariencia de iluminación más realista, especialmente con materiales con mapeado normal y para luces que tienen su luz directa procesada (:ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` establecido en :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` y con :ref:`Light3D.editor_only<class_Light3D_property_editor_only>` establecido en ``false``). La información direccional también se utiliza para proporcionar reflejos rugosos para objetos estáticos y dinámicos. Esto tiene un pequeño coste de rendimiento en tiempo de ejecución, ya que el sombreador tiene que realizar más trabajo para interpretar la información de dirección del lightmap. Los lightmaps direccionales también tardan más en procesarse y resultan en archivos de mayor tamaño.
+Si es ``true``, procesa lightmaps para contener información direccional como armónicos esféricos. Esto resulta en una apariencia de iluminación más realista, especialmente con materiales con mapeado normal y para luces que tienen su luz directa procesada (:ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` establecido en :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` y con :ref:`Light3D.editor_only<class_Light3D_property_editor_only>` establecido en ``false``). La información direccional también se utiliza para proporcionar reflejos rugosos para objetos estáticos y dinámicos. Esto tiene un pequeño coste de rendimiento en tiempo de ejecución, ya que el sombreador tiene que realizar más trabajo para interpretar la información de dirección del lightmap. Los lightmaps direccionales también tardan más en procesarse y resultan en archivos de mayor tamaño.
 
 \ **Nota:** El nombre de la propiedad no tiene relación con :ref:`DirectionalLight3D<class_DirectionalLight3D>`. :ref:`directional<class_LightmapGI_property_directional>` funciona con todos los tipos de luz.
 
@@ -663,7 +663,7 @@ El enmascaramiento de sombras permite a los nodos :ref:`DirectionalLight3D<class
 - |void| **set_supersampling_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_supersampling_enabled**\ (\ )
 
-Si ``true``, los lightmaps se procesan con la escala de texel multiplicada por :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>` y se submuestrean antes de guardar el lightmap (de modo que la densidad de texel efectiva es idéntica a tener el supermuestreo deshabilitado).
+Si es ``true``, los lightmaps se procesan con la escala de texel multiplicada por :ref:`supersampling_factor<class_LightmapGI_property_supersampling_factor>` y se submuestrean antes de guardar el lightmap (de modo que la densidad de texel efectiva es idéntica a tener el supermuestreo deshabilitado).
 
 El supermuestreo proporciona una mayor calidad de lightmap con menos ruido, sombras más suaves y una mejor proyección de sombras de características a pequeña escala en los objetos. Sin embargo, puede resultar en tiempos de procesado y uso de memoria significativamente mayores al procesar lightmaps. El relleno se ajusta automáticamente para evitar aumentar la fuga de luz.
 
@@ -684,9 +684,9 @@ El supermuestreo proporciona una mayor calidad de lightmap con menos ruido, somb
 
 El factor por el cual se multiplica la densidad de texel para el supermuestreo. Para obtener mejores resultados, utiliza un valor entero. Aunque se permiten valores fraccionarios, estos pueden resultar en un aumento de la fuga de luz y un lightmap borroso.
 
-Valores más altos pueden resultar en una mejor calidad, pero también aumentan los tiempos de procesado y el uso de memoria durante el procesado.
+Valores más altos pueden resultar en una mejor calidad, pero también aumentan los tiempos de baking y el uso de memoria durante el baking.
 
-Consulta :ref:`supersampling<class_LightmapGI_property_supersampling>` para obtener más información.
+Véase :ref:`supersampling<class_LightmapGI_property_supersampling>` para obtener más información.
 
 .. rst-class:: classref-item-separator
 
@@ -703,9 +703,9 @@ Consulta :ref:`supersampling<class_LightmapGI_property_supersampling>` para obte
 - |void| **set_texel_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_texel_scale**\ (\ )
 
-Scales the lightmap texel density of all meshes for the current bake. This is a multiplier that builds upon the existing lightmap texel size defined in each imported 3D scene, along with the per-mesh density multiplier (which is designed to be used when the same mesh is used at different scales). Lower values will result in faster bake times.
+Escala la densidad de téxeles del mapa de luz de todas las mallas para el procesamiento actual. Este es un multiplicador que se basa en el tamaño de téxel de mapa de luz existente definido en cada escena 3D importada, junto con el multiplicador de densidad por malla (diseñado para usarse cuando la misma malla se utiliza a diferentes escalas). Valores más bajos resultarán en tiempos de procesamiento más rápidos.
 
-For example, doubling :ref:`texel_scale<class_LightmapGI_property_texel_scale>` doubles the lightmap texture resolution for all objects *on each axis*, so it will *quadruple* the texel count.
+Por ejemplo, duplicar :ref:`texel_scale<class_LightmapGI_property_texel_scale>` duplica la resolución de la textura del mapa de luz para todos los objetos *en cada eje*, por lo que *cuadriplicará* el recuento de téxeles.
 
 .. rst-class:: classref-item-separator
 

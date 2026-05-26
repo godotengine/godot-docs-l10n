@@ -126,7 +126,7 @@ UID ресурсов (Уникальные Идентификаторы) поз�
 
 :ref:`String<class_String>` **ensure_path**\ (\ path_or_uid\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_ResourceUID_method_ensure_path>`
 
-Returns a path, converting ``path_or_uid`` if necessary. Fails and returns an empty string if an invalid UID is provided.
+Возвращает путь, при необходимости преобразуя ``path_or_uid``. В случае предоставления недопустимого UID возвращает пустую строку.
 
 .. rst-class:: classref-item-separator
 

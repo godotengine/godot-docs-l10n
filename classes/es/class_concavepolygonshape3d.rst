@@ -14,15 +14,15 @@ Una forma de malla tridimensional utilizada para colisiones físicas.
 Descripción
 ----------------------
 
-A 3D trimesh shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
+Una forma de malla triangular (trimesh) 3D, destinada a su uso en física. Normalmente se utiliza para proporcionar una forma a un :ref:`CollisionShape3D<class_CollisionShape3D>`.
 
-Being just a collection of interconnected triangles, **ConcavePolygonShape3D** is the most freely configurable single 3D shape. It can be used to form polyhedra of any nature, or even shapes that don't enclose a volume. However, **ConcavePolygonShape3D** is *hollow* even if the interconnected triangles do enclose a volume, which often makes it unsuitable for physics or detection.
+Al ser simplemente una colección de triángulos interconectados, **ConcavePolygonShape3D** es la forma 3D individual más configurable. Puede utilizarse para formar poliedros de cualquier naturaleza, o incluso formas que no encierran un volumen. Sin embargo, **ConcavePolygonShape3D** es *hueco* incluso si los triángulos interconectados encierran un volumen, lo que a menudo lo hace inadecuado para la física o la detección.
 
-\ **Note:** When used for collision, **ConcavePolygonShape3D** is intended to work with static :ref:`CollisionShape3D<class_CollisionShape3D>` nodes like :ref:`StaticBody3D<class_StaticBody3D>` and will likely not behave well for :ref:`CharacterBody3D<class_CharacterBody3D>`\ s or :ref:`RigidBody3D<class_RigidBody3D>`\ s in a mode other than Static.
+\ **Nota:** Cuando se utiliza para colisiones, **ConcavePolygonShape3D** está diseñado para funcionar con nodos :ref:`CollisionShape3D<class_CollisionShape3D>` estáticos como :ref:`StaticBody3D<class_StaticBody3D>` y es probable que no se comporte correctamente con :ref:`CharacterBody3D<class_CharacterBody3D>` o :ref:`RigidBody3D<class_RigidBody3D>` en un modo que no sea estático.
 
-\ **Warning:** Physics bodies that are small have a chance to clip through this shape when moving fast. This happens because on one frame, the physics body may be on the "outside" of the shape, and on the next frame it may be "inside" it. **ConcavePolygonShape3D** is hollow, so it won't detect a collision.
+\ **Advertencia:** Los cuerpos físicos que son pequeños tienen la posibilidad de atravesar (clip) esta forma cuando se mueven rápido. Esto sucede porque en un fotograma, el cuerpo físico puede estar en el "exterior" de la forma, y en el siguiente fotograma puede estar "dentro" de ella. Al ser **ConcavePolygonShape3D** hueco, no detectará la colisión.
 
-\ **Performance:** Due to its complexity, **ConcavePolygonShape3D** is the slowest 3D collision shape to check collisions against. Its use should generally be limited to level geometry. For convex geometry, :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` should be used. For dynamic physics bodies that need concave collision, several :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`\ s can be used to represent its collision by using convex decomposition; see :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`'s documentation for instructions.
+\ **Rendimiento:** Debido a su complejidad, **ConcavePolygonShape3D** es la forma de colisión 3D más lenta para comprobar colisiones. Su uso debe limitarse generalmente a la geometría del nivel. Para geometría convexa, debe usarse :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`. Para cuerpos físicos dinámicos que necesiten colisión cóncava, se pueden usar varios :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` para representar su colisión mediante descomposición convexa; consulta la documentación de :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` para obtener instrucciones.
 
 .. rst-class:: classref-introduction-group
 
@@ -77,7 +77,7 @@ Descripciones de Propiedades
 - |void| **set_backface_collision_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_backface_collision_enabled**\ (\ )
 
-If set to ``true``, collisions occur on both sides of the concave shape faces. Otherwise they occur only along the face normals.
+Si se establece en ``true``, las colisiones ocurren en ambos lados de las caras de la forma cóncava. De lo contrario, ocurren solo a lo largo de las normales de las caras.
 
 .. rst-class:: classref-section-separator
 

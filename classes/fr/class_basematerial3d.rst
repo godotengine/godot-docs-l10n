@@ -2152,9 +2152,9 @@ Détermine quand le rendu de la profondeur a lieu. Voir aussi :ref:`transparency
 
 **Expérimental :** May be affected by future rendering pipeline changes.
 
-Determines which comparison operator is used when testing depth.
+Détermine quel opérateur de comparaison est utilisé lors des tests de profondeur.
 
-\ **Note:** Changing :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` to a non-default value only has a visible effect when used on a transparent material, or a material that has :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` set to :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
+\ **Note :** La modification de :ref:`depth_test<class_BaseMaterial3D_property_depth_test>` à une valeur qui n'est pas celle par défaut n'a qu'un effet visible que lorsqu'elle est utilisée sur un matériau transparent, ou un matériau qui a :ref:`depth_draw_mode<class_BaseMaterial3D_property_depth_draw_mode>` défini à :ref:`DEPTH_DRAW_DISABLED<class_BaseMaterial3D_constant_DEPTH_DRAW_DISABLED>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3882,9 +3882,9 @@ Si ``true``, le mapping triplanaire pour ``UV2`` est calculé dans l'espace glob
 - |void| **set_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`, enable\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flag**\ (\ flag\: :ref:`Flags<enum_BaseMaterial3D_Flags>`\ ) |const|
 
-If ``true``, vertex colors are considered to be stored in nonlinear sRGB encoding and are converted to linear encoding during rendering. If ``false``, vertex colors are considered to be stored in linear encoding and are rendered as-is. See also :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
+Si ``true``, les couleurs des sommets sont considérées comme stockées dans un encodage sRGB non-linéaire et sont converties en encodage linéaire pendant le rendu. Si ``false``, les couleurs des sommets sont considérées comme stockées dans un encodage linéaire et sont rendues telles quelles. Voir aussi :ref:`albedo_texture_force_srgb<class_BaseMaterial3D_property_albedo_texture_force_srgb>`.
 
-\ **Note:** Only effective when using the Forward+ and Mobile rendering methods, not Compatibility.
+\ **Note :** Seulement effectif lors de l'utilisation des méthodes de rendu Forward+ et Mobile, mais pas Compatibilité.
 
 .. rst-class:: classref-item-separator
 

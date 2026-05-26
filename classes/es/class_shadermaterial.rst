@@ -90,7 +90,7 @@ Descripciones de Métodos
 
 :ref:`Variant<class_Variant>` **get_shader_parameter**\ (\ param\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_ShaderMaterial_method_get_shader_parameter>`
 
-Devuelve el valor actual establecido para este material de un uniforme en el shader.
+Devuelve el valor actual establecido para este material de una variable uniforme en el shader.
 
 .. rst-class:: classref-item-separator
 

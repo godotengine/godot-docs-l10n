@@ -7,7 +7,7 @@ Cubemap
 
 **Hereda:** :ref:`ImageTextureLayered<class_ImageTextureLayered>` **<** :ref:`TextureLayered<class_TextureLayered>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Six square textures representing the faces of a cube. Commonly used as a skybox.
+Seis texturas cuadradas que representan las caras de un cubo. Comúnmente utilizadas como skybox.
 
 .. rst-class:: classref-introduction-group
 
@@ -77,7 +77,7 @@ Descripciones de Métodos
 
 :ref:`Resource<class_Resource>` **create_placeholder**\ (\ ) |const| :ref:`🔗<class_Cubemap_method_create_placeholder>`
 
-Creates a placeholder version of this resource (:ref:`PlaceholderCubemap<class_PlaceholderCubemap>`).
+Crea una versión de marcador de posición de este recurso (:ref:`PlaceholderCubemap<class_PlaceholderCubemap>`).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

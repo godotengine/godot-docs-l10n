@@ -3933,45 +3933,45 @@ enum **TTSUtteranceEvent**: :ref:`🔗<enum_DisplayServer_TTSUtteranceEvent>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show**\ (\ title\: :ref:`String<class_String>`, current_directory\: :ref:`String<class_String>`, filename\: :ref:`String<class_String>`, show_hidden\: :ref:`bool<class_bool>`, mode\: :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>`, filters\: :ref:`PackedStringArray<class_PackedStringArray>`, callback\: :ref:`Callable<class_Callable>`, parent_window_id\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_DisplayServer_method_file_dialog_show>`
 
-Відображає діалогове вікно ОС для вибору файлів або каталогів у файловій системі.
+Displays OS native dialog for selecting files or directories in the file system.
 
-Кожен рядок фільтра в масиві ``filters`` має бути відформатований таким чином: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. Текст опису фільтра необов'язковий і його можна пропустити. Рекомендується встановлювати як розширення файлу, так і тип MIME. Див. також :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
+Each filter string in the ``filters`` array should be formatted like this: ``*.png,*.jpg,*.jpeg;Image Files;image/png,image/jpeg``. The description text of the filter is optional and can be omitted. It is recommended to set both file extension and MIME type. See also :ref:`FileDialog.filters<class_FileDialog_property_filters>`.
 
-Зворотні виклики мають такі аргументи: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **На Android,** третій аргумент зворотного виклику (``selected_filter_index``) завжди дорівнює ``0``.
+Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
 
-\ **Примітка:** Цей метод реалізовано, якщо сервер відображення має функцію :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>`. Підтримувані платформи включають Linux (X11/Wayland), Windows, macOS та Android (рівень API 29+).
+\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
 
-\ **Примітка:** Параметр ``current_directory`` може ігноруватися.
+\ **Note:** ``current_directory`` might be ignored.
 
-\ **Примітка:** Вбудовані діалогові вікна файлів та діалогові вікна файлів Windows підтримують лише розширення файлів, тоді як діалогові вікна файлів Android, Linux та macOS також підтримують типи MIME.
+\ **Note:** Embedded file dialogs and Windows file dialogs support only file extensions, while Android, Linux, and macOS file dialogs also support MIME types.
 
-\ **Примітка:** На Android та Linux параметр ``show_hidden`` ігнорується.
+\ **Note:** On Android and Linux, ``show_hidden`` is ignored.
 
-\ **Примітка:** На Android та macOS рідні діалогові вікна файлів не мають заголовка.
+\ **Note:** On Android and macOS, native file dialogs have no title.
 
-\ **Примітка:** На macOS ізольовані програми зберігатимуть закладки з областю безпеки, щоб зберегти доступ до відкритих папок протягом кількох сеансів. Використовуйте :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>`, щоб отримати список збережених закладок.
+\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions()<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
 
-\ **Примітка:** На Android цей метод використовує Android Storage Access Framework (SAF).
+\ **Note:** On Android, this method uses the Android Storage Access Framework (SAF).
 
-Вибір файлів повертає URI замість шляху файлової системи. Цей URI можна передати безпосередньо до :ref:`FileAccess<class_FileAccess>` для виконання операцій читання/запису.
+The file picker returns a URI instead of a filesystem path. This URI can be passed directly to :ref:`FileAccess<class_FileAccess>` to perform read/write operations.
 
-Під час використання :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>` повертається URI дерева, який надає повний доступ до вибраного каталогу. Операції з файлами всередині цього каталогу можна виконувати, передаючи шлях у форматі ``treeUri#relative/path/to/file`` до :ref:`FileAccess<class_FileAccess>`.
+When using :ref:`FILE_DIALOG_MODE_OPEN_DIR<class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR>`, it returns a tree URI that grants full access to the selected directory. File operations inside this directory can be performed by passing a path on the form ``treeUri#relative/path/to/file`` to :ref:`FileAccess<class_FileAccess>`.
 
-Щоб уникнути повторного відкриття засобу вибору файлів після кожного перезапуску програми, ви можете отримати дозвіл на постійний URI наступним чином:
+To avoid opening the file picker again after each app restart, you can take persistable URI permission as follows:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    val uri = "content://com.android..." # URI вибраного файлу або папки.
-    val persist = true # Встановіть значення false, щоб звільнити дозвіл на постійний URI.
+    val uri = "content://com.android..." # URI of the selected file or folder.
+    val persist = true # Set to false to release the persistable permission.
     var android_runtime = Engine.get_singleton("AndroidRuntime")
     android_runtime.updatePersistableUriPermission(uri, persist)
 
 
 
-Дозвіл на постійний URI залишається дійсним після перезапуску програми, доки каталог не буде переміщено, перейменовано або видалено.
+The persistable URI permission remains valid across app restarts as long as the directory is not moved, renamed, or deleted.
 
 .. rst-class:: classref-item-separator
 

@@ -1104,7 +1104,7 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
 
 :ref:`Array<class_Array>` **get_stack**\ (\ ) :ref:`🔗<class_@GDScript_method_get_stack>`
 
-Returns an array of dictionaries representing the current call stack.
+回傳一個陣列，內容為描述當前呼叫堆疊的字典。另請參見 :ref:`print_stack()<class_@GDScript_method_print_stack>`\ 。
 
 ::
 
@@ -1117,15 +1117,15 @@ Returns an array of dictionaries representing the current call stack.
     func bar():
         print(get_stack())
 
-Starting from ``_ready()``, ``bar()`` would print:
+從 ``_ready()`` 開始，\ ``bar()`` 會印出：
 
 .. code:: text
 
     [{function:bar, line:12, source:res://script.gd}, {function:foo, line:9, source:res://script.gd}, {function:_ready, line:6, source:res://script.gd}]
 
-See also :ref:`print_debug()<class_@GDScript_method_print_debug>`, :ref:`print_stack()<class_@GDScript_method_print_stack>`, and :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`.
+另請參見 :ref:`print_debug()<class_@GDScript_method_print_debug>`\ 、\ :ref:`print_stack()<class_@GDScript_method_print_stack>` 以及 :ref:`Engine.capture_script_backtraces()<class_Engine_method_capture_script_backtraces>`\ 。
 
-\ **Note:** By default, backtraces are only available in editor builds and debug builds. To enable them for release builds as well, you need to enable :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`.
+\ **注意：**\ 預設情況下，回溯僅於編輯器建置與除錯建構中可用。若要在發行建構（Release builds）中也啟用此功能，需要啟用 :ref:`ProjectSettings.debug/settings/gdscript/always_track_call_stacks<class_ProjectSettings_property_debug/settings/gdscript/always_track_call_stacks>`\ 。
 
 .. rst-class:: classref-item-separator
 

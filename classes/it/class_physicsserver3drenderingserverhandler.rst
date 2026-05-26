@@ -7,7 +7,7 @@ PhysicsServer3DRenderingServerHandler
 
 **Eredita:** :ref:`Object<class_Object>`
 
-Una classe utilizzata per fornire a :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server()<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` un gestore per renderizzare i corpi morbidi.
+Una classe utilizzata per fornire a :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server()<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` un gestore per renderizzare i corpi deformabile.
 
 .. rst-class:: classref-reftable-group
 

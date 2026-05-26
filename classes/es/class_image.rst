@@ -14,13 +14,13 @@ Tipo de datos de imagen.
 Descripción
 ----------------------
 
-Native image datatype. Contains image data which can be converted to an :ref:`ImageTexture<class_ImageTexture>` and provides commonly used *image processing* methods. The maximum width and height for an **Image** are :ref:`MAX_WIDTH<class_Image_constant_MAX_WIDTH>` and :ref:`MAX_HEIGHT<class_Image_constant_MAX_HEIGHT>`.
+Tipo de dato de imagen nativo. Contiene datos de imagen que se pueden convertir en un :ref:`ImageTexture<class_ImageTexture>` y proporciona métodos de *procesamiento de imágenes* de uso común. El ancho y alto máximos para una **Image** son :ref:`MAX_WIDTH<class_Image_constant_MAX_WIDTH>` y :ref:`MAX_HEIGHT<class_Image_constant_MAX_HEIGHT>`.
 
-An **Image** cannot be assigned to a texture property of an object directly (such as :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`), and has to be converted manually to an :ref:`ImageTexture<class_ImageTexture>` first.
+Una **Image** no se puede asignar directamente a una propiedad de textura de un objeto (como :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`), y primero debe convertirse manualmente a un :ref:`ImageTexture<class_ImageTexture>`.
 
-\ **Note:** Methods that modify the image data cannot be used on VRAM-compressed images. Use :ref:`decompress()<class_Image_method_decompress>` to convert the image to an uncompressed format first.
+\ **Nota:** Los métodos que modifican los datos de la imagen no se pueden usar en imágenes comprimidas en VRAM. Usa :ref:`decompress()<class_Image_method_decompress>` para convertir la imagen a un formato sin comprimir primero.
 
-\ **Note:** The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images may fail to import.
+\ **Nota:** El tamaño máximo de imagen es de 16384×16384 píxeles debido a las limitaciones del hardware de gráficos. Las imágenes más grandes pueden no importarse.
 
 .. rst-class:: classref-introduction-group
 
@@ -258,9 +258,9 @@ Formato de textura OpenGL ``RG`` con dos componentes y una profundidad de bits d
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGB8** = ``4``
 
-OpenGL texture format ``RGB`` with three components, each with a bitdepth of 8.
+Formato de textura OpenGL ``RGB`` con tres componentes, cada uno con una profundidad de 8 bits.
 
-\ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
+\ **Nota:** Al crear una :ref:`ImageTexture<class_ImageTexture>`, se realiza una conversión del espacio de color sRGB a lineal.
 
 .. _class_Image_constant_FORMAT_RGBA8:
 
@@ -268,9 +268,9 @@ OpenGL texture format ``RGB`` with three components, each with a bitdepth of 8.
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBA8** = ``5``
 
-OpenGL texture format ``RGBA`` with four components, each with a bitdepth of 8.
+Formato de textura OpenGL ``RGBA`` con cuatro componentes, cada uno con una profundidad de 8 bits.
 
-\ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
+\ **Nota:** Al crear una :ref:`ImageTexture<class_ImageTexture>`, se realiza una conversión del espacio de color sRGB a lineal.
 
 .. _class_Image_constant_FORMAT_RGBA4444:
 
@@ -366,9 +366,9 @@ Un formato especial de textura OpenGL donde los tres componentes de color tienen
 
 :ref:`Format<enum_Image_Format>` **FORMAT_DXT1** = ``17``
 
-The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture format that uses Block Compression 1, and is the smallest variation of S3TC, only providing 1 bit of alpha and color data being premultiplied with alpha.
+El formato de textura `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ que utiliza la Compresión de Bloque 1, y es la variación más pequeña de S3TC, solo proporciona 1 bit de alfa y datos de color premultiplicados con alfa.
 
-\ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
+\ **Nota:** Al crear una :ref:`ImageTexture<class_ImageTexture>`, se realiza una conversión de codificación sRGB no lineal a lineal.
 
 .. _class_Image_constant_FORMAT_DXT3:
 
@@ -376,9 +376,9 @@ The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture form
 
 :ref:`Format<enum_Image_Format>` **FORMAT_DXT3** = ``18``
 
-The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture format that uses Block Compression 2, and color data is interpreted as not having been premultiplied by alpha. Well suited for images with sharp alpha transitions between translucent and opaque areas.
+El formato de textura `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ que utiliza la Compresión de Bloque 2, y los datos de color se interpretan como no premultiplicados por el alfa. Bien adaptado para imágenes con transiciones alfa nítidas entre áreas translúcidas y opacas.
 
-\ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
+\ **Nota:** Al crear una :ref:`ImageTexture<class_ImageTexture>`, se realiza una conversión de codificación sRGB no lineal a lineal.
 
 .. _class_Image_constant_FORMAT_DXT5:
 
@@ -386,9 +386,9 @@ The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture form
 
 :ref:`Format<enum_Image_Format>` **FORMAT_DXT5** = ``19``
 
-The `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ texture format also known as Block Compression 3 or BC3 that contains 64 bits of alpha channel data followed by 64 bits of DXT1-encoded color data. Color data is not premultiplied by alpha, same as DXT3. DXT5 generally produces superior results for transparent gradients compared to DXT3.
+El formato de textura `S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ también conocido como Compresión de Bloque 3 o BC3 que contiene 64 bits de datos de canal alfa seguidos de 64 bits de datos de color codificados en DXT1. Los datos de color no están premultiplicados por el alfa, igual que DXT3. DXT5 generalmente produce resultados superiores para gradientes transparentes en comparación con DXT3.
 
-\ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
+\ **Nota:** Al crear una :ref:`ImageTexture<class_ImageTexture>`, se realiza una conversión de codificación sRGB no lineal a lineal.
 
 .. _class_Image_constant_FORMAT_RGTC_R:
 
@@ -412,9 +412,9 @@ Formato de textura que utiliza `Compresión de textura rojo-verde <https://www.k
 
 :ref:`Format<enum_Image_Format>` **FORMAT_BPTC_RGBA** = ``22``
 
-Texture format that uses `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression>`__ compression with unsigned normalized RGBA components.
+Formato de textura que utiliza la compresión `BPTC <https://www.khronos.org/opengl/wiki/BPTC_Texture_Compression>`__ con componentes RGBA normalizados sin signo.
 
-\ **Note:** When creating an :ref:`ImageTexture<class_ImageTexture>`, a nonlinear sRGB to linear encoding conversion is performed.
+\ **Nota:** Al crear una :ref:`ImageTexture<class_ImageTexture>`, se realiza una conversión del espacio de color sRGB a lineal.
 
 .. _class_Image_constant_FORMAT_BPTC_RGBF:
 
@@ -556,9 +556,9 @@ Mismo formato que :ref:`FORMAT_ASTC_8x8<class_Image_constant_FORMAT_ASTC_8x8>`, 
 
 :ref:`Format<enum_Image_Format>` **FORMAT_R16** = ``39``
 
-OpenGL texture format ``GL_R16`` where there's one component, a 16-bit unsigned normalized integer value. Since the value is normalized, each component is clamped between ``0.0`` and ``1.0`` (inclusive).
+Formato de textura OpenGL ``GL_R16`` donde hay un componente, un valor entero normalizado sin signo de 16 bits. Dado que el valor está normalizado, cada componente se limita entre ``0.0`` y ``1.0`` (inclusivo).
 
-\ **Note:** Due to limited hardware support, it is mainly recommended to be used on desktop or console devices. It may be unsupported on mobile or web, and will consequently be converted to :ref:`FORMAT_RF<class_Image_constant_FORMAT_RF>`.
+\ **Nota:** Debido al soporte limitado de hardware, se recomienda principalmente su uso en dispositivos de escritorio o consola. Puede que no sea compatible en dispositivos móviles o web, y en consecuencia se convertirá a :ref:`FORMAT_RF<class_Image_constant_FORMAT_RF>`.
 
 .. _class_Image_constant_FORMAT_RG16:
 
@@ -566,9 +566,9 @@ OpenGL texture format ``GL_R16`` where there's one component, a 16-bit unsigned 
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RG16** = ``40``
 
-OpenGL texture format ``GL_RG16`` where there are two components, each a 16-bit unsigned normalized integer value. Since the value is normalized, each component is clamped between ``0.0`` and ``1.0`` (inclusive).
+Formato de textura OpenGL ``GL_RG16`` donde hay dos componentes, cada uno un valor entero normalizado sin signo de 16 bits. Dado que el valor está normalizado, cada componente se limita entre ``0.0`` y ``1.0`` (inclusivo).
 
-\ **Note:** Due to limited hardware support, it is mainly recommended to be used on desktop or console devices. It may be unsupported on mobile or web, and will consequently be converted to :ref:`FORMAT_RGF<class_Image_constant_FORMAT_RGF>`.
+\ **Nota:** Debido al soporte limitado de hardware, se recomienda principalmente su uso en dispositivos de escritorio o consola. Puede que no sea compatible en dispositivos móviles o web, y en consecuencia se convertirá a :ref:`FORMAT_RGF<class_Image_constant_FORMAT_RGF>`.
 
 .. _class_Image_constant_FORMAT_RGB16:
 
@@ -576,9 +576,9 @@ OpenGL texture format ``GL_RG16`` where there are two components, each a 16-bit 
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGB16** = ``41``
 
-OpenGL texture format ``GL_RGB16`` where there are three components, each a 16-bit unsigned normalized integer value. Since the value is normalized, each component is clamped between ``0.0`` and ``1.0`` (inclusive).
+Formato de textura OpenGL ``GL_RGB16`` donde hay tres componentes, cada uno un valor entero normalizado sin signo de 16 bits. Dado que el valor está normalizado, cada componente se limita entre ``0.0`` y ``1.0`` (inclusivo).
 
-\ **Note:** Due to limited hardware support, it is mainly recommended to be used on desktop or console devices. It may be unsupported on mobile or web, and will consequently be converted to :ref:`FORMAT_RGBF<class_Image_constant_FORMAT_RGBF>`.
+\ **Nota:** Debido al soporte limitado de hardware, se recomienda principalmente su uso en dispositivos de escritorio o consola. Puede que no sea compatible en dispositivos móviles o web, y en consecuencia se convertirá a :ref:`FORMAT_RGBF<class_Image_constant_FORMAT_RGBF>`.
 
 .. _class_Image_constant_FORMAT_RGBA16:
 
@@ -586,9 +586,9 @@ OpenGL texture format ``GL_RGB16`` where there are three components, each a 16-b
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBA16** = ``42``
 
-OpenGL texture format ``GL_RGBA16`` where there are four components, each a 16-bit unsigned normalized integer value. Since the value is normalized, each component is clamped between ``0.0`` and ``1.0`` (inclusive).
+Formato de textura OpenGL ``GL_RGBA16`` donde hay cuatro componentes, cada uno un valor entero normalizado sin signo de 16 bits. Dado que el valor está normalizado, cada componente se limita entre ``0.0`` y ``1.0`` (inclusivo).
 
-\ **Note:** Due to limited hardware support, it is mainly recommended to be used on desktop or console devices. It may be unsupported on mobile or web, and will consequently be converted to :ref:`FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>`.
+\ **Nota:** Debido al soporte de hardware limitado, se recomienda principalmente su uso en dispositivos de escritorio o consola. Puede no ser compatible en dispositivos móviles o web, y consecuentemente se convertirá a :ref:`FORMAT_RGBAF<class_Image_constant_FORMAT_RGBAF>`.
 
 .. _class_Image_constant_FORMAT_R16I:
 
@@ -596,11 +596,11 @@ OpenGL texture format ``GL_RGBA16`` where there are four components, each a 16-b
 
 :ref:`Format<enum_Image_Format>` **FORMAT_R16I** = ``43``
 
-OpenGL texture format ``GL_R16UI`` where there's one component, a 16-bit unsigned integer value. Each component is clamped between ``0`` and ``65535`` (inclusive).
+Formato de textura OpenGL ``GL_R16UI`` donde hay un componente, un valor entero sin signo de 16 bits. Cada componente se limita entre ``0`` y ``65535`` (inclusivo).
 
-\ **Note:** When used in a shader, the texture requires usage of ``usampler`` samplers. Additionally, it only supports nearest-neighbor filtering under the Compatibility renderer.
+\ **Nota:** Cuando se usa en un shader, la textura requiere el uso de samplers ``usampler``. Además, solo soporta filtrado por vecino más cercano bajo el renderizador Compatibility.
 
-\ **Note:** When sampling using :ref:`get_pixel()<class_Image_method_get_pixel>`, returned :ref:`Color<class_Color>`\ s have to be divided by ``65535`` to get the correct color value.
+\ **Nota:** Al muestrear usando :ref:`get_pixel()<class_Image_method_get_pixel>`, los :ref:`Color<class_Color>`\ s devueltos deben dividirse por ``65535`` para obtener el valor de color correcto.
 
 .. _class_Image_constant_FORMAT_RG16I:
 
@@ -608,11 +608,11 @@ OpenGL texture format ``GL_R16UI`` where there's one component, a 16-bit unsigne
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RG16I** = ``44``
 
-OpenGL texture format ``GL_RG16UI`` where there are two components, each a 16-bit unsigned integer value. Each component is clamped between ``0`` and ``65535`` (inclusive).
+Formato de textura OpenGL ``GL_RG16UI`` donde hay dos componentes, cada uno un valor entero sin signo de 16 bits. Cada componente se limita entre ``0`` y ``65535`` (inclusivo).
 
-\ **Note:** When used in a shader, the texture requires usage of ``usampler`` samplers. Additionally, it only supports nearest-neighbor filtering under the Compatibility renderer.
+\ **Nota:** Cuando se usa en un shader, la textura requiere el uso de samplers ``usampler``. Además, solo soporta filtrado por vecino más cercano bajo el renderizador Compatibility.
 
-\ **Note:** When sampling using :ref:`get_pixel()<class_Image_method_get_pixel>`, returned :ref:`Color<class_Color>`\ s have to be divided by ``65535`` to get the correct color value.
+\ **Nota:** Al muestrear usando :ref:`get_pixel()<class_Image_method_get_pixel>`, los :ref:`Color<class_Color>`\ s devueltos deben dividirse por ``65535`` para obtener el valor de color correcto.
 
 .. _class_Image_constant_FORMAT_RGB16I:
 
@@ -620,11 +620,11 @@ OpenGL texture format ``GL_RG16UI`` where there are two components, each a 16-bi
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGB16I** = ``45``
 
-OpenGL texture format ``GL_RGB16UI`` where there are three components, each a 16-bit unsigned integer value. Each component is clamped between ``0`` and ``65535`` (inclusive).
+Formato de textura OpenGL ``GL_RGB16UI`` donde hay tres componentes, cada uno un valor entero sin signo de 16 bits. Cada componente está limitado entre ``0`` y ``65535`` (inclusivo).
 
-\ **Note:** When used in a shader, the texture requires usage of ``usampler`` samplers. Additionally, it only supports nearest-neighbor filtering under the Compatibility renderer.
+\ **Nota:** Cuando se usa en un shader, la textura requiere el uso de samplers ``usampler``. Además, solo soporta filtrado de vecino más cercano bajo el renderizador Compatibility.
 
-\ **Note:** When sampling using :ref:`get_pixel()<class_Image_method_get_pixel>`, returned :ref:`Color<class_Color>`\ s have to be divided by ``65535`` to get the correct color value.
+\ **Nota:** Al muestrear usando :ref:`get_pixel()<class_Image_method_get_pixel>`, los :ref:`Color<class_Color>`\ s devueltos deben ser divididos por ``65535`` para obtener el valor de color correcto.
 
 .. _class_Image_constant_FORMAT_RGBA16I:
 
@@ -632,11 +632,11 @@ OpenGL texture format ``GL_RGB16UI`` where there are three components, each a 16
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBA16I** = ``46``
 
-OpenGL texture format ``GL_RGBA16UI`` where there are four components, each a 16-bit unsigned integer value. Each component is clamped between ``0`` and ``65535`` (inclusive).
+Formato de textura OpenGL ``GL_RGBA16UI`` donde hay cuatro componentes, cada uno un valor entero sin signo de 16 bits. Cada componente está limitado entre ``0`` y ``65535`` (inclusivo).
 
-\ **Note:** When used in a shader, the texture requires usage of ``usampler`` samplers. Additionally, it only supports nearest-neighbor filtering under the Compatibility renderer.
+\ **Nota:** Cuando se usa en un shader, la textura requiere el uso de samplers ``usampler``. Además, solo soporta filtrado de vecino más cercano bajo el renderizador Compatibility.
 
-\ **Note:** When sampling using :ref:`get_pixel()<class_Image_method_get_pixel>`, returned :ref:`Color<class_Color>`\ s have to be divided by ``65535`` to get the correct color value.
+\ **Nota:** Al muestrear usando :ref:`get_pixel()<class_Image_method_get_pixel>`, los :ref:`Color<class_Color>`\ s devueltos deben ser divididos por ``65535`` para obtener el valor de color correcto.
 
 .. _class_Image_constant_FORMAT_MAX:
 
@@ -702,7 +702,7 @@ On the other hand, if the image already has mipmaps, they will be used, and a ne
 
 :ref:`Interpolation<enum_Image_Interpolation>` **INTERPOLATE_LANCZOS** = ``4``
 
-Performs Lanczos interpolation. This is the slowest image resizing mode, but it typically gives the best results, especially when downscaling images.
+Realiza la interpolación de Lanczos. Es el modo de redimensionamiento de imágenes más lento, pero suele dar los mejores resultados, especialmente cuando se reducen las imágenes.
 
 .. rst-class:: classref-item-separator
 
@@ -720,7 +720,7 @@ enum **AlphaMode**: :ref:`🔗<enum_Image_AlphaMode>`
 
 :ref:`AlphaMode<enum_Image_AlphaMode>` **ALPHA_NONE** = ``0``
 
-Image is fully opaque. It does not store alpha data.
+La imagen es completamente opaca. No almacena datos alfa.
 
 .. _class_Image_constant_ALPHA_BIT:
 
@@ -728,7 +728,7 @@ Image is fully opaque. It does not store alpha data.
 
 :ref:`AlphaMode<enum_Image_AlphaMode>` **ALPHA_BIT** = ``1``
 
-Image stores either fully opaque or fully transparent pixels. Also known as punchthrough alpha.
+La imagen almacena píxeles completamente opacos o completamente transparentes. También conocido como alfa de perforación.
 
 .. _class_Image_constant_ALPHA_BLEND:
 
@@ -736,7 +736,7 @@ Image stores either fully opaque or fully transparent pixels. Also known as punc
 
 :ref:`AlphaMode<enum_Image_AlphaMode>` **ALPHA_BLEND** = ``2``
 
-Image stores alpha data with values varying between ``0.0`` and ``1.0``.
+La imagen almacena datos alfa con valores que varían entre ``0.0`` y ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -878,7 +878,7 @@ La textura de la fuente (antes de la compresión) es una textura regular. Por de
 
 :ref:`CompressSource<enum_Image_CompressSource>` **COMPRESS_SOURCE_SRGB** = ``1``
 
-Source texture (before compression) uses nonlinear sRGB encoding.
+La textura de origen (antes de la compresión) utiliza codificación sRGB no lineal.
 
 .. _class_Image_constant_COMPRESS_SOURCE_NORMAL:
 
@@ -995,7 +995,7 @@ Mezcla el alfa ``src_rect`` de la imagen ``src`` a esta imagen en las coordenada
 
 |void| **blend_rect_mask**\ (\ src\: :ref:`Image<class_Image>`, mask\: :ref:`Image<class_Image>`, src_rect\: :ref:`Rect2i<class_Rect2i>`, dst\: :ref:`Vector2i<class_Vector2i>`\ ) :ref:`🔗<class_Image_method_blend_rect_mask>`
 
-Alpha-blends ``src_rect`` from ``src`` image to this image using ``mask`` image at coordinates ``dst``, clipped accordingly to both image bounds. Alpha channels are required for both ``src`` and ``mask``. ``dst`` pixels and ``src`` pixels will blend if the corresponding mask pixel's alpha value is not 0. This image and ``src`` image **must** have the same format. ``src`` image and ``mask`` image **must** have the same size (width and height) but they can have different formats. ``src_rect`` with non-positive size is treated as empty.
+Mezcla alfa ``src_rect`` de la imagen ``src`` a esta imagen usando la imagen ``mask`` en las coordenadas ``dst``, recortada de acuerdo con los límites de ambas imágenes. Se requieren canales alfa tanto para ``src`` como para ``mask``. Los píxeles de ``dst`` y los píxeles de ``src`` se mezclarán si el valor alfa del píxel de la máscara correspondiente no es 0. Esta imagen y la imagen ``src`` **deben** tener el mismo formato. La imagen ``src`` y la imagen ``mask`` **deben** tener el mismo tamaño (ancho y alto), pero pueden tener formatos diferentes. ``src_rect`` con tamaño no positivo se trata como vacío.
 
 .. rst-class:: classref-item-separator
 
@@ -1093,9 +1093,9 @@ The ``astc_format`` parameter is only taken into account when using ASTC compres
 
 :ref:`Dictionary<class_Dictionary>` **compute_image_metrics**\ (\ compared_image\: :ref:`Image<class_Image>`, use_luma\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Image_method_compute_image_metrics>`
 
-Compute image metrics on the current image and the compared image. This can be used to calculate the similarity between two images.
+Calcula las métricas de la imagen actual y la imagen comparada. Esto se puede usar para calcular la similitud entre dos imágenes.
 
-The dictionary contains ``max``, ``mean``, ``mean_squared``, ``root_mean_squared`` and ``peak_snr``.
+El diccionario contiene ``max``, ``mean``, ``mean_squared``, ``root_mean_squared`` y ``peak_snr``.
 
 .. rst-class:: classref-item-separator
 
@@ -1133,7 +1133,7 @@ Copia la imagen ``src`` a esta imagen.
 
 **Obsoleto:** Use :ref:`create_empty()<class_Image_method_create_empty>`.
 
-Creates an empty image of the given size and format. If ``use_mipmaps`` is ``true``, generates mipmaps for this image (see :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`).
+Crea una imagen vacía con el tamaño y formato dados. Si ``use_mipmaps`` es ``true``, genera mipmaps para esta imagen. Véase :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1145,7 +1145,7 @@ Creates an empty image of the given size and format. If ``use_mipmaps`` is ``tru
 
 :ref:`Image<class_Image>` **create_empty**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, use_mipmaps\: :ref:`bool<class_bool>`, format\: :ref:`Format<enum_Image_Format>`\ ) |static| :ref:`🔗<class_Image_method_create_empty>`
 
-Creates an empty image of the given size and format. If ``use_mipmaps`` is ``true``, generates mipmaps for this image (see :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`).
+Crea una imagen vacía con el tamaño y formato dados. Si ``use_mipmaps`` es ``true``, genera mipmaps para esta imagen. Véase :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1157,7 +1157,7 @@ Creates an empty image of the given size and format. If ``use_mipmaps`` is ``tru
 
 :ref:`Image<class_Image>` **create_from_data**\ (\ width\: :ref:`int<class_int>`, height\: :ref:`int<class_int>`, use_mipmaps\: :ref:`bool<class_bool>`, format\: :ref:`Format<enum_Image_Format>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_Image_method_create_from_data>`
 
-Creates a new image of the given size and format. Fills the image with the given raw data. If ``use_mipmaps`` is ``true``, loads the mipmaps for this image from ``data``. See :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`.
+Crea una nueva imagen con el tamaño y formato dados. Llena la imagen con los datos en bruto dados. Si ``use_mipmaps`` es ``true``, carga los mipmaps de esta imagen desde ``data``. Véase :ref:`generate_mipmaps()<class_Image_method_generate_mipmaps>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1181,7 +1181,7 @@ Recorta la imagen al ``width`` y ``height`` dados. Si el tamaño especificado es
 
 :ref:`Error<enum_@GlobalScope_Error>` **decompress**\ (\ ) :ref:`🔗<class_Image_method_decompress>`
 
-Decompresses the image if it is VRAM-compressed in a supported format. This increases memory utilization, but allows modifying the image. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the format is supported, otherwise :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`. All VRAM-compressed formats supported by Godot can be decompressed with this method, except :ref:`FORMAT_ETC2_R11S<class_Image_constant_FORMAT_ETC2_R11S>`, :ref:`FORMAT_ETC2_RG11S<class_Image_constant_FORMAT_ETC2_RG11S>`, and :ref:`FORMAT_ETC2_RGB8A1<class_Image_constant_FORMAT_ETC2_RGB8A1>`.
+Descomprime la imagen si está comprimida en VRAM en un formato compatible. Esto aumenta la utilización de memoria, pero permite modificar la imagen. Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si el formato es compatible, de lo contrario :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>`. Todos los formatos comprimidos en VRAM compatibles con Godot se pueden descomprimir con este método, excepto :ref:`FORMAT_ETC2_R11S<class_Image_constant_FORMAT_ETC2_R11S>`, :ref:`FORMAT_ETC2_RG11S<class_Image_constant_FORMAT_ETC2_RG11S>` y :ref:`FORMAT_ETC2_RGB8A1<class_Image_constant_FORMAT_ETC2_RGB8A1>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1205,7 +1205,7 @@ Devuelve :ref:`ALPHA_BLEND<class_Image_constant_ALPHA_BLEND>` si la imagen tiene
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **detect_used_channels**\ (\ source\: :ref:`CompressSource<enum_Image_CompressSource>` = 0\ ) |const| :ref:`🔗<class_Image_method_detect_used_channels>`
 
-Returns the color channels used by this image. If the image is compressed, the original ``source`` must be specified.
+Devuelve los canales de color utilizados por esta imagen. Si la imagen está comprimida, se debe especificar el ``source`` original.
 
 .. rst-class:: classref-item-separator
 
@@ -1487,7 +1487,7 @@ Devuelve ``true`` si todos los píxeles de la imagen tienen un valor alfa de 0. 
 
 |void| **linear_to_srgb**\ (\ ) :ref:`🔗<class_Image_method_linear_to_srgb>`
 
-Converts the entire image from linear encoding to nonlinear sRGB encoding by using a lookup table. Only works on images with :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` or :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` formats.
+Convierte toda la imagen de codificación lineal a codificación sRGB no lineal utilizando una tabla de búsqueda. Solo funciona en imágenes con formatos :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` o :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1499,11 +1499,11 @@ Converts the entire image from linear encoding to nonlinear sRGB encoding by usi
 
 :ref:`Error<enum_@GlobalScope_Error>` **load**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Image_method_load>`
 
-Loads an image from file ``path``. See `Supported image formats <../tutorials/assets_pipeline/importing_images.html#supported-image-formats>`__ for a list of supported image formats and limitations.
+Carga una imagen del archivo ``path``. Véase `Formatos de imagen soportados <../tutorials/assets_pipeline/importing_images.html#supported-image-formats>`__ para una lista de formatos de imagen soportados y sus limitaciones.
 
-\ **Warning:** This method should only be used in the editor or in cases when you need to load external images at run-time, such as images located at the ``user://`` directory, and may not work in exported projects.
+\ **Advertencia:** Este método solo debe utilizarse en el editor o en casos en los que necesites cargar imágenes externas en tiempo de ejecución, como imágenes ubicadas en el directorio ``user://``, y puede que no funcione en proyectos exportados.
 
-See also :ref:`ImageTexture<class_ImageTexture>` description for usage examples.
+Véase también la descripción de :ref:`ImageTexture<class_ImageTexture>` para ejemplos de uso.
 
 .. rst-class:: classref-item-separator
 
@@ -1515,11 +1515,11 @@ See also :ref:`ImageTexture<class_ImageTexture>` description for usage examples.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_bmp_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_load_bmp_from_buffer>`
 
-Loads an image from the binary contents of a BMP file.
+Carga una imagen a partir del contenido binario de un archivo BMP.
 
-\ **Note:** Godot's BMP module doesn't support 16-bit per pixel images. Only 1-bit, 4-bit, 8-bit, 24-bit, and 32-bit per pixel images are supported.
+\ **Nota:** El módulo BMP de Godot no soporta imágenes de 16 bits por píxel. Solo se soportan imágenes de 1, 4, 8, 24 y 32 bits por píxel.
 
-\ **Note:** This method is only available in engine builds with the BMP module enabled. By default, the BMP module is enabled, but it can be disabled at build-time using the ``module_bmp_enabled=no`` SCons option.
+\ **Nota:** Este método solo está disponible en compilaciones del motor con el módulo BMP activado. Por defecto, el módulo BMP está activado, pero se puede desactivar en tiempo de compilación utilizando la opción SCons ``module_bmp_enabled=no``.
 
 .. rst-class:: classref-item-separator
 
@@ -1545,7 +1545,7 @@ Carga una imagen desde el contenido binario de un archivo DDS.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_exr_from_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_Image_method_load_exr_from_buffer>`
 
-Loads an image from the binary contents of an OpenEXR file.
+Carga una imagen a partir del contenido binario de un archivo OpenEXR.
 
 .. rst-class:: classref-item-separator
 
@@ -1557,7 +1557,7 @@ Loads an image from the binary contents of an OpenEXR file.
 
 :ref:`Image<class_Image>` **load_from_file**\ (\ path\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_Image_method_load_from_file>`
 
-Creates a new **Image** and loads data from the specified file.
+Crea una nueva **Image** y carga datos del archivo especificado.
 
 .. rst-class:: classref-item-separator
 
@@ -1713,7 +1713,7 @@ Redimensiona la imagen a la potencia de 2 más cercana para el ancho y la altura
 
 :ref:`Image<class_Image>` **rgbe_to_srgb**\ (\ ) :ref:`🔗<class_Image_method_rgbe_to_srgb>`
 
-Converts a standard linear RGBE (Red Green Blue Exponent) image to an image that uses nonlinear sRGB encoding.
+Convierte una imagen RGBE (Red Green Blue Exponent) lineal estándar en una imagen que utiliza codificación sRGB no lineal.
 
 .. rst-class:: classref-item-separator
 
@@ -1777,7 +1777,7 @@ Guarda la imagen como un archivo DDS (DirectDraw Surface) en un array de bytes. 
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_exr**\ (\ path\: :ref:`String<class_String>`, grayscale\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Image_method_save_exr>`
 
-Saves the image as an EXR file to ``path``. If ``grayscale`` is ``true`` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` if Godot was compiled without the TinyEXR module.
+Guarda la imagen como un archivo EXR en ``path``. Si ``grayscale`` es ``true`` y la imagen tiene solo un canal, se guardará explícitamente como monocromo en lugar de como un canal rojo. Esta función devolverá :ref:`@GlobalScope.ERR_UNAVAILABLE<class_@GlobalScope_constant_ERR_UNAVAILABLE>` si Godot se compiló sin el módulo TinyEXR.
 
 .. rst-class:: classref-item-separator
 
@@ -1789,7 +1789,7 @@ Saves the image as an EXR file to ``path``. If ``grayscale`` is ``true`` and the
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_exr_to_buffer**\ (\ grayscale\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Image_method_save_exr_to_buffer>`
 
-Saves the image as an EXR file to a byte array. If ``grayscale`` is ``true`` and the image has only one channel, it will be saved explicitly as monochrome rather than one red channel. This function will return an empty byte array if Godot was compiled without the TinyEXR module.
+Guarda la imagen como un archivo EXR en un array de bytes. Si ``grayscale`` es ``true`` y la imagen tiene solo un canal, se guardará explícitamente como monocromo en lugar de como un canal rojo. Esta función devolverá un array de bytes vacío si Godot se compiló sin el módulo TinyEXR.
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Sobrescribe los datos de una **Image** existente. Equivalente no estático de :r
 
 |void| **set_pixel**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Image_method_set_pixel>`
 
-Sets the :ref:`Color<class_Color>` of the pixel at ``(x, y)`` to ``color``.
+Establece el :ref:`Color<class_Color>` del píxel en ``(x, y)`` a ``color``.
 
 
 .. tabs::
@@ -1904,7 +1904,7 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``(x, y)`` to ``color``.
     var img_height = 5
     var img = Image.create(img_width, img_height, false, Image.FORMAT_RGBA8)
 
-    img.set_pixel(1, 2, Color.RED) # Sets the color at (1, 2) to red.
+    img.set_pixel(1, 2, Color.RED) # Establece el color en (1, 2) a rojo.
 
  .. code-tab:: csharp
 
@@ -1912,15 +1912,15 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``(x, y)`` to ``color``.
     int imgHeight = 5;
     var img = Image.Create(imgWidth, imgHeight, false, Image.Format.Rgba8);
 
-    img.SetPixel(1, 2, Colors.Red); // Sets the color at (1, 2) to red.
+    img.SetPixel(1, 2, Colors.Red); // Establece el color en (1, 2) a rojo.
 
 
 
-This is the same as :ref:`set_pixelv()<class_Image_method_set_pixelv>`, but with a two integer arguments instead of a :ref:`Vector2i<class_Vector2i>` argument.
+Esto es lo mismo que :ref:`set_pixelv()<class_Image_method_set_pixelv>`, pero con dos argumentos enteros en lugar de un argumento :ref:`Vector2i<class_Vector2i>`.
 
-\ **Note:** Depending on the image's format, the color set here may be clamped or lose precision. Do not assume the color returned by :ref:`get_pixel()<class_Image_method_get_pixel>` to be identical to the one set here; any comparisons will likely need to use an approximation like :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
+\ **Nota:** Dependiendo del formato de la imagen, el color establecido aquí puede ser limitado o perder precisión. No asumas que el color devuelto por :ref:`get_pixel()<class_Image_method_get_pixel>` sea idéntico al establecido aquí; cualquier comparación probablemente necesitará usar una aproximación como :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
 
-\ **Note:** On grayscale image formats, only the red channel of ``color`` is used (and alpha if relevant). The green and blue channels are ignored.
+\ **Nota:** En formatos de imagen en escala de grises, solo se utiliza el canal rojo de ``color`` (y el alfa si es relevante). Los canales verde y azul son ignorados.
 
 .. rst-class:: classref-item-separator
 
@@ -1932,7 +1932,7 @@ This is the same as :ref:`set_pixelv()<class_Image_method_set_pixelv>`, but with
 
 |void| **set_pixelv**\ (\ point\: :ref:`Vector2i<class_Vector2i>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Image_method_set_pixelv>`
 
-Sets the :ref:`Color<class_Color>` of the pixel at ``point`` to ``color``.
+Establece el :ref:`Color<class_Color>` del píxel en ``point`` a ``color``.
 
 
 .. tabs::
@@ -1943,7 +1943,7 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``point`` to ``color``.
     var img_height = 5
     var img = Image.create(img_width, img_height, false, Image.FORMAT_RGBA8)
 
-    img.set_pixelv(Vector2i(1, 2), Color.RED) # Sets the color at (1, 2) to red.
+    img.set_pixelv(Vector2i(1, 2), Color.RED) # Establece el color en (1, 2) a rojo.
 
  .. code-tab:: csharp
 
@@ -1951,15 +1951,15 @@ Sets the :ref:`Color<class_Color>` of the pixel at ``point`` to ``color``.
     int imgHeight = 5;
     var img = Image.Create(imgWidth, imgHeight, false, Image.Format.Rgba8);
 
-    img.SetPixelv(new Vector2I(1, 2), Colors.Red); // Sets the color at (1, 2) to red.
+    img.SetPixelv(new Vector2I(1, 2), Colors.Red); // Establece el color en (1, 2) a rojo.
 
 
 
-This is the same as :ref:`set_pixel()<class_Image_method_set_pixel>`, but with a :ref:`Vector2i<class_Vector2i>` argument instead of two integer arguments.
+Esto es lo mismo que :ref:`set_pixel()<class_Image_method_set_pixel>`, pero con un argumento :ref:`Vector2i<class_Vector2i>` en lugar de dos argumentos enteros.
 
-\ **Note:** Depending on the image's format, the color set here may be clamped or lose precision. Do not assume the color returned by :ref:`get_pixelv()<class_Image_method_get_pixelv>` to be identical to the one set here; any comparisons will likely need to use an approximation like :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
+\ **Nota:** Dependiendo del formato de la imagen, el color establecido aquí puede ser limitado o perder precisión. No asumas que el color devuelto por :ref:`get_pixelv()<class_Image_method_get_pixelv>` sea idéntico al establecido aquí; cualquier comparación probablemente necesitará usar una aproximación como :ref:`Color.is_equal_approx()<class_Color_method_is_equal_approx>`.
 
-\ **Note:** On grayscale image formats, only the red channel of ``color`` is used (and alpha if relevant). The green and blue channels are ignored.
+\ **Nota:** En formatos de imagen en escala de grises, solo se utiliza el canal rojo de ``color`` (y el alfa si es relevante). Los canales verde y azul son ignorados.
 
 .. rst-class:: classref-item-separator
 
@@ -1983,9 +1983,9 @@ Reduce la imagen por un factor de 2 en cada eje (esto divide el número de píxe
 
 |void| **srgb_to_linear**\ (\ ) :ref:`🔗<class_Image_method_srgb_to_linear>`
 
-Converts the raw data from nonlinear sRGB encoding to linear encoding using a lookup table. Only works on images with :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` or :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>` formats.
+Convierte los datos sin procesar de la codificación sRGB no lineal a la codificación lineal usando una tabla de búsqueda. Solo funciona en imágenes con formatos :ref:`FORMAT_RGB8<class_Image_constant_FORMAT_RGB8>` o :ref:`FORMAT_RGBA8<class_Image_constant_FORMAT_RGBA8>`.
 
-\ **Note:** The 8-bit formats required by this method are not suitable for storing linearly encoded values; a significant amount of color information will be lost in darker values. To maintain image quality, this method should not be used.
+\ **Nota:** Los formatos de 8 bits requeridos por este método no son adecuados para almacenar valores codificados linealmente; se perderá una cantidad significativa de información de color en los valores más oscuros. Para mantener la calidad de la imagen, este método no debe usarse.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

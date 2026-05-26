@@ -14,11 +14,11 @@ Efecto de audio que puede usarse para visualizaciones de audio en tiempo real.
 Descripción
 ----------------------
 
-This audio effect does not affect sound output, but can be used for real-time audio visualizations.
+Este efecto de audio no afecta la salida de sonido, pero puede utilizarse para visualizaciones de audio en tiempo real.
 
-This resource configures an :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, which performs the actual analysis at runtime. An instance can be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
+Este recurso configura una instancia de :ref:`AudioEffectSpectrumAnalyzerInstance<class_AudioEffectSpectrumAnalyzerInstance>`, que realiza el análisis propiamente dicho en tiempo de ejecución. Se puede obtener una instancia mediante :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
 
-See also :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` for procedurally generating sounds.
+Véase también :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` para generar sonidos de forma procedural.
 
 .. rst-class:: classref-introduction-group
 

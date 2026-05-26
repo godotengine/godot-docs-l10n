@@ -253,9 +253,9 @@ Script
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **get_script_signal_list**\ (\ ) :ref:`🔗<class_Script_method_get_script_signal_list>`
 
-Returns the list of signals defined in this **Script**.
+返回该 **Script** 中定义的信号列表。
 
-\ **Note:** The dictionaries returned by this method are formatted identically to those returned by :ref:`Object.get_signal_list()<class_Object_method_get_signal_list>`.
+\ **注意：**\ 该方法所返回的字典与 :ref:`Object.get_signal_list()<class_Object_method_get_signal_list>` 返回值的格式是一样的。
 
 .. rst-class:: classref-item-separator
 

@@ -558,11 +558,11 @@ enum **CCDMode**: :ref:`🔗<enum_RigidBody2D_CCDMode>`
 - |void| **set_freeze_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_freeze_enabled**\ (\ )
 
-If ``true``, the body is frozen. Gravity and forces are not applied anymore.
+如果为 ``true``\ ，则物体被冻结。不再施加重力和力。
 
-See :ref:`freeze_mode<class_RigidBody2D_property_freeze_mode>` to set the body's behavior when frozen.
+请参阅 :ref:`freeze_mode<class_RigidBody2D_property_freeze_mode>`\ ，以设置冻结时，物体的行为。
 
-\ **Note:** For a body that is always frozen, use :ref:`StaticBody2D<class_StaticBody2D>` or :ref:`AnimatableBody2D<class_AnimatableBody2D>` instead.
+\ **注意：** 对于始终冻结的物体，请改用 :ref:`StaticBody2D<class_StaticBody2D>` 或 :ref:`AnimatableBody2D<class_AnimatableBody2D>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -579,9 +579,9 @@ See :ref:`freeze_mode<class_RigidBody2D_property_freeze_mode>` to set the body's
 - |void| **set_freeze_mode**\ (\ value\: :ref:`FreezeMode<enum_RigidBody2D_FreezeMode>`\ )
 - :ref:`FreezeMode<enum_RigidBody2D_FreezeMode>` **get_freeze_mode**\ (\ )
 
-The body's freeze mode. Determines the body's behavior when :ref:`freeze<class_RigidBody2D_property_freeze>` is ``true``.
+物体的冻结模式。\ :ref:`freeze<class_RigidBody2D_property_freeze>` 为 ``true`` 时决定物体的行为。
 
-\ **Note:** For a body that is always frozen, use :ref:`StaticBody2D<class_StaticBody2D>` or :ref:`AnimatableBody2D<class_AnimatableBody2D>` instead.
+\ **注意：**\ 始终冻结的物体请改用 :ref:`StaticBody2D<class_StaticBody2D>` 或 :ref:`AnimatableBody2D<class_AnimatableBody2D>`\ 。
 
 .. rst-class:: classref-item-separator
 

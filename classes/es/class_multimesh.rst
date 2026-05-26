@@ -365,7 +365,7 @@ Formato de transformación usado para transformar la malla, ya sea 2D o 3D.
 - |void| **set_use_colors**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_colors**\ (\ )
 
-Si ``true``, el **MultiMesh** usará datos de color (véase :ref:`set_instance_color()<class_MultiMesh_method_set_instance_color>`). Solo se puede establecer cuando :ref:`instance_count<class_MultiMesh_property_instance_count>` es ``0`` o menos. Esto significa que necesitas llamar a este método antes de establecer el conteo de instancias, o restablecerlo temporalmente a ``0``.
+Si es ``true``, el **MultiMesh** usará datos de color (véase :ref:`set_instance_color()<class_MultiMesh_method_set_instance_color>`). Solo se puede establecer cuando :ref:`instance_count<class_MultiMesh_property_instance_count>` es ``0`` o menos. Esto significa que necesitas llamar a este método antes de establecer el conteo de instancias, o restablecerlo temporalmente a ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -382,7 +382,7 @@ Si ``true``, el **MultiMesh** usará datos de color (véase :ref:`set_instance_c
 - |void| **set_use_custom_data**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_custom_data**\ (\ )
 
-Si ``true``, el **MultiMesh** usará datos personalizados (véase :ref:`set_instance_custom_data()<class_MultiMesh_method_set_instance_custom_data>`). Solo se puede establecer cuando :ref:`instance_count<class_MultiMesh_property_instance_count>` es ``0`` o menos. Esto significa que necesitas llamar a este método antes de establecer el conteo de instancias, o restablecerlo temporalmente a ``0``.
+Si es ``true``, el **MultiMesh** usará datos personalizados (véase :ref:`set_instance_custom_data()<class_MultiMesh_method_set_instance_custom_data>`). Solo se puede establecer cuando :ref:`instance_count<class_MultiMesh_property_instance_count>` es ``0`` o menos. Esto significa que necesitas llamar a este método antes de establecer el conteo de instancias, o restablecerlo temporalmente a ``0``.
 
 .. rst-class:: classref-item-separator
 

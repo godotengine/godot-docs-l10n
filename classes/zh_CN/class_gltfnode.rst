@@ -309,7 +309,7 @@ glTF 节点通常存在于表示 glTF 文件中的所有数据的 :ref:`GLTFStat
 - |void| **set_visible**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_visible**\ (\ )
 
-If ``true``, the GLTF node is visible. If ``false``, the GLTF node is not visible. This is converted to the :ref:`Node3D.visible<class_Node3D_property_visible>` property in the Godot scene, and is exported to ``KHR_node_visibility`` when ``false``.
+如果为 ``true``\ ，则 GLTF 节点可见。如果 ``false``\ ，则 GLTF 节点不可见。这会被转换为 Godot 场景中的 :ref:`Node3D.visible<class_Node3D_property_visible>` 属性，为 ``false`` 时会导出到 ``KHR_node_visibility``\ 。
 
 .. rst-class:: classref-item-separator
 

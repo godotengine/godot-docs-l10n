@@ -17,13 +17,13 @@ Plays positional sound in 3D space.
 Descripción
 ----------------------
 
-Plays audio with positional sound effects, based on the relative position of the audio listener. Positional effects include distance attenuation, directionality, and the Doppler effect. For greater realism, a low-pass filter is applied to distant sounds. This can be disabled by setting :ref:`attenuation_filter_cutoff_hz<class_AudioStreamPlayer3D_property_attenuation_filter_cutoff_hz>` to ``20500``.
+Reproduce audio con efectos de sonido posicionales, basados en la posición relativa del oyente de audio. Los efectos posicionales incluyen atenuación por distancia, direccionalidad y efecto Doppler. Para mayor realismo, se aplica un filtro pasa-bajos a los sonidos distantes. Esto se puede desactivar estableciendo :ref:`attenuation_filter_cutoff_hz<class_AudioStreamPlayer3D_property_attenuation_filter_cutoff_hz>` en ``20500``.
 
-By default, audio is heard from the camera position. This can be changed by adding an :ref:`AudioListener3D<class_AudioListener3D>` node to the scene and enabling it by calling :ref:`AudioListener3D.make_current()<class_AudioListener3D_method_make_current>` on it.
+Por defecto, el audio se escucha desde la posición de la cámara. Esto se puede cambiar agregando un nodo :ref:`AudioListener3D<class_AudioListener3D>` a la escena y activándolo llamando a :ref:`AudioListener3D.make_current()<class_AudioListener3D_method_make_current>`.
 
-See also :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` to play a sound non-positionally.
+Véase también :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` para reproducir un sonido sin posicionamiento.
 
-\ **Note:** Hiding an **AudioStreamPlayer3D** node does not disable its audio output. To temporarily disable an **AudioStreamPlayer3D**'s audio output, set :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` to a very low value like ``-100`` (which isn't audible to human hearing).
+\ **Nota:** Ocultar un nodo **AudioStreamPlayer3D** no desactiva su salida de audio. Para desactivar temporalmente el audio de un **AudioStreamPlayer3D**, establece :ref:`volume_db<class_AudioStreamPlayer3D_property_volume_db>` a un valor muy bajo como ``-100`` (que no es audible para el oído humano).
 
 .. rst-class:: classref-introduction-group
 
@@ -434,7 +434,7 @@ La distancia a partir de la cual el sonido ya no se puede escuchar en absoluto. 
 - |void| **set_max_polyphony**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_max_polyphony**\ (\ )
 
-The maximum number of sounds this node can play at the same time. Playing additional sounds after this value is reached will cut off the oldest sounds.
+El número máximo de sonidos que este nodo puede reproducir simultáneamente. Reproducir sonidos adicionales después de alcanzar este límite hará que se corten los sonidos más antiguos.
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ El tono y el tempo del audio, como multiplicador de la tasa de muestreo de la mu
 
 **Experimental:** Esta propiedad podría ser modificada o eliminada en versiones futuras.
 
-The playback type of the stream player. If set other than to the default value, it will force that playback type.
+El tipo de reproducción del reproductor de flujo. Si se establece un valor distinto al predeterminado, se forzará ese tipo de reproducción.
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +542,7 @@ El recurso :ref:`AudioStream<class_AudioStream>` que se va a reproducir.
 - |void| **set_stream_paused**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_stream_paused**\ (\ )
 
-If ``true``, the playback is paused. You can resume it by setting :ref:`stream_paused<class_AudioStreamPlayer3D_property_stream_paused>` to ``false``.
+Si es ``true``, la reproducción se pausa. Puede reanudarla estableciendo :ref:`stream_paused<class_AudioStreamPlayer3D_property_stream_paused>` en ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -648,7 +648,7 @@ Returns whether the :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` can return
 
 |void| **play**\ (\ from_position\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_AudioStreamPlayer3D_method_play>`
 
-Queues the audio to play on the next physics frame, from the given position ``from_position``, in seconds.
+Pone el audio en cola para reproducirse en el siguiente cuadro de física, desde la posición dada ``from_position``, en segundos.
 
 .. rst-class:: classref-item-separator
 

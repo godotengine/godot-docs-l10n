@@ -14,7 +14,7 @@ Descripción
 
 El tipo :ref:`Variant<class_Variant>` incorporado **Rect2i** representa un rectángulo alineado con los ejes en un espacio 2D, utilizando coordenadas enteras. Se define por su :ref:`position<class_Rect2i_property_position>` y su :ref:`size<class_Rect2i_property_size>`, que son :ref:`Vector2i<class_Vector2i>`. Debido a que no rota, se utiliza con frecuencia para pruebas rápidas de superposición (véase :ref:`intersects()<class_Rect2i_method_intersects>`).
 
-Para coordenadas de punto flotante, consulta :ref:`Rect2<class_Rect2>`.
+Para coordenadas de punto flotante, véase :ref:`Rect2<class_Rect2>`.
 
 \ **Nota:** No se admiten valores negativos para :ref:`size<class_Rect2i_property_size>`. Con un tamaño negativo, la mayoría de los métodos **Rect2i** no funcionan correctamente. Utiliza :ref:`abs()<class_Rect2i_method_abs>` para obtener un **Rect2i** equivalente con un tamaño no negativo.
 

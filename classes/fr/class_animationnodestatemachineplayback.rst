@@ -198,7 +198,7 @@ Renvoie l'état de départ de l'animation en cours de fondu.
 
 :ref:`float<class_float>` **get_fading_from_play_position**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_from_play_position>`
 
-Returns the playback position of the node from :ref:`get_fading_from_node()<class_AnimationNodeStateMachinePlayback_method_get_fading_from_node>`. Returns ``0`` if no animation fade is occurring.
+Renvoie la position de l’élément qui a actuellement le focus. Ou renvoie ``0`` si aucun n'a le focus.
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Returns the playback position of the node from :ref:`get_fading_from_node()<clas
 
 :ref:`float<class_float>` **get_fading_length**\ (\ ) |const| :ref:`🔗<class_AnimationNodeStateMachinePlayback_method_get_fading_length>`
 
-Returns the length of the current fade animation. Returns ``0`` if no animation fade is occurring.
+Renvoie la durée de l'animation de fondu actuelle. Renvoie ``0`` si aucune animation de fondu ne se produit.
 
 .. rst-class:: classref-item-separator
 

@@ -16,9 +16,9 @@ Clase base para primitivas CSG.
 Descripción
 ----------------------
 
-Parent class for various CSG primitives. It contains code and functionality that is common between them. It cannot be used directly. Instead use one of the various classes that inherit from it.
+Clase padre para varias primitivas CSG. Contiene código y funcionalidad que es común entre ellas. No puede usarse directamente. En su lugar, usa una de las diversas clases que heredan de ella.
 
-\ **Note:** CSG nodes are intended to be used for level prototyping. Creating CSG nodes has a significant CPU cost compared to creating a :ref:`MeshInstance3D<class_MeshInstance3D>` with a :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Moving a CSG node within another CSG node also has a significant CPU cost, so it should be avoided during gameplay.
+\ **Nota:** Los nodos CSG están destinados a utilizarse para la creación de prototipos de niveles. Crear nodos CSG tiene un coste de CPU significativo en comparación con crear un :ref:`MeshInstance3D<class_MeshInstance3D>` con un :ref:`PrimitiveMesh<class_PrimitiveMesh>`. Mover un nodo CSG dentro de otro nodo CSG también tiene un coste de CPU significativo, por lo que debe evitarse durante el juego.
 
 .. rst-class:: classref-introduction-group
 
@@ -59,7 +59,7 @@ Descripciones de Propiedades
 - |void| **set_flip_faces**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_flip_faces**\ (\ )
 
-If set, the order of the vertices in each triangle are reversed resulting in the backside of the mesh being drawn.
+Si está habilitado, el orden de los vértices en cada triángulo se invierte, lo que provoca que se dibuje la cara posterior de la malla.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

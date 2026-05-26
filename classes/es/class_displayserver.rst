@@ -2149,23 +2149,23 @@ La ventana de pantalla completa cubre toda el área de visualización de una pan
 
 :ref:`WindowMode<enum_DisplayServer_WindowMode>` **WINDOW_MODE_EXCLUSIVE_FULLSCREEN** = ``4``
 
-A single window full screen mode. This mode has less overhead, but only one window can be open on a given screen at a time (opening a child window or application switching will trigger a full screen transition).
+Un modo de pantalla completa de ventana única. Este modo tiene menos sobrecarga, pero solo se puede abrir una ventana a la vez en una pantalla determinada (abrir una ventana secundaria o cambiar de aplicación activará una transición de pantalla completa).
 
-Full screen window covers the entire display area of a screen and has no border or decorations. The display's video mode is not changed.
+La ventana de pantalla completa cubre toda el área de visualización de una pantalla y no tiene bordes ni decoraciones. El modo de vídeo de la pantalla no cambia.
 
-\ **Note:** This mode might not work with screen recording software.
+\ **Nota:** Es posible que este modo no funcione con software de grabación de pantalla.
 
-\ **On Android:** This enables immersive mode.
+\ **En Android:** Esto activa el modo inmersivo.
 
-\ **On Windows:** Depending on video driver, full screen transition might cause screens to go black for a moment.
+\ **En Windows:** Dependiendo del controlador de vídeo, la transición a pantalla completa puede causar que las pantallas se queden en negro por un momento.
 
-\ **On macOS:** A new desktop is used to display the running project. Exclusive full screen mode prevents Dock and Menu from showing up when the mouse pointer is hovering the edge of the screen.
+\ **En macOS:** Se utiliza un nuevo escritorio para mostrar el proyecto en ejecución. El modo de pantalla completa exclusivo evita que el Dock y el Menú aparezcan cuando el puntero del ratón se sitúa sobre el borde de la pantalla.
 
-\ **On Linux (X11):** Exclusive full screen mode bypasses compositor.
+\ **En Linux (X11):** El modo de pantalla completa exclusivo omite el compositor.
 
-\ **On Linux (Wayland):** Equivalent to :ref:`WINDOW_MODE_FULLSCREEN<class_DisplayServer_constant_WINDOW_MODE_FULLSCREEN>`.
+\ **En Linux (Wayland):** Equivalente a :ref:`WINDOW_MODE_FULLSCREEN<class_DisplayServer_constant_WINDOW_MODE_FULLSCREEN>`.
 
-\ **Note:** Regardless of the platform, enabling full screen will change the window size to match the monitor's size. Therefore, make sure your project supports :doc:`multiple resolutions <../tutorials/rendering/multiple_resolutions>` when enabling full screen mode.
+\ **Nota:** Independientemente de la plataforma, activar la pantalla completa cambiará el tamaño de la ventana para que coincida con el tamaño del monitor. Por lo tanto, asegúrate de que tu proyecto sea compatible con :doc:`múltiples resoluciones <../tutorials/rendering/multiple_resolutions>` al activar el modo de pantalla completa.
 
 .. rst-class:: classref-item-separator
 
@@ -3939,7 +3939,7 @@ Each filter string in the ``filters`` array should be formatted like this: ``*.p
 
 Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android (API level 29+).
+\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
 
 \ **Note:** ``current_directory`` might be ignored.
 
@@ -4602,9 +4602,9 @@ Devuelve el desplazamiento horizontal del elemento en el ``idx`` dado.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the index of the item with the specified ``tag``. Indices are automatically assigned to each item by the engine, and cannot be set manually.
+Devuelve el índice del elemento con el ``tag`` especificado. Los índices se asignan automáticamente a cada elemento por el motor y no se pueden establecer manualmente.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4618,9 +4618,9 @@ Returns the index of the item with the specified ``tag``. Indices are automatica
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the index of the item with the specified ``text``. Indices are automatically assigned to each item by the engine, and cannot be set manually.
+Devuelve el índice del elemento con el ``text`` especificado. Los índices se asignan automáticamente a cada elemento por el motor y no se pueden establecer manualmente.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4650,9 +4650,9 @@ Returns the callback of the item accelerator at index ``idx``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns number of states of a multistate item. See :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` for details.
+Devuelve el número de estados de un elemento multiestado. Consulta :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` para más detalles.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4666,9 +4666,9 @@ Returns number of states of a multistate item. See :ref:`global_menu_add_multist
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the state of a multistate item. See :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` for details.
+Devuelve el estado de un elemento multiestado. Consulta :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` para más detalles.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4682,9 +4682,9 @@ Returns the state of a multistate item. See :ref:`global_menu_add_multistate_ite
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the submenu ID of the item at index ``idx``. See :ref:`global_menu_add_submenu_item()<class_DisplayServer_method_global_menu_add_submenu_item>` for more info on how to add a submenu.
+Devuelve el ID del submenú del elemento en el índice ``idx``. Consulta :ref:`global_menu_add_submenu_item()<class_DisplayServer_method_global_menu_add_submenu_item>` para obtener más información sobre cómo añadir un submenú.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4698,9 +4698,9 @@ Returns the submenu ID of the item at index ``idx``. See :ref:`global_menu_add_s
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns the metadata of the specified item, which might be of any type. You can set it with :ref:`global_menu_set_item_tag()<class_DisplayServer_method_global_menu_set_item_tag>`, which provides a simple way of assigning context data to items.
+Devuelve los metadatos del elemento especificado, que pueden ser de cualquier tipo. Puedes establecerlos con :ref:`global_menu_set_item_tag()<class_DisplayServer_method_global_menu_set_item_tag>`, lo que proporciona una forma sencilla de asignar datos de contexto a los elementos.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4762,9 +4762,9 @@ Returns Dictionary of supported system menu IDs and names.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` is checkable in some way, i.e. if it has a checkbox or radio button.
+Devuelve ``true`` si el elemento en el índice ``idx`` es verificable de alguna manera; por ejemplo, si tiene una casilla de verificación (checkbox) o un botón de radio.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4794,11 +4794,11 @@ Returns ``true`` if the item at index ``idx`` is checked.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` is disabled. When it is disabled it can't be selected, or its action invoked.
+Devuelve ``true`` si el elemento en el índice ``idx`` está desactivado. Cuando está desactivado, no se puede seleccionar ni invocar su acción.
 
-See :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_menu_set_item_disabled>` for more info on how to disable an item.
+Consulta :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_menu_set_item_disabled>` para obtener más información sobre cómo desactivar un elemento.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4812,11 +4812,11 @@ See :ref:`global_menu_set_item_disabled()<class_DisplayServer_method_global_menu
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` is hidden.
+Devuelve ``true`` si el elemento en el índice ``idx`` está oculto.
 
-See :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_set_item_hidden>` for more info on how to hide an item.
+Consulta :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_set_item_hidden>` para obtener más información sobre cómo ocultar un elemento.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4830,11 +4830,11 @@ See :ref:`global_menu_set_item_hidden()<class_DisplayServer_method_global_menu_s
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Returns ``true`` if the item at index ``idx`` has radio button-style checkability.
+Devuelve ``true`` si el elemento en el índice ``idx`` tiene una verificabilidad de estilo botón de radio.
 
-\ **Note:** This is purely cosmetic; you must add the logic for checking/unchecking items in radio groups.
+\ **Nota:** Esto es puramente cosmético; debes añadir la lógica para marcar/desmarcar elementos en grupos de radio.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4848,11 +4848,11 @@ Returns ``true`` if the item at index ``idx`` has radio button-style checkabilit
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Removes the item at index ``idx`` from the global menu ``menu_root``.
+Elimina el elemento en el índice ``idx`` del menú global ``menu_root``.
 
-\ **Note:** The indices of items after the removed item will be shifted by one.
+\ **Nota:** Los índices de los elementos posteriores al elemento eliminado se desplazarán una posición.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4866,9 +4866,9 @@ Removes the item at index ``idx`` from the global menu ``menu_root``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the accelerator of the item at index ``idx``. ``keycode`` can be a single :ref:`Key<enum_@GlobalScope_Key>`, or a combination of :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s and :ref:`Key<enum_@GlobalScope_Key>`\ s using bitwise OR such as ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
+Establece el acelerador del elemento en el índice ``idx``. ``keycode`` puede ser una única :ref:`Key<enum_@GlobalScope_Key>`, o una combinación de :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>`\ s y :ref:`Key<enum_@GlobalScope_Key>`\ s usando el operador OR a nivel de bits, como ``KEY_MASK_CTRL | KEY_A`` (:kbd:`Ctrl + A`).
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4882,11 +4882,11 @@ Sets the accelerator of the item at index ``idx``. ``keycode`` can be a single :
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the callback of the item at index ``idx``. Callback is emitted when an item is pressed.
+Establece la función de llamada (callback) del elemento en el índice ``idx``. La función de llamada se emite cuando se presiona un elemento.
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Nota:** El objeto Callable ``callback`` debe aceptar exactamente un parámetro de tipo Variant. El parámetro pasado al Callable será el valor asignado al parámetro ``tag`` cuando se creó el elemento del menú.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4900,9 +4900,9 @@ Sets the callback of the item at index ``idx``. Callback is emitted when an item
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets whether the item at index ``idx`` has a checkbox. If ``false``, sets the type of the item to plain text.
+Establece si el elemento en el índice ``idx`` tiene una casilla de verificación (checkbox). Si es ``false``, establece el tipo del elemento como texto plano.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4932,9 +4932,9 @@ Sets the checkstate status of the item at index ``idx``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Enables/disables the item at index ``idx``. When it is disabled, it can't be selected and its action can't be invoked.
+Activa o desactiva el elemento en el índice ``idx``. Cuando está desactivado, no se puede seleccionar y su acción no puede ser invocada.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4948,9 +4948,9 @@ Enables/disables the item at index ``idx``. When it is disabled, it can't be sel
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Hides/shows the item at index ``idx``. When it is hidden, an item does not appear in a menu and its action cannot be invoked.
+Oculta o muestra el elemento en el índice ``idx``. Cuando está oculto, el elemento no aparece en el menú y su acción no puede ser invocada.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4964,11 +4964,11 @@ Hides/shows the item at index ``idx``. When it is hidden, an item does not appea
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the callback of the item at index ``idx``. The callback is emitted when an item is hovered.
+Establece la función de llamada (callback) del elemento en el índice ``idx``. La función de llamada se emite cuando se pasa el cursor sobre un elemento.
 
-\ **Note:** The ``callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Nota:** El objeto Callable ``callback`` debe aceptar exactamente un parámetro de tipo Variant. El parámetro pasado al Callable será el valor asignado al parámetro ``tag`` cuando se creó el elemento del menú.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -4982,11 +4982,11 @@ Sets the callback of the item at index ``idx``. The callback is emitted when an 
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Replaces the :ref:`Texture2D<class_Texture2D>` icon of the specified ``idx``.
+Reemplaza el icono :ref:`Texture2D<class_Texture2D>` del elemento en el índice ``idx`` especificado.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
-\ **Note:** This method is not supported by macOS "_dock" menu items.
+\ **Nota:** Este método no es compatible con los elementos del menú "_dock" en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5016,11 +5016,11 @@ Sets the horizontal offset of the item at the given ``idx``.
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the callback of the item at index ``idx``. Callback is emitted when its accelerator is activated.
+Establece la función de llamada (callback) del elemento en el índice ``idx``. La función de llamada se emite cuando se activa su acelerador.
 
-\ **Note:** The ``key_callback`` Callable needs to accept exactly one Variant parameter, the parameter passed to the Callable will be the value passed to the ``tag`` parameter when the menu item was created.
+\ **Nota:** El objeto Callable ``key_callback`` debe aceptar exactamente un parámetro de tipo Variant. El parámetro pasado al Callable será el valor asignado al parámetro ``tag`` cuando se creó el elemento del menú.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5034,9 +5034,9 @@ Sets the callback of the item at index ``idx``. Callback is emitted when its acc
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets number of state of a multistate item. See :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` for details.
+Establece el número de estados de un elemento multiestado. Consulta :ref:`global_menu_add_multistate_item()<class_DisplayServer_method_global_menu_add_multistate_item>` para más detalles.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5050,11 +5050,11 @@ Sets number of state of a multistate item. See :ref:`global_menu_add_multistate_
 
 **Obsoleto:** Use :ref:`NativeMenu<class_NativeMenu>` or :ref:`PopupMenu<class_PopupMenu>` instead.
 
-Sets the type of the item at the specified index ``idx`` to radio button. If ``false``, sets the type of the item to plain text.
+Establece el tipo del elemento en el índice especificado ``idx`` como botón de radio. Si es ``false``, establece el tipo del elemento como texto plano.
 
-\ **Note:** This is purely cosmetic; you must add the logic for checking/unchecking items in radio groups.
+\ **Nota:** Esto es puramente cosmético; debes añadir la lógica para marcar/desmarcar elementos en grupos de radio.
 
-\ **Note:** This method is implemented only on macOS.
+\ **Nota:** Este método solo está implementado en macOS.
 
 .. rst-class:: classref-item-separator
 
@@ -5563,11 +5563,11 @@ Returns the ``screen``'s current orientation. See also :ref:`screen_set_orientat
 
 :ref:`Color<class_Color>` **screen_get_pixel**\ (\ position\: :ref:`Vector2i<class_Vector2i>`\ ) |const| :ref:`🔗<class_DisplayServer_method_screen_get_pixel>`
 
-Returns the color of the pixel at the given screen ``position``. On multi-monitor setups, the screen position is relative to the virtual desktop area.
+Devuelve el color del píxel en la posición de pantalla ``position`` especificada. En configuraciones de varios monitores, la posición de pantalla es relativa al área del escritorio virtual.
 
-\ **Note:** This method is implemented on Linux (X11, excluding XWayland), macOS, and Windows. On other platforms, this method always returns ``Color(0, 0, 0, 1)``.
+\ **Nota:** Este método está implementado en Linux (X11, excluyendo XWayland), macOS y Windows. En otras plataformas, este método siempre devuelve ``Color(0, 0, 0, 1)``.
 
-\ **Note:** On macOS, this method requires the "Screen Recording" permission. If permission is not granted, this method returns a color from a screenshot that will not include other application windows or OS elements not related to the application.
+\ **Nota:** En macOS, este método requiere el permiso de "Grabación de pantalla". Si no se concede el permiso, este método devuelve un color basado en una captura de pantalla que no incluirá ventanas de otras aplicaciones ni elementos del sistema operativo ajenos a la aplicación.
 
 .. rst-class:: classref-item-separator
 
@@ -5702,13 +5702,13 @@ Sets whether the screen should never be turned off by the operating system's pow
 
 |void| **screen_set_orientation**\ (\ orientation\: :ref:`ScreenOrientation<enum_DisplayServer_ScreenOrientation>`, screen\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_DisplayServer_method_screen_set_orientation>`
 
-Sets the ``screen``'s ``orientation``. See also :ref:`screen_get_orientation()<class_DisplayServer_method_screen_get_orientation>`.
+Establece la orientación (``orientation``) de la pantalla (``screen``). Consulta también :ref:`screen_get_orientation()<class_DisplayServer_method_screen_get_orientation>`.
 
-\ **Note:** One of the following constants can be used as ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>`, or :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
+\ **Nota:** Se puede utilizar una de las siguientes constantes como ``screen``: :ref:`SCREEN_OF_MAIN_WINDOW<class_DisplayServer_constant_SCREEN_OF_MAIN_WINDOW>`, :ref:`SCREEN_PRIMARY<class_DisplayServer_constant_SCREEN_PRIMARY>`, :ref:`SCREEN_WITH_MOUSE_FOCUS<class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS>` o :ref:`SCREEN_WITH_KEYBOARD_FOCUS<class_DisplayServer_constant_SCREEN_WITH_KEYBOARD_FOCUS>`.
 
-\ **Note:** This method is implemented on Android and iOS.
+\ **Nota:** Este método está implementado en Android e iOS.
 
-\ **Note:** On iOS, this method has no effect if :ref:`ProjectSettings.display/window/handheld/orientation<class_ProjectSettings_property_display/window/handheld/orientation>` is not set to :ref:`SCREEN_SENSOR<class_DisplayServer_constant_SCREEN_SENSOR>`.
+\ **Nota:** En iOS, este método no tiene efecto si :ref:`ProjectSettings.display/window/handheld/orientation<class_ProjectSettings_property_display/window/handheld/orientation>` no está configurado como :ref:`SCREEN_SENSOR<class_DisplayServer_constant_SCREEN_SENSOR>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5762,9 +5762,9 @@ Sets the window icon (usually displayed in the top-left corner) in the operating
 
 |void| **set_system_theme_change_callback**\ (\ callable\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_set_system_theme_change_callback>`
 
-Sets the callback that should be called when the system's theme settings are changed. ``callable`` should accept zero arguments.
+Establece la función de llamada (callback) que debe ejecutarse cuando cambian los ajustes del tema del sistema. El objeto ``callable`` no debe aceptar argumentos.
 
-\ **Note:** This method is implemented on Android, iOS, macOS, Windows, and Linux (X11/Wayland).
+\ **Nota:** Este método está implementado en Android, iOS, macOS, Windows y Linux (X11/Wayland).
 
 .. rst-class:: classref-item-separator
 
@@ -5790,9 +5790,9 @@ Opens system emoji and symbol picker.
 
 :ref:`Rect2<class_Rect2>` **status_indicator_get_rect**\ (\ id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_DisplayServer_method_status_indicator_get_rect>`
 
-Returns the rectangle for the given status indicator ``id`` in screen coordinates. If the status indicator is not visible, returns an empty :ref:`Rect2<class_Rect2>`.
+Devuelve el rectángulo del indicador de estado con el ``id`` dado en coordenadas de pantalla. Si el indicador de estado no es visible, devuelve un :ref:`Rect2<class_Rect2>` vacío.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Este método está implementado en macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5804,9 +5804,9 @@ Returns the rectangle for the given status indicator ``id`` in screen coordinate
 
 |void| **status_indicator_set_callback**\ (\ id\: :ref:`int<class_int>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_DisplayServer_method_status_indicator_set_callback>`
 
-Sets the application status indicator activation callback. ``callback`` should take two arguments: :ref:`int<class_int>` mouse button index (one of :ref:`MouseButton<enum_@GlobalScope_MouseButton>` values) and :ref:`Vector2i<class_Vector2i>` click position in screen coordinates.
+Establece la función de llamada (callback) de activación del indicador de estado de la aplicación. El objeto ``callback`` debe aceptar dos argumentos: el índice del botón del ratón de tipo :ref:`int<class_int>` (uno de los valores de :ref:`MouseButton<enum_@GlobalScope_MouseButton>`) y la posición del clic de tipo :ref:`Vector2i<class_Vector2i>` en coordenadas de pantalla.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Este método está implementado en macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5818,9 +5818,9 @@ Sets the application status indicator activation callback. ``callback`` should t
 
 |void| **status_indicator_set_icon**\ (\ id\: :ref:`int<class_int>`, icon\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_DisplayServer_method_status_indicator_set_icon>`
 
-Sets the application status indicator icon.
+Establece el icono del indicador de estado de la aplicación.
 
-\ **Note:** This method is implemented on macOS and Windows.
+\ **Nota:** Este método está implementado en macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6480,7 +6480,7 @@ Mueve la ventana especificada por ``window_id`` a la ``screen`` especificada. V�
 
 Establece la ``callback`` que debe llamarse cuando se sueltan archivos desde el administrador de archivos del sistema operativo en la ventana especificada por ``window_id``. ``callback`` debe tomar un argumento :ref:`PackedStringArray<class_PackedStringArray>`, que es la lista de archivos soltados.
 
-\ **Advertencia:** ¡Solo para usuarios avanzados! Agregar tal callback a un nodo :ref:`Window<class_Window>` anulará su implementación por defecto, lo que puede introducir errores.
+\ **Advertencia:** ¡Solo para usuarios avanzados! Agregar tal callback a un nodo :ref:`Window<class_Window>` sobrescribirá su implementación por defecto, lo que puede introducir errores.
 
 \ **Nota:** Este método está implementado en Windows, macOS, Linux (X11/Wayland) y Web.
 
@@ -6548,7 +6548,7 @@ Establece la posición de la ventana emergente del `Editor de Método de Entrada
 
 Establece la ``callback`` que debe llamarse cuando cualquier :ref:`InputEvent<class_InputEvent>` se envíe a la ventana especificada por ``window_id``.
 
-\ **Advertencia:** ¡Solo para usuarios avanzados! Agregar tal callback a un nodo :ref:`Window<class_Window>` anulará su implementación por defecto, lo que puede introducir errores.
+\ **Advertencia:** ¡Solo para usuarios avanzados! Agregar tal callback a un nodo :ref:`Window<class_Window>` sobrescribirá su implementación por defecto, lo que puede introducir errores.
 
 .. rst-class:: classref-item-separator
 
@@ -6562,7 +6562,7 @@ Establece la ``callback`` que debe llamarse cuando cualquier :ref:`InputEvent<cl
 
 Establece la ``callback`` que debe llamarse cuando se introduce texto utilizando el teclado virtual en la ventana especificada por ``window_id``.
 
-\ **Advertencia:** ¡Solo para usuarios avanzados! Agregar tal callback a un nodo :ref:`Window<class_Window>` anulará su implementación por defecto, lo que puede introducir errores.
+\ **Advertencia:** ¡Solo para usuarios avanzados! Agregar tal callback a un nodo :ref:`Window<class_Window>` sobrescribirá su implementación por defecto, lo que puede introducir errores.
 
 .. rst-class:: classref-item-separator
 
@@ -6800,7 +6800,7 @@ Cuando la bandera :ref:`WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant
 
 Establece el ``callback`` que será llamado cuando ocurra un evento en la ventana especificada por ``window_id``.
 
-\ **Advertencia:** ¡Solo para usuarios avanzados! Añadir tal callback a un nodo :ref:`Window<class_Window>` anulará su implementación predeterminada, lo que puede introducir errores.
+\ **Advertencia:** ¡Solo para usuarios avanzados! Añadir tal callback a un nodo :ref:`Window<class_Window>` sobrescribirá su implementación predeterminada, lo que puede introducir errores.
 
 .. rst-class:: classref-item-separator
 

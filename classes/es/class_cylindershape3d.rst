@@ -14,11 +14,11 @@ Una forma de cilindro 3D utilizada para colisiones físicas.
 Descripción
 ----------------------
 
-A 3D cylinder shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
+Una forma de cilindro 3D, destinada a su uso en físicas. Normalmente se usa para proporcionar una forma a un :ref:`CollisionShape3D<class_CollisionShape3D>`.
 
-\ **Note:** There are several known bugs with cylinder collision shapes. Using :ref:`CapsuleShape3D<class_CapsuleShape3D>` or :ref:`BoxShape3D<class_BoxShape3D>` instead is recommended.
+\ **Nota:** Existen varios errores conocidos con las formas de colisión de cilindro. Se recomienda usar :ref:`CapsuleShape3D<class_CapsuleShape3D>` o :ref:`BoxShape3D<class_BoxShape3D>` en su lugar.
 
-\ **Performance:** **CylinderShape3D** is fast to check collisions against, but it is slower than :ref:`CapsuleShape3D<class_CapsuleShape3D>`, :ref:`BoxShape3D<class_BoxShape3D>`, and :ref:`SphereShape3D<class_SphereShape3D>`.
+\ **Rendimiento:** **CylinderShape3D** es rápido para comprobar colisiones, pero es más lento que :ref:`CapsuleShape3D<class_CapsuleShape3D>`, :ref:`BoxShape3D<class_BoxShape3D>` y :ref:`SphereShape3D<class_SphereShape3D>`.
 
 .. rst-class:: classref-introduction-group
 

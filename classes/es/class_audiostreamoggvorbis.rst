@@ -14,7 +14,7 @@ Una clase que representa una secuencia de audio Ogg Vorbis.
 Descripción
 ----------------------
 
-The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class.
+La clase AudioStreamOggVorbis es un :ref:`AudioStream<class_AudioStream>` especializado para el manejo de formatos de archivo Ogg Vorbis. Ofrece funcionalidad para cargar y reproducir archivos Ogg Vorbis, así como para gestionar el bucle y otras propiedades de reproducción. Esta clase es parte del sistema de flujo de audio, que también admite archivos WAV a través de la clase :ref:`AudioStreamWAV<class_AudioStreamWAV>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -189,11 +189,11 @@ Contiene los datos Ogg sin procesar para esta transmisión.
 - |void| **set_tags**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_tags**\ (\ )
 
-Contains user-defined tags if found in the Ogg Vorbis data.
+Contiene etiquetas definidas por el usuario si se encuentran en los datos de Ogg Vorbis.
 
-Commonly used tags include ``title``, ``artist``, ``album``, ``tracknumber``, and ``date`` (``date`` does not have a standard date format).
+Las etiquetas utilizadas habitualmente incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date`` (``date`` no tiene un formato de fecha estándar).
 
-\ **Note:** No tag is *guaranteed* to be present in every file, so make sure to account for the keys not always existing.
+\ **Nota:** No se *garantiza* que todas las etiquetas estén presentes en cada archivo, así que asegúrate de tener en cuenta que las claves no siempre existen.
 
 .. rst-class:: classref-section-separator
 

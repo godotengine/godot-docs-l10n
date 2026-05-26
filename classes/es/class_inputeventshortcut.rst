@@ -7,14 +7,14 @@ InputEventShortcut
 
 **Hereda:** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a triggered keyboard :ref:`Shortcut<class_Shortcut>`.
+Representa un :ref:`Shortcut<class_Shortcut>` de teclado invocado.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-InputEventShortcut is a special event that can be received in :ref:`Node._input()<class_Node_private_method__input>`, :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>`, and :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`. It is typically sent by the editor's Command Palette to trigger actions, but can also be sent manually using :ref:`Viewport.push_input()<class_Viewport_method_push_input>`.
+InputEventShortcut es un evento especial que puede ser recibido en :ref:`Node._input()<class_Node_private_method__input>`, :ref:`Node._shortcut_input()<class_Node_private_method__shortcut_input>`, y :ref:`Node._unhandled_input()<class_Node_private_method__unhandled_input>`. Típicamente es enviado por la paleta de comandos del editor para activar acciones, pero también puede ser enviado manualmente usando :ref:`Viewport.push_input()<class_Viewport_method_push_input>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -48,7 +48,7 @@ Descripciones de Propiedades
 - |void| **set_shortcut**\ (\ value\: :ref:`Shortcut<class_Shortcut>`\ )
 - :ref:`Shortcut<class_Shortcut>` **get_shortcut**\ (\ )
 
-The :ref:`Shortcut<class_Shortcut>` represented by this event. Its :ref:`Shortcut.matches_event()<class_Shortcut_method_matches_event>` method will always return ``true`` for this event.
+El :ref:`Shortcut<class_Shortcut>` representado por este evento. Su método :ref:`Shortcut.matches_event()<class_Shortcut_method_matches_event>` siempre devolverá ``true`` para este evento.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,11 +14,11 @@ Genera una :ref:`PrimitiveMesh<class_PrimitiveMesh>` a partir del texto.
 Descripción
 ----------------------
 
-Generate a :ref:`PrimitiveMesh<class_PrimitiveMesh>` from the text.
+Genera una :ref:`PrimitiveMesh<class_PrimitiveMesh>` a partir del texto.
 
-TextMesh can be generated only when using dynamic fonts with vector glyph contours. Bitmap fonts (including bitmap data in the TrueType/OpenType containers, like color emoji fonts) are not supported.
+TextMesh solo se puede generar cuando se usan fuentes dinámicas con contornos de glifos vectoriales. Las fuentes de mapa de bits (incluidos los datos de mapa de bits en los contenedores de TrueType/OpenType, como las fuentes de emoji de color) no son compatibles.
 
-The UV layout is arranged in 4 horizontal strips, top to bottom: 40% of the height for the front face, 40% for the back face, 10% for the outer edges and 10% for the inner edges.
+El diseño UV está organizado en 4 tiras horizontales, de arriba a abajo: 40% de la altura para la cara frontal, 40% para la cara posterior, 10% para los bordes exteriores y 10% para los bordes interiores.
 
 .. rst-class:: classref-introduction-group
 
@@ -110,9 +110,9 @@ Si se establece en algo que no sea :ref:`TextServer.AUTOWRAP_OFF<class_TextServe
 - |void| **set_curve_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_curve_step**\ (\ )
 
-Step (in pixels) used to approximate Bézier curves. Lower values result in smoother curves, but is slower to generate and render. Consider adjusting this according to the font size and the typical viewing distance.
+Paso (en píxeles) utilizado para aproximar las curvas de Bézier. Valores más bajos dan como resultado curvas más suaves, pero es más lento de generar y renderizar. Considera ajustarlo según el tamaño de la fuente y la distancia de visualización típica.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts.
+\ **Nota:** Cambiar esta propiedad regenerará la malla, lo cual es una operación lenta, especialmente con tamaños de fuente grandes y textos largos.
 
 .. rst-class:: classref-item-separator
 
@@ -163,9 +163,9 @@ Configuración de la fuente usada para mostrar texto.
 - |void| **set_font_size**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_font_size**\ (\ )
 
-Font size of the **TextMesh**'s text. This property works in tandem with :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Higher values will result in a more detailed font, regardless of :ref:`curve_step<class_TextMesh_property_curve_step>` and :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Consider keeping this value below 63 (inclusive) for good performance, and adjust :ref:`pixel_size<class_TextMesh_property_pixel_size>` as needed to enlarge text.
+Tamaño de fuente del texto del **TextMesh**. Esta propiedad funciona en conjunto con :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Valores más altos darán como resultado una fuente más detallada, independientemente de :ref:`curve_step<class_TextMesh_property_curve_step>` y :ref:`pixel_size<class_TextMesh_property_pixel_size>`. Considera mantener este valor por debajo de 63 (inclusivo) para un buen rendimiento, y ajusta :ref:`pixel_size<class_TextMesh_property_pixel_size>` según sea necesario para agrandar el texto.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **Nota:** Cambiar esta propiedad regenerará la malla, lo cual es una operación lenta, especialmente con tamaños de fuente grandes y textos largos. Para cambiar el tamaño del texto de manera eficiente en tiempo real, cambia la :ref:`Node3D.scale<class_Node3D_property_scale>` del nodo en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - |void| **set_line_spacing**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_line_spacing**\ (\ )
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al descenso de la línea (line descent). Este valor puede ser negativo.
 
 .. rst-class:: classref-item-separator
 
@@ -250,9 +250,9 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 - |void| **set_offset**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_offset**\ (\ )
 
-The text drawing offset (in pixels).
+El desplazamiento de dibujo del texto (en píxeles).
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation. To change the text's position in real-time efficiently, change the node's :ref:`Node3D.position<class_Node3D_property_position>` instead.
+\ **Nota:** Cambiar esta propiedad regenerará la malla, lo cual es una operación lenta. Para cambiar la posición del texto de manera eficiente en tiempo real, cambia la :ref:`Node3D.position<class_Node3D_property_position>` del nodo en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -269,9 +269,9 @@ The text drawing offset (in pixels).
 - |void| **set_pixel_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_pixel_size**\ (\ )
 
-The size of one pixel's width on the text to scale it in 3D. This property works in tandem with :ref:`font_size<class_TextMesh_property_font_size>`.
+El tamaño del ancho de un píxel en el texto para escalarlo en 3D. Esta propiedad funciona en conjunto con :ref:`font_size<class_TextMesh_property_font_size>`.
 
-\ **Note:** Changing this property will regenerate the mesh, which is a slow operation, especially with large font sizes and long texts. To change the text's size in real-time efficiently, change the node's :ref:`Node3D.scale<class_Node3D_property_scale>` instead.
+\ **Nota:** Cambiar esta propiedad regenerará la malla, lo cual es una operación lenta, especialmente con tamaños de fuente grandes y textos largos. Para cambiar el tamaño del texto de manera eficiente en tiempo real, cambia la :ref:`Node3D.scale<class_Node3D_property_scale>` del nodo en su lugar.
 
 .. rst-class:: classref-item-separator
 

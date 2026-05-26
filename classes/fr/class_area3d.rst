@@ -162,11 +162,11 @@ Signaux
 
  .. code-tab:: gdscript
 
-    var autre_proprietaire_forme = zone.shape_find_owner(area_shape_index)
-    var autre_noeud_forme = zone.shape_owner_get_owner(autre_proprietaire_forme)
+    var proprietaire_autre_forme = area.shape_find_owner(area_shape_index)
+    var noeud_autre_forme = area.shape_owner_get_owner(proprietaire_autre_forme)
 
-    var proprietaire_forme_local = shape_find_owner(local_shape_index)
-    var noeud_forme_local = shape_owner_get_owner(proprietaire_forme_local)
+    var proprietaire_forme_locale = shape_find_owner(local_shape_index)
+    var noeud_forme_locale = shape_owner_get_owner(proprietaire_forme_locale)
 
 
 
@@ -229,11 +229,11 @@ Voir aussi :ref:`area_shape_entered<class_Area3D_signal_area_shape_entered>`.
 
  .. code-tab:: gdscript
 
-    var autre_proprietaire_forme = zone.shape_find_owner(body_shape_index)
-    var autre_noeud_forme = zone.shape_owner_get_owner(autre_proprietaire_forme)
+    var proprietaire_forme_du_corps = body.shape_find_owner(body_shape_index)
+    var noeud_forme_du_corps = body.shape_owner_get_owner(proprietaire_forme_du_corps)
 
-    var proprietaire_forme_local = shape_find_owner(local_shape_index)
-    var noeud_forme_local = shape_owner_get_owner(proprietaire_forme_local)
+    var proprietaire_forme_locale = shape_find_owner(local_shape_index)
+    var noeud_forme_locale = shape_owner_get_owner(proprietaire_forme_locale)
 
 
 

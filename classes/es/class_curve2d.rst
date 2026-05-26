@@ -134,9 +134,9 @@ Descripciones de Métodos
 
 |void| **add_point**\ (\ position\: :ref:`Vector2<class_Vector2>`, in\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0), out\: :ref:`Vector2<class_Vector2>` = Vector2(0, 0), index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_Curve2D_method_add_point>`
 
-Adds a point with the specified ``position`` relative to the curve's own position, with control points ``in`` and ``out``. Appends the new point at the end of the point list.
+Añade un punto con la ``position`` especificada relativa a la posición de la propia curva, con los puntos de control ``in`` y ``out``. Añade el nuevo punto al final de la lista de puntos.
 
-If ``index`` is given, the new point is inserted before the existing point identified by index ``index``. Every existing point starting from ``index`` is shifted further down the list of points. The index must be greater than or equal to ``0`` and must not exceed the number of existing points in the line. See :ref:`point_count<class_Curve2D_property_point_count>`.
+Si se proporciona un ``index``, el nuevo punto se inserta antes del punto existente identificado por el índice ``index``. Cada punto existente a partir de ``index`` se desplaza hacia abajo en la lista de puntos. El índice debe ser mayor o igual a ``0`` y no debe exceder el número de puntos existentes en la línea. Consulte :ref:`point_count<class_Curve2D_property_point_count>`.
 
 .. rst-class:: classref-item-separator
 
@@ -184,9 +184,9 @@ Devuelve la caché de puntos como un :ref:`PackedVector2Array<class_PackedVector
 
 :ref:`float<class_float>` **get_closest_offset**\ (\ to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_closest_offset>`
 
-Returns the closest offset to ``to_point``. This offset is meant to be used in :ref:`sample_baked()<class_Curve2D_method_sample_baked>`.
+Devuelve el desplazamiento (offset) más cercano a ``to_point``. Este desplazamiento está destinado a ser utilizado en :ref:`sample_baked()<class_Curve2D_method_sample_baked>`.
 
-\ ``to_point`` must be in this curve's local space.
+\ ``to_point`` debe estar en el espacio local de esta curva.
 
 .. rst-class:: classref-item-separator
 
@@ -198,9 +198,9 @@ Returns the closest offset to ``to_point``. This offset is meant to be used in :
 
 :ref:`Vector2<class_Vector2>` **get_closest_point**\ (\ to_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_closest_point>`
 
-Returns the closest point on baked segments (in curve's local space) to ``to_point``.
+Devuelve el punto más cercano en los segmentos horneados (baked), en el espacio local de la curva, a ``to_point``.
 
-\ ``to_point`` must be in this curve's local space.
+\ ``to_point`` debe estar en el espacio local de esta curva.
 
 .. rst-class:: classref-item-separator
 
@@ -212,7 +212,7 @@ Returns the closest point on baked segments (in curve's local space) to ``to_poi
 
 :ref:`Vector2<class_Vector2>` **get_point_in**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_point_in>`
 
-Returns the position of the control point leading to the vertex ``idx``. The returned position is relative to the vertex ``idx``. If the index is out of bounds, the function sends an error to the console, and returns ``(0, 0)``.
+Devuelve la posición del punto de control que precede al vértice ``idx``. La posición devuelta es relativa al vértice ``idx``. Si el índice está fuera de los límites, la función envía un error a la consola y devuelve ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -224,7 +224,7 @@ Returns the position of the control point leading to the vertex ``idx``. The ret
 
 :ref:`Vector2<class_Vector2>` **get_point_out**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_point_out>`
 
-Returns the position of the control point leading out of the vertex ``idx``. The returned position is relative to the vertex ``idx``. If the index is out of bounds, the function sends an error to the console, and returns ``(0, 0)``.
+Devuelve la posición del punto de control que sale del vértice ``idx``. La posición devuelta es relativa al vértice ``idx``. Si el índice está fuera de los límites, la función envía un error a la consola y devuelve ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ Returns the position of the control point leading out of the vertex ``idx``. The
 
 :ref:`Vector2<class_Vector2>` **get_point_position**\ (\ idx\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Curve2D_method_get_point_position>`
 
-Returns the position of the vertex ``idx``. If the index is out of bounds, the function sends an error to the console, and returns ``(0, 0)``.
+Devuelve la posición del vértice ``idx``. Si el índice está fuera de los límites, la función envía un error a la consola y devuelve ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -248,7 +248,7 @@ Returns the position of the vertex ``idx``. If the index is out of bounds, the f
 
 |void| **remove_point**\ (\ idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Curve2D_method_remove_point>`
 
-Deletes the point ``idx`` from the curve. Sends an error to the console if ``idx`` is out of bounds.
+Elimina el punto ``idx`` de la curva. Envía un error a la consola si ``idx`` está fuera de los límites.
 
 .. rst-class:: classref-item-separator
 
@@ -260,9 +260,9 @@ Deletes the point ``idx`` from the curve. Sends an error to the console if ``idx
 
 :ref:`Vector2<class_Vector2>` **sample**\ (\ idx\: :ref:`int<class_int>`, t\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_sample>`
 
-Returns the position between the vertex ``idx`` and the vertex ``idx + 1``, where ``t`` controls if the point is the first vertex (``t = 0.0``), the last vertex (``t = 1.0``), or in between. Values of ``t`` outside the range (``0.0 <= t <= 1.0``) give strange, but predictable results.
+Devuelve la posición entre el vértice ``idx`` y el vértice ``idx + 1``, donde ``t`` controla si el punto es el primer vértice (``t = 0.0``), el último vértice (``t = 1.0``) o un punto intermedio. Los valores de ``t`` fuera del rango (``0.0 <= t <= 1.0``) dan resultados extraños pero predecibles.
 
-If ``idx`` is out of bounds it is truncated to the first or last vertex, and ``t`` is ignored. If the curve has no points, the function sends an error to the console, and returns ``(0, 0)``.
+Si ``idx`` está fuera de los límites, se trunca al primer o último vértice y se ignora ``t``. Si la curva no tiene puntos, la función envía un error a la consola y devuelve ``(0, 0)``.
 
 .. rst-class:: classref-item-separator
 
@@ -274,11 +274,11 @@ If ``idx`` is out of bounds it is truncated to the first or last vertex, and ``t
 
 :ref:`Vector2<class_Vector2>` **sample_baked**\ (\ offset\: :ref:`float<class_float>` = 0.0, cubic\: :ref:`bool<class_bool>` = false\ ) |const| :ref:`🔗<class_Curve2D_method_sample_baked>`
 
-Returns a point within the curve at position ``offset``, where ``offset`` is measured as a pixel distance along the curve.
+Devuelve un punto dentro de la curva en la posición ``offset``, donde ``offset`` se mide como una distancia en píxeles a lo largo de la curva.
 
-To do that, it finds the two cached points where the ``offset`` lies between, then interpolates the values. This interpolation is cubic if ``cubic`` is set to ``true``, or linear if set to ``false``.
+Para ello, busca los dos puntos almacenados en caché entre los que se encuentra el ``offset`` y luego interpola los valores. Esta interpolación es cúbica si ``cubic`` se establece en ``true``, o lineal si se establece en ``false``.
 
-Cubic interpolation tends to follow the curves better, but linear is faster (and often, precise enough).
+La interpolación cúbica tiende a seguir mejor las curvas, pero la lineal es más rápida (y a menudo, lo suficientemente precisa).
 
 .. rst-class:: classref-item-separator
 
@@ -311,7 +311,7 @@ Similar to :ref:`sample_baked()<class_Curve2D_method_sample_baked>`, but returns
 
 :ref:`Vector2<class_Vector2>` **samplef**\ (\ fofs\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Curve2D_method_samplef>`
 
-Returns the position at the vertex ``fofs``. It calls :ref:`sample()<class_Curve2D_method_sample>` using the integer part of ``fofs`` as ``idx``, and its fractional part as ``t``.
+Devuelve la posición en el vértice ``fofs``. Llama a :ref:`sample()<class_Curve2D_method_sample>` utilizando la parte entera de ``fofs`` como ``idx`` y su parte fraccionaria como ``t``.
 
 .. rst-class:: classref-item-separator
 
@@ -323,7 +323,7 @@ Returns the position at the vertex ``fofs``. It calls :ref:`sample()<class_Curve
 
 |void| **set_point_in**\ (\ idx\: :ref:`int<class_int>`, position\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_Curve2D_method_set_point_in>`
 
-Sets the position of the control point leading to the vertex ``idx``. If the index is out of bounds, the function sends an error to the console. The position is relative to the vertex.
+Establece la posición del punto de control que precede al vértice ``idx``. Si el índice está fuera de los límites, la función envía un error a la consola. La posición es relativa al vértice.
 
 .. rst-class:: classref-item-separator
 
@@ -359,13 +359,13 @@ Establece la posición para el vértice ``idx``. Si el índice está fuera de lo
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **tessellate**\ (\ max_stages\: :ref:`int<class_int>` = 5, tolerance_degrees\: :ref:`float<class_float>` = 4\ ) |const| :ref:`🔗<class_Curve2D_method_tessellate>`
 
-Returns a list of points along the curve, with a curvature controlled point density. That is, the curvier parts will have more points than the straighter parts.
+Devuelve una lista de puntos a lo largo de la curva, con una densidad de puntos controlada por la curvatura. Es decir, las partes más curvas tendrán más puntos que las partes más rectas.
 
-This approximation makes straight segments between each point, then subdivides those segments until the resulting shape is similar enough.
+Esta aproximación crea segmentos rectos entre cada punto y luego subdivide esos segmentos hasta que la forma resultante sea lo suficientemente similar.
 
-\ ``max_stages`` controls how many subdivisions a curve segment may face before it is considered approximate enough. Each subdivision splits the segment in half, so the default 5 stages may mean up to 32 subdivisions per curve segment. Increase with care!
+\ ``max_stages`` controla cuántas subdivisiones puede tener un segmento de curva antes de que se considere lo suficientemente aproximado. Cada subdivisión divide el segmento por la mitad, por lo que las 5 etapas por defecto pueden significar hasta 32 subdivisiones por segmento de curva. ¡Aumenta este valor con cuidado!
 
-\ ``tolerance_degrees`` controls how many degrees the midpoint of a segment may deviate from the real curve, before the segment has to be subdivided.
+\ ``tolerance_degrees`` controla cuántos grados puede desviarse el punto medio de un segmento respecto a la curva real antes de que el segmento deba subdividirse.
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ This approximation makes straight segments between each point, then subdivides t
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **tessellate_even_length**\ (\ max_stages\: :ref:`int<class_int>` = 5, tolerance_length\: :ref:`float<class_float>` = 20.0\ ) |const| :ref:`🔗<class_Curve2D_method_tessellate_even_length>`
 
-Returns a list of points along the curve, with almost uniform density. ``max_stages`` controls how many subdivisions a curve segment may face before it is considered approximate enough. Each subdivision splits the segment in half, so the default 5 stages may mean up to 32 subdivisions per curve segment. Increase with care!
+Devuelve una lista de puntos a lo largo de la curva con una densidad casi uniforme. ``max_stages`` controla cuántas subdivisiones puede tener un segmento de curva antes de que se considere lo suficientemente aproximado. Cada subdivisión divide el segmento por la mitad, por lo que las 5 etapas por defecto pueden significar hasta 32 subdivisiones por segmento de curva. ¡Aumenta este valor con cuidado!
 
-\ ``tolerance_length`` controls the maximal distance between two neighboring points, before the segment has to be subdivided.
+\ ``tolerance_length`` controla la distancia máxima permitida entre dos puntos vecinos antes de que el segmento deba subdividirse.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

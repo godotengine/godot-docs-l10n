@@ -356,13 +356,13 @@ enum **DriverResource**: :ref:`🔗<enum_RenderingDevice_DriverResource>`
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_LOGICAL_DEVICE** = ``0``
 
-基于物理设备的特定设备对象（忽略 ``rid`` 参数）。
+基于物理设备的特定设备对象（ ``rid`` 参数会被忽略）。
 
-- Vulkan：Vulkan 设备驱动资源（\ ``VkDevice``\ ）。
+- Vulkan：Vulkan 设备驱动资源 ( ``VkDevice`` )。
 
-- D3D12：D3D12 设备驱动资源（\ ``ID3D12Device``\ ）。
+- D3D12：D3D12 设备驱动资源 ( ``ID3D12Device`` )。
 
-- Metal：Metal 设备驱动资源（\ ``MTLDevice``\ ）。
+- Metal：Metal 设备驱动资源 ( ``MTLDevice`` )。
 
 .. _class_RenderingDevice_constant_DRIVER_RESOURCE_PHYSICAL_DEVICE:
 
@@ -392,13 +392,13 @@ enum **DriverResource**: :ref:`🔗<enum_RenderingDevice_DriverResource>`
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_COMMAND_QUEUE** = ``3``
 
-The main graphics-compute command queue (``rid`` parameter is ignored).
+主要图形计算命令队列（忽略 ``rid`` 参数）。
 
-- Vulkan: ``VkQueue``.
+- Vulkan：\ ``VkQueue``\ 。
 
-- D3D12: ``ID3D12CommandQueue``.
+- D3D12：\ ``ID3D12CommandQueue``\ 。
 
-- Metal: ``MTLCommandQueue``.
+- Metal：\ ``MTLCommandQueue``\ 。
 
 .. _class_RenderingDevice_constant_DRIVER_RESOURCE_QUEUE_FAMILY:
 
@@ -416,9 +416,9 @@ The main graphics-compute command queue (``rid`` parameter is ignored).
 
 :ref:`DriverResource<enum_RenderingDevice_DriverResource>` **DRIVER_RESOURCE_TEXTURE** = ``5``
 
-- Vulkan: ``VkImage``.
+- Vulkan：\ ``VkImage``\ 。
 
-- D3D12: ``ID3D12Resource``.
+- D3D12：\ ``ID3D12Resource``\ 。
 
 .. _class_RenderingDevice_constant_DRIVER_RESOURCE_TEXTURE_VIEW:
 
@@ -752,7 +752,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8_SRGB** = ``14``
 
-8-bit-per-channel unsigned floating-point red channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数红通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8_UNORM:
 
@@ -808,7 +808,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8_SRGB** = ``21``
 
-8-bit-per-channel unsigned floating-point red/green channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数红、绿通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8_UNORM:
 
@@ -864,7 +864,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8_SRGB** = ``28``
 
-8-bit-per-channel unsigned floating-point red/green/blue channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数红、绿、蓝通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8_UNORM:
 
@@ -920,7 +920,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8_SRGB** = ``35``
 
-8-bit-per-channel unsigned floating-point blue/green/red data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数蓝、绿、红通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_R8G8B8A8_UNORM:
 
@@ -976,7 +976,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_R8G8B8A8_SRGB** = ``42``
 
-8-bit-per-channel unsigned floating-point red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_B8G8R8A8_UNORM:
 
@@ -1032,7 +1032,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_B8G8R8A8_SRGB** = ``49``
 
-8-bit-per-channel unsigned floating-point blue/green/red/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数蓝、绿、红、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A8B8G8R8_UNORM_PACK32:
 
@@ -1088,7 +1088,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_A8B8G8R8_SRGB_PACK32** = ``56``
 
-8-bit-per-channel unsigned floating-point alpha/red/green/blue channel data format with normalized value and nonlinear sRGB encoding, packed in 32 bits. Values are in the ``[0.0, 1.0]`` range.
+每通道 8 位的无符号浮点数 Alpha、红、绿、蓝通道数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 32 个比特位中。取值均在 ``[0.0, 1.0]`` 的范围内。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_A2R10G10B10_UNORM_PACK32:
 
@@ -1688,7 +1688,7 @@ Alpha、红、绿、蓝通道数据格式，Alpha 占 1 位、红占 5 位、绿
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC1_RGB_SRGB_BLOCK** = ``131``
 
-VRAM-compressed unsigned red/green/blue channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, and 5 bits of blue channel. Using BC1 texture compression (also known as S3TC DXT1).
+显存压缩的无符号红、绿、蓝通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。该格式的精度为红通道 5 位、绿通道 6 位、蓝通道 5 位。使用 BC1 纹理压缩（也叫 S3TC DXT1）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC1_RGBA_UNORM_BLOCK:
 
@@ -1704,7 +1704,7 @@ VRAM-compressed unsigned red/green/blue channel data format with normalized valu
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC1_RGBA_SRGB_BLOCK** = ``133``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel, and 1 bit of alpha channel. Using BC1 texture compression (also known as S3TC DXT1).
+显存压缩的无符号红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。该格式的精度为红通道 5 位、绿通道 6 位、蓝通道 5 位、Alpha 通道 1 位。使用 BC1 纹理压缩（也叫 S3TC DXT1）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC2_UNORM_BLOCK:
 
@@ -1720,7 +1720,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC2_SRGB_BLOCK** = ``135``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel, and 4 bits of alpha channel. Using BC2 texture compression (also known as S3TC DXT3).
+显存压缩的无符号红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。该格式的精度为红通道 5 位、绿通道 6 位、蓝通道 5 位、Alpha 通道 4 位。使用 BC2 纹理压缩（也叫 S3TC DXT3）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC3_UNORM_BLOCK:
 
@@ -1736,7 +1736,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC3_SRGB_BLOCK** = ``137``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. The format's precision is 5 bits of red channel, 6 bits of green channel, 5 bits of blue channel, and 8 bits of alpha channel. Using BC3 texture compression (also known as S3TC DXT5).
+显存压缩的无符号红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。该格式的精度为红通道 5 位、绿通道 6 位、蓝通道 5 位、Alpha 通道 8 位。使用 BC3 纹理压缩（也叫 S3TC DXT5）。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_BC4_UNORM_BLOCK:
 
@@ -1800,7 +1800,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_BC7_SRGB_BLOCK** = ``145``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. The format's precision is between 4 and 7 bits for the red/green/blue channels and between 0 and 8 bits for the alpha channel. Also known as BPTC LDR.
+显存压缩的无符号红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。该格式的精度为红、绿、蓝通道在 4 到 7 位之间，Alpha 通道在 0 到 8 位之间。使用 BC7 纹理压缩。也叫 BPTC HDR。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ETC2_R8G8B8_UNORM_BLOCK:
 
@@ -1816,7 +1816,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ETC2_R8G8B8_SRGB_BLOCK** = ``147``
 
-VRAM-compressed unsigned red/green/blue channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. Using ETC2 texture compression.
+显存压缩的无符号红、绿、蓝通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ETC2 纹理压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ETC2_R8G8B8A1_UNORM_BLOCK:
 
@@ -1832,7 +1832,7 @@ VRAM-compressed unsigned red/green/blue channel data format with normalized valu
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK** = ``149``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. Red/green/blue use 8 bit of precision each, with alpha using 1 bit of precision. Using ETC2 texture compression.
+显存压缩的无符号红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。红、绿、蓝均使用 8 位精度，Alpha 使用 1 位精度。使用 ETC2 纹理压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK:
 
@@ -1848,7 +1848,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ETC2_R8G8B8A8_SRGB_BLOCK** = ``151``
 
-VRAM-compressed unsigned red/green/blue/alpha channel data format with normalized value and nonlinear sRGB encoding. Values are in the ``[0.0, 1.0]`` range. Red/green/blue use 8 bits of precision each, with alpha using 8 bits of precision. Using ETC2 texture compression.
+显存压缩的无符号红、绿、蓝、Alpha 通道数据格式，使用归一化的值、非线性 sRGB 编码。取值均在 ``[0.0, 1.0]`` 的范围内。红、绿、蓝均使用 8 位精度，Alpha 使用 8 位精度。使用 ETC2 纹理压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_EAC_R11_UNORM_BLOCK:
 
@@ -1896,7 +1896,7 @@ VRAM-compressed unsigned red/green/blue/alpha channel data format with normalize
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_4x4_SRGB_BLOCK** = ``157``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 4×4 blocks (highest quality). Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 4x4 的区块内（质量最高）。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_5x4_UNORM_BLOCK:
 
@@ -1912,7 +1912,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_5x4_SRGB_BLOCK** = ``159``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 5×4 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 5x4 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_5x5_UNORM_BLOCK:
 
@@ -1928,7 +1928,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_5x5_SRGB_BLOCK** = ``161``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 5×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 5x5 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_6x5_UNORM_BLOCK:
 
@@ -1944,7 +1944,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_6x5_SRGB_BLOCK** = ``163``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 6×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 6x5 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_6x6_UNORM_BLOCK:
 
@@ -1960,7 +1960,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_6x6_SRGB_BLOCK** = ``165``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 6×6 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 6x6 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_8x5_UNORM_BLOCK:
 
@@ -1976,7 +1976,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_8x5_SRGB_BLOCK** = ``167``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 8×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 8x5 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_8x6_UNORM_BLOCK:
 
@@ -1992,7 +1992,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_8x6_SRGB_BLOCK** = ``169``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 8×6 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 8x6 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_8x8_UNORM_BLOCK:
 
@@ -2008,7 +2008,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_8x8_SRGB_BLOCK** = ``171``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 8×8 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 8x8 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x5_UNORM_BLOCK:
 
@@ -2024,7 +2024,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x5_SRGB_BLOCK** = ``173``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 10×5 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 10x5 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x6_UNORM_BLOCK:
 
@@ -2040,7 +2040,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x6_SRGB_BLOCK** = ``175``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 10×6 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 10x6 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x8_UNORM_BLOCK:
 
@@ -2056,7 +2056,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x8_SRGB_BLOCK** = ``177``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 10×8 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 10x8 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_10x10_UNORM_BLOCK:
 
@@ -2072,7 +2072,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_10x10_SRGB_BLOCK** = ``179``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 10×10 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 10x10 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_12x10_UNORM_BLOCK:
 
@@ -2088,7 +2088,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_12x10_SRGB_BLOCK** = ``181``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 12×10 blocks. Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 12x10 的区块内。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_ASTC_12x12_UNORM_BLOCK:
 
@@ -2104,7 +2104,7 @@ VRAM-compressed unsigned floating-point data format with normalized value and no
 
 :ref:`DataFormat<enum_RenderingDevice_DataFormat>` **DATA_FORMAT_ASTC_12x12_SRGB_BLOCK** = ``183``
 
-VRAM-compressed unsigned floating-point data format with normalized value and nonlinear sRGB encoding, packed in 12 blocks (lowest quality). Values are in the ``[0.0, 1.0]`` range. Using ASTC compression.
+显存压缩的无符号浮点数数据格式，使用归一化的值、非线性 sRGB 编码，紧缩在 12 个区块内（质量最低）。取值均在 ``[0.0, 1.0]`` 的范围内。使用 ASTC 压缩。
 
 .. _class_RenderingDevice_constant_DATA_FORMAT_G8B8G8R8_422_UNORM:
 
@@ -2808,7 +2808,7 @@ flags **TextureUsageBits**: :ref:`🔗<enum_RenderingDevice_TextureUsageBits>`
 
 :ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>` **TEXTURE_USAGE_DEPTH_RESOLVE_ATTACHMENT_BIT** = ``4096``
 
-Texture can be used as a depth/stencil resolve attachment in a framebuffer.
+纹理可以用作帧缓冲的深度/模板解析附件。
 
 .. _class_RenderingDevice_constant_TEXTURE_USAGE_STORAGE_BIT:
 
@@ -3333,11 +3333,11 @@ Uniform 缓冲区 uniform。
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_UNIFORM_BUFFER_DYNAMIC** = ``10``
 
-Same as UNIFORM_TYPE_UNIFORM_BUFFER but for buffers created with BUFFER_CREATION_DYNAMIC_PERSISTENT_BIT.
+与 UNIFORM_TYPE_UNIFORM_BUFFER 相同，但适用于使用 BUFFER_CREATION_DYNAMIC_PERSISTENT_BIT 创建的缓冲区。
 
-\ **Note:** This flag is not available to GD users due to being too dangerous (i.e. wrong usage can result in visual glitches).
+\ **注意：**\ 由于该标志过于危险（即错误使用可能会导致视觉故障），因此该标志对 GD 用户不可用。
 
-It's exposed in case GD users receive a buffer created with such flag from Godot.
+之所以公开该标志，是为了防止 GD 用户从 Godot 接收到使用该标志创建的缓冲区。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_STORAGE_BUFFER_DYNAMIC:
 
@@ -3345,11 +3345,11 @@ It's exposed in case GD users receive a buffer created with such flag from Godot
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_STORAGE_BUFFER_DYNAMIC** = ``11``
 
-Same as UNIFORM_TYPE_STORAGE_BUFFER but for buffers created with BUFFER_CREATION_DYNAMIC_PERSISTENT_BIT.
+与 UNIFORM_TYPE_STORAGE_BUFFER 相同，但适用于使用 BUFFER_CREATION_DYNAMIC_PERSISTENT_BIT 标志创建的缓冲区。
 
-\ **Note:** This flag is not available to GD users due to being too dangerous (i.e. wrong usage can result in visual glitches).
+\ **注意：**\ 由于该标志过于危险（即错误使用可能会导致视觉故障），因此该标志对 GD 用户不可用。
 
-It's exposed in case GD users receive a buffer created with such flag from Godot.
+之所以公开该标志，是为了防止 GD 用户从 Godot 接收到使用该标志创建的缓冲区。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_MAX:
 
@@ -5516,11 +5516,11 @@ flags **DrawFlags**: :ref:`🔗<enum_RenderingDevice_DrawFlags>`
 
 :ref:`RID<class_RID>` **compute_pipeline_create**\ (\ shader\: :ref:`RID<class_RID>`, specialization_constants\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] = []\ ) :ref:`🔗<class_RenderingDevice_method_compute_pipeline_create>`
 
-Creates a new compute pipeline. It can be accessed with the RID that is returned.
+新建计算管线。管线可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when the ``shader`` is freed.
+当 ``shader`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -5717,7 +5717,7 @@ Vulkan 扩展 ``VK_EXT_DEBUG_UTILS_EXTENSION_NAME`` 必须可用并启用，这�
 
 |void| **draw_list_bind_vertex_buffers_format**\ (\ draw_list\: :ref:`int<class_int>`, vertex_format\: :ref:`int<class_int>`, vertex_count\: :ref:`int<class_int>`, vertex_buffers\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], offsets\: :ref:`PackedInt64Array<class_PackedInt64Array>` = PackedInt64Array()\ ) :ref:`🔗<class_RenderingDevice_method_draw_list_bind_vertex_buffers_format>`
 
-Binds a set of ``vertex_buffers`` directly to the specified ``draw_list`` using ``vertex_format`` without creating a vertex array RID. Provide the number of vertices in ``vertex_count``; optional per-buffer byte ``offsets`` may also be supplied.
+使用 ``vertex_format`` 将一组 ``vertex_buffers`` 直接绑定到指定的 ``draw_list``\ ，而不创建顶点数组 RID。在 ``vertex_count`` 中提供顶点数；也可以选择提供各缓冲区字节 ``offsets``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5841,11 +5841,11 @@ Binds a set of ``vertex_buffers`` directly to the specified ``draw_list`` using 
 
 :ref:`RID<class_RID>` **framebuffer_create**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], validate_with_format\: :ref:`int<class_int>` = -1, view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_create>`
 
-Creates a new framebuffer. It can be accessed with the RID that is returned.
+新建帧缓冲。帧缓冲可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when any of the ``textures`` is freed.
+当 ``textures`` 中的任何纹理被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -5871,11 +5871,11 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`RID<class_RID>` **framebuffer_create_multipass**\ (\ textures\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], passes\: :ref:`Array<class_Array>`\[:ref:`RDFramebufferPass<class_RDFramebufferPass>`\], validate_with_format\: :ref:`int<class_int>` = -1, view_count\: :ref:`int<class_int>` = 1\ ) :ref:`🔗<class_RenderingDevice_method_framebuffer_create_multipass>`
 
-Creates a new multipass framebuffer. It can be accessed with the RID that is returned.
+新建多阶段帧缓冲。可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when any of the ``textures`` is freed.
+当任何 ``textures`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -6337,11 +6337,11 @@ This will be freed automatically when any of the ``textures`` is freed.
 
 :ref:`RID<class_RID>` **index_array_create**\ (\ index_buffer\: :ref:`RID<class_RID>`, index_offset\: :ref:`int<class_int>`, index_count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_index_array_create>`
 
-Creates a new index array. It can be accessed with the RID that is returned.
+新建索引数组。可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when the ``index_buffer`` is freed.
+当 ``index_buffer`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -6381,11 +6381,11 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`RID<class_RID>` **render_pipeline_create**\ (\ shader\: :ref:`RID<class_RID>`, framebuffer_format\: :ref:`int<class_int>`, vertex_format\: :ref:`int<class_int>`, primitive\: :ref:`RenderPrimitive<enum_RenderingDevice_RenderPrimitive>`, rasterization_state\: :ref:`RDPipelineRasterizationState<class_RDPipelineRasterizationState>`, multisample_state\: :ref:`RDPipelineMultisampleState<class_RDPipelineMultisampleState>`, stencil_state\: :ref:`RDPipelineDepthStencilState<class_RDPipelineDepthStencilState>`, color_blend_state\: :ref:`RDPipelineColorBlendState<class_RDPipelineColorBlendState>`, dynamic_state_flags\: |bitfield|\[:ref:`PipelineDynamicStateFlags<enum_RenderingDevice_PipelineDynamicStateFlags>`\] = 0, for_render_pass\: :ref:`int<class_int>` = 0, specialization_constants\: :ref:`Array<class_Array>`\[:ref:`RDPipelineSpecializationConstant<class_RDPipelineSpecializationConstant>`\] = []\ ) :ref:`🔗<class_RenderingDevice_method_render_pipeline_create>`
 
-Creates a new render pipeline. It can be accessed with the RID that is returned.
+新建渲染管线。可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when the ``shader`` is freed.
+当 ``shader`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -6697,9 +6697,9 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid()<class_Re
 
 :ref:`RID<class_RID>` **texture_create_shared**\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_shared>`
 
-Creates a shared texture using the specified ``view`` and the texture information from ``with_texture``.
+使用指定的 ``view`` 和来自 ``with_texture`` 的纹理信息创建一个共享纹理。
 
-This will be freed automatically when the ``with_texture`` is freed.
+当 ``with_texture`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -6711,13 +6711,13 @@ This will be freed automatically when the ``with_texture`` is freed.
 
 :ref:`RID<class_RID>` **texture_create_shared_from_slice**\ (\ view\: :ref:`RDTextureView<class_RDTextureView>`, with_texture\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, mipmap\: :ref:`int<class_int>`, mipmaps\: :ref:`int<class_int>` = 1, slice_type\: :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` = 0\ ) :ref:`🔗<class_RenderingDevice_method_texture_create_shared_from_slice>`
 
-Creates a shared texture using the specified ``view`` and the texture information from ``with_texture``'s ``layer`` and ``mipmap``. The number of included mipmaps from the original texture can be controlled using the ``mipmaps`` parameter. Only relevant for textures with multiple layers, such as 3D textures, texture arrays and cubemaps. For single-layer textures, use :ref:`texture_create_shared()<class_RenderingDevice_method_texture_create_shared>`.
+使用指定的 ``view`` 和来自 ``with_texture`` 的 ``layer`` 和 ``mipmap`` 的纹理信息创建共享纹理。可以使用 ``mipmaps`` 参数控制包含的原始纹理的 mipmap 数量。仅适用于具有多个图层的纹理，例如 3D 纹理、纹理数组和立方体贴图。对于单层纹理，请使用 :ref:`texture_create_shared()<class_RenderingDevice_method_texture_create_shared>`\ 。
 
-For 2D textures (which only have one layer), ``layer`` must be ``0``.
+对于 2D 纹理（只有一个图层），\ ``layer`` 必须为 ``0``\ 。
 
-\ **Note:** Layer slicing is only supported for 2D texture arrays, not 3D textures or cubemaps.
+\ **注意：**\ 只有 2D 纹理数组支持图层切片，3D 纹理和立方体贴图不支持。
 
-This will be freed automatically when the ``with_texture`` is freed.
+当 ``with_texture`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -6922,11 +6922,11 @@ RID 使用结束后，应该使用 RenderingDevice 的 :ref:`free_rid()<class_Re
 
 :ref:`RID<class_RID>` **uniform_set_create**\ (\ uniforms\: :ref:`Array<class_Array>`\[:ref:`RDUniform<class_RDUniform>`\], shader\: :ref:`RID<class_RID>`, shader_set\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingDevice_method_uniform_set_create>`
 
-Creates a new uniform set. It can be accessed with the RID that is returned.
+新建 uniform 集。可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when the ``shader`` or any of the RIDs in the ``uniforms`` is freed.
+当 ``shader`` 或 ``uniforms`` 中的任意 RID 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 
@@ -6950,11 +6950,11 @@ This will be freed automatically when the ``shader`` or any of the RIDs in the `
 
 :ref:`RID<class_RID>` **vertex_array_create**\ (\ vertex_count\: :ref:`int<class_int>`, vertex_format\: :ref:`int<class_int>`, src_buffers\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], offsets\: :ref:`PackedInt64Array<class_PackedInt64Array>` = PackedInt64Array()\ ) :ref:`🔗<class_RenderingDevice_method_vertex_array_create>`
 
-Creates a vertex array based on the specified buffers. Optionally, ``offsets`` (in bytes) may be defined for each buffer.
+根据指定的缓冲区创建顶点数组。可以选择为每个缓冲区定义 ``offsets``\ （单位为字节）。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid()<class_RenderingDevice_method_free_rid>` method.
+使用完 RID 后，需要使用 RenderingDevice 的 :ref:`free_rid()<class_RenderingDevice_method_free_rid>` 方法释放该 RID。
 
-This will be freed automatically when any of the ``src_buffers`` is freed.
+当任一 ``src_buffers`` 被释放时，它将自动释放。
 
 .. rst-class:: classref-item-separator
 

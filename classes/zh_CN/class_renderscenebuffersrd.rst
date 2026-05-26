@@ -14,13 +14,13 @@ RenderSceneBuffersRD
 描述
 ----
 
-This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled. See also :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`.
+该对象管理基于渲染设备的渲染器的所有 3D 渲染缓冲区。为每个启用 3D 渲染的视口创建该对象的实例。另见 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>`\ 。
 
-All buffers are organized in **contexts**. The default context is called **render_buffers** and can contain amongst others the color buffer, depth buffer, velocity buffers, VRS density map and MSAA variants of these buffers.
+所有缓冲区都被组织在\ **上下文**\ 中。默认上下文被称为 **render_buffers**\ ，可以包含颜色缓冲区、深度缓冲区、速度缓冲区、VRS 密度图和这些缓冲区的 MSAA 变体等。
 
-Buffers are only guaranteed to exist during rendering of the viewport.
+缓冲区仅保证在视口渲染期间存在。
 
-\ **Note:** This is an internal rendering server object. Do not instantiate this class from a script.
+\ **注意：**\ 这是内部渲染服务器对象。请勿在脚本中实例化该类。
 
 .. rst-class:: classref-reftable-group
 

@@ -7,7 +7,7 @@ InputEventScreenDrag
 
 **Hereda:** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Represents a screen drag event.
+Representa un evento de arrastre en pantalla.
 
 .. rst-class:: classref-introduction-group
 
@@ -88,7 +88,7 @@ El índice de eventos de arrastre en el caso de un evento de arrastre múltiple.
 - |void| **set_pen_inverted**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_pen_inverted**\ (\ )
 
-Returns ``true`` when using the eraser end of a stylus pen.
+Devuelve ``true`` cuando se usa el extremo de borrador de un lápiz óptico.
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ Returns ``true`` when using the eraser end of a stylus pen.
 - |void| **set_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_position**\ (\ )
 
-The drag position in the viewport the node is in, using the coordinate system of this viewport.
+La posición de arrastre en la ventana gráfica en la que se encuentra el nodo, usando el sistema de coordenadas de esta ventana gráfica.
 
 .. rst-class:: classref-item-separator
 
@@ -139,9 +139,9 @@ Representa la presión que el usuario ejerce sobre el bolígrafo. Va desde ``0.0
 - |void| **set_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_relative**\ (\ )
 
-The drag position relative to the previous position (position at the last frame).
+La posición de arrastre relativa a la posición anterior (posición en el último fotograma).
 
-\ **Note:** :ref:`relative<class_InputEventScreenDrag_property_relative>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using :ref:`relative<class_InputEventScreenDrag_property_relative>` in a script that handles touch aiming. To avoid this, use :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>` instead.
+\ **Nota:** :ref:`relative<class_InputEventScreenDrag_property_relative>` se escala automáticamente según el factor de escala de contenido, que se define por la configuración del modo de estiramiento del proyecto. Esto significa que la sensibilidad táctil aparecerá diferente dependiendo de la resolución al usar :ref:`relative<class_InputEventScreenDrag_property_relative>` en un script que maneja el apuntado táctil. Para evitar esto, usa :ref:`screen_relative<class_InputEventScreenDrag_property_screen_relative>` en su lugar.
 
 .. rst-class:: classref-item-separator
 
@@ -158,7 +158,7 @@ The drag position relative to the previous position (position at the last frame)
 - |void| **set_screen_relative**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_relative**\ (\ )
 
-The unscaled drag position relative to the previous position in screen coordinates (position at the last frame). This position is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`relative<class_InputEventScreenDrag_property_relative>` for touch aiming regardless of the project's stretch mode.
+La posición de arrastre sin escalar relativa a la posición anterior en coordenadas de pantalla (posición en el último fotograma). Esta posición *no* se escala según el factor de escala de contenido o las llamadas a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Esto debería preferirse sobre :ref:`relative<class_InputEventScreenDrag_property_relative>` para el apuntado táctil, independientemente del modo de estiramiento del proyecto.
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ The unscaled drag position relative to the previous position in screen coordinat
 - |void| **set_screen_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_screen_velocity**\ (\ )
 
-The unscaled drag velocity in pixels per second in screen coordinates. This velocity is *not* scaled according to the content scale factor or calls to :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. This should be preferred over :ref:`velocity<class_InputEventScreenDrag_property_velocity>` for touch aiming regardless of the project's stretch mode.
+La velocidad de arrastre sin escalar en píxeles por segundo en coordenadas de pantalla. Esta velocidad *no* se escala según el factor de escala de contenido o las llamadas a :ref:`InputEvent.xformed_by()<class_InputEvent_method_xformed_by>`. Esto debería preferirse sobre :ref:`velocity<class_InputEventScreenDrag_property_velocity>` para el apuntado táctil, independientemente del modo de estiramiento del proyecto.
 
 .. rst-class:: classref-item-separator
 
@@ -209,9 +209,9 @@ Representa los ángulos de inclinación del bolígrafo. El valor positivo de la 
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-The drag velocity.
+La velocidad de arrastre.
 
-\ **Note:** :ref:`velocity<class_InputEventScreenDrag_property_velocity>` is automatically scaled according to the content scale factor, which is defined by the project's stretch mode settings. This means touch sensitivity will appear different depending on resolution when using :ref:`velocity<class_InputEventScreenDrag_property_velocity>` in a script that handles touch aiming. To avoid this, use :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>` instead.
+\ **Nota:** :ref:`velocity<class_InputEventScreenDrag_property_velocity>` se escala automáticamente según el factor de escala de contenido, que se define por la configuración del modo de estiramiento del proyecto. Esto significa que la sensibilidad táctil aparecerá diferente dependiendo de la resolución al usar :ref:`velocity<class_InputEventScreenDrag_property_velocity>` en un script que maneja el apuntado táctil. Para evitar esto, usa :ref:`screen_velocity<class_InputEventScreenDrag_property_screen_velocity>` en su lugar.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -202,7 +202,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_IDLE_STEP** = ``1``
 
-通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。与这些物体相比，该相机的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
+通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__ 。与这些物体相比，该相机的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
 
 .. _class_Camera3D_constant_DOPPLER_TRACKING_PHYSICS_STEP:
 
@@ -210,7 +210,7 @@ enum **DopplerTracking**: :ref:`🔗<enum_Camera3D_DopplerTracking>`
 
 :ref:`DopplerTracking<enum_Camera3D_DopplerTracking>` **DOPPLER_TRACKING_PHYSICS_STEP** = ``2``
 
-通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `多普勒效应 <https://zh.wikipedia.org/wiki/%E5%A4%9A%E6%99%AE%E5%8B%92%E6%95%88%E5%BA%94>`__\ 。与这些物体相比，该相机的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
+通过跟踪在 ``_process`` 中改变的物体位置来模拟\ `Doppler effect <https://en.wikipedia.org/wiki/Doppler_effect>`__\ 。与这些物体相比，该相机的相对速度的变化会影响音频的感知方式（改变音频的 :ref:`AudioStreamPlayer3D.pitch_scale<class_AudioStreamPlayer3D_property_pitch_scale>`\ ）。
 
 .. rst-class:: classref-section-separator
 

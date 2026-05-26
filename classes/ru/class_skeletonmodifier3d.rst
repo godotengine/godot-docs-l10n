@@ -227,7 +227,7 @@ enum **SecondaryDirection**: :ref:`🔗<enum_SkeletonModifier3D_SecondaryDirecti
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_NONE** = ``0``
 
-Enumerated value for the case when the axis is undefined.
+Перечисляемое значение для случая, когда ось не определена.
 
 .. _class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_PLUS_X:
 
@@ -283,7 +283,7 @@ Enumerated value for the case when the axis is undefined.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **SECONDARY_DIRECTION_CUSTOM** = ``7``
 
-Enumerated value for an optional axis.
+Перечисляемое значение для необязательной оси.
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ enum **RotationAxis**: :ref:`🔗<enum_SkeletonModifier3D_RotationAxis>`
 
 :ref:`RotationAxis<enum_SkeletonModifier3D_RotationAxis>` **ROTATION_AXIS_CUSTOM** = ``4``
 
-Enumerated value for an optional rotation axis.
+Перечисляемое значение для необязательной оси вращения.
 
 .. rst-class:: classref-section-separator
 
@@ -407,13 +407,13 @@ Enumerated value for an optional rotation axis.
 
 |void| **_process_modification_with_delta**\ (\ delta\: :ref:`float<class_float>`\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__process_modification_with_delta>`
 
-Override this virtual method to implement a custom skeleton modifier. You should do things like get the :ref:`Skeleton3D<class_Skeleton3D>`'s current pose and apply the pose here.
+Переопределите этот виртуальный метод, чтобы реализовать пользовательский модификатор скелета. Вам следует получить текущую позу :ref:`Skeleton3D<class_Skeleton3D>` и применить её здесь.
 
-\ :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` must not apply :ref:`influence<class_SkeletonModifier3D_property_influence>` to bone poses because the :ref:`Skeleton3D<class_Skeleton3D>` automatically applies influence to all bone poses set by the modifier.
+Метод :ref:`_process_modification_with_delta()<class_SkeletonModifier3D_private_method__process_modification_with_delta>` не должен применять :ref:`influence<class_SkeletonModifier3D_property_influence>` к позам костей, поскольку :ref:`Skeleton3D<class_Skeleton3D>` автоматически применяет влияние ко всем позам костей, заданным модификатором.
 
-\ ``delta`` is passed from parent :ref:`Skeleton3D<class_Skeleton3D>`. See also :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
+\ ``delta`` передаётся от родительского :ref:`Skeleton3D<class_Skeleton3D>`. См. также :ref:`Skeleton3D.advance()<class_Skeleton3D_method_advance>`.
 
-\ **Note:** This method may be called outside :ref:`Node._process()<class_Node_private_method__process>` and :ref:`Node._physics_process()<class_Node_private_method__physics_process>` with ``delta`` is ``0.0``, since the modification should be processed immediately after initialization of the :ref:`Skeleton3D<class_Skeleton3D>`.
+\ **Примечание:** Этот метод может быть вызван вне :ref:`Node._process()<class_Node_private_method__process>` и :ref:`Node._physics_process()<class_Node_private_method__physics_process>` с ``delta`` равным ``0.0``, поскольку модификация должна быть обработана сразу после инициализации :ref:`Skeleton3D<class_Skeleton3D>`.
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Override this virtual method to implement a custom skeleton modifier. You should
 
 |void| **_validate_bone_names**\ (\ ) |virtual| :ref:`🔗<class_SkeletonModifier3D_private_method__validate_bone_names>`
 
-Called when bone names and indices need to be validated, such as when entering the scene tree or changing skeleton.
+Вызывается, когда необходимо проверить имена и индексы костей, например, при входе в дерево сцены или изменении скелета.
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Called when bone names and indices need to be validated, such as when entering t
 
 :ref:`Skeleton3D<class_Skeleton3D>` **get_skeleton**\ (\ ) |const| :ref:`🔗<class_SkeletonModifier3D_method_get_skeleton>`
 
-Returns the parent :ref:`Skeleton3D<class_Skeleton3D>` node if it exists. Otherwise, returns ``null``.
+Возвращает родительский узел :ref:`Skeleton3D<class_Skeleton3D>`, если он существует. В противном случае возвращает ``null``.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

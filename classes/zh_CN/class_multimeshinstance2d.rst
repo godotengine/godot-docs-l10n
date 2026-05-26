@@ -17,9 +17,9 @@ MultiMeshInstance2D
 描述
 ----
 
-**MultiMeshInstance2D** is a specialized node to instance a :ref:`MultiMesh<class_MultiMesh>` resource in 2D. This can be faster to render compared to displaying many :ref:`Sprite2D<class_Sprite2D>` nodes with large transparent areas, especially if the nodes take up a lot of space on screen at high viewport resolutions. This is because using a mesh designed to fit the sprites' opaque areas will reduce GPU fill rate utilization (at the cost of increased vertex processing utilization).
+**MultiMeshInstance2D** 是一个专门用于在 2D 中实例化 :ref:`MultiMesh<class_MultiMesh>` 资源的节点。与显示许多带有大面积透明区域的 :ref:`Sprite2D<class_Sprite2D>` 节点相比，这种方法渲染速度更快，尤其是在视口分辨率较高且节点占据屏幕较大空间的情况下。这是因为使用专为适合精灵不透明区域而设计的网格可以降低 GPU 填充率（但会增加顶点处理的开销）。
 
-Usage is the same as :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>`.
+其用法与 :ref:`MultiMeshInstance3D<class_MultiMeshInstance3D>` 相同。
 
 .. rst-class:: classref-reftable-group
 

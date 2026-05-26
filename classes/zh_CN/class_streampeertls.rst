@@ -7,14 +7,14 @@ StreamPeerTLS
 
 **继承：** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-处理 TLS 连接的流对等体。
+处理 TLS 连接的流对等端。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-处理 TLS 连接的流对等体。此对象可用于连接到 TLS 服务器或接受单个 TLS 客户端连接。
+处理 TLS 连接的流对等端。此对象可用于连接到 TLS 服务器或接受单个 TLS 客户端连接。
 
 \ **注意：**\ 当导出到 Android 时，确保在导出项目或使用一键部署之前，在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何形式的网络通信都会被 Android 阻止。
 
@@ -117,7 +117,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **accept_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, server_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_StreamPeerTLS_method_accept_stream>`
 
-以服务器的身份接受对等体连接，使用给定的服务器选项 ``server_options``\ 。见 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
+以服务器的身份接受对等端连接，使用给定的服务器选项 ``server_options``\ 。见 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -129,7 +129,7 @@ enum **Status**: :ref:`🔗<enum_StreamPeerTLS_Status>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_stream**\ (\ stream\: :ref:`StreamPeer<class_StreamPeer>`, common_name\: :ref:`String<class_String>`, client_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_StreamPeerTLS_method_connect_to_stream>`
 
-使用底层 :ref:`StreamPeer<class_StreamPeer>` ``stream`` 连接到对等体，并对远程证书是否由给定的 ``common_name`` 签名进行验证。传入 ``client_options`` 可以自定义信任的证书颁发机构，也可以禁用通用名称验证。见 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
+使用底层 :ref:`StreamPeer<class_StreamPeer>` ``stream`` 连接到对等端，并对远程证书是否由给定的 ``common_name`` 签名进行验证。传入 ``client_options`` 可以自定义信任的证书颁发机构，也可以禁用通用名称验证。见 :ref:`TLSOptions.client()<class_TLSOptions_method_client>` 和 :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`\ 。
 
 .. rst-class:: classref-item-separator
 

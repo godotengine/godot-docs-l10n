@@ -14,11 +14,11 @@ Proporciona una interfaz de alto nivel para implementar operaciones de deshacer 
 Descripción
 ----------------------
 
-UndoRedo works by registering methods and property changes inside "actions". You can create an action, then provide ways to do and undo this action using function calls and property changes, then commit the action.
+UndoRedo funciona registrando métodos y cambios de propiedades dentro de "acciones". Puedes crear una acción, luego proporcionar formas de realizar y deshacer esta acción usando llamadas a funciones y cambios de propiedades, y finalmente ejecutar la acción.
 
-When an action is committed, all of the ``do_*`` methods will run. If the :ref:`undo()<class_UndoRedo_method_undo>` method is used, the ``undo_*`` methods will run. If the :ref:`redo()<class_UndoRedo_method_redo>` method is used, once again, all of the ``do_*`` methods will run.
+Cuando una acción es ejecutada, todos los métodos ``do_*`` se ejecutarán. Si se usa el método :ref:`undo()<class_UndoRedo_method_undo>`, se ejecutarán los métodos ``undo_*``. Si se usa el método :ref:`redo()<class_UndoRedo_method_redo>`, nuevamente se ejecutarán todos los métodos ``do_*``.
 
-Here's an example on how to add an action:
+A continuación se muestra un ejemplo de cómo agregar una acción:
 
 
 .. tabs::
@@ -28,14 +28,14 @@ Here's an example on how to add an action:
     var undo_redo = UndoRedo.new()
 
     func do_something():
-        pass # Put your code here.
+        pass # Pon tu código aquí.
 
     func undo_something():
-        pass # Put here the code that reverts what's done by "do_something()".
+        pass # Pon aquí el código que revierte lo hecho por "do_something()".
 
     func _on_my_button_pressed():
         var node = get_node("MyNode2D")
-        undo_redo.create_action("Move the node")
+        undo_redo.create_action("Mover el nodo")
         undo_redo.add_do_method(do_something)
         undo_redo.add_undo_method(undo_something)
         undo_redo.add_do_property(node, "position", Vector2(100, 100))
@@ -53,18 +53,18 @@ Here's an example on how to add an action:
 
     public void DoSomething()
     {
-        // Put your code here.
+        // Pon tu código aquí.
     }
 
     public void UndoSomething()
     {
-        // Put here the code that reverts what's done by "DoSomething()".
+        // Pon aquí el código que revierte lo hecho por "DoSomething()".
     }
 
     private void OnMyButtonPressed()
     {
         var node = GetNode<Node2D>("MyNode2D");
-        _undoRedo.CreateAction("Move the node");
+        _undoRedo.CreateAction("Mover el nodo");
         _undoRedo.AddDoMethod(new Callable(this, MethodName.DoSomething));
         _undoRedo.AddUndoMethod(new Callable(this, MethodName.UndoSomething));
         _undoRedo.AddDoProperty(node, "position", new Vector2(100, 100));
@@ -74,20 +74,20 @@ Here's an example on how to add an action:
 
 
 
-Before calling any of the ``add_(un)do_*`` methods, you need to first call :ref:`create_action()<class_UndoRedo_method_create_action>`. Afterwards you need to call :ref:`commit_action()<class_UndoRedo_method_commit_action>`.
+Antes de llamar a cualquiera de los métodos ``add_(un)do_*``, primero debes llamar a :ref:`create_action()<class_UndoRedo_method_create_action>`. Después, necesitas llamar a :ref:`commit_action()<class_UndoRedo_method_commit_action>`.
 
-If you don't need to register a method, you can leave :ref:`add_do_method()<class_UndoRedo_method_add_do_method>` and :ref:`add_undo_method()<class_UndoRedo_method_add_undo_method>` out; the same goes for properties. You can also register more than one method/property.
+Si no necesitas registrar un método, puedes omitir :ref:`add_do_method()<class_UndoRedo_method_add_do_method>` y :ref:`add_undo_method()<class_UndoRedo_method_add_undo_method>`; lo mismo ocurre con las propiedades. También puedes registrar más de un método o propiedad.
 
-If you are making an :ref:`EditorPlugin<class_EditorPlugin>` and want to integrate into the editor's undo history, use :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` instead.
+Si estás creando un :ref:`EditorPlugin<class_EditorPlugin>` y deseas integrarte en el historial de deshacer del editor, usa :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>` en su lugar.
 
-If you are registering multiple properties/method which depend on one another, be aware that by default undo operation are called in the same order they have been added. Therefore instead of grouping do operation with their undo operations it is better to group do on one side and undo on the other as shown below.
+Si estás registrando múltiples propiedades/métodos que dependen unos de otros, ten en cuenta que, por defecto, las operaciones de deshacer se llaman en el mismo orden en que fueron añadidas. Por lo tanto, en lugar de agrupar las operaciones "do" con sus operaciones "undo", es mejor agrupar las "do" por un lado y las "undo" por otro, como se muestra a continuación:
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    undo_redo.create_action("Add object")
+    undo_redo.create_action("Agregar objeto")
 
     # DO
     undo_redo.add_do_method(_create_object)
@@ -101,7 +101,7 @@ If you are registering multiple properties/method which depend on one another, b
 
  .. code-tab:: csharp
 
-    _undo_redo.CreateAction("Add object");
+    _undo_redo.CreateAction("Agregar objeto");
 
     // DO
     _undo_redo.AddDoMethod(new Callable(this, MethodName.CreateObject));

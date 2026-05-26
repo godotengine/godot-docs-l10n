@@ -196,11 +196,11 @@ EditorImportPlugin 通过与特定的文件扩展名和资源类型相关联来�
 
 :ref:`bool<class_bool>` **_can_import_threaded**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__can_import_threaded>`
 
-Tells whether this importer can be run in parallel on threads, or, on the contrary, it's only safe for the editor to call it from the main thread, for one file at a time.
+表示该导入器是否可以在线程上并行运行，或者相反，编辑器只能从主线程调用安全，一次处理一个文件。
 
-If this importer's implementation is thread-safe and can be run in parallel, override this with ``true`` to optimize for concurrency.
+如果该导入器的实现是线程安全的并且可以并行运行，请将其覆盖为 ``true`` 以优化并发性能。
 
-If not overridden, returns ``false``.
+如果未覆盖，则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 

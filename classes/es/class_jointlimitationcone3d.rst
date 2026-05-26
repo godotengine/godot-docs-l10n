@@ -7,14 +7,14 @@ JointLimitationCone3D
 
 **Hereda:** :ref:`JointLimitation3D<class_JointLimitation3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
+Una limitación con forma de cono que interactúa con :ref:`ChainIK3D<class_ChainIK3D>`.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A cone shape limitation that interacts with :ref:`ChainIK3D<class_ChainIK3D>`.
+Una limitación con forma de cono que interactúa con :ref:`ChainIK3D<class_ChainIK3D>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -48,9 +48,9 @@ Descripciones de Propiedades
 - |void| **set_angle**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angle**\ (\ )
 
-The radius range of the hole made by the cone.
+El rango de radio del agujero hecho por el cono.
 
-\ ``0`` degrees makes a sphere without hole, ``180`` degrees makes a hemisphere, and ``360`` degrees become empty (no limitation).
+\ ``0`` grados crea una esfera sin agujero, ``180`` grados crea un hemisferio, y ``360`` grados se convierten en vacío (sin limitación).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

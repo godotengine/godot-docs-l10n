@@ -462,7 +462,7 @@ Uses a high-contrast film-like tonemapping curve and desaturates bright values f
 
 :ref:`ToneMapper<enum_Environment_ToneMapper>` **TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Utiliza una curva de mapeo de tonos ajustable similar a la del cine y desatura los valores brillantes para lograr una apariencia más realista. Mantiene mejor el matiz de los colores a medida que aumentan su brillo en comparación con otros mapeadores de tonos. Es la opción de mapeo de tonos más lenta.
 
 .. rst-class:: classref-item-separator
 
@@ -1190,7 +1190,7 @@ The lower threshold of the HDR glow. When using the Mobile rendering method (whi
 - |void| **set_glow_intensity**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_intensity**\ (\ )
 
-The overall brightness multiplier that is applied to the glow effect just before it is blended with the scene. When using the Mobile rendering method (which only supports a lower dynamic range up to ``2.0``), this should be increased to ``1.5`` to compensate.
+El multiplicador global de brillo que se aplica al efecto de resplandor justo antes de combinarlo con la escena. Cuando se utiliza el método de renderizado Mobile (que solo admite un rango dinámico inferior de hasta ``2.0``), debe incrementarse a ``1.5`` para compensar.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,11 +1361,11 @@ The texture that should be used as a glow map to *multiply* the resulting glow c
 - |void| **set_glow_map_strength**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_glow_map_strength**\ (\ )
 
-How strong of an influence the :ref:`glow_map<class_Environment_property_glow_map>` should have on the overall glow effect. A strength of ``0.0`` means the glow map has no influence, while a strength of ``1.0`` means the glow map has full influence.
+Qué tan fuerte es la influencia que :ref:`glow_map<class_Environment_property_glow_map>` debe tener sobre el efecto de resplandor general. Un valor de ``0.0`` significa que el mapa de resplandor no tiene influencia, mientras que un valor de ``1.0`` implica que el mapa de resplandor tiene influencia total.
 
-\ **Note:** If the glow map has black areas, a value of ``1.0`` can also turn off the glow effect entirely in specific areas of the screen.
+\ **Nota:** Si el mapa de resplandor contiene áreas negras, un valor de ``1.0`` también puede desactivar completamente el efecto de resplandor en zonas específicas de la pantalla.
 
-\ **Note:** :ref:`glow_map_strength<class_Environment_property_glow_map_strength>` has no effect when using the Compatibility rendering method, due to this rendering method using a simpler glow implementation optimized for low-end devices.
+\ **Nota:** :ref:`glow_map_strength<class_Environment_property_glow_map_strength>` no tiene efecto cuando se utiliza el método de renderizado Compatibility, ya que este método emplea una implementación de resplandor más simple optimizada para dispositivos de bajos recursos.
 
 .. rst-class:: classref-item-separator
 

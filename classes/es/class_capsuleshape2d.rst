@@ -54,9 +54,9 @@ Descripciones de Propiedades
 - |void| **set_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_height**\ (\ )
 
-The capsule's full height, including the semicircles.
+Altura total de la capsule, incluidos los semicírculos.
 
-\ **Note:** The :ref:`height<class_CapsuleShape2D_property_height>` of a capsule must be at least twice its :ref:`radius<class_CapsuleShape2D_property_radius>`. Otherwise, the capsule becomes a circle. If the :ref:`height<class_CapsuleShape2D_property_height>` is less than twice the :ref:`radius<class_CapsuleShape2D_property_radius>`, the properties adjust to a valid value.
+\ **Nota:** El :ref:`height<class_CapsuleShape2D_property_height>` de una capsule debe ser al menos el doble de su :ref:`radius<class_CapsuleShape2D_property_radius>`. De lo contrario, la capsule se convierte en un círculo. Si el :ref:`height<class_CapsuleShape2D_property_height>` es menor que el doble del :ref:`radius<class_CapsuleShape2D_property_radius>`, las propiedades se ajustan a un value válido.
 
 .. rst-class:: classref-item-separator
 
@@ -90,9 +90,9 @@ La altura de la cápsula, excluyendo los semicírculos. Esta es la altura de la 
 - |void| **set_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_radius**\ (\ )
 
-The capsule's radius.
+Radio de la capsule.
 
-\ **Note:** The :ref:`radius<class_CapsuleShape2D_property_radius>` of a capsule cannot be greater than half of its :ref:`height<class_CapsuleShape2D_property_height>`. Otherwise, the capsule becomes a circle. If the :ref:`radius<class_CapsuleShape2D_property_radius>` is greater than half of the :ref:`height<class_CapsuleShape2D_property_height>`, the properties adjust to a valid value.
+\ **Nota:** El :ref:`radius<class_CapsuleShape2D_property_radius>` de una capsule no puede ser mayor que la mitad de su :ref:`height<class_CapsuleShape2D_property_height>`. De lo contrario, la capsule se convierte en un círculo. Si el :ref:`radius<class_CapsuleShape2D_property_radius>` es mayor que la mitad del :ref:`height<class_CapsuleShape2D_property_height>`, las propiedades se ajustan a un value válido.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

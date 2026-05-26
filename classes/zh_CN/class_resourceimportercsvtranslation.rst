@@ -14,11 +14,11 @@ ResourceImporterCSVTranslation
 描述
 ----
 
-Comma-separated values are a plain text table storage format. The format's simplicity makes it easy to edit in any text editor or spreadsheet software. This makes it a common choice for game localization.
+逗号分隔值是一种纯文本表格存储格式。这种格式简单易用，可以在任何文本编辑器或电子表格软件中进行编辑。这使其成为游戏本地化的常用选择。
 
-In the CSV file used for translation, the first column contains string identifiers, and the first row serves as the header. The first column's header can be any value. The remaining headers indicate the locale for that column. Columns whose headers begin with an underscore (``_``) will be ignored.
+在用于翻译的 CSV 文件中，第一列包含字符串标识符，第一行用作标题。第一列的标题可以是任意值。其余标题表示该列的区域设置。标题以下划线（\ ``_``\ ）开头的列将被忽略。
 
-\ **Example CSV file:**\ 
+\ **CSV 文件示例：**\ 
 
 .. code:: text
 
@@ -28,7 +28,7 @@ In the CSV file used for translation, the first column contains string identifie
     BYE,Goodbye,Adiós,さようなら
     QUOTE,"""Hello"" said the man.","""Hola"" dijo el hombre.",「こんにちは」男は言いました
 
-Although keys in the first column typically use uppercase string identifiers, it is not uncommon to directly use strings appearing in the game as keys. To avoid string ambiguity, you can use a special ``?context`` column to specify the context to use with :ref:`Object.tr()<class_Object_method_tr>`.
+虽然第一列中的键通常使用大写字符串标识符，但直接使用游戏中出现的字符串作为键也很常见。为了避免字符串歧义，可以使用特殊的 ``?context`` 列来指定与 :ref:`Object.tr()<class_Object_method_tr>` 一起使用的上下文。
 
 .. code:: text
 
@@ -36,9 +36,9 @@ Although keys in the first column typically use uppercase string identifiers, it
     Letter,Alphabet,Lettre,字母,字母
     Letter,Message,Courrier,手紙,信件
 
-To set the plural form of a string to use with :ref:`Object.tr_n()<class_Object_method_tr_n>`, add a special ``?plural`` column. After setting the plural form of the source string in this column, you can add additional rows to provide translations for more plural forms. The first column and all special columns in these plural form rows must be empty.
+要设置用于 :ref:`Object.tr_n()<class_Object_method_tr_n>` 方法的字符串的复数形式，请添加一个特殊的 ``?plural`` 列。在该列中设置源字符串的复数形式后，可以添加其他行来提供更多复数形式的翻译。这些复数形式行中的第一列和所有特殊列都必须为空。
 
-Godot includes built-in plural rules for some languages. You can also customize them using a special ``?pluralrule`` row. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+Godot 包含一些语言的内置复数规则。还可以使用特殊的 ``?pluralrule`` 行来自定义它们。有关示例和更多信息，请参阅 `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__\ 。
 
 .. code:: text
 
@@ -88,9 +88,9 @@ Godot includes built-in plural rules for some languages. You can also customize 
 
 :ref:`int<class_int>` **compress** = ``1`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_compress>`
 
-- **Disabled**: Creates a :ref:`Translation<class_Translation>`.
+- **Disabled**\ ：创建 :ref:`Translation<class_Translation>`\ 。
 
-- **Auto**: Creates an :ref:`OptimizedTranslation<class_OptimizedTranslation>` when possible. This makes the resulting file smaller at the cost of a small CPU overhead. Falls back to :ref:`Translation<class_Translation>` for translations with context or plural forms.
+- **Auto**\ ：可能时创建 :ref:`OptimizedTranslation<class_OptimizedTranslation>`\ 。这样做可以减小生成的文件大小，但会增加少量 CPU 开销。对于包含上下文或复数形式的翻译，则会回退到 :ref:`Translation<class_Translation>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +114,7 @@ Godot includes built-in plural rules for some languages. You can also customize 
 
 :ref:`bool<class_bool>` **unescape_keys** = ``false`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_unescape_keys>`
 
-If ``true``, message keys in the CSV file are unescaped using :ref:`String.c_unescape()<class_String_method_c_unescape>` during the import process.
+如果为 ``true``\ ，则在导入过程中使用 :ref:`String.c_unescape()<class_String_method_c_unescape>` 对 CSV 文件中的消息键进行反转义。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +126,7 @@ If ``true``, message keys in the CSV file are unescaped using :ref:`String.c_une
 
 :ref:`bool<class_bool>` **unescape_translations** = ``true`` :ref:`🔗<class_ResourceImporterCSVTranslation_property_unescape_translations>`
 
-If ``true``, message translations in the CSV file are unescaped using :ref:`String.c_unescape()<class_String_method_c_unescape>` during the import process.
+如果为 ``true``\ ，则在导入过程中使用 :ref:`String.c_unescape()<class_String_method_c_unescape>` 对 CSV 文件中的消息翻译进行反转义。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

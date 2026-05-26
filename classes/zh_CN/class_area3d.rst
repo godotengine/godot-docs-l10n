@@ -194,7 +194,7 @@ Area3D
 
 **body_entered**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_entered>`
 
-当接收到的 ``body`` 进入这个区域时发出。\ ``body`` 可能是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 也可能是 :ref:`GridMap<class_GridMap>`\ 。\ :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置了碰撞形状就能够被检测到。需要将 :ref:`monitoring<class_Area3D_property_monitoring>` 设置为 ``true`` 。
+当接收到的 ``body`` 进入此区域时触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理刚体）或者一个 :ref:`GridMap<class_GridMap>`\ （3D网格地图）。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>`\ （网格库）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area3D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -206,7 +206,7 @@ Area3D
 
 **body_exited**\ (\ body\: :ref:`Node3D<class_Node3D>`\ ) :ref:`🔗<class_Area3D_signal_body_exited>`
 
-当接收到的 ``body`` 离开这个区域时发出的。\ ``body`` 可能是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 也可能是 :ref:`GridMap<class_GridMap>`\ 。\ :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area3D_property_monitoring>` 被设置为 ``true`` 。
+当接收到的 ``body`` 离开此区域时触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理刚体）或者一个 :ref:`GridMap<class_GridMap>`\ （3D网格地图）。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>`\ （网格库）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area3D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -218,9 +218,9 @@ Area3D
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_entered>`
 
-当接收到的物体 ``body`` 中的某个 :ref:`Shape3D<class_Shape3D>` 进入此区域中的某个形状时发出。\ ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>`\ 。\ :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置有碰撞形状时才能够被检测到。要求将 :ref:`monitoring<class_Area3D_property_monitoring>` 设置为 ``true``\ 。
+当接收到的 ``body`` 的某个 :ref:`Shape3D<class_Shape3D>`\ （3D形状）进入此区域的某个形状时，触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理刚体）或者一个 :ref:`GridMap<class_GridMap>`\ （3D网格地图）。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>`\ （网格库）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area3D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
-\ ``local_shape_index`` 和 ``body_shape_index`` 分别对应此区域中以及交互物体中正在进行交互的形状的索引。\ ``body_rid`` 包含该物体的 :ref:`RID<class_RID>`\ 。这些值可以在 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中使用。
+\ ``local_shape_index`` 和 ``body_shape_index`` 分别包含了此区域与发生交互的刚体上，相互接触的形状的索引。\ ``body_rid`` 包含了该刚体的 :ref:`RID<class_RID>`\ （资源ID）。这些值可以配合 :ref:`PhysicsServer3D<class_PhysicsServer3D>`\ （3D物理服务器）来使用。
 
 \ **示例：**\ 根据形状索引获取 :ref:`CollisionShape3D<class_CollisionShape3D>` 节点：
 
@@ -247,7 +247,7 @@ Area3D
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node3D<class_Node3D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area3D_signal_body_shape_exited>`
 
-当接收到的物体 ``body`` 中的某个 :ref:`Shape3D<class_Shape3D>` 离开此区域中的某个形状时发出。\ ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或 :ref:`GridMap<class_GridMap>`\ 。\ :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置有碰撞形状时才能够被检测到。要求将 :ref:`monitoring<class_Area3D_property_monitoring>` 设置为 ``true``\ 。
+当接收到的 ``body`` 的某个 :ref:`Shape3D<class_Shape3D>`\ （3D形状）离开此区域的某个形状时，触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody3D<class_PhysicsBody3D>`\ （3D物理刚体）或者一个 :ref:`GridMap<class_GridMap>`\ （3D网格地图）。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>`\ （网格库）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area3D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 另见 :ref:`body_shape_entered<class_Area3D_signal_body_shape_entered>`\ 。
 

@@ -9,21 +9,21 @@ IKModifier3D
 
 **派生：** :ref:`ChainIK3D<class_ChainIK3D>`, :ref:`TwoBoneIK3D<class_TwoBoneIK3D>`
 
-A node for inverse kinematics which may modify more than one bone.
+用于反向动力学的节点，可以修改多个骨骼。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s that has some joint lists and applies inverse kinematics. This class has some structs, enums, and helper methods which are useful to solve inverse kinematics.
+这是 :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的基类，包含一些关节列表并应用反向动力学。该类包含一些结构体、枚举和辅助方法，这些对于解决反向动力学问题非常有用。
 
 .. rst-class:: classref-introduction-group
 
 教程
 ----
 
-- `Inverse Kinematics Returns to Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
+- `反向动力学回归到 Godot 4.6 - IKModifier3D <https://godotengine.org/article/inverse-kinematics-returns-to-godot-4-6/#ikmodifier3d-and-7-child-classes>`__
 
 .. rst-class:: classref-reftable-group
 
@@ -75,9 +75,9 @@ Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>`\ s that has so
 - |void| **set_mutable_bone_axes**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **are_bone_axes_mutable**\ (\ )
 
-If ``true``, the solver retrieves the bone axis from the bone pose every frame.
+如果为 ``true``\ ，求解器会在每一帧从骨骼姿势中检索骨骼轴。
 
-If ``false``, the solver retrieves the bone axis from the bone rest and caches it, which increases performance slightly, but position changes in the bone pose made before processing this **IKModifier3D** are ignored.
+如果为 ``false``\ ，求解器会从骨骼静止状态中检索骨骼轴并进行缓存，这会略微提高性能，但在处理该 **IKModifier3D** 之前对骨骼姿势进行的任何位置更改都将被忽略。
 
 .. rst-class:: classref-section-separator
 
@@ -106,7 +106,7 @@ If ``false``, the solver retrieves the bone axis from the bone rest and caches i
 
 :ref:`int<class_int>` **get_setting_count**\ (\ ) |const| :ref:`🔗<class_IKModifier3D_method_get_setting_count>`
 
-Returns the number of settings.
+返回设置项的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +118,7 @@ Returns the number of settings.
 
 |void| **reset**\ (\ ) :ref:`🔗<class_IKModifier3D_method_reset>`
 
-Resets a state with respect to the current bone pose.
+根据当前的骨骼姿势重置状态。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +130,7 @@ Resets a state with respect to the current bone pose.
 
 |void| **set_setting_count**\ (\ count\: :ref:`int<class_int>`\ ) :ref:`🔗<class_IKModifier3D_method_set_setting_count>`
 
-Sets the number of settings.
+设置设置项的数量。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

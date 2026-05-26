@@ -308,21 +308,21 @@ Descripciones de Métodos
 
 |void| **add_transition**\ (\ from_clip\: :ref:`int<class_int>`, to_clip\: :ref:`int<class_int>`, from_time\: :ref:`TransitionFromTime<enum_AudioStreamInteractive_TransitionFromTime>`, to_time\: :ref:`TransitionToTime<enum_AudioStreamInteractive_TransitionToTime>`, fade_mode\: :ref:`FadeMode<enum_AudioStreamInteractive_FadeMode>`, fade_beats\: :ref:`float<class_float>`, use_filler_clip\: :ref:`bool<class_bool>` = false, filler_clip\: :ref:`int<class_int>` = -1, hold_previous\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_AudioStreamInteractive_method_add_transition>`
 
-Add a transition between two clips. Provide the indices of the source and destination clips, or use the :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` constant to indicate that transition happens to/from any clip to this one.
+Añade una transición entre dos clips. Proporciona los índices de los clips de origen y destino, o utiliza la constante :ref:`CLIP_ANY<class_AudioStreamInteractive_constant_CLIP_ANY>` para indicar que la transición ocurre desde o hacia cualquier clip a éste.
 
-\* ``from_time`` indicates the moment in the current clip the transition will begin after triggered.
+\* ``from_time`` indica el momento en el clip actual en el que comenzará la transición después de activarse.
 
-\* ``to_time`` indicates the time in the next clip that the playback will start from.
+\* ``to_time`` indica el tiempo en el siguiente clip desde el cual comenzará la reproducción.
 
-\* ``fade_mode`` indicates how the fade will happen between clips. If unsure, just use :ref:`FADE_AUTOMATIC<class_AudioStreamInteractive_constant_FADE_AUTOMATIC>` which uses the most common type of fade for each situation.
+\* ``fade_mode`` indica cómo ocurrirá el desvanecimiento entre clips. En caso de duda, utiliza :ref:`FADE_AUTOMATIC<class_AudioStreamInteractive_constant_FADE_AUTOMATIC>`, que emplea el tipo de desvanecimiento más común para cada situación.
 
-\* ``fade_beats`` indicates how many beats the fade will take. Using decimals is allowed.
+\* ``fade_beats`` indica cuántos pulsos durará el desvanecimiento. Se permite el uso de decimales.
 
-\* ``use_filler_clip`` indicates that there will be a filler clip used between the source and destination clips.
+\* ``use_filler_clip`` indica que se utilizará un clip de relleno entre los clips de origen y destino.
 
-\* ``filler_clip`` the index of the filler clip.
+\* ``filler_clip`` el índice del clip de relleno.
 
-\* If ``hold_previous`` is used, then this clip will be remembered. This can be used together with :ref:`AUTO_ADVANCE_RETURN_TO_HOLD<class_AudioStreamInteractive_constant_AUTO_ADVANCE_RETURN_TO_HOLD>` to return to this clip after another is done playing.
+\* Si se utiliza ``hold_previous``, este clip será recordado. Esto se puede usar junto con :ref:`AUTO_ADVANCE_RETURN_TO_HOLD<class_AudioStreamInteractive_constant_AUTO_ADVANCE_RETURN_TO_HOLD>` para volver a este clip después de que otro termine de reproducirse.
 
 .. rst-class:: classref-item-separator
 

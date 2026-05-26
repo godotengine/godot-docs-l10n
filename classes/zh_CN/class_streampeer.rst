@@ -205,7 +205,7 @@ StreamPeer 是一种抽象基类，常用于流式协议（例如 TCP）。它�
 
 :ref:`Array<class_Array>` **get_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will block until the desired amount is received.
+返回包含接收到的字节的块数据，该块数据是一个 :ref:`Array<class_Array>`\ ，其中包含两个元素：一个 :ref:`Error<enum_@GlobalScope_Error>` 常量和一个 :ref:`PackedByteArray<class_PackedByteArray>`\ 。\ ``bytes`` 是要接收的字节数。如果可用字节数不足，则该函数将阻塞直到接收到所需的字节数为止。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +253,7 @@ Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` co
 
 :ref:`Array<class_Array>` **get_partial_data**\ (\ bytes\: :ref:`int<class_int>`\ ) :ref:`🔗<class_StreamPeer_method_get_partial_data>`
 
-Returns a chunk data with the received bytes, as an :ref:`Array<class_Array>` containing two elements: an :ref:`Error<enum_@GlobalScope_Error>` constant and a :ref:`PackedByteArray<class_PackedByteArray>`. ``bytes`` is the number of bytes to be received. If not enough bytes are available, the function will return how many were actually received.
+返回包含接收到的字节的块数据，该块数据是一个 :ref:`Array<class_Array>`\ ，其中包含两个元素：一个 :ref:`Error<enum_@GlobalScope_Error>` 常量和一个 :ref:`PackedByteArray<class_PackedByteArray>`\ 。\ ``bytes`` 是要接收的字节数。如果可用的字节数不足，则该函数将返回实际接收到的字节数。
 
 .. rst-class:: classref-item-separator
 

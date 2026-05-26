@@ -661,9 +661,9 @@ I 形光标。通常用于指示点击鼠标后文本光标的位置。
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-如果平台使用游戏手柄重映射，则返回设备的 GUID，与 SDL2 兼容，例如 ``030000004c050000c405000000010000``\ 。如果无法找到则返回空字符串。Godot 会根据这个 GUID 使用 `SDL2 游戏控制器数据库 <https://github.com/gabomdq/SDL_GameControllerDB>`__\ 来确定游戏手柄的名称和映射。
+Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
 
-在 Windows 上，Godot 会将所有 XInput 游戏手柄的 GUID 覆盖为 ``__XINPUT_DEVICE__``\ ，因为它们的映射是相同的。
+On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
 
 .. rst-class:: classref-item-separator
 
@@ -807,9 +807,9 @@ I 形光标。通常用于指示点击鼠标后文本光标的位置。
 
 :ref:`bool<class_bool>` **has_joy_light**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_has_joy_light>`
 
-Returns ``true`` if the joypad has an LED light that can change colors and/or brightness. See also :ref:`set_joy_light()<class_Input_method_set_joy_light>`.
+如果游戏手柄具有可以改变颜色和/或亮度的 LED 灯，则返回 ``true``\ 。另见 :ref:`set_joy_light()<class_Input_method_set_joy_light>`\ 。
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS.
+\ **注意：**\ 该功能仅支持 Windows、Linux 和 macOS。
 
 .. rst-class:: classref-item-separator
 
@@ -1134,11 +1134,11 @@ Returns ``true`` if the joypad has an LED light that can change colors and/or br
 
 |void| **set_joy_light**\ (\ device\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_Input_method_set_joy_light>`
 
-Sets the joypad's LED light, if available, to the specified color. See also :ref:`has_joy_light()<class_Input_method_has_joy_light>`.
+将游戏手柄的 LED 灯（如果有）设置为指定颜色。另见 :ref:`has_joy_light()<class_Input_method_has_joy_light>`\ 。
 
-\ **Note:** There is no way to get the color of the light from a joypad. If you need to know the assigned color, store it separately.
+\ **注意：**\ 无法从游戏手柄获取灯光的颜色。如果你需要知道分配的颜色，请单独存储。
 
-\ **Note:** This feature is only supported on Windows, Linux, and macOS.
+\ **注意：**\ 该功能仅支持 Windows、Linux 和 macOS。
 
 .. rst-class:: classref-item-separator
 

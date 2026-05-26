@@ -7,7 +7,7 @@ VisualShaderNodeIntParameter
 
 **Hereda:** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Un nodo de shader visual para el parámetro de shader (uniforme) de tipo :ref:`int<class_int>`.
+Un nodo de shader visual para el parámetro de shader (variable uniforme) de tipo :ref:`int<class_int>`.
 
 .. rst-class:: classref-introduction-group
 

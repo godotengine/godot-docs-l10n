@@ -443,7 +443,7 @@ Window
 
 **nonclient_window_input**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Window_signal_nonclient_window_input>`
 
-Emitted when the mouse event is received by the custom decoration area defined by :ref:`nonclient_area<class_Window_property_nonclient_area>`, and normal input to the window is blocked (such as when it has an exclusive child opened). ``event``'s position is in the embedder's coordinate system.
+当 :ref:`nonclient_area<class_Window_property_nonclient_area>` 定义的自定义装饰区域接收到鼠标事件并且窗口的正常输入被阻止时（例如，当窗口打开一个独占子窗口时）发出。\ ``event`` 的位置位于嵌入器的坐标系中。
 
 .. rst-class:: classref-item-separator
 
@@ -746,7 +746,7 @@ enum **ContentScaleMode**: :ref:`🔗<enum_Window_ContentScaleMode>`
 
 :ref:`ContentScaleMode<enum_Window_ContentScaleMode>` **CONTENT_SCALE_MODE_DISABLED** = ``0``
 
-The content will not be scaled to match the **Window**'s size (:ref:`content_scale_size<class_Window_property_content_scale_size>` is ignored).
+不会为了匹配 **Window** 的大小而对内容进行缩放（\ :ref:`content_scale_size<class_Window_property_content_scale_size>` 将被忽略）。
 
 .. _class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS:
 
@@ -1157,11 +1157,11 @@ enum **WindowInitialPosition**: :ref:`🔗<enum_Window_WindowInitialPosition>`
 - |void| **set_content_scale_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_content_scale_size**\ (\ )
 
-The content's base size in "virtual" pixels. Not to be confused with :ref:`size<class_Window_property_size>`, which sets the actual window's physical size in pixels. If set to a value greater than ``0`` and :ref:`content_scale_mode<class_Window_property_content_scale_mode>` is set to a value other than :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>`, the **Window**'s content will be scaled when the window is resized to a different size. Higher values will make the content appear *smaller*, as it will be able to fit more of the project in view. On the root **Window**, this is set to match :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` and :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` by default.
+内容的基础大小，单位为“虚拟”像素。请勿与 :ref:`size<class_Window_property_size>` 混淆，后者设置的是窗口的实际物理大小，单位为像素。如果设置为大于 ``0`` 的值且 :ref:`content_scale_mode<class_Window_property_content_scale_mode>` 设为除 :ref:`CONTENT_SCALE_MODE_DISABLED<class_Window_constant_CONTENT_SCALE_MODE_DISABLED>` 以外的值，则当将窗口调整为不同大小时，\ **Window** 的内容将被缩放。更高的值会让内容看起来\ *更小*\ ，因为它可以在视图中容纳更多的项目内容。在根 **Window** 上，默认情况下，将被设置与 :ref:`ProjectSettings.display/window/size/viewport_width<class_ProjectSettings_property_display/window/size/viewport_width>` 和 :ref:`ProjectSettings.display/window/size/viewport_height<class_ProjectSettings_property_display/window/size/viewport_height>` 相匹配。
 
-For example, when using :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` and :ref:`content_scale_size<class_Window_property_content_scale_size>` set to ``Vector2i(1280, 720)``, using a window size of ``2560×1440`` will make 2D elements appear at double their original size, as the content is scaled by a factor of ``2.0`` (``2560.0 / 1280.0 = 2.0``, ``1440.0 / 720.0 = 2.0``).
+例如，当使用 :ref:`CONTENT_SCALE_MODE_CANVAS_ITEMS<class_Window_constant_CONTENT_SCALE_MODE_CANVAS_ITEMS>` 并将 :ref:`content_scale_size<class_Window_property_content_scale_size>` 设置为 ``Vector2i(1280, 720)`` 时，使用 ``2560×1440`` 的窗口大小将使 2D 元素显示为其原始大小的两倍，因为内容按 ``2.0`` 的倍数缩放（\ ``2560.0 / 1280.0 = 2.0``\ ，\ ``1440.0 / 720.0 = 2.0``\ ）。
 
-See `the Base size section of the Multiple resolutions documentation <../tutorials/rendering/multiple_resolutions.html#base-size>`__ for details.
+有关详细信息，见 `多分辨率文档的基本大小部分 <../tutorials/rendering/multiple_resolutions.html#base-size>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1500,7 +1500,7 @@ See `the Base size section of the Multiple resolutions documentation <../tutoria
 - |void| **set_nonclient_area**\ (\ value\: :ref:`Rect2i<class_Rect2i>`\ )
 - :ref:`Rect2i<class_Rect2i>` **get_nonclient_area**\ (\ )
 
-If set, defines the window's custom decoration area which will receive mouse input, even if normal input to the window is blocked (such as when it has an exclusive child opened). See also :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`.
+如果设置，则定义窗口的自定义装饰区域，该区域将接收鼠标输入，即使对窗口的正常输入被阻止（例如，当它打开一个独占子窗口时）。另见 :ref:`nonclient_window_input<class_Window_signal_nonclient_window_input>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1593,7 +1593,7 @@ If set, defines the window's custom decoration area which will receive mouse inp
 - |void| **set_size**\ (\ value\: :ref:`Vector2i<class_Vector2i>`\ )
 - :ref:`Vector2i<class_Vector2i>` **get_size**\ (\ )
 
-The window's size in pixels. See also :ref:`content_scale_size<class_Window_property_content_scale_size>`, which doesn't set the window's physical size but affects how scaling works relative to the current :ref:`content_scale_mode<class_Window_property_content_scale_mode>`.
+窗口大小，单位为像素。另见 :ref:`content_scale_size<class_Window_property_content_scale_size>`\ ，它不会设置窗口的物理大小，但会影响缩放相对于当前 :ref:`content_scale_mode<class_Window_property_content_scale_mode>` 的工作方式。
 
 .. rst-class:: classref-item-separator
 
@@ -1665,7 +1665,7 @@ The window's size in pixels. See also :ref:`content_scale_size<class_Window_prop
 
 如果为 ``true`` 则该 **Window** 是临时窗口，即会被认为是另一个 **Window** 的子级。临时窗口会和临时父级一起销毁，关闭时会将焦点返还给父级。临时窗口显示在非独占全屏父窗口之上。临时窗口无法进入全屏模式。
 
-请注意，不同平台可能由不同的行为。
+请注意，不同平台可能有不同的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -2402,7 +2402,7 @@ The window's size in pixels. See also :ref:`content_scale_size<class_Window_prop
 
 |void| **move_to_center**\ (\ ) :ref:`🔗<class_Window_method_move_to_center>`
 
-Centers the window in the current screen. If the window is embedded, it is centered in the embedder :ref:`Viewport<class_Viewport>` instead.
+将窗口居中显示在当前屏幕中。如果窗口是嵌入式的，则会改为在嵌入器 :ref:`Viewport<class_Viewport>` 中居中显示。
 
 .. rst-class:: classref-item-separator
 

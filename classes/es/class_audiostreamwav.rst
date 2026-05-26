@@ -112,7 +112,7 @@ Audio is lossily compressed as IMA ADPCM.
 
 :ref:`Format<enum_AudioStreamWAV_Format>` **FORMAT_QOA** = ``3``
 
-Audio is lossily compressed as `Quite OK Audio <https://qoaformat.org/>`__.
+El audio está comprimido con pérdida usando `Quite OK Audio <https://qoaformat.org/>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -176,11 +176,11 @@ Descripciones de Propiedades
 - |void| **set_data**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_data**\ (\ )
 
-Contains the audio data in bytes.
+Contiene los datos de audio en bytes.
 
-\ **Note:** If :ref:`format<class_AudioStreamWAV_property_format>` is set to :ref:`FORMAT_8_BITS<class_AudioStreamWAV_constant_FORMAT_8_BITS>`, this property expects signed 8-bit PCM data. To convert from unsigned 8-bit PCM, subtract 128 from each byte.
+\ **Nota:** Si :ref:`format<class_AudioStreamWAV_property_format>` está configurado en :ref:`FORMAT_8_BITS<class_AudioStreamWAV_constant_FORMAT_8_BITS>`, esta propiedad espera datos PCM de 8 bits con signo. Para convertir desde PCM de 8 bits sin signo, resta 128 a cada byte.
 
-\ **Note:** If :ref:`format<class_AudioStreamWAV_property_format>` is set to :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`, this property expects data from a full QOA file.
+\ **Nota:** Si :ref:`format<class_AudioStreamWAV_property_format>` está configurado en :ref:`FORMAT_QOA<class_AudioStreamWAV_constant_FORMAT_QOA>`, esta propiedad espera datos de un archivo QOA completo.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedByteArray<class_PackedByteArray>` for more details.
 
@@ -216,7 +216,7 @@ Formato de audio.
 - |void| **set_loop_begin**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_loop_begin**\ (\ )
 
-The loop start point (in number of samples, relative to the beginning of the stream).
+El punto de inicio del bucle (en número de muestras, relativo al inicio de la secuencia).
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ The loop start point (in number of samples, relative to the beginning of the str
 - |void| **set_loop_end**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_loop_end**\ (\ )
 
-The loop end point (in number of samples, relative to the beginning of the stream).
+El punto de fin del bucle (en número de muestras, relativo al inicio de la secuencia).
 
 .. rst-class:: classref-item-separator
 
@@ -250,7 +250,7 @@ The loop end point (in number of samples, relative to the beginning of the strea
 - |void| **set_loop_mode**\ (\ value\: :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>`\ )
 - :ref:`LoopMode<enum_AudioStreamWAV_LoopMode>` **get_loop_mode**\ (\ )
 
-The loop mode.
+El modo de repetición.
 
 .. rst-class:: classref-item-separator
 
@@ -305,13 +305,13 @@ Si es ``true``, el audio es estéreo.
 - |void| **set_tags**\ (\ value\: :ref:`Dictionary<class_Dictionary>`\ )
 - :ref:`Dictionary<class_Dictionary>` **get_tags**\ (\ )
 
-Contains user-defined tags if found in the WAV data.
+Contiene las etiquetas definidas por el usuario si se encuentran en los datos WAV.
 
-Commonly used tags include ``title``, ``artist``, ``album``, ``tracknumber``, and ``date`` (``date`` does not have a standard date format).
+Las etiquetas más comunes incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date`` (``date`` no tiene un formato de fecha estándar).
 
-\ **Note:** No tag is *guaranteed* to be present in every file, so make sure to account for the keys not always existing.
+\ **Nota:** Ninguna etiqueta está *garantizada* en todos los archivos, por lo que se debe tener en cuenta que las claves pueden no existir siempre.
 
-\ **Note:** Only WAV files using a ``LIST`` chunk with an identifier of ``INFO`` to encode the tags are currently supported.
+\ **Nota:** Actualmente, solo se admiten archivos WAV que utilicen un chunk ``LIST`` con un identificador ``INFO`` para codificar las etiquetas.
 
 .. rst-class:: classref-section-separator
 
@@ -328,9 +328,9 @@ Descripciones de Métodos
 
 :ref:`AudioStreamWAV<class_AudioStreamWAV>` **load_from_buffer**\ (\ stream_data\: :ref:`PackedByteArray<class_PackedByteArray>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_AudioStreamWAV_method_load_from_buffer>`
 
-Creates a new **AudioStreamWAV** instance from the given buffer. The buffer must contain WAV data.
+Crea una nueva instancia de **AudioStreamWAV** a partir del buffer proporcionado. El buffer debe contener datos WAV.
 
-The keys and values of ``options`` match the properties of :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`. The usage of ``options`` is identical to :ref:`load_from_file()<class_AudioStreamWAV_method_load_from_file>`.
+Las claves y valores de ``options`` coinciden con las propiedades de :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`. El uso de ``options`` es idéntico al de :ref:`load_from_file()<class_AudioStreamWAV_method_load_from_file>`.
 
 .. rst-class:: classref-item-separator
 
@@ -342,11 +342,11 @@ The keys and values of ``options`` match the properties of :ref:`ResourceImporte
 
 :ref:`AudioStreamWAV<class_AudioStreamWAV>` **load_from_file**\ (\ path\: :ref:`String<class_String>`, options\: :ref:`Dictionary<class_Dictionary>` = {}\ ) |static| :ref:`🔗<class_AudioStreamWAV_method_load_from_file>`
 
-Creates a new **AudioStreamWAV** instance from the given file path. The file must be in WAV format.
+Crea una nueva instancia de **AudioStreamWAV** a partir de la ruta de archivo proporcionada. El archivo debe estar en formato WAV.
 
-The keys and values of ``options`` match the properties of :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`.
+Las claves y valores de ``options`` coinciden con las propiedades de :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`.
 
-\ **Example:** Load the first file dropped as a WAV and play it:
+\ **Ejemplo:** Carga el primer archivo arrastrado como WAV y reprodúcelo:
 
 ::
 
@@ -373,9 +373,9 @@ The keys and values of ``options`` match the properties of :ref:`ResourceImporte
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_to_wav**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_AudioStreamWAV_method_save_to_wav>`
 
-Saves the AudioStreamWAV as a WAV file to ``path``. Samples with IMA ADPCM or Quite OK Audio formats can't be saved.
+Guarda el AudioStreamWAV como un archivo WAV en ``path``. Las muestras con formatos IMA ADPCM o Quite OK Audio no se pueden guardar.
 
-\ **Note:** A ``.wav`` extension is automatically appended to ``path`` if it is missing.
+\ **Nota:** Se añade automáticamente una extensión ``.wav`` a ``path`` si falta.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

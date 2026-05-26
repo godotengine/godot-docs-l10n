@@ -14,11 +14,11 @@ MeshInstance2D
 描述
 ----
 
-Node used for displaying a :ref:`Mesh<class_Mesh>` in 2D. This can be faster to render compared to displaying a :ref:`Sprite2D<class_Sprite2D>` node with large transparent areas, especially if the node takes up a lot of space on screen at high viewport resolutions. This is because using a mesh designed to fit the sprite's opaque areas will reduce GPU fill rate utilization (at the cost of increased vertex processing utilization).
+用于在 2D 中显示 :ref:`Mesh<class_Mesh>` 的节点。与显示带有大面积透明区域的 :ref:`Sprite2D<class_Sprite2D>` 节点相比，这种方式渲染速度更快，尤其是在视口分辨率较高且节点占据屏幕较大空间的情况下。这是因为使用专为适合精灵不透明区域而设计的网格可以降低 GPU 填充率（但会增加顶点处理的开销）。
 
-When a :ref:`Mesh<class_Mesh>` has to be instantiated more than thousands of times close to each other, consider using a :ref:`MultiMesh<class_MultiMesh>` in a :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` instead.
+如果 :ref:`Mesh<class_Mesh>` 需要被实例化数千次并彼此靠近，请考虑在 :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` 中改用 :ref:`MultiMesh<class_MultiMesh>`\ 。
 
-A **MeshInstance2D** can be created from an existing :ref:`Sprite2D<class_Sprite2D>` via a tool in the editor toolbar. Select the :ref:`Sprite2D<class_Sprite2D>` node, then choose **Sprite2D > Convert to MeshInstance2D** at the top of the 2D editor viewport.
+可以通过编辑器工具栏中的工具从已有的 :ref:`Sprite2D<class_Sprite2D>` 创建 **MeshInstance2D**\ 。选择 :ref:`Sprite2D<class_Sprite2D>` 节点，然后在 2D 编辑器视口顶部选择 **Sprite2D > 转换为 MeshInstance2D**\ 。
 
 .. rst-class:: classref-introduction-group
 

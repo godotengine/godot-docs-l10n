@@ -7,14 +7,14 @@ HSlider
 
 **Hereda:** :ref:`Slider<class_Slider>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A horizontal slider that goes from left (min) to right (max).
+Versión horizontal de la :ref:`ScrollBar<class_ScrollBar>`, que va de izquierda (min) a derecha (máx).
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A horizontal slider, used to adjust a value by moving a grabber along a horizontal axis. It is a :ref:`Range<class_Range>`-based control and goes from left (min) to right (max).
+Un deslizador horizontal, utilizado para ajustar un valor moviendo un agarrador a lo largo de un eje horizontal. Es un control basado en :ref:`Range<class_Range>` y va de izquierda (min) a derecha (max).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

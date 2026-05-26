@@ -16,9 +16,9 @@ Translation
 描述
 ----
 
-**Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
+**Translation** 将一组字符串映射到其各自的翻译，并提供一些方便的复数形式处理方法。
 
-A **Translation** consists of messages. A message is identified by its context and untranslated string. Unlike `gettext <https://www.gnu.org/software/gettext/>`__, using an empty context string in Godot means not using any context.
+\ **Translation** 包含多条消息。消息通过其上下文和未翻译的字符串来识别。与 `gettext <https://www.gnu.org/software/gettext/>`__ 不同，在 Godot 中使用空上下文字符串意味着不使用任何上下文。
 
 .. rst-class:: classref-introduction-group
 
@@ -112,9 +112,9 @@ A **Translation** consists of messages. A message is identified by its context a
 - |void| **set_plural_rules_override**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plural_rules_override**\ (\ )
 
-The plural rules string to enforce. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+要强制执行的复数规则字符串。有关示例和更多信息，请参阅 `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__\ 。
 
-If empty or invalid, default plural rules from :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` are used. The English plural rules are used as a fallback.
+如果为空或无效，则使用 :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` 中的默认复数规则。英文复数规则被用作回退方案。
 
 .. rst-class:: classref-section-separator
 
@@ -169,9 +169,9 @@ If empty or invalid, default plural rules from :ref:`TranslationServer.get_plura
 
 |void| **add_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_messages\: :ref:`PackedStringArray<class_PackedStringArray>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_plural_message>`
 
-Adds a message involving plural translation if nonexistent, followed by its translation.
+如果不存在相应的复数形式翻译，则添加一条，后跟其翻译。
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+可以使用额外的上下文来指定翻译上下文或区分多义词。
 
 .. rst-class:: classref-item-separator
 
@@ -219,9 +219,9 @@ An additional context could be used to specify the translation context or differ
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_message_list>`
 
-Returns the keys of all messages, that is, the context and untranslated strings of each message.
+返回所有消息的键，即每条消息的上下文和未翻译的字符串。
 
-\ **Note:** If a message does not use a context, the corresponding element is the untranslated string. Otherwise, the corresponding element is the context and untranslated string separated by the EOT character (``U+0004``). This is done for compatibility purposes.
+\ **注意：**\ 如果消息不使用上下文，则对应的元素为未翻译的字符串。否则，相应的元素是上下文和未翻译的字符串，以 EOT 字符（\ ``U+0004``\ ）分隔。这样做是为了保持兼容性。
 
 ::
 
@@ -229,11 +229,11 @@ Returns the keys of all messages, that is, the context and untranslated strings 
         var p = key.find("\u0004")
         if p == -1:
             var untranslated = key
-            print("Message %s" % untranslated)
+            print("消息 %s" % untranslated)
         else:
             var context = key.substr(0, p)
             var untranslated = key.substr(p + 1)
-            print("Message %s with context %s" % [untranslated, context])
+            print("消息 %s 其上下文 %s" % [untranslated, context])
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ Returns the keys of all messages, that is, the context and untranslated strings 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_translated_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_translated_message_list>`
 
-Returns all the translated strings.
+返回所有已翻译的字符串。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

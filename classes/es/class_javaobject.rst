@@ -14,11 +14,11 @@ Representa un objeto de la Java Native Interface.
 Descripción
 ----------------------
 
-Represents an object from the Java Native Interface. It can be returned from Java methods called on :ref:`JavaClass<class_JavaClass>` or other **JavaObject**\ s. See :ref:`JavaClassWrapper<class_JavaClassWrapper>` for an example.
+Representa un objeto de la Interfaz Nativa de Java. Puede ser devuelto por métodos Java llamados en :ref:`JavaClass<class_JavaClass>` u otros **JavaObject**\ s. Véase :ref:`JavaClassWrapper<class_JavaClassWrapper>` para un ejemplo.
 
-\ **Note:** This class only works on Android. On any other platform, this class does nothing.
+\ **Nota:** Esta clase solo funciona en Android. En cualquier otra plataforma, esta clase no hace nada.
 
-\ **Note:** This class is not to be confused with :ref:`JavaScriptObject<class_JavaScriptObject>`.
+\ **Nota:** Esta clase no debe confundirse con :ref:`JavaScriptObject<class_JavaScriptObject>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -61,7 +61,7 @@ Devuelve la :ref:`JavaClass<class_JavaClass>` de la que este objeto es una insta
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JavaObject_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object's Java methods.
+Devuelve ``true`` si el nombre del ``method`` dado existe en los métodos Java del objeto.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

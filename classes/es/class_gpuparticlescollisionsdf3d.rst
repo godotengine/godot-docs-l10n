@@ -151,7 +151,7 @@ Descripciones de Propiedades
 - |void| **set_bake_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_bake_mask**\ (\ )
 
-Las capas visuales a tener en cuenta al procesar el SDF de colisión de partículas. Solo los :ref:`MeshInstance3D<class_MeshInstance3D>` cuyo :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` coincidan con esta :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` se incluirán en el SDF de colisión de partículas generado. Por defecto, todos los objetos se tienen en cuenta para el procesado del SDF de colisión de partículas.
+Las capas visuales a tener en cuenta al procesar el SDF de colisión de partículas. Solo los :ref:`MeshInstance3D<class_MeshInstance3D>` cuyo :ref:`VisualInstance3D.layers<class_VisualInstance3D_property_layers>` coincidan con esta :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` se incluirán en el SDF de colisión de partículas generado. Por defecto, todos los objetos se tienen en cuenta para el baking del SDF de colisión de partículas.
 
 .. rst-class:: classref-item-separator
 

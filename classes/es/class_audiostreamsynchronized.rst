@@ -7,14 +7,14 @@ AudioStreamSynchronized
 
 **Hereda:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Stream that can be fitted with sub-streams, which will be played in-sync.
+Flujo que puede contener sub-flujos, los cuales se reproducirán de manera sincronizada.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-This is a stream that can be fitted with sub-streams, which will be played in-sync. The streams begin at exactly the same time when play is pressed, and will end when the last of them ends. If one of the sub-streams loops, then playback will continue.
+Este es un flujo que puede contener sub-flujos, los cuales se reproducirán de manera sincronizada. Los flujos comienzan exactamente al mismo tiempo al presionar reproducir, y terminarán cuando finalice el último de ellos. Si uno de los sub-flujos se repite en bucle, la reproducción continuará.
 
 .. rst-class:: classref-reftable-group
 

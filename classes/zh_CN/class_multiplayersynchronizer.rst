@@ -10,14 +10,14 @@ MultiplayerSynchronizer
 
 **继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-将属性从多人游戏权威同步到远程对等体。
+将属性从多人游戏权威同步到远程对等端。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-默认情况下，\ **MultiplayerSynchronizer** 会将配置的属性同步到所有对等体。
+默认情况下，\ **MultiplayerSynchronizer** 会将配置的属性同步到所有对等端。
 
 可以使用 :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` 直接处理可见性，也可以通过 :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>` 和 :ref:`update_visibility()<class_MultiplayerSynchronizer_method_update_visibility>` 在需要时进行处理。
 
@@ -25,7 +25,7 @@ MultiplayerSynchronizer
 
 内部而言，\ **MultiplayerSynchronizer** 使用 :ref:`MultiplayerAPI.object_configuration_add()<class_MultiplayerAPI_method_object_configuration_add>` 来通知同步开始，将位于 :ref:`root_path<class_MultiplayerSynchronizer_property_root_path>` 的 :ref:`Node<class_Node>` 作为 ``object`` 传入、将自己作为 ``configuration`` 传入。使用 :ref:`MultiplayerAPI.object_configuration_remove()<class_MultiplayerAPI_method_object_configuration_remove>` 通知同步结束的方法相同。
 
-\ **注意：**\ 不支持对 :ref:`Resource<class_Resource>` 等 :ref:`Object<class_Object>` 类型属性进行同步。对等体的唯一属性也无法进行同步，例如 :ref:`Object<class_Object>` 的实例 ID（见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ ）或 :ref:`RID<class_RID>`\ 。
+\ **注意：**\ 不支持对 :ref:`Resource<class_Resource>` 等 :ref:`Object<class_Object>` 类型属性进行同步。对等端的唯一属性也无法进行同步，例如 :ref:`Object<class_Object>` 的实例 ID（见 :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`\ ）或 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -186,7 +186,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 - |void| **set_visibility_public**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_visibility_public**\ (\ )
 
-默认情况下，同步是否应该对所有对等体可见。有关配置细粒度可见性选项的方法，请参阅 :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` 和 :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>`\ 。
+默认情况下，同步是否应该对所有对等端可见。有关配置细粒度可见性选项的方法，请参阅 :ref:`set_visibility_for()<class_MultiplayerSynchronizer_method_set_visibility_for>` 和 :ref:`add_visibility_filter()<class_MultiplayerSynchronizer_method_add_visibility_filter>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -273,9 +273,9 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **add_visibility_filter**\ (\ filter\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_add_visibility_filter>`
 
-为该同步器添加对等体可见性过滤器。
+为该同步器添加对等端可见性过滤器。
 
-\ ``filter`` 应该接受对等体 ID :ref:`int<class_int>`\ ，返回 :ref:`bool<class_bool>`\ 。
+\ ``filter`` 应该接受对等端 ID :ref:`int<class_int>`\ ，返回 :ref:`bool<class_bool>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +287,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 :ref:`bool<class_bool>` **get_visibility_for**\ (\ peer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_MultiplayerSynchronizer_method_get_visibility_for>`
 
-查询对等体 ``peer`` 的当前可见性。
+查询对等端 ``peer`` 的当前可见性。
 
 .. rst-class:: classref-item-separator
 
@@ -299,7 +299,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **remove_visibility_filter**\ (\ filter\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_remove_visibility_filter>`
 
-从该同步器中移除某个对等体的可见性过滤器。
+从该同步器中移除某个对等端的可见性过滤器。
 
 .. rst-class:: classref-item-separator
 
@@ -323,7 +323,7 @@ enum **VisibilityUpdateMode**: :ref:`🔗<enum_MultiplayerSynchronizer_Visibilit
 
 |void| **update_visibility**\ (\ for_peer\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_MultiplayerSynchronizer_method_update_visibility>`
 
-根据可见性过滤器更新 ``for_peer`` 的可见性。如果 ``for_peer`` 为 ``0``\ （默认值），则更新所有对等体的可见性。
+根据可见性过滤器更新 ``for_peer`` 的可见性。如果 ``for_peer`` 为 ``0``\ （默认值），则更新所有对等端的可见性。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

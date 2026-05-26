@@ -14,7 +14,7 @@ Crea paquetes que pueden ser cargados en un proyecto en curso.
 Descripción
 ----------------------
 
-The **PCKPacker** is used to create packages that can be loaded into a running project using :ref:`ProjectSettings.load_resource_pack()<class_ProjectSettings_method_load_resource_pack>`.
+El **PCKPacker** se utiliza para crear paquetes que pueden cargarse en un proyecto en ejecución usando :ref:`ProjectSettings.load_resource_pack()<class_ProjectSettings_method_load_resource_pack>`.
 
 
 .. tabs::
@@ -35,9 +35,9 @@ The **PCKPacker** is used to create packages that can be loaded into a running p
 
 
 
-The above **PCKPacker** creates package ``test.pck``, then adds a file named ``text.txt`` at the root of the package.
+El **PCKPacker** anterior crea el paquete ``test.pck``, luego añade un archivo llamado ``text.txt`` en la raíz del paquete.
 
-\ **Note:** PCK is Godot's own pack file format. To create ZIP archives that can be read by any program, use :ref:`ZIPPacker<class_ZIPPacker>` instead.
+\ **Nota:** PCK es el formato de archivo de paquete propio de Godot. Para crear archivos ZIP que puedan ser leídos por cualquier programa, usa :ref:`ZIPPacker<class_ZIPPacker>` en su lugar.
 
 .. rst-class:: classref-reftable-group
 
@@ -72,7 +72,7 @@ Descripciones de Métodos
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_file**\ (\ target_path\: :ref:`String<class_String>`, source_path\: :ref:`String<class_String>`, encrypt\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PCKPacker_method_add_file>`
 
-Adds the ``source_path`` file to the current PCK package at the ``target_path`` internal path. The ``res://`` prefix for ``target_path`` is optional and stripped internally. File content is immediately written to the PCK.
+Añade el archivo ``source_path`` al paquete PCK actual en la ruta interna ``target_path``. El prefijo ``res://`` para ``target_path`` es opcional y se elimina internamente. El contenido del archivo se escribe inmediatamente en el PCK.
 
 .. rst-class:: classref-item-separator
 

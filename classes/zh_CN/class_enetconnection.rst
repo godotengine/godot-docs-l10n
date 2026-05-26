@@ -156,7 +156,7 @@ enum **EventType**: :ref:`🔗<enum_ENetConnection_EventType>`
 
 :ref:`EventType<enum_ENetConnection_EventType>` **EVENT_CONNECT** = ``1``
 
-由 enet_host_connect 发起的连接请求已完成。该数组将包含成功连接的对等体。
+由 enet_host_connect 发起的连接请求已完成。该数组将包含成功连接的对等端。
 
 .. _class_ENetConnection_constant_EVENT_DISCONNECT:
 
@@ -164,7 +164,7 @@ enum **EventType**: :ref:`🔗<enum_ENetConnection_EventType>`
 
 :ref:`EventType<enum_ENetConnection_EventType>` **EVENT_DISCONNECT** = ``2``
 
-对等体已断开连接。如果对等体超时，或者由 :ref:`connect_to_host()<class_ENetConnection_method_connect_to_host>` 初始化的连接请求超时，则在由 :ref:`ENetPacketPeer.peer_disconnect()<class_ENetPacketPeer_method_peer_disconnect>` 发起的断开连接成功完成时，生成该事件。该数组将包含断开连接的对等体。数据字段包含用户提供的描述断开连接的数据，如果没有可用的数据，则为 0。
+对等端已断开连接。如果对等端超时，或者由 :ref:`connect_to_host()<class_ENetConnection_method_connect_to_host>` 初始化的连接请求超时，则在由 :ref:`ENetPacketPeer.peer_disconnect()<class_ENetPacketPeer_method_peer_disconnect>` 发起的断开连接成功完成时，生成该事件。该数组将包含断开连接的对等端。数据字段包含用户提供的描述断开连接的数据，如果没有可用的数据，则为 0。
 
 .. _class_ENetConnection_constant_EVENT_RECEIVE:
 
@@ -172,7 +172,7 @@ enum **EventType**: :ref:`🔗<enum_ENetConnection_EventType>`
 
 :ref:`EventType<enum_ENetConnection_EventType>` **EVENT_RECEIVE** = ``3``
 
-已从对等体接收到一个数据包。该数组将包含发送数据包的对等体和接收数据包的通道号。接收到的数据包将被排队到关联的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
+已从对等端接收到一个数据包。该数组将包含发送数据包的对等端和接收数据包的通道号。接收到的数据包将被排队到关联的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 |void| **broadcast**\ (\ channel\: :ref:`int<class_int>`, packet\: :ref:`PackedByteArray<class_PackedByteArray>`, flags\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetConnection_method_broadcast>`
 
-将一个 ``packet`` 加入队列，以便将其通过指定的 ``channel`` 发送到与主机关联的所有对等体。请参阅 :ref:`ENetPacketPeer<class_ENetPacketPeer>` 中的 ``FLAG_*`` 常量以了解可用的数据包标志。
+将一个 ``packet`` 加入队列，以便将其通过指定的 ``channel`` 发送到与主机关联的所有对等端。请参阅 :ref:`ENetPacketPeer<class_ENetPacketPeer>` 中的 ``FLAG_*`` 常量以了解可用的数据包标志。
 
 .. rst-class:: classref-item-separator
 
@@ -297,7 +297,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_host**\ (\ max_peers\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_create_host>`
 
-创建一个 ENetHost，允许最多 ``max_peers`` 个已连接的对等体，每个对等体最多分配 ``max_channels`` 个通道，可选择将带宽限制为 ``in_bandwidth`` 和 ``out_bandwidth``\ （如果大于零）。
+创建一个 ENetHost，允许最多 ``max_peers`` 个已连接的对等端，每个对等端最多分配 ``max_channels`` 个通道，可选择将带宽限制为 ``in_bandwidth`` 和 ``out_bandwidth``\ （如果大于零）。
 
 该方法在\ *未指定*\ 地址的主机上绑定一个随机可用的动态 UDP 端口。使用 :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>` 指定地址和端口。
 
@@ -313,7 +313,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_host_bound**\ (\ bind_address\: :ref:`String<class_String>`, bind_port\: :ref:`int<class_int>`, max_peers\: :ref:`int<class_int>` = 32, max_channels\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_create_host_bound>`
 
-创建一个绑定到给定的 ``bind_address`` 和 ``bind_port`` 的 ENetHost，允许最多 ``max_peers`` 个已连接的对等体，每个对等体最多分配 ``max_channels`` 个通道，可选择将带宽限制为 ``in_bandwidth`` 和 ``out_bandwidth``\ （如果大于零）。
+创建一个绑定到给定的 ``bind_address`` 和 ``bind_port`` 的 ENetHost，允许最多 ``max_peers`` 个已连接的对等端，每个对等端最多分配 ``max_channels`` 个通道，可选择将带宽限制为 ``in_bandwidth`` 和 ``out_bandwidth``\ （如果大于零）。
 
 \ **注意：**\ 为了建立连接，必须在客户端和服务器中创建一个主机。
 
@@ -351,7 +351,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **dtls_server_setup**\ (\ server_options\: :ref:`TLSOptions<class_TLSOptions>`\ ) :ref:`🔗<class_ENetConnection_method_dtls_server_setup>`
 
-配置该 ENetHost 以使用允许对 ENet 服务器进行 DTLS 加密的自定义 Godot 扩展。在 :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>` 之后立即调用该方法，以让 ENet 期望对等体使用 DTLS 进行连接。请参阅 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
+配置该 ENetHost 以使用允许对 ENet 服务器进行 DTLS 加密的自定义 Godot 扩展。在 :ref:`create_host_bound()<class_ENetConnection_method_create_host_bound>` 之后立即调用该方法，以让 ENet 期望对等端使用 DTLS 进行连接。请参阅 :ref:`TLSOptions.server()<class_TLSOptions_method_server>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 |void| **flush**\ (\ ) :ref:`🔗<class_ENetConnection_method_flush>`
 
-将指定主机上所有被队列的数据包发送到其指定的对等体。
+将指定主机上所有被队列的数据包发送到其指定的对等端。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_ENetConnection_method_get_local_port>`
 
-返回该对等体绑定到的本地端口。
+返回该对等端绑定到的本地端口。
 
 .. rst-class:: classref-item-separator
 
@@ -387,7 +387,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`int<class_int>` **get_max_channels**\ (\ ) |const| :ref:`🔗<class_ENetConnection_method_get_max_channels>`
 
-返回连接的对等体所允许的最大通道数。
+返回连接的对等端所允许的最大通道数。
 
 .. rst-class:: classref-item-separator
 
@@ -399,9 +399,9 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`Array<class_Array>`\[:ref:`ENetPacketPeer<class_ENetPacketPeer>`\] **get_peers**\ (\ ) :ref:`🔗<class_ENetConnection_method_get_peers>`
 
-返回与该主机关联的对等体列表。
+返回与该主机关联的对等端列表。
 
-\ **注意：**\ 该列表可能包含一些未完全连接或仍在断开连接的对等体。
+\ **注意：**\ 该列表可能包含一些未完全连接或仍在断开连接的对等端。
 
 .. rst-class:: classref-item-separator
 
@@ -439,7 +439,7 @@ enum **HostStatistic**: :ref:`🔗<enum_ENetConnection_HostStatistic>`
 
 :ref:`Array<class_Array>` **service**\ (\ timeout\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetConnection_method_service>`
 
-等待该连接上的事件，并在给定的 ``timeout``\ （以毫秒为单位）内，在主机与其对等体之间传送数据包。返回的 :ref:`Array<class_Array>` 将包含 4 个元素。一个 :ref:`EventType<enum_ENetConnection_EventType>`\ 、生成事件的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 、事件关联数据（如果有）、事件关联通道（如果有）。如果生成的事件是 :ref:`EVENT_RECEIVE<class_ENetConnection_constant_EVENT_RECEIVE>`\ ，则接收的数据包将被队列到关联的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
+等待该连接上的事件，并在给定的 ``timeout``\ （以毫秒为单位）内，在主机与其对等端之间传送数据包。返回的 :ref:`Array<class_Array>` 将包含 4 个元素。一个 :ref:`EventType<enum_ENetConnection_EventType>`\ 、生成事件的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 、事件关联数据（如果有）、事件关联通道（如果有）。如果生成的事件是 :ref:`EVENT_RECEIVE<class_ENetConnection_constant_EVENT_RECEIVE>`\ ，则接收的数据包将被队列到关联的 :ref:`ENetPacketPeer<class_ENetPacketPeer>`\ 。
 
 定期调用该函数来处理连接、断开连接和接收新数据包。
 

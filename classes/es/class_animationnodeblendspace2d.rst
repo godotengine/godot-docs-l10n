@@ -14,11 +14,11 @@ Un conjunto de :ref:`AnimationRootNode<class_AnimationRootNode>`\ s colocados en
 Descripción
 ----------------------
 
-A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+Un recurso utilizado por :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace2D** represents a virtual 2D space on which :ref:`AnimationRootNode<class_AnimationRootNode>`\ s are placed. Outputs the linear blend of the three adjacent animations using a :ref:`Vector2<class_Vector2>` weight. Adjacent in this context means the three :ref:`AnimationRootNode<class_AnimationRootNode>`\ s making up the triangle that contains the current value.
+\ **AnimationNodeBlendSpace2D** representa un espacio virtual 2D sobre el que se colocan los :ref:`AnimationRootNode<class_AnimationRootNode>`. Genera la mezcla lineal de las tres animaciones adyacentes mediante un peso :ref:`Vector2<class_Vector2>`. En este contexto, "adyacente" se refiere a los tres :ref:`AnimationRootNode<class_AnimationRootNode>` que forman el triángulo que contiene el valor actual.
 
-You can add vertices to the blend space with :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` and automatically triangulate it by setting :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` to ``true``. Otherwise, use :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` and :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` to triangulate the blend space by hand.
+Puedes añadir vértices al espacio de mezcla con :ref:`add_blend_point()<class_AnimationNodeBlendSpace2D_method_add_blend_point>` y triangularlo automáticamente configurando :ref:`auto_triangles<class_AnimationNodeBlendSpace2D_property_auto_triangles>` a ``true``. De lo contrario, utiliza :ref:`add_triangle()<class_AnimationNodeBlendSpace2D_method_add_triangle>` y :ref:`remove_triangle()<class_AnimationNodeBlendSpace2D_method_remove_triangle>` para triangular el espacio de mezcla manualmente.
 
 .. rst-class:: classref-introduction-group
 
@@ -301,7 +301,7 @@ Descripciones de Métodos
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`Vector2<class_Vector2>`, at_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_blend_point>`
 
-Adds a new point that represents a ``node`` at the position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Agrega un nuevo punto que representa un ``node`` en la posición definida por ``pos``. Puede insertarlo en un índice específico usando el argumento ``at_index``. Si usa el valor predeterminado para ``at_index``, el punto se inserta al final del array de puntos de mezcla.
 
 .. rst-class:: classref-item-separator
 
@@ -313,7 +313,7 @@ Adds a new point that represents a ``node`` at the position set by ``pos``. You 
 
 |void| **add_triangle**\ (\ x\: :ref:`int<class_int>`, y\: :ref:`int<class_int>`, z\: :ref:`int<class_int>`, at_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AnimationNodeBlendSpace2D_method_add_triangle>`
 
-Creates a new triangle using three points ``x``, ``y``, and ``z``. Triangles can overlap. You can insert the triangle at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Crea un nuevo triángulo usando tres puntos ``x``, ``y``, and ``z``. Los triángulos pueden superponerse. Puedes insertar el triángulo en un índice específico usando el argumento ``at_index``. Si utilizas el valor por defecto de ``at_index``, el punto se inserta al final del array de puntos de mezcla.
 
 .. rst-class:: classref-item-separator
 

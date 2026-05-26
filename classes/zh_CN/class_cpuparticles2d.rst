@@ -475,7 +475,7 @@ enum **EmissionShape**: :ref:`🔗<enum_CPUParticles2D_EmissionShape>`
 
 :ref:`EmissionShape<enum_CPUParticles2D_EmissionShape>` **EMISSION_SHAPE_RING** = ``6``
 
-Particles will be emitted in the area of a ring parameterized by its outer and inner radius.
+粒子将在由其内外半径参数化的环状区域内发射。
 
 .. _class_CPUParticles2D_constant_EMISSION_SHAPE_MAX:
 
@@ -938,7 +938,7 @@ Particles will be emitted in the area of a ring parameterized by its outer and i
 - |void| **set_emission_ring_inner_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_inner_radius**\ (\ )
 
-The ring's inner radius if :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>`.
+:ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>` 时，该环的内半径。
 
 .. rst-class:: classref-item-separator
 
@@ -955,7 +955,7 @@ The ring's inner radius if :ref:`emission_shape<class_CPUParticles2D_property_em
 - |void| **set_emission_ring_radius**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_emission_ring_radius**\ (\ )
 
-The ring's outer radius if :ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` is set to :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>`.
+:ref:`emission_shape<class_CPUParticles2D_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_RING<class_CPUParticles2D_constant_EMISSION_SHAPE_RING>` 时，该环的外半径。
 
 .. rst-class:: classref-item-separator
 

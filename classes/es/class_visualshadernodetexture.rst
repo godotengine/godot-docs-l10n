@@ -7,7 +7,7 @@ VisualShaderNodeTexture
 
 **Hereda:** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Realiza una búsqueda de textura 2D dentro del grafo de shader visual.
+Realiza una búsqueda de texturas 2D dentro del grafo de shader visual.
 
 .. rst-class:: classref-introduction-group
 
@@ -135,7 +135,7 @@ enum **TextureType**: :ref:`🔗<enum_VisualShaderNodeTexture_TextureType>`
 
 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **TYPE_DATA** = ``0``
 
-No se añade ninguna sugerencia a la declaración del uniforme.
+No se añade ninguna sugerencia a la declaración de la variable uniforme.
 
 .. _class_VisualShaderNodeTexture_constant_TYPE_COLOR:
 
@@ -151,7 +151,7 @@ Adds ``source_color`` as hint to the uniform declaration for proper conversion f
 
 :ref:`TextureType<enum_VisualShaderNodeTexture_TextureType>` **TYPE_NORMAL_MAP** = ``2``
 
-Añade ``hint_normal`` como sugerencia a la declaración uniforme, lo que internamente convierte la textura para su uso adecuado como mapa normal.
+Añade ``hint_normal`` como sugerencia a la declaración de la variable uniforme uniforme, lo que internamente convierte la textura para su uso adecuado como mapa normal.
 
 .. _class_VisualShaderNodeTexture_constant_TYPE_MAX:
 

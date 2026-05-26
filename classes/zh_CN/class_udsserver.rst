@@ -7,16 +7,16 @@ UDSServer
 
 **继承：** :ref:`SocketServer<class_SocketServer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A Unix Domain Socket (UDS) server.
+Unix 域套接字（UDS）服务器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A Unix Domain Socket (UDS) server. Listens to connections on a socket path and returns a :ref:`StreamPeerUDS<class_StreamPeerUDS>` when it gets an incoming connection. Unix Domain Sockets provide inter-process communication on the same machine using the filesystem namespace.
+Unix 域套接字（UDS）服务器。监听套接字路径上的连接，并在收到传入连接时返回 :ref:`StreamPeerUDS<class_StreamPeerUDS>`\ 。Unix 域套接字使用文件系统命名空间在同一台机器上提供进程间通信。
 
-\ **Note:** Unix Domain Sockets are only available on Unix-like systems (Linux, macOS, etc.) and are not supported on Windows.
+\ **注意：**\ Unix 域套接字仅在类 Unix 系统（Linux、macOS 等）上可用，Windows 系统上不受支持。
 
 .. rst-class:: classref-reftable-group
 
@@ -47,9 +47,9 @@ A Unix Domain Socket (UDS) server. Listens to connections on a socket path and r
 
 :ref:`Error<enum_@GlobalScope_Error>` **listen**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_UDSServer_method_listen>`
 
-Listens on the socket at ``path``. The socket file will be created at the specified path.
+监听 ``path`` 处的套接字。套接字文件将在指定路径创建。
 
-\ **Note:** The socket file must not already exist at the specified path. You may need to remove any existing socket file before calling this method.
+\ **注意：**\ 指定路径下不能已存在套接字文件。调用该方法之前，可能需要删除任何已有的套接字文件。
 
 .. rst-class:: classref-item-separator
 
@@ -61,7 +61,7 @@ Listens on the socket at ``path``. The socket file will be created at the specif
 
 :ref:`StreamPeerUDS<class_StreamPeerUDS>` **take_connection**\ (\ ) :ref:`🔗<class_UDSServer_method_take_connection>`
 
-If a connection is available, returns a StreamPeerUDS with the connection.
+如果连接可用，则返回带有该连接的 StreamPeerUDS。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

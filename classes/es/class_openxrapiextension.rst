@@ -367,9 +367,9 @@ Returns a pointer to the render state's ``XrCompositionLayerProjection`` struct.
 
 :ref:`float<class_float>` **get_render_state_z_far**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_render_state_z_far>`
 
-Returns the far boundary value of the camera frustum.
+Devuelve el valor del límite lejano del frustum de la cámara.
 
-\ **Note:** This is only accessible in the render thread.
+\ **Nota:** Esto solo es accesible desde el hilo de renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -381,9 +381,9 @@ Returns the far boundary value of the camera frustum.
 
 :ref:`float<class_float>` **get_render_state_z_near**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_render_state_z_near>`
 
-Returns the near boundary value of the camera frustum.
+Devuelve el valor del límite cercano del frustum de la cámara.
 
-\ **Note:** This is only accessible in the render thread.
+\ **Nota:** Esto solo es accesible desde el hilo de renderizado.
 
 .. rst-class:: classref-item-separator
 

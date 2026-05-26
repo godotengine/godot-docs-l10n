@@ -27,7 +27,7 @@ ResourceLoader
 Обучающие материалы
 --------------------------------------
 
-- `Threaded Loading Demo <https://godotengine.org/asset-library/asset/2778>`__
+- `Демонстрация многопоточной загрузки <https://godotengine.org/asset-library/asset/2778>`__
 
 - `Демонстрация тестирования операционной системы <https://godotengine.org/asset-library/asset/2789>`__
 

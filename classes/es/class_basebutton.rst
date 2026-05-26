@@ -123,7 +123,7 @@ Si necesitas saber el estado de pulsación del botón (y :ref:`toggle_mode<class
 
 **toggled**\ (\ toggled_on\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseButton_signal_toggled>`
 
-Emitted when the button was just toggled between pressed and normal states (only if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active). The new state is contained in the ``toggled_on`` argument.
+Se emite cuando el botón acaba de conmutar entre los estados presionado y normal (solo si :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` está activo). El nuevo estado se incluye en el argumento ``toggled_on``.
 
 .. rst-class:: classref-section-separator
 
@@ -243,9 +243,9 @@ Determina cuándo se considera que se hizo clic en el botón.
 - |void| **set_button_group**\ (\ value\: :ref:`ButtonGroup<class_ButtonGroup>`\ )
 - :ref:`ButtonGroup<class_ButtonGroup>` **get_button_group**\ (\ )
 
-The :ref:`ButtonGroup<class_ButtonGroup>` associated with the button. Not to be confused with node groups.
+El :ref:`ButtonGroup<class_ButtonGroup>` asociado con el botón. No confundir con grupos de nodos.
 
-\ **Note:** The button will be configured as a radio button if a :ref:`ButtonGroup<class_ButtonGroup>` is assigned to it.
+\ **Nota:** El botón se configurará como un botón de opción si se le asigna un :ref:`ButtonGroup<class_ButtonGroup>`.
 
 .. rst-class:: classref-item-separator
 
@@ -281,9 +281,9 @@ Para permitir clics izquierdo y derecho, utiliza ``MOUSE_BUTTON_MASK_LEFT | MOUS
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-If ``true``, the button's state is pressed. Means the button is pressed down or toggled (if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is active). Only works if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is ``true``.
+Si es ``true``, el estado del botón es presionado. Significa que el botón está hundido o activado (si :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` está activo). Solo funciona si :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` es ``true``.
 
-\ **Note:** Changing the value of :ref:`button_pressed<class_BaseButton_property_button_pressed>` will result in :ref:`toggled<class_BaseButton_signal_toggled>` to be emitted. If you want to change the pressed state without emitting that signal, use :ref:`set_pressed_no_signal()<class_BaseButton_method_set_pressed_no_signal>`.
+\ **Nota:** Cambiar el valor de :ref:`button_pressed<class_BaseButton_property_button_pressed>` resultará en la emisión de la señal :ref:`toggled<class_BaseButton_signal_toggled>`. Si deseas cambiar el estado de presión sin emitir esa señal, utiliza :ref:`set_pressed_no_signal()<class_BaseButton_method_set_pressed_no_signal>`.
 
 .. rst-class:: classref-item-separator
 
@@ -300,9 +300,9 @@ If ``true``, the button's state is pressed. Means the button is pressed down or 
 - |void| **set_disabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_disabled**\ (\ )
 
-If ``true``, the button is in disabled state and can't be clicked or toggled.
+Si es ``true``, el botón está en estado deshabilitado y no se puede hacer clic ni alternar.
 
-\ **Note:** If the button is disabled while held down, :ref:`button_up<class_BaseButton_signal_button_up>` will be emitted.
+\ **Nota:** Si el botón se deshabilita mientras se mantiene presionado, se emitirá :ref:`button_up<class_BaseButton_signal_button_up>`.
 
 .. rst-class:: classref-item-separator
 
@@ -355,7 +355,7 @@ Si es ``true``, el botón permanecee pulsado cuando el cursor se mueve fuera mie
 - |void| **set_shortcut_feedback**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_feedback**\ (\ )
 
-If ``true``, the button will highlight for a short amount of time when its shortcut is activated. If ``false`` and :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is ``false``, the shortcut will activate without any visual feedback.
+Si es ``true``, el botón se resaltará durante un breve periodo de tiempo cuando se active su atajo. Si es ``false`` y :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` es ``false``, el atajo se activará sin ningún tipo de respuesta visual.
 
 .. rst-class:: classref-item-separator
 
@@ -372,9 +372,9 @@ If ``true``, the button will highlight for a short amount of time when its short
 - |void| **set_shortcut_in_tooltip**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_shortcut_in_tooltip_enabled**\ (\ )
 
-If ``true``, the button will add information about its shortcut in the tooltip.
+Si es ``true``, el botón añadirá información sobre su atajo en la descripción emergente (tooltip).
 
-\ **Note:** This property does nothing when the tooltip control is customized using :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
+\ **Nota:** Esta propiedad no hace nada cuando el control de la descripción emergente se personaliza mediante :ref:`Control._make_custom_tooltip()<class_Control_private_method__make_custom_tooltip>`.
 
 .. rst-class:: classref-item-separator
 
@@ -456,9 +456,9 @@ Devuelve ``true`` si el ratón ha entrado en el botón y no lo ha dejado todaví
 
 |void| **set_pressed_no_signal**\ (\ pressed\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_BaseButton_method_set_pressed_no_signal>`
 
-Changes the :ref:`button_pressed<class_BaseButton_property_button_pressed>` state of the button, without emitting :ref:`toggled<class_BaseButton_signal_toggled>`. Use when you just want to change the state of the button without sending the pressed event (e.g. when initializing scene). Only works if :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` is ``true``.
+Cambia el estado de :ref:`button_pressed<class_BaseButton_property_button_pressed>` del botón, sin emitir :ref:`toggled<class_BaseButton_signal_toggled>`. Úsalo cuando solo quieras cambiar el estado del botón sin enviar el evento de pulsado (por ejemplo, al inicializar la escena). Solo funciona si :ref:`toggle_mode<class_BaseButton_property_toggle_mode>` está en ``true``.
 
-\ **Note:** This method doesn't unpress other buttons in :ref:`button_group<class_BaseButton_property_button_group>`.
+\ **Nota:** Este método no desactiva otros botones en :ref:`button_group<class_BaseButton_property_button_group>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

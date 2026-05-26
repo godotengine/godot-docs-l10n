@@ -1611,7 +1611,7 @@ Détermine quels contrôles peuvent avoir le focus ensemble avec :ref:`focus_mod
 - |void| **set_focus_mode**\ (\ value\: :ref:`FocusMode<enum_Control_FocusMode>`\ )
 - :ref:`FocusMode<enum_Control_FocusMode>` **get_focus_mode**\ (\ )
 
-Détermine quels contrôles peuvent recevoir le focus. Un contrôle peut avoir le fcous à la fois, et le contrôle ayant le focus recevra des événements de clavier, de manette et de souris dans :ref:`_gui_input()<class_Control_private_method__gui_input>`. Utilisez :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` pour déterminer si un contrôle peut attraper le focus, puisque :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` l'affecte également. Voir aussi :ref:`grab_focus()<class_Control_method_grab_focus>`.
+Détermine quels contrôles peuvent recevoir le focus. Celui-ci ne peut être fait que sur un seul contrôle à la fois, ce contrôle recevra alors les événements de clavier, de manette et de souris dans :ref:`_gui_input()<class_Control_private_method__gui_input>`. Utilisez :ref:`get_focus_mode_with_override()<class_Control_method_get_focus_mode_with_override>` pour déterminer si un contrôle peut capturer le focus, car :ref:`focus_behavior_recursive<class_Control_property_focus_behavior_recursive>` l'affecte également. Voir aussi :ref:`grab_focus()<class_Control_method_grab_focus>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3660,16 +3660,16 @@ Les arguments pour chaque appelable devraient être exactement les mêmes que le
 
 |void| **set_drag_preview**\ (\ control\: :ref:`Control<class_Control>`\ ) :ref:`🔗<class_Control_method_set_drag_preview>`
 
-Affiche le contrôle donné comme curseur de la souris. Un bon moment pour appeler cette méthode est dans :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>`. Le contrôle doit ne pas être dans l'arborescence de la scène. Vous ne devriez pas libérer le contrôle, et vous ne devriez pas garder une référence du contrôle en-dehors de la durée du glissement. Il sera supprimé automatiquement après le glissement soit terminé.
+Affiche le contrôle donné comme curseur de la souris. Un bon moment pour appeler cette méthode est dans :ref:`_get_drag_data()<class_Control_private_method__get_drag_data>`. Le contrôle doit ne pas être dans l'arborescence de la scène. Vous ne devriez pas libérer le contrôle, et vous ne devriez pas garder une référence vers le contrôle en-dehors de la durée du glissement. Il sera supprimé automatiquement après que le glissement soit terminé.
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    export (Color, RGBA) var couleur = Color(1, 0, 0, 1)
+    @export var couleur = Color(1, 0, 0, 1)
 
-    func get_drag_data(position):
+    func _get_drag_data(position):
         # Utiliser un contrôle qui n'est pas dans l'arborescence
         var cpb = ColorPickerButton.new()
         cpb.color = couleur

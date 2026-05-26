@@ -7739,7 +7739,7 @@ Imposta il flag (``flag``) per questo effetto di rendering su ``true`` o ``false
 
 |void| **compositor_set_compositor_effects**\ (\ compositor\: :ref:`RID<class_RID>`, effects\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\]\ ) :ref:`🔗<class_RenderingServer_method_compositor_set_compositor_effects>`
 
-Imposta gli effetti del compositore per il RID di compositore specificato. ``effects`` dovrebbe essere un array contenente i RID creati con :ref:`compositor_effect_create()<class_RenderingServer_method_compositor_effect_create>`.
+Imposta gli effetti compositore per il RID di compositore specificato. ``effects`` dovrebbe essere un array contenente i RID creati con :ref:`compositor_effect_create()<class_RenderingServer_method_compositor_effect_create>`.
 
 .. rst-class:: classref-item-separator
 

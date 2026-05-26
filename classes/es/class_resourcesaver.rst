@@ -136,7 +136,7 @@ Descripciones de Métodos
 
 Registra un nuevo :ref:`ResourceFormatSaver<class_ResourceFormatSaver>`. ResourceSaver usará el ResourceFormatSaver como se describe en :ref:`save()<class_ResourceSaver_method_save>`.
 
-Este método se realiza implícitamente para los ResourceFormatSavers escritos en GDScript (consulta :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` para obtener más información).
+Este método se realiza implícitamente para los ResourceFormatSavers escritos en GDScript (véase :ref:`ResourceFormatSaver<class_ResourceFormatSaver>` para obtener más información).
 
 .. rst-class:: classref-item-separator
 

@@ -450,16 +450,16 @@ Array
     public override void _Ready() 
     {
         // Виводить True (3/3 елементів оцінюються як true). 
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(GreaterThan5)); 
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(GreaterThan5)); 
         // Виводить False (1/3 елементів оцінюється як true). 
-        GD.Print(new Godot.Collections.Array>int< { 4, 10, 4 }.All(GreaterThan5)); 
+        GD.Print(new Godot.Collections.Array<int> { 4, 10, 4 }.All(GreaterThan5)); 
         // Виводить False (0/3 елементів оцінюються як true). 
-        GD.Print(new Godot.Collections.Array>int< { 4, 4, 4 }.All(GreaterThan5)); 
+        GD.Print(new Godot.Collections.Array<int> { 4, 4, 4 }.All(GreaterThan5)); 
         // Виводить True (0/0 елементів оцінюється як true). 
-        GD.Print(new Godot.Collections.Array>int< { }.All(GreaterThan5)); 
+        GD.Print(new Godot.Collections.Array<int> { }.All(GreaterThan5)); 
 
         // Те саме, що й перший рядок вище, але з використанням лямбда-функції. 
-        GD.Print(new Godot.Collections.Array>int< { 6, 10, 6 }.All(element => element > 5)); // Виводить True 
+        GD.Print(new Godot.Collections.Array<int> { 6, 10, 6 }.All(element => element > 5)); // Виводить True 
     } 
 
  
@@ -571,9 +571,9 @@ Array
 
 :ref:`int<class_int>` **bsearch**\ (\ value\: :ref:`Variant<class_Variant>`, before\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_Array_method_bsearch>`
 
-Повертає індекс ``value`` у відсортованому масиві. Якщо його неможливо знайти, повертає місце, куди слід вставити ``value``, щоб зберегти масив упорядкованим. Використовується `алгоритм бінарного пошуку <https://uk.wikipedia.org/wiki/%D0%94%D0%B2%D1%96%D0%B9%D0%BA%D0%BE%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D1%88%D1%83%D0%BA>`__.
+Повертає індекс ``value`` у відсортованому масиві. Якщо його не вдається знайти, повертає позицію, куди слід вставити ``value``, щоб зберегти сортування масиву. Використовується алгоритм `бінарного пошуку <https://en.wikipedia.org/wiki/Binary_search_algorithm>`__.
 
-Якщо ``before`` має значення ``true`` (як за замовчуванням), повернутий індекс стоїть перед усіма існуючими елементами, що дорівнюють ``value`` у масиві.
+Якщо ``before`` дорівнює ``true`` (як за замовчуванням), повернений індекс знаходиться перед усіма існуючими елементами, що дорівнюють ``value`` у масиві.
 
 ::
 
@@ -583,11 +583,11 @@ Array
     numbers.insert(idx, 7)
     print(numbers) # Виводить [2, 4, 7, 8, 10]
 
-    var fruits = ["Апельсин", "Лимон", "Лимон", "Яблуко"]
-    print(fruits.bsearch("Лимон", true)) # Виводить 1, вказуючи на перший "Лимон".
-    print(fruits.bsearch("Лимон", false)) # Виводить 3, вказує на "Яблуко".
+    var fruits = ["Apple", "Lemon", "Lemon", "Orange"]
+    print(fruits.bsearch("Lemon", true))  # Виводить 1, вказує на перший "Lemon".
+    print(fruits.bsearch("Lemon", false)) # Виводить 3, вказує на "Orange".
 
-\ **Примітка:** Виклик :ref:`bsearch()<class_Array_method_bsearch>` для *несортованого* масиву призведе до неочікуваної поведінки. Використовуйте :ref:`sort()<class_Array_method_sort>` перед викликом цього методу.
+\ **Примітка:** Виклик :ref:`bsearch()<class_Array_method_bsearch>` для *невідсортованого* масиву призведе до несподіваної поведінки. Перед викликом цього методу використовуйте :ref:`sort()<class_Array_method_sort>`.
 
 .. rst-class:: classref-item-separator
 

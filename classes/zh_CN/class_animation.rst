@@ -998,7 +998,7 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`StringName<class_StringName>` **get_next_marker**\ (\ time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_get_next_marker>`
 
-返回晚于并最接近给定时间的标签，若该标签不存在，则返回空字符串。
+返回晚于且最接近给定时间的标签。若该标签不存在，则返回空字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -1010,7 +1010,7 @@ enum **FindMode**: :ref:`🔗<enum_Animation_FindMode>`
 
 :ref:`StringName<class_StringName>` **get_prev_marker**\ (\ time\: :ref:`float<class_float>`\ ) |const| :ref:`🔗<class_Animation_method_get_prev_marker>`
 
-返回早于并最接近给定时刻的标签，若此标签不存在，返回空字符串。
+返回早于且最接近给定时间的标签。若该标签不存在，则返回空字符串。
 
 .. rst-class:: classref-item-separator
 

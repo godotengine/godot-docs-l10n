@@ -594,7 +594,7 @@ If set to ``1``, ANGLE libraries are exported with the exported application. If 
 
 :ref:`String<class_String>` **application/icon** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/icon>`
 
-Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+Archivo del icono de la aplicación. Si se deja vacío, regresará a :ref:`ProjectSettings.application/config/macos_native_icon<class_ProjectSettings_property_application/config/macos_native_icon>` y, a continuación, a :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
 
 .. rst-class:: classref-item-separator
 
@@ -634,7 +634,7 @@ macOS 26 Liquid Glass icon source file. Use `Icon Composer <https://developer.ap
 
 :ref:`String<class_String>` **application/min_macos_version_arm64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_arm64>`
 
-Minimum version of macOS required for this application to run on Apple Silicon Macs, in the ``major.minor.patch`` or ``major.minor`` format, can only contain numeric characters (``0-9``) and periods (``.``).
+Versión mínima de macOS requerida para que esta aplicación se ejecute en Macs con Apple Silicon, en formato ``mayor.menor.parche`` o ``mayor.menor``, solo puede contener caracteres numéricos (``0-9``) y puntos (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -646,7 +646,7 @@ Minimum version of macOS required for this application to run on Apple Silicon M
 
 :ref:`String<class_String>` **application/min_macos_version_x86_64** :ref:`🔗<class_EditorExportPlatformMacOS_property_application/min_macos_version_x86_64>`
 
-Minimum version of macOS required for this application to run on Intel Macs, in the ``major.minor.patch`` or ``major.minor`` format, can only contain numeric characters (``0-9``) and periods (``.``).
+Versión mínima de macOS requerida para que esta aplicación se ejecute en Macs con Intel, en formato ``mayor.menor.parche`` o ``mayor.menor``, solo puede contener caracteres numéricos (``0-9``) y puntos (``.``).
 
 .. rst-class:: classref-item-separator
 
@@ -698,11 +698,11 @@ Machine-readable application version in the ``major.minor.patch`` format. Can on
 
 :ref:`String<class_String>` **binary_format/architecture** :ref:`🔗<class_EditorExportPlatformMacOS_property_binary_format/architecture>`
 
-Application executable architecture.
+Arquitectura del ejecutable de la aplicación.
 
-Supported architectures: ``x86_64``, ``arm64``, and ``universal`` (``x86_64 + arm64``).
+Arquitecturas soportadas: ``x86_64``, ``arm64`` y ``universal`` (``x86_64 + arm64``).
 
-Official export templates include ``universal`` binaries only.
+Las plantillas de exportación oficiales solo incluyen binarios ``universal``.
 
 .. rst-class:: classref-item-separator
 
@@ -726,9 +726,9 @@ Apple Team ID, unique 10-character string. To locate your Team ID check "Members
 
 :ref:`String<class_String>` **codesign/certificate_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/certificate_file>`
 
-PKCS #12 certificate file used to sign ``.app`` bundle.
+Archivo de certificado PKCS #12 usado para firmar el paquete ``.app``.
 
-Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``.
 
 .. rst-class:: classref-item-separator
 
@@ -740,9 +740,9 @@ Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICA
 
 :ref:`String<class_String>` **codesign/certificate_password** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/certificate_password>`
 
-Password for the certificate file used to sign ``.app`` bundle.
+Contraseña del archivo de certificado usado para firmar el paquete ``.app``.
 
-Can be overridden with the environment variable ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``.
+Puede ser sobrescrito con la variable de entorno ``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``.
 
 .. rst-class:: classref-item-separator
 
@@ -766,7 +766,7 @@ Herramienta a utilizar para la firma de código.
 
 :ref:`PackedStringArray<class_PackedStringArray>` **codesign/custom_options** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/custom_options>`
 
-Array of the additional command line arguments passed to the code signing tool.
+Array de argumentos adicionales de la línea de comandos pasados a la herramienta de firma de código.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedStringArray<class_PackedStringArray>` for more details.
 
@@ -797,7 +797,7 @@ Datos adicionales añadidos a la sección raíz ``<dict>`` del archivo `.entitle
 
 :ref:`bool<class_bool>` **codesign/entitlements/address_book** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/address_book>`
 
-Enable to allow access to contacts in the user's address book, if it's enabled you should also provide usage message in the :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>` option. See `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
+Habilita para permitir el acceso a los contactos en la libreta de direcciones del usuario; si está habilitado, también debes proporcionar un mensaje de uso en la opción :ref:`privacy/address_book_usage_description<class_EditorExportPlatformMacOS_property_privacy/address_book_usage_description>`. Véase `com.apple.security.personal-information.addressbook <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_addressbook>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -809,7 +809,7 @@ Enable to allow access to contacts in the user's address book, if it's enabled y
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_dyld_environment_variables** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_dyld_environment_variables>`
 
-Allows app to use dynamic linker environment variables to inject code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__.
+Permite que la aplicación use variables de entorno del enlazador dinámico para inyectar código. Si estás usando complementos con código nativo dinámico o auto-modificable, habilítalos según la documentación del complemento. Véase `com.apple.security.cs.allow-dyld-environment-variables <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-dyld-environment-variables>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Allows app to use dynamic linker environment variables to inject code. If you ar
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_jit_code_execution** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_jit_code_execution>`
 
-Allows creating writable and executable memory for JIT code. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__.
+Permite crear memoria escribible y ejecutable para código JIT. Si estás usando complementos con código nativo dinámico o auto-modificable, habilítalos según la documentación del complemento. Véase `com.apple.security.cs.allow-jit <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-jit>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -833,7 +833,7 @@ Allows creating writable and executable memory for JIT code. If you are using ad
 
 :ref:`bool<class_bool>` **codesign/entitlements/allow_unsigned_executable_memory** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/allow_unsigned_executable_memory>`
 
-Allows creating writable and executable memory without JIT restrictions. If you are using add-ons with dynamic or self-modifying native code, enable them according to the add-on documentation. See `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__.
+Permite crear memoria escribible y ejecutable sin restricciones JIT. Si estás usando complementos con código nativo dinámico o auto-modificable, habilítalos según la documentación del complemento. Véase `com.apple.security.cs.allow-unsigned-executable-memory <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_allow-unsigned-executable-memory>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +845,7 @@ Allows creating writable and executable memory without JIT restrictions. If you 
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/device_bluetooth** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/device_bluetooth>`
 
-Enable to allow app to interact with Bluetooth devices. This entitlement is required to use wireless controllers. See `com.apple.security.device.bluetooth <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth>`__.
+Habilítalo para permitir que la aplicación interactúe con dispositivos Bluetooth. Este derecho es necesario para usar controladores inalámbricos. Véase `com.apple.security.device.bluetooth <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_bluetooth>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -857,7 +857,7 @@ Enable to allow app to interact with Bluetooth devices. This entitlement is requ
 
 :ref:`bool<class_bool>` **codesign/entitlements/app_sandbox/device_usb** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/app_sandbox/device_usb>`
 
-Enable to allow app to interact with USB devices. This entitlement is required to use wired controllers. See `com.apple.security.device.usb <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb>`__.
+Habilítalo para permitir que la aplicación interactúe con dispositivos USB. Este derecho es necesario para usar controladores cableados. Véase `com.apple.security.device.usb <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_device_usb>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1027,7 +1027,7 @@ Enable if you need to use the camera, if it's enabled you should also provide us
 
 :ref:`String<class_String>` **codesign/entitlements/custom_file** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/custom_file>`
 
-Custom entitlements ``.plist`` file, if specified the rest of entitlements in the export config are ignored.
+Archivo de derechos personalizados ``.plist``, si se especifica, el resto de los derechos en la configuración de exportación se ignoran.
 
 .. rst-class:: classref-item-separator
 
@@ -1051,7 +1051,7 @@ You can temporarily enable this entitlement to use native debugger (GDB, LLDB) w
 
 :ref:`bool<class_bool>` **codesign/entitlements/disable_library_validation** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/disable_library_validation>`
 
-Allows app to load arbitrary libraries and frameworks (not signed with the same Team ID as the main executable or by Apple). Enable it if you are using GDExtension add-ons or ad-hoc signing, or want to support user-provided external add-ons. See `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
+Permite a la aplicación cargar librerías y frameworks arbitrarios (no firmados con el mismo ID de equipo que el ejecutable principal o por Apple). Habilítalo si estás usando complementos GDExtension o firma ad-hoc, o si quieres soportar complementos externos proporcionados por el usuario. Véase `com.apple.security.cs.disable-library-validation <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_cs_disable-library-validation>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1063,7 +1063,7 @@ Allows app to load arbitrary libraries and frameworks (not signed with the same 
 
 :ref:`bool<class_bool>` **codesign/entitlements/location** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/location>`
 
-Enable if you need to use location information from Location Services, if it's enabled you should also provide usage message in the :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>` option. See `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
+Habilítalo si necesitas usar información de ubicación de los Servicios de Ubicación; si está habilitado, también debes proporcionar un mensaje de uso en la opción :ref:`privacy/location_usage_description<class_EditorExportPlatformMacOS_property_privacy/location_usage_description>`. Véase `com.apple.security.personal-information.location <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_location>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1075,7 +1075,7 @@ Enable if you need to use location information from Location Services, if it's e
 
 :ref:`bool<class_bool>` **codesign/entitlements/photos_library** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/entitlements/photos_library>`
 
-Enable to allow access to the user's Photos library, if it's enabled you should also provide usage message in the :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>` option. See `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
+Habilítalo para permitir el acceso a la biblioteca de Fotos del usuario; si está habilitado, también debes proporcionar un mensaje de uso en la opción :ref:`privacy/photos_library_usage_description<class_EditorExportPlatformMacOS_property_privacy/photos_library_usage_description>`. Véase `com.apple.security.personal-information.photos-library <https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_security_personal-information_photos-library>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1087,7 @@ Enable to allow access to the user's Photos library, if it's enabled you should 
 
 :ref:`String<class_String>` **codesign/identity** :ref:`🔗<class_EditorExportPlatformMacOS_property_codesign/identity>`
 
-The "Full Name", "Common Name" or SHA-1 hash of the signing identity used to sign ``.app`` bundle.
+El "nombre completo", "nombre común" o hash SHA-1 de la identidad de firma usada para firmar el paquete ``.app``.
 
 .. rst-class:: classref-item-separator
 
@@ -1399,7 +1399,7 @@ Indica si tu aplicación recopila datos de audio.
 
 :ref:`int<class_int>` **privacy/collected_data/audio_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/audio_data/collection_purposes>`
 
-Las razones por las que tu aplicación recopila datos de audio. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila datos de audio. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1543,7 +1543,7 @@ Indica si tu aplicación recopila contactos.
 
 :ref:`int<class_int>` **privacy/collected_data/contacts/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/contacts/collection_purposes>`
 
-Las razones por las que tu aplicación recopila contactos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila contactos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1591,7 +1591,7 @@ Indica si tu aplicación recopila datos de fallos.
 
 :ref:`int<class_int>` **privacy/collected_data/crash_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/crash_data/collection_purposes>`
 
-Las razones por las que tu aplicación recopila datos de fallos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila datos de fallos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1975,7 +1975,7 @@ Indica si tu aplicación recopila contenido de juego.
 
 :ref:`int<class_int>` **privacy/collected_data/gameplay_content/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/gameplay_content/collection_purposes>`
 
-Las razones por las que tu aplicación recopila contenido de juego. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila contenido de juego. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2119,7 +2119,7 @@ Indica si tu aplicación recopila datos médicos y de salud.
 
 :ref:`int<class_int>` **privacy/collected_data/health/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/health/collection_purposes>`
 
-Las razones por las que tu app recopila datos médicos y de salud. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila datos médicos y de salud. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2263,7 +2263,7 @@ Indica si tu aplicación recopila cualquier otro dato.
 
 :ref:`int<class_int>` **privacy/collected_data/other_data_types/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_data_types/collection_purposes>`
 
-Las razones por las que tu aplicación recopila otros datos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila otros datos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2407,7 +2407,7 @@ Indica si tu aplicación recopila cualquier otro dato de uso.
 
 :ref:`int<class_int>` **privacy/collected_data/other_usage_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/other_usage_data/collection_purposes>`
 
-Las razones por las que tu aplicación recopila otros datos de uso. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila otros datos de uso. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2503,7 +2503,7 @@ Indica si tu aplicación recopila información de pago.
 
 :ref:`int<class_int>` **privacy/collected_data/payment_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/payment_info/collection_purposes>`
 
-Las razones por las que tu aplicación recopila información de pago. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila información de pago. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2647,7 +2647,7 @@ Indica si tu aplicación recopila fotos o vídeos.
 
 :ref:`int<class_int>` **privacy/collected_data/photos_or_videos/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/photos_or_videos/collection_purposes>`
 
-Las razones por las que tu app recopila fotos o vídeos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila fotos o vídeos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2695,7 +2695,7 @@ Indica si tu aplicación recopila direcciones físicas.
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-Las razones por las que tu aplicación recopila la dirección física. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila la dirección física. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2839,7 +2839,7 @@ Indica si tu aplicación recopila el historial de compras.
 
 :ref:`int<class_int>` **privacy/collected_data/purchase_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/purchase_history/collection_purposes>`
 
-Las razones por las que tu app recopila el historial de compras. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila el historial de compras. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2983,7 +2983,7 @@ Indica si tu aplicación recopila los ID de usuario.
 
 :ref:`int<class_int>` **privacy/collected_data/user_id/collection_purposes** :ref:`🔗<class_EditorExportPlatformMacOS_property_privacy/collected_data/user_id/collection_purposes>`
 
-Las razones por las que tu aplicación recopila ID de usuario. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila ID de usuario. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 

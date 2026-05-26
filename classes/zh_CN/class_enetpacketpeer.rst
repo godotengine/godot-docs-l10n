@@ -14,7 +14,7 @@ ENetPacketPeer
 描述
 ----
 
-表示 :ref:`ENetConnection<class_ENetConnection>` 对等体的 PacketPeer 实现。
+表示 :ref:`ENetConnection<class_ENetConnection>` 对等端的 PacketPeer 实现。
 
 该类无法被直接实例化，但可以在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期间，或通过 :ref:`ENetConnection.get_peers()<class_ENetConnection_method_get_peers>` 进行检索。
 
@@ -90,7 +90,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_DISCONNECTED** = ``0``
 
-该对等体已断开连接。
+该对等端已断开连接。
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTING:
 
@@ -98,7 +98,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTING** = ``1``
 
-该对等体正在尝试连接。
+该对等端正在尝试连接。
 
 .. _class_ENetPacketPeer_constant_STATE_ACKNOWLEDGING_CONNECT:
 
@@ -106,7 +106,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_ACKNOWLEDGING_CONNECT** = ``2``
 
-该对等体已确认连接请求。
+该对等端已确认连接请求。
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTION_PENDING:
 
@@ -114,7 +114,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTION_PENDING** = ``3``
 
-该对等体正在连接。
+该对等端正在连接。
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTION_SUCCEEDED:
 
@@ -122,7 +122,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTION_SUCCEEDED** = ``4``
 
-该对等体已成功连接，但还没有准备好进行通讯（\ :ref:`STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>`\ ）。
+该对等端已成功连接，但还没有准备好进行通讯（\ :ref:`STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>`\ ）。
 
 .. _class_ENetPacketPeer_constant_STATE_CONNECTED:
 
@@ -130,7 +130,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_CONNECTED** = ``5``
 
-该对等体已连接，可以进行通讯。
+该对等端已连接，可以进行通讯。
 
 .. _class_ENetPacketPeer_constant_STATE_DISCONNECT_LATER:
 
@@ -138,7 +138,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_DISCONNECT_LATER** = ``6``
 
-该对等体在没有更多的外发数据包可以发送后，将预计断开连接。
+该对等端在没有更多的外发数据包可以发送后，将预计断开连接。
 
 .. _class_ENetPacketPeer_constant_STATE_DISCONNECTING:
 
@@ -146,7 +146,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_DISCONNECTING** = ``7``
 
-该对等体正在断开连接。
+该对等端正在断开连接。
 
 .. _class_ENetPacketPeer_constant_STATE_ACKNOWLEDGING_DISCONNECT:
 
@@ -154,7 +154,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_ACKNOWLEDGING_DISCONNECT** = ``8``
 
-该对等体已确认断开请求。
+该对等端已确认断开请求。
 
 .. _class_ENetPacketPeer_constant_STATE_ZOMBIE:
 
@@ -162,7 +162,7 @@ enum **PeerState**: :ref:`🔗<enum_ENetPacketPeer_PeerState>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **STATE_ZOMBIE** = ``9``
 
-该对等体已丢失连接，但并未真正断开连接（因为该对等体还没有对断开连接请求进行确认）。
+该对等端已丢失连接，但并未真正断开连接（因为该对等端还没有对断开连接请求进行确认）。
 
 .. rst-class:: classref-item-separator
 
@@ -236,7 +236,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>` **PEER_PACKET_THROTTLE** = ``7``
 
-该对等体的当前节流状态。
+该对等端的当前节流状态。
 
 .. _class_ENetPacketPeer_constant_PEER_PACKET_THROTTLE_LIMIT:
 
@@ -350,7 +350,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`int<class_int>` **get_channels**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_channels>`
 
-返回为与对等体通信而分配的通道数。
+返回为与对等端通信而分配的通道数。
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`String<class_String>` **get_remote_address**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_remote_address>`
 
-返回该对等体的 IP 地址。
+返回该对等端的 IP 地址。
 
 .. rst-class:: classref-item-separator
 
@@ -386,7 +386,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`int<class_int>` **get_remote_port**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_remote_port>`
 
-返回该对等体的远程端口。
+返回该对等端的远程端口。
 
 .. rst-class:: classref-item-separator
 
@@ -398,7 +398,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`PeerState<enum_ENetPacketPeer_PeerState>` **get_state**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_get_state>`
 
-返回当前的对等体状态。
+返回当前的对等端状态。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +410,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`float<class_float>` **get_statistic**\ (\ statistic\: :ref:`PeerStatistic<enum_ENetPacketPeer_PeerStatistic>`\ ) :ref:`🔗<class_ENetPacketPeer_method_get_statistic>`
 
-返回该对等体的统计信息，由 ``statistic`` 指定。
+返回该对等端的统计信息，由 ``statistic`` 指定。
 
 .. rst-class:: classref-item-separator
 
@@ -422,7 +422,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 :ref:`bool<class_bool>` **is_active**\ (\ ) |const| :ref:`🔗<class_ENetPacketPeer_method_is_active>`
 
-如果对等体当前处于活动状态（即关联的 :ref:`ENetConnection<class_ENetConnection>` 仍然有效），则返回 ``true``\ 。
+如果对等端当前处于活动状态（即关联的 :ref:`ENetConnection<class_ENetConnection>` 仍然有效），则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **peer_disconnect**\ (\ data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetPacketPeer_method_peer_disconnect>`
 
-请求与对等体断开连接。一旦断开连接完成，在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期间，将生成一个 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。
+请求与对等端断开连接。一旦断开连接完成，在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期间，将生成一个 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +446,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **peer_disconnect_later**\ (\ data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetPacketPeer_method_peer_disconnect_later>`
 
-请求与对等体断开连接，但仅在发送完所有队列的传出数据包之后。一旦断开连接完成，在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期间，将生成一个 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。
+请求与对等端断开连接，但仅在发送完所有队列的传出数据包之后。一旦断开连接完成，在 :ref:`ENetConnection.service()<class_ENetConnection_method_service>` 期间，将生成一个 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +458,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **peer_disconnect_now**\ (\ data\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetPacketPeer_method_peer_disconnect_now>`
 
-强制立即断开与对等体的连接。不会生成 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。不保证外部对等体会收到断开连接通知，并会在从此函数返回后立即重置。
+强制立即断开与对等端的连接。不会生成 :ref:`ENetConnection.EVENT_DISCONNECT<class_ENetConnection_constant_EVENT_DISCONNECT>`\ 。不保证外部对等端会收到断开连接通知，并会在从此函数返回后立即重置。
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +470,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **ping**\ (\ ) :ref:`🔗<class_ENetPacketPeer_method_ping>`
 
-向对等体发送 ping 请求。ENet 会定期自动 ping 所有连接的对等体，但也可以手动调用此函数，确保进行更频繁的 ping 请求。
+向对等端发送 ping 请求。ENet 会定期自动 ping 所有连接的对等端，但也可以手动调用此函数，确保进行更频繁的 ping 请求。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +482,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **ping_interval**\ (\ ping_interval\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_ping_interval>`
 
-设置向对等体发送 ping 的间隔 ``ping_interval``\ ，单位为毫秒。Ping 既用于监控连接的有效性，也用于在低流量期间动态调整节流，以便在流量高峰期节流具有合理的响应能力。默认的 ping 间隔为 ``500`` 毫秒。
+设置向对等端发送 ping 的间隔 ``ping_interval``\ ，单位为毫秒。Ping 既用于监控连接的有效性，也用于在低流量期间动态调整节流，以便在流量高峰期节流具有合理的响应能力。默认的 ping 间隔为 ``500`` 毫秒。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +494,7 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **reset**\ (\ ) :ref:`🔗<class_ENetPacketPeer_method_reset>`
 
-强制断开对等体。对等体代表的外部主机不会收到断开连接的通知，并且会在与本地主机的连接上超时。
+强制断开对等端。对等端代表的外部主机不会收到断开连接的通知，并且会在与本地主机的连接上超时。
 
 .. rst-class:: classref-item-separator
 
@@ -518,9 +518,9 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **set_timeout**\ (\ timeout\: :ref:`int<class_int>`, timeout_min\: :ref:`int<class_int>`, timeout_max\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_set_timeout>`
 
-设置对等体的超时参数。超时参数控制对等体因无法确认可靠流量而超时的方式和时间。超时值以毫秒表示。
+设置对等端的超时参数。超时参数控制对等端因无法确认可靠流量而超时的方式和时间。超时值以毫秒表示。
 
-\ ``timeout`` 是一个系数，乘以基于平均往返时间的值，将确定可靠数据包的超时限制。当达到该限制时，超时将加倍，如果该限制已达到 ``timeout_min``\ ，则对等体将断开连接。另一方面，\ ``timeout_max`` 参数定义了一个固定的超时时间，在该时间内必须确认所有数据包，否则对等体将被丢弃。
+\ ``timeout`` 是一个系数，乘以基于平均往返时间的值，将确定可靠数据包的超时限制。当达到该限制时，超时将加倍，如果该限制已达到 ``timeout_min``\ ，则对等端将断开连接。另一方面，\ ``timeout_max`` 参数定义了一个固定的超时时间，在该时间内必须确认所有数据包，否则对等端将被丢弃。
 
 .. rst-class:: classref-item-separator
 
@@ -532,9 +532,9 @@ enum **PeerStatistic**: :ref:`🔗<enum_ENetPacketPeer_PeerStatistic>`
 
 |void| **throttle_configure**\ (\ interval\: :ref:`int<class_int>`, acceleration\: :ref:`int<class_int>`, deceleration\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetPacketPeer_method_throttle_configure>`
 
-为对等体配置节流参数。
+为对等端配置节流参数。
 
-不可靠的数据包会被 ENet 丢弃，以应对与对等体的互联网连接的各种情况。节流表示一个不可靠数据包不应被丢弃并因此由 ENet 将其发送到对等体的概率。通过测量指定 ``interval`` 内可靠数据包往返时间的波动，ENet 将按照 ``acceleration`` 参数中指定的量增加概率，或者按照 ``deceleration`` 参数中指定的量降低概率（两者都是与 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 的比率）。
+不可靠的数据包会被 ENet 丢弃，以应对与对等端的互联网连接的各种情况。节流表示一个不可靠数据包不应被丢弃并因此由 ENet 将其发送到对等端的概率。通过测量指定 ``interval`` 内可靠数据包往返时间的波动，ENet 将按照 ``acceleration`` 参数中指定的量增加概率，或者按照 ``deceleration`` 参数中指定的量降低概率（两者都是与 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 的比率）。
 
 当节流的值为 :ref:`PACKET_THROTTLE_SCALE<class_ENetPacketPeer_constant_PACKET_THROTTLE_SCALE>` 时，ENet 不会丢弃任何不可靠的数据包，因此所有不可靠数据包以 100% 的概率将被发送。
 

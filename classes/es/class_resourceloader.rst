@@ -183,7 +183,7 @@ Descripciones de Métodos
 
 Registra un nuevo :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`. El ResourceLoader utilizará el ResourceFormatLoader como se describe en :ref:`load()<class_ResourceLoader_method_load>`.
 
-Este método se realiza implícitamente para los ResourceFormatLoaders escritos en GDScript (consulta :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` para obtener más información).
+Este método se realiza implícitamente para los ResourceFormatLoaders escritos en GDScript (véase :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` para obtener más información).
 
 .. rst-class:: classref-item-separator
 

@@ -482,7 +482,7 @@ Renvoie l'index de l'os de fin de la chaîne d'os.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_SpringBoneSimulator3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` is ``true``.
+Renvoie la direction de la queue de l'os de fin de la chaîne d'os lorsque :ref:`is_end_bone_extended()<class_SpringBoneSimulator3D_method_is_end_bone_extended>` vaut ``true``.
 
 .. rst-class:: classref-item-separator
 

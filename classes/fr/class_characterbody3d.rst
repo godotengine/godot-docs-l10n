@@ -589,7 +589,7 @@ Renvoie la vitesse réelle actuelle depuis le dernier appel à :ref:`move_and_sl
 
 :ref:`KinematicCollision3D<class_KinematicCollision3D>` **get_slide_collision**\ (\ slide_idx\: :ref:`int<class_int>`\ ) :ref:`🔗<class_CharacterBody3D_method_get_slide_collision>`
 
-Returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>`, which contains information about a collision that occurred during the last call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Since the body can collide several times in a single call to :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, you must specify the index of the collision in the range 0 to (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). See also :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
+Renvoie un :ref:`KinematicCollision3D<class_KinematicCollision3D>` qui contient des informations sur une collision qui s'est produite au cours du dernier appel à :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`. Comme le corps peut entrer en collision plusieurs fois pendant un seul appel à :ref:`move_and_slide()<class_CharacterBody3D_method_move_and_slide>`, vous devez spécifier l'index de la collision dans une plage de 0 à (:ref:`get_slide_collision_count()<class_CharacterBody3D_method_get_slide_collision_count>` - 1). Voir aussi :ref:`get_last_slide_collision()<class_CharacterBody3D_method_get_last_slide_collision>`.
 
 .. rst-class:: classref-item-separator
 

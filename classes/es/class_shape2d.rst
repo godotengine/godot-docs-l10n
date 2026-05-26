@@ -176,7 +176,7 @@ Draws a solid shape onto a :ref:`CanvasItem<class_CanvasItem>` with the :ref:`Re
 
 :ref:`Rect2<class_Rect2>` **get_rect**\ (\ ) |const| :ref:`🔗<class_Shape2D_method_get_rect>`
 
-Returns a :ref:`Rect2<class_Rect2>` representing the shapes boundary.
+Devuelve un :ref:`Rect2<class_Rect2>` que representa el límite de las formas.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

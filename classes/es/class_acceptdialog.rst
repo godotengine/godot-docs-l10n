@@ -16,9 +16,9 @@ Un diálogo base utilizado para la notificación al usuario.
 Descripción
 ----------------------
 
-The default use of **AcceptDialog** is to allow it to only be accepted or closed, with the same result. However, the :ref:`confirmed<class_AcceptDialog_signal_confirmed>` and :ref:`canceled<class_AcceptDialog_signal_canceled>` signals allow to make the two actions different, and the :ref:`add_button()<class_AcceptDialog_method_add_button>` method allows to add custom buttons and actions.
+El uso predeterminado de **AcceptDialog** es permitir que solo se acepte o se cierre, con el mismo resultado. Sin embargo, las señales :ref:`confirmed<class_AcceptDialog_signal_confirmed>` y :ref:`canceled<class_AcceptDialog_signal_canceled>` permiten diferenciar ambas acciones, y el método :ref:`add_button()<class_AcceptDialog_method_add_button>` permite agregar botones y acciones personalizadas.
 
-\ **Note:** **AcceptDialog** is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** **AcceptDialog** es invisible por defecto. Para hacerlo visible, llama a uno de los métodos ``popup_*`` de :ref:`Window<class_Window>` en el nodo, como :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -174,7 +174,7 @@ El texto se expande automáticamente en el diálogo.
 - |void| **set_close_on_escape**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_close_on_escape**\ (\ )
 
-If ``true``, the dialog will be hidden when the ``ui_close_dialog`` action is pressed (by default, this action is bound to :kbd:`Escape`, or :kbd:`Cmd + W` on macOS).
+Si es ``true``, el diálogo se ocultará cuando se pulse la acción ``ui_close_dialog`` (por defecto, esta acción está vinculada a :kbd:`Escape`, o :kbd:`Cmd + W` en macOS).
 
 .. rst-class:: classref-item-separator
 
@@ -290,7 +290,7 @@ Devuelve la etiqueta utilizada para el texto integrado.
 
 :ref:`Button<class_Button>` **get_ok_button**\ (\ ) :ref:`🔗<class_AcceptDialog_method_get_ok_button>`
 
-Retorna la instancia de el :ref:`Button<class_Button>` aceptar. 
+Devuelve la instancia de el :ref:`Button<class_Button>` aceptar. 
 
 \ **Warning:** Esto es un nodo interno requerido, removerlo y liberarlo podría causar un crasheo. Si deseas esconder este o alguno de sus hijos, utiliza su propiedad :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
 

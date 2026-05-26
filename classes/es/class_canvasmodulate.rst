@@ -17,14 +17,14 @@ Un nodo que aplica un tinte de color a un canvas.
 Descripción
 ----------------------
 
-**CanvasModulate** applies a color tint to all nodes on a canvas. Only one can be used to tint a canvas, but :ref:`CanvasLayer<class_CanvasLayer>`\ s can be used to render things independently.
+**CanvasModulate** aplica un tinte de color a todos los nodos en un canvas. Solo se puede usar uno para aplicar un tinte a un canvas, pero los :ref:`CanvasLayer<class_CanvasLayer>` se pueden usar para el render de elementos de forma independiente.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
 
-- :doc:`2D lights and shadows <../tutorials/2d/2d_lights_and_shadows>`
+- :doc:`Luces y sombras 2D <../tutorials/2d/2d_lights_and_shadows>`
 
 .. rst-class:: classref-reftable-group
 

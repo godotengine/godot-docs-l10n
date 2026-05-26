@@ -14,9 +14,9 @@ EditorToaster
 描述
 ----
 
-This object manages the functionality and display of toast notifications within the editor, ensuring immediate and informative alerts are presented to the user.
+该对象管理编辑器内 Toast 通知的功能和显示，确保立即向用户提供信息丰富的警报。
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_toaster()<class_EditorInterface_method_get_editor_toaster>`.
+\ **注意：**\ 这个类不应该直接实例化。请改用 :ref:`EditorInterface.get_editor_toaster()<class_EditorInterface_method_get_editor_toaster>` 访问单例。
 
 .. rst-class:: classref-reftable-group
 

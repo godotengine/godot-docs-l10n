@@ -173,7 +173,7 @@ Este modo realiza una mezcla alfa estándar. Puede mostrar áreas translúcidas,
 
 :ref:`AlphaCutMode<enum_SpriteBase3D_AlphaCutMode>` **ALPHA_CUT_DISCARD** = ``1``
 
-Este modo solo permite píxeles totalmente transparentes o totalmente opacos. Los bordes duros serán visibles a menos que se active alguna forma de antialiasing en el espacio de la pantalla (consulta :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). En el lado bueno, este modo no sufre problemas de ordenación de la transparencia cuando varios materiales transparentes se superponen. Este modo también se conoce como *prueba alfa* o *transparencia de 1 bit*.
+Este modo solo permite píxeles totalmente transparentes o totalmente opacos. Los bordes duros serán visibles a menos que se active alguna forma de antialiasing en el espacio de la pantalla (véase :ref:`ProjectSettings.rendering/anti_aliasing/quality/screen_space_aa<class_ProjectSettings_property_rendering/anti_aliasing/quality/screen_space_aa>`). En el lado bueno, este modo no sufre problemas de ordenación de la transparencia cuando varios materiales transparentes se superponen. Este modo también se conoce como *prueba alfa* o *transparencia de 1 bit*.
 
 .. _class_SpriteBase3D_constant_ALPHA_CUT_OPAQUE_PREPASS:
 

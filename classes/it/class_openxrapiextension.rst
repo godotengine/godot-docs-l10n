@@ -353,7 +353,7 @@ Restituisce il tempo di visualizzazione previsto per il frame attuale.
 
 :ref:`int<class_int>` **get_projection_layer**\ (\ ) :ref:`🔗<class_OpenXRAPIExtension_method_get_projection_layer>`
 
-Restituisce un puntatore alla struttura ``XrCompositionLayerProjection`` dello stato di rendering.
+Restituisce un puntatore alla struct ``XrCompositionLayerProjection`` dello stato di rendering.
 
 \ **Nota:** Questo metodo dovrebbe essere chiamato solo dal thread di rendering.
 

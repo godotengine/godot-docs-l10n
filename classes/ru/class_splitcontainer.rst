@@ -9,14 +9,14 @@ SplitContainer
 
 **Наследуется от:** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
 
-A container that arranges child controls horizontally or vertically and provides grabbers for adjusting the split ratios between them.
+Контейнер, в котором элементы управления для дочерних узлов располагаются горизонтально или вертикально, и предусмотрены захваты для регулировки соотношения разделения пространства между ними.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-A container that arranges child controls horizontally or vertically and creates grabbers between them. The grabbers can be dragged around to change the size relations between the child controls.
+Контейнер, который располагает дочерние элементы управления горизонтально или вертикально и создает между ними захватные элементы. Захватные элементы можно перетаскивать, чтобы изменять соотношение размеров между дочерними элементами управления.
 
 .. rst-class:: classref-introduction-group
 
@@ -148,7 +148,7 @@ A container that arranges child controls horizontally or vertically and creates 
 
 **dragged**\ (\ offset\: :ref:`int<class_int>`\ ) :ref:`🔗<class_SplitContainer_signal_dragged>`
 
-Emitted when any dragger is dragged by user.
+Вызывается при перетаскивании любого объекта пользователем.
 
 .. rst-class:: classref-section-separator
 
@@ -215,7 +215,7 @@ enum **DraggerVisibility**: :ref:`🔗<enum_SplitContainer_DraggerVisibility>`
 - |void| **set_collapsed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_collapsed**\ (\ )
 
-If ``true``, the draggers will be disabled and the children will be sized as if all :ref:`split_offsets<class_SplitContainer_property_split_offsets>` were ``0``.
+Если ``true``, перетаскиватели будут отключены, а размеры дочерних элементов будут такими, как если бы все :ref:`split_offsets<class_SplitContainer_property_split_offsets>` было ``0``.
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +336,7 @@ If ``true``, the draggers will be disabled and the children will be sized as if 
 
 **Устарело:** Use :ref:`split_offsets<class_SplitContainer_property_split_offsets>` instead. The first element of the array is the split offset between the first two children.
 
-The first element of :ref:`split_offsets<class_SplitContainer_property_split_offsets>`.
+Первый элемент :ref:`split_offsets<class_SplitContainer_property_split_offsets>`.
 
 .. rst-class:: classref-item-separator
 
@@ -353,11 +353,11 @@ The first element of :ref:`split_offsets<class_SplitContainer_property_split_off
 - |void| **set_split_offsets**\ (\ value\: :ref:`PackedInt32Array<class_PackedInt32Array>`\ )
 - :ref:`PackedInt32Array<class_PackedInt32Array>` **get_split_offsets**\ (\ )
 
-Offsets for each dragger in pixels. Each one is the offset of the split between the :ref:`Control<class_Control>` nodes before and after the dragger, with ``0`` being the default position. The default position is based on the :ref:`Control<class_Control>` nodes expand flags and minimum sizes. See :ref:`Control.size_flags_horizontal<class_Control_property_size_flags_horizontal>`, :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>`, and :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`.
+Смещение для каждого перетаскиваемого элемента в пикселях. Каждое из них представляет собой смещение разделения между узлами :ref:`Control<class_Control>` до и после перетаскиваемого элемента, при этом ``0`` — положение по умолчанию. Положение по умолчанию определяется флагами расширения и минимальными размерами узлов :ref:`Control<class_Control>`. См. :ref:`Control.size_flags_horizontal<class_Control_property_size_flags_horizontal>`, :ref:`Control.size_flags_vertical<class_Control_property_size_flags_vertical>` и :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`.
 
-If none of the :ref:`Control<class_Control>` nodes before the dragger are expanded, the default position will be at the start of the **SplitContainer**. If none of the :ref:`Control<class_Control>` nodes after the dragger are expanded, the default position will be at the end of the **SplitContainer**. If the dragger is in between expanded :ref:`Control<class_Control>` nodes, the default position will be in the middle, based on the :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>`\ s and minimum sizes.
+Если ни один из узлов :ref:`Control<class_Control>` до перетаскиваемого элемента не расширен, положение по умолчанию будет в начале **SplitContainer**. Если ни один из узлов :ref:`Control<class_Control>` после перетаскиваемого элемента не расширен, положение по умолчанию будет в конце **SplitContainer**. Если перетаскиваемый элемент находится между расширенными узлами :ref:`Control<class_Control>`, положение по умолчанию будет посередине, исходя из :ref:`Control.size_flags_stretch_ratio<class_Control_property_size_flags_stretch_ratio>` и минимальных размеров.
 
-\ **Note:** If the split offsets cause :ref:`Control<class_Control>` nodes to overlap, the first split will take priority when resolving the positions.
+\ **Примечание:** Если смещения при разделении приводят к перекрытию узлов :ref:`Control<class_Control>`, то при определении позиций приоритет будет иметь первое разделение.
 
 **Note:** The returned array is *copied* and any changes to it will not update the original property value. See :ref:`PackedInt32Array<class_PackedInt32Array>` for more details.
 
@@ -412,7 +412,7 @@ If none of the :ref:`Control<class_Control>` nodes before the dragger are expand
 
 |void| **clamp_split_offset**\ (\ priority_index\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_SplitContainer_method_clamp_split_offset>`
 
-Clamps the :ref:`split_offsets<class_SplitContainer_property_split_offsets>` values to ensure they are within valid ranges and do not overlap with each other. When overlaps occur, this method prioritizes one split offset (at index ``priority_index``) by clamping any overlapping split offsets to it.
+Ограничивает значения :ref:`split_offsets<class_SplitContainer_property_split_offsets>`, чтобы гарантировать, что они находятся в допустимых диапазонах и не перекрываются друг с другом. При возникновении перекрытий этот метод отдает приоритет одному смещению разделения (по индексу ``priority_index``), ограничивая все перекрывающиеся смещения разделения этим смещением.
 
 .. rst-class:: classref-item-separator
 
@@ -446,15 +446,15 @@ Clamps the :ref:`split_offsets<class_SplitContainer_property_split_offsets>` val
 
 :ref:`Array<class_Array>`\[:ref:`Control<class_Control>`\] **get_drag_area_controls**\ (\ ) :ref:`🔗<class_SplitContainer_method_get_drag_area_controls>`
 
-Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Control>`\ s. These are the interactable :ref:`Control<class_Control>` nodes between each child. For example, this can be used to add a pre-configured button to a drag area :ref:`Control<class_Control>` so that it rides along with the split bar. Try setting the :ref:`Button<class_Button>` anchors to ``center`` prior to the :ref:`Node.reparent()<class_Node_method_reparent>` call.
+Возвращает массив элементов управления :ref:`Control<class_Control>` области перетаскивания. Это интерактивные узлы :ref:`Control<class_Control>` между каждым дочерним элементом. Например, это можно использовать для добавления предварительно настроенной кнопки к элементу управления :ref:`Control<class_Control>` области перетаскивания, чтобы она располагалась рядом с разделительной полосой. Попробуйте установить привязки :ref:`Button<class_Button>` в ``center`` перед вызовом :ref:`Node.reparent()<class_Node_method_reparent>`.
 
 ::
 
     $BarnacleButton.reparent($SplitContainer.get_drag_area_controls()[0])
 
-\ **Note:** The drag area :ref:`Control<class_Control>`\ s are drawn over the **SplitContainer**'s children, so :ref:`CanvasItem<class_CanvasItem>` draw objects called from a drag area and children added to it will also appear over the **SplitContainer**'s children. Try setting :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` of custom children to :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` to prevent blocking the mouse from dragging if desired.
+\ **Примечание:** Элементы управления :ref:`Control<class_Control>` области перетаскивания отображаются поверх дочерних элементов **SplitContainer**, поэтому :ref:`CanvasItem<class_CanvasItem>` рисует объекты, вызываемые из области перетаскивания, и дочерние элементы, добавленные к ней, также будут отображаться поверх дочерних элементов **SplitContainer**. Попробуйте установить для элемента :ref:`Control.mouse_filter<class_Control_property_mouse_filter>` пользовательских дочерних элементов значение :ref:`Control.MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`, чтобы предотвратить блокировку перетаскивания мыши, если это необходимо.
 
-\ **Warning:** These are required internal nodes, removing or freeing them may cause a crash.
+\ **Предупреждение:** Это необходимые внутренние узлы, их удаление или освобождение может привести к сбою.
 
 .. rst-class:: classref-section-separator
 
@@ -507,7 +507,7 @@ Returns an :ref:`Array<class_Array>` of the drag area :ref:`Control<class_Contro
 
 :ref:`int<class_int>` **autohide** = ``1`` :ref:`🔗<class_SplitContainer_theme_constant_autohide>`
 
-Boolean value. If ``1`` (``true``), the grabbers will hide automatically when they aren't under the cursor. If ``0`` (``false``), the grabbers are always visible. The :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` must be :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
+Логическое Bool значение. Если ``1`` (``true``), элементы захвата будут автоматически скрываться, когда они не находятся под курсором. Если ``0`` (``false``), элементы захвата всегда видны. :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` должен быть :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ Boolean value. If ``1`` (``true``), the grabbers will hide automatically when th
 
 :ref:`int<class_int>` **minimum_grab_thickness** = ``6`` :ref:`🔗<class_SplitContainer_theme_constant_minimum_grab_thickness>`
 
-The minimum thickness of the area users can click on to grab a split bar. This ensures that the split bar can still be dragged if :ref:`separation<class_SplitContainer_theme_constant_separation>` or :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` / :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>`'s size is too narrow to easily select.
+Минимальная толщина области, на которую пользователи могут щелкнуть, чтобы захватить разделительную полосу. Это гарантирует, что разделительную полосу можно будет перетаскивать, даже если размер :ref:`separation<class_SplitContainer_theme_constant_separation>` или :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` / :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` слишком мал для удобного выбора.
 
 .. rst-class:: classref-item-separator
 
@@ -531,9 +531,9 @@ The minimum thickness of the area users can click on to grab a split bar. This e
 
 :ref:`int<class_int>` **separation** = ``12`` :ref:`🔗<class_SplitContainer_theme_constant_separation>`
 
-The split bar thickness, i.e., the gap between each child of the container. This is overridden by the size of the grabber icon if :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` is set to :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>`, or :ref:`DRAGGER_HIDDEN<class_SplitContainer_constant_DRAGGER_HIDDEN>`, and :ref:`separation<class_SplitContainer_theme_constant_separation>` is smaller than the size of the grabber icon in the same axis.
+Толщина разделительной полосы, то есть расстояние между каждым дочерним элементом контейнера. Это значение переопределяется размером значка захвата, если :ref:`dragger_visibility<class_SplitContainer_property_dragger_visibility>` установлено в :ref:`DRAGGER_VISIBLE<class_SplitContainer_constant_DRAGGER_VISIBLE>` или :ref:`DRAGGER_HIDDEN<class_SplitContainer_constant_DRAGGER_HIDDEN>`, и :ref:`separation<class_SplitContainer_theme_constant_separation>` меньше размера значка захвата по той же оси.
 
-\ **Note:** To obtain :ref:`separation<class_SplitContainer_theme_constant_separation>` values less than the size of the grabber icon, for example a ``1 px`` hairline, set :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` or :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` to a new :ref:`ImageTexture<class_ImageTexture>`, which effectively sets the grabber icon size to ``0 px``.
+\ **Примечание:** Чтобы получить значения :ref:`separation<class_SplitContainer_theme_constant_separation>` меньше размера значка захвата, например, ``1 px`` тонкой линии, установите :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` или :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` в новое значение :ref:`ImageTexture<class_ImageTexture>`, что фактически устанавливает размер значка захвата равным ``0 px``.
 
 .. rst-class:: classref-item-separator
 
@@ -545,7 +545,7 @@ The split bar thickness, i.e., the gap between each child of the container. This
 
 :ref:`Texture2D<class_Texture2D>` **grabber** :ref:`🔗<class_SplitContainer_theme_icon_grabber>`
 
-The icon used for the grabbers drawn in the separations. This is only used in :ref:`HSplitContainer<class_HSplitContainer>` and :ref:`VSplitContainer<class_VSplitContainer>`. For **SplitContainer**, see :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` and :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>` instead.
+Значок, используемый для элементов захвата, отображаемых в разделителях. Он используется только в :ref:`HSplitContainer<class_HSplitContainer>` и :ref:`VSplitContainer<class_VSplitContainer>`. Для **SplitContainer** см. :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>` и :ref:`v_grabber<class_SplitContainer_theme_icon_v_grabber>`.
 
 .. rst-class:: classref-item-separator
 
@@ -557,7 +557,7 @@ The icon used for the grabbers drawn in the separations. This is only used in :r
 
 :ref:`Texture2D<class_Texture2D>` **h_grabber** :ref:`🔗<class_SplitContainer_theme_icon_h_grabber>`
 
-The icon used for the grabbers drawn in the separations when :ref:`vertical<class_SplitContainer_property_vertical>` is ``false``.
+Значок, используемый для элементов захвата, отображаемых в разделительных линиях, когда :ref:`vertical<class_SplitContainer_property_vertical>` имеет значение ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -593,7 +593,7 @@ The icon used for the grabbers drawn in the separations when :ref:`vertical<clas
 
 :ref:`Texture2D<class_Texture2D>` **v_grabber** :ref:`🔗<class_SplitContainer_theme_icon_v_grabber>`
 
-The icon used for the grabbers drawn in the separations when :ref:`vertical<class_SplitContainer_property_vertical>` is ``true``.
+Значок, используемый для элементов захвата, отображаемых в разделительных линиях, когда :ref:`vertical<class_SplitContainer_property_vertical>` имеет значение ``true``.
 
 .. rst-class:: classref-item-separator
 

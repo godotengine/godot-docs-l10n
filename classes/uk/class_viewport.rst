@@ -957,7 +957,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST** = ``0``
 
-Фільтр текстур читає лише з найближчого пікселя. Це робить текстуру піксельною зблизька та зернистою на відстані (через те, що MIP-карти не вибираються).
+Фільтр текстури зчитує дані лише з найближчого пікселя. Через це текстура виглядає пікселізованою зблизька та зернистою здалеку (оскільки міп-мапи не прочитуються).
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR:
 
@@ -965,7 +965,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR** = ``1``
 
-Фільтр текстури змішується між найближчими 4 пікселями. Це робить текстуру гладкою зблизька та зернистою на відстані (через те, що MIP-карти не вибираються).
+Фільтр текстури виконує згладжування між 4 найближчими пікселями. Завдяки цьому текстура виглядає гладкою зблизька, а здалеку — зернистою (оскільки міп-мапи не зчитуються).
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS:
 

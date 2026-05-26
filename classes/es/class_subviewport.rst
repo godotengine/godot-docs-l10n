@@ -27,9 +27,9 @@ Tutoriales
 
 - :doc:`Usando Viewports <../tutorials/rendering/viewports>`
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+- :doc:`Transformaciones de la ventana gráfica y del lienzo <../tutorials/2d/2d_transforms>`
 
-- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
+- `Demostración GUI en el Viewport 3D <https://godotengine.org/asset-library/asset/2807>`__
 
 - `Demo de Viewport 3D en 2D <https://godotengine.org/asset-library/asset/2804>`__
 

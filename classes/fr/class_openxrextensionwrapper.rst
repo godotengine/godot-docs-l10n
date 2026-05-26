@@ -331,9 +331,9 @@ Called right after the given viewport is rendered.
 
 |void| **_on_pre_draw_viewport**\ (\ viewport\: :ref:`RID<class_RID>`\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_draw_viewport>`
 
-Called right before the given viewport is rendered.
+Appelée juste avant que le viewport donné soit rendu.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Note :** Cette méthode virtuelle sera appelée sur le thread de rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -345,9 +345,9 @@ Called right before the given viewport is rendered.
 
 |void| **_on_pre_render**\ (\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__on_pre_render>`
 
-Called right before the XR viewports begin their rendering step.
+Appelée juste avant que les viewports XR commencent leur étape de rendu.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Note :** Cette méthode virtuelle sera appelée sur le thread de rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -559,11 +559,11 @@ Called to allow an extension to print additional information about its view conf
 
 :ref:`int<class_int>` **_set_android_surface_swapchain_create_info_and_get_next_pointer**\ (\ property_values\: :ref:`Dictionary<class_Dictionary>`, next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_android_surface_swapchain_create_info_and_get_next_pointer>`
 
-Add additional data structures to Android surface swapchains created by :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
+Ajoute des structures de données supplémentaires aux swapchaine de surface Android créées par :ref:`OpenXRCompositionLayer<class_OpenXRCompositionLayer>`.
 
-\ ``property_values`` contains the values of the properties returned by :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
+\ ``property_values`` contient les valeurs des propriétés renvoyées par :ref:`_get_viewport_composition_layer_extension_properties()<class_OpenXRExtensionWrapper_private_method__get_viewport_composition_layer_extension_properties>`.
 
-\ **Note:** This virtual method will be called on the render thread.
+\ **Note :** Cette méthode virtuelle sera appelée sur le thread de rendu.
 
 .. rst-class:: classref-item-separator
 
@@ -575,11 +575,11 @@ Add additional data structures to Android surface swapchains created by :ref:`Op
 
 :ref:`int<class_int>` **_set_frame_end_info_and_get_next_pointer**\ (\ next_pointer\: ``void*``\ ) |virtual| :ref:`🔗<class_OpenXRExtensionWrapper_private_method__set_frame_end_info_and_get_next_pointer>`
 
-Add additional data structures to ``XrFrameEndInfo``.
+Ajouter des structures de données additionnelles à ``XrFrameEndInfo``.
 
-This will only be called if the extension previously registered itself with :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
+Ceci ne sera appelé que si l'extension s'est déjà enregistrée précédemment avec :ref:`OpenXRAPIExtension.register_frame_info_extension()<class_OpenXRAPIExtension_method_register_frame_info_extension>`.
 
-\ **Note:** This virtual method will be called on the render thread. Additionally, the data it returns will be used shortly after this method is called, so it needs to remain valid until the next time :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>` runs.
+\ **Note :** Cette méthode virtuelle sera appelée sur le thread de rendu. De plus, les données qu'elle renvoie seront utilisées peu après que cette méthode soit appelée, elles doivent ainsi rester valides jusqu'à la prochaine exécution de :ref:`_on_pre_render()<class_OpenXRExtensionWrapper_private_method__on_pre_render>`.
 
 .. rst-class:: classref-item-separator
 

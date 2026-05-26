@@ -7,14 +7,14 @@ StreamPeerTCP
 
 **继承：** :ref:`StreamPeerSocket<class_StreamPeerSocket>` **<** :ref:`StreamPeer<class_StreamPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-处理 TCP 连接的流对等体。
+处理 TCP 连接的流对等端。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-处理 TCP 连接的流对等体。该对象可用于连接 TCP 服务器，也可以由 TCP 服务器返回。
+处理 TCP 连接的流对等端。该对象可用于连接 TCP 服务器，也可以由 TCP 服务器返回。
 
 \ **注意：**\ 导出到安卓时，在导出项目或使用一键部署之前，请务必在安卓导出预设中，开启 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
 
@@ -81,7 +81,7 @@ StreamPeerTCP
 
 :ref:`String<class_String>` **get_connected_host**\ (\ ) |const| :ref:`🔗<class_StreamPeerTCP_method_get_connected_host>`
 
-返回该对等体的IP。
+返回该对等端的IP。
 
 .. rst-class:: classref-item-separator
 
@@ -93,7 +93,7 @@ StreamPeerTCP
 
 :ref:`int<class_int>` **get_connected_port**\ (\ ) |const| :ref:`🔗<class_StreamPeerTCP_method_get_connected_port>`
 
-返回该对等体的端口。
+返回该对等端的端口。
 
 .. rst-class:: classref-item-separator
 
@@ -105,7 +105,7 @@ StreamPeerTCP
 
 :ref:`int<class_int>` **get_local_port**\ (\ ) |const| :ref:`🔗<class_StreamPeerTCP_method_get_local_port>`
 
-返回该对等体绑定到的本地端口。
+返回该对等端绑定到的本地端口。
 
 .. rst-class:: classref-item-separator
 
@@ -117,9 +117,9 @@ StreamPeerTCP
 
 |void| **set_no_delay**\ (\ enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_StreamPeerTCP_method_set_no_delay>`
 
-如果 ``enabled`` 为 ``true``\ ，数据包会立即发送。如果 ``enabled`` 为 ``false``\ （默认值），数据包传输将被延迟，并使用\ `纳格算法 <https://zh.wikipedia.org/wiki/%E7%B4%8D%E6%A0%BC%E7%AE%97%E6%B3%95>`__\ 合并。
+如果 ``enabled`` 为 ``true``\ ，数据包将被立即发送。如果 ``enabled`` 为 ``false``\ （默认值），数据包的传输将会被延迟，并通过 `纳格算法（Nagle's algorithm） <https://en.wikipedia.org/wiki/Nagle%27s_algorithm>`__ 进行合并发送。
 
-\ **注意：**\ 对于发送大数据包或需要传输大量数据的应用程序，建议将本属性保持禁用，因为启用本属性会减少总体可用带宽。
+\ **注意：** 对于需要发送大型数据包或传输大量数据的应用程序，建议保持此选项为禁用状态，因为启用它可能会降低总的可用带宽。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

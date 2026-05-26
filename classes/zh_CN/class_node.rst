@@ -36,7 +36,7 @@ Node
 
 \ **分组：**\ 节点可以被添加到任意数量的分组中，以方便管理。例如，你可以根据自己游戏的需要来创建类似“敌人”或“收集品”这样的分组。见 :ref:`add_to_group()<class_Node_method_add_to_group>`\ 、\ :ref:`is_in_group()<class_Node_method_is_in_group>` 和 :ref:`remove_from_group()<class_Node_method_remove_from_group>`\ 。之后，你可以获取分组内的所有节点，对它们进行迭代，甚至是通过 :ref:`SceneTree<class_SceneTree>` 中的方法对整个分组调用方法。
 
-\ **节点的网络编程：**\ 在连接服务器（或自行创建服务器，见 :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`\ ）之后，可以使用内置的 RPC（远程过程调用）系统进行网络通信。在调用 :ref:`rpc()<class_Node_method_rpc>` 时传入方法名，就可以在本地和所有已连接的对等体上调用指定的方法（对等体=客户端和接受连接的服务器）。为了识别接收 RPC 调用的节点，Godot 将使用节点的 :ref:`NodePath<class_NodePath>`\ （因此请确保所有对等体上的节点名称相同）。另外，请参阅高级网络教程和相应的演示。
+\ **节点的网络编程：**\ 在连接服务器（或自行创建服务器，见 :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`\ ）之后，可以使用内置的 RPC（远程过程调用）系统进行网络通信。在调用 :ref:`rpc()<class_Node_method_rpc>` 时传入方法名，就可以在本地和所有已连接的对等端上调用指定的方法（对等端=客户端和接受连接的服务器）。为了识别接收 RPC 调用的节点，Godot 将使用节点的 :ref:`NodePath<class_NodePath>`\ （因此请确保所有对等端上的节点名称相同）。另外，请参阅高级网络教程和相应的演示。
 
 \ **注意：**\ ``script`` 属性属于 :ref:`Object<class_Object>` 类，而非 **Node**\ 。该属性的暴露方式和大多数属性不同，但它确实有自己的 setter 和 getter（见 :ref:`Object.set_script()<class_Object_method_set_script>` 和 :ref:`Object.get_script()<class_Object_method_get_script>`\ ）。
 
@@ -663,7 +663,7 @@ enum **DuplicateFlags**: :ref:`🔗<enum_Node_DuplicateFlags>`
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_INTERNAL_STATE** = ``16``
 
-Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`).
+同时复制不可序列化的变量（即没有 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`\ ）。
 
 .. _class_Node_constant_DUPLICATE_DEFAULT:
 
@@ -671,11 +671,11 @@ Duplicate also non-serializable variables (i.e. without :ref:`@GlobalScope.PROPE
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_DEFAULT** = ``15``
 
-Duplicate using default flags. This constant is useful to add or remove a single flag.
+使用默认标志进行复制。这个常量对于添加或移除单个标志非常有用。
 
 ::
 
-    # Duplicate non-exported variables.
+    # 复制非导出变量。
     var dupe = duplicate(DUPLICATE_DEFAULT | DUPLICATE_INTERNAL_STATE)
 
 .. rst-class:: classref-item-separator
@@ -744,9 +744,9 @@ enum **AutoTranslateMode**: :ref:`🔗<enum_Node_AutoTranslateMode>`
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_DISABLED** = ``2``
 
-Never automatically translate. This is the inverse of :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
+始终不自动翻译。和 :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>` 相反。
 
-String parsing for translation template generation will be skipped for this node and children that are set to :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
+生成翻译模板解析字符串时会跳过该节点，如果子节点为 :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>` 则还会跳过子节点。
 
 .. rst-class:: classref-section-separator
 
@@ -1115,9 +1115,9 @@ String parsing for translation template generation will be skipped for this node
 
 **NOTIFICATION_OS_IME_UPDATE** = ``2013`` :ref:`🔗<class_Node_constant_NOTIFICATION_OS_IME_UPDATE>`
 
-Notification received from the OS when an update of the Input Method Engine occurs (e.g. change of IME cursor position or composition string).
+当输入法引擎发生更新时，从操作系统收到的通知（例如，IME 光标位置或组成字符串的变化）。
 
-Implemented on desktop and web platforms.
+已在桌面平台和 web 平台上实现。
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_RESUMED:
 
@@ -1183,7 +1183,7 @@ Implemented on desktop and web platforms.
 
 **NOTIFICATION_ACCESSIBILITY_INVALIDATE** = ``3001`` :ref:`🔗<class_Node_constant_NOTIFICATION_ACCESSIBILITY_INVALIDATE>`
 
-无障碍元素失效时收到的通知。收到该消息后，会自动删除节点的无障碍元素，所以应当丢弃现有的对此类元素的引用。
+无障碍元素失效时收到的通知。收到该消息后，会自动删除节点的所有无障碍元素，所以应当丢弃已有的对此类元素的所有引用。
 
 .. rst-class:: classref-section-separator
 
@@ -1205,9 +1205,9 @@ Implemented on desktop and web platforms.
 - |void| **set_auto_translate_mode**\ (\ value\: :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>`\ )
 - :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **get_auto_translate_mode**\ (\ )
 
-Defines if any text should automatically change to its translated version depending on the current locale (for nodes such as :ref:`Label<class_Label>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Window<class_Window>`, etc.). Also decides if the node's strings should be parsed for translation template generation.
+定义是否应该根据当前区域设置自动将所有文本更改为翻译后的版本（针对 :ref:`Label<class_Label>`\ 、\ :ref:`RichTextLabel<class_RichTextLabel>`\ 、\ :ref:`Window<class_Window>` 等节点）。同时也会决定生成翻译模板时是否解析该节点的字符串。
 
-\ **Note:** For the root node, auto translate mode can also be set via :ref:`ProjectSettings.internationalization/rendering/root_node_auto_translate<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>`.
+\ **注意：**\ 根节点的自动翻译模式也可以通过 :ref:`ProjectSettings.internationalization/rendering/root_node_auto_translate<class_ProjectSettings_property_internationalization/rendering/root_node_auto_translate>` 设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1278,11 +1278,11 @@ Defines if any text should automatically change to its translated version depend
 - |void| **set_owner**\ (\ value\: :ref:`Node<class_Node>`\ )
 - :ref:`Node<class_Node>` **get_owner**\ (\ )
 
-The owner of this node. The owner must be an ancestor of this node. When packing the owner node in a :ref:`PackedScene<class_PackedScene>`, all the nodes it owns are also saved with it. See also :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`.
+该节点的所有者。所有者必须是该节点的祖先节点。将所有者节点打包到 :ref:`PackedScene<class_PackedScene>` 中时，它所拥有的节点也都会随之保存。另见 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ 。
 
-\ **Note:** In the editor, nodes not owned by the scene root are usually not displayed in the Scene dock, and will **not** be saved. To prevent this, remember to set the owner after calling :ref:`add_child()<class_Node_method_add_child>`.
+\ **注意：**\ 在编辑器中，未被场景根节点拥有的节点通常不会显示在场景面板中，并且\ **不会**\ 被保存。为了防止这种情况，请记得在调用 :ref:`add_child()<class_Node_method_add_child>` 后设置所有者。
 
-\ **Note:** The owner needs to be the current scene root. See `Instancing scenes <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__ in the documentation for more information.
+\ **注意：**\ 所有者必须是当前场景根。更多信息请参阅文档中的\ `实例化场景 <../tutorials/plugins/running_code_in_the_editor.html#instancing-scenes>`__\ 部分。
 
 .. rst-class:: classref-item-separator
 
@@ -1758,13 +1758,13 @@ The owner of this node. The owner must be an ancestor of this node. When packing
 
 |void| **add_to_group**\ (\ group\: :ref:`StringName<class_StringName>`, persistent\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_Node_method_add_to_group>`
 
-Adds the node to the ``group``. Groups can be helpful to organize a subset of nodes, for example ``"enemies"`` or ``"collectables"``. See notes in the description, and the group methods in :ref:`SceneTree<class_SceneTree>`.
+将该节点加入 ``group`` 分组。使用分组可以很方便地组织部分节点，例如将敌人加入 ``"enemies"`` 分组、将收集品加入 ``"collectables"`` 分组。注意事项见下文，以及 :ref:`SceneTree<class_SceneTree>` 中相关的分组方法。
 
-If ``persistent`` is ``true``, the group will be stored when saved inside a :ref:`PackedScene<class_PackedScene>`. All groups created and displayed in the Groups dock are persistent.
+如果 ``persistent`` 为 ``true``\ ，则保存 :ref:`PackedScene<class_PackedScene>` 时会存储该分组。在“分组”面板中创建、显示的分组都是持久的。
 
-\ **Note:** To improve performance, the order of group names is *not* guaranteed and may vary between project runs. Therefore, do not rely on the group order.
+\ **注意：**\ 为了提升性能，\ *并不*\ 保证分组名称的顺序，每次运行项目可能会不同。因此请不要依赖分组的顺序。
 
-\ **Note:** :ref:`SceneTree<class_SceneTree>`'s group methods will *not* work on this node if not inside the tree (see :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`).
+\ **注意：**\ 不在场景树中时，\ :ref:`SceneTree<class_SceneTree>` 的分组方法\ *无法*\ 正常工作（见 :ref:`is_inside_tree()<class_Node_method_is_inside_tree>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1907,11 +1907,11 @@ If ``persistent`` is ``true``, the group will be stored when saved inside a :ref
 
 :ref:`Node<class_Node>` **duplicate**\ (\ flags\: :ref:`int<class_int>` = 15\ ) |const| :ref:`🔗<class_Node_method_duplicate>`
 
-Duplicates the node, returning a new node with all of its properties, signals, groups, and children copied from the original, recursively. The behavior can be tweaked through the ``flags`` (see :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`). Internal nodes are not duplicated.
+复制该节点，返回一个新节点，其中包含从原始节点递归复制的所有属性、信号、组、子节点。可以通过 ``flags`` 调整该行为（见 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`\ ）。不会复制内部节点。
 
-\ **Note:** For nodes with a :ref:`Script<class_Script>` attached, if :ref:`Object._init()<class_Object_private_method__init>` has been defined with required parameters, the duplicated node will not have a :ref:`Script<class_Script>`.
+\ **注意：**\ 对于附带有 :ref:`Script<class_Script>` 的节点，如果 :ref:`Object._init()<class_Object_private_method__init>` 已使用所需参数定义，则复制的节点将不会有 :ref:`Script<class_Script>`\ 。
 
-\ **Note:** By default, this method will duplicate only properties marked for serialization (i.e. using :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`, or in GDScript, :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`). If you want to duplicate all properties, use :ref:`DUPLICATE_INTERNAL_STATE<class_Node_constant_DUPLICATE_INTERNAL_STATE>`.
+\ **注意：**\ 默认情况下，该方法只会复制标记为序列化（即使用 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`\ ，或在 GDScript 中使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>`\ ）的属性。如果你想复制所有属性，请使用 :ref:`DUPLICATE_INTERNAL_STATE<class_Node_constant_DUPLICATE_INTERNAL_STATE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2112,7 +2112,7 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 :ref:`int<class_int>` **get_multiplayer_authority**\ (\ ) |const| :ref:`🔗<class_Node_method_get_multiplayer_authority>`
 
-返回这个节点多人游戏控制者的对等体 ID。见 :ref:`set_multiplayer_authority()<class_Node_method_set_multiplayer_authority>`\ 。
+返回这个节点多人游戏控制者的对等端 ID。见 :ref:`set_multiplayer_authority()<class_Node_method_set_multiplayer_authority>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2733,9 +2733,9 @@ Duplicates the node, returning a new node with all of its properties, signals, g
 
 |void| **print_orphan_nodes**\ (\ ) |static| :ref:`🔗<class_Node_method_print_orphan_nodes>`
 
-Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). Useful for debugging.
+输出所有孤立节点（\ :ref:`SceneTree<class_SceneTree>` 之外的节点）。利于调试。
 
-\ **Note:** This method only works in debug builds. It does nothing in a project exported in release mode.
+\ **注意：**\ 该方法仅适用于调试构建版本。在以发布模式导出的项目中不执行任何操作。
 
 .. rst-class:: classref-item-separator
 
@@ -2935,7 +2935,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_rpc>`
 
-将给定 ``method`` 的远程过程调用请求发送到网络（和本地）上的对等体，并将额外参数发送给 RPC 调用的方法。该调用请求只会被具有相同 :ref:`NodePath<class_NodePath>` 的节点接收，该节点包括完全相同的 :ref:`name<class_Node_property_name>`\ 。行为取决于给定 ``method`` 的 RPC 配置（请参阅 :ref:`rpc_config()<class_Node_method_rpc_config>` 和 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`\ ）。默认情况下，方法不会暴露给 RPC。
+将给定 ``method`` 的远程过程调用请求发送到网络（和本地）上的对等端，并将额外参数发送给 RPC 调用的方法。该调用请求只会被具有相同 :ref:`NodePath<class_NodePath>` 的节点接收，该节点包括完全相同的 :ref:`name<class_Node_property_name>`\ 。行为取决于给定 ``method`` 的 RPC 配置（请参阅 :ref:`rpc_config()<class_Node_method_rpc_config>` 和 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`\ ）。默认情况下，方法不会暴露给 RPC。
 
 如果调用成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``method`` 中传递的参数不匹配，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；如果无法获取节点的 :ref:`multiplayer<class_Node_property_multiplayer>`\ （例如当该节点不在树中），则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果 :ref:`multiplayer<class_Node_property_multiplayer>` 的连接不可用，则返回 :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`\ 。
 
@@ -2973,7 +2973,7 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc_id**\ (\ peer_id\: :ref:`int<class_int>`, method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_rpc_id>`
 
-将 :ref:`rpc()<class_Node_method_rpc>` 发送到由 ``peer_id`` 标识的特定对等体（请参阅 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。
+将 :ref:`rpc()<class_Node_method_rpc>` 发送到由 ``peer_id`` 标识的特定对等端（请参阅 :ref:`MultiplayerPeer.set_target_peer()<class_MultiplayerPeer_method_set_target_peer>`\ ）。
 
 如果调用成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``method`` 中传递的参数不匹配，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；如果无法获取节点的 :ref:`multiplayer<class_Node_property_multiplayer>`\ （例如当节点不在场景树中），则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果 :ref:`multiplayer<class_Node_property_multiplayer>` 的连接不可用，则返回 :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`\ 。
 
@@ -3023,11 +3023,11 @@ Prints all orphan nodes (nodes outside the :ref:`SceneTree<class_SceneTree>`). U
 
 |void| **set_multiplayer_authority**\ (\ id\: :ref:`int<class_int>`, recursive\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_Node_method_set_multiplayer_authority>`
 
-将该节点的多人游戏控制方设置为具有给定对等体 ``id`` 的对等体。多人游戏控制方是对网络上的节点具有控制权限的对等体。默认为对等体 ID 1（服务器）。利于与 :ref:`rpc_config()<class_Node_method_rpc_config>` 和 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 结合使用。
+将该节点的多人游戏控制方设置为具有给定对等端 ``id`` 的对等端。多人游戏控制方是对网络上的节点具有控制权限的对等端。默认为对等端 ID 1（服务器）。利于与 :ref:`rpc_config()<class_Node_method_rpc_config>` 和 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 结合使用。
 
-如果 ``recursive`` 为 ``true``\ ，则该节点的所有子节点将递归地将给定的对等体设置为控制方。
+如果 ``recursive`` 为 ``true``\ ，则该节点的所有子节点将递归地将给定的对等端设置为控制方。
 
-\ **警告：**\ 这\ **不会**\ 自动将新的控制方复制给其他对等体。是否这样做由开发者负责。可以使用 :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ 、RPC 或 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 复制新控制方的信息。此外，父节点的控制方\ **不会**\ 传播给新添加的子节点。
+\ **警告：**\ 这\ **不会**\ 自动将新的控制方复制给其他对等端。是否这样做由开发者负责。可以使用 :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ 、RPC 或 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 复制新控制方的信息。此外，父节点的控制方\ **不会**\ 传播给新添加的子节点。
 
 .. rst-class:: classref-item-separator
 

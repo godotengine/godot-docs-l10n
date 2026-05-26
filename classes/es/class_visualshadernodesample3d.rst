@@ -59,7 +59,7 @@ Crea una variable uniforme interna y proporciona una forma de asignarla dentro d
 
 :ref:`Source<enum_VisualShaderNodeSample3D_Source>` **SOURCE_PORT** = ``1``
 
-Usar la textura uniforme del puerto de muestreo.
+Usar la textura de variable uniforme del puerto de muestreo.
 
 .. _class_VisualShaderNodeSample3D_constant_SOURCE_MAX:
 

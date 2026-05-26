@@ -14,9 +14,9 @@ Usado por el editor para definir los tipos de gizmo de Node3D.
 Descripción
 ----------------------
 
-**EditorNode3DGizmoPlugin** allows you to define a new type of Gizmo. There are two main ways to do so: extending **EditorNode3DGizmoPlugin** for the simpler gizmos, or creating a new :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` type. See the tutorial in the documentation for more info.
+**EditorNode3DGizmoPlugin** te permite definir un nuevo tipo de Gizmo. Hay dos formas principales de hacerlo: extendiendo **EditorNode3DGizmoPlugin** para los gizmos más simples, o creando un nuevo tipo :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`. Véase el tutorial en la documentación para más información.
 
-To use **EditorNode3DGizmoPlugin**, register it using the :ref:`EditorPlugin.add_node_3d_gizmo_plugin()<class_EditorPlugin_method_add_node_3d_gizmo_plugin>` method first.
+Para usar **EditorNode3DGizmoPlugin**, registralo usando la función :ref:`EditorPlugin.add_node_3d_gizmo_plugin()<class_EditorPlugin_method_add_node_3d_gizmo_plugin>` primero.
 
 .. rst-class:: classref-introduction-group
 
@@ -110,7 +110,7 @@ Descripciones de Métodos
 
 :ref:`bool<class_bool>` **_can_be_hidden**\ (\ ) |virtual| |const| :ref:`🔗<class_EditorNode3DGizmoPlugin_private_method__can_be_hidden>`
 
-Override this method to define whether the gizmos handled by this plugin can be hidden or not. Returns ``true`` if not overridden.
+Sobrescribe este método para definir si el gizmo (manejado por el plugin) puede ser escondido o no. Devuelve ``true`` si no está sobrescrito.
 
 .. rst-class:: classref-item-separator
 

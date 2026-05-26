@@ -16,7 +16,7 @@ Un tipo base para los nodos que realizan operaciones vectoriales dentro del grá
 Descripción
 ----------------------
 
-Esta es una clase abstracta. Consulta los tipos derivados para obtener descripciones de las posibles operaciones.
+Esta es una clase abstracta. Véanse los tipos derivados para obtener descripciones de las posibles operaciones.
 
 .. rst-class:: classref-reftable-group
 

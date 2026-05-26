@@ -187,7 +187,7 @@ GLTFBufferView 是一种表示 glTF 缓冲区视图 ``bufferView`` 的数据结�
 
 :ref:`GLTFBufferView<class_GLTFBufferView>` **from_dictionary**\ (\ dictionary\: :ref:`Dictionary<class_Dictionary>`\ ) |static| :ref:`🔗<class_GLTFBufferView_method_from_dictionary>`
 
-Creates a new GLTFBufferView instance by parsing the given :ref:`Dictionary<class_Dictionary>`.
+通过解析给定的 :ref:`Dictionary<class_Dictionary>` 新建 GLTFBufferView 实例。
 
 .. rst-class:: classref-item-separator
 
@@ -211,7 +211,7 @@ Creates a new GLTFBufferView instance by parsing the given :ref:`Dictionary<clas
 
 :ref:`Dictionary<class_Dictionary>` **to_dictionary**\ (\ ) |const| :ref:`🔗<class_GLTFBufferView_method_to_dictionary>`
 
-Serializes this GLTFBufferView instance into a :ref:`Dictionary<class_Dictionary>`.
+将这个 GLTFBufferView 实例序列化为 :ref:`Dictionary<class_Dictionary>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

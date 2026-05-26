@@ -204,7 +204,7 @@ Range 是代表特定范围内数字的控件的抽象基类，能够对步长 :
 - |void| **set_page**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_page**\ (\ )
 
-页面大小。主要用于 :ref:`ScrollBar<class_ScrollBar>`\ 。\ :ref:`ScrollBar<class_ScrollBar>` 滑块的长度是 :ref:`ScrollBar<class_ScrollBar>` 的尺寸乘以 :ref:`page<class_Range_property_page>` 再除以 :ref:`min_value<class_Range_property_min_value>` 和 :ref:`max_value<class_Range_property_max_value>` 的差。
+页面大小。主要用于 :ref:`ScrollBar<class_ScrollBar>`\ （滚动条）。滚动条滑块（grabber）的长度，等于滚动条的总尺寸乘以 :ref:`page<class_Range_property_page>`\ （页面大小），再除以 :ref:`min_value<class_Range_property_min_value>`\ （最小值）与 :ref:`max_value<class_Range_property_max_value>`\ （最大值）之差。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Range 是代表特定范围内数字的控件的抽象基类，能够对步长 :
 - |void| **set_step**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_step**\ (\ )
 
-If greater than ``0.0``, :ref:`value<class_Range_property_value>` will always be rounded to a multiple of this property's value above :ref:`min_value<class_Range_property_min_value>`. For example, if :ref:`min_value<class_Range_property_min_value>` is ``0.1`` and step is ``0.2``, then :ref:`value<class_Range_property_value>` is limited to ``0.1``, ``0.3``, ``0.5``, and so on. If :ref:`rounded<class_Range_property_rounded>` is also ``true``, :ref:`value<class_Range_property_value>` will first be rounded to a multiple of this property's value, then rounded to the nearest integer.
+如果大于 ``0.0``\ ，\ :ref:`value<class_Range_property_value>` 将总是被四舍五入为大于 :ref:`min_value<class_Range_property_min_value>` 的该属性的倍数。例如，如果 :ref:`min_value<class_Range_property_min_value>` 为 ``0.1``\ ，步长为 ``0.2``\ ，则 :ref:`value<class_Range_property_value>` 被限制为 ``0.1``\ 、\ ``0.3``\ 、\ ``0.5``\ ，依此类推。如果 :ref:`rounded<class_Range_property_rounded>` 也是 ``true``\ ，\ :ref:`value<class_Range_property_value>` 将首先被四舍五入为这个属性的倍数，然后舍入为最近的整数。
 
 .. rst-class:: classref-item-separator
 

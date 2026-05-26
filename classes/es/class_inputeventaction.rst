@@ -101,7 +101,7 @@ El índice del evento real en la acción a la que corresponde este evento (de lo
 - |void| **set_pressed**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_pressed**\ (\ )
 
-Si es ``true``, se presiona el estado de la acción. Si ``false``, se libera el estado de la acción.
+Si es ``true``, se presiona el estado de la acción. Si es ``false``, se libera el estado de la acción.
 
 .. rst-class:: classref-item-separator
 

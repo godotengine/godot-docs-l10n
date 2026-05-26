@@ -150,9 +150,9 @@ Señales
 
 **body_entered**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_RigidBody3D_signal_body_entered>`
 
-Emitted when a collision with another :ref:`PhysicsBody3D<class_PhysicsBody3D>` or :ref:`GridMap<class_GridMap>` occurs. Requires :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`GridMap<class_GridMap>`\ s are detected if the :ref:`MeshLibrary<class_MeshLibrary>` has Collision :ref:`Shape3D<class_Shape3D>`\ s.
+Se emite cuando ocurre una colisión con otro :ref:`PhysicsBody3D<class_PhysicsBody3D>` o :ref:`GridMap<class_GridMap>`. Requiere que :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` esté establecido en ``true`` y que :ref:`max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` sea lo suficientemente alto para detectar todas las colisiones. Los :ref:`GridMap<class_GridMap>`\ s se detectan si la :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión :ref:`Shape3D<class_Shape3D>`.
 
-\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody3D<class_PhysicsBody3D>` or :ref:`GridMap<class_GridMap>`.
+\ ``body`` el :ref:`Node<class_Node>`, si existe en el árbol, del otro :ref:`PhysicsBody3D<class_PhysicsBody3D>` o :ref:`GridMap<class_GridMap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -164,9 +164,9 @@ Emitted when a collision with another :ref:`PhysicsBody3D<class_PhysicsBody3D>` 
 
 **body_exited**\ (\ body\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_RigidBody3D_signal_body_exited>`
 
-Emitted when the collision with another :ref:`PhysicsBody3D<class_PhysicsBody3D>` or :ref:`GridMap<class_GridMap>` ends. Requires :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` to be set to ``true`` and :ref:`max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` to be set high enough to detect all the collisions. :ref:`GridMap<class_GridMap>`\ s are detected if the :ref:`MeshLibrary<class_MeshLibrary>` has Collision :ref:`Shape3D<class_Shape3D>`\ s.
+Se emite cuando la colisión con otro :ref:`PhysicsBody3D<class_PhysicsBody3D>` o :ref:`GridMap<class_GridMap>` finaliza. Requiere que :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>` esté establecido en ``true`` y que :ref:`max_contacts_reported<class_RigidBody3D_property_max_contacts_reported>` sea lo suficientemente alto para detectar todas las colisiones. Los :ref:`GridMap<class_GridMap>`\ s se detectan si la :ref:`MeshLibrary<class_MeshLibrary>` tiene formas de colisión :ref:`Shape3D<class_Shape3D>`.
 
-\ ``body`` the :ref:`Node<class_Node>`, if it exists in the tree, of the other :ref:`PhysicsBody3D<class_PhysicsBody3D>` or :ref:`GridMap<class_GridMap>`.
+\ ``body`` el :ref:`Node<class_Node>`, si existe en el árbol, del otro :ref:`PhysicsBody3D<class_PhysicsBody3D>` o :ref:`GridMap<class_GridMap>`.
 
 .. rst-class:: classref-item-separator
 
@@ -325,9 +325,9 @@ Descripciones de Propiedades
 - |void| **set_angular_damp**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_angular_damp**\ (\ )
 
-Damps the body's rotation. By default, the body will use the :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` project setting or any value override set by an :ref:`Area3D<class_Area3D>` the body is in. Depending on :ref:`angular_damp_mode<class_RigidBody3D_property_angular_damp_mode>`, you can set :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` to be added to or to replace the body's damping value.
+Amortigua la rotación del cuerpo. Por defecto, el cuerpo utilizará el ajuste del proyecto :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` o cualquier valor de anulación establecido por un :ref:`Area3D<class_Area3D>` en el que se encuentre el cuerpo. Dependiendo de :ref:`angular_damp_mode<class_RigidBody3D_property_angular_damp_mode>`, puedes configurar :ref:`angular_damp<class_RigidBody3D_property_angular_damp>` para que se añada o reemplace el valor de amortiguación del cuerpo.
 
-See :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` for more details about damping.
+Véase :ref:`ProjectSettings.physics/3d/default_angular_damp<class_ProjectSettings_property_physics/3d/default_angular_damp>` para más detalles sobre la amortiguación.
 
 .. rst-class:: classref-item-separator
 
@@ -507,9 +507,9 @@ La detección de colisión continua trata de predecir dónde colisionará un cue
 - |void| **set_use_custom_integrator**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_custom_integrator**\ (\ )
 
-If ``true``, the standard force integration (like gravity or damping) will be disabled for this body. Other than collision response, the body will only move as determined by the :ref:`_integrate_forces()<class_RigidBody3D_private_method__integrate_forces>` method, if that virtual method is overridden.
+Si es ``true``, la integración estándar de fuerzas (como la gravedad o la amortiguación) se deshabilitará para este cuerpo. Aparte de la respuesta a la colisión, el cuerpo solo se moverá según lo determinado por el método :ref:`_integrate_forces()<class_RigidBody3D_private_method__integrate_forces>`, si ese método virtual es sobrescrito.
 
-Setting this property will call the method :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>` internally.
+Establecer esta propiedad llamará internamente al método :ref:`PhysicsServer3D.body_set_omit_force_integration()<class_PhysicsServer3D_method_body_set_omit_force_integration>`.
 
 .. rst-class:: classref-item-separator
 
@@ -566,7 +566,7 @@ The body's freeze mode. Determines the body's behavior when :ref:`freeze<class_R
 - |void| **set_gravity_scale**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_gravity_scale**\ (\ )
 
-This is multiplied by :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` to produce this body's gravity. For example, a value of ``1.0`` will apply normal gravity, ``2.0`` will apply double the gravity, and ``0.5`` will apply half the gravity to this body.
+Esto se multiplica por :ref:`ProjectSettings.physics/3d/default_gravity<class_ProjectSettings_property_physics/3d/default_gravity>` para producir la gravedad de este cuerpo. Por ejemplo, un valor de ``1.0`` aplicará la gravedad normal, ``2.0`` aplicará el doble de gravedad y ``0.5`` aplicará la mitad de gravedad a este cuerpo.
 
 .. rst-class:: classref-item-separator
 
@@ -649,7 +649,7 @@ See :ref:`ProjectSettings.physics/3d/default_linear_damp<class_ProjectSettings_p
 - |void| **set_linear_damp_mode**\ (\ value\: :ref:`DampMode<enum_RigidBody3D_DampMode>`\ )
 - :ref:`DampMode<enum_RigidBody3D_DampMode>` **get_linear_damp_mode**\ (\ )
 
-Defines how :ref:`linear_damp<class_RigidBody3D_property_linear_damp>` is applied.
+Define cómo se aplica :ref:`linear_damp<class_RigidBody3D_property_linear_damp>`.
 
 .. rst-class:: classref-item-separator
 

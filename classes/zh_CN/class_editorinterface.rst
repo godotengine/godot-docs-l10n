@@ -382,7 +382,7 @@ Godot 编辑器的接口。
 
 :ref:`String<class_String>` **get_editor_language**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_editor_language>`
 
-Returns the language currently used for the editor interface.
+返回编辑器界面当前使用的语言。
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ Returns the language currently used for the editor interface.
 
 :ref:`float<class_float>` **get_node_3d_rotate_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_rotate_snap>`
 
-Returns the amount of degrees the 3D editor's rotational snapping is set to.
+返回 3D 编辑器旋转吸附功能设置的度数。
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Returns the amount of degrees the 3D editor's rotational snapping is set to.
 
 :ref:`float<class_float>` **get_node_3d_scale_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_scale_snap>`
 
-Returns the amount of units the 3D editor's scale snapping is set to.
+返回 3D 编辑器缩放吸附功能设置的单位数量。
 
 .. rst-class:: classref-item-separator
 
@@ -562,7 +562,7 @@ Returns the amount of units the 3D editor's scale snapping is set to.
 
 :ref:`float<class_float>` **get_node_3d_translate_snap**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_get_node_3d_translate_snap>`
 
-Returns the amount of units the 3D editor's translation snapping is set to.
+返回 3D 编辑器平移吸附功能设置的单位数量。
 
 .. rst-class:: classref-item-separator
 
@@ -702,7 +702,7 @@ Returns the amount of units the 3D editor's translation snapping is set to.
 
 :ref:`bool<class_bool>` **is_node_3d_snap_enabled**\ (\ ) |const| :ref:`🔗<class_EditorInterface_method_is_node_3d_snap_enabled>`
 
-Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``false`` otherwise.
+如果 3D 编辑器当前启用了吸附模式，则返回 ``true``\ ；否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -714,7 +714,7 @@ Returns ``true`` if the 3D editor currently has snapping mode enabled, and ``fal
 
 :ref:`bool<class_bool>` **is_object_edited**\ (\ object\: :ref:`Object<class_Object>`\ ) |const| :ref:`🔗<class_EditorInterface_method_is_object_edited>`
 
-Returns ``true`` if the object has been marked as edited through :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>`.
+如果对象已通过 :ref:`set_object_edited()<class_EditorInterface_method_set_object_edited>` 标记为已编辑，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -824,19 +824,19 @@ Returns ``true`` if the object has been marked as edited through :ref:`set_objec
 
 **实验性：** 未来版本中可能会修改或移除该方法。
 
-Pops up an editor dialog for creating an object.
+弹出用于创建对象的编辑器对话框。
 
-The ``callback`` must take a single argument of type :ref:`String<class_String>`, which will contain the type name of the selected object (or the script path of the type, if the type is created from a script), or be an empty string if no item is selected.
+\ ``callback`` 必须接受一个类型为 :ref:`String<class_String>` 的参数，其中包含所选对象的类型名称（如果类型是从脚本创建的，则包含该类型的脚本路径），如果没有选择任何项目，则为空字符串。
 
-The ``base_type`` specifies the base type of objects to display. For example, if you set this to "Resource", all types derived from :ref:`Resource<class_Resource>` will display in the create dialog.
+\ ``base_type`` 指定要显示对象的基础类型。例如设为“Resource”就会在创建对话框中显示所有派生自 :ref:`Resource<class_Resource>` 的类型。
 
-The ``current_type`` will be passed in the search box of the create dialog, and the specified type can be immediately selected when the dialog pops up. If the ``current_type`` is not derived from ``base_type``, there will be no result of the type in the dialog.
+\ ``current_type`` 会传递给创建对话框中的搜索框，弹出对话框时会立即选中指定的类型。如果 ``current_type`` 不是从 ``base_type`` 派生的，则对话框中不会有该类型对应的结果。
 
-The ``dialog_title`` allows you to define a custom title for the dialog. This is useful if you want to accurately hint the usage of the dialog. If the ``dialog_title`` is an empty string, the dialog will use "Create New 'Base Type'" as the default title.
+\ ``dialog_title`` 可以为对话框自定义标题。适用于需要精准描述对话框用途的场合。如果 ``dialog_title`` 为空字符串，则对话框会使用默认标题“新建‘Base Type’”。
 
-The ``type_blocklist`` contains a list of type names, and the types in the blocklist will be hidden from the create dialog.
+\ ``type_blocklist`` 包含的是类型名称列表，创建对话框会隐藏拦截列表中的类型。
 
-\ **Note:** Trying to list the base type in the ``type_blocklist`` will hide all types derived from the base type from the create dialog.
+\ **注意：**\ 尝试在 ``type_blocklist`` 中列出基类型将会在创建对话框中隐藏所有从该基类型派生的类型。
 
 .. rst-class:: classref-item-separator
 
@@ -1078,11 +1078,11 @@ The ``type_blocklist`` contains a list of type names, and the types in the block
 
 |void| **set_object_edited**\ (\ object\: :ref:`Object<class_Object>`, edited\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_EditorInterface_method_set_object_edited>`
 
-If ``edited`` is ``true``, the object is marked as edited.
+如果 ``edited`` 为 ``true``\ ，则该对象被标记为已编辑。
 
-\ **Note:** This is primarily used by the editor for :ref:`Resource<class_Resource>` based objects to track their modified state. For example, any changes to an open scene, a resource in the inspector, or an edited script will cause this method to be called with ``true``. Saving the scene, script, or resource resets the edited state by calling this method with ``false``.
+\ **注意：**\ 这主要由编辑器用于基于 :ref:`Resource<class_Resource>` 的对象，以跟踪其修改状态。例如，对打开的场景、检查器中的资源或编辑的脚本的任何更改都会导致该方法被调用，并返回 ``true``\ 。保存场景、脚本或资源会使用 ``false`` 调用该方法，从而重置编辑状态。
 
-\ **Note:** Each call to this method increments the object's edited version. This is used to track changes in the editor and to trigger when thumbnails should be regenerated for resources.
+\ **注意：**\ 对该方法的每次调用都会增加该对象的编辑版本号。这用于在编辑器中跟踪更改，并在需要时触发资源的缩略图重新生成。
 
 .. rst-class:: classref-item-separator
 

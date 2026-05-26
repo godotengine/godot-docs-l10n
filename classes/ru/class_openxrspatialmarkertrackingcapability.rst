@@ -9,14 +9,14 @@ OpenXRSpatialMarkerTrackingCapability
 
 **Наследует:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-Implementation for handling spatial entity marker tracking logic.
+Реализация логики отслеживания маркеров пространственных объектов.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-This class handles the OpenXR marker tracking spatial entity extension.
+Этот класс обрабатывает расширение пространственного объекта отслеживания маркеров OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -51,7 +51,7 @@ This class handles the OpenXR marker tracking spatial entity extension.
 
 :ref:`bool<class_bool>` **is_april_tag_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_april_tag_supported>`
 
-Returns ``true`` if April tag marker tracking is supported by the current device.
+Возвращает ``true``, если текущее устройство поддерживает отслеживание маркеров меток April.
 
 .. rst-class:: classref-item-separator
 
@@ -63,7 +63,7 @@ Returns ``true`` if April tag marker tracking is supported by the current device
 
 :ref:`bool<class_bool>` **is_aruco_supported**\ (\ ) :ref:`🔗<class_OpenXRSpatialMarkerTrackingCapability_method_is_aruco_supported>`
 
-Returns ``true`` if Aruco marker tracking is supported by the current device.
+Возвращает ``true``, если текущее устройство поддерживает отслеживание маркеров Aruco.
 
 .. rst-class:: classref-item-separator
 

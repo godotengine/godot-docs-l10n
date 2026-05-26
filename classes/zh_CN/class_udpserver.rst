@@ -40,15 +40,15 @@ UDPServer
         if server.is_connection_available():
             var peer = server.take_connection()
             var packet = peer.get_packet()
-            print("接受对等体：%s:%s" % [peer.get_packet_ip(), peer.get_packet_port()])
+            print("接受对等端：%s:%s" % [peer.get_packet_ip(), peer.get_packet_port()])
             print("接收到数据：%s" % [packet.get_string_from_utf8()])
             # 进行回复，这样对方就知道我们收到了消息。
             peer.put_packet(packet)
-            # 保持引用，这样我们就能继续与远程对等体联系。
+            # 保持引用，这样我们就能继续与远程对等端联系。
             peers.append(peer)
 
         for i in range(0, peers.size()):
-            pass # 针对已连接的对等体进行操作。
+            pass # 针对已连接的对等端进行操作。
 
  .. code-tab:: csharp
 
@@ -73,16 +73,16 @@ UDPServer
             {
                 PacketPeerUdp peer = _server.TakeConnection();
                 byte[] packet = peer.GetPacket();
-                GD.Print($"接受对等体：{peer.GetPacketIP()}:{peer.GetPacketPort()}");
+                GD.Print($"接受对等端：{peer.GetPacketIP()}:{peer.GetPacketPort()}");
                 GD.Print($"接收到数据：{packet.GetStringFromUtf8()}");
                 // 进行回复，这样对方就知道我们收到了消息。
                 peer.PutPacket(packet);
-                // 保持引用，这样我们就能继续与远程对等体联系。
+                // 保持引用，这样我们就能继续与远程对等端联系。
                 _peers.Add(peer);
             }
             foreach (var peer in _peers)
             {
-                // 针对已连接的对等体进行操作。
+                // 针对已连接的对等端进行操作。
             }
         }
     }
@@ -277,7 +277,7 @@ UDPServer
 
 |void| **stop**\ (\ ) :ref:`🔗<class_UDPServer_method_stop>`
 
-停止服务器，如果 UDP 套接字处于打开状态，就关闭它。将关闭所有通过 :ref:`take_connection()<class_UDPServer_method_take_connection>` 接受连接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ （不会通知远程对等体）。
+停止服务器，如果 UDP 套接字处于打开状态，就关闭它。将关闭所有通过 :ref:`take_connection()<class_UDPServer_method_take_connection>` 接受连接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ （不会通知远程对等端）。
 
 .. rst-class:: classref-item-separator
 

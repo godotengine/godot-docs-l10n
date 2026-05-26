@@ -33,7 +33,7 @@ After these steps, the connection should be established. Refer to the linked tut
 Tutoriales
 --------------------
 
-- :doc:`WebRTC documentation <../tutorials/networking/webrtc>`
+- :doc:`Documentación de WebRTC <../tutorials/networking/webrtc>`
 
 - :doc:`Multijugador de alto nivel <../tutorials/networking/high_level_multiplayer>`
 

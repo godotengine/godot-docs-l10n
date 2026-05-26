@@ -14,9 +14,9 @@ Una muestra de puntos para un :ref:`Path3D<class_Path3D>`.
 Descripción
 ----------------------
 
-This node takes its parent :ref:`Path3D<class_Path3D>`, and returns the coordinates of a point within it, given a distance from the first vertex.
+Este nodo toma su padre :ref:`Path3D<class_Path3D>`, y devuelve las coordenadas de un punto dentro de él, dada una distancia desde el primer vértice.
 
-It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node. The descendant nodes will then move accordingly when setting the :ref:`progress<class_PathFollow3D_property_progress>` in this node.
+Es útil para hacer que otros nodos sigan una ruta, sin codificar el patrón de movimiento. Para ello, los nodos deben ser hijos de este nodo. Los nodos descendientes se moverán en consecuencia al establecer el :ref:`progress<class_PathFollow3D_property_progress>` en este nodo.
 
 .. rst-class:: classref-reftable-group
 
@@ -111,7 +111,7 @@ Permite que PathFollow3D rote en cualquier eje.
 
 :ref:`RotationMode<enum_PathFollow3D_RotationMode>` **ROTATION_ORIENTED** = ``4``
 
-Uses the up vector information in a :ref:`Curve3D<class_Curve3D>` to enforce orientation. This rotation mode requires the :ref:`Path3D<class_Path3D>`'s :ref:`Curve3D.up_vector_enabled<class_Curve3D_property_up_vector_enabled>` property to be set to ``true``.
+Utiliza la información del vector ascendente en una :ref:`Curve3D<class_Curve3D>` para reforzar la orientación. Este modo de rotación requiere que la propiedad :ref:`Curve3D.up_vector_enabled<class_Curve3D_property_up_vector_enabled>` de :ref:`Path3D<class_Path3D>` se establezca como ``true``.
 
 .. rst-class:: classref-section-separator
 
@@ -133,11 +133,11 @@ Descripciones de Propiedades
 - |void| **set_cubic_interpolation**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_cubic_interpolation**\ (\ )
 
-If ``true``, the position between two cached points is interpolated cubically, and linearly otherwise.
+Si es ``true``, la posición entre dos puntos cacheados se interpola cúbicamente, y linealmente en caso contrario.
 
-The points along the :ref:`Curve3D<class_Curve3D>` of the :ref:`Path3D<class_Path3D>` are precomputed before use, for faster calculations. The point at the requested offset is then calculated interpolating between two adjacent cached points. This may present a problem if the curve makes sharp turns, as the cached points may not follow the curve closely enough.
+Los puntos a lo largo de la :ref:`Curve3D<class_Curve3D>` del :ref:`Path3D<class_Path3D>` se precalculan antes de su uso, para cálculos más rápidos. El punto en el desplazamiento solicitado se calcula entonces interpolando entre dos puntos cacheados adyacentes. Esto puede presentar un problema si la curva hace giros bruscos, ya que los puntos cacheados pueden no seguir la curva lo suficientemente cerca.
 
-There are two answers to this problem: either increase the number of cached points and increase memory consumption, or make a cubic interpolation between two points at the cost of (slightly) slower calculations.
+Hay dos respuestas a este problema: o bien aumentar el número de puntos cacheados y aumentar el consumo de memoria, o bien hacer una interpolación cúbica entre dos puntos a costa de cálculos (ligeramente) más lentos.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ Si es ``true``, cualquier desplazamiento fuera de la longitud del camino se envo
 - |void| **set_progress**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress**\ (\ )
 
-The distance from the first vertex, measured in 3D units along the path. Changing this value sets this node's position to a point within the path.
+La distancia desde el primer vértice, medida en unidades 3D a lo largo del camino. Cambiar este valor establece la posición de este nodo en un punto dentro del camino.
 
 .. rst-class:: classref-item-separator
 
@@ -205,9 +205,9 @@ The distance from the first vertex, measured in 3D units along the path. Changin
 - |void| **set_progress_ratio**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_progress_ratio**\ (\ )
 
-The distance from the first vertex, considering 0.0 as the first vertex and 1.0 as the last. This is just another way of expressing the progress within the path, as the progress supplied is multiplied internally by the path's length.
+La distancia desde el primer vértice, considerando 0.0 como el primer vértice y 1.0 como el último. Esta es solo otra forma de expresar el progreso dentro de la ruta, ya que el progreso suministrado se multiplica internamente por la longitud de la ruta.
 
-It can be set or get only if the **PathFollow3D** is the child of a :ref:`Path3D<class_Path3D>` which is part of the scene tree, and that this :ref:`Path3D<class_Path3D>` has a :ref:`Curve3D<class_Curve3D>` with a non-zero length. Otherwise, trying to set this field will print an error, and getting this field will return ``0.0``.
+Se puede establecer u obtener solo si el **PathFollow3D** es hijo de un :ref:`Path3D<class_Path3D>` que forma parte del árbol de escenas, y que este :ref:`Path3D<class_Path3D>` tiene una :ref:`Curve3D<class_Curve3D>` con una longitud distinta de cero. De lo contrario, intentar establecer este campo imprimirá un error, y obtener este campo devolverá ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Permite o prohíbe la rotación en uno o más ejes, dependiendo de las constante
 - |void| **set_tilt_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_tilt_enabled**\ (\ )
 
-If ``true``, the tilt property of :ref:`Curve3D<class_Curve3D>` takes effect.
+Si es ``true``, la propiedad de inclinación de :ref:`Curve3D<class_Curve3D>` surte efecto.
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +258,7 @@ If ``true``, the tilt property of :ref:`Curve3D<class_Curve3D>` takes effect.
 - |void| **set_use_model_front**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_model_front**\ (\ )
 
-If ``true``, the node moves on the travel path with orienting the +Z axis as forward. See also :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` and :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`.
+Si es ``true``, el nodo se mueve a lo largo del trayecto de viaje orientando el eje +Z como adelante. Véase también :ref:`Vector3.FORWARD<class_Vector3_constant_FORWARD>` y :ref:`Vector3.MODEL_FRONT<class_Vector3_constant_MODEL_FRONT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ Descripciones de Métodos
 
 :ref:`Transform3D<class_Transform3D>` **correct_posture**\ (\ transform\: :ref:`Transform3D<class_Transform3D>`, rotation_mode\: :ref:`RotationMode<enum_PathFollow3D_RotationMode>`\ ) |static| :ref:`🔗<class_PathFollow3D_method_correct_posture>`
 
-Correct the ``transform``. ``rotation_mode`` implicitly specifies how posture (forward, up and sideway direction) is calculated.
+Corrige la ``transform``. ``rotation_mode`` especifica implícitamente cómo se calcula la postura (dirección hacia adelante, arriba y lateral).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -9,14 +9,14 @@ OpenXRSpatialEntityExtension
 
 **Наследует:** :ref:`OpenXRExtensionWrapper<class_OpenXRExtensionWrapper>` **<** :ref:`Object<class_Object>`
 
-OpenXR extension that handles spatial entities.
+Расширение OpenXR, обрабатывающее пространственные объекты.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-OpenXR extension that handles spatial entities and, when enabled, allows querying those spatial entities. This extension will also automatically manage :ref:`XRTracker<class_XRTracker>` objects for static entities.
+Расширение OpenXR, которое обрабатывает пространственные объекты и, при включении, позволяет запрашивать информацию о них. Это расширение также будет автоматически управлять объектами :ref:`XRTracker<class_XRTracker>` для статических объектов.
 
 .. rst-class:: classref-reftable-group
 
@@ -93,7 +93,7 @@ OpenXR extension that handles spatial entities and, when enabled, allows queryin
 
 **spatial_discovery_recommended**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_signal_spatial_discovery_recommended>`
 
-Emitted when OpenXR recommends running a discovery query because entities managed by this spatial context have (likely) changed.
+Появляется, когда OpenXR рекомендует выполнить запрос на обнаружение, поскольку объекты, управляемые этим пространственным контекстом (вероятно), изменились.
 
 .. rst-class:: classref-section-separator
 
@@ -116,7 +116,7 @@ enum **Capability**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_Capability>`
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_PLANE_TRACKING** = ``1000741000``
 
-Plane tracking capability.
+Возможность отслеживания плоскости.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_QR_CODE:
 
@@ -124,7 +124,7 @@ Plane tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_QR_CODE** = ``1000743000``
 
-QR code based marker tracking capability.
+Возможность отслеживания маркеров на основе QR-кода.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_MICRO_QR_CODE:
 
@@ -132,7 +132,7 @@ QR code based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_MICRO_QR_CODE** = ``1000743001``
 
-Micro QR code based marker tracking capability.
+Возможность отслеживания местоположения с помощью микро-QR-кодов.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_ARUCO_MARKER:
 
@@ -140,7 +140,7 @@ Micro QR code based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_ARUCO_MARKER** = ``1000743002``
 
-Aruco marker based marker tracking capability.
+Возможность отслеживания маркеров на основе технологии Aruco.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_MARKER_TRACKING_APRIL_TAG:
 
@@ -148,7 +148,7 @@ Aruco marker based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_MARKER_TRACKING_APRIL_TAG** = ``1000743003``
 
-April tag based marker tracking capability.
+Возможность отслеживания местоположения с помощью апрельских тегов.
 
 .. _class_OpenXRSpatialEntityExtension_constant_CAPABILITY_ANCHOR:
 
@@ -156,7 +156,7 @@ April tag based marker tracking capability.
 
 :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>` **CAPABILITY_ANCHOR** = ``1000762000``
 
-Anchor capability.
+Возможность привязки.
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +174,7 @@ enum **ComponentType**: :ref:`🔗<enum_OpenXRSpatialEntityExtension_ComponentTy
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_BOUNDED_2D** = ``1``
 
-Component that provides the 2D bounds for a spatial entity. The corresponding list structure is ``XrSpatialComponentBounded2DListEXT``; the corresponding data structure is ``XrSpatialBounded2DDataEXT``.
+Компонент, предоставляющий двумерные границы для пространственного объекта. Соответствующая структура списка: ``XrSpatialComponentBounded2DListEXT``; соответствующая структура данных: ``XrSpatialBounded2DDataEXT``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_BOUNDED_3D:
 
@@ -182,7 +182,7 @@ Component that provides the 2D bounds for a spatial entity. The corresponding li
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_BOUNDED_3D** = ``2``
 
-Component that provides the 3D bounds for a spatial entity. The corresponding list structure is ``XrSpatialComponentBounded3DListEXT``; the corresponding data structure is ``XrBoxf``.
+Компонент, предоставляющий трёхмерные границы для пространственного объекта. Соответствующая структура списка: ``XrSpatialComponentBounded2DListEXT``; соответствующая структура данных: ``XrBoxf``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PARENT:
 
@@ -190,7 +190,7 @@ Component that provides the 3D bounds for a spatial entity. The corresponding li
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PARENT** = ``3``
 
-Component that provides the XrSpatialEntityIdEXT of the parent for a spatial entity. The corresponding list structure is ``XrSpatialComponentParentListEXT``; the corresponding data structure is ``XrSpatialEntityIdEXT``.
+Компонент, предоставляющий XrSpatialEntityIdEXT родительского элемента для пространственной сущности. Соответствующая структура списка: ``XrSpatialComponentParentListEXT``; соответствующая структура данных: ``XrSpatialEntityIdEXT``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MESH_3D:
 
@@ -198,7 +198,7 @@ Component that provides the XrSpatialEntityIdEXT of the parent for a spatial ent
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MESH_3D** = ``4``
 
-Component that provides a 3D mesh for a spatial entity. The corresponding list structure is ``XrSpatialComponentMesh3DListEXT``; the corresponding data structure is ``XrSpatialMeshDataEXT``.
+Компонент, предоставляющий трёхмерную-сетку для пространственного объекта. Соответствующая структура списка: ``XrSpatialComponentMesh3DListEXT``; соответствующая структура данных: ``XrSpatialMeshDataEXT``.
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PLANE_ALIGNMENT:
 
@@ -206,7 +206,7 @@ Component that provides a 3D mesh for a spatial entity. The corresponding list s
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PLANE_ALIGNMENT** = ``1000741000``
 
-Component that provides the plane alignment enum for a spatial entity. The corresponding list structure is ``XrSpatialComponentPlaneAlignmentListEXT``; the corresponding data structure is ``XrSpatialPlaneAlignmentEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Компонент, предоставляющий перечисление выравнивания плоскости для пространственного объекта. Соответствующая структура списка — ``XrSpatialComponentPlaneAlignmentListEXT``; соответствующая структура данных — ``XrSpatialPlaneAlignmentEXT`` (добавлена расширением ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MESH_2D:
 
@@ -214,7 +214,7 @@ Component that provides the plane alignment enum for a spatial entity. The corre
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MESH_2D** = ``1000741001``
 
-Component that provides a 2D mesh for a spatial entity. The corresponding list structure is ``XrSpatialComponentMesh2DListEXT``; the corresponding data structure is ``XrSpatialMeshDataEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Компонент, предоставляющий двумерную сетку для пространственного объекта. Соответствующая структура списка: ``XrSpatialComponentMesh2DListEXT``; соответствующая структура данных: ``XrSpatialMeshDataEXT`` (добавлена расширением ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_POLYGON_2D:
 
@@ -222,7 +222,7 @@ Component that provides a 2D mesh for a spatial entity. The corresponding list s
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_POLYGON_2D** = ``1000741002``
 
-Component that provides a 2D boundary polygon for a spatial entity. The corresponding list structure is ``XrSpatialComponentPolygon2DListEXT``; the corresponding data structure is ``XrSpatialPolygon2DDataEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Компонент, предоставляющий двумерный полигон границы для пространственного объекта. Соответствующая структура списка — ``XrSpatialComponentPolygon2DListEXT``; соответствующая структура данных — ``XrSpatialPolygon2DDataEXT`` (добавлена расширением ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PLANE_SEMANTIC_LABEL:
 
@@ -230,7 +230,7 @@ Component that provides a 2D boundary polygon for a spatial entity. The correspo
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PLANE_SEMANTIC_LABEL** = ``1000741003``
 
-Component that provides a semantic label for a plane. The corresponding list structure is ``XrSpatialComponentPlaneSemanticLabelListEXT``; the corresponding data structure is ``XrSpatialPlaneSemanticLabelEXT`` (Added by the ``XR_EXT_spatial_plane_tracking`` extension).
+Компонент, предоставляющий семантическую метку для плоскости. Соответствующая структура списка: ``XrSpatialComponentPlaneSemanticLabelListEXT``; соответствующая структура данных: ``XrSpatialPlaneSemanticLabelEXT`` (добавлена расширением ``XR_EXT_spatial_plane_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_MARKER:
 
@@ -238,7 +238,7 @@ Component that provides a semantic label for a plane. The corresponding list str
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_MARKER** = ``1000743000``
 
-A component describing the marker type, ID and location. The corresponding list structure is ``XrSpatialComponentMarkerListEXT``; the corresponding data structure is ``XrSpatialMarkerDataEXT`` (Added by the ``XR_EXT_spatial_marker_tracking`` extension).
+Компонент, описывающий тип маркера, его идентификатор и местоположение. Соответствующая структура списка — ``XrSpatialComponentMarkerListEXT``; соответствующая структура данных — ``XrSpatialMarkerDataEXT`` (добавлена расширением ``XR_EXT_spatial_marker_tracking``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_ANCHOR:
 
@@ -246,7 +246,7 @@ A component describing the marker type, ID and location. The corresponding list 
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_ANCHOR** = ``1000762000``
 
-Component that provides the location for an anchor. The corresponding list structure is ``XrSpatialComponentAnchorListEXT``; the corresponding data structure is ``XrPosef`` (Added by the ``XR_EXT_spatial_anchor`` extension).
+Компонент, предоставляющий местоположение для привязки. Соответствующая структура списка — ``XrSpatialComponentAnchorListEXT``; соответствующая структура данных — ``XrPosef`` (добавлена расширением ``XR_EXT_spatial_anchor``).
 
 .. _class_OpenXRSpatialEntityExtension_constant_COMPONENT_TYPE_PERSISTENCE:
 
@@ -254,7 +254,7 @@ Component that provides the location for an anchor. The corresponding list struc
 
 :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>` **COMPONENT_TYPE_PERSISTENCE** = ``1000763000``
 
-Component that provides the persisted UUID for a spatial entity. The corresponding list structure is ``XrSpatialComponentPersistenceListEXT; the corresponding data structure is [code]XrSpatialPersistenceDataEXT`` (Added by the ``XR_EXT_spatial_persistence`` extension).
+Компонент, предоставляющий сохранённый UUID для пространственного объекта. Соответствующая структура списка — ``XrSpatialComponentPersistenceListEXT; соответствующая структура данных — [code]XrSpatialPersistenceDataEXT`` (добавлена расширением ``XR_EXT_spatial_persistence``).
 
 .. rst-class:: classref-section-separator
 
@@ -271,7 +271,7 @@ Component that provides the persisted UUID for a spatial entity. The correspondi
 
 :ref:`RID<class_RID>` **add_spatial_entity**\ (\ spatial_context\: :ref:`RID<class_RID>`, entity_id\: :ref:`int<class_int>`, entity\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>`
 
-Registers an entity that was created directly on the OpenXR runtime.
+Регистрирует объект, созданный непосредственно в среде выполнения OpenXR.
 
 .. rst-class:: classref-item-separator
 
@@ -283,11 +283,7 @@ Registers an entity that was created directly on the OpenXR runtime.
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **create_spatial_context**\ (\ capability_configurations\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`
 
-Creates a new spatial context that handles entities for the provided capability configurations. ``capability_configurations`` is an array of :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` with the needed capability configuration data.
-
-\ ``next`` is an optional parameter that can contain additional information for creating our spatial context.
-
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result data for this function is the :ref:`RID<class_RID>` for our spatial context.
+Создаёт новый пространственный контекст, который обрабатывает сущности для предоставленных конфигураций возможностей. ``capability_configurations`` — это массив :ref:`OpenXRSpatialCapabilityConfigurationBaseHeader<class_OpenXRSpatialCapabilityConfigurationBaseHeader>` с необходимыми данными конфигурации возможностей.\ ``next`` — необязательный параметр, который может содержать дополнительную информацию для создания нашего пространственного контекста.\ **Примечание:** Это асинхронный метод, который возвращает объект :ref:`OpenXRFutureResult<class_OpenXRFutureResult>`, с помощью которого отслеживается статус; удаление этого объекта не отменит процесс создания. В случае успеха будет вызван ``user_callback``, если он указан. Результатом этой функции является :ref:`RID<class_RID>` нашего пространственного контекста.
 
 .. rst-class:: classref-item-separator
 
@@ -299,11 +295,7 @@ Creates a new spatial context that handles entities for the provided capability 
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **discover_spatial_entities**\ (\ spatial_context\: :ref:`RID<class_RID>`, component_types\: :ref:`PackedInt64Array<class_PackedInt64Array>`, next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null, user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`
 
-Starts a new discovery query, this will gather all objects tracked by the ``spatial_context`` that have at least one of the component types specified in ``component_types``.
-
-\ ``next`` is an optional parameter that can contain additional information for executing the discovery query.
-
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the discovery process. On success ``user_callback`` will be called if specified. The result data for this function is the :ref:`RID<class_RID>` for our snapshot.
+Запускает новый запрос обнаружения, который соберёт все объекты, отслеживаемые параметром ``spatial_context``, имеющие хотя бы один из типов компонентов, указанных в ``component_types``.\ ``next`` — необязательный параметр, который может содержать дополнительную информацию для выполнения запроса обнаружения.\ **Примечание:** Это асинхронный метод, возвращающий объект :ref:`OpenXRFutureResult<class_OpenXRFutureResult>`, с помощью которого отслеживается статус; удаление этого объекта не отменит процесс обнаружения. В случае успеха будет вызван ``user_callback``, если он указан. Результатом этой функции является :ref:`RID<class_RID>` для нашего снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +307,7 @@ Starts a new discovery query, this will gather all objects tracked by the ``spat
 
 :ref:`RID<class_RID>` **find_spatial_entity**\ (\ entity_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_find_spatial_entity>`
 
-Returns the :ref:`RID<class_RID>` for the specified spatial entity ID.
+Возвращает :ref:`RID<class_RID>` для указанного идентификатора пространственного объекта.
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +319,7 @@ Returns the :ref:`RID<class_RID>` for the specified spatial entity ID.
 
 |void| **free_spatial_context**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_context>`
 
-Frees a spatial context previously created when calling :ref:`create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`. If the spatial context creation is still ongoing, the asynchronous process is cancelled.
+Освобождает пространственный контекст, созданный ранее при вызове :ref:`create_spatial_context()<class_OpenXRSpatialEntityExtension_method_create_spatial_context>`. Если создание пространственного контекста продолжается, асинхронный процесс отменяется.
 
 .. rst-class:: classref-item-separator
 
@@ -339,7 +331,7 @@ Frees a spatial context previously created when calling :ref:`create_spatial_con
 
 |void| **free_spatial_entity**\ (\ entity\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_entity>`
 
-Frees an entity previously created when calling :ref:`add_spatial_entity()<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>` or :ref:`make_spatial_entity()<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`.
+Освобождает объект, созданный ранее, при вызове метода :ref:`add_spatial_entity()<class_OpenXRSpatialEntityExtension_method_add_spatial_entity>` или :ref:`make_spatial_entity()<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`.
 
 .. rst-class:: classref-item-separator
 
@@ -351,7 +343,7 @@ Frees an entity previously created when calling :ref:`add_spatial_entity()<class
 
 |void| **free_spatial_snapshot**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_free_spatial_snapshot>`
 
-Frees a spatial snapshot previously created when calling :ref:`discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`. If the spatial snapshot creation is still ongoing, the asynchronous process is cancelled.
+Освобождает пространственный снимок, созданный ранее при вызове :ref:`discover_spatial_entities()<class_OpenXRSpatialEntityExtension_method_discover_spatial_entities>`. Если создание пространственного снимка продолжается, асинхронный процесс отменяется.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +355,7 @@ Frees a spatial snapshot previously created when calling :ref:`discover_spatial_
 
 :ref:`PackedFloat32Array<class_PackedFloat32Array>` **get_float_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_float_buffer>`
 
-Returns a buffer with floats from a buffer that was retrieved when taking a snapshot.
+Возвращает буфер с числами с плавающей запятой из буфера, полученного при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -375,9 +367,9 @@ Returns a buffer with floats from a buffer that was retrieved when taking a snap
 
 :ref:`int<class_int>` **get_spatial_context_handle**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_context_handle>`
 
-Returns the OpenXR spatial context handle for this snapshot.
+Возвращает дескриптор пространственного контекста OpenXR для этого снимка.
 
-\ **Note:** This method is intended to be used from GDExtensions that implement spatial entity capability handlers.
+\ **Примечание:** Этот метод предназначен для использования в расширениях GDExtensions, реализующих обработчики возможностей пространственных объектов.
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +381,7 @@ Returns the OpenXR spatial context handle for this snapshot.
 
 :ref:`bool<class_bool>` **get_spatial_context_ready**\ (\ spatial_context\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_context_ready>`
 
-Returns ``true`` if the spatial context finished its creation and is ready to be used.
+Возвращает ``true``, если создание пространственного контекста закончено, и он готов к использованию.
 
 .. rst-class:: classref-item-separator
 
@@ -401,7 +393,7 @@ Returns ``true`` if the spatial context finished its creation and is ready to be
 
 :ref:`RID<class_RID>` **get_spatial_entity_context**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_context>`
 
-Returns the spatial context for this entity.
+Возвращает пространственный контекст для этого объекта.
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +405,7 @@ Returns the spatial context for this entity.
 
 :ref:`int<class_int>` **get_spatial_entity_id**\ (\ entity\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_entity_id>`
 
-Returns the internal ``XrSpatialEntityIdEXT`` associated with the entity.
+Возвращает внутренний ``XrSpatialEntityIdEXT``, связанный с этим объектом.
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +417,7 @@ Returns the internal ``XrSpatialEntityIdEXT`` associated with the entity.
 
 :ref:`RID<class_RID>` **get_spatial_snapshot_context**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_snapshot_context>`
 
-Returns the spatial context related to this spatial snapshot.
+Возвращает пространственный контекст, связанный с этим пространственным снимком.
 
 .. rst-class:: classref-item-separator
 
@@ -437,9 +429,9 @@ Returns the spatial context related to this spatial snapshot.
 
 :ref:`int<class_int>` **get_spatial_snapshot_handle**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_spatial_snapshot_handle>`
 
-Returns the OpenXR spatial snapshot handle for this snapshot.
+Возвращает дескриптор пространственного снимка OpenXR для этого снимка.
 
-\ **Note:** This method is intended to be used from GDExtensions that implement spatial entity capability handlers.
+\ **Примечание:** Этот метод предназначен для использования в расширениях GDExtensions, реализующих обработчики возможностей пространственных объектов.
 
 .. rst-class:: classref-item-separator
 
@@ -451,7 +443,7 @@ Returns the OpenXR spatial snapshot handle for this snapshot.
 
 :ref:`String<class_String>` **get_string**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_string>`
 
-Returns a string from a buffer that was retrieved when taking a snapshot.
+Возвращает строку из буфера, полученную при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -463,7 +455,7 @@ Returns a string from a buffer that was retrieved when taking a snapshot.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_uint8_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint8_buffer>`
 
-Returns a buffer with 8 bit ints from a buffer that was retrieved when taking a snapshot.
+Возвращает буфер с 8-битными целыми числами из буфера, полученного при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +467,7 @@ Returns a buffer with 8 bit ints from a buffer that was retrieved when taking a 
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_uint16_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint16_buffer>`
 
-Returns a buffer with 16 bit ints from a buffer that was retrieved when taking a snapshot.
+Возвращает буфер с 16-битными целыми числами из буфера, полученного при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -487,7 +479,7 @@ Returns a buffer with 16 bit ints from a buffer that was retrieved when taking a
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_uint32_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_uint32_buffer>`
 
-Returns a buffer with 32 bit ints from a buffer that was retrieved when taking a snapshot.
+Возвращает буфер с 32-битными целыми числами из буфера, полученного при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -499,7 +491,7 @@ Returns a buffer with 32 bit ints from a buffer that was retrieved when taking a
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **get_vector2_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_vector2_buffer>`
 
-Returns a buffer with :ref:`Vector2<class_Vector2>` entries from a buffer that was retrieved when taking a snapshot.
+Возвращает буфер с записями :ref:`Vector2<class_Vector2>` из буфера, полученного при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -511,7 +503,7 @@ Returns a buffer with :ref:`Vector2<class_Vector2>` entries from a buffer that w
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **get_vector3_buffer**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, buffer_id\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OpenXRSpatialEntityExtension_method_get_vector3_buffer>`
 
-Returns a buffer with :ref:`Vector3<class_Vector3>` entries from a buffer that was retrieved when taking a snapshot.
+Возвращает буфер с записями :ref:`Vector3<class_Vector3>` из буфера, полученного при создании снимка.
 
 .. rst-class:: classref-item-separator
 
@@ -523,7 +515,7 @@ Returns a buffer with :ref:`Vector3<class_Vector3>` entries from a buffer that w
 
 :ref:`RID<class_RID>` **make_spatial_entity**\ (\ spatial_context\: :ref:`RID<class_RID>`, entity_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_make_spatial_entity>`
 
-Creates a new entity for this ``entity_id``. The ``spatial_context`` should match the context that discovered the entity.
+Создаёт новый объект для ``entity_id``. ``spatial_context`` должен соответствовать контексту, в котором объект был обнаружен.
 
 .. rst-class:: classref-item-separator
 
@@ -535,9 +527,9 @@ Creates a new entity for this ``entity_id``. The ``spatial_context`` should matc
 
 :ref:`bool<class_bool>` **query_snapshot**\ (\ spatial_snapshot\: :ref:`RID<class_RID>`, component_data\: :ref:`Array<class_Array>`\[:ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>`\], next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_query_snapshot>`
 
-Queries the snapshot data. This will find all entities in the snapshot that contain all requested components in ``component_data``. The objects held within ``component_data`` will then be populated with the queried data. ``component_data`` must always have an object of :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>` as the first entry.
+Выполняет запрос к данным снимка. Это позволит найти все сущности в снимке, содержащие все запрошенные компоненты в ``component_data``. Затем объекты, хранящиеся в ``component_data``, будут заполнены запрошенными данными. ``component_data`` всегда должен содержать объект :ref:`OpenXRSpatialQueryResultData<class_OpenXRSpatialQueryResultData>` в качестве первой записи.
 
-\ ``next`` is an optional parameter that can contain additional information passed when setting our query conditions.
+\ ``next`` — необязательный параметр, который может содержать дополнительную информацию, передаваемую при установке условий запроса.
 
 .. rst-class:: classref-item-separator
 
@@ -549,7 +541,7 @@ Queries the snapshot data. This will find all entities in the snapshot that cont
 
 :ref:`bool<class_bool>` **supports_capability**\ (\ capability\: :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_supports_capability>`
 
-Returns ``true`` if this spatial entity ``capability`` is supported by the hardware used.
+Возвращает ``true``, если пространственный объект ``capability`` поддерживается используемым оборудованием.
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +553,7 @@ Returns ``true`` if this spatial entity ``capability`` is supported by the hardw
 
 :ref:`bool<class_bool>` **supports_component_type**\ (\ capability\: :ref:`Capability<enum_OpenXRSpatialEntityExtension_Capability>`, component_type\: :ref:`ComponentType<enum_OpenXRSpatialEntityExtension_ComponentType>`\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_supports_component_type>`
 
-Returns ``true`` if this ``capability`` supports the ``component_type``.
+Возвращает ``true``, если ``capability`` поддерживает ``component_type``.
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +565,7 @@ Returns ``true`` if this ``capability`` supports the ``component_type``.
 
 :ref:`RID<class_RID>` **update_spatial_entities**\ (\ spatial_context\: :ref:`RID<class_RID>`, entities\: :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\], component_types\: :ref:`PackedInt64Array<class_PackedInt64Array>`, next\: :ref:`OpenXRStructureBase<class_OpenXRStructureBase>` = null\ ) :ref:`🔗<class_OpenXRSpatialEntityExtension_method_update_spatial_entities>`
 
-Performs a snapshot for a limited number of entities. This is NOT an asynchronous method and will return the snapshot immediately.
+Создаёт снимок состояния ограниченного числа объектов. Это НЕ асинхронный метод, и снимок будет возвращён немедленно.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

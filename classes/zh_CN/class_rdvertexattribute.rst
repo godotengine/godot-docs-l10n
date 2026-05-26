@@ -58,9 +58,9 @@ RDVertexAttribute
 - |void| **set_binding**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_binding**\ (\ )
 
-The index of the buffer in the vertex buffer array to bind this vertex attribute. When set to ``-1``, it defaults to the index of the attribute.
+要绑定该顶点属性的顶点缓冲区数组中的缓冲区索引。当设置为 ``-1`` 时，默认为该属性的索引。
 
-\ **Note:** You cannot mix binding explicitly assigned attributes with implicitly assigned ones (i.e. ``-1``). Either all attributes must have their binding set to ``-1``, or all must have explicit bindings.
+\ **注意：**\ 不能混用显式绑定指定的属性和隐式绑定指定的属性（即 ``-1``\ ）。所有属性的绑定要么都设置为 ``-1``\ ，要么都必须显式绑定。
 
 .. rst-class:: classref-item-separator
 

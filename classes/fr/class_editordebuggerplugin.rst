@@ -7,7 +7,7 @@ EditorDebuggerPlugin
 
 **Hérite de :** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A base class to implement debugger plugins.
+Une classe de base pour implémenter des plugins de débogueur.
 
 .. rst-class:: classref-introduction-group
 

@@ -922,11 +922,11 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **agent_set_use_3d_avoidance**\ (\ agent\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_NavigationServer3D_method_agent_set_use_3d_avoidance>`
 
-设置该代理在启用避障时使用 2D 避障还是 3D 避障。
+设置在启用避障功能时，代理是使用 2D 避障还是 3D 避障。
 
-如果为 ``true``\ ，则代理会为 XYZ 轴计算 3D 避障速度，例如在空中、水下、太空中进行的游戏。使用 3D 的代理只会躲避其他使用 3D 避障的代理。使用 3D 的代理只会响应基于半径的避障障碍物。使用 3D 的代理会忽略基于顶点的障碍物。使用 3D 的代理只会躲避其他使用 3D 的代理。
+如果设为 ``true``\ ，代理将在 3D 空间中计算 xyz 三个轴的避障速度。这适用于那些发生在空中、水下或太空中的游戏。使用 3D 避障的代理只会躲避其他同样使用 3D 避障的代理。它只会对基于半径的避障障碍物产生反应，并会忽略任何基于顶点的障碍物。
 
-如果为 ``false``\ ，则代理会沿 XZ 轴计算 2D 避障速度，忽略 Y 轴。使用 2D 的代理只会躲避其他使用 2D 避障的代理。使用 2D 的代理会响应基于半径的避障障碍物。使用 2D 的代理会响应基于顶点的避障障碍物。使用 2D 的代理只会躲避其他使用 2D 的代理。在 2D 避障时，使用 2D 的代理会忽略它们位于当前位置之下或者位于当前位置与代理高度之和之上的其他使用 2D 的代理和障碍物。
+如果设为 ``false``\ ，代理将仅在 xz 平面上计算 2D 避障速度，并忽略 y 轴（高度）。使用 2D 避障的代理只会躲避其他同样使用 2D 避障的代理。它会对基于半径的避障障碍物产生反应，也会对基于顶点的避障障碍物产生反应。使用 2D 避障的代理会忽略那些位于其当前位置下方或上方（包含代理自身在 2D 避障中的高度范围）的其他 2D 代理或障碍物。
 
 .. rst-class:: classref-item-separator
 
@@ -1418,9 +1418,9 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 :ref:`int<class_int>` **map_get_iteration_id**\ (\ map\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_NavigationServer3D_method_map_get_iteration_id>`
 
-返回导航地图的当前迭代 ID。导航地图发生更改并同步时都会增加迭代 ID。迭代 ID 为 0 表示导航地图从未进行过同步。
+返回当前导航地图的迭代 ID。每当导航地图发生改变并进行同步时，这个迭代 id 就会增加。如果迭代id 为 0，则表示该导航地图从未进行过同步。
 
-\ **注意：**\ 迭代 ID 超过取值范围后会绕回 1。
+\ **注意：** 当迭代 ID 达到其数值范围的上限时，会重新绕回 1。
 
 .. rst-class:: classref-item-separator
 
@@ -2392,13 +2392,13 @@ enum **ProcessInfo**: :ref:`🔗<enum_NavigationServer3D_ProcessInfo>`
 
 |void| **source_geometry_parser_set_callback**\ (\ parser\: :ref:`RID<class_RID>`, callback\: :ref:`Callable<class_Callable>`\ ) :ref:`🔗<class_NavigationServer3D_method_source_geometry_parser_set_callback>`
 
-为特定源几何体 ``parser`` 设置 ``callback`` :ref:`Callable<class_Callable>`\ 。\ :ref:`Callable<class_Callable>` 将接收具有以下参数的调用：
+为指定的源几何体 ``parser``\ （解析器）设置 ``callback`` :ref:`Callable<class_Callable>`\ 。该 :ref:`Callable<class_Callable>` 在调用时会接收以下参数：
 
-- ``navigation_mesh`` - 用于定义解析设置的 :ref:`NavigationMesh<class_NavigationMesh>` 引用。请勿直接编辑或添加到导航网格。
+\ ``navigation_mesh`` - 用于定义解析设置的 :ref:`NavigationPolygon<class_NavigationPolygon>` 引用。请勿直接编辑或向其添加内容。
 
-- ``source_geometry_data`` - :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>` 引用。将用于导航网格烘焙的自定义源几何体添加到该对象。
+\ ``source_geometry_data`` - :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>` 引用。请将用于烘焙导航网格的自定义源几何体添加到这个对象中。
 
-- ``node`` - 解析的 :ref:`Node<class_Node>`\ 。
+\ ``node`` - 当前正在被解析的 :ref:`Node<class_Node>`\ （节点）。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

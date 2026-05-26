@@ -1736,7 +1736,7 @@ Analiza el :ref:`SceneTree<class_SceneTree>` para la geometría de origen de acu
 
 |void| **query_path**\ (\ parameters\: :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`, result\: :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>`, callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_NavigationServer2D_method_query_path>`
 
-Consulta una ruta en un mapa de navegación dado. La posición de inicio y destino y otros parámetros se definen a través de :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`. Actualiza el objeto de resultado :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>` proporcionado con la ruta entre otros resultados solicitados por la consulta. Una vez finalizado el proceso, se llamará a la ``callback`` opcional.
+Véase una ruta en un mapa de navegación dado. La posición de inicio y destino y otros parámetros se definen a través de :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>`. Actualiza el objeto de resultado :ref:`NavigationPathQueryResult2D<class_NavigationPathQueryResult2D>` proporcionado con la ruta entre otros resultados solicitados por la consulta. Una vez finalizado el proceso, se llamará a la ``callback`` opcional.
 
 .. rst-class:: classref-item-separator
 
@@ -2148,7 +2148,7 @@ Establece la ``callback`` :ref:`Callable<class_Callable>` para la geometría de 
 
 - ``navigation_mesh`` - La referencia :ref:`NavigationPolygon<class_NavigationPolygon>` utilizada para definir la configuración de análisis. NO edite ni agregue directamente a la malla de navegación.
 
-- ``source_geometry_data`` - La referencia :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>`. Agregue geometría de origen personalizada para el procesado de la malla de navegación a este objeto.
+- ``source_geometry_data`` - La referencia :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>`. Agregue geometría de origen personalizada para el baking de la malla de navegación a este objeto.
 
 - ``node`` - El :ref:`Node<class_Node>` que se analiza.
 

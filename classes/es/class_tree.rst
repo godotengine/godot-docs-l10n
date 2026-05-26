@@ -635,7 +635,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_Tree_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_DISABLED** = ``0``
 
-Scroll hints will never be shown.
+Las pistas de desplazamiento nunca se mostrarán.
 
 .. _class_Tree_constant_SCROLL_HINT_MODE_BOTH:
 
@@ -643,7 +643,7 @@ Scroll hints will never be shown.
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_BOTH** = ``1``
 
-Scroll hints will be shown at the top and bottom.
+Las pistas de desplazamiento se mostrarán en la parte superior e inferior.
 
 .. _class_Tree_constant_SCROLL_HINT_MODE_TOP:
 
@@ -651,7 +651,7 @@ Scroll hints will be shown at the top and bottom.
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_TOP** = ``2``
 
-Only the top scroll hint will be shown.
+Solo se mostrará la pista de desplazamiento superior.
 
 .. _class_Tree_constant_SCROLL_HINT_MODE_BOTTOM:
 
@@ -659,7 +659,7 @@ Only the top scroll hint will be shown.
 
 :ref:`ScrollHintMode<enum_Tree_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM** = ``3``
 
-Only the bottom scroll hint will be shown.
+Solo se mostrará la pista de desplazamiento inferior.
 
 .. rst-class:: classref-section-separator
 
@@ -1635,7 +1635,7 @@ El :ref:`Color<class_Color>` predeterminado de las líneas de relación.
 
 :ref:`Color<class_Color>` **scroll_hint_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_Tree_theme_color_scroll_hint_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint<class_Tree_theme_icon_scroll_hint>` texture.
+:ref:`Color<class_Color>` usado para modular la textura :ref:`scroll_hint<class_Tree_theme_icon_scroll_hint>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1827,9 +1827,9 @@ El margen horizontal al comienzo de un artículo. Se utiliza cuando el plegado e
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_Tree_theme_constant_outline_size>`
 
-The size of the text outline.
+El tamaño del contorno del texto.
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_Tree_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_Tree_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 
@@ -2117,7 +2117,7 @@ El icono de marca que se muestra cuando la celda en modo :ref:`TreeItem.CELL_MOD
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint** :ref:`🔗<class_Tree_theme_icon_scroll_hint>`
 
-The indicator that will be shown when the content can still be scrolled. See :ref:`scroll_hint_mode<class_Tree_property_scroll_hint_mode>`.
+El indicador que se mostrará cuando el contenido aún pueda desplazarse. Véase :ref:`scroll_hint_mode<class_Tree_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 

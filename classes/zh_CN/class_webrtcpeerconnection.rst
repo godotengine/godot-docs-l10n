@@ -9,31 +9,31 @@ WebRTCPeerConnection
 
 **派生：** :ref:`WebRTCPeerConnectionExtension<class_WebRTCPeerConnectionExtension>`
 
-与 WebRTC 对等体连接的接口。
+与 WebRTC 对等端连接的接口。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-A WebRTC connection between the local computer and a remote peer. Provides an interface to connect, maintain, and monitor the connection.
+本地计算机和远程对等端之间的 WebRTC 连接。提供一个接口来连接、维护和监控连接。
 
-Setting up a WebRTC connection between two peers may not seem a trivial task, but it can be broken down into 3 main steps:
+在两个对等端之间建立 WebRTC 连接看上去可能不是一项简单的任务，但它可以分解为 3 个主要步骤。
 
-- The peer that wants to initiate the connection (``A`` from now on) creates an offer and sends it to the other peer (``B`` from now on).
+- 想要启动连接的对等端（以下简称 ``A``\ ）创建一个提交，并将其发送给另一个对等端（以下简称 ``B``\ ）。
 
-- ``B`` receives the offer, generates an answer, and sends it to ``A``.
+- ``B`` 收到要约，生成回答，并将其发送给 ``A``\ 。
 
-- ``A`` and ``B`` then generate and exchange ICE candidates with each other.
+- ``A`` 和 ``B`` 然后生成并相互交换 ICE 候选。
 
-After these steps, the connection should be established. Refer to the linked tutorials for details.
+在这些步骤之后，连接应该就建立起来了。有关详细信息，请参阅链接的教程。
 
 .. rst-class:: classref-introduction-group
 
 教程
 ----
 
-- :doc:`WebRTC documentation <../tutorials/networking/webrtc>`
+- :doc:`WebRTC 文档 <../tutorials/networking/webrtc>`
 
 - :doc:`高级多人游戏 <../tutorials/networking/high_level_multiplayer>`
 
@@ -100,7 +100,7 @@ After these steps, the connection should be established. Refer to the linked tut
 
 **ice_candidate_created**\ (\ media\: :ref:`String<class_String>`, index\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_signal_ice_candidate_created>`
 
-当新的 ICE 候选者被创建时触发。这三个参数是为了通过信号服务器传递给远程对等体。
+当新的 ICE 候选者被创建时触发。这三个参数是为了通过信号服务器传递给远程对等端。
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ After these steps, the connection should be established. Refer to the linked tut
 
 **session_description_created**\ (\ type\: :ref:`String<class_String>`, sdp\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_signal_session_description_created>`
 
-在成功调用 :ref:`create_offer()<class_WebRTCPeerConnection_method_create_offer>` 或 :ref:`set_remote_description()<class_WebRTCPeerConnection_method_set_remote_description>` 后触发，当它产生一个应答时。这些参数是为了传递给这个对象上的 :ref:`set_local_description()<class_WebRTCPeerConnection_method_set_local_description>`\ ，并通过信号服务器发送给远程对等体。
+在成功调用 :ref:`create_offer()<class_WebRTCPeerConnection_method_create_offer>` 或 :ref:`set_remote_description()<class_WebRTCPeerConnection_method_set_remote_description>` 后触发，当它产生一个应答时。这些参数是为了传递给这个对象上的 :ref:`set_local_description()<class_WebRTCPeerConnection_method_set_local_description>`\ ，并通过信号服务器发送给远程对等端。
 
 .. rst-class:: classref-section-separator
 
@@ -143,7 +143,7 @@ enum **ConnectionState**: :ref:`🔗<enum_WebRTCPeerConnection_ConnectionState>`
 
 :ref:`ConnectionState<enum_WebRTCPeerConnection_ConnectionState>` **STATE_CONNECTING** = ``1``
 
-对等体正在连接，ICE 正在进行中，没有任何传输失败。
+对等端正在连接，ICE 正在进行中，没有任何传输失败。
 
 .. _class_WebRTCPeerConnection_constant_STATE_CONNECTED:
 
@@ -151,7 +151,7 @@ enum **ConnectionState**: :ref:`🔗<enum_WebRTCPeerConnection_ConnectionState>`
 
 :ref:`ConnectionState<enum_WebRTCPeerConnection_ConnectionState>` **STATE_CONNECTED** = ``2``
 
-对等体已连接，所有的 ICE 传输都已连接。
+对等端已连接，所有的 ICE 传输都已连接。
 
 .. _class_WebRTCPeerConnection_constant_STATE_DISCONNECTED:
 
@@ -193,7 +193,7 @@ enum **GatheringState**: :ref:`🔗<enum_WebRTCPeerConnection_GatheringState>`
 
 :ref:`GatheringState<enum_WebRTCPeerConnection_GatheringState>` **GATHERING_STATE_NEW** = ``0``
 
-对等体连接刚刚建立，还没有做任何联网工作。
+对等端连接刚刚建立，还没有做任何联网工作。
 
 .. _class_WebRTCPeerConnection_constant_GATHERING_STATE_GATHERING:
 
@@ -235,7 +235,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`SignalingState<enum_WebRTCPeerConnection_SignalingState>` **SIGNALING_STATE_HAVE_LOCAL_OFFER** = ``1``
 
-本地对等体已调用 :ref:`set_local_description()<class_WebRTCPeerConnection_method_set_local_description>`\ ，正在传入代表邀约的 SDP（通常由调用 :ref:`create_offer()<class_WebRTCPeerConnection_method_create_offer>` 创建），邀约已成功应用。
+本地对等端已调用 :ref:`set_local_description()<class_WebRTCPeerConnection_method_set_local_description>`\ ，正在传入代表邀约的 SDP（通常由调用 :ref:`create_offer()<class_WebRTCPeerConnection_method_create_offer>` 创建），邀约已成功应用。
 
 .. _class_WebRTCPeerConnection_constant_SIGNALING_STATE_HAVE_REMOTE_OFFER:
 
@@ -243,7 +243,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`SignalingState<enum_WebRTCPeerConnection_SignalingState>` **SIGNALING_STATE_HAVE_REMOTE_OFFER** = ``2``
 
-远程对等体已创建邀约，并将其使用信号服务器传递给了本地对等体，本地对等体已调用 :ref:`set_remote_description()<class_WebRTCPeerConnection_method_set_remote_description>` 将邀约设置为远程描述。
+远程对等端已创建邀约，并将其使用信号服务器传递给了本地对等端，本地对等端已调用 :ref:`set_remote_description()<class_WebRTCPeerConnection_method_set_remote_description>` 将邀约设置为远程描述。
 
 .. _class_WebRTCPeerConnection_constant_SIGNALING_STATE_HAVE_LOCAL_PRANSWER:
 
@@ -251,7 +251,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`SignalingState<enum_WebRTCPeerConnection_SignalingState>` **SIGNALING_STATE_HAVE_LOCAL_PRANSWER** = ``3``
 
-已应用远程对等体发送的邀约，已创建恢复并调用了 :ref:`set_local_description()<class_WebRTCPeerConnection_method_set_local_description>` 进行应用。这个临时应答描述了支持的媒体格式等信息，但可能不包含完整的 ICE 候选项。后续会单独发送更多候选项。
+已应用远程对等端发送的邀约，已创建恢复并调用了 :ref:`set_local_description()<class_WebRTCPeerConnection_method_set_local_description>` 进行应用。这个临时应答描述了支持的媒体格式等信息，但可能不包含完整的 ICE 候选项。后续会单独发送更多候选项。
 
 .. _class_WebRTCPeerConnection_constant_SIGNALING_STATE_HAVE_REMOTE_PRANSWER:
 
@@ -284,7 +284,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_ice_candidate**\ (\ media\: :ref:`String<class_String>`, index\: :ref:`int<class_int>`, name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_method_add_ice_candidate>`
 
-添加一个由远程对等体产生的冻结候选，并通过信令服务器接收。请参阅\ :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ 。
+添加一个由远程对等端产生的冻结候选，并通过信令服务器接收。请参阅\ :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -296,7 +296,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 |void| **close**\ (\ ) :ref:`🔗<class_WebRTCPeerConnection_method_close>`
 
-关闭对等体连接和与之相关的所有数据通道。
+关闭对等端连接和与之相关的所有数据通道。
 
 \ **注意：**\ 你不能为一个新的连接重复使用这个对象，除非你调用 :ref:`initialize()<class_WebRTCPeerConnection_method_initialize>`\ 。
 
@@ -312,7 +312,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 返回新的 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>`\ ，或在失败时返回 ``null``\ ，具有给定的 ``label``\ ，并通过 ``options`` 字典进行配置。这个方法只有在连接处于 :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` 状态时才能被调用。
 
-有两种方法来创建工作数据通道：要么只在其中一个对等体上调用 :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ，并在另一个对等体上监听\ :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>`\ ，要么在两个对等体上调用 :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ，数值相同，并将 ``"negotiated"`` 选项设置为 ``true``\ 。
+有两种方法来创建工作数据通道：要么只在其中一个对等端上调用 :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ，并在另一个对等端上监听\ :ref:`data_channel_received<class_WebRTCPeerConnection_signal_data_channel_received>`\ ，要么在两个对等端上调用 :ref:`create_data_channel()<class_WebRTCPeerConnection_method_create_data_channel>`\ ，数值相同，并将 ``"negotiated"`` 选项设置为 ``true``\ 。
 
 有效的 ``options`` 是：
 
@@ -320,10 +320,10 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
     {
         "negotiated": true, # 当设置为 "true"时，默认关闭，意味着该通道是在频带外协商的。"id"也必须被设置。"data_channel_received" 将不会被调用。
-        "id":1, # 当 "negotiated"为真时，这个值也必须被设置为两个对等体的相同值。
+        "id":1, # 当 "negotiated"为真时，这个值也必须被设置为两个对等端的相同值。
 
         # 只能指定maxRetransmits和maxPacketLifeTime中的一个，不能同时指定。它们会使信道变得不可靠，但在实时性方面会更好。
-        "maxRetransmits":1, # 指定对等体在数据包未被确认时尝试重传的最大次数。
+        "maxRetransmits":1, # 指定对等端在数据包未被确认时尝试重传的最大次数。
         "maxPacketLifeTime":100, # 指定放弃重传未被确认的数据包之前的最大时间，以毫秒为单位。
         "ordered": true, # 当处于不可靠模式时，即 "maxRetransmits "或 "maxPacketLifetime "被设置，"ordered"指定是否要强制执行数据包排序，默认为true。
 
@@ -342,7 +342,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_offer**\ (\ ) :ref:`🔗<class_WebRTCPeerConnection_method_create_offer>`
 
-创建一个新的 SDP 提交，以开始与远程对等体的 WebRTC 连接。在调用此方法之前，至少要创建一个 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>`\ 。
+创建一个新的 SDP 提交，以开始与远程对等端的 WebRTC 连接。在调用此方法之前，至少要创建一个 :ref:`WebRTCDataChannel<class_WebRTCDataChannel>`\ 。
 
 如果这个函数返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，当会话准备好被发送时，\ :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` 将被调用。
 
@@ -380,7 +380,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`SignalingState<enum_WebRTCPeerConnection_SignalingState>` **get_signaling_state**\ (\ ) |const| :ref:`🔗<class_WebRTCPeerConnection_method_get_signaling_state>`
 
-连接或重新连接到另一个对等体时，返回连接本地端的信令状态。
+连接或重新连接到另一个对等端时，返回连接本地端的信令状态。
 
 .. rst-class:: classref-item-separator
 
@@ -392,7 +392,7 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **initialize**\ (\ configuration\: :ref:`Dictionary<class_Dictionary>` = {}\ ) :ref:`🔗<class_WebRTCPeerConnection_method_initialize>`
 
-重新初始化这个对等体连接，关闭任何先前活动的连接，并回到 :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` 状态。传入配置选项字典 ``configuration`` 能够对该对等体连接进行配置。
+重新初始化这个对等端连接，关闭任何先前活动的连接，并回到 :ref:`STATE_NEW<class_WebRTCPeerConnection_constant_STATE_NEW>` 状态。传入配置选项字典 ``configuration`` 能够对该对等端连接进行配置。
 
 有效的 ``configuration`` 选项有：
 
@@ -445,9 +445,9 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_local_description**\ (\ type\: :ref:`String<class_String>`, sdp\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_method_set_local_description>`
 
-设置本地对等体的 SDP 描述。这应是在响应 :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` 时调用的。
+设置本地对等端的 SDP 描述。这应是在响应 :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` 时调用的。
 
-调用此函数后，对等体将开始发出 :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ ，除非返回与 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` 不同的 :ref:`Error<enum_@GlobalScope_Error>`\ 。
+调用此函数后，对等端将开始发出 :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ ，除非返回与 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` 不同的 :ref:`Error<enum_@GlobalScope_Error>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -459,11 +459,11 @@ enum **SignalingState**: :ref:`🔗<enum_WebRTCPeerConnection_SignalingState>`
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_remote_description**\ (\ type\: :ref:`String<class_String>`, sdp\: :ref:`String<class_String>`\ ) :ref:`🔗<class_WebRTCPeerConnection_method_set_remote_description>`
 
-设置远程对等体的 SDP 描述。应用远程对等体产生的值来调用，并通过信号服务器接收。
+设置远程对等端的 SDP 描述。应用远程对等端产生的值来调用，并通过信号服务器接收。
 
-如果 ``type`` 为 ``"offer"``\ ，对等体将发出 :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` 并给出适当的应答。
+如果 ``type`` 为 ``"offer"``\ ，对等端将发出 :ref:`session_description_created<class_WebRTCPeerConnection_signal_session_description_created>` 并给出适当的应答。
 
-如果 ``type`` 为 ``"answer"``\ ，对等体将开始发出 :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ 。
+如果 ``type`` 为 ``"answer"``\ ，对等端将开始发出 :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -14,9 +14,9 @@ Un singleton para manejar las entradas.
 Descripción
 ----------------------
 
-The **Input** singleton handles key presses, mouse buttons and movement, gamepads, and input actions. Actions and their events can be set in the **Input Map** tab in **Project > Project Settings**, or with the :ref:`InputMap<class_InputMap>` class.
+El singleton **Input** maneja las pulsaciones de teclas, los botones y el movimiento del ratón, los gamepads y las acciones de entrada. Las acciones y sus eventos se pueden configurar en la pestaña **Mapa de entradas** en **Proyecto > Configuración del proyecto**, o con la clase :ref:`InputMap<class_InputMap>`.
 
-\ **Note:** **Input**'s methods reflect the global input state and are not affected by :ref:`Control.accept_event()<class_Control_method_accept_event>` or :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, as those methods only deal with the way input is propagated in the :ref:`SceneTree<class_SceneTree>`.
+\ **Nota:** Los métodos de **Input** reflejan el estado de entrada global y no se ven afectados por :ref:`Control.accept_event()<class_Control_method_accept_event>` o :ref:`Viewport.set_input_as_handled()<class_Viewport_method_set_input_as_handled>`, ya que esos métodos solo tratan con la forma en que la entrada se propaga en el :ref:`SceneTree<class_SceneTree>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -519,9 +519,9 @@ Añade una nueva entrada de mapeo (en formato SDL2) a la base de datos de mapeo.
 
 |void| **flush_buffered_events**\ (\ ) :ref:`🔗<class_Input_method_flush_buffered_events>`
 
-Sends all input events which are in the current buffer to the game loop. These events may have been buffered as a result of accumulated input (:ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`) or agile input flushing (:ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`).
+Envía todos los eventos de entrada que se encuentran en el búfer actual al bucle del juego. Estos eventos pueden haber sido almacenados en búfer como resultado de la entrada acumulada (:ref:`use_accumulated_input<class_Input_property_use_accumulated_input>`) o el vaciado ágil de entrada (:ref:`ProjectSettings.input_devices/buffering/agile_event_flushing<class_ProjectSettings_property_input_devices/buffering/agile_event_flushing>`).
 
-The engine will already do this itself at key execution points (at least once per frame). However, this can be useful in advanced cases where you want precise control over the timing of event handling.
+El motor ya hará esto por sí mismo en los puntos clave de ejecución (al menos una vez por fotograma). Sin embargo, esto puede ser útil en casos avanzados donde quieres un control preciso sobre la temporización del manejo de eventos.
 
 .. rst-class:: classref-item-separator
 
@@ -533,13 +533,13 @@ The engine will already do this itself at key execution points (at least once pe
 
 :ref:`Vector3<class_Vector3>` **get_accelerometer**\ (\ ) |const| :ref:`🔗<class_Input_method_get_accelerometer>`
 
-Returns the acceleration in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+Devuelve la aceleración en m/s² del sensor acelerómetro del dispositivo, si el dispositivo tiene uno. De lo contrario, el método devuelve :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
 
-Note this method returns an empty :ref:`Vector3<class_Vector3>` when running from the editor even when your device has an accelerometer. You must export your project to a supported device to read values from the accelerometer.
+Ten en cuenta que este método devuelve un :ref:`Vector3<class_Vector3>` vacío cuando se ejecuta desde el editor, incluso si tu dispositivo tiene un acelerómetro. Debes exportar tu proyecto a un dispositivo compatible para leer los valores del acelerómetro.
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **Nota:** Este método solo funciona en Android e iOS. En otras plataformas, siempre devuelve :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>` must be enabled.
+\ **Nota:** Para Android, :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>` debe estar habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -661,7 +661,7 @@ Returns the current value of the joypad axis at index ``axis``.
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Returns an SDL2-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses the `SDL2 game controller database <https://github.com/gabomdq/SDL_GameControllerDB>`__ to determine gamepad names and mappings based on this GUID.
+Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
 
 On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
 
@@ -1007,7 +1007,7 @@ Returns ``true`` if you are pressing the key in the physical location on the 101
 
 |void| **parse_input_event**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) :ref:`🔗<class_Input_method_parse_input_event>`
 
-Feeds an :ref:`InputEvent<class_InputEvent>` to the game. Can be used to artificially trigger input events from code. Also generates :ref:`Node._input()<class_Node_private_method__input>` calls.
+Alimenta un :ref:`InputEvent<class_InputEvent>` al juego. Se puede usar para generar eventos de entrada de manera artificial por código. También genera llamadas a :ref:`Node._input()<class_Node_private_method__input>`.
 
 
 .. tabs::
@@ -1028,7 +1028,7 @@ Feeds an :ref:`InputEvent<class_InputEvent>` to the game. Can be used to artific
 
 
 
-\ **Note:** Calling this function has no influence on the operating system. So for example sending an :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` will not move the OS mouse cursor to the specified position (use :ref:`warp_mouse()<class_Input_method_warp_mouse>` instead) and sending :kbd:`Alt/Cmd + Tab` as :ref:`InputEventKey<class_InputEventKey>` won't toggle between active windows.
+\ **Nota:** Llamar a esta función no influye en el sistema operativo. Por ejemplo, enviar un :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` no moverá el cursor del ratón del OS a la posición especificada (usa :ref:`warp_mouse()<class_Input_method_warp_mouse>` en su lugar) y enviar :kbd:`Alt/Cmd + Tab` como :ref:`InputEventKey<class_InputEventKey>` no cambiará entre ventanas activas.
 
 .. rst-class:: classref-item-separator
 

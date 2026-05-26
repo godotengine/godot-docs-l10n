@@ -14,9 +14,9 @@ Control del editor de Godot para seleccionar la propiedad ``script`` de un :ref:
 Descripción
 ----------------------
 
-Similar to :ref:`EditorResourcePicker<class_EditorResourcePicker>` this :ref:`Control<class_Control>` node is used in the editor's Inspector dock, but only to edit the ``script`` property of a :ref:`Node<class_Node>`. Default options for creating new resources of all possible subtypes are replaced with dedicated buttons that open the "Attach Node Script" dialog. Can be used with :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` to recreate the same behavior.
+Similar a :ref:`EditorResourcePicker<class_EditorResourcePicker>`, este nodo :ref:`Control<class_Control>` se utiliza en el panel Inspector del editor, pero únicamente para editar la propiedad ``script`` de un :ref:`Node<class_Node>`. Las opciones predeterminadas para crear nuevos recursos de todos los subtipos posibles se reemplazan por botones dedicados que abren el diálogo "Attach Node Script". Puede utilizarse con :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` para recrear el mismo comportamiento.
 
-\ **Note:** You must set the :ref:`script_owner<class_EditorScriptPicker_property_script_owner>` for the custom context menu items to work.
+\ **Nota:** Debes establecer :ref:`script_owner<class_EditorScriptPicker_property_script_owner>` para que los elementos personalizados del menú contextual funcionen.
 
 .. rst-class:: classref-reftable-group
 

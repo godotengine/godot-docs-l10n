@@ -17,9 +17,9 @@ Un botón que representa una elección binaria.
 Descripción
 ----------------------
 
-**CheckButton** is a toggle button displayed as a check field. It's similar to :ref:`CheckBox<class_CheckBox>` in functionality, but it has a different appearance. To follow established UX patterns, it's recommended to use **CheckButton** when toggling it has an **immediate** effect on something. For example, it can be used when pressing it shows or hides advanced settings, without asking the user to confirm this action.
+**CheckButton** es un botón de alternancia mostrado como un campo de verificación. Es similar a :ref:`CheckBox<class_CheckBox>` en funcionalidad, pero tiene una apariencia diferente. Para seguir los patrones de UX establecidos, se recomienda usar **CheckButton** cuando su alternancia tiene un efecto **inmediato** en algo. Por ejemplo, puede usarse cuando al presionarlo se muestran u ocultan configuraciones avanzadas, sin pedir al usuario que confirme esta acción.
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+Véase también :ref:`BaseButton<class_BaseButton>`, que contiene las propiedades y métodos comunes asociados con este nodo.
 
 .. rst-class:: classref-reftable-group
 

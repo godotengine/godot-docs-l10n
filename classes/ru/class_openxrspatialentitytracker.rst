@@ -11,14 +11,14 @@ OpenXRSpatialEntityTracker
 
 **Наследуется от:** :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`, :ref:`OpenXRMarkerTracker<class_OpenXRMarkerTracker>`, :ref:`OpenXRPlaneTracker<class_OpenXRPlaneTracker>`
 
-Base class for Positional trackers managed by OpenXR's spatial entity extensions.
+Базовый класс для трекеров положения, управляемых расширениями пространственных объектов OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-These are trackers created and managed by OpenXR's spatial entity extensions that give access to specific data related to OpenXR's spatial entities. They will always be of type ``TRACKER_ANCHOR``.
+Это трекеры, созданные и управляемые расширениями пространственных объектов OpenXR, которые предоставляют доступ к определённым данным, связанным с пространственными объектами OpenXR. Они всегда будут иметь тип ``TRACKER_ANCHOR``.
 
 .. rst-class:: classref-reftable-group
 
@@ -76,7 +76,7 @@ enum **EntityTrackingState**: :ref:`🔗<enum_OpenXRSpatialEntityTracker_EntityT
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_STOPPED** = ``1``
 
-This anchor has stopped tracking.
+Эта привязка перестала отслеживать.
 
 .. _class_OpenXRSpatialEntityTracker_constant_ENTITY_TRACKING_STATE_PAUSED:
 
@@ -84,7 +84,7 @@ This anchor has stopped tracking.
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_PAUSED** = ``2``
 
-Tracking is currently paused.
+Отслеживание на данный момент приостановлено.
 
 .. _class_OpenXRSpatialEntityTracker_constant_ENTITY_TRACKING_STATE_TRACKING:
 
@@ -92,7 +92,7 @@ Tracking is currently paused.
 
 :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **ENTITY_TRACKING_STATE_TRACKING** = ``3``
 
-This anchor is currently being tracked.
+Эта привязка сейчас отслеживается.
 
 .. rst-class:: classref-section-separator
 
@@ -114,7 +114,7 @@ This anchor is currently being tracked.
 - |void| **set_entity**\ (\ value\: :ref:`RID<class_RID>`\ )
 - :ref:`RID<class_RID>` **get_entity**\ (\ )
 
-The spatial entity associated with this tracker.
+Пространственный объект, связанный с этим трекером.
 
 .. rst-class:: classref-item-separator
 
@@ -131,7 +131,7 @@ The spatial entity associated with this tracker.
 - |void| **set_spatial_tracking_state**\ (\ value\: :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>`\ )
 - :ref:`EntityTrackingState<enum_OpenXRSpatialEntityTracker_EntityTrackingState>` **get_spatial_tracking_state**\ (\ )
 
-The spatial tracking state for this tracker.
+Состояние пространственного отслеживания для этого трекера.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

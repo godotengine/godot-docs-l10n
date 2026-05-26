@@ -2359,7 +2359,7 @@ Sent when the window loses focus.
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_CLOSE_REQUEST** = ``4``
 
-Sent when the user has attempted to close the window (e.g. close button is pressed).
+Envoyé lorsque l'utilisateur a tenté de fermer la fenêtre (par exemple, le bouton de fermeture a été appuyé).
 
 .. _class_DisplayServer_constant_WINDOW_EVENT_GO_BACK_REQUEST:
 
@@ -3939,7 +3939,7 @@ Each filter string in the ``filters`` array should be formatted like this: ``*.p
 
 Callbacks have the following arguments: ``status: bool, selected_paths: PackedStringArray, selected_filter_index: int``. **On Android,** the third callback argument (``selected_filter_index``) is always ``0``.
 
-\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android (API level 29+).
+\ **Note:** This method is implemented if the display server has the :ref:`FEATURE_NATIVE_DIALOG_FILE<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG_FILE>` feature. Supported platforms include Linux (X11/Wayland), Windows, macOS, and Android.
 
 \ **Note:** ``current_directory`` might be ignored.
 
@@ -4192,9 +4192,9 @@ Returns the ID of the window at the specified screen ``position`` (in pixels). O
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_window_list**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_get_window_list>`
 
-Returns the list of Godot window IDs belonging to this process.
+Renvoie la liste des identifiants Godot de fenêtre appartenant au processus.
 
-\ **Note:** Native dialogs are not included in this list.
+\ **Remarque :** Les boites de dialogues natives ne sont pas incluses.
 
 .. rst-class:: classref-item-separator
 
@@ -5296,9 +5296,9 @@ Returns ``true`` if the window background can be made transparent. This method r
 
 :ref:`int<class_int>` **keyboard_get_current_layout**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_current_layout>`
 
-Returns active keyboard layout index.
+Renvoie l'index de la disposition du clavier actif.
 
-\ **Note:** This method is implemented on Linux (X11/Wayland), macOS, and Windows.
+\ **Note :** Cette méthode est implémentée sur Linux (X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -5338,9 +5338,9 @@ Convertit un clavier physique (US QWERTY) ``keycode`` vers l'étiquette localis�
 
 :ref:`int<class_int>` **keyboard_get_layout_count**\ (\ ) |const| :ref:`🔗<class_DisplayServer_method_keyboard_get_layout_count>`
 
-Returns the number of keyboard layouts.
+Renvoie le nombre de dispositions de clavier.
 
-\ **Note:** This method is implemented on Linux (X11/Wayland), macOS and Windows.
+\ **Note :** Cette méthode est implémentée sous Linux (X11/Wayland), macOS et Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -6360,7 +6360,7 @@ Returns the estimated window title bar size (including text and window buttons) 
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **window_get_vsync_mode**\ (\ window_id\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_DisplayServer_method_window_get_vsync_mode>`
 
-Returns the V-Sync mode of the given window.
+Renvoie le mode de V-Sync de la fenêtre donnée.
 
 .. rst-class:: classref-item-separator
 
@@ -6448,9 +6448,9 @@ Makes the window specified by ``window_id`` request attention, which is material
 
 |void| **window_set_color**\ (\ color\: :ref:`Color<class_Color>`\ ) :ref:`🔗<class_DisplayServer_method_window_set_color>`
 
-Sets the background color of the root window.
+Définit la couleur d'arrière-plan de la fenêtre racine.
 
-\ **Note:** This method is implemented only on Android.
+\ **Note :** Cette méthode n'est implémentée que sur Android.
 
 .. rst-class:: classref-item-separator
 

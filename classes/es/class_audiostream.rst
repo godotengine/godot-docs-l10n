@@ -131,9 +131,9 @@ Idealmente, el valor devuelto debería basarse en la frecuencia de muestreo de l
 
 :ref:`float<class_float>` **_get_bpm**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_bpm>`
 
-Overridable method. Should return the tempo of this audio stream, in beats per minute (BPM). Used by the engine to determine the position of every beat.
+Método que se puede sobrescribir. Debe devolver el tempo de este flujo de audio, en pulsos por minuto (BPM, siglas de Beats Per Minute). El motor lo utiliza para determinar la posición de cada pulso.
 
-Ideally, the returned value should be based off the stream's sample rate (:ref:`AudioStreamWAV.mix_rate<class_AudioStreamWAV_property_mix_rate>`, for example).
+Idealmente, el valor devuelto debería basarse en la frecuencia de muestreo del flujo (:ref:`AudioStreamWAV.mix_rate<class_AudioStreamWAV_property_mix_rate>`, por ejemplo).
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Ideally, the returned value should be based off the stream's sample rate (:ref:`
 
 :ref:`float<class_float>` **_get_length**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_length>`
 
-Override this method to customize the returned value of :ref:`get_length()<class_AudioStream_method_get_length>`. Should return the length of this audio stream, in seconds.
+Sobrescribe este método para personalizar el valor devuelto por :ref:`get_length()<class_AudioStream_method_get_length>`. Debe devolver la duración de este flujo de audio, en segundos.
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Override this method to customize the returned value of :ref:`get_length()<class
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **_get_parameter_list**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_parameter_list>`
 
-Return the controllable parameters of this stream. This array contains dictionaries with a property info description format (see :ref:`Object.get_property_list()<class_Object_method_get_property_list>`). Additionally, the default value for this parameter must be added tho each dictionary in "default_value" field.
+Devuelve los parámetros controlables de este flujo. Este array contiene diccionarios con una descripción de la propiedad en formato info (ver :ref:`Object.get_property_list()<class_Object_method_get_property_list>`). Además, el valor por defecto de cada parámetro debe añadirse a cada diccionario en el campo "default_value".
 
 .. rst-class:: classref-item-separator
 
@@ -181,9 +181,9 @@ Sobrescribe este método para proporcionar el nombre que aparecerá en el menú 
 
 :ref:`Dictionary<class_Dictionary>` **_get_tags**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__get_tags>`
 
-Override this method to customize the tags for this audio stream. Should return a :ref:`Dictionary<class_Dictionary>` of strings with the tag as the key and its content as the value.
+Sobrescribe este método para personalizar las etiquetas de este flujo de audio. Debe devolver un :ref:`Dictionary<class_Dictionary>` de cadenas, con la etiqueta como clave y su contenido como valor.
 
-Commonly used tags include ``title``, ``artist``, ``album``, ``tracknumber``, and ``date``.
+Las etiquetas más comunes incluyen ``title``, ``artist``, ``album``, ``tracknumber`` y ``date``.
 
 .. rst-class:: classref-item-separator
 
@@ -207,7 +207,7 @@ Sobrescribe este método para devolver ``true`` si esta secuencia tiene un bucle
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **_instantiate_playback**\ (\ ) |virtual| |required| |const| :ref:`🔗<class_AudioStream_private_method__instantiate_playback>`
 
-Override this method to customize the returned value of :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>`. Should return a new :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` created when the stream is played (such as by an :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`).
+Sobrescribe este método para personalizar el valor devuelto por :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>`. Debe devolver un nuevo :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` que se crea cuando el flujo se reproduce (por ejemplo, mediante un :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`).
 
 .. rst-class:: classref-item-separator
 
@@ -219,7 +219,7 @@ Override this method to customize the returned value of :ref:`instantiate_playba
 
 :ref:`bool<class_bool>` **_is_monophonic**\ (\ ) |virtual| |const| :ref:`🔗<class_AudioStream_private_method__is_monophonic>`
 
-Override this method to customize the returned value of :ref:`is_monophonic()<class_AudioStream_method_is_monophonic>`. Should return ``true`` if this audio stream only supports one channel.
+Sobrescribe este método para personalizar el valor devuelto por :ref:`is_monophonic()<class_AudioStream_method_is_monophonic>`. Debe devolver ``true`` si este flujo de audio solo admite un canal.
 
 .. rst-class:: classref-item-separator
 
@@ -233,7 +233,7 @@ Override this method to customize the returned value of :ref:`is_monophonic()<cl
 
 **Experimental:** Este método podría ser modificado o eliminado en versiones futuras.
 
-Returns if the current **AudioStream** can be used as a sample. Only static streams can be sampled.
+Devuelve si el **AudioStream** actual puede utilizarse como muestra. Solo los flujos estáticos pueden utilizarse como muestra.
 
 .. rst-class:: classref-item-separator
 
@@ -259,7 +259,7 @@ Genera un :ref:`AudioSample<class_AudioSample>` basado en la transmisión actual
 
 :ref:`float<class_float>` **get_length**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_get_length>`
 
-Returns the length of the audio stream in seconds. If this stream is an :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, returns the length of the last played stream. If this stream has an indefinite length (such as for :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` and :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`), returns ``0.0``.
+Devuelve la duración del flujo de audio en segundos. Si este flujo es un :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, devuelve la duración del último flujo reproducido. Si este flujo tiene una duración indefinida (como en :ref:`AudioStreamGenerator<class_AudioStreamGenerator>` y :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`), devuelve ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -271,7 +271,7 @@ Returns the length of the audio stream in seconds. If this stream is an :ref:`Au
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **instantiate_playback**\ (\ ) :ref:`🔗<class_AudioStream_method_instantiate_playback>`
 
-Returns a newly created :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` intended to play this audio stream. Useful for when you want to extend :ref:`_instantiate_playback()<class_AudioStream_private_method__instantiate_playback>` but call :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>` from an internally held AudioStream subresource. An example of this can be found in the source code for ``AudioStreamRandomPitch::instantiate_playback``.
+Devuelve un nuevo :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` creado para reproducir este flujo de audio. Resulta útil cuando se desea extender :ref:`_instantiate_playback()<class_AudioStream_private_method__instantiate_playback>`, pero llamando a :ref:`instantiate_playback()<class_AudioStream_method_instantiate_playback>` desde un subrecurso AudioStream mantenido internamente. Un ejemplo de esto puede encontrarse en el código fuente de ``AudioStreamRandomPitch::instantiate_playback``.
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ Devuelve ``true`` si la transmisión es una colección de otras transmisiones, `
 
 :ref:`bool<class_bool>` **is_monophonic**\ (\ ) |const| :ref:`🔗<class_AudioStream_method_is_monophonic>`
 
-Returns ``true`` if this audio stream only supports one channel (*monophony*), or ``false`` if the audio stream supports two or more channels (*polyphony*).
+Devuelve ``true`` si este flujo de audio solo admite un canal (*monofonía*), o ``false`` si el flujo de audio admite dos o más canales (*polifonía*).
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

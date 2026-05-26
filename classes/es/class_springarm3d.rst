@@ -21,7 +21,7 @@ Descripción
 Tutoriales
 --------------------
 
-- :doc:`Third-person camera with spring arm <../tutorials/3d/spring_arm>`
+- :doc:`Cámara en tercera persona con brazo de colisión (spring arm) <../tutorials/3d/spring_arm>`
 
 .. rst-class:: classref-reftable-group
 

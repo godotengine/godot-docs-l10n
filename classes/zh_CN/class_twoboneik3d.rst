@@ -7,16 +7,16 @@ TwoBoneIK3D
 
 **继承：** :ref:`IKModifier3D<class_IKModifier3D>` **<** :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Rotation based intersection of two circles inverse kinematics solver.
+基于旋转的两圆相交反向动力学求解器。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-This :ref:`IKModifier3D<class_IKModifier3D>` requires a pole target. It provides deterministic results by constructing a plane from each joint and pole target and finding the intersection of two circles (disks in 3D).
+该 :ref:`IKModifier3D<class_IKModifier3D>` 需要一个极点目标。它通过从每个关节和极点目标构建一个平面，并找到两个圆（3D 中的圆盘）的交点来提供确定性的结果。
 
-This IK can handle twist by setting the pole direction. If there are more than one bone between each set bone, their rotations are ignored, and the straight line connecting the root-middle and middle-end joints are treated as virtual bones.
+该 IK 可以通过设置极点方向来处理扭转。如果每组骨骼之间有多根骨骼，则忽略它们的旋转，并将连接根部中间关节和中间末端关节的直线视为虚拟骨骼。
 
 .. rst-class:: classref-reftable-group
 
@@ -133,7 +133,7 @@ This IK can handle twist by setting the pole direction. If there are more than o
 
 :ref:`int<class_int>` **get_end_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone>`
 
-Returns the end bone index.
+返回末端骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Returns the end bone index.
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_direction>`
 
-Returns the end bone's tail direction when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` 为 ``true`` 时，返回末端骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Returns the end bone's tail direction when :ref:`is_end_bone_extended()<class_Tw
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` 为 ``true`` 时，返回骨骼链的末端骨骼尾部长度。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`String<class_String>` **get_end_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_end_bone_name>`
 
-Returns the end bone name.
+返回末端骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Returns the end bone name.
 
 :ref:`int<class_int>` **get_middle_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_middle_bone>`
 
-Returns the middle bone index.
+返回中间骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Returns the middle bone index.
 
 :ref:`String<class_String>` **get_middle_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_middle_bone_name>`
 
-Returns the middle bone name.
+返回中间骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Returns the middle bone name.
 
 :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>` **get_pole_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_direction>`
 
-Returns the pole direction.
+返回极点方向。
 
 .. rst-class:: classref-item-separator
 
@@ -217,9 +217,9 @@ Returns the pole direction.
 
 :ref:`Vector3<class_Vector3>` **get_pole_direction_vector**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_direction_vector>`
 
-Returns the pole direction vector.
+返回极点方向向量。
 
-If :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` is :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`, this method returns ``Vector3(0, 0, 0)``.
+如果 :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` 为 :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`\ ，则该方法返回 ``Vector3(0, 0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -231,7 +231,7 @@ If :ref:`get_pole_direction()<class_TwoBoneIK3D_method_get_pole_direction>` is :
 
 :ref:`NodePath<class_NodePath>` **get_pole_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_pole_node>`
 
-Returns the pole target node that constructs a plane which the joints are all on and the pole is trying to direct.
+返回极点目标节点，该节点构建一个平面，所有关节都位于该平面上，并且极点试图指向该平面。
 
 .. rst-class:: classref-item-separator
 
@@ -243,7 +243,7 @@ Returns the pole target node that constructs a plane which the joints are all on
 
 :ref:`int<class_int>` **get_root_bone**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_root_bone>`
 
-Returns the root bone index.
+返回根骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +255,7 @@ Returns the root bone index.
 
 :ref:`String<class_String>` **get_root_bone_name**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_root_bone_name>`
 
-Returns the root bone name.
+返回根骨骼的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -267,7 +267,7 @@ Returns the root bone name.
 
 :ref:`NodePath<class_NodePath>` **get_target_node**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_get_target_node>`
 
-Returns the target node that the end bone is trying to reach.
+返回末端骨骼试图到达的目标节点。
 
 .. rst-class:: classref-item-separator
 
@@ -279,7 +279,7 @@ Returns the target node that the end bone is trying to reach.
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+如果末端骨骼被扩展形成尾部，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -291,7 +291,7 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 :ref:`bool<class_bool>` **is_using_virtual_end**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TwoBoneIK3D_method_is_using_virtual_end>`
 
-Returns ``true`` if the end bone is extended from the middle bone as a virtual bone.
+如果末端骨骼作为虚拟骨骼从中间骨骼延伸出来，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -303,7 +303,7 @@ Returns ``true`` if the end bone is extended from the middle bone as a virtual b
 
 |void| **set_end_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone>`
 
-Sets the end bone index.
+设置末端骨骼索引。
 
 .. rst-class:: classref-item-separator
 
@@ -315,7 +315,7 @@ Sets the end bone index.
 
 |void| **set_end_bone_direction**\ (\ index\: :ref:`int<class_int>`, bone_direction\: :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_direction>`
 
-Sets the end bone tail direction when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` 为 ``true`` 时，设置末端骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Sets the end bone tail direction when :ref:`is_end_bone_extended()<class_TwoBone
 
 |void| **set_end_bone_length**\ (\ index\: :ref:`int<class_int>`, length\: :ref:`float<class_float>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_length>`
 
-Sets the end bone tail length when :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_TwoBoneIK3D_method_is_end_bone_extended>` 为 ``true`` 时，设置末端骨骼的尾部长度。
 
 .. rst-class:: classref-item-separator
 
@@ -339,9 +339,9 @@ Sets the end bone tail length when :ref:`is_end_bone_extended()<class_TwoBoneIK3
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_end_bone_name>`
 
-Sets the end bone name.
+设置末端骨骼的名称。
 
-\ **Note:** The end bone must be a child of the middle bone.
+\ **注意：**\ 末端骨骼必须是中间骨骼的子级。
 
 .. rst-class:: classref-item-separator
 
@@ -353,7 +353,7 @@ Sets the end bone name.
 
 |void| **set_extend_end_bone**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_extend_end_bone>`
 
-If ``enabled`` is ``true``, the end bone is extended to have a tail.
+如果 ``enabled`` 为 ``true``\ ，则末端骨骼会延伸出一条尾巴。
 
 .. rst-class:: classref-item-separator
 
@@ -365,7 +365,7 @@ If ``enabled`` is ``true``, the end bone is extended to have a tail.
 
 |void| **set_middle_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_middle_bone>`
 
-Sets the middle bone index.
+设置中间骨骼的索引。
 
 .. rst-class:: classref-item-separator
 
@@ -377,9 +377,9 @@ Sets the middle bone index.
 
 |void| **set_middle_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_middle_bone_name>`
 
-Sets the middle bone name.
+设置中间骨骼的名称。
 
-\ **Note:** The middle bone must be a child of the root bone.
+\ **注意：**\ 中间骨骼必须是根骨骼的子级。
 
 .. rst-class:: classref-item-separator
 
@@ -391,13 +391,13 @@ Sets the middle bone name.
 
 |void| **set_pole_direction**\ (\ index\: :ref:`int<class_int>`, direction\: :ref:`SecondaryDirection<enum_SkeletonModifier3D_SecondaryDirection>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_direction>`
 
-Sets the pole direction.
+设置极点方向。
 
-The pole is on the middle bone and will direct to the pole target.
+极点位于中间骨骼上，并指向极点目标。
 
-The rotation axis is a vector that is orthogonal to this and the forward vector.
+旋转轴是一个与该向量和前向向量正交的向量。
 
-\ **Note:** The pole direction and the forward vector shouldn't be colinear to avoid unintended rotation.
+\ **注意：**\ 极点方向和前向向量不应共线，以避免意外旋转。
 
 .. rst-class:: classref-item-separator
 
@@ -409,11 +409,11 @@ The rotation axis is a vector that is orthogonal to this and the forward vector.
 
 |void| **set_pole_direction_vector**\ (\ index\: :ref:`int<class_int>`, vector\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_direction_vector>`
 
-Sets the pole direction vector.
+设置极点方向向量。
 
-This vector is normalized by an internal process.
+该向量会经过内部处理进行归一化。
 
-If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>`.
+如果向量长度为 ``0``\ ，则被视为与 :ref:`SkeletonModifier3D.SECONDARY_DIRECTION_NONE<class_SkeletonModifier3D_constant_SECONDARY_DIRECTION_NONE>` 同义。
 
 .. rst-class:: classref-item-separator
 
@@ -425,7 +425,7 @@ If the vector length is ``0``, it is considered synonymous with :ref:`SkeletonMo
 
 |void| **set_pole_node**\ (\ index\: :ref:`int<class_int>`, pole_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_pole_node>`
 
-Sets the pole target node that constructs a plane which the joints are all on and the pole is trying to direct.
+设置极点目标节点，该节点构建一个平面，所有关节都位于该平面上，极点试图指向该平面。
 
 .. rst-class:: classref-item-separator
 
@@ -437,7 +437,7 @@ Sets the pole target node that constructs a plane which the joints are all on an
 
 |void| **set_root_bone**\ (\ index\: :ref:`int<class_int>`, bone\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_root_bone>`
 
-Sets the root bone index.
+设置根骨骼索引。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Sets the root bone index.
 
 |void| **set_root_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_root_bone_name>`
 
-Sets the root bone name.
+设置根骨骼名称。
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Sets the root bone name.
 
 |void| **set_target_node**\ (\ index\: :ref:`int<class_int>`, target_node\: :ref:`NodePath<class_NodePath>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_target_node>`
 
-Sets the target node that the end bone is trying to reach.
+设置末端骨骼试图到达的目标节点。
 
 .. rst-class:: classref-item-separator
 
@@ -473,7 +473,7 @@ Sets the target node that the end bone is trying to reach.
 
 |void| **set_use_virtual_end**\ (\ index\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_TwoBoneIK3D_method_set_use_virtual_end>`
 
-If ``enabled`` is ``true``, the end bone is extended from the middle bone as a virtual bone.
+如果 ``enabled`` 为 ``true``\ ，则末端骨骼将从中间骨骼延伸为虚拟骨骼。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

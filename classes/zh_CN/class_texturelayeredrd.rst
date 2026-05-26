@@ -16,16 +16,16 @@ TextureLayeredRD
 描述
 ----
 
-Base class for :ref:`Texture2DArrayRD<class_Texture2DArrayRD>`, :ref:`TextureCubemapRD<class_TextureCubemapRD>` and :ref:`TextureCubemapArrayRD<class_TextureCubemapArrayRD>`. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types.
+:ref:`Texture2DArrayRD<class_Texture2DArrayRD>`\ 、\ :ref:`TextureCubemapRD<class_TextureCubemapRD>` 和 :ref:`TextureCubemapArrayRD<class_TextureCubemapArrayRD>` 的基类。不能直接使用，但包含了访问派生资源类型所需的所有函数。
 
-\ **Note:** **TextureLayeredRD** is intended for low-level usage with :ref:`RenderingDevice<class_RenderingDevice>`. For most use cases, use :ref:`TextureLayered<class_TextureLayered>` instead.
+\ **注意：**\ **TextureLayeredRD** 旨在用于 :ref:`RenderingDevice<class_RenderingDevice>` 的底层操作。对于大多数用例，请改用 :ref:`TextureLayered<class_TextureLayered>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 教程
 ----
 
-- `Compute Texture demo <https://godotengine.org/asset-library/asset/2764>`__
+- `计算纹理演示 <https://godotengine.org/asset-library/asset/2764>`__
 
 .. rst-class:: classref-reftable-group
 

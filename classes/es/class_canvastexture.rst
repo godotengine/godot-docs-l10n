@@ -7,16 +7,16 @@ CanvasTexture
 
 **Hereda:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Texture with optional normal and specular maps for use in 2D rendering.
+Textura con mapas normales y especulares opcionales para su uso en renderizado 2D.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-**CanvasTexture** is an alternative to :ref:`ImageTexture<class_ImageTexture>` for 2D rendering. It allows using normal maps and specular maps in any node that inherits from :ref:`CanvasItem<class_CanvasItem>`. **CanvasTexture** also allows overriding the texture's filter and repeat mode independently of the node's properties (or the project settings).
+**CanvasTexture** es una alternativa a :ref:`ImageTexture<class_ImageTexture>` para renderizado 2D. Permite usar mapas normales y mapas especulares en cualquier nodo que herede de :ref:`CanvasItem<class_CanvasItem>`. **CanvasTexture** también permite sobrescribir el modo de filtro y repetición de la textura independientemente de las propiedades del nodo (o project settings).
 
-\ **Note:** **CanvasTexture** cannot be used in 3D. It will not display correctly when applied to any :ref:`VisualInstance3D<class_VisualInstance3D>`, such as :ref:`Sprite3D<class_Sprite3D>` or :ref:`Decal<class_Decal>`. For physically-based materials in 3D, use :ref:`BaseMaterial3D<class_BaseMaterial3D>` instead.
+\ **Nota:** **CanvasTexture** no se puede usar en 3D. No se mostrará correctamente al aplicarse a cualquier :ref:`VisualInstance3D<class_VisualInstance3D>`, como :ref:`Sprite3D<class_Sprite3D>` o :ref:`Decal<class_Decal>`. Para materiales basados en física en 3D, usa :ref:`BaseMaterial3D<class_BaseMaterial3D>` en su lugar.
 
 .. rst-class:: classref-introduction-group
 
@@ -71,7 +71,7 @@ Descripciones de Propiedades
 - |void| **set_diffuse_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_diffuse_texture**\ (\ )
 
-The diffuse (color) texture to use. This is the main texture you want to set in most cases.
+La textura difusa (color) a usar. Esta es la textura principal que querrás establecer en la mayoría de los casos.
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ The normal map texture to use. Only has a visible effect if :ref:`Light2D<class_
 - |void| **set_specular_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_specular_color**\ (\ )
 
-The multiplier for specular reflection colors. The :ref:`Light2D<class_Light2D>`'s color is also taken into account when determining the reflection color. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+El multiplicador para los colores de reflexión especular. El color de :ref:`Light2D<class_Light2D>` también se tiene en cuenta al determinar el color de reflexión. Solo tiene un effect visible si los :ref:`Light2D<class_Light2D>` afectan a este **CanvasTexture**.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ The multiplier for specular reflection colors. The :ref:`Light2D<class_Light2D>`
 - |void| **set_specular_shininess**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_specular_shininess**\ (\ )
 
-The specular exponent for :ref:`Light2D<class_Light2D>` specular reflections. Higher values result in a more glossy/"wet" look, with reflections becoming more localized and less visible overall. The default value of ``1.0`` disables specular reflections entirely. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+El exponente especular para los reflejos especulares de :ref:`Light2D<class_Light2D>`. Los values más altos resultan en un aspecto más lustroso/"húmedo", con los reflejos volviéndose más localizados y menos visibles en general. El value predeterminado de ``1.0`` desactiva los reflejos especulares por completo. Solo tiene un effect visible si los :ref:`Light2D<class_Light2D>` están afectando a este **CanvasTexture**.
 
 .. rst-class:: classref-item-separator
 
@@ -141,7 +141,7 @@ The specular exponent for :ref:`Light2D<class_Light2D>` specular reflections. Hi
 - |void| **set_specular_texture**\ (\ value\: :ref:`Texture2D<class_Texture2D>`\ )
 - :ref:`Texture2D<class_Texture2D>` **get_specular_texture**\ (\ )
 
-The specular map to use for :ref:`Light2D<class_Light2D>` specular reflections. This should be a grayscale or colored texture, with brighter areas resulting in a higher :ref:`specular_shininess<class_CanvasTexture_property_specular_shininess>` value. Using a colored :ref:`specular_texture<class_CanvasTexture_property_specular_texture>` allows controlling specular shininess on a per-channel basis. Only has a visible effect if :ref:`Light2D<class_Light2D>`\ s are affecting this **CanvasTexture**.
+El mapa especular a usar para los reflejos especulares de :ref:`Light2D<class_Light2D>`. Debe ser una textura en escala de grises o coloreada, con áreas más brillantes que resulten en un :ref:`specular_shininess<class_CanvasTexture_property_specular_shininess>` value más alto. Usar un :ref:`specular_texture<class_CanvasTexture_property_specular_texture>` coloreado permite controlar el brillo especular por canal. Solo tiene un effect visible si los :ref:`Light2D<class_Light2D>` están afectando a este **CanvasTexture**.
 
 .. rst-class:: classref-item-separator
 

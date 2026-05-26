@@ -151,7 +151,7 @@ BitMap
 
 |void| **grow_mask**\ (\ pixels\: :ref:`int<class_int>`, rect\: :ref:`Rect2i<class_Rect2i>`\ ) :ref:`🔗<class_BitMap_method_grow_mask>`
 
-对位图进行形态学膨胀或腐蚀操作。如果 ``pixels`` 为正，则对位图执行膨胀。如果 ``pixels`` 为负，则对位图执行腐蚀。\ ``rect`` 定义进行形态学操作的区域。位于 ``rect``] 之外的像素不会被 :ref:`grow_mask()<class_BitMap_method_grow_mask>` 影响。
+对位图进行形态学膨胀或腐蚀操作。如果 ``pixels`` 为正，则对位图执行膨胀。如果 ``pixels`` 为负，则对位图执行腐蚀。\ ``rect`` 定义进行形态学操作的区域。位于 ``rect`` 之外的像素不会被 :ref:`grow_mask()<class_BitMap_method_grow_mask>` 影响。
 
 .. rst-class:: classref-item-separator
 

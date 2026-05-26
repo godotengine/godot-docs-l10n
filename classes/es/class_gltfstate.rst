@@ -334,7 +334,7 @@ La ruta de la carpeta asociada con estos datos glTF. Se utiliza para encontrar o
 - |void| **set_copyright**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_copyright**\ (\ )
 
-La string de copyright en la cabecera del activo del archivo glTF. Esto se establece durante la importación si está presente y en la exportación si no está vacío. Consulta la documentación de la cabecera de activos glTF para obtener más información.
+La string de copyright en la cabecera del activo del archivo glTF. Esto se establece durante la importación si está presente y en la exportación si no está vacío. Véase la documentación de la cabecera de activos glTF para obtener más información.
 
 .. rst-class:: classref-item-separator
 

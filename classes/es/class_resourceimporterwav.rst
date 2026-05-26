@@ -176,7 +176,7 @@ Generalmente no se recomienda habilitar esto, ya que la cuantificación de 8 bit
 
 Si se establece en un valor mayor que ``0``, fuerza a que la frecuencia de muestreo del audio se reduzca a un valor inferior o igual al valor especificado en :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>`.
 
-Esto puede disminuir notablemente el tamaño del archivo en ciertos sonidos, sin afectar la calidad dependiendo del contenido real del sonido. Consulta `Buenas prácticas <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__ para obtener más información.
+Esto puede disminuir notablemente el tamaño del archivo en ciertos sonidos, sin afectar la calidad dependiendo del contenido real del sonido. Véase `Buenas prácticas <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__ para obtener más información.
 
 .. rst-class:: classref-item-separator
 

@@ -1381,7 +1381,7 @@ enum **AreaSpaceOverrideMode**: :ref:`🔗<enum_PhysicsServer3D_AreaSpaceOverrid
 
 :ref:`AreaSpaceOverrideMode<enum_PhysicsServer3D_AreaSpaceOverrideMode>` **AREA_SPACE_OVERRIDE_DISABLED** = ``0``
 
-Esta zona no afecta a la gravedad/humedad. Estas son generalmente áreas que existen sólo para detectar colisiones, y objetos que entran o salen de ellas.
+Esta área no afecta a la gravedad/humedad. Estas son generalmente áreas que existen sólo para detectar colisiones, y objetos que entran o salen de ellas.
 
 .. _class_PhysicsServer3D_constant_AREA_SPACE_OVERRIDE_COMBINE:
 
@@ -1862,7 +1862,7 @@ Descripciones de Métodos
 
 |void| **area_add_shape**\ (\ area\: :ref:`RID<class_RID>`, shape\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>` = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0), disabled\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PhysicsServer3D_method_area_add_shape>`
 
-Añade una forma a la zona, junto con una matriz de transformación. Las formas suelen estar referenciadas por su índice, por lo que se debe rastrear qué forma tiene un índice determinado.
+Añade una forma al área, junto con una matriz de transformación. Las formas suelen estar referenciadas por su índice, por lo que se debe rastrear qué forma tiene un índice determinado.
 
 .. rst-class:: classref-item-separator
 
@@ -1996,7 +1996,7 @@ Devuelve la matriz de transformación de una forma dentro de un área.
 
 :ref:`RID<class_RID>` **area_get_space**\ (\ area\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_area_get_space>`
 
-Devuelve el espacio asignado a la zona.
+Devuelve el espacio asignado al área.
 
 .. rst-class:: classref-item-separator
 
@@ -2180,7 +2180,7 @@ Establece la matriz de transformación para la forma de un área.
 
 |void| **area_set_space**\ (\ area\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_area_set_space>`
 
-Asigna un espacio a la zona.
+Asigna un espacio al área.
 
 .. rst-class:: classref-item-separator
 

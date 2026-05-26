@@ -14,9 +14,9 @@ Instancia consultable de un :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectS
 Descripción
 ----------------------
 
-The runtime part of an :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectSpectrumAnalyzer>`, which can be used to query the magnitude of a frequency range on its host bus.
+La parte en tiempo de ejecución de un :ref:`AudioEffectSpectrumAnalyzer<class_AudioEffectSpectrumAnalyzer>`, que puede utilizarse para consultar la magnitud de un rango de frecuencias en su bus anfitrión.
 
-An instance of this class can be obtained with :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
+Se puede obtener una instancia de esta clase mediante :ref:`AudioServer.get_bus_effect_instance()<class_AudioServer_method_get_bus_effect_instance>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,9 +83,9 @@ Descripciones de Métodos
 
 :ref:`Vector2<class_Vector2>` **get_magnitude_for_frequency_range**\ (\ from_hz\: :ref:`float<class_float>`, to_hz\: :ref:`float<class_float>`, mode\: :ref:`MagnitudeMode<enum_AudioEffectSpectrumAnalyzerInstance_MagnitudeMode>` = 1\ ) |const| :ref:`🔗<class_AudioEffectSpectrumAnalyzerInstance_method_get_magnitude_for_frequency_range>`
 
-Returns the magnitude of the frequencies from ``from_hz`` to ``to_hz`` in linear energy as a Vector2. The ``x`` component of the return value represents the left stereo channel, and ``y`` represents the right channel.
+Devuelve la magnitud de las frecuencias comprendidas entre ``from_hz`` y ``to_hz`` en energía lineal, como un Vector2. El componente ``x`` del valor devuelto representa el canal estéreo izquierdo, e ``y`` representa el canal derecho.
 
-\ ``mode`` determines how the frequency range will be processed.
+\ ``mode`` determina cómo se procesará el rango de frecuencias.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

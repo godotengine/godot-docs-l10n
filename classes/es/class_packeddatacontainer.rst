@@ -9,7 +9,7 @@ PackedDataContainer
 
 **Hereda:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Efficiently packs and serializes :ref:`Array<class_Array>` or :ref:`Dictionary<class_Dictionary>`.
+Empaqueta y serializa de forma eficiente un :ref:`Array<class_Array>` o un :ref:`Dictionary<class_Dictionary>`.
 
 .. rst-class:: classref-introduction-group
 

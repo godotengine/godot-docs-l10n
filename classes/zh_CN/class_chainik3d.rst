@@ -9,14 +9,14 @@ ChainIK3D
 
 **派生：** :ref:`IterateIK3D<class_IterateIK3D>`, :ref:`SplineIK3D<class_SplineIK3D>`
 
-A :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` to apply inverse kinematics to bone chains containing an arbitrary number of bones.
+:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 用于对包含任意数量骨骼的骨骼链应用反向动力学。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatically generates a joint list from the bones between the root bone and the end bone.
+:ref:`SkeletonModifier3D<class_SkeletonModifier3D>` 的基类，可以自动生成根骨骼和末端骨骼之间所有骨骼的关节列表。
 
 .. rst-class:: classref-reftable-group
 
@@ -89,7 +89,7 @@ Base class of :ref:`SkeletonModifier3D<class_SkeletonModifier3D>` that automatic
 
 :ref:`BoneDirection<enum_SkeletonModifier3D_BoneDirection>` **get_end_bone_direction**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_direction>`
 
-Returns the tail direction of the end bone of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` 为 ``true`` 时，返回骨骼链末端骨骼的尾部方向。
 
 .. rst-class:: classref-item-separator
 
@@ -101,7 +101,7 @@ Returns the tail direction of the end bone of the bone chain when :ref:`is_end_b
 
 :ref:`float<class_float>` **get_end_bone_length**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_get_end_bone_length>`
 
-Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` is ``true``.
+当 :ref:`is_end_bone_extended()<class_ChainIK3D_method_is_end_bone_extended>` 为 ``true`` 时，返回骨骼链的末端骨骼尾部长度。
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Returns the end bone tail length of the bone chain when :ref:`is_end_bone_extend
 
 :ref:`bool<class_bool>` **is_end_bone_extended**\ (\ index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_ChainIK3D_method_is_end_bone_extended>`
 
-Returns ``true`` if the end bone is extended to have a tail.
+如果末端骨骼被扩展形成尾部，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -233,9 +233,9 @@ Returns ``true`` if the end bone is extended to have a tail.
 
 |void| **set_end_bone_name**\ (\ index\: :ref:`int<class_int>`, bone_name\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ChainIK3D_method_set_end_bone_name>`
 
-Sets the end bone name of the bone chain.
+设置骨骼链的末端骨骼名称。
 
-\ **Note:** The end bone must be the root bone or a child of the root bone. If they are the same, the tail must be extended by :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` to modify the bone.
+\ **注意：** 末端骨骼必须是根骨骼或根骨骼的子骨骼。如果相同，则必须通过 :ref:`set_extend_end_bone()<class_ChainIK3D_method_set_extend_end_bone>` 扩展尾部，以修改该骨骼。
 
 .. rst-class:: classref-item-separator
 

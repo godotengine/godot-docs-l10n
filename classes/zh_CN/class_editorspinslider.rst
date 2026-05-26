@@ -148,7 +148,7 @@ enum **ControlState**: :ref:`🔗<enum_EditorSpinSlider_ControlState>`
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_DEFAULT** = ``0``
 
-The type of control used will depend on the value of :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`. Up-down arrows if ``true``, a slider if ``false``.
+使用的控件类型取决于 :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` 的值。如果为 ``true``\ ，则使用上下箭头；如果为 ``false``\ ，则使用滑杆。
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER:
 
@@ -156,7 +156,7 @@ The type of control used will depend on the value of :ref:`editing_integer<class
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_PREFER_SLIDER** = ``1``
 
-A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>` is enabled.
+即使启用了 :ref:`editing_integer<class_EditorSpinSlider_property_editing_integer>`\ ，也会始终使用滑杆。
 
 .. _class_EditorSpinSlider_constant_CONTROL_STATE_HIDE:
 
@@ -164,7 +164,7 @@ A slider will always be used, even if :ref:`editing_integer<class_EditorSpinSlid
 
 :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **CONTROL_STATE_HIDE** = ``2``
 
-Neither the up-down arrows nor the slider will be shown.
+向上向下箭头和滑杆都不会显示。
 
 .. rst-class:: classref-section-separator
 
@@ -186,7 +186,7 @@ Neither the up-down arrows nor the slider will be shown.
 - |void| **set_control_state**\ (\ value\: :ref:`ControlState<enum_EditorSpinSlider_ControlState>`\ )
 - :ref:`ControlState<enum_EditorSpinSlider_ControlState>` **get_control_state**\ (\ )
 
-The state in which the control used to manipulate the value will be.
+用于操纵值的控件将处于的状态。
 
 .. rst-class:: classref-item-separator
 
@@ -203,7 +203,7 @@ The state in which the control used to manipulate the value will be.
 - |void| **set_editing_integer**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_editing_integer**\ (\ )
 
-If ``true``, the **EditorSpinSlider** is considered to be editing an integer value. If ``false``, the **EditorSpinSlider** is considered to be editing a floating-point value. This is used to determine whether a slider should be drawn by default. The slider is only drawn for floats; integers use up-down arrows similar to :ref:`SpinBox<class_SpinBox>` instead, unless :ref:`control_state<class_EditorSpinSlider_property_control_state>` is set to :ref:`CONTROL_STATE_PREFER_SLIDER<class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER>`. It will also use :ref:`EditorSettings.interface/inspector/integer_drag_speed<class_EditorSettings_property_interface/inspector/integer_drag_speed>` instead of :ref:`EditorSettings.interface/inspector/float_drag_speed<class_EditorSettings_property_interface/inspector/float_drag_speed>` if the slider is available.
+如果为 ``true``\ ，则 **EditorSpinSlider** 会认为正在编辑整数值。如果为 ``false``\ ，则 **EditorSpinSlider** 会认为正在编辑浮点数值。默认用于确定是否绘制滑杆。只有浮点数才会绘制滑杆；整数使用的是类似于 :ref:`SpinBox<class_SpinBox>` 的上下箭头，除非 :ref:`control_state<class_EditorSpinSlider_property_control_state>` 被设置为 :ref:`CONTROL_STATE_PREFER_SLIDER<class_EditorSpinSlider_constant_CONTROL_STATE_PREFER_SLIDER>`\ 。如果滑杆可用，它还将使用 :ref:`EditorSettings.interface/inspector/integer_drag_speed<class_EditorSettings_property_interface/inspector/integer_drag_speed>` 而非 :ref:`EditorSettings.interface/inspector/float_drag_speed<class_EditorSettings_property_interface/inspector/float_drag_speed>`\ 。
 
 .. rst-class:: classref-item-separator
 

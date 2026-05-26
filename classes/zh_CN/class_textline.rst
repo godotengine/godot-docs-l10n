@@ -329,7 +329,7 @@ TextLine
 
 :ref:`TextLine<class_TextLine>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextLine_method_duplicate>`
 
-Duplicates this **TextLine**.
+复制该 **TextLine**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -461,7 +461,7 @@ Duplicates this **TextLine**.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextLine_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this line.
+如果该行中嵌入了具有 ``key`` 的对象，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 

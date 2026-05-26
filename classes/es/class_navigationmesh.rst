@@ -144,7 +144,7 @@ Watershed partitioning. Generally the best choice if you precompute the navigati
 
 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **SAMPLE_PARTITION_MONOTONE** = ``1``
 
-Monotone partitioning. Use this if you want fast navigation mesh generation.
+Partición monótona. Usa esta si quieres una generación rápida de la malla de navegación.
 
 .. _class_NavigationMesh_constant_SAMPLE_PARTITION_LAYERS:
 
@@ -152,7 +152,7 @@ Monotone partitioning. Use this if you want fast navigation mesh generation.
 
 :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **SAMPLE_PARTITION_LAYERS** = ``2``
 
-Layer partitioning. Good choice to use for tiled navigation mesh with medium and small sized tiles.
+Partición por capas. Buena opción para usar en mallas de navegación con tiles de tamaño mediano y pequeño.
 
 .. _class_NavigationMesh_constant_SAMPLE_PARTITION_MAX:
 
@@ -285,9 +285,9 @@ La altura mínima del piso al techo que aún permitirá que el área del piso se
 - |void| **set_agent_max_climb**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_max_climb**\ (\ )
 
-The minimum ledge height that is considered to still be traversable.
+La altura mínima del borde que se considera aún transitable.
 
-\ **Note:** While baking, this value will be rounded down to the nearest multiple of :ref:`cell_height<class_NavigationMesh_property_cell_height>`.
+\ **Nota:** Durante el baking, este valor se redondeará al múltiplo más cercano de :ref:`cell_height<class_NavigationMesh_property_cell_height>`.
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +304,7 @@ The minimum ledge height that is considered to still be traversable.
 - |void| **set_agent_max_slope**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_agent_max_slope**\ (\ )
 
-The maximum slope that is considered walkable, in degrees.
+La pendiente máxima que se considera transitable, en grados.
 
 .. rst-class:: classref-item-separator
 
@@ -342,11 +342,11 @@ The distance to erode/shrink the walkable area of the heightfield away from obst
 - |void| **set_border_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_border_size**\ (\ )
 
-The size of the non-navigable border around the bake bounding area.
+El tamaño del borde no navegable alrededor del área de delimitación de baking.
 
-In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` and a :ref:`edge_max_error<class_NavigationMesh_property_edge_max_error>` value at ``1.0`` or below the border size can be used to bake tile aligned navigation meshes without the tile edges being shrunk by :ref:`agent_radius<class_NavigationMesh_property_agent_radius>`.
+En conjunto con el :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` y un valor :ref:`edge_max_error<class_NavigationMesh_property_edge_max_error>` de ``1.0`` o inferior, el tamaño del borde se puede usar para hornear mallas de navegación alineadas con tiles sin que los bordes de los tiles se encojan por :ref:`agent_radius<class_NavigationMesh_property_agent_radius>`.
 
-\ **Note:** If this value is not ``0.0``, it will be rounded up to the nearest multiple of :ref:`cell_size<class_NavigationMesh_property_cell_size>` during baking.
+\ **Nota:** Si este valor no es ``0.0``, se redondeará al múltiplo más cercano de :ref:`cell_size<class_NavigationMesh_property_cell_size>` durante el baking.
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ In conjunction with the :ref:`filter_baking_aabb<class_NavigationMesh_property_f
 - |void| **set_cell_height**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_height**\ (\ )
 
-The cell height used to rasterize the navigation mesh vertices on the Y axis. Must match with the cell height on the navigation map.
+La altura de celda utilizada para rasterizar los vértices de la malla de navegación en el eje Y. Debe coincidir con la altura de celda en el mapa de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ The cell height used to rasterize the navigation mesh vertices on the Y axis. Mu
 - |void| **set_cell_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_cell_size**\ (\ )
 
-The cell size used to rasterize the navigation mesh vertices on the XZ plane. Must match with the cell size on the navigation map.
+El tamaño de celda utilizado para rasterizar los vértices de la malla de navegación en el plano XZ. Debe coincidir con el tamaño de celda en el mapa de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ The cell size used to rasterize the navigation mesh vertices on the XZ plane. Mu
 - |void| **set_detail_sample_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_detail_sample_distance**\ (\ )
 
-The sampling distance to use when generating the detail mesh, in cell unit.
+La distancia de muestreo a usar al generar la malla de detalle, en unidades de celda.
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ The sampling distance to use when generating the detail mesh, in cell unit.
 - |void| **set_detail_sample_max_error**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_detail_sample_max_error**\ (\ )
 
-The maximum distance the detail mesh surface should deviate from heightfield, in cell unit.
+La distancia máxima que la superficie de la malla de detalle debe desviarse del campo de altura, en unidades de celda.
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ The maximum distance the detail mesh surface should deviate from heightfield, in
 - |void| **set_edge_max_error**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_edge_max_error**\ (\ )
 
-The maximum distance a simplified contour's border edges should deviate the original raw contour.
+La distancia máxima que los bordes del contorno simplificado deben desviarse del contorno original sin procesar.
 
 .. rst-class:: classref-item-separator
 
@@ -448,9 +448,9 @@ The maximum distance a simplified contour's border edges should deviate the orig
 - |void| **set_edge_max_length**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_edge_max_length**\ (\ )
 
-The maximum allowed length for contour edges along the border of the mesh. A value of ``0.0`` disables this feature.
+La longitud máxima permitida para los bordes del contorno a lo largo del borde de la malla. Un valor de ``0.0`` desactiva esta característica. 
 
-\ **Note:** While baking, this value will be rounded up to the nearest multiple of :ref:`cell_size<class_NavigationMesh_property_cell_size>`.
+\ **Nota:** Durante el baking, este valor se redondeará al múltiplo más cercano de :ref:`cell_size<class_NavigationMesh_property_cell_size>`.
 
 .. rst-class:: classref-item-separator
 
@@ -467,7 +467,7 @@ The maximum allowed length for contour edges along the border of the mesh. A val
 - |void| **set_filter_baking_aabb**\ (\ value\: :ref:`AABB<class_AABB>`\ )
 - :ref:`AABB<class_AABB>` **get_filter_baking_aabb**\ (\ )
 
-If the baking :ref:`AABB<class_AABB>` has a volume the navigation mesh baking will be restricted to its enclosing area.
+Si el volumen del :ref:`AABB<class_AABB>` de baking es el de una caja, el baking de la malla de navegación estará restringido a su área contenida.
 
 .. rst-class:: classref-item-separator
 
@@ -484,7 +484,7 @@ If the baking :ref:`AABB<class_AABB>` has a volume the navigation mesh baking wi
 - |void| **set_filter_baking_aabb_offset**\ (\ value\: :ref:`Vector3<class_Vector3>`\ )
 - :ref:`Vector3<class_Vector3>` **get_filter_baking_aabb_offset**\ (\ )
 
-The position offset applied to the :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` :ref:`AABB<class_AABB>`.
+El desplazamiento de posición aplicado al :ref:`filter_baking_aabb<class_NavigationMesh_property_filter_baking_aabb>` :ref:`AABB<class_AABB>`.
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +518,7 @@ If ``true``, marks spans that are ledges as non-walkable.
 - |void| **set_filter_low_hanging_obstacles**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_filter_low_hanging_obstacles**\ (\ )
 
-If ``true``, marks non-walkable spans as walkable if their maximum is within :ref:`agent_max_climb<class_NavigationMesh_property_agent_max_climb>` of a walkable neighbor.
+Si es ``true``, marca los span no transitables como transitables si sus máximos están dentro de :ref:`agent_max_climb<class_NavigationMesh_property_agent_max_climb>` de un vecino transitable.
 
 .. rst-class:: classref-item-separator
 
@@ -552,9 +552,9 @@ If ``true``, marks walkable spans as not walkable if the clearance above the spa
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers to scan for static colliders.
+Las capas físicas a escanear en busca de colliders estáticos.
 
-Only used when :ref:`geometry_parsed_geometry_type<class_NavigationMesh_property_geometry_parsed_geometry_type>` is :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>` or :ref:`PARSED_GEOMETRY_BOTH<class_NavigationMesh_constant_PARSED_GEOMETRY_BOTH>`.
+Solo se usa cuando :ref:`geometry_parsed_geometry_type<class_NavigationMesh_property_geometry_parsed_geometry_type>` es :ref:`PARSED_GEOMETRY_STATIC_COLLIDERS<class_NavigationMesh_constant_PARSED_GEOMETRY_STATIC_COLLIDERS>` o :ref:`PARSED_GEOMETRY_BOTH<class_NavigationMesh_constant_PARSED_GEOMETRY_BOTH>`.
 
 .. rst-class:: classref-item-separator
 
@@ -571,7 +571,7 @@ Only used when :ref:`geometry_parsed_geometry_type<class_NavigationMesh_property
 - |void| **set_parsed_geometry_type**\ (\ value\: :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>`\ )
 - :ref:`ParsedGeometryType<enum_NavigationMesh_ParsedGeometryType>` **get_parsed_geometry_type**\ (\ )
 
-Determines which type of nodes will be parsed as geometry.
+Determina qué tipo de nodos se analizarán como geometría.
 
 .. rst-class:: classref-item-separator
 
@@ -588,7 +588,7 @@ Determines which type of nodes will be parsed as geometry.
 - |void| **set_source_geometry_mode**\ (\ value\: :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>`\ )
 - :ref:`SourceGeometryMode<enum_NavigationMesh_SourceGeometryMode>` **get_source_geometry_mode**\ (\ )
 
-The source of the geometry used when baking.
+La fuente de la geometría utilizada al hornear.
 
 .. rst-class:: classref-item-separator
 
@@ -605,9 +605,9 @@ The source of the geometry used when baking.
 - |void| **set_source_group_name**\ (\ value\: :ref:`StringName<class_StringName>`\ )
 - :ref:`StringName<class_StringName>` **get_source_group_name**\ (\ )
 
-The name of the group to scan for geometry.
+El nombre del grupo a escanear en busca de geometría.
 
-Only used when :ref:`geometry_source_geometry_mode<class_NavigationMesh_property_geometry_source_geometry_mode>` is :ref:`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN>` or :ref:`SOURCE_GEOMETRY_GROUPS_EXPLICIT<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT>`.
+Solo se usa cuando :ref:`geometry_source_geometry_mode<class_NavigationMesh_property_geometry_source_geometry_mode>` es :ref:`SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_WITH_CHILDREN>` o :ref:`SOURCE_GEOMETRY_GROUPS_EXPLICIT<class_NavigationMesh_constant_SOURCE_GEOMETRY_GROUPS_EXPLICIT>`.
 
 .. rst-class:: classref-item-separator
 
@@ -624,9 +624,9 @@ Only used when :ref:`geometry_source_geometry_mode<class_NavigationMesh_property
 - |void| **set_region_merge_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_region_merge_size**\ (\ )
 
-Any regions with a size smaller than this will be merged with larger regions if possible.
+Cualquier región con un tamaño menor que este se fusionará con regiones más grandes si es posible.
 
-\ **Note:** This value will be squared to calculate the number of cells. For example, a value of 20 will set the number of cells to 400.
+\ **Nota:** Este valor se elevará al cuadrado para calcular el número de celdas. Por ejemplo, un valor de 20 establecerá el número de celdas en 400.
 
 .. rst-class:: classref-item-separator
 
@@ -643,9 +643,9 @@ Any regions with a size smaller than this will be merged with larger regions if 
 - |void| **set_region_min_size**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_region_min_size**\ (\ )
 
-The minimum size of a region for it to be created.
+El tamaño mínimo de una región para que sea creada.
 
-\ **Note:** This value will be squared to calculate the minimum number of cells allowed to form isolated island areas. For example, a value of 8 will set the number of cells to 64.
+\ **Nota:** Este valor se elevará al cuadrado para calcular el número mínimo de celdas permitidas para formar áreas de islas aisladas. Por ejemplo, un valor de 8 establecerá el número de celdas en 64.
 
 .. rst-class:: classref-item-separator
 
@@ -662,7 +662,7 @@ The minimum size of a region for it to be created.
 - |void| **set_sample_partition_type**\ (\ value\: :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>`\ )
 - :ref:`SamplePartitionType<enum_NavigationMesh_SamplePartitionType>` **get_sample_partition_type**\ (\ )
 
-Partitioning algorithm for creating the navigation mesh polys.
+Algoritmo de partición para crear los polígonos de la malla de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -679,7 +679,7 @@ Partitioning algorithm for creating the navigation mesh polys.
 - |void| **set_vertices_per_polygon**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_vertices_per_polygon**\ (\ )
 
-The maximum number of vertices allowed for polygons generated during the contour to polygon conversion process.
+El número máximo de vértices permitidos para los polígonos generados durante el proceso de conversión de contorno a polígono.
 
 .. rst-class:: classref-section-separator
 

@@ -499,11 +499,11 @@ String
 
 :ref:`int<class_int>` **casecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_casecmp_to>`
 
-与另一个字符串进行比较，区分大小写。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。
+与另一个字符串进行区分大小写的比较。如果小于对方则返回 ``-1``\ ，大于对方则返回 ``1``\ ，相等则返回 ``0``\ 。“小于”和“大于”是由每个字符串的 `Unicode 码点 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 决定的，这大致对应字母表的顺序。
 
-进行字符比较时，如果其中一个字符串已到达末尾，而另一个字符串中还有后续字符，则会使用长度作为决定因素：如果该字符串比 ``to`` 字符串长则返回 ``1``\ ，短则返回 ``-1``\ 。请注意，空字符串的长度始终为 ``0``\ 。
+如果字符比较进行到了其中一个字符串的末尾，而另一个字符串还包含更多字符，那么长度将成为决定因素：如果本字符串比 ``to`` 字符串更长，则返回 ``1``\ ，如果更短则返回 ``-1``\ 。请注意，空字符串的长度始终为 ``0``\ 。
 
-要从字符串比较中获得 :ref:`bool<class_bool>` 结果，请改用 ``==`` 运算符。另见 :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>` 和 :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>`\ 。
+如果想从字符串比较中获取一个 :ref:`bool<class_bool>`\ （布尔值）结果，请改用 ``==`` 运算符。另请参阅 :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>` 和 :ref:`naturalcasecmp_to()<class_String_method_naturalcasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -666,32 +666,32 @@ String
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_String_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+返回 ``what`` 在该字符串中\ **第一次**\ 出现的索引，如果不存在则返回 ``-1``\ 。搜索的起点可以用 ``from`` 指定，持续到字符串结尾。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("Team".find("I")) # 输出 -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Potato".find("t"))    # 输出 2
+    print("Potato".find("t", 3)) # 输出 4
+    print("Potato".find("t", 5)) # 输出 -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("Team".Find("I")); // 输出 -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Potato".Find("t"));    // 输出 2
+    GD.Print("Potato".Find("t", 3)); // 输出 4
+    GD.Print("Potato".Find("t", 5)); // 输出 -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_String_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **注意：**\ 如果你只是想要知道该字符串中是否包含 ``what``\ ，请使用 :ref:`contains()<class_String_method_contains>`\ 。在 GDScript 中，你还可以使用 ``in`` 运算符。
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **注意：**\ ``from`` 的负值通过从最后一个有足够空间找到 ``what`` 的索引开始倒数来转换为起始索引。
 
 .. rst-class:: classref-item-separator
 
@@ -839,13 +839,13 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`String<class_String>` **get_slice**\ (\ delimiter\: :ref:`String<class_String>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slice>`
 
-Splits the string using a ``delimiter`` and returns the substring at index ``slice``. Returns the original string if ``delimiter`` does not occur in the string. Returns an empty string if the ``slice`` does not exist.
+使用分隔符 ``delimiter`` 拆分该字符串，返回索引为 ``slice`` 的子串。如果字符串中不存在 ``delimiter`` 则返回原字符串。如果 ``slice`` 不存在则返回空字符串。
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+只需要一两个子串时这个方法比 :ref:`split()<class_String_method_split>` 快。
 
 ::
 
-    print("i/am/example/hi".get_slice("/", 2)) # Prints "example"
+    print("i/am/example/hi".get_slice("/", 2)) # 输出“example”
 
 .. rst-class:: classref-item-separator
 
@@ -857,14 +857,14 @@ This is faster than :ref:`split()<class_String_method_split>`, if you only need 
 
 :ref:`int<class_int>` **get_slice_count**\ (\ delimiter\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_get_slice_count>`
 
-Returns the total number of slices when the string is split with the given ``delimiter`` (see :ref:`split()<class_String_method_split>`).
+返回使用给定的 ``delimiter`` 分割字符串时得到的切片总数（参见 :ref:`split()<class_String_method_split>`\ ）。
 
-Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slice.
+使用 :ref:`get_slice()<class_String_method_get_slice>` 提取特定切片。
 
 ::
 
-    print("i/am/example/string".get_slice_count("/")) # Prints '4'.
-    print("i am example string".get_slice_count("/")) # Prints '1'.
+    print("i/am/example/string".get_slice_count("/")) # 输出 “4”。
+    print("i am example string".get_slice_count("/")) # 输出 “1”。
 
 .. rst-class:: classref-item-separator
 
@@ -876,11 +876,11 @@ Use :ref:`get_slice()<class_String_method_get_slice>` to extract a specific slic
 
 :ref:`String<class_String>` **get_slicec**\ (\ delimiter\: :ref:`int<class_int>`, slice\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_String_method_get_slicec>`
 
-Splits the string using a Unicode character with code ``delimiter`` and returns the substring at index ``slice``. Returns an empty string if the ``slice`` does not exist.
+使用 Unicode 字符码分隔符 ``delimiter`` 拆分该字符串，返回索引为 ``slice`` 的子串。如果 ``slice`` 不存在则返回空字符串。
 
-This is faster than :ref:`split()<class_String_method_split>`, if you only need one or two substrings.
+只需要一两个子串时这个方法比 :ref:`split()<class_String_method_split>` 快。
 
-This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
+这是 :ref:`get_slice()<class_String_method_get_slice>` 的 Unicode 版本。
 
 .. rst-class:: classref-item-separator
 
@@ -1386,13 +1386,13 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`int<class_int>` **naturalcasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_naturalcasecmp_to>`
 
-与另一个字符串进行\ **区分大小写**\ 的\ *自然顺序*\ 比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。
+与另一个字符串进行\ **区分大小写**\ 的 *自然顺序* 比较。如果小于对方则返回 ``-1``\ ，大于对方则返回 ``1``\ ，相等则返回 ``0``\ 。“小于”和“大于”是由每个字符串的 `Unicode 码点 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 决定的，这大致对应字母表的顺序。
 
-使用自然顺序进行排序时，会和常见预期一样将连续的数字进行组合，而不是一个个数字进行比较。排序后的数列为 ``["1", "2", "3", ...]`` 而不是 ``["1", "10", "2", "3", ...]``\ 。
+在进行排序时，自然顺序比较会将数字序列作为一个整体数值来排序（这通常更符合人们的预期），而不是单纯按单个字符的码点来排。因此，排序后的数字字符串序列会是 ``["1", "2", "3", ...]``\ ，而不会是 ``["1", "10", "2", "3", ...]``\ 。
 
-进行字符比较时，如果其中一个字符串已到达末尾，而另一个字符串中还有后续字符，则会使用长度作为决定因素：如果该字符串比 ``to`` 字符串长则返回 ``1``\ ，短则返回 ``-1``\ 。请注意，空字符串的长度始终为 ``0``\ 。
+如果字符比较进行到了其中一个字符串的末尾，而另一个字符串还包含更多字符，那么长度将成为决定因素：如果本字符串比 ``to`` 字符串更长，则返回 ``1``\ ，如果更短则返回 ``-1``\ 。请注意，空字符串的长度始终为 ``0``\ 。
 
-要从字符串比较中获得 :ref:`bool<class_bool>` 结果，请改用 ``==`` 运算符。另见 :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>` 和 :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`\ 。
+如果想从字符串比较中获取一个 :ref:`bool<class_bool>`\ （布尔值）结果，请改用 ``==`` 运算符。另请参阅 :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_String_method_filecasecmp_to>` 和 :ref:`nocasecmp_to()<class_String_method_nocasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1404,7 +1404,7 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`int<class_int>` **naturalnocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_naturalnocasecmp_to>`
 
-与另一个字符串进行\ **不区分大小写**\ 的\ *自然顺序*\ 比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。内部实现时，会将小写字符转换为大写后进行比较。
+与另一个字符串进行\ **不区分大小写**\ 的\ *自然顺序*\ 比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode code points <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__\ ，大致与字母表顺序一致。内部实现时，会将小写字符转换为大写后进行比较。
 
 使用自然顺序进行排序时，会和常见预期一样将连续的数字进行组合，而不是一个个数字进行比较。排序后的数列为 ``["1", "2", "3", ...]`` 而不是 ``["1", "10", "2", "3", ...]``\ 。
 
@@ -1422,11 +1422,11 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`int<class_int>` **nocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_nocasecmp_to>`
 
-与另一个字符串进行\ **不区分大小写**\ 的比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。内部实现时，会将小写字符转换为大写后进行比较。
+与另一个字符串进行\ **不区分大小写**\ 的比较。如果小于对方则返回 ``-1``\ ，大于对方则返回 ``1``\ ，相等则返回 ``0``\ 。“小于”和“大于”是由每个字符串的 `Unicode 码点 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 决定的，这大致对应字母表的顺序。在内部处理时，会将小写字符转换为大写来进行比较。
 
-进行字符比较时，如果其中一个字符串已到达末尾，而另一个字符串中还有后续字符，则会使用长度作为决定因素：如果该字符串比 ``to`` 字符串长则返回 ``1``\ ，短则返回 ``-1``\ 。请注意，空字符串的长度始终为 ``0``\ 。
+如果字符比较进行到了其中一个字符串的末尾，而另一个字符串还包含更多字符，那么长度将成为决定因素：如果本字符串比 ``to`` 字符串更长，则返回 ``1``\ ，如果更短则返回 ``-1``\ 。请注意，空字符串的长度始终为 ``0``\ 。
 
-要从字符串比较中获得 :ref:`bool<class_bool>` 结果，请改用 ``==`` 运算符。另见 :ref:`casecmp_to()<class_String_method_casecmp_to>`\ 、\ :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>` 和 :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`\ 。
+如果想从字符串比较中获取一个 :ref:`bool<class_bool>`\ （布尔值）结果，请改用 ``==`` 运算符。另请参阅 :ref:`casecmp_to()<class_String_method_casecmp_to>`\ 、\ :ref:`filenocasecmp_to()<class_String_method_filenocasecmp_to>` 和 :ref:`naturalnocasecmp_to()<class_String_method_naturalnocasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1468,11 +1468,11 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`String<class_String>` **num_int64**\ (\ number\: :ref:`int<class_int>`, base\: :ref:`int<class_int>` = 10, capitalize_hex\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_String_method_num_int64>`
 
-将给定的数字 ``number`` 转换为字符串表示，进位制由 ``base`` 给定。
+将给定的 ``number``\ （数字）转换为字符串表示形式，并指定 ``base``\ （进制）。
 
-默认情况下 ``base`` 为十进制（\ ``10``\ ）。编程中常见的进位制还有二进制（\ ``2``\ ）、\ `八进制 <https://zh.wikipedia.org/wiki/%E5%85%AB%E8%BF%9B%E5%88%B6>`__\ （\ ``8``\ ）、十六进制（\ ``16``\ ）。
+默认情况下，\ ``base`` 被设为十进制 (``10``)。编程中其他常见的进制包括二进制 (``2``)、\ `八进制 <https://en.wikipedia.org/wiki/Octal>`__ (``8``) 和十六进制 (``16``)。
 
-如果 ``capitalize_hex`` 为 ``true``\ ，比 9 大的数位会大写。
+如果 ``capitalize_hex`` 为 ``true``\ ，大于 9 的数字（即十六进制中的字母）将以大写形式表示。
 
 .. rst-class:: classref-item-separator
 
@@ -1517,11 +1517,11 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`String<class_String>` **num_uint64**\ (\ number\: :ref:`int<class_int>`, base\: :ref:`int<class_int>` = 10, capitalize_hex\: :ref:`bool<class_bool>` = false\ ) |static| :ref:`🔗<class_String_method_num_uint64>`
 
-将给定的无符号 :ref:`int<class_int>` 转换为字符串表示，进位制由 ``base`` 给定。
+将给定的无符号 :ref:`int<class_int>`\ （整数）转换为指定 ``base``\ （进制）的字符串表示形式。
 
-默认情况下 ``base`` 为十进制（\ ``10``\ ）。编程中常见的进位制还有二进制（\ ``2``\ ）、\ `八进制 <https://zh.wikipedia.org/wiki/%E5%85%AB%E8%BF%9B%E5%88%B6>`__\ （\ ``8``\ ）、十六进制（\ ``16``\ ）。
+默认情况下，\ ``base`` 被设为十进制 (``10``)。编程中其他常见的进制包括二进制 (``2``)、\ `八进制 <https://en.wikipedia.org/wiki/Octal>`__ (``8``) 和十六进制 (``16``)。
 
-如果 ``capitalize_hex`` 为 ``true``\ ，比 9 大的数位会大写。
+如果 ``capitalize_hex`` 为 ``true``\ ，大于 9 的数字（即十六进制中的字母）将以大写形式表示。
 
 .. rst-class:: classref-item-separator
 
@@ -1583,7 +1583,7 @@ This is a Unicode version of :ref:`get_slice()<class_String_method_get_slice>`.
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_String_method_remove_char>`.
+移除所有出现在 ``chars`` 中的字符。另见 :ref:`remove_char()<class_String_method_remove_char>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1667,11 +1667,11 @@ Removes all occurrences of the characters in ``chars``. See also :ref:`remove_ch
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_String_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_String_method_find>`.
+返回这个字符串中 ``what`` **最后一次**\ 出现时的索引，不存在时则为 ``-1``\ 。搜索的起点可以用 ``from`` 指定，终点为该字符串的开头。这个方法与 :ref:`find()<class_String_method_find>` 相对。
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **注意：**\ ``from`` 的负值通过从最后一个有足够空间找到 ``what`` 的索引开始倒数来转换为起始索引。
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **注意：**\ 如果 ``from`` 的值大于能够找到 ``what`` 的最后一个可能索引，则视为越界，并返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1758,7 +1758,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`String<class_String>` **rstrip**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_String_method_rstrip>`
 
-从该字符串的结尾移除 ``chars`` 中定义的字符。另见 :ref:`rstrip()<class_String_method_rstrip>`\ 。
+从该字符串的结尾移除 ``chars`` 中定义的字符。另见 :ref:`lstrip()<class_String_method_lstrip>`\ 。
 
 \ **注意：**\ ``chars`` 不是后缀。如果要移除后缀而不是一组字符，请使用 :ref:`trim_suffix()<class_String_method_trim_suffix>`\ 。
 
@@ -2418,7 +2418,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`bool<class_bool>` **operator <**\ (\ right\: :ref:`String<class_String>`\ ) :ref:`🔗<class_String_operator_lt_String>`
 
-如果左侧的 **String** 比 ``right`` 靠前，则返回 ``true``\ 。使用的是 `Unicode 顺序 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。可用于排序。
+如果左侧的 **String** 比 ``right`` 靠前，则返回 ``true``\ 。使用的是 `Unicode order <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__\ ，大致与字母表顺序一致。可用于排序。
 
 .. rst-class:: classref-item-separator
 
@@ -2430,7 +2430,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`bool<class_bool>` **operator <=**\ (\ right\: :ref:`String<class_String>`\ ) :ref:`🔗<class_String_operator_lte_String>`
 
-如果左侧的 **String** 比 ``right`` 靠前，或两者相等，则返回 ``true``\ 。使用的是 `Unicode 顺序 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。
+如果左侧的 **String** 比 ``right`` 靠前，或两者相等，则返回 ``true``\ 。使用的是 `Unicode order <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__\ ，大致与字母表顺序一致。
 
 .. rst-class:: classref-item-separator
 
@@ -2466,7 +2466,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`bool<class_bool>` **operator >**\ (\ right\: :ref:`String<class_String>`\ ) :ref:`🔗<class_String_operator_gt_String>`
 
-如果左侧的 **String** 比 ``right`` 靠后，则返回 ``true``\ 。使用的是 `Unicode 顺序 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。可用于排序。
+如果左侧的 **String**\ （字符串）在 `Unicode 顺序 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 中排在 ``right``\ （右侧字符串）之后，则返回 ``true``\ ，这大致相当于字母表的顺序。该方法非常适合用于排序。
 
 .. rst-class:: classref-item-separator
 
@@ -2478,7 +2478,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`bool<class_bool>` **operator >=**\ (\ right\: :ref:`String<class_String>`\ ) :ref:`🔗<class_String_operator_gte_String>`
 
-如果左侧的 **String** 比 ``right`` 靠后，或两者相等，则返回 ``true``\ 。使用的是 `Unicode 顺序 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。
+如果左侧的 **String**\ （字符串）在 `Unicode 顺序 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 中排在 ``right``\ （右侧字符串）之后，或者两者相等，则返回 ``true``\ 。Unicode 顺序大致相当于我们熟悉的字母表顺序。
 
 .. rst-class:: classref-item-separator
 

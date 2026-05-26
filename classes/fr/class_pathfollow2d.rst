@@ -153,7 +153,7 @@ Elle peut être définie ou obtenue seulement si le **PathFollow2D** est l'enfan
 - |void| **set_rotates**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_rotating**\ (\ )
 
-If ``true``, this node rotates to follow the path, with the +X direction facing forward on the path.
+Si ``true``, ce nœud tourne pour suivre le chemin, avec la direction +X vers la direction avant du chemin.
 
 .. rst-class:: classref-item-separator
 

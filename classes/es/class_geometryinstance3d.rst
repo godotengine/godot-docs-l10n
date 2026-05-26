@@ -150,7 +150,7 @@ enum **GIMode**: :ref:`🔗<enum_GeometryInstance3D_GIMode>`
 
 :ref:`GIMode<enum_GeometryInstance3D_GIMode>` **GI_MODE_DISABLED** = ``0``
 
-Modo de iluminación global deshabilitado. Usar para objetos dinámicos que no contribuyen a la iluminación global (como personajes). Cuando se usa :ref:`VoxelGI<class_VoxelGI>` y SDFGI, la geometría *recibirá* iluminación indirecta y reflejos, pero la geometría no se considerará en el procesado de la IG.
+Modo de iluminación global deshabilitado. Usar para objetos dinámicos que no contribuyen a la iluminación global (como personajes). Cuando se usa :ref:`VoxelGI<class_VoxelGI>` y SDFGI, la geometría *recibirá* iluminación indirecta y reflejos, pero la geometría no se considerará en el baking de la IG.
 
 .. _class_GeometryInstance3D_constant_GI_MODE_STATIC:
 
@@ -582,7 +582,7 @@ Descripciones de Métodos
 
 :ref:`Variant<class_Variant>` **get_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_GeometryInstance3D_method_get_instance_shader_parameter>`
 
-Get the value of a shader parameter as set on this instance.
+Obtiene el valor de un parámetro de shader como se establece en esta instancia.
 
 .. rst-class:: classref-item-separator
 

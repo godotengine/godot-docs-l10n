@@ -14,9 +14,9 @@ Reproduce datos de entrada de audio en tiempo real.
 Descripción
 ----------------------
 
-When used directly in an :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` node, **AudioStreamMicrophone** plays back microphone input in real-time. This can be used in conjunction with :ref:`AudioEffectCapture<class_AudioEffectCapture>` to process the data or save it.
+Cuando se utiliza directamente en un nodo :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, **AudioStreamMicrophone** reproduce la entrada del micrófono en tiempo real. Esto puede usarse en conjunto con :ref:`AudioEffectCapture<class_AudioEffectCapture>` para procesar los datos o guardarlos.
 
-\ **Note:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` must be ``true`` for audio input to work. See also that setting's description for caveats related to permissions and operating system privacy settings.
+\ **Nota:** :ref:`ProjectSettings.audio/driver/enable_input<class_ProjectSettings_property_audio/driver/enable_input>` debe estar en ``true`` para que la entrada de audio funcione. Véase también la descripción de ese ajuste para conocer las advertencias relacionadas con los permisos y la configuración de privacidad del sistema operativo.
 
 .. rst-class:: classref-introduction-group
 

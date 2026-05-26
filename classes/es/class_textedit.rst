@@ -556,7 +556,7 @@ Emitida cuando cualquier cursor cambia de posición.
 
 **gutter_added**\ (\ ) :ref:`🔗<class_TextEdit_signal_gutter_added>`
 
-Emitted when a gutter is added.
+Emitida cuando se añade un medianil.
 
 .. rst-class:: classref-item-separator
 
@@ -580,7 +580,7 @@ Emitida cuando se cierra una pestaña.
 
 **gutter_removed**\ (\ ) :ref:`🔗<class_TextEdit_signal_gutter_removed>`
 
-Emitted when a gutter is removed.
+Emitida cuando se elimina un medianil.
 
 .. rst-class:: classref-item-separator
 
@@ -592,9 +592,9 @@ Emitted when a gutter is removed.
 
 **lines_edited_from**\ (\ from_line\: :ref:`int<class_int>`, to_line\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TextEdit_signal_lines_edited_from>`
 
-Emitted immediately when the text changes.
+Emitida inmediatamente cuando el texto cambia.
 
-When text is added ``from_line`` will be less than ``to_line``. On a remove ``to_line`` will be less than ``from_line``.
+Cuando se añade texto, ``from_line`` será menor que ``to_line``. Al eliminar, ``to_line`` será menor que ``from_line``.
 
 .. rst-class:: classref-item-separator
 
@@ -923,7 +923,7 @@ Una acción de mecanografía.
 
 :ref:`EditAction<enum_TextEdit_EditAction>` **ACTION_BACKSPACE** = ``2``
 
-A backwards delete action.
+Una acción de borrado hacia atrás.
 
 .. _class_TextEdit_constant_ACTION_DELETE:
 
@@ -1017,7 +1017,7 @@ No seleccionado.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_SHIFT** = ``1``
 
-Select as if ``shift`` is pressed.
+Selecciona como si se pulsara ``shift``.
 
 .. _class_TextEdit_constant_SELECTION_MODE_POINTER:
 
@@ -1025,7 +1025,7 @@ Select as if ``shift`` is pressed.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_POINTER** = ``2``
 
-Select single characters as if the user single clicked.
+Selecciona caracteres individuales como si el usuario hiciera un solo clic.
 
 .. _class_TextEdit_constant_SELECTION_MODE_WORD:
 
@@ -1033,7 +1033,7 @@ Select single characters as if the user single clicked.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_WORD** = ``3``
 
-Select whole words as if the user double clicked.
+Selecciona palabras completas como si el usuario hiciera doble clic.
 
 .. _class_TextEdit_constant_SELECTION_MODE_LINE:
 
@@ -1041,7 +1041,7 @@ Select whole words as if the user double clicked.
 
 :ref:`SelectionMode<enum_TextEdit_SelectionMode>` **SELECTION_MODE_LINE** = ``4``
 
-Select whole lines as if the user triple clicked.
+Selecciona líneas completas como si el usuario hiciera triple clic.
 
 .. rst-class:: classref-item-separator
 
@@ -1067,7 +1067,7 @@ El ajuste de línea está deshabilitado.
 
 :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>` **LINE_WRAPPING_BOUNDARY** = ``1``
 
-Line wrapping occurs at the control boundary, beyond what would normally be visible.
+El ajuste de línea ocurre en el límite del control, más allá de lo que normalmente sería visible.
 
 .. rst-class:: classref-item-separator
 
@@ -1085,7 +1085,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **GUTTER_TYPE_STRING** = ``0``
 
-When a gutter is set to string using :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, it is used to contain text set via the :ref:`set_line_gutter_text()<class_TextEdit_method_set_line_gutter_text>` method.
+Cuando un medianil se establece como string usando :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, se usa para contener texto establecido a través del método :ref:`set_line_gutter_text()<class_TextEdit_method_set_line_gutter_text>`.
 
 .. _class_TextEdit_constant_GUTTER_TYPE_ICON:
 
@@ -1093,7 +1093,7 @@ When a gutter is set to string using :ref:`set_gutter_type()<class_TextEdit_meth
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **GUTTER_TYPE_ICON** = ``1``
 
-When a gutter is set to icon using :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, it is used to contain an icon set via the :ref:`set_line_gutter_icon()<class_TextEdit_method_set_line_gutter_icon>` method.
+Cuando un medianil se establece como icono usando :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, se usa para contener un icono establecido a través del método :ref:`set_line_gutter_icon()<class_TextEdit_method_set_line_gutter_icon>`.
 
 .. _class_TextEdit_constant_GUTTER_TYPE_CUSTOM:
 
@@ -1101,7 +1101,7 @@ When a gutter is set to icon using :ref:`set_gutter_type()<class_TextEdit_method
 
 :ref:`GutterType<enum_TextEdit_GutterType>` **GUTTER_TYPE_CUSTOM** = ``2``
 
-When a gutter is set to custom using :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, it is used to contain custom visuals controlled by a callback method set via the :ref:`set_gutter_custom_draw()<class_TextEdit_method_set_gutter_custom_draw>` method.
+Cuando un medianil se establece como personalizado usando :ref:`set_gutter_type()<class_TextEdit_method_set_gutter_type>`, se usa para contener visuales personalizados controlados por un método de callback establecido a través del método :ref:`set_gutter_custom_draw()<class_TextEdit_method_set_gutter_custom_draw>`.
 
 .. rst-class:: classref-section-separator
 
@@ -1864,7 +1864,7 @@ If ``false``, using :kbd:`Ctrl + Left` or :kbd:`Ctrl + Right` (:kbd:`Cmd + Left`
 - |void| **set_use_default_word_separators**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_default_word_separators_enabled**\ (\ )
 
-If ``false``, using :kbd:`Ctrl + Left` or :kbd:`Ctrl + Right` (:kbd:`Cmd + Left` or :kbd:`Cmd + Right` on macOS) bindings will stop moving caret only if a space or punctuation is detected. If ``true``, it will also stop the caret if a character is part of ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``, the Unicode General Punctuation table, or the Unicode CJK Punctuation table. Useful for subword moving. This behavior also will be applied to the behavior of text selection.
+Si es ``false``, usar las combinaciones de teclas :kbd:`Ctrl + Izquierda` o :kbd:`Ctrl + Derecha` (:kbd:`Cmd + Izquierda` o :kbd:`Cmd + Derecha` en macOS) detendrá el movimiento del cursor solo si se detecta un espacio o puntuación. Si es ``true``, también detendrá el cursor si un carácter forma parte de ``!"#$%&'()*+,-./:;<=>?@[\]^`{|}~``, la tabla de puntuación general Unicode, o la tabla de puntuación CJK Unicode. Útil para el movimiento de subpalabras. Este comportamiento también se aplicará al comportamiento de la selección de texto.
 
 .. rst-class:: classref-item-separator
 
@@ -1915,7 +1915,7 @@ Si es ``true``, el teclado virtual nativo se mostrará en los eventos de foco en
 - |void| **set_line_wrapping_mode**\ (\ value\: :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>`\ )
 - :ref:`LineWrappingMode<enum_TextEdit_LineWrappingMode>` **get_line_wrapping_mode**\ (\ )
 
-Sets the line wrapping mode to use.
+Establece el modo de ajuste de línea a usar.
 
 .. rst-class:: classref-section-separator
 
@@ -2139,7 +2139,7 @@ Inicia una edición para múltiples cursores. La edición debe finalizar con :re
 
 |void| **cancel_ime**\ (\ ) :ref:`🔗<class_TextEdit_method_cancel_ime>`
 
-Closes the `Input Method Editor <https://en.wikipedia.org/wiki/Input_method>`__ (IME) if it is open. Any text in the IME will be lost.
+Cierra el `Editor de Métodos de Entrada <https://en.wikipedia.org/wiki/Input_method>`__ (IME) si está abierto. Cualquier texto en el IME se perderá.
 
 .. rst-class:: classref-item-separator
 
@@ -4114,7 +4114,7 @@ Establece el :ref:`Color<class_Color>` de la fuente cuando :ref:`editable<class_
 
 :ref:`Color<class_Color>` **font_selected_color** = ``Color(0, 0, 0, 0)`` :ref:`🔗<class_TextEdit_theme_color_font_selected_color>`
 
-Sets the :ref:`Color<class_Color>` of the selected text. If equal to ``Color(0, 0, 0, 0)``, it will be ignored.
+Establece el :ref:`Color<class_Color>` del texto seleccionado. Si es igual a ``Color(0, 0, 0, 0)``, será ignorado.
 
 .. rst-class:: classref-item-separator
 
@@ -4186,7 +4186,7 @@ El ancho del cursor en píxeles. Se pueden usar valores mayores para mejorar la 
 
 :ref:`int<class_int>` **line_spacing** = ``4`` :ref:`🔗<class_TextEdit_theme_constant_line_spacing>`
 
-Additional vertical spacing between lines (in pixels), spacing is added to line descent. This value can be negative.
+Espacio vertical adicional entre líneas (en píxeles); el espacio se añade al descenso de la línea (line descent). Este valor puede ser negativo.
 
 .. rst-class:: classref-item-separator
 
@@ -4198,9 +4198,9 @@ Additional vertical spacing between lines (in pixels), spacing is added to line 
 
 :ref:`int<class_int>` **outline_size** = ``0`` :ref:`🔗<class_TextEdit_theme_constant_outline_size>`
 
-The size of the text outline.
+El tamaño del contorno del texto.
 
-\ **Note:** If using a font with :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` enabled, its :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` must be set to at least *twice* the value of :ref:`outline_size<class_TextEdit_theme_constant_outline_size>` for outline rendering to look correct. Otherwise, the outline may appear to be cut off earlier than intended.
+\ **Note:** Si se usa una fuente con :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` habilitado, su :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` debe establecerse en al menos *el doble* del valor de :ref:`outline_size<class_TextEdit_theme_constant_outline_size>` para que el renderizado del contorno se vea correctamente. De lo contrario, el contorno puede parecer cortado antes de lo previsto.
 
 .. rst-class:: classref-item-separator
 
@@ -4212,7 +4212,7 @@ The size of the text outline.
 
 :ref:`int<class_int>` **wrap_offset** = ``10`` :ref:`🔗<class_TextEdit_theme_constant_wrap_offset>`
 
-Sets an additional margin for line wrapping width.
+Establece un margen adicional para el ancho de ajuste de línea.
 
 .. rst-class:: classref-item-separator
 

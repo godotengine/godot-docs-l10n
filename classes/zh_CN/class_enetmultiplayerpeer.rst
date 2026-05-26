@@ -97,9 +97,9 @@ MultiplayerPeer 的一种实现，应该在初始化为客户端、服务器或�
 
 :ref:`Error<enum_@GlobalScope_Error>` **add_mesh_peer**\ (\ peer_id\: :ref:`int<class_int>`, host\: :ref:`ENetConnection<class_ENetConnection>`\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_add_mesh_peer>`
 
-使用给定的 ``peer_id`` 添加一个新的远程对等体，并将其连接到给定的 ``host``\ 。
+使用给定的 ``peer_id`` 添加一个新的远程对等端，并将其连接到给定的 ``host``\ 。
 
-\ **注意：**\ ``host`` 必须只有一个处于 :ref:`ENetPacketPeer.STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>` 状态的对等体。
+\ **注意：**\ ``host`` 必须只有一个处于 :ref:`ENetPacketPeer.STATE_CONNECTED<class_ENetPacketPeer_constant_STATE_CONNECTED>` 状态的对等端。
 
 .. rst-class:: classref-item-separator
 
@@ -111,7 +111,7 @@ MultiplayerPeer 的一种实现，应该在初始化为客户端、服务器或�
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_client**\ (\ address\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`, channel_count\: :ref:`int<class_int>` = 0, in_bandwidth\: :ref:`int<class_int>` = 0, out_bandwidth\: :ref:`int<class_int>` = 0, local_port\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_client>`
 
-创建客户端，该客户端使用指定的 ``port`` 连接到位于 ``address`` 的服务器。给定的地址必须是完全限定的域名（例如 ``"www.example.com"``\ ），或 IPv4 或 IPv6 格式的 IP 地址（例如 ``"192.168.1.1"``\ ）。\ ``port`` 是服务器监听的端口。\ ``channel_count`` 参数可用于指定为连接分配的 ENet 通道数。\ ``in_bandwidth`` 和 ``out_bandwidth`` 参数可用于将传入和传出带宽限制为给定的每秒字节数。默认值 0 表示无限制的带宽。请注意，ENet 将对在对等体之间的连接的特定端，策略性地丢弃数据包，以确保对等体的带宽不会被淹没。带宽参数还决定了连接的窗口大小，它限制了在任何给定时间可能正在传输的可靠数据包的数量。如果创建了一个客户端，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果该 ENetMultiplayerPeer 实例已经有一个打开的连接（在这种情况下，需要先调用 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），则返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果不能被创建客户端，则返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。如果指定了 ``local_port``\ ，客户端也会监听给定的端口；这对一些 NAT 穿越技术很有用。
+创建客户端，该客户端使用指定的 ``port`` 连接到位于 ``address`` 的服务器。给定的地址必须是完全限定的域名（例如 ``"www.example.com"``\ ），或 IPv4 或 IPv6 格式的 IP 地址（例如 ``"192.168.1.1"``\ ）。\ ``port`` 是服务器监听的端口。\ ``channel_count`` 参数可用于指定为连接分配的 ENet 通道数。\ ``in_bandwidth`` 和 ``out_bandwidth`` 参数可用于将传入和传出带宽限制为给定的每秒字节数。默认值 0 表示无限制的带宽。请注意，ENet 将对在对等端之间的连接的特定端，策略性地丢弃数据包，以确保对等端的带宽不会被淹没。带宽参数还决定了连接的窗口大小，它限制了在任何给定时间可能正在传输的可靠数据包的数量。如果创建了一个客户端，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果该 ENetMultiplayerPeer 实例已经有一个打开的连接（在这种情况下，需要先调用 :ref:`MultiplayerPeer.close()<class_MultiplayerPeer_method_close>`\ ），则返回 :ref:`@GlobalScope.ERR_ALREADY_IN_USE<class_@GlobalScope_constant_ERR_ALREADY_IN_USE>`\ ；如果不能被创建客户端，则返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。如果指定了 ``local_port``\ ，客户端也会监听给定的端口；这对一些 NAT 穿越技术很有用。
 
 .. rst-class:: classref-item-separator
 
@@ -123,7 +123,7 @@ MultiplayerPeer 的一种实现，应该在初始化为客户端、服务器或�
 
 :ref:`Error<enum_@GlobalScope_Error>` **create_mesh**\ (\ unique_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_ENetMultiplayerPeer_method_create_mesh>`
 
-在网格网络模式下初始化该 :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ 。提供的 ``unique_id`` 一旦被分配为 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ ，就将被用作本地对等体的网络唯一 ID。在网格网络配置中，需要在调用 :ref:`add_mesh_peer()<class_ENetMultiplayerPeer_method_add_mesh_peer>` 之前，使用 :ref:`ENetConnection<class_ENetConnection>` 手动设置每个新的对等体。这种技术更先进，它可以更好地控制连接过程（例如，在处理 NAT 穿透时），并更好地分配网络负载（否则会给服务器带来更大的负担）。
+在网格网络模式下初始化该 :ref:`MultiplayerPeer<class_MultiplayerPeer>`\ 。提供的 ``unique_id`` 一旦被分配为 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ ，就将被用作本地对等端的网络唯一 ID。在网格网络配置中，需要在调用 :ref:`add_mesh_peer()<class_ENetMultiplayerPeer_method_add_mesh_peer>` 之前，使用 :ref:`ENetConnection<class_ENetConnection>` 手动设置每个新的对等端。这种技术更先进，它可以更好地控制连接过程（例如，在处理 NAT 穿透时），并更好地分配网络负载（否则会给服务器带来更大的负担）。
 
 .. rst-class:: classref-item-separator
 

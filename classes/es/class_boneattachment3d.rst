@@ -17,7 +17,7 @@ Un nodo que copia u omite dinámicamente la transformación 3D de un hueso en su
 Descripción
 ----------------------
 
-Este nodo selecciona un hueso en un :ref:`Skeleton3D<class_Skeleton3D>` y se adjunta a él. Esto significa que el nodo **BoneAttachment3D** copiará dinámicamente o anulará la transformación 3D del hueso seleccionado.
+Este nodo selecciona un hueso en un :ref:`Skeleton3D<class_Skeleton3D>` y se adjunta a él. Esto significa que el nodo **BoneAttachment3D** copiará dinámicamente o sobrescribirá la transformación 3D del hueso seleccionado.
 
 .. rst-class:: classref-reftable-group
 

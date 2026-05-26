@@ -324,9 +324,9 @@ Señales
 
 **child_entered_tree**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_child_entered_tree>`
 
-Emitted when the child ``node`` enters the :ref:`SceneTree<class_SceneTree>`, usually because this node entered the tree (see :ref:`tree_entered<class_Node_signal_tree_entered>`), or :ref:`add_child()<class_Node_method_add_child>` has been called.
+Emitida cuando el nodo hijo ``node`` entra en el :ref:`SceneTree<class_SceneTree>`, generalmente porque este nodo entró en el árbol (ver :ref:`tree_entered<class_Node_signal_tree_entered>`), o se ha llamado a :ref:`add_child()<class_Node_method_add_child>`.
 
-This signal is emitted *after* the child node's own :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` and :ref:`tree_entered<class_Node_signal_tree_entered>`.
+Esta señal se emite *después* de las propias :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` y :ref:`tree_entered<class_Node_signal_tree_entered>` del nodo hijo.
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +338,9 @@ This signal is emitted *after* the child node's own :ref:`NOTIFICATION_ENTER_TRE
 
 **child_exiting_tree**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_child_exiting_tree>`
 
-Emitted when the child ``node`` is about to exit the :ref:`SceneTree<class_SceneTree>`, usually because this node is exiting the tree (see :ref:`tree_exiting<class_Node_signal_tree_exiting>`), or because the child ``node`` is being removed or freed.
+Emitida cuando el nodo hijo ``node`` está a punto de salir del :ref:`SceneTree<class_SceneTree>`, generalmente porque este nodo está saliendo del árbol (ver :ref:`tree_exiting<class_Node_signal_tree_exiting>`), o porque el nodo hijo ``node`` está siendo eliminado o liberado.
 
-When this signal is received, the child ``node`` is still accessible inside the tree. This signal is emitted *after* the child node's own :ref:`tree_exiting<class_Node_signal_tree_exiting>` and :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>`.
+Cuando se recibe esta señal, el nodo hijo ``node`` aún es accesible dentro del árbol. Esta señal se emite *después* de las propias :ref:`tree_exiting<class_Node_signal_tree_exiting>` y :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` del nodo hijo.
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ When this signal is received, the child ``node`` is still accessible inside the 
 
 **child_order_changed**\ (\ ) :ref:`🔗<class_Node_signal_child_order_changed>`
 
-Emitted when the list of children is changed. This happens when child nodes are added, moved or removed.
+Emitida cuando cambia la lista de hijos. Esto sucede cuando se añaden, mueven o eliminan nodos hijos.
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Emitida cuando se modifica un atributo del nodo relevante para el editor. Solo s
 
 **ready**\ (\ ) :ref:`🔗<class_Node_signal_ready>`
 
-Emitted when the node is considered ready, after :ref:`_ready()<class_Node_private_method__ready>` is called.
+Se emite cuando el nodo se considera listo, después de llamar a :ref:`_ready()<class_Node_private_method__ready>`.
 
 .. rst-class:: classref-item-separator
 
@@ -412,9 +412,9 @@ Emitida cuando se cambia el :ref:`name<class_Node_property_name>` del nodo, si e
 
 **replacing_by**\ (\ node\: :ref:`Node<class_Node>`\ ) :ref:`🔗<class_Node_signal_replacing_by>`
 
-Emitted when this node is being replaced by the ``node``, see :ref:`replace_by()<class_Node_method_replace_by>`.
+Emitida cuando este nodo está siendo reemplazado por el ``node``, ver :ref:`replace_by()<class_Node_method_replace_by>`.
 
-This signal is emitted *after* ``node`` has been added as a child of the original parent node, but *before* all original child nodes have been reparented to ``node``.
+Esta señal se emite *después* de que ``node`` haya sido añadido como hijo del nodo padre original, pero *antes* de que todos los nodos hijos originales hayan sido reasignados a ``node``.
 
 .. rst-class:: classref-item-separator
 
@@ -426,9 +426,9 @@ This signal is emitted *after* ``node`` has been added as a child of the origina
 
 **tree_entered**\ (\ ) :ref:`🔗<class_Node_signal_tree_entered>`
 
-Emitted when the node enters the tree.
+Emitida cuando el nodo entra en el árbol.
 
-This signal is emitted *after* the related :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` notification.
+Esta señal se emite *después* de la notificación :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` correspondiente.
 
 .. rst-class:: classref-item-separator
 
@@ -440,9 +440,9 @@ This signal is emitted *after* the related :ref:`NOTIFICATION_ENTER_TREE<class_N
 
 **tree_exited**\ (\ ) :ref:`🔗<class_Node_signal_tree_exited>`
 
-Emitted after the node exits the tree and is no longer active.
+Emitida después de que el nodo sale del árbol y ya no está activo.
 
-This signal is emitted *after* the related :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` notification.
+Esta señal se emite *después* de la notificación :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` correspondiente.
 
 .. rst-class:: classref-item-separator
 
@@ -454,9 +454,9 @@ This signal is emitted *after* the related :ref:`NOTIFICATION_EXIT_TREE<class_No
 
 **tree_exiting**\ (\ ) :ref:`🔗<class_Node_signal_tree_exiting>`
 
-Emitted when the node is just about to exit the tree. The node is still valid. As such, this is the right place for de-initialization (or a "destructor", if you will).
+Emitida cuando el nodo está a punto de salir del árbol. El nodo todavía es válido. Como tal, este es el lugar adecuado para la des-inicialización (o un "destructor", si se prefiere).
 
-This signal is emitted *after* the node's :ref:`_exit_tree()<class_Node_private_method__exit_tree>`, and *before* the related :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>`.
+Esta señal se emite *después* del :ref:`_exit_tree()<class_Node_private_method__exit_tree>` del nodo, y *antes* de la notificación :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>`.
 
 .. rst-class:: classref-section-separator
 
@@ -744,9 +744,9 @@ Siempre traducir automáticamente. Esta es la inversa de :ref:`AUTO_TRANSLATE_MO
 
 :ref:`AutoTranslateMode<enum_Node_AutoTranslateMode>` **AUTO_TRANSLATE_MODE_DISABLED** = ``2``
 
-Never automatically translate. This is the inverse of :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
+Nunca traducir automáticamente. Esto es lo inverso de :ref:`AUTO_TRANSLATE_MODE_ALWAYS<class_Node_constant_AUTO_TRANSLATE_MODE_ALWAYS>`.
 
-String parsing for translation template generation will be skipped for this node and children that are set to :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
+El análisis de strings para la generación de plantillas de traducción se omitirá para este nodo y los hijos que estén configurados como :ref:`AUTO_TRANSLATE_MODE_INHERIT<class_Node_constant_AUTO_TRANSLATE_MODE_INHERIT>`.
 
 .. rst-class:: classref-section-separator
 
@@ -1015,9 +1015,9 @@ Implemented on desktop platforms.
 
 **NOTIFICATION_WM_GO_BACK_REQUEST** = ``1007`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_GO_BACK_REQUEST>`
 
-Notification received from the OS when a go back request is sent (e.g. pressing the "Back" button on Android).
+Notificación recibida del sistema operativo cuando se envía una solicitud de retroceso (por ejemplo, al pulsar el botón "Atrás" en Android).
 
-Implemented only on Android.
+Implementado solo en Android.
 
 .. _class_Node_constant_NOTIFICATION_WM_SIZE_CHANGED:
 
@@ -1025,9 +1025,9 @@ Implemented only on Android.
 
 **NOTIFICATION_WM_SIZE_CHANGED** = ``1008`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_SIZE_CHANGED>`
 
-Notification received when the window is resized.
+Notificación recibida cuando la ventana es redimensionada.
 
-\ **Note:** Only the resized :ref:`Window<class_Window>` node receives this notification, and it's not propagated to the child nodes.
+\ **Nota:** Solo el nodo :ref:`Window<class_Window>` redimensionado recibe esta notificación, y no se propaga a los nodos hijos.
 
 .. _class_Node_constant_NOTIFICATION_WM_DPI_CHANGE:
 
@@ -1035,7 +1035,7 @@ Notification received when the window is resized.
 
 **NOTIFICATION_WM_DPI_CHANGE** = ``1009`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_DPI_CHANGE>`
 
-Notification received from the OS when the screen's dots per inch (DPI) scale is changed. Only implemented on macOS.
+Notificación recibida del sistema operativo cuando la escala de puntos por pulgada (DPI) de la pantalla cambia. Solo implementado en macOS.
 
 .. _class_Node_constant_NOTIFICATION_VP_MOUSE_ENTER:
 
@@ -1043,7 +1043,7 @@ Notification received from the OS when the screen's dots per inch (DPI) scale is
 
 **NOTIFICATION_VP_MOUSE_ENTER** = ``1010`` :ref:`🔗<class_Node_constant_NOTIFICATION_VP_MOUSE_ENTER>`
 
-Notification received when the mouse cursor enters the :ref:`Viewport<class_Viewport>`'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or :ref:`Window<class_Window>`\ s, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+Notificación recibida cuando el cursor del ratón entra en el área visible del :ref:`Viewport<class_Viewport>`, que no está ocluida detrás de otros :ref:`Control<class_Control>`\ s o :ref:`Window<class_Window>`\ s, siempre que su :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` sea ``false`` e independientemente de si está actualmente enfocado o no.
 
 .. _class_Node_constant_NOTIFICATION_VP_MOUSE_EXIT:
 
@@ -1051,7 +1051,7 @@ Notification received when the mouse cursor enters the :ref:`Viewport<class_View
 
 **NOTIFICATION_VP_MOUSE_EXIT** = ``1011`` :ref:`🔗<class_Node_constant_NOTIFICATION_VP_MOUSE_EXIT>`
 
-Notification received when the mouse cursor leaves the :ref:`Viewport<class_Viewport>`'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or :ref:`Window<class_Window>`\ s, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+Notificación recibida cuando el cursor del ratón abandona el área visible del :ref:`Viewport<class_Viewport>`, que no está ocluida detrás de otros :ref:`Control<class_Control>`\ s o :ref:`Window<class_Window>`\ s, siempre que su :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` sea ``false`` e independientemente de si está actualmente enfocado o no.
 
 .. _class_Node_constant_NOTIFICATION_WM_POSITION_CHANGED:
 
@@ -1059,7 +1059,7 @@ Notification received when the mouse cursor leaves the :ref:`Viewport<class_View
 
 **NOTIFICATION_WM_POSITION_CHANGED** = ``1012`` :ref:`🔗<class_Node_constant_NOTIFICATION_WM_POSITION_CHANGED>`
 
-Notification received when the window is moved.
+Notificación recibida cuando la ventana es movida.
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -1067,9 +1067,9 @@ Notification received when the window is moved.
 
 **NOTIFICATION_OS_MEMORY_WARNING** = ``2009`` :ref:`🔗<class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING>`
 
-Notification received from the OS when the application is exceeding its allocated memory.
+Notificación recibida del sistema operativo cuando la aplicación supera su memoria asignada.
 
-Implemented only on iOS.
+Implementado solo en iOS.
 
 .. _class_Node_constant_NOTIFICATION_TRANSLATION_CHANGED:
 
@@ -1373,13 +1373,13 @@ The node's execution order of the process callbacks (:ref:`_process()<class_Node
 - |void| **set_process_thread_group**\ (\ value\: :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>`\ )
 - :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **get_process_thread_group**\ (\ )
 
-Set the process thread group for this node (basically, whether it receives :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`, :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`, :ref:`_process()<class_Node_private_method__process>` or :ref:`_physics_process()<class_Node_private_method__physics_process>` (and the internal versions) on the main thread or in a sub-thread.
+Establece el grupo de hilos de procesamiento para este nodo; básicamente, si recibe :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`, :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`, :ref:`_process()<class_Node_private_method__process>` o :ref:`_physics_process()<class_Node_private_method__physics_process>` (y sus versiones internas) en el hilo principal o en un sub-hilo.
 
-By default, the thread group is :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>`, which means that this node belongs to the same thread group as the parent node. The thread groups means that nodes in a specific thread group will process together, separate to other thread groups (depending on :ref:`process_thread_group_order<class_Node_property_process_thread_group_order>`). If the value is set is :ref:`PROCESS_THREAD_GROUP_SUB_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD>`, this thread group will occur on a sub thread (not the main thread), otherwise if set to :ref:`PROCESS_THREAD_GROUP_MAIN_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD>` it will process on the main thread. If there is not a parent or grandparent node set to something other than inherit, the node will belong to the *default thread group*. This default group will process on the main thread and its group order is 0.
+Por defecto, el grupo de hilos es :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>`, lo que significa que este nodo pertenece al mismo grupo de hilos que el nodo padre. Los grupos de hilos permiten que los nodos de un grupo específico se procesen juntos, separados de otros grupos (dependiendo de :ref:`process_thread_group_order<class_Node_property_process_thread_group_order>`). Si el valor establecido es :ref:`PROCESS_THREAD_GROUP_SUB_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD>`, este grupo de hilos se ejecutará en un sub-hilo (no en el principal); de lo contrario, si se establece en :ref:`PROCESS_THREAD_GROUP_MAIN_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD>`, se procesará en el hilo principal. Si no hay un nodo padre o abuelo con un valor distinto a "inherit", el nodo pertenecerá al *grupo de hilos predeterminado*. Este grupo predeterminado se procesará en el hilo principal y su orden de grupo es 0.
 
-During processing in a sub-thread, accessing most functions in nodes outside the thread group is forbidden (and it will result in an error in debug mode). Use :ref:`Object.call_deferred()<class_Object_method_call_deferred>`, :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`, :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` and the likes in order to communicate from the thread groups to the main thread (or to other thread groups).
+Durante el procesamiento en un sub-hilo, está prohibido acceder a la mayoría de las funciones de nodos fuera del grupo de hilos (y resultará en un error en modo depuración). Usa :ref:`Object.call_deferred()<class_Object_method_call_deferred>`, :ref:`call_thread_safe()<class_Node_method_call_thread_safe>`, :ref:`call_deferred_thread_group()<class_Node_method_call_deferred_thread_group>` y similares para comunicarte desde los grupos de hilos con el hilo principal (o con otros grupos de hilos).
 
-To better understand process thread groups, the idea is that any node set to any other value than :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>` will include any child (and grandchild) nodes set to inherit into its process thread group. This means that the processing of all the nodes in the group will happen together, at the same time as the node including them.
+Para entender mejor los grupos de hilos de procesamiento, la idea es que cualquier nodo configurado con un valor distinto de :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>` incluirá a cualquier nodo hijo (y nieto) configurado como "inherit" dentro de su grupo de hilos de procesamiento. Esto significa que el procesamiento de todos los nodos del grupo ocurrirá a la vez, al mismo tiempo que el nodo que los incluye.
 
 .. rst-class:: classref-item-separator
 
@@ -1571,7 +1571,7 @@ Para la entrada de juego, :ref:`_unhandled_input()<class_Node_private_method__un
 
 Se llama una vez en cada ciclo de física y permite a los Nodos sincronizar su lógica con los ciclos de física. ``delta`` es el tiempo lógico entre ciclos de física en segundos y es igual a :ref:`Engine.time_scale<class_Engine_property_time_scale>` / :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`.
 
-Solo se llama si el procesamiento de física está habilitado para este Nodo, lo que se hace automáticamente si se sobrescribe este método y se puede alternar con :ref:`set_physics_process()<class_Node_method_set_physics_process>`.
+Solo se llama si el procesamiento de físicas está habilitado para este Nodo, lo que se hace automáticamente si se sobrescribe este método y se puede alternar con :ref:`set_physics_process()<class_Node_method_set_physics_process>`.
 
 El procesamiento se realiza en orden de :ref:`process_physics_priority<class_Node_property_process_physics_priority>`, los valores de prioridad más bajos se llaman primero. Los nodos con la misma prioridad se procesan en orden de árbol, o de arriba a abajo como se ve en el editor (también conocido como recorrido de preorden).
 
@@ -2599,7 +2599,7 @@ See :ref:`SceneTree.physics_interpolation<class_SceneTree_property_physics_inter
 
 :ref:`bool<class_bool>` **is_physics_processing**\ (\ ) |const| :ref:`🔗<class_Node_method_is_physics_processing>`
 
-Devuelve ``true`` si el procesamiento de la física está activado (véase :ref:`set_physics_process()<class_Node_method_set_physics_process>`).
+Devuelve ``true`` si el procesamiento de físicas está activado (véase :ref:`set_physics_process()<class_Node_method_set_physics_process>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2611,7 +2611,7 @@ Devuelve ``true`` si el procesamiento de la física está activado (véase :ref:
 
 :ref:`bool<class_bool>` **is_physics_processing_internal**\ (\ ) |const| :ref:`🔗<class_Node_method_is_physics_processing_internal>`
 
-Devuelve ``true`` si el procesamiento de la física interna está activado (véase :ref:`set_physics_process_internal()<class_Node_method_set_physics_process_internal>`).
+Devuelve ``true`` si el procesamiento de físicas interno está activado (véase :ref:`set_physics_process_internal()<class_Node_method_set_physics_process_internal>`).
 
 .. rst-class:: classref-item-separator
 
@@ -2770,18 +2770,18 @@ Puede imprimir, por ejemplo:
 
 |void| **print_tree_pretty**\ (\ ) :ref:`🔗<class_Node_method_print_tree_pretty>`
 
-Prints the node and its children to the console, recursively. The node does not have to be inside the tree. Similar to :ref:`print_tree()<class_Node_method_print_tree>`, but the graphical representation looks like what is displayed in the editor's Scene dock. It is useful for inspecting larger trees.
+Imprime este nodo y todos sus hijos en la consola, uno por uno. No hace falta que el nodo esté conectado a la escena principal para usarlo. Es muy parecido a :ref:`print_tree()<class_Node_method_print_tree>`, pero el dibujo que genera se ve igual a la lista de nodos que ves en el editor. Es ideal para revisar cómo están organizados los grupos de nodos grandes.
 
-May print, for example:
+Por ejemplo, se vería así:
 
 .. code:: text
 
-     ┖╴TheGame
-        ┠╴Menu
-        ┃  ┠╴Label
-        ┃  ┖╴Camera2D
-        ┖╴SplashScreen
-           ┖╴Camera2D
+    ┖╴ElJuego
+    ┠╴Menu
+    ┃  ┠╴Etiqueta
+    ┃  ┖╴Camara2D
+    ┖╴PantallaDeInicio
+    ┖╴Camara2D
 
 .. rst-class:: classref-item-separator
 
@@ -2935,11 +2935,11 @@ The notification :ref:`NOTIFICATION_RESET_PHYSICS_INTERPOLATION<class_Node_const
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc**\ (\ method\: :ref:`StringName<class_StringName>`, ...\ ) |vararg| :ref:`🔗<class_Node_method_rpc>`
 
-Sends a remote procedure call request for the given ``method`` to peers on the network (and locally), sending additional arguments to the method called by the RPC. The call request will only be received by nodes with the same :ref:`NodePath<class_NodePath>`, including the exact same :ref:`name<class_Node_property_name>`. Behavior depends on the RPC configuration for the given ``method`` (see :ref:`rpc_config()<class_Node_method_rpc_config>` and :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`). By default, methods are not exposed to RPCs.
+Envía una solicitud de llamada a procedimiento remoto (RPC) para el ``method`` dado a los pares (peers) en la red (y localmente), enviando argumentos adicionales al método llamado por la RPC. La solicitud de llamada solo será recibida por nodos con el mismo :ref:`NodePath<class_NodePath>`, incluyendo exactamente el mismo :ref:`name<class_Node_property_name>`. El comportamiento depende de la configuración de RPC para el ``method`` dado (ver :ref:`rpc_config()<class_Node_method_rpc_config>` y :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`). Por defecto, los métodos no están expuestos a las RPCs.
 
-May return :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` if the call is successful, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the arguments passed in the ``method`` do not match, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` if the node's :ref:`multiplayer<class_Node_property_multiplayer>` cannot be fetched (such as when the node is not inside the tree), :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>` if :ref:`multiplayer<class_Node_property_multiplayer>`'s connection is not available.
+Puede devolver :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si la llamada es exitosa, :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` si los argumentos pasados en el ``method`` no coinciden, :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>` si no se puede obtener el :ref:`multiplayer<class_Node_property_multiplayer>` del nodo (como cuando el nodo no está dentro del árbol), o :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>` si la conexión de :ref:`multiplayer<class_Node_property_multiplayer>` no está disponible.
 
-\ **Note:** You can only safely use RPCs on clients after you received the :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` signal from the :ref:`MultiplayerAPI<class_MultiplayerAPI>`. You also need to keep track of the connection state, either by the :ref:`MultiplayerAPI<class_MultiplayerAPI>` signals like :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` or by checking (``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
+\ **Nota:** Solo puedes usar RPCs de forma segura en los clientes después de haber recibido la señal :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` de la :ref:`MultiplayerAPI<class_MultiplayerAPI>`. También es necesario realizar un seguimiento del estado de la conexión, ya sea mediante las señales de la :ref:`MultiplayerAPI<class_MultiplayerAPI>` como :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>` o comprobando (``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``).
 
 .. rst-class:: classref-item-separator
 
@@ -3125,9 +3125,9 @@ If set to ``true``, enables shortcut processing for this node.
 
 |void| **set_process_unhandled_input**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_Node_method_set_process_unhandled_input>`
 
-If set to ``true``, enables unhandled input processing. It enables the node to receive all input that was not previously handled (usually by a :ref:`Control<class_Control>`).
+Si se establece en ``true``, habilita el procesamiento de entrada no manejada. Esto permite que el nodo reciba todas las entradas que no hayan sido manejadas previamente (usualmente por un :ref:`Control<class_Control>`).
 
-\ **Note:** If :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>` is overridden, this will be automatically enabled before :ref:`_ready()<class_Node_private_method__ready>` is called. Unhandled input processing is also already enabled for GUI controls, such as :ref:`Button<class_Button>` and :ref:`TextEdit<class_TextEdit>`.
+\ **Nota:** Si se sobrescribe :ref:`_unhandled_input()<class_Node_private_method__unhandled_input>`, esto se habilitará automáticamente antes de que se llame a :ref:`_ready()<class_Node_private_method__ready>`. El procesamiento de entrada no manejada también está ya habilitado para los controles de GUI, tales como :ref:`Button<class_Button>` y :ref:`TextEdit<class_TextEdit>`.
 
 .. rst-class:: classref-item-separator
 

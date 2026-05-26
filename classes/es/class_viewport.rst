@@ -33,9 +33,9 @@ Tutoriales
 
 - :doc:`Usando Viewports <../tutorials/rendering/viewports>`
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+- :doc:`Transformaciones de la ventana gráfica y del lienzo <../tutorials/2d/2d_transforms>`
 
-- `GUI in 3D Viewport Demo <https://godotengine.org/asset-library/asset/2807>`__
+- `Demostración GUI en el Viewport 3D <https://godotengine.org/asset-library/asset/2807>`__
 
 - `Demo de Viewport 3D en 2D <https://godotengine.org/asset-library/asset/2804>`__
 
@@ -957,7 +957,7 @@ enum **DefaultCanvasItemTextureFilter**: :ref:`🔗<enum_Viewport_DefaultCanvasI
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST** = ``0``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR:
 
@@ -965,7 +965,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR** = ``1``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS:
 
@@ -1019,7 +1019,7 @@ Desactiva la repetición de texturas. En su lugar, al leer UVs fuera del rango 0
 
 :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_ENABLED** = ``1``
 
-Enables the texture to repeat when UV coordinates are outside the 0-1 range. If using one of the linear filtering modes, this can result in artifacts at the edges of a texture when the sampler filters across the edges of the texture.
+Permite que la textura se repita cuando las coordenadas UV están fuera del rango 0-1. Si se utiliza uno de los modos de filtrado lineal, esto puede generar artefactos en los bordes de una textura cuando el muestreador filtra a través de los bordes de la textura.
 
 .. _class_Viewport_constant_DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR:
 
@@ -1309,7 +1309,7 @@ The rendering layers in which this **Viewport** renders :ref:`CanvasItem<class_C
 - |void| **set_default_canvas_item_texture_filter**\ (\ value\: :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>`\ )
 - :ref:`DefaultCanvasItemTextureFilter<enum_Viewport_DefaultCanvasItemTextureFilter>` **get_default_canvas_item_texture_filter**\ (\ )
 
-The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+El modo de filtro predeterminado que utilizan los nodos :ref:`CanvasItem<class_CanvasItem>` en este Viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -1326,7 +1326,7 @@ The default filter mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in thi
 - |void| **set_default_canvas_item_texture_repeat**\ (\ value\: :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>`\ )
 - :ref:`DefaultCanvasItemTextureRepeat<enum_Viewport_DefaultCanvasItemTextureRepeat>` **get_default_canvas_item_texture_repeat**\ (\ )
 
-The default repeat mode used by :ref:`CanvasItem<class_CanvasItem>` nodes in this viewport.
+El modo de repetición predeterminado que utilizan los nodos :ref:`CanvasItem<class_CanvasItem>` en este Viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -2400,7 +2400,7 @@ Devuelve el RID del viewport del :ref:`RenderingServer<class_RenderingServer>`.
 
 :ref:`Rect2<class_Rect2>` **get_visible_rect**\ (\ ) |const| :ref:`🔗<class_Viewport_method_get_visible_rect>`
 
-Returns the visible rectangle in global screen coordinates.
+Devuelve el rectángulo visible en coordenadas globales de la pantalla.
 
 .. rst-class:: classref-item-separator
 
@@ -2436,7 +2436,7 @@ Devuelve los datos de arrastre de la GUI, que fueron previamente devueltos por :
 
 :ref:`String<class_String>` **gui_get_drag_description**\ (\ ) |const| :ref:`🔗<class_Viewport_method_gui_get_drag_description>`
 
-Returns the human-readable description of the drag data, used for assistive apps.
+Devuelve la descripción legible por humanos de los datos de arrastre, utilizada para aplicaciones de asistencia.
 
 .. rst-class:: classref-item-separator
 
@@ -2512,7 +2512,7 @@ Quita el foco del :ref:`Control<class_Control>` actualmente enfocado dentro de e
 
 |void| **gui_set_drag_description**\ (\ description\: :ref:`String<class_String>`\ ) :ref:`🔗<class_Viewport_method_gui_set_drag_description>`
 
-Sets the human-readable description of the drag data to ``description``, used for assistive apps.
+Establece la descripción legible por humanos de los datos de arrastre en ``description``, utilizada para aplicaciones de asistencia.
 
 .. rst-class:: classref-item-separator
 

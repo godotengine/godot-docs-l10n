@@ -470,11 +470,11 @@ StringName
 
 :ref:`int<class_int>` **casecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_casecmp_to>`
 
-与另一个字符串进行比较，区分大小写。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。
+与另一个字符串进行区分大小写的比较。如果小于对方则返回 ``-1``\ ，大于对方则返回 ``1``\ ，相等则返回 ``0``\ 。 ‘小于’和‘大于’是由每个字符串的 `Unicode 码点 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 决定的，这大致相当于字母表的顺序。
 
-如果字符串长度不同，这个字符串比 ``to`` 字符串长时返回 ``1``\ ，短时返回 ``-1``\ 。请注意空字符串的长度\ *始终*\ 为 ``0``\ 。
+如果两个字符串长度不同，当本字符串比 ``to``\ （参数名）字符串更长时，返回 ``1``\ ；如果更短，则返回 ``-1``\ 。请注意，空字符串的长度\ *始终*\ 为 ``0``\ 。
 
-要从字符串比较中获得 :ref:`bool<class_bool>` 结果，请改用 ``==`` 运算符。另见 :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>` 和 :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`\ 。
+如果想从字符串比较中获取一个 :ref:`bool<class_bool>`\ （布尔值）结果，请改用 ``==`` 运算符。另请参阅 :ref:`nocasecmp_to()<class_StringName_method_nocasecmp_to>`\ 、\ :ref:`filecasecmp_to()<class_StringName_method_filecasecmp_to>` 和 :ref:`naturalcasecmp_to()<class_StringName_method_naturalcasecmp_to>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -618,32 +618,32 @@ StringName
 
 :ref:`int<class_int>` **find**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = 0\ ) |const| :ref:`🔗<class_StringName_method_find>`
 
-Returns the index of the **first** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the end of the string.
+返回 ``what`` 在该字符串中\ **第一次**\ 出现的索引，如果不存在则返回 ``-1``\ 。搜索的起点可以用 ``from`` 指定，持续到字符串结尾。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print("Team".find("I")) # Prints -1
+    print("Team".find("I")) # 输出 -1
 
-    print("Potato".find("t"))    # Prints 2
-    print("Potato".find("t", 3)) # Prints 4
-    print("Potato".find("t", 5)) # Prints -1
+    print("Potato".find("t"))    # 输出 2
+    print("Potato".find("t", 3)) # 输出 4
+    print("Potato".find("t", 5)) # 输出 -1
 
  .. code-tab:: csharp
 
-    GD.Print("Team".Find("I")); // Prints -1
+    GD.Print("Team".Find("I")); // 输出 -1
 
-    GD.Print("Potato".Find("t"));    // Prints 2
-    GD.Print("Potato".Find("t", 3)); // Prints 4
-    GD.Print("Potato".Find("t", 5)); // Prints -1
+    GD.Print("Potato".Find("t"));    // 输出 2
+    GD.Print("Potato".Find("t", 3)); // 输出 4
+    GD.Print("Potato".Find("t", 5)); // 输出 -1
 
 
 
-\ **Note:** If you just want to know whether the string contains ``what``, use :ref:`contains()<class_StringName_method_contains>`. In GDScript, you may also use the ``in`` operator.
+\ **注意：**\ 如果你只是想要知道该字符串中是否包含 ``what``\ ，请使用 :ref:`contains()<class_StringName_method_contains>`\ 。在 GDScript 中，你还可以使用 ``in`` 运算符。
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **注意：**\ ``from`` 的负值通过从最后一个有足够空间找到 ``what`` 的索引开始倒数来转换为起始索引。
 
 .. rst-class:: classref-item-separator
 
@@ -1351,11 +1351,11 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`int<class_int>` **nocasecmp_to**\ (\ to\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_nocasecmp_to>`
 
-与另一个字符串进行\ **不区分大小写**\ 的比较。小于时返回 ``-1``\ 、大于时返回 ``1``\ 、等于时返回 ``0``\ 。“小于”和“大于”比较的是字符串中的 `Unicode 码位 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ ，大致与字母表顺序一致。内部实现时，会将小写字符转换为大写后进行比较。
+对另一个字符串执行\ **不区分大小写**\ 的比较。如果（当前字符串）小于目标字符串，则返回 ``-1``\ ；如果大于，则返回 ``1``\ ；如果相等，则返回 ``0``\ 。“小于”或“大于”是根据每个字符串的 `Unicode 码点 <https://en.wikipedia.org/wiki/List_of_Unicode_characters>`__ 来确定的，这大致上相当于字母表的排列顺序。在内部处理时，所有小写字符都会被转换成大写来进行比较。
 
-如果字符串长度不同，这个字符串比 ``to`` 字符串长时返回 ``1``\ ，短时返回 ``-1``\ 。请注意空字符串的长度\ *始终*\ 为 ``0``\ 。
+如果两个字符串的长度不同，且当前字符串比 ``to`` 参数指定的字符串更长，则返回 ``1``\ ；如果更短，则返回 ``-1``\ 。请注意，空字符串的长度\ *始终*\ 为 ``0``\ 。
 
-要从字符串比较中获得 :ref:`bool<class_bool>` 结果，请改用 ``==`` 运算符。另见 :ref:`casecmp_to()<class_StringName_method_casecmp_to>`\ 、\ :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>` 和 :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>`\ 。
+如果你想从字符串比较中获取一个 :ref:`bool<class_bool>`\ （布尔值）结果，请改用 ``==`` 运算符。也可以参考 :ref:`casecmp_to()<class_StringName_method_casecmp_to>`\ 、\ :ref:`filenocasecmp_to()<class_StringName_method_filenocasecmp_to>` 和 :ref:`naturalnocasecmp_to()<class_StringName_method_naturalnocasecmp_to>` 这几个方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1417,7 +1417,7 @@ Returns the index of the **first** occurrence of ``what`` in this string, or ``-
 
 :ref:`String<class_String>` **remove_chars**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_remove_chars>`
 
-Removes all occurrences of the characters in ``chars``. See also :ref:`remove_char()<class_StringName_method_remove_char>`.
+移除所有出现在 ``chars`` 中的字符。另见 :ref:`remove_char()<class_StringName_method_remove_char>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1501,11 +1501,11 @@ Removes all occurrences of the characters in ``chars``. See also :ref:`remove_ch
 
 :ref:`int<class_int>` **rfind**\ (\ what\: :ref:`String<class_String>`, from\: :ref:`int<class_int>` = -1\ ) |const| :ref:`🔗<class_StringName_method_rfind>`
 
-Returns the index of the **last** occurrence of ``what`` in this string, or ``-1`` if there are none. The search's start can be specified with ``from``, continuing to the beginning of the string. This method is the reverse of :ref:`find()<class_StringName_method_find>`.
+返回这个字符串中 ``what`` **最后一次**\ 出现时的索引，不存在时则为 ``-1``\ 。搜索的起点可以用 ``from`` 指定，终点为该字符串的开头。这个方法与 :ref:`find()<class_StringName_method_find>` 相对。
 
-\ **Note:** A negative value of ``from`` is converted to a starting index by counting back from the last possible index with enough space to find ``what``.
+\ **注意：**\ ``from`` 的负值通过从最后一个有足够空间找到 ``what`` 的索引开始倒数来转换为起始索引。
 
-\ **Note:** A value of ``from`` that is greater than the last possible index with enough space to find ``what`` is considered out-of-bounds, and returns ``-1``.
+\ **注意：**\ 如果 ``from`` 的值大于能够找到 ``what`` 的最后一个可能索引，则视为越界，并返回 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1592,7 +1592,7 @@ Returns the index of the **last** occurrence of ``what`` in this string, or ``-1
 
 :ref:`String<class_String>` **rstrip**\ (\ chars\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_StringName_method_rstrip>`
 
-从该字符串的结尾移除 ``chars`` 中定义的字符。另见 :ref:`rstrip()<class_StringName_method_rstrip>`\ 。
+从该字符串的结尾移除 ``chars`` 中定义的字符。另见 :ref:`lstrip()<class_StringName_method_lstrip>`\ 。
 
 \ **注意：**\ ``chars`` 不是后缀。如果要移除后缀而不是一组字符，请使用 :ref:`trim_suffix()<class_StringName_method_trim_suffix>`\ 。
 

@@ -23,7 +23,7 @@ Il singleton JavaScriptBridge è implementato solo nell'esportazione Web. È uti
 Tutorial
 ----------------
 
-- :doc:`The JavaScriptBridge singleton <../tutorials/platform/web/javascript_bridge>`
+- :doc:`Il singleton JavaScriptBridge <../tutorials/platform/web/javascript_bridge>`
 
 .. rst-class:: classref-reftable-group
 

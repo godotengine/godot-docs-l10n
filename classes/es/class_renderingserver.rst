@@ -2239,7 +2239,7 @@ enum **LightBakeMode**: :ref:`🔗<enum_RenderingServer_LightBakeMode>`
 
 :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>` **LIGHT_BAKE_DISABLED** = ``0``
 
-La luz se ignora durante el procesado. Este es el modo más rápido, pero la luz se tendrá en cuenta al procesar la iluminación global. Este modo generalmente debe usarse para luces dinámicas que cambian rápidamente, ya que el efecto de la iluminación global es menos notable en esas luces.
+La luz se ignora durante el baking. Este es el modo más rápido, pero la luz se tendrá en cuenta al procesar la iluminación global. Este modo generalmente debe usarse para luces dinámicas que cambian rápidamente, ya que el efecto de la iluminación global es menos notable en esas luces.
 
 .. _class_RenderingServer_constant_LIGHT_BAKE_STATIC:
 
@@ -2247,7 +2247,7 @@ La luz se ignora durante el procesado. Este es el modo más rápido, pero la luz
 
 :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>` **LIGHT_BAKE_STATIC** = ``1``
 
-La luz se tiene en cuenta en el procesado estático (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar, pero su iluminación global no se actualizará en tiempo real. Esto es adecuado para cambios sutiles (como antorchas parpadeantes), pero generalmente no para cambios grandes como encender y apagar una luz.
+La luz se tiene en cuenta en el baking estático (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar, pero su iluminación global no se actualizará en tiempo real. Esto es adecuado para cambios sutiles (como antorchas parpadeantes), pero generalmente no para cambios grandes como encender y apagar una luz.
 
 .. _class_RenderingServer_constant_LIGHT_BAKE_DYNAMIC:
 
@@ -2255,7 +2255,7 @@ La luz se tiene en cuenta en el procesado estático (:ref:`VoxelGI<class_VoxelGI
 
 :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>` **LIGHT_BAKE_DYNAMIC** = ``2``
 
-La luz se tiene en cuenta en el procesado dinámico (solo :ref:`VoxelGI<class_VoxelGI>` y SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar con la actualización de la iluminación global en tiempo real. La apariencia de la iluminación global de la luz será ligeramente diferente en comparación con :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>`. Esto tiene un mayor costo de rendimiento en comparación con :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>`. Al usar SDFGI, la velocidad de actualización de las luces dinámicas se ve afectada por :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+La luz se tiene en cuenta en el baking dinámico (solo :ref:`VoxelGI<class_VoxelGI>` y SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar con la actualización de la iluminación global en tiempo real. La apariencia de la iluminación global de la luz será ligeramente diferente en comparación con :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>`. Esto tiene un mayor costo de rendimiento en comparación con :ref:`LIGHT_BAKE_STATIC<class_RenderingServer_constant_LIGHT_BAKE_STATIC>`. Al usar SDFGI, la velocidad de actualización de las luces dinámicas se ve afectada por :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
 
 .. rst-class:: classref-item-separator
 
@@ -3905,7 +3905,7 @@ enum **SkyMode**: :ref:`🔗<enum_RenderingServer_SkyMode>`
 
 :ref:`SkyMode<enum_RenderingServer_SkyMode>` **SKY_MODE_AUTOMATIC** = ``0``
 
-Selecciona automáticamente el modo de proceso apropiado según tu shader de cielo. Si tu shader usa ``TIME`` o ``POSITION``, esto usará :ref:`SKY_MODE_REALTIME<class_RenderingServer_constant_SKY_MODE_REALTIME>`. Si tu shader usa cualquiera de las variables ``LIGHT_*`` o cualquier uniforme personalizado, esto usa :ref:`SKY_MODE_INCREMENTAL<class_RenderingServer_constant_SKY_MODE_INCREMENTAL>`. De lo contrario, esto regresa por defecto a :ref:`SKY_MODE_QUALITY<class_RenderingServer_constant_SKY_MODE_QUALITY>`.
+Selecciona automáticamente el modo de proceso apropiado según tu shader de cielo. Si tu shader usa ``TIME`` o ``POSITION``, esto usará :ref:`SKY_MODE_REALTIME<class_RenderingServer_constant_SKY_MODE_REALTIME>`. Si tu shader usa cualquiera de las variables ``LIGHT_*`` o cualquier variable uniforme personalizada, esto usa :ref:`SKY_MODE_INCREMENTAL<class_RenderingServer_constant_SKY_MODE_INCREMENTAL>`. De lo contrario, esto regresa por defecto a :ref:`SKY_MODE_QUALITY<class_RenderingServer_constant_SKY_MODE_QUALITY>`.
 
 .. _class_RenderingServer_constant_SKY_MODE_QUALITY:
 
@@ -4315,7 +4315,7 @@ Utiliza una curva de mapeo de tonos similar a la de una película de alto contra
 
 :ref:`EnvironmentToneMapper<enum_RenderingServer_EnvironmentToneMapper>` **ENV_TONE_MAPPER_AGX** = ``4``
 
-Uses an adjustable film-like tonemapping curve and desaturates bright values for a more realistic appearance. Better than other tonemappers at maintaining the hue of colors as they become brighter. The slowest tonemapping option.
+Utiliza una curva de mapeo de tonos ajustable similar a la del cine y desatura los valores brillantes para lograr una apariencia más realista. Mantiene mejor el matiz de los colores a medida que aumentan su brillo en comparación con otros mapeadores de tonos. Es la opción de mapeo de tonos más lenta.
 
 .. rst-class:: classref-item-separator
 
@@ -5199,7 +5199,7 @@ Usa el modo de filtro por defecto para este :ref:`Viewport<class_Viewport>`.
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_LINEAR:
 
@@ -5207,7 +5207,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`CanvasItemTextureFilter<enum_RenderingServer_CanvasItemTextureFilter>` **CANVAS_ITEM_TEXTURE_FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -5289,7 +5289,7 @@ Desactiva la repetición de texturas. En su lugar, al leer UVs fuera del rango 0
 
 :ref:`CanvasItemTextureRepeat<enum_RenderingServer_CanvasItemTextureRepeat>` **CANVAS_ITEM_TEXTURE_REPEAT_ENABLED** = ``2``
 
-Enables the texture to repeat when UV coordinates are outside the 0-1 range. If using one of the linear filtering modes, this can result in artifacts at the edges of a texture when the sampler filters across the edges of the texture.
+Permite que la textura se repita cuando las coordenadas UV están fuera del rango 0-1. Si se utiliza uno de los modos de filtrado lineal, esto puede generar artefactos en los bordes de una textura cuando el muestreador filtra a través de los bordes de la textura.
 
 .. _class_RenderingServer_constant_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR:
 
@@ -5787,7 +5787,7 @@ Memoria de textura utilizada (en bytes).
 
 :ref:`RenderingInfo<enum_RenderingServer_RenderingInfo>` **RENDERING_INFO_BUFFER_MEM_USED** = ``4``
 
-Memoria de búfer utilizada (en bytes). Esto incluye datos de vértices, búferes uniformes y muchos tipos de búferes misceláneos utilizados internamente.
+Memoria de búfer utilizada (en bytes). Esto incluye datos de vértices, búferes de variables uniformes y muchos tipos de búferes misceláneos utilizados internamente.
 
 .. _class_RenderingServer_constant_RENDERING_INFO_VIDEO_MEM_USED:
 
@@ -6449,7 +6449,7 @@ Canvas no tiene un equivalente en :ref:`Resource<class_Resource>` o :ref:`Node<c
 
 |void| **canvas_item_add_animation_slice**\ (\ item\: :ref:`RID<class_RID>`, animation_length\: :ref:`float<class_float>`, slice_begin\: :ref:`float<class_float>`, slice_end\: :ref:`float<class_float>`, offset\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_RenderingServer_method_canvas_item_add_animation_slice>`
 
-Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
+Los comandos de dibujo subsiguientes se ignorarán a menos que se encuentren dentro del segmento de animación especificado. Esta es una forma más rápida de implementar animaciones que se repiten en segundo plano en lugar de redibujar constantemente.
 
 .. rst-class:: classref-item-separator
 
@@ -8685,7 +8685,7 @@ Devuelve el valor de la variable uniforme global de shader especificada por ``na
 
 :ref:`Array<class_Array>`\[:ref:`StringName<class_StringName>`\] **global_shader_parameter_get_list**\ (\ ) |const| :ref:`🔗<class_RenderingServer_method_global_shader_parameter_get_list>`
 
-Devuelve la lista de nombres de uniformes de shader globales.
+Devuelve la lista de nombres de variables uniformes de shader globales.
 
 \ **Nota:** :ref:`global_shader_parameter_get()<class_RenderingServer_method_global_shader_parameter_get>` tiene una gran penalización de rendimiento ya que el hilo de renderizado necesita sincronizarse con el hilo que lo llama, lo cual es lento. No uses este método durante el juego para evitar tirones. Si necesitas leer valores en un script después de configurarlos, considera crear un "autoload" donde almacenes los valores que necesitas consultar al mismo tiempo que los configuras como parámetros globales.
 
@@ -8869,7 +8869,7 @@ Devuelve el valor predeterminado de la variable uniforme de shader por instancia
 
 :ref:`Array<class_Array>`\[:ref:`Dictionary<class_Dictionary>`\] **instance_geometry_get_shader_parameter_list**\ (\ instance\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_RenderingServer_method_instance_geometry_get_shader_parameter_list>`
 
-Devuelve un diccionario con los nombres de los uniformes de shader por instancia de la instancia de geometría 3D especificada. El diccionario devuelto está en formato PropertyInfo, con las claves ``name``, ``class_name``, ``type``, ``hint``, ``hint_string`` y ``usage``. Equivalente a :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`.
+Devuelve un diccionario con los nombres de las variables uniformes de shader por instancia de la instancia de geometría 3D especificada. El diccionario devuelto está en formato PropertyInfo, con las claves ``name``, ``class_name``, ``type``, ``hint``, ``hint_string`` y ``usage``. Equivalente a :ref:`GeometryInstance3D.get_instance_shader_parameter()<class_GeometryInstance3D_method_get_instance_shader_parameter>`.
 
 .. rst-class:: classref-item-separator
 
@@ -9043,7 +9043,7 @@ Establece un margen para aumentar el tamaño del AABB cuando se seleccionan obje
 
 |void| **instance_set_ignore_culling**\ (\ instance\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_instance_set_ignore_culling>`
 
-Si ``true``, ignora tanto el culling de frustum como el de oclusión en la instancia de geometría 3D especificada. Esto no es lo mismo que :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, que solo ignora el culling de oclusión y deja el culling de frustum intacto.
+Si es ``true``, ignora tanto el culling de frustum como el de oclusión en la instancia de geometría 3D especificada. Esto no es lo mismo que :ref:`GeometryInstance3D.ignore_occlusion_culling<class_GeometryInstance3D_property_ignore_occlusion_culling>`, que solo ignora el culling de oclusión y deja el culling de frustum intacto.
 
 .. rst-class:: classref-item-separator
 
@@ -9229,7 +9229,7 @@ Establece el modo de sombra para esta luz direccional. Equivalente a :ref:`Direc
 
 |void| **light_directional_set_sky_mode**\ (\ light\: :ref:`RID<class_RID>`, mode\: :ref:`LightDirectionalSkyMode<enum_RenderingServer_LightDirectionalSkyMode>`\ ) :ref:`🔗<class_RenderingServer_method_light_directional_set_sky_mode>`
 
-Si ``true``, esta luz no se usará para nada excepto para los shaders de cielo. Úsalo para las luces que afectan a tu shader de cielo y que quieras ocultar para que no afecten al resto de la escena. Por ejemplo, puede que quieras activar esto cuando el sol en tu shader de cielo caiga por debajo del horizonte.
+Si es ``true``, esta luz no se usará para nada excepto para los shaders de cielo. Úsalo para las luces que afectan a tu shader de cielo y que quieras ocultar para que no afecten al resto de la escena. Por ejemplo, puede que quieras activar esto cuando el sol en tu shader de cielo caiga por debajo del horizonte.
 
 .. rst-class:: classref-item-separator
 
@@ -9265,7 +9265,7 @@ Establece el modo de filtro de textura a usar al renderizar proyectores de luz. 
 
 |void| **light_set_bake_mode**\ (\ light\: :ref:`RID<class_RID>`, bake_mode\: :ref:`LightBakeMode<enum_RenderingServer_LightBakeMode>`\ ) :ref:`🔗<class_RenderingServer_method_light_set_bake_mode>`
 
-Establece el modo de horneado a usar para la luz 3D especificada. Equivalente a :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>`.
+Establece el modo de baking a usar para la luz 3D especificada. Equivalente a :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -11443,7 +11443,7 @@ Devuelve una textura por defecto de un shader buscada por nombre.
 
 :ref:`Variant<class_Variant>` **shader_get_parameter_default**\ (\ shader\: :ref:`RID<class_RID>`, name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_RenderingServer_method_shader_get_parameter_default>`
 
-Devuelve el valor por defecto para el shader uniforme especificado. Este es usualmente el valor escrito en el código fuente del shader.
+Devuelve el valor por defecto para la variable uniforme del shader especificado. Este es usualmente el valor escrito en el código fuente del shader.
 
 .. rst-class:: classref-item-separator
 
@@ -12238,7 +12238,7 @@ The anisotropic filtering level also affects decals and light projectors if they
 
 |void| **viewport_set_canvas_cull_mask**\ (\ viewport\: :ref:`RID<class_RID>`, canvas_cull_mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_canvas_cull_mask>`
 
-Sets the rendering mask associated with this :ref:`Viewport<class_Viewport>`. Only :ref:`CanvasItem<class_CanvasItem>` nodes with a matching rendering visibility layer will be rendered by this :ref:`Viewport<class_Viewport>`.
+Establece la máscara de renderizado asociada con este :ref:`Viewport<class_Viewport>`. Solo los nodos :ref:`CanvasItem<class_CanvasItem>` con una capa de visibilidad de renderizado coincidente serán renderizados por este :ref:`Viewport<class_Viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -12250,11 +12250,11 @@ Sets the rendering mask associated with this :ref:`Viewport<class_Viewport>`. On
 
 |void| **viewport_set_canvas_stacking**\ (\ viewport\: :ref:`RID<class_RID>`, canvas\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`, sublayer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_canvas_stacking>`
 
-Sets the stacking order for a viewport's canvas.
+Establece el orden de apilamiento para el canvas de un viewport.
 
-\ ``layer`` is the actual canvas layer, while ``sublayer`` specifies the stacking order of the canvas among those in the same layer.
+\ ``layer`` es la capa real del canvas, mientras que ``sublayer`` especifica el orden de apilamiento del canvas entre los de la misma capa.
 
-\ **Note:** ``layer`` should be between :ref:`CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` and :ref:`CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` (inclusive). Any other value will wrap around.
+\ **Nota:** ``layer`` debe estar entre :ref:`CANVAS_LAYER_MIN<class_RenderingServer_constant_CANVAS_LAYER_MIN>` y :ref:`CANVAS_LAYER_MAX<class_RenderingServer_constant_CANVAS_LAYER_MAX>` (inclusivo). Cualquier otro valor se ajustará.
 
 .. rst-class:: classref-item-separator
 
@@ -12278,7 +12278,7 @@ Establece la transformación del canvas de un viewport.
 
 |void| **viewport_set_clear_mode**\ (\ viewport\: :ref:`RID<class_RID>`, clear_mode\: :ref:`ViewportClearMode<enum_RenderingServer_ViewportClearMode>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_clear_mode>`
 
-Sets the clear mode of a viewport.
+Establece el modo de limpieza de un viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -12290,7 +12290,7 @@ Sets the clear mode of a viewport.
 
 |void| **viewport_set_debug_draw**\ (\ viewport\: :ref:`RID<class_RID>`, draw\: :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_debug_draw>`
 
-Sets the debug draw mode of a viewport.
+Establece el modo de dibujo de depuración de un viewport.
 
 .. rst-class:: classref-item-separator
 
@@ -12484,7 +12484,7 @@ Sets the ``size`` of the shadow atlas's images (used for omni and spot lights) o
 
 |void| **viewport_set_render_direct_to_screen**\ (\ viewport\: :ref:`RID<class_RID>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_RenderingServer_method_viewport_set_render_direct_to_screen>`
 
-If ``true``, render the contents of the viewport directly to screen. This allows a low-level optimization where you can skip drawing a viewport to the root viewport. While this optimization can result in a significant increase in speed (especially on older devices), it comes at a cost of usability. When this is enabled, you cannot read from the viewport or from the screen_texture. You also lose the benefit of certain window settings, such as the various stretch modes. Another consequence to be aware of is that in 2D the rendering happens in window coordinates, so if you have a viewport that is double the size of the window, and you set this, then only the portion that fits within the window will be drawn, no automatic scaling is possible, even if your game scene is significantly larger than the window size.
+Si es ``true``, renderiza el contenido del viewport directamente en la pantalla. Esto permite una optimización de bajo nivel que permite omitir el dibujado de un viewport en el viewport raíz (root). Aunque esta optimización puede resultar en un aumento significativo de la velocidad (especialmente en dispositivos antiguos), conlleva un coste en usabilidad. Cuando se activa, no es posible leer desde el viewport ni desde la screen_texture. También se pierden los beneficios de ciertos ajustes de ventana, como los diversos modos de estiramiento (stretch modes). Otra consecuencia a tener en cuenta es que, en 2D, el renderizado ocurre en coordenadas de ventana; por lo tanto, si tienes un viewport que dobla el tamaño de la ventana y activas esta opción, solo se dibujará la parte que quepa dentro de la ventana, ya que no es posible el escalado automático, incluso si tu escena de juego es significativamente más grande que el tamaño de la ventana.
 
 .. rst-class:: classref-item-separator
 

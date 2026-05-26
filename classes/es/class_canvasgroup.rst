@@ -7,16 +7,16 @@ CanvasGroup
 
 **Hereda:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-Merges several 2D nodes into a single draw operation.
+Combina varios nodos 2D en una única operación de dibujo.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn as a single object. It allows to e.g. draw overlapping translucent 2D nodes without causing the overlapping sections to be more opaque than intended (set the :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` property on the **CanvasGroup** to achieve this effect).
+Los nodos hijos :ref:`CanvasItem<class_CanvasItem>` de un **CanvasGroup** se dibujan como un objeto único. Permite, por ejemplo, dibujar nodos 2D traslúcidos superpuestos sin que las secciones solapadas sean más opacas de lo previsto (establece la propiedad :ref:`CanvasItem.self_modulate<class_CanvasItem_property_self_modulate>` en el **CanvasGroup** para lograr este efecto).
 
-\ **Note:** The **CanvasGroup** uses a custom shader to read from the backbuffer to draw its children. Assigning a :ref:`Material<class_Material>` to the **CanvasGroup** overrides the built-in shader. To duplicate the behavior of the built-in shader in a custom :ref:`Shader<class_Shader>`, use the following:
+\ **Nota:** El **CanvasGroup** utiliza un shader personalizado para leer desde el backbuffer y dibujar a sus hijos. Asignar un :ref:`Material<class_Material>` al **CanvasGroup** anula el shader integrado. Para duplicar el comportamiento del shader integrado en un :ref:`Shader<class_Shader>` personalizado, utiliza lo siguiente:
 
 ::
 
@@ -35,7 +35,7 @@ Child :ref:`CanvasItem<class_CanvasItem>` nodes of a **CanvasGroup** are drawn a
         COLOR *= c;
     }
 
-\ **Note:** Since **CanvasGroup** and :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` both utilize the backbuffer, children of a **CanvasGroup** who have their :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` set to anything other than :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` will not function correctly.
+\ **Nota:** Dado que tanto **CanvasGroup** como :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` utilizan el backbuffer, los hijos de un **CanvasGroup** que tengan su :ref:`CanvasItem.clip_children<class_CanvasItem_property_clip_children>` establecido en cualquier valor distinto de :ref:`CanvasItem.CLIP_CHILDREN_DISABLED<class_CanvasItem_constant_CLIP_CHILDREN_DISABLED>` no funcionarán correctamente.
 
 .. rst-class:: classref-reftable-group
 
@@ -73,7 +73,7 @@ Descripciones de Propiedades
 - |void| **set_clear_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_clear_margin**\ (\ )
 
-Sets the size of the margin used to expand the clearing rect of this **CanvasGroup**. This expands the area of the backbuffer that will be used by the **CanvasGroup**. A smaller margin will reduce the area of the backbuffer used which can increase performance, however if :ref:`use_mipmaps<class_CanvasGroup_property_use_mipmaps>` is enabled, a small margin may result in mipmap errors at the edge of the **CanvasGroup**. Accordingly, this should be left as small as possible, but should be increased if artifacts appear along the edges of the canvas group.
+Establece el tamaño del margen utilizado para expandir el área de borrado de este **CanvasGroup**. Esto expande el área del búfer de fondo que utilizará el **CanvasGroup**. Un margen menor reducirá el área del búfer de fondo utilizada, lo que puede mejorar el rendimiento; sin embargo, si :ref:`use_mipmaps<class_CanvasGroup_property_use_mipmaps>` está habilitado, un margen pequeño puede provocar errores de mipmap en el borde del **CanvasGroup**. Por lo tanto, debe dejarse lo más pequeño posible, pero debe aumentarse si aparecen artefactos en los bordes del grupo de lienzos.
 
 .. rst-class:: classref-item-separator
 
@@ -90,7 +90,7 @@ Sets the size of the margin used to expand the clearing rect of this **CanvasGro
 - |void| **set_fit_margin**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_fit_margin**\ (\ )
 
-Sets the size of a margin used to expand the drawable rect of this **CanvasGroup**. The size of the **CanvasGroup** is determined by fitting a rect around its children then expanding that rect by :ref:`fit_margin<class_CanvasGroup_property_fit_margin>`. This increases both the backbuffer area used and the area covered by the **CanvasGroup** both of which can reduce performance. This should be kept as small as possible and should only be expanded when an increased size is needed (e.g. for custom shader effects).
+Establece el tamaño de un margen utilizado para expandir el rectángulo dibujable de este **CanvasGroup**. El tamaño del **CanvasGroup** se determina ajustando un rectángulo alrededor de sus elementos secundarios y luego expandiendo ese rectángulo mediante :ref:`fit_margin<class_CanvasGroup_property_fit_margin>`. Esto aumenta tanto el área del backbuffer utilizada como el área cubierta por el **CanvasGroup**, lo que puede reducir el rendimiento. Este margen debe mantenerse lo más pequeño posible y solo debe expandirse cuando se necesite un tamaño mayor (por ejemplo, para efectos de sombreado personalizados).
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Sets the size of a margin used to expand the drawable rect of this **CanvasGroup
 - |void| **set_use_mipmaps**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_using_mipmaps**\ (\ )
 
-If ``true``, calculates mipmaps for the backbuffer before drawing the **CanvasGroup** so that mipmaps can be used in a custom :ref:`ShaderMaterial<class_ShaderMaterial>` attached to the **CanvasGroup**. Generating mipmaps has a performance cost so this should not be enabled unless required.
+Si es ``true``, calcula los mipmaps para el backbuffer antes de dibujar el **CanvasGroup** para que los mipmaps se puedan usar en un :ref:`ShaderMaterial<class_ShaderMaterial>` personalizado adjunto al **CanvasGroup**. La generación de mipmaps tiene un coste de rendimiento, por lo que no debe habilitarse a menos que sea necesario.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

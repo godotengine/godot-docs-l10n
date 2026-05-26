@@ -14,13 +14,13 @@ EditorSettings
 描述
 ----
 
-Object that holds the project-independent editor settings. These settings are generally visible in the **Editor > Editor Settings** menu.
+保存编辑器设置的对象，这些设置与项目无关，通常在\ **编辑器 > 编辑器设置**\ 菜单中可见。
 
-Property names use slash delimiters to distinguish sections. Setting values can be of any :ref:`Variant<class_Variant>` type. It's recommended to use ``snake_case`` for editor settings to be consistent with the Godot editor itself.
+属性名称中使用斜线分隔符来区分不同的部分。设置的值可以是任何 :ref:`Variant<class_Variant>` 类型。编辑器设置的名称建议使用 ``snake_case`` 形式，与 Godot 编辑器本身保持一致。
 
-Editor settings are saved automatically when changed.
+编辑器设置在更改时会自动保存。
 
-Accessing the settings can be done using the following methods, such as:
+可以使用以下方法访问设置，例如：
 
 
 .. tabs::
@@ -28,24 +28,24 @@ Accessing the settings can be done using the following methods, such as:
  .. code-tab:: gdscript
 
     var settings = EditorInterface.get_editor_settings()
-    # `settings.set("some/property", 10)` also works as this class overrides `_set()` internally.
+    # 也可以写 `settings.set("some/property", 10)`，因为这个类内部覆盖了 `_set()`。
     settings.set_setting("some/property", 10)
-    # `settings.get("some/property")` also works as this class overrides `_get()` internally.
+    # 也可以写 `settings.get("some/property")` ，因为这个类内部覆盖了 `_get()`。
     settings.get_setting("some/property")
     var list_of_settings = settings.get_property_list()
 
  .. code-tab:: csharp
 
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
-    // `settings.set("some/property", value)` also works as this class overrides `_set()` internally.
+    // 也可以写 `settings.set("some/property", 10)`，因为这个类内部覆盖了 `_set()`。
     settings.SetSetting("some/property", Value);
-    // `settings.get("some/property", value)` also works as this class overrides `_get()` internally.
+    // 也可以写 `settings.get("some/property")` ，因为这个类内部覆盖了 `_get()`。
     settings.GetSetting("some/property");
     Godot.Collections.Array<Godot.Collections.Dictionary> listOfSettings = settings.GetPropertyList();
 
 
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>`.
+\ **注意：**\ 不能直接实例化这个类。请改用 :ref:`EditorInterface.get_editor_settings()<class_EditorInterface_method_get_editor_settings>` 访问单例。
 
 .. rst-class:: classref-reftable-group
 
@@ -1336,7 +1336,7 @@ Accessing the settings can be done using the following methods, such as:
 
 :ref:`float<class_float>` **editors/2d/auto_resample_delay** :ref:`🔗<class_EditorSettings_property_editors/2d/auto_resample_delay>`
 
-Delay time for automatic resampling in the 2D editor (in seconds).
+2D 编辑器中自动重采样的延迟时间（单位为秒）。
 
 .. rst-class:: classref-item-separator
 
@@ -1372,7 +1372,7 @@ Delay time for automatic resampling in the 2D editor (in seconds).
 
 :ref:`Color<class_Color>` **editors/2d/bone_ik_color** :ref:`🔗<class_EditorSettings_property_editors/2d/bone_ik_color>`
 
-2D 骨架编辑器中，用于启用了反向运动学的骨骼的颜色。
+2D 骨架编辑器中，用于启用了反向动力学的骨骼的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1924,7 +1924,7 @@ Delay time for automatic resampling in the 2D editor (in seconds).
 
 :ref:`float<class_float>` **editors/3d/navigation_feel/angle_snap_threshold** :ref:`🔗<class_EditorSettings_property_editors/3d/navigation_feel/angle_snap_threshold>`
 
-The angle threshold for snapping camera rotation to 45-degree angles while orbiting with :kbd:`Alt` held.
+在按住 :kbd:`Alt` 键进行视轨操作时，将相机旋转角度吸附到 45 度角的角度阈值。
 
 .. rst-class:: classref-item-separator
 
@@ -2044,7 +2044,7 @@ The angle threshold for snapping camera rotation to 45-degree angles while orbit
 
 :ref:`int<class_int>` **editors/3d/show_gizmo_during_rotation** :ref:`🔗<class_EditorSettings_property_editors/3d/show_gizmo_during_rotation>`
 
-If checked, the transform gizmo remains visible during rotation in that transform mode.
+如果勾选，则在相应的变换模式下进行旋转操作时，变换小工具将保持可见。
 
 .. rst-class:: classref-item-separator
 
@@ -2128,7 +2128,7 @@ CSG 节点（例如 :ref:`CSGShape3D<class_CSGShape3D>` 和 :ref:`CSGBox3D<class
 
 :ref:`Color<class_Color>` **editors/3d_gizmos/gizmo_colors/ik_chain** :ref:`🔗<class_EditorSettings_property_editors/3d_gizmos/gizmo_colors/ik_chain>`
 
-The 3D editor gizmo color for the :ref:`IKModifier3D<class_IKModifier3D>` guides.
+:ref:`IKModifier3D<class_IKModifier3D>` 引导线对应的 3D 编辑器小工具的颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -2516,9 +2516,9 @@ The 3D editor gizmo color for the :ref:`IKModifier3D<class_IKModifier3D>` guides
 
 :ref:`bool<class_bool>` **editors/animation/insert_at_current_time** :ref:`🔗<class_EditorSettings_property_editors/animation/insert_at_current_time>`
 
-If ``true``, animation keys and markers are inserted at the current time in the animation.
+如果为 ``true``\ ，则动画关键帧和标记将被插入到动画的当前时间点。
 
-If ``false``, they are inserted at the mouse cursor's position.
+如果为 ``false``\ ，则它们将被插入到鼠标光标所在的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3286,22 +3286,22 @@ SSH 可执行文件的路径（用于向桌面平台进行远程部署）。如�
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-Blender 可执行文件的路径，用于在导入时将 Blender 3D 场景文件 ``.blend`` 转换为 glTF 2.0 格式。必须是 Blender 3.0 或后续版本。
+The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-针对特定项目启用该功能请使用 :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`\ 。
+To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-如果将该设置留空，则会检测 Blender 的默认位置，如果存在就会自动使用，检测顺序如下：
+If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
 
-\ **Windows：**\ 
+\ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
-\ **macOS：**\ 
+\ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3309,9 +3309,9 @@ Blender 可执行文件的路径，用于在导入时将 Blender 3D 场景文件
     - /usr/local/opt/blender
     - /Applications/Blender.app/Contents/MacOS/Blender
 
-\ **Linux/\*BSD：**\ 
+\ **Linux/\*BSD:**\ 
 
-::
+.. code:: text
 
     - /usr/bin/blender
     - /usr/local/bin/blender
@@ -3395,9 +3395,9 @@ Blender 进程的最大空闲运行时间（单位为秒）。
 
 :ref:`bool<class_bool>` **filesystem/on_save/warn_on_saving_large_text_resources** :ref:`🔗<class_EditorSettings_property_filesystem/on_save/warn_on_saving_large_text_resources>`
 
-If ``true``, displays a warning toast message when saving a text-based scene or resource that is larger than 500 KiB on disk. This is typically caused by binary subresources being embedded as text, which results in slow and inefficient conversion to text. This in turn impacts scene saving and loading times.
+如果为 ``true``\ ，则在保存大于 500 KiB 的基于文本的场景或资源时，会显示警告提示框消息。这通常是由于将二进制子资源嵌入为文本导致的，这会导致转换成文本的过程缓慢且低效。进而影响场景的保存和加载时间。
 
-This should usually be resolved by moving the embedded binary subresource to its own binary resource file (``.res`` extension instead of ``.tres``). This is the preferred approach. Alternatively, the entire scene can be saved with the binary ``.scn`` format as opposed to ``.tscn``, but this will make it less friendly to version control systems.
+通常可以通过将嵌入的二进制子资源移动到它自己的二进制资源文件（使用 ``.res`` 扩展名而不是 ``.tres``\ ）来解决该问题。这是推荐的方法。或者，可以将整个场景保存为二进制 ``.scn`` 格式，而不是 ``.tscn`` 格式，但这会使它对版本控制系统不那么友好。
 
 .. rst-class:: classref-item-separator
 
@@ -3449,7 +3449,7 @@ This should usually be resolved by moving the embedded binary subresource to its
 
 :ref:`bool<class_bool>` **filesystem/quick_open_dialog/instant_preview** :ref:`🔗<class_EditorSettings_property_filesystem/quick_open_dialog/instant_preview>`
 
-If ``true``, highlighting a resource will preview it quickly without confirming the selection or closing the dialog.
+如果为 ``true``\ ，则高亮显示资源后会快速预览该资源，而无需确认选择或关闭对话框。
 
 .. rst-class:: classref-item-separator
 
@@ -3543,15 +3543,15 @@ If ``true``, highlighting a resource will preview it quickly without confirming 
 
 :ref:`int<class_int>` **interface/accessibility/accessibility_support** :ref:`🔗<class_EditorSettings_property_interface/accessibility/accessibility_support>`
 
-Editor accessibility support mode:
+编辑器无障碍支持模式：
 
-- **Auto** (``0``): Accessibility support is enabled, but updates to the accessibility information are processed only if an assistive app (such as a screen reader or a Braille display) is active (default).
+- **Auto**\ （\ ``0``\ ）：启用无障碍支持，但只会在辅助应用（屏幕阅读器、盲文显示器等）处于活动状态时才会处理无障碍信息的更新（默认）。
 
-- **Always Active** (``1``): Accessibility support is enabled, and updates to the accessibility information are always processed, regardless of the status of assistive apps.
+- **Always Active**\ （\ ``1``\ ）：启用无障碍支持，无论当前辅助应用的状态都会处理无障碍信息的处理。
 
-- **Disabled** (``2``): Accessibility support is fully disabled.
+- **Disabled**\ （\ ``2``\ ）：完全禁用无障碍支持。
 
-\ **Note:** Accessibility debugging tools, such as Accessibility Insights for Windows, Accessibility Inspector (macOS), or AT-SPI Browser (Linux/BSD), do not count as assistive apps. To test the editor with these tools, use **Always Active**.
+\ **注意：**\ Accessibility Insights for Windows、Accessibility Inspector（macOS）、AT-SPI 浏览器（Linux/BSD）等无障碍调试工具不算作辅助应用。要使用这些工具测试编辑器，请使用 **Always Active**\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3563,15 +3563,15 @@ Editor accessibility support mode:
 
 :ref:`int<class_int>` **interface/editor/accept_dialog_cancel_ok_buttons** :ref:`🔗<class_EditorSettings_property_interface/editor/accept_dialog_cancel_ok_buttons>`
 
-How to position the Cancel and OK buttons in the editor's :ref:`AcceptDialog<class_AcceptDialog>` windows. Different platforms have different conventions for this, which can be overridden through this setting to avoid accidental clicks when using Godot on multiple platforms.
+如何在编辑器的 :ref:`AcceptDialog<class_AcceptDialog>` 窗口中定位“取消”和“确定”按钮。不同的平台对此有不同的约定，可以用这个设置来覆盖，以避免在多个平台上使用 Godot 时误触。
 
-- **Auto** follows the platform convention: OK first on Windows, KDE, and LXQt; Cancel first on macOS and other Linux desktop environments.
+- **Auto** 遵守平台约定：Windows、KDE、LXQt 上“确定”在前；macOS 及其他 Linux 桌面上“取消”在前。
 
-- **Cancel First** forces the Cancel/OK ordering.
+- **Cancel First** 强制为取消、确定的顺序。
 
-- **OK First** forces the OK/Cancel ordering.
+- **OK First** 强制为确定、取消的顺序。
 
-To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`.
+要检查这些按钮在运行时是否被调换位置，请使用 :ref:`DisplayServer.get_swap_cancel_ok()<class_DisplayServer_method_get_swap_cancel_ok>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3595,7 +3595,7 @@ To check if these buttons are swapped at runtime, use :ref:`DisplayServer.get_sw
 
 :ref:`int<class_int>` **interface/editor/bottom_dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/bottom_dock_tab_style>`
 
-Tab style of editor docks located at the bottom.
+编辑器停靠面板的选项卡位于底部。
 
 .. rst-class:: classref-item-separator
 
@@ -3719,7 +3719,7 @@ Tab style of editor docks located at the bottom.
 
 :ref:`int<class_int>` **interface/editor/dock_tab_style** :ref:`🔗<class_EditorSettings_property_interface/editor/dock_tab_style>`
 
-Tab style of editor docks, except bottom docks.
+除底部外的编辑器停靠面板的选项卡样式。
 
 .. rst-class:: classref-item-separator
 
@@ -3731,7 +3731,7 @@ Tab style of editor docks, except bottom docks.
 
 :ref:`float<class_float>` **interface/editor/dragging_hover_wait_seconds** :ref:`🔗<class_EditorSettings_property_interface/editor/dragging_hover_wait_seconds>`
 
-During a drag-and-drop, this is how long to wait over a UI element before it triggers a reaction (e.g. a section unfolds to show nested items).
+在拖放操作过程中，这是在用户界面元素上停留多久才会触发反应（例如，某个部分展开以显示嵌套项目）。
 
 .. rst-class:: classref-item-separator
 
@@ -3743,9 +3743,9 @@ During a drag-and-drop, this is how long to wait over a UI element before it tri
 
 :ref:`String<class_String>` **interface/editor/editor_language** :ref:`🔗<class_EditorSettings_property_interface/editor/editor_language>`
 
-The language to use for the editor interface. If set to **Auto**, the language is automatically determined based on the system locale. See also :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`.
+用于编辑器界面的语言。如果设置为 **Auto**\ ，则语言将根据系统区域设置自动确定。另见 :ref:`EditorInterface.get_editor_language()<class_EditorInterface_method_get_editor_language>`\ 。
 
-Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
+翻译由社区提供。如果发现错误，请\ `在 Weblate 上为编辑器翻译作出贡献！ <https://contributing.godotengine.org/en/latest/documentation/translation/index.html>`__
 
 .. rst-class:: classref-item-separator
 
@@ -3931,11 +3931,11 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 :ref:`String<class_String>` **interface/editor/main_font_custom_opentype_features** :ref:`🔗<class_EditorSettings_property_interface/editor/main_font_custom_opentype_features>`
 
-List of custom OpenType features to use, if supported by the currently configured main font. Check what OpenType features are supported by your font first.
+可以使用的自定义 OpenType 功能列表，如果当前配置的主字体支持的话。请先检查你的字体支持哪些 OpenType 功能。
 
-The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false``. Microsoft's documentation contains a list of `all registered features <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__.
+该字符串应遵循 OpenType 规范，例如 ``ss01,tnum,calt=false``\ 。微软的文档包含\ `所有已注册功能 <https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist>`__\ 的列表。
 
-\ **Note:** The default editor main font (`Inter <https://rsms.me/inter>`__) has custom OpenType features in its font file, with ``ss04`` and ``tnum`` enabled and ``calt`` disabled by default. Supported features can be found at its website.
+\ **注意：**\ 默认编辑器主字体（\ `Inter <https://rsms.me/inter>`__\ ）在其字体文件中包含自定义 OpenType 功能，默认情况下启用 ``ss04`` 和 ``tnum``\ ，禁用 ``calt``\ 。支持的功能可在其网站上找到。
 
 .. rst-class:: classref-item-separator
 
@@ -4333,7 +4333,7 @@ The string should follow the OpenType specification, e.g. ``ss01,tnum,calt=false
 
 :ref:`float<class_float>` **interface/inspector/integer_drag_speed** :ref:`🔗<class_EditorSettings_property_interface/inspector/integer_drag_speed>`
 
-Base speed for increasing/decreasing integer values by dragging them in the inspector.
+在检查器中拖动整数值以增加/减少数值时的基本速度。
 
 .. rst-class:: classref-item-separator
 
@@ -4455,7 +4455,7 @@ Base speed for increasing/decreasing integer values by dragging them in the insp
 
 :ref:`bool<class_bool>` **interface/scene_tabs/auto_select_current_scene_file** :ref:`🔗<class_EditorSettings_property_interface/scene_tabs/auto_select_current_scene_file>`
 
-If ``true``, the FileSystem dock will automatically navigate to the currently selected scene tab.
+如果为 ``true``\ ，则文件系统停靠面板将自动导航到当前选定的场景选项卡。
 
 .. rst-class:: classref-item-separator
 
@@ -4591,7 +4591,7 @@ If ``true``, the FileSystem dock will automatically navigate to the currently se
 
 :ref:`String<class_String>` **interface/theme/color_preset** :ref:`🔗<class_EditorSettings_property_interface/theme/color_preset>`
 
-The editor color preset to use.
+要使用的编辑器颜色预设。
 
 .. rst-class:: classref-item-separator
 
@@ -4651,13 +4651,13 @@ The editor color preset to use.
 
 :ref:`int<class_int>` **interface/theme/draw_relationship_lines** :ref:`🔗<class_EditorSettings_property_interface/theme/draw_relationship_lines>`
 
-What relationship lines to draw in the editor's :ref:`Tree<class_Tree>`-based GUIs (such as the Scene tree dock).
+如何在编辑器的基于 :ref:`Tree<class_Tree>` 的图形用户界面（例如场景树停靠面板）中绘制关系线。
 
-- **None** will make it so that no relationship lines are drawn.
+- **None**\ ：不绘制任何关系线。
 
-- **Selected Only** will only draw them for selected items.
+- **Selected Only**\ ：仅为选中的项目绘制关系线。
 
-- **All** will always draw them for all items.
+- **All**\ ：始终为所有项目绘制关系线。
 
 .. rst-class:: classref-item-separator
 
@@ -4737,7 +4737,7 @@ What relationship lines to draw in the editor's :ref:`Tree<class_Tree>`-based GU
 
 :ref:`String<class_String>` **interface/theme/style** :ref:`🔗<class_EditorSettings_property_interface/theme/style>`
 
-The editor theme style to use.
+要使用的编辑器主题样式。
 
 .. rst-class:: classref-item-separator
 
@@ -4791,9 +4791,9 @@ The editor theme style to use.
 
 :ref:`bool<class_bool>` **interface/touchscreen/enable_touch_optimizations** :ref:`🔗<class_EditorSettings_property_interface/touchscreen/enable_touch_optimizations>`
 
-If ``true``, increases the scrollbar touch area, enables a larger dragger for split containers, and increases PopupMenu vertical separation to improve usability on touchscreen devices.
+如果为 ``true``\ ，则增加滚动条触摸区域，为拆分容器启用更大的拖动器，并增加弹出菜单的垂直间距，以提高在触摸屏设备上的可用性。
 
-\ **Note:** Defaults to ``true`` on touchscreen devices.
+\ **注意：**\ 在触摸屏设备上默认为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4855,9 +4855,9 @@ If ``true``, increases the scrollbar touch area, enables a larger dragger for sp
 
 :ref:`int<class_int>` **network/connection/network_mode** :ref:`🔗<class_EditorSettings_property_network/connection/network_mode>`
 
-Determines whether online features, such as the Asset Library or update checks, are enabled in the editor. If this is a privacy concern, disabling these online features prevents the editor from making HTTP requests to the Godot website or third-party platforms hosting assets from the Asset Library.
+决定编辑器中是否启用资产库、更新检查等在线功能。如果这涉及到隐私问题，禁用这些在线功能可以防止编辑器向 Godot 网站和托管资产库中资产的第三方平台发出 HTTP 请求。
 
-Editor plugins and tool scripts are recommended to follow this setting. However, Godot can't prevent them from violating this rule.
+建议编辑器插件和工具脚本遵循该设置。但是 Godot 无法阻止违反该规则的行为。
 
 .. rst-class:: classref-item-separator
 
@@ -4921,7 +4921,7 @@ Editor plugins and tool scripts are recommended to follow this setting. However,
 
 :ref:`String<class_String>` **network/tls/editor_tls_certificates** :ref:`🔗<class_EditorSettings_property_network/tls/editor_tls_certificates>`
 
-The TLS certificate bundle to use for HTTP requests made within the editor (e.g. from the AssetLib tab). If left empty, the `included Mozilla certificate bundle <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__ will be used.
+用于在编辑器中发出的 HTTP 请求（例如来自 AssetLib 选项卡）的 TLS 证书包。如果留空，将使用\ `包含的 Mozilla 证书包 <https://github.com/godotengine/godot/blob/master/thirdparty/certs/ca-bundle.crt>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4959,7 +4959,7 @@ The TLS certificate bundle to use for HTTP requests made within the editor (e.g.
 
 :ref:`int<class_int>` **project_manager/directory_naming_convention** :ref:`🔗<class_EditorSettings_property_project_manager/directory_naming_convention>`
 
-Directory naming convention for the project manager. Options are "No Convention" (project name is directory name), "kebab-case" (default), "snake_case", "camelCase", "PascalCase", or "Title Case".
+项目管理器的目录命名规则。选项有 “No Convention”（使用项目名称作为目录名称）、“kebab-case”（默认）、“snake_case”、“camelCase”、“PascalCase”、和 “Title Case”。
 
 .. rst-class:: classref-item-separator
 
@@ -5617,7 +5617,7 @@ Directory naming convention for the project manager. Options are "No Convention"
 
 :ref:`bool<class_bool>` **text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method** :ref:`🔗<class_EditorSettings_property_text_editor/behavior/navigation/open_script_when_connecting_signal_to_existing_method>`
 
-If ``true``, opens the script editor when connecting a signal to an existing script method from the Signals dock.
+如果为 ``true``\ ，则在从信号面板将信号连接到现有脚本方法时打开脚本编辑器。
 
 .. rst-class:: classref-item-separator
 
@@ -5729,15 +5729,15 @@ If ``true``, opens the script editor when connecting a signal to an existing scr
 
 :ref:`bool<class_bool>` **text_editor/completion/add_type_hints** :ref:`🔗<class_EditorSettings_property_text_editor/completion/add_type_hints>`
 
-If ``true``, automatically adds :doc:`GDScript static typing <../tutorials/scripting/gdscript/static_typing>` (such as ``-> void`` and ``: int``) in many situations where it's possible to, including when:
+如果为 ``true``\ ，则会在可能的情况下自动添加 :doc:`GDScript 静态类型 <../tutorials/scripting/gdscript/static_typing>`\ （例如 ``-> void`` 和 ``: int``\ ），包括：
 
-- Accepting a suggestion from code autocompletion;
+- 接受代码补全建议；
 
-- Creating a new script from a template;
+- 根据模板新建脚本；
 
-- Connecting signals from the Signals dock;
+- 在“信号”面板连接信号；
 
-- Creating variables prefixed with :ref:`@GDScript.@onready<class_@GDScript_annotation_@onready>`, by dropping nodes from the Scene dock into the script editor while holding :kbd:`Ctrl`.
+- 按住 :kbd:`Ctrl` 将“场景”面板中的节点拖放进脚本编辑器中创建 :ref:`@GDScript.@onready<class_@GDScript_annotation_@onready>` 变量。
 
 .. rst-class:: classref-item-separator
 
@@ -6025,7 +6025,7 @@ If ``true``, automatically adds :doc:`GDScript static typing <../tutorials/scrip
 
 :ref:`bool<class_bool>` **text_editor/script_list/show_members_overview** :ref:`🔗<class_EditorSettings_property_text_editor/script_list/show_members_overview>`
 
-If ``true``, displays an overview of the current script's member functions at the left of the script editor. See also :ref:`text_editor/script_list/sort_members_outline_alphabetically<class_EditorSettings_property_text_editor/script_list/sort_members_outline_alphabetically>`.
+如果为 ``true``\ ，则在脚本编辑器的左侧显示当前脚本的成员函数的概览。另见 :ref:`text_editor/script_list/sort_members_outline_alphabetically<class_EditorSettings_property_text_editor/script_list/sort_members_outline_alphabetically>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6635,9 +6635,9 @@ GDScript 语法高亮器对 :ref:`StringName<class_StringName>` 字面量所使�
 
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/string_placeholder_color** :ref:`🔗<class_EditorSettings_property_text_editor/theme/highlighting/string_placeholder_color>`
 
-The script editor's color for string placeholders, such as ``%s`` and ``{_}``. Refer to the :doc:`GDScript format strings documentation <../tutorials/scripting/gdscript/gdscript_format_string>` for more details.
+脚本编辑器中用于如 ``%s`` 和 ``{_}`` 等字符串占位符的颜色。更多详情请参阅 :doc:`GDScript 格式化字符串文档 <../tutorials/scripting/gdscript/gdscript_format_string>`\ 。
 
-\ **Note:** Only the default ``{_}`` placeholder patterns are highlighted for the :ref:`String.format()<class_String_method_format>` method. Custom patterns still appear as plain strings.
+\ **注意：**\ 只有默认的 ``{_}`` 占位符符号在使用 :ref:`String.format()<class_String_method_format>` 方法时会被高亮显示。自定义符号仍然会显示为普通字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -6814,31 +6814,31 @@ The script editor's color for string placeholders, such as ``%s`` and ``{_}``. R
 
 |void| **add_shortcut**\ (\ path\: :ref:`String<class_String>`, shortcut\: :ref:`Shortcut<class_Shortcut>`\ ) :ref:`🔗<class_EditorSettings_method_add_shortcut>`
 
-Adds a ``shortcut`` whose path is specified by ``path``.
+添加一个 ``shortcut``\ ，其路径由 ``path`` 指定。
 
-The ``path`` determines how the shortcut is organized and displayed in the editor's shortcut settings. The path format affects the display as follows:
+\ ``path`` 参数决定了快捷键在编辑器快捷键设置中的组织方式和显示方式。路径格式对显示效果的影响如下：
 
-- ``"name"`` (no slash): Creates a category named ``name`` with the shortcut displayed as ``name``.
+- ``"name"``\ （无斜杠）：创建一个名为 ``name`` 的类别，快捷键也显示为 ``name``\ 。
 
-- ``"category/name"`` (single slash): Displays as ``name`` in the ``category`` section.
+- ``"category/name"``\ （单个斜杠）：在 ``category`` 部分中显示为 ``name``\ 。
 
-- ``"category/name/extra"`` (multiple slashes): Extra path components are ignored, so this behaves the same as ``"category/name"``.
+- ``"category/name/extra"``\ （多个斜杠）：额外的路径部分将被忽略，因此其行为与 ``"category/name"`` 相同。
 
-\ **Note:** Shortcuts are only saved to the editor settings if they differ from their original/default state. This means empty shortcuts that were originally empty will not persist between editor sessions and must be re-added. If a shortcut with the same ``path`` already exists, this method will update it with the new ``shortcut`` instead of creating a duplicate.
+\ **注意：**\ 快捷键只有在与原始/默认设置不同时才会保存到编辑器设置中。这意味着原本为空的快捷键不会在编辑器会话之间保留，必须重新添加。如果已存在具有相同 ``path`` 的快捷键，该方法将使用新的 ``shortcut`` 更新该快捷键，而不是创建副本。
 
 ::
 
-    # Add a custom shortcut for a plugin action.
+    # 为插件操作添加自定义快捷键。
     var my_shortcut = Shortcut.new()
     var input_event = InputEventKey.new()
     input_event.keycode = KEY_F5
     input_event.ctrl_pressed = true
     my_shortcut.events.append(input_event)
 
-    # This will appear under the "My Plugin" category as "Reload Data".
+    # 它将显示在“My Plugin”类别下，名称为“Reload Data”。
     EditorInterface.get_editor_settings().add_shortcut("my_plugin/reload_data", my_shortcut)
 
-    # This will appear under the "Test Action" category as "Test Action".
+    # 它将显示在“Test Action”类别下，名称为“Test Action”。
     EditorInterface.get_editor_settings().add_shortcut("test_action", my_shortcut)
 
 .. rst-class:: classref-item-separator
@@ -6935,7 +6935,7 @@ The ``path`` determines how the shortcut is organized and displayed in the edito
 
 :ref:`Shortcut<class_Shortcut>` **get_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_get_shortcut>`
 
-Returns the shortcut specified by ``path``. Tries to find a built-in action if no shortcut with the provided path is found in the shortcut list. If found, adds it to the list and returns it, otherwise returns ``null``.
+返回由 ``path`` 指定的快捷键。如果在快捷键列表中找不到具有指定路径的快捷键，则尝试查找内置操作。如果找到，则将其添加到列表中并返回它；否则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6947,7 +6947,7 @@ Returns the shortcut specified by ``path``. Tries to find a built-in action if n
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_shortcut_list**\ (\ ) :ref:`🔗<class_EditorSettings_method_get_shortcut_list>`
 
-Returns the list of stored shortcut paths.
+返回存储的快捷键路径列表。
 
 .. rst-class:: classref-item-separator
 
@@ -6971,7 +6971,7 @@ Returns the list of stored shortcut paths.
 
 :ref:`bool<class_bool>` **has_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_EditorSettings_method_has_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwise.
+如果由 ``path`` 指定的快捷键存在则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6983,7 +6983,7 @@ Returns ``true`` if the shortcut specified by ``path`` exists, ``false`` otherwi
 
 :ref:`bool<class_bool>` **is_shortcut**\ (\ path\: :ref:`String<class_String>`, event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_EditorSettings_method_is_shortcut>`
 
-Returns ``true`` if the shortcut specified by ``path`` matches the event specified by ``event``, ``false`` otherwise.
+如果由 ``path`` 指定的快捷键与 ``event`` 指定的事件匹配则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7007,7 +7007,7 @@ Returns ``true`` if the shortcut specified by ``path`` matches the event specifi
 
 |void| **remove_shortcut**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_EditorSettings_method_remove_shortcut>`
 
-Removes the shortcut specified by ``path``.
+移除由 ``path`` 指定的快捷键。
 
 .. rst-class:: classref-item-separator
 

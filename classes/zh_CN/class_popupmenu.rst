@@ -311,7 +311,7 @@ PopupMenu
 
 **id_focused**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_id_focused>`
 
-用户使用 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 或 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 输入动作移动至 ID 为 ``id`` 的菜单项时发出。
+用户使用 :ref:`ProjectSettings.input/ui_up<class_ProjectSettings_property_input/ui_up>` 或 :ref:`ProjectSettings.input/ui_down<class_ProjectSettings_property_input/ui_down>` 输入动作导航至某个 ``id`` 的菜单项时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -323,9 +323,9 @@ PopupMenu
 
 **id_pressed**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_id_pressed>`
 
-Emitted when an item of some ``id`` is pressed. Also emitted when its accelerator is activated on macOS.
+ID 为 ``id`` 的项目被按下时发出。在 macOS 系统上，当其快捷键被激活时也会发出。
 
-\ **Note:** If ``id`` is negative (either explicitly or due to overflow), this will return the corresponding index instead.
+\ **注意：**\ 如果 ``id`` 为负数（无论是明确指定的还是由于溢出导致的），将返回相应的索引来代替。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Emitted when an item of some ``id`` is pressed. Also emitted when its accelerato
 
 **index_pressed**\ (\ index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PopupMenu_signal_index_pressed>`
 
-Emitted when an item of some ``index`` is pressed. Also emitted when its accelerator is activated on macOS.
+索引为 ``index`` 的项目被按下时发出。在 macOS 系统上，当其快捷键被激活时也会发出。
 
 .. rst-class:: classref-item-separator
 
@@ -475,7 +475,7 @@ Emitted when an item of some ``index`` is pressed. Also emitted when its acceler
 - |void| **set_shrink_height**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_height**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
+如果为 ``true``\ ，则在显示 **PopupMenu** 时将其缩小到最小高度。
 
 .. rst-class:: classref-item-separator
 
@@ -492,7 +492,7 @@ If ``true``, shrinks **PopupMenu** to minimum height when it's shown.
 - |void| **set_shrink_width**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_shrink_width**\ (\ )
 
-If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
+如果为 ``true``\ ，则在显示 **PopupMenu** 时会将其宽度缩小到最小。
 
 .. rst-class:: classref-item-separator
 
@@ -509,9 +509,9 @@ If ``true``, shrinks **PopupMenu** to minimum width when it's shown.
 - |void| **set_submenu_popup_delay**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_submenu_popup_delay**\ (\ )
 
-Sets the delay time in seconds for the submenu item to popup on mouse hovering. If the popup menu is added as a child of another (acting as a submenu), it will inherit the delay time of the parent menu item.
+设置鼠标悬停时子菜单项弹出的延迟时间，单位为秒。如果将弹出菜单添加为另一个菜单的子级（充当子菜单），它将继承父菜单项的延迟时间。
 
-\ **Note:** If the mouse is exiting a submenu item with an open submenu and enters a different submenu item, the submenu popup delay time is affected by the direction of the mouse movement toward the open submenu. If the mouse is moving toward the submenu, the open submenu will wait approximately ``0.5`` seconds before closing, which then allows the hovered submenu item to open. This additional delay allows the mouse time to move to the open submenu across other menu items without prematurely closing. If the mouse is not moving toward the open submenu, for example in a downward direction, the open submenu will close immediately.
+\ **注意：**\ 如果鼠标离开一个已打开子菜单的子菜单项并进入另一个子菜单项，子菜单弹出延迟时间会受到鼠标移动方向的影响。如果鼠标朝已打开的子菜单移动，则已打开的子菜单会等待大约 ``0.5`` 秒后关闭，然后允许当前悬停的子菜单项打开。这种额外的延迟使鼠标有时间穿过其他菜单项移动到已打开的子菜单，而不会过早关闭。如果鼠标没有朝向已打开的子菜单移动，例如向下移动，则已打开的子菜单会立即关闭。
 
 .. rst-class:: classref-item-separator
 
@@ -1357,7 +1357,7 @@ Sets the delay time in seconds for the submenu item to popup on mouse hovering. 
 
 |void| **set_item_language**\ (\ index\: :ref:`int<class_int>`, language\: :ref:`String<class_String>`\ ) :ref:`🔗<class_PopupMenu_method_set_item_language>`
 
-Sets the language code of the text for the item at the given index to ``language``. This is used for line-breaking and text shaping algorithms. If ``language`` is empty, the current locale is used.
+将给定索引处项目的文本语言代码设置为 ``language``\ 。这是用于换行和文本塑形算法的。如果 ``language`` 为空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -1604,7 +1604,7 @@ Sets the language code of the text for the item at the given index to ``language
 
 :ref:`int<class_int>` **gutter_compact** = ``1`` :ref:`🔗<class_PopupMenu_theme_constant_gutter_compact>`
 
-If not ``0``, the icon gutter will be merged with the checkbox gutter when possible. This acts as a boolean.
+如果不是 ``0``\ ，则图标边栏将在可能的情况下与复选框边栏合并。它充当布尔值。
 
 .. rst-class:: classref-item-separator
 

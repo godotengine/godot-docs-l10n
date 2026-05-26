@@ -9,7 +9,7 @@ OpenXRSpatialComponentMesh2DList
 
 **Наследует:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the queries mesh2d result data.
+Объект для хранения данных результатов запросов mesh2d.
 
 .. rst-class:: classref-introduction-group
 

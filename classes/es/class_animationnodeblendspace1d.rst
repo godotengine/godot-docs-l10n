@@ -14,11 +14,11 @@ Un conjunto de :ref:`AnimationRootNode<class_AnimationRootNode>`\ s colocados en
 Descripción
 ----------------------
 
-A resource used by :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
+Un recurso utilizado por :ref:`AnimationNodeBlendTree<class_AnimationNodeBlendTree>`.
 
-\ **AnimationNodeBlendSpace1D** represents a virtual axis on which any type of :ref:`AnimationRootNode<class_AnimationRootNode>`\ s can be added using :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Outputs the linear blend of the two :ref:`AnimationRootNode<class_AnimationRootNode>`\ s adjacent to the current value.
+\ **AnimationNodeBlendSpace1D** representa un eje virtual en el que se puede agregar cualquier tipo de :ref:`AnimationRootNode<class_AnimationRootNode>` usando :ref:`add_blend_point()<class_AnimationNodeBlendSpace1D_method_add_blend_point>`. Genera la mezcla lineal de los dos :ref:`AnimationRootNode<class_AnimationRootNode>` adyacentes al valor actual.
 
-You can set the extents of the axis with :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` and :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
+Puede establecer los límites del eje con :ref:`min_space<class_AnimationNodeBlendSpace1D_property_min_space>` y :ref:`max_space<class_AnimationNodeBlendSpace1D_property_max_space>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -236,7 +236,7 @@ Descripciones de Métodos
 
 |void| **add_blend_point**\ (\ node\: :ref:`AnimationRootNode<class_AnimationRootNode>`, pos\: :ref:`float<class_float>`, at_index\: :ref:`int<class_int>` = -1\ ) :ref:`🔗<class_AnimationNodeBlendSpace1D_method_add_blend_point>`
 
-Adds a new point that represents a ``node`` on the virtual axis at a given position set by ``pos``. You can insert it at a specific index using the ``at_index`` argument. If you use the default value for ``at_index``, the point is inserted at the end of the blend points array.
+Agrega un nuevo punto que representa un ``node`` en el eje virtual en una posición dada definida por ``pos``. Puede insertarlo en un índice específico usando el argumento ``at_index``. Si usa el valor predeterminado para ``at_index``, el punto se inserta al final de la matriz de puntos de mezcla.
 
 .. rst-class:: classref-item-separator
 

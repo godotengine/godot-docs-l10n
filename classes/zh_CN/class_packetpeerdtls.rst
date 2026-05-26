@@ -14,7 +14,7 @@ DTLS 数据包客户端。
 描述
 ----
 
-这个类表示 DTLS 对等体连接。它可以用来连接到 DTLS 服务器，由 :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>` 返回。
+这个类表示 DTLS 对等端连接。它可以用来连接到 DTLS 服务器，由 :ref:`DTLSServer.take_connection()<class_DTLSServer_method_take_connection>` 返回。
 
 \ **注意：**\ 导出到 Android 时，在导出项目或使用一键部署前，请确保在 Android 导出预设中启用 ``INTERNET`` 权限。否则，任何类型的网络通信都将被 Android 阻止。
 
@@ -120,7 +120,7 @@ enum **Status**: :ref:`🔗<enum_PacketPeerDTLS_Status>`
 
 |void| **disconnect_from_peer**\ (\ ) :ref:`🔗<class_PacketPeerDTLS_method_disconnect_from_peer>`
 
-断开此对等体的连接，终止 DTLS 会话。
+断开此对等端的连接，终止 DTLS 会话。
 
 .. rst-class:: classref-item-separator
 

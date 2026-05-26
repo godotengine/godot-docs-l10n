@@ -1262,9 +1262,9 @@ Registers a new :ref:`EditorExportPlatform<class_EditorExportPlatform>`. Export 
 
 |void| **add_export_plugin**\ (\ plugin\: :ref:`EditorExportPlugin<class_EditorExportPlugin>`\ ) :ref:`🔗<class_EditorPlugin_method_add_export_plugin>`
 
-Registers a new :ref:`EditorExportPlugin<class_EditorExportPlugin>`. Export plugins are used to perform tasks when the project is being exported.
+Registra un nuevo :ref:`EditorExportPlugin<class_EditorExportPlugin>`. Los plugins de exportación se utilizan para realizar tareas cuando el proyecto se está exportando. 
 
-See :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` for an example of how to register a plugin.
+Véase :ref:`add_inspector_plugin()<class_EditorPlugin_method_add_inspector_plugin>` para ver un ejemplo de cómo registrar un plugin.
 
 .. rst-class:: classref-item-separator
 

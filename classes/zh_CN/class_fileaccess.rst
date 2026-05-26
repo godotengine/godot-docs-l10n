@@ -253,9 +253,9 @@ enum **ModeFlags**: :ref:`🔗<enum_FileAccess_ModeFlags>`
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **WRITE** = ``2``
 
-Opens the file for write operations. If the file exists, it is truncated to zero length and its contents are cleared. Otherwise, it is created.
+打开文件进行写入操作。如果文件已存在，则将其截断为零长度并清空其内容。否则，将创建该文件。
 
-\ **Note:** When creating a file it must be in an already existing directory. To recursively create directories for a file path, see :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
+\ **注意：**\ 创建文件必须在已有目录中执行。如果要递归创建文件路径中的目录，见 :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`\ 。
 
 .. _class_FileAccess_constant_READ_WRITE:
 
@@ -271,9 +271,9 @@ Opens the file for write operations. If the file exists, it is truncated to zero
 
 :ref:`ModeFlags<enum_FileAccess_ModeFlags>` **WRITE_READ** = ``7``
 
-Opens the file for read and write operations. If the file exists, it is truncated to zero length and its contents are cleared. Otherwise, it is created. The file cursor is positioned at the beginning of the file.
+打开文件进行读写操作。如果文件已存在，则将其截断为零长度并清除其内容。否则，创建新文件。文件游标位于文件开头。
 
-\ **Note:** When creating a file it must be in an already existing directory. To recursively create directories for a file path, see :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`.
+\ **注意：**\ 创建文件必须在已有目录中执行。如果要递归创建文件路径中的目录，见 :ref:`DirAccess.make_dir_recursive()<class_DirAccess_method_make_dir_recursive>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -413,7 +413,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_USER_ID** = ``2048``
 
-在执行比特位上设置用户 ID 。
+在执行位上设置用户 id。
 
 .. _class_FileAccess_constant_UNIX_SET_GROUP_ID:
 
@@ -421,7 +421,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_GROUP_ID** = ``1024``
 
-在执行位上设置组 ID。
+在执行位上设置组 id。
 
 .. _class_FileAccess_constant_UNIX_RESTRICTED_DELETE:
 
@@ -451,9 +451,9 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 - |void| **set_big_endian**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_big_endian**\ (\ )
 
-如果为 ``true``\ ，则文件用大端\ `字节序 <https://zh.wikipedia.org/wiki/%E5%AD%97%E8%8A%82%E5%BA%8F>`__\ 读取。如果为 ``false``\ ，则文件以小端字节序读取。如果有疑问，请将其保留为 ``false``\ ，因为大多数文件都是用小端字节序编写的。
+如果设为 ``true``\ ，文件将以大端序（big-endian）\ `endianness <https://en.wikipedia.org/wiki/Endianness>`__ 进行读取。如果设为 ``false``\ ，文件将以小端序（little-endian）进行读取。如果不确定，保持为 ``false`` 即可，因为绝大多数文件都是用小端序写入的。
 
-\ **注意：**\ 每当打开文件时，该选项总会重置为系统字节序，在支持的所有平台上均为小端序。因此必须在打开文件\ *之后*\ 设置 :ref:`big_endian<class_FileAccess_property_big_endian>`\ ，而不是之前。
+\ **注意：** 每次打开文件时，该属性都会被重置为系统的字节序（在所有受支持的平台上，系统字节序均为小端序）。因此，你必须在打开文件 *之后* 设置 :ref:`big_endian<class_FileAccess_property_big_endian>`\ ，而不是在打开之前。
 
 .. rst-class:: classref-section-separator
 
@@ -613,7 +613,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`int<class_int>` **get_access_time**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_access_time>`
 
-返回文件 ``file`` 的最后修改时间，使用 Unix 时间戳格式，出错时返回 ``0``\ 。这个 Unix 时间戳可以用 :ref:`Time<class_Time>` 单例转换为其他格式。
+返回文件 ``file`` 的最后访问时间，使用 Unix 时间戳格式，出错时返回 ``0``\ 。这个 Unix 时间戳可以用 :ref:`Time<class_Time>` 单例转换为其他格式。
 
 .. rst-class:: classref-item-separator
 
@@ -625,7 +625,7 @@ flags **UnixPermissionFlags**: :ref:`🔗<enum_FileAccess_UnixPermissionFlags>`
 
 :ref:`String<class_String>` **get_as_text**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_as_text>`
 
-Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as being UTF-8 encoded. This ignores the file cursor and does not affect it.
+将整个文件文件内容以 :ref:`String<class_String>` 形式返回。文本被解释为 UTF-8 编码。该操作会忽略且不影响文件指针。
 
 .. rst-class:: classref-item-separator
 
@@ -697,15 +697,15 @@ Returns the whole file as a :ref:`String<class_String>`. Text is interpreted as 
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute>`
 
-Reads the file extended attribute with name ``attribute_name`` as a byte array.
+将名称为 ``attribute_name`` 的文件扩展属性读取为字节数组。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法已在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **注意：**\ 扩展属性的支持取决于文件系统。当文件在不兼容的文件系统之间移动时，属性将会丢失。
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **注意：**\ 在 Linux 上，只能访问“user”命名空间属性，不应包含命名空间前缀。
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **注意：**\ 在 Windows 上，使用备用数据流来存储扩展属性。
 
 .. rst-class:: classref-item-separator
 
@@ -717,15 +717,15 @@ Reads the file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`String<class_String>` **get_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attribute_string>`
 
-Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+将名为 ``attribute_name`` 的文件扩展属性读取为 UTF-8 编码的字符串。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法已在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **注意：**\ 扩展属性的支持取决于文件系统。当文件在不兼容的文件系统之间移动时，属性将会丢失。
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **注意：**\ 在 Linux 上，只能访问“user”命名空间属性，不应包含命名空间前缀。
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **注意：**\ 在 Windows 上，使用备用数据流来存储扩展属性。
 
 .. rst-class:: classref-item-separator
 
@@ -737,15 +737,15 @@ Reads the file extended attribute with name ``attribute_name`` as a UTF-8 encode
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_extended_attributes_list**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_extended_attributes_list>`
 
-Returns a list of file extended attributes.
+返回文件扩展属性列表。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法已在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **注意：**\ 扩展属性的支持取决于文件系统。当文件在不兼容的文件系统之间移动时，属性将会丢失。
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **注意：**\ 在 Linux 上，只能访问“user”命名空间属性，不应包含命名空间前缀。
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **注意：**\ 在 Windows 上，使用备用数据流来存储扩展属性。
 
 .. rst-class:: classref-item-separator
 
@@ -809,9 +809,9 @@ Returns a list of file extended attributes.
 
 :ref:`bool<class_bool>` **get_hidden_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_hidden_attribute>`
 
-Returns ``true`` if the **hidden** attribute is set on the file at the given path.
+如果指定路径的文件的 **hidden** 属性已设置，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 该方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -899,7 +899,7 @@ Returns ``true`` if the **hidden** attribute is set on the file at the given pat
 
 :ref:`String<class_String>` **get_path**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_path>`
 
-返回当前打开的文件的路径为\ :ref:`String<class_String>`\ 。
+返回当前打开的文件的路径为 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -911,7 +911,7 @@ Returns ``true`` if the **hidden** attribute is set on the file at the given pat
 
 :ref:`String<class_String>` **get_path_absolute**\ (\ ) |const| :ref:`🔗<class_FileAccess_method_get_path_absolute>`
 
-返回当前打开的文件的绝对路径为\ :ref:`String<class_String>`\ 。
+返回当前打开的文件的绝对路径为 :ref:`String<class_String>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -935,9 +935,9 @@ Returns ``true`` if the **hidden** attribute is set on the file at the given pat
 
 :ref:`bool<class_bool>` **get_read_only_attribute**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_read_only_attribute>`
 
-Returns ``true`` if the **read only** attribute is set on the file at the given path.
+如果指定路径的文件的 **read only** 属性已设置，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 此方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -975,7 +975,7 @@ Returns ``true`` if the **read only** attribute is set on the file at the given 
 
 :ref:`int<class_int>` **get_size**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_size>`
 
-Returns the size of the file at the given path, in bytes, or ``-1`` on error.
+返回给定路径的文件大小，单位为字节，出错时为 ``-1``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -987,9 +987,9 @@ Returns the size of the file at the given path, in bytes, or ``-1`` on error.
 
 |bitfield|\[:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\] **get_unix_permissions**\ (\ file\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_get_unix_permissions>`
 
-Returns the UNIX permissions of the file at the given path.
+返回给定路径的文件的 UNIX 权限。
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **注意：**\ 该方法在 iOS、Linux/BSD 和 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1089,15 +1089,15 @@ Returns the UNIX permissions of the file at the given path.
 
 :ref:`Error<enum_@GlobalScope_Error>` **remove_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_remove_extended_attribute>`
 
-Removes file extended attribute with name ``attribute_name``.
+移除名为 ``attribute_name`` 的文件扩展属性。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法已在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **注意：**\ 扩展属性的支持取决于文件系统。当文件在不兼容的文件系统之间移动时，属性将会丢失。
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **注意：**\ 在 Linux 上，只能访问“user”命名空间属性，不应包含命名空间前缀。
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **注意：**\ 在 Windows 上，使用备用数据流来存储扩展属性。
 
 .. rst-class:: classref-item-separator
 
@@ -1121,7 +1121,7 @@ Removes file extended attribute with name ``attribute_name``.
 
 |void| **seek**\ (\ position\: :ref:`int<class_int>`\ ) :ref:`🔗<class_FileAccess_method_seek>`
 
-Sets the file cursor to the specified position in bytes, from the beginning of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+将文件游标设置到指定位置，单位为字节，相对于文件的开头。这将改变 :ref:`get_position()<class_FileAccess_method_get_position>` 的返回值。
 
 .. rst-class:: classref-item-separator
 
@@ -1133,9 +1133,9 @@ Sets the file cursor to the specified position in bytes, from the beginning of t
 
 |void| **seek_end**\ (\ position\: :ref:`int<class_int>` = 0\ ) :ref:`🔗<class_FileAccess_method_seek_end>`
 
-Sets the file cursor to the specified position in bytes, from the end of the file. This changes the value returned by :ref:`get_position()<class_FileAccess_method_get_position>`.
+将文件游标设置到指定位置，单位为字节，相对于文件的末尾。这将改变 :ref:`get_position()<class_FileAccess_method_get_position>` 的返回值。
 
-\ **Note:** This is an offset, so you should use negative numbers otherwise the file cursor will be at the end of the file.
+\ **注意：**\ 指定的是偏移量，因此应当使用负数，否则文件游标会处于文件末尾。
 
 .. rst-class:: classref-item-separator
 
@@ -1147,15 +1147,15 @@ Sets the file cursor to the specified position in bytes, from the end of the fil
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute>`
 
-Writes file extended attribute with name ``attribute_name`` as a byte array.
+将名为 ``attribute_name`` 的文件扩展属性写入为字节数组。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法已在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **注意：**\ 扩展属性的支持取决于文件系统。当文件在不兼容的文件系统之间移动时，属性将会丢失。
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **注意：**\ 在 Linux 上，只能访问“user”命名空间属性，不应包含命名空间前缀。
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **注意：**\ 在 Windows 上，使用备用数据流来存储扩展属性。
 
 .. rst-class:: classref-item-separator
 
@@ -1167,15 +1167,15 @@ Writes file extended attribute with name ``attribute_name`` as a byte array.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_extended_attribute_string**\ (\ file\: :ref:`String<class_String>`, attribute_name\: :ref:`String<class_String>`, data\: :ref:`String<class_String>`\ ) |static| :ref:`🔗<class_FileAccess_method_set_extended_attribute_string>`
 
-Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded string.
+将名为 ``attribute_name`` 的文件扩展属性写入为 UTF-8 编码的字符串。
 
-\ **Note:** This method is implemented on Linux, macOS, and Windows.
+\ **注意：**\ 该方法已在 Linux、macOS 和 Windows 上实现。
 
-\ **Note:** Extended attributes support depends on the file system. Attributes will be lost when the file is moved between incompatible file systems.
+\ **注意：**\ 扩展属性的支持取决于文件系统。当文件在不兼容的文件系统之间移动时，属性将会丢失。
 
-\ **Note:** On Linux, only "user" namespace attributes are accessible, namespace prefix should not be included.
+\ **注意：**\ 在 Linux 上，只能访问“user”命名空间属性，不应包含命名空间前缀。
 
-\ **Note:** On Windows, alternate data streams are used to store extended attributes.
+\ **注意：**\ 在 Windows 上，使用备用数据流来存储扩展属性。
 
 .. rst-class:: classref-item-separator
 
@@ -1350,11 +1350,11 @@ Writes file extended attribute with name ``attribute_name`` as a UTF-8 encoded s
 
 :ref:`bool<class_bool>` **store_csv_line**\ (\ values\: :ref:`PackedStringArray<class_PackedStringArray>`, delim\: :ref:`String<class_String>` = ","\ ) :ref:`🔗<class_FileAccess_method_store_csv_line>`
 
-Stores the given :ref:`PackedStringArray<class_PackedStringArray>` in the file as a line formatted in the CSV (Comma-Separated Values) format. You can pass a different delimiter ``delim`` to use other than the default ``","`` (comma). This delimiter must be one-character long.
+将给定的 :ref:`PackedStringArray<class_PackedStringArray>` 作为 CSV（逗号分隔值）格式的行存储在文件中。你可以传递不同的分隔符 ``delim`` 以使用默认 ``","``\ （逗号）以外的其他分隔符。此分隔符的长度必须为一个字符。
 
-Text will be encoded as UTF-8. Returns ``true`` if the operation is successful.
+将使用 UTF-8 编码文本。如果操作成功则返回 ``true``\ 。
 
-\ **Note:** If an error occurs, the resulting value of the file position indicator is indeterminate.
+\ **注意：**\ 出错时，文件位置标识符的取值不确定。
 
 .. rst-class:: classref-item-separator
 

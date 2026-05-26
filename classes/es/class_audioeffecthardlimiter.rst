@@ -14,7 +14,7 @@ Agrega un efecto de audio limitador duro a un bus de audio.
 Descripción
 ----------------------
 
-A limiter is an effect designed to disallow sound from going over a given dB threshold. Hard limiters predict volume peaks, and will smoothly apply gain reduction when a peak crosses the ceiling threshold to prevent clipping and distortion. It preserves the waveform and prevents it from crossing the ceiling threshold. Adding one in the Master bus is recommended as a safety measure to prevent sudden volume peaks from occurring, and to prevent distortion caused by clipping.
+Un limitador es un efecto diseñado para evitar que el sonido supere un umbral determinado de dB. Los limitadores “hard” (duros) predicen los picos de volumen y aplican una reducción de ganancia de manera suave cuando un pico sobrepasa el umbral máximo, para evitar recortes y distorsión. Conserva la forma de onda y evita que supere el umbral establecido. Se recomienda agregar uno en el bus Maestro como medida de seguridad, para prevenir picos de volumen inesperados y evitar distorsión causada por clipping.
 
 .. rst-class:: classref-introduction-group
 
@@ -59,9 +59,9 @@ Descripciones de Propiedades
 - |void| **set_ceiling_db**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_ceiling_db**\ (\ )
 
-The waveform's maximum allowed value, in decibels. This value can range from ``-24.0`` to ``0.0``.
+El valor máximo permitido de la forma de onda, en decibeles. Este valor puede variar entre ``-24.0`` y ``0.0``.
 
-The default value of ``-0.3`` prevents potential inter-sample peaks (ISP) from crossing over 0 dB, which can cause slight distortion on some older hardware.
+El valor por defecto de ``-0.3`` evita que posibles picos entre muestras (ISP) superen 0 dB, lo que podría causar una ligera distorsión en algunos equipos más antiguos.
 
 .. rst-class:: classref-item-separator
 

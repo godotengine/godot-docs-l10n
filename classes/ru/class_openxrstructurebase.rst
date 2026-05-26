@@ -9,14 +9,14 @@ OpenXRStructureBase
 
 **Наследуется от:** :ref:`OpenXRSpatialContextPersistenceConfig<class_OpenXRSpatialContextPersistenceConfig>`
 
-Object for storing OpenXR structure data.
+Объект для хранения данных структуры OpenXR.
 
 .. rst-class:: classref-introduction-group
 
 Описание
 ----------------
 
-Object for storing OpenXR structure data that is passed when calling into OpenXR APIs.
+Объект для хранения структурных данных OpenXR, передаваемых при вызове API OpenXR.
 
 .. rst-class:: classref-reftable-group
 
@@ -95,7 +95,7 @@ Object for storing OpenXR structure data that is passed when calling into OpenXR
 
 :ref:`int<class_int>` **get_structure_type**\ (\ ) :ref:`🔗<class_OpenXRStructureBase_method_get_structure_type>`
 
-Returns the structure type (OpenXR ``XrStructureType``) used for this structure.
+Возвращает тип структуры (OpenXR ``XrStructureType``), используемый для данной структуры.
 
 .. |virtual| replace:: :abbr:`virtual (Этот метод обычно должен быть переопределен пользователем, чтобы иметь какой-либо эффект.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

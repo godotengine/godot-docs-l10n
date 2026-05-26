@@ -1231,7 +1231,7 @@ Constant for creating a heightmap shape (used by the :ref:`HeightMapShape3D<clas
 
 :ref:`ShapeType<enum_PhysicsServer3D_ShapeType>` **SHAPE_SOFT_BODY** = ``9``
 
-Constant used internally for a soft body shape. Any attempt to create this kind of shape results in an error.
+Costante utilizzata internamente per la forma di un corpo deformabile. Ogni tentativo di creare questo tipo di forma genera un errore.
 
 .. _class_PhysicsServer3D_constant_SHAPE_CUSTOM:
 
@@ -3588,7 +3588,7 @@ Un impulso è indipendente dal tempo! Applicare un impulso a ogni frame risulter
 
 :ref:`RID<class_RID>` **soft_body_create**\ (\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_create>`
 
-Crea un nuovo corpo morbido e restituisce il suo :ref:`RID<class_RID>` interno.
+Crea un nuovo corpo deformabile e restituisce il suo :ref:`RID<class_RID>` interno.
 
 .. rst-class:: classref-item-separator
 
@@ -3600,7 +3600,7 @@ Crea un nuovo corpo morbido e restituisce il suo :ref:`RID<class_RID>` interno.
 
 :ref:`AABB<class_AABB>` **soft_body_get_bounds**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_bounds>`
 
-Restituisce i confini del corpo morbido fornito in coordinate globali.
+Restituisce i confini del corpo deformabile fornito in coordinate globali.
 
 .. rst-class:: classref-item-separator
 
@@ -3612,7 +3612,7 @@ Restituisce i confini del corpo morbido fornito in coordinate globali.
 
 :ref:`int<class_int>` **soft_body_get_collision_layer**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_collision_layer>`
 
-Restituisce gli strati di fisica a cui appartiene il corpo morbido fornito.
+Restituisce gli strati di fisica a cui appartiene il corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3624,7 +3624,7 @@ Restituisce gli strati di fisica a cui appartiene il corpo morbido fornito.
 
 :ref:`int<class_int>` **soft_body_get_collision_mask**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_collision_mask>`
 
-Restituisce gli strati di fisica con cui il corpo morbido fornito può collidere.
+Restituisce gli strati di fisica con cui il corpo deformabile fornito può collidere.
 
 .. rst-class:: classref-item-separator
 
@@ -3636,7 +3636,7 @@ Restituisce gli strati di fisica con cui il corpo morbido fornito può collidere
 
 :ref:`float<class_float>` **soft_body_get_damping_coefficient**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_damping_coefficient>`
 
-Restituisce il coefficiente di smorzamento del corpo morbido fornito.
+Restituisce il coefficiente di smorzamento del corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3648,7 +3648,7 @@ Restituisce il coefficiente di smorzamento del corpo morbido fornito.
 
 :ref:`float<class_float>` **soft_body_get_drag_coefficient**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_drag_coefficient>`
 
-Restituisce il coefficiente di trascinamento del corpo morbido fornito.
+Restituisce il coefficiente di trascinamento del corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3660,7 +3660,7 @@ Restituisce il coefficiente di trascinamento del corpo morbido fornito.
 
 :ref:`float<class_float>` **soft_body_get_linear_stiffness**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_linear_stiffness>`
 
-Restituisce la rigidità lineare del corpo morbido fornito.
+Restituisce la rigidità lineare del corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3672,7 +3672,7 @@ Restituisce la rigidità lineare del corpo morbido fornito.
 
 :ref:`Vector3<class_Vector3>` **soft_body_get_point_global_position**\ (\ body\: :ref:`RID<class_RID>`, point_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_point_global_position>`
 
-Restituisce la posizione corrente del punto del corpo morbido fornito in coordinate globali.
+Restituisce la posizione corrente del punto del corpo deformabile fornito in coordinate globali.
 
 .. rst-class:: classref-item-separator
 
@@ -3684,7 +3684,7 @@ Restituisce la posizione corrente del punto del corpo morbido fornito in coordin
 
 :ref:`float<class_float>` **soft_body_get_pressure_coefficient**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_pressure_coefficient>`
 
-Restituisce il coefficiente di pressione del corpo morbido fornito.
+Restituisce il coefficiente di pressione del corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3696,7 +3696,7 @@ Restituisce il coefficiente di pressione del corpo morbido fornito.
 
 :ref:`float<class_float>` **soft_body_get_shrinking_factor**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_shrinking_factor>`
 
-Restituisce il fattore di rimpicciolimento del corpo morbido specificato.
+Restituisce il fattore di rimpicciolimento del corpo deformabile specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -3708,7 +3708,7 @@ Restituisce il fattore di rimpicciolimento del corpo morbido specificato.
 
 :ref:`int<class_int>` **soft_body_get_simulation_precision**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_simulation_precision>`
 
-Restituisce la precisione di simulazione del corpo morbido fornito.
+Restituisce la precisione di simulazione del corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3720,7 +3720,7 @@ Restituisce la precisione di simulazione del corpo morbido fornito.
 
 :ref:`RID<class_RID>` **soft_body_get_space**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_space>`
 
-Restituisce il :ref:`RID<class_RID>` dello spazio assegnato al corpo morbido fornito.
+Restituisce il :ref:`RID<class_RID>` dello spazio assegnato al corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3732,7 +3732,7 @@ Restituisce il :ref:`RID<class_RID>` dello spazio assegnato al corpo morbido for
 
 :ref:`Variant<class_Variant>` **soft_body_get_state**\ (\ body\: :ref:`RID<class_RID>`, state\: :ref:`BodyState<enum_PhysicsServer3D_BodyState>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_state>`
 
-Restituisce lo stato del corpo morbido specificato.
+Restituisce lo stato del corpo deformabile specificato.
 
 \ **Nota:** L'implementazione fisica predefinita di Godot non supporta :ref:`BODY_STATE_LINEAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_LINEAR_VELOCITY>`, :ref:`BODY_STATE_ANGULAR_VELOCITY<class_PhysicsServer3D_constant_BODY_STATE_ANGULAR_VELOCITY>`, :ref:`BODY_STATE_SLEEPING<class_PhysicsServer3D_constant_BODY_STATE_SLEEPING>` o :ref:`BODY_STATE_CAN_SLEEP<class_PhysicsServer3D_constant_BODY_STATE_CAN_SLEEP>`.
 
@@ -3746,7 +3746,7 @@ Restituisce lo stato del corpo morbido specificato.
 
 :ref:`float<class_float>` **soft_body_get_total_mass**\ (\ body\: :ref:`RID<class_RID>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_get_total_mass>`
 
-Restituisce la massa totale assegnata al corpo morbido fornito.
+Restituisce la massa totale assegnata al corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3758,7 +3758,7 @@ Restituisce la massa totale assegnata al corpo morbido fornito.
 
 :ref:`bool<class_bool>` **soft_body_is_point_pinned**\ (\ body\: :ref:`RID<class_RID>`, point_index\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_PhysicsServer3D_method_soft_body_is_point_pinned>`
 
-Restituisce se il punto del corpo morbido fornito è fissato.
+Restituisce se il punto del corpo deformabile fornito è fissato.
 
 .. rst-class:: classref-item-separator
 
@@ -3770,7 +3770,7 @@ Restituisce se il punto del corpo morbido fornito è fissato.
 
 |void| **soft_body_move_point**\ (\ body\: :ref:`RID<class_RID>`, point_index\: :ref:`int<class_int>`, global_position\: :ref:`Vector3<class_Vector3>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_move_point>`
 
-Sposta il punto del corpo morbido fornito a una posizione in coordinate globali.
+Sposta il punto del corpo deformabile fornito a una posizione in coordinate globali.
 
 .. rst-class:: classref-item-separator
 
@@ -3782,7 +3782,7 @@ Sposta il punto del corpo morbido fornito a una posizione in coordinate globali.
 
 |void| **soft_body_pin_point**\ (\ body\: :ref:`RID<class_RID>`, point_index\: :ref:`int<class_int>`, pin\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_pin_point>`
 
-Fissa o stacca il punto del corpo morbido specificato in base al valore di ``pin``.
+Fissa o stacca il punto del corpo deformabile specificato in base al valore di ``pin``.
 
 \ **Nota:** Fissare un punto lo rende effettivamente cinematico, impedendogli di essere influenzato dalle forze, ma puoi comunque spostarlo tramite :ref:`soft_body_move_point()<class_PhysicsServer3D_method_soft_body_move_point>`.
 
@@ -3796,7 +3796,7 @@ Fissa o stacca il punto del corpo morbido specificato in base al valore di ``pin
 
 |void| **soft_body_remove_all_pinned_points**\ (\ body\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_remove_all_pinned_points>`
 
-Stacca tutti i punti del corpo morbido specificato.
+Stacca tutti i punti del corpo deformabile specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -3820,7 +3820,7 @@ Rimuove il corpo specificato dalla lista dei corpi esenti da collisioni.
 
 |void| **soft_body_set_collision_layer**\ (\ body\: :ref:`RID<class_RID>`, layer\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_collision_layer>`
 
-Imposta gli strati di fisica a cui appartiene il corpo morbido fornito.
+Imposta gli strati di fisica a cui appartiene il corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3832,7 +3832,7 @@ Imposta gli strati di fisica a cui appartiene il corpo morbido fornito.
 
 |void| **soft_body_set_collision_mask**\ (\ body\: :ref:`RID<class_RID>`, mask\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_collision_mask>`
 
-Imposta gli strati di fisica con cui il corpo morbido fornito può collidere.
+Imposta gli strati di fisica con cui il corpo deformabile fornito può collidere.
 
 .. rst-class:: classref-item-separator
 
@@ -3844,7 +3844,7 @@ Imposta gli strati di fisica con cui il corpo morbido fornito può collidere.
 
 |void| **soft_body_set_damping_coefficient**\ (\ body\: :ref:`RID<class_RID>`, damping_coefficient\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_damping_coefficient>`
 
-Imposta il coefficiente di smorzamento del corpo morbido dato. Valori più alti rallenteranno il corpo in modo più evidente quando vengono applicate forze.
+Imposta il coefficiente di smorzamento del corpo deformabile specificato. Valori più alti rallenteranno il corpo in modo più evidente quando vengono applicate forze.
 
 .. rst-class:: classref-item-separator
 
@@ -3856,7 +3856,7 @@ Imposta il coefficiente di smorzamento del corpo morbido dato. Valori più alti 
 
 |void| **soft_body_set_drag_coefficient**\ (\ body\: :ref:`RID<class_RID>`, drag_coefficient\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_drag_coefficient>`
 
-Imposta il coefficiente di resistenza del corpo morbido specificato. Valori più alti aumentano la resistenza all'aria di questo corpo.
+Imposta il coefficiente di resistenza del corpo deformabile specificato. Valori più alti aumentano la resistenza all'aria di questo corpo.
 
 \ **Nota:** Questo valore è attualmente inutilizzato dall'implementazione fisica predefinita di Godot.
 
@@ -3870,7 +3870,7 @@ Imposta il coefficiente di resistenza del corpo morbido specificato. Valori più
 
 |void| **soft_body_set_linear_stiffness**\ (\ body\: :ref:`RID<class_RID>`, stiffness\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_linear_stiffness>`
 
-Imposta la rigidità lineare del corpo morbido specificato. Valori più alti risulteranno in un corpo più rigido, mentre valori più bassi aumenteranno la capacità del corpo di piegarsi. Il valore può essere compreso tra ``0.0`` e ``1.0`` (inclusi).
+Imposta la rigidità lineare del corpo deformabile specificato. Valori più alti risulteranno in un corpo più rigido, mentre valori più bassi aumenteranno la capacità del corpo di piegarsi. Il valore può essere compreso tra ``0.0`` e ``1.0`` (inclusi).
 
 .. rst-class:: classref-item-separator
 
@@ -3882,7 +3882,7 @@ Imposta la rigidità lineare del corpo morbido specificato. Valori più alti ris
 
 |void| **soft_body_set_mesh**\ (\ body\: :ref:`RID<class_RID>`, mesh\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_mesh>`
 
-Imposta la mesh del corpo morbido fornito.
+Imposta la mesh del corpo deformabile specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -3894,7 +3894,7 @@ Imposta la mesh del corpo morbido fornito.
 
 |void| **soft_body_set_pressure_coefficient**\ (\ body\: :ref:`RID<class_RID>`, pressure_coefficient\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_pressure_coefficient>`
 
-Imposta il coefficiente di pressione del corpo morbido specificato. Simula l'accumulo di pressione dall'interno di questo corpo. Valori più alti aumentano la forza di questo effetto.
+Imposta il coefficiente di pressione del corpo deformabile specificato. Simula l'accumulo di pressione dall'interno di questo corpo. Valori più alti aumentano la forza di questo effetto.
 
 .. rst-class:: classref-item-separator
 
@@ -3906,7 +3906,7 @@ Imposta il coefficiente di pressione del corpo morbido specificato. Simula l'acc
 
 |void| **soft_body_set_ray_pickable**\ (\ body\: :ref:`RID<class_RID>`, enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_ray_pickable>`
 
-Imposta se il corpo morbido specificato sarà selezionabile quando si utilizza la selezione degli oggetti.
+Imposta se il corpo deformabile specificato sarà selezionabile quando si utilizza la selezione degli oggetti.
 
 .. rst-class:: classref-item-separator
 
@@ -3918,7 +3918,7 @@ Imposta se il corpo morbido specificato sarà selezionabile quando si utilizza l
 
 |void| **soft_body_set_shrinking_factor**\ (\ body\: :ref:`RID<class_RID>`, shrinking_factor\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_shrinking_factor>`
 
-Imposta il fattore di rimpicciolimento del corpo morbido specificato.
+Imposta il fattore di rimpicciolimento del corpo deformabile specificato.
 
 .. rst-class:: classref-item-separator
 
@@ -3930,7 +3930,7 @@ Imposta il fattore di rimpicciolimento del corpo morbido specificato.
 
 |void| **soft_body_set_simulation_precision**\ (\ body\: :ref:`RID<class_RID>`, simulation_precision\: :ref:`int<class_int>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_simulation_precision>`
 
-Imposta la precisione della simulazione del corpo morbido specificato. Aumentare questo valore migliorerà la simulazione risultante, ma può influire sulle prestazioni. Usa con cautela.
+Imposta la precisione della simulazione del corpo deformabile specificato. Aumentare questo valore migliorerà la simulazione risultante, ma può influire sulle prestazioni. Usa con cautela.
 
 .. rst-class:: classref-item-separator
 
@@ -3942,7 +3942,7 @@ Imposta la precisione della simulazione del corpo morbido specificato. Aumentare
 
 |void| **soft_body_set_space**\ (\ body\: :ref:`RID<class_RID>`, space\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_space>`
 
-Assegna uno spazio al corpo morbido specificato (vedi :ref:`space_create()<class_PhysicsServer3D_method_space_create>`).
+Assegna uno spazio al corpo deformabile specificato (vedi :ref:`space_create()<class_PhysicsServer3D_method_space_create>`).
 
 .. rst-class:: classref-item-separator
 
@@ -3968,7 +3968,7 @@ Imposta lo stato del corpo specificato per il corpo specificato.
 
 |void| **soft_body_set_total_mass**\ (\ body\: :ref:`RID<class_RID>`, total_mass\: :ref:`float<class_float>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_total_mass>`
 
-Imposta la massa totale per il corpo morbido fornito.
+Imposta la massa totale per il corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3980,7 +3980,7 @@ Imposta la massa totale per il corpo morbido fornito.
 
 |void| **soft_body_set_transform**\ (\ body\: :ref:`RID<class_RID>`, transform\: :ref:`Transform3D<class_Transform3D>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_set_transform>`
 
-Imposta la trasformazione globale del corpo morbido fornito.
+Imposta la trasformazione globale del corpo deformabile fornito.
 
 .. rst-class:: classref-item-separator
 
@@ -3992,7 +3992,7 @@ Imposta la trasformazione globale del corpo morbido fornito.
 
 |void| **soft_body_update_rendering_server**\ (\ body\: :ref:`RID<class_RID>`, rendering_server_handler\: :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`\ ) :ref:`🔗<class_PhysicsServer3D_method_soft_body_update_rendering_server>`
 
-Richiede che il server fisico aggiorni il server di rendering con le ultime posizioni dei punti del corpo morbido specificato tramite l'interfaccia ``rendering_server_handler``.
+Richiede che il server fisico aggiorni il server di rendering con le ultime posizioni dei punti del corpo deformabile specificato tramite l'interfaccia ``rendering_server_handler``.
 
 .. rst-class:: classref-item-separator
 

@@ -14,11 +14,11 @@ Registra un importador de recursos personalizados en el editor. Usa la clase par
 Descripción
 ----------------------
 
-**EditorImportPlugin**\ s provide a way to extend the editor's resource import functionality. Use them to import resources from custom files or to provide alternatives to the editor's existing importers.
+Los **EditorImportPlugin** proporcionan una forma de ampliar la funcionalidad de importación de recursos del editor. Úsalos para importar recursos desde archivos personalizados o para ofrecer alternativas a los importadores existentes del editor.
 
-EditorImportPlugins work by associating with specific file extensions and a resource type. See :ref:`_get_recognized_extensions()<class_EditorImportPlugin_private_method__get_recognized_extensions>` and :ref:`_get_resource_type()<class_EditorImportPlugin_private_method__get_resource_type>`. They may optionally specify some import presets that affect the import process. EditorImportPlugins are responsible for creating the resources and saving them in the ``.godot/imported`` directory (see :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
+Los EditorImportPlugin funcionan asociándo una extensión de archivo específica y un tipo de recurso. Véase :ref:`_get_recognized_extensions()<class_EditorImportPlugin_private_method__get_recognized_extensions>` y :ref:`_get_resource_type()<class_EditorImportPlugin_private_method__get_resource_type>`. Opcionalmente, se puede especificar algunos presets de importación que afectan el proceso de importación. Los EditorImportPlugin son responsables de crear los recursos y guardarlos en el directorio ``.godot/imported`` (ver :ref:`ProjectSettings.application/config/use_hidden_project_data_directory<class_ProjectSettings_property_application/config/use_hidden_project_data_directory>`).
 
-Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` from a file with the extension ".special" or ".spec":
+A continuación se muestra un ejemplo de un EditorImportPlugin que importa un :ref:`Mesh<class_Mesh>` desde un archivo con la extensión ".special" o ".spec":
 
 
 .. tabs::
@@ -57,7 +57,7 @@ Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` fr
         if file == null:
             return FAILED
         var mesh = ArrayMesh.new()
-        # Fill the Mesh with data read in "file", left as an exercise to the reader.
+        # Rellenar el Mesh con los datos leídos en "file", queda como ejercicio para el lector.
 
         var filename = save_path + "." + _get_save_extension()
         return ResourceSaver.save(mesh, filename)
@@ -124,7 +124,7 @@ Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` fr
             }
 
             var mesh = new ArrayMesh();
-            // Fill the Mesh with data read in "file", left as an exercise to the reader.
+            // Rellenar el Mesh con los datos leídos en "file", queda como ejercicio para el lector.
             string filename = $"{savePath}.{_GetSaveExtension()}";
             return ResourceSaver.Save(mesh, filename);
         }
@@ -132,7 +132,7 @@ Below is an example EditorImportPlugin that imports a :ref:`Mesh<class_Mesh>` fr
 
 
 
-To use **EditorImportPlugin**, register it using the :ref:`EditorPlugin.add_import_plugin()<class_EditorPlugin_method_add_import_plugin>` method first.
+Para usar **EditorImportPlugin**, primero regístrelo utilizando el método :ref:`EditorPlugin.add_import_plugin()<class_EditorPlugin_method_add_import_plugin>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -262,7 +262,7 @@ Obtiene el nombre único del importador.
 
 :ref:`bool<class_bool>` **_get_option_visibility**\ (\ path\: :ref:`String<class_String>`, option_name\: :ref:`StringName<class_StringName>`, options\: :ref:`Dictionary<class_Dictionary>`\ ) |virtual| |const| :ref:`🔗<class_EditorImportPlugin_private_method__get_option_visibility>`
 
-Gets whether the import option specified by ``option_name`` should be visible in the Import dock. The default implementation always returns ``true``, making all options visible. This is mainly useful for hiding options that depend on others if one of them is disabled.
+Obtiene si la opción de importación especificada por ``option_name`` debe estar visible en el panel de Importación. La implementación predeterminada siempre devuelve ``true``, haciendo que todas las opciones sean visibles. Esto es útil principalmente para ocultar opciones que dependen de otras si alguna de ellas está deshabilitada.
 
 
 .. tabs::
@@ -270,9 +270,9 @@ Gets whether the import option specified by ``option_name`` should be visible in
  .. code-tab:: gdscript
 
     func _get_option_visibility(path, option_name, options):
-        # Only show the lossy quality setting if the compression mode is set to "Lossy".
+        # Solo mostrar la configuración de calidad con pérdida si el modo de compresión está en "Lossy".
         if option_name == "compress/lossy_quality" and options.has("compress/mode"):
-            return int(options["compress/mode"]) == COMPRESS_LOSSY # This is a constant that you set
+            return int(options["compress/mode"]) == COMPRESS_LOSSY # Esta es una constante que defines
 
         return true
 
@@ -280,10 +280,10 @@ Gets whether the import option specified by ``option_name`` should be visible in
 
     public override bool _GetOptionVisibility(string path, StringName optionName, Godot.Collections.Dictionary options)
     {
-        // Only show the lossy quality setting if the compression mode is set to "Lossy".
+        // Solo mostrar la configuración de calidad con pérdida si el modo de compresión está en "Lossy".
         if (optionName == "compress/lossy_quality" && options.ContainsKey("compress/mode"))
         {
-            return (int)options["compress/mode"] == CompressLossy; // This is a constant you set
+            return (int)options["compress/mode"] == CompressLossy; // Esta es una constante que defines
         }
 
         return true;

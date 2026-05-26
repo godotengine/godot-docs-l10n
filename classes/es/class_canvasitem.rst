@@ -31,7 +31,7 @@ Ten en cuenta que propiedades como la transformación, la modulación y la visib
 Tutoriales
 --------------------
 
-- :doc:`Viewport and canvas transforms <../tutorials/2d/2d_transforms>`
+- :doc:`Transformaciones de la ventana gráfica y del lienzo <../tutorials/2d/2d_transforms>`
 
 - :doc:`Dibujo personalizado en 2D <../tutorials/2d/custom_drawing_in_2d>`
 
@@ -226,9 +226,9 @@ Señales
 
 **draw**\ (\ ) :ref:`🔗<class_CanvasItem_signal_draw>`
 
-Emitted when the **CanvasItem** must redraw, *after* the related :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` notification, and *before* :ref:`_draw()<class_CanvasItem_private_method__draw>` is called.
+Se emite cuando el **CanvasItem** debe volver a dibujarse, *después* de la notificación :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` relacionada y *antes* de que se llame a :ref:`_draw()<class_CanvasItem_private_method__draw>`.
 
-\ **Note:** Deferred connections do not allow drawing through the ``draw_*`` methods.
+\ **Nota:** Las conexiones diferidas no permiten dibujar a través de los métodos ``draw_*``.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Emitted when the **CanvasItem** must redraw, *after* the related :ref:`NOTIFICAT
 
 **hidden**\ (\ ) :ref:`🔗<class_CanvasItem_signal_hidden>`
 
-Emitted when this node becomes hidden, i.e. it's no longer visible in the tree (see :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
+Se emite cuando este nodo se oculta, es decir, ya no es visible en el árbol (ver :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
 
 .. rst-class:: classref-item-separator
 
@@ -252,7 +252,7 @@ Emitted when this node becomes hidden, i.e. it's no longer visible in the tree (
 
 **item_rect_changed**\ (\ ) :ref:`🔗<class_CanvasItem_signal_item_rect_changed>`
 
-Emitted when the **CanvasItem**'s boundaries (position or size) change, or when an action took place that may have affected these boundaries (e.g. changing :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`).
+Se emite cuando los límites del **CanvasItem** (posición o tamaño) cambian, o cuando se realiza una acción que haya afectado dichos límites (por ejemplo, al cambiar :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`).
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +264,9 @@ Emitted when the **CanvasItem**'s boundaries (position or size) change, or when 
 
 **visibility_changed**\ (\ ) :ref:`🔗<class_CanvasItem_signal_visibility_changed>`
 
-Emitted when the **CanvasItem**'s visibility changes, either because its own :ref:`visible<class_CanvasItem_property_visible>` property changed or because its visibility in the tree changed (see :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
+Se emite cuando cambia la visibilidad del **CanvasItem**, ya sea porque su propia propiedad :ref:`visible<class_CanvasItem_property_visible>` cambió o porque su visibilidad en el árbol cambió (consulta :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
 
-This signal is emitted *after* the related :ref:`NOTIFICATION_VISIBILITY_CHANGED<class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED>` notification.
+Esta señal se emite *después* de la notificación relacionada :ref:`NOTIFICATION_VISIBILITY_CHANGED<class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED>`.
 
 .. rst-class:: classref-section-separator
 
@@ -297,7 +297,7 @@ El **CanvasItem** heredará el filtro de su padre.
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_NEAREST** = ``1``
 
-The texture filter reads from the nearest pixel only. This makes the texture look pixelated from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura lee solo del píxel más cercano. Esto hace que la textura se vea pixelada de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_LINEAR:
 
@@ -305,7 +305,7 @@ The texture filter reads from the nearest pixel only. This makes the texture loo
 
 :ref:`TextureFilter<enum_CanvasItem_TextureFilter>` **TEXTURE_FILTER_LINEAR** = ``2``
 
-The texture filter blends between the nearest 4 pixels. This makes the texture look smooth from up close, and grainy from a distance (due to mipmaps not being sampled).
+El filtro de textura mezcla entre los 4 píxeles más cercanos. Esto hace que la textura se vea suave de cerca y granulada de lejos (debido a que los mipmaps no se muestrean).
 
 .. _class_CanvasItem_constant_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS:
 
@@ -462,9 +462,9 @@ Constantes
 
 **NOTIFICATION_TRANSFORM_CHANGED** = ``2000`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>`
 
-Notification received when this node's global transform changes, if :ref:`is_transform_notification_enabled()<class_CanvasItem_method_is_transform_notification_enabled>` is ``true``. See also :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>` and :ref:`get_transform()<class_CanvasItem_method_get_transform>`.
+Notificación recibida cuando cambia el transform global de este Node, si :ref:`is_transform_notification_enabled()<class_CanvasItem_method_is_transform_notification_enabled>` está configurado en ``true``. Consulte también :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>` y :ref:`get_transform()<class_CanvasItem_method_get_transform>`.
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`CollisionObject2D<class_CollisionObject2D>` automatically enable this in order to function correctly.
+\ **Nota:** Muchos canvas items como :ref:`Camera2D<class_Camera2D>` o :ref:`CollisionObject2D<class_CollisionObject2D>` habilitan esto automáticamente para function correctamente.
 
 .. _class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED:
 
@@ -472,9 +472,9 @@ Notification received when this node's global transform changes, if :ref:`is_tra
 
 **NOTIFICATION_LOCAL_TRANSFORM_CHANGED** = ``35`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>`
 
-Notification received when this node's transform changes, if :ref:`is_local_transform_notification_enabled()<class_CanvasItem_method_is_local_transform_notification_enabled>` is ``true``. This is not received when a parent :ref:`Node2D<class_Node2D>`'s transform changes. See also :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`.
+Notificación recibida cuando cambia el transform de este Node, si :ref:`is_local_transform_notification_enabled()<class_CanvasItem_method_is_local_transform_notification_enabled>` está configurado en ``true``. Esto no se recibe cuando cambia el transform de un Node2D padre. Consulte también :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`.
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`CollisionShape2D<class_CollisionShape2D>` automatically enable this in order to function correctly.
+\ **Nota:** Muchos canvas items como :ref:`Camera2D<class_Camera2D>` o :ref:`CollisionShape2D<class_CollisionShape2D>` habilitan esto automáticamente para function correctamente.
 
 .. _class_CanvasItem_constant_NOTIFICATION_DRAW:
 
@@ -490,9 +490,9 @@ Se solicita que **CanvasItem** dibuje (véase :ref:`_draw()<class_CanvasItem_pri
 
 **NOTIFICATION_VISIBILITY_CHANGED** = ``31`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED>`
 
-Notification received when this node's visibility changes (see :ref:`visible<class_CanvasItem_property_visible>` and :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
+Notificación recibida cuando cambia la visibilidad de este nodo (consulta :ref:`visible<class_CanvasItem_property_visible>` y :ref:`is_visible_in_tree()<class_CanvasItem_method_is_visible_in_tree>`).
 
-This notification is received *before* the related :ref:`visibility_changed<class_CanvasItem_signal_visibility_changed>` signal.
+Esta notificación se recibe *antes* de la señal relacionada :ref:`visibility_changed<class_CanvasItem_signal_visibility_changed>`.
 
 .. _class_CanvasItem_constant_NOTIFICATION_ENTER_CANVAS:
 
@@ -508,9 +508,9 @@ El **CanvasItem** ha entrado en el canvas.
 
 **NOTIFICATION_EXIT_CANVAS** = ``33`` :ref:`🔗<class_CanvasItem_constant_NOTIFICATION_EXIT_CANVAS>`
 
-The **CanvasItem** has exited the canvas.
+El **CanvasItem** ha salido del canvas.
 
-This notification is sent in reversed order.
+Esta notificación se envía en orden inverso.
 
 .. _class_CanvasItem_constant_NOTIFICATION_WORLD_2D_CHANGED:
 
@@ -663,9 +663,9 @@ El modo de filtrado utilizado para renderizar las texturas de este **CanvasItem*
 - |void| **set_texture_repeat**\ (\ value\: :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>`\ )
 - :ref:`TextureRepeat<enum_CanvasItem_TextureRepeat>` **get_texture_repeat**\ (\ )
 
-The repeating mode used to render this **CanvasItem**'s texture(s). It affects what happens when the texture is sampled outside its extents, for example by setting a :ref:`Sprite2D.region_rect<class_Sprite2D_property_region_rect>` that is larger than the texture or assigning :ref:`Polygon2D<class_Polygon2D>` UV points outside the texture.
+El modo de repetición utilizado para renderizar la(s) textura(s) de este **CanvasItem**. Afecta a lo que ocurre cuando la textura es muestreada fuera de sus límites, por ejemplo al establecer un :ref:`Sprite2D.region_rect<class_Sprite2D_property_region_rect>` que sea más grande que la textura o al asignar puntos UV de :ref:`Polygon2D<class_Polygon2D>` fuera de la textura.
 
-\ **Note:** :ref:`TextureRect<class_TextureRect>` is not affected by :ref:`texture_repeat<class_CanvasItem_property_texture_repeat>`, as it uses its own texture repeating implementation.
+\ **Nota:** :ref:`TextureRect<class_TextureRect>` no se ve afectado por :ref:`texture_repeat<class_CanvasItem_property_texture_repeat>`, ya que utiliza su propia implementación de repetición de textura.
 
 .. rst-class:: classref-item-separator
 
@@ -682,7 +682,7 @@ The repeating mode used to render this **CanvasItem**'s texture(s). It affects w
 - |void| **set_as_top_level**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_set_as_top_level**\ (\ )
 
-If ``true``, this **CanvasItem** will *not* inherit its transform from parent **CanvasItem**\ s. Its draw order will also be changed to make it draw on top of other **CanvasItem**\ s that do not have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``. The **CanvasItem** will effectively act as if it was placed as a child of a bare :ref:`Node<class_Node>`.
+Si es ``true``, este **CanvasItem** no *heredará* su transformación de los **CanvasItem** padres. Su orden de dibujo también cambiará para dibujarse por encima de otros **CanvasItem**\ s que no tienen :ref:`top_level<class_CanvasItem_property_top_level>` configurado en ``true``. El **CanvasItem** efectivamente actuará como si estuviera colocado como hijo de un :ref:`Node<class_Node>`.
 
 .. rst-class:: classref-item-separator
 
@@ -716,9 +716,9 @@ Si es ``true``, el :ref:`material<class_CanvasItem_property_material>` del eleme
 - |void| **set_visibility_layer**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_visibility_layer**\ (\ )
 
-The rendering layer in which this **CanvasItem** is rendered by :ref:`Viewport<class_Viewport>` nodes. A :ref:`Viewport<class_Viewport>` will render a **CanvasItem** if it and all its parents share a layer with the :ref:`Viewport<class_Viewport>`'s canvas cull mask.
+La capa de renderizado en la que este **CanvasItem** es dibujado por nodos :ref:`Viewport<class_Viewport>`. Un :ref:`Viewport<class_Viewport>` dibujará un **CanvasItem** si comparte una capa con su máscara de recorte del lienzo y todos sus padres comparten también esa capa.
 
-\ **Note:** A **CanvasItem** does not inherit its parents' visibility layers. This means that if a parent **CanvasItem** does not have all the same layers as its child, the child may not be visible even if both the parent and child have :ref:`visible<class_CanvasItem_property_visible>` set to ``true``. For example, if a parent has layer 1 and a child has layer 2, the child will not be visible in a :ref:`Viewport<class_Viewport>` with the canvas cull mask set to layer 1 or 2 (see :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). To ensure that both the parent and child are visible, the parent must have both layers 1 and 2, or the child must have :ref:`top_level<class_CanvasItem_property_top_level>` set to ``true``.
+\ **Nota:** Un **CanvasItem** no hereda las capas de visibilidad de sus padres. Esto significa que si un **CanvasItem** padre no tiene todas las mismas capas que su hijo, el hijo puede no ser visible incluso si tanto el padre como el hijo tienen :ref:`visible<class_CanvasItem_property_visible>` configurado en ``true``. Por ejemplo, si un padre tiene la capa 1 y un hijo tiene la capa 2, el hijo no será visible en un :ref:`Viewport<class_Viewport>` con la máscara de recorte del lienzo configurada en la capa 1 o 2 (ver :ref:`Viewport.canvas_cull_mask<class_Viewport_property_canvas_cull_mask>`). Para asegurar que tanto el padre como el hijo sean visibles, el padre debe tener ambas capas 1 y 2, o el hijo debe tener :ref:`top_level<class_CanvasItem_property_top_level>` configurado en ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -754,11 +754,11 @@ If ``true``, this **CanvasItem** may be drawn. Whether this **CanvasItem** is ac
 - |void| **set_y_sort_enabled**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_y_sort_enabled**\ (\ )
 
-If ``true``, this and child **CanvasItem** nodes with a higher Y position are rendered in front of nodes with a lower Y position. If ``false``, this and child **CanvasItem** nodes are rendered normally in scene tree order.
+Si es ``true``, este y los nodos **CanvasItem** hijos con una posición Y mayor se renderizan por delante de los nodos con una posición Y menor. Si ``false``, este y los nodos **CanvasItem** hijos se renderizan normalmente en orden del árbol de escena.
 
-With Y-sorting enabled on a parent node ('A') but disabled on a child node ('B'), the child node ('B') is sorted but its children ('C1', 'C2', etc.) render together on the same Y position as the child node ('B'). This allows you to organize the render order of a scene without changing the scene tree.
+Con el Y-sort activado en un nodo padre ('A') pero desactivado en un nodo hijo ('B'), el nodo hijo ('B') se ordena pero sus propios hijos ('C1', 'C2', etc.) se renderizan juntos en la misma posición Y que el nodo hijo ('B'). Esto permite organizar el orden de renderizado de una escena sin modificar el árbol de escenas.
 
-Nodes sort relative to each other only if they are on the same :ref:`z_index<class_CanvasItem_property_z_index>`.
+Los nodos solo se ordenan entre sí si están en el mismo :ref:`z_index<class_CanvasItem_property_z_index>`.
 
 .. rst-class:: classref-item-separator
 
@@ -775,9 +775,9 @@ Nodes sort relative to each other only if they are on the same :ref:`z_index<cla
 - |void| **set_z_as_relative**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_z_relative**\ (\ )
 
-If ``true``, this node's final Z index is relative to its parent's Z index.
+Si es ``true``, el índice Z final de este nodo es relativo al índice Z de su padre.
 
-For example, if :ref:`z_index<class_CanvasItem_property_z_index>` is ``2`` and its parent's final Z index is ``3``, then this node's final Z index will be ``5`` (``2 + 3``).
+Por ejemplo, si :ref:`z_index<class_CanvasItem_property_z_index>` es ``2`` y el índice Z final de su padre es ``3``, entonces el índice Z final de este nodo será ``5`` (``2 + 3``).
 
 .. rst-class:: classref-item-separator
 
@@ -794,9 +794,9 @@ For example, if :ref:`z_index<class_CanvasItem_property_z_index>` is ``2`` and i
 - |void| **set_z_index**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_z_index**\ (\ )
 
-The order in which this node is drawn. A node with a higher Z index will display in front of others. Must be between :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` and :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
+El orden en el que se dibuja este nodo. Un nodo con un índice Z más alto se mostrará delante de los demás. Debe estar entre :ref:`RenderingServer.CANVAS_ITEM_Z_MIN<class_RenderingServer_constant_CANVAS_ITEM_Z_MIN>` y :ref:`RenderingServer.CANVAS_ITEM_Z_MAX<class_RenderingServer_constant_CANVAS_ITEM_Z_MAX>` (inclusive).
 
-\ **Note:** The Z index does **not** affect the order in which **CanvasItem** nodes are processed or the way input events are handled. This is especially important to keep in mind for :ref:`Control<class_Control>` nodes.
+\ **Nota:** El índice Z **no** afecta el orden en el que se procesan los nodos **CanvasItem** ni la forma en que se manejan los eventos de entrada. Esto es especialmente importante tenerlo en cuenta para los nodos :ref:`Control<class_Control>`.
 
 .. rst-class:: classref-section-separator
 
@@ -827,7 +827,7 @@ Corresponds to the :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATIO
 
 |void| **draw_animation_slice**\ (\ animation_length\: :ref:`float<class_float>`, slice_begin\: :ref:`float<class_float>`, slice_end\: :ref:`float<class_float>`, offset\: :ref:`float<class_float>` = 0.0\ ) :ref:`🔗<class_CanvasItem_method_draw_animation_slice>`
 
-Subsequent drawing commands will be ignored unless they fall within the specified animation slice. This is a faster way to implement animations that loop on background rather than redrawing constantly.
+Los comandos de dibujo subsiguientes se ignorarán a menos que se encuentren dentro del segmento de animación especificado. Esta es una forma más rápida de implementar animaciones que se repiten en segundo plano en lugar de redibujar constantemente.
 
 .. rst-class:: classref-item-separator
 
@@ -839,11 +839,11 @@ Subsequent drawing commands will be ignored unless they fall within the specifie
 
 |void| **draw_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_arc>`
 
-Draws an unfilled arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. ``center`` is defined in local space. For elliptical arcs, see :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
+Dibuja un arco sin relleno entre los ángulos dados con un ``color`` y ``width`` uniformes y antialiasing opcional (soportado solo para ``width`` positivo). Cuanto mayor sea el valor de ``point_count``, más suave será la curva. ``center`` se define en el espacio local. Para arcos elípticos, consulta :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`. Véase también :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`.
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se ignorará y el arco se dibujará usando :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Esto significa que cuando el CanvasItem se escale, el arco permanecerá delgado. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full circle arc is drawn (i.e. arc will not overlap itself).
+El arco se dibuja desde ``start_angle`` hacia el valor de ``end_angle``, por lo tanto en sentido horario si ``start_angle < end_angle`` y en sentido antihorario en caso contrario. Pasar los mismos ángulos pero en orden inverso producirá el mismo arco. Si la diferencia absoluta entre ``start_angle`` y ``end_angle`` es mayor que :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radianes, entonces se dibuja un arco de círculo completo (es decir, el arco no se superpondrá a sí mismo).
 
 .. rst-class:: classref-item-separator
 
@@ -879,15 +879,15 @@ Draws a string first character outline using a custom font. If ``oversampling`` 
 
 |void| **draw_circle**\ (\ position\: :ref:`Vector2<class_Vector2>`, radius\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_circle>`
 
-Draws a circle, with ``position`` defined in local space. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Dibuja un círculo, con ``position`` definido en el espacio local. Véase también :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`, :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` y :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``filled`` is ``true``, the circle will be filled with the ``color`` specified. If ``filled`` is ``false``, the circle will be drawn as a stroke with the ``color`` and ``width`` specified.
+Si ``filled`` es ``true``, el círculo se rellenará con el ``color`` especificado. Si ``filled`` es ``false``, el círculo se dibujará como un trazo con el ``color`` y ``width`` especificados.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Nota:** ``width`` solo es efectivo si ``filled`` es ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -899,11 +899,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_colored_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_colored_polygon>`
 
-Draws a colored polygon of any number of points, convex or concave. The points in the ``points`` array are defined in local space. Unlike :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, a single color must be specified for the whole polygon.
+Dibuja un polígono coloreado de cualquier número de puntos, convexo o cóncavo. Los puntos en el array ``points`` se definen en el espacio local. A diferencia de :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`, se debe especificar un único color para todo el polígono.
 
-\ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Nota:** Si redibujas frecuentemente el mismo polígono con un gran número de vértices, considera precalcular la triangulación con :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` y usar :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` o :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se llama a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que tenga lugar el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -915,15 +915,15 @@ Draws a colored polygon of any number of points, convex or concave. The points i
 
 |void| **draw_dashed_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, dash\: :ref:`float<class_float>` = 2.0, aligned\: :ref:`bool<class_bool>` = true, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_dashed_line>`
 
-Draws a dashed line from a 2D point to another, with a given color and width. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+Dibuja una línea discontinua desde un punto 2D hasta otro, con un color y ancho dados. Las posiciones ``from`` y ``to`` se definen en el espacio local. Véase también :ref:`draw_line()<class_CanvasItem_method_draw_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` y :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
 
-If ``width`` is negative, then a two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the line parts will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las partes de la línea permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-\ ``dash`` is the length of each dash in pixels, with the gap between each dash being the same length. If ``aligned`` is ``true``, the length of the first and last dashes may be shortened or lengthened to allow the line to begin and end at the precise points defined by ``from`` and ``to``. Both ends are always symmetrical when ``aligned`` is ``true``. If ``aligned`` is ``false``, all dashes will have the same length, but the line may appear incomplete at the end due to the dash length not dividing evenly into the line length. Only full dashes are drawn when ``aligned`` is ``false``.
+\ ``dash`` es la longitud de cada guion en píxeles, siendo la brecha entre cada guion de la misma longitud. Si ``aligned`` es ``true``, la longitud del primer y último guion puede acortarse o alargarse para permitir que la línea comience y termine en los puntos precisos definidos por ``from`` y ``to``. Ambos extremos son siempre simétricos cuando ``aligned`` es ``true``. Si ``aligned`` es ``false``, todos los guiones tendrán la misma longitud, pero la línea puede parecer incompleta al final debido a que la longitud del guion no divide uniformemente la longitud de la línea. Solo se dibujan guiones completos cuando ``aligned`` es ``false``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
 
-\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
+\ **Nota:** ``antialiased`` solo es efectivo si ``width`` es mayor que ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -935,15 +935,15 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_ellipse**\ (\ position\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse>`
 
-Draws an ellipse with semi-major axis ``major`` and semi-minor axis ``minor``. See also :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`, and :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Dibuja una elipse con semieje mayor ``major`` y semieje menor ``minor``. Véase también :ref:`draw_circle()<class_CanvasItem_method_draw_circle>`, :ref:`draw_ellipse_arc()<class_CanvasItem_method_draw_ellipse_arc>`, :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` y :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``filled`` is ``true``, the ellipse will be filled with the ``color`` specified. If ``filled`` is ``false``, the ellipse will be drawn as a stroke with the ``color`` and ``width`` specified.
+Si ``filled`` es ``true``, la elipse se rellenará con el ``color`` especificado. Si ``filled`` es ``false``, la elipse se dibujará como un trazo con el ``color`` y ``width`` especificados.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Nota:** ``width`` solo es efectivo si ``filled`` es ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -955,11 +955,11 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_ellipse_arc**\ (\ center\: :ref:`Vector2<class_Vector2>`, major\: :ref:`float<class_float>`, minor\: :ref:`float<class_float>`, start_angle\: :ref:`float<class_float>`, end_angle\: :ref:`float<class_float>`, point_count\: :ref:`int<class_int>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_ellipse_arc>`
 
-Draws an unfilled elliptical arc between the given angles with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The larger the value of ``point_count``, the smoother the curve. For circular arcs, see :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. See also :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
+Dibuja un arco elíptico sin relleno entre los ángulos dados con un ``color`` y ``width`` uniformes y antialiasing opcional (soportado solo para ``width`` positivo). Cuanto mayor sea el valor de ``point_count``, más suave será la curva. Para arcos circulares, consulta :ref:`draw_arc()<class_CanvasItem_method_draw_arc>`. Véase también :ref:`draw_ellipse()<class_CanvasItem_method_draw_ellipse>`.
 
-If ``width`` is negative, it will be ignored and the arc will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the arc will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se ignorará y el arco se dibujará usando :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Esto significa que cuando el CanvasItem se escale, el arco permanecerá delgado. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in clockwise direction if ``start_angle < end_angle`` and counter-clockwise otherwise. Passing the same angles but in reversed order will produce the same arc. If absolute difference of ``start_angle`` and ``end_angle`` is greater than :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radians, then a full ellipse is drawn (i.e. arc will not overlap itself).
+El arco se dibuja desde ``start_angle`` hacia el valor de ``end_angle``, por lo tanto en sentido horario si ``start_angle < end_angle`` y en sentido antihorario en caso contrario. Pasar los mismos ángulos pero en orden inverso producirá el mismo arco. Si la diferencia absoluta entre ``start_angle`` y ``end_angle`` es mayor que :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` radianes, entonces se dibuja una elipse completa (es decir, el arco no se superpondrá a sí mismo).
 
 .. rst-class:: classref-item-separator
 
@@ -971,7 +971,7 @@ The arc is drawn from ``start_angle`` towards the value of ``end_angle`` so in c
 
 |void| **draw_end_animation**\ (\ ) :ref:`🔗<class_CanvasItem_method_draw_end_animation>`
 
-After submitting all animations slices via :ref:`draw_animation_slice()<class_CanvasItem_method_draw_animation_slice>`, this function can be used to revert drawing to its default state (all subsequent drawing commands will be visible). If you don't care about this particular use case, usage of this function after submitting the slices is not required.
+Después de enviar todas las secciones de animación mediante :ref:`draw_animation_slice()<class_CanvasItem_method_draw_animation_slice>`, esta función se puede usar para revertir el dibujo a su estado predeterminado (todos los comandos de dibujo posteriores serán visibles). Si no le interesa este caso de uso en particular, no es necesario usar esta función después de enviar las secciones.
 
 .. rst-class:: classref-item-separator
 
@@ -983,9 +983,9 @@ After submitting all animations slices via :ref:`draw_animation_slice()<class_Ca
 
 |void| **draw_lcd_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_lcd_texture_rect_region>`
 
-Draws a textured rectangle region of the font texture with LCD subpixel anti-aliasing at a given position, optionally modulated by a color. The ``rect`` is defined in local space.
+Dibuja una región rectangular texturizada de la textura de la fuente con suavizado de subpíxeles LCD en una posición determinada, opcionalmente modulada por un color. El parámetro `rect` se define en el espacio local.
 
-Texture is drawn using the following blend operation, blend mode of the :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` is ignored:
+La textura se dibuja mediante la siguiente operación de fusión; se ignora el modo de fusión del `CanvasItemMaterial`:
 
 ::
 
@@ -994,7 +994,7 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
     dst.b = texture.b * modulate.b * modulate.a + dst.b * (1.0 - texture.b * modulate.a);
     dst.a = modulate.a + dst.a * (1.0 - modulate.a);
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas únicamente en variables locales **no** deben usarse con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente al llamar a este método. En GDScript, cuando finaliza la función con las variables locales, estas se destruyen antes de que se produzca el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1006,9 +1006,9 @@ Texture is drawn using the following blend operation, blend mode of the :ref:`Ca
 
 |void| **draw_line**\ (\ from\: :ref:`Vector2<class_Vector2>`, to\: :ref:`Vector2<class_Vector2>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_line>`
 
-Draws a line from a 2D point to another, with a given color and width. It can be optionally antialiased. The ``from`` and ``to`` positions are defined in local space. See also :ref:`draw_dashed_line()<class_CanvasItem_method_draw_dashed_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>`, and :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
+Dibuja una línea desde un punto 2D hasta otro, con un color y ancho dados. Puede ser opcionalmente antialiasada. Las posiciones ``from`` y ``to`` se definen en el espacio local. Véase también :ref:`draw_dashed_line()<class_CanvasItem_method_draw_dashed_line>`, :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` y :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>`.
 
-If ``width`` is negative, then a two-point primitive will be drawn instead of a four-point one. This means that when the CanvasItem is scaled, the line will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujará una primitiva de dos puntos en lugar de una de cuatro. Esto significa que cuando el CanvasItem se escale, la línea permanecerá delgada. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1020,9 +1020,9 @@ If ``width`` is negative, then a two-point primitive will be drawn instead of a 
 
 |void| **draw_mesh**\ (\ mesh\: :ref:`Mesh<class_Mesh>`, texture\: :ref:`Texture2D<class_Texture2D>`, transform\: :ref:`Transform2D<class_Transform2D>` = Transform2D(1, 0, 0, 1, 0, 0), modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_mesh>`
 
-Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`MeshInstance2D<class_MeshInstance2D>` for related documentation. The ``transform`` is defined in local space.
+Dibuja una :ref:`Mesh<class_Mesh>` en 2D, utilizando la textura proporcionada. Véase :ref:`MeshInstance2D<class_MeshInstance2D>` para obtener documentación relacionada. El ``transform`` se define en el espacio local.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas únicamente en variables locales no deben **utilizarse** con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente después de llamar a este método. En GDScript, cuando finaliza la función con las variables locales, estas se destruyen antes de que se produzca el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1034,13 +1034,13 @@ Draws a :ref:`Mesh<class_Mesh>` in 2D, using the provided texture. See :ref:`Mes
 
 |void| **draw_msdf_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), outline\: :ref:`float<class_float>` = 0.0, pixel_range\: :ref:`float<class_float>` = 4.0, scale\: :ref:`float<class_float>` = 1.0\ ) :ref:`🔗<class_CanvasItem_method_draw_msdf_texture_rect_region>`
 
-Draws a textured rectangle region of the multichannel signed distance field texture at a given position, optionally modulated by a color. The ``rect`` is defined in local space. See :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` for more information and caveats about MSDF font rendering.
+Dibuja una región rectangular texturizada de la textura de campo de distancia con signo multicanal (MSDF) en una posición dada, opcionalmente modulada por un color. El ``rect`` está definido en el espacio local. Véase :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` para obtener más información y advertencias sobre el renderizado de fuentes MSDF.
 
-If ``outline`` is positive, each alpha channel value of pixel in region is set to maximum value of true distance in the ``outline`` radius.
+Si ``outline`` es positivo, cada valor del canal alfa del píxel en la región se establece al valor máximo de la distancia real en el radio de ``outline``.
 
-Value of the ``pixel_range`` should the same that was used during distance field texture generation.
+El valor de ``pixel_range`` debe ser el mismo que se utilizó durante la generación de la textura del campo de distancia.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Los Styleboxes, texturas y mallas almacenados solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se llama a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que se produzca el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1052,11 +1052,11 @@ Value of the ``pixel_range`` should the same that was used during distance field
 
 |void| **draw_multiline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline>`
 
-Draws multiple disconnected lines with a uniform ``width`` and ``color``. Each line is defined by two consecutive points from ``points`` array in local space, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` instead.
+Dibuja múltiples líneas desconectadas con un ``width`` y ``color`` uniformes. Cada línea se define por dos puntos consecutivos del array ``points`` en el espacio local, es decir, el segmento i-ésimo consiste en los puntos finales ``points[2 * i]`` y ``points[2 * i + 1]``. Al dibujar grandes cantidades de líneas, esto es más rápido que usar llamadas individuales a :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Para dibujar líneas interconectadas, usa :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` en su lugar.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
+\ **Nota:** ``antialiased`` solo es efectivo si ``width`` es mayor que ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1068,11 +1068,11 @@ If ``width`` is negative, then two-point primitives will be drawn instead of a f
 
 |void| **draw_multiline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_multiline_colors>`
 
-Draws multiple disconnected lines with a uniform ``width`` and segment-by-segment coloring. Each segment is defined by two consecutive points from ``points`` array in local space and a corresponding color from ``colors`` array, i.e. i-th segment consists of ``points[2 * i]``, ``points[2 * i + 1]`` endpoints and has ``colors[i]`` color. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw interconnected lines, use :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` instead.
+Dibuja múltiples líneas desconectadas con un ``width`` uniforme y coloración segmento por segmento. Cada segmento se define por dos puntos consecutivos del array ``points`` en el espacio local y un color correspondiente del array ``colors``, es decir, el segmento i-ésimo consiste en los puntos finales ``points[2 * i]`` y ``points[2 * i + 1]`` y tiene el color ``colors[i]``. Al dibujar grandes cantidades de líneas, esto es más rápido que usar llamadas individuales a :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Para dibujar líneas interconectadas, usa :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>` en su lugar.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-\ **Note:** ``antialiased`` is only effective if ``width`` is greater than ``0.0``.
+\ **Nota:** ``antialiased`` solo es efectivo si ``width`` es mayor que ``0.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1108,9 +1108,9 @@ Breaks ``text`` to the lines and draws text outline using the specified ``font``
 
 |void| **draw_multimesh**\ (\ multimesh\: :ref:`MultiMesh<class_MultiMesh>`, texture\: :ref:`Texture2D<class_Texture2D>`\ ) :ref:`🔗<class_CanvasItem_method_draw_multimesh>`
 
-Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` for related documentation.
+Dibuja una :ref:`MultiMesh<class_MultiMesh>` en 2D con la textura proporcionada. Véase :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>` para documentación relacionada.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo en variables locales **no** deben usarse con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente después de llamar a este método. En GDScript, cuando finaliza la funcion con las variables locales, estas se destruyen antes de que se produzca el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1122,11 +1122,11 @@ Draws a :ref:`MultiMesh<class_MultiMesh>` in 2D with the provided texture. See :
 
 |void| **draw_polygon**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, uvs\: :ref:`PackedVector2Array<class_PackedVector2Array>` = PackedVector2Array(), texture\: :ref:`Texture2D<class_Texture2D>` = null\ ) :ref:`🔗<class_CanvasItem_method_draw_polygon>`
 
-Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, each point's color can be changed individually. The ``points`` array is defined in local space. See also :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` and :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. If you need more flexibility (such as being able to use bones), use :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>` instead.
+Dibuja un polígono sólido de cualquier número de puntos, convexo o cóncavo. A diferencia de :ref:`draw_colored_polygon()<class_CanvasItem_method_draw_colored_polygon>`, el color de cada punto puede cambiarse individualmente. El array ``points`` se define en el espacio local. Véase también :ref:`draw_polyline()<class_CanvasItem_method_draw_polyline>` y :ref:`draw_polyline_colors()<class_CanvasItem_method_draw_polyline_colors>`. Si necesitas más flexibilidad (como poder usar huesos), usa :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>` en su lugar.
 
-\ **Note:** If you frequently redraw the same polygon with a large number of vertices, consider pre-calculating the triangulation with :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` and using :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>`, or :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
+\ **Nota:** Si redibujas frecuentemente el mismo polígono con un gran número de vértices, considera precalcular la triangulación con :ref:`Geometry2D.triangulate_polygon()<class_Geometry2D_method_triangulate_polygon>` y usar :ref:`draw_mesh()<class_CanvasItem_method_draw_mesh>`, :ref:`draw_multimesh()<class_CanvasItem_method_draw_multimesh>` o :ref:`RenderingServer.canvas_item_add_triangle_array()<class_RenderingServer_method_canvas_item_add_triangle_array>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se llama a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que tenga lugar el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1138,9 +1138,9 @@ Draws a solid polygon of any number of points, convex or concave. Unlike :ref:`d
 
 |void| **draw_polyline**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, color\: :ref:`Color<class_Color>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_polyline>`
 
-Draws interconnected line segments with a uniform ``color`` and ``width`` and optional antialiasing (supported only for positive ``width``). The ``points`` array is defined in local space. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw disconnected lines, use :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` instead. See also :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Dibuja segmentos de línea interconectados con un ``color`` y ``width`` uniformes y antialiasing opcional (soportado solo para ``width`` positivo). El array ``points`` se define en el espacio local. Al dibujar grandes cantidades de líneas, esto es más rápido que usar llamadas individuales a :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Para dibujar líneas desconectadas, usa :ref:`draw_multiline()<class_CanvasItem_method_draw_multiline>` en su lugar. Véase también :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``width`` is negative, it will be ignored and the polyline will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se ignorará y la polilínea se dibujará usando :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Esto significa que cuando el CanvasItem se escale, la polilínea permanecerá delgada. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1152,9 +1152,9 @@ If ``width`` is negative, it will be ignored and the polyline will be drawn usin
 
 |void| **draw_polyline_colors**\ (\ points\: :ref:`PackedVector2Array<class_PackedVector2Array>`, colors\: :ref:`PackedColorArray<class_PackedColorArray>`, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_polyline_colors>`
 
-Draws interconnected line segments with a uniform ``width``, point-by-point coloring, and optional antialiasing (supported only for positive ``width``). Colors assigned to line points match by index between ``points`` and ``colors``, i.e. each line segment is filled with a gradient between the colors of the endpoints. The ``points`` array is defined in local space. When drawing large amounts of lines, this is faster than using individual :ref:`draw_line()<class_CanvasItem_method_draw_line>` calls. To draw disconnected lines, use :ref:`draw_multiline_colors()<class_CanvasItem_method_draw_multiline_colors>` instead. See also :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
+Dibuja segmentos de línea interconectados con un ``width`` uniforme, coloración punto por punto y antialiasing opcional (soportado solo para ``width`` positivo). Los colores asignados a los puntos de la línea coinciden por índice entre ``points`` y ``colors``, es decir, cada segmento de línea se rellena con un degradado entre los colores de los puntos finales. El array ``points`` se define en el espacio local. Al dibujar grandes cantidades de líneas, esto es más rápido que usar llamadas individuales a :ref:`draw_line()<class_CanvasItem_method_draw_line>`. Para dibujar líneas desconectadas, usa :ref:`draw_multiline_colors()<class_CanvasItem_method_draw_multiline_colors>` en su lugar. Véase también :ref:`draw_polygon()<class_CanvasItem_method_draw_polygon>`.
 
-If ``width`` is negative, it will be ignored and the polyline will be drawn using :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. This means that when the CanvasItem is scaled, the polyline will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se ignorará y la polilínea se dibujará usando :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>`. Esto significa que cuando el CanvasItem se escale, la polilínea permanecerá delgada. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
 .. rst-class:: classref-item-separator
 
@@ -1180,15 +1180,15 @@ Draws a custom primitive. 1 point for a point, 2 points for a line, 3 points for
 
 |void| **draw_rect**\ (\ rect\: :ref:`Rect2<class_Rect2>`, color\: :ref:`Color<class_Color>`, filled\: :ref:`bool<class_bool>` = true, width\: :ref:`float<class_float>` = -1.0, antialiased\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_rect>`
 
-Draws a rectangle. If ``filled`` is ``true``, the rectangle will be filled with the ``color`` specified. If ``filled`` is ``false``, the rectangle will be drawn as a stroke with the ``color`` and ``width`` specified. The ``rect`` is specified in local space. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Dibuja un rectángulo. Si ``filled`` es ``true``, el rectángulo se rellenará con el ``color`` especificado. Si ``filled`` es ``false``, el rectángulo se dibujará como un trazo con el ``color`` y ``width`` especificados. El ``rect`` se especifica en el espacio local. Véase también :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
-If ``width`` is negative, then two-point primitives will be drawn instead of a four-point ones. This means that when the CanvasItem is scaled, the lines will remain thin. If this behavior is not desired, then pass a positive ``width`` like ``1.0``.
+Si ``width`` es negativo, se dibujarán primitivas de dos puntos en lugar de cuatro. Esto significa que cuando el CanvasItem se escale, las líneas permanecerán delgadas. Si no se desea este comportamiento, pasa un ``width`` positivo como ``1.0``.
 
-If ``antialiased`` is ``true``, half transparent "feathers" will be attached to the boundary, making outlines smooth.
+Si ``antialiased`` es ``true``, se adjuntarán "plumas" semitransparentes al límite, haciendo que los contornos sean suaves.
 
-\ **Note:** ``width`` is only effective if ``filled`` is ``false``.
+\ **Nota:** ``width`` solo es efectivo si ``filled`` es ``false``.
 
-\ **Note:** Unfilled rectangles drawn with a negative ``width`` may not display perfectly. For example, corners may be missing or brighter due to overlapping lines (for a translucent ``color``).
+\ **Nota:** Los rectángulos sin relleno dibujados con un ``width`` negativo pueden no mostrarse perfectamente. Por ejemplo, las esquinas pueden faltar o ser más brillantes debido a la superposición de líneas (para un ``color`` translúcido).
 
 .. rst-class:: classref-item-separator
 
@@ -1200,9 +1200,9 @@ If ``antialiased`` is ``true``, half transparent "feathers" will be attached to 
 
 |void| **draw_set_transform**\ (\ position\: :ref:`Vector2<class_Vector2>`, rotation\: :ref:`float<class_float>` = 0.0, scale\: :ref:`Vector2<class_Vector2>` = Vector2(1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_set_transform>`
 
-Sets a custom local transform for drawing via components. Anything drawn afterwards will be transformed by this.
+Establece una transformación local personalizada para dibujar mediante componentes. Cualquier cosa dibujada después será transformada por esto.
 
-\ **Note:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` does *not* take ``scale`` into account. This means that scaling up/down will cause bitmap fonts and rasterized (non-MSDF) dynamic fonts to appear blurry or pixelated. To ensure text remains crisp regardless of scale, you can enable MSDF font rendering by enabling :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (applies to the default project font only), or enabling **Multichannel Signed Distance Field** in the import options of a DynamicFont for custom fonts. On system fonts, :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` can be enabled in the inspector.
+\ **Nota:** :ref:`FontFile.oversampling<class_FontFile_property_oversampling>` *no* tiene en cuenta ``scale``. Esto significa que escalar hacia arriba o hacia abajo hará que las fuentes de mapa de bits y las fuentes dinámicas rasterizadas (no MSDF) aparezcan borrosas o pixeladas. Para asegurar que el texto permanezca nítido independientemente de la escala, puedes habilitar el renderizado de fuentes MSDF activando :ref:`ProjectSettings.gui/theme/default_font_multichannel_signed_distance_field<class_ProjectSettings_property_gui/theme/default_font_multichannel_signed_distance_field>` (se aplica solo a la fuente predeterminada del proyecto), o habilitando **Campo de Distancia Firmado Multicanal** en las opciones de importación de una DynamicFont para fuentes personalizadas. En las fuentes del sistema, se puede habilitar :ref:`SystemFont.multichannel_signed_distance_field<class_SystemFont_property_multichannel_signed_distance_field>` en el inspector.
 
 .. rst-class:: classref-item-separator
 
@@ -1226,9 +1226,9 @@ Sets a custom local transform for drawing via matrix. Anything drawn afterwards 
 
 |void| **draw_string**\ (\ font\: :ref:`Font<class_Font>`, pos\: :ref:`Vector2<class_Vector2>`, text\: :ref:`String<class_String>`, alignment\: :ref:`HorizontalAlignment<enum_@GlobalScope_HorizontalAlignment>` = 0, width\: :ref:`float<class_float>` = -1, font_size\: :ref:`int<class_int>` = 16, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), justification_flags\: |bitfield|\[:ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\] = 3, direction\: :ref:`Direction<enum_TextServer_Direction>` = 0, orientation\: :ref:`Orientation<enum_TextServer_Orientation>` = 0, oversampling\: :ref:`float<class_float>` = 0.0\ ) |const| :ref:`🔗<class_CanvasItem_method_draw_string>`
 
-Draws ``text`` using the specified ``font`` at the ``pos`` in local space (bottom-left corner using the baseline of the font). The text will have its color multiplied by ``modulate``. If ``width`` is greater than or equal to 0, the text will be clipped if it exceeds the specified width. If ``oversampling`` is greater than zero, it is used as font oversampling factor, otherwise viewport oversampling settings are used.
+Dibuja ``text`` usando la ``font`` especificada en la posición ``pos`` en el espacio local (esquina inferior izquierda usando la línea base de la fuente). El texto tendrá su color multiplicado por ``modulate``. Si ``width`` es mayor o igual a 0, el texto se recortará si excede el ancho especificado. Si ``oversampling`` es mayor que cero, se usa como factor de sobremuestreo de la fuente; de lo contrario, se usan las configuraciones de sobremuestreo del viewport.
 
-\ **Example:** Draw "Hello world", using the project's default font:
+\ **Ejemplo:** Dibuja "Hello world" usando la fuente predeterminada del proyecto:
 
 
 .. tabs::
@@ -1243,7 +1243,7 @@ Draws ``text`` using the specified ``font`` at the ``pos`` in local space (botto
 
 
 
-See also :ref:`Font.draw_string()<class_Font_method_draw_string>`.
+Véase también :ref:`Font.draw_string()<class_Font_method_draw_string>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1267,9 +1267,9 @@ Draws ``text`` outline using the specified ``font`` at the ``pos`` in local spac
 
 |void| **draw_style_box**\ (\ style_box\: :ref:`StyleBox<class_StyleBox>`, rect\: :ref:`Rect2<class_Rect2>`\ ) :ref:`🔗<class_CanvasItem_method_draw_style_box>`
 
-Draws a styled rectangle. The ``rect`` is defined in local space.
+Dibuja un rectángulo con estilo. El ``rect`` se define en espacio local.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Los Stylebox, texturas y mallas almacenados solo dentro de variables locales no **deben** utilizarse con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente una vez que este método es llamado. En GDScript, cuando la función que contiene las variables locales termina, las variables locales se destruyen antes de que ocurra el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1281,9 +1281,9 @@ Draws a styled rectangle. The ``rect`` is defined in local space.
 
 |void| **draw_texture**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, position\: :ref:`Vector2<class_Vector2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1)\ ) :ref:`🔗<class_CanvasItem_method_draw_texture>`
 
-Draws a texture at a given position. The ``position`` is defined in local space.
+Dibuja una textura en una posición dada. El ``position`` se define en espacio local.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Los Stylebox, texturas y mallas almacenados solo dentro de variables locales no **deben** utilizarse con este método en GDScript, ya que la operación de dibujo no comienza inmediatamente una vez que este método es llamado. En GDScript, cuando la función que contiene las variables locales termina, las variables locales se destruyen antes de que ocurra el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1295,9 +1295,9 @@ Draws a texture at a given position. The ``position`` is defined in local space.
 
 |void| **draw_texture_rect**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, tile\: :ref:`bool<class_bool>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect>`
 
-Draws a textured rectangle at a given position, optionally modulated by a color. The ``rect`` is defined in local space. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` and :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
+Dibuja un rectángulo texturizado en una posición dada, opcionalmente modulado por un color. El ``rect`` se define en el espacio local. Si ``transpose`` es ``true``, la textura tendrá sus coordenadas X e Y intercambiadas. Véase también :ref:`draw_rect()<class_CanvasItem_method_draw_rect>` y :ref:`draw_texture_rect_region()<class_CanvasItem_method_draw_texture_rect_region>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se llama a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que tenga lugar el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1309,9 +1309,9 @@ Draws a textured rectangle at a given position, optionally modulated by a color.
 
 |void| **draw_texture_rect_region**\ (\ texture\: :ref:`Texture2D<class_Texture2D>`, rect\: :ref:`Rect2<class_Rect2>`, src_rect\: :ref:`Rect2<class_Rect2>`, modulate\: :ref:`Color<class_Color>` = Color(1, 1, 1, 1), transpose\: :ref:`bool<class_bool>` = false, clip_uv\: :ref:`bool<class_bool>` = true\ ) :ref:`🔗<class_CanvasItem_method_draw_texture_rect_region>`
 
-Draws a textured rectangle from a texture's region (specified by ``src_rect``) at a given position in local space, optionally modulated by a color. If ``transpose`` is ``true``, the texture will have its X and Y coordinates swapped. See also :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
+Dibuja un rectángulo texturizado desde una región de la textura (especificada por ``src_rect``) en una posición dada en el espacio local, opcionalmente modulado por un color. Si ``transpose`` es ``true``, la textura tendrá sus coordenadas X e Y intercambiadas. Véase también :ref:`draw_texture_rect()<class_CanvasItem_method_draw_texture_rect>`.
 
-\ **Note:** Styleboxes, textures, and meshes stored only inside local variables should **not** be used with this method in GDScript, because the drawing operation doesn't begin immediately once this method is called. In GDScript, when the function with the local variables ends, the local variables get destroyed before the rendering takes place.
+\ **Nota:** Las cajas de estilo, texturas y mallas almacenadas solo dentro de variables locales **no** deben usarse con este método en GDScript, porque la operación de dibujo no comienza inmediatamente una vez que se llama a este método. En GDScript, cuando la función con las variables locales termina, las variables locales se destruyen antes de que tenga lugar el renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1323,9 +1323,9 @@ Draws a textured rectangle from a texture's region (specified by ``src_rect``) a
 
 |void| **force_update_transform**\ (\ ) :ref:`🔗<class_CanvasItem_method_force_update_transform>`
 
-Forces the node's transform to update. Fails if the node is not inside the tree. See also :ref:`get_transform()<class_CanvasItem_method_get_transform>`.
+Forza la actualización de la transformación del nodo. Falla si el nodo no está dentro del árbol. Consulte también :ref:`get_transform()<class_CanvasItem_method_get_transform>`.
 
-\ **Note:** For performance reasons, transform changes are usually accumulated and applied *once* at the end of the frame. The update propagates through **CanvasItem** children, as well. Therefore, use this method only when you need an up-to-date transform (such as during physics operations).
+\ **Nota:** Por razones de rendimiento, los cambios de transformación suelen acumularse y aplicarse una sola vez *una vez* al final del frame. La actualización se propaga a través de los hijos **CanvasItem**, además. Por lo tanto, utilice este método solo cuando necesite una transformación actualizada (como durante las operaciones de físicas).
 
 .. rst-class:: classref-item-separator
 
@@ -1349,7 +1349,7 @@ Returns the :ref:`RID<class_RID>` of the :ref:`World2D<class_World2D>` canvas wh
 
 :ref:`RID<class_RID>` **get_canvas_item**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas_item>`
 
-Returns the internal canvas item :ref:`RID<class_RID>` used by the :ref:`RenderingServer<class_RenderingServer>` for this node.
+Devuelve el :ref:`RID<class_RID>` interno del item del canvas utilizado por el :ref:`RenderingServer<class_RenderingServer>` para este nodo.
 
 .. rst-class:: classref-item-separator
 
@@ -1361,7 +1361,7 @@ Returns the internal canvas item :ref:`RID<class_RID>` used by the :ref:`Renderi
 
 :ref:`CanvasLayer<class_CanvasLayer>` **get_canvas_layer_node**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas_layer_node>`
 
-Returns the :ref:`CanvasLayer<class_CanvasLayer>` that contains this node, or ``null`` if the node is not in any :ref:`CanvasLayer<class_CanvasLayer>`.
+Devuelve la :ref:`CanvasLayer<class_CanvasLayer>` que contiene este nodo, o ``null`` si el nodo no está en ninguna :ref:`CanvasLayer<class_CanvasLayer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1373,7 +1373,7 @@ Returns the :ref:`CanvasLayer<class_CanvasLayer>` that contains this node, or ``
 
 :ref:`Transform2D<class_Transform2D>` **get_canvas_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_canvas_transform>`
 
-Returns the transform of this node, converted from its registered canvas's coordinate system to its viewport's coordinate system. See also :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
+Devuelve la transformación de este nodo, convertida del sistema de coordenadas de su canvas registrado al sistema de coordenadas de su viewport. Véase también :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1385,9 +1385,9 @@ Returns the transform of this node, converted from its registered canvas's coord
 
 :ref:`Vector2<class_Vector2>` **get_global_mouse_position**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_mouse_position>`
 
-Returns mouse cursor's global position relative to the :ref:`CanvasLayer<class_CanvasLayer>` that contains this node.
+Devuelve la posición global del cursor del ratón relativa a la :ref:`CanvasLayer<class_CanvasLayer>` que contiene este nodo.
 
-\ **Note:** For screen-space coordinates (e.g. when using a non-embedded :ref:`Popup<class_Popup>`), you can use :ref:`DisplayServer.mouse_get_position()<class_DisplayServer_method_mouse_get_position>`.
+\ **Nota:** Para coordenadas de espacio de pantalla (por ejemplo, al usar un :ref:`Popup<class_Popup>` no incrustado), puedes usar :ref:`DisplayServer.mouse_get_position()<class_DisplayServer_method_mouse_get_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1399,7 +1399,7 @@ Returns mouse cursor's global position relative to the :ref:`CanvasLayer<class_C
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform>`
 
-Returns the global transform matrix of this item, i.e. the combined transform up to the topmost **CanvasItem** node. The topmost item is a **CanvasItem** that either has no parent, has non-**CanvasItem** parent or it has :ref:`top_level<class_CanvasItem_property_top_level>` enabled.
+Devuelve la matriz de transformación global de este elemento, es decir, la transformación combinada hasta el nodo **CanvasItem** más superior. El elemento más superior es un **CanvasItem** que no tiene padre, tiene un padre que no es un **CanvasItem** o tiene :ref:`top_level<class_CanvasItem_property_top_level>` activado.
 
 .. rst-class:: classref-item-separator
 
@@ -1411,7 +1411,7 @@ Returns the global transform matrix of this item, i.e. the combined transform up
 
 :ref:`Transform2D<class_Transform2D>` **get_global_transform_with_canvas**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_global_transform_with_canvas>`
 
-Returns the transform from the local coordinate system of this **CanvasItem** to the :ref:`Viewport<class_Viewport>`\ s coordinate system.
+Devuelve la transformación del sistema de coordenadas local de este **CanvasItem** al sistema de coordenadas del :ref:`Viewport<class_Viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1423,7 +1423,7 @@ Returns the transform from the local coordinate system of this **CanvasItem** to
 
 :ref:`Variant<class_Variant>` **get_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_CanvasItem_method_get_instance_shader_parameter>`
 
-Get the value of a shader parameter as set on this instance.
+Obtiene el valor de un parámetro de shader como se establece en esta instancia.
 
 .. rst-class:: classref-item-separator
 
@@ -1435,7 +1435,7 @@ Get the value of a shader parameter as set on this instance.
 
 :ref:`Vector2<class_Vector2>` **get_local_mouse_position**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_local_mouse_position>`
 
-Returns the mouse's position in this **CanvasItem** using the local coordinate system of this **CanvasItem**.
+Devuelve la posición del ratón en este **CanvasItem** utilizando el sistema de coordenadas local de este **CanvasItem**.
 
 .. rst-class:: classref-item-separator
 
@@ -1447,9 +1447,9 @@ Returns the mouse's position in this **CanvasItem** using the local coordinate s
 
 :ref:`Transform2D<class_Transform2D>` **get_screen_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_screen_transform>`
 
-Returns the transform of this **CanvasItem** in global screen coordinates (i.e. taking window position into account). Mostly useful for editor plugins.
+Devuelve la transformación de este **CanvasItem** en coordenadas globales de pantalla (es decir, teniendo en cuenta la posición de la ventana). Principalmente útil para plugins del editor.
 
-Equivalent to :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>` if the window is embedded (see :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
+Es equivalente a :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>` si la ventana está incrustada (ver :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1473,7 +1473,7 @@ Devuelve la matriz de transformación de este **CanvasItem**.
 
 :ref:`Rect2<class_Rect2>` **get_viewport_rect**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_viewport_rect>`
 
-Returns this node's viewport boundaries as a :ref:`Rect2<class_Rect2>`. See also :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
+Devuelve los límites del viewport de este nodo como un :ref:`Rect2<class_Rect2>`. Ver también :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1485,7 +1485,7 @@ Returns this node's viewport boundaries as a :ref:`Rect2<class_Rect2>`. See also
 
 :ref:`Transform2D<class_Transform2D>` **get_viewport_transform**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_viewport_transform>`
 
-Returns the transform of this node, converted from its registered canvas's coordinate system to its viewport embedder's coordinate system. See also :ref:`Viewport.get_final_transform()<class_Viewport_method_get_final_transform>` and :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
+Devuelve la transformación de este nodo, convertida del sistema de coordenadas de su canvas registrado al sistema de coordenadas de su incrustador de viewport. Ver también :ref:`Viewport.get_final_transform()<class_Viewport_method_get_final_transform>` y :ref:`Node.get_viewport()<class_Node_method_get_viewport>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1497,7 +1497,7 @@ Returns the transform of this node, converted from its registered canvas's coord
 
 :ref:`bool<class_bool>` **get_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_CanvasItem_method_get_visibility_layer_bit>`
 
-Returns ``true`` if the layer at the given index is set in :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`.
+Devuelve ``true`` si la capa en el índice dado está establecida en :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1509,9 +1509,9 @@ Returns ``true`` if the layer at the given index is set in :ref:`visibility_laye
 
 :ref:`World2D<class_World2D>` **get_world_2d**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_get_world_2d>`
 
-Returns the :ref:`World2D<class_World2D>` this node is registered to.
+Devuelve el :ref:`World2D<class_World2D>` al que está registrado este nodo.
 
-Usually, this is the same as this node's viewport (see :ref:`Node.get_viewport()<class_Node_method_get_viewport>` and :ref:`Viewport.find_world_2d()<class_Viewport_method_find_world_2d>`).
+Usualmente, esto es lo mismo que el viewport de este nodo (ver :ref:`Node.get_viewport()<class_Node_method_get_viewport>` y :ref:`Viewport.find_world_2d()<class_Viewport_method_find_world_2d>`).
 
 .. rst-class:: classref-item-separator
 
@@ -1523,7 +1523,7 @@ Usually, this is the same as this node's viewport (see :ref:`Node.get_viewport()
 
 |void| **hide**\ (\ ) :ref:`🔗<class_CanvasItem_method_hide>`
 
-Hide the **CanvasItem** if it's currently visible. This is equivalent to setting :ref:`visible<class_CanvasItem_property_visible>` to ``false``.
+Oculta el **CanvasItem** si está actualmente visible. Esto es equivalente a establecer :ref:`visible<class_CanvasItem_property_visible>` en ``false``.
 
 .. rst-class:: classref-item-separator
 
@@ -1535,7 +1535,7 @@ Hide the **CanvasItem** if it's currently visible. This is equivalent to setting
 
 :ref:`bool<class_bool>` **is_local_transform_notification_enabled**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_is_local_transform_notification_enabled>`
 
-Returns ``true`` if the node receives :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` whenever its local transform changes. This is enabled with :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`.
+Devuelve ``true`` si el nodo recibe :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` cada vez que su transformación local cambia. Esto se activa con :ref:`set_notify_local_transform()<class_CanvasItem_method_set_notify_local_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1547,7 +1547,7 @@ Returns ``true`` if the node receives :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED
 
 :ref:`bool<class_bool>` **is_transform_notification_enabled**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_is_transform_notification_enabled>`
 
-Returns ``true`` if the node receives :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` whenever its global transform changes. This is enabled with :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>`.
+Devuelve ``true`` si el nodo recibe :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` cada vez que su transformación global cambia. Esto se activa con :ref:`set_notify_transform()<class_CanvasItem_method_set_notify_transform>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1559,11 +1559,11 @@ Returns ``true`` if the node receives :ref:`NOTIFICATION_TRANSFORM_CHANGED<class
 
 :ref:`bool<class_bool>` **is_visible_in_tree**\ (\ ) |const| :ref:`🔗<class_CanvasItem_method_is_visible_in_tree>`
 
-Returns ``true`` if the node is present in the :ref:`SceneTree<class_SceneTree>`, its :ref:`visible<class_CanvasItem_property_visible>` property is ``true`` and all its ancestors are also visible. If any ancestor is hidden, this node will not be visible in the scene tree, and is therefore not drawn (see :ref:`_draw()<class_CanvasItem_private_method__draw>`).
+Devuelve ``true`` si el nodo está presente en el :ref:`SceneTree<class_SceneTree>`, su propiedad :ref:`visible<class_CanvasItem_property_visible>` es ``true`` y todos sus ancestros son también visibles. Si algún ancestro está oculto, este nodo no será visible en el árbol de escenas y, por lo tanto, no se dibujará (véase :ref:`_draw()<class_CanvasItem_private_method__draw>`).
 
-Visibility is checked only in parent nodes that inherit from **CanvasItem**, :ref:`CanvasLayer<class_CanvasLayer>`, and :ref:`Window<class_Window>`. If the parent is of any other type (such as :ref:`Node<class_Node>`, :ref:`AnimationPlayer<class_AnimationPlayer>`, or :ref:`Node3D<class_Node3D>`), it is assumed to be visible.
+La visibilidad se comprueba solo en los nodos padre que heredan de **CanvasItem**, :ref:`CanvasLayer<class_CanvasLayer>` y :ref:`Window<class_Window>`. Si el padre es de cualquier otro tipo (como :ref:`Node<class_Node>`, :ref:`AnimationPlayer<class_AnimationPlayer>` o :ref:`Node3D<class_Node3D>`), se asume que es visible.
 
-\ **Note:** This method does not take :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>` into account, so even if this method returns ``true``, the node might end up not being rendered.
+\ **Nota:** Este método no tiene en cuenta :ref:`visibility_layer<class_CanvasItem_property_visibility_layer>`, por lo que incluso si este método devuelve ``true``, el nodo podría no ser renderizado.
 
 .. rst-class:: classref-item-separator
 
@@ -1575,9 +1575,9 @@ Visibility is checked only in parent nodes that inherit from **CanvasItem**, :re
 
 :ref:`Vector2<class_Vector2>` **make_canvas_position_local**\ (\ viewport_point\: :ref:`Vector2<class_Vector2>`\ ) |const| :ref:`🔗<class_CanvasItem_method_make_canvas_position_local>`
 
-Transforms ``viewport_point`` from the viewport's coordinates to this node's local coordinates.
+Transforma ``viewport_point`` de las coordenadas de la ventana gráfica a las coordenadas locales de este nodo.
 
-For the opposite operation, use :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>`.
+Para la operación opuesta, usa :ref:`get_global_transform_with_canvas()<class_CanvasItem_method_get_global_transform_with_canvas>`.
 
 ::
 
@@ -1593,7 +1593,7 @@ For the opposite operation, use :ref:`get_global_transform_with_canvas()<class_C
 
 :ref:`InputEvent<class_InputEvent>` **make_input_local**\ (\ event\: :ref:`InputEvent<class_InputEvent>`\ ) |const| :ref:`🔗<class_CanvasItem_method_make_input_local>`
 
-Returns a copy of the given ``event`` with its coordinates converted from global space to this **CanvasItem**'s local space. If not possible, returns the same :ref:`InputEvent<class_InputEvent>` unchanged.
+Devuelve una copia del ``event`` dado con sus coordenadas convertidas del espacio global al espacio local de este **CanvasItem**. Si no es posible, devuelve el mismo :ref:`InputEvent<class_InputEvent>` sin cambios.
 
 .. rst-class:: classref-item-separator
 
@@ -1605,7 +1605,7 @@ Returns a copy of the given ``event`` with its coordinates converted from global
 
 |void| **move_to_front**\ (\ ) :ref:`🔗<class_CanvasItem_method_move_to_front>`
 
-Moves this node below its siblings, usually causing the node to draw on top of its siblings. Does nothing if this node does not have a parent. See also :ref:`Node.move_child()<class_Node_method_move_child>`.
+Mueve este nodo debajo de sus hermanos, lo que generalmente provoca que el nodo se dibuje encima de ellos. No hace nada si este nodo no tiene un padre. Ver también :ref:`Node.move_child()<class_Node_method_move_child>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1617,7 +1617,7 @@ Moves this node below its siblings, usually causing the node to draw on top of i
 
 |void| **queue_redraw**\ (\ ) :ref:`🔗<class_CanvasItem_method_queue_redraw>`
 
-Queues the **CanvasItem** to redraw. During idle time, if **CanvasItem** is visible, :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` is sent and :ref:`_draw()<class_CanvasItem_private_method__draw>` is called. This only occurs **once** per frame, even if this method has been called multiple times.
+Pone en cola el **CanvasItem** para que se vuelva a dibujar. Durante el tiempo de inactividad, si el **CanvasItem** es visible, se envía :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` y se llama a :ref:`_draw()<class_CanvasItem_private_method__draw>`. Esto solo ocurre **una vez** por fotograma, incluso si este método se ha llamado varias veces.
 
 .. rst-class:: classref-item-separator
 
@@ -1629,11 +1629,11 @@ Queues the **CanvasItem** to redraw. During idle time, if **CanvasItem** is visi
 
 |void| **set_instance_shader_parameter**\ (\ name\: :ref:`StringName<class_StringName>`, value\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_CanvasItem_method_set_instance_shader_parameter>`
 
-Set the value of a shader uniform for this instance only (`per-instance uniform <../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms>`__). See also :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` to assign a uniform on all instances using the same :ref:`ShaderMaterial<class_ShaderMaterial>`.
+Establece el valor de una variable uniforme de shader solo para esta instancia (`uniform por instancia <../tutorials/shaders/shader_reference/shading_language.html#per-instance-uniforms>`__). Véase también :ref:`ShaderMaterial.set_shader_parameter()<class_ShaderMaterial_method_set_shader_parameter>` para asignar una variable uniforme en todas las instancias que usan el mismo :ref:`ShaderMaterial<class_ShaderMaterial>`.
 
-\ **Note:** For a shader uniform to be assignable on a per-instance basis, it *must* be defined with ``instance uniform ...`` rather than ``uniform ...`` in the shader code.
+\ **Nota:** Para que una variable uniforme de shader pueda asignarse por instancia, *debe* definirse con ``instance uniform ...`` en lugar de ``uniform ...`` en el código del shader.
 
-\ **Note:** ``name`` is case-sensitive and must match the name of the uniform in the code exactly (not the capitalized name in the inspector).
+\ **Nota:** ``name`` distingue entre mayúsculas y minúsculas y debe coincidir exactamente con el nombre de la variable uniforme en el código (no con el nombre en mayúsculas del inspector).
 
 .. rst-class:: classref-item-separator
 
@@ -1645,9 +1645,9 @@ Set the value of a shader uniform for this instance only (`per-instance uniform 
 
 |void| **set_notify_local_transform**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_notify_local_transform>`
 
-If ``true``, the node will receive :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` whenever its local transform changes.
+Si es ``true``, el nodo recibirá :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` cada vez que cambie su transformación local.
 
-\ **Note:** Many canvas items such as :ref:`Bone2D<class_Bone2D>` or :ref:`CollisionShape2D<class_CollisionShape2D>` automatically enable this in order to function correctly.
+\ **Nota:** Muchos elementos de canvas como :ref:`Bone2D<class_Bone2D>` o :ref:`CollisionShape2D<class_CollisionShape2D>` habilitan esto automáticamente para funcionar correctamente.
 
 .. rst-class:: classref-item-separator
 
@@ -1659,9 +1659,9 @@ If ``true``, the node will receive :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<cl
 
 |void| **set_notify_transform**\ (\ enable\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_notify_transform>`
 
-If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` whenever its global transform changes.
+Si es ``true``, el nodo recibirá :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED>` cada vez que cambie su transformación global.
 
-\ **Note:** Many canvas items such as :ref:`Camera2D<class_Camera2D>` or :ref:`Light2D<class_Light2D>` automatically enable this in order to function correctly.
+\ **Nota:** Muchos elementos de canvas como :ref:`Camera2D<class_Camera2D>` o :ref:`Light2D<class_Light2D>` habilitan esto automáticamente para funcionar correctamente.
 
 .. rst-class:: classref-item-separator
 
@@ -1673,7 +1673,7 @@ If ``true``, the node will receive :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Ca
 
 |void| **set_visibility_layer_bit**\ (\ layer\: :ref:`int<class_int>`, enabled\: :ref:`bool<class_bool>`\ ) :ref:`🔗<class_CanvasItem_method_set_visibility_layer_bit>`
 
-Set/clear individual bits on the rendering visibility layer. This simplifies editing this **CanvasItem**'s visibility layer.
+Establece o borra bits individuales en la capa de visibilidad de renderizado. Esto simplifica la edición de la capa de visibilidad de este **CanvasItem**.
 
 .. rst-class:: classref-item-separator
 
@@ -1685,9 +1685,9 @@ Set/clear individual bits on the rendering visibility layer. This simplifies edi
 
 |void| **show**\ (\ ) :ref:`🔗<class_CanvasItem_method_show>`
 
-Show the **CanvasItem** if it's currently hidden. This is equivalent to setting :ref:`visible<class_CanvasItem_property_visible>` to ``true``.
+Muestra el **CanvasItem** si está actualmente oculto. Esto es equivalente a establecer :ref:`visible<class_CanvasItem_property_visible>` en ``true``.
 
-\ **Note:** For controls that inherit :ref:`Popup<class_Popup>`, the correct way to make them visible is to call one of the multiple ``popup*()`` functions instead.
+\ **Nota:** Para los controles que heredan de :ref:`Popup<class_Popup>`, la forma correcta de hacerlos visibles es llamar a una de las múltiples funciones ``popup*()`` en su lugar.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

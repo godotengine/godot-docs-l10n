@@ -14,7 +14,7 @@ Clase de ayuda para manejar los archivos de tipo INI.
 Descripción
 ----------------------
 
-This helper class can be used to store :ref:`Variant<class_Variant>` values on the filesystem using INI-style formatting. The stored values are identified by a section and a key:
+Esta clase auxiliar puede utilizarse para almacenar valores :ref:`Variant<class_Variant>` en el sistema de archivos usando un formato estilo INI. Los valores almacenados se identifican por una sección y una clave:
 
 .. code:: text
 
@@ -23,9 +23,9 @@ This helper class can be used to store :ref:`Variant<class_Variant>` values on t
     string_example="Hello World3D!"
     a_vector=Vector3(1, 0, 2)
 
-The stored data can be saved to or parsed from a file, though ConfigFile objects can also be used directly without accessing the filesystem.
+Los datos almacenados pueden guardarse o analizarse desde un archivo, aunque los objetos ConfigFile también pueden usarse directamente sin acceder al sistema de archivos.
 
-The following example shows how to create a simple **ConfigFile** and save it on disc:
+El siguiente ejemplo muestra cómo crear un **ConfigFile** simple y guardarlo en el disco:
 
 
 .. tabs::
@@ -60,7 +60,7 @@ The following example shows how to create a simple **ConfigFile** and save it on
 
 
 
-This example shows how the above file could be loaded:
+Este ejemplo muestra cómo podría cargarse el archivo anterior:
 
 
 .. tabs::
@@ -109,13 +109,13 @@ This example shows how the above file could be loaded:
 
 
 
-Any operation that mutates the ConfigFile such as :ref:`set_value()<class_ConfigFile_method_set_value>`, :ref:`clear()<class_ConfigFile_method_clear>`, or :ref:`erase_section()<class_ConfigFile_method_erase_section>`, only changes what is loaded in memory. If you want to write the change to a file, you have to save the changes with :ref:`save()<class_ConfigFile_method_save>`, :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>`, or :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>`.
+Cualquier operación que modifique el ConfigFile, como :ref:`set_value()<class_ConfigFile_method_set_value>`, :ref:`clear()<class_ConfigFile_method_clear>` o :ref:`erase_section()<class_ConfigFile_method_erase_section>`, solo cambia lo que se carga en la memoria. Si deseas escribir el cambio en un archivo, debes guardar los cambios con :ref:`save()<class_ConfigFile_method_save>`, :ref:`save_encrypted()<class_ConfigFile_method_save_encrypted>` o :ref:`save_encrypted_pass()<class_ConfigFile_method_save_encrypted_pass>`.
 
-Keep in mind that section and property names can't contain spaces. Anything after a space will be ignored on save and on load.
+Ten en cuenta que los nombres de las secciones y propiedades no pueden contener espacios. Cualquier cosa después de un espacio será ignorada al guardar y al cargar.
 
-ConfigFiles can also contain manually written comment lines starting with a semicolon (``;``). Those lines will be ignored when parsing the file. Note that comments will be lost when saving the ConfigFile. This can still be useful for dedicated server configuration files, which are typically never overwritten without explicit user action.
+Los ConfigFiles también pueden contener líneas de comentario escritas manualmente que comienzan con un punto y coma (``;``). Esas líneas se ignorarán al analizar el archivo. Ten en cuenta que los comentarios se perderán al guardar el ConfigFile. Esto aún puede ser útil para archivos de configuración de servidores dedicados, que típicamente nunca se sobrescriben sin una acción explícita del usuario.
 
-\ **Note:** The file extension given to a ConfigFile does not have any impact on its formatting or behavior. By convention, the ``.cfg`` extension is used here, but any other extension such as ``.ini`` is also valid. Since neither ``.cfg`` nor ``.ini`` are standardized, Godot's ConfigFile formatting may differ from files written by other programs.
+\ **Nota:** La extensión de archivo dada a un ConfigFile no tiene ningún impacto en su formato o comportamiento. Por convención, aquí se usa la extensión ``.cfg``, pero cualquier otra extensión como ``.ini`` también es válida. Dado que ni ``.cfg`` ni ``.ini`` están estandarizados, el formato de ConfigFile de Godot puede diferir de los archivos escritos por otros programas.
 
 .. rst-class:: classref-reftable-group
 
@@ -298,9 +298,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_encrypted**\ (\ path\: :ref:`String<class_String>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ConfigFile_method_load_encrypted>`
 
-Loads the encrypted config file specified as a parameter, using the provided ``key`` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+Carga el archivo de configuración cifrado especificado como parámetro, utilizando la ``key`` proporcionada para descifrarlo. El contenido del archivo se analiza y se carga en el objeto **ConfigFile** sobre el cual se llamó al método.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o uno de los otros valores de :ref:`Error<enum_@GlobalScope_Error>` si la operación falla.
 
 .. rst-class:: classref-item-separator
 
@@ -312,9 +312,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_encrypted_pass**\ (\ path\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_load_encrypted_pass>`
 
-Loads the encrypted config file specified as a parameter, using the provided ``password`` to decrypt it. The file's contents are parsed and loaded in the **ConfigFile** object which the method was called on.
+Carga el archivo de configuración cifrado especificado como parámetro, utilizando la ``password`` proporcionada para descifrarlo. El contenido del archivo se analiza y se carga en el objeto **ConfigFile** sobre el cual se llamó al método.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o uno de los otros valores de :ref:`Error<enum_@GlobalScope_Error>` si la operación falla.
 
 .. rst-class:: classref-item-separator
 
@@ -326,9 +326,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **parse**\ (\ data\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_parse>`
 
-Parses the passed string as the contents of a config file. The string is parsed and loaded in the ConfigFile object which the method was called on.
+Analiza la cadena de texto pasada como si fuera el contenido de un archivo de configuración. La cadena se analiza y se carga en el objeto ConfigFile sobre el cual se llamó al método.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o uno de los otros valores de :ref:`Error<enum_@GlobalScope_Error>` si la operación falla.
 
 .. rst-class:: classref-item-separator
 
@@ -340,9 +340,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save**\ (\ path\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_save>`
 
-Saves the contents of the **ConfigFile** object to the file specified as a parameter. The output file uses an INI-style structure.
+Guarda el contenido del objeto **ConfigFile** en el archivo especificado como parámetro. El archivo de salida utiliza una estructura de estilo INI.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o uno de los otros valores de :ref:`Error<enum_@GlobalScope_Error>` si la operación falla.
 
 .. rst-class:: classref-item-separator
 
@@ -354,9 +354,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted**\ (\ path\: :ref:`String<class_String>`, key\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_ConfigFile_method_save_encrypted>`
 
-Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided ``key`` to encrypt it. The output file uses an INI-style structure.
+Guarda el contenido del objeto **ConfigFile** en el archivo cifrado con AES-256 especificado como parámetro, utilizando la ``key`` proporcionada para cifrarlo. El archivo de salida utiliza una estructura de estilo INI.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o uno de los otros valores de :ref:`Error<enum_@GlobalScope_Error>` si la operación falla.
 
 .. rst-class:: classref-item-separator
 
@@ -368,9 +368,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or on
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_encrypted_pass**\ (\ path\: :ref:`String<class_String>`, password\: :ref:`String<class_String>`\ ) :ref:`🔗<class_ConfigFile_method_save_encrypted_pass>`
 
-Saves the contents of the **ConfigFile** object to the AES-256 encrypted file specified as a parameter, using the provided ``password`` to encrypt it. The output file uses an INI-style structure.
+Guarda el contenido del objeto **ConfigFile** en el archivo cifrado con AES-256 especificado como parámetro, utilizando la ``password`` proporcionada para cifrarlo. El archivo de salida utiliza una estructura de estilo INI.
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+Devuelve :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` si tiene éxito, o uno de los otros valores de :ref:`Error<enum_@GlobalScope_Error>` si la operación falla.
 
 .. rst-class:: classref-item-separator
 

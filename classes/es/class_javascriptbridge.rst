@@ -14,16 +14,16 @@ Singleton que conecta el motor con el contexto de JavaScript del navegador en la
 Descripción
 ----------------------
 
-The JavaScriptBridge singleton is implemented only in the Web export. It's used to access the browser's JavaScript context. This allows interaction with embedding pages or calling third-party JavaScript APIs.
+El singleton JavaScriptBridge solo se implementa en la exportación Web. Se utiliza para acceder al contexto de JavaScript del navegador. Esto permite la interacción con páginas incrustadas o la llamada a APIs de JavaScript de terceros.
 
-\ **Note:** This singleton can be disabled at build-time to improve security. By default, the JavaScriptBridge singleton is enabled. Official export templates also have the JavaScriptBridge singleton enabled. See :doc:`Compiling for the Web <../engine_details/development/compiling/compiling_for_web>` in the documentation for more information.
+\ **Nota:** Este singleton puede desactivarse en tiempo de compilación para mejorar la seguridad. De forma predeterminada, el singleton JavaScriptBridge está activado. Las plantillas de exportación oficiales también tienen el singleton JavaScriptBridge activado. Véase :doc:`Compilar para la Web <../engine_details/development/compiling/compiling_for_web>` en la documentación para obtener más información.
 
 .. rst-class:: classref-introduction-group
 
 Tutoriales
 --------------------
 
-- :doc:`The JavaScriptBridge singleton <../tutorials/platform/web/javascript_bridge>`
+- :doc:`El singleton JavaScriptBridge <../tutorials/platform/web/javascript_bridge>`
 
 .. rst-class:: classref-reftable-group
 
@@ -113,13 +113,13 @@ Crea un nuevo objeto de JavaScript usando el constructor ``new``. El ``object`` 
 
 |void| **download_buffer**\ (\ buffer\: :ref:`PackedByteArray<class_PackedByteArray>`, name\: :ref:`String<class_String>`, mime\: :ref:`String<class_String>` = "application/octet-stream"\ ) :ref:`🔗<class_JavaScriptBridge_method_download_buffer>`
 
-Prompts the user to download a file containing the specified ``buffer``. The file will have the given ``name`` and ``mime`` type.
+Solicita al usuario descargar un archivo que contiene el ``buffer`` especificado. El archivo tendrá el ``name`` y el tipo ``mime`` dados.
 
-\ **Note:** The browser may override the `MIME type <https://en.wikipedia.org/wiki/Media_type>`__ provided based on the file ``name``'s extension.
+\ **Nota:** El navegador puede anular el `tipo MIME <https://en.wikipedia.org/wiki/Media_type>`__ proporcionado basándose en la extensión del ``name`` del archivo.
 
-\ **Note:** Browsers might block the download if :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` is not being called from a user interaction (e.g. button click).
+\ **Nota:** Los navegadores podrían bloquear la descarga si :ref:`download_buffer()<class_JavaScriptBridge_method_download_buffer>` no se llama desde una interacción del usuario (por ejemplo, un clic de botón).
 
-\ **Note:** Browsers might ask the user for permission or block the download if multiple download requests are made in a quick succession.
+\ **Nota:** Los navegadores podrían pedir permiso al usuario o bloquear la descarga si se realizan varias solicitudes de descarga en rápida sucesión.
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ Prompts the user to download a file containing the specified ``buffer``. The fil
 
 :ref:`Variant<class_Variant>` **eval**\ (\ code\: :ref:`String<class_String>`, use_global_execution_context\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_JavaScriptBridge_method_eval>`
 
-Execute the string ``code`` as JavaScript code within the browser window. This is a call to the actual global JavaScript function ``eval()``.
+Ejecuta la string ``code`` como código de JavaScript dentro de la ventana del navegador. Esta es una llamada a la función global de JavaScript ``eval()``.
 
-If ``use_global_execution_context`` is ``true``, the code will be evaluated in the global execution context. Otherwise, it is evaluated in the execution context of a function within the engine's runtime environment.
+Si ``use_global_execution_context`` es ``true``, el código se evaluará en el contexto de ejecución global. De lo contrario, se evaluará en el contexto de ejecución de una función dentro del entorno de tiempo de ejecución del motor.
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ Devuelve una interfaz a un objeto de JavaScript que puede ser utilizado por scri
 
 :ref:`bool<class_bool>` **is_js_buffer**\ (\ javascript_object\: :ref:`JavaScriptObject<class_JavaScriptObject>`\ ) :ref:`🔗<class_JavaScriptBridge_method_is_js_buffer>`
 
-Returns ``true`` if the given ``javascript_object`` is of type `[code]ArrayBuffer[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer>`__, `[code]DataView[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView>`__, or one of the many `typed array objects <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray>`__.
+Devuelve ``true`` si el ``javascript_object`` dado es de tipo `[code]ArrayBuffer[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer>`__, `[code]DataView[/code] <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView>`__, o uno de los muchos `objetos de tipo array <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray>`__.
 
 .. rst-class:: classref-item-separator
 

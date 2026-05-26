@@ -14,9 +14,9 @@ Malla optimizada para crear geometría manualmente.
 Descripción
 ----------------------
 
-A mesh type optimized for creating geometry manually, similar to OpenGL 1.x immediate mode.
+Un tipo de malla optimizado para crear geometría manualmente, similar al modo inmediato de OpenGL 1.x.
 
-Here's a sample on how to generate a triangular face:
+Aquí tienes un ejemplo de cómo generar una cara triangular:
 
 
 .. tabs::
@@ -41,7 +41,7 @@ Here's a sample on how to generate a triangular face:
 
 
 
-\ **Note:** Generating complex geometries with **ImmediateMesh** is highly inefficient. Instead, it is designed to generate simple geometry that changes often.
+\ **Nota:** Generar geometrías complejas con **ImmediateMesh** es muy ineficiente. En su lugar, está diseñado para generar geometría simple que cambia a menudo.
 
 .. rst-class:: classref-introduction-group
 
@@ -179,9 +179,9 @@ Establece el atributo normal que se enviará con el siguiente vértice.
 
 |void| **surface_set_tangent**\ (\ tangent\: :ref:`Plane<class_Plane>`\ ) :ref:`🔗<class_ImmediateMesh_method_surface_set_tangent>`
 
-Set the tangent attribute that will be pushed with the next vertex.
+Establece el atributo de tangente que se enviará con el siguiente vértice.
 
-\ **Note:** Even though ``tangent`` is a :ref:`Plane<class_Plane>`, it does not directly represent the tangent plane. Its :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, and :ref:`Plane.z<class_Plane_property_z>` represent the tangent vector and :ref:`Plane.d<class_Plane_property_d>` should be either ``-1`` or ``1``. See also :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
+\ **Nota:** Aunque ``tangent`` es un :ref:`Plane<class_Plane>`, no representa directamente el plano tangente. Sus :ref:`Plane.x<class_Plane_property_x>`, :ref:`Plane.y<class_Plane_property_y>`, y :ref:`Plane.z<class_Plane_property_z>` representan el vector tangente y :ref:`Plane.d<class_Plane_property_d>` debe ser ``-1`` o ``1``. Véase también :ref:`Mesh.ARRAY_TANGENT<class_Mesh_constant_ARRAY_TANGENT>`.
 
 .. rst-class:: classref-item-separator
 

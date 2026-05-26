@@ -7,7 +7,7 @@ ResourceImporterCSVTranslation
 
 **Hereda:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports comma-separated values as :ref:`Translation<class_Translation>`\ s.
+Importa valores separados por comas como :ref:`Translation<class_Translation>`\ s.
 
 .. rst-class:: classref-introduction-group
 

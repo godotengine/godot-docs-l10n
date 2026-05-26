@@ -112,15 +112,15 @@ Devuelve el vector de gravedad calculado a partir de todas las fuentes que puede
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **move_and_collide**\ (\ motion\: :ref:`Vector2<class_Vector2>`, test_only\: :ref:`bool<class_bool>` = false, safe_margin\: :ref:`float<class_float>` = 0.08, recovery_as_collision\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_PhysicsBody2D_method_move_and_collide>`
 
-Moves the body along the vector ``motion``. In order to be frame rate independent in :ref:`Node._physics_process()<class_Node_private_method__physics_process>` or :ref:`Node._process()<class_Node_private_method__process>`, ``motion`` should be computed using ``delta``.
+Mueve el cuerpo a lo largo del vector ``motion``. Para ser independiente de la velocidad de fotogramas en :ref:`Node._physics_process()<class_Node_private_method__physics_process>` o :ref:`Node._process()<class_Node_private_method__process>`, ``motion`` debe calcularse usando ``delta``.
 
-Returns a :ref:`KinematicCollision2D<class_KinematicCollision2D>`, which contains information about the collision when stopped, or when touching another body along the motion.
+Devuelve un :ref:`KinematicCollision2D<class_KinematicCollision2D>`, que contiene información sobre la colisión cuando se detiene, o cuando toca otro cuerpo a lo largo del movimiento.
 
-If ``test_only`` is ``true``, the body does not move but the would-be collision information is given.
+Si ``test_only`` es ``true``, el cuerpo no se mueve, pero se proporciona la información de la posible colisión.
 
-\ ``safe_margin`` is the extra margin used for collision recovery (see :ref:`CharacterBody2D.safe_margin<class_CharacterBody2D_property_safe_margin>` for more details).
+\ ``safe_margin`` es el margen extra utilizado para la recuperación de colisiones (véase :ref:`CharacterBody2D.safe_margin<class_CharacterBody2D_property_safe_margin>` para más detalles).
 
-If ``recovery_as_collision`` is ``true``, any depenetration from the recovery phase is also reported as a collision; this is used e.g. by :ref:`CharacterBody2D<class_CharacterBody2D>` for improving floor detection during floor snapping.
+Si ``recovery_as_collision`` es ``true``, cualquier despenetración de la fase de recuperación también se informa como una colisión; esto es utilizado, por ejemplo, por :ref:`CharacterBody2D<class_CharacterBody2D>` para mejorar la detección de suelo durante el 'floor snapping'.
 
 .. rst-class:: classref-item-separator
 

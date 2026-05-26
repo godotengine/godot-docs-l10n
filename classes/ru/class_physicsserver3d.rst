@@ -3452,29 +3452,29 @@ enum **BodyAxis**: :ref:`🔗<enum_PhysicsServer3D_BodyAxis>`
 
 |void| **shape_set_data**\ (\ shape\: :ref:`RID<class_RID>`, data\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_PhysicsServer3D_method_shape_set_data>`
 
-Sets the shape data that configures the shape. The ``data`` to be passed depends on the shape's type (see :ref:`shape_get_type()<class_PhysicsServer3D_method_shape_get_type>`):
+Устанавливает данные фигуры, которые позволяют настроить фигуру. Передаваемые данные ``data`` зависят от типа фигуры (подробнее: :ref:`shape_get_type()<class_PhysicsServer3D_method_shape_get_type>`):
 
-- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer3D_constant_SHAPE_WORLD_BOUNDARY>`: a :ref:`Plane<class_Plane>`,
+- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer3D_constant_SHAPE_WORLD_BOUNDARY>`: :ref:`Plane<class_Plane>`,
 
-- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY>`: a dictionary containing the key ``"length"`` with a :ref:`float<class_float>` value and the key ``"slide_on_slope"`` with a :ref:`bool<class_bool>` value,
+- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer3D_constant_SHAPE_SEPARATION_RAY>`: словарь, содержащий ключ ``«length»`` со значением :ref:`float<class_float>` и ключ ``«slide_on_slope»`` со значением :ref:`bool<class_bool>`,
 
-- :ref:`SHAPE_SPHERE<class_PhysicsServer3D_constant_SHAPE_SPHERE>`: a :ref:`float<class_float>` that is the radius of the sphere,
+- :ref:`SHAPE_SPHERE<class_PhysicsServer3D_constant_SHAPE_SPHERE>`: :ref:`float<class_float>`, являющийся радиусом сферы,
 
-- :ref:`SHAPE_BOX<class_PhysicsServer3D_constant_SHAPE_BOX>`: a :ref:`Vector3<class_Vector3>` containing the half-extents of the box,
+- :ref:`SHAPE_BOX<class_PhysicsServer3D_constant_SHAPE_BOX>`: :ref:`Vector3<class_Vector3>`, содержащий половину объёма прямоугольника,,
 
-- :ref:`SHAPE_CAPSULE<class_PhysicsServer3D_constant_SHAPE_CAPSULE>`: a dictionary containing the keys ``"height"`` and ``"radius"`` with :ref:`float<class_float>` values,
+- :ref:`SHAPE_CAPSULE<class_PhysicsServer3D_constant_SHAPE_CAPSULE>`: словарь, содержащий ключи ``«height»`` и ``«radius»`` со значениями :ref:`float<class_float>`,
 
-- :ref:`SHAPE_CYLINDER<class_PhysicsServer3D_constant_SHAPE_CYLINDER>`: a dictionary containing the keys ``"height"`` and ``"radius"`` with :ref:`float<class_float>` values,
+- :ref:`SHAPE_CYLINDER<class_PhysicsServer3D_constant_SHAPE_CYLINDER>`: словарь, содержащий ключи ``«height»`` и ``«radius»`` со значениями :ref:`float<class_float>`,
 
-- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON>`: a :ref:`PackedVector3Array<class_PackedVector3Array>` of points defining a convex polygon (the shape will be the convex hull of the points),
+- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONVEX_POLYGON>`: массив точек :ref:`PackedVector3Array<class_PackedVector3Array>`, определяющих выпуклый многоугольник (форма будет выпуклой оболочкой точек),
 
-- :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON>`: a dictionary containing the key ``"faces"`` with a :ref:`PackedVector3Array<class_PackedVector3Array>` value (with a length divisible by 3, so that each 3-tuple of points forms a face) and the key ``"backface_collision"`` with a :ref:`bool<class_bool>` value,
+- :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer3D_constant_SHAPE_CONCAVE_POLYGON>`: словарь, содержащий ключ ``«faces»`` со значением :ref:`PackedVector3Array<class_PackedVector3Array>` (с длиной, делящейся на 3, так что каждый набор из 3 точек образует грань) и ключ ``«backface_collision"`` со значением :ref:`bool<class_bool>`,
 
-- :ref:`SHAPE_HEIGHTMAP<class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP>`: a dictionary containing the keys ``"width"`` and ``"depth"`` with :ref:`int<class_int>` values, and the key ``"heights"`` with a value that is a packed array of :ref:`float<class_float>`\ s of length ``width * depth`` (that is a :ref:`PackedFloat32Array<class_PackedFloat32Array>`, or a :ref:`PackedFloat64Array<class_PackedFloat64Array>` if Godot was compiled with the ``precision=double`` option), and optionally the keys ``"min_height"`` and ``"max_height"`` with :ref:`float<class_float>` values,
+- :ref:`SHAPE_HEIGHTMAP<class_PhysicsServer3D_constant_SHAPE_HEIGHTMAP>`: словарь, содержащий ключи ``«width»`` и ``«depth»`` со значениями :ref:`int<class_int>`, и ключ ``«heights»`` со значением, которое является упакованным массивом чисел с плавающей запятой длиной ``width * depth`` (то есть :ref:`PackedFloat32Array<class_PackedFloat32Array>` или :ref:`PackedFloat64Array<class_PackedFloat64Array>`, если Godot был скомпилирован с параметром ``precision=double``), и, при необходимости, ключами ``«min_height»`` и ``«max_height»`` со значениями типа :ref:`float<class_float>`,
 
-- :ref:`SHAPE_SOFT_BODY<class_PhysicsServer3D_constant_SHAPE_SOFT_BODY>`: the input ``data`` is ignored and this method has no effect,
+- :ref:`SHAPE_SOFT_BODY<class_PhysicsServer3D_constant_SHAPE_SOFT_BODY>`: входные данные ``data`` игнорируются, и этот метод не имеет эффекта,
 
-- :ref:`SHAPE_CUSTOM<class_PhysicsServer3D_constant_SHAPE_CUSTOM>`: the input ``data`` is interpreted by a custom physics server, if it supports custom shapes.
+- :ref:`SHAPE_CUSTOM<class_PhysicsServer3D_constant_SHAPE_CUSTOM>`: входные данные ``data`` интерпретируются пользовательским сервером физики, если он поддерживает пользовательские формы.
 
 .. rst-class:: classref-item-separator
 

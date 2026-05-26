@@ -14,11 +14,11 @@ Implementación de la RealidadVirtual(VR) móvil genérica.
 Descripción
 ----------------------
 
-This is a generic mobile VR implementation where you need to provide details about the phone and HMD used. It does not rely on any existing framework. This is the most basic interface we have. For the best effect, you need a mobile phone with a gyroscope and accelerometer.
+Esta es una implementación genérica de realidad virtual móvil en la que necesitas proporcionar detalles sobre el teléfono y el HMD (dispositivo de visualización montado en la cabeza) utilizado. No se basa en ningún marco existente. Esta es la interfaz más básica que tenemos. Para obtener el mejor efecto, necesitas un teléfono móvil con giroscopio y acelerómetro.
 
-Note that even though there is no positional tracking, the camera will assume the headset is at a height of 1.85 meters. You can change this by setting :ref:`eye_height<class_MobileVRInterface_property_eye_height>`.
+Ten en cuenta que, aunque no hay seguimiento posicional, la cámara asumirá que el casco está a una altura de 1,85 metros. Puedes cambiar esto ajustando :ref:`eye_height<class_MobileVRInterface_property_eye_height>`.
 
-You can initialize this interface as follows:
+Se puede inicializar esta interfaz de la siguiente manera:
 
 ::
 
@@ -26,7 +26,7 @@ You can initialize this interface as follows:
     if interface and interface.initialize():
         get_viewport().use_xr = true
 
-\ **Note:** For Android, :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`, :ref:`ProjectSettings.input_devices/sensors/enable_gravity<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`, :ref:`ProjectSettings.input_devices/sensors/enable_gyroscope<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>` and :ref:`ProjectSettings.input_devices/sensors/enable_magnetometer<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>` must be enabled.
+\ **Nota:** Para Android, deben estar habilitados :ref:`ProjectSettings.input_devices/sensors/enable_accelerometer<class_ProjectSettings_property_input_devices/sensors/enable_accelerometer>`, :ref:`ProjectSettings.input_devices/sensors/enable_gravity<class_ProjectSettings_property_input_devices/sensors/enable_gravity>`, :ref:`ProjectSettings.input_devices/sensors/enable_gyroscope<class_ProjectSettings_property_input_devices/sensors/enable_gyroscope>` y :ref:`ProjectSettings.input_devices/sensors/enable_magnetometer<class_ProjectSettings_property_input_devices/sensors/enable_magnetometer>`.
 
 .. rst-class:: classref-reftable-group
 

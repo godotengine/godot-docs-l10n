@@ -7,7 +7,7 @@ ConeTwistJoint3D
 
 **Hereda:** :ref:`Joint3D<class_Joint3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A physics joint that connects two 3D physics bodies in a way that simulates a ball-and-socket joint.
+Una unión física que conecta dos cuerpos físicos 3D de forma que simula una articulación de rótula (ball-and-socket).
 
 .. rst-class:: classref-introduction-group
 

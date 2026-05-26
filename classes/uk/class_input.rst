@@ -661,9 +661,9 @@ I-beam курсор. Зазвичай використовується для в
 
 :ref:`String<class_String>` **get_joy_guid**\ (\ device\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_Input_method_get_joy_guid>`
 
-Повертає SDL2-сумісний пристрій Guid на платформах, які використовують відстеження GamePad, E.G. `` 030000004c050000c405000000010000 ``. Повертає порожню рядок, якщо вона не знайдена. Готе, що він використовує [url = https: //github.com/gabomdq/sdl_gamecontrollerdb] База даних ігрового контролера SDL2 [/uri], щоб визначити імена GamePad та відображення на основі цього GUID.
+Returns an SDL-compatible device GUID on platforms that use gamepad remapping, e.g. ``030000004c050000c405000000010000``. Returns an empty string if it cannot be found. Godot uses SDL's internal mappings, supplemented by community-contributed mappings, to determine gamepad names and mappings based on this GUID.
 
-На Windows всі GoStoD Godot JodePad будуть перевизначені за допомогою [code] __ xinput_device __ [/code], тому що їх відображення однакові.
+On Windows, all XInput joypad GUIDs will be overridden by Godot to ``__XINPUT_DEVICE__``, because their mappings are the same.
 
 .. rst-class:: classref-item-separator
 

@@ -14,9 +14,9 @@ Un nodo que proporciona una :ref:`Shape3D<class_Shape3D>` a un padre :ref:`Colli
 Descripción
 ----------------------
 
-A node that provides a :ref:`Shape3D<class_Shape3D>` to a :ref:`CollisionObject3D<class_CollisionObject3D>` parent and allows it to be edited. This can give a detection shape to an :ref:`Area3D<class_Area3D>` or turn a :ref:`PhysicsBody3D<class_PhysicsBody3D>` into a solid object.
+Un nodo que proporciona una :ref:`Shape3D<class_Shape3D>` a un padre :ref:`CollisionObject3D<class_CollisionObject3D>` y permite editarla. Esto puede dar una forma de detección a un :ref:`Area3D<class_Area3D>` o convertir un :ref:`PhysicsBody3D<class_PhysicsBody3D>` en un objeto sólido.
 
-\ **Warning:** A non-uniformly scaled **CollisionShape3D** will likely not behave as expected. Make sure to keep its scale the same on all axes and adjust its :ref:`shape<class_CollisionShape3D_property_shape>` resource instead.
+\ **Advertencia:** Un **CollisionShape3D** con una escala no uniforme probablemente no se comportará como se espera. Asegúrate de mantener su escala igual en todos los ejes y ajusta su recurso :ref:`shape<class_CollisionShape3D_property_shape>` en su lugar.
 
 .. rst-class:: classref-introduction-group
 
@@ -83,9 +83,9 @@ Descripciones de Propiedades
 - |void| **set_debug_color**\ (\ value\: :ref:`Color<class_Color>`\ )
 - :ref:`Color<class_Color>` **get_debug_color**\ (\ )
 
-The collision shape color that is displayed in the editor, or in the running project if **Debug > Visible Collision Shapes** is checked at the top of the editor.
+El color de la forma de colisión (collision shape) que se muestra en el editor, o en el proyecto en ejecución si la opción **Depuración > Formas de colisión visibles** está marcada en la parte superior del editor.
 
-\ **Note:** The default value is :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. The ``Color(0, 0, 0, 0)`` value documented here is a placeholder, and not the actual default debug color.
+\ **Nota:** El valor por defecto es :ref:`ProjectSettings.debug/shapes/collision/shape_color<class_ProjectSettings_property_debug/shapes/collision/shape_color>`. El valor ``Color(0, 0, 0, 0)`` documentado aquí es un marcador de posición (placeholder) y no el color de depuración real por defecto.
 
 .. rst-class:: classref-item-separator
 

@@ -2378,7 +2378,7 @@ Máscara de la tecla Control.
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MASK_KPAD** = ``536870912``
 
-Keypad key mask.
+Máscara de la tecla del teclado numérico.
 
 .. _class_@GlobalScope_constant_KEY_MASK_GROUP_SWITCH:
 
@@ -2386,7 +2386,7 @@ Keypad key mask.
 
 :ref:`KeyModifierMask<enum_@GlobalScope_KeyModifierMask>` **KEY_MASK_GROUP_SWITCH** = ``1073741824``
 
-Máscara de la tecla de cambio de grupo.
+Máscara de la tecla Group Switch.
 
 .. rst-class:: classref-item-separator
 
@@ -2904,7 +2904,7 @@ Mensaje MIDI enviado para indicar un cambio en la presión de una tecla pulsada,
 
 :ref:`MIDIMessage<enum_@GlobalScope_MIDIMessage>` **MIDI_MESSAGE_CONTROL_CHANGE** = ``11``
 
-Mensaje MIDI enviado cuando cambia el valor de un controlador. En un dispositivo MIDI, un controlador es cualquier entrada que no reproduce notas. Estos pueden incluir controles de volumen, balance y panorama, así como interruptores y pedales. Consulta la `especificación General MIDI <https://en.wikipedia.org/wiki/General_MIDI#Controller_events>`__ para obtener una lista breve.
+Mensaje MIDI enviado cuando cambia el valor de un controlador. En un dispositivo MIDI, un controlador es cualquier entrada que no reproduce notas. Estos pueden incluir controles de volumen, balance y panorama, así como interruptores y pedales. Véase la `especificación General MIDI <https://en.wikipedia.org/wiki/General_MIDI#Controller_events>`__ para obtener una lista breve.
 
 .. _class_@GlobalScope_constant_MIDI_MESSAGE_PROGRAM_CHANGE:
 
@@ -5089,7 +5089,7 @@ El singleton :ref:`NavigationServer2D<class_NavigationServer2D>`.
 
 :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` **NavigationServer2DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer2DManager>`
 
-The :ref:`NavigationServer2DManager<class_NavigationServer2DManager>` singleton.
+El singleton :ref:`NavigationServer2DManager<class_NavigationServer2DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5113,7 +5113,7 @@ El singleton :ref:`NavigationServer3D<class_NavigationServer3D>`.
 
 :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` **NavigationServer3DManager** :ref:`🔗<class_@GlobalScope_property_NavigationServer3DManager>`
 
-The :ref:`NavigationServer3DManager<class_NavigationServer3DManager>` singleton.
+El singleton :ref:`NavigationServer3DManager<class_NavigationServer3DManager>`.
 
 .. rst-class:: classref-item-separator
 
@@ -5909,7 +5909,7 @@ Véase también: :ref:`ceil()<class_@GlobalScope_method_ceil>`, :ref:`round()<cl
 
 :ref:`float<class_float>` **floorf**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_floorf>`
 
-Redondea a ``x`` hacia abajo (hacia el negativo infinito), devolviendo el numero entero de mayor tamaño que no sea superior a ``x``.
+Redondea a ``x`` hacia abajo (hacia el negativo infinito), devolviendo el número entero de mayor tamaño que no sea superior a ``x``.
 
 Una version con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`, que devuelve un :ref:`float<class_float>`.
 
@@ -5923,7 +5923,7 @@ Una version con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`
 
 :ref:`int<class_int>` **floori**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_floori>`
 
-Redondea a ``x`` hacia abajo (hacia el negativo infinito), devolviendo el numero entero de mayor tamaño que no sea superior a ``x``.
+Redondea a ``x`` hacia abajo (hacia el negativo infinito), devolviendo el número entero de mayor tamaño que no sea superior a ``x``.
 
 Una version con tipado seguro de :ref:`floor()<class_@GlobalScope_method_floor>`, que devuelve un :ref:`int<class_int>`.
 
@@ -6014,7 +6014,7 @@ Devuelve el hash de tipo integer de la variable ``variable`` pasada.
 
 :ref:`Object<class_Object>` **instance_from_id**\ (\ instance_id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_@GlobalScope_method_instance_from_id>`
 
-Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All Objects have a unique instance ID. See also :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
+Devuelve el :ref:`Object<class_Object>` que corresponde a ``instance_id``. Todos los Objetos tienen un ID de instancia único. Véase también :ref:`Object.get_instance_id()<class_Object_method_get_instance_id>`.
 
 
 .. tabs::
@@ -6026,7 +6026,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
     func _ready():
         var id = get_instance_id()
         var instance = instance_from_id(id)
-        print(instance.drink) # Prints "water"
+        print(instance.drink) # Imprime "water"
 
  .. code-tab:: csharp
 
@@ -6038,7 +6038,7 @@ Returns the :ref:`Object<class_Object>` that corresponds to ``instance_id``. All
         {
             ulong id = GetInstanceId();
             var instance = (MyNode)InstanceFromId(Id);
-            GD.Print(instance.Drink); // Prints "water"
+            GD.Print(instance.Drink); // Imprime "water"
         }
     }
 
@@ -6926,7 +6926,7 @@ Devuelve un entero aleatorio con signo de 32 bits en el rango de ``from`` hasta 
 
 |void| **randomize**\ (\ ) :ref:`🔗<class_@GlobalScope_method_randomize>`
 
-Aleatorizar la semilla (o el estado interno) del generador de números aleatorios. Es una implementación actual que utiliza un numero basado en el tiempo del dispositivo.
+Aleatorizar la semilla (o el estado interno) del generador de números aleatorios. Es una implementación actual que utiliza un número basado en el tiempo del dispositivo.
 
 \ **Nota:** Esta función es llamada automáticamente cuando se ejecuta el proyecto. Si se necesita arreglar la semilla para mas consistencia o reproducir resultados, usa :ref:`seed()<class_@GlobalScope_method_seed>` para inicializar el generador de números aleatorios.
 
@@ -7022,7 +7022,7 @@ Véase también :ref:`floor()<class_@GlobalScope_method_floor>`, :ref:`ceil()<cl
 
 :ref:`float<class_float>` **roundf**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_roundf>`
 
-Redondea ``x`` al numero entero mas cercano, con los casos intermedios redondeados a partir de 0.
+Redondea ``x`` al número entero mas cercano, con los casos intermedios redondeados a partir de 0.
 
 Es una version de tipado seguro del :ref:`round()<class_@GlobalScope_method_round>` , retorna un :ref:`float<class_float>`.
 
@@ -7036,7 +7036,7 @@ Es una version de tipado seguro del :ref:`round()<class_@GlobalScope_method_roun
 
 :ref:`int<class_int>` **roundi**\ (\ x\: :ref:`float<class_float>`\ ) :ref:`🔗<class_@GlobalScope_method_roundi>`
 
-Redondea ``x`` al numero entero mas cercano, con los casos intermedios redondeados a partir de 0.
+Redondea ``x`` al número entero mas cercano, con los casos intermedios redondeados a partir de 0.
 
 Es una version de tipado seguro del :ref:`round()<class_@GlobalScope_method_round>` , retorna un :ref:`int<class_int>`.
 
@@ -7085,7 +7085,7 @@ Establece la semilla para el generador de números aleatorios en ``base``. Confi
 
 :ref:`Variant<class_Variant>` **sign**\ (\ x\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_sign>`
 
-Devuelve el mismo :ref:`Variant<class_Variant>` como ``x``, dando ``-1`` para valores negativos, ``1`` para valores positivos y ``0`` para cero. Para los valores ``NaN`` (No es un Numero) devuelve cero.
+Devuelve el mismo :ref:`Variant<class_Variant>` como ``x``, dando ``-1`` para valores negativos, ``1`` para valores positivos y ``0`` para cero. Para los valores ``NaN`` (No es un Número) devuelve cero.
 
 Tipos soportados :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, :ref:`Vector4i<class_Vector4i>`.
 
@@ -7438,7 +7438,7 @@ Véase también :ref:`typeof()<class_@GlobalScope_method_typeof>`.
 
 :ref:`int<class_int>` **typeof**\ (\ variable\: :ref:`Variant<class_Variant>`\ ) :ref:`🔗<class_@GlobalScope_method_typeof>`
 
-Returns the internal type of the given ``variable``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+Devuelve el tipo interno del ``variable`` dado, usando los valores de :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`.
 
 ::
 
@@ -7446,11 +7446,11 @@ Returns the internal type of the given ``variable``, using the :ref:`Variant.Typ
     json.parse('["a", "b", "c"]')
     var result = json.get_data()
     if typeof(result) == TYPE_ARRAY:
-        print(result[0]) # Prints "a"
+        print(result[0]) # Imprime "a"
     else:
-        print("Unexpected result!")
+        print("¡Resultado inesperado!")
 
-See also :ref:`type_string()<class_@GlobalScope_method_type_string>`.
+Véase también :ref:`type_string()<class_@GlobalScope_method_type_string>`.
 
 .. rst-class:: classref-item-separator
 

@@ -131,9 +131,9 @@ Descripciones de Propiedades
 - |void| **set_data**\ (\ value\: :ref:`PackedByteArray<class_PackedByteArray>`\ )
 - :ref:`PackedByteArray<class_PackedByteArray>` **get_data**\ (\ )
 
-Contains the audio data in bytes.
+Contiene los datos de audio en bytes.
 
-You can load a file without having to import it beforehand using the code snippet below. Keep in mind that this snippet loads the whole file into memory and may not be ideal for huge files (hundreds of megabytes or more).
+Puedes cargar un archivo sin tener que importarlo de antemano utilizando el fragmento de código siguiente. Ten en cuenta que este fragmento carga el archivo completo en la memoria y puede no ser ideal para archivos enormes (de cientos de megabytes o más).
 
 
 .. tabs::

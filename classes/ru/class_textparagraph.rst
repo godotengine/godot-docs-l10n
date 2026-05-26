@@ -495,7 +495,7 @@ TextParagraph
 
 :ref:`TextParagraph<class_TextParagraph>` **duplicate**\ (\ ) |const| :ref:`🔗<class_TextParagraph_method_duplicate>`
 
-Duplicates this **TextParagraph**.
+Дублирует этот **TextParagraph**.
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ Duplicates this **TextParagraph**.
 
 :ref:`bool<class_bool>` **has_object**\ (\ key\: :ref:`Variant<class_Variant>`\ ) |const| :ref:`🔗<class_TextParagraph_method_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Возвращает ``true``, если объект с ``key`` встроен в этот текстовый буфер заданной формы.
 
 .. rst-class:: classref-item-separator
 

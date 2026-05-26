@@ -166,21 +166,21 @@ Señales
 
 **link_reached**\ (\ details\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_NavigationAgent2D_signal_link_reached>`
 
-Signals that the agent reached a navigation link. Emitted when the agent moves within :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` of the next position of the path when that position is a navigation link.
+Señala que el agente alcanzó un enlace de navegación. Se emite cuando el agente se mueve dentro de :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` de la siguiente posición del trayecto cuando esa posición es un enlace de navegación.
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent2D_property_path_metadata_flags>`:
+El diccionario de detalles puede contener las siguientes claves dependiendo del valor de :ref:`path_metadata_flags<class_NavigationAgent2D_property_path_metadata_flags>`:
 
-- ``position``: The start position of the link that was reached.
+- ``position``: La posición inicial del enlace que se alcanzó.
 
-- ``type``: Always :ref:`NavigationPathQueryResult2D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult2D_constant_PATH_SEGMENT_TYPE_LINK>`.
+- ``type``: Siempre :ref:`NavigationPathQueryResult2D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult2D_constant_PATH_SEGMENT_TYPE_LINK>`.
 
-- ``rid``: The :ref:`RID<class_RID>` of the link.
+- ``rid``: El :ref:`RID<class_RID>` del enlace.
 
-- ``owner``: The object which manages the link (usually :ref:`NavigationLink2D<class_NavigationLink2D>`).
+- ``owner``: El objeto que gestiona el enlace (normalmente :ref:`NavigationLink2D<class_NavigationLink2D>`).
 
-- ``link_entry_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink2D<class_NavigationLink2D>`, it will contain the global position of the link's point the agent is entering.
+- ``link_entry_position``: Si ``owner`` está disponible y el propietario es un :ref:`NavigationLink2D<class_NavigationLink2D>`, contendrá la posición global del punto del enlace al que entra el agente.
 
-- ``link_exit_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink2D<class_NavigationLink2D>`, it will contain the global position of the link's point which the agent is exiting.
+- ``link_exit_position``: Si ``owner`` está disponible y el propietario es un :ref:`NavigationLink2D<class_NavigationLink2D>`, contendrá la posición global del punto del enlace por el que sale el agente.
 
 .. rst-class:: classref-item-separator
 
@@ -192,9 +192,9 @@ The details dictionary may contain the following keys depending on the value of 
 
 **navigation_finished**\ (\ ) :ref:`🔗<class_NavigationAgent2D_signal_navigation_finished>`
 
-Signals that the agent's navigation has finished. If the target is reachable, navigation ends when the target is reached. If the target is unreachable, navigation ends when the last waypoint of the path is reached. This signal is emitted only once per loaded path.
+Señala que la navegación del agente ha terminado. Si el objetivo es alcanzable, la navegación termina cuando se alcanza el objetivo. Si el objetivo es inalcanzable, la navegación termina cuando se alcanza el último punto de trayecto de la trayectoria. Esta señal se emite solo una vez por trayectoria cargada.
 
-This signal will be emitted just after :ref:`target_reached<class_NavigationAgent2D_signal_target_reached>` when the target is reachable.
+Esta señal se emitirá justo después de :ref:`target_reached<class_NavigationAgent2D_signal_target_reached>` cuando el objetivo sea alcanzable.
 
 .. rst-class:: classref-item-separator
 
@@ -206,13 +206,13 @@ This signal will be emitted just after :ref:`target_reached<class_NavigationAgen
 
 **path_changed**\ (\ ) :ref:`🔗<class_NavigationAgent2D_signal_path_changed>`
 
-Emitted when the agent had to update the loaded path:
+Se emite cuando el agente tuvo que actualizar la trayectoria cargada:
 
-- because path was previously empty.
+- porque la trayectoria estaba previamente vacía.
 
-- because navigation map has changed.
+- porque el mapa de navegación ha cambiado.
 
-- because agent pushed further away from the current path segment than the :ref:`path_max_distance<class_NavigationAgent2D_property_path_max_distance>`.
+- porque el agente se alejó más del segmento de trayectoria actual de lo que permite :ref:`path_max_distance<class_NavigationAgent2D_property_path_max_distance>`.
 
 .. rst-class:: classref-item-separator
 
@@ -224,11 +224,11 @@ Emitted when the agent had to update the loaded path:
 
 **target_reached**\ (\ ) :ref:`🔗<class_NavigationAgent2D_signal_target_reached>`
 
-Signals that the agent reached the target, i.e. the agent moved within :ref:`target_desired_distance<class_NavigationAgent2D_property_target_desired_distance>` of the :ref:`target_position<class_NavigationAgent2D_property_target_position>`. This signal is emitted only once per loaded path.
+Señala que el agente alcanzó el objetivo, es decir, el agente se movió dentro de :ref:`target_desired_distance<class_NavigationAgent2D_property_target_desired_distance>` de la :ref:`target_position<class_NavigationAgent2D_property_target_position>`. Esta señal se emite solo una vez por trayectoria cargada.
 
-This signal will be emitted just before :ref:`navigation_finished<class_NavigationAgent2D_signal_navigation_finished>` when the target is reachable.
+Esta señal se emitirá justo antes de :ref:`navigation_finished<class_NavigationAgent2D_signal_navigation_finished>` cuando el objetivo sea alcanzable.
 
-It may not always be possible to reach the target but it should always be possible to reach the final position. See :ref:`get_final_position()<class_NavigationAgent2D_method_get_final_position>`.
+Puede que no siempre sea posible alcanzar el objetivo, pero siempre debería ser posible alcanzar la posición final. Véase :ref:`get_final_position()<class_NavigationAgent2D_method_get_final_position>`.
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ It may not always be possible to reach the target but it should always be possib
 
 **velocity_computed**\ (\ safe_velocity\: :ref:`Vector2<class_Vector2>`\ ) :ref:`🔗<class_NavigationAgent2D_signal_velocity_computed>`
 
-Notifies when the collision avoidance velocity is calculated. Emitted every update as long as :ref:`avoidance_enabled<class_NavigationAgent2D_property_avoidance_enabled>` is ``true`` and the agent has a navigation map.
+Notifica cuando se calcula la velocidad de evitación de colisiones. Se emite en cada actualización siempre que :ref:`avoidance_enabled<class_NavigationAgent2D_property_avoidance_enabled>` sea ``true`` y el agente tenga un mapa de navegación.
 
 .. rst-class:: classref-item-separator
 
@@ -252,17 +252,17 @@ Notifies when the collision avoidance velocity is calculated. Emitted every upda
 
 **waypoint_reached**\ (\ details\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_NavigationAgent2D_signal_waypoint_reached>`
 
-Signals that the agent reached a waypoint. Emitted when the agent moves within :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` of the next position of the path.
+Señala que el agente alcanzó un punto de trayecto. Se emite cuando el agente se mueve dentro de :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` de la siguiente posición del trayecto.
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent2D_property_path_metadata_flags>`:
+El diccionario de detalles puede contener las siguientes claves dependiendo del valor de :ref:`path_metadata_flags<class_NavigationAgent2D_property_path_metadata_flags>`:
 
-- ``position``: The position of the waypoint that was reached.
+- ``position``: La posición del punto de trayecto que se alcanzó.
 
-- ``type``: The type of navigation primitive (region or link) that contains this waypoint.
+- ``type``: El tipo de primitiva de navegación (región o enlace) que contiene este punto de trayecto.
 
-- ``rid``: The :ref:`RID<class_RID>` of the containing navigation primitive (region or link).
+- ``rid``: El :ref:`RID<class_RID>` de la primitiva de navegación contenedora (región o enlace).
 
-- ``owner``: The object which manages the containing navigation primitive (region or link).
+- ``owner``: El objeto que gestiona la primitiva de navegación contenedora (región o enlace).
 
 .. rst-class:: classref-section-separator
 
@@ -696,9 +696,9 @@ The path simplification amount in worlds units.
 - |void| **set_simplify_path**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **get_simplify_path**\ (\ )
 
-If ``true`` a simplified version of the path will be returned with less critical path points removed. The simplification amount is controlled by :ref:`simplify_epsilon<class_NavigationAgent2D_property_simplify_epsilon>`. The simplification uses a variant of Ramer-Douglas-Peucker algorithm for curve point decimation.
+Si es ``true``, se devolverá una versión simplificada del trayecto con menos puntos críticos de trayectos eliminados. La cantidad de simplificación se controla mediante :ref:`simplify_epsilon<class_NavigationAgent2D_property_simplify_epsilon>`. La simplificación utiliza una variante del algoritmo Ramer-Douglas-Peucker para la diezma de puntos de curva.
 
-Path simplification can be helpful to mitigate various path following issues that can arise with certain agent types and script behaviors. E.g. "steering" agents or avoidance in "open fields".
+La simplificación de trayectos puede ser útil para mitigar varios problemas de seguimiento de trayectos que pueden surgir con ciertos tipos de agentes y comportamientos de script. Por ejemplo, agentes de "dirección" o evitación en "campos abiertos".
 
 .. rst-class:: classref-item-separator
 
@@ -715,11 +715,11 @@ Path simplification can be helpful to mitigate various path following issues tha
 - |void| **set_target_desired_distance**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_target_desired_distance**\ (\ )
 
-The distance threshold before the target is considered to be reached. On reaching the target, :ref:`target_reached<class_NavigationAgent2D_signal_target_reached>` is emitted and navigation ends (see :ref:`is_navigation_finished()<class_NavigationAgent2D_method_is_navigation_finished>` and :ref:`navigation_finished<class_NavigationAgent2D_signal_navigation_finished>`).
+El umbral de distancia antes de que se considere alcanzado el objetivo. Al alcanzar el objetivo, se emite :ref:`target_reached<class_NavigationAgent2D_signal_target_reached>` y la navegación termina (véase :ref:`is_navigation_finished()<class_NavigationAgent2D_method_is_navigation_finished>` y :ref:`navigation_finished<class_NavigationAgent2D_signal_navigation_finished>`).
 
-You can make navigation end early by setting this property to a value greater than :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` (navigation will end before reaching the last waypoint).
+Puedes hacer que la navegación termine antes estableciendo esta propiedad a un valor mayor que :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` (la navegación terminará antes de alcanzar el último punto de paso).
 
-You can also make navigation end closer to the target than each individual path position by setting this property to a value lower than :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` (navigation won't immediately end when reaching the last waypoint). However, if the value set is too low, the agent will be stuck in a repath loop because it will constantly overshoot the distance to the target on each physics frame update.
+También puedes hacer que la navegación termine más cerca del objetivo que cada posición de trayecto individual estableciendo esta propiedad a un valor menor que :ref:`path_desired_distance<class_NavigationAgent2D_property_path_desired_distance>` (la navegación no terminará inmediatamente al alcanzar el último punto de paso). Sin embargo, si el valor establecido es demasiado bajo, el agente se quedará atascado en un bucle de repath porque constantemente superará la distancia al objetivo en cada actualización del frame de física.
 
 .. rst-class:: classref-item-separator
 
@@ -736,7 +736,7 @@ You can also make navigation end closer to the target than each individual path 
 - |void| **set_target_position**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_target_position**\ (\ )
 
-If set, a new navigation path from the current agent position to the :ref:`target_position<class_NavigationAgent2D_property_target_position>` is requested from the NavigationServer.
+Si se establece, se solicita un nuevo camino de navegación desde la posición actual del agente hasta la :ref:`target_position<class_NavigationAgent2D_property_target_position>` al NavigationServer.
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +753,7 @@ If set, a new navigation path from the current agent position to the :ref:`targe
 - |void| **set_time_horizon_agents**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_agents**\ (\ )
 
-The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to other agents. The larger the number, the sooner the agent will respond to other agents, but less freedom in choosing its velocities. A too high value will slow down agents movement considerably. Must be positive.
+La cantidad mínima de tiempo durante la cual las velocidades de este agente, que se calculan con el algoritmo de evitación de colisiones, son seguras con respecto a otros agentes. Cuanto mayor sea el número, antes responderá el agente a otros agentes, pero tendrá menos libertad para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -770,7 +770,7 @@ The minimal amount of time for which this agent's velocities, that are computed 
 - |void| **set_time_horizon_obstacles**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_time_horizon_obstacles**\ (\ )
 
-The minimal amount of time for which this agent's velocities, that are computed with the collision avoidance algorithm, are safe with respect to static avoidance obstacles. The larger the number, the sooner the agent will respond to static avoidance obstacles, but less freedom in choosing its velocities. A too high value will slow down agents movement considerably. Must be positive.
+La cantidad mínima de tiempo durante la cual las velocidades de este agente, calculadas con el algoritmo de evitación de colisiones, son seguras con respecto a los obstáculos de evitación estáticos. Cuanto mayor sea el número, antes responderá el agente a los obstáculos de evitación estáticos, pero tendrá menos libertad para elegir sus velocidades. Un valor demasiado alto ralentizará considerablemente el movimiento de los agentes. Debe ser positivo.
 
 .. rst-class:: classref-item-separator
 
@@ -787,7 +787,7 @@ The minimal amount of time for which this agent's velocities, that are computed 
 - |void| **set_velocity**\ (\ value\: :ref:`Vector2<class_Vector2>`\ )
 - :ref:`Vector2<class_Vector2>` **get_velocity**\ (\ )
 
-Sets the new wanted velocity for the agent. The avoidance simulation will try to fulfill this velocity if possible but will modify it to avoid collision with other agents and obstacles. When an agent is teleported to a new position, use :ref:`set_velocity_forced()<class_NavigationAgent2D_method_set_velocity_forced>` as well to reset the internal simulation velocity.
+Establece la nueva velocidad deseada para el agente. La simulación de evitación intentará cumplir esta velocidad si es posible, pero la modificará para evitar colisiones con otros agentes y obstáculos. Cuando un agente es teletransportado a una nueva posición, usa también :ref:`set_velocity_forced()<class_NavigationAgent2D_method_set_velocity_forced>` para restablecer la velocidad de simulación interna.
 
 .. rst-class:: classref-section-separator
 

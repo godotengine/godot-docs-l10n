@@ -7,14 +7,14 @@ HSplitContainer
 
 **Hereda:** :ref:`SplitContainer<class_SplitContainer>` **<** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A container that splits two child controls horizontally and provides a grabber for adjusting the split ratio.
+Un contenedor que divide dos controles hijos horizontalmente y proporciona un agarrador para ajustar la relación de división.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-A container that accepts only two child controls, then arranges them horizontally and creates a divisor between them. The divisor can be dragged around to change the size relation between the child controls.
+Un contenedor que acepta solo dos controles hijos, luego los organiza horizontalmente y crea un divisor entre ellos. El divisor se puede arrastrar para cambiar la relación de tamaño entre los controles hijos.
 
 .. rst-class:: classref-introduction-group
 

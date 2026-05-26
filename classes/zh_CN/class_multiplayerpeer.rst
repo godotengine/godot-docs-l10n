@@ -19,7 +19,7 @@ MultiplayerPeer
 描述
 ----
 
-管理与一个或多个作为服务器或客户端的远程对等体的连接，并为每个对等体分配唯一的 ID。另见 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
+管理与一个或多个作为服务器或客户端的远程对等端的连接，并为每个对等端分配唯一的 ID。另见 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。
 
 \ **注意：**\ :ref:`MultiplayerAPI<class_MultiplayerAPI>` 协议是一个实现细节，并不打算由非 Godot 服务器使用。它可能会更改，恕不另行通知。
 
@@ -95,7 +95,7 @@ MultiplayerPeer
 
 **peer_connected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerPeer_signal_peer_connected>`
 
-远程对等体连接时发出。
+远程对等端连接时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ MultiplayerPeer
 
 **peer_disconnected**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerPeer_signal_peer_disconnected>`
 
-远程对等体断开连接时发出。
+远程对等端断开连接时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -197,7 +197,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 **TARGET_PEER_BROADCAST** = ``0`` :ref:`🔗<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`
 
-将数据包发送至所有已连接的对等体。
+将数据包发送至所有已连接的对等端。
 
 .. _class_MultiplayerPeer_constant_TARGET_PEER_SERVER:
 
@@ -205,7 +205,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 **TARGET_PEER_SERVER** = ``1`` :ref:`🔗<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>`
 
-将数据包发送至作为服务器的远程对等体。
+将数据包发送至作为服务器的远程对等端。
 
 .. rst-class:: classref-section-separator
 
@@ -263,7 +263,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 - |void| **set_transfer_mode**\ (\ value\: :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`\ )
 - :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **get_transfer_mode**\ (\ )
 
-向目标对等体发送数据包的方式。见 :ref:`set_target_peer()<class_MultiplayerPeer_method_set_target_peer>` 方法。
+向目标对等端发送数据包的方式。见 :ref:`set_target_peer()<class_MultiplayerPeer_method_set_target_peer>` 方法。
 
 .. rst-class:: classref-section-separator
 
@@ -280,7 +280,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 |void| **close**\ (\ ) :ref:`🔗<class_MultiplayerPeer_method_close>`
 
-立即关闭多人对等体，返回到 :ref:`CONNECTION_DISCONNECTED<class_MultiplayerPeer_constant_CONNECTION_DISCONNECTED>` 状态。已连接的对等体将被丢弃，不会发出 :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>`\ 。
+立即关闭多人对等端，返回到 :ref:`CONNECTION_DISCONNECTED<class_MultiplayerPeer_constant_CONNECTION_DISCONNECTED>` 状态。已连接的对等端将被丢弃，不会发出 :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -292,7 +292,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 |void| **disconnect_peer**\ (\ peer\: :ref:`int<class_int>`, force\: :ref:`bool<class_bool>` = false\ ) :ref:`🔗<class_MultiplayerPeer_method_disconnect_peer>`
 
-断开给定的 ``peer`` 与该主机的连接。如果 ``force`` 为 ``true``\ ，则不会为该对等体发出 :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>` 信号。
+断开给定的 ``peer`` 与该主机的连接。如果 ``force`` 为 ``true``\ ，则不会为该对等端发出 :ref:`peer_disconnected<class_MultiplayerPeer_signal_peer_disconnected>` 信号。
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>` **get_packet_mode**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_get_packet_mode>`
 
-返回远程对等体用于发送下一个可用数据包的传输模式。请参阅 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ 。
+返回远程对等端用于发送下一个可用数据包的传输模式。请参阅 :ref:`PacketPeer.get_available_packet_count()<class_PacketPeer_method_get_available_packet_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -376,7 +376,7 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 :ref:`bool<class_bool>` **is_server_relay_supported**\ (\ ) |const| :ref:`🔗<class_MultiplayerPeer_method_is_server_relay_supported>`
 
-如果服务器在当前配置中可以充当中继者，则返回 ``true``\ （也就是说，如果更高级别的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 应该通知连接的客户端有其他对等体，并实现一个中继协议以允许它们之间的通信）。
+如果服务器在当前配置中可以充当中继者，则返回 ``true``\ （也就是说，如果更高级别的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 应该通知连接的客户端有其他对等端，并实现一个中继协议以允许它们之间的通信）。
 
 .. rst-class:: classref-item-separator
 
@@ -400,9 +400,9 @@ enum **TransferMode**: :ref:`🔗<enum_MultiplayerPeer_TransferMode>`
 
 |void| **set_target_peer**\ (\ id\: :ref:`int<class_int>`\ ) :ref:`🔗<class_MultiplayerPeer_method_set_target_peer>`
 
-设置数据包将被发送至的对等体。
+设置数据包将被发送至的对等端。
 
-\ ``id`` 可以是以下之一：\ :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`\ ，以发送到所有连接的对等体；\ :ref:`TARGET_PEER_SERVER<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>`\ ，以发送到充当服务器的对等体；一个有效的对等体 ID ，以发送到那个特定的对等体；一个负的对等体 ID，以发送到除那个对等体以外的所有对等体。默认情况下，目标对等体是 :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`\ 。
+\ ``id`` 可以是以下之一：\ :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`\ ，以发送到所有连接的对等端；\ :ref:`TARGET_PEER_SERVER<class_MultiplayerPeer_constant_TARGET_PEER_SERVER>`\ ，以发送到充当服务器的对等端；一个有效的对等端 ID ，以发送到那个特定的对等端；一个负的对等端 ID，以发送到除那个对等端以外的所有对等端。默认情况下，目标对等端是 :ref:`TARGET_PEER_BROADCAST<class_MultiplayerPeer_constant_TARGET_PEER_BROADCAST>`\ 。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

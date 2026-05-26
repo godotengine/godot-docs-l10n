@@ -337,6 +337,8 @@ Métodos
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                            | :ref:`_shaped_get_run_font_size<class_TextServerExtension_private_method__shaped_get_run_font_size>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                      |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                  | :ref:`_shaped_get_run_glyph_range<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                  |
+   +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`_shaped_get_run_language<class_TextServerExtension_private_method__shaped_get_run_language>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                        |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`                                    | :ref:`_shaped_get_run_object<class_TextServerExtension_private_method__shaped_get_run_object>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                            |
@@ -623,7 +625,7 @@ Elimina todos los tamaños de fuente de la entrada de caché.
 
 |void| **_font_clear_system_fallback_cache**\ (\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_clear_system_fallback_cache>`
 
-Frees all automatically loaded system fonts.
+Libera todas las fuentes del sistema cargadas automáticamente.
 
 .. rst-class:: classref-item-separator
 
@@ -731,7 +733,7 @@ Devuelve el descenso de la fuente (número de píxeles por debajo de la línea d
 
 :ref:`bool<class_bool>` **_font_get_disable_embedded_bitmaps**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_disable_embedded_bitmaps>`
 
-Returns whether the font's embedded bitmap loading is disabled.
+Devuelve si la carga de mapas de bits incrustados de la fuente está deshabilitada.
 
 .. rst-class:: classref-item-separator
 
@@ -779,7 +781,7 @@ Devuelve un índice de cara activo en la colección TrueType/OpenType.
 
 :ref:`int<class_int>` **_font_get_fixed_size**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_fixed_size>`
 
-Returns bitmap font fixed size.
+Devuelve el tamaño fijo de la fuente de mapa de bits.
 
 .. rst-class:: classref-item-separator
 
@@ -791,7 +793,7 @@ Returns bitmap font fixed size.
 
 :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **_font_get_fixed_size_scale_mode**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_fixed_size_scale_mode>`
 
-Returns bitmap font scaling mode.
+Devuelve el modo de escalado de la fuente de mapa de bits.
 
 .. rst-class:: classref-item-separator
 
@@ -803,7 +805,7 @@ Returns bitmap font scaling mode.
 
 :ref:`bool<class_bool>` **_font_get_generate_mipmaps**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_get_generate_mipmaps>`
 
-Returns ``true`` if font texture mipmap generation is enabled.
+Devuelve ``true`` si la generación de mipmaps de la textura de la fuente está habilitada.
 
 .. rst-class:: classref-item-separator
 
@@ -1379,7 +1381,7 @@ Returns ``true`` if the font supports the given language (as a `ISO 639 <https:/
 
 :ref:`bool<class_bool>` **_font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+Devuelve ``true`` si la modulación de color se aplica al dibujar los glifos coloreados de la fuente.
 
 .. rst-class:: classref-item-separator
 
@@ -1763,7 +1765,7 @@ Establece el modo de hinting de la fuente. Solo se usa en fuentes dinámicas.
 
 |void| **_font_set_keep_rounding_remainders**\ (\ font_rid\: :ref:`RID<class_RID>`, keep_rounding_remainders\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_keep_rounding_remainders>`
 
-Sets glyph position rounding behavior. If set to ``true``, when aligning glyphs to the pixel boundaries rounding remainders are accumulated to ensure more uniform glyph distribution. This setting has no effect if subpixel positioning is enabled.
+Establece el comportamiento de redondeo de la posición del glifo. Si se establece en ``true``, al alinear los glifos con los límites de los píxeles, los restos del redondeo se acumulan para asegurar una distribución más uniforme de los glifos. Este ajuste no tiene efecto si el posicionamiento por subpíxel está habilitado.
 
 .. rst-class:: classref-item-separator
 
@@ -1799,7 +1801,7 @@ Añade una sobrescritura para :ref:`_font_is_language_supported()<class_TextServ
 
 |void| **_font_set_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`, modulate\: :ref:`bool<class_bool>`\ ) |virtual| :ref:`🔗<class_TextServerExtension_private_method__font_set_modulate_color_glyphs>`
 
-If set to ``true``, color modulation is applied when drawing colored glyphs, otherwise it's applied to the monochrome glyphs only.
+Si se establece como ``true``, la modulación de color se aplica al dibujar glifos coloreados, de lo contrario, se aplica solo a los glifos monocromáticos.
 
 .. rst-class:: classref-item-separator
 
@@ -2077,9 +2079,9 @@ Devuelve el diccionario de las coordenadas de variación OpenType admitidas.
 
 **Obsoleto:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+Convierte un número del sistema arábigo occidental (0..9) al sistema numérico utilizado en el ``language`` dado.
 
-If ``language`` is an empty string, the active locale will be used.
+Si ``language`` es una string vacía, se utilizará la configuración regional activa.
 
 .. rst-class:: classref-item-separator
 
@@ -2163,7 +2165,7 @@ Devuelve el nombre de archivo de la base de datos predeterminada de TextServer (
 
 :ref:`String<class_String>` **_get_support_data_info**\ (\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__get_support_data_info>`
 
-Returns TextServer database (e.g. ICU break iterators and dictionaries) description.
+Devuelve la descripción de la base de datos de TextServer (por ejemplo, iteradores de corte y diccionarios de ICU).
 
 .. rst-class:: classref-item-separator
 
@@ -2223,7 +2225,7 @@ Devuelve ``true`` si la configuración regional es de derecha a izquierda.
 
 :ref:`bool<class_bool>` **_is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+Devuelve ``true`` si la configuración regional requiere datos de soporte del servidor de texto para el salto de línea/palabra.
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2275,7 @@ Carga la base de datos opcional del TextServer (por ejemplo, iteradores de salto
 
 :ref:`int<class_int>` **_name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+Convierte el nombre legible dado de una característica, variación, script o idioma a una etiqueta de OpenType.
 
 .. rst-class:: classref-item-separator
 
@@ -2287,9 +2289,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **Obsoleto:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+Convierte ``number`` del sistema numeral usado en el ``language`` dado a arábigo occidental (0..9).
 
-If ``language`` is an empty string, the active locale will be used.
+Si ``language`` es una string vacía, se usará la configuración regional activa.
 
 .. rst-class:: classref-item-separator
 
@@ -2351,7 +2353,7 @@ Guarda la base de datos opcional del TextServer (por ejemplo, iteradores de salt
 
 :ref:`int<class_int>` **_shaped_get_run_count**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_count>`
 
-Devuelve el número de secuencias de texto uniformes en el búfer.
+Devuelve el número de secuencias de texto de variables uniformes en el búfer.
 
 .. rst-class:: classref-item-separator
 
@@ -2388,6 +2390,18 @@ Devuelve el RID de la fuente de la secuencia de texto de ``index`` (en orden vis
 :ref:`int<class_int>` **_shaped_get_run_font_size**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_font_size>`
 
 Devuelve el tamaño de fuente de la secuencia de texto de ``index`` (en orden visual).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextServerExtension_private_method__shaped_get_run_glyph_range:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **_shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`
+
+Returns the glyph range of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -2603,7 +2617,7 @@ Dibuja el contorno del texto moldeado en un elemento Canvas en una posición det
 
 :ref:`RID<class_RID>` **_shaped_text_duplicate**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+Duplica el búfer de texto conformado.
 
 .. rst-class:: classref-item-separator
 
@@ -2627,7 +2641,7 @@ Ajusta el ancho del texto para que encaje en el ancho especificado, devuelve el 
 
 :ref:`float<class_float>` **_shaped_text_get_ascent**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_get_ascent>`
 
-Returns the text ascent (number of pixels above the baseline for horizontal layout or to the left of baseline for vertical).
+Devuelve el ascenso del texto (número de píxeles por encima de la línea de base para diseño horizontal o a la izquierda de la línea de base para vertical).
 
 .. rst-class:: classref-item-separator
 
@@ -2687,7 +2701,7 @@ Devuelve la lista de caracteres de puntuación personalizados, utilizada para el
 
 :ref:`float<class_float>` **_shaped_text_get_descent**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_get_descent>`
 
-Returns the text descent (number of pixels below the baseline for horizontal layout or to the right of baseline for vertical).
+Devuelve el descenso del texto (número de píxeles por debajo de la línea de base para diseño horizontal o a la derecha de la línea de base para vertical).
 
 .. rst-class:: classref-item-separator
 
@@ -2855,7 +2869,7 @@ Devuelve el rango de caracteres del objeto en línea.
 
 :ref:`Rect2<class_Rect2>` **_shaped_text_get_object_rect**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_get_object_rect>`
 
-Returns bounding rectangle of the inline object.
+Devuelve el rectángulo delimitador del objeto en línea.
 
 .. rst-class:: classref-item-separator
 
@@ -2999,7 +3013,7 @@ Devuelve el desplazamiento de píxeles del subrayado debajo de la línea base.
 
 :ref:`float<class_float>` **_shaped_text_get_underline_thickness**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_get_underline_thickness>`
 
-Returns thickness of the underline.
+Devuelve el grosor del subrayado.
 
 .. rst-class:: classref-item-separator
 
@@ -3011,7 +3025,7 @@ Returns thickness of the underline.
 
 :ref:`float<class_float>` **_shaped_text_get_width**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_get_width>`
 
-Returns width (for horizontal layout) or height (for vertical) of the text.
+Devuelve el ancho (para diseño horizontal) o la altura (para vertical) del texto.
 
 .. rst-class:: classref-item-separator
 
@@ -3035,7 +3049,7 @@ Divide el texto en palabras y devuelve un array de rangos de caracteres. Usa ``g
 
 :ref:`bool<class_bool>` **_shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Devuelve ``true`` si un objeto con ``key`` está incrustado en este búfer de texto moldeado.
 
 .. rst-class:: classref-item-separator
 
@@ -3143,7 +3157,7 @@ Devuelve la posición inicial del grafema más cercana a ``pos``.
 
 :ref:`bool<class_bool>` **_shaped_text_resize_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`, size\: :ref:`Vector2<class_Vector2>`, inline_align\: :ref:`InlineAlignment<enum_@GlobalScope_InlineAlignment>`, baseline\: :ref:`float<class_float>`\ ) |virtual| |required| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_resize_object>`
 
-Sets new size and alignment of embedded object.
+Establece el nuevo tamaño y alineación del objeto incrustado.
 
 .. rst-class:: classref-item-separator
 

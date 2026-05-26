@@ -157,7 +157,7 @@ Godot 编辑器中用于管理项目文件的停靠面板。
 
 **selection_changed**\ (\ ) :ref:`🔗<class_FileSystemDock_signal_selection_changed>`
 
-Emitted when the selection changes. Use :ref:`EditorInterface.get_selected_paths()<class_EditorInterface_method_get_selected_paths>` in the connected method to get the selected paths.
+当选择发生变化时发出该信号。在连接的方法中使用 :ref:`EditorInterface.get_selected_paths()<class_EditorInterface_method_get_selected_paths>` 可以获取选定的路径。
 
 .. rst-class:: classref-section-separator
 

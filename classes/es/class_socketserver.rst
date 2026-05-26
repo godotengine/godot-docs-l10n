@@ -16,7 +16,7 @@ An abstract class for servers based on sockets.
 Descripción
 ----------------------
 
-A socket server.
+Un servidor de sockets.
 
 .. rst-class:: classref-reftable-group
 

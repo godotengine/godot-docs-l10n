@@ -302,7 +302,7 @@ Emitida cuando una pestaña tiene encima el cursor del ratón.
 
 **tab_rmb_clicked**\ (\ tab\: :ref:`int<class_int>`\ ) :ref:`🔗<class_TabBar_signal_tab_rmb_clicked>`
 
-Emitted when a tab is right-clicked.
+Emitida cuando se hace clic derecho en una pestaña.
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ enum **AlignmentMode**: :ref:`🔗<enum_TabBar_AlignmentMode>`
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_LEFT** = ``0``
 
-Aligns tabs to the left.
+Alinea las pestañas a la izquierda.
 
 .. _class_TabBar_constant_ALIGNMENT_CENTER:
 
@@ -345,7 +345,7 @@ Aligns tabs to the left.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_CENTER** = ``1``
 
-Aligns tabs in the middle.
+Alinea las pestañas en el medio.
 
 .. _class_TabBar_constant_ALIGNMENT_RIGHT:
 
@@ -353,7 +353,7 @@ Aligns tabs in the middle.
 
 :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **ALIGNMENT_RIGHT** = ``2``
 
-Aligns tabs to the right.
+Alinea las pestañas a la derecha.
 
 .. _class_TabBar_constant_ALIGNMENT_MAX:
 
@@ -595,7 +595,7 @@ If ``true``, hovering over a tab while dragging something will switch to that ta
 - |void| **set_tab_alignment**\ (\ value\: :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`\ )
 - :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` **get_tab_alignment**\ (\ )
 
-The horizontal alignment of the tabs.
+La alineación horizontal de las pestañas.
 
 .. rst-class:: classref-item-separator
 
@@ -1128,7 +1128,7 @@ Color de la fuente de las otras pestañas no seleccionadas.
 
 :ref:`Color<class_Color>` **icon_disabled_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_disabled_color>`
 
-Icon color of disabled tabs.
+Color del icono de las pestañas deshabilitadas.
 
 .. rst-class:: classref-item-separator
 
@@ -1140,7 +1140,7 @@ Icon color of disabled tabs.
 
 :ref:`Color<class_Color>` **icon_hovered_color** = ``Color(1, 1, 1, 1)`` :ref:`🔗<class_TabBar_theme_color_icon_hovered_color>`
 
-Icon color of the currently hovered tab. Does not apply to the selected tab.
+Color del icono de la pestaña sobre la que se pasa el cursor. No se aplica a la pestaña seleccionada.
 
 .. rst-class:: classref-item-separator
 

@@ -1623,7 +1623,7 @@ Indica si tu aplicación recopila datos de audio.
 
 :ref:`int<class_int>` **privacy/collected_data/audio_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/audio_data/collection_purposes>`
 
-Las razones por las que tu aplicación recopila datos de audio. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila datos de audio. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1767,7 +1767,7 @@ Indica si tu aplicación recopila contactos.
 
 :ref:`int<class_int>` **privacy/collected_data/contacts/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/contacts/collection_purposes>`
 
-Las razones por las que tu aplicación recopila contactos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila contactos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -1815,7 +1815,7 @@ Indica si tu aplicación recopila datos de fallos.
 
 :ref:`int<class_int>` **privacy/collected_data/crash_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/crash_data/collection_purposes>`
 
-Las razones por las que tu aplicación recopila datos de fallos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila datos de fallos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2199,7 +2199,7 @@ Indica si tu aplicación recopila contenido de juego.
 
 :ref:`int<class_int>` **privacy/collected_data/gameplay_content/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/gameplay_content/collection_purposes>`
 
-Las razones por las que tu aplicación recopila contenido de juego. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila contenido de juego. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2343,7 +2343,7 @@ Indica si tu aplicación recopila datos médicos y de salud.
 
 :ref:`int<class_int>` **privacy/collected_data/health/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/health/collection_purposes>`
 
-Las razones por las que tu app recopila datos médicos y de salud. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila datos médicos y de salud. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2487,7 +2487,7 @@ Indica si tu aplicación recopila cualquier otro dato.
 
 :ref:`int<class_int>` **privacy/collected_data/other_data_types/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_data_types/collection_purposes>`
 
-Las razones por las que tu aplicación recopila otros datos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila otros datos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2631,7 +2631,7 @@ Indica si tu aplicación recopila cualquier otro dato de uso.
 
 :ref:`int<class_int>` **privacy/collected_data/other_usage_data/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/other_usage_data/collection_purposes>`
 
-Las razones por las que tu aplicación recopila otros datos de uso. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila otros datos de uso. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2727,7 +2727,7 @@ Indica si tu aplicación recopila información de pago.
 
 :ref:`int<class_int>` **privacy/collected_data/payment_info/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/payment_info/collection_purposes>`
 
-Las razones por las que tu aplicación recopila información de pago. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila información de pago. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2871,7 +2871,7 @@ Indica si tu aplicación recopila fotos o vídeos.
 
 :ref:`int<class_int>` **privacy/collected_data/photos_or_videos/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/photos_or_videos/collection_purposes>`
 
-Las razones por las que tu app recopila fotos o vídeos. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila fotos o vídeos. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -2919,7 +2919,7 @@ Indica si tu aplicación recopila direcciones físicas.
 
 :ref:`int<class_int>` **privacy/collected_data/physical_address/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/physical_address/collection_purposes>`
 
-Las razones por las que tu aplicación recopila la dirección física. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila la dirección física. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3063,7 +3063,7 @@ Indica si tu aplicación recopila el historial de compras.
 
 :ref:`int<class_int>` **privacy/collected_data/purchase_history/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/purchase_history/collection_purposes>`
 
-Las razones por las que tu app recopila el historial de compras. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu app recopila el historial de compras. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 
@@ -3207,7 +3207,7 @@ Indica si tu aplicación recopila los ID de usuario.
 
 :ref:`int<class_int>` **privacy/collected_data/user_id/collection_purposes** :ref:`🔗<class_EditorExportPlatformIOS_property_privacy/collected_data/user_id/collection_purposes>`
 
-Las razones por las que tu aplicación recopila ID de usuario. Consulta `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
+Las razones por las que tu aplicación recopila ID de usuario. Véase `Descripción del uso de datos en manifiestos de privacidad <https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_data_use_in_privacy_manifests>`__.
 
 .. rst-class:: classref-item-separator
 

@@ -16,9 +16,9 @@ A dialog used for confirmation of actions.
 Descripción
 ----------------------
 
-A dialog used for confirmation of actions. This window is similar to :ref:`AcceptDialog<class_AcceptDialog>`, but pressing its Cancel button can have a different outcome from pressing the OK button. The order of the two buttons varies depending on the host OS.
+Un diálogo utilizado para la confirmación de acciones. Esta ventana es similar a :ref:`AcceptDialog<class_AcceptDialog>`, pero presionar su botón Cancelar puede tener un resultado diferente al presionar el botón OK. El orden de los dos botones varía según el sistema operativo anfitrión.
 
-To get cancel action, you can use:
+Para obtener la acción de cancelar, puedes usar:
 
 
 .. tabs::
@@ -33,7 +33,7 @@ To get cancel action, you can use:
 
 
 
-\ **Note:** :ref:`AcceptDialog<class_AcceptDialog>` is invisible by default. To make it visible, call one of the ``popup_*`` methods from :ref:`Window<class_Window>` on the node, such as :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
+\ **Nota:** :ref:`AcceptDialog<class_AcceptDialog>` es invisible por defecto. Para hacerlo visible, llama a uno de los métodos ``popup_*`` de :ref:`Window<class_Window>` en el nodo, como :ref:`Window.popup_centered_clamped()<class_Window_method_popup_centered_clamped>`.
 
 .. rst-class:: classref-reftable-group
 
@@ -102,9 +102,9 @@ Descripciones de Métodos
 
 :ref:`Button<class_Button>` **get_cancel_button**\ (\ ) :ref:`🔗<class_ConfirmationDialog_method_get_cancel_button>`
 
-Returns the cancel button.
+Devuelve el botón de cancelar.
 
-\ **Warning:** This is a required internal node, removing and freeing it may cause a crash. If you wish to hide it or any of its children, use their :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` property.
+\ **Advertencia:** Este es un nodo interno requerido; eliminarlo o liberarlo de la memoria (free) puede provocar un cierre inesperado (crash). Si deseas ocultarlo a él o a cualquiera de sus hijos, utiliza su propiedad :ref:`CanvasItem.visible<class_CanvasItem_property_visible>`.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -453,7 +453,7 @@ Descripciones de Métodos
 
 |void| **add_logger**\ (\ logger\: :ref:`Logger<class_Logger>`\ ) :ref:`🔗<class_OS_method_add_logger>`
 
-Add a custom logger to intercept the internal message stream.
+Añade un registrador personalizado para interceptar el flujo de mensajes interno.
 
 .. rst-class:: classref-item-separator
 
@@ -465,7 +465,7 @@ Add a custom logger to intercept the internal message stream.
 
 |void| **alert**\ (\ text\: :ref:`String<class_String>`, title\: :ref:`String<class_String>` = "Alert!"\ ) :ref:`🔗<class_OS_method_alert>`
 
-Displays a modal dialog box using the host platform's implementation. The engine execution is blocked until the dialog is closed.
+Muestra un cuadro de diálogo modal utilizando la implementación de la plataforma anfitriona. La ejecución del motor se bloquea hasta que se cierra el diálogo.
 
 .. rst-class:: classref-item-separator
 
@@ -477,9 +477,9 @@ Displays a modal dialog box using the host platform's implementation. The engine
 
 |void| **close_midi_inputs**\ (\ ) :ref:`🔗<class_OS_method_close_midi_inputs>`
 
-Shuts down the system MIDI driver. Godot will no longer receive :ref:`InputEventMIDI<class_InputEventMIDI>`. See also :ref:`open_midi_inputs()<class_OS_method_open_midi_inputs>` and :ref:`get_connected_midi_inputs()<class_OS_method_get_connected_midi_inputs>`.
+Apaga el controlador MIDI del sistema. Godot ya no recibirá :ref:`InputEventMIDI<class_InputEventMIDI>`. Véase también :ref:`open_midi_inputs()<class_OS_method_open_midi_inputs>` y :ref:`get_connected_midi_inputs()<class_OS_method_get_connected_midi_inputs>`.
 
-\ **Note:** This method is implemented on Linux, macOS, Windows, and Web.
+\ **Nota:** Este método está implementado en Linux, macOS, Windows y Web.
 
 .. rst-class:: classref-item-separator
 
@@ -491,9 +491,9 @@ Shuts down the system MIDI driver. Godot will no longer receive :ref:`InputEvent
 
 |void| **crash**\ (\ message\: :ref:`String<class_String>`\ ) :ref:`🔗<class_OS_method_crash>`
 
-Crashes the engine (or the editor if called within a ``@tool`` script). See also :ref:`kill()<class_OS_method_kill>`.
+Crashea el motor (o el editor si se llama desde un script ``@tool``). Véase también :ref:`kill()<class_OS_method_kill>`.
 
-\ **Note:** This method should *only* be used for testing the system's crash handler, not for any other purpose. For general error reporting, use (in order of preference) :ref:`@GDScript.assert()<class_@GDScript_method_assert>`, :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>`, or :ref:`alert()<class_OS_method_alert>`.
+\ **Nota:** Este método debe usarse *únicamente* para probar el manejador de fallos del sistema, no para ningún otro propósito. Para informar de errores generales, utiliza (en orden de preferencia) :ref:`@GDScript.assert()<class_@GDScript_method_assert>`, :ref:`@GlobalScope.push_error()<class_@GlobalScope_method_push_error>` o :ref:`alert()<class_OS_method_alert>`.
 
 .. rst-class:: classref-item-separator
 
@@ -505,13 +505,13 @@ Crashes the engine (or the editor if called within a ``@tool`` script). See also
 
 :ref:`int<class_int>` **create_instance**\ (\ arguments\: :ref:`PackedStringArray<class_PackedStringArray>`\ ) :ref:`🔗<class_OS_method_create_instance>`
 
-Creates a new instance of Godot that runs independently. The ``arguments`` are used in the given order and separated by a space.
+Crea una nueva instancia de Godot que se ejecuta de forma independiente. Los ``arguments`` se utilizan en el orden dado y separados por un espacio.
 
-If the process is successfully created, this method returns the new process' ID, which you can use to monitor the process (and potentially terminate it with :ref:`kill()<class_OS_method_kill>`). If the process cannot be created, this method returns ``-1``.
+Si el proceso se crea correctamente, este método devuelve el ID del nuevo proceso, que puedes usar para monitorizarlo (y potencialmente terminarlo con :ref:`kill()<class_OS_method_kill>`). Si el proceso no puede crearse, este método devuelve ``-1``.
 
-See :ref:`create_process()<class_OS_method_create_process>` if you wish to run a different process.
+Véase :ref:`create_process()<class_OS_method_create_process>` si deseas ejecutar un proceso diferente.
 
-\ **Note:** This method is implemented on Android, Linux, macOS and Windows.
+\ **Nota:** Este método está implementado en Android, Linux, macOS y Windows.
 
 .. rst-class:: classref-item-separator
 
@@ -560,11 +560,11 @@ See :ref:`execute()<class_OS_method_execute>` if you wish to run an external com
 
 |void| **delay_msec**\ (\ msec\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OS_method_delay_msec>`
 
-Delays execution of the current thread by ``msec`` milliseconds. ``msec`` must be greater than or equal to ``0``. Otherwise, :ref:`delay_msec()<class_OS_method_delay_msec>` does nothing and prints an error message.
+Retrasa la ejecución del hilo actual por ``msec`` milisegundos. ``msec`` debe ser mayor o igual que ``0``. De lo contrario, :ref:`delay_msec()<class_OS_method_delay_msec>` no hace nada y muestra un mensaje de error.
 
-\ **Note:** :ref:`delay_msec()<class_OS_method_delay_msec>` is a *blocking* way to delay code execution. To delay code execution in a non-blocking way, you may use :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`. Awaiting with :ref:`SceneTreeTimer<class_SceneTreeTimer>` delays the execution of code placed below the ``await`` without affecting the rest of the project (or editor, for :ref:`EditorPlugin<class_EditorPlugin>`\ s and :ref:`EditorScript<class_EditorScript>`\ s).
+\ **Nota:** :ref:`delay_msec()<class_OS_method_delay_msec>` es una forma *bloqueante* de retrasar la ejecución del código. Para retrasar la ejecución del código de forma no bloqueante, puedes usar :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`. Esperar con :ref:`SceneTreeTimer<class_SceneTreeTimer>` retrasa la ejecución del código colocado debajo del ``await`` sin afectar al resto del proyecto (o editor, para :ref:`EditorPlugin<class_EditorPlugin>`\ s y :ref:`EditorScript<class_EditorScript>`\ s).
 
-\ **Note:** When :ref:`delay_msec()<class_OS_method_delay_msec>` is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using :ref:`delay_msec()<class_OS_method_delay_msec>` as part of an :ref:`EditorPlugin<class_EditorPlugin>` or :ref:`EditorScript<class_EditorScript>`, it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
+\ **Nota:** Cuando se llama a :ref:`delay_msec()<class_OS_method_delay_msec>` en el hilo principal, congelará el proyecto e impedirá que se redibuje y registre la entrada hasta que el retraso haya pasado. Cuando uses :ref:`delay_msec()<class_OS_method_delay_msec>` como parte de un :ref:`EditorPlugin<class_EditorPlugin>` o :ref:`EditorScript<class_EditorScript>`, congelará el editor pero no congelará el proyecto si se está ejecutando actualmente (ya que el proyecto es un proceso hijo independiente).
 
 .. rst-class:: classref-item-separator
 
@@ -576,11 +576,11 @@ Delays execution of the current thread by ``msec`` milliseconds. ``msec`` must b
 
 |void| **delay_usec**\ (\ usec\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_OS_method_delay_usec>`
 
-Delays execution of the current thread by ``usec`` microseconds. ``usec`` must be greater than or equal to ``0``. Otherwise, :ref:`delay_usec()<class_OS_method_delay_usec>` does nothing and prints an error message.
+Retrasa la ejecución del hilo actual por ``usec`` microsegundos. ``usec`` debe ser mayor o igual que ``0``. De lo contrario, :ref:`delay_usec()<class_OS_method_delay_usec>` no hace nada y muestra un mensaje de error.
 
-\ **Note:** :ref:`delay_usec()<class_OS_method_delay_usec>` is a *blocking* way to delay code execution. To delay code execution in a non-blocking way, you may use :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`. Awaiting with a :ref:`SceneTreeTimer<class_SceneTreeTimer>` delays the execution of code placed below the ``await`` without affecting the rest of the project (or editor, for :ref:`EditorPlugin<class_EditorPlugin>`\ s and :ref:`EditorScript<class_EditorScript>`\ s).
+\ **Nota:** :ref:`delay_usec()<class_OS_method_delay_usec>` es una forma *bloqueante* de retrasar la ejecución del código. Para retrasar la ejecución del código de forma no bloqueante, puedes usar :ref:`SceneTree.create_timer()<class_SceneTree_method_create_timer>`. Esperar con un :ref:`SceneTreeTimer<class_SceneTreeTimer>` retrasa la ejecución del código colocado debajo del ``await`` sin afectar al resto del proyecto (o editor, para :ref:`EditorPlugin<class_EditorPlugin>`\ s y :ref:`EditorScript<class_EditorScript>`\ s).
 
-\ **Note:** When :ref:`delay_usec()<class_OS_method_delay_usec>` is called on the main thread, it will freeze the project and will prevent it from redrawing and registering input until the delay has passed. When using :ref:`delay_usec()<class_OS_method_delay_usec>` as part of an :ref:`EditorPlugin<class_EditorPlugin>` or :ref:`EditorScript<class_EditorScript>`, it will freeze the editor but won't freeze the project if it is currently running (since the project is an independent child process).
+\ **Nota:** Cuando se llama a :ref:`delay_usec()<class_OS_method_delay_usec>` en el hilo principal, congelará el proyecto e impedirá que se redibuje y registre la entrada hasta que el retraso haya pasado. Cuando uses :ref:`delay_usec()<class_OS_method_delay_usec>` como parte de un :ref:`EditorPlugin<class_EditorPlugin>` o :ref:`EditorScript<class_EditorScript>`, congelará el editor pero no congelará el proyecto si se está ejecutando actualmente (ya que el proyecto es un proceso hijo independiente).
 
 .. rst-class:: classref-item-separator
 
@@ -739,21 +739,21 @@ Not to be confused with :ref:`get_user_data_dir()<class_OS_method_get_user_data_
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_cmdline_args**\ (\ ) :ref:`🔗<class_OS_method_get_cmdline_args>`
 
-Returns the command-line arguments passed to the engine, excluding arguments processed by the engine, such as ``--headless`` and ``--fullscreen``.
+Devuelve los argumentos de línea de comandos pasados al motor, excluyendo los argumentos procesados por el motor, como ``--headless`` y ``--fullscreen``.
 
 ::
 
-    # Godot has been executed with the following command:
+    # Godot se ha ejecutado con el siguiente comando:
     # godot --headless --verbose --scene my_scene.tscn --custom
-    OS.get_cmdline_args() # Returns ["--scene", "my_scene.tscn", "--custom"]
+    OS.get_cmdline_args() # Devuelve ["--scene", "my_scene.tscn", "--custom"]
 
-Command-line arguments can be written in any form, including both ``--key value`` and ``--key=value`` forms so they can be properly parsed, as long as custom command-line arguments do not conflict with engine arguments.
+Los argumentos de línea de comandos pueden escribirse en cualquier forma, incluyendo tanto la forma ``--key value`` como ``--key=value``, para que puedan ser correctamente analizados, siempre que los argumentos personalizados no entren en conflicto con los argumentos del motor.
 
-You can also incorporate environment variables using the :ref:`get_environment()<class_OS_method_get_environment>` method.
+También es posible incorporar variables de entorno utilizando el método :ref:`get_environment()<class_OS_method_get_environment>`.
 
-You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` to define command-line arguments to be passed by the editor when running the project.
+Se puede configurar :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings_property_editor/run/main_run_args>` para definir los argumentos de línea de comandos que serán pasados por el editor al ejecutar el proyecto.
 
-\ **Example:** Parse command-line arguments into a :ref:`Dictionary<class_Dictionary>` using the ``--key=value`` form for arguments:
+\ **Ejemplo:** Parsear los argumentos de línea de comandos en un :ref:`Dictionary<class_Dictionary>` usando la forma ``--key=value`` para los argumentos:
 
 
 .. tabs::
@@ -762,12 +762,12 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
 
     var arguments = {}
     for argument in OS.get_cmdline_args():
-        if argument.contains("="):
+    if argument.contains("="):
             var key_value = argument.split("=")
             arguments[key_value[0].trim_prefix("--")] = key_value[1]
         else:
-            # Options without an argument will be present in the dictionary,
-            # with the value set to an empty string.
+            # Las opciones sin argumento estarán presentes en el diccionario,
+            # con el valor establecido como una string vacía.
             arguments[argument.trim_prefix("--")] = ""
 
  .. code-tab:: csharp
@@ -782,15 +782,15 @@ You can set :ref:`ProjectSettings.editor/run/main_run_args<class_ProjectSettings
         }
         else
         {
-            // Options without an argument will be present in the dictionary,
-            // with the value set to an empty string.
+            // Las opciones sin argumento estarán presentes en el diccionario,
+            // con el valor establecido como una string vacía.
             arguments[argument.TrimPrefix("--")] = "";
         }
     }
 
 
 
-\ **Note:** Passing custom user arguments directly is not recommended, as the engine may discard or modify them. Instead, pass the standard UNIX double dash (``--``) and then the custom arguments, which the engine will ignore by design. These can be read via :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
+\ **Nota:** No se recomienda pasar directamente argumentos personalizados del usuario, ya que el motor puede descartarlos o modificarlos. En su lugar, pase el doble guión estándar de UNIX (``--``) y luego los argumentos personalizados, los cuales el motor ignorará por diseño. Estos pueden leerse mediante el método :ref:`get_cmdline_user_args()<class_OS_method_get_cmdline_user_args>`.
 
 .. rst-class:: classref-item-separator
 
@@ -1300,7 +1300,7 @@ Devuelve la lista de autoridades de certificación en las que confía el sistema
 
 :ref:`String<class_String>` **get_system_dir**\ (\ dir\: :ref:`SystemDir<enum_OS_SystemDir>`, shared_storage\: :ref:`bool<class_bool>` = true\ ) |const| :ref:`🔗<class_OS_method_get_system_dir>`
 
-Devuelve la ruta a las carpetas de uso común en diferentes plataformas, tal como se define en ``dir``. Consulta las constantes de :ref:`SystemDir<enum_OS_SystemDir>` para ver las ubicaciones disponibles.
+Devuelve la ruta a las carpetas de uso común en diferentes plataformas, tal como se define en ``dir``. Véanse las constantes de :ref:`SystemDir<enum_OS_SystemDir>` para ver las ubicaciones disponibles.
 
 \ **Nota:** Este método está implementado en Android, Linux, macOS y Windows.
 
@@ -1530,7 +1530,7 @@ Returns ``true`` if the environment variable with the name ``variable`` exists.
 
 :ref:`bool<class_bool>` **has_feature**\ (\ tag_name\: :ref:`String<class_String>`\ ) |const| :ref:`🔗<class_OS_method_has_feature>`
 
-Devuelve ``true`` si la característica para la etiqueta de la característica dada está soportada en la instancia que se está ejecutando actualmente, dependiendo de la plataforma, la construcción, etc. Se puede usar para comprobar si estás ejecutando una compilación de depuración, en una determinada plataforma o arquitectura, etc. Consulta la documentación :doc:`Etiquetas de características <../tutorials/export/feature_tags>` para obtener más detalles.
+Devuelve ``true`` si la característica para la etiqueta de la característica dada está soportada en la instancia que se está ejecutando actualmente, dependiendo de la plataforma, la construcción, etc. Se puede usar para comprobar si estás ejecutando una compilación de depuración, en una determinada plataforma o arquitectura, etc. Véase la documentación :doc:`Etiquetas de características <../tutorials/export/feature_tags>` para obtener más detalles.
 
 \ **Nota:** Los nombres de las etiquetas distinguen entre mayúsculas y minúsculas.
 

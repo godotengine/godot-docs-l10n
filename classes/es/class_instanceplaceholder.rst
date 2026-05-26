@@ -14,9 +14,9 @@ Marcador de posición para la raíz :ref:`Node<class_Node>` de una :ref:`PackedS
 Descripción
 ----------------------
 
-Turning on the option **Load As Placeholder** for an instantiated scene in the editor causes it to be replaced by an **InstancePlaceholder** when running the game, this will not replace the node in the editor. This makes it possible to delay actually loading the scene until calling :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. This is useful to avoid loading large scenes all at once by loading parts of it selectively.
+Activar la opción **Carga como marcador de posición** para una escena instanciada en el editor hace que se sustituya por un **InstancePlaceholder** al ejecutar el juego. Esto no reemplazará el nodo en el editor. Esto hace posible retrasar la carga real de la escena hasta que se llame a :ref:`create_instance()<class_InstancePlaceholder_method_create_instance>`. Esto es útil para evitar cargar grandes escenas de una sola vez, cargando partes de ellas de forma selectiva.
 
-\ **Note:** Like :ref:`Node<class_Node>`, **InstancePlaceholder** does not have a transform. This causes any child nodes to be positioned relatively to the :ref:`Viewport<class_Viewport>` origin, rather than their parent as displayed in the editor. Replacing the placeholder with a scene with a transform will transform children relatively to their parent again.
+\ **Nota:** Al igual que :ref:`Node<class_Node>`, **InstancePlaceholder** no tiene una transformación. Esto hace que cualquier nodo hijo se posicione de forma relativa al origen del :ref:`Viewport<class_Viewport>`, en lugar de su padre como se muestra en el editor. Reemplazar el marcador de posición por una escena con una transformación transformará a los hijos de forma relativa a su padre de nuevo.
 
 .. rst-class:: classref-reftable-group
 

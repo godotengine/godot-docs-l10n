@@ -16,7 +16,7 @@ Skeleton2D
 
 **Skeleton2D** 是 :ref:`Bone2D<class_Bone2D>` 节点层级结构的父节点，持有对每个 :ref:`Bone2D<class_Bone2D>` 的放松姿势的引用，充当其骨骼的单一访问点。
 
-要为给定的 Skeleton2D 设置不同类型的反向运动学机制，应当创建一个 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。增加 :ref:`SkeletonModificationStack2D.modification_count<class_SkeletonModificationStack2D_property_modification_count>` 并创建所需数量的修改器即可应用反向运动学机制。
+要为给定的 Skeleton2D 设置不同类型的反向动力学机制，应当创建一个 :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`\ 。增加 :ref:`SkeletonModificationStack2D.modification_count<class_SkeletonModificationStack2D_property_modification_count>` 并创建所需数量的修改器即可应用反向动力学机制。
 
 .. rst-class:: classref-introduction-group
 

@@ -213,7 +213,7 @@ enum **ScrollHintMode**: :ref:`🔗<enum_ScrollContainer_ScrollHintMode>`
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_ALL** = ``1``
 
-Scroll hints will be shown at the top and bottom (if vertical), or left and right (if horizontal).
+Подсказки при прокрутке будут отображаться вверху и внизу (при вертикальной прокрутке) или слева и справа (при горизонтальной прокрутке).
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_TOP_AND_LEFT:
 
@@ -221,7 +221,7 @@ Scroll hints will be shown at the top and bottom (if vertical), or left and righ
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_TOP_AND_LEFT** = ``2``
 
-Scroll hints will be shown at the top (if vertical), or the left (if horizontal).
+Подсказки при прокрутке будут отображаться вверху (если прокрутка вертикальная) или слева (если прокрутка горизонтальная).
 
 .. _class_ScrollContainer_constant_SCROLL_HINT_MODE_BOTTOM_AND_RIGHT:
 
@@ -229,7 +229,7 @@ Scroll hints will be shown at the top (if vertical), or the left (if horizontal)
 
 :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **SCROLL_HINT_MODE_BOTTOM_AND_RIGHT** = ``3``
 
-Scroll hints will be shown at the bottom (if horizontal), or the right (if horizontal).
+Подсказки при прокрутке будут отображаться внизу (если горизонтальная прокрутка) или справа (если горизонтальная прокрутка).
 
 .. rst-class:: classref-section-separator
 
@@ -319,9 +319,9 @@ Scroll hints will be shown at the bottom (if horizontal), or the right (if horiz
 - |void| **set_scroll_hint_mode**\ (\ value\: :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>`\ )
 - :ref:`ScrollHintMode<enum_ScrollContainer_ScrollHintMode>` **get_scroll_hint_mode**\ (\ )
 
-The way which scroll hints (indicators that show that the content can still be scrolled in a certain direction) will be shown.
+Будут отображаться подсказки о прокрутке (индикаторы, показывающие, что контент все еще можно прокручивать в определенном направлении).
 
-\ **Note:** Hints won't be shown if the content can be scrolled both vertically and horizontally.
+\ **Примечание:** Подсказки не будут отображаться, если контент можно прокручивать как вертикально, так и горизонтально.
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ The way which scroll hints (indicators that show that the content can still be s
 
 :ref:`Color<class_Color>` **scroll_hint_horizontal_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_horizontal_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>` texture.
+:ref:`Color<class_Color>` используется для модуляции текстуры :ref:`scroll_hint_horizontal<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`.
 
 .. rst-class:: classref-item-separator
 
@@ -519,7 +519,7 @@ The way which scroll hints (indicators that show that the content can still be s
 
 :ref:`Color<class_Color>` **scroll_hint_vertical_color** = ``Color(0, 0, 0, 1)`` :ref:`🔗<class_ScrollContainer_theme_color_scroll_hint_vertical_color>`
 
-:ref:`Color<class_Color>` used to modulate the :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>` texture.
+:ref:`Color<class_Color>` используется для модуляции текстуры :ref:`scroll_hint_vertical<class_ScrollContainer_theme_icon_scroll_hint_vertical>`.
 
 .. rst-class:: classref-item-separator
 
@@ -531,7 +531,7 @@ The way which scroll hints (indicators that show that the content can still be s
 
 :ref:`int<class_int>` **scrollbar_h_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_h_separation>`
 
-The space between the ScrollContainer's vertical scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+Расстояние между вертикальной полосой прокрутки ScrollContainer и его содержимым, в пикселях. Если минимальный размер содержимого превышает размер ScrollContainer, расстояние не добавляется.
 
 .. rst-class:: classref-item-separator
 
@@ -543,7 +543,7 @@ The space between the ScrollContainer's vertical scroll bar and its content, in 
 
 :ref:`int<class_int>` **scrollbar_v_separation** = ``0`` :ref:`🔗<class_ScrollContainer_theme_constant_scrollbar_v_separation>`
 
-The space between the ScrollContainer's horizontal scroll bar and its content, in pixels. No space will be added when the content's minimum size is larger than the ScrollContainer's size.
+Расстояние между горизонтальной полосой прокрутки ScrollContainer и его содержимым, в пикселях. Если минимальный размер содержимого превышает размер ScrollContainer, расстояние не добавляется.
 
 .. rst-class:: classref-item-separator
 
@@ -555,7 +555,7 @@ The space between the ScrollContainer's horizontal scroll bar and its content, i
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_horizontal** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_horizontal>`
 
-The indicator that will be shown when the content can still be scrolled horizontally. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Индикатор, который будет отображаться, когда контент еще можно прокручивать по горизонтали. См. :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 
@@ -567,7 +567,7 @@ The indicator that will be shown when the content can still be scrolled horizont
 
 :ref:`Texture2D<class_Texture2D>` **scroll_hint_vertical** :ref:`🔗<class_ScrollContainer_theme_icon_scroll_hint_vertical>`
 
-The indicator that will be shown when the content can still be scrolled vertically. See :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
+Индикатор, который будет отображаться, когда контент еще можно прокручивать вертикально. См. :ref:`scroll_hint_mode<class_ScrollContainer_property_scroll_hint_mode>`.
 
 .. rst-class:: classref-item-separator
 

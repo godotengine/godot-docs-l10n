@@ -9,14 +9,14 @@ OpenXRSpatialQueryResultData
 
 **Hereda:** :ref:`OpenXRSpatialComponentData<class_OpenXRSpatialComponentData>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Object for storing the main query result data.
+Objeto para almacenar los datos principales del resultado de la consulta.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Object for storing the main query result data when calling :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. This must always be the first component requested.
+Objeto para almacenar los datos principales del resultado de la consulta al llamar a :ref:`OpenXRSpatialEntityExtension.query_snapshot()<class_OpenXRSpatialEntityExtension_method_query_snapshot>`. Este siempre debe ser el primer componente solicitado.
 
 .. rst-class:: classref-reftable-group
 

@@ -14,7 +14,7 @@ Representa el parámetro de shader de entrada dentro del gráfico de shader visu
 Descripción
 ----------------------
 
-Da acceso a las variables de entrada (built-ins) disponibles para el shader. Consulta la referencia del shader para ver la lista de built-ins disponibles para cada tipo de shader (consulta la sección ``Tutorials`` para el enlace).
+Da acceso a las variables de entrada (built-ins) disponibles para el shader. Véase la referencia del shader para ver la lista de built-ins disponibles para cada tipo de shader (consulta la sección ``Tutorials`` para el enlace).
 
 .. rst-class:: classref-introduction-group
 

@@ -66,7 +66,7 @@ Descripciones de Propiedades
 - |void| **set_binding**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_binding**\ (\ )
 
-El enlace del uniforme.
+El enlace de la variable uniforme.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ Descripciones de Métodos
 
 |void| **add_id**\ (\ id\: :ref:`RID<class_RID>`\ ) :ref:`🔗<class_RDUniform_method_add_id>`
 
-Binds the given id to the uniform. The data associated with the id is then used when the uniform is passed to a shader.
+Enlaza el ID dado a la variable uniforme. Los datos asociados con el ID se utilizan cuando la variable uniforme se pasa a un shader.
 
 .. rst-class:: classref-item-separator
 
@@ -112,7 +112,7 @@ Binds the given id to the uniform. The data associated with the id is then used 
 
 |void| **clear_ids**\ (\ ) :ref:`🔗<class_RDUniform_method_clear_ids>`
 
-Unbinds all ids currently bound to the uniform.
+Desenlaza todos los ID actualmente enlazados a la variable uniforme.
 
 .. rst-class:: classref-item-separator
 
@@ -124,7 +124,7 @@ Unbinds all ids currently bound to the uniform.
 
 :ref:`Array<class_Array>`\[:ref:`RID<class_RID>`\] **get_ids**\ (\ ) |const| :ref:`🔗<class_RDUniform_method_get_ids>`
 
-Returns an array of all ids currently bound to the uniform.
+Devuelve un array de todos los ID actualmente enlazados a la variable uniforme.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

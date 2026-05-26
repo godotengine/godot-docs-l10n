@@ -69,7 +69,7 @@ enum **PersistenceScope**: :ref:`🔗<enum_OpenXRSpatialAnchorCapability_Persist
 
 :ref:`PersistenceScope<enum_OpenXRSpatialAnchorCapability_PersistenceScope>` **PERSISTENCE_SCOPE_SYSTEM_MANAGED** = ``1``
 
-Provides the application with read-only access (i.e. application cannot modify this scope) to spatial entities persisted and managed by the system. The application can use the UUID in the persistence component for this scope to correlate entities across spatial contexts and device reboots.
+Proporciona a la aplicación acceso de solo lectura (es decir, la aplicación no puede modificar este ámbito) a las entidades espaciales persistentes y gestionadas por el sistema. La aplicación puede usar el UUID en el componente de persistencia para este ámbito para correlacionar entidades entre contextos espaciales y reinicios del dispositivo.
 
 .. _class_OpenXRSpatialAnchorCapability_constant_PERSISTENCE_SCOPE_LOCAL_ANCHORS:
 
@@ -77,7 +77,7 @@ Provides the application with read-only access (i.e. application cannot modify t
 
 :ref:`PersistenceScope<enum_OpenXRSpatialAnchorCapability_PersistenceScope>` **PERSISTENCE_SCOPE_LOCAL_ANCHORS** = ``1000781000``
 
-Persistence operations and data access is limited to spatial anchors, on the same device, for the same user and same app (using :ref:`persist_anchor()<class_OpenXRSpatialAnchorCapability_method_persist_anchor>` and :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` functions)
+Las operaciones de persistencia y el acceso a los datos están limitados a las anclas espaciales, en el mismo dispositivo, para el mismo usuario y la misma aplicación (usando las funciones :ref:`persist_anchor()<class_OpenXRSpatialAnchorCapability_method_persist_anchor>` y :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>`)
 
 .. rst-class:: classref-section-separator
 
@@ -198,7 +198,7 @@ Changes this anchor into a persistent anchor. This means its location will be st
 
 |void| **remove_anchor**\ (\ anchor_tracker\: :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_remove_anchor>`
 
-Remove an anchor previously created with :ref:`create_new_anchor()<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`. If this anchor was persistent you must first call :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` and await its callback.
+Elimina un ancla creada previamente con :ref:`create_new_anchor()<class_OpenXRSpatialAnchorCapability_method_create_new_anchor>`. Si este ancla era persistente, primero debes llamar a :ref:`unpersist_anchor()<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>` y esperar su devolución de llamada.
 
 .. rst-class:: classref-item-separator
 
@@ -210,9 +210,9 @@ Remove an anchor previously created with :ref:`create_new_anchor()<class_OpenXRS
 
 :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` **unpersist_anchor**\ (\ anchor_tracker\: :ref:`OpenXRAnchorTracker<class_OpenXRAnchorTracker>`, persistence_context\: :ref:`RID<class_RID>` = RID(), user_callback\: :ref:`Callable<class_Callable>` = Callable()\ ) :ref:`🔗<class_OpenXRSpatialAnchorCapability_method_unpersist_anchor>`
 
-Removes the persistent data from this anchor. The runtime will not recreate the anchor when your application restarts. If ``persistence_context`` is not specified the default will be used, this requires :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` to be set.
+Elimina los datos persistentes de esta ancla. El tiempo de ejecución no recreará el ancla cuando tu aplicación se reinicie. Si no se especifica ``persistence_context``, se utilizará el predeterminado; esto requiere que :ref:`ProjectSettings.xr/openxr/extensions/spatial_entity/enabled<class_ProjectSettings_property_xr/openxr/extensions/spatial_entity/enabled>` esté activado.
 
-\ **Note:** This is an asynchronous method and returns an :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` object with which to track the status, discarding this object will not cancel the creation process. On success ``user_callback`` will be called if specified. The result value for this function is a boolean which will be set to ``true`` on successful completion.
+\ **Nota:** Este es un método asíncrono y devuelve un objeto :ref:`OpenXRFutureResult<class_OpenXRFutureResult>` para rastrear el estado; descartar este objeto no cancelará el proceso de creación. En caso de éxito, se llamará a ``user_callback`` si se especifica. El valor de resultado de esta función es un booleano que se establecerá en ``true`` al completarse con éxito.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

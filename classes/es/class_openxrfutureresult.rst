@@ -131,7 +131,7 @@ Devuelve el valor ``XrFutureEXT`` al que se refiere este resultado.
 
 :ref:`Variant<class_Variant>` **get_result_value**\ (\ ) |const| :ref:`🔗<class_OpenXRFutureResult_method_get_result_value>`
 
-Devuelve el valor del resultado de nuestra función asíncrona (si lo establece la extensión). El tipo de este valor de resultado depende de la función que se llame. Consulta la documentación de la función correspondiente.
+Devuelve el valor del resultado de nuestra función asíncrona (si lo establece la extensión). El tipo de este valor de resultado depende de la función que se llame. Véase la documentación de la función correspondiente.
 
 .. rst-class:: classref-item-separator
 

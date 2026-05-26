@@ -268,7 +268,7 @@ En este punto, debes hacer ``get_viewport().use_xr = false`` para indicarle a Go
 
 Emitida por :ref:`XRInterface.initialize()<class_XRInterface_method_initialize>` si la sesión no se inicia.
 
-\ ``message`` puede contener opcionalmente un mensaje de error de WebXR, o una cadena vacía si no hay ningún mensaje disponible.
+\ ``message`` puede contener opcionalmente un mensaje de error de WebXR, o una string vacía si no hay ningún mensaje disponible.
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +420,7 @@ Una lista separada por comas de las características que se habilitaron correcta
 
 Esto puede incluir características solicitadas al establecer :ref:`required_features<class_WebXRInterface_property_required_features>` y :ref:`optional_features<class_WebXRInterface_property_optional_features>`, y solo estará disponible después de que se haya emitido :ref:`session_started<class_WebXRInterface_signal_session_started>`.
 
-\ **Nota:** Es posible que no todos los navegadores web admitan esto, en cuyo caso será una cadena vacía.
+\ **Nota:** Es posible que no todos los navegadores web admitan esto, en cuyo caso será una string vacía.
 
 .. rst-class:: classref-item-separator
 
@@ -507,7 +507,7 @@ Si el navegador o dispositivo de un usuario no admite una de las característica
 
 Esto no tiene ningún efecto en la interfaz cuando ya está inicializada.
 
-Consulta la documentación de MDN sobre las `características de sesión de WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ para una lista de valores posibles.
+Véase la documentación de MDN sobre las `características de sesión de WebXR <https://developer.mozilla.org/en-US/docs/Web/API/XRSystem/requestSession#session_features>`__ para una lista de valores posibles.
 
 .. rst-class:: classref-item-separator
 

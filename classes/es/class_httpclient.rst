@@ -7,7 +7,7 @@ HTTPClient
 
 **Hereda:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Low-level hyper-text transfer protocol client.
+Cliente de protocolo de transferencia de hipertexto de bajo nivel.
 
 .. rst-class:: classref-introduction-group
 
@@ -39,7 +39,7 @@ For more information on HTTP, see `MDN's documentation on HTTP <https://develope
 Tutoriales
 --------------------
 
-- :doc:`HTTP client class <../tutorials/networking/http_client_class>`
+- :doc:`Clase de cliente HTTP <../tutorials/networking/http_client_class>`
 
 - :doc:`Certificados TLS <../tutorials/networking/ssl_certificates>`
 
@@ -284,7 +284,7 @@ Estado: Error en la conexión HTTP.
 
 :ref:`Status<enum_HTTPClient_Status>` **STATUS_TLS_HANDSHAKE_ERROR** = ``9``
 
-Status: Error in TLS handshake.
+Estado: Error en el establecimiento de comunicación TLS.
 
 .. rst-class:: classref-item-separator
 
@@ -326,15 +326,15 @@ Código de estado HTTP ``102 Processing`` (WebDAV). Indica que el servidor ha re
 
 :ref:`ResponseCode<enum_HTTPClient_ResponseCode>` **RESPONSE_OK** = ``200``
 
-HTTP status code ``200 OK``. The request has succeeded. Default response for successful requests. Meaning varies depending on the request:
+Código de estado HTTP ``200 OK``. La petición ha tenido éxito. Respuesta por defecto para las solicitudes exitosas. El significado varía dependiendo de la petición:
 
-- :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`: The resource has been fetched and is transmitted in the message body.
+- :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`: El recurso ha sido recuperado y se transmite en el cuerpo del mensaje.
 
-- :ref:`METHOD_HEAD<class_HTTPClient_constant_METHOD_HEAD>`: The entity headers are in the message body.
+- :ref:`METHOD_HEAD<class_HTTPClient_constant_METHOD_HEAD>`: Las cabeceras de la entidad están en el cuerpo del mensaje.
 
-- :ref:`METHOD_POST<class_HTTPClient_constant_METHOD_POST>`: The resource describing the result of the action is transmitted in the message body.
+- :ref:`METHOD_POST<class_HTTPClient_constant_METHOD_POST>`: El recurso que describe el resultado de la acción se transmite en el cuerpo del mensaje.
 
-- :ref:`METHOD_TRACE<class_HTTPClient_constant_METHOD_TRACE>`: The message body contains the request message as received by the server.
+- :ref:`METHOD_TRACE<class_HTTPClient_constant_METHOD_TRACE>`: El cuerpo del mensaje contiene el mensaje de petición tal y como lo recibió el servidor.
 
 .. _class_HTTPClient_constant_RESPONSE_CREATED:
 
@@ -879,9 +879,9 @@ Cierra la conexión actual, permitiendo la reutilización de este **HTTPClient**
 
 :ref:`Error<enum_@GlobalScope_Error>` **connect_to_host**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>` = -1, tls_options\: :ref:`TLSOptions<class_TLSOptions>` = null\ ) :ref:`🔗<class_HTTPClient_method_connect_to_host>`
 
-Connects to a host. This needs to be done before any requests are sent.
+Se conecta a un host. Esto debe hacerse antes de enviar cualquier solicitud.
 
-If no ``port`` is specified (or ``-1`` is used), it is automatically set to 80 for HTTP and 443 for HTTPS. You can pass the optional ``tls_options`` parameter to customize the trusted certification authorities, or the common name verification when using HTTPS. See :ref:`TLSOptions.client()<class_TLSOptions_method_client>` and :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
+Si no se especifica ningún ``port`` (o se usa ``-1``), se establece automáticamente en 80 para HTTP y 443 para HTTPS. Puedes pasar el parámetro opcional ``tls_options`` para personalizar las autoridades de certificación de confianza o la verificación del nombre común al usar HTTPS. Véase :ref:`TLSOptions.client()<class_TLSOptions_method_client>` y :ref:`TLSOptions.client_unsafe()<class_TLSOptions_method_client_unsafe>`.
 
 .. rst-class:: classref-item-separator
 
@@ -893,11 +893,11 @@ If no ``port`` is specified (or ``-1`` is used), it is automatically set to 80 f
 
 :ref:`int<class_int>` **get_response_body_length**\ (\ ) |const| :ref:`🔗<class_HTTPClient_method_get_response_body_length>`
 
-Returns the response's body length.
+Devuelve la longitud del cuerpo de la respuesta.
 
-\ **Note:** Some Web servers may not send a body length. In this case, the value returned will be ``-1``. If using chunked transfer encoding, the body length will also be ``-1``.
+\ **Nota:** Algunos servidores Web pueden no enviar la longitud del cuerpo. En este caso, el valor devuelto será ``-1``. Si se utiliza la codificación de transferencia por fragmentos, la longitud del cuerpo también será ``-1``.
 
-\ **Note:** This function always returns ``-1`` on the Web platform due to browsers limitations.
+\ **Nota:** Esta función siempre devuelve ``-1`` en la plataforma Web debido a las limitaciones de los navegadores.
 
 .. rst-class:: classref-item-separator
 
@@ -933,7 +933,7 @@ Devuelve las cabeceras de la respuesta.
 
 :ref:`Dictionary<class_Dictionary>` **get_response_headers_as_dictionary**\ (\ ) :ref:`🔗<class_HTTPClient_method_get_response_headers_as_dictionary>`
 
-Returns all response headers as a :ref:`Dictionary<class_Dictionary>`. Each entry is composed by the header name, and a :ref:`String<class_String>` containing the values separated by ``"; "``. The casing is kept the same as the headers were received.
+Devuelve todos los encabezados de respuesta como un :ref:`Dictionary<class_Dictionary>`. Cada entrada está compuesta por el nombre del encabezado y una :ref:`String<class_String>` que contiene los valores separados por ``"; "``. Se conserva el uso de mayúsculas y minúsculas tal como se recibieron los encabezados.
 
 ::
 
@@ -1000,7 +1000,7 @@ Hay que llamar a esto para que se procese cualquier solicitud. Comprueba los res
 
 :ref:`String<class_String>` **query_string_from_dict**\ (\ fields\: :ref:`Dictionary<class_Dictionary>`\ ) :ref:`🔗<class_HTTPClient_method_query_string_from_dict>`
 
-Generates a GET/POST application/x-www-form-urlencoded style query string from a provided dictionary, e.g.:
+Genera una cadena de consulta estilo GET/POST application/x-www-form-urlencoded a partir de un diccionario provisto, por ejemplo:
 
 
 .. tabs::
@@ -1009,17 +1009,17 @@ Generates a GET/POST application/x-www-form-urlencoded style query string from a
 
     var fields = { "username": "user", "password": "pass" }
     var query_string = http_client.query_string_from_dict(fields)
-    # Returns "username=user&password=pass"
+    # Devuelve "username=user&password=pass"
 
  .. code-tab:: csharp
 
     var fields = new Godot.Collections.Dictionary { { "username", "user" }, { "password", "pass" } };
     string queryString = httpClient.QueryStringFromDict(fields);
-    // Returns "username=user&password=pass"
+    // Devuelve "username=user&password=pass"
 
 
 
-Furthermore, if a key has a ``null`` value, only the key itself is added, without equal sign and value. If the value is an array, for each value in it a pair with the same key is added.
+Además, si una clave tiene un valor ``null``, solo se añade la clave misma, sin signo de igual y valor. Si el valor es un array, por cada valor en él se añade un par con la misma clave.
 
 
 .. tabs::
@@ -1028,7 +1028,7 @@ Furthermore, if a key has a ``null`` value, only the key itself is added, withou
 
     var fields = { "single": 123, "not_valued": null, "multiple": [22, 33, 44] }
     var query_string = http_client.query_string_from_dict(fields)
-    # Returns "single=123&not_valued&multiple=22&multiple=33&multiple=44"
+    # Devuelve "single=123&not_valued&multiple=22&multiple=33&multiple=44"
 
  .. code-tab:: csharp
 
@@ -1039,7 +1039,7 @@ Furthermore, if a key has a ``null`` value, only the key itself is added, withou
         { "multiple", new Godot.Collections.Array { 22, 33, 44 } },
     };
     string queryString = httpClient.QueryStringFromDict(fields);
-    // Returns "single=123&not_valued&multiple=22&multiple=33&multiple=44"
+    // Devuelve "single=123&not_valued&multiple=22&multiple=33&multiple=44"
 
 
 
@@ -1065,13 +1065,13 @@ Lee un trozo de la respuesta.
 
 :ref:`Error<enum_@GlobalScope_Error>` **request**\ (\ method\: :ref:`Method<enum_HTTPClient_Method>`, url\: :ref:`String<class_String>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`String<class_String>` = ""\ ) :ref:`🔗<class_HTTPClient_method_request>`
 
-Sends an HTTP request to the connected host with the given ``method``.
+Envía una solicitud HTTP al host conectado usando el ``method`` dado.
 
-The URL parameter is usually just the part after the host, so for ``https://example.com/index.php``, it is ``/index.php``. When sending requests to an HTTP proxy server, it should be an absolute URL. For :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` requests, ``*`` is also allowed. For :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` requests, it should be the authority component (``host:port``).
+El parámetro URL normalmente es solo la parte después del host, así que para ``https://ejemplo.com/index.php``, sería ``/index.php``. Al enviar solicitudes a un servidor proxy HTTP, debe ser una URL absoluta. Para solicitudes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, también se permite ``*``. Para solicitudes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, debe ser el componente de autoridad (``host:port``).
 
-\ ``headers`` are HTTP request headers.
+\ ``headers`` son los encabezados de la solicitud HTTP.
 
-To create a POST request with query strings to push to the server, do:
+Para crear una solicitud POST con cadenas de consulta que se envíen al servidor, haz lo siguiente:
 
 
 .. tabs::
@@ -1092,7 +1092,7 @@ To create a POST request with query strings to push to the server, do:
 
 
 
-\ **Note:** The ``body`` parameter is ignored if ``method`` is :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`. This is because GET methods can't contain request data. As a workaround, you can pass request data as a query string in the URL. See :ref:`String.uri_encode()<class_String_method_uri_encode>` for an example.
+\ **Nota:** El parámetro ``body`` se ignora si ``method`` es :ref:`METHOD_GET<class_HTTPClient_constant_METHOD_GET>`, ya que los métodos GET no pueden contener datos en la solicitud. Como solución, puedes pasar los datos de la solicitud como una string de consulta en la URL. Véase :ref:`String.uri_encode()<class_String_method_uri_encode>` para un ejemplo.
 
 .. rst-class:: classref-item-separator
 
@@ -1104,13 +1104,13 @@ To create a POST request with query strings to push to the server, do:
 
 :ref:`Error<enum_@GlobalScope_Error>` **request_raw**\ (\ method\: :ref:`Method<enum_HTTPClient_Method>`, url\: :ref:`String<class_String>`, headers\: :ref:`PackedStringArray<class_PackedStringArray>`, body\: :ref:`PackedByteArray<class_PackedByteArray>`\ ) :ref:`🔗<class_HTTPClient_method_request_raw>`
 
-Sends a raw HTTP request to the connected host with the given ``method``.
+Envía una solicitud HTTP sin procesar al host conectado con el ``method`` dado.
 
-The URL parameter is usually just the part after the host, so for ``https://example.com/index.php``, it is ``/index.php``. When sending requests to an HTTP proxy server, it should be an absolute URL. For :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>` requests, ``*`` is also allowed. For :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>` requests, it should be the authority component (``host:port``).
+El parámetro URL es normalmente solo la parte después del host, así que para ``https://example.com/index.php``, es ``/index.php``. Al enviar solicitudes a un servidor proxy HTTP, debe ser una URL absoluta. Para solicitudes :ref:`METHOD_OPTIONS<class_HTTPClient_constant_METHOD_OPTIONS>`, también se permite ``*``. Para solicitudes :ref:`METHOD_CONNECT<class_HTTPClient_constant_METHOD_CONNECT>`, debe ser el componente de autoridad (``host:port``).
 
-\ ``headers`` are HTTP request headers.
+\ ``headers`` son las cabeceras de la solicitud HTTP.
 
-Sends the body data raw, as a byte array and does not encode it in any way.
+Envía los datos del cuerpo sin procesar, como un array de bytes y no los codifica de ninguna manera.
 
 .. rst-class:: classref-item-separator
 
@@ -1122,9 +1122,9 @@ Sends the body data raw, as a byte array and does not encode it in any way.
 
 |void| **set_http_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPClient_method_set_http_proxy>`
 
-Sets the proxy server for HTTP requests.
+Establece el servidor proxy para las peticiones HTTP.
 
-The proxy server is unset if ``host`` is empty or ``port`` is -1.
+El servidor proxy se desactiva si ``host`` está vacío o ``port`` es -1.
 
 .. rst-class:: classref-item-separator
 
@@ -1136,9 +1136,9 @@ The proxy server is unset if ``host`` is empty or ``port`` is -1.
 
 |void| **set_https_proxy**\ (\ host\: :ref:`String<class_String>`, port\: :ref:`int<class_int>`\ ) :ref:`🔗<class_HTTPClient_method_set_https_proxy>`
 
-Sets the proxy server for HTTPS requests.
+Establece el servidor proxy para las peticiones HTTPS.
 
-The proxy server is unset if ``host`` is empty or ``port`` is -1.
+El servidor proxy se desactiva si ``host`` está vacío o ``port`` es -1.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

@@ -318,7 +318,7 @@ enum **BakeMode**: :ref:`🔗<enum_Light3D_BakeMode>`
 
 La luz se ignora al procesar. Este es el modo más rápido, pero la luz no se tendrá en cuenta al procesar la iluminación global. Este modo generalmente debería usarse para luces dinámicas que cambian rápidamente, ya que el efecto de la iluminación global es menos notable en esas luces.
 
-\ **Nota:** Ocultar una luz *no* afecta el procesado de :ref:`LightmapGI<class_LightmapGI>`. Ocultar una luz seguirá afectando el procesado de :ref:`VoxelGI<class_VoxelGI>` y SDFGI (ver :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
+\ **Nota:** Ocultar una luz *no* afecta el baking de :ref:`LightmapGI<class_LightmapGI>`. Ocultar una luz seguirá afectando el baking de :ref:`VoxelGI<class_VoxelGI>` y SDFGI (ver :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
 
 .. _class_Light3D_constant_BAKE_STATIC:
 
@@ -326,7 +326,7 @@ La luz se ignora al procesar. Este es el modo más rápido, pero la luz no se te
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_STATIC** = ``1``
 
-La luz se tiene en cuenta en el procesado estático (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar, pero su iluminación global no se actualizará en tiempo real. Esto es adecuado para cambios sutiles (como antorchas parpadeantes), pero generalmente no para grandes cambios, como encender y apagar una luz.
+La luz se tiene en cuenta en el baking estático (:ref:`VoxelGI<class_VoxelGI>`, :ref:`LightmapGI<class_LightmapGI>`, SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar, pero su iluminación global no se actualizará en tiempo real. Esto es adecuado para cambios sutiles (como antorchas parpadeantes), pero generalmente no para grandes cambios, como encender y apagar una luz.
 
 \ **Nota:** La luz no se procesa en :ref:`LightmapGI<class_LightmapGI>` si :ref:`editor_only<class_Light3D_property_editor_only>` es ``true``.
 
@@ -336,7 +336,7 @@ La luz se tiene en cuenta en el procesado estático (:ref:`VoxelGI<class_VoxelGI
 
 :ref:`BakeMode<enum_Light3D_BakeMode>` **BAKE_DYNAMIC** = ``2``
 
-La luz se tiene en cuenta en el procesado dinámico (solo :ref:`VoxelGI<class_VoxelGI>` y SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar y la iluminación global se actualiza en tiempo real. La apariencia de iluminación global de la luz será ligeramente diferente en comparación con :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Esto tiene un mayor costo de rendimiento en comparación con :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Cuando se usa SDFGI, la velocidad de actualización de las luces dinámicas se ve afectada por :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
+La luz se tiene en cuenta en el baking dinámico (solo :ref:`VoxelGI<class_VoxelGI>` y SDFGI (:ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`)). La luz se puede mover o modificar y la iluminación global se actualiza en tiempo real. La apariencia de iluminación global de la luz será ligeramente diferente en comparación con :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Esto tiene un mayor costo de rendimiento en comparación con :ref:`BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`. Cuando se usa SDFGI, la velocidad de actualización de las luces dinámicas se ve afectada por :ref:`ProjectSettings.rendering/global_illumination/sdfgi/frames_to_update_lights<class_ProjectSettings_property_rendering/global_illumination/sdfgi/frames_to_update_lights>`.
 
 .. rst-class:: classref-section-separator
 

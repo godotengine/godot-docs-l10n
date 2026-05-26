@@ -337,6 +337,8 @@ TextServerExtension
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                            | :ref:`_shaped_get_run_font_size<class_TextServerExtension_private_method__shaped_get_run_font_size>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                      |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                  | :ref:`_shaped_get_run_glyph_range<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                  |
+   +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`String<class_String>`                                      | :ref:`_shaped_get_run_language<class_TextServerExtension_private_method__shaped_get_run_language>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                        |
    +------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`                                    | :ref:`_shaped_get_run_object<class_TextServerExtension_private_method__shaped_get_run_object>`\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const|                                                                                                                                                                                                                                            |
@@ -1379,7 +1381,7 @@ TextServerExtension
 
 :ref:`bool<class_bool>` **_font_is_modulate_color_glyphs**\ (\ font_rid\: :ref:`RID<class_RID>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__font_is_modulate_color_glyphs>`
 
-Returns ``true`` if color modulation is applied when drawing the font's colored glyphs.
+Возвращает ``true``, если при отрисовке цветных глифов шрифта применяется цветовая модуляция.
 
 .. rst-class:: classref-item-separator
 
@@ -2077,9 +2079,9 @@ Returns ``true`` if color modulation is applied when drawing the font's colored 
 
 **Устарело:** Use :ref:`TranslationServer.format_number()<class_TranslationServer_method_format_number>` instead.
 
-Converts a number from Western Arabic (0..9) to the numeral system used in the given ``language``.
+Преобразует число из западного арабского языка (0..9) в систему счисления, используемую в указанном ``language``.
 
-If ``language`` is an empty string, the active locale will be used.
+Если ``language`` — пустая строка, будет использоваться активная локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -2223,7 +2225,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`bool<class_bool>` **_is_locale_using_support_data**\ (\ locale\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__is_locale_using_support_data>`
 
-Returns ``true`` if the locale requires text server support data for line/word breaking.
+Возвращает ``true``, если локаль требует поддержки данных текстового сервера для переноса строк/слов.
 
 .. rst-class:: classref-item-separator
 
@@ -2273,7 +2275,7 @@ Returns ``true`` if the locale requires text server support data for line/word b
 
 :ref:`int<class_int>` **_name_to_tag**\ (\ name\: :ref:`String<class_String>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__name_to_tag>`
 
-Converts the given readable name of a feature, variation, script, or language to an OpenType tag.
+Преобразует заданное читаемое имя функции, варианта, шрифта или языка в тег OpenType.
 
 .. rst-class:: classref-item-separator
 
@@ -2287,9 +2289,9 @@ Converts the given readable name of a feature, variation, script, or language to
 
 **Устарело:** Use :ref:`TranslationServer.parse_number()<class_TranslationServer_method_parse_number>` instead.
 
-Converts ``number`` from the numeral system used in the given ``language`` to Western Arabic (0..9).
+Преобразует ``number`` из системы счисления, используемой в заданном ``language``, в западный арабский язык (0..9).
 
-If ``language`` is an empty string, the active locale will be used.
+Если ``language`` — пустая строка, будет использоваться активная локаль.
 
 .. rst-class:: classref-item-separator
 
@@ -2388,6 +2390,18 @@ If ``language`` is an empty string, the active locale will be used.
 :ref:`int<class_int>` **_shaped_get_run_font_size**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_font_size>`
 
 Возвращает размер шрифта текстового фрагмента ``index`` (в визуальном порядке).
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextServerExtension_private_method__shaped_get_run_glyph_range:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **_shaped_get_run_glyph_range**\ (\ shaped\: :ref:`RID<class_RID>`, index\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_get_run_glyph_range>`
+
+Returns the glyph range of the ``index`` text run (in visual order).
 
 .. rst-class:: classref-item-separator
 
@@ -2603,7 +2617,7 @@ If ``language`` is an empty string, the active locale will be used.
 
 :ref:`RID<class_RID>` **_shaped_text_duplicate**\ (\ shaped\: :ref:`RID<class_RID>`\ ) |virtual| |required| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_duplicate>`
 
-Duplicates shaped text buffer.
+Дублирует текстовый буфер заданной формы.
 
 .. rst-class:: classref-item-separator
 
@@ -3035,7 +3049,7 @@ Duplicates shaped text buffer.
 
 :ref:`bool<class_bool>` **_shaped_text_has_object**\ (\ shaped\: :ref:`RID<class_RID>`, key\: :ref:`Variant<class_Variant>`\ ) |virtual| |required| |const| :ref:`🔗<class_TextServerExtension_private_method__shaped_text_has_object>`
 
-Returns ``true`` if an object with ``key`` is embedded in this shaped text buffer.
+Возвращает ``true``, если объект с ``key`` встроен в этот текстовый буфер заданной формы.
 
 .. rst-class:: classref-item-separator
 
@@ -3407,7 +3421,7 @@ Returns ``true`` if an object with ``key`` is embedded in this shaped text buffe
 
 :ref:`String<class_String>` **_tag_to_name**\ (\ tag\: :ref:`int<class_int>`\ ) |virtual| |const| :ref:`🔗<class_TextServerExtension_private_method__tag_to_name>`
 
-Converts the given OpenType tag to the readable name of a feature, variation, script, or language.
+Преобразует заданный тег OpenType в читаемое имя элемента, варианта, шрифта или языка.
 
 .. rst-class:: classref-item-separator
 

@@ -14,9 +14,9 @@ Importe un fichier audio WAV pour la lecture.
 Description
 -----------
 
-WAV is an uncompressed format, which can provide higher quality compared to Ogg Vorbis and MP3. It also has the lowest CPU cost to decode. This means high numbers of WAV sounds can be played at the same time, even on low-end devices.
+WAV est un format non compressé, qui peut fournir une qualité supérieure par rapport aux formats Ogg Vorbis et MP3. Il a également le plus bas coût CPU pour le décodage. Cela signifie qu'un nombre élevé de sons WAV peuvent être joués en même temps, même sur des appareils bas de gamme.
 
-By default, Godot imports WAV files using the lossy Quite OK Audio compression. You may change this by setting the :ref:`compress/mode<class_ResourceImporterWAV_property_compress/mode>` property.
+Par défaut, Godot importe les fichiers WAV en utilisant la compression Quite OK Audio avec pertes. Vous pouvez modifier ceci en définissant la propriété :ref:`compress/mode<class_ResourceImporterWAV_property_compress/mode>`.
 
 .. rst-class:: classref-introduction-group
 
@@ -70,13 +70,13 @@ Descriptions des propriétés
 
 :ref:`int<class_int>` **compress/mode** = ``2`` :ref:`🔗<class_ResourceImporterWAV_property_compress/mode>`
 
-The compression mode to use on import.
+Le mode de compression à utiliser durant l'import.
 
-- **PCM (Uncompressed):** Imports audio data without any form of compression, preserving the highest possible quality. It has the lowest CPU cost, but the highest memory usage.
+- **PCM (non compressé) :** Importe des données audio sans aucune forme de compression, en préservant la plus haute qualité possible. A le plus bas coût CPU, mais la plus grande utilisation de mémoire.
 
-- **IMA ADPCM:** Applies fast, lossy compression during import, noticeably decreasing the quality, but with low CPU cost and memory usage. Does not support seeking and only Forward loop mode is supported.
+- **IMA ADPCM :** Applique une compression rapide et avec pertes lors de l'import, en diminuant sensiblement la qualité, mais avec un faible coût CPU et d'utilisation de mémoire. Ne supporte pas la recherche et seul le mode de rebouclage Forward est pris en charge.
 
-- **\ `Quite OK Audio <https://qoaformat.org/>`__:** Also applies lossy compression on import, having a slightly higher CPU cost compared to IMA ADPCM, but much higher quality and the lowest memory usage.
+- **\ `Quite OK Audio <https://qoaformat.org/>`__\  :** applique également de la compression avec pertes durant l'import, a un coût CPU légèrement supérieur par rapport à IMA ADPCM, mais une qualité bien meilleure et la plus faible utilisation de mémoire.
 
 .. rst-class:: classref-item-separator
 
@@ -88,7 +88,7 @@ The compression mode to use on import.
 
 :ref:`int<class_int>` **edit/loop_begin** = ``0`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_begin>`
 
-The begin loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file.
+Le point de départ de la boucle, utilisé lorsque :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` vaut **Forward**, **Ping-Pong**, ou **Backward**. Ceci est défini dans en échantillons après le début du fichier audio.
 
 .. rst-class:: classref-item-separator
 
@@ -100,7 +100,7 @@ The begin loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_
 
 :ref:`int<class_int>` **edit/loop_end** = ``-1`` :ref:`🔗<class_ResourceImporterWAV_property_edit/loop_end>`
 
-The end loop point to use when :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` is **Forward**, **Ping-Pong**, or **Backward**. This is set in samples after the beginning of the audio file. A value of ``-1`` uses the end of the audio file as the end loop point.
+Le point de fin de la boucle, utilisé lorsque :ref:`edit/loop_mode<class_ResourceImporterWAV_property_edit/loop_mode>` vaut **Forward**, **Ping-Pong**, ou **Backward**. Ceci est défini dans en échantillons après le début du fichier audio. Une valeur de ``-1`` utilise la fin du fichier audio comme point de fin de la boucle.
 
 .. rst-class:: classref-item-separator
 
@@ -174,9 +174,9 @@ Activer ceci n'est généralement pas recommandé, car la quantification 8 bits 
 
 :ref:`bool<class_bool>` **force/max_rate** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/max_rate>`
 
-If set to a value greater than ``0``, forces the audio's sample rate to be reduced to a value lower than or equal to the value specified in :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>`.
+Si défini à une valeur supérieure à ``0``, force le taux d'échantillonnage de l'audio à être réduit à une valeur inférieure ou égale à la valeur spécifiée dans :ref:`force/max_rate_hz<class_ResourceImporterWAV_property_force/max_rate_hz>`.
 
-This can decrease file size noticeably on certain sounds, without impacting quality depending on the actual sound's contents. See `Best practices <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__ for more information.
+Cela peut diminuer la taille du fichier de façon notable sur certains sons, sans impacter la qualité en fonction du contenu réel du son. Voir `Bonnes pratiques <../tutorials/assets_pipeline/importing_audio_samples.html#doc-importing-audio-samples-best-practices>`__ pour plus d'informations.
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ This can decrease file size noticeably on certain sounds, without impacting qual
 
 :ref:`float<class_float>` **force/max_rate_hz** = ``44100`` :ref:`🔗<class_ResourceImporterWAV_property_force/max_rate_hz>`
 
-The frequency to limit the imported audio sample to (in Hz). Only effective if :ref:`force/max_rate<class_ResourceImporterWAV_property_force/max_rate>` is ``true``.
+La fréquence à laquelle limiter l'échantillon audio importé (en Hz). Seulement effectif si :ref:`force/max_rate<class_ResourceImporterWAV_property_force/max_rate>` vaut ``true``.
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +200,7 @@ The frequency to limit the imported audio sample to (in Hz). Only effective if :
 
 :ref:`bool<class_bool>` **force/mono** = ``false`` :ref:`🔗<class_ResourceImporterWAV_property_force/mono>`
 
-If ``true``, forces the imported audio to be mono if the source file is stereo. This decreases the file size by 50% by merging the two channels into one.
+Si ``true``, force l'audio importé à être mono si le fichier source est stéréo. Cela diminue la taille du fichier de 50% en fusionnant les deux canaux en un.
 
 .. |virtual| replace:: :abbr:`virtual (Cette méthode doit typiquement être redéfinie par l'utilisateur pour avoir un effet.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

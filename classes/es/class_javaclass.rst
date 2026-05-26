@@ -89,7 +89,7 @@ Devuelve una **JavaClass** que representa la clase padre Java de esta clase.
 
 :ref:`bool<class_bool>` **has_java_method**\ (\ method\: :ref:`StringName<class_StringName>`\ ) |const| :ref:`🔗<class_JavaClass_method_has_java_method>`
 
-Returns ``true`` if the given ``method`` name exists in the object's Java methods.
+Devuelve ``true`` si el nombre del ``method`` dado existe en los métodos Java del objeto.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

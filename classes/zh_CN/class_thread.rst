@@ -139,9 +139,9 @@ enum **Priority**: :ref:`🔗<enum_Thread_Priority>`
 
 :ref:`bool<class_bool>` **is_main_thread**\ (\ ) |static| :ref:`🔗<class_Thread_method_is_main_thread>`
 
-Returns ``true`` if the thread this method was called from is the main thread.
+如果调用该方法的线程是主线程，则返回 ``true``\ 。
 
-\ **Note:** This is a static method and isn't associated with a specific **Thread** object.
+\ **注意：**\ 这是一个静态方法，与特定的 **Thread** 对象无关。
 
 .. rst-class:: classref-item-separator
 

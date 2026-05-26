@@ -16,15 +16,15 @@ La clase base del CSG.
 Descripción
 ----------------------
 
-This is the CSG base class that provides CSG operation support to the various CSG nodes in Godot.
+Esta es la clase base de CSG que proporciona soporte para operaciones CSG a los diversos nodos CSG en Godot.
 
-\ **Performance:** CSG nodes are only intended for prototyping as they have a significant CPU performance cost. Consider baking final CSG operation results into static geometry that replaces the CSG nodes.
+\ **Rendimiento:** Los nodos CSG están destinados únicamente al prototipado, ya que tienen un coste de rendimiento de CPU significativo. Considera hornear (bake) los resultados finales de las operaciones CSG en geometría estática que reemplace a los nodos CSG.
 
-Individual CSG root node results can be baked to nodes with static resources with the editor menu that appears when a CSG root node is selected.
+Los resultados de nodos raíz CSG individuales pueden hornearse a nodos con recursos estáticos mediante el menú del editor que aparece cuando se selecciona un nodo raíz CSG.
 
-Individual CSG root nodes can also be baked to static resources with scripts by calling :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` for the visual mesh or :ref:`bake_collision_shape()<class_CSGShape3D_method_bake_collision_shape>` for the physics collision.
+Los nodos raíz CSG individuales también pueden hornearse a recursos estáticos mediante scripts llamando a :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` para la malla visual o a :ref:`bake_collision_shape()<class_CSGShape3D_method_bake_collision_shape>` para la colisión física.
 
-Entire scenes of CSG nodes can be baked to static geometry and exported with the editor glTF scene exporter: **Scene > Export As... > glTF 2.0 Scene...**
+Escenas enteras de nodos CSG pueden hornearse a geometría estática y exportarse con el exportador de escenas glTF del editor: **Escena > Exportar como... > Escena glTF 2.0...**
 
 .. rst-class:: classref-introduction-group
 
@@ -142,7 +142,7 @@ Descripciones de Propiedades
 - |void| **set_calculate_tangents**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_calculating_tangents**\ (\ )
 
-Calculate tangents for the CSG shape which allows the use of normal and height maps. This is only applied on the root shape, this setting is ignored on any child. Setting this to ``false`` can speed up shape generation slightly.
+Calcula las tangentes para la forma CSG, lo que permite el uso de mapas de normales y de altura. Esto solo se aplica a la forma raíz; este ajuste se ignora en cualquier hijo. Establecer esto en ``false`` puede acelerar ligeramente la generación de la forma.
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ A contact is detected if object A is in any of the layers that object B scans, o
 - |void| **set_collision_mask**\ (\ value\: :ref:`int<class_int>`\ )
 - :ref:`int<class_int>` **get_collision_mask**\ (\ )
 
-The physics layers this CSG shape scans for collisions. Only effective if :ref:`use_collision<class_CSGShape3D_property_use_collision>` is ``true``. See `Collision layers and masks <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ in the documentation for more information.
+Las capas de física en las que esta forma CSG busca colisiones. Solo es efectivo si :ref:`use_collision<class_CSGShape3D_property_use_collision>` es ``true``. Consulta `Capas y máscaras de colisión <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__ en la documentación para más información.
 
 .. rst-class:: classref-item-separator
 
@@ -197,7 +197,7 @@ The physics layers this CSG shape scans for collisions. Only effective if :ref:`
 - |void| **set_collision_priority**\ (\ value\: :ref:`float<class_float>`\ )
 - :ref:`float<class_float>` **get_collision_priority**\ (\ )
 
-The priority used to solve colliding when occurring penetration. Only effective if :ref:`use_collision<class_CSGShape3D_property_use_collision>` is ``true``. The higher the priority is, the lower the penetration into the object will be. This can for example be used to prevent the player from breaking through the boundaries of a level.
+La prioridad utilizada para resolver colisiones cuando ocurre una penetración. Solo es efectiva si :ref:`use_collision<class_CSGShape3D_property_use_collision>` es ``true``. Cuanto mayor sea la prioridad, menor será la penetración en el objeto. Esto se puede utilizar, por ejemplo, para evitar que el jugador atraviese los límites de un nivel.
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +283,9 @@ Returns a baked physics :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>
 
 :ref:`ArrayMesh<class_ArrayMesh>` **bake_static_mesh**\ (\ ) :ref:`🔗<class_CSGShape3D_method_bake_static_mesh>`
 
-Returns a baked static :ref:`ArrayMesh<class_ArrayMesh>` of this node's CSG operation result. Materials from involved CSG nodes are added as extra mesh surfaces. Returns an empty mesh if the node is not a CSG root node or has no valid geometry.
+Devuelve una :ref:`ArrayMesh<class_ArrayMesh>` estática procesada con baking con el resultado de la operación CSG de este nodo. Los materiales de los nodos CSG involucrados se añaden como superficies de malla adicionales. Devuelve una malla vacía si el nodo no es un nodo raíz CSG o no tiene una geometría válida.
 
-\ **Note:** CSG mesh data updates are deferred, which means they are updated with a delay of one rendered frame. To avoid getting an empty mesh or outdated mesh data, make sure to call ``await get_tree().process_frame`` before using :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` in :ref:`Node._ready()<class_Node_private_method__ready>` or after changing properties on the **CSGShape3D**.
+\ **Nota:** Las actualizaciones de los datos de malla CSG se aplazan, lo que significa que se actualizan con un retraso de un frame renderizado. Para evitar obtener una malla vacía o datos de malla desactualizados, asegúrate de llamar a ``await get_tree().process_frame`` antes de utilizar el :ref:`bake_static_mesh()<class_CSGShape3D_method_bake_static_mesh>` en :ref:`Node._ready()<class_Node_private_method__ready>` o después de modificar las propiedades de **CSGShape3D**.
 
 .. rst-class:: classref-item-separator
 
@@ -321,9 +321,9 @@ Devuelve si la capa especificada de :ref:`collision_mask<class_CSGShape3D_proper
 
 :ref:`Array<class_Array>` **get_meshes**\ (\ ) |const| :ref:`🔗<class_CSGShape3D_method_get_meshes>`
 
-Returns an :ref:`Array<class_Array>` with two elements, the first is the :ref:`Transform3D<class_Transform3D>` of this node and the second is the root :ref:`Mesh<class_Mesh>` of this node. Only works when this node is the root shape.
+Retorna un :ref:`Array<class_Array>` con 2 elementos, el primero es el :ref:`Transform3D<class_Transform3D>` de este nodo y el segundo es el :ref:`Mesh<class_Mesh>` raíz de este nodo. Solo funciona cuando este nodo es la forma raíz.
 
-\ **Note:** CSG mesh data updates are deferred, which means they are updated with a delay of one rendered frame. To avoid getting an empty shape or outdated mesh data, make sure to call ``await get_tree().process_frame`` before using :ref:`get_meshes()<class_CSGShape3D_method_get_meshes>` in :ref:`Node._ready()<class_Node_private_method__ready>` or after changing properties on the **CSGShape3D**.
+\ **Nota:** Las actualizaciones de los datos de mesh de CSG son diferidas, lo que significa que se actualizan con un delay de un frame renderizado. Para evitar obtener una forma vacía o datos de mesh desactualizados, asegúrate de llamar a ``await get_tree().process_frame`` antes de usar :ref:`get_meshes()<class_CSGShape3D_method_get_meshes>` en :ref:`Node._ready()<class_Node_private_method__ready>` o después de cambiar propiedades en el **CSGShape3D**.
 
 .. rst-class:: classref-item-separator
 

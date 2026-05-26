@@ -7,14 +7,14 @@ VisualShaderNodeTextureParameterTriplanar
 
 **Hereda:** :ref:`VisualShaderNodeTextureParameter<class_VisualShaderNodeTextureParameter>` **<** :ref:`VisualShaderNodeParameter<class_VisualShaderNodeParameter>` **<** :ref:`VisualShaderNode<class_VisualShaderNode>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Realiza una búsqueda de textura uniforme con triplanar dentro del gráfico shader visual.
+Realiza una búsqueda de textura de variables uniformes con triplanar dentro del gráfico shader visual.
 
 .. rst-class:: classref-introduction-group
 
 Descripción
 ----------------------
 
-Realiza una operación de búsqueda en la textura proporcionada como un uniforme para el shader, con soporte para el mapeo triplanar.
+Realiza una operación de búsqueda en la textura proporcionada como una variable uniforme para el shader, con soporte para el mapeo triplanar.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

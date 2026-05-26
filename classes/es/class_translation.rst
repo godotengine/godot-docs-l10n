@@ -16,9 +16,9 @@ Una traducción de idioma que asigna una colección de strings a sus traduccione
 Descripción
 ----------------------
 
-**Translation** maps a collection of strings to their individual translations, and also provides convenience methods for pluralization.
+**Translation** mapea una colección de strings a sus traducciones individuales, y también proporciona métodos de conveniencia para la pluralización.
 
-A **Translation** consists of messages. A message is identified by its context and untranslated string. Unlike `gettext <https://www.gnu.org/software/gettext/>`__, using an empty context string in Godot means not using any context.
+Una **Translation** consta de mensajes. Un mensaje se identifica por su contexto y string sin traducir. A diferencia de `gettext <https://www.gnu.org/software/gettext/>`__, usar una string de contexto vacía en Godot significa no usar ningún contexto.
 
 .. rst-class:: classref-introduction-group
 
@@ -112,9 +112,9 @@ El locale de la traducción.
 - |void| **set_plural_rules_override**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_plural_rules_override**\ (\ )
 
-The plural rules string to enforce. See `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ for examples and more info.
+La string de reglas plurales a aplicar. Véase `GNU gettext <https://www.gnu.org/software/gettext/manual/html_node/Plural-forms.html>`__ para ejemplos y más información.
 
-If empty or invalid, default plural rules from :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>` are used. The English plural rules are used as a fallback.
+Si está vacía o es inválida, se usan las reglas plurales predeterminadas de :ref:`TranslationServer.get_plural_rules()<class_TranslationServer_method_get_plural_rules>`. Las reglas plurales en inglés se usan como respaldo.
 
 .. rst-class:: classref-section-separator
 
@@ -169,9 +169,9 @@ Se podría usar un contexto adicional para especificar el contexto de la traducc
 
 |void| **add_plural_message**\ (\ src_message\: :ref:`StringName<class_StringName>`, xlated_messages\: :ref:`PackedStringArray<class_PackedStringArray>`, context\: :ref:`StringName<class_StringName>` = &""\ ) :ref:`🔗<class_Translation_method_add_plural_message>`
 
-Adds a message involving plural translation if nonexistent, followed by its translation.
+Añade un mensaje que involucra traducción plural si no existe, seguido de su traducción.
 
-An additional context could be used to specify the translation context or differentiate polysemic words.
+Se podría usar un contexto adicional para especificar el contexto de la traducción o diferenciar palabras polisémicas.
 
 .. rst-class:: classref-item-separator
 
@@ -261,7 +261,7 @@ El número ``n`` es el número o cantidad del objeto plural. Se utilizará para 
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_translated_message_list**\ (\ ) |const| :ref:`🔗<class_Translation_method_get_translated_message_list>`
 
-Returns all the translated strings.
+Devuelve todas las strings traducidas.
 
 .. |virtual| replace:: :abbr:`virtual (Normalmente, este método debería ser sobreescrito por el usuario para que tenga algún efecto.)`
 .. |required| replace:: :abbr:`required (This method is required to be overridden when extending its base class.)`

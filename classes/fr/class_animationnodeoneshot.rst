@@ -199,7 +199,7 @@ Descriptions des propriétés
 - |void| **set_abort_on_reset**\ (\ value\: :ref:`bool<class_bool>`\ )
 - :ref:`bool<class_bool>` **is_aborted_on_reset**\ (\ )
 
-If ``true``, the sub-animation will abort if resumed with a reset after a prior interruption.
+Si ``true``, la sous-animation sera interrompue si elle est relancée avec une réinitialisation après une interruption préalable.
 
 .. rst-class:: classref-item-separator
 

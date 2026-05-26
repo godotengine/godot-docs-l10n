@@ -180,7 +180,7 @@ Area2D
 
 **body_entered**\ (\ body\: :ref:`Node2D<class_Node2D>`\ ) :ref:`🔗<class_Area2D_signal_body_entered>`
 
-当接收到的 ``body`` 进入这个区域时发出的。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。需要将 :ref:`monitoring<class_Area2D_property_monitoring>` 设置为 ``true`` 。
+当接收到的 ``body`` 进入此区域时触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ （2D物理刚体）或者一个 :ref:`TileMap<class_TileMap>`\ （瓦片地图）。如果 :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>`\ （瓦片集）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area2D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Area2D
 
 **body_exited**\ (\ body\: :ref:`Node2D<class_Node2D>`\ ) :ref:`🔗<class_Area2D_signal_body_exited>`
 
-当接收到的 ``body`` 离开这个区域时发出的。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+当接收到的 ``body`` 离开此区域时触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ （2D物理刚体）或者一个 :ref:`TileMap<class_TileMap>`\ （瓦片地图）。如果 :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>`\ （瓦片集）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area2D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -204,7 +204,7 @@ Area2D
 
 **body_shape_entered**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node2D<class_Node2D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_body_shape_entered>`
 
-当收到的 ``body`` 的 :ref:`Shape2D<class_Shape2D>` 进入这个区域的形状时发出。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+当接收到的 ``body`` 的某个 :ref:`Shape2D<class_Shape2D>`\ （2D形状）进入此区域的某个形状时，触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ （2D物理刚体）或者一个 :ref:`TileMap<class_TileMap>`\ （瓦片地图）。如果 :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>`\ （瓦片集）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area2D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 \ ``local_shape_index`` 和 ``body_shape_index`` 分别包含来自这个区域和交互体的交互形状的指数。\ ``body_rid`` 包含体的 :ref:`RID<class_RID>`\ 。这些值可以与 :ref:`PhysicsServer2D<class_PhysicsServer2D>` 一起使用。
 
@@ -233,7 +233,7 @@ Area2D
 
 **body_shape_exited**\ (\ body_rid\: :ref:`RID<class_RID>`, body\: :ref:`Node2D<class_Node2D>`, body_shape_index\: :ref:`int<class_int>`, local_shape_index\: :ref:`int<class_int>`\ ) :ref:`🔗<class_Area2D_signal_body_shape_exited>`
 
-当收到的 ``body`` 的 :ref:`Shape2D<class_Shape2D>` 退出这个区域的形状时发出。\ ``body`` 可能是 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 也可能是 :ref:`TileMap<class_TileMap>`\ 。\ :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>` 配置了碰撞形状就能够被检测到。要求 :ref:`monitoring<class_Area2D_property_monitoring>` 被设置为 ``true`` 。
+当接收到的 ``body`` 的某个 :ref:`Shape2D<class_Shape2D>`\ （2D形状）离开此区域的某个形状时，触发（发射）该信号。\ ``body`` 可以是一个 :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ （2D物理刚体）或者一个 :ref:`TileMap<class_TileMap>`\ （瓦片地图）。如果 :ref:`TileMap<class_TileMap>` 的 :ref:`TileSet<class_TileSet>`\ （瓦片集）配置了碰撞形状，它也能被检测到。此功能需要将 :ref:`monitoring<class_Area2D_property_monitoring>`\ （监听）属性设置为 ``true`` 才会生效。
 
 另见 :ref:`body_shape_entered<class_Area2D_signal_body_shape_entered>`\ 。
 

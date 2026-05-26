@@ -1501,7 +1501,7 @@ enum **GutterType**: :ref:`🔗<enum_TextEdit_GutterType>`
 - |void| **set_language**\ (\ value\: :ref:`String<class_String>`\ )
 - :ref:`String<class_String>` **get_language**\ (\ )
 
-Language code used for line-breaking and text shaping algorithms. If left empty, the current locale is used instead.
+用于断行和文本塑形算法的语言代码。如果留空，则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -2435,7 +2435,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`HScrollBar<class_HScrollBar>` **get_h_scroll_bar**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_get_h_scroll_bar>`
 
-设置该 **TextEdit** 所使用的 :ref:`HScrollBar<class_HScrollBar>`\ 。
+返回该 **TextEdit** 所使用的 :ref:`HScrollBar<class_HScrollBar>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2447,7 +2447,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`int<class_int>` **get_indent_level**\ (\ line\: :ref:`int<class_int>`\ ) |const| :ref:`🔗<class_TextEdit_method_get_indent_level>`
 
-给定行的缩进级别。缩进级别为行首空格和制表符的数量，制表符会考虑制表符的大小（见 :ref:`get_tab_size()<class_TextEdit_method_get_tab_size>`\ ）。
+返回给定行的缩进级别。缩进级别为行首空格和制表符的数量，制表符会考虑制表符的大小（见 :ref:`get_tab_size()<class_TextEdit_method_get_tab_size>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -3154,7 +3154,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`bool<class_bool>` **has_redo**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_has_redo>`
 
-有“重做”动作可用时返回 ``true``\ 。
+如果有“重做”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3178,7 +3178,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`bool<class_bool>` **has_undo**\ (\ ) |const| :ref:`🔗<class_TextEdit_method_has_undo>`
 
-有“撤销”动作可用时返回 ``true``\ 。
+如果有“撤销”动作可用时返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -4174,7 +4174,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`int<class_int>` **caret_width** = ``1`` :ref:`🔗<class_TextEdit_theme_constant_caret_width>`
 
-文本光标的像素宽度。较大的值能够确保光标易于看到，确保光标与较大的字体保持一致，从而提高可访问性。如果设置为 ``0`` 或更低，光标的宽度将被自动设置为 1 像素，并乘以显示缩放系数。
+文本光标的像素宽度。较大的值能够确保光标易于看到，确保光标与较大的字体保持一致，从而改善无障碍访问。如果设置为 ``0`` 或更低，光标的宽度将被自动设置为 1 像素，并乘以显示缩放系数。
 
 .. rst-class:: classref-item-separator
 
@@ -4212,7 +4212,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 :ref:`int<class_int>` **wrap_offset** = ``10`` :ref:`🔗<class_TextEdit_theme_constant_wrap_offset>`
 
-Sets an additional margin for line wrapping width.
+设置换行宽度的额外边距。
 
 .. rst-class:: classref-item-separator
 
@@ -4272,7 +4272,7 @@ Sets an additional margin for line wrapping width.
 
 :ref:`StyleBox<class_StyleBox>` **focus** :ref:`🔗<class_TextEdit_theme_style_focus>`
 
-设置当获得焦点时的 :ref:`StyleBox<class_StyleBox>`\ 。该 :ref:`focus<class_TextEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，因此应使用部分透明的 :ref:`StyleBox<class_StyleBox>` 以确保基础 :ref:`StyleBox<class_StyleBox>` 保持可见。表示轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 非常适合此目的。要禁用焦点视觉效果，请指定一个 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用焦点视觉效果会破坏键盘 / 控制器导航的可用性，出于可访问性原因，不建议这样做。
+设置当获得焦点时的 :ref:`StyleBox<class_StyleBox>`\ 。该 :ref:`focus<class_TextEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，因此应使用部分透明的 :ref:`StyleBox<class_StyleBox>` 以确保基础 :ref:`StyleBox<class_StyleBox>` 保持可见。表示轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 非常适合此目的。要禁用焦点视觉效果，请指定一个 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用焦点视觉效果会破坏键盘 / 控制器导航的可用性，出于无障碍访问的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 

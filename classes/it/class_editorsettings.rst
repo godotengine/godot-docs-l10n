@@ -3286,22 +3286,22 @@ Porta utilizzata per il server di file quando si esporta il progetto con un file
 
 :ref:`String<class_String>` **filesystem/import/blender/blender_path** :ref:`🔗<class_EditorSettings_property_filesystem/import/blender/blender_path>`
 
-Il percorso all'eseguibile di Blender utilizzato per convertire i file di scena 3D di Blender ``.blend`` nel formato glTF 2.0 durante l'importazione. È richiesto Blender 3.0 o versione successiva.
+The path to the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
 
-Per abilitare questa funzionalità per un progetto specifico, usa :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
 
-Se questa impostazione è vuota, i percorsi predefiniti di Blender verranno rilevati e utilizzati automaticamente se presenti in questo ordine:
+If this setting is empty, Blender's default paths will be detected and used automatically if present in this order:
 
 \ **Windows:**\ 
 
-::
+.. code:: text
 
     - C:\Program Files\Blender Foundation\blender.exe
     - C:\Program Files (x86)\Blender Foundation\blender.exe
 
 \ **macOS:**\ 
 
-::
+.. code:: text
 
     - /opt/homebrew/bin/blender
     - /opt/local/bin/blender
@@ -3311,7 +3311,7 @@ Se questa impostazione è vuota, i percorsi predefiniti di Blender verranno rile
 
 \ **Linux/\*BSD:**\ 
 
-::
+.. code:: text
 
     - /usr/bin/blender
     - /usr/local/bin/blender

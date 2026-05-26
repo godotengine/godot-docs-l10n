@@ -451,7 +451,7 @@ enum **DisableMode**: :ref:`🔗<enum_CollisionObject2D_DisableMode>`
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **get_shape_owners**\ (\ ) :ref:`🔗<class_CollisionObject2D_method_get_shape_owners>`
 
-返回一个 ``owner_id`` 标识符的 :ref:`Array<class_Array>`\ 。你可以在其他使用 ``owner_id`` 作为参数的方法中使用这些 ID。
+返回一个 ``owner_id`` 标识符的 :ref:`Array<class_Array>`\ 。你可以在其他使用 ``owner_id`` 作为参数的方法中使用这些 id。
 
 .. rst-class:: classref-item-separator
 
