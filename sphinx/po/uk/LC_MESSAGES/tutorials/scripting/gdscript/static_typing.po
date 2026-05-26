@@ -190,16 +190,16 @@ msgstr ""
 "значення."
 
 msgid ":ref:`Built-in types <doc_gdscript_builtin_types>`."
-msgstr ":ref:`Built-in types <doc_gdscript_builtin_types>`."
+msgstr ":ref:`Вбудовані типи <doc_gdscript_builtin_types>`."
 
 msgid "Native classes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)."
 msgstr "Нативні класи (``Object``, ``Node``, ``Area2D``, ``Camera2D`` тощо)."
 
 msgid ":ref:`Global classes <doc_gdscript_basics_class_name>`."
-msgstr ":ref:`Global classes <doc_gdscript_basics_class_name>`."
+msgstr ":ref:`Глобальні класи <doc_gdscript_basics_class_name>`."
 
 msgid ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
-msgstr ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
+msgstr ":ref:`Внутрішні класи <doc_gdscript_basics_inner_classes>`."
 
 msgid ""
 "Global, native and custom named enums. Note that an enum type is just an "
@@ -225,6 +225,14 @@ msgstr ""
 "типи. Існує два способи їх використання в скриптах. Перший метод полягає в "
 "попередньому завантаженні скрипта, який ви хочете використовувати як тип, у "
 "константу:"
+
+msgid ""
+"The second method is to use the ``class_name`` keyword when you create the "
+"script. For the example above, your ``rifle.gd`` would look like this:"
+msgstr ""
+"Другий метод полягає у використанні ключового слова ``class_name`` під час "
+"створення скрипта. Для наведеного вище прикладу ваш ``rifle.gd`` виглядатиме "
+"так:"
 
 msgid ""
 "If you use ``class_name``, Godot registers the ``Rifle`` type globally in "

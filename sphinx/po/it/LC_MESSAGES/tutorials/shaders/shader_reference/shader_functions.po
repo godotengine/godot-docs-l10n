@@ -2659,6 +2659,15 @@ msgstr ""
 msgid "Get the size of a texture."
 msgstr "Ottiene le dimensioni di una texture."
 
+msgid ""
+"For performance reasons, this function should be avoided as it always "
+"performs a full texture read. When possible, you should pass the texture "
+"size as a uniform instead."
+msgstr ""
+"Per motivi di prestazioni, si dovrebbe evitare questa funzione poiché esegue "
+"sempre una lettura completa della texture. Quando possibile, è preferibile "
+"passare le dimensioni della texture come uniforme."
+
 msgid "vec2"
 msgstr "vec2"
 

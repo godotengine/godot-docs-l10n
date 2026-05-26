@@ -14,6 +14,19 @@ msgstr ""
 msgid "Using the ArrayMesh"
 msgstr "Utilizzo di ArrayMesh"
 
+msgid ""
+"The first parameter is the ``PrimitiveType``, an OpenGL concept that "
+"instructs the GPU how to arrange the primitive based on the vertices given, "
+"i.e. whether they represent triangles, lines, points, etc. "
+"See :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` for the options "
+"available."
+msgstr ""
+"Il primo parametro è ``PrimitiveType``, un concetto OpenGL che indica alla "
+"GPU come disporre la primitiva in base ai vertici forniti, ovvero se "
+"rappresentano triangoli, linee, punti, ecc. "
+"Consultare :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` per le "
+"opzioni disponibili."
+
 msgid "Index"
 msgstr "Indice"
 
@@ -133,6 +146,120 @@ msgstr ":ref:`PackedInt32Array <class_PackedInt32Array>`"
 
 msgid "Setting up the ArrayMesh"
 msgstr "Preparazione dell'ArrayMesh"
+
+msgid "Generating a rectangle"
+msgstr "Generare un rettangolo"
+
+msgid ""
+"Since we are using ``Mesh.PRIMITIVE_TRIANGLES`` to render, we will construct "
+"a rectangle with triangles."
+msgstr ""
+"Poiché utilizziamo ``Mesh.PRIMITIVE_TRIANGLES`` per renderizzare, "
+"costruiremo un rettangolo con dei triangoli."
+
+msgid ""
+"A rectangle is formed by two triangles sharing four vertices. For our "
+"example, we will create a rectangle with its top left point at ``(0, 0, 0)`` "
+"with a width and length of one as shown below:"
+msgstr ""
+"Un rettangolo è formato da due triangoli che condividono quattro vertici. "
+"Nel nostro esempio, creeremo un rettangolo con il suo vertice superiore "
+"sinistro in ``(0, 0, 0)`` e con una larghezza e lunghezza di uno, come "
+"mostrato di seguito:"
+
+msgid "A rectangle made of two triangles sharing four vertices."
+msgstr ""
+"Un rettangolo formato da due triangoli che condividono quattro vertici."
+
+msgid ""
+"To draw this rectangle, define the coordinates of each vertex in the "
+"``verts`` array."
+msgstr ""
+"Per disegnare questo rettangolo, definisci le coordinate di ciascun vertice "
+"nell'array ``verts``."
+
+msgid ""
+"The ``uvs`` array helps describe where parts of a texture should go onto the "
+"mesh. The values range from 0 to 1. Depending on your texture, you may want "
+"to change these values."
+msgstr ""
+"L'array ``uvs`` aiuta a descrivere dove le parti di una texture devono "
+"andare sulla mesh. I valori vanno da 0 a 1. A seconda della texture, "
+"potrebbe essere desiderato modificare questi valori."
+
+msgid ""
+"The ``normals`` array is used to describe the direction the vertices face "
+"and is used in lighting calculations. For this example, we will default to "
+"the ``Vector3.UP`` direction."
+msgstr ""
+"L'array ``normals`` serve per descrivere la direzione verso cui puntano i "
+"vertici ed è utilizzato nei calcoli di illuminazione. Per questo esempio, "
+"lasceremo la direzione al valore predefinito di ``Vector3.UP``."
+
+msgid ""
+"The ``indices`` array defines the order vertices are drawn. Godot renders in "
+"a *clockwise* direction, meaning that we must specify the vertices of a "
+"triangle we want to draw in clockwise order."
+msgstr ""
+"L'array ``indices`` definisce l'ordine in cui sono disegnati i vertici. "
+"Godot renderizza in senso *orario*, il che significa che dobbiamo "
+"specificare i vertici di un triangolo che vogliamo disegnare in senso orario."
+
+msgid ""
+"For example, to draw the first triangle, we will want to draw the vertices "
+"``(0, 0, 0)``, ``(1, 0, 0)``, and ``(0, 0, 1)`` in that order. This is the "
+"same as drawing ``vert[0]``, ``vert[2]``, and ``vert[1]``, i.e., indices 0, "
+"2, and 1, in the ``verts`` array. These index values are what the "
+"``indices`` array defines."
+msgstr ""
+"Ad esempio, per disegnare il primo triangolo, dovremo disegnare i vertici "
+"``(0, 0, 0)``, ``(1, 0, 0)`` e ``(0, 0, 1)`` in quest'ordine. Questo "
+"equivale a disegnare ``vert[0]``, ``vert[2]`` e ``vert[1]``, ovvero gli "
+"indici 0, 2 e 1 nell'array ``verts``. Questi sono i valori di indice "
+"definiti dall'array ``indices``."
+
+msgid "``verts[Index]``"
+msgstr "``verts[Index]``"
+
+msgid "``uvs[Index]``"
+msgstr "``uvs[Index]``"
+
+msgid "``normals[Index]``"
+msgstr "``normals[Index]``"
+
+msgid "(0, 0, 0)"
+msgstr "(0, 0, 0)"
+
+msgid "(0, 0)"
+msgstr "(0, 0)"
+
+msgid "Vector3.UP"
+msgstr "Vector3.UP"
+
+msgid "(0, 0, 1)"
+msgstr "(0, 0, 1)"
+
+msgid "(1, 0)"
+msgstr "(1, 0)"
+
+msgid "(1, 0, 0)"
+msgstr "(1, 0, 0)"
+
+msgid "(0, 1)"
+msgstr "(0, 1)"
+
+msgid "(1, 0, 1)"
+msgstr "(1, 0, 1)"
+
+msgid "(1, 1)"
+msgstr "(1, 1)"
+
+msgid "Put together, the rectangle generation code looks like:"
+msgstr ""
+"Messo assieme, il codice per la generazione del rettangolo appare così:"
+
+msgid "Generating a sphere"
+msgstr "Generare una sfera"
 
 msgid "Saving"
 msgstr "Salvare"

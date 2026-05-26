@@ -445,6 +445,13 @@ msgstr ":ref:`float <class_float>`"
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
+msgstr ""
+"Uma sequência de caracteres no `formato Unicode <https://pt.wikipedia.org/"
+"wiki/Unicode>`_."
+
 msgid "Vector built-in types"
 msgstr "Tipos básicos de vetor"
 
@@ -575,6 +582,37 @@ msgstr ""
 "Matrizes são indexados iniciando do índice ``0``. Índices negativos contam "
 "do final."
 
+msgid "Packed arrays"
+msgstr "Arrays compactados"
+
+msgid ""
+"While all Arrays can cause memory fragmentation when they become large "
+"enough, if memory usage and performance (iteration and modification speed) "
+"is a concern and the type of data you're storing is compatible with one of "
+"the ``Packed`` Array types, then using those may yield improvements. "
+"However, if you do not have such concerns (e.g. the size of your array does "
+"not reach the tens of thousands of elements) it is likely more helpful to "
+"use regular or typed Arrays, as they provide convenience methods that can "
+"make your code easier to write and maintain (and potentially faster if your "
+"data requires such operations a lot). If the data you will store is of a "
+"known type (including your own defined classes), prefer to use a typed Array "
+"as it may yield better performance in iteration and modification compared to "
+"an untyped Array."
+msgstr ""
+"Embora todos os Arrays possam causar fragmentação de memória quando ficam "
+"grandes o suficiente, se uso de memória e desempenho (velocidade de iteração "
+"e modificação) forem uma preocupação e o tipo de dado que você está "
+"armazenando for compatível com um dos tipos de Array ``Packed``, então usá-"
+"los pode trazer melhorias. No entanto, se você não tiver essas preocupações "
+"(por exemplo, o tamanho do seu array não chega a dezenas de milhares de "
+"elementos), provavelmente é mais útil usar Arrays normais ou tipados, pois "
+"eles fornecem métodos de conveniência que podem tornar seu código mais fácil "
+"de escrever e manter (e potencialmente mais rápido se seus dados exigirem "
+"essas operações com frequência). Se os dados que você armazenará forem de um "
+"tipo conhecido (incluindo suas próprias classes definidas), prefira usar um "
+"Array tipado, pois isso pode trazer melhor desempenho em iteração e "
+"modificação em comparação com um Array não tipado."
+
 msgid ":ref:`Dictionary <class_Dictionary>`"
 msgstr ":ref:`Dictionary <class_Dictionary>`"
 
@@ -641,6 +679,9 @@ msgstr ""
 
 msgid "Script classes declared with the ``class_name`` keyword."
 msgstr "Classes de script declaradas com a palavra-chave ``class_name``."
+
+msgid "Member variables are initialized in the following order:"
+msgstr "As variáveis membro são inicializadas na seguinte ordem:"
 
 msgid "Casting"
 msgstr "Conversão"
@@ -743,6 +784,9 @@ msgstr ""
 msgid "Referencing functions"
 msgstr "Referenciando funções"
 
+msgid "Lambda functions capture the local environment:"
+msgstr "As funções Lambda capturam o ambiente local:"
+
 msgid "Static functions"
 msgstr "Funções estáticas"
 
@@ -792,6 +836,12 @@ msgstr ""
 "equivalente à expressão ``switch`` encontrada em muitas outras linguagens de "
 "programação, mas oferece algumas funcionalidades adicionais."
 
+msgid "Basic syntax"
+msgstr "Sintaxe básica"
+
+msgid "Crash-course for people who are familiar with switch statements"
+msgstr "Curso rápido para pessoas familiarizadas com expressões switch"
+
 msgid "Replace ``switch`` with ``match``."
 msgstr "Substitua ``switch`` por ``match``."
 
@@ -800,6 +850,9 @@ msgstr "Remova ``case``."
 
 msgid "Change ``default`` to a single underscore."
 msgstr "Troque ``default`` por um único sublinhado."
+
+msgid "Control flow"
+msgstr "Controle de fluxo"
 
 msgid "Wildcard pattern"
 msgstr "Padrão coringa"
@@ -1023,17 +1076,6 @@ msgid ""
 msgstr ""
 "Isso permite que a ``Lifebar`` reaja às alterações de saúde sem acoplá-la ao "
 "nó ``Character``."
-
-msgid ""
-"These arguments show up in the editor's node dock, and Godot can use them to "
-"generate callback functions for you. However, you can still emit any number "
-"of arguments when you emit signals; it's up to you to emit the correct "
-"values."
-msgstr ""
-"Estes argumentos aparecem na aba Nó do editor, e o Godot pode usá-los para "
-"criar funções para você. Entretanto, você ainda pode emitir qualquer número "
-"de argumento quando você emite sinais; é você quem tem que emitir os valores "
-"corretos."
 
 msgid "Assert keyword"
 msgstr "Palavra-chave assert"

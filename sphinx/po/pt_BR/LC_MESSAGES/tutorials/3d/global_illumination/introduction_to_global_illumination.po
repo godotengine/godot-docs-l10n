@@ -234,6 +234,9 @@ msgstr "Desempenho"
 msgid "In order of performance from fastest to slowest:"
 msgstr "Em ordem de desempenho, do mais rápido para o mais lento:"
 
+msgid "**ReflectionProbe:**"
+msgstr "**Sonda de Reflexões:**"
+
 msgid ""
 "ReflectionProbes with their update mode set to **Always** are much more "
 "expensive than probes with their update mode set to **Once** (the default). "
@@ -244,6 +247,9 @@ msgstr ""
 "muito mais caros do que probes com o modo de atualização definido como "
 "**Once** (o padrão). Adequado para gráficos integrados ao usar o modo de "
 "atualização **Once**. *Disponível em todos os renderizadores.*"
+
+msgid "**LightmapGI:**"
+msgstr "**LightmapGI:**"
 
 msgid ""
 "Lights can be baked with indirect lighting only, or fully baked on a per-"
@@ -310,6 +316,9 @@ msgstr ""
 "significativamente o desempenho. **Não disponível** *ao usar os "
 "renderizadores Mobile ou Compatibility.*"
 
+msgid "Visuals"
+msgstr "Visuais"
+
 msgid ""
 "For comparison, here's a 3D scene with no global illumination options used:"
 msgstr ""
@@ -335,6 +344,9 @@ msgid ""
 msgstr ""
 "**VoxelGI:** |average| Bons reflexos e iluminação indireta, mas cuidado com "
 "vazamentos."
+
+msgid "average"
+msgstr "média"
 
 msgid ""
 "Due to its voxel-based nature, VoxelGI will exhibit light leaks if walls and "

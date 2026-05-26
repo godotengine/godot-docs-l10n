@@ -35,5 +35,22 @@ msgstr "Oui"
 msgid "Cause"
 msgstr "Cause"
 
+msgid ""
+"A static member is annotated with the ``[Export]`` attribute. Static members "
+"can't be exported."
+msgstr ""
+"Un membre statique est annoté avec l'attribut ``[Export]``. Les membres "
+"statiques ne peuvent pas être exportés."
+
+msgid "Godot doesn't allow exporting static members."
+msgstr "Godot n'autorise pas l'export des membres statiques."
+
+msgid ""
+"To fix a violation of this rule, remove the ``[Export]`` attribute or remove "
+"the ``static`` keyword."
+msgstr ""
+"Pour corriger une violation de cette règle, supprimez l'attribut "
+"``[Export]`` ou supprimez le mot-clé ``static``."
+
 msgid "When to suppress warnings"
 msgstr "Quand supprimer les avertissements"

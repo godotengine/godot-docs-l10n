@@ -11,5 +11,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0109: The '[ExportToolButton]' attribute cannot be used with another "
+"'[Export]' attribute"
+msgstr ""
+"GD0109: '[ExportToolButton]' 속성은 다른 '[Export]' 속성과 함께 사용할 수 없"
+"습니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0109"
+msgstr "GD0109"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A property is annotated with both the ``[ExportToolButton]`` and the "
+"``[Export]`` attributes."
+msgstr ""
+"속성에는 ``[ExportToolButton]`` 및 ``[Export]`` 속성이 모두 주석으로 추가됩니"
+"다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"The ``[ExportToolButton]`` attribute already implies exporting the member, "
+"so the ``[Export]`` is unnecessary."
+msgstr ""
+"``[ExportToolButton]`` 속성은 이미 멤버 내보내기를 의미하므로 ``[Export]``는 "
+"필요하지 않습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid "To fix a violation of this rule, remove the ``[Export]`` attribute."
+msgstr "이 규칙 위반을 수정하려면 ``[Export]`` 속성을 제거하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Multiple export attributes may "
+"lead to duplicated members, resulting in unexpected runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 여러 내보내기 속성으로 인해 멤버가 중복되"
+"어 예상치 못한 런타임 오류가 발생할 수 있습니다."

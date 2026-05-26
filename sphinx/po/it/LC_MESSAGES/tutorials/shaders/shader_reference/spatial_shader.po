@@ -94,6 +94,28 @@ msgstr "**depth_test_disabled**"
 msgid "Disable depth testing."
 msgstr "Disabilita il test di profondità."
 
+msgid "**depth_test_default**"
+msgstr "**depth_test_default**"
+
+msgid ""
+"Depth test will discard the pixel if it is behind other pixels. In Forward+ "
+"only, the pixel is also discarded if it's at the exact same depth as another "
+"pixel."
+msgstr ""
+"Il test di profondità scarta il pixel se si trova dietro ad altri pixel. "
+"Solo in Forward+, il pixel viene scartato anche se si trova esattamente alla "
+"stessa profondità di un altro pixel."
+
+msgid "**depth_test_inverted**"
+msgstr "**depth_test_inverted**"
+
+msgid ""
+"Depth test will discard the pixel if it is in front of other pixels. Useful "
+"for stencil effects."
+msgstr ""
+"Il test di profondità scarta il pixel se si trova davanti ad altri pixel. "
+"Utile per gli effetti stencil."
+
 msgid "**sss_mode_skin**"
 msgstr "**sss_mode_skin**"
 
@@ -125,11 +147,6 @@ msgstr ""
 
 msgid "**wireframe**"
 msgstr "**wireframe**"
-
-msgid "Geometry draws using lines (useful for troubleshooting)."
-msgstr ""
-"La geometria viene disegnata utilizzando linee (utile per risolvere "
-"problemi)."
 
 msgid "**debug_shadow_splits**"
 msgstr "**debug_shadow_splits**"
@@ -256,6 +273,9 @@ msgstr "Utilizza l'illuminazione basata sui vertici anziché quella per pixel."
 msgid "**particle_trails**"
 msgstr "**particle_trails**"
 
+msgid "Enables the trails when used on particle geometry."
+msgstr "Abilita le scie quando utilizzato sulla geometria di particelle."
+
 msgid "**alpha_to_coverage**"
 msgstr "**alpha_to_coverage**"
 
@@ -278,6 +298,88 @@ msgid ""
 msgstr ""
 "Disabilita la ricezione di nebbia volumetrica o basata sulla profondità. "
 "Utile per i materiali con ``blend_add`` come per le particelle."
+
+msgid "Stencil modes"
+msgstr "Modalità di stencil"
+
+msgid ""
+"Stencil support is experimental, use at your own risk. We will try to not "
+"break compatibility as much as possible, but if significant flaws are found "
+"in the API, it may change in the next minor version."
+msgstr ""
+"Il supporto per lo stencil è sperimentale, utilizzalo al tuo rischio. "
+"Cercheremo di non compromettere la compatibilità il più possibile, ma se "
+"dovessero emergere difetti significativi nell'API, potrebbero essere "
+"apportate modifiche nella prossima versione minore."
+
+msgid "Some of the most well-known uses are:"
+msgstr "Alcuni degli usi più noti sono:"
+
+msgid ""
+"Outlines: Mask out the inner mesh that is being outlined to avoid inner "
+"outlines."
+msgstr ""
+"Contorni: mascherare la mesh interna che viene contornata per evitare "
+"contorni interni."
+
+msgid "X-Ray: Display a mesh behind other objects."
+msgstr "Raggi X: visualizza una mesh dietro altri oggetti."
+
+msgid ""
+"Portals: Draw geometry that is normally \"impossible\" (non-Euclidian) by "
+"masking objects."
+msgstr ""
+"Portali: disegnare geometrie normalmente \"impossibili\" (non euclidee) "
+"mascherando gli oggetti."
+
+msgid ""
+"You can only read from the stencil buffer in the transparent pass. Any "
+"attempt to read in the opaque pass will fail, as it's currently not "
+"supported behavior."
+msgstr ""
+"È possibile leggere dal buffer stencil solo nel passaggio trasparente. "
+"Qualsiasi tentativo di lettura nel passaggio opaco fallirà, poiché al "
+"momento non è un comportamento supportato."
+
+msgid ""
+"Note that for compositor effects, the main renderer's stencil buffer can't "
+"be copied to a custom texture."
+msgstr ""
+"Si noti che, per gli effetti compositore, il buffer stencil del renderer "
+"principale non può essere copiato in una texture personalizzata."
+
+msgid "Stencil mode"
+msgstr "Modalità di stencil"
+
+msgid "**read**"
+msgstr "**read**"
+
+msgid "**write**"
+msgstr "**write**"
+
+msgid "**write_if_depth_fail**"
+msgstr "**write_if_depth_fail**"
+
+msgid "**compare_always**"
+msgstr "**compare_always**"
+
+msgid "**compare_equal**"
+msgstr "**compare_equal**"
+
+msgid "**compare_not_equal**"
+msgstr "**compare_not_equal**"
+
+msgid "**compare_less**"
+msgstr "**compare_less**"
+
+msgid "**compare_less_or_equal**"
+msgstr "**compare_less_or_equal**"
+
+msgid "**compare_greater**"
+msgstr "**compare_greater**"
+
+msgid "**compare_greater_or_equal**"
+msgstr "**compare_greater_or_equal**"
 
 msgid "Built-ins"
 msgstr "Variabili integrate"
@@ -324,11 +426,32 @@ msgstr "in float **TIME**"
 msgid "in float **PI**"
 msgstr "in float **PI**"
 
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"Una costante ``PI`` (``3.141592``). Il rapporto tra la circonferenza di un "
+"cerchio e il suo diametro, e il numero di radianti in mezzo giro."
+
 msgid "in float **TAU**"
 msgstr "in float **TAU**"
 
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"Una costante ``TAU`` (``6.283185``). Equivalente a ``PI * 2`` e al numero di "
+"radianti in un giro completo."
+
 msgid "in float **E**"
 msgstr "in float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr ""
+"Una costante ``E`` (``2.718281``). Numero di Eulero, la base del logaritmo "
+"naturale."
 
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in bool **OUTPUT_IS_SRGB**"
@@ -420,6 +543,15 @@ msgstr "**y**: Fase durante il ciclo di vita (da ``0.0`` a ``1.0``)."
 msgid "**z**: Animation frame."
 msgstr "**z**: Fotogramma di animazione."
 
+msgid ""
+"This allows you to easily adjust the shader to a particle system using "
+"default particle material. When writing a custom particle shader, this value "
+"can be used as desired."
+msgstr ""
+"Ciò permette di adattare facilmente lo shader a un sistema di particelle "
+"utilizzando il materiale di particelle predefinito. Quando si crea uno "
+"shader di particelle personalizzato, questo valore si può usare a piacere."
+
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
 
@@ -461,6 +593,13 @@ msgstr "Posizione del nodo, nello spazio visivo."
 
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
 msgstr "in vec3 **CAMERA_POSITION_WORLD**"
+
+msgid ""
+"Camera position, in world space. Represents the midpoint of the two eyes "
+"when in multiview/stereo rendering."
+msgstr ""
+"Posizione della telecamera, nello spazio mondiale. Rappresenta il punto "
+"medio tra i due occhi in modalità multivista/rendering stereoscopico."
 
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
 msgstr "in vec3 **CAMERA_DIRECTION_WORLD**"
@@ -511,6 +650,13 @@ msgstr "Costante l'occhio destro, sempre ``1``."
 
 msgid "in vec3 **EYE_OFFSET**"
 msgstr "in vec3 **EYE_OFFSET**"
+
+msgid ""
+"Position offset for the eye being rendered, in view space. Only applicable "
+"for multiview rendering."
+msgstr ""
+"Offset di posizione per l'occhio che si sta renderizzando. Applicabile solo "
+"per il rendering multivista."
 
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
@@ -839,11 +985,6 @@ msgstr ""
 
 msgid "out vec3 **NORMAL_MAP**"
 msgstr "out vec3 **NORMAL_MAP**"
-
-msgid "Set normal here if reading normal from a texture instead of ``NORMAL``."
-msgstr ""
-"Imposta qui la normale se legge la normale da una texture anziché da "
-"``NORMAL``."
 
 msgid "out float **NORMAL_MAP_DEPTH**"
 msgstr "out float **NORMAL_MAP_DEPTH**"

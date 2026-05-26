@@ -11,26 +11,672 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.1 to Godot 4.2"
+msgstr "Godot 4.1에서 Godot 4.2로 업그레이드"
+
+msgid ""
+"For most games and apps made with 4.1 it should be relatively safe to "
+"migrate to 4.2. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"4.1로 제작된 대부분의 게임과 앱의 경우 4.2로 마이그레이션하는 것이 상대적으"
+"로 안전합니다. 이 페이지에서는 프로젝트를 마이그레이션할 때 주의해야 할 모든 "
+"것을 다루려고 합니다."
+
 msgid "Breaking changes"
 msgstr "깨는 변경사항"
+
+msgid ""
+"If you are migrating from 4.1 to 4.2, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"4.1에서 4.2로 마이그레이션하는 경우 여기에 나열된 주요 변경 사항이 영향을 미"
+"칠 수 있습니다. 변경 사항은 영역/시스템별로 그룹화됩니다."
+
+msgid ""
+"The :ref:`class_Mesh` resource format has changed in 4.2 to allow for "
+"`vertex and attribute compression <https://github.com/godotengine/godot/pull/"
+"81138>`__. This allows for improved rendering performance, especially on "
+"platforms constrained by memory bandwidth such as mobile."
+msgstr ""
+":ref:`class_Mesh` 리소스 형식은 4.2에서 `정점 및 속성 압축 <https://"
+"github.com/godotengine/godot/pull/81138>`__을 허용하도록 변경되었습니다. 이"
+"를 통해 특히 모바일과 같이 메모리 대역폭이 제한된 플랫폼에서 렌더링 성능이 향"
+"상됩니다."
+
+msgid ""
+"It is still possible to load the Godot 4.0-4.1 Mesh formats, but it is "
+"**not** possible to load the Godot 4.2 Mesh format in prior Godot versions. "
+"When opening a Godot project made with a version prior to 4.2, you may be "
+"presented with an upgrade dialog that offers two options:"
+msgstr ""
+"Godot 4.0-4.1 메시 형식을 로드하는 것은 여전히 가능하지만, 이전 Godot 버전에"
+"서는 Godot 4.2 메시 형식을 로드하는 것이 **불가능**합니다. 4.2 이전 버전으로 "
+"만들어진 Godot 프로젝트를 열 때, 두 가지 옵션을 제공하는 업그레이드 대화 상자"
+"가 나타날 수 있습니다:"
+
+msgid ""
+"**Restart & Upgrade:** Upgrades the mesh format for all meshes in the "
+"project and saves the result to disk. Once chosen, this option prevents "
+"downgrading the project to a Godot version prior to 4.2. Set up a version "
+"control system and push your changes *before* choosing this option!"
+msgstr ""
+"**다시 시작 및 업그레이드:** 프로젝트의 모든 메시에 대한 메시 형식을 업그레이"
+"드하고 결과를 디스크에 저장합니다. 이 옵션을 선택하면 프로젝트가 4.2 이전의 "
+"Godot 버전으로 다운그레이드되는 것을 방지할 수 있습니다. 버전 관리 시스템을 "
+"설정하고 이 옵션을 선택하기 *전에* 변경 사항을 푸시하세요!"
+
+msgid ""
+"**Upgrade Only:** Upgrades the mesh format in-memory without writing it to "
+"disk. This allows downgrading the project to a Godot version older than 4.2 "
+"if you need to do so in the future. The downside is that loading the project "
+"will be slower every time as the mesh format needs to be upgraded every time "
+"the project is loaded. These increased loading times will also affect the "
+"exported project. The number and complexity of Mesh resources determines how "
+"much loading times are affected."
+msgstr ""
+"**업그레이드 전용:** 메시 형식을 디스크에 쓰지 않고 메모리 내에서 업그레이드"
+"합니다. 이를 통해 나중에 필요한 경우 프로젝트를 4.2 이전 Godot 버전으로 다운"
+"그레이드할 수 있습니다. 단점은 프로젝트가 로드될 때마다 메시 형식을 업그레이"
+"드해야 하기 때문에 프로젝트 로드가 매번 느려진다는 것입니다. 이렇게 늘어난 로"
+"딩 시간은 내보낸 프로젝트에도 영향을 미칩니다. 메시 리소스의 수와 복잡성에 따"
+"라 로딩 시간이 얼마나 영향을 받는지 결정됩니다."
+
+msgid ""
+"If this dialog doesn't appear, use **Project > Tools > Upgrade Mesh Surfaces…"
+"** at the top of the editor."
+msgstr ""
+"이 대화상자가 나타나지 않으면 편집기 상단에서 **프로젝트 > 도구 > 메쉬 표면 "
+"업그레이드…**를 사용하세요."
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"이 문서에서는 각 주요 변경 사항이 GDScript에 영향을 미치는지 여부와 C# 주요 "
+"변경 사항이 *바이너리 호환* 또는 *소스 호환*인지 여부를 나타냅니다."
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the runtime behavior won't change."
+msgstr ""
+"**바이너리 호환** - 기존 바이너리는 재컴파일 없이 성공적으로 로드 및 실행되"
+"며 런타임 동작은 변경되지 않습니다."
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"**소스 호환 가능** - 소스 코드는 Godot를 업그레이드할 때 변경 없이 성공적으"
+"로 컴파일됩니다."
+
+msgid "Core"
+msgstr "코어"
 
 msgid "Change"
 msgstr "변경"
 
+msgid "GDScript Compatible"
+msgstr "GDScript"
+
+msgid "C# Binary Compatible"
+msgstr "C# 바이너리 호환"
+
+msgid "C# Source Compatible"
+msgstr "C# 소스 호환"
+
+msgid "Introduced"
+msgstr "소개"
+
 msgid "**Node**"
 msgstr "**노드**"
+
+msgid "Constant ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removed"
+msgstr "상수 ``NOTIFICATION_NODE_RECACHE_REQUESTED``가 제거되었습니다."
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "`GH-84419`_"
+msgstr "`GH-84419`_"
 
 msgid "Animation"
 msgstr "애니메이션"
 
+msgid "**AnimationPlayer**"
+msgstr "AnimationPlayer"
+
+msgid ""
+"Method ``_post_process_key_value`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``_post_process_key_value``가 기본 클래스 ``AnimationMixer``로 이동되"
+"었습니다."
+
+msgid "`GH-80813`_"
+msgstr "`GH-80813`_"
+
+msgid "Method ``add_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``add_animation_library``가 기본 클래스 ``AnimationMixer``로 이동되었"
+"습니다."
+
+msgid "Method ``advance`` moved to base class ``AnimationMixer``"
+msgstr "메서드 ``advance``가 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Signal ``animation_finished`` moved to base class ``AnimationMixer``"
+msgstr ""
+"시그널 ``animation_finished``가 기본 클래스 ``AnimationMixer``로 이동되었습니"
+"다."
+
+msgid "Signal ``animation_started`` moved to base class ``AnimationMixer``"
+msgstr ""
+"시그널 ``animation_started``가 기본 클래스 ``AnimationMixer``로 이동되었습니"
+"다."
+
+msgid ""
+"Signal ``animation_libraries_updated`` moved to base class ``AnimationMixer``"
+msgstr ""
+"시그널 ``animation_libraries_updated``가 기본 클래스 ``AnimationMixer``로 이"
+"동되었습니다."
+
+msgid ""
+"Signal ``animation_list_changed`` moved to base class ``AnimationMixer``"
+msgstr ""
+"시그널 ``animation_list_changed``가 기본 클래스 ``AnimationMixer``로 이동되었"
+"습니다."
+
+msgid "Property ``audio_max_polyphony`` moved to base class ``AnimationMixer``"
+msgstr ""
+"``audio_max_polyphony`` 속성이 기본 클래스 ``AnimationMixer``로 이동되었습니"
+"다."
+
+msgid "Signal ``caches_cleared`` moved to base class ``AnimationMixer``"
+msgstr ""
+"시그널 ``caches_cleared``가 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Method ``clear_caches`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``clear_caches``가 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Method ``find_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``find_animation``가 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Method ``find_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``find_animation_library``가 기본 클래스 ``AnimationMixer``로 이동되었"
+"습니다."
+
+msgid "Method ``get_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_animation``가 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Method ``get_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_animation_library``가 기본 클래스 ``AnimationMixer``로 이동되었"
+"습니다."
+
+msgid ""
+"Method ``get_animation_library_list`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_animation_library_list``가 기본 클래스 ``AnimationMixer``로 이동"
+"되었습니다."
+
+msgid "Method ``get_animation_list`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_animation_list``가 기본 클래스 ``AnimationMixer``로 이동되었습니"
+"다."
+
+msgid "Method ``has_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``has_animation``가 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Method ``has_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``has_animation_library``가 기본 클래스 ``AnimationMixer``로 이동되었"
+"습니다."
+
+msgid ""
+"Property ``method_call_mode`` renamed to ``callback_mode_method`` and moved "
+"to base class ``AnimationMixer``"
+msgstr ""
+"속성 ``method_call_mode``가 ``callback_mode_method``로 이름이 바뀌고 기본 클"
+"래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ 호환 가능|"
+
+msgid ""
+"Property ``playback_active`` renamed to ``active`` and moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"속성 ``playback_active``가 ``active``로 이름이 바뀌고 기본 클래스 "
+"``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Property ``playback_process_mode`` renamed to ``callback_mode_process`` and "
+"moved to base class ``AnimationMixer``"
+msgstr ""
+"속성 ``playback_process_mode``가 ``callback_mode_process``로 이름이 바뀌고 기"
+"본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Method ``remove_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``remove_animation_library``가 기본 클래스 ``AnimationMixer``로 이동되"
+"었습니다."
+
+msgid ""
+"Method ``rename_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``rename_animation_library``가 기본 클래스 ``AnimationMixer``로 이동되"
+"었습니다."
+
+msgid "Property ``reset_on_save`` moved to base class ``AnimationMixer``"
+msgstr ""
+"``reset_on_save`` 속성이 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Property ``root_node`` moved to base class ``AnimationMixer``"
+msgstr "``root_node`` 속성이 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Method ``set_reset_on_save_enabled`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``set_reset_on_save_enabled``가 기본 클래스 ``AnimationMixer``로 이동"
+"되었습니다."
+
+msgid "Method ``seek`` adds a new ``update_only`` optional parameter"
+msgstr "``seek`` 메소드는 새로운 ``update_only`` 선택적 매개변수를 추가합니다."
+
+msgid "**AnimationTree**"
+msgstr "애니메이션"
+
+msgid "Property ``active`` moved to base class ``AnimationMixer``"
+msgstr "``active`` 속성이 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Method ``get_root_motion_position`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_root_motion_position``가 기본 클래스 ``AnimationMixer``로 이동되"
+"었습니다."
+
+msgid ""
+"Method ``get_root_motion_position_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"메서드 ``get_root_motion_position_accumulator``가 기본 클래스 "
+"``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Method ``get_root_motion_rotation`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_root_motion_rotation``가 기본 클래스 ``AnimationMixer``로 이동되"
+"었습니다."
+
+msgid ""
+"Method ``get_root_motion_rotation_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"메서드 ``get_root_motion_rotation_accumulator``가 기본 클래스 "
+"``AnimationMixer``로 이동되었습니다."
+
+msgid "Method ``get_root_motion_scale`` moved to base class ``AnimationMixer``"
+msgstr ""
+"메서드 ``get_root_motion_scale``가 기본 클래스 ``AnimationMixer``로 이동되었"
+"습니다."
+
+msgid ""
+"Method ``get_root_motion_scale_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"메서드 ``get_root_motion_scale_accumulator``가 기본 클래스 ``AnimationMixer``"
+"로 이동되었습니다."
+
+msgid ""
+"Property ``process_callback`` renamed to ``callback_mode_process`` and moved "
+"to base class ``AnimationMixer``"
+msgstr ""
+"속성 ``process_callback``가 ``callback_mode_process``로 이름이 바뀌고 기본 클"
+"래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid "Property ``root_motion_track``  moved to base class ``AnimationMixer``"
+msgstr ""
+"``root_motion_track`` 속성이 기본 클래스 ``AnimationMixer``로 이동되었습니다."
+
+msgid ""
+"Property ``tree_root`` changes type from ``AnimationNode`` to "
+"``AnimationRootNode``"
+msgstr ""
+"``tree_root`` 속성은 유형을 ``AnimationNode``에서 ``AnimationRootNode``로 변"
+"경합니다."
+
+msgid "GUI nodes"
+msgstr "노드 만들기"
+
+msgid "**PopupMenu**"
+msgstr "**팝업메뉴**"
+
+msgid ""
+"Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr ""
+"``add_icon_shortcut`` 메소드는 새로운 ``allow_echo`` 선택적 매개변수를 추가합"
+"니다."
+
+msgid "`GH-36493`_"
+msgstr "`GH-36493`_"
+
+msgid "Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr ""
+"``add_shortcut`` 메소드는 새로운 ``allow_echo`` 선택적 매개변수를 추가합니다."
+
+msgid "Method ``clear`` adds a new ``free_submenus`` optional parameter"
+msgstr ""
+"``clear`` 메소드는 새로운 ``free_submenus`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-79965`_"
+msgstr "`GH-79965`_"
+
+msgid "**RichTextLabel**"
+msgstr "ScoreLabel"
+
+msgid ""
+"Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and "
+"``size_in_percent`` optional parameters"
+msgstr ""
+"``add_image`` 메소드는 새로운 ``key``, ``pad``, ``tooltip`` 및 "
+"``size_in_percent`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-80410`_"
+msgstr "`GH-80410`_"
+
 msgid "Rendering"
 msgstr "렌더링"
+
+msgid "**ImporterMesh**"
+msgstr "**JavaScript**"
+
+msgid ""
+"Method ``add_surface`` changes ``flags`` parameter type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"메소드 ``add_surface``는 ``flags`` 매개변수 유형을 ``uint32``에서 ``uint64``"
+"로 변경합니다."
+
+msgid "`GH-81138`_"
+msgstr "`GH-81138`_"
+
+msgid ""
+"Method ``get_surface_format`` changes return type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"메서드 ``get_surface_format``는 반환 유형을 ``uint32``에서 ``uint64``로 변경"
+"합니다."
+
+msgid "**MeshDataTool**"
+msgstr "결과 시험하기"
+
+msgid ""
+"Method ``commit_to_surface`` adds a new ``compression_flags`` optional "
+"parameter"
+msgstr ""
+"``commit_to_surface`` 메소드는 새로운 ``compression_flags`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "Method ``get_format`` changes return type from ``uint32`` to ``uint64``"
+msgstr ""
+"메서드 ``get_format``는 반환 유형을 ``uint32``에서 ``uint64``로 변경합니다."
+
+msgid "**RenderingDevice**"
+msgstr "렌더링"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_RASTER`` changes value from ``1`` to "
+"``9``"
+msgstr ""
+"열거형 필드 ``BarrierMask.BARRIER_MASK_RASTER``는 값을 ``1``에서 ``9``로 변경"
+"합니다."
+
+msgid "`GH-79911`_"
+msgstr "`GH-79911`_"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_ALL_BARRIERS`` changes value from "
+"``7`` to ``32767``"
+msgstr ""
+"열거형 필드 ``BarrierMask.BARRIER_MASK_ALL_BARRIERS``는 값을 ``7``에서 "
+"``32767``로 변경합니다."
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_NO_BARRIER`` changes value from ``8`` "
+"to ``32768``"
+msgstr ""
+"열거형 필드 ``BarrierMask.BARRIER_MASK_NO_BARRIER``는 값을 ``8``에서 "
+"``32768``로 변경합니다."
+
+msgid ""
+"Method ``shader_create_from_bytecode`` adds a new ``placeholder_rid`` "
+"optional parameter"
+msgstr ""
+"``shader_create_from_bytecode`` 메소드는 새로운 ``placeholder_rid`` 선택적 매"
+"개변수를 추가합니다."
+
+msgid "`GH-79606`_"
+msgstr "`GH-79606`_"
+
+msgid ""
+"Method ``shader_get_vertex_input_attribute_ask`` changes return type from "
+"``uint32`` to ``uint64``"
+msgstr ""
+"메서드 ``shader_get_vertex_input_attribute_ask``는 반환 유형을 ``uint32``에"
+"서 ``uint64``로 변경합니다."
+
+msgid "**SurfaceTool**"
+msgstr "결과 시험하기"
+
+msgid ""
+"Method ``commit`` changes ``flags`` parameter type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"메소드 ``commit``는 ``flags`` 매개변수 유형을 ``uint32``에서 ``uint64``로 변"
+"경합니다."
+
+msgid "Text"
+msgstr "텍스처"
+
+msgid "**Font**"
+msgstr "**안개:**"
+
+msgid "Method ``set_fallbacks`` replaced with ``fallbacks`` property"
+msgstr "메소드 ``set_fallbacks``가 ``fallbacks`` 속성으로 대체되었습니다."
+
+msgid "`GH-78266`_"
+msgstr "`GH-78266`_"
+
+msgid "Method ``get_fallbacks`` replaced with ``fallbacks`` property"
+msgstr "메소드 ``get_fallbacks``가 ``fallbacks`` 속성으로 대체되었습니다."
+
+msgid ""
+"Method ``find_variation`` adds new ``spacing_top``, ``spacing_bottom``, "
+"``spacing_space``, and ``spacing_glyph`` optional parameters"
+msgstr ""
+"``find_variation`` 메소드는 새로운 ``spacing_top``, ``spacing_bottom``, "
+"``spacing_space`` 및 ``spacing_glyph`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-80954`_"
+msgstr "`GH-80954`_"
+
+msgid "GraphEdit"
+msgstr "그래프편집"
+
+msgid "**GraphEdit**"
+msgstr "**그래프편집**"
+
+msgid ""
+"Property ``arrange_nodes_button_hidden`` renamed to ``show_arrange_button``"
+msgstr ""
+"속성 ``arrange_nodes_button_hidden``가 ``show_arrange_button``로 이름이 변경"
+"되었습니다."
+
+msgid "`GH-81582`_"
+msgstr "`GH-81582`_"
+
+msgid "Method ``get_zoom_hbox`` renamed to ``get_menu_hbox``"
+msgstr "메소드 ``get_zoom_hbox``가 ``get_menu_hbox``로 이름이 변경되었습니다."
+
+msgid "`GH-79308`_"
+msgstr "`GH-79308`_"
+
+msgid "Property ``snap_distance`` renamed to ``snapping_distance``"
+msgstr ""
+"속성 ``snap_distance``가 ``snapping_distance``로 이름이 변경되었습니다."
+
+msgid "Property ``use_snap`` renamed to ``snapping_enabled``"
+msgstr "속성 ``use_snap``가 ``snapping_enabled``로 이름이 변경되었습니다."
 
 msgid "**GraphNode**"
 msgstr "**GraphNode**"
 
+msgid "Property ``comment`` removed"
+msgstr "``comment`` 속성이 제거되었습니다."
+
+msgid "`GH-79307`_"
+msgstr "`GH-79307`_"
+
+msgid ""
+"Signal ``close_request`` renamed to ``delete_request`` and moved to base "
+"class ``GraphElement``"
+msgstr ""
+"시그널 ``close_request``가 ``delete_request``로 이름이 바뀌고 기본 클래스 "
+"``GraphElement``로 이동되었습니다."
+
+msgid "`GH-79311`_"
+msgstr "`GH-79311`_"
+
+msgid "Property ``draggable`` moved to base class ``GraphElement``"
+msgstr "``draggable`` 속성이 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Signal ``dragged`` moved to base class ``GraphElement``"
+msgstr "시그널 ``dragged``가 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Method ``get_connection_input_color`` removed"
+msgstr "``get_connection_input_color`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_input_count`` removed"
+msgstr "``get_connection_input_count`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_input_height`` removed"
+msgstr "``get_connection_input_height`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_input_position`` removed"
+msgstr "``get_connection_input_position`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_input_slot`` removed"
+msgstr "``get_connection_input_slot`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_input_type`` removed"
+msgstr "``get_connection_input_type`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_output_color`` removed"
+msgstr "``get_connection_output_color`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_output_count`` removed"
+msgstr "``get_connection_output_count`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_output_height`` removed"
+msgstr "``get_connection_output_height`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_output_position`` removed"
+msgstr "``get_connection_output_position`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_output_slot`` removed"
+msgstr "``get_connection_output_slot`` 방법이 제거되었습니다."
+
+msgid "Method ``get_connection_output_type`` removed"
+msgstr "``get_connection_output_type`` 방법이 제거되었습니다."
+
+msgid "Property ``language`` removed"
+msgstr "``language`` 속성이 제거되었습니다."
+
+msgid "Signal ``node_deselected`` moved to base class ``GraphElement``"
+msgstr ""
+"시그널 ``node_deselected``가 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Signal ``node_selected`` moved to base class ``GraphElement``"
+msgstr ""
+"시그널 ``node_selected``가 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Property ``overlay`` removed"
+msgstr "``overlay`` 속성이 제거되었습니다."
+
+msgid "Property ``position_offset`` moved to base class ``GraphElement``"
+msgstr ""
+"``position_offset`` 속성이 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Signal ``position_offset_changed`` moved to base class ``GraphElement``"
+msgstr ""
+"시그널 ``position_offset_changed``가 기본 클래스 ``GraphElement``로 이동되었"
+"습니다."
+
+msgid "Signal ``raise_request`` moved to base class ``GraphElement``"
+msgstr ""
+"시그널 ``raise_request``가 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Property ``resizable`` moved to base class ``GraphElement``"
+msgstr "``resizable`` 속성이 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Signal ``resize_request`` moved to base class ``GraphElement``"
+msgstr ""
+"시그널 ``resize_request``가 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Property ``selectable`` moved to base class ``GraphElement``"
+msgstr "``selectable`` 속성이 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Property ``selected`` moved to base class ``GraphElement``"
+msgstr "``selected`` 속성이 기본 클래스 ``GraphElement``로 이동되었습니다."
+
+msgid "Property ``show_close`` removed"
+msgstr "``show_close`` 속성이 제거되었습니다."
+
+msgid "Property ``text_direction`` removed"
+msgstr "``text_direction`` 속성이 제거되었습니다."
+
 msgid "TileMap"
 msgstr "타일맵"
 
+msgid "**TileMap**"
+msgstr "**타일맵**"
+
+msgid "Property ``cell_quadrant_size`` renamed to ``rendering_quadrant_size``"
+msgstr ""
+"속성 ``cell_quadrant_size``가 ``rendering_quadrant_size``로 이름이 변경되었습"
+"니다."
+
+msgid "`GH-81070`_"
+msgstr "`GH-81070`_"
+
 msgid "XR"
 msgstr "XR"
+
+msgid "**XRInterface**"
+msgstr "Godot 인터페이스"
+
+msgid "Property ``environment_blend_mode`` added"
+msgstr "속성 ``environment_blend_mode``가 추가되었습니다."
+
+msgid "`GH-81561`_"
+msgstr "`GH-81561`_"
+
+msgid ""
+"This change breaks compatibility in C# because the new property conflicts "
+"with the name of an existing enum and the C# bindings generator gives "
+"priority to properties, so the enum type was renamed from "
+"``EnvironmentBlendMode`` to ``EnvironmentBlendModeEnum``."
+msgstr ""
+"이 변경으로 인해 새 속성이 기존 열거형의 이름과 충돌하고 C# 바인딩 생성기가 "
+"속성에 우선 순위를 부여하므로 C#의 호환성이 중단됩니다. 따라서 열거형 유형의 "
+"이름이 ``EnvironmentBlendMode``에서 ``EnvironmentBlendModeEnum``로 바뀌었습니"
+"다."

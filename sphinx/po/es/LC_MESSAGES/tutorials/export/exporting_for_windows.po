@@ -45,32 +45,29 @@ msgstr ""
 "archivo está empaquetado con un binario especialmente optimizado que es más "
 "pequeño, más rápido y carece de herramientas y depurador."
 
+msgid "Architecture"
+msgstr "Arquitectura"
+
 msgid "Code signing"
 msgstr "Firma de código"
-
-msgid ""
-"If you export for Windows with embedded PCK files, you will not be able to "
-"sign the program as it will break."
-msgstr ""
-"Si exporta para Windows con archivos PCK incrustados, no podrá firmar el "
-"programa, ya que se romperá."
-
-msgid ""
-"On Windows, PCK embedding is also known to cause false positives in "
-"antivirus programs. Therefore, it's recommended to avoid using it unless "
-"you're distributing your project via Steam as it bypasses code signing and "
-"antivirus checks."
-msgstr ""
-"En Windows, también se sabe que la incrustación de PCK provoca falsos "
-"positivos en los programas antivirus. Por lo tanto, se recomienda evitar su "
-"uso a menos que esté distribuyendo tu proyecto a través de Steam, ya que "
-"evita la firma de código y las comprobaciones de antivirus."
 
 msgid "Setup"
 msgstr "Organización"
 
 msgid "Environment variables"
 msgstr "Variables de entorno"
+
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+msgstr "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+msgstr "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+
+msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
+msgstr "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
 
 msgid "Export options"
 msgstr "Opciones de exportación"

@@ -11,23 +11,724 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "CanvasItem shaders"
+msgstr "캔버스아이템 셰이더"
+
+msgid ""
+"CanvasItem shaders are used to draw all 2D elements in Godot. These include "
+"all nodes that inherit from CanvasItems, and all GUI elements."
+msgstr ""
+"CanvasItem 셰이더는 Godot에서 모든 2D 요소를 그리는 데 사용됩니다. 여기에는 "
+"CanvasItems에서 상속되는 모든 노드 및 모든 GUI 요소가 포함됩니다."
+
+msgid ""
+"CanvasItem shaders contain fewer built-in variables and functionality "
+"than :ref:`Spatial shaders<doc_spatial_shader>`, but they maintain the same "
+"basic structure with vertex, fragment, and light processor functions."
+msgstr ""
+"CanvasItem 셰이더에는 :ref:`Spatial shaders<doc_spatial_shader>`보다 내장 변"
+"수와 기능이 적지만 정점, 조각, 라이트 프로세서 기능으로 동일한 기본 구조를 유"
+"지합니다."
+
 msgid "Render modes"
 msgstr "렌더러 모드"
+
+msgid "Render mode"
+msgstr "렌더링 모드"
 
 msgid "Description"
 msgstr "설명"
 
+msgid "**blend_mix**"
+msgstr "**블렌드_믹스**"
+
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr "혼합 혼합 모드(알파는 투명도), 기본값."
+
+msgid "**blend_add**"
+msgstr "**블렌드_추가**"
+
 msgid "Additive blend mode."
 msgstr "덧셈 블렌드 모드."
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "빼기 블렌드 모드."
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "곱셈 블렌드 모드."
+
+msgid "**blend_premul_alpha**"
+msgstr "**blend_premul_alpha**"
+
+msgid "Pre-multiplied alpha blend mode."
+msgstr "미리 곱해진 알파 블렌드 모드."
+
+msgid "**blend_disabled**"
+msgstr "**blend_disabled**"
+
+msgid "Disable blending, values (including alpha) are written as-is."
+msgstr "블렌딩을 비활성화하면 값(알파 포함)이 그대로 기록됩니다."
+
+msgid "**unshaded**"
+msgstr "**음영되지 않음**"
+
+msgid "Result is just albedo. No lighting/shading happens in material."
+msgstr "결과는 알베도입니다. 머티리얼에는 조명/음영이 발생하지 않습니다."
+
+msgid "**light_only**"
+msgstr "**가벼운 전용**"
+
+msgid "Only draw in the light pass."
+msgstr "라이트 패스만 그립니다."
+
+msgid "**skip_vertex_transform**"
+msgstr "**skip_vertex_transform**"
+
+msgid ""
+"``VERTEX`` needs to be transformed manually in the ``vertex()`` function."
+msgstr "``VERTEX``는 ``vertex()`` 함수에서 수동으로 변환해야 합니다."
+
+msgid "**world_vertex_coords**"
+msgstr "**world_vertex_coords**"
+
+msgid "``VERTEX`` is modified in world coordinates instead of local."
+msgstr "``VERTEX``는 로컬이 아닌 세계 좌표에서 수정됩니다."
+
+msgid "Built-ins"
+msgstr "Built-In(내장)"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"``in``로 표시된 값은 읽기 전용입니다. ``out``로 표시된 값은 선택적으로 쓸 수 "
+"있으며 반드시 합리적인 값을 포함하지는 않습니다. ``inout``로 표시된 값은 적절"
+"한 기본값을 제공하며 선택적으로 쓸 수 있습니다. 샘플러는 기록할 수 없으므로 "
+"표시되지 않습니다."
+
+msgid ""
+"Not all built-ins are available in all processing functions. To access a "
+"vertex built-in from the ``fragment()`` function, you can use "
+"a :ref:`varying <doc_shading_language_varyings>`. The same applies for "
+"accessing fragment built-ins from the ``light()`` function."
+msgstr ""
+"모든 내장 기능을 모든 처리 기능에서 사용할 수 있는 것은 아닙니다. "
+"``fragment()`` 함수에서 내장된 정점에 액세스하려면 :ref:`varying "
+"<doc_shading_언어_varyings>`을 사용할 수 있습니다. ``light()`` 함수에서 내장"
+"된 조각에 액세스하는 경우에도 동일하게 적용됩니다."
+
+msgid "Global built-ins"
+msgstr "벡터 내장 타입"
+
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+"사용자 정의 기능을 포함하여 전역 내장 기능을 어디에서나 사용할 수 있습니다."
 
 msgid "Built-in"
 msgstr "내장"
 
+msgid "in float **TIME**"
+msgstr "부동 소수점 **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"엔진이 시작된 이후의 전역 시간(초)입니다. ``3,600``초마다 반복됩니다"
+"(:ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` 설정으로 변경 가"
+"능). :ref:`time_scale<class_Engine_property_time_scale>`의 영향을 받지만 일"
+"시 중지의 영향을 받지는 않습니다. 시간 척도의 영향을 받지 않는 ``TIME`` 변수"
+"가 필요한 경우 고유한 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>`를 추가하고 각 프레임을 업데이"
+"트하세요."
+
+msgid "in float **PI**"
+msgstr "부동 소수점 **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"``PI`` 상수(``3.141592``). 원의 지름과 반 바퀴의 라디안 수에 대한 원주 비율입"
+"니다."
+
+msgid "in float **TAU**"
+msgstr "부동 **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"``TAU`` 상수(``6.283185``). ``PI * 2`` 및 1회전의 라디안 수와 동일합니다."
+
+msgid "in float **E**"
+msgstr "부동 **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr "``E`` 상수(``2.718281``). 자연로그의 밑이 되는 오일러 수."
+
+msgid "Vertex built-ins"
+msgstr "벡터 내장 타입"
+
+msgid ""
+"Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
+"relative to the Node2D's origin). If not written to, these values will not "
+"be modified and be passed through as they came."
+msgstr ""
+"정점 데이터(``VERTEX``)는 로컬 공간(Node2D의 원점을 기준으로 한 픽셀 좌표)에 "
+"표시됩니다. 기록되지 않으면 이러한 값은 수정되지 않고 그대로 전달됩니다."
+
+msgid ""
+"The user can disable the built-in model to world transform (world to screen "
+"and projection will still happen later) and do it manually with the "
+"following code:"
+msgstr ""
+"사용자는 내장 모델을 비활성화하고(세계를 화면으로 변환하고 투영은 나중에 발생"
+"함) 다음 코드를 사용하여 수동으로 수행할 수 있습니다."
+
+msgid ""
+"Other built-ins, such as ``UV`` and ``COLOR``, are also passed through to "
+"the ``fragment()`` function if not modified."
+msgstr ""
+"``UV`` 및 ``COLOR``와 같은 다른 내장 기능도 수정되지 않으면 ``fragment()`` 함"
+"수로 전달됩니다."
+
+msgid ""
+"For instancing, the ``INSTANCE_CUSTOM`` variable contains the instance "
+"custom data. When using particles, this information is usually:"
+msgstr ""
+"인스턴스화의 경우 ``INSTANCE_CUSTOM`` 변수에는 인스턴스 사용자 정의 데이터가 "
+"포함됩니다. 입자를 사용할 때 이 정보는 일반적으로 다음과 같습니다."
+
+msgid "**x**: Rotation angle in radians."
+msgstr "**x**: 라디안 단위의 회전 각도입니다."
+
+msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
+msgstr "**y**: 수명 동안의 단계(``0.0``~``1.0``)."
+
+msgid "**z**: Animation frame."
+msgstr "**z**: 애니메이션 프레임."
+
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "mat4 **MODEL_MATRIX**"
+
+msgid ""
+"Local space to world space transform. World space is the coordinates you "
+"normally use in the editor."
+msgstr ""
+"로컬 공간에서 월드 공간으로 변환됩니다. 월드 공간은 에디터에서 일반적으로 사"
+"용하는 좌표입니다."
+
+msgid "in mat4 **CANVAS_MATRIX**"
+msgstr "mat4 **CANVAS_MATRIX**"
+
+msgid ""
+"World space to canvas space transform. In canvas space the origin is the "
+"upper-left corner of the screen and coordinates range from ``(0.0, 0.0)`` to "
+"viewport size."
+msgstr ""
+"월드 공간을 캔버스 공간으로 변환합니다. 캔버스 공간에서 원점은 화면의 왼쪽 "
+"위 모서리이며 좌표 범위는 ``(0.0, 0.0)``에서 뷰포트 크기까지입니다."
+
+msgid "in mat4 **SCREEN_MATRIX**"
+msgstr "mat4 **SCREEN_MATRIX**"
+
+msgid ""
+"Canvas space to clip space transform. In clip space coordinates range from "
+"``(-1.0, -1.0)`` to ``(1.0, 1.0).``"
+msgstr ""
+"캔버스 공간을 클립 공간으로 변환합니다. 클립 공간 좌표 범위는 ``(-1.0, "
+"-1.0)``에서 ``(1.0, 1.0).``까지입니다."
+
+msgid "in int  **INSTANCE_ID**"
+msgstr "int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "인스턴스화를 위한 인스턴스 ID입니다."
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "vec4 **INSTANCE_CUSTOM**에서"
+
+msgid "Instance custom data."
+msgstr "인스턴스 사용자 정의 데이터."
+
+msgid "in bool **AT_LIGHT_PASS**"
+msgstr "bool **AT_LIGHT_PASS**에서"
+
+msgid "Always ``false``."
+msgstr "``if x else``"
+
+msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
+msgstr "vec2 **TEXTURE_PIXEL_SIZE**"
+
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, "
+"1.0/32.0)``"
+msgstr ""
+"기본 2D 텍스처의 정규화된 픽셀 크기입니다. 64x32px 크기의 텍스처가 있는 "
+"Sprite2D의 경우 **TEXTURE_PIXEL_SIZE** = ``vec2(1.0/64.0, 1.0/32.0)``"
+
+msgid "inout vec2 **VERTEX**"
+msgstr "inout vec2 **VERTEX**"
+
+msgid "Vertex position, in local space."
+msgstr "이 기능은 항상 전반적인 좌표에 적용됩니다."
+
+msgid "in int **VERTEX_ID**"
+msgstr "int **VERTEX_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr "정점 버퍼에 있는 현재 정점의 인덱스입니다."
+
+msgid "inout vec2 **UV**"
+msgstr "inout vec2 **UV**"
+
+msgid "Normalized texture coordinates. Range from ``0.0`` to ``1.0``."
+msgstr "정규화된 텍스처 좌표. 범위는 ``0.0``부터 ``1.0``까지입니다."
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **색상**"
+
+msgid ""
+"Color from vertex primitive multiplied by the "
+"CanvasItem's :ref:`modulate<class_CanvasItem_property_modulate>` multiplied "
+"by "
+"CanvasItem's :ref:`self_modulate<class_CanvasItem_property_self_modulate>`."
+msgstr ""
+"CanvasItem의 :ref:`modulate<class_CanvasItem_property_modulate>`를 CanvasItem"
+"의 :ref:`self_modulate<class_CanvasItem_property_self_modulate>`로 곱한 정점 "
+"프리미티브의 색상입니다."
+
+msgid "inout float **POINT_SIZE**"
+msgstr "부동 소수점 **POINT_SIZE**"
+
+msgid "Point size for point drawing."
+msgstr "포인트 그리기를 위한 포인트 크기입니다."
+
+msgid "in vec4 **CUSTOM0**"
+msgstr "vec4 **CUSTOM0**에서"
+
+msgid "Custom value from vertex primitive."
+msgstr "정점 기본 요소의 사용자 정의 값입니다."
+
+msgid "in vec4 **CUSTOM1**"
+msgstr "vec4에서 **커스텀1**"
+
 msgid "Fragment built-ins"
 msgstr "프래그먼트 내장"
+
+msgid "COLOR and TEXTURE"
+msgstr "색상과 질감"
+
+msgid "The built-in variable ``COLOR`` is used for a few things:"
+msgstr "내장 변수 ``COLOR``는 몇 가지 용도로 사용됩니다."
+
+msgid ""
+"In the ``vertex()`` function, ``COLOR`` contains the color from the vertex "
+"primitive multiplied by the "
+"CanvasItem's :ref:`modulate<class_CanvasItem_property_modulate>` multiplied "
+"by the "
+"CanvasItem's :ref:`self_modulate<class_CanvasItem_property_self_modulate>`."
+msgstr ""
+"``vertex()`` 함수에서 ``COLOR``에는 CanvasItem"
+"의 :ref:`modulate<class_CanvasItem_property_modulate>`와 CanvasItem"
+"의 :ref:`self_modulate<class_CanvasItem_property_self_modulate>`를 곱한 정점 "
+"기본 요소의 색상이 포함됩니다."
+
+msgid ""
+"In the ``fragment()`` function, the input value ``COLOR`` is that same value "
+"multiplied by the color from the default ``TEXTURE`` (if present)."
+msgstr ""
+"``fragment()`` 함수에서 입력 값 ``COLOR``는 동일한 값에 기본 ``TEXTURE``(있"
+"는 경우)의 색상을 곱한 값입니다."
+
+msgid "In the ``fragment()`` function, ``COLOR`` is also the final output."
+msgstr "``fragment()`` 함수에서는 ``COLOR``도 최종 출력입니다."
+
+msgid ""
+"Certain nodes (for example, :ref:`Sprite2D <class_Sprite2D>`) display a "
+"texture by default, for example :ref:`texture "
+"<class_Sprite2D_property_texture>`. When using a custom ``fragment()`` "
+"function, you have a few options on how to sample this texture."
+msgstr ""
+"특정 노드(예: :ref:`Sprite2D <class_Sprite2D>`)는 기본적으로 텍스처를 표시합"
+"니다(예: :ref:`texture <class_Sprite2D_property_texture>`). 사용자 정의 "
+"``fragment()`` 함수를 사용할 때 이 텍스처를 샘플링하는 방법에 대한 몇 가지 옵"
+"션이 있습니다."
+
+msgid ""
+"To read only the contents of the default texture, ignoring the vertex "
+"``COLOR``:"
+msgstr "정점 ``COLOR``를 무시하고 기본 텍스처의 내용만 읽으려면:"
+
+msgid ""
+"To read the contents of the default texture multiplied by vertex ``COLOR``:"
+msgstr "정점 ``COLOR``를 곱한 기본 텍스처의 내용을 읽으려면:"
+
+msgid ""
+"To read only the vertex ``COLOR`` in ``fragment()``, ignoring the main "
+"texture, you must pass ``COLOR`` as a varying, then read it in "
+"``fragment()``:"
+msgstr ""
+"``fragment()``에서 정점 ``COLOR``만 읽으려면 기본 텍스처를 무시하고 ``COLOR``"
+"를 가변으로 전달한 다음 ``fragment()``에서 읽어야 합니다."
+
+msgid "NORMAL"
+msgstr "일반"
+
+msgid ""
+"Similarly, if a normal map is used in the :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot uses it by default and assigns its value to "
+"the built-in ``NORMAL`` variable. If you are using a normal map meant for "
+"use in 3D, it will appear inverted. In order to use it in your shader, you "
+"must assign it to the ``NORMAL_MAP`` property. Godot will handle converting "
+"it for use in 2D and overwriting ``NORMAL``."
+msgstr ""
+"마찬가지로, 노멀 맵이 :ref:`CanvasTexture <class_CanvasTexture>`에서 사용된다"
+"면 Godot는 기본적으로 이를 사용하고 내장된 ``NORMAL`` 변수에 그 값을 할당합니"
+"다. 3D용 노멀 맵을 사용하는 경우, 노멀 맵이 반전되어 나타납니다. 셰이더에서 "
+"사용하려면 ``NORMAL_MAP`` 속성에 할당해야 합니다. Godot는 2D에서 사용하기 위"
+"해 변환하고 ``NORMAL``를 덮어쓰는 작업을 처리할 것입니다."
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "vec4에서 **FRAGCOORD**"
+
+msgid ""
+"Coordinate of pixel center. In screen space. ``xy`` specifies position in "
+"viewport. Upper-left of the viewport is the origin, ``(0.0, 0.0)``."
+msgstr ""
+"픽셀 중심의 좌표입니다. 화면 공간에서. ``xy``는 뷰포트의 위치를 지정합니다. "
+"뷰포트의 왼쪽 상단이 원점 ``(0.0, 0.0)``입니다."
+
+msgid "in vec2 **SCREEN_PIXEL_SIZE**"
+msgstr "vec2에서 **SCREEN_PIXEL_SIZE**"
+
+msgid "Size of individual pixels. Equal to the inverse of resolution."
+msgstr "개별 픽셀의 크기. 해상도의 역수와 같습니다."
+
+msgid "in vec4 **REGION_RECT**"
+msgstr "vec4 **REGION_RECT**에서"
+
+msgid ""
+"Visible area of the sprite region in format ``(x, y, width, height)``. "
+"Varies according to Sprite2D's ``region_enabled`` property."
+msgstr ""
+"``(x, y, width, height)`` 형식의 스프라이트 영역의 표시 영역입니다. Sprite2D"
+"의 ``region_enabled`` 속성에 따라 다릅니다."
+
+msgid "in vec2 **POINT_COORD**"
+msgstr "vec2 **POINT_COORD**에서"
+
+msgid "Coordinate for drawing points."
+msgstr "점을 그리는 좌표입니다."
+
+msgid "sampler2D **TEXTURE**"
+msgstr "Sampler2D **텍스처**"
+
+msgid "Default 2D texture."
+msgstr "기본 2D 텍스처."
+
+msgid ""
+"Normalized pixel size of the default 2D texture. For a Sprite2D with a "
+"texture of size 64x32px, ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
+msgstr ""
+"기본 2D 텍스처의 정규화된 픽셀 크기입니다. 64x32px 크기의 텍스처를 가진 "
+"Sprite2D의 경우 ``TEXTURE_PIXEL_SIZE`` = ``vec2(1/64, 1/32)``"
+
+msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
+msgstr "Sampler2D **SPECULAR_SHININESS_TEXTURE**"
+
+msgid "Specular shininess texture of this object."
+msgstr "이 개체의 반사광 광택 텍스처입니다."
+
+msgid "in vec4 **SPECULAR_SHININESS**"
+msgstr "vec4에서 **SPECULAR_SHININESS**"
+
+msgid "Specular shininess color, as sampled from the texture."
+msgstr "텍스처에서 샘플링된 반사광 광택 색상입니다."
+
+msgid "in vec2 **UV**"
+msgstr "vec2 **UV**에서"
+
+msgid ""
+"UV from the ``vertex()`` function. For a Sprite2D with region enabled, this "
+"will sample the entire texture. Use ``REGION_RECT`` instead to sample only "
+"the region defined in the Sprite2D's properties."
+msgstr ""
+"``vertex()`` 함수의 UV. 영역이 활성화된 Sprite2D의 경우 전체 텍스처가 샘플링"
+"됩니다. Sprite2D의 속성에 정의된 영역만 샘플링하려면 대신 ``REGION_RECT``를 "
+"사용하세요."
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "vec2에서 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for the current pixel."
+msgstr "현재 픽셀의 스크린 UV 좌표입니다."
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "샘플러2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+"Godot 4에서는 제거되었습니다. 대신 ``sampler2D``와 ``hint_screen_texture``를 "
+"사용하세요."
+
+msgid "inout vec3 **NORMAL**"
+msgstr "inout vec3 **정상**"
+
+msgid "Normal read from ``NORMAL_TEXTURE``. Writable."
+msgstr "``NORMAL_TEXTURE``에서 일반 읽기입니다. 쓰기 가능."
+
+msgid "sampler2D **NORMAL_TEXTURE**"
+msgstr "샘플러2D **NORMAL_TEXTURE**"
+
+msgid "Default 2D normal texture."
+msgstr "기본 2D 일반 텍스처."
+
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMAL_MAP**"
+
+msgid ""
+"Configures normal maps meant for 3D for use in 2D. If used, overrides "
+"``NORMAL``."
+msgstr ""
+"2D에서 사용하기 위해 3D용 노멀 맵을 구성합니다. 사용하는 경우 ``NORMAL``를 재"
+"정의합니다."
+
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "부동 소수점 **NORMAL_MAP_DEPTH**"
+
+msgid "Normal map depth for scaling."
+msgstr "노멀 매핑."
+
+msgid "Pixel position in screen space."
+msgstr "화면 공간의 픽셀 위치입니다."
+
+msgid "inout vec2 **SHADOW_VERTEX**"
+msgstr "inout vec2 **SHADOW_VERTEX**"
+
+msgid "Same as ``VERTEX`` but can be written to alter shadows."
+msgstr "``VERTEX``와 동일하지만 그림자를 변경하도록 작성할 수 있습니다."
+
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
+
+msgid ""
+"Same as ``VERTEX`` but can be written to alter lighting. Z component "
+"represents height."
+msgstr ""
+"``VERTEX``와 동일하지만 조명을 변경하도록 작성할 수 있습니다. Z 구성요소는 높"
+"이를 나타냅니다."
+
+msgid ""
+"``COLOR`` from the ``vertex()`` function multiplied by the ``TEXTURE`` "
+"color. Also output color value."
+msgstr ""
+"``vertex()`` 함수의 ``COLOR``에 ``TEXTURE`` 색상을 곱합니다. 색상 값도 출력합"
+"니다."
+
+msgid "Light built-ins"
+msgstr "기본 내장 타입"
+
+msgid ""
+"Light processor functions work differently in Godot 4.x than they did in "
+"Godot 3.x. In Godot 4.x all lighting is done during the regular draw pass. "
+"In other words, Godot no longer draws the object again for each light."
+msgstr ""
+"라이트 프로세서 기능은 Godot 3.x와 Godot 4.x에서 다르게 작동합니다. Godot 4.x"
+"에서 모든 라이팅은 정규 드로우 패스 중에 이루어집니다. 즉, Godot는 더 이상 "
+"각 조명에 대해 개체를 다시 그리지 않습니다."
+
+msgid ""
+"Use the ``unshaded`` render mode if you do not want the ``light()`` function "
+"to run. Use the ``light_only`` render mode if you only want to see the "
+"impact of lighting on an object; this can be useful when you only want the "
+"object visible where it is covered by light."
+msgstr ""
+"``light()`` 기능을 실행하지 않으려면 ``unshaded`` 렌더링 모드를 사용하십시"
+"오. 객체에 대한 조명의 영향만 보려면 ``light_only`` 렌더링 모드를 사용하십시"
+"오. 이는 물체가 빛으로 덮인 곳에서만 보이도록 하려는 경우에 유용할 수 있습니"
+"다."
+
+msgid ""
+"If you define a ``light()`` function it will replace the built-in light "
+"function, even if your light function is empty."
+msgstr ""
+"``light()`` 함수를 정의하면 조명 기능이 비어 있어도 내장 조명 기능이 대체됩니"
+"다."
+
+msgid ""
+"Below is an example of a light shader that takes a CanvasItem's normal map "
+"into account:"
+msgstr "다음은 CanvasItem의 노멀 맵을 고려하는 조명 셰이더의 예입니다."
+
+msgid "in vec3 **NORMAL**"
+msgstr "vec3에서 **정상**"
+
+msgid "Input normal."
+msgstr "입력"
+
+msgid "in vec4 **COLOR**"
+msgstr "vec4에서 **컬러**"
+
+msgid "Input color. This is the output of the ``fragment()`` function."
+msgstr "색상을 입력합니다. 이는 ``fragment()`` 함수의 출력입니다."
+
+msgid ""
+"UV from the ``vertex()`` function, equivalent to the UV in the "
+"``fragment()`` function."
+msgstr "``vertex()`` 함수의 UV는 ``fragment()`` 함수의 UV와 동일합니다."
+
+msgid "Current texture in use for the CanvasItem."
+msgstr "CanvasItem에 사용 중인 현재 텍스처입니다."
+
+msgid ""
+"Normalized pixel size of ``TEXTURE``. For a Sprite2D with a ``TEXTURE`` of "
+"size ``64x32`` pixels, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+msgstr ""
+"``TEXTURE``의 정규화된 픽셀 크기입니다. 크기 ``64x32`` 픽셀의 ``TEXTURE``를 "
+"갖는 Sprite2D의 경우 **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+
+msgid "UV for Point Sprite."
+msgstr "포인트 스프라이트의 UV."
+
+msgid "in vec4 **LIGHT_COLOR**"
+msgstr "vec4에서 **LIGHT_COLOR**"
+
+msgid ""
+":ref:`Color<class_Light2D_property_color>` of the :ref:`class_Light2D`. If "
+"the light is a :ref:`class_PointLight2D`, multiplied by the "
+"light's :ref:`texture<class_PointLight2D_property_texture>`."
+msgstr ""
+":ref:`class_Light2D`의 :ref:`Color<class_Light2D_property_color>`. 조명"
+"이 :ref:`class_PointLight2D`인 경우 조명"
+"의 :ref:`texture<class_PointLight2D_property_texture>`를 곱합니다."
+
+msgid "in float **LIGHT_ENERGY**"
+msgstr "부동 **LIGHT_ENERGY**"
+
+msgid ""
+":ref:`Energy multiplier<class_Light2D_property_energy>` of "
+"the :ref:`class_Light2D`."
+msgstr ""
+":ref:`class_Light2D`의 :ref:`Energy "
+"multiplier<class_Light2D_property_energy>`."
+
+msgid "in vec3 **LIGHT_POSITION**"
+msgstr "vec3 **LIGHT_POSITION**"
+
+msgid ""
+"Position of the :ref:`class_Light2D` in screen space. If using "
+"a :ref:`class_DirectionalLight2D` this is always ``(0.0, 0.0, 0.0)``."
+msgstr ""
+"화면 공간에서 :ref:`class_Light2D`의 위치입니"
+"다. :ref:`class_DirectionalLight2D`를 사용하는 경우 이는 항상 ``(0.0, 0.0, "
+"0.0)``입니다."
+
+msgid "in vec3 **LIGHT_DIRECTION**"
+msgstr "vec3 **LIGHT_DIRECTION**"
+
+msgid "Direction of the :ref:`class_Light2D` in screen space."
+msgstr "화면 공간에서 :ref:`class_Light2D`의 방향입니다."
+
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "부울 **LIGHT_IS_DIRECTIONAL**"
+
+msgid "``true`` if this pass is a :ref:`class_DirectionalLight2D`."
+msgstr "이 패스가 :ref:`class_DirectionalLight2D`인 경우 ``true``입니다."
+
+msgid "in vec3 **LIGHT_VERTEX**"
+msgstr "vec3 **LIGHT_VERTEX**에서"
+
+msgid ""
+"Pixel position, in screen space as modified in the ``fragment()`` function."
+msgstr "``fragment()`` 함수에서 수정된 화면 공간의 픽셀 위치입니다."
+
+msgid "inout vec4 **LIGHT**"
+msgstr "inout vec4 **빛**"
+
+msgid "Output color for this :ref:`class_Light2D`."
+msgstr "출력 로그"
+
+msgid "Specular shininess, as set in the object's texture."
+msgstr "물체의 질감에 설정된 반사광 광택입니다."
+
+msgid "out vec4 **SHADOW_MODULATE**"
+msgstr "out vec4 **SHADOW_MODULATE**"
+
+msgid "Multiply shadows cast at this point by this color."
+msgstr "이 지점에 드리워진 그림자에 이 색상을 곱합니다."
 
 msgid "SDF functions"
 msgstr "SDF 함수"
 
+msgid ""
+"There are a few additional functions implemented to sample an automatically "
+"generated Signed Distance Field texture. These functions are available in "
+"the ``fragment()`` and ``light()`` functions of CanvasItem shaders. Custom "
+"functions may also use them as long as they are called from supported "
+"functions."
+msgstr ""
+"자동으로 생성된 Signed Distance Field 텍스처를 샘플링하기 위해 구현된 몇 가"
+"지 추가 기능이 있습니다. 이러한 기능은 CanvasItem 셰이더의 ``fragment()`` 및 "
+"``light()`` 기능에서 사용할 수 있습니다. 사용자 정의 함수는 지원되는 함수에"
+"서 호출되는 한 이를 사용할 수도 있습니다."
+
+msgid ""
+"The signed distance field is generated from :ref:`class_LightOccluder2D` "
+"nodes present in the scene with the **SDF Collision** property enabled "
+"(which is the default). See the :ref:`2D lights and shadows "
+"<doc_2d_lights_and_shadows_setting_up_shadows>` documentation for more "
+"information."
+msgstr ""
+"부호 있는 거리 필드는 **SDF 충돌** 속성이 활성화된(기본값) 씬에 있"
+"는 :ref:`class_LightOccluder2D` 노드에서 생성됩니다. 자세한 내용은 :ref:`2D "
+"조명 및 그림자 <doc_2d_lights_and_shadows_setting_up_shadows>` 문서를 참조하"
+"세요."
+
 msgid "Function"
 msgstr "함수"
+
+msgid "float **texture_sdf** (vec2 sdf_pos)"
+msgstr "float **texture_sdf** (vec2 sdf_pos)"
+
+msgid "Performs an SDF texture lookup."
+msgstr "SDF 텍스처 조회를 수행합니다."
+
+msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
+msgstr "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
+
+msgid "Calculates a normal from the SDF texture."
+msgstr "SDF 텍스처에서 법선을 계산합니다."
+
+msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
+msgstr "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
+
+msgid "Converts an SDF to screen UV."
+msgstr "탭으로 들여쓰도록 변환"
+
+msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"
+
+msgid "Converts screen UV to an SDF."
+msgstr "탭으로 들여쓰도록 변환"

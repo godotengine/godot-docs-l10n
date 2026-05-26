@@ -11,32 +11,573 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Class reference primer"
+msgstr "클래스 참조 입문"
+
+msgid ""
+"This page explains how to write the class reference. You will learn where to "
+"write new descriptions for the classes, methods, and properties for Godot's "
+"built-in node types."
+msgstr ""
+"이 페이지에서는 클래스 참조를 작성하는 방법을 설명합니다. Godot의 내장 노드 "
+"유형에 대한 클래스, 메소드, 속성에 대한 새로운 설명을 어디에 작성하는지 배우"
+"게 됩니다."
+
+msgid ""
+"To learn to submit your changes to the Godot project using the Git version "
+"control system, see `Class reference contribution documentation <https://"
+"contributing.godotengine.org/en/latest/documentation/"
+"class_reference.html>`__."
+msgstr ""
+"Git 버전 제어 시스템을 사용하여 Godot 프로젝트에 변경 사항을 제출하는 방법을 "
+"배우려면 `클래스 참조 기여 문서 <https://contributing.godotengine.org/en/"
+"latest/documentation/class_reference.html>`__를 참조하세요."
+
+msgid ""
+"The reference for each class is contained in an XML file like the one below:"
+msgstr "각 클래스에 대한 참조는 아래와 같은 XML 파일에 포함되어 있습니다."
+
+msgid ""
+"It starts with brief and long descriptions. In the generated docs, the brief "
+"description is always at the top of the page, while the long description "
+"lies below the list of methods, variables, and constants. You can find "
+"methods, member variables, constants, and signals in separate XML nodes."
+msgstr ""
+"간단하고 긴 설명으로 시작됩니다. 생성된 문서에서 간략한 설명은 항상 페이지 상"
+"단에 표시되고 긴 설명은 메소드, 변수 및 상수 목록 아래에 표시됩니다. 별도의 "
+"XML 노드에서 메소드, 멤버 변수, 상수 및 시그널를 찾을 수 있습니다."
+
+msgid ""
+"For each, you want to learn how they work in Godot's source code. Then, fill "
+"their documentation by completing or improving the text in these tags:"
+msgstr ""
+"각각에 대해 Godot의 소스 코드에서 어떻게 작동하는지 배우고 싶습니다. 그런 다"
+"음 다음 태그의 텍스트를 완성하거나 개선하여 문서를 작성하세요."
+
+msgid "`<brief_description>`"
+msgstr "설명"
+
+msgid "`<description>`"
+msgstr "설명"
+
+msgid "`<constant>`"
+msgstr "PI 상수."
+
+msgid ""
+"`<method>` (in its `<description>` tag; return types and arguments don't "
+"take separate documentation strings)"
+msgstr ""
+"`<method>`(`<description>` 태그에 있음, 반환 유형 및 인수는 별도의 문서 문자"
+"열을 사용하지 않음)"
+
+msgid "`<member>`"
+msgstr "`<member>`"
+
+msgid ""
+"`<signal>` (in its `<description>` tag; arguments don't take separate "
+"documentation strings)"
+msgstr ""
+"`<signal>`(`<description>` 태그에 있음, 인수는 별도의 문서 문자열을 사용하지 "
+"않음)"
+
+msgid ""
+"Write in a clear and simple language. Always follow the `writing guidelines "
+"<https://contributing.godotengine.org/en/latest/documentation/guidelines/"
+"docs_writing_guidelines.html>`__ to keep your descriptions short and easy to "
+"read. **Do not leave empty lines** in the descriptions: each line in the XML "
+"file will result in a new paragraph, even if it is empty."
+msgstr ""
+"명확하고 간단한 언어로 작성하십시오. 설명을 짧고 읽기 쉽게 유지하려면 항상 `"
+"작성 지침 <https://contributing.godotengine.org/en/latest/documentation/"
+"guidelines/docs_writing_guidelines.html>`__을 따르십시오. 설명에 **빈 줄을 두"
+"지 마십시오**: XML 파일의 각 줄은 비어 있더라도 새 단락이 됩니다."
+
+msgid "How to edit class XML"
+msgstr "클래스 XML을 편집하는 방법"
+
+msgid ""
+"Edit the file for your chosen class in ``doc/classes/`` to update the class "
+"reference. The folder contains an XML file for each class. The XML lists the "
+"constants and methods you will find in the class reference. Godot generates "
+"and updates the XML automatically."
+msgstr ""
+"클래스 참조를 업데이트하려면 ``doc/classes/``에서 선택한 클래스에 대한 파일"
+"을 편집하세요. 폴더에는 각 클래스에 대한 XML 파일이 포함되어 있습니다. XML에"
+"는 클래스 참조에서 찾을 수 있는 상수와 메서드가 나열되어 있습니다. Godot는 자"
+"동으로 XML을 생성하고 업데이트합니다."
+
+msgid ""
+"For some modules in the engine's source code, you'll find the XML files in "
+"the ``modules/<module_name>/doc_classes/`` directory instead."
+msgstr ""
+"엔진 소스 코드의 일부 모듈의 경우 대신 ``modules/<module_name>/doc_classes/"
+"`` 디렉터리에서 XML 파일을 찾을 수 있습니다."
+
+msgid ""
+"Edit it using your favorite text editor. If you use a code editor, make sure "
+"that it doesn't change the indent style: you should use tabs for the XML and "
+"four spaces inside BBCode-style blocks. More on that below."
+msgstr ""
+"즐겨 사용하는 텍스트 편집기를 사용하여 편집하세요. 코드 편집기를 사용하는 경"
+"우 들여쓰기 스타일이 변경되지 않는지 확인하세요. XML에는 탭을 사용해야 하고 "
+"BBCode 스타일 블록 안에는 4개의 공백을 사용해야 합니다. 자세한 내용은 아래를 "
+"참조하세요."
+
+msgid ""
+"To check that the modifications you've made are correct in the generated "
+"documentation, navigate to the ``doc/`` folder and run the command ``make "
+"rst``. This will convert the XML files to the online documentation's format "
+"and output errors if anything's wrong."
+msgstr ""
+"생성된 문서에서 수정 사항이 올바른지 확인하려면 ``doc/`` 폴더로 이동하여 "
+"``make rst`` 명령을 실행하세요. 그러면 XML 파일이 온라인 문서의 형식으로 변환"
+"되고 문제가 있는 경우 오류가 출력됩니다."
+
+msgid ""
+"Alternatively, you can build Godot and open the modified page in the built-"
+"in code reference. To learn how to compile the engine, read "
+"the :ref:`compilation guide <toc-devel-compiling>`."
+msgstr ""
+"또는 Godot를 빌드하고 내장 코드 참조에서 수정된 페이지를 열 수 있습니다. 엔"
+"진 컴파일 방법을 알아보려면 :ref:`컴파일 가이드 <toc-devel-compiling>`을 읽어"
+"보세요."
+
+msgid ""
+"We recommend using a code editor that supports XML files like Vim, Atom, "
+"Visual Studio Code, Notepad++, or another to comfortably edit the file. You "
+"can also use their search feature to find classes and properties quickly."
+msgstr ""
+"파일을 편안하게 편집하려면 Vim, Atom, Visual Studio Code, Notepad++ 등과 같"
+"은 XML 파일을 지원하는 코드 편집기를 사용하는 것이 좋습니다. 검색 기능을 사용"
+"하여 클래스와 속성을 빠르게 찾을 수도 있습니다."
+
+msgid ""
+"If you use Visual Studio Code, you can install the `vscode-xml extension "
+"<https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__ "
+"to get linting for class reference XML files."
+msgstr ""
+"Visual Studio Code를 사용하는 경우 `vscode-xml 확장 <https://"
+"marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__을 설치하여 "
+"클래스 참조 XML 파일에 대한 Linting을 얻을 수 있습니다."
+
+msgid "Improve formatting with BBCode style tags"
+msgstr "BBCode 스타일 태그로 서식 개선"
+
+msgid ""
+"Godot's XML class reference supports BBCode-like tags for linking as well as "
+"formatting text and code. In the tables below you can find the available "
+"tags, usage examples and the results after conversion to reStructuredText."
+msgstr ""
+"Godot의 XML 클래스 참조는 텍스트와 코드의 서식 지정은 물론 연결을 위해 BBCode"
+"와 같은 태그를 지원합니다. 아래 표에서는 사용 가능한 태그, 사용 예 및 "
+"reStructuredText로 변환한 후의 결과를 확인할 수 있습니다."
+
+msgid "Linking"
+msgstr "라이트 베이킹"
+
+msgid ""
+"Whenever you link to a member of another class, you need to specify the "
+"class name. For links to the same class, the class name is optional and can "
+"be omitted."
+msgstr ""
+"다른 클래스의 멤버에 연결할 때마다 클래스 이름을 지정해야 합니다. 동일한 클래"
+"스에 대한 링크의 경우 클래스 이름은 선택 사항이며 생략할 수 있습니다."
+
+msgid "Tag and Description"
+msgstr "설명"
+
 msgid "Example"
 msgstr "예제"
 
 msgid "Result"
 msgstr "결과"
 
+msgid "``[Class]``"
+msgstr "클래스"
+
+msgid "Link to class"
+msgstr "라이선스에 대한 링크"
+
+msgid "``Move the [Sprite2D].``"
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "``[annotation Class.name]``"
+msgstr "``[annotation Class.name]``"
+
+msgid "Link to annotation"
+msgstr "벡터 연산"
+
+msgid "``See [annotation @GDScript.@rpc].``"
+msgstr "``See [annotation @GDScript.@rpc].``"
+
+msgid "See :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "``[constant Class.name]``"
+msgstr "``[constant Class.name]``"
+
+msgid "Link to constant"
+msgstr "상수를 정의합니다."
+
+msgid "``See [constant Color.RED].``"
+msgstr "``See [constant Color.RED].``"
+
+msgid "See :ref:`Color.RED <class_Color_constant_RED>`."
+msgstr ":ref:`Color <class_Color>`"
+
+msgid "``[enum Class.name]``"
+msgstr "``[enum Class.name]``"
+
+msgid "Link to enum"
+msgstr "라이선스에 대한 링크"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr "``See [enum Mesh.ArrayType].``"
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr ":ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`을 참조하세요."
+
+msgid "``[member Class.name]``"
+msgstr "``[member Class.name]``"
+
+msgid "Link to member"
+msgstr "멤버 편집"
+
+msgid "``Get [member Node2D.scale].``"
+msgstr "``Get [member Node2D.scale].``"
+
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid "``[method Class.name]``"
+msgstr "메서드"
+
+msgid "Link to method"
+msgstr "메서드 호출하기"
+
+msgid "``Call [method Node3D.hide].``"
+msgstr "``Call [method Node3D.hide].``"
+
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "``[constructor Class.name]``"
+msgstr "메서드"
+
+msgid "Link to built-in constructor"
+msgstr "내장 생성자로 연결"
+
+msgid "``Use [constructor Color.Color].``"
+msgstr "``Use [constructor Color.Color].``"
+
+msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
+msgstr ":ref:`Color <class_Color>`"
+
+msgid "``[operator Class.name]``"
+msgstr "메서드"
+
+msgid "Link to built-in operator"
+msgstr "벡터 내장 타입"
+
+msgid "``Use [operator Color.operator *].``"
+msgstr "``Use [operator Color.operator *].``"
+
+msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
+msgstr ":ref:`Color <class_Color>`"
+
+msgid "``[signal Class.name]``"
+msgstr "``[signal Class.name]``"
+
+msgid "Link to signal"
+msgstr "바인딩 시그널"
+
+msgid "``Emit [signal Node.renamed].``"
+msgstr "``Emit [signal Node.renamed].``"
+
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid "``[theme_item Class.name]``"
+msgstr "``[theme_item Class.name]``"
+
+msgid "Link to theme item"
+msgstr "라이선스에 대한 링크"
+
+msgid "``See [theme_item Label.font].``"
+msgstr "``See [theme_item Label.font].``"
+
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr ":ref:`Label.font <class_Label_theme_font_font>`을 참조하세요."
+
+msgid "``[param name]``"
+msgstr "``[param name]``"
+
+msgid "Parameter name (as code)"
+msgstr "매개변수 이름(코드로)"
+
+msgid "``Takes [param size] for the size.``"
+msgstr "``Takes [param size] for the size.``"
+
+msgid "Takes ``size`` for the size."
+msgstr "크기는 ``size``를 사용합니다."
+
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr "현재는 :ref:`class_@GDScript`에만 주석이 있습니다."
+
+msgid "Formatting text"
+msgstr "서식(Formatting)"
+
+msgid "``[br]``"
+msgstr "``[br]``"
+
+msgid "Line break"
+msgstr "break"
+
+msgid "``Line 1.[br]``"
+msgstr "``Line 1.[br]``"
+
+msgid "``Line 2.``"
+msgstr "``Line 2.``"
+
+msgid "Line 1."
+msgstr "1호선."
+
+msgid "Line 2."
+msgstr "2호선."
+
+msgid "``[lb]`` ``[rb]``"
+msgstr "``<<`` ``>>``"
+
+msgid "``[`` and ``]`` respectively"
+msgstr "각각 ``[`` 및 ``]``"
+
+msgid "``[lb]b[rb]text[lb]/b[rb]``"
+msgstr "``[lb]b[rb]text[lb]/b[rb]``"
+
+msgid "[b]text[/b]"
+msgstr "[b]텍스트[/b]"
+
+msgid "``[b]`` ``[/b]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Bold"
 msgstr "굵게"
+
+msgid "``Do [b]not[/b] call this method.``"
+msgstr "``Do [b]not[/b] call this method.``"
+
+msgid "Do **not** call this method."
+msgstr "Do **not** call this method."
+
+msgid "``[i]`` ``[/i]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Italic"
 msgstr "기울임"
 
+msgid "``Returns the [i]global[/i] position.``"
+msgstr "``Returns the [i]global[/i] position.``"
+
+msgid "Returns the *global* position."
+msgstr "*전역* 위치를 반환합니다."
+
+msgid "``[u]`` ``[/u]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Underline"
 msgstr "밑줄"
+
+msgid "``[u]Always[/u] use this method.``"
+msgstr "``[u]Always[/u] use this method.``"
+
+msgid "``[s]`` ``[/s]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Strikethrough"
 msgstr "취소선"
 
+msgid "``[s]Outdated information.[/s]``"
+msgstr "``[s]Outdated information.[/s]``"
+
+msgid "``[url]`` ``[/url]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Hyperlink"
 msgstr "하이퍼링크"
+
+msgid "``[url]https://example.com[/url]``"
+msgstr "``[url]https://example.com[/url]``"
+
+msgid "``[url=https://example.com]Website[/url]``"
+msgstr "``[url=https://example.com]Website[/url]``"
+
+msgid "https://example.com"
+msgstr "https://example.com"
+
+msgid "`Website <https://example.com>`_"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "``[center]`` ``[/center]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Horizontal centering"
 msgstr "가로 센터링"
 
+msgid "``[center]2 + 2 = 4[/center]``"
+msgstr "``[center]2 + 2 = 4[/center]``"
+
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr "``[kbd]`` ``[/kbd]``"
+
+msgid "Keyboard/mouse shortcut"
+msgstr "키보드 단축키"
+
+msgid "``Press [kbd]Ctrl + C[/kbd].``"
+msgstr "``Press [kbd]Ctrl + C[/kbd].``"
+
+msgid "Press :kbd:`Ctrl + C`."
+msgstr ":kbd:`Ctrl + O`"
+
+msgid "``[code]`` ``[/code]``"
+msgstr "``[code]`` ``[/code]``"
+
+msgid "Inline code fragment"
+msgstr "인라인 코드 조각"
+
+msgid "``Returns [code]true[/code].``"
+msgstr "``Returns [code]true[/code].``"
+
+msgid "Returns ``true``."
+msgstr "반환"
+
+msgid ""
+"Some supported tags like ``[color]`` and ``[font]`` are not listed here "
+"because they are not recommended in the engine documentation."
+msgstr ""
+"``[color]`` 및 ``[font]``와 같은 일부 지원되는 태그는 엔진 문서에서 권장되지 "
+"않기 때문에 여기에 나열되지 않습니다."
+
+msgid "``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``."
+msgstr "``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``."
+
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+
+msgid "Formatting code blocks"
+msgstr "서식(Formatting)"
+
+msgid "There are two options for formatting code blocks:"
+msgstr "타입을 등록하는 데는 두 가지 시스템이 있습니다:"
+
+msgid ""
+"Use ``[codeblock]`` if you want to add an example for a specific language."
+msgstr "특정 언어에 대한 예제를 추가하려면 ``[codeblock]``를 사용하세요."
+
+msgid ""
+"Use ``[codeblocks]``, ``[gdscript]``, and ``[csharp]`` if you want to add "
+"the same example for both languages, GDScript and C#."
+msgstr ""
+"두 언어, GDScript 및 C#에 동일한 예제를 추가하려면 ``[codeblocks]``, "
+"``[gdscript]`` 및 ``[csharp]``를 사용하십시오."
+
+msgid ""
+"By default, ``[codeblock]`` highlights GDScript syntax. You can change it "
+"using the ``lang`` attribute. Currently supported options are:"
+msgstr ""
+"기본적으로 ``[codeblock]``는 GDScript 구문을 강조 표시합니다. ``lang`` 속성"
+"을 사용하여 변경할 수 있습니다. 현재 지원되는 옵션은 다음과 같습니다."
+
+msgid "``[codeblock lang=text]`` disables syntax highlighting;"
+msgstr "``[codeblock lang=text]``는 구문 강조 표시를 비활성화합니다."
+
+msgid "``[codeblock lang=gdscript]`` highlights GDScript syntax;"
+msgstr "``[codeblock lang=gdscript]``는 GDScript 구문을 강조합니다."
+
+msgid ""
+"``[codeblock lang=csharp]`` highlights C# syntax (only in .NET version)."
+msgstr ""
+"``[codeblock lang=csharp]``는 C# 구문을 강조 표시합니다(.NET 버전에만 해당)."
+
+msgid ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Since Godot 4.5, **tabs** "
+"should be used for indentation."
+msgstr ""
+"사전 형식화된 코드 블록에는 ``[codeblock]``를 사용하세요. Godot 4.5부터 들여"
+"쓰기에는 **탭**을 사용해야 합니다."
+
+msgid "For example:"
+msgstr "예를 들면:"
+
+msgid "Will display as:"
+msgstr "다음과 같이 표시됩니다."
+
+msgid ""
+"If you need to have different code version in GDScript and C#, use "
+"``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have "
+"at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
+msgstr ""
+"GDScript와 C#에서 다른 코드 버전이 필요한 경우 대신 ``[codeblocks]``를 사용하"
+"세요. ``[codeblocks]``를 사용하는 경우 언어별 태그인 ``[gdscript]`` 및 "
+"``[csharp]`` 중 하나 이상이 있어야 합니다."
+
+msgid ""
+"Always write GDScript code examples first! You can use this `experimental "
+"code translation tool <https://github.com/HaSa1002/codetranslator>`_ to "
+"speed up your workflow."
+msgstr ""
+"항상 GDScript 코드 예제를 먼저 작성하세요! 이 `실험 코드 번역 도구 <https://"
+"github.com/HaSa1002/codetranslator>`_를 사용하면 작업 흐름 속도를 높일 수 있"
+"습니다."
+
+msgid "The above will display as:"
+msgstr "위와 같이 표시됩니다."
+
 msgid "Formatting notes and warnings"
 msgstr "서식 참고 및 경고"
 
+msgid ""
+"To denote important information, add a paragraph starting with \"[b]Note:[/b]"
+"\" at the end of the description:"
+msgstr ""
+"중요한 정보를 표시하려면 설명 끝에 \"[b]Note:[/b]\"로 시작하는 단락을 추가하"
+"세요."
+
+msgid ""
+"To denote crucial information that could cause security issues or loss of "
+"data if not followed carefully, add a paragraph starting with \"[b]Warning:[/"
+"b]\" at the end of the description:"
+msgstr ""
+"주의 깊게 따르지 않을 경우 보안 문제나 데이터 손실을 일으킬 수 있는 중요한 정"
+"보를 표시하려면 설명 끝에 \"[b]Warning:[/b]\"로 시작하는 단락을 추가하십시오."
+
+msgid ""
+"In all the paragraphs described above, make sure the punctuation is part of "
+"the BBCode tags for consistency."
+msgstr ""
+"위에 설명된 모든 단락에서 일관성을 위해 문장 부호가 BBCode 태그의 일부인지 확"
+"인하세요."
+
 msgid "Marking API as deprecated/experimental"
 msgstr "API를 사용되지 않음/실험적으로 표시하기"
+
+msgid ""
+"To mark an API as deprecated or experimental, you need to add the "
+"corresponding XML attribute. The attribute value must be a message "
+"explaining why the API is not recommended (BBCode markup is supported) or an "
+"empty string (the default message will be used). If an API element is marked "
+"as deprecated/experimental, then it is considered documented even if the "
+"description is empty."
+msgstr ""
+"API를 더 이상 사용되지 않거나 실험적인 것으로 표시하려면 해당 XML 속성을 추가"
+"해야 합니다. 속성 값은 API가 권장되지 않는 이유(BBCode 마크업 지원)를 설명하"
+"는 메시지이거나 빈 문자열(기본 메시지가 사용됨)이어야 합니다. API 요소가 더 "
+"이상 사용되지 않거나 실험적인 것으로 표시되면 설명이 비어 있어도 문서화된 것"
+"으로 간주됩니다."

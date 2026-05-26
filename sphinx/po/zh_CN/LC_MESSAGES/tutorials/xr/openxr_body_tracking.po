@@ -33,6 +33,17 @@ msgstr ""
 "近来，全身体追踪可用的一个选项是使用 HTC 追踪器。目前由 SteamVR 和 HTC Elite "
 "XR 头戴设备支持。通过动作映射系统暴露。"
 
+msgid ""
+"These trackers are identified by their roles which are assigned to them when "
+"configured. Simply add :ref:`XRController3D <class_xrcontroller3d>` nodes as "
+"children to the :ref:`XROrigin3D <class_xrorigin3d>` node and assign one of "
+"the following trackers:"
+msgstr ""
+"这些追踪器是通过‘角色（roles）’来识别的，而角色是在配置阶段分配给它们的。你只"
+"需要在 :ref:`XRController3D <class_xrcontroller3d>` 节点下添"
+"加 :ref:`XROrigin3D <class_xrorigin3d>` 节点作为子级，然后为它们分配以下任意"
+"一种追踪器角色即可："
+
 msgid "HTC trackers"
 msgstr "HTC 追踪器"
 
@@ -74,3 +85,8 @@ msgstr "/user/vive_tracker_htcx/role/camera"
 
 msgid "/user/vive_tracker_htcx/role/keyboard"
 msgstr "/user/vive_tracker_htcx/role/keyboard"
+
+msgid ""
+"You can now use these as targets for IK modifiers on a full body avatar."
+msgstr ""
+"你现在可以把它们当作 IK（反向动力学）修正的目标点，应用到全身虚拟形象上。"

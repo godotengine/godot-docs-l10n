@@ -75,6 +75,16 @@ msgstr ""
 msgid "debug"
 msgstr "Débogage"
 
+msgid ""
+"|extended| Only available in editor builds, and export templates compiled "
+"with ``disable_path_overrides=false``."
+msgstr ""
+"|extended| Disponible seulement dans les compilations de l'éditeur et les "
+"modèle d'export compilés avec ``disable_path_overrides=false``."
+
+msgid "extended"
+msgstr "extended"
+
 msgid "|editor| Only available in editor builds."
 msgstr "|editor| Seulement disponible dans les compilations de l'éditeur."
 
@@ -129,6 +139,12 @@ msgstr ""
 msgid "``--no-header``"
 msgstr "``--no-header``"
 
+msgid ""
+"|release| Do not print engine version and rendering method header on startup."
+msgstr ""
+"|release| Ne pas afficher le numéro de version du moteur de jeu ni les "
+"entêtes des méthodes de rendu au lancement."
+
 msgid "**Run options**"
 msgstr "**Options d'exécution**"
 
@@ -159,6 +175,16 @@ msgstr ""
 
 msgid "``--recovery-mode``"
 msgstr "``--recovery-mode``"
+
+msgid ""
+"|editor| \"Start the editor in recovery mode, which disables features that "
+"can typically cause startup crashes, such as tool scripts, editor plugins, "
+"GDExtension addons, and others."
+msgstr ""
+"|editor| Lancer l'éditeur en mode de récupération, cela désactivera les "
+"fonctionnalités qui peuvent potentiellement causer des plantages au "
+"lancement, tel que les scripts d'outils, les extensions d'éditeurs, les "
+"greffons GDExtenstion, et autres."
 
 msgid "``--debug-server <uri>``"
 msgstr "``--debug-server <uri>``"
@@ -208,8 +234,27 @@ msgstr ""
 msgid "``--path <directory>``"
 msgstr "``--path <répertoire>``"
 
+msgid ""
+"|extended| Path to a project (``<directory>`` must contain a "
+"\"project.godot\" file)."
+msgstr ""
+"|extended| Chemin vers un projet (``<dossier>`` doit contenir un fichier "
+"\"project.godot\")."
+
+msgid "``--scene <path>``"
+msgstr "``--scene <chemin>``"
+
+msgid ""
+"|extended| Path or UID of a scene in the project that should be started."
+msgstr ""
+"|extended| Chemin ou UID d'une scène dans le projet qui devrait être "
+"démarrée."
+
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
+
+msgid "|extended| Path to a pack (.pck) file to load."
+msgstr "|extended| Chemin vers le fichier pack (.pck) à charger."
 
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
@@ -246,6 +291,9 @@ msgid ""
 msgstr ""
 "|release| Pilote vidéo (et pilote de rendu). Utilisez d'abord la commande "
 "``--help`` pour afficher la liste des pilotes disponibles."
+
+msgid "``--audio-output-latency <ms>``"
+msgstr "``--audio-output-latency <ms>``"
 
 msgid "``--rendering-method <renderer>``"
 msgstr "``--rendering-method <renderer>``"
@@ -368,6 +416,9 @@ msgstr "|release| Utilisez une seule fenêtre (pas de sous-fenêtres séparées)
 
 msgid "``--xr-mode <mode>``"
 msgstr "``--xr-mode <mode>``"
+
+msgid "|release| Select XR mode (\"default\", \"off\", \"on\")."
+msgstr "|release| Sélectionner le mode XR (\"default\", \"off\", \"on\")."
 
 msgid "``--wid <window_id>``"
 msgstr "``--wid <id_fenetre>``"
@@ -508,6 +559,14 @@ msgstr "``--max-fps <fps>``"
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
+msgid ""
+"|release| Simulate high CPU load (delay each frame by <ms> milliseconds). Do "
+"not use as a FPS limiter; use ``--max-fps`` instead."
+msgstr ""
+"|release| Simuler une charge CPU élevée (retarder chaque trame de <ms> "
+"millisecondes). N'utilisez pas un limiteur de FPS, utilisez plutôt ``--max-"
+"fps``."
+
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
@@ -574,11 +633,27 @@ msgstr "**Outils autonomes**"
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
 
+msgid ""
+"|extended| Run a script. ``<script>`` must be a resource path relative to "
+"the project (``myscript.gd`` will be interpreted as ``res://my_script.gd``) "
+"or an absolute filesystem path (for example, on Windows: ``C:/tmp/"
+"my_script.gd``)."
+msgstr ""
+"|extended| Exécute un script. ``<script>`` doit être un chemin de ressource "
+"relatif au projet ( ``monscript.gd`` sera interprété comme ``res://"
+"mon_script.gd``) ou un chemin du système de fichiers absolu (par exemple sur "
+"Windows : ``C:/tmp/mon_script.gd``)."
+
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <nom_boucle_principale>``"
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
+
+msgid "|extended| Only parse for errors and quit (use with ``--script``)."
+msgstr ""
+"|extended| Parse uniquement les erreurs et quitte (à utiliser avec ``--"
+"script``)."
 
 msgid "``--import``"
 msgstr "``--import``"
@@ -592,6 +667,19 @@ msgstr ""
 
 msgid "``--export-release <preset> <path>``"
 msgstr "``--export-release <preset> <path>``"
+
+msgid ""
+"|editor| Export the project in release mode using the given preset and "
+"output path. The preset name should match one defined in "
+"\"export_presets.cfg\". ``<path>`` should be absolute or relative to the "
+"project directory, and include the filename for the binary (e.g. \"builds/"
+"game.exe\"). The target directory must exist."
+msgstr ""
+"|editor| Exporte le projet en mode release en utilisant le préréglage et le "
+"chemin de sortie donnés. Le nom du préréglage doit correspondre à un nom "
+"défini dans \"export_presets.cfg\". ``<path>`` doit être absolu ou relatif "
+"au répertoire du projet, et inclure le nom du fichier pour le binaire (par "
+"ex. 'builds/jeu.exe'). Le répertoire cible doit exister."
 
 msgid "``--export-debug <preset> <path>``"
 msgstr "``--export-debug <preset> <path>``"
@@ -615,11 +703,28 @@ msgstr ""
 "le préréglage donné. L'extension ``<path>`` détermine s'il sera au format "
 "PCK ou ZIP. Implique ``--import``."
 
+msgid "``--export-patch <preset> <path>``"
+msgstr "``--export-patch <préréglage> <chemin>``"
+
 msgid "``--patches <paths>``"
 msgstr "``--patches <chemin>``"
 
+msgid ""
+"|editor| List of patches to use with ``--export-patch``. The list is comma-"
+"separated."
+msgstr ""
+"|editor| Liste des correctifs à utiliser avec ``--export-patch``. La liste "
+"est séparée par des virgules."
+
 msgid "``--install-android-build-template``"
 msgstr "``--install-android-build-template``"
+
+msgid ""
+"|editor| Install the Android build template. Used in conjunction with ``--"
+"export-release`` or ``--export-debug``."
+msgstr ""
+"|editor| Installer le modèle de compilation Android. Utilisé conjointement "
+"avec ``--export-release`` ou ``--export-debug``."
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
 msgstr "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
@@ -654,6 +759,17 @@ msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
 msgstr ""
 "|editor| Interdit de dump les types de base (utilisé avec ``--doctool``)."
 
+msgid "``--gdextension-docs``"
+msgstr "``--gdextension-docs``"
+
+msgid ""
+"|editor| Rather than dumping the engine API, generate API reference from all "
+"the GDExtensions loaded in the current project (used with ``--doctool``)."
+msgstr ""
+"|editor| Plutôt que de dump l'API du moteur, génère la référence de l'API à "
+"partir de toutes les GDExtensions chargées dans le projet actuel (utilisée "
+"avec ``--doctool``)."
+
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <path>``"
 
@@ -670,8 +786,44 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
+msgid ""
+"|editor| Generate GDExtension header file \"gdextension_interface.h\" in the "
+"current folder. This file is the base file required to implement a "
+"GDExtension."
+msgstr ""
+"|editor| Génère un fichier d'entête GDExtension 'gdextension_interface.h' "
+"dans le dossier courant. Ce fichier est le fichier de base requis pour "
+"implémenter une GDExtension."
+
+msgid "``--dump-gdextension-interface-json``"
+msgstr "``--dump-gdextension-interface-json``"
+
+msgid ""
+"|editor| Generate a JSON dump of the GDExtension interface named "
+"\"gdextension_interface.json\" in the current folder."
+msgstr ""
+"|editor| Génère un dump JSON de l'API Godot pour l'interface GDExtension, "
+"appelé 'gdextension_interface.json', dans le dossier actuel."
+
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
+
+msgid ""
+"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
+"\"extension_api.json\" in the current folder."
+msgstr ""
+"|editor| Génère le dump JSON de l'API Godot pour les liaisons GDExtension, "
+"appelé 'extension_api.json', dans le dossier actuel."
+
+msgid "``--dump-extension-api-with-docs``"
+msgstr "``--dump-extension-api-with-docs``"
+
+msgid ""
+"|editor| Generate JSON dump of the Godot API like the previous option, but "
+"including documentation."
+msgstr ""
+"|editor| Génère le dump JSON de l'API Godot comme pour l'option précédente, "
+"mais en incluant la documentation."
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <path>``"
@@ -701,6 +853,9 @@ msgid ""
 msgstr ""
 "|editor| Benchmark le temps d'exécution et enregistre le en format JSON dans "
 "le fichier donné. Le chemin doit être absolu."
+
+msgid "``--test [--help]``"
+msgstr "``--test [--help]``"
 
 msgid "Path"
 msgstr "Chemin"

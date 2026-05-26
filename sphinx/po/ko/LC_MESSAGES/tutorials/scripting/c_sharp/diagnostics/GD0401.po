@@ -11,5 +11,77 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0401: The class must derive from Godot.GodotObject or a derived class"
+msgstr ""
+"GD0401: 클래스는 Godot.GodotObject 또는 파생 클래스에서 파생되어야 합니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0401"
+msgstr "GD0401"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking - If changing the inheritance chain"
+msgstr "Breaking - 상속 체인을 변경하는 경우"
+
+msgid "Non-breaking - If removing the ``[GlobalClass]`` attribute"
+msgstr "비계속 - ``[GlobalClass]`` 속성을 제거하는 경우"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A type annotated with the ``[GlobalClass]`` attribute does not derive from "
+"``GodotObject``."
+msgstr ""
+"``[GlobalClass]`` 속성으로 주석이 달린 유형은 ``GodotObject``에서 파생되지 않"
+"습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"The ``[GlobalClass]`` has no effect for types that don't derive from "
+"``GodotObject``. Every :ref:`global class <doc_c_sharp_global_classes>` must "
+"ultimately derive from ``GodotObject`` so it can be marshalled."
+msgstr ""
+"``[GlobalClass]``는 ``GodotObject``에서 파생되지 않은 유형에는 효과가 없습니"
+"다. 모든 :ref:`global class <doc_c_sharp_global_classes>`는 궁극적으로 "
+"``GodotObject``에서 파생되어야 마샬링될 수 있습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, change the type to derive from "
+"``GodotObject`` or remove the ``[GlobalClass]`` attribute."
+msgstr ""
+"이 규칙 위반을 수정하려면 ``GodotObject``에서 파생되도록 유형을 변경하거나 "
+"``[GlobalClass]`` 속성을 제거하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Adding the ``[GlobalClass]`` to a "
+"type that doesn't derive from ``GodotObject`` is an easy mistake to make and "
+"this warning helps users realize that it may result in unexpected errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``GodotObject``에서 파생되지 않은 형식에 "
+"``[GlobalClass]``를 추가하는 것은 저지르기 쉬운 실수이며 이 경고는 사용자가 "
+"예상치 못한 오류가 발생할 수 있음을 인식하는 데 도움이 됩니다."

@@ -11,17 +11,448 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "C# Variant"
+msgstr "변종"
+
+msgid ""
+"For a detailed explanation of Variant in general, see the :ref:`Variant "
+"<class_Variant>` documentation page."
+msgstr ""
+"일반적인 Variant에 대한 자세한 설명은 :ref:`Variant <class_Variant>` 설명서 "
+"페이지를 참조하세요."
+
+msgid ""
+"``Godot.Variant`` is used to represent Godot's native :ref:`Variant "
+"<class_Variant>` type. Any :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>` can be converted from/to it. We "
+"recommend avoiding ``Godot.Variant`` unless it is necessary to interact with "
+"untyped engine APIs. Take advantage of C#'s type safety when possible."
+msgstr ""
+"``Godot.Variant``는 Godot의 기본 :ref:`Variant <class_Variant>` 유형을 나타내"
+"는 데 사용됩니다. 모든 :ref:`Variant 호환 유형 <c_sharp_variant_ "
+"Compatible_types>`을 변환할 수 있습니다. 형식화되지 않은 엔진 API와 상호작용"
+"해야 하는 경우가 아니면 ``Godot.Variant``를 사용하지 않는 것이 좋습니다. 가능"
+"하면 C#의 형식 안전성을 활용하세요."
+
+msgid ""
+"Converting from a Variant-compatible C# type to ``Godot.Variant`` can be "
+"done using implicit conversions. There are also ``CreateFrom`` method "
+"overloads and the generic ``Variant.From<T>`` methods. Only the syntax is "
+"different: the behavior is the same."
+msgstr ""
+"암시적 변환을 사용하여 Variant 호환 C# 유형에서 ``Godot.Variant``로 변환할 "
+"수 있습니다. ``CreateFrom`` 메서드 오버로드와 일반 ``Variant.From<T>`` 메서드"
+"도 있습니다. 구문만 다를 뿐 동작은 동일합니다."
+
+msgid ""
+"Implicit conversions to ``Godot.Variant`` make passing variants as method "
+"arguments very convenient. For example, the third argument "
+"of :ref:`tween_property<class_Tween_method_tween_property>` specifying the "
+"final color of the tween is a ``Godot.Variant``."
+msgstr ""
+"``Godot.Variant``로의 암시적 변환을 사용하면 변형을 메서드 인수로 매우 편리하"
+"게 전달할 수 있습니다. 예를 들어, 트윈의 최종 색상을 지정하"
+"는 :ref:`tween_property<class_Tween_method_tween_property>`의 세 번째 인수는 "
+"``Godot.Variant``입니다."
+
+msgid ""
+"Converting from ``Godot.Variant`` to a C# type can be done using explicit "
+"conversions. There are also ``Variant.As{TYPE}`` methods and the generic "
+"``Variant.As<T>`` method. All of these behave the same."
+msgstr ""
+"명시적 변환을 사용하면 ``Godot.Variant``에서 C# 형식으로 변환할 수 있습니다. "
+"``Variant.As{TYPE}`` 방법과 일반 ``Variant.As<T>`` 방법도 있습니다. 이들 모두"
+"는 동일하게 동작합니다."
+
+msgid ""
+"The ``Variant.As{TYPE}`` methods are typically named after C# types "
+"(``Int32``), not C# keywords (``int``)."
+msgstr ""
+"``Variant.As{TYPE}`` 메서드는 일반적으로 C# 키워드(``int``)가 아닌 C# 유형"
+"(``Int32``)의 이름을 따서 명명됩니다."
+
+msgid ""
+"If the Variant type doesn't match the conversion target type, the "
+"consequences vary depending on the source and target values."
+msgstr ""
+"변형 유형이 변환 대상 유형과 일치하지 않는 경우 소스 및 대상 값에 따라 결과"
+"가 달라집니다."
+
+msgid ""
+"The conversion may examine the value and return a similar but potentially "
+"unexpected value of the target type. For example, the string ``\"42a\"`` may "
+"be converted to the integer ``42``."
+msgstr ""
+"변환은 값을 검사하고 유사하지만 잠재적으로 예상치 못한 대상 유형 값을 반환할 "
+"수 있습니다. 예를 들어, 문자열 ``\"42a\"``는 정수 ``42``로 변환될 수 있습니"
+"다."
+
+msgid "The default value of the target type may be returned."
+msgstr "대상 유형의 기본값이 반환될 수 있습니다."
+
+msgid "An empty array may be returned."
+msgstr "빈 배열이 반환될 수 있습니다."
+
+msgid "An exception may be thrown."
+msgstr "예외가 발생할 수 있습니다."
+
+msgid ""
+"Converting to the correct type avoids complicated behavior and should be "
+"preferred."
+msgstr "올바른 유형으로 변환하면 복잡한 동작을 피할 수 있으므로 선호됩니다."
+
+msgid ""
+"The ``Variant.Obj`` property returns a C# ``object`` with the correct value "
+"for any variant. This may be useful when the type of Variant is completely "
+"unknown. However, when possible, prefer more specific conversions. "
+"``Variant.Obj`` evaluates a ``switch`` on ``Variant.VariantType`` and it may "
+"not be necessary. Also, if the result is a value type, it is boxed."
+msgstr ""
+"``Variant.Obj`` 속성은 모든 변형에 대해 올바른 값이 포함된 C# ``object``를 반"
+"환합니다. 이는 Variant 유형을 완전히 알 수 없는 경우에 유용할 수 있습니다. 그"
+"러나 가능하다면 보다 구체적인 변환을 선호하세요. ``Variant.Obj``는 "
+"``Variant.VariantType``에서 ``switch``를 평가하며 필요하지 않을 수도 있습니"
+"다. 또한 결과가 값 유형인 경우 boxing됩니다."
+
+msgid ""
+"For example, if the potential for ``Variant.As<MyNode>()`` to throw an "
+"invalid cast exception isn't acceptable, consider using a "
+"``Variant.As<GodotObject>() is MyNode n`` type pattern instead."
+msgstr ""
+"예를 들어 ``Variant.As<MyNode>()``가 잘못된 캐스트 예외를 throw할 가능성이 허"
+"용되지 않는 경우 대신 ``Variant.As<GodotObject>() is MyNode n`` 유형 패턴을 "
+"사용하는 것이 좋습니다."
+
+msgid ""
+"Since the Variant type in C# is a struct, it can't be null. To create a "
+"\"null\" Variant, use the ``default`` keyword or the ``Godot.Variant`` "
+"parameterless constructor."
+msgstr ""
+"C#의 Variant 형식은 구조체이므로 null일 수 없습니다. \"null\" 변형을 만들려"
+"면 ``default`` 키워드 또는 매개 변수가 없는 ``Godot.Variant`` 생성자를 사용하"
+"세요."
+
+msgid "Variant-compatible types"
+msgstr "커스텀 변수 타입"
+
+msgid ""
+"A Variant-compatible type can be converted to and from a ``Godot.Variant``. "
+"These C# types are Variant-compatible:"
+msgstr ""
+"Variant 호환 유형은 ``Godot.Variant``로 변환될 수 있습니다. 다음 C# 형식은 "
+"Variant와 호환됩니다."
+
+msgid ""
+"All the `built-in value types <https://docs.microsoft.com/en-us/dotnet/"
+"csharp/language-reference/keywords/built-in-types-table>`_, except "
+"``decimal``, ``nint`` and ``nuint``."
+msgstr ""
+"``decimal``, ``nint`` 및 ``nuint``를 제외한 모든 `기본 제공 값 유형 <https://"
+"docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-"
+"types-table>`_."
+
+msgid "``string``."
+msgstr "``: String``"
+
+msgid "Classes derived from :ref:`GodotObject <class_Object>`."
+msgstr ":ref:`Object <class_Object>`"
+
+msgid "Collections types defined in the ``Godot.Collections`` namespace."
+msgstr "``Godot.Collections`` 네임스페이스에 정의된 컬렉션 유형입니다."
+
+msgid "Full list of Variant types and their equivalent C# type:"
+msgstr "Variant 유형 및 해당 C# 유형의 전체 목록:"
+
+msgid "Variant.Type"
+msgstr "변종"
+
+msgid "C# Type"
+msgstr "타입"
+
+msgid "``Nil``"
+msgstr "``Nil``"
+
+msgid "``null`` (Not a type)"
+msgstr "``null`` (타입 아님)"
+
+msgid "``Bool``"
+msgstr "``Bool``"
+
+msgid "``bool``"
+msgstr "bool"
+
+msgid "``Int``"
+msgstr "``: int``"
+
+msgid "``long`` (Godot stores 64-bit integers in Variant)"
+msgstr "``long`` (Godot는 Variant에 64비트 정수를 저장합니다)"
+
+msgid "``Float``"
+msgstr "``: float``"
+
+msgid "``double`` (Godot stores 64-bit floats in Variant)"
+msgstr "``double`` (Godot는 Variant에 64비트 부동소수점을 저장합니다)"
+
+msgid "``String``"
+msgstr "``String[]``"
+
+msgid "``string``"
+msgstr "``: String``"
+
+msgid "``Vector2``"
+msgstr "``Vector2[]``"
+
+msgid "``Godot.Vector2``"
+msgstr "``Vector2[]``"
+
+msgid "``Vector2I``"
+msgstr "``Vector2[]``"
+
+msgid "``Godot.Vector2I``"
+msgstr "``Vector2[]``"
+
+msgid "``Rect2``"
+msgstr "Rect2"
+
+msgid "``Godot.Rect2``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Rect2I``"
+msgstr "Rect2"
+
+msgid "``Godot.Rect2I``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Vector3``"
+msgstr "``Vector3[]``"
+
+msgid "``Godot.Vector3``"
+msgstr "``Vector3[]``"
+
+msgid "``Vector3I``"
+msgstr "``Vector3[]``"
+
+msgid "``Godot.Vector3I``"
+msgstr "``Vector3[]``"
+
+msgid "``Transform2D``"
+msgstr "'변형'"
+
+msgid "``Godot.Transform2D``"
+msgstr "'변형'"
+
+msgid "``Vector4``"
+msgstr "``Vector2[]``"
+
+msgid "``Godot.Vector4``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Vector4I``"
+msgstr "``Vector2[]``"
+
+msgid "``Godot.Vector4I``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Plane``"
+msgstr "평면"
+
+msgid "``Godot.Plane``"
+msgstr "``Godot.Plane``"
+
+msgid "``Quaternion``"
+msgstr "``Rotation``"
+
+msgid "``Godot.Quaternion``"
+msgstr "``Rotation``"
+
+msgid "``Aabb``"
+msgstr "``Aabb``"
+
+msgid "``Godot.Aabb``"
+msgstr "``Godot.Aabb``"
+
+msgid "``Basis``"
+msgstr "``is``"
+
+msgid "``Godot.Basis``"
+msgstr "``Godot.Basis``"
+
+msgid "``Transform3D``"
+msgstr "'변형'"
+
+msgid "``Godot.Transform3D``"
+msgstr "'변형'"
+
+msgid "``Projection``"
+msgstr "연결(Connections)"
+
+msgid "``Godot.Projection``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Color``"
+msgstr "``Color8``"
+
+msgid "``Godot.Color``"
+msgstr "``Color.Color8``"
+
+msgid "``StringName``"
+msgstr "``String[]``"
+
+msgid "``Godot.StringName``"
+msgstr "``PoolStringArray``"
+
+msgid "``NodePath``"
+msgstr "``$NodePath``"
+
+msgid "``Godot.NodePath``"
+msgstr "``$NodePath``"
+
+msgid "``Rid``"
+msgstr "``-> void``"
+
+msgid "``Godot.Rid``"
+msgstr "``Godot.Rid``"
+
+msgid "``Object``"
+msgstr "``{project}``"
+
+msgid "``Godot.GodotObject`` or any derived type."
+msgstr "``Godot.GodotObject`` 또는 파생된 유형입니다."
+
+msgid "``Callable``"
+msgstr "``end``"
+
+msgid "``Godot.Callable``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Signal``"
+msgstr "시그널"
+
+msgid "``Godot.Signal``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``Dictionary``"
+msgstr "딕셔너리"
+
+msgid "``Godot.Collections.Dictionary``"
+msgstr "``Godot.Collections.Dictionary`` 를 사용합니다."
+
 msgid "``Array``"
 msgstr "``Array``"
 
 msgid "``Godot.Collections.Array``"
 msgstr "``Godot.Collections.Array``"
 
+msgid "``PackedByteArray``"
+msgstr "``PoolByteArray``"
+
 msgid "``byte[]``"
 msgstr "``byte[]``"
+
+msgid "``PackedInt32Array``"
+msgstr "``PoolIntArray``"
 
 msgid "``int[]``"
 msgstr "``int[]``"
 
+msgid "``PackedInt64Array``"
+msgstr "``PoolIntArray``"
+
+msgid "``long[]``"
+msgstr "``float[]``"
+
+msgid "``PackedFloat32Array``"
+msgstr "``PoolFloatArray``"
+
 msgid "``float[]``"
 msgstr "``float[]``"
+
+msgid "``PackedFloat64Array``"
+msgstr "``PoolFloatArray``"
+
+msgid "``double[]``"
+msgstr "``byte[]``"
+
+msgid "``PackedStringArray``"
+msgstr "``PoolStringArray``"
+
+msgid "``string[]``"
+msgstr "``String[]``"
+
+msgid "``PackedVector2Array``"
+msgstr "``PoolVector2Array``"
+
+msgid "``Godot.Vector2[]``"
+msgstr "``Vector2[]``"
+
+msgid "``PackedVector3Array``"
+msgstr "``PoolVector3Array``"
+
+msgid "``Godot.Vector3[]``"
+msgstr "``Vector3[]``"
+
+msgid "``PackedVector4Array``"
+msgstr "``PoolVector2Array``"
+
+msgid "``Godot.Vector4[]``"
+msgstr "``Vector2[]``"
+
+msgid "``PackedColorArray``"
+msgstr "``PoolColorArray``"
+
+msgid "``Godot.Color[]``"
+msgstr "``Color[]``"
+
+msgid ""
+"Godot uses 64-bit integers and floats in Variant. Smaller integer and float "
+"types such as ``int``, ``short`` and ``float`` are supported since they can "
+"fit in the bigger type. Be aware that when a conversion is performed, using "
+"the wrong type will result in potential precision loss."
+msgstr ""
+"Godot는 Variant에서 64비트 정수와 부동소수점을 사용합니다. ``int``, "
+"``short`` 및 ``float``와 같은 더 작은 정수 및 부동 소수점 유형은 더 큰 유형"
+"에 적합하므로 지원됩니다. 변환을 수행할 때 잘못된 유형을 사용하면 정밀도가 손"
+"실될 수 있다는 점에 유의하세요."
+
+msgid ""
+"Enums are supported by ``Godot.Variant`` since their underlying type is an "
+"integer type which are all compatible. However, implicit conversions don't "
+"exist, enums must be manually converted to their underlying integer type "
+"before they can converted to/from ``Godot.Variant`` or use the generic "
+"``Variant.As<T>`` and ``Variant.From<T>`` methods to convert them."
+msgstr ""
+"열거형은 기본 유형이 모두 호환되는 정수 유형이므로 ``Godot.Variant``에서 지원"
+"됩니다. 그러나 암시적 변환은 존재하지 않습니다. 열거형을 ``Godot.Variant``로/"
+"에서 변환하거나 일반 ``Variant.As<T>`` 및 ``Variant.From<T>`` 메서드를 사용하"
+"여 변환하기 전에 열거형을 기본 정수 유형으로 수동으로 변환해야 합니다."
+
+msgid "Using Variant in a generic context"
+msgstr "일반 컨텍스트에서 Variant 사용"
+
+msgid ""
+"When using generics, you may be interested in restricting the generic ``T`` "
+"type to be only one of the Variant-compatible types. This can be achieved "
+"using the ``[MustBeVariant]`` attribute."
+msgstr ""
+"제네릭을 사용할 때 제네릭 ``T`` 유형을 Variant 호환 유형 중 하나로 제한하는 "
+"데 관심이 있을 수 있습니다. 이는 ``[MustBeVariant]`` 속성을 사용하여 달성할 "
+"수 있습니다."
+
+msgid ""
+"Combined with the generic ``Variant.From<T>`` allows you to obtain an "
+"instance of ``Godot.Variant`` from an instance of a generic ``T`` type. Then "
+"it can be used in any API that only supports the ``Godot.Variant`` struct."
+msgstr ""
+"일반 ``Variant.From<T>``와 결합하면 일반 ``T`` 유형의 인스턴스에서 "
+"``Godot.Variant`` 인스턴스를 얻을 수 있습니다. 그런 다음 ``Godot.Variant`` 구"
+"조체만 지원하는 모든 API에서 사용할 수 있습니다."
+
+msgid ""
+"In order to invoke a method with a generic parameter annotated with the "
+"``[MustBeVariant]`` attribute, the value must be a Variant-compatible type "
+"or a generic ``T`` type annotated with the ``[MustBeVariant]`` attribute as "
+"well."
+msgstr ""
+"``[MustBeVariant]`` 속성으로 주석이 달린 일반 매개변수가 있는 메서드를 호출하"
+"려면 값이 Variant 호환 유형이거나 ``[MustBeVariant]`` 속성으로 주석이 달린 일"
+"반 ``T`` 유형이어야 합니다."

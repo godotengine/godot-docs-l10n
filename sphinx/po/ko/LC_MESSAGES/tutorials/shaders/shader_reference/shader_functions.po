@@ -14,53 +14,3666 @@ msgstr ""
 msgid "Built-in functions"
 msgstr "내장 함수"
 
+msgid ""
+"Godot supports a large number of built-in functions, conforming roughly to "
+"the GLSL ES 3.0 specification."
+msgstr ""
+"Godot는 대략 GLSL ES 3.0 사양을 준수하는 다수의 내장 기능을 지원합니다."
+
+msgid ""
+"The following type aliases only used in documentation to reduce repetitive "
+"function declarations. They can each refer to any of several actual types."
+msgstr ""
+"다음 유형 별칭은 반복적인 함수 선언을 줄이기 위해 문서에서만 사용됩니다. 이들"
+"은 각각 여러 실제 유형 중 하나를 참조할 수 있습니다."
+
+msgid "alias"
+msgstr "정면 뷰"
+
+msgid "actual types"
+msgstr "명명된 타입"
+
+msgid "glsl documentation alias"
+msgstr "문서 변경 내역"
+
+msgid "vec_type"
+msgstr "타입"
+
+msgid "float, vec2, vec3, or vec4"
+msgstr "부동 소수점, vec2, vec3 또는 vec4"
+
+msgid "genType"
+msgstr "타입"
+
+msgid "vec_int_type"
+msgstr "타입"
+
+msgid "int, ivec2, ivec3, or ivec4"
+msgstr "int, ivec2, ivec3 또는 ivec4"
+
+msgid "genIType"
+msgstr "타입"
+
+msgid "vec_uint_type"
+msgstr "vec_uint_type"
+
+msgid "uint, uvec2, uvec3, or uvec4"
+msgstr "단위, uvec2, uvec3 또는 uvec4"
+
+msgid "genUType"
+msgstr "타입"
+
+msgid "vec_bool_type"
+msgstr "vec_bool_type"
+
+msgid "bool, bvec2, bvec3, or bvec4"
+msgstr "부울, bvec2, bvec3 또는 bvec4"
+
+msgid "genBType"
+msgstr "타입"
+
+msgid "mat_type"
+msgstr "타입"
+
 msgid "mat2, mat3, or mat4"
 msgstr "mat2, mat3, 또는 mat4"
+
+msgid "mat"
+msgstr "match"
+
+msgid "gvec4_type"
+msgstr "gvec4_type"
 
 msgid "vec4, ivec4, or uvec4"
 msgstr "vec4, ivec4, 또는 uvec4"
 
+msgid "gvec4"
+msgstr "gvec4"
+
+msgid "gsampler2D"
+msgstr "예제"
+
 msgid "sampler2D, isampler2D, or uSampler2D"
 msgstr "sampler2D, isampler2D, 또는 uSampler2D"
+
+msgid "gsampler2DArray"
+msgstr "**예제**"
 
 msgid "sampler2DArray, isampler2DArray, or uSampler2DArray"
 msgstr "sampler2DArray, isampler2DArray, 또는 uSampler2DArray"
 
+msgid "gsampler3D"
+msgstr "예제"
+
 msgid "sampler3D, isampler3D, or uSampler3D"
 msgstr "sampler3D, isampler3D, 또는 uSampler3D"
+
+msgid ""
+"If any of these are specified for multiple parameters, they must all be the "
+"same type unless otherwise noted."
+msgstr ""
+"여러 매개변수에 이들 중 하나가 지정된 경우 달리 명시하지 않는 한 모두 동일한 "
+"유형이어야 합니다."
+
+msgid ""
+"Many functions that accept one or more vectors or matrices perform the "
+"described function on each component of the vector/matrix. Some examples:"
+msgstr ""
+"하나 이상의 벡터 또는 행렬을 허용하는 많은 함수는 벡터/행렬의 각 구성요소에 "
+"대해 설명된 기능을 수행합니다. 몇 가지 예:"
 
 msgid "Operation"
 msgstr "연산자"
 
+msgid "Equivalent Scalar Operation"
+msgstr "동등한 스칼라 연산"
+
+msgid "``sqrt(vec2(4, 64))``"
+msgstr "``sqrt(vec2(4, 64))``"
+
+msgid "``vec2(sqrt(4), sqrt(64))``"
+msgstr "``vec2(sqrt(4), sqrt(64))``"
+
+msgid "``min(vec2(3, 4), 1)``"
+msgstr "``min(vec2(3, 4), 1)``"
+
+msgid "``vec2(min(3, 1), min(4, 1))``"
+msgstr "``vec2(min(3, 1), min(4, 1))``"
+
+msgid "``min(vec3(1, 2, 3),vec3(5, 1, 3))``"
+msgstr "``min(vec3(1, 2, 3),vec3(5, 1, 3))``"
+
+msgid "``vec3(min(1, 5), min(2, 1), min(3, 3))``"
+msgstr "``vec3(min(1, 5), min(2, 1), min(3, 3))``"
+
+msgid "``pow(vec3(3, 8, 5 ), 2)``"
+msgstr "``pow(vec3(3, 8, 5 ), 2)``"
+
+msgid "``vec3(pow(3, 2), pow(8, 2), pow(5, 2))``"
+msgstr "``vec3(pow(3, 2), pow(8, 2), pow(5, 2))``"
+
+msgid "``pow(vec3(3, 8, 5), vec3(1, 2, 4))``"
+msgstr "``pow(vec3(3, 8, 5), vec3(1, 2, 4))``"
+
+msgid "``vec3(pow(3, 1), pow(8, 2), pow(5, 4))``"
+msgstr "``vec3(pow(3, 1), pow(8, 2), pow(5, 4))``"
+
+msgid ""
+"The `GLSL Language Specification <http://www.opengl.org/registry/doc/"
+"GLSLangSpec.4.30.6.pdf>`_ says under section 5.10 Vector and Matrix "
+"Operations:"
+msgstr ""
+"`GLSL 언어 사양 <http://www.opengl.org/registry/doc/GLSLangSpec.4.30.6.pdf>`_"
+"은 섹션 5.10 벡터 및 행렬 연산에서 다음과 같이 말합니다."
+
+msgid ""
+"With a few exceptions, operations are component-wise. Usually, when an "
+"operator operates on a vector or matrix, it is operating independently on "
+"each component of the vector or matrix, in a component-wise fashion. [...] "
+"The exceptions are matrix multiplied by vector, vector multiplied by matrix, "
+"and matrix multiplied by matrix. These do not operate component-wise, but "
+"rather perform the correct linear algebraic multiply."
+msgstr ""
+"몇 가지 예외를 제외하고 작업은 구성 요소별로 이루어집니다. 일반적으로 연산자"
+"가 벡터나 행렬에 대해 연산을 수행할 때는 벡터나 행렬의 각 구성요소에 대해 구"
+"성요소별 방식으로 독립적으로 연산을 수행합니다. [...] 예외는 행렬 곱하기 벡"
+"터, 벡터 곱하기 행렬 및 행렬 곱하기입니다. 이는 구성 요소별로 작동하지 않고 "
+"올바른 선형 대수 곱셈을 수행합니다."
+
+msgid ""
+"These function descriptions are adapted and modified from `official OpenGL "
+"documentation <https://registry.khronos.org/OpenGL-Refpages/gl4/>`__ "
+"originally published by Khronos Group under the `Open Publication License "
+"<https://opencontent.org/openpub>`__. Each function description links to the "
+"corresponding official OpenGL documentation. Modification history for this "
+"page can be found on `GitHub <https://github.com/godotengine/godot-docs/blob/"
+"master/tutorials/shaders/shader_reference/shader_functions.rst>`__."
+msgstr ""
+"이러한 기능 설명은 원래 Khronos 그룹가 `Open Publication License <https://"
+"opencontent.org/openpub>`__에 따라 게시한 `공식 OpenGL 문서 <https://"
+"registry.khronos.org/OpenGL-Refpages/gl4/>`__에서 채택 및 수정되었습니다. 각 "
+"기능 설명은 해당 공식 OpenGL 문서로 연결됩니다. 이 페이지의 수정 내역은 "
+"`GitHub <https://github.com/godotengine/godot-docs/blob/master/tutorials/"
+"shaders/shader_reference/shader_functions.rst>`__에서 확인할 수 있습니다."
+
+msgid "Trigonometric functions"
+msgstr "변형 기능들"
+
+msgid "Return Type"
+msgstr "반환"
+
 msgid "Function"
 msgstr "함수"
+
+msgid "Description / Return value"
+msgstr "설명/반환 값"
+
+msgid "|vec_type|"
+msgstr "벡터"
+
+msgid ":ref:`radians<shader_func_radians>`\\ (\\ |vec_type| degrees)"
+msgstr ":ref:`radians<shader_func_radians>`\\(\\ |vec_type|도)"
+
+msgid "Convert degrees to radians."
+msgstr "탭으로 들여쓰도록 변환"
+
+msgid ":ref:`degrees<shader_func_degrees>`\\ (\\ |vec_type| radians)"
+msgstr ":ref:`degrees<shader_func_degrees>`\\ (\\ |vec_type| 라디안)"
+
+msgid "Convert radians to degrees."
+msgstr "공백으로 들여쓰도록 변환"
+
+msgid ":ref:`sin<shader_func_sin>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sin<shader_func_sin>`\\ (\\ |vec_type| x)"
+
+msgid "Sine."
+msgstr "Sine."
+
+msgid ":ref:`cos<shader_func_cos>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`cos<shader_func_cos>`\\ (\\ |vec_type| x)"
+
+msgid "Cosine."
+msgstr "Cosine."
+
+msgid ":ref:`tan<shader_func_tan>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`tan<shader_func_tan>`\\ (\\ |vec_type| x)"
+
+msgid "Tangent."
+msgstr "접선 확인"
+
+msgid ":ref:`asin<shader_func_asin>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`asin<shader_func_asin>`\\ (\\ |vec_type| x)"
+
+msgid "Arc sine."
+msgstr "아크 사인."
+
+msgid ":ref:`acos<shader_func_acos>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`acos<shader_func_acos>`\\ (\\ |vec_type| x)"
+
+msgid "Arc cosine."
+msgstr "아크 코사인."
+
+msgid ":ref:`atan<shader_func_atan>`\\ (\\ |vec_type| y_over_x)"
+msgstr ":ref:`atan<shader_func_atan>`\\ (\\ |vec_type| y_over_x)"
+
+msgid ":ref:`atan<shader_func_atan2>`\\ (\\ |vec_type| y, |vec_type| x)"
+msgstr ":ref:`atan<shader_func_atan2>`\\ (\\ |vec_type| y, |vec_type| x)"
+
+msgid "Arc tangent."
+msgstr "접선 확인"
+
+msgid ":ref:`sinh<shader_func_sinh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sinh<shader_func_sinh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic sine."
+msgstr "쌍곡선 사인."
+
+msgid ":ref:`cosh<shader_func_cosh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`cosh<shader_func_cosh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic cosine."
+msgstr "쌍곡선 코사인."
+
+msgid ":ref:`tanh<shader_func_tanh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`tanh<shader_func_tanh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic tangent."
+msgstr "쌍곡선 탄젠트."
+
+msgid ":ref:`asinh<shader_func_asinh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`asinh<shader_func_asinh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic sine."
+msgstr "아크 쌍곡사인."
+
+msgid ":ref:`acosh<shader_func_acosh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`acosh<shader_func_acosh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic cosine."
+msgstr "아크 쌍곡선 코사인."
+
+msgid ":ref:`atanh<shader_func_atanh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`atanh<shader_func_atanh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic tangent."
+msgstr "호 쌍곡선 탄젠트."
+
+msgid "Trigonometric function descriptions"
+msgstr "설명"
+
+msgid ""
+"|vec_type| **radians**\\ (\\ |vec_type| "
+"degrees) :ref:`🔗<shader_func_radians>`"
+msgstr ""
+"|vec_type| **라디안**\\ (\\ |vec_type|도) :ref:`🔗<shader_func_radians>`"
+
+msgid "|componentwise|"
+msgstr "|componentwise|"
+
+msgid ""
+"Converts a quantity specified in degrees into radians, with the formula "
+"``degrees * (PI / 180)``."
+msgstr ""
+"``degrees * (PI / 180)`` 공식을 사용하여 도 단위로 지정된 수량을 라디안으로 "
+"변환합니다."
+
+msgid "param degrees"
+msgstr "매개변수"
+
+msgid "The quantity, in degrees, to be converted to radians."
+msgstr "라디안으로 변환할 양(도)입니다."
 
 msgid "return"
 msgstr "return"
 
+msgid "The input ``degrees`` converted to radians."
+msgstr "탭으로 들여쓰도록 변환"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/radians.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/radians.xhtml"
+
+msgid ""
+"|vec_type| **degrees**\\ (\\ |vec_type| "
+"radians) :ref:`🔗<shader_func_degrees>`"
+msgstr ""
+"|vec_type| **도**\\ (\\ |vec_type| 라디안) :ref:`🔗<shader_func_degrees>`"
+
+msgid ""
+"Converts a quantity specified in radians into degrees, with the formula "
+"``radians * (180 / PI)``"
+msgstr ""
+"``radians * (180 / PI)`` 공식을 사용하여 라디안으로 지정된 양을 각도로 변환합"
+"니다."
+
+msgid "param radians"
+msgstr "매개변수 라디안"
+
+msgid "The quantity, in radians, to be converted to degrees."
+msgstr "각도로 변환할 수량(라디안)입니다."
+
+msgid "The input ``radians`` converted to degrees."
+msgstr "공백으로 들여쓰도록 변환"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/degrees.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/degrees.xhtml"
+
+msgid "|vec_type| **sin**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_sin>`"
+msgstr "|vec_type| **죄**\\ (\\ |vec_type| 각도) :ref:`🔗<shader_func_sin>`"
+
+msgid "Returns the trigonometric sine of ``angle``."
+msgstr "``angle``의 삼각 사인을 반환합니다."
+
+msgid "param angle"
+msgstr "매개변수 각도"
+
+msgid "The quantity, in radians, of which to return the sine."
+msgstr "사인을 반환할 수량(라디안)입니다."
+
+msgid "The sine of ``angle``."
+msgstr "``angle``의 사인입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sin.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sin.xhtml"
+
+msgid "|vec_type| **cos**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_cos>`"
+msgstr "|vec_type| **cos**\\ (\\ |vec_type| 각도) :ref:`🔗<shader_func_cos>`"
+
+msgid "Returns the trigonometric cosine of ``angle``."
+msgstr "``angle``의 삼각 코사인을 반환합니다."
+
+msgid "The quantity, in radians, of which to return the cosine."
+msgstr "코사인을 반환할 라디안 단위의 수량입니다."
+
+msgid "The cosine of ``angle``."
+msgstr "파일의 절대 경로"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cos.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cos.xhtml"
+
+msgid "|vec_type| **tan**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_tan>`"
+msgstr ""
+"|vec_type| **황갈색**\\ (\\ |vec_type| 각도) :ref:`🔗<shader_func_tan>`"
+
+msgid "Returns the trigonometric tangent of ``angle``."
+msgstr "``angle``의 삼각 탄젠트를 반환합니다."
+
+msgid "The quantity, in radians, of which to return the tangent."
+msgstr "탄젠트를 반환할 라디안 단위의 수량입니다."
+
+msgid "The tangent of ``angle``."
+msgstr "파일의 절대 경로"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tan.xhtml"
+
+msgid "|vec_type| **asin**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asin>`"
+msgstr "|vec_type| **아신**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asin>`"
+
+msgid ""
+"Arc sine, or inverse sine. Calculates the angle whose sine is ``x`` and is "
+"in the range ``[-PI/2, PI/2]``. The result is undefined if ``x < -1`` or ``x "
+"> 1``."
+msgstr ""
+"아크사인 또는 역사인. 사인이 ``x``이고 범위 ``[-PI/2, PI/2]``에 있는 각도를 "
+"계산합니다. ``x < -1`` 또는 ``x > 1``인 경우 결과는 정의되지 않습니다."
+
+msgid "param x"
+msgstr "매개변수 x"
+
+msgid "The value whose arc sine to return."
+msgstr "반환할 아크사인의 값입니다."
+
+msgid "The angle whose trigonometric sine is ``x``."
+msgstr "삼각 사인이 ``x``인 각도입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asin.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asin.xhtml"
+
+msgid "|vec_type| **acos**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acos>`"
+msgstr "|vec_type| **acos**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acos>`"
+
+msgid ""
+"Arc cosine, or inverse cosine. Calculates the angle whose cosine is ``x`` "
+"and is in the range ``[0, PI]``."
+msgstr ""
+"아크 코사인 또는 역코사인. 코사인이 ``x``이고 범위 ``[0, PI]`` 내에 있는 각도"
+"를 계산합니다."
+
+msgid "The result is undefined if ``x < -1`` or ``x > 1``."
+msgstr "``x < -1`` 또는 ``x > 1``인 경우 결과는 정의되지 않습니다."
+
+msgid "The value whose arc cosine to return."
+msgstr "반환할 아크코사인의 값입니다."
+
+msgid "The angle whose trigonometric cosine is ``x``."
+msgstr "삼각 코사인이 ``x``인 각도입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acos.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acos.xhtml"
+
+msgid ""
+"|vec_type| **atan**\\ (\\ |vec_type| y_over_x) :ref:`🔗<shader_func_atan>`"
+msgstr ""
+"|vec_type| **atan**\\ (\\ |vec_type| y_over_x) :ref:`🔗<shader_func_atan>`"
+
+msgid "Calculates the arc tangent given a tangent value of ``y/x``."
+msgstr "탄젠트 값 ``y/x``를 기준으로 아크 탄젠트를 계산합니다."
+
+msgid ""
+"Because of the sign ambiguity, the function cannot determine with certainty "
+"in which quadrant the angle falls only by its tangent value. If you need to "
+"know the quadrant, use :ref:`atan(vec_type y, vec_type "
+"x)<shader_func_atan2>`."
+msgstr ""
+"부호 모호성 때문에 함수는 탄젠트 값에 의해서만 각도가 어느 사분면에 속하는지 "
+"확실하게 결정할 수 없습니다. 사분면을 알고 싶다면 :ref:`atan(vec_type y, "
+"vec_type x)<shader_func_atan2>`를 사용하세요."
+
+msgid "param y_over_x"
+msgstr "매개변수 y_over_x"
+
+msgid "The fraction whose arc tangent to return."
+msgstr "반환할 아크탄젠트의 분수입니다."
+
+msgid ""
+"The trigonometric arc-tangent of ``y_over_x`` and is in the range ``[-PI/2, "
+"PI/2]``."
+msgstr "``y_over_x``의 삼각 아크탄젠트는 ``[-PI/2, PI/2]`` 범위에 있습니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atan.xhtml"
+
+msgid ""
+"|vec_type| **atan**\\ (\\ |vec_type| y, |vec_type| "
+"x) :ref:`🔗<shader_func_atan2>`"
+msgstr ""
+"|vec_type| **atan**\\ (\\ |vec_type| y, |vec_type| "
+"x) :ref:`🔗<shader_func_atan2>`"
+
+msgid ""
+"Calculates the arc tangent given a numerator and denominator. The signs of "
+"``y`` and ``x`` are used to determine the quadrant that the angle lies in. "
+"The result is undefined if ``x == 0``."
+msgstr ""
+"분자와 분모가 주어지면 아크 탄젠트를 계산합니다. ``y`` 및 ``x`` 기호는 각도"
+"가 있는 사분면을 결정하는 데 사용됩니다. ``x == 0``인 경우 결과는 정의되지 않"
+"습니다."
+
+msgid ""
+"Equivalent to :ref:`atan2() <class_@GlobalScope_method_atan2>` in GDScript."
+msgstr ""
+"GDScript의 :ref:`atan2() <class_@GlobalScope_method_atan2>`와 동일합니다."
+
+msgid "param y"
+msgstr "매개변수 y"
+
+msgid "The numerator of the fraction whose arc tangent to return."
+msgstr "반환할 아크탄젠트의 분수의 분자입니다."
+
+msgid "The denominator of the fraction whose arc tangent to return."
+msgstr "반환할 아크 탄젠트가 있는 분수의 분모입니다."
+
+msgid ""
+"The trigonometric arc tangent of ``y/x`` and is in the range ``[-PI, PI]``."
+msgstr "``y/x``의 삼각 아크탄젠트는 ``[-PI, PI]`` 범위에 있습니다."
+
+msgid "|vec_type| **sinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sinh>`"
+msgstr "|vec_type| **신**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sinh>`"
+
+msgid "Calculates the hyperbolic sine using ``(e^x - e^-x)/2``."
+msgstr "``(e^x - e^-x)/2``를 사용하여 쌍곡사인을 계산합니다."
+
+msgid "The value whose hyperbolic sine to return."
+msgstr "반환할 쌍곡선 사인의 값입니다."
+
+msgid "The hyperbolic sine of ``x``."
+msgstr "``x``의 쌍곡선 사인입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sinh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sinh.xhtml"
+
+msgid "|vec_type| **cosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
+msgstr "|vec_type| **코쉬**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
+
+msgid "Calculates the hyperbolic cosine using ``(e^x + e^-x)/2``."
+msgstr "``(e^x + e^-x)/2``를 사용하여 쌍곡선 코사인을 계산합니다."
+
+msgid "The value whose hyperbolic cosine to return."
+msgstr "쌍곡선 코사인을 반환할 값입니다."
+
+msgid "The hyperbolic cosine of ``x``."
+msgstr "``x``의 쌍곡선 코사인입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
+
+msgid "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
+msgstr "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
+
+msgid "Calculates the hyperbolic tangent using ``sinh(x)/cosh(x)``."
+msgstr "``sinh(x)/cosh(x)``를 사용하여 쌍곡선 탄젠트를 계산합니다."
+
+msgid "The value whose hyperbolic tangent to return."
+msgstr "반환할 쌍곡선 탄젠트의 값입니다."
+
+msgid "The hyperbolic tangent of ``x``."
+msgstr "``x``의 쌍곡선 탄젠트입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
+
+msgid "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+msgstr "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+
+msgid ""
+"Calculates the arc hyperbolic sine of ``x``, or the inverse of ``sinh``."
+msgstr "``x``의 아크 쌍곡사인 또는 ``sinh``의 역을 계산합니다."
+
+msgid "The value whose arc hyperbolic sine to return."
+msgstr "반환할 아크쌍곡선 사인의 값입니다."
+
+msgid "The arc hyperbolic sine of ``x``."
+msgstr "``x``의 아크 쌍곡선 사인입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
+
+msgid "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
+msgstr "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
+
+msgid ""
+"Calculates the arc hyperbolic cosine of ``x``, or the non-negative inverse "
+"of ``cosh``. The result is undefined if ``x < 1``."
+msgstr ""
+"``x``의 아크 쌍곡선 코사인 또는 ``cosh``의 음이 아닌 역을 계산합니다. ``x < "
+"1``인 경우 결과는 정의되지 않습니다."
+
+msgid "The value whose arc hyperbolic cosine to return."
+msgstr "반환할 아크 쌍곡선 코사인의 값입니다."
+
+msgid "The arc hyperbolic cosine of ``x``."
+msgstr "``x``의 아크 쌍곡선 코사인입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
+
+msgid "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+msgstr "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+
+msgid ""
+"Calculates the arc hyperbolic tangent of ``x``, or the inverse of ``tanh``. "
+"The result is undefined if ``abs(x) > 1``."
+msgstr ""
+"``x``의 아크 쌍곡선 탄젠트 또는 ``tanh``의 역수를 계산합니다. ``abs(x) > 1``"
+"인 경우 결과는 정의되지 않습니다."
+
+msgid "The value whose arc hyperbolic tangent to return."
+msgstr "반환할 아크 쌍곡선 탄젠트의 값입니다."
+
+msgid "The arc hyperbolic tangent of ``x``."
+msgstr "``x``의 아크 쌍곡선 탄젠트입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
+
+msgid "Exponential and math functions"
+msgstr "지수형 깊이 안개."
+
+msgid ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Power (undefined if ``x < 0`` or if ``x == 0`` and ``y <= 0``)."
+msgstr ""
+"전력(``x < 0``인 경우 또는 ``x == 0`` 및 ``y <= 0``인 경우 정의되지 않음)."
+
+msgid ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
+
+msgid "Base-e exponential."
+msgstr "Base-e 지수."
+
+msgid ":ref:`exp2<shader_func_exp2>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`exp2<shader_func_exp2>`\\ (\\ |vec_type| x)"
+
+msgid "Base-2 exponential."
+msgstr "Base-2 지수."
+
+msgid ":ref:`log<shader_func_log>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`log<shader_func_log>`\\ (\\ |vec_type| x)"
+
+msgid "Natural (base-e) logarithm."
+msgstr "자연(밑 e) 로그."
+
+msgid ":ref:`log2<shader_func_log2>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`log2<shader_func_log2>`\\ (\\ |vec_type| x)"
+
+msgid "Base-2 logarithm."
+msgstr "밑이 2인 로그."
+
+msgid ":ref:`sqrt<shader_func_sqrt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sqrt<shader_func_sqrt>`\\ (\\ |vec_type| x)"
+
+msgid "Square root."
+msgstr "제곱근."
+
+msgid ":ref:`inversesqrt<shader_func_inversesqrt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`inversesqrt<shader_func_inversesqrt>`\\ (\\ |vec_type| x)"
+
+msgid "Inverse square root."
+msgstr "역제곱근."
+
+msgid "|vec_int_type|"
+msgstr "|vec_int_type|"
+
+msgid ":ref:`abs<shader_func_abs>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`abs<shader_func_abs>`\\ (\\ |vec_type| x)"
+
+msgid ":ref:`abs<shader_func_abs>`\\ (\\ |vec_int_type| x)"
+msgstr ":ref:`abs<shader_func_abs>`\\ (\\ |vec_int_type| x)"
+
+msgid "Absolute value (returns positive value if negative)."
+msgstr "절대값(음수인 경우 양수 값 반환)"
+
+msgid ":ref:`sign<shader_func_sign>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``1.0`` if positive, ``-1.0`` if negative, ``0.0`` otherwise."
+msgstr ""
+"양수이면 ``1.0``를 반환하고, 음수이면 ``-1.0``를 반환하고, 그렇지 않으면 "
+"``0.0``를 반환합니다."
+
+msgid ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
+msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
+
+msgid "Returns ``1`` if positive, ``-1`` if negative, ``0`` otherwise."
+msgstr ""
+"양수이면 ``1``를 반환하고, 음수이면 ``-1``를 반환하고, 그렇지 않으면 ``0``를 "
+"반환합니다."
+
+msgid ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the integer below."
+msgstr "아래의 정수로 반올림됩니다."
+
+msgid ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest integer."
+msgstr "가장 가까운 정수로 반올림합니다."
+
+msgid ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest even integer."
+msgstr "가장 가까운 짝수로 반올림합니다."
+
+msgid ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
+
+msgid "Truncation."
+msgstr "함수"
+
+msgid ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the integer above."
+msgstr "빌드 커스터마이징하기"
+
+msgid ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+
+msgid "Fractional (returns ``x - floor(x)``)."
+msgstr "분수(``x - floor(x)`` 반환)"
+
+msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, float y)"
+msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, 부동 소수점 y)"
+
+msgid "Modulo (division remainder)."
+msgstr "곱하기 / 나누기 / 나머지"
+
+msgid ":ref:`modf<shader_func_modf>`\\ (\\ |vec_type| x, out |vec_type| i)"
+msgstr ":ref:`modf<shader_func_modf>`\\(\\ |vec_type| x, 출력 |vec_type| i)"
+
+msgid "Fractional of ``x``, with ``i`` as integer part."
+msgstr "정수 부분으로 ``i``가 포함된 ``x``의 분수입니다."
+
+msgid "|vec_uint_type|"
+msgstr "|vec_uint_type|"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, float b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, 부동 소수점 b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, int b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, 정수 b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+msgstr ""
+":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, uint b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, 단위 b)"
+
+msgid "Lowest value between ``a`` and ``b``."
+msgstr "``a``와 ``b`` 사이의 가장 낮은 값입니다."
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, float b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, 부동 소수점 b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, int b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, 정수 b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+msgstr ""
+":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, 단위 b)"
+
+msgid "Highest value between ``a`` and ``b``."
+msgstr "``a``와 ``b`` 사이의 가장 높은 값입니다."
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| min, |"
+"vec_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| 최소, |"
+"vec_type| 최대)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, float min, float max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, 부동 최소, 부동 최대)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, |vec_int_type| min, |"
+"vec_int_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, |vec_int_type| 최소, "
+"|vec_int_type| 최대)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, 정수 최소, 정수 최대)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| "
+"min, |vec_uint_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| 최"
+"소, |vec_uint_type| 최대)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, uint min, uint max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, 최소 단위, 최대 단"
+"위)"
+
+msgid "Clamps ``x`` between ``min`` and ``max`` (inclusive)."
+msgstr "``min``와 ``max``(포함) 사이에 ``x``를 고정합니다."
+
+msgid ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type|a, |vec_type|b, |vec_type|c)"
+
+msgid ":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, float c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, 플로트 c)"
+
+msgid ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_bool_type| c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type|a, |vec_type|b, |vec_bool_type|c)"
+
+msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
+msgstr "``a``와 ``b`` 사이를 ``c``로 선형 보간합니다."
+
+msgid ""
+":ref:`fma<shader_func_fma>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+msgstr ""
+":ref:`fma<shader_func_fma>`\\ (\\ |vec_type|a, |vec_type|b, |vec_type|c)"
+
+msgid "Fused multiply-add operation: ``(a * b + c)``"
+msgstr "융합 곱셈-덧셈 연산: ``(a * b + c)``"
+
+msgid ":ref:`step<shader_func_step>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`step<shader_func_step>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`step<shader_func_step>`\\ (\\ float a, |vec_type| b)"
+msgstr ":ref:`step<shader_func_step>`\\ (\\ 부동 a, |vec_type| b)"
+
+msgid "``b < a ? 0.0 : 1.0``"
+msgstr "``b < a ? 0.0 : 1.0``"
+
+msgid ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_type| c)"
+msgstr ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ |vec_type|a, |vec_type|b, |"
+"vec_type|c)"
+
+msgid ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ float a, float b, |vec_type| "
+"c)"
+msgstr ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ 부동 a, 부동 b, |vec_type| c)"
+
+msgid "Hermite interpolate between ``a`` and ``b`` by ``c``."
+msgstr "Hermite는 ``a``와 ``b`` 사이를 ``c``로 보간합니다."
+
+msgid "|vec_bool_type|"
+msgstr "|vec_bool_type|"
+
+msgid ":ref:`isnan<shader_func_isnan>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`isnan<shader_func_isnan>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``NaN``."
+msgstr "스칼라 또는 벡터 구성요소가 ``NaN``인 경우 ``true``를 반환합니다."
+
+msgid ":ref:`isinf<shader_func_isinf>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`isinf<shader_func_isinf>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``INF``."
+msgstr "스칼라 또는 벡터 구성요소가 ``INF``인 경우 ``true``를 반환합니다."
+
+msgid ":ref:`floatBitsToInt<shader_func_floatBitsToInt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`floatBitsToInt<shader_func_floatBitsToInt>`\\ (\\ |vec_type| x)"
+
+msgid "``float`` to ``int`` bit copying, no conversion."
+msgstr "``float``에서 ``int`` 비트 복사, 변환 없음."
+
+msgid ":ref:`floatBitsToUint<shader_func_floatBitsToUint>`\\ (\\ |vec_type| x)"
+msgstr ""
+":ref:`floatBitsToUint<shader_func_floatBitsToUint>`\\ (\\ |vec_type| x)"
+
+msgid "``float`` to ``uint`` bit copying, no conversion."
+msgstr "``float``에서 ``uint`` 비트 복사, 변환 없음."
+
+msgid ""
+":ref:`intBitsToFloat<shader_func_intBitsToFloat>`\\ (\\ |vec_int_type| x)"
+msgstr ""
+":ref:`intBitsToFloat<shader_func_intBitsToFloat>`\\ (\\ |vec_int_type| x)"
+
+msgid "``int`` to ``float`` bit copying, no conversion."
+msgstr "``int``에서 ``float`` 비트 복사, 변환 없음."
+
+msgid ""
+":ref:`uintBitsToFloat<shader_func_uintBitsToFloat>`\\ (\\ |vec_uint_type| x)"
+msgstr ""
+":ref:`uintBitsToFloat<shader_func_uintBitsToFloat>`\\ (\\ |vec_uint_type| x)"
+
+msgid "``uint`` to ``float`` bit copying, no conversion."
+msgstr "``uint``에서 ``float`` 비트 복사, 변환 없음."
+
+msgid "Exponential and math function descriptions"
+msgstr "지수 및 수학 함수 설명"
+
+msgid ""
+"|vec_type| **pow**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_pow>`"
+msgstr ""
+"|vec_type| **펑**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_pow>`"
+
+msgid "Raises ``x`` to the power of ``y``."
+msgstr "``x``를 ``y``의 힘으로 올립니다."
+
+msgid "The result is undefined if ``x < 0`` or  if ``x == 0`` and ``y <= 0``."
+msgstr ""
+"``x < 0``이거나 ``x == 0`` 및 ``y <= 0``인 경우 결과는 정의되지 않습니다."
+
+msgid "The value to be raised to the power ``y``."
+msgstr "``y``만큼 거듭제곱되는 값입니다."
+
+msgid "The power to which ``x`` will be raised."
+msgstr "숨겨진 동작은 활성화되지 않지만, 내보내집니다."
+
+msgid "The value of ``x`` raised to the ``y`` power."
+msgstr "``x``의 값을 ``y`` 거듭제곱으로 늘렸습니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
+
+msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+msgstr "|vec_type| **특급**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+
+msgid "Raises ``e`` to the power of ``x``, or the the natural exponentiation."
+msgstr "``e``를 ``x``의 거듭제곱, 즉 자연 지수로 올립니다."
+
+msgid "Equivalent to ``pow(e, x)``."
+msgstr "``pow(e, x)``와 동일합니다."
+
+msgid "The value to exponentiate."
+msgstr "최종 결과물"
+
+msgid "The natural exponentiation of ``x``."
+msgstr "``x``의 자연 지수화입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp.xhtml"
+
+msgid "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
+msgstr "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
+
+msgid "Raises ``2`` to the power of ``x``."
+msgstr "``2``를 ``x``의 힘으로 올립니다."
+
+msgid "Equivalent to ``pow(2.0, x)``."
+msgstr "``pow(2.0, x)``와 동일합니다."
+
+msgid "The value of the power to which ``2`` will be raised."
+msgstr "``2``가 상승할 파워의 값입니다."
+
+msgid "``2`` raised to the power of x."
+msgstr "위쪽 화살표 키에 매핑된 ``move_up``입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
+
+msgid "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+msgstr "|vec_type| **로그**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+
+msgid ""
+"Returns the natural logarithm of ``x``, i.e. the value ``y`` which satisfies "
+"``x == pow(e, y)``. The result is undefined if ``x <= 0``."
+msgstr ""
+"``x``의 자연 로그, 즉 ``x == pow(e, y)``를 만족하는 값 ``y``를 반환합니다. "
+"``x <= 0``인 경우 결과가 정의되지 않습니다."
+
+msgid "The value of which to take the natural logarithm."
+msgstr "자연 로그를 취하는 값입니다."
+
+msgid "The natural logarithm of ``x``."
+msgstr "``x``의 자연 로그입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
+
+msgid "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
+msgstr "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
+
+msgid ""
+"Returns the base-2 logarithm of ``x``, i.e. the value ``y`` which satisfies "
+"``x == pow(2, y)``. The result is undefined if ``x <= 0``."
+msgstr ""
+"``x``의 밑이 2인 로그, 즉 ``x == pow(2, y)``를 만족하는 값 ``y``를 반환합니"
+"다. ``x <= 0``인 경우 결과가 정의되지 않습니다."
+
+msgid "The value of which to take the base-2 logarithm."
+msgstr "밑이 2인 로그를 취하는 값입니다."
+
+msgid "The base-2 logarithm of ``x``."
+msgstr "``x``의 밑이 2인 로그입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
+
+msgid "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+msgstr "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+
+msgid "Returns the square root of ``x``. The result is undefined if ``x < 0``."
+msgstr ""
+"``x``의 제곱근을 반환합니다. ``x < 0``인 경우 결과가 정의되지 않습니다."
+
+msgid "The value of which to take the square root."
+msgstr "제곱근을 구할 값입니다."
+
+msgid "The square root of ``x``."
+msgstr "``x``의 제곱근입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
+
+msgid ""
+"|vec_type| **inversesqrt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_inversesqrt>`"
+msgstr ""
+"|vec_type| **inversesqrt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_inversesqrt>`"
+
+msgid ""
+"Returns the inverse of the square root of ``x``, or ``1.0 / sqrt(x)``. The "
+"result is undefined if ``x <= 0``."
+msgstr ""
+"``x`` 또는 ``1.0 / sqrt(x)``의 제곱근의 역수를 반환합니다. ``x <= 0``인 경우 "
+"결과는 정의되지 않습니다."
+
+msgid "The value of which to take the inverse of the square root."
+msgstr "제곱근의 역수를 취하는 값입니다."
+
+msgid "The inverse of the square root of ``x``."
+msgstr "``x``의 제곱근의 역수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
+
+msgid "|vec_type| **abs**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_abs>`"
+msgstr "|vec_type| **절대**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_abs>`"
+
+msgid ""
+"|vec_int_type| **abs**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_abs>`"
+msgstr ""
+"|vec_int_type| **절대**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_abs>`"
+
+msgid ""
+"Returns the absolute value of ``x``. Returns ``x`` if ``x`` is positive, "
+"otherwise returns ``-1 * x``."
+msgstr ""
+"``x``의 절대값을 반환합니다. ``x``가 양수이면 ``x``를 반환하고, 그렇지 않으"
+"면 ``-1 * x``를 반환합니다."
+
+msgid "The value of which to return the absolute."
+msgstr "절대값을 반환할 값입니다."
+
+msgid "The absolute value of ``x``."
+msgstr "``x``의 절대값입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/abs.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/abs.xhtml"
+
+msgid "|vec_type| **sign**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sign>`"
+msgstr "|vec_type| **부호**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sign>`"
+
+msgid ""
+"|vec_int_type| **sign**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_sign>`"
+msgstr ""
+"|vec_int_type| **부호**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_sign>`"
+
+msgid ""
+"Returns ``-1`` if ``x < 0``, ``0`` if ``x == 0``, and ``1`` if ``x > 0``."
+msgstr ""
+"``x < 0``이면 ``-1``를, ``x == 0``이면 ``0``를, ``x > 0``이면 ``1``를 반환합"
+"니다."
+
+msgid "The value from which to extract the sign."
+msgstr "부호를 추출할 값입니다."
+
+msgid "The sign of ``x``."
+msgstr "``x``의 표시입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sign.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sign.xhtml"
+
+msgid "|vec_type| **floor**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_floor>`"
+msgstr "|vec_type| **바닥**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_floor>`"
+
+msgid ""
+"Returns a value equal to the nearest integer that is less than or equal to "
+"``x``."
+msgstr "``x``보다 작거나 같은 가장 가까운 정수와 동일한 값을 반환합니다."
+
+msgid "The value to floor."
+msgstr "최종 결과물"
+
+msgid "The nearest integer that is less than or equal to ``x``."
+msgstr "``x``보다 작거나 같은 가장 가까운 정수입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
+
+msgid "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
+msgstr "|vec_type| **원형**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
+
+msgid "Rounds ``x`` to the nearest integer."
+msgstr "``x``를 가장 가까운 정수로 반올림합니다."
+
+msgid ""
+"Rounding of values with a fractional part of ``0.5`` is implementation-"
+"dependent. This includes the possibility that ``round(x)`` returns the same "
+"value as ``roundEven(x)``for all values of ``x``."
+msgstr ""
+"``0.5``의 소수 부분으로 값을 반올림하는 것은 구현에 따라 다릅니다. 여기에는 "
+"``round(x)``가 ``x``의 모든 값에 대해 ``roundEven(x)``와 동일한 값을 반환할 "
+"가능성이 포함됩니다."
+
+msgid "The value to round."
+msgstr "최종 결과물"
+
+msgid "The rounded value."
+msgstr "이 모드는:"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/round.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/round.xhtml"
+
+msgid ""
+"|vec_type| **roundEven**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_roundEven>`"
+msgstr ""
+"|vec_type| **반올림**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_roundEven>`"
+
+msgid ""
+"Rounds ``x`` to the nearest integer. A value with a fractional part of "
+"``0.5`` will always round toward the nearest even integer. For example, both "
+"``3.5`` and ``4.5`` will round to ``4.0``."
+msgstr ""
+"``x``를 가장 가까운 정수로 반올림합니다. ``0.5``의 소수 부분이 있는 값은 항"
+"상 가장 가까운 짝수로 반올림됩니다. 예를 들어, ``3.5`` 및 ``4.5``는 모두 "
+"``4.0``로 반올림됩니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/roundEven.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/roundEven.xhtml"
+
+msgid "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+msgstr "|vec_type| **잘림**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+
+msgid ""
+"Truncates ``x``. Returns a value equal to the nearest integer to ``x`` whose "
+"absolute value is not larger than the absolute value of ``x``."
+msgstr ""
+"``x``를 자릅니다. 절대값이 ``x``의 절대값보다 크지 않은 ``x``에 가장 가까운 "
+"정수와 동일한 값을 반환합니다."
+
+msgid "The value to evaluate."
+msgstr "최종 결과물"
+
+msgid "The truncated value."
+msgstr "잘린 값입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/trunc.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/trunc.xhtml"
+
+msgid "|vec_type| **ceil**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_ceil>`"
+msgstr "|vec_type| **셀**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_ceil>`"
+
+msgid ""
+"Returns a value equal to the nearest integer that is greater than or equal "
+"to ``x``."
+msgstr "``x``보다 크거나 같은 가장 가까운 정수와 동일한 값을 반환합니다."
+
+msgid "The ceiling-ed value."
+msgstr "상한값입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ceil.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ceil.xhtml"
+
+msgid "|vec_type| **fract**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_fract>`"
+msgstr "|vec_type| **분열**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_fract>`"
+
+msgid "Returns the fractional part of ``x``."
+msgstr "``x``의 소수 부분을 반환합니다."
+
+msgid "This is calculated as ``x - floor(x)``."
+msgstr "이는 ``x - floor(x)``로 계산됩니다."
+
+msgid "The fractional part of ``x``."
+msgstr "``x``의 분수 부분입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fract.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fract.xhtml"
+
+msgid ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_mod>`"
+msgstr ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_mod>`"
+
+msgid ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, float y) :ref:`🔗<shader_func_mod>`"
+msgstr ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, 부동 y) :ref:`🔗<shader_func_mod>`"
+
+msgid ""
+"Returns the value of ``x modulo y``. This is also sometimes called the "
+"remainder."
+msgstr "``x modulo y``의 값을 반환합니다. 이를 나머지라고도 합니다."
+
+msgid "This is computed as ``x - y * floor(x/y)``."
+msgstr "이는 ``x - y * floor(x/y)``로 계산됩니다."
+
+msgid "The value of ``x modulo y``."
+msgstr "``x modulo y``의 값입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mod.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mod.xhtml"
+
+msgid ""
+"|vec_type| **modf**\\ (\\ |vec_type| x, out |vec_type| "
+"i) :ref:`🔗<shader_func_modf>`"
+msgstr ""
+"|vec_type| **modf**\\ (\\ |vec_type| x, 출력 |vec_type| "
+"i) :ref:`🔗<shader_func_modf>`"
+
+msgid ""
+"Separates a floating-point value ``x`` into its integer and fractional parts."
+msgstr "부동 소수점 값 ``x``를 정수 부분과 소수 부분으로 분리합니다."
+
+msgid ""
+"The fractional part of the number is returned from the function. The integer "
+"part (as a floating-point quantity) is returned in the output parameter "
+"``i``."
+msgstr ""
+"숫자의 소수 부분이 함수에서 반환됩니다. 정수 부분(부동 소수점 수량)은 출력 매"
+"개변수 ``i``에 반환됩니다."
+
+msgid "The value to separate."
+msgstr "최종 결과물"
+
+msgid "param out i"
+msgstr "나는 매개변수 아웃"
+
+msgid "A variable that receives the integer part of ``x``."
+msgstr "``x``의 정수부분을 받는 변수입니다."
+
+msgid "The fractional part of the number."
+msgstr "파일의 절대 경로"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
+
+msgid ""
+"|vec_type| **min**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_type| **분**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_type| **min**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_type| **분**\\ (\\ |vec_type| a, 부동 소수점 "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_int_type| **분**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_int_type| **분**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_uint_type| **분**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_uint_type| **분**\\ (\\ |vec_uint_type| a, 단위 "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid "Returns the minimum of two values ``a`` and ``b``."
+msgstr "두 값 ``a`` 및 ``b`` 중 최소값을 반환합니다."
+
+msgid "Returns ``b`` if ``b < a``, otherwise returns ``a``."
+msgstr "``b < a``이면 ``b``를 반환하고, 그렇지 않으면 ``a``를 반환합니다."
+
+msgid "param a"
+msgstr "매개변수 a"
+
+msgid "The first value to compare."
+msgstr "최종 결과물"
+
+msgid "param b"
+msgstr "매개변수 b"
+
+msgid "The second value to compare."
+msgstr "비교할 두 번째 값입니다."
+
+msgid "The minimum value."
+msgstr "최소값."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/min.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/min.xhtml"
+
+msgid ""
+"|vec_type| **max**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_type| **최대**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_type| **max**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_type| **최대**\\ (\\ |vec_type| a, 부동 소수점 "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_uint_type| **최대**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_uint_type| **최대**\\ (\\ |vec_uint_type| a, 단위 "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_int_type| **최대**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_int_type| **최대**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid "Returns the maximum of two values ``a`` and ``b``."
+msgstr "``a`` 및 ``b`` 두 값 중 최대값을 반환합니다."
+
+msgid "It returns ``b`` if ``b > a``, otherwise it returns ``a``."
+msgstr "``b > a``이면 ``b``를 반환하고, 그렇지 않으면 ``a``를 반환합니다."
+
+msgid "The maximum value."
+msgstr "최대값."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/max.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/max.xhtml"
+
+msgid ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, |vec_type| minVal, |vec_type| "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, |vec_type| minVal, |vec_type| "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, float minVal, float "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_type| **클램프**\\ (\\ |vec_type| x, float minVal, float "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **클램프**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **클램프**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **클램프**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint minVal, uint "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **클램프**\\ (\\ |vec_uint_type| x, 단위 minVal, 단위 "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"Returns the value of ``x`` constrained to the range ``minVal`` to ``maxVal``."
+msgstr "``minVal``~``maxVal`` 범위로 제한된 ``x``의 값을 반환합니다."
+
+msgid "The returned value is computed as ``min(max(x, minVal), maxVal)``."
+msgstr "반환된 값은 ``min(max(x, minVal), maxVal)``로 계산됩니다."
+
+msgid "The value to constrain."
+msgstr "최종 결과물"
+
+msgid "param minVal"
+msgstr "매개변수 minVal"
+
+msgid "The lower end of the range into which to constrain ``x``."
+msgstr "``x``를 제한할 범위의 하한입니다."
+
+msgid "param maxVal"
+msgstr "매개변수 maxVal"
+
+msgid "The upper end of the range into which to constrain ``x``."
+msgstr "``x``를 제한할 범위의 상한입니다."
+
+msgid "The clamped value."
+msgstr "고정된 값입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **믹스**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, float "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **믹스**\\ (\\ |vec_type| a, |vec_type| b, 플로트 "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"Performs a linear interpolation between ``a`` and ``b`` using ``c`` to "
+"weight between them."
+msgstr ""
+"``a``와 ``b`` 사이에 선형 보간을 수행하여 ``c`` 사이에 가중치를 부여합니다."
+
+msgid "Computed as ``a * (1 - c) + b * c``."
+msgstr "``a * (1 - c) + b * c``로 계산됩니다."
+
+msgid ""
+"Equivalent to :ref:`lerp() <class_@GlobalScope_method_lerp>` in GDScript."
+msgstr ""
+"GDScript의 :ref:`lerp() <class_@GlobalScope_method_lerp>`와 동일합니다."
+
+msgid "The start of the range in which to interpolate."
+msgstr "보간할 범위의 시작입니다."
+
+msgid "The end of the range in which to interpolate."
+msgstr "보간할 범위의 끝입니다."
+
+msgid "param c"
+msgstr "매개변수 c"
+
+msgid "The value to use to interpolate between ``a`` and ``b``."
+msgstr ""
+"내보내기에서 버퍼 섀도우(buffer shadow)와 레이 섀도우(ray shadow)간의 차이는 "
+"없습니다."
+
+msgid "The interpolated value."
+msgstr "보간법 (Interpolation)"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **믹스**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"Selects either value ``a`` or value ``b`` based on the value of ``c``. For a "
+"component of ``c`` that is false, the corresponding component of ``a`` is "
+"returned. For a component of ``c`` that is true, the corresponding component "
+"of ``b`` is returned. Components of ``a`` and ``b`` that are not selected "
+"are allowed to be invalid floating-point values and will have no effect on "
+"the results."
+msgstr ""
+"``c`` 값을 기준으로 ``a`` 값 또는 ``b`` 값을 선택합니다. 거짓인 ``c`` 구성 요"
+"소의 경우 해당 ``a`` 구성 요소가 반환됩니다. true인 ``c`` 구성 요소의 경우 해"
+"당 ``b`` 구성 요소가 반환됩니다. 선택되지 않은 ``a`` 및 ``b``의 구성 요소는 "
+"잘못된 부동 소수점 값이 될 수 있으며 결과에 영향을 주지 않습니다."
+
+msgid ""
+"If ``a``, ``b``, and ``c`` are vector types the operation is "
+"performed :ref:`component-wise <shading_componentwise>`. ie. ``mix(vec2(42, "
+"314), vec2(9.8, 6e23), bvec2(true, false)))`` will return ``vec2(9.8, 314)``."
+msgstr ""
+"``a``, ``b`` 및 ``c``가 벡터 유형인 경우 작업은 :ref:`comComponent-wise "
+"<shading_comComponentwise>`로 수행됩니다. 즉. ``mix(vec2(42, 314), vec2(9.8, "
+"6e23), bvec2(true, false)))``는 ``vec2(9.8, 314)``를 반환합니다."
+
+msgid "Value returned when ``c`` is false."
+msgstr "``c``가 false인 경우 반환되는 값입니다."
+
+msgid "Value returned when ``c`` is true."
+msgstr "``c``가 true인 경우 반환되는 값입니다."
+
+msgid "The value used to select between ``a`` and ``b``."
+msgstr ""
+"내보내기에서 버퍼 섀도우(buffer shadow)와 레이 섀도우(ray shadow)간의 차이는 "
+"없습니다."
+
+msgid ""
+"|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_fma>`"
+msgstr ""
+"|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_fma>`"
+
+msgid ""
+"Performs, where possible, a fused multiply-add operation, returning ``a * b "
+"+ c``. In use cases where the return value is eventually consumed by a "
+"variable declared as precise:"
+msgstr ""
+"가능한 경우 융합된 곱셈 덧셈 연산을 수행하여 ``a * b + c``를 반환합니다. 반"
+"환 값이 결국 정확한 것으로 선언된 변수에 의해 소비되는 사용 사례:"
+
+msgid ""
+"``fma()`` is considered a single operation, whereas the expression ``a * b + "
+"c`` consumed by a variable declared as precise is considered two operations."
+msgstr ""
+"``fma()``는 단일 작업으로 간주되는 반면, 정밀로 선언된 변수에서 사용되는 표현"
+"식 ``a * b + c``는 두 작업으로 간주됩니다."
+
+msgid ""
+"The precision of ``fma()`` can differ from the precision of the expression "
+"``a * b + c``."
+msgstr "``fma()``의 정밀도는 ``a * b + c`` 표현식의 정밀도와 다를 수 있습니다."
+
+msgid ""
+"``fma()`` will be computed with the same precision as any other ``fma()`` "
+"consumed by a precise variable, giving invariant results for the same input "
+"values of a, b and c."
+msgstr ""
+"``fma()``는 정밀 변수가 사용하는 다른 ``fma()``와 동일한 정밀도로 계산되어 "
+"a, b 및 c의 동일한 입력 값에 대해 불변 결과를 제공합니다."
+
+msgid ""
+"Otherwise, in the absence of precise consumption, there are no special "
+"constraints on the number of operations or difference in precision between "
+"``fma()`` and the expression ``a * b + c``."
+msgstr ""
+"그렇지 않으면 정확한 소비가 없는 경우 ``fma()``와 ``a * b + c`` 표현 사이의 "
+"연산 횟수나 정밀도 차이에 대한 특별한 제한은 없습니다."
+
+msgid "The first value to be multiplied."
+msgstr "최종 결과물"
+
+msgid "The second value to be multiplied."
+msgstr "곱할 두 번째 값입니다."
+
+msgid "The value to be added to the result."
+msgstr "파일의 절대 경로"
+
+msgid "The value of ``a * b + c``."
+msgstr "``a * b + c``의 값입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fma.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fma.xhtml"
+
+msgid ""
+"|vec_type| **step**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_step>`"
+msgstr ""
+"|vec_type| **단계**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_step>`"
+
+msgid ""
+"|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+msgstr ""
+"|vec_type| **단계**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+
+msgid "Generates a step function by comparing b to a."
+msgstr "b를 a와 비교하여 계단 함수를 생성합니다."
+
+msgid ""
+"Equivalent to ``if (b < a) { return 0.0; } else { return 1.0; }``. For "
+"element i of the return value, 0.0 is returned if b[i] < a[i], and 1.0 is "
+"returned otherwise."
+msgstr ""
+"``if (b < a) { return 0.0; } else { return 1.0; }``와 동일합니다. 반환 값의 "
+"요소 i에 대해 b[i] < a[i]이면 0.0이 반환되고 그렇지 않으면 1.0이 반환됩니다."
+
+msgid "The location of the edge of the step function."
+msgstr "스크립트 하단에, 아래와 같은 함수를 정의합니다:"
+
+msgid "The value to be used to generate the step function."
+msgstr "계단 함수를 생성하는 데 사용되는 값입니다."
+
+msgid "``0.0`` or ``1.0``."
+msgstr "``0.0`` 또는 ``1.0``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml"
+
+msgid ""
+"|vec_type| **smoothstep**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+msgstr ""
+"|vec_type| **스무스스텝**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid ""
+"|vec_type| **smoothstep**\\ (\\ float a, float b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+msgstr ""
+"|vec_type| **부드러운 단계**\\ (\\ float a, float b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid ""
+"Performs smooth Hermite interpolation between ``0`` and ``1`` when a < c < "
+"b. This is useful in cases where a threshold function with a smooth "
+"transition is desired."
+msgstr ""
+"a < c < b인 경우 ``0``와 ``1`` 사이에서 부드러운 에르미트 보간을 수행합니다. "
+"이는 부드러운 전환이 가능한 임계값 기능이 필요한 경우에 유용합니다."
+
+msgid "Smoothstep is equivalent to:"
+msgstr "Smoothstep은 다음과 동일합니다."
+
+msgid "Results are undefined if ``a >= b``."
+msgstr "``a >= b``인 경우 결과가 정의되지 않습니다."
+
+msgid "The value of the lower edge of the Hermite function."
+msgstr "Hermite 함수의 하한값입니다."
+
+msgid "The value of the upper edge of the Hermite function."
+msgstr "Hermite 함수의 위쪽 가장자리 값입니다."
+
+msgid "The source value for interpolation."
+msgstr "변형 보간"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
+
+msgid ""
+"|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+msgstr ""
+"|vec_bool_type| **이스난**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+
+msgid ""
+"For each element i of the result, returns ``true`` if x[i] is positive or "
+"negative floating-point NaN (Not a Number) and false otherwise."
+msgstr ""
+"결과의 각 요소 i에 대해 x[i]가 양수 또는 음수 부동 소수점 NaN(숫자가 아님)이"
+"면 ``true``를 반환하고 그렇지 않으면 false를 반환합니다."
+
+msgid "The value to test for NaN."
+msgstr "최종 결과물"
+
+msgid "``true`` or ``false``."
+msgstr "``true`` 또는 ``false``."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isnan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isnan.xhtml"
+
+msgid ""
+"|vec_bool_type| **isinf**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isinf>`"
+msgstr ""
+"|vec_bool_type| **isinf**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isinf>`"
+
+msgid ""
+"For each element i of the result, returns ``true`` if x[i] is positive or "
+"negative floating-point infinity and false otherwise."
+msgstr ""
+"결과의 각 요소 i에 대해 x[i]가 양수 또는 음수 부동 소수점 무한대이면 ``true``"
+"를 반환하고 그렇지 않으면 false를 반환합니다."
+
+msgid "The value to test for infinity."
+msgstr "타입을 등록하는 데는 두 가지 시스템이 있습니다:"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isinf.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isinf.xhtml"
+
+msgid ""
+"|vec_int_type| **floatBitsToInt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToInt>`"
+msgstr ""
+"|vec_int_type| **floatBitsToInt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToInt>`"
+
+msgid "Returns the encoding of the floating-point parameters as ``int``."
+msgstr "부동 소수점 매개변수의 인코딩을 ``int``로 반환합니다."
+
+msgid "The floating-point bit-level representation is preserved."
+msgstr "부동 소수점 비트 수준 표현은 유지됩니다."
+
+msgid "The value whose floating-point encoding to return."
+msgstr "반환할 부동 소수점 인코딩의 값입니다."
+
+msgid "The floating-point encoding of ``x``."
+msgstr "``x``의 부동 소수점 인코딩입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"floatBitsToInt.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"floatBitsToInt.xhtml"
+
+msgid ""
+"|vec_uint_type| **floatBitsToUint**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToUint>`"
+msgstr ""
+"|vec_uint_type| **floatBitsToUint**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToUint>`"
+
+msgid "Returns the encoding of the floating-point parameters as ``uint``."
+msgstr "부동 소수점 매개변수의 인코딩을 ``uint``로 반환합니다."
+
+msgid ""
+"|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
+"x) :ref:`🔗<shader_func_intBitsToFloat>`"
+msgstr ""
+"|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
+"x) :ref:`🔗<shader_func_intBitsToFloat>`"
+
+msgid ""
+"Converts a bit encoding to a floating-point value. Opposite of "
+"`floatBitsToInt<shader_func_floatBitsToInt>`"
+msgstr ""
+"비트 인코딩을 부동 소수점 값으로 변환합니다. "
+"`floatBitsToInt<shader_func_floatBitsToInt>`의 반대"
+
+msgid ""
+"If the encoding of a ``NaN`` is passed in ``x``, it will not signal and the "
+"resulting value will be undefined."
+msgstr ""
+"``NaN``의 인코딩이 ``x``에 전달되면 시그널가 아니며 결과 값이 정의되지 않습니"
+"다."
+
+msgid ""
+"If the encoding of a floating-point infinity is passed in parameter ``x``, "
+"the resulting floating-point value is the corresponding (positive or "
+"negative) floating-point infinity."
+msgstr ""
+"부동 소수점 무한대의 인코딩이 매개변수 ``x``에 전달되는 경우 결과 부동 소수"
+"점 값은 해당(양수 또는 음수) 부동 소수점 무한대입니다."
+
+msgid "The bit encoding to return as a floating-point value."
+msgstr "부동 소수점 값으로 반환할 비트 인코딩입니다."
+
+msgid "A floating-point value."
+msgstr "부동 소수점 숫자 (실수)"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"intBitsToFloat.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"intBitsToFloat.xhtml"
+
+msgid ""
+"|vec_type| **uintBitsToFloat**\\ (\\ |vec_uint_type| "
+"x) :ref:`🔗<shader_func_uintBitsToFloat>`"
+msgstr ""
+"|vec_type| **uintBitsToFloat**\\ (\\ |vec_uint_type| "
+"x) :ref:`🔗<shader_func_uintBitsToFloat>`"
+
+msgid ""
+"Converts a bit encoding to a floating-point value. Opposite of "
+"`floatBitsToUint<shader_func_floatBitsToUint>`"
+msgstr ""
+"비트 인코딩을 부동 소수점 값으로 변환합니다. "
+"`floatBitsToUint<shader_func_floatBitsToUint>`의 반대"
+
+msgid "Geometric functions"
+msgstr "정적 함수"
+
 msgid "float"
 msgstr "float"
+
+msgid ":ref:`length<shader_func_length>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`length<shader_func_length>`\\ (\\ |vec_type| x)"
+
+msgid "Vector length."
+msgstr "벡터"
+
+msgid ":ref:`distance<shader_func_distance>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ""
+":ref:`distance<shader_func_distance>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid "Distance between vectors i.e ``length(a - b)``."
+msgstr "벡터 사이의 거리(예: ``length(a - b)``)"
+
+msgid ":ref:`dot<shader_func_dot>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`dot<shader_func_dot>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid "Dot product."
+msgstr "내적"
+
+msgid "vec3"
+msgstr "vec3"
+
+msgid ":ref:`cross<shader_func_cross>`\\ (\\ vec3 a, vec3 b)"
+msgstr ":ref:`cross<shader_func_cross>`\\ (\\ vec3 a, vec3 b)"
+
+msgid "Cross product."
+msgstr "외적"
+
+msgid ":ref:`normalize<shader_func_normalize>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`normalize<shader_func_normalize>`\\ (\\ |vec_type| x)"
+
+msgid "Normalize to unit length."
+msgstr "단위 길이로 정규화합니다."
+
+msgid ":ref:`reflect<shader_func_reflect>`\\ (\\ vec3 I, vec3 N)"
+msgstr ":ref:`reflect<shader_func_reflect>`\\ (\\ vec3 I, vec3 N)"
+
+msgid "Reflect."
+msgstr "반사"
+
+msgid ":ref:`refract<shader_func_refract>`\\ (\\ vec3 I, vec3 N, float eta)"
+msgstr ":ref:`refract<shader_func_refract>`\\ (\\ vec3 I, vec3 N, 플로트 에타)"
+
+msgid "Refract."
+msgstr "굴절률"
+
+msgid ""
+":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
+"I, |vec_type| Nref)"
+msgstr ""
+":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
+"I, |vec_type| Nref)"
+
+msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
+msgstr ""
+"``dot(Nref, I)`` < 0이면 ``N``를 반환하고, 그렇지 않으면 ``-N``를 반환합니다."
+
+msgid "|mat_type|"
+msgstr "|mat_type|"
+
+msgid ""
+":ref:`matrixCompMult<shader_func_matrixCompMult>`\\ (\\ |mat_type| x, |"
+"mat_type| y)"
+msgstr ""
+":ref:`matrixCompMult<shader_func_matrixCompMult>`\\ (\\ |mat_type| x, |"
+"mat_type| y)"
+
+msgid "Matrix component multiplication."
+msgstr "행렬 곱"
+
+msgid ""
+":ref:`outerProduct<shader_func_outerProduct>`\\ (\\ |vec_type| column, |"
+"vec_type| row)"
+msgstr ""
+":ref:`outerProduct<shader_func_outerProduct>`\\(\\ |vec_type| 열, |vec_type| "
+"행)"
+
+msgid "Matrix outer product."
+msgstr "내적"
+
+msgid ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`transpose<shader_func_transpose>`\\(\\ |mat_type|m)"
 
 msgid "Transpose matrix."
 msgstr "행렬을 전치합니다."
 
+msgid ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`determinant<shader_func_determinant>`\\(\\ |mat_type|m)"
+
+msgid "Matrix determinant."
+msgstr "행렬 팁"
+
+msgid ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`inverse<shader_func_inverse>`\\(\\ |mat_type|m)"
+
+msgid "Inverse matrix."
+msgstr "역변환"
+
+msgid "Geometric function descriptions"
+msgstr "설명"
+
+msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
+msgstr "부동 소수점 **길이**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
+
+msgid ""
+"Returns the length of the vector. ie. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... "
+"+ x[n] * x[n])``"
+msgstr ""
+"벡터의 길이를 반환합니다. 즉. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... + x[n] "
+"* x[n])``"
+
+msgid "The vector"
+msgstr "원격 인스펙터."
+
+msgid "The length of the vector."
+msgstr "파일의 절대 경로"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
+
+msgid ""
+"float **distance**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_distance>`"
+msgstr ""
+"부동 소수점 **거리**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_distance>`"
+
+msgid "Returns the distance between the two points a and b."
+msgstr "두 점 a와 b 사이의 거리를 반환합니다."
+
+msgid "i.e., ``length(b - a);``"
+msgstr "즉, ``length(b - a);``"
+
+msgid "The first point."
+msgstr "최종 결과물"
+
+msgid "The second point."
+msgstr "두 번째 요점."
+
+msgid "The scalar distance between the points"
+msgstr "점 사이의 스칼라 거리"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
+
+msgid ""
+"float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
+msgstr ""
+"부동 소수점 **점**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_dot>`"
+
+msgid ""
+"Returns the dot product of two vectors, ``a`` and ``b``. i.e., ``a.x * b.x + "
+"a.y * b.y + ...``"
+msgstr ""
+"두 벡터 ``a`` 및 ``b``의 내적을 반환합니다. 즉, ``a.x * b.x + a.y * b.y "
+"+ ...``"
+
+msgid "The first vector."
+msgstr "원격 인스펙터."
+
+msgid "The second vector."
+msgstr "원격 인스펙터."
+
+msgid "The dot product."
+msgstr "내적"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
+
+msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+msgstr "vec3 **십자가**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+
+msgid "Returns the cross product of two vectors. i.e.:"
+msgstr "두 벡터의 외적을 반환합니다. 즉:"
+
+msgid "The cross product of ``a`` and ``b``."
+msgstr "``a``와 ``b``의 외적입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
+
+msgid ""
+"|vec_type| **normalize**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_normalize>`"
+msgstr ""
+"|vec_type| **정규화**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_normalize>`"
+
+msgid ""
+"Returns a vector with the same direction as ``x`` but with length ``1.0``."
+msgstr "``x``와 방향은 같지만 길이는 ``1.0``인 벡터를 반환합니다."
+
+msgid "The vector to normalize."
+msgstr "정규화할 벡터입니다."
+
+msgid "The normalized vector."
+msgstr "정규화된 벡터입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/normalize.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/normalize.xhtml"
+
+msgid "vec3 **reflect**\\ (\\ vec3 I, vec3 N) :ref:`🔗<shader_func_reflect>`"
+msgstr "vec3 **반영**\\ (\\ vec3 I, vec3 N) :ref:`🔗<shader_func_reflect>`"
+
+msgid "Calculate the reflection direction for an incident vector."
+msgstr "입사 벡터의 반사 방향을 계산합니다."
+
+msgid ""
+"For a given incident vector ``I`` and surface normal ``N`` reflect returns "
+"the reflection direction calculated as ``I - 2.0 * dot(N, I) * N``."
+msgstr ""
+"주어진 입사 벡터 ``I`` 및 표면 법선 ``N`` Reflect에 대해 반사 방향은 ``I - "
+"2.0 * dot(N, I) * N``로 계산되어 반환됩니다."
+
+msgid "``N`` should be normalized in order to achieve the desired result."
+msgstr "원하는 결과를 얻으려면 ``N``를 정규화해야 합니다."
+
+msgid "param I"
+msgstr "매개변수 I"
+
+msgid "The incident vector."
+msgstr "단위 벡터"
+
+msgid "param N"
+msgstr "매개변수 N"
+
+msgid "The normal vector."
+msgstr "원격 인스펙터."
+
+msgid "The reflection vector."
+msgstr "최종 결과물"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/reflect.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/reflect.xhtml"
+
+msgid ""
+"vec3 **refract**\\ (\\ vec3 I, vec3 N, float "
+"eta) :ref:`🔗<shader_func_refract>`"
+msgstr ""
+"vec3 **굴절**\\ (\\ vec3 I, vec3 N, float eta) :ref:`🔗<shader_func_refract>`"
+
+msgid "Calculate the refraction direction for an incident vector."
+msgstr "입사 벡터의 굴절 방향을 계산합니다."
+
+msgid ""
+"For a given incident vector ``I``, surface normal ``N`` and ratio of indices "
+"of refraction, ``eta``, refract returns the refraction vector, ``R``."
+msgstr ""
+"주어진 입사 벡터 ``I``, 표면 법선 ``N`` 및 굴절 지수 비율 ``eta``에 대해 "
+"refract는 굴절 벡터 ``R``를 반환합니다."
+
+msgid "``R`` is calculated as:"
+msgstr "``R``는 다음과 같이 계산됩니다."
+
+msgid ""
+"The input parameters I and N should be normalized in order to achieve the "
+"desired result."
+msgstr "원하는 결과를 얻으려면 입력 매개변수 I와 N을 정규화해야 합니다."
+
+msgid "param eta"
+msgstr "매개변수"
+
+msgid "The ratio of indices of refraction."
+msgstr "명명된 타입"
+
+msgid "The refraction vector."
+msgstr "굴절 벡터입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"
+
+msgid ""
+"|vec_type| **faceforward**\\ (\\ |vec_type| N, |vec_type| I, |vec_type| "
+"Nref) :ref:`🔗<shader_func_faceforward>`"
+msgstr ""
+"|vec_type| **앞으로**\\ (\\ |vec_type| N, |vec_type| I, |vec_type| "
+"Nref) :ref:`🔗<shader_func_faceforward>`"
+
+msgid "Returns a vector pointing in the same direction as another."
+msgstr "다른 벡터와 동일한 방향을 가리키는 벡터를 반환합니다."
+
+msgid ""
+"Orients a vector to point away from a surface as defined by its normal. If "
+"``dot(Nref, I) < 0`` faceforward returns ``N``, otherwise it returns ``-N``."
+msgstr ""
+"법선에 의해 정의된 표면에서 멀어지도록 벡터의 방향을 지정합니다. ``dot(Nref, "
+"I) < 0`` 페이스포워드가 ``N``를 반환하면, 그렇지 않으면 ``-N``를 반환합니다."
+
+msgid "The vector to orient."
+msgstr "편집기"
+
+msgid "param Nref"
+msgstr "매개변수 Nref"
+
 msgid "The reference vector."
 msgstr "참조 벡터."
+
+msgid "The oriented vector."
+msgstr "Invert Color(색상 반전)"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml"
+
+msgid ""
+"|mat_type| **matrixCompMult**\\ (\\ |mat_type| x, |mat_type| "
+"y) :ref:`🔗<shader_func_matrixCompMult>`"
+msgstr ""
+"|mat_type| **matrixCompMult**\\ (\\ |mat_type| x, |mat_type| "
+"y) :ref:`🔗<shader_func_matrixCompMult>`"
+
+msgid ""
+"Perform a :ref:`component-wise <shading_componentwise>` multiplication of "
+"two matrices."
+msgstr ""
+"두 행렬의 :ref:`comComponent-wise <shading_comComponentwise>` 곱셈을 수행합니"
+"다."
+
+msgid ""
+"Performs a component-wise multiplication of two matrices, yielding a result "
+"matrix where each component, ``result[i][j]`` is computed as the scalar "
+"product of ``x[i][j]`` and ``y[i][j]``."
+msgstr ""
+"두 행렬의 구성요소별 곱셈을 수행하여 각 구성요소 ``result[i][j]``가 ``x[i]"
+"[j]`` 및 ``y[i][j]``의 스칼라 곱으로 계산되는 결과 행렬을 생성합니다."
+
+msgid "The first matrix multiplicand."
+msgstr "첫 번째 행렬 피승수입니다."
+
+msgid "The second matrix multiplicand."
+msgstr "두 번째 행렬 피승수입니다."
+
+msgid "The resultant matrix."
+msgstr "물리 머티리얼"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"matrixCompMult.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"matrixCompMult.xhtml"
+
+msgid ""
+"|mat_type| **outerProduct**\\ (\\ |vec_type| column, |vec_type| "
+"row) :ref:`🔗<shader_func_outerProduct>`"
+msgstr ""
+"|mat_type| **외부제품**\\ (\\ |vec_type| 열, |vec_type| "
+"행) :ref:`🔗<shader_func_outerProduct>`"
+
+msgid "Calculate the outer product of a pair of vectors."
+msgstr "벡터 쌍의 외부 곱을 계산합니다."
+
+msgid ""
+"Does a linear algebraic matrix multiply ``column * row``, yielding a matrix "
+"whose number of rows is the number of components in ``column`` and whose "
+"number of columns is the number of components in ``row``."
+msgstr ""
+"선형 대수 행렬이 ``column * row``를 곱하여 행 수가 ``column``의 구성 요소 수"
+"이고 열 수가 ``row``의 구성 요소 수인 행렬을 생성합니까?"
+
+msgid "param column"
+msgstr "매개변수 열"
+
+msgid "The column vector for multiplication."
+msgstr "행렬 곱"
+
+msgid "param row"
+msgstr "매개변수 행"
+
+msgid "The row vector for multiplication."
+msgstr "행렬 곱"
+
+msgid "The outer product matrix."
+msgstr "내적"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/outerProduct.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/outerProduct.xhtml"
+
+msgid ""
+"|mat_type| **transpose**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_transpose>`"
+msgstr ""
+"|mat_type| **전치**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_transpose>`"
+
+msgid "Calculate the transpose of a matrix."
+msgstr "애니메이션 만들기"
+
+msgid "param m"
+msgstr "매개변수 m"
+
+msgid "The matrix to transpose."
+msgstr "3x2 행렬(Matrix)로 2D 변형에 사용됩니다."
+
+msgid "A new matrix that is the transpose of the input matrix ``m``."
+msgstr "입력 행렬 ``m``를 전치한 새로운 행렬입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/transpose.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/transpose.xhtml"
+
+msgid ""
+"float **determinant**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_determinant>`"
+msgstr "float **행렬**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_determinant>`"
+
+msgid "Calculate the determinant of a matrix."
+msgstr "행렬의 행렬식을 계산합니다."
+
+msgid "The matrix."
+msgstr "전치"
+
+msgid "The determinant of the input matrix ``m``."
+msgstr "입력 행렬 ``m``의 행렬식입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/determinant.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/determinant.xhtml"
+
+msgid ""
+"|mat_type| **inverse**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_inverse>`"
+msgstr "|mat_type| **역**\\ (\\ |mat_type|m) :ref:`🔗<shader_func_inverse>`"
+
+msgid "Calculate the inverse of a matrix."
+msgstr "행렬의 역행렬을 계산합니다."
+
+msgid ""
+"The values in the returned matrix are undefined if ``m`` is singular or "
+"poorly-conditioned (nearly singular)."
+msgstr ""
+"``m``가 특이값이거나 조건이 좋지 않은(거의 특이점) 경우 반환된 행렬의 값은 정"
+"의되지 않습니다."
+
+msgid "The matrix of which to take the inverse."
+msgstr "역행렬을 취하는 행렬입니다."
+
+msgid "A new matrix which is the inverse of the input matrix ``m``."
+msgstr "입력 행렬 ``m``의 역행렬인 새로운 행렬."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml"
+
+msgid "Comparison functions"
+msgstr "변형 기능들"
+
+msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on < int/uint/float vectors."
+msgstr "< int/uint/float 벡터에 대한 부울 벡터 비교."
+
+msgid ""
+":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on > int/uint/float vectors."
+msgstr "int/uint/float 벡터에 대한 Bool 벡터 비교."
+
+msgid ""
+":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+msgstr ""
+":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+
+msgid "Bool vector comparison on <= int/uint/float vectors."
+msgstr "<= int/uint/float 벡터에 대한 부울 벡터 비교."
+
+msgid ""
+":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
+"vec_type| y)"
+msgstr ""
+":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+
+msgid "Bool vector comparison on >= int/uint/float vectors."
+msgstr ">= int/uint/float 벡터에 대한 부울 벡터 비교."
+
+msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on == int/uint/float vectors."
+msgstr "== int/uint/float 벡터에 대한 부울 벡터 비교."
+
+msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on != int/uint/float vectors."
+msgstr "!= int/uint/float 벡터에 대한 부울 벡터 비교."
 
 msgid "bool"
 msgstr "bool"
 
+msgid ":ref:`any<shader_func_any>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`any<shader_func_any>`\\ (\\ |vec_bool_type| x)"
+
+msgid "``true`` if any component is ``true``, ``false`` otherwise."
+msgstr ""
+"구성 요소가 ``true``인 경우 ``true``, 그렇지 않은 경우 ``false``입니다."
+
+msgid ":ref:`all<shader_func_all>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`all<shader_func_all>`\\ (\\ |vec_bool_type| x)"
+
+msgid "``true`` if all components are ``true``, ``false`` otherwise."
+msgstr ""
+"모든 구성 요소가 ``true``인 경우 ``true``, 그렇지 않은 경우 ``false``입니다."
+
+msgid ":ref:`not<shader_func_not>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`not<shader_func_not>`\\ (\\ |vec_bool_type| x)"
+
+msgid "Invert boolean vector."
+msgstr "Invert Color(색상 반전)"
+
+msgid "Comparison function descriptions"
+msgstr "콜리전 예외"
+
+msgid ""
+"|vec_bool_type| **lessThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThan>`"
+msgstr ""
+"|vec_bool_type| **lessThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThan>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` less-than comparison "
+"of two vectors."
+msgstr ""
+"두 벡터의 :ref:`component-wise<shading_componentwise>` 미만 비교를 수행합니"
+"다."
+
+msgid "The first vector to compare."
+msgstr "최종 결과물"
+
+msgid "The second vector to compare."
+msgstr "비교할 두 번째 벡터입니다."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] < y[i]``."
+msgstr "각 요소 ``i``가 ``x[i] < y[i]``로 계산되는 부울 벡터입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThan.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThan.xhtml"
+
+msgid ""
+"|vec_bool_type| **greaterThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThan>`"
+msgstr ""
+"|vec_bool_type| **보다 큼**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThan>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` greater-than "
+"comparison of two vectors."
+msgstr ""
+"두 벡터의 비교보다 큰 :ref:`component-wise<shading_componentwise>`를 수행합니"
+"다."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] > y[i]``."
+msgstr "각 요소 ``i``가 ``x[i] > y[i]``로 계산되는 부울 벡터입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/greaterThan.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/greaterThan.xhtml"
+
+msgid ""
+"|vec_bool_type| **lessThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThanEqual>`"
+msgstr ""
+"|vec_bool_type| **lessThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThanEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` less-than-or-equal "
+"comparison of two vectors."
+msgstr ""
+"두 벡터의 :ref:`component-wise<shading_componentwise>` 작거나 같음 비교를 수"
+"행합니다."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] <= y[i]``."
+msgstr "각 요소 ``i``가 ``x[i] <= y[i]``로 계산되는 부울 벡터입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThanEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThanEqual.xhtml"
+
+msgid ""
+"|vec_bool_type| **greaterThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThanEqual>`"
+msgstr ""
+"|vec_bool_type| **보다 큼**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThanEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` greater-than-or-"
+"equal comparison of two vectors."
+msgstr ""
+"두 벡터의 :ref:`component-wise<shading_componentwise>` 크거나 같음 비교를 수"
+"행합니다."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] >= y[i]``."
+msgstr "각 요소 ``i``가 ``x[i] >= y[i]``로 계산되는 부울 벡터입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"greaterThanEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"greaterThanEqual.xhtml"
+
+msgid ""
+"|vec_bool_type| **equal**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_equal>`"
+msgstr ""
+"|vec_bool_type| **같음**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_equal>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` equal-to comparison "
+"of two vectors."
+msgstr ""
+"두 벡터의 :ref:`component-wise<shading_componentwise>` 동일 비교를 수행합니"
+"다."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] == y[i]``."
+msgstr "각 요소 ``i``가 ``x[i] == y[i]``로 계산되는 부울 벡터입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/equal.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/equal.xhtml"
+
+msgid ""
+"|vec_bool_type| **notEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_notEqual>`"
+msgstr ""
+"|vec_bool_type| **같지 않음**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_notEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` not-equal-to "
+"comparison of two vectors."
+msgstr ""
+"두 벡터의 :ref:`component-wise<shading_componentwise>` 같지 않음 비교를 수행"
+"합니다."
+
+msgid "The first vector for comparison."
+msgstr "비교를 위한 첫 번째 벡터입니다."
+
+msgid "The second vector for comparison."
+msgstr "비교를 위한 두 번째 벡터입니다."
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] != y[i]``."
+msgstr "각 요소 ``i``가 ``x[i] != y[i]``로 계산되는 부울 벡터입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
+
+msgid "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
+msgstr "bool **모든**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
+
+msgid ""
+"Returns ``true`` if any element of a boolean vector is ``true``, ``false`` "
+"otherwise."
+msgstr ""
+"부울 벡터의 요소 중 하나라도 ``true``이면 ``true``를 반환하고, 그렇지 않으면 "
+"``false``를 반환합니다."
+
+msgid "Functionally equivalent to:"
+msgstr "기능적으로 다음과 동일합니다."
+
+msgid "The vector to be tested for truth."
+msgstr "진실 여부를 테스트할 벡터입니다."
+
+msgid "True if any element of x is true and false otherwise."
+msgstr "x의 요소 중 하나라도 참이면 참이고 그렇지 않으면 거짓입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
+
+msgid "bool **all**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_all>`"
+msgstr "bool **모두**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_all>`"
+
+msgid ""
+"Returns ``true`` if all elements of a boolean vector are ``true``, ``false`` "
+"otherwise."
+msgstr ""
+"부울 벡터의 모든 요소가 ``true``이면 ``true``를 반환하고, 그렇지 않으면 "
+"``false``를 반환합니다."
+
+msgid "``true`` if all elements of ``x`` are ``true`` and ``false`` otherwise."
+msgstr ""
+"``x``의 모든 요소가 ``true``이면 ``true``이고 그렇지 않으면 ``false``입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/all.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/all.xhtml"
+
+msgid ""
+"|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+msgstr ""
+"|vec_bool_type| **아님**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+
+msgid "Logically invert a boolean vector."
+msgstr "Invert Color(색상 반전)"
+
+msgid "The vector to be inverted."
+msgstr "반전할 벡터입니다."
+
+msgid "A new boolean vector for which each element i is computed as !x[i]."
+msgstr "각 요소 i가 !x[i]로 계산되는 새로운 부울 벡터입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
+
+msgid "Texture functions"
+msgstr "기타 함수"
+
+msgid "ivec2"
+msgstr "아이벡2"
+
+msgid "ivec3"
+msgstr "아이벡3"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2D| s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2D| s, int lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCube s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ SamplerCube s, int lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCubeArray s, int "
+"lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ SamplerCubeArray s, int "
+"lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2DArray| s, int "
+"lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2DArray| s, int "
+"lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+
+msgid "Get the size of a texture."
+msgstr "텍스처 가져오기"
+
+msgid ""
+"For performance reasons, this function should be avoided as it always "
+"performs a full texture read. When possible, you should pass the texture "
+"size as a uniform instead."
+msgstr ""
+"성능상의 이유로 이 함수는 항상 전체 텍스처 읽기를 수행하므로 피해야 합니다. "
+"가능하다면 텍스처 크기를 대신 균일하게 전달해야 합니다."
+
+msgid "vec2"
+msgstr "vec2"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2D| s, "
+"vec2 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2D| s, "
+"vec2 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2DArray| "
+"s, vec2 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2DArray| "
+"s, vec2 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler3D| s, "
+"vec3 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler3D| s, "
+"vec3 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
+"vec3 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ 샘플러큐브 s, vec3 "
+"p)"
+
+msgid ""
+"Compute the level-of-detail that would be used to sample from a texture."
+msgstr "텍스처에서 샘플링하는 데 사용될 세부 수준을 계산합니다."
+
+msgid "int"
+msgstr "타일 칠하기"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler2D| "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler2D| "
+"초)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |"
+"gsampler2DArray| s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |"
+"gsampler2DArray| 초)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler3D| "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler3D| "
+"초)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ 샘플러큐브 s)"
+
+msgid "Get the number of accessible mipmap levels of a texture."
+msgstr "텍스처의 접근 가능한 밉맵 레벨 수를 가져옵니다."
+
+msgid "|gvec4_type|"
+msgstr "|gvec4_type|"
+
+msgid "vec4"
+msgstr "vec4"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2DArray| s, vec3 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2DArray| s, vec3 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCube s, vec3 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ 샘플러큐브 s, vec3 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCubeArray s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ SamplerCubeArray s, vec4 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ SamplerExternalOES s, vec2 p [, "
+"float bias] )"
+
+msgid "Performs a texture read."
+msgstr "텍스처 읽기를 수행합니다."
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec3 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec3 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec4 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler3D| s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler3D| s, vec4 p [, "
+"float bias] )"
+
+msgid "Performs a texture read with projection."
+msgstr "투영을 통해 텍스처 읽기를 수행합니다."
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2D| s, vec2 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2D| s, vec2 p, 플로"
+"트 로드)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2DArray| s, vec3 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2DArray| s, vec3 p, "
+"플로트 로드)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler3D| s, vec3 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler3D| s, vec3 p, 플로"
+"트 로드)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCube s, vec3 p, float "
+"lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ SamplerCube s, vec3 p, float "
+"lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCubeArray s, vec4 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ SamplerCubeArray s, vec4 p, "
+"float lod)"
+
+msgid "Performs a texture read at custom mipmap."
+msgstr "사용자 정의 밉맵에서 텍스처 읽기를 수행합니다."
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec3 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec3 "
+"p, 플로트 로드)"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec4 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec4 "
+"p, 플로트 로드)"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler3D| s, vec4 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler3D| s, vec4 "
+"p, 플로트 로드)"
+
+msgid "Performs a texture read with projection/LOD."
+msgstr "투영/LOD를 사용하여 텍스처 읽기를 수행합니다."
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2D| s, vec2 p, "
+"vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2D| s, vec2 p, "
+"vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2DArray| s, vec3 "
+"p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2DArray| s, vec3 "
+"p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler3D| s, vec3 p, "
+"vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler3D| s, vec3 p, "
+"vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCube s, vec3 p, "
+"vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ 샘플러큐브 s, vec3 p, vec3 "
+"dPdx, vec3 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCubeArray s, vec3 "
+"p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ SamplerCubeArray s, vec3 "
+"p, vec3 dPdx, vec3 dPdy)"
+
+msgid "Performs a texture read with explicit gradients."
+msgstr "명시적인 그라데이션을 사용하여 텍스처 읽기를 수행합니다."
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec3 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec4 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec4 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
+"vec4 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
+"vec4 p, vec3 dPdx, vec3 dPdy)"
+
+msgid "Performs a texture read with projection/LOD and with explicit"
+msgstr "투영/LOD 및 명시적을 사용하여 텍스처 읽기를 수행합니다."
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2DArray| s, ivec3 "
+"p, int lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2DArray| s, ivec3 "
+"p, int lod)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod)"
+
+msgid "Fetches a single texel using integer coordinates."
+msgstr "정수 좌표를 사용하여 단일 텍셀을 가져옵니다."
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2D| s, vec2 p "
+"[, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2D| s, vec2 p "
+"[, int comps] )"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2DArray| s, "
+"vec3 p [, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2DArray| s, "
+"vec3 p [, int comps] )"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ samplerCube s, vec3 p "
+"[, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ 샘플러큐브 s, vec3 p "
+"[, int comps] )"
+
+msgid "Gathers four texels from a texture."
+msgstr "텍스처 가져오기"
+
+msgid ":ref:`dFdx<shader_func_dFdx>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdx<shader_func_dFdx>`\\ (\\ |vec_type| p)"
+
+msgid ""
+"Derivative with respect to ``x`` window coordinate, automatic granularity."
+msgstr "``x`` 창 좌표에 대한 파생, 자동 세분성."
+
+msgid ":ref:`dFdxCoarse<shader_func_dFdxCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdxCoarse<shader_func_dFdxCoarse>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``x`` window coordinate, course granularity."
+msgstr "``x`` 창 좌표, 코스 세분성을 기준으로 파생되었습니다."
+
+msgid "Not available when using the Compatibility renderer."
+msgstr "호환성 렌더러를 사용하는 경우에는 사용할 수 없습니다."
+
+msgid ":ref:`dFdxFine<shader_func_dFdxFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdxFine<shader_func_dFdxFine>`\\ (\\ |vec_type| 피)"
+
+msgid "Derivative with respect to ``x`` window coordinate, fine granularity."
+msgstr "``x`` 창 좌표를 기준으로 한 파생, 미세한 세분성입니다."
+
+msgid ":ref:`dFdy<shader_func_dFdy>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdy<shader_func_dFdy>`\\ (\\ |vec_type| 피)"
+
+msgid ""
+"Derivative with respect to ``y`` window coordinate, automatic granularity."
+msgstr "``y`` 창 좌표에 대한 파생, 자동 세분성."
+
+msgid ":ref:`dFdyCoarse<shader_func_dFdyCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdyCoarse<shader_func_dFdyCoarse>`\\ (\\ |vec_type| 피)"
+
+msgid "Derivative with respect to ``y`` window coordinate, course granularity."
+msgstr "``y`` 창 좌표, 코스 세분성을 기준으로 파생되었습니다."
+
+msgid ":ref:`dFdyFine<shader_func_dFdyFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdyFine<shader_func_dFdyFine>`\\ (\\ |vec_type| 피)"
+
+msgid "Derivative with respect to ``y`` window coordinate, fine granularity."
+msgstr "``y`` 창 좌표를 기준으로 한 파생, 미세한 세분성입니다."
+
+msgid ":ref:`fwidth<shader_func_fwidth>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidth<shader_func_fwidth>`\\ (\\ |vec_type| 피)"
+
+msgid "Sum of absolute derivative in ``x`` and ``y``."
+msgstr "``x`` 및 ``y``의 절대 도함수 합계입니다."
+
+msgid ":ref:`fwidthCoarse<shader_func_fwidthCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidthCoarse<shader_func_fwidthCoarse>`\\ (\\ |vec_type| 피)"
+
+msgid ":ref:`fwidthFine<shader_func_fwidthFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidthFine<shader_func_fwidthFine>`\\ (\\ |vec_type| 피)"
+
+msgid "Texture function descriptions"
+msgstr "설명"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ |gsampler2D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ |gsampler2D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ samplerCube s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ SamplerCube s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ samplerCubeArray s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ SamplerCubeArray s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec3 **textureSize**\\ (\\ |gsampler2DArray| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec3 **textureSize**\\ (\\ |gsampler2DArray| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec3 **textureSize**\\ (\\ |gsampler3D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec3 **textureSize**\\ (\\ |gsampler3D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
 msgid "Retrieves the dimensions of a level of a texture."
 msgstr "텍스처의 레벨의 차원을 받아옵니다."
+
+msgid ""
+"Returns the dimensions of level ``lod`` (if present) of the texture bound to "
+"sampler."
+msgstr ""
+"샘플러에 바인딩된 텍스처의 레벨 ``lod``(있는 경우)의 크기를 반환합니다."
+
+msgid ""
+"The components in the return value are filled in, in order, with the width, "
+"height and depth of the texture. For the array forms, the last component of "
+"the return value is the number of layers in the texture array."
+msgstr ""
+"반환 값의 구성 요소는 순서대로 텍스처의 너비, 높이, 깊이로 채워집니다. 배열 "
+"형식의 경우 반환 값의 마지막 구성 요소는 텍스처 배열의 레이어 수입니다."
+
+msgid "param s"
+msgstr "매개변수"
+
+msgid "The sampler to which the texture whose dimensions to retrieve is bound."
+msgstr "검색할 차원의 텍스처가 바인딩되는 샘플러입니다."
+
+msgid "param lod"
+msgstr "매개변수 로드"
+
+msgid "The level of the texture for which to retrieve the dimensions."
+msgstr "치수를 검색할 텍스처 수준입니다."
+
+msgid ""
+"The dimensions of level ``lod`` (if present) of the texture bound to sampler."
+msgstr "샘플러에 바인딩된 텍스처의 레벨 ``lod``(있는 경우) 크기입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureSize.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureSize.xhtml"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2D| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2D| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2DArray| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2DArray| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler3D| s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler3D| s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ samplerCube s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ SamplerCube s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
 
 msgid "Available only in the fragment shader."
 msgstr "프래그먼트 셰이더에서만 사용 가능합니다."
 
+msgid ""
+"The mipmap array(s) that would be accessed is returned in the x component of "
+"the return value. The computed level-of-detail relative to the base level is "
+"returned in the y component of the return value."
+msgstr ""
+"액세스되는 밉맵 배열은 반환 값의 x 구성 요소로 반환됩니다. 기본 수준을 기준으"
+"로 계산된 세부 수준은 반환 값의 y 구성 요소에 반환됩니다."
+
+msgid ""
+"If called on an incomplete texture, the result of the operation is undefined."
+msgstr "불완전한 텍스처에 대해 호출하면 작업 결과가 정의되지 않습니다."
+
+msgid ""
+"The sampler to which the texture whose level-of-detail will be queried is "
+"bound."
+msgstr "세부 수준을 쿼리할 텍스처가 바인딩되는 샘플러입니다."
+
+msgid "param p"
+msgstr "매개변수 p"
+
+msgid "The texture coordinates at which the level-of-detail will be queried."
+msgstr "세부 수준을 쿼리할 텍스처 좌표입니다."
+
+msgid "See description."
+msgstr "설명"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLod.xhtml"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler2D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler2D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler2DArray| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler2DArray| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler3D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler3D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ samplerCube "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ SamplerCube "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid "Compute the number of accessible mipmap levels of a texture."
+msgstr "텍스처의 액세스 가능한 밉맵 수준 수를 계산합니다."
+
+msgid ""
+"If called on an incomplete texture, or if no texture is associated with "
+"sampler, ``0`` is returned."
+msgstr ""
+"불완전한 텍스처에 대해 호출되거나 샘플러와 연결된 텍스처가 없는 경우 ``0``가 "
+"반환됩니다."
+
+msgid ""
+"The sampler to which the texture whose mipmap level count will be queried is "
+"bound."
+msgstr "밉맵 레벨 개수를 쿼리할 텍스처가 바인딩되는 샘플러입니다."
+
+msgid "The number of accessible mipmap levels in the texture, or ``0``."
+msgstr "텍스처에서 액세스 가능한 밉맵 수준 수 또는 ``0``입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLevels.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLevels.xhtml"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **텍스처**\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2DArray| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **텍스처**\\ (\\ |gsampler2DArray| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **텍스처**\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerCube s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **텍스처**\\ (\\ SamplerCube s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerCubeArray s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **텍스처**\\ (\\ SamplerCubeArray s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerExternalOES s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **텍스처**\\ (\\ SamplerExternalOES s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
 msgid "Retrieves texels from a texture."
 msgstr "텍스처에서 텍셀을 받아옵니다."
 
+msgid ""
+"Samples texels from the texture bound to ``s`` at texture coordinate ``p``. "
+"An optional bias, specified in ``bias`` is included in the level-of-detail "
+"computation that is used to choose mipmap(s) from which to sample."
+msgstr ""
+"텍스처 좌표 ``p``에서 ``s``에 바인딩된 텍스처에서 텍셀을 샘플링합니다. "
+"``bias``에 지정된 선택적 편향은 샘플링할 밉맵을 선택하는 데 사용되는 세부 수"
+"준 계산에 포함됩니다."
+
+msgid ""
+"For shadow forms, the last component of ``p`` is used as Dsub and the array "
+"layer is specified in the second to last component of ``p``. (The second "
+"component of ``p`` is unused for 1D shadow lookups.)"
+msgstr ""
+"Shadow Form의 경우 ``p``의 마지막 컴포넌트를 Dsub로 사용하고, Array 레이어는 "
+"``p``의 두 번째에서 마지막 컴포넌트로 지정합니다. (``p``의 두 번째 구성 요소"
+"는 1D 그림자 조회에 사용되지 않습니다.)"
+
+msgid ""
+"For non-shadow variants, the array layer comes from the last component of P."
+msgstr ""
+"그림자가 아닌 변형의 경우 배열 레이어는 P의 마지막 구성 요소에서 나옵니다."
+
+msgid ""
+"The sampler to which the texture from which texels will be retrieved is "
+"bound."
+msgstr "텍셀을 검색할 텍스처가 바인딩되는 샘플러입니다."
+
+msgid "The texture coordinates at which texture will be sampled."
+msgstr "텍스처가 샘플링될 텍스처 좌표입니다."
+
+msgid "param bias"
+msgstr "밉맵"
+
+msgid "An optional bias to be applied during level-of-detail computation."
+msgstr "세부 수준 계산 중에 적용할 선택적 편향입니다."
+
+msgid "A texel."
+msgstr "텍셀."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid "Perform a texture lookup with projection."
+msgstr "투영을 사용하여 텍스처 조회를 수행합니다."
+
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. The "
+"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
+"these values are computed, the texture lookup proceeds as in texture."
+msgstr ""
+"``p``의 마지막 구성 요소를 제외하고 ``p``에서 소비된 텍스처 좌표는 ``p``의 마"
+"지막 구성 요소로 나뉩니다. 그림자 형태의 ``p``의 세 번째 구성 요소가 Dref로 "
+"사용됩니다. 이러한 값이 계산된 후 텍스처 조회는 텍스처에서와 같이 진행됩니다."
+
+msgid "Optional bias to be applied during level-of-detail computation."
+msgstr "세부 수준 계산 중에 적용할 선택적 편향입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2D| s, vec2 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2D| s, vec2 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2DArray| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2DArray| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler3D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler3D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"vec4 **textureLod**\\ (\\ samplerCube s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"vec4 **textureLod**\\ (\\ SamplerCube s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"vec4 **textureLod**\\ (\\ samplerCubeArray s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"vec4 **textureLod**\\ (\\ SamplerCubeArray s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"Performs a texture lookup at coordinate ``p`` from the texture bound to "
+"sampler with an explicit level-of-detail as specified in ``lod``. ``lod`` "
+"specifies λbase and sets the partial derivatives as follows:"
+msgstr ""
+"``lod``에 지정된 명시적 세부 수준을 사용하여 샘플러에 바인딩된 텍스처의 "
+"``p`` 좌표에서 텍스처 조회를 수행합니다. ``lod``는 λbase를 지정하고 편도함수"
+"를 다음과 같이 설정합니다."
+
+msgid "The explicit level-of-detail."
+msgstr "명시적인 세부 수준입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureLod.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler3D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler3D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"Performs a texture lookup with projection from an explicitly specified level-"
+"of-detail."
+msgstr "명시적으로 지정된 세부 수준의 투영을 통해 텍스처 조회를 수행합니다."
+
+msgid ""
+"The texture coordinates consumed from P, not including the last component of "
+"``p``, are divided by the last component of ``p``. The resulting 3rd "
+"component of ``p`` in the shadow forms is used as Dref. After these values "
+"are computed, the texture lookup proceeds as in "
+"`textureLod<shader_func_textureLod>`, with ``lod`` used to specify the level-"
+"of-detail from which the texture will be sampled."
+msgstr ""
+"``p``의 마지막 구성 요소를 제외하고 P에서 소비된 텍스처 좌표는 ``p``의 마지"
+"막 구성 요소로 나뉩니다. 그림자 형태의 ``p``의 세 번째 구성요소가 Dref로 사용"
+"됩니다. 이러한 값이 계산된 후 텍스처 조회는 "
+"`textureLod<shader_func_textureLod>`에서와 같이 진행되며 ``lod``는 텍스처가 "
+"샘플링될 세부 수준을 지정하는 데 사용됩니다."
+
+msgid "The explicit level-of-detail from which to fetch texels."
+msgstr "텍셀을 가져올 명시적인 세부 수준입니다."
+
+msgid "a texel"
+msgstr "텍셀"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjLod.xhtml"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2D| s, vec2 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2D| s, vec2 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2DArray| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2DArray| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler3D| s, vec3 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler3D| s, vec3 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"vec4 **textureGrad**\\ (\\ samplerCube s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"vec4 **textureGrad**\\ (\\ SamplerCube s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"vec4 **textureGrad**\\ (\\ SamplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"Performs a texture lookup at coordinate ``p`` from the texture bound to "
+"sampler with explicit texture coordinate gradiends as specified in ``dPdx`` "
+"and ``dPdy``. Set:"
+msgstr ""
+"``dPdx`` 및 ``dPdy``에 지정된 대로 명시적인 텍스처 좌표 그라데이션을 사용하"
+"여 샘플러에 바인딩된 텍스처의 ``p`` 좌표에서 텍스처 조회를 수행합니다. 설정:"
+
+msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
+msgstr "1D 텍스처의 경우 ``δs/δx=δp/δx``, 그렇지 않은 경우 ``δp.s/δx``"
+
+msgid "``δs/δy=δp/δy`` for a 1D texture, ``δp.s/δy`` otherwise"
+msgstr "1D 텍스처의 경우 ``δs/δy=δp/δy``, 그렇지 않은 경우 ``δp.s/δy``"
+
+msgid "``δt/δx=0.0`` for a 1D texture, ``δp.t/δx`` otherwise"
+msgstr "1D 텍스처의 경우 ``δt/δx=0.0``, 그렇지 않은 경우 ``δp.t/δx``"
+
+msgid "``δt/δy=0.0`` for a 1D texture, ``δp.t/δy`` otherwise"
+msgstr "1D 텍스처의 경우 ``δt/δy=0.0``, 그렇지 않은 경우 ``δp.t/δy``"
+
+msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
+msgstr "1D 또는 2D 텍스처의 경우 ``δr/δx=0.0``, 그렇지 않은 경우 ``δp.p/δx``"
+
+msgid "``δr/δy=0.0``  for a 1D or 2D texture, ``δp.p/δy`` otherwise"
+msgstr "1D 또는 2D 텍스처의 경우 ``δr/δy=0.0``, 그렇지 않은 경우 ``δp.p/δy``"
+
+msgid ""
+"For the cube version, the partial derivatives of ``p`` are assumed to be in "
+"the coordinate system used before texture coordinates are projected onto the "
+"appropriate cube face."
+msgstr ""
+"큐브 버전의 경우 ``p``의 부분 파생물은 텍스처 좌표가 적절한 큐브 면에 투영되"
+"기 전에 사용되는 좌표계에 있는 것으로 가정됩니다."
+
+msgid "param dPdx"
+msgstr "매개변수 dPdx"
+
+msgid "The partial derivative of P with respect to window x."
+msgstr "창 x에 대한 P의 편도함수입니다."
+
+msgid "param dPdy"
+msgstr "매개변수 dPdy"
+
+msgid "The partial derivative of P with respect to window y."
+msgstr "창 y에 대한 P의 편도함수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec4 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec4 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
+"vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
+"vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid "Perform a texture lookup with projection and explicit gradients."
+msgstr "투영 및 명시적 그라데이션을 사용하여 텍스처 조회를 수행합니다."
+
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. After these "
+"values are computed, the texture lookup proceeds as in "
+"`textureGrad<shader_func_textureGrad>`, passing ``dPdx`` and ``dPdy`` as "
+"gradients."
+msgstr ""
+"``p``의 마지막 구성 요소를 제외하고 ``p``에서 소비된 텍스처 좌표는 ``p``의 마"
+"지막 구성 요소로 나뉩니다. 이러한 값이 계산된 후 "
+"`textureGrad<shader_func_textureGrad>`에서와 같이 텍스처 조회가 진행되어 "
+"``dPdx`` 및 ``dPdy``를 그라데이션으로 전달합니다."
+
+msgid "The partial derivative of ``p`` with respect to window x."
+msgstr "창 x에 대한 ``p``의 편도함수입니다."
+
+msgid "The partial derivative of ``p`` with respect to window y."
+msgstr "창 y에 대한 ``p``의 편도함수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjGrad.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjGrad.xhtml"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2DArray| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2DArray| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"Performs a lookup of a single texel from texture coordinate ``p`` in the "
+"texture bound to sampler."
+msgstr ""
+"샘플러에 바인딩된 텍스처의 텍스처 좌표 ``p``에서 단일 텍셀 조회를 수행합니다."
+
+msgid ""
+"Specifies the level-of-detail within the texture from which the texel will "
+"be fetched."
+msgstr "텍셀을 가져올 텍스처 내의 세부 수준을 지정합니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texelFetch.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texelFetch.xhtml"
+
+msgid ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2D| s, vec2 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2D| s, vec2 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2DArray| s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2DArray| s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid ""
+"vec4 **textureGather**\\ (\\ samplerCube s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"vec4 **textureGather**\\ (\\ 샘플러큐브 s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
 msgid "Returns the value:"
 msgstr "값 반환:"
+
+msgid "param comps"
+msgstr "매개변수 구성요소"
+
+msgid ""
+"*optional* the component of the source texture (0 -> x, 1 -> y, 2 -> z, 3 -> "
+"w) that will be used to generate the resulting vector. Zero if not specified."
+msgstr ""
+"*선택 사항* 결과 벡터를 생성하는 데 사용될 소스 텍스처의 구성 요소(0 -> x, 1 "
+"-> y, 2 -> z, 3 -> w). 지정하지 않으면 0입니다."
+
+msgid "The gathered texel."
+msgstr "씬 트리"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGather.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGather.xhtml"
+
+msgid "|vec_type| **dFdx**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdx>`"
+msgstr "|vec_type| **dFdx**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdx>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window x "
+"coordinate using local differencing."
+msgstr ""
+"국소 차분을 사용하여 창 x 좌표를 기준으로 ``p``의 편도함수를 반환합니다."
+
+msgid ""
+"Returns either :ref:`dFdxCoarse<shader_func_dFdxCoarse>` "
+"or :ref:`dFdxFine<shader_func_dfdxFine>`. The implementation may choose "
+"which calculation to perform based upon factors such as performance or the "
+"value of the API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` hint."
+msgstr ""
+":ref:`dFdxCoarse<shader_func_dFdxCoarse>` 또"
+"는 :ref:`dFdxFine<shader_func_dfdxFine>`를 반환합니다. 구현에서는 성능이나 "
+"API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` 힌트 값과 같은 요소를 기반으로 수"
+"행할 계산을 선택할 수 있습니다."
+
+msgid ""
+"Expressions that imply higher order derivatives such as ``dFdx(dFdx(n))`` "
+"have undefined results, as do mixed-order derivatives such as "
+"``dFdx(dFdy(n))``."
+msgstr ""
+"``dFdx(dFdx(n))``와 같은 고차 파생어를 암시하는 표현식은 ``dFdx(dFdy(n))``와 "
+"같은 혼합 차수 파생어와 마찬가지로 정의되지 않은 결과를 갖습니다."
+
+msgid "The expression of which to take the partial derivative."
+msgstr "편미분을 취하는 표현식입니다."
+
+msgid ""
+"It is assumed that the expression ``p`` is continuous and therefore "
+"expressions evaluated via non-uniform control flow may be undefined."
+msgstr ""
+"``p`` 표현식은 연속적이므로 비균일 제어 흐름을 통해 평가된 표현식은 정의되지 "
+"않을 수 있다고 가정합니다."
+
+msgid "The partial derivative of ``p``."
+msgstr "``p``의 부분 파생물입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+
+msgid ""
+"|vec_type| **dFdxCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdxCoarse>`"
+msgstr ""
+"|vec_type| **dFdx대략**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxCoarse>`"
 
 msgid ""
 "Available only in the fragment shader. Not available when using the "
@@ -68,3 +3681,1058 @@ msgid ""
 msgstr ""
 "프래그먼트 셰이더에서만 사용 가능합니다. 호환성 렌더러를 사용할 때 사용 가능"
 "하지 않습니다."
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window x "
+"coordinate."
+msgstr "창 x 좌표를 기준으로 ``p``의 편도함수를 반환합니다."
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment's neighbors, and will possibly, but not "
+"necessarily, include the value for the current fragment. That is, over a "
+"given area, the implementation can compute derivatives in fewer unique "
+"locations than would be allowed for the "
+"corresponding :ref:`dFdxFine<shader_func_dFdxFine>` function."
+msgstr ""
+"현재 조각의 이웃에 대한 ``p`` 값을 기반으로 로컬 차분을 사용하여 도함수를 계"
+"산하며, 반드시는 아니지만 현재 조각의 값을 포함할 수도 있습니다. 즉, 특정 영"
+"역에 대해 구현 시 해당 :ref:`dFdxFine<shader_func_dFdxFine>` 함수에 허용되는 "
+"것보다 더 적은 수의 고유 위치에서 도함수를 계산할 수 있습니다."
+
+msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+
+msgid ""
+"|vec_type| **dFdxFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxFine>`"
+msgstr ""
+"|vec_type| **dFdxFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxFine>`"
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment and its immediate neighbor(s)."
+msgstr ""
+"현재 조각과 바로 이웃에 대한 ``p`` 값을 기반으로 지역 차분을 사용하여 도함수"
+"를 계산합니다."
+
+msgid "|vec_type| **dFdy**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdy>`"
+msgstr "|vec_type| **dFdy**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdy>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window y "
+"coordinate using local differencing."
+msgstr ""
+"국소 차분을 사용하여 창 y 좌표를 기준으로 ``p``의 편도함수를 반환합니다."
+
+msgid ""
+"Returns either :ref:`dFdyCoarse<shader_func_dFdyCoarse>` "
+"or :ref:`dFdyFine<shader_func_dfdyFine>`. The implementation may choose "
+"which calculation to perform based upon factors such as performance or the "
+"value of the API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` hint."
+msgstr ""
+":ref:`dFdyCoarse<shader_func_dFdyCoarse>` 또"
+"는 :ref:`dFdyFine<shader_func_dfdyFine>`를 반환합니다. 구현에서는 성능이나 "
+"API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` 힌트 값과 같은 요소를 기반으로 수"
+"행할 계산을 선택할 수 있습니다."
+
+msgid ""
+"|vec_type| **dFdyCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdyCoarse>`"
+msgstr ""
+"|vec_type| **dFdy대략**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyCoarse>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window y "
+"coordinate."
+msgstr "창 y 좌표를 기준으로 ``p``의 편도함수를 반환합니다."
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment's neighbors, and will possibly, but not "
+"necessarily, include the value for the current fragment. That is, over a "
+"given area, the implementation can compute derivatives in fewer unique "
+"locations than would be allowed for the corresponding dFdyFine and dFdyFine "
+"functions."
+msgstr ""
+"현재 조각의 이웃에 대한 ``p`` 값을 기반으로 로컬 차분을 사용하여 도함수를 계"
+"산하며 반드시 그런 것은 아니지만 현재 조각의 값을 포함할 수도 있습니다. 즉, "
+"특정 영역에 대해 구현 시 해당 dFdyFine 및 dFdyFine 함수에 허용되는 것보다 더 "
+"적은 수의 고유 위치에서 도함수를 계산할 수 있습니다."
+
+msgid ""
+"|vec_type| **dFdyFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyFine>`"
+msgstr ""
+"|vec_type| **dFdyFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyFine>`"
+
+msgid "|vec_type| **fwidth**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_fwidth>`"
+msgstr "|vec_type| **f폭**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_fwidth>`"
+
+msgid "Returns the sum of the absolute value of derivatives in x and y."
+msgstr "x와 y의 도함수 절대값의 합을 반환합니다."
+
+msgid "Uses local differencing for the input argument ``p``."
+msgstr "입력 인수 ``p``에 대해 지역적 차이를 사용합니다."
+
+msgid "Equivalent to ``abs(dFdx(p)) + abs(dFdy(p))``."
+msgstr "``abs(dFdx(p)) + abs(dFdy(p))``와 동일합니다."
+
+msgid "The partial derivative."
+msgstr "부분도함수."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+
+msgid ""
+"|vec_type| **fwidthCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthCoarse>`"
+msgstr ""
+"|vec_type| **f폭대략**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthCoarse>`"
+
+msgid "Uses local differencing for the input argument p."
+msgstr "입력 인수 p에 대해 국소 차분을 사용합니다."
+
+msgid "Equivalent  to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
+msgstr "``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``와 동일합니다."
+
+msgid ""
+"|vec_type| **fwidthFine**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthFine>`"
+msgstr ""
+"|vec_type| **fwidthFine**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthFine>`"
+
+msgid "Equivalent to ``abs(dFdxFine(p)) + abs(dFdyFine(p))``."
+msgstr "``abs(dFdxFine(p)) + abs(dFdyFine(p))``와 동일합니다."
+
+msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+
+msgid "Packing and unpacking functions"
+msgstr "정적 함수"
+
+msgid ""
+"These functions convert floating-point numbers into various sized integers "
+"and then pack those integers into a single 32bit unsigned integer. The "
+"'unpack' functions perform the opposite operation, returning the original "
+"floating-point numbers."
+msgstr ""
+"이 함수는 부동 소수점 숫자를 다양한 크기의 정수로 변환한 다음 해당 정수를 단"
+"일 32비트 부호 없는 정수로 묶습니다. 'unpack' 함수는 반대 작업을 수행하여 원"
+"래 부동 소수점 숫자를 반환합니다."
+
+msgid "uint"
+msgstr "단위"
+
+msgid ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ 단위 v)"
+
+msgid "Convert two 32-bit floats to 16 bit floats and pack them."
+msgstr ""
+"두 개의 32비트 부동 소수점을 16비트 부동 소수점으로 변환하고 압축합니다."
+
+msgid ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ 단위 v)"
+
+msgid ""
+"Convert two normalized (range 0..1) 32-bit floats to 16-bit unsigned ints "
+"and pack them."
+msgstr ""
+"두 개의 정규화된(범위 0..1) 32비트 부동 소수점을 16비트 부호 없는 정수로 변환"
+"하고 압축합니다."
+
+msgid ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ 단위 v)"
+
+msgid ""
+"Convert two signed normalized (range -1..1) 32-bit floats to 16-bit signed "
+"ints and pack them."
+msgstr ""
+"두 개의 부호 있는 정규화된(범위 -1..1) 32비트 부동 소수점을 16비트 부호 있는 "
+"정수로 변환하고 압축합니다."
+
+msgid ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ 단위 v)"
+
+msgid ""
+"Convert four normalized (range 0..1) 32-bit floats into 8-bit unsigned ints "
+"and pack them."
+msgstr ""
+"4개의 정규화된(범위 0..1) 32비트 부동 소수점을 8비트 부호 없는 정수로 변환하"
+"고 압축합니다."
+
+msgid ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ 단위 v)"
+
+msgid ""
+"Convert four signed normalized (range -1..1) 32-bit floats into 8-bit signed "
+"ints and pack them."
+msgstr ""
+"4개의 부호 있는 정규화(범위 -1..1) 32비트 부동 소수점을 8비트 부호 있는 정수"
+"로 변환하고 압축합니다."
+
+msgid "Packing and unpacking function descriptions"
+msgstr "포장 및 포장 풀기 기능 설명"
+
+msgid "uint **packHalf2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packHalf2x16>`"
+msgstr ""
+"단위 **packHalf2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packHalf2x16>`"
+
+msgid ""
+"Converts two 32-bit floating-point quantities to 16-bit floating-point "
+"quantities and packs them into a single 32-bit integer."
+msgstr ""
+"두 개의 32비트 부동 소수점 수량을 16비트 부동 소수점 수량으로 변환하고 이를 "
+"단일 32비트 정수로 묶습니다."
+
+msgid ""
+"Returns an unsigned integer obtained by converting the components of a two-"
+"component floating-point vector to the 16-bit floating-point representation "
+"found in the OpenGL Specification, and then packing these two 16-bit "
+"integers into a 32-bit unsigned integer. The first vector component "
+"specifies the 16 least-significant bits of the result; the second component "
+"specifies the 16 most-significant bits."
+msgstr ""
+"두 개의 구성 요소로 구성된 부동 소수점 벡터의 구성 요소를 OpenGL 사양에 있는 "
+"16비트 부동 소수점 표현으로 변환한 다음 이 두 개의 16비트 정수를 32비트 부호 "
+"없는 정수로 압축하여 얻은 부호 없는 정수를 반환합니다. 첫 번째 벡터 구성요소"
+"는 결과의 최하위 16비트를 지정합니다. 두 번째 구성 요소는 16개의 최상위 비트"
+"를 지정합니다."
+
+msgid "param v"
+msgstr "매개변수 v"
+
+msgid ""
+"A vector of two 32-bit floating-point values that are to be converted to 16-"
+"bit representation and packed into the result."
+msgstr ""
+"16비트 표현으로 변환되어 결과에 압축될 두 개의 32비트 부동 소수점 값의 벡터입"
+"니다."
+
+msgid "The packed value."
+msgstr "포장된 값입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packHalf2x16.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packHalf2x16.xhtml"
+
+msgid ""
+"vec2 **unpackHalf2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackHalf2x16>`"
+msgstr ""
+"vec2 **unpackHalf2x16**\\ (\\ 단위 v) :ref:`🔗<shader_func_unpackHalf2x16>`"
+
+msgid "Inverse of :ref:`packHalf2x16<shader_func_packHalf2x16>`."
+msgstr ":ref:`packHalf2x16<shader_func_packHalf2x16>`의 반대입니다."
+
+msgid ""
+"Unpacks a 32-bit integer into two 16-bit floating-point values, converts "
+"them to 32-bit floating-point values, and puts them into a vector. The first "
+"component of the vector is obtained from the 16 least-significant bits of "
+"``v``; the second component is obtained from the 16 most-significant bits of "
+"``v``."
+msgstr ""
+"32비트 정수를 두 개의 16비트 부동 소수점 값으로 압축을 풀고 이를 32비트 부동 "
+"소수점 값으로 변환한 다음 벡터에 넣습니다. 벡터의 첫 번째 구성 요소는 ``v``"
+"의 최하위 16비트에서 얻습니다. 두 번째 구성 요소는 ``v``의 최상위 16비트에서 "
+"얻습니다."
+
+msgid ""
+"A single 32-bit unsigned integer containing 2 packed 16-bit floating-point "
+"values."
+msgstr ""
+"2개의 압축된 16비트 부동 소수점 값을 포함하는 단일 32비트 부호 없는 정수입니"
+"다."
+
+msgid "Two unpacked floating-point values."
+msgstr "부동 소수점 숫자 (실수)"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"unpackHalf2x16.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"unpackHalf2x16.xhtml"
+
+msgid ""
+"uint **packUnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packUnorm2x16>`"
+msgstr ""
+"단위 **packUnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packUnorm2x16>`"
+
+msgid "Pack floating-point values into an unsigned integer."
+msgstr "부동 소수점 값을 부호 없는 정수로 압축합니다."
+
+msgid ""
+"Converts each component of the normalized floating-point value v into 16-bit "
+"integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"정규화된 부동 소수점 값 v의 각 구성 요소를 16비트 정수 값으로 변환한 다음 결"
+"과를 32비트 부호 없는 정수로 압축합니다."
+
+msgid ""
+"The conversion for component c of ``v`` to fixed-point is performed as "
+"follows:"
+msgstr ""
+"``v``의 구성 요소 c를 고정 소수점으로 변환하는 작업은 다음과 같이 수행됩니다."
+
+msgid ""
+"The first component of the vector will be written to the least significant "
+"bits of the output; the last component will be written to the most "
+"significant bits."
+msgstr ""
+"벡터의 첫 번째 구성 요소는 출력의 최하위 비트에 기록됩니다. 마지막 구성 요소"
+"는 최상위 비트에 기록됩니다."
+
+msgid "A vector of values to be packed into an unsigned integer."
+msgstr "부호 없는 정수로 압축할 값의 벡터입니다."
+
+msgid "Unsigned 32 bit integer containing the packed encoding of the vector."
+msgstr "벡터의 압축된 인코딩을 포함하는 부호 없는 32비트 정수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packUnorm.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packUnorm.xhtml"
+
+msgid ""
+"vec2 **unpackUnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm2x16>`"
+msgstr ""
+"vec2 **unpackUnorm2x16**\\ (\\ 단위 v) :ref:`🔗<shader_func_unpackUnorm2x16>`"
+
+msgid "Unpack floating-point values from an unsigned integer."
+msgstr "부호 없는 정수에서 부동 소수점 값의 압축을 풉니다."
+
+msgid ""
+"Unpack single 32-bit unsigned integers into a pair of 16-bit unsigned "
+"integers. Then, each component is converted to a normalized floating-point "
+"value to generate the returned two-component vector."
+msgstr ""
+"단일 32비트 부호 없는 정수를 16비트 부호 없는 정수 쌍으로 압축 해제합니다. 그"
+"런 다음 각 구성요소는 정규화된 부동 소수점 값으로 변환되어 반환된 2개 구성요"
+"소 벡터를 생성합니다."
+
+msgid ""
+"The conversion for unpacked fixed point value f to floating-point is "
+"performed as follows:"
+msgstr ""
+"압축이 풀린 고정 소수점 값 f를 부동 소수점으로 변환하는 작업은 다음과 같이 수"
+"행됩니다."
+
+msgid "f / 65535.0"
+msgstr "f / 65535.0"
+
+msgid ""
+"The first component of the returned vector will be extracted from the least "
+"significant bits of the input; the last component will be extracted from the "
+"most significant bits."
+msgstr ""
+"반환된 벡터의 첫 번째 구성 요소는 입력의 최하위 비트에서 추출됩니다. 마지막 "
+"구성 요소는 최상위 비트에서 추출됩니다."
+
+msgid "An unsigned integer containing packed floating-point values."
+msgstr "압축된 부동 소수점 값을 포함하는 부호 없는 정수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/unpackUnorm.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/unpackUnorm.xhtml"
+
+msgid ""
+"uint **packSnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packSnorm2x16>`"
+msgstr ""
+"단위 **packSnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packSnorm2x16>`"
+
+msgid "Packs floating-point values into an unsigned integer."
+msgstr "부동 소수점 값을 부호 없는 정수로 압축합니다."
+
+msgid ""
+"Convert each component of the normalized floating-point value ``v`` into 16-"
+"bit integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"정규화된 부동 소수점 값 ``v``의 각 구성 요소를 16비트 정수 값으로 변환한 다"
+"음 결과를 32비트 부호 없는 정수로 압축합니다."
+
+msgid ""
+"vec2 **unpackSnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm2x16>`"
+msgstr ""
+"vec2 **unpackSnorm2x16**\\ (\\ 단위 v) :ref:`🔗<shader_func_unpackSnorm2x16>`"
+
+msgid "Unpacks floating-point values from an unsigned integer."
+msgstr "부호 없는 정수에서 부동 소수점 값을 압축 해제합니다."
+
+msgid ""
+"Unpacks single 32-bit unsigned integers into a pair of 16-bit signed "
+"integers. Then, each component is converted to a normalized floating-point "
+"value to generate the returned two-component vector."
+msgstr ""
+"단일 32비트 부호 없는 정수를 16비트 부호 있는 정수 쌍으로 압축 해제합니다. 그"
+"런 다음 각 구성요소는 정규화된 부동 소수점 값으로 변환되어 반환된 2개 구성요"
+"소 벡터를 생성합니다."
+
+msgid "clamp(f / 32727.0, -1.0, 1.0)"
+msgstr "클램프(f / 32727.0, -1.0, 1.0)"
+
+msgid "uint **packUnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packUnorm4x8>`"
+msgstr ""
+"단위 **packUnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packUnorm4x8>`"
+
+msgid ""
+"Converts each component of the normalized floating-point value ``v`` into 16-"
+"bit integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"정규화된 부동 소수점 값 ``v``의 각 구성 요소를 16비트 정수 값으로 변환한 다"
+"음 결과를 32비트 부호 없는 정수로 압축합니다."
+
+msgid ""
+"vec4 **unpackUnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm4x8>`"
+msgstr ""
+"vec4 **unpackUnorm4x8**\\ (\\ 단위 v) :ref:`🔗<shader_func_unpackUnorm4x8>`"
+
+msgid ""
+"Unpacks single 32-bit unsigned integers into four 8-bit unsigned integers. "
+"Then, each component is converted to a normalized floating-point value to "
+"generate the returned four-component vector."
+msgstr ""
+"단일 32비트 부호 없는 정수를 4개의 8비트 부호 없는 정수로 압축 해제합니다. 그"
+"런 다음 각 구성요소는 정규화된 부동 소수점 값으로 변환되어 반환된 4개 구성요"
+"소 벡터를 생성합니다."
+
+msgid "f / 255.0"
+msgstr "f / 255.0"
+
+msgid "uint **packSnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packSnorm4x8>`"
+msgstr ""
+"단위 **packSnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packSnorm4x8>`"
+
+msgid ""
+"vec4 **unpackSnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm4x8>`"
+msgstr ""
+"vec4 **unpackSnorm4x8**\\ (\\ 단위 v) :ref:`🔗<shader_func_unpackSnorm4x8>`"
+
+msgid ""
+"Unpack single 32-bit unsigned integers into four 8-bit signed integers. "
+"Then, each component is converted to a normalized floating-point value to "
+"generate the returned four-component vector."
+msgstr ""
+"단일 32비트 부호 없는 정수를 4개의 8비트 부호 있는 정수로 압축 해제합니다. 그"
+"런 다음 각 구성요소는 정규화된 부동 소수점 값으로 변환되어 반환된 4개 구성요"
+"소 벡터를 생성합니다."
+
+msgid "clamp(f / 127.0, -1.0, 1.0)"
+msgstr "클램프(f / 127.0, -1.0, 1.0)"
+
+msgid "Bitwise functions"
+msgstr "정적 함수"
+
+msgid ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_int_type| "
+"value, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\(\\ |vec_int_type| 값, "
+"int 오프셋, int 비트)"
+
+msgid ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_uint_type| "
+"value, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\(\\ |vec_uint_type| 값, "
+"int 오프셋, int 비트)"
+
+msgid "Extracts a range of bits from an integer."
+msgstr "정수에서 비트 범위를 추출합니다."
+
+msgid ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_int_type| base, "
+"|vec_int_type| insert, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_int_type| 베이"
+"스, |vec_int_type| 삽입, int 오프셋, int 비트)"
+
+msgid ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| "
+"base, |vec_uint_type| insert, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| 베이"
+"스, |vec_uint_type| 삽입, int 오프셋, int 비트)"
+
+msgid "Insert a range of bits into an integer."
+msgstr "비트 범위를 정수에 삽입합니다."
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\(\\ |vec_int_type| 값)"
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\(\\ |vec_uint_type| 값)"
+
+msgid "Reverse the order of bits in an integer."
+msgstr "정수의 비트 순서를 반대로 바꿉니다."
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\(\\ |vec_int_type| 값)"
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\(\\ |vec_uint_type| 값)"
+
+msgid "Counts the number of 1 bits in an integer."
+msgstr "정수에서 1비트의 개수를 셉니다."
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\(\\ |vec_int_type| 값)"
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\(\\ |vec_uint_type| 값)"
+
+msgid "Find the index of the least significant bit set to 1 in an integer."
+msgstr "정수에서 1로 설정된 최하위 비트의 인덱스를 찾습니다."
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\(\\ |vec_int_type| 값)"
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\(\\ |vec_uint_type| 값)"
+
+msgid "Find the index of the most significant bit set to 1 in an integer."
+msgstr "정수에서 1로 설정된 최상위 비트의 인덱스를 찾습니다."
+
+msgid "|void|"
+msgstr "|void|"
+
+msgid ""
+":ref:`imulExtended<shader_func_imulExtended>`\\ (\\ |vec_int_type| x, |"
+"vec_int_type| y, out |vec_int_type| msb, out |vec_int_type| lsb)"
+msgstr ""
+":ref:`imulExtended<shader_func_imulExtended>`\\ (\\ |vec_int_type| x, |"
+"vec_int_type| y, 출력 |vec_int_type| msb, 출력 |vec_int_type| lsb)"
+
+msgid ""
+":ref:`umulExtended<shader_func_umulExtended>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| msb, out |vec_uint_type| lsb)"
+msgstr ""
+":ref:`umulExtended<shader_func_umulExtended>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, 출력 |vec_uint_type| msb, 출력 |vec_uint_type| lsb)"
+
+msgid "Multiplies two 32-bit numbers and produce a 64-bit result."
+msgstr "두 개의 32비트 숫자를 곱하여 64비트 결과를 생성합니다."
+
+msgid ""
+":ref:`uaddCarry<shader_func_uaddCarry>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| carry)"
+msgstr ""
+":ref:`uaddCarry<shader_func_uaddCarry>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, 아웃 |vec_uint_type| 캐리)"
+
+msgid "Adds two unsigned integers and generates carry."
+msgstr "두 개의 부호 없는 정수를 더하고 캐리를 생성합니다."
+
+msgid ""
+":ref:`usubBorrow<shader_func_usubBorrow>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| borrow)"
+msgstr ""
+":ref:`usubBorrow<shader_func_usubBorrow>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, 밖으로 |vec_uint_type| 빌림)"
+
+msgid "Subtracts two unsigned integers and generates borrow."
+msgstr "두 개의 부호 없는 정수를 빼고 빌림을 생성합니다."
+
+msgid ""
+":ref:`ldexp<shader_func_ldexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+msgstr ":ref:`ldexp<shader_func_ldexp>`\\(\\ |vec_type| x, |vec_int_type| exp)"
+
+msgid "Assemble a floating-point number from a value and exponent."
+msgstr "값과 지수로부터 부동 소수점 숫자를 조합합니다."
+
+msgid ""
+":ref:`frexp<shader_func_frexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+msgstr ":ref:`frexp<shader_func_frexp>`\\(\\ |vec_type| x, |vec_int_type| exp)"
+
+msgid ""
+"Splits a floating-point number (``x``) into significand integral components"
+msgstr "부동 소수점 숫자(``x``)를 유효 정수 구성요소로 분할합니다."
+
+msgid "Bitwise function descriptions"
+msgstr "설명"
+
+msgid ""
+"|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+msgstr ""
+"|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| 값, int 오프셋, int "
+"비트) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid ""
+"Extracts a subset of the bits of ``value`` and returns it in the least "
+"significant bits of the result. The range of bits extracted is ``[offset, "
+"offset + bits - 1]``."
+msgstr ""
+"``value`` 비트의 하위 집합을 추출하여 결과의 최하위 비트로 반환합니다. 추출되"
+"는 비트의 범위는 ``[offset, offset + bits - 1]``입니다."
+
+msgid "The most significant bits of the result will be set to zero."
+msgstr "결과의 최상위 비트는 0으로 설정됩니다."
+
+msgid "If bits is zero, the result will be zero."
+msgstr "비트가 0이면 결과는 0이 됩니다."
+
+msgid "The result will be undefined if:"
+msgstr "다음과 같은 경우 결과가 정의되지 않습니다."
+
+msgid "offset or bits is negative."
+msgstr "오프셋 또는 비트가 음수입니다."
+
+msgid ""
+"if the sum of offset and bits is greater than the number of bits used to "
+"store the operand."
+msgstr ""
+"오프셋과 비트의 합이 피연산자를 저장하는 데 사용된 비트 수보다 큰 경우."
+
+msgid "param value"
+msgstr "값"
+
+msgid "The integer from which to extract bits."
+msgstr "비트를 추출할 정수입니다."
+
+msgid "param offset"
+msgstr "오프셋"
+
+msgid "The index of the first bit to extract."
+msgstr "추출할 첫 번째 비트의 인덱스입니다."
+
+msgid "param bits"
+msgstr "매개변수"
+
+msgid "The number of bits to extract."
+msgstr "오류의 행 번호"
+
+msgid "Integer with the requested bits."
+msgstr "요청된 비트가 포함된 정수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldExtract.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldExtract.xhtml"
+
+msgid ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+msgstr ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| 값, int 오프셋, "
+"int 비트) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid ""
+"The most significant bits will be set to the value of ``offset + base - 1`` "
+"(i.e., it is sign extended to the width of the return type)."
+msgstr ""
+"최상위 비트는 ``offset + base - 1`` 값으로 설정됩니다(즉, 반환 유형의 너비로 "
+"부호 확장됨)."
+
+msgid ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+msgstr ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| 값, int 오프셋, "
+"int 비트) :ref:`🔗<shader_func_bitfieldInsert>`"
+
+msgid ""
+"|vec_uint_type| **bitfieldInsert**\\ (\\ |vec_uint_type| base, |"
+"vec_uint_type| insert, int offset, int "
+"bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+msgstr ""
+"|vec_uint_type| **bitfieldInsert**\\ (\\ |vec_uint_type| 기본, |"
+"vec_uint_type| 삽입, int 오프셋, int 비"
+"트) :ref:`🔗<shader_func_bitfieldInsert>`"
+
+msgid ""
+"Inserts the ``bits`` least significant bits of ``insert`` into ``base`` at "
+"offset ``offset``."
+msgstr ""
+"``bits`` ``insert``의 최하위 비트를 ``offset`` 오프셋에서 ``base``에 삽입합니"
+"다."
+
+msgid ""
+"The returned value will have bits [offset, offset + bits + 1] taken from [0, "
+"bits - 1] of ``insert`` and all other bits taken directly from the "
+"corresponding bits of base."
+msgstr ""
+"반환된 값에는 ``insert``의 [0, bits - 1]에서 가져온 비트 [offset, offset + "
+"bits + 1]와 기본의 해당 비트에서 직접 가져온 다른 모든 비트가 포함됩니다."
+
+msgid "If bits is zero, the result will be the original value of base."
+msgstr "비트가 0이면 결과는 base의 원래 값이 됩니다."
+
+msgid "param base"
+msgstr "매개변수 베이스"
+
+msgid "The integer into which to insert ``insert``."
+msgstr "``insert``를 삽입할 정수입니다."
+
+msgid "param insert"
+msgstr "assert"
+
+msgid "The value of the bits to insert."
+msgstr "명명된 타입"
+
+msgid "The index of the first bit to insert."
+msgstr "삽입할 첫 번째 비트의 인덱스입니다."
+
+msgid "The number of bits to insert."
+msgstr "오류의 행 번호"
+
+msgid "``base`` with inserted bits."
+msgstr "비트가 삽입된 ``base``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldInsert.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldInsert.xhtml"
+
+msgid ""
+"|vec_int_type| **bitfieldReverse**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+msgstr ""
+"|vec_int_type| **bitfieldReverse**\\ (\\ |vec_int_type| "
+"값) :ref:`🔗<shader_func_bitfieldReverse>`"
+
+msgid ""
+"|vec_uint_type| **bitfieldReverse**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+msgstr ""
+"|vec_uint_type| **bitfieldReverse**\\ (\\ |vec_uint_type| "
+"값) :ref:`🔗<shader_func_bitfieldReverse>`"
+
+msgid ""
+"The bit numbered ``n`` will be taken from bit ``(bits - 1) - n`` of "
+"``value``, where bits is the total number of bits used to represent "
+"``value``."
+msgstr ""
+"``n``라는 비트는 ``value``의 비트 ``(bits - 1) - n``에서 가져옵니다. 여기서 "
+"비트는 ``value``를 나타내는 데 사용되는 총 비트 수입니다."
+
+msgid "The value whose bits to reverse."
+msgstr "비트를 반전시킬 값입니다."
+
+msgid "``value`` but with its bits reversed."
+msgstr "``value``이지만 비트가 반전되었습니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldReverse.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldReverse.xhtml"
+
+msgid ""
+"|vec_int_type| **bitCount**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+msgstr ""
+"|vec_int_type| **bitCount**\\ (\\ |vec_int_type| "
+"값) :ref:`🔗<shader_func_bitCount>`"
+
+msgid ""
+"|vec_uint_type| **bitCount**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+msgstr ""
+"|vec_uint_type| **bitCount**\\ (\\ |vec_uint_type| "
+"값) :ref:`🔗<shader_func_bitCount>`"
+
+msgid "The value whose bits to count."
+msgstr "적어 놓을 만한 사항들이 있습니다:"
+
+msgid ""
+"The number of bits that are set to 1 in the binary representation of "
+"``value``."
+msgstr "``value``의 이진 표현에서 1로 설정된 비트 수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitCount.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitCount.xhtml"
+
+msgid ""
+"|vec_int_type| **findLSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+msgstr ""
+"|vec_int_type| **findLSB**\\ (\\ |vec_int_type| "
+"값) :ref:`🔗<shader_func_findLSB>`"
+
+msgid ""
+"|vec_uint_type| **findLSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+msgstr ""
+"|vec_uint_type| **findLSB**\\ (\\ |vec_uint_type| "
+"값) :ref:`🔗<shader_func_findLSB>`"
+
+msgid "Find the index of the least significant bit set to ``1``."
+msgstr "``1``로 설정된 최하위 비트의 인덱스를 찾습니다."
+
+msgid "If ``value`` is zero, ``-1`` will be returned."
+msgstr "``value``가 0이면 ``-1``가 반환됩니다."
+
+msgid "The value whose bits to scan."
+msgstr "스캔할 비트의 값입니다."
+
+msgid ""
+"The bit number of the least significant bit that is set to 1 in the binary "
+"representation of value."
+msgstr "value의 이진 표현에서 1로 설정된 최하위 비트의 비트 번호입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findLSB.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findLSB.xhtml"
+
+msgid ""
+"|vec_int_type| **findMSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+msgstr ""
+"|vec_int_type| **findMSB**\\ (\\ |vec_int_type| "
+"값) :ref:`🔗<shader_func_findMSB>`"
+
+msgid ""
+"|vec_uint_type| **findMSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+msgstr ""
+"|vec_uint_type| **findMSB**\\ (\\ |vec_uint_type| "
+"값) :ref:`🔗<shader_func_findMSB>`"
+
+msgid "Find the index of the most significant bit set to 1."
+msgstr "1로 설정된 최상위 비트의 인덱스를 찾습니다."
+
+msgid "For signed integer types, the sign bit is checked first and then:"
+msgstr ""
+"부호 있는 정수 유형의 경우 부호 비트를 먼저 확인한 다음 다음을 수행합니다."
+
+msgid ""
+"For positive integers, the result will be the bit number of the most "
+"significant bit that is set to 1."
+msgstr "양의 정수의 경우 결과는 1로 설정된 최상위 비트의 비트 번호가 됩니다."
+
+msgid ""
+"For negative integers, the result will be the bit number of the most "
+"significant bit set to 0."
+msgstr "음의 정수의 경우 결과는 0으로 설정된 최상위 비트의 비트 번호가 됩니다."
+
+msgid "For a value of zero or negative 1, -1 will be returned."
+msgstr "값이 0이거나 음수 1이면 -1이 반환됩니다."
+
+msgid ""
+"The bit number of the most significant bit that is set to 1 in the binary "
+"representation of value."
+msgstr "value의 이진 표현에서 1로 설정된 최상위 비트의 비트 번호입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findMSB.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findMSB.xhtml"
+
+msgid ""
+"|void| **imulExtended**\\ (\\ |vec_int_type| x, |vec_int_type| y, out |"
+"vec_int_type| msb, out |vec_int_type| "
+"lsb) :ref:`🔗<shader_func_imulExtended>`"
+msgstr ""
+"|void| **imulExtended**\\ (\\ |vec_int_type| x, |vec_int_type| y, 출력 |"
+"vec_int_type| msb, 출력 |vec_int_type| "
+"lsb) :ref:`🔗<shader_func_imulExtended>`"
+
+msgid ""
+"Perform 32-bit by 32-bit signed multiplication to produce a 64-bit result."
+msgstr "32비트 x 32비트 부호 있는 곱셈을 수행하여 64비트 결과를 생성합니다."
+
+msgid ""
+"The 32 least significant bits of this product are returned in ``lsb`` and "
+"the 32 most significant bits are returned in ``msb``."
+msgstr ""
+"이 곱의 최하위 32비트는 ``lsb``로 반환되고 최상위 32비트는 ``msb``로 반환됩니"
+"다."
+
+msgid "The first multiplicand."
+msgstr "최종 결과물"
+
+msgid "The second multiplicand."
+msgstr "행렬 곱"
+
+msgid "param msb"
+msgstr "매개변수 msb"
+
+msgid "The variable to receive the most significant word of the product."
+msgstr "제품의 가장 중요한 단어를 입력받는 변수입니다."
+
+msgid "param lsb"
+msgstr "매개변수 lsb"
+
+msgid "The variable to receive the least significant word of the product."
+msgstr "제품의 최하위 단어를 입력받는 변수입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/umulExtended.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/umulExtended.xhtml"
+
+msgid ""
+"|void| **umulExtended**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, out |"
+"vec_uint_type| msb, out |vec_uint_type| "
+"lsb) :ref:`🔗<shader_func_umulExtended>`"
+msgstr ""
+"|void| **umulExtended**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, 출력 |"
+"vec_uint_type| msb, 출력 |vec_uint_type| "
+"lsb) :ref:`🔗<shader_func_umulExtended>`"
+
+msgid ""
+"Perform 32-bit by 32-bit unsigned multiplication to produce a 64-bit result."
+msgstr "32비트 x 32비트 부호 없는 곱셈을 수행하여 64비트 결과를 생성합니다."
+
+msgid ""
+"|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
+msgstr ""
+"|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, 출"
+"력 |vec_uint_type| 캐리) :ref:`🔗<shader_func_uaddCarry>`"
+
+msgid "Add unsigned integers and generate carry."
+msgstr "Add unsigned integers and generate carry."
+
+msgid ""
+"adds two 32-bit unsigned integer variables (scalars or vectors) and "
+"generates a 32-bit unsigned integer result, along with a carry output. The "
+"value carry is ."
+msgstr ""
+"두 개의 32비트 부호 없는 정수 변수(스칼라 또는 벡터)를 추가하고 캐리 출력과 "
+"함께 32비트 부호 없는 정수 결과를 생성합니다. 캐리 값은 입니다."
+
+msgid "The first operand."
+msgstr "최종 결과물"
+
+msgid "The second operand."
+msgstr "최종 결과물"
+
+msgid "param carry"
+msgstr "매개변수 캐리"
+
+msgid "0 if the sum is less than 2\\ :sup:`32`, otherwise 1."
+msgstr "합계가 2\\ :sup:`32`보다 작으면 0이고, 그렇지 않으면 1입니다."
+
+msgid "``(x + y) % 2^32``."
+msgstr "``(x + y) % 2^32``."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/uaddCarry.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/uaddCarry.xhtml"
+
+msgid ""
+"|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| borrow) :ref:`🔗<shader_func_usubBorrow>`"
+msgstr ""
+"|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, 출"
+"력 |vec_uint_type| 빌림) :ref:`🔗<shader_func_usubBorrow>`"
+
+msgid "Subtract unsigned integers and generate borrow."
+msgstr "부호 없는 정수를 빼고 빌림을 생성합니다."
+
+msgid "param borrow"
+msgstr "매개변수 차용"
+
+msgid "``0`` if ``x >= y``, otherwise ``1``."
+msgstr "``x >= y``이면 ``0``, 그렇지 않으면 ``1``입니다."
+
+msgid ""
+"The difference of ``x`` and ``y`` if non-negative, or 2\\ :sup:`32` plus "
+"that difference otherwise."
+msgstr ""
+"음수가 아닌 경우 ``x`` 및 ``y``의 차이, 그렇지 않은 경우 2\\ :sup:`32`에 해"
+"당 차이를 더한 값입니다."
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"
+
+msgid ""
+"|vec_type| **ldexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_ldexp>`"
+msgstr ""
+"|vec_type| **ldexp**\\ (\\ |vec_type| x, 출력 |vec_int_type| "
+"exp) :ref:`🔗<shader_func_ldexp>`"
+
+msgid "Assembles a floating-point number from a value and exponent."
+msgstr "값과 지수에서 부동 소수점 숫자를 조합합니다."
+
+msgid ""
+"If this product is too large to be represented in the floating-point type, "
+"the result is undefined."
+msgstr ""
+"이 곱이 부동 소수점 유형으로 표현하기에는 너무 크면 결과가 정의되지 않습니다."
+
+msgid "The value to be used as a source of significand."
+msgstr "유효숫자의 소스로 사용되는 값입니다."
+
+msgid "param exp"
+msgstr "매개변수 특급"
+
+msgid "The value to be used as a source of exponent."
+msgstr "지수 소스로 사용할 값입니다."
+
+msgid "``x * 2^exp``"
+msgstr "``그룹 노드``"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ldexp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ldexp.xhtml"
+
+msgid ""
+"|vec_type| **frexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_frexp>`"
+msgstr ""
+"|vec_type| **frexp**\\ (\\ |vec_type| x, 출력 |vec_int_type| "
+"exp) :ref:`🔗<shader_func_frexp>`"
+
+msgid ""
+"Extracts ``x`` into a floating-point significand in the range ``[0.5, 1.0)`` "
+"and in integral exponent of two, such that:"
+msgstr ""
+"다음과 같이 ``x``를 ``[0.5, 1.0)`` 범위와 2의 정수 지수의 부동 소수점 유효 숫"
+"자로 추출합니다."
+
+msgid ""
+"For a floating-point value of zero, the significand and exponent are both "
+"zero."
+msgstr "부동 소수점 값이 0인 경우 유효 숫자와 지수는 모두 0입니다."
+
+msgid ""
+"For a floating-point value that is an infinity or a floating-point NaN, the "
+"results are undefined."
+msgstr ""
+"무한대 또는 부동 소수점 NaN인 부동 소수점 값의 경우 결과는 정의되지 않습니다."
+
+msgid "The value from which significand and exponent are to be extracted."
+msgstr "유효숫자와 지수를 추출할 값입니다."
+
+msgid "The variable into which to place the exponent of ``x``."
+msgstr "``x``의 지수를 배치할 변수입니다."
+
+msgid "The significand of ``x``."
+msgstr "``x``의 유효수입니다."
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/frexp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/frexp.xhtml"

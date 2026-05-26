@@ -41,11 +41,32 @@ msgstr "是"
 msgid "Cause"
 msgstr "原因"
 
+msgid ""
+"A type that doesn't derive from ``Node`` contains an exported field or "
+"property of a type that derives from ``Node``."
+msgstr ""
+"一个并未继承自 ``Node`` 的类型内包含了一个导出字段或属性，其类型继承自 "
+"``Node``。"
+
 msgid "Rule description"
 msgstr "规则说明"
 
+msgid ""
+"Exported nodes are serialized as ``NodePath``. Only types derived from "
+"``Node`` are able to get the node instance from the ``NodePath``."
+msgstr ""
+"导出的节点将会被序列化为 ``NodePath``。只有继承自 ``Node`` 的类型才能通过 "
+"``NodePath`` 获取类型实例。"
+
 msgid "How to fix violations"
 msgstr "如何解决违规情况"
+
+msgid ""
+"To fix a violation of this rule, avoid exporting ``Node`` members on a type "
+"that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
+msgstr ""
+"欲解决该规则带来的冲突，请避免在并未继承自 ``Node`` 的类型中导出 ``Node`` 成"
+"员，或考虑导出 ``NodePath``。"
 
 msgid "When to suppress warnings"
 msgstr "何时抑制警告"

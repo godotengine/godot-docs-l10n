@@ -11,23 +11,540 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.3 to Godot 4.4"
+msgstr "Godot 4.3에서 Godot 4.4로 업그레이드"
+
+msgid ""
+"For most games and apps made with 4.3 it should be relatively safe to "
+"migrate to 4.4. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"4.3으로 제작된 대부분의 게임과 앱의 경우 4.4로 마이그레이션하는 것이 상대적으"
+"로 안전합니다. 이 페이지에서는 프로젝트를 마이그레이션할 때 주의해야 할 모든 "
+"것을 다루려고 합니다."
+
 msgid "Breaking changes"
 msgstr "깨는 변경사항"
+
+msgid ""
+"If you are migrating from 4.3 to 4.4, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"4.3에서 4.4로 마이그레이션하는 경우 여기에 나열된 주요 변경 사항이 영향을 미"
+"칠 수 있습니다. 변경 사항은 영역/시스템별로 그룹화됩니다."
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"이 문서에서는 각 주요 변경 사항이 GDScript에 영향을 미치는지 여부와 C# 주요 "
+"변경 사항이 *바이너리 호환* 또는 *소스 호환*인지 여부를 나타냅니다."
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**바이너리 호환 가능** - 기존 바이너리는 재컴파일 없이 성공적으로 로드 및 실"
+"행되며 런타임 동작은 변경되지 않습니다."
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"**소스 호환 가능** - 소스 코드는 Godot를 업그레이드할 때 변경 없이 성공적으"
+"로 컴파일됩니다."
+
+msgid "Core"
+msgstr "코어"
 
 msgid "Change"
 msgstr "변경"
 
+msgid "GDScript Compatible"
+msgstr "GDScript"
+
+msgid "C# Binary Compatible"
+msgstr "C# 바이너리 호환"
+
+msgid "C# Source Compatible"
+msgstr "C# 소스 호환"
+
+msgid "Introduced"
+msgstr "소개"
+
+msgid "**FileAccess**"
+msgstr "**파일 액세스**"
+
+msgid "Method ``open_encrypted`` adds a new ``iv`` optional parameter"
+msgstr ""
+"``open_encrypted`` 메소드는 새로운 ``iv`` 선택적 매개변수를 추가합니다."
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ 호환 가능|"
+
+msgid "`GH-98918`_"
+msgstr "`GH-98918`_"
+
+msgid "Method ``store_8`` changes return type from ``void`` to ``bool``"
+msgstr "메서드 ``store_8``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-78289`_"
+msgstr "`GH-78289`_"
+
+msgid "Method ``store_16`` changes return type from ``void`` to ``bool``"
+msgstr "메서드 ``store_16``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_32`` changes return type from ``void`` to ``bool``"
+msgstr "메서드 ``store_32``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_64`` changes return type from ``void`` to ``bool``"
+msgstr "메서드 ``store_64``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_buffer`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_buffer``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_csv_line`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_csv_line``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_double`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_double``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_float`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_float``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_half`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_half``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_line`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_line``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid ""
+"Method ``store_pascal_string`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_pascal_string``는 반환 유형을 ``void``에서 ``bool``로 변경합니"
+"다."
+
+msgid "Method ``store_real`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_real``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_string`` changes return type from ``void`` to ``bool``"
+msgstr ""
+"메서드 ``store_string``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "Method ``store_var`` changes return type from ``void`` to ``bool``"
+msgstr "메서드 ``store_var``는 반환 유형을 ``void``에서 ``bool``로 변경합니다."
+
+msgid "**OS**"
+msgstr "**OS**"
+
+msgid "Method ``execute_with_pipe`` adds a new ``blocking`` optional parameter"
+msgstr ""
+"``execute_with_pipe`` 메소드는 새로운 ``blocking`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-94434`_"
+msgstr "`GH-94434`_"
+
+msgid ""
+"Method ``read_string_from_stdin`` adds a new ``buffer_size`` parameter [#f1]_"
+msgstr ""
+"``read_string_from_stdin`` 메소드는 새로운 ``buffer_size`` 매개변수 [#f1]_를 "
+"추가합니다."
+
+msgid "`GH-91201`_"
+msgstr "`GH-91201`_"
+
+msgid "**RegEx**"
+msgstr "**결과**"
+
+msgid "Method ``compile`` adds a new ``show_error`` optional parameter"
+msgstr ""
+"``compile`` 메소드는 새로운 ``show_error`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-95212`_"
+msgstr "`GH-95212`_"
+
+msgid ""
+"Method ``create_from_string`` adds a new ``show_error`` optional parameter"
+msgstr ""
+"``create_from_string`` 메소드는 새로운 ``show_error`` 선택적 매개변수를 추가"
+"합니다."
+
+msgid "**Semaphore**"
+msgstr "**예제**"
+
+msgid "Method ``post`` adds a new ``count`` optional parameter"
+msgstr "``post`` 메소드는 새로운 ``count`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-93605`_"
+msgstr "`GH-93605`_"
+
 msgid "**TranslationServer**"
 msgstr "**번역서버**"
+
+msgid ""
+"Method ``standardize_locale`` adds a new ``add_defaults`` optional parameter"
+msgstr ""
+"``standardize_locale`` 메소드는 새로운 ``add_defaults`` 선택적 매개변수를 추"
+"가합니다."
+
+msgid "`GH-98972`_"
+msgstr "`GH-98972`_"
+
+msgid "**Export annotations**"
+msgstr "내보내기 설정"
+
+msgid ""
+"The behavior of ``@export_file`` changed in Godot 4.4. When assigning a new "
+"value from the Inspector, the path is now stored and returned as a ``uid://"
+"`` reference instead of the traditional ``res://`` path(`GH-97912`_). This "
+"is a **breaking change** and may cause issues if you're expecting ``res://``-"
+"based paths in scripts or serialized files."
+msgstr ""
+"``@export_file``의 동작은 Godot 4.4에서 변경되었습니다. 인스펙터에서 새 값을 "
+"할당하면 이제 경로가 기존 ``res://`` 경로(`GH-97912`_) 대신 ``uid://`` 참조"
+"로 저장되고 반환됩니다. 이는 **주요 변경**이며 스크립트 또는 직렬화된 파일에 "
+"``res://`` 기반 경로가 필요한 경우 문제가 발생할 수 있습니다."
+
+msgid ""
+"For example, exported arrays of files may now contain a mix of ``uid://`` "
+"and ``res://`` paths, especially if they were partially edited in the "
+"Inspector."
+msgstr ""
+"예를 들어, 내보낸 파일 배열에는 이제 ``uid://`` 및 ``res://`` 경로가 혼합되"
+"어 포함될 수 있습니다. 특히 인스펙터에서 부분적으로 편집된 경우 더욱 그렇습니"
+"다."
+
+msgid ""
+"In 4.4, the only way to retain the ``res://`` format is to **manually edit** "
+"the `.tscn` or `.tres` files in a text editor. Starting in Godot 4.5, a new "
+"annotation ``@export_file_path`` can be used to explicitly retain the old "
+"behavior and export raw ``res://`` paths."
+msgstr ""
+"4.4에서 ``res://`` 형식을 유지하는 유일한 방법은 텍스트 편집기에서 `.tscn` 또"
+"는 `.tres` 파일을 **수동으로 편집**하는 것입니다. Godot 4.5부터 새로운 주석 "
+"``@export_file_path``를 사용하여 이전 동작을 명시적으로 유지하고 원시 "
+"``res://`` 경로를 내보낼 수 있습니다."
+
+msgid "Default buffer size in 4.3 is ``1024``."
+msgstr "4.3의 기본 버퍼 크기는 ``1024``입니다."
+
+msgid "GUI nodes"
+msgstr "노드 만들기"
+
+msgid "**RichTextLabel**"
+msgstr "ScoreLabel"
+
+msgid "Method ``push_meta`` adds a new ``tooltip`` optional parameter"
+msgstr ""
+"``push_meta`` 메소드는 새로운 ``tooltip`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-99481`_"
+msgstr "`GH-99481`_"
+
+msgid ""
+"Method ``set_table_column_expand`` adds a new ``shrink`` optional parameter"
+msgstr ""
+"``set_table_column_expand`` 메소드는 새로운 ``shrink`` 선택적 매개변수를 추가"
+"합니다."
+
+msgid "`GH-101482`_"
+msgstr "`GH-101482`_"
+
+msgid "**GraphEdit**"
+msgstr "**그래프편집**"
+
+msgid "Method ``connect_node`` adds a new ``keep_alive`` optional parameter"
+msgstr ""
+"``connect_node`` 메소드는 새로운 ``keep_alive`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-97449`_"
+msgstr "`GH-97449`_"
+
+msgid ""
+"Signal ``frame_rect_changed`` changes ``new_rect`` parameter type from "
+"``Vector2`` to ``Rect2``"
+msgstr ""
+"시그널 ``frame_rect_changed``는 ``new_rect`` 매개변수 유형을 ``Vector2``에서 "
+"``Rect2``로 변경합니다."
+
+msgid "`GH-102796`_"
+msgstr "`GH-102796`_"
 
 msgid "Physics"
 msgstr "물리"
 
+msgid "**SoftBody3D**"
+msgstr "**노드**"
+
+msgid "Method ``set_point_pinned`` adds a new ``insert_at`` optional parameter"
+msgstr ""
+"``set_point_pinned`` 메소드는 새로운 ``insert_at`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-94684`_"
+msgstr "`GH-94684`_"
+
 msgid "Rendering"
 msgstr "렌더링"
+
+msgid "**CPUParticles2D**"
+msgstr "GPUParticles2D"
+
+msgid "Method ``restart`` adds a new ``keep_seed`` optional parameter"
+msgstr ""
+"``restart`` 메소드는 새로운 ``keep_seed`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-92089`_"
+msgstr "`GH-92089`_"
+
+msgid "**CPUParticles3D**"
+msgstr "GPUParticles3D"
+
+msgid "**GPUParticles2D**"
+msgstr "GPUParticles2D"
+
+msgid "**GPUParticles3D**"
+msgstr "GPUParticles3D"
+
+msgid "**RenderingDevice**"
+msgstr "렌더링"
+
+msgid "Method ``draw_list_begin`` adds a new ``breadcrumb`` optional parameter"
+msgstr ""
+"``draw_list_begin`` 메소드는 새로운 ``breadcrumb`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-90993`_"
+msgstr "`GH-90993`_"
+
+msgid "Method ``draw_list_begin`` removes many parameters"
+msgstr "``draw_list_begin`` 메소드는 많은 매개변수를 제거합니다."
+
+msgid "`GH-98670`_"
+msgstr "`GH-98670`_"
+
+msgid ""
+"Method ``index_buffer_create`` adds a new ``enable_device_address`` optional "
+"parameter"
+msgstr ""
+"``index_buffer_create`` 메소드는 새로운 ``enable_device_address`` 선택적 매개"
+"변수를 추가합니다."
+
+msgid "`GH-100062`_"
+msgstr "`GH-100062`_"
+
+msgid ""
+"Method ``uniform_buffer_create`` adds a new ``enable_device_address`` "
+"optional parameter"
+msgstr ""
+"``uniform_buffer_create`` 메소드는 새로운 ``enable_device_address`` 선택적 매"
+"개변수를 추가합니다."
+
+msgid ""
+"Method ``vertex_buffer_create`` adds a new ``enable_device_address`` "
+"optional parameter"
+msgstr ""
+"``vertex_buffer_create`` 메소드는 새로운 ``enable_device_address`` 선택적 매"
+"개변수를 추가합니다."
+
+msgid "**RenderingServer**"
+msgstr "**Server**"
+
+msgid ""
+"Method ``multimesh_allocate_data`` adds a new ``use_indirect`` optional "
+"parameter"
+msgstr ""
+"``multimesh_allocate_data`` 메소드는 새로운 ``use_indirect`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "`GH-99455`_"
+msgstr "`GH-99455`_"
+
+msgid "**Shader**"
+msgstr "셰이더"
+
+msgid ""
+"Method ``get_default_texture_parameter`` changes return type from "
+"``Texture2D`` to ``Texture``"
+msgstr ""
+"메서드 ``get_default_texture_parameter``는 반환 유형을 ``Texture2D``에서 "
+"``Texture``로 변경합니다."
+
+msgid "`GH-95126`_"
+msgstr "`GH-95126`_"
+
+msgid ""
+"Method ``set_default_texture_parameter`` changes ``texture`` parameter type "
+"from ``Texture2D`` to ``Texture``"
+msgstr ""
+"메소드 ``set_default_texture_parameter``는 ``texture`` 매개변수 유형을 "
+"``Texture2D``에서 ``Texture``로 변경합니다."
+
+msgid "**VisualShaderNodeCubemap**"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid ""
+"Property ``cube_map`` changes type from ``Cubemap`` to ``TextureLayered``"
+msgstr ""
+"``cube_map`` 속성은 유형을 ``Cubemap``에서 ``TextureLayered``로 변경합니다."
+
+msgid "**VisualShaderNodeTexture2DArray**"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid ""
+"Property ``texture_array`` changes type from ``Texture2DArray`` to "
+"``TextureLayered``"
+msgstr ""
+"``texture_array`` 속성은 유형을 ``Texture2DArray``에서 ``TextureLayered``로 "
+"변경합니다."
+
+msgid ""
+"In C#, the enum ``RenderingDevice.StorageBufferUsage`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members where added in `GH-100062`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"C#에서 열거형 ``RenderingDevice.StorageBufferUsage``는 바인딩 생성기가 열거"
+"형 접두사를 감지하는 방식으로 인해 호환성을 손상시킵니다. 열거형 멤버의 이름"
+"이 변경된 열거형에 `GH-100062`_에 추가된 새 멤버입니다."
 
 msgid "Navigation"
 msgstr "내비게이션"
 
+msgid "**NavigationServer2D**"
+msgstr "내비게이션 메시."
+
+msgid "Method ``query_path`` adds a new ``callback`` optional parameter"
+msgstr ""
+"``query_path`` 메소드는 새로운 ``callback`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-100129`_"
+msgstr "`GH-100129`_"
+
+msgid "**NavigationServer3D**"
+msgstr "내비게이션 메시."
+
+msgid "Editor plugins"
+msgstr "편집기 플러그인"
+
+msgid "**EditorInterface**"
+msgstr "Godot 인터페이스"
+
+msgid ""
+"Method ``open_scene_from_path`` adds a new ``set_inherited`` optional "
+"parameter"
+msgstr ""
+"``open_scene_from_path`` 메소드는 새로운 ``set_inherited`` 선택적 매개변수를 "
+"추가합니다."
+
+msgid "`GH-90057`_"
+msgstr "`GH-90057`_"
+
+msgid ""
+"Method ``popup_node_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr ""
+"``popup_node_selector`` 메소드는 새로운 ``current_value`` 선택적 매개변수를 "
+"추가합니다."
+
+msgid "`GH-94323`_"
+msgstr "`GH-94323`_"
+
+msgid ""
+"Method ``popup_property_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr ""
+"``popup_property_selector`` 메소드는 새로운 ``current_value`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "**EditorSceneFormatImporter**"
+msgstr "Godot 인터페이스"
+
+msgid "Method ``_get_import_flags`` removed"
+msgstr "``_get_import_flags`` 방법이 제거되었습니다."
+
+msgid "`GH-101531`_"
+msgstr "`GH-101531`_"
+
+msgid "**EditorTranslationParserPlugin**"
+msgstr ":ref:`doc_inspector_plugins`"
+
+msgid ""
+"Method ``_parse_file`` changes return type to ``Array`` and removes "
+"``msgids`` and ``msgids_context_plural`` parameters"
+msgstr ""
+"``_parse_file`` 메서드는 반환 유형을 ``Array``로 변경하고 ``msgids`` 및 "
+"``msgids_context_plural`` 매개 변수를 제거합니다."
+
+msgid "`GH-99297`_"
+msgstr "`GH-99297`_"
+
+msgid ""
+"The method ``_get_import_flags`` was never used by the engine. It was "
+"removed despite the compatibility breakage as there's no way for users to "
+"rely on this affecting engine behavior."
+msgstr ""
+"``_get_import_flags`` 메소드는 엔진에서 사용된 적이 없습니다. 사용자가 엔진 "
+"동작에 영향을 미치는 이 기능에 의존할 방법이 없기 때문에 호환성 손상에도 불구"
+"하고 제거되었습니다."
+
+msgid "Behavior changes"
+msgstr "행동 변화"
+
+msgid ""
+"The ``Curve`` resource now enforces its value range, so ``min_value`` and "
+"``max_value`` need to be changed if any of the points fall outside of the "
+"default ``[0, 1]`` range."
+msgstr ""
+"이제 ``Curve`` 리소스는 해당 값 범위를 적용하므로 포인트가 기본 ``[0, 1]`` 범"
+"위를 벗어나는 경우 ``min_value`` 및 ``max_value``를 변경해야 합니다."
+
+msgid ""
+"The ``VisualShaderNodeVec4Constant`` shader node had its input type changed "
+"to ``Vector4``. Users need to recreate the values in their constants."
+msgstr ""
+"``VisualShaderNodeVec4Constant`` 셰이더 노드의 입력 유형이 ``Vector4``로 변경"
+"되었습니다. 사용자는 상수의 값을 다시 생성해야 합니다."
+
+msgid "CSG"
+msgstr "CSG"
+
+msgid ""
+"The CSG implementation now uses Emmett Lalish's `Manifold <https://"
+"github.com/elalish/manifold>`_ library (`GH-94321`_). The new implementation "
+"is more consistent with manifold definitions and fixes a number of bugs and "
+"stability issues. As a result, non-manifold meshes are no longer supported. "
+"You can use ``MeshInstance3D`` for rendering non-manifold geometry, such as "
+"quads or planes."
+msgstr ""
+"이제 CSG 구현에서는 Emmett Lalish의 `Manifold <https://github.com/elalish/"
+"manifold>`_ 라이브러리(`GH-94321`_)를 사용합니다. 새로운 구현은 다양한 정의"
+"와 더욱 일치하며 여러 버그 및 안정성 문제를 수정합니다. 결과적으로 비다양체 "
+"메시는 더 이상 지원되지 않습니다. 쿼드 또는 평면과 같은 비다양체 형상을 렌더"
+"링하는 데 ``MeshInstance3D``를 사용할 수 있습니다."
+
 msgid "Android"
 msgstr "Android"
+
+msgid ""
+"Android sensor events are no longer enabled by default (`GH-94799`_). "
+"Projects that use sensor events can enable them as needed in Project "
+"Settings under **Input Devices > Sensors**."
+msgstr ""
+"Android 센서 이벤트는 더 이상 기본적으로 활성화되지 않습니다(`GH-94799`_). 센"
+"서 이벤트를 사용하는 프로젝트는 필요에 따라 **입력 장치 > 센서**의 프로젝트 "
+"설정에서 활성화할 수 있습니다."

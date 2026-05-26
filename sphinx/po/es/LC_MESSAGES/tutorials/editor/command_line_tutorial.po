@@ -495,6 +495,9 @@ msgstr ""
 "|debug| Imprime todas las asignaciones de StringName en stdout cuando el "
 "motor se cierra."
 
+msgid "``--debug-canvas-item-redraw``"
+msgstr "``--debug-canvas-item-redraw``"
+
 msgid "``--max-fps <fps>``"
 msgstr "``--max-fps <fps>``"
 
@@ -574,6 +577,17 @@ msgstr "**Herramientas independientes**"
 
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s``, ``--script <script>``"
+
+msgid ""
+"|extended| Run a script. ``<script>`` must be a resource path relative to "
+"the project (``myscript.gd`` will be interpreted as ``res://my_script.gd``) "
+"or an absolute filesystem path (for example, on Windows: ``C:/tmp/"
+"my_script.gd``)."
+msgstr ""
+"|extended| Ejecuta un script. ``<script>`` debe ser una ruta de recurso "
+"relativa al proyecto (``myscript.gd`` se interpretará como ``res://"
+"my_script.gd``) o una ruta absoluta del sistema de archivos (por ejemplo, en "
+"Windows: ``C:/tmp/my_script.gd``)."
 
 msgid "``--main-loop <main_loop_name>``"
 msgstr "``--main-loop <main_loop_name>``"
@@ -658,6 +672,9 @@ msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
 msgstr ""
 "|editor| Impide el volcado de los tipos base (utilizado con ``--doctool``)."
 
+msgid "``--gdextension-docs``"
+msgstr "``--gdextension-docs``"
+
 msgid "``--gdscript-docs <path>``"
 msgstr "``--gdscript-docs <path>``"
 
@@ -674,8 +691,14 @@ msgstr ""
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
 
+msgid "``--dump-gdextension-interface-json``"
+msgstr "``--dump-gdextension-interface-json``"
+
 msgid "``--dump-extension-api``"
 msgstr "``--dump-extension-api``"
+
+msgid "``--dump-extension-api-with-docs``"
+msgstr "``--dump-extension-api-with-docs``"
 
 msgid "``--validate-extension-api <path>``"
 msgstr "``--validate-extension-api <path>``"

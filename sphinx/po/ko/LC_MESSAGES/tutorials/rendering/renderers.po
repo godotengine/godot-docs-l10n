@@ -63,11 +63,62 @@ msgstr ""
 msgid "Renderers, rendering drivers, and RenderingDevice"
 msgstr "렌더러, 렌더링 드라이버 및 RenderingDevice"
 
+msgid ""
+"Diagram of rendering layers. The Compatibility renderer runs on the OpenGL\n"
+"driver. The Forward+ and Mobile renderers run on RenderingDevice, which can "
+"use\n"
+"Vulkan, Direct3D 12, or Metal as a rendering driver."
+msgstr ""
+"렌더링 레이어 다이어그램 호환성 렌더러는 OpenGL에서 실행됩니다.\n"
+"운전사. Forward+ 및 모바일 렌더러는 RenderingDevice에서 실행됩니다.\n"
+"Vulkan, Direct3D 12 또는 Metal을 렌더링 드라이버로 사용합니다."
+
 msgid "Godot's rendering abstraction layers."
 msgstr "Godot의 렌더링 추상화 계층."
 
+msgid ""
+"The *renderer*, or *rendering method*, determines which features are "
+"available. Most of the time, this is the only thing you need to think about. "
+"Godot's renderers are **Forward+**, **Mobile**, and **Compatibility**."
+msgstr ""
+"*렌더러* 또는 *렌더링 방법*에 따라 사용 가능한 기능이 결정됩니다. 대부분의 경"
+"우 이것이 당신이 생각해야 할 유일한 것입니다. Godot의 렌더러는 **Forward+**, "
+"**Mobile**, **Compatibility**입니다."
+
+msgid ""
+"The *rendering driver* tells the GPU what to do, using a graphics API. Godot "
+"can use the **OpenGL**, **Vulkan**, **Direct3D 12**, and **Metal** rendering "
+"drivers. Not every GPU supports every rendering driver, and therefore not "
+"every GPU supports all renderers. Vulkan, Direct3D 12, and Metal are modern, "
+"low-level graphics APIs, and requires newer hardware. OpenGL is an older "
+"graphics API that runs on most hardware."
+msgstr ""
+"*렌더링 드라이버*는 그래픽 API를 사용하여 GPU에 수행할 작업을 알려줍니다. "
+"Godot는 **OpenGL**, **Vulkan**, **Direct3D 12** 및 **Metal** 렌더링 드라이버"
+"를 사용할 수 있습니다. 모든 GPU가 모든 렌더링 드라이버를 지원하는 것은 아니므"
+"로 모든 GPU가 모든 렌더러를 지원하는 것은 아닙니다. Vulkan, Direct3D 12 및 "
+"Metal은 최신 저수준 그래픽 API이며 최신 하드웨어가 필요합니다. OpenGL은 대부"
+"분의 하드웨어에서 실행되는 오래된 그래픽 API입니다."
+
+msgid ""
+"RenderingDevice is a *rendering backend*, an abstraction layer between the "
+"renderer and the rendering driver. It is used by the Forward+ and Mobile "
+"renderers, and these renderers are sometimes called \"RenderingDevice-based "
+"renderers\"."
+msgstr ""
+"RenderingDevice는 렌더러와 렌더링 드라이버 사이의 추상화 계층인 *렌더링 백엔"
+"드*입니다. Forward+ 및 Mobile 렌더러에서 사용되며 이러한 렌더러를 "
+"\"RenderingDevice 기반 렌더러\"라고도 합니다."
+
 msgid "Choosing a renderer"
 msgstr "렌더러 선택하기"
+
+msgid ""
+"Choosing a renderer is a complex question, and depends on your hardware and "
+"the which platforms you are developing for. As a starting point:"
+msgstr ""
+"렌더러를 선택하는 것은 복잡한 질문이며 하드웨어와 개발 대상 플랫폼에 따라 다"
+"릅니다. 출발점:"
 
 msgid "Choose **Forward+** if:"
 msgstr "다음 경우는 **Forward+**\\ 를 선택하세요:"
@@ -135,6 +186,18 @@ msgstr ""
 "모든 기기에서 가능한 한 최상의 성능을 원하며 고급 렌더링 기능은 필요하지 않습"
 "니다."
 
+msgid ""
+"Keep in mind every game is unique, and this is only a starting point. For "
+"example, you might choose to use the Compatibility renderer even though you "
+"have the latest GPU, so you can support the widest range of hardware. Or you "
+"might want to use the Forward+ renderer for a 2D game, so you can use "
+"advanced features like compute shaders."
+msgstr ""
+"모든 게임은 고유하며 이는 단지 시작점일 뿐이라는 점을 명심하세요. 예를 들어, "
+"최신 GPU가 있더라도 호환성 렌더러를 사용하도록 선택하면 가장 광범위한 하드웨"
+"어를 지원할 수 있습니다. 또는 2D 게임에 Forward+ 렌더러를 사용하여 컴퓨팅 셰"
+"이더와 같은 고급 기능을 사용할 수도 있습니다."
+
 msgid "Switching between renderers"
 msgstr "렌더러 간 전환하기"
 
@@ -144,6 +207,38 @@ msgid ""
 msgstr ""
 "편집기에서 편집기의 오른쪽 상단 모서리에서 렌더러 이름을 클릭하여 항상 렌더"
 "러 간에 전환할 수 있습니다."
+
+msgid ""
+"Switching between renderers may require some manual tweaks to your scene, "
+"lighting, and environment, since each renderer is different. In general, "
+"switching between the Mobile and Forward+ renderers will require fewer "
+"adjustments than switching between the Compatibility renderer and the "
+"Forward+ or Mobile renderers."
+msgstr ""
+"각 렌더러가 다르기 때문에 렌더러 간에 전환하려면 씬, 조명 및 환경을 수동으로 "
+"조정해야 할 수 있습니다. 일반적으로 모바일과 Forward+ 렌더러 간 전환에는 호환"
+"성 렌더러와 Forward+ 또는 모바일 렌더러 간 전환보다 조정 작업이 더 적습니다."
+
+msgid ""
+"Since Godot 4.4, when using Forward+ or Mobile, if Vulkan is not supported, "
+"the engine will fall back to Direct3D 12 and vice versa. If the attempted "
+"fallback driver is not supported either, the engine will then fall back to "
+"Compatibility when the RenderingDevice backend is not supported. This allows "
+"the project to run anyway, but it may look different than the intended "
+"appearance due to the more limited renderer. This behavior can be disabled "
+"in the project settings by unchecking :ref:`Rendering > Rendering Device > "
+"Fallback to OpenGL 3<class_ProjectSettings_property_rendering/"
+"rendering_device/fallback_to_opengl3>`."
+msgstr ""
+"Godot 4.4부터 Forward+ 또는 Mobile을 사용할 때 Vulkan이 지원되지 않으면 엔진"
+"은 Direct3D 12로 돌아가고 그 반대의 경우도 마찬가지입니다. 시도한 대체 드라이"
+"버도 지원되지 않는 경우 RenderingDevice 백엔드가 지원되지 않으면 엔진은 호환"
+"성으로 대체됩니다. 이렇게 하면 프로젝트가 어쨌든 실행될 수 있지만 더 제한된 "
+"렌더러로 인해 의도한 모양과 다르게 보일 수 있습니다. 이 동작"
+"은 :ref:`Rendering > Rendering Device > Fallback to OpenGL "
+"3<class_ProjectSettings_property_rendering/rendering_device/"
+"fallback_to_opengl3>`를 선택 취소하여 프로젝트 설정에서 비활성화할 수 있습니"
+"다."
 
 msgid "Feature comparison"
 msgstr "기능 비교"
@@ -239,14 +334,149 @@ msgstr ""
 msgid "XR"
 msgstr "XR"
 
+msgid "✔️ Yes. Recommended for standalone headsets."
+msgstr "✔️ 네. 독립형 헤드셋에 권장됩니다."
+
+msgid "✔️ Yes. Recommended for desktop headsets."
+msgstr "✔️ 네. 데스크탑 헤드셋에 권장됩니다."
+
 msgid "Web"
 msgstr "웹"
+
+msgid "2D Games"
+msgstr "게임패드"
+
+msgid "✔️ Yes, but Compatibility is usually good enough for 2D."
+msgstr "✔️ 네, 하지만 일반적으로 2D에서는 호환성이 충분합니다."
+
+msgid "3D Games"
+msgstr "게임패드"
+
+msgid "**Feature set**"
+msgstr "**기능 태그**"
+
+msgid "2D and core 3D features."
+msgstr "핵심 기능"
+
+msgid "Most rendering features."
+msgstr "기능 목록"
+
+msgid "All rendering features."
+msgstr "애니메이션 설정"
+
+msgid "2D rendering features"
+msgstr "애니메이션 설정"
+
+msgid "Core 3D rendering features"
+msgstr "애니메이션 설정"
+
+msgid "Advanced rendering features"
+msgstr "환경 옵션"
+
+msgid "⚠️ Yes, limited by mobile hardware."
+msgstr "⚠️ 예, 모바일 하드웨어에 따라 제한됩니다."
+
+msgid "✔️ Yes. All rendering features are supported."
+msgstr "✔️ 네. 모든 렌더링 기능이 지원됩니다."
+
+msgid "New features"
+msgstr "핵심 기능"
+
+msgid ""
+"⚠️ Some new rendering features are added to Compatibility. Features are added "
+"after Mobile and Forward+."
+msgstr ""
+"⚠️ 호환성에 몇 가지 새로운 렌더링 기능이 추가되었습니다. Mobile 및 Forward+ 이"
+"후에 기능이 추가됩니다."
+
+msgid ""
+"✔️ Most new rendering features are added to Mobile. Mobile usually gets new "
+"features as Forward+ does."
+msgstr ""
+"✔️ 대부분의 새로운 렌더링 기능이 모바일에 추가되었습니다. 모바일은 일반적으로 "
+"Forward+와 마찬가지로 새로운 기능을 제공합니다."
+
+msgid ""
+"✔️ All new features are added to Forward+. As the focus of new development, "
+"Forward+ gets features first."
+msgstr ""
+"✔️ Forward+에 모든 새로운 기능이 추가되었습니다. 새로운 개발의 초점으로 "
+"Forward+는 기능을 먼저 얻습니다."
+
+msgid "Rendering cost"
+msgstr "렌더링"
+
+msgid "Low base cost, but high scaling cost."
+msgstr "기본 비용은 낮지만 확장 비용은 높습니다."
+
+msgid "Medium base cost, and medium scaling cost."
+msgstr "중간 기본 비용 및 중간 규모 확장 비용."
+
+msgid "Highest base cost, and low scaling cost."
+msgstr "기본 비용은 가장 높고 확장 비용은 낮습니다."
+
+msgid "Rendering driver"
+msgstr "렌더링"
+
+msgid "OpenGL."
+msgstr "OpenXR"
+
+msgid "Vulkan, Direct3D 12, or Metal."
+msgstr "Vulkan, Direct3D 12 또는 Metal."
 
 msgid "Lights and shadows"
 msgstr "빛과 그림자"
 
 msgid "See :ref:`doc_lights_and_shadows` for more information."
 msgstr "자세한 정보는 :ref:`doc_lights_and_shadows`\\ 를 참조하세요."
+
+msgid "Lighting approach"
+msgstr "조명 접근법"
+
+msgid "Forward"
+msgstr "Forward+"
+
+msgid "Clustered Forward"
+msgstr "자유 시점 앞으로"
+
+msgid "Maximum OmniLights"
+msgstr "최대 OmniLights"
+
+msgid "8 per mesh. Can be increased."
+msgstr "메쉬당 8개. 늘릴 수 있습니다."
+
+msgid "8 per mesh, 256 per view."
+msgstr "메시당 8개, 뷰당 256개."
+
+msgid "512 per cluster. Can be increased."
+msgstr "클러스터당 512개. 늘릴 수 있습니다."
+
+msgid "Maximum SpotLights"
+msgstr "최대 스포트라이트"
+
+msgid "Maximum DirectionalLights"
+msgstr "전방위 조명(Omnidirectional lights)."
+
+msgid "8"
+msgstr "8"
+
+msgid "PCSS for OmniLight and SpotLight"
+msgstr "OmniLight 및 SpotLight용 PCSS"
+
+msgid "❌ Not supported."
+msgstr "지원됨"
+
+msgid "✔️ Supported."
+msgstr "지원됨"
+
+msgid "PCSS for DirectionalLight"
+msgstr "방향성 조명용 PCSS"
+
+msgid "Light projector textures"
+msgstr "행성 텍스처 만들기"
+
+msgid "Global Illumination"
+msgstr "벡터 내장 타입"
 
 msgid ""
 "See :ref:`doc_introduction_to_global_illumination` for more information."
@@ -256,8 +486,36 @@ msgstr ""
 msgid "ReflectionProbe"
 msgstr "ReflectionProbe"
 
+msgid "✔️ Supported, 2 per mesh."
+msgstr "✔️ 지원됨, 메시당 2개."
+
+msgid "✔️ Supported, 8 per mesh."
+msgstr "✔️ 지원됨, 메시당 8개."
+
+msgid "✔️ Supported, unlimited."
+msgstr "✔️ 지원, 무제한."
+
 msgid "LightmapGI"
 msgstr "라이트맵GI"
+
+msgid ""
+"⚠️ Rendering of baked lightmaps is supported. Baking requires hardware with "
+"RenderingDevice support."
+msgstr ""
+"⚠️ 구운 라이트맵 렌더링이 지원됩니다. 베이킹에는 RenderingDevice를 지원하는 하"
+"드웨어가 필요합니다."
+
+msgid "VoxelGI"
+msgstr "복셀GI"
+
+msgid "Screen-Space Indirect Lighting (SSIL)"
+msgstr "SSIL(화면 공간 간접 조명)"
+
+msgid "Signed Distance Field Global Illumination (SDFGI)"
+msgstr "SDFGI(부호 디스턴스 필드 글로벌 일루미네이션)"
+
+msgid "Environment and post-processing"
+msgstr "환경 및 후처리"
 
 msgid "See :ref:`doc_environment_and_post_processing` for more information."
 msgstr ""
@@ -266,11 +524,17 @@ msgstr ""
 msgid "Fog (Depth and Height)"
 msgstr "안개 (깊이와 높이)"
 
+msgid "Volumetric Fog"
+msgstr "체적 안개"
+
 msgid "Tonemapping"
 msgstr "톤매핑"
 
 msgid "Screen-Space Reflections"
 msgstr "스크린 공간 반사"
+
+msgid "Screen-Space Ambient Occlusion (SSAO)"
+msgstr "스크린 공간 앰비언트 오클루전(SSAO)"
 
 msgid "Glow"
 msgstr "빛번짐"
@@ -308,6 +572,9 @@ msgstr "FXAA"
 msgid "SSAA"
 msgstr "SSAA"
 
+msgid "Screen-space roughness limiter"
+msgstr "화면 공간 거칠기 제한기"
+
 msgid "StandardMaterial features"
 msgstr "StandardMaterial 기능"
 
@@ -329,8 +596,14 @@ msgstr "화면 텍스처"
 msgid "Depth texture"
 msgstr "깊이 텍스처"
 
+msgid "Normal/Roughness buffer"
+msgstr "법선/거칠기 텍스처"
+
 msgid "Compute shaders"
 msgstr "셰이더 계산"
+
+msgid "⚠️ Supported, but comes with a performance penalty on older devices."
+msgstr "⚠️ 지원되지만 구형 장치에서는 성능이 저하됩니다."
 
 msgid "Other features"
 msgstr "기타 기능"
@@ -343,6 +616,9 @@ msgstr "데칼"
 
 msgid "Particle trails"
 msgstr "입자 트레일"
+
+msgid "Particle SDF collision"
+msgstr "입자 콜리전"
 
 msgid "Depth of field blur"
 msgstr "필드 블러의 깊이"

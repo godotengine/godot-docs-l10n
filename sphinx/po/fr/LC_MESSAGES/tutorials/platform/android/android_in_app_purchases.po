@@ -14,11 +14,31 @@ msgstr ""
 msgid "Android in-app purchases"
 msgstr "Achats intégrés à l’application Android"
 
+msgid ""
+"Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin "
+"compatible with Godot 4.2+ which uses the `Google Play Billing library "
+"<https://developer.android.com/google/play/billing>`_."
+msgstr ""
+"Godot propose un plugin Android ``GodotGooglePlayBilling`` compatible avec "
+"Godot 4.2+ qui utilise la bibliothèque `Google Play Billing <https://"
+"developer.android.com/google/play/billing>`_."
+
 msgid "Usage"
 msgstr "Utilisation"
 
 msgid "Getting started"
 msgstr "Pour commencer"
+
+msgid ""
+"Make sure you have enabled and successfully set up :ref:`Android Gradle "
+"Builds <doc_android_gradle_build>`. Follow the installation instructions on "
+"the ``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/"
+"godot-google-play-billing>`__."
+msgstr ""
+"Assurez-vous que vous avez activé et configuré avec succès "
+"les :ref:`Compilations Gradle Android <doc_android_gradle_build>`. Suivez "
+"les instructions de compilation sur la `page github <https://github.com/"
+"godotengine/godot-google-play-billing>`__ de ``GodotGooglePlayBilling``."
 
 msgid "Initialize the plugin"
 msgstr "Initialiser le plugin"
@@ -31,6 +51,12 @@ msgstr "Appellez ``start_connection``."
 
 msgid "Initialization example:"
 msgstr "Exemple d'initialisation :"
+
+msgid "Return values for ``get_connection_state()``:"
+msgstr "Valeur de renvoi pour ``getConnectionState()`` :"
+
+msgid "Example use of ``query_product_details()``:"
+msgstr "Exemple d'utilisation de ``query_product_details()`` :"
 
 msgid "Query user purchases"
 msgstr "Interroger les achats utilisateur"
@@ -52,3 +78,6 @@ msgstr "Consommables"
 
 msgid "Subscriptions"
 msgstr "Abonnements"
+
+msgid "Example use of ``update_subscription``:"
+msgstr "Exemple d'utilisation d'``update_subscription`` :"

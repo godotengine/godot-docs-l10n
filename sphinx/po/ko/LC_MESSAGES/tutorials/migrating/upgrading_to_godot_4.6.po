@@ -11,44 +11,710 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.5 to Godot 4.6"
+msgstr "Godot 4.5에서 Godot 4.6으로 업그레이드"
+
+msgid ""
+"For most games and apps made with 4.5 it should be relatively safe to "
+"migrate to 4.6. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"4.5로 제작된 대부분의 게임과 앱의 경우 4.6으로 마이그레이션하는 것이 상대적으"
+"로 안전합니다. 이 페이지에서는 프로젝트를 마이그레이션할 때 주의해야 할 모든 "
+"것을 다루려고 합니다."
+
 msgid "Breaking changes"
 msgstr "깨는 변경사항"
+
+msgid ""
+"If you are migrating from 4.5 to 4.6, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"4.5에서 4.6으로 마이그레이션하는 경우 여기에 나열된 주요 변경 사항이 영향을 "
+"미칠 수 있습니다. 변경 사항은 영역/시스템별로 그룹화됩니다."
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"이 문서에서는 각 주요 변경 사항이 GDScript에 영향을 미치는지 여부와 C# 주요 "
+"변경 사항이 *바이너리 호환* 또는 *소스 호환*인지 여부를 나타냅니다."
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**바이너리 호환 가능** - 기존 바이너리는 재컴파일 없이 성공적으로 로드 및 실"
+"행되며 런타임 동작은 변경되지 않습니다."
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"**소스 호환 가능** - 소스 코드는 Godot를 업그레이드할 때 변경 없이 성공적으"
+"로 컴파일됩니다."
+
+msgid "Core"
+msgstr "코어"
 
 msgid "Change"
 msgstr "변경"
 
+msgid "GDScript Compatible"
+msgstr "GDScript"
+
+msgid "C# Binary Compatible"
+msgstr "C# 바이너리 호환"
+
+msgid "C# Source Compatible"
+msgstr "C# 소스 호환"
+
+msgid "Introduced"
+msgstr "소개"
+
+msgid "**FileAccess**"
+msgstr "**파일 액세스**"
+
+msgid ""
+"Method ``create_temp`` changes ``mode_flags`` parameter type from ``int`` to "
+"``FileAccess.ModeFlags``"
+msgstr ""
+"메소드 ``create_temp``는 ``mode_flags`` 매개변수 유형을 ``int``에서 "
+"``FileAccess.ModeFlags``로 변경합니다."
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ 호환 가능|"
+
+msgid "`GH-114053`_"
+msgstr "`GH-114053`_"
+
+msgid "Method ``get_as_text`` removes ``skip_cr`` parameter"
+msgstr "``get_as_text`` 메소드는 ``skip_cr`` 매개변수를 제거합니다."
+
+msgid "`GH-110867`_"
+msgstr "`GH-110867`_"
+
 msgid "**Performance**"
 msgstr "**성능**"
+
+msgid "Method ``add_custom_monitor`` adds a new ``type`` optional parameter"
+msgstr ""
+"``add_custom_monitor`` 메소드는 새로운 ``type`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-110433`_"
+msgstr "`GH-110433`_"
 
 msgid "Animation"
 msgstr "애니메이션"
 
+msgid "**AnimationPlayer**"
+msgstr "AnimationPlayer"
+
+msgid ""
+"Property ``assigned_animation`` changes type from ``String`` to "
+"``StringName``"
+msgstr ""
+"``assigned_animation`` 속성은 유형을 ``String``에서 ``StringName``로 변경합니"
+"다."
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-110767`_"
+msgstr "`GH-110767`_"
+
+msgid "Property ``autoplay`` changes type from ``String`` to ``StringName``"
+msgstr "``autoplay`` 속성은 유형을 ``String``에서 ``StringName``로 변경합니다."
+
+msgid ""
+"Property ``current_animation`` changes type from ``String`` to ``StringName``"
+msgstr ""
+"``current_animation`` 속성은 유형을 ``String``에서 ``StringName``로 변경합니"
+"다."
+
+msgid ""
+"Method ``get_queue`` changes return type from ``PackedStringArray`` to "
+"``StringName[]``"
+msgstr ""
+"메서드 ``get_queue``는 반환 유형을 ``PackedStringArray``에서 ``StringName[]``"
+"로 변경합니다."
+
+msgid ""
+"Signal ``current_animation_changed`` changes ``name`` parameter type from "
+"``String`` to ``StringName``"
+msgstr ""
+"시그널 ``current_animation_changed``는 ``name`` 매개변수 유형을 ``String``에"
+"서 ``StringName``로 변경합니다."
+
 msgid "3D"
 msgstr "3D"
+
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
+msgid ""
+"Method ``get_end_bone_direction`` changes return type from "
+"``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"메서드 ``get_end_bone_direction``는 반환 유형을 "
+"``SpringBoneSimulator3D.BoneDirection``에서 "
+"``SkeletonModifier3D.BoneDirection``로 변경합니다."
+
+msgid "`GH-110120`_"
+msgstr "`GH-110120`_"
+
+msgid ""
+"Method ``get_joint_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"메서드 ``get_joint_rotation_axis``는 반환 유형을 "
+"``SpringBoneSimulator3D.RotationAxis``에서 "
+"``SkeletonModifier3D.RotationAxis``로 변경합니다."
+
+msgid ""
+"Method ``get_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"메서드 ``get_rotation_axis``는 반환 유형을 "
+"``SpringBoneSimulator3D.RotationAxis``에서 "
+"``SkeletonModifier3D.RotationAxis``로 변경합니다."
+
+msgid ""
+"Method ``set_end_bone_direction`` changes ``bone_direction`` parameter type "
+"from ``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"메소드 ``set_end_bone_direction``는 ``bone_direction`` 매개변수 유형을 "
+"``SpringBoneSimulator3D.BoneDirection``에서 "
+"``SkeletonModifier3D.BoneDirection``로 변경합니다."
+
+msgid ""
+"Method ``set_joint_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"메소드 ``set_joint_rotation_axis``는 ``axis`` 매개변수 유형을 "
+"``SpringBoneSimulator3D.RotationAxis``에서 "
+"``SkeletonModifier3D.RotationAxis``로 변경합니다."
+
+msgid ""
+"Method ``set_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"메소드 ``set_rotation_axis``는 ``axis`` 매개변수 유형을 "
+"``SpringBoneSimulator3D.RotationAxis``에서 "
+"``SkeletonModifier3D.RotationAxis``로 변경합니다."
 
 msgid "Rendering"
 msgstr "렌더링"
 
+msgid "**DisplayServer**"
+msgstr "**Server**"
+
+msgid ""
+"Method ``accessibility_create_sub_text_edit_elements`` adds a new "
+"``is_last_line`` optional parameter"
+msgstr ""
+"``accessibility_create_sub_text_edit_elements`` 메소드는 새로운 "
+"``is_last_line`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-113459`_"
+msgstr "`GH-113459`_"
+
+msgid ""
+"Method ``tts_speak`` changes ``utterance_id`` parameter type metadata from "
+"``int32`` to ``int64``"
+msgstr ""
+"``tts_speak`` 메소드는 ``utterance_id`` 매개변수 유형 메타데이터를 ``int32``"
+"에서 ``int64``로 변경합니다."
+
+msgid "`GH-112379`_"
+msgstr "`GH-112379`_"
+
+msgid "GUI nodes"
+msgstr "노드 만들기"
+
+msgid "**Control**"
+msgstr "Control"
+
+msgid "Method ``grab_focus`` adds a new ``hide_focus`` optional parameter"
+msgstr ""
+"``grab_focus`` 메소드는 새로운 ``hide_focus`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-110250`_"
+msgstr "`GH-110250`_"
+
+msgid ""
+"Method ``has_focus`` adds a new ``ignore_hidden_focus`` optional parameter"
+msgstr ""
+"``has_focus`` 메소드는 새로운 ``ignore_hidden_focus`` 선택적 매개변수를 추가"
+"합니다."
+
+msgid "**FileDialog**"
+msgstr "파일 대화 상자"
+
+msgid "Method ``add_filter`` adds a new ``mime_type`` optional parameter"
+msgstr ""
+"``add_filter`` 메소드는 새로운 ``mime_type`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-111439`_"
+msgstr "`GH-111439`_"
+
+msgid "**LineEdit**"
+msgstr "텍스처"
+
+msgid "Method ``edit`` adds a new ``hide_focus`` optional parameter"
+msgstr "``edit`` 메소드는 새로운 ``hide_focus`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-111117`_"
+msgstr "`GH-111117`_"
+
+msgid "**SplitContainer**"
+msgstr "뷰포트"
+
+msgid ""
+"Method ``clamp_split_offset`` adds a new ``priority_index`` optional "
+"parameter"
+msgstr ""
+"``clamp_split_offset`` 메소드는 새로운 ``priority_index`` 선택적 매개변수를 "
+"추가합니다."
+
+msgid "`GH-90411`_"
+msgstr "`GH-90411`_"
+
 msgid "Networking"
 msgstr "네트워킹"
+
+msgid "**StreamPeerTCP**"
+msgstr "**저장공간**"
+
+msgid ""
+"Method ``disconnect_from_host`` moved to base class ``StreamPeerSocket``"
+msgstr ""
+"메서드 ``disconnect_from_host``가 기본 클래스 ``StreamPeerSocket``로 이동되었"
+"습니다."
+
+msgid "`GH-107954`_"
+msgstr "`GH-107954`_"
+
+msgid "Method ``get_status`` moved to base class ``StreamPeerSocket``"
+msgstr ""
+"메서드 ``get_status``가 기본 클래스 ``StreamPeerSocket``로 이동되었습니다."
+
+msgid "Method ``poll`` moved to base class ``StreamPeerSocket``"
+msgstr "메서드 ``poll``가 기본 클래스 ``StreamPeerSocket``로 이동되었습니다."
+
+msgid "**TCPServer**"
+msgstr "텍스처"
+
+msgid "Method ``is_connection_available`` moved to base class ``SocketServer``"
+msgstr ""
+"메서드 ``is_connection_available``가 기본 클래스 ``SocketServer``로 이동되었"
+"습니다."
+
+msgid "Method ``is_listening`` moved to base class ``SocketServer``"
+msgstr ""
+"메서드 ``is_listening``가 기본 클래스 ``SocketServer``로 이동되었습니다."
+
+msgid "Method ``stop`` moved to base class ``SocketServer``"
+msgstr "메서드 ``stop``가 기본 클래스 ``SocketServer``로 이동되었습니다."
 
 msgid "OpenXR"
 msgstr "OpenXR"
 
+msgid "**OpenXRExtensionWrapper**"
+msgstr "Expression Node(표현식 노드)"
+
+msgid ""
+"Method ``_get_requested_extensions`` adds a new ``xr_version`` parameter"
+msgstr ""
+"``_get_requested_extensions`` 메소드는 새로운 ``xr_version`` 매개변수를 추가"
+"합니다."
+
+msgid "`GH-109302`_"
+msgstr "`GH-109302`_"
+
+msgid ""
+"Method ``_set_instance_create_info_and_get_next_pointer`` adds  a new "
+"``xr_version`` parameter"
+msgstr ""
+"``_set_instance_create_info_and_get_next_pointer`` 메소드는 새로운 "
+"``xr_version`` 매개변수를 추가합니다."
+
+msgid "N/A"
+msgstr "NAN"
+
+msgid ""
+"The ``OpenXRExtensionWrapper`` type is intended to be subclassed from "
+"GDExtensions. The method ``_set_instance_create_info_and_get_next_pointer`` "
+"has a ``void*`` parameter so it's not exposed to scripting."
+msgstr ""
+"``OpenXRExtensionWrapper`` 유형은 GDExtensions에서 하위 클래스로 분류됩니다. "
+"``_set_instance_create_info_and_get_next_pointer`` 메서드에는 ``void*`` 매개 "
+"변수가 있으므로 스크립팅에 노출되지 않습니다."
+
 msgid "Editor"
 msgstr "편집기"
+
+msgid "**EditorExportPreset**"
+msgstr "**EditorExportPlatform**"
+
+msgid ""
+"Method ``get_script_export_mode`` changes return type from ``int`` to "
+"``EditorExportPreset.ScriptExportMode``"
+msgstr ""
+"메서드 ``get_script_export_mode``는 반환 유형을 ``int``에서 "
+"``EditorExportPreset.ScriptExportMode``로 변경합니다."
+
+msgid "`GH-107167`_"
+msgstr "`GH-107167`_"
+
+msgid "**EditorFileDialog**"
+msgstr "**플러그인:**"
+
+msgid "Method ``add_filter`` moved to base class ``FileDialog``"
+msgstr "메서드 ``add_filter``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "`GH-111212`_"
+msgstr "`GH-111212`_"
+
+msgid "Method ``add_option`` moved to base class ``FileDialog``"
+msgstr "메서드 ``add_option``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``add_side_menu`` removed"
+msgstr "``add_side_menu`` 방법이 제거되었습니다."
+
+msgid "|❌ with stub|"
+msgstr "|❌ 스텁 포함|"
+
+msgid "`GH-111162`_"
+msgstr "`GH-111162`_"
+
+msgid "Method ``clear_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``clear_filename_filter``가 기본 클래스 ``FileDialog``로 이동되었습니"
+"다."
+
+msgid "Method ``clear_filters`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``clear_filters``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``get_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``get_filename_filter``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``get_line_edit`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``get_line_edit``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``get_option_default`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``get_option_default``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``get_option_name`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``get_option_name``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``get_option_values`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``get_option_values``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``get_selected_options`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``get_selected_options``가 기본 클래스 ``FileDialog``로 이동되었습니"
+"다."
+
+msgid "Method ``get_vbox`` moved to base class ``FileDialog``"
+msgstr "메서드 ``get_vbox``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``invalidate`` moved to base class ``FileDialog``"
+msgstr "메서드 ``invalidate``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``popup_file_dialog`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``popup_file_dialog``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``set_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``set_filename_filter``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``set_option_default`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``set_option_default``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``set_option_name`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``set_option_name``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Method ``set_option_values`` moved to base class ``FileDialog``"
+msgstr ""
+"메서드 ``set_option_values``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``access`` moved to base class ``FileDialog``"
+msgstr "``access`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``current_dir`` moved to base class ``FileDialog``"
+msgstr "``current_dir`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``current_file`` moved to base class ``FileDialog``"
+msgstr "``current_file`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``current_path`` moved to base class ``FileDialog``"
+msgstr "``current_path`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``display_mode`` moved to base class ``FileDialog``"
+msgstr "``display_mode`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``file_mode`` moved to base class ``FileDialog``"
+msgstr "``file_mode`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``filters`` moved to base class ``FileDialog``"
+msgstr "``filters`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``option_count`` moved to base class ``FileDialog``"
+msgstr "``option_count`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Property ``show_hidden_files`` moved to base class ``FileDialog``"
+msgstr ""
+"``show_hidden_files`` 속성이 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Signal ``dir_selected`` moved to base class ``FileDialog``"
+msgstr "시그널 ``dir_selected``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Signal ``filename_filter_changed`` moved to base class ``FileDialog``"
+msgstr ""
+"시그널 ``filename_filter_changed``가 기본 클래스 ``FileDialog``로 이동되었습"
+"니다."
+
+msgid "Signal ``file_selected`` moved to base class ``FileDialog``"
+msgstr ""
+"시그널 ``file_selected``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Signal ``files_selected`` moved to base class ``FileDialog``"
+msgstr ""
+"시그널 ``files_selected``가 기본 클래스 ``FileDialog``로 이동되었습니다."
+
+msgid "Behavior changes"
+msgstr "행동 변화"
 
 msgid "Android"
 msgstr "Android"
 
+msgid ""
+"The source sets configuration for Android export templates has been updated "
+"to match the default Android Studio project structure (`GH-110829`_). This "
+"affects the directory layout of the Android project:"
+msgstr ""
+"Android 내보내기 템플릿의 소스 세트 구성이 기본 Android Studio 프로젝트 구조"
+"(`GH-110829`_)와 일치하도록 업데이트되었습니다. 이는 Android 프로젝트의 디렉"
+"터리 레이아웃에 영향을 미칩니다."
+
+msgid ""
+"Files previously in ``[Project root]/android/build/src/`` are now in "
+"``[Project root]/android/build/src/main/java/``."
+msgstr ""
+"이전에 ``[Project root]/android/build/src/``에 있던 파일은 이제 ``[Project "
+"root]/android/build/src/main/java/``에 있습니다."
+
+msgid ""
+"Android manifest file and assets directory have been moved to ``src/main/`` "
+"subdirectories."
+msgstr ""
+"Android 매니페스트 파일 및 자산 디렉터리가 ``src/main/`` 하위 디렉터리로 이동"
+"되었습니다."
+
+msgid ""
+"For example, ``GodotApp.java`` moved from ``src/com/godot/game/"
+"GodotApp.java`` to ``src/main/java/com/godot/game/GodotApp.java``."
+msgstr ""
+"예를 들어, ``GodotApp.java``는 ``src/com/godot/game/GodotApp.java``에서 "
+"``src/main/java/com/godot/game/GodotApp.java``로 이동되었습니다."
+
 msgid "Navigation"
 msgstr "내비게이션"
 
+msgid ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` and ``AStarGrid2D.get_point_path`` will now "
+"return an empty path when ``from_id`` is a disabled/solid point "
+"(`GH-113988`_)."
+msgstr ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` 및 ``AStarGrid2D.get_point_path``는 이제 "
+"``from_id``가 비활성화/고체 지점(`GH-113988`_)인 경우 빈 경로를 반환합니다."
+
+msgid "Changed defaults"
+msgstr "변경된 기본값"
+
+msgid ""
+"The following default values have been changed. If your project relies on "
+"the previous defaults, you may need to explicitly set them to the old values."
+msgstr ""
+"다음 기본값이 변경되었습니다. 프로젝트가 이전 기본값을 사용하는 경우 이를 이"
+"전 값으로 명시적으로 설정해야 할 수도 있습니다."
+
+msgid ""
+"The default rendering driver on Windows for **newly created** projects is "
+"now :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). This can be changed in "
+"Project Settings under ``rendering/rendering_device/driver.windows``."
+msgstr ""
+"**새로 생성된** 프로젝트에 대한 Windows의 기본 렌더링 드라이버는 이"
+"제 :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_)입니다. 이는 ``rendering/"
+"rendering_device/driver.windows`` 아래의 프로젝트 설정에서 변경할 수 있습니"
+"다."
+
+msgid ""
+"The default 3D physics engine for **newly created** projects is now Jolt "
+"Physics (`GH-105737`_). This can be changed in Project Settings under "
+"``physics/3d/physics_engine``."
+msgstr ""
+"**새로 생성된** 프로젝트의 기본 3D 물리 엔진은 이제 Jolt "
+"Physics(`GH-105737`_)입니다. 이는 ``physics/3d/physics_engine`` 아래의 프로젝"
+"트 설정에서 변경할 수 있습니다."
+
+msgid "Member"
+msgstr "멤버"
+
+msgid "Old Value"
+msgstr "값"
+
+msgid "New Value"
+msgstr "값"
+
+msgid "**MeshInstance3D**"
+msgstr "씬 인스턴스하기"
+
+msgid "Property ``skeleton``"
+msgstr "**설명**"
+
+msgid "NodePath(\"..\")"
+msgstr "``$NodePath``"
+
+msgid "NodePath(\"\")"
+msgstr "``$NodePath``"
+
+msgid "`GH-112267`_"
+msgstr "`GH-112267`_"
+
+msgid ""
+"The default value of ``skeleton`` has changed. Enable ``animation/"
+"compatibility/default_parent_skeleton_in_mesh_instance_3d`` in Project "
+"Settings if the old behavior is needed for compatibility."
+msgstr ""
+"``skeleton``의 기본값이 변경되었습니다. 호환성을 위해 이전 동작이 필요한 경"
+"우 프로젝트 설정에서 ``animation/compatibility/"
+"default_parent_skeleton_in_mesh_instance_3d``를 활성화합니다."
+
+msgid "**ProjectSettings**"
+msgstr "프로젝트 설정"
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "속성 ``rendering/reflections/sky_reflections/roughness_layers``"
+
+msgid "8"
+msgstr "8"
+
 msgid "7"
 msgstr "7"
+
+msgid "`GH-107902`_"
+msgstr "`GH-107902`_"
+
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "속성 ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
+msgid "613"
+msgstr "613"
+
+msgid "618"
+msgstr "618"
+
+msgid "`GH-114043`_"
+msgstr "`GH-114043`_"
+
+msgid "**Environment**"
+msgstr "환경"
+
+msgid "Property ``glow_blend_mode``"
+msgstr "속성 ``glow_blend_mode``"
 
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
+
+msgid "`GH-110671`_"
+msgstr "`GH-110671`_"
+
+msgid "Property ``glow_intensity``"
+msgstr "속성 ``glow_intensity``"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "Property ``glow_levels/2``"
+msgstr "속성 ``glow_levels/2``"
+
+msgid "0.0"
+msgstr "0.0"
+
+msgid "Property ``glow_levels/3``"
+msgstr "속성 ``glow_levels/3``"
+
+msgid "1.0"
+msgstr "1.0"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "Property ``glow_levels/4``"
+msgstr "속성 ``glow_levels/4``"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "Property ``glow_levels/5``"
+msgstr "속성 ``glow_levels/5``"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "속성 ``ssr_depth_tolerance``"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "`GH-111210`_"
+msgstr "`GH-111210`_"
+
+msgid "Property/Parameter"
+msgstr "매개변수"
+
+msgid "**PopupMenu**"
+msgstr "**팝업메뉴**"
+
+msgid "Property ``submenu_popup_delay``"
+msgstr "속성 ``submenu_popup_delay``"
+
+msgid "`GH-110256`_"
+msgstr "`GH-110256`_"
+
+msgid "**ResourceImporterCSVTranslation**"
+msgstr "**ResourceImporterCSV번역**"
+
+msgid "Property ``compress``"
+msgstr "속성 ``compress``"
+
+msgid "true"
+msgstr "'값'"
+
+msgid "`GH-112073`_"
+msgstr "`GH-112073`_"

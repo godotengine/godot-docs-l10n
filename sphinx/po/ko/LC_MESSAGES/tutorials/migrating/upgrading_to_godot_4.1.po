@@ -11,29 +11,587 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.0 to Godot 4.1"
+msgstr "Godot 4.0에서 Godot 4.1로 업그레이드"
+
+msgid ""
+"For most games and apps made with 4.0, it should be relatively safe to "
+"migrate to 4.1. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"4.0으로 제작된 대부분의 게임과 앱의 경우 4.1로 마이그레이션하는 것이 상대적으"
+"로 안전합니다. 이 페이지에서는 프로젝트를 마이그레이션할 때 주의해야 할 모든 "
+"것을 다루려고 합니다."
+
 msgid "Breaking changes"
 msgstr "깨는 변경사항"
+
+msgid ""
+"If you are migrating from 4.0 to 4.1, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"4.0에서 4.1로 마이그레이션하는 경우 여기에 나열된 주요 변경 사항이 영향을 미"
+"칠 수 있습니다. 변경 사항은 영역/시스템별로 그룹화됩니다."
+
+msgid ""
+"The GDExtension API completely breaks compatibility in 4.1, so it's not "
+"included in the table below. See "
+"the :ref:`updating_your_gdextension_for_godot_4_1` section for more "
+"information."
+msgstr ""
+"GDExtension API는 4.1의 호환성을 완전히 깨뜨리므로 아래 표에는 포함되지 않습"
+"니다. 자세한 내용은 :ref:`updating_your_gdextension_for_godot_4_1` 섹션을 참"
+"조하세요."
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"이 문서에서는 각 주요 변경 사항이 GDScript에 영향을 미치는지 여부와 C# 주요 "
+"변경 사항이 *바이너리 호환* 또는 *소스 호환*인지 여부를 나타냅니다."
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the runtime behavior won't change."
+msgstr ""
+"**바이너리 호환** - 기존 바이너리는 재컴파일 없이 성공적으로 로드 및 실행되"
+"며 런타임 동작은 변경되지 않습니다."
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"**소스 호환 가능** - 소스 코드는 Godot를 업그레이드할 때 변경 없이 성공적으"
+"로 컴파일됩니다."
+
+msgid "Core"
+msgstr "코어"
 
 msgid "Change"
 msgstr "변경"
 
+msgid "GDScript Compatible"
+msgstr "GDScript"
+
+msgid "C# Binary Compatible"
+msgstr "C# 바이너리 호환"
+
+msgid "C# Source Compatible"
+msgstr "C# 소스 호환"
+
+msgid "Introduced"
+msgstr "소개"
+
+msgid "**Basis**"
+msgstr "기저"
+
+msgid "Method ``looking_at`` adds a new ``use_model_front`` optional parameter"
+msgstr ""
+"``looking_at`` 메소드는 새로운 ``use_model_front`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "`GH-76082`_"
+msgstr "`GH-76082`_"
+
+msgid "**Object**"
+msgstr "오브젝트"
+
+msgid ""
+"Method ``get_meta_list`` changes return type from ``PackedStringArray`` to "
+"``Array[StringName]``"
+msgstr ""
+"메서드 ``get_meta_list``는 반환 유형을 ``PackedStringArray``에서 "
+"``Array[StringName]``로 변경합니다."
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-76418`_"
+msgstr "`GH-76418`_"
+
+msgid "**Transform3D**"
+msgstr "변형"
+
+msgid "**UndoRedo**"
+msgstr "**실행 취소다시 실행**"
+
+msgid ""
+"Method ``create_action`` adds a new ``backward_undo_ops`` optional parameter"
+msgstr ""
+"``create_action`` 메소드는 새로운 ``backward_undo_ops`` 선택적 매개변수를 추"
+"가합니다."
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ 호환 가능|"
+
+msgid "`GH-76688`_"
+msgstr "`GH-76688`_"
+
+msgid "**WorkerThreadPool**"
+msgstr "**WorkerThreadPool**"
+
+msgid ""
+"Method ``wait_for_task_completion`` changes return type from ``void`` to "
+"``Error``"
+msgstr ""
+"메서드 ``wait_for_task_completion``는 반환 유형을 ``void``에서 ``Error``로 변"
+"경합니다."
+
+msgid "`GH-77143`_"
+msgstr "`GH-77143`_"
+
 msgid "Animation"
 msgstr "애니메이션"
+
+msgid "**AnimationNode**"
+msgstr "애니메이션 모드"
+
+msgid "Method ``_process`` adds a new ``test_only`` parameter"
+msgstr "``_process`` 메소드는 새로운 ``test_only`` 매개변수를 추가합니다."
+
+msgid "`GH-75759`_"
+msgstr "`GH-75759`_"
+
+msgid "Method ``blend_input`` adds a new ``test_only`` optional parameter"
+msgstr ""
+"``blend_input`` 메소드는 새로운 ``test_only`` 선택적 매개변수를 추가합니다."
+
+msgid "Method ``blend_node`` adds a new ``test_only`` optional parameter"
+msgstr ""
+"``blend_node`` 메소드는 새로운 ``test_only`` 선택적 매개변수를 추가합니다."
+
+msgid "**AnimationNodeStateMachinePlayback**"
+msgstr "**AnimationNodeStateMachinePlayback**"
+
+msgid ""
+"Method ``get_travel_path`` changes return type from ``PackedStringArray`` to "
+"``Array[StringName]``"
+msgstr ""
+"메서드 ``get_travel_path``는 반환 유형을 ``PackedStringArray``에서 "
+"``Array[StringName]``로 변경합니다."
+
+msgid "2D nodes"
+msgstr "노드"
+
+msgid "**PathFollow2D**"
+msgstr "**PathFollow2D**"
+
+msgid "Property ``lookahead`` removed"
+msgstr "``lookahead`` 속성이 제거되었습니다."
+
+msgid "`GH-72842`_"
+msgstr "`GH-72842`_"
+
+msgid "3D nodes"
+msgstr "노드"
+
+msgid "**Geometry3D**"
+msgstr "**예제**"
+
+msgid ""
+"Method ``segment_intersects_convex`` changes ``planes`` parameter type from "
+"untyped ``Array`` to ``Array[Plane]``"
+msgstr ""
+"메소드 ``segment_intersects_convex``는 ``planes`` 매개변수 유형을 유형이 지정"
+"되지 않은 ``Array``에서 ``Array[Plane]``로 변경합니다."
+
+msgid "**MeshInstance3D**"
+msgstr "씬 인스턴스하기"
+
+msgid ""
+"Method ``create_multiple_convex_collisions`` adds a new ``settings`` "
+"optional parameter"
+msgstr ""
+"``create_multiple_convex_collisions`` 메소드는 새로운 ``settings`` 선택적 매"
+"개변수를 추가합니다."
+
+msgid "`GH-72152`_"
+msgstr "`GH-72152`_"
 
 msgid "**Node3D**"
 msgstr "**Node3D**"
 
+msgid "Method ``look_at`` adds a new ``use_model_front`` optional parameter"
+msgstr ""
+"``look_at`` 메소드는 새로운 ``use_model_front`` 선택적 매개변수를 추가합니다."
+
+msgid ""
+"Method ``look_at_from_position`` adds a new ``use_model_front`` optional "
+"parameter"
+msgstr ""
+"``look_at_from_position`` 메소드는 새로운 ``use_model_front`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "GUI nodes"
+msgstr "노드 만들기"
+
+msgid "**CodeEdit**"
+msgstr "**코드편집**"
+
+msgid ""
+"Method ``add_code_completion_option`` adds a new ``location`` optional "
+"parameter"
+msgstr ""
+"``add_code_completion_option`` 메소드는 새로운 ``location`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "`GH-75746`_"
+msgstr "`GH-75746`_"
+
+msgid "**RichTextLabel**"
+msgstr "ScoreLabel"
+
+msgid "Method ``push_list`` adds a new ``bullet`` optional parameter"
+msgstr "``push_list`` 메소드는 새로운 ``bullet`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-75017`_"
+msgstr "`GH-75017`_"
+
+msgid ""
+"Method ``push_paragraph`` adds a new ``justification_flags`` optional "
+"parameter"
+msgstr ""
+"``push_paragraph`` 메소드는 새로운 ``justification_flags`` 선택적 매개변수를 "
+"추가합니다."
+
+msgid "`GH-75250`_"
+msgstr "`GH-75250`_"
+
+msgid "Method ``push_paragraph`` adds a new ``tab_stops`` optional parameter"
+msgstr ""
+"``push_paragraph`` 메소드는 새로운 ``tab_stops`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-76401`_"
+msgstr "`GH-76401`_"
+
+msgid "**Tree**"
+msgstr "씬트리"
+
+msgid "Method ``edit_selected`` adds a new ``force_edit`` optional parameter"
+msgstr ""
+"``edit_selected`` 메소드는 새로운 ``force_edit`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-76794`_"
+msgstr "`GH-76794`_"
+
 msgid "Physics"
 msgstr "물리"
+
+msgid "**Area2D**"
+msgstr "변형"
+
+msgid "Property ``priority`` changes type from ``float`` to ``int``"
+msgstr "``priority`` 속성은 유형을 ``float``에서 ``int``로 변경합니다."
+
+msgid "`GH-72749`_"
+msgstr "`GH-72749`_"
+
+msgid "**Area3D**"
+msgstr "**예제**"
+
+msgid "**PhysicsDirectSpaceState2D**"
+msgstr "**PhysicsDirectSpaceState2D**"
+
+msgid ""
+"Method ``collide_shape`` changes return type from "
+"``Array[PackedVector2Array]`` to ``Array[Vector2]``"
+msgstr ""
+"메서드 ``collide_shape``는 반환 유형을 ``Array[PackedVector2Array]``에서 "
+"``Array[Vector2]``로 변경합니다."
+
+msgid "`GH-75260`_"
+msgstr "`GH-75260`_"
+
+msgid "**PhysicsDirectSpaceState3D**"
+msgstr "**PhysicsDirectSpaceState3D**"
+
+msgid ""
+"Method ``collide_shape`` changes return type from "
+"``Array[PackedVector3Array]`` to ``Array[Vector3]``"
+msgstr ""
+"메서드 ``collide_shape``는 반환 유형을 ``Array[PackedVector3Array]``에서 "
+"``Array[Vector3]``로 변경합니다."
 
 msgid "Rendering"
 msgstr "렌더링"
 
+msgid "**RDShaderFile**"
+msgstr "**RDShader파일**"
+
+msgid ""
+"Method ``get_version_list`` changes return type from ``PackedStringArray`` "
+"to ``Array[StringName]``"
+msgstr ""
+"메서드 ``get_version_list``는 반환 유형을 ``PackedStringArray``에서 "
+"``Array[StringName]``로 변경합니다."
+
+msgid "**RenderingDevice**"
+msgstr "렌더링"
+
+msgid ""
+"Method ``draw_list_begin`` changes ``storage_textures`` parameter type from "
+"untyped ``Array`` to ``Array[RID]``"
+msgstr ""
+"메소드 ``draw_list_begin``는 ``storage_textures`` 매개변수 유형을 유형이 지정"
+"되지 않은 ``Array``에서 ``Array[RID]``로 변경합니다."
+
+msgid "**RenderingServer**"
+msgstr "**Server**"
+
+msgid ""
+"Method ``global_shader_parameter_get_list`` changes return type from "
+"``PackedStringArray`` to ``Array[StringName]``"
+msgstr ""
+"메서드 ``global_shader_parameter_get_list``는 반환 유형을 "
+"``PackedStringArray``에서 ``Array[StringName]``로 변경합니다."
+
+msgid "**SurfaceTool**"
+msgstr "결과 시험하기"
+
+msgid ""
+"Method ``add_triangle_fan`` changes ``tangents`` parameter type from untyped "
+"``Array`` to ``Array[Plane]``"
+msgstr ""
+"메소드 ``add_triangle_fan``는 ``tangents`` 매개변수 유형을 유형이 지정되지 않"
+"은 ``Array``에서 ``Array[Plane]``로 변경합니다."
+
 msgid "Navigation"
 msgstr "내비게이션"
+
+msgid "**NavigationAgent2D**"
+msgstr "내비게이션"
+
+msgid "Method ``set_velocity`` replaced with ``velocity`` property"
+msgstr "메소드 ``set_velocity``가 ``velocity`` 속성으로 대체되었습니다."
+
+msgid "`GH-69988`_"
+msgstr "`GH-69988`_"
+
+msgid ""
+"Property ``time_horizon`` split into ``time_horizon_agents`` and "
+"``time_horizon_obstacles``"
+msgstr ""
+"``time_horizon`` 속성이 ``time_horizon_agents`` 및 ``time_horizon_obstacles``"
+"로 분할되었습니다."
+
+msgid "**NavigationAgent3D**"
+msgstr "내비게이션"
+
+msgid "Property ``agent_height_offset`` renamed to ``path_height_offset``"
+msgstr ""
+"속성 ``agent_height_offset``가 ``path_height_offset``로 이름이 변경되었습니"
+"다."
+
+msgid "Property ``ignore_y`` removed"
+msgstr "``ignore_y`` 속성이 제거되었습니다."
+
+msgid "**NavigationObstacle2D**"
+msgstr "내비게이션"
+
+msgid "Property ``estimate_radius`` removed"
+msgstr "``estimate_radius`` 속성이 제거되었습니다."
+
+msgid "Method ``get_rid`` renamed to ``get_agent_rid``"
+msgstr "메소드 ``get_rid``가 ``get_agent_rid``로 이름이 변경되었습니다."
+
+msgid "**NavigationObstacle3D**"
+msgstr "내비게이션"
+
+msgid "**NavigationServer2D**"
+msgstr "내비게이션 메시."
+
+msgid ""
+"Method ``agent_set_callback`` renamed to ``agent_set_avoidance_callback``"
+msgstr ""
+"메소드 ``agent_set_callback``가 ``agent_set_avoidance_callback``로 이름이 변"
+"경되었습니다."
+
+msgid "Method ``agent_set_target_velocity`` removed"
+msgstr "``agent_set_target_velocity`` 방법이 제거되었습니다."
+
+msgid ""
+"Method ``agent_set_time_horizon`` split into "
+"``agent_set_time_horizon_agents`` and ``agent_set_time_horizon_obstacles``"
+msgstr ""
+"``agent_set_time_horizon`` 메소드가 ``agent_set_time_horizon_agents`` 및 "
+"``agent_set_time_horizon_obstacles``로 분할되었습니다."
+
+msgid "**NavigationServer3D**"
+msgstr "내비게이션 메시."
 
 msgid "Networking"
 msgstr "네트워킹"
 
+msgid "**WebRTCPeerConnectionExtension**"
+msgstr "**WebRTCPeerConnectionExtension**"
+
+msgid ""
+"Method ``_create_data_channel`` changes return type from ``Object`` to "
+"``WebRTCDataChannel``"
+msgstr ""
+"메서드 ``_create_data_channel``는 반환 유형을 ``Object``에서 "
+"``WebRTCDataChannel``로 변경합니다."
+
+msgid "`GH-78237`_"
+msgstr "`GH-78237`_"
+
+msgid "Editor plugins"
+msgstr "편집기 플러그인"
+
+msgid "**AnimationTrackEditPlugin**"
+msgstr "애니메이션 트리"
+
+msgid "Type ``AnimationTrackEditPlugin`` removed"
+msgstr "애니메이션 트리"
+
+msgid "`GH-76413`_"
+msgstr "`GH-76413`_"
+
+msgid "**EditorInterface**"
+msgstr "Godot 인터페이스"
+
+msgid ""
+"Type ``EditorInterface`` changes inheritance from ``Node`` to ``Object``"
+msgstr ""
+"``EditorInterface`` 유형은 상속을 ``Node``에서 ``Object``로 변경합니다."
+
+msgid "`GH-76176`_"
+msgstr "`GH-76176`_"
+
+msgid ""
+"Method ``set_movie_maker_enabled`` replaced with ``movie_maker_enabled`` "
+"property"
+msgstr ""
+"메소드 ``set_movie_maker_enabled``가 ``movie_maker_enabled`` 속성으로 대체되"
+"었습니다."
+
+msgid ""
+"Method ``is_movie_maker_enabled`` replaced with ``movie_maker_enabled`` "
+"property"
+msgstr ""
+"메소드 ``is_movie_maker_enabled``가 ``movie_maker_enabled`` 속성으로 대체되었"
+"습니다."
+
+msgid "**EditorResourcePreviewGenerator**"
+msgstr "**EditorResourcePreviewGenerator**"
+
+msgid "Method ``_generate`` adds a new ``metadata`` parameter"
+msgstr "``_generate`` 메소드는 새로운 ``metadata`` 매개변수를 추가합니다."
+
+msgid "`GH-64628`_"
+msgstr "`GH-64628`_"
+
+msgid "Method ``_generate_from_path`` adds a new ``metadata`` parameter"
+msgstr ""
+"``_generate_from_path`` 메소드는 새로운 ``metadata`` 매개변수를 추가합니다."
+
+msgid "**EditorUndoRedoManager**"
+msgstr "**EditorUndoRedoManager**"
+
+msgid "Behavior changes"
+msgstr "행동 변화"
+
+msgid ""
+"In 4.1, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr ""
+"4.1에서는 일부 동작 변경 사항이 도입되었으며, 이로 인해 프로젝트를 조정해야 "
+"할 수도 있습니다."
+
+msgid "**SubViewportContainer**"
+msgstr "뷰포트"
+
+msgid ""
+"When input events should reach SubViewports and their children, "
+"``SubViewportContainer.mouse_filter`` now needs to be ``MOUSE_FILTER_STOP`` "
+"or ``MOUSE_FILTER_PASS``. See `GH-79271`_ for details."
+msgstr ""
+"입력 이벤트가 SubViewports 및 해당 자식 노드에 도달해야 하는 경우 이제 "
+"``SubViewportContainer.mouse_filter``는 ``MOUSE_FILTER_STOP`` 또는 "
+"``MOUSE_FILTER_PASS``여야 합니다. 자세한 내용은 `GH-79271`_를 참조하세요."
+
+msgid "`GH-57894`_"
+msgstr "`GH-57894`_"
+
+msgid ""
+"Multiple layered ``SubViewportContainer`` nodes, that should all receive "
+"mouse input events, now need to be replaced by ``Area2D`` nodes. See "
+"`GH-79128`_ for details."
+msgstr ""
+"모두 마우스 입력 이벤트를 수신해야 하는 다중 계층 ``SubViewportContainer`` 노"
+"드는 이제 ``Area2D`` 노드로 대체되어야 합니다. 자세한 내용은 `GH-79128`_를 참"
+"조하세요."
+
 msgid "**Viewport**"
 msgstr "**Viewport**"
+
+msgid ""
+"``Viewport`` nodes, that have Physics Picking enabled, now automatically set "
+"InputEvents as handled. See `GH-79897`_ for workarounds."
+msgstr ""
+"물리 선택이 활성화된 ``Viewport`` 노드는 이제 자동으로 입력 이벤트를 처리된 "
+"것으로 설정합니다. 해결 방법은 `GH-79897`_를 참조하세요."
+
+msgid "`GH-77595`_"
+msgstr "`GH-77595`_"
+
+msgid "Updating your GDExtension for 4.1"
+msgstr "4.1용 GDExtension 업데이트"
+
+msgid ""
+"In order to fix a serious bug, in Godot 4.1 we had to break binary "
+"compatibility in a big way and source compatibility in a small way."
+msgstr ""
+"심각한 버그를 수정하기 위해 Godot 4.1에서는 바이너리 호환성을 크게 깨고 소스 "
+"호환성을 작게 깨뜨려야 했습니다."
+
+msgid ""
+"This means that GDExtensions made for Godot 4.0 will need to be recompiled "
+"for Godot 4.1 (using the  ``4.1`` branch of godot-cpp), with a small change "
+"to their source code."
+msgstr ""
+"이는 Godot 4.0용으로 만들어진 GDExtension이 Godot 4.1용으로 다시 컴파일되어"
+"야 함을 의미합니다(godot-cpp의 ``4.1`` 분기 사용). 소스 코드를 약간 변경해야 "
+"합니다."
+
+msgid "In Godot 4.0, your \"entry_symbol\" function looks something like this:"
+msgstr "당신의 최종 씬은 이렇게 보여야 할 것입니다."
+
+msgid "However, for Godot 4.1, it should look like:"
+msgstr "그러나 Godot 4.1의 경우 다음과 같아야 합니다:"
+
+msgid "There are two small changes:"
+msgstr "다음과 같은 주의 사항이 있습니다:"
+
+msgid ""
+"The first argument changes from ``const GDExtensionInterface *p_interface`` "
+"to ``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
+msgstr ""
+"첫 번째 인수가 ``const GDExtensionInterface *p_interface``에서 "
+"``GDExtensionInterfaceGetProcAddress p_get_proc_address``로 변경됩니다."
+
+msgid ""
+"The constructor for the `init_obj` variable now receives "
+"``p_get_proc_address`` as its first parameter"
+msgstr ""
+"이제 `init_obj` 변수의 생성자는 첫 번째 매개변수로 ``p_get_proc_address``를 "
+"받습니다."
+
+msgid ""
+"You also need to add an extra ``compatibility_minimum`` line to your "
+"``.gdextension`` file, so that it looks something like:"
+msgstr ""
+"또한 다음과 같이 표시되도록 ``.gdextension`` 파일에 추가 "
+"``compatibility_minimum`` 줄을 추가해야 합니다."
+
+msgid ""
+"This lets Godot know that your GDExtension has been updated and is safe to "
+"load in Godot 4.1."
+msgstr ""
+"이를 통해 Godot는 GDExtension이 업데이트되었으며 Godot 4.1에서 로드해도 안전"
+"하다는 것을 알 수 있습니다."

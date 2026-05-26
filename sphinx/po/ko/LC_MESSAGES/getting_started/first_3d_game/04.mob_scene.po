@@ -11,6 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Designing the mob scene"
+msgstr "몹 씬 설계하기"
+
 msgid ""
 "In this part, you're going to code the monsters, which we'll call mobs. In "
 "the next lesson, we'll spawn them randomly around the playable area."
@@ -174,6 +177,12 @@ msgstr "image5"
 msgid "Resize it using the orange dots until it covers the entire 3D model."
 msgstr "전체 3D 모델을 덮을 때까지 주황색 점을 사용하여 크기를 조절합니다."
 
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "|image1|"
+
 msgid "Coding the mob's movement"
 msgstr "몹의 움직임 코딩하기"
 
@@ -188,7 +197,13 @@ msgstr ""
 "``main.tscn`` 씬에서 무작위 소환 메커니즘을 코딩하고 거기에서 함수를 호출합니"
 "다."
 
+msgid "Attach a script to the ``Mob``."
+msgstr "노드에 스크립트를 추가하기."
+
 msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
@@ -264,16 +279,43 @@ msgstr ""
 "해 :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` 노드의 "
 "``screen_exited`` 신호를 ``Mob`` 에 연결합니다."
 
+msgid ""
+"Head back to the 3D viewport by clicking on the *3D* label at the top of the "
+"editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Opt + 2` on macOS)."
+msgstr ""
+"**3D 작업 공간(3D workspace)**\\ 에서는 3D 게임용 메시와 조명, 레벨 설계를 "
+"할 수 있습니다. :kbd:`Ctrl + F2` (macOS는 :kbd:`Alt + 2`)를 눌러 접근할 수 있"
+"습니다."
+
 msgid "|image8|"
 msgstr "|image8|"
 
+msgid "image8"
+msgstr "|image8|"
+
+msgid ""
+"Select the :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>` node and on the right side of the "
+"interface, navigate to the *Signals* dock. Double-click the "
+"``screen_exited()`` signal."
+msgstr ""
+":ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` 노드를 선"
+"택하고 인터페이스의 오른쪽에서 *노드* 독으로 이동합니다. ``screen_exited()`` "
+"시그널을 더블 클릭합니다."
+
 msgid "|image9|"
+msgstr "|image9|"
+
+msgid "image9"
 msgstr "|image9|"
 
 msgid "Connect the signal to the ``Mob``"
 msgstr "시그널을 ``Mob``\\ 에 연결합니다"
 
 msgid "|image10|"
+msgstr "|image10|"
+
+msgid "image10"
 msgstr "|image10|"
 
 msgid ""
@@ -292,3 +334,6 @@ msgid ""
 msgstr ""
 "괴물이 게임에 참가할 준비가 되었습니다! 다음 부분에서는 게임 레벨에 괴물을 소"
 "환합니다."
+
+msgid "Here is the complete ``mob.gd`` script for reference."
+msgstr "다음은 참조할 수 있는 전체 ``Mob.gd`` 스크립트입니다."

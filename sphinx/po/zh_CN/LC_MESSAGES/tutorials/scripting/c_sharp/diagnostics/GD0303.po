@@ -66,3 +66,13 @@ msgstr "违反该规则的情况无法被修复。"
 
 msgid "When to suppress warnings"
 msgstr "何时抑制警告"
+
+msgid ""
+"Suppressing a warning from this rule may result in unexpected errors, since "
+"the case found by the analyzer may need to be handled by the user to prevent "
+"types that are not Variant-compatible from reaching the engine. Attempting "
+"to marshal incompatible types will result in runtime errors."
+msgstr ""
+"屏蔽这条规则的警告可能会导致意想不到的错误。因为分析器（Analyzer）检测到的这"
+"种情况，往往需要开发者手动去处理，以防止那些不兼容 Variant 的类型被传递到引擎"
+"中。如果强行去编组（marshal）这些不兼容的类型，就会引发运行时错误。"

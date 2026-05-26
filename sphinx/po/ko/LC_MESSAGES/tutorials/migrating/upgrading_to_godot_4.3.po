@@ -11,8 +11,48 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.2 to Godot 4.3"
+msgstr "Godot 4.2에서 Godot 4.3으로 업그레이드"
+
+msgid ""
+"For most games and apps made with 4.2 it should be relatively safe to "
+"migrate to 4.3. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"4.2로 제작된 대부분의 게임과 앱의 경우 4.3으로 마이그레이션하는 것이 상대적으"
+"로 안전합니다. 이 페이지에서는 프로젝트를 마이그레이션할 때 주의해야 할 모든 "
+"것을 다루려고 합니다."
+
 msgid "Breaking changes"
 msgstr "깨는 변경사항"
+
+msgid ""
+"If you are migrating from 4.2 to 4.3, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"4.2에서 4.3으로 마이그레이션하는 경우 여기에 나열된 주요 변경 사항이 영향을 "
+"미칠 수 있습니다. 변경 사항은 영역/시스템별로 그룹화됩니다."
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"이 문서에서는 각 주요 변경 사항이 GDScript에 영향을 미치는지 여부와 C# 주요 "
+"변경 사항이 *바이너리 호환* 또는 *소스 호환*인지 여부를 나타냅니다."
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the runtime behavior won't change."
+msgstr ""
+"**바이너리 호환** - 기존 바이너리는 재컴파일 없이 성공적으로 로드 및 실행되"
+"며 런타임 동작은 변경되지 않습니다."
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"**소스 호환 가능** - 소스 코드는 Godot를 업그레이드할 때 변경 없이 성공적으"
+"로 컴파일됩니다."
 
 msgid "GDExtension"
 msgstr "GDExtension"
@@ -20,32 +60,736 @@ msgstr "GDExtension"
 msgid "Change"
 msgstr "변경"
 
+msgid "GDScript Compatible"
+msgstr "GDScript"
+
+msgid "C# Binary Compatible"
+msgstr "C# 바이너리 호환"
+
+msgid "C# Source Compatible"
+msgstr "C# 소스 호환"
+
+msgid "Introduced"
+msgstr "소개"
+
+msgid "**GDExtension**"
+msgstr "Expression Node(표현식 노드)"
+
+msgid "Method ``close_library`` removed"
+msgstr "``close_library`` 방법이 제거되었습니다."
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-88418`_"
+msgstr "`GH-88418`_"
+
+msgid "Method ``initialize_library`` removed"
+msgstr "``initialize_library`` 방법이 제거되었습니다."
+
+msgid "Method ``open_library`` removed"
+msgstr "``open_library`` 방법이 제거되었습니다."
+
+msgid ""
+"Since it was basically impossible to use these methods in any useful way, "
+"these methods have been removed. Use ``GDExtensionManager::load_extension`` "
+"and ``GDExtensionManager::unload_extension`` instead to correctly load and "
+"unload a GDExtension."
+msgstr ""
+"기본적으로 이러한 메서드를 유용한 방식으로 사용하는 것이 불가능했기 때문에 이"
+"러한 메서드는 제거되었습니다. GDExtension을 올바르게 로드 및 언로드하려면 대"
+"신 ``GDExtensionManager::load_extension`` 및 "
+"``GDExtensionManager::unload_extension``를 사용하세요."
+
 msgid "Animation"
 msgstr "애니메이션"
+
+msgid "**Animation**"
+msgstr "애니메이션"
+
+msgid ""
+"Method ``position_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr ""
+"``position_track_interpolate`` 메소드는 새로운 ``backward`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ 호환 가능|"
+
+msgid "`GH-86629`_"
+msgstr "`GH-86629`_"
+
+msgid ""
+"Method ``rotation_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr ""
+"``rotation_track_interpolate`` 메소드는 새로운 ``backward`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid ""
+"Method ``scale_track_interpolate`` adds a new ``backward`` optional parameter"
+msgstr ""
+"``scale_track_interpolate`` 메소드는 새로운 ``backward`` 선택적 매개변수를 추"
+"가합니다."
+
+msgid ""
+"Method ``blend_shape_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr ""
+"``blend_shape_track_interpolate`` 메소드는 새로운 ``backward`` 선택적 매개변"
+"수를 추가합니다."
+
+msgid ""
+"Method ``value_track_interpolate`` adds a new ``backward`` optional parameter"
+msgstr ""
+"``value_track_interpolate`` 메소드는 새로운 ``backward`` 선택적 매개변수를 추"
+"가합니다."
+
+msgid "Method ``track_find_key`` adds a new ``limit`` optional parameter"
+msgstr ""
+"``track_find_key`` 메소드는 새로운 ``limit`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-86661`_"
+msgstr "`GH-86661`_"
+
+msgid "Method ``track_find_key`` adds a new ``backward`` optional parameter"
+msgstr ""
+"``track_find_key`` 메소드는 새로운 ``backward`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-92861`_"
+msgstr "`GH-92861`_"
+
+msgid "**AnimationMixer**"
+msgstr "애니메이션"
+
+msgid ""
+"Method ``_post_process_key_value`` changes ``object`` parameter type from "
+"``Object`` to ``uint64``"
+msgstr ""
+"메소드 ``_post_process_key_value``는 ``object`` 매개변수 유형을 ``Object``에"
+"서 ``uint64``로 변경합니다."
+
+msgid "`GH-86687`_"
+msgstr "`GH-86687`_"
+
+msgid "**Skeleton3D**"
+msgstr "스켈레톤"
+
+msgid "Method ``add_bone`` changes return type from ``void`` to ``int32``"
+msgstr "메서드 ``add_bone``는 반환 유형을 ``void``에서 ``int32``로 변경합니다."
+
+msgid "`GH-88791`_"
+msgstr "`GH-88791`_"
+
+msgid "Signal ``bone_pose_changed`` replaced by ``skeleton_updated``"
+msgstr "시그널 ``bone_pose_changed``가 ``skeleton_updated``로 대체되었습니다."
+
+msgid "`GH-90575`_"
+msgstr "`GH-90575`_"
 
 msgid "**BoneAttachment3D**"
 msgstr "**BoneAttachment3D**"
 
+msgid "Method ``on_bone_pose_update`` replaced by ``on_skeleton_update``"
+msgstr ""
+"``on_bone_pose_update`` 메소드가 ``on_skeleton_update``로 대체되었습니다."
+
+msgid "GUI nodes"
+msgstr "노드 만들기"
+
+msgid "**AcceptDialog**"
+msgstr "**수락 대화상자**"
+
+msgid ""
+"Method ``register_text_enter`` changes parameter ``line_edit`` type from "
+"``Control`` to ``LineEdit``"
+msgstr ""
+"메소드 ``register_text_enter``는 매개변수 ``line_edit`` 유형을 ``Control``에"
+"서 ``LineEdit``로 변경합니다."
+
+msgid "`GH-89419`_"
+msgstr "`GH-89419`_"
+
+msgid ""
+"Method ``remove_button`` changes parameter ``button`` type from ``Control`` "
+"to ``Button``"
+msgstr ""
+"메소드 ``remove_button``는 매개변수 ``button`` 유형을 ``Control``에서 "
+"``Button``로 변경합니다."
+
 msgid "Physics"
 msgstr "물리"
+
+msgid "**PhysicsShapeQueryParameters3D**"
+msgstr "**PhysicsShapeQueryParameters3D**"
+
+msgid "Property ``motion`` changes type from ``Vector2`` to ``Vector3``"
+msgstr "``motion`` 속성은 유형을 ``Vector2``에서 ``Vector3``로 변경합니다."
+
+msgid "`GH-85393`_"
+msgstr "`GH-85393`_"
+
+msgid ""
+"In C#, the enum ``PhysicsServer3D.G6DofJointAxisFlag`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members were added in `GH-89851`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"C#에서 열거형 ``PhysicsServer3D.G6DofJointAxisFlag``는 바인딩 생성기가 열거"
+"형 접두사를 감지하는 방식으로 인해 호환성을 손상시킵니다. 열거형 멤버의 이름"
+"이 변경된 열거형의 `GH-89851`_에 새 멤버가 추가되었습니다."
 
 msgid "Rendering"
 msgstr "렌더링"
 
+msgid "**RenderingDevice**"
+msgstr "렌더링"
+
+msgid ""
+"Enum field ``FinalAction.FINAL_ACTION_CONTINUE`` changes value from ``2`` to "
+"``0``"
+msgstr ""
+"열거형 필드 ``FinalAction.FINAL_ACTION_CONTINUE``는 값을 ``2``에서 ``0``로 변"
+"경합니다."
+
+msgid "`GH-84976`_"
+msgstr "`GH-84976`_"
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_CLEAR`` changes value from ``0`` "
+"to ``1``"
+msgstr ""
+"열거형 필드 ``InitialAction.INITIAL_ACTION_CLEAR``는 값을 ``0``에서 ``1``로 "
+"변경합니다."
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_CLEAR_REGION_CONTINUE`` changes "
+"value from ``2`` to ``1``"
+msgstr ""
+"열거형 필드 ``InitialAction.INITIAL_ACTION_CLEAR_REGION_CONTINUE``는 값을 "
+"``2``에서 ``1``로 변경합니다."
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_CONTINUE`` changes value from "
+"``5`` to ``0``"
+msgstr ""
+"열거형 필드 ``InitialAction.INITIAL_ACTION_CONTINUE``는 값을 ``5``에서 ``0``"
+"로 변경합니다."
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_DROP`` changes value from ``4`` to "
+"``2``"
+msgstr ""
+"열거형 필드 ``InitialAction.INITIAL_ACTION_DROP``는 값을 ``4``에서 ``2``로 변"
+"경합니다."
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_KEEP`` changes value from ``3`` to "
+"``0``"
+msgstr ""
+"열거형 필드 ``InitialAction.INITIAL_ACTION_KEEP``는 값을 ``3``에서 ``0``로 변"
+"경합니다."
+
+msgid "Method ``buffer_clear`` removes ``post_barrier`` parameter"
+msgstr "``buffer_clear`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid "Method ``buffer_update`` removes ``post_barrier`` parameter"
+msgstr "``buffer_update`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid "Method ``compute_list_begin`` removes ``allow_draw_overlap`` parameter"
+msgstr ""
+"``compute_list_begin`` 메소드는 ``allow_draw_overlap`` 매개변수를 제거합니다."
+
+msgid "Method ``compute_list_end`` removes ``post_barrier`` parameter"
+msgstr "``compute_list_end`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid "Method ``draw_list_begin`` removes ``storage_textures`` parameter"
+msgstr ""
+"``draw_list_begin`` 메소드는 ``storage_textures`` 매개변수를 제거합니다."
+
+msgid "Method ``draw_list_end`` removes ``post_barrier`` parameter"
+msgstr "``draw_list_end`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid "Method ``texture_clear`` removes ``post_barrier`` parameter"
+msgstr "``texture_clear`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid "Method ``texture_copy`` removes ``post_barrier`` parameter"
+msgstr "``texture_copy`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid ""
+"Method ``texture_resolve_multisample`` removes ``post_barrier`` parameter"
+msgstr ""
+"``texture_resolve_multisample`` 메소드는 ``post_barrier`` 매개변수를 제거합니"
+"다."
+
+msgid "Method ``texture_update`` removes ``post_barrier`` parameter"
+msgstr "``texture_update`` 메소드는 ``post_barrier`` 매개변수를 제거합니다."
+
+msgid "**RenderingServer**"
+msgstr "**Server**"
+
+msgid ""
+"Method ``environment_set_fog`` adds a new ``fog_mode`` optional parameter"
+msgstr ""
+"``environment_set_fog`` 메소드는 새로운 ``fog_mode`` 선택적 매개변수를 추가합"
+"니다."
+
+msgid "`GH-84792`_"
+msgstr "`GH-84792`_"
+
+msgid "**RenderSceneBuffersRD**"
+msgstr "**Server**"
+
+msgid "Method ``get_color_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"``get_color_layer`` 메소드는 새로운 ``msaa`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-80214`_"
+msgstr "`GH-80214`_"
+
+msgid "Method ``get_depth_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"``get_depth_layer`` 메소드는 새로운 ``msaa`` 선택적 매개변수를 추가합니다."
+
+msgid "Method ``get_velocity_layer`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"``get_velocity_layer`` 메소드는 새로운 ``msaa`` 선택적 매개변수를 추가합니다."
+
+msgid "Method ``get_color_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"``get_color_texture`` 메소드는 새로운 ``msaa`` 선택적 매개변수를 추가합니다."
+
+msgid "Method ``get_depth_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"``get_depth_texture`` 메소드는 새로운 ``msaa`` 선택적 매개변수를 추가합니다."
+
+msgid "Method ``get_velocity_texture`` adds a new ``msaa`` optional parameter"
+msgstr ""
+"``get_velocity_texture`` 메소드는 새로운 ``msaa`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid ""
+"While the values of the enum fields in ``RenderingDevice.InitialAction`` and "
+"``RenderingDevice.FinalAction`` changed, the only method that consumed them "
+"(``draw_list_begin``) added a compatibility method which supports the old "
+"values. So in practice it doesn't break compatibility."
+msgstr ""
+"``RenderingDevice.InitialAction`` 및 ``RenderingDevice.FinalAction``의 열거"
+"형 필드 값이 변경되었지만 이를 사용하는 유일한 메서드(``draw_list_begin``)에"
+"는 이전 값을 지원하는 호환성 메서드가 추가되었습니다. 따라서 실제로는 호환성"
+"이 깨지지 않습니다."
+
+msgid ""
+"In C#, the enum ``RenderingDevice.DriverResource`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members were added in `GH-83452`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"C#에서 열거형 ``RenderingDevice.DriverResource``는 바인딩 생성기가 열거형 접"
+"두사를 감지하는 방식으로 인해 호환성을 손상시킵니다. 열거형 멤버의 이름이 변"
+"경된 열거형의 `GH-83452`_에 새 멤버가 추가되었습니다."
+
+msgid "Text"
+msgstr "텍스처"
+
+msgid "**Font**"
+msgstr "**안개:**"
+
+msgid ""
+"Method ``find_variation`` adds a new ``baseline_offset`` optional parameter"
+msgstr ""
+"``find_variation`` 메소드는 새로운 ``baseline_offset`` 선택적 매개변수를 추가"
+"합니다."
+
+msgid "`GH-87668`_"
+msgstr "`GH-87668`_"
+
+msgid "**RichTextLabel**"
+msgstr "ScoreLabel"
+
+msgid "Method ``push_meta`` adds a new ``underline_mode`` optional parameter"
+msgstr ""
+"``push_meta`` 메소드는 새로운 ``underline_mode`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-89024`_"
+msgstr "`GH-89024`_"
+
+msgid "**TextServer**"
+msgstr "텍스처"
+
+msgid ""
+"Method ``shaped_text_get_word_breaks`` adds a new optional "
+"``skip_grapheme_flags`` parameter"
+msgstr ""
+"``shaped_text_get_word_breaks`` 메소드는 새로운 선택적 "
+"``skip_grapheme_flags`` 매개변수를 추가합니다."
+
+msgid "`GH-90732`_"
+msgstr "`GH-90732`_"
+
+msgid "**TextServerExtension**"
+msgstr "**텍스처 압축:**"
+
+msgid ""
+"Method ``_shaped_text_get_word_breaks`` adds a new ``skip_grapheme_flags`` "
+"parameter"
+msgstr ""
+"``_shaped_text_get_word_breaks`` 메소드는 새로운 ``skip_grapheme_flags`` 매개"
+"변수를 추가합니다."
+
 msgid "Audio"
 msgstr "오디오"
+
+msgid "**AudioStreamPlaybackPolyphonic**"
+msgstr "**AudioStreamPlayback다성음악**"
+
+msgid ""
+"Method ``play_stream`` adds new ``playback_type``, and ``bus`` optional "
+"parameters"
+msgstr ""
+"``play_stream`` 메소드는 새로운 ``playback_type`` 및 ``bus`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "`GH-91382`_"
+msgstr "`GH-91382`_"
 
 msgid "Navigation"
 msgstr "내비게이션"
 
+msgid "**AStar2D**"
+msgstr "변형"
+
+msgid ""
+"Method ``get_id_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr ""
+"메소드 ``get_id_path``는 새로운 ``allow_partial_path`` 선택적 매개변수를 추가"
+"합니다."
+
+msgid "`GH-88047`_"
+msgstr "`GH-88047`_"
+
+msgid ""
+"Method ``get_point_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr ""
+"메소드 ``get_point_path``는 새로운 ``allow_partial_path`` 선택적 매개변수를 "
+"추가합니다."
+
+msgid "**AStar3D**"
+msgstr "**예제**"
+
+msgid "**AStarGrid2D**"
+msgstr "변형"
+
 msgid "**NavigationRegion2D**"
 msgstr "**NavigationRegion2D**"
+
+msgid "Property ``avoidance_layers`` removed"
+msgstr "``avoidance_layers`` 속성이 제거되었습니다."
+
+msgid "`GH-90747`_"
+msgstr "`GH-90747`_"
+
+msgid "Property ``constrain_avoidance`` removed"
+msgstr "``constrain_avoidance`` 속성이 제거되었습니다."
+
+msgid "Method ``get_avoidance_layer_value`` removed"
+msgstr "``get_avoidance_layer_value`` 방법이 제거되었습니다."
+
+msgid "Method ``set_avoidance_layer_value`` removed"
+msgstr "``set_avoidance_layer_value`` 방법이 제거되었습니다."
+
+msgid ""
+"The constrain avoidance feature in ``NavigationRegion2D`` was experimental "
+"and has been discontinued with no replacement."
+msgstr ""
+"``NavigationRegion2D``의 제약 회피 기능은 실험적이며 교체 없이 중단되었습니"
+"다."
 
 msgid "TileMap"
 msgstr "타일맵"
 
+msgid "**TileData**"
+msgstr "결과 시험하기"
+
+msgid ""
+"Method ``get_navigation_polygon`` adds new ``flip_h``, ``flip_v``, and "
+"``transpose`` optional parameters"
+msgstr ""
+"``get_navigation_polygon`` 메소드는 새로운 ``flip_h``, ``flip_v`` 및 "
+"``transpose`` 선택적 매개변수를 추가합니다."
+
+msgid "`GH-84660`_"
+msgstr "`GH-84660`_"
+
+msgid ""
+"Method ``get_occluder`` adds new ``flip_h``, ``flip_v``, and ``transpose`` "
+"optional parameters"
+msgstr ""
+"``get_occluder`` 메소드는 새로운 ``flip_h``, ``flip_v`` 및 ``transpose`` 선택"
+"적 매개변수를 추가합니다."
+
 msgid "XR"
 msgstr "XR"
 
+msgid "**WebXRInterface**"
+msgstr "Godot 인터페이스"
+
+msgid ""
+"Method ``get_input_source_tracker`` changes return type from "
+"``XRPositionalTracker`` to ``XRControllerTracker``"
+msgstr ""
+"메서드 ``get_input_source_tracker``는 반환 유형을 ``XRPositionalTracker``에"
+"서 ``XRControllerTracker``로 변경합니다."
+
+msgid "`GH-90645`_"
+msgstr "`GH-90645`_"
+
+msgid "**XRServer**"
+msgstr "**Server**"
+
+msgid ""
+"Method ``get_tracker`` changes return type from ``XRPositionalTracker`` to "
+"``XRTracker``"
+msgstr ""
+"메서드 ``get_tracker``는 반환 유형을 ``XRPositionalTracker``에서 "
+"``XRTracker``로 변경합니다."
+
+msgid "Editor plugins"
+msgstr "편집기 플러그인"
+
+msgid "**EditorInspectorPlugin**"
+msgstr ":ref:`doc_inspector_plugins`"
+
+msgid "Method ``add_property_editor`` adds a new ``label`` optional parameter"
+msgstr ""
+"``add_property_editor`` 메소드는 새로운 ``label`` 선택적 매개변수를 추가합니"
+"다."
+
+msgid "`GH-92322`_"
+msgstr "`GH-92322`_"
+
+msgid "**EditorPlugin**"
+msgstr "**플러그인:**"
+
+msgid ""
+"Method ``add_control_to_bottom_panel`` adds a new ``shortcut`` optional "
+"parameter"
+msgstr ""
+"``add_control_to_bottom_panel`` 메소드는 새로운 ``shortcut`` 선택적 매개변수"
+"를 추가합니다."
+
+msgid "`GH-88081`_"
+msgstr "`GH-88081`_"
+
+msgid ""
+"Method ``add_control_to_dock`` adds a new ``shortcut`` optional parameter"
+msgstr ""
+"``add_control_to_dock`` 메소드는 새로운 ``shortcut`` 선택적 매개변수를 추가합"
+"니다."
+
+msgid "**EditorSceneFormatImporterFBX**"
+msgstr "**EditorSceneFormatImporterFBX**"
+
+msgid "Type renamed to ``EditorSceneFormatImporterFBX2GLTF``"
+msgstr "``EditorSceneFormatImporterFBX2GLTF``로 이름이 변경된 유형"
+
+msgid "`GH-81746`_"
+msgstr "`GH-81746`_"
+
+msgid "Behavior changes"
+msgstr "행동 변화"
+
+msgid ""
+"In 4.3, some behavior changes have been introduced, which might require you "
+"to adjust your project."
+msgstr ""
+"4.3에서는 일부 동작 변경 사항이 도입되었으며, 이로 인해 프로젝트를 조정해야 "
+"할 수도 있습니다."
+
+msgid "Core"
+msgstr "코어"
+
+msgid ""
+"Binary serialization was modified to fix some issues with the serialization "
+"of scripted Objects and typed Arrays (`GH-78219`_). This breaks compat with "
+"script encoding/decoding."
+msgstr ""
+"스크립트된 개체 및 형식화된 배열(`GH-78219`_)의 직렬화와 관련된 일부 문제를 "
+"해결하기 위해 이진 직렬화가 수정되었습니다. 이로 인해 스크립트 인코딩/디코딩"
+"과의 호환성이 중단됩니다."
+
+msgid ""
+"``PackedByteArray`` is now able to use a more compact base64 encoding for "
+"storage. But the trade-off is that it breaks compatibility, meaning that "
+"older versions of Godot may not be able to open resources saved by 4.3 "
+"(`GH-89186`_)."
+msgstr ""
+"``PackedByteArray``는 이제 저장을 위해 보다 컴팩트한 base64 인코딩을 사용할 "
+"수 있습니다. 하지만 호환성이 손상된다는 단점이 있습니다. 이는 이전 버전의 "
+"Godot가 4.3(`GH-89186`_)에 의해 저장된 리소스를 열 수 없다는 것을 의미합니다."
+
+msgid ""
+"To maximize compatibility, this new storage format will only be enabled for "
+"resources and scenes that contain large PackedByteArrays for now. Support "
+"for this new format will also be added in patch updates for older versions "
+"of Godot. Once all supported Godot versions are able to read the new format, "
+"we will gradually retire the compatibility measures and have all resources "
+"and scenes use the new storage format."
+msgstr ""
+"호환성을 최대화하기 위해 이 새로운 저장소 형식은 현재 대규모 PackedByteArray"
+"가 포함된 리소스 및 장면에 대해서만 활성화됩니다. 이 새로운 형식에 대한 지원"
+"은 이전 버전의 Godot에 대한 패치 업데이트에도 추가될 것입니다. 지원되는 모든 "
+"Godot 버전이 새로운 형식을 읽을 수 있게 되면, 우리는 점차적으로 호환성 측정"
+"을 중단하고 모든 리소스와 장면이 새로운 저장 형식을 사용하도록 할 것입니다."
+
+msgid ""
+"In C#, the ``Transform3D.InterpolateWith`` implementation was fixed to use "
+"the right order of operations, applying the rotation before the scale "
+"(`GH-89843`_)."
+msgstr ""
+"C#에서는 ``Transform3D.InterpolateWith`` 구현이 올바른 작업 순서를 사용하도"
+"록 수정되어 크기 조정 전에 회전을 적용합니다(`GH-89843`_)."
+
+msgid ""
+"In C#, the ``Aabb.GetSupport`` implementation was fixed to properly return "
+"the support vector (`GH-88919`_)."
+msgstr ""
+"C#에서는 지원 벡터(`GH-88919`_)를 올바르게 반환하도록 ``Aabb.GetSupport`` 구"
+"현이 수정되었습니다."
+
+msgid ""
+"In C#, the Variant types' ``ToString`` implementation now defaults to using "
+"the ``InvariantCulture`` (`GH-89547`_) which means ``Vector2(1.2, 3.4)`` is "
+"formatted using ``.`` as the decimal separator independently of the language "
+"of the operating system that the program is running on."
+msgstr ""
+"C#에서 변형 유형의 ``ToString`` 구현은 이제 기본적으로 "
+"``InvariantCulture``(`GH-89547`_)를 사용하도록 설정됩니다. 즉, "
+"``Vector2(1.2, 3.4)``는 프로그램이 실행되는 운영 체제의 언어와 관계없이 ``.``"
+"를 소수 구분 기호로 사용하여 형식화됩니다."
+
+msgid ""
+"``AnimationMixer`` replaced its Capture mode with a new Capture feature that "
+"works much better than the old one, this replaces the existing cache "
+"(`GH-86715`_)."
+msgstr ""
+"``AnimationMixer``는 캡처 모드를 이전보다 훨씬 더 잘 작동하는 새로운 캡처 기"
+"능으로 대체했습니다. 이는 기존 캐시(`GH-86715`_)를 대체합니다."
+
+msgid ""
+"``AnimationNode`` has a reworked process for retrieving the semantic time "
+"info. This ensures that time-related behavior works as expected, but changes "
+"the blending behavior. Implementors of the ``_process`` virtual method "
+"should also note that this method is now deprecated and will be replaced by "
+"a new one in the future (`GH-87171`_)."
+msgstr ""
+"``AnimationNode``에는 의미론적 시간 정보를 검색하기 위한 프로세스가 재작업되"
+"었습니다. 이렇게 하면 시간 관련 동작이 예상대로 작동하지만 혼합 동작이 변경됩"
+"니다. ``_process`` 가상 메서드 구현자는 이 메서드가 현재 더 이상 사용되지 않"
+"으며 향후 새로운 메서드(`GH-87171`_)로 대체된다는 점에도 유의해야 합니다."
+
+msgid ""
+"More information about the changes to Animation can be found in the "
+"`Migrating Animations from Godot 4.0 to 4.3 <https://godotengine.org/article/"
+"migrating-animations-from-godot-4-0-to-4-3>`__ article."
+msgstr ""
+"Godot의 설계 선택에 대한 자세한 내용은 `이 글 <https://godotengine.org/"
+"article/why-isnt-godot-ecs-based-game-engine>`__ 에서 확인할 수 있습니다."
+
+msgid ""
+"The default font outline color was changed from white to black (`GH-54641`_)."
+msgstr ""
+"기본 글꼴 외곽선 색상이 흰색에서 검정색(`GH-54641`_)으로 변경되었습니다."
+
+msgid ""
+"The ``auto_translate`` property is deprecated in favor of the "
+"``auto_translate_mode`` property which is now in ``Node`` (`GH-87530`_). The "
+"default value for ``auto_translate_mode`` is ``AUTO_TRANSLATE_INHERIT``, "
+"which means nodes inherit the ``auto_translate_mode`` value from their "
+"parent. This means, existing nodes with the ``auto_translate`` property set "
+"to ``true`` may no longer be translated if they are children of a node with "
+"the ``auto_translate`` property set to ``false``."
+msgstr ""
+"``auto_translate`` 속성은 현재 ``Node``(`GH-87530`_)에 있는 "
+"``auto_translate_mode`` 속성을 위해 더 이상 사용되지 않습니다. "
+"``auto_translate_mode``의 기본값은 ``AUTO_TRANSLATE_INHERIT``입니다. 이는 노"
+"드가 상위 항목에서 ``auto_translate_mode`` 값을 상속함을 의미합니다. 즉, "
+"``auto_translate`` 속성이 ``true``로 설정된 기존 노드는 ``auto_translate`` 속"
+"성이 ``false``로 설정된 노드의 자식 노드인 경우 더 이상 변환되지 않을 수 있습"
+"니다."
+
+msgid "Multiplayer"
+msgstr "다중 패턴(Multiple patterns)"
+
+msgid ""
+"The ``SceneMultiplayer`` caching protocol was changed to send the received "
+"ID instead of the Node path when sending a node removal confirmation packet "
+"(`GH-90027`_)."
+msgstr ""
+"``SceneMultiplayer`` 캐싱 프로토콜이 노드 제거 확인 패킷(`GH-90027`_) 전송 "
+"시 노드 경로 대신 수신된 ID를 전송하도록 변경되었습니다."
+
+msgid ""
+"This is a breaking change for the high-level multiplayer protocol making it "
+"incompatible with previous Godot versions. Upgrade both your server and "
+"client versions to Godot 4.3 to handle this change gracefully."
+msgstr ""
+"이는 이전 Godot 버전과 호환되지 않게 만드는 높은 수준의 멀티플레이어 프로토콜"
+"에 대한 획기적인 변경 사항입니다. 이 변경 사항을 적절하게 처리하려면 서버와 "
+"클라이언트 버전을 모두 Godot 4.3으로 업그레이드하세요."
+
+msgid ""
+"Note that high-level multiplayer facilities are only ever meant to be "
+"compatible with server and client using the same Godot version. It is "
+"recommended to implement some kind of version checking."
+msgstr ""
+"높은 수준의 멀티플레이어 기능은 동일한 Godot 버전을 사용하는 서버 및 클라이언"
+"트와만 호환된다는 점에 유의하세요. 일종의 버전 확인을 구현하는 것이 좋습니다."
+
+msgid ""
+"Decals now convert the modulate color from an sRGB color to a linear color, "
+"like all other inputs, to ensure proper blending (`GH-89849`_). Existing "
+"projects that were using the decal's modulate property will notice a change "
+"in their visuals."
+msgstr ""
+"데칼은 이제 다른 모든 입력과 마찬가지로 변조 색상을 sRGB 색상에서 선형 색상으"
+"로 변환하여 적절한 혼합을 보장합니다(`GH-89849`_). 데칼의 변조 속성을 사용하"
+"고 있던 기존 프로젝트에서는 시각적 변화가 눈에 띌 것입니다."
+
+msgid ""
+"The reverse Z depth buffer technique is now implemented. This may break "
+"compatibility for some shaders. Read the `Introducing Reverse Z (AKA I'm "
+"sorry for breaking your shader) <https://godotengine.org/article/introducing-"
+"reverse-z/>`__ article for more information and guidance on how to fix "
+"common scenarios."
+msgstr ""
+"이제 역방향 Z 깊이 버퍼 기술이 구현되었습니다. 이로 인해 일부 셰이더의 호환성"
+"이 중단될 수 있습니다. 일반적인 시나리오를 해결하는 방법에 대한 자세한 내용"
+"과 지침은 `Reverse Z 소개(셰이더를 깨서 죄송합니다) <https://godotengine.org/"
+"article/introducing-reverse-z/>`__ 문서를 읽어보세요."
+
+msgid ""
+"``TileMap`` layers were moved to individual nodes (`GH-87379`_ and "
+"`GH-89179`_)."
+msgstr ""
+"``TileMap`` 레이어가 개별 노드(`GH-87379`_ 및 `GH-89179`_)로 이동되었습니다."
+
 msgid "Android"
 msgstr "Android"
+
+msgid ""
+"Android permissions are no longer requested automatically because it goes "
+"against the recommended best practices (`GH-87080`_). Use the "
+"``request_permission`` method in ``OS`` and the "
+"``on_request_permissions_result`` signal on ``MainLoop`` to request "
+"permissions and wait for the user response."
+msgstr ""
+"권장 모범 사례(`GH-87080`_)에 위배되므로 Android 권한이 더 이상 자동으로 요청"
+"되지 않습니다. 권한을 요청하고 사용자 응답을 기다리려면 ``OS``에서 "
+"``request_permission`` 메서드를 사용하고 ``MainLoop``에서 "
+"``on_request_permissions_result`` 시그널 메서드를 사용합니다."

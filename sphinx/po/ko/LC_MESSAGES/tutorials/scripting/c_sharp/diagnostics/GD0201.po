@@ -11,5 +11,89 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0201: The name of the delegate must end with 'EventHandler'"
+msgstr "GD0201: 대리자의 이름은 'EventHandler'로 끝나야 합니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0201"
+msgstr "GD0201"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A delegate annotated with the ``[Signal]`` attribute has a name that doesn't "
+"end with 'EventHandler'."
+msgstr ""
+"``[Signal]`` 속성으로 주석이 달린 대리자 이름이 'EventHandler'로 끝나지 않습"
+"니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Godot source generators will generate C# events using the name of the "
+"delegate with the 'EventHandler' suffix removed. Adding the 'EventHandler' "
+"suffix to the name of delegates used in events is a `.NET naming convention "
+"<https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/names-"
+"of-classes-structs-and-interfaces#names-of-common-types>`_."
+msgstr ""
+"Godot 소스 생성기는 'EventHandler' 접미사가 제거된 대리자 이름을 사용하여 C# "
+"이벤트를 생성합니다. 이벤트에 사용되는 대리자 이름에 'EventHandler' 접미사를 "
+"추가하는 것은 `.NET 명명 규칙 <https://learn.microsoft.com/en-us/dotnet/"
+"standard/design-guidelines/names-of-classes-structs-and-interfaces#names-of-"
+"common-types>`_입니다."
+
+msgid ""
+"Using a suffix for the delegate allows the generated event to use the name "
+"without the suffix avoiding a naming conflict."
+msgstr ""
+"대리자에 접미사를 사용하면 생성된 이벤트에서 이름 충돌을 방지하면서 접미사 없"
+"이 이름을 사용할 수 있습니다."
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+"시그널를 선언하고 사용하는 방법에 대한 자세한 내용은 :ref:`C# 시그널 "
+"<doc_c_sharp_signals>` 문서를 살펴보세요."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, add 'EventHandler' to the end of the "
+"delegate name."
+msgstr ""
+"이 규칙 위반을 수정하려면 대리자 이름 끝에 'EventHandler'를 추가하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates without the "
+"suffix will be ignored by the source generator, so the signal won't be "
+"registered."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 접미사가 없는 시그널 대리인은 소스 생성기"
+"에서 무시되므로 시그널는 등록되지 않습니다."

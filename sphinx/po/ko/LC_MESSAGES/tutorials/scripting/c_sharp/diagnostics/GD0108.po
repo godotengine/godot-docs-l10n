@@ -11,5 +11,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0108: The exported tool button is not in a tool class"
+msgstr "GD0108: 내보낸 도구 버튼이 도구 클래스에 없습니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0108"
+msgstr "GD0108"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A property is annotated with the ``[ExportToolButton]`` attribute in a class "
+"that is **not** annotated with the ``[Tool]`` attribute."
+msgstr ""
+"``[Tool]`` 속성으로 주석이 **있지 않은** 클래스의 속성에 "
+"``[ExportToolButton]`` 속성으로 주석이 추가되었습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"The ``[ExportToolButton]`` is used to create clickable buttons in the "
+"inspector so, like every other script that runs in the editor, it needs to "
+"be annotated with the ``[Tool]`` attribute."
+msgstr ""
+"``[ExportToolButton]``는 검사기에서 클릭 가능한 버튼을 만드는 데 사용되므로 "
+"편집기에서 실행되는 다른 모든 스크립트와 마찬가지로 ``[Tool]`` 속성으로 주석"
+"을 달아야 합니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, add the ``[Tool]`` attribute to the class "
+"that contains the member annotated with the ``[ExportToolButton]`` attribute."
+msgstr ""
+"이 규칙 위반을 해결하려면 ``[ExportToolButton]`` 속성으로 주석이 달린 멤버가 "
+"포함된 클래스에 ``[Tool]`` 속성을 추가하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. The clickable buttons in the "
+"inspector won't be functional if their script is not annotated with the "
+"``[Tool]`` attribute."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 스크립트에 ``[Tool]`` 속성으로 주석이 추"
+"가되지 않은 경우 검사기의 클릭 가능한 버튼이 작동하지 않습니다."

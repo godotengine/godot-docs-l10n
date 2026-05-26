@@ -11,8 +11,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Advanced physics interpolation"
+msgstr "Interpolação de física avançada"
+
+msgid "Exceptions to automatic physics interpolation"
+msgstr "Exceções de interpolações físicas"
+
+msgid ""
+"The most common situation where you may want to perform your own "
+"interpolation is Cameras."
+msgstr ""
+"A situação mais comum em que você pode querer realizar sua própria "
+"interpolação é em Câmeras."
+
 msgid "Cameras"
 msgstr "Câmeras"
 
+msgid "Manual camera interpolation"
+msgstr "Interpolação manual da câmera"
+
+msgid "There are two ways of doing this:"
+msgstr "Há duas maneiras de fazer isso:"
+
+msgid "Typical example"
+msgstr "Exemplo típico"
+
+msgid "get_global_transform_interpolated()"
+msgstr ""
+"get_global_transform_interpolated() (\"get global transform interpolated\" "
+"significa \"obter transformação global interpolada\")"
+
+msgid "Example manual camera script"
+msgstr "Exemplo manual de script da câmera"
+
+msgid "Mouse look"
+msgstr "Controle de câmera (também conhecido como Mouse look)"
+
+msgid ""
+"Mouse look is a very common way of controlling cameras. But there is a "
+"problem. Unlike keyboard input which can be sampled periodically on the "
+"physics tick, mouse move events can come in continuously. The camera will be "
+"expected to react and follow these mouse movements on the next frame, rather "
+"than waiting until the next physics tick."
+msgstr ""
+"Mouse look é uma forma muito comum de controlar câmeras. Mas existe um "
+"problema. Diferentemente da entrada do teclado, que pode ser capturada "
+"periodicamente no tick de física, eventos de movimento do mouse podem chegar "
+"continuamente. Espera-se que a câmera reaja e acompanhe esses movimentos do "
+"mouse no próximo frame, em vez de esperar até o próximo tick de física."
+
+msgid ""
+"Sometimes, especially with cameras, you will want to use a combination of "
+"interpolation and non-interpolation:"
+msgstr ""
+"Às vezes, especialmente com câmeras, você vai querer usar uma combinação de "
+"interpolação e não interpolação:"
+
+msgid "Disabling interpolation on other nodes"
+msgstr "Desativando a interpolação em outros nós"
+
 msgid "MultiMeshes"
-msgstr "MultiMeshes"
+msgstr "MultiMeshes (Múltiplas Malhas)"

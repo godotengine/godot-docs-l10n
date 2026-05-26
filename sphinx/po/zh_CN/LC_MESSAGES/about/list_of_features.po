@@ -127,7 +127,7 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
-"支持 Visual Studio Code、VIM 等\\ :ref:`外部文本编辑器 "
+"支持 Visual Studio Code、Vim 等\\ :ref:`外部文本编辑器 "
 "<doc_external_editor>`\\ 。"
 
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
@@ -208,7 +208,7 @@ msgid "Rendering"
 msgstr "渲染"
 
 msgid "Godot 4 includes three renderers:"
-msgstr "Godot 4 包括 三个渲染器："
+msgstr "Godot 4 包含三个渲染器："
 
 msgid ""
 "**Forward+**. The most advanced renderer, suited for desktop platforms only. "
@@ -226,7 +226,7 @@ msgid ""
 "renderer uses **Vulkan**, **Direct3D 12**, or **Metal** as the rendering "
 "driver, and it uses the **RenderingDevice** backend."
 msgstr ""
-"**Mobile**\\ （移动）。功能较少，但渲染简单场景的速度更快。适用于移动平台和桌"
+"**Mobile**\\ （移动）。特性更少，但渲染简单场景的速度更快。适用于移动平台和桌"
 "面平台。移动平台默认使用该渲染器。该渲染器使用 **Vulkan**\\ 、\\ **Direct3D "
 "12** 或 **Metal** 作为渲染驱动，使用 **RenderingDevice** 后端。"
 
@@ -434,7 +434,7 @@ msgid ""
 "When using the Forward+ renderer, a depth prepass is used to improve "
 "performance in complex scenes by reducing the cost of overdraw."
 msgstr ""
-"使用 Forward+ 渲染器时，通过深度预通道来提高复杂场景中的性能，从而减少过度绘"
+"使用 Forward+ 渲染器时，通过深度预渲染来提高复杂场景中的性能，从而减少过度绘"
 "制的成本。"
 
 msgid ""
@@ -485,7 +485,7 @@ msgid ""
 msgstr "支持材质粗糙度的屏幕空间折射（产生模糊折射）。"
 
 msgid "Proximity fade (soft particles) and distance fade."
-msgstr "邻近淡出（柔化粒子）与距离淡出。"
+msgstr "近处渐隐（也叫柔化粒子）和远处渐隐。"
 
 msgid ""
 "Distance fade can use alpha blending or dithering to avoid going through the "
@@ -1043,6 +1043,12 @@ msgstr "3D 物理学"
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr "车身（用于街机物理，而非模拟）。"
 
+msgid ":ref:`Soft bodies <doc_soft_body>`."
+msgstr ":ref:`软体 <doc_soft_body>`\\。"
+
+msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
+msgstr ":ref:`布娃娃 <doc_ragdoll_system>`\\。"
+
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
 "plane)."
@@ -1074,6 +1080,9 @@ msgstr ""
 msgid "Visual shader editor."
 msgstr "可视化着色器编辑器。"
 
+msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
+msgstr "支持\\ :ref:`可视化着色器插件 <doc_visual_shader_plugins>`\\ 。"
+
 msgid "Scripting"
 msgstr "脚本"
 
@@ -1101,8 +1110,8 @@ msgid ""
 ":ref:`High-level interpreted language <doc_gdscript_reference>` "
 "with :ref:`optional static typing <doc_gdscript_static_typing>`."
 msgstr ""
-":ref:`高级解释语言 <doc_gdscript_reference>`\\ ，支持\\ :ref:`可选的静态类型 "
-"<doc_gdscript_static_typing>`\\ 。"
+":ref:`高级解释型语言 <doc_gdscript_reference>` 支持 :ref:`可选静态类型 "
+"<doc_gdscript_static_typing>`."
 
 msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
@@ -1229,6 +1238,11 @@ msgstr "支持\\ :ref:`程序式音频生成 <class_AudioStreamGenerator>`\\ 。
 
 msgid "Audio input to record microphones."
 msgstr "录制麦克风的音频输入。"
+
+msgid ""
+":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
+"engines."
+msgstr ":ref:`文本转语音 <doc_text_to_speech>` 使用平台提供的文本转语音引擎."
 
 msgid "MIDI input."
 msgstr "MIDI 输入。"
@@ -1436,6 +1450,17 @@ msgstr "国际化"
 msgid "Full support for Unicode including emoji."
 msgstr "完全支持 Unicode，包括表情符号。"
 
+msgid "Support for loading system fonts on Windows, macOS, and Linux."
+msgstr "只有 Windows、macOS、以及 Linux 支持加载系统字体。"
+
+msgid ""
+"By default, system fonts are used as a fallback to display unsupported "
+"characters. This allows proper display of multilingual text without having "
+"to bundle large font files with a project."
+msgstr ""
+"默认情况下，系统字体会作为后备字体用于显示不受支持的字符。这使得无需在项目中"
+"打包体积较大的字体文件，也能正确显示多语言文本。"
+
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
@@ -1451,6 +1476,9 @@ msgid ""
 "using the ``tr()`` function."
 msgstr ""
 "在你的项目中自动在 GUI 元素中或通过使用 ``tr()`` 函数使用本地化的字符串。"
+
+msgid "Support for pluralization and translation contexts."
+msgstr "支持复数形式和翻译上下文。"
 
 msgid ""
 "Support for :ref:`bidirectional typesetting "
@@ -1480,6 +1508,12 @@ msgid "Change the window title and icon."
 msgstr "更改窗口标题和图标。"
 
 msgid ""
+"Create transparent windows to use as overlays, with polygon-based mouse "
+"passthrough support."
+msgstr ""
+"创建可用作叠加层的透明窗口，并支持基于多边形的鼠标穿透（点击穿透）功能。"
+
+msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr "吸引注意（在大多数平台上表现为标题栏闪烁）。"
 
@@ -1496,8 +1530,30 @@ msgstr ""
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "无边框窗口（全屏或非全屏）。"
 
+msgid "Keep a window always on top."
+msgstr "窗口置顶功能。"
+
+msgid "Make a window ignore focus (useful for overlays)."
+msgstr "让一个窗口忽略焦点（窗口叠加时很有用）。"
+
+msgid ""
+"Declare a window as a popup (hidden from task switcher) or exclusive "
+"(prevents interacting with other windows from the same process)."
+msgstr ""
+"将窗口声明为弹出窗口（在任务切换器中隐藏），或声明为独占窗口（阻止与同一进程"
+"中的其他窗口进行交互）。"
+
+msgid "Native file dialog support on Windows, macOS, Linux, and Android."
+msgstr "支持使用系统原生文件窗口的有 Windows、macOS、Linux 和 Android。"
+
+msgid "Tray icon support on Windows and macOS."
+msgstr "支持在 Windows 和 macOS 上使用托盘图标。"
+
 msgid "Global menu integration on macOS."
 msgstr "macOS 上的全局菜单整合。"
+
+msgid "Client-side decorations on macOS."
+msgstr "在 macOS 上支持客户端装饰（CSD）。"
 
 msgid ""
 "Execute commands in a blocking or non-blocking manner (including running "
@@ -1512,6 +1568,9 @@ msgstr "使用默认或自定义（已在系统上注册）协议处理程序打
 msgid "Parse custom command line arguments."
 msgstr "解析自定义命令行参数。"
 
+msgid "Support for screen readers on Windows, macOS, and Linux."
+msgstr "支持 Windows、macOS 和 Linux 上的屏幕阅读器。"
+
 msgid ""
 "Any Godot binary (editor or exported project) can be :ref:`used as a "
 "headless server <doc_exporting_for_dedicated_servers>` by starting it with "
@@ -1522,6 +1581,10 @@ msgstr ""
 "项目）都可以\\ :ref:`用作无头服务器 "
 "<doc_exporting_for_dedicated_servers>`\\ 。这允许在没有 GPU 或显示服务器的情"
 "况下运行引擎。"
+
+msgid ""
+"See :ref:`doc_creating_applications` for details on using these features."
+msgstr "有关这些功能的使用细节，请参阅 :ref:`doc_creating_applications`\\ 。"
 
 msgid "Mobile"
 msgstr "移动端"

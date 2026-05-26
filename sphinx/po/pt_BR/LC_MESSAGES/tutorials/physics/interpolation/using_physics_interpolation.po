@@ -10,3 +10,142 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using physics interpolation"
+msgstr "Usando interpolações físicas"
+
+msgid ""
+"How do we incorporate physics interpolation into a Godot game? Are there any "
+"caveats?"
+msgstr ""
+"Como nós incorporamos interpolações físicas em um jogo da Godot ? Existem "
+"algumas condições ?"
+
+msgid ""
+"We have tried to make the system as easy to use as possible, and many "
+"existing games will work with few changes. That said there are some "
+"situations which require special treatment, and these will be described."
+msgstr ""
+"Nós já tentamos deixar o sistema o mais fácil possível, e muitos jogos "
+"existentes trabalharão em poucas mudanças. Dito isso, têm situações que "
+"requerem um tratamento especial, e estas serão descritas."
+
+msgid "Turn on the physics interpolation setting"
+msgstr "Ativando a configuração de interpolações físicas"
+
+msgid ""
+"The first step is to turn on physics interpolation in :ref:`Project Settings "
+"> Physics > Common > Physics "
+"Interpolation<class_ProjectSettings_property_physics/common/"
+"physics_interpolation>` You can now run your game."
+msgstr ""
+"O primeiro passo é ativar as interpolações físicas em :ref:`Project Settings "
+"> Physics > Common > Physics "
+"Interpolation<class_ProjectSettings_property_physics/common/"
+"physics_interpolation>`. E você pode agora rodar o seu jogo."
+
+msgid ""
+"It is likely that nothing looks hugely different, particularly if you are "
+"running physics at 60 TPS or a multiple of it. However, quite a bit more is "
+"happening behind the scenes."
+msgstr ""
+"É provável que nada se pareça muito diferente, particularmente se você "
+"estiver rodando a física em 60 TPS ou em algum múltiplo disso. Entretanto, "
+"tem bastante coisas acontecendo atrás das cenas."
+
+msgid ""
+"To convert an existing game to use interpolation, it is highly recommended "
+"that you temporarily set :ref:`Project Settings > Physics > Common > Physics "
+"Tick per Second<class_ProjectSettings_property_physics/common/"
+"physics_ticks_per_second>` to a low value such as ``10``, which will make "
+"interpolation problems more obvious."
+msgstr ""
+"Para converter um jogo existente para usar interpolação, é altamente "
+"recomendado definir temporariamente :ref:`Project Settings > Physics > "
+"Common > Physics Tick per Second<class_ProjectSettings_property_physics/"
+"common/physics_ticks_per_second>` para um valor baixo, como ``10``, o que "
+"tornará os problemas de interpolação mais óbvios."
+
+msgid "Move (almost) all game logic from _process to _physics_process"
+msgstr "Mova (quase) toda a lógica de jogo de _process para _physics_process"
+
+msgid "Ensure that all indirect movement happens during physics ticks"
+msgstr ""
+"Garanta que todos os movimentos indiretos aconteçam durante os ticks de "
+"física"
+
+msgid "Choose a physics tick rate"
+msgstr "Escolha uma taxa de ticks de física"
+
+msgid "As a rough guide:"
+msgstr "Um guia difícil:"
+
+msgid "Low tick rates (10-30)"
+msgstr "Taxas de ticks baixas (10 - 30)"
+
+msgid "Medium tick rates (30-60)"
+msgstr "Taxas de ticks médias (30 - 60)"
+
+msgid "High tick rates (60+)"
+msgstr "Taxas de ticks altas (60+)"
+
+msgid "Better CPU performance"
+msgstr "Melhor desempenho da CPU"
+
+msgid "Good physics behavior in complex scenes"
+msgstr "Bom comportamento de física em cenas complexas"
+
+msgid "Good with fast physics"
+msgstr "Bom(a) com físicas rápidas"
+
+msgid "Add some delay to input"
+msgstr "Adicione algum atraso para a entrada"
+
+msgid "Good for first person games"
+msgstr "Bom(a) para jogos de primeira pessoa"
+
+msgid "Good for racing games"
+msgstr "Bom(a) para jogos de corrida"
+
+msgid "Simple physics behaviour"
+msgstr "Comportamento simples de física"
+
+msgid ""
+"You can always change the tick rate as you develop, it is as simple as "
+"changing the project setting."
+msgstr ""
+"Você sempre pode mudar a taxa de ticks, é tão simples quanto mudar as "
+"configurações do projeto."
+
+msgid "Call ``reset_physics_interpolation()`` when teleporting objects"
+msgstr ""
+"Chame ``reset_physics_interpolation()`` quando estiver teletransportando "
+"objetos"
+
+msgid ""
+"Most of the time, interpolation is what you want between two physics ticks. "
+"However, there is one situation in which it may *not* be what you want. That "
+"is when you are initially placing objects, or moving them to a new location. "
+"Here, you don't want a smooth motion between where the object was (e.g. the "
+"origin) and the initial position - you want an instantaneous move."
+msgstr ""
+"Na maior parte do tempo, a interpolação é o que você quer entre dois ticks "
+"de física. Entretanto, tem uma situação aonde isso pode *não* ser o que você "
+"quer. Isso é quando você está inicialmente colocando objetos, ou movendo "
+"eles para um novo local. Aqui, você não quer um movimento suave entre onde o "
+"objeto estava e a posição inicial - você quer um movimento instantâneo."
+
+msgid "There are actually two ways to use ``reset_physics_interpolation()``:"
+msgstr "Existem dois jeitos de usar ``reset_physics_interpolation()``:"
+
+msgid "*Standing start (e.g. player)*"
+msgstr "*Ponto inicial (por exemplo, o jogador)*"
+
+msgid "Set the initial transform"
+msgstr "Defina a transformação inicial"
+
+msgid "Call ``reset_physics_interpolation()``"
+msgstr "Chame ``reset_physics_interpolation()``"
+
+msgid "*Moving start (e.g. bullet)*"
+msgstr "*Início de movimento (como uma bala)*"

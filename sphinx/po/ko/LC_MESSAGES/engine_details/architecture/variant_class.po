@@ -11,8 +11,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Variant class"
+msgstr "변형 클래스"
+
 msgid "About"
-msgstr "대하여"
+msgstr "소개"
+
+msgid ""
+"Variant is the most important datatype in Godot. A Variant takes up only 24 "
+"bytes on 64-bit platforms (20 bytes on 32-bit platforms) and can store "
+"almost any engine datatype inside of it. Variants are rarely used to hold "
+"information for long periods of time, instead they are used mainly for "
+"communication, editing, serialization and generally moving data around."
+msgstr ""
+"Variant는 Godot에서 가장 중요한 데이터 유형입니다. Variant는 64비트 플랫폼에"
+"서 24바이트(32비트 플랫폼에서는 20바이트)만 차지하며 내부에 거의 모든 엔진 데"
+"이터 유형을 저장할 수 있습니다. 변형은 장기간 정보를 보유하는 데 거의 사용되"
+"지 않으며 대신 주로 통신, 편집, 직렬화 및 일반적으로 데이터 이동에 사용됩니"
+"다."
+
+msgid "A Variant can:"
+msgstr "변형은 다음을 수행할 수 있습니다."
+
+msgid "Store almost any datatype."
+msgstr "거의 모든 데이터 유형을 저장합니다."
+
+msgid ""
+"Perform operations between many variants (GDScript uses Variant as its "
+"atomic/native datatype)."
+msgstr ""
+"많은 변형 간의 작업을 수행합니다(GDScript는 Variant를 원자/네이티브 데이터 유"
+"형으로 사용합니다)."
+
+msgid "Be hashed, so it can be compared quickly to other variants."
+msgstr "해시되어 다른 변형과 빠르게 비교할 수 있습니다."
+
+msgid "Be used to convert safely between datatypes."
+msgstr "데이터 유형 간에 안전하게 변환하는 데 사용됩니다."
+
+msgid ""
+"Be used to abstract calling methods and their arguments (Godot exports all "
+"its functions through variants)."
+msgstr ""
+"호출 방법과 인수를 추상화하는 데 사용됩니다(Godot는 변형을 통해 모든 기능을 "
+"내보냅니다)."
+
+msgid "Be used to defer calls or move data between threads."
+msgstr "호출을 연기하거나 스레드 간에 데이터를 이동하는 데 사용됩니다."
+
+msgid "Be serialized as binary and stored to disk, or transferred via network."
+msgstr "바이너리로 직렬화되어 디스크에 저장되거나 네트워크를 통해 전송됩니다."
+
+msgid ""
+"Be serialized to text and use it for printing values and editable settings."
+msgstr "텍스트로 직렬화되어 값 인쇄 및 편집 가능한 설정에 사용됩니다."
+
+msgid "Work as an exported property, so the editor can edit it universally."
+msgstr "내보낸 속성으로 작업하므로 편집자가 전체적으로 편집할 수 있습니다."
+
+msgid "Be used for dictionaries, arrays, parsers, etc."
+msgstr "사전, 배열, 파서 등에 사용됩니다."
+
+msgid ""
+"Basically, thanks to the Variant class, writing Godot itself was a much, "
+"much easier task, as it allows for highly dynamic constructs not common of C+"
+"+ with little effort. Become a friend of Variant today."
+msgstr ""
+"기본적으로 Variant 클래스 덕분에 Godot 자체를 작성하는 것은 훨씬 더 쉬운 작업"
+"이었습니다. C++에서는 일반적이지 않은 매우 동적인 구성을 약간의 노력으로 허용"
+"하기 때문입니다. 오늘 Variant의 친구가 되어보세요."
+
+msgid ""
+"All types within Variant except Nil and Object **cannot** be ``null`` and "
+"must always store a valid value. These types within Variant are therefore "
+"called *non-nullable* types."
+msgstr ""
+"Nil 및 Object를 제외한 Variant 내의 모든 유형은 ``null``가 **될 수 없으며** "
+"항상 유효한 값을 저장해야 합니다. 따라서 Variant 내의 이러한 유형을 "
+"*nullable* 유형이라고 합니다."
+
+msgid ""
+"One of the Variant types is *Nil* which can only store the value ``null``. "
+"Therefore, it is possible for a Variant to contain the value ``null``, even "
+"though all Variant types excluding Nil and Object are non-nullable."
+msgstr ""
+"One of the Variant types is *Nil* which can only store the value ``null``. 따"
+"라서 Nil 및 Object를 제외한 모든 Variant 유형이 Null을 허용하지 않더라도 "
+"Variant에 ``null`` 값이 포함될 수 있습니다."
 
 msgid "References"
 msgstr "참조"
@@ -33,5 +118,164 @@ msgstr "다음 유형은 변종으로 사용 가능합니다:"
 msgid "Type"
 msgstr "유형"
 
+msgid "Notes"
+msgstr "메모"
+
+msgid "Nil (can only store ``null``)"
+msgstr "없음(``null``만 저장할 수 있음)"
+
+msgid "Nullable type"
+msgstr "명명된 타입"
+
+msgid ":ref:`class_bool`"
+msgstr ":ref:`bool <class_bool>`"
+
+msgid ":ref:`class_int`"
+msgstr ":ref:`int <class_int>`"
+
+msgid ":ref:`class_float`"
+msgstr ":ref:`float <class_float>`"
+
+msgid ":ref:`class_string`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ":ref:`class_vector2`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ":ref:`class_vector2i`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ":ref:`class_rect2`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+msgid "2D counterpart of AABB"
+msgstr "AABB의 2D 대응물"
+
+msgid ":ref:`class_rect2i`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+msgid ":ref:`class_vector3`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ":ref:`class_vector3i`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ":ref:`class_transform2d`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+msgid ":ref:`class_vector4`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ":ref:`class_vector4i`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ":ref:`class_plane`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ":ref:`class_quaternion`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+msgid ":ref:`class_aabb`"
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "3D counterpart of Rect2"
+msgstr "Rect2의 3D 대응물"
+
+msgid ":ref:`class_basis`"
+msgstr ":ref:`Basis <class_Basis>`"
+
+msgid ":ref:`class_transform3d`"
+msgstr ":ref:`Transform <class_Transform>`"
+
+msgid ":ref:`class_projection`"
+msgstr ":ref:`Object <class_Object>`"
+
 msgid ":ref:`class_color`"
 msgstr ":ref:`class_color`"
+
+msgid ":ref:`class_stringname`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ":ref:`class_nodepath`"
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ":ref:`class_rid`"
+msgstr ":ref:`int <class_int>`"
+
+msgid ":ref:`class_object`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid ":ref:`class_callable`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ":ref:`class_signal`"
+msgstr ":ref:`doc_signals`"
+
+msgid ":ref:`class_dictionary`"
+msgstr ":ref:`Dictionary <class_Dictionary>`"
+
+msgid ":ref:`class_array`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedbytearray`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedint32array`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedint64array`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedfloat32array`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedfloat64array`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedstringarray`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ":ref:`class_packedvector2array`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ":ref:`class_packedvector3array`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ":ref:`class_packedcolorarray`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid ":ref:`class_packedvector4array`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid "Containers: Array and Dictionary"
+msgstr "컨테이너: 배열 및 사전"
+
+msgid ""
+"Both :ref:`class_array` and :ref:`class_dictionary` are implemented using "
+"variants. A Dictionary can match any datatype used as key to any other "
+"datatype. An Array just holds an array of Variants. Of course, a Variant can "
+"also hold a Dictionary or an Array inside, making it even more flexible."
+msgstr ""
+":ref:`class_array` 및 :ref:`class_dictionary`는 모두 변형을 사용하여 구현됩니"
+"다. 사전은 키로 사용되는 모든 데이터 유형을 다른 데이터 유형과 일치시킬 수 있"
+"습니다. 배열은 변형 배열을 보유합니다. 물론 Variant는 Dictionary나 Array를 내"
+"부에 담을 수도 있어 훨씬 더 유연합니다."
+
+msgid ""
+"Modifications to a container will modify all references to it. A :ref:`Mutex "
+"<doc_core_concurrency_types>` should be created to lock it if :ref:`multi-"
+"threaded access <doc_using_multiple_threads>` is desired."
+msgstr ""
+"컨테이너를 수정하면 해당 컨테이너에 대한 모든 참조가 수정됩니다. :ref:`Mutex "
+"<doc_core_concurrency_types>`을 생성하여 :ref:`다중 스레드 액세스 "
+"<doc_using_multiple_threads>`를 원하는 경우 잠그도록 해야 합니다."
+
+msgid ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"

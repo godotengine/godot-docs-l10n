@@ -38,6 +38,13 @@ msgstr ""
 "ハードウェアおよびソフトウェアのバージョン要件に関する情報"
 "は、 :ref:`doc_system_requirements` を参照してください。"
 
+msgid ""
+"For information about console support, see the `Godot website <https://"
+"godotengine.org/consoles/>`_."
+msgstr ""
+"コンソール対応に関する情報は、\\`Godot Webサイト<https://godotengine.org/"
+"consoles/>`_\\をご覧ください。"
+
 msgid "**Can run both the editor and exported projects:**"
 msgstr "**エディタとエクスポートしたプロジェクトの両方を実行可能:**"
 
@@ -1178,6 +1185,9 @@ msgstr ""
 msgid "Visual shader editor."
 msgstr "ビジュアルシェーダーエディタ。"
 
+msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
+msgstr ":ref:`カスタムのインポート用プラグイン <doc_import_plugins>` に対応。"
+
 msgid "Scripting"
 msgstr "スクリプト"
 
@@ -1202,7 +1212,7 @@ msgstr ""
 "ベクトルやトランスフォームといった、多くの2Dや3D、4Dの線形代数データ型。"
 
 msgid ":ref:`GDScript: <doc_gdscript>`"
-msgstr ":ref:`GDScript: <doc_gdscript>`"
+msgstr ":ref:`GDスクリプト: <doc_gdscript>`"
 
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript_reference>` "
@@ -1214,8 +1224,8 @@ msgstr ""
 msgid ""
 "Syntax inspired by Python. However, GDScript is **not** based on Python."
 msgstr ""
-"Pythonにインスパイアされた文法。 しかし、GDScript は Python を基にしてはいま"
-"せん。"
+"Pythonにインスパイアされた文法。 しかし、GDScript は Python を基に**してはい"
+"ません**。"
 
 msgid "Syntax highlighting is provided on GitHub."
 msgstr "GitHubでのシンタックスハイライトに対応。"
@@ -1355,6 +1365,13 @@ msgstr ""
 
 msgid "Audio input to record microphones."
 msgstr "マイクで録音するためのオーディオ入力。"
+
+msgid ""
+":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
+"engines."
+msgstr ""
+":ref:`Text to speech <doc_text_to_speech>` プラットフォームが提供するTTSエン"
+"ジンを使えます。"
 
 msgid "MIDI input."
 msgstr "MIDI 入力。"
@@ -1584,6 +1601,20 @@ msgstr "国際化"
 msgid "Full support for Unicode including emoji."
 msgstr "絵文字を含むUnicodeに完全対応。"
 
+msgid "Support for loading system fonts on Windows, macOS, and Linux."
+msgstr ""
+"GodotはWindows、macOS、およびLinuxでのシステムフォントの読み込みに対応してい"
+"ます。"
+
+msgid ""
+"By default, system fonts are used as a fallback to display unsupported "
+"characters. This allows proper display of multilingual text without having "
+"to bundle large font files with a project."
+msgstr ""
+"デフォルトでは、サポートされていない文字を表示するための代替手段としてシステ"
+"ムフォントが使用されます。これにより、大きなフォントファイルをプロジェクトに"
+"同梱することなく、多言語テキストを適切に表示できます。"
+
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
@@ -1600,6 +1631,9 @@ msgid ""
 msgstr ""
 "プロジェクト内の GUI 要素中で自動的にローカライズされた文字列を使うか、 "
 "``tr()`` 関数を使ってください。"
+
+msgid "Support for pluralization and translation contexts."
+msgstr "複数形の翻訳、および文脈に沿った翻訳のサポート。"
 
 msgid ""
 "Support for :ref:`bidirectional typesetting "
@@ -1632,6 +1666,13 @@ msgid "Change the window title and icon."
 msgstr "ウィンドウのタイトルおよびアイコンの変更。"
 
 msgid ""
+"Create transparent windows to use as overlays, with polygon-based mouse "
+"passthrough support."
+msgstr ""
+"ポリゴンベースのマウスパススルーに対応した、オーバーレイとして使用できる透明"
+"なウィンドウを作成します。"
+
+msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
 "注意を求める (ほとんどのプラットフォームではタイトルバーが点滅します)。"
@@ -1650,8 +1691,32 @@ msgstr ""
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "ボーダーレスウィンドウ (全画面または非全画面)。"
 
+msgid "Keep a window always on top."
+msgstr "ウィンドウを常に最前面に表示する機能。"
+
+msgid "Make a window ignore focus (useful for overlays)."
+msgstr "ウィンドウがフォーカスを無視するようにする（オーバーレイに便利）。"
+
+msgid ""
+"Declare a window as a popup (hidden from task switcher) or exclusive "
+"(prevents interacting with other windows from the same process)."
+msgstr ""
+"ウィンドウをポップアップ（タスクスイッチャーから非表示）または排他ウィンドウ"
+"（同じプロセス内の他のウィンドウとのやり取りを禁止）として宣言します。"
+
+msgid "Native file dialog support on Windows, macOS, Linux, and Android."
+msgstr ""
+"Godotは、Windows、macOS、Linux、およびAndroidにおけるOS標準のファイルダイアロ"
+"グに対応しています。"
+
+msgid "Tray icon support on Windows and macOS."
+msgstr "WindowsおよびmacOSでのトレイアイコンのサポート。"
+
 msgid "Global menu integration on macOS."
 msgstr "macOS でのグローバルメニュー統合。"
+
+msgid "Client-side decorations on macOS."
+msgstr "macOSにおけるクライアントサイドのデコレーション。"
 
 msgid ""
 "Execute commands in a blocking or non-blocking manner (including running "
@@ -1670,6 +1735,9 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "カスタムのコマンドライン引数をパース。"
 
+msgid "Support for screen readers on Windows, macOS, and Linux."
+msgstr "Windows、macOS、およびLinuxにおけるスクリーンリーダーのサポート。"
+
 msgid ""
 "Any Godot binary (editor or exported project) can be :ref:`used as a "
 "headless server <doc_exporting_for_dedicated_servers>` by starting it with "
@@ -1680,6 +1748,12 @@ msgstr ""
 "ンドライン引数``--headless``で始めることで :ref:`headlessサーバーとして扱えま"
 "す<doc_exporting_for_dedicated_servers>`。これにより GPU やディスプレイサー"
 "バー無しでエンジンを起動できます."
+
+msgid ""
+"See :ref:`doc_creating_applications` for details on using these features."
+msgstr ""
+"これらの機能の使用方法の詳細については、 :ref:`doc_creating_applications` を"
+"参照してください。"
 
 msgid "Mobile"
 msgstr "モバイル"

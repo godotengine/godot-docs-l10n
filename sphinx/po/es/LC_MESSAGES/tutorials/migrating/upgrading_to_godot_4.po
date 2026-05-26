@@ -28,6 +28,14 @@ msgid "Advantages of upgrading"
 msgstr "Ventajas de actualizar"
 
 msgid ""
+"Along with the `new features present in 4.0 <https://godotengine.org/article/"
+"godot-4-0-sets-sail>`__, upgrading gives the following advantages:"
+msgstr ""
+"Junto con `las nuevas caracteristicas presentadas en la 4.0 <https://"
+"godotengine.org/article/godot-4-0-sets-sail>`__, actualizar da las "
+"siguientes ventajas:"
+
+msgid ""
 "Many bugs are fixed in 4.0, but cannot be resolved in 3.x for various "
 "reasons (such as graphics API differences or backwards compatibility)."
 msgstr ""
@@ -950,7 +958,7 @@ msgstr ""
 "de las situaciones."
 
 msgid "AcceptDialog's ``set_autowrap()`` is now ``set_autowrap_mode()``."
-msgstr "AcceptDialog ``set_autowrap()`` es ahora ``set_autowrap_mode()``."
+msgstr "``set_autowrap()`` de AcceptDialog es ahora ``set_autowrap_mode()``."
 
 msgid ""
 "AnimationNode's ``process()`` is now ``_process()`` (note the leading "
@@ -970,13 +978,15 @@ msgid "AStar2D and AStar3D's ``get_points()`` is now ``get_points_id()``."
 msgstr "AStar2D y AStar3D ``get_points()`` es ahora ``get_points_id()``."
 
 msgid "BaseButton's ``set_event()`` is now ``set_shortcut()``."
-msgstr "BaseButton ``set_event()`` es ahora ``set_shortcut()``."
+msgstr "``set_event()`` de BaseButton es ahora ``set_shortcut()``."
 
 msgid "Camera2D's ``get_v_offset()`` is now ``get_drag_vertical_offset()``."
-msgstr "Camera2D ``get_v_offset()`` es ahora ``get_drag_vertical_offset()``."
+msgstr ""
+"``get_v_offset()`` de Camera2D es ahora ``get_drag_vertical_offset()``."
 
 msgid "Camera2D's ``set_v_offset()`` is now ``set_drag_vertical_offset()``."
-msgstr "Camera2D ``set_v_offset()`` es ahora ``set_drag_vertical_offset()``."
+msgstr ""
+"``set_v_offset()`` de Camera2D es ahora ``set_drag_vertical_offset()``."
 
 msgid "CanvasItem's ``update()`` is now ``queue_redraw()``."
 msgstr ""
@@ -995,46 +1005,25 @@ msgstr ""
 "(nota el símbolo inicial, el cual denota que es un método virtual)."
 
 msgid "ENetMultiplayerPeer's ``get_peer_port()`` is now ``get_peer()``."
-msgstr "ENetMultiplayerPeer ``get_peer_port()`` es ahora ``get_peer()``."
+msgstr "``get_peer_port()`` de ENetMultiplayerPeer es ahora ``get_peer()``."
 
 msgid "FileDialog's ``get_mode()`` is now ``get_file_mode()``."
-msgstr "FileDialog ``get_mode()`` es ahora ``get_file_mode()``."
+msgstr "``get_mode()`` de FileDialog es ahora ``get_file_mode()``."
 
 msgid "FileDialog's ``set_mode()`` is now ``set_file_mode()``."
-msgstr "FileDialog ``set_mode()`` es ahora ``set_file_mode()``."
+msgstr "``set_mode()`` de FileDialog es ahora ``set_file_mode()``."
 
 msgid "GraphNode's ``get_offset()`` is now ``get_position_offset()``."
-msgstr "GraphNode ``get_offset()`` es ahora ``get_position_offset()``."
+msgstr "``get_offset()`` de FileDialog es ahora ``get_position_offset()``."
 
 msgid "GridMap's ``map_to_world()`` is now ``map_to_local()``."
-msgstr "GridMap ``map_to_world()`` es ahora ``map_to_local()``."
+msgstr "``map_to_world()`` de GridMap es ahora ``map_to_local()``."
 
 msgid "GridMap's ``world_to_map()`` is now ``local_to_map()``."
-msgstr "GridMap ``world_to_map()`` es ahora ``local_to_map()``."
+msgstr "``world_to_map()`` de GridMap es ahora ``local_to_map()``."
 
 msgid "Image's ``get_rect()`` is now ``get_region()``."
-msgstr "Image ``get_rect()`` es ahora ``get_region()``."
-
-msgid "ItemList's ``get_v_scroll()`` is now ``get_v_scroll_bar()``."
-msgstr "ItemList ``get_v_scroll()`` es ahora ``get_v_scroll_bar()``."
-
-msgid ""
-"MultiPlayerAPI's ``get_network_connected_peers()`` is now ``get_peers()``."
-msgstr ""
-"MultiPlayerAPI ``get_network_connected_peers()`` es ahora ``get_peers()``."
-
-msgid "MultiPlayerAPI's ``get_network_peer()`` is now ``get_peer()``."
-msgstr "MultiPlayerAPI ``get_network_peer()`` es ahora ``get_peer()``."
-
-msgid ""
-"MultiPlayerAPI's ``get_network_unique_id()`` is now ``get_unique_id()``."
-msgstr ""
-"MultiPlayerAPI ``get_network_unique_id()`` es ahora ``get_unique_id()``."
-
-msgid ""
-"MultiPlayerAPI's ``has_network_peer()`` is now ``has_multiplayer_peer()``."
-msgstr ""
-"MultiPlayerAPI ``has_network_peer()`` es ahora ``has_multiplayer_peer()``."
+msgstr "``get_rect()`` de Image es ahora ``get_region()``."
 
 msgid ""
 "MultiplayerAPI's ``is_refusing_new_network_connections()`` is now "
@@ -1043,35 +1032,12 @@ msgstr ""
 "``is_refusing_new_network_connections()`` de MultiplayerAPI ahora es "
 "``is_refusing_new_connections()``."
 
-msgid "PacketPeerUDP's ``is_listening()`` is now ``is_bound()``."
-msgstr "PacketPeerUDP ``is_listening()`` es ahora ``is_bound()``."
-
-msgid "PacketPeerUDP's ``listen()`` is now ``bind()``."
-msgstr "PacketPeerUDP ``listen()`` es ahora ``bind()``."
-
-msgid ""
-"ParticleProcessMaterial's ``set_flag()`` is now ``set_particle_flag()``."
-msgstr ""
-"ParticleProcessMaterial ``set_flag()`` es ahora ``set_particle_flag()``."
-
 msgid ""
 "ResourceFormatLoader's ``get_dependencies()`` is now ``_get_dependencies()`` "
 "(note the leading underscore, which denotes a virtual method)."
 msgstr ""
 "ResourceFormatLoader ``get_dependencies()`` es ahora ``_get_dependencies()`` "
 "(nota el símbolo inicial, el cual denota que es un método virtual)."
-
-msgid "SceneTree's ``change_scene()`` is now ``change_scene_to_file()``."
-msgstr "SceneTree ``change_scene()`` es ahora ``change_scene_to_file()``."
-
-msgid "Shortcut's ``is_valid()`` is now ``has_valid_event()``."
-msgstr "Shortcut ``is_valid()`` es ahora ``has_valid_event()``."
-
-msgid "TileMap's ``map_to_world()`` is now ``map_to_local()``."
-msgstr "TileMap ``map_to_world()`` es ahora ``map_to_local()``."
-
-msgid "TileMap's ``world_to_map()`` is now ``local_to_map()``."
-msgstr "TileMap ``world_to_map()`` es ahora ``local_to_map()``."
 
 msgid ""
 "Transform2D's ``xform()`` is ``mat * vec`` and ``xform_inv()`` is ``vec * "
@@ -1084,7 +1050,7 @@ msgid "XRPositionalTracker's ``get_type()`` is now ``get_tracker_type()``."
 msgstr "``get_type()`` de XRPositionalTracker ahora es ``get_tracker_type()``."
 
 msgid "**Properties**"
-msgstr "Propiedades"
+msgstr "**Propiedades**"
 
 msgid ""
 "If a property is listed here, its associated getter and setter methods must "
@@ -1102,10 +1068,7 @@ msgid "AudioServer's ``device`` is now ``output_device``."
 msgstr "``device`` de AudioServer ahora es ``output_device``."
 
 msgid "Camera3D's ``znear`` is now ``near``"
-msgstr "El ``znear`` de Camera3D ahora es ``near``"
-
-msgid "Control's ``margin`` is now ``offset``."
-msgstr "Control ``margin`` es ahora ``offset``."
+msgstr "``znear`` de Camera3D ahora es ``near``"
 
 msgid "InputEventMouseButton's ``doubleclick`` is now ``double_click``."
 msgstr "``doubleclick`` de InputEventMouseButton ahora es ``double_click``."
@@ -1125,15 +1088,11 @@ msgstr "El ``meta`` de InputEventWithModifiers ahora es ``meta_pressed``."
 msgid "InputEventWithModifiers's ``shift`` is now ``shift_pressed``."
 msgstr "El ``shift`` de InputEventWithModifiers ahora es ``shift_pressed``."
 
-msgid "Label's ``percent_visible`` is now ``visible_ratio``."
-msgstr "Label ``percent_visible`` es ahora ``visible_ratio``."
+msgid "Node's ``filename`` is now ``scene_file_path``."
+msgstr "El ``filename`` de Node es ahora ``scene_file_path``."
 
-msgid ""
-"MultiPlayerAPI's ``refuse_new_network_connections`` is now "
-"``refuse_new_connections``."
-msgstr ""
-"MultiPlayerAPI ``refuse_new_network_connections`` es ahora "
-"``refuse_new_connections``."
+msgid "PathFollow2D's ``rotate`` is now ``rotates``."
+msgstr "El ``rotate`` de PathFollow2D es ahora ``rotates``."
 
 msgid "PathFollow2D and PathFollow3D's ``offset`` is now ``progress``."
 msgstr "PathFollow2D y PathFollow3D ``offset`` es ahora ``progress``."
@@ -1143,9 +1102,6 @@ msgstr "El ``extents`` de RectangleShape2D ahora es ``size``"
 
 msgid "TextureProgressBar's ``percent_visible`` is now ``show_percentage``."
 msgstr "TextureProgressBar ``percent_visible`` es ahora ``show_percentage``."
-
-msgid "Theme's ``off`` is now ``unchecked``."
-msgstr "La opción ``desactivada`` del tema ahora está ``desmarcada``."
 
 msgid ""
 "The ``extents`` property on CSG nodes and VoxelGI will have to be replaced "
@@ -1172,9 +1128,6 @@ msgstr "Enumeraciones"
 
 msgid "CPUParticles2D's ``FLAG_MAX`` is now ``PARTICLE_FLAG_MAX``."
 msgstr "CPUParticles2D ``FLAG_MAX`` es ahora ``PARTICLE_FLAG_MAX``."
-
-msgid "**Signals**"
-msgstr "Señales"
 
 msgid "FileSystemDock's ``instantiate`` is now ``instance``."
 msgstr "FileSystemDock ``instantiate`` es ahora ``instance``."
@@ -1292,10 +1245,10 @@ msgstr ""
 "individuales, en lugar de en los archivos de textura mismos."
 
 msgid "``hint_albedo`` is now ``source_color``."
-msgstr "``hint_albedo`` es ahora``source_color``."
+msgstr "``hint_albedo`` es ahora ``source_color``."
 
 msgid "``hint_color`` is now ``source_color``."
-msgstr "``hint_color`` es ahora``source_color``."
+msgstr "``hint_color`` es ahora ``source_color``."
 
 msgid ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
 msgstr ""

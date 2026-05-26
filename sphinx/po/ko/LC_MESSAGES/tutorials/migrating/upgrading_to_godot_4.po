@@ -11,14 +11,482 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 3 to Godot 4"
+msgstr "Godot 3에서 Godot 4로 업그레이드"
+
+msgid "Should I upgrade to Godot 4?"
+msgstr "Godot 4로 업그레이드해야 하나요?"
+
+msgid ""
+"Before beginning the upgrade process, it's worth thinking about the "
+"advantages and disadvantages that upgrading would bring to your project."
+msgstr ""
+"업그레이드 프로세스를 시작하기 전에 업그레이드로 인해 프로젝트에 가져올 장점"
+"과 단점에 대해 생각해 보는 것이 좋습니다."
+
 msgid "Advantages of upgrading"
 msgstr "업그레이드의 장점"
+
+msgid ""
+"Along with the `new features present in 4.0 <https://godotengine.org/article/"
+"godot-4-0-sets-sail>`__, upgrading gives the following advantages:"
+msgstr ""
+"`godot-cpp 저장소 <https://github.com/GodotNativeTools/godot-cpp>`_ 의 사본."
+
+msgid ""
+"Many bugs are fixed in 4.0, but cannot be resolved in 3.x for various "
+"reasons (such as graphics API differences or backwards compatibility)."
+msgstr ""
+"4.0에서는 많은 버그가 수정되었지만 3.x에서는 여러 가지 이유로(예: 그래픽 API "
+"차이 또는 이전 버전과의 호환성) 해결할 수 없습니다."
+
+msgid ""
+"4.x will enjoy a longer :ref:`support period <doc_release_policy>`. Godot "
+"3.x will continue to be supported for some time after 4.0 is released, but "
+"it will eventually stop receiving support."
+msgstr ""
+"4.x에서는 :ref:`지원 기간 <doc_release_policy>`이 더 길어집니다. Godot 3.x는 "
+"4.0이 출시된 후에도 한동안 계속 지원되지만 결국 지원을 중단하게 됩니다."
+
+msgid ""
+"See :ref:`doc_docs_changelog` for a list of pages documenting new features "
+"in Godot 4.0, and :ref:`doc_list_of_features` for a list of all features in "
+"Godot."
+msgstr ""
+"Godot 4.0의 새로운 기능을 문서화한 페이지 목록은 :ref:`doc_docs_changelog`"
+"를, Godot의 모든 기능 목록은 :ref:`doc_list_of_features`를 참조하세요."
 
 msgid "Disadvantages of upgrading"
 msgstr "업그레이드의 단점"
 
+msgid ""
+"If you don't *need* any features present in Godot 4.x, you may want to stay "
+"on Godot 3.x for the following reasons:"
+msgstr ""
+"Godot 4.x에 있는 어떤 기능도 *필요*하지 않다면 다음과 같은 이유로 Godot 3.x"
+"를 계속 사용하는 것이 좋습니다:"
+
+msgid ""
+"Godot 4's baseline hardware requirements (such as memory usage) are slightly "
+"higher, both for the editor and exported projects. This was required for the "
+"implementation of some core optimizations."
+msgstr ""
+"Godot 4의 기본 하드웨어 요구 사항(예: 메모리 사용량)은 편집기와 내보낸 프로젝"
+"트 모두에서 약간 더 높습니다. 이는 일부 핵심 최적화를 구현하는 데 필요했습니"
+"다."
+
+msgid ""
+"Since Godot 4 includes more features than Godot 3, Godot 4's binary size for "
+"exported projects is larger. While this can be mitigated by :ref:`optimizing "
+"a build for size <doc_optimizing_for_size>`, a 4.0 build with a given set of "
+"enabled modules will remain larger compared to a 3.x build with the same "
+"modules. This can be an issue for :ref:`exporting to the Web "
+"<doc_exporting_for_web>`, as binary size directly influences how fast the "
+"engine can initialize (regardless of download speed)."
+msgstr ""
+"Godot 4에는 Godot 3보다 더 많은 기능이 포함되어 있으므로 내보낸 프로젝트에 대"
+"한 Godot 4의 바이너리 크기가 더 큽니다. :ref:`크기에 맞게 빌드 최적화 "
+"<doc_optimizing_for_size>`를 통해 이 문제를 완화할 수 있지만, 특정 활성화된 "
+"모듈 세트가 포함된 4.0 빌드는 동일한 모듈이 포함된 3.x 빌드에 비해 더 큰 상태"
+"로 유지됩니다. 이는 :ref:`웹 <doc_exporting_for_web>`으로 내보내기에 문제가 "
+"될 수 있습니다. 바이너리 크기는 다운로드 속도에 관계없이 엔진이 초기화되는 속"
+"도에 직접적인 영향을 미치기 때문입니다."
+
+msgid ""
+"Godot 4 does not and will not have support for GLES2 rendering. (There is "
+"still support for GLES3 rendering using the new Compatibility renderer, "
+"which means that devices without Vulkan support can still run Godot 4.)"
+msgstr ""
+"Godot 4는 GLES2 렌더링을 지원하지 않으며 앞으로도 지원하지 않을 것입니다. (새"
+"로운 호환성 렌더러를 사용하는 GLES3 렌더링은 여전히 지원됩니다. 이는 Vulkan"
+"을 지원하지 않는 장치에서도 여전히 Godot 4를 실행할 수 있음을 의미합니다.)"
+
+msgid ""
+"If you are targeting **very** old hardware such as Intel Sandy Bridge (2nd "
+"generation) integrated graphics, this will prevent the project from running "
+"on such hardware after upgrading. `Software OpenGL implementations <https://"
+"github.com/pal1000/mesa-dist-win>`__ can be used to bypass this limitation, "
+"but they're too slow for gaming."
+msgstr ""
+"Intel Sandy Bridge(2세대) 통합 그래픽과 같은 **매우** 오래된 하드웨어를 대상"
+"으로 하는 경우 업그레이드 후 해당 하드웨어에서 프로젝트가 실행되지 않습니다. "
+"`소프트웨어 OpenGL 구현 <https://github.com/pal1000/mesa-dist-win>`__을 사용"
+"하면 이 제한을 우회할 수 있지만 게임을 하기에는 너무 느립니다."
+
+msgid "Caveats of upgrading"
+msgstr "업그레이드 주의사항"
+
+msgid ""
+"**Since Godot 4 is a complete rewrite in many aspects, some features have "
+"unfortunately been lost in the process.** Some of these features may be "
+"restored in future Godot releases:"
+msgstr ""
+"**Godot 4는 여러 측면에서 완전히 재작성되었기 때문에 불행하게도 일부 기능이 "
+"그 과정에서 사라졌습니다.** 이러한 기능 중 일부는 향후 Godot 릴리스에서 복원"
+"될 수 있습니다:"
+
+msgid ""
+"Bullet physics was removed in favor of GodotPhysics. This only affects 3D "
+"projects that used the default physics engine (which was Bullet) and didn't "
+"manually change it to GodotPhysics. There are no plans to re-add Bullet "
+"physics in core, but a third-party add-on could be created for it thanks to "
+"GDExtension."
+msgstr ""
+"GodotPhysics를 위해 총알 물리학이 제거되었습니다. 이는 기본 물리 엔진(Bullet)"
+"을 사용하고 수동으로 GodotPhysics로 변경하지 않은 3D 프로젝트에만 영향을 미칩"
+"니다. 코어에 Bullet 물리학을 다시 추가할 계획은 없지만 GDExtension 덕분에 이"
+"를 위한 타사 추가 기능을 만들 수 있습니다."
+
+msgid ""
+"By default, rendering in 2D is no longer performed in HDR, which means "
+"\"overbright\" modulate values have no visible effect. Since Godot 4.2, you "
+"can enable the project setting :ref:`HDR "
+"2D<class_ProjectSettings_property_rendering/viewport/hdr_2d>` to perform 2D "
+"rendering in HDR. See "
+"also :ref:`doc_environment_and_post_processing_using_glow_in_2d`."
+msgstr ""
+"기본적으로 2D 렌더링은 더 이상 HDR에서 수행되지 않습니다. 즉, \"과도하게 밝은"
+"\" 변조 값은 시각적 효과가 없습니다. Godot 4.2부터 프로젝트 설정 :ref:`HDR "
+"2D<class_ProjectSettings_property_rendering/viewport/hdr_2d>`를 활성화하여 "
+"HDR에서 2D 렌더링을 수행할 수 있습니"
+"다. :ref:`doc_environment_and_post_processing_using_glow_in_2d`도 참조하세요."
+
+msgid ""
+"While rendering still happens in HDR in 3D when using the Forward+ or Mobile "
+"renderers, Viewports cannot return HDR data anymore. This is planned to be "
+"restored at some point in the future."
+msgstr ""
+"Forward+ 또는 모바일 렌더러를 사용할 때 3D의 HDR에서 렌더링이 계속 발생하는 "
+"동안 뷰포트는 더 이상 HDR 데이터를 반환할 수 없습니다. 이는 향후 어느 시점에 "
+"복원될 예정입니다."
+
+msgid ""
+"Mono was replaced by .NET 6. This means exporting C# projects to Android, "
+"iOS and HTML5 is no longer supported for now. Exporting C# projects to "
+"desktop platforms is still supported, and as of 4.2 there's experimental "
+"support for exporting to mobile platforms. Support for exporting C# projects "
+"to more platforms will be restored in future 4.x releases as upstream "
+"support improves."
+msgstr ""
+"Mono는 .NET 6으로 대체되었습니다. 이는 C# 프로젝트를 Android, iOS 및 HTML5로 "
+"내보내는 것이 현재 더 이상 지원되지 않음을 의미합니다. C# 프로젝트를 데스크"
+"톱 플랫폼으로 내보내는 기능은 계속 지원되며, 4.2부터 모바일 플랫폼으로 내보내"
+"기 위한 실험적 지원이 제공됩니다. 업스트림 지원이 향상됨에 따라 C# 프로젝트"
+"를 더 많은 플랫폼으로 내보내는 지원은 향후 4.x 릴리스에서 복원될 예정입니다."
+
+msgid ""
+"You can find a more complete list of functional regressions by searching for "
+"`issues labeled \"regression\" but not \"bug\" on GitHub <https://github.com/"
+"godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3Aregression+-"
+"label%3Abug>`__."
+msgstr ""
+"`Github에서 열린 HTML5 이슈 목록 <https://github.com/godotengine/godot/"
+"issues?q=is:open+is:issue+label:platform:html5>`__\\ 을 확인해서 관심있는 기"
+"능에 아직 이슈가 있는지 찾아보세요. 기능이 아직 없다면 하나를 열어서 관심있"
+"는 기능을 이야기를 해보세요."
+
+msgid "Preparing before the upgrade (optional)"
+msgstr "프로젝트 준비하기"
+
+msgid ""
+"If you want to be ready to upgrade to Godot 4 in the future, consider "
+"using :ref:`class_Tweener` and the :ref:`class_Time` singleton in your "
+"project. These classes are both available in Godot 3.5 and later."
+msgstr ""
+"나중에 Godot 4로 업그레이드할 준비를 하고 싶다면 프로젝트에"
+"서 :ref:`class_Tweener` 및 :ref:`class_Time` 싱글톤 사용을 고려해보세요. 이 "
+"클래스는 둘 다 Godot 3.5 이상에서 사용할 수 있습니다."
+
+msgid ""
+"This way, you won't be relying on the deprecated Tween node and OS time "
+"functions, both of which are removed in Godot 4.0."
+msgstr ""
+"이렇게 하면 Godot 4.0에서 제거된 더 이상 사용되지 않는 Tween 노드 및 OS 시간 "
+"기능에 의존하지 않게 됩니다."
+
+msgid ""
+"It's also a good idea to rename external shaders so that their extension is "
+"``.gdshader`` instead of ``.shader``. Godot 3.x supports both extensions, "
+"but only ``.gdshader`` is supported in Godot 4.0."
+msgstr ""
+"확장자가 ``.shader`` 대신 ``.gdshader``가 되도록 외부 셰이더의 이름을 바꾸는 "
+"것도 좋은 생각입니다. Godot 3.x는 두 확장을 모두 지원하지만 Godot 4.0에서는 "
+"``.gdshader``만 지원됩니다."
+
+msgid "Running the project upgrade tool"
+msgstr "프로젝트 경로 설정하기"
+
+msgid ""
+"**Make a full backup of your project** before upgrading! The project upgrade "
+"tool will *not* perform any backups of the project that is being upgraded."
+msgstr ""
+"**업그레이드하기 전에 프로젝트 전체를 백업**하세요! 프로젝트 업그레이드 도구"
+"는 업그레이드 중인 프로젝트의 백업을 *수행하지* 않습니다."
+
+msgid ""
+"You can backup a project by using version control, or by copying the project "
+"folder to another location."
+msgstr ""
+"버전 관리를 사용하거나 프로젝트 폴더를 다른 위치에 복사하여 프로젝트를 백업"
+"할 수 있습니다."
+
+msgid "Using the Project Manager"
+msgstr "프로젝트 매니저"
+
 msgid "To use the project upgrade tool:"
 msgstr "프로젝트 업그레이드 도구 사용하기:"
+
+msgid "Open the Godot 4 Project Manager."
+msgstr "프로젝트 매니저"
+
+msgid ""
+"Import the Godot 3.x project using the **Import** button, or use the "
+"**Scan** button to find the project within a folder."
+msgstr ""
+"**가져오기** 버튼을 사용하여 Godot 3.x 프로젝트를 가져오거나 **스캔** 버튼을 "
+"사용하여 폴더 내에서 프로젝트를 찾으세요."
+
+msgid ""
+"Double-click the imported project (or select the project then choose "
+"**Edit**)."
+msgstr ""
+"가져온 프로젝트를 두 번 클릭합니다(또는 프로젝트를 선택한 다음 **편집** 선"
+"택)."
+
+msgid ""
+"You will see a dialog appearing with two options: **Convert project.godot "
+"Only** and **Convert Full Project**. After ensuring your project is backed "
+"up (see the above warning), choose **Convert Full Project**. **Convert "
+"project.godot Only** is intended to be used for advanced use cases *only*, "
+"in case the conversion tool fails."
+msgstr ""
+"**Convert project.godot Only** 및 **Convert Full 프로젝트**라는 두 가지 옵션"
+"이 있는 대화 상자가 표시됩니다. 프로젝트가 백업되었는지 확인한 후(위 경고 참"
+"조) **Convert Full 프로젝트**를 선택합니다. **Convert project.godot Only**는 "
+"변환 도구가 실패하는 경우 *만* 고급 사용 사례에 사용하기 위한 것입니다."
+
+msgid ""
+"Wait until the project conversion process finishes. This can take up to a "
+"few minutes for large projects with lots of scenes."
+msgstr ""
+"프로젝트 변환 프로세스가 완료될 때까지 기다리십시오. 장면이 많은 대규모 프로"
+"젝트의 경우 최대 몇 분이 걸릴 수 있습니다."
+
+msgid ""
+"When the Project Manager interface becomes available again, double-click the "
+"project (or select the project then choose **Edit**) to open it in the "
+"editor."
+msgstr ""
+"프로젝트 관리자 인터페이스를 다시 사용할 수 있게 되면 프로젝트를 두 번 클릭하"
+"여(또는 프로젝트를 선택한 다음 **편집** 선택) 편집기에서 엽니다."
+
+msgid ""
+"If you hit conversion issues due to some project files being too large or "
+"long, you can use the command line to upgrade the project (see below). This "
+"will allow you to override the converter's size limits."
+msgstr ""
+"일부 프로젝트 파일이 너무 크거나 길어서 변환 문제가 발생한 경우 명령줄을 사용"
+"하여 프로젝트를 업그레이드할 수 있습니다(아래 참조). 이렇게 하면 변환기의 크"
+"기 제한을 무시할 수 있습니다."
+
+msgid "Using the command line"
+msgstr "명령줄에서 내보내기"
+
+msgid ""
+"To use the project upgrade tool from the :ref:`command line "
+"<doc_command_line_tutorial>`, it's recommended to validate the project "
+"conversion by running the Godot editor binary with the following arguments:"
+msgstr ""
+":ref:`명령줄 <doc_command_line_tutorial>`에서 프로젝트 업그레이드 도구를 사용"
+"하려면 다음 인수를 사용하여 Godot 편집기 바이너리를 실행하여 프로젝트 변환을 "
+"검증하는 것이 좋습니다:"
+
+msgid ""
+"If the list of planned upgrades looks good to you, run the following command "
+"on the Godot editor binary to upgrade project files:"
+msgstr ""
+"계획된 업그레이드 목록이 마음에 든다면 Godot 편집기 바이너리에서 다음 명령을 "
+"실행하여 프로젝트 파일을 업그레이드하세요:"
+
+msgid ""
+"``[<max_file_kb>]`` and ``[<max_line_size>]`` are *optional* arguments to "
+"specify the maximum size of files to be converted (in kilobytes and lines). "
+"The default limits are 4 MB and 100,000 lines respectively. If a file hits "
+"either of those limits, it will not be upgraded by the project converter. "
+"This is useful to prevent large resources from slowing down the upgrade to a "
+"crawl."
+msgstr ""
+"``[<max_file_kb>]`` 및 ``[<max_line_size>]``는 변환할 파일의 최대 크기(킬로바"
+"이트 및 라인 단위)를 지정하는 *선택적* 인수입니다. 기본 제한은 각각 4MB와 "
+"100,000줄입니다. 파일이 이러한 제한 중 하나에 도달하면 프로젝트 변환기에 의"
+"해 업그레이드되지 않습니다. 이는 대규모 리소스로 인해 크롤링으로의 업그레이"
+"드 속도가 느려지는 것을 방지하는 데 유용합니다."
+
+msgid ""
+"If you still want large files to be converted by the project upgrade tool, "
+"increase the size limits when running the project upgrade tool. For example, "
+"running the Godot editor binary with those arguments increases both limits "
+"by a 10× factor:"
+msgstr ""
+"프로젝트 업그레이드 도구를 사용하여 대용량 파일을 변환하려면 프로젝트 업그레"
+"이드 도구를 실행할 때 크기 제한을 늘리세요. 예를 들어, 해당 인수를 사용하여 "
+"Godot 편집기 바이너리를 실행하면 두 제한이 모두 10배 증가합니다:"
+
+msgid ""
+"Only Godot 3.0 and later projects can be upgraded using the project "
+"conversion tool found in the Godot 4 editor."
+msgstr ""
+"Godot 3.0 이상의 프로젝트만 Godot 4 편집기에 있는 프로젝트 변환 도구를 사용하"
+"여 업그레이드할 수 있습니다."
+
+msgid ""
+"It's recommended to ensure that your project is up-to-date with the latest "
+"3.x stable release before running the project upgrade tool."
+msgstr ""
+"프로젝트 업그레이드 도구를 실행하기 전에 프로젝트가 최신 3.x 안정 릴리스로 최"
+"신 상태인지 확인하는 것이 좋습니다."
+
+msgid "Fixing the project after running the project upgrade tool"
+msgstr "프로젝트 업그레이드 도구 실행 후 프로젝트 수정"
+
+msgid ""
+"After upgrading the project, you may notice that certain things don't look "
+"as they should. Scripts will likely contain various errors as well (possibly "
+"hundreds in large projects). This is because the project upgrade tool cannot "
+"cater to all situations. Therefore, a large part of the upgrade process "
+"remains manual."
+msgstr ""
+"프로젝트를 업그레이드한 후 특정 사항이 원하는 대로 표시되지 않는 것을 확인할 "
+"수 있습니다. 스크립트에는 다양한 오류도 포함될 가능성이 높습니다(대규모 프로"
+"젝트에서는 수백 개가 될 수 있음). 이는 프로젝트 업그레이드 도구가 모든 상황"
+"을 충족할 수 없기 때문입니다. 따라서 업그레이드 프로세스의 상당 부분이 수동으"
+"로 유지됩니다."
+
+msgid "Automatically renamed nodes and resources"
+msgstr "튜토리얼과 리소스"
+
+msgid ""
+"The list below refers to nodes which were simply renamed for consistency or "
+"clarity in Godot 4.0. The project upgrade tool renames them automatically in "
+"your scripts."
+msgstr ""
+"아래 목록은 Godot 4.0에서 일관성이나 명확성을 위해 단순히 이름이 변경된 노드"
+"를 나타냅니다. 프로젝트 업그레이드 도구는 스크립트에서 자동으로 이름을 바꿉니"
+"다."
+
+msgid ""
+"One noteworthy set of renames is 3D nodes, which all got a ``3D`` suffix "
+"added for consistency with their 2D counterparts. For example, ``Area`` is "
+"now ``Area3D``."
+msgstr ""
+"주목할 만한 이름 변경 세트 중 하나는 3D 노드이며, 모두 2D 대응 항목과의 일관"
+"성을 위해 ``3D`` 접미사가 추가되었습니다. 예를 들어, ``Area``는 이제 "
+"``Area3D``입니다."
+
+msgid ""
+"For ease of searching, this table lists all nodes and resources that were "
+"renamed and are automatically converted, excluding the ones which only "
+"involved adding a ``3D`` suffix to the old name:"
+msgstr ""
+"쉽게 검색할 수 있도록 이 표에는 이전 이름에 ``3D`` 접미사를 추가하는 것만 포"
+"함된 리소스를 제외하고 이름이 바뀌고 자동으로 변환된 모든 노드 및 리소스가 나"
+"열되어 있습니다."
+
+msgid "Old name (Godot 3.x)"
+msgstr "이전 이름(Godot 3.x)"
+
+msgid "New name (Godot 4)"
+msgstr "새 이름(Godot 4)"
+
+msgid "AnimatedSprite"
+msgstr "애니메이션"
+
+msgid "AnimatedSprite2D"
+msgstr "애니메이션Sprite2D"
+
+msgid "ARVRCamera"
+msgstr "카메라"
+
+msgid "XRCamera3D"
+msgstr "카메라"
+
+msgid "ARVRController"
+msgstr "Control"
+
+msgid "XRController3D"
+msgstr "Control"
+
+msgid "ARVRAnchor"
+msgstr "ARVR앵커"
+
+msgid "XRAnchor3D"
+msgstr "XRanchor3D"
+
+msgid "ARVRInterface"
+msgstr "ARVR인터페이스"
+
+msgid "XRInterface"
+msgstr "Godot 인터페이스"
+
+msgid "ARVROrigin"
+msgstr "ARVR오리진"
+
+msgid "XROrigin3D"
+msgstr "XRorigin3D"
+
+msgid "ARVRPositionalTracker"
+msgstr "ARVR위치 추적기"
+
+msgid "XRPositionalTracker"
+msgstr "XRPositionalTracker"
+
+msgid "ARVRServer"
+msgstr "AR/VR 서버"
+
+msgid "XRServer"
+msgstr "**Server**"
+
+msgid "BoxShape"
+msgstr "모양"
+
+msgid "BoxShape3D"
+msgstr "모양"
+
+msgid "CapsuleShape"
+msgstr "평면"
+
+msgid "CapsuleShape3D"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid "CubeMesh"
+msgstr "메시"
+
+msgid "BoxMesh"
+msgstr "메시"
+
+msgid "EditorSpatialGizmo"
+msgstr "편집기 매뉴얼"
+
+msgid "EditorNode3DGizmo"
+msgstr "EditorNode3DGizmo"
+
+msgid "EditorSpatialGizmoPlugin"
+msgstr "간단한 플러그인 만들기"
+
+msgid "EditorNode3DGizmoPlugin"
+msgstr "EditorNode3DGizmo플러그인"
+
+msgid "GIProbe"
+msgstr "타일맵 사용하기"
+
+msgid "VoxelGI"
+msgstr "복셀GI"
+
+msgid "GIProbeData"
+msgstr "GIProbe데이터"
+
+msgid "VoxelGIData"
+msgstr "복셀GI데이터"
 
 msgid "GradientTexture"
 msgstr "GradientTexture"
@@ -29,14 +497,56 @@ msgstr "GradientTexture1D"
 msgid "KinematicBody"
 msgstr "KinematicBody"
 
+msgid "CharacterBody3D"
+msgstr "캐릭터바디3D"
+
 msgid "KinematicBody2D"
 msgstr "KinematicBody2D"
+
+msgid "CharacterBody2D"
+msgstr "캐릭터바디2D"
 
 msgid "Light2D"
 msgstr "Light2D"
 
 msgid "PointLight2D"
 msgstr "PointLight2D"
+
+msgid "LineShape2D"
+msgstr "LineShape2D"
+
+msgid "WorldBoundaryShape2D"
+msgstr "WorldBoundaryShape2D"
+
+msgid "Listener"
+msgstr "청취자"
+
+msgid "AudioListener3D"
+msgstr "오디오리스너3D"
+
+msgid "NavigationMeshInstance"
+msgstr "내비게이션 메시."
+
+msgid "NavigationRegion3D"
+msgstr "내비게이션"
+
+msgid "NavigationPolygonInstance"
+msgstr "내비게이션"
+
+msgid "NavigationRegion2D"
+msgstr "내비게이션"
+
+msgid "Navigation2DServer"
+msgstr "내비게이션"
+
+msgid "NavigationServer2D"
+msgstr "내비게이션"
+
+msgid "PanoramaSky"
+msgstr "파노라마하늘"
+
+msgid "Sky"
+msgstr "키"
 
 msgid "Particles"
 msgstr "Particles"
@@ -50,17 +560,122 @@ msgstr "Particles2D"
 msgid "GPUParticles2D"
 msgstr "GPUParticles2D"
 
+msgid "ParticlesMaterial"
+msgstr "입자재료"
+
 msgid "ParticleProcessMaterial"
 msgstr "ParticleProcessMaterial"
+
+msgid "Physics2DDirectBodyState"
+msgstr "Physics2DDirectBodyState"
+
+msgid "PhysicsDirectBodyState2D"
+msgstr "PhysicsDirectBodyState2D"
+
+msgid "Physics2DDirectSpaceState"
+msgstr "Physics2DDirectSpaceState"
+
+msgid "PhysicsDirectSpaceState2D"
+msgstr "물리학DirectSpaceState2D"
+
+msgid "Physics2DServer"
+msgstr "물리"
+
+msgid "PhysicsServer2D"
+msgstr "물리"
+
+msgid "Physics2DShapeQueryParameters"
+msgstr "Physics2DShapeQuery매개변수"
+
+msgid "PhysicsShapeQueryParameters2D"
+msgstr "PhysicsShapeQueryParameters2D"
+
+msgid "Physics2DTestMotionResult"
+msgstr "Physics2DTestMotionResult"
+
+msgid "PhysicsTestMotionResult2D"
+msgstr "물리테스트모션결과2D"
+
+msgid "PlaneShape"
+msgstr "평면"
+
+msgid "WorldBoundaryShape3D"
+msgstr "세계경계모양3D"
+
+msgid "Position2D"
+msgstr "gl_Position"
+
+msgid "Marker2D"
+msgstr "Marker2D"
+
+msgid "Position3D"
+msgstr "gl_Position"
+
+msgid "Marker3D"
+msgstr "마커3D"
+
+msgid "ProceduralSky"
+msgstr "절차적 하늘."
+
+msgid "RayShape"
+msgstr "모양"
+
+msgid "SeparationRayShape3D"
+msgstr "분리RayShape3D"
+
+msgid "RayShape2D"
+msgstr "모양"
+
+msgid "SeparationRayShape2D"
+msgstr "분리RayShape2D"
+
+msgid "ShortCut"
+msgstr "바로가기"
+
+msgid "Shortcut"
+msgstr "바로가기"
 
 msgid "Spatial"
 msgstr "공간"
 
+msgid "Node3D"
+msgstr "노드"
+
+msgid "SpatialGizmo"
+msgstr "간단한 플러그인 만들기"
+
+msgid "Node3DGizmo"
+msgstr "Node3DGizmo"
+
+msgid "SpatialMaterial"
+msgstr "킬러 기능"
+
 msgid "StandardMaterial3D"
 msgstr "StandardMaterial3D"
 
+msgid "Sprite"
+msgstr "스프라이트"
+
+msgid "Sprite2D"
+msgstr "스프라이트2D"
+
+msgid "StreamTexture"
+msgstr "텍스처"
+
+msgid "CompressedTexture2D"
+msgstr "압축 모드"
+
+msgid "TextureProgress"
+msgstr "텍스처"
+
+msgid "TextureProgressBar"
+msgstr "텍스처진행률 표시줄"
+
 msgid "VideoPlayer"
 msgstr "VideoPlayer"
+
+msgid "VideoStreamPlayer"
+msgstr "VideoStreamPlayer"
 
 msgid "ViewportContainer"
 msgstr "ViewportContainer"
@@ -77,11 +692,20 @@ msgstr "SubViewport"
 msgid "VisibilityEnabler"
 msgstr "VisibilityEnabler"
 
+msgid "VisibleOnScreenEnabler3D"
+msgstr "VisibleOnScreenEnabler3D"
+
 msgid "VisibilityNotifier"
 msgstr "VisibilityNotifier"
 
+msgid "VisibleOnScreenNotifier3D"
+msgstr "VisibleOnScreenNotifier3D"
+
 msgid "VisibilityNotifier2D"
 msgstr "VisibilityNotifier2D"
+
+msgid "VisibleOnScreenNotifier2D"
+msgstr "VisibleOnScreenNotifier2D"
 
 msgid "VisibilityNotifier3D"
 msgstr "VisibilityNotifier3D"
@@ -89,38 +713,1269 @@ msgstr "VisibilityNotifier3D"
 msgid "VisualServer"
 msgstr "VisualServer"
 
+msgid "RenderingServer"
+msgstr "렌더링"
+
+msgid "VisualShaderNodeScalarConstant"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeFloatConstant"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarFunc"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeFloatFunc"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarOp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeFloatOp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarClamp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeClamp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVectorClamp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarInterp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeMix"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVectorInterp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVectorScalarMix"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarSmoothStep"
+msgstr "VisualShaderNodeScalarSmoothStep"
+
+msgid "VisualShaderNodeSmoothStep"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVectorSmoothStep"
+msgstr "VisualShaderNodeVectorSmoothStep"
+
+msgid "VisualShaderNodeVectorScalarSmoothStep"
+msgstr "VisualShaderNodeVectorScalarSmoothStep"
+
+msgid "VisualShaderNodeVectorScalarStep"
+msgstr "VisualShaderNodeVectorScalarStep"
+
+msgid "VisualShaderNodeStep"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarSwitch"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeSwitch"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarTransformMult"
+msgstr "VisualShaderNodeScalarTransformMult"
+
+msgid "VisualShaderNodeTransformOp"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarDerivativeFunc"
+msgstr "VisualShaderNodeScalarDerivativeFunc"
+
+msgid "VisualShaderNodeDerivativeFunc"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVectorDerivativeFunc"
+msgstr "VisualShaderNodeVectorDerivativeFunc"
+
+msgid "VisualShaderNodeBooleanUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeBooleanParameter"
+msgstr "VisualShaderNodeBoolean매개변수"
+
+msgid "VisualShaderNodeColorUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeColorParameter"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeScalarUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeFloatParameter"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeCubeMapUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeCubeMapParameter"
+msgstr "VisualShaderNodeCubeMap매개변수"
+
+msgid "VisualShaderNodeTextureUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeTexture2DParameter"
+msgstr "VisualShaderNodeTexture2D매개변수"
+
+msgid "VisualShaderNodeTextureUniformTriplanar"
+msgstr "VisualShaderNodeTextureUniformTriplanar"
+
+msgid "VisualShaderNodeTextureParameterTriplanar"
+msgstr "VisualShaderNodeTextureParameterTriplanar"
+
+msgid "VisualShaderNodeTransformUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeTransformParameter"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVec3Uniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeVec3Parameter"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeUniform"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeParameter"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeUniformRef"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "VisualShaderNodeParameterRef"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "Manually renaming methods, properties, signals and constants"
+msgstr "클래스의 속성, 방법, 신호, 열거형 및 상수에 대한 설명을 제공합니다."
+
+msgid ""
+"Due to how the project upgrade tool works, not all :abbr:`API (Application "
+"Programming Interface)` renames can be performed automatically. The list "
+"below contains all renames that must be performed manually using the script "
+"editor."
+msgstr ""
+"프로젝트 업그레이드 도구의 작동 방식으로 인해 모든 :abbr:`API(응용 프로그래"
+"밍 인터페이스)` 이름 바꾸기가 자동으로 수행될 수 있는 것은 아닙니다. 아래 목"
+"록에는 스크립트 편집기를 사용하여 수동으로 수행해야 하는 모든 이름 바꾸기가 "
+"포함되어 있습니다."
+
+msgid ""
+"If you cannot find a node or resource in the list below, refer to the above "
+"table to find its new name."
+msgstr ""
+"아래 목록에서 노드 또는 리소스를 찾을 수 없는 경우 위 표를 참조하여 새 이름"
+"을 찾으세요."
+
+msgid ""
+"You can use the **Replace in Files** dialog to speed up replacement by "
+"pressing :kbd:`Ctrl + Shift + R` while the script editor is open. However, "
+"be careful as the Replace in Files dialog doesn't offer any way to undo a "
+"replacement. Use version control to commit your upgrade work regularly. "
+"Command line tools such as `sd <https://github.com/chmln/sd>`__ can also be "
+"used if you need something more flexible than the editor's Replace in Files "
+"dialog."
+msgstr ""
+"스크립트 편집기가 열려 있는 동안 :kbd:`Ctrl + Shift + R`을 눌러 **파일에서 바"
+"꾸기** 대화 상자를 사용하면 바꾸기 속도를 높일 수 있습니다. 그러나 파일에서 "
+"바꾸기 대화 상자는 바꾸기를 실행 취소할 수 있는 방법을 제공하지 않으므로 주의"
+"하십시오. 버전 제어를 사용하여 정기적으로 업그레이드 작업을 커밋합니다. 편집"
+"기의 파일에서 바꾸기 대화 상자보다 더 유연한 기능이 필요한 경우 `sd <https://"
+"github.com/chmln/sd>`__과 같은 명령줄 도구를 사용할 수도 있습니다."
+
+msgid ""
+"If using C#, remember to search for outdated API usage with PascalCase "
+"notation in the project (and perform the replacement with PascalCase "
+"notation)."
+msgstr ""
+"C#을 사용하는 경우 프로젝트에서 PascalCase 표기법을 사용하여 오래된 API 사용"
+"을 검색하고 PascalCase 표기법으로 교체를 수행해야 합니다."
+
 msgid "**Methods**"
 msgstr "**메서드**"
+
+msgid ""
+"File and Directory classes were replaced by :ref:`class_FileAccess` "
+"and :ref:`class_DirAccess`, which have an entirely different API. Several "
+"methods are now static, which means you can call them directly on FileAccess "
+"or DirAccess without having to create an instance of that class."
+msgstr ""
+"파일 및 디렉토리 클래스는 완전히 다른 API를 갖는 :ref:`class_FileAccess` "
+"및 :ref:`class_DirAccess`로 대체되었습니다. 이제 여러 메서드가 정적이므로 해"
+"당 클래스의 인스턴스를 만들지 않고도 FileAccess 또는 DirAccess에서 직접 호출"
+"할 수 있습니다."
+
+msgid ""
+"Screen and window-related methods from the :ref:`class_OS` singleton (such "
+"as ``OS.get_screen_size()``) were moved to the :ref:`class_DisplayServer` "
+"singleton. Method naming was also changed to use the ``DisplayServer."
+"<object>_<get/set>_property()`` form instead. For example, "
+"``OS.get_screen_size()`` becomes ``DisplayServer.screen_get_size()``."
+msgstr ""
+":ref:`class_OS` 싱글톤(예: ``OS.get_screen_size()``)의 화면 및 창 관련 메서드"
+"가 :ref:`class_DisplayServer` 싱글톤로 이동되었습니다. 대신 ``DisplayServer."
+"<object>_<get/set>_property()`` 형식을 사용하도록 메소드 이름 지정도 변경되었"
+"습니다. 예를 들어, ``OS.get_screen_size()``는 "
+"``DisplayServer.screen_get_size()``가 됩니다."
+
+msgid ""
+"Time and date methods from the :ref:`class_OS` singleton were moved to "
+"the :ref:`class_Time` singleton. (The Time singleton is also available in "
+"Godot 3.5 and later.)"
+msgstr ""
+":ref:`class_OS` 싱글톤의 시간 및 날짜 방법이 :ref:`class_Time` 싱글톤로 이동"
+"되었습니다. (Time 싱글톤는 Godot 3.5 이상에서도 사용할 수 있습니다.)"
+
+msgid ""
+"You may have to replace some ``instance()`` calls with ``instantiate()``. "
+"The converter *should* handle this automatically, but this relies on custom "
+"code that may not work in 100% of situations."
+msgstr ""
+"일부 ``instance()`` 호출을 ``instantiate()``로 바꿔야 할 수도 있습니다. 변환"
+"기는 이를 자동으로 처리해야 하지만* 이는 100% of 상황에서 작동하지 않을 수 있"
+"는 사용자 정의 코드에 의존합니다."
+
+msgid "AcceptDialog's ``set_autowrap()`` is now ``set_autowrap_mode()``."
+msgstr ""
+"AcceptDialog의 ``set_autowrap()``는 이제 ``set_autowrap_mode()``입니다."
+
+msgid ""
+"AnimationNode's ``process()`` is now ``_process()`` (note the leading "
+"underscore, which denotes a virtual method)."
+msgstr ""
+"AnimationNode의 ``process()``는 이제 ``_process()``입니다(가상 메서드를 나타"
+"내는 선행 밑줄에 유의하세요)."
+
+msgid ""
+"AnimationPlayer's ``add_animation()`` is now ``add_animation_library()`` and "
+"now uses an :ref:`class_AnimationLibrary`."
+msgstr ""
+"AnimationPlayer의 ``add_animation()``는 이제 ``add_animation_library()``이며 "
+"이제 :ref:`class_AnimationLibrary`를 사용합니다."
+
+msgid ""
+"AnimationTree's ``set_process_mode()`` is now ``set_process_callback()``."
+msgstr ""
+"AnimationTree의 ``set_process_mode()``는 이제 ``set_process_callback()``입니"
+"다."
+
+msgid "Array's ``empty()`` is now ``is_empty()``."
+msgstr "어레이의 ``empty()``는 이제 ``is_empty()``입니다."
+
+msgid "Array's ``invert()`` is now ``reverse()``."
+msgstr "어레이의 ``invert()``는 이제 ``reverse()``입니다."
+
+msgid "Array's ``remove()`` is now ``remove_at()``."
+msgstr "어레이의 ``remove()``는 이제 ``remove_at()``입니다."
+
+msgid "AStar2D and AStar3D's ``get_points()`` is now ``get_points_id()``."
+msgstr ""
+"AStar2D 및 AStar3D의 ``get_points()``는 이제 ``get_points_id()``입니다."
+
+msgid "BaseButton's ``set_event()`` is now ``set_shortcut()``."
+msgstr "BaseButton의 ``set_event()``는 이제 ``set_shortcut()``입니다."
+
+msgid "Camera2D's ``get_h_offset()`` is now ``get_drag_horizontal_offset()``."
+msgstr ""
+"Camera2D의 ``get_h_offset()``는 이제 ``get_drag_horizontal_offset()``입니다."
+
+msgid "Camera2D's ``get_v_offset()`` is now ``get_drag_vertical_offset()``."
+msgstr ""
+"Camera2D의 ``get_v_offset()``는 이제 ``get_drag_vertical_offset()``입니다."
+
+msgid "Camera2D's ``set_h_offset()`` is now ``set_drag_horizontal_offset()``."
+msgstr ""
+"Camera2D의 ``set_h_offset()``는 이제 ``set_drag_horizontal_offset()``입니다."
+
+msgid "Camera2D's ``set_v_offset()`` is now ``set_drag_vertical_offset()``."
+msgstr ""
+"Camera2D의 ``set_v_offset()``는 이제 ``set_drag_vertical_offset()``입니다."
+
+msgid "CanvasItem's ``raise()`` is now ``move_to_front()``."
+msgstr "CanvasItem의 ``raise()``는 이제 ``move_to_front()``입니다."
+
+msgid "CanvasItem's ``update()`` is now ``queue_redraw()``."
+msgstr "CanvasItem의 ``update()``는 이제 ``queue_redraw()``입니다."
+
+msgid "Control's ``get_stylebox()`` is now ``get_theme_stylebox()``."
+msgstr "Control의 ``get_stylebox()``는 이제 ``get_theme_stylebox()``입니다."
+
+msgid "Control's ``set_tooltip()`` is now ``set_tooltip_text()``."
+msgstr "Control의 ``set_tooltip()``는 이제 ``set_tooltip_text()``입니다."
+
+msgid ""
+"EditorNode3DGizmoPlugin's ``create_gizmo()`` is now ``_create_gizmo()`` "
+"(note the leading underscore, which denotes a virtual method)."
+msgstr ""
+"EditorNode3DGizmoPlugin의 ``create_gizmo()``는 이제 ``_create_gizmo()``입니다"
+"(가상 메서드를 나타내는 밑줄 앞에 표시됩니다)."
+
+msgid "ENetMultiplayerPeer's ``get_peer_port()`` is now ``get_peer()``."
+msgstr "ENetMultiplayerPeer의 ``get_peer_port()``는 이제 ``get_peer()``입니다."
+
+msgid "FileDialog's ``get_mode()`` is now ``get_file_mode()``."
+msgstr "FileDialog의 ``get_mode()``는 이제 ``get_file_mode()``입니다."
+
+msgid "FileDialog's ``set_mode()`` is now ``set_file_mode()``."
+msgstr "FileDialog의 ``set_mode()``는 이제 ``set_file_mode()``입니다."
+
+msgid "GraphNode's ``get_offset()`` is now ``get_position_offset()``."
+msgstr "GraphNode의 ``get_offset()``는 이제 ``get_position_offset()``입니다."
+
+msgid "GridMap's ``map_to_world()`` is now ``map_to_local()``."
+msgstr "GridMap의 ``map_to_world()``는 이제 ``map_to_local()``입니다."
+
+msgid "GridMap's ``world_to_map()`` is now ``local_to_map()``."
+msgstr "GridMap의 ``world_to_map()``는 이제 ``local_to_map()``입니다."
+
+msgid "Image's ``get_rect()`` is now ``get_region()``."
+msgstr "이미지의 ``get_rect()``는 이제 ``get_region()``입니다."
+
+msgid "ImmediateGeometry's ``set_normal()`` is now ``surface_set_normal()``."
+msgstr ""
+"ImmediateGeometry의 ``set_normal()``는 이제 ``surface_set_normal()``입니다."
+
+msgid "ImmediateMesh's ``set_color()`` is now ``surface_set_color()``."
+msgstr "ImmediateMesh의 ``set_color()``는 이제 ``surface_set_color()``입니다."
+
+msgid "ImmediateMesh's ``set_uv()`` is now ``surface_set_uv()``."
+msgstr "ImmediateMesh의 ``set_uv()``는 이제 ``surface_set_uv()``입니다."
+
+msgid "ItemList's ``get_v_scroll()`` is now ``get_v_scroll_bar()``."
+msgstr "ItemList의 ``get_v_scroll()``는 이제 ``get_v_scroll_bar()``입니다."
+
+msgid ""
+"MultiPlayerAPI's ``get_network_connected_peers()`` is now ``get_peers()``."
+msgstr ""
+"MultiPlayerAPI의 ``get_network_connected_peers()``는 이제 ``get_peers()``입니"
+"다."
+
+msgid "MultiPlayerAPI's ``get_network_peer()`` is now ``get_peer()``."
+msgstr "MultiPlayerAPI의 ``get_network_peer()``는 이제 ``get_peer()``입니다."
+
+msgid ""
+"MultiPlayerAPI's ``get_network_unique_id()`` is now ``get_unique_id()``."
+msgstr ""
+"MultiPlayerAPI의 ``get_network_unique_id()``는 이제 ``get_unique_id()``입니"
+"다."
+
+msgid ""
+"MultiPlayerAPI's ``has_network_peer()`` is now ``has_multiplayer_peer()``."
+msgstr ""
+"MultiPlayerAPI의 ``has_network_peer()``는 이제 ``has_multiplayer_peer()``입니"
+"다."
+
+msgid ""
+"MultiplayerAPI's ``is_refusing_new_network_connections()`` is now "
+"``is_refusing_new_connections()``."
+msgstr ""
+"MultiplayerAPI의 ``is_refusing_new_network_connections()``는 이제 "
+"``is_refusing_new_connections()``입니다."
+
+msgid "PacketPeerUDP's ``is_listening()`` is now ``is_bound()``."
+msgstr "PacketPeerUDP의 ``is_listening()``는 이제 ``is_bound()``입니다."
+
+msgid "PacketPeerUDP's ``listen()`` is now ``bind()``."
+msgstr "PacketPeerUDP의 ``listen()``는 이제 ``bind()``입니다."
+
+msgid ""
+"ParticleProcessMaterial's ``set_flag()`` is now ``set_particle_flag()``."
+msgstr ""
+"ParticleProcessMaterial의 ``set_flag()``는 이제 ``set_particle_flag()``입니"
+"다."
+
+msgid "PhysicsTestMotionResult2D's ``get_motion()`` is now ``get_travel()``."
+msgstr ""
+"PhysicsTestMotionResult2D의 ``get_motion()``는 이제 ``get_travel()``입니다."
+
+msgid ""
+"RenderingServer's ``get_render_info()`` is now ``get_rendering_info()``."
+msgstr ""
+"RenderingServer의 ``get_render_info()``는 이제 ``get_rendering_info()``입니"
+"다."
+
+msgid ""
+"ResourceFormatLoader's ``get_dependencies()`` is now ``_get_dependencies()`` "
+"(note the leading underscore, which denotes a virtual method)."
+msgstr ""
+"ResourceFormatLoader의 ``get_dependencies()``는 이제 ``_get_dependencies()``"
+"입니다(가상 메서드를 나타내는 앞에 밑줄이 있음)."
+
+msgid "ResourceFormatLoader's ``load()`` is now ``_load()``."
+msgstr "ResourceFormatLoader의 ``load()``는 이제 ``_load()``입니다."
+
+msgid "SceneTree's ``change_scene()`` is now ``change_scene_to_file()``."
+msgstr ""
+"SceneTree의 ``change_scene()``는 이제 ``change_scene_to_file()``입니다."
+
+msgid "Shortcut's ``is_valid()`` is now ``has_valid_event()``."
+msgstr ""
+"바로가기의 ``is_valid()``는 이제 ``has_valid_event()``로 변경되었습니다."
+
+msgid "TileMap's ``map_to_world()`` is now ``map_to_local()``."
+msgstr "TileMap의 ``map_to_world()``는 이제 ``map_to_local()``입니다."
+
+msgid "TileMap's ``world_to_map()`` is now ``local_to_map()``."
+msgstr "TileMap의 ``world_to_map()``는 이제 ``local_to_map()``입니다."
+
+msgid ""
+"Transform2D's ``xform()`` is ``mat * vec`` and ``xform_inv()`` is ``vec * "
+"mat``."
+msgstr ""
+"Transform2D의 ``xform()``는 ``mat * vec``이고 ``xform_inv()``는 ``vec * mat``"
+"입니다."
+
+msgid "XRPositionalTracker's ``get_name()`` is now ``get_tracker_name()``."
+msgstr ""
+"XRPositionalTracker의 ``get_name()``는 이제 ``get_tracker_name()``입니다."
+
+msgid "XRPositionalTracker's ``get_type()`` is now ``get_tracker_type()``."
+msgstr ""
+"XRPositionalTracker의 ``get_type()``는 이제 ``get_tracker_type()``입니다."
+
+msgid "XRPositionalTracker's ``_set_name()`` is now ``get_tracker_name()``."
+msgstr ""
+"XRPositionalTracker의 ``_set_name()``는 이제 ``get_tracker_name()``입니다."
+
+msgid "**Properties**"
+msgstr "속성"
+
+msgid ""
+"If a property is listed here, its associated getter and setter methods must "
+"also be renamed manually if used in the project. For example, PathFollow2D "
+"and PathFollow3D's ``set_offset()`` and ``get_offset()`` must be renamed to "
+"``set_progress()`` and ``get_progress()`` respectively."
+msgstr ""
+"속성이 여기에 나열되어 있는 경우 프로젝트에서 사용되는 경우 관련 getter 및 "
+"setter 메서드의 이름도 수동으로 바꿔야 합니다. 예를 들어 PathFollow2D 및 "
+"PathFollow3D의 ``set_offset()`` 및 ``get_offset()``는 각각 "
+"``set_progress()`` 및 ``get_progress()``로 이름을 바꿔야 합니다."
+
+msgid "AudioServer's ``device`` is now ``output_device``."
+msgstr "AudioServer의 ``device``는 이제 ``output_device``입니다."
+
+msgid "BaseButton's ``group`` is now ``button_group``."
+msgstr "BaseButton의 ``group``는 이제 ``button_group``입니다."
+
+msgid "Camera3D's ``zfar`` is now ``far``."
+msgstr "Camera3D의 ``zfar``는 이제 ``far``입니다."
+
+msgid "Camera3D's ``znear`` is now ``near``"
+msgstr "Camera3D의 ``znear``는 이제 ``near``입니다."
+
+msgid "Control's ``margin`` is now ``offset``."
+msgstr "Control의 ``margin``는 이제 ``offset``입니다."
+
+msgid "InputEventMouseButton's ``doubleclick`` is now ``double_click``."
+msgstr "InputEventMouseButton의 ``doubleclick``는 이제 ``double_click``입니다."
+
+msgid "InputEventWithModifiers's ``alt`` is now ``alt_pressed``."
+msgstr "InputEventWithModifiers의 ``alt``는 이제 ``alt_pressed``입니다."
+
+msgid "InputEventWithModifiers's ``command`` is now ``command_pressed``."
+msgstr ""
+"InputEventWithModifiers의 ``command``는 이제 ``command_pressed``입니다."
+
+msgid "InputEventWithModifiers's ``control`` is now ``ctrl_pressed``."
+msgstr "InputEventWithModifiers의 ``control``는 이제 ``ctrl_pressed``입니다."
+
+msgid "InputEventWithModifiers's ``meta`` is now ``meta_pressed``."
+msgstr "InputEventWithModifiers의 ``meta``는 이제 ``meta_pressed``입니다."
+
+msgid "InputEventWithModifiers's ``shift`` is now ``shift_pressed``."
+msgstr "InputEventWithModifiers의 ``shift``는 이제 ``shift_pressed``입니다."
+
+msgid "Label's ``percent_visible`` is now ``visible_ratio``."
+msgstr "레이블의 ``percent_visible``는 이제 ``visible_ratio``입니다."
+
+msgid ""
+"MultiPlayerAPI's ``refuse_new_network_connections`` is now "
+"``refuse_new_connections``."
+msgstr ""
+"MultiPlayerAPI의 ``refuse_new_network_connections``는 이제 "
+"``refuse_new_connections``입니다."
+
+msgid "Node's ``filename`` is now ``scene_file_path``."
+msgstr "노드의 ``filename``는 이제 ``scene_file_path``입니다."
+
+msgid "PathFollow2D's ``rotate`` is now ``rotates``."
+msgstr "PathFollow2D의 ``rotate``는 이제 ``rotates``입니다."
+
+msgid "PathFollow2D and PathFollow3D's ``offset`` is now ``progress``."
+msgstr "PathFollow2D 및 PathFollow3D의 ``offset``는 이제 ``progress``입니다."
+
+msgid "RectangleShape2D's ``extents`` is now ``size``"
+msgstr "RectangleShape2D의 ``extents``는 이제 ``size``입니다."
+
+msgid "TextureProgressBar's ``percent_visible`` is now ``show_percentage``."
+msgstr ""
+"TextureProgressBar의 ``percent_visible``는 이제 ``show_percentage``입니다."
+
+msgid "Theme's ``off`` is now ``unchecked``."
+msgstr "테마의 ``off``는 이제 ``unchecked``입니다."
+
+msgid "Theme's ``ofs`` is now ``offset``."
+msgstr "테마의 ``ofs``는 이제 ``offset``입니다."
+
+msgid "Theme's ``on`` is now ``checked``."
+msgstr "테마의 ``on``는 이제 ``checked``입니다."
+
+msgid "Window's ``window_title`` is now ``title``."
+msgstr "Window의 ``window_title``는 이제 ``title``입니다."
+
+msgid "WorldMarginShape2D's ``d`` is now ``distance``."
+msgstr "WorldMarginShape2D의 ``d``는 이제 ``distance``입니다."
+
+msgid ""
+"The ``extents`` property on CSG nodes and VoxelGI will have to be replaced "
+"with ``size``, with the set value halved (as they're no longer half-"
+"extents). This also affects its setter/getter methods ``set_extents()`` and "
+"``get_extents()``."
+msgstr ""
+"CSG 노드 및 VoxelGI의 ``extents`` 속성은 설정된 값이 절반인 ``size``로 대체되"
+"어야 합니다(더 이상 절반 범위가 아니기 때문). 이는 또한 해당 setter/getter 메"
+"소드 ``set_extents()`` 및 ``get_extents()``에도 영향을 미칩니다."
+
+msgid ""
+"The ``Engine.editor_hint`` property was removed in favor of the "
+"``Engine.is_editor_hint()`` *method*. This is because it's read-only, and "
+"properties in Godot are not used for read-only values."
+msgstr ""
+"``Engine.editor_hint`` 속성은 ``Engine.is_editor_hint()`` *방법*을 위해 제거"
+"되었습니다. 이는 읽기 전용이고 Godot의 속성은 읽기 전용 값에 사용되지 않기 때"
+"문입니다."
 
 msgid "**Enums**"
 msgstr "**열거형**"
 
+msgid "CPUParticles2D's ``FLAG_MAX`` is now ``PARTICLE_FLAG_MAX``."
+msgstr "CPUParticles2D의 ``FLAG_MAX``는 이제 ``PARTICLE_FLAG_MAX``입니다."
+
 msgid "**Signals**"
 msgstr "**시그널**"
+
+msgid "FileSystemDock's ``instantiate`` is now ``instance``."
+msgstr "FileSystemDock의 ``instantiate``는 이제 ``instance``입니다."
+
+msgid ""
+"CanvasItem's ``hide`` is now ``hidden``. This rename does **not** apply to "
+"the ``hide()`` method, only the signal."
+msgstr ""
+"CanvasItem의 ``hide``는 이제 ``hidden``입니다. 이 이름 변경은 ``hide()`` 방법"
+"에는 적용되지 **않고** 시그널에만 적용됩니다."
+
+msgid "Tween's ``tween_all_completed`` is now ``loop_finished``."
+msgstr "Tween의 ``tween_all_completed``는 이제 ``loop_finished``입니다."
+
+msgid "EditorSettings' ``changed`` is now ``settings_changed``."
+msgstr "EditorSettings의 ``changed``는 이제 ``settings_changed``입니다."
+
+msgid "**Constants**"
+msgstr "상수"
+
+msgid ""
+"Color names are now uppercase and use underscores between words. For "
+"example, ``Color.palegreen`` is now ``Color.PALE_GREEN``."
+msgstr ""
+"색상 이름은 이제 대문자이며 단어 사이에 밑줄을 사용합니다. 예를 들어, "
+"``Color.palegreen``는 이제 ``Color.PALE_GREEN``입니다."
+
+msgid ""
+"MainLoop's ``NOTIFICATION_`` constants were duplicated to ``Node`` which "
+"means you can remove the ``MainLoop.`` prefix when referencing them."
+msgstr ""
+"MainLoop의 ``NOTIFICATION_`` 상수는 ``Node``에 복제되었습니다. 즉, 참조할 때 "
+"``MainLoop.`` 접두사를 제거할 수 있습니다."
+
+msgid ""
+"MainLoop's ``NOTIFICATION_WM_QUIT_REQUEST`` is now "
+"``NOTIFICATION_WM_CLOSE_REQUEST``."
+msgstr ""
+"MainLoop의 ``NOTIFICATION_WM_QUIT_REQUEST``는 이제 "
+"``NOTIFICATION_WM_CLOSE_REQUEST``입니다."
+
+msgid "Checking project settings"
+msgstr "프로젝트 설정 재정의하기"
+
+msgid ""
+"Several project settings were renamed, and some of them had their enums "
+"changed in incompatible ways (such as shadow filter quality). This means you "
+"may need to set some project settings' values again. Make sure the "
+"**Advanced** toggle is enabled in the project settings dialog so you can see "
+"all project settings."
+msgstr ""
+"여러 프로젝트 설정의 이름이 바뀌었고 그 중 일부는 호환되지 않는 방식(예: 섀도"
+"우 필터 품질)으로 열거형이 변경되었습니다. 이는 일부 프로젝트 설정 값을 다시 "
+"설정해야 할 수도 있음을 의미합니다. 모든 프로젝트 설정을 볼 수 있도록 프로젝"
+"트 설정 대화 상자에서 **고급** 토글이 활성화되어 있는지 확인하세요."
+
+msgid "Checking Environment settings"
+msgstr "환경 옵션"
+
+msgid ""
+"Graphics quality settings were moved from Environment properties to project "
+"settings. This was done to make runtime quality adjustments easier, without "
+"having to access the currently active Environment resource then modify its "
+"properties."
+msgstr ""
+"그래픽 품질 설정이 환경 속성에서 프로젝트 설정으로 이동되었습니다. 이는 현재 "
+"활성 환경 리소스에 액세스한 후 해당 속성을 수정하지 않고도 런타임 품질 조정"
+"을 더 쉽게 하기 위해 수행되었습니다."
+
+msgid ""
+"As a result, you will have to configure Environment quality settings in the "
+"project settings as old Environment quality settings aren't converted "
+"automatically to project settings."
+msgstr ""
+"결과적으로 이전 환경 품질 설정은 프로젝트 설정으로 자동 변환되지 않으므로 프"
+"로젝트 설정에서 환경 품질 설정을 구성해야 합니다."
+
+msgid ""
+"If you have a graphics settings menu that changed environment properties in "
+"Godot 3.x, you will have to change its code to "
+"call :ref:`class_RenderingServer` methods that affect environment effects' "
+"quality. Only the \"base\" toggle of each environment effect and its visual "
+"knobs remain within the Environment resource."
+msgstr ""
+"Godot 3.x에서 환경 속성을 변경하는 그래픽 설정 메뉴가 있는 경우 환경 효과의 "
+"품질에 영향을 미치는 :ref:`class_RenderingServer` 메서드를 호출하도록 코드를 "
+"변경해야 합니다. 각 환경 효과의 \"기본\" 토글과 해당 시각적 노브만 환경 리소"
+"스 내에 유지됩니다."
 
 msgid "Updating shaders"
 msgstr "셰이더 업데이트"
 
+msgid ""
+"There have been some changes to shaders that aren't covered by the upgrade "
+"tool. You will need to make some manual changes, especially if your shader "
+"uses coordinate space transformations or a custom ``light()`` function."
+msgstr ""
+"업그레이드 도구에서 다루지 않는 셰이더에 대한 일부 변경 사항이 있습니다. 특"
+"히 셰이더가 좌표 공간 변환이나 사용자 정의 ``light()`` 기능을 사용하는 경우에"
+"는 일부 수동 변경이 필요합니다."
+
+msgid ""
+"The ``.shader`` file extension is no longer supported, which means you must "
+"rename ``.shader`` files to ``.gdshader`` and update references accordingly "
+"in scene/resource files using an external text editor."
+msgstr ""
+"``.shader`` 파일 확장자는 더 이상 지원되지 않습니다. 즉, ``.shader`` 파일의 "
+"이름을 ``.gdshader``로 바꾸고 외부 텍스트 편집기를 사용하여 씬/resource 파일"
+"에서 그에 따라 참조를 업데이트해야 함을 의미합니다."
+
+msgid "Some notable changes you will need to perform in shaders are:"
+msgstr "셰이더에서 수행해야 할 몇 가지 주목할만한 변경 사항은 다음과 같습니다."
+
+msgid ""
+"Texture filter and repeat modes are now set on individual uniforms, rather "
+"than the texture files themselves."
+msgstr ""
+"텍스처 필터 및 반복 모드는 이제 텍스처 파일 자체가 아닌 개별 유니폼에 설정됩"
+"니다."
+
+msgid "``hint_albedo`` is now ``source_color``."
+msgstr "``hint_albedo``는 이제 ``source_color``입니다."
+
+msgid "``hint_color`` is now ``source_color``."
+msgstr "``hint_color``는 이제 ``source_color``입니다."
+
+msgid ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
+msgstr ":ref:`doc_spatial_shader`"
+
+msgid ""
+"Particles shaders no longer use the ``vertex()`` processor function. Instead "
+"they use ``start()`` and ``process()``."
+msgstr ""
+"입자 셰이더는 더 이상 ``vertex()`` 프로세서 기능을 사용하지 않습니다. 대신 "
+"``start()`` 및 ``process()``를 사용합니다."
+
+msgid ""
+"In the Forward+ and Mobile renderers, normalized device coordinates now have "
+"a Z-range of ``[0.0,1.0]`` instead of ``[-1.0,1.0]``. When reconstructing "
+"NDC from ``SCREEN_UV`` and depth, use ``vec3 ndc = vec3(SCREEN_UV * 2.0 - "
+"1.0, depth);`` instead of ``vec3 ndc = vec3(SCREEN_UV, depth) * 2.0 - "
+"1.0;``. The Compatibility renderer is unchanged, using the same NDC Z-range "
+"as 3.x."
+msgstr ""
+"Forward+ 및 모바일 렌더러에서 정규화된 장치 좌표는 이제 ``[-1.0,1.0]`` 대신 "
+"``[0.0,1.0]``의 Z 범위를 갖습니다. ``SCREEN_UV`` 및 깊이에서 NDC를 재구성하"
+"는 경우 ``vec3 ndc = vec3(SCREEN_UV, depth) * 2.0 - 1.0;`` 대신 ``vec3 ndc = "
+"vec3(SCREEN_UV * 2.0 - 1.0, depth);``를 사용하세요. 호환성 렌더러는 3.x와 동"
+"일한 NDC Z 범위를 사용하여 변경되지 않았습니다."
+
+msgid ""
+"The lighting model changed. If your shader has a custom ``light()`` "
+"function, you may need to make changes to get the same visual result."
+msgstr ""
+"조명 모델이 변경되었습니다. 셰이더에 사용자 정의 ``light()`` 기능이 있는 경"
+"우 동일한 시각적 결과를 얻으려면 변경해야 할 수도 있습니다."
+
+msgid ""
+"In 4.3 and up, the reverse Z depth buffer technique is now implemented, "
+"which may break advanced shaders. See `Introducing Reverse Z (AKA I'm sorry "
+"for breaking your shader) <https://godotengine.org/article/introducing-"
+"reverse-z/>`__."
+msgstr ""
+"4.3 이상에서는 이제 역방향 Z 깊이 버퍼 기술이 구현되어 고급 셰이더가 중단될 "
+"수 있습니다. `Reverse Z 소개(셰이더를 깨뜨려 죄송합니다) <https://"
+"godotengine.org/article/introducing-reverse-z/>`__를 참조하세요."
+
 msgid "See :ref:`doc_shading_language` for more information."
 msgstr "자세한 정보는 :ref:`doc_shading_language`\\ 를 참조하세요."
+
+msgid ""
+"This list is not exhaustive. If you made all the changes mentioned here and "
+"your shader still doesn't work, try asking for help in one of the `community "
+"channels <https://godotengine.org/community/>`__."
+msgstr ""
+"같은 `Godot 웹사이트 <https://godotengine.org/contact>`_ 페이지에서 참고하세"
+"요."
+
+msgid "Updating scripts to take backwards-incompatible changes into account"
+msgstr "이전 버전과 호환되지 않는 변경 사항을 고려하도록 스크립트 업데이트"
+
+msgid ""
+"Some changes performed between Godot 3.x and 4 are not renames, but they "
+"still break backwards compatibility due to different default behavior."
+msgstr ""
+"Godot 3.x와 4 사이에 수행된 일부 변경 사항은 이름 변경이 아니지만, 다른 기본 "
+"동작으로 인해 이전 버전과의 호환성이 여전히 손상됩니다."
+
+msgid "The most notable examples of this are:"
+msgstr "이에 대한 가장 주목할만한 예는 다음과 같습니다."
+
+msgid ""
+"Lifecycle functions such as ``_ready()`` and ``_process()`` no longer "
+"implicitly call parent classes' functions that have the same name. Instead, "
+"you must use ``super()`` at the top of a lifecycle function in the child "
+"class so that the parent class function is called first."
+msgstr ""
+"``_ready()`` 및 ``_process()``와 같은 수명 주기 함수는 더 이상 동일한 이름을 "
+"가진 상위 클래스의 함수를 암시적으로 호출하지 않습니다. 대신, 상위 클래스 함"
+"수가 먼저 호출되도록 하위 클래스의 수명주기 함수 상단에 ``super()``를 사용해"
+"야 합니다."
+
+msgid ""
+"Both :ref:`class_String` and :ref:`class_StringName` are now exposed to "
+"GDScript. This allows for greater optimization, as StringName is "
+"specifically designed to be used for \"constant\" strings that are created "
+"once and reused many times. These types are not strictly equivalent to each "
+"other, which means ``is_same(\"example\", &\"example\")`` returns ``false``. "
+"Although in most cases they are interchangeable (``\"example\" == "
+"&\"example\"`` returns ``true``), sometimes you may have to replace "
+"``\"example\"`` with ``&\"example\"``."
+msgstr ""
+":ref:`class_String` 및 :ref:`class_StringName`는 이제 모두 GDScript에 노출됩"
+"니다. StringName은 한 번 생성되어 여러 번 재사용되는 \"상수\" 문자열에 사용되"
+"도록 특별히 설계되었으므로 더 큰 최적화가 가능합니다. 이러한 유형은 서로 엄밀"
+"히 동일하지 않습니다. 즉, ``is_same(\"example\", &\"example\")``는 ``false``"
+"를 반환합니다. 대부분의 경우 서로 바꿔 사용할 수 있지만(``\"example\" == "
+"&\"example\"``는 ``true``를 반환함) 때로는 ``\"example\"``를 ``&\"example\"``"
+"로 바꿔야 할 수도 있습니다."
+
+msgid ""
+":ref:`GDScript setter and getter syntax "
+"<doc_gdscript_basics_setters_getters>` was changed, but it's only partially "
+"converted by the conversion tool. In most cases, manual changes are required "
+"to make setters and getters working again."
+msgstr ""
+":ref:`GDScript setter 및 getter 구문 <doc_gdscript_basics_setters_getters>`"
+"이 변경되었지만 변환 도구에 의해 부분적으로만 변환되었습니다. 대부분의 경우 "
+"setter와 getter가 다시 작동하도록 하려면 수동으로 변경해야 합니다."
+
+msgid ""
+":ref:`GDScript signal connection syntax <doc_gdscript_signals>` was changed. "
+"The conversion tool will use the string-based syntax which is still present "
+"in Godot 4, but it's recommended to switch to the :ref:`class_Signal`-based "
+"syntax described on the linked page. This way, strings are no longer "
+"involved, which avoids issues with signal name errors that can only be "
+"discovered at runtime."
+msgstr ""
+":ref:`GDScript 시그널 연결 구문 <doc_gdscript_signals>`이 변경되었습니다. 변"
+"환 도구는 Godot 4에 여전히 존재하는 문자열 기반 구문을 사용하지만 링크된 페이"
+"지에 설명된 :ref:`class_Signal` 기반 구문으로 전환하는 것이 좋습니다. 이렇게 "
+"하면 문자열이 더 이상 관련되지 않으므로 런타임에만 발견될 수 있는 시그널 이"
+"름 오류 문제가 방지됩니다."
+
+msgid ""
+"Built-in scripts that are :ref:`tool scripts "
+"<doc_running_code_in_the_editor>` do not get the ``tool`` keyword converted "
+"to the ``@tool`` annotation."
+msgstr ""
+":ref:`tool 스크립트 <doc_running_code_in_the_editor>`인 내장 스크립트는 "
+"``tool`` 키워드를 ``@tool`` 주석으로 변환하지 않습니다."
+
+msgid ""
+"The Tween node was removed in favor of Tweeners, which are also available in "
+"Godot 3.5 and later. See the `original pull request <https://github.com/"
+"godotengine/godot/pull/41794>`__ for details."
+msgstr ""
+"Tween 노드는 Godot 3.5 이상에서도 사용할 수 있는 Tweener를 위해 제거되었습니"
+"다. 자세한 내용은 `원본 풀 요청 <https://github.com/godotengine/godot/pull/"
+"41794>`__을 참조하세요."
+
+msgid ""
+"``randomize()`` is now automatically called on project load, so "
+"deterministic randomness with the global RandomNumberGenerate instance "
+"requires manually setting a seed in a script's ``_ready()`` function."
+msgstr ""
+"``randomize()``는 이제 프로젝트 로드 시 자동으로 호출되므로 전역 "
+"RandomNumberGenerate 인스턴스의 결정론적 무작위성을 위해서는 스크립트의 "
+"``_ready()`` 함수에서 시드를 수동으로 설정해야 합니다."
+
+msgid ""
+"``call_group()``, ``set_group()`` and ``notify_group()`` are now immediate "
+"by default. If calling an expensive function, this may result in stuttering "
+"when used on a group containing a large number of nodes. To use deferred "
+"calls like before, replace ``call_group(...)`` with "
+"``call_group_flags(SceneTree.GROUP_CALL_DEFERRED, ...)`` (and do the same "
+"with ``set_group()`` and ``notify_group()`` respectively)."
+msgstr ""
+"``call_group()``, ``set_group()`` 및 ``notify_group()``는 이제 기본적으로 즉"
+"시 실행됩니다. 비용이 많이 드는 함수를 호출하는 경우 노드가 많이 포함된 그룹"
+"에서 사용하면 끊김 현상이 발생할 수 있습니다. 이전과 같이 지연된 호출을 사용"
+"하려면 ``call_group(...)``를 "
+"``call_group_flags(SceneTree.GROUP_CALL_DEFERRED, ...)``로 바꾸십시오(그리고 "
+"각각 ``set_group()`` 및 ``notify_group()``와 동일하게 수행)."
+
+msgid ""
+"Instead of ``rotation_degrees``, the ``rotation`` property is exposed to the "
+"editor, which is automatically displayed as degrees in the Inspector dock. "
+"This may break animations, as the conversion is not handled automatically by "
+"the conversion tool."
+msgstr ""
+"``rotation_degrees`` 대신 ``rotation`` 속성이 편집기에 노출되며 이는 자동으"
+"로 인스펙터 독에 각도로 표시됩니다. 변환 도구에서 변환이 자동으로 처리되지 않"
+"으므로 애니메이션이 중단될 수 있습니다."
+
+msgid ""
+":ref:`class_AABB`'s ``has_no_surface()`` was inverted and renamed to "
+"``has_surface()``."
+msgstr ""
+":ref:`class_AABB`의 ``has_no_surface()``가 반전되어 ``has_surface()``로 이름"
+"이 변경되었습니다."
+
+msgid ""
+":ref:`class_AABB` and :ref:`class_Rect2`'s ``has_no_area()`` was inverted "
+"and renamed to ``has_area()``."
+msgstr ""
+":ref:`class_AABB` 및 :ref:`class_Rect2`의 ``has_no_area()``가 반전되어 "
+"``has_area()``로 이름이 변경되었습니다."
+
+msgid ""
+":ref:`class_AnimatedTexture`'s ``fps`` property was replaced by "
+"``speed_scale``, which works the same as AnimationPlayer's "
+"``playback_speed`` property."
+msgstr ""
+":ref:`class_AnimatedTexture`의 ``fps`` 속성은 ``speed_scale``로 대체되었으"
+"며, 이는 AnimationPlayer의 ``playback_speed`` 속성과 동일하게 작동합니다."
+
+msgid ""
+":ref:`class_AnimatedSprite2D` and :ref:`class_AnimatedSprite3D` now allow "
+"negative ``speed_scale`` values. This may break animations if you relied on "
+"``speed_scale`` being internally clamped to ``0.0``."
+msgstr ""
+":ref:`class_AnimatedSprite2D` 및 :ref:`class_AnimatedSprite3D`는 이제 음수 "
+"``speed_scale`` 값을 허용합니다. 내부적으로 ``0.0``에 고정된 ``speed_scale``"
+"에 의존하는 경우 애니메이션이 중단될 수 있습니다."
+
+msgid ""
+":ref:`class_AnimatedSprite2D` and :ref:`class_AnimatedSprite3D`'s "
+"``playing`` property was removed. Use ``play()``/``stop()`` method instead "
+"OR configure ``autoplay`` animation via the SpriteFrames bottom panel (but "
+"not both at once)."
+msgstr ""
+":ref:`class_AnimatedSprite2D` 및 :ref:`class_AnimatedSprite3D`의 ``playing`` "
+"속성이 제거되었습니다. 대신 ``play()``/``stop()`` 방법을 사용하거나 "
+"SpriteFrames 하단 패널을 통해 ``autoplay`` 애니메이션을 구성합니다(그러나 동"
+"시에 둘 다는 아님)."
+
+msgid ""
+":ref:`class_Array`'s ``slice()`` second parameter (``end``) is now "
+"*exclusive*, instead of being inclusive. For example, this means that ``[1, "
+"2, 3].slice(0, 1)`` now returns ``[1]`` instead of ``[1, 2]``."
+msgstr ""
+":ref:`class_Array`의 ``slice()`` 두 번째 매개변수(``end``)는 이제 포괄적이 아"
+"닌 *배타적*입니다. 예를 들어 이는 ``[1, 2, 3].slice(0, 1)``가 이제 ``[1, "
+"2]`` 대신 ``[1]``를 반환한다는 의미입니다."
+
+msgid ""
+":ref:`class_BaseButton`'s signals are now ``button_up`` and ``button_down``. "
+"The ``pressed`` property is now ``button_pressed``."
+msgstr ""
+":ref:`class_BaseButton`의 시그널는 이제 ``button_up`` 및 ``button_down``입니"
+"다. ``pressed`` 속성은 이제 ``button_pressed``입니다."
+
+msgid ""
+":ref:`class_Camera2D`'s ``rotating`` property was replaced by "
+"``ignore_rotation``, which has inverted behavior."
+msgstr ""
+":ref:`class_Camera2D`의 ``rotating`` 속성은 동작이 반전된 ``ignore_rotation``"
+"로 대체되었습니다."
+
+msgid ""
+"Camera2D's ``zoom`` property was inverted: higher values are now more zoomed "
+"in, instead of less."
+msgstr ""
+"Camera2D의 ``zoom`` 속성이 반전되었습니다. 이제 더 높은 값이 더 작아지는 대"
+"신 더 많이 확대됩니다."
+
+msgid ""
+":ref:`class_Node`'s ``remove_and_skip()`` method was removed. If you need to "
+"reimplement it in a script, you can use the `old C++ implementation <https://"
+"github.com/godotengine/godot/blob/7936b3cc4c657e4b273b376068f095e1e0e4d82a/"
+"scene/main/node.cpp#L1910-L1945>`__ as a reference."
+msgstr ""
+":ref:`class_Node`의 ``remove_and_skip()`` 메서드가 제거되었습니다. 스크립트에"
+"서 다시 구현해야 하는 경우 `이전 C++ 구현 <https://github.com/godotengine/"
+"godot/blob/7936b3cc4c657e4b273b376068f095e1e0e4d82a/scene/main/"
+"node.cpp#L1910-L1945>`__을 참조로 사용할 수 있습니다."
+
+msgid ""
+"``OS.get_system_time_secs()`` should be converted to "
+"``Time.get_time_dict_from_system()[\"second\"]``."
+msgstr ""
+"``OS.get_system_time_secs()``는 ``Time.get_time_dict_from_system()"
+"[\"second\"]``로 변환되어야 합니다."
+
+msgid ""
+":ref:`class_ResourceSaver`'s ``save()`` method now has its arguments swapped "
+"around (``resource: Resource, path: String``). This also applies "
+"to :ref:`class_ResourceFormatSaver`'s ``_save()`` method."
+msgstr ""
+":ref:`class_ResourceSaver`의 ``save()`` 메서드에는 이제 인수가 바뀌었습니다"
+"(``resource: Resource, path: String``). 이는 :ref:`class_ResourceFormatSaver`"
+"의 ``_save()`` 방법에도 적용됩니다."
+
+msgid ""
+"A :ref:`class_StreamPeerTCP` must have ``poll()`` called on it to update its "
+"state, instead of relying on ``get_status()`` automatically polling: "
+"`GH-59582 <https://github.com/godotengine/godot/pull/59582>`__"
+msgstr ""
+":ref:`class_StreamPeerTCP`는 ``get_status()`` 자동 폴링에 의존하는 대신 상태"
+"를 업데이트하기 위해 ``poll()``를 호출해야 합니다. `GH-59582 <https://"
+"github.com/godotengine/godot/pull/59582>`__"
+
+msgid ""
+":ref:`class_String`'s ``right()`` method `has changed behavior <https://"
+"github.com/godotengine/godot/pull/36180>`__: it now returns a number of "
+"characters from the right of the string, rather than the right side of the "
+"string from a given position. If you need the old behavior, you can use "
+"``substr()`` instead."
+msgstr ""
+":ref:`class_String`의 ``right()`` 메서드 `동작이 변경되었습니다 <https://"
+"github.com/godotengine/godot/pull/36180>`__: 이제 지정된 위치에서 문자열 오른"
+"쪽이 아닌 문자열 오른쪽에서 여러 문자를 반환합니다. 이전 동작이 필요한 경우 "
+"대신 ``substr()``를 사용할 수 있습니다."
+
+msgid ""
+"``is_connected_to_host()`` was removed from StreamPeerTCP and PacketPeerUDP "
+"as per `GH-59582 <https://github.com/godotengine/godot/pull/59582>`__. "
+"``get_status()`` can be used in StreamPeerTCP instead. "
+"``is_socket_connected()`` can be used in :ref:`class_PacketPeerUDP` instead."
+msgstr ""
+"``is_connected_to_host()``는 `GH-59582 <https://github.com/godotengine/godot/"
+"pull/59582>`__에 따라 StreamPeerTCP 및 PacketPeerUDP에서 제거되었습니다. 대"
+"신 ``get_status()``를 StreamPeerTCP에서 사용할 수 있습니다. 대신 "
+"``is_socket_connected()``를 :ref:`class_PacketPeerUDP`에서 사용할 수 있습니"
+"다."
+
+msgid ""
+"In ``_get_property_list()``, the ``or_lesser`` property hint string is now "
+"``or_less``."
+msgstr ""
+"``_get_property_list()``에서 ``or_lesser`` 속성 힌트 문자열은 이제 "
+"``or_less``입니다."
+
+msgid ""
+"In ``_get_property_list()``, the ``noslider`` property hint string is now "
+"``no_slider``."
+msgstr ""
+"``_get_property_list()``에서 ``noslider`` 속성 힌트 문자열은 이제 "
+"``no_slider``입니다."
+
+msgid ""
+"VisualShaderNodeVec4Parameter now takes a :ref:`class_Vector4` as parameter "
+"instead of a :ref:`class_Quaternion`."
+msgstr ""
+"VisualShaderNodeVec4Parameter는 이제 :ref:`class_Quaternion` 대"
+"신 :ref:`class_Vector4`를 매개변수로 사용합니다."
+
+msgid "**Removed or replaced nodes/resources**"
+msgstr "**노드/리소스 제거 또는 교체됨**"
+
+msgid ""
+"This lists all nodes that were replaced by another node requiring different "
+"configuration. The setup must be done from scratch again, as the project "
+"converter doesn't support updating existing setups:"
+msgstr ""
+"여기에는 다른 구성이 필요한 다른 노드로 교체된 모든 노드가 나열됩니다. 프로젝"
+"트 변환기는 기존 설정 업데이트를 지원하지 않으므로 설정을 처음부터 다시 수행"
+"해야 합니다."
 
 msgid "Removed node"
 msgstr "제거된 노드"
 
+msgid "Closest approximation"
+msgstr "컷 아웃(Cutout) 애니메이션"
+
 msgid "Comment"
 msgstr "주석"
+
+msgid "AnimationTreePlayer"
+msgstr "AnimationPlayer"
+
+msgid "AnimationTree"
+msgstr "애니메이션"
+
+msgid "AnimationTreePlayer was deprecated since Godot 3.1."
+msgstr "AnimationTreePlayer는 Godot 3.1부터 더 이상 사용되지 않습니다."
+
+msgid "BakedLightmap"
+msgstr "구워진 라이트맵"
 
 msgid "LightmapGI"
 msgstr "라이트맵GI"
 
+msgid "See :ref:`doc_using_lightmap_gi`."
+msgstr ":ref:`doc_using_multimesh`"
+
+msgid "BakedLightmapData"
+msgstr "구워진 라이트맵"
+
+msgid "LightmapGIData"
+msgstr "라이트맵GI데이터"
+
+msgid "BitmapFont"
+msgstr "비트맵글꼴"
+
+msgid "FontFile"
+msgstr "파일 필터"
+
+msgid "See :ref:`doc_gui_using_fonts`."
+msgstr ":ref:`doc_gui_containers`"
+
+msgid "DynamicFont"
+msgstr "동적 언어:"
+
+msgid "DynamicFontData"
+msgstr "동적 성질"
+
 msgid "ClippedCamera"
 msgstr "ClippedCamera"
+
+msgid "Camera2D or Camera3D"
+msgstr "Camera2D 또는 Camera3D"
+
+msgid "Camera's pyramid shape was moved to :ref:'class_Camera3D'."
+msgstr "카메라의 피라미드 모양이 :ref:'class_Camera3D'로 이동되었습니다."
+
+msgid "InterpolatedCamera"
+msgstr "보간"
+
+msgid "Navigation2D"
+msgstr "내비게이션"
+
+msgid "Node2D"
+msgstr "Node2D"
+
+msgid ""
+"Replaced by :ref:`other 2D Navigation nodes <doc_navigation_overview_2d>`."
+msgstr ""
+":ref:`other 2D 탐색 노드 <doc_navigation_overview_2d>`으로 대체되었습니다."
+
+msgid "Navigation3D"
+msgstr "내비게이션"
+
+msgid ""
+"Replaced by :ref:`other 3D Navigation nodes <doc_navigation_overview_3d>`."
+msgstr ""
+":ref:`other 3D Navigation 노드 <doc_navigation_overview_3d>`으로 대체되었습니"
+"다."
+
+msgid "OpenSimplexNoise"
+msgstr "OpenSimplexNoise"
+
+msgid "FastNoiseLite"
+msgstr "FastNoiseLite"
+
+msgid ""
+"Has different parameters and more noise types such as cellular. No support "
+"for 4D noise as it's absent from the FastNoiseLite library."
+msgstr ""
+"다양한 매개변수와 셀룰러와 같은 더 많은 노이즈 유형이 있습니다. "
+"FastNoiseLite 라이브러리에는 4D 노이즈가 없으므로 지원되지 않습니다."
+
+msgid "ToolButton"
+msgstr "버튼(Button)."
+
+msgid "Button"
+msgstr "버튼(Button)."
+
+msgid "ToolButton was Button with the **Flat** property enabled by default."
+msgstr "ToolButton은 기본적으로 **Flat** 속성이 활성화된 Button이었습니다."
+
+msgid "YSort"
+msgstr "Y정렬"
+
+msgid "Node2D or Control"
+msgstr "Flow Control(흐름 제어)"
+
+msgid "CanvasItem has a new **Y Sort Enabled** property in 4.0."
+msgstr "CanvasItem에는 4.0의 새로운 **Y 정렬 활성화** 속성이 있습니다."
+
+msgid "ProximityGroup"
+msgstr "근접 그룹"
+
+msgid ":ref:`class_VisibleOnScreenNotifier3D` can act as a replacement."
+msgstr ":ref:`class_VisibleOnScreenNotifier3D`가 대체 역할을 할 수 있습니다."
+
+msgid "Portal"
+msgstr "포트(Ports)"
+
+msgid ""
+"Portal and room occlusion culling was replaced by raster :ref:`occlusion "
+"culling <doc_occlusion_culling>` (OccluderInstance3D node), which requires a "
+"different setup process."
+msgstr ""
+"포털 및 공간 폐색 컬링은 래스터 :ref:`occlusion 컬링 "
+"<doc_occlusion_culling>`(OccluderInstance3D 노드)으로 대체되었으며, 이를 위해"
+"서는 다른 설정 프로세스가 필요합니다."
+
+msgid "Room"
+msgstr "방"
+
+msgid "RoomManager"
+msgstr "프로젝트 매니저(Project Manager)"
+
+msgid "RoomGroup"
+msgstr "그룹"
+
+msgid "Occluder"
+msgstr "어클루전 모드"
+
+msgid ""
+"Geometry occlusion culling was replaced by raster :ref:`occlusion culling "
+"<doc_occlusion_culling>` (OccluderInstance3D node), which requires a "
+"different setup process."
+msgstr ""
+"지오메트리 오클루전 컬링은 래스터 :ref:`occlusion 컬링 "
+"<doc_occlusion_culling>`(OccluderInstance3D 노드)으로 대체되었으며, 이를 위해"
+"서는 다른 설정 프로세스가 필요합니다."
 
 msgid "OccluderShapeSphere"
 msgstr "OccluderShapeSphere"
 
+msgid "Resource"
+msgstr "리소스"
+
+msgid ""
+"If loading an old project, the node will be replaced with its *Closest "
+"approximation* automatically (even if not using the project upgrade tool)."
+msgstr ""
+"이전 프로젝트를 로드하는 경우 노드는 자동으로 *가장 가까운 근사치*로 대체됩니"
+"다(프로젝트 업그레이드 도구를 사용하지 않는 경우에도)."
+
+msgid "**Threading changes**"
+msgstr "**테마:**"
+
+msgid ""
+":ref:`Threading <doc_using_multiple_threads>` APIs have changed in 4.0. For "
+"example, the following code snippet in Godot 3.x must be modified to work in "
+"4.0:"
+msgstr ""
+":ref:`Threading <doc_using_multiple_threads>` API가 4.0에서 변경되었습니다. "
+"예를 들어, Godot 3.x의 다음 코드 조각은 4.0에서 작동하도록 수정되어야 합니다:"
+
+msgid ""
+"``Thread.is_active()`` is no longer used and should be converted to "
+"``Thread.is_alive()``."
+msgstr ""
+"``Thread.is_active()``는 더 이상 사용되지 않으며 ``Thread.is_alive()``로 변환"
+"해야 합니다."
+
+msgid ""
+"See the `changelog <https://github.com/godotengine/godot/blob/master/"
+"CHANGELOG.md>`__ for a full list of changes between Godot 3.x and 4."
+msgstr ""
+"Godot 3.x와 4 사이의 전체 변경 사항 목록은 `changelog <https://github.com/"
+"godotengine/godot/blob/master/CHANGELOG.md>`__을 참조하세요."
+
+msgid "ArrayMesh resource compatibility breakage"
+msgstr "ArrayMesh 리소스 호환성 손상"
+
+msgid ""
+"If you've saved an ArrayMesh resource to a ``.res`` or ``.tres`` file, the "
+"format used in 4.0 is not compatible with the one used in 3.x. You will need "
+"to go through the process of importing the source mesh file and saving it as "
+"an ArrayMesh resource again."
+msgstr ""
+"ArrayMesh 리소스를 ``.res`` 또는 ``.tres`` 파일에 저장한 경우 4.0에서 사용되"
+"는 형식은 3.x에서 사용되는 형식과 호환되지 않습니다. 소스 메시 파일을 가져와 "
+"다시 ArrayMesh 리소스로 저장하는 과정을 거쳐야 합니다."
+
+msgid ""
+"List of automatically renamed methods, properties, signals and constants"
+msgstr "자동으로 이름이 변경된 메서드, 속성, 시그널 및 상수 목록"
+
+msgid ""
+"The `editor/renames_map_3_to_4.cpp <https://github.com/godotengine/godot/"
+"blob/master/editor/renames_map_3_to_4.cpp>`__ source file lists all "
+"automatic renames performed by the project upgrade tool. Lines that are "
+"commented out refer to API renames that :ref:`cannot be performed "
+"automatically <doc_upgrading_to_godot_4_manual_rename>`."
+msgstr ""
+"`editor/renames_map_3_to_4.cpp <https://github.com/godotengine/godot/blob/"
+"master/editor/renames_map_3_to_4.cpp>`__ 소스 파일에는 프로젝트 업그레이드 도"
+"구에서 수행되는 자동 이름 바꾸기가 모두 나열되어 있습니다. 주석 처리된 줄"
+"은 :ref:`자동으로 수행할 수 없는 API 이름 변경 "
+"<doc_upgrading_to_godot_4_manual_rename>`을 나타냅니다."
+
 msgid "Porting editor settings"
 msgstr "편집기 설정 포팅하기"
 
+msgid ""
+"Godot 3.x and 4.0 use different editor settings files. This means their "
+"settings can be changed independently from each other."
+msgstr ""
+"Godot 3.x와 4.0은 다른 편집기 설정 파일을 사용합니다. 즉, 설정을 서로 독립적"
+"으로 변경할 수 있습니다."
+
+msgid ""
+"If you wish to port over your Godot 3.x settings to Godot 4, open "
+"the :ref:`editor settings folder <doc_data_paths_editor_data_paths>` and "
+"copy ``editor_settings-3.tres`` to ``editor_settings-4.tres`` while the "
+"Godot 4 editor is closed."
+msgstr ""
+"Godot 3.x 설정을 Godot 4로 포팅하려면 :ref:`editor 설정 폴더 "
+"<doc_data_paths_editor_data_paths>`를 열고 Godot 4 편집기가 닫혀 있는 동안 "
+"``editor_settings-3.tres``를 ``editor_settings-4.tres``로 복사하세요."
+
+msgid ""
+"Many settings' names and categories have changed since Godot 3.x. Editor "
+"settings whose name or category has changed won't carry over to Godot 4.0; "
+"you will have to set their values again."
+msgstr ""
+"Godot 3.x 이후로 많은 설정의 이름과 카테고리가 변경되었습니다. 이름이나 카테"
+"고리가 변경된 편집기 설정은 Godot 4.0으로 이전되지 않습니다. 해당 값을 다시 "
+"설정해야 합니다."
+
 msgid "Updating version control settings"
 msgstr "버전 제어 설정 업데이트하기"
+
+msgid ""
+"Godot 3.x and 4.x have entirely different lists of files and folders that "
+"should be ignored by your :ref:`version control "
+"system<doc_version_control_systems>`."
+msgstr ""
+"Godot 3.x와 4.x에는 :ref:`version control "
+"system<doc_version_control_systems>`에서 무시해야 하는 완전히 다른 파일 및 폴"
+"더 목록이 있습니다."

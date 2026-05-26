@@ -11,11 +11,179 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Converting GLSL to Godot shaders"
+msgstr "스프라이트를 2D 메시로 변환하기"
+
+msgid ""
+"This document explains the differences between Godot's shading language and "
+"GLSL and gives practical advice on how to migrate shaders from other "
+"sources, such as Shadertoy and The Book of Shaders, into Godot shaders."
+msgstr ""
+"이 문서는 Godot의 셰이딩 언어와 GLSL의 차이점을 설명하고 Shadertoy 및 The "
+"Book of 셰이더와 같은 다른 소스의 셰이더를 Godot 셰이더로 마이그레이션하는 방"
+"법에 대한 실용적인 조언을 제공합니다."
+
+msgid ""
+"For detailed information on Godot's shading language, please refer to "
+"the :ref:`Shading Language <doc_shading_language>` reference."
+msgstr ""
+"Godot의 셰이딩 언어에 대한 자세한 정보는 :ref:`Shading Language <doc_shading_"
+"언어>` 참조를 참조하세요."
+
+msgid "GLSL"
+msgstr "GLSL"
+
+msgid ""
+"Godot uses a shading language based on GLSL with the addition of a few "
+"quality-of-life features. Accordingly, most features available in GLSL are "
+"available in Godot's shading language."
+msgstr ""
+"Godot는 몇 가지 품질 향상 기능을 추가하여 GLSL 기반의 셰이딩 언어를 사용합니"
+"다. 따라서 GLSL에서 사용할 수 있는 대부분의 기능은 Godot의 셰이딩 언어에서도 "
+"사용할 수 있습니다."
+
+msgid "Shader programs"
+msgstr "셰이더 프로그램"
+
+msgid ""
+"In GLSL, each shader uses a separate program. You have one program for the "
+"vertex shader and one for the fragment shader. In Godot, you have a single "
+"shader that contains a ``vertex`` and/or a ``fragment`` function. If you "
+"only choose to write one, Godot will supply the other."
+msgstr ""
+"GLSL에서는 각 셰이더가 별도의 프로그램을 사용합니다. 정점 셰이더에 대한 프로"
+"그램 하나와 조각 셰이더에 대한 프로그램이 하나 있습니다. Godot에는 "
+"``vertex`` 및/또는 ``fragment`` 기능을 포함하는 단일 셰이더가 있습니다. 하나"
+"만 작성하기로 선택하면 Godot가 다른 하나를 제공할 것입니다."
+
+msgid ""
+"Godot allows uniform variables and functions to be shared by defining the "
+"fragment and vertex shaders in one file. In GLSL, the vertex and fragment "
+"programs cannot share variables except when varyings are used."
+msgstr ""
+"Godot는 하나의 파일에 조각과 정점 셰이더를 정의하여 균일한 변수와 함수를 공유"
+"할 수 있도록 합니다. GLSL에서 정점 및 조각 프로그램은 가변 변수가 사용되는 경"
+"우를 제외하고는 변수를 공유할 수 없습니다."
+
+msgid "Vertex attributes"
+msgstr "``x.attribute``"
+
+msgid ""
+"In GLSL, you can pass in per-vertex information using attributes and have "
+"the flexibility to pass in as much or as little as you want. In Godot, you "
+"have a set number of input attributes, including ``VERTEX`` (position), "
+"``COLOR``, ``UV``, ``UV2``, ``NORMAL``. Each shaders' page in the shader "
+"reference section of the documentation comes with a complete list of its "
+"vertex attributes."
+msgstr ""
+"GLSL에서는 속성을 사용하여 정점별 정보를 전달할 수 있으며 원하는 만큼 전달할 "
+"수 있는 유연성을 갖습니다. Godot에는 ``VERTEX``(위치), ``COLOR``, ``UV``, "
+"``UV2``, ``NORMAL``를 포함하여 설정된 수의 입력 속성이 있습니다. 문서의 셰이"
+"더 참조 섹션에 있는 각 셰이더' 페이지에는 정점 속성의 전체 목록이 함께 제공됩"
+"니다."
+
 msgid "gl_Position"
 msgstr "gl_Position"
 
+msgid ""
+"``gl_Position`` receives the final position of a vertex specified in the "
+"vertex shader. It is specified by the user in clip space. Typically, in "
+"GLSL, the model space vertex position is passed in using a vertex attribute "
+"called ``position`` and you handle the conversion from model space to clip "
+"space manually."
+msgstr ""
+"``gl_Position``는 정점 셰이더에 지정된 정점의 최종 위치를 받습니다. 클립 공간"
+"에서 사용자가 지정합니다. 일반적으로 GLSL에서 모델 공간 정점 위치는 "
+"``position``라는 정점 속성을 사용하여 전달되며 모델 공간에서 클립 공간으로의 "
+"변환을 수동으로 처리합니다."
+
+msgid ""
+"In Godot, ``VERTEX`` specifies the vertex position in model space at the "
+"beginning of the ``vertex`` function. Godot also handles the final "
+"conversion to clip space after the user-defined ``vertex`` function is run. "
+"If you want to skip the conversion from model to view space, you can set the "
+"``render_mode`` to ``skip_vertex_transform``. If you want to skip all "
+"transforms, set ``render_mode`` to ``skip_vertex_transform`` and set the "
+"``PROJECTION_MATRIX`` to ``mat4(1.0)`` in order to nullify the final "
+"transform from view space to clip space."
+msgstr ""
+"Godot에서 ``VERTEX``는 ``vertex`` 함수 시작 부분에서 모델 공간의 정점 위치를 "
+"지정합니다. Godot는 또한 사용자 정의 ``vertex`` 함수가 실행된 후 클립 공간으"
+"로의 최종 변환을 처리합니다. 모델에서 뷰 공간으로의 변환을 건너뛰려면 "
+"``render_mode``를 ``skip_vertex_transform``로 설정할 수 있습니다. 모든 변환"
+"을 건너뛰려면 ``render_mode``를 ``skip_vertex_transform``로 설정하고 "
+"``PROJECTION_MATRIX``를 ``mat4(1.0)``로 설정하여 뷰 공간에서 클립 공간으로의 "
+"최종 변환을 무효화하세요."
+
+msgid "Varyings"
+msgstr "변화"
+
+msgid ""
+"Varyings are a type of variable that can be passed from the vertex shader to "
+"the fragment shader. In modern GLSL (3.0 and up), varyings are defined with "
+"the ``in`` and ``out`` keywords. A variable going out of the vertex shader "
+"is defined with ``out`` in the vertex shader and ``in`` inside the fragment "
+"shader."
+msgstr ""
+"가변은 정점 셰이더에서 조각 셰이더로 전달될 수 있는 변수 유형입니다. 최신 "
+"GLSL(3.0 이상)에서 가변은 ``in`` 및 ``out`` 키워드로 정의됩니다. 정점 셰이더 "
+"밖으로 나가는 변수는 정점 셰이더에서는 ``out``로, 조각 셰이더 내부에서는 "
+"``in``로 정의됩니다."
+
+msgid "Main"
+msgstr "메인"
+
+msgid ""
+"In GLSL, each shader program looks like a self-contained C-style program. "
+"Accordingly, the main entry point is ``main``. If you are copying a vertex "
+"shader, rename ``main`` to ``vertex`` and if you are copying a fragment "
+"shader, rename ``main`` to ``fragment``."
+msgstr ""
+"GLSL에서 각 셰이더 프로그램은 독립적인 C 스타일 프로그램처럼 보입니다. 따라"
+"서 주요 진입점은 ``main``입니다. 정점 셰이더를 복사하는 경우 ``main``의 이름"
+"을 ``vertex``로 바꾸고 조각 셰이더를 복사하는 경우 ``main``의 이름을 "
+"``fragment``로 바꿉니다."
+
+msgid "Macros"
+msgstr "매크로"
+
+msgid ""
+"The :ref:`Godot shader preprocessor<doc_shader_preprocessor>` supports the "
+"following macros:"
+msgstr ""
+":ref:`Godot shader preprocessor<doc_shader_preprocessor>`는 다음 매크로를 지"
+"원합니다."
+
+msgid "``#define`` / ``#undef``"
+msgstr "``#define`` / ``#undef``"
+
+msgid ""
+"``#if``, ``#elif``, ``#else``, ``#endif``, ``defined()``, ``#ifdef``, "
+"``#ifndef``"
+msgstr ""
+"``#if``, ``#elif``, ``#else``, ``#endif``, ``defined()``, ``#ifdef``, "
+"``#ifndef``"
+
+msgid ""
+"``#include`` (only ``.gdshaderinc`` files and with a maximum depth of 25)"
+msgstr "``#include``(``.gdshaderinc`` 파일만 해당, 최대 깊이는 25)"
+
+msgid ""
+"``#pragma disable_preprocessor``, which disables preprocessing for the rest "
+"of the file"
+msgstr ""
+"``#pragma disable_preprocessor``, 파일의 나머지 부분에 대한 전처리를 비활성화"
+"합니다."
+
 msgid "Variables"
 msgstr "변수"
+
+msgid ""
+"GLSL has many built-in variables that are hard-coded. These variables are "
+"not uniforms, so they are not editable from the main program."
+msgstr ""
+"GLSL에는 하드 코딩된 많은 내장 변수가 있습니다. 이러한 변수는 균일하지 않으므"
+"로 기본 프로그램에서 편집할 수 없습니다."
 
 msgid "Variable"
 msgstr "변수"
@@ -23,39 +191,326 @@ msgstr "변수"
 msgid "Type"
 msgstr "유형"
 
+msgid "Equivalent"
+msgstr "동등한"
+
 msgid "Description"
 msgstr "설명"
+
+msgid "gl_FragColor"
+msgstr "gl_FragColor"
+
+msgid "out vec4"
+msgstr "아웃 vec4"
+
+msgid "COLOR"
+msgstr "색상"
+
+msgid "Output color for each pixel."
+msgstr "각 픽셀의 출력 색상입니다."
+
+msgid "gl_FragCoord"
+msgstr "gl_FragCoord"
+
+msgid "vec4"
+msgstr "vec4"
+
+msgid "FRAGCOORD"
+msgstr "프래그코트"
 
 msgid "For full screen quads. For smaller quads, use UV."
 msgstr ""
 "전체 화면 사변형에 대한 것입니다. 더 작은 사변형에 대해서는, UV를 사용하세요."
 
+msgid "VERTEX"
+msgstr "버텍스"
+
 msgid "Position of Vertex, output from Vertex Shader."
 msgstr "버텍스의 위치, 버텍스 셰이더에서 출력."
+
+msgid "gl_PointSize"
+msgstr "gl_PointSize"
 
 msgid "float"
 msgstr "float"
 
+msgid "POINT_SIZE"
+msgstr "POINT_SIZE"
+
 msgid "Size of Point primitive."
 msgstr "점 프리미티브의 크기."
+
+msgid "gl_PointCoord"
+msgstr "gl_PointCoord"
+
+msgid "vec2"
+msgstr "vec2"
+
+msgid "POINT_COORD"
+msgstr "POINT_COORD"
 
 msgid "Position on point when drawing Point primitives."
 msgstr "점 프리미티브를 그릴 때 점의 위치."
 
+msgid "gl_FrontFacing"
+msgstr "gl_FrontFacing"
+
 msgid "bool"
 msgstr "bool"
+
+msgid "FRONT_FACING"
+msgstr "FRONT_FACING"
 
 msgid "True if front face of primitive."
 msgstr "프리미티브의 앞면이면 True입니다."
 
+msgid "Coordinates"
+msgstr "좌표"
+
+msgid ""
+"``gl_FragCoord`` in GLSL and ``FRAGCOORD`` in the Godot shading language use "
+"the same coordinate system. If using UV in Godot, the y-coordinate will be "
+"flipped upside down."
+msgstr ""
+"GLSL의 ``gl_FragCoord``와 Godot 셰이딩 언어의 ``FRAGCOORD``는 동일한 좌표계"
+"를 사용합니다. Godot에서 UV를 사용하면 y좌표가 거꾸로 뒤집힐 것입니다."
+
 msgid "Precision"
 msgstr "정밀도"
+
+msgid ""
+"In GLSL, you can define the precision of a given type (float or int) at the "
+"top of the shader with the ``precision`` keyword. In Godot, you can set the "
+"precision of individual variables as you need by placing precision "
+"qualifiers ``lowp``, ``mediump``, and ``highp`` before the type when "
+"defining the variable. For more information, see the :ref:`Shading Language "
+"<doc_shading_language>` reference."
+msgstr ""
+"GLSL에서는 ``precision`` 키워드를 사용하여 셰이더 상단에서 지정된 유형(float "
+"또는 int)의 정밀도를 정의할 수 있습니다. Godot에서는 변수를 정의할 때 유형 앞"
+"에 정밀도 한정자 ``lowp``, ``mediump`` 및 ``highp``를 배치하여 필요에 따라 개"
+"별 변수의 정밀도를 설정할 수 있습니다. 자세한 내용은 :ref:`Shading Language "
+"<doc_shading_언어>` 참조를 확인하세요."
+
+msgid "Shadertoy"
+msgstr "셰이더토이"
+
+msgid ""
+"`Shadertoy <https://www.shadertoy.com/results?"
+"query=&sort=popular&from=10&num=4>`_ is a website that makes it easy to "
+"write fragment shaders and create `pure magic <https://www.shadertoy.com/"
+"view/4tjGRh>`_."
+msgstr ""
+"`Shadertoy <https://www.shadertoy.com/results?"
+"query=&sort=popular&from=10&num=4>`_은 조각 셰이더를 쉽게 작성하고 `순수 마"
+"법 <https://www.shadertoy.com/view/4tjGRh>`_을 생성할 수 있게 해주는 웹사이트"
+"입니다."
+
+msgid ""
+"Shadertoy does not give the user full control over the shader. It handles "
+"all the input and uniforms and only lets the user write the fragment shader."
+msgstr ""
+"Shadertoy는 사용자에게 셰이더에 대한 모든 권한을 부여하지 않습니다. 모든 입력"
+"과 유니폼을 처리하며 사용자가 셰이더 조각만 작성할 수 있도록 합니다."
 
 msgid "Types"
 msgstr "타입(Types)"
 
+msgid ""
+"Shadertoy uses the webgl spec, so it runs a slightly different version of "
+"GLSL. However, it still has the regular types, including constants and "
+"macros."
+msgstr ""
+"Shadertoy는 webgl 사양을 사용하므로 약간 다른 버전의 GLSL을 실행합니다. 그러"
+"나 상수와 매크로를 포함한 일반 유형은 여전히 존재합니다."
+
 msgid "mainImage"
 msgstr "메인 이미지(mainImage)"
 
+msgid ""
+"The main point of entry to a Shadertoy shader is the ``mainImage`` function. "
+"``mainImage`` has two parameters, ``fragColor`` and ``fragCoord``, which "
+"correspond to ``COLOR`` and ``FRAGCOORD`` in Godot, respectively. These "
+"parameters are handled automatically in Godot, so you do not need to include "
+"them as parameters yourself. Anything in the ``mainImage`` function should "
+"be copied into the ``fragment`` function when porting to Godot."
+msgstr ""
+"Shadertoy 셰이더에 대한 주요 진입점은 ``mainImage`` 기능입니다. ``mainImage``"
+"에는 ``fragColor``와 ``fragCoord``라는 두 개의 매개변수가 있는데, 이는 각각 "
+"Godot의 ``COLOR`` 및 ``FRAGCOORD``에 해당합니다. 이 매개변수는 Godot에서 자동"
+"으로 처리되므로 직접 매개변수로 포함할 필요가 없습니다. ``mainImage`` 함수에 "
+"있는 모든 것은 Godot로 포팅할 때 ``fragment`` 함수에 복사되어야 합니다."
+
+msgid ""
+"In order to make writing fragment shaders straightforward and easy, "
+"Shadertoy handles passing a lot of helpful information from the main program "
+"into the fragment shader for you. A few of these have no equivalents in "
+"Godot because Godot has chosen not to make them available by default. This "
+"is okay because Godot gives you the ability to make your own uniforms. For "
+"variables whose equivalents are listed as \"Provide with Uniform\", users "
+"are responsible for creating that uniform themselves. The description gives "
+"the reader a hint about what they can pass in as a substitute."
+msgstr ""
+"조각 셰이더를 간단하고 쉽게 작성하기 위해 Shadertoy는 기본 프로그램에서 조각 "
+"셰이더로 많은 유용한 정보를 전달하는 작업을 처리합니다. 이들 중 일부는 Godot"
+"에서 기본적으로 사용할 수 없도록 선택했기 때문에 Godot에 동등한 기능이 없습니"
+"다. Godot에서는 자신만의 유니폼을 만들 수 있는 능력을 제공하기 때문에 괜찮습"
+"니다. 해당 항목이 \"유니폼 제공\"으로 나열된 변수의 경우 사용자는 해당 유니폼"
+"을 직접 생성할 책임이 있습니다. 설명은 독자에게 대체물로 전달할 수 있는 내용"
+"에 대한 힌트를 제공합니다."
+
 msgid "fragColor"
 msgstr "fragColor"
+
+msgid "fragCoord"
+msgstr "조각좌표"
+
+msgid "FRAGCOORD.xy"
+msgstr "FRAGCOORD.xy"
+
+msgid "iResolution"
+msgstr "아이레졸루션"
+
+msgid "vec3"
+msgstr "vec3"
+
+msgid "1.0 / SCREEN_PIXEL_SIZE"
+msgstr "1.0 / SCREEN_PIXEL_SIZE"
+
+msgid "Can also pass in manually."
+msgstr "수동으로 전달할 수도 있습니다."
+
+msgid "iTime"
+msgstr "아이타임"
+
+msgid "TIME"
+msgstr "시간"
+
+msgid "Time since shader started."
+msgstr "셰이더가 시작된 이후의 시간입니다."
+
+msgid "iTimeDelta"
+msgstr "아이타임델타"
+
+msgid "Provide with Uniform"
+msgstr "유니폼 제공"
+
+msgid "Time to render previous frame."
+msgstr "이전 프레임을 렌더링하는 시간입니다."
+
+msgid "iFrame"
+msgstr "아이프레임"
+
+msgid "Frame number."
+msgstr "프레임 번호."
+
+msgid "iChannelTime[4]"
+msgstr "iChannelTime[4]"
+
+msgid "Time since that particular texture started."
+msgstr "특정 텍스처가 시작된 이후의 시간입니다."
+
+msgid "iMouse"
+msgstr "아이마우스"
+
+msgid "Mouse position in pixel coordinates."
+msgstr "픽셀 좌표의 마우스 위치입니다."
+
+msgid "iDate"
+msgstr "iDate"
+
+msgid "Current date, expressed in seconds."
+msgstr "현재 날짜(초 단위로 표시)"
+
+msgid "iChannelResolution[4]"
+msgstr "iChannelResolution[4]"
+
+msgid "1.0 / TEXTURE_PIXEL_SIZE"
+msgstr "1.0 / TEXTURE_PIXEL_SIZE"
+
+msgid "Resolution of particular texture."
+msgstr "특정 질감의 해상도."
+
+msgid "iChanneli"
+msgstr "아이채널리"
+
+msgid "Sampler2D"
+msgstr "샘플러2D"
+
+msgid "TEXTURE"
+msgstr "질감"
+
+msgid "Godot provides only one built-in; user can make more."
+msgstr ""
+"Godot는 단 하나의 내장 기능만 제공합니다. 사용자는 더 많은 것을 만들 수 있습"
+"니다."
+
+msgid ""
+"``fragCoord`` behaves the same as ``gl_FragCoord`` in :ref:`GLSL "
+"<glsl_coordinates>` and ``FRAGCOORD`` in Godot."
+msgstr ""
+"``fragCoord``는 :ref:`GLSL <glsl_coordinates>`의 ``gl_FragCoord`` 및 Godot의 "
+"``FRAGCOORD``와 동일하게 작동합니다."
+
+msgid "The Book of Shaders"
+msgstr "셰이더의 책"
+
+msgid ""
+"Similar to Shadertoy, `The Book of Shaders <https://thebookofshaders.com>`_ "
+"provides access to a fragment shader in the web browser, with which the user "
+"may interact. The user is restricted to writing fragment shader code with a "
+"set list of uniforms passed in and with no ability to add additional "
+"uniforms."
+msgstr ""
+"Shadertoy와 마찬가지로 `The Book of 셰이더 <https://thebookofshaders.com>`_"
+"는 사용자가 상호 작용할 수 있는 웹 브라우저의 조각 셰이더에 대한 액세스를 제"
+"공합니다. 사용자는 유니폼 세트 목록이 전달되고 추가 유니폼을 추가할 수 없는 "
+"조각 셰이더 코드를 작성하도록 제한됩니다."
+
+msgid ""
+"For further help on porting shaders to various frameworks generally, The "
+"Book of Shaders provides a `page <https://thebookofshaders.com/04>`_ on "
+"running shaders in various frameworks."
+msgstr ""
+"일반적으로 셰이더를 다양한 프레임워크로 포팅하는 데 대한 추가 도움말을 보려"
+"면 셰이더 책에서 다양한 프레임워크에서 셰이더 실행에 대한 `page <https://"
+"thebookofshaders.com/04>`_을 제공합니다."
+
+msgid ""
+"The Book of Shaders uses the webgl spec, so it runs a slightly different "
+"version of GLSL. However, it still has the regular types, including "
+"constants and macros."
+msgstr ""
+"셰이더의 책은 webgl 사양을 사용하므로 약간 다른 버전의 GLSL을 실행합니다. 그"
+"러나 상수와 매크로를 포함한 일반 유형은 여전히 존재합니다."
+
+msgid ""
+"The entry point for a Book of Shaders fragment shader is ``main``, just like "
+"in GLSL. Everything written in a Book of Shaders ``main`` function should be "
+"copied into Godot's ``fragment`` function."
+msgstr ""
+"셰이더 조각 셰이더 책의 진입점은 GLSL과 마찬가지로 ``main``입니다. 셰이더 "
+"``main`` 함수 책에 쓰여진 모든 내용은 Godot의 ``fragment`` 함수에 복사되어야 "
+"합니다."
+
+msgid ""
+"The Book of Shaders sticks closer to plain GLSL than Shadertoy does. It also "
+"implements fewer uniforms than Shadertoy."
+msgstr ""
+"셰이더 책은 Shadertoy보다 일반 GLSL에 더 가깝습니다. 또한 Shadertoy보다 더 적"
+"은 수의 유니폼을 구현합니다."
+
+msgid "u_resolution"
+msgstr "u_resolution"
+
+msgid "u_time"
+msgstr "u_time"
+
+msgid "u_mouse"
+msgstr "u_mouse"
+
+msgid ""
+"The Book of Shaders uses the same coordinate system as :ref:`GLSL "
+"<glsl_coordinates>`."
+msgstr ""
+"셰이더의 책은 :ref:`GLSL <glsl_coordinates>`과 동일한 좌표계를 사용합니다."

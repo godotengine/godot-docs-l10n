@@ -21,6 +21,17 @@ msgstr ""
 "우리는 이미 씬과 스크립트가 어떻게 다른지 알아 보았습니다. 스크립트는 명령형 "
 "코드로 엔진 클래스 확장을 정의하고, 씬은 선언형 코드로 정의합니다."
 
+msgid ""
+"Each system's capabilities are different as a result. Scenes can define how "
+"an extended class initializes, but not what its behavior actually is. Scenes "
+"are often used in conjunction with a script, the scene declaring a "
+"composition of nodes, and the script adding behavior with imperative code."
+msgstr ""
+"결과적으로 각 시스템의 능력은 다릅니다. 씬은 어떻게 확장된 클래스를 초기화하"
+"는 지 정의할 수 있지만, 실제 행동은 정의할 수 없습니다. 씬은 종종 스크립트와 "
+"함께 사용되며, 씬을 통해 노드의 구성이 정의되고 스크립트를 통해 선언형 코드"
+"로 기술된 행동이 추가됩니다."
+
 msgid "Anonymous types"
 msgstr "익명 타입"
 
@@ -50,7 +61,7 @@ msgstr ""
 "리게 작동합니다. 노드가 크고 복잡할수록, 씬으로 작업하는 것이 더 좋습니다."
 
 msgid "Named types"
-msgstr "명명된 타입"
+msgstr "명명된 유형"
 
 msgid ""
 "Scripts can be registered as a new type within the editor itself. This "

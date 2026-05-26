@@ -85,6 +85,30 @@ msgid ""
 "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr "每种文件格式都包含一个数据容器和一个 ``ResourceFormatLoader``."
 
+msgid ""
+"ResourceFormatLoaders are classes which return all the necessary metadata "
+"for supporting new extensions in Godot. The class must return the format "
+"name and the extension string."
+msgstr ""
+"ResourceFormatLoaders（资源格式加载器）是专门用来返回各类元数据的类，有了这些"
+"数据，Godot 才能支持全新的文件扩展名。这个类必须能够返回格式名称以及对应的扩"
+"展名字符串。"
+
+msgid ""
+"In addition, ResourceFormatLoaders must convert file paths into resources "
+"with the ``load`` function. To load a resource, ``load`` must read and "
+"handle data serialization."
+msgstr ""
+"此外，ResourceFormatLoaders（资源格式加载器）还必须通过 ``load`` 函数将文件路"
+"径转换为具体的资源对象。为了成功加载资源， ``load`` 函数必须负责读取文件并处"
+"理数据的序列化。"
+
+msgid "resource_loader_json.h"
+msgstr "resource_loader_json.h"
+
+msgid "resource_loader_json.cpp"
+msgstr "resource_loader_json.cpp"
+
 msgid "Creating a ResourceFormatSaver"
 msgstr "创建 ResourceFormatSaver"
 
@@ -92,6 +116,9 @@ msgid ""
 "If you'd like to be able to edit and save a resource, you can implement a "
 "``ResourceFormatSaver``:"
 msgstr "如果你希望能够编辑和保存资源, 则可以实现 ``ResourceFormatSaver``:"
+
+msgid "resource_saver_json.h"
+msgstr "resource_saver_json.h"
 
 msgid "resource_saver_json.cpp"
 msgstr "resource_saver_json.cpp"
@@ -110,6 +137,12 @@ msgstr ""
 msgid "Here is an example of creating a custom datatype:"
 msgstr "下面是创建自定义数据类型的示例:"
 
+msgid "resource_json.h"
+msgstr "resource_json.h"
+
+msgid "resource_json.cpp"
+msgstr "resource_json.cpp"
+
 msgid "Considerations"
 msgstr "注意事项"
 
@@ -123,8 +156,33 @@ msgid ""
 "``std::istream``."
 msgstr "例如，下面是将 ``FileAccess`` 调用转换为 ``std::istream`` 的代码。"
 
+msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+msgstr "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+
+msgid ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+msgstr ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+
+msgid ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+msgstr ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+
 msgid "Registering the new file format"
 msgstr "注册新的文件格式"
+
+msgid ""
+"Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
+"The handler selects the proper loader automatically when ``load`` is called."
+msgstr ""
+"Godot 会将 ``ResourcesFormatLoader`` （资源格式加载器）注册到 "
+"``ResourceLoader`` （资源加载器）的处理程序中。这样一来，当你调用 ``load`` 方"
+"法时，处理程序就会自动为你挑选出最合适的加载器。"
 
 msgid "register_types.h"
 msgstr "register_types.h"
@@ -140,3 +198,6 @@ msgid ""
 "the project's root folder:"
 msgstr ""
 "保存具有以下内容的名为 ``demo.json`` 的文件，并将其放置在项目的根文件夹中："
+
+msgid "Then attach the following script to any node:"
+msgstr "然后将以下脚本附加（挂载）到任意一个节点上："

@@ -129,6 +129,12 @@ msgstr ""
 "수도 있습니다. 이렇게 하면 뷰포트를 클릭하고 노드를 선택 해제할 때 편집기가 "
 "접히는 것을 방지합니다."
 
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "|image1|"
+
 msgid ""
 "Set the animation duration to ``1.2`` seconds in the top-right of the dock."
 msgstr "독의 오른쪽 상단에서 애니메이션 지속 시간을 ``1.2``\\ 초로 설정하세요."
@@ -143,6 +149,9 @@ msgstr ""
 msgid "|image7|"
 msgstr "|image7|"
 
+msgid "image7"
+msgstr "|image7|"
+
 msgid ""
 "You can click and drag the slider in the bottom-right to zoom in and out of "
 "the timeline."
@@ -151,6 +160,9 @@ msgstr ""
 "수 있습니다."
 
 msgid "|image8|"
+msgstr "|image8|"
+
+msgid "image8"
 msgstr "|image8|"
 
 msgid "The float animation"
@@ -186,6 +198,9 @@ msgstr ""
 msgid "|image9|"
 msgstr "|image9|"
 
+msgid "image9"
+msgstr "|image9|"
+
 msgid ""
 "For this tutorial, just create RESET Track(s) which is the default choice"
 msgstr "이 튜토리얼에서는 기본 선택 사항인 리셋 트랙을 생성하기만 하면 됩니다"
@@ -200,6 +215,9 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
+msgid "image10"
+msgstr "|image10|"
+
 msgid ""
 "You can click and drag on the diamonds to move them in time. Move the "
 "position key to ``0.3`` seconds and the rotation key to ``0.1`` seconds."
@@ -209,6 +227,15 @@ msgstr ""
 
 msgid "|image11|"
 msgstr "|image11|"
+
+msgid "image11"
+msgstr "|image11|"
+
+msgid ""
+"Move the time cursor to ``0.5`` seconds by clicking and dragging on the gray "
+"timeline, or by entering it into the input field."
+msgstr ""
+"회색 타임라인을 클릭하고 드래그하여 시간 커서를 ``0.5``\\ 초로 이동합니다."
 
 msgid "|timeline_05_click|"
 msgstr "|timeline_05_click|"
@@ -239,11 +266,43 @@ msgstr "image12"
 msgid "Create a keyframe for both properties"
 msgstr "양 속성에 대한 키프레임 만들기"
 
+msgid "|second_keys_both|"
+msgstr "|second_keys_both|"
+
+msgid "second_keys_both"
+msgstr "second_keys_both"
+
+msgid ""
+"Now, move the position keyframe to ``0.7`` seconds by dragging it on the "
+"timeline."
+msgstr "이제 타임라인에서 드래그하여 위치 키프레임을 ``0.7``초로 이동합니다."
+
 msgid "|image13|"
 msgstr "|image13|"
 
 msgid "image13"
 msgstr "image13"
+
+msgid ""
+"A lecture on the principles of animation is beyond the scope of this "
+"tutorial. Just note that you don't want to time and space everything evenly. "
+"Instead, animators play with timing and spacing, two core animation "
+"principles. You want to offset and contrast in your character's motion to "
+"make them feel alive."
+msgstr ""
+"애니메이션 원리에 대한 강의는 이 튜토리얼의 범위를 벗어납니다. 모든 것을 균등"
+"하게 시간과 간격을 두고 싶지는 않다는 점에 유의하세요. 대신 애니메이터는 두 "
+"가지 핵심 애니메이션 원칙인 타이밍과 간격을 활용합니다. 캐릭터의 움직임에 상"
+"쇄와 대비를 적용하여 캐릭터가 살아있는 듯한 느낌을 주고 싶습니다."
+
+msgid ""
+"Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
+"the Y position to about ``0.35`` and the X rotation to ``-9`` degrees. Once "
+"again, create a key for both properties."
+msgstr ""
+"시간 커서를 애니메이션 끝(``1.2``초)으로 이동합니다. Y 위치를 약 ``0.35``로 "
+"설정하고 X 회전을 ``-9``도로 설정합니다. 다시 한 번 두 속성 모두에 대한 키를 "
+"만듭니다."
 
 msgid "|animation_final_keyframes|"
 msgstr "|animation_final_keyframes|"
@@ -264,6 +323,20 @@ msgstr "|image14|"
 
 msgid "image14"
 msgstr "image14"
+
+msgid ""
+"You can see that the engine interpolates between your keyframes to produce a "
+"continuous animation. At the moment, though, the motion feels very robotic. "
+"This is because the default interpolation is linear, causing constant "
+"transitions, unlike how living things move in the real world."
+msgstr ""
+"엔진이 키프레임 사이를 보간하여 연속 애니메이션을 생성하는 것을 볼 수 있습니"
+"다. 하지만 현재로서는 모션이 매우 로봇처럼 느껴집니다. 이는 기본 보간이 선형"
+"이어서 실제 세계에서 생명체가 움직이는 방식과 달리 지속적인 전환을 일으키기 "
+"때문입니다."
+
+msgid "We can control the transition between keyframes using easing curves."
+msgstr "이징 곡선을 사용하여 키프레임 간의 전환을 제어할 수 있습니다."
 
 msgid ""
 "Click and drag around the first two keys in the timeline to box select them."
@@ -328,6 +401,9 @@ msgstr "|image19|"
 msgid "image19"
 msgstr "image19"
 
+msgid "Your animation should look something like this."
+msgstr "최종 씬은 다음과 같이 보일 것입니다."
+
 msgid "|image20|"
 msgstr "|image20|"
 
@@ -356,6 +432,9 @@ msgid ""
 msgstr ""
 "캐릭터가 바닥에 너무 가까이 있다면, ``피벗`` 을 위로 이동하여 상쇄할 수 있습"
 "니다."
+
+msgid "Controlling the animation in code"
+msgstr "애니메이션 제어하기"
 
 msgid ""
 "We can use code to control the animation playback based on the player's "
@@ -424,6 +503,21 @@ msgstr ""
 "이션 관리...**\\ 를 클릭하세요. *float* 애니메이션 옆에 *애니메이션을 클립보"
 "드로 복사* 버튼(작은 사각형 두 개)을 클릭합니다. 확인을 클릭하여 창을 닫습니"
 "다."
+
+msgid ""
+"Then open ``mob.tscn``, create an :ref:`AnimationPlayer "
+"<class_AnimationPlayer>` child node and select it. Click **Animation > "
+"Manage Animations**, then **New Library**. You should see the message "
+"\"Global library will be created.\" Leave the text field blank and click OK. "
+"Click the *Paste* icon (clipboard) and it should appear in the window. Click "
+"OK to close the window."
+msgstr ""
+"다음으로 ``mob.tscn``\\ 을 열고, :ref:`AnimationPlayer "
+"<class_AnimationPlayer>` 자식 노드를 생성하고 선택합니다. **애니메이션 > 애니"
+"메이션 관리**\\ 를 클릭한 다음 **라이브러리 추가**\\ 를 클릭합니다. \"전역 라"
+"이브러리가 생성됩니다.\"라는 메시지가 표시됩니다. 텍스트 필드를 비워 두고 확"
+"인을 클릭합니다. *붙여넣기* 아이콘(클립보드)을 클릭하면 창에 나타납니다. 확인"
+"을 클릭하여 창을 닫습니다."
 
 msgid ""
 "Next, make sure that the autoplay button (|Autoplay|) and the looping arrows "

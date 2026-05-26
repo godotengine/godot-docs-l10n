@@ -45,8 +45,39 @@ msgstr ""
 "VisualShader 可以在任何 :ref:`class_ShaderMaterial` 中创建。要开始使用 "
 "VisualShader，请在你选择的对象中创建一个新的 ``ShaderMaterial``\\ 。"
 
+msgid "Then assign a :ref:`class_Shader` resource to the ``Shader`` property."
+msgstr "然后，给 ``Shader`` 属性指定（或分配）一个 :ref:`class_Shader` 资源。"
+
+msgid ""
+"Click on the new ``Shader`` resource and the Create Shader dialog will open "
+"automatically. Change the Type option to :ref:`class_VisualShader` in the "
+"dropdown, then give it a name."
+msgstr ""
+"点击新建的‘ ``Shader`` （着色器）’资源，‘创建着色器’对话框就会自动弹出。在下"
+"拉菜单中，将类型（Type）选项更改为 :ref:`class_VisualShader` ，然后给它起个名"
+"字。"
+
+msgid ""
+"Click on the visual shader you just created to open the Shader Editor. The "
+"layout of the Shader Editor comprises four parts, a file list on the left, "
+"the upper toolbar, the graph itself, and a material preview on the right "
+"that can be toggled off"
+msgstr ""
+"点击你刚创建的可视化着色器，即可打开着色器编辑器。着色器编辑器的布局包括四个"
+"部分：左侧的文件列表，上层的工具栏，图表本身以及右侧的可关闭的材质预览"
+
 msgid "From left to right in the toolbar:"
 msgstr "在工具栏中从左到右："
+
+msgid "The arrow can be used to toggle the files panel's visibility."
+msgstr "点击这个小箭头，可以控制文件面板的显示或隐藏。"
+
+msgid ""
+"The ``File`` button opens a dropdown menu for saving, loading, and creating "
+"files."
+msgstr ""
+"点击‘文件（ ``File`` ）’按钮会打开一个下拉菜单，可以用来保存、加载和创建文"
+"件。"
 
 msgid ""
 "The ``Add Node`` button displays a popup menu to let you add nodes to the "
@@ -65,6 +96,44 @@ msgid ""
 "snapping and distance between grid lines (in pixels)."
 msgstr ""
 "下面的按钮和数字输入控制缩放级别, 网格捕捉和网格线之间的距离(单位为像素)."
+
+msgid ""
+"The toggle controls if the graph minimap in the bottom right of the editor "
+"is visible or not."
+msgstr "这个开关用来控制编辑器右下角的图表小地图（Minimap）是否显示。"
+
+msgid ""
+"The automatically arrange selected nodes button will try to organize any "
+"nodes you have selected as efficiently and cleanly as possible."
+msgstr ""
+"点击‘自动排列所选节点’按钮，系统会尝试将你选中的所有节点，以最整洁、高效的方"
+"式重新组织排列。"
+
+msgid ""
+"The Manage Varyings button opens a dropdown that lets you add or remove a "
+"varying."
+msgstr ""
+"点击‘管理 Varyings’按钮，会打开一个下拉菜单，让你能够添加或移除 varying。"
+
+msgid ""
+"The show generated code button shows shader code corresponding to your graph."
+msgstr "点击‘显示生成代码’按钮，可以查看与你当前节点图对应的着色器代码。"
+
+msgid "The toggle turns the material preview on or off."
+msgstr "这个开关用来开启或关闭材质预览。"
+
+msgid ""
+"The ``Online Docs`` button opens this documentation page in your web browser."
+msgstr ""
+"点击‘在线文档（ ``Online Docs`` ）’按钮，就可以在网页浏览器中打开这个文档页"
+"面。"
+
+msgid ""
+"The last button allows you to put the shader editor in its own window, "
+"separate from the rest of the editor."
+msgstr ""
+"最后一个按钮可以让你把着色器编辑器单独放到一个新窗口里，让它和编辑器的其他部"
+"分分离开。"
 
 msgid ""
 "Although VisualShaders do not require coding, they share the same logic with "
@@ -151,6 +220,20 @@ msgstr ""
 msgid "Visual Shader node interface"
 msgstr "可视化着色器节点界面"
 
+msgid ""
+"Visual shader nodes have input and output ports. The input ports are located "
+"on the left side of the node, and output ports are located on the right side "
+"of the node."
+msgstr ""
+"视觉着色器节点拥有输入端口和输出端口。输入端口位于节点的左侧，而输出端口位于"
+"节点的右侧。"
+
+msgid "These ports are colored to differentiate type of port:"
+msgstr "这些端口被标上了不同的颜色，用来区分它们的类型："
+
+msgid "Port types"
+msgstr "端口类型"
+
 msgid "Type"
 msgstr "类型"
 
@@ -166,11 +249,17 @@ msgstr "示例"
 msgid "Scalar"
 msgstr "Scalar"
 
+msgid "Gray"
+msgstr "灰色"
+
 msgid "Scalar is a single value."
 msgstr "标量是单个值。"
 
 msgid "|scalar|"
 msgstr "|scalar|"
+
+msgid "scalar"
+msgstr "标量"
 
 msgid "Vector"
 msgstr "Vector"
@@ -184,8 +273,14 @@ msgstr "向量是一组值。"
 msgid "|vector|"
 msgstr "|vector|"
 
+msgid "vector"
+msgstr "向量"
+
 msgid "Boolean"
 msgstr "Boolean"
+
+msgid "Green"
+msgstr "绿色"
 
 msgid "On or off, true or false."
 msgstr "开关、真假。"
@@ -199,11 +294,17 @@ msgstr "boolean"
 msgid "Transform"
 msgstr "Transform"
 
+msgid "Pink"
+msgstr "粉红色"
+
 msgid "A matrix, usually used to transform vertices."
 msgstr "矩阵，常用于顶点的变换。"
 
 msgid "|transform|"
 msgstr "|transform|"
+
+msgid "transform"
+msgstr "变换"
 
 msgid "Sampler"
 msgstr "Sampler"
@@ -216,6 +317,20 @@ msgstr "纹理采样器。可用于对纹理进行采样。"
 
 msgid "|sampler|"
 msgstr "|sampler|"
+
+msgid "sampler"
+msgstr "采样器"
+
+msgid ""
+"All of the types are used in the calculations of vertices, fragments, and "
+"lights in the shader. For example: matrix multiplication, vector addition, "
+"or scalar division."
+msgstr ""
+"所有这些类型都会被用在着色器中关于顶点、片元和光照的计算里。比如：矩阵乘法、"
+"向量加法，或者标量除法。"
+
+msgid "There are other types but these are the main ones."
+msgstr "虽然还有其他类型，但这些是最主要的。"
 
 msgid "Visual Shader nodes"
 msgstr "可视化着色器节点"
@@ -252,6 +367,29 @@ msgid ""
 msgstr ""
 "这个节点的可能性几乎无穷无尽 —— 你可以编写复杂的过程, 并使用基于文本的着色器"
 "的全部力量, 例如循环, 关键字 ``discard`` , 扩展类型, 等等. 例如:"
+
+msgid "Reroute node"
+msgstr "重定向节点"
+
+msgid ""
+"The ``Reroute`` node is used purely for organizational purposes. In a "
+"complicated shader with many nodes you may find that the paths between nodes "
+"can make things hard to read. Reroute, as its name suggests, allows you to "
+"adjust the path between nodes to make things easier to read. You can even "
+"have multiple reroute nodes for a single path, which can be used to make "
+"right angles."
+msgstr ""
+"``Reroute`` （重定向）节点纯粹是为了方便整理布局而设计的。在一个包含大量节点"
+"的复杂着色器中，你可能会发现节点之间的连线会让整个画面变得难以阅读。顾名思"
+"义，Reroute 允许你调整节点之间的连线路径，从而让整体布局看起来更清晰。你甚至"
+"可以在单条连线上使用多个重定向节点，利用它们来把连线拐成直角。"
+
+msgid ""
+"To move a reroute node move your mouse cursor above it, and grab the handle "
+"that appears."
+msgstr ""
+"想要移动重定向节点（reroute node）的话，只需要把鼠标悬停在它上面，然后拖动出"
+"现的控制手柄就可以了。"
 
 msgid "Fresnel node"
 msgstr "Fresnel 结点"
@@ -295,3 +433,39 @@ msgstr ""
 
 msgid "Switch node"
 msgstr "Switch 节点"
+
+msgid ""
+"The ``Switch`` node returns a vector if the boolean condition is ``true`` or "
+"``false``. ``Boolean`` was introduced above. If you want to convert a vector "
+"to a true boolean, all components of the vector should be non-zero."
+msgstr ""
+"``Switch`` （切换）节点会根据布尔（boolean）条件是真（ ``true`` ）还是假"
+"（ ``false`` ），来返回对应的向量（vector）。上面我们已经介绍过 ``Boolean`` "
+"（布尔值）了。如果你想把一个向量转换成一个真正的布尔值，那么该向量的所有分量"
+"都必须是非零的。"
+
+msgid "Mesh Emitter"
+msgstr "网格发射器"
+
+msgid ""
+"The ``Mesh Emitter`` node is used for emitting particles from mesh vertices. "
+"This is only available for shaders that are in ``Particles`` mode."
+msgstr ""
+"``Mesh Emitter`` （网格发射器）节点用于从网格的顶点处发射粒子。不过要注意，它"
+"仅适用于处于 ``Particles`` （粒子）模式下的着色器。"
+
+msgid ""
+"Keep in mind that not all 3D objects are mesh files. a glTF file can't be "
+"dragged and dropped into the graph. However, you can create an inherited "
+"scene from it, save the mesh in that scene as its own file, and use that."
+msgstr ""
+"需要注意的是，并不是所有的 3D 对象都是单纯的网格文件。比如 .glTF 文件就没法直"
+"接拖拽到图形编辑器里。不过，你可以通过它创建一个继承场景（inherited scene），"
+"然后把该场景里的网格单独保存成一个文件，接着就能用那个文件啦。"
+
+msgid ""
+"You can also drag and drop obj files into the graph editor to add the node "
+"for that specific mesh, other mesh files will not work for this."
+msgstr ""
+"另外，你也可以直接把 .obj 文件拖拽到图形编辑器里，这样就能快速添加该网格对应"
+"的节点了。不过要注意，其他格式的网格文件可没法这么操作哦。"

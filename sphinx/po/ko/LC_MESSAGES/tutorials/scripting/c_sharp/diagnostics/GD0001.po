@@ -11,5 +11,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0001: Missing partial modifier on declaration of type that derives from "
+"GodotObject"
+msgstr ""
+"GD0001: GodotObject에서 파생된 유형 선언에 부분 수정자가 누락되었습니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0001"
+msgstr "GD0001"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid "A type that derives from ``GodotObject`` is not declared partial."
+msgstr "``GodotObject``에서 파생된 형식은 부분적으로 선언되지 않습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Godot source generators add generated code to user-defined types to "
+"implement the integration with the engine. Source generators can't add "
+"generated code to types that aren't declared partial."
+msgstr ""
+"Godot 소스 생성기는 생성된 코드를 사용자 정의 유형에 추가하여 엔진과의 통합"
+"을 구현합니다. 소스 생성기는 부분적으로 선언되지 않은 유형에 생성된 코드를 추"
+"가할 수 없습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, add the ``partial`` keyword to the type "
+"declaration."
+msgstr ""
+"이 규칙 위반 문제를 해결하려면 유형 선언에 ``partial`` 키워드를 추가하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that derive from "
+"``GodotObject`` but aren't partial can't be enhanced by the source "
+"generators, resulting in unexpected runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``GodotObject``에서 파생되었지만 부분적이"
+"지 않은 유형은 소스 생성기로 향상될 수 없으므로 예기치 않은 런타임 오류가 발"
+"생합니다."

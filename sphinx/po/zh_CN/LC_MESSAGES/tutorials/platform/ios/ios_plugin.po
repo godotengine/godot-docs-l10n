@@ -63,6 +63,11 @@ msgstr ""
 "到的插件."
 
 msgid ""
+"When a plugin is active, you can access it in your code using "
+"``Engine.get_singleton()``:"
+msgstr "当插件处于活动状态时，你可以使用 ``Engine.get_singleton()`` 访问插件："
+
+msgid ""
 "The plugin's files have to be in the ``res://ios/plugins/`` directory or a "
 "subdirectory, otherwise the Godot editor will not automatically detect them."
 msgstr ""
@@ -185,3 +190,6 @@ msgstr "创建一个Godot iOS插件配置文件, 以帮助系统检测和加载�
 msgid ""
 "The configuration file extension must be ``gdip`` (e.g.: ``MyPlugin.gdip``)."
 msgstr "配置文件的扩展名必须是 ``gdip`` (e.g.: ``MyPlugin.gdip`` )."
+
+msgid "The configuration file format is as follow:"
+msgstr "配置文件格式如下："

@@ -11,5 +11,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0106: The exported property is an explicit interface implementation"
+msgstr "GD0106: 내보낸 속성은 명시적 인터페이스 구현입니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0106"
+msgstr "GD0106"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"An explicit interface property implementation is annotated with the "
+"``[Export]`` attribute. Properties that implement an interface explicitly "
+"can't be exported."
+msgstr ""
+"명시적인 인터페이스 속성 구현에는 ``[Export]`` 속성으로 주석이 추가됩니다. 인"
+"터페이스를 명시적으로 구현하는 속성은 내보낼 수 없습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Godot doesn't allow exporting explicit interface property implementations. "
+"When an interface member is implemented explicitly, the member is hidden and "
+"consumers can't access them unless the type is converted to the interface "
+"first. Explicitly implemented members can also share the same name of other "
+"members in the type, so it could create naming conflicts with other exported "
+"members."
+msgstr ""
+"Godot는 명시적인 인터페이스 속성 구현 내보내기를 허용하지 않습니다. 인터페이"
+"스 멤버가 명시적으로 구현되면 해당 멤버는 숨겨지고 형식이 먼저 인터페이스로 "
+"변환되지 않으면 소비자가 해당 멤버에 액세스할 수 없습니다. 명시적으로 구현된 "
+"멤버는 해당 형식의 다른 멤버와 동일한 이름을 공유할 수도 있으므로 내보낸 다"
+"른 멤버와 이름 지정 충돌이 발생할 수 있습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, implement the interface implicitly or "
+"remove the ``[Export]`` attribute."
+msgstr ""
+"이 규칙 위반을 수정하려면 인터페이스를 암시적으로 구현하거나 ``[Export]`` 속"
+"성을 제거하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Explicit interface property "
+"implementations can't be exported so they will be ignored by Godot, "
+"resulting in runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 명시적인 인터페이스 속성 구현은 내보낼 "
+"수 없으므로 Godot에서 무시되어 런타임 오류가 발생합니다."

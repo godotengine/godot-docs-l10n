@@ -1312,6 +1312,16 @@ msgstr ""
 "**Objekt-Dither**-Modus: Wie der vorherige Modus, aber die berechnete "
 "Transparenz ist für die gesamte Objektoberfläche gleich."
 
+msgid ""
+"Materials that write to the stencil buffer are always drawn in the "
+"transparent pass, so they are subject to the usual :ref:`transparency "
+"limitations <doc_3d_rendering_limitations_transparency_sorting>`."
+msgstr ""
+"Materialien, die in den Stencil Buffer schreiben, werden immer im "
+"Transparent Pass gerendert und unterliegen daher den üblichen "
+"Einschränkungen der Transparenzdarstellung :ref:`transparency limitations "
+"<doc_3d_rendering_limitations_transparency_sorting>`."
+
 msgid "Material Settings"
 msgstr "Material-Einstellungen"
 

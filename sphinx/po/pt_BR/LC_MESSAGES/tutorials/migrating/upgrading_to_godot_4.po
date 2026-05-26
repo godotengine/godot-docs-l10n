@@ -12,10 +12,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Upgrading from Godot 3 to Godot 4"
-msgstr "Atualizando do Godot 3 para o Godot 4"
+msgstr "Atualizando de Godot 3 para a Godot 4"
 
 msgid "Should I upgrade to Godot 4?"
-msgstr "Devo atualizar para Godot 4?"
+msgstr "Eu deveria atualizar para Godot 4?"
 
 msgid ""
 "Before beginning the upgrade process, it's worth thinking about the "
@@ -24,12 +24,44 @@ msgstr ""
 "Antes de iniciar o processo de atualização, vale a pena pensar sobre as "
 "vantagens e desvantagens que a atualização levaria ao seu projeto."
 
+msgid "Advantages of upgrading"
+msgstr "As vantagens de atualizar"
+
 msgid ""
 "Many bugs are fixed in 4.0, but cannot be resolved in 3.x for various "
 "reasons (such as graphics API differences or backwards compatibility)."
 msgstr ""
-"Muitos bugs são corrigidos no 4.0, mas não podem ser resolvidos no 3.x por "
-"várias razões (como diferenças de API gráfica ou compatibilidade retroativa)."
+"Muitos erros estão corrigidos na 4.0, mas não podem ser resolvidos na 3.x "
+"por várias razões (como diferenças de API gráficas ou compatibilidade "
+"retroativa)."
+
+msgid ""
+"4.x will enjoy a longer :ref:`support period <doc_release_policy>`. Godot "
+"3.x will continue to be supported for some time after 4.0 is released, but "
+"it will eventually stop receiving support."
+msgstr ""
+"4.x terá um :ref:`período de suporte <doc_release_policy>` mais longo. A "
+"Godot 3.x continuará a ser suportada por algum tempo depois que 4.0 é "
+"liberado, mas deixará eventualmente de receber suporte."
+
+msgid ""
+"See :ref:`doc_docs_changelog` for a list of pages documenting new features "
+"in Godot 4.0, and :ref:`doc_list_of_features` for a list of all features in "
+"Godot."
+msgstr ""
+"Veja :ref:`doc_docs_changelog` para uma lista de páginas que documentam "
+"novos recursos na Godot 4, e veja também :ref:`doc_list_of_features` para "
+"ver uma lista de todos os recursos da Godot."
+
+msgid "Disadvantages of upgrading"
+msgstr "As desvantagens de atualizar"
+
+msgid ""
+"If you don't *need* any features present in Godot 4.x, you may want to stay "
+"on Godot 3.x for the following reasons:"
+msgstr ""
+"Se você não *precisa* de nenhum recurso presente na Godot 4.x, você "
+"provavelmente desejaria ficar na Godot 3.x pelos seguintes motivos:"
 
 msgid ""
 "Godot 4's baseline hardware requirements (such as memory usage) are slightly "
@@ -178,8 +210,14 @@ msgstr ""
 "Você pode fazer backup de um projeto usando o controle de versão ou copiando "
 "a pasta do projeto para outro local."
 
+msgid "Using the Project Manager"
+msgstr "Usando o Gerenciador de Projetos"
+
 msgid "To use the project upgrade tool:"
 msgstr "Para usar a ferramenta de atualização do projeto:"
+
+msgid "Open the Godot 4 Project Manager."
+msgstr "Abra o Gerenciador de Projetos da Godot 4."
 
 msgid ""
 "Import the Godot 3.x project using the **Import** button, or use the "
@@ -344,8 +382,23 @@ msgstr "Nome antigo (Godot 3.x)"
 msgid "New name (Godot 4)"
 msgstr "Novo nome (Godot 4)"
 
+msgid "AnimatedSprite"
+msgstr "AnimatedSprite (Sprite animado)"
+
 msgid "AnimatedSprite2D"
 msgstr "AnimatedSprite2D"
+
+msgid "ARVRCamera"
+msgstr "ARVRCamera (Câmera de Realidade Aumentada e Realidade Virtual)"
+
+msgid "XRCamera3D"
+msgstr "XRCamera3D (Câmera 3D de Realidade Estendida)"
+
+msgid "ARVRController"
+msgstr "ARVRController (Controle de Realidade Aumentada e Realidade Virtual)"
+
+msgid "XRController3D"
+msgstr "XRController3D (Controle 3D de Realidade Estendida)"
 
 msgid "ARVRAnchor"
 msgstr "ARVRAnchor"
@@ -355,6 +408,9 @@ msgstr "XRAnchor3D"
 
 msgid "ARVRInterface"
 msgstr "ARVRInterface"
+
+msgid "XRInterface"
+msgstr "XRInterface (Interface de Realidade Estendida)"
 
 msgid "ARVROrigin"
 msgstr "ARVROrigin"
@@ -368,14 +424,47 @@ msgstr "ARVRPositionalTracker"
 msgid "XRPositionalTracker"
 msgstr "XRPositionalTracker"
 
+msgid "ARVRServer"
+msgstr "ARVRServer (Servidor de Realidade Aumentada e Realidade Virtual)"
+
+msgid "XRServer"
+msgstr "XRServer (Servidor de Realidade Estendida)"
+
+msgid "CubeMesh"
+msgstr "CubeMesh (Malha de Cubo)"
+
+msgid "BoxMesh"
+msgstr "BoxMesh (Malha de Caixa)"
+
+msgid "EditorSpatialGizmo"
+msgstr "EditorSpatialGizmo (Editor de Gizmo Espacial)"
+
 msgid "EditorNode3DGizmo"
 msgstr "EditorNode3DGizmo"
+
+msgid "EditorSpatialGizmoPlugin"
+msgstr "EditorSpatialGizmoPlugin (Plugin de Editor de Gizmo Espacial)"
+
+msgid "EditorNode3DGizmoPlugin"
+msgstr "EditorNode3DGizmoPlugin (Editor de Nó 3D de Plugin de Gizmo)"
+
+msgid "GIProbe"
+msgstr "GIProbe"
 
 msgid "VoxelGI"
 msgstr "VoxelGI"
 
 msgid "VoxelGIData"
 msgstr "VoxelGIData"
+
+msgid "GradientTexture"
+msgstr "GradientTexture (Textura de Gradiente)"
+
+msgid "GradientTexture1D"
+msgstr "GradientTexture1D (Textura de Gradiente 1D)"
+
+msgid "KinematicBody"
+msgstr "KinematicBody (Corpo Cinemático)"
 
 msgid "CharacterBody3D"
 msgstr "CharacterBody3D"
@@ -386,6 +475,12 @@ msgstr "KinematicBody2D"
 msgid "CharacterBody2D"
 msgstr "CharacterBody2D"
 
+msgid "Light2D"
+msgstr "Light2D (Luz 2D)"
+
+msgid "PointLight2D"
+msgstr "PointLight2D (Ponto de Luz 2D)"
+
 msgid "LineShape2D"
 msgstr "LineShape2D"
 
@@ -395,14 +490,50 @@ msgstr "WorldBoundaryShape2D"
 msgid "Listener"
 msgstr "Ouvinte (Listener)"
 
+msgid "AudioListener3D"
+msgstr "AudioListener3D (Ouvinte de Áudio 3D)"
+
+msgid "NavigationMeshInstance"
+msgstr "NavigationMeshInstance (Instância de Malha de Navegação)"
+
+msgid "NavigationRegion3D"
+msgstr "NavigationRegion3D (Região de Navegação 3D)"
+
+msgid "NavigationPolygonInstance"
+msgstr "NavigationPolygonInstance (Instância de Polígono de Navegação)"
+
+msgid "NavigationRegion2D"
+msgstr "NavigationRegion2D (Região de Navegação 2D)"
+
+msgid "Navigation2DServer"
+msgstr "Navigation2DServer (Servidor de Navegação 2D)"
+
+msgid "NavigationServer2D"
+msgstr "NavigationServer2D (Servidor 2D de Navegação)"
+
 msgid "PanoramaSky"
 msgstr "PanoramaSky"
+
+msgid "Sky"
+msgstr "Sky (Céu)"
 
 msgid "Particles"
 msgstr "Partículas"
 
+msgid "GPUParticles3D"
+msgstr "GPUParticles3D (Partículas 3D da GPU)"
+
+msgid "Particles2D"
+msgstr "Particles2D (Partículas 2D)"
+
+msgid "GPUParticles2D"
+msgstr "GPUParticles2D (Partículas 2D da GPU)"
+
 msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial"
+
+msgid "ParticleProcessMaterial"
+msgstr "ParticleProcessMaterial (Material do Processo de Partículas)"
 
 msgid "Physics2DDirectBodyState"
 msgstr "Physics2DDirectBodyState"
@@ -415,6 +546,9 @@ msgstr "Physics2DDirectSpaceState"
 
 msgid "PhysicsDirectSpaceState2D"
 msgstr "PhysicsDirectSpaceState2D"
+
+msgid "Physics2DServer"
+msgstr "Physics2DServer (Servidor de Física 2D)"
 
 msgid "Physics2DShapeQueryParameters"
 msgstr "Physics2DShapeQueryParameters"
@@ -437,6 +571,9 @@ msgstr "Marker2D"
 msgid "Marker3D"
 msgstr "Marker3D"
 
+msgid "ProceduralSky"
+msgstr "ProceduralSky (Céu Procedural)"
+
 msgid "SeparationRayShape3D"
 msgstr "SeparationRayShape3D"
 
@@ -449,8 +586,20 @@ msgstr "ShortCut"
 msgid "Shortcut"
 msgstr "Shortcut"
 
+msgid "Spatial"
+msgstr "Espacial"
+
+msgid "SpatialGizmo"
+msgstr "SpatialGizmo (Gizmo Espacial)"
+
 msgid "Node3DGizmo"
 msgstr "Node3DGizmo"
+
+msgid "SpatialMaterial"
+msgstr "SpatialMaterial (Material de Gizmo)"
+
+msgid "StandardMaterial3D"
+msgstr "StandardMaterial3D (Material Padrão 3D)"
 
 msgid "Sprite"
 msgstr "Sprite"
@@ -458,20 +607,87 @@ msgstr "Sprite"
 msgid "Sprite2D"
 msgstr "Sprite2D"
 
+msgid "StreamTexture"
+msgstr "StreamTexture (Textura de Fluxo)"
+
+msgid "CompressedTexture2D"
+msgstr "CompressedTexture2D (Textura 2D Compactada)"
+
+msgid "TextureProgress"
+msgstr "TextureProgress (Textura de Progresso)"
+
+msgid "TextureProgressBar"
+msgstr "TextureProgressBar (Textura de Barra de Progresso)"
+
+msgid "VideoPlayer"
+msgstr "VideoPlayer (Reprodutor de Vídeo)"
+
+msgid "VideoStreamPlayer"
+msgstr "VideoStreamPlayer (Reprodutor de Fluxo de Vídeo)"
+
 msgid "ViewportContainer"
 msgstr "ViewportContainer"
+
+msgid "Viewport"
+msgstr "Viewport (Janela de Exibição)"
+
+msgid "SubViewport"
+msgstr "SubViewport (Sub Janela de Exibição)"
+
+msgid "VisibilityEnabler"
+msgstr "VisibilityEnabler (Habilitador de Visibilidade)"
 
 msgid "VisibleOnScreenEnabler3D"
 msgstr "VisibleOnScreenEnabler3D"
 
+msgid "VisibilityNotifier"
+msgstr "VisibilityNotifier (Notiicador de Visibilidade)"
+
 msgid "VisibleOnScreenNotifier3D"
 msgstr "VisibleOnScreenNotifier3D"
+
+msgid "VisibilityNotifier2D"
+msgstr "VisibilityNotifier2D (Notiicador de Visibilidade 2D)"
 
 msgid "VisibleOnScreenNotifier2D"
 msgstr "VisibleOnScreenNotifier2D"
 
+msgid "VisibilityNotifier3D"
+msgstr "VisibilityNotifier3D (Notiicador de Visibilidade 3D)"
+
+msgid "VisualServer"
+msgstr "VisualServer (Servidor Visual)"
+
+msgid "RenderingServer"
+msgstr "RenderingServer (Servidor de Renderização)"
+
+msgid "VisualShaderNodeClamp"
+msgstr "VisualShaderNodeClamp (Nó Shader Visual de Alinhamento)"
+
+msgid "VisualShaderNodeVectorClamp"
+msgstr "VisualShaderNodeVectorClamp (Nó Shader Visual de Alinhamento de Vetor)"
+
+msgid "VisualShaderNodeScalarInterp"
+msgstr ""
+"VisualShaderNodeScalarInterp (Nó Shader Visual de Interpolação Escalar)"
+
+msgid "VisualShaderNodeMix"
+msgstr "VisualShaderNodeMix (Nó Shader Visual de Mistura)"
+
+msgid "VisualShaderNodeVectorInterp"
+msgstr ""
+"VisualShaderNodeVectorInterp (Nó Shader Visual de Interpolação de Vetor)"
+
+msgid "VisualShaderNodeVectorScalarMix"
+msgstr ""
+"VisualShaderNodeVectorScalarMix (Nó Shader Visual de Mistura Escalar de "
+"Vetores)"
+
 msgid "VisualShaderNodeScalarSmoothStep"
 msgstr "VisualShaderNodeScalarSmoothStep"
+
+msgid "VisualShaderNodeSmoothStep"
+msgstr "VisualShaderNodeSmoothStep (Nó Shader Visual de Passo Suave)"
 
 msgid "VisualShaderNodeVectorSmoothStep"
 msgstr "VisualShaderNodeVectorSmoothStep"
@@ -481,6 +697,15 @@ msgstr "VisualShaderNodeVectorScalarSmoothStep"
 
 msgid "VisualShaderNodeVectorScalarStep"
 msgstr "VisualShaderNodeVectorScalarStep"
+
+msgid "VisualShaderNodeStep"
+msgstr "VisualShaderNodeStep (Nó Shader Visual de Passos)"
+
+msgid "VisualShaderNodeScalarSwitch"
+msgstr "VisualShaderNodeScalarSwitch (Nó Shader Visual de Interruptor Escalar)"
+
+msgid "VisualShaderNodeSwitch"
+msgstr "VisualShaderNodeSwitch (Nó Shader Visual de Interruptor)"
 
 msgid "VisualShaderNodeScalarTransformMult"
 msgstr "VisualShaderNodeScalarTransformMult"
@@ -505,6 +730,12 @@ msgstr "VisualShaderNodeTextureUniformTriplanar"
 
 msgid "VisualShaderNodeTextureParameterTriplanar"
 msgstr "VisualShaderNodeTextureParameterTriplanar"
+
+msgid "VisualShaderNodeUniform"
+msgstr "VisualShaderNodeUniform (Nó Shader Visual de ...)"
+
+msgid "Manually renaming methods, properties, signals and constants"
+msgstr "Renomear manualmente, métodos, sinais e constantes"
 
 msgid ""
 "If you cannot find a node or resource in the list below, refer to the above "
@@ -539,6 +770,9 @@ msgstr ""
 "Se estiver usando C#, lembre-se de procurar por uso obsoleto da API com a "
 "notação PascalCase no projeto (e realizar a substituição com a notação "
 "PascalCase)."
+
+msgid "**Methods**"
+msgstr "**Métodos**"
 
 msgid ""
 "File and Directory classes were replaced by :ref:`class_FileAccess` "
@@ -716,6 +950,9 @@ msgid ""
 msgstr ""
 "``xform()`` do Transform2D é ``mat * vec`` e ``xform_inv()`` é ``vec * mat``."
 
+msgid "**Properties**"
+msgstr "**Propriedades**"
+
 msgid ""
 "If a property is listed here, its associated getter and setter methods must "
 "also be renamed manually if used in the project. For example, PathFollow2D "
@@ -818,8 +1055,14 @@ msgstr ""
 "``Engine.is_editor_hint()``. Isso ocorre porque ela é somente leitura, e "
 "propriedades no Godot não são usadas para valores somente leitura."
 
+msgid "**Enums**"
+msgstr "**Enumeradores**"
+
 msgid "CPUParticles2D's ``FLAG_MAX`` is now ``PARTICLE_FLAG_MAX``."
 msgstr "``FLAG_MAX`` do CPUParticles2D agora é ``PARTICLE_FLAG_MAX``."
+
+msgid "**Signals**"
+msgstr "**Sinais**"
 
 msgid "FileSystemDock's ``instantiate`` is now ``instance``."
 msgstr "``instantiate`` do FileSystemDock agora é ``instance``."
@@ -836,6 +1079,9 @@ msgstr "``tween_all_completed`` do Tween agora é ``loop_finished``."
 
 msgid "EditorSettings' ``changed`` is now ``settings_changed``."
 msgstr "``changed`` do EditorSettings agora é ``settings_changed``."
+
+msgid "**Constants**"
+msgstr "**Constantes**"
 
 msgid ""
 "Color names are now uppercase and use underscores between words. For "
@@ -1286,8 +1532,23 @@ msgstr ""
 msgid "Comment"
 msgstr "Comente"
 
+msgid "AnimationTreePlayer"
+msgstr "AnimationTreePlayer (Reprodutor de Árvore de Animação)"
+
+msgid "AnimationTree"
+msgstr "AnimationTree (Árvore de Animação)"
+
 msgid "AnimationTreePlayer was deprecated since Godot 3.1."
 msgstr "AnimationTreePlayer está obsoleto desde Godot 3.1."
+
+msgid "BakedLightmap"
+msgstr "BakedLightmap (Lightmaps Pré-Calculados)"
+
+msgid "See :ref:`doc_using_lightmap_gi`."
+msgstr "Veja :ref:`doc_using_lightmap_gi`."
+
+msgid "BakedLightmapData"
+msgstr "BakedLightmapData (Dados de Lightmaps Pré-Calculados)"
 
 msgid "LightmapGIData"
 msgstr "LightmapGIData"
@@ -1295,17 +1556,35 @@ msgstr "LightmapGIData"
 msgid "BitmapFont"
 msgstr "BitmapFont"
 
+msgid "FontFile"
+msgstr "FontFile (Arquivo de Fonte)"
+
+msgid "See :ref:`doc_gui_using_fonts`."
+msgstr "Veja :ref:`doc_gui_using_fonts`."
+
 msgid "DynamicFont"
 msgstr "Fonte Dinâmica"
 
+msgid "DynamicFontData"
+msgstr "DynamicFontData (Dados de Fontes Dinâmicas)"
+
 msgid "Camera's pyramid shape was moved to :ref:'class_Camera3D'."
 msgstr "O formato de pirâmide da câmera foi movido para :ref:'class_Camera3D'."
+
+msgid "Navigation2D"
+msgstr "Navigation2D (Navegação 2D)"
+
+msgid "Node2D"
+msgstr "Node2D (Nó 2D)"
 
 msgid ""
 "Replaced by :ref:`other 2D Navigation nodes <doc_navigation_overview_2d>`."
 msgstr ""
 "Substituído por :ref:`outros nós de navegação 2D "
 "<doc_navigation_overview_2d>`."
+
+msgid "Navigation3D"
+msgstr "Navigation3D (Navegação 3D)"
 
 msgid ""
 "Replaced by :ref:`other 3D Navigation nodes <doc_navigation_overview_3d>`."
@@ -1327,9 +1606,18 @@ msgstr ""
 "Worley). Não há suporte para ruído 4D por estar ausente na biblioteca "
 "FastNoiseLite."
 
+msgid "ToolButton"
+msgstr "ToolButton (Botão de ferramentas)"
+
+msgid "Button"
+msgstr "Botão"
+
 msgid "ToolButton was Button with the **Flat** property enabled by default."
 msgstr ""
 "ToolButton era um botão com a propriedade **Flat** habilitada por padrão."
+
+msgid "YSort"
+msgstr "YSort"
 
 msgid "CanvasItem has a new **Y Sort Enabled** property in 4.0."
 msgstr "CanvasItem tem uma nova propriedade **Y Sort Enabled** na versão 4.0."
@@ -1349,8 +1637,17 @@ msgstr ""
 "culling <doc_occlusion_culling>` (nó OccluderInstance3D), que requer um "
 "processo de configuração diferente."
 
+msgid "Room"
+msgstr "Quarto"
+
 msgid "RoomManager"
 msgstr "RoomManager"
+
+msgid "RoomGroup"
+msgstr "RoomGroup (Grupo de Sala)"
+
+msgid "Occluder"
+msgstr "Occluder (Oclusor)"
 
 msgid ""
 "Geometry occlusion culling was replaced by raster :ref:`occlusion culling "
@@ -1363,6 +1660,9 @@ msgstr ""
 
 msgid "OccluderShapeSphere"
 msgstr "OccluderShapeSphere"
+
+msgid "Resource"
+msgstr "Recurso"
 
 msgid ""
 "If loading an old project, the node will be replaced with its *Closest "

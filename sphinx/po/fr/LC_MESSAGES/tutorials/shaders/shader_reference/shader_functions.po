@@ -537,6 +537,11 @@ msgstr ""
 "vec_int_type| max)"
 
 msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+
+msgid ""
 ":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| "
 "min, |vec_uint_type| max)"
 msgstr ""
@@ -789,6 +794,9 @@ msgstr ""
 msgid "param out i"
 msgstr "param out i"
 
+msgid "The fractional part of the number."
+msgstr "La partie fractionnelle du nombre."
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
 msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
 
@@ -832,8 +840,17 @@ msgstr ""
 "|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, uint "
 "b) :ref:`🔗<shader_func_min>`"
 
+msgid "Returns the minimum of two values ``a`` and ``b``."
+msgstr "Renvoie le minimum de deux valeurs ``a`` et ``b``."
+
+msgid "Returns ``b`` if ``b < a``, otherwise returns ``a``."
+msgstr "Renvoie ``b`` si ``b<a``, sinon renvoie ``a``."
+
 msgid "param a"
 msgstr "param a"
+
+msgid "The first value to compare."
+msgstr "La première valeur à comparer."
 
 msgid "param b"
 msgstr "param b"
@@ -887,6 +904,12 @@ msgstr ""
 "|vec_int_type| **max**\\ (\\ |vec_int_type| a, int "
 "b) :ref:`🔗<shader_func_max>`"
 
+msgid "Returns the maximum of two values ``a`` and ``b``."
+msgstr "Renvoie le maximum de deux valeurs ``a`` et ``b``."
+
+msgid "It returns ``b`` if ``b > a``, otherwise it returns ``a``."
+msgstr "Renvoie ``b`` si ``b>a``, sinon renvoie ``a``."
+
 msgid "The maximum value."
 msgstr "La valeur maximale."
 
@@ -905,6 +928,34 @@ msgid ""
 "maxVal) :ref:`🔗<shader_func_clamp>`"
 msgstr ""
 "|vec_type| **clamp**\\ (\\ |vec_type| x, float valMin, float "
+"valMax) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| valMin, |"
+"vec_int_type| valMax) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int valMin, int "
+"valMax) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| valMin, |"
+"vec_uint_type| valMax) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint minVal, uint "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint valMin, uint "
 "valMax) :ref:`🔗<shader_func_clamp>`"
 
 msgid "param minVal"
@@ -1686,6 +1737,13 @@ msgid ""
 "float bias] )"
 msgstr ""
 ":ref:`texture<shader_func_texture>`\\ (\\ samplerCubeArray s, vec4 p [, "
+"float biais] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
 "float biais] )"
 
 msgid ""

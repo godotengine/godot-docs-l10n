@@ -14,5 +14,533 @@ msgstr ""
 msgid "Core types"
 msgstr "코어 유형"
 
+msgid ""
+"Godot has a rich set of classes and templates that compose its core, and "
+"everything is built upon them."
+msgstr ""
+"Godot는 핵심을 구성하는 풍부한 클래스와 템플릿 세트를 갖고 있으며, 모든 것이 "
+"그 위에 구축됩니다."
+
+msgid ""
+"This reference will try to list them in order for their better understanding."
+msgstr ""
+"이 참고문헌은 더 나은 이해를 돕기 위해 그것들을 나열하려고 노력할 것입니다."
+
+msgid "Allocating memory"
+msgstr "메모리 할당"
+
+msgid ""
+"Godot has many tricks for ensuring memory safety and tracking memory usage. "
+"Because of this, the regular C and C++ library calls should not be used. "
+"Instead, a few replacements are provided."
+msgstr ""
+"Godot에는 메모리 안전을 보장하고 메모리 사용량을 추적하기 위한 많은 트릭이 있"
+"습니다. 이 때문에 일반 C 및 C++ 라이브러리 호출을 사용하면 안 됩니다. 대신 "
+"몇 가지 대체품이 제공됩니다."
+
+msgid "For C-style allocation, Godot provides a few macros:"
+msgstr "C 스타일 할당을 위해 Godot는 몇 가지 매크로를 제공합니다:"
+
+msgid ""
+"These are equivalent to the usual ``malloc()``, ``realloc()``, and "
+"``free()`` of the C standard library."
+msgstr ""
+"이는 C 표준 라이브러리의 일반적인 ``malloc()``, ``realloc()`` 및 ``free()``"
+"와 동일합니다."
+
+msgid "For C++-style allocation, special macros are provided:"
+msgstr "C++ 스타일 할당의 경우 특수 매크로가 제공됩니다."
+
+msgid ""
+"These are equivalent to ``new``, ``delete``, ``new[]``, and ``delete[]`` "
+"respectively."
+msgstr "이는 각각 ``new``, ``delete``, ``new[]`` 및 ``delete[]``와 동일합니다."
+
+msgid ""
+"``memnew``/``memdelete`` also use a little C++ magic to automatically call "
+"post-init and pre-release functions. For example, this is used to notify "
+"Objects right after they are created, and right before they are deleted."
+msgstr ""
+"``memnew``/``memdelete``는 또한 약간의 C++ 마법을 사용하여 초기화 후 및 출시 "
+"전 기능을 자동으로 호출합니다. 예를 들어, 객체가 생성된 직후와 삭제되기 직전"
+"에 객체에 알리는 데 사용됩니다."
+
+msgid ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "Containers"
+msgstr "컨테이너"
+
+msgid ""
+"Godot provides its own set of containers, which means STL containers like "
+"``std::string`` and ``std::vector`` are generally not used in the codebase. "
+"See :ref:`doc_faq_why_not_stl` for more information."
+msgstr ""
+"Godot는 자체 컨테이너 세트를 제공하는데, 이는 ``std::string`` 및 "
+"``std::vector``와 같은 STL 컨테이너가 일반적으로 코드베이스에서 사용되지 않음"
+"을 의미합니다. 자세한 내용은 :ref:`doc_faq_why_not_stl`를 참조하세요."
+
+msgid ""
+"A 📜 icon denotes the type is part of :ref:`Variant <doc_variant_class>`. "
+"This means it can be used as a parameter or return value of a method exposed "
+"to the scripting API."
+msgstr ""
+"📜 아이콘은 해당 유형이 :ref:`Variant <doc_variant_class>`의 일부임을 나타냅"
+"니다. 이는 스크립팅 API에 노출된 메서드의 매개변수 또는 반환 값으로 사용될 "
+"수 있음을 의미합니다."
+
+msgid "Godot datatype"
+msgstr "Godot 편집기"
+
+msgid "Closest C++ STL datatype"
+msgstr "가장 가까운 C++ STL 데이터 유형"
+
 msgid "Comment"
 msgstr "주석"
+
+msgid "|string| 📜"
+msgstr "문자열"
+
+msgid "``std::string``"
+msgstr "``: String``"
+
+msgid ""
+"**Use this as the \"default\" string type.** ``String`` uses UTF-32 encoding "
+"to simplify processing thanks to its fixed character size."
+msgstr ""
+"**이를 \"기본\" 문자열 유형으로 사용하십시오.** ``String``는 고정된 문자 크"
+"기 덕분에 처리를 단순화하기 위해 UTF-32 인코딩을 사용합니다."
+
+msgid "|vector|"
+msgstr "벡터"
+
+msgid "``std::vector``"
+msgstr "``Vector2[]``"
+
+msgid ""
+"**Use this as the \"default\" vector type.** Uses copy-on-write (COW) "
+"semantics. This means it's generally slower but can be copied around almost "
+"for free. Use ``LocalVector`` instead where COW isn't needed and performance "
+"matters."
+msgstr ""
+"**이를 \"기본\" 벡터 유형으로 사용합니다.** COW(기록 중 복사) 의미 체계를 사"
+"용합니다. 이는 일반적으로 속도가 느리지만 거의 무료로 복사할 수 있음을 의미합"
+"니다. COW가 필요하지 않고 성능이 중요한 경우 대신 ``LocalVector``를 사용하십"
+"시오."
+
+msgid "|hash_set|"
+msgstr "|hash_set|"
+
+msgid "``std::unordered_set``"
+msgstr "또는 순서가 없는 집합이 될 수 있습니다:"
+
+msgid "**Use this as the \"default\" set type.**"
+msgstr "**이를 \"기본\" 세트 유형으로 사용하세요.**"
+
+msgid "|a_hash_map|"
+msgstr "|a_hash_map|"
+
+msgid "``std::unordered_map``"
+msgstr "``std::unordered_map``"
+
+msgid ""
+"**Use this as the \"default\" map type.** Does not preserve insertion order. "
+"Note that pointers into the map, as well as iterators, are not stable under "
+"mutations. If either of these affordances are needed, use ``HashMap`` "
+"instead."
+msgstr ""
+"**이를 \"기본\" 지도 유형으로 사용하세요.** 삽입 순서를 유지하지 않습니다. 맵"
+"에 대한 포인터와 반복자는 돌연변이에 따라 안정적이지 않습니다. 이러한 어포던"
+"스 중 하나가 필요한 경우 대신 ``HashMap``를 사용하세요."
+
+msgid "|string_name| 📜"
+msgstr "|string_name| 📜"
+
+msgid ""
+"Uses string interning for fast comparisons. Use this for static strings that "
+"are referenced frequently and used in multiple locations in the engine."
+msgstr ""
+"빠른 비교를 위해 문자열 인터닝을 사용합니다. 자주 참조되고 엔진의 여러 위치에"
+"서 사용되는 정적 문자열에 대해 이를 사용하십시오."
+
+msgid "|local_vector|"
+msgstr "벡터"
+
+msgid ""
+"Closer to ``std::vector`` in semantics, doesn't use copy-on-write (COW) thus "
+"it's faster than ``Vector``. Prefer it over ``Vector`` when copying it "
+"cheaply is not needed."
+msgstr ""
+"의미론적으로 ``std::vector``에 더 가깝고 COW(기록 중 복사)를 사용하지 않으므"
+"로 ``Vector``보다 빠릅니다. 저렴하게 복사할 필요가 없으면 ``Vector``보다 선호"
+"합니다."
+
+msgid "|array| 📜"
+msgstr "|array| 📜"
+
+msgid ""
+"Values can be of any Variant type. No static typing is imposed. Uses shared "
+"reference counting, similar to ``std::shared_ptr``. Uses Vector<Variant> "
+"internally."
+msgstr ""
+"값은 모든 Variant 유형이 될 수 있습니다. 정적 타이핑이 적용되지 않습니다. "
+"``std::shared_ptr``와 유사한 공유 참조 카운팅을 사용합니다. 내부적으로 "
+"Vector<Variant>를 사용합니다."
+
+msgid "|typed_array| 📜"
+msgstr "타입 있는 배열"
+
+msgid ""
+"Subclass of ``Array`` but with static typing for its elements. Not to be "
+"confused with ``Packed*Array``, which is internally a ``Vector``."
+msgstr ""
+"``Array``의 하위 클래스이지만 해당 요소에 대한 정적 유형 지정이 있습니다. 내"
+"부적으로 ``Vector``인 ``Packed*Array``와 혼동하지 마십시오."
+
+msgid "|packed_array| 📜"
+msgstr "지역 변수(Local Variables)"
+
+msgid ""
+"Alias of ``Vector``, e.g. ``PackedColorArray = Vector<Color>``. Only a "
+"limited list of packed array types are available (use ``TypedArray`` "
+"otherwise)."
+msgstr ""
+"``Vector``의 별칭, 예: ``PackedColorArray = Vector<Color>``. 제한된 목록의 압"
+"축형 배열 유형만 사용할 수 있습니다(그렇지 않으면 ``TypedArray`` 사용)."
+
+msgid "|list|"
+msgstr "|list|"
+
+msgid "``std::list``"
+msgstr "``: String``"
+
+msgid ""
+"Linked list type. Generally slower than other array/vector types. Prefer "
+"using other types in new code, unless using ``List`` avoids the need for "
+"type conversions."
+msgstr ""
+"연결리스트 유형. 일반적으로 다른 배열/벡터 유형보다 느립니다. ``List``를 사용"
+"하면 유형 변환이 필요하지 않는 한 새 코드에서 다른 유형을 사용하는 것이 좋습"
+"니다."
+
+msgid "|fixed_vector|"
+msgstr "벡터"
+
+msgid "``std::array``"
+msgstr "``Array``"
+
+msgid ""
+"Vector with a fixed capacity (more similar to "
+"``boost::container::static_vector``). This container type is more efficient "
+"than other vector-like types because it makes no heap allocations."
+msgstr ""
+"고정된 용량을 갖는 벡터(``boost::container::static_vector``와 더 유사) 이 컨"
+"테이너 유형은 힙을 할당하지 않기 때문에 다른 벡터형 유형보다 더 효율적입니다."
+
+msgid "|span|"
+msgstr "|span|"
+
+msgid "``std::span``"
+msgstr "``: String``"
+
+msgid ""
+"Represents read-only access to a contiguous array without needing to copy "
+"any data. Note that ``Span`` is designed to be a high performance API: It "
+"does not perform parameter correctness checks in the same way you might be "
+"used to with other Godot containers. Use with care. `Span` can be "
+"constructed from most array-like containers (e.g. ``vector.span()``)."
+msgstr ""
+"데이터를 복사할 필요 없이 연속 배열에 대한 읽기 전용 액세스를 나타냅니다. "
+"``Span``는 고성능 API로 설계되었습니다. 다른 Godot 컨테이너에서 사용했던 것"
+"과 같은 방식으로 매개변수 정확성 검사를 수행하지 않습니다. 주의해서 사용하세"
+"요. `Span`는 배열과 유사한 대부분의 컨테이너(예: ``vector.span()``)에서 구성"
+"할 수 있습니다."
+
+msgid "|rb_set|"
+msgstr "|rb_set|"
+
+msgid "``std::set``"
+msgstr "``std::set``"
+
+msgid ""
+"Uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ for "
+"faster access."
+msgstr ""
+"더 빠른 액세스를 위해 `레드-블랙 트리 <https://en.wikipedia.org/wiki/Red-"
+"black_tree>`__를 사용합니다."
+
+msgid "|v_set|"
+msgstr "|v_set|"
+
+msgid "``std::flat_set``"
+msgstr "``std::flat_set``"
+
+msgid ""
+"Uses copy-on-write (COW) semantics. This means it's generally slower but can "
+"be copied around almost for free. The performance benefits of ``VSet`` "
+"aren't established, so prefer using other types."
+msgstr ""
+"COW(기록 중 복사) 의미 체계를 사용합니다. 이는 일반적으로 속도가 느리지만 거"
+"의 무료로 복사할 수 있음을 의미합니다. ``VSet``의 성능 이점은 확립되지 않았으"
+"므로 다른 유형을 사용하는 것이 좋습니다."
+
+msgid "|hash_map|"
+msgstr "|hash_map|"
+
+msgid ""
+"Defensive (robust but slow) map type. Preserves insertion order. Pointers to "
+"keys and values, as well as iterators, are stable under mutation. Use this "
+"map type when either of these affordances are needed. Use ``AHashMap`` "
+"otherwise."
+msgstr ""
+"방어적인(견고하지만 느린) 지도 유형입니다. 삽입 순서를 유지합니다. Pointers "
+"to keys and values, as well as iterators, are stable under mutation. 이러한 "
+"어포던스 중 하나가 필요할 때 이 지도 유형을 사용하세요. 그렇지 않으면 "
+"``AHashMap``를 사용하세요."
+
+msgid "|rb_map|"
+msgstr "|rb_map|"
+
+msgid "``std::map``"
+msgstr "``std::map``"
+
+msgid ""
+"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
+"black-tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
+"established, so prefer using other types."
+msgstr ""
+"`레드-블랙 트리 <https://en.wikipedia.org/wiki/Red-black-tree>`__을 사용하여 "
+"키를 찾는 맵 유형입니다. ``RBMap``의 성능 이점은 확립되지 않았으므로 다른 유"
+"형을 사용하는 것이 좋습니다."
+
+msgid "|dictionary| 📜"
+msgstr "딕셔너리"
+
+msgid ""
+"Keys and values can be of any Variant type. No static typing is imposed. "
+"Uses shared reference counting, similar to ``std::shared_ptr``. Preserves "
+"insertion order. Uses ``HashMap<Variant>`` internally."
+msgstr ""
+"키와 값은 모든 Variant 유형이 될 수 있습니다. 정적 타이핑이 적용되지 않습니"
+"다. ``std::shared_ptr``와 유사한 공유 참조 카운팅을 사용합니다. 삽입 순서를 "
+"유지합니다. 내부적으로 ``HashMap<Variant>``를 사용합니다."
+
+msgid "|typed_dictionary| 📜"
+msgstr "|typed_dictionary| 📜"
+
+msgid ""
+"Subclass of ``Dictionary`` but with static typing for its keys and values."
+msgstr ""
+"``Dictionary``의 서브클래스이지만 해당 키와 값에 대한 정적 유형 지정이 있습니"
+"다."
+
+msgid "|pair|"
+msgstr "|pair|"
+
+msgid "``std::pair``"
+msgstr "``: String``"
+
+msgid ""
+"Stores a single pair. See also ``KeyValue`` in the same file, which uses "
+"read-only keys."
+msgstr ""
+"단일 쌍을 저장합니다. 읽기 전용 키를 사용하는 동일한 파일의 ``KeyValue``도 참"
+"조하세요."
+
+msgid "Relocation safety"
+msgstr "액션 세트"
+
+msgid ""
+"Godot's containers assume their elements are `trivially relocatable <https://"
+"open-std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__."
+msgstr ""
+"Godot의 컨테이너는 해당 요소가 `사소한 재배치 가능 <https://open-std.org/"
+"JTC1/SC22/WG21/docs/papers/2020/p1144r5.html>`__이라고 가정합니다."
+
+msgid ""
+"This means that, if you store data types in it that have pointers to "
+"themselves, or are otherwise `not trivially relocatable <https://open-"
+"std.org/JTC1/SC22/WG21/docs/papers/2020/p1144r5.html#non-trivial-"
+"samples>`__, Godot might crash. Note that storing **pointers to** objects "
+"that are not trivially relocatable, such as some Object subclasses, is "
+"unproblematic and supported."
+msgstr ""
+"이는 자신에 대한 포인터가 있거나 `사소하게 재배치 가능하지 않은 데이터 유형"
+"을 저장하는 경우 <https://open-std.org/JTC1/SC22/WG21/docs/papers/2020/"
+"p1144r5.html#non-trivial-samples>`__, Godot가 충돌할 수 있음을 의미합니다. 일"
+"부 Object 서브클래스와 같이 쉽게 재배치할 수 없는 객체에 **포인터**를 저장하"
+"는 것은 문제가 없으며 지원됩니다."
+
+msgid ""
+"The reason to assume trivial relocatability is that it allows us to make use "
+"of important optimization techniques, such as relocation by ``memcpy`` or "
+"``realloc``."
+msgstr ""
+"사소한 재배치를 가정하는 이유는 ``memcpy`` 또는 ``realloc``에 의한 재배치와 "
+"같은 중요한 최적화 기술을 사용할 수 있게 해주기 때문입니다."
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "Multithreading / Concurrency"
+msgstr "멀티 스레딩"
+
+msgid ""
+"You can find more information on multithreading strategies "
+"at :ref:`doc_using_multiple_threads`."
+msgstr ""
+"스레드에 대한 자세한 정보는 :ref:`doc_using_multiple_threads`\\ 를 참조하세"
+"요."
+
+msgid ""
+"None of Godot's containers are thread-safe. When you expect multiple threads "
+"to access them, you must use multithread protections."
+msgstr ""
+"Godot의 컨테이너 중 어느 것도 스레드로부터 안전하지 않습니다. 여러 스레드가 "
+"액세스할 것으로 예상되는 경우 다중 스레드 보호를 사용해야 합니다."
+
+msgid ""
+"Note that some of the types listed here are also available through the "
+"bindings, but the binding types are wrapped with :ref:`class_RefCounted` "
+"(found in the ``CoreBind::`` namespace). Prefer the primitives listed here "
+"when possible, for efficiency reasons."
+msgstr ""
+"여기에 나열된 유형 중 일부는 바인딩을 통해서도 사용할 수 있지만 바인딩 유형"
+"은 :ref:`class_RefCounted`(``CoreBind::`` 네임스페이스에 있음)로 래핑됩니다. "
+"효율성을 위해 가능하면 여기에 나열된 기본 형식을 선호하세요."
+
+msgid "|mutex|"
+msgstr "|mutex|"
+
+msgid "``std::recursive_mutex``"
+msgstr "또는 순서가 없는 집합이 될 수 있습니다:"
+
+msgid "Recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr "재귀적 뮤텍스 유형. 잠그려면 ``MutexLock lock(mutex)``를 사용하세요."
+
+msgid "|binary_mutex|"
+msgstr "|binary_mutex|"
+
+msgid "``std::mutex``"
+msgstr "``: String``"
+
+msgid "Non-recursive mutex type. Use ``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"비재귀적 뮤텍스 유형입니다. 잠그려면 ``MutexLock lock(mutex)``를 사용하세요."
+
+msgid "|rw_lock|"
+msgstr "|rw_lock|"
+
+msgid "``std::shared_timed_mutex``"
+msgstr "또는 순서가 없는 집합이 될 수 있습니다:"
+
+msgid ""
+"Read-write aware mutex type. Use ``RWLockRead lock(mutex)`` or ``RWLockWrite "
+"lock(mutex)`` to lock it."
+msgstr ""
+"읽기-쓰기 인식 뮤텍스 유형입니다. ``RWLockRead lock(mutex)`` 또는 "
+"``RWLockWrite lock(mutex)``를 사용하여 잠급니다."
+
+msgid "|safe_binary_mutex|"
+msgstr "|safe_binary_mutex|"
+
+msgid ""
+"Recursive mutex type that can be used with ``ConditionVariable``. Use "
+"``MutexLock lock(mutex)`` to lock it."
+msgstr ""
+"``ConditionVariable``와 함께 사용할 수 있는 재귀적 뮤텍스 유형입니다. 잠그려"
+"면 ``MutexLock lock(mutex)``를 사용하세요."
+
+msgid "|condition_variable|"
+msgstr "인스턴스 편집하기"
+
+msgid "``std::condition_variable``"
+msgstr "연결(Connections)"
+
+msgid "Condition variable type, used with ``SafeBinaryMutex``."
+msgstr "``SafeBinaryMutex``와 함께 사용되는 조건 변수 유형입니다."
+
+msgid "|semaphore|"
+msgstr "**예제**"
+
+msgid "``std::counting_semaphore``"
+msgstr "``: String``"
+
+msgid "Counting semaphore type."
+msgstr "가져오기 리소스 타입 변경하기"
+
+msgid "|safe_numeric|"
+msgstr "|safe_numeric|"
+
+msgid "``std::atomic``"
+msgstr "``: String``"
+
+msgid "Templated atomic type, designed for numbers."
+msgstr "숫자용으로 설계된 템플릿 기반 원자 유형입니다."
+
+msgid "|safe_flag|"
+msgstr "|safe_flag|"
+
+msgid "``std::atomic_bool``"
+msgstr "``: String``"
+
+msgid "Bool atomic type."
+msgstr "Bool 원자 유형."
+
+msgid "|safe_ref_count|"
+msgstr "|safe_ref_count|"
+
+msgid ""
+"Atomic type designed for reference counting. Will refuse to increment the "
+"reference count if it is 0."
+msgstr ""
+"참조 계산을 위해 설계된 원자 유형입니다. 참조 카운트가 0이면 증가를 거부합니"
+"다."
+
+msgid "Math types"
+msgstr "수학 유형"
+
+msgid ""
+"There are several linear math types available in the ``core/math`` directory:"
+msgstr ""
+"``core/math`` 디렉토리에는 여러 가지 선형 수학 유형을 사용할 수 있습니다."
+
+msgid ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "NodePath"
+msgstr "노드 경로"
+
+msgid ""
+"This is a special datatype used for storing paths in a scene tree and "
+"referencing them in an optimized manner:"
+msgstr ""
+"이는 씬 트리에 경로를 저장하고 이를 최적화된 방식으로 참조하는 데 사용되는 특"
+"수 데이터 유형입니다."
+
+msgid ""
+"`core/string/node_path.h <https://github.com/godotengine/godot/blob/master/"
+"core/string/node_path.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "RID"
+msgstr "RID"
+
+msgid ""
+"RIDs are *Resource IDs*. Servers use these to reference data stored in them. "
+"RIDs are opaque, meaning that the data they reference can't be accessed "
+"directly. RIDs are unique, even for different types of referenced data:"
+msgstr ""
+"RID는 *리소스 ID*입니다. 서버는 이를 사용하여 저장된 데이터를 참조합니다. RID"
+"는 불투명합니다. 즉, RID가 참조하는 데이터에 직접 액세스할 수 없습니다. RID"
+"는 다양한 유형의 참조 데이터에 대해서도 고유합니다."
+
+msgid ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"

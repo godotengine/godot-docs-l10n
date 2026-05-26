@@ -14,8 +14,29 @@ msgstr ""
 msgid "Introduction"
 msgstr "Introduction"
 
+msgid ""
+"Android plugins are powerful tools to extend the capabilities of the Godot "
+"engine by tapping into the functionality provided by Android platforms and "
+"ecosystem."
+msgstr ""
+"Les plugins Android sont de puissants outils pour étendre les capacités du "
+"moteur Godot en exploitant les fonctionnalités fournies par les plateformes "
+"et l'écosystème Android."
+
+msgid ""
+"For example in Godot 4, Android plugins are used to support multiple Android-"
+"based XR platforms without encumbering the core codebase with vendor "
+"specific code or binaries."
+msgstr ""
+"Par exemple dans Godot 4, les plugins Android sont utilisés pour soutenir "
+"plusieurs plates-formes XR basées sur Android sans encombrer la base de code "
+"principale avec du code et des binaires spécifiques aux vendeurs."
+
 msgid "Android plugin"
 msgstr "plugin Android"
+
+msgid "v2 Architecture"
+msgstr "Architecture des v2"
 
 msgid ""
 "Building on the previous v1 architecture, Android plugins continue to be "
@@ -35,8 +56,33 @@ msgstr "Librairies natives (via JNI)"
 msgid "GDExtension libraries"
 msgstr "Bibliothèques GDExtension"
 
+msgid ""
+"Create an Android library module using `these instructions <https://"
+"developer.android.com/studio/projects/android-library>`_"
+msgstr ""
+"Créez un module de bibliothèque Android en utilisant `ces instructions "
+"<https://developer.android.com/studio/projects/android-library>`_"
+
 msgid "Where:"
 msgstr "Où :"
+
+msgid "``PluginName`` is the name of the plugin"
+msgstr "``PluginName`` est le nom du plugin"
+
+msgid ""
+"``plugin.init.ClassFullName`` is the full component name (package + class "
+"name) of the plugin init class (e.g: "
+"``org.godotengine.plugin.android.template.GodotAndroidPlugin``)."
+msgstr ""
+"``plugin.init.ClassFullName`` est le nom complet du composant (package + nom "
+"de classe) de la classe d'initialisation du plugin (par exemple : "
+"``org.godotengine.plugin.android.template.GodotAndroidPlugin``)."
+
+msgid "Migrating a v1 Android plugin to v2"
+msgstr "Migrer un plugin Android v1 vers la v2"
+
+msgid "Update the plugin's manifest file:"
+msgstr "Mettez à jour le fichier manifest du plugin :"
 
 msgid ""
 "The created script must be a ``@tool`` script, or else it will not work "

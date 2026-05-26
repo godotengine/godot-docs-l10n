@@ -14,8 +14,108 @@ msgstr ""
 msgid "KDevelop"
 msgstr "KDevelop"
 
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_은 모든 데스크톱 플랫폼을 위한 무료 오"
+"픈 소스 IDE입니다."
+
+msgid "Importing the project"
+msgstr "프로젝트 가져오기"
+
+msgid "From the KDevelop's main screen select **Open Project**."
+msgstr "KDevelop의 메인 화면에서 **Open 프로젝트**를 선택하세요."
+
+msgid "KDevelop's main screen."
+msgstr "KDevelop의 메인 화면입니다."
+
+msgid "Navigate to the Godot root folder and select it."
+msgstr "Godot 루트 폴더로 이동하여 선택하세요."
+
+msgid ""
+"On the next screen, choose **Custom Build System** for the **Project "
+"Manager**."
+msgstr ""
+"다음 화면에서 **프로젝트 Manager**에 대해 **Custom Build System**을 선택합니"
+"다."
+
+msgid ""
+"After the project has been imported, open the project configuration by right-"
+"clicking on it in the **Projects** panel and selecting **Open "
+"Configuration..** option."
+msgstr ""
+"프로젝트를 가져온 후 **프로젝트** 패널에서 해당 프로젝트를 마우스 오른쪽 버튼"
+"으로 클릭하고 **구성 열기..** 옵션을 선택하여 프로젝트 구성을 엽니다."
+
+msgid ""
+"Under **Language Support** open the **Includes/Imports** tab and add the "
+"following paths:"
+msgstr "**언어 지원**에서 **포함/가져오기** 탭을 열고 다음 경로를 추가합니다."
+
+msgid "Apply the changes."
+msgstr "변경 사항을 적용합니다."
+
+msgid ""
+"Under **Custom Build System** add a new build configuration with the "
+"following settings:"
+msgstr ""
+"**Custom Build System**에서 다음 설정을 사용하여 새 빌드 구성을 추가합니다."
+
+msgid "Build Directory"
+msgstr "디렉토리 구축"
+
+msgid "*blank*"
+msgstr "*공백*"
+
 msgid "Enable"
 msgstr "활성화"
 
+msgid "**True**"
+msgstr "**True**"
+
+msgid "Executable"
+msgstr "실행 가능"
+
+msgid "**scons**"
+msgstr "**스콘**"
+
 msgid "Arguments"
 msgstr "인수"
+
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"godot의 UI 시스템이 어떻게 작동하는지 알아보려"
+"면 :doc:'ui_introduction_to_the_ui_system'를 먼저 읽어보세요."
+
+msgid "Apply the changes and close the configuration window."
+msgstr "변경 사항을 적용하고 구성 창을 닫습니다."
+
+msgid "Debugging the project"
+msgstr "프로젝트 준비하기"
+
+msgid "Select **Run > Configure Launches...** from the top menu."
+msgstr "상단 메뉴에서 **실행 > 시작 구성...**을 선택합니다."
+
+msgid "Click **Add** to create a new launch configuration."
+msgstr "**추가**를 클릭하여 새 시작 구성을 만듭니다."
+
+msgid ""
+"Select **Executable** option and specify the path to your executable located "
+"in the ``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD "
+"platform with ``platform=linuxbsd``, ``target=editor``, and "
+"``dev_build=yes``."
+msgstr ""
+"**실행 파일** 옵션을 선택하고 ``<Godot root directory>/bin`` 폴더에 있는 실"
+"행 파일의 경로를 지정합니다. 이름은 빌드 구성에 따라 다릅니다. "
+"``platform=linuxbsd``, ``target=editor`` 및 ``dev_build=yes``가 포함된 64비"
+"트 LinuxBSD 플랫폼용 ``godot.linuxbsd.editor.dev.x86_64``."
+
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"같은 `Godot 웹사이트 <https://godotengine.org/contact>`_ 페이지에서 참고하세"
+"요."

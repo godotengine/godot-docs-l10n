@@ -11,14 +11,68 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GDScript documentation comments"
+msgstr "문서의 구조"
+
+msgid ""
+"In GDScript, comments can be used to document your code and add descriptions "
+"to the members of a script. There are two differences between a normal "
+"comment and a documentation comment. Firstly, a documentation comment should "
+"start with double hash symbols ``##``. Secondly, it must immediately precede "
+"a script member, or for script descriptions, be placed at the top of the "
+"script. If an exported variable is documented, its description is used as a "
+"tooltip in the editor. This documentation can be generated as XML files by "
+"the editor."
+msgstr ""
+"GDScript에서는 주석을 사용하여 코드를 문서화하고 스크립트 멤버에 설명을 추가"
+"할 수 있습니다. 일반 주석과 문서 주석에는 두 가지 차이점이 있습니다. 첫째, 문"
+"서 주석은 이중 해시 기호 ``##``로 시작해야 합니다. 둘째, 스크립트 멤버 바로 "
+"앞에 배치되어야 하며, 스크립트 설명의 경우 스크립트 맨 위에 배치되어야 합니"
+"다. 내보낸 변수가 문서화되면 해당 설명이 편집기에서 도구 설명으로 사용됩니"
+"다. 이 문서는 편집기를 통해 XML 파일로 생성될 수 있습니다."
+
+msgid "Documenting a script"
+msgstr "스크립트 실행하기"
+
+msgid ""
+"Comments documenting a script must come before any member documentation. A "
+"suggested format for script documentation can be divided into three parts."
+msgstr ""
+"스크립트를 문서화하는 의견은 회원 문서 앞에 와야 합니다. 스크립트 문서에 권장"
+"되는 형식은 세 부분으로 나눌 수 있습니다."
+
+msgid "A brief description of the script."
+msgstr "스크립트에 대한 간략한 설명입니다."
+
+msgid "Detailed description."
+msgstr "설명"
+
+msgid "Tutorials and deprecated/experimental marks."
+msgstr "튜토리얼 및 더 이상 사용되지 않는/실험적 표시."
+
+msgid ""
+"To separate these from each other, the documentation comments use special "
+"tags. The tag must be at the beginning of a line (ignoring preceding white "
+"space) and must have the format ``@``, followed by the keyword."
+msgstr ""
+"이를 서로 분리하기 위해 문서 주석에는 특수 태그를 사용합니다. 태그는 행의 시"
+"작 부분에 있어야 하며(이전 공백 무시) ``@`` 형식이어야 하며 그 뒤에 키워드가 "
+"와야 합니다."
+
 msgid "Tags"
 msgstr "태그"
 
 msgid "Brief description"
 msgstr "간략한 설명"
 
+msgid "No tag. Lives at the very beginning of the documentation section."
+msgstr "태그가 없습니다. 문서 섹션의 시작 부분에 있습니다."
+
 msgid "Description"
 msgstr "설명"
+
+msgid "No tag. Use one blank line to separate the description from the brief."
+msgstr "태그가 없습니다. 설명과 요약을 구분하려면 빈 줄 하나를 사용하세요."
 
 msgid "Tutorial"
 msgstr "튜토리얼"
@@ -47,6 +101,28 @@ msgstr "``@experimental``"
 msgid "``@experimental: This class is unstable.``"
 msgstr "``@experimental: 이 클래스는 불안정합니다.``"
 
+msgid "For example:"
+msgstr "예를 들면:"
+
+msgid ""
+"If there is any space in between the tag name and colon, for example "
+"``@tutorial  :``, it won't be treated as a valid tag and will be ignored."
+msgstr ""
+"태그 이름과 콜론 사이에 공백이 있으면(예: ``@tutorial  :``) 유효한 태그로 처"
+"리되지 않고 무시됩니다."
+
+msgid ""
+"When the description spans multiple lines, the preceding and trailing white "
+"spaces will be stripped and joined with a single space. To preserve the line "
+"break use ``[br]``. See also `BBCode and class reference`_ below."
+msgstr ""
+"설명이 여러 줄에 걸쳐 있으면 앞과 뒤의 공백이 제거되어 단일 공백으로 결합됩니"
+"다. 줄바꿈을 유지하려면 ``[br]``를 사용하세요. 아래 `BBCode and class "
+"reference`_도 참조하세요."
+
+msgid "Documenting script members"
+msgstr "스크립트 템플릿 만들기"
+
 msgid "Members that are applicable for documentation:"
 msgstr "문서화에 해당되는 멤버:"
 
@@ -55,6 +131,12 @@ msgstr "시그널"
 
 msgid "Enum"
 msgstr "열거형"
+
+msgid "Enum value"
+msgstr "열거형 값"
+
+msgid "Constant"
+msgstr "제약"
 
 msgid "Variable"
 msgstr "변수"
@@ -65,6 +147,16 @@ msgstr "함수"
 msgid "Inner class"
 msgstr "내부 클래스"
 
+msgid ""
+"Documentation of a script member must immediately precede the member or its "
+"annotations if it has any. The description can have more than one line but "
+"every line must start with the double hash symbol ``##`` to be considered as "
+"part of the documentation."
+msgstr ""
+"스크립트 멤버의 문서는 멤버 또는 해당 주석(있는 경우) 바로 앞에 있어야 합니"
+"다. 설명은 두 줄 이상일 수 있지만 모든 줄은 문서의 일부로 간주되도록 이중 해"
+"시 기호 ``##``로 시작해야 합니다."
+
 msgid "No tag."
 msgstr "태그가 없습니다."
 
@@ -74,14 +166,91 @@ msgstr "``@deprecated: 대신 [member another]를 사용하세요.``"
 msgid "``@experimental: This method is incomplete.``"
 msgstr "``@experimental: 이 메서드는 불완전합니다.``"
 
+msgid "Alternatively, you can use inline documentation comments:"
+msgstr "한 줄 *case* 명령문에서 콜론 이후."
+
+msgid ""
+"The script documentation will update in the editor help window every time "
+"the script is updated. If any member variable or function name starts with "
+"an underscore, it will be treated as private. It will not appear in the "
+"documentation and will be ignored in the help window."
+msgstr ""
+"스크립트 문서는 스크립트가 업데이트될 때마다 편집기 도움말 창에서 업데이트됩"
+"니다. 멤버 변수나 함수 이름이 밑줄로 시작하면 비공개로 처리됩니다. 문서에는 "
+"나타나지 않으며 도움말 창에서는 무시됩니다."
+
 msgid "Complete script example"
 msgstr "완전한 스크립트 예제"
 
 msgid "``@deprecated`` and ``@experimental`` tags"
 msgstr "``@deprecated`` 및 ``@experimental`` 태그"
 
+msgid ""
+"You can mark a class or any of its members as deprecated or experimental. "
+"This will add the corresponding indicator in the built-in documentation "
+"viewer. Optionally, you can provide a short message explaining why the API "
+"is not recommended. This can be especially useful for plugin and library "
+"creators."
+msgstr ""
+"클래스 또는 해당 멤버를 더 이상 사용되지 않거나 실험적인 것으로 표시할 수 있"
+"습니다. 그러면 내장 문서 뷰어에 해당 표시기가 추가됩니다. 선택적으로 API가 권"
+"장되지 않는 이유를 설명하는 짧은 메시지를 제공할 수 있습니다. 이는 플러그인 "
+"및 라이브러리 제작자에게 특히 유용할 수 있습니다."
+
+msgid ""
+"**Deprecated** marks a non-recommended API that is subject to removal or "
+"incompatible change in a future major release. Usually the API is kept for "
+"backwards compatibility."
+msgstr ""
+"**더 이상 사용되지 않음**은 향후 주요 릴리스에서 제거되거나 호환되지 않는 변"
+"경이 발생할 수 있는 권장되지 않는 API를 표시합니다. 일반적으로 API는 이전 버"
+"전과의 호환성을 위해 유지됩니다."
+
+msgid ""
+"**Experimental** marks a new unstable API that may be changed or removed in "
+"the current major branch. Using this API is not recommended in production "
+"code."
+msgstr ""
+"**실험적**은 현재 주요 분기에서 변경되거나 제거될 수 있는 불안정한 새로운 API"
+"를 나타냅니다. 프로덕션 코드에서는 이 API를 사용하지 않는 것이 좋습니다."
+
+msgid ""
+"While technically you can use both ``@deprecated`` and ``@experimental`` "
+"tags on the same class/member, this is not recommended as it is against "
+"common conventions."
+msgstr ""
+"기술적으로 동일한 클래스/멤버에 ``@deprecated`` 및 ``@experimental`` 태그를 "
+"모두 사용할 수 있지만 이는 일반적인 규칙에 위배되므로 권장되지 않습니다."
+
 msgid "BBCode and class reference"
 msgstr "BBCode와 클래스 참조"
+
+msgid ""
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
+"to the text which could also be used in the documentation. See "
+"also :ref:`class reference bbcode <doc_class_reference_bbcode>`. Note that "
+"this is slightly different from the ``RichTextLabel`` :ref:`BBCode "
+"<doc_bbcode_in_richtextlabel>`."
+msgstr ""
+"Godot의 클래스 참조는 BBCode와 유사한 태그를 지원합니다. 문서에도 사용할 수 "
+"있는 멋진 서식을 텍스트에 추가합니다. :ref:`class 참조 bbcode "
+"<doc_class_reference_bbcode>`도 참조하세요. 이는 "
+"``RichTextLabel`` :ref:`BBCode <doc_bbcode_in_richtextlabel>`과 약간 다릅니"
+"다."
+
+msgid ""
+"Whenever you link to a member of another class, you need to specify the "
+"class name. For links to the same class, the class name is optional and can "
+"be omitted."
+msgstr ""
+"다른 클래스의 멤버에 연결할 때마다 클래스 이름을 지정해야 합니다. 동일한 클래"
+"스에 대한 링크의 경우 클래스 이름은 선택 사항이며 생략할 수 있습니다."
+
+msgid "Here's the list of available tags:"
+msgstr "6 가지 패턴 유형이 있습니다:"
+
+msgid "Tag and Description"
+msgstr "설명"
 
 msgid "Example"
 msgstr "예제"
@@ -89,29 +258,336 @@ msgstr "예제"
 msgid "Result"
 msgstr "결과"
 
+msgid "``[Class]``"
+msgstr "클래스"
+
+msgid "Link to class"
+msgstr "라이선스에 대한 링크"
+
+msgid "``Move the [Sprite2D].``"
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "``[annotation Class.name]``"
+msgstr "``[annotation Class.name]``"
+
+msgid "Link to annotation"
+msgstr "벡터 연산"
+
+msgid "``See [annotation @GDScript.@rpc].``"
+msgstr "``See [annotation @GDScript.@rpc].``"
+
+msgid "See :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "``[constant Class.name]``"
+msgstr "``[constant Class.name]``"
+
+msgid "Link to constant"
+msgstr "상수를 정의합니다."
+
+msgid "``See [constant Color.RED].``"
+msgstr "``See [constant Color.RED].``"
+
+msgid "See :ref:`Color.RED <class_Color_constant_RED>`."
+msgstr ":ref:`Color <class_Color>`"
+
+msgid "``[enum Class.name]``"
+msgstr "``[enum Class.name]``"
+
+msgid "Link to enum"
+msgstr "라이선스에 대한 링크"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr "``See [enum Mesh.ArrayType].``"
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr ":ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`을 참조하세요."
+
+msgid "``[member Class.name]``"
+msgstr "``[member Class.name]``"
+
+msgid "Link to member (property)"
+msgstr "멤버 편집"
+
+msgid "``Get [member Node2D.scale].``"
+msgstr "``Get [member Node2D.scale].``"
+
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid "``[method Class.name]``"
+msgstr "메서드"
+
+msgid "Link to method"
+msgstr "메서드 호출하기"
+
+msgid "``Call [method Node3D.hide].``"
+msgstr "``Call [method Node3D.hide].``"
+
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+msgid "``[constructor Class.name]``"
+msgstr "메서드"
+
+msgid "Link to built-in constructor"
+msgstr "내장 생성자로 연결"
+
+msgid "``Use [constructor Color.Color].``"
+msgstr "``Use [constructor Color.Color].``"
+
+msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
+msgstr ":ref:`Color <class_Color>`"
+
+msgid "``[operator Class.name]``"
+msgstr "메서드"
+
+msgid "Link to built-in operator"
+msgstr "벡터 내장 타입"
+
+msgid "``Use [operator Color.operator *].``"
+msgstr "``Use [operator Color.operator *].``"
+
+msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
+msgstr ":ref:`Color <class_Color>`"
+
+msgid "``[signal Class.name]``"
+msgstr "``[signal Class.name]``"
+
+msgid "Link to signal"
+msgstr "바인딩 시그널"
+
+msgid "``Emit [signal Node.renamed].``"
+msgstr "``Emit [signal Node.renamed].``"
+
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid "``[theme_item Class.name]``"
+msgstr "``[theme_item Class.name]``"
+
+msgid "Link to theme item"
+msgstr "라이선스에 대한 링크"
+
+msgid "``See [theme_item Label.font].``"
+msgstr "``See [theme_item Label.font].``"
+
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr ":ref:`Label.font <class_Label_theme_font_font>`을 참조하세요."
+
+msgid "``[param name]``"
+msgstr "``[param name]``"
+
+msgid "Parameter name (as code)"
+msgstr "매개변수 이름(코드로)"
+
+msgid "``Takes [param size] for the size.``"
+msgstr "``Takes [param size] for the size.``"
+
+msgid "Takes ``size`` for the size."
+msgstr "크기는 ``size``를 사용합니다."
+
+msgid "``[br]``"
+msgstr "``[br]``"
+
+msgid "Line break"
+msgstr "break"
+
+msgid "``Line 1.[br]``"
+msgstr "``Line 1.[br]``"
+
+msgid "``Line 2.``"
+msgstr "``Line 2.``"
+
+msgid "Line 1."
+msgstr "1호선."
+
+msgid "Line 2."
+msgstr "2호선."
+
+msgid "``[lb]`` ``[rb]``"
+msgstr "``<<`` ``>>``"
+
+msgid "``[`` and ``]`` respectively"
+msgstr "각각 ``[`` 및 ``]``"
+
+msgid "``[lb]b[rb]text[lb]/b[rb]``"
+msgstr "``[lb]b[rb]text[lb]/b[rb]``"
+
+msgid "[b]text[/b]"
+msgstr "[b]텍스트[/b]"
+
+msgid "``[b]`` ``[/b]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Bold"
 msgstr "굵게"
+
+msgid "``Do [b]not[/b] call this method.``"
+msgstr "``Do [b]not[/b] call this method.``"
+
+msgid "Do **not** call this method."
+msgstr "Do **not** call this method."
+
+msgid "``[i]`` ``[/i]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Italic"
 msgstr "기울임"
 
+msgid "``Returns the [i]global[/i] position.``"
+msgstr "``Returns the [i]global[/i] position.``"
+
+msgid "Returns the *global* position."
+msgstr "*전역* 위치를 반환합니다."
+
+msgid "``[u]`` ``[/u]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Underline"
 msgstr "밑줄"
+
+msgid "``[u]Always[/u] use this method.``"
+msgstr "``[u]Always[/u] use this method.``"
+
+msgid "``[s]`` ``[/s]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Strikethrough"
 msgstr "취소선"
 
+msgid "``[s]Outdated information.[/s]``"
+msgstr "``[s]Outdated information.[/s]``"
+
+msgid "``[color]`` ``[/color]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Color"
 msgstr "색상"
+
+msgid "``[color=red]Error![/color]``"
+msgstr "``[color=red]Error![/color]``"
+
+msgid "``[font]`` ``[/font]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Font"
 msgstr "글꼴"
 
+msgid "``[font=res://mono.ttf]LICENSE[/font]``"
+msgstr "``[font=res://mono.ttf]LICENSE[/font]``"
+
+msgid "``[img]`` ``[/img]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Image"
 msgstr "이미지"
+
+msgid "``[img width=32]res://icon.svg[/img]``"
+msgstr "``[img width=32]res://icon.svg[/img]``"
+
+msgid "``[url]`` ``[/url]``"
+msgstr "``<<`` ``>>``"
 
 msgid "Hyperlink"
 msgstr "하이퍼링크"
 
+msgid "``[url]https://example.com[/url]``"
+msgstr "``[url]https://example.com[/url]``"
+
+msgid "``[url=https://example.com]Website[/url]``"
+msgstr "``[url=https://example.com]Website[/url]``"
+
+msgid "https://example.com"
+msgstr "https://example.com"
+
+msgid "`Website <https://example.com>`_"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "``[center]`` ``[/center]``"
+msgstr "``<<`` ``>>``"
+
 msgid "Horizontal centering"
 msgstr "가로 센터링"
+
+msgid "``[center]2 + 2 = 4[/center]``"
+msgstr "``[center]2 + 2 = 4[/center]``"
+
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr "``[kbd]`` ``[/kbd]``"
+
+msgid "Keyboard/mouse shortcut"
+msgstr "키보드 단축키"
+
+msgid "``Press [kbd]Ctrl + C[/kbd].``"
+msgstr "``Press [kbd]Ctrl + C[/kbd].``"
+
+msgid "Press :kbd:`Ctrl + C`."
+msgstr ":kbd:`Ctrl + O`"
+
+msgid "``[code]`` ``[/code]``"
+msgstr "``[code]`` ``[/code]``"
+
+msgid "Inline code fragment"
+msgstr "인라인 코드 조각"
+
+msgid "``Returns [code]true[/code].``"
+msgstr "``Returns [code]true[/code].``"
+
+msgid "Returns ``true``."
+msgstr "반환"
+
+msgid "``[codeblock]``"
+msgstr "``[codeblock]``"
+
+msgid "``[/codeblock]``"
+msgstr "``[/codeblock]``"
+
+msgid "Multiline code block"
+msgstr "여러 줄 코드 블록"
+
+msgid "*See below.*"
+msgstr "*아래를 참조하세요.*"
+
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr "현재는 :ref:`class_@GDScript`에만 주석이 있습니다."
+
+msgid "``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``."
+msgstr "``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``."
+
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+
+msgid ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
+"always use **four spaces** for indentation (the parser will delete tabs)."
+msgstr ""
+"사전 형식화된 코드 블록에는 ``[codeblock]``를 사용하세요. ``[codeblock]`` 내"
+"에서는 들여쓰기를 위해 항상 **네 개의 공백**을 사용합니다(파서는 탭을 삭제합"
+"니다)."
+
+msgid ""
+"By default, ``[codeblock]`` highlights GDScript syntax. You can change it "
+"using the ``lang`` attribute. Currently supported options are:"
+msgstr ""
+"기본적으로 ``[codeblock]``는 GDScript 구문을 강조 표시합니다. ``lang`` 속성"
+"을 사용하여 변경할 수 있습니다. 현재 지원되는 옵션은 다음과 같습니다."
+
+msgid "``[codeblock lang=text]`` disables syntax highlighting;"
+msgstr "``[codeblock lang=text]``는 구문 강조 표시를 비활성화합니다."
+
+msgid "``[codeblock lang=gdscript]`` highlights GDScript syntax;"
+msgstr "``[codeblock lang=gdscript]``는 GDScript 구문을 강조합니다."
+
+msgid ""
+"``[codeblock lang=csharp]`` highlights C# syntax (only in .NET version)."
+msgstr ""
+"``[codeblock lang=csharp]``는 C# 구문을 강조 표시합니다(.NET 버전에만 해당)."

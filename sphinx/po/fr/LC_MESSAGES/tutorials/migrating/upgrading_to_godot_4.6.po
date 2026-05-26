@@ -11,8 +11,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Upgrading from Godot 4.5 to Godot 4.6"
+msgstr "Mise à niveau de Godot 4.5 vers Godot 4.6"
+
+msgid ""
+"For most games and apps made with 4.5 it should be relatively safe to "
+"migrate to 4.6. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"Pour la plupart des jeux et applications fabriqués en 4.5, il devrait être "
+"relativement sûr de migrer en 4.6. Cette page a l'intention de couvrir tout "
+"ce dont vous avez besoin de faire attention à lors de la migration de votre "
+"projet."
+
 msgid "Breaking changes"
 msgstr "Changements incompatibles"
+
+msgid ""
+"If you are migrating from 4.5 to 4.6, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"Si vous migrez de la 4.5 à la 4.6, les changements cassants énumérés ici "
+"pourraient vous affecter. Les changements sont regroupés par zones/systèmes."
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
@@ -42,14 +62,38 @@ msgstr "Intégré"
 msgid "**FileAccess**"
 msgstr "**FileAccess**"
 
+msgid ""
+"Method ``create_temp`` changes ``mode_flags`` parameter type from ``int`` to "
+"``FileAccess.ModeFlags``"
+msgstr ""
+"La méthode ``create_temp`` change le type du paramètre ``mode_flags`` de "
+"``int`` en ``FileAccess.ModeFlags``"
+
 msgid "|✔️|"
 msgstr "|✔️|"
 
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "`GH-114053`_"
+msgstr "`GH-101531`_"
+
+msgid "Method ``get_as_text`` removes ``skip_cr`` parameter"
+msgstr "La méthode ``get_as_text`` supprime le paramètre ``skip_cr``"
+
+msgid "`GH-110867`_"
+msgstr "`GH-110867`_"
+
 msgid "**Performance**"
 msgstr "**Performance**"
+
+msgid "Method ``add_custom_monitor`` adds a new ``type`` optional parameter"
+msgstr ""
+"La méthode ``add_custom_monitor`` ajoute un nouveau paramètre optionnel "
+"``type``"
+
+msgid "`GH-110433`_"
+msgstr "`GH-110433`_"
 
 msgid "Animation"
 msgstr "Animation"
@@ -57,11 +101,95 @@ msgstr "Animation"
 msgid "**AnimationPlayer**"
 msgstr "**AnimationPlayer**"
 
+msgid ""
+"Property ``assigned_animation`` changes type from ``String`` to "
+"``StringName``"
+msgstr ""
+"La propriété ``assigned_animation`` change de type, de ``String``` à "
+"``StringName``"
+
 msgid "|❌|"
 msgstr "|❌|"
 
+msgid "`GH-110767`_"
+msgstr "`GH-110767`_"
+
+msgid "Property ``autoplay`` changes type from ``String`` to ``StringName``"
+msgstr ""
+"La propriété ``autoplay`` change de type, de ``String`` à ``StringName``"
+
+msgid ""
+"Property ``current_animation`` changes type from ``String`` to ``StringName``"
+msgstr ""
+"La propriété ``current_animation`` change de type, de ``String``` à "
+"``StringName``"
+
+msgid ""
+"Method ``get_queue`` changes return type from ``PackedStringArray`` to "
+"``StringName[]``"
+msgstr ""
+"La méthode ``get_queue`` change de type de renvoi de ``PackedStringArray`` "
+"en ``StringName[]``"
+
+msgid ""
+"Signal ``current_animation_changed`` changes ``name`` parameter type from "
+"``String`` to ``StringName``"
+msgstr ""
+"La méthode ``current_animation_changed`` change le type du paramètre "
+"``name`` de ``String`` à ``StringName``"
+
 msgid "3D"
 msgstr "3D"
+
+msgid ""
+"Method ``get_end_bone_direction`` changes return type from "
+"``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"La méthode ``get_end_bone_direction`` change de type de renvoie de "
+"``SpringBoneSimulator3D.BoneDirection`` en "
+"``SkeletonModifier3D.BoneDirection``"
+
+msgid "`GH-110120`_"
+msgstr "`GH-110120`_"
+
+msgid ""
+"Method ``get_joint_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"La méthode ``get_joint_rotation_axis`` change de type de renvoie de "
+"``SpringBoneSimulator3D.RotationAxis`` en ``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``get_rotation_axis`` changes return type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"La méthode ``get_rotation_axis`` change de type de retour de "
+"``SpringBoneSimulator3D.RotationAxis`` en ``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``set_end_bone_direction`` changes ``bone_direction`` parameter type "
+"from ``SpringBoneSimulator3D.BoneDirection`` to "
+"``SkeletonModifier3D.BoneDirection``"
+msgstr ""
+"La méthode ``set_end_bone_direction`` change le type du paramètre "
+"``bone_direction`` de ``SpringBoneSimulator3D.BoneDirection`` en "
+"``SkeletonModifier3D.BoneDirection``"
+
+msgid ""
+"Method ``set_joint_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"La méthode ``set_joint_rotation_axis`` change le type du paramètre ``axis`` "
+"de ``SpringBoneSimulator3D.RotationAxis`` en "
+"``SkeletonModifier3D.RotationAxis``"
+
+msgid ""
+"Method ``set_rotation_axis`` changes ``axis`` parameter type from "
+"``SpringBoneSimulator3D.RotationAxis`` to ``SkeletonModifier3D.RotationAxis``"
+msgstr ""
+"La méthode ``set_rotation_axis`` change le type du paramètre ``axis`` de "
+"``SpringBoneSimulator3D.RotationAxis`` en ``SkeletonModifier3D.RotationAxis``"
 
 msgid "Rendering"
 msgstr "Rendu"
@@ -69,20 +197,299 @@ msgstr "Rendu"
 msgid "**DisplayServer**"
 msgstr "**DisplayServer**"
 
+msgid ""
+"Method ``accessibility_create_sub_text_edit_elements`` adds a new "
+"``is_last_line`` optional parameter"
+msgstr ""
+"La méthode ``accessibility_create_sub_text_edit_elements`` ajoute un nouveau "
+"paramètre optionnel ``is_last_line``"
+
+msgid "`GH-113459`_"
+msgstr "`GH-113459`_"
+
+msgid ""
+"Method ``tts_speak`` changes ``utterance_id`` parameter type metadata from "
+"``int32`` to ``int64``"
+msgstr ""
+"La méthode ``tts_speak`` change le type du paramètre ``utterance_id`` de "
+"``int32`` en ``int64``"
+
+msgid "`GH-112379`_"
+msgstr "`GH-112379`_"
+
 msgid "GUI nodes"
 msgstr "Nœuds GUI"
+
+msgid "**Control**"
+msgstr "**Contrôle**"
+
+msgid "Method ``grab_focus`` adds a new ``hide_focus`` optional parameter"
+msgstr ""
+"La méthode ``grab_focus`` ajoute un nouveau paramètre optionnel "
+"``hide_focus``"
+
+msgid "`GH-110250`_"
+msgstr "`GH-110250`_"
+
+msgid ""
+"Method ``has_focus`` adds a new ``ignore_hidden_focus`` optional parameter"
+msgstr ""
+"La méthode ``has_focus`` ajoute un nouveau paramètre optionnel "
+"``free_submenus``"
+
+msgid "Method ``add_filter`` adds a new ``mime_type`` optional parameter"
+msgstr ""
+"La méthode ``add_filter`` ajoute un nouveau paramètre optionnel ``mime_type``"
+
+msgid "`GH-111439`_"
+msgstr "`GH-111439`_"
+
+msgid "Method ``edit`` adds a new ``hide_focus`` optional parameter"
+msgstr ""
+"La méthode ``edit`` ajoute un nouveau paramètre optionnel ``hide_focus``"
+
+msgid "`GH-111117`_"
+msgstr "`GH-111117`_"
+
+msgid ""
+"Method ``clamp_split_offset`` adds a new ``priority_index`` optional "
+"parameter"
+msgstr ""
+"La méthode ``clamp_split_offset`` ajoute un nouveau paramètre optionnel "
+"``priority_index``"
+
+msgid "`GH-90411`_"
+msgstr "`GH-90411`_"
 
 msgid "Networking"
 msgstr "Réseau"
 
+msgid ""
+"Method ``disconnect_from_host`` moved to base class ``StreamPeerSocket``"
+msgstr ""
+"La méthode ``disconnect_from_host`` a été déplacée dans la classe parente "
+"``StreamPeerSocket``"
+
+msgid "`GH-107954`_"
+msgstr "`GH-107954`_"
+
+msgid "Method ``get_status`` moved to base class ``StreamPeerSocket``"
+msgstr ""
+"La méthode ``get_status`` a été déplacée dans la classe parente "
+"``StreamPeerSocket``"
+
+msgid "Method ``poll`` moved to base class ``StreamPeerSocket``"
+msgstr ""
+"La méthode ``poll`` a été déplacée dans la classe parente "
+"``StreamPeerSocket``"
+
+msgid "Method ``is_connection_available`` moved to base class ``SocketServer``"
+msgstr ""
+"La méthode ``is_connection_available`` a été déplacée dans la classe parente "
+"``SocketServer``"
+
+msgid "Method ``is_listening`` moved to base class ``SocketServer``"
+msgstr ""
+"La méthode ``is_listening`` a été déplacée dans la classe parente "
+"``SocketServer``"
+
+msgid "Method ``stop`` moved to base class ``SocketServer``"
+msgstr ""
+"La méthode ``stop`` a été déplacée dans la classe parente ``SocketServer``"
+
 msgid "OpenXR"
 msgstr "OpenXR"
+
+msgid "**OpenXRExtensionWrapper**"
+msgstr "**OpenXRExtensionWrapper**"
+
+msgid ""
+"Method ``_get_requested_extensions`` adds a new ``xr_version`` parameter"
+msgstr ""
+"La méthode ``_get_requested_extensions`` ajoute un nouveau paramètre "
+"``xr_version``"
+
+msgid "`GH-109302`_"
+msgstr "`GH-109302`_"
+
+msgid ""
+"Method ``_set_instance_create_info_and_get_next_pointer`` adds  a new "
+"``xr_version`` parameter"
+msgstr ""
+"La méthode ``_set_instance_create_info_and_get_next_pointer`` ajoute un "
+"nouveau paramètre ``xr_version``"
 
 msgid "N/A"
 msgstr "N/A"
 
 msgid "Editor"
 msgstr "Éditeur"
+
+msgid ""
+"Method ``get_script_export_mode`` changes return type from ``int`` to "
+"``EditorExportPreset.ScriptExportMode``"
+msgstr ""
+"La méthode ``get_script_export_mode`` change de type de renvoi de ``int`` à "
+"``EditorExportPreset.ScriptExportMode``"
+
+msgid "`GH-107167`_"
+msgstr "`GH-107167`_"
+
+msgid "Method ``add_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``add_filter`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "`GH-111212`_"
+msgstr "`GH-111212`_"
+
+msgid "Method ``add_option`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``add_option`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``add_side_menu`` removed"
+msgstr "Méthode ``add_side_menu`` supprimée"
+
+msgid "`GH-111162`_"
+msgstr "`GH-111162`_"
+
+msgid "Method ``clear_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``clear_filename_filter`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``clear_filters`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``clear_filters`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_filename_filter`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_line_edit`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_line_edit`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_option_default`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_option_default`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_option_name`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_option_name`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_option_values`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_option_values`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_selected_options`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_selected_options`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``get_vbox`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``get_vbox`` a été déplacée dans la classe parente ``FileDialog``"
+
+msgid "Method ``invalidate`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``invalidate`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``popup_file_dialog`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``popup_file_dialog`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``set_filename_filter`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``set_filename_filter`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``set_option_default`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``set_option_default`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``set_option_name`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``set_option_name`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Method ``set_option_values`` moved to base class ``FileDialog``"
+msgstr ""
+"La méthode ``set_option_values`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Property ``access`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``access`` a été déplacée dans la classe parente ``FileDialog``"
+
+msgid "Property ``current_dir`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``current_dir`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Property ``current_file`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``current_file`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Property ``current_path`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``current_path`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Property ``display_mode`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``display_mode`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Property ``file_mode`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``file_mode`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Property ``filters`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``filters`` a été déplacée dans la classe parente ``FileDialog``"
+
+msgid "Property ``option_count`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``option_count`` a été déplacée dans la classe de base "
+"``FileDialog``"
+
+msgid "Property ``show_hidden_files`` moved to base class ``FileDialog``"
+msgstr ""
+"La propriété ``show_hidden_files`` a été déplacée dans la classe parente "
+"``FileDialog``"
+
+msgid "Signal ``dir_selected`` moved to base class ``FileDialog``"
+msgstr ""
+"Le signal ``dir_selected`` a été déplacé dans la classe parente "
+"``FileDialog``"
+
+msgid "Signal ``filename_filter_changed`` moved to base class ``FileDialog``"
+msgstr ""
+"Le signal ``filename_filter_changed`` a été déplacé dans la classe parente "
+"``FileDialog```"
+
+msgid "Signal ``file_selected`` moved to base class ``FileDialog``"
+msgstr ""
+"Le signal ``file_selected`` a été déplacé dans la classe parente "
+"``FileDialog``"
+
+msgid "Signal ``files_selected`` moved to base class ``FileDialog``"
+msgstr ""
+"Le signal ``files_selected`` a été déplacé dans la classe parente "
+"``FileDialog``"
 
 msgid "Behavior changes"
 msgstr "Changements de comportement"
@@ -93,8 +500,26 @@ msgstr "Android"
 msgid "Navigation"
 msgstr "Navigation"
 
+msgid "Changed defaults"
+msgstr "Valeurs par défaut modifiées"
+
+msgid "Member"
+msgstr "Membre"
+
+msgid "Old Value"
+msgstr "Ancienne valeur"
+
+msgid "New Value"
+msgstr "Nouvelle valeur"
+
 msgid "**MeshInstance3D**"
 msgstr "**MeshInstance3D**"
+
+msgid "Property ``skeleton``"
+msgstr "Propriété ``skeleton``"
+
+msgid "`GH-112267`_"
+msgstr "`GH-112267`_"
 
 msgid "8"
 msgstr "8"
@@ -102,11 +527,56 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "`GH-107902`_"
+msgstr "`GH-107902`_"
+
+msgid "`GH-114043`_"
+msgstr "`GH-114043`_"
+
+msgid "Property ``glow_blend_mode``"
+msgstr "Propriété ``glow_blend_mode``"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
 
+msgid "`GH-110671`_"
+msgstr "`GH-110671`_"
+
+msgid "Property ``glow_intensity``"
+msgstr "Propriété ``glow_intensity``"
+
+msgid "Property ``glow_levels/2``"
+msgstr "Propriété ``glow_levels/2``"
+
+msgid "Property ``glow_levels/3``"
+msgstr "Propriété ``glow_levels/3``"
+
+msgid "Property ``glow_levels/4``"
+msgstr "Propriété ``glow_levels/4``"
+
+msgid "Property ``glow_levels/5``"
+msgstr "Propriété ``glow_levels/5``"
+
+msgid "`GH-111210`_"
+msgstr "`GH-111210`_"
+
+msgid "Property/Parameter"
+msgstr "Propriété/Paramètre"
+
 msgid "**PopupMenu**"
 msgstr "**PopupMenu**"
+
+msgid "Property ``submenu_popup_delay``"
+msgstr "Propriété ``submenu_popup_delay``"
+
+msgid "`GH-110256`_"
+msgstr "`GH-110256`_"
+
+msgid "Property ``compress``"
+msgstr "Propriété ``compress``"
+
+msgid "`GH-112073`_"
+msgstr "`GH-112073`_"

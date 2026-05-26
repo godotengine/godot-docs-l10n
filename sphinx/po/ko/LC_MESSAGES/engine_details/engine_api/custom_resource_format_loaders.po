@@ -11,17 +11,195 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Custom resource format loaders"
+msgstr "사용자 정의 리소스 형식 로더"
+
 msgid "Introduction"
 msgstr "소개"
+
+msgid ""
+"ResourceFormatLoader is a factory interface for loading file assets. "
+"Resources are primary containers. When load is called on the same file path "
+"again, the previous loaded Resource will be referenced. Naturally, loaded "
+"resources must be stateless."
+msgstr ""
+"ResourceFormatLoader는 파일 자산을 로드하기 위한 팩토리 인터페이스입니다. 리"
+"소스는 기본 컨테이너입니다. 동일한 파일 경로에서 다시 로드를 호출하면 이전에 "
+"로드된 리소스가 참조됩니다. 당연히 로드된 리소스는 상태 비저장이어야 합니다."
+
+msgid ""
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to this guide: :ref:`doc_custom_modules_in_cpp`"
+msgstr ""
+"이 가이드는 독자가 C++ 모듈과 Godot 데이터 유형을 만드는 방법을 알고 있다고 "
+"가정합니다. 그렇지 않은 경우 이 가이드를 참조하세"
+"요: :ref:`doc_custom_modules_in_cpp`"
 
 msgid "References"
 msgstr "참조"
 
+msgid ":ref:`ResourceLoader<class_resourceloader>`"
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
+
+msgid ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "What for?"
+msgstr "무엇을 위해?"
+
+msgid "Adding new support for many file formats"
+msgstr "다양한 파일 형식에 대한 새로운 지원 추가"
+
+msgid "Audio formats"
+msgstr "오디오 형식"
+
+msgid "Video formats"
+msgstr "비디오 형식"
+
+msgid "Machine learning models"
+msgstr "기계 학습 모델"
+
+msgid "What not?"
+msgstr "그렇지 않은가?"
+
+msgid "Raster images"
+msgstr "래스터 이미지"
+
+msgid "ImageFormatLoader should be used to load images."
+msgstr "ImageFormatLoader는 이미지를 로드하는 데 사용해야 합니다."
+
+msgid ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "Creating a ResourceFormatLoader"
+msgstr "ResourceFormatLoader 만들기"
+
+msgid ""
+"Each file format consist of a data container and a ``ResourceFormatLoader``."
+msgstr ""
+"각 파일 형식은 데이터 컨테이너와 ``ResourceFormatLoader``로 구성됩니다."
+
+msgid ""
+"ResourceFormatLoaders are classes which return all the necessary metadata "
+"for supporting new extensions in Godot. The class must return the format "
+"name and the extension string."
+msgstr ""
+"ResourceFormatLoaders는 Godot의 새로운 확장을 지원하는 데 필요한 모든 메타데"
+"이터를 반환하는 클래스입니다. 클래스는 형식 이름과 확장 문자열을 반환해야 합"
+"니다."
+
+msgid ""
+"In addition, ResourceFormatLoaders must convert file paths into resources "
+"with the ``load`` function. To load a resource, ``load`` must read and "
+"handle data serialization."
+msgstr ""
+"또한 ResourceFormatLoaders는 ``load`` 함수를 사용하여 파일 경로를 리소스로 변"
+"환해야 합니다. 리소스를 로드하려면 ``load``가 데이터 직렬화를 읽고 처리해야 "
+"합니다."
+
+msgid "resource_loader_json.h"
+msgstr "resource_loader_json.h"
+
+msgid "resource_loader_json.cpp"
+msgstr "resource_loader_json.cpp"
+
 msgid "Creating a ResourceFormatSaver"
 msgstr "ResourceFormatSaver 만들기"
+
+msgid ""
+"If you'd like to be able to edit and save a resource, you can implement a "
+"``ResourceFormatSaver``:"
+msgstr ""
+"리소스를 편집하고 저장하려면 ``ResourceFormatSaver``를 구현할 수 있습니다."
+
+msgid "resource_saver_json.h"
+msgstr "resource_saver_json.h"
+
+msgid "resource_saver_json.cpp"
+msgstr "resource_saver_json.cpp"
 
 msgid "Creating custom data types"
 msgstr "커스텀 데이터 유형 만들기"
 
+msgid ""
+"Godot may not have a proper substitute within its :ref:`doc_core_types` or "
+"managed resources. Godot needs a new registered data type to understand "
+"additional binary formats such as machine learning models."
+msgstr ""
+"Godot는 :ref:`doc_core_types` 또는 관리되는 리소스 내에 적절한 대체품이 없을 "
+"수 있습니다. Godot는 기계 학습 모델과 같은 추가 바이너리 형식을 이해하려면 새"
+"로 등록된 데이터 유형이 필요합니다."
+
+msgid "Here is an example of creating a custom datatype:"
+msgstr "어떻게 작동하는 지의 예제입니다:"
+
+msgid "resource_json.h"
+msgstr "리소스"
+
+msgid "resource_json.cpp"
+msgstr "리소스"
+
+msgid "Considerations"
+msgstr "고려사항"
+
+msgid ""
+"Some libraries may not define certain common routines such as IO handling. "
+"Therefore, Godot call translations are required."
+msgstr ""
+"일부 라이브러리는 IO 처리와 같은 특정 공통 루틴을 정의하지 않을 수 있습니다. "
+"따라서 Godot 호출 번역이 필요합니다."
+
+msgid ""
+"For example, here is the code for translating ``FileAccess`` calls into "
+"``std::istream``."
+msgstr ""
+"예를 들어 다음은 ``FileAccess`` 호출을 ``std::istream``로 변환하는 코드입니"
+"다."
+
+msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+msgstr "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+
+msgid ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+msgstr ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+
+msgid ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
 msgid "Registering the new file format"
 msgstr "새 파일 형식 등록"
+
+msgid ""
+"Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
+"The handler selects the proper loader automatically when ``load`` is called."
+msgstr ""
+"Godot는 ``ResourceLoader`` 핸들러로 ``ResourcesFormatLoader``를 등록합니다. "
+"핸들러는 ``load``가 호출될 때 자동으로 적절한 로더를 선택합니다."
+
+msgid "register_types.h"
+msgstr "register_types.h"
+
+msgid "register_types.cpp"
+msgstr "register_types.cpp"
+
+msgid "Loading it on GDScript"
+msgstr "GDScript에 로드"
+
+msgid ""
+"Save a file called ``demo.json`` with the following contents and place it in "
+"the project's root folder:"
+msgstr ""
+"다음 내용으로 ``demo.json``라는 파일을 저장하고 프로젝트의 루트 폴더에 배치합"
+"니다."
+
+msgid "Then attach the following script to any node:"
+msgstr "다음과 같은 주의 사항이 있습니다:"

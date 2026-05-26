@@ -29,11 +29,17 @@ msgstr ""
 msgid "Core"
 msgstr "Componentes Principais"
 
+msgid "Change"
+msgstr "Mudança"
+
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
 
 msgid "C# Source Compatible"
 msgstr "Compatível com fonte C#"
+
+msgid "Introduced"
+msgstr "Introduzido"
 
 msgid "**FileAccess**"
 msgstr "**FileAccess**"
@@ -44,6 +50,9 @@ msgstr "|✔️|"
 msgid "|✔️ with compat|"
 msgstr "|✔️ with compat|"
 
+msgid "**Performance**"
+msgstr "**Desempenho**"
+
 msgid "Animation"
 msgstr "Animação"
 
@@ -53,11 +62,23 @@ msgstr "|❌|"
 msgid "3D"
 msgstr "3D"
 
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
 msgid "Rendering"
 msgstr "Renderização"
 
 msgid "Networking"
-msgstr "Trabalho em rede"
+msgstr "Redes"
+
+msgid ""
+"The ``OpenXRExtensionWrapper`` type is intended to be subclassed from "
+"GDExtensions. The method ``_set_instance_create_info_and_get_next_pointer`` "
+"has a ``void*`` parameter so it's not exposed to scripting."
+msgstr ""
+"O tipo ``OpenXRExtensionWrapper`` destina-se a ser subclassificado de "
+"GDExtensions. O método ``_set_instance_create_info_and_get_next_pointer`` "
+"tem um parâmetro ``void*`` para que não esteja exposto ao scripting."
 
 msgid "Editor"
 msgstr "Editor"
@@ -68,8 +89,80 @@ msgstr "|❌ com stub|"
 msgid "Android"
 msgstr "Android"
 
+msgid ""
+"The source sets configuration for Android export templates has been updated "
+"to match the default Android Studio project structure (`GH-110829`_). This "
+"affects the directory layout of the Android project:"
+msgstr ""
+"A configuração de conjuntos de origem para modelos de exportação Android foi "
+"atualizada para corresponder à estrutura padrão do projeto Android Studio "
+"(`GH-110829`_). Isso afeta o layout do diretório do projeto Android:"
+
+msgid ""
+"Files previously in ``[Project root]/android/build/src/`` are now in "
+"``[Project root]/android/build/src/main/java/``."
+msgstr ""
+"Arquivos anteriormente em ``[Project root]/android/build/src/`` estão agora "
+"em ``[Project root]/android/build/src/main/java/``."
+
+msgid ""
+"Android manifest file and assets directory have been moved to ``src/main/`` "
+"subdirectories."
+msgstr ""
+"O diretório de arquivos e ativos do Android foi movido para subdiretórios "
+"``src/main/``."
+
+msgid ""
+"For example, ``GodotApp.java`` moved from ``src/com/godot/game/"
+"GodotApp.java`` to ``src/main/java/com/godot/game/GodotApp.java``."
+msgstr ""
+"Por exemplo, ``GodotApp.java`` movido de ``src/com/godot/game/"
+"GodotApp.java`` para ``src/main/java/com/godot/game/GodotApp.java``."
+
 msgid "Navigation"
 msgstr "Navegação"
+
+msgid ""
+"The following default values have been changed. If your project relies on "
+"the previous defaults, you may need to explicitly set them to the old values."
+msgstr ""
+"Os seguintes valores padrão foram alterados. Se o seu projeto depende dos "
+"padrões anteriores, você pode precisar definir explicitamente os valores "
+"antigos."
+
+msgid ""
+"The default rendering driver on Windows for **newly created** projects is "
+"now :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). This can be changed in "
+"Project Settings under ``rendering/rendering_device/driver.windows``."
+msgstr ""
+"O driver de renderização padrão no Windows para projetos **recentemente "
+"criados** é agora :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). Isso pode ser "
+"alterado nas configurações do projeto abaixo de ``rendering/rendering_device/"
+"driver.windows``."
+
+msgid ""
+"The default 3D physics engine for **newly created** projects is now Jolt "
+"Physics (`GH-105737`_). This can be changed in Project Settings under "
+"``physics/3d/physics_engine``."
+msgstr ""
+"O motor de física 3D padrão para projetos **recentemente criados*** é agora "
+"Jolt Physics (`GH-105737`_). Isso pode ser alterado nas Configurações do "
+"Projeto em ``physics/3d/physics_engine``."
+
+msgid "**MeshInstance3D**"
+msgstr "**Malha de Instância 3D**"
+
+msgid ""
+"The default value of ``skeleton`` has changed. Enable ``animation/"
+"compatibility/default_parent_skeleton_in_mesh_instance_3d`` in Project "
+"Settings if the old behavior is needed for compatibility."
+msgstr ""
+"O valor padrão de ``skeleton`` mudou. Habilite ``animation/compatibility/"
+"default_parent_skeleton_in_mesh_instance_3d`` nas Configurações do Projeto "
+"se o velho comportamento for necessário para compatibilidade."
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "Propriedade ``rendering/reflections/sky_reflections/roughness_layers``"
 
 msgid "8"
 msgstr "8"
@@ -77,8 +170,35 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "Propriedade ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
+
+msgid "0.8"
+msgstr "0.8"
+
+msgid "0.3"
+msgstr "0.3"
+
+msgid "0.4"
+msgstr "0.4"
+
+msgid "0.1"
+msgstr "0.1"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "Propriedade ``ssr_depth_tolerance``"
+
+msgid "0.2"
+msgstr "0.2"
+
+msgid "0.5"
+msgstr "0.5"
+
+msgid "**ResourceImporterCSVTranslation**"
+msgstr "**ResourceImporterCSVTranslation**"

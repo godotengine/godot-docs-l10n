@@ -90,6 +90,15 @@ msgstr ""
 "自 :ref:`class_EditorInspectorPlugin` 类。这个类提供了不少虚方法，可以用来控"
 "制检查器对属性的处理。"
 
+msgid ""
+"To have any effect at all, the script must implement the ``_can_handle()`` "
+"method. This function is called for each edited :ref:`class_Object` and must "
+"return ``true`` if this plugin should handle the object or its properties."
+msgstr ""
+"脚本必须实现 ``can_handle()`` 方法才能生效。这个函数会针对每个被编辑"
+"的 :ref:`class_Object` 对象调用，插件想要处理该对象或其属性的话，就必须返回 "
+"``true``\\ 。"
+
 msgid "This includes any :ref:`class_Resource` attached to the object."
 msgstr "要处理附加在该对象上的 :ref:`class_Resource` 也同样如此。"
 

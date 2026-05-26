@@ -11,5 +11,93 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0203: The delegate signature of the signal must return void"
+msgstr "GD0203: 시그널의 대리인 서명은 void를 반환해야 합니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0203"
+msgstr "GD0203"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking - If the return type is changed"
+msgstr "속보 - 반환 유형이 변경된 경우"
+
+msgid "Non-breaking - If the ``[Signal]`` attribute is removed"
+msgstr "비계속 - ``[Signal]`` 속성이 제거된 경우"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A delegate annotated with the ``[Signal]`` attribute has a return type when "
+"``void`` was expected."
+msgstr ""
+"``[Signal]`` 속성으로 주석이 달린 위임에는 ``void``가 예상되었을 때 반환 유형"
+"이 있습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Every signal must return ``void``. There can be multiple callbacks "
+"registered for each signal, if signal callbacks could return something it "
+"wouldn't be possible to determine which of the returned values to use."
+msgstr ""
+"모든 시그널는 ``void``를 반환해야 합니다. 각 시그널에 대해 여러 콜백이 등록"
+"될 수 있습니다. 시그널 콜백이 무언가를 반환할 수 있는 경우 반환된 값 중 어느 "
+"것을 사용할지 결정할 수 없습니다."
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+"시그널를 선언하고 사용하는 방법에 대한 자세한 내용은 :ref:`C# 시그널 "
+"<doc_c_sharp_signals>` 문서를 살펴보세요."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, change the delegate to return ``void`` or "
+"remove the ``[Signal]`` attribute from the delegate. Note that removing the "
+"attribute will mean the signal is not registered."
+msgstr ""
+"이 규칙 위반 문제를 해결하려면 ``void``를 반환하도록 대리자를 변경하거나 대리"
+"자에서 ``[Signal]`` 특성을 제거하세요. 속성을 제거하면 시그널가 등록되지 않음"
+"을 의미합니다."
+
+msgid ""
+"If the signal doesn't need to interact with Godot, consider using `C# events "
+"<https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/"
+">`_ directly. Pure C# events allow you to use any C# type for its parameters."
+msgstr ""
+"시그널가 Godot와 상호 작용할 필요가 없다면 `C# 이벤트 <https://"
+"learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/>`_를 직접 "
+"사용하는 것을 고려해 보세요. 순수 C# 이벤트를 사용하면 해당 매개변수에 대해 "
+"모든 C# 유형을 사용할 수 있습니다."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates that return "
+"something will result in unexpected runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 무언가를 반환하는 시그널 대리자는 예기치 "
+"않은 런타임 오류가 발생합니다."

@@ -46,8 +46,20 @@ msgstr ""
 "personagem. Isso nos permitirá girar o modelo posteriormente via código "
 "enquanto ele reproduz uma animação."
 
+msgid ""
+"Add a :ref:`Node3D <class_Node3D>` node as a child of ``Player``. Select the "
+"``Player`` node in the **Scene** tree and click the \"**+**\" button to add "
+"a child node. Rename it to ``Pivot``."
+msgstr ""
+"Adicione um nó :ref:`Node3D <class_Node3D>` como filho do nó ``Jogador``. "
+"Selecione o nó ``Jogador`` na árvore de **Cenas** e clique no botão "
+"\"**+**\" para adicionar um nó filho. Renomeie o nó para ``Pivô``."
+
 msgid "The sphere's wireframe appears below the character."
 msgstr "O wireframe da esfera aparece abaixo do personagem."
+
+msgid "Save the scene as ``player.tscn``."
+msgstr "Salve a cena como ``Jogador.tscn``."
 
 msgid ""
 "With the nodes ready, we can almost get coding. But first, we need to define "
@@ -80,6 +92,9 @@ msgstr ""
 
 msgid "Bind also the :kbd:`A` key, onto the action ``move_left``."
 msgstr "Atribua também a tecla :kbd:`A`, para a ação ``move_left``."
+
+msgid "Leave the other values as default and press **OK**."
+msgstr "Deixe os outros valores como padrão e pressione *OK*."
 
 msgid ""
 "If you want controllers to have different input actions, you should use the "

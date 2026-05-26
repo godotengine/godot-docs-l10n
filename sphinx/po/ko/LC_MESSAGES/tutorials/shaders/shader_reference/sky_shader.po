@@ -11,11 +11,392 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Sky shaders"
+msgstr "셰이더"
+
+msgid ""
+"Sky shaders are a special type of shader used for drawing sky backgrounds "
+"and for updating radiance cubemaps which are used for image-based lighting "
+"(IBL). Sky shaders only have one processing function, the ``sky()`` function."
+msgstr ""
+"Sky 셰이더는 하늘 배경을 그리고 이미지 기반 조명(IBL)에 사용되는 래디언스 큐"
+"브맵을 업데이트하는 데 사용되는 특별한 유형의 셰이더입니다. Sky 셰이더에는 "
+"``sky()`` 기능이라는 하나의 처리 기능만 있습니다."
+
+msgid "There are three places the sky shader is used."
+msgstr "두 장소에서 템플릿을 관리할 수 있습니다."
+
+msgid ""
+"First the sky shader is used to draw the sky when you have selected to use a "
+"Sky as the background in your scene."
+msgstr ""
+"먼저 하늘 셰이더는 씬에서 하늘을 배경으로 사용하도록 선택한 경우 하늘을 그리"
+"는 데 사용됩니다."
+
+msgid ""
+"Second, the sky shader is used to update the radiance cubemap when using the "
+"Sky for ambient color or reflections."
+msgstr ""
+"둘째, 하늘 셰이더는 주변 색상이나 반사에 하늘을 사용할 때 래디언스 큐브맵을 "
+"업데이트하는 데 사용됩니다."
+
+msgid ""
+"Third, the sky shader is used to draw the lower res subpasses which can be "
+"used in the high-res background or cubemap pass."
+msgstr ""
+"셋째, 하늘 셰이더는 고해상도 배경이나 큐브맵 패스에 사용할 수 있는 저해상도 "
+"서브패스를 그리는 데 사용됩니다."
+
+msgid ""
+"In total, this means the sky shader can run up to six times per frame, "
+"however, in practice it will be much less than that because the radiance "
+"cubemap does not need to be updated every frame, and not all subpasses will "
+"be used. You can change the behavior of the shader based on where it is "
+"called by checking the ``AT_*_PASS`` booleans. For example:"
+msgstr ""
+"전체적으로 이는 하늘 셰이더가 프레임당 최대 6번 실행될 수 있음을 의미하지만 "
+"실제로는 래디언스 큐브맵을 프레임마다 업데이트할 필요가 없고 모든 하위 패스"
+"가 사용되지 않기 때문에 그보다 훨씬 적습니다. ``AT_*_PASS`` 부울을 확인하여 "
+"호출되는 위치에 따라 셰이더의 동작을 변경할 수 있습니다. 예를 들면:"
+
+msgid ""
+"When using the sky shader to draw a background, the shader will be called "
+"for all non-occluded fragments on the screen. However, for the background's "
+"subpasses, the shader will be called for every pixel of the subpass."
+msgstr ""
+"하늘 셰이더를 사용하여 배경을 그리는 경우 화면에서 가려지지 않은 모든 조각에 "
+"대해 셰이더가 호출됩니다. 그러나 배경의 하위 패스의 경우 셰이더는 하위 패스"
+"의 모든 픽셀에 대해 호출됩니다."
+
+msgid ""
+"When using the sky shader to update the radiance cubemap, the sky shader "
+"will be called for every pixel in the cubemap. On the other hand, the shader "
+"will only be called when the radiance cubemap needs to be updated. The "
+"radiance cubemap needs to be updated when any of the shader parameters are "
+"updated. For example, if ``TIME`` is used in the shader, then the radiance "
+"cubemap will update every frame. The following list of changes force an "
+"update of the radiance cubemap:"
+msgstr ""
+"하늘 셰이더를 사용하여 발광 큐브맵을 업데이트하는 경우 하늘 셰이더는 큐브맵"
+"의 모든 픽셀에 대해 호출됩니다. 반면, 셰이더는 래디언스 큐브맵을 업데이트해"
+"야 할 때만 호출됩니다. 셰이더 매개변수가 업데이트되면 래디언스 큐브맵도 업데"
+"이트되어야 합니다. 예를 들어 ``TIME``가 셰이더에 사용되면 래디언스 큐브맵은 "
+"모든 프레임을 업데이트합니다. 다음 변경 사항 목록은 래디언스 큐브맵을 강제로 "
+"업데이트합니다."
+
+msgid "``TIME`` is used."
+msgstr "``TIME``가 사용됩니다."
+
+msgid "``POSITION`` is used and the camera position changes."
+msgstr "``POSITION``를 사용하며 카메라 위치가 변경됩니다."
+
+msgid ""
+"If any ``LIGHTX_*`` properties are used and any :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>` changes."
+msgstr ""
+"``LIGHTX_*`` 속성이 사용되고 :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>`이 변경되는 경우."
+
+msgid "If any uniform is changed in the shader."
+msgstr "셰이더에서 유니폼이 변경된 경우."
+
+msgid "If the screen is resized and either of the subpasses are used."
+msgstr "화면의 크기가 조정되고 하위 패스 중 하나가 사용되는 경우."
+
+msgid ""
+"Try to avoid updating the radiance cubemap needlessly. If you do need to "
+"update the radiance cubemap each frame, make sure your :ref:`Sky process "
+"mode <class_Sky_property_process_mode>` is set "
+"to :ref:`PROCESS_MODE_REALTIME <class_Sky_constant_PROCESS_MODE_REALTIME>`."
+msgstr ""
+"불필요하게 래디언스 큐브맵을 업데이트하지 않도록 하세요. 각 프레임마다 래디언"
+"스 큐브맵을 업데이트해야 하는 경우 :ref:`Sky 프로세스 모드 "
+"<class_Sky_property_process_mode>`가 :ref:`PROCESS_MODE_REALTIME "
+"<class_Sky_constant_PROCESS_MODE_REALTIME>`으로 설정되어 있는지 확인하세요."
+
+msgid ""
+"Note that the :ref:`process mode <class_Sky_property_process_mode>` only "
+"affects the rendering of the radiance cubemap. The visible sky is always "
+"rendered by calling the fragment shader for every pixel. With complex "
+"fragment shaders, this can result in a high rendering overhead. If the sky "
+"is static (the conditions listed above are met) or changes slowly, running "
+"the full fragment shader every frame is not needed. This can be avoided by "
+"rendering the full sky into the radiance cubemap, and reading from this "
+"cubemap when rendering the visible sky. With a completely static sky, this "
+"means that it needs to be rendered only once."
+msgstr ""
+":ref:`process mode <class_Sky_property_process_mode>`는 발광 큐브맵의 렌더링"
+"에만 영향을 미칩니다. 보이는 하늘은 항상 모든 픽셀에 대해 조각 셰이더를 호출"
+"하여 렌더링됩니다. 복잡한 조각 셰이더를 사용하면 렌더링 오버헤드가 높아질 수 "
+"있습니다. 하늘이 정적이거나(위에 나열된 조건이 충족됨) 천천히 변하는 경우 매 "
+"프레임마다 전체 조각 셰이더를 실행할 필요가 없습니다. 이는 전체 하늘을 래디언"
+"스 큐브맵으로 렌더링하고 보이는 하늘을 렌더링할 때 이 큐브맵에서 읽으면 피할 "
+"수 있습니다. 완전히 정적인 하늘의 경우 이는 한 번만 렌더링하면 된다는 의미입"
+"니다."
+
+msgid ""
+"The following code renders the full sky into the radiance cubemap and reads "
+"from that cubemap for displaying the visible sky:"
+msgstr ""
+"다음 코드는 전체 하늘을 래디언스 큐브맵으로 렌더링하고 눈에 보이는 하늘을 표"
+"시하기 위해 해당 큐브맵에서 읽습니다."
+
+msgid ""
+"This way, the complex calculations happen only in the cubemap pass, which "
+"can be optimized by setting the sky's :ref:`process mode "
+"<class_Sky_property_process_mode>` and the :ref:`radiance size "
+"<class_Sky_property_radiance_size>` to get the desired balance between "
+"performance and visual fidelity."
+msgstr ""
+"이런 식으로 복잡한 계산은 큐브맵 패스에서만 발생하며, 성능과 시각적 충실도 사"
+"이에서 원하는 균형을 얻기 위해 하늘의 :ref:`process mode "
+"<class_Sky_property_process_mode>` 및 :ref:`radiance size "
+"<class_Sky_property_radiance_size>`를 설정하여 최적화할 수 있습니다."
+
 msgid "Render modes"
 msgstr "렌더러 모드"
+
+msgid ""
+"Subpasses allow you to do more expensive calculations at a lower resolution "
+"to speed up your shaders. For example the following code renders clouds at a "
+"lower resolution than the rest of the sky:"
+msgstr ""
+"서브패스를 사용하면 더 낮은 해상도에서 더 많은 비용이 드는 계산을 수행하여 셰"
+"이더 속도를 높일 수 있습니다. 예를 들어 다음 코드는 하늘의 나머지 부분보다 낮"
+"은 해상도로 구름을 렌더링합니다."
+
+msgid "Render mode"
+msgstr "렌더링 모드"
 
 msgid "Description"
 msgstr "설명"
 
+msgid "**use_half_res_pass**"
+msgstr "**use_half_res_pass**"
+
+msgid "Allows the shader to write to and access the half resolution pass."
+msgstr "셰이더가 절반 해상도 패스에 쓰고 액세스할 수 있도록 허용합니다."
+
+msgid "**use_quarter_res_pass**"
+msgstr "**use_quarter_res_pass**"
+
+msgid "Allows the shader to write to and access the quarter resolution pass."
+msgstr "셰이더가 1/4 해상도 패스에 쓰고 액세스할 수 있도록 허용합니다."
+
+msgid "**disable_fog**"
+msgstr "**스타일**"
+
+msgid "If used, fog will not affect the sky."
+msgstr "사용하면 안개가 하늘에 영향을 주지 않습니다."
+
+msgid "Built-ins"
+msgstr "Built-In(내장)"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Samplers cannot be written to so they are not marked."
+msgstr ""
+"``in``로 표시된 값은 읽기 전용입니다. ``out``로 표시된 값은 선택적으로 쓸 수 "
+"있으며 반드시 합리적인 값을 포함하지는 않습니다. 샘플러는 기록할 수 없으므로 "
+"표시되지 않습니다."
+
+msgid "Global built-ins"
+msgstr "벡터 내장 타입"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+"전역 내장 기능은 사용자 정의 기능을 포함하여 어디에서나 사용할 수 있습니다."
+
+msgid ""
+"There are 4 ``LIGHTX`` lights, accessed as ``LIGHT0``, ``LIGHT1``, "
+"``LIGHT2``, and ``LIGHT3``."
+msgstr ""
+"``LIGHT0``, ``LIGHT1``, ``LIGHT2`` 및 ``LIGHT3``로 액세스되는 4개의 "
+"``LIGHTX`` 조명이 있습니다."
+
 msgid "Built-in"
 msgstr "내장"
+
+msgid "in float **TIME**"
+msgstr "부동 소수점 **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"엔진이 시작된 이후의 전역 시간(초)입니다. ``3,600``초마다 반복됩니다"
+"(:ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` 설정으로 변경 가"
+"능). :ref:`time_scale<class_Engine_property_time_scale>`의 영향을 받지만 일"
+"시 중지의 영향을 받지는 않습니다. 시간 척도의 영향을 받지 않는 ``TIME`` 변수"
+"가 필요한 경우 고유한 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>`를 추가하고 각 프레임을 업데이"
+"트하세요."
+
+msgid "in vec3 **POSITION**"
+msgstr "vec3 **위치**에서"
+
+msgid "Camera position, in world space."
+msgstr "월드 공간에서의 카메라 위치."
+
+msgid "samplerCube **RADIANCE**"
+msgstr "샘플러큐브 **래디언스**"
+
+msgid ""
+"Radiance cubemap. Can only be read from during the background pass. Check ``!"
+"AT_CUBEMAP_PASS`` before using."
+msgstr ""
+"래디언스 큐브맵. 백그라운드 패스 중에만 읽을 수 있습니다. 사용하기 전에 ``!"
+"AT_CUBEMAP_PASS``를 확인하십시오."
+
+msgid "in bool **AT_HALF_RES_PASS**"
+msgstr "bool **AT_HALF_RES_PASS**에서"
+
+msgid "``true`` when rendering to the half resolution pass."
+msgstr "절반 해상도 패스로 렌더링할 때 ``true``."
+
+msgid "in bool **AT_QUARTER_RES_PASS**"
+msgstr "bool **AT_QUARTER_RES_PASS**"
+
+msgid "``true`` when rendering to the quarter resolution pass."
+msgstr "1/4 해상도 패스로 렌더링할 때 ``true``."
+
+msgid "in bool **AT_CUBEMAP_PASS**"
+msgstr "bool **AT_CUBEMAP_PASS**에서"
+
+msgid "``true`` when rendering to the radiance cubemap."
+msgstr "래디언스 큐브맵으로 렌더링할 때 ``true``."
+
+msgid "in bool **LIGHTX_ENABLED**"
+msgstr "부울 **LIGHTX_ENABLED**"
+
+msgid ""
+"``true`` if ``LIGHTX`` is visible and in the scene. If ``false``, other "
+"light properties may be garbage."
+msgstr ""
+"``LIGHTX``가 표시되고 씬에 있는 경우 ``true``입니다. ``false``인 경우 다른 조"
+"명 속성은 가비지일 수 있습니다."
+
+msgid "in float **LIGHTX_ENERGY**"
+msgstr "부동 **LIGHTX_ENERGY**"
+
+msgid "Energy multiplier for ``LIGHTX``."
+msgstr "``LIGHTX``의 에너지 승수."
+
+msgid "in vec3 **LIGHTX_DIRECTION**"
+msgstr "vec3 **LIGHTX_DIRECTION**"
+
+msgid "Direction that ``LIGHTX`` is facing."
+msgstr "``LIGHTX``가 향하고 있는 방향입니다."
+
+msgid "in vec3 **LIGHTX_COLOR**"
+msgstr "vec3 **LIGHTX_COLOR**에서"
+
+msgid "Color of ``LIGHTX``."
+msgstr "``LIGHTX``의 색상입니다."
+
+msgid "in float **LIGHTX_SIZE**"
+msgstr "부동 **LIGHTX_SIZE**"
+
+msgid ""
+"Angular diameter of ``LIGHTX`` in the sky. Expressed in radians. For "
+"reference, the sun from earth is about .0087 radians (0.5 degrees)."
+msgstr ""
+"하늘에서 ``LIGHTX``의 각도 직경입니다. 라디안으로 표현됩니다. 참고로 지구에"
+"서 태양은 약 .0087라디안(0.5도)입니다."
+
+msgid "in float **PI**"
+msgstr "부동 소수점 **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"``PI`` 상수(``3.141592``). 원의 지름과 반 바퀴의 라디안 수에 대한 원주 비율입"
+"니다."
+
+msgid "in float **TAU**"
+msgstr "부동 **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"``TAU`` 상수(``6.283185``). ``PI * 2`` 및 1회전의 라디안 수와 동일합니다."
+
+msgid "in float **E**"
+msgstr "부동 **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr "``E`` 상수(``2.718281``). 자연로그의 밑이 되는 오일러 수."
+
+msgid "Sky built-ins"
+msgstr "Built-In(내장)"
+
+msgid "in vec3 **EYEDIR**"
+msgstr "vec3에서 **EYEDIR**"
+
+msgid ""
+"Normalized direction of the current pixel. Use this as your basic direction "
+"for procedural effects."
+msgstr ""
+"현재 픽셀의 정규화된 방향입니다. 이것을 절차적 효과의 기본 방향으로 사용하십"
+"시오."
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "vec2에서 **SCREEN_UV**"
+
+msgid ""
+"Screen UV coordinate for the current pixel. Used to map a texture to the "
+"full screen."
+msgstr ""
+"현재 픽셀의 스크린 UV 좌표입니다. 텍스처를 전체 화면에 매핑하는 데 사용됩니"
+"다."
+
+msgid "in vec2 **SKY_COORDS**"
+msgstr "vec2 **SKY_COORDS**에서"
+
+msgid "Sphere UV. Used to map a panorama texture to the sky."
+msgstr "구형 UV. 파노라마 텍스처를 하늘에 매핑하는 데 사용됩니다."
+
+msgid "in vec4 **HALF_RES_COLOR**"
+msgstr "vec4에서 **HALF_RES_COLOR**"
+
+msgid ""
+"Color value of the corresponding pixel from the half resolution pass. Uses "
+"linear filter."
+msgstr ""
+"절반 해상도 패스에서 해당 픽셀의 색상 값입니다. 선형 필터를 사용합니다."
+
+msgid "in vec4 **QUARTER_RES_COLOR**"
+msgstr "vec4에서 **QUARTER_RES_COLOR**"
+
+msgid ""
+"Color value of the corresponding pixel from the quarter resolution pass. "
+"Uses linear filter."
+msgstr "1/4 해상도 패스에서 해당 픽셀의 색상 값입니다. 선형 필터를 사용합니다."
+
+msgid "out vec3 **COLOR**"
+msgstr "out vec3 **컬러**"
+
+msgid "Output color."
+msgstr "출력 로그"
+
+msgid "out float **ALPHA**"
+msgstr "아웃 플로트 **알파**"
+
+msgid "Output alpha value, can only be used in subpasses."
+msgstr "출력 알파 값은 하위 패스에서만 사용할 수 있습니다."
+
+msgid "out vec4 **FOG**"
+msgstr "out vec4 **FOG**"

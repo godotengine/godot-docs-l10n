@@ -23,6 +23,9 @@ msgstr ""
 "desidera invece compilare i binari dell'editor o dei modelli di esportazione "
 "dal codice sorgente, consultare :ref:`doc_compiling_for_windows`."
 
+msgid "Architecture"
+msgstr "Architettura"
+
 msgid "Changing the executable icon"
 msgstr "Cambiare l'icona dell'eseguibile"
 
@@ -34,6 +37,16 @@ msgstr "Configura"
 
 msgid "Environment variables"
 msgstr "Variabili d'ambiente"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+"È possibile utilizzare le seguenti variabili d'ambiente per impostare le "
+"opzioni di esportazione al di fuori dell'editor. Durante il processo di "
+"esportazione, queste variabili sovrascrivono i valori impostati nel menu di "
+"esportazione."
 
 msgid "Export option"
 msgstr "Opzioni di esportazione"
@@ -47,11 +60,20 @@ msgstr "Crittografia / Chiave crittografica"
 msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 
+msgid "Options / Codesign / Identity Type"
+msgstr "Opzioni / Firma del codice / Tipo di identità"
+
 msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
 msgstr "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
 
+msgid "Options / Codesign / Identity"
+msgstr "Opzioni / Firma del codice / Identità"
+
 msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
 msgstr "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+
+msgid "Options / Codesign / Password"
+msgstr "Opzioni / Firma del codice / Password"
 
 msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
 msgstr "``GODOT_WINDOWS_CODESIGN_PASSWORD``"

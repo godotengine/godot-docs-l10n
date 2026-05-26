@@ -33,6 +33,17 @@ msgstr ""
 "사용합니다(:ref:`doc_gdscript_styleguide` 참조)."
 
 msgid ""
+"**C#**: Classes, export variables and methods use PascalCase, private fields "
+"use _camelCase, local variables and parameters use camelCase "
+"(See :ref:`doc_c_sharp_styleguide`). Be careful to type the method names "
+"precisely when connecting signals."
+msgstr ""
+"**C#**: 클래스, export 변수 그리고 메서드는 파스칼 표기법(PascalCase)을 사용"
+"합니다. private 필드는 카멜 표기법(_camelCase)를 사용합니다. 지역변수와 매개"
+"변수는 카멜 표기법(camelCase)을 사용합니다(:ref:`doc_c_sharp_styleguide` 참"
+"고). 시그널을 연결할 때는 메서드 이름을 정확하게 입력하도록 주의하세요."
+
+msgid ""
 "Right-click the ``Player`` node and select *Attach Script* to add a new "
 "script to it. In the popup, set the *Template* to *Empty* before pressing "
 "the *Create* button. We set it to *Empty* because we want to write our own "
@@ -82,6 +93,17 @@ msgid ""
 msgstr ""
 "이제 이동 코드를 작성해보겠습니다. 먼저 글로벌 ``Input`` 객체를 사용하여 "
 "``_physics_process()`` 에서 입력 방향 벡터를 계산합니다."
+
+msgid ""
+"Here, instead of ``_process()``, we're going to make all calculations using "
+"the ``_physics_process()`` virtual function. It's designed specifically for "
+"physics-related code like moving a kinematic or rigid body. It updates the "
+"node using fixed time intervals."
+msgstr ""
+"여기서는 모든 계산을 ``_physics_process()`` 가상 함수를 사용하여 수행할 것입"
+"니다. 이 함수는 ``_process()`` 와 마찬가지로 매 프레임마다 노드를 업데이트할 "
+"수 있게 해주지만, 주로 키네마틱이나 리지드 바디와 같은 물리 관련 코드를 처리"
+"하도록 설계되었습니다."
 
 msgid ""
 "To learn more about the difference between ``_process()`` and "
@@ -185,6 +207,9 @@ msgstr ""
 
 msgid "And that's all the code you need to move the character on the floor."
 msgstr "이것이 캐릭터를 바닥에서 이동시키는 데 필요한 모든 코드입니다."
+
+msgid "Here is the complete ``player.gd`` code for reference."
+msgstr "여기에 참고용으로 전체 ``Player.gd`` 코드를 제공합니다."
 
 msgid "Testing our player's movement"
 msgstr "플레이어의 움직임 테스트하기"
@@ -296,6 +321,9 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
+msgid "image11"
+msgstr "|image11|"
+
 msgid "|image5|"
 msgstr "|image5|"
 
@@ -309,6 +337,12 @@ msgstr ""
 "하단 뷰에서 :ref:`Camera3D <class_Camera3D>`\\ 를 선택하고 체크박스를 클릭하"
 "여 카메라 미리보기를 켭니다."
 
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "|image1|"
+
 msgid ""
 "In the top view, make sure your *Camera3D* is selected and move the camera "
 "about ``19`` units on the Z axis (drag the blue arrow)."
@@ -317,6 +351,9 @@ msgstr ""
 "``19`` 단위만큼 이동시킵니다(파란색 화살표를 드래그)."
 
 msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
 msgstr "|image7|"
 
 msgid ""
@@ -331,7 +368,20 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
+msgid "image8"
+msgstr "|image8|"
+
+msgid ""
+"You can run the scene by pressing :kbd:`F6` (:kbd:`Cmd + R` on macOS) and "
+"press the arrow keys to move the character."
+msgstr ""
+"씬을 실행하려면 :kbd:`F6` 키를 누르고, 화살표 키를 눌러 캐릭터를 이동시킬 수 "
+"있습니다."
+
 msgid "|image9|"
+msgstr "|image9|"
+
+msgid "image9"
 msgstr "|image9|"
 
 msgid ""
@@ -376,6 +426,9 @@ msgstr ""
 "면 멀리 있는 물체가 사라지기 시작합니다."
 
 msgid "|image10|"
+msgstr "|image10|"
+
+msgid "image10"
 msgstr "|image10|"
 
 msgid ""

@@ -11,5 +11,73 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0102: The type of the exported member is not supported"
+msgstr "GD0102: 내보낸 멤버 유형이 지원되지 않습니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0102"
+msgstr "GD0102"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking - If the member type is changed"
+msgstr "속보 - 회원 유형이 변경된 경우"
+
+msgid "Non-breaking - If the ``[Export]`` attribute is removed"
+msgstr "비계속 - ``[Export]`` 속성이 제거된 경우"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"An unsupported type is specified for a member annotated with the "
+"``[Export]`` attribute when a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>` is expected."
+msgstr ""
+":ref:`Variant 호환 유형 <c_sharp_variant_ Compatible_types>`이 예상되는 경우 "
+"``[Export]`` 특성으로 주석이 달린 멤버에 대해 지원되지 않는 유형이 지정되었습"
+"니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Every exported member must be Variant-compatible so it can be marshalled by "
+"the engine."
+msgstr ""
+"내보낸 모든 멤버는 엔진에서 마샬링할 수 있도록 Variant와 호환되어야 합니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, change the member's type to be Variant-"
+"compatible or remove the ``[Export]`` attribute."
+msgstr ""
+"이 규칙 위반 문제를 해결하려면 멤버 유형을 Variant 호환 가능으로 변경하거나 "
+"``[Export]`` 속성을 제거하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Members with types that can't be "
+"marshalled will result in runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 마샬링할 수 없는 유형의 멤버는 런타임 오"
+"류를 발생시킵니다."

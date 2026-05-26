@@ -49,6 +49,20 @@ msgstr "프로젝트가 편집기에서 실행 중인지 \"독립 실행형\" �
 msgid "Many more things."
 msgstr "더 많은 것들."
 
+msgid "Features can be queried at runtime from the singleton API by calling:"
+msgstr ""
+"기능은 다음과 같이 호출하여 런타임에서 싱글톤 API로 부터 질문(query)을 받을 "
+"수 있습니다:"
+
+msgid ""
+"OS feature tags are used by GDExtension to determine which libraries to "
+"load. For example, a library for ``linux.debug.editor.x86_64`` will be "
+"loaded only on a debug editor build for Linux x86_64."
+msgstr ""
+"OS 기능 태그는 GDExtension에서 로드할 라이브러리를 결정하는 데 사용됩니다. 예"
+"를 들어 ``linux.debug.editor.x86_64``용 라이브러리는 Linux x86_64용 디버그 편"
+"집기 빌드에만 로드됩니다."
+
 msgid "Default features"
 msgstr "기본 기능"
 
@@ -65,8 +79,53 @@ msgstr "**기능 태그**"
 msgid "**Description**"
 msgstr "**설명**"
 
+msgid "**android**"
+msgstr "**Android**"
+
+msgid "Running on Android (but not within a Web browser)"
+msgstr "Android에서 실행(웹 브라우저에서는 실행 안 됨)"
+
+msgid "**bsd**"
+msgstr "**ㅋㅋㅋㅋ"
+
+msgid "Running on \\*BSD (but not within a Web browser)"
+msgstr "\\*BSD에서 실행(웹 브라우저에서는 실행 안 됨)"
+
+msgid "**linux**"
+msgstr "**리눅스**"
+
+msgid "Running on Linux (but not within a Web browser)"
+msgstr "Linux에서 실행(웹 브라우저에서는 실행 안 됨)"
+
+msgid "**macos**"
+msgstr "**마코스**"
+
+msgid "Running on macOS (but not within a Web browser)"
+msgstr "macOS에서 실행(웹 브라우저에서는 실행 안 됨)"
+
+msgid "**ios**"
+msgstr "**ios**"
+
+msgid "Running on iOS (but not within a Web browser)"
+msgstr "iOS에서 실행(웹 브라우저에서는 실행 안 됨)"
+
+msgid "**visionos**"
+msgstr "**버전**"
+
+msgid "Running on visionOS (but not within a Web browser)"
+msgstr "VisionOS에서 실행(웹 브라우저에서는 실행 안 됨)"
+
+msgid "**windows**"
+msgstr "**Windows**"
+
 msgid "Running on Windows"
 msgstr "Windows에서 실행 중"
+
+msgid "**linuxbsd**"
+msgstr "**리눅스BSD**"
+
+msgid "Running on Linux or \\*BSD"
+msgstr "iOS에서 실행 중"
 
 msgid "**debug**"
 msgstr "**debug**"
@@ -86,6 +145,36 @@ msgstr "**editor**"
 msgid "Running on an editor build"
 msgstr "편집기 빌드에서 실행 중"
 
+msgid "**editor_hint**"
+msgstr "**editor**"
+
+msgid "Running on an editor build, and inside the editor"
+msgstr "디버그 빌드에서 실행 중 (편집기를 포함)"
+
+msgid "**editor_runtime**"
+msgstr "**editor**"
+
+msgid "Running on an editor build, and running the project"
+msgstr "편집기 빌드에서 실행 중"
+
+msgid "**template**"
+msgstr "**릴리스 날짜**"
+
+msgid "Running on a non-editor (export template) build"
+msgstr "편집기 없는 빌드에서 실행 중"
+
+msgid "**double**"
+msgstr "**mobile**"
+
+msgid "Running on a double-precision build"
+msgstr "편집기 없는 빌드에서 실행 중"
+
+msgid "**single**"
+msgstr "**mobile**"
+
+msgid "Running on a single-precision build"
+msgstr "편집기 없는 빌드에서 실행 중"
+
 msgid "**64**"
 msgstr "**64**"
 
@@ -104,11 +193,17 @@ msgstr "**x86_64**"
 msgid "Running on a 64-bit x86 build"
 msgstr "64비트에서 x86 빌드를 실행 중"
 
+msgid "**x86_32**"
+msgstr "**x86**"
+
 msgid "Running on a 32-bit x86 build"
 msgstr "32비트에서 x86 빌드를 실행 중"
 
 msgid "**x86**"
 msgstr "**x86**"
+
+msgid "Running on an x86 build (any bitness)"
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
 
 msgid "**arm64**"
 msgstr "**arm64**"
@@ -116,11 +211,65 @@ msgstr "**arm64**"
 msgid "Running on a 64-bit ARM build"
 msgstr "64비트에서 ARM 빌드를 실행 중"
 
+msgid "**arm32**"
+msgstr "**arm**"
+
 msgid "Running on a 32-bit ARM build"
 msgstr "32비트에서 ARM 빌드를 실행 중"
 
 msgid "**arm**"
 msgstr "**arm**"
+
+msgid "Running on an ARM build (any bitness)"
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
+
+msgid "**rv64**"
+msgstr "**64**"
+
+msgid "Running on a 64-bit RISC-V build"
+msgstr "64비트에서 ARM 빌드를 실행 중"
+
+msgid "**riscv**"
+msgstr "**위험**"
+
+msgid "Running on a RISC-V build (any bitness)"
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
+
+msgid "**ppc64**"
+msgstr "**64**"
+
+msgid "Running on a 64-bit PowerPC build"
+msgstr "64비트에서 x86 빌드를 실행 중"
+
+msgid "**ppc32**"
+msgstr "**32**"
+
+msgid "Running on a 32-bit PowerPC build"
+msgstr "32비트에서 x86 빌드를 실행 중"
+
+msgid "**ppc**"
+msgstr "**pc**"
+
+msgid "Running on a PowerPC build (any bitness)"
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
+
+msgid "**wasm64**"
+msgstr "**arm64**"
+
+msgid "Running on a 64-bit WebAssembly build (not yet possible)"
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
+
+msgid "**wasm32**"
+msgstr "**32**"
+
+msgid "Running on a 32-bit WebAssembly build"
+msgstr "32비트에서 ARM 빌드를 실행 중"
+
+msgid "**wasm**"
+msgstr "**와즘**"
+
+msgid "Running on a WebAssembly build (any bitness)"
+msgstr "64비트 빌드에서 실행 중 (모든 구조)"
 
 msgid "**mobile**"
 msgstr "**mobile**"
@@ -138,6 +287,48 @@ msgid "**web**"
 msgstr "**web**"
 
 msgid "Host OS is a Web browser"
+msgstr "호스트 OS가 웹 브라우저이다"
+
+msgid "**nothreads**"
+msgstr "정적 함수"
+
+msgid "Running without threading support"
+msgstr "편집기 실행하기"
+
+msgid "**threads**"
+msgstr "정적 함수"
+
+msgid "Running with threading support"
+msgstr "편집기 실행하기"
+
+msgid "**web_android**"
+msgstr "**Android**"
+
+msgid "Host OS is a Web browser running on Android"
+msgstr "호스트 OS가 웹 브라우저이다"
+
+msgid "**web_ios**"
+msgstr "**web**"
+
+msgid "Host OS is a Web browser running on iOS"
+msgstr "호스트 OS가 웹 브라우저이다"
+
+msgid "**web_linuxbsd**"
+msgstr "**web**"
+
+msgid "Host OS is a Web browser running on Linux or \\*BSD"
+msgstr "호스트 OS가 웹 브라우저이다"
+
+msgid "**web_macos**"
+msgstr "**web**"
+
+msgid "Host OS is a Web browser running on macOS"
+msgstr "호스트 OS가 웹 브라우저이다"
+
+msgid "**web_windows**"
+msgstr "**Windows**"
+
+msgid "Host OS is a Web browser running on Windows"
 msgstr "호스트 OS가 웹 브라우저이다"
 
 msgid "**etc**"
@@ -158,6 +349,55 @@ msgstr "**s3tc**"
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr "S3TC (DXT/BC) 압축을 사용하는 텍스처를 지원한다"
 
+msgid "**movie**"
+msgstr "**mobile**"
+
+msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
+msgstr ":ref:`Movie Maker 모드 <doc_creating_movies>`이 활성화되었습니다."
+
+msgid "**shader_baker**"
+msgstr "셰이더"
+
+msgid ""
+"Project was exported with :ref:`shader baking "
+"<doc_pipeline_compilations_shader_baker>` enabled (only applies to the "
+"exported project, not when running in the editor)"
+msgstr ""
+"프로젝트는 :ref:`셰이더 baking <doc_pipeline_compilations_shader_baker>`을 활"
+"성화하여 내보냈습니다(내보낸 프로젝트에만 적용되며 편집기에서 실행할 때는 적"
+"용되지 않음)."
+
+msgid "**dedicated_server**"
+msgstr "텍스처"
+
+msgid ""
+"Project was exported as a :ref:`dedicated server "
+"<doc_exporting_for_dedicated_servers>` (only applies to the exported "
+"project, not when running in the editor)"
+msgstr ""
+"프로젝트는 :ref:`전용 서버 <doc_exporting_for_dedicated_servers>`로 내보냈습"
+"니다(내보낸 프로젝트에만 적용되며 편집기에서 실행할 때는 적용되지 않음)."
+
+msgid ""
+"With the exception of texture compression, ``web_<platform>`` and ``movie`` "
+"feature tags, default feature tags are **immutable**. This means that they "
+"will *not* change depending on runtime conditions. For example, "
+"``OS.has_feature(\"mobile\")`` will return ``false`` when running a project "
+"exported to Web on a mobile device."
+msgstr ""
+"텍스처 압축, ``web_<platform>`` 및 ``movie`` 기능 태그를 제외하고 기본 기능 "
+"태그는 **불변**입니다. 즉, 런타임 조건에 따라 변경되지 *않습니다*. 예를 들"
+"어, ``OS.has_feature(\"mobile\")``는 모바일 장치에서 웹으로 내보낸 프로젝트"
+"를 실행할 때 ``false``를 반환합니다."
+
+msgid ""
+"To check whether a project exported to Web is running on a mobile device, "
+"use ``OS.has_feature(\"web_android\") or OS.has_feature(\"web_ios\")``."
+msgstr ""
+"웹으로 내보낸 프로젝트가 모바일 기기에서 실행되고 있는지 확인하려면 "
+"``OS.has_feature(\"web_android\") or OS.has_feature(\"web_ios\")``를 사용하세"
+"요."
+
 msgid "Custom features"
 msgstr "커스텀 기능"
 
@@ -167,6 +407,26 @@ msgid ""
 msgstr ""
 "빌드에 커스텀 기능을 추가할 수 있습니다; 생성하기 위해 *내보내기 프리셋*\\ 에"
 "서 관련 필드를 사용하세요:"
+
+msgid ""
+"Custom feature tags are only used when running the exported project "
+"(including with :ref:`doc_one-click_deploy`). They are **not used** when "
+"running the project from the editor, even if the export preset marked as "
+"**Runnable** for your current platform has custom feature tags defined."
+msgstr ""
+"사용자 정의 기능 태그는 내보낸 프로젝트(:ref:`doc_one-click_deploy` 포함)를 "
+"실행할 때만 사용됩니다. 현재 플랫폼에 대해 **실행 가능**으로 표시된 내보내기 "
+"사전 설정에 사용자 정의 기능 태그가 정의되어 있더라도 편집기에서 프로젝트를 "
+"실행할 때 **사용되지 않습니다**."
+
+msgid ""
+"Custom feature tags are also not used in :ref:`class_EditorExportPlugin` "
+"scripts. Instead, feature tags in :ref:`class_EditorExportPlugin` will "
+"reflect the device the editor is currently running on."
+msgstr ""
+"사용자 정의 기능 태그는 :ref:`class_EditorExportPlugin` 스크립트에서도 사용되"
+"지 않습니다. 대신 :ref:`class_EditorExportPlugin`의 기능 태그는 편집기가 현"
+"재 실행 중인 장치를 반영합니다."
 
 msgid "Overriding project settings"
 msgstr "프로젝트 설정 오버라이드하기"
@@ -192,6 +452,18 @@ msgid "The Project Settings panel"
 msgstr "프로젝트 설정 패널"
 
 msgid ""
+"The desired configuration is selected, which effectively copies its "
+"properties to the panel above (1). The \"demo_build\" feature tag is "
+"selected (2). The configuration is added to the project settings (3)."
+msgstr ""
+"원하는 구성이 선택되어 해당 속성이 위의 패널에 효과적으로 복사됩니다(1). "
+"\"demo_build\" 기능 태그가 선택되었습니다(2). 구성이 프로젝트 설정(3)에 추가"
+"됩니다."
+
+msgid "After overriding, a new field is added for this specific configuration."
+msgstr "오버라이드한 후, 지정된 구성을 위한 새로운 영역이 추가됩니다:"
+
+msgid ""
 "When using the :ref:`project settings \"override.cfg\" functionality "
 "<class_ProjectSettings>` (which is unrelated to feature tags), remember that "
 "feature tags still apply. Therefore, make sure to *also* override the "
@@ -214,5 +486,49 @@ msgstr ""
 "기본적으로 오버라이드를 통해 오는 많은 설정이 있습니다; 프로젝트 설정의 많은 "
 "섹션에서 이를 확인할 수 있습니다."
 
+msgid "Taking feature tags into account when reading project settings"
+msgstr "프로젝트 설정을 읽을 때 기능 태그 고려"
+
+msgid ""
+"By default, feature tags are **not** taken into account when reading project "
+"settings using the typical approaches "
+"(:ref:`ProjectSettings.get_setting<class_ProjectSettings_method_get_setting>` "
+"or :ref:`ProjectSettings.get <class_Object_private_method__get>`). Instead, "
+"you must use :ref:`ProjectSettings.get_setting_with_override "
+"<class_ProjectSettings_method_get_setting>`."
+msgstr ""
+"기본적으로 일반적인 접근 방식"
+"(:ref:`ProjectSettings.get_setting<class_ProjectSettings_method_get_setting>` "
+"또는 :ref:`ProjectSettings.get <class_Object_private_method__get>`)을 사용하"
+"여 프로젝트 설정을 읽을 때 기능 태그는 고려되지 **않습니다**. 대"
+"신 :ref:`ProjectSettings.get_setting_with_override "
+"<class_ProjectSettings_method_get_setting>`을 사용해야 합니다."
+
+msgid "For example, with the following project settings:"
+msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+
+msgid ""
+"Using ``ProjectSettings.get_setting(\"section/subsection/example\")`` will "
+"return ``\"Release\"`` regardless of whether a debug build is currently "
+"running. On the other hand, "
+"``ProjectSettings.get_setting_with_override(\"section/subsection/"
+"example\")`` will obey feature tags and will return ``\"Debug\"`` if using a "
+"debug build."
+msgstr ""
+"``ProjectSettings.get_setting(\"section/subsection/example\")``를 사용하면 디"
+"버그 빌드가 현재 실행 중인지 여부에 관계없이 ``\"Release\"``가 반환됩니다. 반"
+"면, ``ProjectSettings.get_setting_with_override(\"section/subsection/"
+"example\")``는 기능 태그를 따르고 디버그 빌드를 사용하는 경우 ``\"Debug\"``"
+"를 반환합니다."
+
 msgid "Customizing the build"
 msgstr "빌드 커스터마이징하기"
+
+msgid ""
+"Feature tags can be used to customize a build process too, by writing a "
+"custom **ExportPlugin**. They are also used to specify which shared library "
+"is loaded and exported in **GDExtension**."
+msgstr ""
+"기능 태그는 커스텀 **ExportPlugin**\\ 을 작성하는 것으로, 빌드 처리를 커스터"
+"마이즈하는데 사용할 수도 있습니다. 그리고 **GDNative**\\ 에서 불러오고 내보내"
+"는 공유된 라이브러리를 지정하는데에도 사용됩니다."

@@ -63,7 +63,7 @@ msgid ""
 "should not be affected or require significant porting work."
 msgstr ""
 "La version ``minor`` est incrémentée pour les versions de fonctionnalités "
-"qui ne cassent pas la compatibilité de manière majeure. Des ruptures de "
+"qui ne rompent pas la compatibilité de manière majeure. Des ruptures de "
 "compatibilité mineures dans des domaines très spécifiques *peuvent* se "
 "produire dans les versions mineures, mais la grande majorité des projets ne "
 "devraient pas être affectés ou nécessiter un travail de portage important."
@@ -219,12 +219,6 @@ msgstr "Godot 4.5"
 msgid "September 2025"
 msgstr "Septembre 2025"
 
-msgid "Godot 4.4"
-msgstr "Godot 4.4"
-
-msgid "March 2025"
-msgstr "Mars 2025"
-
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
 "|partial| Reçoit des correctifs de sécurité et de support de plate-forme "
@@ -232,6 +226,15 @@ msgstr ""
 
 msgid "partial"
 msgstr "partiel"
+
+msgid "Godot 4.4"
+msgstr "Godot 4.4"
+
+msgid "March 2025"
+msgstr "Mars 2025"
+
+msgid "eol"
+msgstr "fin de vie"
 
 msgid "Godot 4.3"
 msgstr "Godot 4.3"
@@ -241,9 +244,6 @@ msgstr "Août 2024"
 
 msgid "|eol| No longer supported (last update: 4.3)."
 msgstr "|eol| N’est plus supporté (dernière version : 4.3)."
-
-msgid "eol"
-msgstr "fin de vie"
 
 msgid "Godot 4.2"
 msgstr "Godot 4.2"
@@ -595,9 +595,9 @@ msgid ""
 msgstr ""
 "Corriger un bug d'une manière qui n'a pas d'impact négatif majeur sur la "
 "plupart des projets, comme un bug visuel ou physique. Le moteur physique de "
-"Godot n'est pas déterministe, donc les corrections de bugs physiques ne sont "
-"pas considérées comme une rupture de compatibilité. Si la correction d'un "
-"bug a un impact négatif qui pourrait avoir un impact sur de nombreux "
+"Godot n'est pas déterministe, donc les corrections de bugs de la physique ne "
+"sont pas considérées comme une rupture de compatibilité. Si la correction "
+"d'un bug a un impact négatif qui pourrait avoir un impact sur de nombreux "
 "projets, elle doit être rendue facultative (par exemple en utilisant un "
 "paramètre de projet ou une méthode distincte)."
 

@@ -11,5 +11,79 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0301: The generic type argument must be a Variant compatible type"
+msgstr "GD0301: 일반 유형 인수는 Variant 호환 유형이어야 합니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0301"
+msgstr "GD0301"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"An unsupported type is specified for a generic type argument when "
+"a :ref:`Variant-compatible type <c_sharp_variant_compatible_types>` is "
+"expected."
+msgstr ""
+":ref:`Variant 호환 유형 <c_sharp_variant_ Compatible_types>`이 필요한 경우 일"
+"반 유형 인수에 지원되지 않는 유형이 지정되었습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"When a generic type parameter is annotated with the ``[MustBeVariant]`` "
+"attribute, the generic type is required to be a Variant-compatible type. For "
+"example, the generic ``Godot.Collections.Array<T>`` type only supports items "
+"of a type that can be converted to Variant."
+msgstr ""
+"일반 유형 매개변수에 ``[MustBeVariant]`` 속성으로 주석이 달린 경우 일반 유형"
+"은 Variant 호환 유형이어야 합니다. 예를 들어 일반 "
+"``Godot.Collections.Array<T>`` 유형은 Variant로 변환할 수 있는 유형의 항목만 "
+"지원합니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, change the generic type argument to be a "
+"Variant-compatible type or use a different API that doesn't require the "
+"generic type argument to be a Variant-compatible type."
+msgstr ""
+"이 규칙 위반 문제를 해결하려면 일반 형식 인수를 Variant 호환 형식으로 변경하"
+"거나 일반 형식 인수가 Variant 호환 형식이 되도록 요구하지 않는 다른 API를 사"
+"용하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. API that contains generic type "
+"arguments annotated with the ``[MustBeVariant]`` attribute usually has this "
+"requirement because the values will be passed to the engine, if the type "
+"can't be marshalled it will result in runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``[MustBeVariant]`` 속성으로 주석이 달린 "
+"일반 유형 인수를 포함하는 API에는 일반적으로 값이 엔진에 전달되기 때문에 이 "
+"요구 사항이 있습니다. 유형을 마샬링할 수 없으면 런타임 오류가 발생합니다."

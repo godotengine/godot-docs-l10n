@@ -14,35 +14,515 @@ msgstr ""
 msgid "C# collections"
 msgstr "C# 컬렉션"
 
+msgid ""
+"The .NET base class library contains multiple collection types that can be "
+"used to store and manipulate data. Godot also provide some collection types "
+"that are tightly integrated with the rest of the engine."
+msgstr ""
+".NET 기본 클래스 라이브러리에는 데이터를 저장하고 조작하는 데 사용할 수 있는 "
+"여러 컬렉션 유형이 포함되어 있습니다. Godot는 또한 엔진의 나머지 부분과 긴밀"
+"하게 통합된 일부 컬렉션 유형을 제공합니다."
+
+msgid "Choose a collection"
+msgstr "포트 그리고 연결"
+
+msgid ""
+"The main difference between the `.NET collections <https://"
+"learn.microsoft.com/en-us/dotnet/standard/collections/>`_ and the Godot "
+"collections is that the .NET collections are implemented in C# while the "
+"Godot collections are implemented in C++ and the Godot C# API is a wrapper "
+"over it, this is an important distinction since it means every operation on "
+"a Godot collection requires marshaling which can be expensive especially "
+"inside a loop."
+msgstr ""
+"`.NET 컬렉션 <https://learn.microsoft.com/en-us/dotnet/standard/collections/"
+">`_과 Godot 컬렉션의 주요 차이점은 .NET 컬렉션은 C#으로 구현되는 반면 Godot "
+"컬렉션은 C++로 구현되고 Godot C# API는 이에 대한 래퍼라는 점입니다. 이는 "
+"Godot 컬렉션의 모든 작업에 특히 루프 내에서 비용이 많이 들 수 있는 마샬링이 "
+"필요하다는 의미이므로 중요한 차이점입니다."
+
+msgid ""
+"Due to the performance implications, using Godot collections is only "
+"recommended when absolutely necessary (such as interacting with the Godot "
+"API). Godot only understands its own collection types, so it's required to "
+"use them when talking to the engine."
+msgstr ""
+"성능에 미치는 영향으로 인해 Godot 컬렉션을 사용하는 것은 꼭 필요한 경우에만 "
+"권장됩니다(예: Godot API와의 상호작용). Godot는 자신의 컬렉션 유형만 이해하므"
+"로 엔진과 대화할 때 이를 사용해야 합니다."
+
+msgid ""
+"If you have a collection of elements that don't need to be passed to a Godot "
+"API, using a .NET collection would be more performant."
+msgstr ""
+"Godot API에 전달할 필요가 없는 요소 컬렉션이 있는 경우 .NET 컬렉션을 사용하"
+"는 것이 더 성능이 좋습니다."
+
+msgid ""
+"It's also possible to convert between .NET collections and Godot "
+"collections. The Godot collections contain constructors from generic .NET "
+"collection interfaces that copy their elements, and the Godot collections "
+"can be used with the `LINQ <https://learn.microsoft.com/en-us/dotnet/"
+"standard/linq>`_ ``ToList``, ``ToArray`` and ``ToDictionary`` methods. But "
+"keep in mind this conversion requires marshaling every element in the "
+"collection and copies it to a new collection so it can be expensive."
+msgstr ""
+".NET 컬렉션과 Godot 컬렉션 간 변환도 가능합니다. Godot 컬렉션에는 해당 요소"
+"를 복사하는 일반 .NET 컬렉션 인터페이스의 생성자가 포함되어 있으며 Godot 컬렉"
+"션은 `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ "
+"``ToList``, ``ToArray`` 및 ``ToDictionary`` 메서드와 함께 사용할 수 있습니"
+"다. 하지만 이 변환을 위해서는 컬렉션의 모든 요소를 마샬링하고 새 컬렉션에 복"
+"사해야 하므로 비용이 많이 들 수 있다는 점을 명심하세요."
+
+msgid ""
+"Despite this, the Godot collections are optimized to try and avoid "
+"unnecessary marshaling, so methods like ``Sort`` or ``Reverse`` are "
+"implemented with a single interop call and don't need to marshal every "
+"element. Keep an eye out for generic APIs that take collection interfaces "
+"like `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ "
+"because every method requires iterating the collection and, therefore, "
+"marshaling every element. Prefer using the instance methods of the Godot "
+"collections when possible."
+msgstr ""
+"그럼에도 불구하고 Godot 컬렉션은 불필요한 마샬링을 피하도록 최적화되어 있으므"
+"로 ``Sort`` 또는 ``Reverse``와 같은 메서드는 단일 interop 호출로 구현되며 모"
+"든 요소를 마샬링할 필요가 없습니다. `LINQ <https://learn.microsoft.com/en-us/"
+"dotnet/standard/linq>`_와 같은 컬렉션 인터페이스를 사용하는 일반 API를 주의 "
+"깊게 살펴보세요. 모든 메서드에는 컬렉션을 반복해야 하므로 모든 요소를 마샬링"
+"해야 하기 때문입니다. 가능하다면 Godot 컬렉션의 인스턴스 메소드를 사용하는 것"
+"을 선호하세요."
+
+msgid ""
+"To choose which collection type to use for each situation, consider the "
+"following questions:"
+msgstr "각 상황에 사용할 컬렉션 유형을 선택하려면 다음 질문을 고려하세요."
+
+msgid ""
+"Does your collection need to interact with the Godot engine? (e.g.: the type "
+"of an exported property, calling a Godot method)."
+msgstr ""
+"당신의 컬렉션이 Godot 엔진과 상호 작용해야 합니까? (예: Godot 메소드를 호출하"
+"는 내보낸 속성의 유형)"
+
+msgid ""
+"If yes, since Godot only supports :ref:`c_sharp_variant_compatible_types`, "
+"use a Godot collection."
+msgstr ""
+"그렇다면 Godot는 :ref:`c_sharp_variant_compatible_types`만 지원하므로 Godot "
+"컬렉션을 사용하세요."
+
+msgid ""
+"If not, consider `choosing an appropriate .NET collection <https://"
+"learn.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-"
+"class>`_."
+msgstr ""
+"그렇지 않은 경우 `적절한 .NET 컬렉션 선택 <https://learn.microsoft.com/en-us/"
+"dotnet/standard/collections/selecting-a-collection-class>`_을 고려하세요."
+
+msgid ""
+"Do you need a Godot collection that represents a list or sequential set of "
+"data?"
+msgstr "데이터의 목록이나 순차적 세트를 나타내는 Godot 컬렉션이 필요합니까?"
+
+msgid ""
+"Godot :ref:`arrays <doc_c_sharp_collections_array>` are similar to the C# "
+"collection ``List<T>``."
+msgstr ""
+"Godot :ref:`arrays <doc_c_sharp_collections_array>`는 C# 컬렉션 ``List<T>``"
+"와 유사합니다."
+
+msgid ""
+"Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>` are more "
+"memory-efficient arrays, in C# use one of the supported ``System.Array`` "
+"types."
+msgstr ""
+"Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>`는 메모리 효"
+"율성이 더 높은 배열입니다. C#에서는 지원되는 ``System.Array`` 유형 중 하나를 "
+"사용합니다."
+
+msgid ""
+"Do you need a Godot collection that maps a set of keys to a set of values?"
+msgstr "키 세트를 값 세트에 매핑하는 Godot 컬렉션이 필요합니까?"
+
+msgid ""
+"Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` store pairs "
+"of keys and values and allow easy access to the values by their associated "
+"key."
+msgstr ""
+"Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` 키와 값의 쌍"
+"을 저장하고 관련 키를 통해 값에 쉽게 액세스할 수 있도록 합니다."
+
+msgid "Godot collections"
+msgstr "알림(Notifications)"
+
+msgid "PackedArray"
+msgstr "배열"
+
+msgid ""
+"Godot packed arrays are implemented as an array of a specific type, allowing "
+"it to be more tightly packed as each element has the size of the specific "
+"type, not ``Variant``."
+msgstr ""
+"Godot 패킹된 배열은 특정 유형의 배열로 구현되어 각 요소가 ``Variant``가 아닌 "
+"특정 유형의 크기를 갖기 때문에 더 촘촘하게 패킹될 수 있습니다."
+
+msgid "In C#, packed arrays are replaced by ``System.Array``:"
+msgstr "C#에서는 압축형 배열이 ``System.Array``로 대체됩니다."
+
 msgid "GDScript"
 msgstr "GDScript"
 
 msgid "C#"
 msgstr "C#"
 
+msgid "``PackedByteArray``"
+msgstr "``PoolByteArray``"
+
 msgid "``byte[]``"
 msgstr "``byte[]``"
+
+msgid "``PackedInt32Array``"
+msgstr "``PoolIntArray``"
 
 msgid "``int[]``"
 msgstr "``int[]``"
 
+msgid "``PackedInt64Array``"
+msgstr "``PoolIntArray``"
+
+msgid "``long[]``"
+msgstr "``float[]``"
+
+msgid "``PackedFloat32Array``"
+msgstr "``PoolFloatArray``"
+
 msgid "``float[]``"
 msgstr "``float[]``"
+
+msgid "``PackedFloat64Array``"
+msgstr "``PoolFloatArray``"
+
+msgid "``double[]``"
+msgstr "``byte[]``"
+
+msgid "``PackedStringArray``"
+msgstr "``PoolStringArray``"
+
+msgid "``string[]``"
+msgstr "``String[]``"
+
+msgid "``PackedVector2Array``"
+msgstr "``PoolVector2Array``"
 
 msgid "``Vector2[]``"
 msgstr "``Vector2[]``"
 
+msgid "``PackedVector3Array``"
+msgstr "``PoolVector3Array``"
+
 msgid "``Vector3[]``"
 msgstr "``Vector3[]``"
+
+msgid "``PackedVector4Array``"
+msgstr "``PoolVector2Array``"
+
+msgid "``Vector4[]``"
+msgstr "``Vector2[]``"
+
+msgid "``PackedColorArray``"
+msgstr "``PoolColorArray``"
 
 msgid "``Color[]``"
 msgstr "``Color[]``"
 
+msgid ""
+"Other C# arrays are not supported by the Godot C# API since a packed array "
+"equivalent does not exist. See the list "
+"of :ref:`c_sharp_variant_compatible_types`."
+msgstr ""
+"다른 C# 배열은 압축된 배열이 존재하지 않기 때문에 Godot C# API에서 지원되지 "
+"않습니다. :ref:`c_sharp_variant_compatible_types` 목록을 참조하세요."
+
 msgid "Array"
 msgstr "배열"
 
+msgid ""
+"Godot arrays are implemented as an array of ``Variant`` and can contain "
+"several elements of any type. In C#, the equivalent type is "
+"``Godot.Collections.Array``."
+msgstr ""
+"Godot 배열은 ``Variant`` 배열로 구현되며 모든 유형의 여러 요소를 포함할 수 있"
+"습니다. C#에서 동등한 유형은 ``Godot.Collections.Array``입니다."
+
+msgid ""
+"The generic ``Godot.Collections.Array<T>`` type allows restricting the "
+"element type to a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>`."
+msgstr ""
+"일반 ``Godot.Collections.Array<T>`` 유형을 사용하면 요소 유형"
+"을 :ref:`Variant 호환 유형 <c_sharp_variant_ Compatible_types>`으로 제한할 "
+"수 있습니다."
+
+msgid ""
+"An untyped ``Godot.Collections.Array`` can be converted to a typed array "
+"using the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` "
+"constructor."
+msgstr ""
+"``Godot.Collections.Array<T>`` 는 ``Godot.Collections.Array`` 를 둘러싸는 "
+"type-safe wrapper 입니다. "
+"``Godot.Collections.Array<T>(Godot.Collections.Array)`` 생성자를 사용해 만들 "
+"수 있습니다."
+
+msgid ""
+"Despite the name, Godot arrays are more similar to the C# collection "
+"``List<T>`` than ``System.Array``. Their size is not fixed and can grow or "
+"shrink as elements are added/removed from the collection."
+msgstr ""
+"이름에도 불구하고 Godot 배열은 ``System.Array``보다 C# 컬렉션 ``List<T>``와 "
+"더 유사합니다. 크기는 고정되어 있지 않으며 컬렉션에 요소가 추가/제거됨에 따"
+"라 늘어나거나 줄어들 수 있습니다."
+
+msgid "List of Godot's Array methods and their equivalent in C#:"
+msgstr "Godot의 배열 메소드 목록과 C#에서 이에 상응하는 메소드:"
+
+msgid "all"
+msgstr "Call(호출)"
+
+msgid "`System.Linq.Enumerable.All`_"
+msgstr "`System.Linq.Enumerable.All`_"
+
+msgid "any"
+msgstr "그리고"
+
+msgid "`System.Linq.Enumerable.Any`_"
+msgstr "`System.Linq.Enumerable.Any`_"
+
+msgid "append"
+msgstr "추가"
+
+msgid "Add"
+msgstr "Android"
+
+msgid "append_array"
+msgstr "append_array"
+
+msgid "AddRange"
+msgstr "범위 추가"
+
+msgid "assign"
+msgstr "signal"
+
+msgid "Clear and AddRange"
+msgstr "지우기 및 AddRange"
+
+msgid "back"
+msgstr "단점"
+
+msgid ""
+"``Array[^1]`` or `System.Linq.Enumerable.Last`_ or "
+"`System.Linq.Enumerable.LastOrDefault`_"
+msgstr ""
+"``Array[^1]`` 또는 `System.Linq.Enumerable.Last`_ 또는 "
+"`System.Linq.Enumerable.LastOrDefault`_"
+
+msgid "bsearch"
+msgstr "b검색"
+
+msgid "BinarySearch"
+msgstr "바이너리서치"
+
+msgid "bsearch_custom"
+msgstr "bsearch_custom"
+
+msgid "N/A"
+msgstr "NAN"
+
+msgid "clear"
+msgstr "명확한"
+
+msgid "Clear"
+msgstr "클리어코트"
+
+msgid "count"
+msgstr "양"
+
+msgid "`System.Linq.Enumerable.Count`_"
+msgstr "`System.Linq.Enumerable.Count`_"
+
+msgid "duplicate"
+msgstr "복제"
+
 msgid "Duplicate"
 msgstr "복제"
+
+msgid "erase"
+msgstr "카메라"
+
+msgid "Remove"
+msgstr "제거"
+
+msgid "fill"
+msgstr "채우다"
+
+msgid "Fill"
+msgstr "채우기"
+
+msgid "filter"
+msgstr "필터"
+
+msgid "Use `System.Linq.Enumerable.Where`_"
+msgstr "`System.Linq.Enumerable.Where`_ 사용"
+
+msgid "find"
+msgstr "찾기"
+
+msgid "IndexOf"
+msgstr "인덱스"
+
+msgid "front"
+msgstr "앞"
+
+msgid ""
+"``Array[0]`` or `System.Linq.Enumerable.First`_ or "
+"`System.Linq.Enumerable.FirstOrDefault`_"
+msgstr ""
+"``Array[0]`` 또는 `System.Linq.Enumerable.First`_ 또는 "
+"`System.Linq.Enumerable.FirstOrDefault`_"
+
+msgid "get_typed_builtin"
+msgstr "벡터 내장 타입"
+
+msgid "get_typed_class_name"
+msgstr "class_name"
+
+msgid "get_typed_script"
+msgstr "get_typed_script"
+
+msgid "has"
+msgstr "as"
+
+msgid "Contains"
+msgstr "내용 테스트"
+
+msgid "hash"
+msgstr "hash"
+
+msgid "GD.Hash"
+msgstr "GD.Hash"
+
+msgid "insert"
+msgstr "assert"
+
+msgid "Insert"
+msgstr "키 삽입"
+
+msgid "is_empty"
+msgstr "is_empty"
+
+msgid "Use ``Count == 0``"
+msgstr "``Count == 0`` 사용"
+
+msgid "is_read_only"
+msgstr "is_read_only"
+
+msgid "IsReadOnly"
+msgstr "읽기 전용"
+
+msgid "is_same_typed"
+msgstr "is_same_typed"
+
+msgid "is_typed"
+msgstr "타입"
+
+msgid "make_read_only"
+msgstr "make_read_only"
+
+msgid "MakeReadOnly"
+msgstr "읽기 전용으로 만들기"
+
+msgid "map"
+msgstr "맵"
+
+msgid "`System.Linq.Enumerable.Select`_"
+msgstr "`System.Linq.Enumerable.Select`_"
+
+msgid "max"
+msgstr "최대"
+
+msgid "Max"
+msgstr "맵"
+
+msgid "min"
+msgstr "믹스"
+
+msgid "Min"
+msgstr "최소"
+
+msgid "pick_random"
+msgstr "pick_random"
+
+msgid "PickRandom (Consider using `System.Random`_)"
+msgstr "PickRandom(`System.Random`_ 사용을 고려하세요)"
+
+msgid "pop_at"
+msgstr "pop_at"
+
+msgid "``Array[i]`` with ``RemoveAt(i)``"
+msgstr "``Array[i]`` 및 ``RemoveAt(i)``"
+
+msgid "pop_back"
+msgstr "pop_back"
+
+msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
+msgstr "``Array[^1]`` 및 ``RemoveAt(Count - 1)``"
+
+msgid "pop_front"
+msgstr "pop_front"
+
+msgid "``Array[0]`` with ``RemoveAt(0)``"
+msgstr "``Array[0]`` 및 ``RemoveAt(0)``"
+
+msgid "push_back"
+msgstr "push_back"
+
+msgid "``Insert(Count, item)``"
+msgstr "``Insert(Count, item)``"
+
+msgid "push_front"
+msgstr "push_front"
+
+msgid "``Insert(0, item)``"
+msgstr "``Insert(0, item)``"
+
+msgid "reduce"
+msgstr "감소시키다"
+
+msgid "`System.Linq.Enumerable.Aggregate`_"
+msgstr "`System.Linq.Enumerable.Aggregate`_"
+
+msgid "remove_at"
+msgstr "remote"
+
+msgid "RemoveAt"
+msgstr "제거 위치"
+
+msgid "resize"
+msgstr "크기 조정"
+
+msgid "Resize"
+msgstr "크기 조정"
+
+msgid "reverse"
+msgstr "**Server**"
+
+msgid "Reverse"
+msgstr "**Server**"
+
+msgid "rfind"
+msgstr "찾기"
+
+msgid "LastIndexOf"
+msgstr "인덱스"
 
 msgid "shuffle"
 msgstr "shuffle"
@@ -50,14 +530,134 @@ msgstr "shuffle"
 msgid "Shuffle"
 msgstr "셔플"
 
+msgid "size"
+msgstr "크기"
+
+msgid "Count"
+msgstr "양"
+
 msgid "slice"
 msgstr "slice"
 
 msgid "Slice"
 msgstr "썰기"
 
+msgid "sort"
+msgstr "정렬"
+
+msgid "Sort"
+msgstr "정렬"
+
+msgid "sort_custom"
+msgstr "sort_custom"
+
+msgid "`System.Linq.Enumerable.OrderBy`_"
+msgstr "`System.Linq.Enumerable.OrderBy`_"
+
+msgid "operator !="
+msgstr "연산자"
+
+msgid "!RecursiveEqual"
+msgstr "!재귀동등"
+
+msgid "operator +"
+msgstr "연산자"
+
+msgid "operator <"
+msgstr "연산자"
+
+msgid "operator <="
+msgstr "연산자"
+
+msgid "operator =="
+msgstr "연산자"
+
+msgid "RecursiveEqual"
+msgstr "재귀동등"
+
+msgid "operator >"
+msgstr "연산자"
+
+msgid "operator >="
+msgstr "연산자"
+
+msgid "operator []"
+msgstr "연산자"
+
+msgid "Array[int] indexer"
+msgstr "어레이[int] 인덱서"
+
 msgid "Dictionary"
 msgstr "딕셔너리"
 
+msgid ""
+"Godot dictionaries are implemented as a dictionary with ``Variant`` keys and "
+"values. In C#, the equivalent type is ``Godot.Collections.Dictionary``."
+msgstr ""
+"Godot 사전은 ``Variant`` 키와 값을 가진 사전으로 구현됩니다. C#에서 동등한 유"
+"형은 ``Godot.Collections.Dictionary``입니다."
+
+msgid ""
+"The generic ``Godot.Collections.Dictionary<TKey, TValue>`` type allows "
+"restricting the key and value types to a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>`."
+msgstr ""
+"일반 ``Godot.Collections.Dictionary<TKey, TValue>`` 유형을 사용하면 키 및 값 "
+"유형을 :ref:`Variant 호환 유형 <c_sharp_variant_ Compatible_types>`으로 제한"
+"할 수 있습니다."
+
+msgid ""
+"An untyped ``Godot.Collections.Dictionary`` can be converted to a typed "
+"dictionary using the ``Godot.Collections.Dictionary<TKey, "
+"TValue>(Godot.Collections.Dictionary)`` constructor."
+msgstr ""
+"``Godot.Collections.Dictionary<T>`` 는 ``Godot.Collections.Dictionary`` 를 둘"
+"러싸는 type-safe wrapper입니다. "
+"``Godot.Collections.Dictionary<T>(Godot.Collections.Dictionary)`` 생성자를 사"
+"용해 만들 수 있습니다."
+
+msgid ""
+"If you need a dictionary where the key is typed but not the value, use "
+"``Variant`` as the ``TValue`` generic parameter of the typed dictionary."
+msgstr ""
+"키가 입력되었지만 값이 아닌 사전이 필요한 경우 ``Variant``를 입력된 사전의 "
+"``TValue`` 일반 매개변수로 사용하세요."
+
+msgid "List of Godot's Dictionary methods and their equivalent in C#:"
+msgstr "Godot의 사전 메소드 목록 및 C#의 해당 메소드 목록:"
+
+msgid "find_key"
+msgstr "find_key"
+
+msgid "get"
+msgstr "설정"
+
+msgid "Dictionary[Variant] indexer or TryGetValue"
+msgstr "Dictionary[Variant] 인덱서 또는 TryGetValue"
+
+msgid "ContainsKey"
+msgstr "계속"
+
+msgid "has_all"
+msgstr "has_all"
+
 msgid "keys"
 msgstr "키"
+
+msgid "Keys"
+msgstr "열쇠"
+
+msgid "merge"
+msgstr "병합"
+
+msgid "Merge"
+msgstr "병합"
+
+msgid "values"
+msgstr "값"
+
+msgid "Values"
+msgstr "값"
+
+msgid "Dictionary[Variant] indexer, Add or TryGetValue"
+msgstr "Dictionary[Variant] 인덱서, 추가 또는 TryGetValue"

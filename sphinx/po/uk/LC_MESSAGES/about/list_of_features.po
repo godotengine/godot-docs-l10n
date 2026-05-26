@@ -419,7 +419,7 @@ msgid "PathFollow2D node to make nodes follow a Path2D."
 msgstr "Вузол PathFollow2D, щоб змусити вузли рухатися по Path2D."
 
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
-msgstr ":ref:`2D geometry helper class <class_Geometry2D>`."
+msgstr ":ref:`Допоміжний клас для роботи з 2D-геометрією <class_Geometry2D>`."
 
 msgid "2D physics"
 msgstr "2D фізика"
@@ -1171,7 +1171,7 @@ msgid "PathFollow3D node to make nodes follow a Path3D."
 msgstr "Вузол PathFollow3D, щоб заставити вузли рухатися по Path3D."
 
 msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
-msgstr ":ref:`3D geometry helper class <class_Geometry3D>`."
+msgstr ":ref:`Допоміжний клас для роботи з 3D-геометрією <class_Geometry3D>`."
 
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file, both from the "
@@ -1185,6 +1185,12 @@ msgstr "3D фізика"
 
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr "Транспортні тіла (призначена для аркадної фізики, не симуляцій)."
+
+msgid ":ref:`Soft bodies <doc_soft_body>`."
+msgstr ":ref:`М'які тіла <doc_soft_body>`."
+
+msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
+msgstr ":ref:`Рагдолли <doc_ragdoll_system>`."
 
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
@@ -1222,6 +1228,10 @@ msgstr ""
 
 msgid "Visual shader editor."
 msgstr "Візуальний редактор шейдерів."
+
+msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
+msgstr ""
+"Підтримка для :ref:`visual shader plugins <doc_visual_shader_plugins>`."
 
 msgid "Scripting"
 msgstr "Скрипти"
@@ -1405,6 +1415,13 @@ msgstr ""
 
 msgid "Audio input to record microphones."
 msgstr "Аудіо-вхід для запису мікрофонів."
+
+msgid ""
+":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
+"engines."
+msgstr ""
+":ref:`Text to speech <doc_text_to_speech>` використовуючи механізми синтезу "
+"мовлення, що надаються платформою."
 
 msgid "MIDI input."
 msgstr "MIDI вхід."
@@ -1631,6 +1648,18 @@ msgstr "Інтернаціоналізація"
 msgid "Full support for Unicode including emoji."
 msgstr "Повна підтримка Unicode, включаючи емодзі."
 
+msgid "Support for loading system fonts on Windows, macOS, and Linux."
+msgstr "Підтримка завантаження системних шрифтів у Windows, macOS та Linux."
+
+msgid ""
+"By default, system fonts are used as a fallback to display unsupported "
+"characters. This allows proper display of multilingual text without having "
+"to bundle large font files with a project."
+msgstr ""
+"За замовчуванням системні шрифти використовуються як резервний варіант для "
+"відображення непідтримуваних символів. Це дозволяє правильно відображати "
+"багатомовний текст без необхідності додавати великі файли шрифтів до проекту."
+
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
@@ -1648,6 +1677,9 @@ msgid ""
 msgstr ""
 "Використовуйте рядки локалізації у своєму проєкті автоматично в елементах "
 "графічного інтерфейсу, або за допомогою функції ``tr ()``."
+
+msgid "Support for pluralization and translation contexts."
+msgstr "Підтримка множинності та контекстів перекладу."
 
 msgid ""
 "Support for :ref:`bidirectional typesetting "
@@ -1684,6 +1716,13 @@ msgid "Change the window title and icon."
 msgstr "Зміна заголовку та значка вікна."
 
 msgid ""
+"Create transparent windows to use as overlays, with polygon-based mouse "
+"passthrough support."
+msgstr ""
+"Створюйте прозорі вікна для використання як накладок з підтримкою руху миші "
+"на основі полігонів."
+
+msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
 "Запит уваги (на більшості платформ призведе до мерехтіння шкали заголовку)."
@@ -1702,8 +1741,32 @@ msgstr ""
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "Вікна без меж (повноекранні або неповноекранні)."
 
+msgid "Keep a window always on top."
+msgstr "Завжди тримайте вікно зверху."
+
+msgid "Make a window ignore focus (useful for overlays)."
+msgstr "Зробити так, щоб вікно ігнорувало фокус (корисно для накладень)."
+
+msgid ""
+"Declare a window as a popup (hidden from task switcher) or exclusive "
+"(prevents interacting with other windows from the same process)."
+msgstr ""
+"Оголосити вікно як спливаюче (приховане від перемикача завдань) або "
+"ексклюзивне (запобігає взаємодії з іншими вікнами того ж процесу)."
+
+msgid "Native file dialog support on Windows, macOS, Linux, and Android."
+msgstr ""
+"Вбудована підтримка діалогових вікон файлів у Windows, macOS, Linux та "
+"Android."
+
+msgid "Tray icon support on Windows and macOS."
+msgstr "Підтримка значків у треї у Windows та macOS."
+
 msgid "Global menu integration on macOS."
 msgstr "Інтеграція глобального меню на macOS."
+
+msgid "Client-side decorations on macOS."
+msgstr "Декорації на стороні клієнта в macOS."
 
 msgid ""
 "Execute commands in a blocking or non-blocking manner (including running "
@@ -1722,6 +1785,9 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "Аналіз користувацьких аргументів командного рядка."
 
+msgid "Support for screen readers on Windows, macOS, and Linux."
+msgstr "Підтримка програм зчитування з екрана у Windows, macOS та Linux."
+
 msgid ""
 "Any Godot binary (editor or exported project) can be :ref:`used as a "
 "headless server <doc_exporting_for_dedicated_servers>` by starting it with "
@@ -1733,6 +1799,12 @@ msgstr ""
 "<doc_exporting_for_dedicated_servers>`, запустивши його з аргументу "
 "командного рядка ``--headless``. Це дозволяє запускати рушій без графічного "
 "процесора, або дисплейного сервера."
+
+msgid ""
+"See :ref:`doc_creating_applications` for details on using these features."
+msgstr ""
+"Див. :ref:`doc_creating_applications` для отримання детальної інформації про "
+"використання цих функцій."
 
 msgid "Mobile"
 msgstr "Мобільний"

@@ -11,5 +11,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0111: The exported tool button must be an expression-bodied property"
+msgstr "GD0111: 내보낸 도구 버튼은 표현식 본문 속성이어야 합니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0111"
+msgstr "GD0111"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A property is annotated with the ``[ExportToolButton]`` attribute but it's "
+"not an `expression-bodied property`_."
+msgstr ""
+"속성에 ``[ExportToolButton]`` 속성으로 주석이 추가되었지만 `expression-"
+"bodied property`_가 아닙니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"When reloading the .NET assembly, Godot will attempt to serialize exported "
+"members to preserve their values. A field or a property with a backing field "
+"that stores a ``Callable`` may prevent the unloading of the assembly."
+msgstr ""
+".NET 어셈블리를 다시 로드할 때 Godot는 값을 보존하기 위해 내보낸 멤버를 직렬"
+"화하려고 시도합니다. ``Callable``를 저장하는 지원 필드가 있는 필드 또는 속성"
+"으로 인해 어셈블리 언로드가 방지될 수 있습니다."
+
+msgid ""
+"An expression-bodied property doesn't have a backing field and won't store "
+"the ``Callable``, so Godot won't attempt to serialize it, which should "
+"result in the successful reloading of the .NET assembly."
+msgstr ""
+"표현식 본문 속성에는 지원 필드가 없고 ``Callable``를 저장하지 않으므로 Godot"
+"는 이를 직렬화하려고 시도하지 않으며 이로 인해 .NET 어셈블리가 성공적으로 다"
+"시 로드됩니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, replace the property implementation with an "
+"`expression-bodied property`_."
+msgstr ""
+"이 규칙 위반을 수정하려면 속성 구현을 `expression-bodied property`_로 바꾸세"
+"요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. ``Callable`` instances may prevent "
+"the .NET assembly from unloading."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``Callable`` 인스턴스로 인해 .NET 어셈블"
+"리가 언로드되지 않을 수 있습니다."

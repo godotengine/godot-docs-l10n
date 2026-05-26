@@ -11,8 +11,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0109: The '[ExportToolButton]' attribute cannot be used with another "
+"'[Export]' attribute"
+msgstr "GD0109: '[ExportToolButton]' 特性不能与其他 '[Export]' 特性同时使用"
+
 msgid "**Rule ID**"
 msgstr "**规则 ID**"
+
+msgid "GD0109"
+msgstr "GD0109"
 
 msgid "**Category**"
 msgstr "**类别**"
@@ -35,8 +43,20 @@ msgstr "是"
 msgid "Cause"
 msgstr "原因"
 
+msgid ""
+"A property is annotated with both the ``[ExportToolButton]`` and the "
+"``[Export]`` attributes."
+msgstr "一个属性同时被标注了 ``[ExportToolButton]`` 和 ``[Export]`` 特性。"
+
 msgid "Rule description"
 msgstr "规则说明"
+
+msgid ""
+"The ``[ExportToolButton]`` attribute already implies exporting the member, "
+"so the ``[Export]`` is unnecessary."
+msgstr ""
+"``[ExportToolButton]`` 特性已隐含导出成员功能，因此无需额外添加 ``[Export]`` "
+"特性。"
 
 msgid "How to fix violations"
 msgstr "如何解决违规情况"
@@ -46,3 +66,10 @@ msgstr "要修复违反该规则的情况，请移除 ``[Export]`` 属性。"
 
 msgid "When to suppress warnings"
 msgstr "何时抑制警告"
+
+msgid ""
+"Do not suppress a warning from this rule. Multiple export attributes may "
+"lead to duplicated members, resulting in unexpected runtime errors."
+msgstr ""
+"不要抑制该规则的警告。多个导出特性可能导致成员重复，从而引发意外的运行时错"
+"误。"

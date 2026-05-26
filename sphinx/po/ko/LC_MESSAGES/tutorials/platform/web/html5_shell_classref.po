@@ -11,11 +11,100 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "HTML5 shell class reference"
+msgstr "HTML5 쉘 클래스 참조"
+
+msgid ""
+"Projects exported for the Web expose the :js:class:`Engine` class to the "
+"JavaScript environment, that allows fine control over the engine's start-up "
+"process."
+msgstr ""
+"웹용으로 내보낸 프로젝트는 :js:class:`Engine` 클래스를 JavaScript 환경에 노출"
+"하므로 엔진 시작 프로세스를 세밀하게 제어할 수 있습니다."
+
+msgid ""
+"This API is built in an asynchronous manner and requires basic understanding "
+"of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
+"Using_promises>`__."
+msgstr ""
+"이 API는 비동기 방식으로 구축되었으며 `Promises <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__에 대"
+"한 기본적인 이해가 필요합니다."
+
 msgid "Engine"
 msgstr "엔진"
 
+msgid ""
+"The ``Engine`` class provides methods for loading and starting exported "
+"projects on the Web. For default export settings, this is already part of "
+"the exported HTML page. To understand practical use of the ``Engine`` class, "
+"see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`."
+msgstr ""
+"``Engine`` 클래스는 웹에서 내보낸 프로젝트를 로드하고 시작하는 방법을 제공합"
+"니다. 기본 내보내기 설정의 경우 이는 이미 내보낸 HTML 페이지의 일부입니다. "
+"``Engine`` 클래스의 실제 사용을 이해하려면 :ref:`웹 내보내기용 사용자 정의 "
+"HTML 페이지 <doc_customizing_html5_shell>`을 참조하세요."
+
 msgid "Static Methods"
 msgstr "정적 메서드"
+
+msgid "Promise"
+msgstr "약속"
+
+msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
+msgstr ":js:attr:`load <Engine.load>` **(** 문자열 basePath **)**"
+
+msgid "void"
+msgstr "무효"
+
+msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
+msgstr ":js:attr:`unload <Engine.unload>` **(** **)**"
+
+msgid "boolean"
+msgstr "bool"
+
+msgid ""
+":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
+"majorVersion=1 ]* **)**"
+msgstr ""
+":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
+"majorVersion=1 ]* **)**"
+
+msgid "Instance Methods"
+msgstr "씬 인스턴스하기"
+
+msgid ""
+":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
+msgstr ""
+":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
+
+msgid ""
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string path ]* **)**"
+msgstr ""
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** 문자열\\|"
+"ArrayBuffer 파일 *[, string path ]* **)**"
+
+msgid ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
+msgstr ":js:attr:`start <Engine.prototype.start>` **(** 엔진 구성 재정의 **)**"
+
+msgid ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"override **)**"
+msgstr ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** 엔진 구성 재정의 "
+"**)**"
+
+msgid ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
+"ArrayBuffer buffer **)**"
+msgstr ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** 문자열 경로, "
+"ArrayBuffer 버퍼 **)**"
+
+msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
+msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
 msgid "Create a new Engine instance with the given configuration."
 msgstr "주어진 구성으로 새 엔진 인스턴스를 만듭니다."
@@ -54,14 +143,161 @@ msgstr ""
 "이 메서드는 구성에 따라 자동으로 호출됩니다. :js:attr:`unloadAfterInit`\\ 를 "
 "참조하세요."
 
+msgid ""
+"Check whether WebGL is available. Optionally, specify a particular version "
+"of WebGL to check for."
+msgstr ""
+"WebGL을 사용할 수 있는지 확인하세요. 선택적으로 확인할 WebGL의 특정 버전을 지"
+"정합니다."
+
+msgid "The major WebGL version to check for."
+msgstr "확인할 주요 WebGL 버전입니다."
+
+msgid "If the given major version of WebGL is available."
+msgstr "해당 WebGL의 주요 버전을 사용할 수 있는 경우."
+
+msgid "**Instance Methods**"
+msgstr "씬 인스턴스하기"
+
+msgid ""
+"Initialize the engine instance. Optionally, pass the base path to the engine "
+"to load it, if it hasn't been loaded yet. See :js:meth:`Engine.load`."
+msgstr ""
+"엔진 인스턴스를 초기화합니다. 선택적으로 아직 로드되지 않은 경우 기본 경로를 "
+"엔진에 전달하여 로드합니다. :js:meth:`Engine.load`를 참조하세요."
+
+msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
+msgstr "엔진이 로드되고 초기화되면 확인되는 ``Promise``입니다."
+
+msgid ""
+"Load a file so it is available in the instance's file system once it runs. "
+"Must be called **before** starting the instance."
+msgstr ""
+"파일이 실행되면 인스턴스의 파일 시스템에서 사용할 수 있도록 파일을 로드합니"
+"다. 인스턴스를 시작하기 **전에** 호출해야 합니다."
+
+msgid ""
+"If not provided, the ``path`` is derived from the URL of the loaded file."
+msgstr "제공되지 않은 경우 ``path``는 로드된 파일의 URL에서 파생됩니다."
+
+msgid ""
+"The file to preload.  If a ``string`` the file will be loaded from that "
+"path.  If an ``ArrayBuffer`` or a view on one, the buffer will used as the "
+"content of the file."
+msgstr ""
+"미리 로드할 파일입니다.  ``string``인 경우 파일은 해당 경로에서 로드됩니다.  "
+"``ArrayBuffer`` 또는 하나의 뷰인 경우 버퍼가 파일의 내용으로 사용됩니다."
+
 msgid "The file to preload."
 msgstr "미리 불러올 파일."
+
+msgid "If a ``string`` the file will be loaded from that path."
+msgstr "``string``인 경우 파일은 해당 경로에서 로드됩니다."
+
+msgid ""
+"If an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
+"of the file."
+msgstr ""
+"``ArrayBuffer`` 또는 하나의 뷰인 경우 버퍼가 파일의 내용으로 사용됩니다."
+
+msgid ""
+"Path by which the file will be accessible. Required, if ``file`` is not a "
+"string."
+msgstr ""
+"파일에 액세스할 수 있는 경로입니다. ``file``가 문자열이 아닌 경우 필수입니다."
+
+msgid "A Promise that resolves once the file is loaded."
+msgstr "파일이 로드되면 해결되는 Promise입니다."
+
+msgid ""
+"Start the engine instance using the given override configuration (if "
+"any). :js:meth:`startGame <Engine.prototype.startGame>` can be used in "
+"typical cases instead."
+msgstr ""
+"지정된 재정의 구성(있는 경우)을 사용하여 엔진 인스턴스를 시작합니다. 대신 일"
+"반적인 경우에는 :js:meth:`startGame <Engine.prototype.startGame>`를 사용할 "
+"수 있습니다."
+
+msgid ""
+"This will initialize the instance if it is not initialized. For manual "
+"initialization, see :js:meth:`init <Engine.prototype.init>`. The engine must "
+"be loaded beforehand."
+msgstr ""
+"초기화되지 않은 경우 인스턴스가 초기화됩니다. 수동 초기화에 대해서"
+"는 :js:meth:`init <Engine.prototype.init>`를 참조하세요. 엔진을 미리 로드해"
+"야 합니다."
+
+msgid ""
+"Fails if a canvas cannot be found on the page, or not specified in the "
+"configuration."
+msgstr ""
+"페이지에서 캔버스를 찾을 수 없거나 구성에 지정되지 않은 경우 실패합니다."
+
+msgid "An optional configuration override."
+msgstr "선택적 구성 재정의."
+
+msgid "Promise that resolves once the engine started."
+msgstr "엔진이 시동되면 해결된다는 약속입니다."
+
+msgid ""
+"Start the game instance using the given configuration override (if any)."
+msgstr "주어진 구성 재정의(있는 경우)를 사용하여 게임 인스턴스를 시작합니다."
+
+msgid ""
+"This will initialize the instance if it is not initialized. For manual "
+"initialization, see :js:meth:`init <Engine.prototype.init>`."
+msgstr ""
+"초기화되지 않은 경우 인스턴스가 초기화됩니다. 수동 초기화에 대해서"
+"는 :js:meth:`init <Engine.prototype.init>`를 참조하세요."
+
+msgid ""
+"This will load the engine if it is not loaded, and preload the main pck."
+msgstr "엔진이 로드되지 않은 경우 엔진을 로드하고 메인 PC를 사전 로드합니다."
+
+msgid ""
+"This method expects the initial config (or the override) to have both "
+"the :js:attr:`executable` and :js:attr:`mainPack` properties set (normally "
+"done by the editor during export)."
+msgstr ""
+"이 방법에서는 초기 구성(또는 재정의)에 :js:attr:`executable` "
+"및 :js:attr:`mainPack` 속성이 모두 설정되어 있을 것으로 예상합니다(일반적으"
+"로 내보내는 동안 편집기에서 수행됨)."
+
+msgid "Promise that resolves once the game started."
+msgstr "게임이 시작되면 해결된다는 약속입니다."
+
+msgid ""
+"Create a file at the specified ``path`` with the passed as ``buffer`` in the "
+"instance's file system."
+msgstr ""
+"만들기 인스턴스의 파일 시스템에서 ``buffer``로 전달된 지정된 ``path``에 있는 "
+"파일입니다."
+
+msgid "The location where the file will be created."
+msgstr "숨겨진 동작은 활성화되지 않지만, 내보내집니다."
 
 msgid "The content of the file."
 msgstr "파일의 내용입니다."
 
+msgid "Request that the current instance quit."
+msgstr "현재 클래스 인스턴스를 참조합니다."
+
+msgid ""
+"This is akin the user pressing the close button in the window manager, and "
+"will have no effect if the engine has crashed, or is stuck in a loop."
+msgstr ""
+"이는 사용자가 창 관리자에서 닫기 버튼을 누르는 것과 유사하며, 엔진이 충돌하거"
+"나 루프에 갇히면 아무런 효과가 없습니다."
+
 msgid "Engine configuration"
 msgstr "엔진 구성"
+
+msgid ""
+"An object used to configure the Engine instance based on godot export "
+"options, and to override those in custom HTML templates if needed."
+msgstr ""
+"Godot 내보내기 옵션을 기반으로 엔진 인스턴스를 구성하고 필요한 경우 사용자 정"
+"의 HTML 템플릿의 옵션을 재정의하는 데 사용되는 개체입니다."
 
 msgid "Properties"
 msgstr "속성"
@@ -69,8 +305,253 @@ msgstr "속성"
 msgid "type"
 msgstr "유형"
 
+msgid "name"
+msgstr "이름"
+
+msgid ":js:attr:`unloadAfterInit`"
+msgstr ":js:attr:`unloadAfterInit`"
+
+msgid "HTMLCanvasElement"
+msgstr "HTML캔버스요소"
+
+msgid ":js:attr:`canvas`"
+msgstr ":js:attr:`canvas`"
+
 msgid "string"
 msgstr "문자열"
 
+msgid ":js:attr:`executable`"
+msgstr ":js:attr:`executable`"
+
+msgid ":js:attr:`mainPack`"
+msgstr ":js:attr:`mainPack`"
+
+msgid ":js:attr:`locale`"
+msgstr ":js:attr:`locale`"
+
+msgid "number"
+msgstr "멤버"
+
+msgid ":js:attr:`canvasResizePolicy`"
+msgstr ":js:attr:`canvasResizePolicy`"
+
+msgid "Array.<string>"
+msgstr "문자열"
+
+msgid ":js:attr:`args`"
+msgstr ":js:attr:`args`"
+
 msgid "function"
 msgstr "함수"
+
+msgid ":js:attr:`onExecute`"
+msgstr ":js:attr:`onExecute`"
+
+msgid ":js:attr:`onExit`"
+msgstr ":js:attr:`onExit`"
+
+msgid ":js:attr:`onProgress`"
+msgstr ":js:attr:`onProgress`"
+
+msgid ":js:attr:`onPrint`"
+msgstr ":js:attr:`onPrint`"
+
+msgid ":js:attr:`onPrintError`"
+msgstr ":js:attr:`onPrintError`"
+
+msgid ""
+"The Engine configuration object. This is just a typedef, create it like a "
+"regular object, e.g.:"
+msgstr ""
+"엔진 구성 개체입니다. 이것은 단지 typedef이므로 일반 객체처럼 생성합니다. 예:"
+
+msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
+msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
+
+msgid "**Property Descriptions**"
+msgstr "**설명**"
+
+msgid ""
+"Whether the unload the engine automatically after the instance is "
+"initialized."
+msgstr "인스턴스 초기화 후 엔진을 자동으로 언로드할지 여부입니다."
+
+msgid "value"
+msgstr "값"
+
+msgid "``true``"
+msgstr "'값'"
+
+msgid "The HTML DOM Canvas object to use."
+msgstr "사용할 HTML DOM Canvas 개체입니다."
+
+msgid ""
+"By default, the first canvas element in the document will be used is none is "
+"specified."
+msgstr ""
+"기본적으로 문서의 첫 번째 캔버스 요소가 사용되며 아무것도 지정되지 않습니다."
+
+msgid "``null``"
+msgstr "null"
+
+msgid ""
+"The name of the WASM file without the extension. (Set by Godot Editor export "
+"process)."
+msgstr ""
+"확장자가 없는 WASM 파일의 이름입니다. (Godot 편집기 내보내기 프로세스에 의해 "
+"설정됨)."
+
+msgid "``\"\"``"
+msgstr "``\"\"``"
+
+msgid ""
+"An alternative name for the game pck to load. The executable name is used "
+"otherwise."
+msgstr ""
+"로드할 게임 팩의 대체 이름입니다. 그렇지 않으면 실행 파일 이름이 사용됩니다."
+
+msgid "Specify a language code to select the proper localization for the game."
+msgstr "게임에 적합한 현지화를 선택하려면 언어 코드를 지정하세요."
+
+msgid ""
+"The browser locale will be used if none is specified. See complete list "
+"of :ref:`supported locales <doc_locales>`."
+msgstr ""
+"아무것도 지정하지 않으면 브라우저 로캘이 사용됩니다. :ref:`지원 로캘 "
+"<doc_locales>`의 전체 목록을 참조하세요."
+
+msgid ""
+"The canvas resize policy determines how the canvas should be resized by "
+"Godot."
+msgstr ""
+"캔버스 크기 조정 정책은 Godot가 캔버스 크기를 조정하는 방법을 결정합니다."
+
+msgid ""
+"``0`` means Godot won't do any resizing. This is useful if you want to "
+"control the canvas size from javascript code in your template."
+msgstr ""
+"``0``는 Godot가 크기 조정을 하지 않는다는 뜻입니다. 이는 템플릿의 자바스크립"
+"트 코드에서 캔버스 크기를 제어하려는 경우에 유용합니다."
+
+msgid ""
+"``1`` means Godot will resize the canvas on start, and when changing window "
+"size via engine functions."
+msgstr ""
+"``1``는 Godot가 시작 시 캔버스 크기를 조정하고 엔진 기능을 통해 창 크기를 변"
+"경할 때를 의미합니다."
+
+msgid ""
+"``2`` means Godot will adapt the canvas size to match the whole browser "
+"window."
+msgstr ""
+"``2``는 Godot가 전체 브라우저 창에 맞게 캔버스 크기를 조정한다는 것을 의미합"
+"니다."
+
+msgid "``2``"
+msgstr "``2``"
+
+msgid "The arguments to be passed as command line arguments on startup."
+msgstr "명령줄 인수."
+
+msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
+msgstr ":ref:`명령줄 튜토리얼 <doc_command_line_tutorial>`을 참조하세요."
+
+msgid ""
+"**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
+"the ``--main-pack`` argument."
+msgstr ""
+"**참고**: :js:meth:`startGame <Engine.prototype.startGame>`는 항상 ``--main-"
+"pack`` 인수를 추가합니다."
+
+msgid "``[]``"
+msgstr "``int[]``"
+
+msgid "A callback function for handling Godot's ``OS.execute`` calls."
+msgstr "Godot의 ``OS.execute`` 호출을 처리하기 위한 콜백 함수입니다."
+
+msgid ""
+"This is for example used in the Web Editor template to switch between "
+"Project Manager and editor, and for running the game."
+msgstr ""
+"예를 들어 웹 편집기 템플릿에서 프로젝트 관리자와 편집기 사이를 전환하고 게임"
+"을 실행하는 데 사용됩니다."
+
+msgid "The path that Godot's wants executed."
+msgstr "Godot가 원하는 길은 실행되었습니다."
+
+msgid "The arguments of the \"command\" to execute."
+msgstr "실행할 \"명령\"의 인수입니다."
+
+msgid "A callback function for being notified when the Godot instance quits."
+msgstr "Godot 인스턴스가 종료될 때 알림을 받기 위한 콜백 함수입니다."
+
+msgid ""
+"**Note**: This function will not be called if the engine crashes or become "
+"unresponsive."
+msgstr ""
+"**참고**: 엔진이 충돌하거나 응답하지 않는 경우 이 함수는 호출되지 않습니다."
+
+msgid "The status code returned by Godot on exit."
+msgstr "종료 시 Godot가 반환한 상태 코드입니다."
+
+msgid "A callback function for displaying download progress."
+msgstr "다운로드 진행 상황을 표시하기 위한 콜백 함수입니다."
+
+msgid ""
+"The function is called once per frame while downloading files, so the usage "
+"of ``requestAnimationFrame()`` is not necessary."
+msgstr ""
+"파일을 다운로드하는 동안 프레임당 한 번씩 함수가 호출되므로 "
+"``requestAnimationFrame()``를 사용할 필요가 없습니다."
+
+msgid ""
+"If the callback function receives a total amount of bytes as 0, this means "
+"that it is impossible to calculate. Possible reasons include:"
+msgstr ""
+"콜백 함수가 전체 바이트 양을 0으로 수신하면 계산이 불가능하다는 의미입니다. "
+"가능한 이유는 다음과 같습니다:"
+
+msgid "Files are delivered with server-side chunked compression"
+msgstr "파일은 서버측 청크 압축으로 전달됩니다."
+
+msgid "Files are delivered with server-side compression on Chromium"
+msgstr "파일은 Chromium에서 서버 측 압축으로 제공됩니다."
+
+msgid ""
+"Not all file downloads have started yet (usually on servers without multi-"
+"threading)"
+msgstr ""
+"아직 모든 파일 다운로드가 시작되지 않았습니다(일반적으로 멀티스레딩이 없는 서"
+"버에서)."
+
+msgid "The current amount of downloaded bytes so far."
+msgstr "현재까지 다운로드된 바이트의 양입니다."
+
+msgid "The total amount of bytes to be downloaded."
+msgstr "다운로드할 총 바이트 양입니다."
+
+msgid ""
+"A callback function for handling the standard output stream. This method "
+"should usually only be used in debug pages."
+msgstr ""
+"표준 출력 스트림을 처리하기 위한 콜백 함수입니다. 이 방법은 일반적으로 디버"
+"그 페이지에서만 사용해야 합니다."
+
+msgid "By default, ``console.log()`` is used."
+msgstr "기본적으로 ``console.log()``가 사용됩니다."
+
+msgid "A variadic number of arguments to be printed."
+msgstr "인쇄할 가변 개수의 인수입니다."
+
+msgid ""
+"A callback function for handling the standard error stream. This method "
+"should usually only be used in debug pages."
+msgstr ""
+"표준 오류 스트림을 처리하기 위한 콜백 함수입니다. 이 방법은 일반적으로 디버"
+"그 페이지에서만 사용해야 합니다."
+
+msgid "By default, ``console.error()`` is used."
+msgstr "기본적으로 ``console.error()``가 사용됩니다."
+
+msgid "A variadic number of arguments to be printed as errors."
+msgstr "오류로 인쇄될 가변 개수의 인수입니다."

@@ -93,11 +93,42 @@ msgstr "``mode``:"
 msgid "``sync``:"
 msgstr "``sync``:"
 
+msgid "``\"call_remote\"``: The function will not be called on the local peer."
+msgstr "``\"call_remote\"``: la funzione non verrà chiamata sul peer locale."
+
+msgid ""
+"``\"call_local\"``: The function can be called on the local peer. Useful "
+"when the server is also a player."
+msgstr ""
+"``\"call_local\"``: la funzione può essere chiamata sul peer locale. Utile "
+"quando anche il server è un giocatore."
+
 msgid "``transfer_mode``:"
 msgstr "``transfer_mode``:"
+
+msgid "``transfer_channel`` is the channel index."
+msgstr "``transfer_channel`` è l'indice di canale."
+
+msgid ""
+"The first 3 can be passed in any order, but ``transfer_channel`` must always "
+"be last."
+msgstr ""
+"È possibile passare i primi 3 parametri in qualsiasi ordine, ma "
+"``transfer_channel`` deve essere sempre l'ultimo."
+
+msgid ""
+"The function ``multiplayer.get_remote_sender_id()`` can be used to get the "
+"unique id of an rpc sender, when used within the function called by rpc."
+msgstr ""
+"La funzione ``multiplayer.get_remote_sender_id()`` serve per ottenere l'ID "
+"univoco di un mittente RPC, quando si utilizza all'interno della funzione "
+"chiamata da RPC."
 
 msgid "Channels"
 msgstr "Canali"
 
 msgid "Example lobby implementation"
 msgstr "Esempio di implementazione di una lobby"
+
+msgid "Exporting for dedicated servers"
+msgstr "Esportare per i server dedicati"

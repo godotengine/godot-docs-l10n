@@ -116,6 +116,19 @@ msgstr ""
 "Perciò aggiornare a nuove versioni patch è considerato sicuro e altamente "
 "consigliato a tutti gli utenti di un ramo stabile."
 
+msgid ""
+"We call ``major.minor`` combinations *stable branches*. Each stable branch "
+"starts with a ``major.minor`` release (without the ``0`` for ``patch``) and "
+"is further developed for maintenance releases in a Git branch of the same "
+"name (for example patch updates for the 4.0 stable branch are developed in "
+"the ``4.0`` Git branch)."
+msgstr ""
+"Chiamiamo ``major.minor`` combinazioni di *rami stabili*. Ogni ramo stabile "
+"inizia con un rilascio ``major.minor`` (senza lo ``0`` per ``patch``) ed è "
+"poi sviluppato per rilasci di mantenimento in un ramo Git con lo stesso nome "
+"(per esempio, aggiornamenti patch per il ramo stabile 4.0 sono sviluppati "
+"nel ramo Git ``4.0``)."
+
 msgid "Release support timeline"
 msgstr "Tempistiche di supporto della versione"
 
@@ -152,6 +165,12 @@ msgstr "**Data di rilascio**"
 msgid "**Support level**"
 msgstr "**Livello di supporto**"
 
+msgid "Godot 4.7 (`master`)"
+msgstr "Godot 4.7 (`master`)"
+
+msgid "Q2/Q3 2026 (estimate)"
+msgstr "Q2/Q3 2026 (stima)"
+
 msgid ""
 "|unstable| *Development.* Receives new features, usability and performance "
 "improvements, as well as bug fixes, while under development."
@@ -163,6 +182,12 @@ msgstr ""
 msgid "unstable"
 msgstr "instabile"
 
+msgid "Godot 4.6"
+msgstr "Godot 4.6"
+
+msgid "January 2026"
+msgstr "Gennaio 2026"
+
 msgid ""
 "|supported| Receives fixes for bugs and security issues, as well as patches "
 "that enable platform support."
@@ -173,11 +198,11 @@ msgstr ""
 msgid "supported"
 msgstr "supportato"
 
-msgid "Godot 4.4"
-msgstr "Godot 4.4"
+msgid "Godot 4.5"
+msgstr "Godot 4.5"
 
-msgid "March 2025"
-msgstr "Marzo 2025"
+msgid "September 2025"
+msgstr "Settembre 2025"
 
 msgid "|partial| Receives fixes for security and platform support issues only."
 msgstr ""
@@ -187,20 +212,32 @@ msgstr ""
 msgid "partial"
 msgstr "parziale"
 
+msgid "Godot 4.4"
+msgstr "Godot 4.4"
+
+msgid "March 2025"
+msgstr "Marzo 2025"
+
+msgid "eol"
+msgstr "eol"
+
 msgid "Godot 4.3"
 msgstr "Godot 4.3"
 
 msgid "August 2024"
 msgstr "Agosto 2024"
 
-msgid "eol"
-msgstr "eol"
+msgid "|eol| No longer supported (last update: 4.3)."
+msgstr "|eol| Non più supportata (ultimo aggiornamento: 4.3)."
 
 msgid "Godot 4.2"
 msgstr "Godot 4.2"
 
 msgid "November 2023"
 msgstr "Novembre 2023"
+
+msgid "|eol| No longer supported (last update: 4.2.2)."
+msgstr "|eol| Non più supportata (ultimo aggiornamento: 4.2.2)."
 
 msgid "Godot 4.1"
 msgstr "Godot 4.1"
@@ -244,6 +281,9 @@ msgstr "Godot 3.5"
 
 msgid "August 2022"
 msgstr "Agosto 2022"
+
+msgid "|eol| No longer supported (last update: 3.5.3)."
+msgstr "|eol| Non più supportata (ultimo aggiornamento: 3.5.3)."
 
 msgid "Godot 3.4"
 msgstr "Godot 3.4"

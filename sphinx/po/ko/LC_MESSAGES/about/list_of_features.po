@@ -1104,11 +1104,22 @@ msgstr "노드가 Path3D 경로를 따라가도록 하는 PathFollow3D 노드."
 msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
 msgstr ":ref:`3D 기하 도우미 클래스 <class_Geometry3D>`."
 
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file, both from the "
+"editor and at runtime from an exported project."
+msgstr "편집기에서 현재 씬을 glTF 2.0 파일로 내보내기에 대해 지원합니다."
+
 msgid "3D physics"
 msgstr "3D 물리"
 
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr "차체 (시뮬레이션이 아닌 오락용 물리를 위한 물체)."
+
+msgid ":ref:`Soft bodies <doc_soft_body>`."
+msgstr ":ref:`doc_soft_body`"
+
+msgid ":ref:`Ragdolls <doc_ragdoll_system>`."
+msgstr ":ref:`doc_ragdoll_system`"
 
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
@@ -1140,6 +1151,9 @@ msgstr ""
 
 msgid "Visual shader editor."
 msgstr "비주얼 셰이더 편집기."
+
+msgid "Support for :ref:`visual shader plugins <doc_visual_shader_plugins>`."
+msgstr ":ref:`사용자 지정 가져오기 플러그인 <doc_import_plugins>` 지원."
 
 msgid "Scripting"
 msgstr "스크립팅"
@@ -1308,6 +1322,13 @@ msgstr ":ref:`절차적 오디오 생성 <class_AudioStreamGenerator>`\\ 을 위
 
 msgid "Audio input to record microphones."
 msgstr "마이크를 녹음할 수 있는 오디오 입력."
+
+msgid ""
+":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
+"engines."
+msgstr ""
+":ref:`텍스트를 음성으로 변환 <doc_text_to_speech>` 플랫폼에서 제공하는 TTS 엔"
+"진을 사용합니다."
 
 msgid "MIDI input."
 msgstr "MIDI 입력."
@@ -1529,6 +1550,18 @@ msgstr "국제화"
 msgid "Full support for Unicode including emoji."
 msgstr "이모지를 포함한 유니코드를 전체 지원합니다."
 
+msgid "Support for loading system fonts on Windows, macOS, and Linux."
+msgstr "Windows, macOS 및 Linux에서 시스템 글꼴 로드를 지원합니다."
+
+msgid ""
+"By default, system fonts are used as a fallback to display unsupported "
+"characters. This allows proper display of multilingual text without having "
+"to bundle large font files with a project."
+msgstr ""
+"기본적으로 시스템 글꼴은 지원되지 않는 문자를 표시하기 위한 대체 수단으로 사"
+"용됩니다. 이를 통해 큰 글꼴 파일을 프로젝트와 함께 묶지 않고도 다국어 텍스트"
+"를 적절하게 표시할 수 있습니다."
+
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
@@ -1545,6 +1578,9 @@ msgid ""
 msgstr ""
 "GUI 요소에서 자동으로 또는 ``tr()`` 함수를 사용하여 프로젝트에서 현지화된 문"
 "자열을 사용합니다."
+
+msgid "Support for pluralization and translation contexts."
+msgstr "gettext 번역을 사용할 때 복수형 처리와 번역 문맥을 지원합니다."
 
 msgid ""
 "Support for :ref:`bidirectional typesetting "
@@ -1574,6 +1610,13 @@ msgid "Change the window title and icon."
 msgstr "창 제목 및 아이콘 변경."
 
 msgid ""
+"Create transparent windows to use as overlays, with polygon-based mouse "
+"passthrough support."
+msgstr ""
+"만들기 투명 창을 사용하여 오버레이로 사용할 수 있으며 다각형 기반 마우스 패스"
+"스루를 지원합니다."
+
+msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr "주의 요청 (대부분의 플랫폼의 제목표시줄에 깜빡임 발생)."
 
@@ -1590,7 +1633,29 @@ msgstr ""
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "테두리 없는 창 (전체 화면 또는 비 전체 화면)."
 
+msgid "Keep a window always on top."
+msgstr "창을 항상 위에 두는 기능."
+
+msgid "Make a window ignore focus (useful for overlays)."
+msgstr "창이 포커스를 무시하도록 만듭니다(오버레이에 유용함)."
+
+msgid ""
+"Declare a window as a popup (hidden from task switcher) or exclusive "
+"(prevents interacting with other windows from the same process)."
+msgstr ""
+"창을 팝업(작업 전환기에서 숨김) 또는 독점(동일 프로세스의 다른 창과 상호 작용"
+"하는 것을 방지)으로 선언합니다."
+
+msgid "Native file dialog support on Windows, macOS, Linux, and Android."
+msgstr "Windows, macOS, Linux 및 Android에서 기본 파일 대화 상자를 지원합니다."
+
+msgid "Tray icon support on Windows and macOS."
+msgstr "ETC2 (macOS에서는 지원하지 않음)."
+
 msgid "Global menu integration on macOS."
+msgstr "macOS에서 전역 메뉴 통합."
+
+msgid "Client-side decorations on macOS."
 msgstr "macOS에서 전역 메뉴 통합."
 
 msgid ""
@@ -1610,6 +1675,9 @@ msgstr ""
 msgid "Parse custom command line arguments."
 msgstr "사용자 지정 명령줄 인수를 파싱합니다."
 
+msgid "Support for screen readers on Windows, macOS, and Linux."
+msgstr "Windows, macOS 및 Linux에서 화면 판독기를 지원합니다."
+
 msgid ""
 "Any Godot binary (editor or exported project) can be :ref:`used as a "
 "headless server <doc_exporting_for_dedicated_servers>` by starting it with "
@@ -1620,6 +1688,12 @@ msgstr ""
 "를 사용하여 :ref:`헤드리스 서버로 사용 "
 "<doc_exporting_for_dedicated_servers>`\\ 할 수 있습니다. 이를 통해 GPU나 디스"
 "플레이 서버 없이 엔진을 실행할 수 있도록 합니다."
+
+msgid ""
+"See :ref:`doc_creating_applications` for details on using these features."
+msgstr ""
+"이러한 기능 사용에 대한 자세한 내용은 :ref:`doc_creating_applications`를 참조"
+"하세요."
 
 msgid "Mobile"
 msgstr "모바일"
@@ -1641,6 +1715,12 @@ msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
 msgstr "기본 제공 :ref:`OpenXR 지원 <doc_setting_up_xr>`."
 
 msgid ""
+"Including support for popular desktop headsets like the Valve Index, WMR "
+"headsets, and Quest over Link."
+msgstr ""
+"Meta Quest나 Valve Index와 같은 유명한 기기들에 대한 지원을 포함합니다."
+
+msgid ""
 "Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
 "OpenXR through a plugin."
 msgstr ""
@@ -1653,6 +1733,9 @@ msgid ""
 msgstr ""
 "메타 퀘스트 1/2/3 및 Pro, Pico 4, Magic Leap 2, Lynx R1과 같은 인기 독립형 헤"
 "드셋을 지원합니다."
+
+msgid "Out of the box limited support for visionOS Apple headsets."
+msgstr "기본 제공 :ref:`OpenXR 지원 <doc_setting_up_xr>`."
 
 msgid ""
 "Currently only exporting an application for use on a flat plane within the "
@@ -1941,6 +2024,14 @@ msgstr ""
 "엔진 바이너리와 정적으로 연결된 :ref:`C++ 모듈 <doc_custom_modules_in_cpp>` "
 "지원."
 
+msgid ""
+"Most built-in modules can be disabled at compile-time to reduce binary size "
+"in custom builds. See :ref:`doc_optimizing_for_size` for details."
+msgstr ""
+"그 밖에서 Android 내보내기 템플릿의 필요한 기능만을 활성화 해 컴파일하는 등으"
+"로 용량을 더 줄일 수 있습니다. :ref:`doc_optimizing_for_size`에서 추가 정보"
+"를 확인하세요."
+
 msgid "Engine and editor written in C++17."
 msgstr "C++17로 작성된 엔진과 편집기."
 
@@ -1963,6 +2054,13 @@ msgstr ""
 
 msgid "Licensed under the permissive MIT license."
 msgstr "라이선스는 MIT 라이선스입니다."
+
+msgid ""
+"Open development process with `contributions welcome <https://"
+"contributing.godotengine.org/en/latest/organization/"
+"how_to_contribute.html>`__."
+msgstr ""
+":ref:`contributions welcome <doc_ways_to_contribute>` 공개된 개발 프로세스."
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

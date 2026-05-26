@@ -11,5 +11,88 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0302: The generic type parameter must be annotated with the "
+"'[MustBeVariant]' attribute"
+msgstr ""
+"GD0302: 일반 유형 매개변수에는 '[MustBeVariant]' 속성으로 주석을 달아야 합니"
+"다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0302"
+msgstr "GD0302"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A generic type is specified for a generic type argument when a :ref:`Variant-"
+"compatible type <c_sharp_variant_compatible_types>` is expected, but the "
+"specified generic type is not annotated with the ``[MustBeVariant]`` "
+"attribute."
+msgstr ""
+":ref:`Variant 호환 유형 <c_sharp_variant_ Compatible_types>`이 예상되는 경우 "
+"제네릭 유형 인수에 대해 제네릭 유형이 지정되지만 지정된 제네릭 유형에 "
+"``[MustBeVariant]`` 특성으로 주석이 추가되지 않습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"When a generic type parameter is annotated with the ``[MustBeVariant]`` "
+"attribute, the generic type is required to be a Variant-compatible type. "
+"When the type used is also a generic type, this generic type must be "
+"annotated with the ``[MustBeVariant]`` attribute as well. For example, the "
+"generic ``Godot.Collections.Array<T>`` type only supports items of a type "
+"that can be converted to Variant, a generic type can be specified if it's "
+"properly annotated."
+msgstr ""
+"일반 유형 매개변수에 ``[MustBeVariant]`` 속성으로 주석이 달린 경우 일반 유형"
+"은 Variant 호환 유형이어야 합니다. 사용된 유형이 일반 유형이기도 하면 이 일"
+"반 유형에도 ``[MustBeVariant]`` 속성으로 주석을 달아야 합니다. 예를 들어 일"
+"반 ``Godot.Collections.Array<T>`` 유형은 Variant로 변환할 수 있는 유형의 항목"
+"만 지원하며, 적절하게 주석이 추가된 경우 일반 유형을 지정할 수 있습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, add the ``[MustBeVariant]`` attribute to "
+"the generic type that is used as a generic type argument that must be "
+"Variant-compatible."
+msgstr ""
+"이 규칙 위반 문제를 해결하려면 Variant와 호환되어야 하는 일반 형식 인수로 사"
+"용되는 일반 형식에 ``[MustBeVariant]`` 특성을 추가하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. API that contains generic type "
+"arguments annotated with the ``[MustBeVariant]`` attribute usually has this "
+"requirement because the values will be passed to the engine, if the type "
+"can't be marshalled it will result in runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``[MustBeVariant]`` 속성으로 주석이 달린 "
+"일반 유형 인수를 포함하는 API에는 일반적으로 값이 엔진에 전달되기 때문에 이 "
+"요구 사항이 있습니다. 유형을 마샬링할 수 없으면 런타임 오류가 발생합니다."

@@ -39,6 +39,13 @@ msgstr ""
 "ограничена, поскольку можно установить только фиксированное время перехода с "
 "плавным переходом."
 
+msgid ""
+":ref:`AnimationTree <class_AnimationTree>` is a node designed to deal with "
+"advanced transitions."
+msgstr ""
+":ref:`AnimationTree <class_AnimationTree>` это узел, разработанный для "
+"управления сложными переходами."
+
 msgid "AnimationTree and AnimationPlayer"
 msgstr "AnimationTree и AnimationPlayer"
 
@@ -449,6 +456,9 @@ msgstr ""
 msgid "``is_walking``"
 msgstr "``is_walking``"
 
+msgid "``is_walking == true`` (behaves the same as the one above)"
+msgstr "``is_walking == true`` (выполняет действие, аналогичное коду выше)"
+
 msgid "``is_walking && !is_idle``"
 msgstr "``is_walking && !is_idle``"
 
@@ -457,6 +467,20 @@ msgstr "``velocity > 0``"
 
 msgid "``player.is_on_floor()``"
 msgstr "``player.is_on_floor()``"
+
+msgid ""
+"The expression is **case-sensitive**. If you reference engine properties, "
+"such as ``velocity`` on a :ref:`class_CharacterBody3D` node, you should use "
+"``snake_case`` naming conventions. If you reference script properties, you "
+"should match the style used in the script, which is typically ``snake_case`` "
+"in GDScript and ``PascalCase`` in C#."
+msgstr ""
+"Выражение **чувствительно к регистру**. Если вы ссылаетесь на свойства "
+"движка, такие как ``velocity`` в узле :ref:`class_CharacterBody3D`, вам "
+"следует использовать соглашение об именовании ``snake_case``. Если вы "
+"ссылаетесь на свойства скрипта, вам следует придерживаться стиля, "
+"используемого в самом скрипте, который обычно является ``snake_case`` в "
+"GDScript и ``PascalCase`` в C#."
 
 msgid ""
 "Here is an example of an improperly-set-up StateMachine transition using "

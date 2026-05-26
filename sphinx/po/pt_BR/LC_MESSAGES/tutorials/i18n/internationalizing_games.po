@@ -40,11 +40,34 @@ msgstr ""
 msgid "Localizing resources"
 msgstr "Localizando recursos"
 
+msgid ""
+"It is also possible to instruct Godot to use alternate versions of assets "
+"(resources) depending on the current language. This can be used for "
+"localized images such as in-game billboards or localized voices."
+msgstr ""
+"Também é possível instruir a Godot para usar versões alternativas de assets "
+"(recursos), dependendo do idioma atual. Isso pode ser usado para imagens "
+"localizadas, como outdoors (anúncios) dentro do jogo, ou vozes localizadas."
+
 msgid "Examples:"
 msgstr "Exemplos:"
 
 msgid "Converting keys to text"
 msgstr "Convertendo chaves em texto"
+
+msgid ""
+"This automatic translation behavior may be undesirable in certain cases. For "
+"instance, when using a Label to display a player's name, you most likely "
+"don't want the player's name to be translated if it matches a translation "
+"key. To disable automatic translation on a specific node, set the :ui:`Auto "
+"Translate > Mode` to ``Disabled`` in the inspector."
+msgstr ""
+"Este comportamento de tradução automática pode ser indesejável em certos "
+"casos. Por instância, ao usar uma Etiqueta (Label) para mostrar o nome do "
+"jogador, você provavelmente não quer que o nome do jogador seja traduzido se "
+"ele se encaixa em uma chave de tradução. Para desabilitar a tradução "
+"automática em um nó específico, defina :ui:`Auto Translate > Mode` para "
+"``Desabilitado`` no inspetor."
 
 msgid ""
 "In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
@@ -54,6 +77,12 @@ msgstr ""
 "No código, a função :ref:`Object.tr() <class_Object_method_tr>` pode ser "
 "usada. Isso apenas pesquisará o texto nas traduções e o converterá se "
 "encontrado:"
+
+msgid "Placeholders"
+msgstr "Lugar reservado"
+
+msgid "Pluralization"
+msgstr "Pluralização"
 
 msgid "Making controls resizable"
 msgstr "Tornando os controles redimensionáveis"
@@ -73,6 +102,9 @@ msgstr ""
 
 msgid "TranslationServer"
 msgstr "TranslationServer"
+
+msgid "Coordinate system is **not** mirrored."
+msgstr "Sistema de Coordenadas **não** está espelhado."
 
 msgid "Testing translations"
 msgstr "Testando traduções"

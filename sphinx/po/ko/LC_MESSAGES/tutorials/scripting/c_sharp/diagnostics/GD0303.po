@@ -11,5 +11,71 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0303: The parent symbol of a type argument that must be Variant compatible "
+"was not handled"
+msgstr ""
+"GD0303: Variant와 호환되어야 하는 형식 인수의 상위 기호가 처리되지 않았습니"
+"다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0303"
+msgstr "GD0303"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Not fixable"
+msgstr "고칠 수 없음"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid "This is a bug in the engine and must be reported."
+msgstr "이는 엔진의 버그이므로 보고해야 합니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"The ``MustBeVariantAnalyzer`` has found an unhandled case in the user source "
+"code. Please, open an `issue <https://github.com/godotengine/godot/issues>`_ "
+"and attach a minimal reproduction project so it can be fixed."
+msgstr ""
+"``MustBeVariantAnalyzer``는 사용자 소스코드에서 처리되지 않은 사례를 발견했습"
+"니다. `issue <https://github.com/godotengine/godot/issues>`_을 열고 수정할 "
+"수 있도록 최소한의 재생산 프로젝트를 첨부해 주세요."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid "Violations of this rule can't be fixed."
+msgstr "이 규칙을 위반하면 수정할 수 없습니다."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Suppressing a warning from this rule may result in unexpected errors, since "
+"the case found by the analyzer may need to be handled by the user to prevent "
+"types that are not Variant-compatible from reaching the engine. Attempting "
+"to marshal incompatible types will result in runtime errors."
+msgstr ""
+"이 규칙에서 경고를 억제하면 예기치 않은 오류가 발생할 수 있습니다. 분석기에"
+"서 발견된 사례는 Variant와 호환되지 않는 유형이 엔진에 도달하지 못하도록 사용"
+"자가 처리해야 할 수 있기 때문입니다. 호환되지 않는 유형을 마샬링하려고 하면 "
+"런타임 오류가 발생합니다."

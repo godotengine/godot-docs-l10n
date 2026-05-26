@@ -61,8 +61,13 @@ msgid ""
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data."
 msgstr ""
-"根据设计，数据包总是会被填充到 4 个字节。所有的值都是小端编码的。所有数据包都"
-"有一个 4 字节的头，代表一个整数，指定数据的类型。"
+"根据设计，数据包总是会被填充到 4 字节对齐。所有的值都是小端编码的。所有数据包"
+"都有一个 4 字节的头，代表一个整数，指定数据的类型。"
+
+msgid ""
+"The lowest value two bytes are used to determine the type, while the highest "
+"value two bytes contain flags:"
+msgstr "最低两个字节用于确定类型，而最高两个字节则包含标志位："
 
 msgid "Type"
 msgstr "类型"
@@ -98,7 +103,7 @@ msgid "4"
 msgstr "4"
 
 msgid "string"
-msgstr "字符串"
+msgstr "string"
 
 msgid "5"
 msgstr "5"
@@ -259,15 +264,15 @@ msgid ""
 "always uses double precision."
 msgstr ""
 "在此之后是实际的数据包内容，每种类型的数据包内容都不同。请注意，这里假设 "
-"Godot 是用单精度浮点数编译的，这也是默认的。如果 Godot 是用双精度浮点数编译"
-"的，那么数据结构中“浮点数”字段的长度应该是 8，偏移量应该是 ``(offset - 4) * "
-"2 + 4``\\ 。浮点数“float”类型本身总是使用双精度。"
+"Godot 是用单精度浮点数编译的，也就是默认情况。如果 Godot 是用双精度浮点数编译"
+"的，那么数据结构中“float”字段的长度应该是 8，偏移量应该是 ``(offset - 4) * 2 "
+"+ 4``\\ 。浮点数“float”类型本身总是使用双精度。"
 
 msgid "0: null"
-msgstr "0: null"
+msgstr "0：null"
 
 msgid "1: :ref:`bool<class_bool>`"
-msgstr "1: :ref:`bool<class_bool>`"
+msgstr "1：\\ :ref:`bool<class_bool>`"
 
 msgid "Offset"
 msgstr "偏移量"
@@ -285,7 +290,7 @@ msgid "0 for False, 1 for True"
 msgstr "0 代表 False, 1 代表 True"
 
 msgid "2: :ref:`int<class_int>`"
-msgstr "2: :ref:`int<class_int>`"
+msgstr "2：\\ :ref:`int<class_int>`"
 
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
@@ -298,14 +303,14 @@ msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
-"如果标志 ``ENCODE_FLAG_64`` 被设置（``flags & 1 == 1``），则整数被发送为64位"
-"整数:"
+"如果设置了 ``ENCODE_FLAG_64`` 标志（\\ ``flags & 1 == 1``\\ ），整数将作为 "
+"64 位整数发送："
 
 msgid "64-bit signed integer"
 msgstr "64位有符号整数"
 
 msgid "3: :ref:`float<class_float>`"
-msgstr "3: :ref:`float<class_float>`"
+msgstr "3：\\ :ref:`float<class_float>`"
 
 msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
@@ -329,7 +334,7 @@ msgid "IEEE 754 double-precision float"
 msgstr "IEEE 754 双精度浮点数"
 
 msgid "4: :ref:`String<class_string>`"
-msgstr "4: :ref:`String<class_string>`"
+msgstr "4：\\ :ref:`String<class_string>`"
 
 msgid "String length (in bytes)"
 msgstr "字符串长度（字节数）"
@@ -344,10 +349,10 @@ msgid "UTF-8 encoded string"
 msgstr "UTF-8 编码字符串"
 
 msgid "This field is padded to 4 bytes."
-msgstr "该字段会被填充到 4 个字节。"
+msgstr "该字段会被填充到 4 字节对齐。"
 
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr "5: :ref:`Vector2<class_vector2>`"
+msgstr "5：\\ :ref:`Vector2<class_vector2>`"
 
 msgid "X coordinate"
 msgstr "X 坐标"
@@ -356,7 +361,7 @@ msgid "Y coordinate"
 msgstr "Y 坐标"
 
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr "6: :ref:`Rect2<class_rect2>`"
+msgstr "6：\\ :ref:`Rect2<class_rect2>`"
 
 msgid "X size"
 msgstr "X 尺寸"
@@ -365,49 +370,49 @@ msgid "Y size"
 msgstr "Y 尺寸"
 
 msgid "7: :ref:`Vector3<class_vector3>`"
-msgstr "7: :ref:`Vector3<class_vector3>`"
+msgstr "7：\\ :ref:`Vector3<class_vector3>`"
 
 msgid "Z coordinate"
 msgstr "Z 坐标"
 
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr "8: :ref:`Transform2D<class_transform2d>`"
+msgstr "8：\\ :ref:`Transform2D<class_transform2d>`"
 
 msgid "The X component of the X column vector, accessed via [0][0]"
-msgstr "X列向量的X分量, 可通过[0][0]访问"
+msgstr "X 列向量的 X 分量，可通过 [0][0] 访问"
 
 msgid "The Y component of the X column vector, accessed via [0][1]"
-msgstr "X列向量的Y分量, 可通过[0][1]访问"
+msgstr "X 列向量的 Y 分量，可通过 [0][1] 访问"
 
 msgid "The X component of the Y column vector, accessed via [1][0]"
-msgstr "Y列向量的X分量, 可通过[1][0]访问"
+msgstr "Y 列向量的 X 分量，可通过 [1][0] 访问"
 
 msgid "The Y component of the Y column vector, accessed via [1][1]"
-msgstr "Y列向量的Y分量, 可通过[1][1]访问"
+msgstr "Y 列向量的 Y 分量，可通过 [1][1] 访问"
 
 msgid "The X component of the origin vector, accessed via [2][0]"
-msgstr "原始向量的X分量, 可通过[2] [0]访问"
+msgstr "原点向量的 X 分量，可通过 [2][0] 访问"
 
 msgid "The Y component of the origin vector, accessed via [2][1]"
-msgstr "原始向量的Y分量, 可通过[2][1]访问"
+msgstr "原点向量的 Y 分量，可通过 [2][1] 访问"
 
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr "9: :ref:`Plane<class_plane>`"
+msgstr "9：\\ :ref:`Plane<class_plane>`"
 
 msgid "Normal X"
-msgstr "法线 X"
+msgstr "法向量 X"
 
 msgid "Normal Y"
-msgstr "法线 Y"
+msgstr "法向量 Y"
 
 msgid "Normal Z"
-msgstr "法线 Z"
+msgstr "法向量 Z"
 
 msgid "Distance"
 msgstr "距离"
 
 msgid "10: :ref:`Quaternion<class_quaternion>`"
-msgstr "10: :ref:`Quaternion<class_quaternion>`"
+msgstr "10：\\ :ref:`Quaternion<class_quaternion>`"
 
 msgid "Imaginary X"
 msgstr "虚数 X"
@@ -422,58 +427,58 @@ msgid "Real W"
 msgstr "实数 W"
 
 msgid "11: :ref:`AABB<class_aabb>`"
-msgstr "11: :ref:`AABB<class_aabb>`"
+msgstr "11：\\ :ref:`AABB<class_aabb>`"
 
 msgid "Z size"
 msgstr "Z 尺寸"
 
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr "12: :ref:`Basis<class_basis>`"
+msgstr "12：\\ :ref:`Basis<class_basis>`"
 
 msgid "The Z component of the X column vector, accessed via [0][2]"
-msgstr "X列向量的Z分量, 可通过[0][2]访问"
+msgstr "X 列向量的 Z 分量, 可通过[0][2]访问"
 
 msgid "The Z component of the Y column vector, accessed via [1][2]"
-msgstr "Y列向量的Z分量, 可通过[1][2]访问"
+msgstr "Y 列向量的 Z 分量，可通过 [1][2] 访问"
 
 msgid "The X component of the Z column vector, accessed via [2][0]"
-msgstr "Z列向量的X分量, 可通过[2][0]访问"
+msgstr "Z 列向量的 X 分量，可通过 [2][0] 访问"
 
 msgid "32"
 msgstr "32"
 
 msgid "The Y component of the Z column vector, accessed via [2][1]"
-msgstr "Z列向量的Y分量, 可通过[2][1]访问"
+msgstr "Z 列向量的 Y 分量，可通过 [2][1] 访问"
 
 msgid "36"
 msgstr "36"
 
 msgid "The Z component of the Z column vector, accessed via [2][2]"
-msgstr "Z列向量的Z分量, 可通过[2][2]访问"
+msgstr "Z 列向量的 Z 分量，可通过 [2][2] 访问"
 
 msgid "13: :ref:`Transform3D<class_transform3d>`"
-msgstr "13: :ref:`Transform3D<class_transform3d>`"
+msgstr "13：\\ :ref:`Transform3D<class_transform3d>`"
 
 msgid "40"
 msgstr "40"
 
 msgid "The X component of the origin vector, accessed via [3][0]"
-msgstr "原始向量的X分量, 可通过[3][0]访问"
+msgstr "原点向量的 X 分量，可通过 [3][0] 访问"
 
 msgid "44"
 msgstr "44"
 
 msgid "The Y component of the origin vector, accessed via [3][1]"
-msgstr "原点向量的Y分量, 可通过[3][1]访问"
+msgstr "原点向量的 Y 分量，可通过 [3][1] 访问"
 
 msgid "48"
 msgstr "48"
 
 msgid "The Z component of the origin vector, accessed via [3][2]"
-msgstr "原点向量的Z分量, 可通过[3][2]访问"
+msgstr "原点向量的 Z 分量，可通过 [3][2] 访问"
 
 msgid "14: :ref:`Color<class_color>`"
-msgstr "14: :ref:`Color<class_color>`"
+msgstr "14：\\ :ref:`Color<class_color>`"
 
 msgid "Red (typically 0..1, can be above 1 for overbright colors)"
 msgstr "红色（一般为 0...1，对于过亮的颜色可大于 1）"
@@ -485,29 +490,29 @@ msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
 msgstr "蓝色（一般为 0...1，对于过亮的颜色可大于 1）"
 
 msgid "Alpha (0..1)"
-msgstr "Alpha（0..1）"
+msgstr "Alpha（0...1）"
 
 msgid "15: :ref:`NodePath<class_nodepath>`"
-msgstr "15: :ref:`NodePath<class_nodepath>`"
+msgstr "15：\\ :ref:`NodePath<class_nodepath>`"
 
 msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
-msgstr "字符串长度, 或新格式(val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
+msgstr "字符串长度，或新格式（val&0x80000000!=0 且 NameCount=val&0x7FFFFFFF）"
 
 msgid "For old format:"
-msgstr "对于旧格式:"
+msgstr "对于旧格式："
 
 msgid "Padded to 4 bytes."
-msgstr "填充到4个字节."
+msgstr "填充到 4 字节对齐。"
 
 msgid "For new format:"
-msgstr "对于新格式:"
+msgstr "对于新格式："
 
 msgid "Sub-name count"
 msgstr "子名称数"
 
 msgid "Flags (absolute: val&1 != 0 )"
-msgstr "标志 (absolute: val&1 != 0 )"
+msgstr "标志（绝对路径：val&1 != 0）"
 
 msgid "For each Name and Sub-Name"
 msgstr "对于每个名称和子名称"
@@ -522,20 +527,20 @@ msgid "X+4"
 msgstr "X+4"
 
 msgid "Every name string is padded to 4 bytes."
-msgstr "每个名称字符串都会填充到4个字节."
+msgstr "每个名称字符串都会填充到 4 字节对齐。"
 
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
-msgstr "16: :ref:`RID<class_rid>`\\ （不支持）"
+msgstr "16：\\ :ref:`RID<class_rid>`\\ （不支持）"
 
 msgid "17: :ref:`Object<class_object>`"
-msgstr ":ref:`Object <class_object>`"
+msgstr "17：\\ :ref:`Object<class_object>`"
 
 msgid ""
 "An Object could be serialized in three different ways: as a null value, with "
 "``full_objects = false``, or with ``full_objects = true``."
 msgstr ""
-"Object 有三种不同的序列化方式：作为空值、使用 ``full_objects = false``\\ 、使"
-"用 ``full_objects = true``\\ 。"
+"Object 有三种不同的序列化方式：作为 null、使用 ``full_objects = false``\\ 、"
+"使用 ``full_objects = true``\\ 。"
 
 msgid "A null value"
 msgstr "空值"
@@ -592,7 +597,7 @@ msgid "<variable>"
 msgstr "<可变>"
 
 msgid "Property value, using this same format"
-msgstr "属性值，格式相同"
+msgstr "属性值，使用该相同格式"
 
 msgid ""
 "Not all properties are included. Only properties that are configured with "
@@ -605,25 +610,24 @@ msgid ""
 "See :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the "
 "possible usage flags."
 msgstr ""
-"并非所有属性都包含在内。仅使"
-"用 :ref:`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
-"标志集将被序列化。通过重写类中"
-"的 :ref:`_get_property_list<class_Object_private_method__get_property_list>` "
-"方法，可以向属性添加新的用法标志。你还可以通过调用"
-"``Object._get_property_list``详情参"
-"见 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` 以获取可能"
-"的使用位标记。"
+"并非所有属性都包含在内。仅设置了 :ref:`PROPERTY_USAGE_STORAGE "
+"<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 标志的属性才会被序列"
+"化。你可以通过重写类中的 :ref:`_get_property_list "
+"<class_Object_private_method__get_property_list>` 方法，向属性添加新的用法标"
+"志。你还可以通过调用 ``Object._get_property_list`` 检查属性的用法配置。详情参"
+"见 :ref:`PropertyUsageFlags <enum_@GlobalScope_PropertyUsageFlags>` 以获取可"
+"能的使用位标记。"
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
 msgstr "18：\\ :ref:`Dictionary<class_dictionary>`"
 
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
-msgstr "val&0x7FFFFFFF = 元素，val&0x80000000 = 共享（bool）"
+msgstr "val&0x7FFFFFFF = 元素数量，val&0x80000000 = 共享（bool）"
 
 msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
-msgstr "然后，后续就有“元素”数量个连续的键值对，使用的也是这种相同的格式。"
+msgstr "后续有“元素数量”个连续的键值对，使用的是该相同格式。"
 
 msgid "19: :ref:`Array<class_array>`"
 msgstr "19：\\ :ref:`Array<class_array>`"
@@ -631,7 +635,7 @@ msgstr "19：\\ :ref:`Array<class_array>`"
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
-msgstr "然后，后续就有“元素”数量个连续的值，使用的也是这种相同的格式。"
+msgstr "后续有“元素数量”个连续的值，使用的是该相同格式。"
 
 msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
 msgstr "20：\\ :ref:`PackedByteArray<class_PackedByteArray>`"
@@ -646,10 +650,10 @@ msgid "Byte"
 msgstr "Byte"
 
 msgid "Byte (0..255)"
-msgstr "字节 (0..255)"
+msgstr "字节（0..255）"
 
 msgid "The array data is padded to 4 bytes."
-msgstr "数组数据填充为4个字节."
+msgstr "数组数据填充为 4 字节对齐。"
 
 msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
 msgstr "21：\\ :ref:`PackedInt32Array<class_PackedInt32Array>`"
@@ -688,13 +692,13 @@ msgid "Array length (Strings)"
 msgstr "数组长度（字符串）"
 
 msgid "For each String:"
-msgstr "对于每个字符串:"
+msgstr "对于每个字符串："
 
 msgid "Every string is padded to 4 bytes."
-msgstr "每个字符串填充为4个字节."
+msgstr "每个字符串填充为 4 字节对齐。"
 
 msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
-msgstr "24：\\ :ref:`PackedVector2Array<class_PackedVector2Array>`"
+msgstr "26：\\ :ref:`PackedVector2Array<class_PackedVector2Array>`"
 
 msgid "Array length"
 msgstr "数组长度"

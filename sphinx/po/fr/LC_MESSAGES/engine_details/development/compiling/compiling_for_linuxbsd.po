@@ -32,6 +32,9 @@ msgstr ""
 msgid "GCC 9+ or Clang 6+."
 msgstr "GCC 9+ ou Clang 6+."
 
+msgid "`Python 3.8+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.8+ <https://www.python.org/downloads/>`_."
+
 msgid "Development libraries:"
 msgstr "Bibliothèques de développement :"
 
@@ -205,16 +208,6 @@ msgid ""
 msgstr ""
 "Une fois la compilation terminée, un nouveau binaire avec un suffixe "
 "``.llvm`` sera créé dans le dossier ``bin/``."
-
-msgid ""
-"It's still recommended to use GCC for production builds as they can be "
-"compiled using link-time optimization, making the resulting binaries smaller "
-"and faster."
-msgstr ""
-"Il est toujours recommandé d'utiliser GCC pour les constructions builds de "
-"production car ils peuvent être compilés en utilisant l'optimisation du "
-"temps de liaison, ce qui rend les binaires résultants plus petits et plus "
-"rapides."
 
 msgid "There are two solutions:"
 msgstr "Il y a deux façon de faire cela :"

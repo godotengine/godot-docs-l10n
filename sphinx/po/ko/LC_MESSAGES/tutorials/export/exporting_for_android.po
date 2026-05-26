@@ -31,8 +31,30 @@ msgstr ""
 "Android로 내보내기는 Android로 Godot를 컴파일하는 것보다 덜 요구합니다. 다음 "
 "단계는 Android SDK와 엔진 설정에 필요한 사항을 자세히 설명합니다."
 
+msgid ""
+"Projects written in C# can be exported to Android as of Godot 4.2, but "
+"support is experimental and :ref:`some limitations apply "
+"<doc_c_sharp_platforms>`."
+msgstr ""
+"C#으로 작성된 프로젝트는 Godot 4.2부터 Android로 내보낼 수 있지만 지원은 실험"
+"적이며 :ref:`몇 가지 제한 사항이 적용 <doc_c_sharp_platforms>`입니다."
+
 msgid "Install OpenJDK 17"
 msgstr "OpenJDK 17 설치"
+
+msgid ""
+"Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?"
+"variant=openjdk17&version=17&os=any&arch=any>`__."
+msgstr ""
+"`OpenJDK 17 <https://adoptium.net/temurin/releases/?variant=openjdk17>`__\\ "
+"을 다운로드하고 설치합니다."
+
+msgid ""
+"Higher versions of the JDK are also supported, but we recommend using JDK 17 "
+"for optimal compatibility and stability."
+msgstr ""
+"더 높은 버전의 JDK도 지원되지만 최적의 호환성과 안정성을 위해 JDK 17을 사용하"
+"는 것이 좋습니다."
 
 msgid "Download the Android SDK"
 msgstr "Android SDK 다운로드"
@@ -61,6 +83,15 @@ msgstr ""
 "`필수 패키지 <https://developer.android.com/studio/intro/"
 "update#required>`__\\ 도 설치되어 있는지 확인하세요."
 
+msgid "Android SDK Platform-Tools version 35.0.0 or later"
+msgstr "Android SDK Platform-Tools 버전 34.0.0 이후"
+
+msgid "Android SDK Build-Tools version 35.0.1"
+msgstr "Android SDK Build-Tools 버전 34.0.0"
+
+msgid "Android SDK Platform 35"
+msgstr "Android SDK Platform 34"
+
 msgid "Android SDK Command-line Tools (latest)"
 msgstr "Android SDK Command-line Tools (최신)"
 
@@ -73,6 +104,9 @@ msgstr ""
 
 msgid "CMake version 3.10.2.4988404"
 msgstr "CMake 버전 3.10.2.4988404"
+
+msgid "NDK version r28b (28.1.13356709)"
+msgstr "NDK 버전 r23c (23.2.8568313)"
 
 msgid ""
 "Alternatively, you can install the Android SDK with the `sdkmanager` command "
@@ -122,15 +156,6 @@ msgid ""
 "``Java SDK Path`` should be the location where OpenJDK 17 was installed."
 msgstr "``Java SDK 경로``\\ 는 OpenJDK 17이 설치된 위치여야 합니다."
 
-msgid ""
-"``Android Sdk Path`` should be the location where the Android SDK was "
-"installed. - For example ``%LOCALAPPDATA%\\Android\\Sdk\\`` on Windows or ``/"
-"Users/$USER/Library/Android/sdk/`` on macOS."
-msgstr ""
-"``Android Sdk 경로``\\ 는 Android SDK가 설치된 위치여야 합니다. - 예를 들어 "
-"Windows에서는 ``%LOCALAPPDATA%\\Android\\Sdk\\`` 또는 macOS에서는 ``/Users/"
-"$USER/Library/Android/sdk/``."
-
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "일단 구성되면 Android에 내보낼 모든 준비가 끝납니다!"
 
@@ -155,6 +180,16 @@ msgstr ""
 
 msgid "Providing launcher icons"
 msgstr "런처 아이콘 제공하기"
+
+msgid ""
+"Launcher icons are used by Android launcher apps to represent your "
+"application to users. Godot only requires high-resolution icons (for "
+"``xxxhdpi`` density screens) and will automatically generate lower-"
+"resolution variants."
+msgstr ""
+"런처 아이콘은 Android 앱에서 사용자에게 애플리케이션을 나타내는 데 사용됩니"
+"다. Godot는 고해상도 아이콘(``xxxhdpi``)만 필요하며 저해상도는 자동으로 생성"
+"합니다."
 
 msgid "There are three types of icons:"
 msgstr "아이콘에는 세 가지 유형이 있습니다:"
@@ -300,12 +335,44 @@ msgid "Optimizing the file size"
 msgstr "파일 크기 최적화하기"
 
 msgid ""
+"If you're working with APKs and not AABs, by default, the APK will contain "
+"native libraries for both ARMv7 and ARMv8 architectures. This increases its "
+"size significantly. To create a smaller file, uncheck either **Armeabi-v "
+"7a** or **Arm 64 -v 8a** in your project's Android export preset. This will "
+"create an APK that only contains a library for a single architecture. Note "
+"that applications targeting ARMv7 can also run on ARMv8 devices, but the "
+"opposite is not true. The reason you don't do this to save space with AABs "
+"is that Google automatically splits up the AAB on their backend, so the user "
+"only downloads what they need."
+msgstr ""
+"APK가 기본값처럼 ARMv7과 ARMv8 아키텍처의 네이티브 라이브러리 모두를 포함하"
+"고 있으면 용량이 상당히 많이 늘어나게 됩니다. 프로젝트의 Android 프리셋에서 "
+"**Armeabi-v 7a** 또는 **Arm 64 -v 8a** 에 체크를 해제해 한 아키텍처의 라이브"
+"러리만 포함하게 하면 APK 용량을 줄일 수 있습니다. ARMv7 애플리케이션은 ARMv8"
+"에서도 실행이 가능하지만 그 반대는 불가능 하다는 사실을 유념하세요."
+
+msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
 "information."
 msgstr ""
 "필요한 기능만으로 Android 내보내기 템플릿을 컴파일하면 크기를 더욱 최적화할 "
 "수 있습니다. 자세한 정보는 :ref:`doc_optimizing_for_size`\\ 를 참조하세요."
+
+msgid "Environment variables"
+msgstr "환경변수"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+"다음 환경 변수를 사용하여 편집기 외부에서 내보내기 옵션을 설정할 수 있습니"
+"다. 내보내기 프로세스 중에 이는 내보내기 메뉴에서 설정한 값보다 우선 적용됩니"
+"다."
+
+msgid "Android export environment variables"
+msgstr "Android (시험용)"
 
 msgid "Export option"
 msgstr "내보내기 옵션"
@@ -319,5 +386,48 @@ msgstr "암호화 / 암호화 키"
 msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 
+msgid "Options / Keystore / Debug"
+msgstr "옵션 / 키스토어 / 디버그"
+
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
+msgstr "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
+
+msgid "Options / Keystore / Debug User"
+msgstr "옵션 / 키 저장소 / 사용자 디버그"
+
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
+msgstr "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
+
+msgid "Options / Keystore / Debug Password"
+msgstr "옵션 / 키 저장소 / 디버그 비밀번호"
+
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
+msgstr "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
+
+msgid "Options / Keystore / Release"
+msgstr "옵션 / 키스토어 / 릴리스"
+
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
+msgstr "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
+
+msgid "Options / Keystore / Release User"
+msgstr "옵션 / 키스토어 / 사용자 해제"
+
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
+msgstr "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
+
+msgid "Options / Keystore / Release Password"
+msgstr "옵션 / 키스토어 / 비밀번호 해제"
+
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
+msgstr "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
+
 msgid "Export options"
 msgstr "내보내기 옵션"
+
+msgid ""
+"You can find a full list of export options available in "
+"the :ref:`class_EditorExportPlatformAndroid` class reference."
+msgstr ""
+":ref:`class_EditorExportPlatformAndroid` 클래스 참조에서 사용 가능한 내보내"
+"기 옵션의 전체 목록을 찾을 수 있습니다."

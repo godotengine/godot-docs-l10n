@@ -1071,6 +1071,9 @@ msgstr "ETC2 (keine Unterstützung auf MacOS)."
 msgid "S3TC (not supported on mobile/Web platforms)."
 msgstr "S3TC (keine Unterstützung auf mobilen/Web-Plattformen)."
 
+msgid "**Antialiasing:**"
+msgstr "**Kantenglättung:**"
+
 msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
 msgstr "Temporal :ref:`Antialiasing <doc_3d_antialiasing>` (TAA)."
 
@@ -1415,6 +1418,13 @@ msgstr ""
 msgid "Audio input to record microphones."
 msgstr "Audioeingang zur Aufnahme von Mikrofonen."
 
+msgid ""
+":ref:`Text to speech <doc_text_to_speech>` using platform-provided TTS "
+"engines."
+msgstr ""
+":ref:`Text to speech <doc_text_to_speech>` unter Verwendung plattformeigener "
+"TTS-Engines."
+
 msgid "MIDI input."
 msgstr "MIDI-Eingang."
 
@@ -1644,6 +1654,15 @@ msgid "Full support for Unicode including emoji."
 msgstr "Volle Unterstützung für Unicode inklusive Emoji."
 
 msgid ""
+"By default, system fonts are used as a fallback to display unsupported "
+"characters. This allows proper display of multilingual text without having "
+"to bundle large font files with a project."
+msgstr ""
+"Standardmäßig werden Systemschriftarten verwendet, um nicht unterstützte "
+"Zeichen anzizeigen. Dies ermöglicht die Darstellung multilingualer Texte, "
+"ohne dass große Schriftart-Dateien bei einem Projekt beigelegt werden müssen."
+
+msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
@@ -1699,6 +1718,13 @@ msgid "Change the window title and icon."
 msgstr "Ändern des Fenster-Titels und Icons."
 
 msgid ""
+"Create transparent windows to use as overlays, with polygon-based mouse "
+"passthrough support."
+msgstr ""
+"Erstelle transparente Fenster als Overlays, mit polygonbasierter Maus-"
+"Passthrough-Unterstützung."
+
+msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
 "Aufmerksamkeit erbitten (lässt die Titelzeile auf den meisten Plattformen "
@@ -1717,6 +1743,17 @@ msgstr ""
 
 msgid "Borderless windows (fullscreen or non-fullscreen)."
 msgstr "Rahmenloses Fenster (Vollbild oder nicht-Vollbild)."
+
+msgid "Make a window ignore focus (useful for overlays)."
+msgstr "Lass ein Fenster den Fokus ignorieren (nützlich für Overlays)."
+
+msgid ""
+"Declare a window as a popup (hidden from task switcher) or exclusive "
+"(prevents interacting with other windows from the same process)."
+msgstr ""
+"Deklariere ein Fenster als ein Popup (versteckt vor dem Task Switcher) oder "
+"exklusiv (verhindert, dass mit anderen Fenstern des gleichen Prozesses "
+"interagiert werden kann)."
 
 msgid "Global menu integration on macOS."
 msgstr "Globale Menü Integration auf MacOS."

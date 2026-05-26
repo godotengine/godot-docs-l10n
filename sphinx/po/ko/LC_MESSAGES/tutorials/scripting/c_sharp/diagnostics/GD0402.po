@@ -11,5 +11,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0402: The class must not be generic"
+msgstr "GD0402: 클래스는 일반 클래스가 아니어야 합니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0402"
+msgstr "GD0402"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid "A generic type is annotated with the ``[GlobalClass]`` attribute."
+msgstr "일반 유형에는 ``[GlobalClass]`` 속성으로 주석이 추가됩니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"The Godot editor assumes every :ref:`global class "
+"<doc_c_sharp_global_classes>` is instantiable, but generic types can't be "
+"instantiated because the type parameters are unbound."
+msgstr ""
+"Godot 편집기는 모든 :ref:`global class <doc_c_sharp_global_classes>`가 인스턴"
+"스화 가능하다고 가정하지만 유형 매개변수가 바인딩되지 않기 때문에 일반 유형"
+"은 인스턴스화할 수 없습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, change the type to remove the generic type "
+"parameters or remove the ``[GlobalClass]`` attribute."
+msgstr ""
+"이 규칙 위반을 해결하려면 유형을 변경하여 일반 유형 매개변수를 제거하거나 "
+"``[GlobalClass]`` 속성을 제거하십시오."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Adding the ``[GlobalClass]`` to a "
+"generic type is an easy mistake to make and this warning helps users realize "
+"that it may result in unexpected errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``[GlobalClass]``를 일반 유형에 추가하는 "
+"것은 저지르기 쉬운 실수이며 이 경고는 사용자가 예상치 못한 오류가 발생할 수 "
+"있음을 인식하는 데 도움이 됩니다."

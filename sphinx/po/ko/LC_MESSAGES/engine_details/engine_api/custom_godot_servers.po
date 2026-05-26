@@ -11,20 +11,213 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Custom Godot servers"
+msgstr "맞춤형 Godot 서버"
+
 msgid "Introduction"
 msgstr "소개"
+
+msgid ""
+"Godot implements multi-threading as servers. Servers are daemons which "
+"manage data, process it, and push the result. Servers implement the mediator "
+"pattern which interprets resource ID and process data for the engine and "
+"other modules. In addition, the server claims ownership for its RID "
+"allocations."
+msgstr ""
+"Godot는 멀티스레딩을 서버로 구현합니다. 서버는 데이터를 관리하고, 처리하고, "
+"결과를 푸시하는 데몬입니다. 서버는 엔진 및 기타 모듈의 리소스 ID와 프로세스 "
+"데이터를 해석하는 중재자 패턴을 구현합니다. 또한 서버는 RID 할당에 대한 소유"
+"권을 주장합니다."
+
+msgid ""
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to :ref:`doc_custom_modules_in_cpp`."
+msgstr ""
+"이 가이드는 독자가 C++ 모듈과 Godot 데이터 유형을 만드는 방법을 알고 있다고 "
+"가정합니다. 그렇지 않은 경우 :ref:`doc_custom_modules_in_cpp`를 참조하세요."
 
 msgid "References"
 msgstr "참조"
 
+msgid ""
+"`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
+"does-godot-use-servers-and-rids>`__"
+msgstr ""
+"`Godot는 왜 서버와 RID를 사용합니까? <https://godotengine.org/article/why-"
+"does-godot-use-servers-and-rids>`__"
+
+msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+msgstr "`싱글톤 패턴 <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+
+msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+msgstr "`중재자 패턴 <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+
+msgid "What for?"
+msgstr "무엇을 위해?"
+
+msgid "Adding artificial intelligence."
+msgstr "인공지능을 추가합니다."
+
+msgid "Adding custom asynchronous threads."
+msgstr "사용자 정의 비동기 스레드를 추가합니다."
+
+msgid "Adding support for a new input device."
+msgstr "새로운 입력 장치에 대한 지원을 추가합니다."
+
+msgid "Adding writing threads."
+msgstr "쓰기 스레드를 추가합니다."
+
+msgid "Adding a custom VoIP protocol."
+msgstr "사용자 정의 VoIP 프로토콜 추가."
+
+msgid "And more..."
+msgstr "그리고 더..."
+
 msgid "Creating a Godot server"
 msgstr "Godot 서버 만들기"
+
+msgid ""
+"At minimum, a server must have a static instance, a sleep timer, a thread "
+"loop, an initialization state and a cleanup procedure."
+msgstr ""
+"최소한 서버에는 정적 인스턴스, 절전 타이머, 스레드 루프, 초기화 상태 및 정리 "
+"절차가 있어야 합니다."
+
+msgid "hilbert_hotel.h"
+msgstr "hilbert_hotel.h"
+
+msgid "hilbert_hotel.cpp"
+msgstr "hilbert_hotel.cpp"
+
+msgid "prime_255.h"
+msgstr "prime_255.h"
+
+msgid "Custom managed resource data"
+msgstr "커스텀 관리형 리소스 데이터"
+
+msgid ""
+"Godot servers implement a mediator pattern. All data types inherit "
+"``RID_Data``. ``RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
+"called. During debug mode only, RID_Owner maintains a list of RIDs. In "
+"practice, RIDs are similar to writing object-oriented C code."
+msgstr ""
+"Godot 서버는 중재자 패턴을 구현합니다. 모든 데이터 유형은 ``RID_Data``를 상속"
+"합니다. ``RID_Owner<MyRID_Data>``는 ``make_rid``가 호출될 때 객체를 소유합니"
+"다. 디버그 모드에서만 RID_Owner는 RID 목록을 유지 관리합니다. 실제로 RID는 객"
+"체 지향 C 코드 작성과 유사합니다."
+
+msgid "infinite_bus.h"
+msgstr "infinite_bus.h"
+
+msgid ":ref:`RID<class_rid>`"
+msgstr ":ref:`RID<class_rid>`"
+
+msgid ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 msgid "Registering the class in GDScript"
 msgstr "GDScript에서 클래스 등록"
 
+msgid ""
+"Servers are allocated in ``register_types.cpp``. The constructor sets the "
+"static instance and ``init()`` creates the managed thread; "
+"``unregister_types.cpp`` cleans up the server."
+msgstr ""
+"서버는 ``register_types.cpp``에 할당됩니다. 생성자는 정적 인스턴스를 설정하"
+"고 ``init()``는 관리되는 스레드를 생성합니다. ``unregister_types.cpp``는 서버"
+"를 정리합니다."
+
+msgid ""
+"Since a Godot server class creates an instance and binds it to a static "
+"singleton, binding the class might not reference the correct instance. "
+"Therefore, a dummy class must be created to reference the proper Godot "
+"server."
+msgstr ""
+"Godot 서버 클래스는 인스턴스를 생성하고 이를 정적 싱글톤에 바인딩하므로 클래"
+"스 바인딩은 올바른 인스턴스를 참조하지 않을 수 있습니다. 그러므로 적절한 "
+"Godot 서버를 참조하려면 더미 클래스를 생성해야 합니다."
+
+msgid ""
+"In ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
+"is used to register the dummy class in GDScript."
+msgstr ""
+"``register_server_types()``에서 ``Engine::get_singleton()->add_singleton``는 "
+"GDScript에 더미 클래스를 등록하는 데 사용됩니다."
+
+msgid "register_types.h"
+msgstr "register_types.h"
+
+msgid "register_types.cpp"
+msgstr "register_types.cpp"
+
+msgid ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
+msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
+
+msgid "Bind methods"
+msgstr "바인딩 방법"
+
+msgid ""
+"The dummy class binds singleton methods to GDScript. In most cases, the "
+"dummy class methods wraps around."
+msgstr ""
+"더미 클래스는 싱글톤 메서드를 GDScript에 바인딩합니다. 대부분의 경우 더미 클"
+"래스 메서드가 래핑됩니다."
+
 msgid "Binding Signals"
 msgstr "바인딩 시그널"
 
+msgid ""
+"It is possible to emit signals to GDScript by calling the GDScript dummy "
+"object."
+msgstr "GDScript 더미 객체를 호출하여 시그널를 GDScript로 내보낼 수 있습니다."
+
+msgid "MessageQueue"
+msgstr "메시지큐"
+
+msgid ""
+"In order to send commands into SceneTree, MessageQueue is a thread-safe "
+"buffer to queue set and call methods for other threads. To queue a command, "
+"obtain the target object RID and use either ``push_call``, ``push_set``, or "
+"``push_notification`` to execute the desired behavior. The queue will be "
+"flushed whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` is "
+"executed."
+msgstr ""
+"SceneTree에 명령을 보내기 위해 MessageQueue는 다른 스레드에 대한 메서드를 대"
+"기열에 설정하고 호출하는 스레드로부터 안전한 버퍼입니다. 명령을 대기열에 추가"
+"하려면 대상 개체 RID를 얻고 ``push_call``, ``push_set`` 또는 "
+"``push_notification``를 사용하여 원하는 동작을 실행합니다. "
+"``SceneTree::idle`` 또는 ``SceneTree::iteration``가 실행될 때마다 대기열이 플"
+"러시됩니다."
+
+msgid "References:"
+msgstr "참고자료:"
+
+msgid ""
+"`core/object/message_queue.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/object/message_queue.cpp>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "Summing it up"
+msgstr "요약하자면"
+
 msgid "Here is the GDScript sample code:"
 msgstr "GDScript 샘플 코드입니다:"
+
+msgid "Notes"
+msgstr "메모"
+
+msgid ""
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
+msgstr ""
+"실제 `힐베르트 호텔 <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__은 불가능합니다."
+
+msgid "Connecting signal example code is pretty hacky."
+msgstr "시그널 예제 코드를 연결하는 것은 매우 해킹적입니다."

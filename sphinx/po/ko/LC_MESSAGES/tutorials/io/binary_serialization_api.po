@@ -11,14 +11,75 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "Binary serialization API"
+msgstr "바이너리 직렬화 API"
+
 msgid "Introduction"
 msgstr "소개"
+
+msgid ""
+"Godot has a serialization API based on Variant. It's used for converting "
+"data types to an array of bytes efficiently. This API is exposed via the "
+"global :ref:`bytes_to_var() <class_@GlobalScope_method_bytes_to_var>` "
+"and :ref:`var_to_bytes() <class_@GlobalScope_method_var_to_bytes>` "
+"functions, but it is also used in the ``get_var`` and ``store_var`` methods "
+"of :ref:`class_FileAccess` as well as the packet APIs "
+"for :ref:`class_PacketPeer`. This format is *not* used for binary scenes and "
+"resources."
+msgstr ""
+"Godot에는 Variant를 기반으로 한 직렬화 API가 있습니다. 데이터 유형을 바이트 "
+"배열로 효율적으로 변환하는 데 사용됩니다. 이 API는 전역 :ref:`bytes_to_var() "
+"<class_@GlobalScope_method_bytes_to_var>` 및 :ref:`var_to_bytes() "
+"<class_@GlobalScope_method_var_to_bytes>` 함수를 통해 노출되지만 다음의 "
+"``get_var`` 및 ``store_var`` 메서드에서도 사용됩니"
+"다. :ref:`class_FileAccess` 및 :ref:`class_PacketPeer`용 패킷 API. 이 형식은 "
+"바이너리 장면 및 리소스에 사용되지 *않습니다*."
+
+msgid "Full Objects vs Object instance IDs"
+msgstr "전체 객체와 객체 인스턴스 ID"
+
+msgid ""
+"If a variable is serialized with ``full_objects = true``, then any Objects "
+"contained in the variable will be serialized and included in the result. "
+"This is recursive."
+msgstr ""
+"변수가 ``full_objects = true``로 직렬화되면 변수에 포함된 모든 개체가 직렬화"
+"되어 결과에 포함됩니다. 이는 재귀적입니다."
+
+msgid ""
+"If ``full_objects = false``, then only the instance IDs will be serialized "
+"for any Objects contained in the variable."
+msgstr ""
+"``full_objects = false``인 경우 변수에 포함된 모든 개체에 대해 인스턴스 ID만 "
+"직렬화됩니다."
+
+msgid "Packet specification"
+msgstr "패킷 사양"
+
+msgid ""
+"The packet is designed to be always padded to 4 bytes. All values are little-"
+"endian-encoded. All packets have a 4-byte header representing an integer, "
+"specifying the type of data."
+msgstr ""
+"패킷은 항상 4바이트로 채워지도록 설계되었습니다. 모든 값은 리틀 엔디안으로 인"
+"코딩됩니다. 모든 패킷에는 데이터 유형을 지정하는 정수를 나타내는 4바이트 헤더"
+"가 있습니다."
+
+msgid ""
+"The lowest value two bytes are used to determine the type, while the highest "
+"value two bytes contain flags:"
+msgstr ""
+"가장 낮은 값 2바이트는 유형을 결정하는 데 사용되며 가장 높은 값 2바이트에는 "
+"플래그가 포함됩니다."
 
 msgid "Type"
 msgstr "유형"
 
 msgid "Value"
 msgstr "값"
+
+msgid "0"
+msgstr "0"
 
 msgid "null"
 msgstr "null"
@@ -31,6 +92,9 @@ msgstr "bool"
 
 msgid "2"
 msgstr "2"
+
+msgid "integer"
+msgstr "정수"
 
 msgid "3"
 msgstr "3"
@@ -47,23 +111,116 @@ msgstr "문자열"
 msgid "5"
 msgstr "5"
 
+msgid "vector2"
+msgstr "벡터2"
+
 msgid "6"
 msgstr "6"
+
+msgid "rect2"
+msgstr "직사각형2"
 
 msgid "7"
 msgstr "7"
 
+msgid "vector3"
+msgstr "벡터3"
+
+msgid "8"
+msgstr "8"
+
+msgid "transform2d"
+msgstr "변환 2D"
+
+msgid "9"
+msgstr "9"
+
+msgid "plane"
+msgstr "비행기"
+
+msgid "10"
+msgstr "10"
+
+msgid "quaternion"
+msgstr "쿼터니언"
+
+msgid "11"
+msgstr "11"
+
+msgid "aabb"
+msgstr "아브"
+
+msgid "12"
+msgstr "12"
+
+msgid "basis"
+msgstr "기초"
+
+msgid "13"
+msgstr "13"
+
+msgid "transform3d"
+msgstr "변형"
+
+msgid "14"
+msgstr "14"
+
 msgid "color"
 msgstr "색"
+
+msgid "15"
+msgstr "15"
+
+msgid "node path"
+msgstr "노드 경로"
+
+msgid "16"
+msgstr "16"
+
+msgid "rid"
+msgstr "없애다"
+
+msgid "17"
+msgstr "17"
 
 msgid "object"
 msgstr "오브젝트"
 
+msgid "18"
+msgstr "18"
+
+msgid "dictionary"
+msgstr "사전"
+
+msgid "19"
+msgstr "19"
+
 msgid "array"
 msgstr "배열"
 
+msgid "20"
+msgstr "20"
+
+msgid "raw array"
+msgstr "원시 배열"
+
+msgid "21"
+msgstr "21"
+
 msgid "int32 array"
 msgstr "int32 배열"
+
+msgid "22"
+msgstr "22"
+
+msgid "int64 array"
+msgstr "int64 배열"
+
+msgid "23"
+msgstr "23"
+
+msgid "float32 array"
+msgstr "지역 변수(Local Variables)"
 
 msgid "24"
 msgstr "24"
@@ -74,8 +231,32 @@ msgstr "float64 배열"
 msgid "25"
 msgstr "25"
 
+msgid "string array"
+msgstr "문자열 배열"
+
 msgid "26"
 msgstr "26"
+
+msgid "vector2 array"
+msgstr "벡터2 배열"
+
+msgid "27"
+msgstr "27"
+
+msgid "vector3 array"
+msgstr "벡터3 배열"
+
+msgid "28"
+msgstr "28"
+
+msgid "color array"
+msgstr "색상 배열"
+
+msgid "29"
+msgstr "2"
+
+msgid "max"
+msgstr "최대"
 
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
@@ -91,8 +272,17 @@ msgstr ""
 "\"Float\" 필드의 길이는 8이 되어야 하며, 오프셋은 ``(offset - 4) * 2 + 4``\\ "
 "가 되어야 합니다. \"float\" 타입 자체는 항상 배정밀도를 사용합니다."
 
+msgid "0: null"
+msgstr "0: 널"
+
+msgid "1: :ref:`bool<class_bool>`"
+msgstr "1: :ref:`bool<class_bool>`"
+
 msgid "Offset"
 msgstr "오프셋"
+
+msgid "Len"
+msgstr "렌"
 
 msgid "Description"
 msgstr "설명"
@@ -100,8 +290,58 @@ msgstr "설명"
 msgid "Integer"
 msgstr "정수"
 
+msgid "0 for False, 1 for True"
+msgstr "거짓이면 0, 참이면 1"
+
+msgid "2: :ref:`int<class_int>`"
+msgstr "2: :ref:`int<class_int>`"
+
+msgid ""
+"If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
+msgstr ""
+"플래그가 설정되지 않은 경우(플래그 == 0) 정수는 32비트 정수로 전송됩니다."
+
+msgid "32-bit signed integer"
+msgstr "32비트 부호 있는 정수"
+
+msgid ""
+"If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
+"as a 64-bit integer:"
+msgstr ""
+"플래그 ``ENCODE_FLAG_64``가 설정된 경우(``flags & 1 == 1``) 정수는 64비트 정"
+"수로 전송됩니다."
+
+msgid "64-bit signed integer"
+msgstr "64비트 부호 있는 정수"
+
+msgid "3: :ref:`float<class_float>`"
+msgstr ":ref:`float <class_float>`"
+
+msgid ""
+"If no flags are set (flags == 0), the float is sent as a 32 bit single "
+"precision:"
+msgstr ""
+"플래그가 설정되지 않은 경우(플래그 == 0) 부동 소수점은 32비트 단정밀도로 전송"
+"됩니다."
+
 msgid "Float"
 msgstr "Float"
+
+msgid "IEEE 754 single-precision float"
+msgstr "IEEE 754 단정밀도 부동 소수점"
+
+msgid ""
+"If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
+"a 64-bit double precision number:"
+msgstr ""
+"플래그 ``ENCODE_FLAG_64``가 설정된 경우(``flags & 1 == 1``) 부동 소수점은 64"
+"비트 배정밀도 숫자로 전송됩니다."
+
+msgid "IEEE 754 double-precision float"
+msgstr "IEEE 754 배정밀도 부동 소수점"
+
+msgid "4: :ref:`String<class_string>`"
+msgstr "4: :ref:`String<class_string>`"
 
 msgid "String length (in bytes)"
 msgstr "문자열 길이 (바이트 단위)"
@@ -118,17 +358,390 @@ msgstr "UTF-8 인코딩된 문자열"
 msgid "This field is padded to 4 bytes."
 msgstr "이 필드는 4바이트로 채워져 있습니다."
 
+msgid "5: :ref:`Vector2<class_vector2>`"
+msgstr "5: :ref:`Vector2<class_vector2>`"
+
+msgid "X coordinate"
+msgstr "X 좌표"
+
+msgid "Y coordinate"
+msgstr "Y 좌표"
+
+msgid "6: :ref:`Rect2<class_rect2>`"
+msgstr "6: :ref:`Rect2<class_rect2>`"
+
 msgid "X size"
 msgstr "X 크기"
 
 msgid "Y size"
 msgstr "Y 크기"
 
+msgid "7: :ref:`Vector3<class_vector3>`"
+msgstr "7: :ref:`Vector3<class_vector3>`"
+
 msgid "Z coordinate"
 msgstr "Z 좌표"
+
+msgid "8: :ref:`Transform2D<class_transform2d>`"
+msgstr "8: :ref:`Transform2D<class_transform2d>`"
+
+msgid "The X component of the X column vector, accessed via [0][0]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The Y component of the X column vector, accessed via [0][1]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The X component of the Y column vector, accessed via [1][0]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The Y component of the Y column vector, accessed via [1][1]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The X component of the origin vector, accessed via [2][0]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The Y component of the origin vector, accessed via [2][1]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "9: :ref:`Plane<class_plane>`"
+msgstr "9: :ref:`Plane<class_plane>`"
+
+msgid "Normal X"
+msgstr "노멀X"
+
+msgid "Normal Y"
+msgstr "노멀 Y"
+
+msgid "Normal Z"
+msgstr "노멀Z"
 
 msgid "Distance"
 msgstr "거리"
 
+msgid "10: :ref:`Quaternion<class_quaternion>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+msgid "Imaginary X"
+msgstr "상상의 X"
+
+msgid "Imaginary Y"
+msgstr "상상의 Y"
+
+msgid "Imaginary Z"
+msgstr "상상의 Z"
+
+msgid "Real W"
+msgstr "레알 여"
+
+msgid "11: :ref:`AABB<class_aabb>`"
+msgstr "11: :ref:`AABB<class_aabb>`"
+
+msgid "Z size"
+msgstr "Z 사이즈"
+
+msgid "12: :ref:`Basis<class_basis>`"
+msgstr "12: :ref:`Basis<class_basis>`"
+
+msgid "The Z component of the X column vector, accessed via [0][2]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The Z component of the Y column vector, accessed via [1][2]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "The X component of the Z column vector, accessed via [2][0]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "32"
+msgstr "32"
+
+msgid "The Y component of the Z column vector, accessed via [2][1]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "36"
+msgstr "36"
+
+msgid "The Z component of the Z column vector, accessed via [2][2]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "13: :ref:`Transform3D<class_transform3d>`"
+msgstr ":ref:`Transform <class_Transform>`"
+
+msgid "40"
+msgstr "40"
+
+msgid "The X component of the origin vector, accessed via [3][0]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "44"
+msgstr "44"
+
+msgid "The Y component of the origin vector, accessed via [3][1]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "48"
+msgstr "48"
+
+msgid "The Z component of the origin vector, accessed via [3][2]"
+msgstr "벡터의 각각의 컴포넌트는 이름으로 직접 접근할 수 있습니다."
+
+msgid "14: :ref:`Color<class_color>`"
+msgstr "14: :ref:`Color<class_color>`"
+
+msgid "Red (typically 0..1, can be above 1 for overbright colors)"
+msgstr "빨간색(일반적으로 0..1, 지나치게 밝은 색상의 경우 1보다 높을 수 있음)"
+
+msgid "Green (typically 0..1, can be above 1 for overbright colors)"
+msgstr "녹색(일반적으로 0..1, 지나치게 밝은 색상의 경우 1보다 높을 수 있음)"
+
+msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
+msgstr "파란색(일반적으로 0..1, 지나치게 밝은 색상의 경우 1보다 높을 수 있음)"
+
+msgid "Alpha (0..1)"
+msgstr "알파(0..1)"
+
+msgid "15: :ref:`NodePath<class_nodepath>`"
+msgstr "15: :ref:`NodePath<class_nodepath>`"
+
+msgid ""
+"String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
+msgstr ""
+"문자열 길이 또는 새로운 형식(val&0x80000000!=0 및 NameCount=val&0x7FFFFFFF)"
+
+msgid "For old format:"
+msgstr "이전 형식의 경우:"
+
+msgid "Padded to 4 bytes."
+msgstr "4바이트로 채워졌습니다."
+
+msgid "For new format:"
+msgstr "새로운 형식의 경우:"
+
+msgid "Sub-name count"
+msgstr "하위 이름 수"
+
+msgid "Flags (absolute: val&1 != 0 )"
+msgstr "플래그(절대: val&1 != 0 )"
+
+msgid "For each Name and Sub-Name"
+msgstr "각 이름 및 하위 이름에 대해"
+
+msgid "X+0"
+msgstr "X+0"
+
+msgid "String length"
+msgstr "줄 길이"
+
+msgid "X+4"
+msgstr "X+4"
+
+msgid "Every name string is padded to 4 bytes."
+msgstr "모든 이름 문자열은 4바이트로 채워집니다."
+
+msgid "16: :ref:`RID<class_rid>` (unsupported)"
+msgstr "16: :ref:`RID<class_rid>`(지원되지 않음)"
+
+msgid "17: :ref:`Object<class_object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid ""
+"An Object could be serialized in three different ways: as a null value, with "
+"``full_objects = false``, or with ``full_objects = true``."
+msgstr ""
+"개체는 null 값, ``full_objects = false`` 또는 ``full_objects = true``의 세 가"
+"지 방법으로 직렬화될 수 있습니다."
+
+msgid "A null value"
+msgstr "null 값"
+
+msgid "Zero (32-bit signed integer)"
+msgstr "0(32비트 부호 있는 정수)"
+
+msgid "``full_objects`` disabled"
+msgstr "``full_objects`` 비활성화됨"
+
+msgid "The Object instance ID (64-bit signed integer)"
+msgstr "객체 인스턴스 ID(64비트 부호 있는 정수)"
+
+msgid "``full_objects`` enabled"
+msgstr "``full_objects`` 활성화됨"
+
+msgid "Class name (String length)"
+msgstr "줄 길이"
+
+msgid "Class name (UTF-8 encoded string)"
+msgstr "클래스 이름(UTF-8로 인코딩된 문자열)"
+
+msgid "X+8"
+msgstr "X+8"
+
+msgid "The number of properties that are serialized"
+msgstr "6 가지 패턴 유형이 있습니다:"
+
 msgid "For each property:"
 msgstr "각각의 속성:"
+
+msgid "Y"
+msgstr "Y"
+
+msgid "Property name (String length)"
+msgstr "줄 길이"
+
+msgid "Y+4"
+msgstr "Y+4"
+
+msgid "Z"
+msgstr "지"
+
+msgid "Property name (UTF-8 encoded string)"
+msgstr "속성 이름(UTF-8로 인코딩된 문자열)"
+
+msgid "Y+4+Z"
+msgstr "Y+4+Z"
+
+msgid "W"
+msgstr "여"
+
+msgid "<variable>"
+msgstr "변수"
+
+msgid "Property value, using this same format"
+msgstr "동일한 형식을 사용하는 속성 값"
+
+msgid ""
+"Not all properties are included. Only properties that are configured with "
+"the :ref:`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
+"flag set will be serialized. You can add a new usage flag to a property by "
+"overriding "
+"the :ref:`_get_property_list<class_Object_private_method__get_property_list>` "
+"method in your class. You can also check how property usage is configured by "
+"calling ``Object._get_property_list`` "
+"See :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the "
+"possible usage flags."
+msgstr ""
+"모든 속성이 포함되는 것은 아닙니"
+"다. :ref:`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
+"플래그 세트로 구성된 속성만 직렬화됩니다. 클래스에"
+"서 :ref:`_get_property_list<class_Object_private_method__get_property_list>` "
+"메서드를 재정의하여 속성에 새 사용 플래그를 추가할 수 있습니다. "
+"``Object._get_property_list``를 호출하여 속성 사용이 어떻게 구성되었는지 확인"
+"할 수도 있습니다. 가능한 사용 플래그"
+"는 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`를 참조하세"
+"요."
+
+msgid "18: :ref:`Dictionary<class_dictionary>`"
+msgstr "18: :ref:`Dictionary<class_dictionary>`"
+
+msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
+msgstr "val&0x7FFFFFFF = 요소, val&0x80000000 = 공유(부울)"
+
+msgid ""
+"Then what follows is, for amount of \"elements\", pairs of key and value, "
+"one after the other, using this same format."
+msgstr ""
+"그런 다음 \"요소\"의 양에 대해 동일한 형식을 사용하여 키와 값의 쌍을 차례로 "
+"사용합니다."
+
+msgid "19: :ref:`Array<class_array>`"
+msgstr "19: :ref:`Array<class_array>`"
+
+msgid ""
+"Then what follows is, for amount of \"elements\", values one after the "
+"other, using this same format."
+msgstr ""
+"그런 다음 \"요소\"의 양에 대해 동일한 형식을 사용하여 값을 차례로 지정합니다."
+
+msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid "Array length (Bytes)"
+msgstr "배열 길이(바이트)"
+
+msgid "8..8+length"
+msgstr "8..8+length"
+
+msgid "Byte"
+msgstr "바이트"
+
+msgid "Byte (0..255)"
+msgstr "바이트(0..255)"
+
+msgid "The array data is padded to 4 bytes."
+msgstr "배열 데이터는 4바이트로 채워집니다."
+
+msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid "Array length (Integers)"
+msgstr "배열 길이(정수)"
+
+msgid "8..8+length\\*4"
+msgstr "8..8+길이\\*4"
+
+msgid "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid "8..8+length\\*8"
+msgstr "8..8+길이\\*8"
+
+msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid "Array length (Floats)"
+msgstr "배열 길이(부동 소수점)"
+
+msgid "32-bit IEEE 754 single-precision float"
+msgstr "32비트 IEEE 754 단정밀도 부동 소수점"
+
+msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid "64-bit IEEE 754 double-precision float"
+msgstr "64비트 IEEE 754 배정밀도 부동 소수점"
+
+msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
+msgstr ":ref:`String <class_String>`"
+
+msgid "Array length (Strings)"
+msgstr "배열 길이(문자열)"
+
+msgid "For each String:"
+msgstr "각 문자열에 대해:"
+
+msgid "Every string is padded to 4 bytes."
+msgstr "모든 문자열은 4바이트로 채워집니다."
+
+msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid "Array length"
+msgstr "ArrayMesh"
+
+msgid "8..12+length\\*8"
+msgstr "8..12+길이\\*8"
+
+msgid "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid "8..8+length\\*12"
+msgstr "8..8+길이\\*12"
+
+msgid "8..12+length\\*12"
+msgstr "8..12+길이\\*12"
+
+msgid "8..16+length\\*12"
+msgstr "8..16+길이\\*12"
+
+msgid "28: :ref:`PackedColorArray<class_PackedColorArray>`"
+msgstr ":ref:`Array <class_Array>`"
+
+msgid "8..8+length\\*16"
+msgstr "8..8+길이\\*16"
+
+msgid "8..12+length\\*16"
+msgstr "8..12+길이\\*16"
+
+msgid "8..16+length\\*16"
+msgstr "8..16+길이\\*16"
+
+msgid "8..20+length\\*16"
+msgstr "8..20+길이\\*16"

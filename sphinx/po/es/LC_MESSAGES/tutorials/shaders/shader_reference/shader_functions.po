@@ -195,6 +195,9 @@ msgstr ""
 "|vec_type| **radians**\\ (\\ |vec_type| "
 "degrees) :ref:`🔗<shader_func_radians>`"
 
+msgid "param degrees"
+msgstr "param degrees"
+
 msgid "return"
 msgstr "return"
 
@@ -1021,11 +1024,20 @@ msgstr ""
 msgid "Matrix outer product."
 msgstr "Producto exterior."
 
+msgid ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+
 msgid "Transpose matrix."
 msgstr "Matriz transpuesta."
 
+msgid ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+
 msgid "Matrix determinant."
 msgstr "Matriz determinante."
+
+msgid ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
 
 msgid "Inverse matrix."
 msgstr "Matriz inversa."
@@ -1908,6 +1920,9 @@ msgstr ""
 "vec4 **texture**\\ (\\ samplerExternalOES s, vec2 p [, float "
 "bias] ) :ref:`🔗<shader_func_texture>`"
 
+msgid "param bias"
+msgstr "param bias"
+
 msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
 msgstr ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
@@ -2194,6 +2209,36 @@ msgstr ""
 msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
 msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
 
+msgid ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+
+msgid ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+
+msgid ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+
+msgid ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+
+msgid ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+
 msgid "param v"
 msgstr "param v"
 
@@ -2256,6 +2301,38 @@ msgstr ""
 ":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| "
 "base, |vec_uint_type| insert, int offset, int bits)"
 
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+
 msgid "|void|"
 msgstr "|void|"
 
@@ -2303,6 +2380,12 @@ msgid ""
 msgstr ""
 "|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| value, int offset, "
 "int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid "param value"
+msgstr "param value"
+
+msgid "param offset"
+msgstr "param offset"
 
 msgid "param bits"
 msgstr "param bits"
@@ -2401,6 +2484,9 @@ msgid ""
 msgstr ""
 "|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
 "out |vec_uint_type| borrow) :ref:`🔗<shader_func_usubBorrow>`"
+
+msgid "param borrow"
+msgstr "param borrow"
 
 msgid ""
 "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"

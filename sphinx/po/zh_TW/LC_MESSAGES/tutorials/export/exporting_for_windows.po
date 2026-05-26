@@ -42,6 +42,9 @@ msgstr ""
 "案。該檔案會內涵一個特別最佳化過的二進位，這個二進位檔更小、更快，而且不包含"
 "編輯器與除錯工具。"
 
+msgid "Architecture"
+msgstr "架構"
+
 msgid "Changing the executable icon"
 msgstr "更改可執行檔圖示"
 
@@ -72,22 +75,6 @@ msgstr ""
 "mtrojnar/osslsigncode>`__。你還需要一份套件簽章憑證，建立方式可參考 `這裡 "
 "<https://learn.microsoft.com/en-us/windows/msix/package/create-certificate-"
 "package-signing>`__。"
-
-msgid ""
-"If you export for Windows with embedded PCK files, you will not be able to "
-"sign the program as it will break."
-msgstr ""
-"如果你匯出 Windows 執行檔且內嵌了 PCK 檔案，將無法進行程式碼簽章，否則會導致"
-"執行檔損壞。"
-
-msgid ""
-"On Windows, PCK embedding is also known to cause false positives in "
-"antivirus programs. Therefore, it's recommended to avoid using it unless "
-"you're distributing your project via Steam as it bypasses code signing and "
-"antivirus checks."
-msgstr ""
-"在 Windows 上，PCK 檔案嵌入也常會觸發防毒軟體的誤判。因此除非你是透過 Steam "
-"發行，可以略過程式碼簽章和防毒檢查，否則建議不要啟用 PCK 嵌入。"
 
 msgid "Setup"
 msgstr "設定"

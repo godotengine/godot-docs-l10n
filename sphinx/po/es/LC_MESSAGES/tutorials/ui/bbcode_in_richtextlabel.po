@@ -316,6 +316,9 @@ msgstr "``[code]{text}[/code]``"
 msgid "**char**"
 msgstr "**char**"
 
+msgid "``[char={codepoint}]``"
+msgstr "``[char={codepoint}]``"
+
 msgid "**p**"
 msgstr "**p**"
 
@@ -382,6 +385,9 @@ msgstr "``[opentype_features={list}]``"
 msgid "``[/opentype_features]``"
 msgstr "``[/opentype_features]``"
 
+msgid "``[lang={code}]{text}[/lang]``"
+msgstr "``[lang={code}]{text}[/lang]``"
+
 msgid "**color**"
 msgstr "**color**"
 
@@ -397,6 +403,12 @@ msgstr "``[/outline_color]``"
 msgid "**table**"
 msgstr "**tabla**"
 
+msgid "``[table={number},{valign}]{cells}[/table]``"
+msgstr "``[table={number},{valign}]{cells}[/table]``"
+
+msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
+msgstr "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
+
 msgid "**cell**"
 msgstr "**celda**"
 
@@ -405,6 +417,12 @@ msgstr "``[cell]{text}[/cell]``"
 
 msgid "``[ul]{items}[/ul]``"
 msgstr "``[ul]{items}[/ul]``"
+
+msgid "``[ul bullet={bullet}]{items}[/ul]``"
+msgstr "``[url=<url>]{text}[/url]``"
+
+msgid "``[ol type={type}]{items}[/ol]``"
+msgstr "``[ol type={type}]{items}[/ol]``"
 
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
@@ -432,6 +450,15 @@ msgstr "``Color(1, 1, 1, 1)``"
 msgid "``2``"
 msgstr "``2``"
 
+msgid "``90%``"
+msgstr "``90%``"
+
+msgid "``always``"
+msgstr "``always``"
+
+msgid "URL underlining mode."
+msgstr "Modo de subrayado de URL."
+
 msgid "String."
 msgstr "String."
 
@@ -450,8 +477,14 @@ msgstr "Cadena"
 msgid "Image tooltip."
 msgstr "Tooltip de imágen."
 
+msgid "``center,center``"
+msgstr "``center,center``"
+
 msgid "**alt**"
 msgstr "**alt**"
+
+msgid "Font options"
+msgstr "Opciones de fuente"
 
 msgid "Font resource path."
 msgstr "Ruta del recurso fuente."

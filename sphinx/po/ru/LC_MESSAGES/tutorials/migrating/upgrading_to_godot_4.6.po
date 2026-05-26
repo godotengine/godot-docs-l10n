@@ -95,6 +95,9 @@ msgstr "|❌|"
 msgid "3D"
 msgstr "3D"
 
+msgid "**SpringBoneSimulator3D**"
+msgstr "**SpringBoneSimulator3D**"
+
 msgid "Rendering"
 msgstr "Отрисовка"
 
@@ -113,8 +116,32 @@ msgstr "OpenXR"
 msgid "N/A"
 msgstr "N/A"
 
+msgid ""
+"The ``OpenXRExtensionWrapper`` type is intended to be subclassed from "
+"GDExtensions. The method ``_set_instance_create_info_and_get_next_pointer`` "
+"has a ``void*`` parameter so it's not exposed to scripting."
+msgstr ""
+"Тип ``OpenXRExtensionWrapper`` предназначен для создания подклассов через "
+"GDExtension. Метод ``_set_instance_create_info_and_get_next_pointer`` имеет "
+"параметр типа ``void*``, поэтому он не доступен для написания скриптов."
+
 msgid "Editor"
 msgstr "Редактор"
+
+msgid "Method ``add_filter`` moved to base class ``FileDialog``"
+msgstr "Метод ``add_filter`` был перенесен в базовый класс ``FileDialog``"
+
+msgid "Method ``add_option`` moved to base class ``FileDialog``"
+msgstr "Метод ``add_option`` был перенесен в базовый класс ``FileDialog``"
+
+msgid "Method ``add_side_menu`` removed"
+msgstr "Method ``add_side_menu`` был удален"
+
+msgid "|❌ with stub|"
+msgstr "с заглушкой"
+
+msgid "Method ``clear_filters`` moved to base class ``FileDialog``"
+msgstr "Метод ``clear_filters`` был перенесен в базовый класс ``FileDialog``"
 
 msgid "Behavior changes"
 msgstr "Изменения в поведении"
@@ -145,11 +172,68 @@ msgstr ""
 "Файл манифеста Android и каталог ресурсов были перемещены в подкаталоги "
 "``src/main/``."
 
+msgid ""
+"For example, ``GodotApp.java`` moved from ``src/com/godot/game/"
+"GodotApp.java`` to ``src/main/java/com/godot/game/GodotApp.java``."
+msgstr ""
+"Например, ``GodotApp.java`` перемещенный из ``src/com/godot/game/"
+"GodotApp.java`` в ``src/main/java/com/godot/game/GodotApp.java``."
+
 msgid "Navigation"
 msgstr "Навигация"
 
+msgid ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` and ``AStarGrid2D.get_point_path`` will now "
+"return an empty path when ``from_id`` is a disabled/solid point "
+"(`GH-113988`_)."
+msgstr ""
+"``AStar2D.get_point_path``, ``AStar3D.get_point_path``, "
+"``AStarGrid2D.get_id_path`` и ``AStarGrid2D.get_point_path`` теперь будут "
+"возвращать пустой путь, если ``from_id`` является отключённой или сплошной "
+"точкой (`GH-113988`_)."
+
+msgid ""
+"The following default values have been changed. If your project relies on "
+"the previous defaults, you may need to explicitly set them to the old values."
+msgstr ""
+"Следующие значения по умолчанию были изменены. Если ваш проект использует "
+"прежние значения по умолчанию, возможно, вам придется явно задать для них "
+"старые значения."
+
+msgid ""
+"The default rendering driver on Windows for **newly created** projects is "
+"now :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). This can be changed in "
+"Project Settings under ``rendering/rendering_device/driver.windows``."
+msgstr ""
+"Драйвером рендеринга по умолчанию в Windows для **вновь созданных** проектов "
+"теперь является :abbr:`D3D12 (Direct3D 12)` (`GH-113213`_). Это можно "
+"изменить в Настройках проекта в разделе ``rendering/rendering_device/"
+"driver.windows``."
+
+msgid ""
+"The default 3D physics engine for **newly created** projects is now Jolt "
+"Physics (`GH-105737`_). This can be changed in Project Settings under "
+"``physics/3d/physics_engine``."
+msgstr ""
+"Физическим 3D-движком по умолчанию для **вновь созданных** проектов теперь "
+"является Jolt Physics (`GH-105737`_). Это можно изменить в Настройках "
+"проекта в разделе ``physics/3d/physics_engine``."
+
 msgid "**MeshInstance3D**"
 msgstr "**MeshInstance3D**"
+
+msgid ""
+"The default value of ``skeleton`` has changed. Enable ``animation/"
+"compatibility/default_parent_skeleton_in_mesh_instance_3d`` in Project "
+"Settings if the old behavior is needed for compatibility."
+msgstr ""
+"Значение по умолчанию для ``skeleton`` изменилось. Включите ``animation/"
+"compatibility/default_parent_skeleton_in_mesh_instance_3d`` в Настройках "
+"проекта, если для совместимости требуется старое поведение."
+
+msgid "Property ``rendering/reflections/sky_reflections/roughness_layers``"
+msgstr "Свойство ``rendering/reflections/sky_reflections/roughness_layers``"
 
 msgid "8"
 msgstr "8"
@@ -157,11 +241,23 @@ msgstr "8"
 msgid "7"
 msgstr "7"
 
+msgid "Property ``rendering/rendering_device/d3d12/agility_sdk_version``"
+msgstr "Свойство ``rendering/rendering_device/d3d12/agility_sdk_version``"
+
 msgid "2"
 msgstr "2"
 
 msgid "1"
 msgstr "1"
 
+msgid "0.4"
+msgstr "0.4"
+
+msgid "Property ``ssr_depth_tolerance``"
+msgstr "Свойство ``ssr_depth_tolerance``"
+
 msgid "**PopupMenu**"
 msgstr "**Всплывающее меню**"
+
+msgid "**ResourceImporterCSVTranslation**"
+msgstr "**ResourceImporterCSVTranslation**"

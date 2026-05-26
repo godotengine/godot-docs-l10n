@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Core types"
-msgstr "Core types"
+msgstr "Tipos de núcleos"
 
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
@@ -28,8 +28,60 @@ msgstr "Esta referência tentará listá-los para melhor compreensão."
 msgid "Allocating memory"
 msgstr "Alocando memória"
 
+msgid "For C-style allocation, Godot provides a few macros:"
+msgstr "Para uma alocação no estilo C, a Godot fornece algumas macros:"
+
+msgid "For C++-style allocation, special macros are provided:"
+msgstr "Para uma alocação no estilo C++, macros especiais são fornecidas:"
+
+msgid "Containers"
+msgstr "Contêineres"
+
+msgid "Godot datatype"
+msgstr "Tipos de dados da Godot"
+
+msgid "Closest C++ STL datatype"
+msgstr ""
+"O mais próximo dos tipos de dados da STL (Biblioteca de Modelos Padrão) do C+"
+"+"
+
 msgid "Comment"
 msgstr "Comente"
 
+msgid "|string| 📜"
+msgstr "|string| 📜"
+
+msgid "``std::string``"
+msgstr "``std::string``"
+
+msgid "|vector|"
+msgstr "|vector|"
+
+msgid "Relocation safety"
+msgstr "Segurança da realocação"
+
+msgid ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ tracks "
+"this decision."
+msgstr ""
+"`GH-100509 <https://github.com/godotengine/godot/issues/100509>`__ acompanha "
+"esta decisão."
+
+msgid "Multithreading / Concurrency"
+msgstr "Múltiplas execuções (Multi-threading) / Concorrência"
+
+msgid ""
+"You can find more information on multithreading strategies "
+"at :ref:`doc_using_multiple_threads`."
+msgstr ""
+"Você pode encontrar mais informações nas estratégias de multithreading "
+"(múltiplas execuções) em :ref:`doc_using_multiple_threads`."
+
+msgid "Counting semaphore type."
+msgstr "Contando os tipos de semáforos."
+
+msgid "NodePath"
+msgstr "NodePath (Caminho de Nó)"
+
 msgid "RID"
-msgstr "RID"
+msgstr "RID (Identificação de Recurso)"

@@ -11,5 +11,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0107: Types not derived from Node should not export Node members"
+msgstr ""
+"GD0107: 노드에서 파생되지 않은 유형은 노드 멤버를 내보내서는 안 됩니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0107"
+msgstr "GD0107"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A type that doesn't derive from ``Node`` contains an exported field or "
+"property of a type that derives from ``Node``."
+msgstr ""
+"``Node``에서 파생되지 않은 유형에는 ``Node``에서 파생된 유형의 내보낸 필드 또"
+"는 속성이 포함되어 있습니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Exported nodes are serialized as ``NodePath``. Only types derived from "
+"``Node`` are able to get the node instance from the ``NodePath``."
+msgstr ""
+"내보낸 노드는 ``NodePath``로 직렬화됩니다. ``Node``에서 파생된 유형만 "
+"``NodePath``에서 노드 인스턴스를 가져올 수 있습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, avoid exporting ``Node`` members on a type "
+"that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
+msgstr ""
+"이 규칙 위반 문제를 해결하려면 ``Node``에서 파생되지 않은 유형에서 ``Node`` "
+"멤버를 내보내지 않거나 ``NodePath`` 내보내기를 고려하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that don't derive from "
+"``Node`` will be unable to retrieve the right node instance for exported "
+"``Node`` members, resulting in unexpected runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``Node``에서 파생되지 않은 유형은 내보낸 "
+"``Node`` 멤버에 대해 올바른 노드 인스턴스를 검색할 수 없어 예기치 않은 런타"
+"임 오류가 발생합니다."

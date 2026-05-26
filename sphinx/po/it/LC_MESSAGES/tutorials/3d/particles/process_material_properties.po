@@ -20,6 +20,9 @@ msgstr "Proprietà di ParticleProcessMaterial"
 msgid "Min, max, and curve properties"
 msgstr "Proprietà di minimo, massimo e curva"
 
+msgid "Time"
+msgstr "Tempo"
+
 msgid "Particle flags"
 msgstr "Flag di particelle"
 
@@ -62,11 +65,32 @@ msgstr "Valori diversi per l'accelerazione lineare delle particelle"
 msgid "Negative (top) and positive (bottom) linear acceleration"
 msgstr "Accelerazione lineare negativa (in alto) e positiva (in basso)"
 
+msgid ""
+"It's important to keep in mind that when we change acceleration, we're not "
+"changing the velocity directly, we're changing the *change* in velocity. A "
+"value of ``0`` on the acceleration curve does not stop the particle's "
+"movement, it stops the change in the particle's movement. Whatever its "
+"velocity was at that moment, it will keep moving at that velocity until the "
+"acceleration is changed again."
+msgstr ""
+"È importante tenere presente che quando cambiamo l'accelerazione, non stiamo "
+"cambiando direttamente la velocità, ma stiamo cambiando la *variazione* di "
+"velocità. Un valore di ``0`` sulla curva di accelerazione non ferma il "
+"movimento della particella, ma ferma la variazione del suo movimento. "
+"Qualunque fosse la sua velocità in quel momento, continuerà a muoversi a "
+"quella velocità finché l'accelerazione non sarà cambiata di nuovo."
+
 msgid "Radial acceleration"
 msgstr "Accelerazione radiale"
 
 msgid "Tangential acceleration"
 msgstr "Accelerazione tangenziale"
+
+msgid "Tangents on a circle"
+msgstr "Tangenti su un cerchio"
+
+msgid "Tangential acceleration from above"
+msgstr "Accelerazione tangenziale dall'alto"
 
 msgid "Damping"
 msgstr "Smorzamento"
@@ -89,14 +113,31 @@ msgstr "Configurazione di una rampa di colori"
 msgid "Hue variation"
 msgstr "Variazione di tonalità"
 
+msgid ""
+"Hue describes a color's pigment: red, orange, yellow, green and so on. It "
+"does not tell you anything about how bright or how saturated the color is. "
+"The ``Hue Variation`` property controls the range of available hues `as "
+"described above <#process-material-properties>`__."
+msgstr ""
+"La tonalità descrive il pigmento di un colore: rosso, arancione, giallo, "
+"verde e così via. Non dice niente sulla luminosità o sulla saturazione del "
+"colore. La proprietà ``Hue Variation`` controlla la gamma di tonalità "
+"disponibili, `come descritto sopra <#process-material-properties>`__."
+
 msgid "Animation"
 msgstr "Animazione"
+
+msgid "A sprite sheet"
+msgstr "Uno spritesheet"
 
 msgid "Check ``Loop`` if you want the animation to keep repeating."
 msgstr "Seleziona ``Loop`` se vuoi che l'animazione continui a ripetersi."
 
 msgid "Animated particles"
 msgstr "Particelle animate"
+
+msgid "Animated particles lifetimes"
+msgstr "Durata di vita delle particelle animate"
 
 msgid "Collision"
 msgstr "Collisione"
@@ -109,3 +150,15 @@ msgstr "Modalità di sotto-emettitore"
 
 msgid "The available sub-emitter modes"
 msgstr "Le modalità di sotto-emettitori disponibili"
+
+msgid "Customizing the process material"
+msgstr "Personalizzare il materiale di processo"
+
+msgid ""
+"To do so, right-click on the material in the FileSystem dock and choose "
+"**Convert to ShaderMaterial**. You can also do so by right-clicking on any "
+"property holding a reference to the material in the inspector."
+msgstr ""
+"Per farlo, fai clic destro sul materiale nel pannello Filesystem e scegli "
+"**Converti in ShaderMaterial**. Puoi anche fare clic destro su qualsiasi "
+"proprietà che contenga un riferimento al materiale nell'ispettore."

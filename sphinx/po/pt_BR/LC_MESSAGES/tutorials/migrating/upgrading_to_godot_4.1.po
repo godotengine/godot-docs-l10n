@@ -68,11 +68,20 @@ msgstr ""
 msgid "Core"
 msgstr "Componentes Principais"
 
+msgid "Change"
+msgstr "Mudança"
+
 msgid "C# Binary Compatible"
 msgstr "Compatível com C# Binário"
 
 msgid "C# Source Compatible"
 msgstr "Compatível com fonte C#"
+
+msgid "Introduced"
+msgstr "Introduzido"
+
+msgid "**Basis**"
+msgstr "**Fundamento**"
 
 msgid "Method ``looking_at`` adds a new ``use_model_front`` optional parameter"
 msgstr ""
@@ -84,6 +93,9 @@ msgstr "|✔️|"
 
 msgid "`GH-76082`_"
 msgstr "`GH-76082`_"
+
+msgid "**Object**"
+msgstr "**Objeto**"
 
 msgid ""
 "Method ``get_meta_list`` changes return type from ``PackedStringArray`` to "
@@ -97,6 +109,9 @@ msgstr "|❌|"
 
 msgid "`GH-76418`_"
 msgstr "`GH-76418`_"
+
+msgid "**Transform3D**"
+msgstr "**Transformação 3D**"
 
 msgid "**UndoRedo**"
 msgstr "**UndoRedo**"
@@ -128,6 +143,9 @@ msgstr "`GH-77143`_"
 
 msgid "Animation"
 msgstr "Animação"
+
+msgid "**AnimationNode**"
+msgstr "**Nó de Animação**"
 
 msgid "Method ``_process`` adds a new ``test_only`` parameter"
 msgstr "Método ``_process`` adiciona um novo parâmetro ``test_only``"
@@ -162,12 +180,18 @@ msgstr "Propriedade ``lookahead`` removida"
 msgid "`GH-72842`_"
 msgstr "`GH-72842`_"
 
+msgid "**Geometry3D**"
+msgstr "**Geometria 3D**"
+
 msgid ""
 "Method ``segment_intersects_convex`` changes ``planes`` parameter type from "
 "untyped ``Array`` to ``Array[Plane]``"
 msgstr ""
 "Alterado o tipo do parâmetro ``planes`` do método "
 "``segment_intersects_convex`` de ``Array`` não tipado para ``Array[Plane]``"
+
+msgid "**MeshInstance3D**"
+msgstr "**Malha de Instância 3D**"
 
 msgid ""
 "Method ``create_multiple_convex_collisions`` adds a new ``settings`` "
@@ -178,6 +202,9 @@ msgstr ""
 
 msgid "`GH-72152`_"
 msgstr "`GH-72152`_"
+
+msgid "**Node3D**"
+msgstr "**Nó 3D**"
 
 msgid "Method ``look_at`` adds a new ``use_model_front`` optional parameter"
 msgstr ""
@@ -203,6 +230,9 @@ msgstr ""
 msgid "`GH-75746`_"
 msgstr "`GH-75746`_"
 
+msgid "**RichTextLabel**"
+msgstr "**Texto Formatado**"
+
 msgid "Method ``push_list`` adds a new ``bullet`` optional parameter"
 msgstr "Adicionado novo parâmetro opcional ``bullet`` ao método ``push_list``"
 
@@ -226,6 +256,9 @@ msgstr ""
 msgid "`GH-76401`_"
 msgstr "`GH-76401`_"
 
+msgid "**Tree**"
+msgstr "**Árvore**"
+
 msgid "Method ``edit_selected`` adds a new ``force_edit`` optional parameter"
 msgstr ""
 "Adicionado novo parâmetro opcional ``force_edit`` ao método ``edit_selected``"
@@ -236,12 +269,18 @@ msgstr "`GH-76794`_"
 msgid "Physics"
 msgstr "Física"
 
+msgid "**Area2D**"
+msgstr "**Área 2D**"
+
 msgid "Property ``priority`` changes type from ``float`` to ``int``"
 msgstr ""
 "A propriedade ``priority`` teve o seu tipo alterado de ``float`` para ``int``"
 
 msgid "`GH-72749`_"
 msgstr "`GH-72749`_"
+
+msgid "**Area3D**"
+msgstr "**Área 3D**"
 
 msgid "**PhysicsDirectSpaceState2D**"
 msgstr "**PhysicsDirectSpaceState2D**"
@@ -279,6 +318,9 @@ msgstr ""
 "Modificado o tipo de retorno do método ``get_version_list`` de "
 "``PackedStringArray`` para ``Array[StringName]``"
 
+msgid "**RenderingDevice**"
+msgstr "**Dispositivo de Renderização**"
+
 msgid ""
 "Method ``draw_list_begin`` changes ``storage_textures`` parameter type from "
 "untyped ``Array`` to ``Array[RID]``"
@@ -286,12 +328,18 @@ msgstr ""
 "Alterado o tipo do parâmetro ``storage_textures`` do método "
 "``draw_list_begin`` de ``Array`` não tipado para ``Array[RID]``"
 
+msgid "**RenderingServer**"
+msgstr "**Dispositivo de Servidor**"
+
 msgid ""
 "Method ``global_shader_parameter_get_list`` changes return type from "
 "``PackedStringArray`` to ``Array[StringName]``"
 msgstr ""
 "Modificado o tipo de retorno do método ``global_shader_parameter_get_list`` "
 "de ``PackedStringArray`` para ``Array[StringName]``"
+
+msgid "**SurfaceTool**"
+msgstr "**Ferramenta de Superfície**"
 
 msgid ""
 "Method ``add_triangle_fan`` changes ``tangents`` parameter type from untyped "
@@ -302,6 +350,9 @@ msgstr ""
 
 msgid "Navigation"
 msgstr "Navegação"
+
+msgid "**NavigationAgent2D**"
+msgstr "**Agente de Navegação 2D**"
 
 msgid "Method ``set_velocity`` replaced with ``velocity`` property"
 msgstr "Método ``set_velocity`` substituído pela propriedade ``velocity``"
@@ -316,6 +367,9 @@ msgstr ""
 "Propriedade ``time_horizon`` dividida em ``time_horizon_agents`` e "
 "``time_horizon_obstacles``"
 
+msgid "**NavigationAgent3D**"
+msgstr "**Agente de Navegação 3D**"
+
 msgid "Property ``agent_height_offset`` renamed to ``path_height_offset``"
 msgstr ""
 "Propriedade ``agent_height_offset`` renomeada para ``path_height_offset``"
@@ -323,11 +377,20 @@ msgstr ""
 msgid "Property ``ignore_y`` removed"
 msgstr "Propriedade ``ignore_y`` removida"
 
+msgid "**NavigationObstacle2D**"
+msgstr "**Obstáculo de Navegação 2D**"
+
 msgid "Property ``estimate_radius`` removed"
 msgstr "Propriedade ``estimate_radius`` removida"
 
 msgid "Method ``get_rid`` renamed to ``get_agent_rid``"
 msgstr "Método ``get_rid`` renomeado para ``get_agent_rid``"
+
+msgid "**NavigationObstacle3D**"
+msgstr "**Obstáculo de Navegação 3D**"
+
+msgid "**NavigationServer2D**"
+msgstr "**Servidor de Navegação 2D**"
 
 msgid ""
 "Method ``agent_set_callback`` renamed to ``agent_set_avoidance_callback``"
@@ -344,8 +407,11 @@ msgstr ""
 "Método ``agent_set_time_horizon`` dividido em "
 "``agent_set_time_horizon_agents`` e ``agent_set_time_horizon_obstacles``"
 
+msgid "**NavigationServer3D**"
+msgstr "**Servidor de Navegação 3D**"
+
 msgid "Networking"
-msgstr "Trabalho em rede"
+msgstr "Redes"
 
 msgid "**WebRTCPeerConnectionExtension**"
 msgstr "**WebRTCPeerConnectionExtension**"
@@ -363,8 +429,14 @@ msgstr "`GH-78237`_"
 msgid "Editor plugins"
 msgstr "Plugins do editor"
 
+msgid "**AnimationTrackEditPlugin**"
+msgstr "**AnimationTrackEditPlugin**"
+
 msgid "`GH-76413`_"
 msgstr "`GH-76413`_"
+
+msgid "**EditorInterface**"
+msgstr "**Interface do Editor**"
 
 msgid ""
 "Type ``EditorInterface`` changes inheritance from ``Node`` to ``Object``"
@@ -404,6 +476,9 @@ msgstr ""
 msgid "**EditorUndoRedoManager**"
 msgstr "**EditorUndoRedoManager**"
 
+msgid "**SubViewportContainer**"
+msgstr "**Contêiner de Sub Janela de Exibição**"
+
 msgid ""
 "When input events should reach SubViewports and their children, "
 "``SubViewportContainer.mouse_filter`` now needs to be ``MOUSE_FILTER_STOP`` "
@@ -425,6 +500,9 @@ msgstr ""
 "Vários nós ``SubViewportContainer`` em camadas, que deveriam receber eventos "
 "de entrada do mouse, agora precisam ser substituídos por nós ``Area2D``. "
 "Veja `GH-79128`_ para mais detalhes."
+
+msgid "**Viewport**"
+msgstr "**Janela de Exibição**"
 
 msgid ""
 "``Viewport`` nodes, that have Physics Picking enabled, now automatically set "

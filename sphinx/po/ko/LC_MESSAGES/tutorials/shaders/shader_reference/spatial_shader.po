@@ -14,26 +14,1498 @@ msgstr ""
 msgid "Spatial shaders"
 msgstr "공간 셰이더"
 
+msgid ""
+"Spatial shaders are used for shading 3D objects. They are the most complex "
+"type of shader Godot offers. Spatial shaders are highly configurable with "
+"different render modes and different rendering options (e.g. Subsurface "
+"Scattering, Transmission, Ambient Occlusion, Rim lighting, etc.). Users can "
+"optionally write vertex, fragment, and light processor functions to affect "
+"how objects are drawn."
+msgstr ""
+"공간 셰이더는 3D 개체를 음영 처리하는 데 사용됩니다. 이는 셰이더 Godot가 제공"
+"하는 가장 복잡한 유형입니다. 공간 셰이더는 다양한 렌더링 모드와 다양한 렌더"
+"링 옵션(예: 하위 표면 산란, 전송, 주변 폐색, 림 조명 등)으로 고도로 구성 가능"
+"합니다. 사용자는 선택적으로 정점, 조각 및 조명 프로세서 기능을 작성하여 객체"
+"가 그려지는 방식에 영향을 줄 수 있습니다."
+
 msgid "Render modes"
 msgstr "렌더러 모드"
+
+msgid ""
+"For visual examples of these render modes, see :ref:`Standard Material 3D "
+"and ORM Material 3D<doc_standard_material_3d>`."
+msgstr ":ref:`Spatial 셰이더 <doc_spatial_shader>`"
+
+msgid "Render mode"
+msgstr "렌더링 모드"
 
 msgid "Description"
 msgstr "설명"
 
+msgid "**blend_mix**"
+msgstr "**블렌드_믹스**"
+
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr "혼합 혼합 모드(알파는 투명도), 기본값."
+
+msgid "**blend_add**"
+msgstr "**블렌드_추가**"
+
 msgid "Additive blend mode."
 msgstr "덧셈 블렌드 모드."
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "빼기 블렌드 모드."
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "곱셈 블렌드 모드."
+
+msgid "**blend_premul_alpha**"
+msgstr "**blend_premul_alpha**"
+
+msgid ""
+"Premultiplied alpha blend mode (fully transparent = add, fully opaque = mix)."
+msgstr "미리 곱셈된 알파 블렌드 모드(완전 투명 = 추가, 완전 불투명 = 혼합)."
+
+msgid "**depth_draw_opaque**"
+msgstr "**깊이_그리기_불투명**"
+
+msgid "Only draw depth for opaque geometry (not transparent)."
+msgstr "불투명한 형상(투명하지 않음)에 대해서만 깊이를 그립니다."
+
+msgid "**depth_draw_always**"
+msgstr "**깊이_그리기_항상**"
+
+msgid "Always draw depth (opaque and transparent)."
+msgstr "항상 깊이를 그립니다(불투명 및 투명)."
+
+msgid "**depth_draw_never**"
+msgstr "**깊이_그리기_절대로**"
+
+msgid "Never draw depth."
+msgstr "절대 깊이를 그리지 마세요."
+
+msgid "**depth_prepass_alpha**"
+msgstr "**깊이_프리패스_알파**"
+
+msgid "Do opaque depth pre-pass for transparent geometry."
+msgstr "투명한 기하구조에 대해 불투명 깊이 사전 통과를 수행합니다."
+
+msgid "**depth_test_disabled**"
+msgstr "**깊이_테스트_비활성화됨**"
+
+msgid "Disable depth testing."
+msgstr "깊이 테스트를 비활성화합니다."
+
+msgid "**depth_test_default**"
+msgstr "**깊이_테스트_기본**"
+
+msgid ""
+"Depth test will discard the pixel if it is behind other pixels. In Forward+ "
+"only, the pixel is also discarded if it's at the exact same depth as another "
+"pixel."
+msgstr ""
+"깊이 테스트에서는 해당 픽셀이 다른 픽셀 뒤에 있으면 해당 픽셀을 삭제합니다. "
+"Forward+에서만 해당 픽셀이 다른 픽셀과 정확히 동일한 깊이에 있는 경우 해당 픽"
+"셀도 삭제됩니다."
+
+msgid "**depth_test_inverted**"
+msgstr "**깊이_테스트_반전**"
+
+msgid ""
+"Depth test will discard the pixel if it is in front of other pixels. Useful "
+"for stencil effects."
+msgstr ""
+"깊이 테스트에서는 픽셀이 다른 픽셀 앞에 있으면 해당 픽셀을 삭제합니다. 스텐"
+"실 효과에 유용합니다."
+
+msgid "**sss_mode_skin**"
+msgstr "**sss_mode_skin**"
+
+msgid ""
+"Subsurface Scattering mode for skin (optimizes visuals for human skin, e.g. "
+"boosted red channel)."
+msgstr ""
+"피부를 위한 하위 표면 산란 모드(예: 빨간색 채널 강화 등 인간 피부의 시각적 요"
+"소 최적화)"
+
+msgid "**cull_back**"
+msgstr "**컬백**"
+
+msgid "Cull back-faces (default)."
+msgstr "뒷면을 발췌합니다(기본값)."
+
+msgid "**cull_front**"
+msgstr "**컬프론트**"
+
+msgid "Cull front-faces."
+msgstr "앞면을 컬링합니다."
+
+msgid "**cull_disabled**"
+msgstr "**추출_비활성화됨**"
+
+msgid "Culling disabled (double sided)."
+msgstr "컬링이 비활성화되었습니다(양면)."
+
+msgid "**unshaded**"
+msgstr "**음영되지 않음**"
+
+msgid ""
+"Result is just albedo. No lighting/shading happens in material, making it "
+"faster to render."
+msgstr ""
+"결과는 알베도입니다. 머티리얼에서는 조명/음영이 발생하지 않으므로 렌더링 속도"
+"가 빨라집니다."
+
+msgid "**wireframe**"
+msgstr "**와이어프레임**"
 
 msgid "**debug_shadow_splits**"
 msgstr "**debug_shadow_splits**"
 
+msgid ""
+"Directional shadows are drawn using different colors for each split (useful "
+"for troubleshooting)."
+msgstr ""
+"방향성 그림자는 각 분할에 대해 서로 다른 색상을 사용하여 그려집니다(문제 해결"
+"에 유용함)."
+
+msgid "**diffuse_burley**"
+msgstr "**확산_벌리**"
+
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "확산을 위한 Burley(Disney PBS)(기본값)."
+
+msgid "**diffuse_lambert**"
+msgstr "**확산_램버트**"
+
+msgid "Lambert shading for diffuse."
+msgstr "확산을 위한 램버트 쉐이딩."
+
+msgid "**diffuse_lambert_wrap**"
+msgstr "**확산_램버트_랩**"
+
+msgid "Lambert-wrap shading (roughness-dependent) for diffuse."
+msgstr "확산을 위한 램버트 랩 셰이딩(거칠기에 따라 다름)"
+
+msgid "**diffuse_toon**"
+msgstr "**diffuse_toon**"
+
+msgid "Toon shading for diffuse."
+msgstr "확산을 위한 툰 셰이딩."
+
+msgid "**specular_schlick_ggx**"
+msgstr "**specular_schlick_ggx**"
+
+msgid "Schlick-GGX for direct light specular lobes (default)."
+msgstr "직접광 반사 로브용 Schlick-GGX(기본값)"
+
+msgid "**specular_toon**"
+msgstr "**specular_toon**"
+
+msgid "Toon for direct light specular lobes."
+msgstr "직사광 반사 로브용 툰입니다."
+
+msgid "**specular_disabled**"
+msgstr "**반사_비활성화됨**"
+
+msgid ""
+"Disable direct light specular lobes. Doesn't affect reflected light (use "
+"``SPECULAR = 0.0`` instead)."
+msgstr ""
+"직접광 반사 로브를 비활성화합니다. 반사광에 영향을 주지 않습니다(대신 "
+"``SPECULAR = 0.0`` 사용)."
+
+msgid "**skip_vertex_transform**"
+msgstr "**skip_vertex_transform**"
+
+msgid ""
+"``VERTEX``, ``NORMAL``, ``TANGENT``, and ``BITANGENT`` need to be "
+"transformed manually in the ``vertex()`` function."
+msgstr ""
+"``VERTEX``, ``NORMAL``, ``TANGENT`` 및 ``BITANGENT``는 ``vertex()`` 함수에서 "
+"수동으로 변환해야 합니다."
+
+msgid "**world_vertex_coords**"
+msgstr "**world_vertex_coords**"
+
+msgid ""
+"``VERTEX``, ``NORMAL``, ``TANGENT``, and ``BITANGENT`` are modified in world "
+"space instead of model space."
+msgstr ""
+"``VERTEX``, ``NORMAL``, ``TANGENT`` 및 ``BITANGENT``는 모델 공간 대신 월드 공"
+"간에서 수정됩니다."
+
+msgid "**ensure_correct_normals**"
+msgstr "**보너스_올바른_정상**"
+
+msgid ""
+"Use when non-uniform scale is applied to mesh *(note: currently "
+"unimplemented)*."
+msgstr ""
+"불균일 스케일이 메시에 적용될 때 사용합니다 *(참고: 현재 구현되지 않음)*."
+
+msgid "**shadows_disabled**"
+msgstr "**shadows_disabled**"
+
+msgid ""
+"Disable computing shadows in shader. The shader will not receive shadows, "
+"but can still cast them."
+msgstr ""
+"셰이더에서 컴퓨팅 섀도우를 비활성화합니다. 셰이더는 그림자를 수신하지 않지만 "
+"여전히 그림자를 드리울 수 있습니다."
+
+msgid "**ambient_light_disabled**"
+msgstr "**ambient_light_disabled**"
+
+msgid "Disable contribution from ambient light and radiance map."
+msgstr "주변광 및 래디언스 맵의 기여를 비활성화합니다."
+
+msgid "**shadow_to_opacity**"
+msgstr "**shadow_to_opacity**"
+
+msgid ""
+"Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
+"areas are transparent. Useful for overlaying shadows onto a camera feed in "
+"AR."
+msgstr ""
+"조명은 알파를 수정하여 그림자가 있는 영역은 불투명하고 그림자가 없는 영역은 "
+"투명하게 만듭니다. AR의 카메라 피드에 그림자를 오버레이하는 데 유용합니다."
+
+msgid "**vertex_lighting**"
+msgstr "**정점_조명**"
+
+msgid "Use vertex-based lighting instead of per-pixel lighting."
+msgstr "픽셀당 조명 대신 정점 기반 조명을 사용합니다."
+
 msgid "**particle_trails**"
 msgstr "**particle_trails**"
+
+msgid "Enables the trails when used on particle geometry."
+msgstr "입자 형상에 사용될 때 트레일을 활성화합니다."
+
+msgid "**alpha_to_coverage**"
+msgstr "**alpha_to_coverage**"
+
+msgid ""
+"Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
+"pull/40364>`_ for more."
+msgstr "https://github.com/godotengine/godot-demo-projects"
+
+msgid "**alpha_to_coverage_and_one**"
+msgstr "**alpha_to_coverage_and_one**"
+
+msgid "**fog_disabled**"
+msgstr "**스타일**"
+
+msgid ""
+"Disable receiving depth-based or volumetric fog. Useful for ``blend_add`` "
+"materials like particles."
+msgstr ""
+"깊이 기반 또는 체적 안개 수신을 비활성화합니다. 입자와 같은 ``blend_add`` 재"
+"료에 유용합니다."
+
+msgid "Stencil modes"
+msgstr "블렌드 모드"
+
+msgid ""
+"Stencil support is experimental, use at your own risk. We will try to not "
+"break compatibility as much as possible, but if significant flaws are found "
+"in the API, it may change in the next minor version."
+msgstr ""
+"스텐실 지원은 실험적이므로 사용에 따른 책임은 사용자 본인에게 있습니다. 호환"
+"성을 최대한 깨지지 않도록 노력하겠지만, API에 중대한 결함이 발견될 경우 다음 "
+"마이너 버전에서 변경될 수 있습니다."
+
+msgid ""
+"Stencil operations are a set of operations that allow writing to an "
+"efficient buffer in an hardware-accelerated manner. This is generally used "
+"to mask in or out parts of the scene."
+msgstr ""
+"스텐실 작업은 하드웨어 가속 방식으로 효율적인 버퍼에 쓸 수 있는 작업 집합입니"
+"다. 이는 일반적으로 씬의 일부를 마스킹하거나 마스킹하는 데 사용됩니다."
+
+msgid "Some of the most well-known uses are:"
+msgstr "가장 잘 알려진 용도는 다음과 같습니다."
+
+msgid ""
+"Outlines: Mask out the inner mesh that is being outlined to avoid inner "
+"outlines."
+msgstr ""
+"윤곽선: 내부 윤곽선을 피하기 위해 윤곽선을 그리는 내부 메쉬를 마스크합니다."
+
+msgid "X-Ray: Display a mesh behind other objects."
+msgstr "X-Ray: 다른 개체 뒤에 메시를 표시합니다."
+
+msgid ""
+"Portals: Draw geometry that is normally \"impossible\" (non-Euclidian) by "
+"masking objects."
+msgstr ""
+"포털: 객체를 마스킹하여 일반적으로 \"불가능한\"(유클리드가 아닌) 형상을 그립"
+"니다."
+
+msgid ""
+"You can only read from the stencil buffer in the transparent pass. Any "
+"attempt to read in the opaque pass will fail, as it's currently not "
+"supported behavior."
+msgstr ""
+"투명 패스의 스텐실 버퍼에서만 읽을 수 있습니다. 불투명 패스를 읽으려는 시도"
+"는 현재 지원되지 않는 동작이므로 실패합니다."
+
+msgid ""
+"Note that for compositor effects, the main renderer's stencil buffer can't "
+"be copied to a custom texture."
+msgstr ""
+"합성기 효과의 경우 기본 렌더러의 스텐실 버퍼를 사용자 정의 텍스처에 복사할 "
+"수 없습니다."
+
+msgid "Stencil mode"
+msgstr "스케일링 모드"
+
+msgid "**read**"
+msgstr "정적 함수"
+
+msgid "Read from the stencil buffer."
+msgstr "스텐실 버퍼에서 읽습니다."
+
+msgid "**write**"
+msgstr "**쓰기**"
+
+msgid "Write reference value to the stencil buffer."
+msgstr "스텐실 버퍼에 참조 값을 씁니다."
+
+msgid "**write_if_depth_fail**"
+msgstr "**write_if_length_fail**"
+
+msgid "Write reference value to the stencil buffer if the depth test fails."
+msgstr "깊이 테스트가 실패하면 스텐실 버퍼에 참조 값을 씁니다."
+
+msgid "**compare_always**"
+msgstr "**비교_항상**"
+
+msgid "Always pass stencil test."
+msgstr "항상 스텐실 테스트를 통과하세요."
+
+msgid "**compare_equal**"
+msgstr "**비교_동등**"
+
+msgid ""
+"Pass stencil test if the reference value is equal to the stencil buffer "
+"value."
+msgstr "참조 값이 스텐실 버퍼 값과 같으면 스텐실 테스트를 통과합니다."
+
+msgid "**compare_not_equal**"
+msgstr "**비교하지_같지 않음**"
+
+msgid ""
+"Pass stencil test if the reference value is not equal to the stencil buffer "
+"value."
+msgstr "참조 값이 스텐실 버퍼 값과 같지 않으면 스텐실 테스트를 통과합니다."
+
+msgid "**compare_less**"
+msgstr "**텍스처 압축:**"
+
+msgid ""
+"Pass stencil test if the reference value is less than the stencil buffer "
+"value."
+msgstr "참조 값이 스텐실 버퍼 값보다 작은 경우 스텐실 테스트를 통과합니다."
+
+msgid "**compare_less_or_equal**"
+msgstr "**비교가 적거나 같음**"
+
+msgid ""
+"Pass stencil test if the reference value is less than or equal to the "
+"stencil buffer value."
+msgstr "참조 값이 스텐실 버퍼 값보다 작거나 같으면 스텐실 테스트를 통과합니다."
+
+msgid "**compare_greater**"
+msgstr "**비교_더욱**"
+
+msgid ""
+"Pass stencil test if the reference value is greater than the stencil buffer "
+"value."
+msgstr "참조 값이 스텐실 버퍼 값보다 큰 경우 스텐실 테스트를 통과합니다."
+
+msgid "**compare_greater_or_equal**"
+msgstr "**비교_더 크거나_같음**"
+
+msgid ""
+"Pass stencil test if the reference value is greater than or equal to the "
+"stencil buffer value."
+msgstr "참조 값이 스텐실 버퍼 값보다 크거나 같으면 스텐실 테스트를 통과합니다."
+
+msgid "Built-ins"
+msgstr "Built-In(내장)"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"``in``로 표시된 값은 읽기 전용입니다. ``out``로 표시된 값은 선택적으로 쓸 수 "
+"있으며 반드시 합리적인 값을 포함하지는 않습니다. ``inout``로 표시된 값은 적절"
+"한 기본값을 제공하며 선택적으로 쓸 수 있습니다. 샘플러는 기록할 수 없으므로 "
+"표시되지 않습니다."
+
+msgid ""
+"Not all built-ins are available in all processing functions. To access a "
+"vertex built-in from the ``fragment()`` function, you can use "
+"a :ref:`varying <doc_shading_language_varyings>`. The same applies for "
+"accessing fragment built-ins from the ``light()`` function."
+msgstr ""
+"모든 내장 기능을 모든 처리 기능에서 사용할 수 있는 것은 아닙니다. "
+"``fragment()`` 함수에서 내장된 정점에 액세스하려면 :ref:`varying "
+"<doc_shading_언어_varyings>`을 사용할 수 있습니다. ``light()`` 함수에서 내장"
+"된 조각에 액세스하는 경우에도 동일하게 적용됩니다."
+
+msgid "Global built-ins"
+msgstr "벡터 내장 타입"
+
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr ""
+"사용자 정의 기능을 포함하여 전역 내장 기능을 어디에서나 사용할 수 있습니다."
 
 msgid "Built-in"
 msgstr "내장"
 
+msgid "in float **TIME**"
+msgstr "부동 소수점 **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"엔진이 시작된 이후의 전역 시간(초)입니다. ``3,600``초마다 반복됩니다"
+"(:ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` 설정으로 변경 가"
+"능). :ref:`time_scale<class_Engine_property_time_scale>`의 영향을 받지만 일"
+"시 중지의 영향을 받지는 않습니다. 시간 척도의 영향을 받지 않는 ``TIME`` 변수"
+"가 필요한 경우 고유한 :ref:`global shader "
+"uniform<doc_shading_language_global_uniforms>`를 추가하고 각 프레임을 업데이"
+"트하세요."
+
+msgid "in float **PI**"
+msgstr "부동 소수점 **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). The ratio of a circle's circumference to "
+"its diameter and the number of radians in a half turn."
+msgstr ""
+"``PI`` 상수(``3.141592``). 원의 지름과 반 바퀴의 라디안 수에 대한 원주 비율입"
+"니다."
+
+msgid "in float **TAU**"
+msgstr "부동 **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). Equivalent to ``PI * 2`` and the number "
+"of radians in a full turn."
+msgstr ""
+"``TAU`` 상수(``6.283185``). ``PI * 2`` 및 1회전의 라디안 수와 동일합니다."
+
+msgid "in float **E**"
+msgstr "부동 **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number, the base of the natural "
+"logarithm."
+msgstr "``E`` 상수(``2.718281``). 자연로그의 밑이 되는 오일러 수."
+
+msgid "in bool **OUTPUT_IS_SRGB**"
+msgstr "bool **OUTPUT_IS_SRGB**에서"
+
+msgid ""
+"``true`` when output is in sRGB color space (this is ``true`` in the "
+"Compatibility renderer, ``false`` in Forward+ and Mobile)."
+msgstr ""
+"출력이 sRGB 색상 공간인 경우 ``true``입니다(호환성 렌더러에서는 ``true``이고 "
+"Forward+ 및 Mobile에서는 ``false``입니다)."
+
+msgid "in float **CLIP_SPACE_FAR**"
+msgstr "부동 **CLIP_SPACE_FAR**"
+
+msgid ""
+"Clip space far ``z`` value. In the Forward+ or Mobile renderers, it's "
+"``0.0``. In the Compatibility renderer, it's ``-1.0``."
+msgstr ""
+"클립 공간 ``z`` 값입니다. Forward+ 또는 모바일 렌더러에서는 ``0.0``입니다. 호"
+"환성 렌더러에서는 ``-1.0``입니다."
+
+msgid "Vertex built-ins"
+msgstr "벡터 내장 타입"
+
+msgid ""
+"Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, and ``BITANGENT``) are "
+"presented in model space (also called local space). If not written to, these "
+"values will not be modified and be passed through as they came, then "
+"transformed into view space to be used in ``fragment()``."
+msgstr ""
+"정점 데이터(``VERTEX``, ``NORMAL``, ``TANGENT`` 및 ``BITANGENT``)는 모델 공간"
+"(로컬 공간이라고도 함)에 표시됩니다. 기록되지 않으면 이러한 값은 수정되지 않"
+"고 전달된 대로 전달된 다음 ``fragment()``에서 사용할 뷰 공간으로 변환됩니다."
+
+msgid ""
+"They can optionally be presented in world space by using the "
+"``world_vertex_coords`` render mode."
+msgstr ""
+"``world_vertex_coords`` 렌더링 모드를 사용하여 월드 공간에 선택적으로 표시할 "
+"수 있습니다."
+
+msgid ""
+"Users can disable the built-in modelview transform (projection will still "
+"happen later) and do it manually with the following code:"
+msgstr ""
+"사용자는 내장된 modelview 변환을 비활성화하고(프로젝션은 나중에 계속 발생함) "
+"다음 코드를 사용하여 수동으로 수행할 수 있습니다."
+
+msgid ""
+"Other built-ins, such as ``UV``, ``UV2``, and ``COLOR``, are also passed "
+"through to the ``fragment()`` function if not modified."
+msgstr ""
+"``UV``, ``UV2`` 및 ``COLOR``와 같은 다른 내장 기능도 수정되지 않으면 "
+"``fragment()`` 함수로 전달됩니다."
+
+msgid ""
+"Users can override the modelview and projection transforms using the "
+"``POSITION`` built-in. If ``POSITION`` is written to anywhere in the shader, "
+"it will always be used, so the user becomes responsible for ensuring that it "
+"always has an acceptable value. When ``POSITION`` is used, the value from "
+"``VERTEX`` is ignored and projection does not happen. However, the value "
+"passed to the fragment shader still comes from ``VERTEX``."
+msgstr ""
+"사용자는 내장된 ``POSITION``를 사용하여 모델 뷰 및 투영 변환을 재정의할 수 있"
+"습니다. ``POSITION``를 셰이더의 아무 곳에나 쓰면 항상 사용되므로 항상 허용 가"
+"능한 값을 갖도록 보장할 책임은 사용자에게 있습니다. ``POSITION``를 사용하는 "
+"경우 ``VERTEX``의 값은 무시되고 투영이 발생하지 않습니다. 그러나 셰이더 조각"
+"에 전달된 값은 여전히 ``VERTEX``에서 나옵니다."
+
+msgid ""
+"For instancing, the ``INSTANCE_CUSTOM`` variable contains the instance "
+"custom data. When using particles, this information is usually:"
+msgstr ""
+"인스턴스화의 경우 ``INSTANCE_CUSTOM`` 변수에는 인스턴스 사용자 정의 데이터가 "
+"포함됩니다. 입자를 사용할 때 이 정보는 일반적으로 다음과 같습니다."
+
+msgid "**x**: Rotation angle in radians."
+msgstr "**x**: 라디안 단위의 회전 각도입니다."
+
+msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
+msgstr "**y**: 수명 동안의 단계(``0.0``~``1.0``)."
+
+msgid "**z**: Animation frame."
+msgstr "**z**: 애니메이션 프레임."
+
+msgid ""
+"This allows you to easily adjust the shader to a particle system using "
+"default particle material. When writing a custom particle shader, this value "
+"can be used as desired."
+msgstr ""
+"이를 통해 기본 입자 재질을 사용하여 셰이더를 입자 시스템에 쉽게 조정할 수 있"
+"습니다. 사용자 정의 입자 셰이더를 작성할 때 이 값을 원하는 대로 사용할 수 있"
+"습니다."
+
+msgid "in vec2 **VIEWPORT_SIZE**"
+msgstr "vec2 **VIEWPORT_SIZE**에서"
+
+msgid "Size of viewport (in pixels)."
+msgstr "뷰포트의 크기(픽셀 단위)입니다."
+
+msgid "in mat4 **VIEW_MATRIX**"
+msgstr "mat4 **VIEW_MATRIX**"
+
+msgid "World space to view space transform."
+msgstr "공간 변화를 볼 수 있는 세계 공간."
+
+msgid "in mat4 **INV_VIEW_MATRIX**"
+msgstr "mat4 **INV_VIEW_MATRIX**"
+
+msgid "View space to world space transform."
+msgstr "보기 공간을 월드 공간으로 변환합니다."
+
+msgid "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
+msgstr "mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
+
+msgid ""
+"View space to world space transform of the camera used to draw the current "
+"viewport."
+msgstr ""
+"현재 뷰포트를 그리는 데 사용되는 카메라의 보기 공간을 월드 공간으로 변환합니"
+"다."
+
+msgid "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr "mat4 **INV_PROJECTION_MATRIX**"
+
+msgid "Clip space to view space transform."
+msgstr "공간 변환을 보려면 공간을 클립하세요."
+
+msgid "in vec3 **NODE_POSITION_WORLD**"
+msgstr "vec3 **NODE_POSITION_WORLD**에서"
+
+msgid "Node position, in world space."
+msgstr "노드 위치, 월드 공간."
+
+msgid "in vec3 **NODE_POSITION_VIEW**"
+msgstr "vec3 **NODE_POSITION_VIEW**에서"
+
+msgid "Node position, in view space."
+msgstr "노드 위치, 뷰 공간."
+
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr "vec3 **CAMERA_POSITION_WORLD**에서"
+
+msgid ""
+"Camera position, in world space. Represents the midpoint of the two eyes "
+"when in multiview/stereo rendering."
+msgstr ""
+"월드 공간에서의 카메라 위치. 다중 뷰/스테레오 렌더링 시 두 눈의 중간점을 나타"
+"냅니다."
+
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr "vec3 **CAMERA_DIRECTION_WORLD**에서"
+
+msgid "Camera direction, in world space."
+msgstr "월드 공간에서의 카메라 방향."
+
+msgid "in uint **CAMERA_VISIBLE_LAYERS**"
+msgstr "단위 **CAMERA_VISIBLE_LAYERS**"
+
+msgid "Cull layers of the camera rendering the current pass."
+msgstr "현재 패스를 렌더링하는 카메라의 레이어를 컬링합니다."
+
+msgid "in int **INSTANCE_ID**"
+msgstr "int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "인스턴스화를 위한 인스턴스 ID입니다."
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "vec4 **INSTANCE_CUSTOM**에서"
+
+msgid "Instance custom data (for particles, mostly)."
+msgstr "인스턴스 사용자 정의 데이터(주로 입자용)"
+
+msgid "in int **VIEW_INDEX**"
+msgstr "int **VIEW_INDEX**"
+
+msgid ""
+"The view that we are rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
+"multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
+msgstr ""
+"우리가 렌더링하고 있는 뷰입니다. 모노(다중 뷰 아님) 또는 왼쪽 눈의 경우 "
+"``VIEW_MONO_LEFT``(``0``), 오른쪽 눈의 경우 ``VIEW_RIGHT``(``1``)."
+
+msgid "in int **VIEW_MONO_LEFT**"
+msgstr "int **VIEW_MONO_LEFT**"
+
+msgid "Constant for Mono or left eye, always ``0``."
+msgstr "모노 또는 왼쪽 눈에 대한 상수이며 항상 ``0``입니다."
+
+msgid "in int **VIEW_RIGHT**"
+msgstr "int **VIEW_RIGHT**"
+
+msgid "Constant for right eye, always ``1``."
+msgstr "오른쪽 눈에 대한 상수, 항상 ``1``."
+
+msgid "in vec3 **EYE_OFFSET**"
+msgstr "vec3에서 **EYE_OFFSET**"
+
+msgid ""
+"Position offset for the eye being rendered, in view space. Only applicable "
+"for multiview rendering."
+msgstr ""
+"뷰 공간에서 렌더링되는 눈의 위치 오프셋입니다. 멀티뷰 렌더링에만 적용 가능합"
+"니다."
+
+msgid "inout vec3 **VERTEX**"
+msgstr "inout vec3 **VERTEX**"
+
+msgid ""
+"Position of the vertex, in model space. In world space if "
+"``world_vertex_coords`` is used."
+msgstr ""
+"모형 공간에서 꼭지점의 위치입니다. ``world_vertex_coords``를 사용하는 경우 월"
+"드 공간에서."
+
+msgid "in int **VERTEX_ID**"
+msgstr "int **VERTEX_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr "정점 버퍼에 있는 현재 정점의 인덱스입니다."
+
+msgid "inout vec3 **NORMAL**"
+msgstr "inout vec3 **정상**"
+
+msgid ""
+"Normal in model space. In world space if ``world_vertex_coords`` is used."
+msgstr ""
+"모형 공간에서는 정상입니다. ``world_vertex_coords``를 사용하는 경우 월드 공간"
+"에서."
+
+msgid "inout vec3 **TANGENT**"
+msgstr "inout vec3 **탄젠트**"
+
+msgid ""
+"Tangent in model space. In world space if ``world_vertex_coords`` is used."
+msgstr ""
+"모형 공간의 접선. ``world_vertex_coords``를 사용하는 경우 월드 공간에서."
+
+msgid "inout vec3 **BINORMAL**"
+msgstr "inout vec3 **바이노멀**"
+
+msgid ""
+"Binormal in model space. In world space if ``world_vertex_coords`` is used."
+msgstr ""
+"모형 공간의 종법선. ``world_vertex_coords``를 사용하는 경우 월드 공간에서."
+
+msgid "out vec4 **POSITION**"
+msgstr "out vec4 **포지션**"
+
+msgid "If written to, overrides final vertex position in clip space."
+msgstr "기록하는 경우 클립 공간의 최종 정점 위치를 재정의합니다."
+
+msgid "inout vec2 **UV**"
+msgstr "inout vec2 **UV**"
+
+msgid "UV main channel."
+msgstr "UV 메인 채널."
+
+msgid "inout vec2 **UV2**"
+msgstr "입력 vec2 **UV2**"
+
+msgid "UV secondary channel."
+msgstr "UV 보조 채널."
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **색상**"
+
+msgid ""
+"Color from vertices. Limited to values between ``0.0`` and ``1.0`` for each "
+"channel and 8 bits per channel precision (256 possible levels). Alpha "
+"channel is supported. Values outside the allowed range are clamped, and "
+"values may be rounded due to precision limitations. Use ``CUSTOM0``-"
+"``CUSTOM3`` to pass data with more precision if needed."
+msgstr ""
+"정점의 색상. 각 채널에 대해 ``0.0``에서 ``1.0`` 사이의 값과 채널당 8비트 정밀"
+"도(256개 레벨 가능)로 제한됩니다. 알파 채널이 지원됩니다. 허용된 범위를 벗어"
+"나는 값은 고정되며 정밀도 제한으로 인해 값이 반올림될 수 있습니다. 필요한 경"
+"우 더 정확하게 데이터를 전달하려면 ``CUSTOM0``-``CUSTOM3``를 사용하세요."
+
+msgid "out float **ROUGHNESS**"
+msgstr "아웃 플로트 **거칠기**"
+
+msgid "Roughness for vertex lighting."
+msgstr "정점 조명의 거칠기."
+
+msgid "inout float **POINT_SIZE**"
+msgstr "부동 소수점 **POINT_SIZE**"
+
+msgid "Point size for point rendering."
+msgstr "포인트 렌더링을 위한 포인트 크기입니다."
+
+msgid "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "Model/local space to view space transform (use if possible)."
+msgstr "공간 변환을 보기 위한 모델/로컬 공간(가능한 경우 사용)"
+
+msgid "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+msgstr "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "mat4 **MODEL_MATRIX**"
+
+msgid "Model/local space to world space transform."
+msgstr "모델/로컬 공간을 월드 공간으로 변환합니다."
+
+msgid "in mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "mat3 **MODEL_NORMAL_MATRIX**"
+
+msgid "inout mat4 **PROJECTION_MATRIX**"
+msgstr "inout mat4 **PROJECTION_MATRIX**"
+
+msgid "View space to clip space transform."
+msgstr "보기 공간을 클립 공간으로 변환합니다."
+
+msgid "in uvec4 **BONE_INDICES**"
+msgstr "uvec4 **BONE_INDICES**"
+
+msgid "in vec4 **BONE_WEIGHTS**"
+msgstr "vec4 **BONE_WEIGHTS**"
+
+msgid "in vec4 **CUSTOM0**"
+msgstr "vec4 **CUSTOM0**에서"
+
+msgid ""
+"Custom value from vertex primitive. When using extra UVs, ``xy`` is UV3 and "
+"``zw`` is UV4."
+msgstr ""
+"정점 기본 요소의 사용자 정의 값입니다. 추가 UV를 사용하는 경우 ``xy``는 UV3이"
+"고 ``zw``는 UV4입니다."
+
+msgid "in vec4 **CUSTOM1**"
+msgstr "vec4에서 **커스텀1**"
+
+msgid ""
+"Custom value from vertex primitive. When using extra UVs, ``xy`` is UV5 and "
+"``zw`` is UV6."
+msgstr ""
+"정점 기본 요소의 사용자 정의 값입니다. 추가 UV를 사용하는 경우 ``xy``는 UV5이"
+"고 ``zw``는 UV6입니다."
+
+msgid "in vec4 **CUSTOM2**"
+msgstr "vec4 **CUSTOM2**에서"
+
+msgid ""
+"Custom value from vertex primitive. When using extra UVs, ``xy`` is UV7 and "
+"``zw`` is UV8."
+msgstr ""
+"정점 기본 요소의 사용자 정의 값입니다. 추가 UV를 사용하는 경우 ``xy``는 UV7이"
+"고 ``zw``는 UV8입니다."
+
+msgid "in vec4 **CUSTOM3**"
+msgstr "vec4에서 **커스텀3**"
+
+msgid "Custom value from vertex primitive."
+msgstr "정점 기본 요소의 사용자 정의 값입니다."
+
+msgid "out float **Z_CLIP_SCALE**"
+msgstr "부동 소수점 **Z_CLIP_SCALE**"
+
+msgid ""
+"If written to, scales the vertex towards the camera to avoid clipping into "
+"things like walls. Lighting and shadows will continue to work correctly when "
+"this is written to, but screen-space effects like SSAO and SSR may break "
+"with lower scales. Try to keep this value as close to ``1.0`` as possible."
+msgstr ""
+"기록하는 경우 정점의 크기를 카메라 방향으로 조정하여 벽과 같은 물체에 잘리는 "
+"것을 방지합니다. 조명과 그림자는 이 글을 쓸 때 계속 올바르게 작동하지만 SSAO "
+"및 SSR과 같은 화면 공간 효과는 낮은 배율에서 중단될 수 있습니다. 이 값을 가능"
+"한 한 ``1.0``에 가깝게 유지하십시오."
+
+msgid ""
+"``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
+"and is better suited when floating point issues may arise. For example, if "
+"the object is very far away from the world origin, you may run into floating "
+"point issues when using the separated ``MODEL_MATRIX`` and ``VIEW_MATRIX``."
+msgstr ""
+"``MODELVIEW_MATRIX``는 ``MODEL_MATRIX``와 ``VIEW_MATRIX``를 모두 결합하며 부"
+"동 소수점 문제가 발생할 수 있는 경우에 더 적합합니다. 예를 들어, 객체가 세계 "
+"원점에서 매우 멀리 떨어져 있는 경우 분리된 ``MODEL_MATRIX`` 및 "
+"``VIEW_MATRIX``를 사용할 때 부동 소수점 문제가 발생할 수 있습니다."
+
+msgid ""
+"``INV_VIEW_MATRIX`` is the matrix used for rendering the object in that "
+"pass, unlike ``MAIN_CAM_INV_VIEW_MATRIX``, which is the matrix of the camera "
+"in the scene. In the shadow pass, ``INV_VIEW_MATRIX``'s view is based on the "
+"camera that is located at the position of the light."
+msgstr ""
+"``INV_VIEW_MATRIX``는 씬의 카메라 매트릭스인 ``MAIN_CAM_INV_VIEW_MATRIX``와 "
+"달리 해당 패스에서 객체를 렌더링하는 데 사용되는 매트릭스입니다. 섀도우 패스"
+"에서 ``INV_VIEW_MATRIX``의 시야는 빛의 위치에 위치한 카메라를 기준으로 합니"
+"다."
+
 msgid "Fragment built-ins"
 msgstr "프래그먼트 내장"
 
+msgid ""
+"The default use of a Godot fragment processor function is to set up the "
+"material properties of your object and to let the built-in renderer handle "
+"the final shading. However, you are not required to use all these "
+"properties, and if you don't write to them, Godot will optimize away the "
+"corresponding functionality."
+msgstr ""
+"Godot 조각 프로세서 기능의 기본 사용은 개체의 재료 속성을 설정하고 내장 렌더"
+"러가 최종 음영 처리를 처리하도록 하는 것입니다. 그러나 이러한 속성을 모두 사"
+"용할 필요는 없으며, 속성을 작성하지 않으면 Godot는 해당 기능을 최적화합니다."
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "vec4에서 **FRAGCOORD**"
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window. Origin is upper left. ``z`` specifies fragment depth. It is also "
+"used as the output value for the fragment depth unless ``DEPTH`` is written "
+"to."
+msgstr ""
+"화면 공간의 픽셀 중심 좌표입니다. ``xy``는 창의 위치를 지정합니다. 원점은 왼"
+"쪽 위입니다. ``z``는 조각 깊이를 지정합니다. ``DEPTH``를 쓰지 않는 한 조각 깊"
+"이의 출력 값으로도 사용됩니다."
+
+msgid "in bool **FRONT_FACING**"
+msgstr "부울 **FRONT_FACING**"
+
+msgid "``true`` if current face is front facing, ``false`` otherwise."
+msgstr ""
+"현재 면이 정면을 향하고 있으면 ``true``, 그렇지 않으면 ``false``입니다."
+
+msgid "in vec3 **VIEW**"
+msgstr "vec3에서 **보기**"
+
+msgid ""
+"Normalized vector from fragment position to camera (in view space). This is "
+"the same for both perspective and orthogonal cameras."
+msgstr ""
+"조각 위치에서 카메라(보기 공간)까지 정규화된 벡터입니다. 이는 투시 카메라와 "
+"직교 카메라 모두 동일합니다."
+
+msgid "in vec2 **UV**"
+msgstr "vec2 **UV**에서"
+
+msgid "UV that comes from the ``vertex()`` function."
+msgstr "``vertex()`` 함수에서 나오는 UV입니다."
+
+msgid "in vec2 **UV2**"
+msgstr "vec2 **UV2**에서"
+
+msgid "UV2 that comes from the ``vertex()`` function."
+msgstr "``vertex()`` 함수에서 나오는 UV2입니다."
+
+msgid "in vec4 **COLOR**"
+msgstr "vec4에서 **컬러**"
+
+msgid "COLOR that comes from the ``vertex()`` function."
+msgstr "``vertex()`` 함수에서 나오는 색상입니다."
+
+msgid "in vec2 **POINT_COORD**"
+msgstr "vec2 **POINT_COORD**에서"
+
+msgid "Point coordinate for drawing points with ``POINT_SIZE``."
+msgstr "``POINT_SIZE``로 점을 그리는 점 좌표입니다."
+
+msgid ""
+"Model/local space to world space transform for normals. This is the same as "
+"``MODEL_MATRIX`` by default unless the object is scaled non-uniformly, in "
+"which case this is set to ``transpose(inverse(mat3(MODEL_MATRIX)))``."
+msgstr ""
+"모델/로컬 공간에서 노멀을 위한 월드 공간으로 변환됩니다. 객체의 크기가 불균일"
+"하게 조정되지 않는 한 기본적으로 ``MODEL_MATRIX``와 동일합니다. 이 경우 "
+"``transpose(inverse(mat3(MODEL_MATRIX)))``로 설정됩니다."
+
+msgid "in mat4 **PROJECTION_MATRIX**"
+msgstr "mat4 **PROJECTION_MATRIX**"
+
+msgid "in vec3 **VERTEX**"
+msgstr "vec3 **VERTEX**에서"
+
+msgid ""
+"Position of the fragment (pixel), in view space. It is the ``VERTEX`` value "
+"from ``vertex()`` interpolated between the face's vertices and transformed "
+"into view space. If ``skip_vertex_transform`` is enabled, it may not be in "
+"view space."
+msgstr ""
+"보기 공간에서 조각(픽셀)의 위치입니다. 면의 정점 사이에 보간되어 뷰 공간으로 "
+"변환된 ``vertex()``의 ``VERTEX`` 값입니다. ``skip_vertex_transform``가 활성화"
+"된 경우 뷰 공간에 없을 수 있습니다."
+
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
+
+msgid ""
+"A writable version of ``VERTEX`` that can be used to alter light and "
+"shadows. Writing to this will not change the position of the fragment."
+msgstr ""
+"빛과 그림자를 변경하는 데 사용할 수 있는 ``VERTEX``의 쓰기 가능한 버전입니"
+"다. 여기에 쓰면 조각의 위치가 변경되지 않습니다."
+
+msgid ""
+"The view that we are rendering. Used to distinguish between views in "
+"multiview/stereo rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
+"multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
+msgstr ""
+"우리가 렌더링하고 있는 뷰입니다. 멀티뷰/스테레오 렌더링에서 뷰를 구별하는 데 "
+"사용됩니다. 모노(다중 뷰 아님) 또는 왼쪽 눈의 경우 "
+"``VIEW_MONO_LEFT``(``0``), 오른쪽 눈의 경우 ``VIEW_RIGHT``(``1``)."
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "샘플러2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+"Godot 4에서는 제거되었습니다. 대신 ``sampler2D``와 ``hint_screen_texture``를 "
+"사용하세요."
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "vec2에서 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for the current pixel."
+msgstr "현재 픽셀의 스크린 UV 좌표입니다."
+
+msgid "sampler2D **DEPTH_TEXTURE**"
+msgstr "샘플러2D **깊이_텍스쳐**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_depth_texture`` instead."
+msgstr ""
+"Godot 4에서는 제거되었습니다. 대신 ``sampler2D``와 ``hint_depth_texture``를 "
+"사용하세요."
+
+msgid "out float **DEPTH**"
+msgstr "아웃 플로트 **깊이**"
+
+msgid ""
+"Custom depth value (range ``[0.0, 1.0]``). If ``DEPTH`` is written to in any "
+"shader branch, then you are responsible for setting ``DEPTH`` for **all** "
+"other branches. Otherwise, the graphics API will leave them uninitialized."
+msgstr ""
+"사용자 정의 깊이 값(범위 ``[0.0, 1.0]``). ``DEPTH``가 셰이더 분기에 기록된 경"
+"우 다른 **모든** 분기에 대해 ``DEPTH``를 설정해야 합니다. 그렇지 않으면 그래"
+"픽 API가 초기화되지 않은 상태로 유지됩니다."
+
+msgid ""
+"Normal that comes from the ``vertex()`` function, in view space. If "
+"``skip_vertex_transform`` is enabled, it may not be in view space."
+msgstr ""
+"뷰 공간에서 ``vertex()`` 함수에서 나오는 법선입니다. "
+"``skip_vertex_transform``가 활성화된 경우 뷰 공간에 없을 수 있습니다."
+
+msgid ""
+"Tangent that comes from the ``vertex()`` function, in view space. If "
+"``skip_vertex_transform`` is enabled, it may not be in view space."
+msgstr ""
+"뷰 공간에서 ``vertex()`` 함수에서 나오는 탄젠트입니다. "
+"``skip_vertex_transform``가 활성화된 경우 뷰 공간에 없을 수 있습니다."
+
+msgid ""
+"Binormal that comes from the ``vertex()`` function, in view space. If "
+"``skip_vertex_transform`` is enabled, it may not be in view space."
+msgstr ""
+"뷰 공간에서 ``vertex()`` 함수에서 나오는 종법선입니다. "
+"``skip_vertex_transform``가 활성화된 경우 뷰 공간에 없을 수 있습니다."
+
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMAL_MAP**"
+
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "부동 소수점 **NORMAL_MAP_DEPTH**"
+
+msgid "Depth from ``NORMAL_MAP``. Defaults to ``1.0``."
+msgstr "``NORMAL_MAP``의 깊이. 기본값은 ``1.0``입니다."
+
+msgid "out vec3 **ALBEDO**"
+msgstr "out vec3 **알베도**"
+
+msgid "Albedo (default white). Base color."
+msgstr "알베도(기본 흰색). 기본 색상."
+
+msgid "out float **ALPHA**"
+msgstr "아웃 플로트 **알파**"
+
+msgid ""
+"Alpha (range ``[0.0, 1.0]``). If read from or written to, the material will "
+"go to the transparent pipeline."
+msgstr ""
+"알파(범위 ``[0.0, 1.0]``). 읽거나 쓰면 자료가 투명 파이프라인으로 이동합니다."
+
+msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
+msgstr "부동 소수점 **ALPHA_SCISSOR_THRESHOLD**"
+
+msgid "If written to, values below a certain amount of alpha are discarded."
+msgstr "기록하면 특정 양의 알파 미만의 값이 삭제됩니다."
+
+msgid "out float **ALPHA_HASH_SCALE**"
+msgstr "부동 소수점 **ALPHA_HASH_SCALE**"
+
+msgid ""
+"Alpha hash scale when using the alpha hash transparency mode. Defaults to "
+"``1.0``. Higher values result in more visible pixels in the dithering "
+"pattern."
+msgstr ""
+"알파 해시 투명도 모드를 사용할 때 알파 해시 규모입니다. 기본값은 ``1.0``입니"
+"다. 값이 높을수록 디더링 패턴에서 더 많은 픽셀이 표시됩니다."
+
+msgid "out float **ALPHA_ANTIALIASING_EDGE**"
+msgstr "부동 소수점 **ALPHA_ANTIALIASING_EDGE**"
+
+msgid ""
+"The threshold below which alpha to coverage antialiasing should be used. "
+"Defaults to ``0.0``. Requires the ``alpha_to_coverage`` render mode. Should "
+"be set to a value lower than ``ALPHA_SCISSOR_THRESHOLD`` to be effective."
+msgstr ""
+"알파 대 커버리지 안티앨리어싱을 사용해야 하는 임계값입니다. 기본값은 ``0.0``"
+"입니다. ``alpha_to_coverage`` 렌더링 모드가 필요합니다. "
+"``ALPHA_SCISSOR_THRESHOLD``보다 낮은 값으로 설정해야 효과적입니다."
+
+msgid "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+msgstr "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+
+msgid ""
+"The texture coordinate to use for alpha-to-coverge antialiasing. Requires "
+"the ``alpha_to_coverage`` render mode. Typically set to ``UV * "
+"vec2(albedo_texture_size)`` where ``albedo_texture_size`` is the size of the "
+"albedo texture in pixels."
+msgstr ""
+"알파-커버 앤티앨리어싱에 사용할 텍스처 좌표입니다. ``alpha_to_coverage`` 렌더"
+"링 모드가 필요합니다. 일반적으로 ``UV * vec2(albedo_texture_size)``로 설정됩"
+"니다. 여기서 ``albedo_texture_size``는 알베도 텍스처의 크기(픽셀)입니다."
+
+msgid "out float **PREMUL_ALPHA_FACTOR**"
+msgstr "부동 소수점 **PREMUL_ALPHA_FACTOR**"
+
+msgid ""
+"Premultiplied alpha factor. Only effective if ``render_mode "
+"blend_premul_alpha;`` is used. This should be written to when using a "
+"*shaded* material with premultiplied alpha blending for interaction with "
+"lighting. This is not required for unshaded materials."
+msgstr ""
+"미리 곱해진 알파 인자. ``render_mode blend_premul_alpha;``를 사용하는 경우에"
+"만 유효합니다. 조명과의 상호작용을 위해 미리 곱해진 알파 블렌딩과 함께 *음영 "
+"처리된* 머티리얼을 사용할 때 이 항목을 작성해야 합니다. 음영 처리되지 않은 재"
+"료에는 이 작업이 필요하지 않습니다."
+
+msgid "out float **METALLIC**"
+msgstr "아웃 플로트 **메탈릭**"
+
+msgid "Metallic (range ``[0.0, 1.0]``)."
+msgstr "금속성(범위 ``[0.0, 1.0]``)."
+
+msgid "out float **SPECULAR**"
+msgstr "out float **반사형**"
+
+msgid ""
+"Specular (not physically accurate to change). Defaults to ``0.5``. ``0.0`` "
+"disables reflections."
+msgstr ""
+"반사광(물리적으로 변경하기에 정확하지 않음). 기본값은 ``0.5``입니다. ``0.0``"
+"는 반사를 비활성화합니다."
+
+msgid "Roughness (range ``[0.0, 1.0]``)."
+msgstr "거칠기(범위 ``[0.0, 1.0]``)."
+
+msgid "out float **RIM**"
+msgstr "아웃 플로트 **RIM**"
+
+msgid ""
+"Rim (range ``[0.0, 1.0]``). If used, Godot calculates rim lighting. Rim size "
+"depends on ``ROUGHNESS``."
+msgstr ""
+"림(범위 ``[0.0, 1.0]``). 사용된다면 Godot는 림 조명을 계산합니다. 림 크기는 "
+"``ROUGHNESS``에 따라 다릅니다."
+
+msgid "out float **RIM_TINT**"
+msgstr "부동 소수점 **RIM_TINT**"
+
+msgid ""
+"Rim Tint, range from ``0.0`` (white) to ``1.0`` (albedo). If used, Godot "
+"calculates rim lighting."
+msgstr ""
+"림 틴트의 범위는 ``0.0``(흰색)부터 ``1.0``(알베도)까지입니다. 사용된다면 "
+"Godot는 림 조명을 계산합니다."
+
+msgid "out float **CLEARCOAT**"
+msgstr "아웃 플로트 **CLEARCOAT**"
+
+msgid ""
+"Small specular blob added on top of the existing one. If used, Godot "
+"calculates clearcoat."
+msgstr ""
+"기존 것 위에 작은 반사 얼룩이 추가되었습니다. 사용된다면 Godot는 클리어코트"
+"를 계산합니다."
+
+msgid "out float **CLEARCOAT_GLOSS**"
+msgstr "아웃 플로트 **CLEARCOAT_GLOSS**"
+
+msgid "Gloss of clearcoat. If used, Godot calculates clearcoat."
+msgstr "클리어코트의 광택. 사용된다면 Godot는 클리어코트를 계산합니다."
+
+msgid "out float **ANISOTROPY**"
+msgstr "out float **이방성**"
+
+msgid "For distorting the specular blob according to tangent space."
+msgstr "접선 공간에 따라 반사 얼룩을 왜곡합니다."
+
+msgid "out vec2 **ANISOTROPY_FLOW**"
+msgstr "out vec2 **ANISOTROPY_FLOW**"
+
+msgid "Distortion direction, use with flowmaps."
+msgstr "왜곡 방향, 플로우맵과 함께 사용합니다."
+
+msgid "out float **SSS_STRENGTH**"
+msgstr "부동 소수점 **SSS_STRENGTH**"
+
+msgid ""
+"Strength of subsurface scattering. If used, subsurface scattering will be "
+"applied to the object."
+msgstr ""
+"지하 산란의 강도. 사용하는 경우 서브서피스 스캐터링이 객체에 적용됩니다."
+
+msgid "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+msgstr "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+
+msgid ""
+"Color of subsurface scattering transmittance. If used, subsurface scattering "
+"transmittance will be applied to the object."
+msgstr ""
+"지하 산란 투과율의 색상입니다. 사용하는 경우 표면하 산란 투과율이 개체에 적용"
+"됩니다."
+
+msgid "out float **SSS_TRANSMITTANCE_DEPTH**"
+msgstr "부동 소수점 **SSS_TRANSMITTANCE_DEPTH**"
+
+msgid ""
+"Depth of subsurface scattering transmittance. Higher values allow the effect "
+"to reach deeper into the object."
+msgstr ""
+"지하 산란 투과율의 깊이입니다. 값이 높을수록 효과가 개체에 더 깊이 도달할 수 "
+"있습니다."
+
+msgid "out float **SSS_TRANSMITTANCE_BOOST**"
+msgstr "부동 소수점 **SSS_TRANSMITTANCE_BOOST**"
+
+msgid ""
+"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
+"makes the effect show up even on directly lit surfaces"
+msgstr ""
+"``0.0`` 이상으로 설정하면 지하 산란 투과율이 높아집니다. 이렇게 하면 직접 조"
+"명을 받은 표면에서도 효과가 나타납니다."
+
+msgid "inout vec3 **BACKLIGHT**"
+msgstr "inout vec3 **백라이트**"
+
+msgid ""
+"Color of backlighting (works like direct light, but it's received even if "
+"the normal is slightly facing away from the light). If used, backlighting "
+"will be applied to the object. Can be used as a cheaper approximation of "
+"subsurface scattering."
+msgstr ""
+"백라이트 색상(직사광처럼 작동하지만 법선이 빛에서 약간 멀어져도 수신됩니다). "
+"사용하는 경우 백라이트가 개체에 적용됩니다. 표면하 산란의 더 저렴한 근사치로 "
+"사용할 수 있습니다."
+
+msgid "out float **AO**"
+msgstr "아웃 플로트 **AO**"
+
+msgid "Strength of ambient occlusion. For use with pre-baked AO."
+msgstr "주변 폐색의 강도. 사전 베이킹된 AO와 함께 사용됩니다."
+
+msgid "out float **AO_LIGHT_AFFECT**"
+msgstr "부동 소수점 **AO_LIGHT_AFFECT**"
+
+msgid ""
+"How much ambient occlusion affects direct light (range ``[0.0, 1.0]``, "
+"default ``0.0``)."
+msgstr ""
+"주변 폐색이 직접 조명에 영향을 미치는 정도(범위 ``[0.0, 1.0]``, 기본값 "
+"``0.0``)."
+
+msgid "out vec3 **EMISSION**"
+msgstr "out vec3 **배출**"
+
+msgid "Emission color (can go over ``(1.0, 1.0, 1.0)`` for HDR)."
+msgstr "방출 색상(HDR의 경우 ``(1.0, 1.0, 1.0)``를 초과할 수 있음)"
+
+msgid "out vec4 **FOG**"
+msgstr "out vec4 **FOG**"
+
+msgid ""
+"If written to, blends final pixel color with ``FOG.rgb`` based on ``FOG.a``."
+msgstr ""
+"기록된 경우 ``FOG.a``를 기반으로 ``FOG.rgb``와 최종 픽셀 색상을 혼합합니다."
+
+msgid "out vec4 **RADIANCE**"
+msgstr "out vec4 **빛나는**"
+
+msgid ""
+"If written to, blends environment map radiance with ``RADIANCE.rgb`` based "
+"on ``RADIANCE.a``."
+msgstr ""
+"작성하는 경우 ``RADIANCE.a``를 기반으로 환경 맵 광도를 ``RADIANCE.rgb``와 혼"
+"합합니다."
+
+msgid "out vec4 **IRRADIANCE**"
+msgstr "out vec4 **IRRADIANCE**"
+
+msgid ""
+"If written to, blends environment map irradiance with ``IRRADIANCE.rgb`` "
+"based on ``IRRADIANCE.a``."
+msgstr ""
+"작성하는 경우 ``IRRADIANCE.a``를 기반으로 ``IRRADIANCE.rgb``와 환경 맵 방사조"
+"도를 혼합합니다."
+
+msgid ""
+"Shaders going through the transparent pipeline when ``ALPHA`` is written to "
+"may exhibit transparency sorting issues. Read the :ref:`transparency sorting "
+"section in the 3D rendering limitations page "
+"<doc_3d_rendering_limitations_transparency_sorting>` for more information "
+"and ways to avoid issues."
+msgstr ""
+"``ALPHA``가 작성될 때 투명 파이프라인을 통과하는 셰이더는 투명도 정렬 문제를 "
+"나타낼 수 있습니다. 자세한 내용과 문제를 방지하는 방법은 :ref:`3D 렌더링 제"
+"한 사항 페이지의 투명도 정렬 섹션 "
+"<doc_3d_rendering_limitations_transparency_sorting>`를 읽어보세요."
+
+msgid "Light built-ins"
+msgstr "기본 내장 타입"
+
+msgid ""
+"Writing light processor functions is completely optional. You can skip the "
+"``light()`` function by using the ``unshaded`` render mode. If no light "
+"function is written, Godot will use the material properties written to in "
+"the ``fragment()`` function to calculate the lighting for you (subject to "
+"the render mode)."
+msgstr ""
+"라이트 프로세서 기능을 작성하는 것은 전적으로 선택 사항입니다. ``unshaded`` "
+"렌더링 모드를 사용하면 ``light()`` 기능을 건너뛸 수 있습니다. 조명 함수가 작"
+"성되지 않으면 Godot는 ``fragment()`` 함수에 작성된 재료 속성을 사용하여 조명"
+"을 계산합니다(렌더링 모드에 따라 다름)."
+
+msgid ""
+"The ``light()`` function is called for every light in every pixel. It is "
+"called within a loop for each light type."
+msgstr ""
+"``light()`` 함수는 모든 픽셀의 모든 조명에 대해 호출됩니다. 각 조명 유형에 대"
+"한 루프 내에서 호출됩니다."
+
+msgid ""
+"Below is an example of a custom ``light()`` function using a Lambertian "
+"lighting model:"
+msgstr ""
+"다음은 Lambertian 조명 모델을 사용하는 사용자 정의 ``light()`` 함수의 예입니"
+"다."
+
+msgid ""
+"If you want the lights to add together, add the light contribution to "
+"``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
+msgstr ""
+"조명을 함께 추가하려면 덮어쓰는 대신 ``+=``를 사용하여 ``DIFFUSE_LIGHT``에 조"
+"명 기여를 추가하세요."
+
+msgid ""
+"The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
+"is enabled, or if :ref:`Rendering > Quality > Shading > Force Vertex "
+"Shading<class_ProjectSettings_property_rendering/shading/overrides/"
+"force_vertex_shading>` is enabled in the Project Settings. (It's enabled by "
+"default on mobile platforms.)"
+msgstr ""
+"``vertex_lighting`` 렌더링 모드가 활성화되거나 프로젝트 설정에"
+"서 :ref:`Rendering > Quality > Shading > Force Vertex "
+"Shading<class_ProjectSettings_property_rendering/shading/overrides/"
+"force_vertex_shading>`가 활성화된 경우 ``light()`` 기능은 실행되지 않습니다. "
+"(모바일 플랫폼에서는 기본적으로 활성화되어 있습니다.)"
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
+"lower-left."
+msgstr ""
+"화면 공간의 픽셀 중심 좌표입니다. ``xy``는 창의 위치를 지정하고, ``DEPTH``가 "
+"사용되지 않는 경우 ``z``는 조각 깊이를 지정합니다. 원점은 왼쪽 아래입니다."
+
+msgid "in vec3 **NORMAL**"
+msgstr "vec3에서 **정상**"
+
+msgid "Normal vector, in view space."
+msgstr "뷰 공간의 법선 벡터입니다."
+
+msgid "View vector, in view space."
+msgstr "뷰 공간의 보기 벡터."
+
+msgid "in vec3 **LIGHT**"
+msgstr "vec3에서 **빛**"
+
+msgid "Light vector, in view space."
+msgstr "뷰 공간의 라이트 벡터입니다."
+
+msgid "in vec3 **LIGHT_COLOR**"
+msgstr "vec3 **LIGHT_COLOR**에서"
+
+msgid ""
+":ref:`Light color<class_Light3D_property_light_color>` multiplied "
+"by :ref:`light energy<class_Light3D_property_light_energy>` multiplied by "
+"``PI``. The ``PI`` multiplication is present because physically-based "
+"lighting models include a division by ``PI``."
+msgstr ""
+":ref:`Light color<class_Light3D_property_light_color>` 곱하기 :ref:`light "
+"energy<class_Light3D_property_light_energy>` 곱하기 ``PI``. ``PI`` 곱셈은 물"
+"리 기반 조명 모델이 ``PI``로 나누는 것을 포함하기 때문에 존재합니다."
+
+msgid "in float **SPECULAR_AMOUNT**"
+msgstr "부동 **SPECULAR_AMOUNT**"
+
+msgid ""
+"For :ref:`class_OmniLight3D` and :ref:`class_SpotLight3D`, ``2.0`` "
+"multiplied by :ref:`light_specular<class_Light3D_property_light_specular>`. "
+"For :ref:`class_DirectionalLight3D`, ``1.0``."
+msgstr ""
+":ref:`class_OmniLight3D` 및 :ref:`class_SpotLight3D`의 경우 ``2.0``"
+"에 :ref:`light_specular<class_Light3D_property_light_specular>`를 곱합니"
+"다. :ref:`class_DirectionalLight3D`, ``1.0``의 경우."
+
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "부울 **LIGHT_IS_DIRECTIONAL**"
+
+msgid "``true`` if this pass is a :ref:`class_DirectionalLight3D`."
+msgstr "이 패스가 :ref:`class_DirectionalLight3D`인 경우 ``true``입니다."
+
+msgid "in float **ATTENUATION**"
+msgstr "부동 **감쇠**"
+
+msgid "Attenuation based on distance or shadow."
+msgstr "거리나 그림자에 따른 감쇠입니다."
+
+msgid "in vec3 **ALBEDO**"
+msgstr "vec3에서 **알베도**"
+
+msgid "Base albedo."
+msgstr "베이스 알베도."
+
+msgid "in vec3 **BACKLIGHT**"
+msgstr "vec3에서 **백라이트**"
+
+msgid "in float **METALLIC**"
+msgstr "플로트 **메탈릭**"
+
 msgid "Metallic."
 msgstr "메탈릭."
+
+msgid "in float **ROUGHNESS**"
+msgstr "부동 **거칠기**"
+
+msgid "Roughness."
+msgstr "Roughness."
+
+msgid "out vec3 **DIFFUSE_LIGHT**"
+msgstr "out vec3 **DIFFUSE_LIGHT**"
+
+msgid "Diffuse light result."
+msgstr "확산광 결과."
+
+msgid "out vec3 **SPECULAR_LIGHT**"
+msgstr "out vec3 **SPECULAR_LIGHT**"
+
+msgid "Specular light result."
+msgstr "반사광 결과."
+
+msgid ""
+"Alpha (range ``[0.0, 1.0]``). If written to, the material will go to the "
+"transparent pipeline."
+msgstr ""
+"알파(범위 ``[0.0, 1.0]``). 기록된 경우 재질은 투명 파이프라인으로 이동됩니다."
+
+msgid ""
+"Transparent materials also cannot cast shadows or appear in "
+"``hint_screen_texture`` and ``hint_depth_texture`` uniforms. This in turn "
+"prevents those materials from appearing in screen-space reflections or "
+"refraction. :ref:`SDFGI <doc_using_sdfgi>` sharp reflections are not visible "
+"on transparent materials (only rough reflections are visible on transparent "
+"materials)."
+msgstr ""
+"투명한 재질은 그림자를 투사하거나 ``hint_screen_texture`` 및 "
+"``hint_depth_texture`` 유니폼에 나타날 수도 없습니다. 그러면 해당 재질이 화"
+"면 공간 반사나 굴절에 나타나는 것을 방지할 수 있습니다. :ref:`SDFGI "
+"<doc_using_sdfgi>` 선명한 반사는 투명한 재질에 표시되지 않습니다(투명 재질에"
+"는 거친 반사만 표시됩니다)."

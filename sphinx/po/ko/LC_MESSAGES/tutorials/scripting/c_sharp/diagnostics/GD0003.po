@@ -11,5 +11,74 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid ""
+"GD0003: Found multiple classes with the same name in the same script file"
+msgstr ""
+"GD0003: 동일한 스크립트 파일에서 동일한 이름을 가진 여러 클래스가 발견되었습"
+"니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0003"
+msgstr "GD0003"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"A script file contains multiple types that derives from ``GodotObject`` with "
+"a name that matches the script file. Only one type in the script file should "
+"match the file name."
+msgstr ""
+"스크립트 파일에는 ``GodotObject`` 파일과 일치하는 이름을 가진 ``GodotObject``"
+"에서 파생되는 여러 유형이 포함되어 있습니다. 스크립트 파일에서 한 가지 유형"
+"만 파일 이름과 일치해야 합니다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid ""
+"Godot requires scripts to have a unique path so every type must be defined "
+"on its own file and the type name must match the file name."
+msgstr ""
+"Godot는 스크립트가 고유한 경로를 갖도록 요구하므로 모든 유형은 자체 파일에 정"
+"의되어야 하며 유형 이름은 파일 이름과 일치해야 합니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid ""
+"To fix a violation of this rule, move each type declaration to a different "
+"file."
+msgstr "이 규칙 위반을 수정하려면 각 유형 선언을 다른 파일로 이동하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that derive from "
+"``GodotObject`` must have a unique path otherwise the engine can't load the "
+"script by path, resulting in unexpected runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. ``GodotObject``에서 파생되는 유형에는 고"
+"유한 경로가 있어야 합니다. 그렇지 않으면 엔진이 경로별로 스크립트를 로드할 "
+"수 없으므로 예기치 않은 런타임 오류가 발생합니다."

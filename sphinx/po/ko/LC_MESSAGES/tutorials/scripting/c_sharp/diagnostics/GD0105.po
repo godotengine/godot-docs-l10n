@@ -11,5 +11,61 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0105: The exported property is an indexer"
+msgstr "GD0105: 내보낸 속성은 인덱서입니다."
+
+msgid "**Rule ID**"
+msgstr "**규칙 ID**"
+
+msgid "GD0105"
+msgstr "GD0105"
+
+msgid "**Category**"
+msgstr "**카테고리**"
+
 msgid "Usage"
 msgstr "사용례"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**수정 내용이 중단되거나 중단되지 않음**"
+
+msgid "Non-breaking"
+msgstr "굽기"
+
+msgid "**Enabled by default**"
+msgstr "**기본적으로 활성화됨**"
+
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr "원인"
+
+msgid ""
+"An indexer is annotated with the ``[Export]`` attribute. Indexers can't be "
+"exported."
+msgstr ""
+"인덱서에는 ``[Export]`` 속성으로 주석이 추가됩니다. 인덱서를 내보낼 수 없습니"
+"다."
+
+msgid "Rule description"
+msgstr "설명"
+
+msgid "Godot doesn't allow exporting indexer properties."
+msgstr "Godot는 인덱서 속성 내보내기를 허용하지 않습니다."
+
+msgid "How to fix violations"
+msgstr "독립적으로 존재해야 하는 것"
+
+msgid "To fix a violation of this rule, remove the ``[Export]`` attribute."
+msgstr "이 규칙 위반을 수정하려면 ``[Export]`` 속성을 제거하세요."
+
+msgid "When to suppress warnings"
+msgstr "경고를 억제해야 하는 경우"
+
+msgid ""
+"Do not suppress a warning from this rule. Indexers can't be exported so they "
+"will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+"이 규칙에서 경고를 표시하지 마세요. 인덱서는 내보낼 수 없으므로 Godot에서 무"
+"시되어 런타임 오류가 발생합니다."

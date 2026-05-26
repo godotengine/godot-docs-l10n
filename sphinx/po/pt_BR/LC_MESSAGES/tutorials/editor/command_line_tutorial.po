@@ -43,13 +43,22 @@ msgstr ""
 "|release| Disponível em compilações de editor, modelos de exportação de "
 "depuração e modelos de exportação de versão."
 
+msgid "release"
+msgstr "lançamento (release)"
+
 msgid "|debug| Available in editor builds and debug export templates only."
 msgstr ""
 "|depurar| Disponível somente em compilações do editor e modelos de "
 "exportação de depuração."
 
+msgid "debug"
+msgstr "depuração"
+
 msgid "|editor| Only available in editor builds."
 msgstr "|editor| Apenas disponível em compilações de editores."
+
+msgid "editor"
+msgstr "editor"
 
 msgid ""
 "Note that unknown command line arguments have no effect whatsoever. The "
@@ -137,6 +146,9 @@ msgstr ""
 "do GDScript (Language Server Protocol). Faixa de portas recomendada: "
 "``[1024, 49151]``."
 
+msgid "``--quit``"
+msgstr "``--quit``"
+
 msgid ""
 "|release| Quit after the given number of iterations. Set to 0 to disable."
 msgstr ""
@@ -172,6 +184,16 @@ msgstr "|release| Senha para Arquivos remoto."
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
+msgid ""
+"|release| Override audio output latency in milliseconds (default is 15 ms). "
+"Lower values make sound playback more reactive but increase CPU usage, and "
+"may result in audio cracking if the CPU can't keep up."
+msgstr ""
+"|release| Substitui a latência de saída de áudio em milissegundos (o padrão "
+"é 15 ms). Valores menores tornam a reprodução de som mais responsiva, mas "
+"aumentam o uso da CPU e podem resultar em estalos no áudio se a CPU não "
+"conseguir acompanhar."
+
 msgid "|release| Renderer name. Requires driver support."
 msgstr "|release| Nome do renderizador. Requer suporte de driver."
 
@@ -193,6 +215,9 @@ msgstr "|release| Driver de texto (fontes, BiDi, modelagem)."
 
 msgid "|release| Pen tablet input driver."
 msgstr "|release| Driver de entrada para mesa digitalizadora."
+
+msgid "``--headless``"
+msgstr "``--headless``"
 
 msgid ""
 "|release| Enable headless mode (``--display-driver headless --audio-driver "
@@ -235,6 +260,9 @@ msgstr "``--resolution <largura>x<altura>``"
 msgid "``--position <X>,<Y>``"
 msgstr "``--position <X>,<Y>``"
 
+msgid "``--single-window``"
+msgstr "``--single-window`` (janela única)"
+
 msgid "|release| Use a single window (no separate subwindows)."
 msgstr "|release| Use uma única janela (sem subjanelas separadas)."
 
@@ -255,6 +283,9 @@ msgstr ""
 msgid "``--profiling``"
 msgstr "``--profiling``"
 
+msgid "``--gpu-profile``"
+msgstr "``--gpu-profile`` (perfil da gpu)"
+
 msgid ""
 "|release| Show a GPU profile of the tasks that took the most time during "
 "frame rendering."
@@ -262,12 +293,18 @@ msgstr ""
 "|release| Exibe um perfil de desempenho da GPU das tarefas que mais "
 "demoraram durante a renderização do quadro."
 
+msgid "``--gpu-validation``"
+msgstr "``--gpu-validation`` (validação da gpu)"
+
 msgid ""
 "|release| Enable graphics API :ref:`validation layers "
 "<doc_vulkan_validation_layers>` for debugging."
 msgstr ""
 "|release| Habilita as camadas de validação da API gráfica :ref:`validation "
 "layers <doc_vulkan_validation_layers>` para depuração."
+
+msgid "``--gpu-abort``"
+msgstr "``--gpu-abort`` (interrupção da gpu)"
 
 msgid ""
 "|debug| Abort on GPU errors (usually validation layer errors), may help see "
@@ -321,6 +358,9 @@ msgstr ""
 "|release| Depuração remota (``<protocol>://<host/IP>[:<port>]``, por exemplo "
 "``tcp://127.0.0.1:6007``)."
 
+msgid "``--single-threaded-scene``"
+msgstr "``--single-threaded-scene`` (cena única)"
+
 msgid ""
 "|release| Scene tree runs in single-threaded mode. Sub-thread groups are "
 "disabled and run on the main thread."
@@ -331,8 +371,17 @@ msgstr ""
 msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
+msgid "``--debug-paths``"
+msgstr "``--debug-paths`` (depuração de caminhos)"
+
 msgid "``--debug-navigation``"
 msgstr "``--debug-navigation``"
+
+msgid "``--debug-avoidance``"
+msgstr "``--debug-avoidance`` (depuração de evitação)"
+
+msgid "``--debug-stringnames``"
+msgstr "``--debug-stringnames`` (depuração de nomes de strings)"
 
 msgid ""
 "|debug| Print all StringName allocations to stdout when the engine quits."
@@ -360,6 +409,9 @@ msgstr "``--frame-delay <ms>``"
 
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <escala>``"
+
+msgid "``--disable-vsync``"
+msgstr "``--disable-vsync`` (desabilitar sincronização vertical)"
 
 msgid ""
 "|release| Forces disabling of vertical synchronization, even if enabled in "
@@ -392,6 +444,17 @@ msgstr ""
 
 msgid "**Standalone tools**"
 msgstr "**Ferramentas independentes**"
+
+msgid ""
+"|extended| Run a script. ``<script>`` must be a resource path relative to "
+"the project (``myscript.gd`` will be interpreted as ``res://my_script.gd``) "
+"or an absolute filesystem path (for example, on Windows: ``C:/tmp/"
+"my_script.gd``)."
+msgstr ""
+"|release| Executa um script. ``<script>`` deve ser um caminho de recurso "
+"relativo ao projeto (``meuscript.gd`` será interpretado como ``res://"
+"meuscript.gd``) ou um caminho absoluto no sistema de arquivos (por exemplo, "
+"no Windows ``C:/tmp/meuscript.gd``)."
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
@@ -450,6 +513,9 @@ msgstr ""
 
 msgid "``--dump-gdextension-interface``"
 msgstr "``--dump-gdextension-interface``"
+
+msgid "``--dump-extension-api``"
+msgstr "``--dump-extension-api``"
 
 msgid ""
 "|editor| Validate an extension API file dumped (with the option above) from "

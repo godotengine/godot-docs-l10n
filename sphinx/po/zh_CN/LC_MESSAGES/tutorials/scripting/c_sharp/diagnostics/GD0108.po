@@ -11,8 +11,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "GD0108: The exported tool button is not in a tool class"
+msgstr "GD0108：导出的工具按钮不在工具类中"
+
 msgid "**Rule ID**"
 msgstr "**规则 ID**"
+
+msgid "GD0108"
+msgstr "GD0108"
 
 msgid "**Category**"
 msgstr "**类别**"
@@ -35,11 +41,41 @@ msgstr "是"
 msgid "Cause"
 msgstr "原因"
 
+msgid ""
+"A property is annotated with the ``[ExportToolButton]`` attribute in a class "
+"that is **not** annotated with the ``[Tool]`` attribute."
+msgstr ""
+"某个属性使用了 ``[ExportToolButton]`` 特性进行标注，但其所在的类 **not** 使"
+"用 ``[Tool]`` 特性进行标注。"
+
 msgid "Rule description"
 msgstr "规则说明"
+
+msgid ""
+"The ``[ExportToolButton]`` is used to create clickable buttons in the "
+"inspector so, like every other script that runs in the editor, it needs to "
+"be annotated with the ``[Tool]`` attribute."
+msgstr ""
+"``[ExportToolButton]`` 用于在检查器中创建可点击按钮，与其他在编辑器中运行的脚"
+"本一样，必须添加 ``[Tool]`` 特性标注。"
 
 msgid "How to fix violations"
 msgstr "如何解决违规情况"
 
+msgid ""
+"To fix a violation of this rule, add the ``[Tool]`` attribute to the class "
+"that contains the member annotated with the ``[ExportToolButton]`` attribute."
+msgstr ""
+"要修复违反该规则的情况，请将 ``[Tool]`` 特性添加到包含带有 "
+"``[ExportToolButton]`` 特性的成员的类上。"
+
 msgid "When to suppress warnings"
 msgstr "何时抑制警告"
+
+msgid ""
+"Do not suppress a warning from this rule. The clickable buttons in the "
+"inspector won't be functional if their script is not annotated with the "
+"``[Tool]`` attribute."
+msgstr ""
+"请勿禁用此规则警告。若脚本未添加 ``[Tool]`` 特性标注，检查器中的可点击按钮将"
+"无法正常使用。"

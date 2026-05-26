@@ -14,6 +14,20 @@ msgstr ""
 msgid "Unit testing"
 msgstr "单元测试"
 
+msgid ""
+"Godot Engine allows to write unit tests directly in C++. The engine "
+"integrates the `doctest <https://github.com/doctest/doctest>`_ unit testing "
+"framework which gives ability to write test suites and test cases next to "
+"production code, but since the tests in Godot go through a different "
+"``main`` entry point, the tests reside in a dedicated ``tests/`` directory "
+"instead, which is located at the root of the engine source code."
+msgstr ""
+"Godot 引擎支持直接用 C++ 编写单元测试。引擎集成了 `doctest <https://"
+"github.com/doctest/doctest>`_ 单元测试框架，这让开发者能够将测试套件和测试用"
+"例写在生产代码旁边。不过，由于 Godot 中的测试需要通过一个不同的 ``main`` 入口"
+"点来启动，所以这些测试并没有和代码混在一起，而是统一放在了引擎源码根目录下的"
+"一个专门的 ``tests/`` 目录里。"
+
 msgid "Platform and target support"
 msgstr "平台及目标支持"
 
@@ -167,6 +181,20 @@ msgid "Here's a minimal working test suite with a single test case written:"
 msgstr "这是一个最小的工作测试套件，其中只包含单个测试用例："
 
 msgid ""
+"You can quickly generate new tests using the ``create_test.py`` script found "
+"in the ``tests/`` directory. This script automatically creates a new test "
+"file with the required boilerplate code in the appropriate location. It's "
+"also able to automatically include the new header in ``tests/test_main.cpp`` "
+"using invasive mode (``-i`` flag). To view usage instructions, run the "
+"script with the ``-h`` flag."
+msgstr ""
+"你可以使用 ``tests/`` 目录下的 ``create_test.py`` 脚本来快速生成新的测试。这"
+"个脚本会自动在合适的位置创建一个带有必要样板代码的新测试文件。如果你使用侵入"
+"模式（也就是加上(``-i`` 标志），它还能自动把这个新头文件包含（include）到 "
+"``tests/test_main.cpp`` 里面去。如果想看具体的使用说明，可以带上 ``-h`` 标志"
+"来运行这个脚本。"
+
+msgid ""
 "The ``tests/test_macros.h`` header encapsulates everything which is needed "
 "for writing C++ unit tests in Godot. It includes doctest assertion and "
 "logging macros such as ``CHECK`` as seen above, and of course the "
@@ -183,6 +211,16 @@ msgid ""
 msgstr ""
 "用于当前实现的宏及其别名的 `tests/test_macros.h <https://github.com/"
 "godotengine/godot/blob/master/tests/test_macros.h>`_ 源代码。"
+
+msgid ""
+"Test cases are created using ``TEST_CASE`` function-like macro. Each test "
+"case must have a brief description written in parentheses, optionally "
+"including custom tags which allow to filter the tests at runtime, such as "
+"``[String]``, ``[Stress]`` etc."
+msgstr ""
+"测试用例是通过类似函数的 ``TEST_CASE`` 宏来创建的。每个测试用例都必须在括号里"
+"写上一句简短的描述，并且可以（可选地）加上一些自定义标签，方便在运行时筛选测"
+"试，比如 ``[String]`` 、 ``[Stress]`` 等等。"
 
 msgid ""
 "Test cases are written in a dedicated namespace. This is not required, but "
@@ -203,6 +241,21 @@ msgstr ""
 
 msgid "Subcases"
 msgstr "子用例"
+
+msgid ""
+"In situations where you have a common setup for several test cases with only "
+"slight variations, subcases can be very helpful. Here's an example:"
+msgstr ""
+"当你有多个测试用例需要相同的初始设置，只有细微差别时，子用例（subcases）就会"
+"非常有用。下面是一个例子："
+
+msgid ""
+"Each ``SUBCASE`` causes the ``TEST_CASE`` to be executed from the beginning. "
+"Subcases can be nested to an arbitrary depth, but it is advised to limit "
+"nesting to no more than one level deep."
+msgstr ""
+"每个 ``SUBCASE`` （子用例）都会导致 ``TEST_CASE`` （测试用例）从头开始重新执"
+"行。子用例可以嵌套到任意深度，但建议嵌套层级不要超过一层。"
 
 msgid "Assertions"
 msgstr "断言"
@@ -282,6 +335,13 @@ msgstr ""
 "对于能够自我说明的断言请尽量使用 ``CHECK``\\ ，如果你认为相对复杂的断言需要更"
 "好的解释再使用 ``CHECK_MESSAGE``\\ 。"
 
+msgid ""
+"`doctest: Assertion macros <https://github.com/doctest/doctest/blob/master/"
+"doc/markdown/assertions.md>`_."
+msgstr ""
+"`doctest: 断言宏 <https://github.com/doctest/doctest/blob/master/doc/"
+"markdown/assertions.md>`_."
+
 msgid "Logging"
 msgstr "日志"
 
@@ -319,6 +379,20 @@ msgid ""
 "checks."
 msgstr "立即使测试失败。可以包含在条件语句中以进行复杂的检查。"
 
+msgid ""
+"Different reporters can be chosen at runtime. For instance, here's how the "
+"output can be redirected to an XML file:"
+msgstr ""
+"可以在运行时选择不同的报告器（reporters）。例如，可以通过以下方式将输出重定向"
+"到一个 XML 文件中："
+
+msgid ""
+"`doctest: Logging macros <https://github.com/doctest/doctest/blob/master/doc/"
+"markdown/logging.md>`_."
+msgstr ""
+"`doctest: 日志宏 <https://github.com/doctest/doctest/blob/master/doc/"
+"markdown/logging.md>`_."
+
 msgid "Testing failure paths"
 msgstr "测试故障路径"
 
@@ -354,17 +428,63 @@ msgstr ""
 msgid "Special tags in test case names"
 msgstr "测试用例名称中的特殊标签"
 
+msgid ""
+"These tags can be added to the test case name to modify or extend the test "
+"environment:"
+msgstr "可以将这些标签添加到测试用例的名称中，以此来修改或扩展测试环境。"
+
 msgid "**Tag**"
 msgstr "**标签**"
 
 msgid "``[SceneTree]``"
 msgstr "``[SceneTree]``"
 
+msgid ""
+"Required for test cases that rely on a scene tree with MessageQueue to be "
+"available. It also enables a mock rendering server "
+"and :ref:`ThemeDB<class_ThemeDB>`."
+msgstr ""
+"对于那些需要依赖带有消息队列（MessageQueue）的场景树才能正常运行的测试用例来"
+"说，这是必需的。此外，它还会启用一个模拟的渲染服务器（mock rendering server）"
+"和 :ref:`主题数据库<class_ThemeDB>` 。"
+
 msgid "``[Editor]``"
 msgstr "``[Editor]``"
 
+msgid ""
+"Like ``[SceneTree]``, but with additional editor-related infrastructure "
+"available, such as :ref:`EditorSettings<class_EditorSettings>`."
+msgstr ""
+"类似于 ``[SceneTree]`` （场景树），但额外提供了一些编辑器相关的基础设施，比"
+"如 :ref:`编辑器设置<class_EditorSettings>` 。"
+
 msgid "``[Audio]``"
 msgstr "``[Audio]``"
+
+msgid ""
+"Initializes the :ref:`AudioServer<class_AudioServer>` using a mock audio "
+"driver."
+msgstr ""
+"使用一个模拟（Mock）音频驱动来初始化（ :ref:`音频服务器"
+"<class_AudioServer>` ）。"
+
+msgid "``[Navigation2D]``"
+msgstr "``[Navigation2D]``"
+
+msgid ""
+"Creates the default 2D navigation server and makes it available for testing."
+msgstr "创建默认的 2D 导航服务器，并使其可供测试使用。"
+
+msgid "``[Navigation3D]``"
+msgstr "``[Navigation3D]``"
+
+msgid ""
+"Creates the default 3D navigation server and makes it available for testing."
+msgstr "创建默认的 3D 导航服务器，并使其可供测试使用。"
+
+msgid ""
+"You can use them together to combine multiple test environment extensions."
+msgstr "你可以将它们结合起来使用，以组合多个测试环境扩展。"
 
 msgid "Testing signals"
 msgstr "测试信号"
@@ -381,17 +501,40 @@ msgstr "描述"
 msgid "``SIGNAL_WATCH(object, \"signal_name\")``"
 msgstr "``SIGNAL_WATCH(object, \"signal_name\")``"
 
+msgid "Starts watching the specified signal on the given object."
+msgstr "开始监视指定对象上的特定信号。"
+
 msgid "``SIGNAL_UNWATCH(object, \"signal_name\")``"
 msgstr "``SIGNAL_UNWATCH(object, \"signal_name\")``"
+
+msgid "Stops watching the specified signal on the given object."
+msgstr "停止监视指定对象上的特定信号。"
 
 msgid "``SIGNAL_CHECK(\"signal_name\", Vector<Vector<Variant>>)``"
 msgstr "``SIGNAL_CHECK(\"signal_name\", Vector<Vector<Variant>>)``"
 
+msgid ""
+"Checks the arguments of all fired signals. The outer vector contains each "
+"fired signal, while the inner vector contains the list of arguments for that "
+"signal. The order of signals is significant."
+msgstr ""
+"检查所有已触发信号的参数。外层的向量（vector）包含了每一个被触发的信号，而内"
+"层的向量则包含了该信号对应的参数列表。信号的先后顺序是有意义的。"
+
 msgid "``SIGNAL_CHECK_FALSE(\"signal_name\")``"
 msgstr "``SIGNAL_CHECK_FALSE(\"signal_name\")``"
 
+msgid "Checks if the specified signal was not fired."
+msgstr "检查指定的信号是否没有被触发。"
+
 msgid "``SIGNAL_DISCARD(\"signal_name\")``"
 msgstr "``SIGNAL_DISCARD(\"signal_name\")``"
+
+msgid "Discards all records of the specified signal."
+msgstr "丢弃（或清除）指定信号的所有记录。"
+
+msgid "Below is an example demonstrating the use of these macros:"
+msgstr "下面是一个演示如何使用这些宏的示例："
 
 msgid "Test tools"
 msgstr "测试工具"
@@ -454,10 +597,10 @@ msgstr ""
 "Godot 使用 doctest 来防止在开发时引入回归问题。可以编写以下几种测试脚本："
 
 msgid "tests for expected errors;"
-msgstr "对预期错误的测试；"
+msgstr "针对预期错误的测试;"
 
 msgid "tests for warnings;"
-msgstr "对警告的测试；"
+msgstr "关于警告的测试;"
 
 msgid "tests for features."
 msgstr "对功能的测试。"

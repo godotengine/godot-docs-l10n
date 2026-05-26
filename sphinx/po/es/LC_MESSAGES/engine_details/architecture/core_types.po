@@ -104,6 +104,13 @@ msgstr "|rb_set|"
 msgid "``std::set``"
 msgstr "``std::set``"
 
+msgid ""
+"Uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ for "
+"faster access."
+msgstr ""
+"Utiliza un `árbol rojo-negro <https://es.wikipedia.org/wiki/%C3%81rbol_rojo-"
+"negro>`__ para un acceso más rápido."
+
 msgid "|v_set|"
 msgstr "|v_set|"
 
@@ -118,6 +125,16 @@ msgstr "|rb_map|"
 
 msgid "``std::map``"
 msgstr "``std::map``"
+
+msgid ""
+"Map type that uses a `red-black tree <https://en.wikipedia.org/wiki/Red-"
+"black-tree>`__ to find keys. The performance benefits of ``RBMap`` aren't "
+"established, so prefer using other types."
+msgstr ""
+"Tipo de mapa que utiliza un `árbol rojo-negro <https://es.wikipedia.org/wiki/"
+"%C3%81rbol_rojo-negro>`__ para buscar claves. Los beneficios de rendimiento "
+"de ``RBMap`` no están demostrados, por lo que es preferible utilizar otros "
+"tipos."
 
 msgid "|dictionary| 📜"
 msgstr "|dictionary| 📜"
@@ -158,6 +175,9 @@ msgstr "|semaphore|"
 
 msgid "``std::counting_semaphore``"
 msgstr "``std::counting_semaphore``"
+
+msgid "Counting semaphore type."
+msgstr "Tipo de semáforo de conteo."
 
 msgid "|safe_numeric|"
 msgstr "|safe_numeric|"

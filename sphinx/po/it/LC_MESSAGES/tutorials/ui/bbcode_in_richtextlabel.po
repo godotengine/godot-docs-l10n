@@ -838,6 +838,11 @@ msgstr ""
 "alla linea di base della riga con indice ``{riga_allineamento}`` (a base "
 "zero)."
 
+msgid "``{name}`` is a table name for assistive apps (screen reader)."
+msgstr ""
+"``{name}`` è un nome della tabella per le applicazioni assistive (lettore di "
+"schermo)."
+
 msgid "``[table={number}]{cells}[/table]``"
 msgstr "``[table={numero}]{celle}[/table]``"
 
@@ -846,6 +851,11 @@ msgstr "``[table={numero},{valign}]{celle}[/table]``"
 
 msgid "``[table={number},{valign},{alignment_row}]{cells}[/table]``"
 msgstr "``[table={numero},{valign},{riga_allineamento}]{celle}[/table]``"
+
+msgid ""
+"``[table={number},{valign},{alignment_row} name={name}]{cells}[/table]``"
+msgstr ""
+"``[table={number},{valign},{alignment_row} name={name}]{celle}[/table]``"
 
 msgid "**cell**"
 msgstr "**cell**"
@@ -1215,8 +1225,35 @@ msgstr "``left`` (o ``l``), ``center`` (o ``c``), ``right`` (o ``r``)"
 msgid "Horizontal alignment."
 msgstr "Allineamento orizzontale."
 
+msgid "URL options"
+msgstr "Opzioni di URL"
+
+msgid "**underline**"
+msgstr "**underline**"
+
+msgid "``always``, ``never``, ``hover``"
+msgstr "``always``, ``never``, ``hover``"
+
+msgid "``always``"
+msgstr "``always``"
+
+msgid "URL underlining mode."
+msgstr "Metodo di sottolineatura dell'URL."
+
 msgid "**tooltip**"
 msgstr "**tooltip**"
+
+msgid "String."
+msgstr "Stringa."
+
+msgid "URL tooltip."
+msgstr "Suggerimento dell'URL."
+
+msgid "**href**"
+msgstr "**href**"
+
+msgid "URL target address."
+msgstr "Indirizzo URL di destinazione."
 
 msgid "Image options"
 msgstr "Opzioni di immagine"
@@ -1276,6 +1313,22 @@ msgstr "Stringa"
 
 msgid "Image tooltip."
 msgstr "Suggerimento dell'immagine."
+
+msgid "see :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
+msgstr "Vedi :ref:`doc_bbcode_in_richtextlabel_image_and_table_alignment`"
+
+msgid "``center,center``"
+msgstr "``center,center``"
+
+msgid "Image alignment to the surrounding text."
+msgstr "Allineamento dell'immagine al testo circostante."
+
+msgid "**alt**"
+msgstr "**alt**"
+
+msgid "Image description for assistive apps (screen reader)."
+msgstr ""
+"Descrizione dell'immagine per le applicazioni assistive (lettore di schermo)."
 
 msgid "Image and table vertical alignment"
 msgstr "Allineamento verticale di immagini e tabelle"
@@ -1497,8 +1550,14 @@ msgstr ""
 msgid "Cell options"
 msgstr "Opzioni di cella"
 
+msgid "**shrink**"
+msgstr "**shrink**"
+
 msgid "``true``"
 msgstr "``true``"
+
+msgid "If ``true``, cell can shrink to its contents."
+msgstr "Se ``true``, la cella può ridursi al suo contenuto."
 
 msgid "**expand**"
 msgstr "**expand**"
@@ -1597,6 +1656,22 @@ msgstr "``i``, ``I`` - Numeri romani minuscoli e maiuscoli."
 
 msgid "Text effects"
 msgstr "Effetti di testo"
+
+msgid ""
+"BBCode can also be used to create different text effects that can optionally "
+"be animated. Several customizable effects are provided out of the box, and "
+"you can easily create your own. By default, animated effects will "
+"pause :ref:`when the SceneTree is paused <doc_pausing_games>`. You can "
+"change this behavior by adjusting the RichTextLabel's **Process > Mode** "
+"property."
+msgstr ""
+"Il BBCode si può anche usare per creare diversi effetti di testo che è "
+"possibile opzionalmente animare. Sono già inclusi diversi effetti "
+"personalizzabili, ed è possibile crearne facilmente di propri. Come "
+"predefinito, gli effetti animati si mettono in pausa :ref:`quando lo "
+"SceneTree è in pausa <doc_pausing_games>`. È possibile cambiare questo "
+"comportamento regolando la proprietà **Processo > Modalità** del "
+"RichTextLabel."
 
 msgid ""
 "All examples below mention the default values for options in the listed tag "
